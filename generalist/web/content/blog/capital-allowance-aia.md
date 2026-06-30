@@ -30,6 +30,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@towfiqu-barbhuiya-3440682
   source: Pexels
   source_url: https://www.pexels.com/photo/a-person-holding-silver-and-gold-coins-10972831/
+keyTakeaways:
+  - "The AIA gives 100% relief on qualifying plant and machinery up to £1,000,000 per accounting period, deducted in full in the year of purchase."
+  - "Limited companies, sole traders, and partnerships can all claim the AIA; partnerships with a limited company partner, and businesses buying assets to lease out, cannot."
+  - "Cars do not qualify for the AIA; they go into the main rate pool (14% writing down allowance from April 2026 under FA 2026) or special rate pool (6%)."
+  - "Spend above the £1m limit does not receive the AIA; the excess goes into the main rate pool (14% writing down allowance) or special rate pool (6%)."
+  - "The AIA limit is reduced proportionally for accounting periods shorter than 12 months; a 6-month period gives a £500,000 limit."
+  - "The £1m AIA limit is temporary and has been extended several times; the previous permanent level was £200,000."
 ---
 <h2>What Is the Annual Investment Allowance (AIA)?</h2>
 

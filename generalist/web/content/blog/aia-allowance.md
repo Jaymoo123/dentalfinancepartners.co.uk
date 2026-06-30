@@ -30,6 +30,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@bertellifotografia
   source: Pexels
   source_url: https://www.pexels.com/photo/2025-agenda-with-pencil-on-desk-29509452/
+keyTakeaways:
+  - "The AIA allowance limit for 2025/26 is £1,000,000 per 12-month accounting period, confirmed until 31 March 2026."
+  - "After 31 March 2026 the AIA limit could revert to £200,000, a reduction of £800,000 in potential 100% first-year relief."
+  - "Passenger cars do not qualify for the AIA; vans, lorries, machinery, office furniture, computer hardware, and building fixtures do."
+  - "Unlike Full Expensing (available from April 2023 on new assets only), the AIA covers both new and second-hand plant and machinery."
+  - "Where an accounting period is shorter than 12 months, the £1m limit reduces proportionally: six months gives £500,000 and nine months gives £750,000."
+  - "Spend above the £1m AIA limit enters the main pool and attracts writing-down allowances at 18% to 31 March 2026 and 14% from 1 April 2026 under FA 2026 s.28."
 ---
 <p>If you run a limited company, a partnership, or a sole trade and you buy equipment, machinery, or commercial vehicles, the Annual Investment Allowance (AIA) is one of the most valuable tax reliefs available. It lets you deduct the full cost of qualifying assets from your taxable profits in the year you buy them. No spreading the cost over several years. No complicated calculations. Just 100% relief, up to a set limit.</p>
 

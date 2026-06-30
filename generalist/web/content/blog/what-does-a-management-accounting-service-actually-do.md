@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, but it is less common. A sole trader with simple income and expenses may not need monthly reports. However, if you have multiple income streams, subcontractors, or significant stock, management accounts can help you track gross margin and cash flow. Many sole traders benefit from quarterly management accounts."
   - question: "Do management accounts help with corporation tax planning?"
     answer: "Yes, significantly. Management accounts show your year-to-date taxable profit and let you forecast the full-year position. You can then take action before the year-end to reduce your corporation tax bill, such as making pension contributions, buying capital equipment, or deferring revenue. Without management accounts, you are guessing until it is too late."
+keyTakeaways:
+  - "A management accounting service delivers a monthly or quarterly profit and loss account, balance sheet, cash flow statement and KPI dashboard within 10 to 15 working days of period end."
+  - "If a director's loan is not repaid within 9 months and 1 day of the year-end, S455 tax applies at 35.75% on 2026/27 loans or 33.75% on 2025/26 loans."
+  - "A limited company whose taxable profits exceed £250,000 loses marginal relief and pays corporation tax at the full 25% rate on the entire profit."
+  - "Higher rate taxpayers pay 35.75% on dividend income above the £500 allowance from 6 April 2026, compared with 33.75% in 2025/26."
+  - "A full monthly management accounting service for a limited company with stock, payroll and multiple projects typically costs £500 to £1,500 per month."
+  - "Businesses with turnover above £250,000 operating as a limited company with multiple income streams are typical candidates for a management accounting service."
 ---
 
 <p>If you run a UK business, you file annual accounts with Companies House and a corporation tax return with HMRC. That is statutory compliance. It tells you what happened last year. It does not tell you what is happening now or what is coming next.</p>

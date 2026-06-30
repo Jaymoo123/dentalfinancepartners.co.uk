@@ -27,6 +27,26 @@ faqs:
     answer: "Not a separate report, but your R&D claim report must clearly identify subcontractor costs as a separate line item. HMRC expects you to distinguish between in-house staff costs, consumables, software, and subcontractor costs. For each subcontractor, state whether they are connected or unconnected and show the qualifying cost calculation."
   - question: "Can I claim R&D tax credits for a subcontractor who is a sole trader?"
     answer: "Yes. A sole trader or freelance contractor can be a subcontractor for R&D purposes. The same rules apply: 65% of the payment for unconnected subcontractors, 100% of actual qualifying costs for connected subcontractors. The sole trader's qualifying costs are their direct time costs (their labour, not their profit) plus any consumables they use specifically on the project. The 65% cap handles this automatically for unconnected subcontractors."
+keyTakeaways:
+  - "For unconnected subcontractors, HMRC caps qualifying R&D costs at 65% of the relevant payment; the remaining 35% cannot be claimed."
+  - "The merged R&D scheme applies to accounting periods starting on or after 1 April 2024, replacing the SME scheme that operated before that date."
+  - "For connected subcontractors, where control means holding more than 50% of shares or voting rights, you can claim 100% of actual qualifying costs but not the full invoice amount."
+  - "HMRC prohibits double counting: if a subcontractor also claims R&D relief on the same work, both claims will be rejected."
+  - "R&D claims under the merged scheme must be submitted within 12 months after the end of the accounting period."
+  - "If a claim is found to be incorrect, HMRC can withdraw the relief, charge interest, and impose penalties, and may open a criminal investigation in serious cases."
+howToSteps:
+  - name: "Identify qualifying R&D projects"
+    text: "Identify the R&D projects that meet HMRC's definition: work to resolve scientific or technological uncertainty, not routine development or improvement."
+  - name: "Separate subcontractor costs"
+    text: "Separate subcontractor costs from in-house costs and track them separately in your accounting records."
+  - name: "Determine connected or unconnected status"
+    text: "Determine connected or unconnected status for each subcontractor and document the relationship with evidence."
+  - name: "Calculate qualifying costs"
+    text: "Calculate qualifying costs using the correct percentage: 65% of the relevant payment for unconnected subcontractors, or 100% of actual qualifying costs for connected subcontractors."
+  - name: "Prepare the R&D claim report"
+    text: "Prepare the R&D claim report with detailed narratives of each project, the technical uncertainties, and the costs incurred, listing subcontractor costs as a separate line item."
+  - name: "Submit the claim with your CT600"
+    text: "Submit the claim with your CT600 within the normal filing deadline, which is 12 months after the end of the accounting period under the merged scheme."
 ---
 
 <p>If you subcontract parts of your research and development work to third parties, you can still claim R&D tax credits on those costs. But the rules are different from when you use in-house staff. HMRC restricts the proportion of subcontractor costs you can include in your claim, and the restriction depends on whether the subcontractor is connected to your company.</p>

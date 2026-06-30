@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "New EV charging points installed in 2025/26 qualify for 100% capital allowances in the year of purchase, delivering full immediate tax relief for both limited companies and unincorporated businesses."
+  - "Full expensing for limited companies is permanent and uncapped: spending £500,000 on new charging points means a £500,000 deduction in the same accounting period."
+  - "The dedicated s.45EA first year allowance ran to 31 March 2025 (corporation tax) and 5 April 2025 (income tax); afterwards full expensing and the £1,000,000 AIA still deliver 100% relief."
+  - "Both full expensing and the 100% first year allowance require the charger to be new and unused; second-hand chargers only attract main-pool writing down allowances instead."
+  - "Claimable costs extend beyond the charger unit to include cabling, wiring, electrical connection work, groundworks, ducting, trenching, and directly related installation labour."
+  - "Where a charger is used partly for business and partly privately, only the business-use proportion qualifies, so 60% business use means a claim on 60% of the cost."
 ---
 <p>If your company installs electric vehicle charging points in 2025/26, the tax treatment depends on who uses them and where they are installed. The headline is this: most charging points qualify for 100% capital allowances in the year of purchase, giving you full tax relief immediately rather than spreading it over several years. But the specific relief available changes depending on whether you are a limited company or an unincorporated business, and whether you install the charger for staff, customers, or as part of a new build.</p>
 

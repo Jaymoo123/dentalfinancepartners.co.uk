@@ -30,6 +30,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@karola-g
   source: Pexels
   source_url: https://www.pexels.com/photo/people-pointing-a-dental-shade-guide-6627282/
+keyTakeaways:
+  - "Every dental practice in England must register with the Care Quality Commission before treating patients, and trading without registration is a criminal offence."
+  - "Most dental services are VAT-exempt, but taxable supplies such as retail goods or cosmetic treatments exceeding £90,000 in a rolling 12 months trigger mandatory VAT registration."
+  - "For incorporated dental practices in 2025/26, corporation tax is 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief between those thresholds."
+  - "Making Tax Digital for Income Tax is mandatory from April 2026 for self-employed dentists with qualifying income over £50,000, dropping to £30,000 from April 2027 and £20,000 from April 2028."
+  - "Associate dentists are generally self-employed, but HMRC may reclassify them as employees if they lack genuine substitution rights, bear no financial risk, or follow a practice-dictated rota."
+  - "Business Asset Disposal Relief on a dental practice disposal is 14% from 6 April 2025, rising to 18% from 6 April 2026, with a £1 million lifetime limit."
 ---
 <h2>What Does Dentistry Compliance Mean for Your Practice?</h2>
 

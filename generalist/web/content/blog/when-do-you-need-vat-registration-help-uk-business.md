@@ -27,6 +27,13 @@ faqs:
     answer: "HMRC typically issues your VAT registration certificate within 10 working days. It can take longer during busy periods. Your VAT number is valid from the effective date of registration, so you can charge VAT immediately. You do not need to wait for the certificate."
   - question: "Do I need an accountant to register for VAT?"
     answer: "No, you can register yourself through your HMRC online account. But an accountant helps if you have associated companies, partial exemption, property transactions, or imports from outside the UK. We also help you choose the right VAT scheme and avoid common mistakes that trigger penalties."
+keyTakeaways:
+  - "UK businesses must register for VAT when taxable turnover exceeds £90,000 in any rolling 12-month period, the standard compulsory threshold for 2025/26."
+  - "Once the £90,000 threshold is crossed, you must notify HMRC by the end of the month following the month the threshold was exceeded."
+  - "A forward-looking test also applies: if you expect turnover to exceed £90,000 in the next 30 days alone, you must register immediately."
+  - "Late registration carries a penalty of up to 30% of the VAT due from the period of late registration, though voluntary disclosure can reduce this."
+  - "Around 40% of UK businesses that register for VAT do so voluntarily before reaching the £90,000 threshold, mainly to reclaim input VAT on purchases."
+  - "HMRC typically issues a VAT registration certificate within 10 working days, but the VAT number is valid from the effective date of registration so you must charge VAT immediately."
 ---
 
 <p>If your business turnover has crossed £90,000 in the last 12 months, you need to register for VAT. That is not a suggestion. It is a legal requirement under UK law. Miss the deadline and HMRC will charge penalties starting from the date you should have registered.</p>

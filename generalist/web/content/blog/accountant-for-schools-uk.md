@@ -19,6 +19,13 @@ h1: "Why Do UK Schools Need a Specialist Accountant for Schools?"
 summary: "Schools in the UK face a unique set of financial rules, from ESFA funding to Academy Trust accounting. This guide explains why a specialist accountant for schools is essential, what specific compliance risks you need to manage, and how to choose the right firm for your setting."
 schema: ""
 faqs: []
+keyTakeaways:
+  - "Independent schools lost the VAT education exemption on 1 January 2025, making tuition and boarding fees standard-rated at 20% VAT."
+  - "Independent schools and academy trusts with income over £500,000 must have their accounts audited, not just independently examined."
+  - "The Teachers' Pension Scheme requires an employer contribution of 28.68% and an employee contribution of 9.6%."
+  - "The ESFA's Academy Trust Handbook requires academy trusts to hold a minimum of 3% of their income in unrestricted reserves."
+  - "Academy trusts must obtain ESFA consent before borrowing over £50,000, and related party transactions must be approved by the board and reported to the ESFA."
+  - "Schools must re-enrol eligible staff into a pension scheme every three years; the Pensions Regulator can fine schools that fail to comply."
 ---
 
 <p>Schools in the UK are not like other businesses. A plumbing firm, a tech consultancy, or a high street shop all follow standard accounting rules. Schools follow a completely different set. Academy trusts must comply with the ESFA's Academy Trust Handbook. Maintained schools answer to their local authority's Scheme for Financing Schools. Independent schools report to the Charity Commission or Companies House, depending on their structure. Get the accounting wrong and you risk funding clawbacks, regulatory breaches, or worse.</p>

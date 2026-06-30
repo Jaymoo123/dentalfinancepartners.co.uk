@@ -27,6 +27,13 @@ faqs:
     answer: "No. Personal tax liabilities are not incurred wholly and exclusively for the purposes of the trade. The company cannot deduct them as an expense. Even if you argue that staying tax-compliant helps the business, HMRC does not accept that argument. The only exception is a formal PAYE settlement agreement (PSA), which is rare and requires HMRC approval."
   - question: "What happens if I already paid my personal tax bill from the company and cannot repay the loan?"
     answer: "You need to regularise the position. Record the payment as a director's loan in the books. Then either declare a dividend or pay a salary to clear the loan. If the loan is still outstanding at the 9-month deadline, the company must pay S455 tax at 33.75% (loans made in 2025/26) or 35.75% (loans made from 6 Apr 2026) on the corporation tax return. You can reclaim that tax when the loan is repaid, but it ties up cash. Speak to your accountant immediately to minimise penalties."
+keyTakeaways:
+  - "A limited company paying a director's personal tax bill is treated by HMRC as a director's loan, not a business expense, because the company is a separate legal entity."
+  - "Section 455 tax applies at 33.75% on director's loans made in 2025/26, rising to 35.75% from 6 April 2026, if not repaid within 9 months and 1 day of year-end."
+  - "A director's loan over £10,000 at any point in the tax year becomes a beneficial loan reported on a P11D, with notional interest taxed at 3.75% for 2025/26."
+  - "The three legitimate routes to extract company cash for a personal tax bill are salary, dividends, or a director's loan repaid promptly within the 9-month and 1-day window."
+  - "Dividend tax rates for 2026/27 are 10.75% (basic rate), 35.75% (higher rate), and 39.35% (additional rate), with the first £500 of dividends each year tax-free."
+  - "Personal tax liabilities cannot be deducted as a company expense because they are not incurred wholly and exclusively for the purposes of the trade."
 ---
 
 <p>You cannot pay a director's personal tax bill through their limited company. HMRC treats any payment of personal liabilities from company funds as a director's loan, not a legitimate business expense. That loan triggers tax consequences of its own, often making the situation worse than the original bill.</p>

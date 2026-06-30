@@ -27,6 +27,13 @@ faqs:
     answer: "The PAYE cap (Finance Act 2023) applies to loss-making SMEs claiming payable credits under the old SME scheme for accounting periods beginning on or after 1 April 2023. Periods beginning before 1 April 2023 are not capped. For periods starting on or after 1 April 2024, the merged scheme has its own rules and the cap is built into its structure. Speak to your accountant about which rules apply to your period."
   - question: "What if my company has no employees and I subcontract all R&D work?"
     answer: "Your cap is £20,000 (the minimum). Any claim above that is lost unless you carry the loss forward. Consider hiring employees or paying yourself a salary to increase the cap. The salary cost must be weighed against the additional R&D credit you would recover. A professional review is essential here."
+keyTakeaways:
+  - "Finance Act 2023 capped payable R&D tax credits for loss-making SMEs at £20,000 plus 3 times the company's total PAYE and Class 1 NIC liabilities for the accounting period."
+  - "The cap applies to accounting periods beginning on or after 1 April 2023; claims for periods starting before that date are not affected."
+  - "Companies with zero PAYE and NIC liabilities, such as single-director dividend-only companies, face a maximum payable credit of £20,000 per accounting period."
+  - "If the payable credit exceeds the cap, the excess is lost permanently, though a company can instead carry the trading loss forward against future profits to avoid the cap."
+  - "The cap also applies to the Enhanced R&D Intensive Scheme (ERIS) for loss-making SMEs spending at least 30% on R&D, using the same £20,000 plus 3x PAYE and NIC formula."
+  - "RDEC claims for large companies (over 500 employees, turnover above €100m, or gross assets above €86m) are not subject to this cap, which applies only to SME payable credits."
 ---
 
 <p>Finance Act 2023, announced at the 2021 Budget, introduced a significant restriction on R&D tax credits for loss-making SMEs. From 1 April 2023, payable tax credits are capped at £20,000 plus 3x the company’s total PAYE and NIC liabilities. If your company is loss-making and claiming R&D credits as a cash repayment, this cap could reduce what you receive.</p>

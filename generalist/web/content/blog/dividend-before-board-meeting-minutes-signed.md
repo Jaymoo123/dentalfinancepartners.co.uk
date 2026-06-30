@@ -34,6 +34,22 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "A dividend is legally valid if directors genuinely resolved to declare it and the company had distributable profits; the signed minutes are the written record, not the legal act."
+  - "If dividend minutes are never signed and no evidence of a director resolution exists, HMRC can reclassify the payment as a director's loan, triggering tax charges and potential penalties."
+  - "S455 tax applies at 35.75% on director's loans made on or after 6 April 2026 (33.75% in 2025/26) if not repaid within 9 months and 1 day of year-end."
+  - "A director's loan exceeding £10,000 is a beneficial loan arrangement requiring P11D reporting, and the company must pay Class 1A NIC on the benefit."
+  - "Backdating minutes to a date before the resolution was actually passed creates a false document; late, accurate minutes are always preferable to a backdated one."
+  - "Final dividends require shareholder approval at a general meeting, while interim dividends (the most common type for small companies) are declared by directors alone."
+howToSteps:
+  - name: "Confirm the dividend was genuinely declared"
+    text: "Check emails, text messages, meeting notes, or any written record confirming the directors agreed the dividend before the payment was made."
+  - name: "Prepare and sign the board minutes"
+    text: "Draft minutes recording the actual resolution date, the dividend amount, the shareholders entitled, and the payment date; all directors should sign. Do not backdate the resolution date."
+  - name: "Check distributable profits"
+    text: "Confirm the company had sufficient retained profits at the date the dividend was declared; your accountant can verify this from the management accounts."
+  - name: "Issue dividend vouchers"
+    text: "Give each shareholder a dividend voucher showing the date, amount, and tax credit (if applicable), and keep a copy in the company's records for HMRC if queried."
 ---
 <p>You have taken a dividend from your limited company. The money is in your personal account. But you have not signed the board meeting minutes yet. Maybe you forgot. Maybe your accountant sends them to you in batches. Maybe you are not sure if the minutes matter at all.</p>
 

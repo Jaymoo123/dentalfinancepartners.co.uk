@@ -38,6 +38,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "For 2025/26, the personal allowance is £12,570, frozen since April 2021 and scheduled to remain at this level until April 2028."
+  - "Income tax rates for 2025/26 (England, Wales and Northern Ireland) are 20% on earnings from £12,571 to £50,270, 40% up to £125,140, and 45% above that."
+  - "The dividend allowance for 2025/26 is £500; above that, rates are 8.75% for basic rate taxpayers, 33.75% for higher rate, and 39.35% for additional rate."
+  - "Corporation tax in 2025/26 is 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief applying between those thresholds."
+  - "The VAT registration threshold is £90,000 of taxable turnover in a rolling 12-month period, with mandatory registration within 30 days of exceeding it."
+  - "Capital gains tax on most assets in 2025/26 is 18% for basic rate taxpayers and 24% for higher rate taxpayers, with a £3,000 annual exempt amount."
 ---
 <p>If you run a business in the UK, the tax bands for 2025/26 are the numbers that determine how much of your profit you keep and how much goes to HMRC. Getting them wrong means overpaying tax or missing reliefs. Getting them right means better cash flow and fewer surprises at year end.</p>
 

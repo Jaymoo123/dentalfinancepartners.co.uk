@@ -8,12 +8,6 @@ author: Holloway Davies Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Sole Trader to Limited Company: How to Switch in 2025/26'
 metaDescription: 'Move from sole trader to limited company cleanly: incorporation, contracts, VAT and tax. 2025/26 tax comparison with worked example.'
-keyTakeaways:
-  - "A freelance consultant with £60,000 profit can save around £700 a year by incorporating at 2025/26 rates, with the margin growing where a second qualifying employee brings Employment Allowance into play."
-  - "Below £30,000 profit, the costs of running a limited company can outweigh the tax savings."
-  - "Registering a limited company at Companies House costs £50 and is completed online."
-  - "A new limited company must be registered for Corporation Tax within three months of incorporation."
-  - "A sole trader VAT registration can be transferred to the limited company using form VAT484."
 altText: UK business owner reviewing incorporation documents on a desk with a laptop and calculator
 image: /blog/how-to-switch-from-sole-trader-to-limited-company.jpg
 imageCredit:
@@ -40,6 +34,30 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "A freelance consultant with £60,000 profit can save around £700 a year by incorporating at 2025/26 rates, compared with remaining a sole trader."
+  - "Below £30,000 profit, the costs of running a limited company (accountancy fees, Companies House filings, payroll software) can outweigh the tax savings."
+  - "Registering a limited company at Companies House costs £50 online; the company must then register for Corporation Tax with HMRC within three months of incorporation."
+  - "A sole trader VAT registration can be transferred to the limited company using form VAT484, keeping the existing VAT number and avoiding a break in registration."
+  - "Most directors pay themselves a salary up to the personal allowance (£12,570 for 2025/26) and take additional post-tax profit as dividends, which attract lower tax rates than salary."
+  - "A single-director company with no other qualifying employee cannot claim the £10,500 Employment Allowance; at least one other qualifying employee paid above the £5,000 secondary threshold is required."
+howToSteps:
+  - name: "Check whether incorporation is right for you"
+    text: "Compare your sole trader tax position against a limited company structure. Below £30,000 profit, running costs often outweigh the tax savings."
+  - name: "Register the limited company at Companies House"
+    text: "Apply online for £50. You need a company name, registered office, at least one director and shareholder, a person with significant control declaration, and a SIC code."
+  - name: "Register for Corporation Tax within three months"
+    text: "Register the new company with HMRC for Corporation Tax after incorporation. Missing the three-month window can result in penalties."
+  - name: "Register for PAYE and set up payroll"
+    text: "Even as the sole director, register for PAYE. Most directors pay a salary up to the personal allowance (£12,570 for 2025/26) and take the remainder as dividends."
+  - name: "Transfer existing contracts and assets to the company"
+    text: "Obtain a deed of novation or new contract from each client before invoicing through the company. Asset transfers are disposals for capital gains purposes; incorporation relief under TCGA 1992 s.162 may defer the gain if you transfer the whole business as a going concern."
+  - name: "Transfer or cancel the sole trader VAT registration"
+    text: "Use form VAT484 to transfer your existing VAT number to the company, or cancel it and register the company separately. The VAT threshold for 2025/26 is £90,000."
+  - name: "Notify HMRC that you have stopped self-employment"
+    text: "Tell HMRC the date you ceased trading and file a final self assessment return (SA100 with SA103 self-employment pages) covering sole trader income up to that date."
+  - name: "Open a separate business bank account"
+    text: "A limited company must have its own business bank account and cannot use a personal account for company transactions."
 ---
 <p>If you're asking how to switch from sole trader to limited company, you're likely past the point of wondering whether it's the right move. Your turnover has grown. You're paying more tax than feels fair. Or a client has told you they'd rather contract with a limited company. Whatever the trigger, the switch itself is straightforward. The decisions around <em>when</em> and <em>how</em> to do it cleanly are where most people trip up.</p>
 

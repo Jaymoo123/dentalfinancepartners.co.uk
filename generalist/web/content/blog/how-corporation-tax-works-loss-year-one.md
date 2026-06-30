@@ -27,6 +27,13 @@ faqs:
     answer: "Dividends can only be paid from distributable profits. If your company has accumulated losses, there are no distributable profits. Paying dividends in this situation is illegal under the Companies Act 2006. Directors can be personally liable to repay the dividends and face penalties from Companies House."
   - question: "Can I carry a year-one loss forward indefinitely?"
     answer: "Yes, as long as the company continues the same trade. There is no time limit on carried-forward trading losses under current rules. However, from 1 April 2017, carried-forward losses can only be used against 50% of profits in any single year, subject to a £5 million deduction allowance. For most small companies, the allowance means the 50% cap does not apply."
+keyTakeaways:
+  - "A loss-making company must still file a full CT600 return with HMRC, with the deadline 12 months after the end of the accounting period."
+  - "Trading losses carried forward have no time limit and can offset future profits of the same trade indefinitely, as long as the company continues the same trade."
+  - "From 1 April 2017, carried-forward losses can only be set against 50% of profits in any single year, subject to a £5 million deduction allowance per group."
+  - "Dividends can only be paid from distributable profits; paying dividends from a loss-making company is illegal under the Companies Act 2006."
+  - "Under ERIS, from 1 April 2024, loss-making companies spending 30% or more of total costs on R&D can surrender losses for a payable credit worth 14.5% of the surrendered amount."
+  - "The Section 455 charge on director loans is 35.75% for loans made on or after 6 April 2026, and 33.75% for loans made in 2025/26."
 ---
 
 <p>If your new limited company makes a loss in its first year, you still need to file a corporation tax return (the CT600 form). You pay zero corporation tax because there is no profit to tax. But the loss itself is not wasted. It becomes a valuable asset you can use to reduce tax on future profits or, in limited circumstances, to reclaim tax paid in an earlier period.</p>

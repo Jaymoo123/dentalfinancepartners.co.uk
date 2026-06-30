@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. Most MTD-compatible accounting software allows you to record non-trading income like dividends for your own records. But dividends are not submitted to HMRC through the quarterly update process. They are entered manually on the final declaration at year-end."
   - question: "What happens if I miss a quarterly update but correctly report dividends on the final declaration?"
     answer: "You still face penalties for the late quarterly update, even if the dividend part of your return is correct. The quarterly updates and final declaration are separate obligations. A points-based penalty applies to each late quarterly submission, regardless of other income sources."
+keyTakeaways:
+  - "MTD ITSA requires quarterly digital updates for self-employment income above £50,000 from April 2026, the £30,000 to £50,000 band from April 2027, and £20,000 to £30,000 from April 2028."
+  - "Dividend income from a share portfolio does not require quarterly HMRC updates under MTD ITSA; dividends are reported only on the annual final declaration."
+  - "From 6 April 2026, dividend tax rates rise to 10.75% (basic rate), 35.75% (higher rate), and 39.35% (additional rate) under FA 2026 s.4, with the £500 dividend allowance unchanged."
+  - "The MTD ITSA final declaration replaces the traditional self assessment return (SA100) for sole traders who fall within the mandatory scope."
+  - "Under the points-based penalty system, accumulating four late quarterly update submissions triggers a £200 financial penalty."
+  - "Sole traders below the mandatory income threshold can voluntarily adopt MTD ITSA from April 2026."
 ---
 
 <h2>Making Tax Digital for Income Tax: What Changes for a Sole Trader in 2026</h2>

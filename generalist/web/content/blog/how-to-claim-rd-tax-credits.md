@@ -27,6 +27,26 @@ faqs:
     answer: "You can amend a corporation tax return to claim R&D tax credits for up to 2 years after the end of the accounting period. For example, for a year ending 31 March 2024, you have until 31 March 2026 to submit or amend the claim. After that, the window closes. If you have never claimed before, check your last two years of accounts."
   - question: "What happens if HMRC rejects my R&D claim?"
     answer: "If HMRC rejects your claim, they will usually open an enquiry and ask for supporting evidence. You can respond with additional documentation. If they still reject it, you can appeal through HMRC's internal review process or take the case to the First-tier Tribunal. Most rejections happen because of poor technical narratives or missing paperwork. A well-prepared claim with proper records rarely gets rejected outright."
+keyTakeaways:
+  - "R&D tax credits are a corporation tax relief available only to UK limited companies; sole traders and partnerships cannot claim, whatever the nature of their work."
+  - "From April 2024 most companies use the merged scheme at a 20% taxable credit; loss-making SMEs spending over 30% of costs on R&D get ERIS at 27%."
+  - "The R&D Additional Information Form is mandatory from April 2024 and must be submitted within 12 months of your accounting period end; missing this deadline makes the claim invalid."
+  - "Qualifying costs include staff salaries, employer National Insurance, consumables, externally provided workers (capped at 65%), and software and data licences, a category added from April 2023."
+  - "You can amend a corporation tax return to claim R&D tax credits for up to two years after the end of the accounting period."
+  - "HMRC paid out over £7 billion in R&D claims in 2022/23 and can open an enquiry up to 12 months after you file; keep records for at least six years."
+howToSteps:
+  - name: "Identify qualifying projects"
+    text: "Go through your financial year and document every project where you attempted to resolve a scientific or technological uncertainty, recording the problem, people involved, and costs for each project separately."
+  - name: "Calculate qualifying costs"
+    text: "Pull actual figures from payroll reports, purchase invoices, timesheets, and software subscription records, making documented reasonable apportionments where exact records are unavailable."
+  - name: "Prepare the technical report"
+    text: "Write a plain-English narrative covering the baseline before the project, the advance you were seeking, and why it was not readily deducible by a competent professional in your field."
+  - name: "Prepare the financial summary"
+    text: "Produce a cost breakdown by category linked to the technical report, ensuring staff costs, consumables, and other qualifying expenditure match the narrative for each project."
+  - name: "Submit the R&D AIF before filing your corporation tax return"
+    text: "File the mandatory Additional Information Form within 12 months of your accounting period end, then include qualifying costs in your CT600; filing the return without the AIF invalidates the claim."
+  - name: "Respond to HMRC enquiries promptly"
+    text: "If HMRC requests supporting evidence such as timesheets, project notes, or design documents, respond promptly and fully, as delays can trigger further scrutiny or rejection."
 ---
 
 <p>If your business has spent time and money developing a new product, process, or software, you might be sitting on a valuable tax relief without realising it. R&D tax credits are one of the most generous reliefs HMRC offers, yet thousands of eligible UK businesses never claim because the process feels complicated or they assume their work doesn't count.</p>

@@ -27,6 +27,13 @@ faqs:
     answer: "HMRC requires records to be in English or Welsh. If your invoices or contracts are in another language, you must provide an English translation if HMRC asks for it. This is common for companies that trade internationally. Keep the original and a translation."
   - question: "What is the penalty for not keeping bookkeeping records?"
     answer: "The penalty is up to £3,000 per offence. If HMRC opens an enquiry and you cannot produce records, they can also estimate the tax due and charge you that amount. In serious cases, HMRC can prosecute directors, leading to criminal records and prison sentences. The risk is not worth taking."
+keyTakeaways:
+  - "HMRC requires limited companies to keep bookkeeping records for at least 6 years from the end of the accounting period, under the Companies Act 2006 and the Taxes Management Act 1970."
+  - "For a company with a 31 March 2025 year end, all records must be retained until at least 31 March 2031."
+  - "Failing to keep adequate records can result in a penalty of up to £3,000 per offence, and HMRC can estimate the tax owed without records."
+  - "The 6-year retention period applies even after a company is dissolved, leaving former directors personally liable for missing records."
+  - "If HMRC opens an enquiry, records must be kept until the enquiry closes, even if that extends beyond 6 years."
+  - "Required records include bank statements, all sales and purchase invoices, payroll forms (P60, P45, P11D), VAT records, director's loan account records, and the CT600 corporation tax return."
 ---
 
 <h2>How Long Must a Limited Company Keep Bookkeeping Records for HMRC?</h2>

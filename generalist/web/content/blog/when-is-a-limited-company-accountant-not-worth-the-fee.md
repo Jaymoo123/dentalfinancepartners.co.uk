@@ -27,6 +27,13 @@ faqs:
     answer: "If you make an honest mistake, HMRC will typically ask you to correct it and pay any underpaid tax plus interest. Penalties apply if the mistake was careless or deliberate. For a simple company with low turnover, HMRC rarely imposes penalties for first-time errors. But repeated mistakes or large underpayments will trigger penalties and potentially a full enquiry into your affairs."
   - question: "When should I switch from DIY accounting to hiring a limited company accountant?"
     answer: "Switch when your business adds complexity. The most common triggers are: your turnover exceeds £90,000 (VAT threshold), you hire your first employee, you take on a second director or shareholder, your profits approach £50,000 (marginal relief band), or you consider R&D claims or a company sale. If you are spending more than 15 hours per year on accounts, the time cost alone justifies hiring an accountant."
+keyTakeaways:
+  - "A limited company with one director, no employees, turnover under £90,000, and fewer than 10 transactions per month is generally safe to manage without an accountant."
+  - "Basic compliance packages for a straightforward contractor Ltd typically cost £100 to £150 per month; full-service packages for businesses with employees and VAT run £300 to £600 per month."
+  - "Once turnover exceeds £90,000 and the business is VAT registered, professional accountancy support is strongly recommended."
+  - "The corporation tax marginal relief band runs from £50,000 to £250,000 of profit; companies with profits near either threshold benefit most from a professional calculation."
+  - "Business Asset Disposal Relief (BADR) gives an 18% CGT rate on the first £1m of gains (up from 14% in April 2026), if shares are held two years."
+  - "DIY accounting errors typically cost £1,000 to £3,000 over three years, which is roughly equal to three years of accountant fees for a simple company."
 ---
 
 <p>Let's get straight to it. A <strong>limited company accountant</strong> is not always worth the fee. There are specific, measurable scenarios where doing your own accounting is cheaper and carries very little risk. And there are other scenarios where going without professional help will cost you thousands in penalties, missed reliefs, or HMRC investigations.</p>

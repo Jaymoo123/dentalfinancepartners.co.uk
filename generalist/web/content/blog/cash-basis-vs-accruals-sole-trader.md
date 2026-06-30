@@ -27,6 +27,12 @@ faqs:
     answer: "You must switch to accruals accounting from the start of the next tax year. You will need to make an adjustment to avoid double-counting income or missing expenses. HMRC provides guidance on the computational adjustment. If this happens, it is sensible to speak to an accountant to handle the transition correctly."
   - question: "Can I claim mileage instead of capital allowances under the cash basis?"
     answer: "Yes. Under the cash basis, you cannot claim capital allowances on cars. Instead, you use HMRC's approved mileage rates. From 2026/27 the rate is 55p per mile for the first 10,000 business miles and 25p per mile thereafter (45p applied up to 2025/26). You can still claim capital allowances on other assets like computers and tools, deducting the full cost in the year of purchase."
+keyTakeaways:
+  - "Cash basis records income when it reaches your bank and expenses when you pay them, while accruals uses the invoice or bill date instead."
+  - "Under the cash basis you cannot claim capital allowances on cars and must use HMRC mileage rates: 55p per mile for the first 10,000 business miles from 2026/27."
+  - "Making Tax Digital for Income Tax is mandatory from April 2026 for qualifying income over £50,000, April 2027 over £30,000, and April 2028 over £20,000."
+  - "The cash basis can defer tax by a full year when clients pay late, but over a business's lifetime the total tax paid is broadly similar."
+  - "Banks and lenders typically want to see accruals accounts, so sole traders planning to apply for a mortgage or business loan may find accruals accounting more suitable."
 ---
 
 <h2>What Is the Cash Basis for Sole Traders?</h2>

@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. If HMRC opens an enquiry into your return, an accountant handles the correspondence, prepares the evidence, and represents you. This is one of the most valuable services we provide. HMRC enquiries can be time consuming and stressful. Having a professional on your side makes a significant difference."
   - question: "How do I find a good self assessment accountant near me?"
     answer: "Look for a qualified accountant registered with a recognised body like the ICAEW, ACCA, or AAT. Check they have experience with your type of business (sole trader, Ltd company, partnership). Read reviews or ask for client references. We work with clients across the UK, so location is less important than expertise and availability."
+keyTakeaways:
+  - "The online self assessment deadline is 31 January; missing it triggers an automatic £100 penalty, rising to £10 per day (up to 90 days) after 3 months."
+  - "You must file a self assessment return if you are self-employed with gross income over £1,000, have untaxed income over £2,500, or have total income over £100,000."
+  - "For 2025/26 the dividend allowance is £500, with dividend tax rates of 8.75% (basic), 33.75% (higher), and 39.35% (additional)."
+  - "Capital gains tax rates for 2025/26 are 18% (basic rate) and 24% (higher rate) for all chargeable assets, after the 28% residential property rate was abolished from 30 October 2024."
+  - "Business Asset Disposal Relief is charged at 14% for disposals made in 2025/26 and rises to 18% from 6 April 2026, subject to a £1 million lifetime limit."
+  - "Making Tax Digital for Income Tax is mandatory from April 2026 for self-employed people and landlords with qualifying income over £50,000, falling to £30,000 (April 2027) and £20,000 (April 2028)."
 ---
 
 <h2>What Does a Self Assessment Accountant Actually Do for You?</h2>

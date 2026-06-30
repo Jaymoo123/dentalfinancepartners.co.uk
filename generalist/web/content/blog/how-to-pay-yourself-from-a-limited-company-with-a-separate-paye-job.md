@@ -27,6 +27,26 @@ faqs:
     answer: "That creates a director's loan account debit balance. If the loan exceeds £10,000, it is a taxable benefit in kind. If it is not repaid within 9 months and 1 day of the company year-end, the company pays S455 tax at 35.75% on the outstanding amount for loans made on or after 6 Apr 2026 (33.75% for loans made in 2025/26). The loan must be repaid or formalised as a dividend (if retained profits exist) to avoid these penalties."
   - question: "Should I use a different tax code for my director payroll?"
     answer: "Yes. Use tax code BR (basic rate) on a non-cumulative basis for your director salary. This ensures each payment is taxed at 20% and avoids under-deductions. If you use the standard 1257L code cumulatively, your payroll may assume your personal allowance is available and under-deduct tax, creating a bill later through your main employment tax code or self assessment."
+keyTakeaways:
+  - "When you have a PAYE job, your £12,570 personal allowance is already used by that employment, so a £12,570 director salary triggers income tax on every pound plus NI."
+  - "Setting your director salary at or below the £5,000 National Insurance secondary threshold (in force from 6 Apr 2025) means no employer NI is due."
+  - "Dividend rates from 6 Apr 2026 are 10.75% (basic rate), 35.75% (higher rate), and 39.35% (additional rate); the first £500 each year is tax-free."
+  - "You must file a self assessment return if your dividends exceed £10,000 in the tax year; the online filing deadline for 2025/26 is 31 January 2027."
+  - "Operate your director payroll on tax code BR (non-cumulative) to prevent payroll software from assuming your personal allowance is available and under-deducting tax."
+  - "A director's loan not repaid within 9 months and 1 day of the company year-end triggers S455 tax at 35.75% on the outstanding balance (loans from 6 Apr 2026)."
+howToSteps:
+  - name: "Register your company as an employer"
+    text: "Register your limited company as an employer with HMRC to obtain a PAYE reference number before paying any director salary."
+  - name: "Set up payroll software"
+    text: "Enter your director details in payroll software such as Xero, FreeAgent, or BrightPay; set tax code to BR on a non-cumulative basis and salary to £5,000 per year."
+  - name: "Run payroll and submit FPS"
+    text: "Run your payroll each month or quarter and submit the Full Payment Submission (FPS) to HMRC on or before each pay date."
+  - name: "Submit year-end reports"
+    text: "At the end of the tax year, submit your P60, P11D (if applicable), and full payment summary to HMRC."
+  - name: "Declare dividends formally"
+    text: "When the company has sufficient retained profits, hold a board meeting, minute the dividend declaration, issue a dividend voucher, and then transfer the funds to your personal account."
+  - name: "File your self assessment return"
+    text: "Report employment income, director salary, and dividends on your SA100 self assessment return; for 2025/26 the online filing deadline is 31 January 2027."
 ---
 
 <p>If you run a limited company alongside a full-time PAYE job, the standard advice about director salaries and dividends does not apply to you. Most articles assume your limited company is your only income source. That assumption leads to bad advice if you have a separate employment.</p>

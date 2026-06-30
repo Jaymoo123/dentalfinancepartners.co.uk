@@ -23,6 +23,13 @@ faqs:
     answer: "If you sell a UK residential property that is not your main home, you must report the gain to HMRC and pay the tax within 60 days of completion. This applies even if you have not yet filed your self assessment return. The reporting is done through HMRC's online Capital Gains Tax on UK Property service. Missing the deadline triggers interest and penalties."
   - question: "Can I claim Business Asset Disposal Relief (BADR) on a buy-to-let property?"
     answer: "No. BADR only applies to disposals of trading businesses or shares in trading companies. Buy-to-let properties are investment assets, not trading assets. Gains on buy-to-lets are taxed at the standard residential property CGT rates of 18% or 24%. If you own a commercial property used by your trading business, BADR may apply, but the conditions are specific."
+keyTakeaways:
+  - "From 30 October 2024, CGT on UK residential property is 18% for basic rate taxpayers and 24% for higher rate taxpayers in 2025/26."
+  - "Sellers of UK residential property that is not their main home must report the gain and pay CGT to HMRC within 60 days of completion."
+  - "The annual CGT exempt amount for 2025/26 is £3,000, but residential property disposals must still be reported within 60 days even if the gain falls below that threshold."
+  - "Business Asset Disposal Relief reduces CGT to 14% for qualifying disposals from 6 April 2025, rising to 18% from 6 April 2026, subject to a £1 million lifetime limit."
+  - "BADR does not apply to buy-to-let or investment properties; those gains are taxed at the standard residential property rates of 18% or 24%."
+  - "Private Residence Relief covers the final 9 months of ownership automatically, even if the owner has moved out or let the property during that period."
 ---
 
 <p>If you sell a residential property that is not your main home, you almost certainly owe capital gains tax on the profit. The same applies if you sell a buy-to-let, a second home, or land that you developed. The rules changed significantly from 30 October 2024, and further changes to Business Asset Disposal Relief (BADR) take effect from April 2025 and April 2026.</p>

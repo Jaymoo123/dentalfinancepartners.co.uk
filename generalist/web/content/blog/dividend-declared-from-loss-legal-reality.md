@@ -27,6 +27,13 @@ faqs:
     answer: "You must repay the full amount to the company. HMRC can reclassify it as a director's loan, triggering a Section 455 tax charge (35.75% for loans made on or after 6 April 2026; 33.75% for 2025/26 and earlier). If the company becomes insolvent, the liquidator can pursue you personally. Directors' liability insurance does not cover unlawful dividends."
   - question: "Can I take money out of a loss-making company without declaring a dividend?"
     answer: "Yes. You can take a director's loan, pay yourself a salary or bonus, or reimburse business expenses. A director's loan is the most common alternative, but it must be documented and may trigger Section 455 tax if not repaid within nine months and one day of the year-end. Salary is always legal but incurs income tax and NI."
+keyTakeaways:
+  - "Under Section 830 of the Companies Act 2006, a dividend can only be paid from the company's accumulated realised profits minus its accumulated realised losses."
+  - "A current-year loss does not automatically bar a dividend: if prior-year retained profits leave a positive balance after absorbing the loss, a dividend up to that balance is lawful."
+  - "HMRC can reclassify an unlawful dividend as a director's loan, triggering a Section 455 charge of 35.75% on loans made from 6 April 2026 (33.75% for 2025/26 and earlier)."
+  - "The total tax cost from HMRC reclassification can easily exceed 60% of the dividend amount, compared with dividend tax of 10.75% or 35.75% on a lawful dividend in 2026/27."
+  - "Directors who authorise an unlawful dividend are personally liable to repay the full amount to the company, and directors' liability insurance does not cover unlawful dividends."
+  - "An interim dividend declared in good faith on management accounts showing a profit stays valid even if year-end accounts later reveal a loss, given a reasonable basis at the time."
 ---
 
 <p>The short answer is no. You cannot legally declare a dividend when your company has made a loss in the current year, unless the company has sufficient retained profits from previous years to cover it. A <strong>dividend declared from loss</strong> is unlawful under the Companies Act 2006. If you pay one anyway, you personally risk having to repay it, and HMRC can treat it as an illegal distribution with serious tax consequences.</p>

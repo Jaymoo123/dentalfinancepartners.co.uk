@@ -34,6 +34,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@n-voitkevich
   source: Pexels
   source_url: https://www.pexels.com/photo/gold-round-coins-on-black-textile-6863285/
+keyTakeaways:
+  - "Banks and building societies have paid savings interest gross since 6 April 2016, so no tax is deducted at source on standard savings accounts."
+  - "The Personal Savings Allowance is £1,000 for basic-rate taxpayers, £500 for higher-rate, and nil for additional-rate; tax above it is settled via self assessment or PAYE coding."
+  - "UK companies do not deduct tax at source on dividends; dividends are paid gross, with a £500 allowance and rates of 10.75%, 35.75%, and 39.35% from 6 April 2026."
+  - "Non-resident landlords not registered under the NRL Scheme have basic rate income tax (currently 20%) deducted from their rental income by their letting agent or tenant before payment."
+  - "Any tax deducted at source counts as tax already paid and reduces the amount owed when you file a self assessment return."
+  - "To reclaim small amounts of overpaid tax on savings interest, use form R40; for larger overpayments or more complex situations, file a self assessment return (SA100) or contact HMRC directly."
 ---
 <p>Tax deducted at source (TDS) is a mechanism where income tax is removed from certain payments before they reach you. The payer handles the deduction and sends it directly to HMRC. You receive the net amount.</p>
 

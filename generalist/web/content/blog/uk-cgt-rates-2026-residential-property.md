@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "UK CGT rates for residential property in 2026 are 18% for basic rate taxpayers and 24% for higher and additional rate taxpayers, unchanged since 30 October 2024."
+  - "The annual exempt amount is £3,000 per individual for 2025/26, giving jointly-owning spouses or civil partners a combined £6,000 tax-free allowance on a sale."
+  - "Gains on UK residential property must be reported and the tax paid within 60 days of completion, using the 60-day CGT property return (form PPD)."
+  - "Principal Private Residence relief exempts the gain on your main home, covering the period you lived there plus the final 9 months of ownership."
+  - "Letting relief has been restricted since April 2020 to shared-occupancy arrangements only; most landlords letting an entire property to tenants can no longer claim it."
+  - "Before 30 October 2024 the higher residential property CGT rate was 28%; it was reduced to 24% on that date, where it remains for 2026."
 ---
 <h2>UK CGT Rates for Residential Property in 2026: The Basics</h2>
 

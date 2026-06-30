@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "Under Section 61 CTA 2009, a company can claim relief on costs incurred within seven years before incorporation, if they relate wholly and exclusively to its later trade."
+  - "Under VAT Regulations 1995 reg.111, a VAT-registered company can reclaim input VAT on pre-incorporation goods on hand (bought within 4 years) and services received within 6 months."
+  - "HMRC does not require the invoice to be addressed to the company; what matters is that the company takes on the cost via the director's loan account."
+  - "Pre-incorporation spending should be recorded as a credit to the director's loan account; without it the company keeps the deduction but the director loses tax-free repayment."
+  - "A sole trader who already deducted an expense in self assessment (SA103) cannot also claim it in the company's first CT600; that is double relief HMRC rejects."
+  - "Professional advice is recommended where pre-incorporation spending exceeds £5,000, or where the founder was already trading as a sole trader or partnership before incorporation."
 ---
 <p>You registered the company on 10 June. But you bought the laptop on 20 May. You paid for the domain name on 1 May. You took a train to meet a potential supplier on 15 April, and you bought the URL on 28 March. None of these costs were incurred by the company because the company did not exist yet.</p>
 

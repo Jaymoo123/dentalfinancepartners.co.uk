@@ -27,6 +27,24 @@ faqs:
     answer: "Qualifying costs include staff salaries (with employer NI and pension) for time spent on R&D, materials consumed in testing, subcontractor costs for R&D work (subject to limits), and software licences used directly in the R&D. Exclude routine production costs, selling costs, and capital expenditure on plant and machinery."
   - question: "What if our R&D project failed and we never achieved the improvement?"
     answer: "Failed projects can still qualify. R&D includes unsuccessful work. If you systematically investigated a technical uncertainty and it did not work out, the work may still be qualifying R&D. The key is that you attempted to resolve a genuine uncertainty through a structured process."
+keyTakeaways:
+  - "Incremental manufacturing improvements qualify as R&D when they resolve a technical uncertainty that a competent professional in the field could not have predicted at the outset."
+  - "HMRC's internal manuals (CIRD81900 and CIRD82000) confirm that an advance can be small, incremental, and achieved through trial and error."
+  - "Under the merged R&D scheme (post-1 April 2024), profitable companies receive a 20% above-the-line expenditure credit, yielding a net saving of approximately 15% to 16% of qualifying R&D spend."
+  - "A manufacturing company spending £100,000 on qualifying R&D can expect a corporation tax saving of roughly £15,000 to £16,000."
+  - "Failed projects can still qualify as R&D if the company systematically investigated a genuine technical uncertainty, even when the intended improvement was never achieved."
+  - "The R&D additional information form (AIF) must be submitted within 12 months of the company's year end alongside the CT600 corporation tax return."
+howToSteps:
+  - name: "Identify qualifying projects"
+    text: "Review the last two accounting periods for any project where a technical uncertainty took sustained, systematic testing to resolve, including new processes, new materials, or significant improvements."
+  - name: "Gather evidence"
+    text: "Collect design notes, test records, emails discussing technical problems, and purchase orders for trial materials to demonstrate both the uncertainty and the systematic work undertaken to resolve it."
+  - name: "Quantify the costs"
+    text: "Qualifying costs include staff salaries (with employer NI and pension contributions) for R&D time, materials consumed in testing, subcontractor costs for R&D work (subject to limits), and software licences used directly in the R&D."
+  - name: "Prepare the technical narrative"
+    text: "Set out what the technical uncertainty was, why it could not be resolved using standard knowledge, what systematic work was carried out, and what advance was achieved (or attempted, for failed projects)."
+  - name: "Submit the claim"
+    text: "For accounting periods starting on or after 1 April 2024, submit via the CT600 corporation tax return and the additional information form (R&D AIF), which must be filed within 12 months of the company's year end."
 ---
 
 <p>If you run a manufacturing company in the UK, you have probably heard about R&D tax credits. You may have dismissed them because your work is not like the pharmaceutical labs or software startups you read about. You are making incremental improvements to production processes, not inventing a new class of drugs.</p>

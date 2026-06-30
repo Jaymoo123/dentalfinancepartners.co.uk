@@ -35,6 +35,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@mikhail-nilov
   source: Pexels
   source_url: https://www.pexels.com/photo/two-people-doing-paperwork-and-computing-taxes-6963053/
+keyTakeaways:
+  - "The UK standard VAT rate is 20%, the reduced rate is 5%, and a zero rate of 0% applies to qualifying goods such as most food, children's clothing, and books."
+  - "Under the standard VAT scheme, your quarterly payment to HMRC equals output VAT charged on sales minus input VAT reclaimed on business purchases."
+  - "Flat rate scheme businesses classed as limited cost traders (goods costing under 2% of turnover or £1,000 a year) use a 16.5% flat rate, whatever their trade sector."
+  - "Export sales are zero rated, but you must hold evidence the goods left the UK within 3 months of supply, or HMRC treats the sale as standard rated at 20%."
+  - "The VAT registration threshold is £90,000 of taxable turnover over a rolling 12-month period, and you must register within 30 days of crossing it; the de-registration threshold is £88,000."
+  - "VAT returns and payments are due one calendar month and seven days after the accounting period ends, and late payment interest runs at base rate plus 2.5% (currently 7%)."
 ---
 <p>If you are VAT registered in the UK, you need to know exactly what you owe HMRC each quarter. A <strong>vat tax calculator</strong> is the tool that does the maths for you. But the calculation depends on which scheme you use, what you sell, and who you sell to.</p>
 

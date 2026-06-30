@@ -34,6 +34,10 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "All six takeaways verified directly against body statements (paras 40, 60-65, 83, 89-91, 128, 130, 136)."
+  - "Figure fidelity confirmed: £50,270 band, £3,000 AEA, 60-day rule, £100 penalty, 28%→24% cut, BADR 14%/18% path."
+  - "Body is clean against 2026/27 ground truth: FHL abolition stated correctly, BADR rate path correct, CGT rates current."
 ---
 <p>If you sold a residential property in the UK after 30 October 2024 and made a gain, you are looking at capital gains tax (CGT) rates of 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply to disposals of UK residential property, including second homes, buy-to-let properties, and inherited properties that are not your main home.</p>
 

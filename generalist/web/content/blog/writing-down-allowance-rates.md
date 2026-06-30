@@ -30,6 +30,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@bertellifotografia
   source: Pexels
   source_url: https://www.pexels.com/photo/2025-agenda-with-pencil-on-desk-29509452/
+keyTakeaways:
+  - "For 2025/26, the main pool writing down allowance rate is 18% and the special rate pool rate is 6%, both calculated on a reducing balance basis."
+  - "FA 2026 s.28 reduces the main pool WDA rate from 18% to 14% for periods beginning on or after 1 April 2026 (companies) or 6 April 2026 (sole traders, partnerships)."
+  - "The Annual Investment Allowance gives 100% relief up to £1,000,000 per year, whereas WDAs spread relief over the asset's useful life at the applicable pool rate each year."
+  - "If a main pool or special rate pool balance is £1,000 or less at the accounting period end, the small pools allowance writes off the whole balance in one go."
+  - "Cars over 50g/km CO2 enter the special rate pool at 6% and cars at 50g/km or less enter the main pool; both are excluded from Full Expensing and AIA."
+  - "Businesses must keep capital allowances records for at least 5 years after the 31 January filing deadline (sole traders and partnerships) or 6 years from the accounting period end (companies)."
 ---
 <h2>What Are Writing Down Allowances?</h2>
 

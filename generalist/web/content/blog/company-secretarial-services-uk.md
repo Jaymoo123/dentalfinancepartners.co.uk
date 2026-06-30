@@ -27,6 +27,13 @@ faqs:
     answer: "Basic services covering confirmation statement filing and registered office provision typically cost £100 to £250 per year. Comprehensive services covering all statutory compliance tasks typically cost £400 to £800 per year. Complex structures with multiple companies or share schemes can cost £1,500 to £5,000 per year. Always check what is included in the fee before engaging a provider."
   - question: "What happens if I miss the confirmation statement deadline?"
     answer: "There is no automatic late filing penalty for a late confirmation statement, unlike annual accounts. However, if you do not file it for a prolonged period, Companies House may start the process to strike off your company. Once struck off, all company assets revert to the Crown. To avoid this, file your confirmation statement within 14 days of the due date shown on your Companies House account."
+keyTakeaways:
+  - "The online confirmation statement filing fee is £34 (£62 on paper, since 1 May 2024), and every UK limited company must file one at least once every 12 months."
+  - "Late filing penalties for annual accounts start at £150 one month late, rising to £375, £750, and £1,500 more than six months late."
+  - "Private limited companies have not been legally required to appoint a company secretary since the Companies Act 2006, but directors remain jointly responsible for all statutory compliance."
+  - "Basic company secretarial services covering confirmation statement filing and registered office provision typically cost £100 to £250 per year."
+  - "Comprehensive services covering all statutory compliance tasks typically cost £400 to £800 per year; complex structures with multiple companies or share schemes can reach £1,500 to £5,000 per year."
+  - "Annual accounts must be filed with Companies House within 9 months of year-end, and a company struck off loses all assets to the Crown as bona vacantia."
 ---
 
 <p>When you incorporate a limited company in the UK, you take on statutory obligations that sit alongside running the business. Filing annual accounts, maintaining a register of directors, recording people with significant control, and submitting confirmation statements are not optional extras. They are legal requirements under the Companies Act 2006.</p>

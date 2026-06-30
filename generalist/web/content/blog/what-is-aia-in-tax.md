@@ -36,6 +36,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "The Annual Investment Allowance (AIA) gives UK businesses 100% tax relief on qualifying plant and machinery costs, up to £1,000,000 per year, deducted in the year of purchase."
+  - "The £1m AIA limit has applied permanently since 1 January 2019; for accounting periods shorter than 12 months it reduces proportionally, giving £500,000 for a 6-month period."
+  - "Cars do not qualify for AIA; vans, lorries, and certain specialist vehicles including taxis and driving school cars do qualify."
+  - "AIA is available to limited companies, sole traders, and partnerships, whereas Full Expensing (introduced April 2023) is available only to limited companies and excludes second-hand assets."
+  - "Spending above the £1m AIA limit enters the main pool and attracts writing down allowances at 14% per year for accounting periods beginning on or after 1 April 2026."
+  - "Associated companies must share the £1m AIA limit between them and the total claimed across all associated businesses cannot exceed £1m."
 ---
 <h2>What Is AIA in Tax? The Short Answer</h2>
 

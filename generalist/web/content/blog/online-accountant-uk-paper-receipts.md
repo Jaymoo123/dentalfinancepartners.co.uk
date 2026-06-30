@@ -27,6 +27,13 @@ faqs:
     answer: "It can do. Processing paper receipts takes more time than working from digital ones that are already categorised in the software. Most online accountants charge a slightly higher monthly fee for paper-based clients to cover the extra data entry and checking time. The difference is usually £20 to £50 per month depending on receipt volume."
   - question: "Does Making Tax Digital mean I must stop using paper receipts?"
     answer: "No. MTD requires you to keep digital records of your transactions, but the original receipt can still be paper. You just need to get the data from the paper receipt into MTD-compatible software. The photo upload method is the simplest way to meet this requirement without changing your paper-based habits."
+keyTakeaways:
+  - "From April 2026, self-employed individuals and landlords with qualifying income over £50,000 must keep digital records in MTD-compatible software, though paper receipts can still be the source document."
+  - "The MTD for ITSA qualifying income threshold drops to £30,000 from April 2027 and to £20,000 from April 2028."
+  - "HMRC can ask to see original paper VAT invoices during a compliance check, so keep paper originals for at least six years after the relevant financial year."
+  - "Businesses on the Flat Rate Scheme must hold valid VAT invoices for any capital asset purchase over £2,000 including VAT."
+  - "Business entertainment is fully disallowed when computing taxable profits (ITTOIA 2005 s.45 for income tax, CTA 2009 s.1298 for corporation tax), so the full cost is added back."
+  - "Capital equipment receipts may qualify for Annual Investment Allowance at 100% relief, making correct expense categorisation material to the tax position."
 ---
 
 <p>If your business still runs on paper receipts, you are not alone. Plenty of business owners prefer a physical paper trail. They like having the printed slip in their hand, filing it in a folder, and knowing exactly where it is. The assumption that every modern business has gone fully digital is just wrong.</p>

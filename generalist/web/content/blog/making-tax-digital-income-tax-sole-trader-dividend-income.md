@@ -27,6 +27,13 @@ faqs:
     answer: "You need HMRC-recognised MTD-compatible software for your quarterly updates and EOPS. Xero, QuickBooks, FreeAgent, and Sage Accounting all support it. You will need to export your dividend totals from your share platform (e.g. Hargreaves Lansdown, AJ Bell) and enter them into your MTD software at year-end for the EOPS."
   - question: "What happens if I forget to include dividends in my EOPS?"
     answer: "HMRC will likely raise a query or adjust your tax calculation, potentially leading to underpaid tax and interest. In the first year, HMRC has announced a light-touch penalty regime, but repeated errors could trigger penalties. Best practice is to set a reminder to gather your dividend statements when preparing your EOPS."
+keyTakeaways:
+  - "Sole traders with qualifying income over £50,000 must keep digital records and submit quarterly MTD updates from April 2026; this drops to £30,000 in 2027 and £20,000 in 2028."
+  - "Dividends from shares held personally are investment income and do not count towards the MTD qualifying income threshold; only self-employment and property income are included in the threshold test."
+  - "Quarterly updates cover self-employment income and expenses only; dividend income is not reported quarterly but is declared once a year in the annual end-of-period statement (EOPS)."
+  - "The dividend allowance is £500; dividends above that are taxed at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate) from 6 April 2026 under 2026/27 rates."
+  - "Capital gains from selling shares are also excluded from quarterly updates and are reported in the EOPS, with the annual CGT exemption for 2025/26 at £3,000."
+  - "Failing to submit a required quarterly MTD update carries a penalty starting at £200 per missed update, with escalation for repeated failures."
 ---
 
 <h2>What Is Making Tax Digital for Income Tax?</h2>

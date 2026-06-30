@@ -27,6 +27,13 @@ faqs:
     answer: "You use the pooling rules. All shares of the same class in the same company form a single pool. Each disposal takes a proportionate share of the pool's total base cost. If you bought 1,000 shares for £10,000 and sell 300, the base cost for that sale is £3,000. The remaining 700 shares retain a base cost of £7,000."
   - question: "Can my spouse and I both claim BADR on shares in the same company?"
     answer: "Yes, provided each of you holds shares in your own name and meets the two-year qualifying conditions individually. Each spouse has their own £1m lifetime limit. If you transfer shares to your spouse before a sale, the two-year holding period is met by combining both your holding periods under TCGA 1992 s.58."
+keyTakeaways:
+  - "The BADR lifetime limit is £1m per individual and is permanent; every pound of gain claimed reduces the remaining allowance and cannot be recovered."
+  - "The BADR rate was 10% before 6 April 2025, rose to 14% from 6 April 2025, and rises again to 18% from 6 April 2026."
+  - "Selling shares in 2025/26 at the 14% BADR rate saves 4 percentage points compared to selling in 2026/27 at 18%, equal to £40,000 on a £1m gain."
+  - "Each staged disposal is tested separately against the two-year qualifying conditions, requiring continuous employee or officer status and a qualifying trading company throughout."
+  - "Spouses and civil partners each hold their own £1m BADR lifetime limit and can both claim on shares in the same company if each meets the qualifying conditions individually."
+  - "Partial share sales use the pooling rules to apportion base cost proportionately; selling 300 of 1,000 shares originally bought for £10,000 produces a base cost of £3,000 for that disposal."
 ---
 
 <h2>What Is BADR and Why Does It Matter Across Tax Years?</h2>

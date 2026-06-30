@@ -19,6 +19,13 @@ h1: "How to Find the Right Accountant for Influencers in the UK"
 summary: "We explain what an accountant for influencers does, from IR35 checks and VAT registration to company structure and expense claims. If you are a UK influencer earning from brand deals, ads, affiliate links or subscriptions, this guide covers the tax and compliance decisions you need to make."
 schema: ""
 faqs: []
+keyTakeaways:
+  - "UK influencers must register for VAT once turnover exceeds £90,000 in a rolling 12-month period; voluntary registration before that threshold allows input VAT to be reclaimed on equipment and software."
+  - "Making Tax Digital for Income Tax becomes mandatory from April 2026 for sole-trader influencers with qualifying income over £50,000, dropping to £30,000 from April 2027 and £20,000 from April 2028."
+  - "At £80,000 income in 2025/26, operating through a limited company saves a UK influencer roughly £4,300 per year in tax compared with a sole trader structure on the same income."
+  - "If influencer contracts fall inside IR35, the limited company must account for PAYE, employee NIC and employer NIC, wiping out the tax advantage of incorporating."
+  - "Limited companies pay corporation tax at 19% on profits up to £50,000 and 25% above that; paying a director salary of £12,570 attracts no income tax or NIC."
+  - "Equipment purchases qualify for the Annual Investment Allowance up to £1 million per 12 months; remaining costs use the writing-down allowance, which falls from 18% to 14% from April 2026."
 ---
 
 <p>If you are a UK influencer earning from brand deals, affiliate links, ad revenue, subscriptions or sponsored content, your tax situation is not the same as a standard freelancer. You face specific issues around IR35, VAT on digital services, mixed-use expenses and the right company structure. An accountant for influencers needs to understand these areas, not just general self-employment tax.</p>

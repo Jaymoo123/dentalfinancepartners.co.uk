@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, if you are VAT registered on the standard scheme, you can reclaim the VAT on a van used solely for business. If you use the van for personal journeys too, you can only reclaim the business proportion. On the Flat Rate Scheme, you cannot reclaim VAT on van purchases unless you use the scheme's limited cost trader rules. Your accountant can advise on the best approach."
   - question: "How do I find a good accountant for tradespeople near me?"
     answer: "Start by searching for \"accountant for tradespeople\" plus your location. Check the firm's website for evidence of trade clients. Ask for referrals from other tradespeople you know. During the consultation, ask about their experience with CIS, VAT, and IR35. Look for ICAEW or ACCA qualification. At Holloway Davies, we work with tradespeople across the UK and offer remote services, so location is less important than expertise."
+keyTakeaways:
+  - "Under CIS, subcontractors have 20% deducted from invoices by clients, rising to 30% if not registered for gross payment status with HMRC."
+  - "The VAT registration threshold is £90,000 in a rolling 12-month period, after which tradespeople must choose between the standard scheme and the Flat Rate Scheme."
+  - "On the Flat Rate Scheme, a plumber pays 10.5% to HMRC (or 16.5% as a limited cost trader); an electrician pays 10.5% or 14.5% depending on trade category."
+  - "The Annual Investment Allowance allows tradespeople to deduct the full cost of a standard van from taxable profits in the year of purchase, up to £1 million per year."
+  - "If inside IR35, a limited company pays employer NI at 15% from 6 April 2025 on deemed employment income, and the dividend route disappears."
+  - "Missing a monthly CIS300 return deadline triggers penalties starting at £100 per month per return for contractors who pay subcontractors."
 ---
 
 <p>If you run a trade business in the UK, you already know the numbers game is different from other industries. You deal with the Construction Industry Scheme (CIS), fluctuating material costs, subcontractor payments, and VAT that can hit you hard if you are not careful. A general accountant who handles coffee shops and ecommerce stores might not know the specific rules that apply to you.</p>

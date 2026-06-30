@@ -25,6 +25,13 @@ faqs:
     answer: "For a sole trader, expect £50 to £150 per month. For a limited company, £100 to £600 per month depending on scope. Higher turnover or complex businesses may pay £500 to £1,500+ per month. Always ask for a detailed scope of work. The cheapest option often excludes year-end accounts or HMRC correspondence."
   - question: "Do I need an accounting bookkeeping service if I use accounting software?"
     answer: "Software records transactions, but it does not ensure they are correct, complete, or HMRC compliant. A service reviews your software data,"
+keyTakeaways:
+  - "From April 2026, MTD for Income Tax makes digital record keeping mandatory for sole traders with qualifying income over £50,000."
+  - "An overdrawn director's loan unpaid 9 months and 1 day after year-end triggers S455 tax of 33.75% in 2025/26, rising to 35.75% for loans from 6 April 2026."
+  - "Corporation tax is due 9 months and 1 day after the company year-end; self assessment income tax falls due on 31 January."
+  - "Monthly fees for sole trader bookkeeping typically range from £50 to £150; a limited company full service costs £200 to £600 per month in 2025/26."
+  - "Accounting and bookkeeping fees are usually tax deductible, reducing a limited company's corporation tax liability or a sole trader's income tax bill."
+  - "Providers should hold ICAEW, ACCA, CIMA, or AAT qualification and carry professional indemnity insurance, giving you recourse if something goes wrong."
 ---
 
 <p>If you run a UK business, you have likely seen the phrase "accounting bookkeeping service" and wondered what it actually covers. Is it just data entry? Does it replace your accountant? Will it save you money or just add another monthly cost?</p>

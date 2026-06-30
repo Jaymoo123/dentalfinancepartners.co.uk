@@ -27,6 +27,12 @@ faqs:
     answer: "Sole trader is simpler and cheaper to run. Limited company saves tax once your profit exceeds £40,000 to £50,000 per year. The crossover point depends on your specific circumstances: how much you reinvest in equipment, whether you have employees, and your long term plans. Most photographers switch to a limited company when they hit the higher rate tax band consistently."
   - question: "What expenses can a wedding photographer claim?"
     answer: "Wedding photographers can claim equipment (cameras, lenses, lighting), travel and mileage to venues, parking and tolls, studio rent or home office costs, insurance (public liability, equipment, professional indemnity), software subscriptions (Adobe, Capture One, backup services), website hosting, marketing costs, trade memberships, and accountant fees. Keep a mileage log and separate business and personal bank accounts."
+keyTakeaways:
+  - "A limited company typically makes financial sense for photographers once annual net profit exceeds £40,000 to £50,000, where tax savings outweigh the extra admin costs."
+  - "At £70,000 net profit in 2025/26, a limited company saves a photographer around £2,500 to £3,000 per year compared with the sole trader route."
+  - "The VAT registration threshold is £90,000 in a rolling 12-month period; the Flat Rate VAT rate for photography is 11% in 2025/26, but limited cost traders must use 16.5%."
+  - "Limited companies can claim Full Expensing for 100% tax relief on equipment in the year of purchase; sole traders use the Annual Investment Allowance (AIA) of £1,000,000."
+  - "Limited company directors can pay employer pension contributions directly from the company, deductible against corporation tax and not subject to NI, up to £60,000 per year."
 ---
 
 <h2>Why Photography Is Different for Tax Purposes</h2>

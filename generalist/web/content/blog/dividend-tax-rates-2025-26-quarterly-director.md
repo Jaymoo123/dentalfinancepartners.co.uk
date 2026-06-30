@@ -25,6 +25,13 @@ faqs:
     answer: "Calculate your total non-dividend income for the year, subtract your personal allowance, then see how much basic rate band remains (£50,270 minus your taxable non-dividend income). Each quarterly dividend uses up part of that band. Dividends within the band are taxed at 8.75% (above the £500 allowance). Dividends above the band are taxed at 33.75% or 39.35%."
   - question: "Can I change my dividend amount mid-year if my income changes?"
     answer: "Yes, you can change future dividend amounts. But you cannot change dividends already paid. If your income increases mid-year and pushes you into a higher tax band, dividends already taken are taxed at the higher rate. You cannot undo them. The best strategy is to reduce or stop further dividends for the rest of the year."
+keyTakeaways:
+  - "For 2025/26, dividend tax rates are 8.75% (basic rate), 33.75% (higher rate) and 39.35% (additional rate), with a £500 annual allowance before any tax applies."
+  - "The £500 dividend allowance is annual and shared across all dividend income combined; it does not reset each quarter for directors taking periodic payments."
+  - "A director earning only a £12,570 salary has a remaining basic rate band of £37,700 available for dividends at 8.75% before the 33.75% rate applies."
+  - "Dividends sit as the top slice of your total income for tax-band purposes, above salary and all other non-dividend income."
+  - "Corporation tax must be accounted for before declaring dividends: for 2025/26 the rate is 19% on company profits up to £50,000 and 25% on profits above £250,000."
+  - "Once paid, a dividend cannot be reversed; if your total income for the year crosses into the higher band, dividends above the basic rate band are taxed at 33.75%."
 ---
 
 <p>The 2025/26 dividend tax rates are 8.75% (basic rate), 33.75% (higher rate) and 39.35% (additional rate). Your annual dividend allowance has dropped to £500. If you take dividends quarterly, the challenge is not the rates themselves. It is managing which tax band each payment falls into across the year.</p>

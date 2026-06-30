@@ -25,6 +25,13 @@ faqs:
     answer: "If your spending on physical goods for your business is less than 2% of your VAT-inclusive turnover, or less than £1,000 per year (these two conditions are independent of each other), you are a limited cost trader. You must use a flat rate of 16.5% regardless of your sector. This rule catches most service businesses with low physical goods costs."
   - question: "Can I reclaim VAT on purchases under the flat rate scheme?"
     answer: "Generally no, with one exception. You cannot reclaim input VAT on your day-to-day purchases under the flat rate scheme. But you can reclaim VAT on capital assets costing £2,000 or more (V"
+keyTakeaways:
+  - "The limited cost trader rule forces most service businesses onto a 16.5% flat rate if spending on relevant physical goods is below 2% of turnover or under £1,000 a year."
+  - "Businesses can join the VAT Flat Rate Scheme if their VAT-exclusive turnover is £150,000 or less, and must leave once VAT-inclusive turnover exceeds £230,000 in a rolling 12-month period."
+  - "HMRC sets 23 sector-specific flat rates: food retailers pay 4%, hotels 6.5%, transport 10%, and accountants, IT consultants, and management consultants each pay 14.5%."
+  - "New joiners receive a 1% discount on their sector rate for the first 12 months, but this discount does not apply to the 16.5% limited cost trader rate."
+  - "You can still reclaim input VAT on capital assets costing £2,000 or more (VAT-inclusive) while using the flat rate scheme."
+  - "If input VAT recovery exceeds 50% of output VAT, standard accounting almost always wins; if it is below 20%, the flat rate scheme is likely to save money."
 ---
 
 <h2>What Is the VAT Flat Rate Scheme?</h2>

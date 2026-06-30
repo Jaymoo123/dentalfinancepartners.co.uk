@@ -27,6 +27,13 @@ faqs:
     answer: "Only if they genuinely control their own work, hours, prices and client relationships. If you control their schedule, methods and pricing, HMRC is likely to treat them as employees. The back-tax risk is significant. We recommend using proper room rental agreements for genuine self-employment, or putting therapists on payroll if you control their work."
   - question: "What expenses can I claim as a beauty therapist?"
     answer: "You can claim products and consumables, equipment (through capital allowances), premises costs, training that updates your existing skills, insurance, marketing, travel between treatment locations, and uniforms. Keep receipts for everything over £10 and use accounting software to record them. The simplified home office rate is easiest for home-based therapists."
+keyTakeaways:
+  - "The VAT registration threshold in 2025/26 is £90,000 in taxable turnover over a rolling 12-month period."
+  - "The flat rate VAT scheme for hairdressing and beauty services is 13 per cent, but therapists spending under 2 per cent of VAT-inclusive turnover (or under £1,000 a year) on goods must use the 16.5 per cent limited cost trader rate."
+  - "A sole trader beauty therapist pays a combined income tax and Class 4 NIC rate of around 42 per cent on profits above £50,270, while a limited company pays 19 per cent corporation tax on profits up to £50,000."
+  - "Making Tax Digital for Income Tax Self Assessment applies from April 2026 for self-employed income over £50,000, from April 2027 for income over £30,000, and from April 2028 for income over £20,000."
+  - "Misclassifying employed therapists as self-employed can trigger back-tax for employer NIC, employee NIC and income tax across up to six years, and for three therapists each on £25,000 the liability can exceed £40,000 plus penalties."
+  - "The HMRC approved mileage rate for cars is 55p per mile for the first 10,000 business miles from 2026/27, up from 45p in 2025/26."
 ---
 
 <p>If you run a beauty therapy business in the UK, your tax and accounting needs are not the same as a plumber's or a freelance copywriter's. You have products to buy and sell. You have treatment rooms to rent or maintain. You may employ other therapists on a self-employed or employed basis. And if you work from home, mobile or in a salon, each model brings different tax implications.</p>

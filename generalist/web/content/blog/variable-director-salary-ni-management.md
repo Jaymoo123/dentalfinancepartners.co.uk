@@ -27,6 +27,13 @@ faqs:
     answer: "The Employment Allowance covers employer NI up to £10,500 per tax year. If a single month's salary pushes your cumulative employer NI above that cap, the excess is payable. For a single director on a £12,570 salary, this is unlikely. But if you have other employees or pay yourself a higher salary in one month, check the cumulative employer NI figure before processing the payment."
   - question: "Can I use variable director salary NI management if my company has other employees?"
     answer: "Yes, but the Employment Allowance is shared across all employees. If you have several staff, the allowance may already be fully used by their salaries. In that case, varying your director salary will not reduce employer NI because the allowance is already exhausted. You still benefit from the annual earnings period for your own NI, but the cash flow advantage is the main benefit, not a reduction in total NI cost."
+keyTakeaways:
+  - "Directors use an annual earnings period for National Insurance under HMRC rules (NIM12050), so NI is calculated on total salary for the tax year, not on each individual payslip."
+  - "For 2025/26, employee NI at 8% applies above the £12,570 primary threshold and employer NI at 15% applies above the £5,000 secondary threshold (from 6 April 2025)."
+  - "A company whose only employee paid above the NI secondary threshold is also a director is excluded from the Employment Allowance, which covers employer NI up to £10,500 in 2025/26."
+  - "Each director salary payment must be reported to HMRC via a Full Payment Submission on or before the payment date; payments cannot be backdated or batched across multiple months."
+  - "Variable salary timing helps cash flow but does not reduce the total NI bill at higher salary levels, where the annual liability is fixed by the yearly total."
+  - "Sole traders and partners cannot use this variable salary strategy, as their National Insurance is calculated through self assessment on annual trading profits rather than through payroll."
 ---
 
 <p>You are a director of your own limited company, and you have heard that varying your monthly salary can reduce National Insurance contributions. Is that true? The short answer is yes, but only within specific rules that differ from how regular employees are treated.</p>

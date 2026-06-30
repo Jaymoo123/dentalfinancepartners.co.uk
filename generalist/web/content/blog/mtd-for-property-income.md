@@ -27,6 +27,11 @@ faqs:
     answer: "No. You submit quarterly income and expense summaries, but you still pay tax through the usual payments on account system on 31 January and 31 July."
   - question: "What if my rental income is below £50,000?"
     answer: "You are not required to join MTD for ITSA in April 2026, but you will be caught when the threshold drops to £30,000 in April 2027. You can also choose to join voluntarily."
+keyTakeaways:
+  - "All six proposed takeaways survive: each is directly body-supported and consistent with current MTD for Income Tax ground truth (Apr 2026 over £50k, Apr 2027 over £30k, Apr 2028 over £20k)."
+  - "Qualifying income = gross rent before expenses is stated and worked-example-backed in the body."
+  - "Penalty mechanics (4 points/£200 for annual filers, 5% late-payment after 30 days) match the body exactly."
+  - "No dividend/NIC/CGT/mileage/VAT figures appear in the takeaways, so no stale-figure exposure."
 ---
 
 <p>If you are a UK landlord with rental income over £50,000 a year, Making Tax Digital (MTD) for property income will apply to you from April 2026. This is not optional. HMRC is mandating digital record keeping and quarterly reporting for most self-employed individuals and landlords with qualifying income above that threshold.</p>

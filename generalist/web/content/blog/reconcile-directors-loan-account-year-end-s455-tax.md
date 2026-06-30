@@ -27,6 +27,30 @@ faqs:
     answer: "The company pays S455 tax (33.75% for loans made in 2025/26, 35.75% for loans made on or after 6 April 2026) and cannot reclaim it. If the company later writes off the loan, HMRC treats it as a distribution (dividend) in your hands. You then pay income tax on the amount written off, at your marginal dividend rate (8.75%, 33.75%, or 39.35% for 2025/26). This is a double tax hit. Avoid it by repaying or properly documenting the loan."
   - question: "Is there a minimum amount before S455 applies?"
     answer: "No. S455 applies to any overdrawn director's loan balance, regardless of the amount. Even a balance of £1 outstanding more than 9 months and 1 day after the accounting period end is chargeable. The £10,000 figure is relevant only to the beneficial loan benefit-in-kind (BIK) rules: if your loan exceeds £10,000 at any point in the tax year, the interest saved is a taxable employment benefit reported on a P11D. That is a separate charge from s.455, not an exemption from it. Many directors mistakenly think a small overdrawn balance is safe from s.455. It is not."
+keyTakeaways:
+  - "S455 tax is charged at 33.75% on overdrawn director's loan accounts for loans made in 2025/26, rising to 35.75% for loans made on or after 6 April 2026."
+  - "The S455 charge is paid by the company, not the director personally, and forms part of the corporation tax bill due 9 months and 1 day after the company's year end."
+  - "Directors have 9 months and 1 day after year end to repay an overdrawn balance; a 31 March year end gives a 1 January deadline, 30 April gives 1 February."
+  - "If a director's loan exceeds £10,000 at any point in the tax year, the interest saved is a taxable benefit-in-kind reported on a P11D, separate from the S455 charge."
+  - "HMRC can disregard a repayment made just before year end if the director immediately reborrows the same amount, treating the arrangement as not genuine."
+  - "If the company has paid S455 tax and the loan is later repaid, it can reclaim the tax from HMRC, but this requires a separate claim and takes time."
+howToSteps:
+  - name: "Run the DLA Nominal Ledger Report"
+    text: "Run the director's loan account report in your accounting software for the full year and confirm the opening balance matches the prior year's closing balance."
+  - name: "Identify Every Transaction"
+    text: "Go through each entry in the report and match it to a supporting document: a dividend voucher and board minutes, a receipt, or a bank statement."
+  - name: "Reconcile Against Bank Statements"
+    text: "Cross-reference every cash movement in the DLA against the company bank account to catch unrecorded personal payments, such as a personal credit card bill paid by the company."
+  - name: "Check for Missed Entries"
+    text: "Look specifically for personal credit card use, company-paid self-assessment tax bills, and personal pension payments that may not have been posted as debits to the DLA."
+  - name: "Calculate the Corrected Balance"
+    text: "After posting all correcting journals, sum the opening balance plus credits minus debits to find the true year-end DLA position and the amount potentially subject to S455."
+  - name: "Clear Any Overdrawn Balance Before the Deadline"
+    text: "If the balance is a debit, repay cash from your personal account, vote a dividend from sufficient distributable reserves, or post unclaimed business expenses as credits to clear the balance within 9 months and 1 day of year end."
+  - name: "Document All Repayments and Dividends"
+    text: "Ensure every repayment and dividend used to clear the balance has proper paperwork: board minutes, dividend vouchers, and bank statements showing the movement."
+  - name: "Confirm the Balance Is Cleared After Year End"
+    text: "Run the DLA report again after the year end date to confirm the account is no longer in debit and no S455 charge will arise."
 ---
 
 <p>If your limited company has ever lent you money, or paid a personal bill on your behalf, your director's loan account (DLA) is probably overdrawn. An overdrawn DLA at your company's year end can trigger a tax charge under Section 455 of the Corporation Tax Act 2010: 33.75% for loans made in 2025/26, or 35.75% for loans made on or after 6 April 2026. That is a significant cost if you miss the deadline to clear it.</p>

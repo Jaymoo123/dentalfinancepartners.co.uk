@@ -19,6 +19,13 @@ h1: "Capital Gains Tax on Property in the UK: A Practical Guide for 2025/26"
 summary: "Capital gains tax on property in the UK changed significantly from October 2024. This guide covers the current 18% and 24% rates for residential property, how commercial property is treated, the 60-day reporting rule, and the reliefs that can reduce your bill. Includes worked examples for landlords, company directors, and sole traders."
 schema: ""
 faqs: []
+keyTakeaways:
+  - "From 30 October 2024, residential property gains are taxed at 18% for basic rate taxpayers and 24% for higher rate taxpayers in 2025/26."
+  - "UK residential property sales where CGT is owed must be reported and paid within 60 calendar days of completion; missing the deadline triggers an immediate £100 fixed penalty."
+  - "The CGT annual exempt amount is £3,000 for 2025/26, so gains up to this threshold attract no tax."
+  - "Business Asset Disposal Relief taxes qualifying business property disposals at 14% in 2025/26, rising to 18% from 6 April 2026, with a £1 million lifetime limit."
+  - "Private Residence Relief exempts a main home from CGT, and the final 9 months of ownership always count as deemed occupation even if the owner has moved out."
+  - "The Furnished Holiday Lettings regime was abolished from 6 April 2025, so holiday lets are now treated as ordinary residential property businesses and no longer qualify for BADR."
 ---
 
 <h2>What is Capital Gains Tax on Property in the UK?</h2>

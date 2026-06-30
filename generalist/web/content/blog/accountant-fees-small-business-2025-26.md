@@ -25,6 +25,13 @@ faqs:
     answer: "You are not legally required to use an accountant. You can file your self assessment return yourself through HMRC's online system. But if your affairs are anything beyond the simplest (single income stream, no expenses, no capital gains), an accountant usually saves you more in tax than they cost in fees. The average sole trader pays £150 to £350 for a self assessment return, and the tax planning advice alone often covers that cost."
   - question: "Can I claim accountant fees as a business expense?"
     answer: "Yes. Accountant fees are a wholly and exclusively business expense for all business structures. Sole traders deduct them from trading profits before"
+keyTakeaways:
+  - "Sole traders typically pay £150 to £350 per year for a basic self assessment return in 2025/26."
+  - "A standard limited company package covering annual accounts, corporation tax, and a director's personal return costs £1,200 to £2,400 per year in 2025/26."
+  - "Adding bookkeeping and VAT returns to a limited company package raises the annual cost to £1,800 to £4,200 (£150 to £350 per month)."
+  - "VAT returns add roughly £30 to £60 per quarter to a standard fee, and payroll for a single director adds £20 to £50 per month."
+  - "Companies House late filing penalties start at £150 for a private company one month late, rising to £1,500 for six months late."
+  - "Location affects fees materially: a limited company package costs £200 to £400 per month in London but £120 to £250 per month in Sheffield or Glasgow."
 ---
 
 <p>Accountant fees for a small business in the UK vary significantly depending on your structure, turnover, and the services you need. For 2025/26, a typical sole trader paying for a basic self assessment return will pay between £150 and £350 per year. A limited company director with a standard set of accounts, corporation tax return, and personal tax return will pay between £1,200 and £2,400 per year. A partnership with two partners and a basic bookkeeping package will fall somewhere in the middle.</p>

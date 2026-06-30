@@ -27,6 +27,13 @@ faqs:
     answer: "HMRC can open an enquiry, charge additional tax and interest, and impose penalties. In serious cases, directors can face disqualification proceedings. Being a non accountant is not a defence. You have a legal duty to ensure the accounts are accurate before signing."
   - question: "When should I use a qualified accountant even though I can sign the accounts myself?"
     answer: "Use a qualified accountant if your company has complex transactions, director's loans, associated companies, property dealings, or R&D claims. Also use one if your turnover is near the VAT threshold or if you are unsure about any accounting treatment. The cost of professional help is usually far less than the cost of an error."
+keyTakeaways:
+  - "Section 414 of the Companies Act 2006 requires one director to sign the balance sheet, but sets no requirement for any professional accounting qualification."
+  - "Small companies are exempt from audit if they meet two of three criteria: turnover £15 million or less, balance sheet £7.5 million or less, and 50 or fewer employees."
+  - "The director who signs the balance sheet takes on legal responsibility for the accounts being true and fair, regardless of who prepared them."
+  - "A Section 455 tax charge of 35.75% applies to overdrawn director's loan balances for loans made on or after 6 April 2026 (33.75% for loans made in 2025/26)."
+  - "Late filing penalties for a private company start at £150 for filing up to one month late and rise to £1,500 for six months or more."
+  - "A court can disqualify a director for up to 15 years if their conduct, including signing materially misleading accounts, makes them unfit for company management."
 ---
 
 <p>If you are a director of a UK limited company, you might wonder whether you need a professional accounting qualification to sign off your company's annual accounts. The short answer is no. The Companies Act 2006 does not require directors to be ICAEW members or hold any accounting qualification to approve and file accounts.</p>

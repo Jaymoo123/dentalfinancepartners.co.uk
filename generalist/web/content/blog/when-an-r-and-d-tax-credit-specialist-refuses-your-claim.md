@@ -27,6 +27,13 @@ faqs:
     answer: "You need contemporaneous technical documentation showing the uncertainty, the work done to resolve it, and the outcome. You also need project records with dates, staff hours, and cost breakdowns linked to specific projects. Reconstructed evidence is risky and often rejected by HMRC."
   - question: "Will an R&D tax credit specialist charge me for a refusal?"
     answer: "A legitimate specialist will not charge you for an initial review that results in a refusal. They should explain their reasoning clearly and suggest what would need to change for a future claim to succeed. If a firm charges you just to tell you no, find another firm."
+keyTakeaways:
+  - "An HMRC R&D enquiry can run for 12 to 18 months and trigger a full review of corporation tax returns going back several years."
+  - "To qualify, an R&D project must seek an advance in science or technology by resolving uncertainty that a competent professional could not resolve using publicly available knowledge."
+  - "The old separate SME R&D scheme does not apply to accounting periods beginning on or after 1 April 2024, with subcontractor rules differing between RDEC and ERIS."
+  - "Qualifying R&D expenditure covers staff costs (salaries, employer NI, pension contributions), consumable items, directly used software licences, subcontractor costs, and externally provided workers."
+  - "HMRC uses risk profiling: a 4-employee software consultancy turning over £420,000 that claims £300,000 in R&D costs will face an enquiry."
+  - "R&D tax credits are a corporation tax relief submitted via the CT600; they reduce taxable profit or create a repayable credit if the company is loss-making."
 ---
 
 <p>You have a project that genuinely pushed technology forward. A new software algorithm. A novel manufacturing process. An engineering breakthrough. You approach an <strong>r&d tax credit specialist</strong> expecting a straightforward claim. And they say no.</p>

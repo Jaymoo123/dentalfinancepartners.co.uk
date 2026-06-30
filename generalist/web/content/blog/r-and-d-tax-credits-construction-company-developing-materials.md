@@ -27,6 +27,13 @@ faqs:
     answer: "You can claim for qualifying expenditure incurred in accounting periods ending up to two years before the date you file the claim. If your company has a 31 March year-end and you file your 2024 return by 31 December 2024, you can include R&D expenditure from the year ended 31 March 2024. You can also amend returns for the previous two years to include previously unclaimed R&D costs."
   - question: "Will HMRC audit my construction R&D claim?"
     answer: "HMRC reviews a higher proportion of R&D claims than other areas of corporation tax. Claims over £50,000 are more likely to be selected for compliance checks. Claims with weak documentation or unclear technical narratives are also flagged. A well-prepared claim with a clear technical explanation, supporting evidence, and properly allocated costs will pass HMRC scrutiny. Our team prepares claims to withstand review from the start."
+keyTakeaways:
+  - "Construction companies developing new materials qualify for R&D tax credits if they resolved genuine technical uncertainty that a competent professional could not solve using standard practice."
+  - "From accounting periods starting on or after 1 April 2024, most companies claim under the merged RDEC scheme, which provides a 20% expenditure credit on qualifying R&D costs."
+  - "For 2025/26, the net corporation tax saving under RDEC is approximately 16.2% of qualifying costs at the 19% small profits rate, or 15% at the 25% main rate."
+  - "Loss-making companies spending more than 30% of total expenditure on qualifying R&D can use ERIS, giving a cash repayment of up to 27% of qualifying costs."
+  - "Qualifying R&D costs include staff salaries, employer NI and pension contributions, consumed materials, subcontractor testing fees, software licences at the R&D-use proportion, and consumables."
+  - "R&D claims are submitted via the CT600 company tax return and must be made within two years of the end of the relevant accounting period."
 ---
 
 <p>Most construction companies assume R&D tax credits are for tech firms, pharmaceutical labs, or aerospace engineers. That is wrong. If you are a construction company developing new materials, testing innovative building methods, or solving site-specific technical problems, you could qualify for a significant corporation tax reduction or cash repayment.</p>

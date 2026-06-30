@@ -27,6 +27,13 @@ faqs:
     answer: "HMRC can open a compliance check. If the error is innocent and you correct it promptly, you may face interest on underpaid tax plus a penalty of 0% to 30% depending on whether you took reasonable care. If HMRC believes the error was deliberate, penalties can reach 100% of the tax underpaid. The cost of dealing with an enquiry often exceeds the accounting fee you saved. That is the main risk of DIY accounting."
   - question: "When should I definitely use a limited company accountant?"
     answer: "Use an accountant if any of these apply: you have employees, you are VAT registered, you have director's loan account activity over £10,000, you buy or sell business assets, you claim R&D tax credits, you operate in the construction industry (CIS), you have foreign income, or you are selling or closing the company. Also use one if you are unsure about any aspect of your tax position. The cost of getting it wrong is usually higher than the fee."
+keyTakeaways:
+  - "Dormant company accounts can be filed online by the director for a £34 confirmation statement fee, compared to accountant fees of £150 to £400 plus VAT per year."
+  - "A single director using accounting software (£240 to £480 per year) saves £360 to £720 annually versus an accountant charging £600 to £1,200 for the same work."
+  - "A limited company with turnover below the £90,000 VAT threshold and no employees requires roughly 12 hours of annual bookkeeping and filing when using accounting software."
+  - "Late limited company accounts cost £150 at one month late and £1,500 at six or more months late, and late corporation tax payment attracts interest at 7.25%."
+  - "With two associated companies HMRC halves the thresholds, so the 19% rate applies only below £25,000 profit per company and marginal relief applies between £25,000 and £125,000."
+  - "Voluntary strike-off using the DS01 form costs £8 and takes about three months, saving £1,000 to £2,500 compared to paying an accountant for the final year's work."
 ---
 
 <p>Most limited company directors benefit from hiring a <a href="/services">limited company accountant</a>. We say that knowing we are one. The compliance burden is real: annual accounts, corporation tax returns, confirmation statements, payroll if you have employees, dividend paperwork, possibly VAT. Miss a filing deadline and the penalties stack fast.</p>

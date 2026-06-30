@@ -30,6 +30,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@leeloothefirst
   source: Pexels
   source_url: https://www.pexels.com/photo/smartphone-displaying-a-stock-market-chart-lying-on-documents-next-to-a-laptop-on-the-desk-7887850/
+keyTakeaways:
+  - "The Annual Investment Allowance gives UK businesses 100% tax relief on qualifying plant and machinery costs in the year of purchase, up to £1,000,000 per year."
+  - "The £1,000,000 AIA limit has been permanently set since 1 January 2019 and is proportionally reduced for accounting periods shorter than 12 months."
+  - "Cars, land, and buildings are excluded from AIA; passenger cars instead attract capital allowances through the main pool or special rate pool, depending on CO2 emissions."
+  - "Expenditure above the £1m AIA limit goes into the main-rate pool at 14% writing down allowance from April 2026 (FA 2026 s.28), or the special rate pool at 6%."
+  - "Where a business owner controls multiple associated companies, HMRC divides the £1m AIA limit equally between them, so three companies each receive a £333,333 limit."
+  - "Selling an asset on which AIA was claimed produces a balancing charge equal to the sale proceeds, which is added to taxable profits in the year of sale."
 ---
 <h2>What Is the Annual Investment Allowance?</h2>
 

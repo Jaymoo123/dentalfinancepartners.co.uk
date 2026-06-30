@@ -27,6 +27,24 @@ faqs:
     answer: "You can request a statutory review by a different HMRC officer. If that is also rejected, you can appeal to the First-Tier Tribunal (Tax Chamber). This is a formal legal process and you should get professional representation. In practice, most appeals are resolved at the first stage if the evidence is solid. Rejections usually happen when the excuse does not meet HMRC's definition of reasonable."
   - question: "Will appealing a penalty trigger a full HMRC investigation into my company?"
     answer: "No. A penalty appeal is a specific administrative process. HMRC will not use it as a reason to open a full compliance check into your company. They are separate functions. That said, if your return contains obvious errors or omissions, HMRC may pick that up regardless. But the appeal itself does not trigger an investigation."
+keyTakeaways:
+  - "The first late filing penalty for a CT600 is £100, with a further £100 at three months late and 10% of unpaid Corporation Tax at six months late."
+  - "At 12 months late HMRC charges a further 10% of unpaid tax, bringing the total surcharge to 20%, and a nil return filed late still triggers the initial £100 penalty."
+  - "Directors have 30 days from the date on the penalty notice to submit an appeal on reasonable excuse grounds."
+  - "HMRC aims to respond to appeals within 15 working days, though in practice the wait is typically four to six weeks."
+  - "Paying a penalty does not waive the right to appeal; if HMRC upholds the appeal after payment, it refunds the penalty plus any interest already paid on it."
+  - "If HMRC rejects an appeal, directors can request a statutory review by a different HMRC officer and, if that also fails, appeal to the First-Tier Tribunal (Tax Chamber)."
+howToSteps:
+  - name: "Check the penalty notice"
+    text: "Read the notice to confirm the penalty amount, the period it covers, and the 30-day deadline for submitting an appeal."
+  - name: "Gather evidence"
+    text: "Collect documents that support the reasonable excuse: hospital discharge letters, death certificates, insurance claim references, or screenshots of failed online submissions."
+  - name: "Write the appeal letter"
+    text: "The letter must state the penalty reference and amount, explain the reasonable excuse clearly, provide supporting evidence, confirm the issue is resolved, and request cancellation."
+  - name: "Submit the appeal and wait for HMRC's decision"
+    text: "HMRC targets a response within 15 working days; allow four to six weeks in practice. HMRC will either cancel the penalty or reject and explain why."
+  - name: "Escalate if HMRC rejects the appeal"
+    text: "Request a statutory review by a different HMRC officer; if that also fails, appeal to the First-Tier Tribunal (Tax Chamber), where professional representation is advisable."
 ---
 
 <h2>HMRC Issues Penalties Automatically. They Are Not Final.</h2>

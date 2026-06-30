@@ -27,6 +27,26 @@ faqs:
     answer: "This is an unlawful dividend. The directors are personally liable to repay the amount to the company. HMRC will treat the payment as a director's loan account withdrawal, not a dividend. The director must repay the loan or face Section 455 tax at 35.75% on the outstanding balance if not repaid within 9 months and 1 day of the year-end (35.75% for loans made on or after 6 April 2026; 33.75% for loans made in 2025/26). The director also faces a benefit in kind charge on any loan over £10,000. In serious cases, HMRC can pursue the directors personally for the tax."
   - question: "Is a digital dividend voucher acceptable, or does it need to be printed and signed?"
     answer: "A digital dividend voucher is perfectly acceptable. HMRC and Companies House both accept electronic records. The voucher should be signed by a director, and a digital signature (typed name or electronic signature) is fine. The key requirement is that the voucher is created at the time of the dividend declaration and stored securely. We recommend saving the voucher as a PDF in your accounting software or a dedicated company folder. Do not rely on an email chain as your only record, as emails can be deleted or lost."
+keyTakeaways:
+  - "Without dividend vouchers, HMRC can reclassify payments as director's loan drawings, triggering Section 455 tax at 35.75% on loans made on or after 6 April 2026 (33.75% in 2025/26)."
+  - "Section 455 tax applies if the loan is not repaid within 9 months and 1 day of the year-end, and a benefit in kind charge applies to any loan over £10,000."
+  - "A valid dividend voucher must show the company name and number, declaration and payment dates, shareholder details, share class and holding, dividend per share, total, tax credit, and director's signature."
+  - "Board minutes approving the dividend are a legal requirement under the Companies Act 2006 and must confirm that the company has sufficient distributable profits (retained earnings) to cover the payment."
+  - "Dividends can only lawfully be paid to shareholders, and the total declared must not exceed the company's cumulative distributable reserves (retained earnings minus dividends already paid)."
+  - "Digital dividend vouchers are acceptable to both HMRC and Companies House, provided they are created at the time of declaration and stored securely as a PDF."
+howToSteps:
+  - name: "Check retained earnings"
+    text: "Before declaring any dividend, run a profit and loss report and confirm the retained earnings balance covers the payment; a dividend that exceeds distributable reserves is unlawful."
+  - name: "Hold a board meeting or written resolution"
+    text: "Record the directors' approval in board minutes, confirming distributable profits exist at the date of declaration, as required by the Companies Act 2006."
+  - name: "Create the dividend voucher on the same day"
+    text: "Prepare the voucher with company name, registered number, declaration date, payment date, shareholder name, share class, dividend per share, total amount, tax credit (nil for most), and a director's signature."
+  - name: "Post the journal entry"
+    text: "On declaration, debit retained earnings and credit dividends payable; on payment, debit dividends payable and credit bank to complete the double entry."
+  - name: "Record the shareholder payment correctly"
+    text: "If the dividend clears a director's loan, post two journals: a dividend credit to the director's current account, then a debit to that account crediting the loan account."
+  - name: "Update and file the dividend register"
+    text: "Log the declaration date, total amount, and per-shareholder allocation in a dividend register, stored alongside the vouchers and board minutes as a single audit trail."
 ---
 
 <p>Dividends are the most tax-efficient way for a limited company director to extract profits. But that efficiency only holds up if you record the payment properly.</p>

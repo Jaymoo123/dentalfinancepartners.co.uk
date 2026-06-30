@@ -27,6 +27,13 @@ faqs:
     answer: "HMRC can open an enquiry into your tax return up to 12 months after you file it. They have access to Airbnb booking data. If they challenge you, they will ask for evidence of your income and expenses. An accountant can handle the correspondence, prepare the evidence, and negotiate a settlement. Penalties apply if you have underpaid tax, but cooperating reduces the penalty."
   - question: "Should I use a limited company for my Airbnb business?"
     answer: "It depends on your income level, your plans for reinvestment, and your long-term goals. A limited company pays corporation tax at 19% to 25% on profits. You then extract income as salary and dividends. This can be more tax-efficient than paying income tax at 40% or 45% as a sole trader. But a company has higher compliance costs, more filing requirements, and you cannot claim BADR on the sale of company shares unless you meet the 2-year holding test. Speak to an accountant to model your specific numbers."
+keyTakeaways:
+  - "The Furnished Holiday Letting tax regime was abolished from 6 April 2025, so all Airbnb lets are now taxed as ordinary residential property businesses."
+  - "Hosts with gross Airbnb rental income below £1,000 per year do not need to notify HMRC, but above that threshold a Self Assessment return (SA105) is required."
+  - "Hosts letting a room in their own home can earn up to £7,500 tax-free under the Rent a Room Scheme, which cannot be combined with the property allowance."
+  - "Individual landlords receive a 20% basic-rate tax reducer on mortgage interest costs, a figure that rises to 22% from April 2027."
+  - "Making Tax Digital for Income Tax Self Assessment is mandatory from April 2026 for landlords with qualifying income over £50,000, and from April 2027 for those with income over £30,000."
+  - "VAT registration becomes mandatory once Airbnb income crosses £90,000 in a rolling 12-month period, requiring hosts to charge 20% VAT on bookings."
 ---
 
 <h2>Why Airbnb Hosts Need a Specialist Accountant</h2>

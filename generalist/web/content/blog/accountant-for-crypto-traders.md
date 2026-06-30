@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. Some high-volume traders use a limited company because the Corporation Tax rate (19% to 25%) is lower than the higher rate of Income Tax (40% or 45%). But you then need to extract the profits as salary or dividends, which adds further tax. The structure is not always beneficial. We advise on this case by case."
   - question: "What happens if I do not declare my crypto gains?"
     answer: "HMRC can open an enquiry into your tax return up to 12 months after the filing deadline (or up to 20 years if they suspect deliberate non-disclosure). They can charge penalties of up to 100% of the tax due, plus interest. They can also publish your name as a deliberate defaulter. Voluntary disclosure before HMRC contacts you significantly reduces penalties."
+keyTakeaways:
+  - "Every disposal of a cryptoasset (selling, exchanging for another crypto, spending, or gifting) is a chargeable event that triggers a UK gain or loss calculation."
+  - "The first £3,000 of net crypto gains each tax year is free of Capital Gains Tax; above that, the rate is 18% (basic-rate) or 24% (higher-rate)."
+  - "If HMRC classifies your activity as trading rather than investing, profits are taxed as Income Tax at 20%, 40%, or 45% with no Annual Exempt Amount."
+  - "Class 4 National Insurance applies to crypto trading profits at 6% on profits between £12,570 and £50,270, then 2% above; Class 2 NIC was abolished from 6 April 2024."
+  - "From 2026, UK exchanges must report transaction data directly to HMRC under the Crypto-Asset Reporting Framework (CARF), making undisclosed gains easier to detect."
+  - "HMRC can open an enquiry up to 20 years after the filing deadline if deliberate non-disclosure is suspected, and penalties can reach 100% of the tax due plus interest."
 ---
 
 <h2>Crypto Trading Is Not Tax Free in the UK</h2>

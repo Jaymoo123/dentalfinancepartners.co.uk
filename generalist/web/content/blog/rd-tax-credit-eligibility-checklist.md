@@ -27,6 +27,28 @@ faqs:
     answer: "Yes, if the project sought an advance in technology. Building a standard website or app does not qualify. But developing a novel algorithm, solving a data processing bottleneck, or creating new software that overcomes a known technical challenge can qualify. The key is whether a competent developer could have done it without experimentation. If not, it is R&D."
   - question: "What records do I need to keep for an R&D claim?"
     answer: "Keep project plans, technical specifications, test results, meeting notes, timesheets, and cost breakdowns. A project log tracking dates, activities, staff hours, and costs is ideal. HMRC can request these during an enquiry. If you cannot produce supporting documents, the claim may be denied or reduced."
+keyTakeaways:
+  - "The merged R&D scheme, which replaced the old SME and RDEC schemes, applies to accounting periods starting on or after 1 April 2024."
+  - "Only limited companies can claim R&D tax credits; sole traders and partnerships are excluded from the relief."
+  - "Profit-making companies receive a 20% taxable credit on qualifying R&D costs under the merged scheme."
+  - "Loss-making companies where R&D spend reaches 30% or more of total costs qualify under ERIS, which offers an 86% enhanced deduction and a payable credit rate of 14.5%."
+  - "Claims for externally provided workers and subcontracted R&D are each capped at 65% of the relevant costs."
+  - "R&D claims must be made within 12 months of the corporation tax return filing date, equating to 24 months after the year-end for most companies."
+howToSteps:
+  - name: "Confirm the project meets the R&D definition"
+    text: "Check that the project sought a genuine advance in science or technology, with genuine uncertainty at the outset and a systematic, planned approach."
+  - name: "Verify the project field"
+    text: "Confirm the project is in a qualifying field such as engineering, software, life sciences, or food science. Advances in business models do not qualify."
+  - name: "Identify qualifying costs"
+    text: "Identify staff costs, consumable items, contributions to qualifying bodies, and claims for externally provided workers or subcontracted R&D at 65% of each."
+  - name: "Check your company structure"
+    text: "Confirm your business is a limited company, as sole traders and partnerships cannot claim. Check whether associated companies affect your R&D thresholds."
+  - name: "Gather supporting documentation"
+    text: "Collect project plans, technical specifications, test results, meeting notes, timesheets, and cost breakdowns before submitting the claim."
+  - name: "Submit the R&D Additional Information Form"
+    text: "Submit the R&D Additional Information Form (AIF) digitally before or alongside the CT600 corporation tax return."
+  - name: "Meet the claim deadline"
+    text: "Make the claim within 12 months of your company's corporation tax return filing date, which is 24 months after the year-end for most companies."
 ---
 
 <h2>Does Your Business Qualify for R&D Tax Credits?</h2>

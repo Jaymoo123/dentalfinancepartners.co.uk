@@ -27,6 +27,13 @@ faqs:
     answer: "Architectural services are generally standard-rated at 20% VAT. However, services for new residential buildings are zero-rated. Services for listed buildings may be reduced-rated in some cases. If your practice works on mixed projects, your accountant must apportion input VAT correctly to avoid HMRC penalties. The Flat Rate Scheme for architects is 14.5% (or 16.5% for limited cost traders)."
   - question: "How does the Construction Industry Scheme affect my architecture practice?"
     answer: "If you subcontract work to structural engineers, architectural technicians, or visualisation specialists, you are a CIS contractor. You must register with HMRC, deduct 20% (or 30% for unregistered subcontractors) from payments, and file monthly CIS300 returns. Your accountant should set up your payroll software to handle deductions automatically and reconcile CIS liabilities against corporation tax payments."
+keyTakeaways:
+  - "Architecture practices that subcontract work must register as CIS contractors with HMRC, deduct 20% from subcontractor payments (30% for unregistered subcontractors), and file monthly CIS300 returns."
+  - "The VAT Flat Rate Scheme rate for architectural services is 14.5%, but most architecture practices are limited cost traders and must instead use the 16.5% rate."
+  - "VAT registration is required once turnover reaches £90,000; professional services for new residential buildings are zero-rated, while commercial project services are standard-rated at 20%."
+  - "From April 2026, self-employed architects with qualifying income over £50,000 must keep digital records and submit quarterly MTD for ITSA updates, falling to £30,000 from 2027 and £20,000 from 2028."
+  - "The Annual Investment Allowance gives 100% relief on plant and machinery up to £1,000,000 a year, while the Structures and Buildings Allowance adds 3% yearly on studio construction or renovation."
+  - "Architecture practices developing innovative solutions involving technical uncertainty may claim R&D tax credits; loss-making practices spending over 30% of total costs on R&D qualify for the R&D Intensive Scheme (ERIS)."
 ---
 
 <p>Architecture practices have a specific financial profile. You deal in long project timelines, milestone billing, subcontractor costs, material procurement, and often intellectual property. Your tax and accounting needs are not the same as a retail shop, a marketing agency, or a building contractor. That is why finding the right <strong>accountant for architects</strong> matters more than picking a generalist firm from a Google search.</p>

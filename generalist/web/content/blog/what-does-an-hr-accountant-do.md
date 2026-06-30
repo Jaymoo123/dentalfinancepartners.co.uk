@@ -27,6 +27,13 @@ faqs:
     answer: "HMRC charges automatic penalties. For each 50 forms (or part of 50) that are late, you pay £100 per month. So if you have 5 employees with benefits and you are 2 months late, the penalty is £200. There is also interest on any late-paid Class 1A NIC. An HR accountant ensures the P11D is submitted by the 6 July deadline."
   - question: "How does an HR accountant handle a director who is also an employee?"
     answer: "A director who is also an employee is treated as an employee for payroll purposes. They receive a salary through PAYE, with the correct tax and NI deducted. The HR accountant ensures the director's salary is set at the optimal level (often £12,570 to use the personal allowance without triggering employer NI, if the Employment Allowance covers it). Dividends are then paid separately from the company's retained profits. The HR accountant coordinates with the company accountant to make sure the overall tax position is efficient."
+keyTakeaways:
+  - "Employer National Insurance is 15% above the secondary threshold of £5,000 per year, a rate that took effect from 6 April 2025."
+  - "The P11D and P11D(b) must be submitted to HMRC by 6 July each year, and late filing attracts automatic penalties of £100 per 50 forms per month."
+  - "Eligible employers can reduce their employer NI liability by up to £10,500 through the Employment Allowance."
+  - "Under the Construction Industry Scheme, HR accountants deduct 20% tax from registered subcontractors and 30% from unregistered subcontractors."
+  - "Most employers can reclaim 92% of the statutory maternity pay they pay out from HMRC."
+  - "P60s must be issued to all employees by 31 May each year as part of the payroll year-end process."
 ---
 
 <h2>What Exactly Is an HR Accountant?</h2>

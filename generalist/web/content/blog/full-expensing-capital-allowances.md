@@ -30,6 +30,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@pabda
   source: Pexels
   source_url: https://www.pexels.com/photo/round-coins-on-paper-bills-5277968/
+keyTakeaways:
+  - "Full expensing lets limited companies deduct 100% of qualifying new, unused plant and machinery costs from taxable profits in the year of purchase."
+  - "The relief has been permanent since 1 April 2023, replacing the temporary super-deduction that ended on 31 March 2023."
+  - "Special rate pool assets, such as lifts and air conditioning, get a 50% first-year allowance, with the remaining 50% entering the pool at 6% writing-down allowances."
+  - "Cars are excluded from full expensing entirely; new zero-emission cars qualify for 100% first-year allowances under separate legislation, but standard cars do not."
+  - "Full expensing has no monetary cap, unlike the Annual Investment Allowance, which is limited to £1,000,000 per year per group of associated companies."
+  - "When a full-expensed asset is sold, the sale proceeds are fully taxable as a balancing charge because the asset has a nil tax written-down value after the claim."
 ---
 <p>If your limited company buys plant or machinery for use in the trade, full expensing lets you deduct the entire cost from your taxable profits in the year you buy it. No spreading the cost over several years. No complex pooling calculations. One deduction, one tax year.</p>
 

@@ -27,6 +27,13 @@ faqs:
     answer: "HMRC rejects claims that fail to demonstrate technological uncertainty, not claims based on commercial failure. If your technical narrative is clear and supported by evidence, the claim is no more likely to be rejected than a successful project claim. The risk is in the narrative, not the outcome."
   - question: "Can I claim for a project that was abandoned because we ran out of money?"
     answer: "Yes, provided the work up to the point of abandonment was genuine R&D. The reason for stopping does not affect whether the work qualifies. The costs incurred while the project was active are allowable. Costs after the abandonment decision are not."
+keyTakeaways:
+  - "HMRC's R&D rules do not require commercial success; the test is whether you attempted to resolve scientific or technological uncertainty."
+  - "HMRC's internal manual at CIRD81900 states explicitly that a project which fails or is abandoned before completion can still qualify as R&D."
+  - "Qualifying costs stop at the abandonment date; any costs incurred after you decide to stop the project are not allowable for R&D tax credits."
+  - "Under the merged RDEC scheme, for accounting periods starting on or after 1 April 2024, companies receive a 20% above-the-line credit on qualifying R&D costs."
+  - "Under the old SME scheme, qualifying costs were enhanced to 186% of actual spending, with a repayable cash credit available for loss-making companies."
+  - "A project that produced a working product which simply failed to sell is a commercial failure, not a technological one, and does not qualify for R&D tax credits."
 ---
 
 <p>Most business owners assume R&D tax credits are only for projects that succeed commercially. That is wrong. HMRC's R&D rules do not require a project to make money, sell a product, or even reach the market. The test is whether you attempted to resolve scientific or technological uncertainty. If you did, the project qualifies regardless of the commercial outcome.</p>

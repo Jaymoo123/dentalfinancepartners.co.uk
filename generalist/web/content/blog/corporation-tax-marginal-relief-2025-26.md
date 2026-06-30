@@ -27,6 +27,13 @@ faqs:
     answer: "Dividends received from non-group companies increase your augmented profits figure. Marginal relief is calculated using augmented profits, not just taxable profits. If those dividends push your augmented profits above £250,000 (or the adjusted upper limit), you lose marginal relief entirely. Even if your trading profits are well below £250,000, check your augmented profits before assuming you qualify."
   - question: "Can I plan to stay within the marginal relief band to get a lower effective rate?"
     answer: "Yes, but plan carefully. Your effective rate sits between 19% and 25% across the entire band, rising smoothly as profits increase. The marginal rate within the band is around 26.5%, so each extra pound of profit in the band costs more tax than the 19% flat rate would. Timing capital investments, R&D claims, or pension contributions to reduce profits below £50,000 (where the flat 19% rate applies) can save tax. But do not turn down profitable work just to stay in a lower tax band. The extra profit after tax is still more than no profit at all."
+keyTakeaways:
+  - "For 2025/26, corporation tax marginal relief applies to companies with taxable profits between £50,000 and £250,000, producing an effective rate that rises smoothly from 19% to 25%."
+  - "The marginal rate within the band is around 26.5%, meaning each extra pound of profit above £50,000 costs more tax than the flat 19% small profits rate would."
+  - "The £50,000 and £250,000 thresholds are divided by the total number of associated companies; two associated companies halve both limits to £25,000 and £125,000."
+  - "Augmented profits include dividends received from non-group companies, and if augmented profits exceed £250,000 the company loses marginal relief entirely and pays 25% on all profits."
+  - "A company with £100,000 taxable profit and no associated companies pays £22,750 in corporation tax for 2025/26, an effective rate of 22.75%."
+  - "Capital investments qualifying for the Annual Investment Allowance (up to £1,000,000 per year) reduce taxable profits directly and can move a company below £50,000 into the flat 19% band."
 ---
 
 <h2>What Is Corporation Tax Marginal Relief?</h2>

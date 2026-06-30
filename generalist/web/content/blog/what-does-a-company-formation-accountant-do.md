@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "DIY incorporation at Companies House costs £12 but does not cover corporation tax registration, PAYE setup, VAT registration or any initial tax planning."
+  - "Companies must register for corporation tax with HMRC within three months of starting to trade, or HMRC can issue a penalty."
+  - "An overdrawn director's loan account not repaid within nine months and one day of the year end triggers s.455 tax, charged at 35.75% for loans made in 2026/27."
+  - "Standard formation packages cost £100 to £200, covering incorporation, corporation tax registration, PAYE setup and a registered office address, while premium packages cost £200 to £400."
+  - "Three separate year-end deadlines apply: file Companies House accounts within 9 months, pay corporation tax 9 months and 1 day after year end, and file the CT600 within 12 months."
+  - "When choosing a formation accountant, look for ICAEW, ACCA or CIMA qualification, which signals strict professional standards and professional indemnity insurance cover."
 ---
 <p>If you are setting up a limited company in the UK, you have probably seen the phrase "company formation accountant" while researching your options. It sounds like a specialist service, but what does it actually cover? And do you really need one, or can you handle the process yourself through Companies House for £12?</p>
 

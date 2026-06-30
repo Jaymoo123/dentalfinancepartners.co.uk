@@ -27,6 +27,13 @@ faqs:
     answer: "HMRC charges a fixed penalty for each late submission. The first late submission incurs a penalty. Subsequent late submissions within the same tax year attract higher fixed penalties. There is no grace period or automatic waiver. If you miss a deadline, submit what you have as soon as possible. A partial update is better than a missed submission."
   - question: "Do I still need to file a self assessment tax return under MTD ITSA?"
     answer: "The quarterly updates replace the annual self assessment return for your business income. But you will still complete an end-of-year finalisation statement through your software. You may also need to file a separate self assessment return if you have other income sources like employment, dividends, or capital gains. HMRC has confirmed that the self assessment system continues alongside MTD ITSA for non-business income."
+keyTakeaways:
+  - "From April 2026, sole traders with qualifying income over £50,000 must keep digital records and submit four quarterly updates to HMRC using compatible software."
+  - "The £50,000 threshold covers total qualifying income from self-employment and property combined, not business income alone."
+  - "The income threshold drops to £30,000 in April 2027 and to £20,000 in April 2028, so sole traders earning £25,000 today will be caught by 2027."
+  - "MTD ITSA records must be kept for at least five years after the 31 January following the tax year, so 2026/27 records last until 31 January 2033."
+  - "Each quarterly period has a fixed submission deadline one month after it ends; the first period, 6 April to 5 July, must be submitted by 5 August."
+  - "HMRC does not require receipts for individual expenses under £5, though each transaction must still be recorded digitally in compatible software."
 ---
 
 <h2>What is MTD ITSA and who does it affect?</h2>

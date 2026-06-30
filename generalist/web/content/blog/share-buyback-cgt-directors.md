@@ -27,6 +27,13 @@ faqs:
     answer: "If the buyback qualifies for capital treatment, the remaining directors report nothing on their personal tax return. Their shareholding simply increases. If HMRC reclassifies the buyback as a distribution, the remaining directors must report their deemed dividend on their self assessment return (SA100) and pay dividend tax. This is why we recommend a pre-clearance application to HMRC for larger buybacks."
   - question: "Is it cheaper for the company to buy back shares or for the remaining directors to buy them personally?"
     answer: "It depends on the company's retained profits and the directors' personal tax rates. A company buyback uses retained profits directly, with no personal tax for the remaining directors. A personal purchase requires the directors to extract cash from the company first (usually as dividends), incurring dividend tax. For higher rate directors, the company buyback is almost always cheaper. We run the numbers for each client to confirm."
+keyTakeaways:
+  - "Where the buyback qualifies for capital treatment, the departing director pays CGT at 18% under BADR from 6 April 2026 (14% in 2025/26) or 24% otherwise; remaining directors pay nothing."
+  - "If HMRC reclassifies the buyback as a distribution, remaining directors face deemed dividend tax at 10.75%, 35.75% or 39.35% in 2026/27 on their proportionate share of the buyback cost."
+  - "Capital treatment under section 1033 of the Corporation Tax Act 2010 requires the buyback to benefit the company's trade and the departing shareholder to sever all commercial ties."
+  - "BADR needs the departing director to hold at least 5% of ordinary shares and votes, as an officer or employee, for two years, within a £1 million lifetime limit."
+  - "A pre-clearance application to HMRC under section 1044 of the Corporation Tax Act 2010 is recommended for buybacks over £50,000 to confirm capital rather than distribution treatment."
+  - "The company must file form SH03 at Companies House within 28 days of the buyback, and the departing director reports the gain on self assessment pages SA100 and SA108."
 ---
 
 <h2>What Happens When a Director Wants Out</h2>

@@ -30,6 +30,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@olha-maltseva-2156976676
   source: Pexels
   source_url: https://www.pexels.com/photo/assorted-foreign-currency-coins-and-banknotes-34926383/
+keyTakeaways:
+  - "The AIA limit for 2025/26 is £1,000,000 per 12-month accounting period, giving 100% tax relief on qualifying plant and machinery in the year of purchase."
+  - "The £1m limit reduces proportionally for shorter accounting periods: a 6-month period gives £500,000 and a 9-month period gives £750,000."
+  - "Cars are excluded from the AIA, with the sole exception being new zero-emission electric cars, which qualify for a 100% first-year allowance instead."
+  - "Second-hand plant and machinery qualifies for the AIA, unlike Full Expensing, which covers only new assets bought by limited companies."
+  - "When a business owner controls multiple associated companies, the £1m AIA limit is shared between them, reducing each company's individual entitlement."
+  - "Qualifying spend above £1m falls into the main pool at 18% writing down allowances (14% from 1 April 2026 for CT), or the special rate pool at 6% per year."
 ---
 <p>The Annual Investment Allowance (AIA) is one of the most valuable tax reliefs available to UK limited companies and unincorporated businesses. It gives you 100% tax relief on qualifying plant and machinery costs in the year you buy them, up to a set annual limit.</p>
 

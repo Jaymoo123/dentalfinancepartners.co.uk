@@ -27,6 +27,13 @@ faqs:
     answer: "No. Cash in the bank is not the same as distributable profits. If your retained earnings are negative or zero, you cannot legally pay a dividend regardless of your bank balance. The cash may be needed for creditors, loan repayments, or operating expenses. Paying a dividend from capital is unlawful."
   - question: "How do I fix an illegal dividend I already paid?"
     answer: "If the company has since made profits, you may regularise the dividend by documenting it as paid from those later profits. If not, you may need to reclassify it as a director's loan. This requires board resolutions and amended accounting records. Speak to your accountant immediately. Do not leave it, as the problem compounds over time."
+keyTakeaways:
+  - "A dividend can only be paid from distributable profits under Section 830 of the Companies Act 2006; cash in the bank is not the same as distributable profits."
+  - "Distributable profits equal accumulated realised profits minus accumulated realised losses; the test is the retained earnings line in the balance sheet, not the bank balance."
+  - "A loss in the current year does not automatically bar dividends: if retained earnings remain positive after the loss, you may still distribute up to that amount."
+  - "Directors who authorise an illegal dividend are personally liable to repay it; HMRC can also reclassify the payment as salary, triggering PAYE and National Insurance."
+  - "An illegal dividend reclassified as a director's loan attracts Section 455 tax of 35.75% on the outstanding balance (loans made on or after 6 Apr 2026)."
+  - "The most tax-efficient director salary is typically £12,570, matching the personal allowance; employer NI of 15% applies above the £5,000 secondary threshold from 6 Apr 2025."
 ---
 
 <p>If your company has made a loss this year, you cannot legally declare a dividend. A dividend declared from loss is unlawful under the Companies Act 2006. It does not matter if you have cash in the bank. It does not matter if you need the income. The law is clear: dividends can only be paid from distributable profits.</p>

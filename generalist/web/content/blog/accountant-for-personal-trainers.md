@@ -27,6 +27,13 @@ faqs:
     answer: "Sole trader is simpler and cheaper for profits under £50,000. Limited company becomes tax-efficient above that level because you can take dividends instead of salary, reducing your overall tax bill. Incorporation also gives you limited liability, which matters if you rent your own studio space. An accountant can run the numbers for your specific situation."
   - question: "What accounting software should a personal trainer use?"
     answer: "FreeAgent is the most popular choice for sole trader PTs because it is simple and includes self assessment filing. Xero is better if you operate through a limited company and need more features. Both integrate with payment platforms like Stripe and GoCardless, which is useful if you take monthly direct debits for class passes. Your accountant should help you choose and set it up."
+keyTakeaways:
+  - "VAT registration is mandatory once a personal trainer's taxable turnover exceeds £90,000 in any rolling 12-month period, after which personal training services attract 20% VAT."
+  - "Making Tax Digital for Income Tax is mandatory from April 2026 for personal trainers earning over £50,000, falling to £30,000 in April 2027 and £20,000 in April 2028."
+  - "Sole trader is usually the right structure for profits under £50,000; at £100,000 profit, a limited company structure can save approximately £4,000 in tax compared with sole trader."
+  - "A personal trainer's own gym membership is a disallowable expense; gym floor rental or licence fees paid to use a gym's space for client sessions are deductible."
+  - "Clothing is only deductible if it carries a business logo and is not suitable for everyday wear; a plain black gym top does not qualify."
+  - "HMRC accepts £6 per week for home-working costs without receipts under the flat rate method, which is usually sufficient for personal trainers who train clients elsewhere."
 ---
 
 <p>If you are a personal trainer working in the UK, your tax situation is not the same as a plumber's, a freelance copywriter's, or a café owner's. You deal with block-booked class fees, gym rental agreements, self-employed contractors covering your sessions, and VAT implications on monthly subscriptions that can catch you out. A generalist accountant who handles every trade under the sun will miss these details.</p>

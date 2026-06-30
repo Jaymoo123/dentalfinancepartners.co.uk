@@ -27,6 +27,13 @@ faqs:
     answer: "No. HMRC requires an RTI submission for every director regardless of salary. The only exception is if the director is genuinely not an employee (for example, a non-executive director who is not an office holder and receives only fees). For most director-shareholders, the directorship creates an employment relationship that requires payroll reporting."
   - question: "Does a nil-paid director affect my company's Employment Allowance claim?"
     answer: "No. A nil-paid director does not affect your Employment Allowance claim. The allowance is calculated based on employer NI due on all employees. If no salary is paid, no employer NI is due, so no allowance is used. You can still claim the allowance if you have other employees who trigger employer NI. The nil-paid director simply does not generate any NI liability."
+keyTakeaways:
+  - "HMRC treats directors as employees for payroll purposes, so a director taking only dividends must still submit a Full Payment Submission (FPS) showing zero pay."
+  - "The correct annual FPS for a nil-paid director shows £0.00 in all pay, tax, and NI fields and must be filed on or before 5 April each year."
+  - "Missing RTI submissions trigger automatic penalties of £100 per month for the first three months for a single-director company, rising to £400 per month from the fourth month."
+  - "Dividends are not wages and are not subject to PAYE, NI, or RTI reporting; they are reported separately on the director's self assessment return (SA100 or SA103)."
+  - "A nil-paid director accrues no qualifying years for the state pension, as dividend income does not count; the lower earnings limit is £6,500 for 2025/26."
+  - "No P60 is issued for a nil-paid director at year-end, and no P45 is issued unless and until the director leaves the company."
 ---
 
 <p>If you are a director of a UK limited company and you pay yourself entirely through dividends with no salary, you still need to submit an RTI return to HMRC. Many directors assume that no salary means no payroll reporting. That assumption is wrong and it creates a compliance gap that can trigger penalties.</p>

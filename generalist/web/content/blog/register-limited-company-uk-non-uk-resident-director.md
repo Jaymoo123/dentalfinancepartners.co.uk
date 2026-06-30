@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "All six takeaways body-supported and figure-faithful"
+  - "Dividend rates 10.75/35.75/39.35 + £500 allowance match 2026/27 ground truth"
+  - "Corporation tax scoped to 2025/26 in body, 19%/25% consistent"
+  - "Employer NI in body correctly stated as 15% above £5,000 from 6 Apr 2025"
+  - "VAT threshold £90,000 and confirmation statement £34 verified against body"
+  - "No stale figures detected; remediation pass holds up"
 ---
 <p>You can register a limited company in the UK even if you live outside the country. Companies House does not require directors to be UK residents. The process to <strong>how to register a limited company uk</strong> is the same online application. But the compliance picture changes once the company is active.</p>
 

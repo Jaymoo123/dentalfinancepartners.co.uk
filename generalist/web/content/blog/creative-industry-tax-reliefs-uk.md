@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, but the expenditure must be separate. VGTR covers the game development costs. R&D tax credits cover technological innovation, like developing new graphics engines or AI systems. You cannot claim the same costs under both reliefs. Speak to an accountant to split the expenditure correctly."
   - question: "What is the minimum UK expenditure for creative industry tax reliefs?"
     answer: "At least 10% of the qualifying core expenditure must be on goods or services provided from within the UK. This is the UK expenditure condition. If you spend heavily on overseas production or post-production, check this condition carefully before claiming."
+keyTakeaways:
+  - "From 1 April 2025, FTR, HTR, ATR, CTR, and VGTR closed to new productions, replaced by AVEC and VGEC; the legacy reliefs end entirely from 1 April 2027."
+  - "Under legacy Film Tax Relief, productions get a 100% additional deduction on core expenditure plus a 25% payable credit on the surrenderable loss (20% for films over £15 million)."
+  - "Theatre Tax Relief gives a 25% payable credit for touring productions (100% additional deduction) and 20% for non-touring productions (80% additional deduction)."
+  - "Film, high-end TV, animation, and children's television productions must obtain a provisional BFI cultural test certificate confirming at least 16 out of 31 points before submitting a corporation tax claim."
+  - "At least 10% of qualifying core expenditure must be on goods or services from within the UK; marketing, distribution, and financing costs do not count as qualifying core expenditure."
+  - "All creative industry tax relief claims must be submitted within two years of the end of the accounting period in which the production completed, via the company's CT600 return."
 ---
 
 <p>Creative industry tax reliefs in the UK are a set of corporation tax reliefs designed to support the production of culturally significant creative content. They cover film, high-end television, animation, children's television, video games, theatre, orchestra, and museum and gallery exhibitions. If your business produces any of these, you could be reducing your corporation tax bill significantly.</p>

@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. From 1 April 2024, you must submit the R&D Additional Information Form (R&D AIF) before you file your corporation tax return (CT600). The AIF requires details of the qualifying projects, the costs, and the technical uncertainty. You cannot make a valid claim without it. Our team handles the AIF preparation as part of the claim process."
   - question: "Can I claim for time spent learning a new programming language or framework?"
     answer: "No. Learning a new skill, even if it is complex, does not qualify as R&D. The work must involve resolving technical uncertainty in your specific project, not acquiring general knowledge. Training costs are a separate expense and may qualify for other tax reliefs, but not R&D credits."
+keyTakeaways:
+  - "The merged RDEC scheme applies to all UK companies for accounting periods beginning on or after 1 April 2024, replacing the old separate SME enhanced-deduction scheme."
+  - "All companies now claim a 20% above-the-line RDEC credit on qualifying R&D costs, worth about 15% net at the 25% main rate or 16.2% at 19%."
+  - "Loss-making SMEs whose R&D exceeds 30% of total costs qualify for ERIS, giving a payable credit of about 27% of qualifying spend (14.5% of the 186% enhanced figure)."
+  - "The R&D Additional Information Form (R&D AIF) must be submitted before filing the corporation tax return (CT600); a claim is invalid without it."
+  - "Subcontractor R&D costs qualify at 65% of the payment, or at 100% if the subcontractor is a connected party."
+  - "You can amend a corporation tax return to claim R&D tax credits for up to two years after the end of the accounting period."
 ---
 
 <p>Most software developers assume R&D tax credits are for pharmaceutical companies, engineering firms, or manufacturing businesses. That is a costly mistake.</p>

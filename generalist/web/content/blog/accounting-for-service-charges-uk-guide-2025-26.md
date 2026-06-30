@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "Most service charges, including cleaning, maintenance, security and management fees, are standard rated for VAT at 20%."
+  - "Building insurance passed on by a landlord to tenants is exempt from VAT and does not carry a 20% charge."
+  - "A managing agent holding service charge funds must record them as a creditor on the balance sheet; only the management fee counts as the agent's income."
+  - "Landlords must register for VAT once total taxable turnover, including service charges to commercial tenants, exceeds £90,000."
+  - "MTD for Income Tax applies from April 2026 for landlords with qualifying income over £50,000, from April 2027 for income over £30,000, and from April 2028 for income over £20,000."
+  - "Service charge costs are deductible for corporation tax on the accrual basis: if paid in advance, a prepayment is recorded and the deduction taken in the later period."
 ---
 <p>If your business receives or pays service charges, getting the accounting treatment wrong can cost you thousands in VAT penalties, incorrect corporation tax filings, or disputes with tenants or leaseholders. The rules are not straightforward, and they changed in several important ways in recent years.</p>
 

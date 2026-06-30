@@ -27,6 +27,13 @@ faqs:
     answer: "You pay income tax at 20%, 40%, or 45% depending on your total taxable pay, plus employee National Insurance at 8% on earnings between £12,570 and £50,270 and 2% above that. Your umbrella also deducts employer NI at 15% (from 6 April 2025) and typically passes the cost to you via a reduced gross rate. On a £500/day contract, expect net take-home pay of around 56-60% of your assignment rate after all deductions."
   - question: "Should I use an umbrella company or a limited company for IR35?"
     answer: "Use an umbrella company if your contract is inside IR35, short-term, or if you want minimal admin. Use a limited company if your contract is outside IR35 and you earn over £400 per day. The limited company route typically saves you £8,000-£12,000 per year on a £500/day contract, but requires filing accounts, a confirmation statement, and corporation tax returns."
+keyTakeaways:
+  - "Umbrella company contractors are already taxed as employees through PAYE, so a client's IR35 status determination does not change their payslip or tax treatment."
+  - "Since April 2016, umbrella company contractors under supervision, direction, or control by the end client cannot claim travel and subsistence expenses as tax deductions."
+  - "Employer National Insurance at 15% (from 6 April 2025) on earnings above the £5,000 secondary threshold is typically deducted from the contractor's gross assignment rate."
+  - "On a £500 per day contract worked 220 days per year, the limited company outside IR35 route produces roughly £7,593 more in net pay annually than an umbrella arrangement."
+  - "The 2024 Autumn Budget announced that recruitment agencies and end clients will become jointly liable for unpaid tax in umbrella company supply chains, expected from April 2026."
+  - "If your assignment rate is below £400 per day or your contract is short-term, an umbrella company is usually the more practical choice over operating a limited company."
 ---
 
 <h2>What IR35 Actually Means for Umbrella Company Workers</h2>

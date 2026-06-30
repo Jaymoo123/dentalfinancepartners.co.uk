@@ -27,6 +27,13 @@ faqs:
     answer: "It depends on your circumstances. Companies deduct mortgage interest as a business expense, which is a significant advantage for higher-rate taxpayers. But transferring a property into a company triggers SDLT and capital gains. The decision depends on the property value, your income, your plans, and the holding period. A specialist will model the numbers before you decide."
   - question: "Can I claim capital allowances on residential property?"
     answer: "Capital allowances on residential property are limited. You cannot claim them on the building structure or most fixtures. But you can claim them on certain plant and machinery in furnished properties, such as furniture, white goods, and some fixtures in communal areas of HMOs. The rules are specific. A specialist property accountant will identify what qualifies."
+keyTakeaways:
+  - "Personal landlords cannot deduct mortgage interest as a business expense; they receive only a 20% tax credit on interest paid, a restriction that does not apply to limited companies."
+  - "Selling a UK residential property that is not your main home triggers CGT at 18% (basic rate) or 24% (higher rate), with the gain reported to HMRC within 60 days of completion."
+  - "The SDLT surcharge on additional residential properties rose from 3% to 5% on 31 October 2024; companies buying residential property over £500,000 face a 15% surcharge unless a relief applies."
+  - "Multiple Dwellings Relief was abolished from 1 June 2024, and the furnished holiday lettings regime ended on 6 April 2025, removing FHL trading status and capital allowances."
+  - "Missing the 60-day CGT reporting deadline triggers penalties starting at £100 and rising to £1,500 or more, plus interest on unpaid tax from the due date."
+  - "The annual CGT exemption is £3,000 for 2025/26; planning disposals across multiple tax years allows landlords to use it more efficiently."
 ---
 
 <h2>Property Tax Is Not Like Other Business Tax</h2>

@@ -30,6 +30,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@n-voitkevich
   source: Pexels
   source_url: https://www.pexels.com/photo/gold-coins-on-green-surface-6863191/
+keyTakeaways:
+  - "The Annual Investment Allowance gives 100% tax relief on qualifying plant and machinery up to £1,000,000 in the 2025/26 tax year, deducted in full in the year of purchase."
+  - "The £1m AIA limit applies per group of companies under common control, not per individual company, so two related companies share one £1m allowance between them."
+  - "Cars do not qualify for AIA; vans, lorries, and tractors do, and second-hand plant and machinery qualifies on the same terms as new assets."
+  - "Expenditure above the £1m AIA limit goes into the main pool at a 14% writing down allowance from April 2026, reduced from 18% by FA 2026 s.28."
+  - "Full Expensing, available to limited companies since April 2023, gives uncapped 100% relief on most main-rate plant and machinery; sole traders and partnerships rely on the AIA instead."
+  - "On hire purchase, AIA is claimed on the cash price only (not the total HP cost including interest) in the year you take ownership of the asset."
 ---
 <h2>What is the AIA Capital Allowance?</h2>
 

@@ -30,6 +30,12 @@ imageCredit:
   photographer_url: https://www.pexels.com/@n-voitkevich
   source: Pexels
   source_url: https://www.pexels.com/photo/tax-return-form-and-2021-planner-on-pink-surface-6863529/
+keyTakeaways:
+  - "Since April 2020, individual landlords receive only a 20% tax credit on mortgage interest, not a full deduction, leaving higher and additional rate taxpayers worse off."
+  - "CGT on residential BTL property sales is charged at 18% for basic rate taxpayers and 24% for higher rate taxpayers, with both rates applying from 30 October 2024."
+  - "Landlords must report a residential property gain to HMRC within 60 days of completion using the 60-day CGT property return, with the tax payable at the same time."
+  - "MTD for ITSA becomes mandatory for landlords with qualifying income above £50,000 from April 2026, with the threshold falling to £30,000 from April 2027 and £20,000 from April 2028."
+  - "The dividend allowance for 2025/26 is £500 (tax-free), with further dividends taxed at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate)."
 ---
 <h2>Why BTL Mortgage Tax Planning Matters Now</h2>
 

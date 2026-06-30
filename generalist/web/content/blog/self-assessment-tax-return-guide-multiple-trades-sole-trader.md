@@ -27,6 +27,26 @@ faqs:
     answer: "You can offset the loss against the profit in the same tax year. This reduces your total self-employment income and your tax bill. Each trade's loss is tracked separately. If both trades make losses, you cannot offset those losses against employment income in the same year. You carry them forward to set against future profits from the same trade."
   - question: "Does Making Tax Digital apply differently if I have multiple trades?"
     answer: "MTD for ITSA applies based on your combined self-employment income from all trades. If your combined turnover is over £50,000, you are inside from April 2026. Between £30,000 and £50,000, from April 2027. Between £20,000 and £30,000, from April 2028. Below £20,000, you remain on the annual return system under current legislation. You must keep digital records for each trade separately, then submit quarterly updates for the combined figures. Most accounting software handles this automatically with separate nominal codes."
+keyTakeaways:
+  - "Each trade requires its own SA103S or SA103F page; HMRC does not allow two trades' figures to be combined into a single set."
+  - "For 2025/26 and 2026/27, Class 4 NIC is 6% on combined self-employment profits between £12,570 and £50,270, and 2% on profits above £50,270."
+  - "The £1,000 trading allowance is per person, not per trade; claiming it means you cannot claim actual expenses for any of your trades."
+  - "Combined self-employment income over £50,000 triggers MTD for ITSA from April 2026; the threshold falls to £30,000 from April 2027 and to £20,000 from April 2028."
+  - "The Annual Investment Allowance limit of £1,000,000 applies across all your trades combined, not separately per trade."
+  - "For the 2024/25 tax year, the online self assessment filing deadline is 31 January 2026, and late filing penalties start at £100."
+howToSteps:
+  - name: "Gather records for each trade separately"
+    text: "Before you begin, set up separate bank accounts or separate nominal codes in your accounting software for each trade so the year-end split is clean."
+  - name: "Complete trade A's SA103 page"
+    text: "Enter trade A's turnover, expenses, and capital allowances on its own SA103S or SA103F page using only that trade's figures."
+  - name: "Complete trade B's SA103 page"
+    text: "Repeat for trade B on a second SA103 page; check that no expense appears on both pages and apportion any shared costs (phone, vehicle, home office) fairly between the two."
+  - name: "Transfer profit or loss to the SA100"
+    text: "Copy the net profit or loss figure from each SA103 page to box 5 on the main SA100, adding trade A and trade B results together (netting off any loss)."
+  - name: "Complete the rest of the SA100"
+    text: "Add any other income sources (employment, dividends, property) to the combined self-employment figure and review the full return before submission."
+  - name: "File and pay by the deadline"
+    text: "Submit online by 31 January following the tax year end and pay any tax owed by the same date; late filing penalties start at £100 for returns up to three months late."
 ---
 
 <h2>Why Multiple Trades Changes Your Self Assessment Tax Return</h2>

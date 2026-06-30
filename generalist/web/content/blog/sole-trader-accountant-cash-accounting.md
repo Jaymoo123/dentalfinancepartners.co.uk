@@ -27,6 +27,13 @@ faqs:
     answer: "No. Under cash accounting, you cannot claim capital allowances. Instead, you deduct the full cost of most plant and machinery as an expense in the year you pay for it. There are exceptions for cars and assets with significant private use. Your accountant should handle this correctly on your return."
   - question: "What happens to unpaid invoices at year end under cash accounting?"
     answer: "They are not included in your turnover for that year. You only record income when you receive payment. If you invoice a client in March 2025 but they pay in May 2025, that income goes on your 2025/26 return, not 2024/25. This can be useful for managing your tax bands, but it also means you carry the risk of non-payment without a tax deduction."
+keyTakeaways:
+  - "Cash basis became the default for all sole traders from 6 April 2024 under the Finance (No. 2) Act 2023, with no turnover ceiling."
+  - "Under cash accounting you cannot claim capital allowances; instead, you deduct the full cost of most plant and machinery as an expense in the year you pay for it."
+  - "Simplified vehicle expenses for 2025/26 are 45p per mile for the first 10,000 business miles and 25p per mile thereafter for cars and vans, with motorcycles at 24p per mile."
+  - "Working-from-home flat rates for sole traders are £10 per month (25 to 50 hours), £18 per month (51 to 100 hours), and £26 per month (101 or more hours)."
+  - "MTD for Income Tax becomes mandatory from April 2026 for qualifying income over £50,000, April 2027 over £30,000, and April 2028 over £20,000."
+  - "Once you opt out of cash basis and elect for accruals, you cannot revert to cash basis for 12 months."
 ---
 
 <p>If you are a sole trader using cash accounting, most standard accounting advice you find online is written for the wrong system. It assumes accruals: that you record income when you invoice and expenses when you receive the bill. Cash accounting works differently. You record income when the money lands in your bank account and expenses when the money leaves it. That changes how you file your tax return, how you manage your bookkeeping, and how you plan your tax bill.</p>

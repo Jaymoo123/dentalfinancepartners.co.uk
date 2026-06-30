@@ -27,6 +27,13 @@ faqs:
     answer: "You can amend corporation tax returns for the last two accounting periods that have been filed. For most companies, that means the current year plus the previous year. If you have been doing qualifying work for longer, you can still claim for the most recent two years. Act quickly because the deadlines are strict."
   - question: "Do we need formal project documentation to claim?"
     answer: "No. HMRC accepts contemporaneous records like production logs, emails between engineers, quality control reports, and shift notes. The key is that the records exist and show the technical uncertainty and the work done to resolve it. You do not need to create formal project files after the fact."
+keyTakeaways:
+  - "For accounting periods starting on or after 1 April 2024, the merged R&D scheme applies to companies claiming R&D tax relief."
+  - "Loss-making manufacturers spending more than 30% of total costs on R&D can use the Enhanced R&D Intensive Scheme (ERIS), which can pay a higher payable credit."
+  - "At the 20% RDEC rate on £100,000 of qualifying costs, a company paying 25% corporation tax nets roughly £15,000 after the CT charge on the credit."
+  - "A qualifying R&D advance needs to be new to the industry sector, not new to the world, so documented methods copied from trade publications or suppliers do not qualify."
+  - "Claimable manufacturing R&D costs include staff salaries, employer NI and pension contributions, consumables used in testing, software licences and eligible subcontractor costs, but capital equipment is excluded."
+  - "Companies can amend corporation tax returns for the last two accounting periods, so manufacturers who have not yet claimed can still recover costs for qualifying work in those years."
 ---
 
 <p>If you run a manufacturing business in the UK and your team spends time tweaking production lines, testing new materials, or improving tooling to make things faster or better, you might be sitting on a legitimate R&D tax credit claim. The misconception that R&D credits are only for pharmaceutical labs or software developers is costing manufacturers real money.</p>

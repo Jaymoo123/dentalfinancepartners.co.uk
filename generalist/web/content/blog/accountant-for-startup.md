@@ -27,6 +27,11 @@ faqs:
     answer: "Yes, provided the service includes a qualified accountant who understands startups, not just a software platform. FreeAgent and Xero based services can work well, but check that the accountant has experience with R&D claims, share structures, and investor due diligence. A generic online service may not provide that."
   - question: "What documents do I need to give my startup accountant?"
     answer: "Bank statements, invoices and receipts, details of any investment or loans, your incorporation documents (certificate of incorporation, memorandum and articles), and details of any employees or contractors. If you are claiming R&D, you need a technical narrative of the project. Your accountant will give you a full checklist."
+keyTakeaways:
+  - "EMI options give employees no income tax or NIC on grant or exercise, only Capital Gains Tax on sale; the company needs gross assets under £30 million."
+  - "For periods from 1 April 2024, R&D-intensive startups (over 30% of spend on qualifying R&D) can claim ERIS at a 14.5% payable credit rate on losses."
+  - "The VAT registration threshold is £90,000 of taxable turnover in a rolling 12-month period; voluntary registration can benefit startups making significant purchases or selling to VAT-registered clients."
+  - "Employer NI of 15% applies above the secondary threshold of £5,000; companies that qualify for Employment Allowance can offset up to £10,500 of that liability."
 ---
 
 <h2>What a Startup Accountant Actually Does (Beyond the Obvious)</h2>

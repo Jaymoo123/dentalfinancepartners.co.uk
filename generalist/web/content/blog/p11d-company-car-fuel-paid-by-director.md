@@ -27,6 +27,12 @@ faqs:
     answer: "No. The reimbursement must be made before the P11D is filed to avoid the fuel benefit charge. If you reimburse after the deadline, the fuel benefit applies for that tax year. The reimbursement is then treated separately. It is best to reimburse monthly to keep clean records."
   - question: "What is the car fuel multiplier for 2025/26?"
     answer: "The car fuel multiplier for 2025/26 is £27,800. This figure is multiplied by the same CO2-based percentage used for the car benefit to calculate the fuel benefit charge. For example, if the appropriate percentage is 20%, the fuel benefit is £27,800 × 20% = £5,560."
+keyTakeaways:
+  - "A company car available for private use always requires a P11D entry for the car benefit, even if the director pays for all fuel personally."
+  - "If the company pays for any private fuel at all, the full fuel benefit charge applies with no partial relief, regardless of how much fuel the director paid for."
+  - "The P11D must be filed with HMRC by 6 July following the end of the tax year, so for 2025/26 the deadline is 6 July 2026."
+  - "Class 1A National Insurance on the car benefit is 15% for 2025/26 and 2026/27, payable by 19 July (or 22 July if paying electronically)."
+  - "Late P11D filing attracts a penalty of £100 per month per P11D not filed for a single-director company."
 ---
 
 <p>If you provide a company car to a director, you must report the benefit on a <strong>P11D</strong> form. That is true even if the director pays for all the fuel themselves. The car itself is a taxable benefit regardless of who fills the tank.</p>

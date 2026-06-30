@@ -27,6 +27,13 @@ faqs:
     answer: "A general accountant handles day-to-day compliance like bookkeeping, VAT returns, and corporation tax. A CGT accountant specialises in disposal transactions. They understand the reliefs, the valuation rules, the filing deadlines, and the HMRC enquiry process for capital gains. If you are selling a significant asset, a general accountant may not have the depth of experience to optimise the outcome. A specialist fills that gap."
   - question: "How long does a CGT accountant take to prepare a return?"
     answer: "For a straightforward disposal with clear documentation, a CGT accountant can prepare and file the return within one to two weeks. For a complex disposal involving valuations, multiple reliefs, or an HMRC enquiry, the process can take four to eight weeks. The key variable is how quickly you provide the supporting documents: the sale contract, the valuation report, and the acquisition cost records."
+keyTakeaways:
+  - "The Business Asset Disposal Relief rate is 18% from 6 April 2026 on the first £1 million of qualifying gains (the rate was 14% for the 2025/26 tax year only)."
+  - "UK residential property gains must be reported to HMRC within 60 days of completion, with penalties from £100 rising to 10% of tax if over 12 months late."
+  - "For 2025/26, the CGT annual exempt amount is £3,000, so total gains below this threshold attract no CGT liability."
+  - "To claim BADR on a share sale, you must be an officer or employee for two years, hold 5% of ordinary shares and voting rights, in a trading company."
+  - "Penalties for careless inaccuracies on a CGT return start at 15% of the extra tax due; deliberate inaccuracies can attract penalties up to 100%."
+  - "The recommended time to hire a CGT accountant is three to six months before an expected sale, allowing time to plan timing, structure the disposal, obtain valuations, and prepare documentation."
 ---
 
 <p>If you are selling a business, shares, or an investment property, you will likely owe Capital Gains Tax (CGT) on the profit. The rules are not simple. Rates changed in 2024 and again in 2025. Reliefs like Business Asset Disposal Relief (BADR) are currently taxed at 18% (from 6 April 2026; the rate was 14% for the 2025/26 tax year only). Getting the calculation wrong can cost you thousands. That is when you need a <strong>cgt accountant uk</strong> to handle the numbers and the paperwork.</p>

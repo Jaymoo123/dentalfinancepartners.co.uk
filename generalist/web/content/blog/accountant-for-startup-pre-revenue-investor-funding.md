@@ -27,6 +27,13 @@ faqs:
     answer: "HMRC accepts several valuation methods for pre-revenue companies. The most common is net asset valuation (the company's assets minus liabilities). For early-stage startups, this often gives a low share value, which is good for employees. You must agree the valuation with HMRC's Shares and Assets Valuation team. Your accountant should manage this process. Do not guess the valuation."
   - question: "Can I claim R&D tax credits if my startup has no revenue and makes a loss?"
     answer: "Yes. R&D tax credits are most valuable for loss-making companies. If your pre-revenue startup spends money on qualifying R&D, you can surrender the loss for a payable credit from HMRC. Under the merged R&D scheme (from April 2024), the credit rate is up to 15% of the qualifying expenditure for intensive companies. Your accountant must prepare the claim and file the R&D AIF with your corporation tax return."
+keyTakeaways:
+  - "The merged R&D scheme applies from 1 April 2024; startups spending more than 30% of total costs on R&D may qualify for the Enhanced R&D Intensive Scheme (ERIS)."
+  - "EMI schemes are available to companies with gross assets under £30 million and fewer than 250 employees; employees pay capital gains tax on exit, not income tax at grant."
+  - "From 6 April 2025, the employer NIC secondary threshold fell to £5,000 (down from £9,100 in 2024/25) and the employer NIC rate is 15%."
+  - "Employment Allowance is £10,500 from 2025/26 but cannot be claimed by a single-director company with no other employees."
+  - "Every limited company must file a corporation tax return (CT600) annually, even with zero turnover."
+  - "Investors typically expect quarterly management accounts within 30 days of quarter-end, covering burn rate, cash remaining, and budget vs actual comparisons."
 ---
 
 <p>You have raised investment. You have a product in development. You have zero revenue. That puts you in a specific category that most high street accountants never see.</p>

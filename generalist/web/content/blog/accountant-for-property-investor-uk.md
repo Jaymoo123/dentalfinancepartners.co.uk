@@ -27,6 +27,12 @@ faqs:
     answer: "If you sell a UK residential property and make a gain, you must file a Capital Gains Tax return and pay the tax within 60 days of completion. This applies to both UK residents and non-residents. The return is separate from your annual self assessment. Miss the deadline and HMRC charges interest from day 61 and a £100 late filing penalty."
   - question: "How do I know if my property qualifies for Business Asset Disposal Relief?"
     answer: "For BADR to apply, the property must be a business asset held for at least two years. Commercial property used in your trade qualifies. Residential buy-to-lets held personally do not qualify. Note that furnished holiday lettings ceased to qualify for BADR following the abolition of the FHL regime from 6 April 2025. A specialist can review your portfolio and identify qualifying assets."
+keyTakeaways:
+  - "Since April 2020, mortgage interest on personally held residential buy-to-let properties cannot be deducted from rental income; landlords receive a 20% tax credit instead."
+  - "A UK residential property sold at a gain needs a CGT return filed and the tax paid within 60 days of completion, or HMRC charges interest plus a £100 penalty."
+  - "Properties worth more than £500,000 held in a company and used as dwellings face Annual Tax on Enveloped Dwellings (ATED) charges ranging from £4,250 to £280,000 per year."
+  - "The furnished holiday letting regime was abolished from 6 April 2025; FHL income is now taxed as ordinary property income, with the 20% finance-cost reducer replacing full mortgage interest relief."
+  - "Corporation tax on company rental profits is 19% to 25%, compared with the 20% to 45% income tax rate that applies to personal rental profits."
 ---
 
 <h2>Property Investors Pay Different Taxes Than Other Business Owners</h2>

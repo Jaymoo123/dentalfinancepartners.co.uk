@@ -27,6 +27,13 @@ faqs:
     answer: "You must register for VAT when your total taxable turnover exceeds £90,000 in any rolling 12-month period. This includes sales from Etsy and any other channels. If you sell digital products to EU customers, you may need to register for VAT in an EU member state or use Etsy's IOSS scheme. Speak to an accountant before you hit the threshold to plan ahead."
   - question: "Should I set up a limited company for my Etsy shop?"
     answer: "It depends on your profit level and long-term plans. A limited company can be more tax-efficient once your profits exceed £30,000 to £40,000 per year. It also offers limited liability protection, which matters if you sell physical products that could cause harm. However, a limited company means more admin, filing deadlines, and public disclosure of your accounts. An accountant can model both scenarios and show you the net benefit before you decide."
+keyTakeaways:
+  - "Etsy turnover above £1,000 in a tax year triggers mandatory HMRC registration and a self assessment return."
+  - "The deadline to register with HMRC as self-employed is 5 October following the end of the tax year you started trading."
+  - "You must register for VAT once your total taxable turnover exceeds £90,000 in any rolling 12-month period."
+  - "Etsy charges a 6.5% transaction fee, 3% plus £0.25 payment processing, and 12% or 15% offsite ads fees, all of which are deductible expenses."
+  - "Accountant fees for a UK sole trader Etsy seller typically range from £200 to £700 per year depending on complexity, and those fees are themselves tax-deductible."
+  - "A sole trader earning £50,000 profit could save over £2,000 per year by taking income as salary and dividends through a limited company."
 ---
 
 <p>If you sell handmade goods, vintage items, or craft supplies on Etsy, your income is taxable. It doesn't matter if you run it as a side hustle or a full-time business. HMRC expects you to report it.</p>

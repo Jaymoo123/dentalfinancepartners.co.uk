@@ -27,6 +27,13 @@ faqs:
     answer: "For a typical limited company with modest transaction volumes, expect to pay £150 to £400 per month for bookkeeping. Hourly rates range from £20 to £45. Some bookkeepers charge per transaction. Always ask for a fixed monthly quote based on your expected volume so there are no surprises."
   - question: "What qualifications should my accountant have?"
     answer: "Look for ACA (ICAEW), ACCA, or CIMA qualifications. These are the main chartered accountancy bodies in the UK. A qualified accountant must follow ethical guidelines, carry professional indemnity insurance, and keep their knowledge current. If they are not qualified with one of these bodies, ask why. Some excellent accountants are also AAT qualified or hold a licence from HMRC to file tax returns directly."
+keyTakeaways:
+  - "Bookkeepers record daily transactions and reconcile bank accounts; accountants file statutory returns such as the CT600 and provide strategic tax advice."
+  - "Only a qualified accountant or licensed tax agent can file a CT600 corporation tax return with HMRC; a bookkeeper offering to do so is operating outside their competence."
+  - "Most businesses turning over £100,000 or more find a dedicated bookkeeper cost-effective alongside their accountant, with bookkeeping retainers typically running £150 to £400 per month."
+  - "Sole trader self-assessment accountancy typically costs £300 to £600 per year; a limited company with payroll, VAT, and annual accounts typically pays £1,200 to £3,000 per year."
+  - "HMRC charges £100 for a CT600 up to three months late, then 10 per cent of unpaid corporation tax at six months and 20 per cent at twelve months."
+  - "From April 2026, sole traders with qualifying income above £50,000 must prepare for MTD for ITSA, requiring quarterly digital reporting to HMRC."
 ---
 
 <p>If you run a limited company, work as a sole trader, or operate through a partnership, you have probably asked yourself whether you need an accountant, a bookkeeper, or both. The difference between accountants and bookkeepers is not just about cost. It is about getting the right person doing the right job at the right time.</p>

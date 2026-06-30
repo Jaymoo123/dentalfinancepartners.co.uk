@@ -30,6 +30,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@rsantos1232
   source: Pexels
   source_url: https://www.pexels.com/photo/united-kingdom-flag-on-a-concrete-building-2209444/
+keyTakeaways:
+  - "The Annual Investment Allowance (AIA) gives UK businesses 100% tax relief on qualifying plant and machinery purchases, up to £1,000,000 per year."
+  - "Cars are excluded from AIA; vans and commercial vehicles qualify, and new zero-emission cars have a separate 100% first-year allowance."
+  - "Associated companies under common control share a single £1m AIA limit and must apportion it between them."
+  - "Second-hand plant and machinery qualifies for AIA at the full 100% rate if purchased at arm's length from an unconnected seller."
+  - "If your accounting period is shorter than 12 months, the £1m limit reduces proportionally; a 6-month period gives £500,000 of AIA."
+  - "Full Expensing, available to limited companies only since April 2023, gives 100% relief on main-rate assets with no upper cap, and 50% relief on special-rate assets."
 ---
 <h2>What Is the Annual Investment Allowance?</h2>
 

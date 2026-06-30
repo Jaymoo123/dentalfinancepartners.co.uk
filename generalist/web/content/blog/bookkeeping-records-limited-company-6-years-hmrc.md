@@ -27,6 +27,13 @@ faqs:
     answer: "If you use a personal bank account for any business transactions, yes, you must keep those statements for 6 years. HMRC can ask for them to verify that all business income has been declared and that no personal expenses have been claimed as business deductions. The safest approach is to have a separate business bank account from day one. If you have mixed personal and business transactions, keep the personal account statements for 6 years too."
   - question: "What is the penalty for losing my company's bookkeeping records?"
     answer: "The maximum penalty is £3,000 per accounting period for failing to keep adequate records. In practice, HMRC often starts with a warning or a lower penalty for a first offence. However, if you cannot produce records during a compliance check, HMRC can estimate your tax liability. Those estimates are typically higher than what you would have paid with proper records. The real cost is usually the additional tax, not the penalty itself."
+keyTakeaways:
+  - "Limited companies must keep bookkeeping records for at least 6 years from the end of the accounting period they relate to, under the Companies Act 2006 and Taxes Management Act 1970."
+  - "Required records include bank statements, sales and purchase invoices, payroll records (P60s, P45s, P11Ds), dividend vouchers, director's loan account statements, VAT returns, and corporation tax working papers."
+  - "If HMRC opens a compliance check before the 6 years expire, you must keep the records until the check is resolved, even beyond the 6 year mark."
+  - "HMRC can impose penalties up to £3,000 per accounting period for inadequate records, plus up to £60 a day if it issues a notice to produce them."
+  - "HMRC accepts digital records in place of paper originals, provided the digital copy is complete and legible."
+  - "If the corporation tax return is filed late, HMRC can request records for up to 6 years from the date of actual filing, not from the accounting year end."
 ---
 
 <h2>The 6 Year Rule Is Not Optional</h2>

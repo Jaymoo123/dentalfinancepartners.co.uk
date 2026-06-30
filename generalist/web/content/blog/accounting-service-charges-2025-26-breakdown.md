@@ -27,6 +27,13 @@ faqs:
     answer: "The main drivers are location, firm type, software, and the level of advisory work included. A city-centre firm with high overheads charges more than a remote firm. A firm that includes proactive tax planning and quarterly reviews charges more than one that only files your returns. Compare total annual cost for the full scope, not just the monthly fee."
   - question: "Can I negotiate my accounting service charges?"
     answer: "Yes, within reason. If your business is straightforward and you are organised with your records, some accountants will offer a discount. But be careful: the cheapest option often cuts corners. A good accountant saves you more in tax and penalties than the fee difference. Focus on value, not just price."
+keyTakeaways:
+  - "A single-director limited company with no employees can expect to pay £100 to £200 per month in 2025/26 covering annual accounts, corporation tax return, and director payroll."
+  - "Sole trader accounting charges typically sit between £50 and £100 per month, or between £200 and £500 as an annual one-off filing depending on complexity."
+  - "VAT returns are not always included in the base fee; when charged separately, expect to pay £20 to £50 per quarterly return on top of the standard monthly charge."
+  - "Making Tax Digital for Income Tax (MTD for ITSA) becomes mandatory from April 2026 for sole traders with qualifying income over £50,000."
+  - "Partnership accounting typically starts at £150 to £250 per month for a two-partner firm, rising to £200 to £400 per month for three or more partners."
+  - "Some accountants offer 5% to 10% off the annual total for paying upfront, though monthly direct debit is usually the better option for cash flow."
 ---
 
 <p>If you are searching for "accounting service charges" in 2025/26, you are probably trying to work out what a fair price looks like and whether you are getting value for money. You are right to check. The range of prices across the market is wide, and the services bundled into those prices vary even more.</p>

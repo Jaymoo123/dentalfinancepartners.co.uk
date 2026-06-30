@@ -34,6 +34,30 @@ imageCredit:
   photographer_url: https://www.pexels.com/@rdne
   source: Pexels
   source_url: https://www.pexels.com/photo/person-holding-black-desk-calculator-5915289/
+keyTakeaways:
+  - "You must register for VAT if your VAT taxable turnover exceeds £90,000 in any rolling 12-month period."
+  - "To add 20% standard-rate VAT, multiply the price excluding VAT by 1.2; to remove it from a total, divide by 1.2."
+  - "To add 5% reduced-rate VAT, multiply the price excluding VAT by 1.05; to remove it from a total, divide by 1.05."
+  - "The VAT amount within a 20% VAT-inclusive price equals one-sixth of the total, the quickest way to find VAT on a receipt."
+  - "Exports of goods outside the UK are generally zero-rated, but you must keep proof of export within 180 days of dispatch or risk standard-rate VAT plus penalties."
+  - "Minor VAT errors under £10,000, or under 1% of turnover (capped at £50,000), can be corrected on the next VAT return; larger errors require form VAT652."
+howToSteps:
+  - name: "Identify the correct VAT rate"
+    text: "Determine whether your supply is standard-rated (20%), reduced-rated (5%), or zero-rated (0%), as the wrong rate will mean under- or over-charging."
+  - name: "Add 20% VAT to a price"
+    text: "Multiply the price excluding VAT by 1.2. For example, £60 x 1.2 = £72, giving a VAT element of £12."
+  - name: "Add 5% VAT to a price"
+    text: "Multiply the price excluding VAT by 1.05. For example, £200 x 1.05 = £210, giving a VAT element of £10."
+  - name: "Remove 20% VAT from a VAT-inclusive total"
+    text: "Divide the total by 1.2. For example, £180 ÷ 1.2 = £150; the VAT element is the difference, £30."
+  - name: "Remove 5% VAT from a VAT-inclusive total"
+    text: "Divide the total by 1.05. For example, £210 ÷ 1.05 = £200; the VAT element is £10."
+  - name: "Calculate the net VAT due each quarter"
+    text: "Total the VAT charged on your sales (output VAT), subtract the VAT paid on your purchases (input VAT), and pay the difference to HMRC."
+  - name: "Handle exports correctly"
+    text: "Charge 0% VAT on goods exported outside the UK, but keep documented proof of export within 180 days of dispatch to retain the zero rate."
+  - name: "Correct any calculation errors promptly"
+    text: "Errors under £10,000 (or under 1% of turnover, capped at £50,000) can be amended on the next VAT return; larger errors require form VAT652."
 ---
 <p>If you run a UK business that is registered for VAT, you need to know how to calculate the tax correctly. Get it wrong and you either underpay HMRC (triggering interest and penalties) or overcharge your customers (making your prices uncompetitive).</p>
 

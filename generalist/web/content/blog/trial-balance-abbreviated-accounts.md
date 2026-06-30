@@ -27,6 +27,28 @@ faqs:
     answer: "You need accruals for expenses incurred but not yet invoiced, prepayments for expenses paid in advance, depreciation on fixed assets, stock and work in progress adjustments, and director's loan account corrections. These are posted as year-end journal entries."
   - question: "What happens if my trial balance does not balance?"
     answer: "Check for transposition errors, missing entries, misclassified items, and director's loan omissions. Reconcile your bank accounts and sales/purchase ledgers. If you still cannot find the error, involve your accountant before filing. Filing incorrect accounts carries late filing penalties from Companies House."
+keyTakeaways:
+  - "S455 tax applies at 35.75% on overdrawn director's loan accounts not repaid within nine months and one day of the year-end, for loans made on or after 6 April 2026."
+  - "If a director owes the company more than £10,000 at any point in the year, a benefit in kind arises and must be reported on a P11D."
+  - "Late filing penalties for abbreviated accounts at Companies House start at £150 for a private company one month late and rise to £1,500 for six months or more."
+  - "The trial balance is an internal document and is not filed at Companies House; only the abbreviated balance sheet, notes, and directors' responsibilities statement are submitted."
+  - "Year-end adjustments for accruals, prepayments, depreciation, and stock must be posted as journal entries before the adjusted trial balance is ready for abbreviated accounts preparation."
+  - "Abbreviated accounts are a reduced filing option for small companies under the Companies Act 2006, requiring no full profit and loss account or directors' report."
+howToSteps:
+  - name: "Ensure bookkeeping is complete before year-end"
+    text: "Reconcile every bank statement line, post all director's loan entries (including personal expenses on company card and dividends drawn), code accruals and prepayments, and update the fixed asset register."
+  - name: "Run the unadjusted trial balance"
+    text: "Generate the raw list of nominal ledger balances from your accounting software and confirm that total debits equal total credits before making any adjustments."
+  - name: "Post accruals and prepayments"
+    text: "Accrue expenses incurred but not yet invoiced by year-end (debit expense, credit accruals creditor) and prepay expenses paid in advance (debit prepayments debtor, credit the expense account)."
+  - name: "Calculate and post depreciation"
+    text: "For each fixed asset, calculate the annual depreciation charge and post a journal debiting depreciation expense and crediting accumulated depreciation; the trial balance must show asset cost and accumulated depreciation separately."
+  - name: "Review the director's loan account balance"
+    text: "Check whether the balance exceeded £10,000 at any point in the year (P11D required) and whether any overdrawn amount will remain outstanding beyond nine months and one day after year-end, triggering S455 tax at 35.75%."
+  - name: "Run the adjusted trial balance"
+    text: "After posting all year-end journals, run the adjusted trial balance and confirm debits still equal credits; this is the version used to prepare the abbreviated accounts."
+  - name: "Prepare the abbreviated balance sheet from the adjusted trial balance"
+    text: "Extract fixed assets at net book value (cost minus accumulated depreciation), current assets (bank, debtors, prepayments, stock), creditors, and capital and reserves (share capital plus retained earnings)."
 ---
 
 <p>If you run a small limited company and file abbreviated accounts at Companies House, the trial balance is where your year-end process starts. Without a clean trial balance, your abbreviated accounts will contain errors, and that means filing corrections, late filing penalties, or HMRC queries.</p>

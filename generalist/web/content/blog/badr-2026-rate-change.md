@@ -27,6 +27,13 @@ faqs:
     answer: "No. The £1 million lifetime limit for BADR remains unchanged. What changes is the rate applied to gains within that limit."
   - question: "Does BADR apply to selling a rental property?"
     answer: "No. BADR only applies to disposals of business assets: shares in a trading company, a business you run as a sole trader or partnership, or assets used in your business. Rental property does not qualify unless it is part of a genuine trading business (e.g., a hotel or guest house)."
+keyTakeaways:
+  - "The BADR rate rises from 14% to 18% on 6 April 2026, applying to all qualifying business disposals made on or after that date."
+  - "BADR was 10% up to 5 April 2025, rose to 14% from 6 April 2025, then 18% from 6 April 2026, an 80% rise in under two years."
+  - "The £1 million lifetime limit for BADR is unchanged; only the CGT rate applied to gains within that limit increases."
+  - "On a £500,000 qualifying gain, the 4 percentage point increase from 14% to 18% adds roughly £20,000 in additional tax."
+  - "To qualify for BADR, you must hold at least 5% of shares and voting rights in a trading company for at least 2 years before disposal."
+  - "Once the £1 million BADR limit is exhausted, further gains are taxed at standard CGT rates of 18% (basic rate) or 24% (higher rate) on non-residential assets."
 ---
 
 <p>The BADR 2026 rate change is one of the most significant tax shifts for UK business owners in years. From 6 April 2026, the rate of Business Asset Disposal Relief (formerly Entrepreneurs' Relief) rises from 14% to 18%. That is a 4 percentage point increase on gains above your annual exempt amount. For a business sale worth £500,000, the difference is roughly £20,000 in extra tax.</p>

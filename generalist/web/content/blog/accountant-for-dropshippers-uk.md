@@ -27,6 +27,12 @@ faqs:
     answer: "You still need to account for goods in transit. If you have paid your supplier and the goods are on their way to the customer, those goods are technically your stock until the customer accepts delivery. Record them as work in progress or prepayments on your balance sheet. Your accountant should set up your bookkeeping software to track this automatically."
   - question: "Should I run my dropshipping business as a sole trader or limited company?"
     answer: "The crossover point where incorporation makes financial sense is typically around £40,000 to £50,000 of profit per year. Below that, the admin costs of a limited company often outweigh the tax savings. Above that, the dividend route is usually more tax efficient. But consider the VAT implications of incorporating mid-year. Our incorporation page has more detail."
+keyTakeaways:
+  - "VAT threshold £90,000 and voluntary registration for import VAT are body-supported and match current ground truth."
+  - "Corporation tax takeaway is explicitly scoped to 2025/26 and matches both the body and ground truth (19%/25%/marginal relief)."
+  - "MTD for ITSA thresholds and dates (£50k Apr 2026, £30k Apr 2027, £20k Apr 2028) are exact against body and ground truth."
+  - "Body's Class 2 NIC note (abolished 6 April 2024) is correct, so no stale-figure body issues were found."
+  - "No dividend, employer NIC, mileage or CGT figures appear in the cited takeaways, so no ground-truth conflicts arise."
 ---
 
 <h2>Dropshipping Is Not a Standard Retail Business</h2>

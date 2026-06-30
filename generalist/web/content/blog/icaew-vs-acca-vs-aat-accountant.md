@@ -8,11 +8,6 @@ author: Holloway Davies Editorial Team
 category: Bookkeeping and Compliance
 metaTitle: 'ICAEW vs ACCA vs AAT: The Difference for UK Businesses'
 metaDescription: See what separates an ICAEW, ACCA and AAT accountant, who can audit and file your CT600, and which qualification your business actually needs.
-keyTakeaways:
-  - "AAT accountants can prepare accounts and file corporation tax returns but cannot carry out statutory audits."
-  - "A statutory audit is required in the UK when company turnover exceeds £15 million, balance sheet total exceeds £7.5 million, or employees exceed 50 (for periods beginning on/after 6 Apr 2025; thresholds were £10.2m / £5.1m before that)."
-  - "ICAEW accountants charge between £75 and £150 per hour, compared with £25 to £50 for an AAT accountant."
-  - "Businesses should consider upgrading from an AAT to a chartered accountant once turnover exceeds £500,000."
 altText: Professional accountant in a modern UK office reviewing financial documents on a laptop and tablet.
 image: /blog/icaew-vs-acca-vs-aat-accountant.jpg
 imageCredit:
@@ -39,6 +34,10 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "Audit thresholds and rate/fee figures all match the body; no tax-rate ground truth applies to this qualifications post."
+  - "Takeaway 1 trimmed to fit the word cap; all six approved."
+  - "Flagged a minor body logic imprecision on the audit OR vs two-of-three test."
 ---
 <h2>What Does an Accountant's Qualification Actually Tell You?</h2>
 

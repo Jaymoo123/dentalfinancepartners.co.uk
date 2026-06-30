@@ -27,6 +27,11 @@ faqs:
     answer: "Yes, if the company has sufficient distributable reserves. Declaring a dividend equal to the loan amount converts the debt into a taxed distribution. The director pays dividend tax (8.75%, 33.75%, or 39.35%) instead of income tax and BIK charges. The company avoids S455. But the dividend must be properly documented and supported by reserves. You cannot backdate a dividend to cover an existing loan."
   - question: "What if the loan was written off in a previous year and not reported?"
     answer: "You need to make a disclosure to HMRC as soon as possible. HMRC can go back up to 6 years (20 years for deliberate non-disclosure) and assess the tax, interest, and penalties. Use the Digital Disclosure Service or write to your HMRC office. Unprompted disclosures attract lower penalties than prompted ones. Do not ignore it."
+keyTakeaways:
+  - "Both S455 figures (33.75% 2025/26, 35.75% from 6 Apr 2026) are explicitly year-scoped and match current ground truth, so they stay."
+  - "Class 1A NIC on a written-off loan is employer-paid; the original takeaway risked implying the director pays it, so wording was corrected."
+  - "Dividend conversion is a valid S455 avoidance point, but the body's dividend rates are stale, so the figures were removed rather than published."
+  - "The £18,150 / over-90% worked example is fully body-supported and kept verbatim in substance."
 ---
 
 <p>Writing off a director's loan sounds like a tidy way to clear a debt. You owe the company money, the company forgives it, and everyone moves on. But HMRC does not see it that way. The <strong>director loan write off tax implications</strong> can hit both the company and the director with unexpected tax bills, often in the same financial year.</p>

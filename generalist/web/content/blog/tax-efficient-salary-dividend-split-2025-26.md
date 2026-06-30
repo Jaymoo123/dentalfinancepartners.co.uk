@@ -21,6 +21,13 @@ schema: ""
 faqs:
   - question: "Is it better to take a salary of £9,100 or £12,570 in 2025/26?"
     answer: "For most directors, £12,570 is better because it uses the full personal allowance, builds a state pension year, and the corporation tax saving outweighs the employer NI cost. Note that from April 2025, the secondary threshold dropped to £5,000, so a salary of £9,100 also incurs employer NI of £615 (15% on £4,100 above the threshold) and no longer avoids employer NI entirely."
+keyTakeaways:
+  - "For 2025/26, the most tax-efficient director pay structure is a salary of £12,570 and dividends of up to £37,700, keeping total income at £50,270 within the basic rate band."
+  - "That combination produces a personal tax bill of £3,255 (8.75% on £37,200 above the £500 dividend allowance), a net income of £47,015, and an effective tax rate of around 6.5%."
+  - "From 6 April 2025 the employer NI secondary threshold is £5,000, so a £12,570 salary triggers £1,135.50 employer NI (15% on £7,570) unless the £10,500 Employment Allowance applies."
+  - "Dividend tax rates for 2025/26 are 8.75% at basic rate, 33.75% at higher rate (income £50,271 to £125,140), and 39.35% at additional rate above £125,140."
+  - "Two directors can each take a salary of £12,570 and dividends of £37,700, extracting £100,540 combined at basic rates with a total dividend tax of £6,510."
+  - "Company pension contributions are corporation tax deductible and trigger no NI, with a £60,000 annual allowance (tapered above £260,000 adjusted income), often the best extraction route above basic rate."
 ---
 
 <p>If you are a director of a UK limited company, the question of how to pay yourself comes up every year. And the answer changes when tax rates move.</p>

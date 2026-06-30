@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, if your turnover is above the VAT threshold (£90,000) or if you employ staff. A small cafe still faces the same VAT complexity on food versus drink, the same minimum wage risks, and the same tips rules as a larger venue. A specialist accountant will cost a few hundred pounds a year and save you multiples of that in tax and compliance risk."
   - question: "What VAT rate applies to food sold in a restaurant?"
     answer: "Food sold for takeaway is generally zero-rated (0% VAT). Food eaten on the premises is standard-rated (20%). If you provide seating, tables, or any facility for eating on site, the food becomes standard-rated. Alcohol is always 20%. Soft drinks are 20%. A good hospitality accountant will review your EPOS setup to ensure your VAT treatment matches your physical setup."
+keyTakeaways:
+  - "Food eaten on the premises is standard-rated at 20% VAT, while the same food sold for takeaway is generally zero-rated; alcohol is always standard-rated at 20% with no exceptions."
+  - "The Employment (Allocation of Tips) Act 2024 came into force on 1 October 2024, requiring employers to pass 100% of tips to workers with no deductions."
+  - "Tips paid through a tronc system are exempt from employer NI, whereas tips processed through the main payroll are not, making tronc the more tax-efficient arrangement."
+  - "For 2025/26, corporation tax is 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief applying between those two thresholds."
+  - "Where multiple venues share common ownership, the £50,000 small-profits threshold is divided by the number of associated companies; four venues under shared ownership would each have a threshold of £12,500."
+  - "Once turnover approaches or crosses the £90,000 VAT registration threshold, a business must register within 30 days."
 ---
 
 <h2>Hospitality businesses are not like other businesses</h2>

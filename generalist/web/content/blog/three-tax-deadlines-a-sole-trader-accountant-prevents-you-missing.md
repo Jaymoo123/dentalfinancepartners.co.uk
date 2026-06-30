@@ -27,6 +27,13 @@ faqs:
     answer: "HMRC charges late payment interest from 31 July at the Bank of England base rate plus 2.5%. If the amount remains unpaid after 30 days, a 5% surcharge applies, with further 5% surcharges at six and twelve months. A sole trader accountant reminds you of the July payment when they prepare your January return."
   - question: "Can I register for self assessment after the 5 October deadline?"
     answer: "Yes, but you may face a late registration penalty of £100. More importantly, you cannot file a return until you are registered, and HMRC may issue a determination of your tax based on their estimate. A sole trader accountant registers you within days of you starting self employment, so the 5 October deadline never becomes an issue."
+keyTakeaways:
+  - "The 31 January deadline requires sole traders to file their online self assessment return (SA100 with SA103 self-employment pages) and pay any balancing tax for the previous tax year."
+  - "Missing the 31 January filing deadline triggers an automatic £100 penalty, £10 daily after three months (up to £900), then £300 or 5% of tax at six and twelve months."
+  - "Payments on account apply when your tax bill after tax deducted at source exceeds £1,000, each being 50% of the previous year's bill, due 31 January and 31 July."
+  - "Missing the 31 July payment on account incurs late payment interest at the Bank of England base rate plus 2.5% from that date."
+  - "New sole traders must register for self assessment by 5 October following the end of the tax year in which they started trading, or face a £100 late registration penalty."
+  - "Class 2 NIC was abolished from 6 April 2024; sole traders now pay only Class 4 NIC at 6% on profits between £12,570 and £50,270 and 2% above that threshold."
 ---
 
 <p>You are a sole trader in the UK. You run a growing consultancy in Bristol's Harbourside, or a trades business in Birmingham's Jewellery Quarter, or a freelance creative operation in Shoreditch. You know your craft. You do not live in the tax calendar.</p>

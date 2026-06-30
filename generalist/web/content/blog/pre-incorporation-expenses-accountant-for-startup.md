@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "Under VAT Regulations 1995 reg.111, input tax on pre-registration goods is reclaimable if purchased within 4 years before VAT registration and still on hand at the registration date."
+  - "Pre-registration VAT on services is reclaimable only if those services were received within 6 months before the VAT registration date."
+  - "A company can claim corporation tax relief on pre-incorporation expenses by formally adopting them via a board resolution and reimbursing the director."
+  - "For corporation tax purposes, the expense is treated as incurred on the date it was paid, not the adoption date, so relief falls in the company's first accounting period."
+  - "An invoice in the founder's personal name is acceptable for reclaiming pre-registration VAT, provided the purchase was for business and the relevant time-window conditions are met."
+  - "Reimbursements to the director for pre-incorporation costs must go through the director's loan account, not as dividends or salary, and are not taxable income."
 ---
 <p>You registered your limited company on 15 June. But you bought the laptop on 1 June. You paid for the domain name on 20 May. You covered the software subscription on 10 May. And you paid a freelance developer £2,400 on 1 April to build your prototype.</p>
 

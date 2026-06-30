@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, but the VAT returns are not included in the year-end fee. You either file them yourself or pay an additional fixed fee for each VAT return. Some accountants offer a combined fixed fee for VAT and year-end work. Ask for a separate quote."
   - question: "What happens if my records are incomplete when I send them to the accountant?"
     answer: "The fixed fee assumes clean, complete records. If the accountant has to reconstruct your transactions from bank statements or chase missing information, they will likely charge extra. Either on a time basis or a revised fixed fee. Get your records in order before you send them."
+keyTakeaways:
+  - "For a simple limited company with under 50 transactions per month, a fixed fee for year-end accounts and the CT600 typically costs £500 to £1,200 per year."
+  - "A typical monthly subscription for a small limited company costs £100 to £250 a month (£1,200 to £3,000 a year), so year-end-only is cheaper if you do your own bookkeeping."
+  - "A fixed fee year-end service covers statutory accounts (FRS 102 or FRS 105), the CT600 corporation tax return, and the confirmation statement, but not bookkeeping, VAT, or payroll."
+  - "The corporation tax payment deadline is 9 months and 1 day after the company year-end; the CT600 must be filed within 12 months, and Companies House accounts within 9 months."
+  - "Late filing penalties at Companies House start at £150, and HMRC charges interest and penalties on late corporation tax."
+  - "The fixed fee model suits contractors, small property companies, and dormant or low-turnover companies with straightforward finances and low transaction volumes."
 ---
 
 <p>Not every business needs a monthly bookkeeping subscription. If you run a straightforward limited company with few transactions, paying a fixed fee accountant UK firm for year-end accounts and a CT600 corporation tax return might be the smarter option.</p>

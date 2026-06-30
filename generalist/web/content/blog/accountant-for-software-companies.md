@@ -27,6 +27,13 @@ faqs:
     answer: "Under UK GAAP (FRS 102), SaaS revenue must be recognised over the subscription period, not when the invoice is raised. If you invoice £12,000 for an annual licence in January, you should recognise £1,000 of revenue each month. The remaining £11,000 sits on your balance sheet as deferred income. This affects your corporation tax calculation because profit is spread across the correct periods. A specialist accountant for software companies will set up your accounting software to handle this automatically."
   - question: "What VAT rules apply to software companies selling digital services to EU customers?"
     answer: "For B2C sales of digital services to EU consumers, you can use the One Stop Shop (OSS) scheme to declare and pay VAT in one return rather than registering in each member state. For B2B sales to EU businesses, the reverse charge applies, meaning the customer accounts for the VAT. You must hold valid VAT numbers and issue compliant invoices. For sales outside the EU, UK VAT does not apply. An accountant for software companies will advise on the correct registration and reporting for your specific sales channels."
+keyTakeaways:
+  - "From 1 April 2024, R&D-intensive loss-making SMEs (R&D at least 30% of costs) get ERIS (86% extra deduction, 14.5% payable credit); others use merged RDEC at 20% taxable credit."
+  - "Under UK GAAP (FRS 102), SaaS and subscription revenue must be recognised over the service-delivery period rather than when invoiced, affecting corporation tax calculations across accounting periods."
+  - "EMI options worth up to £250,000 per employee carry no income tax or employer NI on grant, but the company needs gross assets under £30 million to qualify."
+  - "The Patent Box regime applies a reduced 10% corporation tax rate to profits from patented inventions; you must elect within two years of the accounting period's end."
+  - "The VAT flat rate for IT consultancy is 14.5%, but limited cost traders spending less than 2% of turnover on relevant goods must apply the higher 16.5% rate instead."
+  - "From April 2024, the R&D Additional Information Form must be submitted before or alongside the CT600 corporation tax return; missing this filing makes an R&D claim invalid."
 ---
 
 <h2>Why a General Accountant Is Usually Not Enough for a Software Business</h2>

@@ -27,6 +27,13 @@ faqs:
     answer: "You are not required to join MTD for ITSA from April 2026 if your total qualifying income is below £50,000. You can volunteer if you want to. The threshold drops to £30,000 from April 2027 and £20,000 from April 2028. If your income crosses the threshold during a tax year, you must join from the start of the next tax year."
   - question: "Can I still use a spreadsheet for my accounts under MTD for ITSA?"
     answer: "You can use a spreadsheet if it is linked to MTD-compatible bridging software that can submit the quarterly updates to HMRC. But you must keep digital records of every transaction. Paper records are not sufficient. Most people find it easier to use dedicated accounting software with bank feed integration rather than maintaining a spreadsheet with bridging software."
+keyTakeaways:
+  - "MTD for ITSA becomes mandatory from April 2026 for sole traders and landlords with qualifying income over £50,000, falling to £30,000 from April 2027 and £20,000 from April 2028."
+  - "Qualifying income is gross receipts before expenses, not profit, so a sole trader with £35,000 turnover and £18,000 rental income has £53,000 qualifying income and must comply from April 2026."
+  - "HMRC treats self-employment and rental property as separate businesses, so anyone with both income streams must file two distinct quarterly updates every quarter, not one combined submission."
+  - "Quarterly updates cover periods ending 5 July, 5 October, 5 January and 5 April, with a final declaration replacing the SA100 return due by 31 January after the tax year."
+  - "The MTD for ITSA penalty system is points-based: accumulating four points triggers a £200 penalty, with a further £200 for every subsequent late quarterly submission."
+  - "Once enrolled in MTD for ITSA, there is no opt-out if income later falls below the threshold."
 ---
 
 <h2>MTD for ITSA Is Coming in April 2026. Here's What It Means for You.</h2>

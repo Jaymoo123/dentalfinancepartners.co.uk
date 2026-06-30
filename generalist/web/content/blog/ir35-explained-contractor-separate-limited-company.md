@@ -27,6 +27,13 @@ faqs:
     answer: "The associated company rules mean the £50,000 small profits rate threshold is divided by the number of associated companies. With two associated companies, the 19% rate only applies to the first £25,000 of profit in each company. Profits between £25,000 and £125,000 per company attract marginal relief up to the 25% main rate. This can increase your total corporation tax bill compared to having one company."
   - question: "What are the biggest risks of running two limited companies as a contractor?"
     answer: "The biggest risks are mixed bank accounts, undocumented intercompany loans, and sloppy record keeping. HMRC can argue the companies are not genuinely separate, which triggers enquiries and potential tax liabilities. Other risks include incorrect corporation tax calculations due to associated company rules, VAT complications if one company is registered and the other is not, and losing BADR eligibility if you plan to sell one business. Keep separate bank accounts, formalise all intercompany transactions, and file accounts on time for both companies."
+keyTakeaways:
+  - "IR35 status is assessed contract by contract based on terms and working practices; owning a separate trading limited company does not directly change the result."
+  - "Two associated companies under common control split the corporation tax small profits threshold, reducing each company's 19% band to £25,000 rather than £50,000 for 2025/26."
+  - "Each company's profits between £25,000 and £125,000 attract marginal relief up to the 25% main corporation tax rate, increasing the total bill compared with one company."
+  - "The £500 dividend allowance and the £12,570 personal allowance for 2025/26 both apply across all income sources combined, not separately per company."
+  - "Intercompany loans must be repaid within 9 months and 1 day of the year-end or s.455 tax applies at 33.75% in 2025/26, rising to 35.75% from 6 April 2026."
+  - "HMRC can look back 6 years on IR35 enquiries, making thorough contract and working-practices documentation essential for every outside-IR35 engagement."
 ---
 
 <h2>The Scenario That Most IR35 Guides Miss</h2>

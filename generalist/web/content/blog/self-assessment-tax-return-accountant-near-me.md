@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, if your return is simple: one source of employment or self employment income with basic expenses. But if you have multiple income streams, property, capital gains, or are a limited company director, an accountant will save you money by claiming reliefs you might miss and avoiding errors that trigger HMRC enquiries."
   - question: "Do I need a local accountant or can I use one remotely?"
     answer: "Most tax work is done remotely now. A good accountant will work with you by email, phone, or video call regardless of location. But a local accountant brings knowledge of your area's business patterns and a network of local professionals you may need, like solicitors or mortgage brokers. Choose whichever suits your working style."
+keyTakeaways:
+  - "The online self assessment deadline is 31 January; filing one day late triggers a £100 penalty, rising to £10 per day (up to £900) after three months."
+  - "Typical 2025/26 fees range from £150 to £250 plus VAT for a straightforward sole trader return and £300 to £500 for a limited company director."
+  - "The furnished holiday lettings regime was abolished from 6 April 2025, so all UK lettings now fall under standard residential property income rules."
+  - "From April 2026, Making Tax Digital for Income Tax is mandatory for self-employed people and landlords with income over £50,000, dropping to £30,000 (2027) and £20,000 (2028)."
+  - "Where the tax bill exceeds £1,000 and less than 80% was collected via PAYE, HMRC requires payments on account: half due on 31 January and half on 31 July."
+  - "The marriage allowance saves couples up to £252 in tax where one partner earns under £12,570 and the other earns between £12,571 and £50,270."
 ---
 
 <p>If you are searching for a <strong>self assessment tax return accountant near me</strong>, you are likely facing a deadline, a complex return, or a growing business that has outgrown DIY filing. You are not alone. Over 12 million people file a self assessment return each year in the UK, and a growing number use an accountant to handle it.</p>

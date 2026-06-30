@@ -36,6 +36,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "The Annual Investment Allowance gives 100% relief on qualifying plant and machinery in the year of purchase, up to £1,000,000 per year."
+  - "Main-rate writing down allowances on plant apply at 14% per year (reducing balance) from April 2026, up from 18% before then."
+  - "Special-rate assets, including integral building features such as heating and electrical systems, attract a writing down allowance of 6% per year."
+  - "The furnished holiday lettings regime was abolished from 6 April 2025; former FHLs are now ordinary property businesses with no capital allowances on furniture and fittings."
+  - "The Structures and Buildings Allowance provides 3% relief per year on the cost of constructing a new commercial building, running for 33 years and 4 months."
+  - "Residential buy-to-let properties do not qualify for capital allowances; replacement of domestic items relief applies instead for furniture and white goods."
 ---
 <p>If you own or lease a commercial property, you could be missing out on significant tax relief. Capital allowances on property let you deduct the cost of certain fixtures, fittings, and building features from your taxable profits. The rules are detailed, but the savings can be substantial.</p>
 

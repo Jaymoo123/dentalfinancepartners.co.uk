@@ -27,6 +27,13 @@ faqs:
     answer: "A bookkeeper typically costs £150 to £400 per month for a small limited company. An accountant typically costs £600 to £1,500 per year for compliance-only work, or £150 to £500 per month for a package that includes bookkeeping, VAT, and year-end accounts. Many firms (including ours) combine both into a single monthly fee."
   - question: "What happens if my bookkeeper makes a mistake on my VAT return?"
     answer: "HMRC holds you, the business owner, responsible for the accuracy of your VAT returns, not your bookkeeper. If errors are found, you face penalties and interest. That is why many business owners prefer an accountant who supervises the bookkeeping or includes it in their service, so the work is covered by professional indemnity insurance and reviewed by a qualified professional."
+keyTakeaways:
+  - "Bookkeepers record transactions and reconcile accounts; accountants file tax returns, advise on tax planning, and keep your business compliant with HMRC and Companies House."
+  - "Only a qualified accountant registered with HMRC as an agent can file a corporation tax return (CT600) on your behalf; a bookkeeper cannot do this."
+  - "The VAT registration threshold is £90,000 and missing the 30-day registration window triggers penalties, so you need accountant advice before reaching that level."
+  - "Accountant fees for a limited company year-end and CT600 typically run £600 to £1,500; monthly packages covering bookkeeping, VAT, and year-end range from £150 to £500."
+  - "Bookkeepers in cities such as Manchester or Birmingham charge £25 to £40 per hour, with monthly retainers of £150 to £400 for small limited companies."
+  - "Business Asset Disposal Relief (BADR) gives an 18% CGT rate on the first £1 million of qualifying gains if shares are held two years and trading criteria met."
 ---
 
 <p>You know you need someone to handle your financial records. But do you need a bookkeeper or an accountant? And what is the actual difference?</p>

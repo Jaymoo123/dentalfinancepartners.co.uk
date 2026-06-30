@@ -27,6 +27,13 @@ faqs:
     answer: "You still get the late filing penalty. Filing and payment are separate obligations. Paying on time avoids late payment penalties and interest, but does not protect you from the £100 late filing penalty or any subsequent penalties if you remain overdue on filing."
   - question: "Do I get a warning before HMRC issues the penalty?"
     answer: "No. HMRC does not send a warning letter or email before issuing the penalty. The first communication you receive is the penalty notice itself, sent to your company's registered office address. That is why keeping your registered office up to date is critical."
+keyTakeaways:
+  - "Missing the CT600 filing deadline by even one day triggers an automatic £100 penalty, which applies even if your corporation tax bill is zero."
+  - "Penalties escalate to a second £100 at 3 months late, then 10% of estimated unpaid tax at 6 months and another 10% at 12 months after the filing deadline."
+  - "Filing and payment are separate obligations; paying your corporation tax on time does not protect you from the late filing penalty."
+  - "HMRC sends no warning before issuing the penalty; the notice is posted to your company's registered office address."
+  - "Reasonable excuse appeals must be submitted within 30 days of the penalty notice; excuses such as accountant error or being too busy are routinely rejected by HMRC."
+  - "A second late filing within 12 months doubles the initial flat penalty to £200."
 ---
 
 <h2>You Missed The Corporation Tax Filing Deadline By One Day. Now What?</h2>

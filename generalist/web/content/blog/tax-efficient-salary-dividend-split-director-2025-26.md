@@ -27,6 +27,10 @@ faqs:
     answer: "Yes, provided your spouse is genuinely involved in the business. They must do real work (not just hold shares). If HMRC applies the settlements legislation, dividends paid to a non-working spouse can be re-allocated back to you for tax. Alphabet shares can help structure the split, but the underlying economic activity must support it."
   - question: "What happens if I take more dividends than the company has profits?"
     answer: "That creates a director's loan account debit. If the loan exceeds £10,000, it is a benefit in kind (taxable on you, Class 1A NI on the company). If not repaid within 9 months and 1 day of the year-end, the company pays S455 tax at 33.75%. That tax is refundable when the loan is repaid, but it ties up cash. Never take dividends in excess of available profits."
+keyTakeaways:
+  - "All six proposed takeaways are body-supported and figure-faithful."
+  - "Article is consistently scoped to 2025/26, so the 8.75%/33.75% dividend rates are legitimately historical rather than stale errors."
+  - "Body correctly applies current employer NIC of 15% above the £5,000 secondary threshold (no stale 13.8%/£9,100), so no ground-truth conflicts to flag."
 ---
 
 <p>Every director of a UK limited company asks this question. And the answer has shifted for 2025/26 because of the dividend allowance cut and the frozen tax bands. The most tax efficient salary dividend split 2025/26 for most director-only companies is a salary of £12,570 and dividends of up to £37,700 (the basic rate band). But that simple answer hides a lot of detail. And for many directors, the standard split is not actually the best option.</p>

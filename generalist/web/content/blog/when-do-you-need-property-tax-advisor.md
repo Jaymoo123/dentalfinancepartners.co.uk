@@ -27,6 +27,13 @@ faqs:
     answer: "A tax accountant handles all areas of tax: income tax, corporation tax, VAT, payroll. A property tax advisor specialises in property-specific taxes: SDLT, CGT on property, VAT on property transactions, and property-related reliefs like BADR and holdover relief. If property is a significant part of your business, you need the specialist."
   - question: "When should I get a property tax advisor involved in a property purchase?"
     answer: "Before you exchange contracts. Ideally before you even make an offer. A property tax advisor can review the structure, check SDLT implications, confirm VAT treatment, and advise on whether to buy personally or through a company. Once contracts are exchanged, your options narrow significantly."
+keyTakeaways:
+  - "Business Asset Disposal Relief caps CGT on qualifying property at 14% for disposals from 6 April 2025, rising to 18% from 6 April 2026, but strict conditions apply."
+  - "Selling property through a limited company triggers corporation tax at 19% to 25%; the same sale in a personal name attracts CGT at 18% or 24%."
+  - "Commercial SDLT rates start at 0% up to £150,000, then 2% on the portion from £150,001 to £250,000, and 5% above that."
+  - "Since April 2020, individual landlords cannot deduct mortgage interest from rental income at their marginal rate, whereas companies can still deduct it as a trading expense."
+  - "Inheritance tax applies at 40% on estates above the nil-rate band of £325,000; Business Property Relief can reduce or eliminate that charge on qualifying trading assets."
+  - "Any property transaction over £100,000 in value, or involving structural complexity, warrants specialist input, which typically costs £1,000 to £5,000 as a fixed fee."
 ---
 
 <h2>What Does a Property Tax Advisor Actually Do?</h2>

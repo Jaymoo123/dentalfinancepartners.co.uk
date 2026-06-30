@@ -27,6 +27,13 @@ faqs:
     answer: "Estimate the percentage of your working time spent on qualifying R&D activities across the year. Be realistic. Most solo developers spend 20% to 40% of their time on genuine R&D. The rest is client work, admin, and routine maintenance. Use your technical diary and project records to support your estimate. A 100% claim without justification is a red flag for HMRC."
   - question: "What if my client paid me to do the R&D work?"
     answer: "If a client funded the project, HMRC considers it a subsidised R&D project. For accounting periods starting on or after 1 April 2024, subsidised R&D must be claimed under the RDEC scheme, not the SME scheme. The rates and rules are different. Speak to an accountant before submitting the claim. Getting this wrong can lead to a rejected claim and penalties."
+keyTakeaways:
+  - "Under the merged R&D scheme for accounting periods starting on or after 1 April 2024, qualifying companies receive a 20% expenditure credit on qualifying R&D spend."
+  - "After corporation tax on the RDEC credit at the 25% main rate, the net benefit is approximately 15% of qualifying spend, or approximately 16% at the 19% small-profits rate."
+  - "For accounting periods starting on or after 1 April 2024, client-funded R&D projects must be claimed under the RDEC scheme, not the SME scheme."
+  - "HMRC limits qualifying subcontractor costs to 65% of the payment made, for SMEs claiming R&D relief."
+  - "A one-person limited company can claim its salary and employer pension contributions as qualifying R&D costs, but dividend payments cannot be claimed."
+  - "The key qualifying test is technical uncertainty: if a competent professional in the field could resolve the problem by applying standard practice, the work does not qualify as R&D."
 ---
 
 <p>If you run a one-person software company in the UK, you have probably heard about R&D tax credits. You may have assumed they are only for big teams with dedicated project managers and formal R&D departments. That is a common misunderstanding, and it costs solo developers real money.</p>

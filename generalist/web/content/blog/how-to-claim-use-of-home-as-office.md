@@ -27,6 +27,13 @@ faqs:
     answer: "Your company can reimburse you up to £6 per week tax free without receipts. For higher amounts, the company reimburses your actual additional household costs, calculated using the room count or hours method. The reimbursement is tax deductible for the company and not a taxable benefit for you."
   - question: "What happens if HMRC enquires into my home office claim?"
     answer: "HMRC will ask for your calculation and supporting evidence. For the £6 rate, a simple log of weeks worked is enough. For actual costs, they expect bills, floor plans, and time logs. If you cannot provide them, they can disallow the claim and charge interest and penalties. If you are self-employed, keep your records for at least 5 years after the 31 January Self Assessment filing deadline for that tax year."
+keyTakeaways:
+  - "Sole traders and partnerships can claim £10, £18, or £26 per month under the simplified flat rate for working 25 to 50, 51 to 100, or 101+ hours from home."
+  - "Limited company directors can receive up to £6 per week (£312 per year) from their company tax-free without receipts under HMRC's benchmark rates."
+  - "The actual costs method allows a proportion of rent or mortgage interest, council tax, gas and electricity, broadband, and insurance, apportioned using a room count fraction."
+  - "You must choose one method for the whole tax year and cannot mix the simplified flat rate with actual costs in the same year."
+  - "Mortgage capital repayments are not allowable under the actual costs method; only mortgage interest qualifies as a deductible expense."
+  - "You must work at least 25 hours from home in a month to use the simplified flat rate; lower-hour months require the actual costs method instead."
 ---
 
 <p>If you work from home, whether as a sole trader, a contractor through your own limited company, or a partner in a partnership, you can claim a deduction for the business use of your home. HMRC gives you two routes: a simplified flat rate (hours-based for sole traders and partnerships; £6 per week for limited company directors) or a detailed calculation based on your actual costs. The right choice depends on how much of your home you use for business and what your actual bills look like.</p>

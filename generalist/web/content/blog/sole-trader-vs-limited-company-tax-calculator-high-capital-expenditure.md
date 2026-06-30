@@ -27,6 +27,13 @@ faqs:
     answer: "The sole trader claims the AIA on assets purchased before incorporation. The limited company claims the AIA on assets purchased after incorporation. Each entity gets its own £1,000,000 annual limit. But if you transfer assets from the sole trader to the company, the company cannot claim AIA on the transfer value. The company inherits the tax written down value from the sole trader and continues capital allowances from that point."
   - question: "Should I buy equipment before or after incorporating to maximise tax relief?"
     answer: "Buy before incorporating if your personal tax rate is higher than the corporation tax rate you will pay as a company. The AIA deduction saves more tax at 40% or 45% than at 19% or 25%. Buy after incorporating if you want the company to own the assets from day one and you plan to retain profits for reinvestment. The timing decision depends on your specific profit level in each period. Take advice before the purchase."
+keyTakeaways:
+  - "The Annual Investment Allowance lets both sole traders and limited companies deduct 100% of qualifying plant and machinery costs in the year of purchase, up to £1,000,000."
+  - "On £100,000 of capital spend, a sole trader paying 40% income tax plus 2% Class 4 NIC saves £42,000, while a limited company on 19% corporation tax saves £19,000."
+  - "With £160,000 gross profit and £85,000 capital spend, the sole trader keeps £54,812 after tax while the limited company yields £57,372 total benefit, saving £2,560."
+  - "With £100,000 profit and £85,000 spend the sole trader wins by roughly £2,000, but at £250,000 profit and £150,000 spend the company wins by over £15,000."
+  - "From 6 April 2025, employer NIC applies at 15% on director salaries above £5,000; from 6 April 2026 the basic rate of dividend tax rose to 10.75%."
+  - "Accountancy fees for a limited company typically run £1,000 to £2,500 per year, compared to £300 to £800 for a sole trader return."
 ---
 
 <h2>Why Standard Tax Calculators Miss the Point for Capital-Intensive Businesses</h2>

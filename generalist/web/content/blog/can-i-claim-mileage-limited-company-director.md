@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "From 6 April 2026, HMRC's Approved Mileage Allowance Payment rate for cars and vans is 55p per mile for the first 10,000 business miles, then 25p."
+  - "Mileage payments made at or below the approved rate attract no income tax and no National Insurance for the director, making them more efficient than paying extra salary."
+  - "The company deducts mileage allowance payments in full as an allowable expense against its corporation tax bill."
+  - "Daily travel from home to a fixed office is commuting and does not qualify as business mileage under HMRC rules."
+  - "The 55p per mile AMAP rate applies to electric cars as well as petrol and diesel vehicles, with no separate lower rate for electric."
+  - "Mileage records must be kept for at least six years and should include the date, start and end locations, purpose, and miles driven for each journey."
 ---
 <p>If you run your own limited company and use your personal car for business trips, you can claim mileage. The short answer is yes, you can claim mileage as a limited company director. Your company pays you a tax-free mileage allowance, and the company deducts that cost against its corporation tax bill. Done correctly, this is one of the simplest and most tax-efficient ways to handle business travel costs through your company.</p>
 

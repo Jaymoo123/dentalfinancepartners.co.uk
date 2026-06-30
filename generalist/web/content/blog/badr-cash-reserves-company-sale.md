@@ -27,6 +27,13 @@ faqs:
     answer: "Not directly. The cash issue is about whether the gain qualifies for BADR at all. If your total gain is under £1 million, the apportionment between trading and non-trading elements determines how much of the gain gets the 18% BADR rate (from 6 April 2026). If your gain exceeds £1 million, the excess is taxed at standard rates regardless of the cash issue."
   - question: "Can I use a pension contribution to remove surplus cash from the company before a sale?"
     answer: "Yes. Employer pension contributions are corporation tax deductible and not subject to NI or income tax on extraction. You can contribute up to £60,000 per year (or more using carry forward). This is often the most tax-efficient way to remove surplus cash. The contribution must be genuine and properly documented."
+keyTakeaways:
+  - "BADR reduces CGT to 18% on qualifying share-sale gains for disposals from 6 April 2026, subject to a £1 million lifetime limit."
+  - "If HMRC treats accumulated cash as a non-trading investment asset, the portion of the gain attributable to that cash is taxed at 24% CGT rather than the 18% BADR rate."
+  - "Most small and medium trading companies can hold cash equal to 3 to 6 months of operating costs without triggering HMRC scrutiny over surplus cash."
+  - "On a gain of £500,000, losing BADR on the cash element costs an extra £30,000 in tax; on a £1 million gain, the difference rises to £60,000."
+  - "Employer pension contributions of up to £60,000 per year are corporation tax deductible and remove surplus cash from the company without triggering income tax or National Insurance."
+  - "Extracting surplus cash at least 12 months before a planned sale, backed by board minutes and cash flow forecasts, significantly reduces the risk of an HMRC challenge."
 ---
 
 <h2>What Happens to BADR When Your Company Sits on a Pile of Cash?</h2>

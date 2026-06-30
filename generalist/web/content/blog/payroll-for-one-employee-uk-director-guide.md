@@ -32,6 +32,28 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "A director taking a salary must register as an employer with HMRC and submit an FPS via RTI on or before each payment date, even if no tax is due."
+  - "For 2025/26, a director salary of £12,570 triggers no income tax and no employee National Insurance, as both the personal allowance and primary NI threshold sit at £12,570."
+  - "Employer NI at 15% applies to director salary above the £5,000 secondary threshold (from 6 April 2025), costing £1,135.50 on a £12,570 annual salary (£7,570 x 15%)."
+  - "Director-only companies cannot claim the Employment Allowance, so employer NI on salary above £5,000 is a real cost with no offset."
+  - "A salary at or below £5,000 avoids employer NI entirely, though the director loses some National Insurance credits for state pension purposes."
+  - "A P60 must be issued to yourself by 31 May after the tax year ends, and penalties for late or missing RTI submissions start at £100 per return."
+howToSteps:
+  - name: "Register as an employer"
+    text: "Register your company online with HMRC using your Corporation Tax reference and company registration number; allow up to 10 working days for your PAYE reference."
+  - name: "Choose payroll software"
+    text: "Select HMRC-recognised payroll software; HMRC's Basic PAYE Tools was withdrawn in April 2024, so a commercial or free third-party solution such as FreeAgent, Xero, BrightPay, or Moneysoft is required."
+  - name: "Add yourself as an employee"
+    text: "Create an employee record for yourself, entering NI number, date of birth, address, start date, tax code 1257L for 2025/26, NI category A, and marking yourself as a director."
+  - name: "Set your pay schedule and salary"
+    text: "Choose your pay frequency (monthly is most common) and set your salary; £1,047.50 per month equals £12,570 per year, or keep salary at or below £5,000 to avoid employer NI entirely."
+  - name: "Submit RTI Full Payment Submissions"
+    text: "Submit a Full Payment Submission (FPS) electronically on or before each payment date; submitting after the payment date is late and attracts HMRC penalties."
+  - name: "Pay any PAYE and NI to HMRC"
+    text: "Pay any PAYE and employer NI due to HMRC by the 22nd of the following month (or 19th if paying quarterly), using your Accounts Office reference through the HMRC online system."
+  - name: "File year-end returns"
+    text: "After 5 April, issue yourself a P60 by 31 May, submit a final FPS marked as the last submission for the year, and file a P11D by 6 July if you have benefits in kind."
 ---
 <p>If you are the only director of your limited company and have no other employees, you still need a payroll system. Many directors assume that because they are the sole shareholder and director, they can simply take money from the business bank account without reporting it. That is not correct.</p>
 

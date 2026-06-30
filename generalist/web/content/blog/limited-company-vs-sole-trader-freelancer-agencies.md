@@ -25,6 +25,13 @@ faqs:
     answer: "No. IR35 only applies to contractors working through an intermediary, typically a limited company. If you are a sole trader, you are directly self-employed and IR35 does not apply. However, the end client may still assess your employment status for other purposes, such as employment rights and holiday pay."
   - question: "What is the best structure for a freelancer earning £60,000 through agencies?"
     answer: "If your contract is"
+keyTakeaways:
+  - "IR35 does not apply to sole traders; it only affects contractors working through an intermediary such as a personal service company."
+  - "Outside IR35, at £120,000 annual earnings, a limited company typically saves a contractor £8,000 or more in tax compared with operating as a sole trader."
+  - "In 2025/26, at £80,000 turnover a sole trader takes home about £55,971 versus about £55,469 for a single-director limited company, because Employment Allowance is unavailable to single-director companies."
+  - "Below £30,000 annual turnover, the compliance cost of a limited company (£800 to £1,500 per year for an accountant) often outweighs any tax saving over sole trader status."
+  - "Umbrella companies charge typically £20 to £30 per week and carry a higher effective tax rate than both outside-IR35 limited companies and sole traders."
+  - "From 6 April 2025, employer NIC applies at 15% above the £5,000 secondary threshold on director salaries, tightening the limited company tax case for inside-IR35 contractors."
 ---
 
 <p>If you are a freelancer working through recruitment agencies in the UK, the choice between operating as a <strong>limited company vs sole trader</strong> is not just a tax calculation. It is a decision shaped by how agencies engage you, whether your contracts fall inside or outside IR35, and what your medium-term earnings trajectory looks like.</p>

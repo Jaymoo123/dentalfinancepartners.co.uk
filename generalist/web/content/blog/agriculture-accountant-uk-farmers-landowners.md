@@ -27,6 +27,13 @@ faqs:
     answer: "APR gives 100% relief on the agricultural value of farmland and buildings. The land must have been farmed for at least two years (if you own and occupy it) or seven years (if let). The relief applies to the agricultural value, not the market value if development potential exists. You still need to deal with the non-agricultural value separately. An agriculture accountant works with a surveyor to split the values."
   - question: "What happens to my VAT if I sell livestock to a VAT-registered buyer?"
     answer: "If you are on the Agricultural Flat Rate Scheme (AFRS), you issue an invoice showing the flat rate addition (currently 4%, the long-standing rate under the AFRS, which is separate from the general VAT Flat Rate Scheme). The buyer reclaims this as input VAT. If you are on standard VAT accounting, you charge 20% VAT and the buyer reclaims the full amount. Your agriculture accountant will advise which scheme suits your customer base and cost structure."
+keyTakeaways:
+  - "From April 2026, farmers with self-employment or property income over £50,000 must file quarterly MTD updates; the threshold drops to £30,000 from April 2027 and £20,000 from April 2028."
+  - "Agricultural Property Relief gives 100% relief on the agricultural value of land and buildings, but the land must be farmed two years if owner-occupied, or seven years if let."
+  - "The Agricultural Flat Rate Scheme (AFRS) flat rate addition is 4%, the rate in place since 1993, allowing unregistered farmers to add it to invoices issued to VAT-registered buyers."
+  - "Farmers must register for VAT once turnover crosses £90,000 in a rolling 12 months."
+  - "Sole trader and partnership farmers can average trading profits over two or five years using averaging relief, reducing the tax bill in high-income years."
+  - "The furnished holiday lettings (FHL) regime was abolished from 6 April 2025; farm holiday lets are now treated as property income, not trading income, removing many previous tax advantages."
 ---
 
 <p>Farming is not like other businesses. The tax rules that apply to a plumber in Birmingham or a software consultant in Manchester do not always fit a mixed arable and livestock farm in Norfolk. That is why you need an <strong>agriculture accountant</strong> who understands the sector.</p>

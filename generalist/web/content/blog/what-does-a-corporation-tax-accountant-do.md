@@ -27,6 +27,13 @@ faqs:
     answer: "They need your annual accounts (or the raw data to prepare them), details of any fixed asset purchases and disposals, the director's loan account position at year-end, and information on any dividends declared. If you use cloud accounting software, your accountant can pull most of this data directly."
   - question: "When is the corporation tax return deadline for a limited company?"
     answer: "The CT600 must be filed with HMRC within 12 months of your accounting period end. The corporation tax payment is due 9 months and 1 day after year-end. So for a company with a 31 March year-end, the payment deadline is 1 January and the filing deadline is 31 March the following year."
+keyTakeaways:
+  - "Since April 2023, corporation tax is 19% on profits up to £50,000 and 25% above £250,000, with marginal relief (3/200 fraction for 2025/26) applied between."
+  - "Corporation tax payment falls due 9 months and 1 day after year-end, while the CT600 filing deadline is 12 months after the accounting period end."
+  - "An overdrawn director's loan not repaid within 9 months and 1 day of year-end triggers S455 tax at 33.75% for 2025/26 loans, or 35.75% from 6 April 2026."
+  - "Companies with taxable profits above £1.5 million must pay corporation tax by quarterly instalments, with the threshold reduced where associated companies exist."
+  - "From April 2024, all companies claim the merged R&D scheme at a 20% expenditure credit (RDEC); loss-making SMEs spending over 30% on R&D may use ERIS instead."
+  - "HMRC penalties for careless inaccuracies on a corporation tax return can reach 30% of the additional tax due, with deliberate inaccuracies carrying penalties of up to 100%."
 ---
 
 <p>If you run a limited company in the UK, corporation tax is your single biggest direct tax cost after salaries. Getting it wrong means either paying too much or facing penalties from HMRC. A <strong>corporation tax accountant</strong> is the professional who makes sure you land on the right number and keep more of your profit.</p>

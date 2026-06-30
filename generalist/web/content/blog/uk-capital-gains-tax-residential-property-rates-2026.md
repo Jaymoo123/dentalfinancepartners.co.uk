@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "CGT on UK residential property stands at 18% for basic rate taxpayers and 24% for higher and additional rate taxpayers, unchanged since 30 October 2024, for both 2025/26 and 2026/27."
+  - "The annual CGT exempt amount is £3,000 for 2025/26 and 2026/27, reduced from £6,000 in April 2024 and frozen at that level."
+  - "Sellers of UK residential property that is not their main home must report the gain to HMRC and pay the tax within 60 calendar days of the completion date."
+  - "Private Residence Relief covers the period you lived in the property plus the final 9 months of ownership, regardless of where you were living."
+  - "Lettings Relief is capped at £40,000 per owner and, since 6 April 2020, only applies where the owner was living in the property at the same time as the tenant."
+  - "The 60-day CGT property return incurs an immediate £100 penalty if late, then £10 per day for 90 days after three months, with six and twelve month charges."
 ---
 <p>If you sell a residential property in the UK that is not your main home, you will owe Capital Gains Tax (CGT) on the profit. The rates for 2025/26 and 2026/27 are unchanged from the rates introduced on 30 October 2024. For basic rate taxpayers, the rate is 18%. For higher and additional rate taxpayers, the rate is 24%.</p>
 

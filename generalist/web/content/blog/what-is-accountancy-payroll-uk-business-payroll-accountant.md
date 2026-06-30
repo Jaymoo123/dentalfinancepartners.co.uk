@@ -27,6 +27,13 @@ faqs:
     answer: "HMRC charges penalties based on the number of employees and how late the submission is. For a business with 10 to 49 employees, a single late submission in a month triggers a £200 penalty (£100 for 1 to 9 employees, rising to £400 for the largest employers). Repeat offences escalate. The only defence is a \"reasonable excuse\" (serious illness, software failure, HMRC system outage). \"I forgot\" does not count. Using a payroll accountant who submits RTI on your behalf eliminates this risk entirely."
   - question: "Can a payroll accountant handle pension auto-enrolment for my business?"
     answer: "Yes. A good payroll accountant will set up the pension connection, calculate contributions (both employee and employer), submit contributions to the provider, and manage the re-enrolment cycle every 3 years. They will also handle opt-outs and refunds. The Pensions Regulator fines businesses that fail to comply with auto-enrolment duties. Including pension management in your payroll service avoids those fines entirely."
+keyTakeaways:
+  - "Employer NI is 15% of earnings above the £5,000 secondary threshold from April 2025, and the Employment Allowance of up to £10,500 can offset it for most businesses."
+  - "A single late RTI submission triggers a £200 monthly penalty for a business with 10 to 49 employees, with a reasonable excuse the only valid defence."
+  - "Pensions Regulator fines for auto-enrolment failures start at £400 for businesses with 5 to 49 employees, and employers must run re-enrolment every 3 years."
+  - "S455 tax applies at 35.75% on a director's loan made on or after 6 April 2026 and unpaid 9 months and 1 day after the year-end."
+  - "P60s must be filed by 31 May, P11D(b) by 6 July after each tax year-end, and payroll records kept for 3 years after the end of the tax year."
+  - "HMRC PAYE payments are typically due by the 22nd of the following month for electronic payments, making accurate monthly payroll a cash-flow planning requirement."
 ---
 
 <p>If you employ staff, you have a legal obligation to operate a payroll scheme. But "accountancy payroll" is not just about pressing a button at the end of each month. It covers the full cycle of paying your people correctly: registering with HMRC, running gross-to-net calculations, submitting Real Time Information (RTI) reports, handling pension auto-enrolment, processing leavers and starters, and filing year-end returns.</p>

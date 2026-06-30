@@ -25,6 +25,13 @@ faqs:
     answer: "Holdover relief allows you to defer the CGT on a gift of shares in a trading company. No tax is due on the gift itself. Instead, the gain is deducted from the recipient's base cost, so they pay the tax when they sell. Both donor and recipient must make a joint claim to HMRC. Holdover relief is only available for shares in trading companies, not investment or property companies."
   - question: "Can my child claim BADR on shares I gift to them?"
     answer: "Yes, but only if they hold the shares for at least 2 years before selling. The 2-year holding period starts from the date of the gift, not from your original acquisition. If you gift shares and the company is sold within 2 years, your child cannot claim BADR. They will pay CGT at the standard rates (18"
+keyTakeaways:
+  - "HMRC treats a gift of shares as a disposal at open market value for CGT purposes, so the donor is liable for any gain even though no cash is received."
+  - "Spouse and civil partner transfers carry no immediate CGT, but the recipient inherits the donor's original base cost and pays CGT on the entire gain when they sell."
+  - "Holdover relief under TCGA 1992, s.165 defers CGT on gifts of shares in qualifying trading companies by reducing the recipient's base cost; investment companies and property companies do not qualify."
+  - "Holdover relief and Business Asset Disposal Relief are mutually exclusive on the same disposal; BADR charges 14% in 2025/26 but rises to 18% from April 2026."
+  - "A recipient must hold gifted shares for at least 2 years from the date of the gift, not the donor's acquisition, before claiming BADR on a later sale."
+  - "The CGT annual exempt amount is £3,000 for 2025/26; if a sale is imminent within 12 months, gifting shares is unlikely to produce a net CGT benefit."
 ---
 
 <p>You own 100% of your limited company. You are planning to sell it in the next 12 to 18 months. A family member has a low income and unused capital gains tax (CGT) allowance. You think: "I'll gift them some shares now, they sell later, and we split the gain across two sets of allowances."</p>

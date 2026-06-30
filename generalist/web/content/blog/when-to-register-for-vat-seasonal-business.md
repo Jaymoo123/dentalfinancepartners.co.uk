@@ -27,6 +27,26 @@ faqs:
     answer: "You face a penalty calculated as a percentage of the VAT due, starting at 5% for the first month late. HMRC will also backdate your registration to the date it should have taken effect (the 1st day of the second month after the month you exceeded the threshold). Output VAT is owed on supplies made from that effective date onwards, not on all income collected before your formal registration was completed. The cashflow risk is that you must charge VAT on any supplies from that date, including work already quoted or contracted at prices that did not include VAT."
   - question: "Can I deregister from VAT if my seasonal business has a quiet year?"
     answer: "Yes. You can deregister if your expected VAT-exclusive turnover for the next 12 months is below £88,000. Submit form VAT484 to HMRC. You must account for VAT on stock and assets held at deregistration, though reliefs apply if the total VAT is under £1,000."
+keyTakeaways:
+  - "The £90,000 VAT registration threshold is tested on a rolling 12-month basis, not a fixed tax year, so a seasonal business can breach it mid-season."
+  - "After the rolling 12-month total exceeds £90,000, you must notify HMRC within 30 days; the effective registration date is the first day of the second month following the breach."
+  - "Missing the 30-day notification window triggers a penalty starting at 5% of the VAT due for the first month late, increasing the longer registration is delayed."
+  - "On registering, you can reclaim VAT on goods bought up to four years before registration (if still used in the business) and services received up to six months before."
+  - "The deregistration threshold is £88,000: if your expected VAT-exclusive turnover for the next 12 months falls below that figure, you can apply to deregister using form VAT484."
+  - "The Cash Accounting Scheme and Annual Accounting Scheme are both available to businesses with VAT-exclusive turnover of £1.35 million or less, and can reduce cashflow pressure for seasonal operators."
+howToSteps:
+  - name: "Monitor your rolling 12-month turnover monthly"
+    text: "At the end of each calendar month, check your total VAT-exclusive turnover for the previous 12 months using accounting software such as Xero, QuickBooks, or FreeAgent."
+  - name: "Plan ahead once turnover approaches £80,000"
+    text: "When the rolling 12-month total nears £80,000, work out your expected purchases for the next six months and assess whether your customers are VAT-registered businesses or individuals."
+  - name: "Decide whether voluntary registration makes sense"
+    text: "If you have significant pre-season spending on stock or equipment, voluntary registration before the £90,000 threshold lets you reclaim input VAT on those purchases immediately."
+  - name: "Register using form VAT1 within 30 days of breaching the threshold"
+    text: "Submit form VAT1 online through your HMRC business tax account as soon as the rolling 12-month total exceeds £90,000; the 30-day notification window is a hard deadline."
+  - name: "Choose the right VAT scheme for your cashflow profile"
+    text: "Consider the Flat Rate Scheme, Cash Accounting Scheme, or Annual Accounting Scheme; each has trade-offs depending on your purchase costs and how lumpy your seasonal income is."
+  - name: "Plan for the cashflow impact of VAT payments"
+    text: "If you operate through a limited company, plan in advance for VAT bills; interest on commercial borrowing taken out to cover a VAT liability is generally deductible under the loan relationships rules in CTA 2009, Part 5."
 ---
 
 <p>If your business income is seasonal, the standard advice about VAT registration can catch you out. The £90,000 threshold is based on a rolling 12-month period, not a fixed tax year. For a business that earns most of its revenue in a short window, that creates a specific problem. You can hit the threshold mid-season, owe VAT on income you have already spent, and have no time to adjust your pricing before the registration takes effect.</p>

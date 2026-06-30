@@ -27,6 +27,13 @@ faqs:
     answer: "You avoid the late filing penalties but face late payment penalties and interest. Set up a Time to Pay arrangement online through your HMRC account for debts up to £30,000. This spreads the payments and stops further late payment penalties."
   - question: "How do I check if I have received a Self Assessment penalty?"
     answer: "Log into your HMRC online account. Go to the Self Assessment section and look for \"Penalties and appeals\". You can also check your post, as HMRC sends penalty notices by letter. If you have registered for paperless communications, check your HMRC messages."
+keyTakeaways:
+  - "Missing the 31 January online filing deadline triggers an automatic £100 penalty from 1 February 2026, even if you owe no tax."
+  - "From 3 months late (1 May 2026 for the 2024/25 return), HMRC charges £10 per day for up to 90 days, a maximum of £900."
+  - "At 6 months and 12 months late, HMRC adds a further penalty of £300 or 5% of the tax due, whichever is higher."
+  - "The maximum fixed penalties for a return filed more than 12 months late total £1,600, before any tax-geared penalties for deliberate non-compliance."
+  - "Late payment interest runs at the Bank of England base rate plus 4 percentage points from 6 April 2025, approximately 8% to 8.5% through 2025/26."
+  - "You can appeal a late filing penalty on grounds of reasonable excuse, but must submit the appeal within 30 days of receiving the penalty notice."
 ---
 
 <p>If you miss the 31 January deadline for filing your Self Assessment tax return, HMRC charges an automatic £100 penalty. That is the starting point, not the full picture. The penalties escalate quickly the longer you delay, and they can reach thousands of pounds for returns filed more than 12 months late.</p>

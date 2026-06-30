@@ -36,6 +36,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "Integral features qualify for 6% writing down allowances on a reducing balance basis in the special rate pool, under Part 2, Chapter 14 of the Capital Allowances Act 2001."
+  - "The legislation lists eight integral feature categories: electrical, cold water, hot water, space heating or cooling, ventilation, lifts and escalators, external solar shading, and combined hot water and heating systems."
+  - "Integral features capital allowances are only available on commercial properties or properties used for a qualifying business purpose; residential properties are excluded."
+  - "The Annual Investment Allowance gives 100% relief on integral features up to £1,000,000 per year, but full expensing does not apply as they are special rate expenditure."
+  - "A £100,000 spend on integral features generates a year-one writing-down allowance of £6,000 (6% of cost), saving £1,500 in corporation tax for a company paying at 25%."
+  - "When buying a second-hand commercial property, the purchase price must be apportioned by market value at the date of acquisition, not the vendor's original cost."
 ---
 <h2>What Are Integral Features for Capital Allowances?</h2>
 

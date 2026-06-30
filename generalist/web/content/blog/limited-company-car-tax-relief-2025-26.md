@@ -27,6 +27,13 @@ faqs:
     answer: "You do not pay employee NI on the BIK value. However, your company pays Class 1A employer NI at 15% on the BIK amount (15% applies from 6 April 2025; it was 13.8% up to 5 April 2025). This is reported on form P11D(b) and paid by 19 July after the tax year end. The employer NI is deductible against the company's profits."
   - question: "Can I avoid the BIK charge by only using the company car for business?"
     answer: "No. HMRC treats any company car as available for private use unless there is a genuine restriction (e.g., the car is liveried with your company name and cannot be used privately, or you have a separate personal car and a signed agreement preventing private use). In practice, HMRC rarely accepts that a director has no private use of a company car. The BIK charge applies unless you can demonstrate no private use whatsoever."
+keyTakeaways:
+  - "Electric company cars (0g/km CO2) qualify for 100% First Year Allowance in 2025/26, letting the company deduct the full purchase price from taxable profits in year one."
+  - "The benefit-in-kind rate for electric cars is 3% of list price in 2025/26, rising to 4% in 2026/27 and 5% in 2027/28."
+  - "Petrol and diesel cars with CO2 over 50g/km attract only a 6% reducing balance capital allowance per year, while the BIK rate can reach 37% for cars emitting over 150g/km."
+  - "Companies must pay Class 1A employer National Insurance at 15% on the BIK value of any company car from 6 April 2025, up from 13.8%."
+  - "For operating leases on cars with CO2 over 50g/km, 15% of the lease cost is disallowed; for electric and low-emission cars (under 50g/km), 100% of the lease cost is deductible."
+  - "If the company pays for private petrol or diesel fuel, the 2025/26 fuel benefit charge is calculated using a £28,200 multiplier applied to the car's BIK percentage."
 ---
 
 <p>If you are a director considering putting a car through your limited company, the tax treatment is not straightforward. You need to understand two separate tax systems that interact: capital allowances (which affect your company's corporation tax bill) and benefit-in-kind (BIK) (which affects your personal tax).</p>

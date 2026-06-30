@@ -27,6 +27,28 @@ faqs:
     answer: "Yes. If you pay yourself a salary through your limited company, you must register as an employer and run payroll. Even a salary of £12,570 a year requires PAYE registration. Dividends do not need payroll, but salary does. Register before your first salary payment."
   - question: "What happens if I pay an employee before registering for PAYE?"
     answer: "You have broken the law. HMRC can charge penalties for late registration and late RTI submissions. You cannot backdate registration. If you have already paid someone, register immediately and submit a late FPS. HMRC may waive penalties for a first offence, but do not rely on it. Register before paying anyone."
+keyTakeaways:
+  - "HMRC issues a PAYE reference within 5 to 10 working days, so register as an employer at least two weeks before your first pay date."
+  - "You must register for PAYE if you pay any employee more than £125 a week (the £6,500 Lower Earnings Limit for 2025/26), or if you provide expenses or benefits."
+  - "Employer NI is 15% on earnings above the £5,000 secondary threshold from 6 April 2025; employee NI is 8% between £12,570 and £50,270, then 2% above."
+  - "Most businesses with an employer NI bill under £100,000 can claim the Employment Allowance, which offsets up to £10,500 a year of employer NI liability."
+  - "PAYE payments to HMRC are due by the 22nd of the following month and must be made using your Accounts Office reference, not your PAYE reference, to avoid misallocation."
+  - "Pension auto-enrolment requires minimum contributions of 3% from the employer and 5% from the employee, totalling 8% of qualifying earnings."
+howToSteps:
+  - name: "Register as an employer with HMRC"
+    text: "Log into your HMRC online account at gov.uk, complete the employer registration form, and do so at least two weeks before your first pay date; HMRC typically issues your PAYE reference within 5 to 10 working days."
+  - name: "Choose payroll software"
+    text: "Select HMRC-recognised software such as FreeAgent, Xero, or BrightPay to submit Real Time Information reports; HMRC Basic PAYE Tools is free for businesses with 9 or fewer employees but has no auto-enrolment integration."
+  - name: "Gather employee information"
+    text: "Collect each employee's full legal name, date of birth, National Insurance number, address, start date, contracted hours, pay rate, and tax code; most new employees use tax code 1257L."
+  - name: "Set up payroll in the software"
+    text: "Enter your PAYE reference, Accounts Office reference, and company details into the software, then add each employee with their personal details, tax code, and pay frequency."
+  - name: "Run your first payroll"
+    text: "Enter gross pay; the software calculates income tax, employee NI (8% on earnings between £12,570 and £50,270), and employer NI (15% above £5,000 from 6 April 2025), then submit a Full Payment Submission to HMRC on or before payday."
+  - name: "Pay employees"
+    text: "Pay each employee their net pay on or before the contractual pay date by BACS, Faster Payment, or cash; if paying by cash, keep a signed receipt from the employee."
+  - name: "Pay HMRC"
+    text: "Transfer the income tax and National Insurance collected to HMRC by the 22nd of the following month, using your Accounts Office reference (not your PAYE reference) to ensure correct allocation."
 ---
 
 <p>If you are taking on your first employee or paying yourself a salary through your limited company, you need to set up PAYE. PAYE stands for Pay As You Earn, and it is the system HMRC uses to collect income tax and National Insurance from salaries and wages.</p>

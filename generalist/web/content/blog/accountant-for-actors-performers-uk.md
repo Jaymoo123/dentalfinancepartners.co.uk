@@ -27,6 +27,13 @@ faqs:
     answer: "It depends on your income level and the type of work you do. If your annual profits consistently exceed £50,000 and most of your engagements fall outside IR35, a limited company is usually more tax-efficient. You can retain profits, split income with a spouse through dividends, and claim employer pension contributions as a deductible expense. If your income is lower or most of your work is inside IR35, staying as a sole trader is simpler and cheaper. Your accountant should model both scenarios with your actual numbers before you decide."
   - question: "What happens if I miss the self assessment deadline?"
     answer: "HMRC charges an automatic £100 late filing penalty if your return is not submitted by 31 January. If it is more than three months late, the penalty increases to £10 per day (up to a maximum of £900). After six months, you face an additional £300 or 5% of the tax due (whichever is higher). Interest also accrues on any unpaid tax from 31 January onwards. If you know you will miss the deadline, submit a paper return or file online as soon as you can. The penalty clock starts on 1 February regardless."
+keyTakeaways:
+  - "Actors can claim mileage at 55p per mile for the first 10,000 business miles in 2026/27 (45p applied up to 2025/26), falling to 25p per mile above that threshold."
+  - "VAT registration is compulsory once VAT-taxable turnover exceeds £90,000 in a rolling 12-month period; performers using the Flat Rate Scheme pay HMRC 12.5% of VAT-inclusive turnover."
+  - "A limited company is typically more tax-efficient than sole-trader status when annual profits consistently exceed £50,000, provided most engagements fall outside IR35."
+  - "From April 2026, actors with self-employment income over £50,000 must keep digital records and file quarterly MTD for Income Tax updates; thresholds fall to £30,000 in 2027, £20,000 in 2028."
+  - "Missing the 31 January self assessment deadline triggers an automatic £100 penalty, rising to £10 per day if the return is more than three months late."
+  - "Performers are advised to set aside 25% to 30% of every gross payment into a separate account to cover income tax, National Insurance, and payments on account."
 ---
 
 <h2>Why Actors and Performers Need a Specialist Accountant</h2>

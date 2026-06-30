@@ -34,6 +34,30 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "Under the tax-year basis (from 2024/25), a sole trader's final self assessment covers profits from 6 April to the cessation date, not the full tax year."
+  - "Where accounts straddle 6 April, you apportion profits by days to exclude the portion before 6 April, which belongs to the prior year's return."
+  - "Overlap relief does not apply to cessations in 2025/26 or later; any remaining balance was cleared during the 2023/24 transition year."
+  - "On cessation, HMRC treats business assets as disposed of at market value, requiring a balancing charge (taxable) or balancing allowance (deductible) on capital allowances."
+  - "For a 2025/26 cessation, the self assessment filing and payment deadline is 31 January 2027; late filing carries a minimum £100 penalty even if no tax is owed."
+  - "MTD for ITSA becomes mandatory from April 2026 for self-employed people and landlords with qualifying income over £50,000."
+howToSteps:
+  - name: "Confirm your cessation date and final accounting period"
+    text: "Establish the exact date you stopped trading; this sets the end of your final basis period under the tax-year basis."
+  - name: "Calculate final-year profit using the correct basis period"
+    text: "Compute taxable profit for 6 April to your cessation date, apportioning by days if your accounts straddle 6 April to exclude pre-April profits."
+  - name: "Check overlap relief does not apply"
+    text: "For a 2025/26 or later cessation, confirm no overlap relief box needs completing on SA103; any such balance was cleared in the 2023/24 transition year."
+  - name: "Do a balancing adjustment on capital allowances"
+    text: "For every business asset, use actual sale proceeds or market value at cessation, then calculate a balancing charge or balancing allowance accordingly."
+  - name: "Choose cash basis or accruals for the final period"
+    text: "Decide your accounting method; HMRC allows a switch to cash basis for the final period even if you used accruals in earlier years."
+  - name: "File SA103 with the ceased box ticked"
+    text: "Complete the self-employment supplementary pages, tick the ceased trading box, and submit through the normal self assessment system (or MTD software if required)."
+  - name: "Review the penultimate year's return"
+    text: "Check whether balancing adjustments or accounting method changes create any knock-on effect on the previous year's return and amend if necessary."
+  - name: "Adjust payments on account and meet the 31 January deadline"
+    text: "Reduce payments on account if final-year profit is lower, and file and pay by 31 January 2027 for a 2025/26 cessation to avoid the £100 minimum penalty."
 ---
 <h2>What Changes When You Stop Trading Mid-Year</h2>
 

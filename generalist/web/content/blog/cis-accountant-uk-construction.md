@@ -27,6 +27,13 @@ faqs:
     answer: "It depends on your situation. If your CIS deductions are straightforward and you are comfortable filing your own tax return, you might manage. But most sole traders miss allowable expenses, forget to claim CIS credits, or file late. A specialist accountant typically saves you more in tax and penalties than their fee costs. For most subcontractors, it pays for itself."
   - question: "What happens if I do not file my CIS returns on time?"
     answer: "HMRC charges automatic penalties per return. One day late: £100. Two months late: a further £200. Six months late: the greater of £300 or 5% of the deductions that should have been reported. Twelve months late: a further greater of £300 or 5%. Persistent late filing can also lead to HMRC enquiries and loss of Gross Payment Status. A CIS accountant ensures your returns are filed by the 19th of each month, avoiding all penalties."
+keyTakeaways:
+  - "Under CIS, contractors must deduct 20% from registered subcontractors and 30% from unregistered ones, and file monthly CIS300 returns by the 19th of the following month."
+  - "Late CIS returns trigger automatic penalties: £100 at one day, a further £200 at two months, then the greater of £300 or 5% of deductions at six and twelve months."
+  - "Subcontractors can claim back CIS deductions via self-assessment and can usually go back up to four years for unclaimed credits."
+  - "Flat Rate VAT rates in construction differ by trade: plumbers pay 10%, general builders 9.5%, labour-only subcontractors 14.5%, and limited cost traders revert to 16.5%."
+  - "Limited company construction businesses can claim the Annual Investment Allowance of £1,000,000 per year on plant and machinery."
+  - "CIS accountant fees typically run £150 to £300 per year for a sole trader subcontractor, or £200 to £500 per month for a contractor filing monthly returns."
 ---
 
 <h2>What Is CIS and Why You Need a CIS Accountant UK</h2>

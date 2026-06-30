@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, significantly. Inside IR35, the limited company pays tax and NIC on a deemed employment income, and dividend extraction is largely blocked. The capital allowance comparison still applies, but the tax rates on extraction are effectively PAYE rates. In many inside IR35 cases, the sole trader structure can be more tax-efficient, especially with high capital spend. Get a professional determination before deciding."
   - question: "What happens to capital allowances if I incorporate my sole trader business?"
     answer: "When you transfer assets to your new limited company, the company can claim capital allowances on the market value of the assets at the date of transfer. You, as the sole trader, lose the right to claim further allowances on those assets. There are also capital gains implications on the transfer of goodwill and other chargeable assets. This is a key area where professional advice is essential before incorporation."
+keyTakeaways:
+  - "The Annual Investment Allowance gives 100% tax relief on up to £1,000,000 of qualifying plant and machinery in 2025/26, and the limit applies equally to sole traders and limited companies."
+  - "A higher-rate sole trader saves 40% income tax plus 2% Class 4 NIC on qualifying spend, whereas a company saves only 19% or 25% corporation tax before extraction."
+  - "In a worked example with £120,000 profit and £60,000 capital spend in 2025/26, the limited company edges ahead by roughly £720 in net cash after all taxes."
+  - "The sole trader structure is most competitive when capital allowances pull taxable profit below £50,270 (the higher-rate threshold), keeping the owner entirely within the basic rate band."
+  - "Business Asset Disposal Relief taxes qualifying company share disposals at 14% CGT in 2025/26, rising to 18% from April 2026; a sole trader pays 18% or 24%."
+  - "A limited company typically costs £1,000 to £2,000 more per year in accountancy fees and Companies House filings than operating as a sole trader."
 ---
 
 <h2>The Problem with Standard Tax Calculators</h2>

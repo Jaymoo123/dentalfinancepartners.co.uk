@@ -36,6 +36,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-30'
 editorialNote: 'Full rewrite 2026-06-30. Previous version contained a fabricated rule (30-day reporting for all property from 6 April 2026). Corrected to accurate law: 60-day window for UK residential property (since 27 October 2021); commercial property and land report through Self Assessment. CGT rates updated to 18%/24% (from 30 October 2024).'
+keyTakeaways:
+  - "UK residential property sellers must report capital gains and pay CGT within 60 days of the completion date, using HMRC's dedicated online service."
+  - "The 60-day rule applies to residential property only; commercial property and bare land are reported on the annual Self Assessment return, due by 31 January after the tax year."
+  - "For 2026/27, CGT on residential property is charged at 18% on gains within the basic-rate band and 24% on gains above it, with both rates applying since 30 October 2024."
+  - "The annual exempt amount for 2025/26 and 2026/27 is £3,000 per person, and joint owners each apply their own £3,000 exemption against their share of the gain."
+  - "Missing the 60-day CGT deadline triggers an immediate £100 penalty, rising to the higher of £300 or 5% of the tax due if still outstanding six months later."
+  - "Non-UK residents must report all UK land and property disposals, residential and non-residential, within 60 days of completion, even when no tax is due."
 ---
 <p>If you sell a UK residential property in 2026/27 and make a capital gain, you have 60 days from the completion date to report the gain to HMRC and pay the Capital Gains Tax due. Not via your annual tax return at 31 January. Not 30 days. Sixty days, using HMRC's dedicated online service for UK property disposals.</p>
 

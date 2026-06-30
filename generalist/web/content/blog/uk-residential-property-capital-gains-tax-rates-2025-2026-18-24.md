@@ -19,6 +19,13 @@ h1: "UK Residential Property Capital Gains Tax Rates 2025/26: 18% and 24%"
 summary: "Capital Gains Tax on UK residential property changed on 30 October 2024. The rates are now 18% for basic rate taxpayers and 24% for higher rate taxpayers. This guide explains who pays, how to calculate your gain, and the 60 day reporting deadline."
 schema: ""
 faqs: []
+keyTakeaways:
+  - "From 30 October 2024, CGT on UK residential property is 18% for basic rate taxpayers and 24% for higher or additional rate taxpayers."
+  - "The previous higher rate of 28% was cut to 24% in the Autumn Budget 2024; the 18% basic rate was unchanged."
+  - "The annual exempt amount for 2025/26 is £3,000, applicable once per tax year regardless of how many residential properties are sold."
+  - "Sellers must report and pay CGT within 60 days of completion using the HMRC online 60-day CGT property return; late filing penalties start at £100."
+  - "Property gains are stacked on top of other taxable income, so any remaining basic rate band is taxed at 18% and the rest at 24%."
+  - "Spouses and civil partners each have their own £3,000 annual exempt amount, so a jointly owned property can use a combined £6,000 against the gain."
 ---
 
 <p>If you sell a UK residential property that is not your main home, the capital gains tax (CGT) rates you pay changed on 30 October 2024. The rates are now 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply to the gain you make above your annual exempt amount, not to the full sale price.</p>

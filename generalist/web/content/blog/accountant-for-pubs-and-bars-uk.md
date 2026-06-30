@@ -27,6 +27,13 @@ faqs:
     answer: "If you operate a formal tronc scheme with a tronc master (usually a senior staff member), tips and service charges distributed through the tronc are exempt from employer National Insurance. You must have a written tronc agreement in place. Your accountant should set this up correctly and ensure your payroll software handles tronc payments separately from wages."
   - question: "Can I claim capital allowances on my pub refurbishment?"
     answer: "Yes. Qualifying expenditure on fixtures, fittings, kitchen equipment, cellar cooling, and furniture qualifies for the Annual Investment Allowance (AIA) at 100% relief up to £1 million per year. Limited companies can also use Full Expensing. Structures and Buildings Allowance gives 3% relief per year on structural works. Your accountant should help you separate qualifying and non-qualifying costs on your invoices to maximise the claim."
+keyTakeaways:
+  - "Hot takeaway food (pies, pasties, jacket potatoes) is standard-rated at 20% VAT; cold takeaway food such as sandwiches and salads is generally zero-rated."
+  - "UK pubs must register for VAT once turnover reaches the £90,000 threshold on a rolling 12-month basis."
+  - "Tips and service charges distributed through a formal tronc scheme are exempt from employer National Insurance, provided a written tronc agreement is in place."
+  - "The Annual Investment Allowance gives 100% tax relief on qualifying plant and machinery up to £1 million per year, and limited companies can also use Full Expensing."
+  - "Business Asset Disposal Relief gives a 14% CGT rate on the first £1 million of gains for disposals from 6 April 2025, rising to 18% from 6 April 2026."
+  - "In 2025/26, the Retail, Hospitality and Leisure Relief scheme provides 75% business rates relief for eligible pubs in England, capped at £110,000 per business."
 ---
 
 <p>Running a pub or bar in the UK is a business like no other. You deal with wet sales and dry sales, fluctuating VAT rates, casual staff on zero-hours contracts, and stock that can vanish faster than you can reconcile it. The wrong accountant will file your returns late, miss reliefs you are entitled to, and treat your pub like any other high street shop.</p>

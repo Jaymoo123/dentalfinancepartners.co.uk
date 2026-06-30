@@ -27,6 +27,13 @@ faqs:
     answer: "It depends on where the company is centrally managed and controlled. If you make all strategic decisions from overseas, the company may be tax resident in your country of residence, not the UK. If the company is UK tax resident, it pays UK corporation tax on worldwide profits. If it is non-UK resident, it only pays UK tax on UK-source profits. Double tax treaties determine the final position. Get professional advice on this before incorporating."
   - question: "Can I pay myself dividends as a non-UK resident director?"
     answer: "Yes. Dividends are paid from post-tax profits. As a non-UK resident, you pay UK dividend tax on dividends above the £500 annual allowance (10.75% basic rate, 35.75% higher rate, 39.35% additional rate from 6 April 2026, FA 2026 s.4). But double tax treaties may reduce or eliminate this. You do not pay National Insurance on dividends. You must file a Self Assessment tax return (SA100) to report the dividends if you have any UK tax to pay."
+keyTakeaways:
+  - "Companies House imposes no UK residency or nationality requirement: any person aged 16 or over who is not disqualified or an undischarged bankrupt can direct a UK company."
+  - "A UK-incorporated company is tax resident where its central management and control is exercised, so a sole director deciding everything from overseas may make it resident abroad, not the UK."
+  - "For 2025/26, corporation tax is 19% on profits up to £50,000 and 25% above £250,000, with marginal relief between; tax is due 9 months and 1 day after year-end."
+  - "Non-UK resident directors pay UK dividend tax of 10.75% basic, 35.75% higher, or 39.35% additional rate from 6 April 2026 on dividends above the £500 allowance, before any treaty relief."
+  - "VAT registration is compulsory once UK taxable turnover exceeds £90,000 in any rolling 12-month period, even for non-resident directors with no physical UK presence."
+  - "Under the Statutory Residence Test, fewer than 16 days in the UK per tax year (or 46 days if not UK resident in the prior three years) means non-UK resident."
 ---
 
 <p>Yes, you can set up a UK limited company as a non-UK resident director living abroad. Companies House does not require directors to be UK residents. There is no rule in the Companies Act 2006 that says you must live in the UK to incorporate a company here.</p>

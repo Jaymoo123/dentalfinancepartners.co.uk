@@ -27,6 +27,13 @@ faqs:
     answer: "Possibly, but it depends on the type of trust and whether Business Property Relief (BPR) applies. If the shares qualify for 100% BPR and the trust is structured correctly, the shares can be outside your estate immediately with no IHT. But the trust must meet specific conditions. Get specialist advice before transferring any shares. The wrong structure can lose the relief."
   - question: "What happens if I miss the trust registration deadline?"
     answer: "HMRC can issue late-registration penalties starting at £100 for minor or first-time failures, rising to up to £5,000 for serious or deliberate non-compliance. Interest also accrues on any unpaid tax. If you realise you have missed a deadline, contact HMRC or your accountant immediately. A voluntary disclosure can reduce penalties compared to waiting for HMRC to write to you."
+keyTakeaways:
+  - "The IHT nil rate band is £325,000 per person, plus a £175,000 residence nil rate band, giving a married couple up to £1 million before IHT applies."
+  - "Most trusts must register with HMRC's Trust Registration Service within 90 days of creation; penalties start at £100 and can reach £5,000 for deliberate non-compliance."
+  - "Discretionary trusts face a periodic IHT charge every ten years and an exit charge whenever capital leaves the trust, both of which require specialist calculation."
+  - "Business Property Relief can give 100% IHT relief on qualifying trading company shares held in a trust, if structured correctly and the business keeps trading."
+  - "Trust income tax rates differ from personal rates, with 45% on non-dividend income and 39.35% on dividend income at the 2026/27 trust rates."
+  - "Annual trust accountant fees range from £500 to £1,000 for a straightforward trust to £1,500 to £3,000 for a complex discretionary trust with IHT planning."
 ---
 
 <h2>What Is a Trust Accountant and When Do You Need One?</h2>

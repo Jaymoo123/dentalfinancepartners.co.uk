@@ -27,6 +27,13 @@ faqs:
     answer: "If you personally have qualifying income from sole trading or property, separate from the partnership, that exceeds £50,000, you are caught by the April 2026 MTD ITSA individual mandate. The threshold drops to £30,000 in April 2027 and £20,000 in April 2028. Your profit share from the partnership is not itself brought into MTD ITSA by these rules. Only your own separate income triggers the personal obligation."
   - question: "When will partnerships with corporate members have to join MTD ITSA?"
     answer: "No date has been announced. HMRC has deferred all partnerships from the phased rollout and has not published a timetable for when partnerships with corporate members will be included. General partnerships with individual members only may join at a later unconfirmed date. Partnerships with corporate members are structurally more complex and are not in any current published plans."
+keyTakeaways:
+  - "HMRC has deferred all partnerships from the MTD ITSA rollout, so no partnership with corporate members has any quarterly reporting obligation from April 2026."
+  - "No date has been set or announced for partnerships with corporate members to join MTD ITSA; they remain in a deferred holding position with no timetable."
+  - "The MTD ITSA individual mandate applies to sole traders and landlords with qualifying income above £50,000 from April 2026, £30,000 from April 2027, and £20,000 from April 2028."
+  - "A corporate partner's profit share is taxed through corporation tax via a CT600 return, not income tax, and MTD ITSA creates no new quarterly obligation for it."
+  - "An individual partner with their own separate sole-trade or rental income (held personally, outside the partnership) above the threshold is still caught by the individual MTD ITSA mandate."
+  - "A partner's profit share from the partnership is not the trigger for MTD ITSA; only the partner's own separate trading or property income counts toward the personal income threshold."
 ---
 
 <p>There is a widely repeated claim that partnerships with corporate members face a Making Tax Digital for Income Tax Self Assessment (MTD ITSA) mandate of April 2026. This claim is incorrect. HMRC has deferred all partnerships from the current MTD ITSA rollout, and partnerships with corporate members are particularly far from any confirmed obligation. No date has been set for them.</p>

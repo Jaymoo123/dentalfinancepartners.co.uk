@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "FreeAgent charges £12.50 per month (excluding VAT), a flat fee covering payroll, VAT returns, CT600 corporation tax filing, and the real-time tax engine."
+  - "Xero Standard plus payroll costs £35 per month, totalling £420 per year against FreeAgent's £150 per year for a typical limited company."
+  - "Business account holders with NatWest, Royal Bank of Scotland, Ulster Bank, or Mettle receive FreeAgent free as part of their account."
+  - "FreeAgent includes CT600 corporation tax return filing as standard; Xero does not, requiring a separate data export, add-on, or accountant step."
+  - "MTD for Income Tax begins April 2026 for self-employed and landlords with qualifying income above £50,000; directors paid only salary and dividends fall outside scope at that date."
+  - "For a typical UK limited company turning over £50,000 to £500,000 with one director, FreeAgent is the lower-cost, simpler fit; Xero suits multiple employees or multi-currency needs."
 ---
 <p>If you run a UK limited company and you are choosing cloud accounting software, the decision usually comes down to two names: Xero and FreeAgent. Both are solid platforms. Both handle the core tasks like invoicing, bank feeds, VAT returns, and payroll. But they are built for different users, and picking the wrong one will cost you time every single week.</p>
 

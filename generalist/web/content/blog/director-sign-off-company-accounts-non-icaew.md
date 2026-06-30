@@ -27,6 +27,10 @@ faqs:
     answer: "No. You can prepare the accounts yourself or use an accountant from any recognised body (ACCA, CIMA, AAT, etc.). The key is that the person preparing the accounts understands UK GAAP and Companies Act requirements. Many directors use qualified accountants to reduce the risk of errors, even though the director ultimately signs the accounts."
   - question: "Can an ICAEW member sign off their own company's accounts?"
     answer: "Yes. An ICAEW member who is also a director can prepare and sign their own company's accounts. The ICAEW code of ethics does not prohibit this, though the member must not hold themselves out as independent. The accounts must still comply with UK GAAP and the Companies Act. The director's personal liability applies the same as for any other director."
+keyTakeaways:
+  - "All six proposed takeaways are body-supported and consistent with current ground truth."
+  - "S455 35.75% (loans on/after 6 Apr 2026) and 33.75% (2025/26) match both the body and ground truth."
+  - "Small-company thresholds £15m/£7.5m/50 are the correct post-April-2025 figures, matching the body."
 ---
 
 <p>If you are a director of a UK limited company, the question of whether you can sign off the annual accounts without being an ICAEW member comes up more often than you might expect. The answer is straightforward: yes, you can. There is no legal requirement for a director to hold any professional accounting qualification at all. The Companies Act 2006 places the responsibility for approving and signing the accounts on the directors collectively, not on a qualified accountant.</p>

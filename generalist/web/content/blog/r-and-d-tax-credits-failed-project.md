@@ -27,6 +27,13 @@ faqs:
     answer: "You need evidence that technical uncertainty existed at the start, that you conducted systematic work to resolve it, and that the work failed for technical reasons. Key documents include project initiation notes, technical logs, test results, decision records explaining why each approach was abandoned, time records for staff, and cost records for qualifying expenditure. A written technical narrative explaining the journey is the strongest evidence."
   - question: "Can I claim for a failed project if my company never made any revenue at all?"
     answer: "Yes. A company can be pre-revenue and still claim R&D tax credits. The claim is calculated on the qualifying costs, not on revenue. Under the merged RDEC scheme, the company receives a 20% above-the-line expenditure credit on qualifying R&D spend. Where there is no corporation tax liability, the credit is repayable in cash (subject to a PAYE cap). This is common for early-stage technology companies that spend months or years developing a product that never reaches market. The payable credit provides cash back even with zero revenue."
+keyTakeaways:
+  - "HMRC allows R&D tax credit claims for failed projects provided there was genuine technical uncertainty and a systematic attempt to resolve it."
+  - "For accounting periods starting on or after 1 April 2024, the merged RDEC scheme provides a 20% above-the-line expenditure credit on qualifying R&D spend."
+  - "Loss-making companies with no corporation tax liability can receive the 20% RDEC credit as a cash repayment, subject to a PAYE cap."
+  - "Loss-making R&D-intensive SMEs, where qualifying R&D spend is 30% or more of total costs, qualify for ERIS with an 86% additional deduction and a 14.5% payable credit rate."
+  - "For accounting periods starting on or after 1 April 2023, companies must notify HMRC within 6 months of the period end or lose the claim entirely."
+  - "Subcontractor costs qualify for R&D relief at 65% of the payment made, alongside staff costs, consumables, and software as standard qualifying categories."
 ---
 
 <p>The short answer is yes. A company can claim R&D tax credits for a failed project that never generated revenue. HMRC does not require commercial success. The legislation focuses on the attempt to overcome technical uncertainty, not on whether the project made money.</p>

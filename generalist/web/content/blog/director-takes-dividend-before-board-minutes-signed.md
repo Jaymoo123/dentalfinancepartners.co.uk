@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, if the directors genuinely intended to declare the dividend on that earlier date and the company had sufficient distributable profits at that date. Backdating to reflect a real intention is standard practice. But if the company did not have profits at the payment date, backdating does not make the dividend lawful. The directors are personally liable to repay it."
   - question: "Do I need a separate dividend voucher if I have board minutes?"
     answer: "Yes. The board minutes are the internal record of the directors' decision. The dividend voucher is the external document given to each shareholder. You need both. The voucher should show the company name, shareholder name, amount, and date of payment. Accounting software like Xero or FreeAgent can generate these automatically."
+keyTakeaways:
+  - "HMRC can reclassify a dividend paid without signed board minutes as a director's loan, attracting a Section 455 charge of 33.75% (2025/26) or 35.75% from 6 April 2026."
+  - "The Section 455 charge only falls away if the director's loan is repaid within 9 months and 1 day of the company's year-end."
+  - "If the director's loan exceeds £10,000, a personal benefit in kind charge applies and the company must report it on a P11D."
+  - "If the minutes are signed within a few weeks and distributable profits existed at the payment date, most accountants treat the gap as an oversight and backdate the minutes."
+  - "Both board minutes and a separate dividend voucher are required for every dividend; the voucher must show the company name, shareholder name, amount, and date of payment."
+  - "Board minutes and dividend vouchers should be kept on file for at least six years in case HMRC opens a compliance check."
 ---
 
 <p>You have run a healthy business this year. Your accountant confirms the retained profits are there. You transfer the money from the business account to your personal account. The dividend is paid.</p>

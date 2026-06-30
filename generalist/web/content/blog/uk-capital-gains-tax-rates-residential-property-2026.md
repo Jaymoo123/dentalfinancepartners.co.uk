@@ -8,12 +8,6 @@ author: Holloway Davies Editorial Team
 category: Exit and Capital Gains
 metaTitle: 'Capital Gains Tax on Residential Property 2026: Full Rates'
 metaDescription: 'How CGT applies to a residential property sale in 2026: 18% and 24% rates after a £3,000 annual exemption, plus the 60-day reporting rule.'
-keyTakeaways:
-  - "Residential property gains are taxed at 18% (basic rate) or 24% (higher rate) from 30 October 2024."
-  - "The annual exempt amount is £3,000 per individual for both 2025/26 and 2026/27."
-  - "All UK residential property disposals must be reported and the tax paid within 60 days of completion."
-  - "Private Residence Relief covers your main home period plus the final 9 months of ownership."
-  - "Married couples or civil partners who jointly own a property can each use the £3,000 annual exempt amount."
 altText: UK residential property with For Sale sign, capital gains tax rates 2026
 image: /blog/uk-capital-gains-tax-rates-residential-property-2026.jpg
 imageCredit:
@@ -40,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "Residential property gains are taxed at 18% for basic rate taxpayers and 24% for higher and additional rate taxpayers, for all disposals on or after 30 October 2024."
+  - "The annual exempt amount is £3,000 per individual for both 2025/26 and 2026/27, and does not carry forward if unused in the tax year."
+  - "All UK residential property disposals must be reported and any tax paid within 60 days of completion, even where no tax is due."
+  - "Private Residence Relief covers the period you lived in the property as your main home plus the final 9 months of ownership, with the remaining period chargeable."
+  - "Married couples or civil partners who jointly own a property can each use the £3,000 annual exempt amount, sheltering up to £6,000 of gains before tax applies."
+  - "Missing the 60-day reporting deadline triggers an automatic £100 penalty for the first day late, then £10 per day for up to 90 days, plus interest on unpaid tax."
 ---
 <p>If you sell a residential property that is not your main home, you will pay capital gains tax on the profit. The rates changed on 30 October 2024 and are now fixed for 2025/26 and 2026/27. The <strong>uk capital gains tax rates residential property 2026</strong> are 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply to the chargeable gain after deducting your annual exempt amount, which is £3,000 for 2025/26 and remains at £3,000 for 2026/27.</p>
 

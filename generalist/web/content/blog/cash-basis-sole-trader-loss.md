@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. You can opt out of the cash basis on your self assessment return for any year. Since 2024/25 there is no turnover limit on cash basis eligibility, so you can choose either method each year regardless of your turnover. Switching in a loss year might be beneficial if the accruals basis gives you a smaller loss or a profit, depending on your other income. But once you opt out, you must generally stay on accruals for at least one tax year."
   - question: "What if my cash basis loss is from buying equipment?"
     answer: "That is fine. Under the cash basis, the full cost of plant and machinery is deductible as an expense in the year you pay for it. This includes vans, tools, computers, and machinery. The resulting loss is treated the same as any other trading loss. You can claim loss relief against it, including sideways relief or carry forward."
+keyTakeaways:
+  - "The cash basis is the default accounting method for sole traders from 2024/25, with no turnover limit, and can be used in any year including loss-making years."
+  - "Sole traders on the cash basis can claim sideways loss relief under s.64 ITA 2007, offsetting a trading loss against total income in the same or the previous tax year."
+  - "For a 2025/26 trading loss, the deadline to claim sideways relief is 31 January 2028; missing that deadline means the relief is permanently lost."
+  - "Under the cash basis, plant and machinery is deducted in full in the year of payment, not through capital allowances, producing larger losses in heavy-investment years."
+  - "Early trade loss relief under s.72 ITA 2007 lets losses in the first four tax years of trading offset total income from the three preceding years."
+  - "From April 2026, sole traders with qualifying income over £50,000 must use MTD-compatible software; the threshold drops to £30,000 from April 2027 and £20,000 from April 2028."
 ---
 
 <p>If your sole trader business makes a loss, you can still use the cash basis to report it. The cash basis is not restricted to profitable years. But the interaction between the cash basis and loss relief rules is where things get specific. Get it wrong and you could miss out on tax relief worth thousands of pounds.</p>

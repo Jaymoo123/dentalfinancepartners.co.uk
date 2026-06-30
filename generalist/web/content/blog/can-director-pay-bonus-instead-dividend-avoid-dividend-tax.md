@@ -27,6 +27,13 @@ faqs:
     answer: "You can pay a bonus even if the company made a loss, but you must have sufficient cash or reserves. The bonus is still deductible against future profits. However, paying a bonus from a loss-making company may raise questions with HMRC about commercial justification. Dividends require retained profits, so you cannot pay a dividend from a loss."
   - question: "What is the most tax efficient way to take money from my limited company in 2025/26?"
     answer: "For most directors, the most efficient strategy is a salary up to the personal allowance (£12,570) combined with dividends up to the basic rate band (£37,700 after salary). This uses the £500 dividend allowance and pays 8.75% dividend tax on the rest. For higher withdrawals above the basic rate band, compare bonus vs dividend using your specific marginal rates. The answer depends on your corporation tax rate and personal tax band."
+keyTakeaways:
+  - "For a basic rate director whose company pays 19% corporation tax, a £10,000 dividend costs £2,731.25 combined in 2025/26, versus net extra tax of just £615 on a £10,000 bonus."
+  - "Dividend tax rates in 2025/26 are 8.75% (basic rate), 33.75% (higher rate) and 39.35% (additional rate), with a £500 tax-free dividend allowance that applies from April 2024."
+  - "A bonus attracts employee NI at 8% (2% above £50,270) plus employer NI at 15% above the £5,000 secondary threshold, but is deductible against corporation tax."
+  - "For a higher rate director extracting £20,000, the effective tax rate is 47.9% via a bonus and 49.7% via a dividend, so the bonus is marginally cheaper at that level."
+  - "The Employment Allowance (up to £10,500) can offset employer NI on bonuses, but not for single-director companies where the director is the only employee above the secondary threshold."
+  - "Directors inside IR35 cannot choose between bonus and dividend, as the company must pay a deemed salary and dividends are unavailable inside IR35."
 ---
 
 <h2>Bonus vs Dividend Director Tax: The Core Question</h2>

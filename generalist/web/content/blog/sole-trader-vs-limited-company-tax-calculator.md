@@ -27,6 +27,13 @@ faqs:
     answer: "At profits under £30,000, the sole trader structure is almost always the better choice. The corporation tax saving is small, and the compliance cost of a limited company eats into it entirely. You would also lose the ability to use the personal allowance efficiently because the company would need to pay you salary up to £12,570, leaving only around £17,430 to extract as dividends. The maths rarely favours incorporation at this level."
   - question: "Can I switch from sole trader to limited company mid-year?"
     answer: "Yes, you can switch at any point, but it is cleaner to align the change with the end of a tax month or quarter. You must notify HMRC that you have ceased self employment and register the new company for corporation tax. You will need to file a final self assessment return for the sole trader period and a corporation tax return for the company. The timing affects your tax liability, so take advice before making the switch."
+keyTakeaways:
+  - "At £63,400 profit in 2025/26, a sole trader takes home £48,083 and a limited company director takes home £48,062, a difference of around £21."
+  - "Above roughly £80,000 profit, the limited company typically outperforms, as sole traders face a 42% combined marginal rate above £50,270 versus corporation tax at 19%."
+  - "A limited company adds £800 to £1,500 per year in accountancy and compliance costs, which must be subtracted from any tax saving before comparing take-home pay."
+  - "Dividend tax rates for 2025/26 are 8.75% at basic rate, 33.75% at higher rate, and 39.35% at additional rate, with a £500 annual dividend allowance."
+  - "Class 2 National Insurance was abolished from 6 April 2024; sole traders now pay Class 4 NI at 6% between £12,570 and £50,270 and 2% above."
+  - "Employment Allowance is unavailable when the sole employee is also the only director, so a single-director company pays 15% employer NIC above the £5,000 threshold from 6 April 2025."
 ---
 
 <p>If you are comparing sole trader vs limited company tax calculator results online, you are probably trying to decide which trading structure leaves you with more money in your pocket. The answer depends on your profit level, how you take money out of the business, and whether you need to reinvest profits year on year.</p>

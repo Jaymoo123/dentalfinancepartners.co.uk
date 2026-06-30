@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, if the property has been your only or main home for the entire period of ownership, the gain is fully exempt. If you lived in it for part of the ownership and rented it out for another part, you get partial relief. The final 9 months of ownership are always exempt regardless of where you live. Lettings relief may also apply if you rented out the property while living in it at the same time, capped at £40,000 per owner."
   - question: "Can I use the annual exempt amount against property gains?"
     answer: "Yes. The annual exempt amount for 2025/26 is £3,000. You deduct it from your total chargeable gains for the tax year, including property gains. If you are married or in a civil partnership, you each have your own £3,000 allowance. You can transfer assets between you without triggering CGT to use both allowances before a sale."
+keyTakeaways:
+  - "UK CGT rates on residential property are 18% for basic rate taxpayers and 24% for higher rate taxpayers, applying to disposals made on or after 30 October 2024."
+  - "The basic rate band threshold for 2025/26 is £50,270; gains within this band are taxed at 18%, with gains above it taxed at 24%."
+  - "The annual exempt amount for 2025/26 is £3,000 and is deducted from total chargeable gains before the CGT rate is applied."
+  - "Sellers must report and pay CGT within 60 calendar days of completion using the HMRC online property return service, not the January self assessment deadline."
+  - "Principal Private Residence relief fully exempts your main home from CGT, and the final 9 months of ownership are always exempt regardless of where you live."
+  - "The furnished holiday let regime was abolished from 6 April 2025, so former FHL properties are now taxed as ordinary buy-to-let property with no access to Business Asset Disposal Relief."
 ---
 
 <p>If you sell a residential property in the UK that is not your main home, you will pay Capital Gains Tax on the profit. The rates for 2025/26 and into 2026 are set. They are 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply to disposals of UK residential property made on or after 30 October 2024. They remain in place for the 2025/26 tax year and, at the time of writing, for 2026/27 unless the government changes them in a future Budget.</p>

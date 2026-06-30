@@ -35,6 +35,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@karola-g
   source: Pexels
   source_url: https://www.pexels.com/photo/a-close-up-shot-of-a-person-using-a-calculator-7680748/
+keyTakeaways:
+  - "At the standard 20% rate, add VAT by multiplying a net price by 1.20, or remove it by dividing a gross price by 1.20."
+  - "VAT registration is compulsory when taxable turnover exceeds £90,000 in any rolling 12-month period, with 30 days to register after breaching the threshold."
+  - "Since April 2022, all VAT-registered businesses must file returns through MTD-compatible software such as Xero, QuickBooks, or FreeAgent; manual paper records are no longer acceptable."
+  - "Since January 2023, VAT late-submission penalties are points-based, with a £200 charge at the threshold, and late payment interest runs at the Bank of England base rate plus 2.5%."
+  - "Under the Flat Rate Scheme, businesses pay a fixed percentage of turnover (typically between 4% and 14.5%), but limited cost traders must apply a flat rate of 16.5%."
+  - "The partial exemption de minimis limit lets you reclaim all input VAT if exempt input tax stays under £625 a month on average and below half of total input tax."
 ---
 <p>If you run a UK business that sells goods or services, you will need to handle VAT at some point. The standard rate is 20%. You either charge it to customers or reclaim it on your purchases. Getting the numbers wrong means overpaying HMRC or undercharging customers. Both hurt your cash flow.</p>
 

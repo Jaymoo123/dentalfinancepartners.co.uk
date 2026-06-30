@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, it can. Bonus payments count as earnings for National Insurance purposes. If your total earnings for the year are above the lower earnings limit (£6,500 for 2025/26), you build up qualifying years for the state pension. Taking a bonus can help you reach the 35 qualifying years needed for the full state pension. Dividends do not count as earnings for state pension purposes."
   - question: "What happens if my company cannot afford the employer NI on a bonus?"
     answer: "If your company cannot afford the employer NI, you cannot take the bonus. The employer NI is due on the same date as the PAYE payment (22nd of the following month for monthly payers, or 22nd of the next quarter for quarterly payers). If cash flow is tight, a dividend might be more manageable because you only pay it after corporation tax is settled, which gives you more time. Alternatively, you could accrue the bonus in the accounts and pay it later, but you must pay it within 9 months of the year-end to get the corporation tax deduction in the right year."
+keyTakeaways:
+  - "For 2025/26, dividend tax rates are 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate), applying to dividends above the £500 annual allowance."
+  - "For a higher rate taxpayer distributing £100,000 at 25% corporation tax, the bonus route gives £67,000 take-home versus £49,856.25 as a dividend, £17,143.75 more."
+  - "For a basic rate taxpayer distributing £50,000 at the 19% small profits rate, the bonus route yields only £500 more take-home pay than the dividend route (£37,500 vs £37,000)."
+  - "Employer NI at 15% applies on bonus amounts above the £5,000 secondary threshold; single-director companies with no other employees typically cannot claim the £10,500 Employment Allowance."
+  - "Company pension contributions are corporation tax deductible, free of employer NI and personal tax, subject to the £60,000 annual allowance for 2025/26."
+  - "A bonus accrued in the company accounts must be paid within 9 months of the year-end to secure the corporation tax deduction in that accounting year."
 ---
 
 <p>If you are a director of a UK limited company, you have two main ways to extract profit: salary (or bonus) and dividends. The standard advice has long been to take a small salary up to the National Insurance threshold and take the rest as dividends. But dividend tax rates have risen significantly. The dividend allowance dropped to £500 from April 2024, and the tax rates themselves are now 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate).</p>

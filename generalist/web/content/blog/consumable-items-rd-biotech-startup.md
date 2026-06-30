@@ -27,6 +27,13 @@ faqs:
     answer: "Antibodies and recombinant proteins used as reagents in R&D experiments qualify as consumable items. This includes primary and secondary antibodies, blocking buffers, and protein standards. If you produce your own antibodies in-house, the materials used in production count, but the labour does not."
   - question: "Can I claim the cost of a commercially purchased cell line as a consumable?"
     answer: "Generally no. A purchased cell line like HEK293T is treated as a capital asset, not a consumable. However, the media, plastics, and reagents used to grow and experiment with that cell line during R&D do qualify as consumable items. Keep the purchase invoice for the cell line separate from your consumable claim."
+keyTakeaways:
+  - "Under RDEC, qualifying consumable expenditure attracts a 20% tax credit; under ERIS, loss-making SMEs with R&D intensity of 30% or more of total spend can receive up to 27%."
+  - "The merged R&D tax relief scheme, covering both RDEC and ERIS, applies to accounting periods starting on or after 1 April 2024."
+  - "Consumable or transformable materials must be used directly in R&D to qualify, as set out in Corporation Tax Act 2009, Part 13, with HMRC interpretation in manual CIRD81900."
+  - "A commercially purchased cell line is typically treated as a capital asset rather than a consumable; the media and plastics used to grow it during R&D experiments do qualify."
+  - "Where a consumable is used across R&D and non-R&D activity, only the proportionate R&D share is claimable (for example, 60% R&D use means 60% of the cost qualifies)."
+  - "VAT-registered companies must base their consumable claim on the net cost; including recoverable VAT in the claim figure is incorrect."
 ---
 
 <p>If your biotech startup spends thousands on reagents, antibodies, cell culture media, or plasticware, you need to know which of those costs qualify as consumable items in an R&D tax credit claim. The rules are specific. HMRC does not accept a blanket "all lab supplies" approach.</p>

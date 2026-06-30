@@ -27,6 +27,10 @@ faqs:
     answer: "Within 2 weeks is the standard target. Faster is better, but speed depends on how quickly you provide the underlying data. If your bookkeeping is done weekly, your accountant can produce reports within a few days of month-end. If you send your records a month late, the reports will be late too."
   - question: "Do management accounting services include VAT returns?"
     answer: "Some do, some do not. Many accountants bundle VAT returns with management accounts since the data is the same. Check what is included in the fee before you sign up. If VAT returns are separate, factor in the extra cost."
+keyTakeaways:
+  - "Six body-supported takeaways survive, all ground-truth-consistent (CT bands, £90k VAT threshold, S455 33.75%/35.75% with correct date-banding)."
+  - "No stale figures found; the corrected S455 and corporation tax figures match current Finance Act 2026 ground truth."
+  - "Main fix was word-count trimming (four takeaways exceeded 30 words); no facts were added or altered."
 ---
 
 <p>Most business owners only see their numbers once a year when the annual accounts land. That is a problem if you are making decisions month to month. Pricing, hiring, investment, cash flow timing. You cannot wait nine months to find out whether a decision worked.</p>

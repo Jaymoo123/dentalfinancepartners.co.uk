@@ -27,6 +27,13 @@ faqs:
     answer: "Most farm buildings (barns, grain stores, livestock housing) qualify for Structures and Buildings Allowance at 3% per year on a straight-line basis. That is 50 years to get full relief. Plant and machinery (tractors, combines, irrigation) qualifies for Annual Investment Allowance at 100% up to £1 million per year. A specialist accountant for farmers will ensure you claim the right allowances on the right assets."
   - question: "What happens to inheritance tax when I pass my farm to my children?"
     answer: "Agricultural Property Relief (APR) can reduce the value of your farm by up to 100% for inheritance tax purposes. The land must have been used for agriculture for at least two years (owned) or seven years (tenanted). Diversified activities like holiday lets may not qualify. A specialist accountant for farmers will help you structure the business to preserve the relief. Always take professional advice before making succession plans."
+keyTakeaways:
+  - "Farmers can spread their profits across two or five years using profit averaging, which applies where one year's profits are 75% or less of the comparison figure."
+  - "Agricultural Property Relief can reduce a farm's value for inheritance tax by up to 100%, provided the land has been farmed for two years if owned or seven if tenanted."
+  - "The Agricultural Flat Rate Scheme lets eligible farmers charge 4% VAT on sales to VAT-registered customers without registering for VAT themselves; the standard VAT registration threshold is currently £90,000."
+  - "The Annual Investment Allowance gives 100% tax relief on most plant and machinery, including tractors and combine harvesters, up to £1 million per year."
+  - "Most farm buildings, including barns and grain stores, qualify for the Structures and Buildings Allowance at 3% per year on a straight-line basis, taking 50 years to claim full relief."
+  - "The furnished holiday lettings regime was abolished from 6 April 2025; holiday lets are now taxed as ordinary property income with mortgage interest restricted to the 20% basic-rate reducer."
 ---
 
 <h2>Farming is Not a Normal Business</h2>

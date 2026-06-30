@@ -27,6 +27,13 @@ faqs:
     answer: "HMRC now uses a points-based penalty regime for VAT returns (from 1 January 2023): each missed filing deadline adds one penalty point, and a £200 financial penalty is charged when your points reach the relevant threshold (2 points for quarterly filers, 4 for monthly filers). Each further missed deadline after that adds another £200. Late payment interest also applies. Payroll late submissions can trigger automatic penalties from HMRC. A good accountant will never let you miss a deadline because they manage your compliance calendar and remind you well in advance."
   - question: "Can I switch accountants mid-year without losing money?"
     answer: "Yes. You can switch at any time. Your new accountant will request your accounting records from the old one. Most accountants will refund any unused portion of your monthly fee if you leave mid-month. Just make sure the new accountant can take over your VAT and payroll submissions without a gap."
+keyTakeaways:
+  - "A small business accountant's monthly work covers five core areas: bookkeeping, VAT returns, payroll, management reporting, and ongoing tax planning."
+  - "Making Tax Digital for VAT is mandatory for all VAT-registered businesses, and submissions must pass through the correct HMRC API gateway to avoid fines."
+  - "For limited company directors, the usual optimal salary is the personal allowance threshold of £12,570 per year, though monthly payroll must still be processed and submitted."
+  - "Corporation tax falls due 9 months and 1 day after your year end, with a corresponding CT600 filing deadline your accountant should track."
+  - "If your turnover approaches the £90,000 VAT threshold, your accountant should flag this before you cross it, not after."
+  - "When limited company profits near the £50,000 or £250,000 corporation tax thresholds, your accountant should discuss marginal relief and whether to accelerate or defer expenditure."
 ---
 
 <h2>The Reality of Monthly Accountancy Work</h2>

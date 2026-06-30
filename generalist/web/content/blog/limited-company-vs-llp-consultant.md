@@ -32,6 +32,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "At £80,000 profit in 2025/26, an LLP produces a total tax bill of £22,289 versus £23,071 for a limited company, a saving of approximately £782 per year."
+  - "A limited company pays corporation tax at 19% on profits up to £50,000, rising to 25% (with marginal relief) above £250,000, while an LLP pays no corporation tax at all."
+  - "LLP members are taxed on their full profit share each year regardless of whether they draw the cash, which can create cash flow pressure."
+  - "The off-payroll working rules (IR35) apply to limited companies as intermediaries but not LLPs, making an LLP a safer option for consultants engaged through a single client for extended periods."
+  - "Business Asset Disposal Relief gives company shareholders a 14% CGT rate on the first £1 million of gains in 2025/26, rising to 18% from April 2026."
+  - "Employer pension contributions made through a limited company are deductible against corporation tax and carry no NI charge, unlike contributions from an LLP member's personal profits."
 ---
 <p>If you are a consultant working through your own business, the choice between a limited company and a limited liability partnership (LLP) is one of the first big structural decisions you will make. Get it right and you save tax, reduce admin, and protect your personal assets. Get it wrong and you can end up overpaying HMRC or carrying unnecessary compliance risk.</p>
 

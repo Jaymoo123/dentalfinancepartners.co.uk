@@ -27,6 +27,13 @@ faqs:
     answer: "For most contractors, the most efficient salary is £12,570 per year. This matches the personal allowance and the primary NI threshold. You then take dividends up to the basic rate band. But this depends on your total income and whether you are inside or outside IR35. A specialist accountant will model your exact numbers."
   - question: "Can a high street accountant handle my IR35 contract review?"
     answer: "Most high street accountants do not offer IR35 contract reviews. They lack the specialist knowledge to assess substitution clauses, mutuality of obligation, and control. If you need a contract review, you should use a specialist contractor accountant or an IR35 advisory service. Skipping this step leaves you exposed to HMRC enquiries."
+keyTakeaways:
+  - "Specialist contractor accountants typically charge £100 to £150 per month for a complete service covering bookkeeping, VAT, payroll, year-end accounts, personal tax, and IR35 contract reviews."
+  - "The 5% flat-rate expenses deduction under Chapter 8 IR35 applies only to small-client engagements; it was withdrawn for medium and large clients from 6 April 2021."
+  - "For most IT contractors, the tax-efficient approach is a £12,570 salary matching the personal allowance and primary NI threshold, with dividends up to £50,270 total income."
+  - "A £500 dividend allowance applies before higher rate tax becomes due on dividends, making the salary and dividend split a central part of contractor tax planning."
+  - "High street accountants typically charge ad hoc: often £300 to £500 for year-end accounts and £200 for a personal tax return, which can exceed a specialist's annual fee."
+  - "IT contractors who work from home can claim either £6 per week using the simplified method, or an actual-cost proportion based on floor space and usage."
 ---
 
 <p>If you are an IT contractor setting up your own limited company, the first big decision after incorporation is who handles your accounts. You have two broad options: a specialist <strong>contractor accountant UK</strong> firm, or a high street general practice accountant.</p>

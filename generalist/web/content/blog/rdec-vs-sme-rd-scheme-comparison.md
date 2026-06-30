@@ -27,6 +27,13 @@ faqs:
     answer: "If you ignore the notification and file under the SME scheme, HMRC will reject your claim and may open an enquiry into your corporation tax return. This can lead to penalties, interest, and a full review of your R&D claim. Always respond to HMRC notifications promptly and seek professional advice."
   - question: "Does the merged R&D scheme from April 2024 apply to all companies?"
     answer: "The merged scheme applies to most companies for accounting periods starting on or after 1 April 2024. It replaces the old SME enhanced deduction with a 20% taxable credit similar to RDEC. However, loss-making R&D intensive companies (with at least 30% R&D spend) can still use the enhanced R&D Intensive Scheme (ERIS) for a 14.5% payable credit. Notified companies must still use RDEC."
+keyTakeaways:
+  - "From 1 April 2024, a merged R&D scheme replaced the old SME enhanced deduction for most companies, applying a 20% taxable credit similar to RDEC."
+  - "The SME scheme gave a 186% enhanced deduction for periods starting on or after 1 April 2023 but before 1 April 2024; it no longer applies to most companies."
+  - "Under RDEC, the 20% taxable credit is worth roughly 15% net after corporation tax at the main 25% rate, or 16.2% net at the small profits rate of 19%."
+  - "Loss-making companies where R&D spend represents at least 30% of total expenditure can claim the Enhanced R&D Intensive Scheme (ERIS), which pays a 14.5% payable credit."
+  - "A notified company cannot choose the SME scheme for that period; it has 30 days to write to HMRC to appeal if it believes the notification is incorrect."
+  - "Notification can be triggered if a corporate investor holds more than 25% of shares, or if the company has received state aid such as a grant from Innovate UK."
 ---
 
 <p>If your company carries out research and development in the UK, the tax relief you can claim depends on which scheme you fall under. The two main routes are the Research and Development Expenditure Credit (RDEC) and the SME R&D scheme. But the rules changed significantly from April 2024, and the distinction between the two is not always obvious.</p>

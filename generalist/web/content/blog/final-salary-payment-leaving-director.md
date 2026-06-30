@@ -27,6 +27,28 @@ faqs:
     answer: "No. Accrued holiday pay must be included in the final salary payment and processed through payroll in the same RTI submission. If you pay it separately, it is still earnings and must be reported on a separate FPS. This creates unnecessary complexity and can trigger HMRC queries. Include it in the final payment."
   - question: "What if the director is also a company employee (not just a director)?"
     answer: "The process is the same. The director is an employee of the company for payroll purposes. The leaving date, final salary calculation, DLA reconciliation, and P45 issuance all follow the same rules. The only difference is that if the director holds multiple roles (e.g., director and employee), you must ensure the P45 reflects the correct employment. In most small companies, the director is the only employee, so this is straightforward."
+keyTakeaways:
+  - "Accrued holiday pay must be included in the final salary payment; directors are entitled to 5.6 weeks statutory holiday per year, and it is taxed as earnings through payroll."
+  - "A director's loan account left overdrawn after departure attracts a Section 455 charge of 35.75% (loans from 6 April 2026; 33.75% for 2025/26), reclaimable once the loan is repaid."
+  - "The loan must be repaid within 9 months and one day of the company's year-end to avoid the Section 455 charge."
+  - "The Full Payment Submission must reach HMRC on or before the payment date; late submissions can attract penalties starting at £100 per month."
+  - "A TM01 form terminating the director's appointment must be filed with Companies House within 14 days of the leaving date."
+  - "Benefits in kind must be reported on a P11D after the tax year, with the P11D(b) for Class 1A NIC due by 6 July following the tax year end."
+howToSteps:
+  - name: "Confirm the leaving date in writing"
+    text: "Establish the last day of employment in a board minute or resignation letter; if holiday is taken in lieu, the leaving date is the last day of the holiday period, not the last working day."
+  - name: "Calculate the final salary payment"
+    text: "Include base salary to the leaving date, accrued holiday pay (statutory entitlement is 5.6 weeks per year), earned bonuses and commissions, and any notice pay; exclude dividends and share-based payments."
+  - name: "Reconcile the director's loan account"
+    text: "Determine whether the DLA is overdrawn (director owes company) or in credit (company owes director) and agree a written settlement before running the final payroll; settle the DLA balance separately from the salary payment."
+  - name: "Process the final payroll run"
+    text: "Enter the leaving date in your payroll software, apply PAYE tax and NI in the normal way, and submit the Full Payment Submission to HMRC on or before the payment date to meet the RTI requirement."
+  - name: "Generate and issue the P45"
+    text: "Your payroll software produces the P45 automatically when you enter the leaving date; issue it to the director on or before the payment date for use with their next employer or self assessment return."
+  - name: "File the TM01 and update statutory registers"
+    text: "File a TM01 form (termination of appointment of director) with Companies House within 14 days, and update the register of directors; document the shareholder position if the director also holds shares."
+  - name: "Flag benefits in kind for P11D reporting"
+    text: "If the director received any benefits in kind during the tax year, report them on a P11D after the tax year end and submit the P11D(b) for Class 1A NIC by 6 July following the tax year end."
 ---
 
 <h2>Why a Director's Final Pay Differs from a Standard Employee Termination</h2>

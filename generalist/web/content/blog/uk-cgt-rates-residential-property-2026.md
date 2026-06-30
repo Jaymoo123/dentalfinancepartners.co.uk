@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "For 2025/26 and 2026/27, CGT rates on UK residential property are 18% for basic rate taxpayers (income under £50,270) and 24% for higher rate taxpayers."
+  - "The annual CGT exempt amount is £3,000 for both 2025/26 and 2026/27, with the government confirming no further reduction."
+  - "Sellers must report the gain and pay the tax within 60 days of completion using HMRC's online 60-day CGT property return, or face interest and penalties starting at £100."
+  - "The higher residential property CGT rate was cut from 28% to 24% in the Autumn 2024 Budget, applying to disposals on or after 30 October 2024."
+  - "Business Asset Disposal Relief rises to 18% from 6 April 2026 (up from 14% from 6 April 2025) but does not typically apply to standard buy-to-let residential property."
+  - "Non-UK residents pay CGT on UK residential property at the same 18% and 24% rates, subject to the same 60-day reporting deadline since 27 October 2021."
 ---
 <h2>What Are the Current UK CGT Rates for Residential Property?</h2>
 

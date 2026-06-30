@@ -34,6 +34,26 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "The Companies Act 2006 imposes no residency requirement on directors, so a non-UK resident can be the sole director and sole shareholder of a UK limited company."
+  - "Online registration with Companies House costs £50 and typically results in a certificate of incorporation within 24 hours."
+  - "Every UK limited company must have a physical UK registered office address (a PO Box is not acceptable); service providers typically charge £50 to £200 per year."
+  - "A UK incorporated company pays corporation tax on its worldwide profits regardless of where its directors live."
+  - "VAT registration is compulsory if the company's taxable turnover exceeds £90,000 in any rolling 12-month period."
+  - "Annual accounts must be filed with Companies House within 9 months of the financial year end, with late filing penalties starting at £150."
+howToSteps:
+  - name: "Choose your company name"
+    text: "Check the name is unique on the Companies House register and avoid restricted words such as 'bank', 'royal', or 'charity' without permission."
+  - name: "Prepare your documents"
+    text: "Produce a Memorandum of Association and Articles of Association; most small companies use the standard model articles, which formation agents can generate automatically."
+  - name: "Provide director and shareholder details"
+    text: "Supply the full name, date of birth, nationality, and service address for each director, and the name and address for each shareholder."
+  - name: "Submit the application and pay the fee"
+    text: "Apply online through the Companies House portal or a formation agent, paying the £50 registration fee; a certificate of incorporation is usually issued within 24 hours."
+  - name: "Register for Corporation Tax"
+    text: "HMRC will send your Unique Taxpayer Reference to the registered office within a few weeks; you must register for Corporation Tax within 3 months of the start of your company's first accounting period."
+  - name: "File annual accounts and confirmation statement"
+    text: "File annual accounts within 9 months of the financial year end and submit a confirmation statement every 12 months to keep the Companies House record current."
 ---
 <p>If you live outside the UK but want to run a British limited company, you can do it. There is no legal requirement for a director to be a UK resident. You can <strong>register a limited company UK</strong> from anywhere in the world.</p>
 

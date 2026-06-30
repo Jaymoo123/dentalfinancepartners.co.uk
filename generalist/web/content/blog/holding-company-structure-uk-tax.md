@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, provided the holding company is a trading company or the holding company of a trading group. HMRC applies a strict test. If the holding company holds significant non-trading assets (large cash reserves, investment property), it may fail the test and BADR will not be available. Keep non-trading activities within limits if you plan to use BADR on exit."
   - question: "What is the Substantial Shareholding Exemption and how does it apply to holding companies?"
     answer: "The Substantial Shareholding Exemption (SSE) means that when a holding company sells shares in a trading subsidiary, any capital gain is exempt from corporation tax. The holding company must have held at least 10% of the subsidiary's shares for a continuous 12-month period within the six years before disposal. SSE is a key reason business owners use a holding company structure when they plan to sell individual trading businesses over time."
+keyTakeaways:
+  - "Dividends from a UK subsidiary to its UK holding company are generally exempt from corporation tax under the exempt distribution regime, so profits accumulate centrally without personal tax."
+  - "The £50,000 small-profits threshold and £250,000 upper limit are divided by the number of associated companies, so a group of three compresses them to roughly £16,667 and £83,333."
+  - "Group relief lets a loss-making 75% subsidiary surrender losses to a profit-making group company; offsetting a £30,000 loss against £100,000 profit saves about £5,700 at the 19% rate."
+  - "The Substantial Shareholding Exemption removes corporation tax on a holding company's gain from selling subsidiary shares, provided it held 10% continuously for 12 months within the prior six years."
+  - "BADR reduces CGT to 14% on qualifying disposals in 2025/26, rising to 18% from April 2026 rather than the standard 24% rate, with a £1 million lifetime limit."
+  - "Transferring trading company shares into a new holding company triggers a capital gains disposal, but share-for-share treatment under TCGA 1992 s.135 defers the gain until those holding shares are sold."
 ---
 
 <p>If you own more than one limited company, or you are planning to expand your business by acquiring or starting additional trading companies, a holding company structure is worth serious consideration. It is not just about organisation charts. It changes how tax applies to your group.</p>

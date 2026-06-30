@@ -27,6 +27,24 @@ faqs:
     answer: "No. The same staff costs cannot be claimed by both you and your subcontractor. HMRC cross-checks claims and will flag duplicates. If your subcontractor also claims R&D relief, you must ensure the costs are not overlapping. This is a common compliance issue."
   - question: "How long does an HMRC R&D enquiry typically take?"
     answer: "A straightforward enquiry with good evidence usually takes 3 to 6 months. Complex cases involving multiple subcontractors or connected parties can take 12 months or longer. The timeline depends on how quickly you respond and whether HMRC requests further information."
+keyTakeaways:
+  - "Subcontracted developer costs are one of the most common areas of error in R&D claims, putting companies that include them in a higher risk category for HMRC enquiry."
+  - "An HMRC R&D enquiry letter arrives as a formal notice under Schedule 18 FA 1998, and companies typically have 30 days to respond."
+  - "For connected subcontractors, the qualifying cost is the lower of the amount paid and the connected company's own relevant R&D expenditure; no percentage cap applies to connected parties."
+  - "For unconnected (third-party) subcontractors under the old SME scheme, 65% of the amount paid was eligible; applying this cap to connected parties is a common mistake HMRC identifies."
+  - "Written contracts confirming IP ownership are required for every subcontractor; HMRC disallowed £42,000 of claimed relief for a Manchester company whose third subcontractor had only a verbal agreement."
+  - "If HMRC rejects subcontracted developer costs, your corporation tax liability increases, interest accrues from the original due date, and penalties may apply for careless or deliberate inaccuracies."
+howToSteps:
+  - name: "Read the enquiry letter carefully"
+    text: "HMRC will list the specific documents and information they want; respond to exactly what they ask for and do not volunteer extra information unless it strengthens your position."
+  - name: "Assign a single lead contact"
+    text: "One person in your company should coordinate the entire response; this is usually the finance director or the accountant who prepared the original claim."
+  - name: "Gather and organise evidence by subcontractor and by project"
+    text: "Use a clear index so HMRC can cross-reference your response against their questions; include contracts, timesheets, invoices, and project records for each subcontractor."
+  - name: "Write a professional covering letter"
+    text: "Summarise your response, confirm that all documents are provided, state that you believe the claim is correct, and keep the tone professional and cooperative throughout."
+  - name: "Have your accountant review everything before sending"
+    text: "An ICAEW qualified accountant can spot gaps or weak points in your response that HMRC will otherwise exploit; if a third-party agent prepared the original claim, involve them too."
 ---
 
 <p>If you claimed R&D tax credits and included costs for subcontracted developers, you are in a higher risk category for an HMRC enquiry. HMRC sees subcontractor costs as one of the most common areas of error and abuse in R&D claims. That does not mean your claim is wrong. It means your evidence needs to be solid.</p>

@@ -27,6 +27,28 @@ faqs:
     answer: "Your side income is taxed at your marginal rate. If your employment income puts you in the 20% basic rate band, side profits are taxed at 20%. If you are in the 40% higher rate band, side profits above the threshold are taxed at 40%. You also pay Class 4 National Insurance at 6% on self-employed profits between £12,570 and £50,270 (then 2% above that). The £12,570 Lower Profits Limit applies to your self-employed profits regardless of your employment income."
   - question: "Can I use the trading allowance instead of deducting actual expenses?"
     answer: "Yes, but you cannot use both for the same trade. Compare the two methods each year. If your actual expenses are lower than £1,000, the trading allowance gives a better result. If your actual expenses are higher, deduct them instead. You can switch between methods each tax year."
+keyTakeaways:
+  - "You must register as self-employed with HMRC by 5 October after the tax year in which your gross self-employed income first exceeds the £1,000 trading allowance."
+  - "The trading allowance is £1,000 per tax year; earnings at or below this threshold require no registration, no self assessment return, and no tax."
+  - "Class 4 National Insurance is charged at 6% on self-employed profits between £12,570 and £50,270, and at 2% above £50,270, independently of your employment income."
+  - "For 2025/26, Class 2 National Insurance is effectively abolished; self-employed profits above £6,725 are treated as paid, protecting your state pension record at no cost."
+  - "Your self-employed profit is added to your employment income and taxed at your marginal rate through self assessment: 20% basic rate or 40% higher rate."
+  - "HMRC does not notify your employer that you have registered as self-employed; your employer sees only your PAYE tax code, which HMRC may adjust to collect tax on side income."
+howToSteps:
+  - name: "Check the £1,000 trigger"
+    text: "If your gross self-employed income is £1,000 or less in the tax year, you do not need to register with HMRC or file a self assessment return for that income."
+  - name: "Register online by 5 October"
+    text: "Go to GOV.UK, search for 'register for self assessment', select the self-employed option, and complete the form before 5 October after the tax year in which your income passed £1,000."
+  - name: "Enter your details and business start date"
+    text: "Provide your National Insurance number, contact information, a description of your self-employed activity, and the date you started trading, not the date you registered."
+  - name: "Confirm your VAT position"
+    text: "State whether your expected turnover is above or below the VAT threshold of £90,000 in a rolling 12-month period."
+  - name: "Receive your UTR and add any existing record"
+    text: "HMRC will issue a Unique Taxpayer Reference; if you already have one from previous self-employment, add the new self-employment via 'add a new source of income' in your HMRC online account."
+  - name: "Compare trading allowance against actual expenses each year"
+    text: "Calculate taxable profit using both the £1,000 trading allowance and your actual expenses, then use whichever method gives the lower tax bill; you cannot use both for the same trade."
+  - name: "Keep records for at least 5 years and meet filing deadlines"
+    text: "Retain all records of self-employed income and expenses for at least 5 years after the 31 January filing deadline, and pay any payments on account by 31 January and 31 July each year."
 ---
 
 <p>If you have a full time job and you are earning money on the side through freelance work, a small business, or a side hustle, you need to know exactly when HMRC expects you to register as self employed. The answer is not "as soon as you earn a penny". There is a specific trigger, and getting it wrong means either paying penalties or missing out on tax relief you are entitled to.</p>

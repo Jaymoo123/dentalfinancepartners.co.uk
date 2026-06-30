@@ -27,6 +27,13 @@ faqs:
     answer: "No. Rent paid for a director's home is not deductible as a trade expense because the property is not used for the company's trade. HMRC will treat the payment as a benefit in kind or a distribution. The rent charge must relate to a property genuinely used by the paying company for its business activities."
   - question: "What happens if HMRC challenges my rent charge?"
     answer: "HMRC can issue a transfer pricing adjustment, disallowing the excess rent and adding interest from the date the tax should have been paid. If they conclude the pricing was deliberately artificial, penalties of up to 100% of the tax underpaid can apply. Having proper documentation and a defendable market rent significantly reduces this risk."
+keyTakeaways:
+  - "Rent between connected companies must be at arm's length under Part 4 of TIOPA 2010, and these transfer pricing rules apply automatically whether or not you are aware of them."
+  - "Two companies are connected if one controls the other via over 50% of shares or voting rights, or both are under common control, including family shareholdings acting together."
+  - "Rent set above market value is not deductible; HMRC treats the excess as a distribution or capital contribution rather than an allowable business expense."
+  - "The property company can claim Structures and Buildings Allowance at 3% per year on construction cost for commercial buildings built after 29 October 2018, reducing its taxable rental income."
+  - "Formal transfer pricing documentation is mandatory for groups with more than 250 employees, turnover above EUR 50 million, or a balance sheet above EUR 43 million."
+  - "HMRC is unlikely to open a full enquiry where group turnover is below GBP 10 million and the rent charge is under GBP 30,000 a year, absent other red flags."
 ---
 
 <p>If you own a limited company and also control another business (perhaps a property company or a management company), you might be wondering whether paying a rent charge between them could reduce your overall corporation tax bill. The logic is straightforward: one company pays rent to another, the paying company deducts the rent as an expense, and the receiving company pays corporation tax on the income instead. If the receiving company is taxed at a lower effective rate, or if it has losses to shelter the income, the group as a whole pays less tax.</p>

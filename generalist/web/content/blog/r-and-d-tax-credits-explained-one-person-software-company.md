@@ -27,6 +27,13 @@ faqs:
     answer: "There is no legal minimum. In practice, most accountants recommend a claim of at least £10,000 of qualifying R&D costs. Below that, the benefit (typically 15-20% of the spend) is small enough that the cost of preparing the claim and the risk of an enquiry may not be justified. For a solo developer, 100 hours of R&D work at a £100/hour salary rate gives £10,000 of costs and a benefit of around £1,500 to £2,000."
   - question: "Can I include my director salary in the R&D claim?"
     answer: "Yes, but only for the time you spent on qualifying R&D. You must apportion your salary between R&D and non-R&D work. If you spend 50% of your time on R&D, you include 50% of your gross salary (before tax and NI) in the claim. You cannot include dividends, and you cannot include salary for time spent on admin, sales, or client work."
+keyTakeaways:
+  - "R&D tax credits are only available to limited companies; sole traders and partnerships cannot claim the cash credit or corporation tax reduction under the scheme."
+  - "For accounting periods starting on or after 1 April 2024, the merged scheme applies, providing a 20% expenditure credit on all qualifying R&D costs."
+  - "A profit-making solo company with £30,000 of qualifying R&D receives a £6,000 gross credit, giving a net benefit of about £4,500 at the 25% corporation tax rate."
+  - "Loss-making solo developers can surrender R&D losses for a cash payment; £40,000 of qualifying R&D spend can generate approximately £6,000 in cash under the merged scheme."
+  - "Loss-making R&D-intensive SMEs whose R&D spend exceeds 30% of total costs may qualify for the Enhanced R&D Intensive Scheme (ERIS), offering a higher payable credit rate than merged RDEC."
+  - "Claims must be submitted within two years of the end of the accounting period, via the CT600 corporation tax return and the R&D Additional Information Form (AIF)."
 ---
 
 <h2>Can a Solo Software Developer Claim R&D Tax Credits?</h2>

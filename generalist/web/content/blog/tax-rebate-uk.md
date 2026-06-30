@@ -30,6 +30,26 @@ imageCredit:
   photographer_url: https://www.pexels.com/@tara-winstead
   source: Pexels
   source_url: https://www.pexels.com/photo/close-up-shot-of-a-yellow-paper-on-a-white-surface-7111590/
+keyTakeaways:
+  - "You can claim a tax rebate for the current and four previous tax years; the deadline to claim a 2021/22 rebate is 5 April 2026, after which it is lost."
+  - "Business mileage is deductible at 55p per mile for the first 10,000 miles from 2026/27 (45p in 2025/26 and earlier years), then 25p per mile."
+  - "Marriage Allowance lets one partner transfer up to £1,260 of unused personal allowance to a higher-earning spouse, saving up to £252 per year; claims can be backdated four tax years."
+  - "Under CIS, contractors deduct 20% from registered subcontractors' labour payments (30% if unregistered); if your actual tax bill is lower, you are owed a rebate via self assessment."
+  - "Online self assessment refunds typically arrive within 14 days; paper returns take 8 to 12 weeks, and HMRC enquiries (rare for claims under £5,000) can take 6 to 12 months."
+  - "Some third-party rebate companies charge 30% to 50% of your refund as a fee; a regulated accountant or tax adviser charges a fixed fee or hourly rate instead."
+howToSteps:
+  - name: "Check your tax code"
+    text: "Log into your personal tax account on gov.uk, check your tax code for the current year, and use the online tool to correct it if it looks wrong; HMRC will recalculate and issue a refund if one is due."
+  - name: "Identify missed expenses and pension relief"
+    text: "Review your self employment records for unclaimed deductions such as home office costs, business mileage, professional subscriptions, and equipment; also check whether personal pension contributions entitle you to higher or additional rate relief through self assessment."
+  - name: "File a self assessment return"
+    text: "If you are self employed, a company director, or have untaxed income above £1,000, you must file a self assessment return to claim allowable expenses, pension relief, and any CIS deduction overpayment; the refund is calculated automatically."
+  - name: "Claim for previous tax years"
+    text: "You can go back four tax years; the 2021/22 window closes on 5 April 2026 and the 2020/21 window has already closed permanently, so file any outstanding returns before the deadline to avoid losing those refunds."
+  - name: "Use the correct forms"
+    text: "Use SA100 and SA103 for sole traders, SA800 for partnership income, form P50 if you have stopped work or P53 if you are still employed but overpaid, and form R40 for savings and investment income rebates."
+  - name: "Keep supporting records"
+    text: "Retain receipts, invoices, bank statements, and mileage logs for at least 22 months after the tax year end, or six years if you are self employed, so you can evidence expenses if HMRC opens an enquiry."
 ---
 <h2>What Is a Tax Rebate and Who Gets One?</h2>
 

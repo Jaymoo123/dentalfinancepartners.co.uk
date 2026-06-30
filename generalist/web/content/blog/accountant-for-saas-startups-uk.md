@@ -27,6 +27,13 @@ faqs:
     answer: "Xero is the most common choice for SaaS startups because it integrates well with Stripe, Chargebee, GoCardless, and Dext. FreeAgent is a good alternative if you prefer its simpler interface. QuickBooks is also used but less common for subscription businesses. Avoid Sage 50 for SaaS, it is designed for traditional product businesses."
   - question: "How do I structure share options for my SaaS team?"
     answer: "Use an Enterprise Management Incentive (EMI) scheme. It is the most tax-efficient way to give equity to employees. Options are free of income tax and NIC on grant, and qualify for Business Asset Disposal Relief (BADR) on sale if conditions are met. You must register the scheme with HMRC within 92 days of granting options."
+keyTakeaways:
+  - "UK SaaS startups can claim between £20,000 and £200,000 a year in R&D tax credits, with eligible costs including staff salaries, employer NIC, development cloud hosting, and subcontractors."
+  - "From 1 April 2024, R&D credits moved to a single RDEC-like scheme; loss-making firms spending 30% or more of total costs on R&D can claim the higher-paying ERIS."
+  - "The UK VAT registration threshold is £90,000 over a rolling 12 months; SaaS sales to EU consumers need OSS or per-state registration, while EU B2B sales use the reverse charge."
+  - "EMI share options are free of income tax and NIC on grant, qualify for Business Asset Disposal Relief on sale, and must be registered with HMRC within 92 days."
+  - "Founder-directors typically take a salary of £12,570 per year; from 6 April 2026, higher-rate dividend tax is 35.75% and additional-rate dividend tax is 39.35%."
+  - "Shareholders holding shares for at least two years in a trading company can claim BADR on the first £1 million of gains: 14% before 6 April 2026, 18% after."
 ---
 
 <h2>Why SaaS Accounting Is Different</h2>

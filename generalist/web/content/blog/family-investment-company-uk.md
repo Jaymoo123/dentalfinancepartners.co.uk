@@ -25,6 +25,13 @@ faqs:
     answer: "Yes. A FIC can hold shares in a trading company. But the associated companies rules mean the two companies are treated as one group for corporation tax profit thresholds. That can push both companies into the 25% rate sooner. The interaction needs careful planning."
   - question: "How does a Family Investment Company compare to a trust for IHT planning?"
     answer: "A F"
+keyTakeaways:
+  - "A FIC pays corporation tax at 19% to 25% on investment profits, while trusts pay 45% on income above £500 and face periodic 10-year anniversary charges."
+  - "From 6 April 2026, dividend rates from a FIC are 10.75% for basic rate, 35.75% for higher rate, and 39.35% for additional rate taxpayers, with a £500 annual dividend allowance."
+  - "Gains inside a FIC face 19% to 25% corporation tax, then dividend tax on extraction, often exceeding the 24% individual CGT rate for higher-rate taxpayers selling growth assets."
+  - "Gifts of FIC shares are potentially exempt transfers; if the parents survive seven years, those shares fall out of their estate for inheritance tax purposes entirely."
+  - "Gift holdover relief under TCGA 1992 s.165 is generally unavailable for FIC shares, so gifting shares normally triggers an immediate CGT charge at market value."
+  - "Annual compliance costs for a straightforward FIC typically run from £1,500 to £3,000, plus one-off setup costs of £1,000 to £2,500, making the structure rarely cost-effective for portfolios below £250,000."
 ---
 
 <p>If you are a business owner or high-earning professional with accumulated wealth, you have probably asked yourself how to pass assets to your children without handing a large chunk to HMRC. One structure that comes up regularly in those conversations is the Family Investment Company, or FIC.</p>

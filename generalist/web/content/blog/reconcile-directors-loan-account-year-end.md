@@ -27,6 +27,26 @@ faqs:
     answer: "If you cannot repay the loan, the company must pay S455 tax on the overdrawn balance (33.75% for loans made before 6 Apr 2026; 35.75% for loans made on or after 6 Apr 2026). You also face a benefit in kind charge if the loan exceeds £10,000 and is interest-free. The company reports the loan on the CT600 and in the annual accounts. If the loan is written off, it is treated as a dividend and taxed in your hands at your marginal dividend rate."
   - question: "How do I document a dividend to clear my director's loan account?"
     answer: "You need a dividend voucher and board minutes. The voucher should state the date, the shareholder's name, the amount of the dividend, and the class of shares. The minutes should record the board's decision to declare the dividend. The company must have sufficient distributable profits at the time of the dividend. Prepare these documents before the year end to ensure the dividend is valid for that accounting period."
+keyTakeaways:
+  - "An overdrawn director's loan account at year end triggers S455 tax at 33.75% for loans made before 6 Apr 2026, and 35.75% from 6 Apr 2026."
+  - "S455 tax is charged on the company (not the director personally) and is payable 9 months and 1 day after the company's year end."
+  - "A loan over £10,000 that is interest-free creates a benefit in kind on a P11D, with Class 1A NIC at 15% on interest calculated at HMRC's official rate."
+  - "Clear an overdrawn DLA before the year end date by repaying the loan in cash, or declaring a dividend with a voucher and minutes if distributable profits allow."
+  - "Once S455 tax is paid and the loan later repaid, the refund is not available until 9 months and 1 day after the period end of repayment."
+  - "If a director's loan is written off, S455 tax is not reclaimable and the written-off amount is treated as a dividend, taxed at the director's marginal dividend rate."
+howToSteps:
+  - name: "Pull all transactions between you and the company"
+    text: "Export all transactions from the company bank account that involve you personally for the full financial year, using the director's loan account report in your accounting software."
+  - name: "Categorise every transaction"
+    text: "Assign each transaction to the correct category: salary, dividends, expense reimbursements, personal drawings, or loans to the company. Flag anything uncategorised as likely personal drawings."
+  - name: "Calculate the net balance"
+    text: "Subtract total debits (money taken out or personal expenses paid by the company) from total credits (money put in or expenses owed to you). A negative result means the DLA is overdrawn and subject to S455."
+  - name: "Check for dividend documentation"
+    text: "Confirm every dividend has a voucher (stating date, amount, and shareholder) and board minutes. Without documentation, HMRC can treat the payment as a director's loan rather than a dividend."
+  - name: "Clear the overdrawn balance before the year end date"
+    text: "Either transfer cash from your personal account to the company, or declare a dividend to cover the overdrawn amount (with voucher and minutes in place) if the company has sufficient distributable profits."
+  - name: "Report and pay S455 if the balance cannot be cleared"
+    text: "If the overdrawn balance remains at year end, report it on the CT600 and pay S455 tax within 9 months and 1 day of the year end. Reclaim the tax on the CT600 for the year in which the loan is eventually repaid."
 ---
 
 <p>If you take money from your limited company that isn't a salary, dividend, or legitimate expense repayment, that amount sits in your director's loan account (DLA). If that account is overdrawn at your company's year end, HMRC can charge S455 tax under Section 455 of the Corporation Tax Act 2010 (33.75% for loans made before 6 Apr 2026; 35.75% for loans from 6 Apr 2026). That is a charge on the company, not on you personally. And it is repayable only when the loan is cleared.</p>

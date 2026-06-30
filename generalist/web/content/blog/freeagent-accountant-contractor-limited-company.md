@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. FreeAgent is a standalone software platform. Any accountant can use it. But not all accountants are experienced with FreeAgent. Look for a firm that is a FreeAgent partner, has contractor clients, and gives you full access to your account. Ask how many contractor limited companies they work with. A good answer is 50 or more."
   - question: "Is FreeAgent better than Xero for contractors?"
     answer: "For most contractors, yes. FreeAgent was built specifically for contractor limited companies. It has better dividend tracking, IR35 tools, and MTD integration for the contractor use case. Xero is more powerful for businesses with multiple users, inventory, or international transactions. For a one-director contractor company with straightforward income and expenses, FreeAgent is usually the best fit."
+keyTakeaways:
+  - "Typical FreeAgent accountant fees run from £100 to £200 per month; the FreeAgent subscription adds £12 to £19, giving a combined total of £112 to £219 per month."
+  - "MTD for ITSA is mandatory from April 2026 for qualifying income over £50,000, falling to £30,000 from April 2027 and £20,000 from April 2028."
+  - "The dividend allowance is £500 for 2025/26; dividend tax rates rise to 10.75% (basic), 35.75% (higher), and 39.35% (additional) from 2026/27."
+  - "Director's loans unpaid 9 months and 1 day after year-end attract S455 tax at 33.75% for 2025/26 loans or 35.75% for loans made on or after 6 April 2026."
+  - "Year-end account filing penalties start at £150 at one month late and reach £1,500 at six or more months late, with interest charged on any unpaid tax."
+  - "Corporation tax is charged at 19% for profits up to £50,000 (small profits rate) and 25% above that threshold, with marginal relief available in the band between."
 ---
 
 <h2>What Does a FreeAgent Accountant Actually Do?</h2>

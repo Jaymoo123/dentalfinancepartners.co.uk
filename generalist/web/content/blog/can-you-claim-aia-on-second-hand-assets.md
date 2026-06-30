@@ -36,6 +36,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "The AIA allows UK businesses to deduct the full cost of qualifying second-hand plant and machinery from taxable profits in the year of purchase, up to £1,000,000 for 2025/26."
+  - "Passenger cars are excluded from AIA entirely; vans and commercial vehicles qualify whether new or second-hand."
+  - "The asset must be brought into use for the business in the same accounting period as the purchase, so storing it in a warehouse does not count."
+  - "If a second-hand asset is used partly for private purposes, only the business-use proportion of the cost qualifies for AIA."
+  - "Purchases from connected persons, such as a spouse, family member, or controlled company, are restricted to the lower of the price paid or the asset's market value."
+  - "Where a business owner controls multiple companies, the £1,000,000 AIA limit is shared between all associated companies and the combined total cannot exceed that cap."
 ---
 <h2>What Is the Annual Investment Allowance?</h2>
 

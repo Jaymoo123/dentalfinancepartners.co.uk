@@ -27,6 +27,13 @@ faqs:
     answer: "Not always. Some payroll services include P11D and P11D(b) filing as standard. Others charge extra or do not offer it at all. If you have a company car, private health insurance or a beneficial loan, check before you sign up. A full accountancy package typically includes P11D filing as part of the service."
   - question: "What happens if my director payroll service makes a mistake on my RTI submission?"
     answer: "A good payroll service will correct the error and resubmit to HMRC on your behalf. They should also handle any penalty that results from their mistake. Always check the service level agreement before you sign up. If you run payroll yourself, you are responsible for correcting errors through HMRC's online service or your payroll software."
+keyTakeaways:
+  - "A director payroll service covers RTI submissions, payslips, P60s and PAYE/NIC calculations, but does not cover corporation tax returns, VAT returns, dividends or self assessment filings."
+  - "A £12,570 salary generates no income tax or employee NIC, but single-director companies cannot claim Employment Allowance, so employer NIC of about £1,135 applies from 6 April 2025."
+  - "Many single-director companies set their salary at £5,000 to eliminate employer NIC entirely, as the employer secondary threshold is £5,000 from 6 April 2025."
+  - "A standalone director payroll service costs £20 to £40 per month for one director; a bundled accountancy package including payroll typically costs £100 to £200 per month."
+  - "For a company with 1 to 3 employees, the first late RTI submission carries no penalty; each subsequent late submission costs £100."
+  - "Directors can be paid annually, quarterly or at irregular intervals, and an annual payroll scheme requires only one RTI submission per year, submitted on or before the payment date."
 ---
 
 <p>If you are a director of a UK limited company and you take a salary, you need payroll. It is not optional. HMRC requires you to report your salary payments in real time through RTI (Real Time Information) submissions, and you must issue payslips and a P60 each year.</p>

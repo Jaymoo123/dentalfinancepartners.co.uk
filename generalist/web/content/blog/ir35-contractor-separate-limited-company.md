@@ -27,6 +27,13 @@ faqs:
     answer: "If you control two limited companies, they are associated. The small profits rate band of £50,000 is divided by the number of associated companies. With two companies, each gets £25,000 of the 19% band. The marginal relief band of £50,000 to £250,000 is also split. This means you hit the 25% main rate at lower profit levels in each company. Plan profit extraction to minimise the overall corporation tax bill."
   - question: "Can I move money between my contracting company and my trading company tax-free?"
     answer: "No. Moving money between the two companies without a commercial reason creates a director's loan account issue. If the loan exceeds £10,000, you have a beneficial loan benefit in kind. If it is not repaid within 9 months and 1 day of the company's year-end, the company pays S455 tax at 35.75% on loans made on or after 6 April 2026 (33.75% for loans made in 2025/26). If you need to move funds, do it through proper intercompany loan agreements with interest at a commercial rate, or through dividend declarations from one company to the other (if one company owns shares in the other)."
+keyTakeaways:
+  - "Two limited companies under common control are associated for corporation tax, splitting the £50,000 small profits band so each gets only £25,000 taxed at 19%."
+  - "Dividends paid from both companies are combined for personal income tax, with only a single £500 dividend allowance available across all dividend income in 2025/26."
+  - "In 2026/27, dividend tax rates are 10.75% within the basic rate band, 35.75% within the higher rate band, and 39.35% above £125,140."
+  - "A director's loan from either company that exceeds £10,000 triggers a beneficial loan benefit in kind, which must be reported on a P11D."
+  - "S455 tax of 35.75% applies to director's loans made on or after 6 April 2026 that are not repaid within 9 months and 1 day of the company year-end."
+  - "Each company must register for VAT independently once its own turnover exceeds £90,000, and combining turnover across companies to avoid registration is illegal."
 ---
 
 <h2>The Two-Company Problem That Most IR35 Guides Ignore</h2>

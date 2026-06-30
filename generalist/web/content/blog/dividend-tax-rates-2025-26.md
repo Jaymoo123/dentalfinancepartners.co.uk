@@ -19,6 +19,13 @@ h1: "Dividend Tax Rates 2025/26: What Business Owners Need to Know"
 summary: "The dividend tax rates for 2025/26 remain at 8.75% (basic rate), 33.75% (higher rate) and 39.35% (additional rate), with the dividend allowance cut to £500. This guide explains how each rate applies, what your tax-free allowance covers, and how to structure your director pay to minimise your total tax bill."
 schema: ""
 faqs: []
+keyTakeaways:
+  - "The dividend tax rates for 2025/26 are 8.75% (basic rate, income £12,571 to £50,270), 33.75% (higher rate, £50,271 to £125,140) and 39.35% (additional rate, above £125,140)."
+  - "The dividend allowance for 2025/26 is £500, meaning any dividend income above that amount is taxed at your marginal dividend rate."
+  - "From 6 April 2026, FA 2026 (enacted 18 March 2026) raises the basic rate to 10.75% and the higher rate to 35.75%, while the additional rate stays at 39.35%."
+  - "Dividends are treated as the top slice of your income, stacking on top of salary and other earnings to determine which tax band applies."
+  - "For 2025/26, a basic rate taxpayer extracting profits as dividends faces a combined effective rate of about 26% (19% corporation tax plus 8.75% dividend tax on net profit)."
+  - "The self assessment filing deadline for 2025/26 dividend income is 31 January 2027."
 ---
 
 <h2>What Are the Dividend Tax Rates for 2025/26?</h2>

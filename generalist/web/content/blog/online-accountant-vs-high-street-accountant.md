@@ -27,6 +27,13 @@ faqs:
     answer: "Some are, some aren't. You need to check. The ICAEW (Institute of Chartered Accountants in England and Wales) is the gold standard for accounting qualifications. Always verify the qualifications of any firm you're considering, whether online or high street. A qualified accountant gives you proper compliance and access to professional indemnity insurance."
   - question: "What software do I need for an online accountant?"
     answer: "Most online accountants use Xero, QuickBooks, or FreeAgent. They'll set you up and include the licence in your monthly fee. You'll need to upload receipts (using Dext or the software's own app) and record invoices. The accountant handles the rest. If you're a sole trader with simple affairs, some online accountants accept spreadsheets or GoSimpleTax. Ask before you sign up."
+keyTakeaways:
+  - "Online accountants for limited companies typically charge £95 to £150 per month, often including software licences, year-end accounts, and corporation tax filing."
+  - "High street firms typically cost £1,200 to £2,000 per year for a simple limited company, with cloud software such as Xero or QuickBooks adding £30 to £70 per month on top."
+  - "A freelance consultant turning over £63,000 through a limited company was quoted £1,440 a year online versus £2,280 on the high street, a saving of £840."
+  - "From April 2026, self-employed people and landlords with qualifying income over £50,000 must use MTD-compatible software, with the threshold dropping to £30,000 in April 2027 and £20,000 in April 2028."
+  - "VAT returns and payroll are often charged as extras by online accountants, typically £20 to £40 per month each."
+  - "Both online and high street accountants can be ICAEW qualified and handle standard compliance, including corporation tax (CT600), VAT returns, payroll, and self assessment (SA100)."
 ---
 
 <p>Should you hire an online accountant or walk into a high street firm? It's a question we hear from business owners across the UK. The answer isn't one-size-fits-all. It depends on your turnover, your sector, how you like to communicate, and how much hands-on support you need.</p>

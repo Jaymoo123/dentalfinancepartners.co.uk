@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. If the loan balance is £10,000 or less throughout the tax year, no benefit in kind charge applies. If it exceeds £10,000, you can avoid the charge by paying interest at the official rate (3.75% for 2025/26) on the average loan balance. Document the interest payments properly."
   - question: "What happens if my directors loan account is in credit (the company owes me money)?"
     answer: "A credit balance means the company owes you money. This is not a tax problem. The company can repay you at any time without triggering tax charges. If the company becomes insolvent, you are an unsecured creditor for that amount and may not recover it. Keep records of what you have put into the company."
+keyTakeaways:
+  - "An overdrawn directors loan account attracts S455 tax at 35.75% on loans from 6 April 2026 (33.75% before) if not repaid within 9 months and 1 day."
+  - "If an overdrawn loan exceeds £10,000 and no interest is paid at the official rate (3.75% for 2025/26), a benefit in kind charge applies and is reported on a P11D."
+  - "Once a director's loan is repaid, the company can reclaim the S455 tax, but must claim within 4 years of the accounting period end in which repayment was made."
+  - "HMRC's bed and breakfasting rules treat a loan repayment as void if a new loan is taken within 30 days, so directors must wait at least 31 days before redrawing."
+  - "If a company writes off a director's loan, the amount is treated as a distribution and taxed at dividend rates in the director's hands."
+  - "In a company insolvency, an overdrawn directors loan account remains a personal debt and the liquidator will pursue the director for repayment."
 ---
 
 <p>A director's loan account is one of those things that sounds more complicated than it actually is. It is simply the record of money flowing between you and your limited company. Money you put in and money you take out. If you take more out than you have put in, you have a loan from the company to you. That triggers tax consequences you need to understand before you spend the money.</p>

@@ -30,6 +30,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@jonathanborba
   source: Pexels
   source_url: https://www.pexels.com/photo/anonymous-dentist-with-assistant-treating-teeth-of-patient-4687906/
+keyTakeaways:
+  - "The NHS pension annual allowance for 2025/26 is £60,000, tapering to a minimum of £10,000 where threshold income exceeds £200,000 and adjusted income exceeds £260,000 (both conditions must apply)."
+  - "Private dental services are VAT-exempt, but once taxable turnover from standard-rated goods sales exceeds £90,000 in a rolling 12-month period, VAT registration is required."
+  - "Corporation tax for 2025/26 is 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief applying between those thresholds."
+  - "From April 2026, self-employed dentists with qualifying income over £50,000 must keep digital records and file quarterly MTD updates; the threshold drops to £30,000 (April 2027) and £20,000 (April 2028)."
+  - "Incorporating a dental practice tends to save tax when profits consistently exceed £50,000, since a company pays 19% to 25% corporation tax rather than 40% or 45% income tax."
+  - "Class 2 NIC was abolished from 6 April 2024; dental partners pay Class 4 NIC at 6% on profits between £12,570 and £50,270, then 2% above that figure."
 ---
 <h2>Dentistry Is Not a Standard Business</h2>
 

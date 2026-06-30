@@ -27,6 +27,13 @@ faqs:
     answer: "It depends on your profit level. Once your profits exceed roughly £50,000, a limited company can save you thousands in tax. Below that, the extra admin and cost usually outweigh the benefit. Your accountant for tutors should run the numbers for your specific situation before you decide."
   - question: "What happens if HMRC investigates my tutoring business?"
     answer: "HMRC will ask for evidence of your income and expenses. If you have kept proper records, the process is usually straightforward. If not, they may estimate your tax bill, often unfavourably. A specialist accountant for tutors will handle the correspondence and negotiate on your behalf, reducing the final bill and your stress."
+keyTakeaways:
+  - "The VAT registration threshold for tutors is £90,000 in any rolling 12-month period, covering income from private clients, agencies, and schools."
+  - "Business mileage is claimable at 55p per mile for the first 10,000 miles from 6 April 2026, up from 45p in 2025/26."
+  - "From April 2026, tutors with self-employment income over £50,000 must file quarterly MTD updates; the threshold falls to £30,000 in 2027 and £20,000 in 2028."
+  - "Self-assessment payments on account fall due on 31 January and 31 July each year, based on the previous year's tax bill, which can pressure summer cashflow."
+  - "Once tutoring profits exceed roughly £50,000, a limited company structure can save £5,000 to £8,000 in tax annually for a tutor earning £70,000 profit per year."
+  - "Dividend tax rates from 6 April 2026 are 10.75% basic and 35.75% higher, with a £500 allowance, below income tax rates for most tutors."
 ---
 
 <p>If you are a private tutor working in the UK, your tax situation is different from most other self-employed professionals. You deal with irregular income, specific expense categories, and often a mix of employed and self-employed work. A general accountant might miss the subtleties. That is why more tutors are turning to an <strong>accountant for tutors</strong> who understands the sector inside out.</p>

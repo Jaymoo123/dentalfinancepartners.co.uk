@@ -27,6 +27,13 @@ faqs:
     answer: "For UK residential property, you must report and pay within 60 days of completion. For commercial property and land, report through your self assessment return by 31 January after the tax year of disposal."
   - question: "Can I offset losses from one property against gains from another?"
     answer: "Yes. Capital losses on one property can be offset against gains on another in the same tax year. Unused losses can be carried forward to future years. You must report losses to HMRC within 4 years of the end of the tax year in which they arose."
+keyTakeaways:
+  - "For 2025/26, residential property gains above the annual exempt amount are taxed at 18% (basic rate) or 24% (higher rate)."
+  - "The annual exempt amount is £3,000 for individuals and £1,500 for trusts in 2025/26; gains below these thresholds are tax-free."
+  - "The higher CGT rate on residential property dropped from 28% to 24% for disposals on or after 30 October 2024, with the basic rate staying at 18%."
+  - "UK residential property disposals must be reported and the capital gains tax paid within 60 days of completion."
+  - "Business Asset Disposal Relief cuts the rate to 14% on the first £1 million of qualifying commercial gains from 6 April 2025, rising to 18% from 6 April 2026."
+  - "Limited companies pay corporation tax on property gains at 19% (profits up to £50,000) or 25% (profits above £250,000), not capital gains tax."
 ---
 
 <p>Selling a property that is not your main home usually triggers a capital gains tax charge. The rate you pay depends on your total income and the type of property. For residential property gains in the 2025/26 tax year, the rates are 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply to gains above your annual exempt amount, which is £3,000 for individuals in 2025/26.</p>

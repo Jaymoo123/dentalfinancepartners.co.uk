@@ -27,6 +27,13 @@ faqs:
     answer: "Online accountants (like Crunch, FreeAgent-based firms, or cloud-only practices) tend to be cheaper for simple companies. Their fees often start at £80-£100 per month for a basic package. Local high street firms typically charge more, £120-£200 per month for the same level of service. The trade-off is accessibility. Online firms are good if you are comfortable with email and portal-based communication. Local firms offer face-to-face meetings, which some directors prefer. For most growing businesses, a cloud-based accountant with remote access is perfectly adequate."
   - question: "What happens to my accountant fees if my limited company stops trading?"
     answer: "If your company stops trading but remains on the register, you still have filing obligations. You must file dormant accounts and a confirmation statement each year. Most accountants charge a reduced fee for dormant companies, typically £30-£60 per month, to cover these filings. If you want"
+keyTakeaways:
+  - "A solo-director limited company with no VAT or staff typically pays £75 to £120 per month (£900 to £1,440 per year) for a basic compliance package in 2025/26."
+  - "Growing businesses with VAT registration and 1 to 5 employees typically pay £150 to £250 per month in 2025/26, covering VAT returns, payroll, and quarterly accounts."
+  - "Established companies with turnover above £500,000 or multiple directors typically pay £300 to £600 or more per month for full compliance, management accounts, and strategic tax planning."
+  - "At the basic tier, VAT returns and payroll are usually charged as extras: add £20 to £40 per quarter for VAT returns and £10 to £20 per month for payroll."
+  - "R&D tax credit claim preparation is specialist work typically charged separately at £500 to £1,500 per claim, depending on complexity."
+  - "Late filing penalties for annual accounts at Companies House start at £150 for a private company one month late, rising to £1,500 at six or more months late."
 ---
 
 <p>If you are a director of a UK limited company, or thinking about incorporating, the question of <strong>accountant cost limited company</strong> is probably near the top of your list. And it should be. Accountancy fees are a recurring business cost, not a one-off. Get the structure wrong and you either overpay for services you do not need or underpay and miss critical compliance deadlines.</p>

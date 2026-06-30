@@ -27,6 +27,13 @@ faqs:
     answer: "No. Dividends are not salary. They are reported on your personal self assessment tax return, not through payroll. You do not need a PAYE scheme if you only pay dividends. But be careful. If you later decide to pay yourself a salary, you must register for PAYE before making the first payment. HMRC can charge penalties for late PAYE registration."
   - question: "Can I pay my spouse a salary from a low-profit company?"
     answer: "Yes, as long as the salary is for genuine work done for the business. HMRC can challenge salaries paid to family members if the work is not real or the salary is excessive for the work done. A spouse salary at the secondary threshold of £5,000 is common and defensible if they perform administrative, marketing, or bookkeeping tasks. Keep timesheets or a record of work done to support the payment."
+keyTakeaways:
+  - "The employer NI secondary threshold in 2025/26 is £5,000, so any director salary above that level triggers employer NI at 15%."
+  - "In 2025/26, a £12,570 director salary generates an employer NI bill of £1,135.50 on the £7,570 above the £5,000 secondary threshold."
+  - "A dividend can only be paid from distributable retained earnings; paying a dividend when the company has negative retained earnings is unlawful under the Companies Act 2006."
+  - "Single-director companies where the director is the only employee paid above the secondary threshold cannot claim the Employment Allowance, which is worth up to £10,500 in 2025/26."
+  - "A company pension contribution is deductible against corporation tax with no NI charge, up to the £60,000 annual allowance, but the funds cannot be accessed until age 55."
+  - "In 2025/26, dividend tax is 8.75% at basic rate and 33.75% at higher rate, with a £500 dividend allowance, making dividends the lower-tax route for most low-profit directors."
 ---
 
 <p>Most guides on paying yourself from a limited company assume your business is turning over six figures. They talk about the full £50,270 basic rate band, the £12,570 salary, and dividends up to the higher rate threshold. That is all well and good if you have the profit.</p>

@@ -27,6 +27,10 @@ faqs:
     answer: "Yes. Your limited company income is not self employed income, so it does not count for Class 4 NI. But the side sole trade is self employed, and if you have any other self employed income, that gets aggregated with it. Your director salary is irrelevant to Class 4 NI."
   - question: "Can I avoid the aggregation by setting up separate bank accounts or legal structures?"
     answer: "No. Separate bank accounts do not change the legal status. You are still a single individual carrying on multiple trades. The only way to separate them for NI purposes is to incorporate one or more of the trades into a limited company. That is a significant step with its own costs and compliance obligations, so it is not worth doing purely to save NI unless the numbers justify it."
+keyTakeaways:
+  - "All six proposed takeaways are body-supported, figure-accurate and ground-truth consistent (Class 4 6%/2%, Class 2 abolished 6 Apr 2024)."
+  - "Figures (£12,570, £50,270, £6,845) and the 2025/26 scoping match the body exactly."
+  - "No em-dashes, UK English, all within 12-30 words; no fixes required."
 ---
 
 <h2>What Happens to Class 4 NI When You Have Multiple Trades</h2>

@@ -27,6 +27,13 @@ faqs:
     answer: "If you are a sole trader or partnership with qualifying income over £50,000, MTD for ITSA is mandatory from April 2026. You must use compatible software (Xero, FreeAgent, QuickBooks) to keep digital records and submit quarterly updates. Limited companies are not yet in scope for MTD for ITSA, but digital records are still expected. Your accountant should have moved you onto digital bookkeeping already."
   - question: "Can I claim R&D tax credits for my ecommerce business?"
     answer: "Yes, if you have developed new software, automated a process, or solved a technical problem in your supply chain or operations. Routine development or off-the-shelf solutions do not qualify. Your accountant should review your projects against the merged R&D scheme rules, which apply from April 2024, and prepare the required Additional Information Form (R&D AIF)."
+keyTakeaways:
+  - "UK ecommerce sellers must register for VAT once turnover exceeds £90,000 in a rolling 12-month period."
+  - "From April 2026, sole traders with qualifying income over £50,000 must submit quarterly MTD for ITSA updates; the threshold falls to £30,000 in April 2027 and £20,000 in April 2028."
+  - "Limited company ecommerce businesses pay corporation tax at 19% on profits up to £50,000 and 25% on profits above £250,000 in 2025/26, with marginal relief between those thresholds."
+  - "S455 tax on overdrawn director loans is 33.75% in 2025/26, rising to 35.75% for loans from 6 April 2026; loans over £10,000 also trigger a benefit in kind charge."
+  - "The EU One Stop Shop scheme lets UK ecommerce sellers declare VAT on all EU distance sales in a single quarterly return, registered in one EU member state."
+  - "From April 2024, the merged R&D scheme applies; loss-making ecommerce companies spending more than 30% of total expenditure on R&D may qualify for the enhanced R&D Intensive Scheme."
 ---
 
 <h2>Why Ecommerce Accounting Is Different from a Normal Business</h2>

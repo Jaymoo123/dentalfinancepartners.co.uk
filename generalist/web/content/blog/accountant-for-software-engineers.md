@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, if your project resolves technological uncertainty that a competent professional in the field could not readily solve. This includes developing new algorithms, novel data processing methods, or software solutions that push beyond existing capabilities. You need to document the uncertainty and the steps you took to overcome it."
   - question: "How do I know if I am inside or outside IR35?"
     answer: "Your client (if medium or large) issues a Status Determination Statement (SDS) telling you your status. But you should review the SDS with a specialist accountant. The key factors are control, substitution, and mutuality of obligation. A contract that says you are outside IR35 means nothing if your working practices suggest otherwise."
+keyTakeaways:
+  - "Since April 2021, medium and large clients are responsible for issuing a Status Determination Statement deciding whether a contractor is inside or outside IR35."
+  - "Outside IR35, dividend tax rates are 10.75% up to the basic rate band and 35.75% above it in 2026/27, compared with 8.75% and 33.75% in 2025/26."
+  - "Inside IR35, the limited company pays employer NI at 15% (from 6 April 2025) and can claim only a 5% expenses allowance on deemed employment income."
+  - "Under the merged R&D scheme from 1 April 2024, loss-making SMEs can reclaim up to 27p per £1 of qualifying R&D spend via the Enhanced R&D Intensive Scheme (ERIS)."
+  - "The VAT registration threshold is £90,000 in a rolling 12-month period; software engineers on the Flat Rate Scheme pay 14.5%, but limited cost traders must use 16.5%."
+  - "Making Tax Digital for Income Tax becomes mandatory from April 2026 for sole traders earning over £50,000, with thresholds dropping to £30,000 (April 2027) and £20,000 (April 2028)."
 ---
 
 <h2>Software Engineering Is Not a Standard Business</h2>

@@ -30,6 +30,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@jakubzerdzicki
   source: Pexels
   source_url: https://www.pexels.com/photo/hand-writing-on-notebook-with-checklist-35719571/
+keyTakeaways:
+  - "FA 2026 s.28 cut the main rate pool writing down allowance from 18% to 14% per year, effective 1 April 2026 (CT) and 6 April 2026 (IT)."
+  - "Cars with CO2 emissions above 50g/km go into the special rate pool at 6% WDA per year, on a reducing balance basis, unchanged by FA 2026."
+  - "Cars are specifically excluded from the annual investment allowance (AIA), so businesses cannot claim 100% of a car's cost through AIA in a single year."
+  - "New zero-emission cars qualify for full expensing at 100% in the first year; used electric cars fall into the main rate pool at 14% WDA from April 2026."
+  - "For cars bought before 1 April 2021, the main rate pool applied to CO2 up to 110g/km and the special rate pool above 110g/km."
+  - "Sole traders must restrict WDA claims to the business-use proportion, while a limited company claims 100% WDA but the director pays a benefit-in-kind charge on private use."
 ---
 <h2>What Is Writing Down Allowance on Cars?</h2>
 

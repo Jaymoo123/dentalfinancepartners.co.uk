@@ -27,6 +27,12 @@ faqs:
     answer: "If HMRC determines you are inside IR35, you must pay tax and NI as if you were an employee. That means your limited company pays employer NI (15% above a £5,000 secondary threshold, from 6 April 2025) and you pay employee NI and income tax on the deemed employment income. The practical effect is that your take-home pay drops significantly. A specialist accountant can help you restructure your contracts and working practices to stay outside IR35."
   - question: "Do I need an accountant if I use accounting software like FreeAgent?"
     answer: "Accounting software handles the data entry and basic calculations, but it does not give you strategic tax advice. It will not tell you whether to incorporate, whether to register for VAT voluntarily, or whether you qualify for R&D tax credits. For a sole trader earning under £30,000, software alone is fine. Above that, the tax savings from professional advice typically exceed the accountancy fee."
+keyTakeaways:
+  - "The VAT registration threshold is £90,000 in a rolling 12-month period; design agencies on the flat rate scheme pay HMRC 14.5%, or 16.5% if classed as a limited cost trader."
+  - "The Annual Investment Allowance is £1,000,000 per year, so most designers can claim 100% of new equipment like a MacBook or monitor against that year's profits."
+  - "For loss-making companies, the enhanced R&D Intensive Scheme (ERIS) can provide a cash credit worth up to 14.5% of qualifying R&D spend."
+  - "A late self assessment return carries a fixed £100 penalty, plus late-payment surcharges of 5% at 30 days, 6 months and 12 months; Companies House late accounts start at £150."
+  - "Accountancy fees for 2025/26 range from £200 to £500 a year for a sole trader return, up to £1,200 to £2,500 for a limited company with VAT, payroll and bookkeeping."
 ---
 
 <p>If you are a freelance graphic designer, a UX consultant, a branding specialist or you run a small design studio, your finances look different to a plumber's or a shopkeeper's. You have irregular income, project-based expenses, software subscriptions, and maybe a mix of direct clients and agency sub-contracts. A generalist accountant who only knows the standard rules will miss the nuances that cost you money.</p>

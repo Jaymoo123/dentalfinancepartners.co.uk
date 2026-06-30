@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "Payments on account apply when your net Self Assessment tax bill exceeds £1,000, with each instalment set at half the previous year's bill."
+  - "Two exceptions remove the requirement: your net tax bill is below £1,000, or more than 80% of your total tax was deducted at source."
+  - "On a 2024/25 tax bill, the two payments on account for 2025/26 fall on 31 January 2026 and 31 July 2026, with any balancing payment due 31 January 2027."
+  - "You can reduce payments on account using form SA303, or online through your HMRC account, if your income for the current year is lower than the previous year."
+  - "If you reduce payments on account and your actual bill is higher, HMRC charges interest at 7.25% (as of early 2025) on the underpaid amount."
+  - "Late Self Assessment payment penalties start at 5% of the unpaid amount after 30 days, with a further 5% after six months and another 5% after 12 months."
 ---
 <h2>What Are Payments on Account?</h2>
 <p>Payments on account are advance payments towards your next year's Self Assessment tax bill. HMRC asks for them when your tax bill (excluding any tax already deducted at source, like PAYE) is over £1,000. Each payment is half of your previous year's tax bill.</p>

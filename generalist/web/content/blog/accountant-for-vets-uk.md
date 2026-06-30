@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "VAT registration is mandatory when a veterinary practice's taxable turnover exceeds £90,000 in any rolling 12-month period."
+  - "For 2025/26, incorporated veterinary practices pay corporation tax at 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief between those thresholds."
+  - "Most clinical veterinary treatments are exempt from VAT, while retail sales of pet food, medicines, and non-clinical items are standard-rated at 20%, creating a partial exemption position."
+  - "The Annual Investment Allowance gives 100% tax relief on qualifying plant and machinery up to £1 million per year, covering equipment such as X-ray units and ultrasound scanners."
+  - "The pension annual allowance is £60,000 for 2025/26, but reduces if a partner's adjusted income exceeds £260,000."
+  - "Class 2 National Insurance was abolished from April 2024, so veterinary partners now pay only Class 4 NIC on their self-employed profits."
 ---
 <h2>Why Veterinary Practices Need a Sector Specialist</h2>
 

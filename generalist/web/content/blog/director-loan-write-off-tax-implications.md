@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. Writing off a director's loan reduces the company's distributable reserves because it is treated as a distribution. If the company does not have sufficient reserves to cover the write-off, the distribution is unlawful under the Companies Act 2006. Directors can be personally liable for unlawful distributions. Check your reserves before writing off any loan."
   - question: "Can the company claim VAT on a director's loan write-off?"
     answer: "No. A director's loan is a financial transaction, not a supply of goods or services. VAT does not apply to the loan itself or to its write-off. The company cannot reclaim VAT on the write-off. If the loan was used to purchase goods or services that attracted VAT, those VAT recoveries are separate and depend on the underlying transaction."
+keyTakeaways:
+  - "Writing off a director's loan triggers three simultaneous tax charges: a benefit in kind on the director, Section 455 company tax, and deemed dividend treatment."
+  - "The written-off amount is treated as employment income at the director's marginal rate; a 40% taxpayer owes £8,000 income tax on a £20,000 write-off."
+  - "The company pays Class 1A National Insurance at 15% on the written-off amount, the rate from 6 April 2025 (13.8% applied up to 5 April 2025)."
+  - "Section 455 tax applies at 35.75% for loans from 6 April 2026, or 33.75% for earlier loans, if unpaid 9 months and 1 day after year-end."
+  - "Where S455 tax has already been paid, the company must file a claim with HMRC to recover it within 4 years of the accounting period end; repayment is not automatic."
+  - "The company cannot deduct a written-off director's loan as a corporation tax expense; it is treated as a distribution of profits, giving the company no tax relief."
 ---
 
 <p>If your company has lent you money and you cannot repay it, writing the loan off might seem like the cleanest solution. But it is not a neutral event. Writing off a director's loan triggers multiple tax charges on both you personally and the company. Getting it wrong can mean paying thousands in unexpected tax, plus interest and penalties.</p>

@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "Under CIS, main contractors deduct 20% from a subcontractor plumber's labour payments, and an accountant can reclaim any over-deducted amount on the self assessment or corporation tax return."
+  - "The VAT registration threshold for 2025/26 is £90,000; once rolling 12-month turnover hits that level, a plumber must register within 30 days or face penalties."
+  - "Under the 2025/26 Flat Rate Scheme, plumbers pay HMRC 12% (limited company) or 14.5% (sole trader), but limited cost traders use 16.5%."
+  - "Gross payment status, which means contractors pay a plumber without making CIS deductions, is worth pursuing if annual turnover exceeds £30,000 and the business has a clean compliance record."
+  - "Plumbing businesses that employ staff can claim the Employment Allowance, cutting up to £10,500 off their employer NI bill each year."
+  - "The Annual Investment Allowance lets plumbing businesses deduct up to £1 million per year on qualifying plant and machinery, including vans and tools, in the year of purchase."
 ---
 <h2>Why Plumbing Businesses Need Specialist Accounting</h2>
 

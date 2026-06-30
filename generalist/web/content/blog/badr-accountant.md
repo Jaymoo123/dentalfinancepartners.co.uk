@@ -27,6 +27,13 @@ faqs:
     answer: "Ideally 18 to 24 months before the planned exit. That gives time to restructure shareholdings, manage the trading test, and ensure the 2-year qualifying period is met. If the sale is within 6 months, speak to an accountant immediately. There may still be time to fix issues, but the options are limited."
   - question: "What is the BADR rate for disposals after 5 April 2026?"
     answer: "The BADR rate rises to 18% for disposals on or after 6 April 2026. The £1 million lifetime limit stays the same. Selling before 6 April 2026 locks in 14%. Waiting until 2026/27 costs an extra 4% on the gain, which on £1 million is an extra £40,000 in tax."
+keyTakeaways:
+  - "BADR cuts CGT to 14% on the first £1 million of qualifying lifetime gains for 2025/26 disposals; the rate rises to 18% from 6 April 2026."
+  - "Delaying a sale from 2025/26 to 2026/27 costs an extra 4% in tax, which amounts to £40,000 additional tax on a £1 million gain."
+  - "To qualify on company shares, you must hold at least 5% of ordinary share capital, voting rights, and distributable profits for the full 24 months ending on the disposal date."
+  - "You must also be a director or employee of the company throughout that 2-year qualifying period; a break or resignation resets the clock."
+  - "HMRC treats non-trading assets exceeding 20% of total assets as substantial, which can cause the trading company test to fail and BADR to be denied entirely."
+  - "BADR claims must be made on your self assessment return; you can amend within 12 months of the 31 January deadline, but HMRC often refuses requests made after that window."
 ---
 
 <p>If you are selling your limited company shares, the difference between 14% and 24% Capital Gains Tax is not small. On a £1 million gain, that is £100,000 in your pocket versus HMRC's. Business Asset Disposal Relief (BADR) locks in the lower rate. But HMRC does not hand it out automatically. You have to qualify, claim it correctly, and avoid the common traps that turn a 14% gain into a 24% one.</p>

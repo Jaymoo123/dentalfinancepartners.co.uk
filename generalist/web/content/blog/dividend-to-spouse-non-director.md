@@ -27,6 +27,13 @@ faqs:
     answer: "The saving depends on your marginal tax rates. If you are a higher rate taxpayer (35.75% on dividends in 2026/27; 33.75% in 2025/26) and your spouse has no other income, they can receive up to £12,570 tax-free using their personal allowance, plus £500 at 0% under the dividend allowance. The next £37,200 is taxed at only 10.75% (2026/27 rate; 8.75% in 2025/26). On a £30,000 dividend, the saving compared to you taking it could be over £8,000 per year."
   - question: "Do I need alphabet shares to pay a dividend to my spouse?"
     answer: "No, but alphabet shares make it much easier. With ordinary shares, dividends must be paid proportionally to each shareholder's holding. If your spouse holds 10% of the ordinary shares, they receive 10% of any dividend. With alphabet shares, you can declare a dividend on one class only, giving you full control over how much each person receives. This is the standard structure for family companies."
+keyTakeaways:
+  - "A spouse can receive company dividends without being a director or employee, provided they hold registered shares in the company."
+  - "HMRC can challenge the arrangement under the settlement provisions in ITTOIA 2005 (ss 624-625) if shares were gifted rather than subscribed for by the spouse using their own money."
+  - "A spouse with no other income can receive up to £12,570 in dividends tax-free using their personal allowance, plus a further £500 at 0% under the dividend allowance."
+  - "On a £30,000 dividend paid to a non-working spouse in 2026/27, total tax is £1,820 compared to £10,725 if the director had taken it, a saving of £8,905."
+  - "Dividends carry no National Insurance for the company or the spouse, but a salary would attract employer NI at 15% above the £5,000 secondary threshold and employee NI at 8%."
+  - "Alphabet shares (A shares, B shares, and so on) allow a dividend to be declared on one class only, giving full flexibility over how much each shareholder receives each year."
 ---
 
 <p>Yes, you can pay a dividend to your spouse who is not an employee or director of your company. But only if they actually own shares in the company.</p>

@@ -27,6 +27,13 @@ faqs:
     answer: "No. You must choose one method for the whole tax year. If you start the year using the flat rate and your costs increase, you cannot switch mid-year. Choose the method that best reflects your actual costs at the start of the year."
   - question: "What if HMRC challenges my home office claim?"
     answer: "Keep your records and your calculation. If you used the flat rate, show that you work from home regularly. If you used actual costs, show your bills and your apportionment method. HMRC rarely challenges claims under £500 if the records are clear. If they do, your accountant can handle the correspondence."
+keyTakeaways:
+  - "A limited company director can claim £6 per week (£312 per year) tax-free if they work from home regularly, with no receipts required."
+  - "The £312 flat rate saves the company around £60 in corporation tax at 19%, or around £78 at 25%."
+  - "The actual cost method requires apportioning household bills (electricity, gas, broadband, council tax, mortgage interest) by the proportion of the home used for business."
+  - "The home office reimbursement must run through payroll; paying it directly from the company account to a personal account creates a director's loan, not a tax-free expense."
+  - "Capital costs such as office furniture or monitors are not home office expenses and must be claimed as capital allowances through the company's fixed asset register."
+  - "A director must choose either the flat rate or the actual cost method for the whole tax year, as switching mid-year is not permitted."
 ---
 
 <p>The short answer is yes, you can claim home office expenses through your limited company. But the method matters, and getting it wrong can trigger a tax bill you did not expect.</p>

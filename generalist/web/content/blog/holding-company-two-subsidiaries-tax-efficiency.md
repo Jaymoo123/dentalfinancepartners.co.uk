@@ -27,6 +27,24 @@ faqs:
     answer: "Yes. The holding company is a separate legal entity and must have its own bank account. It will receive dividends from the subsidiaries, pay its own expenses and potentially make loans to group companies. HMRC and Companies House expect separate accounting records. A shared bank account between group companies is not acceptable and would undermine the legal separation of the entities."
   - question: "How do the associated company rules affect my corporation tax bill in this structure?"
     answer: "The associated company rules divide the small profits rate threshold by the number of associated companies in the group. For 2025/26, the 19% rate applies to profits up to £50,000 divided by the number of associated companies. With a holding company and two subsidiaries, that is three companies, so each company only gets the 19% rate on profits up to £16,667. Above that, marginal relief applies up to a group-wide upper limit of £250,000 divided by three, which is £83,333 per company. This can increase your overall corporation tax if your total group profits are between £50,000 and £250,000. Model the numbers before you set up the structure."
+keyTakeaways:
+  - "Dividends from a UK trading subsidiary to its holding company are generally exempt from corporation tax under CTA 2010 Part 9A, with no extra tax on the dividend."
+  - "Group relief requires a 75% shareholding relationship, letting a loss in one subsidiary be surrendered against another's profits to cut the group's corporation tax this year."
+  - "The substantial shareholding exemption removes corporation tax on a gain from selling a trading subsidiary held at least 10% for 12 months."
+  - "For 2025/26, the £50,000 small profits threshold is divided by the number of associated companies, so each of three group companies gets the 19% rate only up to £16,667."
+  - "Each subsidiary must register for VAT separately once turnover exceeds £90,000, though a group VAT registration under VATA 1994 s43 disregards internal supplies between group companies."
+  - "The employment allowance of up to £10,500 applies once per group, not once per PAYE scheme, so multiple subsidiaries can claim it only once."
+howToSteps:
+  - name: "Incorporate the holding company"
+    text: "Register a private limited company with objects covering share-holding, management services and investments; use SIC code 64205 for activities of holding companies."
+  - name: "Incorporate the two trading subsidiaries"
+    text: "Each subsidiary must have its own bank account, its own trade, its own customers and its own accounting records; HMRC will challenge any subsidiary that is not genuinely trading."
+  - name: "Issue shares to the holding company"
+    text: "The holding company subscribes for 100% of the ordinary shares in each subsidiary, typically at par value of £1 per share, with board minutes recording the decision."
+  - name: "Transfer existing businesses via a share-for-share exchange"
+    text: "If restructuring existing companies, use a share-for-share exchange under TCGA 1992 s135 or s136; if conditions are met this is tax-neutral and no capital gains tax arises on the transfer."
+  - name: "Document the group structure"
+    text: "Prepare a group structure chart, board minutes for each company, and intercompany agreements covering any loans or services between group companies to demonstrate genuine separation to HMRC."
 ---
 
 <h2>What Is a Holding Company Structure?</h2>

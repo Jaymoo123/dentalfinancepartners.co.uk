@@ -27,6 +27,13 @@ faqs:
     answer: "The domestic reverse charge applies to most construction supplies between VAT-registered businesses. This means you do not pay VAT to your builder; you account for it on your own VAT return. Whether you can recover VAT on costs depends on whether the sale of the property is standard-rated (new commercial) or exempt (residential). You may be able to opt to tax the property to recover input VAT."
   - question: "What SDLT reliefs can property developers claim?"
     answer: "Multiple dwellings relief (MDR) applies to purchases of six or more dwellings in a single transaction. Mixed-use relief applies where the property has both residential and non-residential elements. Both can significantly reduce your SDLT bill. The rules are technical, and HMRC is challenging some claims, so you need an accountant who understands the current legislation."
+keyTakeaways:
+  - "HMRC treats property development as trading, so profits are subject to corporation tax or income tax, not the lower capital gains tax rates that apply to investment property."
+  - "The corporation tax rate for 2025/26 is 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief between those thresholds."
+  - "The VAT domestic reverse charge, in effect since March 2021, means developers do not pay VAT to their builder but account for it on their own VAT return."
+  - "Multiple dwellings relief is available for qualifying purchases of six or more dwellings in a single transaction, though the rules tightened from June 2024."
+  - "Business Asset Disposal Relief on company share disposals is 14% from 6 April 2025, rising to 18% from 6 April 2026, on a £1 million lifetime limit."
+  - "Residential property capital gains must be reported to HMRC within 60 days of completion using the 60-day CGT property return."
 ---
 
 <h2>Property Development Has Specific Tax Rules. Not Every Accountant Knows Them.</h2>

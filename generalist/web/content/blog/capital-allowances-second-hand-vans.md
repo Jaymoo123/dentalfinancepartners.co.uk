@@ -36,6 +36,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "Second hand vans always go into the main rate pool for capital allowances, regardless of CO2 emissions, because the CO2-based pool test applies to cars only."
+  - "The main rate writing down allowance is 18% per year for periods ending on or before 31 March 2026, falling to 14% from 1 April 2026 (Finance Act 2026 s.28)."
+  - "The Annual Investment Allowance gives 100% relief on a second hand van in the year of purchase, up to £1,000,000, for sole traders, partnerships and limited companies."
+  - "Brand new zero-emission vans qualify for a 100% first-year allowance, but second hand electric vans go into the main rate pool at 14% WDA and qualify for the AIA."
+  - "From 1 July 2024, double cab pickups with a payload of one tonne or more are treated as goods vehicles (vans) for capital allowances purposes."
+  - "Where a van is used partly for private journeys, only the business-use proportion of the cost qualifies for capital allowances."
 ---
 <h2>Can You Claim Capital Allowances on a Second Hand Van?</h2>
 

@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "BADR requires you to have been an officer or employee of the company for a continuous 24 months (2 years) ending with the date of disposal."
+  - "The BADR rate is 14% for disposals from 6 April 2025 to 5 April 2026, then 18% from 6 April 2026; main CGT rates are 18% and 24%."
+  - "If you resigned as director and sold your shares more than 24 months later, you fail the officer or employee condition and cannot claim BADR."
+  - "The personal company test requires 5% of ordinary share capital, 5% of voting rights, 5% of distributable profits, and 5% of assets on winding up throughout the qualifying period."
+  - "BADR is an all-or-nothing relief on each disposal; shares sold in multiple tranches are each tested independently at the date of that disposal."
+  - "Selling your shares before resigning as director is the only reliable way to preserve the 24-month qualifying period."
 ---
 <p>If you resigned as a director of your company and sold your shares two years later, you are right to ask whether you can still claim Business Asset Disposal Relief (BADR). The short answer is: it depends on whether you met the qualifying conditions during the two years before the sale. Many directors assume leaving the role automatically disqualifies them. That is not always correct, but the rules are tighter than most people realise.</p>
 

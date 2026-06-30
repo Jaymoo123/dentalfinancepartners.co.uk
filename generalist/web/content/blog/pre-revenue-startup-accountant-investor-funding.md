@@ -27,6 +27,13 @@ faqs:
     answer: "An Enterprise Management Incentive (EMI) scheme is a tax-advantaged share option plan for employees. It lets you grant options at a low value now, and employees pay Capital Gains Tax (not income tax) on the growth when they sell. It is the standard way to incentivise early employees in UK startups. Your accountant must file the scheme with HMRC within 92 days of grant."
   - question: "How do I pay myself from a pre-revenue startup with investor funding?"
     answer: "The most tax-efficient approach is a salary up to £12,570 (matching the personal allowance) to build NI credits. Do not take dividends as there are no profits. Keep a director's loan account if you need more, but be careful: loans over £10,000 create a benefit in kind, and unpaid loans after 9 months trigger S455 tax at 35.75% (the rate for loans made from 6 April 2026; 33.75% for loans made in 2025/26). Check your investment agreement for any salary restrictions."
+keyTakeaways:
+  - "EMI schemes must be registered with HMRC within 92 days of the option grant, and employees pay Capital Gains Tax rather than income tax on the growth in share value."
+  - "Loss-making R&D-intensive startups spending at least 30% of total costs on R&D can claim up to 27p per £1 of qualifying spend through ERIS."
+  - "The most tax-efficient director salary in a pre-revenue startup is up to £12,570 (the 2025/26 personal allowance), building NI credits without triggering income tax."
+  - "Director loans above £10,000 become a benefit in kind, and any balance unpaid 9 months and 1 day after year-end triggers S455 tax at 35.75% (loans from 6 April 2026)."
+  - "Companies House late-filing penalties for a private company start at £150 for one month late, rising to £1,500 for six months, and a missed confirmation statement can trigger strike-off."
+  - "Voluntary VAT registration below the £90,000 threshold allows a pre-revenue startup to reclaim VAT on development costs such as software subscriptions, equipment, and professional fees."
 ---
 
 <p>If you have raised investor funding but your company has zero revenue yet, your accounting needs are different from a typical small business. A standard high street accountant who handles restaurant accounts and freelance contractors will not cut it. You need an <strong>accountant for startup</strong> operations who understands pre-revenue structures, investor reporting, and equity incentives.</p>

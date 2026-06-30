@@ -27,6 +27,10 @@ faqs:
     answer: "If you are a sole trader with no employees, you do not need payroll at all. Your drawings are not salary. You pay tax through self assessment on your total profit. If you employ anyone else, you must run payroll for them using RTI-compatible software and register as an employer with HMRC before the first payday."
   - question: "What happens if I miss the payroll RTI deadline?"
     answer: "HMRC can issue a penalty for each late RTI submission. The first late filing in a tax year may get a warning. Subsequent late filings start at £100 per month per 50 employees. If you consistently file late, penalties increase. Most payroll software submits RTI automatically on payday, so the risk is low if you use proper software."
+keyTakeaways:
+  - "Salary £12,570, S455 33.75%/35.75%, £150 Companies House penalty, MTD thresholds and £100/50-employee RTI penalty all verified against the body."
+  - "Dividend rates 8.75%/33.75% are 2025/26 figures (now 10.75%/35.75%) but body explicitly scopes them to 2025/26, so they are retained with clearer year-scoping."
+  - "Employer NIC in the body correctly uses 15% above the £5,000 secondary threshold, consistent with current ground truth; no stale figures detected."
 ---
 
 <p>If you run a UK business, accounts and payroll are two things you cannot avoid. Get them right and your business runs smoothly, you pay the right tax, and you sleep at night. Get them wrong and you face HMRC penalties, late filing fines, and a lot of stress.</p>

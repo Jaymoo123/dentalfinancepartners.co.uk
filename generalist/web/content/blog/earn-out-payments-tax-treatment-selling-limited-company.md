@@ -27,6 +27,13 @@ faqs:
     answer: "If the earn-out right expires worthless because targets were not met, you have an allowable capital loss equal to the market value attributed to that right at completion. That loss can be set against other capital gains in the same year or carried forward. Where you received some but not the full earn-out, the loss is the difference between the attributed value and the actual cash received. The loss arises in the tax year the right to payment expires."
   - question: "Does HMRC challenge earn out structures often?"
     answer: "Yes, HMRC scrutinises earn outs where the seller remains involved in the business. The key risk is reclassification as employment income. HMRC looks at whether the earn out is linked to personal performance, whether you are required to work to receive it, and whether the payment is structured as a bonus or salary. Proper drafting and clean separation of roles reduce the risk significantly."
+keyTakeaways:
+  - "HMRC's default treats earn out payments as capital consideration for shares, making them subject to CGT rather than income tax."
+  - "Business Asset Disposal Relief applies at 14% in 2025/26, rising to 18% from April 2026, on gains up to the £1 million lifetime limit."
+  - "To qualify for BADR, the seller must have held at least 5% of shares and voting rights for two years before disposal and been a director or employee."
+  - "If HMRC reclassifies an earn out as income, the seller pays income tax up to 45%, employee NIC at 2%, and employer NIC at 15% above £5,000."
+  - "A TCGA 1992 s.138A election can defer the capital gain where the earn out is satisfied in shares or qualifying loan notes rather than cash."
+  - "If earn out targets are missed and the right to payment expires, the seller has an allowable capital loss equal to the value attributed to that right at completion."
 ---
 
 <p>If you are selling your limited company and part of the price depends on future performance, you are looking at an earn out arrangement. The tax treatment of those earn out payments is not always straightforward. Get it wrong and HMRC could reclassify part of your capital gain as income, costing you tens of thousands in extra tax.</p>

@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, the transport flat rate is 10%. But most Uber drivers are limited cost traders, meaning they must use the 16.5% rate instead. You are a limited cost trader if your spending on relevant goods (not services) is less than 2% of your VAT-inclusive turnover or less than £1,000 per year. Vehicle costs like fuel, repairs, and insurance are not classed as goods for flat rate purposes. You need to calculate your goods spend carefully to determine which rate applies."
   - question: "Should I operate as a sole trader or a limited company for Uber driving?"
     answer: "For the vast majority of Uber drivers, sole trader is the correct structure. If you operate through a limited company, IR35 almost certainly applies because Uber controls the work. That means you must pay yourself a salary through PAYE, losing the tax advantages of incorporation. The administrative burden of a limited company (annual accounts, confirmation statements, corporation tax returns) rarely justifies itself for Uber driving. Speak to an accountant before incorporating."
+keyTakeaways:
+  - "HMRC measures Uber drivers' VAT turnover on total passenger fares, not net payments received, so the £90,000 registration threshold can be hit despite significantly lower banked income."
+  - "The HMRC approved mileage rate for 2026/27 is 55p per mile for the first 10,000 business miles, then 25p, covering all vehicle running costs including fuel and depreciation."
+  - "Most Uber drivers on the Flat Rate Scheme are limited cost traders (under £1,000 of relevant goods yearly) and must use 16.5%, not the 10% transport rate."
+  - "Class 2 National Insurance was abolished from April 2024; Class 4 NI for 2025/26 is 6% on profits between £12,570 and £50,270, and 2% above that level."
+  - "Making Tax Digital for Income Tax applies to qualifying income over £50,000 from April 2026, dropping to £30,000 in April 2027 and £20,000 in April 2028."
+  - "Uber has shared driver earnings data with HMRC since 2020, meaning declared income must reconcile with platform records or a compliance enquiry may follow."
 ---
 
 <h2>What Makes Uber Driving Different for Tax Purposes?</h2>

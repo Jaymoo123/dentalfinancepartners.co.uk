@@ -27,6 +27,10 @@ faqs:
     answer: "Yes. QuickBooks is MTD compliant, and a good accountant will set up the software to send income tax updates to HMRC when MTD for ITSA becomes mandatory from April 2026. They will also ensure your digital records are in the correct format and that you are ready for the quarterly reporting requirements."
   - question: "What is the difference between a QuickBooks ProAdvisor and a regular accountant?"
     answer: "A QuickBooks ProAdvisor has passed Intuit's certification exams and has access to priority support from the software provider. A regular accountant may know QuickBooks well but does not have the formal certification. Both can do the job well. The certification is a useful signal of software expertise, but the accountant's overall qualification and experience matter more."
+keyTakeaways:
+  - "£90,000 VAT threshold, MTD ITSA thresholds (£50k Apr 2026 / £30k Apr 2027 / £20k Apr 2028) and S455 at 35.75% (33.75% for 2025/26) all match current ground truth and the body."
+  - "All six proposed takeaways survived; only word-count trims were needed, none affecting figures."
+  - "Body shows no stale-figure issues versus 2026/27 ground truth."
 ---
 
 <p>If you run a UK business and use QuickBooks for your bookkeeping, you already know the basics of the software. But using the software and using it correctly for your tax and compliance obligations are two different things. That is where a QuickBooks accountant UK comes in.</p>

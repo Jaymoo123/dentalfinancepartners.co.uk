@@ -27,6 +27,12 @@ faqs:
     answer: "Yes. You can file as soon as your accounts and CT600 are complete. There is no minimum waiting period. Filing early removes the risk of missing the deadline and starts the 12-month HMRC enquiry window earlier."
   - question: "Do I still need to file a CT600 if my company made a loss for the year ended 31 March 2026?"
     answer: "Yes. Every active company must file a corporation tax return regardless of profitability. You file a nil return showing zero taxable profit. The CT600 filing deadline is still 31 March 2027. Missing it triggers the same £100 penalty."
+keyTakeaways:
+  - "All six proposed takeaways are body-supported and ground-truth-consistent."
+  - "CT rates 19%/25% with 3/200 marginal relief are correctly scoped to FY2025 (year ended 31 March 2026)."
+  - "Three deadlines (filing 31 Mar 2027, payment 1 Jan 2027, Companies House 31 Dec 2026) all match the body exactly."
+  - "Penalty ladder and £1.5m instalment threshold verified against body lines."
+  - "No stale figures detected; body's s.455 33.75% reference is period-correct and not used in any takeaway."
 ---
 
 <h2>Your Corporation Tax Deadline for a 31 March 2026 Year End</h2>

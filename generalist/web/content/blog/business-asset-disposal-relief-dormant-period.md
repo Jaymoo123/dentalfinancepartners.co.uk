@@ -27,6 +27,13 @@ faqs:
     answer: "If the company received income that is not trading income (like bank interest or rental income), that does not make it a trading company. The company must be wholly or mainly trading. If the dormant period involved no trading but some investment income, the company is likely non-trading for BADR purposes."
   - question: "Can I sell my company after a dormant period if I restart trading first?"
     answer: "Yes, but you need to restart trading and then hold the shares for a further two years before disposal. The two-year qualifying period runs from the date the company resumes trading. If the company was dormant for 18 months and then traded for six months before sale, the two-year test is not met. You would need to wait until the company has been trading for two continuous years after the restart."
+keyTakeaways:
+  - "BADR gives an 18% CGT rate on the first £1 million of qualifying gains from share disposals from 6 April 2026 (14% from 6 April 2025 to 5 April 2026)."
+  - "The company must have been a trading company for at least two years before disposal; a dormant period falling within that two-year window can break the qualifying test."
+  - "HMRC's Capital Gains Manual (CG64050) accepts that a temporary cessation can still count as trading, provided the company intended to resume and took active steps to do so."
+  - "There is no fixed time limit for temporary cessation: a six-month gap in a ten-year history is likely acceptable, but a two-year gap in a three-year history is not."
+  - "If the dormant period lasted more than 12 months, take professional advice before assuming BADR is available, as the risk of HMRC challenge increases with the gap length."
+  - "If a company restarts trading after a dormant period, the two-year BADR clock runs from the date trading resumes, so shareholders must wait a further two continuous years before disposal."
 ---
 
 <p>Business Asset Disposal Relief (BADR) gives you an 18% Capital Gains Tax rate on the first £1 million of gains when you sell shares in your company (18% for disposals from 6 April 2026; the rate was 14% for disposals between 6 April 2025 and 5 April 2026). That is a significant saving compared to the standard 24% rate for non-residential asset gains. But there is a catch. The company must have been a <strong>trading company</strong> for at least two years before the disposal. And a dormant period can blow that requirement apart.</p>

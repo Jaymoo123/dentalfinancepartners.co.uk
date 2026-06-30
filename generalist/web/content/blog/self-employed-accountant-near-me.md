@@ -27,6 +27,12 @@ faqs:
     answer: "Ask how many self employed clients they work with, what software they use, how they handle HMRC enquiries, and whether they are registered with ICAEW or ACCA. Also ask for a fixed fee quote and whether professional indemnity insurance is in place. Listen for specific examples relevant to your business type, not vague promises."
   - question: "Will an accountant save me more than they cost?"
     answer: "In most cases, yes. A good accountant identifies allowable expenses you miss, advises on pension contributions to reduce your tax bill, and keeps you compliant with HMRC. They also handle enquiries if HMRC challenges your return. The tax savings and time saved typically outweigh the fee. But this depends on choosing the right accountant for your situation."
+keyTakeaways:
+  - "Under Making Tax Digital, self employed people with qualifying income over £50,000 must comply from April 2026, those over £30,000 from April 2027, and over £20,000 from April 2028."
+  - "\"Accountant\" is not a regulated UK term, so anyone can use it; look for ICAEW or ACCA registration, which requires exams, a code of conduct, and indemnity insurance."
+  - "Class 2 National Insurance was abolished from 6 April 2024, so self employed people now pay only Class 4 NIC."
+  - "The VAT registration threshold is £90,000 turnover; a good accountant flags when you approach it and advises whether to register voluntarily or wait."
+  - "A sole trader under £50,000 turnover typically pays £100 to £150 per month for bookkeeping, tax filing, and year-end accounts; a basic annual return costs £300 to £600."
 ---
 
 <p>If you are searching for a "self employed accountant near me", you are probably running a business on your own and realising the tax side is more involved than you expected. That is normal. Most sole traders, freelancers, and contractors reach this point when their first self assessment deadline approaches, or when HMRC sends a letter they do not fully understand.</p>

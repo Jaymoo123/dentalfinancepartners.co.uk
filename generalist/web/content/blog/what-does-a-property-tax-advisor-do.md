@@ -19,6 +19,13 @@ h1: "What Does a Property Tax Advisor Do and Do You Need One for Your UK Propert
 summary: "A property tax advisor helps UK landlords, developers and investors manage the tax side of property: SDLT, capital gains, corporation tax on property income, VAT on conversions, and the 60-day CGT reporting rule. Here is when you need one, what they actually do, and what it costs."
 schema: ""
 faqs: []
+keyTakeaways:
+  - "SDLT on second homes and investment properties carries a 5% surcharge on each band since 31 October 2024, adding £13,750 to the bill on a £275,000 purchase."
+  - "CGT on UK residential property is 18% for basic rate and 24% for higher rate taxpayers, reported and paid within 60 days of completion."
+  - "Holding property in a limited company means 19% to 25% corporation tax on rental profits, with dividends taxed at 10.75%, 35.75%, or 39.35% from 6 April 2026."
+  - "Converting a commercial building to residential use can qualify for reduced 5% VAT, provided it has been empty for 2 years or the conversion changes the number of dwellings."
+  - "Specialist property tax advice is generally warranted when you hold 3 or more properties, use a limited company, develop or convert property, or buy or sell property worth over £500,000."
+  - "Ongoing compliance for a portfolio of 5 to 10 properties typically costs £1,500 to £3,000 per year, covering self assessment or corporation tax returns, VAT returns, and 60-day CGT filings."
 ---
 
 <h2>What Is a Property Tax Advisor?</h2>

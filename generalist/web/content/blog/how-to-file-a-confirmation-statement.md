@@ -27,6 +27,24 @@ faqs:
     answer: "Online filing costs £34. Paper filing by post costs £62. Online is faster and cheaper. There is no automatic late filing penalty for the confirmation statement itself, but non-compliance is a criminal offence."
   - question: "Do I need to file a confirmation statement if my company is dormant?"
     answer: "Yes. Dormant companies must still file a confirmation statement every 12 months. There is no exemption. If you no longer need the company, consider voluntary strike off using form DS01 instead of letting it fall into default."
+keyTakeaways:
+  - "Every UK limited company must file a confirmation statement (form CS01) at least once every 12 months under the Companies Act 2006."
+  - "Online filing costs £34 and takes about 10 minutes; paper filing by post to Companies House costs £62 and takes 5 to 10 working days to process."
+  - "Missing the deadline can result in a fine of up to £5,000 and a criminal record for the director, and the company can be struck off the register."
+  - "If a company is struck off, all assets including bank accounts and property become property of the Crown."
+  - "Any individual or legal entity owning more than 25% of shares or voting rights must be listed as a person with significant control (PSC)."
+  - "Dormant companies must still file a confirmation statement every 12 months, as there is no exemption."
+howToSteps:
+  - name: "Log into Companies House WebFiling"
+    text: "Go to ewf.companieshouse.gov.uk and enter your company number and authentication code to access the online filing service."
+  - name: "Select the confirmation statement option"
+    text: "Choose 'File a confirmation statement' from the menu and carefully review all the information Companies House currently holds for your company."
+  - name: "Update any changes"
+    text: "Update changed details directly in the form, such as director service addresses, shareholder addresses, or SIC codes; for major changes like director appointments or resignations, file the relevant form (AP01, TM01) first."
+  - name: "Confirm the statement and pay"
+    text: "Tick the boxes confirming the details are correct, submit the form, and pay the £34 fee by debit or credit card."
+  - name: "Save the confirmation receipt"
+    text: "Download and save the PDF receipt issued by Companies House as proof of timely filing and to track your next 12-month deadline."
 ---
 
 <p>Every UK limited company must file a confirmation statement at least once every 12 months. It is not optional. It is a legal requirement under the Companies Act 2006, and missing the deadline carries real consequences including a criminal record and a fine of up to £5,000.</p>

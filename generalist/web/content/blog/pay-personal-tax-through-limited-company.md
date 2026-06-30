@@ -27,6 +27,13 @@ faqs:
     answer: "No. That creates a director's loan in your name (if you are the director) or a distribution/gift if your spouse is not a director. It triggers the same S455 tax and P11D consequences. The safest route is to extract cash from the company through dividends or salary, then pay the tax from your personal account."
   - question: "Is there any way to avoid the Section 455 tax if my company pays my personal tax bill?"
     answer: "Yes, if you repay the full loan amount within 9 months and 1 day of the company's year-end, no S455 tax is due. You can also avoid the benefit in kind charge by charging interest at the official HMRC rate (2.25%) on the loan. Alternatively, if you have a credit balance in your director's loan account (you lent money to the company previously), you can draw on that credit without triggering a new loan."
+keyTakeaways:
+  - "HMRC treats any company payment of a director's personal tax bill as a director's loan, not a legitimate business expense, triggering separate tax consequences."
+  - "A director's loan over £10,000 must be reported on a P11D, with the director taxed on notional interest at HMRC's official rate of 2.25% (April 2025)."
+  - "Section 455 tax at 35.75% applies to loans made on or after 6 April 2026 that remain unpaid beyond 9 months and 1 day of the company's year-end."
+  - "The correct approach is to extract cash through a dividend or salary, then pay the personal tax bill from a personal bank account, not the company account."
+  - "A director with a credit balance in their director's loan account can use it to cover personal tax bills without triggering Section 455 tax or a benefit in kind charge."
+  - "Dividends used to fund a personal tax payment are taxable at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate) from 6 April 2026."
 ---
 
 <p>Can you pay your personal tax bill through your limited company? The short answer is: rarely, and only in very specific circumstances. If you simply ask your company to pay your self assessment tax bill or capital gains tax directly, HMRC will treat that payment as a director's loan. That creates a separate set of tax consequences, often more expensive than the original bill.</p>

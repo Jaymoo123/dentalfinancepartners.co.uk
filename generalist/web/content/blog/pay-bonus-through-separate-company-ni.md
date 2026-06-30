@@ -27,6 +27,13 @@ faqs:
     answer: "No. If the loan is made for the purpose of remunerating an employee, the disguised remuneration rules treat the loan itself as earnings. PAYE and NI are due on the loan amount. A genuine commercial loan with a repayment schedule is different, but HMRC will scrutinise the commerciality closely."
   - question: "What legitimate ways exist to reduce NI on employee bonuses?"
     answer: "Pension salary sacrifice is the most effective: employer pension contributions are exempt from employer and employee NI. Share schemes (SIP, EMI) can also reduce NI. Dividends for shareholder employees carry no NI but are paid from post-tax profits. Trivial benefits under £50 per gift are NI-free but capped at £300 for directors of close companies."
+keyTakeaways:
+  - "Part 7A of ITEPA 2003 treats a bonus routed through a separate company as earnings from the original employment, so full PAYE and Class 1 NI fall due."
+  - "On a £20,000 bonus, the NI saving is roughly £3,400, but HMRC can recover £11,400 in tax and NI alone, before interest at 4.25% per year and penalties."
+  - "Deliberate non-disclosure can attract penalties of up to 100% of the tax understated, plus an extra 60% if the GAAR applies."
+  - "HMRC typically opens enquiries into these arrangements within 12 to 18 months of the return being filed and can review up to 4 to 6 years of returns."
+  - "Pension salary sacrifice is the most effective legitimate alternative: employer pension contributions are exempt from both employer and employee NI, saving 15% on the employer side."
+  - "Dividends paid to shareholder-employees carry no NI but are taxed at 10.75%, 35.75%, or 39.35% in 2026/27 depending on income band, and can only be paid to shareholders."
 ---
 
 <p>You have a profitable year. Your key employee delivered. You want to pay them a £20,000 bonus. Then you think: what if I pay that bonus through a separate limited company I also control? The bonus comes from Company B, not Company A. Company B has no other activity. You hope the payment avoids employer National Insurance at 15% on Company A's payroll, and maybe employee NI too.</p>

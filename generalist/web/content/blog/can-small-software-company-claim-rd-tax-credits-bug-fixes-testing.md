@@ -27,6 +27,13 @@ faqs:
     answer: "Document the problem before you start fixing it. Record what you tried, what did not work, and why. Note the resources you consulted and why they did not provide a solution. If a competent developer could have fixed the bug using standard documentation or common knowledge, it is not R&D. Your records should demonstrate that the fix required genuine experimentation."
   - question: "What happens if HMRC challenges my R&D claim for bug fixes and testing?"
     answer: "HMRC may open a compliance check and request supporting evidence. If your claim includes routine bug fixes and testing without proper documentation, they may reduce or reject the claim. Penalties can apply if the claim is found to be deliberately overstated. Working with an ICAEW-qualified accountant who specialises in R&D claims significantly reduces this risk."
+keyTakeaways:
+  - "Bug fixes and testing qualify for R&D tax credits only when they resolve a genuine technological uncertainty that a competent professional could not solve through routine methods."
+  - "Routine regression testing, unit testing, and user acceptance testing do not qualify as R&D, because they involve no technological uncertainty."
+  - "Under the merged RDEC scheme, which applies to accounting periods starting on or after 1 April 2024, qualifying companies receive a 20% above-the-line expenditure credit on qualifying costs."
+  - "For a profitable company paying the 19% small profits rate, the net benefit is approximately 16% of qualifying R&D spend."
+  - "Loss-making companies spending 30% or more of total costs on R&D may qualify for the Enhanced R&D Intensive Support scheme (ERIS), where the 14.5% payable credit rate applies."
+  - "Bug fixes made after a product is released are usually maintenance rather than R&D; only pre-release work on unresolved technological uncertainties qualifies."
 ---
 
 <p>If you run a small software company in the UK, you have probably heard that R&D tax credits can be valuable. The question is whether the time your developers spend fixing bugs and running tests counts as qualifying R&D expenditure.</p>

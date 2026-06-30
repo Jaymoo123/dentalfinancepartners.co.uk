@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "HMRC requires each sole trader expense to be 'wholly and exclusively' for business; mixed-use costs such as a vehicle or home office are only deductible in the business proportion."
+  - "The approved mileage rate for cars is 55p per mile for the first 10,000 business miles in 2026/27 (45p applied up to 2025/26), dropping to 25p per mile thereafter."
+  - "The HMRC simplified home-office flat rate caps at £312 per year; sole traders with a dedicated room typically claim more by calculating actual costs based on floor area."
+  - "The Annual Investment Allowance lets sole traders deduct 100% of the cost of most plant and machinery in the year of purchase, up to £1,000,000."
+  - "Client entertainment is never an allowable expense, but staff entertainment is allowable up to £150 per head per year."
+  - "Making Tax Digital for Income Tax is mandatory from April 2026 for sole traders with qualifying income over £50,000, and from April 2027 for those over £30,000."
 ---
 <p>If you are a sole trader, the difference between a good tax bill and a bad one often comes down to one thing: what you claim. Claim everything you are entitled to and your taxable profit drops. Miss something and you pay tax you did not need to.</p>
 

@@ -27,6 +27,13 @@ faqs:
     answer: "No date has been set. HMRC has deferred all partnerships from the current phased rollout. HMRC originally indicated that general partnerships with individual members only might join at a later date, but has not confirmed when. Partnerships with corporate members are more complex and are not in any current published plans. The position is deferred, date to be confirmed."
   - question: "Is there anything a mixed-member partnership should do now?"
     answer: "Not as a mandatory MTD ITSA step for the partnership itself. However, any individual partner who has their own sole-trade or property income above the threshold needs to prepare for the individual mandate from the applicable date. Good digital record-keeping across the partnership is also sensible regardless of when the partnership mandate eventually arrives. Speaking to an accountant about your specific structure is a worthwhile step."
+keyTakeaways:
+  - "HMRC has deferred all partnerships from MTD ITSA, so no partnership is mandated from April 2026, April 2027, or April 2028."
+  - "Mixed-member partnerships, which include corporate partners alongside individual partners, are deferred from MTD ITSA with no confirmed mandate date published."
+  - "The individual MTD ITSA mandate phases in at qualifying income over £50,000 from 6 April 2026, over £30,000 from 6 April 2027, and over £20,000 from 6 April 2028."
+  - "An individual partner with their own separate sole-trade or property income above the relevant threshold is caught by the individual mandate, regardless of the partnership deferral."
+  - "A partner's profit share from the mixed-member partnership is not itself brought into MTD ITSA under the April 2026 rules."
+  - "Corporate partners pay tax through corporation tax rather than income tax, so a corporate partner's presence in a partnership does not create an earlier MTD ITSA obligation."
 ---
 
 <p>A large number of articles and guides claim that mixed-member partnerships face a Making Tax Digital for Income Tax Self Assessment (MTD ITSA) deadline of April 2026. This is not correct. HMRC has deferred all partnerships from the current MTD ITSA rollout. No partnership is mandated from April 2026, and no date has been confirmed for mixed-member partnerships.</p>

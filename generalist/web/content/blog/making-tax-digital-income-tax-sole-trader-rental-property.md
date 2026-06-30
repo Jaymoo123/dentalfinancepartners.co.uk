@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, but only if the spreadsheet is linked to bridging software that connects to HMRC's API. You cannot manually enter figures into the HMRC portal. The bridging software must be MTD-compatible. Most accountants recommend using dedicated accounting software like Xero or FreeAgent instead, as it simplifies the process for multiple income streams."
   - question: "When does MTD ITSA start for landlords with rental income over £30,000?"
     answer: "If your total qualifying income from self-employment and property combined exceeds £30,000, you are mandated from April 2027. If it exceeds £50,000, you are mandated from April 2026. The £20,000 threshold applies from April 2028. Check your combined income for the current tax year to see which threshold applies to you."
+keyTakeaways:
+  - "MTD ITSA becomes mandatory from April 2026 for those with combined qualifying income over £50,000, from April 2027 for those over £30,000, and from April 2028 for those over £20,000."
+  - "The income threshold combines self-employment and property letting income, but HMRC requires a separate quarterly update for each income stream; you cannot merge them into one submission."
+  - "A sole trader with a rental property submits eight quarterly updates a year: four for the trade and four for the property, each due about a month after quarter end."
+  - "After the four quarterly updates, a single final declaration covering both income streams replaces the SA100 self assessment return and can include dividends, bank interest, and capital gains."
+  - "Rental mortgage interest is not an allowable expense for profit but must still be reported each quarter; HMRC uses those figures to apply the 20% financing-cost tax credit."
+  - "Rental income below £1,000 still counts toward the MTD threshold unless you formally elect for the property allowance; you cannot simply ignore the income."
 ---
 
 <p>Making Tax Digital for income tax (MTD ITSA) is the biggest change to how sole traders, landlords, and partnerships report their profits since self assessment began. It goes live from April 2026 for anyone with qualifying income over £50,000, and from April 2027 for those over £30,000. From April 2028, it drops to £20,000.</p>

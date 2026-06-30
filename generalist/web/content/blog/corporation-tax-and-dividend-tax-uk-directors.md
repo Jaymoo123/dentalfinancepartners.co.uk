@@ -23,6 +23,13 @@ faqs:
     answer: "No. Corporation tax is paid by the company on its profits. Dividends are paid from the post-tax profits that remain. You pay dividend tax personally on dividends you receive, but the company does not pay corporation tax again on those dividends."
   - question: "Can I avoid dividend tax by taking all profit as salary?"
     answer: "You can, but it is almost always worse from a tax perspective. Salary above the primary threshold (£12,570) attracts employee NI at 8% and employer NI at 15% (above the £5,000 secondary threshold, from 6 Apr 2025)."
+keyTakeaways:
+  - "In 2025/26, corporation tax is 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief applied between those thresholds."
+  - "In 2025/26 the dividend allowance fell to £500 per person (from £1,000), with dividend tax rates of 8.75% basic, 33.75% higher and 39.35% additional."
+  - "The most tax-efficient pay structure for directors in 2025/26 is a £12,570 salary plus about £37,200 in dividends, giving a personal tax bill of roughly £3,256."
+  - "A director's loan not repaid within 9 months and 1 day of the company's year-end triggers an S455 charge, which the company can reclaim only once the loan is repaid."
+  - "Corporation tax is due 9 months and 1 day after the accounting period ends; dividend tax is reported via self assessment and paid by 31 January."
+  - "Once company profits exceed approximately £180,000, the limited company structure starts to become more tax efficient than operating as a sole trader."
 ---
 
 <p>If you run your business through a limited company, you pay two separate taxes on your profits. Corporation tax is charged on the company's profits. Dividend tax is charged on the money you take out of those profits as a shareholder. Understanding how corporation tax and dividend tax work together is the single most important piece of tax planning you will do as a director.</p>

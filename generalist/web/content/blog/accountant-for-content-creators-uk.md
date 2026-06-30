@@ -27,6 +27,12 @@ faqs:
     answer: "Yes, if they are used wholly and exclusively for your business. If you buy them through a limited company, you can claim the full cost as a capital allowance in the year of purchase using the Annual Investment Allowance (up to £1m per year). If you are a sole trader, you claim capital allowances on your self assessment return. Keep receipts for everything, including second-hand purchases from eBay or Facebook Marketplace."
   - question: "Do I charge VAT on sponsorship income?"
     answer: "If you are VAT registered (mandatory once your turnover exceeds £90,000 in a rolling 12-month period, or voluntary if below), you must charge 20% VAT on sponsorship fees invoiced to UK-based brands. If the brand is based outside the UK, the VAT treatment depends on whether they are in the EU or outside it. Your accountant should set up your invoicing template to handle each scenario correctly."
+keyTakeaways:
+  - "The VAT registration threshold for 2025/26 is £90,000; creators whose combined income exceeds this in any rolling 12-month period must register and charge 20% VAT on UK sales."
+  - "Making Tax Digital for Income Tax becomes mandatory from April 2026 for self-employed creators with qualifying income over £50,000, and from April 2027 for those with income over £30,000."
+  - "From 6 April 2026, dividend tax rates are 10.75% (basic rate), 35.75% (higher rate) and 39.35% (additional rate); the 2025/26 rates were 8.75% (basic) and 33.75% (higher)."
+  - "Incorporating is typically worthwhile once net profits consistently exceed £50,000 to £60,000, at which point the tax saving usually outweighs the higher accountancy costs."
+  - "Under the VAT Flat Rate Scheme, limited cost traders (spending under 2% of turnover on goods) pay 16.5%; most creators fall here, so it may not save money."
 ---
 
 <p>If you earn money from YouTube, TikTok, Instagram, a podcast or a blog, you are running a business. HMRC sees it that way. And the tax rules that apply to your income, your expenses and your business structure are not the same as for a typical freelancer or a traditional small business.</p>

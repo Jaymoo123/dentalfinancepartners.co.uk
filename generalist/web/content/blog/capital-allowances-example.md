@@ -30,6 +30,12 @@ imageCredit:
   photographer_url: https://www.pexels.com/@tara-winstead
   source: Pexels
   source_url: https://www.pexels.com/photo/close-up-shot-of-coins-7111583/
+keyTakeaways:
+  - "The Annual Investment Allowance lets businesses deduct 100% of qualifying plant and machinery costs in the year of purchase, up to a £1,000,000 annual limit, covering both new and second-hand assets."
+  - "The main pool writing down allowance fell from 18% to 14% from April 2026 under FA 2026 s.28; the special rate pool stays at 6%."
+  - "Full Expensing gives limited companies 100% first-year relief on new plant and machinery with no cap from 1 April 2023; sole traders and partnerships cannot use it."
+  - "Structures and Buildings Allowance applies to new commercial builds at 3% per year on a straight-line basis over 33.33 years, separate from plant and machinery allowances."
+  - "The £1,000,000 AIA limit is shared across companies under common control and is time-apportioned for accounting periods shorter than 12 months."
 ---
 <h2>What Are Capital Allowances?</h2>
 

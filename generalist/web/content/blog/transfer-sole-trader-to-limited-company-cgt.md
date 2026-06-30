@@ -19,6 +19,30 @@ h1: "How to Transfer a Sole Trader Business to a Limited Company Without Trigger
 summary: "Incorporation relief allows you to transfer your sole trader business assets to a new limited company without an immediate capital gains tax charge. The relief is automatic if certain conditions are met, but the paperwork matters. We explain how the mechanics work, what qualifies, and the traps that catch people out."
 schema: ""
 faqs: []
+keyTakeaways:
+  - "Incorporation relief under TCGA 1992 s.162 defers CGT when a sole trader transfers a business as a going concern to a limited company in exchange for shares."
+  - "The relief applies automatically when all conditions are met, but you can elect out in writing within two years of the transfer if paying CGT now is preferable."
+  - "If any consideration is taken as cash or loan account credit, only the share proportion of the gain is deferred; the cash proportion is immediately chargeable to CGT."
+  - "All business assets except cash must be transferred to the company; retaining any asset such as a freehold or goodwill breaks the relief on the entire transfer."
+  - "Business Asset Disposal Relief applies 14% for 2025/26 disposals, rising to 18% from 6 April 2026, on the first £1 million of lifetime gains including any deferred incorporation gain."
+  - "For a transfer in 2024/25, the deadline to claim missed incorporation relief is 31 January 2028."
+howToSteps:
+  - name: "Get a business valuation"
+    text: "Have a qualified valuer assess the market value of your business assets, including goodwill, equipment, stock, and intellectual property, before the transfer takes place."
+  - name: "Incorporate the company"
+    text: "Register the new limited company at Companies House, ensuring the company name, SIC code, and director details are correct; the company must not have traded before the transfer."
+  - name: "Register the company for VAT"
+    text: "If you are VAT-registered as a sole trader, register the new company for VAT using form VAT1 or VAT2 before the transfer date; HMRC can take up to 30 days to process the registration."
+  - name: "Open a business bank account"
+    text: "Open a dedicated bank account for the company so the business bank balance can be transferred into it on completion."
+  - name: "Prepare the transfer agreement"
+    text: "Instruct your solicitor or accountant to draft a legal transfer agreement setting out all business assets being transferred, the consideration (shares, cash, loan account), and the effective date."
+  - name: "Issue the shares"
+    text: "The company issues shares to you personally in exchange for the business assets; update the share certificate and the company's register of members to reflect this accurately."
+  - name: "File the incorporation relief claim"
+    text: "Claim the relief by including the CGT computation on the capital gains pages (SA108) of your self assessment return for the year of transfer, with a white-space disclosure explaining the relief claimed."
+  - name: "Notify HMRC of the company's commencement"
+    text: "Use form CT41G to tell HMRC the company has started trading, which triggers the corporation tax registration process."
 ---
 
 <p>If you are a sole trader and you have decided to incorporate your business into a limited company, you are looking at a potential capital gains tax (CGT) bill on the transfer of your business assets. That is the default position. HMRC treats the transfer as a disposal of your assets to the company, and a disposal triggers CGT on any gain above what you originally paid for them.</p>

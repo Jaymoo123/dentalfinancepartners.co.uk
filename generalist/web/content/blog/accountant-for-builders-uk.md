@@ -27,6 +27,13 @@ faqs:
     answer: "HMRC charges automatic penalties for late CIS returns. The first late return triggers a £100 penalty. If you file late again within 12 months, the penalty rises to £200. After six late returns in 12 months, penalties go up to £300 per return. HMRC also charges interest on late payments of CIS deductions. If you know you will miss the deadline, file a nil return to avoid the penalty. A good accountant files your CIS returns automatically each month so you never miss the date."
   - question: "Should I set up as a limited company or stay as a sole trader builder?"
     answer: "It depends on your turnover, profit level, and long term plans. Limited companies pay corporation tax at 19% to 25% on profits, which can be lower than income tax rates for sole traders. But running a company means more compliance work, including annual accounts, corporation tax returns, and payroll. If you are earning under £50,000 profit, a sole trader structure is simpler and often cheaper. Above that, the limited company structure usually saves tax, especially if you reinvest profits into the business. Speak to an accountant who can model both scenarios with your actual numbers."
+keyTakeaways:
+  - "Under CIS, contractors must deduct 20% from most subcontractor payments and file a monthly CIS300 return by the 19th of each month for electronic submissions."
+  - "New-build residential construction services are zero-rated (0%) for VAT, while renovations of properties empty for two or more years and commercial-to-residential conversions attract a 5% rate."
+  - "MTD for Income Tax starts for self-employed builders with turnover over £50,000 from April 2026, with the threshold dropping to £30,000 from April 2027 and £20,000 from April 2028."
+  - "Limited companies pay corporation tax at 19% on profits under £50,000 and 25% on profits over £250,000, with marginal relief applying between those thresholds."
+  - "From 6 April 2026 (FA 2026 s.4), dividend tax rates are 10.75% basic, 35.75% higher, and 39.35% additional, with a £500 annual dividend allowance."
+  - "Builders can claim the Annual Investment Allowance on qualifying plant and machinery, including vans, tools, and equipment, up to £1,000,000 per year."
 ---
 
 <h2>Why Builders Need a Different Kind of Accountant</h2>

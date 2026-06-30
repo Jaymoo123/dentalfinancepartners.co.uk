@@ -30,6 +30,12 @@ imageCredit:
   photographer_url: https://www.pexels.com/@bertellifotografia
   source: Pexels
   source_url: https://www.pexels.com/photo/2025-agenda-with-pencil-on-desk-29509452/
+keyTakeaways:
+  - "The Annual Investment Allowance (AIA) gives 100% tax relief on qualifying plant and machinery in the year of purchase, up to £1,000,000 per period, permanent from 1 April 2023."
+  - "Most cars are excluded from the AIA; vans, lorries, tractors, and other commercial vehicles qualify, as do tools, IT equipment, fixtures, and manufacturing machinery."
+  - "The main-pool writing down allowance falls from 18% to 14% from 1 April 2026 for companies and 6 April 2026 for unincorporated businesses (FA 2026 s.28)."
+  - "Full Expensing, available to limited companies only, gives uncapped 100% first-year relief on new main-rate plant and machinery, but not second-hand assets, which the AIA covers."
+  - "Associated companies must share the £1m AIA limit; a group of three associated companies each receives a £333,333 allowance."
 ---
 <h2>What Is the Annual Investment Allowance?</h2>
 

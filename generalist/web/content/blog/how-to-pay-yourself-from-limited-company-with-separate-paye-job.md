@@ -28,6 +28,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "If a PAYE job uses your £12,570 personal allowance, a second company salary is taxed at 20% from the first pound, plus 15% employer NI above the £5,000 secondary threshold."
+  - "Dividends attract no National Insurance for the company or the director, and are taxed at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate) in 2025/26."
+  - "The dividend allowance fell to £500 from 2024/25; only the first £500 of dividend income each year is free of dividend tax, with any excess at your marginal dividend rate."
+  - "If your Self Assessment liability exceeds £1,000 and under 80% was collected at source, HMRC requires payments on account (31 January and 31 July), each 50% of the prior-year liability."
+  - "Director's loans not repaid within 9 months and 1 day of the year-end trigger S455 tax at 33.75% in 2025/26, rising to 35.75% for loans made from 6 April 2026."
+  - "Directors who run a limited company payroll alongside a PAYE job must use tax code BR (20%) or D0 (40%), not the standard 1257L code, to avoid underpaying tax."
 ---
 <p>Most articles about how to pay yourself from a limited company assume you are a full-time director with no other income. That advice is fine if you are a contractor working through your own Ltd full time. But it is actively wrong if you have a separate PAYE job.</p>
 

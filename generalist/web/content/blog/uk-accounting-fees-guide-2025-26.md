@@ -28,6 +28,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "UK accounting fees in 2025/26 range from £200 per year for a basic sole trader return to £15,000 or more for a complex limited company with full advisory services."
+  - "A small limited company with two to three directors and turnover of £50,000 to £250,000 typically pays £1,500 to £3,000 per year, including VAT returns, payroll, and year-end accounts."
+  - "Contractors working through their own limited company generally pay £900 to £1,800 per year, covering compliance, IR35 review, and dividend planning."
+  - "London accountants typically charge 20 to 30% more than those in the North of England; a standard limited company service costing £1,800 in Manchester may cost £2,400 in London."
+  - "Monthly accounting fees run from £50 to £500 per month depending on service level; paying the annual total upfront usually saves 5 to 10%."
+  - "A sole trader or freelancer with turnover between £20,000 and £60,000 typically pays £400 to £700 per year for a self-assessment return and bookkeeping review in 2025/26."
 ---
 <p>If you run a UK business and you are wondering what you should be paying for an accountant in 2025/26, the honest answer is: it depends on what you need. A sole trader filing a straightforward tax return pays a very different fee to a limited company director with payroll, VAT, and quarterly management accounts.</p>
 

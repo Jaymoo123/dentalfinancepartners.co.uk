@@ -27,6 +27,13 @@ faqs:
     answer: "It depends on your income level and structure. A limited company can be more tax efficient once your profits exceed around £40,000 to £50,000 per year, because you pay corporation tax instead of income tax and national insurance on dividends. But a company also means more administrative work, filing annual accounts at Companies House, and running payroll. Your accountant can run the numbers for your specific situation and advise whether incorporation makes sense."
   - question: "How do I handle VAT on merchandise sales at EU gigs post Brexit?"
     answer: "Post Brexit, selling merchandise at EU gigs can trigger VAT registration obligations in each country you sell in, depending on volume and value. The IOSS (Import One Stop Shop) scheme can simplify VAT on low value distance sales to EU consumers. Your accountant should advise on whether you need to register in each country or can use IOSS. This is a complex area where specialist advice is essential."
+keyTakeaways:
+  - "Musicians can claim travel to gigs at 55p per mile for the first 10,000 business miles from 2026/27, a rate that was 45p per mile up to 2025/26."
+  - "VAT registration becomes compulsory once a musician's turnover exceeds £90,000 in any rolling 12-month period."
+  - "Making Tax Digital for Income Tax Self Assessment is mandatory from April 2026 for self-employment income above £50,000, falling to £30,000 from April 2027 and £20,000 from April 2028."
+  - "Musicians earning under £15,000 a year from straightforward affairs can typically file their own Self Assessment using software such as GoSimpleTax or FreeAgent."
+  - "A musician operating through a limited company pays corporation tax at 19% to 25% on profits and takes a combination of salary and dividends."
+  - "Sole trader musician accountancy fees are typically £600 to £1,200 per year; limited company musicians with VAT, payroll and foreign income typically pay £1,500 to £3,500 per year."
 ---
 
 <h2>Why Most Musicians Need Specialist Accounting</h2>

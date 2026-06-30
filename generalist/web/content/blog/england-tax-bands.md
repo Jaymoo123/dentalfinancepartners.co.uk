@@ -31,6 +31,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@tara-winstead
   source: Pexels
   source_url: https://www.pexels.com/photo/red-text-on-white-background-7111482/
+keyTakeaways:
+  - "The personal allowance for 2025/26 is £12,570, tapering to zero at £125,140 and creating a 60% effective marginal tax rate on income between £100,000 and £125,140."
+  - "England income tax rates for 2025/26 are 20% on taxable income from £12,571 to £50,270, 40% from £50,271 to £125,140, and 45% above £125,140."
+  - "The dividend allowance is £500 for 2025/26, so most dividends are taxed at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate)."
+  - "Class 2 NI for the self-employed was abolished from 6 April 2024; Class 4 NI is 6% on profits between £12,570 and £50,270, then 2% above that."
+  - "Corporation tax for 2025/26 is 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief applying between those thresholds."
+  - "Business Asset Disposal Relief applies at 14% for disposals from 6 April 2025, rising to 18% from 6 April 2026, within a £1 million lifetime limit."
 ---
 <h2>What Are the England Tax Bands for 2025/26?</h2>
 

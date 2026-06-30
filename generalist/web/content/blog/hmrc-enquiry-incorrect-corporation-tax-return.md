@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, but only with HMRC's agreement. You must write to them explaining the amendment and ask them to include it in the enquiry. If you discover an error that increases your tax, disclose it voluntarily. HMRC will treat it as a prompted disclosure, which still reduces penalties compared to them finding it first."
   - question: "How long does an HMRC corporation tax enquiry take?"
     answer: "Simple enquiries close in 3 to 6 months. Complex ones can take 12 to 18 months or longer. HMRC aims to complete most enquiries within 12 months. If they are dragging it out without good reason, you can request a closure notice. If they refuse, you can apply to the tax tribunal, though this is rare."
+keyTakeaways:
+  - "Careless errors attract penalties of 0% to 30% of the extra tax due; deliberate errors 20% to 70%; deliberate and concealed errors 30% to 100%."
+  - "HMRC charges late payment interest at base rate plus 4% (raised from plus 2.5% on 6 April 2025), running from the original tax due date and not negotiable."
+  - "HMRC must issue the notice of enquiry within 12 months of the statutory filing deadline; for a return filed late, the window extends beyond that."
+  - "Unprompted voluntary disclosure reduces penalties significantly: for careless errors the penalty can start at 0%, whereas HMRC finding the error first means a minimum of 15%."
+  - "Simple enquiries typically close in 3 to 6 months; complex cases can take 18 months or longer, though HMRC aims to complete most within 12 months."
+  - "Once HMRC issues a closure notice, additional tax, interest, and penalties are due within 30 days, and HMRC cannot reopen the same return unless previously unknown fraud or negligence emerges."
 ---
 
 <p>HMRC opens enquiries into corporation tax returns every year. If you have received a letter saying your company's return is being checked, you need to know what happens next. Especially if there is an error in that return.</p>

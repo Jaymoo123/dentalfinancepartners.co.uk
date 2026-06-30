@@ -34,6 +34,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@n-voitkevich
   source: Pexels
   source_url: https://www.pexels.com/photo/person-filing-tax-documents-6863330/
+keyTakeaways:
+  - "You can claim HMRC tax back for up to four previous tax years."
+  - "For employment expense claims under £2,500, use form P87; larger amounts require a full self assessment tax return."
+  - "The first £30,000 of a statutory redundancy payment is tax-free, so tax wrongly deducted on that portion can be reclaimed from HMRC."
+  - "Online refund claims through your personal tax account are typically processed within 5 to 10 working days, while paper claims can take up to 8 weeks."
+  - "Third-party claims companies can charge up to 30% of your refund, but the same claim can be made for free using HMRC's own online tools."
+  - "For self assessment returns, you have up to 12 months from the filing deadline to amend directly; after that, you may need to write to HMRC for overpayment relief."
 ---
 <h2>What Does HMRC Tax Back Mean?</h2>
 

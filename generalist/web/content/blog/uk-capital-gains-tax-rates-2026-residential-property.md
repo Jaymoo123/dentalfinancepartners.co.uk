@@ -27,6 +27,13 @@ faqs:
     answer: "BADR applies to residential property only if it qualifies as a genuine business asset, such as a property used in a trading business (for example, a care home or commercial guesthouse run with staff and trading infrastructure). The furnished holiday letting regime was abolished from 6 April 2025 and no longer qualifies for BADR. From April 2026, the BADR rate is 18% on the first £1 million of lifetime gains."
   - question: "Can I avoid CGT on a property that was once my main home?"
     answer: "You may get partial Principal Private Residence relief. The gain is apportioned between the period you lived there (exempt) and the period you did not (chargeable). The final 9 months of ownership are always exempt. Letting relief may also apply in limited circumstances."
+keyTakeaways:
+  - "In 2026/27, UK capital gains tax on residential property is charged at 18% for basic rate taxpayers and 24% for higher and additional rate taxpayers."
+  - "The annual CGT allowance is £3,000 for 2026/27, meaning only gains above this threshold are chargeable."
+  - "Sellers must report and pay residential property CGT within 60 days of completion, with HMRC interest from day 61 and penalties starting at £100 for a late return."
+  - "Business Asset Disposal Relief rises to 18% from 6 April 2026 and applies to the first £1 million of lifetime qualifying gains on genuine business assets."
+  - "The furnished holiday letting regime was abolished from 6 April 2025, so former FHL properties are now taxed as standard residential property and do not qualify for BADR."
+  - "Principal Private Residence relief exempts gains for the full period a property was the owner's main home, plus the final 9 months of ownership."
 ---
 
 <p>If you sell a residential property that is not your main home, you will pay capital gains tax on the profit. The UK capital gains tax rates for residential property in 2026/27 are 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates have been in place since 30 October 2024, when the previous 10% and 20% rates were scrapped for property gains.</p>

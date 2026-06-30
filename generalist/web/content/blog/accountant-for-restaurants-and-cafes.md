@@ -19,6 +19,13 @@ h1: "Accountant for Restaurants and Cafes: Why a Specialist Matters"
 summary: "Running a restaurant or cafe means managing VAT on food, tips, payroll for front-of-house and kitchen staff, and tight margins. A specialist accountant for restaurants knows these challenges. Here is what to look for and how the right support changes your bottom line."
 schema: ""
 faqs: []
+keyTakeaways:
+  - "Cold takeaway food is zero-rated for VAT, hot takeaway food is standard-rated at 20%, and eat-in food is standard-rated regardless of temperature."
+  - "The Flat Rate VAT Scheme rate for catering is 12.5%; limited cost traders use 16.5%, and you cannot reclaim input VAT except on capital assets over £2,000."
+  - "Card tips paid through the till are treated as the employer's money and must go through PAYE and NI; cash tips given directly to staff by customers are outside PAYE."
+  - "A tronc scheme operated by an independent tronc master (not a director) means the employer does not pay employer NI on tips distributed to staff."
+  - "Kitchen fit-outs and extraction installations can fall under CIS: deduct 20% from the builder's labour (30% if unregistered), or HMRC charges the shortfall plus penalties."
+  - "From April 2026, self-employed restaurant owners with qualifying income over £50,000 must use MTD-compatible software; the threshold drops to £30,000 in April 2027 and £20,000 in April 2028."
 ---
 
 <p>Running a restaurant, cafe, or takeaway in the UK is a cash-intensive, margin-sensitive business. Your food cost, labour cost, VAT liability, and tips allocation all interact in ways that a general high-street accountant rarely sees. That is why finding the right <strong>accountant for restaurants</strong> makes a direct difference to what you keep after tax.</p>

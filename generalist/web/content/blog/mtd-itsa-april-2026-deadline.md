@@ -25,6 +25,13 @@ faqs:
     answer: "Limited companies, partnerships (for now), trusts, and individuals with qualifying income below £30,000 are not required to comply from April 2026. Those with income between £30,000 and £50,000 are in scope from April 2027. From 6 April 2028 the threshold drops to £20,000, bringing in those with qualifying income between £20,000 and £30,000. If your qualifying income is below £20,000, you are not currently mandated but can volunteer."
   - question: "What software do I need for MTD ITSA?"
     answer: "You need MTD compatible software such as Xero, FreeAgent, QuickBooks, Sage, or GoSimpleTax. Spreadsheets can be used if linked to bridging software that converts the data into the required digital format. Paper records are not acceptable. You must keep digital records of all income and expenses throughout"
+keyTakeaways:
+  - "MTD ITSA is mandatory from April 2026 for self-employed people and landlords with qualifying income above £50,000, measured on the 2024/25 tax return."
+  - "Qualifying income counts gross self-employment turnover and gross property rents before expenses; employment, pension, savings, and dividend income are excluded."
+  - "The first quarterly update, covering 6 April to 5 July 2026, must be submitted to HMRC by 5 August 2026."
+  - "The income threshold drops to £30,000 in April 2027 and falls further to £20,000 from 6 April 2028, bringing more taxpayers into the mandate."
+  - "Payments on account on 31 January and 31 July continue unchanged; MTD ITSA changes the reporting structure, not when tax is paid."
+  - "Each missed quarterly submission earns a penalty point, and accumulating enough points within a set period triggers a financial penalty."
 ---
 
 <p>Making Tax Digital for Income Tax Self Assessment (MTD ITSA) goes live from April 2026. If you are self employed, a sole trader, or a landlord with qualifying income above £50,000, you must comply from the start. If your income is between £30,000 and £50,000, your deadline is April 2027. From 6 April 2028 the threshold drops again to £20,000, bringing in those with qualifying income between £20,000 and £30,000. Below £20,000, you are not currently mandated, but voluntary entry is open.</p>

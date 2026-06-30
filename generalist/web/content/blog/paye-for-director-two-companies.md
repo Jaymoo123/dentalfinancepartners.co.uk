@@ -27,6 +27,13 @@ faqs:
     answer: "The director gets double the personal allowance, meaning too little tax is deducted. HMRC will collect the underpayment, usually through a reduced tax code the following year. The director may also need to pay the underpayment through self assessment."
   - question: "Do I need to file separate P60s and P11Ds for each company?"
     answer: "Yes. Each company issues its own P60 to the director at year end. If the director receives benefits from both companies, each files its own P11D and P11D(b). The director includes all employment income and benefits on their self assessment return."
+keyTakeaways:
+  - "HMRC typically allocates the full personal allowance (code 1257L) to a director's main employment and a BR (20%) or D0 (40%) code to the second employment."
+  - "National Insurance is calculated separately at each employment: in 2025/26 the primary threshold is £12,570 per employment and the employee rate is 8%, not applied to combined earnings."
+  - "Employer NICs are charged at 15% on earnings above the secondary threshold of £5,000 per employment from 6 April 2025, so each company deducts its own threshold independently."
+  - "Directors use an annual earnings period for NIC purposes, meaning each company calculates NICs on its own total annual payments to the director, not on each payslip."
+  - "Each company must file its own FPS, P60, P11D and P11D(b); the director must report all employment income from both companies on their self assessment return (SA100)."
+  - "If both companies mistakenly use code 1257L, the director receives double the personal allowance and HMRC will recover the underpayment, usually through a reduced tax code the following year."
 ---
 
 <p>If you run payroll for someone who is also a director of another company, you need to handle their PAYE carefully. HMRC treats each employment separately for National Insurance, but combines them for tax code purposes. Get it wrong and you could under-deduct tax, overpay NI, or trigger penalties.</p>

@@ -27,6 +27,13 @@ faqs:
     answer: "Under the annual earnings basis, HMRC treats your entire director salary for the tax year as one lump sum. The NI thresholds are applied annually rather than per pay period. This means your first payroll run of the tax year sets your NI position for the whole year. If you take a large bonus in month one, you pay the full year's NI on that single payment. The total NI due is the same regardless of timing, but it is collected up front."
   - question: "Can a director avoid employer National Insurance?"
     answer: "Not entirely, but you can minimise it. Keep your salary at or below the secondary threshold (£5,000 from 6 April 2025) and no employer NI is due. If you pay above that, employer NI at 15% applies on the excess. The Employment Allowance (up to £10,500) can offset your employer NI bill if you have at least one other employee. Dividends attract no employer NI, which is why the salary plus dividends structure is standard for directors."
+keyTakeaways:
+  - "Directors pay Class 1 National Insurance on an annual earnings basis, meaning HMRC applies full annual thresholds to total salary for the year rather than resetting each pay period."
+  - "For 2025/26, employee NI on a director's salary is 8% on earnings between £12,571 and £50,270, dropping to 2% on earnings above £50,270."
+  - "Employer NI is charged at 15% on director salary above the secondary threshold of £5,000, effective from 6 April 2025."
+  - "The Employment Allowance (up to £10,500 in 2025/26) can offset a director's employer NI bill, but sole directors with no other employees cannot claim it."
+  - "Dividends attract no National Insurance, making a low director salary topped up with dividends the standard tax-efficient structure for limited company directors."
+  - "Class 2 NIC was abolished from 6 April 2024; directors of limited companies pay Class 1 on salary, not Class 2 or Class 4, which apply only to the self-employed."
 ---
 
 <h2>Why National Insurance for Directors Is Different</h2>

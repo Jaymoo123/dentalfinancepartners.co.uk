@@ -8,12 +8,6 @@ author: Holloway Davies Editorial Team
 category: Sole Trader and Self Employment
 metaTitle: Self Assessment After Stopping Trading Mid-Year Guide
 metaDescription: Stopped trading before 5 April? Your final return follows cessation rules, with overlap relief to claim and a £100 penalty if you file late.
-keyTakeaways:
-  - "Stopping mid-year triggers cessation rules, so your final return covers only profits up to the cessation date."
-  - "Overlap relief reduces taxable profits on a cessation return and is claimed via the SA103 self-employment pages."
-  - "The final self assessment return deadline is 31 January after the tax year, the same as normal."
-  - "Filing late attracts a £100 penalty for returns up to three months overdue, plus £10 daily after that."
-  - "Closing a limited company does not automatically stop your personal self assessment filing obligation."
 altText: UK business owner reviewing self assessment tax return documents after ceasing trading mid-year, with calculator and HMRC correspondence on desk
 image: /blog/self-assessment-tax-return-guide-stopped-trading-mid-year.jpg
 imageCredit:
@@ -40,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "From 2024/25, sole traders file a cessation return covering actual profits from 6 April of the cessation tax year to the date trading stopped, not a full 12-month period."
+  - "Overlap relief accumulated under the old basis-period system reduces taxable profit on the cessation return and is entered on the SA103 self-employment pages (box 73 on a paper return)."
+  - "The final self assessment online deadline is 31 January after the tax year; for a 2024/25 cessation that is 31 January 2026, with paper returns due 31 October 2025."
+  - "Business Asset Disposal Relief gives a 14% CGT rate on qualifying disposals from 6 April 2025, rising to 18% from 6 April 2026, with a £1 million lifetime limit."
+  - "Closing a limited company does not automatically end your personal self assessment obligation; you must notify HMRC separately once the final return is filed and any tax is paid."
+  - "Business records must be kept for at least five years from 31 January after the tax year of cessation, so a 2024/25 cessation means keeping them until 31 January 2031."
 ---
 <h2>Why Stopping Mid-Year Changes Your Self Assessment</h2>
 

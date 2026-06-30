@@ -35,6 +35,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@matreding
   source: Pexels
   source_url: https://www.pexels.com/photo/close-up-of-hm-revenue-customs-building-16124523/
+keyTakeaways:
+  - "HMRC typically processes straightforward PAYE refunds within 5 to 10 working days, and Self Assessment refunds on the same timeline after you file your return."
+  - "You can claim a tax refund for up to 4 years after the end of the tax year in which the overpayment occurred; after that deadline, the refund is lost."
+  - "Employed workers required to work from home can claim a flat rate of £6 per week (£312 per year) without needing to provide receipts."
+  - "If a tax refund company is not on the FCA's Financial Services Register, you have no access to the Financial Ombudsman Service or FSCS protection."
+  - "HMRC does not always know when you have overpaid tax, so in many cases you must contact them directly or use your Personal Tax Account on gov.uk."
+  - "Inflating expense claims to generate a larger refund is tax evasion, not tax avoidance, and HMRC can refer serious cases for criminal prosecution."
 ---
 <h2>What Is a Tax Refund and When Might You Be Due One?</h2>
 

@@ -21,6 +21,13 @@ schema: ""
 faqs:
   - question: "What is the capital gains tax rate for 2025/26?"
     answer: "For 202"
+keyTakeaways:
+  - "In 2025/26, CGT rates on non-residential assets and residential property are 18% for basic rate taxpayers and 24% for higher rate taxpayers."
+  - "Business Asset Disposal Relief (BADR) is taxed at 14% in 2025/26, rising to 18% from 6 April 2026, and applies to qualifying disposals up to a £1 million lifetime limit."
+  - "The annual exempt amount for 2025/26 is £3,000, reduced from £6,000 in 2024/25, meaning gains below this threshold do not trigger a CGT liability."
+  - "Residential property gains must be reported and the tax paid within 60 days of completion using the 60-day CGT property return online."
+  - "For non-property gains in 2025/26, the self assessment return and any CGT payment are both due by 31 January 2027."
+  - "Married couples and civil partners each have a separate £3,000 annual exempt amount, allowing up to £6,000 in combined tax-free gains in 2025/26 if assets are held jointly."
 ---
 
 <p>Capital gains tax (CGT) rates changed significantly from 6 April 2025. If you are a business owner, director, sole trader, or contractor planning to sell shares, a business, or an investment property, the rates you pay today are different from what they were last year. And they will change again next year.</p>

@@ -27,6 +27,13 @@ faqs:
     answer: "No, you report each disposal on the tax return for the year in which the disposal occurred. But you need to know your remaining BADR allowance from previous claims to calculate the correct relief for the current year. Keep a running record."
   - question: "How does the rising BADR rate affect my planning?"
     answer: "The BADR rate is 10% for disposals before 6 April 2025, 14% from 6 April 2025 to 5 April 2026, and 18% from 6 April 2026. If you are selling across multiple years, accelerating part of the sale into an earlier year can reduce your overall CGT bill. But consider commercial factors first."
+keyTakeaways:
+  - "BADR reduces CGT to 14% for disposals between 6 April 2025 and 5 April 2026, rising to 18% from 6 April 2026; the rate was 10% before 6 April 2025."
+  - "The £1m BADR lifetime limit does not reset each tax year; every qualifying gain you realise in your lifetime accumulates against the same allowance."
+  - "Shares in multiple trading companies all count toward the same £1m limit; you cannot claim a separate £1m allowance per company."
+  - "If a later disposal exceeds your remaining BADR allowance, you split the gain: the qualifying part is taxed at the BADR rate, the rest at 18% or 24%."
+  - "Shares in the same company are pooled for CGT purposes, so each disposal uses the average cost of your entire holding, not specific shares purchased at a particular price."
+  - "HMRC does not automatically track your cumulative BADR claims; you are responsible for maintaining a running record of every disposal, gain, and amount of relief used."
 ---
 
 <p>Business Asset Disposal Relief (BADR) lets you pay a lower rate of Capital Gains Tax when you sell shares in your trading company. But the relief has a £1m lifetime limit. If you sell shares across two or more tax years, you need to track how much of that allowance you have used and how much remains.</p>

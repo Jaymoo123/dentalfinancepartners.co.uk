@@ -33,6 +33,22 @@ imageCredit:
   photographer_url: https://www.pexels.com/@karola-g
   source: Pexels
   source_url: https://www.pexels.com/photo/calculator-and-notepad-placed-on-usa-dollars-stack-4386366/
+keyTakeaways:
+  - "For 2025/26, the Personal Allowance is £12,570, reducing by £1 for every £2 of income above £100,000 and reaching zero at £125,140."
+  - "Income Tax rates for 2025/26 are 20% (basic rate, up to £50,270), 40% (higher rate, up to £125,140), and 45% (additional rate) on non-dividend income."
+  - "Sole traders pay Class 4 NIC at 6% on profits between £12,570 and £50,270, then 2% above that; Class 2 NIC was abolished from April 2024."
+  - "Dividend rates for 2025/26 are 8.75% (basic), 33.75% (higher), and 39.35% (additional), rising to 10.75%, 35.75%, and 39.35% from 6 April 2026 under FA 2026 s.4."
+  - "The annual dividend allowance is £500, and the first £1,000 of side-hustle trading income is exempt under the trading allowance."
+  - "The HMRC online calculator cannot be used by those earning £100,000 or more, receiving only state benefits, or entitled to Married Couple's Allowance."
+howToSteps:
+  - name: "Add up your total income"
+    text: "Collect gross income from all sources: trading profit (turnover minus allowable expenses), savings interest, dividends, rental income, and any employment income."
+  - name: "Subtract allowable deductions"
+    text: "Deduct your Personal Allowance (£12,570 for 2025/26), post-tax pension contributions, Gift Aid donations, and trading losses brought forward."
+  - name: "Apply the correct Income Tax rates"
+    text: "Tax non-dividend income at 20% on £12,571-£50,270, 40% on £50,271-£125,140, and 45% above £125,140, using the 2025/26 bands."
+  - name: "Calculate National Insurance"
+    text: "Add Class 1 NIC (employees: 8% on earnings up to £50,270, 2% above) or Class 4 NIC (sole traders: 6% on profits up to £50,270, 2% above) to your Income Tax total."
 ---
 <h2>What Is a Taxable Income Calculator?</h2>
 

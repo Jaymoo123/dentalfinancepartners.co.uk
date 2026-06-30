@@ -27,6 +27,22 @@ faqs:
     answer: "Filing the accounts late does not automatically cancel the penalty. But it does stop further penalties from accruing. HMRC will still pursue the original penalty unless you have a reasonable excuse. Filing as soon as possible is always the right move, but you still need to submit a separate appeal to have the penalty written off."
   - question: "Can I appeal a penalty at a tax tribunal without an accountant?"
     answer: "You can, but it is not recommended. The First-tier Tribunal follows formal procedures, and HMRC will have a presenting officer arguing their case. Without professional representation, you risk missing procedural steps or failing to present your evidence effectively. For penalties over £1,500, the cost of an accountant or tax adviser is usually worth it."
+keyTakeaways:
+  - "Companies House penalties for late annual accounts range from £150 (up to one month late) to £1,500 (over six months late), doubling if accounts were late the previous year too."
+  - "HMRC CT600 penalties start at £100 one day late, total £200 at three months, then 10% of unpaid tax at six months and another 10% at twelve months."
+  - "Both Companies House and HMRC late-filing penalties apply even if the company owes no tax at all."
+  - "An appeal must be submitted within 30 days of the penalty notice date; if that window is missed, a separate time-extension request must also be included."
+  - "HMRC accepts serious illness, bereavement of an immediate family member, fire, flood, and its own system errors as reasonable excuses, but not reliance on an accountant who missed the deadline."
+  - "For penalties of £1,500 or more, the cost of professional representation at the First-tier Tribunal is often justified."
+howToSteps:
+  - name: "Check the penalty notice is correct"
+    text: "Verify the penalty amount against the filing date, confirm the notice applies to the right period, and check HMRC has not issued a duplicate penalty for the same period."
+  - name: "Gather documentary evidence"
+    text: "Collect medical certificates, GP letters, death certificates, screenshots of failed online submissions, or email trails showing you chased your previous accountant, then arrange them in a clear chronology."
+  - name: "Draft the written representation"
+    text: "Write a formal letter to HMRC's Penalty Team explaining what happened, why the filing was late, why this amounts to a reasonable excuse, and what steps have been taken to prevent a recurrence."
+  - name: "Submit the appeal within 30 days"
+    text: "Submit the appeal online (which generates an immediate reference number and timestamp), by post, or by phone; the appeal must reach HMRC within 30 days of the penalty notice date."
 ---
 
 <p>A late filing penalty from HMRC lands in your inbox. The amount might be £150 for a one-month delay on your company accounts, or it could be £1,500 if the filing was six months late. Your first reaction is usually frustration, followed by a question: can I challenge this?</p>

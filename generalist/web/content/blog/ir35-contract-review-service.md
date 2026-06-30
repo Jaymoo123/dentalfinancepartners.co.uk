@@ -27,6 +27,13 @@ faqs:
     answer: "You can challenge the SDS. The client must follow a reasonable process. If you believe their determination is wrong, you can raise a disagreement in writing. They must respond within 45 days. A contract review gives you the evidence to challenge their decision. If they reject your challenge, you can still accept the inside determination or walk away."
   - question: "Does an IR35 contract review cover multiple engagements with the same client?"
     answer: "No. Each engagement is separate. If you have two contracts with the same client, each one needs its own review. The terms may differ, and the working practices may differ. A single review covers one contract and one set of working practices. If you have multiple engagements, we review them individually and price accordingly."
+keyTakeaways:
+  - "A straightforward single IR35 contract review typically costs between £150 and £400 plus VAT, rising for complex or multiple engagements."
+  - "If your client is small (two of: turnover under £15 million, balance sheet under £7.5 million, fewer than 50 employees), your own company decides IR35 status."
+  - "If HMRC opens a status enquiry, you have 30 days to respond to most enquiries, so get professional advice early."
+  - "A contractor earning £80,000 over two years who incorrectly treated themselves as outside IR35 could face a bill of £30,000 or more in unpaid tax, interest, and penalties."
+  - "If inside IR35, the company deducts PAYE and employee NIC from the fees, pays employer NIC, and reports monthly through RTI via a Full Payment Submission."
+  - "If a client issues a Status Determination Statement placing you inside IR35, you can challenge it in writing and the client must respond within 45 days."
 ---
 
 <h2>What Is an IR35 Contract Review Service?</h2>

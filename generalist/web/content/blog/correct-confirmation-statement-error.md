@@ -34,6 +34,26 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "Minor errors such as misspelled names, address typos, or inexact SIC codes can be corrected free of charge by writing to Companies House or using form RP02."
+  - "Substantive errors including an omitted director, wrong shareholding, or missed PSC require filing a replacement CS01, costing £34 online or £62 by paper."
+  - "There is no reduced fee for a correction filing; the standard confirmation statement fee applies again in full."
+  - "Minor corrections typically take 5 to 10 working days to appear on the public register after submission."
+  - "Companies House does not automatically correct errors; you must actively submit a correction letter, form RP02, or a replacement CS01."
+  - "Your internal statutory registers must match what is filed at Companies House, or the error persists on the public record."
+howToSteps:
+  - name: "Identify the exact error"
+    text: "Pull the original confirmation statement from your records or Companies House online and compare it against your current statutory registers, noting every discrepancy."
+  - name: "Categorise the error as minor or substantive"
+    text: "Use the minor and substantive error lists to classify the mistake. If the error would affect a third party's understanding of who runs or owns the company, it is substantive. If unsure, call Companies House on 0303 1234 500."
+  - name: "Gather supporting evidence"
+    text: "For minor corrections, collect proof of the correct detail such as a director's passport or a utility bill confirming the correct address. For substantive errors, assemble the correct data from your statutory registers."
+  - name: "Submit the correction"
+    text: "For minor errors, write to Companies House or submit form RP02 by post to Crown Way, Cardiff, CF14 3UZ, or by email. For substantive errors, file a replacement CS01 online via the Companies House WebFiling service or through accounting software such as Xero or FreeAgent."
+  - name: "Confirm the correction on the public register"
+    text: "Check the Companies House register online after 5 to 10 working days. If the corrected information does not appear, follow up with Companies House directly."
+  - name: "Update your internal statutory registers"
+    text: "Ensure your company's statutory registers match the corrected public record. Keep a copy of all correction correspondence or the replacement confirmation statement in your company files."
 ---
 <p>You filed your confirmation statement on time. Then you spotted the error. A director's name is misspelled. A service address is wrong. The SIC code doesn't match your actual trade.</p>
 

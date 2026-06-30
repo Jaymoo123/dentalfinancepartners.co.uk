@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, but only if you use bridging software that connects your spreadsheet to HMRC's API. A standalone spreadsheet will not work. You also need to keep your spreadsheet in a structured format with consistent columns for date, description, income, and expenses."
   - question: "Will my accountant handle MTD quarterly submissions for me?"
     answer: "Yes, if you give them access to your software. Many accountants, including us, manage the quarterly submissions on behalf of clients. You just need to keep your digital records up to date and share them quarterly rather than annually. This is often the most efficient arrangement."
+keyTakeaways:
+  - "MTD ITSA is mandatory from April 2026 for sole traders and landlords with qualifying income above £50,000."
+  - "From April 2027 the threshold falls to £30,000, and from April 2028 it falls to £20,000, with voluntary registration available below that level."
+  - "Qualifying income counts self-employment profits and property income combined, but dividend income does not count toward the MTD ITSA threshold."
+  - "MTD-compliant software must store digital records, send quarterly updates to HMRC, and submit an end-of-year finalisation statement that replaces the traditional self assessment return."
+  - "Digital records must be retained for at least five years after the 31 January submission deadline."
+  - "Spreadsheet users can comply by adding bridging software that connects their structured data to HMRC's API, without switching to a full accounting package."
 ---
 
 <p>Making Tax Digital for Income Tax (MTD ITSA) is coming. If you are a sole trader with qualifying income over £50,000, you must use MTD compatible software from April 2026. This is not optional. HMRC is phasing out the old self assessment return as you know it.</p>

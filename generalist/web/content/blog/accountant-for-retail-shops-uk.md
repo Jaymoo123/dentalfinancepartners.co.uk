@@ -27,6 +27,13 @@ faqs:
     answer: "Stock must be valued at the lower of cost and net realisable value. Cost means what you paid to buy or produce the stock. Net realisable value means what you could sell it for, minus any costs to sell it. If you hold slow-moving or damaged stock, you may need to write it down. A physical stocktake at year-end is essential. Your accountant should help you set up a stocktake process and sign off the valuation."
   - question: "What is the most tax-efficient way to pay myself from my retail company?"
     answer: "The most common approach is a salary of £12,570 (matching your personal allowance) and dividends up to the basic rate band. The salary avoids income tax and employee NI. Dividends are taxed at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate) from 6 April 2026, after the £500 dividend allowance. If your spouse works in the shop, paying them a salary and dividends can reduce the overall tax bill. Your accountant should run the numbers for your specific situation."
+keyTakeaways:
+  - "Retail shops with turnover above £90,000 must register for VAT, with the right scheme (standard, margin, or retail) depending on whether goods are standard-rated, zero-rated, or second-hand."
+  - "Corporation tax on retail company profits is 19% on profits up to £50,000 and 25% on profits above £250,000 for 2025/26, with marginal relief applying between those thresholds."
+  - "Dividends from a retail company are taxed at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate) from 6 April 2026, after the £500 annual dividend allowance."
+  - "From April 2026, self-employed retailers with qualifying income over £50,000 must adopt Making Tax Digital for Income Tax, with thresholds dropping to £30,000 (2027) and £20,000 (2028)."
+  - "Stock must be valued at the lower of cost and net realisable value at year-end, and overvaluing it results in paying more corporation tax than is due."
+  - "Late filing penalties for private limited companies start at £150 and rise to £1,500 for accounts filed more than six months overdue."
 ---
 
 <p>Running a retail shop in the UK means managing stock, staff, suppliers, and customers. You are also managing a set of tax and compliance rules that differ from most other businesses. VAT on standard and zero-rated goods, stock valuation for year-end, margin schemes for second-hand goods, and payroll for part-time staff are just a few of them.</p>

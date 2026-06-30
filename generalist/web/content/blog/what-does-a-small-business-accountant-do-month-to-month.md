@@ -27,6 +27,13 @@ faqs:
     answer: "Monthly fees vary widely depending on the complexity of your business. A sole trader with simple affairs might pay £100 to £150 per month. A limited company with payroll, VAT, and multiple directors might pay £250 to £500 per month. The key is to understand exactly what is included. If the fee covers only year-end filing, you are overpaying. If it covers monthly bookkeeping, VAT, payroll, and ongoing advice, it is usually good value."
   - question: "Can I switch accountants mid-year?"
     answer: "Yes, you can switch accountants at any time. Your new accountant will handle the transfer of your records from the old one. There is no legal requirement to stay with an accountant until the year-end. If you are not getting the service you are paying for, switch sooner rather than later. The new accountant will need your last set of accounts, your tax references, and access to your accounting software. Most transfers take one to two weeks."
+keyTakeaways:
+  - "A director's loan account overdrawn by more than £10,000 and not repaid within nine months and one day of the year-end triggers S455 tax at 35.75% on the outstanding balance."
+  - "Employer National Insurance is charged at 15% above the secondary threshold of £5,000 from April 2025, though the Employment Allowance covers up to £10,500 of that cost."
+  - "Quarterly VAT returns must be paid one month and seven days after the quarter end, and businesses approaching the £90,000 rolling 12-month threshold should model registration before breaching it."
+  - "Corporation tax falls due nine months and one day after the year-end, so a 31 March 2026 year-end means a payment deadline of 1 January 2027."
+  - "Under CIS, the deduction rate is 20% for registered subcontractors and 30% for unregistered ones, with the CIS300 return due by the 14th of the following month."
+  - "Limited cost traders using the Flat Rate VAT Scheme are charged 16.5% regardless of their sector rate."
 ---
 
 <p>If you pay a <strong>small business accountant</strong> a monthly fee, you probably know they handle your year-end and your tax return. But what exactly are they doing the other eleven months of the year?</p>

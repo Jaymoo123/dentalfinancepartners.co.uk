@@ -21,6 +21,24 @@ schema: ""
 faqs:
   - question: "Can I file abbreviated accounts if my company is not small?"
     answer: "No. Only companies that qualify as small under the Companies Act 2006 can file abbreviated accounts. For periods beginning on or after 6 April 2025 the thresholds are: turnover not more than £15 million, balance sheet total not more than £7.5 million, and not more than 50 average employees (two of three must be met). The lower limits of £10.2 million turnover and £5.1 million balance sheet applied for periods beginning before 6 April 2025."
+keyTakeaways:
+  - "From 6 April 2025, a company qualifies for abbreviated accounts by meeting two of three tests: turnover up to £15 million, balance sheet up to £7.5 million, 50 employees."
+  - "Abbreviated accounts filed at Companies House omit the profit and loss account, keeping turnover, gross profit, and net profit figures off the public record."
+  - "The filing deadline is 9 months after the accounting reference date; private-company late penalties start at £150, rising to £1,500 beyond 6 months."
+  - "Suspense account balances must be cleared before filing, as Companies House may reject abbreviated accounts that contain unresolved suspense balances."
+  - "Year-end adjusting journals are required for depreciation (typically 18% reducing balance for plant and machinery), accruals, prepayments, stock, bad debts, and directors' loan account movements."
+  - "HMRC receives the full accounts through the CT600 corporation tax return, so an error in the trial balance affects the tax computation as well as the Companies House filing."
+howToSteps:
+  - name: "Complete all bookkeeping to the year-end"
+    text: "Enter every transaction up to the accounting reference date: sales invoices, purchase invoices, bank receipts, bank payments, credit card transactions, petty cash, and payroll journals."
+  - name: "Reconcile all control accounts"
+    text: "Reconcile the bank account to the bank statement, the VAT control account to the VAT return, the PAYE control account to RTI submissions, and the directors' loan account; clear every suspense account balance before proceeding."
+  - name: "Run the trial balance report"
+    text: "In your accounting software, run the trial balance for the exact year-end date and confirm that total debits equal total credits."
+  - name: "Post year-end adjusting journals"
+    text: "Post journals for depreciation, accruals for expenses incurred but unpaid, prepayments for costs paid in advance, stock and work in progress, bad debts, and directors' loan account adjustments; re-run the trial balance to confirm it still balances."
+  - name: "Extract the balance sheet figures for the abbreviated accounts"
+    text: "From the adjusted trial balance, identify fixed assets at net book value, current assets, creditors split between those due within one year and those due after more than one year, and capital and reserves for the abbreviated balance sheet."
 ---
 
 <p>If you run a small limited company in the UK, you have a legal duty to file annual accounts at Companies House. Most small companies qualify as "small" under the Companies Act 2006 and can file abbreviated accounts. These are shorter, less detailed versions of your full statutory accounts. But the starting point for both abbreviated and full accounts is the same: the trial balance.</p>

@@ -32,6 +32,13 @@ imageCredit:
   photographer_url: https://www.pexels.com/@tara-winstead
   source: Pexels
   source_url: https://www.pexels.com/photo/red-text-on-white-background-7111482/
+keyTakeaways:
+  - "The 2025/26 UK personal allowance is £12,570, with income taxed at 20% up to £50,270, 40% up to £125,140, and 45% above £125,140."
+  - "Income between £100,000 and £125,140 carries an effective 60% marginal rate because the personal allowance tapers by £1 for every £2 earned above £100,000."
+  - "Dividend tax rates for 2025/26 are 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate), with only £500 of dividend income tax-free."
+  - "Self-employed profits between £12,570 and £50,270 attract Class 4 National Insurance at 6%; profits above £50,270 pay 2%; Class 2 NI was abolished from April 2024."
+  - "Corporation tax for 2025/26 is 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief applying between those thresholds."
+  - "UK income tax thresholds are frozen until April 2028, meaning more earners are pulled into higher rate bands each year as earnings rise with inflation."
 ---
 <h2>What Are the UK Tax Bands for 2025/26?</h2>
 

@@ -27,6 +27,13 @@ faqs:
     answer: "You can amend your company tax return to claim R&D tax credits for the last two accounting periods. For example, if your accounting period ended 31 March 2025, you can amend the return for that period. You can also claim for the period ended 31 March 2024 if you have not already done so. Claims for periods ending before that are generally time-barred. Speak to your accountant about the specific deadlines for your company."
   - question: "Does developing a new construction method using existing materials qualify for R&D tax credits?"
     answer: "Yes, it can. R&D is not limited to new materials. If you are developing a novel construction method that solves a technical uncertainty, even using off-the-shelf materials, it may qualify. For example, developing a new way to install cladding on a curved facade where no standard method works, and you had to design and test a bespoke fixing system, would likely qualify. The advance is in the method, not the material."
+keyTakeaways:
+  - "Construction companies developing new materials or novel building methods that resolve a scientific or technological uncertainty can claim R&D tax credits, not only tech or pharma firms."
+  - "Under the merged RDEC scheme (periods from 1 April 2024), companies get a 20% above-the-line credit, a net £15,000 on £100,000 of costs at the 25% main rate."
+  - "Loss-making R&D-intensive companies spending at least 30% of total costs on R&D qualify for the ERIS scheme, returning roughly 27p per £1 of qualifying cost (around £26,970 on £100,000)."
+  - "Qualifying costs include staff salaries, employer national insurance and pension contributions, consumable materials used in testing, relevant software licences, and 65% of payments to externally provided workers or subcontractors."
+  - "The Additional Information Form must be submitted to HMRC before filing the CT600 company tax return; it asks for details of R&D projects, costs, and the technical advance achieved."
+  - "Companies can amend their corporation tax return to claim for the last two accounting periods; claims for periods ending before that are generally time-barred."
 ---
 
 <h2>Can a Construction Company Claim R&D Tax Credits for Developing New Materials?</h2>

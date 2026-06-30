@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. The AIA applies to both new and second-hand plant and machinery, provided you buy the asset for your business. If you transfer an asset you already owned personally into the business, it does not qualify because you did not buy it for the business. Hire purchase agreements also qualify."
   - question: "Can a sole trader claim the annual investment allowance?"
     answer: "Yes. Sole traders and partnerships can claim the AIA on qualifying plant and machinery, just like limited companies. The same £1m cap applies. The only difference is that limited companies can also use Full Expensing (uncapped 100% relief) for main-rate assets, while sole traders and partnerships cannot."
+keyTakeaways:
+  - "UK businesses can claim 100% tax relief on qualifying plant and machinery up to £1,000,000 per 12-month accounting period until 31 March 2026."
+  - "After 31 March 2026, the AIA limit is scheduled to revert to £200,000, making the timing of large capital purchases important."
+  - "Cars are excluded from the AIA entirely; commercial vehicles such as vans, lorries and pickup trucks do qualify."
+  - "Sole traders, partnerships and limited companies can all claim AIA, with the same £1m cap applying across each business type."
+  - "Limited companies can claim Full Expensing from 1 April 2023, giving 100% uncapped relief on main-rate plant and machinery; sole traders and partnerships cannot."
+  - "Where the same person controls multiple companies, the £1m AIA cap is shared across all entities, not granted per company."
 ---
 
 <p>If you buy a piece of equipment for your business, you do not deduct the full cost from your profits in one go under normal accounting rules. Instead, you spread the cost over the asset's useful life as depreciation. But for tax purposes, the <strong>annual investment allowance explained</strong> here gives you a much better outcome: 100% relief in the year you buy the asset.</p>

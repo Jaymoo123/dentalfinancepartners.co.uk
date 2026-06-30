@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "The domestic reverse charge for construction services was introduced on 1 March 2021, moving VAT accounting from subcontractor invoices to the contractor's own VAT return."
+  - "The reverse charge applies only to standard-rated and reduced-rate construction services between VAT-registered businesses that both operate under CIS."
+  - "End users, non-VAT-registered customers, and zero-rated supplies are outside the reverse charge scope; applying it to them leaves the supplier owing the VAT to HMRC."
+  - "Every reverse charge invoice must show zero VAT and include wording such as 'Reverse charge: VAT Act 1994 Section 55A applies'."
+  - "CIS deductions continue at 20% for registered subcontractors and 30% for unregistered ones; the reverse charge changes VAT treatment only and does not alter CIS obligations."
+  - "Partially exempt businesses can face a real VAT cost under the reverse charge because output tax in box 1 is always payable while box 4 input tax may be restricted."
 ---
 <h2>What Is the Reverse Charge for Construction Services?</h2>
 

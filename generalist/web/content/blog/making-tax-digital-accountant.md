@@ -27,6 +27,13 @@ faqs:
     answer: "MTD ITSA applies to your self employed income and rental income, not to your director's salary or dividends. If you are a director with no self employed work and no rental properties, MTD ITSA does not affect you directly. If you file a self assessment return because of dividend income above the allowance, that return remains annual for now."
   - question: "Will I still need to file a self assessment return under MTD ITSA?"
     answer: "The annual self assessment return is being replaced by four quarterly updates and a final declaration. You will no longer file the traditional SA100 or SA103 return if you are within MTD ITSA. However, you still need to declare any income that falls outside MTD ITSA (such as employment income or capital gains) through a separate process. Your accountant can handle this."
+keyTakeaways:
+  - "From April 2026, self-employed individuals and landlords with total income above £50,000 must keep digital records and submit quarterly updates to HMRC under MTD ITSA."
+  - "The MTD ITSA income threshold falls to £30,000 in April 2027 and to £20,000 in April 2028, eventually covering virtually every self-employed person and landlord in the UK."
+  - "Quarterly updates are due by the 7th of the second month after each quarter end: 7 August, 7 November, 7 February, and 7 May for standard tax-year quarters."
+  - "Each missed quarterly deadline adds one penalty point under HMRC's points-based system; reaching 4 points triggers a £200 fixed penalty, plus a further £200 for each subsequent default."
+  - "Full MTD ITSA compliance from an accountant typically costs £80 to £150 per month for a sole trader, or £100 to £200 per month for a landlord with multiple properties."
+  - "The 2025/26 tax year is the last year for a traditional self assessment return for anyone above the £50,000 threshold; quarterly filing is mandatory from 6 April 2026."
 ---
 
 <h2>What Is Making Tax Digital for Income Tax?</h2>

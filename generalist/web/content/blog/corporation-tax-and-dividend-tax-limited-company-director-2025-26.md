@@ -27,6 +27,13 @@ faqs:
     answer: "If your only income is dividends and they are below the £500 dividend allowance, you may not need to file a return. But if your total dividend income exceeds the allowance, or if you have other income (salary, rental income, capital gains), you almost certainly need to file. HMRC will expect you to report dividends on your SA100 return. If you are unsure, check with an accountant."
   - question: "How does the associated companies rule affect my corporation tax rate?"
     answer: "If you have two or more associated companies (including companies where you or your close family have control), the £50,000 small profits threshold and the £250,000 main rate threshold are divided by the number of associated companies. For example, with two associated companies, the small profits rate applies only up to £25,000 of profit per company. This can push a profitable company into the marginal relief band or the main rate. You must disclose associated companies on your CT600 return."
+keyTakeaways:
+  - "For 2025/26, limited companies pay corporation tax at 19% on profits up to £50,000, 25% on profits above £250,000, and marginal relief applies between those thresholds."
+  - "Dividend tax rates for 2025/26 are 8.75% basic rate, 33.75% higher rate, and 39.35% additional rate, with the first £500 of dividends each year tax-free."
+  - "Most directors optimise by taking a salary of £12,570 and dividends of up to £37,700, keeping total personal income within the £50,270 basic rate band."
+  - "When dividends fall into the higher rate band, the combined effect of 25% corporation tax and 33.75% dividend tax produces an effective rate of approximately 50% on the original profit."
+  - "Dividend income for 2025/26 is reported on a self assessment return due by 31 January 2027; corporation tax is due 9 months and 1 day after the accounting period ends."
+  - "The dividend allowance fell from £2,000 in 2022/23 to £500 from 2024/25 onwards, so only the first £500 of dividend income per year is tax-free."
 ---
 
 <p>If you run your own limited company in the UK, you deal with two separate taxes on your business profits: corporation tax and dividend tax. Understanding how they interact is the difference between paying the right amount and paying more than you need to.</p>

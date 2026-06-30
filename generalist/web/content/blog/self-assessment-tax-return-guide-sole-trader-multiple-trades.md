@@ -32,6 +32,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "HMRC requires sole traders with multiple trades to report each trade on its own SA103F or SA103S page; combining two trades onto a single self-employment schedule is not permitted."
+  - "A loss in one trade can offset profit from the other in the same tax year via s.64 ITA 2007 relief, reducing the combined SA100 self-employment figure."
+  - "The £90,000 VAT registration threshold applies to the combined turnover of all your trades, so two trades with individual turnovers below £90,000 can still trigger a mandatory registration."
+  - "Class 4 NIC for 2025/26 is 6% on combined self-employment profits between £12,570 and £50,270, and 2% on profits above £50,270, calculated across all trades together."
+  - "Class 2 NIC was abolished from April 2024 regardless of how many trades you run."
+  - "From April 2026, sole traders with combined qualifying income over £50,000 must file quarterly MTD updates; the threshold drops to £30,000 from April 2027 and £20,000 from April 2028."
 ---
 <p>If you run two separate businesses as a sole trader, you do not combine them into one set of figures on your self assessment. HMRC requires you to report each trade on its own separate schedule. This is the box-by-box guide to getting it right.</p>
 

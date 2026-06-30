@@ -19,6 +19,13 @@ h1: "What Does an Accountant for Landlords Actually Do?"
 summary: "A specialist accountant for landlords does more than file a tax return. They handle portfolio structuring, capital allowances, mortgage interest restriction, and compliance. This guide explains exactly what you get and whether you need one."
 schema: ""
 faqs: []
+keyTakeaways:
+  - "Since April 2020, landlords holding property personally cannot deduct mortgage interest; they instead get a 20% tax credit on finance costs, raising the tax burden for higher-rate taxpayers."
+  - "The furnished holiday lettings regime was abolished from 6 April 2025, so former holiday lets are now taxed under standard property income rules with no separate capital allowances."
+  - "Selling a UK residential property triggers a 60-day deadline to report and pay CGT to HMRC after completion, even where no gain arises and no tax is due."
+  - "Business Asset Disposal Relief (BADR) applies at 14%, rising to 18% from April 2026, compared with the standard 24% CGT rate on residential property disposals."
+  - "The SDLT surcharge on second homes and buy-to-let purchases is 5% (increased from 3%), effective 31 October 2024; corporate buyers face 15% on properties over £500,000, subject to exceptions."
+  - "The rent-a-room scheme makes the first £7,500 of income from letting a furnished room in your own home tax-free, but many landlords with a single lodger miss this and overpay."
 ---
 
 <p>If you own one rental property in Manchester, your tax return is straightforward. You declare the rental income, deduct allowable expenses, and pay tax on the profit. A decent tax software package can handle it.</p>

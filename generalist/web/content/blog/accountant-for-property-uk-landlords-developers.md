@@ -27,6 +27,13 @@ faqs:
     answer: "When you sell a UK residential property, you must report the gain to HMRC and pay the tax within 60 calendar days of completion. This applies even if you make no overall gain and have no tax to pay. Missing the deadline triggers penalties. A property specialist handles this filing as part of the sale process, so you do not need to remember it yourself."
   - question: "Can I claim capital allowances on a residential property I rent out?"
     answer: "Generally, no. Capital allowances on plant and machinery are not available for residential let properties. The furnished holiday lettings regime that previously allowed capital allowances on furniture, fixtures, and equipment was abolished from 6 April 2025; former FHLs are now taxed as ordinary residential property businesses and no longer qualify for that treatment. For commercial properties, capital allowances remain available on plant and machinery, and structures and buildings allowances apply to qualifying commercial buildings."
+keyTakeaways:
+  - "When selling a UK residential property, you must report the gain and pay capital gains tax to HMRC within 60 days of completion, even if no tax is due."
+  - "Since April 2017, individual landlords cannot deduct mortgage interest as an expense and instead receive only a 20% tax credit, raising the effective rate for higher-rate taxpayers."
+  - "The furnished holiday lettings regime was abolished from 6 April 2025, and former FHL properties are now taxed as ordinary residential businesses with no capital allowances on furniture."
+  - "The plant and machinery writing down allowance on commercial property fell from 18% to 14% from April 2026, with structures and buildings allowances at 3% straight line."
+  - "Business Asset Disposal Relief on property development gains applies at 18% from 6 April 2026, having risen from 14% for 2025/26 disposals."
+  - "Landlords with four or more residential properties, any commercial property, or property income exceeding £50,000 per year are likely to need a specialist property accountant rather than a general one."
 ---
 
 <p>If you own residential or commercial property in the UK, your tax position is more complex than most business owners realise. A general accountant can file your self assessment and corporation tax return. But a specialist <strong>accountant for property</strong> understands the specific reliefs, charges, and structuring options that apply to property businesses. That difference matters when you are looking at a six-figure SDLT bill or trying to work out whether incorporation still makes sense after the finance cost restriction changes.</p>

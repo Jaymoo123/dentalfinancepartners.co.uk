@@ -27,6 +27,28 @@ faqs:
     answer: "Yes, if your gross rental income exceeds £50,000 per year. The MTD rules apply to both self-employment and property income. If you have both a freelance business and rental properties, you combine the income to check the threshold. Your software should handle both income streams in one account."
   - question: "Will my accountant submit the quarterly updates for me?"
     answer: "Most accountants will review and submit quarterly updates on your behalf, provided you give them accurate and timely transaction data. You remain responsible for recording your income and expenses correctly in the software. Your accountant can set up the system and train you, but they cannot enter your transactions unless you provide the source documents."
+keyTakeaways:
+  - "MTD for Income Tax Self Assessment applies from April 2026 to sole traders and landlords with qualifying gross income (before expenses) over £50,000 per year."
+  - "The qualifying income threshold drops to £30,000 in April 2027 and to £20,000 in April 2028, so many businesses below £50,000 today will be in scope within two years."
+  - "Quarterly updates must be submitted to HMRC by the 7th of the month after each quarter end; the first mandatory submission for 2026/27 is due by 7 August 2026."
+  - "The final declaration, which replaces the current self assessment return, must still be submitted by 31 January each year."
+  - "MTD-compatible software for sole traders (FreeAgent, Xero, QuickBooks Self-Employed, GoSimpleTax) costs roughly £10 to £32 per month."
+  - "Spreadsheets emailed to an accountant do not qualify as MTD digital record-keeping; HMRC requires software that connects directly to its systems."
+howToSteps:
+  - name: "Audit your records and choose software (October 2024, 18 months before go-live)"
+    text: "Write down exactly how you currently track income and expenses, identify the gaps, and speak to your accountant about which MTD-compatible software suits your business."
+  - name: "Set up software and run a parallel trial (April 2025, 12 months before go-live)"
+    text: "Choose your software, enter your opening balances as at 6 April 2025, then record April 2025 transactions in the new software while keeping paper records for one month to compare outputs."
+  - name: "Go fully digital and authorise your HMRC connection (July 2025, 9 months before go-live)"
+    text: "Stop relying on paper, scan all receipts using a tool such as Dext or Hubdoc, and authorise your software's connection to your HMRC online account so it can submit quarterly updates."
+  - name: "Submit your first voluntary quarterly update (October 2025, 6 months before go-live)"
+    text: "Submit the Q1 update (April to July 2025) through the HMRC pilot, review the figures with your accountant, and fix any transaction categorisation errors while you still have six months before the mandatory start."
+  - name: "File 2024/25 return and confirm year-end process (January 2026, 3 months before go-live)"
+    text: "File your 2024/25 self assessment return as normal by 31 January 2026, and confirm your software can generate the final declaration for 2025/26 from your quarterly submissions."
+  - name: "Run final checks (March 2026, 1 month before go-live)"
+    text: "Confirm your software is authorised with HMRC, verify your accountant can access and submit on your behalf, and run a test submission for Q4 of 2025/26."
+  - name: "Begin mandatory submissions (April 2026, go-live)"
+    text: "From 6 April 2026 submit quarterly updates for every quarter in the 2026/27 tax year; the first mandatory submission (April to July 2026) is due by 7 August 2026."
 ---
 
 <p>If you are a sole trader or landlord earning over £50,000 a year from self-employment or property income, HMRC will require you to follow Making Tax Digital (MTD) rules from April 2026. That means no more paper records. No more dropping a shoebox of receipts on your accountant's desk in January. You will need to use compatible software to record your income and expenses digitally, and submit quarterly updates to HMRC.</p>

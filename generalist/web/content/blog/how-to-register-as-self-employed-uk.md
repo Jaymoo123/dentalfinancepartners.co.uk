@@ -27,6 +27,28 @@ faqs:
     answer: "Registering as self employed makes you a sole trader. You and the business are the same legal entity. You keep all profits but have unlimited personal liability. Setting up a limited company creates a separate legal entity. You become a director and employee. The company pays corporation tax, and you pay income tax on your salary and dividends. Limited companies offer limited liability and can be more tax efficient at higher profit levels, but involve more admin and filing requirements."
   - question: "What happens if I do not register as self employed on time?"
     answer: "If you miss the 5 October deadline, HMRC can charge a penalty of £100. If you still do not register, further daily penalties of £10 per day can apply, up to a maximum of £900. On top of that, you will still owe the tax on your profits, plus interest. It is much better to register early, even if you are unsure about your exact start date."
+keyTakeaways:
+  - "You must register with HMRC by 5 October in your second tax year, but register immediately because your UTR takes up to 10 working days to arrive."
+  - "If your gross self-employment income is under £1,000 in a tax year, the trading allowance means you do not need to register or file a self assessment return."
+  - "Class 4 National Insurance is charged at 6% on profits between £12,570 and £50,270, and 2% on profits above £50,270."
+  - "If turnover in any rolling 12-month period exceeds £90,000, you must register for VAT within 30 days of the end of the month you crossed the threshold."
+  - "From April 2026, sole traders with self-employment turnover above £50,000 must keep digital records and submit quarterly updates to HMRC under Making Tax Digital for Income Tax."
+  - "HMRC business records must be kept for at least 5 years after the 31 January filing deadline of the relevant tax year."
+howToSteps:
+  - name: "Check for an existing UTR"
+    text: "Search old HMRC correspondence for a Unique Taxpayer Reference; if you already have one from a previous self assessment, you do not need to register again."
+  - name: "Register online with HMRC"
+    text: "Complete the online registration form, which takes about 15 minutes, using your National Insurance number, full name, address, date of birth, and the date you started self-employment."
+  - name: "Wait for your UTR and activation code"
+    text: "HMRC sends your UTR by post within 10 working days and a Government Gateway activation code separately; allow 2 to 3 weeks in total."
+  - name: "Set up your Government Gateway account"
+    text: "Use the activation code to access your Government Gateway account, which you will use to file your self assessment return, check your tax bill, and manage payments."
+  - name: "Check your Class 2 National Insurance position"
+    text: "If your profits are below £6,725 (the Small Profits Threshold for 2025/26), you can choose to pay voluntary Class 2 NIC at £3.50 per week to protect your state pension entitlement."
+  - name: "Register for VAT if your turnover exceeds £90,000"
+    text: "If your turnover in any rolling 12-month period goes over £90,000, register for VAT using form VAT1 or online through Government Gateway within 30 days of the end of that month."
+  - name: "File your self assessment return and keep records"
+    text: "Submit your online return by 31 January each year, pay any tax due, and retain all business records for at least 5 years after the 31 January deadline of the relevant tax year."
 ---
 
 <h2>What Does Registering as Self Employed Actually Mean?</h2>

@@ -19,6 +19,12 @@ h1: "Why Electrical Contractors Need a Specialist Accountant for Electricians"
 summary: "Electrical contractors face unique tax and compliance challenges: CIS deductions, flat rate VAT, material-heavy payroll, and complex IR35 decisions. A specialist accountant for electricians helps you keep more of what you earn while staying HMRC compliant."
 schema: ""
 faqs: []
+keyTakeaways:
+  - "CIS subcontractors have 20% deducted from labour payments by main contractors (30% if not CIS-registered), then reclaim those deductions via self assessment or their corporation tax return."
+  - "If an electrician's relevant goods spend falls below 2% of turnover or £1,000 a year, the 16.5% limited cost trader rate applies instead of the standard sector flat rate."
+  - "From April 2026, MTD for ITSA applies to sole trader electricians with self-employment income over £50,000, with the threshold falling to £30,000 from April 2027 and £20,000 from April 2028."
+  - "A standard van with private use carries a benefit in kind charge of £3,960 per year (2025/26), while a zero-emission van attracts a nil benefit."
+  - "Under the merged R&D scheme from April 2024, RDEC gives a 20% above-the-line credit, while R&D-intensive loss-making companies (over 30% of expenditure on R&D) qualify for the payable ERIS credit."
 ---
 
 <p>If you run an electrical contracting business in the UK, you already know the paperwork side of the job is nothing like the site side. You are dealing with CIS deductions on every invoice, VAT returns that depend on whether you use the flat rate scheme, payroll for labour-only subcontractors, and a limited company structure that needs to be tax-efficient from day one. A general high street accountant who handles a mix of plumbers, freelancers, and shopkeepers may not know the specific rules that apply to your trade. That is where a specialist <strong>accountant for electricians</strong> makes a real difference to your bottom line.</p>

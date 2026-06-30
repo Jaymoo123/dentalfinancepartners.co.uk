@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "In the example with £80,000 profits and a 12% BIK PHEV for 2025/26, the limited company costs £1,377.10 more than the sole trader, driven mainly by BIK and fuel charges."
+  - "A fully electric car (0g/km CO2) carries a benefit-in-kind percentage of just 3% for 2025/26, rising to 4% for 2026/27, making it the lowest-BIK option for a company car."
+  - "If a company pays for personal fuel, a fuel scale charge applies: the car's BIK percentage is multiplied by the fixed figure of £27,800 for 2025/26."
+  - "From 6 April 2025, a limited company pays Class 1A National Insurance at 15% on the full benefit-in-kind value of a company car, adding to the total cost."
+  - "The main rate writing-down allowance on cars is 18% for 2025/26, reducing to 14% from 6 April 2026 under FA 2026 s.28, affecting both structures equally."
+  - "Unlike a sole trader, who restricts car allowances to business use, a limited company claims the full writing-down allowance because private use is taxed via BIK."
 ---
 <h2>The Problem with Most Sole Trader vs Limited Company Calculators</h2>
 

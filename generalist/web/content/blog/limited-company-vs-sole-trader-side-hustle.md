@@ -25,6 +25,13 @@ faqs:
     answer: "Yes. Even if your limited company pays corporation tax on its own return, you must file a personal self assessment return (SA100) to report any dividends or salary you take from the company. If your only income from the company is dividends below the £500 allowance, you may not need to file, but most side hustle directors do."
   - question: "What is the cheapest way to set up a limited company for a side hustle?"
     answer: "Register directly with Companies House online for £12. You need"
+keyTakeaways:
+  - "A higher-rate taxpayer extracting all side hustle profit as dividends faces a 45.1% effective tax rate in 2025/26, versus 27.2% as a sole trader on £14,000 profit."
+  - "Deferring dividend extraction to a later year when you are a basic-rate taxpayer saves £2,835 on £11,340 of retained company profit."
+  - "A limited company requires five separate filing obligations compared with one self assessment return for a sole trader, and late annual accounts penalties start at £150."
+  - "If total income stays below £50,270, or the side hustle profit is below £10,000, a sole trader structure is almost always the better choice."
+  - "The VAT registration threshold of £90,000 of rolling 12-month turnover applies equally to sole traders and limited companies; the business structure does not change the trigger."
+  - "Corporation tax for a side hustle company with profits below £50,000 is 19% in 2025/26, and the dividend allowance is £500 before higher-rate dividend tax applies."
 ---
 
 <p>If you are running a side hustle alongside a full-time job, the decision between operating as a sole trader or setting up a limited company is not about prestige. It is about net income after tax, filing obligations, and how much of your weekend you want to spend on paperwork.</p>

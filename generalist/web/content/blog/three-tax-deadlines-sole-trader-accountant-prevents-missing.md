@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, you can apply to HMRC to reduce your payments on account if your income for the current year is lower than the previous year. But you must be accurate. If you reduce them and your income has not dropped, HMRC charges interest on the underpaid amount. An accountant can assess whether a reduction is safe for your situation."
   - question: "How does missing the self assessment deadline affect my National Insurance record?"
     answer: "Class 2 NIC was abolished from 6 April 2024. For 2025/26, most sole traders build their National Insurance record through their Class 4 liability, which is calculated as part of the self assessment return. Filing late or filing incorrectly can leave gaps in your NI record. For a sole trader nearing retirement, a single gap can cost roughly £275 per year in reduced state pension for life. Filing on time through an accountant protects both your tax position and your NI record."
+keyTakeaways:
+  - "Missing the 31 January self assessment deadline triggers a £100 penalty immediately, then £10 per day for up to 90 days, plus 5% of tax owed after six months."
+  - "A sole trader with a £10,000 tax bill who files six months late faces £1,500 in total penalties, plus interest on the unpaid tax from 31 January."
+  - "The 31 January deadline covers three obligations at once: the 2024/25 self assessment return, the tax due for that year, and the first payment on account for 2025/26."
+  - "The second payment on account is due on 31 July, and HMRC charges interest at 7.25% from that date on any amount paid late."
+  - "Class 2 National Insurance was abolished from 6 April 2024, so most sole traders now build their NI record through Class 4 contributions calculated within their self assessment return."
+  - "A single gap in a sole trader's National Insurance record can reduce the state pension by around £275 per year for life."
 ---
 
 <p>If you run a business as a sole trader, HMRC gives you a single filing deadline for your self assessment tax return. Miss it and you get a £100 penalty immediately. Leave it longer and the fines stack up to £900 plus interest on unpaid tax.</p>

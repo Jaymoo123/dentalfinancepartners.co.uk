@@ -25,6 +25,13 @@ faqs:
     answer: "It depends on your profit level. Companies with augmented profits of £50,000 or less pay 19% (the small profits rate). Companies with profits over £250,000 pay 25% (the main rate). Between £50,000 and £250,000, marginal relief applies and the effective rate sits between 19% and 25%. The old flat 19% rate for all companies ended on 31 March 2023."
   - question: "Do I pay corporation tax if my company made a loss?"
     answer: "No. Corporation tax is charged on taxable profits only. If your company makes a loss, you"
+keyTakeaways:
+  - "For 2025/26, UK limited companies pay corporation tax at 19% on profits up to £50,000 and at 25% on profits over £250,000."
+  - "Profits between £50,000 and £250,000 attract marginal relief at a standard fraction of 3/200, giving an effective marginal rate of 26.5% through that band."
+  - "Each associated company under common control divides the profit thresholds; two associated companies reduce the small profits limit to £25,000 and the upper limit to £125,000 each."
+  - "Corporation tax is due 9 months and 1 day after the accounting year-end, while the CT600 filing deadline falls 12 months after year-end."
+  - "The Annual Investment Allowance gives 100% tax relief on most plant and machinery purchases up to £1 million per year, deducted in the year of purchase."
+  - "Director loans unrepaid 9 months and 1 day after year-end trigger S455 tax at 33.75% for 2025/26 loans, or 35.75% for loans made from 6 April 2026."
 ---
 
 <p>If you run a limited company in the UK, corporation tax is your single biggest direct tax cost. The rate you pay depends entirely on your company's taxable profit, not your turnover. And since April 2023, the old flat 19% rate has been replaced with a tiered system. Many directors still assume they pay 19% across the board. That is no longer correct.</p>

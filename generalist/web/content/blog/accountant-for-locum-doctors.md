@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, but the rules are strict. You can claim for equipment, travel between assignments (not from home to a regular workplace), professional subscriptions, insurance, and accountancy fees. You cannot claim for commuting to a regular place of work or for personal items. Keep receipts and use accounting software to track everything."
   - question: "What happens if a locum doctor does not register for VAT on time?"
     answer: "If your turnover exceeds £90,000 in any rolling 12-month period, you must register for VAT within 30 days. If you miss that deadline, HMRC can charge penalties and backdate the VAT you should have charged. You end up paying the VAT out of your own pocket. Use accounting software that tracks your rolling turnover to avoid this."
+keyTakeaways:
+  - "Locum doctors inside IR35 lose most of their limited company tax advantage, as the company must pay employer NI and apprenticeship levy on a deemed employment payment."
+  - "A limited company is not always worthwhile: if locum income is below £50,000, accountancy fees, payroll, and filing costs can outweigh the tax savings."
+  - "In 2026/27 dividend tax rates are 10.75%, 35.75%, or 39.35% depending on total income, up from 8.75% and 33.75% in 2025/26."
+  - "Making Tax Digital for Income Tax Self Assessment is mandatory from April 2026 for qualifying income above £50,000, extending to £30,000 from April 2027 and £20,000 from April 2028."
+  - "Locum doctors must register for VAT within 30 days once turnover exceeds £90,000 in any rolling 12-month period; missing that deadline triggers backdated VAT charges and penalties."
+  - "NHS pension contributions for limited company locum doctors are calculated on salary drawn, not company gross income, so heavy dividend use cuts pensionable earnings."
 ---
 
 <p>If you are a locum doctor working in the NHS or private sector, your tax situation is more complex than a standard salaried GP or hospital doctor. You are self-employed, or you may have set up a limited company. Either way, HMRC treats you differently from a permanent employee. And the wrong tax structure can cost you thousands.</p>

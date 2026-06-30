@@ -8,11 +8,6 @@ author: Holloway Davies Editorial Team
 category: Bookkeeping and Compliance
 metaTitle: 'Construction Accounting Software UK: CIS, VAT, Payroll'
 metaDescription: Pick construction accounting software that handles CIS, reverse charge VAT and payroll. Compare Xero, QuickBooks, Sage and FreeAgent from £24 a month.
-keyTakeaways:
-  - "CIS deductions run at 20% for registered subcontractors and 30% for those not registered for CIS."
-  - "FreeAgent handles CIS natively at around £24 per month, or free with NatWest or RBS banking."
-  - "Domestic reverse charge has been mandatory for most construction services between VAT-registered businesses since March 2021."
-  - "From April 2026, sole traders with qualifying income over £50,000 must use MTD compatible software."
 altText: A UK construction site manager and an accountant reviewing financial reports on a laptop at a site office in Manchester.
 image: /blog/construction-accounting-software-uk-contractors.jpg
 imageCredit:
@@ -39,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "CIS deductions run at 20% for registered subcontractors and 30% for those not registered, with CIS300 returns due by the 19th of each month."
+  - "From April 2026, sole traders with qualifying income over £50,000 must use MTD compatible software, with the threshold falling to £30,000 from April 2027."
+  - "Domestic reverse charge has been mandatory for most construction services between VAT-registered businesses since March 2021."
+  - "FreeAgent handles CIS natively at around £24 per month, or free for businesses banking with NatWest or Royal Bank of Scotland."
+  - "Sage 50 Construction starts around £80 per month and handles CIS, retentions and detailed project costing natively without add-ons."
+  - "Salary and dividends do not count towards the £50,000 MTD ITSA threshold, so a director paid only via salary and dividends is generally not brought into MTD ITSA."
 ---
 <p>If you run a construction business in the UK, your accounting software needs to do more than just track income and expenses. It needs to handle CIS deductions, multiple VAT schemes, subcontractor payments, retentions and payroll for site workers. A generic bookkeeping tool will leave you doing half the work manually. The right <strong>construction accounting software</strong> saves hours each month and keeps you compliant with HMRC.</p>
 

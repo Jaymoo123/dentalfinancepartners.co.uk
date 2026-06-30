@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. A specialist freelancer accountant UK will review your contracts and working practices to assess your IR35 status. They can advise on whether your contract is inside or outside IR35, help you understand the Status Determination Statement from your client, and calculate the deemed employment payment if you are inside IR35. This is a core service for limited company contractors."
   - question: "How much does a freelancer accountant UK cost per month?"
     answer: "For a limited company contractor with one director, expect £80 to £150 per month for a full service that includes annual accounts, corporation tax return, payroll, Self Assessment, and ongoing advice. Sole trader Self Assessment is typically £100 to £300 per year as a one-off fee. VAT returns and bookkeeping may be included or charged extra. Always ask for a full breakdown before signing up."
+keyTakeaways:
+  - "A sole trader Self Assessment service from a specialist freelancer accountant UK typically costs £100 to £300 per year as a one-off fee in 2025/26."
+  - "A limited company contractor with one director can expect £80 to £150 per month for a full service, rising to £120 to £200 with VAT, payroll, and bookkeeping."
+  - "VAT registration becomes mandatory once taxable turnover exceeds £90,000 in any rolling 12-month period; voluntary registration can be worthwhile if your clients are VAT-registered businesses."
+  - "Making Tax Digital for Income Tax is mandatory from April 2026 for sole traders and freelancers with qualifying income exceeding £50,000."
+  - "A director's loan unpaid 9 months and 1 day after the year-end triggers S455 tax at 35.75% for loans made on or after 6 April 2026 (33.75% in 2025/26)."
+  - "Class 2 National Insurance was abolished as a mandatory charge from 6 April 2024; voluntary Class 2 remains only for those below the small profits threshold protecting their NI record."
 ---
 
 <p>If you work for yourself as a freelancer, contractor, or small business owner in the UK, you are personally responsible for getting your tax affairs right. HMRC does not send you a bill. You calculate what you owe, file the returns, and pay on time. Get it wrong and you face penalties, interest, and potentially an HMRC compliance check.</p>

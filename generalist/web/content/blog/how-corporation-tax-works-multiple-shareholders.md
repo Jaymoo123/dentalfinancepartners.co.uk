@@ -34,6 +34,13 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "For 2025/26, corporation tax is 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief calculated at a 3/200 fraction between those thresholds."
+  - "The number of shareholders does not change the corporation tax rate, but if shareholders also control other companies, the £50,000 small profits threshold is divided between all associated companies."
+  - "Dividends are paid from post-tax profits and do not reduce the company's corporation tax; only increased allowable expenses, capital allowances, or pension contributions can lower the bill."
+  - "S455 tax (33.75% on loans made in 2025/26, 35.75% from 6 April 2026) applies to any overdrawn director loan not repaid within 9 months and 1 day of year-end."
+  - "Business Asset Disposal Relief gives a 14% CGT rate on share disposals in 2025/26, rising to 18% from April 2026, with a £1 million lifetime limit and 5% minimum shareholding."
+  - "For 2025/26, each shareholder pays dividend tax at their own marginal rate (8.75% basic, 33.75% higher, 39.35% additional), with a £500 annual dividend allowance per person."
 ---
 <p>If you run a limited company with multiple shareholders, the first thing to understand is this: corporation tax is the company's own tax. It is not a personal tax paid by the shareholders. The company calculates its taxable profits, files a CT600 return with HMRC, and pays the tax due.</p>
 

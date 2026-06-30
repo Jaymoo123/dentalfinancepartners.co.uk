@@ -27,6 +27,13 @@ faqs:
     answer: "Crunch is the most popular choice for contractors. Its software is built for that market, and its pricing is competitive. TaxAssist can work if you want local support, but you will pay more. Mazuma is less suited because contractors typically need to see their profit and dividend capacity in real time, which Mazuma's monthly report model does not provide easily."
   - question: "What happens if I need advice outside of bookkeeping and tax returns, like on director's loan accounts or share structure?"
     answer: "Crunch and Mazuma offer limited strategic advice. Their focus is compliance. TaxAssist franchises may offer broader advice, but it depends on the individual accountant's expertise. For complex issues like director's loan accounts, alphabet shares, or group structures, you are better off with a firm that provides proactive tax planning alongside compliance. That is where a dedicated ICAEW-qualified firm adds real value."
+keyTakeaways:
+  - "Crunch's standard plan for a one-director limited company costs around £74.50 per month plus VAT, covering software and accountant support; the software-only plan is roughly £30 per month."
+  - "TaxAssist is a franchise network of over 200 independently owned local practices, with limited company fees typically ranging from £80 to £150 per month depending on location."
+  - "Mazuma's flat monthly fee for a limited company is roughly £95 for turnover up to £50,000, around £125 up to £100,000 and around £175 up to £250,000 (plus VAT)."
+  - "Mazuma does not provide clients with access to accounting software; you submit paperwork and receive a monthly profit and tax summary instead of real-time visibility."
+  - "You must register for VAT once your taxable turnover exceeds £90,000 on a rolling 12-month basis, then notify HMRC within 30 days of the month-end you breached it."
+  - "Crunch's software is MTD-compatible for VAT and, from April 2026, for Income Tax."
 ---
 
 <p>If you are a UK business owner deciding between Crunch, TaxAssist, and Mazuma for your accounting, you are comparing three fundamentally different services. One is a software-first platform with add-on human support. Another is a nationwide network of high-street accountants. The third is a remote bookkeeping and tax return service with a fixed monthly fee. Which one fits your business depends on your structure, your turnover, and how much you want to handle yourself.</p>

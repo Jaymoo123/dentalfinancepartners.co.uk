@@ -27,6 +27,13 @@ faqs:
     answer: "The company must pay Section 455 tax on the outstanding loan amount. The rate equals the dividend upper rate for the year the loan was made: 33.75% for loans made in 2025/26, and 35.75% for loans made on or after 6 April 2026. This is repayable when the loan is eventually repaid, but it ties up company cash. The director also faces a benefit in kind charge on loans over £10,000."
   - question: "Can a silent investor claim Business Asset Disposal Relief?"
     answer: "Only if they have been an employee or officer of the company for at least 2 years before disposal. Silent investors who are not directors or employees cannot claim BADR. They pay the standard CGT rate of 24% on gains above their annual exemption."
+keyTakeaways:
+  - "Corporation tax is charged on the company's taxable profits regardless of how many shareholders it has, so the number of owners does not affect the rate or calculation."
+  - "For 2025/26, the corporation tax rate is 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief applying between those two thresholds."
+  - "The £50,000 and £250,000 thresholds are each divided by the number of associated companies plus one, so owners of multiple companies hit the 25% rate sooner than expected."
+  - "Dividends must be paid in proportion to shareholdings unless the company uses different share classes (alphabet shares), which allow flexible allocation of dividend income between shareholders."
+  - "Section 455 tax of 33.75% (35.75% on loans from 6 April 2026) applies if a director loan is not repaid within 9 months and 1 day of year end."
+  - "From 6 April 2026, Business Asset Disposal Relief gives an 18% CGT rate on disposals up to £1 million for employee or officer shareholders of at least 2 years."
 ---
 
 <p>If you run a limited company with one director and one shareholder, the corporation tax picture is straightforward. The company pays 19% or 25% on its profits, you take the rest as salary or dividends, and that is it.</p>

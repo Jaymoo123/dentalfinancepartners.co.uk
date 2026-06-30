@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. You must file a CT600 corporation tax return for every accounting period, even if you made a loss and owe no tax. HMRC charges a late filing penalty of £100 for returns filed up to 3 months late, rising to £200 for returns filed more than 3 months late, with further tax-geared penalties (10% of unpaid tax) applying at 18 and 24 months. File the return on time even when there is no tax to pay."
   - question: "Can I use a trading loss to reduce my personal tax as a director?"
     answer: "No. A company's trading loss is a company asset. It cannot be used to reduce your personal income tax or capital gains tax. The loss stays in the company and can only be offset against the company's future profits or, in some cases, surrendered to another group company. If you personally lent the company money, that is a separate director's loan account matter."
+keyTakeaways:
+  - "A company making a trading loss in year one pays no corporation tax, and the loss can be carried forward indefinitely to offset profits from the same trade."
+  - "For most small companies, 100% of carried-forward losses can be offset against profits in a single year; the 50% restriction only applies when profits exceed £5 million."
+  - "Corporation tax rates for 2025/26 are 19% on profits up to £50,000 and 25% above £250,000, so a loss used in a higher-rate year saves more tax per pound."
+  - "The CT600 must be filed within 12 months of the year-end even if no tax is owed; late filing costs £100, rising to £200 after 3 months."
+  - "Under the Enhanced R&D Intensive Scheme (ERIS), loss-making companies spending 30% or more of total costs on R&D can surrender losses for a cash payment of 14.5%."
+  - "An overdrawn director's loan account is not fixed by a trading loss; Section 455 tax (33.75% in 2025/26, 35.75% from 6 April 2026) applies if unrepaid within 9 months."
 ---
 
 <p>You have just filed your first set of accounts for your new limited company. The numbers show a loss. Perhaps you spent heavily on equipment, marketing, or stock before any revenue came in. That is common for new businesses. And it raises an obvious question: how does corporation tax work when there is no profit to tax?</p>

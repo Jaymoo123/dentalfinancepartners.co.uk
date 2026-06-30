@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. If your total income is close to £50,270, reducing your dividends by a small amount can keep you in the basic rate band. This preserves your full £1,000 PSA and keeps all dividends taxed at 8.75% rather than 33.75%. Use a tax projection to find the optimal dividend amount for your specific situation."
   - question: "Does using an ISA protect my savings from this tax interaction?"
     answer: "Yes. Interest earned inside a Cash ISA or Stocks and Shares ISA is tax-free and does not count towards your total income for PSA purposes. This means ISA interest does not push you into a higher tax band or reduce your PSA. Using your full £20,000 ISA allowance each year is one of the most effective ways to protect savings income from tax, especially if you are a higher rate taxpayer."
+keyTakeaways:
+  - "For 2025/26, dividend tax rates are 8.75% for basic rate taxpayers, 33.75% for higher rate, and 39.35% for additional rate taxpayers."
+  - "The dividend allowance for 2025/26 is £500, meaning the first £500 of dividend income in the tax year is tax-free, down from £1,000 in 2023/24."
+  - "The Personal Savings Allowance is £1,000 for basic rate taxpayers, drops to £500 once total income exceeds £50,270, and falls to zero above £125,140."
+  - "Because dividends count towards total income for tax-band purposes, dividends that push total income above £50,270 halve the Personal Savings Allowance from £1,000 to £500."
+  - "Interest inside a Cash ISA or Stocks and Shares ISA is tax-free and does not count towards total income for Personal Savings Allowance purposes; the annual ISA limit is £20,000."
+  - "A personal pension contribution reduces adjusted net income and can restore a basic rate position, returning the full £1,000 Personal Savings Allowance if total income is close to £50,270."
 ---
 
 <p>The dividend tax rates for 2025/26 are 8.75% for basic rate taxpayers, 33.75% for higher rate taxpayers, and 39.35% for additional rate taxpayers. The dividend allowance has dropped to £500, down from £1,000 in 2023/24 and £2,000 up to 2022/23.</p>

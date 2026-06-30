@@ -27,6 +27,13 @@ faqs:
     answer: "The standard approach is a salary of £12,570 (matching the personal allowance and primary NI threshold) plus dividends. Dividends are taxed at 10.75% for basic rate, 35.75% for higher rate, and 39.35% for additional rate (from 6 April 2026; the 2025/26 rates were 8.75% and 33.75%). The dividend allowance is £500 from April 2024. If you have multiple directors, alphabet shares allow flexible dividend allocation. A specialist accountant will model the most tax-efficient split for your specific profits and personal circumstances."
   - question: "What happens if I get IR35 wrong for a contractor?"
     answer: "If HMRC determines a contractor was inside IR35 and you did not operate payroll, you become liable for the unpaid tax and National Insurance, plus interest and penalties. This can run into tens of thousands per contractor per year. You also face the cost of defending an HMRC enquiry. A specialist accountant will help you draft robust contracts and working practices, and guide you through the Status Determination Statement process."
+keyTakeaways:
+  - "The corporation tax rate for 2025/26 is 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief between those thresholds."
+  - "From 6 April 2026, dividend tax rates are 10.75% (basic rate), 35.75% (higher rate) and 39.35% (additional rate); the annual dividend allowance is £500 from April 2024."
+  - "A marketing agency must register for VAT once taxable turnover exceeds £90,000 in a rolling 12-month period; B2B services supplied to EU clients do not carry UK VAT."
+  - "Loss-making agencies spending more than 30% of total costs on qualifying R&D may claim enhanced relief under the Enhanced R&D Intensive Scheme (ERIS), which applies from 1 April 2024."
+  - "Business Asset Disposal Relief currently gives an 18% CGT rate on the first £1m of qualifying gains (14% in 2025/26), if shares are held two years and trading conditions met."
+  - "Incorrectly classifying a contractor as outside IR35 can leave the agency liable for unpaid tax and National Insurance, running into tens of thousands of pounds per contractor a year."
 ---
 
 <p>If you run a marketing agency in the UK, your accounting needs are different from a traditional retail business or a construction firm. You deal with retainer income, project-based billing, subcontractor costs, software subscriptions, and often international clients. A generic accountant might miss the specific tax reliefs and compliance rules that apply to your sector.</p>

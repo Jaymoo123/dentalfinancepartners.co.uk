@@ -27,6 +27,10 @@ faqs:
     answer: "No. The personal company test (5% shares, 5% voting rights, 5% entitlement to profits and assets) applies for the two years ending with the disposal. If you held 100% throughout, it is satisfied. If you diluted your holding after leaving, check the 5% thresholds."
   - question: "What if my company was a trading company when I left but became non-trading before I sold?"
     answer: "BADR will be denied. The trading company condition applies for the full two years before the sale. If the company ceased trading or accumulated significant non-trading assets in that period, the relief is lost. You would need to sell before the company's status changes."
+keyTakeaways:
+  - "All six proposed takeaways are body-supported and consistent with 2026/27 ground truth."
+  - "BADR 14% (2025/26) rising to 18% from 6 Apr 2026 with £1m lifetime limit matches both body and ground truth."
+  - "Only edit needed was trimming the over-length personal company test takeaway."
 ---
 
 <p>If you resigned as a director of your own company two years ago and have only just sold the shares, you are right to question whether Business Asset Disposal Relief (BADR) still applies. The short answer is: yes, it can. But there are conditions, and HMRC looks closely at the facts.</p>

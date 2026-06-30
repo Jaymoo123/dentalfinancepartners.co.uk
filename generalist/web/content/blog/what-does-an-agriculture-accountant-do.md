@@ -27,6 +27,13 @@ faqs:
     answer: "The herd basis election treats your core breeding herd as a capital asset rather than trading stock. Under this election, the initial cost of the herd is not deductible, but the final sale is not taxable. Replacement costs are deductible. It is most useful for dairy and beef farmers where herd values are high and turnover is frequent. The election must be made within two years of the end of the first accounting period in which the herd is held. An agriculture accountant will model both scenarios to advise which is better for your farm."
   - question: "Can an agriculture accountant help with inheritance tax planning for my farm?"
     answer: "Yes. Agricultural Property Relief (APR) and Business Property Relief (BPR) can eliminate inheritance tax on the agricultural value of farmland and buildings. But the rules are strict. Farmhouses are particularly scrutinised by HMRC. An agriculture accountant will work with your solicitor to structure ownership, review the trading status of diversified activities, and prepare the evidence needed to support an APR or BPR claim. Succession planning should start years before any transfer."
+keyTakeaways:
+  - "Agricultural Property Relief gives 100% inheritance tax relief on the agricultural value of farmland and buildings, after two years' occupation if owner-occupied or seven years if let."
+  - "The profit averaging election must be made within 12 months of the filing date for the second year; missing this window means the relief is lost."
+  - "The herd basis election treats the core breeding herd as a capital asset, not trading stock, and must be made within two years of the first relevant accounting period's end."
+  - "The Annual Investment Allowance (AIA) of £1,000,000 covers most agricultural plant and machinery, and agricultural buildings qualify for a structures and buildings allowance of 3% per year."
+  - "Business Property Relief (BPR) gives 100% relief on trading farm businesses, but if diversification pushes the investment element above 50%, BPR may be lost on the whole farm."
+  - "The Furnished Holiday Lettings regime was abolished from 6 April 2025, so holiday let and glamping ventures can only qualify for trade treatment if they meet the general trading criteria."
 ---
 
 <h2>Farming Is Not a Normal Business for Tax Purposes</h2>

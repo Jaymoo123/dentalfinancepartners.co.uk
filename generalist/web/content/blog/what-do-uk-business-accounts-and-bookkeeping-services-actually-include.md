@@ -27,6 +27,10 @@ faqs:
     answer: "For Making Tax Digital, your software must connect directly to HMRC's systems. Xero, FreeAgent, QuickBooks and Sage Accounting are all MTD-compatible. For VAT, MTD has been mandatory since April 2019, so you should already be using compatible software if you are VAT registered. For income tax (MTD for ITSA), you will need compatible software from April 2026 if your qualifying income exceeds £50,000."
   - question: "Can I do my own bookkeeping and just pay for year-end accounts?"
     answer: "Yes, many business owners do this. The risk is that miscoded transactions or missing records make the year-end work more expensive than the ongoing service would have been. If you are confident in your bookkeeping and use proper software, a year-end-only service can work. But if your records are messy, the clean-up cost will eat any saving. Most businesses find the monthly retainer model cheaper and less stressful in practice."
+keyTakeaways:
+  - "MTD for ITSA: Apr 2026 (>£50k), Apr 2027 (>£30k), Apr 2028 (>£20k) all match ground truth."
+  - "S455 at 35.75% (loans from 6 Apr 2026) / 33.75% (earlier) is correct per FA 2026."
+  - "Corporation tax 19%/25% bands and £100k pricing scoped to 2025/26 all body-supported and current."
 ---
 
 <p>If you are searching for <strong>accounts and bookkeeping services</strong>, you probably want to know exactly what you are paying for. Not a vague list of "compliance work" or "financial management." The actual tasks. The forms filed. The deadlines met. The numbers reconciled.</p>

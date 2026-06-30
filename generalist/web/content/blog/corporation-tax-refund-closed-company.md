@@ -27,6 +27,13 @@ faqs:
     answer: "You cannot use administrative restoration. You must apply to the High Court for court restoration. This is more expensive (typically £2,000 to £5,000 in legal costs) and takes longer. Whether it is worth it depends on the refund amount."
   - question: "Does HMRC notify me if my closed company is owed a corporation tax refund?"
     answer: "HMRC may send a letter to the company's registered address or to your personal address if they have it on file. But they are not required to do so. If you have moved or the company had no correspondence address, you may never receive the notification. Check your HMRC online account or call them proactively."
+keyTakeaways:
+  - "When a company is dissolved, any corporation tax refund owed to it passes to the Crown under the legal principle of Bona Vacantia."
+  - "Administrative restoration costs £100 to Companies House and takes 2 to 4 months, but is only available within 6 years of dissolution."
+  - "Court restoration, required for voluntarily dissolved companies or those struck off more than 6 years ago, typically costs £2,000 to £5,000 plus VAT in legal fees."
+  - "The Treasury Solicitor deducts 4.5% of the asset value as a handling fee when processing a Bona Vacantia claim without company restoration."
+  - "For refunds above £2,000 restoration is the standard approach; for smaller amounts, a Bona Vacantia claim or writing off the sum may be more practical."
+  - "Under the merged RDEC scheme, which applies to accounting periods beginning on or after 1 April 2024, a 20% taxable expenditure credit applies."
 ---
 
 <p>You dissolved your company, filed the final accounts, and moved on. Then a letter from HMRC arrives. It says the company is owed a corporation tax refund of £14,720. The company no longer exists. Can you still get that money?</p>

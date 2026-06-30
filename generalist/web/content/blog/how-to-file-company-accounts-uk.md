@@ -27,6 +27,24 @@ faqs:
     answer: "Yes, you can file your own accounts as a director. Many micro-entities use software like FreeAgent or Xero to generate and file accounts. However, an accountant ensures compliance with UK GAAP, identifies tax reliefs, and keeps you on schedule. The cost of an accountant often outweighs the risk of penalties or missed reliefs."
   - question: "What is a confirmation statement and how is it different from annual accounts?"
     answer: "A confirmation statement (form CS01) is a separate filing that confirms your company's registered address, directors, shareholders, and SIC code are correct. It must be filed every 12 months regardless of whether anything has changed. It costs £34 online (since 1 May 2024). It is not the same as your annual accounts and has a different deadline."
+keyTakeaways:
+  - "Every UK limited company must file annual accounts with Companies House and a separate corporation tax return (form CT600) with HMRC each year."
+  - "Companies House accounts are due 9 months after the year-end, while the CT600 is due 12 months after, but corporation tax must be paid within 9 months and 1 day."
+  - "Companies House late filing penalties are automatic: £150 up to one month late, £375 at one to three months, £750 at three to six months, and £1,500 beyond six months."
+  - "Small companies (turnover up to £15 million) and micro-entities (turnover up to £1 million) can file abridged or filleted accounts, but HMRC always receives the full set."
+  - "The balance sheet must be signed by a director or Companies House rejects the filing, and online filing needs the company's 6-character authentication code."
+  - "Companies with taxable profits above £1.5 million must pay corporation tax in quarterly instalments rather than a single lump sum."
+howToSteps:
+  - name: "Prepare your accounts from bookkeeping records"
+    text: "Turn your bookkeeping data (invoices, receipts, bank statements, payroll) into statutory accounts that comply with UK GAAP or FRS 102. The balance sheet must be signed by a director."
+  - name: "Choose your Companies House filing format"
+    text: "Small and micro companies can file full, abridged, or filleted accounts. Most directors choose filleted accounts to keep turnover and profit off the public register."
+  - name: "File your accounts with Companies House"
+    text: "File online via the WebFiling service or compatible software using your 6-character authentication code. Companies House confirms receipt immediately and updates the public register within 24 hours."
+  - name: "File your corporation tax return with HMRC"
+    text: "Submit form CT600 with the full accounts attached through HMRC's online service, including your tax calculation and any reliefs such as R&D credits or capital allowances."
+  - name: "Pay your corporation tax"
+    text: "Pay within 9 months and 1 day of your year-end using your company's 10-digit UTR as the reference. Profits above £1.5 million must be paid in quarterly instalments."
 ---
 
 <p>Filing your company accounts is not optional. Every limited company registered in the UK must file annual accounts with Companies House and deliver a corporation tax return to HMRC. Miss the deadlines and you face automatic penalties, a damaged credit rating, and potential director disqualification.</p>

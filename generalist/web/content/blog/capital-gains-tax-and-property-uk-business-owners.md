@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, if the property was used in your qualifying trading business and you've owned the business for at least 2 years. The BADR rate is 14% for 2025/26, rising to 18% from April 2026. The relief applies to the sale of a business as a going concern, shares in a trading company, or assets used in the business after ceasing trade. It does not apply to investment property."
   - question: "How is property held in a limited company taxed on sale?"
     answer: "Limited companies pay corporation tax on property gains, not capital gains tax. The rate is 19% to 25% depending on profit level. Companies do not get the annual exempt amount. When you extract the proceeds from the company, you pay further tax through dividends or a capital distribution. The total effective tax rate can exceed 40%, so selling personally or through a company requires careful modelling."
+keyTakeaways:
+  - "From 30 October 2024, both residential and commercial property CGT rates are 18% for basic rate taxpayers and 24% for higher and additional rate taxpayers."
+  - "UK residents must report and pay CGT on a residential property sale within 60 days of completion, but commercial gains go on the Self Assessment return by 31 January."
+  - "Business Asset Disposal Relief gives a 14% CGT rate in 2025/26 on qualifying business property gains, rising to 18% from 6 April 2026, subject to a £1 million lifetime limit."
+  - "The CGT annual exempt amount is £3,000 for 2025/26, reduced from £12,300 in 2022/23, and unused allowance cannot be carried forward to future years."
+  - "Limited companies pay corporation tax of 19% (profits up to £50,000) or 25% (profits above £250,000) on property gains rather than CGT, and do not receive the annual exempt amount."
+  - "Principal Private Residence Relief exempts the entire gain on your main home, plus the final 9 months of ownership, even if you have already moved out before completion."
 ---
 
 <h2>Capital Gains Tax and Property: The Rates Have Changed</h2>

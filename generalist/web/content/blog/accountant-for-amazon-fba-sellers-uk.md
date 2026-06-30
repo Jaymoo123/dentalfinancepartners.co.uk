@@ -27,6 +27,13 @@ faqs:
     answer: "All Amazon fees are allowable business expenses. This includes referral fees, fulfilment fees, storage fees, long-term storage fees, advertising costs, and subscription fees. Your accountant should categorise these separately in your chart of accounts so you can see your true net margin per product."
   - question: "What happens if I do not register for VAT in an EU country where Amazon holds my stock?"
     answer: "You risk penalties from that country's tax authority, and Amazon may suspend your account if your VAT status is not compliant. The risk is real because Amazon moves stock between fulfilment centres without telling you. An accountant for Amazon FBA sellers should monitor your stock locations and advise on where you need to register."
+keyTakeaways:
+  - "UK VAT registration is mandatory once taxable turnover exceeds £90,000 in a rolling 12-month period, and storing goods in Amazon's EU fulfilment centres triggers a separate VAT registration in each country concerned."
+  - "Limited company FBA sellers pay corporation tax at 19% on profits up to £50,000 and 25% above £250,000, with marginal relief between; the CT600 is due 12 months after year-end and tax 9 months and 1 day after."
+  - "From 6 April 2026, dividend tax rates are 10.75% at basic rate, 35.75% at higher rate, and 39.35% at additional rate, with a £500 dividend allowance (8.75%/33.75% applied in 2025/26)."
+  - "Making Tax Digital for Income Tax becomes mandatory from April 2026 for self-employed individuals with qualifying income over £50,000, extending to over £30,000 from April 2027 and over £20,000 from April 2028."
+  - "All Amazon fees, including referral, fulfilment, storage, long-term storage, advertising, and subscription fees, are allowable business expenses against corporation tax or self-assessment liability."
+  - "FBA stock must be valued at the lower of cost and net realisable value on a per-item basis, where cost includes purchase price, shipping to fulfilment centres, import duties, and packaging costs."
 ---
 
 <h2>Why Amazon FBA Sellers Need a Specialist Accountant</h2>

@@ -27,6 +27,13 @@ faqs:
     answer: "For a small limited company with payroll, VAT and around 50 transactions per month, expect £250 to £500 per month. This typically includes bank reconciliation, VAT returns, payroll, year end accounts and the corporation tax return. Always confirm the full scope before signing up."
   - question: "What happens if my accounting and bookkeeping service misses a filing deadline?"
     answer: "Companies House charges late filing penalties starting at £150 for a private company one month late. HMRC charges interest on late corporation tax payments. A professional service carries professional indemnity insurance and should have systems to prevent missed deadlines. Always check their process for ensuring timely filings."
+keyTakeaways:
+  - "Making Tax Digital for Income Tax Self Assessment becomes mandatory for self-employed people and landlords with qualifying income above £50,000 from April 2026, dropping to £30,000 from April 2027."
+  - "Corporation tax is charged at 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief applying between those thresholds."
+  - "The corporation tax return (CT600) is due 12 months after the company year end, but the tax payment itself is due 9 months and 1 day after year end."
+  - "Companies House late filing penalties start at £150 for a private company one month late and rise to £1,500 at six months late."
+  - "Employer National Insurance runs at 15% on earnings above the £5,000 secondary threshold, with Employment Allowance of up to £10,500 available where eligible."
+  - "A small limited company with payroll, VAT and around 50 transactions per month typically pays £250 to £500 per month for a full accounting and bookkeeping service (2025/26 ranges)."
 ---
 
 <p>If you run a UK business, you have likely searched for an <strong>accounting and bookkeeping service</strong> at some point. The search results all say the same things. "We save you time." "We keep you compliant." "We handle your numbers."</p>

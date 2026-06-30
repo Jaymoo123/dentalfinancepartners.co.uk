@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. Dental chairs, X-ray machines, sterilisation equipment, and computers all qualify for capital allowances. The Annual Investment Allowance (AIA) gives 100% relief on the first £1,000,000 of qualifying expenditure per year. If you buy equipment through your limited company, you deduct the full cost from your profits in the year of purchase, reducing your corporation tax bill. Your accountant should ensure every qualifying item is claimed."
   - question: "How do I sell my dental practice and minimise CGT?"
     answer: "The most common route is to sell the shares in your limited company, not the assets. This allows you to claim Business Asset Disposal Relief (BADR) on the gain, giving an 18% CGT rate on the first £1 million of qualifying gains (from 6 April 2026; the rate was 14% in 2025/26 only). You must have held the shares for at least two years and the company must be trading. If you hold the practice property personally, the property gain is taxed separately at 24% (non-residential property rate). A specialist accountant will structure the sale to maximise relief and minimise tax. Plan at least two years before you intend to sell."
+keyTakeaways:
+  - "NHS dental income is generally exempt from VAT while private dental income is standard-rated, so mixed practices must track the split accurately for every VAT return."
+  - "The dental VAT flat rate is 14.5%, but limited cost traders whose VAT-inclusive spend on relevant goods falls below 2% of turnover or £1,000 a year must use 16.5% instead."
+  - "Business Asset Disposal Relief gives an 18% CGT rate on the first £1 million of qualifying gains from 6 April 2026, if the shares are held at least two years."
+  - "The Annual Investment Allowance gives 100% tax relief on the first £1,000,000 of qualifying equipment expenditure per year, covering dental chairs, X-ray machines, sterilisation equipment, and computers."
+  - "The tapered annual allowance reduces the pension contribution allowance from £60,000 to as low as £10,000 for dentists whose adjusted income exceeds £260,000."
+  - "Dental practices must register for VAT once turnover crosses £90,000, and applying the wrong flat rate percentage risks overpaid VAT or an HMRC penalty."
 ---
 
 <h2>Dentist Tax Is Not Like Other Small Business Tax</h2>

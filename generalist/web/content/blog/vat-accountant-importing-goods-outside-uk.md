@@ -27,6 +27,13 @@ faqs:
     answer: "Yes, for most standard imports into the UK. You must use the correct customs procedure code (40 00 001 for imports, 40 00 004 for removals from customs warehousing). Some special procedures, such as inward processing relief, have different rules. Your customs agent or freight forwarder should handle the procedure code. Your VAT accountant checks that it is correct and reconciles the figures on your return."
   - question: "What happens if I lose a C79 certificate?"
     answer: "Without the C79 certificate, HMRC can refuse your input VAT claim for that import. You can request a duplicate from HMRC, but it takes time and is not guaranteed. The better approach is to use postponed VAT accounting, which eliminates the need for C79 certificates entirely. If you must use the border payment method, set up a system to store every certificate as soon as it arrives. A VAT accountant can help you build that system."
+keyTakeaways:
+  - "Under postponed VAT accounting (PVA), UK importers declare import VAT on their return as both output and input tax, so the net cash flow impact is zero."
+  - "Under PVA, import VAT appears in box 1 (output tax due) and box 4 (VAT reclaimed) on the VAT return, with the total value of imports shown in box 7."
+  - "The UK VAT registration threshold is £90,000 in taxable turnover over any rolling 12-month period; businesses must register within the 30-day window once they breach it."
+  - "If import VAT is paid at the border rather than through PVA, a C79 certificate is needed to reclaim it, and HMRC can refuse the claim without one."
+  - "Customs duty is not recoverable as input VAT; it is a cost of goods sold and must be accounted for separately in profit calculations."
+  - "Since Brexit, imports from the EU face the same customs declaration requirements, duty rules, and PVA procedures as imports from any other country."
 ---
 
 <h2>Importing Goods Triggers a Different Set of VAT Rules</h2>

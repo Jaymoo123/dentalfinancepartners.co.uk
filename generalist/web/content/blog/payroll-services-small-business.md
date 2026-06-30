@@ -23,6 +23,13 @@ faqs:
     answer: "Yes. If you pay yourself a salary through the company, you must run payroll and submit RTI reports to HMRC. This applies even if your salary is only £500 per year. The only way to avoid payroll entirely is to take no salary and rely solely on dividends, but that affects your state pension entitlement."
   - question: "What happens if I miss an RTI submission deadline?"
     answer: "HMRC issues a late filing penalty"
+keyTakeaways:
+  - "Every UK employer must submit a Full Payment Submission to HMRC on or before each payday under the Real Time Information system."
+  - "Employer National Insurance (Class 1 secondary) is charged at 15% on earnings above the secondary threshold of £5,000 per year from April 2025."
+  - "Late RTI submissions attract penalties starting at £100 per month per 50 employees, rising with repeat failures."
+  - "The Employment Allowance lets eligible employers reduce their employer National Insurance bill by up to £10,500 from April 2025."
+  - "Each employee must receive a P60 by 31 May, and P11D forms for benefits in kind are due by 6 July."
+  - "Full-service payroll for businesses with fewer than 10 employees typically costs between £15 and £50 per month."
 ---
 
 <h2>Payroll Is Not Optional. It Is a Legal Requirement.</h2>

@@ -34,6 +34,24 @@ reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+keyTakeaways:
+  - "You must register with HMRC by 5 October following the end of the tax year in which you started trading, or risk a penalty."
+  - "The £1,000 trading allowance exempts small casual earnings from tax, but does not exempt you from registering if you carry on a regular trade, even with profits under £1,000."
+  - "Class 2 National Insurance was abolished from 6 April 2024; Class 4 NIC is charged at 6% on self-employed profits between £12,570 and £50,270, and 2% above £50,270."
+  - "Self-employed profits between £6,725 and £12,570 attract an automatic National Insurance credit toward the state pension, with no payment required."
+  - "VAT registration is compulsory once your total taxable turnover exceeds £90,000 in any rolling 12-month period, even if you also hold a full-time job."
+  - "File your Self Assessment tax return online by 31 January each year; if your side hustle tax bill exceeds £1,000, HMRC may require payments on account."
+howToSteps:
+  - name: "Check whether you need to register"
+    text: "If your self-employed income is under £1,000 and purely casual, the trading allowance means no registration is required; any regular, organised trade needs registration regardless of profit level."
+  - name: "Create a Self Assessment account on GOV.UK"
+    text: "Search 'register for Self Assessment' on GOV.UK, sign in via the Government Gateway using your National Insurance number, and you will receive a 10-digit Unique Taxpayer Reference (UTR)."
+  - name: "Declare your trading start date to HMRC"
+    text: "Tell HMRC the date you first carried out work with the intention of making a profit, then complete registration by 5 October following the end of that tax year."
+  - name: "Report your income on a Self Assessment tax return each year"
+    text: "Submit your return online by 31 January, reporting all self-employed income and expenses alongside your PAYE employment income so HMRC can calculate your tax and Class 4 NIC."
+  - name: "Set money aside for your tax bill"
+    text: "Reserve 20% to 30% of every side hustle payment in a separate savings account to cover income tax and National Insurance when the bill falls due on 31 January."
 ---
 <h2>When Does a Side Hustle Become Self Employment?</h2>
 

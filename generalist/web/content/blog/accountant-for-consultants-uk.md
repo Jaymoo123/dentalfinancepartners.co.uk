@@ -27,6 +27,13 @@ faqs:
     answer: "HMRC can open an IR35 enquiry into your limited company, reviewing your contracts and working practices. If they decide IR35 applies, they will issue a tax bill for the unpaid income tax and NI, plus interest and penalties. A specialist accountant will help you prepare the evidence, respond to HMRC's questions, and negotiate a settlement if needed. Having the right contract and working practices from day one is the best defence."
   - question: "Should I register for VAT voluntarily as a consultant?"
     answer: "It depends on your costs. If you have significant business expenses (travel, software, equipment, professional fees), voluntary VAT registration lets you reclaim the VAT on those costs. You also look more professional to larger clients who prefer VAT-registered suppliers. But if your clients are mainly individuals or small businesses not registered for VAT, charging 20% extra can make you less competitive. Your accountant should run the numbers before you decide."
+keyTakeaways:
+  - "Since April 2021, medium and large private-sector clients decide a consultant's IR35 status and issue a Status Determination Statement; inside IR35, the company cannot take dividends from that contract income."
+  - "Dividends from a consultant's limited company are taxed at 10.75% (basic rate) and 35.75% (higher rate) in 2026/27, with an annual dividend allowance of just £500."
+  - "Consultants must register for VAT within 30 days of turnover crossing £90,000 in any rolling 12-month period, or HMRC can charge penalties."
+  - "Travel costs to a client site become non-deductible once a consultant has worked there for more than 24 months, at which point HMRC treats it as a permanent workplace."
+  - "Corporation tax in 2025/26 is 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief applying on profits between those two thresholds."
+  - "A full-service specialist accountant for a consultant with a limited company typically costs between £100 and £250 per month, covering accounts, VAT returns, payroll, and personal tax."
 ---
 
 <h2>What Makes a Consultant Different from a Typical Small Business?</h2>

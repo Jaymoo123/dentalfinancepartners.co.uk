@@ -27,6 +27,13 @@ faqs:
     answer: "Yes. You can use both schemes together. The annual accounting scheme lets you file one VAT return per year and make nine monthly payments. The flat rate scheme calculates your payment as a percentage of gross turnover. Combined, they reduce your VAT admin to almost zero. Many small limited companies and sole traders use this combination."
   - question: "How do I know if I am a limited cost trader?"
     answer: "You are a limited cost trader if your VAT-inclusive spending on relevant goods is less than 2% of your gross turnover or less than £1,000 per year. Relevant goods are physical items you buy to use directly in your services or resell. They do not include food, drink, vehicle fuel, capital assets, or services like subcontractors and software. If you are a limited cost trader, you must use the 16.5% flat rate."
+keyTakeaways:
+  - "Businesses classed as limited cost traders, with VAT-inclusive relevant-goods spending below 2% of gross turnover or below £1,000 a year, must use the 16.5% flat rate, the highest available."
+  - "The flat rate scheme is open to UK businesses with a VAT-exclusive turnover below £150,000, and you must leave once turnover exceeds £230,000 in any rolling 12-month period."
+  - "Under the flat rate scheme you cannot reclaim VAT on purchases, except for capital assets costing £2,000 or more including VAT."
+  - "Flat rate percentages vary by sector: IT consultants and data processors pay 14.5% of gross (VAT-inclusive) turnover, while builders pay 9.5%."
+  - "New VAT registrants using the flat rate scheme receive a 1% discount on their sector rate for the first 12 months from registration."
+  - "If you leave the flat rate scheme, you cannot rejoin for 12 months."
 ---
 
 <p>If you are a UK business owner deciding between flat rate VAT and standard VAT, the choice comes down to one question: does your business spend a meaningful amount on VAT-inclusive goods?</p>

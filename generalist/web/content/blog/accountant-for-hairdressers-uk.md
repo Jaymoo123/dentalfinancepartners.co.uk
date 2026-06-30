@@ -27,6 +27,13 @@ faqs:
     answer: "HMRC can issue a determination that the chair renters are employees. You then owe backdated PAYE income tax, employee NI, and employer NI for up to six years. Plus interest and penalties. To avoid this, have a written chair rental agreement and ensure the stylist genuinely controls their own work. If you are unsure, ask an accountant to review your arrangements."
   - question: "Should I use the Flat Rate VAT Scheme for my salon?"
     answer: "It depends on your product spend. If you buy a lot of products (shampoos, colours, retail stock), the standard scheme lets you reclaim the VAT on those purchases. The flat rate scheme at 13% might still save you money if your product spend is low. But if you are a limited cost trader, the flat rate jumps to 16.5%, which is rarely beneficial. Most hairdressers with retail sales are better off on the standard"
+keyTakeaways:
+  - "The VAT threshold for 2025/26 is £90,000 in rolling 12-month taxable turnover; once crossed, hairdressers have 30 days to notify HMRC using form VAT1."
+  - "Employer National Insurance for 2025/26 and 2026/27 is 15% on earnings above the £5,000 secondary threshold, and the Employment Allowance offsets up to £10,500 per year."
+  - "Making Tax Digital for Income Tax applies from April 2026 for income over £50,000, from April 2027 for income over £30,000, and from April 2028 for income over £20,000."
+  - "Hairdressers spending under 2% of VAT-inclusive turnover (or under £1,000 yearly) on relevant goods are limited cost traders and must use the 16.5% flat rate, rarely beneficial."
+  - "Incorporating as a limited company becomes tax-efficient for hairdressers once profits exceed roughly £40,000 to £50,000 per year; below that, sole trader status is usually better."
+  - "Tips are taxable income and must be declared on a self assessment return; service charges that a salon owner distributes to staff must go through PAYE."
 ---
 
 <h2>Why Hairdressing Has Specific Tax Needs</h2>
