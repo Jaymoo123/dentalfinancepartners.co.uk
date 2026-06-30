@@ -14,23 +14,23 @@
 --              (new EXCEPT old) = 0 rows. No column/type/semantic change, so the
 --              optimisation_engine detectors that read this view are unaffected.
 --
---          (2) Raise work_mem for service_role (the role the console + Python
---              detectors execute as via PostgREST). At the instance default of
---              2184 kB nearly every heavy analytics aggregation spills its
---              count(DISTINCT ...) sort to an external-merge temp file (observed
---              spills: experiment_results 13.8MB, estate_timeseries 10.5MB,
---              web_timeseries 6.8MB, funnel_v2 5.6MB, section 3.5MB, calc 1.9MB).
---              On a shared-CPU instance that temp-file IO is the proximate cause
---              of the 4-5s tail spikes. 16MB keeps the largest observed sort
---              (~14MB) in memory and is conservative on the current ~1GB instance
---              (shared_buffers 224MB, max_connections 60, single-operator load).
+--          (2) [REMOVED 2026-06-30] An `ALTER ROLE service_role SET work_mem`
+--              was originally included here to stop the heavy aggregations
+--              spilling their count(DISTINCT ...) sorts to external-merge temp
+--              files. DO NOT reinstate it: setting work_mem on service_role broke
+--              EVERY PostgREST read (HTTP 400, code 22023 "invalid value for
+--              parameter work_mem") because Supabase applies the role GUC at
+--              query time through the pooler and rejects the value. It took the
+--              console (and all service-role REST) to "0 data" until reverted via
+--              `ALTER ROLE service_role RESET work_mem` + recycling the
+--              `authenticator` connections. The durable fix for the disk spills
+--              is to materialise / restructure the worst views (esp.
+--              vw_experiment_results), NOT a role-level work_mem change.
 --
 -- SAFETY / ROLLBACK:
---   - View change is CREATE OR REPLACE with identical output columns; revert by
---     restoring the prior definition (kept in migration 20260606000003).
---   - work_mem is a per-sort budget, not a reservation. Revert with:
---       ALTER ROLE service_role RESET work_mem;
---   - No data is modified. No DDL on tables. No grants/RLS changes.
+--   - This migration now only does the view CREATE OR REPLACE (identical output
+--     columns; revert by restoring the prior definition in 20260606000003).
+--   - No data is modified. No DDL on tables. No grants/RLS/role changes.
 -- ============================================================================
 
 -- (1) ── vw_section_action: correlated-EXISTS re-probe -> pre-aggregated join ──
@@ -83,16 +83,13 @@ GROUP BY r.site_key, r.country, r.page_path, r.section_id;
 COMMENT ON VIEW public.vw_section_action IS
   'Per (site_key, country, page_path, section_id): read_sessions, acted_sessions (session took a cta_click/form_start at or after first seeing the section), converted_sessions. Rewritten 2026-06-30 to a pre-aggregated latest-action join (output-identical to the prior correlated-EXISTS form).';
 
--- (2) ── work_mem for the console / detector query role ──────────────────────
-ALTER ROLE service_role SET work_mem = '16MB';
+-- (2) [REMOVED] work_mem role change — see header. Intentionally omitted.
 
 -- Make the replaced view visible to PostgREST immediately.
 NOTIFY pgrst, 'reload schema';
 
 -- ============================================================================
 -- VERIFICATION (run after apply):
---   -- equivalence already proven pre-apply; spot-check a heavy read is in-memory:
---   EXPLAIN (ANALYZE, BUFFERS) SELECT * FROM vw_section_action WHERE site_key='property';
---   -- confirm the setting took (new connections):
---   SELECT rolname, rolconfig FROM pg_roles WHERE rolname='service_role';
+--   -- equivalence already proven pre-apply; spot-check the view returns rows:
+--   SELECT * FROM vw_section_action WHERE site_key='property' LIMIT 5;
 -- ============================================================================

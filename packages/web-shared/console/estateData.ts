@@ -21,22 +21,34 @@ const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || "";
 
 const DEFAULT_TTL = 60;
 
-async function restUncached<T>(path: string, params: Record<string, string>): Promise<T[]> {
-  if (!SUPABASE_URL || !SERVICE_KEY) return [];
+/** Strict fetch: THROWS on missing env / non-OK / parse failure so failures are
+ * never cached. See adminData.ts (the 2026-06-30 cache-poisoning lesson). */
+async function fetchRowsStrict<T>(path: string, params: Record<string, string>): Promise<T[]> {
+  if (!SUPABASE_URL || !SERVICE_KEY) throw new Error("supabase env missing");
   const qs = new URLSearchParams(params).toString();
   const res = await fetch(`${SUPABASE_URL}/rest/v1/${path}?${qs}`, {
     headers: { apikey: SERVICE_KEY, Authorization: `Bearer ${SERVICE_KEY}` },
     cache: "no-store",
   });
-  if (!res.ok) return [];
+  if (!res.ok) throw new Error(`supabase rest ${res.status} for ${path}`);
   return (await res.json()) as T[];
+}
+
+/** Graceful read: returns [] on any failure. For uncached / fallback callers. */
+async function restUncached<T>(path: string, params: Record<string, string>): Promise<T[]> {
+  try {
+    return await fetchRowsStrict<T>(path, params);
+  } catch {
+    return [];
+  }
 }
 
 /**
  * Cached Supabase REST read for the estate (cross-site) layer. Same rationale as
  * adminData.rest(): the estate home page fires ~27 reads per load (two of them
  * full-history scans) with nothing memoised. A short shared TTL collapses repeat
- * loads to ~zero DB work. ttlSeconds=0 bypasses the cache. See adminData.ts.
+ * loads to ~zero DB work. Only successful responses are cached (the callback
+ * throws on failure so errors are never memoised). ttlSeconds=0 bypasses.
  */
 function rest<T>(
   path: string,
@@ -44,12 +56,10 @@ function rest<T>(
   ttlSeconds: number = DEFAULT_TTL,
 ): Promise<T[]> {
   if (ttlSeconds <= 0) return restUncached<T>(path, params);
-  // See adminData.rest(): unstable_cache throws outside a request/render scope;
-  // degrade gracefully to an uncached read so non-request callers never crash.
   try {
     return unstable_cache(
-      () => restUncached<T>(path, params),
-      ["console-rest", path, JSON.stringify(params)],
+      () => fetchRowsStrict<T>(path, params),
+      ["console-rest-v2", path, JSON.stringify(params)],
       { revalidate: ttlSeconds, tags: ["console-data"] },
     )().catch(() => restUncached<T>(path, params));
   } catch {

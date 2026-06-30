@@ -20,15 +20,31 @@ const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || "";
  * ~zero DB work without any meaningful staleness. Tune per-call where needed. */
 const DEFAULT_TTL = 60;
 
-async function restUncached<T>(path: string, params: Record<string, string>): Promise<T[]> {
-  if (!SUPABASE_URL || !SERVICE_KEY) return [];
+/**
+ * Strict fetch: THROWS on missing env / non-OK response / parse failure. Used
+ * inside unstable_cache so that failures are NEVER cached (a thrown rejection is
+ * not memoised). This is the lesson from the 2026-06-30 outage: caching the
+ * `[]`-on-error result poisoned the cache (empty data served for the whole TTL,
+ * 1h for the sites/country lists) the moment a single read transiently failed.
+ */
+async function fetchRowsStrict<T>(path: string, params: Record<string, string>): Promise<T[]> {
+  if (!SUPABASE_URL || !SERVICE_KEY) throw new Error("supabase env missing");
   const qs = new URLSearchParams(params).toString();
   const res = await fetch(`${SUPABASE_URL}/rest/v1/${path}?${qs}`, {
     headers: { apikey: SERVICE_KEY, Authorization: `Bearer ${SERVICE_KEY}` },
     cache: "no-store",
   });
-  if (!res.ok) return [];
+  if (!res.ok) throw new Error(`supabase rest ${res.status} for ${path}`);
   return (await res.json()) as T[];
+}
+
+/** Graceful read: returns [] on any failure. For uncached / fallback callers. */
+async function restUncached<T>(path: string, params: Record<string, string>): Promise<T[]> {
+  try {
+    return await fetchRowsStrict<T>(path, params);
+  } catch {
+    return [];
+  }
 }
 
 /**
@@ -37,6 +53,10 @@ async function restUncached<T>(path: string, params: Record<string, string>): Pr
  * Seq Scan of the growing web_events table) are recomputed at most once per
  * window per distinct query no matter how often an operator refreshes or
  * switches tabs. Works under `force-dynamic` (it is a separate cache layer).
+ *
+ * Only SUCCESSFUL responses are cached: the cached callback throws on failure so
+ * unstable_cache never stores an error/empty result; the caller then falls back
+ * to a single uncached read for that request and the next request retries fresh.
  * Pass ttlSeconds=0 to bypass the cache (paginated / per-visitor drill-downs
  * that must stay fresh, or large per-event payloads we don't want to retain).
  */
@@ -46,14 +66,14 @@ function rest<T>(
   ttlSeconds: number = DEFAULT_TTL,
 ): Promise<T[]> {
   if (ttlSeconds <= 0) return restUncached<T>(path, params);
-  // unstable_cache throws ("incrementalCache missing") when called outside a
-  // Next request/render scope (unit tests, scripts). It is always present during
-  // RSC rendering in the app, but degrade gracefully to an uncached read so the
-  // helper never crashes a non-request caller.
+  // unstable_cache also throws ("incrementalCache missing") outside a Next
+  // request/render scope (unit tests, scripts); the try/catch handles that too.
+  // Key namespace "v2" deliberately abandons any v1 entries poisoned during the
+  // 2026-06-30 outage.
   try {
     return unstable_cache(
-      () => restUncached<T>(path, params),
-      ["console-rest", path, JSON.stringify(params)],
+      () => fetchRowsStrict<T>(path, params),
+      ["console-rest-v2", path, JSON.stringify(params)],
       { revalidate: ttlSeconds, tags: ["console-data"] },
     )().catch(() => restUncached<T>(path, params));
   } catch {
