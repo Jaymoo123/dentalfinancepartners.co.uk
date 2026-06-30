@@ -170,7 +170,7 @@ imageCredit:
 
 <p>Also be aware of tax avoidance schemes. Promoters may claim they can get you a larger refund than you are entitled to. HMRC warns that these schemes rarely work and can leave you with a larger bill plus penalties <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
 
-<p>If you are unsure about a claim, speak to a qualified accountant. As ICAEW qualified accountants, we can review your tax position and ensure you claim only what you are entitled to.</p>
+<p>If you are unsure about a claim, speak to a qualified accountant. We can review your tax position and ensure you claim only what you are entitled to.</p>
 
 <h2>When to Use an Accountant</h2>
 

@@ -17,23 +17,21 @@ imageCredit:
   source: Pexels
 h1: 'UK Capital Gains Tax Residential Property Rates 2026: What Property Owners Need to Know'
 summary: Capital Gains Tax on residential property in the UK stands at 18% for basic rate taxpayers and 24% for higher rate taxpayers for 2025/26 and 2026/27. The 60-day reporting window still applies. This article breaks down the rates, how they interact with your overall income, and what you need to report to HMRC.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"What Are the UK Capital Gains Tax Residential Property Rates for 2026?","description":"Selling a buy-to-let or second home in 2026? CGT is 18% and 24% after the annual exemption, while your main home stays exempt.","url":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-capital-gains-tax-residential-property-rates-2026","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
-  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-capital-gains-tax-residential-property-rates-2026"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/uk-capital-gains-tax-residential-property-rates-2026.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Exit and Capital Gains","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains"},{"@type":"ListItem","position":3,"name":"What Are the UK Capital Gains Tax Residential Property Rates for 2026?","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-capital-gains-tax-residential-property-rates-2026"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the CGT rate on residential property in 2026/27?","acceptedAnswer":{"@type":"Answer","text":"The CGT rate on residential property in 2026/27 is 18% for basic rate taxpayers and 24% for higher and additional rate taxpayers. These rates have been in place since 30 October 2024. The annual exempt amount is £3,000."}},{"@type":"Question","name":"Do I have to report a property sale to HMRC within 60 days?","acceptedAnswer":{"@type":"Answer","text":"Yes. If you sell a UK residential property that is not your main home, you must report the gain to HMRC within 60 calendar days of completion and pay the tax due. You file the 60-day CGT property return online using your Government Gateway ID and UTR."}},{"@type":"Question","name":"Does
-  Private Residence Relief apply if I rented my home out before selling?","acceptedAnswer":{"@type":"Answer","text":"Yes, but only for the period you lived there plus the final 9 months of ownership. If you rented the property out after moving out, the gain for the rental period is taxable unless Lettings Relief applies. Lettings Relief is capped at £40,000 per owner and only applies where the property was once your main home."}},{"@type":"Question","name":"Can I transfer a property to my spouse to reduce CGT?","acceptedAnswer":{"@type":"Answer","text":"Yes. Transfers between spouses or civil partners are tax-free and treated as a no gain no loss disposal. If your spouse has unused basic rate band, transferring ownership before sale can mean some or all of the gain is taxed at 18% instead of 24%. The transfer must be genuine and unconditional. Speak to an accountant and solicitor before proceeding."}}]}]}'
+schema: ""
 faqs:
 - question: What is the CGT rate on residential property in 2026/27?
   answer: The CGT rate on residential property in 2026/27 is 18% for basic rate taxpayers and 24% for higher and additional rate taxpayers. These rates have been in place since 30 October 2024. The annual exempt amount is £3,000.
 - question: Do I have to report a property sale to HMRC within 60 days?
   answer: Yes. If you sell a UK residential property that is not your main home, you must report the gain to HMRC within 60 calendar days of completion and pay the tax due. You file the 60-day CGT property return online using your Government Gateway ID and UTR.
 - question: Does Private Residence Relief apply if I rented my home out before selling?
-  answer: Yes, but only for the period you lived there plus the final 9 months of ownership. If you rented the property out after moving out, the gain for the rental period is taxable unless Lettings Relief applies. Lettings Relief is capped at £40,000 per owner and only applies where the property was once your main home.
+  answer: Yes, but only for the period you lived there plus the final 9 months of ownership. If you rented the property out after moving out, the gain for the rental period is taxable unless Lettings Relief applies. Since 6 April 2020, Lettings Relief (capped at £40,000 per owner) is only available where the owner is living in the property at the same time as the tenant. If you moved out before letting the property, Lettings Relief is not available.
 - question: Can I transfer a property to my spouse to reduce CGT?
   answer: Yes. Transfers between spouses or civil partners are tax-free and treated as a no gain no loss disposal. If your spouse has unused basic rate band, transferring ownership before sale can mean some or all of the gain is taxed at 18% instead of 24%. The transfer must be genuine and unconditional. Speak to an accountant and solicitor before proceeding.
 metaTitle_prev: UK Capital Gains Tax Residential Property Rates 2026
 metaDescription_prev: 'CGT residential property rates for 2026/27: 18% basic rate, 24% higher rate. 60-day reporting rule. How the rates apply to your sale. Practical worked'
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -76,13 +74,13 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>The 60-Day Reporting Window</h2>
 
-<p>When you sell a UK residential property, you must report the gain to HMRC and pay the tax within 60 calendar days of the completion date. This applies to UK residents. Non-UK residents have a 30-day window.</p>
+<p>When you sell a UK residential property, you must report the gain to HMRC and pay the tax within 60 calendar days of the completion date. This applies to UK residents. Non-UK residents are also subject to the 60-day reporting window for UK residential property disposals (since 27 October 2021, when the window was extended from 30 days to 60 days for everyone).</p>
 
 <p>You report the gain using the <strong>60-day CGT property return</strong> on the HMRC online service. You cannot file this return on paper. You must have a Government Gateway user ID and your Unique Taxpayer Reference (UTR).</p>
 
 <p>The 60-day return is a provisional calculation. HMRC then reconciles the gain against your full Self Assessment return (SA100) at the end of the tax year. If your actual tax position differs from the provisional calculation, you may owe more tax or receive a refund.</p>
 
-<p>As ICAEW qualified accountants, we see clients miss the 60-day deadline more often than they miss the Self Assessment deadline. The penalty for late filing of the 60-day return starts at £100 for the first day, then £10 per day up to 90 days, plus interest on late payment. It adds up fast.</p>
+<p>In our experience, clients miss the 60-day deadline more often than they miss the Self Assessment deadline. The penalty for late filing of the 60-day return is £100 immediately. If the return is still outstanding three months later, £10 per day accrues for up to 90 days (maximum £900). At six months, a further penalty of 5% of the tax due or £300 (whichever is higher) is added. At twelve months, a further penalty of the same amount applies. Interest runs from the original due date. It adds up fast.</p>
 
 <h2>Private Residence Relief and the Final 9 Months</h2>
 
@@ -90,7 +88,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>PRR covers the period you lived in the property plus the final 9 months of ownership regardless of where you were living. This final 9 months rule applies even if you moved out years ago. It is a valuable relief that many property owners overlook.</p>
 
-<p>If you rented the property out for a period, you may also qualify for Lettings Relief. Lettings Relief is capped at £40,000 per owner and applies only to periods where the property was your main home and was let out. It is not available for buy-to-let properties you never lived in.</p>
+<p>If you rented the property out for a period, you may also qualify for Lettings Relief. Lettings Relief is capped at £40,000 per owner but, since 6 April 2020, only applies where the owner is living in the property at the same time as the tenant (shared occupation). If you moved out before letting the property to tenants living there alone, Lettings Relief is not available. It is not available for buy-to-let properties you never lived in.</p>
 
 <h2>How CGT Residential Property Rates Compare to Other Asset Rates</h2>
 
@@ -98,7 +96,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <ul>
 <li><strong>Residential property:</strong> 18% basic rate, 24% higher rate</li>
-<li><strong>Other assets (shares, commercial property, business assets):</strong> 10% basic rate, 20% higher rate</li>
+<li><strong>Other assets (shares, commercial property, business assets):</strong> 18% basic rate, 24% higher rate (raised from 10%/20% on 30 October 2024)</li>
 <li><strong>Business Asset Disposal Relief:</strong> 14% (rising to 18% from April 2026)</li>
 </ul>
 
@@ -125,7 +123,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>HMRC receives data from the Land Registry and from conveyancers. They know when a property has changed hands. If you do not file the 60-day return, HMRC will write to you. The penalties escalate quickly.</p>
 
-<p>For the 60-day return, the penalty is £100 for the first day late, then £10 per day for up to 90 days. After 12 months, a further penalty of 5% of the tax due or £300, whichever is higher, applies. Interest runs from the due date.</p>
+<p>For the 60-day return, the penalty is £100 for the first day late. If still outstanding three months later, £10 per day accrues for up to 90 days (maximum £900). At six months, a further penalty of 5% of the tax due or £300 (whichever is higher) is added. At twelve months, the same amount is added again. Interest runs from the due date.</p>
 
 <p>If you also fail to report the gain on your Self Assessment return, you face separate penalties for that failure. The total can be substantial.</p>
 

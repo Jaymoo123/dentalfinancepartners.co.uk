@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Difference Between Accountants and Bookkeepers for UK"
 metaDescription: "Bookkeepers record transactions. Accountants interpret them. Learn exactly which you need, when, and how they work together for your UK business."
-altText: "A UK business owner reviewing financial reports with their ICAEW chartered accountant in a modern office setting"
+altText: "A UK business owner reviewing financial reports with their accountant in a modern office setting"
 image: "/blog/difference-between-accountants-and-bookkeepers.jpg"
 imageCredit:
   photographer: "Mikhail Nilov"
@@ -59,7 +59,7 @@ faqs:
 
 <p>Accountants give advice. A good accountant will tell you whether to take a salary or dividends, whether to buy that van through the company or personally, and whether your business qualifies for R&D tax credits. They will flag IR35 risks if you are a contractor working through your own limited company.</p>
 
-<p>As ICAEW qualified accountants, we are regulated by a professional body. That means we have to follow ethical guidelines, carry professional indemnity insurance, and keep our technical knowledge up to date. If we make a mistake on your tax return, we are liable. A bookkeeper is not typically liable for the accuracy of your tax filings.</p>
+<p>We are professional accountants who follow ethical guidelines, carry professional indemnity insurance, and keep our technical knowledge up to date. If we make a mistake on your tax return, we are liable. A bookkeeper is not typically liable for the accuracy of your tax filings.</p>
 
 <h3>When You Need an Accountant</h3>
 
@@ -133,7 +133,7 @@ faqs:
 
 <p>Be equally wary of an accountant who refuses to work with an external bookkeeper. Some accountants want to control everything because it locks you in. Others genuinely prefer the clean data a good bookkeeper provides. Ask the question at your first meeting.</p>
 
-<p>If your bookkeeper is consistently late with VAT returns or your accountant misses the corporation tax filing deadline, replace them. Late filing penalties for corporation tax start at £150 for a private company and rise to £1,500 for six months late. HMRC also charges interest on late corporation tax payments from the due date (9 months and 1 day after year-end).</p>
+<p>If your bookkeeper is consistently late with VAT returns or your accountant misses the corporation tax filing deadline, replace them. HMRC charges £100 for a CT600 filed up to three months late, a further £100 for over three months late, then 10% of any unpaid corporation tax at six months and 20% at twelve months. Companies House imposes a separate penalty on private companies for late annual accounts: £150 for up to one month late, rising to £1,500 for over six months late. HMRC also charges interest on late corporation tax payments from the due date (9 months and 1 day after year-end).</p>
 
 <h2>Final Thoughts</h2>
 
@@ -143,7 +143,7 @@ faqs:
 
 <p>Start with your accountant. Get the structure right. Then bring in a bookkeeper to keep the wheels turning day to day. That combination gives you the best of both worlds: clean records and smart advice.</p>
 
-<p>If you want to talk through what your business needs, <a href="/contact">get in touch</a>. We are ICAEW qualified and we work with businesses across every sector. We will tell you honestly whether you need a bookkeeper, an accountant, or both.</p>
+<p>If you want to talk through what your business needs, <a href="/contact">get in touch</a>. We work with businesses across every sector. We will tell you honestly whether you need a bookkeeper, an accountant, or both.</p>
 
 <h2>Related articles in Bookkeeping and Compliance</h2>
 <ul>

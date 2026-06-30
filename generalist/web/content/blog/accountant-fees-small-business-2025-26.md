@@ -29,7 +29,7 @@ faqs:
 
 <p>Accountant fees for a small business in the UK vary significantly depending on your structure, turnover, and the services you need. For 2025/26, a typical sole trader paying for a basic self assessment return will pay between £150 and £350 per year. A limited company director with a standard set of accounts, corporation tax return, and personal tax return will pay between £1,200 and £2,400 per year. A partnership with two partners and a basic bookkeeping package will fall somewhere in the middle.</p>
 
-<p>These are the headline numbers. But the real question is what you get for your money, and whether you are overpaying or underpaying for your specific situation. As ICAEW qualified accountants working with UK businesses of every shape, we see the full range of pricing. This guide explains what drives the cost and what you should expect to pay in 2025/26.</p>
+<p>These are the headline numbers. But the real question is what you get for your money, and whether you are overpaying or underpaying for your specific situation. We work with UK businesses of every shape and see the full range of pricing. This guide explains what drives the cost and what you should expect to pay in 2025/26.</p>
 
 <h2>What Determines Accountant Fees for a Small Business?</h2>
 
@@ -126,7 +126,7 @@ faqs:
 
 <p>In most cases, yes. The difference between a £100 per month accountant and a £250 per month accountant is often the difference between someone who files your return and someone who proactively saves you tax.</p>
 
-<p>A good accountant spots that you could claim the Annual Investment Allowance on that new van, or that your R&D activities qualify for a claim worth £15,000, or that your director's loan account is about to trigger a S455 tax charge at 33.75%. Those savings dwarf the fee difference.</p>
+<p>A good accountant spots that you could claim the Annual Investment Allowance on that new van, or that your R&D activities qualify for a claim worth £15,000, or that your director's loan account is about to trigger a s.455 tax charge at 33.75% for loans made in 2025/26, rising to 35.75% for loans made from 6 April 2026. Those savings dwarf the fee difference.</p>
 
 <p>If you are a limited company director paying yourself through a combination of salary and dividends, the dividend tax rates for 2025/26 are 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate). The annual dividend allowance is now £500. Getting the tax planning wrong costs thousands. Getting it right pays for the accountant many times over.</p>
 

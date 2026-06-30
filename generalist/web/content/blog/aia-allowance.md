@@ -17,11 +17,11 @@ faqs:
 - question: What is the AIA allowance limit for 2025/26?
   answer: The AIA allowance limit for 2025/26 is £1,000,000 per 12-month accounting period. This limit has been in place since 1 January 2019 and is confirmed until 31 March 2026. If your accounting period is shorter than 12 months, the limit reduces proportionally. After 31 March 2026, the limit may revert to £200,000, though no final decision has been announced.
 - question: Can I claim the AIA on a car?
-  answer: No. Cars do not qualify for the AIA allowance. Passenger cars are excluded from the AIA entirely. Instead, you claim capital allowances on cars through the main pool (18% per year) or the special rate pool (6% per year), depending on the car's CO2 emissions. Vans, lorries, and commercial vehicles do qualify for the AIA.
+  answer: No. Cars do not qualify for the AIA allowance. Passenger cars are excluded from the AIA entirely. Instead, you claim capital allowances on cars through the main pool (18% per year to 31 March 2026; 14% from 1 April 2026 under FA 2026 s.28) or the special rate pool (6% per year), depending on the car's CO2 emissions. Vans, lorries, and commercial vehicles do qualify for the AIA.
 - question: Does the AIA apply to second-hand assets?
   answer: Yes. The AIA allowance covers both new and second-hand plant and machinery, as long as the asset is unused and not previously owned by a connected person. This is a key difference from Full Expensing, which applies only to new assets. If you buy used equipment for your business, the AIA is your route to 100% first-year relief.
 - question: What happens if I spend more than the AIA limit in one year?
-  answer: If your total qualifying spend exceeds the £1m AIA limit, the excess goes into the main capital allowances pool. That pool attracts writing-down allowances at 18% per year on a reducing balance basis. You do not lose the relief permanently. You just spread it over future years. For most businesses, the £1m limit is more than enough to cover annual capital spend.
+  answer: If your total qualifying spend exceeds the £1m AIA limit, the excess goes into the main capital allowances pool. That pool attracts writing-down allowances at 18% per year (reducing to 14% from 1 April 2026 under FA 2026 s.28) on a reducing balance basis. You do not lose the relief permanently. You just spread it over future years. For most businesses, the £1m limit is more than enough to cover annual capital spend.
 dateModified: '2026-05-20'
 sourcesVerifiedAt: '2026-05-20'
 sourceDomains: []
@@ -81,7 +81,7 @@ imageCredit:
 
 <p>Take a limited company in Manchester's Northern Quarter that turns over £420,000. The director buys £85,000 of new computer equipment and office fit-out in July 2025. The company's taxable profit for the year is £140,000.</p>
 
-<p>The AIA allowance covers the full £85,000. The company deducts that from profit, leaving £55,000 taxable. Corporation tax at 19% gives a bill of £10,450. Without the AIA, the equipment would go into the main pool at 18% writing-down allowance, giving relief of just £15,300 in year one. The AIA saves the company over £13,000 in tax in the first year.</p>
+<p>The AIA allowance covers the full £85,000. The company deducts that from profit, leaving £55,000 taxable. Because £55,000 sits in the marginal-relief band (profits between £50,000 and £250,000), the 25% main rate applies less marginal relief: 25% x £55,000 minus (£250,000 - £55,000) x 3/200 = £13,750 minus £2,925 = £10,825. Without the AIA, the equipment would go into the main pool at 18% writing-down allowance, giving relief of just £15,300 in year one, leaving £124,700 taxable and a CT bill of approximately £29,296 (25% x £124,700 minus (£250,000 - £124,700) x 3/200 = £31,175 minus £1,880). The AIA saves the company over £18,000 in tax in the first year.</p>
 
 <h2>AIA vs Full Expensing</h2>
 
@@ -99,7 +99,7 @@ imageCredit:
 <li>Identify all qualifying assets bought in the accounting period</li>
 <li>Calculate the total cost of those assets</li>
 <li>Apply the AIA allowance up to the £1m limit</li>
-<li>Any excess goes into the main pool for 18% writing-down allowance</li>
+<li>Any excess goes into the main pool for writing-down allowance (18% to 31 March 2026; 14% from 1 April 2026 under FA 2026 s.28)</li>
 <li>Enter the AIA claim amount on the capital allowances page of the return</li>
 </ol>
 
@@ -109,7 +109,7 @@ imageCredit:
 
 <p>If you know you will need to buy equipment in the next 18 months, there is a strong case for bringing purchases forward. The £1m AIA allowance is confirmed until 31 March 2026. After that, it could revert to £200,000. That is a difference of £800,000 in potential 100% relief.</p>
 
-<p>For a business planning to spend £300,000 on machinery in 2026, the timing matters. If you buy before 1 April 2026, the full £300,000 qualifies. If you buy after, and the limit drops to £200,000, only £200,000 gets 100% relief. The remaining £100,000 goes into the main pool at 18% per year. The tax saving difference could be tens of thousands of pounds.</p>
+<p>For a business planning to spend £300,000 on machinery in 2026, the timing matters. If you buy before 1 April 2026, the full £300,000 qualifies. If you buy after, and the limit drops to £200,000, only £200,000 gets 100% relief. The remaining £100,000 goes into the main pool at 14% per year (the main-rate WDA fell from 18% to 14% from 1 April 2026 under FA 2026 s.28). The tax saving difference could be tens of thousands of pounds.</p>
 
 <p>Speak to your accountant about your capital expenditure plans. If you are considering a large purchase, the current AIA allowance makes it very tax-efficient to act before the limit potentially changes.</p>
 
@@ -137,7 +137,7 @@ imageCredit:
 
 <p>If your business is planning capital expenditure, factor the AIA into your cash flow and tax planning. The relief is automatic, but the timing of purchases is within your control. A well-timed purchase before the limit potentially drops could save your business thousands in corporation tax.</p>
 
-<p>For more guidance on capital allowances and corporation tax, speak to the team at <a href="/services">Holloway Davies</a>. Our ICAEW qualified accountants work with businesses across every sector, from trades and construction to tech and creative. We can help you structure your capital spend to maximise relief.</p>
+<p>For more guidance on capital allowances and corporation tax, speak to the team at <a href="/services">Holloway Davies</a>. Our specialist accountants work with businesses across every sector, from trades and construction to tech and creative. We can help you structure your capital spend to maximise relief.</p>
 
 <h3>Related guides</h3>
 <ul>

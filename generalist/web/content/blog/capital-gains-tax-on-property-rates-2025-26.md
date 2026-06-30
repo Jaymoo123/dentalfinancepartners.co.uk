@@ -31,7 +31,7 @@ faqs:
 
 <p>If you sell a property in the UK and make a profit, you will likely owe capital gains tax on property. The rates changed on 30 October 2024, and more changes are coming in April 2025 and April 2026. Understanding the current rates, the reliefs available, and the reporting deadlines is essential for any business owner holding property.</p>
 
-<p>This article covers the 2025/26 tax year. We are ICAEW qualified accountants based in the UK, and we work with limited company directors, sole traders, landlords and partnerships who own property. The rules here apply to individuals. Limited companies pay corporation tax on property gains, not CGT, though we cover that distinction below.</p>
+<p>This article covers the 2025/26 tax year. We are specialist accountants based in the UK, and we work with limited company directors, sole traders, landlords and partnerships who own property. The rules here apply to individuals. Limited companies pay corporation tax on property gains, not CGT, though we cover that distinction below.</p>
 
 <h2>What Is Capital Gains Tax on Property?</h2>
 

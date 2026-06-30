@@ -22,7 +22,7 @@ faqs:
   - question: "Do I need a specialist accountant for my pub, or can a general accountant handle it?"
     answer: "A general accountant can file your returns, but they will miss sector-specific opportunities. Pubs have unique VAT rules on wet and dry sales, complex payroll with tronc schemes, and thin margins that require active margin management. A specialist accountant for pubs will save you money through correct VAT treatment, maximised capital allowances, and proactive advice on your gross profit margins."
   - question: "What VAT rate applies to hot takeaway food from my pub?"
-    answer: "Hot takeaway food (pies, pasties, jacket potatoes, hot sandwiches) sold for consumption off the premises qualifies for the reduced rate of 12.5% VAT. Cold takeaway food (sandwiches, salads) is zero-rated. Alcoholic drinks and soft drinks sold on the premises are standard-rated at 20%. Your accountant should set up your EPOS system to apply the correct rates automatically."
+    answer: "Hot takeaway food (pies, pasties, jacket potatoes, hot sandwiches) is standard-rated at 20% VAT. Cold takeaway food (sandwiches, salads) is generally zero-rated. Alcoholic drinks and soft drinks sold on the premises are standard-rated at 20%. The 12.5% temporary hospitality rate ended 31 March 2022 and no reduced rate currently applies to hot food. Your accountant should set up your EPOS system to apply the correct rates automatically."
   - question: "How should I handle tips and service charges for my bar staff?"
     answer: "If you operate a formal tronc scheme with a tronc master (usually a senior staff member), tips and service charges distributed through the tronc are exempt from employer National Insurance. You must have a written tronc agreement in place. Your accountant should set this up correctly and ensure your payroll software handles tronc payments separately from wages."
   - question: "Can I claim capital allowances on my pub refurbishment?"
@@ -39,7 +39,7 @@ faqs:
 
 <p>Pubs operate on thin margins. The British Beer and Pub Association estimates the average pub makes around 10p to 12p profit on a pint. That leaves no room for expensive mistakes on your tax returns or missed deadlines.</p>
 
-<p>A general accountant who handles a mix of tradespeople, freelancers, and ecommerce businesses will not know the ins and outs of the hospitality sector. They might not realise that the VAT rate on soft drinks differs from alcoholic drinks. They might not know about the reduced rate of 12.5% for hot takeaway food. They might not understand how to handle tips and tronc schemes.</p>
+<p>A general accountant who handles a mix of tradespeople, freelancers, and ecommerce businesses will not know the ins and outs of the hospitality sector. They might not realise that the VAT rate on soft drinks differs from alcoholic drinks. They might not know that hot takeaway food is standard-rated at 20% while cold takeaway food is generally zero-rated. They might not understand how to handle tips and tronc schemes.</p>
 
 <p>A specialist <strong>accountant for pubs</strong> brings sector-specific knowledge. They will have other hospitality clients. They will know the common pitfalls. And they will save you money by structuring your affairs correctly from day one.</p>
 
@@ -52,7 +52,7 @@ faqs:
 <ul>
 <li><strong>Alcoholic drinks</strong> served on the premises: 20% VAT.</li>
 <li><strong>Soft drinks</strong> and mixers: 20% VAT.</li>
-<li><strong>Hot takeaway food</strong> (pies, pasties, jacket potatoes): 12.5% reduced rate (zero-rated if cold).</li>
+<li><strong>Hot takeaway food</strong> (pies, pasties, jacket potatoes): 20% standard rate (the 12.5% temporary hospitality rate ended 31 March 2022).</li>
 <li><strong>Crisps, nuts, and packaged snacks</strong>: 20% VAT.</li>
 <li><strong>Cold takeaway food</strong> (sandwiches, salads): zero-rated.</li>
 <li><strong>Accommodation</strong> if you have letting rooms: 20% VAT.</li>
@@ -142,7 +142,7 @@ faqs:
 
 <p>The best accountants do not wait for you to ask questions. They send you quarterly management accounts. They flag upcoming tax deadlines. They tell you when your VAT registration threshold is approaching. They suggest ways to improve your margins before you lose money.</p>
 
-<p>As <a href="/about">ICAEW qualified accountants</a>, we take a proactive approach. We review your numbers regularly and tell you what we see, not just what you ask for.</p>
+<p>We take a proactive approach. We review your numbers regularly and tell you what we see, not just what you ask for.</p>
 
 <h2>How We Work with Pub and Bar Owners</h2>
 
@@ -163,7 +163,7 @@ faqs:
 <p>Here are the mistakes we see most often when pubs come to us after a bad experience with a general accountant.</p>
 
 <ul>
-<li><strong>VAT errors.</strong> Applying 20% to hot takeaway food that should be 12.5%. Or missing the zero-rating on cold takeaway sandwiches.</li>
+<li><strong>VAT errors.</strong> Incorrectly zero-rating hot takeaway food (which is standard-rated at 20%), or missing the zero-rating on cold takeaway sandwiches and salads.</li>
 <li><strong>No stock control.</strong> The accountant never asks about stock. The pub owner does not realise they are losing 5% of turnover to waste and theft.</li>
 <li><strong>Wrong payroll setup.</strong> Tronc not handled properly. Holiday pay calculated incorrectly. RTI submissions late.</li>
 <li><strong>Missed capital allowances.</strong> The accountant claims nothing on the refurbishment. The pub owner loses thousands in tax relief.</li>
@@ -185,6 +185,6 @@ faqs:
 
 <p>If you run a pub or bar and want an accountant who understands your business, we should talk.</p>
 
-<p>We are <a href="/services">ICAEW qualified accountants</a> with hospitality clients across the UK. We know the sector. We know the tax rules. And we know how to help you keep more of what you earn.</p>
+<p>We are specialist accountants with hospitality clients across the UK. We know the sector. We know the tax rules. And we know how to help you keep more of what you earn.</p>
 
 <p>Call us or <a href="/contact">book a free initial consultation</a>. We will come to your pub, review your current setup, and tell you honestly whether we can help.</p>

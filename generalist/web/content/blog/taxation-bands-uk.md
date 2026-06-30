@@ -1,4 +1,4 @@
----
+﻿---
 title: 'UK Taxation Bands 2025/26: Income Tax, NI, and More'
 slug: taxation-bands-uk
 canonical: https://www.hollowaydavies.co.uk/blog/payroll-and-paye/taxation-bands-uk
@@ -12,9 +12,7 @@ altText: UK tax bands 2025/26 chart showing income tax rates and NI thresholds
 image: https://images.pexels.com/photos/7111560/pexels-photo-7111560.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'UK Taxation Bands 2025/26: Income Tax, NI, and More'
 summary: A clear breakdown of the UK taxation bands for 2025/26, covering income tax, National Insurance, dividend tax, and corporation tax. Includes practical examples for limited company directors, sole traders, and contractors.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"UK Taxation Bands 2025/26: Income Tax, NI, and More","description":"How income tax, NI and dividend bands work for sole traders and directors in 2025/26. The personal allowance stays at £12,570. Plan your drawings.","url":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/taxation-bands-uk","datePublished":"2026-05-20","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies
-  Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/taxation-bands-uk"},"inLanguage":"en-GB","image":"https://images.pexels.com/photos/7111560/pexels-photo-7111560.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Payroll and PAYE","item":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye"},{"@type":"ListItem","position":3,"name":"UK Taxation Bands 2025/26: Income Tax, NI, and More","item":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/taxation-bands-uk"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the personal allowance for 2025/26?","acceptedAnswer":{"@type":"Answer","text":"The personal allowance for 2025/26 is £12,570. This is the amount you can earn before paying income tax. It starts to reduce if your adjusted net income exceeds £100,000, and it is zero once your income reaches £125,140. These thresholds have been frozen since April 2021 and are expected to remain until April 2028, according to gov.uk guidance."}},{"@type":"Question","name":"What are the dividend tax rates for 2025/26?","acceptedAnswer":{"@type":"Answer","text":"The dividend allowance for 2025/26 is £500. Above that, basic rate taxpayers pay 8.75%, higher rate taxpayers pay 33.75%, and additional rate taxpayers pay 39.35%. These rates apply to dividend income that falls within each tax band. Dividends are taxed after salary and other
-  income, so your total income determines which band applies."}},{"@type":"Question","name":"What is the corporation tax rate for 2025/26?","acceptedAnswer":{"@type":"Answer","text":"The small profits rate is 19% on profits up to £50,000. The main rate is 25% on profits above £250,000. Marginal relief applies between £50,000 and £250,000, giving an effective rate that rises gradually. If your company has associated companies, the thresholds are divided by the number of associated companies plus one."}},{"@type":"Question","name":"What is the VAT registration threshold for 2025/26?","acceptedAnswer":{"@type":"Answer","text":"The VAT registration threshold is £90,000 of taxable turnover in a rolling 12-month period. Once you exceed that, you must register within 30 days. You can also register voluntarily below the threshold, which can be useful if you have significant VAT on your costs or want to appear more established. Making Tax Digital for VAT is already mandatory for all VAT-registered businesses."}}]}]}'
+schema: ""
 faqs:
 - question: What is the personal allowance for 2025/26?
   answer: The personal allowance for 2025/26 is £12,570. This is the amount you can earn before paying income tax. It starts to reduce if your adjusted net income exceeds £100,000, and it is zero once your income reaches £125,140. These thresholds have been frozen since April 2021 and are expected to remain until April 2028, according to gov.uk guidance.
@@ -36,8 +34,8 @@ imageCredit:
   source_url: https://www.pexels.com/photo/close-up-shot-of-a-yellow-paper-on-a-white-surface-7111560/
 metaTitle_prev: 'Taxation Bands UK 2025/26: Income Tax & NI Rates'
 metaDescription_prev: 'UK taxation bands 2025/26 explained: income tax rates, NI thresholds, dividend tax, and corporation tax. Practical guidance for business owners.'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -63,7 +61,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <ul>
 <li><strong>Primary threshold (employee NI):</strong> £12,570 per year. Earnings above this are charged at 8% up to £50,270, then 2% above that.</li>
-<li><strong>Secondary threshold (employer NI):</strong> £9,100 per year. Employer NI at 13.8% applies above this level.</li>
+<li><strong>Secondary threshold (employer NI):</strong> £5,000 per year. Employer NI at 15% applies above this level (from 6 April 2025).</li>
 <li><strong>Employment Allowance:</strong> Up to £10,500 off your employer NI bill if eligible. Most businesses with a single director or fewer than two employees should check eligibility.</li>
 </ul>
 
@@ -71,7 +69,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>Example: Director Salary Planning</h3>
 
-<p>Many limited company directors pay themselves a salary of £12,570. This matches the personal allowance and the primary NI threshold, so no income tax or employee NI is due. But employer NI at 13.8% kicks in above £9,100. If the company claims Employment Allowance, that employer NI is covered. If not, the director might take a lower salary of £9,100 to avoid employer NI entirely, then take the rest as dividends.</p>
+<p>Many limited company directors pay themselves a salary of £12,570. This matches the personal allowance and the primary NI threshold, so no income tax or employee NI is due. But employer NI at 15% kicks in above £5,000. If the company claims Employment Allowance (up to £10,500 off the employer NI bill), that cost is covered at a £12,570 salary. If not, the director might take a lower salary of £5,000 to avoid employer NI entirely, then take the rest as dividends.</p>
 
 <h2>Dividend Tax Rates 2025/26</h2>
 
@@ -106,12 +104,13 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>Capital gains tax (CGT) rates changed significantly in the 2024 Autumn Budget. For 2025/26:</p>
 
 <ul>
-<li><strong>Basic rate taxpayers:</strong> 18% on most assets (10% for Business Asset Disposal Relief, BADR).</li>
-<li><strong>Higher rate taxpayers:</strong> 24% on most assets (14% for BADR).</li>
+<li><strong>Basic rate taxpayers:</strong> 18% on most assets.</li>
+<li><strong>Higher rate taxpayers:</strong> 24% on most assets.</li>
 <li><strong>Residential property:</strong> 18% basic rate, 24% higher rate.</li>
+<li><strong>Business Asset Disposal Relief (BADR):</strong> 14% flat rate for all qualifying disposals in 2025/26, regardless of income band (rising to 18% from 6 April 2026).</li>
 </ul>
 
-<p>The annual exempt amount for 2025/26 is £3,000. BADR has a lifetime limit of £1 million and requires shares to be held for at least two years. From 6 April 2026, the BADR rate rises to 18%.</p>
+<p>The annual exempt amount for 2025/26 is £3,000. BADR has a lifetime limit of £1 million and requires shares to be held for at least two years.</p>
 
 <h2>VAT Registration Threshold 2025/26</h2>
 
@@ -144,7 +143,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If your turnover crossed the VAT threshold in the last 30 days, register inside the 30-day window. If your company profits are between £50,000 and £250,000, check whether marginal relief applies and whether you have associated companies. If your personal income is approaching £100,000, plan for the personal allowance taper.</p>
 
-<p>For a full breakdown of how these bands apply to your specific situation, speak to an ICAEW qualified accountant. At Holloway Davies, we work with businesses across every sector and structure. You can <a href="/services">see our services here</a> or <a href="/contact">contact us directly</a>.</p>
+<p>For a full breakdown of how these bands apply to your specific situation, speak to a qualified accountant. At Holloway Davies, we work with businesses across every sector and structure. You can <a href="/services">see our services here</a> or <a href="/contact">contact us directly</a>.</p>
 
 <p>We also have a <a href="/calculators">range of calculators</a> to help you estimate your tax position, and a <a href="/glossary">glossary of tax terms</a> if you need to check any definitions.</p>
 

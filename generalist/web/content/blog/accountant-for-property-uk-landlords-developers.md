@@ -26,7 +26,7 @@ faqs:
   - question: "What is the 60-day CGT return and when does it apply?"
     answer: "When you sell a UK residential property, you must report the gain to HMRC and pay the tax within 60 calendar days of completion. This applies even if you make no overall gain and have no tax to pay. Missing the deadline triggers penalties. A property specialist handles this filing as part of the sale process, so you do not need to remember it yourself."
   - question: "Can I claim capital allowances on a residential property I rent out?"
-    answer: "Generally, no. Capital allowances on plant and machinery are not available for residential let properties. However, if the property is a furnished holiday letting that meets the qualifying conditions, you can claim capital allowances on furniture, fixtures, and equipment. For commercial properties, capital allowances are available on plant and machinery, and structures and buildings allowances apply to qualifying commercial buildings."
+    answer: "Generally, no. Capital allowances on plant and machinery are not available for residential let properties. The furnished holiday lettings regime that previously allowed capital allowances on furniture, fixtures, and equipment was abolished from 6 April 2025; former FHLs are now taxed as ordinary residential property businesses and no longer qualify for that treatment. For commercial properties, capital allowances remain available on plant and machinery, and structures and buildings allowances apply to qualifying commercial buildings."
 ---
 
 <p>If you own residential or commercial property in the UK, your tax position is more complex than most business owners realise. A general accountant can file your self assessment and corporation tax return. But a specialist <strong>accountant for property</strong> understands the specific reliefs, charges, and structuring options that apply to property businesses. That difference matters when you are looking at a six-figure SDLT bill or trying to work out whether incorporation still makes sense after the finance cost restriction changes.</p>
@@ -35,9 +35,9 @@ faqs:
 
 <h2>Why Property Tax Is Different from General Business Tax</h2>
 
-<p>Property businesses face a set of tax rules that do not apply to most trading companies. Stamp Duty Land Tax (SDLT) has multiple bands, surcharges for additional properties, and different rates for non-residents. Finance costs on residential properties are restricted to basic rate relief for individual landlords. Capital allowances on commercial property follow different rules from plant and machinery in a trade. And the distinction between trading and investment for capital gains purposes can determine whether you pay 14% or 24% when you sell.</p>
+<p>Property businesses face a set of tax rules that do not apply to most trading companies. Stamp Duty Land Tax (SDLT) has multiple bands, surcharges for additional properties, and different rates for non-residents. Finance costs on residential properties are restricted to basic rate relief for individual landlords. Capital allowances on commercial property follow different rules from plant and machinery in a trade. And the distinction between trading and investment for capital gains purposes can determine whether you pay 18% or 24% when you sell (Business Asset Disposal Relief applies at 18% from 6 April 2026, having risen from 14% for 2025/26 disposals).</p>
 
-<p>A general accountant who handles a mix of retail, consultancy, and construction clients may not spot the opportunities or the traps in these rules. A specialist accountant for property works with these rules daily. They know when to use the furnished holiday lettings rules, how to structure a property development company to access Entrepreneurs' Relief (now Business Asset Disposal Relief), and when a property counts as trading stock rather than a fixed asset.</p>
+<p>A general accountant who handles a mix of retail, consultancy, and construction clients may not spot the opportunities or the traps in these rules. A specialist accountant for property works with these rules daily. They understand how the abolition of the furnished holiday lettings regime from 6 April 2025 affects former FHL owners (who are now taxed as ordinary residential landlords), how to structure a property development company to access Business Asset Disposal Relief, and when a property counts as trading stock rather than a fixed asset.</p>
 
 <h2>What a Property Accountant Actually Does</h2>
 
@@ -59,9 +59,9 @@ faqs:
 
 <h3>Capital Allowances on Commercial Property</h3>
 
-<p>When you buy a commercial property, part of the purchase price relates to plant and machinery. That part qualifies for capital allowances, typically at 18% or 6% per year on a reducing balance basis. Many buyers and their general accountants miss this entirely. A property specialist ensures you apportion the purchase price correctly at acquisition and claim the allowances you are entitled to.</p>
+<p>When you buy a commercial property, part of the purchase price relates to plant and machinery. That part qualifies for capital allowances, typically at 14% or 6% per year on a reducing balance basis (the main pool rate fell from 18% to 14% from 1 April 2026 for companies, 6 April 2026 for individuals, under FA 2026). Many buyers and their general accountants miss this entirely. A property specialist ensures you apportion the purchase price correctly at acquisition and claim the allowances you are entitled to.</p>
 
-<p>For a commercial property bought for £850,000, the plant and machinery element might be £120,000. At 18% writing down allowance, that is £21,600 in year one. Over five years, the total allowance claimed could exceed £70,000. That reduces your taxable profit directly.</p>
+<p>For a commercial property bought for £850,000, the plant and machinery element might be £120,000. At 14% writing down allowance (current rate from April 2026; 18% applied before that date), that is £16,800 in year one. Over five years, the total allowance claimed would approach £64,000. That reduces your taxable profit directly.</p>
 
 <p>Specialist accountants also handle capital allowance pooling, know when to use the Annual Investment Allowance (AIA) on qualifying expenditure, and advise on structures and buildings allowances (3% straight line on qualifying commercial buildings).</p>
 

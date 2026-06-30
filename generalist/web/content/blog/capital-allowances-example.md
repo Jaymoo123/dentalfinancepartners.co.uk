@@ -60,7 +60,7 @@ imageCredit:
 
 <h3>What If You Spend More Than £1,000,000?</h3>
 
-<p>The AIA cap is £1,000,000 per year for most businesses. If you spend £1,200,000, the first £1,000,000 gets 100% relief. The remaining £200,000 goes into the main pool at 18% writing down allowance per year. You claim 18% of £200,000 (£36,000) in year one, then 18% of the remaining balance each year.</p>
+<p>The AIA cap is £1,000,000 per year for most businesses. If you spend £1,200,000, the first £1,000,000 gets 100% relief. The remaining £200,000 goes into the main pool at the main-rate writing down allowance. That rate reduced from 18% to 14% from 1 April 2026 (CT) or 6 April 2026 (IT) under FA 2026 s.28. At the current 14% rate, you claim 14% of £200,000 (£28,000) in year one, then 14% of the remaining balance each year.</p>
 
 <p>Most small and growing businesses will not hit the £1,000,000 cap. But if you are a manufacturing or construction company buying heavy machinery, it is worth planning your purchases across two accounting periods if you are close to the limit.</p>
 
@@ -74,9 +74,9 @@ imageCredit:
 
 <h2>Capital Allowances for Sole Traders and Partnerships</h2>
 
-<p>Sole traders and partnerships cannot use Full Expensing. That is limited to companies. But they can use AIA up to £1,000,000 and the 18% or 6% writing down allowances on the main pool and special rate pool.</p>
+<p>Sole traders and partnerships cannot use Full Expensing. That is limited to companies. But they can use AIA up to £1,000,000 and the writing down allowances on the main pool and special rate pool. The main pool rate is 14% from 6 April 2026 (18% up to 5 April 2026 under FA 2026 s.28); the special rate pool stays at 6%.</p>
 
-<p>Take a self-employed electrician in Bristol. He buys a new van for £32,400 and tools for £4,800. Total £37,200. He claims AIA on the full amount. His self-employed profits drop from £63,400 to £26,200. At 20% basic rate tax, he saves £7,440 in income tax and Class 4 NIC.</p>
+<p>Take a self-employed electrician in Bristol. He buys a new van for £32,400 and tools for £4,800. Total £37,200. He claims AIA on the full amount. His self-employed profits drop from £63,400 to £26,200. At 20% basic rate tax, he saves £7,440 in income tax (there is a separate Class 4 NIC saving at 6% on profits within the £12,570 to £50,270 band on top of this).</p>
 
 <p>The same principle applies. Spend on qualifying assets, reduce your tax bill.</p>
 
@@ -86,13 +86,13 @@ imageCredit:
 
 <ul>
 <li>Land and buildings (except integral fixtures like lifts, air conditioning, and electrical systems)</li>
-<li>Cars with CO2 emissions above 50g/km (these go into a separate pool at 6% or 18% depending on emissions)</li>
+<li>Cars with CO2 emissions above 50g/km go into the special rate pool at 6%; cars emitting 1g/km to 50g/km go into the main pool at the main-rate WDA (14% from 1 April 2026, 18% before that)</li>
 <li>Assets used partly for personal use (only the business proportion qualifies)</li>
 <li>Assets you already owned before starting the business (you can claim on market value if you bring them into the business)</li>
 <li>Structures and buildings (these qualify for Structures and Buildings Allowance at 3% per year, not plant and machinery allowances)</li>
 </ul>
 
-<p>If you buy a car for your limited company, the capital allowances treatment depends on CO2 emissions. A fully electric car (0g/km) qualifies for 100% first-year allowance. A hybrid or petrol car with emissions between 1g/km and 50g/km goes into the main pool at 18%. Anything above 50g/km goes into the special rate pool at 6%.</p>
+<p>If you buy a car for your limited company, the capital allowances treatment depends on CO2 emissions. A fully electric car (0g/km) qualifies for 100% first-year allowance. A hybrid or petrol car with emissions between 1g/km and 50g/km goes into the main pool at the main-rate writing down allowance: 14% from 1 April 2026 (CT) or 6 April 2026 (IT) under FA 2026 s.28 (18% before those dates). Anything above 50g/km goes into the special rate pool at 6%.</p>
 
 <h2>How to Claim Capital Allowances on Your Tax Return</h2>
 
@@ -130,9 +130,9 @@ imageCredit:
 
 <h2>Writing Down Allowances Explained</h2>
 
-<p>If you do not use AIA or Full Expensing on an asset, it goes into a pool. The main pool gets 18% writing down allowance per year on a reducing balance basis. The special rate pool (cars over 50g/km, integral features, long-life assets) gets 6%.</p>
+<p>If you do not use AIA or Full Expensing on an asset, it goes into a pool. The main pool gets writing down allowance per year on a reducing balance basis: 14% from 1 April 2026 (CT) or 6 April 2026 (IT) under FA 2026 s.28, or 18% for periods ending before those dates. The special rate pool (cars over 50g/km, integral features, long-life assets) gets 6%.</p>
 
-<p>Example: You buy a second-hand machine for £40,000 and do not use AIA (perhaps you have already used your full £1,000,000 limit). The machine goes into the main pool. Year one: 18% of £40,000 = £7,200 allowance. Pool balance carried forward: £32,800. Year two: 18% of £32,800 = £5,904. And so on.</p>
+<p>Example: You buy a second-hand machine for £40,000 and do not use AIA (perhaps you have already used your full £1,000,000 limit). The machine goes into the main pool. Year one: 14% of £40,000 = £5,600 allowance. Pool balance carried forward: £34,400. Year two: 14% of £34,400 = £4,816. And so on.</p>
 
 <p>Writing down allowances are not as generous as 100% relief, but they still reduce your tax bill over time.</p>
 
@@ -142,6 +142,6 @@ imageCredit:
 
 <p>Buying commercial property with embedded fixtures. Acquiring a business where assets are transferred. Claiming on integral features in a refurbishment. Using the special rate pool for long-life assets. These situations need a specialist review.</p>
 
-<p>As ICAEW qualified accountants, we handle capital allowances computations for businesses across every sector. <a href="/services">Book a consultation</a> if you want to check you are claiming everything correctly.</p>
+<p>We handle capital allowances computations for businesses across every sector. <a href="/services">Book a consultation</a> if you want to check you are claiming everything correctly.</p>
 
 <p>The worked example above shows the basic mechanics. Your actual position will depend on your specific assets, your tax rate, and whether you are a company or sole trader. But the principle is the same: spend on qualifying assets, claim the relief, reduce your tax.</p>

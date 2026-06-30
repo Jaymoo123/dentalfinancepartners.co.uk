@@ -125,7 +125,7 @@ faqs:
 
 <p>Many dropshippers start as sole traders and later incorporate as limited companies. The decision depends on your profit level and your plans for the business.</p>
 
-<p>As a sole trader, you pay income tax and Class 2 and Class 4 National Insurance on your profits. As a limited company director, you pay yourself a salary and dividends, with corporation tax on the company's profits first.</p>
+<p>As a sole trader, you pay income tax and Class 4 National Insurance on your profits (Class 2 NIC was abolished from 6 April 2024). As a limited company director, you pay yourself a salary and dividends, with corporation tax on the company's profits first.</p>
 
 <p>The crossover point where incorporation makes financial sense is typically around £40,000 to £50,000 of profit per year. Below that, the admin costs of running a limited company often outweigh the tax savings. Above that, the tax efficiency of the dividend route usually wins.</p>
 
@@ -145,7 +145,7 @@ faqs:
 
 <p>If the answer to any of those is no, keep looking. A general accountant who learns on the job will cost you more in mistakes than you save in fees.</p>
 
-<p>At Holloway Davies, our ICAEW qualified team works with ecommerce and dropshipping businesses across the UK. We handle the VAT, the stock treatment, and the cross-border tax issues that come with the territory. If you are running a dropshipping business and want to make sure your accounting is right, <a href="/contact">get in touch</a>.</p>
+<p>At Holloway Davies, our experienced team works with ecommerce and dropshipping businesses across the UK. We handle the VAT, the stock treatment, and the cross-border tax issues that come with the territory. If you are running a dropshipping business and want to make sure your accounting is right, <a href="/contact">get in touch</a>.</p>
 
 <p>We also have a <a href="/calculators">range of calculators</a> that can help you estimate your tax position, including a corporation tax calculator and a dividend tax calculator. They are free to use and give you a quick sense of where you stand.</p>
 

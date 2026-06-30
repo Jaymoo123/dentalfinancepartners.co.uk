@@ -7,9 +7,9 @@ import { siteConfig } from "@/config/site";
 import { allTools } from "@/lib/tools/registry";
 
 export const metadata: Metadata = {
-  title: `Free UK Tax Calculators for Business Owners | ${siteConfig.name}`,
+  title: `Free UK Tax Calculators for Business Owners`,
   description:
-    "Free tax and finance calculators for UK limited companies, contractors, sole traders and small businesses. Salary vs dividend optimiser using 2025/26 rates. Built by ICAEW qualified accountants.",
+    "Free tax and finance calculators for UK limited companies, contractors, sole traders and small businesses. Salary vs dividend optimiser using 2026/27 rates. Built by specialist accountants.",
   alternates: { canonical: `${siteConfig.url}/calculators` },
   openGraph: {
     title: "Free UK Tax Calculators for Business Owners",
@@ -42,7 +42,7 @@ export default function CalculatorsIndexPage() {
               Free UK tax calculators for business owners
             </h1>
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-              We built these to answer the questions UK business owners actually ask us: what is my real take-home pay, how much salary versus dividend, what does an extra hire cost, and how much CGT will I pay on the exit. All numbers reflect 2025/26 rates and thresholds. No email gate, no sign-up.
+              We built these to answer the questions UK business owners actually ask us: what is my real take-home pay, how much salary versus dividend, what does an extra hire cost, and how much CGT will I pay on the exit. All numbers reflect 2026/27 rates and thresholds. No email gate, no sign-up.
             </p>
           </div>
         </div>

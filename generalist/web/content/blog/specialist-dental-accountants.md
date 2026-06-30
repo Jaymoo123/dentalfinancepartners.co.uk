@@ -21,7 +21,7 @@ faqs:
 - question: Do I need to register for VAT if I do private dental work?
   answer: Private dental work is VAT-exempt, but if you sell goods like whitening kits, mouthguards, or electric toothbrushes, those sales are standard-rated. Once your total taxable turnover from standard-rated sales exceeds £90,000 in a rolling 12-month period, you must register for VAT. You then need to apportion input VAT between exempt and taxable supplies using partial exemption rules. A specialist dental accountant will handle this correctly.
 - question: How does the NHS pension annual allowance affect my tax bill?
-  answer: The annual allowance for 2025/26 is £60,000, but it tapers down to a minimum of £10,000 if your total income (including pension growth) exceeds £260,000. NHS pension growth is calculated using a complex formula based on your pensionable earnings and the scheme's accrual rate. Many dentists trigger the annual allowance charge without realising it. A specialist dental accountant will calculate your pension input amount and advise whether to use scheme pays or pay the charge from your own funds.
+  answer: The annual allowance for 2025/26 is £60,000, but it tapers down to a minimum of £10,000 only where your threshold income (income excluding pension contributions) exceeds £200,000 AND your adjusted income (including pension growth) exceeds £260,000. Both conditions must be met. NHS pension growth is calculated using a complex formula based on your pensionable earnings and the scheme's accrual rate. Many dentists trigger the annual allowance charge without realising it. A specialist dental accountant will calculate your pension input amount and advise whether to use scheme pays or pay the charge from your own funds.
 dateModified: '2026-05-20'
 sourcesVerifiedAt: '2026-05-20'
 sourceDomains: []
@@ -55,7 +55,7 @@ imageCredit:
 
 <p>Specialist dental accountants handle partial exemption calculations regularly. A general accountant might miss the nuance and either overclaim VAT (risking a penalty) or underclaim it (losing money).</p>
 
-<p>If your practice is VAT-registered, you also need to consider the Flat Rate Scheme. Most dental practices fall under the 14.5% flat rate for "publishing" or the 11% rate for "management consultancy", depending on your exact activities. But if you are a limited cost trader (spending less than 2% of turnover on relevant goods), you must use 16.5%. A specialist will know which rate applies to your specific practice.</p>
+<p>If your practice is VAT-registered, you also need to consider the Flat Rate Scheme. Dental practices providing healthcare services fall under the "Medical or dental services" category in HMRC's Flat Rate Scheme sector table (VAT Notice 733), not "publishing" or "management consultancy". You should confirm the exact applicable percentage from HMRC's current published FRS sector table, as it depends on your specific activities. If you are a limited cost trader (spending less than 2% of turnover on relevant goods), you must use 16.5% regardless of sector. A specialist will know which category and rate applies to your specific practice.</p>
 
 <h2>Associate Dentists vs. Partners vs. Practice Owners</h2>
 
@@ -66,7 +66,7 @@ imageCredit:
 <p>HMRC has challenged associate status in recent years. If your working arrangements look more like employment (fixed hours, set rotas, no risk of loss), HMRC may argue you are actually an employee. A specialist dental accountant will help you structure your associate agreement to reduce that risk.</p>
 
 <h3>Partners</h3>
-<p>If you are a partner in a dental practice, you file a partnership tax return (SA800) each year. Your share of the profit is taxed as your personal income. You pay Class 2 and Class 4 National Insurance on your profits, and you can claim certain expenses that employees cannot.</p>
+<p>If you are a partner in a dental practice, you file a partnership tax return (SA800) each year. Your share of the profit is taxed as your personal income. You pay Class 4 National Insurance on your profits (6% on profits between £12,570 and £50,270, then 2% above that; Class 2 NIC was abolished from 6 April 2024), and you can claim certain expenses that employees cannot.</p>
 <p>Partnerships also need to register with HMRC and file annual accounts. A specialist accountant will ensure the partnership agreement reflects the profit-sharing arrangement and that each partner's capital account is correctly maintained.</p>
 
 <h3>Practice Owners (Limited Company Directors)</h3>
@@ -74,7 +74,7 @@ imageCredit:
 <p>Your company pays corporation tax on its profits. You can claim capital allowances on equipment, the Annual Investment Allowance (AIA) of up to £1,000,000 per year, and full expensing on most main-rate plant and machinery.</p>
 
 <h2>Pension Contributions for Dentists</h2>
-<p>Dentists in the NHS Pension Scheme face specific challenges. The annual allowance is £60,000 for 2025/26, but if your total income (including pension growth) exceeds £260,000, your annual allowance tapers down to a minimum of £10,000.</p>
+<p>Dentists in the NHS Pension Scheme face specific challenges. The annual allowance is £60,000 for 2025/26, but if your threshold income (income excluding pension contributions) exceeds £200,000 AND your adjusted income (including pension growth) exceeds £260,000, your annual allowance tapers down to a minimum of £10,000. Both conditions must be met for the taper to apply.</p>
 <p>NHS pension growth is calculated using a complex formula based on your pensionable earnings and the scheme's accrual rate. Many dentists trigger the annual allowance charge without realising it. A specialist dental accountant will calculate your pension input amount and advise whether you need to use scheme pays or pay the charge from your own funds.</p>
 <p>If you have a private pension alongside your NHS pension, the combined growth across both schemes counts towards your annual allowance. Getting this wrong means an unexpected tax bill.</p>
 
@@ -116,7 +116,7 @@ imageCredit:
 <li>Do they handle VAT partial exemption for dental practices? This is a niche area that most general accountants avoid.</li>
 <li>Do they offer year-round advice, not just year-end compliance? Dentistry involves ongoing decisions about equipment purchases, staff hiring, and practice expansion.</li>
 </ul>
-<p>At Holloway Davies, our ICAEW qualified team works with dental practices across the UK. We understand the specific tax and compliance challenges you face. <a href="/services">Our services</a> cover everything from corporation tax and VAT to pension planning and practice incorporation.</p>
+<p>At Holloway Davies, our experienced team works with dental practices across the UK. We understand the specific tax and compliance challenges you face. <a href="/services">Our services</a> cover everything from corporation tax and VAT to pension planning and practice incorporation.</p>
 
 <h2>Should You Incorporate Your Dental Practice?</h2>
 <p>Many dentists ask whether they should operate through a limited company rather than as a sole trader or partnership. The answer depends on your profit level, your NHS contract, and your long-term plans.</p>

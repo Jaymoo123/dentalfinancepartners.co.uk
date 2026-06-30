@@ -127,7 +127,7 @@ faqs:
 
 <p>But be careful with settlement legislation (often called "income shifting" rules). If shares are gifted to a non-spouse, HMRC may argue that the dividend income should be taxed on the original owner. For spouses, the rules are more relaxed, but the arrangement must be commercially genuine. The spouse should be actively involved in the business or have contributed capital to justify the shareholding.</p>
 
-<p>If you are considering alphabet shares, speak to an accountant who understands the <a href="/blog/director-pay-and-dividends">director pay and dividends</a> rules. Our ICAEW qualified team at Holloway Davies can advise on structuring shareholdings efficiently.</p>
+<p>If you are considering alphabet shares, speak to an accountant who understands the <a href="/blog/director-pay-and-dividends">director pay and dividends</a> rules. Our experienced team at Holloway Davies can advise on structuring shareholdings efficiently.</p>
 
 <h2>Corporation Tax Payment Deadlines</h2>
 
@@ -135,7 +135,7 @@ faqs:
 
 <p>If your company's taxable profits exceed £1.5 million, you must pay in quarterly instalments. That is rare for small companies, but worth knowing if your business grows quickly.</p>
 
-<p>You must also file a corporation tax return (CT600) within 12 months of the year-end. Late filing penalties start at £100 and escalate quickly. For a company that is 6 months late, the penalty is £1,500.</p>
+<p>You must also file a corporation tax return (CT600) within 12 months of the year-end. Late filing penalties start at £100 from day one, with a further £100 if the return is still outstanding at three months. At six months late, HMRC charges an additional 10% of the unpaid corporation tax (so the amount depends on how much tax is owed, not a fixed sum). A further 10% of unpaid tax applies at twelve months. Where a company is late three years in a row, each of the two fixed penalties rises from £100 to £500.</p>
 
 <h2>Dividend Tax Reporting</h2>
 

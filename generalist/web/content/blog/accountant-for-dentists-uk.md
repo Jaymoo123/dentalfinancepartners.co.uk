@@ -7,8 +7,8 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Accountant for Dentists UK: What Sets Them Apart?"
-metaDescription: "Dentist tax is different. We explain the specific compliance, structures and reliefs a good accountant for dentists should handle. ICAEW qualified."
-altText: "A UK dentist in a modern dental practice reviewing financial paperwork with an ICAEW qualified accountant at a desk in a clean, bright office."
+metaDescription: "Dentist tax is different. We explain the specific compliance, structures and reliefs a good accountant for dentists should handle."
+altText: "A UK dentist in a modern dental practice reviewing financial paperwork with a specialist accountant at a desk in a clean, bright office."
 image: "/blog/accountant-for-dentists-uk.jpg"
 imageCredit:
   photographer: "Pixabay"
@@ -22,11 +22,11 @@ faqs:
   - question: "Do I need a limited company as a dental associate?"
     answer: "Not necessarily. Many associates operate as sole traders, which is simpler and avoids IR35 risk entirely. A limited company can be more tax efficient if you retain profits in the company or pay dividends to a spouse shareholder. But the IR35 rules apply to associate contracts. If your practice controls your hours, location, and methods, you are likely inside IR35 and a limited company offers no tax advantage. A specialist accountant for dentists will review your specific contract and working arrangements before recommending a structure."
   - question: "What is the VAT flat rate for dental practices?"
-    answer: "The dental sector flat rate is 14.5%. This means you charge your patients 20% VAT on private work, pay HMRC 14.5% of your VAT-inclusive turnover, and keep the 5.5% difference. However, if you are a limited cost trader (your VAT-inclusive spend on relevant goods is less than 2% of turnover or less than £250 per month), you must use the 16.5% rate instead. Your accountant should check this annually."
+    answer: "The dental sector flat rate is 14.5%. This means you charge your patients 20% VAT on private work, pay HMRC 14.5% of your VAT-inclusive turnover, and keep the 5.5% difference. However, if you are a limited cost trader (your VAT-inclusive spend on relevant goods is less than 2% of turnover or less than £1,000 a year (£250 a quarter)), you must use the 16.5% rate instead. Your accountant should check this annually."
   - question: "Can I claim capital allowances on dental equipment?"
     answer: "Yes. Dental chairs, X-ray machines, sterilisation equipment, and computers all qualify for capital allowances. The Annual Investment Allowance (AIA) gives 100% relief on the first £1,000,000 of qualifying expenditure per year. If you buy equipment through your limited company, you deduct the full cost from your profits in the year of purchase, reducing your corporation tax bill. Your accountant should ensure every qualifying item is claimed."
   - question: "How do I sell my dental practice and minimise CGT?"
-    answer: "The most common route is to sell the shares in your limited company, not the assets. This allows you to claim Business Asset Disposal Relief (BADR) on the gain, giving a 14% CGT rate (rising to 18% from April 2026) on the first £1 million of gains. You must have held the shares for at least two years and the company must be trading. If you hold the practice property personally, the property gain is taxed separately at 24% (non-residential property rate). A specialist accountant will structure the sale to maximise relief and minimise tax. Plan at least two years before you intend to sell."
+    answer: "The most common route is to sell the shares in your limited company, not the assets. This allows you to claim Business Asset Disposal Relief (BADR) on the gain, giving an 18% CGT rate on the first £1 million of qualifying gains (from 6 April 2026; the rate was 14% in 2025/26 only). You must have held the shares for at least two years and the company must be trading. If you hold the practice property personally, the property gain is taxed separately at 24% (non-residential property rate). A specialist accountant will structure the sale to maximise relief and minimise tax. Plan at least two years before you intend to sell."
 ---
 
 <h2>Dentist Tax Is Not Like Other Small Business Tax</h2>
@@ -61,7 +61,7 @@ faqs:
 
 <h3>Tax Planning for Practice Exit</h3>
 <p>Most dentists sell their practice at some point. The tax treatment of that sale depends on how you hold the practice and how long you have held it.</p>
-<p>BADR gives a 14% CGT rate on the first £1 million of gains (rising to 18% from April 2026). But you need to plan for this years in advance. If you hold the practice property personally and the goodwill in the company, the structure changes the relief available.</p>
+<p>BADR gives an 18% CGT rate on the first £1 million of qualifying gains (from 6 April 2026; the rate was 14% for 2025/26 only). But you need to plan for this years in advance. If you hold the practice property personally and the goodwill in the company, the structure changes the relief available.</p>
 <p>Your accountant should model the exit tax bill every year, not just when you decide to sell. That way you can make adjustments early.</p>
 
 <h3>Pension Planning</h3>
@@ -104,7 +104,7 @@ faqs:
 <li>Your accountant has not discussed pension carry forward or the tapered annual allowance.</li>
 <li>You are filing your own VAT returns because your accountant "does not do that".</li>
 </ul>
-<p>If any of these sound familiar, speak to a specialist firm. Our <a href="/services">ICAEW qualified team</a> works with dental practices across the UK, from single-associate limited companies in Bristol to multi-surgery practices in Manchester and London. We know the reliefs, the structures, and the deadlines that matter to dentists.</p>
+<p>If any of these sound familiar, speak to a specialist firm. Our <a href="/services">experienced team</a> works with dental practices across the UK, from single-associate limited companies in Bristol to multi-surgery practices in Manchester and London. We know the reliefs, the structures, and the deadlines that matter to dentists.</p>
 
 <h2>How to Get Started</h2>
 <p>Switching accountant is straightforward. Your new firm handles the professional clearance letter to your old firm, requests the accounting records, and takes over from there. There is no disruption to your practice.</p>

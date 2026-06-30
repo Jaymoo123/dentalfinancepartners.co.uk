@@ -15,7 +15,7 @@ summary: If you've paid too much tax, you may be entitled to a refund. This guid
 schema: ''
 faqs:
 - question: Can I claim HMRC tax back for more than one tax year?
-  answer: Yes. You can usually claim for up to four previous tax years. For employment expenses, you can use form P87 for claims under £2,500 per year. For larger amounts, you need to submit a self assessment return. The deadline for each year is 5 April of the following year. If you miss that, you can still claim within 12 months of the filing deadline for that year. After that, you may need to write to HMRC.
+  answer: Yes. You can usually claim for up to four previous tax years. For employment expenses, you can use form P87 for claims under £2,500 per year. For larger amounts, you need to submit a self assessment return. Refund and relief claims must reach HMRC within 4 years of the end of the relevant tax year (for example, a 2021/22 claim must arrive by 5 April 2026). If you filed a self assessment return, you also have a separate window of up to 12 months from the filing deadline to amend it directly; after that, you may need to write to HMRC to request overpayment relief.
 - question: How do I check if I have overpaid tax through PAYE?
   answer: Log into your personal tax account on GOV.UK. It shows your estimated income, tax code, and the tax deducted for the current year. You can also check your P60 from your employer. If the figures do not match your actual income, you may have overpaid. The HMRC online tool can then tell you what to do next. You cannot claim a refund directly through the tool, but it gives you the correct steps.
 - question: What if my employer made a mistake on my tax?
@@ -86,7 +86,7 @@ imageCredit:
 
 <p>If you realise you overpaid in a previous year, you can amend your return. For most people, you have up to 12 months from the filing deadline to make a correction. After that, you may need to write to HMRC.</p>
 
-<p>As ICAEW qualified accountants, we see many business owners miss out on refunds simply because they do not check their tax position regularly. A quick review of your tax account each year can save you money. <sup><a href="#ref-4" id="cite-4">[4]</a></sup></p>
+<p>We see many business owners miss out on refunds simply because they do not check their tax position regularly. A quick review of your tax account each year can save you money. <sup><a href="#ref-4" id="cite-4">[4]</a></sup></p>
 
 <h2>What About Redundancy Pay?</h2>
 

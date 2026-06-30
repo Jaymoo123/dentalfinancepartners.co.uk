@@ -105,7 +105,7 @@ imageCredit:
 
 <p>If the answer to any of these is no, keep looking. A general accountant will file your tax return on time, but they will not spot the opportunities that a specialist would.</p>
 
-<p>At Holloway Davies, we are <a href="/about">ICAEW qualified accountants</a> with a dedicated team that works with dental practices across the UK. We handle everything from day-to-day bookkeeping to practice sales and pension planning.</p>
+<p>At Holloway Davies, we are <a href="/about">specialist accountants</a> with a dedicated team that works with dental practices across the UK. We handle everything from day-to-day bookkeeping to practice sales and pension planning.</p>
 
 <h2>Getting Started</h2>
 

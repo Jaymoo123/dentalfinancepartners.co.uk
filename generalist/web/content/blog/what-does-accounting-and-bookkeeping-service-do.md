@@ -64,7 +64,7 @@ faqs:
 <ul>
 <li>Calculating gross pay, tax and National Insurance for each employee</li>
 <li>Running the Real Time Information (RTI) submission to HMRC on or before payday</li>
-<li>Calculating employer NI at 13.8% on earnings above the secondary threshold (£9,100 for 2025/26)</li>
+<li>Calculating employer NI at 15% on earnings above the secondary threshold (£5,000 from April 2025, applying throughout 2025/26 and 2026/27)</li>
 <li>Claiming Employment Allowance (up to £10,500) where eligible</li>
 <li>Issuing P60s at year end and P45s for leavers</li>
 <li>Filing P11D and P11D(b) for benefits in kind</li>
@@ -96,7 +96,7 @@ faqs:
 
 <h2>Bookkeeping and Accounting Service for Contractors</h2>
 
-<p>Contractors working through a limited company have specific needs. Their <strong>bookkeeping and accounting service</strong> must track dividends, director's salary and retained profits carefully. The dividend allowance for 2025/26 is £500. Dividend tax rates are 8.75% for basic rate, 33.75% for higher rate and 39.35% for additional rate.</p>
+<p>Contractors working through a limited company have specific needs. Their <strong>bookkeeping and accounting service</strong> must track dividends, director's salary and retained profits carefully. The dividend allowance for 2025/26 is £500. Dividend tax rates are 10.75% for basic rate, 35.75% for higher rate and 39.35% for additional rate (2026/27 rates; 8.75% / 33.75% / 39.35% applied in 2025/26).</p>
 
 <p>A contractor in Manchester taking £50,000 of profit as dividends needs to know exactly how much tax they owe. The bookkeeper tracks the dividend vouchers, the accountant calculates the tax, and the contractor pays it through their self assessment.</p>
 
@@ -115,7 +115,7 @@ faqs:
 <p>Not all accounting and bookkeeping services are the same. Here are the specific things to check before you appoint one.</p>
 
 <ul>
-<li><strong>Qualification.</strong> Are they ICAEW, ACCA or AAT qualified? Holloway Davies are ICAEW qualified. That matters because chartered accountants follow a code of ethics and maintain professional indemnity insurance.</li>
+<li><strong>Qualification.</strong> Are they ICAEW, ACCA or AAT qualified? That matters because chartered accountants follow a code of ethics and maintain professional indemnity insurance.</li>
 <li><strong>Software.</strong> Do they use Xero, FreeAgent, QuickBooks or Sage? Ask which one they recommend for your business type. A provider that only works in one platform may not be the best fit if you prefer another.</li>
 <li><strong>Communication.</strong> How do you contact them? Email only? Phone? A dedicated portal? A good provider responds within 24 hours during working days.</li>
 <li><strong>Scope.</strong> Does the fee cover VAT returns, payroll, year end accounts and corporation tax? Or is each one a separate charge? Get the full scope in writing.</li>

@@ -110,7 +110,7 @@ faqs:
 
 <p>If your payroll and accounting are handled by different people, you need to make sure the numbers reconcile. That is an extra step that can introduce errors.</p>
 
-<p>At Holloway Davies, our ICAEW qualified team handles <strong>accounting and payroll</strong> together. The payroll runs each month, the figures flow into your bookkeeping automatically, and your year-end accounts are accurate because the payroll data is already reconciled. No double entry. No mismatched totals.</p>
+<p>At Holloway Davies, our experienced team handles <strong>accounting and payroll</strong> together. The payroll runs each month, the figures flow into your bookkeeping automatically, and your year-end accounts are accurate because the payroll data is already reconciled. No double entry. No mismatched totals.</p>
 
 <h2>The Real Cost of DIY Payroll Mistakes</h2>
 
@@ -152,7 +152,7 @@ faqs:
 <li><strong>Transparent pricing</strong>. They should tell you exactly what is included and what costs extra. P11Ds, pension admin, and year-end tasks are often separate.</li>
 </ul>
 
-<p>At Holloway Davies, we offer <strong>accounting and payroll</strong> services that cover all of this. Our ICAEW qualified team runs payroll for businesses across every sector, from 1-employee contractors to 50-person teams. We use Xero and BrightPay, integrate with your bookkeeping, and handle everything from RTI submissions to P11Ds and pension compliance.</p>
+<p>At Holloway Davies, we offer <strong>accounting and payroll</strong> services that cover all of this. Our experienced team runs payroll for businesses across every sector, from 1-employee contractors to 50-person teams. We use Xero and BrightPay, integrate with your bookkeeping, and handle everything from RTI submissions to P11Ds and pension compliance.</p>
 
 <h2>Making Tax Digital and Payroll</h2>
 

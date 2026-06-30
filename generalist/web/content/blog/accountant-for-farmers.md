@@ -36,7 +36,7 @@ faqs:
 
 <h2>Profit Averaging: Smoothing Out the Good and Bad Years</h2>
 <p>Farming income is rarely steady. One year you get a bumper harvest and high prices. The next, a drought or a disease outbreak cuts your yield. HMRC recognises this volatility. That is why farmers and certain horticultural businesses can use profit averaging.</p>
-<p>Under the averaging rules, you can spread your profits across two or five years. This reduces the total tax bill when you have a high income year followed by a low one. The five-year option is available if your profits vary by more than 30% from the average. The two-year option applies if the variation is between 25% and 30%.</p>
+<p>Under the averaging rules, you can spread your profits across two or five years. This reduces the total tax bill when you have a high income year followed by a low one. Both options are available where one year's profits are 75% or less of the comparison figure (broadly a difference of more than 25%). Full averaging applies where the lower year is 70% or less of that figure; marginal, tapered averaging applies where it falls between 70% and 75%.</p>
 <p>A general accountant might not flag this option. A specialist accountant for farmers will build it into your tax planning from day one. The result is a fairer tax bill that matches the reality of your business cycle.</p>
 
 <h2>Agricultural Property Relief and Inheritance Tax</h2>
@@ -65,7 +65,7 @@ faqs:
 
 <h2>Diversification and Non-Farming Income</h2>
 <p>Many farms now generate income from diversified activities. Holiday cottages, wedding venues, farm shops, renewable energy, livery yards, contracting work. Each of these has its own tax rules.</p>
-<p>Holiday lets may qualify as furnished holiday lettings (FHL), which gives access to capital allowances and certain reliefs. But the FHL rules changed from April 2025. The tax advantages have been significantly reduced. If you run holiday lets, you need to review your position now.</p>
+<p>Holiday lets previously benefited from the furnished holiday lettings (FHL) regime, which gave access to capital allowances on furnishings, Business Asset Disposal Relief and full mortgage interest relief. The FHL regime was abolished from 6 April 2025. Holiday lets are now taxed as ordinary property income, with no FHL-specific capital allowances, no BADR treatment and mortgage interest restricted to the standard 20% basic-rate tax reducer. If you run holiday lets, you need to review your position with a specialist.</p>
 <p>Farm shops selling produce from other farms may be subject to different VAT treatment than selling your own produce. Renewable energy income (solar, wind, AD) may attract capital allowances or be treated as trading income. A specialist accountant for farmers will map out the tax implications of each income stream.</p>
 
 <h2>Payroll and P11D for Farm Workers</h2>
@@ -74,7 +74,7 @@ faqs:
 
 <h2>Choosing the Right Accountant for Your Farm</h2>
 <p>Farming is a capital-intensive, weather-dependent, subsidy-supported industry. Your accountant needs to understand that context. A general practice accountant can file your tax return. A specialist accountant for farmers will help you plan, structure and grow your business.</p>
-<p>At Holloway Davies, we are ICAEW qualified accountants with experience across the agricultural sector. We work with arable farmers, livestock farmers, dairy operations, mixed farms, agricultural contractors and diversified rural businesses. We know the rules. We know the forms. We know the planning opportunities.</p>
+<p>At Holloway Davies, we are specialist accountants with experience across the agricultural sector. We work with arable farmers, livestock farmers, dairy operations, mixed farms, agricultural contractors and diversified rural businesses. We know the rules. We know the forms. We know the planning opportunities.</p>
 <p>If you want to discuss your farm's tax position, <a href="/contact">get in touch</a>. We will talk through your situation and show you what a specialist approach looks like.</p>
 
 <h2>Related articles in Sole Trader and Self Employment</h2>

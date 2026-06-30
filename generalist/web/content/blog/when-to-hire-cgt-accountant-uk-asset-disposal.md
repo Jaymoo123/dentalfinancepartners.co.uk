@@ -29,7 +29,7 @@ faqs:
     answer: "For a straightforward disposal with clear documentation, a CGT accountant can prepare and file the return within one to two weeks. For a complex disposal involving valuations, multiple reliefs, or an HMRC enquiry, the process can take four to eight weeks. The key variable is how quickly you provide the supporting documents: the sale contract, the valuation report, and the acquisition cost records."
 ---
 
-<p>If you are selling a business, shares, or an investment property, you will likely owe Capital Gains Tax (CGT) on the profit. The rules are not simple. Rates changed in 2024 and again in 2025. Reliefs like Business Asset Disposal Relief (BADR) now have a 14% rate, rising to 18% from April 2026. Getting the calculation wrong can cost you thousands. That is when you need a <strong>cgt accountant uk</strong> to handle the numbers and the paperwork.</p>
+<p>If you are selling a business, shares, or an investment property, you will likely owe Capital Gains Tax (CGT) on the profit. The rules are not simple. Rates changed in 2024 and again in 2025. Reliefs like Business Asset Disposal Relief (BADR) are currently taxed at 18% (from 6 April 2026; the rate was 14% for the 2025/26 tax year only). Getting the calculation wrong can cost you thousands. That is when you need a <strong>cgt accountant uk</strong> to handle the numbers and the paperwork.</p>
 
 <p>This article covers exactly when you should hire a CGT specialist, what they do, and how to avoid the common mistakes that trigger HMRC enquiries.</p>
 
@@ -47,17 +47,17 @@ faqs:
 <li><strong>Handling HMRC enquiries</strong> if your return is selected for review.</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we see clients who have tried to handle CGT themselves and ended up overpaying by 10% or more because they missed a relief or miscalculated the gain. A specialist fixes that.</p>
+<p>We see clients who have tried to handle CGT themselves and ended up overpaying by 10% or more because they missed a relief or miscalculated the gain. A specialist fixes that.</p>
 
 <h2>When Do You Need a CGT Accountant? Five Scenarios</h2>
 
 <h3>1. Selling Your Limited Company Shares</h3>
 
-<p>If you own shares in your own limited company and sell them, the gain is subject to CGT. The rate depends on your total income and gains for the year. For disposals from 6 April 2025, the BADR rate is 14% on the first £1 million of qualifying gains. Above that, you pay 18% (basic rate) or 24% (higher rate).</p>
+<p>If you own shares in your own limited company and sell them, the gain is subject to CGT. The rate depends on your total income and gains for the year. For disposals from 6 April 2025 to 5 April 2026, the BADR rate was 14% on the first £1 million of qualifying gains. From 6 April 2026, the BADR rate is 18% on the first £1 million. Above the lifetime limit, you pay 18% (basic rate) or 24% (higher rate).</p>
 
 <p>To qualify for BADR, you must meet specific conditions. You need to have been an officer or employee of the company for at least two years before the disposal. The company must be a trading company (not an investment company). And the shares must represent at least 5% of the ordinary share capital and voting rights.</p>
 
-<p>A <strong>cgt accountant uk</strong> checks every condition. If you miss one, you lose the relief and pay the full rate. That is a difference of 10% on a £500,000 gain: £50,000 extra tax.</p>
+<p>A <strong>cgt accountant uk</strong> checks every condition. If you miss one, you lose the relief and pay the full rate. That is a difference of 6% on a £500,000 gain: £30,000 extra tax.</p>
 
 <h3>2. Selling a Buy-to-Let or Second Home</h3>
 
@@ -127,13 +127,13 @@ faqs:
 <li><strong>Proactive planning.</strong> A good CGT accountant does not wait for the sale to happen. They review your situation in advance and suggest timing, structuring, and relief strategies.</li>
 </ul>
 
-<p>Our <a href="/about">ICAEW qualified team</a> works with business owners across the UK, from a tech founder in Shoreditch selling their SaaS company to a landlord in Birmingham selling a portfolio of buy-to-lets. We handle the full disposal process from planning to filing.</p>
+<p>Our experienced team works with business owners across the UK, from a tech founder in Shoreditch selling their SaaS company to a landlord in Birmingham selling a portfolio of buy-to-lets. We handle the full disposal process from planning to filing.</p>
 
 <h2>What Does a CGT Accountant Cost?</h2>
 
 <p>Fees vary depending on the complexity of the disposal. A straightforward share sale with a clear BADR claim might cost between £500 and £1,500 for the CGT return and planning work. A complex disposal involving multiple assets, valuations, and reliefs can cost £2,000 to £5,000 or more.</p>
 
-<p>Compare that to the tax saving. If a CGT accountant saves you £50,000 by correctly claiming BADR, the fee is a fraction of the benefit. The return on investment is clear.</p>
+<p>Compare that to the tax saving. If a CGT accountant saves you £30,000 by correctly claiming BADR, the fee is a fraction of the benefit. The return on investment is clear.</p>
 
 <p>Some accountants charge a fixed fee for the work. Others charge by the hour. We typically offer a fixed fee for CGT work so you know the cost upfront. <a href="/contact">Contact us</a> for a quote based on your specific situation.</p>
 

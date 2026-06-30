@@ -24,7 +24,7 @@ faqs:
   - question: "Can I file a confirmation statement early?"
     answer: "Yes, you can file early. But your next deadline moves forward to 12 months from the early filing date. If you file on 1 March instead of 15 March, your next deadline becomes 1 March. This can help align filing dates with your year-end."
   - question: "How much does it cost to file a confirmation statement?"
-    answer: "Online filing costs £13. Paper filing by post costs £40. Online is faster and cheaper. There is no automatic late filing penalty for the confirmation statement itself, but non-compliance is a criminal offence."
+    answer: "Online filing costs £34. Paper filing by post costs £62. Online is faster and cheaper. There is no automatic late filing penalty for the confirmation statement itself, but non-compliance is a criminal offence."
   - question: "Do I need to file a confirmation statement if my company is dormant?"
     answer: "Yes. Dormant companies must still file a confirmation statement every 12 months. There is no exemption. If you no longer need the company, consider voluntary strike off using form DS01 instead of letting it fall into default."
 ---
@@ -71,7 +71,7 @@ faqs:
 
 <h2>How to File a Confirmation Statement Online</h2>
 
-<p>Online filing is the fastest and cheapest method. It costs £13 and takes about 10 minutes if you have all the information ready. Here is the step-by-step process.</p>
+<p>Online filing is the fastest and cheapest method. It costs £34 and takes about 10 minutes if you have all the information ready. Here is the step-by-step process.</p>
 
 <h3>Step 1: Log Into WebFiling</h3>
 
@@ -87,7 +87,7 @@ faqs:
 
 <h3>Step 4: Confirm the Statement</h3>
 
-<p>Once you have reviewed and updated all the information, you tick the boxes confirming that the details are correct. You then submit the form and pay the £13 fee by debit or credit card.</p>
+<p>Once you have reviewed and updated all the information, you tick the boxes confirming that the details are correct. You then submit the form and pay the £34 fee by debit or credit card.</p>
 
 <h3>Step 5: Save the Receipt</h3>
 
@@ -95,7 +95,7 @@ faqs:
 
 <h2>How to File a Confirmation Statement by Post</h2>
 
-<p>Paper filing costs £40 and takes longer. You use form CS01, which you can download from the Companies House website. Complete it by hand or type into the PDF, then post it to Companies House, Crown Way, Cardiff, CF14 3UZ.</p>
+<p>Paper filing costs £62 and takes longer. You use form CS01, which you can download from the Companies House website. Complete it by hand or type into the PDF, then post it to Companies House, Crown Way, Cardiff, CF14 3UZ.</p>
 
 <p>Paper filing takes around 5 to 10 working days to process. Online filing is processed within hours. There is rarely a good reason to use paper unless you have no internet access or your authentication code is lost and you cannot wait for a replacement.</p>
 
@@ -113,7 +113,7 @@ faqs:
 
 <h2>Common Mistakes Directors Make When Filing</h2>
 
-<p>These are the most frequent errors we see as ICAEW qualified accountants at Holloway Davies. Avoid them and your filing will be straightforward.</p>
+<p>These are the most frequent errors we see at Holloway Davies. Avoid them and your filing will be straightforward.</p>
 
 <h3>Filing Before Updating the Register</h3>
 
@@ -173,7 +173,7 @@ faqs:
 <li>Are all PSC details current?</li>
 <li>Is your SIC code correct for your current business activity?</li>
 <li>Have you filed any necessary change forms (AP01, TM01, SH01, AD01) before the confirmation statement?</li>
-<li>Do you have the £13 fee ready for online filing?</li>
+<li>Do you have the £34 fee ready for online filing?</li>
 </ul>
 
 <p>If you can answer yes to all of these, you are ready to file. The process takes 10 minutes online.</p>

@@ -8,13 +8,13 @@ import { Calculator } from "lucide-react";
 import { JsonLd, buildWebApplication, buildFaqPage } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Employer NI & Cost-to-Hire Calculator 2025/26 | UK Business",
+  title: "Employer NI & Cost-to-Hire Calculator 2026/27 | UK Business",
   description:
-    "Free calculator: total cost of an employee in 2025/26. Employer NI at 15%, Employment Allowance £10,500, minimum pension. For UK limited companies and small businesses.",
+    "Free calculator: total cost of an employee in 2026/27. Employer NI at 15%, Employment Allowance £10,500, minimum pension. For UK limited companies and small businesses.",
   alternates: { canonical: `${siteConfig.url}/calculators/employer-ni-calculator` },
   openGraph: {
-    title: "Employer NI & Cost-to-Hire Calculator 2025/26",
-    description: "Free calculator: total cost of an employee in 2025/26. For UK businesses.",
+    title: "Employer NI & Cost-to-Hire Calculator 2026/27",
+    description: "Free calculator: total cost of an employee in 2026/27. For UK businesses.",
     url: `${siteConfig.url}/calculators/employer-ni-calculator`,
     type: "website",
   },
@@ -22,12 +22,12 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: "How is employer National Insurance calculated for 2025/26?",
-    a: "Employer NI (Class 1 secondary) is 15% on earnings above the secondary threshold of £5,000 per year per employee for 2025/26 (the rate increased from 13.8% and the threshold reduced from £9,100 in the Autumn Budget 2024). So an employee on £40,000 generates (£40,000 - £5,000) × 15% = £5,250 of employer NI before any Employment Allowance is applied.",
+    q: "How is employer National Insurance calculated for 2026/27?",
+    a: "Employer NI (Class 1 secondary) is 15% on earnings above the secondary threshold of £5,000 per year per employee for 2026/27 (the rate increased from 13.8% and the threshold reduced from £9,100 in the Autumn Budget 2024, and both figures are unchanged for 2026/27). So an employee on £40,000 generates (£40,000 - £5,000) × 15% = £5,250 of employer NI before any Employment Allowance is applied.",
   },
   {
     q: "What is the Employment Allowance and do I qualify?",
-    a: "Employment Allowance lets eligible UK employers reduce their employer NI bill by up to £10,500 per tax year in 2025/26 (up from £5,000 in 2024/25). Most small businesses qualify, but there is one critical catch: a single-director-only company (no other employees on payroll above the secondary threshold) does NOT qualify. You need at least one other paid employee. The £100,000 previous-year NI bill cap was removed from 6 April 2025, so it now applies to most employers.",
+    a: "Employment Allowance lets eligible UK employers reduce their employer NI bill by up to £10,500 per tax year in 2026/27 (unchanged from 2025/26; it rose from £5,000 in 2024/25). Most small businesses qualify, but there is one critical catch: a single-director-only company (no other employees on payroll above the secondary threshold) does NOT qualify. You need at least one other paid employee. The £100,000 previous-year NI bill cap was removed from 6 April 2025, so it now applies to most employers.",
   },
   {
     q: "What about pension auto-enrolment?",
@@ -41,8 +41,8 @@ const faqs = [
 
 export default function EmployerNICalculatorPage() {
   const webApp = buildWebApplication({
-    name: "Employer NI & Cost-to-Hire Calculator 2025/26",
-    description: "Free UK calculator: total cost of an employee in 2025/26 including employer NI, Employment Allowance and minimum auto-enrolment pension.",
+    name: "Employer NI & Cost-to-Hire Calculator 2026/27",
+    description: "Free UK calculator: total cost of an employee in 2026/27 including employer NI, Employment Allowance and minimum auto-enrolment pension.",
     path: "/calculators/employer-ni-calculator",
     applicationCategory: "FinanceApplication",
   });
@@ -65,7 +65,7 @@ export default function EmployerNICalculatorPage() {
           <div className="mt-6 max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-orange-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
               <Calculator className="h-3.5 w-3.5" />
-              Free calculator · 2025/26 rates
+              Free calculator · 2026/27 rates
             </div>
             <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
               Employer NI &amp; cost-to-hire calculator

@@ -122,7 +122,7 @@ You can claim tax relief on certain expenses you incur for your job. Common exam
 
 If you're employed, you claim these through your tax code. If you're self employed, you claim them as allowable expenses on your Self Assessment return.
 
-The key rule is that the expense must be incurred wholly, exclusively, and necessarily for your job. HMRC is strict on this. A general "working from home" claim for broadband and heating won't succeed unless your contract requires you to work from home.
+The deductibility test depends on your employment status. For employees, the expense must be incurred wholly, exclusively, and necessarily in the performance of the duties of the employment (s336 ITEPA 2003). For self-employed people, the test is wholly and exclusively for the purposes of the trade, profession or vocation (s34 ITTOIA 2005) and there is no "necessarily" limb. HMRC is strict on both. A general "working from home" claim for broadband and heating won't succeed unless your contract requires you to work from home.
 
 <h2>How Long Does a Tax Refund Take?</h2>
 
@@ -144,7 +144,7 @@ If you think you've been approached by an unauthorised firm, contact the FCA's C
 
 <h3>Overclaiming Expenses</h3>
 
-Some taxpayers inflate their expense claims to generate a larger refund. This is tax avoidance and HMRC will investigate. <sup><a href="#ref-4" id="cite-4">[4]</a></sup> If you're caught, you'll have to repay the refund plus interest and penalties.
+Some taxpayers inflate their expense claims to generate a larger refund. This is tax fraud (tax evasion), not tax avoidance. <sup><a href="#ref-4" id="cite-4">[4]</a></sup> HMRC can refer serious cases for criminal prosecution, in addition to requiring repayment of the refund plus interest and penalties.
 
 The General Dental Council (GDC) has specifically warned dental professionals about tax avoidance schemes that promise inflated refunds. <sup><a href="#ref-4" id="cite-4">[4]</a></sup> The same warning applies across all professions.
 
@@ -164,7 +164,7 @@ After that, the refund is lost. So if you think you may have overpaid in earlier
 
 If your tax affairs are straightforward, you can handle a refund claim yourself through your Personal Tax Account or Self Assessment return. But if you're self employed, a company director, or have multiple income streams, the process gets more complex.
 
-As ICAEW qualified accountants, we help clients across the UK identify overpayments, submit accurate claims, and deal with HMRC queries. We also help you structure your finances to avoid overpaying in the first place.
+We help clients across the UK identify overpayments, submit accurate claims, and deal with HMRC queries. We also help you structure your finances to avoid overpaying in the first place.
 
 If you'd like us to review your tax position, <a href="/contact">get in touch</a>. We work with sole traders, limited companies, and partnerships from our offices in Manchester, Birmingham, and London.
 

@@ -74,13 +74,13 @@ faqs:
 <ul>
 <li>Calculating gross pay, deductions, and net pay for each employee</li>
 <li>Applying the correct tax code (HMRC issues new codes throughout the year)</li>
-<li>Calculating employer National Insurance at 13.8% above the secondary threshold (£9,100 for 2025/26)</li>
+<li>Calculating employer National Insurance at 15% above the secondary threshold (£5,000 from April 2025)</li>
 <li>Calculating pension contributions under auto-enrolment (Workplace Pension)</li>
 <li>Issuing payslips (these can be digital)</li>
 <li>Submitting the FPS to HMRC</li>
 </ul>
 
-<p>For directors taking a salary, the most efficient structure is usually £12,570 per year. That matches the personal allowance and the primary NI threshold, so no income tax or employee NI is due. The company gets a corporation tax deduction for the salary. Employer NI is payable above £9,100, but if your company claims the Employment Allowance (up to £10,500), that NI cost is covered.</p>
+<p>For directors taking a salary, the most efficient structure is usually £12,570 per year. That matches the personal allowance and the primary NI threshold, so no income tax or employee NI is due. The company gets a corporation tax deduction for the salary. Employer NI is payable above £5,000 (the secondary threshold from April 2025), but if your company claims the Employment Allowance (up to £10,500), that NI cost is covered.</p>
 
 <p>Your accountant should also handle the year-end payroll tasks: issuing P60s to employees by 31 May, submitting the P11D(b) for Class 1A NIC on benefits by 6 July, and filing the P11D forms for any benefits in kind.</p>
 
@@ -106,7 +106,7 @@ faqs:
 
 <p>If you are a director of a limited company, your director's loan account (DLA) is one of the most common problem areas. The DLA tracks money you have taken from the company beyond your salary and dividends, and money you have introduced into the company.</p>
 
-<p>Your accountant should review the DLA every month. If the balance is overdrawn (you owe the company money) and exceeds £10,000, there are two consequences. First, you have a benefit in kind (the beneficial loan), which goes on your P11D and you pay tax on. Second, if the loan is not repaid within nine months and one day of the year-end, the company pays S455 tax at 33.75% on the outstanding amount. That tax is refundable when the loan is repaid, but it is a cash flow hit the company does not need.</p>
+<p>Your accountant should review the DLA every month. If the balance is overdrawn (you owe the company money) and exceeds £10,000, there are two consequences. First, you have a benefit in kind (the beneficial loan), which goes on your P11D and you pay tax on. Second, if the loan is not repaid within nine months and one day of the year-end, the company pays S455 tax at 35.75% on the outstanding amount (33.75% for loans made before 6 April 2026). That tax is refundable when the loan is repaid, but it is a cash flow hit the company does not need.</p>
 
 <p>Your accountant should flag overdrawn DLAs early and advise on how to clear them: either by declaring a dividend (if retained profits are available) or by repaying the company from personal funds.</p>
 
@@ -152,7 +152,7 @@ faqs:
 
 <p>Ask them directly. At your next review meeting, go through this list and ask which of these tasks they handle each month. If they cannot give you a clear answer, that is a red flag.</p>
 
-<p>You should also check whether your accountant is registered with a recognised professional body. At Holloway Davies, we are <a href="/about">ICAEW qualified</a>, which means we are bound by ethical and technical standards that go beyond basic HMRC filing.</p>
+<p>You should also check whether your accountant is registered with a recognised professional body. At Holloway Davies, we are <a href="/about">specialist accountants</a> who work to high professional standards that go beyond basic HMRC filing.</p>
 
 <p>If you want to see how a proper monthly service works, <a href="/services">our services page</a> sets out exactly what we do for each client. No hidden packages. No vague promises. Just a clear list of the work we deliver every month.</p>
 

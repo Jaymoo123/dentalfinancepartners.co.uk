@@ -35,7 +35,7 @@ faqs: []
 
 <p>Or take capital allowances on residential property. Most accountants assume they do not apply to residential lets. They are wrong. If you buy a property that was previously used as a business premises, or if you install specific fixtures like lifts, air conditioning, or fire safety systems, capital allowances may be available. A specialist knows where to look.</p>
 
-<p>The same applies to furnished holiday lettings, the rent-a-room scheme, and the tricky interaction between property income and your personal tax bands. A specialist <strong>accountant for landlords</strong> sees the full picture. A generalist sees a form to fill in.</p>
+<p>The same applies to the former furnished holiday lettings regime (abolished from 6 April 2025, so understanding the transition to standard property income rules matters), the rent-a-room scheme, and the tricky interaction between property income and your personal tax bands. A specialist <strong>accountant for landlords</strong> sees the full picture. A generalist sees a form to fill in.</p>
 
 <h2>What a Landlord Accountant Actually Does for You</h2>
 
@@ -64,9 +64,9 @@ faqs: []
 <p>Key allowances to consider:</p>
 
 <ul>
-<li><strong>Structures and Buildings Allowance (SBA):</strong> 3% per year on qualifying construction costs for new commercial buildings or conversions. This applies to holiday lets and some mixed-use properties.</li>
+<li><strong>Structures and Buildings Allowance (SBA):</strong> 3% per year on qualifying construction costs for new commercial buildings or conversions. This applies to qualifying commercial and mixed-use properties.</li>
 <li><strong>Plant and machinery allowances:</strong> Available for fixtures like lifts, heating systems, and security systems in commercial or mixed-use properties.</li>
-<li><strong>Furnished Holiday Let (FHL) allowances:</strong> FHLs qualify for full capital allowances on furniture, fixtures, and equipment. Standard residential lets do not.</li>
+<li><strong>Furnished Holiday Let (FHL) regime abolished:</strong> The FHL regime was abolished from 6 April 2025. Former holiday lets are now taxed under standard property income rules, with no separate FHL capital allowances, preferential interest deduction, or other FHL advantages. A specialist can advise on how the transition affects your position.</li>
 <li><strong>Replacement of Domestic Items Relief:</strong> For standard residential lets, you can claim the cost of replacing furniture, furnishings, and appliances. Not the initial cost. The replacement cost.</li>
 </ul>
 
@@ -93,7 +93,7 @@ faqs: []
 <ul>
 <li><strong>Option to Tax:</strong> If you own commercial property, you can opt to charge VAT on the rent. This lets you recover VAT on purchase costs and refurbishment. But it makes the property less attractive to tenants who cannot recover VAT.</li>
 <li><strong>Flat Rate Scheme:</strong> Some property businesses qualify for the flat rate scheme. The rate for property-related services is 14% (limited cost trader rate 16.5% if you do not spend enough on goods).</li>
-<li><strong>SDLT surcharges:</strong> Additional 3% SDLT on second homes and buy-to-lets. Higher rates for corporate buyers (15% on properties over £500k, with exceptions for property development and rental businesses).</li>
+<li><strong>SDLT surcharges:</strong> Additional 5% SDLT on second homes and buy-to-lets (increased from 3%, effective 31 October 2024). Higher rates for corporate buyers (15% on properties over £500k, with exceptions for property development and rental businesses).</li>
 <li><strong>Annual Tax on Enveloped Dwellings (ATED):</strong> If you hold a high-value residential property (over £500k) through a company, ATED may apply. The annual charge ranges from £4,150 to £280,500 depending on property value.</li>
 </ul>
 
@@ -176,7 +176,7 @@ faqs: []
 <li>Do you routinely review capital allowances on new property purchases?</li>
 <li>Have you handled a property incorporation before? Can you walk me through the process?</li>
 <li>What software do you use for bookkeeping and tax returns?</li>
-<li>Do you have experience with furnished holiday lettings and the HMRC criteria?</li>
+<li>Do you have experience with the former furnished holiday lettings (FHL) regime and the transition to standard property income rules from April 2025?</li>
 <li>Are you ICAEW, ACCA, or CIMA qualified? (Professional body membership matters for technical competence and indemnity insurance.)</li>
 </ul>
 
@@ -189,7 +189,7 @@ faqs: []
 <li>They are not registered with a recognised professional body.</li>
 </ul>
 
-<p>At Holloway Davies, our <a href="/about">ICAEW qualified team</a> includes specialists who work with property investors across the UK. We see portfolios ranging from single buy-to-lets in Leeds to mixed commercial and residential portfolios in London's Canary Wharf and Edinburgh's Leith. We do not take a one-size-fits-all approach because your portfolio is not one-size-fits-all.</p>
+<p>At Holloway Davies, our <a href="/about">specialist team</a> includes accountants who work with property investors across the UK. We see portfolios ranging from single buy-to-lets in Leeds to mixed commercial and residential portfolios in London's Canary Wharf and Edinburgh's Leith. We do not take a one-size-fits-all approach because your portfolio is not one-size-fits-all.</p>
 
 <h2>What Happens When You Engage a Landlord Accountant</h2>
 

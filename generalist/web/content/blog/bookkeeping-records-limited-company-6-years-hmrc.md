@@ -35,7 +35,7 @@ faqs:
 
 <p>The 6 year clock starts from the end of the company's financial year. If your company's year ends on 31 March 2025, you must keep those records until at least 31 March 2031. That is the minimum. For some records, you may need to keep them longer.</p>
 
-<p>As ICAEW qualified accountants, we see directors make two common mistakes: throwing records away too early, or keeping everything indefinitely without any system. Neither is right. You need a clear retention policy that meets HMRC's requirements without hoarding paper you will never need.</p>
+<p>We see directors make two common mistakes: throwing records away too early, or keeping everything indefinitely without any system. Neither is right. You need a clear retention policy that meets HMRC's requirements without hoarding paper you will never need.</p>
 
 <h2>What Counts as a Bookkeeping Record for a Limited Company?</h2>
 
@@ -51,7 +51,7 @@ faqs:
 <li><strong>Expense records</strong> including receipts for travel, subsistence, entertainment, and any other business expense. HMRC expects to see the original receipt, not just a credit card statement.</li>
 <li><strong>Payroll records</strong> including P32 summaries, P60s for each employee, P45s for leavers, P11D forms for benefits in kind, and the P11D(b) for Class 1A National Insurance. You also need the payroll reports from your software (BrightPay, Iris, or the HMRC Basic PAYE Tools).</li>
 <li><strong>Dividend vouchers</strong> showing the date, amount, and tax credit for every dividend paid to shareholders. These must be kept with the board minutes authorising each dividend.</li>
-<li><strong>Director's loan account statements</strong> showing all transactions between the company and its directors. If HMRC checks whether a loan has triggered S455 tax (33.75%), they will ask for these.</li>
+<li><strong>Director's loan account statements</strong> showing all transactions between the company and its directors. If HMRC checks whether a loan has triggered S455 tax (33.75% for loans made in 2025/26, rising to 35.75% for loans made on or after 6 April 2026), they will ask for these.</li>
 <li><strong>VAT records</strong> if you are VAT registered. This includes your VAT returns (VAT100), VAT1 registration certificate, VAT484 if you changed details, and the underlying sales and purchase ledgers. You must keep these for 6 years too.</li>
 <li><strong>Construction Industry Scheme (CIS) records</strong> if you work in construction. This includes CIS300 monthly returns, subcontractor verification details, and deduction statements.</li>
 <li><strong>Corporation tax working papers</strong> including the CT600 return, computations, and any supporting schedules. If you claimed R&D tax credits, keep the R&D AIF (Additional Information Form) and the technical report.</li>

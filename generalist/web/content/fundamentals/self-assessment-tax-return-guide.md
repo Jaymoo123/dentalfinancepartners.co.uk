@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/tax-documents-on-the-table-6863279/"
   source: "Pexels"
 h1: "The Definitive Self Assessment Tax Return Guide for UK Business Owners"
-summary: "This is the definitive Self Assessment Tax Return guide for UK business owners, sole traders, partnerships, and company directors. We cover who must file, how to register, key deadlines, allowable expenses, the transition to MTD for ITSA, and a practical action checklist. Written by ICAEW qualified accountants for real-world compliance."
+summary: "This is the definitive Self Assessment Tax Return guide for UK business owners, sole traders, partnerships, and company directors. We cover who must file, how to register, key deadlines, allowable expenses, the transition to MTD for ITSA, and a practical action checklist. Written by our specialist accountants for real-world compliance."
 schema: ""
 faqs:
   - question: "Do I need to file a Self Assessment return if I am a limited company director?"
@@ -30,7 +30,7 @@ faqs:
 
 <p>If you run a business in the UK, whether as a sole trader, a partner, or a limited company director taking dividends, you will almost certainly need to file a Self Assessment tax return. This guide is written for you. It is not a generic overview. It is the definitive self assessment tax return guide for UK business owners who need to get this right, avoid penalties, and understand what is changing under Making Tax Digital.</p>
 
-<p>We are ICAEW qualified accountants. We work with businesses across the UK, from a freelance graphic designer in Camden to a growing construction partnership in the Jewellery Quarter of Birmingham. This guide covers the rules for 2025/26, the forms you need, the deadlines you cannot miss, and the practical steps to file correctly. We include specific numbers, real forms, and a full action checklist. Bookmark this page. You will come back to it every year.</p>
+<p>We work with businesses across the UK, from a freelance graphic designer in Camden to a growing construction partnership in the Jewellery Quarter of Birmingham. This guide covers the rules for 2025/26, the forms you need, the deadlines you cannot miss, and the practical steps to file correctly. We include specific numbers, real forms, and a full action checklist. Bookmark this page. You will come back to it every year.</p>
 
 <h2>Who Must File a Self Assessment Tax Return in 2025/26</h2>
 
@@ -269,6 +269,6 @@ faqs:
 
 <p>This guide covers the core rules, but every business is different. If you have multiple income sources, complex expenses, capital gains, or overseas income, the rules multiply. A mistake on your Self Assessment return can cost you thousands in penalties and interest. It can also trigger an HMRC compliance check, which is time-consuming and stressful.</p>
 
-<p>We are <a href="/about">ICAEW qualified accountants</a> based in the UK. We work with sole traders in the Northern Quarter of Manchester, partnerships in Leith in Edinburgh, and directors in Canary Wharf. If you need help with your Self Assessment return, <a href="/contact">contact us</a>. We will review your position, file your return correctly, and help you plan for the future.</p>
+<p>We are <a href="/about">specialist accountants</a> based in the UK. We work with sole traders in the Northern Quarter of Manchester, partnerships in Leith in Edinburgh, and directors in Canary Wharf. If you need help with your Self Assessment return, <a href="/contact">contact us</a>. We will review your position, file your return correctly, and help you plan for the future.</p>
 
 <p>If you are considering incorporating your business, read our <a href="/incorporation">incorporation guide</a>. If you are dealing with capital gains, see our <a href="/blog/exit-and-capital-gains">exit and capital gains</a> page. For everything else, our <a href="/fundamentals">fundamentals</a> section covers the basics of UK business tax.</p>

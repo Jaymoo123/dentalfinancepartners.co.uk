@@ -17,9 +17,9 @@ function slugifyCategory(category: string): string {
 }
 
 export const metadata: Metadata = {
-  title: `Insights | ${siteConfig.name}`,
+  title: `Insights`,
   description:
-    "Plain-English guidance on UK business tax, structure, payroll, VAT, R&D, MTD and exit planning. Written by ICAEW-qualified accountants. Updated for 2025/26 rates.",
+    "Plain-English guidance on UK business tax, structure, payroll, VAT, R&D, MTD and exit planning. Written by our specialist accountants. Updated for 2026/27 rates.",
   alternates: { canonical: `${siteConfig.url}/blog` },
   openGraph: {
     title: `Insights | ${siteConfig.name}`,
@@ -66,7 +66,7 @@ export default function BlogIndexPage() {
               UK business tax, plainly explained.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-neutral-600 max-w-2xl">
-              {posts.length} articles on UK limited company tax, sole trader self-assessment, VAT &amp; MTD, payroll, R&amp;D credits, incorporation, director pay and exit planning. Written or reviewed by an ICAEW-qualified accountant. Updated against current HMRC rates.
+              {posts.length} articles on UK limited company tax, sole trader self-assessment, VAT &amp; MTD, payroll, R&amp;D credits, incorporation, director pay and exit planning. Written or reviewed by a specialist accountant on our team. Updated against current HMRC rates.
             </p>
           </div>
         </div>

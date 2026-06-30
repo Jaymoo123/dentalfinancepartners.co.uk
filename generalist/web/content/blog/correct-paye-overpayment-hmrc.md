@@ -109,7 +109,7 @@ faqs:
 
 <ul>
 <li><strong>Submitting a corrected FPS for a closed year.</strong> HMRC will reject it. Use the EPS for closed years.</li>
-<li><strong>Failing to include employer NI.</strong> If you overpaid PAYE, you probably overpaid employer Class 1 NI at 13.8% as well. Claim that back too.</li>
+<li><strong>Failing to include employer NI.</strong> If you overpaid PAYE, you probably overpaid employer Class 1 NI as well. The rate depends on the year of the error: 15% above a £5,000 secondary threshold for overpayments from 6 April 2025 onward (2025/26 and 2026/27); 13.8% above a £9,100 threshold for years up to and including 2024/25. Claim the correct amount for the year the error occurred in.</li>
 <li><strong>Not keeping records.</strong> HMRC can ask for evidence of the error and the correction. Keep your payroll reports, the original FPS, the EPS, and any correspondence.</li>
 <li><strong>Assuming the employee will sort it out.</strong> They might not. And if HMRC reconciles their tax account and finds a mismatch, you could face a compliance check.</li>
 <li><strong>Ignoring the overpayment.</strong> Some employers hope it will sort itself out. It will not. The longer you leave it, the harder it becomes to prove the error.</li>
@@ -159,7 +159,7 @@ faqs:
 <li>The overpayment is large enough to affect your corporation tax liability</li>
 </ul>
 
-<p>If any of these apply, speak to an accountant. As ICAEW qualified accountants, we handle PAYE corrections regularly. We can review your payroll records, calculate the exact overpayment, and submit the correction through the right channel. It is usually a quick fix.</p>
+<p>If any of these apply, speak to an accountant. We handle PAYE corrections regularly. We can review your payroll records, calculate the exact overpayment, and submit the correction through the right channel. It is usually a quick fix.</p>
 
 <p>For straightforward corrections, use the EPS method. For closed schemes or large refunds, claim direct from HMRC. Either way, act within the 4-year window and keep your paperwork.</p>
 

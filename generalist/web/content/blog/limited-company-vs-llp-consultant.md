@@ -17,9 +17,7 @@ imageCredit:
   source: Pexels
 h1: 'Limited Company vs LLP for a Consultant: Which Structure Works Best?'
 summary: Choosing between a limited company and a limited liability partnership (LLP) for your consulting business depends on your client base, income level, and whether you work alone or with others. This guide compares tax treatment, personal liability, admin burden, and exit options so you can decide.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Limited Company vs LLP for a Consultant: Which Structure Works Best?","description":"Compare a limited company and an LLP as a consultant. An LLP pays no corporation tax, while a company pays 19% on profits up to £50,000.","url":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/limited-company-vs-llp-consultant","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
-  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/limited-company-vs-llp-consultant"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/limited-company-vs-llp-consultant.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Incorporation and Structure","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure"},{"@type":"ListItem","position":3,"name":"Limited Company vs LLP for a Consultant: Which Structure Works Best?","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/limited-company-vs-llp-consultant"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can a single person set up an LLP for their consulting business?","acceptedAnswer":{"@type":"Answer","text":"Yes, a single person can be the sole member of an LLP. However, an LLP with only one member is treated as a sole trader for tax purposes. You lose the partnership tax flexibility and still have the admin of filing LLP accounts at Companies House. For a solo consultant, a limited company is usually more tax-efficient than a single-member LLP."}},{"@type":"Question","name":"Do LLPs have to pay corporation tax?","acceptedAnswer":{"@type":"Answer","text":"No. An LLP is transparent for tax purposes. The LLP itself pays no tax. Instead, each member pays income tax and Class 4 National Insurance on their share of the LLP''s profits through self assessment.
-  This is a key difference from a limited company, which pays corporation tax on its profits before dividends are distributed."}},{"@type":"Question","name":"Is an LLP better than a limited company for IR35 protection?","acceptedAnswer":{"@type":"Answer","text":"The off-payroll working rules (IR35) apply to intermediaries, typically limited companies. An LLP is not an intermediary for IR35 purposes, so the rules do not apply. However, HMRC can still challenge an LLP arrangement under the general anti-abuse rule if they believe it is being used to avoid tax. If you are genuinely self-employed and outside IR35, a limited company is usually fine. If you work through a single"}}]}]}'
+schema: ""
 faqs:
 - question: Can a single person set up an LLP for their consulting business?
   answer: Yes, a single person can be the sole member of an LLP. However, an LLP with only one member is treated as a sole trader for tax purposes. You lose the partnership tax flexibility and still have the admin of filing LLP accounts at Companies House. For a solo consultant, a limited company is usually more tax-efficient than a single-member LLP.
@@ -30,8 +28,8 @@ faqs:
 metaTitle_prev: 'Limited Company vs LLP for a Consultant: Tax, Risk'
 metaDescription_prev: Comparing limited company vs LLP for consultants. Tax rates, NI, liability, and admin. Practical guidance for UK consultants choosing a structure.
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -39,7 +37,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>This guide compares the two structures directly. We will look at tax rates, personal liability, National Insurance, profit extraction, and what happens when you want to exit. The <strong>limited company vs LLP consultant</strong> decision is not one-size-fits-all. But by the end of this article you will know which questions to ask your accountant.</p>
 
-<p>As ICAEW qualified accountants, we advise consultants across the UK on this choice every week. The answer depends on your specific circumstances. But there are clear patterns that point one way or the other.</p>
+<p>We advise consultants across the UK on this choice every week. The answer depends on your specific circumstances. But there are clear patterns that point one way or the other.</p>
 
 <h2>What Is a Limited Company?</h2>
 
@@ -64,7 +62,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>Key features for consultants:</p>
 
 <ul>
-<li>No corporation tax. Each member pays income tax at their marginal rate (20%, 40%, or 45%) plus Class 4 NIC (9% on profits between £12,570 and £50,270, then 2% above that).</li>
+<li>No corporation tax. Each member pays income tax at their marginal rate (20%, 40%, or 45%) plus Class 4 NIC (6% on profits between £12,570 and £50,270, then 2% above that; 2025/26 rate).</li>
 <li>Members are not employees. They are self-employed for tax purposes, so no PAYE or employer NI on drawings.</li>
 <li>Limited liability: members are not personally liable for the LLP's debts beyond their capital contribution (again, personal guarantees excepted).</li>
 <li>Annual accounts filed at Companies House. Each member files a self assessment return (SA100 plus partnership pages SA800).</li>
@@ -84,26 +82,26 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>Typical efficient setup: pay yourself a salary of £12,570 (matches the personal allowance and primary NI threshold). Take the remaining profit as dividends.</p>
 
 <p>Profit: £80,000<br>
-Salary: £12,570 (no income tax, no employee NI, but employer NI applies at 13.8% above the secondary threshold of £9,100. Employer NI on £3,470 = £479).<br>
-Employer NI: £479<br>
-Corporation tax: 19% on (£80,000 minus £12,570 minus £479) = 19% on £66,951 = £12,721<br>
-Profit after CT: £54,230<br>
-Dividends: £54,230<br>
-Dividend tax: first £500 tax-free (dividend allowance). Then £54,230 minus £500 = £53,730 taxed at dividend rates. Assuming no other income, the basic rate band is £50,270 minus £12,570 salary = £37,700 available. So £37,700 at 8.75% = £3,299. The remaining £16,030 at 33.75% = £5,410.<br>
-Total dividend tax: £8,709<br>
-Total tax (CT + employer NI + dividend tax): £12,721 + £479 + £8,709 = £21,909<br>
-Net retained: £80,000 minus £21,909 = £58,091</p>
+Salary: £12,570 (no income tax, no employee NI, but employer NIC applies at 15% above the secondary threshold of £5,000 from April 2025. Employer NIC on £7,570 = £1,136).<br>
+Employer NIC: £1,136<br>
+Taxable company profit: £80,000 minus £12,570 minus £1,136 = £66,294. This falls in the marginal-relief band (£50,000 to £250,000), so corporation tax = 25% x £66,294 minus (3/200) x (£250,000 minus £66,294) = £16,574 minus £2,756 = £13,818.<br>
+Profit after CT: £66,294 minus £13,818 = £52,476<br>
+Dividends: £52,476<br>
+Dividend tax: first £500 tax-free (dividend allowance). Then £52,476 minus £500 = £51,976 taxed at dividend rates. Assuming no other income, the basic rate band is £50,270 minus £12,570 salary = £37,700 available. So £37,700 at 8.75% = £3,299. The remaining £14,276 at 33.75% = £4,818.<br>
+Total dividend tax: £3,299 + £4,818 = £8,117<br>
+Total tax (CT + employer NIC + dividend tax): £13,818 + £1,136 + £8,117 = £23,071<br>
+Net retained: £80,000 minus £23,071 = £56,929</p>
 
 <h3>Solo Consultant Through an LLP</h3>
 
 <p>As an LLP member, you are self-employed. You pay income tax and Class 4 NIC on the full £80,000 profit.</p>
 
 <p>Income tax: £80,000 minus £12,570 personal allowance = £67,430 taxable. First £37,700 at 20% = £7,540. Next £29,730 at 40% = £11,892. Total income tax = £19,432.<br>
-Class 4 NIC: 9% on (£50,270 minus £12,570) = 9% on £37,700 = £3,393. Then 2% on (£80,000 minus £50,270) = 2% on £29,730 = £595. Total Class 4 = £3,988.<br>
-Total tax (income tax + Class 4 NIC): £19,432 + £3,988 = £23,420<br>
-Net retained: £80,000 minus £23,420 = £56,580</p>
+Class 4 NIC (2025/26 rate): 6% on (£50,270 minus £12,570) = 6% on £37,700 = £2,262. Then 2% on (£80,000 minus £50,270) = 2% on £29,730 = £595. Total Class 4 = £2,857.<br>
+Total tax (income tax + Class 4 NIC): £19,432 + £2,857 = £22,289<br>
+Net retained: £80,000 minus £22,289 = £57,711</p>
 
-<p>In this scenario, the limited company saves you about £1,511 per year. The gap widens as profits increase, because corporation tax rates are lower than higher-rate income tax. At £150,000 profit, the limited company saves around £6,000 to £8,000 depending on dividend mix.</p>
+<p>In this scenario, the LLP saves you about £782 per year at £80,000 profit in 2025/26. The increase in employer NIC (to 15% above a £5,000 secondary threshold from April 2025) raises the salary cost for the limited company route at this income level. As profits grow and a larger share of LLP income falls into the 40% or 45% income tax bands versus corporation tax at up to 25%, the limited company becomes progressively more efficient.</p>
 
 <p>But the comparison changes if you need to extract all the profit as salary (for example, if you want to maximise pension contributions or if you have no retained earnings requirement). And it changes if you are in a partnership with other members who have different tax positions.</p>
 

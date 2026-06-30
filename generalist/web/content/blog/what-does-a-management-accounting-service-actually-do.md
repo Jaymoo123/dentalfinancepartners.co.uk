@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Management Accounting Service: What It Does for UK"
 metaDescription: "A management accounting service gives you monthly profit and loss, balance sheet, cash flow and KPI reports. Here is exactly what you get and why it"
-altText: "UK business owner reviewing a management accounts report with their ICAEW qualified accountant in a modern Manchester office"
+altText: "UK business owner reviewing a management accounts report with their accountant in a modern Manchester office"
 image: "/blog/what-does-a-management-accounting-service-actually-do.jpg"
 imageCredit:
   photographer: "Artem Podrez"
@@ -43,7 +43,7 @@ faqs:
 
 <p>For a limited company director running a growing business, this is the difference between steering blind and steering with instruments.</p>
 
-<p>As ICAEW qualified accountants, we see businesses that rely on their bank balance as their only financial metric. That is dangerous. A bank balance can look healthy while you are carrying unpaid creditors, accruing VAT liabilities, or burning through working capital on slow-paying customers. Management accounts strip that illusion away.</p>
+<p>We see businesses that rely on their bank balance as their only financial metric. That is dangerous. A bank balance can look healthy while you are carrying unpaid creditors, accruing VAT liabilities, or burning through working capital on slow-paying customers. Management accounts strip that illusion away.</p>
 
 <h2>What You Get in a Management Accounting Package</h2>
 
@@ -59,7 +59,7 @@ faqs:
 
 <p>The balance sheet shows what you own, what you owe, and what equity the business holds. For a limited company, this includes your director's loan account position, which is critical for tax planning and compliance.</p>
 
-<p>If your director's loan account exceeds £10,000, a benefit in kind arises. If it is not repaid within 9 months and 1 day of your year-end, S455 tax at 33.75% applies. A management accounting service tracks this monthly so there are no surprises at year-end.</p>
+<p>If your director's loan account exceeds £10,000, a benefit in kind arises. If it is not repaid within 9 months and 1 day of your year-end, S455 tax applies: 35.75% for loans made in 2026/27 (on or after 6 April 2026), or 33.75% for loans made in 2025/26. A management accounting service tracks this monthly so there are no surprises at year-end.</p>
 
 <h3>Cash Flow Forecast</h3>
 
@@ -135,15 +135,15 @@ faqs:
 
 <p>Do you attend quarterly review meetings? Some accountants include a monthly or quarterly video call to walk through the reports and discuss strategy. That is where the real value sits.</p>
 
-<p>As ICAEW qualified accountants, we recommend checking that your provider holds a recognised qualification and professional indemnity insurance. Management accounts are advisory work. You want someone who can stand behind their advice.</p>
+<p>We recommend checking that your provider holds a recognised qualification and professional indemnity insurance. Management accounts are advisory work. You want someone who can stand behind their advice.</p>
 
 <h2>Management Accounting and Tax Planning</h2>
 
 <p>Management accounts are not just for operational decisions. They feed directly into tax planning.</p>
 
-<p>If your management accounts show that your limited company's taxable profits will exceed £250,000, you lose the small profits rate of 19% and pay 25% on all profits above the marginal relief band. You might want to accelerate capital expenditure, make pension contributions, or defer revenue to bring profits below the threshold.</p>
+<p>If your management accounts show that your limited company's taxable profits will exceed £250,000, you lose any marginal relief and pay corporation tax at the full 25% rate on your entire profit. You might want to accelerate capital expenditure, make pension contributions, or defer revenue to bring profits below the threshold.</p>
 
-<p>If your management accounts show that your personal income from salary and dividends will push you into the higher rate tax band, you can adjust your dividend strategy. The dividend allowance is only £500 for 2025/26. Higher rate taxpayers pay 33.75% on dividends above that allowance. Knowing your position mid-year lets you plan.</p>
+<p>If your management accounts show that your personal income from salary and dividends will push you into the higher rate tax band, you can adjust your dividend strategy. The dividend allowance is only £500 for 2025/26. Higher rate taxpayers pay 35.75% on dividends above that allowance (from 6 April 2026; 33.75% in 2025/26). Knowing your position mid-year lets you plan.</p>
 
 <p>Without management accounts, you are guessing until the year-end. By then, it is often too late to act.</p>
 
@@ -171,7 +171,7 @@ faqs:
 
 <p>For UK businesses operating across sectors, from ecommerce in Digbeth to consultancies in MediaCity, management accounts are the single most impactful investment you can make in your financial infrastructure. They turn accounting from a backward-looking compliance cost into a forward-looking strategic asset.</p>
 
-<p>If you are ready to explore what a management accounting service could look like for your business, speak to your accountant or contact our ICAEW qualified team. We work with limited companies, contractors, sole traders, and partnerships across the UK.</p>
+<p>If you are ready to explore what a management accounting service could look like for your business, speak to your accountant or contact our specialist team. We work with limited companies, contractors, sole traders, and partnerships across the UK.</p>
 
 <h2>Related articles in Bookkeeping and Compliance</h2>
 <ul>

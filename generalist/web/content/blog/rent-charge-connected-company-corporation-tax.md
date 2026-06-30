@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Rent charge connected company corporation tax: rules"
 metaDescription: "Can a rent charge to a connected company reduce your corporation tax? HMRC's transfer pricing rules, market value tests, and what you must document."
-altText: "Two business owners discussing a rent charge arrangement with their ICAEW qualified accountant in a modern UK office"
+altText: "Two business owners discussing a rent charge arrangement with their accountant in a modern UK office"
 image: "/blog/rent-charge-connected-company-corporation-tax.jpg"
 imageCredit:
   photographer: "RDNE Stock project"
@@ -139,7 +139,7 @@ faqs:
 
 <p>If you are considering a rent charge between connected companies, speak to an accountant before you set it up. The rules are technical. Getting the market rent wrong, failing to document the arrangement, or structuring it without commercial purpose can cost you more in tax than you save.</p>
 
-<p>As ICAEW qualified accountants, we regularly advise clients on these arrangements. We can help you determine the market rent, prepare the documentation, and file the corporation tax returns correctly.</p>
+<p>We regularly advise clients on these arrangements. We can help you determine the market rent, prepare the documentation, and file the corporation tax returns correctly.</p>
 
 <p>If your trading company already pays rent to a connected company and you have not reviewed the arrangement recently, now is the time. Market rents change. HMRC's focus on transfer pricing is increasing. A review now can save you a tax enquiry later.</p>
 

@@ -35,7 +35,7 @@ faqs:
 
 <p>A specialist accountant for builders understands these specific rules. They know how to structure your payroll to minimise employer National Insurance. They handle CIS returns and monthly deductions without you having to chase HMRC for refunds. And they spot VAT pitfalls that could cost you thousands if you get them wrong.</p>
 
-<p>We are Holloway Davies, an ICAEW qualified accountancy firm. We work with builders, contractors, and construction businesses across the UK. This article explains what a specialist accountant for builders actually does, what to look for when choosing one, and how the right advice saves you money.</p>
+<p>We are Holloway Davies, a specialist accountancy firm. We work with builders, contractors, and construction businesses across the UK. This article explains what a specialist accountant for builders actually does, what to look for when choosing one, and how the right advice saves you money.</p>
 
 <h2>What the Construction Industry Scheme (CIS) Means for Your Business</h2>
 
@@ -94,7 +94,7 @@ faqs:
 
 <p>Most builders operate as limited companies. That means you pay corporation tax on your profits at 19% (if profits are under £50,000) or 25% (if over £250,000), with marginal relief in between. Your accountant should structure your affairs to keep you in the lower rate where possible.</p>
 
-<p>Profit extraction is where the real planning happens. As a director of a building company, you typically take a small salary (up to the NI threshold of £12,570) and the rest as dividends. Dividends attract 8.75% tax for basic rate taxpayers, 33.75% for higher rate, and 39.35% for additional rate. The annual dividend allowance is £500.</p>
+<p>Profit extraction is where the real planning happens. As a director of a building company, you typically take a small salary (up to the NI threshold of £12,570) and the rest as dividends. Dividends attract 10.75% tax for basic rate taxpayers, 35.75% for higher rate, and 39.35% for additional rate (rates from 6 April 2026 per FA 2026 s.4; 8.75%/33.75% applied up to 2025/26). The annual dividend allowance is £500.</p>
 
 <p>But there are specific issues for builders. If you own the vans, tools, or plant personally and use them in the business, you should charge the company for their use. That reduces the company profit and therefore the corporation tax bill. You can also claim capital allowances on new vans, diggers, and other equipment under the Annual Investment Allowance (AIA) of up to £1,000,000 per year.</p>
 
@@ -102,7 +102,7 @@ faqs:
 <ul>
 <li>Calculate the most tax-efficient salary and dividend mix for you and any family members who work in the business.</li>
 <li>Claim capital allowances on all qualifying plant and machinery, including vans, tools, scaffolding, and site cabins.</li>
-<li>Review your director's loan account regularly. If you take more out of the company than you put in, you could trigger a tax charge of 33.75% under S455 if the loan is not repaid within 9 months of the year end.</li>
+<li>Review your director's loan account regularly. If you take more out of the company than you put in, you could trigger a tax charge of 35.75% under S455 for loans made on or after 6 April 2026 (33.75% for loans made in 2025/26) if the loan is not repaid within 9 months of the year end.</li>
 <li>Help you structure property purchases through the company or personally, depending on which is more tax efficient for your long term plans.</li>
 </ul>
 
@@ -130,7 +130,7 @@ faqs:
 
 <p>Third, ask about employment status. They should be able to explain the difference between employed, self-employed, and CIS subcontractor status and the risks of getting it wrong. If they downplay the risk, walk away. HMRC is actively auditing construction businesses on this issue.</p>
 
-<p>Fourth, check they are ICAEW, ACCA, or AAT qualified. That gives you professional indemnity insurance and a complaints process if something goes wrong. At Holloway Davies, we are ICAEW qualified and we specialise in construction businesses.</p>
+<p>Fourth, check they are ICAEW, ACCA, or AAT qualified. That gives you professional indemnity insurance and a complaints process if something goes wrong. At Holloway Davies, we specialise in construction businesses and work to the same high professional standards.</p>
 
 <p>Finally, ask about software. A modern accountant for builders uses cloud software like Xero, QuickBooks, or FreeAgent. They should offer to set up your bookkeeping and connect it to their system so they can see your numbers in real time. If they still use paper spreadsheets or desktop Sage 50, you will struggle with MTD.</p>
 
@@ -161,6 +161,6 @@ faqs:
 
 <p>If you run a building, roofing, or construction business in the UK, you need an accountant who understands CIS, construction VAT, and the specific payroll rules for site workers. A generalist accountant might get the basics right, but they will miss the planning opportunities that save you real money.</p>
 
-<p>At Holloway Davies, we are ICAEW qualified and we work with builders across the UK. We handle CIS returns, VAT planning, payroll, and corporation tax for construction businesses of every shape and size. If you want to stop worrying about HMRC and focus on your builds, <a href="/contact">get in touch</a>. We will talk through your situation and explain exactly how we can help.</p>
+<p>At Holloway Davies, we are specialist accountants and we work with builders across the UK. We handle CIS returns, VAT planning, payroll, and corporation tax for construction businesses of every shape and size. If you want to stop worrying about HMRC and focus on your builds, <a href="/contact">get in touch</a>. We will talk through your situation and explain exactly how we can help.</p>
 
 <p>You can also <a href="/services">see our full range of services</a> or <a href="/about">read more about our team</a>.</p>

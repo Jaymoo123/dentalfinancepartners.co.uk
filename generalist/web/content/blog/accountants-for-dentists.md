@@ -110,7 +110,7 @@ imageCredit:
 <li><strong>MTD readiness.</strong> They should have already moved their dental clients to compatible software.</li>
 </ul>
 
-<p>As ICAEW qualified accountants, our team at Holloway Davies works with dental practices across the UK. We understand the sector's specific tax rules and business challenges. You can read more about our full range of services on our <a href="/services">services page</a> or get in touch through our <a href="/contact">contact page</a> to discuss your practice.</p>
+<p>Our team at Holloway Davies works with dental practices across the UK. We understand the sector's specific tax rules and business challenges. You can read more about our full range of services on our <a href="/services">services page</a> or get in touch through our <a href="/contact">contact page</a> to discuss your practice.</p>
 
 <p>For a broader overview of how we approach business tax, our <a href="/fundamentals">fundamentals page</a> covers the core principles that apply across sectors, including the dental-specific rules we have discussed here.</p>
 

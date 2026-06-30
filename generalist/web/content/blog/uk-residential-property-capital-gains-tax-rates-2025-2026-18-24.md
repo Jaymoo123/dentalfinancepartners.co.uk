@@ -25,7 +25,7 @@ faqs: []
 
 <p>This is a significant change from the old rates of 10% and 20% for non-residential assets and 18% and 28% for residential property before 30 October 2024. The government reduced the higher rate from 28% to 24% and kept the basic rate at 18%. If you are selling a buy to let, a second home, or inherited property, you need to know exactly how these rates apply to your situation.</p>
 
-<p>As ICAEW qualified accountants, we work with property investors, landlords, and business owners across the UK who are selling residential property. This guide covers the rates, how to calculate your gain, what reliefs are available, and the strict 60 day reporting deadline for UK residential property sales.</p>
+<p>We work with property investors, landlords, and business owners across the UK who are selling residential property. This guide covers the rates, how to calculate your gain, what reliefs are available, and the strict 60 day reporting deadline for UK residential property sales.</p>
 
 <h2>What Are the Current CGT Rates for UK Residential Property?</h2>
 
@@ -40,7 +40,7 @@ faqs: []
 
 <p>Before 30 October 2024, the residential property rates were 18% (basic rate) and 28% (higher rate). The 28% rate was cut to 24% in the Autumn Budget 2024. The 18% basic rate was unchanged.</p>
 
-<p>For non-residential assets (shares, business assets, commercial property), the rates remain at 10% and 20% for most disposals. Business Asset Disposal Relief (BADR) has its own rates: 14% for disposals from 6 April 2025, rising to 18% from 6 April 2026.</p>
+<p>For non-residential assets (shares, business assets, commercial property), the rates are also 18% and 24% from 30 October 2024. The old 10% and 20% rates no longer apply for most disposals. The only lower rate available is for qualifying Business Asset Disposal Relief (BADR) disposals: 14% for disposals from 6 April 2025, rising to 18% from 6 April 2026.</p>
 
 <h2>Who Pays CGT on Residential Property?</h2>
 
@@ -143,7 +143,7 @@ faqs: []
 
 <ul>
 <li><strong>Spouse or civil partner transfer:</strong> Transfers between spouses or civil partners are no gain, no loss. You can transfer ownership to use both annual exempt amounts on a later sale.</li>
-<li><strong>Gift hold over relief:</strong> If you gift a residential property to a trust or to an individual (not your spouse), you can claim hold over relief to defer the gain. The recipient inherits your cost base. This is common for Inheritance Tax planning but needs careful advice.</li>
+<li><strong>Gift hold over relief:</strong> If you gift a residential investment property into a discretionary trust, hold-over relief under s.260 TCGA 1992 may be available to defer the gain, because the gift is immediately chargeable to Inheritance Tax. Hold-over under s.165 does not apply to investment residential property (it covers qualifying business assets only). Outright gifts to individuals are potentially exempt transfers for IHT and do not qualify for hold-over, so CGT is triggered at the point of the gift in those cases. Take specialist advice before planning around this relief.</li>
 <li><strong>Losses:</strong> If you sell another property at a loss in the same tax year, you can offset that loss against your gain. You can also carry forward unused losses from previous years.</li>
 </ul>
 

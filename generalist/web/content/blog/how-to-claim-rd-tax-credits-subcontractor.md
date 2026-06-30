@@ -20,7 +20,7 @@ summary: "Subcontracted R&D work qualifies for tax credits, but HMRC applies str
 schema: ""
 faqs:
   - question: "Can I claim R&D tax credits on subcontractor costs if the subcontractor is overseas?"
-    answer: "Yes, but the rules are more restrictive. For unconnected overseas subcontractors, the 65% cap still applies. For connected overseas subcontractors, you can claim 100% of their actual qualifying costs, but HMRC will scrutinise the arm's length pricing and the technical validity of the work. You need robust evidence that the R&D activity took place and that the costs are genuine."
+    answer: "Under the merged R&D scheme (accounting periods beginning on or after 1 April 2024), overseas subcontractor and contractor R&D costs are generally excluded from qualifying expenditure. They qualify only in narrow circumstances: where the conditions necessary for the R&D work do not exist in the UK and it would be wholly unreasonable to replicate them here. If that limited exception applies, the normal cost rules then apply: 65% of the relevant payment for unconnected subcontractors, or the actual qualifying costs for connected subcontractors. HMRC actively scrutinises claims that include overseas costs, and robust evidence that the UK exemption is met is essential."
   - question: "What if my subcontractor also claims R&D tax credits on the same work?"
     answer: "That is not permitted. HMRC prohibits double counting. If your subcontractor claims R&D relief on work they performed for you, your claim will be rejected. You should include a clause in your subcontractor agreement requiring them to confirm they are not claiming R&D relief on the work they do for you. If they are connected, the restriction is automatic."
   - question: "Do I need a separate R&D report for subcontractor costs?"
@@ -114,7 +114,7 @@ faqs:
 <li><strong>Submit the claim</strong> with your CT600 within the normal filing deadline (12 months after the end of the accounting period for the merged scheme).</li>
 </ol>
 
-<p>As ICAEW qualified accountants, we strongly recommend using specialist R&D software or working with an adviser who understands the subcontractor rules. HMRC has increased scrutiny of R&D claims, and subcontractor costs are a common trigger for enquiries.</p>
+<p>We strongly recommend using specialist R&D software or working with an adviser who understands the subcontractor rules. HMRC has increased scrutiny of R&D claims, and subcontractor costs are a common trigger for enquiries.</p>
 
 <h2>Common Mistakes with Subcontracted R&D Claims</h2>
 

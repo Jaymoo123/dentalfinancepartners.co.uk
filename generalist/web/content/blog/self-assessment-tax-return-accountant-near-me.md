@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Self Assessment Tax Return Accountant Near Me: UK Guide"
-metaDescription: "Need a self assessment tax return accountant near me? We explain what to look for, typical costs, and how to avoid HMRC penalties. ICAEW qualified."
+metaDescription: "Need a self assessment tax return accountant near me? We explain what to look for, typical costs, and how to avoid HMRC penalties. Practical guidance from specialist accountants."
 altText: "Professional accountant reviewing self assessment tax return documents in a UK office"
 image: "/blog/self-assessment-tax-return-accountant-near-me.jpg"
 imageCredit:
@@ -16,7 +16,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/gray-calculator-and-black-magnifying-glass-on-brown-wooden-surface-7821685/"
   source: "Pexels"
 h1: "Where to Find a Self Assessment Tax Return Accountant Near Me"
-summary: "Searching for a self assessment tax return accountant near me? This guide covers what you should look for, typical fees, deadlines, and how to avoid common filing mistakes. Written for UK business owners by ICAEW qualified accountants."
+summary: "Searching for a self assessment tax return accountant near me? This guide covers what you should look for, typical fees, deadlines, and how to avoid common filing mistakes. Written for UK business owners by our specialist accountants."
 schema: ""
 faqs:
   - question: "How much does a self assessment tax return accountant cost in the UK?"
@@ -41,7 +41,7 @@ faqs:
 
 <p>For a sole trader or freelancer, that means checking you have claimed the correct capital allowances, the trading allowance if applicable, allowable expenses specific to your trade, and that your profit calculation is on the right basis (cash or accrual). For a limited company director who also has self employment income, it means coordinating the SA100 (self assessment return) with the company's CT600 (corporation tax return) to avoid double counting or missed deductions.</p>
 
-<p>For landlords, it means getting the mortgage interest restriction right, claiming replacement domestic items relief correctly, and separating furnished holiday lettings from standard lets. Each of these areas has traps that cost real money if you get them wrong.</p>
+<p>For landlords, it means getting the mortgage interest restriction right, claiming replacement domestic items relief correctly, and understanding that the furnished holiday lettings regime was abolished from 6 April 2025, so all UK lettings now fall under standard residential property income rules. Each of these areas has traps that cost real money if you get them wrong.</p>
 
 <p>An accountant also handles the administrative side: registering you for self assessment if you are new, filing the SA100 and supplementary pages (SA103 for self employment, SA105 for property), and calculating your payments on account. They will tell you exactly what to pay and when, not leave you to work it out from HMRC's calculation.</p>
 
@@ -62,7 +62,7 @@ faqs:
 <p>Not all accountants are the same. Here is what to check before you appoint one.</p>
 
 <h3>Qualification</h3>
-<p>Look for a recognised qualification: ICAEW, ACCA, AAT, or CIMA. Our team are <a href="/about">ICAEW qualified accountants</a>, which means we are regulated by the Institute of Chartered Accountants in England and Wales. That gives you protection through their complaints and disciplinary processes. An unqualified preparer might be cheaper, but you have no recourse if they make a mistake that costs you in penalties or interest.</p>
+<p>Look for a recognised qualification: ICAEW, ACCA, AAT, or CIMA. Our team at <a href="/about">Holloway Davies</a> work to high professional standards and carry professional indemnity insurance. An unqualified preparer might be cheaper, but you have no recourse if they make a mistake that costs you in penalties or interest.</p>
 
 <h3>Experience with Your Type of Work</h3>
 <p>Ask whether they regularly handle returns for your specific situation. A contractor inside IR35 has very different filing needs to a freelance graphic designer or a landlord with five properties. If you are a limited company director taking a mix of salary and dividends, the accountant needs to understand the interaction between your company's CT600 and your personal SA100. If you have overseas income or capital gains, that adds another layer.</p>
@@ -94,7 +94,7 @@ faqs:
 
 <p><strong>Missing the deadline.</strong> The 31 January deadline is fixed. File even one day late and the penalty is £100. After three months, it rises to £10 per day up to £900. After six months, it is £300 or 5% of the tax due, whichever is higher. After twelve months, another 5% or £300. These penalties add up fast. If you cannot file on time, file a return with estimated figures. That stops the late filing penalty, though you will pay interest on any underpayment.</p>
 
-<p><strong>Forgetting payments on account.</strong> If your tax bill is over £1,000 (or £500 if you pay through PAYE), HMRC expects you to pay half of the following year's estimated bill on 31 January and the other half on 31 July. Many first-time filers are caught out by this. Your accountant will calculate this for you and tell you the exact amounts.</p>
+<p><strong>Forgetting payments on account.</strong> If your tax bill is over £1,000 and less than 80% of your prior year tax was collected at source through PAYE, HMRC expects you to pay half of the following year's estimated bill on 31 January and the other half on 31 July. Many first-time filers are caught out by this. Your accountant will calculate this for you and tell you the exact amounts.</p>
 
 <p><strong>Claiming the wrong expenses.</strong> You can claim expenses that are "wholly and exclusively" for your business. That does not mean everything you buy. A new laptop used 60% for business and 40% for personal use means you claim 60% of the cost. A £50 client lunch is allowable. A £200 dinner with friends is not. HMRC looks closely at expense claims, especially for sole traders and contractors.</p>
 
@@ -138,7 +138,7 @@ faqs:
 
 <p>They will then tell you what you owe and when. If you need to make payments on account, they will explain how those work and when they are due. If you cannot pay the full amount on time, they can advise on HMRC's Time to Pay arrangements, which allow you to spread the bill over up to 12 months.</p>
 
-<p>After filing, keep your records for at least 22 months after the end of the tax year. HMRC can open an enquiry into your return up to 12 months after the filing deadline, and they may ask to see your supporting documents.</p>
+<p>After filing, keep your records for at least 5 years after the 31 January filing deadline if you are self-employed or in a partnership (22 months applies only to non-trading individuals such as employees with no business income). HMRC can open an enquiry into your return up to 12 months after the filing deadline, and they may ask to see your supporting documents.</p>
 
 <h2>What About Making Tax Digital for Self Assessment?</h2>
 

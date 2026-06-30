@@ -35,7 +35,7 @@ faqs:
 
 <h2>What Are the CGT Rates for Residential Property in 2026?</h2>
 
-<p>Two rates apply to gains on residential property. They are higher than the standard CGT rates on other assets (10% and 20%) because the government treats property gains differently.</p>
+<p>Two rates apply to gains on residential property. From 30 October 2024, these rates (18% and 24%) apply to disposals of all chargeable assets, including shares and commercial property as well as residential property. Residential property no longer carries higher rates than other assets.</p>
 
 <ul>
 <li><strong>18%</strong> - applies where your total taxable income and gains, after deducting the annual exempt amount, fall within the basic rate band (£50,270 for 2025/26).</li>
@@ -108,7 +108,7 @@ faqs:
 <p>If you give the property to someone (not a spouse or civil partner), you can claim gift hold-over relief. The gain is deferred until the recipient sells it. This is useful if you are giving a property to a child. The relief must be claimed jointly within the time limit.</p>
 
 <h3>Business Asset Disposal Relief (BADR)</h3>
-<p>BADR does not apply to residential property unless it is used as a furnished holiday let (FHL) that meets the qualifying conditions. The property must be let commercially, available for letting for at least 210 days, and actually let for at least 105 days in the year. If it qualifies, the gain is taxed at 14% for 2025/26 (rising to 18% from 6 April 2026). The lifetime limit is £1 million. This is a specialist area. Speak to an ICAEW qualified accountant before relying on it.</p>
+<p>Business Asset Disposal Relief does not apply to gains on residential property. The furnished holiday let regime, which previously allowed some property gains to qualify for BADR, was abolished from 6 April 2025. Properties formerly let as FHLs are now taxed as ordinary buy-to-let property.</p>
 
 <h2>What Happens If You Inherit a Property and Sell It?</h2>
 
@@ -160,10 +160,9 @@ faqs:
 <li>The property was used partly for business (e.g. a home office or a rental flat above a shop).</li>
 <li>You are selling to a connected person (a family member or a company you control).</li>
 <li>The gain is large enough to push you into the higher rate band for the first time.</li>
-<li>You are considering using BADR for a furnished holiday let.</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we handle property CGT calculations regularly. The 60-day deadline means there is no room for delay. If you are selling, contact us before exchange, not after.</p>
+<p>We handle property CGT calculations regularly. The 60-day deadline means there is no room for delay. If you are selling, contact us before exchange, not after.</p>
 
 <p>For more on related topics, see our <a href="/blog/exit-and-capital-gains">exit and capital gains</a> articles or our <a href="/calculators">CGT calculators</a> for a quick estimate.</p>
 

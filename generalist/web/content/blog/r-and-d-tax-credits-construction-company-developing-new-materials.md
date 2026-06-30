@@ -35,7 +35,7 @@ faqs:
 
 <p>HMRC's R&D definition is broader than most business owners realise. It covers projects that seek to achieve an advance in science or technology, or resolve a scientific or technological uncertainty. That advance does not have to be world-first. It just has to be new to your field of construction and not readily deducible by a competent professional in that field.</p>
 
-<p>As ICAEW qualified accountants, we regularly see construction firms leave significant tax relief on the table because they assume their work is "just building things". It is not. When you develop a new concrete mix, a novel cladding system, or a waterproofing membrane that behaves differently from anything on the market, you are doing R&D.</p>
+<p>We regularly see construction firms leave significant tax relief on the table because they assume their work is "just building things". It is not. When you develop a new concrete mix, a novel cladding system, or a waterproofing membrane that behaves differently from anything on the market, you are doing R&D.</p>
 
 <h2>What Qualifies as R&D in Construction Materials Development?</h2>
 
@@ -80,16 +80,16 @@ faqs:
 <li>Software licence (thermal modelling): £4,200</li>
 <li>Subcontractor (materials consultancy): £22,000 (65% qualifies: £14,300)</li>
 </ul>
-<p>Total qualifying costs: £96,700. Under the merged scheme, the company could claim a payable tax credit worth up to 15% of that figure if it was loss-making, or reduce its corporation tax bill by 19-25% of the qualifying costs if profitable.</p>
+<p>Total qualifying costs: £96,700. Under the merged RDEC scheme, the company receives a 20% above-the-line expenditure credit of £19,340. After corporation tax on that credit, the net economic benefit is around £14,505 at the 25% main CT rate, or around £15,665 at the 19% small profits rate. That benefit is payable in cash if the company is loss-making, or reduces the CT bill if profitable.</p>
 
 <h2>How Much Could Your Construction Company Receive?</h2>
 <p>The amount depends on whether your company is profit-making or loss-making, and whether you qualify as an R&D-intensive loss-making company (spending at least 30% of your total costs on R&D).</p>
 
-<p>For a profitable construction company, the benefit comes as a reduction in your corporation tax liability. If your qualifying R&D costs are £100,000, you can deduct 86% of that (for the merged scheme, the enhancement rate is 86% for most companies) from your taxable profits. That means £86,000 less profit subject to corporation tax. At 19% (small profits rate), that saves you £16,340. At 25% (main rate), it saves £21,500.</p>
+<p>For a profitable construction company under the standard merged RDEC scheme, you receive a 20% above-the-line expenditure credit on your qualifying R&D costs. That credit is recognised as taxable income, then used to offset your CT bill. On £100,000 of qualifying costs, the credit is £20,000. After CT on the credit itself, the net benefit is £16,200 at the 19% small profits rate, or £15,000 at the 25% main rate.</p>
 
-<p>For a loss-making company, you can surrender the loss created by the R&D enhancement and receive a payable tax credit. Under the merged scheme, the credit is 15% of the surrendered loss. If your R&D costs created a £100,000 enhanced loss, you could receive up to £15,000 in cash from HMRC.</p>
+<p>For a loss-making company under the standard merged RDEC scheme, the 20% credit is payable in cash once the CT charge on the credit itself is deducted. On £100,000 of qualifying costs, the 20% credit is £20,000. The net cash receivable is around £16,200 where CT applies at the 19% rate, or £15,000 where CT applies at the 25% rate.</p>
 
-<p>For loss-making R&D-intensive companies (the ERIS scheme), the payable credit rate is higher at 27%. If your construction company spends more than 30% of its total costs on R&D and is loss-making, this is worth exploring.</p>
+<p>For loss-making R&D-intensive companies (the ERIS scheme, for those spending at least 30% of total costs on R&D), a different calculation applies. You first apply an 86% additional deduction to your qualifying costs to arrive at enhanced expenditure, then claim a payable credit of 14.5% on that enhanced total. On £100,000 of qualifying costs, the enhanced expenditure is £186,000, giving a payable credit of around £26,970. That works out to roughly 27p in every £1 of qualifying cost. If your construction company is loss-making and R&D-intensive, this is worth exploring.</p>
 
 <h2>Common Pitfalls for Construction Companies Claiming R&D</h2>
 <p>The most common mistake we see is construction companies not documenting their R&D activity properly. HMRC expects to see a clear narrative of the technical uncertainty you faced, the steps you took to resolve it, and the advance you achieved. A simple invoice for "materials testing" will not suffice.</p>

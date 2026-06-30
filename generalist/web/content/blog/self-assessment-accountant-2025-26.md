@@ -35,7 +35,7 @@ faqs:
 
 <p>A self assessment accountant does not just fill in boxes. They review your entire financial picture. They check you have claimed every allowable expense. They calculate your tax bill before HMRC does. And they make sure you are not overpaying or underpaying.</p>
 
-<p>We are ICAEW qualified accountants at Holloway Davies. We work with sole traders, contractors, company directors, and partnership owners across the UK. Our job is to make your self assessment straightforward and accurate.</p>
+<p>We are experienced accountants at Holloway Davies. We work with sole traders, contractors, company directors, and partnership owners across the UK. Our job is to make your self assessment straightforward and accurate.</p>
 
 <h2>Who Needs to File a Self Assessment Tax Return?</h2>
 
@@ -47,7 +47,7 @@ faqs:
 <li>You are a company director and receive dividends or salary outside PAYE</li>
 <li>You have untaxed income over £2,500 from savings, investments, or property</li>
 <li>You have capital gains on assets you sold and need to report (including the 60-day CGT property return for UK residential property)</li>
-<li>Your income was over £50,000 and you or your partner claimed Child Benefit</li>
+<li>Your income was over £60,000 and you or your partner claimed Child Benefit (the full charge applies at £80,000; both thresholds apply from 2024/25 onwards)</li>
 <li>You have a total income over £100,000</li>
 </ul>
 
@@ -73,7 +73,7 @@ faqs:
 <p>If you are a company director, the way you take money from your company affects your personal tax bill. We review your dividend and salary mix to make sure you are using your personal allowance and basic rate band efficiently. The dividend allowance for 2025/26 is £500. Dividend tax rates are 8.75% (basic), 33.75% (higher), and 39.35% (additional). Getting this wrong can cost you thousands.</p>
 
 <h3>Capital Gains</h3>
-<p>If you sold shares, property (that is not your main home), or a business in the tax year, you may owe capital gains tax. The main rates for 2025/26 are 18% (basic rate) and 24% (higher rate) for non-residential assets. If you sold your business and qualify for Business Asset Disposal Relief (BADR), the rate is 14% for disposals before 6 April 2025, rising to 18% from 6 April 2026. The £1 million lifetime limit still applies.</p>
+<p>If you sold shares, property (that is not your main home), or a business in the tax year, you may owe capital gains tax. The main rates for 2025/26 are 18% (basic rate) and 24% (higher rate) for all chargeable assets, including residential property (the previous 28% residential rate was abolished from 30 October 2024). If you sold your business and qualify for Business Asset Disposal Relief (BADR), the rate was 10% for disposals before 6 April 2025, 14% for disposals made in 2025/26 (6 April 2025 to 5 April 2026), and rises to 18% from 6 April 2026. The £1 million lifetime limit still applies.</p>
 
 <h3>Pension Contributions</h3>
 <p>Pension contributions reduce your taxable income. If you are a higher rate taxpayer, you can claim back 20% or 25% additional relief through your self assessment return. Many people miss this. We do not.</p>
@@ -144,7 +144,7 @@ faqs:
 
 <h2>Why Choose Holloway Davies?</h2>
 
-<p>We are ICAEW qualified accountants. That means we are regulated, insured, and held to professional standards. We do not cut corners. We do not take on work we cannot deliver.</p>
+<p>We are specialist accountants who work to high professional standards. We do not cut corners. We do not take on work we cannot deliver.</p>
 
 <p>We work with business owners across the UK: from a freelance consultant in Shoreditch to a property developer in the Jewellery Quarter in Birmingham to a contractor in MediaCity in Manchester. We understand the specific tax rules that apply to different trades and structures.</p>
 

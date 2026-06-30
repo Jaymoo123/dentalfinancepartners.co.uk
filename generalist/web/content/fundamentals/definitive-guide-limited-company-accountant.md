@@ -6,8 +6,8 @@ date: "2026-05-17"
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Limited Company Accountant UK: The Definitive Guide"
-metaDescription: "How to choose a limited company accountant. We cover costs, services, IR35, MTD, R&D credits, and what to expect from an ICAEW firm."
-altText: "Two limited company directors reviewing financial reports with their ICAEW accountant in a modern Manchester office"
+metaDescription: "How to choose a limited company accountant. We cover costs, services, IR35, MTD, R&D credits, and what to expect from a specialist firm."
+altText: "Two limited company directors reviewing financial reports with their accountant in a modern Manchester office"
 image: "/blog/definitive-guide-limited-company-accountant.jpg"
 imageCredit:
   photographer: "RDNE Stock project"
@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/marker-note-on-craft-paper-near-laptop-7310136/"
   source: "Pexels"
 h1: "The Definitive Guide to Choosing a Limited Company Accountant in the UK"
-summary: "Choosing the right limited company accountant is one of the most important decisions a director makes. This guide covers everything from the statutory obligations your accountant should handle, to how fees work, what to look for in a specialist, and how to spot the difference between a bookkeeper and a chartered firm. Written by an ICAEW-qualified practitioner for UK directors, contractors, and growing businesses."
+summary: "Choosing the right limited company accountant is one of the most important decisions a director makes. This guide covers everything from the statutory obligations your accountant should handle, to how fees work, what to look for in a specialist, and how to spot the difference between a bookkeeper and a chartered firm. Written by an experienced practitioner for UK directors, contractors, and growing businesses."
 schema: ""
 faqs:
   - question: "How much does a limited company accountant cost per month?"
@@ -30,7 +30,7 @@ faqs:
 
 <p>You are a director of a limited company. You have a legal obligation to file accounts, submit tax returns, and maintain proper records. You also have a commercial obligation to pay the right amount of tax, not a penny more, not a penny less. The person who helps you do that is your <strong>limited company accountant</strong>.</p>
 
-<p>This guide is written for UK directors, contractors operating through their own limited company, and small business owners who want to understand exactly what a limited company accountant does, what you should pay, and how to choose one that fits your business. We are an ICAEW-qualified firm. We work with businesses of every shape and size across the UK, from a single director in a Shoreditch co-working space to a 50-person operation in the Jewellery Quarter in Birmingham.</p>
+<p>This guide is written for UK directors, contractors operating through their own limited company, and small business owners who want to understand exactly what a limited company accountant does, what you should pay, and how to choose one that fits your business. We are a specialist accountancy firm. We work with businesses of every shape and size across the UK, from a single director in a Shoreditch co-working space to a 50-person operation in the Jewellery Quarter in Birmingham.</p>
 
 <p>By the end of this guide, you will know the statutory services you need, the optional services that add real value, the warning signs to avoid, and the practical steps to take when appointing a new accountant.</p>
 
@@ -110,7 +110,7 @@ faqs:
 
 <h3>Professional Qualification and Regulation</h3>
 
-<p>Your accountant should be a member of one of the recognised professional bodies: ICAEW, ACCA, AAT, CIMA, or ATT. ICAEW is the gold standard for limited company work. As ICAEW-qualified accountants, we are bound by a code of ethics, carry mandatory PI insurance, and are subject to regular practice reviews.</p>
+<p>Your accountant should be a member of one of the recognised professional bodies: ICAEW, ACCA, AAT, CIMA, or ATT. Membership means they are bound by a code of ethics, carry mandatory PI insurance, and are subject to regular practice reviews.</p>
 
 <p>Check the firm's register entry. Any accountant can call themselves an accountant. Only qualified, regulated professionals can call themselves chartered accountants.</p>
 

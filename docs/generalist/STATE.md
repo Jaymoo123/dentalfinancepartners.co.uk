@@ -2,7 +2,9 @@
 
 > Created 2026-06-12 to consolidate per-site state (this site previously had no STATE.md; earlier history lives in git log and the program docs referenced below). Convention: this file is the single per-site state record; methodology lives in `docs/_engines/`.
 
-**Site:** www.hollowaydavies.co.uk · Vercel project `holloway-davies` · site_key `generalist` · brand: distinct generalist design system (off-white + ink + orange, Geist Sans), james-holloway byline.
+**Site:** www.hollowaydavies.co.uk · Vercel project `holloway-davies` · site_key `generalist` · brand: distinct generalist design system (off-white + ink + orange, Geist Sans), james-holloway byline (credential designation removed 2026-06-29).
+
+> **LATEST (2026-06-30, local / UNDEPLOYED):** active **Property-standard PARITY programme** — full handover + current state in **`docs/generalist/PARITY_PROGRAMME_HANDOVER.md` (read §4c first)**. Done this run: Waves 0-2 + GEO schema/code; site-wide credential strip; **full factual-accuracy remediation COMPLETE** (all 356 unverified/legacy posts audited, 281 surgically corrected + 3 whole-premise fabrications rewritten on-URL, `npm run build` green, `npm test` 33/33). NEXT: Wave 3 GEO keyTakeaways on the 73 audit-clean posts. Owner cost-conscious — confirm scope before large Workflows.
 
 ## Corpus + structure (as of 2026-06-12)
 
@@ -19,7 +21,7 @@
 
 ## Known pending
 
-- Wider FA-2026/AMAP stale-figure sweep across the rest of the corpus (estate-wide deferred workstream; this site has had only the 3 pages above corrected).
+- ~~Wider FA-2026/AMAP stale-figure sweep across the rest of the corpus~~ **SUPERSEDED / DONE 2026-06-30**: full-corpus factual-accuracy remediation completed (all 356 unverified/legacy posts audited, 281 corrected + 3 fabrications rewritten, build green, UNDEPLOYED). See `PARITY_PROGRAMME_HANDOVER.md` §4c + `factual_audit_2026-06-30.md`.
 - Net-new/rewrite content programs: not yet onboarded for this site (see `docs/_engines/ENGINE_MAP_AND_ONBOARDING.md`).
 
 ## Blog audit + rewrite program (2026-06-12)

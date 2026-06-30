@@ -24,14 +24,14 @@ faqs:
   - question: "Can we claim if we used standard equipment and just experimented with settings?"
     answer: "Yes. The equipment is not the deciding factor. What matters is whether the experimentation involved technical uncertainty. If you ran multiple trials with different parameters because you did not know which combination would work, and a competent engineer in your sector could not have predicted the outcome, that qualifies."
   - question: "How far back can we claim for R&D work we already did?"
-    answer: "You can amend corporation tax returns for the last two accounting periods that have been filed. For most companies, that means the current year plus the previous two years. If you have been doing qualifying work for longer, you can still claim for the most recent two years. Act quickly because the deadlines are strict."
+    answer: "You can amend corporation tax returns for the last two accounting periods that have been filed. For most companies, that means the current year plus the previous year. If you have been doing qualifying work for longer, you can still claim for the most recent two years. Act quickly because the deadlines are strict."
   - question: "Do we need formal project documentation to claim?"
     answer: "No. HMRC accepts contemporaneous records like production logs, emails between engineers, quality control reports, and shift notes. The key is that the records exist and show the technical uncertainty and the work done to resolve it. You do not need to create formal project files after the fact."
 ---
 
 <p>If you run a manufacturing business in the UK and your team spends time tweaking production lines, testing new materials, or improving tooling to make things faster or better, you might be sitting on a legitimate R&D tax credit claim. The misconception that R&D credits are only for pharmaceutical labs or software developers is costing manufacturers real money.</p>
 
-<p>As ICAEW-qualified accountants, we see manufacturing clients claim successfully for work that looks like day-to-day problem solving. The key is understanding where routine troubleshooting ends and qualifying R&D begins. This article explains exactly where that line sits for a manufacturing company doing incremental improvement work.</p>
+<p>We see manufacturing clients claim successfully for work that looks like day-to-day problem solving. The key is understanding where routine troubleshooting ends and qualifying R&D begins. This article explains exactly where that line sits for a manufacturing company doing incremental improvement work.</p>
 
 <h2>What Actually Qualifies as R&D in Manufacturing?</h2>
 
@@ -130,9 +130,9 @@ faqs:
 
 <h2>The Cost of Not Claiming</h2>
 
-<p>Consider a manufacturing company with £80,000 of qualifying R&D staff costs and £20,000 of consumables. Under the current rules, that company can claim a payable tax credit or reduce its corporation tax liability significantly. For a profitable company paying 25% corporation tax, the saving is roughly £25,000. For a loss-making intensive company, the payable credit can be even higher.</p>
+<p>Consider a manufacturing company with £80,000 of qualifying R&D staff costs and £20,000 of consumables. Under the current rules, that company can claim a payable tax credit or reduce its corporation tax liability significantly. For a profitable company paying 25% corporation tax, the RDEC credit is £20,000 (20% of qualifying costs), and after the CT charge on that credit at 25%, the net benefit is roughly £15,000. For a loss-making intensive company, the payable credit can be even higher.</p>
 
-<p>If you have been doing this work for three years and not claimed, you have potentially left £75,000 on the table. You can amend previous corporation tax returns going back up to two years from the filing date. For the current year, you include the claim in your return.</p>
+<p>If you have been doing this work for three years and not claimed, you have potentially left £45,000 on the table. You can amend previous corporation tax returns going back up to two years from the end of each accounting period. For the current year, you include the claim in your return.</p>
 
 <h2>Common Misconceptions</h2>
 

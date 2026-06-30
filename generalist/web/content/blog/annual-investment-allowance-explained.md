@@ -20,7 +20,7 @@ summary: "The annual investment allowance (AIA) lets UK businesses deduct the fu
 schema: ""
 faqs:
   - question: "Can I claim the annual investment allowance on a car?"
-    answer: "No. The AIA does not apply to cars. Cars go into the main capital allowance pool (18% per year for most cars) or the special rate pool (6% per year for high-emission cars). Zero-emission new cars qualify for a 100% First Year Allowance instead, which gives similar upfront relief but is a different relief."
+    answer: "No. The AIA does not apply to cars. Cars go into the main capital allowance pool (14% per year from April 2026; 18% up to 31 March/5 April 2026) or the special rate pool (6% per year for high-emission cars). Zero-emission new cars qualify for a 100% First Year Allowance instead, which gives similar upfront relief but is a different relief."
   - question: "What is the annual investment allowance limit for 2025/26?"
     answer: "The AIA limit is £1,000,000 per 12-month accounting period until 31 March 2026. After that date, the limit is scheduled to revert to £200,000, though the government has extended the £1m cap before. If your accounting period straddles the change, the cap is calculated on a time-apportioned basis."
   - question: "Does the annual investment allowance apply to second-hand equipment?"
@@ -33,7 +33,7 @@ faqs:
 
 <p>The AIA is one of the most valuable capital allowances available to UK businesses. It lets you deduct the full cost of qualifying plant and machinery from your taxable profits immediately, up to an annual limit of £1,000,000. That limit applies until 31 March 2026, after which it is due to revert to £200,000 (though the government has extended the £1m cap before).</p>
 
-<p>As ICAEW qualified accountants, we see business owners regularly miss out on AIA claims simply because they do not know what qualifies or how the rules work. This guide fixes that.</p>
+<p>We see business owners regularly miss out on AIA claims simply because they do not know what qualifies or how the rules work. This guide fixes that.</p>
 
 <h2>What Is the Annual Investment Allowance?</h2>
 
@@ -61,7 +61,7 @@ faqs:
 <p>There are important exclusions. The AIA does not apply to:</p>
 
 <ul>
-<li>Cars (most cars go into a separate capital allowance pool at 6% or 18% per year)</li>
+<li>Cars (most cars go into a separate capital allowance pool at 6% or 14% per year from April 2026; 18% applied up to 31 March/5 April 2026)</li>
 <li>Land and buildings (though integral features within buildings may qualify)</li>
 <li>Assets bought before you started the business</li>
 <li>Assets gifted to you or inherited</li>
@@ -76,25 +76,25 @@ faqs:
 
 <p>If your business is part of a group or you run multiple businesses under common control, the £1m limit is shared across all of them. You cannot claim £1m per company if the same person controls them all. The associated companies rules apply.</p>
 
-<p>If your total qualifying spend in a period exceeds the AIA limit, the excess goes into the main pool and attracts writing down allowances at 18% per year (reducing balance). For very large capital investments, you may want to consider whether Full Expensing (available to limited companies only) gives a better result.</p>
+<p>If your total qualifying spend in a period exceeds the AIA limit, the excess goes into the main pool and attracts writing down allowances at 14% per year (reducing balance) from April 2026 (FA 2026 s.28 cut the rate from 18%, which applied up to 31 March 2026 for CT and 5 April 2026 for IT). For very large capital investments, you may want to consider whether Full Expensing (available to limited companies only) gives a better result.</p>
 
 <h3>Real Example: Limited Company Buying Equipment</h3>
 
 <p>Shoreditch-based design studio Ltd buys £74,000 of new computer equipment and office furniture in the 2025/26 tax year. The company's taxable profit before capital allowances is £210,000.</p>
 
-<p>The company claims AIA on the full £74,000. Taxable profit reduces to £136,000. Corporation tax at 19% on £136,000 (assuming profits below £50k threshold after allowances) is £25,840. Without the AIA claim, tax on £210,000 would be approximately £49,000 (assuming marginal relief applies). The AIA saves roughly £14,000 in corporation tax.</p>
+<p>The company claims AIA on the full £74,000. Taxable profit reduces to £136,000. Corporation tax on £136,000 falls in the marginal-relief band (£50,000 to £250,000). Applying the marginal relief formula (25% on profits, minus 3/200 of the difference between £250,000 and augmented profits) gives CT of £32,290. Without the AIA, CT on £210,000 would be approximately £51,900. The AIA saves roughly £19,600 in corporation tax.</p>
 
 <h3>Real Example: Sole Trader Buying a Van</h3>
 
 <p>A sole trader electrician in Bristol buys a new van for £38,000 plus £2,000 of tools. Total qualifying spend: £40,000. The business is profitable, with net profits of £85,000 before capital allowances.</p>
 
-<p>The AIA claim reduces taxable profits to £45,000. The sole trader pays basic rate income tax at 20% and Class 4 NIC at 9% (reducing to 2% above the threshold). The combined tax saving is roughly £12,400. Without the AIA, the van would attract writing down allowances at 18% per year, giving only £7,200 relief in year one.</p>
+<p>The AIA claim reduces taxable profits to £45,000. The sole trader pays basic rate income tax at 20% and Class 4 NIC at 6% (2025/26 rate, reducing to 2% above £50,270). The combined tax saving is roughly £10,400. Without the AIA, the van would attract writing down allowances at 14% per year from April 2026 (18% applied in 2025/26; FA 2026 s.28), giving £5,600 in year-one relief at the current rate.</p>
 
 <h2>Annual Investment Allowance and Cars</h2>
 
 <p>Cars are the most common trap. The AIA does not apply to cars at all. You claim capital allowances on cars through the main pool or special rate pool depending on CO2 emissions.</p>
 
-<p>New zero-emission cars (electric vans and cars with zero CO2 emissions) qualify for 100% First Year Allowances. That gives similar upfront relief to the AIA, but it is a different relief. Used electric cars go into the main pool at 18%.</p>
+<p>New zero-emission cars (electric vans and cars with zero CO2 emissions) qualify for 100% First Year Allowances. That gives similar upfront relief to the AIA, but it is a different relief. Used electric cars go into the main pool at 14% from April 2026 (18% up to 31 March/5 April 2026).</p>
 
 <p>If you buy a van, the AIA applies. If you buy a car, it does not. That distinction matters when you are looking at a dual-purpose vehicle like a crew cab pickup. Some double cab pickups with payload over 1 tonne are treated as vans for capital allowances. Others are cars. The classification depends on the specific vehicle's design and HMRC's published list. Check before you buy.</p>
 
@@ -176,4 +176,4 @@ li>Claim through your tax return with proper supporting records</li>
 
 <p>If you are planning a capital investment and want to know the exact tax impact, speak to us. We work with businesses across every sector, from a <a href="/blog/sole-trader-and-self-employment">sole trader in Leeds</a> buying a new van to a <a href="/blog/limited-company-tax">limited company in Glasgow</a> investing £800,000 in manufacturing equipment. We can model the numbers and help you decide the best timing.</p>
 
-<p>For a full breakdown of how capital allowances interact with your specific circumstances, <a href="/contact">contact our team</a>. We are ICAEW qualified accountants with deep experience in capital allowance planning.</p>
+<p>For a full breakdown of how capital allowances interact with your specific circumstances, <a href="/contact">contact our team</a>. We are specialist accountants with deep experience in capital allowance planning.</p>

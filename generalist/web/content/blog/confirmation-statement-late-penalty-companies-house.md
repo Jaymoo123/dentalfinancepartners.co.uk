@@ -142,4 +142,4 @@ faqs:
 
 <p>The honest headline is that a late confirmation statement does not trigger the automatic banded fine people fear. There is no £150 charge waiting the day after the deadline. What you should genuinely worry about is leaving it unfiled, because that is what leads to a financial penalty and, more seriously, to strike off and a dissolved company. The fix is a £50 online filing that takes a quarter of an hour.</p>
 
-<p>If you are behind on your filings, unsure which deadlines apply, or staring at a strike off warning, <a href="/contact">contact our team</a>. We are ICAEW qualified accountants and we handle confirmation statement filings for limited companies across the UK, so your filings are on time, every time.</p>
+<p>If you are behind on your filings, unsure which deadlines apply, or staring at a strike off warning, <a href="/contact">contact our team</a>. We handle confirmation statement filings for limited companies across the UK, so your filings are on time, every time.</p>

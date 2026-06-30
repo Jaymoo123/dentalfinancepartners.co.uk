@@ -72,7 +72,7 @@ faqs:
 <li>Total CGT: £168,000</li>
 </ul>
 
-<p>If she had sold all shares in March 2025, the full £1.2m gain would have been taxed at 10% on the first £1m and 20% on the remaining £200,000 (the old standard higher rate). Total: £100,000 + £40,000 = £140,000. The timing cost her an extra £28,000.</p>
+<p>If she had sold all shares in March 2025, the full £1.2m gain would have been taxed at 10% on the first £1m and 24% on the remaining £200,000 (the standard CGT higher rate from 30 Oct 2024). Total: £100,000 + £48,000 = £148,000. The timing cost her an extra £20,000.</p>
 
 <p>This is not necessarily a bad outcome. She may have had commercial reasons for the staggered sale. But the numbers show why planning across tax years matters.</p>
 
@@ -116,7 +116,7 @@ faqs:
 
 <h2>Common Mistakes When Calculating BADR Across Years</h2>
 
-<p>Three mistakes come up repeatedly in our work as ICAEW qualified accountants.</p>
+<p>Three mistakes come up repeatedly in our work.</p>
 
 <p><strong>Mistake one: forgetting the two-year rule resets for new shares.</strong> If you acquire new shares after the first sale, those new shares have their own two-year clock. You cannot claim BADR on them until two years after acquisition, even if you already held shares in the same company.</p>
 

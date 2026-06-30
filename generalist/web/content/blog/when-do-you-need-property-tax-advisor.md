@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "Property Tax Advisor: When Your UK Business Needs One"
 metaDescription: "Do you need a property tax advisor? We explain when property transactions trigger capital gains, SDLT, VAT, and income tax issues for UK business owners."
-altText: "UK business owner reviewing property tax documents with an ICAEW qualified accountant in a modern Manchester office"
+altText: "UK business owner reviewing property tax documents with a specialist accountant in a modern Manchester office"
 image: "/blog/when-do-you-need-property-tax-advisor.jpg"
 imageCredit:
   photographer: "Nataliya Vaitkevich"
@@ -35,7 +35,7 @@ faqs:
 
 <p>Most UK business owners only need a property tax advisor when they are doing something unusual with property. Selling a buy-to-let. Converting a warehouse into flats. Buying a commercial unit for your own business. Passing a property portfolio to the next generation. Each of these triggers specific tax rules that are easy to get wrong.</p>
 
-<p>As ICAEW qualified accountants, we see clients who have already made property decisions without specialist advice. The cost of fixing those mistakes is almost always higher than the cost of getting the advice upfront.</p>
+<p>We see clients who have already made property decisions without specialist advice. The cost of fixing those mistakes is almost always higher than the cost of getting the advice upfront.</p>
 
 <h2>When You Definitely Need a Property Tax Advisor</h2>
 
@@ -71,7 +71,7 @@ faqs:
 
 <p>A property tax advisor will help you structure development projects correctly from the start. Should you set up a special purpose vehicle (SPV) for each project? Should you hold the land personally and develop through a company? Should you use a joint venture structure? Each option has different tax consequences, and the wrong choice can cost tens of thousands.</p>
 
-<p>There is also the question of VAT on development costs. If you are developing a residential property for sale, you can normally recover the VAT on construction costs under the VAT DIY housebuilders scheme or by registering for VAT and charging it on the sale. But the rules are specific. You cannot recover VAT on materials if you are not registered. A property tax advisor will ensure you are registered at the right time and claiming the right inputs.</p>
+<p>There is also the question of VAT on development costs. If you are developing a residential property for sale, you can normally recover the VAT on construction costs by registering for VAT. Sales of new residential dwellings are zero-rated, which allows you to recover the VAT on your construction costs through your VAT return. If you are converting a non-residential building into dwellings the reduced 5% rate may apply to some services. But the rules are specific. You cannot recover VAT on materials if you are not registered. A property tax advisor will ensure you are registered at the right time and claiming the right inputs.</p>
 
 <h3>Letting Property Through a Company</h3>
 
@@ -99,7 +99,7 @@ faqs:
 
 <p>Not all accountants are property tax advisors. You want someone who deals with property transactions regularly. Ask them how many property transactions they handled in the last 12 months. Ask them which reliefs they have claimed for clients. Ask them whether they have experience with SDLT, VAT on property, and capital gains tax on commercial property.</p>
 
-<p>At Holloway Davies, our ICAEW qualified team handles property tax advice for clients across the UK. We work with limited companies, contractors, sole traders, and partnerships who own or transact property. We do not just file the return. We structure the deal to minimise tax from the start.</p>
+<p>At Holloway Davies, our experienced team handles property tax advice for clients across the UK. We work with limited companies, contractors, sole traders, and partnerships who own or transact property. We do not just file the return. We structure the deal to minimise tax from the start.</p>
 
 <p>If you are buying, selling, developing, or letting property through your business, <a href="/contact">get in touch</a>. We will tell you whether you need specialist advice and what it would cost. If the transaction is straightforward, we will say so.</p>
 

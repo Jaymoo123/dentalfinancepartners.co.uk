@@ -53,7 +53,7 @@ faqs:
 
 <h3>Limited Company vs Sole Trader for Locum Doctors</h3>
 
-<p>Most locum doctors operate through a limited company. The tax advantages are well known: you pay corporation tax at 19% to 25% on retained profits, then dividend tax at 8.75%, 33.75%, or 39.35% depending on your total income. Compare that to a sole trader paying 20%, 40%, or 45% income tax plus Class 2 and Class 4 National Insurance on all profits above the thresholds.</p>
+<p>Most locum doctors operate through a limited company. The tax advantages are well known: you pay corporation tax at 19% to 25% on retained profits, then dividend tax at 10.75%, 35.75%, or 39.35% depending on your total income (2026/27 rates; 8.75% and 33.75% applied in 2025/26). Compare that to a sole trader paying 20%, 40%, or 45% income tax plus Class 4 National Insurance (Class 2 NIC was abolished from April 2024) on all profits above the thresholds.</p>
 
 <p>But a limited company is not automatically the right choice. If your locum income is below £50,000 per year, the additional costs of running a company (accountancy fees, Companies House filings, payroll, corporation tax returns) may outweigh the tax savings. And if you are inside IR35 for most of your contracts, the limited company advantage shrinks further.</p>
 
@@ -79,7 +79,7 @@ faqs:
 <li><strong>Proactive tax planning.</strong> They should not just file your return. They should advise on pension contributions, capital allowances for equipment, and timing of dividends to minimise your tax bill.</li>
 </ul>
 
-<p>Our ICAEW qualified team at Holloway Davies works with locum doctors across the UK. We review IR35 contracts, set up and run limited companies, and handle the full compliance cycle from payroll to corporation tax to self assessment.</p>
+<p>Our experienced team at Holloway Davies works with locum doctors across the UK. We review IR35 contracts, set up and run limited companies, and handle the full compliance cycle from payroll to corporation tax to self assessment.</p>
 
 <h3>How We Work with Locum Doctors</h3>
 
@@ -121,6 +121,6 @@ faqs:
 
 <p>If you are a locum doctor looking for an accountant who understands your work, <a href="/contact">contact us</a>. We will arrange a free initial consultation to discuss your situation. No obligation, no sales pitch. Just a straight conversation about your tax and business structure.</p>
 
-<p>We are based in Manchester but work with locum doctors across the UK. Our team is ICAEW qualified and experienced in NHS and private sector locum contracts.</p>
+<p>We are based in Manchester but work with locum doctors across the UK. Our team is experienced in NHS and private sector locum contracts.</p>
 
 <p>You can also read more about our <a href="/services">accounting services</a> or check our <a href="/blog/limited-company-tax">limited company tax guide</a> for more detail on how we structure director pay and dividends.</p>

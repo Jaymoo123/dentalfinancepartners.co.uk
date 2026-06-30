@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "BADR Accountant: Save 14% CGT on Your Business Sale"
 metaDescription: "Selling your Ltd company? A BADR accountant ensures you qualify for 14% CGT instead of 24%. We explain the rules, traps, and timing before April 2026."
-altText: "Senior ICAEW qualified accountant reviewing BADR paperwork with a business owner in a modern Manchester city centre office"
+altText: "Specialist accountant reviewing BADR paperwork with a business owner in a modern Manchester city centre office"
 image: "/blog/badr-accountant.jpg"
 imageCredit:
   photographer: "Nataliya Vaitkevich"
@@ -20,11 +20,11 @@ summary: "Business Asset Disposal Relief (formerly Entrepreneurs’ Relief) lets
 schema: ""
 faqs:
   - question: "Can I claim BADR if I hold 4.9% of the shares?"
-    answer: "No. BADR requires you to hold at least 5% of the ordinary share capital and voting rights throughout the 12 months before disposal. 4.9% fails the test. Joint shareholdings with a spouse do not aggregate unless the shares are held jointly in both names. If you are close to the threshold, a share restructure before the 12-month qualifying period may solve it."
+    answer: "No. BADR requires you to hold at least 5% of the ordinary share capital and voting rights throughout the 2 years (24 months) before disposal. 4.9% fails the test. Joint shareholdings with a spouse do not aggregate unless the shares are held jointly in both names. If you are close to the threshold, a share restructure before the 2-year qualifying period may solve it."
   - question: "Does holding too much cash in the company stop me qualifying for BADR?"
     answer: "It can. HMRC treats cash reserves that exceed the company's trading needs as non-trading assets. If non-trading assets exceed 20% of total assets, the company may fail the trading test. The solution is to pay dividends, invest in capital assets, or use the cash for trading purposes before the sale. A BADR accountant can calculate the safe level and plan the timing."
   - question: "How long before selling my company should I speak to a BADR accountant?"
-    answer: "Ideally 18 to 24 months before the planned exit. That gives time to restructure shareholdings, manage the trading test, and ensure the 12-month qualifying period is met. If the sale is within 6 months, speak to an accountant immediately. There may still be time to fix issues, but the options are limited."
+    answer: "Ideally 18 to 24 months before the planned exit. That gives time to restructure shareholdings, manage the trading test, and ensure the 2-year qualifying period is met. If the sale is within 6 months, speak to an accountant immediately. There may still be time to fix issues, but the options are limited."
   - question: "What is the BADR rate for disposals after 5 April 2026?"
     answer: "The BADR rate rises to 18% for disposals on or after 6 April 2026. The £1 million lifetime limit stays the same. Selling before 6 April 2026 locks in 14%. Waiting until 2026/27 costs an extra 4% on the gain, which on £1 million is an extra £40,000 in tax."
 ---
@@ -45,7 +45,7 @@ faqs:
 
 <h2>Who Qualifies for BADR on Company Shares?</h2>
 
-<p>To claim BADR on shares in your own trading company, you must meet three conditions throughout the 12 months ending with the date of disposal:</p>
+<p>To claim BADR on shares in your own trading company, you must meet three conditions throughout the 2 years (24 months) ending with the date of disposal:</p>
 
 <ul>
 <li><strong>You hold at least 5% of the ordinary share capital and voting rights.</strong> This is the 5% test. If you hold 4.9%, you fail. Joint shareholdings with a spouse do not aggregate unless the shares are held jointly in both names.</li>
@@ -53,7 +53,7 @@ faqs:
 <li><strong>The company is a trading company</strong> (or the holding company of a trading group). It must not have substantial non-trading activities. HMRC generally treats more than 20% non-trading income or assets as substantial.</li>
 </ul>
 
-<p>You must also be an employee or officer (director) of the company throughout that 12-month period. That means you cannot sell the shares and resign on the same day. You need to hold the shares and the role for the full year.</p>
+<p>You must also be an employee or officer (director) of the company throughout that 2-year qualifying period. That means you cannot sell the shares and resign on the same day. You need to hold the shares and the role for the full 2 years.</p>
 
 <h3>The Trading Company Test</h3>
 
@@ -61,7 +61,7 @@ faqs:
 
 <p>If your company has accumulated £200,000 of retained profits sat in a bank account with no specific trading use, HMRC may argue those are non-trading assets. If they exceed 20% of total assets, the company fails the trading test. The same applies if you own a commercial property personally but rent it to your company. That rental income counts as non-trading for the company.</p>
 
-<p>As ICAEW qualified accountants, we see this trap most often with contractors and consultants who have built up large cash reserves over years of trading. They assume the company is a trading company because it delivers services. But if the balance sheet shows £500,000 cash against £600,000 total assets, that is 83% non-trading assets. The claim fails.</p>
+<p>We see this trap most often with contractors and consultants who have built up large cash reserves over years of trading. They assume the company is a trading company because it delivers services. But if the balance sheet shows £500,000 cash against £600,000 total assets, that is 83% non-trading assets. The claim fails.</p>
 
 <p>There are solutions. Paying dividends before a sale, investing in capital assets, or restructuring the balance sheet can bring the company back inside the test. But these need planning months or years ahead, not the week before exchange.</p>
 
@@ -71,7 +71,7 @@ faqs:
 
 <ul>
 <li><strong>Share structure:</strong> Do you hold 5% of ordinary share capital and voting rights? Are there any alphabet shares that dilute your economic entitlement? Do any shareholder agreements override the default rights?</li>
-<li><strong>Employment status:</strong> Have you been a director or employee for the full 12 months? If you took a break or resigned and rejoined, the clock resets.</li>
+<li><strong>Employment status:</strong> Have you been a director or employee for the full 2 years? If you took a break or resigned and rejoined, the clock resets.</li>
 <li><strong>Trading status:</strong> We run the balance sheet test. What percentage of total assets are non-trading? What percentage of income is non-trading? We look at the last 12 months and the longer trend.</li>
 <li><strong>Group structures:</strong> If you hold shares in a holding company that owns trading subsidiaries, the group must pass the trading test. We check each subsidiary and the group as a whole.</li>
 <li><strong>Associated disposals:</strong> If you are selling your shares and also personally selling an asset used by the business (like a van or equipment), you may claim BADR on that disposal too. But the conditions are different and often missed.</li>
@@ -89,7 +89,7 @@ faqs:
 
 <h2>When to Start Planning with a BADR Accountant</h2>
 
-<p>The answer is: as soon as you know you want to sell. Ideally 18 to 24 months before the planned exit date. That gives time to restructure the balance sheet, pay down non-trading assets, and ensure the 12-month holding period is met.</p>
+<p>The answer is: as soon as you know you want to sell. Ideally 18 to 24 months before the planned exit date. That gives time to restructure the balance sheet, pay down non-trading assets, and ensure the 2-year qualifying period is met.</p>
 
 <p>If you are planning to sell in the next 6 months and have not checked your BADR eligibility, do it now. If you fail the trading test, there may still be time to take dividends or make capital investments that shift the balance. But the window is tight.</p>
 
@@ -115,7 +115,7 @@ faqs:
 
 <p>Look for an accountant who specifically mentions business exit planning, capital gains tax, and BADR on their services page. Ask them how many BADR claims they have handled in the last 12 months. Ask if they prepare a trading status letter as standard. Ask if they review the balance sheet for non-trading assets before the sale.</p>
 
-<p>At Holloway Davies, we are <a href="/about">ICAEW qualified</a> and work with business owners across every sector on exit planning. We review your full position, identify any gaps, and structure the exit to lock in the relief. If you are thinking about selling, <a href="/contact">contact us</a> for a BADR readiness review.</p>
+<p>At Holloway Davies, we work with business owners across every sector on exit planning. We review your full position, identify any gaps, and structure the exit to lock in the relief. If you are thinking about selling, <a href="/contact">contact us</a> for a BADR readiness review.</p>
 
 <h2>BADR Rate Changes for 2025/26 and 2026/27</h2>
 

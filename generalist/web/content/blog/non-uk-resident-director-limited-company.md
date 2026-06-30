@@ -26,14 +26,14 @@ faqs:
   - question: "Will my UK company pay UK corporation tax if I live overseas?"
     answer: "It depends on where the company is centrally managed and controlled. If you make all strategic decisions from overseas, the company may be tax resident in your country of residence, not the UK. If the company is UK tax resident, it pays UK corporation tax on worldwide profits. If it is non-UK resident, it only pays UK tax on UK-source profits. Double tax treaties determine the final position. Get professional advice on this before incorporating."
   - question: "Can I pay myself dividends as a non-UK resident director?"
-    answer: "Yes. Dividends are paid from post-tax profits. As a non-UK resident, you pay UK dividend tax on dividends above the £500 annual allowance (8.75% basic rate, 33.75% higher rate, 39.35% additional rate). But double tax treaties may reduce or eliminate this. You do not pay National Insurance on dividends. You must file a Self Assessment tax return (SA100) to report the dividends if you have any UK tax to pay."
+    answer: "Yes. Dividends are paid from post-tax profits. As a non-UK resident, you pay UK dividend tax on dividends above the £500 annual allowance (10.75% basic rate, 35.75% higher rate, 39.35% additional rate from 6 April 2026, FA 2026 s.4). But double tax treaties may reduce or eliminate this. You do not pay National Insurance on dividends. You must file a Self Assessment tax return (SA100) to report the dividends if you have any UK tax to pay."
 ---
 
 <p>Yes, you can set up a UK limited company as a non-UK resident director living abroad. Companies House does not require directors to be UK residents. There is no rule in the Companies Act 2006 that says you must live in the UK to incorporate a company here.</p>
 
 <p>But the practical reality is more complicated than the legal answer. You can incorporate from overseas, but you will face specific hurdles around banking, tax residence, and ongoing compliance. This article covers exactly what a <strong>non uk resident director limited company</strong> needs to know before incorporating.</p>
 
-<p>We are an ICAEW-qualified firm. We work with non-resident directors who run UK companies from Europe, North America, Asia, and the Middle East. The questions are always the same. Here are the answers.</p>
+<p>We are a specialist firm. We work with non-resident directors who run UK companies from Europe, North America, Asia, and the Middle East. The questions are always the same. Here are the answers.</p>
 
 <h2>Who Can Be a Director of a UK Limited Company?</h2>
 
@@ -107,7 +107,7 @@ faqs:
 
 <p>Corporation tax is due 9 months and 1 day after the year-end. For the 2025/26 tax year, the small profits rate is 19% on profits up to £50,000. The main rate of 25% applies above £250,000. Marginal relief applies between £50,000 and £250,000.</p>
 
-<p>These deadlines apply regardless of where you live. HMRC and Companies House do not care that you are overseas. Late filing penalties apply from day one. A private company filing accounts 6 months late faces a £1,500 penalty. Late confirmation statements cost £150.</p>
+<p>These deadlines apply regardless of where you live. HMRC and Companies House do not care that you are overseas. Late filing penalties apply from day one. A private company filing accounts 6 months late faces a £1,500 penalty. Filing a confirmation statement late carries no automatic financial penalty, but the company risks prosecution or being struck off the register.</p>
 
 <p>You can file everything online. You do not need to be in the UK to file. But you do need a UK-based accountant or a software solution that handles CT600 filings. Most non-resident directors use an accountant for this.</p>
 
@@ -135,7 +135,7 @@ faqs:
 
 <p>If you spend fewer than 16 days in the UK per tax year (or 46 days if you have not been UK resident in the previous 3 years), you are non-UK resident. You do not pay UK income tax on your overseas income. You only pay UK tax on UK-source income, such as dividends from your UK company.</p>
 
-<p>Dividends from a UK company are UK-source income. If you are non-UK resident, you pay UK dividend tax at the usual rates (8.75% basic rate, 33.75% higher rate, 39.35% additional rate) on dividends above the £500 allowance. But double tax treaties may reduce or eliminate this.</p>
+<p>Dividends from a UK company are UK-source income. If you are non-UK resident, you pay UK dividend tax at the usual rates (10.75% basic rate, 35.75% higher rate, 39.35% additional rate from 6 April 2026, FA 2026 s.4) on dividends above the £500 allowance. But double tax treaties may reduce or eliminate this.</p>
 
 <p>If you are non-UK resident and you sell your shares in the UK company, you may be exempt from UK Capital Gains Tax (CGT) on the gain, unless the company holds UK land or property. This is a complex area. The BADR (Business Asset Disposal Relief) rules do not apply if you are non-UK resident at the time of disposal.</p>
 

@@ -6,8 +6,8 @@ date: '2026-05-20'
 dateModified: '2026-06-12'
 generator: sonnet-4.6/track2-rewrite
 author: "James Holloway"
-reviewedBy: "ICAEW Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW)"
+reviewedBy: "Holloway Davies Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-12'
 category: Sole Trader and Self Employment
 metaTitle: 'Sole Trader Capital Allowances: AIA, WDA Rates 2025/26'
@@ -16,7 +16,7 @@ altText: "Sole trader working on a laptop with receipts and a calculator on a de
 image: https://images.pexels.com/photos/2209444/pexels-photo-2209444.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'Capital Allowances for Sole Traders: How to Claim and What Has Changed in 2026'
 summary: 'Sole traders can claim capital allowances on equipment, vehicles, tools and most plant and machinery used in the business. The Annual Investment Allowance gives 100% relief on up to £1,000,000 of qualifying spend per year. From 6 April 2026, Finance Act 2026 s.28 cut the main-rate writing down allowance from 18% to 14%. A new 40% first-year allowance on new, unused main-rate plant and machinery applies from 1 January 2026 under FA 2026 s.29. Cars are excluded from the AIA and the first-year allowances and follow a separate CO2-based regime. Cash basis sole traders can deduct the full cost of qualifying assets as an expense instead.'
-schema: ''
+schema: ""
 sourcesVerifiedAt: '2026-06-12'
 sourceDomains:
   - legislation.gov.uk

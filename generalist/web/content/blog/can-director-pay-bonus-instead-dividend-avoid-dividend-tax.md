@@ -22,7 +22,7 @@ faqs:
   - question: "Is a bonus tax deductible for a limited company?"
     answer: "Yes, a bonus is an allowable expense for corporation tax purposes. The company deducts the bonus and any employer NI from its taxable profits. This reduces corporation tax at 19%, 25% or marginal relief rate depending on profit level. Dividends are not deductible."
   - question: "Do I pay National Insurance on dividends?"
-    answer: "No. Dividends are not subject to National Insurance. This is a key advantage over bonuses, which attract employee NI at 8% or 2% and employer NI at 13.8%. The absence of NI makes dividends attractive for basic rate directors."
+    answer: "No. Dividends are not subject to National Insurance. This is a key advantage over bonuses, which attract employee NI at 8% or 2% and employer NI at 15% (from 6 April 2025). The absence of NI makes dividends attractive for basic rate directors."
   - question: "Can I pay myself a bonus if the company made a loss?"
     answer: "You can pay a bonus even if the company made a loss, but you must have sufficient cash or reserves. The bonus is still deductible against future profits. However, paying a bonus from a loss-making company may raise questions with HMRC about commercial justification. Dividends require retained profits, so you cannot pay a dividend from a loss."
   - question: "What is the most tax efficient way to take money from my limited company in 2025/26?"
@@ -33,7 +33,7 @@ faqs:
 
 <p>Every director of a UK limited company faces the same question when taking money out of the business: should I take a bonus or a dividend? The answer is not always the same. It depends on your profit level, your other income, and how much you need personally.</p>
 
-<p>This article compares the total tax cost of a bonus against a dividend for the 2025/26 tax year. We will use real numbers and show you exactly where each route wins. As ICAEW qualified accountants, we advise directors on this choice every week.</p>
+<p>This article compares the total tax cost of a bonus against a dividend for the 2025/26 tax year. We will use real numbers and show you exactly where each route wins. We advise directors on this choice every week.</p>
 
 <p>The <strong>bonus vs dividend director tax</strong> decision matters because the wrong choice can cost you thousands. Let us walk through the mechanics of each option.</p>
 
@@ -47,10 +47,10 @@ faqs:
 <li>The company deducts the bonus from its taxable profits, saving corporation tax at 19% or 25% depending on profit level.</li>
 <li>The director pays income tax on the bonus at their marginal rate: 20%, 40% or 45%.</li>
 <li>The director pays employee National Insurance at 8% on earnings between £12,570 and £50,270, and 2% above £50,270.</li>
-<li>The company pays employer National Insurance at 13.8% on the bonus amount above the secondary threshold (£9,100 per year).</li>
+<li>The company pays employer National Insurance at 15% on the bonus amount above the secondary threshold (£5,000 per year, from 6 April 2025).</li>
 </ul>
 
-<p>The employer NI adds a real cost. If you pay a £10,000 bonus, the company actually pays £11,380 including employer NI. But that total £11,380 is deductible against corporation tax.</p>
+<p>The employer NI adds a real cost. If you pay a £10,000 bonus, the company actually pays £11,500 including employer NI (15% of £10,000). But that total £11,500 is deductible against corporation tax.</p>
 
 <h3>Bonus Example: Director with £50,000 Profit</h3>
 
@@ -60,15 +60,15 @@ faqs:
 
 <ul>
 <li>Company saves £1,900 in corporation tax (19% of £10,000).</li>
-<li>Company pays £1,380 employer NI (13.8% of £10,000). This is also deductible, saving another £262 corporation tax.</li>
-<li>Net corporation tax saving: £2,162.</li>
+<li>Company pays £1,500 employer NI (15% of £10,000). This is also deductible, saving another £285 corporation tax.</li>
+<li>Net corporation tax saving: £2,185.</li>
 <li>Director pays income tax at 20% if within basic rate band: £2,000.</li>
 <li>Director pays employee NI at 8%: £800.</li>
 <li>Total personal tax: £2,800.</li>
-<li>Net position: company saves £2,162, director pays £2,800. Net cost of the bonus: £638.</li>
+<li>Net position: company saves £2,185, director pays £2,800. Net cost of the bonus: £615.</li>
 </ul>
 
-<p>That £638 is the total extra tax compared to leaving the profit in the company. But compare that to a dividend.</p>
+<p>That £615 is the total extra tax compared to leaving the profit in the company. But compare that to a dividend.</p>
 
 <h2>How a Dividend Works for a Limited Company Director</h2>
 
@@ -97,7 +97,7 @@ faqs:
 <li>Combined tax (corporation tax + dividend tax): £1,900 + £831.25 = £2,731.25.</li>
 </ul>
 
-<p>Compare that to the bonus route. The bonus cost £638 net extra tax. The dividend cost £2,731.25 total tax. The bonus is cheaper here because the company saves corporation tax.</p>
+<p>Compare that to the bonus route. The bonus cost £615 net extra tax. The dividend cost £2,731.25 total tax. The bonus is cheaper here because the company saves corporation tax.</p>
 
 <p>But that is only true when the director is a basic rate taxpayer. The picture changes at higher income levels.</p>
 
@@ -114,10 +114,10 @@ faqs:
 <li>£20,000 bonus pushes director further into higher rate band.</li>
 <li>Income tax at 40%: £8,000.</li>
 <li>Employee NI at 2%: £400.</li>
-<li>Employer NI at 13.8%: £2,760 (deductible, saving £690 corporation tax at 25%).</li>
-<li>Net company cost: £20,000 + £2,760 - £690 = £22,070.</li>
+<li>Employer NI at 15%: £3,000 (deductible, saving £750 corporation tax at 25%).</li>
+<li>Net company cost: £20,000 + £3,000 - £750 = £22,250.</li>
 <li>Director receives: £20,000 - £8,000 - £400 = £11,600.</li>
-<li>Effective tax rate: 47.4%.</li>
+<li>Effective tax rate: 47.9%.</li>
 </ul>
 
 <p><strong>Dividend route:</strong></p>
@@ -133,7 +133,7 @@ faqs:
 <li>Effective tax rate: 49.7% on the original £26,667.</li>
 </ul>
 
-<p>In this case, the bonus is slightly cheaper (47.4% vs 49.7%). But the difference is small. For additional rate taxpayers (45% income tax, 39.35% dividend tax), the dividend often wins because dividend tax rates cap at 39.35% while income tax plus NI can exceed 50%.</p>
+<p>In this case, the bonus is slightly cheaper (47.9% vs 49.7%). But the difference is small. For additional rate taxpayers (45% income tax, 39.35% dividend tax), the dividend often wins because dividend tax rates cap at 39.35% while income tax plus NI can exceed 50%.</p>
 
 <h2>Key Factors That Change the Calculation</h2>
 
@@ -141,7 +141,7 @@ faqs:
 <p>If your company pays 19% (profits under £50,000), the bonus deduction saves less tax than if your company pays 25% (profits over £250,000). The bonus becomes more attractive at higher corporation tax rates because the deduction is worth more.</p>
 
 <h3>Employment Allowance</h3>
-<p>If your company claims the Employment Allowance (up to £10,500), you can offset employer NI against it. This makes bonuses cheaper for the company. Many single-director companies can claim this if total employer NI is under £10,500.</p>
+<p>If your company claims the Employment Allowance (up to £10,500), you can offset employer NI against it. This makes bonuses cheaper for the company. However, the allowance is not available to a single-director company where the director is the only employee paid above the secondary threshold. You need at least one other employee earning above that level to be eligible.</p>
 
 <h3>Pension Contributions</h3>
 <p>Both bonuses and dividends can be paid into a pension. A bonus paid as a pension contribution is deductible and free of NI. A dividend paid into a pension is not deductible. Pensions change the maths entirely.</p>
@@ -163,7 +163,7 @@ faqs:
 <h3>Real Example: Manchester Software Consultancy</h3>
 <p>A director of a 4-employee software consultancy in Manchester turning over £420,000 takes a £12,570 salary and £37,700 in dividends each year (basic rate band). The company pays 25% corporation tax on remaining profits. The director pays 8.75% dividend tax on £37,200 after the £500 allowance. Total personal tax: £3,255. Effective rate: 8.6% on the dividend portion.</p>
 
-<p>If that same director wanted to extract an extra £50,000, a bonus would cost 47.4% effective tax. A dividend would cost 49.7%. The bonus wins, but only just. The director might choose the dividend for simplicity and cash flow timing.</p>
+<p>If that same director wanted to extract an extra £50,000, a bonus would cost 47.9% effective tax. A dividend would cost 49.7%. The bonus wins, but only just. The director might choose the dividend for simplicity and cash flow timing.</p>
 
 <h2>What About IR35?</h2>
 <p>If you are a contractor inside IR35, your deemed employment income means you cannot choose between bonus and dividend. Your company must pay you a deemed salary equal to the deemed direct pay. Dividends are not available inside IR35 because you are treated as an employee for tax purposes.</p>

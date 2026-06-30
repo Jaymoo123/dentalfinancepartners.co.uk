@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "VAT and Making Tax Digital"
 metaTitle: "Accountant for Amazon FBA Sellers UK | VAT, Stock & Tax"
 metaDescription: "Need an accountant for Amazon FBA sellers? We cover UK VAT registration, stock accounting, FBA fee deductions and HMRC compliance. Practical guidance."
-altText: "UK Amazon FBA seller reviewing financial reports with a chartered accountant in a modern office."
+altText: "UK Amazon FBA seller reviewing financial reports with a specialist accountant in a modern office."
 image: "/blog/accountant-for-amazon-fba-sellers-uk.jpg"
 imageCredit:
   photographer: "Leeloo The First"
@@ -35,7 +35,7 @@ faqs:
 
 <p>A general accountant who handles a local cafe and a freelance consultant will not know the specifics of FBA stock accounting, pan-European VAT registration, or the timing of FBA fee deductions. You need an <strong>accountant for Amazon FBA sellers</strong> who understands the platform's specific financial flows.</p>
 
-<p>At Holloway Davies, we are ICAEW qualified accountants who work with Amazon sellers across the UK. This guide covers the key areas an FBA accountant should handle for you.</p>
+<p>At Holloway Davies, we work with Amazon sellers across the UK. This guide covers the key areas an FBA accountant should handle for you.</p>
 
 <h2>VAT Registration and Compliance for Amazon FBA</h2>
 
@@ -81,7 +81,7 @@ faqs:
 
 <p>If you trade as a sole trader, your profits are taxed through self assessment (SA100 and SA103 forms). The deadlines are 31 October (paper) or 31 January (online) for the return, with payments on account due 31 January and 31 July.</p>
 
-<p>Your accountant should also help you plan your director's salary and dividends. The most efficient setup for most FBA company directors is a salary of £12,570 (matching the personal allowance and primary NI threshold) and dividends up to the basic rate band. The dividend allowance is now £500, so anything above that is taxed at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate).</p>
+<p>Your accountant should also help you plan your director's salary and dividends. The most efficient setup for most FBA company directors is a salary of £12,570 (matching the personal allowance and primary NI threshold) and dividends up to the basic rate band. The dividend allowance is £500, so anything above that is taxed at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate) from 6 April 2026 (8.75%/33.75% applied in 2025/26).</p>
 
 <h2>Currency and Exchange Rate Management</h2>
 

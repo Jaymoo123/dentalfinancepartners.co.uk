@@ -6,8 +6,8 @@ date: '2026-05-20'
 dateModified: '2026-06-12'
 generator: sonnet-4.6/track2-rewrite
 author: "James Holloway"
-reviewedBy: "ICAEW Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW)"
+reviewedBy: "Holloway Davies Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-12'
 category: Limited Company Tax
 metaTitle: "UK Sole Trader Tax Bands and Rates for 2025/26"

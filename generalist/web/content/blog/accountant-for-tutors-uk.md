@@ -31,7 +31,7 @@ faqs:
 
 <p>If you are a private tutor working in the UK, your tax situation is different from most other self-employed professionals. You deal with irregular income, specific expense categories, and often a mix of employed and self-employed work. A general accountant might miss the subtleties. That is why more tutors are turning to an <strong>accountant for tutors</strong> who understands the sector inside out.</p>
 
-<p>This article covers the specific tax rules that affect tutors, the common mistakes we see, and how the right accountant saves you money and stress. We are an ICAEW qualified firm based in the UK. We work with tutors across the country, from GCSE maths specialists in Manchester to Oxbridge entrance tutors in London.</p>
+<p>This article covers the specific tax rules that affect tutors, the common mistakes we see, and how the right accountant saves you money and stress. We are an experienced accountancy firm based in the UK. We work with tutors across the country, from GCSE maths specialists in Manchester to Oxbridge entrance tutors in London.</p>
 
 <h2>What Makes Tutoring Tax Different?</h2>
 
@@ -54,7 +54,7 @@ faqs:
 <ul>
 <li>Course materials and textbooks you buy specifically for lessons</li>
 <li>Online platform subscriptions (Zoom Pro, Google Classroom, specialist subject software)</li>
-<li>Travel to students' homes or libraries (at 45p per mile for the first 10,000 business miles)</li>
+<li>Travel to students' homes or libraries (at 55p per mile for the first 10,000 business miles from 6 April 2026; 45p applied up to 2025/26)</li>
 <li>DBS check fees (initial and renewal)</li>
 <li>Professional indemnity insurance and public liability insurance</li>
 <li>Membership of professional bodies like the Tutors' Association</li>
@@ -88,7 +88,7 @@ faqs:
 
 <p>Most tutors start as sole traders. It is simple, low-cost, and you file a self assessment tax return each year. But once your profits exceed roughly £50,000, operating through a limited company can save you thousands in tax.</p>
 
-<p>As a limited company, you pay corporation tax at 19% to 25% on profits, rather than income tax at 20% to 45%. You can also take a mix of salary and dividends to minimise your overall tax bill. The dividend allowance is now £500 per year, but the dividend tax rates (8.75% basic rate, 33.75% higher rate) are still lower than income tax rates for most tutors.</p>
+<p>As a limited company, you pay corporation tax at 19% to 25% on profits, rather than income tax at 20% to 45%. You can also take a mix of salary and dividends to minimise your overall tax bill. The dividend allowance is now £500 per year, but the dividend tax rates (10.75% basic rate, 35.75% higher rate from 6 April 2026; 8.75%/33.75% applied in 2025/26) are still lower than income tax rates for most tutors.</p>
 
 <p>There are downsides. You need to file annual accounts at Companies House, file a corporation tax return (CT600), and manage payroll if you pay yourself a salary. The extra admin costs money and time. But for a tutor earning £70,000 profit per year, the tax saving can be £5,000 to £8,000 annually.</p>
 
@@ -140,7 +140,7 @@ faqs:
 <li>Do they have experience with HMRC enquiries in the education sector?</li>
 </ul>
 
-<p>At Holloway Davies, we are ICAEW qualified accountants with a client base that includes tutors across the UK. We offer a free initial consultation to discuss your specific situation. No obligation, no hard sell. Just practical advice on whether we are the right fit for you.</p>
+<p>At Holloway Davies, we work with tutors across the UK. We offer a free initial consultation to discuss your specific situation. No obligation, no hard sell. Just practical advice on whether we are the right fit for you.</p>
 
 <h2>How We Work With Tutors</h2>
 

@@ -66,13 +66,13 @@ faqs:
 
 <p>The amount written off is added to your gross income for the tax year. You pay income tax on it at your marginal rate. If you are a higher rate taxpayer (40%), and the company writes off £20,000, you owe £8,000 in income tax.</p>
 
-<p>The company must report this on form P11D (benefits in kind) and pay Class 1A National Insurance at 13.8% on the amount written off. For that £20,000 write-off, the company pays an extra £2,760 in employer NI.</p>
+<p>The company must report this on form P11D (benefits in kind) and pay Class 1A National Insurance at 15% on the amount written off (the rate from 6 April 2025; it was 13.8% up to 5 April 2025). For that £20,000 write-off, the company pays an extra £3,000 in employer NI.</p>
 
 <p>There is no £10,000 exemption here. The beneficial loan exemption only applies to the <em>interest</em> on a loan, not the capital write-off. The full written-off amount is taxable.</p>
 
 <h3>2. Section 455 Tax on the Company</h3>
 
-<p>Section 455 of CTA 2010 charges the company at 33.75% on any outstanding director's loan balance that is not repaid within 9 months and 1 day of the company's year-end.</p>
+<p>Section 455 of CTA 2010 charges the company on any outstanding director's loan balance that is not repaid within 9 months and 1 day of the company's year-end. The rate equals the dividend upper rate for the year the loan was made: 35.75% for loans made on or after 6 April 2026 (the current rate), or 33.75% for loans made in 2025/26 or earlier.</p>
 
 <p>If you write the loan off before that 9-month deadline, the S455 charge does not arise. The loan is gone. But if the loan was already outstanding at the year-end and you write it off after the 9-month window, the company has already paid the S455 tax. Writing it off does not automatically refund that tax.</p>
 
@@ -101,7 +101,7 @@ faqs:
 <p>Here is what happens:</p>
 
 <ul>
-<li><strong>Benefit in kind:</strong> You are a higher rate taxpayer (40%). The £30,000 is added to your income. You owe £12,000 in income tax. The company pays Class 1A NI of £4,140 (13.8% of £30,000).</li>
+<li><strong>Benefit in kind:</strong> You are a higher rate taxpayer (40%). The £30,000 is added to your income. You owe £12,000 in income tax. The company pays Class 1A NI of £4,140 (13.8% of £30,000, the rate applicable in January 2025; the rate rose to 15% from 6 April 2025).</li>
 <li><strong>S455:</strong> The company has already paid £10,125. You can claim this back from HMRC by filing a claim. It will take several weeks to process.</li>
 <li><strong>Dividend treatment:</strong> The company cannot deduct the £30,000. It pays corporation tax on its £150,000 profit as normal (£25,500 at 19% for profits under £50k, then marginal relief up to £250k).</li>
 </ul>
@@ -124,7 +124,7 @@ faqs:
 
 <p>If the company has sufficient distributable reserves, you can declare a dividend to clear the loan. The dividend must be properly documented (board minutes, dividend vouchers) and paid within the same accounting period. The dividend is taxed as dividend income in your hands, not as a benefit in kind. Dividend tax rates are lower than income tax rates.</p>
 
-<p>For a higher rate taxpayer, dividend tax is 33.75% (after the £500 allowance). Income tax on the benefit in kind would be 40%. So declaring a dividend saves you 6.25% on the amount. Plus the company avoids Class 1A NI.</p>
+<p>For a higher rate taxpayer, dividend tax is 35.75% from 6 April 2026 (after the £500 allowance; it was 33.75% up to 5 April 2026). Income tax on the benefit in kind would be 40%. So declaring a dividend saves you 4.25% on the amount (40% minus 35.75%). Plus the company avoids Class 1A NI.</p>
 
 <h3>Negotiate a Repayment Plan</h3>
 
@@ -158,7 +158,7 @@ faqs:
 
 <p>If your director's loan account shows a debit balance of more than £10,000 at any point in the year, you should already be talking to your accountant. If the balance is outstanding at your year-end, you need a plan before the 9-month deadline passes.</p>
 
-<p>If you are considering writing off a loan, do not do it without professional advice. The director loan write off tax implications are complex and the costs can be severe. Our <a href="/services">ICAEW qualified team</a> can help you assess your options, calculate the tax charges, and structure a solution that minimises the damage.</p>
+<p>If you are considering writing off a loan, do not do it without professional advice. The director loan write off tax implications are complex and the costs can be severe. Our <a href="/services">experienced team</a> can help you assess your options, calculate the tax charges, and structure a solution that minimises the damage.</p>
 
 <p>If your company has already written off a loan without reporting it properly, contact us to discuss how to correct the position with HMRC. Late disclosure is better than no disclosure.</p>
 

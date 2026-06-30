@@ -8,6 +8,11 @@ author: Holloway Davies Editorial Team
 category: Limited Company Tax
 metaTitle: 'Dormant Company Filing Requirements UK: What to File'
 metaDescription: 'Keep a dormant company compliant: file dormant accounts, a confirmation statement every 12 months, and a corporation tax return where HMRC needs one.'
+keyTakeaways:
+  - "A dormant company must file annual accounts with Companies House within 9 months of its financial year end."
+  - "A confirmation statement must be filed at least once every 12 months, with no exemption for dormant companies."
+  - "Bank interest of any amount makes a company non-dormant for HMRC and requires a full corporation tax return."
+  - "Late dormant accounts attract penalties starting at £150 at one month overdue, rising to £1,500 after six months."
 altText: A UK accountant reviewing a dormant company confirmation statement on a laptop in a modern office.
 image: /blog/dormant-company-filing-requirements-uk.jpg
 imageCredit:
@@ -17,9 +22,7 @@ imageCredit:
   source: Pexels
 h1: What Are The Ongoing Filing Requirements For A Dormant Limited Company In The UK?
 summary: A dormant limited company still has filing obligations. You must file annual accounts to Companies House (often as 'dormant' accounts), a confirmation statement each year, and a corporation tax return to HMRC. Here is exactly what you need to do and when.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"What Are The Ongoing Filing Requirements For A Dormant Limited Company In The UK?","description":"Keep a dormant company compliant: file dormant accounts, a confirmation statement every 12 months, and a corporation tax return where HMRC needs one.","url":"https://www.hollowaydavies.co.uk/blog/limited-company-tax/dormant-company-filing-requirements-uk","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
-  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/limited-company-tax/dormant-company-filing-requirements-uk"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/dormant-company-filing-requirements-uk.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Limited Company Tax","item":"https://www.hollowaydavies.co.uk/blog/limited-company-tax"},{"@type":"ListItem","position":3,"name":"What Are The Ongoing Filing Requirements For A Dormant Limited Company In The UK?","item":"https://www.hollowaydavies.co.uk/blog/limited-company-tax/dormant-company-filing-requirements-uk"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between dormant for Companies House and dormant for HMRC?","acceptedAnswer":{"@type":"Answer","text":"Companies House considers a company dormant if it has no significant transactions. HMRC considers a company dormant only if it has no income or chargeable gains. A company with bank interest may be dormant for Companies House but not for HMRC, requiring a full corporation tax return."}},{"@type":"Question","name":"Can I file dormant accounts myself without an accountant?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can file dormant accounts online through Companies House WebFiling. The process is straightforward if your company has no transactions. You need your company authentication code and a basic balance sheet. If you have
-  any income, even bank interest, you cannot use dormant accounts."}},{"@type":"Question","name":"What happens if I miss the confirmation statement deadline for a dormant company?","acceptedAnswer":{"@type":"Answer","text":"The confirmation statement has no late filing penalty from Companies House, but if you do not file it for 12 months, Companies House will send a reminder. If you still do not file, the company can be struck off. The confirmation statement is separate from your accounts and must be filed every 12 months."}},{"@type":"Question","name":"Can I keep a dormant company indefinitely?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is no time limit on dormancy. You must continue filing dormant accounts and confirmation statements each year. If the company has no assets and no activity, the annual cost is low. If you have assets like cash or property, you need to consider whether keeping the company dormant is the best structure for those assets."}}]}]}'
+schema: ""
 faqs:
 - question: What is the difference between dormant for Companies House and dormant for HMRC?
   answer: Companies House considers a company dormant if it has no significant transactions. HMRC considers a company dormant only if it has no income or chargeable gains. A company with bank interest may be dormant for Companies House but not for HMRC, requiring a full corporation tax return.
@@ -32,14 +35,14 @@ faqs:
 metaTitle_prev: 'Dormant Company Filing Requirements UK: What You Must Do'
 metaDescription_prev: Keep your dormant limited company compliant. We explain the annual accounts, confirmation statement, and corporation tax filings you cannot ignore.
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
 <p>If your limited company has stopped trading or never started, you might think the filing obligations vanish. They do not. A dormant company still has legal and tax filing requirements. Ignoring them leads to late filing penalties, HMRC compliance checks, and potentially the company being struck off.</p>
 
-<p>This article covers exactly what you must file, when, and how to keep your company compliant. We are ICAEW qualified accountants, and we deal with these questions regularly from business owners across Manchester, Bristol, and London.</p>
+<p>This article covers exactly what you must file, when, and how to keep your company compliant. We deal with these questions regularly from business owners across Manchester, Bristol, and London.</p>
 
 <h2>What Is A Dormant Company For Companies House Purposes?</h2>
 
@@ -157,7 +160,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>You can file dormant accounts and confirmation statements yourself. Many business owners do. But if you have any complexity, such as bank interest, previous trading, or a mix of dormant and active periods, an accountant saves you from mistakes.</p>
 
-<p>As ICAEW qualified accountants, we handle dormant company filings for clients across the UK. We can set up reminders, file the returns, and handle any HMRC correspondence. If you want to keep your company dormant but compliant, <a href="/contact">get in touch</a>. We can take the admin off your hands.</p>
+<p>We handle dormant company filings for clients across the UK. We can set up reminders, file the returns, and handle any HMRC correspondence. If you want to keep your company dormant but compliant, <a href="/contact">get in touch</a>. We can take the admin off your hands.</p>
 
 <p>If you are considering incorporating a new company, read our guide on <a href="/incorporation">company incorporation</a> to understand the full obligations from day one.</p>
 

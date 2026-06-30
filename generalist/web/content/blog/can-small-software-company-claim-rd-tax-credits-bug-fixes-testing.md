@@ -108,7 +108,7 @@ faqs:
 
 <p>Then allocate the relevant staff time to the project. Use timesheets or project management tools to track hours. HMRC accepts reasonable estimates if precise records are not available, but the more detail you have, the stronger your claim.</p>
 
-<p>As <a href="/services">ICAEW-qualified accountants</a>, we help software companies prepare R&D claims that meet HMRC's technical and financial requirements. The key is to tell the story of the technological advance, not just list hours spent.</p>
+<p>We help software companies prepare R&D claims that meet HMRC's technical and financial requirements. The key is to tell the story of the technological advance, not just list hours spent.</p>
 
 <h2>Common Mistakes Small Software Companies Make</h2>
 
@@ -126,7 +126,7 @@ faqs:
 
 <p>A small software company in Birmingham's Jewellery Quarter employs four developers. One senior developer spends 40% of their time over six months on an R&D project building a new natural language processing library. During that project, they encounter bugs in the tokenisation logic that require novel solutions. They also run extensive tests to validate the library against edge cases. The qualifying time is 40% of that senior developer's salary plus employer NI and pension contributions.</p>
 
-<p>If the senior developer earns £63,400 per year, the qualifying cost is £25,360 (40% of salary) plus employer NI at 13.8% and pension at 3%. Total qualifying cost: approximately £29,600. At the 19% small profits rate of corporation tax, that reduces the company's tax bill by roughly £5,620. If the company is loss-making, it can surrender the loss for a cash credit worth up to 14.5% of the qualifying cost.</p>
+<p>If the senior developer earns £63,400 per year, the qualifying cost is £25,360 (40% of salary) plus employer NI at 15% (the rate from 6 April 2025) and pension at 3%. Total qualifying cost: approximately £29,900. Under the merged RDEC scheme, the company receives a 20% above-the-line expenditure credit on qualifying costs, giving a credit of approximately £5,980 (which is taxable income). At the 19% small profits rate, the net benefit is approximately £4,840, or roughly 16% of qualifying spend. If the company is loss-making, the 20% expenditure credit can be received as a payable cash credit (net approximately 15% of qualifying spend after the notional tax restriction). The 14.5% payable credit rate applies only under ERIS, the Enhanced R&D Intensive Support scheme, for loss-making companies that spend 30% or more of total costs on R&D.</p>
 
 <p>That is a meaningful saving for a small business. But only if the claim is properly structured and documented.</p>
 

@@ -7,6 +7,7 @@ import { getAllPosts, calculateReadTime } from "@/lib/blog";
 import { BlogListWithSearch } from "@/components/blog/BlogListWithSearch";
 import { niche } from "@/config/niche-loader";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { JsonLd, buildBreadcrumb, buildCollectionPage } from "@/lib/schema";
 
 function slugifyCategory(category: string): string {
   return category
@@ -31,8 +32,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!match) return { title: "Category not found" };
   const url = `${siteConfig.url}/blog/${category}`;
   return {
-    title: `${match} articles | ${siteConfig.name}`,
-    description: `${match} articles for UK business owners. Written by ICAEW-qualified accountants, updated for 2025/26 rates.`,
+    // Brand-less: the root layout template appends " | Holloway Davies" once.
+    title: `${match} articles`,
+    description: `${match} articles for UK business owners, updated for 2026/27 UK tax rates.`,
     alternates: { canonical: url },
     openGraph: {
       title: `${match} articles | ${siteConfig.name}`,
@@ -74,8 +76,20 @@ export default async function BlogCategoryPage({ params }: Props) {
     }))
     .filter((c) => c.count > 0);
 
+  const breadcrumbSchema = buildBreadcrumb([
+    { label: "Home", href: "/" },
+    { label: "Insights", href: "/blog" },
+    { label: matchedName },
+  ]);
+  const collectionSchema = buildCollectionPage({
+    name: `${matchedName} articles`,
+    description: `${enriched.length} ${matchedName.toLowerCase()} articles for UK limited company directors, contractors, sole traders and small businesses.`,
+    path: `/blog/${category}`,
+  });
+
   return (
     <>
+      <JsonLd data={[breadcrumbSchema, collectionSchema]} />
       <section className={`${sectionY} bg-[#fafaf7]`}>
         <div className={siteContainerLg}>
           <Breadcrumb

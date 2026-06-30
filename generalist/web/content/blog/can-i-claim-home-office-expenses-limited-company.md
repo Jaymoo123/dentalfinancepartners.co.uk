@@ -86,7 +86,7 @@ faqs:
 
 <p>Many business owners assume the rules are the same for sole traders and limited companies. They are not.</p>
 
-<p>A sole trader claims home office expenses on their self assessment tax return using the simplified expenses method (£10 to £18 per month depending on hours worked) or actual costs. The claim reduces their income tax bill directly.</p>
+<p>A sole trader claims home office expenses on their self assessment tax return using the simplified expenses method (£10 to £26 per month depending on hours worked: £10 for 25-50 hours, £18 for 51-100 hours, £26 for 101+ hours) or actual costs. The claim reduces their income tax bill directly.</p>
 
 <p>A limited company director claims through the employment route. The company pays the director a reimbursement, which is tax-free for the director and deductible for the company. The company must process this through payroll, even if no tax or NI is due.</p>
 
@@ -154,4 +154,4 @@ faqs:
 
 <p>The claim is modest but legitimate. Do not overclaim. Do not underclaim. Get it right and move on.</p>
 
-<p>If your circumstances are more complex, perhaps because you use part of your home exclusively for business and have high utility costs, speak to your accountant. As ICAEW qualified accountants, we deal with these calculations regularly. <a href="/contact">Contact us</a> if you need specific advice on your home office claim.</p>
+<p>If your circumstances are more complex, perhaps because you use part of your home exclusively for business and have high utility costs, speak to your accountant. We deal with these calculations regularly. <a href="/contact">Contact us</a> if you need specific advice on your home office claim.</p>

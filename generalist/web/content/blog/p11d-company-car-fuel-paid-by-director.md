@@ -71,11 +71,11 @@ faqs:
 
 <p>The P11D must be filed with HMRC by 6 July following the end of the tax year. So for the 2025/26 tax year, the deadline is 6 July 2026. You also need to give the director a copy of their P11D by the same date.</p>
 
-<p>Class 1A National Insurance is due on the car benefit (and the fuel benefit if it applies). The rate for 2025/26 is 13.8%. This is paid to HMRC by 19 July (or 22 July if paying electronically) following the tax year end.</p>
+<p>Class 1A National Insurance is due on the car benefit (and the fuel benefit if it applies). The rate is 15% for 2025/26 and 2026/27 (13.8% applied up to 5 April 2025). This is paid to HMRC by 19 July (or 22 July if paying electronically) following the tax year end.</p>
 
 <h2>What If the Director Uses a Personal Car for Business Instead?</h2>
 
-<p>If the director owns their own car and uses it for business, the company can pay them a mileage allowance. HMRC's approved mileage allowance payment (AMAP) rates are 45p per mile for the first 10,000 business miles and 25p per mile thereafter. These payments are tax-free to the director and deductible for the company.</p>
+<p>If the director owns their own car and uses it for business, the company can pay them a mileage allowance. HMRC's approved mileage allowance payment (AMAP) rates are 55p per mile for the first 10,000 business miles and 25p per mile thereafter (2026/27 rate; 45p applied up to and including 2025/26). These payments are tax-free to the director and deductible for the company.</p>
 
 <p>No P11D is needed for mileage payments that stay within the AMAP rates. If the company pays more than the AMAP rate, the excess is a taxable benefit and must be reported on a P11D.</p>
 
@@ -119,7 +119,7 @@ faqs:
 
 <p>If you are unsure whether your current arrangement triggers the fuel benefit charge, check your records. Who pays the fuel bills? Who reimburses whom? If the answer is not clear, it is worth reviewing with an accountant.</p>
 
-<p>As ICAEW qualified accountants, we see these issues regularly. A quick review of your mileage records and fuel payment method can save significant tax.</p>
+<p>We see these issues regularly. A quick review of your mileage records and fuel payment method can save significant tax.</p>
 
 <h2>Practical Steps to Get It Right</h2>
 

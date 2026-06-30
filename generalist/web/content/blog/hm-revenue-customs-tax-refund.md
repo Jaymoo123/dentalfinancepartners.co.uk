@@ -73,7 +73,7 @@ imageCredit:
 
 <p>You can also adjust your tax payments on account if your income has dropped. This prevents you from overpaying in the first place. Many sole traders and contractors miss this step and end up waiting for a refund later.</p>
 
-<p>As ICAEW qualified accountants, we see this regularly with clients who have had a quiet year. If your 2024/25 income was significantly lower than 2023/24, you can apply to reduce your payments on account for 2025/26. This keeps your cash in your business rather than sitting with HMRC.</p>
+<p>We see this regularly with clients who have had a quiet year. If your 2024/25 income was significantly lower than 2023/24, you can apply to reduce your payments on account for 2025/26. This keeps your cash in your business rather than sitting with HMRC.</p>
 
 <p>For more on Self Assessment, see our <a href="/blog/sole-trader-and-self-employment">sole trader and self employment blog</a>.</p>
 

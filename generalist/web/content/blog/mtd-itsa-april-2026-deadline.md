@@ -22,16 +22,16 @@ faqs:
   - question: "What is the MTD ITSA April 2026 deadline?"
     answer: "The MTD ITSA April 2026 deadline is the date from which self employed individuals, sole traders, and landlords with qualifying income above £50,000 must submit quarterly digital updates to HMRC using MTD compatible software. The first tax year under the mandate is 2026/27, with the first quarterly update due by 5 August 2026."
   - question: "Who is exempt from MTD ITSA?"
-    answer: "Limited companies, partnerships (for now), trusts, and individuals with qualifying income below £30,000 are exempt from the mandate. Those with income between £30,000 and £50,000 are in scope from April 2027. If your qualifying income is below £30,000, you can volunteer for MTD ITSA but are not required to."
+    answer: "Limited companies, partnerships (for now), trusts, and individuals with qualifying income below £30,000 are not required to comply from April 2026. Those with income between £30,000 and £50,000 are in scope from April 2027. From 6 April 2028 the threshold drops to £20,000, bringing in those with qualifying income between £20,000 and £30,000. If your qualifying income is below £20,000, you are not currently mandated but can volunteer."
   - question: "What software do I need for MTD ITSA?"
     answer: "You need MTD compatible software such as Xero, FreeAgent, QuickBooks, Sage, or GoSimpleTax. Spreadsheets can be used if linked to bridging software that converts the data into the required digital format. Paper records are not acceptable. You must keep digital records of all income and expenses throughout"
 ---
 
-<p>Making Tax Digital for Income Tax Self Assessment (MTD ITSA) goes live from April 2026. If you are self employed, a sole trader, or a landlord with qualifying income above £50,000, you must comply from the start. If your income is between £30,000 and £50,000, your deadline is April 2027. Below £30,000, you are not currently mandated, but voluntary entry is open.</p>
+<p>Making Tax Digital for Income Tax Self Assessment (MTD ITSA) goes live from April 2026. If you are self employed, a sole trader, or a landlord with qualifying income above £50,000, you must comply from the start. If your income is between £30,000 and £50,000, your deadline is April 2027. From 6 April 2028 the threshold drops again to £20,000, bringing in those with qualifying income between £20,000 and £30,000. Below £20,000, you are not currently mandated, but voluntary entry is open.</p>
 
 <p>This is not a future possibility. The legislation is passed. HMRC is building the digital infrastructure now. The first quarterly update for the 2026/27 tax year is due by 5 August 2026. If you are in scope, you need to act before April 2026, not after.</p>
 
-<p>This article covers exactly who is in scope, what you need to do, which software works, and how to prepare without last minute panic. As ICAEW qualified accountants, we have been working through the MTD transition with clients across every sector, from freelance consultants in Shoreditch to landlord portfolios in Leeds and tradespeople in Bristol. The principles are the same. The preparation is what varies.</p>
+<p>This article covers exactly who is in scope, what you need to do, which software works, and how to prepare without last minute panic. We have been working through the MTD transition with clients across every sector, from freelance consultants in Shoreditch to landlord portfolios in Leeds and tradespeople in Bristol. The principles are the same. The preparation is what varies.</p>
 
 <h2>What Is MTD ITSA Exactly?</h2>
 
@@ -43,28 +43,28 @@ faqs:
 
 <h2>Who Must Comply with the MTD ITSA April 2026 Deadline?</h2>
 
-<p>The mandatory population from April 2026 is self employed individuals, sole traders, and landlords (including those with UK property income) whose total qualifying income from these sources exceeds £50,000 per year. This is measured on the latest completed tax return. If your 2024/25 return showed £55,000 in self employment profit and £5,000 in property income, your qualifying income is £60,000. You are in scope.</p>
+<p>The mandatory population from April 2026 is self employed individuals, sole traders, and landlords (including those with UK property income) whose total qualifying income from these sources exceeds £50,000 per year. This is measured on the latest completed tax return. If your 2024/25 return showed £55,000 in gross self-employment turnover and £5,000 in gross property income (rents received before expenses), your qualifying income is £60,000. You are in scope.</p>
 
 <p>Qualifying income includes:</p>
 
 <ul>
-<li>Self employment profits (not turnover, but profit after expenses)</li>
-<li>Property income (rental profits from UK or overseas properties)</li>
+<li>Gross self-employment income (turnover before deducting expenses)</li>
+<li>Gross property income (total rents received from UK or overseas properties, before deducting any expenses)</li>
 <li>Any other income reported on the self employment or property pages of the tax return</li>
 </ul>
 
-<p>It does not include employment income, pension income, savings interest, or dividend income. If you are employed full time and earn £80,000 from your job but also have a small rental portfolio generating £15,000 profit, you are not in scope for April 2026 because your qualifying income is below £50,000. You are in scope for April 2027 if your qualifying income is between £30,000 and £50,000.</p>
+<p>It does not include employment income, pension income, savings interest, or dividend income. If you are employed full time and earn £80,000 from your job but also have a small rental portfolio generating £15,000 gross rental income, you are not in scope for April 2026 because your qualifying income is below £50,000. You are in scope for April 2027 if your qualifying income is between £30,000 and £50,000.</p>
 
 <h3>Who Is Excluded from MTD ITSA?</h3>
 
 <p>Certain groups are outside the mandate entirely:</p>
 
 <ul>
-<li>Limited companies (they are already in MTD for corporation tax from 2026, but that is a separate mandate)</li>
+<li>Limited companies (HMRC has consulted on a separate MTD for corporation tax programme, but no mandatory start date has been confirmed)</li>
 <li>Partnerships with a partnership return (MTD for partnerships is expected later, not April 2026)</li>
 <li>Trusts and estates</li>
 <li>Non resident companies with UK property income</li>
-<li>Individuals with qualifying income below £30,000 (voluntary only)</li>
+<li>Individuals with qualifying income below £30,000 (not mandated until April 2028, when the threshold drops to £20,000; voluntary registration is open now)</li>
 </ul>
 
 <p>If you are a contractor operating through your own limited company, you are not directly affected by MTD ITSA. Your limited company files corporation tax returns under CT600, not self assessment. However, if you also have self employed income or rental income in your personal name, that side of your affairs is in scope if the income thresholds are met.</p>
@@ -114,7 +114,7 @@ faqs:
 <p>Here is a practical checklist for anyone in scope for the April 2026 deadline:</p>
 
 <h3>1. Confirm Your Qualifying Income</h3>
-<p>Look at your 2024/25 tax return. Add together your self employment profit and property income. If the total exceeds £50,000, you are in scope for April 2026. If it is between £30,000 and £50,000, you are in scope for April 2027. If it is below £30,000, you are not mandated but can volunteer.</p>
+<p>Look at your 2024/25 tax return. Add together your gross self-employment turnover and gross property income (total rents received before expenses). If the total exceeds £50,000, you are in scope for April 2026. If it is between £30,000 and £50,000, you are in scope for April 2027. If it is between £20,000 and £30,000, you will be mandated from April 2028. If it is below £20,000, you are not currently mandated but can volunteer.</p>
 
 <h3>2. Choose Your MTD Compatible Software</h3>
 <p>If you already use accounting software, check with your provider whether it is MTD ITSA compliant. Most major providers are. If you use spreadsheets, you need to migrate. If you use paper records, you need to digitise. This is the single biggest change for most people.</p>
@@ -130,9 +130,9 @@ faqs:
 
 <h2>What About Limited Companies and MTD?</h2>
 
-<p>Limited companies are not in scope for MTD ITSA. But they are in scope for MTD for corporation tax, which goes live from April 2026 for accounting periods starting on or after that date. That is a separate mandate with different rules. We cover that in detail on our <a href="/blog/corporation-tax">corporation tax blog</a>.</p>
+<p>Limited companies are not in scope for MTD ITSA. HMRC has consulted on a separate MTD for corporation tax programme, but no mandatory start date has been confirmed as of 2026. We cover the latest position on our <a href="/blog/corporation-tax">corporation tax blog</a>.</p>
 
-<p>If you are a director of a limited company and also have self employed or rental income in your personal name, you need to manage both mandates. The company side uses MTD for corporation tax. Your personal side uses MTD ITSA. They are separate digital obligations but the same software can often handle both.</p>
+<p>If you are a director of a limited company and also have self employed or rental income in your personal name, your personal income is subject to MTD ITSA if the thresholds are met. The company itself is not under any confirmed MTD mandate at the time of writing. The two sets of records are separate obligations, but the same software can often handle both.</p>
 
 <h2>What If You Are a Landlord with Multiple Properties?</h2>
 
@@ -154,7 +154,7 @@ faqs:
 
 <p>If you currently send your accountant a box of receipts in May and get your tax return filed in October, that workflow changes. Your accountant needs ongoing access to your MTD software to review transactions, code them correctly, and submit the quarterly updates. Some accountants charge a monthly fee for this ongoing service. Others include it in a fixed annual fee.</p>
 
-<p>As ICAEW qualified accountants, we have been transitioning clients to MTD compatible workflows for several years. The clients who prepare early find the transition smooth. Those who wait until February 2026 find it stressful and expensive.</p>
+<p>We have been transitioning clients to MTD compatible workflows for several years. The clients who prepare early find the transition smooth. Those who wait until February 2026 find it stressful and expensive.</p>
 
 <h2>Common Questions About the MTD ITSA April 2026 Deadline</h2>
 

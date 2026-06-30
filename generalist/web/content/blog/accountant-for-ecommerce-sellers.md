@@ -155,7 +155,7 @@ faqs:
 <li>You are spending more than 5 hours per month on bookkeeping and reconciliation</li>
 </ul>
 
-<p>Our team at Holloway Davies are ICAEW qualified accountants who work specifically with ecommerce businesses. We know the rules, the software, and the common pitfalls. If you want to discuss your situation, <a href="/contact">get in touch</a>.</p>
+<p>Our team at Holloway Davies are specialist accountants who work specifically with ecommerce businesses. We know the rules, the software, and the common pitfalls. If you want to discuss your situation, <a href="/contact">get in touch</a>.</p>
 
 <h2>What to Look for in an Accountant for Ecommerce Sellers</h2>
 

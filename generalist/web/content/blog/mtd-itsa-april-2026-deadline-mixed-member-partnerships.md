@@ -1,13 +1,13 @@
 ---
-title: "MTD ITSA April 2026 Deadline: What Mixed-Member Partnerships Must Do Now"
+title: 'MTD ITSA and Mixed-Member Partnerships: What the April 2026 Rules Actually Say'
 slug: "mtd-itsa-april-2026-deadline-mixed-member-partnerships"
 canonical: "https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/mtd-itsa-april-2026-deadline-mixed-member-partnerships"
 date: "2026-05-17"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "VAT and Making Tax Digital"
-metaTitle: "MTD ITSA April 2026 deadline for mixed-member partnerships"
-metaDescription: "The MTD ITSA April 2026 deadline applies to partnerships with corporate members too. Here is what quarterly digital reporting means for your partnership."
+metaTitle: 'MTD ITSA and Mixed-Member Partnerships: What April 2026 Actually Means'
+metaDescription: "Mixed-member partnerships are not mandated into MTD ITSA from April 2026. HMRC has deferred all partnerships. Here is what the deferral means for your partners."
 altText: "Two partners reviewing financial records on a laptop at a modern office desk in Manchester"
 image: "/blog/mtd-itsa-april-2026-deadline-mixed-member-partnerships.jpg"
 imageCredit:
@@ -15,151 +15,103 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@leeloothefirst"
   sourceUrl: "https://www.pexels.com/photo/a-brown-envelope-with-a-sticky-note-over-a-planner-and-a-tax-document-8962518/"
   source: "Pexels"
-h1: "MTD ITSA April 2026 Deadline: What Mixed-Member Partnerships Must Do Now"
-summary: "Making Tax Digital for Income Tax (MTD ITSA) goes live in April 2026. Most coverage focuses on sole traders. But partnerships with corporate members face specific quarterly digital reporting obligations that are easy to miss. Here is what you need to do now."
+h1: 'MTD ITSA and Mixed-Member Partnerships: What April 2026 Actually Means'
+summary: "Many articles claim mixed-member partnerships must comply with Making Tax Digital for Income Tax Self Assessment from April 2026. That claim is incorrect. HMRC has deferred all partnerships from the current mandate. Here is what the deferral means for your partnership and what individual partners with their own separate income still need to do."
 schema: ""
 faqs:
-  - question: "Does the MTD ITSA April 2026 deadline apply to all partnerships?"
-    answer: "No. The April 2026 deadline applies to partnerships where at least one partner is a corporate entity (a limited company). Partnerships with only individual partners are subject to the same phased thresholds as sole traders: £50,000 from April 2026, £30,000 from April 2027, and £20,000 from April 2028. If your partnership has a corporate partner, check whether you are caught regardless of turnover."
-  - question: "What software do I need for MTD ITSA as a partnership with corporate members?"
-    answer: "You need MTD-compatible software that supports partnership filing with corporate member allocation. FreeAgent and Xero both offer MTD ITSA functionality, but their partnership modules vary. Sage 50 has stronger partnership features. Some partnerships use bridging software to convert spreadsheet data into the required digital format. Check with your provider directly and ask specifically about mixed-member partnership support before April 2026."
-  - question: "What happens if I miss a quarterly update deadline?"
-    answer: "HMRC will issue a late submission penalty. For the first failure, the penalty is £30 per return. The second failure within the same tax year is £60. Penalties escalate for further failures. There is no soft-landing period for MTD ITSA, so these penalties apply from the first quarter of the 2026/27 tax year. If you miss a deadline, submit the update as soon as possible and contact HMRC to explain."
-  - question: "Can I still file a paper partnership return after April 2026?"
-    answer: "No, not if your partnership is within the scope of MTD ITSA. The quarterly updates and end-of-period statement replace the partnership pages of the self assessment return. You must submit everything digitally through MTD-compatible software. Individual partners will still file their personal self assessment returns separately, but the partnership's reporting is fully digital from April 2026."
+  - question: "Does the April 2026 MTD ITSA mandate apply to mixed-member partnerships?"
+    answer: "No. HMRC has deferred all partnerships from the MTD ITSA phased rollout. No partnership is mandated from April 2026, April 2027, or April 2028. The mandate covers individual sole traders and landlords only. HMRC has indicated that general partnerships with only individual members may join at a later unconfirmed date. Mixed-member partnerships, which include corporate partners, are not in scope and no date has been announced."
+  - question: "What if I am an individual partner in a mixed-member partnership and I also have my own separate business or rental income?"
+    answer: "If you personally have qualifying income from sole trading or property that exceeds the relevant threshold, you are caught by the individual mandate. The threshold is £50,000 from April 2026, £30,000 from April 2027, and £20,000 from April 2028. This applies to your own separate income only. The profit share you receive from the partnership is not itself brought into MTD ITSA by these rules."
+  - question: "When will mixed-member partnerships have to join MTD ITSA?"
+    answer: "No date has been set. HMRC has deferred all partnerships from the current phased rollout. HMRC originally indicated that general partnerships with individual members only might join at a later date, but has not confirmed when. Partnerships with corporate members are more complex and are not in any current published plans. The position is deferred, date to be confirmed."
+  - question: "Is there anything a mixed-member partnership should do now?"
+    answer: "Not as a mandatory MTD ITSA step for the partnership itself. However, any individual partner who has their own sole-trade or property income above the threshold needs to prepare for the individual mandate from the applicable date. Good digital record-keeping across the partnership is also sensible regardless of when the partnership mandate eventually arrives. Speaking to an accountant about your specific structure is a worthwhile step."
 ---
 
-<p>The MTD ITSA April 2026 deadline is fast approaching. If you run a partnership with mixed members (individuals and corporate partners), you cannot rely on the general guidance aimed at sole traders. Your obligations are different, and the quarterly reporting requirements start sooner than you might think.</p>
+<p>A large number of articles and guides claim that mixed-member partnerships face a Making Tax Digital for Income Tax Self Assessment (MTD ITSA) deadline of April 2026. This is not correct. HMRC has deferred all partnerships from the current MTD ITSA rollout. No partnership is mandated from April 2026, and no date has been confirmed for mixed-member partnerships.</p>
 
-<p>Most articles about Making Tax Digital for Income Tax (MTD ITSA) focus on sole traders and individual landlords. That leaves a gap. Partnerships with corporate partners fall under specific rules that trigger mandatory digital record-keeping and quarterly updates from April 2026, regardless of your turnover level. Here is what the MTD ITSA April 2026 deadline actually means for mixed-member partnerships, and what you need to organise now.</p>
+<p>This article sets out what the rules actually say, why the confusion arose, what the deferral means for your partnership, and what individual partners with their own separate income still need to think about.</p>
 
-<h2>What Is MTD ITSA and Who Does It Apply To?</h2>
+<h2>What Is MTD ITSA and Who Does It Currently Apply To?</h2>
 
-<p>MTD ITSA is HMRC's programme to move income tax reporting onto a fully digital, quarterly basis. Instead of filing one annual self assessment return after the tax year ends, you will submit four quarterly updates through MTD-compatible software, followed by an end-of-period statement (EOPS) and a final declaration.</p>
+<p>Making Tax Digital for Income Tax Self Assessment is HMRC's programme to move income tax reporting onto a quarterly digital basis. Instead of filing one annual self assessment return after the tax year ends, those in scope submit four quarterly updates through MTD-compatible software, followed by an end-of-period statement and a final declaration.</p>
 
-<p>The rollout is phased. From April 2026, MTD ITSA is mandatory for:</p>
-
-<ul>
-<li>Sole traders and individual landlords with qualifying income over £50,000</li>
-<li>From April 2027, those with qualifying income over £30,000</li>
-<li>From April 2028, those with qualifying income over £20,000</li>
-</ul>
-
-<p>But here is the critical point for partnerships with corporate members. HMRC treats corporate partners differently. If your partnership includes a company as a partner, the partnership itself is likely caught by MTD ITSA from April 2026 regardless of the partnership's income level. The £50,000 threshold does not apply in the same way.</p>
-
-<h2>Why Mixed-Member Partnerships Are Caught Earlier</h2>
-
-<p>The reason is straightforward. HMRC's MTD ITSA rules apply to "persons" who are within the charge to income tax. A corporate partner is within the charge to corporation tax, not income tax. But the partnership's reporting obligations are determined by its members.</p>
-
-<p>Where a partnership has at least one corporate partner, HMRC considers the partnership to be within the scope of MTD ITSA from April 2026, even if the partnership's total income is below £50,000. The corporate partner triggers the obligation at the partnership level.</p>
-
-<p>This catches many professional partnerships, property partnerships with corporate members, and joint ventures structured as partnerships. If your partnership has a limited company as a partner, you are likely affected. Do not assume the turnover threshold protects you.</p>
-
-<h2>What Quarterly Digital Reporting Actually Means</h2>
-
-<p>From 6 April 2026, your partnership must:</p>
+<p>The current mandate covers individuals with qualifying income from self-employment and property. Qualifying income is gross trading income plus gross property income. The phased rollout is:</p>
 
 <ul>
-<li>Maintain digital records of all income and expenses using MTD-compatible software. Spreadsheets alone are not enough unless they are linked to bridging software.</li>
-<li>Submit quarterly updates to HMRC within one month of each quarter end. These are cumulative summaries of your income and expenses, not full accounts.</li>
-<li>Submit an end-of-period statement (EOPS) after the tax year ends, confirming your final figures.</li>
-<li>File a final declaration, which replaces the partnership pages on the self assessment return.</li>
+<li>From 6 April 2026: individuals with qualifying income over £50,000 per year.</li>
+<li>From 6 April 2027: individuals with qualifying income over £30,000 per year.</li>
+<li>From 6 April 2028: individuals with qualifying income over £20,000 per year.</li>
 </ul>
 
-<p>The quarterly updates are not tax calculations. They are data submissions. HMRC uses them to build a real-time picture of your taxable income. You still finalise your tax position at year end.</p>
+<p>These thresholds apply to individuals. Sole traders and individual landlords are the primary group in scope for the early phases. The mandate does not currently extend to partnerships as entities.</p>
 
-<h2>How Corporate Partners Change the Filing Process</h2>
+<h2>Partnerships Are Deferred From MTD ITSA</h2>
 
-<p>Individual partners will continue to report their share of partnership profits on their personal self assessment returns. But the partnership's digital reporting under MTD ITSA must capture the full picture, including the corporate partner's share.</p>
+<p>HMRC has confirmed that partnerships are not included in the April 2026 mandate, the April 2027 mandate, or the April 2028 mandate. This covers all types of partnership: general partnerships, limited liability partnerships, and more complex structures such as mixed-member partnerships.</p>
 
-<p>This creates a practical problem. Most MTD-compatible software is designed for sole traders and individual landlords. Partnership software with corporate member functionality is less common. You need to check whether your chosen software handles mixed-member partnerships correctly, including allocation of profits to corporate partners and the different tax treatment of those profits.</p>
+<p>HMRC has indicated that general partnerships (where all partners are individuals) may be required to join MTD ITSA at a later date, but has not announced when. For mixed-member partnerships, which include corporate partners alongside individual partners, no date has been set and no specific plans have been published. The position as of mid-2026 is: deferred, date to be confirmed.</p>
 
-<p>If your partnership uses a standard cloud accounting package like Xero or QuickBooks, check whether it supports MTD ITSA for partnerships with corporate members. Some products offer partnership modules. Others do not. You may need a specialist solution or a bridging tool to convert your data into the required format.</p>
+<p>This means your partnership business has no MTD ITSA obligation arising from the April 2026 rules, regardless of your turnover or structure.</p>
 
-<h2>Digital Record-Keeping Requirements for Partnerships</h2>
+<h2>What Is a Mixed-Member Partnership?</h2>
 
-<p>From April 2026, your partnership must keep digital records of:</p>
+<p>A mixed-member partnership is one where the partners include both individuals and corporate entities (typically limited companies). This structure is common in professional services, property investment, and some family business arrangements where a company holds assets or contracts alongside individual partners.</p>
+
+<p>Mixed-member partnerships have historically faced specific tax rules under the mixed-member legislation in the Income Tax (Trading and Other Income) Act 2005, which deal with profit allocation between individual and corporate members. Those rules continue to apply as normal. What has not happened is any extension of the MTD ITSA mandate to cover these partnerships from April 2026.</p>
+
+<h2>The Nuance: Individual Partners With Their Own Separate Income</h2>
+
+<p>The deferral applies to the partnership as a business entity. However, individual partners can still be caught by the MTD ITSA mandate in their own right, if they have separate qualifying income.</p>
+
+<p>If you are an individual partner in a mixed-member partnership and you also have income from your own sole-trade business or from property you personally own (outside the partnership), and that income exceeds the relevant threshold, you are mandated as an individual from the applicable date.</p>
+
+<p>To be clear about what counts and what does not:</p>
 
 <ul>
-<li>All income received, by category</li>
-<li>All expenses incurred, by category</li>
-<li>Any other amounts relevant to the partnership's tax position</li>
+<li>Your own sole-trade income above the threshold: caught by the individual mandate.</li>
+<li>Your own rental income from property you hold personally, outside the partnership: caught by the individual mandate.</li>
+<li>Your profit share from the mixed-member partnership: not brought into MTD ITSA by the April 2026 rules.</li>
 </ul>
 
-<p>These records must be held digitally from the start of the accounting period. You cannot keep paper records and digitise them later. The software must capture and preserve the data in a format that HMRC can access.</p>
+<p>This distinction matters. If you are a partner whose only significant income comes from the partnership, you have no MTD ITSA obligation under the current rules. If you also run a separate business or own rental property in your own name, check whether that income brings you above the threshold.</p>
 
-<p>For partnerships with mixed members, this includes recording each partner's capital account, current account, and profit share allocation. The software must track these separately because corporate partners and individual partners are taxed differently.</p>
+<h2>Why the Confusion Arose</h2>
 
-<h2>Deadlines You Cannot Afford to Miss</h2>
+<p>Much of the published guidance on MTD ITSA was written before HMRC clarified its approach to partnerships. Early documentation suggested partnerships would be included in the rollout, and some commentators assumed all partnership types would be mandated on a similar timetable to individuals. HMRC subsequently confirmed that partnerships are deferred, but not all third-party guidance was updated.</p>
 
-<p>The MTD ITSA April 2026 deadline is not a soft target. HMRC has confirmed it will apply penalties for late submission of quarterly updates and end-of-period statements from day one. There is no soft-landing period for MTD ITSA.</p>
+<p>For mixed-member partnerships specifically, there was additional confusion because the corporate partner dimension was thought to create an earlier or separate obligation. This was not the case. HMRC's position is that mixed-member and corporate-member partnerships are deferred without a confirmed date.</p>
 
-<p>Key dates for partnerships affected from April 2026:</p>
+<h2>What Your Partnership Should Do Now</h2>
+
+<p>The partnership itself has no mandatory MTD ITSA preparation steps to complete under the current rules. However, there are sensible practical steps worth taking:</p>
 
 <ul>
-<li><strong>6 April 2026:</strong> First day of the first MTD ITSA period. Your digital records must be in place from this date.</li>
-<li><strong>5 May 2026:</strong> First quarterly update due (covering April 2026). You have one month from the end of each quarter to submit.</li>
-<li><strong>5 August 2026:</strong> Second quarterly update due.</li>
-<li><strong>5 November 2026:</strong> Third quarterly update due.</li>
-<li><strong>5 February 2027:</strong> Fourth quarterly update due.</li>
-<li><strong>31 January 2028:</strong> End-of-period statement and final declaration due for the 2026/27 tax year.</li>
+<li>Check whether any individual partner has their own sole-trade or property income above the relevant threshold. If so, that partner needs to prepare for the individual mandate from the applicable date.</li>
+<li>Review your partnership's current record-keeping. Good digital records are valuable regardless of when the partnership mandate eventually arrives, and they make preparing for future compliance much easier.</li>
+<li>Stay alert to HMRC announcements. The partnership mandate date has not been set, but it will come at some point. Following HMRC's MTD ITSA updates and ensuring your accountant keeps you informed is worthwhile.</li>
+<li>If any of your individual partners are sole traders or landlords in their own right, make sure they have taken appropriate advice about their personal MTD ITSA position before their applicable date.</li>
 </ul>
 
-<p>If your partnership has a corporate partner, these deadlines apply to you even if your partnership income is below £50,000. Do not wait until April 2026 to start preparing.</p>
+<h2>Common Misconceptions Corrected</h2>
 
-<h2>Practical Steps to Take Now</h2>
+<p><strong>"Mixed-member partnerships must comply with MTD ITSA from April 2026."</strong> This is false. HMRC has deferred all partnerships, including mixed-member partnerships. No partnership is mandated from April 2026.</p>
 
-<p>You have about 12 months before the MTD ITSA April 2026 deadline bites. Here is what to do in that window.</p>
+<p><strong>"The £50,000 threshold triggers a partnership obligation."</strong> Not under the current rules. The £50,000 threshold applies to individual sole traders and landlords. The partnership's income level does not determine whether the partnership itself is mandated, because partnerships are currently deferred from MTD ITSA entirely.</p>
 
-<h3>Audit Your Partnership Structure</h3>
+<p><strong>"Having a corporate partner creates an earlier MTD ITSA obligation."</strong> No. Corporate partners are taxed through corporation tax, not income tax. Their presence in the partnership does not bring the partnership into the MTD ITSA mandate from April 2026.</p>
 
-<p>Confirm whether your partnership has any corporate members. This includes limited companies, LLPs (which are treated as partnerships for tax purposes but have their own rules), and any other corporate entity. If you are unsure, review your partnership agreement and the latest partnership tax return.</p>
+<p><strong>"Individual partners in a mixed-member partnership have no MTD obligations at all."</strong> This may or may not be true depending on each partner's personal income. If an individual partner has their own separate qualifying income above the threshold, they are caught by the individual mandate. The partnership income is not the trigger.</p>
 
-<h3>Check Your Software Compatibility</h3>
+<h2>Speaking to an Accountant</h2>
 
-<p>Contact your software provider and ask directly: "Does your product support MTD ITSA for partnerships with corporate partners?" If the answer is no, or if you get a vague response, start evaluating alternatives. FreeAgent, Xero, and QuickBooks all have MTD ITSA roadmaps, but partnership functionality varies. Sage 50 has stronger partnership modules but requires careful setup.</p>
+<p>If you are unsure whether any of your partners have a personal MTD ITSA obligation, or you want to understand how the eventual partnership mandate may affect your structure, speaking to an accountant who understands partnership taxation is a sensible step. The rules around mixed-member partnerships are not straightforward, and the interaction between the individual mandate and partnership profit allocations requires careful analysis for each partner's specific position.</p>
 
-<h3>Review Your Record-Keeping Processes</h3>
-
-<p>If your partnership currently uses spreadsheets or paper records for any part of the accounting process, you need to move to digital record-keeping before April 2026. This includes capturing receipts, invoices, bank transactions, and partner allocations digitally. Tools like Dext can help automate data capture.</p>
-
-<h3>Talk to Your Accountant</h3>
-
-<p>If you have not already discussed MTD ITSA with your accountant, schedule that meeting now. As ICAEW qualified accountants, we work with partnerships across every sector, from professional services firms in Manchester's Northern Quarter to property partnerships in Bristol's Harbourside. The right approach depends on your specific structure, your software setup, and your partner profile.</p>
-
-<p>We can help you assess whether your partnership is caught by the April 2026 deadline, what software you need, and how to set up your digital records correctly from day one. Contact our team for a partnership-specific MTD ITSA review.</p>
-
-<h2>What Happens If You Do Nothing</h2>
-
-<p>Ignoring the MTD ITSA April 2026 deadline is not an option. If your partnership is within scope and you fail to submit quarterly updates, HMRC will issue late submission penalties. These start at £30 per return for the first failure, rising to £60 for the second, and escalating from there. For a partnership submitting four updates per year, the penalties add up quickly.</p>
-
-<p>More importantly, if you are not keeping digital records from April 2026, you will struggle to reconstruct your data at year end. The quarterly updates are cumulative. Missing one quarter means you have a gap in HMRC's records, and you will need to explain that gap when you file your end-of-period statement.</p>
-
-<p>For partnerships with corporate partners, there is an additional risk. The corporate partner's tax position depends on the partnership's accurate reporting. Errors or omissions in the partnership's MTD ITSA submissions could flow through to the corporate partner's corporation tax return, triggering HMRC enquiries at both levels.</p>
-
-<h2>Common Misconceptions About MTD ITSA and Partnerships</h2>
-
-<p>Let me clear up a few misunderstandings we see regularly.</p>
-
-<p><strong>"MTD ITSA only applies to sole traders."</strong> No. It applies to any person within the charge to income tax who meets the threshold. Partnerships are within scope, and mixed-member partnerships are caught from April 2026 regardless of turnover.</p>
-
-<p><strong>"My partnership turnover is below £50,000, so I am exempt."</strong> Not if you have a corporate partner. The £50,000 threshold applies to individuals. Partnerships with corporate members are treated separately.</p>
-
-<p><strong>"I can keep using spreadsheets."</strong> Only if your spreadsheet is linked to MTD-compatible bridging software that converts the data into the correct digital format. A standalone spreadsheet is not compliant.</p>
-
-<p><strong>"I will just file my quarterly updates manually."</strong> You cannot. MTD ITSA requires submission through HMRC-recognised software. There is no manual filing option for quarterly updates.</p>
-
-<h2>Final Thoughts</h2>
-
-<p>The MTD ITSA April 2026 deadline is real. For partnerships with corporate members, it is closer than you think. The quarterly digital reporting requirement is not optional, and the penalties for non-compliance start from day one.</p>
-
-<p>Start preparing now. Audit your partnership structure, check your software, and review your record-keeping processes. If you need guidance specific to your partnership, our team can help. We have experience with partnerships of every shape, from two-person consultancies to multi-member professional firms.</p>
-
-<p>Get in touch through our contact page or call us to discuss your MTD ITSA readiness. The deadline will not move. But with the right preparation, it does not have to be a problem.</p>
+<p>Get in touch through our <a href="/contact">contact page</a> if you would like to discuss your partnership's position.</p>
 
 <h2>Related articles in VAT and Making Tax Digital</h2>
 <ul>
     <li><a href="/blog/vat-and-making-tax-digital/when-to-register-for-vat-seasonal-business">When To Register For VAT As A Seasonal Business</a></li>
     <li><a href="/blog/vat-and-making-tax-digital/when-to-register-for-vat-zero-rated-goods">When To Register For VAT If You Sell Zero-rated Goods</a></li>
 </ul>
-

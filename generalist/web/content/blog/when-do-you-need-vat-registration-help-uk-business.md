@@ -20,7 +20,7 @@ summary: "VAT registration is compulsory once your taxable turnover exceeds £90
 schema: ""
 faqs:
   - question: "What happens if I miss the VAT registration deadline?"
-    answer: "HMRC will backdate your registration to the date it should have applied. You owe VAT on all sales from that date, even if you did not charge customers. You also face penalties starting at 30% of the VAT due for the first year. Register immediately if you discover you should have done so earlier. Voluntary disclosure reduces the penalty."
+    answer: "HMRC will backdate your registration to the date it should have applied. You owe VAT on all sales from that date, even if you did not charge customers. You also face a penalty of up to 30% of the VAT due (reducible through voluntary disclosure). Register immediately if you discover you should have done so earlier. Voluntary disclosure reduces the penalty."
   - question: "Can I register for VAT voluntarily before reaching £90,000?"
     answer: "Yes. You can register voluntarily at any turnover level. The main reason is to reclaim VAT on your purchases. If you spend heavily on VAT-inclusive items like equipment, software, or subcontractors, voluntary registration can put cash back in your pocket. But check whether your clients can reclaim VAT before you decide."
   - question: "How long does VAT registration take?"
@@ -98,7 +98,7 @@ faqs:
 
 <h3>Associated Companies</h3>
 
-<p>If you control multiple companies, HMRC treats them as associated. The £90,000 threshold is divided between them. If you own two companies, each must register when their combined turnover exceeds £90,000. This catches business owners who split their activities across separate entities.</p>
+<p>If you control multiple companies, HMRC treats them as associated. HMRC can apply disaggregation rules (VATA 1994 s.44) to treat all the entities as a single business and measure their combined taxable turnover against the single £90,000 threshold. If the combined total exceeds £90,000, registration is required. This catches business owners who split their activities across separate entities.</p>
 
 <h3>VAT Groups</h3>
 
@@ -152,7 +152,7 @@ faqs:
 
 <h2>Penalties for Late Registration</h2>
 
-<p>HMRC applies penalties from the date you should have registered. The penalty is calculated as a percentage of the VAT due from the late registration period. For the first year, the penalty is 30% of the VAT due. It increases for subsequent failures.</p>
+<p>HMRC applies penalties from the date you should have registered. The penalty is calculated as a percentage of the VAT due from the late registration period. The standard penalty is 30% of the VAT due from the period of late registration, but HMRC can reduce this for quality of disclosure, down to nil for unprompted notification in some cases.</p>
 
 <p>You also owe interest on the VAT you should have paid. At current rates, that adds up quickly.</p>
 
@@ -160,7 +160,7 @@ faqs:
 
 <h2>How Holloway Davies Can Help</h2>
 
-<p>As ICAEW qualified accountants, we handle VAT registration for businesses across every sector. We deal with straightforward registrations and complex ones involving associated companies, partial exemption, and property.</p>
+<p>We handle VAT registration for businesses across every sector. We deal with straightforward registrations and complex ones involving associated companies, partial exemption, and property.</p>
 
 <p>We also provide ongoing VAT compliance support. That includes preparing VAT returns, advising on scheme selection, and representing you in HMRC enquiries.</p>
 

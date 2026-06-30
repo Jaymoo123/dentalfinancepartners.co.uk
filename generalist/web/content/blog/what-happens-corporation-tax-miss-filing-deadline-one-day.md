@@ -16,7 +16,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-surface-7821565/"
   source: "Pexels"
 h1: "What Happens To My Corporation Tax If I Miss The Filing Deadline By One Day?"
-summary: "Missing your corporation tax filing deadline by even one day triggers an automatic £100 penalty. More penalties follow at 3 months, 6 months, 12 months and 18 months. Here is what you need to know, how much you will owe, and what to do immediately."
+summary: "Missing your corporation tax filing deadline by even one day triggers an automatic £100 penalty. More penalties follow at 3 months, 6 months and 12 months after the filing deadline. Here is what you need to know, how much you will owe, and what to do immediately."
 schema: ""
 faqs:
   - question: "How much is the late corporation tax filing penalty for one day?"
@@ -53,14 +53,13 @@ faqs:
 
 <h2>What Happens After The First £100 Penalty?</h2>
 
-<p>The late corporation tax filing penalty escalates on a fixed schedule. Here is the timeline for a company with a 31 March year end and a 31 December filing deadline:</p>
+<p>The late corporation tax filing penalty escalates on a fixed schedule. Here is the timeline for a company with a 31 March year end and a 31 March filing deadline (12 months after the period end):</p>
 
 <ul>
-<li><strong>1 day late (1 January):</strong> £100 penalty issued automatically.</li>
-<li><strong>3 months late (31 March):</strong> A second £100 penalty is issued. Total so far: £200.</li>
-<li><strong>6 months late (30 June):</strong> HMRC estimates your tax bill and charges 10% of the unpaid tax as a penalty. If your estimated bill is £20,000, that is a £2,000 penalty on top of the £200.</li>
-<li><strong>12 months late (31 December):</strong> Another 10% of the unpaid tax. If still unpaid, that is another £2,000. Total penalties now £4,200.</li>
-<li><strong>18 months late (30 June, year two):</strong> A further 10% penalty. Plus HMRC may escalate to tax-geared penalties of up to 100% of the tax due if they believe the delay is deliberate.</li>
+<li><strong>1 day late (1 April):</strong> £100 penalty issued automatically.</li>
+<li><strong>3 months late (30 June):</strong> A second £100 penalty is issued. Total so far: £200.</li>
+<li><strong>6 months late (30 September, being 18 months after the period end):</strong> HMRC estimates your tax bill and charges 10% of the unpaid tax as a penalty. If your estimated bill is £20,000, that is a £2,000 penalty on top of the £200.</li>
+<li><strong>12 months late (31 March, year two, being 24 months after the period end):</strong> Another 10% of the unpaid tax. If still unpaid, that is another £2,000. Total penalties now £4,200. HMRC may also escalate to behaviour-based penalties of up to 100% of the tax due if it considers the delay deliberate.</li>
 </ul>
 
 <p>These penalties compound quickly. A single missed deadline can turn into a five-figure penalty bill if you ignore it for 12 to 18 months.</p>
@@ -90,7 +89,7 @@ faqs:
 
 <p>Here is your action plan, in order:</p>
 
-<p><strong>1. File the return immediately.</strong> Do not wait. The penalty clock is already ticking. File today, even if the return is not perfect. You can amend it later. A filed return stops further daily penalties from accruing.</p>
+<p><strong>1. File the return immediately.</strong> Do not wait. File today, even if the return is not perfect. You can amend it later. Filing promptly avoids the second £100 penalty (triggered at 3 months after the filing deadline) and the subsequent tax-geared percentage penalties.</p>
 
 <p><strong>2. Pay any corporation tax due.</strong> If your return shows tax owing, pay it within 30 days of the original deadline to avoid the 5% late payment penalty. Interest will still accrue from the original due date, but you can avoid the percentage penalty.</p>
 
@@ -108,7 +107,7 @@ faqs:
 
 <p>If you use accounting software like Xero or FreeAgent, set up automated reminders 30 days, 14 days and 3 days before your filing deadline. If your accountant handles filing, agree a deadline reminder protocol in writing. Some accountants send a calendar invite for the filing date itself, not just the tax payment date.</p>
 
-<p>For companies with a 31 March year end, the filing deadline is 31 December. That is a bank holiday and New Year's Eve. File early. Do not leave it to 31 December. HMRC's online systems have gone down on high-traffic days. If the system is down at 11:59pm on the deadline, you still get the penalty. HMRC does not extend deadlines for system outages.</p>
+<p>For companies with a 31 March year end, the filing deadline is 31 March of the following year (12 months after the period end). The payment deadline is 1 January, New Year's Day, which is a bank holiday. File the return early. Do not leave it to 31 March. HMRC's online systems have gone down on high-traffic days. If the system is down at 11:59pm on the deadline, you still get the penalty. HMRC does not extend deadlines for system outages.</p>
 
 <h2>What About The Corporation Tax Payment Deadline?</h2>
 
@@ -124,20 +123,20 @@ faqs:
 
 <h2>Real Example: A Manchester Freelancer Ltd</h2>
 
-<p>Take a freelance consultant in Manchester's Northern Quarter. She runs her business through a limited company with a 31 March year end. Her corporation tax bill is £14,720. She pays it on 2 January (one day late). She files her CT600 on 5 January (five days late).</p>
+<p>Take a freelance consultant in Manchester's Northern Quarter. She runs her business through a limited company with a 31 March year end. Her corporation tax bill is £14,720. She pays it on 2 January (one day late, as the payment deadline for a 31 March year end is 1 January). She files her CT600 on 1 April (one day late, as the filing deadline is 31 March).</p>
 
 <p>Here is what she owes:</p>
 <ul>
 <li>£100 late corporation tax filing penalty (first penalty).</li>
-<li>Interest on £14,720 for 4 days at 7.75%: roughly £12.50.</li>
+<li>Interest on £14,720 for 1 day at 7.75%: roughly £3.</li>
 <li>No late payment penalty (paid within 30 days of due date).</li>
 </ul>
 
-<p>Total extra cost: £112.50. Not catastrophic. But if she had left the return unfiled for 6 months, the penalties would reach £2,100 plus interest. If she left it 12 months, over £4,200.</p>
+<p>Total extra cost: £103. Not catastrophic. But if she had left the return unfiled for 3 months, the penalties would reach £200 plus interest. If she left it unfiled past 18 months from her period end, the 10% tax-geared charges would add over £1,400 more on top of that.</p>
 
 <h2>How Holloway Davies Can Help</h2>
 
-<p>As ICAEW qualified accountants, we handle corporation tax filing for hundreds of UK limited companies. Our team tracks every filing deadline across our client base. We file returns weeks before the deadline, not days. We set up payment calendar reminders for every client.</p>
+<p>We handle corporation tax filing for hundreds of UK limited companies. Our team tracks every filing deadline across our client base. We file returns weeks before the deadline, not days. We set up payment calendar reminders for every client.</p>
 
 <p>If you have already missed a deadline, we can help you file immediately, assess whether you have grounds for a reasonable excuse appeal, and set up a system to prevent recurrence. We also handle the CT600 preparation and filing, so you never have to think about the deadline yourself.</p>
 

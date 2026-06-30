@@ -35,7 +35,7 @@ faqs:
 
 <p>The 6 year clock starts from the end of the company's accounting period. So for a company with a year end of 31 March 2025, you must keep all records until at least 31 March 2031. If HMRC opens an enquiry into a return, they can ask for records going back further. The 6 year rule is the minimum. In practice, many accountants advise keeping records for 7 years to be safe.</p>
 
-<p>As ICAEW qualified accountants, we see directors get caught out when they close a company or stop trading and throw everything away. That is a mistake. The 6 year retention period still applies even after the company has been dissolved. You are personally liable as a former director if records are missing when HMRC comes asking.</p>
+<p>We see directors get caught out when they close a company or stop trading and throw everything away. That is a mistake. The 6 year retention period still applies even after the company has been dissolved. You are personally liable as a former director if records are missing when HMRC comes asking.</p>
 
 <h2>What Records Must You Keep?</h2>
 
@@ -57,7 +57,7 @@ faqs:
 <p>If your company is VAT registered, you must keep VAT account records. This includes your VAT return submissions, VAT1 (registration) or VAT484 (change of details) forms, and any correspondence with HMRC about VAT. You also need to keep the underlying sales and purchase invoices that support each VAT return.</p>
 
 <h3>Director's Loan Account Records</h3>
-<p>If your company has a director's loan account, you must keep records of every transaction. This includes money you put into the company (capital introduced), money you take out (drawings or dividends), and any loans made to or from the company. The director's loan account is a common area where HMRC focuses attention. Missing records here can lead to S455 tax charges at 33.75% on loans not repaid within 9 months and 1 day of the year end.</p>
+<p>If your company has a director's loan account, you must keep records of every transaction. This includes money you put into the company (capital introduced), money you take out (drawings or dividends), and any loans made to or from the company. The director's loan account is a common area where HMRC focuses attention. Missing records here can lead to S455 tax charges at 33.75% for loans made in 2025/26 (rising to 35.75% for loans made on or after 6 April 2026) on loans not repaid within 9 months and 1 day of the year end.</p>
 
 <h3>Capital Asset Records</h3>
 <p>You must keep records of any capital assets the company buys or sells. This includes plant and machinery, vehicles, computers, furniture, and any property. You need the purchase invoice, the date of purchase, the cost, and any capital allowances claimed. When you sell the asset, you need the sale invoice and the date of sale. These records support the capital allowances and chargeable gains calculations on the CT600.</p>

@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Management Accounting Services for UK Businesses | UK"
 metaDescription: "Management accounting services help UK business owners make decisions with real numbers. Cash flow, margins, budgeting, and forecasting explained in plain"
-altText: "UK business owner reviewing a management accounts report with their ICAEW qualified accountant in a modern office."
+altText: "UK business owner reviewing a management accounts report with their accountant in a modern office."
 image: "/blog/management-accounting-services-uk-business.jpg"
 imageCredit:
   photographer: "Nataliya Vaitkevich"
@@ -33,7 +33,7 @@ faqs:
 
 <p>Management accounting services fill that gap. They give you regular, structured reports on how your business is actually performing. Not just the statutory accounts that Companies House requires, but the numbers that tell you whether you are heading in the right direction.</p>
 
-<p>This article explains what management accounting services include, who needs them, and what to look for when choosing a provider. We are ICAEW qualified accountants working with UK businesses of every shape. Limited companies, contractors, sole traders, partnerships, and growing small businesses across every sector.</p>
+<p>This article explains what management accounting services include, who needs them, and what to look for when choosing a provider. We work with UK businesses of every shape. Limited companies, contractors, sole traders, partnerships, and growing small businesses across every sector.</p>
 
 <h2>What Are Management Accounting Services?</h2>
 
@@ -103,7 +103,7 @@ faqs:
 
 <p>Many business owners confuse the two. They are not the same thing.</p>
 
-<p>Statutory accounts are what you file at Companies House and send to HMRC with your corporation tax return (CT600). They follow accounting standards (FRS 102 or FRS 105 for micro-entities). They are audited if your turnover exceeds £10.2 million or your balance sheet exceeds £5.1 million. They are produced once a year, typically 9 months after your year-end.</p>
+<p>Statutory accounts are what you file at Companies House and send to HMRC with your corporation tax return (CT600). They follow accounting standards (FRS 102 or FRS 105 for micro-entities). They are audited if your turnover exceeds £15 million or your balance sheet exceeds £7.5 million (for periods beginning on or after 6 April 2025; the previous limits were £10.2 million and £5.1 million). They are produced once a year, typically 9 months after your year-end.</p>
 
 <p>Management accounts are internal. They do not follow strict accounting standards, though good ones use accruals accounting. They can be adjusted to match how you actually run the business. They are produced monthly or quarterly, often within 2 weeks of the period end.</p>
 
@@ -157,7 +157,7 @@ faqs:
 
 <p><strong>Not knowing your gross margin per product or service.</strong> A Manchester digital agency we work with thought they were making 60% margin on all clients. Management accounts showed one client was actually running at 22% margin because of scope creep and extra revisions. They repriced that client and recovered £18,000 in the next 12 months.</p>
 
-<p><strong>Overpaying yourself and creating a director's loan account problem.</strong> Without management accounts, you do not know your true profit until year-end. If you have been drawing dividends based on estimated profits that did not materialise, you end up with an overdrawn director's loan account. That triggers a benefit in kind charge and S455 tax at 33.75% on the outstanding balance if not repaid within 9 months and 1 day of year-end.</p>
+<p><strong>Overpaying yourself and creating a director's loan account problem.</strong> Without management accounts, you do not know your true profit until year-end. If you have been drawing dividends based on estimated profits that did not materialise, you end up with an overdrawn director's loan account. That triggers a benefit in kind charge and S455 tax of 33.75% on the outstanding balance for loans made in 2025/26 (rising to 35.75% for loans made on or after 6 April 2026) if not repaid within 9 months and 1 day of year-end.</p>
 
 <p><strong>Missing the VAT threshold.</strong> Your turnover crosses £90,000 in month 8 of a rolling 12-month period. You do not notice until month 11. By then you should have registered for VAT and charged it for 3 months. You now have to pay VAT out of your own pocket on invoices you already issued without it.</p>
 

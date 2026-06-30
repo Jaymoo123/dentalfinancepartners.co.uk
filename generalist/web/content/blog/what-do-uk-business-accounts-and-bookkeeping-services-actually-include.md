@@ -31,7 +31,7 @@ faqs:
 
 <p>If you are searching for <strong>accounts and bookkeeping services</strong>, you probably want to know exactly what you are paying for. Not a vague list of "compliance work" or "financial management." The actual tasks. The forms filed. The deadlines met. The numbers reconciled.</p>
 
-<p>As ICAEW qualified accountants working with UK businesses from sole traders in Sheffield to limited companies in Shoreditch, we handle accounts and bookkeeping daily. Here is exactly what a proper service includes, what it does not include, and how to choose the right level for your business.</p>
+<p>We work with UK businesses from sole traders in Sheffield to limited companies in Shoreditch, handling accounts and bookkeeping daily. Here is exactly what a proper service includes, what it does not include, and how to choose the right level for your business.</p>
 
 <h2>What Bookkeeping Actually Means in Practice</h2>
 
@@ -46,7 +46,7 @@ faqs:
 <li><strong>Sales invoicing and credit control.</strong> Some services include raising sales invoices and chasing overdue payments. Others stop at recording invoices you have raised yourself. Check which version you are signing up for.</li>
 <li><strong>Purchase invoice processing.</strong> Supplier bills are entered, coded and scheduled for payment. Tools like Dext (formerly Receipt Bank) automate the data entry, but a human still needs to check the coding is right.</li>
 <li><strong>Payroll processing.</strong> If you employ staff, the bookkeeper may run your payroll. That means calculating gross pay, deductions (PAYE, NI, pension contributions), and submitting RTI returns to HMRC before each payday. They also handle P45s, P60s and the annual payroll reports.</li>
-<li><strong>Director's loan account tracking.</strong> For limited companies, the director's loan account (DLA) needs active monitoring. Money in, money out, dividends voted, expenses paid personally. If the DLA goes overdrawn above £10,000, there are benefit-in-kind implications. If it is not repaid within 9 months and 1 day of year-end, S455 tax at 33.75% kicks in.</li>
+<li><strong>Director's loan account tracking.</strong> For limited companies, the director's loan account (DLA) needs active monitoring. Money in, money out, dividends voted, expenses paid personally. If the DLA goes overdrawn above £10,000, there are benefit-in-kind implications. If it is not repaid within 9 months and 1 day of year-end, S455 tax kicks in at 35.75% (for loans made from 6 April 2026) or 33.75% (for loans made in 2025/26 or earlier years).</li>
 </ul>
 
 <p>A good bookkeeper does all of this monthly or quarterly, not in a panic three weeks before your year-end.</p>

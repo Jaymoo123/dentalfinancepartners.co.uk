@@ -101,7 +101,7 @@ faqs:
 
 <p>If a director takes no salary, no Class 1 National Insurance contributions (NIC) are due from either the employee or the employer. The director also does not accrue qualifying years for the state pension through employment NICs. Dividend income does not count for state pension purposes.</p>
 
-<p>If the director wants to protect their state pension entitlement, they may choose to pay a small salary above the lower earnings limit (£6,396 for 2025/26). A salary of £6,396 or more in a tax year counts as a qualifying year for state pension. The employer NI on that salary is nil because it falls below the secondary threshold (£9,100 for 2025/26). The employee NI is also nil because it falls below the primary threshold (£12,570 for 2025/26).</p>
+<p>If the director wants to protect their state pension entitlement, they may choose to pay a small salary at or above the lower earnings limit (£6,500 for 2025/26, equivalent to £125 per week). A salary of £6,500 or more in a tax year counts as a qualifying year for state pension. However, £6,500 exceeds the secondary threshold (£5,000 for 2025/26), so employer NI is not nil: 15% on the £1,500 excess comes to £225 per year. The employee NI is nil because the salary falls below the primary threshold (£12,570 for 2025/26). A director who wants to avoid employer NI entirely could cap their salary at £5,000, but that falls below the LEL and does not count as a qualifying year for state pension.</p>
 
 <p>Many directors pay themselves a salary of £12,570 to use their personal allowance while keeping employer NI at zero if the Employment Allowance covers it. But if you choose zero salary, you accept the state pension consequence.</p>
 
@@ -137,7 +137,7 @@ faqs:
 
 <p>If you are unsure about your payroll setup or need help setting up a nil-paid director in your software, speak to your accountant. For directors with existing payroll setups, a quick check that your nil-paid director has an annual FPS on file is a simple way to avoid a penalty that could run into hundreds of pounds.</p>
 
-<p>Our ICAEW qualified team at Holloway Davies handles payroll compliance for directors across all sectors. If you need a payroll health check or want to set up compliant RTI submissions for your director-only company, <a href="/contact">get in touch</a>.</p>
+<p>Our experienced team at Holloway Davies handles payroll compliance for directors across all sectors. If you need a payroll health check or want to set up compliant RTI submissions for your director-only company, <a href="/contact">get in touch</a>.</p>
 
 <h2>Related articles in Payroll and PAYE</h2>
 <ul>

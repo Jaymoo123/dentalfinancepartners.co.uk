@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "Accountant for Tech Startups UK: R&D, SEIS, EIS, and Tax"
 metaDescription: "An accountant for tech startups handles R&D tax credits, SEIS/EIS compliance, share schemes, and revenue recognition. Here is what you actually get"
-altText: "Two tech startup founders reviewing financial projections with an ICAEW qualified accountant in a Manchester city centre office"
+altText: "Two tech startup founders reviewing financial projections with an experienced accountant in a Manchester city centre office"
 image: "/blog/accountant-for-tech-startups-uk.jpg"
 imageCredit:
   photographer: "Monstera Production"
@@ -35,7 +35,7 @@ faqs:
 
 <p>A general practice accountant can file your corporation tax return and your annual accounts at Companies House. That is table stakes. What a tech startup needs is an <strong>accountant for tech startups</strong> who understands the specific financial mechanics of a digital business. The difference shows up in the detail: how you recognise subscription revenue, whether you qualify for the R&D Intensive Scheme, and how you structure your share options to attract the right talent.</p>
 
-<p>At Holloway Davies, we are ICAEW qualified accountants who work with tech startups across the UK. We see the same patterns repeating. Founders overpay tax because they miss R&D claims. They structure their cap table badly. They sign contracts with revenue recognition terms that create tax headaches later. This article walks through exactly what a specialist tech startup accountant does, so you know what to look for and what to expect.</p>
+<p>At Holloway Davies, we work with tech startups across the UK. We see the same patterns repeating. Founders overpay tax because they miss R&D claims. They structure their cap table badly. They sign contracts with revenue recognition terms that create tax headaches later. This article walks through exactly what a specialist tech startup accountant does, so you know what to look for and what to expect.</p>
 
 <h2>R&D Tax Credits: The Biggest Financial Lever for UK Tech Startups</h2>
 
@@ -154,7 +154,7 @@ faqs:
 <li>Are you ICAEW qualified? This matters for credibility with investors and for the technical depth required for complex tax work.</li>
 </ul>
 
-<p>At Holloway Davies, our ICAEW qualified team works with tech startups across the UK. We handle R&D credits, SEIS/EIS compliance, management accounts, and all the day-to-day compliance. If you are a tech founder looking for an <strong>accountant for tech startups</strong> who understands your business, <a href="/contact">get in touch</a>.</p>
+<p>At Holloway Davies, our experienced team works with tech startups across the UK. We handle R&D credits, SEIS/EIS compliance, management accounts, and all the day-to-day compliance. If you are a tech founder looking for an <strong>accountant for tech startups</strong> who understands your business, <a href="/contact">get in touch</a>.</p>
 
 <p>The right accountant saves you tax, keeps you compliant, and gives you the financial clarity you need to grow. The wrong one costs you money and creates problems that surface later. Choose carefully.</p>
 

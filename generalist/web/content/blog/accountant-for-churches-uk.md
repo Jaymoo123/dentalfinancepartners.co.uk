@@ -25,7 +25,7 @@ faqs: []
 
 <p>Churches in the UK operate under a distinct set of financial rules. You are not just managing income and expenses. You are handling donations, Gift Aid claims, restricted funds, payroll for clergy and staff, and compliance with both the Charity Commission and HMRC. Get any of these wrong, and the consequences go beyond a fine. They affect your church's reputation and its ability to carry out its mission.</p>
 
-<p>That is why a general practice accountant often falls short. You need a specialist <strong>accountant for churches</strong> who understands the Charity Statement of Recommended Practice (SORP), the specific rules around charitable giving, and the nuances of clergy taxation. At Holloway Davies, our ICAEW qualified team works with churches across the UK, from small local fellowships to larger multi-site organisations.</p>
+<p>That is why a general practice accountant often falls short. You need a specialist <strong>accountant for churches</strong> who understands the Charity Statement of Recommended Practice (SORP), the specific rules around charitable giving, and the nuances of clergy taxation. At Holloway Davies, our experienced team works with churches across the UK, from small local fellowships to larger multi-site organisations.</p>
 
 <h2>What Makes Church Accounting Different?</h2>
 
@@ -67,7 +67,7 @@ faqs: []
 <li><strong>ICAEW qualification.</strong> Look for an ICAEW qualified firm. This ensures they follow the highest professional standards.</li>
 </ul>
 
-<p>At Holloway Davies, we meet all of these criteria. Our <a href="/about">ICAEW qualified team</a> has specific experience with church finances. We are not a general practice firm trying to fit church work into a standard template.</p>
+<p>At Holloway Davies, our <a href="/about">specialist team</a> has specific experience with church finances, Gift Aid claims, clergy payroll, and Charity Commission filing. We are not a general practice firm trying to fit church work into a standard template.</p>
 
 <h2>Common Mistakes Churches Make with Their Finances</h2>
 
@@ -115,7 +115,7 @@ faqs: []
 
 <p>We are not a general practice firm that happens to work with a few charities. We have structured our practice to serve churches and other faith-based organisations. Our team understands the unique pressures you face: balancing mission with financial stewardship, managing volunteer treasurers, and maintaining transparency with your congregation.</p>
 
-<p>We are ICAEW qualified, which means we adhere to the highest professional standards in the UK. We are regulated and insured. We file your accounts and returns on time, every time. And we are based in the UK, so we understand the specific rules for England, Wales, Scotland, and Northern Ireland.</p>
+<p>We work to high professional standards in the UK. We carry professional indemnity insurance. We file your accounts and returns on time, every time. And we are based in the UK, so we understand the specific rules for England, Wales, Scotland, and Northern Ireland.</p>
 
 <p>If you are looking for a reliable <strong>accountant for churches</strong>, we would welcome a conversation. <a href="/contact">Contact us</a> to discuss your church's needs. We can start with a free, no-obligation call to see if we are a good fit.</p>
 

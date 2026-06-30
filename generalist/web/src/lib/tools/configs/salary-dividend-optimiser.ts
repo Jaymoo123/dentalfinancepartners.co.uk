@@ -7,11 +7,11 @@ export const salaryDividendTool: GenericTool = {
   slug: "salary-dividend-optimiser",
   name: "Salary & Dividend Optimiser",
   category: "Limited Company",
-  oneLiner: "Find the most tax-efficient mix of salary and dividends for a UK limited company director. 2025/26 rates.",
+  oneLiner: "Find the most tax-efficient mix of salary and dividends for a UK limited company director. 2026/27 rates.",
   embedHeight: 620,
-  metaTitle: "Salary & Dividend Optimiser 2025/26 | Free UK Calculator",
+  metaTitle: "Salary & Dividend Optimiser 2026/27 | Free UK Calculator",
   metaDescription:
-    "Free salary vs dividend calculator for UK limited company directors. Optimal split using 2025/26 tax rates.",
+    "Free salary vs dividend calculator for UK limited company directors. Optimal split using 2026/27 tax rates.",
   intro:
     "Pay yourself too much salary and you waste personal allowance against National Insurance. Take too much dividend and you push yourself into higher-rate dividend tax. The calculator tests every salary from £0 to £60,000 in £10 steps and returns the split that leaves the most cash in your pocket after all taxes.",
   ctaLabel: "Book a free call",
@@ -60,14 +60,14 @@ export const salaryDividendTool: GenericTool = {
     heading: "How the optimiser works",
     paragraphs: [
       "For a UK limited company director, the most tax-efficient extraction typically combines a small salary with dividends drawn from post-tax profit. The model applies corporation tax, employer NI, employee NI, income tax, and dividend tax together so you see the true net position rather than each tax in isolation.",
-      "The 2025/26 secondary threshold is £5,000, so any salary above £5,000 attracts 15% employer NI — unless the Employment Allowance (£10,500) is available to offset it. The calculator models both scenarios.",
+      "The 2026/27 secondary threshold is £5,000, so any salary above £5,000 attracts 15% employer NI (unless the Employment Allowance of £10,500 is available to offset it). The calculator models both scenarios.",
     ],
   },
   faqs: [
     {
       question: "What rates does this calculator use?",
       answer:
-        "UK 2025/26 rates: personal allowance £12,570, basic rate 20%, higher rate 40%, additional rate 45%. Dividend allowance £500, dividend rates 8.75% / 33.75% / 39.35%. Employer NI 15% above £5,000 secondary threshold. Employee NI 8% between £12,570 and £50,270, 2% above. Corporation tax 19% (small profits ≤ £50k), 25% (main rate ≥ £250k), 26.5% marginal rate in between.",
+        "UK 2026/27 rates: personal allowance £12,570, basic rate 20%, higher rate 40%, additional rate 45%. Dividend allowance £500, dividend rates 10.75% / 35.75% / 39.35%. Employer NI 15% above £5,000 secondary threshold. Employee NI 8% between £12,570 and £50,270, 2% above. Corporation tax 19% (small profits ≤ £50k), 25% (main rate ≥ £250k), 26.5% marginal rate in between.",
     },
     {
       question: "Does it cover the marginal corporation tax rate?",
@@ -77,7 +77,7 @@ export const salaryDividendTool: GenericTool = {
     {
       question: "Is the result personal tax advice?",
       answer:
-        "No. This is a model based on standard 2025/26 thresholds. It assumes no other income, no student loans, no pension contributions, and the standard UK personal allowance. For advice specific to your situation, book a free call with our team.",
+        "No. This is a model based on standard 2026/27 thresholds. It assumes no other income, no student loans, no pension contributions, and the standard UK personal allowance. For advice specific to your situation, book a free call with our team.",
     },
     {
       question: "How does taking salary vs dividends affect corporation tax?",

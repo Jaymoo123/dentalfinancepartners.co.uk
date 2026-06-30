@@ -20,7 +20,7 @@ summary: "Making Tax Digital for income tax (MTD ITSA) goes live in April 2026 f
 schema: ""
 faqs:
   - question: "Do I submit one quarterly update or two if I have a trade and a rental property?"
-    answer: "You submit two separate quarterly updates each quarter. One for your trade income and expenses, one for your rental income and expenses. You cannot combine them into a single submission. Over four quarters, that means eight submissions per year, plus two end-of-period statements and one final declaration."
+    answer: "You submit two separate quarterly updates each quarter. One for your trade income and expenses, one for your rental income and expenses. You cannot combine them into a single submission. Over four quarters, that means eight submissions per year, plus one final declaration that brings both income streams together and replaces the SA100."
   - question: "What if my rental income is below £1,000 and I use the property allowance?"
     answer: "If you formally elect for the property allowance, you do not need to report that rental income at all. It does not count toward the MTD ITSA threshold. But you must make the election. If you do not, the rental income counts toward your total qualifying income, even if it is below £1,000."
   - question: "Can I use a spreadsheet for MTD ITSA if I have a rental property?"
@@ -35,11 +35,11 @@ faqs:
 
 <h2>What Is Making Tax Digital for Income Tax?</h2>
 
-<p>Making Tax Digital for income tax requires you to keep digital records and send quarterly updates to HMRC using compatible software. At the end of the year, you submit an end-of-period statement (EOPS) and a final declaration. The annual self assessment return (SA100) will still exist in some form for the first few years, but the quarterly updates become the primary reporting mechanism.</p>
+<p>Making Tax Digital for income tax requires you to keep digital records and send quarterly updates to HMRC using compatible software. At the end of the year, you submit a single final declaration that confirms the year's figures and replaces the SA100 for MTD purposes. The quarterly updates become the primary reporting mechanism throughout the year.</p>
 
 <p>This is not a voluntary scheme. If your qualifying income from self-employment and property combined exceeds the threshold, you must comply. The penalties for late or missed quarterly updates are still being finalised, but HMRC has indicated a points-based system similar to VAT late filing penalties.</p>
 
-<p>As ICAEW qualified accountants, we are already helping clients prepare their digital records and select the right software. The key difference most people miss is this: if you have both a trade and a rental property, you do not submit one quarterly update. You submit two.</p>
+<p>We are already helping clients prepare their digital records and select the right software. The key difference most people miss is this: if you have both a trade and a rental property, you do not submit one quarterly update. You submit two.</p>
 
 <h2>One Threshold, Two Income Streams</h2>
 
@@ -47,7 +47,7 @@ faqs:
 
 <p>Here is the critical point. The threshold is combined. But the reporting is separate.</p>
 
-<p>You must keep distinct digital records for your trade and for your rental property. You must submit separate quarterly updates for each. And you must submit separate end-of-period statements for each at year end.</p>
+<p>You must keep distinct digital records for your trade and for your rental property. You must submit separate quarterly updates for each. At year end, you then submit one final declaration that covers both income streams together.</p>
 
 <p>Let us use a real example. A self-employed electrician in Sheffield turns over £65,000 from his trade, with allowable expenses of £20,000, giving a profit of £45,000. He also owns a terraced house in Kelham Island that he lets for £12,000 a year, with mortgage interest and maintenance costs of £5,000, giving a rental profit of £7,000. His total qualifying income is £52,000. He is mandated from April 2026.</p>
 
@@ -84,17 +84,15 @@ faqs:
 
 <p>If you use separate software for your trade and your property, that is fine. Each must be MTD-compatible. You just submit each quarterly update from the relevant software.</p>
 
-<p>We recommend speaking to your accountant before choosing software. Some packages handle the end-of-period statements and final declaration more smoothly than others. The last thing you want is to reach April 2027 and realise your software cannot generate the EOPS for your rental property.</p>
+<p>We recommend speaking to your accountant before choosing software. Some packages handle multiple income streams and the final declaration more smoothly than others. The last thing you want is to reach April 2027 and realise your software cannot submit separate quarterly updates for both your trade and your rental property.</p>
 
-<h2>End-of-Period Statements and the Final Declaration</h2>
+<h2>The Final Declaration</h2>
 
-<p>After the fourth quarter, you submit an end-of-period statement for each income stream. The EOPS confirms the final figures for the year. You then submit a final declaration which replaces the current self assessment return for MTD purposes.</p>
+<p>After the fourth quarterly update for each income stream, you submit a single final declaration. There is no separate end-of-period statement. The final declaration confirms the figures for both your trade and your rental property together, and it replaces the current self assessment return (SA100) for MTD purposes.</p>
 
-<p>For the sole trader with a rental property, that means two EOPS submissions: one for the trade, one for the property. Then one final declaration that brings everything together.</p>
+<p>The final declaration also includes any other income not captured by the quarterly updates, such as bank interest, dividends, or capital gains. You can make claims for reliefs and allowances at this stage.</p>
 
-<p>The final declaration includes any other income not captured by the quarterly updates, such as bank interest, dividends, or capital gains. You can also make claims for reliefs and allowances at this stage.</p>
-
-<p>HMRC has confirmed that the final declaration will replace the SA100 for those mandated for MTD ITSA. But for the first few years, you may still need to submit a separate return for certain reliefs or if you have income streams outside MTD.</p>
+<p>For the first few years of mandation, you may still need to file a separate return for certain reliefs or for income streams outside MTD. HMRC has confirmed the final declaration is the primary year-end mechanism for those in scope.</p>
 
 <h2>What About Partnerships?</h2>
 
@@ -138,7 +136,7 @@ faqs:
 
 <h2>How We Can Help</h2>
 
-<p>Our ICAEW qualified team works with sole traders, landlords, and partnerships across the UK. We help you set up your digital records, choose the right software, and manage the quarterly reporting cycle. If you have both a trade and a rental property, we make sure both income streams are handled correctly.</p>
+<p>Our experienced team works with sole traders, landlords, and partnerships across the UK. We help you set up your digital records, choose the right software, and manage the quarterly reporting cycle. If you have both a trade and a rental property, we make sure both income streams are handled correctly.</p>
 
 <p>We are based in Manchester but work with clients remotely from London to Edinburgh. If your combined income is approaching the MTD threshold, get in touch early. The software setup and record migration take time, and the last quarter of the tax year is not the time to start.</p>
 

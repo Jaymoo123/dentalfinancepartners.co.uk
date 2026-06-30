@@ -33,14 +33,14 @@ faqs:
 
 <p>This guide walks through every step of how to set up PAYE for a new business. It covers registration, software, running payroll, and the ongoing obligations you cannot afford to miss.</p>
 
-<p>As ICAEW qualified accountants, we handle payroll setup for clients across the UK from Manchester's Northern Quarter to Bristol's Harbourside. The steps below are what we follow every time.</p>
+<p>We handle payroll setup for clients across the UK from Manchester's Northern Quarter to Bristol's Harbourside. The steps below are what we follow every time.</p>
 
 <h2>Do You Need to Register as an Employer?</h2>
 
 <p>You must register for PAYE if you pay any of the following to someone who works for you:</p>
 
 <ul>
-<li>An employee earning above £123 a week (the Lower Earnings Limit for NIC purposes)</li>
+<li>An employee earning above £125 a week (the £6,500/year Lower Earnings Limit for 2025/26)</li>
 <li>An employee receiving expenses or benefits</li>
 <li>A director of a limited company taking a salary</li>
 <li>A pensioner receiving occupational pensions from you</li>
@@ -116,7 +116,7 @@ faqs:
 <ul>
 <li>Income tax (based on tax code and cumulative pay)</li>
 <li>Employee National Insurance (Class 1, 8% on earnings between £12,570 and £50,270, then 2% above that)</li>
-<li>Employer National Insurance (13.8% on earnings above £9,100 a year)</li>
+<li>Employer National Insurance (15% on earnings above the £5,000 secondary threshold, from 6 April 2025)</li>
 <li>Net pay (gross pay minus deductions)</li>
 </ul>
 
@@ -184,7 +184,7 @@ faqs:
 
 <p>Most limited company directors pay themselves a small salary and take the rest as dividends. The most tax-efficient salary for 2025/26 is £12,570 a year. This matches the personal allowance and the primary NI threshold. You pay no income tax and no employee NI on this amount.</p>
 
-<p>But employer NI applies above the secondary threshold of £9,100. On a £12,570 salary, the employer NI is roughly £478 a year. If you claim the Employment Allowance, that £478 is covered. Many multi-director companies claim the allowance and pay no employer NI at all.</p>
+<p>But employer NI applies above the secondary threshold of £5,000 (from 6 April 2025, continuing into 2026/27). On a £12,570 salary, the employer NI is roughly £1,136 a year (£12,570 minus £5,000, multiplied by 15%). If you claim the Employment Allowance, that £1,136 is covered. Many multi-director companies claim the allowance and pay no employer NI at all.</p>
 
 <p>To set up payroll for yourself as a director, follow the same steps above. Add yourself as an employee with your correct details. Use tax code 1257L. Pay yourself monthly or quarterly. Submit the FPS each time.</p>
 

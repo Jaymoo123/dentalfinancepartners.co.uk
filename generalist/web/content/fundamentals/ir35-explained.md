@@ -6,8 +6,8 @@ date: "2026-05-17"
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "IR35 Explained: Complete UK Guide for Contractors"
-metaDescription: "IR35 explained for UK contractors and businesses. How it works, who it affects, inside vs outside IR35, the CEST tool, and what to do next. Expert ICAEW"
-altText: "ICAEW qualified accountant reviewing IR35 contract status documents in a UK office"
+metaDescription: "IR35 explained for UK contractors and businesses. How it works, who it affects, inside vs outside IR35, the CEST tool, and what to do next. Specialist accountant guidance."
+altText: "Accountant reviewing IR35 contract status documents in a UK office"
 image: "/blog/ir35-explained.jpg"
 imageCredit:
   photographer: "Thirdman"
@@ -34,7 +34,7 @@ faqs:
 
 <p>If you are a contractor, IR35 determines whether you can pay yourself through dividends and retain the tax advantages of running a limited company, or whether you must be taxed on a "deemed employment" basis where your limited company pays employer NI and deducts PAYE and employee NI from your income. If you are a business that hires contractors, IR35 determines whether you or the contractor is responsible for making that determination.</p>
 
-<p>This guide is for UK business owners, contractors, freelancers, sole traders considering incorporation, and small businesses that engage contractors. It covers the rules as they stand for the 2025/26 tax year, including the changes that took effect from April 2021 for medium and large businesses, and the ongoing reforms to the off-payroll working rules. We are ICAEW qualified accountants who work with contractors and businesses across the UK, from London's Shoreditch to Manchester's Northern Quarter, and we have seen the full range of IR35 scenarios.</p>
+<p>This guide is for UK business owners, contractors, freelancers, sole traders considering incorporation, and small businesses that engage contractors. It covers the rules as they stand for the 2025/26 tax year, including the changes that took effect from April 2021 for medium and large businesses, and the ongoing reforms to the off-payroll working rules. We work with contractors and businesses across the UK, from London's Shoreditch to Manchester's Northern Quarter, and we have seen the full range of IR35 scenarios.</p>
 
 <p>IR35 explained properly means understanding three things: what triggers it, how to assess your status, and what happens when HMRC challenges you. Let us start with the fundamentals.</p>
 
@@ -328,7 +328,7 @@ faqs:
 <li><strong>Separate your finances.</strong> If you have a mix of inside and outside IR35 contracts, keep separate records. Your accountant needs to know which income is which.</li>
 <li><strong>Plan your pension.</strong> Pension contributions reduce your deemed employment payment. If you are inside IR35, maximise your pension contributions to reduce your tax bill.</li>
 <li><strong>Review your insurance.</strong> Professional indemnity insurance is essential for outside IR35 contracts. Inside IR35, your client's insurance may cover you, but check.</li>
-<li><strong>Speak to an accountant.</strong> IR35 is complex. A single mistake can cost you thousands. We are <a href="/services">ICAEW qualified accountants</a> who specialise in contractor tax. <a href="/contact">Contact us</a> for a review of your IR35 position.</li>
+<li><strong>Speak to an accountant.</strong> IR35 is complex. A single mistake can cost you thousands. We are specialist accountants experienced in contractor tax; see our <a href="/services">services page</a>. <a href="/contact">Contact us</a> for a review of your IR35 position.</li>
 </ol>
 
 <h3>For Businesses Hiring Contractors</h3>

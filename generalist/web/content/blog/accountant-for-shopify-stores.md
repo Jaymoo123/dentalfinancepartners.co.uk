@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Accountant for Shopify Stores UK: Tax, VAT & Compliance"
-metaDescription: "Running a Shopify store? We cover VAT on digital goods, cross-border sales, stock valuation, and R&D credits. Practical tax guidance from ICAEW qualified"
+metaDescription: "Running a Shopify store? We cover VAT on digital goods, cross-border sales, stock valuation, and R&D credits. Practical tax guidance from specialist accountants."
 altText: "A UK accountant reviewing Shopify sales reports and tax documents at a desk in a modern office."
 image: "/blog/accountant-for-shopify-stores.jpg"
 imageCredit:
@@ -39,7 +39,7 @@ faqs:
 
 <p>We see common errors: misreporting VAT on digital services to EU customers, failing to register for VAT in the right EU member states, and claiming the wrong rate of capital allowances on packaging equipment. These mistakes cost money in penalties, interest, or missed relief.</p>
 
-<p>As ICAEW qualified accountants, we structure our approach around the specific revenue model of each Shopify store. A store selling physical goods to UK customers only has a different compliance burden to one selling digital downloads worldwide.</p>
+<p>We structure our approach around the specific revenue model of each Shopify store. A store selling physical goods to UK customers only has a different compliance burden to one selling digital downloads worldwide.</p>
 
 <h2>VAT and Shopify: The Rules You Need to Know</h2>
 
@@ -133,6 +133,6 @@ faqs:
 <li>Do they work with MTD-compatible software that integrates with Shopify?</li>
 </ul>
 
-<p>At Holloway Davies, our ICAEW qualified team works with Shopify stores across multiple sectors. We handle the full compliance cycle: bookkeeping, VAT returns, corporation tax, payroll, and R&D claims. We also advise on structuring your business for growth, whether that means incorporating, raising investment, or expanding into new markets.</p>
+<p>At Holloway Davies, our specialist team works with Shopify stores across multiple sectors. We handle the full compliance cycle: bookkeeping, VAT returns, corporation tax, payroll, and R&D claims. We also advise on structuring your business for growth, whether that means incorporating, raising investment, or expanding into new markets.</p>
 
 <p>If you want to discuss your specific situation, <a href="/contact">contact our team</a>. We will review your current setup and identify where the risks and opportunities sit.</p>

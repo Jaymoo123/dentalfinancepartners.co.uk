@@ -2,14 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteContainerLg, sectionY, btnPrimary, btnSecondary } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { JsonLd, buildService, buildBreadcrumb } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: `Services`,
-  description: `Accounting, tax and advisory services for UK limited companies, sole traders, contractors and partnerships. Corporation tax, VAT, payroll, R&D credits and exit planning. ICAEW chartered network, fixed fees.`,
+  // Brand-less title: the layout template appends " | Holloway Davies" once.
+  title: `Small Business Accounting Services`,
+  description: `Accounting, tax and advisory for UK small businesses: corporation tax, VAT, payroll, self assessment, R&D credits and exit planning. Fixed fees, one named accountant.`,
   alternates: { canonical: `${siteConfig.url}/services` },
   openGraph: {
-    title: `Services | ${siteConfig.name}`,
-    description: "Accounting, tax and advisory for UK businesses of every shape.",
+    title: `Small Business Accounting Services | ${siteConfig.name}`,
+    description: "Accounting, tax and advisory for UK small businesses. Fixed fees, one named accountant.",
     url: `${siteConfig.url}/services`,
     type: "website",
   },
@@ -52,7 +55,7 @@ const services = [
   {
     n: "04",
     title: "Payroll, PAYE and pensions",
-    body: "Monthly payroll runs, RTI submissions, Employment Allowance claims (up to £5,000), salary-sacrifice schemes, workplace pension administration and auto-enrolment.",
+    body: "Monthly payroll runs, RTI submissions, Employment Allowance claims (up to £10,500), salary-sacrifice schemes, workplace pension administration and auto-enrolment.",
     bullets: [
       "Monthly payroll and payslips",
       "RTI and FPS submissions",
@@ -113,7 +116,7 @@ const included = [
   },
   {
     label: "Named accountant",
-    body: "One ICAEW-qualified accountant on the engagement. No call-centre routing.",
+    body: "One accountant on the engagement, consistent throughout. No call-centre routing.",
   },
   {
     label: "Cloud-first",
@@ -126,8 +129,25 @@ const included = [
 ];
 
 export default function ServicesPage() {
+  const serviceSchema = buildService({
+    name: "Accounting and tax services for UK small businesses",
+    description:
+      "Year-end accounts and corporation tax, VAT and Making Tax Digital, payroll, director pay planning, R&D tax credits, incorporation, self assessment and exit planning for UK small businesses.",
+    url: "/services",
+    serviceType: "Small business accounting and tax advice",
+    areaServed: "United Kingdom",
+    hasOfferCatalog: {
+      name: "Service lines",
+      items: services.map((s) => s.title),
+    },
+  });
+  const breadcrumbSchema = buildBreadcrumb([
+    { label: "Home", href: "/" },
+    { label: "Services" },
+  ]);
   return (
     <>
+      <JsonLd data={[serviceSchema, breadcrumbSchema]} />
       {/* Hero */}
       <section className={`${sectionY} bg-[#fafaf7]`}>
         <div className={siteContainerLg}>
@@ -141,7 +161,7 @@ export default function ServicesPage() {
             <p className="mt-8 max-w-2xl text-lg leading-relaxed text-neutral-600 sm:text-xl">
               Eight service lines covering everything a UK business needs across a
               trading year, from incorporation through annual filings to exit. One
-              named ICAEW accountant, fixed fee, plain English.
+              named accountant, fixed fee, plain English.
             </p>
             <div className="mt-12 flex flex-col sm:flex-row gap-3">
               <Link href="/contact" className={btnPrimary}>
@@ -213,10 +233,10 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className={`${sectionY} bg-[#fafaf7]`}>
+      {/* CTA + lead form */}
+      <section className={`${sectionY} bg-[#fafaf7] border-t border-neutral-200`}>
         <div className={siteContainerLg}>
-          <div className="grid lg:grid-cols-[2fr_1fr] gap-12 items-center">
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
               <p className="font-mono text-xs uppercase tracking-widest text-orange-500">
                 Next step
@@ -224,11 +244,39 @@ export default function ServicesPage() {
               <h2 className="mt-4 text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl text-balance">
                 A short call. A clear quote. No follow-up sequence.
               </h2>
+              <p className="mt-6 max-w-xl text-base leading-relaxed text-neutral-600">
+                Tell us where the business sits today and which service lines you need.
+                We come back with a fixed-fee quote and a short note on what the
+                engagement would look like. No pitch deck, no obligation.
+              </p>
+              <p className="mt-8 text-sm text-neutral-500">
+                Prefer to browse first?{" "}
+                <Link
+                  href="/calculators"
+                  className="font-medium text-orange-600 underline underline-offset-4 hover:text-orange-700"
+                >
+                  Try the calculators
+                </Link>{" "}
+                or{" "}
+                <Link
+                  href="/contact"
+                  className="font-medium text-orange-600 underline underline-offset-4 hover:text-orange-700"
+                >
+                  see other ways to reach us
+                </Link>
+                .
+              </p>
             </div>
-            <div className="flex lg:justify-end">
-              <Link href="/contact" className={btnPrimary}>
-                Book a free call
-              </Link>
+            <div className="bg-white border border-neutral-200 p-6 sm:p-8">
+              <h3 className="text-xl font-semibold tracking-tight text-neutral-900">
+                Request a fixed-fee quote
+              </h3>
+              <p className="mt-2 text-sm text-neutral-600">
+                One named accountant will reply within one working day.
+              </p>
+              <div className="mt-6">
+                <LeadForm redirectOnSuccess={false} submitLabel="Request a quote" />
+              </div>
             </div>
           </div>
         </div>

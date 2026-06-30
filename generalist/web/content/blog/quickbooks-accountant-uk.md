@@ -37,7 +37,7 @@ faqs:
 
 <p>A QuickBooks accountant is simply a qualified accountant who specialises in using QuickBooks software to manage a client's bookkeeping, VAT, payroll, and year-end accounts. They do not just know accounting. They know how the software handles transactions, reconciliations, VAT returns, and the specific reporting formats that HMRC requires.</p>
 
-<p>At Holloway Davies, our ICAEW qualified team works with QuickBooks across all plan levels, from the self-employed version through to QuickBooks Online Advanced. We set up the chart of accounts, connect bank feeds, reconcile monthly, handle VAT returns under MTD, run payroll through QuickBooks Payroll, and produce year-end accounts directly from the data.</p>
+<p>At Holloway Davies, our experienced team works with QuickBooks across all plan levels, from the self-employed version through to QuickBooks Online Advanced. We set up the chart of accounts, connect bank feeds, reconcile monthly, handle VAT returns under MTD, run payroll through QuickBooks Payroll, and produce year-end accounts directly from the data.</p>
 
 <p>The key difference between a general accountant and a QuickBooks accountant is familiarity with the software's quirks. QuickBooks handles opening balances differently to Xero. Its VAT treatment on credit notes needs a specific workflow. The reporting suite is powerful but only if you know which report to run and how to interpret it.</p>
 
@@ -71,7 +71,7 @@ faqs:
 
 <h3>ICAEW or ACCA Qualification</h3>
 
-<p>Software knowledge is important, but accounting knowledge is non-negotiable. Your accountant should be qualified with a recognised body like ICAEW, ACCA, or CIMA. At Holloway Davies, we are ICAEW qualified. That means we are bound by the Institute's ethical and professional standards, we carry professional indemnity insurance, and we are subject to regular practice reviews. A qualified accountant who knows QuickBooks is far more valuable than a bookkeeper who knows the software but cannot advise on corporation tax planning or dividend strategy.</p>
+<p>Software knowledge is important, but accounting knowledge is non-negotiable. Your accountant should be qualified with a recognised body like ICAEW, ACCA, or CIMA. At Holloway Davies, we work to high professional standards, carry professional indemnity insurance, and are subject to regular practice reviews. A qualified accountant who knows QuickBooks is far more valuable than a bookkeeper who knows the software but cannot advise on corporation tax planning or dividend strategy.</p>
 
 <h3>Experience With Your Business Type</h3>
 
@@ -137,7 +137,7 @@ faqs:
 
 <h3>Director's Loan Account Errors</h3>
 
-<p>If you take money out of your limited company that is not salary, dividends, or expenses, it goes into your director's loan account. If the balance is overdrawn at the year end and not repaid within 9 months and 1 day, the company pays S455 tax at 33.75%. QuickBooks can track the loan account, but only if you record every withdrawal and repayment correctly. An accountant monitors the loan account and advises on the tax implications.</p>
+<p>If you take money out of your limited company that is not salary, dividends, or expenses, it goes into your director's loan account. If the balance is overdrawn at the year end and not repaid within 9 months and 1 day, the company pays S455 tax at 35.75% for loans made on or after 6 April 2026 (33.75% for loans made in 2025/26). QuickBooks can track the loan account, but only if you record every withdrawal and repayment correctly. An accountant monitors the loan account and advises on the tax implications.</p>
 
 <h2>How to Find the Right QuickBooks Accountant UK for Your Business</h2>
 

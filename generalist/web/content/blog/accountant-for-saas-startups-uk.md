@@ -95,7 +95,7 @@ faqs:
 
 <p>Your team is your biggest cost and your biggest asset. Getting payroll right is not just about paying people on time. It is about structuring salaries and dividends tax-efficiently for yourself and your co-founders, and setting up EMI options for employees.</p>
 
-<p>For founder directors, the most tax-efficient approach is usually a salary of £12,570 per year (the personal allowance and NI primary threshold) plus dividends up to the basic rate band. Above that, you are into higher rate tax territory and the dividend tax rates (33.75% higher rate, 39.35% additional rate) kick in.</p>
+<p>For founder directors, the most tax-efficient approach is usually a salary of £12,570 per year (the personal allowance and NI primary threshold) plus dividends up to the basic rate band. Above that, you are into higher rate tax territory and the dividend tax rates (35.75% higher rate, 39.35% additional rate, from 6 April 2026) kick in.</p>
 
 <p>For employees, you need to run payroll through software like BrightPay or Xero Payroll, file RTI returns to HMRC each month, and issue P60s at year end. If you offer share options, you need to register the EMI scheme with HMRC within 92 days of grant and file annual returns.</p>
 
@@ -103,7 +103,7 @@ faqs:
 
 <h2>How Holloway Davies Works with SaaS Startups</h2>
 
-<p>We are an ICAEW qualified accountancy firm based in the UK. Our team works with SaaS startups at every stage: pre-revenue founders building their MVP, bootstrapped companies turning over £100k, and venture-backed startups scaling towards £5m ARR.</p>
+<p>We are a specialist accountancy firm based in the UK. Our team works with SaaS startups at every stage: pre-revenue founders building their MVP, bootstrapped companies turning over £100k, and venture-backed startups scaling towards £5m ARR.</p>
 
 <p>We offer a fixed-fee monthly subscription model that covers:</p>
 <ul>

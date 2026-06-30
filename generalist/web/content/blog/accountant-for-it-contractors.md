@@ -134,7 +134,7 @@ faqs:
 <li><strong>Transparent pricing.</strong> Avoid firms that hide their fees or charge extra for basic services like filing a VAT return or issuing a P60.</li>
 </ul>
 
-<p>As <a href="/about">ICAEW qualified accountants</a> at Holloway Davies, we work with IT contractors across the UK, from solo developers in Shoreditch to six-figure consultants in Manchester's Northern Quarter and teams of contractors in Birmingham's Jewellery Quarter. We know the rules and we keep you compliant.</p>
+<p>As specialist accountants at Holloway Davies, we work with IT contractors across the UK, from solo developers in Shoreditch to six-figure consultants in Manchester's Northern Quarter and teams of contractors in Birmingham's Jewellery Quarter. We know the rules and we keep you compliant.</p>
 
 <h2>Common Mistakes IT Contractors Make With Their Accounting</h2>
 

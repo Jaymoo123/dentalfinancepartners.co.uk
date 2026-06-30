@@ -35,18 +35,28 @@ faqs:
 
 <h2>What Triggers a Late Filing Penalty</h2>
 
-<p>HMRC issues penalties automatically when your company accounts or corporation tax return (CT600) are filed after the statutory deadline. For a private limited company, that deadline is nine months after your accounting year-end. The penalty structure is fixed:</p>
+<p>Two separate bodies can issue late filing penalties: Companies House (for annual accounts) and HMRC (for the corporation tax return, the CT600). The deadlines and penalty structures are different, so it helps to understand each one separately.</p>
 
+<p><strong>Companies House: annual accounts (private company, due 9 months after your accounting year-end)</strong></p>
 <ul>
-<li>1 day late: £150</li>
-<li>3 months late: another £150 (total £300)</li>
-<li>6 months late: £1,500 or 10% of the tax due (whichever is higher)</li>
-<li>12 months late: £1,500 or 10% of the tax due (whichever is higher)</li>
+<li>Up to 1 month late: £150</li>
+<li>1 to 3 months late: £375</li>
+<li>3 to 6 months late: £750</li>
+<li>More than 6 months late: £1,500</li>
+</ul>
+<p>All amounts double if your accounts were also late the previous year.</p>
+
+<p><strong>HMRC: CT600 corporation tax return (due 12 months after the accounting period end; the corporation tax itself is due 9 months and 1 day after period end)</strong></p>
+<ul>
+<li>1 day late: £100</li>
+<li>3 months late: a further £100 (total £200)</li>
+<li>6 months late: 10% of the unpaid tax</li>
+<li>12 months late: a further 10% of the unpaid tax</li>
 </ul>
 
-<p>These penalties apply even if your company owes no tax. HMRC does not care whether you had a zero liability. The obligation to file on time is separate from the obligation to pay tax.</p>
+<p>Both sets of penalties apply even if your company owes no tax. The obligation to file on time is entirely separate from the obligation to pay.</p>
 
-<p>If your company also failed to file a confirmation statement with Companies House, that is a separate penalty regime with its own late filing penalties starting at £150. The two are handled by different bodies, but the same limited company accountant can often manage both.</p>
+<p>If your company also failed to file a confirmation statement with Companies House, there is no automatic financial penalty for that. The risk is that Companies House may strike the company off the register or refer the matter for prosecution. The same limited company accountant can help you bring the company's filing record up to date and, where needed, apply for restoration.</p>
 
 <h2>Grounds for Appeal: Reasonable Excuse</h2>
 
@@ -111,7 +121,7 @@ faqs:
 <li>What steps have been taken to ensure it does not happen again</li>
 </ul>
 
-<p>The last point matters more than most directors realise. HMRC wants to see that you have fixed the underlying problem. If your previous accountant let you down, we explain that you have now appointed an ICAEW-qualified firm with proper compliance systems. If you had a health issue, we explain that you have delegated filing responsibility to someone else.</p>
+<p>The last point matters more than most directors realise. HMRC wants to see that you have fixed the underlying problem. If your previous accountant let you down, we explain that you have now appointed a specialist firm with proper compliance systems. If you had a health issue, we explain that you have delegated filing responsibility to someone else.</p>
 
 <h3>Step 4: Submit the Appeal</h3>
 
@@ -141,7 +151,7 @@ faqs:
 
 <p><strong>The HMRC system error.</strong> A software consultancy in Manchester tried to file its CT600 through the HMRC portal on the deadline day. The portal returned an error message each time. The director called HMRC and was told to try again later. By the time the issue was resolved, the deadline had passed. We submitted screenshots of the error messages, a call log from HMRC, and a timeline of the attempts. The penalty was cancelled within three weeks.</p>
 
-<p><strong>The illness.</strong> A sole director of a Birmingham-based construction company was hospitalised with pneumonia for two weeks. The filing deadline fell during that period. No one else in the company had authority to file. We submitted the hospital discharge summary and a letter from the GP. HMRC accepted the reasonable excuse and cancelled the £300 penalty.</p>
+<p><strong>The illness.</strong> A sole director of a Birmingham-based construction company was hospitalised with pneumonia for two weeks. The filing deadline fell during that period. No one else in the company had authority to file. We submitted the hospital discharge summary and a letter from the GP. HMRC accepted the reasonable excuse and cancelled the £200 penalty.</p>
 
 <h2>When You Should Not Appeal</h2>
 
@@ -169,4 +179,4 @@ faqs:
 
 <p>If you have received a penalty notice and want to know whether you have grounds to appeal, the first step is to check the notice date and the reason given. Then gather whatever documents support your case. Then speak to someone who knows how HMRC's penalty system actually works.</p>
 
-<p>Our ICAEW-qualified team handles penalty appeals for limited companies across the UK, from Shoreditch startups to family-run manufacturers in the Jewellery Quarter. If you need help with an appeal, or if you want to set up a compliance system that keeps you penalty-free, <a href="/contact">get in touch</a>.</p>
+<p>Our experienced team handles penalty appeals for limited companies across the UK, from Shoreditch startups to family-run manufacturers in the Jewellery Quarter. If you need help with an appeal, or if you want to set up a compliance system that keeps you penalty-free, <a href="/contact">get in touch</a>.</p>

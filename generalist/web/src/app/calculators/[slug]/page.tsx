@@ -75,7 +75,7 @@ export default async function CalculatorPage({
           <div className="mt-6 max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-orange-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
               <CalcIcon className="h-3.5 w-3.5" />
-              Free calculator · 2025/26 rates
+              Free calculator · 2026/27 rates
             </div>
             <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">{tool.name}</h1>
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">{tool.intro}</p>
@@ -119,7 +119,7 @@ export default async function CalculatorPage({
                 Numbers are one thing. Getting the timing right is another.
               </h2>
               <p className="mt-3 text-base sm:text-lg text-slate-200 leading-relaxed">
-                Every figure here is modelled on standard 2025/26 thresholds. Your actual position
+                Every figure here is modelled on standard 2026/27 thresholds. Your actual position
                 depends on prior-year usage, pension carry-forward, other income sources, and how
                 your decisions interact with each other. We build those models as part of our
                 advisory work.

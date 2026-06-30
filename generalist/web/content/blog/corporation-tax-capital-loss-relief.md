@@ -162,7 +162,7 @@ faqs:
 <li>You are restructuring the company or planning to sell the company itself</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we handle capital gains computations for companies across every sector. If your company has disposed of an asset at a loss and you want to make sure the relief is claimed correctly, <a href="/contact">get in touch</a>.</p>
+<p>We handle capital gains computations for companies across every sector. If your company has disposed of an asset at a loss and you want to make sure the relief is claimed correctly, <a href="/contact">get in touch</a>.</p>
 
 <h2>Related articles in Corporation Tax</h2>
 <ul>

@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "How to Register as Self Employed UK: Step by Step Guide"
-metaDescription: "Step by step guide on how to register as self employed UK. HMRC registration, tax returns, NI, MTD. Practical advice from ICAEW accountants."
+metaDescription: "Step by step guide on how to register as self employed UK. HMRC registration, tax returns, NI, MTD. Practical advice from our specialist accountants."
 altText: "Sole trader working on a laptop in a home office in Manchester, UK, with a notebook and calculator"
 image: "/blog/how-to-register-as-self-employed-uk.jpg"
 imageCredit:
@@ -103,7 +103,7 @@ faqs:
 
 <p>When you register as self employed, HMRC automatically sets you up for Class 2 National Insurance. But there is a catch. If your profits are below £6,725 (the Small Profits Threshold for 2025/26), you do not have to pay Class 2 NIC. You can choose to pay voluntarily to protect your entitlement to certain state benefits, like the state pension and Maternity Allowance.</p>
 
-<p>If your profits are above £6,725, Class 2 NIC is currently £3.45 per week. This is collected through your self assessment tax return. You do not need to pay it separately.</p>
+<p>From 6 April 2024, Class 2 NIC was abolished for self-employed people with profits above the Small Profits Threshold. If your profits are above £6,725, HMRC credits your National Insurance record automatically and there is no weekly charge to pay.</p>
 
 <h3>Step 5: Register for VAT (If Your Turnover Exceeds the Threshold)</h3>
 
@@ -127,7 +127,7 @@ faqs:
 <ul>
 <li><strong>Income tax</strong> on your profits at the usual rates: 0% on the first £12,570, 20% on £12,571 to £50,270, 40% on £50,271 to £125,140, and 45% above that.</li>
 <li><strong>Class 4 National Insurance</strong> at 6% on profits between £12,570 and £50,270, and 2% on profits above £50,270.</li>
-<li><strong>Class 2 National Insurance</strong> at £3.45 per week if your profits are above £6,725.</li>
+<li><strong>Class 2 National Insurance</strong>: abolished from 6 April 2024 for profits above the £6,725 Small Profits Threshold. Your NI record is credited automatically and there is no weekly charge. Voluntary Class 2 (£3.50 per week in 2025/26) remains available only to those with profits below £6,725 who want to protect entitlement to the state pension and other contributory benefits.</li>
 </ul>
 
 <h2>Making Tax Digital for Income Tax Self Assessment (MTD for ITSA)</h2>
@@ -136,7 +136,7 @@ faqs:
 
 <p>From April 2027, the threshold drops to £30,000. From April 2028, it drops to £20,000. If you are a sole trader with turnover above these levels, you need to start preparing now.</p>
 
-<p>The software you use must be MTD compatible. Popular options include Xero, QuickBooks, FreeAgent, and Sage. If you use spreadsheets, you will need bridging software to submit the quarterly updates. As ICAEW qualified accountants, we recommend getting set up early rather than scrambling at the deadline.</p>
+<p>The software you use must be MTD compatible. Popular options include Xero, QuickBooks, FreeAgent, and Sage. If you use spreadsheets, you will need bridging software to submit the quarterly updates. We recommend getting set up early rather than scrambling at the deadline.</p>
 
 <h2>What Records Do You Need to Keep as a Sole Trader?</h2>
 

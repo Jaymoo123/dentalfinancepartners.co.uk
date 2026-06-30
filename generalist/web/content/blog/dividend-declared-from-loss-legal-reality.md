@@ -24,14 +24,14 @@ faqs:
   - question: "Can I declare a dividend if the company made a loss this year but had profits last year?"
     answer: "Yes, if the retained profits from prior years are large enough to absorb this year's loss and still leave a positive balance. For example, if you had £20,000 retained from prior years and made a £5,000 loss this year, you can declare a dividend of up to £15,000. If the loss exceeds the retained profits, you cannot declare any dividend."
   - question: "What happens if I accidentally pay an unlawful dividend?"
-    answer: "You must repay the full amount to the company. HMRC can reclassify it as a director's loan, triggering a 33.75% tax charge under Section 455. If the company becomes insolvent, the liquidator can pursue you personally. Directors' liability insurance does not cover unlawful dividends."
+    answer: "You must repay the full amount to the company. HMRC can reclassify it as a director's loan, triggering a Section 455 tax charge (35.75% for loans made on or after 6 April 2026; 33.75% for 2025/26 and earlier). If the company becomes insolvent, the liquidator can pursue you personally. Directors' liability insurance does not cover unlawful dividends."
   - question: "Can I take money out of a loss-making company without declaring a dividend?"
     answer: "Yes. You can take a director's loan, pay yourself a salary or bonus, or reimburse business expenses. A director's loan is the most common alternative, but it must be documented and may trigger Section 455 tax if not repaid within nine months and one day of the year-end. Salary is always legal but incurs income tax and NI."
 ---
 
 <p>The short answer is no. You cannot legally declare a dividend when your company has made a loss in the current year, unless the company has sufficient retained profits from previous years to cover it. A <strong>dividend declared from loss</strong> is unlawful under the Companies Act 2006. If you pay one anyway, you personally risk having to repay it, and HMRC can treat it as an illegal distribution with serious tax consequences.</p>
 
-<p>This is one of the most common misunderstandings we see as ICAEW-qualified accountants. A director looks at the bank balance, sees cash in the account, and assumes they can pay a dividend. But dividends do not come from cash. They come from distributable profits. Those are two very different things.</p>
+<p>This is one of the most common misunderstandings we see. A director looks at the bank balance, sees cash in the account, and assumes they can pay a dividend. But dividends do not come from cash. They come from distributable profits. Those are two very different things.</p>
 
 <p>Let me walk through the rules, the exceptions, and what happens if you get it wrong.</p>
 
@@ -59,7 +59,7 @@ faqs:
 
 <p><strong>You must repay it.</strong> The director who authorised the dividend and received it is personally liable to repay the full amount to the company. If there are multiple directors, they are jointly and severally liable. The company can sue you to recover the money.</p>
 
-<p><strong>HMRC can reclassify it.</strong> If HMRC discovers an unlawful dividend, they can treat it as a director's loan. That triggers a tax charge under Section 455 of the Corporation Tax Act 2010. The company pays 33.75% of the loan amount as tax, repayable only when the loan is repaid. If the loan is not repaid within nine months and one day of the year-end, the tax is due permanently.</p>
+<p><strong>HMRC can reclassify it.</strong> If HMRC discovers an unlawful dividend, they can treat it as a director's loan. That triggers a tax charge under Section 455 of the Corporation Tax Act 2010. The company pays 35.75% of the loan amount as tax for loans made on or after 6 April 2026 (33.75% for loans in 2025/26 and earlier). If the loan is not repaid within nine months and one day of the year-end, the s.455 charge becomes payable, but it is recovered under s.458 once the loan is later repaid.</p>
 
 <p><strong>Directors' duties are breached.</strong> Paying an unlawful dividend is a breach of your duty under Section 172 of the Companies Act 2006 to promote the success of the company. It can also be a breach of your duty to exercise reasonable care, skill and diligence under Section 174. That opens you up to claims from shareholders, creditors, and liquidators if the company becomes insolvent.</p>
 
@@ -83,13 +83,13 @@ faqs:
 
 <p>Now take a different example. Year one profit: £5,000. Year two profit: £3,000. Year three loss: £12,000. Retained earnings at the start of year three were £8,000. After the loss, retained earnings are negative £4,000. You cannot declare any dividend until future profits restore the retained earnings to a positive balance.</p>
 
-<p>If you are unsure, ask your accountant to run a distributable profits calculation. As <a href="/services">ICAEW qualified accountants</a>, we do this for clients regularly. It takes ten minutes and avoids months of legal hassle.</p>
+<p>If you are unsure, ask your accountant to run a distributable profits calculation. We do this for clients regularly; see our <a href="/services">services page</a> for details. It takes ten minutes and avoids months of legal hassle.</p>
 
 <h2>What to Do Instead of an Unlawful Dividend</h2>
 
 <p>If your company has made a loss and you need to take money out, you have options.</p>
 
-<p><strong>Director's loan.</strong> The company can lend you money. That is legal, provided the loan is documented and interest is charged if it exceeds £10,000. The company must pay Section 455 tax at 33.75% if the loan is not repaid within nine months and one day of the year-end. Repay it from future profits, and the tax is refunded.</p>
+<p><strong>Director's loan.</strong> The company can lend you money. That is legal, provided the loan is documented and interest is charged if it exceeds £10,000. The company must pay Section 455 tax at 35.75% (for loans made on or after 6 April 2026; 33.75% for 2025/26 and earlier) if the loan is not repaid within nine months and one day of the year-end. Repay it from future profits, and the tax is refunded under s.458.</p>
 
 <p><strong>Salary or bonus.</strong> You can pay yourself a salary or bonus. That creates a tax and NI cost, but it is legal regardless of whether the company is making a profit or a loss. The salary is an expense, so it increases the loss. But if you need the money, it is a clean way to take it.</p>
 
@@ -115,7 +115,7 @@ faqs:
 
 <p>If HMRC investigates and finds unlawful dividends, they will reclassify them. The director then owes income tax and NI on the amount, plus interest and penalties. The company owes Section 455 tax. The total tax cost can easily exceed 60% of the dividend amount.</p>
 
-<p>Compare that to doing it properly. A legal dividend costs the director 8.75% or 33.75% in dividend tax, depending on their income band. That is the only cost. The difference between 8.75% and 60% is the price of getting the law wrong.</p>
+<p>Compare that to doing it properly. A legal dividend costs the director 10.75% or 35.75% in dividend tax, depending on their income band (2026/27 rates; 8.75%/33.75% applied in 2025/26). That is the only cost. The difference between 10.75% and 60% is the price of getting the law wrong.</p>
 
 <h2>Directors' Personal Liability</h2>
 

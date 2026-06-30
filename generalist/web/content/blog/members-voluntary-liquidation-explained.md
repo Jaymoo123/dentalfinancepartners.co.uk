@@ -6,7 +6,7 @@ date: "2026-05-17"
 dateModified: "2026-06-12"
 reviewedAt: "2026-06-12"
 reviewedBy: "James Holloway"
-reviewerCredentials: "ICAEW Chartered Accountant"
+reviewerCredentials: "Specialist Accountant"
 generator: sonnet-4.6/track2-rewrite
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"

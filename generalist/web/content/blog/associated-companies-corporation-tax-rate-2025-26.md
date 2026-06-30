@@ -37,7 +37,7 @@ faqs:
 
 <p>This matters because a company that would normally pay 19% on profits up to £50,000 might instead start paying 25% on profits above £25,000 (if there are two associated companies). The difference can be thousands of pounds each year.</p>
 
-<p>As ICAEW qualified accountants, we see business owners trip over this rule regularly. It is one of the most common reasons a client's corporation tax bill comes out higher than they expected.</p>
+<p>We see business owners trip over this rule regularly. It is one of the most common reasons a client's corporation tax bill comes out higher than they expected.</p>
 
 <h2>What Counts as an Associated Company?</h2>
 

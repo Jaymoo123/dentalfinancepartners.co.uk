@@ -37,7 +37,7 @@ imageCredit:
 
 <p>Many landlords now pay more tax than they did five years ago, even if their rental income hasn't changed. That is not because the rules are unfair. It is because the structure they use to hold their properties is no longer the most efficient one.</p>
 
-<p>As ICAEW qualified accountants, we work with landlords across the UK. From a single flat in Manchester's Northern Quarter to a portfolio of ten houses in Birmingham's Jewellery Quarter. The questions are always the same. Should I incorporate? How do I handle my BTL mortgage interest? What happens when I sell?</p>
+<p>We work with landlords across the UK. From a single flat in Manchester's Northern Quarter to a portfolio of ten houses in Birmingham's Jewellery Quarter. The questions are always the same. Should I incorporate? How do I handle my BTL mortgage interest? What happens when I sell?</p>
 
 <p>This article gives you the answers. It is not generic advice. It is specific, practical, and grounded in the current tax rules for 2025/26.</p>
 
@@ -139,7 +139,7 @@ imageCredit:
 
 <p>The dividend allowance has fallen from £2,000 in 2022/23 to £500 now. That means most landlords pay some dividend tax. But the combined tax burden (corporation tax plus dividend tax) is still often lower than personal income tax on rental profits.</p>
 
-<p>You can also take a small salary from the company. A salary of £12,570 (matching the personal allowance) avoids income tax and NIC if the company claims Employment Allowance. That reduces the company's profit and saves corporation tax. It also builds your state pension entitlement.</p>
+<p>You can also take a small salary from the company. A salary of £12,570 (matching the personal allowance) avoids income tax and employee NIC. However, the Employment Allowance (£10,500) is not available to a single-director company with no other employees. That means employer's NIC at 15% applies to any salary above the £5,000 secondary threshold: roughly £1,135 on a £12,570 salary, with no EA to offset it. Many directors of single-director property companies therefore set their salary at the secondary threshold (£5,000) to avoid employer's NIC altogether, or at the Lower Earnings Limit (£6,500) to protect state pension entitlement at no NIC cost. If the company employs a second person, it may qualify for Employment Allowance, making a higher salary more viable. A salary still reduces the company's taxable profit and saves corporation tax.</p>
 
 <p>For a detailed breakdown of director pay strategies, see our <a href="/blog/director-pay-and-dividends">director pay and dividends blog</a>.</p>
 

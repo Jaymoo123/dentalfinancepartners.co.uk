@@ -68,7 +68,7 @@ faqs:
 <li>Not claiming PVA when eligible</li>
 </ul>
 
-<p>Our <a href="/services">ICAEW-qualified team</a> works with importers to build a system that catches these errors before they reach HMRC. A single misclassified commodity code can trigger a customs audit that costs far more than the accountant's fee.</p>
+<p>Our <a href="/services">specialist team</a> works with importers to build a system that catches these errors before they reach HMRC. A single misclassified commodity code can trigger a customs audit that costs far more than the accountant's fee.</p>
 
 <h2>VAT on Imports From the EU vs Rest of World</h2>
 
@@ -152,4 +152,4 @@ faqs:
 <li>If you are unsure about any of these steps, speak to a VAT accountant before your next import.</li>
 </ul>
 
-<p>Our <a href="/contact">team at Holloway Davies</a> works with importers across the UK, from a single-person ecommerce business in Shoreditch to a 20-employee manufacturer in Leeds Dock. We are ICAEW qualified and specialise in the intersection of VAT, customs, and business growth. If your import turnover has grown beyond what your general accountant can handle, get in touch.</p>
+<p>Our <a href="/contact">team at Holloway Davies</a> works with importers across the UK, from a single-person ecommerce business in Shoreditch to a 20-employee manufacturer in Leeds Dock. We specialise in the intersection of VAT, customs, and business growth. If your import turnover has grown beyond what your general accountant can handle, get in touch.</p>

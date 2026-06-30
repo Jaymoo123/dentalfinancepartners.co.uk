@@ -31,7 +31,7 @@ faqs:
 
 <p>If you are searching for the cost of accountants for small business in 2025/26, you probably want a straight answer. Not marketing fluff. Not "it depends" without the detail. You want to know what you will pay, what you get for it, and whether you are being quoted a fair price.</p>
 
-<p>This article gives you that. We are ICAEW qualified accountants working with UK businesses of every shape. We see the fee structures that work and the ones that hide costs. Here is what the market looks like right now.</p>
+<p>This article gives you that. We are specialist accountants working with UK businesses of every shape. We see the fee structures that work and the ones that hide costs. Here is what the market looks like right now.</p>
 
 <h2>Typical Small Business Accountant Fees for 2025/26</h2>
 

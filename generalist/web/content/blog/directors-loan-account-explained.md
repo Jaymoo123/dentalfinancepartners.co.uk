@@ -16,15 +16,15 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/person-writing-on-white-paper-7821513/"
   source: "Pexels"
 h1: "Directors Loan Account Explained: What Every UK Director Needs to Know"
-summary: "A director's loan account records money owed between you and your limited company. If you take more out than you put in, the company must pay S455 tax at 33.75% unless you repay within 9 months and 1 day of year end. This guide covers everything from setting it up to avoiding the tax traps."
+summary: "A director's loan account records money owed between you and your limited company. If you take more out than you put in, the company must pay S455 tax at 33.75% (for loans made in 2025/26) or 35.75% (for loans made on or after 6 April 2026) unless you repay within 9 months and 1 day of year end. This guide covers everything from setting it up to avoiding the tax traps."
 schema: ""
 faqs:
   - question: "What is the S455 tax rate for directors loans in 2025/26?"
-    answer: "The S455 tax rate is 33.75% for loans made on or after 6 April 2022. It applies to the full amount of the overdrawn directors loan account that is not repaid within 9 months and 1 day of the company's year end. The company pays this tax to HMRC and can reclaim it when the loan is repaid."
+    answer: "The S455 rate is 33.75% for loans made in 2025/26, rising to 35.75% for loans made on or after 6 April 2026 (FA 2026 s.4). It applies to the full amount of the overdrawn directors loan account that is not repaid within 9 months and 1 day of the company's year end. The company pays this tax to HMRC and can reclaim it when the loan is repaid."
   - question: "How long do I have to repay a directors loan before S455 tax applies?"
-    answer: "You have 9 months and 1 day from the end of the company's accounting period to repay the loan. For a company with a 31 March year end, the deadline is 1 January. If you repay after that date, the company must pay S455 tax on the loan balance at 33.75%."
+    answer: "You have 9 months and 1 day from the end of the company's accounting period to repay the loan. For a company with a 31 March year end, the deadline is 1 January. If you repay after that date, the company must pay S455 tax on the loan balance at 33.75% for loans made in 2025/26, or 35.75% for loans made on or after 6 April 2026 (FA 2026 s.4)."
   - question: "Can I avoid the benefit in kind charge on a directors loan?"
-    answer: "Yes. If the loan balance is £10,000 or less throughout the tax year, no benefit in kind charge applies. If it exceeds £10,000, you can avoid the charge by paying interest at the official rate (2.25% for 2025/26) on the average loan balance. Document the interest payments properly."
+    answer: "Yes. If the loan balance is £10,000 or less throughout the tax year, no benefit in kind charge applies. If it exceeds £10,000, you can avoid the charge by paying interest at the official rate (3.75% for 2025/26) on the average loan balance. Document the interest payments properly."
   - question: "What happens if my directors loan account is in credit (the company owes me money)?"
     answer: "A credit balance means the company owes you money. This is not a tax problem. The company can repay you at any time without triggering tax charges. If the company becomes insolvent, you are an unsecured creditor for that amount and may not recover it. Keep records of what you have put into the company."
 ---
@@ -45,9 +45,9 @@ faqs:
 
 <p>The problems start when the balance is overdrawn. That means you have taken more money out of the company than you have put in. The company has lent you money. HMRC does not like directors treating their company bank account like a personal current account.</p>
 
-<p>An overdrawn directors loan account triggers two potential tax charges. The first is a benefit in kind charge on you personally if the loan exceeds £10,000 and is interest-free or below the official rate of interest (2.25% for 2025/26). You report this on your P11D and pay tax on the notional interest benefit.</p>
+<p>An overdrawn directors loan account triggers two potential tax charges. The first is a benefit in kind charge on you personally if the loan exceeds £10,000 and is interest-free or below the official rate of interest (3.75% for 2025/26). You report this on your P11D and pay tax on the notional interest benefit.</p>
 
-<p>The second is the big one. Section 455 of the Corporation Tax Act 2010. If the loan is not repaid within 9 months and 1 day of the company's year end, the company must pay S455 tax at 33.75% of the loan amount. This is not a penalty. It is a tax charge designed to discourage directors from taking money out of the company rather than paying themselves properly through salary or dividends.</p>
+<p>The second is the big one. Section 455 of the Corporation Tax Act 2010. If the loan is not repaid within 9 months and 1 day of the company's year end, the company must pay S455 tax at 33.75% (for loans made in 2025/26) or 35.75% (for loans made on or after 6 April 2026, FA 2026 s.4) of the loan amount. This is not a penalty. It is a tax charge designed to discourage directors from taking money out of the company rather than paying themselves properly through salary or dividends.</p>
 
 <h2>S455 Tax: The High Cost of an Overdrawn Loan Account</h2>
 
@@ -89,11 +89,11 @@ faqs:
 
 <h2>How to Keep Your Directors Loan Account Clean</h2>
 
-<p>Here is what we recommend to our clients at Holloway Davies. Our ICAEW qualified team sees loan account problems regularly, and they are almost always avoidable.</p>
+<p>Here is what we recommend to our clients at Holloway Davies. Our team sees loan account problems regularly, and they are almost always avoidable.</p>
 
 <ol>
 <li>Process all payments to yourself through payroll or dividend vouchers at the time you take them. Do not leave them sitting in the loan account.</li>
-<li>If you need a short-term loan from the company, document it. Set a repayment schedule. Charge interest at the official rate (2.25% for 2025/26) to avoid the benefit in kind charge.</li>
+<li>If you need a short-term loan from the company, document it. Set a repayment schedule. Charge interest at the official rate (3.75% for 2025/26) to avoid the benefit in kind charge.</li>
 <li>Review the loan account balance at least quarterly. Do not wait until year end to discover a problem.</li>
 <li>If the balance is overdrawn at year end, plan the repayment before the 9 month and 1 day deadline.</li>
 <li>Keep the loan balance below £10,000 if possible to avoid the benefit in kind reporting requirement.</li>
@@ -149,4 +149,4 @@ faqs:
 
 <p>Keep the balance below £10,000 if possible. Repay any overdrawn balance within 9 months and 1 day of year end. Document everything. And if you are unsure about the balance, check it. Your accountant can run a loan account report from your bookkeeping software in minutes.</p>
 
-<p>If your turnover crossed the VAT threshold in the last 30 days, or you are considering restructuring your director pay, our <a href="/contact">contact page</a> connects you with an ICAEW qualified accountant who can review your specific situation.</p>
+<p>If your turnover crossed the VAT threshold in the last 30 days, or you are considering restructuring your director pay, our <a href="/contact">contact page</a> connects you with a specialist accountant who can review your specific situation.</p>

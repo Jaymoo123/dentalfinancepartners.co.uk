@@ -22,14 +22,14 @@ faqs:
   - question: "Do I pay corporation tax on dividends I take from my company?"
     answer: "No. Corporation tax is paid by the company on its profits. Dividends are paid from the post-tax profits that remain. You pay dividend tax personally on dividends you receive, but the company does not pay corporation tax again on those dividends."
   - question: "Can I avoid dividend tax by taking all profit as salary?"
-    answer: "You can, but it is almost always worse from a tax perspective. Salary above the primary threshold (£12,570) attracts employee NI at 8% and employer NI at 13.8%."
+    answer: "You can, but it is almost always worse from a tax perspective. Salary above the primary threshold (£12,570) attracts employee NI at 8% and employer NI at 15% (above the £5,000 secondary threshold, from 6 Apr 2025)."
 ---
 
 <p>If you run your business through a limited company, you pay two separate taxes on your profits. Corporation tax is charged on the company's profits. Dividend tax is charged on the money you take out of those profits as a shareholder. Understanding how corporation tax and dividend tax work together is the single most important piece of tax planning you will do as a director.</p>
 
 <p>Get the balance right and you can save thousands each year compared to operating as a sole trader. Get it wrong and you could overpay tax, trigger unnecessary National Insurance, or create problems with your director's loan account.</p>
 
-<p>This guide explains the 2025/26 rates, how the two taxes interact, and the practical steps to structure your pay efficiently. As ICAEW qualified accountants working with limited company directors across the UK, from freelance consultants in Bristol to husband-and-wife cafe owners in Birmingham, these are the numbers we run every day.</p>
+<p>This guide explains the 2025/26 rates, how the two taxes interact, and the practical steps to structure your pay efficiently. Working with limited company directors across the UK, from freelance consultants in Bristol to husband-and-wife cafe owners in Birmingham, these are the numbers we run every day.</p>
 
 <h2>The Two Taxes Explained Simply</h2>
 

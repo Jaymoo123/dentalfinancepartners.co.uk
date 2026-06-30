@@ -121,7 +121,7 @@ faqs:
 
 <p>If you are buying an existing business or incorporating a sole trader business, the process is more complex. You need to consider capital gains tax on the transfer of assets, VAT implications, and the treatment of goodwill. Our <a href="/incorporation">incorporation services</a> cover these scenarios in detail.</p>
 
-<p>As ICAEW qualified accountants, we see the fallout from rushed incorporations all the time. A name dispute, a missed filing deadline, or a poorly structured shareholding can cost far more than the accountant's fee to sort out. If your situation has any complexity, spend the money upfront.</p>
+<p>We see the fallout from rushed incorporations all the time. A name dispute, a missed filing deadline, or a poorly structured shareholding can cost far more than the accountant's fee to sort out. If your situation has any complexity, spend the money upfront.</p>
 
 <h2>Final Practical Steps</h2>
 

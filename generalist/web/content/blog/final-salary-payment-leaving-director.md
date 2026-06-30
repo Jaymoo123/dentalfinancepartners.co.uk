@@ -22,7 +22,7 @@ faqs:
   - question: "Do I need to issue a P45 for a leaving director?"
     answer: "Yes. A leaving director is treated the same as any other employee for P45 purposes. Your payroll software should generate the P45 automatically when you enter the leaving date and process the final payment. Issue the P45 to the director on or before the payment date. The director needs it for their next employer or for their self assessment return."
   - question: "What happens if the director's loan account is overdrawn and the final salary is not enough to clear it?"
-    answer: "The director must repay the balance directly to the company. If they do not, the company faces a Section 455 charge of 33.75% on the outstanding amount. This charge is reclaimable once the loan is repaid, but it creates a cash flow problem. The company can also agree a repayment plan with the director, but the loan must be repaid within 9 months and 1 day of the company's year-end to avoid the charge."
+    answer: "The director must repay the balance directly to the company. If they do not, the company faces a Section 455 charge on the outstanding amount: 35.75% for loans made on or after 6 April 2026 (33.75% for loans made in 2025/26), as the charge tracks the dividend upper rate for the year the loan was made. This charge is reclaimable once the loan is repaid, but it creates a cash flow problem. The company can also agree a repayment plan with the director, but the loan must be repaid within 9 months and 1 day of the company's year-end to avoid the charge."
   - question: "Can I pay accrued holiday pay as a separate payment after the final salary?"
     answer: "No. Accrued holiday pay must be included in the final salary payment and processed through payroll in the same RTI submission. If you pay it separately, it is still earnings and must be reported on a separate FPS. This creates unnecessary complexity and can trigger HMRC queries. Include it in the final payment."
   - question: "What if the director is also a company employee (not just a director)?"
@@ -78,7 +78,7 @@ faqs:
 
 <p>If the DLA is overdrawn (the director owes the company), the company can deduct the amount from the final salary payment, provided the director agrees in writing. This is a repayment of a loan, not a salary payment, so it is not subject to tax or NI. The company should issue a repayment receipt and update the DLA records accordingly.</p>
 
-<p>If the final salary is not enough to clear the DLA, the director must repay the balance directly to the company. If they do not, the company faces a Section 455 charge of 33.75% on the outstanding amount. This charge is reclaimable once the loan is repaid, but it creates a cash flow problem.</p>
+<p>If the final salary is not enough to clear the DLA, the director must repay the balance directly to the company. If they do not, the company faces a Section 455 charge on the outstanding amount: 35.75% for loans made on or after 6 April 2026 (33.75% for loans made in 2025/26), as the charge tracks the dividend upper rate for the year the loan was made. This charge is reclaimable once the loan is repaid, but it creates a cash flow problem.</p>
 
 <h3>Scenario B: The Company Owes the Director Money</h3>
 
@@ -175,6 +175,6 @@ faqs:
 <li>Benefits in kind noted for P11D reporting.</li>
 </ul>
 
-<p>If you are unsure about any step, speak to your accountant. As <a href="/about">ICAEW qualified accountants</a>, we handle director departures regularly. The key is to separate the salary payment from the DLA settlement and the share transaction. Mixing them up creates tax problems that are costly to unwind.</p>
+<p>If you are unsure about any step, speak to your accountant. We handle director departures regularly. The key is to separate the salary payment from the DLA settlement and the share transaction. Mixing them up creates tax problems that are costly to unwind.</p>
 
 <p>For a full list of our services, including payroll and company secretarial support, visit our <a href="/services">services page</a>. If you need to discuss a specific director departure, <a href="/contact">contact our team</a>.</p>

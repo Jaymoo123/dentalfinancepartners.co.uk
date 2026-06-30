@@ -33,7 +33,7 @@ faqs:
 
 <p>The short answer is yes: an AI startup can claim R&D tax credits if its work involves resolving technological uncertainty. That means you are trying to achieve an advance in science or technology that is not readily deducible by a competent professional working in your field. Simply integrating an existing API or fine-tuning a pre-trained model using standard techniques does not qualify. Building a novel neural network architecture from first principles because no existing solution solves your problem almost certainly does.</p>
 
-<p>As ICAEW qualified accountants, we have submitted dozens of claims for AI and software startups. The most common mistake we see is assuming all AI work qualifies, or conversely, assuming none of it does. The truth sits somewhere in the middle. Let us walk through the rules, the qualifying costs, and the traps to avoid.</p>
+<p>We have submitted dozens of claims for AI and software startups. The most common mistake we see is assuming all AI work qualifies, or conversely, assuming none of it does. The truth sits somewhere in the middle. Let us walk through the rules, the qualifying costs, and the traps to avoid.</p>
 
 <h2>What HMRC Actually Means by R&D for AI</h2>
 

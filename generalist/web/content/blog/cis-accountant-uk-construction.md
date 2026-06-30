@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "CIS Accountant UK: Specialist Support for Construction"
-metaDescription: "CIS rules are complex. A CIS accountant UK keeps your tax right, avoids HMRC penalties, and saves you time. ICAEW qualified. Practical advice."
+metaDescription: "CIS rules are complex. A CIS accountant UK keeps your tax right, avoids HMRC penalties, and saves you time. Practical advice from specialist accountants."
 altText: "Construction contractor reviewing CIS tax documents with a UK accountant in a modern office"
 image: "/blog/cis-accountant-uk-construction.jpg"
 imageCredit:
@@ -26,7 +26,7 @@ faqs:
   - question: "Do I need a CIS accountant if I am a sole trader subcontractor?"
     answer: "It depends on your situation. If your CIS deductions are straightforward and you are comfortable filing your own tax return, you might manage. But most sole traders miss allowable expenses, forget to claim CIS credits, or file late. A specialist accountant typically saves you more in tax and penalties than their fee costs. For most subcontractors, it pays for itself."
   - question: "What happens if I do not file my CIS returns on time?"
-    answer: "HMRC charges automatic penalties. One late return costs £100. Three late returns in 12 months cost £200 each. Six late returns cost £200 each plus a potential daily penalty of £10-£60. Persistent late filing can lead to HMRC enquiries and loss of Gross Payment Status. A CIS accountant ensures your returns are filed by the 14th or 22nd of each month, avoiding all penalties."
+    answer: "HMRC charges automatic penalties per return. One day late: £100. Two months late: a further £200. Six months late: the greater of £300 or 5% of the deductions that should have been reported. Twelve months late: a further greater of £300 or 5%. Persistent late filing can also lead to HMRC enquiries and loss of Gross Payment Status. A CIS accountant ensures your returns are filed by the 19th of each month, avoiding all penalties."
 ---
 
 <h2>What Is CIS and Why You Need a CIS Accountant UK</h2>
@@ -35,7 +35,7 @@ faqs:
 
 <p>HMRC estimates that tens of thousands of CIS returns are filed late or incorrectly each year. The penalties add up quickly. A specialist <strong>cis accountant uk</strong> ensures your deductions are correct, your returns are filed on time, and you claim back what you are owed.</p>
 
-<p>As ICAEW qualified accountants, we work with construction businesses across the UK: from one-man-band bricklayers in Manchester to multi-site contractors in Birmingham and London. The principles are the same. The stakes are high.</p>
+<p>We are specialist accountants, and we work with construction businesses across the UK: from one-man-band bricklayers in Manchester to multi-site contractors in Birmingham and London. The principles are the same. The stakes are high.</p>
 
 <h2>Who Does CIS Apply To?</h2>
 
@@ -60,13 +60,13 @@ faqs:
 <p>We see the same errors repeatedly. Here are the most common ones.</p>
 
 <h3>Failing to Register as a Contractor</h3>
-<p>Many small builders do not realise they are contractors. If you hire another tradesperson for a job, even a one-off, you are a contractor. HMRC can backdate penalties for failing to register. The fine starts at £100 per month for late returns, but can escalate to £3,000 per return for persistent failures.</p>
+<p>Many small builders do not realise they are contractors. If you hire another tradesperson for a job, even a one-off, you are a contractor. HMRC can backdate penalties for failing to register. Penalties start at £100 per return for one day late, rising to a further £200 at two months, then the greater of £300 or 5% of the deductions due at six months and again at twelve months.</p>
 
 <h3>Incorrect Verification</h3>
 <p>Before you pay a subcontractor, you must verify them with HMRC. The verification tells you what deduction rate to apply. If you skip this step and apply the wrong rate, you are liable for the underpaid tax. HMRC will come after you, not the subcontractor.</p>
 
 <h3>Late CIS Returns</h3>
-<p>CIS returns (form CIS300) are due monthly, by the 14th of the following month (or 22nd if filing online). A single late return triggers a £100 penalty. Three late returns in a 12-month period means £200 each. The penalties keep rising. A contractor in Salford we worked with had accumulated over £4,000 in penalties before they engaged a <strong>cis accountant uk</strong>. We cleared the backlog and stopped the bleeding.</p>
+<p>CIS returns (form CIS300) are due monthly, by the 19th of the month following the tax month (a single deadline regardless of filing method). A single late return triggers a £100 penalty. Three late returns in a 12-month period means £200 each. The penalties keep rising. A contractor in Salford we worked with had accumulated over £4,000 in penalties before they engaged a <strong>cis accountant uk</strong>. We cleared the backlog and stopped the bleeding.</p>
 
 <h3>Not Claiming Back Deductions</h3>
 <p>Subcontractors often fail to claim back CIS deductions against their tax bill. If you are a subcontractor, the 20% deducted from your payments is a credit against your total tax liability. If you do not file a tax return, you lose that credit. We regularly see subcontractors who are owed thousands of pounds in refunds but have never claimed them.</p>
@@ -131,7 +131,7 @@ faqs:
 
 <h2>Why Choose Holloway Davies for CIS?</h2>
 
-<p>We are ICAEW qualified accountants with deep experience in the construction sector. We work with contractors and subcontractors across the UK, from small sole traders to limited companies with 50+ workers. We know the CIS rules inside out. We also handle the wider picture: corporation tax, VAT, payroll, self assessment, and R&D tax credits (yes, some construction work qualifies for R&D).</p>
+<p>We are specialist accountants with deep experience in the construction sector. We work with contractors and subcontractors across the UK, from small sole traders to limited companies with 50+ workers. We know the CIS rules inside out. We also handle the wider picture: corporation tax, VAT, payroll, self assessment, and R&D tax credits (yes, some construction work qualifies for R&D).</p>
 
 <p>Our service includes:</p>
 <ul>

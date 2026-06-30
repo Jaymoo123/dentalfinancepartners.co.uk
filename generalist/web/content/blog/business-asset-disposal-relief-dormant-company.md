@@ -133,7 +133,7 @@ faqs:
 
 <p>You can appeal a denial through HMRC's internal review process or to the First-tier Tribunal. But the best approach is to avoid the problem in the first place. Plan the disposal carefully, and if there is any doubt about the trading company test, get professional advice before you sell.</p>
 
-<p>Our <a href="/services">ICAEW qualified team</a> regularly advises company owners on BADR planning. If your company has a dormant period or you are unsure about eligibility, speak to us before you commit to a sale date.</p>
+<p>Our <a href="/services">experienced team</a> regularly advises company owners on BADR planning. If your company has a dormant period or you are unsure about eligibility, speak to us before you commit to a sale date.</p>
 
 <h2>Summary</h2>
 

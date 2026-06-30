@@ -70,7 +70,7 @@ faqs:
 
 <p>Most architecture practices cross the £90,000 VAT registration threshold at some point. Once registered, you have two main options: standard VAT accounting or the Flat Rate Scheme.</p>
 
-<p>The Flat Rate Scheme can be attractive if you have low VAT on your expenses. The relevant flat rate percentage for architectural services is 14.5%. You charge your clients 20% VAT, pay HMRC 14.5% of your VAT-inclusive turnover, and keep the difference. However, if you are a limited cost trader (spending less than 2% of your VAT-inclusive turnover on relevant goods, or less than £250 per year), you must use the 16.5% rate. Most architecture practices are limited cost traders because their main costs are salaries, subcontractors, and software, not physical goods.</p>
+<p>The Flat Rate Scheme can be attractive if you have low VAT on your expenses. The relevant flat rate percentage for architectural services is 14.5%. You charge your clients 20% VAT, pay HMRC 14.5% of your VAT-inclusive turnover, and keep the difference. However, if you are a limited cost trader (spending less than 2% of your VAT-inclusive turnover on relevant goods, or less than £1,000 per year (£250 per quarter)), you must use the 16.5% rate. Most architecture practices are limited cost traders because their main costs are salaries, subcontractors, and software, not physical goods.</p>
 
 <p>If your practice works on mixed projects (some residential new builds, some commercial refurbishments, some listed buildings), you may have partial exemption issues. VAT on professional services for new residential buildings is zero-rated. VAT on commercial projects is standard-rated. Your accountant needs to apportion input VAT correctly between these streams. Get it wrong and HMRC can disallow your input VAT claims.</p>
 
@@ -80,7 +80,7 @@ faqs:
 
 <p>If you operate your architecture practice through a limited company, you need a tax-efficient salary and dividend strategy. The same principles apply as for any limited company director, but with one important twist: the Employment Allowance.</p>
 
-<p>If your practice employs at least one person other than a director who earns above the secondary threshold (£9,100 in 2025/26), you can claim the Employment Allowance of up to £10,500. That means you can pay yourself a salary up to £12,570 without incurring employer NI. The salary is tax-deductible for the company and uses your personal allowance.</p>
+<p>If your practice employs at least one person other than a director who earns above the secondary threshold (£5,000 from 6 April 2025, at 15% employer NIC above that threshold), you can claim the Employment Allowance of up to £10,500. That means you can pay yourself a salary up to £12,570 without incurring employer NI. The salary is tax-deductible for the company and uses your personal allowance.</p>
 
 <p>Above the salary, take dividends up to the basic rate band. The dividend allowance is £500 for 2025/26. After that, dividends are taxed at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate).</p>
 
@@ -98,7 +98,7 @@ faqs:
 
 <p>If you work as a freelance architect through your own limited company and contract to larger practices, IR35 applies. Medium and large clients must determine your employment status and issue a Status Determination Statement (SDS). If they deem you inside IR35, you pay tax and NI as if you were an employee, and the fee-paying client deducts PAYE and NI from your invoices.</p>
 
-<p>Small clients (fewer than 50 employees, turnover under £10.2 million, or balance sheet under £5.1 million) leave the determination with you. If you are outside IR35, you can pay yourself dividends instead of salary, saving significant tax and NI.</p>
+<p>Small clients (fewer than 50 employees, turnover under £15 million, or balance sheet under £7.5 million, for periods beginning on or after 6 April 2025) leave the determination with you. If you are outside IR35, you can pay yourself dividends instead of salary, saving significant tax and NI.</p>
 
 <p>An <strong>accountant for architects</strong> will review your contracts, working practices, and client relationships to assess your IR35 status. They will also help you structure your limited company to stay outside IR35 where possible.</p>
 
@@ -138,7 +138,7 @@ faqs:
 <li><strong>Software:</strong> Do they support Xero, FreeAgent, or QuickBooks, and can they integrate with your practice management software?</li>
 </ul>
 
-<p>As ICAEW qualified accountants, the team at Holloway Davies works with architecture practices across the UK. We understand the specific tax rules that apply to your profession. If you would like to discuss your practice's accounts, tax position, or growth plans, <a href="/contact">get in touch</a>.</p>
+<p>The team at Holloway Davies works with architecture practices across the UK. We understand the specific tax rules that apply to your profession. If you would like to discuss your practice's accounts, tax position, or growth plans, <a href="/contact">get in touch</a>.</p>
 
 <h2>Summary</h2>
 

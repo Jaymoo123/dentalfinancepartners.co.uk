@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Corporation Tax on Trading and Investment Income | UK Guide"
-metaDescription: "Calculate corporation tax on mixed trading and investment income. Worked example for 2025/26 rates, marginal relief, and filing rules. ICAEW guide."
+metaDescription: "Calculate corporation tax on mixed trading and investment income. Worked example for 2025/26 rates, marginal relief, and filing rules."
 altText: "UK accountant reviewing corporation tax computation with trading and investment income figures on a laptop in a modern office"
 image: "/blog/calculate-corporation-tax-trading-and-investment-income.jpg"
 imageCredit:
@@ -31,7 +31,7 @@ faqs:
 
 <p>If your limited company earns both trading profits and investment income, the corporation tax calculation is not as straightforward as applying a single rate to the total. The two income streams are treated differently for tax purposes, and the distinction affects which rate of corporation tax applies, whether marginal relief is available, and how you complete the CT600 return.</p>
 
-<p>This guide explains the mechanics using the 2025/26 tax year rates. It covers the core calculation, the impact of investment income on marginal relief, and the practical steps for filing. As ICAEW qualified accountants, we work with companies across the UK that mix trading activity with property letting, interest income, or dividend receipts. The principles here apply to most situations, but your specific circumstances may require tailored advice.</p>
+<p>This guide explains the mechanics using the 2025/26 tax year rates. It covers the core calculation, the impact of investment income on marginal relief, and the practical steps for filing. We work with companies across the UK that mix trading activity with property letting, interest income, or dividend receipts. The principles here apply to most situations, but your specific circumstances may require tailored advice.</p>
 
 <h2>Why the Distinction Between Trading and Investment Income Matters</h2>
 
@@ -172,6 +172,6 @@ faqs:
 
 <p>If your company earns investment income that is more than a few thousand pounds, or if you have multiple associated companies, the corporation tax calculation becomes complex quickly. Marginal relief is a mathematical formula, but applying it correctly requires accurate profit computations and a clear understanding of which income goes where.</p>
 
-<p>Our ICAEW qualified team at Holloway Davies handles mixed income computations regularly. We can review your draft CT600, check the marginal relief calculation, and advise on structuring to minimise your tax bill. If you are unsure whether your company's investment income is being taxed correctly, <a href="/contact">get in touch</a> for a consultation.</p>
+<p>Our specialist team at Holloway Davies handles mixed income computations regularly. We can review your draft CT600, check the marginal relief calculation, and advise on structuring to minimise your tax bill. If you are unsure whether your company's investment income is being taxed correctly, <a href="/contact">get in touch</a> for a consultation.</p>
 
 <p>For a broader overview of how corporation tax works for different company structures, see our <a href="/blog/corporation-tax">corporation tax blog section</a>. If you are considering incorporating a new business, our <a href="/incorporation">incorporation guide</a> covers the tax implications of moving from sole trader to limited company, including how retained profits and investment income are treated.</p>

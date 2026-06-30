@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Creative Industry Tax Reliefs UK: Film, TV, Games & Theatre"
-metaDescription: "Creative industry tax reliefs UK explained for film, TV, video games and theatre. Rates, eligibility, and how to claim. Practical guidance from ICAEW"
+metaDescription: "Creative industry tax reliefs UK explained for film, TV, video games and theatre. Rates, eligibility, and how to claim. Practical guidance from specialist accountants"
 altText: "Accountant reviewing creative industry tax relief documentation for a film production company in a modern UK office"
 image: "/blog/creative-industry-tax-reliefs-uk.jpg"
 imageCredit:
@@ -20,7 +20,7 @@ summary: "Creative industry tax reliefs in the UK offer significant corporation 
 schema: ""
 faqs:
   - question: "What is the payable credit rate for film tax relief in 2025/26?"
-    answer: "For films with budgets up to £15 million, the payable credit rate is 25% of the surrendered loss. For films over £15 million, the rate drops to 20%. The additional deduction is 100% of qualifying core expenditure in both cases."
+    answer: "FTR is a legacy relief, closed to new film productions from 1 April 2025; new productions use the Audio-Visual Expenditure Credit (AVEC) instead. Under the legacy FTR, the payable credit was 25% of the surrenderable loss (capped at the additional deduction) for films up to £15 million, or 20% for films over £15 million, with a 100% additional deduction on qualifying core expenditure."
   - question: "Do I need a BFI certificate to claim film or high-end TV tax relief?"
     answer: "Yes. For film, high-end TV, animation, and children's television, you need a provisional certificate from the BFI confirming the production passes the cultural test. You submit this with your corporation tax return. The BFI typically processes applications within 28 days."
   - question: "Can a video game studio claim both VGTR and R&D tax credits?"
@@ -33,7 +33,7 @@ faqs:
 
 <p>These reliefs work by allowing you to claim an additional deduction against your taxable profits, or in some cases a payable tax credit if you are loss-making. The rules differ by sector, but the principle is the same: spend money on qualifying creative production in the UK, and the government shares some of the cost through the tax system.</p>
 
-<p>As ICAEW qualified accountants, we work with creative businesses across the UK, from independent film producers in Manchester's Northern Quarter to video game studios in Leith and theatre companies in Bristol's Harbourside. This guide covers the main reliefs, who qualifies, how to calculate them, and the practical steps to claim.</p>
+<p>We work with creative businesses across the UK, from independent film producers in Manchester's Northern Quarter to video game studios in Leith and theatre companies in Bristol's Harbourside. This guide covers the main reliefs, who qualifies, how to calculate them, and the practical steps to claim.</p>
 
 <h2>Which Creative Industry Tax Reliefs Exist?</h2>
 
@@ -50,15 +50,19 @@ faqs:
 <li><strong>Museums and Galleries Exhibition Tax Relief (MGETR)</strong> - for qualifying exhibitions</li>
 </ul>
 
+<p>Important: from 1 April 2025, FTR, HTR, ATR, CTR, and VGTR are closed to new productions. These have been replaced by the Audio-Visual Expenditure Credit (AVEC) for film, TV, animation, and children's television, and by the Video Games Expenditure Credit (VGEC) for video games. The legacy reliefs end entirely from 1 April 2027. Theatre (TTR), orchestra (OTR), and museums and galleries (MGETR) continue to use the additional-deduction mechanism described below. The sections on FTR, HTR, ATR, and VGTR below cover the legacy position, which applies only to productions already underway before 1 April 2025.</p>
+
 <p>Each relief is claimed through your company's corporation tax return (CT600). The claim process is similar across all eight, but the qualifying tests differ. We will walk through the most common ones first.</p>
 
 <h2>Film Tax Relief (FTR)</h2>
 
 <p>Film Tax Relief is the oldest creative industry tax relief, introduced in 2007. It applies to films that are intended for theatrical release. The film must pass a cultural test administered by the British Film Institute (BFI) to qualify as a British film, or qualify under an official co-production treaty.</p>
 
-<p>The relief works as follows. You calculate your qualifying expenditure on the film. For FTR, you can claim an additional deduction of 100% of your qualifying core expenditure. If that creates a loss, you can surrender that loss for a payable tax credit at 25% of the loss.</p>
+<p>Note: FTR is a legacy relief, closed to new film productions from 1 April 2025. New film productions use AVEC (Audio-Visual Expenditure Credit) instead. The following describes the legacy FTR mechanism for productions already underway before that date.</p>
 
-<p>Let's use a real example. A Manchester-based independent film company spends £400,000 on a qualifying British film. Core expenditure is £380,000. The additional deduction is £380,000. If the company has no other income, the loss created is £780,000 (the £400,000 actual spend plus the £380,000 additional deduction). Surrendering that loss gives a payable credit of £195,000 (25% of £780,000). That is a significant cash injection for a production company.</p>
+<p>Under the legacy FTR, you calculate your qualifying expenditure on the film. You can claim an additional deduction of 100% of your qualifying core expenditure. If that creates a loss, you can surrender a qualifying loss for a payable tax credit at 25%. The surrenderable loss is capped at the additional deduction.</p>
+
+<p>Let's use a real example. A Manchester-based independent film company spends £400,000 on a qualifying British film. Core expenditure is £380,000. The additional deduction is £380,000. If the company has no other income, the loss created is £780,000 (the £400,000 actual spend plus the £380,000 additional deduction). Under the legacy FTR, the surrenderable loss is capped at the additional deduction. The payable credit is therefore £95,000 (25% of £380,000). That is a significant cash injection for a production company.</p>
 
 <p>For films with budgets over £15 million, the payable credit rate drops to 20%. The additional deduction rate remains 100%.</p>
 
@@ -72,13 +76,15 @@ faqs:
 
 <p>This relief is particularly relevant for drama, documentary, and factual entertainment series. Game shows, talk shows, and sports coverage do not qualify. The production must also pass the same BFI cultural test as films, or qualify under a co-production treaty.</p>
 
-<p>The relief rate for HTR is the same as FTR. You get an additional deduction of 100% of qualifying core expenditure. If loss-making, you can surrender the loss for a payable credit at 25% (20% for productions costing over £15 million per hour).</p>
+<p>Note: HTR is a legacy relief, closed to new high-end TV productions from 1 April 2025. New productions use AVEC instead.</p>
+
+<p>Under the legacy HTR, the relief rate is the same as FTR. You get an additional deduction of 100% of qualifying core expenditure. If loss-making, you can surrender a qualifying loss (capped at the additional deduction) for a payable credit at 25% (20% for productions costing over £15 million per hour).</p>
 
 <p>A practical example. A Bristol-based production company spends £2.2 million on a six-part documentary series for a UK broadcaster. Each episode is 60 minutes. The average cost per hour is £2.2 million divided by 6 hours, which is £366,667 per hour. That is below the £1 million threshold, so this series would not qualify for HTR. But if the same company produces a drama series costing £8 million for six 60-minute episodes, the average cost per hour is £1.33 million. That qualifies.</p>
 
 <h2>Animation Tax Relief (ATR)</h2>
 
-<p>Animation Tax Relief covers animated productions, whether film or television. The same BFI cultural test applies. There is no minimum slot length or cost per hour threshold for ATR. The relief rate is 100% additional deduction, with a payable credit of 25% (20% for productions over £15 million).</p>
+<p>Animation Tax Relief covers animated productions, whether film or television. The same BFI cultural test applies. There is no minimum slot length or cost per hour threshold for ATR. Note: ATR is a legacy relief, closed to new animation productions from 1 April 2025; new productions use AVEC instead. Under the legacy ATR, the relief rate is 100% additional deduction, with a payable credit of 25% of the surrenderable loss (capped at the additional deduction), or 20% for productions over £15 million.</p>
 
 <p>ATR is popular with smaller animation studios. A studio in Sheffield's Kelham Island producing a 10-minute animated short for a streaming platform can claim ATR if it passes the cultural test. The qualifying expenditure includes storyboarding, character design, voice recording, animation, and post-production.</p>
 
@@ -86,9 +92,11 @@ faqs:
 
 <p>Video Games Tax Relief supports the development of British video games. The game must pass a cultural test similar to the BFI test but administered by the Video Games Tax Relief team at HMRC. The test covers British cultural content, contribution to British culture, use of British locations and personnel, and use of English or other UK languages.</p>
 
-<p>VGTR gives an additional deduction of 80% of qualifying core expenditure. The payable credit rate is 20% for loss-making companies. This is lower than the film and TV rates, but still valuable for game developers.</p>
+<p>Note: VGTR is a legacy relief, closed to new video game productions from 1 April 2025. New game developments use the Video Games Expenditure Credit (VGEC) instead. The following describes the legacy VGTR mechanism.</p>
 
-<p>A worked example. A video game studio in Dundee spends £500,000 developing a qualifying game. Core expenditure is £450,000. The additional deduction is £360,000 (80% of £450,000). If the studio has no other income, the loss is £860,000 (£500,000 actual spend plus £360,000 additional deduction). Surrendering that loss gives a payable credit of £172,000 (20% of £860,000).</p>
+<p>Under the legacy VGTR, you get an additional deduction of 80% of qualifying core expenditure. The payable credit rate is 20% for loss-making companies, with the surrenderable loss capped at the additional deduction. This is lower than the film and TV rates, but still valuable for studios working on games started before 1 April 2025.</p>
+
+<p>A worked example. A video game studio in Dundee spends £500,000 developing a qualifying game. Core expenditure is £450,000. The additional deduction is £360,000 (80% of £450,000). If the studio has no other income, the loss is £860,000 (£500,000 actual spend plus £360,000 additional deduction). Under the legacy VGTR, the surrenderable loss is capped at the additional deduction. The payable credit is therefore £72,000 (20% of £360,000).</p>
 
 <p>VGTR is claimed through the corporation tax return, but you need to submit a separate application form to HMRC providing details of the game, the cultural test score, and the expenditure breakdown.</p>
 
@@ -98,7 +106,7 @@ faqs:
 
 <p>TTR has two rates. For touring productions, the additional deduction is 100%, and the payable credit rate is 25%. For non-touring productions, the additional deduction is 80%, and the payable credit rate is 20%.</p>
 
-<p>A touring theatre company based in Liverpool's Baltic Triangle spends £300,000 on a qualifying production. Core expenditure is £280,000. The additional deduction is £280,000. If loss-making, the payable credit is £140,000 (25% of £560,000).</p>
+<p>A touring theatre company based in Liverpool's Baltic Triangle spends £300,000 on a qualifying production. Core expenditure is £280,000. The additional deduction is £280,000. If loss-making, the payable credit is £70,000 (25% of £280,000, as the surrenderable loss is capped at the additional deduction).</p>
 
 <h2>Orchestra Tax Relief (OTR) and Museums and Galleries Exhibition Tax Relief (MGETR)</h2>
 
@@ -158,6 +166,6 @@ faqs:
 <li>File your claim within the two-year window. Mark the deadline in your calendar.</li>
 </ul>
 
-<p>Creative industry tax reliefs can make a significant difference to your bottom line. A £500,000 film production can generate a £195,000 payable credit. A £300,000 theatre tour can generate a £140,000 credit. For small and growing creative businesses, that cash can fund the next production or pay down debt.</p>
+<p>Creative industry tax reliefs can make a significant difference to your bottom line. Under the legacy FTR mechanism, the worked example above shows a film production with £380,000 core expenditure generating a £95,000 payable credit (25% of the £380,000 capped surrenderable loss). Under TTR, a £300,000 theatre tour can generate a £70,000 credit (25% of the £280,000 additional deduction). For small and growing creative businesses, that cash can fund the next production or pay down debt.</p>
 
-<p>If you are unsure whether your production qualifies, or if you want help preparing a claim, <a href="/contact">contact our team</a>. We are ICAEW qualified accountants with practical experience across the creative sectors.</p>
+<p>If you are unsure whether your production qualifies, or if you want help preparing a claim, <a href="/contact">contact our team</a>. We are experienced accountants with practical experience across the creative sectors.</p>

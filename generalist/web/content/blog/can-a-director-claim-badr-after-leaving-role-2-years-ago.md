@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "BADR Claim After Leaving Director Role: 2-Year Rule"
 metaDescription: "Can you claim Business Asset Disposal Relief if you sold your company shares 2 years after resigning as director? We cover the qualifying period"
-altText: "A UK business owner in a meeting with an ICAEW qualified accountant, discussing Business Asset Disposal Relief and share disposal after leaving a director role."
+altText: "A UK business owner in a meeting with a specialist accountant, discussing Business Asset Disposal Relief and share disposal after leaving a director role."
 image: "/blog/can-a-director-claim-badr-after-leaving-role-2-years-ago.jpg"
 imageCredit:
   photographer: "Ron Lach"
@@ -89,7 +89,7 @@ faqs:
 
 <p>However, if you remained actively involved in the business (even as a consultant or advisor) and simply held no formal title, the position is different. HMRC may accept that you were an employee in substance, even if you were not on the payroll. But this is risky without professional advice.</p>
 
-<h2>The 9-Month Window for Share Disposals After Cessation</h2>
+<h2>The Three-Year Window for Share Disposals After Cessation</h2>
 
 <p>There is a specific rule that helps in some cases. If a company ceases to trade and you sell the shares within three years of cessation, BADR can still apply. This is the "cessation of trade" rule, not the "leaving as director" rule. It is a different scenario.</p>
 
@@ -128,7 +128,7 @@ faqs:
 
 <p>If you cannot provide these, the claim is likely to fail.</p>
 
-<p>As ICAEW qualified accountants, we see many cases where a BADR claim after leaving a director role is denied because the business owner assumed the relief was automatic. It is not. The conditions are strict, and the cost of getting it wrong is high.</p>
+<p>We see many cases where a BADR claim after leaving a director role is denied because the business owner assumed the relief was automatic. It is not. The conditions are strict, and the cost of getting it wrong is high.</p>
 
 <h2>Next Steps</h2>
 

@@ -5,8 +5,8 @@ canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/capital-allowan
 date: '2026-05-20'
 dateModified: '2026-06-12'
 reviewedAt: '2026-06-12'
-reviewedBy: "ICAEW Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW)"
+reviewedBy: "Holloway Davies Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 generator: sonnet-4.6/track2-rewrite
 author: "James Holloway"
 category: Corporation Tax

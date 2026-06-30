@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
 metaTitle: "Can I pay personal tax through my limited company? | UK Tax"
 metaDescription: "Paying a director's personal tax bill through their limited company is rarely allowed. Here is how to handle HMRC debts without triggering a tax charge."
-altText: "ICAEW qualified accountant reviewing director's loan account documents for a limited company client in a modern UK office"
+altText: "accountant reviewing director's loan account documents for a limited company client in a modern UK office"
 image: "/blog/pay-personal-tax-through-limited-company.jpg"
 imageCredit:
   photographer: "Nataliya Vaitkevich"
@@ -20,9 +20,9 @@ summary: "Paying a director's personal tax bill through their limited company is
 schema: ""
 faqs:
   - question: "Can I pay my self assessment tax bill from my company bank account?"
-    answer: "Technically, you can make the payment, but HMRC treats it as a director's loan. That triggers benefit in kind charges if the loan exceeds £10,000 and Section 455 tax at 33.75% if not repaid within 9 months and 1 day of the company's year-end. The correct approach is to extract cash through a dividend or salary, then pay HMRC from your personal account."
+    answer: "Technically, you can make the payment, but HMRC treats it as a director's loan. That triggers benefit in kind charges if the loan exceeds £10,000 and Section 455 tax at 35.75% (for loans made on or after 6 April 2026) if not repaid within 9 months and 1 day of the company's year-end. The correct approach is to extract cash through a dividend or salary, then pay HMRC from your personal account."
   - question: "What happens if my company pays my personal tax bill and I do not repay it?"
-    answer: "The company must pay Section 455 tax at 33.75% of the outstanding amount. You also face a benefit in kind charge on the notional interest (2.25% as of April 2025) if the loan exceeded £10,000. The company reports the loan on a P11D form and pays Class 1A NIC. The loan remains on your director's loan account until you repay it or the company writes it off (which is treated as a dividend)."
+    answer: "The company must pay Section 455 tax at 35.75% of the outstanding amount (for loans made on or after 6 April 2026; 33.75% applied to loans made in 2025/26). You also face a benefit in kind charge on the notional interest (2.25% as of April 2025) if the loan exceeded £10,000. The company reports the loan on a P11D form and pays Class 1A NIC. The loan remains on your director's loan account until you repay it or the company writes it off (which is treated as a dividend)."
   - question: "Can I pay my spouse's personal tax bill through my limited company?"
     answer: "No. That creates a director's loan in your name (if you are the director) or a distribution/gift if your spouse is not a director. It triggers the same S455 tax and P11D consequences. The safest route is to extract cash from the company through dividends or salary, then pay the tax from your personal account."
   - question: "Is there any way to avoid the Section 455 tax if my company pays my personal tax bill?"
@@ -35,23 +35,23 @@ faqs:
 
 <h2>Why Paying Personal Tax Through Your Limited Company Triggers a Problem</h2>
 
-<p>A limited company is a separate legal entity from its directors. Your personal tax liabilities (income tax, capital gains tax, Class 2 and Class 4 National Insurance) are your own debts, not the company's. When the company pays them, it is effectively lending you money.</p>
+<p>A limited company is a separate legal entity from its directors. Your personal tax liabilities (income tax, capital gains tax, and Class 4 National Insurance) are your own debts, not the company's. When the company pays them, it is effectively lending you money.</p>
 
 <p>That loan sits in your director's loan account. If the balance is overdrawn (you owe the company money), HMRC applies strict rules. The key ones are:</p>
 
 <ul>
-<li><strong>Benefit in kind (P11D):</strong> If the loan exceeds £10,000 at any point in the tax year, you must report it on a P11D form. You pay tax on the notional interest (the official HMRC rate, currently 2.25% as of April 2025) as a benefit in kind. The company also pays Class 1A NIC at 13.8% on that benefit.</li>
-<li><strong>Section 455 tax:</strong> If the loan is not repaid within 9 months and 1 day of the company's year-end, the company must pay S455 tax at 33.75% of the outstanding amount. This is a deposit, not a penalty. You can reclaim it once the loan is repaid, but that can take years and ties up company cash.</li>
+<li><strong>Benefit in kind (P11D):</strong> If the loan exceeds £10,000 at any point in the tax year, you must report it on a P11D form. You pay tax on the notional interest (the official HMRC rate, currently 2.25% as of April 2025) as a benefit in kind. The company also pays Class 1A NIC at 15% on that benefit (from 6 April 2025).</li>
+<li><strong>Section 455 tax:</strong> If the loan is not repaid within 9 months and 1 day of the company's year-end, the company must pay S455 tax at 35.75% of the outstanding amount (for loans made on or after 6 April 2026; 33.75% applied to loans made in 2025/26). This is a deposit, not a penalty. You can reclaim it once the loan is repaid, but that can take years and ties up company cash.</li>
 </ul>
 
-<p>Let me give you a real example. A director in Manchester runs a 2-employee software consultancy turning over £320,000. His personal tax bill for 2024/25 is £47,200. He asks his company to pay it directly from the business account. The company now has a director's loan of £47,200. At the year-end, the loan is still outstanding. The company files a P11D and pays Class 1A NIC on the notional benefit. Nine months after year-end, the loan is still unpaid. The company must pay S455 tax of £15,930 (33.75% of £47,200). The director now owes the company £47,200 plus the company has lost £15,930 in cash. That is a total of £63,130 tied up. Not a good outcome.</p>
+<p>Let me give you a real example. A director in Manchester runs a 2-employee software consultancy turning over £320,000. His personal tax bill for 2024/25 is £47,200. He asks his company to pay it directly from the business account. The company now has a director's loan of £47,200. At the year-end, the loan is still outstanding. The company files a P11D and pays Class 1A NIC on the notional benefit. Nine months after year-end, the loan is still unpaid. The company must pay S455 tax of £16,874 (35.75% of £47,200, the rate for loans made on or after 6 April 2026). The director now owes the company £47,200 plus the company has lost £16,874 in cash. That is a total of £64,074 tied up. Not a good outcome.</p>
 
 <h2>When Can a Company Pay a Director's Personal Tax Bill?</h2>
 
 <p>There are only two scenarios where this is straightforward:</p>
 
 <h3>1. The Loan is Repaid Within 9 Months and 1 Day</h3>
-<p>If the director repays the full amount to the company before the 9-month deadline, no S455 tax is due. The benefit in kind charge still applies if the loan exceeded £10,000 at any point, but that is a relatively small cost compared to the 33.75% deposit. The director would need to have the cash available to repay the loan, which defeats the purpose of having the company pay the bill in the first place.</p>
+<p>If the director repays the full amount to the company before the 9-month deadline, no S455 tax is due. The benefit in kind charge still applies if the loan exceeded £10,000 at any point, but that is a relatively small cost compared to the 35.75% deposit. The director would need to have the cash available to repay the loan, which defeats the purpose of having the company pay the bill in the first place.</p>
 
 <h3>2. The Director Has Sufficient Credit in Their Loan Account</h3>
 <p>If the director has previously lent money to the company (a credit balance in the director's loan account), the company can draw on that credit to pay personal tax bills without creating a new loan. For example, if a director introduced £80,000 of capital when the company started and has not taken any drawings, the company can pay up to £80,000 of personal tax bills without triggering S455. The director's loan account simply reduces from a credit of £80,000 to, say, £32,800 after the payment. No benefit in kind applies because the director never owes the company money.</p>
@@ -60,7 +60,7 @@ faqs:
 
 <p>This is where directors often get confused. The company cannot pay your personal tax bill directly. But it can give you the money to pay it yourself, through a dividend or salary. That is a completely different transaction.</p>
 
-<p>If the company declares a dividend of £50,000, you receive that cash personally. You then use it to pay your self assessment bill. The dividend is taxable in your hands at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate). The company gets no tax deduction for the dividend. That is fine. It is a legitimate way to extract profits.</p>
+<p>If the company declares a dividend of £50,000, you receive that cash personally. You then use it to pay your self assessment bill. The dividend is taxable in your hands at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate) from 6 April 2026 (the rates were 8.75% / 33.75% / 39.35% up to 5 April 2026). The company gets no tax deduction for the dividend. That is fine. It is a legitimate way to extract profits.</p>
 
 <p>If the company pays you a salary of £50,000, it deducts PAYE and NI. The company gets a corporation tax deduction for the salary and employer NI. You receive the net amount and pay your personal tax from it. This is also fine, though less tax-efficient than dividends for most directors.</p>
 
@@ -84,7 +84,7 @@ faqs:
 
 <h2>What About Paying a Director's Capital Gains Tax Bill?</h2>
 
-<p>The same rules apply. Capital gains tax on personally held assets (shares, property, investments) is your personal liability. The company cannot pay it without creating a director's loan. If you are selling shares in your company and using Business Asset Disposal Relief (BADR) at 14% (rising to 18% from April 2026), the CGT bill is your responsibility. The company can declare a dividend or pay a bonus to give you the cash, but it cannot pay HMRC directly.</p>
+<p>The same rules apply. Capital gains tax on personally held assets (shares, property, investments) is your personal liability. The company cannot pay it without creating a director's loan. If you are selling shares in your company and using Business Asset Disposal Relief (BADR) at 18% (the current rate from 6 April 2026; it was 14% for disposals between 6 April 2025 and 5 April 2026), the CGT bill is your responsibility. The company can declare a dividend or pay a bonus to give you the cash, but it cannot pay HMRC directly.</p>
 
 <h2>What About VAT or Corporation Tax?</h2>
 
@@ -109,7 +109,7 @@ faqs:
 <li>Keep records of the dividend or salary payment, the personal tax payment, and your director's loan account transactions.</li>
 </ol>
 
-<p>If you are short of cash and need the company to pay the bill urgently, speak to your accountant first. There may be a way to structure a short-term loan that you repay quickly, but the window is tight. As ICAEW qualified accountants, we can help you model the numbers and avoid the S455 trap.</p>
+<p>If you are short of cash and need the company to pay the bill urgently, speak to your accountant first. There may be a way to structure a short-term loan that you repay quickly, but the window is tight. We can help you model the numbers and avoid the S455 trap.</p>
 
 <h2>What About Using a Company Credit Card for Personal Tax?</h2>
 
@@ -121,7 +121,7 @@ faqs:
 
 <h2>Summary: Can You Pay Personal Tax Through Your Limited Company?</h2>
 
-<p>In almost all cases, no. The company cannot pay your personal tax bill without creating a director's loan. That loan triggers benefit in kind charges if over £10,000 and Section 455 tax at 33.75% if not repaid within 9 months and 1 day of the year-end.</p>
+<p>In almost all cases, no. The company cannot pay your personal tax bill without creating a director's loan. That loan triggers benefit in kind charges if over £10,000 and Section 455 tax at 35.75% (for loans made on or after 6 April 2026) if not repaid within 9 months and 1 day of the year-end.</p>
 
 <p>The correct approach is to extract cash from the company through dividends or salary, then pay your personal tax from your personal account. If you have already made the payment, act quickly to repay the loan or formalise it with a dividend write-off.</p>
 

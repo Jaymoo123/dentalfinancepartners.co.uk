@@ -132,7 +132,7 @@ faqs:
 <li>High-growth startups raising external investment and needing audit-ready accounts.</li>
 <li>Businesses with turnover above £1 million and complex VAT schemes.</li>
 </ul>
-<p>For those situations, a traditional mid-tier or boutique accountancy firm with specialist expertise is usually a better choice. That is where a firm like Holloway Davies comes in. As <a href="/about">ICAEW qualified accountants</a>, we work with growing businesses that have outgrown the one-size-fits-all model.</p>
+<p>For those situations, a traditional mid-tier or boutique accountancy firm with specialist expertise is usually a better choice. That is where a firm like Holloway Davies comes in. As <a href="/about">specialist accountants</a>, we work with growing businesses that have outgrown the one-size-fits-all model.</p>
 
 <h2>Making the Decision</h2>
 <p>Start by being honest about how you want to work. Do you want to drop into an office and talk to someone? Or do you want to log into a platform and manage everything from your phone?</p>

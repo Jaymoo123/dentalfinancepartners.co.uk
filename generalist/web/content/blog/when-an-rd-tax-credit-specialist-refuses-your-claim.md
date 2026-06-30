@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "When an R&D Tax Credit Specialist Refuses Your Claim"
 metaDescription: "An R&D tax credit specialist refusing your claim isn't a bad sign. Here are the legitimate reasons a qualified firm will turn down a project to protect"
-altText: "ICAEW qualified accountant reviewing R&D tax credit claim documents in a Manchester city centre office"
+altText: "Accountant reviewing R&D tax credit claim documents in a Manchester city centre office"
 image: "/blog/when-an-rd-tax-credit-specialist-refuses-your-claim.jpg"
 imageCredit:
   photographer: "RDNE Stock project"
@@ -83,7 +83,7 @@ faqs:
 
 <p>Your specialist should conduct a basic prior art check. They should ask whether you searched existing patents, academic papers, or trade publications. If you did not, and the work looks similar to known techniques, the claim is high risk.</p>
 
-<p>As ICAEW qualified accountants, we have seen HMRC open enquiries specifically because a claimant failed to demonstrate that the advance was genuinely new. The enquiry letter typically asks for evidence of the prior art search. If you cannot produce it, the claim collapses.</p>
+<p>We have seen HMRC open enquiries specifically because a claimant failed to demonstrate that the advance was genuinely new. The enquiry letter typically asks for evidence of the prior art search. If you cannot produce it, the claim collapses.</p>
 
 <h2>The Costs Are Not Qualifying Expenditure</h2>
 

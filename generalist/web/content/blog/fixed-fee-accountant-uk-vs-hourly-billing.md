@@ -52,7 +52,7 @@ faqs:
 
 <p>Most firms price these packages based on your expected transaction volumes, turnover, and complexity. A sole trader with 50 invoices a month pays less than a limited company with 500 transactions, payroll, and VAT.</p>
 
-<p>As ICAEW qualified accountants, we structure our <a href="/services">fixed fee packages</a> to cover the full compliance cycle. You know your annual accounting cost from day one.</p>
+<p>We structure our <a href="/services">fixed fee packages</a> to cover the full compliance cycle. You know your annual accounting cost from day one.</p>
 
 <h2>How Hourly Billing Works</h2>
 

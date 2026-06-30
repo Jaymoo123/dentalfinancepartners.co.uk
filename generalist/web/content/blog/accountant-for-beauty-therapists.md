@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Accountant for Beauty Therapists: Tax, Structure"
-metaDescription: "Sole trader, partnership or Ltd company? We cover IR35, VAT, expenses and payroll for beauty therapists. Practical UK tax guidance from ICAEW accountants."
+metaDescription: "Sole trader, partnership or Ltd company? We cover IR35, VAT, expenses and payroll for beauty therapists. Practical UK tax guidance from specialist accountants."
 altText: "Beauty therapist working at a salon treatment table in a UK city centre, with accounts paperwork visible on a nearby desk"
 image: "/blog/accountant-for-beauty-therapists.jpg"
 imageCredit:
@@ -33,13 +33,13 @@ faqs:
 
 <p>We see beauty therapists come to us at every stage. Some are starting out as sole traders, working from a spare room. Others have built a team of five or six therapists across two treatment rooms in a city centre. The tax questions change as the business grows. Getting the structure right early saves you thousands in tax and keeps you compliant with HMRC.</p>
 
-<p>This guide covers the practical decisions a beauty therapist faces. Sole trader versus limited company. VAT registration. Staff versus subcontractors. Allowable expenses. And the specific compliance obligations that catch beauty businesses out. We are ICAEW qualified accountants, and we work with beauty therapists across the UK from our base in Birmingham and through our wider team. This is the advice we give in our meetings.</p>
+<p>This guide covers the practical decisions a beauty therapist faces. Sole trader versus limited company. VAT registration. Staff versus subcontractors. Allowable expenses. And the specific compliance obligations that catch beauty businesses out. We are specialist accountants, and we work with beauty therapists across the UK from our base in Birmingham and through our wider team. This is the advice we give in our meetings.</p>
 
 <h2>Sole Trader or Limited Company for a Beauty Therapy Business?</h2>
 
-<p>Most beauty therapists start as sole traders. It is simple to set up, you register with HMRC for self assessment, and you do not need to file annual accounts at Companies House. Your profit is taxed through income tax and Class 2 and Class 4 National Insurance. For a therapist earning £30,000 to £40,000 net profit, the tax bill is straightforward and the admin burden is low.</p>
+<p>Most beauty therapists start as sole traders. It is simple to set up, you register with HMRC for self assessment, and you do not need to file annual accounts at Companies House. Your profit is taxed through income tax and Class 4 National Insurance (Class 2 NIC was abolished from 6 April 2024). For a therapist earning £30,000 to £40,000 net profit, the tax bill is straightforward and the admin burden is low.</p>
 
-<p>The problem comes when profits grow. A sole trader pays income tax on all profits above the personal allowance. If your beauty business turns over £80,000 and your costs are £25,000, your profit is £55,000. As a sole trader, you pay 20% on the first £37,700 above the personal allowance and 40% on the rest. You also pay Class 4 NIC at 9% on profits between £12,570 and £50,270, then 2% above that. The combined tax and NIC rate on profits above £50,270 is around 42%.</p>
+<p>The problem comes when profits grow. A sole trader pays income tax on all profits above the personal allowance. If your beauty business turns over £80,000 and your costs are £25,000, your profit is £55,000. As a sole trader, you pay 20% on the first £37,700 above the personal allowance and 40% on the rest. You also pay Class 4 NIC at 6% on profits between £12,570 and £50,270, then 2% above that. The combined tax and NIC rate on profits above £50,270 is around 42%.</p>
 
 <p>A limited company pays corporation tax at 19% on profits up to £50,000, with marginal relief up to £250,000. You then take income as a mix of salary and dividends. The total tax rate on extracted profits is typically lower than sole trader rates, especially once profits exceed £50,000. For a beauty therapist making £55,000 profit, the limited company route can save several thousand pounds a year in tax.</p>
 
@@ -67,7 +67,7 @@ faqs:
 
 <p>The risk is that HMRC issues a determination that your therapists are employees. You then owe employer NIC, employee NIC, income tax on all payments made, plus interest and penalties. The liability can run back six years. For a salon with three therapists each earning £25,000 a year, the back-tax bill can easily exceed £40,000 plus penalties.</p>
 
-<p><strong>Safer approach:</strong> If you control the therapist's work, put them on payroll. The cost of employer NIC at 13.8% above the secondary threshold (£9,100 for 2025/26) is manageable. You can claim Employment Allowance of up to £10,500 if your total employer NIC is below that level. If the therapist is genuinely self-employed, use a proper room rental agreement, let them set their own prices and hours, and do not control their methods. We help beauty therapists draft these agreements and review their worker status annually.</p>
+<p><strong>Safer approach:</strong> If you control the therapist's work, put them on payroll. The cost of employer NIC at 15% above the £5,000 secondary threshold (2025/26) is manageable. You can claim Employment Allowance of up to £10,500 if your total employer NIC is below that level. If the therapist is genuinely self-employed, use a proper room rental agreement, let them set their own prices and hours, and do not control their methods. We help beauty therapists draft these agreements and review their worker status annually.</p>
 
 <p>If you have staff, you need to operate payroll through RTI. Software like Xero, FreeAgent or BrightPay handles this. You must issue P60s at year-end and P45s when staff leave. You also need employers' liability insurance, a workplace pension scheme (auto-enrolment), and a written statement of employment particulars. Our <a href="/blog/payroll-and-paye">payroll and PAYE blog</a> covers the details.</p>
 
@@ -82,7 +82,7 @@ faqs:
 <li><strong>Training and qualifications:</strong> Courses that update or maintain your existing skills are deductible. Courses that give you a new qualification or allow you to start a new trade are not. If you are a beauty therapist and take a course in microblading, that is deductible because it extends your existing trade. If you take a course in accountancy, that is not.</li>
 <li><strong>Insurance:</strong> Public liability, treatment liability, employers' liability, and professional indemnity insurance are all deductible.</li>
 <li><strong>Marketing:</strong> Website costs, social media ads, business cards, leaflets, salon listing fees, photography for your portfolio. All deductible.</li>
-<li><strong>Travel:</strong> Travel between treatment locations (home to salon, salon to client) is deductible if you have a fixed place of business. Travel from home to your first client and from your last client back home is not deductible under the ordinary commuting rule. Keep a mileage log or use the HMRC approved mileage rates (45p per mile for cars, 24p for motorcycles).</li>
+<li><strong>Travel:</strong> Travel between treatment locations (home to salon, salon to client) is deductible if you have a fixed place of business. Travel from home to your first client and from your last client back home is not deductible under the ordinary commuting rule. Keep a mileage log or use the HMRC approved mileage rates (55p per mile for cars for the first 10,000 business miles, then 25p, from 2026/27; 45p applied up to 2025/26; motorcycles 24p).</li>
 <li><strong>Clothing:</strong> Uniforms and protective clothing are deductible. A white tunic you only wear for work is deductible. Jeans and a top you could wear socially are not.</li>
 </ul>
 
@@ -96,7 +96,7 @@ faqs:
 
 <p>If you are below £50,000, you have more time. But we recommend switching to digital record-keeping now. The software is not expensive. Xero starts at around £15 a month. FreeAgent is free with some bank accounts. The habit of recording expenses weekly rather than annually saves you time and stress at year-end. And when MTD eventually applies to you, you will already be compliant.</p>
 
-<p>For limited company beauty therapists, MTD for corporation tax is on the horizon. The government has announced a consultation, with mandatory quarterly reporting expected from 2026 or 2027. We cover the latest on our <a href="/blog/vat-and-making-tax-digital">VAT and MTD blog</a>.</p>
+<p>For limited company beauty therapists, MTD for corporation tax is on the horizon. The government has consulted on the approach, but no mandation date has been confirmed and no firm timetable is currently in place. We cover the latest on our <a href="/blog/vat-and-making-tax-digital">VAT and MTD blog</a>.</p>
 
 <h2>Tax Deadlines and Compliance for Beauty Therapists</h2>
 

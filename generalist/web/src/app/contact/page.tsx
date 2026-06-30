@@ -6,18 +6,18 @@ import { JsonLd, referencedOrganization } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: `Contact`,
-  description: `Speak to an ICAEW chartered accountant about your UK business. Same-day response, fixed fees, no obligation.`,
+  description: `Speak to an accountant about your UK business. Same-day response, fixed fees, no obligation.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
     title: `Contact | ${siteConfig.name}`,
-    description: "Speak to an ICAEW chartered accountant. Same-day response, fixed fees, no obligation.",
+    description: "Speak to an accountant. Same-day response, fixed fees, no obligation.",
     url: `${siteConfig.url}/contact`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: `Contact | ${siteConfig.name}`,
-    description: "Speak to an ICAEW chartered accountant. Same-day response, fixed fees, no obligation.",
+    description: "Speak to an accountant. Same-day response, fixed fees, no obligation.",
   },
 };
 

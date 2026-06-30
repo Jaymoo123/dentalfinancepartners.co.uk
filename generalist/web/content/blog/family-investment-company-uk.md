@@ -33,7 +33,7 @@ faqs:
 
 <p>FICs are most common among families with significant liquid assets, typically £500,000 or more, though smaller portfolios can also work if the structure is right. They are used by business owners who have sold their company, by professionals who have built up large investment portfolios, and by families who want to bring the next generation into wealth management without giving away control.</p>
 
-<p>This article explains what a family investment company is, how it works, the tax implications, and the situations where it makes sense. As ICAEW qualified accountants, we work with families across the UK, from the Northern Quarter in Manchester to the Harbourside in Bristol, and the questions are always the same: does it save tax, and who controls the money.</p>
+<p>This article explains what a family investment company is, how it works, the tax implications, and the situations where it makes sense. We work with families across the UK, from the Northern Quarter in Manchester to the Harbourside in Bristol, and the questions are always the same: does it save tax, and who controls the money.</p>
 
 <h2>What Is a Family Investment Company?</h2>
 
@@ -60,11 +60,11 @@ faqs:
 
 <ul>
 <li><strong>Direct ownership</strong> by individuals. Simple, but income and gains are taxed at the individual's marginal rates. No control over timing of tax.</li>
-<li><strong>A trust.</strong> Offers flexibility and control, but trust tax rates are high (45% on income above £1,000, and 20% on most capital gains). Trusts also face periodic charges and a 10-year anniversary charge.</li>
-<li><strong>A Family Investment Company.</strong> The company pays corporation tax at 19% to 25% on its profits. Dividends paid to shareholders are then taxed at the shareholder's dividend rates (8.75%, 33.75%, or 39.35%). Capital gains within the company are taxed at 19% to 25% corporation tax rates, not the individual CGT rates.</li>
+<li><strong>A trust.</strong> Offers flexibility and control, but trust tax rates are high (45% on income above £500, and 24% on most capital gains from 30 October 2024). Trusts also face periodic charges and a 10-year anniversary charge.</li>
+<li><strong>A Family Investment Company.</strong> The company pays corporation tax at 19% to 25% on its profits. Dividends paid to shareholders are then taxed at the shareholder's dividend rates (10.75%, 35.75%, or 39.35% from 6 April 2026). Capital gains within the company are taxed at 19% to 25% corporation tax rates, not the individual CGT rates.</li>
 </ul>
 
-<p>The key difference is that the FIC defers the higher personal tax rates. The company pays a lower rate of tax on income and gains, and the family decides when to extract that money as dividends. If the children are basic rate taxpayers, they pay 8.75% on dividends received. If the parents are higher rate, they pay 33.75% on dividends. But the parents can choose not to take dividends, leaving the money inside the company to grow.</p>
+<p>The key difference is that the FIC defers the higher personal tax rates. The company pays a lower rate of tax on income and gains, and the family decides when to extract that money as dividends. If the children are basic rate taxpayers, they pay 10.75% on dividends received (from 6 April 2026). If the parents are higher rate, they pay 35.75% on dividends (from 6 April 2026). But the parents can choose not to take dividends, leaving the money inside the company to grow.</p>
 
 <p>That deferral is the central advantage. It is not an avoidance scheme. It is a timing difference. But over decades, the compounding effect of paying 19% to 25% instead of 40% or 45% is significant.</p>
 
@@ -88,19 +88,19 @@ faqs:
 
 <h3>Dividend Taxation When Extracting Money</h3>
 
-<p>When the company pays a dividend to shareholders, the shareholder pays dividend tax on the amount received. The rates for 2025/26 are:</p>
+<p>When the company pays a dividend to shareholders, the shareholder pays dividend tax on the amount received. The rates from 6 April 2026 (2026/27) are:</p>
 
 <ul>
-<li>8.75% for basic rate taxpayers</li>
-<li>33.75% for higher rate taxpayers</li>
+<li>10.75% for basic rate taxpayers (8.75% in 2025/26)</li>
+<li>35.75% for higher rate taxpayers (33.75% in 2025/26)</li>
 <li>39.35% for additional rate taxpayers</li>
 </ul>
 
 <p>The annual dividend allowance is £500. Above that, the rates above apply.</p>
 
-<p>The planning opportunity is to pay dividends to family members who are basic rate taxpayers, typically children or a non-earning spouse. Each child can receive up to £500 in dividends tax-free (using their dividend allowance) and then up to approximately £37,700 of dividends taxed at 8.75% (basic rate band). That is a total of roughly £38,200 per child per year, with tax of only 8.75% on the excess over £500.</p>
+<p>The planning opportunity is to pay dividends to family members who are basic rate taxpayers, typically children or a non-earning spouse. Each child can receive up to £500 in dividends tax-free (using their dividend allowance) and then up to approximately £37,700 of dividends taxed at 10.75% (basic rate band, from 6 April 2026). That is a total of roughly £38,200 per child per year, with tax of only 10.75% on the excess over £500.</p>
 
-<p>Compare that to the parent taking the same income personally at 33.75% or 39.35%. The saving is significant.</p>
+<p>Compare that to the parent taking the same income personally at 35.75% or 39.35% (from 6 April 2026). The saving is significant.</p>
 
 <h3>Capital Gains Within the Company</h3>
 
@@ -108,9 +108,9 @@ faqs:
 
 <p>This creates a double layer of tax: corporation tax on the gain, then dividend tax on the extraction. But the overall rate can still be lower than the individual CGT rate, depending on the shareholder's tax band and the company's tax rate.</p>
 
-<p>For example, if the company sells shares for a £100,000 gain and pays 25% corporation tax (£25,000), the remaining £75,000 can be distributed as a dividend. If the shareholder is a basic rate taxpayer, they pay 8.75% on the dividend (after the £500 allowance), so roughly £6,500 in tax. The total tax is £31,500, an effective rate of 31.5%. Compare that to the individual CGT rate of 24% on the same gain (£24,000). The FIC route is worse in this scenario.</p>
+<p>For example, if the company sells shares for a £100,000 gain and pays 25% corporation tax (£25,000), the remaining £75,000 can be distributed as a dividend. If the shareholder is a basic rate taxpayer, they pay 10.75% on the dividend (after the £500 allowance, from 6 April 2026), so roughly £8,000 in tax. The total tax is £33,000, an effective rate of 33%. Compare that to the individual CGT rate of 24% on the same gain (£24,000). The FIC route is worse in this scenario.</p>
 
-<p>But if the shareholder is a higher rate taxpayer, the individual CGT rate is 24% on the gain (£24,000). The FIC route costs £25,000 corporation tax plus roughly £25,000 dividend tax (33.75% of £75,000), total £50,000. The FIC is significantly worse.</p>
+<p>But if the shareholder is a higher rate taxpayer, the individual CGT rate is 24% on the gain (£24,000). The FIC route costs £25,000 corporation tax plus roughly £26,800 dividend tax (35.75% of £75,000 from 6 April 2026), total £51,800. The FIC is significantly worse.</p>
 
 <p>The lesson is clear: capital gains are usually better held personally, not inside a FIC, unless the gains are small and the shareholder is a basic rate taxpayer. The FIC works best for income-generating assets, not growth assets that will be sold.</p>
 
@@ -122,7 +122,7 @@ faqs:
 
 <p>This is a powerful planning tool. The parents can give away shares in the FIC while retaining control of the company's investments (if they hold voting shares). The children benefit from the growth, but the parents decide how the money is invested and when dividends are paid.</p>
 
-<p>There are anti-avoidance rules to watch. The gift of shares is a disposal for CGT purposes, but if the shares are not sold, there is no immediate CGT charge. Instead, the children inherit the parents' base cost. And the gift must be made without any reservation of benefit. If the parents continue to receive dividends from the shares they have given away, the gift is ineffective for IHT.</p>
+<p>There are anti-avoidance rules to watch. The gift of shares is a disposal for CGT purposes. Because a FIC is an investment (non-trading) company, gift holdover relief under TCGA 1992 s.165 is generally not available. The gift is therefore treated as a deemed disposal at market value, normally triggering an immediate CGT charge on the unrealised gain at the date of transfer. The children's base cost is the market value at the date of gift, not the parents' original cost. And the gift must be made without any reservation of benefit. If the parents continue to receive dividends from the shares they have given away, the gift is ineffective for IHT.</p>
 
 <h2>Setting Up a Family Investment Company</h2>
 
@@ -157,7 +157,7 @@ faqs:
 <li><strong>Your portfolio is mainly growth assets you plan to sell.</strong> The double tax on capital gains inside a FIC is worse than direct ownership for higher-rate taxpayers.</li>
 <li><strong>Your portfolio is small.</strong> The costs of incorporation, annual accounts, corporation tax returns, and professional advice can outweigh the tax savings on a portfolio under £250,000.</li>
 <li><strong>You need regular access to the income.</strong> If you plan to take all the income out of the company each year, the FIC adds a layer of tax with no benefit. You are better off holding the assets directly.</li>
-<li><strong>You are a basic rate taxpayer.</strong> The corporation tax rate (19% to 25%) is higher than your personal tax rate on dividends (8.75%). You would pay more tax inside the company than you would personally.</li>
+<li><strong>You are a basic rate taxpayer.</strong> The corporation tax rate (19% to 25%) is higher than your personal tax rate on dividends (10.75% from 6 April 2026). You would pay more tax inside the company than you would personally.</li>
 </ul>
 
 <h2>Practical Considerations and Costs</h2>
@@ -173,7 +173,7 @@ faqs:
 <li>Ongoing tax advice</li>
 </ul>
 
-<p>Our ICAEW qualified team typically sees annual compliance costs of £1,500 to £3,000 for a straightforward FIC, plus one-off setup costs of £1,000 to £2,500 for the incorporation, articles, and shareholders' agreement. That is not cheap, but on a £1 million portfolio the tax savings can easily justify the cost.</p>
+<p>Our experienced team typically sees annual compliance costs of £1,500 to £3,000 for a straightforward FIC, plus one-off setup costs of £1,000 to £2,500 for the incorporation, articles, and shareholders' agreement. That is not cheap, but on a £1 million portfolio the tax savings can easily justify the cost.</p>
 
 <p>You also need to consider the administrative burden. The company must file accounts at Companies House, which are publicly available. Some families prefer the privacy of a trust, where the details are not on public record. A FIC's accounts are visible to anyone who searches the company.</p>
 
@@ -185,7 +185,7 @@ faqs:
 <li><strong>Direct ownership with a bare trust for children.</strong> Simple, low cost, but the children get full control at 18.</li>
 <li><strong>A discretionary trust.</strong> More flexible for IHT planning, but trust tax rates are higher and there are periodic charges.</li>
 <li><strong>An investment bond.</strong> A life insurance policy that defers tax on investment growth. No control over timing of distributions in the same way.</li>
-<li><strong>A pension.</strong> Tax-free growth and tax relief on contributions, but limited access before age 57 (rising to 58).</li>
+<li><strong>A pension.</strong> Tax-free growth and tax relief on contributions, but limited access before age 55 (rising to 57 from 6 April 2028).</li>
 </ul>
 
 <p>Each option has different trade-offs. The right choice depends on your family's circumstances, your investment strategy, and your long-term goals.</p>

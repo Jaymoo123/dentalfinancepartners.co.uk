@@ -55,7 +55,7 @@ faqs:
 <ul>
 <li>Residential landlords renting out one or more properties</li>
 <li>Commercial property landlords</li>
-<li>Landlords with furnished holiday lettings (though these are treated differently for some tax purposes)</li>
+<li>Landlords with furnished holiday lettings (note: the furnished holiday lettings tax regime was abolished from 6 April 2025; these properties are now taxed as ordinary property income)</li>
 <li>Individuals who let property through a partnership (each partner's share counts toward their own threshold)</li>
 </ul>
 
@@ -106,7 +106,7 @@ faqs:
 
 <p>Most of these software options offer a free trial. We recommend testing two or three before committing. The right choice depends on the size of your portfolio, how many transactions you process, and whether you also have self-employment income.</p>
 
-<p>As ICAEW qualified accountants, we typically recommend Xero or FreeAgent for clients with larger portfolios because of their bank feed integration and reporting depth. For single-property landlords, Hammock or GoSimpleTax may be sufficient.</p>
+<p>We typically recommend Xero or FreeAgent for clients with larger portfolios because of their bank feed integration and reporting depth. For single-property landlords, Hammock or GoSimpleTax may be sufficient.</p>
 
 <h2>How Quarterly Updates Change Your Tax Payments</h2>
 

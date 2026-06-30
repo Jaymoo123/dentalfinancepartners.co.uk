@@ -57,7 +57,7 @@ faqs:
 
 <p>Every law firm in England and Wales that holds client money must submit an SRA Accountant's Report each year. The report confirms that your firm has complied with the Accounts Rules during the period. If your accountant is not familiar with the SRA rules, they cannot sign this report.</p>
 
-<p>We are ICAEW qualified accountants with specific experience in preparing SRA reports. Our team knows the rules around third-party managed accounts, joint accounts, and the treatment of interest on client money.</p>
+<p>We are specialist accountants with specific experience in preparing SRA reports. Our team knows the rules around third-party managed accounts, joint accounts, and the treatment of interest on client money.</p>
 
 <h2>VAT on Legal Services</h2>
 
@@ -139,7 +139,7 @@ faqs:
 <li><strong>Proactive advice.</strong> Do they just file your accounts, or do they suggest tax planning opportunities?</li>
 </ul>
 
-<p>We meet all these criteria. Our team at Holloway Davies includes ICAEW qualified accountants who specialise in professional services firms, including solicitors. We work with firms across the UK, from a solo practitioner in Leeds city centre to a 20-partner firm in Bristol's Harbourside.</p>
+<p>Our team at Holloway Davies specialises in professional services firms, including solicitors, and has the experience required for SRA reporting work. We work with firms across the UK, from a solo practitioner in Leeds city centre to a 20-partner firm in Bristol's Harbourside.</p>
 
 <p>If you want to see how we can help, visit our <a href="/services">services page</a> or <a href="/contact">get in touch</a> for a no-obligation discussion.</p>
 

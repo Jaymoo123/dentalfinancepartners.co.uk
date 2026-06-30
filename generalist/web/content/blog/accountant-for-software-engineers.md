@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Accountant for Software Engineers UK | IR35 & R&D Tax"
-metaDescription: "Software engineers face unique tax issues: IR35, R&D credits, contractor Ltd company accounts. Our ICAEW accountants explain what you need to know."
+metaDescription: "Software engineers face unique tax issues: IR35, R&D credits, contractor Ltd company accounts. Our specialist accountants explain what you need to know."
 altText: "Software engineer working at a desk in a modern UK office with a laptop and accounting paperwork visible"
 image: "/blog/accountant-for-software-engineers.jpg"
 imageCredit:
@@ -35,7 +35,7 @@ faqs:
 
 <p>A generalist accountant who handles a handful of sole traders and a few property landlords will not know the nuances of IR35, R&D tax credits for software development, or the optimal dividend strategy for a contractor who moves between inside and outside IR35 contracts. That is why you need an accountant for software engineers who understands the sector.</p>
 
-<p>At Holloway Davies, our ICAEW qualified team works with software engineers across the UK. From a freelance developer in Shoreditch to a CTO-turned-consultant in Manchester's Northern Quarter, we see the same patterns. Here is what a specialist accountant should be doing for you.</p>
+<p>At Holloway Davies, our specialist team works with software engineers across the UK. From a freelance developer in Shoreditch to a CTO-turned-consultant in Manchester's Northern Quarter, we see the same patterns. Here is what a specialist accountant should be doing for you.</p>
 
 <h2>IR35: The Single Biggest Financial Risk for Software Engineers</h2>
 
@@ -47,9 +47,9 @@ faqs:
 
 <h3>Inside IR35: What Changes</h3>
 
-<p>If you are inside IR35, your limited company pays you a salary that is effectively the same as being on the client's payroll. Employer NI (13.8%) and apprenticeship levy apply. Your company can claim a 5% expenses allowance on the deemed employment income, but that is it. No dividend planning, no profit extraction via dividends at 8.75%.</p>
+<p>If you are inside IR35, your limited company pays you a salary that is effectively the same as being on the client's payroll. Employer NI (15%, from 6 April 2025) and apprenticeship levy apply. Your company can claim a 5% expenses allowance on the deemed employment income, but that is it. No dividend planning, no profit extraction via dividends at lower rates.</p>
 
-<p>Outside IR35, you run your company as a genuine business. You pay yourself a low salary (often £12,570 to match the personal allowance) and take the rest as dividends. The total tax rate on dividends is 8.75% up to the basic rate band, 33.75% above that. That is a significant saving compared to the 40%+ combined rate on inside IR35 income.</p>
+<p>Outside IR35, you run your company as a genuine business. You pay yourself a low salary (often £12,570 to match the personal allowance) and take the rest as dividends. The dividend tax rates are 10.75% up to the basic rate band and 35.75% above that (2026/27 rates; 8.75% and 33.75% applied in 2025/26). That is a significant saving compared to the 40%+ combined rate on inside IR35 income.</p>
 
 <h2>R&D Tax Credits for Software Engineers</h2>
 
@@ -75,15 +75,15 @@ faqs:
 
 <h2>Dividend Planning and Director Salaries</h2>
 
-<p>Every software engineer running a limited company needs a dividend strategy. The basic structure is simple. Pay yourself a salary up to the personal allowance (£12,570 for 2025/26). Pay employer NI on anything above the secondary threshold (£9,100). Then take dividends up to the basic rate band.</p>
+<p>Every software engineer running a limited company needs a dividend strategy. The basic structure is simple. Pay yourself a salary up to the personal allowance (£12,570 for 2025/26). Pay employer NI (15%) on anything above the secondary threshold (£5,000, from 6 April 2025). Then take dividends up to the basic rate band.</p>
 
 <p>But the detail matters. If you have a spouse who is also a director, you can issue alphabet shares to them and pay dividends flexibly. This can keep both of you within the basic rate band, saving thousands in higher rate tax. Settlement legislation can apply if shares are gifted to a non-spouse, but for a spouse, it is generally straightforward.</p>
 
-<p>A specialist <a href="/blog/director-pay-and-dividends">accountant for software engineers</a> will model your optimal salary and dividend split. They will factor in the dividend allowance (£500 for 2025/26), the dividend tax rates (8.75% basic, 33.75% higher, 39.35% additional), and your total income from all sources.</p>
+<p>A specialist <a href="/blog/director-pay-and-dividends">accountant for software engineers</a> will model your optimal salary and dividend split. They will factor in the dividend allowance (£500 for 2025/26), the dividend tax rates (10.75% basic, 35.75% higher, 39.35% additional, from 6 April 2026), and your total income from all sources.</p>
 
 <h2>What About Sole Traders and Partnerships?</h2>
 
-<p>Not every software engineer needs a limited company. If you are just starting out, or your income is below the VAT threshold and you have few business expenses, sole trader status can be simpler. You file a self assessment return (SA100 with SA103 self-employment pages) each year. You pay income tax and Class 2 and Class 4 National Insurance on your profits.</p>
+<p>Not every software engineer needs a limited company. If you are just starting out, or your income is below the VAT threshold and you have few business expenses, sole trader status can be simpler. You file a self assessment return (SA100 with SA103 self-employment pages) each year. You pay income tax and Class 4 National Insurance on your profits (Class 2 NIC was abolished from 6 April 2024).</p>
 
 <p>The downside is unlimited liability. If a client sues you, your personal assets are at risk. And the tax rates are higher. On profits above £50,270, you pay 40% income tax plus 2% Class 4 NIC. Compare that to a limited company where you pay 19% corporation tax on retained profits and control when you extract dividends.</p>
 
@@ -120,7 +120,7 @@ faqs:
 <li><strong>Proactive advice.</strong> They should flag changes in legislation that affect you. They should not wait for you to ask.</li>
 </ul>
 
-<p>At Holloway Davies, we meet all of these criteria. Our ICAEW qualified team specialises in working with software engineers. We are based in the UK and we understand the sector. <a href="/contact">Contact us</a> to discuss your situation.</p>
+<p>At Holloway Davies, we meet all of these criteria. Our experienced team specialises in working with software engineers. We are based in the UK and we understand the sector. <a href="/contact">Contact us</a> to discuss your situation.</p>
 
 <h2>Common Questions from Software Engineers</h2>
 

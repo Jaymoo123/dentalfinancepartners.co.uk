@@ -11,7 +11,7 @@ export const pensionTool: GenericTool = {
   embedHeight: 560,
   metaTitle: "Pension Contribution Optimiser | UK Limited Company Calculator",
   metaDescription:
-    "Free pension contribution calculator for UK limited company directors. See the corporation tax saved, real cost to company, and advantage over taking dividends. 2025/26 rates.",
+    "Free pension contribution calculator for UK limited company directors. See the corporation tax saved, real cost to company, and advantage over taking dividends. 2026/27 rates.",
   intro:
     "For owner-managed limited companies, employer pension contributions are usually the cheapest way to extract retained profit. Salary is subject to NI; dividends face dividend tax. Employer pension goes in gross, saves corporation tax, and bypasses both. The calculator shows the tax saving, the real cost to your company, and how the pension stacks up against simply taking the same money as dividend.",
   fields: [
@@ -91,7 +91,7 @@ export const pensionTool: GenericTool = {
   },
   faqs: [
     {
-      question: "What is the annual pension allowance for 2025/26?",
+      question: "What is the annual pension allowance for 2026/27?",
       answer:
         "The standard annual allowance is £60,000. If your adjusted income (salary + dividends + employer pension contributions) exceeds £260,000, the allowance tapers by £1 for every £2 of excess, down to a minimum of £10,000.",
     },

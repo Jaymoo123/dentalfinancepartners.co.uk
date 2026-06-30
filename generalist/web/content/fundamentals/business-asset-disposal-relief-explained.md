@@ -6,8 +6,8 @@ date: "2026-05-17"
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "Business Asset Disposal Relief Explained | UK Accountants"
-metaDescription: "Business Asset Disposal Relief explained for UK business owners. 14% CGT rate, £1m lifetime limit, eligibility rules, and worked examples from ICAEW"
-altText: "Business owner reviewing exit strategy documents with ICAEW accountant in Manchester city centre office"
+metaDescription: "Business Asset Disposal Relief explained for UK business owners. 14% CGT rate, £1m lifetime limit, eligibility rules, and worked examples."
+altText: "Business owner reviewing exit strategy documents with their accountant in Manchester city centre office"
 image: "/blog/business-asset-disposal-relief-explained.jpg"
 imageCredit:
   photographer: "Brett Jordan"
@@ -30,7 +30,7 @@ faqs:
 
 <p>If you own a business in the UK and plan to sell it one day, the single most valuable tax relief you need to understand is Business Asset Disposal Relief. Formerly known as Entrepreneurs' Relief, BADR reduces the Capital Gains Tax (CGT) you pay on the sale of your business from the standard 18% or 24% down to just 14% for the 2025/26 tax year. That difference can save you tens of thousands of pounds. Possibly hundreds of thousands.</p>
 
-<p>This guide is for directors of limited companies, sole traders, and partnership owners who want to understand exactly how BADR works, who qualifies, and what traps cause claims to fail. We are ICAEW-qualified accountants who have advised business owners across the UK, from Shoreditch tech startups to Manchester manufacturing firms and Bristol creative agencies, on structuring their exits to secure this relief. We will walk you through the rules, the numbers, and the planning steps you need to take now, not the week before you exchange contracts.</p>
+<p>This guide is for directors of limited companies, sole traders, and partnership owners who want to understand exactly how BADR works, who qualifies, and what traps cause claims to fail. We have advised business owners across the UK, from Shoreditch tech startups to Manchester manufacturing firms and Bristol creative agencies, on structuring their exits to secure this relief. We will walk you through the rules, the numbers, and the planning steps you need to take now, not the week before you exchange contracts.</p>
 
 <h2>What is Business Asset Disposal Relief?</h2>
 

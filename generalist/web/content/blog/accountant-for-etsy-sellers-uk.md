@@ -33,7 +33,7 @@ faqs:
 
 <p>Many Etsy sellers start by handling their own accounts. You track sales in a spreadsheet, log expenses, and file a self assessment return each January. That works fine when turnover is low. But as your shop grows, the tax rules get more complex. That is where a specialist accountant for Etsy sellers becomes useful.</p>
 
-<p>We are Holloway Davies, an ICAEW qualified accountancy firm based in the UK. We work with Etsy sellers who have grown past the spreadsheet stage. This article explains what an Etsy accountant does, when you need one, and how to choose the right firm.</p>
+<p>We are Holloway Davies, a specialist accountancy firm based in the UK. We work with Etsy sellers who have grown past the spreadsheet stage. This article explains what an Etsy accountant does, when you need one, and how to choose the right firm.</p>
 
 <h2>Do You Actually Need an Accountant for Etsy?</h2>
 <p>Legally, no. You can file your own self assessment return using HMRC's free online service or commercial software like GoSimpleTax or FreeAgent. Many sellers do exactly that for years.</p>
@@ -79,7 +79,7 @@ faqs:
 <h3>3. Business Structure Advice</h3>
 <p>Most Etsy sellers start as sole traders. That is the simplest structure. But as profits grow, a limited company can be more tax-efficient. Your accountant can model both scenarios and show you the net take-home pay difference.</p>
 
-<p>For example, a sole trader making £50,000 profit pays around £7,500 in income tax and £3,000 in Class 4 NIC. The same profit taken as salary and dividends through a limited company could save over £2,000 per year. That saving grows as profits increase.</p>
+<p>For example, a sole trader making £50,000 profit pays around £7,500 in income tax and around £2,250 in Class 4 NIC (6% on profits above £12,570 up to £50,270). The same profit taken as salary and dividends through a limited company could save over £2,000 per year. That saving grows as profits increase.</p>
 
 <p>If you decide to incorporate, we have a guide on <a href="/incorporation">incorporation and structure</a> that explains the process.</p>
 
@@ -101,7 +101,7 @@ faqs:
 <h3>They Are ICAEW or ACCA Qualified</h3>
 <p>Qualification matters. An ICAEW or ACCA qualified accountant has passed rigorous exams and follows a professional code of conduct. They also carry professional indemnity insurance. That protects you if they make a mistake.</p>
 
-<p>As an <a href="/about">ICAEW qualified firm</a>, we meet these standards. We also have experience working with creative businesses, including Etsy sellers, makers, and designers.</p>
+<p>We have experience working with creative businesses, including Etsy sellers, makers, and designers.</p>
 
 <h3>They Use Modern Software</h3>
 <p>Your accountant should use cloud-based accounting software like Xero, FreeAgent, or QuickBooks. These tools connect directly to your Etsy shop and bank account, automating much of the data entry. If your accountant still asks for paper receipts in a shoebox, look elsewhere.</p>
@@ -129,7 +129,7 @@ faqs:
 <p>If your Etsy turnover crossed £1,000 in the last tax year and you have not registered with HMRC, do it now. The deadline for registering is 5 October following the end of the tax year in which you started trading. Missing it means a penalty.</p>
 
 <h2>How We Can Help</h2>
-<p>At Holloway Davies, we work with Etsy sellers across the UK, from a potter in the Lake District to a printmaker in Manchester's Northern Quarter. We are ICAEW qualified, which means you get the same standard of advice as a FTSE 100 company, but tailored to your small business.</p>
+<p>At Holloway Davies, we work with Etsy sellers across the UK, from a potter in the Lake District to a printmaker in Manchester's Northern Quarter. We work to the same professional standards as the major firms, but tailored to your small business.</p>
 
 <p>We handle self assessment, VAT, payroll (if you hire staff or use a packing assistant), and limited company accounts. We use Xero and FreeAgent to connect directly to your Etsy shop, so you do not need to send us spreadsheets every month.</p>
 

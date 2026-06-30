@@ -49,7 +49,7 @@ faqs:
 
 <p>Notice what is not in that list. Commercial success. Market viability. Revenue generation. Profitability. None of it.</p>
 
-<p>As ICAEW qualified accountants, we regularly see clients who spent £50,000, £100,000 or more on R&D projects that failed technically or commercially. They assume the money is lost for relief purposes. In most cases, it is not.</p>
+<p>We regularly see clients who spent £50,000, £100,000 or more on R&D projects that failed technically or commercially. They assume the money is lost for relief purposes. In most cases, it is not.</p>
 
 <h2>Why Failed Projects Still Qualify</h2>
 

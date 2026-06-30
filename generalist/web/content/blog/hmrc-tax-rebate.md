@@ -95,7 +95,7 @@ imageCredit:
 </ul>
 
 <h2>When to Speak to an Accountant</h2>
-<p>If your tax affairs are straightforward, you can handle a rebate claim yourself. But if you have multiple income sources, foreign income, or complex expenses, it is worth speaking to a qualified accountant. As ICAEW qualified accountants, we see clients every year who have missed refunds because they did not know what they could claim.</p>
+<p>If your tax affairs are straightforward, you can handle a rebate claim yourself. But if you have multiple income sources, foreign income, or complex expenses, it is worth speaking to a qualified accountant. We see clients every year who have missed refunds because they did not know what they could claim.</p>
 <p>If you are a company director or sole trader and your overpayment is linked to your business, we can help you file an accurate Self Assessment return and ensure you claim every relief you are entitled to. Visit our <a href="/services">services page</a> for more details on how we can help.</p>
 <p>For a full breakdown of common tax terms and thresholds, see our <a href="/glossary">glossary</a>. If you are unsure whether you qualify for a rebate, use our <a href="/calculators">calculators</a> to estimate your tax position.</p>
 

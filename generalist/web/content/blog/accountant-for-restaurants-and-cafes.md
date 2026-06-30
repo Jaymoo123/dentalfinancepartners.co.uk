@@ -59,7 +59,7 @@ faqs: []
 
 <h3>Flat Rate VAT for Restaurants</h3>
 
-<p>The Flat Rate Scheme allows businesses to charge 20% VAT but pay HMRC a lower fixed percentage based on their sector. For restaurants and takeaways, the flat rate is 12% (for food businesses) or 13% for catering services. Limited cost traders (those who spend less than 2% of turnover on relevant goods, or less than £1,000 per year) must use 16.5%.</p>
+<p>The Flat Rate Scheme allows businesses to charge 20% VAT but pay HMRC a lower fixed percentage based on their sector. For restaurants and takeaways, the flat rate is 12.5% for catering services (including restaurants and cafes). Limited cost traders (those who spend less than 2% of turnover on relevant goods, or less than £1,000 per year) must use 16.5%.</p>
 
 <p>The flat rate can simplify VAT accounting, but it is rarely the best option for restaurants. Your input VAT on food, drink, equipment, and utilities is usually significant. Under the flat rate, you cannot reclaim input VAT except on capital assets over £2,000. Most restaurants are better off on standard VAT accounting.</p>
 
@@ -120,7 +120,7 @@ faqs: []
 
 <p>Most restaurants and cafes operate as limited companies. Corporation tax at 19% to 25% applies to profits. How you extract those profits affects your personal tax bill.</p>
 
-<p>The typical structure for a hospitality business is a director salary at the personal allowance level (£12,570 for 2025/26) plus dividends. Dividends are taxed at 8.75% basic rate, 33.75% higher rate, and 39.35% additional rate. The annual dividend allowance is £500.</p>
+<p>The typical structure for a hospitality business is a director salary at the personal allowance level (£12,570 for 2025/26) plus dividends. Dividends are taxed at 10.75% basic rate, 35.75% higher rate, and 39.35% additional rate (2026/27 rates from 6 April 2026; the 2025/26 rates were 8.75% / 33.75%). The annual dividend allowance is £500.</p>
 
 <p>If you have a partner or spouse working in the business, paying them a salary can be tax-efficient. Alphabet shares allow flexible dividend allocation. But be careful with settlement legislation if you gift shares to someone who does not work in the business.</p>
 
@@ -148,7 +148,7 @@ faqs: []
 
 <p>A specialist <strong>accountant for restaurants</strong> knows these answers. They also know the sector's typical margins, the common HMRC enquiry triggers, and the software that works best for hospitality businesses.</p>
 
-<p>At <a href="/about">Holloway Davies</a>, we are ICAEW qualified accountants who work with hospitality businesses across the UK. From a single-site cafe in Bristol's Harbourside to a multi-site restaurant group in Manchester's Northern Quarter, we understand the numbers that matter in your sector.</p>
+<p>At <a href="/about">Holloway Davies</a>, we work with hospitality businesses across the UK. From a single-site cafe in Bristol's Harbourside to a multi-site restaurant group in Manchester's Northern Quarter, we understand the numbers that matter in your sector.</p>
 
 <p>If you want an accountant who knows the difference between a tronc and a tip, and who will challenge your food cost percentage, <a href="/contact">get in touch</a>.</p>
 

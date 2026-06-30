@@ -2,7 +2,7 @@
  * VAT Scheme Comparator — pure compute module.
  *
  * Extracted from VATSchemeComparator.tsx. No React / DOM / fetch.
- * All rates match uk-tax-rates.ts 2025/26 values.
+ * All rates match uk-tax-rates.ts 2026/27 values.
  */
 
 const STANDARD_VAT = 0.20;

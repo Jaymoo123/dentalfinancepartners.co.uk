@@ -47,7 +47,7 @@ faqs: []
 
 <p>Here is the difference in numbers for the 2025/26 tax year.</p>
 
-<p><strong>Sole trader example.</strong> You earn £80,000 from brand deals and ad revenue. After allowable expenses of £12,000, your profit is £68,000. You pay Class 2 and Class 4 NIC on the self-employed profits, plus income tax at 20% and 40% on the amounts above the basic rate band. Your total tax bill is roughly £18,500.</p>
+<p><strong>Sole trader example.</strong> You earn £80,000 from brand deals and ad revenue. After allowable expenses of £12,000, your profit is £68,000. You pay Class 4 NIC on the self-employed profits (6% on profits between £12,570 and £50,270, then 2% above; Class 2 NIC was abolished from 6 April 2024), plus income tax at 20% and 40% on the amounts above the basic rate band. Your total tax bill is roughly £17,250.</p>
 
 <p><strong>Limited company example.</strong> You earn £80,000 through your company. The company pays corporation tax at 19% on profits up to £50,000 and 25% on the rest (with marginal relief in between). You pay yourself a salary of £12,570 (no income tax or NI) and take the rest as dividends. Your total tax bill, combining corporation tax and dividend tax, is roughly £14,200.</p>
 
@@ -70,7 +70,7 @@ faqs: []
 <p>HMRC allows you to deduct expenses that are "wholly and exclusively" for your business. For influencers, that includes:</p>
 
 <ul>
-<li><strong>Equipment.</strong> Cameras, lenses, tripods, lighting, microphones, ring lights, backdrops. You can claim the full cost under the Annual Investment Allowance (AIA) up to £1 million per year, or use the simpler £2,000 threshold for small equipment.</li>
+<li><strong>Equipment.</strong> Cameras, lenses, tripods, lighting, microphones, ring lights, backdrops. You can claim the full cost under the Annual Investment Allowance (AIA) up to £1 million per 12 months. Amounts above the AIA, or where you choose not to use it, go into the main pool at an 18% writing-down allowance (reducing to 14% from April 2026).</li>
 <li><strong>Software and subscriptions.</strong> Editing software (Adobe Creative Cloud, Final Cut Pro), scheduling tools (Later, Buffer), analytics tools, stock photo subscriptions, music licensing.</li>
 <li><strong>Home office.</strong> You can claim a proportion of your rent or mortgage interest, council tax, utilities and internet. HMRC accepts a simplified rate of £6 per week for a home office, but if your actual costs are higher, you should calculate the business proportion of your total household costs.</li>
 <li><strong>Travel.</strong> Flights, trains, taxis, accommodation for work trips. If you attend a brand event in another city, the travel costs are allowable. The daily commute to a co-working space is not.</li>
@@ -110,7 +110,7 @@ faqs: []
 <li><strong>Do they have other influencer clients?</strong> That is not essential, but it helps. They will already know the common issues and the HMRC enquiry triggers.</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we work with influencers across the UK. We review contracts, set up the right company structure, handle VAT registration and MTD compliance, and file your annual accounts and tax returns. If you are earning from brand deals, ad revenue or digital products, we can help.</p>
+<p>We work with influencers across the UK. We review contracts, set up the right company structure, handle VAT registration and MTD compliance, and file your annual accounts and tax returns. If you are earning from brand deals, ad revenue or digital products, we can help.</p>
 
 <p>You can <a href="/contact">contact us</a> to discuss your situation. Or read our <a href="/blog/limited-company-tax">limited company tax guide</a> for more on how the numbers work.</p>
 

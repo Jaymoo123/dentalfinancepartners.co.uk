@@ -102,7 +102,7 @@ faqs:
 
 <p>One trap for new companies is the interaction between losses and directors' loan accounts. If you put money into the company as a director's loan (not share capital), and the company makes a loss, the loan account sits as a credit balance. That is fine. But if you take money out of the company while it is loss-making, and the company cannot repay you because it has no profits, you may trigger a benefit in kind charge or, worse, a loan to participator charge under Section 455.</p>
 
-<p>The S455 charge is 33.75% of the loan amount, payable by the company. It is refundable when the loan is repaid, but the cash flow impact can be severe. If your company is loss-making, think carefully before taking any money out beyond your salary.</p>
+<p>The S455 charge is 35.75% of the loan amount for loans made on or after 6 April 2026 (33.75% for loans made in 2025/26), payable by the company. It is refundable when the loan is repaid, but the cash flow impact can be severe. If your company is loss-making, think carefully before taking any money out beyond your salary.</p>
 
 <p>For more on this, see our <a href="/blog/director-pay-and-dividends">guide to director pay and dividends</a>.</p>
 
@@ -119,7 +119,7 @@ faqs:
 <li>If you want to claim R&D relief or group relief, include the relevant supplementary pages.</li>
 </ul>
 
-<p>Most accounting software packages like Xero, FreeAgent, and QuickBooks can generate the CT600 directly. If you use an accountant, they will handle the filing. As <a href="/about">ICAEW qualified accountants</a>, we file CT600 returns for loss-making companies every week. The process is the same as for profitable companies. The only difference is the result.</p>
+<p>Most accounting software packages like Xero, FreeAgent, and QuickBooks can generate the CT600 directly. If you use an accountant, they will handle the filing. We file CT600 returns for loss-making companies every week. The process is the same as for profitable companies. The only difference is the result.</p>
 
 <h2>Common Mistakes with Loss-Making Companies</h2>
 

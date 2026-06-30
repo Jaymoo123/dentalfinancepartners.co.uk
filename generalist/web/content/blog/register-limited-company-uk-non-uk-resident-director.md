@@ -17,23 +17,21 @@ imageCredit:
   source: Pexels
 h1: How to Register a Limited Company UK With a Non-UK Resident Director
 summary: A non-UK resident can register a limited company in the UK. The process is similar to a UK resident application but with extra compliance steps. This guide covers the requirements, the paperwork, and the ongoing obligations you need to plan for.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How to Register a Limited Company UK With a Non-UK Resident Director","description":"Set up a UK limited company from abroad and pay corporation tax of 19% on profits up to £50,000. You need a UK registered office, but no UK bank account.","url":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/register-limited-company-uk-non-uk-resident-director","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
-  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/register-limited-company-uk-non-uk-resident-director"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/register-limited-company-uk-non-uk-resident-director.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Incorporation and Structure","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure"},{"@type":"ListItem","position":3,"name":"How to Register a Limited Company UK With a Non-UK Resident Director","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/register-limited-company-uk-non-uk-resident-director"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I register a UK limited company if I live outside the UK?","acceptedAnswer":{"@type":"Answer","text":"Yes. Companies House does not require directors to be UK residents. You can complete the entire online incorporation process from anywhere in the world. You need a UK registered office address, but that can be an accountant''s address or a service address."}},{"@type":"Question","name":"Do I need a UK bank account to register a UK company?","acceptedAnswer":{"@type":"Answer","text":"No. You do not need a UK bank account to incorporate. You can open one after registration. Digital banks like Wise, Revolut Business, and Monese accept non-UK residents with a UK company certificate. Traditional
-  high street banks usually require you to attend a branch in person."}},{"@type":"Question","name":"What tax do I pay as a non-UK resident director of a UK company?","acceptedAnswer":{"@type":"Answer","text":"You pay UK tax only on UK-source income. Dividends and salary from your UK company are UK-source. Dividend tax rates are 8.75% basic rate, 33.75% higher rate, 39.35% additional rate. The dividend allowance is £500 for 2025/26. Your home country may also tax the income, but double taxation treaties usually prevent paying tax twice."}},{"@type":"Question","name":"Can I use my overseas home address as the registered office?","acceptedAnswer":{"@type":"Answer","text":"No. The registered office must be a physical address in the UK. It cannot be a PO Box. You can use an accountant''s address or a registered office service. Your personal residential address can remain private if you use a service address for the director''s details on the public register."}}]}]}'
+schema: ""
 faqs:
 - question: Can I register a UK limited company if I live outside the UK?
   answer: Yes. Companies House does not require directors to be UK residents. You can complete the entire online incorporation process from anywhere in the world. You need a UK registered office address, but that can be an accountant's address or a service address.
 - question: Do I need a UK bank account to register a UK company?
   answer: No. You do not need a UK bank account to incorporate. You can open one after registration. Digital banks like Wise, Revolut Business, and Monese accept non-UK residents with a UK company certificate. Traditional high street banks usually require you to attend a branch in person.
 - question: What tax do I pay as a non-UK resident director of a UK company?
-  answer: You pay UK tax only on UK-source income. Dividends and salary from your UK company are UK-source. Dividend tax rates are 8.75% basic rate, 33.75% higher rate, 39.35% additional rate. The dividend allowance is £500 for 2025/26. Your home country may also tax the income, but double taxation treaties usually prevent paying tax twice.
+  answer: You pay UK tax only on UK-source income. Dividends and salary from your UK company are UK-source. Dividend tax rates are 10.75% basic rate, 35.75% higher rate, 39.35% additional rate (from 6 April 2026). The dividend allowance is £500. Your home country may also tax the income, but double taxation treaties usually prevent paying tax twice.
 - question: Can I use my overseas home address as the registered office?
   answer: No. The registered office must be a physical address in the UK. It cannot be a PO Box. You can use an accountant's address or a registered office service. Your personal residential address can remain private if you use a service address for the director's details on the public register.
 metaTitle_prev: How to Register a Limited Company UK with a Non-UK Resident
 metaDescription_prev: Non-UK resident directors can register a UK limited company online via Companies House. But the process has extra steps. Here is what you need to know.
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -87,7 +85,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If you do not live in the UK, your personal tax position depends on your residence status under the Statutory Residence Test. If you spend fewer than 183 days in the UK per tax year and do not have a UK home, you are likely non-UK resident.</p>
 
-<p>Non-UK resident directors pay UK income tax only on UK-source income. Dividends you take from your UK company are UK-source income. They are taxed at the usual dividend rates: 8.75% basic rate, 33.75% higher rate, 39.35% additional rate. The dividend allowance for 2025/26 is £500.</p>
+<p>Non-UK resident directors pay UK income tax only on UK-source income. Dividends you take from your UK company are UK-source income. They are taxed at the usual dividend rates: 10.75% basic rate, 35.75% higher rate, 39.35% additional rate (from 6 April 2026). The dividend allowance is £500.</p>
 
 <p>Salary you pay yourself is also UK-source. You will need to register for self assessment with HMRC to report this income. The SA100 return is due by 31 January after the tax year end.</p>
 
@@ -105,13 +103,13 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If you pay yourself a salary through the company, you need to set up a payroll scheme with HMRC. You can do this online. The payroll reports are due on or before each pay day through Real Time Information (RTI).</p>
 
-<p>As a non-UK resident director, you might not need to pay UK National Insurance if you are not physically present in the UK. But the rules are specific. Employer NI of 13.8% applies to salary above the secondary threshold of £9,100 per year. If you are the only employee and your salary is below that threshold, no employer NI is due.</p>
+<p>As a non-UK resident director, you might not need to pay UK National Insurance if you are not physically present in the UK. But the rules are specific. Employer NI of 15% applies to salary above the secondary threshold of £5,000 per year (from 6 April 2025). If you are the only employee and your salary is below that threshold, no employer NI is due.</p>
 
 <p>Many non-UK directors take a low salary (around £12,570 per year) and the rest as dividends. This is tax efficient because dividends do not attract NI. But the salary must be commercially justifiable and actually paid.</p>
 
 <h3>Companies House Filing</h3>
 
-<p>Every UK limited company must file a confirmation statement every 12 months. The fee is £13 for online filing. You must also file annual accounts within 9 months of the year end.</p>
+<p>Every UK limited company must file a confirmation statement every 12 months. The fee is £34 for online filing (£62 by paper), since 1 May 2024. You must also file annual accounts within 9 months of the year end.</p>
 
 <p>Late filing penalties for accounts start at £150 for a private company one month late and rise to £1,500 for six months late. These apply regardless of where the director lives.</p>
 
@@ -159,9 +157,9 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <ul>
 <li>Salary of £12,570 (no income tax, no NI if below thresholds)</li>
-<li>Dividends of up to £37,700 (taxed at 8.75% basic rate)</li>
+<li>Dividends of up to £37,700 (£37,200 taxable after the £500 allowance, at 10.75% basic rate)</li>
 <li>Total income of £50,270</li>
-<li>Total tax: approximately £3,298 on dividends plus no tax on salary</li>
+<li>Total tax: approximately £3,999 on dividends plus no tax on salary</li>
 </ul>
 
 <p>If your home country taxes worldwide income, you may need to declare the UK company income there too. Double taxation relief usually prevents paying tax twice, but the paperwork matters. Speak to a local tax advisor in your country alongside your UK accountant.</p>
@@ -188,7 +186,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>You can file everything yourself. Companies House and HMRC portals are accessible from anywhere. But the compliance burden is higher when you are not UK resident. Missing a deadline because post went to the wrong address is a common problem.</p>
 
-<p>As <a href="/about">ICAEW qualified accountants</a>, we handle the full compliance cycle for non-UK resident directors. We act as the registered office address, forward all post, file the confirmation statement, prepare the annual accounts, and handle corporation tax and VAT returns. It removes the geography problem entirely.</p>
+<p>At <a href="/about">Holloway Davies</a>, we handle the full compliance cycle for non-UK resident directors. We act as the registered office address, forward all post, file the confirmation statement, prepare the annual accounts, and handle corporation tax and VAT returns. It removes the geography problem entirely.</p>
 
 <p>If you are considering registering a UK company from overseas, <a href="/contact">get in touch</a>. We can talk through the specific steps for your situation.</p>
 

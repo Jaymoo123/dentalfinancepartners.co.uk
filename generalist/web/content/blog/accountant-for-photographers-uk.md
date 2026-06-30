@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Accountant for Photographers UK | Industry Specialist Advice"
 metaDescription: "Find a dedicated accountant for photographers in the UK. We cover VAT, expenses, IR35, and tax planning tailored to your photography business."
-altText: "Professional photographer reviewing invoices with an ICAEW qualified accountant in a modern UK office"
+altText: "Professional photographer reviewing invoices with an accountant in a modern UK office"
 image: "/blog/accountant-for-photographers-uk.jpg"
 imageCredit:
   photographer: "Imad Clicks"
@@ -33,7 +33,7 @@ faqs:
 
 <p>Photography is not a standard service business. You buy expensive equipment that depreciates fast. You travel to locations, often at short notice. You license images rather than selling physical products. And your income can spike wildly from one month to the next. A general accountant who handles corner shops and plumbers will miss the nuances. That is why a specialist <strong>accountant for photographers</strong> can save you thousands, not just in tax but in time and stress.</p>
 
-<p>At Holloway Davies, we are ICAEW qualified accountants who work with photographers across the UK. We see the same mistakes repeated: incorrect VAT treatment of print sales, missed capital allowances on camera bodies, and poor profit extraction strategies that leave directors paying more tax than they need to.</p>
+<p>At Holloway Davies, we are specialist accountants who work with photographers across the UK. We see the same mistakes repeated: incorrect VAT treatment of print sales, missed capital allowances on camera bodies, and poor profit extraction strategies that leave directors paying more tax than they need to.</p>
 
 <p>This guide covers the specific tax and accounting issues photographers face, the right business structure for your work, and how to find an accountant who actually understands your trade.</p>
 
@@ -46,7 +46,7 @@ faqs:
 <p>Here is the 2025/26 maths for a photographer earning £70,000 net profit:</p>
 
 <ul>
-<li><strong>Sole trader:</strong> You pay income tax at 20% on £57,430 (after personal allowance) and 40% on £19,730. Plus Class 2 and Class 4 NIC. Total tax and NI is roughly £18,400.</li>
+<li><strong>Sole trader:</strong> You pay income tax at 20% on the first £37,700 of taxable income (the basic-rate band, £12,570 to £50,270) and 40% on the £19,730 above £50,270 (income tax: approximately £15,432). Class 4 NIC is 6% on profits £12,570 to £50,270 and 2% above (approximately £2,657). Class 2 NIC was abolished from 6 April 2024. Total income tax and Class 4 NIC is roughly £18,090.</li>
 <li><strong>Limited company:</strong> Corporation tax at 19% on the first £50,000 and 25% on the remaining £20,000 (marginal relief applies). That is roughly £14,500 corporation tax. You then extract the rest as salary and dividends. Total tax burden is typically £15,500 to £16,000, depending on how you pay yourself.</li>
 </ul>
 
@@ -137,7 +137,7 @@ faqs:
 <li><strong>Proactive advice.</strong> They should call you before the tax year ends, not just when your return is due.</li>
 </ul>
 
-<p>At Holloway Davies, we are ICAEW qualified and work with photographers across the UK. We do not just file your return. We help you structure your business, plan your tax, and keep more of what you earn.</p>
+<p>At Holloway Davies, we work with photographers across the UK. We do not just file your return. We help you structure your business, plan your tax, and keep more of what you earn.</p>
 
 <p>If you are a photographer in London (Shoreditch, Soho, Camden), Manchester (Northern Quarter, MediaCity), Birmingham (Digbeth), Bristol (Harbourside), Glasgow (Merchant City), or anywhere else, we can help.</p>
 

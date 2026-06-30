@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Fixed Fee Accountant UK Costs 2025/26: What You'll Actually"
 metaDescription: "What does a fixed fee accountant in the UK cost for a limited company, sole trader or contractor in 2025/26? Real pricing by business type, what's"
-altText: "ICAEW chartered accountant working on a laptop in a modern Manchester office with paperwork on the desk"
+altText: "accountant working on a laptop in a modern Manchester office with paperwork on the desk"
 image: "/blog/fixed-fee-accountant-uk-cost-2025-26.jpg"
 imageCredit:
   photographer: "Jakub Zerdzicki"
@@ -35,7 +35,7 @@ faqs:
 
 <p>Most fixed fee packages cover the core compliance work: annual accounts, corporation tax return (CT600), personal tax return (SA100), and your confirmation statement. Some include bookkeeping, VAT returns, and payroll. Others charge extra for those.</p>
 
-<p>As ICAEW qualified accountants, we see clients come to us after being hit with unexpected bills from firms that charge by the hour. A fixed fee removes that uncertainty. You know your monthly cost from day one.</p>
+<p>We see clients come to us after being hit with unexpected bills from firms that charge by the hour. A fixed fee removes that uncertainty. You know your monthly cost from day one.</p>
 
 <h2>Fixed Fee Accountant UK: Pricing by Business Type</h2>
 

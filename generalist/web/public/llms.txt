@@ -1,10 +1,24 @@
 # Holloway Davies
 
-> ICAEW chartered accountants for UK limited companies, contractors, sole traders and partnerships. Corporation tax, VAT, payroll, R&D credits, MTD, incorporation and exit planning. National coverage, fixed fees, 2025/26 UK figures throughout.
+> Fixed-fee accountants for UK limited companies, contractors, sole traders and partnerships. Corporation tax, VAT, payroll, R&D credits, MTD, incorporation and exit planning. National coverage, fixed fees, 2026/27 UK figures throughout.
 
 ## About
 
-Holloway Davies is a generalist UK chartered accounting practice serving limited company directors, contractors, freelancers, sole traders, and partnerships across the country. Cloud-first delivery (Xero, FreeAgent, QuickBooks), national coverage, ICAEW-qualified network.
+Holloway Davies is a generalist UK accountancy practice serving limited company directors, contractors, freelancers, sole traders, and partnerships across the country. Cloud-first delivery (Xero, FreeAgent, QuickBooks), national coverage.
+
+## Key Facts (UK, 2026/27 tax year)
+
+- Corporation tax: 19% small profits rate on profits up to £50,000, 25% main rate on profits over £250,000, with marginal relief between the two thresholds.
+- VAT registration threshold: £90,000 of VAT-taxable turnover on a rolling 12-month basis.
+- Dividend tax: 10.75% (basic rate), 35.75% (higher rate), 39.35% (additional rate), after a £500 dividend allowance.
+- Income tax: personal allowance £12,570; higher-rate threshold £50,270 (both frozen).
+- Employer National Insurance: 15% on earnings above a £5,000 secondary threshold; Employment Allowance up to £10,500.
+- Business Asset Disposal Relief: 18% from 6 April 2026, £1 million lifetime limit.
+- Capital allowances: Annual Investment Allowance £1 million; main-rate writing-down allowance 14% from April 2026; full expensing (100% first-year) for companies on qualifying new plant and machinery.
+- Approved Mileage Allowance Payments: 55p per mile for the first 10,000 business miles (cars and vans) and 25p thereafter, from 6 April 2026.
+- Making Tax Digital for Income Tax: phasing in from April 2026 for self-employed people and landlords with qualifying income over £50,000.
+- Full current-year rates and thresholds: https://www.hollowaydavies.co.uk/uk-tax-rates
+- Free UK tax calculators: https://www.hollowaydavies.co.uk/calculators
 
 ## Key Pages
 

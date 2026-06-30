@@ -2,16 +2,19 @@
  * Pension Contribution Optimiser — pure compute module.
  *
  * Extracted from PensionContributionOptimiser.tsx. No React / DOM / fetch.
- * All rates match uk-tax-rates.ts 2025/26 values.
+ * Dividend rates/allowance are sourced from uk-tax-rates.ts (the canonical
+ * 2026/27 snapshot) so they cannot drift; the frozen thresholds are inlined.
  */
+
+import { UK_TAX_RATES } from "@/lib/uk-tax-rates";
 
 const PERSONAL_ALLOWANCE = 12570;
 const BASIC_RATE_LIMIT = 50270;
 const HIGHER_RATE_LIMIT = 125140;
-const DIVIDEND_ALLOWANCE = 500;
-const DIVIDEND_BASIC = 0.0875;
-const DIVIDEND_HIGHER = 0.3375;
-const DIVIDEND_ADDITIONAL = 0.3935;
+const DIVIDEND_ALLOWANCE = UK_TAX_RATES.dividendTax.allowance;
+const DIVIDEND_BASIC = UK_TAX_RATES.dividendTax.basicRate;
+const DIVIDEND_HIGHER = UK_TAX_RATES.dividendTax.higherRate;
+const DIVIDEND_ADDITIONAL = UK_TAX_RATES.dividendTax.additionalRate;
 const CT_SMALL_THRESHOLD = 50000;
 const CT_MAIN_THRESHOLD = 250000;
 const CT_SMALL_RATE = 0.19;

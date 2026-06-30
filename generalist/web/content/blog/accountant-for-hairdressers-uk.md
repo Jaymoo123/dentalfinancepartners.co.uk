@@ -16,13 +16,13 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/black-smartphone-on-top-of-documents-6863260/"
   source: "Pexels"
 h1: "What Does a Hairdresser Need from an Accountant in 2025/26?"
-summary: "Running a salon, working from a chair, or building a freelance hairdressing business brings specific tax questions. This guide covers the practical decisions: sole trader versus limited company, VAT on treatments and products, PAYE for employed stylists, chair rental income, and Making Tax Digital for Income Tax. Written for UK hairdressers by ICAEW qualified accountants."
+summary: "Running a salon, working from a chair, or building a freelance hairdressing business brings specific tax questions. This guide covers the practical decisions: sole trader versus limited company, VAT on treatments and products, PAYE for employed stylists, chair rental income, and Making Tax Digital for Income Tax. Written for UK hairdressers by our specialist accountants."
 schema: ""
 faqs:
   - question: "Do I need to register for VAT if I rent a chair and earn under £90,000?"
     answer: "If your own income from clients (not the chair rental fee) is under the VAT threshold, you do not need to register. But if the salon owner charges you VAT on the chair rental, you cannot reclaim it unless you are voluntarily VAT registered. If your income is close to the threshold, voluntary registration might let you reclaim VAT on your product purchases. Run the numbers with an accountant first."
   - question: "Can I claim my hairdressing scissors and tools as an expense?"
-    answer: "Yes. Scissors, clippers, hairdryers, and other tools are allowable expenses. If they cost less than £2,000, you can deduct the full cost in the year of purchase under the Annual Investment Allowance. If they cost more, you claim capital allowances over several years. Keep the receipts."
+    answer: "Yes. Scissors, clippers, hairdryers, and other tools are allowable expenses. You can deduct the full cost in the year of purchase under the Annual Investment Allowance, which covers qualifying plant and machinery up to £1,000,000 per 12 months. There is no £2,000 AIA threshold. Keep the receipts."
   - question: "What happens if HMRC decides my chair renters are actually employees?"
     answer: "HMRC can issue a determination that the chair renters are employees. You then owe backdated PAYE income tax, employee NI, and employer NI for up to six years. Plus interest and penalties. To avoid this, have a written chair rental agreement and ensure the stylist genuinely controls their own work. If you are unsure, ask an accountant to review your arrangements."
   - question: "Should I use the Flat Rate VAT Scheme for my salon?"
@@ -35,15 +35,15 @@ faqs:
 
 <p>A good accountant for hairdressers will know the difference between a PAYE stylist and a self-employed chair renter. They will understand how VAT applies to treatments versus retail product sales. And they will help you structure your business so you keep more of what you earn.</p>
 
-<p>This guide covers the practical decisions you will face: sole trader versus limited company, VAT registration, PAYE for staff, chair rental income, and what Making Tax Digital means for your self assessment. We are ICAEW qualified accountants who work with hairdressers across the UK, from single-chair operations in Leeds to multi-staff salons in Manchester and Bristol.</p>
+<p>This guide covers the practical decisions you will face: sole trader versus limited company, VAT registration, PAYE for staff, chair rental income, and what Making Tax Digital means for your self assessment. We work with hairdressers across the UK, from single-chair operations in Leeds to multi-staff salons in Manchester and Bristol.</p>
 
 <h2>Sole Trader or Limited Company for a Hairdresser?</h2>
 
-<p>Most hairdressers start as sole traders. It is simple to set up, you register with HMRC for self assessment, and you file one tax return each year. The downside is that you are personally liable for the business debts, and you pay income tax and Class 2 and Class 4 National Insurance on your profits.</p>
+<p>Most hairdressers start as sole traders. It is simple to set up, you register with HMRC for self assessment, and you file one tax return each year. The downside is that you are personally liable for the business debts, and you pay income tax and Class 4 National Insurance on your profits (Class 2 NIC was abolished from 6 April 2024).</p>
 
 <p>Incorporating as a limited company separates your personal finances from the business. You become a director and shareholder. The company pays corporation tax on its profits at 19% to 25% depending on profit level. You then pay yourself through a combination of salary and dividends.</p>
 
-<p>The tax saving can be significant once your profits exceed roughly £40,000 to £50,000 per year. Take a hairdresser with profits of £55,000 operating as a sole trader. They would pay approximately £8,000 in income tax and £4,500 in Class 4 NIC for the 2025/26 tax year. Total: around £12,500.</p>
+<p>The tax saving can be significant once your profits exceed roughly £40,000 to £50,000 per year. Take a hairdresser with profits of £55,000 operating as a sole trader. They would pay approximately £8,000 in income tax and approximately £2,360 in Class 4 NIC for the 2025/26 tax year (6% on profits between £12,570 and £50,270, then 2% above). Total: around £10,400.</p>
 
 <p>If the same hairdresser incorporated and took a salary of £12,570 (no tax or NI due) and dividends of £42,430, the corporation tax at 19% would be roughly £8,060 on the profit. The director would pay no personal tax on the salary, and dividend tax at 8.75% on the dividends above the £500 allowance. Total tax: roughly £11,700. A saving of around £800, plus the company retains the remaining profits for reinvestment.</p>
 
@@ -71,9 +71,9 @@ faqs:
 
 <p>If you employ stylists directly, you must operate PAYE. That means registering as an employer with HMRC, running payroll each month or week, deducting income tax and National Insurance, and reporting to HMRC in real time using RTI (Real Time Information). You also need to provide each employee with a payslip and a P60 at year end.</p>
 
-<p>The employer National Insurance rate for 2025/26 is 13.8% on earnings above the secondary threshold of £9,100 per year. If you have multiple employees, the Employment Allowance can reduce your employer NI bill by up to £10,500 per year. This applies to most businesses except sole directors of limited companies with no other employees.</p>
+<p>The employer National Insurance rate for 2025/26 and 2026/27 is 15% on earnings above the secondary threshold of £5,000 per year (the previous 13.8% rate above £9,100 applied only up to 5 April 2025). If you have multiple employees, the Employment Allowance can reduce your employer NI bill by up to £10,500 per year. This applies to most businesses except sole directors of limited companies with no other employees.</p>
 
-<p>For a salon with three employed stylists each earning £25,000, the employer NI would be roughly £2,190 per employee per year. Total: £6,570. The Employment Allowance would wipe out the entire bill. You still need to run payroll and file RTI returns, but the cash saving is real.</p>
+<p>For a salon with three employed stylists each earning £25,000, the employer NI would be roughly £3,000 per employee per year (15% on £20,000 above the £5,000 threshold). Total: £9,000. The Employment Allowance of up to £10,500 would cover the entire bill. You still need to run payroll and file RTI returns, but the cash saving is real.</p>
 
 <p>The alternative to employing stylists is renting chairs to self-employed stylists. This is common in the hairdressing industry. The salon owner charges a weekly or monthly rental fee, and the stylist keeps their own client income and handles their own tax and NI.</p>
 
@@ -153,7 +153,7 @@ faqs:
 <li>Can you help me decide between sole trader and limited company based on my profit level?</li>
 </ul>
 
-<p>At Holloway Davies, we are ICAEW qualified accountants who work with hairdressers across the UK. We handle everything from sole trader tax returns to limited company accounts, VAT registration, payroll for salon staff, and chair rental agreements. We can help you decide which structure suits your business and make sure you are compliant with HMRC.</p>
+<p>At Holloway Davies, we work with hairdressers across the UK. We handle everything from sole trader tax returns to limited company accounts, VAT registration, payroll for salon staff, and chair rental agreements. We can help you decide which structure suits your business and make sure you are compliant with HMRC.</p>
 
 <p>If you are a hairdresser in Manchester, Leeds, Bristol, or anywhere in the UK, <a href="/contact">get in touch</a>. We will run through your numbers and tell you what needs to change before the next tax deadline.</p>
 

@@ -5,7 +5,7 @@ canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/how-to-regist
 date: "2026-05-17"
 dateModified: "2026-06-12"
 reviewedBy: "James Holloway"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW)"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-12"
 generator: sonnet-4.6/track2-rewrite
 author: "Holloway Davies Editorial Team"

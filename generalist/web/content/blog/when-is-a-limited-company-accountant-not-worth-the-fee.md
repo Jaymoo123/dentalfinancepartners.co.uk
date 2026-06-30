@@ -56,7 +56,7 @@ faqs:
 
 <p>You are a single-director contractor. You have no employees. You use an umbrella company or agency that deducts tax at source. Your company has one bank account, one source of income, and one or two expenses per month (accounting software, insurance, maybe a mobile phone).</p>
 
-<p>Your annual turnover is under £85,000. You are not VAT registered. You have no physical stock. You work from home.</p>
+<p>Your annual turnover is under £90,000. You are not VAT registered. You have no physical stock. You work from home.</p>
 
 <p>In this scenario, a limited company accountant is often not worth the fee. Here is why.</p>
 
@@ -66,7 +66,7 @@ faqs:
 
 <p>The risk of getting it wrong is low. HMRC rarely investigates a contractor Ltd company with low turnover, no unusual transactions, and no late filings. The penalties for filing a slightly wrong return are usually small corrections, not fines.</p>
 
-<p><strong>The threshold:</strong> If your company has one director, no employees, turnover under £85,000, and fewer than 10 transactions per month, you can probably DIY your accounts safely.</p>
+<p><strong>The threshold:</strong> If your company has one director, no employees, turnover under £90,000, and fewer than 10 transactions per month, you can probably DIY your accounts safely.</p>
 
 <h2>Scenario 2: The Business That Hasn't Grown Yet</h2>
 
@@ -122,7 +122,7 @@ faqs:
 
 <h3>You Plan to Sell Your Company or Close It</h3>
 
-<p>Business Asset Disposal Relief (BADR) gives you a 14% CGT rate on the first £1 million of gains (rising to 18% from April 2026). But the rules are strict. The company must be a trading company. The shares must have been held for at least two years. The conditions must be met throughout that period.</p>
+<p>Business Asset Disposal Relief (BADR) gives you an 18% CGT rate on the first £1 million of gains (increased from 14% in April 2026). But the rules are strict. The company must be a trading company. The shares must have been held for at least two years. The conditions must be met throughout that period.</p>
 
 <p>If you plan to sell or close your company, get an accountant involved at least 12 months before the event. The planning window is critical.</p>
 
@@ -133,7 +133,7 @@ faqs:
 <ul>
 <li>Missed capital allowance claim on a laptop and desk: £200 lost relief</li>
 <li>Wrong dividend tax calculation: £300 underpaid tax plus interest</li>
-<li>Late filing of confirmation statement: £150 penalty</li>
+<li>Late filing of confirmation statement: no automatic financial penalty, but Companies House may strike the company off the register (and directors can face criminal prosecution)</li>
 <li>Misclassified a worker as self-employed when they were an employee: £1,500 backdated NIC and penalties</li>
 </ul>
 
@@ -146,7 +146,7 @@ faqs:
 <p>Answer these three questions honestly:</p>
 
 <ol>
-<li>Is your company truly simple? (One director, no employees, turnover under £85,000, no VAT, fewer than 20 transactions per month)</li>
+<li>Is your company truly simple? (One director, no employees, turnover under £90,000, no VAT, fewer than 20 transactions per month)</li>
 <li>Are you comfortable with bookkeeping and tax rules? (Not just "I'll figure it out" but genuinely confident)</li>
 <li>Can you afford the time? (DIY accounts for a simple company take 10 to 15 hours per year. That is time you are not billing clients or growing your business.)</li>
 </ol>
@@ -168,7 +168,7 @@ faqs:
 <li><strong>Proactive advice.</strong> A good accountant does not just file your return. They tell you about changes that affect you. They suggest tax-efficient strategies. They ask about your plans for the next year.</li>
 </ul>
 
-<p>At <a href="/about">Holloway Davies</a>, we are ICAEW qualified and work with businesses of every shape. We do not push a one-size-fits-all package. Some clients need full monthly support. Others need a year-end review. We structure the relationship around what the business actually needs.</p>
+<p>At <a href="/about">Holloway Davies</a>, we work with businesses of every shape. We do not push a one-size-fits-all package. Some clients need full monthly support. Others need a year-end review. We structure the relationship around what the business actually needs.</p>
 
 <h2>The Bottom Line</h2>
 

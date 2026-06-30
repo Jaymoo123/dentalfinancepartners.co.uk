@@ -26,12 +26,12 @@ faqs:
   - question: "What evidence do I need to prove a failed project qualifies for R&D tax credits?"
     answer: "You need evidence that technical uncertainty existed at the start, that you conducted systematic work to resolve it, and that the work failed for technical reasons. Key documents include project initiation notes, technical logs, test results, decision records explaining why each approach was abandoned, time records for staff, and cost records for qualifying expenditure. A written technical narrative explaining the journey is the strongest evidence."
   - question: "Can I claim for a failed project if my company never made any revenue at all?"
-    answer: "Yes. A company can be pre-revenue and still claim R&D tax credits. The claim is calculated on the qualifying costs, not on revenue. If the R&D spend creates a trading loss, you can surrender that loss for a cash payment from HMRC. This is common for early-stage technology companies that spend months or years developing a product that never reaches market. The payable credit provides cash back even with zero revenue."
+    answer: "Yes. A company can be pre-revenue and still claim R&D tax credits. The claim is calculated on the qualifying costs, not on revenue. Under the merged RDEC scheme, the company receives a 20% above-the-line expenditure credit on qualifying R&D spend. Where there is no corporation tax liability, the credit is repayable in cash (subject to a PAYE cap). This is common for early-stage technology companies that spend months or years developing a product that never reaches market. The payable credit provides cash back even with zero revenue."
 ---
 
 <p>The short answer is yes. A company can claim R&D tax credits for a failed project that never generated revenue. HMRC does not require commercial success. The legislation focuses on the attempt to overcome technical uncertainty, not on whether the project made money.</p>
 
-<p>This is one of the most common misconceptions we see as ICAEW qualified accountants at Holloway Davies. Directors of small and growing limited companies often abandon legitimate R&D claims because the project did not work. They assume the tax relief only applies to successful innovations. That is wrong, and it costs them real money.</p>
+<p>This is one of the most common misconceptions we see at Holloway Davies. Directors of small and growing limited companies often abandon legitimate R&D claims because the project did not work. They assume the tax relief only applies to successful innovations. That is wrong, and it costs them real money.</p>
 
 <p>This article explains exactly what qualifies for <a href="/r-and-d-credits">R&D tax credits</a> when a project fails, how HMRC assesses these claims, and what evidence you need to hold onto.</p>
 
@@ -105,13 +105,13 @@ faqs:
 
 <p>For accounting periods starting on or after 1 April 2024, the merged R&D scheme applies to most companies. The calculation depends on whether your company is profit-making or loss-making.</p>
 
-<p><strong>Profit-making companies.</strong> You deduct the qualifying R&D expenditure from your trading profits before calculating corporation tax. For a company paying 25% corporation tax, every £10,000 of qualifying R&D spend saves £2,500 in tax. At the 19% small profits rate, it saves £1,900.</p>
+<p><strong>Profit-making companies.</strong> Profit-making companies receive a 20% above-the-line expenditure credit on qualifying R&D spend. The credit is taxable, so the net additional saving from the credit is approximately £1,500 per £10,000 of R&D spend at the 25% main rate (or £1,620 at the 19% small-profits rate), on top of the normal corporation tax saving from deducting the expense.</p>
 
-<p><strong>Loss-making companies.</strong> If the R&D spend creates or increases a trading loss, you can surrender that loss for a cash payment. The payable credit rate depends on your company's R&D intensity. For non-intensive companies, the rate is 15% of the surrenderable loss. For R&D intensive companies (where qualifying R&D spend is 30% or more of total costs), the enhanced R&D intensive scheme (ERIS) applies, with a higher payable credit rate of 27% for loss-making companies.</p>
+<p><strong>Loss-making companies.</strong> For non-intensive companies, the merged RDEC scheme gives a 20% above-the-line credit on qualifying R&D expenditure. Where the company has no corporation tax liability, the credit is repayable in cash (subject to a PAYE cap). There is no surrenderable-loss mechanism under the merged scheme. For R&D-intensive companies (qualifying R&D spend 30% or more of total costs), ERIS applies. Loss-making R&D-intensive SMEs receive an 86% additional deduction on qualifying R&D expenditure (186% total) and a 14.5% payable credit rate.</p>
 
 <p>A failed project that never generated revenue is likely to leave your company loss-making on that activity. That makes the payable credit route the most relevant option.</p>
 
-<p>Let us use a worked example. A four-person software company in Leeds Dock spends £74,500 on a failed R&D project. Staff costs are £52,000, subcontractor costs are £14,000 (65% of £21,538), and consumables are £8,500. Total qualifying spend: £74,500. The company has no other revenue. Under the merged scheme, the company surrenders the loss and receives 15% as a cash credit: £11,175. That is cash in the bank from a project that made zero revenue.</p>
+<p>Let us use a worked example. A four-person software company in Leeds Dock spends £74,500 on a failed R&D project. Staff costs are £52,000, subcontractor costs are £14,000 (65% of £21,538), and consumables are £8,500. Total qualifying spend: £74,500. The company has no other revenue. Under the merged RDEC scheme, the company receives a 20% credit on its qualifying R&D spend: £74,500 x 20% = £14,900. With no corporation tax liability, this credit is repayable in cash (subject to the PAYE cap). That is cash in the bank from a project that made zero revenue.</p>
 
 <h2>Common Mistakes When Claiming for Failed Projects</h2>
 
@@ -125,13 +125,13 @@ faqs:
 
 <p><strong>Claiming for routine problem solving.</strong> If a competent professional in your field could have solved the problem without research, it is not R&D. Failed routine work is still not R&D.</p>
 
-<p><strong>Ignoring the <a href="/blog/randd-tax-credits">R&D tax credits</a> notification requirement.</strong> For accounting periods starting on or after 1 April 2024, you must notify HMRC within 6 months of the period end if you intend to claim. Miss this deadline and the claim is invalid. The notification is made through the CT600 (corporation tax return) and the Additional Information Form (AIF).</p>
+<p><strong>Ignoring the <a href="/blog/randd-tax-credits">R&D tax credits</a> notification requirement.</strong> For accounting periods starting on or after 1 April 2023, you must notify HMRC within 6 months of the period end if you intend to claim. Miss this deadline and the claim is invalid. The notification is made through the CT600 (corporation tax return) and the Additional Information Form (AIF).</p>
 
 <h2>What Happens If HMRC Opens an Enquiry?</h2>
 
 <p>HMRC may open an enquiry into any R&D claim, but failed projects attract more attention. That does not mean you should not claim. It means you should prepare properly.</p>
 
-<p>If HMRC opens an enquiry, they will ask for the technical narrative and supporting evidence. Our ICAEW qualified team handles these enquiries regularly. The key is to have the documentation ready before you submit the claim, not after HMRC asks for it.</p>
+<p>If HMRC opens an enquiry, they will ask for the technical narrative and supporting evidence. Our experienced team handles these enquiries regularly. The key is to have the documentation ready before you submit the claim, not after HMRC asks for it.</p>
 
 <p>A well-documented failed project claim is defensible. A poorly documented one is not. The difference is usually a matter of a few hours spent writing up the technical narrative at the time of the work, rather than trying to reconstruct it three years later.</p>
 

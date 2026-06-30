@@ -43,7 +43,7 @@ faqs:
 
 <p>Miss the filing deadline and the penalties are automatic and escalating. HMRC applies a £100 late filing penalty immediately, even if you have no tax to pay. If you are still late after three months, daily penalties of £10 per day kick in, up to a maximum of £900. After six months, another £300 or 5% of the tax due, whichever is higher. After twelve months, another £300 or 5%.</p>
 
-<p>Here is a worked example. You are a freelance graphic designer in Leeds. Your 2024/25 tax liability is £14,720. You file your return on 15 February 2026, two weeks late. The £100 penalty applies. You also pay the tax late. HMRC charges late payment interest at the Bank of England base rate plus 2.5%. As of April 2025, that is 7.25% annualised. On £14,720 for two weeks, that is roughly £41 in interest. Small numbers on their own. But if you miss the filing deadline by six months, the penalties alone reach £1,300 plus 5% of the tax.</p>
+<p>Here is a worked example. You are a freelance graphic designer in Leeds. Your 2024/25 tax liability is £14,720. You file your return on 15 February 2026, two weeks late. The £100 penalty applies. You also pay the tax late. HMRC charges late payment interest at the Bank of England base rate plus 2.5% (the rate changes with each Bank of England decision; it was 7.0% in April 2025). On £14,720 for two weeks at that rate, that is roughly £40 in interest. Small numbers on their own. But if you miss the filing deadline by six months, the penalties alone reach £1,300 plus 5% of the tax.</p>
 
 <p>A <strong>sole trader accountant</strong> prevents this by filing your return well before 31 January. Most of our clients at Holloway Davies have their returns submitted by mid December. That gives a six week buffer for any queries, missing paperwork, or HMRC system delays. It also means you know exactly what you owe before Christmas, not on 31 January.</p>
 
@@ -59,7 +59,7 @@ faqs:
 
 <p>Here is a concrete example. You are a plumber in Manchester's Northern Quarter. Your 2024/25 tax bill is £9,600. HMRC calculates your payments on account for 2025/26 as two payments of £4,800 each. The first £4,800 is due by 31 January 2026 alongside any balancing payment for 2024/25. The second £4,800 is due by 31 July 2026.</p>
 
-<p>Miss the 31 July payment and HMRC charges late payment interest from that date. There is no automatic penalty for late payment of payments on account, but the interest adds up. At 7.25%, £4,800 for three months costs about £87 in interest. If you are consistently late, HMRC may also charge a 5% surcharge on any amount still unpaid after 30 days, with further 5% surcharges at six and twelve months.</p>
+<p>Miss the 31 July payment and HMRC charges late payment interest from that date. There is no automatic penalty for late payment of payments on account, but the interest adds up. At 7.0%, £4,800 for three months costs about £84 in interest. If you are consistently late, HMRC may also charge a 5% surcharge on any amount still unpaid after 30 days, with further 5% surcharges at six and twelve months.</p>
 
 <p>Most sole traders do not budget for payments on account. They see the 31 January bill, pay it, and forget about July. A <strong>sole trader accountant</strong> flags the July payment at the same time as the January one. We send reminders. We help you set aside the money monthly so the July payment is not a surprise. If your income has dropped significantly, we can apply to reduce your payments on account using form SA303. But that needs to be done before the deadline, not after.</p>
 
@@ -75,15 +75,15 @@ faqs:
 
 <p>More importantly, if you do not register, you cannot file a return. And if you do not file a return, HMRC will eventually issue a determination of your tax liability based on their estimate of your income. Those determinations are almost always higher than your actual liability, and you have to pay them before you can file a return to correct them.</p>
 
-<p>A <strong>sole trader accountant</strong> registers you within days of you starting trading. We handle the online registration through HMRC's Government Gateway. We also register you for Class 2 National Insurance (now collected through self assessment, not separately) and ensure you get your Unique Taxpayer Reference (UTR) before any filing deadlines approach.</p>
+<p>A <strong>sole trader accountant</strong> registers you within days of you starting trading. We handle the online registration through HMRC's Government Gateway. We also advise you on your Class 4 National Insurance obligations (calculated and collected through your self assessment return) and ensure you get your Unique Taxpayer Reference (UTR) before any filing deadlines approach.</p>
 
 <p>If you are already trading and have not registered, do it today. The 5 October deadline applies even if you earned very little in your first year. There is no turnover threshold for registration. If you are self employed, even part time, you register.</p>
 
-<h2>What About Class 2 National Insurance?</h2>
+<h2>What About National Insurance for Sole Traders?</h2>
 
-<p>Class 2 NIC is worth a separate mention because it is easy to miss. For 2025/26, Class 2 NIC is £3.45 per week. It is collected through your self assessment, not as a separate bill. If your profits are below £12,570, you can pay voluntarily to protect your state pension entitlement. If your profits are above that, it is compulsory.</p>
+<p>Class 2 NIC was abolished from 6 April 2024. The old £3.45 per week charge no longer applies for 2024/25 or 2025/26. From 2024/25 onwards, sole traders with profits above the Lower Profits Limit pay only Class 4 NIC: 6% on profits between £12,570 and £50,270, then 2% on anything above. Class 4 is calculated and collected through your self assessment return, not as a separate bill.</p>
 
-<p>A sole trader accountant ensures your self assessment includes the correct Class 2 NIC calculation. If you are exempt or entitled to defer, we handle that too. Missing Class 2 NIC can create gaps in your National Insurance record, affecting your state pension later. It is a long term cost that is invisible until retirement.</p>
+<p>If your profits are below the Small Profits Threshold (£6,725 for 2025/26), you can make voluntary contributions to protect your State Pension record. A sole trader accountant makes sure your self assessment includes the correct Class 4 calculation and advises whether voluntary contributions make sense for your situation. Missing NIC contributions can create gaps in your National Insurance record, affecting your State Pension entitlement later. It is a long-term cost that is invisible until retirement.</p>
 
 <h2>How a Sole Trader Accountant Stops You Missing These Deadlines</h2>
 
@@ -97,7 +97,7 @@ faqs:
 <li><strong>Manages your bookkeeping.</strong> Most missed deadlines happen because the paperwork is not ready. We use Xero or FreeAgent to keep your records current all year, not just at year end.</li>
 </ul>
 
-<p>We are ICAEW qualified accountants. That means we are regulated, insured, and held to professional standards. When we file your return, it is accurate. When we advise on payments on account, it is based on your real numbers, not estimates.</p>
+<p>We are experienced accountants working to high professional standards. When we file your return, it is accurate. When we advise on payments on account, it is based on your real numbers, not estimates.</p>
 
 <h2>What Happens If You Miss a Deadline Anyway?</h2>
 

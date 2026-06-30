@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { GLOSSARY } from "./[slug]/data";
 
 export const metadata: Metadata = {
-  title: `Glossary | ${siteConfig.name}`,
+  title: `Glossary`,
   description:
     "Plain-English definitions of UK tax, finance, and accounting terms for business owners. BADR, IR35, MTD, R&D credits, VAT schemes and more.",
   alternates: { canonical: `${siteConfig.url}/glossary` },
@@ -49,7 +49,7 @@ export default function GlossaryIndexPage() {
               UK business tax &amp; finance glossary
             </h1>
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-              {entries.length} definitions of the terms UK business owners actually need to understand. Written by ICAEW qualified accountants. All figures verified for 2025/26.
+              {entries.length} definitions of the terms UK business owners actually need to understand. Written by our specialist accountants. All figures verified for 2026/27.
             </p>
           </div>
         </div>

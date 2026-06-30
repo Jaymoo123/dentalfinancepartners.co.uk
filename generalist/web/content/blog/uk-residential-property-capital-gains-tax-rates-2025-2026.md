@@ -17,9 +17,7 @@ imageCredit:
   source: Pexels
 h1: 'UK Residential Property Capital Gains Tax Rates 2025/26: 18% and 24% Explained'
 summary: From 30 October 2024, the CGT rates for UK residential property are 18% (basic rate) and 24% (higher rate). This guide explains who pays what, how the 60-day reporting rule works, and what the 2025/26 BADR changes mean for property investors.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"UK Residential Property Capital Gains Tax Rates 2025/26: 18% and 24% Explained","description":"Work out CGT on a buy-to-let or second home: 18% basic and 24% higher rate from 30 October 2024, with worked examples and the 60-day reporting rule.","url":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-residential-property-capital-gains-tax-rates-2025-2026","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
-  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-residential-property-capital-gains-tax-rates-2025-2026"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/uk-residential-property-capital-gains-tax-rates-2025-2026.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Exit and Capital Gains","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains"},{"@type":"ListItem","position":3,"name":"UK Residential Property Capital Gains Tax Rates 2025/26: 18% and 24% Explained","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-residential-property-capital-gains-tax-rates-2025-2026"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the CGT rate on residential property in 2025/26?","acceptedAnswer":{"@type":"Answer","text":"The rates are 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply to gains from UK residential property disposals made after 30 October 2024. The annual exempt amount is £3,000."}},{"@type":"Question","name":"Do I have to pay CGT within 60 days of selling a property?","acceptedAnswer":{"@type":"Answer","text":"Yes. For UK residential property, you must report the gain and pay the tax within 60 days of completion. This is a separate filing from your self assessment return. Missing the deadline triggers penalties and interest."}},{"@type":"Question","name":"Can I
-  avoid CGT by selling my buy-to-let property to my spouse?","acceptedAnswer":{"@type":"Answer","text":"Transfers between spouses or civil partners are exempt from CGT if you are living together. Your spouse takes on your original purchase cost for CGT purposes. When they sell later, the gain is calculated from your original cost. This can help use both annual exempt amounts and basic rate bands, but it does not eliminate the tax entirely."}},{"@type":"Question","name":"Does the 24% rate apply to all gains or just the portion above the basic rate band?","acceptedAnswer":{"@type":"Answer","text":"The 24% rate applies only to the portion of your total income and gains that exceeds the basic rate band (£50,270 in 2025/26). Gains within the basic rate band are taxed at 18%. If your income alone uses up the basic rate band, all your gains are taxed at 24%."}}]}]}'
+schema: ""
 faqs:
 - question: What is the CGT rate on residential property in 2025/26?
   answer: The rates are 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply to gains from UK residential property disposals made after 30 October 2024. The annual exempt amount is £3,000.
@@ -32,8 +30,8 @@ faqs:
 metaTitle_prev: UK Residential Property Capital Gains Tax Rates 2025/26
 metaDescription_prev: 'UK residential property CGT rates from 30 Oct 2024: 18% basic rate, 24% higher rate. Includes worked examples, 60-day reporting rules, and BADR changes.'
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -66,7 +64,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li><strong>24%</strong> for gains that fall within your higher rate band (the portion above £50,270)</li>
 </ul>
 
-<p>These rates apply to residential property only. Other assets (shares, business assets, commercial property) have separate CGT rates of 10% and 20% (or 14% and 24% from April 2025 for business assets under BADR changes).</p>
+<p>From 30 October 2024, these same 18% and 24% rates apply to all other chargeable assets too, including shares, commercial property, and business assets. BADR can reduce the rate on qualifying business asset disposals to a single flat rate: 14% for disposals in 2025/26, and 18% from 6 April 2026 (current).</p>
 
 <h3>Worked Example: Basic Rate Taxpayer</h3>
 
@@ -125,11 +123,11 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>Business Asset Disposal Relief (BADR) and Property</h2>
 
-<p>BADR (formerly Entrepreneurs' Relief) gives a lower CGT rate on qualifying business assets. For residential property, BADR only applies if the property qualifies as a business asset. That typically means a property used in a trading business, such as a bed and breakfast, a guest house, or a furnished holiday let (FHL) that meets the qualifying conditions.</p>
+<p>BADR (formerly Entrepreneurs' Relief) gives a lower CGT rate on qualifying business assets. For residential property, BADR only applies if the property qualifies as a business asset. That typically means a property used in a trading business, such as a bed and breakfast or a guest house. Note that the furnished holiday let (FHL) regime was abolished from 6 April 2025, removing all FHL-specific tax advantages including BADR eligibility. Former FHL owners planning a disposal should take specialist advice rather than assuming BADR will apply.</p>
 
 <p>Standard buy-to-let properties do not qualify for BADR. Letting residential property is considered an investment activity, not a trading business, for CGT purposes.</p>
 
-<p>The BADR rate changed from 10% to 14% from 6 April 2025, and will rise to 18% from 6 April 2026. The lifetime limit remains £1 million of qualifying gains. If you hold a qualifying FHL business, the timing of your disposal matters. Selling before 6 April 2025 locked in the 10% rate. Selling in 2025/26 means 14%. From April 2026, 18%.</p>
+<p>The BADR rate changed from 10% to 14% from 6 April 2025, and rose to 18% from 6 April 2026 (the current rate for 2026/27 disposals). The lifetime limit remains £1 million of qualifying gains. For qualifying business disposals, the rate by period is: 10% before 6 April 2025, 14% in 2025/26, and 18% from 6 April 2026 onwards.</p>
 
 <p>We cover this in more detail on our <a href="/blog/exit-and-capital-gains">exit and capital gains</a> page.</p>
 
@@ -141,14 +139,16 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>How the Rates Compare to Other Assets</h2>
 
-<p>Residential property CGT rates (18% and 24%) are higher than the main CGT rates for other assets (10% and 20%). The government deliberately taxes property gains more heavily to discourage speculative investment in housing.</p>
+<p>From 30 October 2024, residential property and other chargeable assets (shares, commercial property, business assets) attract the same CGT rates of 18% and 24%. The previous distinction, where non-residential assets attracted lower rates of 10% and 20%, was removed in the Autumn Budget 2024.</p>
 
-<p>For disposals of shares, business assets, and commercial property, the rates are:</p>
+<p>For disposals of shares, business assets, and commercial property from 30 October 2024, the rates are:</p>
 
 <ul>
-<li>10% for basic rate taxpayers (18% from April 2025 if BADR applies)</li>
-<li>20% for higher rate taxpayers (24% from April 2025 if BADR applies)</li>
+<li>18% for gains within the basic rate band</li>
+<li>24% for gains above the basic rate band</li>
 </ul>
+
+<p>BADR reduces the rate on qualifying business asset disposals to a single flat rate (regardless of income band): 14% for disposals in 2025/26, and 18% from 6 April 2026 onwards.</p>
 
 <p>These rates apply above the annual exempt amount of £3,000.</p>
 
@@ -180,7 +180,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>You are considering a gift of the property to a family member</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we handle these calculations regularly. The cost of getting the CGT calculation wrong (penalties, interest, missed reliefs) far exceeds the cost of professional advice.</p>
+<p>We handle these calculations regularly. The cost of getting the CGT calculation wrong (penalties, interest, missed reliefs) far exceeds the cost of professional advice.</p>
 
 <p>If your property sale is approaching or you have already completed and need to file the 60-day return, <a href="/contact">contact us</a>. We can run the numbers, file the return, and make sure you only pay what you owe.</p>
 

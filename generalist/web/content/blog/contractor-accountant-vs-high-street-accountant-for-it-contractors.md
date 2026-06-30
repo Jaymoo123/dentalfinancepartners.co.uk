@@ -22,7 +22,7 @@ faqs:
   - question: "How much does a contractor accountant UK typically charge per month?"
     answer: "Most specialist contractor accountants charge between £100 and £150 per month for a full service. That usually includes bookkeeping, VAT returns, payroll, year-end accounts, personal tax return, and contract reviews. High street firms often charge per task, which can add up to more over the course of a year."
   - question: "Do I need a contractor accountant if I am inside IR35?"
-    answer: "Even if you are inside IR35, a specialist accountant can still add value. They will ensure your deemed employment income is calculated correctly, help you claim the 5% flat rate deduction for expenses, and advise on pension contributions to reduce your tax bill. A high street accountant may not know these rules."
+    answer: "Even if you are inside IR35, a specialist accountant can still add value. They will ensure your deemed employment income is calculated correctly and advise on pension contributions to reduce your tax bill. Bear in mind that the 5% flat rate expenses allowance was withdrawn for off-payroll (Chapter 10) engagements with medium and large clients from 6 April 2021; it remains only where your client is a small company falling under Chapter 8 rules. A high street accountant may not know these distinctions."
   - question: "What is the most tax-efficient salary for an IT contractor in 2025/26?"
     answer: "For most contractors, the most efficient salary is £12,570 per year. This matches the personal allowance and the primary NI threshold. You then take dividends up to the basic rate band. But this depends on your total income and whether you are inside or outside IR35. A specialist accountant will model your exact numbers."
   - question: "Can a high street accountant handle my IR35 contract review?"
@@ -63,7 +63,7 @@ faqs:
 
 <ul>
 <li>IR35 and the off-payroll working rules (Chapter 10 ITEPA 2003)</li>
-<li>The 5% flat rate deduction for travel and subsistence when inside IR35</li>
+<li>The 5% flat rate deduction for expenses under Chapter 8 IR35 (small-client cases only; this allowance was withdrawn for medium and large client engagements under the off-payroll Chapter 10 rules from 6 April 2021)</li>
 <li>The £500 dividend allowance and how to optimise your salary/dividend mix</li>
 <li>Alphabet shares and spouse dividend planning</li>
 <li>The 24-month rule for travel expenses</li>
@@ -95,7 +95,7 @@ faqs:
 <p>IT contractors have specific expense rules that do not apply to most other businesses. For example:</p>
 
 <ul>
-<li><strong>Travel and subsistence:</strong> If you are outside IR35, you can claim travel to temporary workplaces. If you are inside IR35, the 5% flat rate deduction applies instead.</li>
+<li><strong>Travel and subsistence:</strong> If you are outside IR35, you can claim travel to temporary workplaces. If you are inside IR35 under Chapter 8 (small-client) rules, a 5% flat rate deduction for expenses applies. Under the off-payroll Chapter 10 rules (medium and large clients, since 6 April 2021), that 5% allowance no longer exists and deemed employment income is taxed via PAYE at source.</li>
 <li><strong>Home office costs:</strong> You can claim a proportion of your household bills if you work from home regularly. The simplified method is £6 per week. The actual method requires a calculation of floor space and usage.</li>
 <li><strong>Equipment:</strong> Laptops, monitors, and other IT equipment qualify for capital allowances. You can claim 100% relief under the Annual Investment Allowance (AIA) or Full Expensing.</li>
 <li><strong>Pension contributions:</strong> Company pension contributions are deductible for corporation tax and do not trigger personal tax. This is one of the most efficient ways to extract profit from your company.</li>
@@ -166,7 +166,7 @@ faqs:
 
 <p>The answers will tell you immediately whether you are dealing with a specialist or a generalist. If the accountant hesitates or says they "can look into it", that is a red flag.</p>
 
-<p>At Holloway Davies, we are ICAEW qualified and we work exclusively with limited company directors, contractors, and small business owners. We know the contractor space because that is all we do. We review contracts, we model dividend strategies, and we keep you compliant with IR35, MTD, and all the other regulations that affect your business.</p>
+<p>At Holloway Davies, we work exclusively with limited company directors, contractors, and small business owners. We know the contractor space because that is all we do. We review contracts, we model dividend strategies, and we keep you compliant with IR35, MTD, and all the other regulations that affect your business.</p>
 
 <p>If you are an IT contractor looking for a specialist <strong>contractor accountant UK</strong> firm, <a href="/services">explore our services</a> or <a href="/contact">get in touch</a> for a no-obligation chat. We will walk you through exactly how we would handle your accounts, and you can decide if we are the right fit.</p>
 

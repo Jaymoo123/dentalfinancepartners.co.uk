@@ -2,6 +2,7 @@ import Link from "next/link";
 import { focusRing, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { SignupForm } from "@/components/newsletter/SignupForm";
+import { ConsentToggle } from "@/components/analytics/ConsentToggle";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -66,9 +67,10 @@ export function SiteFooter() {
             <p className="text-xs text-neutral-500">
               &copy; {year} {siteConfig.company.legalName} t/a {siteConfig.company.tradingName}.
             </p>
-            <p className="text-xs text-neutral-500">
-              ICAEW chartered accountants. Editorial content; book a call for advice specific to your business.
-            </p>
+            <div className="flex flex-col gap-1 text-xs text-neutral-500 sm:flex-row sm:items-center sm:gap-4">
+              <span>Accountants for UK business. Editorial content; book a call for advice specific to your business.</span>
+              <ConsentToggle className="text-left underline hover:no-underline" />
+            </div>
           </div>
         </div>
       </div>

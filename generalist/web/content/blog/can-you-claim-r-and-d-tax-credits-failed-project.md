@@ -33,7 +33,7 @@ faqs:
 
 <p>This misconception costs UK businesses millions in unclaimed relief every year. A failed project often involves <em>more</em> technical effort than a straightforward one, because you had to try multiple approaches, test dead ends, and work through problems that turned out to be unsolvable with current technology. All of that counts.</p>
 
-<p>As ICAEW qualified accountants, we regularly see claims rejected because the narrative focuses on the business failure rather than the technical work. This article explains the specific rule, the evidence you need, and the three mistakes that kill otherwise valid claims.</p>
+<p>We regularly see claims rejected because the narrative focuses on the business failure rather than the technical work. This article explains the specific rule, the evidence you need, and the three mistakes that kill otherwise valid claims.</p>
 
 <h2>What HMRC Actually Requires for R&D Tax Credits</h2>
 
@@ -107,7 +107,7 @@ faqs:
 <p><strong>For accounting periods starting on or after 1 April 2024 (merged scheme):</strong></p>
 
 <ul>
-<li>All companies use the RDEC mechanism. You get a 20% above-the-line credit on qualifying costs (15% for the old RDEC, 20% from 1 April 2024). The credit is taxable as income.</li>
+<li>All companies use the RDEC mechanism. You get a 20% above-the-line credit on qualifying costs (RDEC was 13% before 1 April 2023, 20% since then). The credit is taxable as income.</li>
 <li>If your company is loss-making, the credit can be surrendered for a cash payment, subject to the PAYE cap.</li>
 <li>If your company is R&D-intensive (more than 30% of total costs on R&D) and loss-making, the Enhanced R&D Intensive Scheme (ERIS) applies, giving a higher payable credit rate.</li>
 </ul>

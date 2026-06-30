@@ -23,7 +23,7 @@ faqs: []
 
 <h2>What Is a Property Tax Advisor?</h2>
 
-<p>A property tax advisor is an accountant or tax specialist who focuses on the tax rules that apply to property transactions. Not a generalist. Someone who knows the difference between the SDLT surcharge on additional dwellings and the 3% stamp duty land tax on second homes. Someone who can tell you whether your conversion of a shop into flats qualifies for reduced VAT on the renovation work.</p>
+<p>A property tax advisor is an accountant or tax specialist who focuses on the tax rules that apply to property transactions. Not a generalist. Someone who knows the difference between the SDLT surcharge on additional dwellings and the 5% stamp duty land tax surcharge on second homes (since 31 October 2024). Someone who can tell you whether your conversion of a shop into flats qualifies for reduced VAT on the renovation work.</p>
 
 <p>If you own a buy-to-let portfolio in Birmingham, develop residential property in the Northern Quarter of Manchester, or flip commercial units in Bristol Harbourside, a general accountant might miss opportunities. A property tax advisor catches them.</p>
 
@@ -37,9 +37,9 @@ faqs: []
 
 <h3>You Are Buying a Second Home or Investment Property</h3>
 
-<p>SDLT on a second home attracts a 3% surcharge on each band. On a £275,000 property, that surcharge is £8,250. But there are reliefs. If you replace your main residence and there is an overlap period, you can claim a refund. If you buy a property for a dependent child, the surcharge may not apply. A property tax advisor can structure the purchase to minimise the SDLT bill before you exchange contracts.</p>
+<p>SDLT on a second home attracts a 5% surcharge on each band (since 31 October 2024; it was 3% before that date). On a £275,000 property, that surcharge is £13,750. But there are reliefs. If you replace your main residence and there is an overlap period, you can claim a refund. If you buy a property for a dependent child, the surcharge may not apply. A property tax advisor can structure the purchase to minimise the SDLT bill before you exchange contracts.</p>
 
-<p>On a £400,000 additional dwelling, the total SDLT is £18,000 at standard rates plus the surcharge. A property tax advisor who saves you 5% of that bill has paid their fee before you complete.</p>
+<p>On a £400,000 additional dwelling, the total SDLT is £30,000 at current rates (5% on the first £125,000, 7% on the next £125,000, 10% on the remaining £150,000, combining standard residential bands with the 5% surcharge). A property tax advisor who saves you 5% of that bill has paid their fee before you complete.</p>
 
 <h3>You Are Selling a Property That Has Increased in Value</h3>
 
@@ -51,7 +51,7 @@ faqs: []
 
 <h3>You Hold Property in a Limited Company</h3>
 
-<p>Holding property through a limited company changes the tax treatment completely. Corporation tax on rental profits is 19% to 25% depending on profit level, rather than income tax at up to 45%. But there are trade-offs. SDLT on corporate purchases attracts the same rates plus surcharges. Extracting profits from the company means dividends, which attract dividend tax at 8.75%, 33.75% or 39.35%. And selling the property means a chargeable gain inside the company, then a further tax charge when you extract the proceeds.</p>
+<p>Holding property through a limited company changes the tax treatment completely. Corporation tax on rental profits is 19% to 25% depending on profit level, rather than income tax at up to 45%. But there are trade-offs. SDLT on corporate purchases attracts the same rates plus surcharges. Extracting profits from the company means dividends, which attract dividend tax at 10.75%, 35.75% or 39.35% (from 6 April 2026). And selling the property means a chargeable gain inside the company, then a further tax charge when you extract the proceeds.</p>
 
 <p>A property tax advisor runs the numbers both ways. For a landlord in Camden with a £500,000 portfolio generating £30,000 net rent per year, the difference between personal ownership and a limited company structure can be £4,000 to £7,000 per year in tax. The advisor models both scenarios and recommends the right structure from the start.</p>
 
@@ -65,7 +65,7 @@ faqs: []
 
 <p>Property development is trading, not investing. That means the profits are subject to corporation tax (if in a company) or income tax (if in your personal name), not capital gains tax. The distinction matters. If HMRC reclassifies your property sales as trading income, you lose access to Entrepreneurs' Relief (now Business Asset Disposal Relief or BADR) and the annual exempt amount for CGT. A property tax advisor ensures your structure matches your activity from the start, so you are not hit with a retrospective tax bill plus interest and penalties.</p>
 
-<p>Development also triggers VAT considerations. Selling a new dwelling is zero-rated for VAT, meaning you can reclaim VAT on build costs. Selling a renovated property is standard-rated, meaning you cannot. A property tax advisor plans the VAT position before you start the project.</p>
+<p>Development also triggers VAT considerations. Selling a new dwelling is zero-rated for VAT, meaning you can reclaim VAT on build costs. Selling an existing or renovated residential property is VAT-exempt, meaning you cannot reclaim VAT on renovation costs. A property tax advisor plans the VAT position before you start the project.</p>
 
 <h2>What Does a Property Tax Advisor Actually Do Day to Day?</h2>
 
@@ -91,7 +91,7 @@ faqs: []
 
 <p>But if you have a portfolio of 3 or more properties, if you hold property through a limited company, if you develop or convert property, or if you are buying or selling property worth over £500,000, the complexity increases fast. A property tax advisor brings specific knowledge of the reliefs, the deadlines, and the structuring options that a general accountant may not see.</p>
 
-<p>At Holloway Davies, our ICAEW qualified team includes specialists who handle property tax for landlords, developers and investors across Manchester, Birmingham, Bristol, Leeds, and London. We review the SDLT before you complete, file the 60-day CGT return within the window, and structure your portfolio to minimise tax over the long term.</p>
+<p>At Holloway Davies, our specialist team handles property tax for landlords, developers and investors across Manchester, Birmingham, Bristol, Leeds, and London. We review the SDLT before you complete, file the 60-day CGT return within the window, and structure your portfolio to minimise tax over the long term.</p>
 
 <p>If your property activity has grown beyond a single buy-to-let, <a href="/contact">contact us</a> to discuss whether a property tax review would save you money.</p>
 

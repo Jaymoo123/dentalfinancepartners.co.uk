@@ -1,13 +1,13 @@
 ---
-title: "How Does The 2024 Budget Cap On R&D Tax Credits Affect Loss-making SMEs?"
+title: "How Does The R&D Tax Credit PAYE Cap Affect Loss-making SMEs?"
 slug: "r-and-d-tax-credit-cap-loss-making-sme-2024-budget"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/r-and-d-tax-credit-cap-loss-making-sme-2024-budget"
 date: "2026-05-17"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
-metaTitle: "R&D Tax Credit Cap For Loss-making SMEs: 2024 Budget Impact"
-metaDescription: "The 2024 Budget capped R&D tax credit repayments for loss-making SMEs at £20,000 plus 3x PAYE/NIC. Here’s how it works and what it means for your claim."
+metaTitle: "R&D Tax Credit Cap For Loss-making SMEs: Finance Act 2023 Changes"
+metaDescription: "Finance Act 2023 capped R&D tax credit repayments for loss-making SMEs at £20,000 plus 3x PAYE/NIC from April 2023. Here is how it works and what it means for your claim."
 altText: "UK accountant reviewing R&D tax credit claim documents on a desk in a modern Manchester office"
 image: "/blog/r-and-d-tax-credit-cap-loss-making-sme-2024-budget.jpg"
 imageCredit:
@@ -15,8 +15,8 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@tony-began-3126738"
   sourceUrl: "https://www.pexels.com/photo/a-close-up-shot-of-paper-bills-6468225/"
   source: "Pexels"
-h1: "How Does The 2024 Budget Cap On R&D Tax Credits Affect Loss-making SMEs?"
-summary: "The 2024 Budget introduced a cap on payable R&D tax credits for loss-making SMEs, limiting repayments to £20,000 plus 3x the company’s total PAYE and NIC. This affects companies that spend heavily on R&D but haven’t yet turned a profit. We explain who is caught, how the cap is calculated, and what to do if your claim exceeds the limit."
+h1: "How Does The R&D Tax Credit PAYE Cap Affect Loss-making SMEs?"
+summary: "Finance Act 2023 (announced at the 2021 Budget) introduced a cap on payable R&D tax credits for loss-making SMEs, limiting repayments to £20,000 plus 3x the company’s total PAYE and NIC for accounting periods beginning on or after 1 April 2023. This affects companies that spend heavily on R&D but have not yet turned a profit. We explain who is caught, how the cap is calculated, and what to do if your claim exceeds the limit."
 schema: ""
 faqs:
   - question: "Does the R&D tax credit cap apply to profitable companies?"
@@ -24,27 +24,27 @@ faqs:
   - question: "Can I carry forward the excess R&D credit that is capped?"
     answer: "No. If you surrender the loss for a payable credit and the cap reduces it, the excess is lost permanently. You cannot carry it forward. However, you can choose not to surrender the loss at all and instead carry the loss forward against future profits. That avoids the cap entirely."
   - question: "Does the cap apply to R&D claims made under the merged scheme from April 2024?"
-    answer: "The cap applies to loss-making SMEs claiming payable credits under the old SME scheme for periods starting before 1 April 2024. For periods starting on or after 1 April 2024, the merged scheme has its own rules. The cap is effectively built into the merged scheme's structure, but the calculation differs. Speak to your accountant about which rules apply to your period."
+    answer: "The PAYE cap (Finance Act 2023) applies to loss-making SMEs claiming payable credits under the old SME scheme for accounting periods beginning on or after 1 April 2023. Periods beginning before 1 April 2023 are not capped. For periods starting on or after 1 April 2024, the merged scheme has its own rules and the cap is built into its structure. Speak to your accountant about which rules apply to your period."
   - question: "What if my company has no employees and I subcontract all R&D work?"
     answer: "Your cap is £20,000 (the minimum). Any claim above that is lost unless you carry the loss forward. Consider hiring employees or paying yourself a salary to increase the cap. The salary cost must be weighed against the additional R&D credit you would recover. A professional review is essential here."
 ---
 
-<p>The 2024 Budget introduced a significant restriction on R&D tax credits for loss-making SMEs. From 1 April 2024, payable tax credits are capped at £20,000 plus 3x the company’s total PAYE and NIC liabilities. If your company is loss-making and claiming R&D credits as a cash repayment, this cap could reduce what you receive.</p>
+<p>Finance Act 2023, announced at the 2021 Budget, introduced a significant restriction on R&D tax credits for loss-making SMEs. From 1 April 2023, payable tax credits are capped at £20,000 plus 3x the company’s total PAYE and NIC liabilities. If your company is loss-making and claiming R&D credits as a cash repayment, this cap could reduce what you receive.</p>
 
-<p>This article explains exactly how the <strong>r&d tax credit cap loss making sme</strong> works, who it affects, and what you can do about it. We are ICAEW qualified accountants based in Manchester, and we deal with R&D claims regularly. This is practical guidance, not theoretical.</p>
+<p>This article explains exactly how the <strong>r&d tax credit cap loss making sme</strong> works, who it affects, and what you can do about it. We are specialist accountants based in Manchester, and we deal with R&D claims regularly. This is practical guidance, not theoretical.</p>
 
 <h2>What Is The R&D Tax Credit Cap For Loss-making SMEs?</h2>
 
-<p>Before April 2024, a loss-making SME could surrender its R&D trading loss for a payable tax credit at 14.5% of the qualifying R&D expenditure surrendered. There was no cap on the cash repayment. Companies could receive hundreds of thousands of pounds regardless of their payroll size.</p>
+<p>Before April 2023, a loss-making SME could surrender its R&D trading loss for a payable tax credit at 14.5% of the qualifying R&D expenditure surrendered. There was no cap on the cash repayment. Companies could receive hundreds of thousands of pounds regardless of their payroll size.</p>
 
-<p>From 1 April 2024, that changed. The payable credit is now capped at the lower of:</p>
+<p>From 1 April 2023, that changed. The payable credit is now capped at the lower of:</p>
 
 <ul>
 <li>£20,000, plus</li>
 <li>3x the company’s total PAYE and Class 1 NIC liabilities for the period</li>
 </ul>
 
-<p>This cap applies to accounting periods beginning on or after 1 April 2024. For a company with a 31 March year-end, the first affected period is the year ending 31 March 2025. For a company with a 31 December year-end, it is the period starting 1 January 2025.</p>
+<p>This cap applies to accounting periods beginning on or after 1 April 2023. For a company with a 31 March year-end, the first affected period is the year ending 31 March 2024. For a company with a 31 December year-end, it is the period starting 1 January 2024.</p>
 
 <p>The cap targets companies that claim large R&D repayments but employ few people. HMRC’s concern was that some businesses were subcontracting all their R&D activity and claiming credits without meaningful UK payroll costs. The cap ties the credit to genuine UK employment.</p>
 
@@ -69,7 +69,7 @@ faqs:
 
 <p>Example: A loss-making software consultancy in Shoreditch with one director and two contractors has total PAYE and NIC of £45,000. The cap is £20,000 plus 3x £45,000, so £155,000. If the company’s R&D claim generates a payable credit of £200,000, only £155,000 can be paid in cash. The remaining £45,000 is lost unless the company has other options (see below).</p>
 
-<p>The cap applies before the 14.5% credit rate is applied. So the maximum credit is 14.5% of qualifying R&D expenditure, but that amount is then capped by the formula. You cannot get more than the cap, even if your qualifying expenditure would otherwise generate a higher credit.</p>
+<p>The payable credit is first calculated at 14.5% of the R&D trading loss surrendered. The cap then limits how much of that credit can actually be paid: you receive the lower of the calculated credit and £20,000 plus 3x your PAYE and NIC liabilities. You cannot get more than the cap, even if your qualifying expenditure would otherwise generate a higher credit.</p>
 
 <h2>What Counts As PAYE And NIC For The Cap?</h2>
 
@@ -95,7 +95,7 @@ faqs:
 
 <p>Yes. The cap applies to the ERIS (the intensive scheme for loss-making SMEs with at least 30% R&D spend). The same formula applies: £20,000 plus 3x PAYE and NIC.</p>
 
-<p>The ERIS rate is higher (27% payable credit for expenditure before 1 April 2024, then 14.5% for expenditure from 1 April 2024 onwards). But the cap is the same. So a loss-making intensive company with minimal payroll is still caught.</p>
+<p>Under the old intensive SME scheme before 1 April 2024, the effective repayable credit was approximately 27% of qualifying R&D expenditure (the 14.5% statutory payable credit rate applied to a loss incorporating the old higher enhanced deduction of around 186% of qualifying spend). Under the new ERIS from 1 April 2024, the statutory payable credit rate remains 14.5%, but it is applied to losses incorporating the reduced 86% additional deduction on qualifying R&D spend. The two figures are not directly comparable; the key point is that the statutory credit rate itself has not changed, but the base to which it applies is lower. The cap is the same. So a loss-making intensive company with minimal payroll is still caught.</p>
 
 <p>HMRC has not introduced a separate cap for ERIS. The policy rationale is the same: tie the credit to UK employment.</p>
 
@@ -117,7 +117,7 @@ faqs:
 
 <p>From 1 April 2024, the SME and RDEC schemes were merged into a single scheme for accounting periods starting on or after that date. But the merged scheme is essentially the RDEC structure, not the SME structure. The payable credit cap is a transitional rule that applies to loss-making SMEs claiming under the old SME scheme rules for periods starting before 1 April 2024.</p>
 
-<p>For periods starting on or after 1 April 2024, the old SME scheme no longer exists. Companies that would have been SMEs now claim under the merged scheme, which has a different credit rate (15% for RDEC-style credits) and different rules on surrendering losses. The cap on payable credits for loss-making companies is built into the merged scheme’s structure, not as a separate cap.</p>
+<p>For periods starting on or after 1 April 2024, the old SME scheme no longer exists. Companies that would have been SMEs now claim under the merged scheme, which has a different credit rate (20% expenditure credit, which is taxable income) and different rules on surrendering losses. The cap on payable credits for loss-making companies is built into the merged scheme’s structure, not as a separate cap.</p>
 
 <p>This is complex. If your accounting period straddles 1 April 2024, you need to apportion your claim between the old and new rules. We handle this regularly and can advise on your specific situation.</p>
 
@@ -143,18 +143,18 @@ faqs:
 
 <h2>What About Claims For Periods Before 1 April 2024?</h2>
 
-<p>Claims for accounting periods ending before 1 April 2024 are not affected by the cap. If you have a year ending 31 March 2024, you claim under the old rules. The cap starts from periods beginning on or after 1 April 2024.</p>
+<p>Claims for accounting periods beginning before 1 April 2023 are not affected by the cap. If you have a year ending 31 March 2023 (starting 1 April 2022), you claim under the old uncapped rules. The cap applies to accounting periods beginning on or after 1 April 2023, so a year ending 31 March 2024 (starting 1 April 2023) is within scope.</p>
 
-<p>If you have a claim outstanding for a pre-April 2024 period, file it as normal. The cap does not apply.</p>
+<p>If you have a claim outstanding for a period beginning before 1 April 2023, file it as normal. The cap does not apply to those periods.</p>
 
 <p>But be aware that HMRC is scrutinising R&D claims more closely across the board. The <a href="/blog/randd-tax-credits">additional information form (AIF)</a> is now mandatory for all claims, and HMRC is rejecting claims that do not meet the technical and accounting requirements. The cap is just one part of a wider crackdown.</p>
 
 <h2>Final Thoughts</h2>
 
-<p>The 2024 Budget cap on R&D tax credits for loss-making SMEs is a significant change. It directly affects companies that rely on cash repayments to fund their R&D activity. If you are a startup or a single-director company with a large R&D claim, you need to understand how the cap works and plan accordingly.</p>
+<p>The Finance Act 2023 cap on R&D tax credits for loss-making SMEs is a significant change. It directly affects companies that rely on cash repayments to fund their R&D activity. If you are a startup or a single-director company with a large R&D claim, you need to understand how the cap works and plan accordingly.</p>
 
 <p>The key numbers are simple: £20,000 plus 3x your PAYE and NIC. If your claim exceeds that, you lose the excess unless you carry the loss forward or restructure your operations.</p>
 
-<p>We recommend reviewing your R&D claim position now, especially if your accounting period starts on or after 1 April 2024. Speak to your accountant or <a href="/contact">contact us</a> to discuss your specific situation. The rules are complex, and getting it wrong can cost you thousands.</p>
+<p>We recommend reviewing your R&D claim position now, especially if your accounting period starts on or after 1 April 2023. Speak to your accountant or <a href="/contact">contact us</a> to discuss your specific situation. The rules are complex, and getting it wrong can cost you thousands.</p>
 
 <p>For more on how R&D credits interact with other tax reliefs, see our <a href="/fundamentals">fundamentals guide</a> or the <a href="/glossary">glossary of R&D terms</a>.</p>

@@ -47,7 +47,7 @@ faqs:
 
 <p>When a trading subsidiary makes a profit and pays corporation tax, it can distribute the remaining profit as a dividend to the holding company. Under UK tax law, dividends received from a UK-resident subsidiary are generally exempt from corporation tax in the hands of the holding company, provided certain conditions are met.</p>
 
-<p>This exemption is set out in the <strong>substantial shareholding exemption</strong> rules, but even without that, most intra-group dividends fall within the exempt distribution rules under CTA 2010 Part 9A. The practical effect is clear. If you run two separate limited companies as standalone entities, and one pays a dividend to you personally, you pay dividend tax on it at 8.75%, 33.75% or 39.35% depending on your income band. If that same dividend goes to a holding company instead, no tax is due on the receipt.</p>
+<p>This exemption is set out in the <strong>substantial shareholding exemption</strong> rules, but even without that, most intra-group dividends fall within the exempt distribution rules under CTA 2010 Part 9A. The practical effect is clear. If you run two separate limited companies as standalone entities, and one pays a dividend to you personally, you pay dividend tax on it at 10.75%, 35.75% or 39.35% depending on your income band (2026/27 rates). If that same dividend goes to a holding company instead, no tax is due on the receipt.</p>
 
 <p>That cash can then be reinvested, lent to the other subsidiary, or held for future acquisitions without ever being run through your personal tax return.</p>
 
@@ -117,7 +117,7 @@ faqs:
 
 <p>The web development subsidiary turns over £480,000 with a net profit of £140,000. The SaaS subsidiary turns over £320,000 with a net profit of £90,000. Both are profitable.</p>
 
-<p>Without a holding company structure, the owners take dividends personally. On £230,000 of combined profits, after corporation tax of roughly £49,000 (using marginal relief), the remaining £181,000 is distributed. The owners pay dividend tax at 33.75% on most of that, a personal tax bill of around £55,000.</p>
+<p>Without a holding company structure, the owners take dividends personally. On £230,000 of combined profits, after corporation tax of roughly £49,000 (using marginal relief), the remaining £181,000 is distributed. The owners pay dividend tax at 35.75% on most of that, a personal tax bill of around £59,000 (2026/27 rates).</p>
 
 <p>With a holding company structure, the subsidiaries pay corporation tax of £49,000 and then pay dividends of £181,000 up to the holding company. No further tax is due on those dividends. The holding company holds the cash. It can reinvest in the SaaS product, acquire a competitor, or lend funds to either subsidiary without triggering a personal tax charge.</p>
 
@@ -141,7 +141,7 @@ faqs:
 
 <p>Setting up a holding company with two trading subsidiaries is a significant restructuring. It affects your corporation tax, your personal tax, your exit strategy and your day-to-day administration. It is not a DIY project.</p>
 
-<p>As <a href="/about">ICAEW qualified accountants</a>, we work with business owners across the UK to design group structures that actually save tax, not just look good on paper. We model the numbers, prepare the documentation and handle the Companies House filings.</p>
+<p>We work with business owners across the UK to design group structures that actually save tax, not just look good on paper. We model the numbers, prepare the documentation and handle the Companies House filings.</p>
 
 <p>If you are considering this structure, start by reviewing your current <a href="/services">accounting and tax setup</a>. Then book a call to discuss the specifics of your businesses.</p>
 

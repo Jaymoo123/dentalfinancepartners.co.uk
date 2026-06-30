@@ -32,7 +32,7 @@ faqs:
 
 <p>This guide is for UK business owners, directors, contractors, and partners who want to understand R&D tax credits from first principles. It covers the merged scheme rules for accounting periods starting on or after 1 April 2024, the Enhanced R&D Intensive Scheme (ERIS), what qualifies as R&D, how to calculate your claim, and why working with an <strong>r&d tax credit specialist</strong> is the difference between a successful claim and a costly HMRC enquiry.</p>
 
-<p>As ICAEW qualified accountants, we have submitted hundreds of R&D claims for UK businesses of every shape, from a two-person software startup in Shoreditch to a precision engineering firm in the Jewellery Quarter in Birmingham. This guide reflects what we have learned. It is comprehensive, practical, and up to date for 2025/26.</p>
+<p>We have submitted hundreds of R&D claims for UK businesses of every shape, from a two-person software startup in Shoreditch to a precision engineering firm in the Jewellery Quarter in Birmingham. This guide reflects what we have learned. It is comprehensive, practical, and up to date for 2025/26.</p>
 
 <h2>What Are R&D Tax Credits?</h2>
 

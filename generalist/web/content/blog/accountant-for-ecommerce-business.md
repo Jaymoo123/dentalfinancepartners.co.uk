@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "VAT and Making Tax Digital"
 metaTitle: "Accountant for Ecommerce Business: VAT, Tax & Compliance"
-metaDescription: "UK ecommerce businesses face complex VAT, stock, and multi-jurisdiction rules. Our ICAEW-qualified team explains what an accountant for ecommerce business"
+metaDescription: "UK ecommerce businesses face complex VAT, stock, and multi-jurisdiction rules. Our specialist team explains what an accountant for ecommerce business"
 altText: "UK accountant reviewing ecommerce sales data and VAT returns on a laptop in a modern office"
 image: "/blog/accountant-for-ecommerce-business.jpg"
 imageCredit:
@@ -35,7 +35,7 @@ faqs:
 
 <p>A general accountant might handle your annual accounts and corporation tax return. But an accountant for ecommerce business will also manage your multi-jurisdiction VAT, your stock valuation, your platform fee deductions, and your Making Tax Digital (MTD) compliance. Those are not optional extras. They are core to staying compliant and keeping your margins intact.</p>
 
-<p>We are ICAEW-qualified accountants based in the UK, working with ecommerce businesses from a single seller on Etsy through to multi-channel operations turning over £2m plus. Here is what you should expect from a specialist ecommerce accountant.</p>
+<p>We are specialist accountants based in the UK, working with ecommerce businesses from a single seller on Etsy through to multi-channel operations turning over £2m plus. Here is what you should expect from a specialist ecommerce accountant.</p>
 
 <h2>VAT Across Borders: The Multi-Jurisdiction Problem</h2>
 
@@ -91,7 +91,7 @@ faqs:
 
 <p>Profit extraction is another area where ecommerce businesses differ. Many directors pay themselves a salary up to the personal allowance (£12,570) and take the rest as dividends. That works for most ecommerce businesses, but only if you have sufficient retained profits. If you are reinvesting heavily in stock and advertising, your distributable reserves may be lower than your cash flow suggests.</p>
 
-<p>An accountant for ecommerce business will run a director pay strategy review each year. They will model salary vs dividends, check your retained earnings, and ensure you are not accidentally creating a director's loan account overdrawn beyond £10,000, which triggers a benefit in kind charge and S455 tax at 33.75%.</p>
+<p>An accountant for ecommerce business will run a director pay strategy review each year. They will model salary vs dividends, check your retained earnings, and ensure you are not accidentally creating an overdrawn director's loan account. S455 tax applies to any overdrawn director's loan still outstanding more than nine months and one day after your accounting period end: the rate is 33.75% for loans made in 2025/26, rising to 35.75% for loans made from 6 April 2026. A loan over £10,000 also triggers a benefit in kind charge on top of that.</p>
 
 <h2>R&D Tax Credits for Ecommerce Businesses</h2>
 
@@ -115,6 +115,6 @@ faqs:
 <li>Have you handled R&D claims for ecommerce businesses?</li>
 </ul>
 
-<p>We are <a href="/about">ICAEW-qualified accountants</a> based in the UK, working with ecommerce businesses across every sector. If you want to discuss your specific situation, <a href="/contact">get in touch</a>. We can review your current set-up and tell you what is missing.</p>
+<p>We are <a href="/about">specialist accountants</a> based in the UK, working with ecommerce businesses across every sector. If you want to discuss your specific situation, <a href="/contact">get in touch</a>. We can review your current set-up and tell you what is missing.</p>
 
 <p>If you are still deciding whether to trade as a sole trader or limited company, our <a href="/incorporation">incorporation guide</a> covers the tax and legal differences. For a deeper look at VAT rules for online sellers, the <a href="/glossary">glossary</a> explains terms like OSS, IOSS, and distance selling in plain English.</p>

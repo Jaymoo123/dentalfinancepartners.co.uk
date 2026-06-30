@@ -96,9 +96,9 @@ faqs:
 <li>Your company has property transactions or capital gains</li>
 </ul>
 
-<p>In these situations, the cost of a professional accountant is small compared to the cost of getting it wrong. A single error in a director's loan account can trigger a Section 455 tax charge of 33.75% on the outstanding balance. That can run into thousands of pounds.</p>
+<p>In these situations, the cost of a professional accountant is small compared to the cost of getting it wrong. A single error in a director's loan account can trigger a Section 455 tax charge of 35.75% on the outstanding balance for loans made on or after 6 April 2026 (33.75% for loans made in 2025/26). That can run into thousands of pounds.</p>
 
-<p>Our <a href="/services">ICAEW qualified team</a> handles these issues every day. We know the forms, the deadlines, and the traps.</p>
+<p>Our <a href="/services">specialist team</a> handles these issues every day. We know the forms, the deadlines, and the traps.</p>
 
 <h2>Can a director sign off accounts if they are the sole director and shareholder?</h2>
 
@@ -126,7 +126,7 @@ faqs:
 
 <h2>What is the role of an ICAEW qualified accountant?</h2>
 
-<p>An ICAEW qualified accountant, like the team at <a href="/about">Holloway Davies</a>, provides assurance. We prepare accounts that comply with UK GAAP, we identify all available reliefs and allowances, and we ensure the tax position is correct. We also handle the filing with Companies House and HMRC.</p>
+<p>A qualified accountant, like the team at <a href="/about">Holloway Davies</a>, provides assurance. We prepare accounts that comply with UK GAAP, we identify all available reliefs and allowances, and we ensure the tax position is correct. We also handle the filing with Companies House and HMRC.</p>
 
 <p>When we prepare accounts for a client, we present them to the director for review. The director still signs the balance sheet. We do not sign it. But the director can be confident that the accounts are correct because a qualified professional has prepared them.</p>
 
@@ -163,7 +163,7 @@ faqs:
 
 <p>If any of these steps feel unfamiliar, speak to a qualified accountant. The cost of a review is usually a few hundred pounds. The cost of an HMRC enquiry can be tens of thousands.</p>
 
-<p>You can <a href="/contact">contact our ICAEW qualified team</a> for a no obligation discussion about your accounts. We work with limited companies, contractors, sole traders, and partnerships across the UK.</p>
+<p>You can <a href="/contact">contact our specialist team</a> for a no obligation discussion about your accounts. We work with limited companies, contractors, sole traders, and partnerships across the UK.</p>
 
 <h2>Final verdict</h2>
 

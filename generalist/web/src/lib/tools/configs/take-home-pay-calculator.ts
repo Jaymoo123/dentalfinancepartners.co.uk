@@ -7,13 +7,13 @@ export const takeHomePayTool: GenericTool = {
   slug: "take-home-pay-calculator",
   name: "Take-Home Pay Calculator",
   category: "Employment",
-  oneLiner: "Gross salary in, annual, monthly and weekly net out. 2025/26 income tax, NI, student loan and pension salary sacrifice.",
+  oneLiner: "Gross salary in, annual, monthly and weekly net out. 2026/27 income tax, NI, student loan and pension salary sacrifice.",
   embedHeight: 540,
-  metaTitle: "Take-Home Pay Calculator 2025/26 | UK Salary After Tax",
+  metaTitle: "Take-Home Pay Calculator 2026/27 | UK Salary After Tax",
   metaDescription:
-    "Free UK take-home pay calculator. 2025/26 income tax, NI, student loan and pension salary sacrifice. Annual, monthly and weekly net figures.",
+    "Free UK take-home pay calculator. 2026/27 income tax, NI, student loan and pension salary sacrifice. Annual, monthly and weekly net figures.",
   intro:
-    "The HMRC headline number says one thing; what arrives in your account says another. Enter your gross salary and the calculator returns annual, monthly and weekly net pay for 2025/26, with income tax, employee NI, student loan plans, and any salary-sacrifice pension contributions all factored in.",
+    "The HMRC headline number says one thing; what arrives in your account says another. Enter your gross salary and the calculator returns annual, monthly and weekly net pay for 2026/27, with income tax, employee NI, student loan plans, and any salary-sacrifice pension contributions all factored in.",
   fields: [
     {
       id: "salary",
@@ -76,13 +76,13 @@ export const takeHomePayTool: GenericTool = {
   explainer: {
     heading: "How this works",
     paragraphs: [
-      "The calculator applies the standard 2025/26 personal allowance of £12,570 (tapering above £100,000), the three income tax bands, and employee NI at 8% on earnings between £12,570 and £50,270 plus 2% above. Salary-sacrifice pension contributions are deducted before tax and NI are calculated, so they save you both.",
+      "The calculator applies the standard 2026/27 personal allowance of £12,570 (tapering above £100,000), the three income tax bands, and employee NI at 8% on earnings between £12,570 and £50,270 plus 2% above. Salary-sacrifice pension contributions are deducted before tax and NI are calculated, so they save you both.",
       "Student loan deductions are added if you select a plan. The model assumes a standard tax code (1257L), no taxable benefits in kind, no other income, and that you are paid through PAYE.",
     ],
   },
   faqs: [
     {
-      question: "What is in 2025/26 take-home pay?",
+      question: "What is in 2026/27 take-home pay?",
       answer:
         "For a UK employee: gross salary, minus income tax (20% basic, 40% higher, 45% additional), minus employee National Insurance (8% between £12,570 and £50,270, 2% above), minus any student loan deductions, minus any salary-sacrifice pension contribution. The personal allowance is £12,570 and tapers by £1 for every £2 of income above £100,000.",
     },

@@ -75,7 +75,7 @@ faqs:
 
 <p>Look for an accountant who is a member of a recognised professional body (ICAEW, ACCA, CIPFA, or AAT). Check that they have experience with charities of a similar size and type to yours. Ask about their knowledge of the SORP, the Charity Commission filing requirements, and the tax reliefs available. Ask if they have handled Gift Aid audits. Ask if they have dealt with restricted fund accounting.</p>
 
-<p>At Holloway Davies, our ICAEW qualified team works with charities across the UK. We prepare accounts under the SORP, handle Gift Aid claims, manage independent examinations, and advise on tax reliefs. We are based in Manchester but work remotely with charities nationwide. You can read more about our <a href="/services">services for charities</a> or <a href="/contact">get in touch</a> for a no-obligation discussion.</p>
+<p>At Holloway Davies, our experienced team works with charities across the UK. We prepare accounts under the SORP, handle Gift Aid claims, manage independent examinations, and advise on tax reliefs. We are based in Manchester but work remotely with charities nationwide. You can read more about our <a href="/services">services for charities</a> or <a href="/contact">get in touch</a> for a no-obligation discussion.</p>
 
 <h2>What does a charity accountant cost?</h2>
 

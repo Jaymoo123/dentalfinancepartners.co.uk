@@ -71,7 +71,7 @@ faqs: []
 
 <h3>VAT for Schools</h3>
 
-<p>VAT is a complex area for schools. Most school income is exempt from VAT (tuition fees, exam fees, boarding fees). But schools still incur VAT on their costs (building works, supplies, equipment). The VAT recovery rules are specific. For example, academy trusts can recover VAT on certain costs through the VAT rebate scheme. Maintained schools cannot. Independent schools may be able to recover VAT on costs related to their non-exempt activities (like catering or lettings).</p>
+<p>VAT is a complex area for schools, and the rules differ sharply by school type. Maintained (state-funded) schools retain a broad VAT exemption on tuition and educational income. Independent (fee-charging) schools lost the education exemption on 1 January 2025: tuition fees and boarding fees are now standard-rated at 20% VAT, requiring most independent schools to register for VAT and charge it on those fees. All schools still incur VAT on their costs (building works, supplies, equipment). The VAT recovery rules are specific. Academy trusts can recover VAT on certain costs through the VAT rebate scheme. Maintained schools cannot. Independent schools, now VAT-registered for their standard-rated fee income, can recover input VAT on costs relating to those taxable activities.</p>
 
 <p>An accountant for schools who understands VAT will ensure you are not overpaying VAT and that you are claiming all the rebates you are entitled to. They will also advise on the VAT implications of capital projects, such as new buildings or refurbishments.</p>
 
@@ -115,7 +115,7 @@ faqs: []
 
 <h2>How Holloway Davies Can Help</h2>
 
-<p>At Holloway Davies, we are ICAEW qualified accountants with deep experience in the education sector. We work with academy trusts, maintained schools, and independent schools across the UK. We understand the ESFA Handbook, the Charities SORP, and the specific payroll and pension rules that apply to schools. We prepare ESFA returns, budget forecasts, and annual accounts. We help schools stay compliant and make the most of their funding.</p>
+<p>At Holloway Davies, we have deep experience in the education sector. We work with academy trusts, maintained schools, and independent schools across the UK. We understand the ESFA Handbook, the Charities SORP, and the specific payroll and pension rules that apply to schools. We prepare ESFA returns, budget forecasts, and annual accounts. We help schools stay compliant and make the most of their funding.</p>
 
 <p>If you are a school leader, trustee, or governor looking for a specialist accountant for schools, we would be happy to talk. <a href="/contact">Contact us</a> to arrange a free initial consultation. Or explore our full range of <a href="/services">services</a> to see how we can support your school's financial health.</p>
 
@@ -141,4 +141,4 @@ faqs: []
 
 <h3>Can an accountant for schools help with VAT recovery?</h3>
 
-<p>Yes. Schools have specific VAT recovery rules. Academy trusts can recover VAT on certain costs through the VAT rebate scheme. Maintained schools cannot. Independent schools may be able to recover VAT on costs related to non-exempt activities. A specialist accountant will ensure you are claiming all the VAT you are entitled to and not overpaying.</p>
+<p>Yes. Schools have specific VAT recovery rules. Academy trusts can recover VAT on certain costs through the VAT rebate scheme. Maintained schools cannot. Independent schools, whose tuition and boarding fees are standard-rated at 20% since 1 January 2025, are VAT-registered for that fee income and can recover input VAT on costs relating to their taxable activities. A specialist accountant will ensure you are claiming all the VAT you are entitled to and not overpaying.</p>

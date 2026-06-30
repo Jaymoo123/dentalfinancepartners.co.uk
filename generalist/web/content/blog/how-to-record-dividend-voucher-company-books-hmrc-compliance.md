@@ -24,14 +24,14 @@ faqs:
   - question: "Can I backdate a dividend voucher if I forgot to create one at the time?"
     answer: "No. Backdating dividend vouchers is not compliant. The voucher must record the actual date the dividend was declared. If you forgot to create the paperwork, you cannot retrospectively create a voucher with an earlier date. Instead, declare a new dividend now, create the paperwork for today's date, and ensure you have sufficient retained earnings to cover it. If the original payment was taken as a director's loan, you need to formalise that loan and either repay it or declare a dividend to clear it, following the correct process."
   - question: "What happens if HMRC finds I paid a dividend without sufficient retained earnings?"
-    answer: "This is an unlawful dividend. The directors are personally liable to repay the amount to the company. HMRC will treat the payment as a director's loan account withdrawal, not a dividend. The director must repay the loan or face Section 455 tax at 33.75% on the outstanding balance if not repaid within 9 months and 1 day of the year-end. The director also faces a benefit in kind charge on any loan over £10,000. In serious cases, HMRC can pursue the directors personally for the tax."
+    answer: "This is an unlawful dividend. The directors are personally liable to repay the amount to the company. HMRC will treat the payment as a director's loan account withdrawal, not a dividend. The director must repay the loan or face Section 455 tax at 35.75% on the outstanding balance if not repaid within 9 months and 1 day of the year-end (35.75% for loans made on or after 6 April 2026; 33.75% for loans made in 2025/26). The director also faces a benefit in kind charge on any loan over £10,000. In serious cases, HMRC can pursue the directors personally for the tax."
   - question: "Is a digital dividend voucher acceptable, or does it need to be printed and signed?"
     answer: "A digital dividend voucher is perfectly acceptable. HMRC and Companies House both accept electronic records. The voucher should be signed by a director, and a digital signature (typed name or electronic signature) is fine. The key requirement is that the voucher is created at the time of the dividend declaration and stored securely. We recommend saving the voucher as a PDF in your accounting software or a dedicated company folder. Do not rely on an email chain as your only record, as emails can be deleted or lost."
 ---
 
 <p>Dividends are the most tax-efficient way for a limited company director to extract profits. But that efficiency only holds up if you record the payment properly.</p>
 
-<p>HMRC does not require you to submit dividend vouchers with your tax return. What it does require is that you can produce them on request. If your company books are examined and the dividend payments have no supporting paperwork, HMRC can reclassify them as director's loan account drawings. That triggers a tax charge under Section 455 (currently 33.75%) and a benefit in kind charge on the director.</p>
+<p>HMRC does not require you to submit dividend vouchers with your tax return. What it does require is that you can produce them on request. If your company books are examined and the dividend payments have no supporting paperwork, HMRC can reclassify them as director's loan account drawings. That triggers a tax charge under Section 455 (35.75% for loans made on or after 6 April 2026; 33.75% for loans made in 2025/26) and a benefit in kind charge on the director.</p>
 
 <p>This is a surprisingly common issue. We have seen otherwise well-run companies lose thousands because a director took a "dividend" without the paperwork to back it up. The fix is straightforward if you know the process.</p>
 
@@ -118,7 +118,7 @@ faqs:
 
 <p>HMRC can request dividend vouchers and board minutes as part of a compliance check. They do this most often when they see large dividend payments relative to the company's turnover, or when a director's self assessment return shows dividend income that seems inconsistent with the company's profits.</p>
 
-<p>If you cannot produce the vouchers, HMRC will treat the payments as director's loan account drawings. That means the director owes the company the money back. If it is not repaid within 9 months and 1 day of the year-end, the company pays Section 455 tax at 33.75% on the outstanding amount. The director also faces a benefit in kind charge on any loan over £10,000.</p>
+<p>If you cannot produce the vouchers, HMRC will treat the payments as director's loan account drawings. That means the director owes the company the money back. If it is not repaid within 9 months and 1 day of the year-end, the company pays Section 455 tax at 35.75% on the outstanding amount (35.75% for loans made on or after 6 April 2026; 33.75% for loans made in 2025/26). The director also faces a benefit in kind charge on any loan over £10,000.</p>
 
 <p>The paperwork is simple. A dividend voucher takes five minutes to prepare. Board minutes take ten minutes. A dividend register takes another five minutes. That is twenty minutes of admin per dividend round to avoid thousands of pounds in tax charges. It is hard to think of a better return on your time.</p>
 
@@ -180,4 +180,4 @@ faqs:
 
 <p>For more detailed guidance on dividend compliance, including how to handle alphabet shares and spouse dividends, see our <a href="/blog/director-pay-and-dividends">director pay and dividends</a> section. If you are considering incorporating and want to set up your dividend structure from day one, our <a href="/incorporation">incorporation guide</a> covers the options.</p>
 
-<p>As ICAEW qualified accountants, we review dividend records as part of every year-end accounts preparation. If you want us to check your current dividend paperwork or set up a compliant process for your company, <a href="/contact">get in touch</a>. We can typically review your dividend records and identify any gaps within an hour.</p>
+<p>We review dividend records as part of every year-end accounts preparation. If you want us to check your current dividend paperwork or set up a compliant process for your company, <a href="/contact">get in touch</a>. We can typically review your dividend records and identify any gaps within an hour.</p>

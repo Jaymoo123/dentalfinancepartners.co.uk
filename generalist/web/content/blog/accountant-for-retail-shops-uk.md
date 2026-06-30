@@ -26,12 +26,12 @@ faqs:
   - question: "How should I value my stock at year-end?"
     answer: "Stock must be valued at the lower of cost and net realisable value. Cost means what you paid to buy or produce the stock. Net realisable value means what you could sell it for, minus any costs to sell it. If you hold slow-moving or damaged stock, you may need to write it down. A physical stocktake at year-end is essential. Your accountant should help you set up a stocktake process and sign off the valuation."
   - question: "What is the most tax-efficient way to pay myself from my retail company?"
-    answer: "The most common approach is a salary of £12,570 (matching your personal allowance) and dividends up to the basic rate band. The salary avoids income tax and employee NI. Dividends are taxed at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate), after the £500 dividend allowance. If your spouse works in the shop, paying them a salary and dividends can reduce the overall tax bill. Your accountant should run the numbers for your specific situation."
+    answer: "The most common approach is a salary of £12,570 (matching your personal allowance) and dividends up to the basic rate band. The salary avoids income tax and employee NI. Dividends are taxed at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate) from 6 April 2026, after the £500 dividend allowance. If your spouse works in the shop, paying them a salary and dividends can reduce the overall tax bill. Your accountant should run the numbers for your specific situation."
 ---
 
 <p>Running a retail shop in the UK means managing stock, staff, suppliers, and customers. You are also managing a set of tax and compliance rules that differ from most other businesses. VAT on standard and zero-rated goods, stock valuation for year-end, margin schemes for second-hand goods, and payroll for part-time staff are just a few of them.</p>
 <p>A general accountant can file your return. But a specialist <strong>accountant for retail shops</strong> understands the sector and can spot savings and risks a generalist would miss.</p>
-<p>Holloway Davies are ICAEW qualified accountants who work with retail businesses across the UK. This article covers the specific accounting, tax, and compliance issues that matter to shop owners. If you run a shop, this is the guidance you need.</p>
+<p>Holloway Davies are specialist accountants who work with retail businesses across the UK. This article covers the specific accounting, tax, and compliance issues that matter to shop owners. If you run a shop, this is the guidance you need.</p>
 
 <h2>What Makes Retail Accounting Different</h2>
 <p>Retail accounting is not the same as accounting for a consultancy or a trades business. The differences start with stock and go through to VAT, margins, and payroll.</p>
@@ -65,7 +65,7 @@ faqs:
 
 <h2>Corporation Tax and Profit Extraction</h2>
 <p>If your retail shop is a limited company, you pay corporation tax on your profits. For the 2025/26 tax year, the rate is 19% on profits up to £50,000, 25% on profits above £250,000, with marginal relief between £50,000 and £250,000.</p>
-<p>How you extract profit matters. Taking a salary and dividends is the most common approach for director-run retail companies. A salary of £12,570 matches your personal allowance and avoids income tax and employee NI. Dividends are then taxed at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate), after the £500 dividend allowance.</p>
+<p>How you extract profit matters. Taking a salary and dividends is the most common approach for director-run retail companies. A salary of £12,570 matches your personal allowance and avoids income tax and employee NI. Dividends are then taxed at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate) from 6 April 2026, after the £500 dividend allowance.</p>
 <p>If your spouse or partner works in the shop, paying them a salary and dividends can reduce the overall tax bill. Alphabet shares allow you to pay dividends flexibly between shareholders. But be careful with settlement legislation if shares are gifted to a non-spouse.</p>
 <p>A specialist accountant for retail shops UK will run the numbers for your specific situation. They will tell you the most tax-efficient way to pay yourself and your family.</p>
 
@@ -79,13 +79,13 @@ faqs:
 <ul>
 <li><strong>Not tracking stock properly.</strong> Stock is an asset. If you do not count it, you cannot value it. HMRC expects a physical stocktake at year-end.</li>
 <li><strong>Using the wrong VAT scheme.</strong> If you sell zero-rated goods but use the standard VAT scheme, you are overpaying VAT. If you sell second-hand goods but do not use the margin scheme, you are overpaying VAT.</li>
-<li><strong>Mixing personal and business spending.</strong> Using the shop bank account for personal purchases creates director's loan account problems. Repay any personal spending within 9 months and 1 day of year-end to avoid a 33.75% S455 tax charge.</li>
+<li><strong>Mixing personal and business spending.</strong> Using the shop bank account for personal purchases creates director's loan account problems. Repay any personal spending within 9 months and 1 day of year-end to avoid an S455 tax charge (35.75% for loans made on or after 6 April 2026; 33.75% for loans made in 2025/26).</li>
 <li><strong>Ignoring payroll for part-time staff.</strong> Every employee must be on payroll, even if they work only a few hours a week. HMRC cross-checks payroll data against real-time information.</li>
 <li><strong>Filing accounts late.</strong> Late filing penalties for private companies start at £150 and rise to £1,500 for accounts more than 6 months overdue. Your accountant should file your accounts and confirmation statement on time.</li>
 </ul>
 
 <h2>How Holloway Davies Helps Retail Shops</h2>
-<p>We are ICAEW qualified accountants with experience across the retail sector. We work with independent shops, boutique stores, online retailers with physical premises, and multi-location chains.</p>
+<p>We are experienced accountants with a track record across the retail sector. We work with independent shops, boutique stores, online retailers with physical premises, and multi-location chains.</p>
 <p>Our services for retail shops include:</p>
 <ul>
 <li>Year-end accounts and corporation tax returns (CT600)</li>

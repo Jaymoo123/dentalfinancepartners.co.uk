@@ -12,9 +12,7 @@ altText: Accountant reviewing capital allowance claim for second-hand machinery 
 image: https://images.pexels.com/photos/4174740/pexels-photo-4174740.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: Can You Claim AIA on Second-Hand Assets?
 summary: The Annual Investment Allowance (AIA) covers most second-hand plant and machinery, but there are specific exclusions. This guide explains what qualifies, what doesn't, and how to claim correctly.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Can You Claim AIA on Second-Hand Assets?","description":"Claim the Annual Investment Allowance on most used plant and machinery up to £1,000,000, with full relief in year one. See the exclusions first.","url":"https://www.hollowaydavies.co.uk/blog/corporation-tax/can-you-claim-aia-on-second-hand-assets","datePublished":"2026-05-20","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
-  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/corporation-tax/can-you-claim-aia-on-second-hand-assets"},"inLanguage":"en-GB","image":"https://images.pexels.com/photos/4174740/pexels-photo-4174740.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Corporation Tax","item":"https://www.hollowaydavies.co.uk/blog/corporation-tax"},{"@type":"ListItem","position":3,"name":"Can You Claim AIA on Second-Hand Assets?","item":"https://www.hollowaydavies.co.uk/blog/corporation-tax/can-you-claim-aia-on-second-hand-assets"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does the AIA apply to second-hand vans?","acceptedAnswer":{"@type":"Answer","text":"Yes. Vans and commercial vehicles qualify for AIA whether new or second-hand. A used Ford Transit, Mercedes Sprinter, or similar van bought for your business qualifies for 100% relief up to the £1,000,000 limit. The key condition is that the van must be used for business purposes. If there is any private use, you only claim AIA on the business proportion."}},{"@type":"Question","name":"Can I claim AIA on second-hand computers and IT equipment?","acceptedAnswer":{"@type":"Answer","text":"Yes. Second-hand computers, servers, monitors, and other IT hardware qualify as plant and machinery for AIA purposes. Buy a used server for your office at £3,200 and you can deduct the full cost from your profits in the
-  year of purchase. The same applies to refurbished laptops, networking equipment, and point-of-sale systems."}},{"@type":"Question","name":"What happens if I buy a second-hand asset and sell it in the same year?","acceptedAnswer":{"@type":"Answer","text":"If you buy and sell a second-hand asset in the same accounting period, you cannot claim AIA on it. The AIA requires the asset to be brought into use for your business. If you sell it before using it, no relief is due. If you use it briefly then sell it, you claim AIA on the purchase cost and a balancing charge applies on the disposal proceeds."}},{"@type":"Question","name":"Do I need a formal valuation for second-hand assets to claim AIA?","acceptedAnswer":{"@type":"Answer","text":"Not usually. The purchase price on the invoice is the qualifying cost for AIA purposes. A formal valuation is only needed if you buy from a connected person (where market value rules apply) or if you acquire assets as part of buying a business and need to apportion the purchase price between goodwill, buildings, and plant. In standard arm''s length purchases, the invoice is sufficient."}}]}]}'
+schema: ""
 faqs:
 - question: Does the AIA apply to second-hand vans?
   answer: Yes. Vans and commercial vehicles qualify for AIA whether new or second-hand. A used Ford Transit, Mercedes Sprinter, or similar van bought for your business qualifies for 100% relief up to the £1,000,000 limit. The key condition is that the van must be used for business purposes. If there is any private use, you only claim AIA on the business proportion.
@@ -34,8 +32,8 @@ imageCredit:
   source_url: https://www.pexels.com/photo/brown-wooden-miniature-house-on-brown-wooden-table-4174740/
 metaTitle_prev: Can You Claim AIA on Second-Hand Assets? UK Guide 2025/26
 metaDescription_prev: Can you claim AIA on second-hand assets? Yes, for most used plant and machinery. Exclusions apply. Full guide for UK businesses with worked examples.
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -74,7 +72,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>There are specific exclusions. These apply to both new and second-hand assets, but they catch people out more often with used purchases.</p>
 
 <h3>Cars</h3>
-<p>Passenger cars are excluded from the AIA entirely. This is the most common trap. If you buy a second-hand car for your business, you cannot claim the AIA on it. Instead, you claim capital allowances through the main pool or special rate pool, depending on the car's CO2 emissions. The rates are 18% per year (main pool) or 6% per year (special rate pool) on a reducing balance basis.</p>
+<p>Passenger cars are excluded from the AIA entirely. This is the most common trap. If you buy a second-hand car for your business, you cannot claim the AIA on it. Instead, you claim capital allowances through the main pool or special rate pool, depending on the car's CO2 emissions. The rates are 14% per year (main pool, from April 2026 per FA 2026 s.28; 18% up to 2025/26) or 6% per year (special rate pool) on a reducing balance basis.</p>
 
 <p>Vans and commercial vehicles are different. They qualify for AIA. A used Ford Transit Custom bought for your landscaping business qualifies. A used Audi A4 bought for the same business does not.</p>
 
@@ -112,11 +110,11 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If you control multiple companies, the £1,000,000 AIA limit is shared between them. This is the associated companies rule. If you own two limited companies, the AIA limit is split between them. You can agree how to allocate the limit, but the total across all associated companies cannot exceed £1,000,000.</p>
 
-<p>This matters when buying second-hand assets across a group. If one company buys a used machine for £600,000 and another buys used equipment for £500,000, you have exceeded the combined limit. Plan the purchases carefully or accept that some expenditure will go into the main pool at 18% rather than attracting full relief.</p>
+<p>This matters when buying second-hand assets across a group. If one company buys a used machine for £600,000 and another buys used equipment for £500,000, you have exceeded the combined limit. Plan the purchases carefully or accept that some expenditure will go into the main pool at 14% (main-pool WDA from April 2026 per FA 2026 s.28; 18% up to 2025/26) rather than attracting full relief.</p>
 
 <h2>Second-Hand Assets and the Special Rate Pool</h2>
 
-<p>Some second-hand assets fall into the special rate pool rather than the main pool. These attract AIA at the same rate (100% up to the limit), but any expenditure above the AIA limit goes into the special rate pool at 6% per year rather than 18%.</p>
+<p>Some second-hand assets fall into the special rate pool rather than the main pool. These attract AIA at the same rate (100% up to the limit), but any expenditure above the AIA limit goes into the special rate pool at 6% per year rather than 14% (the main-pool WDA from April 2026 per FA 2026 s.28; 18% up to 2025/26).</p>
 
 <p>Assets in the special rate pool include:</p>
 <ul>
@@ -149,7 +147,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If you are unsure whether a specific second-hand asset qualifies, speak to your accountant before you buy. A quick check can save you from a missed claim or a later HMRC enquiry.</p>
 
-<p>At <a href="/services">Holloway Davies</a>, we are ICAEW qualified accountants who deal with capital allowances claims regularly. We can review your asset purchases and make sure you claim everything you are entitled to.</p>
+<p>At <a href="/services">Holloway Davies</a>, we deal with capital allowances claims regularly. We can review your asset purchases and make sure you claim everything you are entitled to.</p>
 
 <h2>Common Mistakes with AIA on Second-Hand Assets</h2>
 

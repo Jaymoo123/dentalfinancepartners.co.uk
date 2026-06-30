@@ -87,7 +87,7 @@ faqs:
 
 <p>Your accountant should help you model the cash flow of each project, including the timing of VAT recoveries, corporation tax payments, and SDLT. A developer in Birmingham's Jewellery Quarter working on a six-unit conversion needs to know when the VAT refund will land and when the corporation tax falls due.</p>
 
-<p>If you are using a director's loan account to fund the company, you need to be aware of the S455 tax charge (33.75%) if the loan is not repaid within 9 months and 1 day of the year-end. A specialist accountant will structure the funding to avoid this charge.</p>
+<p>If you are using a director's loan account to fund the company, you need to be aware of the S455 tax charge (33.75% for loans made in 2025/26, rising to 35.75% for loans made on or after 6 April 2026) if the loan is not repaid within 9 months and 1 day of the year-end. A specialist accountant will structure the funding to avoid this charge.</p>
 
 <h2>What to Look for in an Accountant for Property Developers</h2>
 
@@ -101,7 +101,7 @@ faqs:
 <li><strong>Proactive advice.</strong> A good accountant does not just file your return. They tell you about reliefs you did not know existed. They flag the SDLT surcharge before you exchange contracts. They ask about your next project and how to structure it.</li>
 </ul>
 
-<p>At Holloway Davies, we are ICAEW qualified accountants who work with property developers across the UK. Our team understands the specific tax rules that apply to development, from SDLT to VAT to corporation tax planning. We do not just file returns. We help you structure your business for tax efficiency and cash flow.</p>
+<p>At Holloway Davies, we work with property developers across the UK. Our team understands the specific tax rules that apply to development, from SDLT to VAT to corporation tax planning. We do not just file returns. We help you structure your business for tax efficiency and cash flow.</p>
 
 <h2>How to Structure Your Property Development Business</h2>
 

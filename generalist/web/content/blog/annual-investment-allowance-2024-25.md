@@ -76,7 +76,7 @@ imageCredit:
 <li>Gifts or assets received as a capital contribution</li>
 </ul>
 
-<p>If you are unsure whether a specific asset qualifies, check the HMRC Capital Allowances manual or speak to an accountant. As ICAEW qualified accountants, we review capital allowances schedules regularly for clients across Manchester, Birmingham, and Bristol. The rules are detailed but the principle is straightforward: if it is plant or machinery used in your trade, it likely qualifies.</p>
+<p>If you are unsure whether a specific asset qualifies, check the HMRC Capital Allowances manual or speak to an accountant. We review capital allowances schedules regularly for clients across Manchester, Birmingham, and Bristol. The rules are detailed but the principle is straightforward: if it is plant or machinery used in your trade, it likely qualifies.</p>
 
 <h2>How much can you claim in 2024/25?</h2>
 

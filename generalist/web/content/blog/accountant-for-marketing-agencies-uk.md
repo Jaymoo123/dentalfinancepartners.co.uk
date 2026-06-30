@@ -24,7 +24,7 @@ faqs:
   - question: "Should my marketing agency be VAT registered?"
     answer: "If your taxable turnover exceeds £90,000 in a rolling 12-month period, you must register. Many agencies register voluntarily before that threshold because they have significant VAT on costs (software, freelancers, advertising) and their clients are VAT-registered businesses. Voluntary registration can improve your cash flow. But if most of your clients are non-VAT registered consumers or small businesses, the extra VAT on your invoices may make you less competitive. Run the numbers with your accountant."
   - question: "How should I pay myself from my marketing agency?"
-    answer: "The standard approach is a salary of £12,570 (matching the personal allowance and primary NI threshold) plus dividends. Dividends are taxed at 8.75% for basic rate, 33.75% for higher rate, and 39.35% for additional rate. The dividend allowance is £500 from April 2024. If you have multiple directors, alphabet shares allow flexible dividend allocation. A specialist accountant will model the most tax-efficient split for your specific profits and personal circumstances."
+    answer: "The standard approach is a salary of £12,570 (matching the personal allowance and primary NI threshold) plus dividends. Dividends are taxed at 10.75% for basic rate, 35.75% for higher rate, and 39.35% for additional rate (from 6 April 2026; the 2025/26 rates were 8.75% and 33.75%). The dividend allowance is £500 from April 2024. If you have multiple directors, alphabet shares allow flexible dividend allocation. A specialist accountant will model the most tax-efficient split for your specific profits and personal circumstances."
   - question: "What happens if I get IR35 wrong for a contractor?"
     answer: "If HMRC determines a contractor was inside IR35 and you did not operate payroll, you become liable for the unpaid tax and National Insurance, plus interest and penalties. This can run into tens of thousands per contractor per year. You also face the cost of defending an HMRC enquiry. A specialist accountant will help you draft robust contracts and working practices, and guide you through the Status Determination Statement process."
 ---
@@ -39,7 +39,7 @@ faqs:
 
 <p>A general accountant may treat all your income as straightforward turnover and all your costs as simple expenses. That approach misses opportunities. For example, retainer income recognised on a cash basis versus an accrual basis can shift your corporation tax liability by months. R&D credits for developing a proprietary analytics platform can return thousands of pounds to your business. VAT on services to EU clients has changed post-Brexit, and many agencies still get it wrong.</p>
 
-<p>As ICAEW qualified accountants, we see agencies that have overpaid tax by £10,000 to £30,000 simply because their previous accountant did not understand the sector. A specialist accountant for marketing agencies will spot these issues before they cost you money.</p>
+<p>We see agencies that have overpaid tax by £10,000 to £30,000 simply because their previous accountant did not understand the sector. A specialist accountant for marketing agencies will spot these issues before they cost you money.</p>
 
 <h2>Key Tax Issues for Marketing Agencies</h2>
 
@@ -47,7 +47,7 @@ faqs:
 
 <p>Most marketing agencies operate as limited companies. The corporation tax rate for 2025/26 is 19% on profits up to £50,000, 25% on profits above £250,000, with marginal relief between those thresholds. If your agency is profitable, you want to extract money tax-efficiently.</p>
 
-<p>The standard approach is a small salary (typically £12,570, matching the personal allowance and primary NI threshold) plus dividends. Dividends are taxed at 8.75% for basic rate taxpayers, 33.75% for higher rate, and 39.35% for additional rate. The annual dividend allowance is just £500 from April 2024.</p>
+<p>The standard approach is a small salary (typically £12,570, matching the personal allowance and primary NI threshold) plus dividends. Dividends are taxed at 10.75% for basic rate taxpayers, 35.75% for higher rate, and 39.35% for additional rate (from 6 April 2026; the 2025/26 rates were 8.75% and 33.75%). The annual dividend allowance is just £500 from April 2024.</p>
 
 <p>But here is where agency structure matters. If you have multiple directors or shareholders, alphabet shares allow flexible dividend allocation. If you have brought in a co-founder or a key employee as a shareholder, you need to manage dividend waivers and ensure the share structure is clean from day one. A specialist accountant will set this up properly on incorporation, not fix it three years later when HMRC queries it.</p>
 
@@ -117,11 +117,11 @@ faqs:
 <li>Do they recommend project-level accounting and monthly management accounts, or just annual accounts and a tax return?</li>
 <li>Are they ICAEW qualified? That gives you assurance of professional standards and technical competence.</li>
 </ul>
-<p>A good accountant for marketing agencies will also help you with cash flow forecasting, pricing strategy, and exit planning. If you plan to sell your agency in the next three to five years, you need clean financial records and a tax-efficient structure. Business Asset Disposal Relief (BADR) currently gives a 14% CGT rate on the first £1 million of gains (rising to 18% from April 2026). But you must hold the shares for at least two years and meet the trading company conditions. A specialist accountant will help you structure for that from the start.</p>
+<p>A good accountant for marketing agencies will also help you with cash flow forecasting, pricing strategy, and exit planning. If you plan to sell your agency in the next three to five years, you need clean financial records and a tax-efficient structure. Business Asset Disposal Relief (BADR) currently gives an 18% CGT rate on the first £1 million of qualifying gains (it was 14% for 6 April 2025 to 5 April 2026, and 10% before that). But you must hold the shares for at least two years and meet the trading company conditions. A specialist accountant will help you structure for that from the start.</p>
 
 <h2>How Holloway Davies Can Help</h2>
 
-<p>We are ICAEW qualified accountants based in the UK. We work with marketing agencies across the country, from a four-person content agency in Bristol's Harbourside to a 25-person performance marketing agency in Manchester's Northern Quarter. Our team understands the specific tax and compliance challenges your agency faces.</p>
+<p>We are specialist accountants based in the UK. We work with marketing agencies across the country, from a four-person content agency in Bristol's Harbourside to a 25-person performance marketing agency in Manchester's Northern Quarter. Our team understands the specific tax and compliance challenges your agency faces.</p>
 
 <p>We handle the full range of services: corporation tax, VAT, payroll, R&D claims, management accounts, and exit planning. We work with Xero, FreeAgent, QuickBooks, and Sage. We offer a free initial consultation where we review your current accounting setup and identify any issues or opportunities.</p>
 

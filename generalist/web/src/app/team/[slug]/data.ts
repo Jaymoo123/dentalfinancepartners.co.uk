@@ -50,13 +50,13 @@ export const TEAM: Record<string, TeamMember> = {
     name: "James Holloway",
     initials: "JH",
     role: "Technical Reviewer",
-    qualifications: "BSc Accounting and Finance, ICAEW Chartered Accountant",
+    qualifications: "BSc Accounting and Finance",
     shortBio:
-      "ICAEW Chartered Accountant. Technical reviewer on every published article. Specialist in UK corporation tax, BADR, R&D credits and exit planning.",
+      "Technical reviewer on every published article. Specialist in UK corporation tax, BADR, R&D credits and exit planning.",
     bio: [
-      "James Holloway is the technical reviewer on every article published by Holloway Davies. He qualified with ICAEW after a BSc in Accounting and Finance and has spent his career advising UK limited companies on corporation tax, share structure, R&D claims and exit strategy.",
+      "James Holloway is the technical reviewer on every article published by Holloway Davies. With a BSc in Accounting and Finance, he has spent his career advising UK limited companies on corporation tax, share structure, R&D claims and exit strategy.",
       "Every piece of content on this site is reviewed against current HMRC and Companies House guidance before publication. Where figures, deadlines or rates change in the next Budget or Finance Act, the editorial team updates the article and republishes; James signs off the change.",
-      "James does not publish personalised advice through articles. Tailored advice for a specific business is delivered via a one-to-one call with a qualified accountant on the partner team.",
+      "James does not publish personalised advice through articles. Tailored advice for a specific business is delivered via a one-to-one call with a senior accountant on the partner team.",
     ],
     expertise: [
       "UK corporation tax including marginal relief and associated company rules",

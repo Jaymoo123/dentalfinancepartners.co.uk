@@ -37,7 +37,7 @@ faqs:
 
 <p>Fixed fee accounting means you pay a set amount each month or quarter. That fee covers a defined scope of work: your annual accounts, corporation tax return, self assessment, VAT returns, payroll, and ongoing advice. You know what you pay and what you get. No surprises.</p>
 
-<p>At Holloway Davies, our ICAEW qualified team works on fixed fees for almost all clients. A limited company director in Leeds paying £195 per month knows their annual compliance costs are £2,340. A freelance consultant in Bristol on £145 per month can budget exactly £1,740 for the year. That predictability matters when you are managing cash flow.</p>
+<p>At Holloway Davies, our specialist team works on fixed fees for almost all clients. A limited company director in Leeds paying £195 per month knows their annual compliance costs are £2,340. A freelance consultant in Bristol on £145 per month can budget exactly £1,740 for the year. That predictability matters when you are managing cash flow.</p>
 
 <h2>What Is Hourly Billing?</h2>
 
@@ -137,7 +137,7 @@ faqs:
 
 <p>Today, business owners expect more. They want advice, planning, and proactive support. They want to pick up the phone without worrying about cost. Fixed fee accounting makes that relationship possible. Hourly billing makes every interaction a transaction.</p>
 
-<p>As ICAEW qualified accountants, we moved to fixed fees over a decade ago. Our clients tell us the single biggest benefit is being able to call without hesitation. A quick check on dividend timing, a question about a new contract, a conversation about pension contributions. All covered. No meter running.</p>
+<p>We moved to fixed fees over a decade ago. Our clients tell us the single biggest benefit is being able to call without hesitation. A quick check on dividend timing, a question about a new contract, a conversation about pension contributions. All covered. No meter running.</p>
 
 <h2>Making the Switch: From Hourly to Fixed Fee</h2>
 

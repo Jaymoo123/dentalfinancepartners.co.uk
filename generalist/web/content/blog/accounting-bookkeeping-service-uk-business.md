@@ -80,7 +80,7 @@ faqs:
 <p>The provider calculates your corporation tax liability, dividend tax, or income tax and advises on the payment deadline: 9 months and 1 day after your year-end for corporation tax, 31 January for self assessment.</p>
 
 <h3>Director's Loan Account Monitoring</h3>
-<p>For limited companies, the service tracks your director's loan account. If you take money from the company beyond your salary and dividends, the loan account goes overdrawn. If it is not repaid within 9 months and 1 day of your year-end, the company pays S455 tax at 33.75%. A good service alerts you before this happens.</p>
+<p>For limited companies, the service tracks your director's loan account. If you take money from the company beyond your salary and dividends, the loan account goes overdrawn. If it is not repaid within 9 months and 1 day of your year-end, the company pays S455 tax at 33.75% for loans made in 2025/26, or 35.75% for loans made on or after 6 April 2026. A good service alerts you before this happens.</p>
 
 <h3>HMRC Correspondence and Compliance</h3>
 <p>The provider handles routine HMRC correspondence, including VAT inspections, PAYE compliance checks, and corporation tax enquiries. They prepare the files HMRC asks for and represent you during any review.</p>
@@ -118,7 +118,7 @@ faqs:
 <p>Not all services are equal. Here is what to look for.</p>
 
 <h3>Qualification and Regulation</h3>
-<p>The provider should be qualified and regulated. ICAEW, ACCA, CIMA, or AAT are the main UK accountancy bodies. As ICAEW qualified accountants, we recommend checking that the firm holds professional indemnity insurance and is registered with a recognised supervisory body. This protects you if something goes wrong.</p>
+<p>The provider should be qualified and regulated. ICAEW, ACCA, CIMA, or AAT are the main UK accountancy bodies. We recommend checking that the firm holds professional indemnity insurance and is registered with a recognised supervisory body. This protects you if something goes wrong.</p>
 
 <p>If the service includes payroll or VAT, the provider should be registered with HMRC as an agent. You can check this on the HMRC agent register.</p>
 

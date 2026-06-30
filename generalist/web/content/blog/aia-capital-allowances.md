@@ -15,9 +15,9 @@ summary: The Annual Investment Allowance (AIA) lets UK businesses claim 100% tax
 schema: ''
 faqs:
 - question: Can I claim AIA on a car?
-  answer: No. Cars are specifically excluded from AIA. New zero-emission cars qualify for a separate 100% first-year allowance. Used electric cars and petrol/diesel cars go into the main pool (18% writing down allowance) or special rate pool (6% WDA) depending on CO2 emissions. Vans and commercial vehicles do qualify for AIA.
+  answer: No. Cars are specifically excluded from AIA. New zero-emission cars qualify for a separate 100% first-year allowance. Used electric cars and petrol/diesel cars go into the main pool (14% writing-down allowance from April 2026; 18% in 2025/26 and earlier) or special-rate pool (6% WDA) depending on CO2 emissions. Vans and commercial vehicles do qualify for AIA.
 - question: What happens if I spend more than £1m in one year?
-  answer: If you are a limited company, you claim AIA on the first £1m and Full Expensing on the balance (for main-rate assets). If you are a sole trader or partnership, you claim AIA on the first £1m and the excess goes into the main pool at 18% writing down allowance. Plan your purchases across accounting periods if you can.
+  answer: If you are a limited company, you claim AIA on the first £1m and Full Expensing on the balance (for main-rate assets). If you are a sole trader or partnership, you claim AIA on the first £1m and the excess goes into the main pool at 14% writing-down allowance from April 2026 (18% in 2025/26 and earlier). Plan your purchases across accounting periods if you can.
 - question: Does AIA apply to second-hand assets?
   answer: Yes. Second-hand plant and machinery qualifies for AIA at the same 100% rate, provided you bought it at arm's length from an unconnected seller. The only restriction applies if you buy from a connected person (a relative or a company you control). In that case, HMRC may restrict the claim.
 - question: Can I claim AIA if my business makes a loss?
@@ -68,7 +68,7 @@ A few specific examples from real client situations:
 Some assets are specifically excluded from AIA:
 
 <ul>
-<li>Cars (passenger vehicles). These go through the main pool or special rate pool at 18% or 6% writing down allowances.</li>
+<li>Cars (passenger vehicles). These go through the main pool (14% writing-down allowance from April 2026; 18% in 2025/26 and earlier) or special-rate pool (6% WDA).</li>
 <li>Assets you already owned before the business started (no double-dipping).</li>
 <li>Buildings and structures (the fabric of the building itself).</li>
 <li>Land and buildings used partly for non-business purposes.</li>
@@ -114,9 +114,9 @@ If you buy an asset in March 2025 but do not start using it until April 2025, th
 
 Cars are excluded from AIA. They have their own capital allowance treatment.
 
-New zero-emission cars (electric) qualify for 100% first-year allowances. That is effectively the same as AIA but specific to electric cars. Used electric cars go into the main pool at 18% writing down allowance.
+New zero-emission cars (electric) qualify for 100% first-year allowances. That is effectively the same as AIA but specific to electric cars. Used electric cars go into the main pool at 14% writing-down allowance from April 2026 (18% in 2025/26 and earlier).
 
-Petrol and diesel cars go into the main pool (18% WDA) or special rate pool (6% WDA) depending on CO2 emissions. Cars with CO2 emissions over 50g/km go into the main pool. Cars over 110g/km (pre-2021 rules) go into special rate pool. The rules changed in April 2021. Your accountant will calculate the correct pool.
+Petrol and diesel cars go into the main pool (14% WDA from April 2026; 18% in 2025/26 and earlier) or special-rate pool (6% WDA) depending on CO2 emissions. Cars with CO2 emissions over 50g/km go into the main pool. Cars over 110g/km (pre-2021 rules) go into special rate pool. The rules changed in April 2021. Your accountant will calculate the correct pool.
 
 If you buy a van, that qualifies for AIA. Vans are plant and machinery. A Ford Transit Custom at £35,000? Full AIA claim.
 
@@ -158,13 +158,13 @@ A few errors we see regularly:
 
 In most cases, claiming AIA is the right move. 100% relief in year one is better than spreading relief over several years. Cash flow benefits are immediate.
 
-But there are edge cases where you might choose not to claim. If you are making a loss and cannot use the relief immediately, you might prefer to defer the claim to a later year when you have profits to offset. You can disclaim AIA and let the asset go into the main pool at 18% WDA instead.
+But there are edge cases where you might choose not to claim. If you are making a loss and cannot use the relief immediately, you might prefer to defer the claim to a later year when you have profits to offset. You can disclaim AIA and let the asset go into the main pool at 14% WDA from April 2026 (18% in 2025/26 and earlier) instead.
 
 This is a planning decision. Talk to your accountant about the timing.
 
 <h2>How Holloway Davies Can Help</h2>
 
-We are ICAEW qualified accountants working with UK businesses across every sector. If you are buying plant and machinery and want to maximise your tax relief, we can help you structure the claim correctly.
+We are specialist accountants working with UK businesses across every sector. If you are buying plant and machinery and want to maximise your tax relief, we can help you structure the claim correctly.
 
 We handle capital allowance computations for limited companies, sole traders, and partnerships. We also advise on the interaction between AIA, Full Expensing, and other capital allowance regimes.
 

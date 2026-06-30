@@ -98,7 +98,7 @@ faqs:
 
 <p>You do not need a timesheet app. A weekly note saying "Week 15: 30 hours on the rendering engine, still failing at 50ms" is enough. HMRC wants to see that the work was substantial and focused. A solo developer claiming 200 hours of R&D across a year is credible. Claiming 1,500 hours without any time records is harder to defend.</p>
 
-<p>Our ICAEW qualified team at Holloway Davies recommends you estimate conservatively and document honestly. Overclaiming is the fastest way to trigger an HMRC enquiry.</p>
+<p>Our team at Holloway Davies recommends you estimate conservatively and document honestly. Overclaiming is the fastest way to trigger an HMRC enquiry.</p>
 
 <h2>What Does Not Qualify for a Solo Software Developer</h2>
 
@@ -121,15 +121,15 @@ faqs:
 
 <p>If your software company is profitable, you claim the <strong>merged R&D tax credit scheme</strong> (for accounting periods starting on or after 1 April 2024). The benefit comes as a reduction in your corporation tax bill.</p>
 
-<p>Example. Your company has £80,000 of taxable profit. You spent £30,000 on qualifying R&D costs (your own salary, software licenses, cloud computing costs for experimentation). Under the merged scheme, you can surrender that £30,000 at the applicable rate (the merged rate is around 15% for most companies, but check the exact percentage for your period). You get a cash credit or corporation tax reduction of approximately £4,500.</p>
-
-<p>The exact calculation depends on whether you are R&D intensive (more than 30% of your total spend on R&D). If you are, the <strong>Enhanced R&D Intensive Scheme (ERIS)</strong> gives a higher payable credit. For a solo developer working on a single product, the intensive threshold is often met because your R&D spend is high relative to overheads.</p>
+<p>Example. Your company has £80,000 of taxable profit. You spent £30,000 on qualifying R&D costs (your own salary, software licenses, cloud computing costs for experimentation). Under the merged scheme, you receive a 20% expenditure credit on that £30,000, giving a gross credit of £6,000. Because the credit is treated as taxable income, corporation tax is due on it: at the 25% main rate that reduces the net benefit to approximately £4,500 (at the 19% small-profits rate the net benefit is closer to £5,040). Profitable companies use the merged RDEC rate of 20% in all cases.</p>
 
 <h3>Loss-Making Solo Company</h3>
 
 <p>If your software company is loss-making (common for early-stage solo developers), you can surrender the loss attributable to R&D for a cash payment. This is the most valuable option for pre-revenue companies.</p>
 
 <p>Example. Your company has no revenue. You spent £40,000 on R&D (your director salary, cloud computing, software tools). Your company makes a loss of £40,000. Under the merged scheme, you can surrender the R&D element and receive a cash credit of approximately £6,000. That cash can fund your next round of development.</p>
+
+<p>If your R&D spend exceeds 30% of your total costs (the ERIS intensity threshold), you may qualify for the <strong>Enhanced R&D Intensive Scheme (ERIS)</strong> instead of standard merged RDEC. ERIS is available only to loss-making R&D-intensive SMEs and provides a higher payable credit rate. Your accountant will determine which scheme applies to your situation.</p>
 
 <p>These figures are indicative. The exact rates change each year. Your accountant will calculate the precise benefit using the <a href="/calculators">R&D tax credits calculator</a> on our site.</p>
 

@@ -135,7 +135,7 @@ faqs:
 
 <p>If your home office and co-working setup is straightforward and you use the simplified method, you can handle it yourself through your self assessment return (SA100 with SA103 self-employment pages). But if you have high household costs, a complex apportionment, or a co-working membership with personal benefits, it is worth getting advice.</p>
 
-<p>Our ICAEW qualified team at Holloway Davies deals with these scenarios regularly. If your turnover is growing or your business structure is changing, <a href="/contact">get in touch</a> to discuss your specific situation.</p>
+<p>Our experienced team at Holloway Davies deals with these scenarios regularly. If your turnover is growing or your business structure is changing, <a href="/contact">get in touch</a> to discuss your specific situation.</p>
 
 <p>For more guidance on self assessment and expenses, see our <a href="/blog/sole-trader-and-self-employment">sole trader and self employment blog</a>. If you are considering incorporating, our <a href="/incorporation">incorporation guide</a> covers the tax implications of moving from sole trader to limited company.</p>
 

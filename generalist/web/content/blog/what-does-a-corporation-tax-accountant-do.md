@@ -59,7 +59,7 @@ faqs:
 
 <p>Most directors know they can claim capital allowances on plant and machinery. But the specifics matter. The Annual Investment Allowance (AIA) gives 100% relief on the first £1,000,000 of qualifying expenditure for most assets. Full Expensing gives a similar result for limited companies on main-rate assets. But not everything qualifies.</p>
 
-<p>A corporation tax accountant will review your asset purchases and classify them correctly. Cars have their own rules. Low-emission cars (under 50g/km CO2) qualify for 100% first year allowances. Higher emission cars go into the main or special rate pools at lower rates. Structures and buildings qualify for 3% straight line relief under the Structures and Buildings Allowance (SBA).</p>
+<p>A corporation tax accountant will review your asset purchases and classify them correctly. Cars have their own rules. Zero-emission cars (0g/km CO2) qualify for the 100% first year allowance. Cars emitting 1-50g/km enter the main rate pool and attract the standard writing-down allowance; cars above 50g/km go into the special rate pool at the lower rate. Structures and buildings qualify for 3% straight line relief under the Structures and Buildings Allowance (SBA).</p>
 
 <p>They will also spot reliefs you might not know about. If you spent money on patent rights, know-how, or certain types of software, there may be additional allowances. If you refurbished a commercial property, parts of the spend may qualify as plant and machinery rather than just building works. This distinction can be worth tens of thousands of pounds in tax saved.</p>
 
@@ -67,17 +67,17 @@ faqs:
 
 <p>The director's loan account (DLA) is a frequent source of corporation tax issues. If you take more money from the company than you have put in or earned through salary and dividends, the DLA goes overdrawn. HMRC treats this as a loan to a participator.</p>
 
-<p>The company must pay S455 tax at 33.75% on the outstanding loan amount if it is not repaid within 9 months and 1 day of the year-end. This tax is repayable when the loan is eventually repaid or written off, but it ties up cash in the meantime.</p>
+<p>The company must pay S455 tax at 33.75% (for loans made in 2025/26) or 35.75% (for loans made on or after 6 April 2026) on the outstanding loan amount if it is not repaid within 9 months and 1 day of the year-end. This tax is repayable when the loan is eventually repaid or written off, but it ties up cash in the meantime.</p>
 
 <p>Your corporation tax accountant will flag this situation well before the year-end if they are on top of your bookkeeping. They can advise on whether to declare a dividend to clear the overdrawn balance, or restructure the repayment timeline. They will also include the correct supplementary pages on the CT600 if a loan is outstanding.</p>
 
-<p>If you have a loan of £20,000 that was overdrawn at year-end and not repaid within 9 months, the S455 tax charge is £6,750. That is cash the company could have kept if the situation had been managed differently. A good accountant prevents this.</p>
+<p>If you have a loan of £20,000 made in 2026/27 that was overdrawn at year-end and not repaid within 9 months, the S455 tax charge is £7,150 (£20,000 at 35.75%). A loan taken in 2025/26 would carry a charge of £6,750 (33.75%). That is cash the company could have kept if the situation had been managed differently. A good accountant prevents this.</p>
 
 <h2>Handling R&D Tax Credits</h2>
 
 <p>If your company does any technical work to resolve uncertainty in science or technology, you may qualify for R&D tax credits. This is not just for labs and pharmaceutical companies. Software developers, engineers, manufacturers, and even some service companies can qualify if they are pushing beyond existing knowledge.</p>
 
-<p>From April 2024, the merged R&D scheme applies to all companies. The RDEC rate is 20% of qualifying expenditure for large companies, and the enhanced R&D Intensive Scheme (ERIS) applies to loss-making SMEs with more than 30% of their total spend on R&D.</p>
+<p>From April 2024, the merged R&D scheme applies to all companies. Under the merged scheme, all companies can claim a 20% expenditure credit (RDEC). For loss-making SMEs where R&D spend exceeds 30% of total costs, the Enhanced R&D Intensive Scheme (ERIS) offers a more generous alternative (86% additional deduction or a 14.5% payable credit).</p>
 
 <p>A corporation tax accountant who specialises in R&D claims will review your project descriptions, identify qualifying costs (staff, subcontractors, consumables, software licences), and prepare the Additional Information Form (AIF) that must now accompany every claim. They will also advise on whether to use the merged scheme or ERIS depending on your company's profitability.</p>
 
@@ -113,7 +113,7 @@ faqs:
 
 <p>Ask them how many corporation tax returns they file each year. Ask if they have experience with your industry. If you are a contractor working through your own limited company, find an accountant who understands IR35 and the specific tax planning that applies to personal service companies. If you are a property developer, find someone who knows the trading vs investment distinction and the CGT implications of disposals.</p>
 
-<p>At <a href="/about">Holloway Davies</a>, our ICAEW qualified team prepares corporation tax returns for limited companies across every sector. We handle the CT600, marginal relief calculations, capital allowance claims, and R&D credits as part of a comprehensive corporation tax service. We also advise on director's loan accounts, associated company rules, and payment timing.</p>
+<p>At <a href="/about">Holloway Davies</a>, our specialist team prepares corporation tax returns for limited companies across every sector. We handle the CT600, marginal relief calculations, capital allowance claims, and R&D credits as part of a comprehensive corporation tax service. We also advise on director's loan accounts, associated company rules, and payment timing.</p>
 
 <p>If your company has a year-end approaching or you want a second opinion on your current corporation tax position, <a href="/contact">get in touch</a>. We will review your situation and tell you exactly what we can do to reduce your tax bill and keep you compliant.</p>
 

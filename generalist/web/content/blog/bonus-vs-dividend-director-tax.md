@@ -24,7 +24,7 @@ faqs:
   - question: "Can I take both a bonus and a dividend in the same year?"
     answer: "Yes, you can. Many directors take a small salary (typically £12,570) to use their personal allowance, then take some profit as a bonus and the rest as a dividend. The optimal mix depends on your specific tax position. A common strategy is to take enough bonus to use the basic rate band, then take the rest as dividends. This keeps the dividend tax at 8.75% rather than 33.75%."
   - question: "Does taking a bonus affect my state pension?"
-    answer: "Yes, it can. Bonus payments count as earnings for National Insurance purposes. If your total earnings for the year are above the lower earnings limit (£6,780 for 2025/26), you build up qualifying years for the state pension. Taking a bonus can help you reach the 35 qualifying years needed for the full state pension. Dividends do not count as earnings for state pension purposes."
+    answer: "Yes, it can. Bonus payments count as earnings for National Insurance purposes. If your total earnings for the year are above the lower earnings limit (£6,500 for 2025/26), you build up qualifying years for the state pension. Taking a bonus can help you reach the 35 qualifying years needed for the full state pension. Dividends do not count as earnings for state pension purposes."
   - question: "What happens if my company cannot afford the employer NI on a bonus?"
     answer: "If your company cannot afford the employer NI, you cannot take the bonus. The employer NI is due on the same date as the PAYE payment (22nd of the following month for monthly payers, or 22nd of the next quarter for quarterly payers). If cash flow is tight, a dividend might be more manageable because you only pay it after corporation tax is settled, which gives you more time. Alternatively, you could accrue the bonus in the accounts and pay it later, but you must pay it within 9 months of the year-end to get the corporation tax deduction in the right year."
 ---
@@ -37,7 +37,7 @@ faqs:
 
 <h2>How a Bonus Works for a Director</h2>
 
-<p>A bonus is simply a salary payment that is not part of your regular monthly payroll. It is treated exactly the same as salary for tax purposes. The company gets a corporation tax deduction for the full amount. You pay income tax and employee National Insurance on the bonus. The company pays employer National Insurance at 13.8% on the amount above the secondary threshold (£9,100 for 2025/26).</p>
+<p>A bonus is simply a salary payment that is not part of your regular monthly payroll. It is treated exactly the same as salary for tax purposes. The company gets a corporation tax deduction for the full amount. You pay income tax and employee National Insurance on the bonus. The company pays employer National Insurance at 15% on the amount above the secondary threshold (£5,000 for 2025/26).</p>
 
 <p>Here is the key difference from a regular salary. If your regular salary is already above the secondary threshold, every pound of bonus triggers employer NI. If your regular salary is below that threshold, you have some headroom before employer NI kicks in. Most directors who follow the standard salary approach take a salary of £12,570 (the personal allowance amount), which is above the secondary threshold, so employer NI applies to the full bonus.</p>
 
@@ -55,11 +55,11 @@ faqs:
 
 <h3>Scenario 1: Take the Full £100,000 as a Bonus</h3>
 
-<p>The company pays you a bonus of £100,000. The company must also pay employer NI at 13.8% on the bonus. That adds £13,800 in employer NI. The total cost to the company is £113,800. But the company gets a corporation tax deduction for both the bonus and the employer NI. At 25% corporation tax (assuming profits above £250,000 or marginal relief), the tax saving is £28,450 (25% of £113,800). The net cost to the company after corporation tax relief is £85,350.</p>
+<p>The company pays you a bonus of £100,000. The company must also pay employer NI at 15% on the bonus. That adds £15,000 in employer NI. The total cost to the company is £115,000. But the company gets a corporation tax deduction for both the bonus and the employer NI. At 25% corporation tax (assuming profits above £250,000 or marginal relief), the tax saving is £28,750 (25% of £115,000). The net cost to the company after corporation tax relief is £86,250.</p>
 
 <p>On the personal side, you receive £100,000. You pay income tax at 40% on the amount above £50,270 (the higher rate threshold). You also pay employee NI at 2% on earnings above £50,270. Your total personal tax and NI is roughly £33,000. You take home approximately £67,000.</p>
 
-<p>Total tax paid: £13,800 (employer NI) plus £33,000 (personal tax and NI) minus £28,450 (corporation tax saving) equals £18,350 net tax cost. Your take-home pay is £67,000.</p>
+<p>Total tax paid: £15,000 (employer NI) plus £33,000 (personal tax and NI) minus £28,750 (corporation tax saving) equals £19,250 net tax cost. Your take-home pay is £67,000.</p>
 
 <h3>Scenario 2: Take the Full £100,000 as a Dividend</h3>
 
@@ -69,7 +69,7 @@ faqs:
 
 <h3>Which Is Better?</h3>
 
-<p>In this example, the bonus route leaves you with £67,000 take-home pay versus £49,856.25 for the dividend route. That is a difference of £17,143.75 in your favour by taking a bonus. The bonus route also results in less total tax paid (£18,350 vs £50,143.75).</p>
+<p>In this example, the bonus route leaves you with £67,000 take-home pay versus £49,856.25 for the dividend route. That is a difference of £17,143.75 in your favour by taking a bonus. The bonus route also results in less total tax paid (£19,250 vs £50,143.75).</p>
 
 <p>This is a significant difference. But it only applies if your company pays corporation tax at 25%. If your company pays at the small profits rate of 19% (profits up to £50,000), the numbers shift. Let us check that scenario.</p>
 
@@ -79,7 +79,7 @@ faqs:
 
 <h3>Bonus Route</h3>
 
-<p>Company pays you £50,000 bonus. Employer NI at 13.8% is £6,900. Total cost £56,900. Corporation tax saving at 19% is £10,811. Net cost to company £46,089. You pay 20% income tax and 8% employee NI on the bonus. Personal tax and NI is approximately £12,500. You take home £37,500.</p>
+<p>Company pays you £50,000 bonus. Employer NI at 15% is £7,500. Total cost £57,500. Corporation tax saving at 19% is £10,925. Net cost to company £46,575. You pay 20% income tax and 8% employee NI on the bonus. Personal tax and NI is approximately £12,500. You take home £37,500.</p>
 
 <h3>Dividend Route</h3>
 
@@ -99,7 +99,7 @@ faqs:
 
 <ul>
 <li><strong>You are a basic rate taxpayer.</strong> The margin is small, and dividends are simpler to process. No payroll entries, no RTI submissions, no employer NI calculations.</li>
-<li><strong>Your company cannot claim Employment Allowance.</strong> If you are a single-director company with no other employees, you cannot claim the Employment Allowance. The employer NI on a bonus is a real cost. In the basic rate example above, the employer NI of £6,900 nearly wipes out the benefit of the corporation tax deduction.</li>
+<li><strong>Your company cannot claim Employment Allowance.</strong> If you are a single-director company with no other employees, you cannot claim the Employment Allowance. The employer NI on a bonus is a real cost. In the basic rate example above, the employer NI of £7,500 nearly wipes out the benefit of the corporation tax deduction.</li>
 <li><strong>You want to preserve cash in the company.</strong> A bonus is an immediate cash cost. A dividend only goes out after corporation tax is paid, which gives you more time to manage cash flow.</li>
 <li><strong>You are close to the higher rate threshold.</strong> Taking a large bonus could push you into the higher rate bracket for the year, triggering 40% tax and 2% employee NI on the excess. A dividend taxed at 33.75% might be cheaper at the margin, depending on the corporation tax rate.</li>
 <li><strong>You have other income that already uses your personal allowance.</strong> If you have a separate salary or rental income, the bonus is taxed at your marginal rate from pound one. The dividend is taxed at the dividend rate from pound one (above the £500 allowance).</li>
@@ -127,7 +127,7 @@ faqs:
 
 <p>If you are outside IR35, the standard comparison above applies. If you are inside IR35, dividends remain the primary extraction method because the deemed salary calculation already accounts for the tax that would have been paid if you were an employee. Taking additional bonuses inside IR35 can create double taxation.</p>
 
-<p>Check your IR35 status carefully. If your client is a medium or large company, they should have issued a Status Determination Statement (SDS). If they have not, request one in writing. Small clients (fewer than 50 employees, turnover under £10.2M, or balance sheet under £5.1M) leave the determination with you.</p>
+<p>Check your IR35 status carefully. If your client is a medium or large company, they should have issued a Status Determination Statement (SDS). If they have not, request one in writing. Small clients (fewer than 50 employees, turnover under £15m, or balance sheet under £7.5m, for periods beginning on or after 6 April 2025) leave the determination with you.</p>
 
 <h2>Practical Steps for Deciding</h2>
 
@@ -142,7 +142,7 @@ faqs:
 <li><strong>Factor in pension contributions.</strong> If you do not need the cash now, a company pension contribution is almost certainly the best option.</li>
 </ol>
 
-<p>As ICAEW qualified accountants, we run these comparisons for clients regularly. The right answer depends on your specific numbers, your company's profit level, and your personal tax position. There is no one-size-fits-all answer.</p>
+<p>We run these comparisons for clients regularly. The right answer depends on your specific numbers, your company's profit level, and your personal tax position. There is no one-size-fits-all answer.</p>
 
 <p>If your company's profits are above £50,000 and you are a higher rate taxpayer, the bonus route is worth serious consideration. The tax saving can be substantial. If you are a basic rate taxpayer with profits under £50,000, the dividend route may still be simpler and marginally better.</p>
 

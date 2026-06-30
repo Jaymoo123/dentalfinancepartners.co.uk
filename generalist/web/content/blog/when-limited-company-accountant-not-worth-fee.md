@@ -39,9 +39,9 @@ faqs:
 
 <p>A dormant company is one with no significant accounting transactions in the year. No income, no expenses, no dividends, no director loans. Just the company sitting there, registered at Companies House, doing nothing.</p>
 
-<p>If that is your situation, you can file dormant company accounts yourself for free. Companies House provides a simple online filing service. You submit a confirmation statement every 12 months (£13 filing fee, or £34 if you file by post). No corporation tax return is needed if the company has notified HMRC it is dormant.</p>
+<p>If that is your situation, you can file dormant company accounts yourself for free. Companies House provides a simple online filing service. You submit a confirmation statement every 12 months (£34 filing fee online, or £62 if you file by paper). No corporation tax return is needed if the company has notified HMRC it is dormant.</p>
 
-<p>The process takes about 20 minutes per year. The cost is £13. Compare that to an accountant's annual fee, which for a dormant company typically runs between £150 and £400 plus VAT.</p>
+<p>The process takes about 20 minutes per year. The cost is £34. Compare that to an accountant's annual fee, which for a dormant company typically runs between £150 and £400 plus VAT.</p>
 
 <p><strong>The maths:</strong> You save £150 to £400 per year. The risk is near zero because there are no transactions to get wrong.</p>
 
@@ -62,7 +62,7 @@ faqs:
 
 <p>If you use accounting software like FreeAgent or Xero, these tasks are largely automated. FreeAgent, for example, generates your annual accounts and CT600 with a few clicks. It handles RTI payroll submissions automatically. You file the CT600 through the software's HMRC integration.</p>
 
-<p>The software costs roughly £20 to £40 per month. Your total annual cost is £240 to £480 plus the £13 confirmation statement fee. An accountant doing the same work would charge £600 to £1,200 per year.</p>
+<p>The software costs roughly £20 to £40 per month. Your total annual cost is £240 to £480 plus the £34 confirmation statement fee. An accountant doing the same work would charge £600 to £1,200 per year.</p>
 
 <p><strong>The maths:</strong> You save £360 to £720 per year. The risk is low because the transactions are simple and the software flags obvious errors.</p>
 
@@ -108,7 +108,7 @@ faqs:
 
 <p>However, if both entities are genuinely simple and your total income across both is below the higher rate threshold, the DIY approach still works. You file separate accounts for each entity, separate self assessment pages (SA103 for the sole trade, employment pages for your director salary), and ensure you understand the associated company rules for corporation tax marginal relief.</p>
 
-<p><strong>The maths:</strong> If your two entities each cost £600 to £1,200 in accountant fees, doing both yourself saves £1,200 to £2,400 per year. The risk is moderate because you need to understand associated company rules. But if your profits in each company are below £50,000, the marginal relief calculation is straightforward.</p>
+<p><strong>The maths:</strong> If your two entities each cost £600 to £1,200 in accountant fees, doing both yourself saves £1,200 to £2,400 per year. The risk is moderate because you need to understand associated company rules. With two associated companies HMRC halves both limits: the 19% flat rate applies only to profits below £25,000 per company, and profits between £25,000 and £125,000 per company require a marginal relief calculation. At those levels the calculation is manageable, but you do need to apply it correctly.</p>
 
 <p>Where this becomes a bad idea is if one entity has employees, or VAT, or significant assets. Then the interaction effects multiply and an accountant's expertise is hard to replace.</p>
 
@@ -123,7 +123,7 @@ faqs:
 <li><strong>You trigger a compliance check.</strong> HMRC opens about 300,000 compliance checks per year on small companies. If your return is wrong, even innocently, the cost of dealing with the enquiry can dwarf any accounting fee saving.</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we see the aftermath of DIY mistakes regularly. A client saves £800 on accounting fees one year, then pays £3,000 to fix an incorrect CT600 the next. That is not a saving.</p>
+<p>We see the aftermath of DIY mistakes regularly. A client saves £800 on accounting fees one year, then pays £3,000 to fix an incorrect CT600 the next. That is not a saving.</p>
 
 <h2>How to Decide Whether You Need an Accountant</h2>
 

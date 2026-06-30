@@ -10,7 +10,7 @@ import { ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Fundamentals | Pillar Guides for UK Business Owners",
   description:
-    "Definitive pillar guides on UK business tax, finance, incorporation, IR35, MTD, R&D, exit planning and more. Written by ICAEW qualified accountants for limited companies, contractors, sole traders and partnerships.",
+    "Definitive pillar guides on UK business tax, finance, incorporation, IR35, MTD, R&D, exit planning and more. Written by our specialist accountants for limited companies, contractors, sole traders and partnerships.",
   alternates: { canonical: `${siteConfig.url}/fundamentals` },
   openGraph: {
     title: "Fundamentals | Pillar Guides for UK Business Owners",

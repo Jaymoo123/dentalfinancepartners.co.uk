@@ -133,7 +133,7 @@ faqs:
 </ul>
 
 <h2>How Holloway Davies Can Help</h2>
-<p>As <a href="/about">ICAEW qualified accountants</a>, we deal with these structures regularly. The key is getting the shareholding right from the start and documenting everything properly. We can draft the board minutes, update the company's register, and advise on whether your specific circumstances trigger the settlement rules.</p>
+<p>As <a href="/about">specialist accountants</a>, we deal with these structures regularly. The key is getting the shareholding right from the start and documenting everything properly. We can draft the board minutes, update the company's register, and advise on whether your specific circumstances trigger the settlement rules.</p>
 
 <p>If you are considering paying a dividend to a spouse who is not a director or employee, start by reviewing your share structure. If your spouse does not hold shares, you need to create or transfer them before any dividend can be paid. Do not declare a dividend to a non-shareholder. That is an illegal distribution.</p>
 

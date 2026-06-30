@@ -33,7 +33,7 @@ faqs:
 
 <p>A pre-revenue startup with investor funding needs an <strong>accountant for startup</strong> that understands three things: how to structure shares for investors and employees, how to manage corporation tax when there are no profits to tax, and how to produce the financial reports your investors expect. This is not the same as a standard bookkeeping and tax return service.</p>
 
-<p>As ICAEW qualified accountants working with UK startups across London, Manchester, and Bristol, we see founders who realise too late that their accountant does not understand investor reporting or EMI schemes. This guide covers what you need before you sign an engagement letter.</p>
+<p>Working with UK startups across London, Manchester, and Bristol, we see founders who realise too late that their accountant does not understand investor reporting or EMI schemes. This guide covers what you need before you sign an engagement letter.</p>
 
 <h2>Why Pre-Revenue Accounting Is Different From Profit-Making Accounting</h2>
 
@@ -125,7 +125,7 @@ faqs:
 
 <p>Key points for funded startups:</p>
 <ul>
-<li><strong>Director salaries</strong>: Most founders take a minimal salary (around £12,570 per year) to preserve personal allowance and avoid employer NI where possible. If you have Employment Allowance, you can pay up to the secondary threshold (£9,100) without employer NI, then the full £12,570 with NI covered by the allowance.</li>
+<li><strong>Director salaries</strong>: Most founders take a minimal salary to preserve personal allowance and minimise employer NI. The employer NIC secondary threshold fell to £5,000 from 6 April 2025 (it was £9,100 up to 2024/25), with employer NIC now charged at 15% on any salary above that. Employment Allowance (£10,500 from 2025/26) cannot be claimed by a single-director company with no other employees, so most sole-director startups set director pay at or near £5,000 to eliminate employer NIC, taking the balance as dividends.</li>
 <li><strong>Employee salaries</strong>: If you have hired staff, you must operate RTI (Real Time Information) payroll. Your accountant should set this up in software like BrightPay, Xero Payroll, or FreeAgent.</li>
 <li><strong>Share options and PAYE</strong>: When employees exercise EMI options, there may be a PAYE liability if the shares have increased in value. Your accountant needs to handle the reporting on the P11D or through payroll.</li>
 </ul>

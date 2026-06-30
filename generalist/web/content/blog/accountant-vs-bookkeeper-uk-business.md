@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Accountant vs Bookkeeper: Which Does Your UK Business Need?"
-metaDescription: "Accountant vs bookkeeper: the real difference for UK businesses. When to hire each, what they cost, and how to decide. Practical guidance from ICAEW"
+metaDescription: "Accountant vs bookkeeper: the real difference for UK businesses. When to hire each, what they cost, and how to decide. Practical guidance for UK businesses."
 altText: "UK accountant and bookkeeper reviewing financial documents in a modern Manchester office"
 image: "/blog/accountant-vs-bookkeeper-uk-business.jpg"
 imageCredit:
@@ -119,7 +119,7 @@ faqs:
 
 <p>Hire an accountant first when you are considering R&D tax credits. The rules changed significantly from April 2024. The merged R&D scheme and the new ERIS (Enhanced R&D Intensive Scheme) for loss-making SMEs require specialist knowledge. A bookkeeper cannot help you here. Our <a href="/r-and-d-credits">R&D tax credits page</a> explains the current rules.</p>
 
-<p>Hire an accountant first when you are selling your business. Business Asset Disposal Relief (BADR) gives you a 14% CGT rate on the first £1 million of gains (rising to 18% from April 2026). But the shares must have been held for two years, and the company must meet the trading criteria throughout. You need an accountant to structure the sale and plan the timing. See our <a href="/blog/exit-and-capital-gains">exit and capital gains articles</a> for more.</p>
+<p>Hire an accountant first when you are selling your business. Business Asset Disposal Relief (BADR) gives you an 18% CGT rate on the first £1 million of gains (it was 14% for 2025/26 and 10% before that). But the shares must have been held for two years, and the company must meet the trading criteria throughout. You need an accountant to structure the sale and plan the timing. See our <a href="/blog/exit-and-capital-gains">exit and capital gains articles</a> for more.</p>
 
 <h2>A Practical Example</h2>
 
@@ -127,7 +127,7 @@ faqs:
 
 <p>They hired a bookkeeper at £350 per month to reconcile the bank, run payroll, prepare VAT returns, and chase invoices. The bookkeeper keeps the data clean and sends monthly management accounts.</p>
 
-<p>They also use an ICAEW qualified accountant (that is us) for £250 per month. The accountant reviews the bookkeeper's work quarterly, advises on the salary and dividend split to stay within the basic rate band, calculates the marginal relief on corporation tax (profits are £92,800 after salaries, so marginal relief applies), handles the year-end accounts and CT600, and advises on whether to buy equipment through the company or personally.</p>
+<p>They also use a specialist accountant (that is us) for £250 per month. The accountant reviews the bookkeeper's work quarterly, advises on the salary and dividend split to stay within the basic rate band, calculates the marginal relief on corporation tax (profits are £92,800 after salaries, so marginal relief applies), handles the year-end accounts and CT600, and advises on whether to buy equipment through the company or personally.</p>
 
 <p>Total cost: £600 per month. Total tax saved versus DIY: well over £5,000 per year in corporation tax and dividend tax alone. The accountant paid for themselves three times over.</p>
 
@@ -139,7 +139,7 @@ faqs:
 
 <p>Check they are registered with HMRC as an agent. Any accountant filing your returns needs an HMRC agent code. You can verify this yourself.</p>
 
-<p>At Holloway Davies, we are ICAEW qualified and work with limited companies, contractors, sole traders, and partnerships across every sector. We include Xero or FreeAgent, bank reconciliation, VAT returns, and year-end compliance in our monthly packages. If you want a single point of contact who handles both the bookkeeping and the accounting, that is how we structure it. If you already have a bookkeeper and just need the compliance and advisory work, we can work alongside them.</p>
+<p>At Holloway Davies, we work with limited companies, contractors, sole traders, and partnerships across every sector. We include Xero or FreeAgent, bank reconciliation, VAT returns, and year-end compliance in our monthly packages. If you want a single point of contact who handles both the bookkeeping and the accounting, that is how we structure it. If you already have a bookkeeper and just need the compliance and advisory work, we can work alongside them.</p>
 
 <h2>Common Questions</h2>
 

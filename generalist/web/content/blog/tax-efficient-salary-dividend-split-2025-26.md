@@ -20,7 +20,7 @@ summary: "For most directors of a profitable limited company in 2025/26, the mos
 schema: ""
 faqs:
   - question: "Is it better to take a salary of £9,100 or £12,570 in 2025/26?"
-    answer: "For most directors, £12,570 is better because it uses the full personal allowance, builds a state pension year, and the corporation tax saving offsets the employer NI cost."
+    answer: "For most directors, £12,570 is better because it uses the full personal allowance, builds a state pension year, and the corporation tax saving outweighs the employer NI cost. Note that from April 2025, the secondary threshold dropped to £5,000, so a salary of £9,100 also incurs employer NI of £615 (15% on £4,100 above the threshold) and no longer avoids employer NI entirely."
 ---
 
 <p>If you are a director of a UK limited company, the question of how to pay yourself comes up every year. And the answer changes when tax rates move.</p>
@@ -36,7 +36,7 @@ faqs:
 <p>Here is the standard structure that works for most profitable limited companies with one or two directors.</p>
 
 <h3>Salary: £12,570</h3>
-<p>Set your salary at the personal allowance threshold of £12,570. This is also the primary threshold for National Insurance, meaning no employee NI is due on this salary. The secondary threshold for employer NI is £9,100, so a salary of £12,570 would normally trigger employer NI of 13.8% on the excess of £3,470. That is £478.86 in employer NI.</p>
+<p>Set your salary at the personal allowance threshold of £12,570. This is also the primary threshold for National Insurance, meaning no employee NI is due on this salary. The secondary threshold for employer NI is £5,000 (from 6 April 2025), so a salary of £12,570 would normally trigger employer NI of 15% on the excess of £7,570. That is £1,135.50 in employer NI.</p>
 
 <p>However, if your company is eligible for the Employment Allowance (most companies with a single director are not, but companies with multiple employees or multiple directors often are), that employer NI is covered. The Employment Allowance for 2025/26 is up to £10,500. If your total employer NI across all staff is below that, you pay zero employer NI.</p>
 
@@ -58,19 +58,19 @@ faqs:
 <ul>
 <li>Company profit before pay: £100,000</li>
 <li>Salary deduction: £12,570</li>
-<li>Employer NI (if not covered by Employment Allowance): £478.86</li>
-<li>Corporation tax profit after salary and NI: £86,951.14</li>
-<li>Corporation tax at 19%: £16,520.72</li>
-<li>Profit after tax available for dividends: £70,430.42</li>
+<li>Employer NI (if not covered by Employment Allowance): £1,135.50 (15% x (£12,570 - £5,000))</li>
+<li>Corporation tax profit after salary and NI: £86,294.50</li>
+<li>Corporation tax (marginal relief band; 25% x £86,294.50 less 3/200 x (£250,000 - £86,294.50)): £19,118.04</li>
+<li>Profit after tax available for dividends: £67,176.46</li>
 <li>Dividends paid to director: £37,700</li>
 <li>Dividend tax due: £3,255 (8.75% on £37,200)</li>
 <li>Director net income after all tax: £50,270 - £3,255 = £47,015</li>
-<li>Retained profit in company: £32,730.42</li>
+<li>Retained profit in company: £29,476.46</li>
 </ul>
 
 <p>Your effective tax rate on the £50,270 extracted is about 6.5% (just the dividend tax on the excess over the allowance). That is hard to beat.</p>
 
-<p>Compare that to taking the same £50,270 as salary only. You would pay employee NI at 8% on earnings above £12,570, employer NI at 13.8% on earnings above £9,100, and income tax at 20% on earnings above £12,570. The total tax and NI bill would be around £12,000 to £14,000, depending on the exact mix. The dividend route saves thousands.</p>
+<p>Compare that to taking the same £50,270 as salary only. You would pay employee NI at 8% on earnings above £12,570, employer NI at 15% on earnings above £5,000, and income tax at 20% on earnings above £12,570. The total tax and NI bill would be around £17,000 to £18,000, depending on the exact mix. The dividend route saves thousands.</p>
 
 <h2>When the Standard Split Does Not Work</h2>
 
@@ -83,17 +83,17 @@ faqs:
 <p>If your company makes only £20,000 profit, you cannot pay yourself £12,570 salary and £37,700 dividends. The company needs retained profits to support the dividend. You cannot declare a dividend that would create a negative profit and loss reserve. Doing so is illegal under the Companies Act 2006.</p>
 
 <h3>You Are a Sole Director with No Other Employees</h3>
-<p>If you are the only director and have no other staff, you cannot claim the Employment Allowance. That means the salary of £12,570 triggers employer NI of £478.86. Some directors choose a salary of £9,100 (the secondary threshold) to avoid employer NI entirely, then take the rest as dividends. The tax saving from the lower salary is marginal, but it avoids the employer NI cash outflow.</p>
+<p>If you are the only director and have no other staff, you cannot claim the Employment Allowance. That means the salary of £12,570 triggers employer NI of £1,135.50. Some directors choose a lower salary to reduce employer NI, but from 6 April 2025 the secondary threshold fell to £5,000. A salary of £9,100 still sits above this threshold and triggers employer NI of 15% x (£9,100 - £5,000) = £615. To avoid employer NI entirely, the salary must be £5,000 or less.</p>
 
 <p>For 2025/26, the numbers look like this with a £9,100 salary:</p>
 <ul>
-<li>Salary: £9,100 (no employer NI, no employee NI, no income tax)</li>
+<li>Salary: £9,100 (employer NI: £615; no employee NI; no income tax)</li>
 <li>Dividends: up to £41,170 (basic rate band of £50,270 minus £9,100)</li>
 <li>Dividend tax: 8.75% on £40,670 after the £500 allowance = £3,558.63</li>
 <li>Total net income: £50,270 - £3,558.63 = £46,711.37</li>
 </ul>
 
-<p>Compared to the £12,570 salary route, you lose about £303 in net income but save the £478.86 employer NI. The £12,570 route still wins if the Employment Allowance is available. If not, the difference is small enough that either approach is reasonable.</p>
+<p>Compared to the £12,570 salary route, the director's personal net income is about £303 lower. The £9,100 salary incurs £615 employer NI vs £1,135.50 at £12,570, saving the company £520.50. The £12,570 route still wins if the Employment Allowance is available. If not, the two approaches are closer than they appear once the employer NI saving is factored in.</p>
 
 <h3>You Want to Extract More Than £50,270</h3>
 <p>Once your total income exceeds £50,270, you enter the higher rate band. Dividend tax jumps from 8.75% to 33.75%. That is a big leap. At that point, you need to decide whether to leave profit in the company (paying 19% or 25% corporation tax) or extract it and pay the higher dividend tax.</p>
@@ -154,7 +154,7 @@ faqs:
 
 <h2>Common Traps and Mistakes</h2>
 
-<p><strong>Paying salary below the secondary threshold without realising.</strong> Some directors set salary at £9,100 to avoid employer NI, then take large dividends. That is fine, but they miss the personal allowance benefit of the extra £3,470 salary. Run the numbers both ways before deciding.</p>
+<p><strong>Paying salary below the secondary threshold without realising.</strong> Some directors set salary at £5,000 (the secondary threshold) to avoid employer NI entirely, then take large dividends. That is fine, but they miss the personal allowance benefit of the extra £7,570 in salary. Run the numbers both ways before deciding.</p>
 
 <p><strong>Ignoring the associated company rules.</strong> If you control multiple companies, the £50,000 small profits rate threshold is divided between them. Two companies you control each get a £25,000 threshold. That pushes more profit into the marginal relief band or the 25% rate. Plan accordingly.</p>
 
@@ -178,10 +178,10 @@ faqs:
 <li>Effective tax rate on extraction: 6.5%</li>
 </ul>
 
-<p>If the Employment Allowance is not available, consider a salary of £9,100 to avoid employer NI, then dividends of £41,170. The net income is slightly lower, but the cash flow saving on employer NI may be worth it for very small companies.</p>
+<p>If the Employment Allowance is not available, bear in mind that a salary of £9,100 still incurs employer NI of £615 (15% on £4,100 above the £5,000 secondary threshold). A salary of £5,000 avoids employer NI entirely, with dividends of up to £45,270. Alternatively, compare the £1,135.50 employer NI at £12,570 against the £615 at £9,100 and decide which suits your company's cash flow.</p>
 
 <p>If you need to extract more than £50,270, use pension contributions first, then accept the higher dividend tax on the excess, or retain profit in the company for future extraction at capital gains rates.</p>
 
-<p>Our ICAEW qualified team at Holloway Davies runs these calculations for clients every day. If your situation is more complex (associated companies, foreign income, multiple directors, or a mix of employment and self-employment), <a href="/contact">get in touch</a> for a tailored review.</p>
+<p>Our specialist team at Holloway Davies runs these calculations for clients every day. If your situation is more complex (associated companies, foreign income, multiple directors, or a mix of employment and self-employment), <a href="/contact">get in touch</a> for a tailored review.</p>
 
 <p>For more on the fundamentals of director pay, see our <a href="/fundamentals">guide to limited company fundamentals</a>. And if you are considering incorporating, read our <a href="/incorporation">incorporation page</a> for the tax implications.</p>

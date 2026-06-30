@@ -20,7 +20,7 @@ summary: "Practical tax guidance for Uber drivers in the UK. Covers self-assessm
 schema: ""
 faqs:
   - question: "Can I claim the cost of my car on my tax return as an Uber driver?"
-    answer: "Yes, but only through the actual costs method or the simplified mileage rate. Under the mileage rate (45p per mile for the first 10,000 miles), the vehicle cost is included in that rate. Under the actual costs method, you claim capital allowances on the purchase price and deduct the business proportion of running costs. You cannot claim both methods on the same vehicle in the same tax year."
+    answer: "Yes, but only through the actual costs method or the simplified mileage rate. Under the mileage rate (55p per mile for the first 10,000 miles from 2026/27; 45p applied up to 2025/26), the vehicle cost is included in that rate. Under the actual costs method, you claim capital allowances on the purchase price and deduct the business proportion of running costs. You cannot claim both methods on the same vehicle in the same tax year."
   - question: "Do I need to register for VAT if my Uber earnings are below £90,000?"
     answer: "If your total passenger fares (not your net payments from Uber) exceed £90,000 in any rolling 12 months, you must register. Many Uber drivers hit the threshold on fares even though their banked income is lower. If you are below the threshold, you can register voluntarily. That lets you reclaim VAT on Uber's service fee and on vehicle costs, but you must then charge VAT on your fares. The maths depends on your specific numbers."
   - question: "Can I use the Flat Rate Scheme for VAT as an Uber driver?"
@@ -59,7 +59,7 @@ faqs:
 
 <p><strong>Class 4 National Insurance for 2025/26:</strong></p>
 <ul>
-<li>£12,570 to £50,270: 9%</li>
+<li>£12,570 to £50,270: 6%</li>
 <li>Above £50,270: 2%</li>
 </ul>
 
@@ -74,9 +74,9 @@ faqs:
 <h3>Vehicle Costs: The Big One</h3>
 <p>You have two options for claiming vehicle costs: the simplified expenses method (using HMRC's approved mileage rate) or the actual costs method.</p>
 
-<p><strong>Simplified expenses (mileage rate):</strong> HMRC allows 45p per mile for the first 10,000 business miles in a tax year, then 25p per mile thereafter. This covers fuel, insurance, servicing, repairs, depreciation, and all other vehicle running costs. You cannot claim any additional vehicle expenses on top of this.</p>
+<p><strong>Simplified expenses (mileage rate):</strong> HMRC allows 55p per mile for the first 10,000 business miles in a tax year (2026/27 rate; 45p applied up to 2025/26), then 25p per mile thereafter. This covers fuel, insurance, servicing, repairs, depreciation, and all other vehicle running costs. You cannot claim any additional vehicle expenses on top of this.</p>
 
-<p>For most Uber drivers, the mileage rate is simpler and often produces a higher deduction. If you drive 20,000 business miles in a year, your deduction is £7,500 (10,000 x 45p + 10,000 x 25p).</p>
+<p>For most Uber drivers, the mileage rate is simpler and often produces a higher deduction. If you drive 20,000 business miles in a year at 2026/27 rates, your deduction is £8,000 (10,000 x 55p + 10,000 x 25p).</p>
 
 <p><strong>Actual costs method:</strong> You track every vehicle cost (fuel, insurance, repairs, tyres, MOT, road tax, finance payments, depreciation) and claim the business proportion. If you use the car 70% for Uber and 30% privately, you claim 70% of each cost. You also claim capital allowances on the vehicle purchase cost.</p>
 
@@ -153,7 +153,7 @@ faqs:
 
 <p><strong>Time.</strong> You are spending your time driving. Filing tax returns, tracking VAT, and managing digital records takes hours. An accountant frees you to focus on earning.</p>
 
-<p>At Holloway Davies, we are ICAEW qualified accountants who work with Uber drivers across the UK. We handle your self-assessment, VAT registration and returns, expense tracking, and HMRC correspondence. You drive. We do the paperwork.</p>
+<p>At Holloway Davies, we work with Uber drivers across the UK. We handle your self-assessment, VAT registration and returns, expense tracking, and HMRC correspondence. You drive. We do the paperwork.</p>
 
 <p>If your turnover is approaching the VAT threshold, or you are unsure whether the Flat Rate Scheme applies to you, <a href="/contact">get in touch</a>. We will run the numbers and tell you exactly where you stand.</p>
 

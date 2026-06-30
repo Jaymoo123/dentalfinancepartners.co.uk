@@ -139,7 +139,7 @@ faqs:
 <li><strong>Extra services:</strong> What happens if you need something outside the scope, like an R&D tax credit claim, a share scheme, or a CGT planning exercise? Is there a separate fee schedule?</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we see both models work well for different businesses. The key is matching the model to your workload pattern, not just picking the one that sounds cheapest.</p>
+<p>We see both models work well for different businesses. The key is matching the model to your workload pattern, not just picking the one that sounds cheapest.</p>
 
 <h2>How to Decide Which Model Fits Your Business</h2>
 

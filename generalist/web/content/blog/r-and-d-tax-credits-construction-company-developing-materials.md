@@ -84,10 +84,10 @@ faqs:
 
 <ul>
 <li>Companies with fewer than 500 employees and either turnover under €100M or a balance sheet under €86M are SMEs for R&D purposes</li>
-<li>Profit-making SMEs can claim a 19% payable tax credit (effectively reducing corporation tax)</li>
+<li>Profit-making SMEs can claim a 20% expenditure credit under the merged RDEC scheme (the credit is taxable income, so the net corporation tax saving is approximately 16.2% of qualifying costs at the 19% small profits rate, or 15% at the 25% main rate)</li>
 <li>Loss-making SMEs with R&D intensity above 30% can claim ERIS for a cash repayment of up to 27% of qualifying costs</li>
-<li>Loss-making SMEs below the 30% threshold can claim the RDEC-style credit at 15%</li>
-<li>Large companies (above the SME thresholds) claim under the full RDEC scheme at 15%</li>
+<li>Loss-making SMEs below the 30% threshold can claim the RDEC-style credit at 20% (taxable, so net value after CT is approximately 16.2% at the 19% small profits rate)</li>
+<li>Large companies (above the SME thresholds) claim under the full RDEC scheme at 20% (taxable, so net value after CT is approximately 15% at the 25% main rate)</li>
 </ul>
 
 <p>These rates are for the 2025/26 tax year. The exact figures change periodically, so check the current rates with your accountant before submitting a claim.</p>
@@ -133,7 +133,7 @@ faqs:
 <li>Consumables (protective gear, calibration gases, sample preparation): £3,200</li>
 </ul>
 
-<p>Total qualifying expenditure: £166,300. The company was profitable, so the R&D tax credit reduced their corporation tax liability by £31,597 (19% of £166,300). That is £31,597 they would not have received without the claim.</p>
+<p>Total qualifying expenditure: £166,300. The company was profitable, so the gross RDEC credit was £33,260 (20% of £166,300). The credit is taxable income: the net corporation tax saving was approximately £26,941 if the company paid CT at the 19% small profits rate, or £24,945 at the 25% main rate. Either way, that is a material reduction in their CT bill they would not have received without the claim.</p>
 
 <p>If the same company had been loss-making and R&D-intensive (R&D spend above 30% of total expenditure), they could have surrendered the losses for a cash repayment of approximately £44,900 using ERIS.</p>
 
@@ -141,7 +141,7 @@ faqs:
 
 <p>If your construction company has spent money developing new materials in the last two accounting periods, you should speak to an accountant who understands both construction and R&D. The claim requires technical justification and accurate cost allocation. Get it wrong and you face a compliance check, repayment of the credit, and potential penalties.</p>
 
-<p>Our <a href="/services">ICAEW qualified team</a> at Holloway Davies works with construction companies across the UK. We have helped clients in Manchester, Birmingham, Bristol, and London prepare R&D claims for new materials, innovative building methods, and site-specific technical solutions. <a href="/contact">Contact us</a> to discuss whether your project qualifies.</p>
+<p>Our <a href="/services">specialist team</a> at Holloway Davies works with construction companies across the UK. We have helped clients in Manchester, Birmingham, Bristol, and London prepare R&D claims for new materials, innovative building methods, and site-specific technical solutions. <a href="/contact">Contact us</a> to discuss whether your project qualifies.</p>
 
 <p>If your company turnover is below £90,000 and you are not yet VAT registered, check whether voluntary registration makes sense for your R&D material purchases. <a href="/blog/vat-and-making-tax-digital">Our VAT guide</a> covers the calculation.</p>
 

@@ -6,6 +6,8 @@
  * 2026-06-10: SL plan 1/2/4 thresholds CORRECTED to 2025/26 (user-approved
  * post-GAP-2 fix; old component carried 2024/25 values 24990/27295/31395).
  * Sources traced in docs/generalist/TOOLS.md; goldens updated deliberately.
+ * 2026-06-30: SL plan 1/2/4 thresholds updated to 2026/27 confirmed figures
+ * (26900 / 29385 / 33795). Plan 5 and PG unchanged.
  */
 
 const PERSONAL_ALLOWANCE = 12570;
@@ -23,9 +25,9 @@ export type StudentLoanPlan = "none" | "plan1" | "plan2" | "plan4" | "plan5" | "
 
 const SL_THRESHOLDS: Record<StudentLoanPlan, { threshold: number; rate: number }> = {
   none: { threshold: 0, rate: 0 },
-  plan1: { threshold: 26065, rate: 0.09 },  // 2025/26
-  plan2: { threshold: 28470, rate: 0.09 },  // 2025/26
-  plan4: { threshold: 32745, rate: 0.09 },  // 2025/26
+  plan1: { threshold: 26900, rate: 0.09 },  // 2026/27
+  plan2: { threshold: 29385, rate: 0.09 },  // 2026/27
+  plan4: { threshold: 33795, rate: 0.09 },  // 2026/27
   plan5: { threshold: 25000, rate: 0.09 },  // ✓ matches uk-tax-rates.ts
   pg:    { threshold: 21000, rate: 0.06 },  // ✓ matches uk-tax-rates.ts
 };

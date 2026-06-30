@@ -21,7 +21,7 @@ faqs:
 - question: How does the personal allowance taper work?
   answer: If your adjusted net income is above £100,000, your personal allowance reduces by £1 for every £2 of income above that threshold. For example, if your income is £110,000, your allowance reduces by £5,000 (half of the £10,000 above £100,000). Your effective personal allowance becomes £7,570. Once your income reaches £125,140, your allowance is zero. This creates a 60% effective tax rate on that income band.
 - question: What are the National Insurance thresholds for 2025/26?
-  answer: For employees, the primary threshold is £12,570 per year. You pay 8% NI on earnings between £12,570 and £50,270, then 2% above that. For employers, the secondary threshold is £9,100 per year, with employer NI at 13.8% on earnings above this. For the self-employed, Class 2 NI is £3.45 per week if profits exceed £6,725, and Class 4 NI is 6% on profits between £12,570 and £50,270, then 2% above that.
+  answer: For employees, the primary threshold is £12,570 per year. You pay 8% NI on earnings between £12,570 and £50,270, then 2% above that. For employers, the secondary threshold is £5,000 per year (from 6 April 2025), with employer NI at 15% on earnings above this. For the self-employed, Class 2 NIC was abolished from 6 April 2024 and no weekly charge applies for 2025/26. The self-employed pay Class 4 NI at 6% on profits between £12,570 and £50,270, then 2% above that. Those with profits below £6,725 may pay voluntary Class 2 to protect state benefits.
 dateModified: '2026-05-20'
 sourcesVerifiedAt: '2026-05-20'
 sourceDomains:
@@ -65,12 +65,12 @@ imageCredit:
 
 <ul>
 <li><strong>Primary threshold (employee NI):</strong> £12,570 per year. You start paying Class 1 NI at 8% on earnings above this, up to £50,270, then 2% above that.</li>
-<li><strong>Secondary threshold (employer NI):</strong> £9,100 per year. Employers pay 13.8% on earnings above this.</li>
-<li><strong>Class 2 NI (self-employed):</strong> £3.45 per week if profits exceed £6,725. This gives access to certain state benefits.</li>
+<li><strong>Secondary threshold (employer NI):</strong> £5,000 per year (from 6 April 2025). Employers pay 15% on earnings above this.</li>
+<li><strong>Class 2 NI (self-employed):</strong> Abolished from 6 April 2024. No weekly Class 2 charge applies for 2025/26. Those with profits below the Small Profits Threshold (£6,725) may pay voluntary Class 2 to protect state benefits.</li>
 <li><strong>Class 4 NI (self-employed):</strong> 6% on profits between £12,570 and £50,270, then 2% above £50,270.</li>
 </ul>
 
-<p>If you are a limited company director, you can set your salary at £12,570 to match the personal allowance and primary NI threshold. This avoids employee NI while still building qualifying years for your state pension. However, employer NI at 13.8% kicks in above £9,100. Many directors use the Employment Allowance (up to £10,500) to offset this cost if they employ staff.</p>
+<p>If you are a limited company director, you can set your salary at £12,570 to match the personal allowance and primary NI threshold. This avoids employee NI while still building qualifying years for your state pension. However, employer NI at 15% kicks in above the £5,000 secondary threshold (from 6 April 2025). Many directors use the Employment Allowance (up to £10,500) to offset this cost if they employ staff.</p>
 
 <h2>Dividend Tax Rates 2025/26</h2>
 
@@ -116,7 +116,7 @@ imageCredit:
 <p>Understanding the England tax bands helps you plan your income extraction strategy. Here is how different business structures are affected:</p>
 
 <h3>Sole Traders</h3>
-<p>You pay income tax and Class 2 and Class 4 NI on your profits. If your profits are £60,000, you pay 20% on the first £37,700 above your personal allowance, then 40% on the remaining £9,730. Your total income tax is around £11,432. Plus Class 4 NI at 6% on profits between £12,570 and £50,270, and 2% above that.</p>
+<p>You pay income tax and Class 4 NI on your profits (Class 2 NIC was abolished from 6 April 2024). If your profits are £60,000, you pay 20% on the first £37,700 above your personal allowance, then 40% on the remaining £9,730. Your total income tax is around £11,432. Plus Class 4 NI at 6% on profits between £12,570 and £50,270, and 2% above that.</p>
 
 <h3>Limited Company Directors</h3>
 <p>You can choose your salary and dividend mix. A salary of £12,570 avoids employee NI and uses your personal allowance. Dividends up to £37,700 are taxed at 8.75%. Total tax on £50,270 of income is around £3,255. Compare that to a sole trader paying £11,432 in income tax plus NI. The difference is significant.</p>
@@ -160,7 +160,7 @@ imageCredit:
 
 <p>The England tax bands for 2025/26 are stable but contain traps. The personal allowance taper above £100,000 is the most common one. The dividend allowance reduction to £500 affects every director. And the corporation tax marginal relief band requires careful profit planning.</p>
 
-<p>If you are unsure how these bands apply to your business, speak to an accountant. Our <a href="/contact">contact page</a> is the best place to start. We are ICAEW qualified and work with businesses across every sector.</p>
+<p>If you are unsure how these bands apply to your business, speak to an accountant. Our <a href="/contact">contact page</a> is the best place to start. We work with businesses across every sector.</p>
 
 <p>For more detailed guidance on specific topics, see our <a href="/blog/limited-company-tax">limited company tax blog</a> and <a href="/blog/sole-trader-and-self-employment">sole trader blog</a>.</p>
 

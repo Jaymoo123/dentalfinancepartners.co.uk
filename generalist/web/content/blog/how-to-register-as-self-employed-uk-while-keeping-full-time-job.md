@@ -24,7 +24,7 @@ faqs:
   - question: "Will my employer find out I am self employed on the side?"
     answer: "HMRC does not tell your employer. Your employer sees only your PAYE tax code, which HMRC may adjust to collect tax on your side income. That could prompt questions, but it is not a direct notification. Check your employment contract for any restrictions on outside work before you start."
   - question: "How much tax will I pay on side income if I already have a full time job?"
-    answer: "Your side income is taxed at your marginal rate. If your employment income puts you in the 20% basic rate band, side profits are taxed at 20%. If you are in the 40% higher rate band, side profits above the threshold are taxed at 40%. You also pay Class 4 National Insurance at 6% on profits up to £50,270, with no primary threshold relief because your job uses it up."
+    answer: "Your side income is taxed at your marginal rate. If your employment income puts you in the 20% basic rate band, side profits are taxed at 20%. If you are in the 40% higher rate band, side profits above the threshold are taxed at 40%. You also pay Class 4 National Insurance at 6% on self-employed profits between £12,570 and £50,270 (then 2% above that). The £12,570 Lower Profits Limit applies to your self-employed profits regardless of your employment income."
   - question: "Can I use the trading allowance instead of deducting actual expenses?"
     answer: "Yes, but you cannot use both for the same trade. Compare the two methods each year. If your actual expenses are lower than £1,000, the trading allowance gives a better result. If your actual expenses are higher, deduct them instead. You can switch between methods each tax year."
 ---
@@ -80,11 +80,11 @@ faqs:
 
 <p>For 2025/26, Class 2 National Insurance is effectively abolished for most self employed people. If your self employed profits are above £6,725, you are treated as having paid Class 2 NIC, which counts towards your National Insurance record for state pension and benefits. You do not pay anything. If your profits are below £6,725, you can choose to pay voluntary Class 2 NIC to protect your record.</p>
 
-<p>Class 4 National Insurance is charged at 6% on self employed profits between £12,570 and £50,270, and at 2% on profits above £50,270. However, your full time job income uses up your primary threshold. This means your Class 4 NIC starts from the first pound of self employed profit, not from £12,570.</p>
+<p>Class 4 National Insurance is charged at 6% on self employed profits between £12,570 and £50,270, and at 2% on profits above £50,270. The £12,570 Lower Profits Limit applies to your self-employed profits independently of your employment income. Your salaried earnings do not reduce or remove this threshold for Class 4 purposes.</p>
 
-<p>Let us work through an example. You earn £35,000 from your full time job. You earn £8,000 profit from self employment. Your total income is £43,000. Your Class 4 NIC on the self employment is 6% of £8,000, which is £480. The £12,570 threshold has already been used by your employment income, so there is no gap to fill.</p>
+<p>Let us work through an example. You earn £35,000 from your full time job. You earn £8,000 profit from self employment. Your total income is £43,000. Your Class 4 NIC on the self employment is £0, because the £8,000 profit falls below the £12,570 Lower Profits Limit. Class 4 NIC would only apply once self-employed profits themselves exceed £12,570.</p>
 
-<p>If your full time job income is below £12,570, the self employed profits fill the gap up to the threshold, and Class 4 NIC only applies to profits above £12,570. This is rare for someone with a full time job, but it happens for part time workers with a side business.</p>
+<p>The £12,570 Lower Profits Limit applies to self-employed profits on their own terms, regardless of the level of your employment income. Class 4 NIC only becomes payable once your self-employed profits themselves exceed £12,570.</p>
 
 <h2>Income Tax on Side Hustle Income</h2>
 

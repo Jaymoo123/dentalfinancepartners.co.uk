@@ -31,7 +31,7 @@ faqs:
 
 <p>If you run a UK business, accounts and payroll are two things you cannot avoid. Get them right and your business runs smoothly, you pay the right tax, and you sleep at night. Get them wrong and you face HMRC penalties, late filing fines, and a lot of stress.</p>
 
-<p>This guide covers the essentials. We will look at what accounts and payroll mean for different business structures, how to set up payroll properly, what your year-end obligations are, and how to keep bookkeeping simple. As ICAEW qualified accountants, we work with limited companies, sole traders, and partnerships across the UK. This is the advice we give our own clients.</p>
+<p>This guide covers the essentials. We will look at what accounts and payroll mean for different business structures, how to set up payroll properly, what your year-end obligations are, and how to keep bookkeeping simple. We work with limited companies, sole traders, and partnerships across the UK. This is the advice we give our own clients.</p>
 
 <h2>What Do Accounts and Payroll Actually Mean?</h2>
 
@@ -45,7 +45,7 @@ faqs:
 
 <p>If you are a director of a limited company and pay yourself a salary, you need a payroll system. You cannot just transfer money from the business account to your personal account and call it done. HMRC requires you to report salary payments through RTI on or before the day you pay them.</p>
 
-<p>The most common approach for a director of a small limited company is to take a salary set at the personal allowance threshold (£12,570 for 2025/26). This avoids income tax and employee National Insurance. The employer NI on this salary is £nil if you claim the Employment Allowance, or roughly £480 if you do not. Most small companies with one director do claim it.</p>
+<p>The most common approach for a director of a small limited company is to take a salary set at the personal allowance threshold (£12,570 for 2025/26). This avoids income tax and employee National Insurance. The employer NI on this salary is £nil if you claim the Employment Allowance, or about £1,136 (15% on the £7,570 above the £5,000 secondary threshold) if you do not. Most small companies with one director do claim it.</p>
 
 <p>You then take the rest of your income as dividends. Dividends are not payroll. They come from post-tax profits and are declared through your personal tax return, not through payroll. The dividend allowance for 2025/26 is just £500. Above that, you pay dividend tax at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate).</p>
 
@@ -120,7 +120,7 @@ faqs:
 
 <ul>
 <li><strong>Not registering as an employer before paying staff.</strong> You must register with HMRC before the first payday. If you pay someone without registering, you are breaking the law.</li>
-<li><strong>Mixing director's loan with salary.</strong> If you take money from the company without running it through payroll or declaring it as a dividend, it goes into your director's loan account. If the balance is not repaid within 9 months and 1 day of year-end, the company pays S455 tax at 33.75% on the outstanding amount.</li>
+<li><strong>Mixing director's loan with salary.</strong> If you take money from the company without running it through payroll or declaring it as a dividend, it goes into your director's loan account. If the balance is not repaid within 9 months and 1 day of year-end, the company pays S455 tax at 33.75% for loans made in 2025/26, rising to 35.75% for loans made from 6 April 2026, on the outstanding amount.</li>
 <li><strong>Ignoring the dividend allowance.</strong> The allowance is now £500. Many directors still think it is £2,000. If you take dividends above £500, you must report them on your personal tax return and pay the appropriate tax.</li>
 <li><strong>Not reconciling payroll to bank payments.</strong> Your payroll software shows what you paid. Your bank statement shows what left the account. They must match. If they do not, you have a problem.</li>
 <li><strong>Filing the wrong type of accounts.</strong> Small companies can file abridged or micro-entity accounts, which show less detail. But you must meet the eligibility criteria. Filing the wrong format can delay your filing and trigger queries from Companies House.</li>
@@ -140,7 +140,7 @@ faqs:
 <li>You are unsure about a specific tax treatment, like R&D tax credits or capital allowances</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we help businesses across the UK with accounts and payroll. We set up your systems, review your returns, and handle the filing. You focus on running your business.</p>
+<p>We help businesses across the UK with accounts and payroll. We set up your systems, review your returns, and handle the filing. You focus on running your business.</p>
 
 <p>If your payroll setup is more than a year old, or you are about to hire your first employee, now is the time to review your process. Get it right from the start and you avoid penalties, stress, and unnecessary tax payments.</p>
 

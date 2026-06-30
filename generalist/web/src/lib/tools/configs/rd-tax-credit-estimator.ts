@@ -9,9 +9,9 @@ export const rdCreditTool: GenericTool = {
   category: "Limited Company",
   oneLiner: "Indicative R&D credit under the 2024 merged scheme. Drop in qualifying spend to see your estimate and whether the intensive SME rate applies.",
   embedHeight: 500,
-  metaTitle: "R&D Tax Credit Estimator 2025/26 | UK Merged Scheme Calculator",
+  metaTitle: "R&D Tax Credit Estimator 2026/27 | UK Merged Scheme Calculator",
   metaDescription:
-    "Free R&D tax credit calculator for UK companies under the merged RDEC scheme. Estimates gross credit, net benefit, and whether the R&D-intensive rate applies. 2025/26.",
+    "Free R&D tax credit calculator for UK companies under the merged RDEC scheme. Estimates gross credit, net benefit, and whether the R&D-intensive rate applies. 2026/27.",
   intro:
     "The 2024 merged R&D scheme gives a 20% above-the-line credit on qualifying expenditure. Loss-making R&D-intensive companies, where qualifying spend is 30% or more of total expenditure, can instead claim enhanced support (ERIS) worth roughly 27p per £1 of qualifying spend. Enter your spend categories and see your indicative credit and net benefit.",
   fields: [

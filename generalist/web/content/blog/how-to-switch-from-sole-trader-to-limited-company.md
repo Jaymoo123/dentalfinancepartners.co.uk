@@ -7,7 +7,13 @@ generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Sole Trader to Limited Company: How to Switch in 2025/26'
-metaDescription: 'Move from sole trader to limited company cleanly: incorporation, contracts, VAT and tax. One worked case saves over £3,300 a year.'
+metaDescription: 'Move from sole trader to limited company cleanly: incorporation, contracts, VAT and tax. 2025/26 tax comparison with worked example.'
+keyTakeaways:
+  - "A freelance consultant with £60,000 profit can save around £700 a year by incorporating at 2025/26 rates, with the margin growing where a second qualifying employee brings Employment Allowance into play."
+  - "Below £30,000 profit, the costs of running a limited company can outweigh the tax savings."
+  - "Registering a limited company at Companies House costs £50 and is completed online."
+  - "A new limited company must be registered for Corporation Tax within three months of incorporation."
+  - "A sole trader VAT registration can be transferred to the limited company using form VAT484."
 altText: UK business owner reviewing incorporation documents on a desk with a laptop and calculator
 image: /blog/how-to-switch-from-sole-trader-to-limited-company.jpg
 imageCredit:
@@ -17,9 +23,7 @@ imageCredit:
   source: Pexels
 h1: How To Switch From Sole Trader To Limited Company in 2025/26
 summary: 'Thinking of moving from sole trader to limited company? This guide covers the practical steps: registering your new company, transferring contracts, handling VAT, and the tax implications for 2025/26.'
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How To Switch From Sole Trader To Limited Company in 2025/26","description":"Move from sole trader to limited company cleanly: incorporation, contracts, VAT and tax. One worked case saves over £3,300 a year.","url":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/how-to-switch-from-sole-trader-to-limited-company","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
-  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/how-to-switch-from-sole-trader-to-limited-company"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/how-to-switch-from-sole-trader-to-limited-company.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Incorporation and Structure","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure"},{"@type":"ListItem","position":3,"name":"How To Switch From Sole Trader To Limited Company in 2025/26","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/how-to-switch-from-sole-trader-to-limited-company"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I switch from sole trader to limited company partway through the tax year?","acceptedAnswer":{"@type":"Answer","text":"Yes, you can incorporate at any point in the tax year. You will need to file a final self assessment return for the period you traded as a sole trader, and the company will file its own corporation tax return for the period from incorporation to its chosen year-end. It adds a bit of admin but is standard practice."}},{"@type":"Question","name":"Do I need a new bank account when I become a limited company?","acceptedAnswer":{"@type":"Answer","text":"Yes, a limited company must have its own business bank account. You cannot use your personal account for company transactions. Open a business current
-  account before you start invoicing through the company. Most banks offer fee-free introductory periods."}},{"@type":"Question","name":"What happens to my VAT registration when I incorporate?","acceptedAnswer":{"@type":"Answer","text":"Your VAT registration is in your personal name as a sole trader. You can transfer it to the company using form VAT484, or cancel it and register the company separately. If you transfer, you keep your VAT number and avoid a gap. If you cancel, you must file a final VAT return and pay any VAT due."}},{"@type":"Question","name":"Do I have to tell my clients I have incorporated?","acceptedAnswer":{"@type":"Answer","text":"Yes. Your contracts as a sole trader are in your personal name. Your limited company is a separate legal entity. You need each client to agree to novate the contract to the company or issue a new one. Do not start invoicing through the company until the client has confirmed the change in writing."}}]}]}'
+schema: ""
 faqs:
 - question: Can I switch from sole trader to limited company partway through the tax year?
   answer: Yes, you can incorporate at any point in the tax year. You will need to file a final self assessment return for the period you traded as a sole trader, and the company will file its own corporation tax return for the period from incorporation to its chosen year-end. It adds a bit of admin but is standard practice.
@@ -32,20 +36,20 @@ faqs:
 metaTitle_prev: 'How to Switch From Sole Trader to Limited Company: 2025/26'
 metaDescription_prev: Step-by-step guide on how to switch from sole trader to limited company. Covers incorporation, tax implications, VAT, and what to do with existing
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
 <p>If you're asking how to switch from sole trader to limited company, you're likely past the point of wondering whether it's the right move. Your turnover has grown. You're paying more tax than feels fair. Or a client has told you they'd rather contract with a limited company. Whatever the trigger, the switch itself is straightforward. The decisions around <em>when</em> and <em>how</em> to do it cleanly are where most people trip up.</p>
 
-<p>This guide covers the practical steps for 2025/26. We'll walk through incorporation, what happens to your existing contracts, how to handle VAT, and the tax implications of moving from sole trader to limited company. We are ICAEW qualified accountants and work with UK businesses across every sector. The advice below is general. Your specific numbers may point to a different timing or structure. Always run the figures past a qualified accountant before making the leap.</p>
+<p>This guide covers the practical steps for 2025/26. We'll walk through incorporation, what happens to your existing contracts, how to handle VAT, and the tax implications of moving from sole trader to limited company. We work with UK businesses across every sector. The advice below is general. Your specific numbers may point to a different timing or structure. Always run the figures past a qualified accountant before making the leap.</p>
 
 <h2>Why Switch From Sole Trader To Limited Company?</h2>
 
 <p>The most common reason is tax efficiency. Once your profits exceed roughly £40,000 to £50,000, a limited company structure typically leaves more money in your pocket after tax than remaining a sole trader. That gap widens as profits increase.</p>
 
-<p>Take a freelance consultant in Manchester turning over £80,000 with £20,000 of expenses. As a sole trader, you'd pay income tax and Class 2 and Class 4 National Insurance on the £60,000 profit. For 2025/26, that works out to roughly £14,720 in combined tax and NIC. Through a limited company, paying yourself a salary of £12,570 and dividends of £42,430, your total tax (corporation tax, income tax, dividend tax, employer NI) comes to around £11,400. That is a saving of over £3,300.</p>
+<p>Take a freelance consultant in Manchester turning over £80,000 with £20,000 of expenses. As a sole trader, you'd pay income tax and Class 4 National Insurance on the £60,000 profit (Class 2 NIC was abolished from 6 April 2024). For 2025/26, that works out to roughly £13,900 in combined tax and NIC (income tax £11,432 plus Class 4 NIC £2,457). Through a limited company, paying yourself a salary of £12,570 and taking the remaining post-tax profit of around £37,500 as dividends, your total tax (corporation tax, employer NIC at 15% on earnings above the £5,000 secondary threshold, and dividend income tax) comes to around £13,200. That is a saving of around £700.</p>
 
 <p>Other reasons include:</p>
 <ul>
@@ -92,7 +96,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Most directors pay themselves a salary up to the personal allowance (£12,570 for 2025/26) and take the rest as dividends. The salary is a tax-deductible expense for the company. Dividends are paid from post-tax profits and attract lower tax rates than salary.</p>
 
-<p>If your salary is above the secondary threshold (£9,100), the company pays employer NI at 13.8%. You can claim Employment Allowance (up to £10,500) if you're eligible, which often covers the NI cost for a single director.</p>
+<p>If your salary is above the secondary threshold (£5,000 from 6 April 2025), the company pays employer NIC at 15%. A single-director company with no other employee paid above the secondary threshold cannot claim Employment Allowance. You need at least one other qualifying employee (for example a spouse on the payroll above £5,000) to access the £10,500 allowance.</p>
 
 <p>Read more in our guide on <a href="/blog/director-pay-and-dividends">director pay and dividends</a>.</p>
 
@@ -136,7 +140,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If you are a contractor working through your own limited company, IR35 applies. IR35 is legislation that determines whether you are genuinely self-employed or should be treated as an employee for tax purposes. If you fall inside IR35, you pay tax and NI at employee rates on your income, and the company pays employer NI.</p>
 
-<p>Medium and large clients are responsible for determining your IR35 status. They issue a Status Determination Statement (SDS). If your client is small (fewer than 50 employees, turnover under £10.2M, balance sheet under £5.1M), you determine your own status.</p>
+<p>Medium and large clients are responsible for determining your IR35 status. They issue a Status Determination Statement (SDS). If your client is small (fewer than 50 employees, turnover under £15M, balance sheet under £7.5M, from 6 April 2025), you determine your own status.</p>
 
 <p>If you are outside IR35, the limited company structure remains highly tax efficient. If you are inside IR35, the tax advantage largely disappears. Check your contracts and working practices before incorporating.</p>
 
@@ -186,4 +190,4 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Switching from sole trader to limited company is a significant step. Done properly, it saves you tax, protects your personal assets, and positions your business for growth. Done carelessly, it creates admin headaches and potential tax bills. Take it step by step, and get professional advice on your specific situation.</p>
 
-<p>For a full breakdown of the costs and benefits for your numbers, speak to our team. We are ICAEW qualified accountants and work with businesses across the UK. <a href="/contact">Contact us</a> to discuss your transition.</p>
+<p>For a full breakdown of the costs and benefits for your numbers, speak to our team. We work with businesses across the UK. <a href="/contact">Contact us</a> to discuss your transition.</p>

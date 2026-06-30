@@ -59,11 +59,11 @@ faqs:
 <p>Commercial property gains are taxed at the standard CGT rates for other assets. These are:</p>
 
 <ul>
-<li>Basic rate taxpayers: 10% (on gains within the basic rate band)</li>
-<li>Higher and additional rate taxpayers: 20% (on gains above the basic rate band)</li>
+<li>Basic rate taxpayers: 18% (on gains within the basic rate band)</li>
+<li>Higher and additional rate taxpayers: 24% (on gains above the basic rate band)</li>
 </ul>
 
-<p>These rates apply to commercial premises like offices, warehouses, shops, factories, and agricultural land. If you sell a commercial property that you've owned personally (not through a company), these rates apply.</p>
+<p>These rates apply to commercial premises like offices, warehouses, shops, factories, and agricultural land. The same 18%/24% rates apply from 30 October 2024 regardless of whether the property is residential or commercial. If you sell a commercial property that you've owned personally (not through a company), these rates apply.</p>
 
 <h3>What If You Sell Through a Limited Company?</h3>
 
@@ -87,7 +87,7 @@ faqs:
 
 <p>BADR does not apply to buy-to-let properties or investment properties held personally. It only applies to assets used in a qualifying trading business.</p>
 
-<p>As ICAEW qualified accountants, we regularly see business owners miss BADR on property because they didn't plan the sale structure. If you're considering selling a property that's integral to your business, talk to us before you agree a price.</p>
+<p>We regularly see business owners miss BADR on property because they didn't plan the sale structure. If you're considering selling a property that's integral to your business, talk to us before you agree a price.</p>
 
 <h2>The Annual Exempt Amount for 2025/26</h2>
 
@@ -127,7 +127,7 @@ faqs:
 
 <p>She must report the sale and pay the £18,240 within 60 days of completion. She cannot wait until her Self Assessment return in January 2026.</p>
 
-<p>If Sarah had sold a commercial property (say a shop she owned personally and let to a tenant), the rate would be 20% instead of 24%, and there would be no 60-day reporting requirement.</p>
+<p>If Sarah had sold a commercial property (say a shop she owned personally and let to a tenant), the CGT rate would still be 24% (commercial property uses the same 18%/24% rates as residential property since 30 October 2024), but there would be no 60-day reporting requirement. She could instead report the gain on her Self Assessment return by 31 January 2026.</p>
 
 <h2>Reliefs and Allowances for Property Gains</h2>
 
@@ -178,7 +178,7 @@ faqs:
 <li><strong>Talk to an accountant.</strong> A conversation before you exchange contracts can save thousands. After completion, your options are limited.</li>
 </ol>
 
-<p>Our ICAEW qualified team at Holloway Davies works with business owners across the UK on property CGT planning. Whether you're a sole trader selling your workshop in Sheffield's Kelham Island or a limited company director selling a portfolio of buy-to-lets in Manchester's Northern Quarter, the rules apply the same way. The strategy depends on your circumstances.</p>
+<p>Our experienced team at Holloway Davies works with business owners across the UK on property CGT planning. Whether you're a sole trader selling your workshop in Sheffield's Kelham Island or a limited company director selling a portfolio of buy-to-lets in Manchester's Northern Quarter, the rules apply the same way. The strategy depends on your circumstances.</p>
 
 <p>If your property sale is imminent, get in touch through our <a href="/contact">contact page</a>. We'll help you calculate the tax, file the 60-day return, and claim every relief you're entitled to.</p>
 

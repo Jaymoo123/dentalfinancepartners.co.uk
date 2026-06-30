@@ -17,21 +17,19 @@ imageCredit:
   source: Pexels
 h1: How Do I Run Payroll for One Employee in the UK? A Director's Guide
 summary: If you are a director of a limited company with no staff beyond yourself, you still need to run payroll. This guide covers the RTI process, salary planning, software options, and the key deadlines for director-only payroll in 2025/26.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How Do I Run Payroll for One Employee in the UK? A Director''s Guide","description":"Run director-only payroll right: register as an employer, submit RTI each pay run, and set a £12,570 salary for no income tax or employee NI.","url":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/payroll-for-one-employee-uk-director-guide","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
-  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/payroll-for-one-employee-uk-director-guide"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/payroll-for-one-employee-uk-director-guide.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Payroll and PAYE","item":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye"},{"@type":"ListItem","position":3,"name":"How Do I Run Payroll for One Employee in the UK? A Director''s Guide","item":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/payroll-for-one-employee-uk-director-guide"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I run payroll for myself as the only director without any employees?","acceptedAnswer":{"@type":"Answer","text":"Yes. You must register as an employer with HMRC, use RTI-compliant payroll software, and submit a Full Payment Submission every time you pay yourself. There is no exemption for director-only companies. Even if your salary is below the tax and NI thresholds, you still need to report it."}},{"@type":"Question","name":"What is the best salary for a director in 2025/26 to avoid tax?","acceptedAnswer":{"@type":"Answer","text":"£12,570 per year is the most common efficient salary. It matches the personal allowance and the primary NI threshold, so you pay no income tax and no employee NI. Employer NI on the amount above £9,100 can be covered by the Employment
-  Allowance if your company qualifies. If you want to avoid employer NI entirely without the allowance, set your salary at £9,100."}},{"@type":"Question","name":"What happens if I do not run payroll for myself?","acceptedAnswer":{"@type":"Answer","text":"If you take a salary without running payroll, HMRC will eventually detect the discrepancy through data matching. You face penalties for late or missing RTI submissions, starting at £100 per return and rising. You also lose the corporation tax deduction for the salary. If you take no salary at all, you get no NI credits for that year, which"}}]}]}'
+schema: ""
 faqs:
 - question: Can I run payroll for myself as the only director without any employees?
   answer: Yes. You must register as an employer with HMRC, use RTI-compliant payroll software, and submit a Full Payment Submission every time you pay yourself. There is no exemption for director-only companies. Even if your salary is below the tax and NI thresholds, you still need to report it.
 - question: What is the best salary for a director in 2025/26 to avoid tax?
-  answer: £12,570 per year is the most common efficient salary. It matches the personal allowance and the primary NI threshold, so you pay no income tax and no employee NI. Employer NI on the amount above £9,100 can be covered by the Employment Allowance if your company qualifies. If you want to avoid employer NI entirely without the allowance, set your salary at £9,100.
+  answer: £12,570 per year is the most common efficient salary. It matches the personal allowance and the primary NI threshold, so you pay no income tax and no employee NI. Employer NI at 15% applies to salary above the £5,000 secondary threshold (from 6 April 2025), giving £1,135.50 in employer NI on a £12,570 salary (£7,570 x 15%). Director-only companies cannot claim the Employment Allowance, so this is a real cost. If you want to avoid employer NI entirely, keep your salary at or below £5,000.
 - question: What happens if I do not run payroll for myself?
   answer: If you take a salary without running payroll, HMRC will eventually detect the discrepancy through data matching. You face penalties for late or missing RTI submissions, starting at £100 per return and rising. You also lose the corporation tax deduction for the salary. If you take no salary at all, you get no NI credits for that year, which
 metaTitle_prev: 'Payroll for One Employee UK: A Director''s Guide (2025/26)'
 metaDescription_prev: Running payroll for one employee in the UK? We cover RTI, salary levels, software, and deadlines for director-only payroll in 2025/26.
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -56,14 +54,14 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <ul>
 <li>You pay no income tax on earnings up to £12,570.</li>
 <li>You pay no employee National Insurance on earnings up to £12,570 (the primary threshold is also £12,570 in 2025/26).</li>
-<li>The company pays no employer National Insurance on earnings up to the secondary threshold of £9,100 per year. Above that, employer NI is 13.8%.</li>
+<li>The company pays no employer National Insurance on earnings up to the secondary threshold of £5,000 per year (from 6 April 2025). Above that, employer NI is 15%.</li>
 </ul>
 
-<p>If you set your salary at £12,570, the first £9,100 is free of employer NI. The remaining £3,470 attracts employer NI at 13.8%, which is £479. But if your company qualifies for the Employment Allowance (up to £10,500), that £479 is wiped out entirely. Most director-only companies with no other employees qualify for the Employment Allowance, provided the director is not the sole employee earning above the secondary threshold. In practice, many do qualify, but check the conditions carefully.</p>
+<p>If you set your salary at £12,570, the first £5,000 is free of employer NI. The remaining £7,570 attracts employer NI at 15%, which is £1,135.50. Director-only companies cannot claim the Employment Allowance (EA is only available where there is at least one non-director employee), so this £1,135.50 is a real employer cost with no offset.</p>
 
-<p>The net effect: you take £12,570 salary, the company deducts £0 tax and £0 employee NI from your pay, and the company pays £0 employer NI (if the Employment Allowance covers it). You get a full year of Class 1 National Insurance credits, which protect your state pension and benefit entitlements.</p>
+<p>The net effect: you take £12,570 salary, the company deducts £0 tax and £0 employee NI from your pay, but the company pays £1,135.50 in employer NI. You get a full year of Class 1 National Insurance credits, which protect your state pension and benefit entitlements.</p>
 
-<p>If you prefer to avoid employer NI entirely without relying on the Employment Allowance, set your salary at £9,100. You lose some NI credits but keep the payroll simple.</p>
+<p>If you prefer to avoid employer NI entirely, keep your salary at or below £5,000. You lose some NI credits but keep the payroll simple and the employer NI bill at zero.</p>
 
 <h2>How to Set Up Payroll for One Employee</h2>
 
@@ -117,13 +115,13 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If you pay yourself the same amount every month, some software lets you set up a recurring FPS. That saves time, but you still need to check each submission.</p>
 
-<p>If you make a mistake, submit an Earlier Year Update (EYU) after the tax year ends to correct it.</p>
+<p>If you make a mistake, submit an amended Full Payment Submission (FPS) after the tax year ends to correct it. EYUs were replaced by amended FPS submissions for tax years from 2019/20 onwards and are no longer the correct method for 2025/26 corrections.</p>
 
 <h3>Step 6: Pay Any Tax and NI to HMRC</h3>
 
-<p>If your salary is £12,570 and the Employment Allowance covers the employer NI, the total amount due to HMRC is £0. You submit the FPS showing £0 due, and you pay nothing.</p>
+<p>If your salary is at or below £5,000 and no tax or NI is deducted, the total amount due to HMRC is £0. You submit the FPS showing £0 due, and you pay nothing.</p>
 
-<p>If you pay above the thresholds, or if the Employment Allowance does not apply, you must pay the PAYE and NI to HMRC by the 22nd of the following month (or the 19th if you pay quarterly). Your software will tell you the exact amount due.</p>
+<p>If your salary is higher (for example £12,570), employer NI of £1,135.50 for the year is due. You must pay PAYE and NI to HMRC by the 22nd of the following month (or the 19th if you pay quarterly). Your software will tell you the exact amount due.</p>
 
 <p>Pay through the HMRC online system using your Accounts Office reference. Do not pay through your personal tax account. The company must pay.</p>
 
@@ -160,7 +158,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p><strong>Not submitting RTI on time</strong>. The FPS must be submitted on or before the payment date. If you pay yourself on the 1st of the month and submit the FPS on the 5th, that is late. HMRC charges penalties for late FPS submissions. Set a calendar reminder.</p>
 
-<p><strong>Ignoring the Employment Allowance</strong>. Many director-only companies qualify for the Employment Allowance but do not claim it. You claim it through your payroll software when you submit your first FPS of the tax year. If you do not claim it, you pay employer NI on salary above £9,100.</p>
+<p><strong>Misunderstanding the Employment Allowance</strong>. Director-only companies cannot claim the Employment Allowance. EA is only available if there is at least one non-director employee. Do not assume you qualify: if you are the sole director and sole earner, you are excluded, and employer NI at 15% applies to any salary above the £5,000 secondary threshold.</p>
 
 <p><strong>Not filing year-end returns</strong>. Even if you paid £0 tax and NI all year, you must file a P60 by 31 May and a final FPS. Missing these triggers late filing penalties.</p>
 
@@ -170,7 +168,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>But if you take no salary, you get no NI credits for that year. That can affect your state pension entitlement. If you have 35 qualifying years of NI contributions, you get the full state pension. Missing a year means you may need to make voluntary NI contributions later to fill the gap.</p>
 
-<p>Also, if you take no salary, you cannot claim the Employment Allowance. And you lose the corporation tax deduction that a salary provides. For most directors, the small salary of £9,100 or £12,570 is worth it for the NI credits and the tax deduction.</p>
+<p>And you lose the corporation tax deduction that a salary provides. For most directors, a salary of £5,000 or £12,570 is worth it for the NI credits and the tax deduction. A salary at or below £5,000 avoids employer NI entirely; a salary of £12,570 costs £1,135.50 in employer NI (£7,570 at 15%) but maximises NI credits and the corporation tax deduction.</p>
 
 <h2>Do I Need an Accountant to Run Payroll?</h2>
 
@@ -183,7 +181,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>If HMRC queries anything, the accountant deals with it.</li>
 </ul>
 
-<p>At <a href="/about">Holloway Davies</a>, we handle payroll for hundreds of director-only companies. Our ICAEW qualified team sets up your payroll, runs the monthly submissions, and files the year-end returns as part of our <a href="/services">accounting services</a>. You do not need to log into software or remember deadlines.</p>
+<p>At <a href="/about">Holloway Davies</a>, we handle payroll for hundreds of director-only companies. Our team sets up your payroll, runs the monthly submissions, and files the year-end returns as part of our <a href="/services">accounting services</a>. You do not need to log into software or remember deadlines.</p>
 
 <p>If you prefer to do it yourself, we can still <a href="/contact">advise on the right salary level</a> and check your setup once a year.</p>
 
@@ -191,7 +189,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Running payroll for one employee in the UK is a legal requirement if you pay yourself a salary through your limited company. The process involves registering as an employer, choosing HMRC-recognised software, setting up your employee record, submitting RTI returns on each payment date, and filing year-end returns.</p>
 
-<p>The most tax-efficient salary for most directors in 2025/26 is £12,570. It avoids income tax and employee NI, and employer NI is often covered by the Employment Allowance. It also gives you full NI credits for the year.</p>
+<p>The most common salary choice for directors in 2025/26 is £12,570. It avoids income tax and employee NI. Director-only companies cannot claim the Employment Allowance, so employer NI of £1,135.50 (£7,570 at 15%, above the £5,000 secondary threshold from 6 April 2025) is a real cost. Some directors choose a salary at or below £5,000 to avoid employer NI entirely. Either way, taking a salary gives you NI credits for the year and a corporation tax deduction for the company.</p>
 
 <p>Do not skip payroll. The penalties for non-compliance outweigh the small effort of setting it up. And if you want a hands-off approach, your accountant can run it for you.</p>
 

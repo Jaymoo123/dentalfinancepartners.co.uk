@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
 metaTitle: "When an R&D Tax Credit Specialist Refuses Your Claim"
 metaDescription: "A legitimate R&D tax credit specialist will sometimes turn down a claim. Here are the real reasons why, and how that protects you from an HMRC enquiry."
-altText: "ICAEW qualified accountant reviewing R&D tax credit documentation in a Manchester office"
+altText: "Accountant reviewing R&D tax credit documentation in a Manchester office"
 image: "/blog/when-an-r-and-d-tax-credit-specialist-refuses-your-claim.jpg"
 imageCredit:
   photographer: "RDNE Stock project"
@@ -35,7 +35,7 @@ faqs:
 
 <p>The short answer is this: the best specialists say no more often than you think. They do it because an aggressive claim that gets rejected by HMRC costs you far more than a declined claim ever will. An enquiry can run for 12 to 18 months, eat up your management time, and trigger a full review of your corporation tax returns going back several years.</p>
 
-<p>As <a href="/about">ICAEW qualified accountants</a> working with UK businesses across every sector, we have seen both sides. We have submitted successful claims for software consultancies in Manchester, engineering firms in Birmingham, and biotech startups in Cambridge. We have also turned down work. This article explains the legitimate reasons a specialist would refuse a claim, and why that refusal is often the best outcome for you.</p>
+<p>As <a href="/about">specialist accountants</a> working with UK businesses across every sector, we have seen both sides. We have submitted successful claims for software consultancies in Manchester, engineering firms in Birmingham, and biotech startups in Cambridge. We have also turned down work. This article explains the legitimate reasons a specialist would refuse a claim, and why that refusal is often the best outcome for you.</p>
 
 <h2>The Four Real Reasons a Specialist Says No</h2>
 
@@ -73,7 +73,7 @@ faqs:
 <li>Staff costs (salaries, employer NI, pension contributions) for employees directly engaged in R&D.</li>
 <li>Consumable items used up in the R&D process (materials, energy, water).</li>
 <li>Software licence costs directly used in the R&D.</li>
-<li>Subcontractor costs (under specific rules that differ between the SME and RDEC schemes).</li>
+<li>Subcontractor costs (under specific rules that differ between the merged RDEC scheme and ERIS, the enhanced R&D intensive support scheme for qualifying loss-making SMEs; the old separate SME scheme does not apply to accounting periods beginning on or after 1 April 2024).</li>
 <li>Externally provided workers (agency staff under your supervision).</li>
 </ul>
 

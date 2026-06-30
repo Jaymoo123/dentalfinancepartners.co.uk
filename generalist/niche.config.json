@@ -16,8 +16,8 @@
   },
   "partner": { "name": "Reflex Accounting", "privacy_policy_url": null },
   "domain": "www.hollowaydavies.co.uk",
-  "tagline": "Chartered accountants for UK businesses of every shape",
-  "description": "Holloway Davies. ICAEW chartered accountants for UK limited companies, contractors, sole traders and partnerships. Corporation tax, VAT, payroll, R&D credits, MTD, and exit planning. National coverage, fixed fees.",
+  "tagline": "Accountants for UK businesses of every shape",
+  "description": "Holloway Davies. Fixed-fee accountants for UK limited companies, contractors, sole traders and partnerships. Corporation tax, VAT, payroll, R&D credits, MTD, and exit planning. National coverage, fixed fees.",
   "brand": {
     "primary_color": "#f97316",
     "logo_path": "/brand/primary-logo.png",
@@ -216,7 +216,7 @@
   },
   "cta": {
     "sticky_primary": "Free business finance health check",
-    "sticky_secondary": "60-min review with an ICAEW qualified accountant. No obligation.",
+    "sticky_secondary": "60-min review with a senior accountant. No obligation.",
     "sticky_button": "Claim free check"
   },
   "blog": {

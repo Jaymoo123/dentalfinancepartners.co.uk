@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Accountant for Property Investor UK: What They Do"
 metaDescription: "A property investor's tax position is different from a standard business. Here is exactly what an accountant for property investor UK must handle that"
-altText: "UK property investor meeting with an ICAEW qualified accountant in a Manchester city centre office, reviewing portfolio tax planning"
+altText: "UK property investor meeting with an accountant in a Manchester city centre office, reviewing portfolio tax planning"
 image: "/blog/accountant-for-property-investor-uk.jpg"
 imageCredit:
   photographer: "AXP Photography"
@@ -26,7 +26,7 @@ faqs:
   - question: "What is the 60-day CGT property return and when do I need to file it?"
     answer: "If you sell a UK residential property and make a gain, you must file a Capital Gains Tax return and pay the tax within 60 days of completion. This applies to both UK residents and non-residents. The return is separate from your annual self assessment. Miss the deadline and HMRC charges interest from day 61 and a £100 late filing penalty."
   - question: "How do I know if my property qualifies for Business Asset Disposal Relief?"
-    answer: "For BADR to apply, the property must be a business asset held for at least two years. Furnished holiday lettings qualify if they meet the letting conditions (available 210 days, let 105 days, not occupied by you for more than 155 days). Commercial property used in your trade also qualifies. Residential buy-to-lets held personally do not qualify. A specialist can review your portfolio and identify qualifying assets."
+    answer: "For BADR to apply, the property must be a business asset held for at least two years. Commercial property used in your trade qualifies. Residential buy-to-lets held personally do not qualify. Note that furnished holiday lettings ceased to qualify for BADR following the abolition of the FHL regime from 6 April 2025. A specialist can review your portfolio and identify qualifying assets."
 ---
 
 <h2>Property Investors Pay Different Taxes Than Other Business Owners</h2>
@@ -57,11 +57,11 @@ faqs:
 
 <p>For commercial property, the timeline is different. You report it on your self assessment return by 31 January after the tax year. A general accountant may treat all property gains the same way. They should not.</p>
 
-<p>And then there is <strong>Business Asset Disposal Relief (BADR)</strong>. If you sell a property that qualifies as a business asset (furnished holiday lettings, a trade property used in your business), you may pay 14% CGT on disposals from 6 April 2025, rising to 18% from 6 April 2026, rather than the standard 24%. The conditions are strict. The property must be held for two years. It must meet the furnished holiday letting criteria (available for 210 days, let for 105 days). A general accountant may not know the furnished holiday letting rules. A property specialist will.</p>
+<p>And then there is <strong>Business Asset Disposal Relief (BADR)</strong>. If you sell a property that qualifies as a business asset (a trade property used in your business, for example), you may pay 14% CGT on disposals from 6 April 2025, rising to 18% from 6 April 2026, rather than the standard 24%. Note that furnished holiday lettings no longer qualify for BADR following the abolition of the FHL regime from 6 April 2025. The conditions for BADR are strict: the property must be held for two years and used in a qualifying trade. A property specialist will know which disposals qualify.</p>
 
 <h2>Property Held in a Limited Company: A Different World</h2>
 
-<p>More property investors are incorporating. The reasons are straightforward. Corporation tax on retained profits (19% to 25%) is lower than income tax on personal rental profits (20% to 45%). And you can still extract profits as dividends at 8.75%, 33.75%, or 39.35% depending on your other income.</p>
+<p>More property investors are incorporating. The reasons are straightforward. Corporation tax on retained profits (19% to 25%) is lower than income tax on personal rental profits (20% to 45%). And you can still extract profits as dividends: 8.75%, 33.75%, or 39.35% in 2025/26, rising to 10.75%, 35.75%, or 39.35% from 6 April 2026, depending on your other income.</p>
 
 <p>But running a property company is not the same as running a trading company. The rules differ in several key ways.</p>
 
@@ -79,17 +79,15 @@ faqs:
 
 <h3>Directors Loan Account Risks</h3>
 
-<p>Property investors often borrow from their company to fund deposits on new purchases. If the loan exceeds £10,000, it is a benefit in kind. You pay tax on the beneficial loan interest. If the loan is not repaid within 9 months and 1 day of the company year-end, the company pays <strong>S455 tax</strong> at 33.75% of the outstanding amount. That tax is refundable when the loan is repaid, but it ties up cash for months or years.</p>
+<p>Property investors often borrow from their company to fund deposits on new purchases. If the loan exceeds £10,000, it is a benefit in kind. You pay tax on the beneficial loan interest. If the loan is not repaid within 9 months and 1 day of the company year-end, the company pays <strong>S455 tax</strong> at 33.75% of the outstanding amount for loans made in 2025/26, rising to 35.75% for loans made on or after 6 April 2026. That tax is refundable when the loan is repaid, but it ties up cash for months or years.</p>
 
 <p>A general accountant may not track director loans closely. A property specialist will flag the repayment deadline before it passes.</p>
 
-<h2>Furnished Holiday Lettings: The Tax-Efficient Sweet Spot</h2>
+<h2>Furnished Holiday Lettings: A Regime Now Abolished</h2>
 
-<p>Furnished holiday lettings (FHLs) are treated as a trade for tax purposes, not as property investment. That means you can claim capital allowances on furniture and equipment. You can deduct mortgage interest in full (the restriction does not apply). You can claim BADR on sale. And you can use FHL profits to contribute to a pension and get tax relief.</p>
+<p>The furnished holiday letting (FHL) regime was abolished from 6 April 2025. Before that date, FHLs were treated as a trade for tax purposes, which gave landlords access to full mortgage interest deduction, capital allowances on furniture and equipment, BADR eligibility on sale, and pension-relievable earnings. None of those advantages apply to lettings from 6 April 2025 onward.</p>
 
-<p>But the conditions are strict. The property must be available for letting to the public for at least 210 days per year. It must be actually let for at least 105 days. Short-term lets of less than 31 consecutive days are the key. And you must not occupy it for more than 155 days per year.</p>
-
-<p>A general accountant may not know these rules. A specialist property accountant will structure your portfolio to maximise FHL treatment where it makes sense, and warn you if your letting pattern falls short of the thresholds.</p>
+<p>FHL income is now taxed as ordinary property income. The 20% finance-cost reducer applies instead of full interest relief. FHL gains do not qualify for BADR. FHL profits are not relevant earnings for pension contribution purposes. If you own a property that was previously run as a furnished holiday let, a specialist accountant can advise on the tax implications of the transition and any planning steps that remain open to you.</p>
 
 <h2>VAT and Property: More Complex Than You Think</h2>
 
@@ -111,7 +109,7 @@ faqs:
 <li><strong>Do they use property-specific software?</strong> Xero and FreeAgent are fine for standard bookkeeping. For property portfolios, look for tools like <strong>Hammock</strong> (for buy-to-let landlords) or <strong>Limeade</strong> (for portfolio management).</li>
 </ul>
 
-<p>Our <a href="/about">ICAEW qualified team</a> at Holloway Davies handles property portfolios of all sizes, from single buy-to-let landlords in Sheffield to multi-million-pound commercial property companies in Canary Wharf. We file ATED returns, calculate SDLT on complex acquisitions, and structure portfolios to minimise tax within the rules.</p>
+<p>Our <a href="/about">experienced team</a> at Holloway Davies handles property portfolios of all sizes, from single buy-to-let landlords in Sheffield to multi-million-pound commercial property companies in Canary Wharf. We file ATED returns, calculate SDLT on complex acquisitions, and structure portfolios to minimise tax within the rules.</p>
 
 <h2>The Cost of Getting It Wrong</h2>
 

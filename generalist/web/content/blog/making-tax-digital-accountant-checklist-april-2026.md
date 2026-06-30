@@ -16,7 +16,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/a-mobile-phone-and-eyeglasses-on-top-of-the-documents-near-the-laptop-8962451/"
   source: "Pexels"
 h1: "Making Tax Digital Accountant Checklist For The April 2026 Go-live"
-summary: "MTD for Income Tax Self Assessment (ITSA) goes live in April 2026 for sole traders and landlords with qualifying income over £50,000. If you still use paper records or spreadsheets, this month-by-month checklist tells you exactly what to do and when. Our ICAEW qualified team breaks down the preparation timeline."
+summary: "MTD for Income Tax Self Assessment (ITSA) goes live in April 2026 for sole traders and landlords with qualifying income over £50,000. If you still use paper records or spreadsheets, this month-by-month checklist tells you exactly what to do and when. Our specialist team breaks down the preparation timeline."
 schema: ""
 faqs:
   - question: "What happens if I miss a quarterly MTD submission deadline?"
@@ -31,7 +31,7 @@ faqs:
 
 <p>If you are a sole trader or landlord earning over £50,000 a year from self-employment or property income, HMRC will require you to follow Making Tax Digital (MTD) rules from April 2026. That means no more paper records. No more dropping a shoebox of receipts on your accountant's desk in January. You will need to use compatible software to record your income and expenses digitally, and submit quarterly updates to HMRC.</p>
 
-<p>This is not a distant future change. It is 18 months away at the time of writing. For a sole trader currently using paper records, the transition requires planning. As <a href="/about">ICAEW qualified accountants</a>, we have built a month-by-month preparation checklist so you know exactly what to do and when.</p>
+<p>This is not a distant future change. It is 18 months away at the time of writing. For a sole trader currently using paper records, the transition requires planning. We have built a month-by-month preparation checklist so you know exactly what to do and when.</p>
 
 <h2>Who Is Affected By The April 2026 Go-Live?</h2>
 
@@ -45,9 +45,8 @@ faqs:
 
 <ul>
 <li>Maintain digital records of all business income and expenses using MTD-compatible software</li>
-<li>Submit a quarterly summary of income and expenses to HMRC within one month of each quarter end</li>
-<li>Submit an end-of-period statement after your final quarter, confirming the figures</li>
-<li>Submit a final declaration (replacing the current self assessment return) by 31 January</li>
+<li>Submit a quarterly summary of income and expenses to HMRC by the 7th of the month after each quarter end (for example, 7 August for the quarter to 5 July)</li>
+<li>Submit a final declaration (replacing the current self assessment return) by 31 January, confirming the year's figures</li>
 </ul>
 
 <p>The quarterly updates are not tax calculations. They are summary data. HMRC uses them to build a picture of your trading throughout the year. You still calculate your tax once at year-end.</p>
@@ -87,7 +86,7 @@ faqs:
 <li>Quarter 4: 6 January to 5 April</li>
 </ul>
 
-<p>You have one month from the end of each quarter to submit the update. That means Q1 is due by 5 August 2025.</p>
+<p>The deadline for each quarterly update is the 7th of the month after the quarter end: 7 August (Q1), 7 November (Q2), 7 February (Q3), 7 May (Q4). That means Q1 is due by 7 August 2025.</p>
 
 <h3>Month 6 Before Go-Live: October 2025</h3>
 
@@ -101,7 +100,7 @@ faqs:
 
 <p>By now you should have submitted three voluntary quarterly updates (Q1, Q2, Q3). Your accountant should have reviewed each one.</p>
 
-<p>Check that your end-of-period statement for the 2025/26 tax year is ready. This is the final step before the year-end declaration. Your software will generate this automatically from your quarterly submissions.</p>
+<p>Confirm that your software is ready to generate the final declaration for the 2025/26 tax year from your quarterly submissions. This is the year-end step that replaces the old self assessment return.</p>
 
 <p>File your 2024/25 self assessment return as normal by 31 January 2026. MTD does not replace this return for the 2025/26 year. The 2025/26 return is the last one you will file under the old system.</p>
 
@@ -115,7 +114,7 @@ faqs:
 
 <h3>Go-Live: April 2026</h3>
 
-<p>From 6 April 2026, you must submit quarterly updates for all quarters in the 2026/27 tax year. Your first mandatory submission is due by 5 August 2026 for the period April to July 2026.</p>
+<p>From 6 April 2026, you must submit quarterly updates for all quarters in the 2026/27 tax year. Your first mandatory submission is due by 7 August 2026 for the period April to July 2026.</p>
 
 <p>If you have followed this checklist, you will be submitting your fourth voluntary quarterly update in April 2026. The mandatory process will be routine.</p>
 
@@ -152,14 +151,14 @@ faqs:
 
 <h2>How Your Accountant Can Help</h2>
 
-<p>As <a href="/services">ICAEW qualified accountants</a>, we handle the technical side of MTD migration for our clients. That includes:</p>
+<p>We handle the technical side of MTD migration for our clients. That includes:</p>
 
 <ul>
 <li>Recommending the right software for your business type and size</li>
 <li>Setting up the software with your opening balances</li>
 <li>Training you on daily transaction recording</li>
 <li>Reviewing and submitting quarterly updates on your behalf</li>
-<li>Filing the end-of-period statement and final declaration</li>
+<li>Filing the final declaration to close out the tax year</li>
 </ul>
 
 <p>We also handle the transition from paper to digital records. If you have a shoebox of receipts from 2024/25, we can reconstruct your opening position and enter it into the software.</p>

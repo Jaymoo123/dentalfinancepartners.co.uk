@@ -33,7 +33,7 @@ faqs:
 
 <p>The short answer is yes, in most cases. But the process is not straightforward. You cannot simply ask HMRC to write a cheque to you personally. A company is a separate legal entity. When it is dissolved, its assets (including tax refunds) pass to the Crown. This is called Bona Vacantia.</p>
 
-<p>This article explains exactly how to claim a <strong>corporation tax refund closed company</strong> situations, what the risks are, and how long the process takes. As ICAEW qualified accountants, we have handled these cases for clients who thought the money was lost. It is rarely lost. It just takes the right procedure.</p>
+<p>This article explains exactly how to claim a <strong>corporation tax refund closed company</strong> situations, what the risks are, and how long the process takes. We have handled these cases for clients who thought the money was lost. It is rarely lost. It just takes the right procedure.</p>
 
 <h2>Why a Corporation Tax Refund Arises After Dissolution</h2>
 
@@ -102,7 +102,7 @@ faqs:
 
 <h2>What About R&D Tax Credits After Dissolution?</h2>
 
-<p>R&D tax credits are a common source of post-dissolution refunds. A company may have been loss-making in its final year and entitled to a payable R&D credit of up to 10% of the surrenderable loss (under the merged R&D scheme from April 2024) or 14.5% (under the old SME scheme before April 2024).</p>
+<p>R&D tax credits are a common source of post-dissolution refunds. A company may have been loss-making in its final year and entitled to a payable R&D credit. Under the merged RDEC scheme (for accounting periods beginning on or after 1 April 2024), a 20% taxable expenditure credit applies. R&D-intensive SMEs where qualifying R&D costs are at least 30% of total costs can instead claim under Enhanced R&D Intensive Support (ERIS), which gives a 14.5% payable credit. Before April 2024, the old SME scheme provided a 14.5% payable credit on the surrenderable loss.</p>
 
 <p>If the company was dissolved before submitting the R&D claim, the situation is more complex. HMRC will not process an R&D claim for a dissolved company. You must restore the company first. Then file the R&D claim. Then HMRC will review it, potentially open an enquiry, and eventually pay the credit.</p>
 

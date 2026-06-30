@@ -48,7 +48,7 @@ faqs:
 <li><strong>Payroll integration.</strong> If you use Xero Payroll or BrightPay linked to Xero, your accountant runs payroll, submits RTI returns to HMRC, and posts the journals automatically.</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we see businesses that use Xero properly save an average of 10 to 15 hours per year on bookkeeping alone compared to paper-based or spreadsheet systems. That time is better spent on your actual business.</p>
+<p>We see businesses that use Xero properly save an average of 10 to 15 hours per year on bookkeeping alone compared to paper-based or spreadsheet systems. That time is better spent on your actual business.</p>
 
 <h2>Why Use a Xero Specialist Instead of a General Accountant?</h2>
 
@@ -148,4 +148,4 @@ faqs:
 
 <p>If your current accountant does not log in to your Xero file regularly, does not send you management accounts, or asks you to export data for them, it is worth considering a switch. The transition is simple, and the benefits are immediate.</p>
 
-<p>For a full list of the services we offer as ICAEW qualified accountants, see our <a href="/services">services page</a>. You can also read our <a href="/blog/bookkeeping-and-compliance">bookkeeping and compliance articles</a> for more on how we work with Xero.</p>
+<p>For a full list of the services we offer as specialist accountants, see our <a href="/services">services page</a>. You can also read our <a href="/blog/bookkeeping-and-compliance">bookkeeping and compliance articles</a> for more on how we work with Xero.</p>

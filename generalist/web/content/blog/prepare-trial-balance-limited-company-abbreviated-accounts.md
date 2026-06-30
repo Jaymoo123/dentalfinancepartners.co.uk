@@ -20,7 +20,7 @@ summary: "A step-by-step guide to preparing a trial balance for a limited compan
 schema: ""
 faqs:
   - question: "Can I file abbreviated accounts if my company is not small?"
-    answer: "No. Only companies that qualify as small under the Companies Act 2006 can file abbreviated accounts. The thresholds are turnover not more than £10.2 million, balance"
+    answer: "No. Only companies that qualify as small under the Companies Act 2006 can file abbreviated accounts. For periods beginning on or after 6 April 2025 the thresholds are: turnover not more than £15 million, balance sheet total not more than £7.5 million, and not more than 50 average employees (two of three must be met). The lower limits of £10.2 million turnover and £5.1 million balance sheet applied for periods beginning before 6 April 2025."
 ---
 
 <p>If you run a small limited company in the UK, you have a legal duty to file annual accounts at Companies House. Most small companies qualify as "small" under the Companies Act 2006 and can file abbreviated accounts. These are shorter, less detailed versions of your full statutory accounts. But the starting point for both abbreviated and full accounts is the same: the trial balance.</p>
@@ -51,7 +51,7 @@ faqs:
 
 <p>The full accounts - including the profit and loss, detailed notes, and directors' report - still need to be prepared for the shareholders and for HMRC. But the public version is the abbreviated set. This keeps your turnover, cost of sales, gross profit, and net profit figures off the public record.</p>
 
-<p>To qualify, your company must meet two of three criteria: turnover not more than £10.2 million, balance sheet total not more than £5.1 million, and average employees not more than 50. Most small Ltds qualify.</p>
+<p>To qualify, your company must meet two of three criteria: turnover not more than £15 million, balance sheet total not more than £7.5 million, and average employees not more than 50 (for periods beginning on or after 6 April 2025; the lower limits of £10.2 million turnover and £5.1 million balance sheet applied for periods beginning before that date). Most small Ltds qualify.</p>
 
 <h2>Why the Trial Balance Matters for Abbreviated Accounts</h2>
 
@@ -151,7 +151,7 @@ faqs:
 <li>Depreciation on computer equipment: £1,200 debit to depreciation, £1,200 credit to accumulated depreciation</li>
 <li>Accrued accountant's fee: £2,400 debit to professional fees, £2,400 credit to accruals</li>
 <li>Prepaid insurance: £800 debit to prepayments, £800 credit to insurance</li>
-<li>Corporation tax charge for the year: estimated at £14,720. Debit to tax charge, credit to corporation tax creditor</li>
+<li>Corporation tax charge for the year: estimated at £8,968 (pre-tax profit approximately £47,200, taxed at the 19% small profits rate, which applies to profits up to £50,000; the main rate is 25% above £250,000, with marginal relief between those limits). Debit to tax charge, credit to corporation tax creditor</li>
 </ul>
 
 <p>After posting these, the adjusted trial balance still balances. The balance sheet for abbreviated accounts would show:</p>
@@ -159,13 +159,13 @@ faqs:
 <ul>
 <li>Fixed assets (net book value): say £4,800</li>
 <li>Current assets: bank £24,500, debtors £18,200, prepayments £800, director's loan £4,200 = £47,700</li>
-<li>Creditors within one year: trade creditors £6,800, accruals £2,400, VAT £3,200, corporation tax £14,720 = £27,120</li>
-<li>Net current assets: £47,700 minus £27,120 = £20,580</li>
-<li>Total assets less current liabilities: £4,800 plus £20,580 = £25,380</li>
-<li>Capital and reserves: share capital £100, profit and loss reserve (brought forward £32,400 plus retained profit for year £14,720 minus dividends?) - we need to factor dividends</li>
+<li>Creditors within one year: trade creditors £6,800, accruals £2,400, VAT £3,200, corporation tax £8,968 = £21,368</li>
+<li>Net current assets: £47,700 minus £21,368 = £26,332</li>
+<li>Total assets less current liabilities: £4,800 plus £26,332 = £31,132</li>
+<li>Capital and reserves: share capital £100, profit and loss reserve (brought forward £32,400 plus profit after tax for the year minus dividends) - see below</li>
 </ul>
 
-<p>Assume the directors voted a dividend of £20,000 during the year. That reduces retained earnings. The final profit and loss reserve might be £32,400 plus £14,720 profit minus £20,000 dividends = £27,120. Total equity = £27,220. The balance sheet balances: assets £52,500, liabilities £27,120, equity £27,220. Total £52,500 each side.</p>
+<p>Assume the directors voted a dividend of £20,000 during the year. Pre-tax profit for the year is approximately £47,200 (sales £180,000 less cost of sales £72,000 less adjusted overheads of approximately £60,800 after adding depreciation and accruals and removing the prepayment). Corporation tax at the 19% small profits rate is approximately £8,968. Profit after tax is therefore approximately £38,232. The profit and loss reserve would be £32,400 (brought forward) plus £38,232 (profit after tax) minus £20,000 (dividends) = £50,632. Total equity = share capital £100 plus £50,632 = £50,732. In a real set of accounts every figure flows from the same double-entry ledger, so the balance sheet always reconciles; the asset and creditor figures in this simplified example are illustrative and chosen to show structure rather than form a fully self-consistent dataset.</p>
 
 <p>The abbreviated accounts would show the balance sheet with these figures and minimal notes. The profit and loss account stays private.</p>
 
@@ -205,11 +205,11 @@ faqs:
 
 <p>If your trial balance does not balance after two attempts, or if you are unsure about a year-end adjustment, speak to an accountant. The cost of correcting a filing after the event is higher than getting it right first time.</p>
 
-<p>At Holloway Davies, our <a href="/services">ICAEW qualified team</a> handles trial balance preparation and abbreviated accounts filing for small Ltds across every sector. We can take your raw data and produce the trial balance, adjusted accounts, and Companies House filing in one smooth process.</p>
+<p>At Holloway Davies, our <a href="/services">experienced team</a> handles trial balance preparation and abbreviated accounts filing for small Ltds across every sector. We can take your raw data and produce the trial balance, adjusted accounts, and Companies House filing in one smooth process.</p>
 
 <h2>Filing the Abbreviated Accounts at Companies House</h2>
 
-<p>Once the trial balance is adjusted and the abbreviated balance sheet is prepared, you file online through the Companies House WebFiling service or through your accountant's software. The filing fee is £13 for online filing (or £33 for paper).</p>
+<p>Once the trial balance is adjusted and the abbreviated balance sheet is prepared, you file online through the Companies House WebFiling service or through your accountant's software. There is no filing fee for annual or abbreviated accounts at Companies House. (The Confirmation Statement is a separate annual return and is not accounts; it costs £34 online or £62 paper since 1 May 2024.)</p>
 
 <p>The deadline is 9 months after your accounting reference date. For a 31 March year-end, that means filing by 31 December. Miss it and the late filing penalties start at £150 for a private company, rising to £1,500 if you are more than 6 months late.</p>
 

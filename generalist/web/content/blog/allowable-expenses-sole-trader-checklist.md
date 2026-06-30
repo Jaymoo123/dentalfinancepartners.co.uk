@@ -17,9 +17,7 @@ imageCredit:
   source: Pexels
 h1: What Expenses Can a Sole Trader Claim? The 2025/26 Allowable Expenses Checklist
 summary: A practical, no-nonsense checklist of allowable expenses for UK sole traders. Covers what you can claim, what you cannot, and how to handle the tricky ones like home office and vehicle costs.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"What Expenses Can a Sole Trader Claim? The 2025/26 Allowable Expenses Checklist","description":"Claim every allowable expense as a sole trader: home office, vehicle, travel and software. The simplified home-working flat rate caps at £312 a year.","url":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/allowable-expenses-sole-trader-checklist","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
-  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/allowable-expenses-sole-trader-checklist"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/allowable-expenses-sole-trader-checklist.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Sole Trader and Self Employment","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment"},{"@type":"ListItem","position":3,"name":"What Expenses Can a Sole Trader Claim? The 2025/26 Allowable Expenses Checklist","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/allowable-expenses-sole-trader-checklist"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I claim a mobile phone as a sole trader?","acceptedAnswer":{"@type":"Answer","text":"Yes, if you have a separate phone line used exclusively for business, the full cost is allowable. If you use your personal phone for business calls, you can claim a proportion of the line rental plus the full cost of business calls. A flat 20% of the total bill is a common reasonable estimate HMRC accepts, provided your business use is genuine."}},{"@type":"Question","name":"Can I claim coffee and lunch as a sole trader?","acceptedAnswer":{"@type":"Answer","text":"Only if you are travelling for business and away from your normal place of work. A coffee while working from your home office is not allowable. A sandwich
-  bought during a business trip where you are away overnight or for a significant period is allowable under subsistence rules. HMRC''s benchmark rates are £5 breakfast, £5 lunch, £10 dinner when staying away overnight."}},{"@type":"Question","name":"Can I claim my mortgage payments as a sole trader working from home?","acceptedAnswer":{"@type":"Answer","text":"You can claim the interest element of your mortgage, not the capital repayments. You calculate the business proportion based on floor area or the number of rooms used. If your home office is 10% of your house, you claim 10% of the mortgage interest. You cannot claim the capital repayment part."}},{"@type":"Question","name":"What is the difference between simplified expenses and actual costs for a home office?","acceptedAnswer":{"@type":"Answer","text":"Simplified expenses use HMRC''s flat rates based on hours worked from home per month. Maximum claim is £312 per year. Actual costs involve calculating the business proportion of your actual household bills. For most sole traders with a dedicated home office, actual costs produce a higher claim. Simplified expenses are simpler but often lower. You choose whichever"}}]}]}'
+schema: ""
 faqs:
 - question: Can I claim a mobile phone as a sole trader?
   answer: Yes, if you have a separate phone line used exclusively for business, the full cost is allowable. If you use your personal phone for business calls, you can claim a proportion of the line rental plus the full cost of business calls. A flat 20% of the total bill is a common reasonable estimate HMRC accepts, provided your business use is genuine.
@@ -32,8 +30,8 @@ faqs:
 metaTitle_prev: 'Allowable Expenses Sole Trader: 2025/26 Deductions Checklist'
 metaDescription_prev: Full list of allowable expenses for sole traders in 2025/26. Covers home office, vehicle, equipment, travel, and software. Real examples with HMRC rules.
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -41,7 +39,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>This is your 2025/26 checklist of <strong>allowable expenses sole trader</strong> style. It covers every major category, explains the rules in plain English, and flags the traps that trip people up.</p>
 
-<p>We are ICAEW qualified accountants. We see the same mistakes every year: the missed mileage, the forgotten software subscriptions, the home office claim that is too low because the client was not sure. This guide fixes that.</p>
+<p>We see the same mistakes every year: the missed mileage, the forgotten software subscriptions, the home office claim that is too low because the client was not sure. This guide fixes that.</p>
 
 <h2>What Counts as an Allowable Expense for a Sole Trader?</h2>
 
@@ -67,7 +65,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <h3>Vehicle and Travel Costs</h3>
 <ul>
 <li><strong>Fuel</strong> for business travel. You can claim the actual cost of fuel for business miles, or use HMRC's approved mileage rates. Most sole traders find the mileage rate simpler.</li>
-<li><strong>Approved mileage rates for 2025/26:</strong> 45p per mile for the first 10,000 business miles in a year, 25p per mile after that. For motorcycles, 24p per mile. For bicycles, 20p per mile.</li>
+<li><strong>Approved mileage rates:</strong> 55p per mile for the first 10,000 business miles in a year (2026/27 rate; 45p applied up to 2025/26), 25p per mile after that. For motorcycles, 24p per mile. For bicycles, 20p per mile.</li>
 <li><strong>Parking, tolls, and congestion charges</strong> incurred on business journeys.</li>
 <li><strong>Train, bus, and air fares</strong> for business travel.</li>
 <li><strong>Hotel accommodation</strong> when you are away from home overnight for business.</li>
@@ -155,7 +153,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>You have the same two-option choice with vehicles. Simplified expenses (mileage rate) or actual costs.</p>
 
-<p><strong>Mileage rate</strong>: 45p per mile for the first 10,000 business miles, 25p thereafter. You keep a mileage log. You claim no other vehicle costs. No fuel receipts. No servicing costs. No insurance. It is all wrapped into the rate.</p>
+<p><strong>Mileage rate</strong>: 55p per mile for the first 10,000 business miles (2026/27 rate; 45p applied up to 2025/26), 25p thereafter. You keep a mileage log. You claim no other vehicle costs. No fuel receipts. No servicing costs. No insurance. It is all wrapped into the rate.</p>
 
 <p><strong>Actual costs</strong>: You add up all your vehicle running costs (fuel, insurance, repairs, servicing, MOT, road tax, finance costs) and claim the business proportion. You need to know your total mileage and your business mileage for the year. If you drive 12,000 miles total and 8,000 are business, you claim 66.7% of the running costs.</p>
 
@@ -205,7 +203,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>You are considering incorporating as a limited company.</li>
 </ul>
 
-<p>We are ICAEW qualified accountants. We handle sole traders across every sector: trades, consultancies, creative businesses, tech, retail, and services. If you want us to review your expense claims or handle your Self Assessment, <a href="/contact">get in touch</a>. We will make sure you are claiming everything you are entitled to and nothing you are not.</p>
+<p>We handle sole traders across every sector: trades, consultancies, creative businesses, tech, retail, and services. If you want us to review your expense claims or handle your Self Assessment, <a href="/contact">get in touch</a>. We will make sure you are claiming everything you are entitled to and nothing you are not.</p>
 
 <h2>Related articles in Sole Trader and Self Employment</h2>
 <ul>

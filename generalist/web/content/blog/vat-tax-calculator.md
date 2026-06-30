@@ -21,7 +21,7 @@ faqs:
 - question: Do I need to use a VAT tax calculator if I have accounting software?
   answer: Your accounting software calculates your VAT automatically for each return. But a standalone VAT tax calculator is useful for quick checks, pricing jobs, and estimating cash flow between returns. It is also helpful for verifying that your software has applied the correct rate, especially if you deal with mixed rates or export sales.
 - question: What happens if I export goods to a customer outside the UK?
-  answer: Export sales are generally zero rated for VAT. You charge 0% VAT but can still reclaim input VAT on related costs. You must hold evidence that the goods left the UK within 180 days of shipment. If you miss the deadline, HMRC treats the sale as standard rated at 20%. A VAT tax calculator can help you estimate the liability if you are approaching the deadline without the right paperwork.
+  answer: Export sales are generally zero rated for VAT. You charge 0% VAT but can still reclaim input VAT on related costs. Post-Brexit, all exports, whether to EU or non-EU destinations, are governed by the same rules under HMRC VAT Notice 703. You must hold evidence that the goods left the UK within 3 months of the time of supply. If you miss that window, HMRC treats the sale as standard rated at 20%. A VAT tax calculator can help you estimate the liability if you are approaching that deadline without the right paperwork.
 dateModified: '2026-05-19'
 sourcesVerifiedAt: '2026-05-19'
 sourceDomains:
@@ -78,7 +78,7 @@ imageCredit:
 
 <p>If you sell goods to customers outside the UK, the VAT treatment changes. Export sales are generally zero rated for VAT purposes. That means you charge 0% VAT on the invoice, but you can still reclaim the input VAT on your related costs <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</p>
 
-<p>The 0% VAT rate on export sales is a preferential rate <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. You must hold evidence that the goods left the UK. For exports to an EU country, you have 180 days from the date the goods were shipped to submit the VAT return and documentary package confirming the 0% rate <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. For exports outside the EU, the 180 day period runs from the date the goods were cleared for export by customs <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</p>
+<p>The 0% VAT rate on export sales is preferential, but it is not automatic. Post-Brexit, all goods sold to customers outside the UK, whether in the EU or elsewhere, are treated as exports to third countries and governed by the same rules under HMRC VAT Notice 703 <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. There is no longer a separate EU regime. You must hold valid evidence that the goods left the UK within 3 months of the time of supply.</p>
 
 <p>If you miss the deadline, HMRC will treat the sale as standard rated. You will owe 20% VAT on the invoice value, plus potential penalties. A <strong>vat tax calculator</strong> cannot fix missing paperwork, but it can help you estimate the VAT liability if you are approaching the deadline without the right evidence.</p>
 
@@ -142,7 +142,7 @@ imageCredit:
   <li id="ref-1"><strong>icaew.com</strong>: <a href="https://www.icaew.com/insights/tax-news/2025/oct-2025/economy-explainers-what-is-vat" rel="noopener noreferrer">Economy explainers: what is VAT? - ICAEW.com</a></li>
   <li id="ref-2"><strong>aka.hmrc.gov.uk</strong>: <a href="http://aka.hmrc.gov.uk/tools/vatpaymentsdeadline/index.htm" rel="noopener noreferrer">VAT payment deadline calculator - GOV.UK</a></li>
   <li id="ref-3"><strong>gov.uk</strong>: <a href="https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay" rel="noopener noreferrer">VAT Flat Rate Scheme: Work out your flat rate - GOV.UK</a></li>
-  <li id="ref-4"><strong>accaglobal.com</strong>: <a href="https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f6/technical-articles/vat-calculation.html" rel="noopener noreferrer">The VAT calculation for export of goods | ACCA Global</a></li>
+  <li id="ref-4"><strong>gov.uk</strong>: <a href="https://www.gov.uk/guidance/vat-exports-dispatches-and-supplying-goods-abroad-notice-703" rel="noopener noreferrer">VAT on exports: HMRC Notice 703 - GOV.UK</a></li>
   <li id="ref-5"><strong>bankofengland.co.uk</strong>: <a href="https://www.bankofengland.co.uk/monetary-policy-report/2025/february-2025" rel="noopener noreferrer">Monetary Policy Report - February 2025 | Bank of England</a></li>
 </ol>
 

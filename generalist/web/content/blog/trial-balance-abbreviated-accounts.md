@@ -31,7 +31,7 @@ faqs:
 
 <p>If you run a small limited company and file abbreviated accounts at Companies House, the trial balance is where your year-end process starts. Without a clean trial balance, your abbreviated accounts will contain errors, and that means filing corrections, late filing penalties, or HMRC queries.</p>
 
-<p>This guide walks you through preparing a trial balance specifically for a limited company filing abbreviated accounts. We cover the double entry basics, the adjustments you need to make before the year-end, and how the trial balance flows into your abbreviated accounts filing. We are ICAEW qualified accountants and work with small UK limited companies across every sector, from a two-director consultancy in Manchester's Northern Quarter to a four-employee trade business in Sheffield's Kelham Island.</p>
+<p>This guide walks you through preparing a trial balance specifically for a limited company filing abbreviated accounts. We cover the double entry basics, the adjustments you need to make before the year-end, and how the trial balance flows into your abbreviated accounts filing. We work with small UK limited companies across every sector, from a two-director consultancy in Manchester's Northern Quarter to a four-employee trade business in Sheffield's Kelham Island.</p>
 
 <h2>What Is a Trial Balance and Why Does It Matter for Abbreviated Accounts?</h2>
 
@@ -105,7 +105,7 @@ faqs:
 
 <h3>Directors' Loan Account</h3>
 
-<p>Review the director's loan account balance. If the director owes the company more than £10,000 at any point in the year, a benefit in kind arises and must be reported on a P11D. If the loan is not repaid within nine months and one day of the year-end, the company pays S455 tax at 33.75% on the outstanding amount. This is a common trap. If your director's loan account is overdrawn by £14,720 at year-end and not repaid within the window, the company will owe £4,968 in S455 tax.</p>
+<p>Review the director's loan account balance. If the director owes the company more than £10,000 at any point in the year, a benefit in kind arises and must be reported on a P11D. If the loan is not repaid within nine months and one day of the year-end, the company pays S455 tax at 35.75% on the outstanding amount for loans made on or after 6 April 2026 (33.75% for loans made before that date). This is a common trap. If your director's loan account is overdrawn by £14,720 at year-end and not repaid within the window, the company will owe £5,262.40 in S455 tax (at the 2026/27 rate).</p>
 
 <p>If the company owes the director money (credit balance on the loan account), that is fine. It is a creditor of the company and does not trigger the same issues.</p>
 
@@ -177,7 +177,7 @@ faqs:
 
 <p>If your trial balance does not balance, or if you are unsure about an adjustment, involve your accountant before filing. Filing incorrect abbreviated accounts at Companies House carries penalties. Late filing penalties start at £150 for a private company one month late and rise to £1,500 for six months or more. It is cheaper to pay for an hour of your accountant's time to fix the trial balance than to file incorrect accounts and deal with the consequences.</p>
 
-<p>As ICAEW qualified accountants, we prepare abbreviated accounts for small limited companies across the UK. If your trial balance is causing you problems, we can help. <a href="/contact">Contact our team</a> to discuss your year-end filing.</p>
+<p>We prepare abbreviated accounts for small limited companies across the UK. If your trial balance is causing you problems, we can help. <a href="/contact">Contact our team</a> to discuss your year-end filing.</p>
 
 <h2>Final Thoughts</h2>
 

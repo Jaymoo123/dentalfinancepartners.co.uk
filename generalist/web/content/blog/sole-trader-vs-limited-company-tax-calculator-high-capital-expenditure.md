@@ -22,7 +22,7 @@ faqs:
   - question: "Does the Annual Investment Allowance make a limited company always better for capital-intensive businesses?"
     answer: "No. The AIA is available to both structures. The limited company wins when profits are high enough that the lower corporation tax rate on retained profits outweighs the double layer of tax (corporation tax plus dividend tax) on extracted profits. At lower profit levels, the sole trader's single layer of income tax often produces a better net result, even with heavy capital spend. Run the numbers for your specific profit and spend levels."
   - question: "Can I claim the AIA on a van I buy for my sole trader business?"
-    answer: "Yes, provided the van is used for business purposes. Vans with CO2 emissions above 50g/km go into the main pool and qualify for the 18% writing down allowance, not the 100% AIA. Vans with emissions at or below 50g/km qualify for a 100% first year allowance. Most standard diesel vans fall into the main pool. Check the specific emissions figure before claiming."
+    answer: "Yes, provided the van is used for business purposes. Vans are not cars for capital allowances purposes, so they qualify for 100% AIA regardless of CO2 emissions. The CO2 threshold applies only to cars under the capital allowances rules. A separate 100% first-year allowance under s.45D CAA 2001 is available for zero-emission goods vehicles, but this does not restrict AIA eligibility for other vans. Claim 100% AIA on the van in the year of purchase."
   - question: "What happens to the AIA if I incorporate partway through the year?"
     answer: "The sole trader claims the AIA on assets purchased before incorporation. The limited company claims the AIA on assets purchased after incorporation. Each entity gets its own £1,000,000 annual limit. But if you transfer assets from the sole trader to the company, the company cannot claim AIA on the transfer value. The company inherits the tax written down value from the sole trader and continues capital allowances from that point."
   - question: "Should I buy equipment before or after incorporating to maximise tax relief?"
@@ -37,7 +37,7 @@ faqs:
 
 <p>Capital expenditure changes the comparison because of the Annual Investment Allowance (AIA). The AIA lets you deduct 100% of the cost of most plant and machinery from your taxable profits in the year you buy it. But how that deduction works depends on whether you are a sole trader or a limited company. The difference can be worth tens of thousands of pounds.</p>
 
-<p>As ICAEW qualified accountants, we run these comparisons for clients across every sector. This article walks through the real numbers so you can make a decision that fits your specific situation.</p>
+<p>We run these comparisons for clients across every sector. This article walks through the real numbers so you can make a decision that fits your specific situation.</p>
 
 <h2>How the Annual Investment Allowance Works for Sole Traders and Limited Companies</h2>
 
@@ -62,12 +62,12 @@ faqs:
 <li>Taxable at 20% (basic rate): £37,700</li>
 <li>Taxable at 40% (higher rate): £24,730</li>
 <li>Income tax: £7,540 + £9,892 = £17,432</li>
-<li>Class 4 NIC: £3,722 (9% on profits between £12,570 and £50,270) + nil (2% on profits above £50,270 is £24,730 x 2% = £494, but wait, recalculate properly)</li>
+<li>Class 4 NIC: £2,262 (6% on profits between £12,570 and £50,270, from 6 April 2024) + £494 (2% on profits above £50,270: £24,730 x 2%); total £2,756</li>
 </ul>
 
-<p>Let me recalculate that clearly. Profit of £75,000. Class 4 NIC at 9% on profits between £12,570 and £50,270 is £37,700 x 9% = £3,393. Then 2% on profits above £50,270 is £24,730 x 2% = £494. Total Class 4 NIC: £3,887.</p>
+<p>Let me recalculate that clearly. Profit of £75,000. Class 4 NIC at 6% on profits between £12,570 and £50,270 is £37,700 x 6% = £2,262 (the main Class 4 rate was reduced from 9% to 6% from 6 April 2024). Then 2% on profits above £50,270 is £24,730 x 2% = £494. Total Class 4 NIC: £2,756.</p>
 
-<p>Total tax and NIC: £17,432 + £3,887 = £21,319. The contractor keeps £75,000 minus £21,319 = £53,681 after tax, plus the £85,000 of equipment now owned by the business.</p>
+<p>Total tax and NIC: £17,432 + £2,756 = £20,188. The contractor keeps £75,000 minus £20,188 = £54,812 after tax, plus the £85,000 of equipment now owned by the business.</p>
 
 <h3>Limited Company Calculation</h3>
 <ul>
@@ -79,30 +79,30 @@ faqs:
 
 <p>The company profit after the AIA is £75,000. Corporation tax at 19% on the first £50,000 = £9,500. The remaining £25,000 falls into the marginal relief band (£50,000 to £250,000). The effective rate on that £25,000 is approximately 26.5% after marginal relief. Corporation tax: £9,500 + £6,625 = £16,125.</p>
 
-<p>Now the director takes a salary of £12,570. The company deducts this, reducing taxable profit further to £62,430. Corporation tax recalculates: £50,000 at 19% = £9,500. Remaining £12,430 at marginal rate of 26.5% = £3,294. Total corporation tax: £12,794.</p>
+<p>Now the director takes a salary of £12,570 and the company pays employer NIC of £1,136 on it (see below). Both the salary and the employer NIC are deductible, reducing taxable profit to £75,000 minus £12,570 minus £1,136 = £61,294. Corporation tax recalculates: £50,000 at 19% = £9,500. Remaining £11,294 at marginal rate of 26.5% = £2,993. Total corporation tax: £12,493.</p>
 
-<p>The company pays employer NI on the salary above the secondary threshold of £9,100. That is £3,470 at 13.8% = £479. But if the company qualifies for Employment Allowance (common for single-director companies), that £479 is covered. We assume Employment Allowance applies here.</p>
+<p>The company pays employer NIC on the salary above the secondary threshold of £5,000 (from 6 April 2025; previously £9,100). That is £7,570 at 15% (from 6 April 2025; previously 13.8%) = £1,136. Single-director companies with no other employees are excluded from the Employment Allowance, so the full £1,136 is a company cost.</p>
 
 <p>The director receives the salary of £12,570. No income tax or NI due because it matches the personal allowance and primary NI threshold.</p>
 
-<p>Remaining profit in the company after salary and corporation tax: £75,000 minus £12,570 salary minus £12,794 corporation tax = £49,636. This is available as dividends.</p>
+<p>Remaining profit in the company after salary, employer NIC, and corporation tax: £75,000 minus £12,570 salary minus £1,136 employer NIC minus £12,493 corporation tax = £48,801. This is available as dividends.</p>
 
-<p>The director takes dividends of £37,700 to fill the basic rate band. Dividend tax at 8.75% on £37,700 minus the £500 dividend allowance = £37,200 x 8.75% = £3,255.</p>
+<p>The director takes dividends of £37,700 to fill the basic rate band. Dividend tax at 10.75% on £37,700 minus the £500 dividend allowance = £37,200 x 10.75% = £3,999 (the basic rate of dividend tax rose to 10.75% from 6 April 2026).</p>
 
-<p>The remaining £11,936 stays in the company as retained earnings. It can be drawn later or reinvested.</p>
+<p>The remaining £11,101 stays in the company as retained earnings. It can be drawn later or reinvested.</p>
 
-<p>Total personal tax and NI: £3,255. Total tax paid by company and director combined: £12,794 + £3,255 = £16,049.</p>
+<p>Total personal tax (dividend tax): £3,999. Total tax and NIC paid by company and director combined: £12,493 corporation tax plus £1,136 employer NIC plus £3,999 dividend tax = £17,628.</p>
 
-<p>The director personally keeps: £12,570 salary + £37,700 dividends minus £3,255 tax = £46,715. Plus £11,936 retained in the company. Total economic benefit: £58,651.</p>
+<p>The director personally keeps: £12,570 salary + £37,700 dividends minus £3,999 dividend tax = £46,271. Plus £11,101 retained in the company. Total economic benefit: £57,372.</p>
 
 <h3>The Comparison</h3>
-<p>Sole trader keeps £53,681 after tax. Limited company director keeps £46,715 personally plus £11,936 in the company, total £58,651. The limited company structure saves £4,970 in the first year.</p>
+<p>Sole trader keeps £54,812 after tax. Limited company director keeps £46,271 personally plus £11,101 in the company, total £57,372. The limited company structure saves £2,560 in the first year.</p>
 
-<p>But the real advantage comes in year two. The sole trader has no retained profits to reinvest. The limited company has £11,936 sitting in the business account, available for the next capital purchase or to cover a quiet month. That retained profit was only taxed at 19% corporation tax, not 40% income tax.</p>
+<p>But the real advantage comes in year two. The sole trader has no retained profits to reinvest. The limited company has £11,101 sitting in the business account, available for the next capital purchase or to cover a quiet month. That retained profit was only taxed at 19% corporation tax, not 40% income tax.</p>
 
 <h2>When the AIA Flips the Decision</h2>
 
-<p>The example above shows the limited company winning by about £5,000. But change the numbers and the result flips.</p>
+<p>The example above shows the limited company winning by about £2,560. But change the numbers and the result flips.</p>
 
 <p>If the contractor's profit before capital spend was £100,000 and capital spend was £85,000, the sole trader's taxable profit drops to £15,000. Income tax is minimal. The limited company still pays corporation tax on £15,000 and then dividend tax on extraction. In that scenario, the sole trader wins by roughly £2,000.</p>
 
@@ -140,9 +140,9 @@ faqs:
 
 <p>First, input your projected turnover and all running costs excluding capital spend. Get your profit before capital expenditure.</p>
 
-<p>Second, input your planned capital spend for the year. The calculator should apply 100% AIA to qualifying plant and machinery. It should also handle the restricted AIA for cars (only certain low-emission cars qualify for 100% first year allowances; most cars go into the main pool at 18% writing down allowance).</p>
+<p>Second, input your planned capital spend for the year. The calculator should apply 100% AIA to qualifying plant and machinery. It should also handle the restricted AIA for cars (only certain low-emission cars qualify for 100% first year allowances; most cars go into the main pool at 14% writing down allowance, reduced from 18% from 6 April 2026 for income tax and 1 April 2026 for corporation tax).</p>
 
-<p>Third, the calculator should model both structures with the correct tax rates and thresholds for the current tax year. For the sole trader, that means income tax at 20%, 40%, and 45% plus Class 4 NIC at 9% and 2%. For the limited company, that means corporation tax at 19%, marginal relief up to 26.5%, and the main rate of 25%.</p>
+<p>Third, the calculator should model both structures with the correct tax rates and thresholds for the current tax year. For the sole trader, that means income tax at 20%, 40%, and 45% plus Class 4 NIC at 6% and 2% (from 6 April 2024). For the limited company, that means corporation tax at 19%, marginal relief up to 26.5%, and the main rate of 25%.</p>
 
 <p>Fourth, the calculator must model the extraction strategy for the limited company. A salary of £12,570 is standard, but if you have other income or a working spouse, the optimal salary changes. Dividends should be modelled up to the basic rate band, with the £500 dividend allowance applied.</p>
 

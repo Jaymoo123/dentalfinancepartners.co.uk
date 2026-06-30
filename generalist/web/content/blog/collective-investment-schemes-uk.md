@@ -7,7 +7,7 @@ generator: deepseek-chat/legacy-bulk
 author: Holloway Davies Editorial Team
 category: Exit and Capital Gains
 metaTitle: 'Collective Investment Schemes: UK Guide for Business Owners'
-metaDescription: Understand collective investment schemes, how they work, and the tax implications for UK business owners. Practical guidance from ICAEW accountants.
+metaDescription: Understand collective investment schemes, how they work, and the tax implications for UK business owners. Practical guidance from our specialist accountants.
 altText: Professional accountant reviewing investment fund documents in a modern UK office
 image: https://images.pexels.com/photos/19599856/pexels-photo-19599856.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: What Is a Collective Investment Scheme? A UK Guide for Business Owners
@@ -109,7 +109,7 @@ imageCredit:
 
 <p><strong>Get professional advice.</strong> The rules around collective investment schemes are detailed and change regularly. HMRC's Investment Funds Manual runs to hundreds of pages. A qualified accountant can help you navigate the complexity.</p>
 
-<p>Our <a href="/about">team</a> at Holloway Davies are ICAEW qualified accountants. We specialise in working with UK business owners across every sector. If you are considering investing in a collective investment scheme, or if you already hold units or shares in one and want to understand the tax implications, <a href="/contact">get in touch</a>.</p>
+<p>Our <a href="/about">team</a> at Holloway Davies are specialist accountants. We specialise in working with UK business owners across every sector. If you are considering investing in a collective investment scheme, or if you already hold units or shares in one and want to understand the tax implications, <a href="/contact">get in touch</a>.</p>
 
 <p>We can review your current investments, model the tax outcomes, and help you structure your affairs to minimise tax while staying compliant with HMRC rules.</p>
 

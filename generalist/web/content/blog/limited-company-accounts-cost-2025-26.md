@@ -93,7 +93,7 @@ faqs:
 
 <h2>Typical Fee Ranges for 2025/26</h2>
 
-<p>These are realistic ranges for an ICAEW qualified firm like Holloway Davies. Your actual quote will vary, but this gives you a benchmark.</p>
+<p>These are realistic ranges for a qualified firm like Holloway Davies. Your actual quote will vary, but this gives you a benchmark.</p>
 
 <table>
 <tr><th>Business Type</th><th>Annual Fee Range (2025/26)</th></tr>
@@ -123,7 +123,7 @@ faqs:
 <li><strong>Ask for a scope of work.</strong> What exactly is included? Is the confirmation statement included? Are director self assessments included? Is VAT included? Get it in writing.</li>
 <li><strong>Ask about software.</strong> If the accountant uses Xero or FreeAgent, ask whether the software subscription is included or charged separately. Some firms bundle it. Others charge extra.</li>
 <li><strong>Ask about hidden extras.</strong> What happens if HMRC opens an enquiry into your return? Is that covered, or is it a separate charge? Most firms charge extra for enquiry work.</li>
-<li><strong>Check the firm's qualifications.</strong> An ICAEW qualified firm like ours brings a level of technical expertise and professional indemnity cover that a less qualified firm may not. That is worth paying for.</li>
+<li><strong>Check the firm's qualifications.</strong> A fully qualified firm brings a level of technical expertise and professional indemnity cover that a less qualified firm may not. That is worth paying for.</li>
 </ol>
 
 <h2>Is It Worth Paying More for a Better Accountant?</h2>
@@ -144,7 +144,7 @@ faqs:
 
 <h2>How We Price at Holloway Davies</h2>
 
-<p>We are an ICAEW qualified firm working with UK businesses of every shape. We do not have a single price for accounts because every business is different. Instead, we quote based on your specific circumstances after a free, no obligation conversation.</p>
+<p>We are a specialist accounting firm working with UK businesses of every shape. We do not have a single price for accounts because every business is different. Instead, we quote based on your specific circumstances after a free, no obligation conversation.</p>
 
 <p>Our typical range for a straightforward limited company with one director and turnover under £100k is between £600 and £900 a year. That includes the accounts, CT600, confirmation statement, and year end tax planning advice. If you need payroll, VAT, or director self assessment, we add those at transparent, pre-agreed rates.</p>
 

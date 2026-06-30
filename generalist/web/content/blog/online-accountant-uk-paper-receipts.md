@@ -77,7 +77,7 @@ faqs:
 
 <p>Once the receipt data is in the accounting software, the categorisation process is identical whether the receipt started as paper or digital. Your accountant looks at the transaction, decides which expense category it belongs to, and assigns it accordingly.</p>
 
-<p>The categories matter because they affect your tax position. A receipt for "office supplies" is a fully deductible expense. A receipt for "client entertainment" is only 50% deductible. A receipt for "capital equipment" might qualify for Annual Investment Allowance (AIA) at 100% relief. Getting the category wrong can cost you money.</p>
+<p>The categories matter because they affect your tax position. A receipt for "office supplies" is a fully deductible expense. A receipt for "client entertainment" is not deductible for tax purposes. HMRC disallows business entertainment in full when computing taxable profits (ITTOIA 2005 s.45 for income tax; CTA 2009 s.1298 for corporation tax), so the full cost must be added back in your tax return. A receipt for "capital equipment" might qualify for Annual Investment Allowance (AIA) at 100% relief. Getting the category wrong can cost you money.</p>
 
 <p>If you use the photo upload method, the software often suggests a category based on the supplier name. You can accept it or override it. Your accountant will review the categorisation during the regular bookkeeping checks and correct any mistakes before the year-end accounts are prepared.</p>
 
@@ -123,7 +123,7 @@ faqs:
 
 <p>That said, if you genuinely prefer paper, you can make it work with an online accountant. You just need to be organised about it. Keep your receipts in date order. Label them clearly. Send them to your accountant on a regular schedule, not in a panic at year end. And accept that the accountancy fees will be slightly higher to cover the extra processing time.</p>
 
-<p>As <a href="/about">ICAEW qualified accountants</a>, we work with clients across the spectrum. Some are fully digital. Some send us paper folders every quarter. Both approaches work. The key is finding the method that fits your business without creating unnecessary admin for you or your accountant.</p>
+<p>We work with clients across the spectrum. Some are fully digital. Some send us paper folders every quarter. Both approaches work. The key is finding the method that fits your business without creating unnecessary admin for you or your accountant.</p>
 
 <h2>How to Choose an Online Accountant for a Paper-Based Business</h2>
 

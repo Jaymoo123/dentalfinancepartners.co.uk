@@ -17,16 +17,15 @@ imageCredit:
   source: Pexels
 h1: How to Pay Yourself From a Limited Company When You Have a Separate PAYE Job
 summary: If you run a limited company alongside a full-time PAYE job, the standard director salary strategy can backfire. Your personal allowance may already be used up by your employment, and employer NI on a second salary costs you twice. This guide walks through the actual numbers for 2025/26, covering dividend timing, payroll setup, and tax code adjustments that most generic advice misses.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How to Pay Yourself From a Limited Company When You Have a Separate PAYE Job","description":"Got a PAYE job too? The £12,570 salary trick backfires when your allowance is used up, so dividends are usually the better route. 2025/26 numbers.","url":"https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/how-to-pay-yourself-from-limited-company-with-separate-paye-job","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal
-  taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/how-to-pay-yourself-from-limited-company-with-separate-paye-job"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/how-to-pay-yourself-from-limited-company-with-separate-paye-job.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Director Pay and Dividends","item":"https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends"},{"@type":"ListItem","position":3,"name":"How to Pay Yourself From a Limited Company When You Have a Separate PAYE Job","item":"https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/how-to-pay-yourself-from-limited-company-with-separate-paye-job"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I take dividends from my limited company if I already have a full-time job?","acceptedAnswer":{"@type":"Answer","text":"Yes. Dividends are paid from post-tax profits, so your employment income does not affect your ability to declare dividends. The only limit is that your company must have sufficient retained profits. Your dividend tax rate depends on your total income (salary plus"}}]}]}'
+schema: ""
 faqs:
 - question: Can I take dividends from my limited company if I already have a full-time job?
   answer: Yes. Dividends are paid from post-tax profits, so your employment income does not affect your ability to declare dividends. The only limit is that your company must have sufficient retained profits. Your dividend tax rate depends on your total income (salary plus
 metaTitle_prev: How to Pay Yourself From a Limited Company With a PAYE Job
 metaDescription_prev: Running a limited company alongside a PAYE job? Here is how to pay yourself efficiently, avoid NI traps, and keep your tax code correct. 2025/26 rates.
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -40,7 +39,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>The standard advice for a full-time director is to pay a salary up to the personal allowance (£12,570) and take the rest as dividends. The salary is tax-free for you (no income tax, no employee NI) and the company gets a corporation tax deduction. Dividends then use the remaining basic rate band and the £500 dividend allowance.</p>
 
-<p>That strategy relies on your personal allowance being available. If you have a PAYE job paying £40,000, your personal allowance is already allocated to that employment. Your limited company salary would be taxed at 20% from the first pound, plus employee NI at 8% above the primary threshold (£12,570) and employer NI at 13.8% above the secondary threshold (£9,100).</p>
+<p>That strategy relies on your personal allowance being available. If you have a PAYE job paying £40,000, your personal allowance is already allocated to that employment. Your limited company salary would be taxed at 20% from the first pound, plus employee NI at 8% above the primary threshold (£12,570) and employer NI at 15% above the secondary threshold (£5,000, from 6 April 2025).</p>
 
 <p>In plain terms: paying yourself a salary from your Ltd when you already earn £40,000 from a job costs you more in tax and NI than it saves in corporation tax. The maths flips completely.</p>
 
@@ -53,22 +52,23 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>Here is a worked example. You earn £50,000 from your PAYE job. Your limited company makes £30,000 profit after all expenses. If you take the £30,000 as salary, you pay:</p>
 
 <ul>
-<li>Income tax at 20% on the full £30,000 (your personal allowance is already used): £6,000</li>
-<li>Employee NI at 8% on £17,430 (earnings above £12,570): £1,394</li>
-<li>Employer NI at 13.8% on £20,900 (earnings above £9,100): £2,884</li>
-<li>Total tax and NI: £10,278. You keep £19,722.</li>
+<li>Income tax at 40% on most of the £30,000 (your basic rate band is already used by your PAYE income; only £270 falls below the £50,270 threshold): £11,946 (£270 at 20% plus £29,730 at 40%)</li>
+<li>Employee NI at 2% on most of the salary (the upper earnings limit is already reached by your £50,000 PAYE income): £616 (£270 at 8% plus £29,730 at 2%)</li>
+<li>Employer NI at 15% on £25,000 (earnings above the £5,000 secondary threshold, 2025/26 rate): £3,750</li>
+<li>Total tax and NI: £16,312. You keep £13,688.</li>
 </ul>
 
 <p>If you take the £30,000 as dividends instead:</p>
 
 <ul>
-<li>Your total income is £80,000 (£50k salary + £30k dividends).</li>
+<li>The company first pays 19% corporation tax on its £30,000 profit: £5,700. That leaves £24,300 to distribute as dividends.</li>
+<li>Your total income is £74,300 (£50,000 salary plus £24,300 dividends).</li>
 <li>The first £500 of dividends is tax-free (dividend allowance).</li>
-<li>The remaining £29,500 is taxed at 33.75% (higher rate): £9,956</li>
-<li>Total tax: £9,956. You keep £20,044.</li>
+<li>The remaining £23,800 is taxed at 33.75% (higher rate, 2025/26): £8,033</li>
+<li>Total dividend tax: £8,033. You keep £16,267.</li>
 </ul>
 
-<p>The dividend route saves £322 and avoids the payroll headache. The gap widens if your PAYE salary is lower or your company profits are higher.</p>
+<p>The dividend route leaves you £2,579 better off and avoids the payroll headache entirely. The gap widens if your PAYE salary is lower or your company profits are higher.</p>
 
 <h2>What About the £500 Dividend Allowance?</h2>
 
@@ -80,7 +80,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>There are three scenarios where paying a small salary from your Ltd still makes sense alongside a PAYE job.</p>
 
-<p><strong>Scenario 1: Your PAYE job pays below the secondary threshold (£9,100).</strong> If you earn £8,000 from your employment, your employer is not paying employer NI on that salary. You can pay yourself a salary from your Ltd up to the secondary threshold (£9,100) without triggering employer NI. That salary is tax-free for you (within your personal allowance) and gives the Ltd a corporation tax deduction. Above £9,100, employer NI kicks in and the benefit disappears.</p>
+<p><strong>Scenario 1: Your PAYE job pays below the secondary threshold (£5,000, from 6 April 2025).</strong> If you earn £4,000 from your employment, your employer is not paying employer NI on that salary. You can pay yourself a salary from your Ltd up to the secondary threshold (£5,000) without triggering employer NI. That salary is tax-free for you (within your personal allowance) and gives the Ltd a corporation tax deduction. Above £5,000, employer NI kicks in at 15% and the benefit disappears.</p>
 
 <p><strong>Scenario 2: You need to build a pension.</strong> Employer pension contributions are a corporation tax deduction and do not count as a benefit in kind for you. If your Ltd makes a contribution to your SIPP, that is more tax-efficient than taking dividends and contributing personally. This works regardless of your PAYE job, provided the total pension contributions stay within the annual allowance (£60,000 for 2025/26, tapered above £260,000 adjusted income).</p>
 
@@ -90,7 +90,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Dividends do not go through PAYE. You report them on your self assessment tax return (SA100). HMRC does not adjust your tax code for dividend income. That is a significant advantage over salary, which would trigger a tax code change and potentially leave you underpaying tax through your employment.</p>
 
-<p>But you must still pay the dividend tax. If your total dividend income for the year is more than £10,000, HMRC expects you to make payments on account (two instalments each year, due 31 January and 31 July). If your dividend income is below £10,000, the tax is collected through your self assessment balancing payment.</p>
+<p>But you must still pay the dividend tax. If your Self Assessment tax liability for the year exceeds £1,000 and less than 80% of your income tax was collected at source, HMRC requires payments on account (two instalments, due 31 January and 31 July, each equal to 50% of the prior-year liability). If your liability is below £1,000 or most of your tax was deducted through PAYE, the balance is collected as a lump-sum balancing payment.</p>
 
 <p>Many directors with side businesses get caught out by payments on account. If your Ltd pays you £20,000 in dividends in your first year, you owe £6,583 in dividend tax (at 33.75% on £19,500). HMRC will also ask for £3,292 as a first payment on account for the following year. Total due on 31 January: £9,875. Plan for that.</p>
 
@@ -116,7 +116,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>What About the Director's Loan Account?</h2>
 
-<p>If you take money from the company as a director's loan (not salary, not dividends), you create complications. Loans above £10,000 trigger a benefit in kind (beneficial loan interest). Loans not repaid within 9 months and 1 day of the year-end trigger S455 tax at 33.75% on the outstanding amount.</p>
+<p>If you take money from the company as a director's loan (not salary, not dividends), you create complications. Loans above £10,000 trigger a benefit in kind (beneficial loan interest). Loans not repaid within 9 months and 1 day of the year-end trigger S455 tax on the outstanding amount: 33.75% for loans made in 2025/26, rising to 35.75% for loans made on or after 6 April 2026.</p>
 
 <p>Do not use director's loans as a substitute for dividends. Take dividends formally, with board minutes and dividend vouchers. The paperwork takes five minutes and saves you the S455 headache.</p>
 
@@ -136,7 +136,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>HMRC calculates the dividend tax based on your total income. If you have overpaid tax through your PAYE job (unlikely if your tax code is correct), you get a refund. If you have underpaid, you pay the balancing amount by 31 January.</p>
 
-<p>If your dividend income is consistently above £10,000, HMRC will ask for payments on account. You can reduce these if you expect lower dividend income in the following year, but you need to justify the reduction.</p>
+<p>If your Self Assessment tax liability is consistently above £1,000 (and under 80% is collected at source), HMRC will require payments on account. You can apply to reduce these if you expect a lower tax bill in the following year, but you need to justify the reduction to HMRC.</p>
 
 <h2>Practical Example: A Freelance Consultant in Manchester</h2>
 
@@ -146,7 +146,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>She takes the full £25,000 as dividends. The first £500 is tax-free. The remaining £24,500 is taxed at 33.75%: £8,269 in dividend tax. She keeps £16,731. Her company pays 19% corporation tax on the £25,000 profit: £4,750. Total tax on the £25,000 is £13,019 (company + personal). Effective rate: 52%.</p>
 
-<p>If Sarah paid herself a salary of £12,570 instead, the maths is worse. The salary is taxed at 40% (no personal allowance left) plus employee NI at 2% (above £50,270, NI drops to 2%). Employer NI at 13.8% on £3,470 (above £9,100) costs £479. The net result is she keeps less than the dividend route.</p>
+<p>If Sarah paid herself a salary of £12,570 instead, the maths is worse. The salary is taxed at 40% (no personal allowance left) plus employee NI at 2% (above £50,270, NI drops to 2%). Employer NI at 15% on £7,570 (above the £5,000 secondary threshold, 2025/26) costs £1,136. The net result is she keeps less than the dividend route.</p>
 
 <p>Sarah's optimal strategy: dividends only, no salary, file self assessment, pay the dividend tax by 31 January. She avoids payroll entirely.</p>
 
@@ -164,7 +164,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Each of these triggers changes the optimal strategy. If you leave your PAYE job, the standard director salary approach becomes viable again. If your company profits push you into the corporation tax marginal relief band (between £50,000 and £250,000), the dividend extraction maths shifts because the effective corporation tax rate rises.</p>
 
-<p>We recommend reviewing your director pay strategy annually, ideally before the start of the tax year. Our <a href="/services">ICAEW qualified team</a> can run the numbers for your specific situation. If you are in Manchester, London, or Bristol, we also offer <a href="/locations">in-person consultations</a>.</p>
+<p>We recommend reviewing your director pay strategy annually, ideally before the start of the tax year. Our <a href="/services">team</a> can run the numbers for your specific situation. If you are in Manchester, London, or Bristol, we also offer <a href="/locations">in-person consultations</a>.</p>
 
 <h2>Common Mistakes to Avoid</h2>
 

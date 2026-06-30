@@ -16,7 +16,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/a-planner-with-a-sticky-note-8962478/"
   source: "Pexels"
 h1: "Three Tax Deadlines a Sole Trader Accountant Prevents You Missing"
-summary: "Missing HMRC deadlines costs you money. A sole trader accountant keeps you compliant across self assessment, Class 2 NIC, and the 31 July payment on account. Here are the three deadlines that catch most sole traders out and how professional support stops the fines."
+summary: "Missing HMRC deadlines costs you money. A sole trader accountant keeps you compliant across self assessment, National Insurance credits, and the 31 July payment on account. Here are the three deadlines that catch most sole traders out and how professional support stops the fines."
 schema: ""
 faqs:
   - question: "What is the most common tax deadline that sole traders miss?"
@@ -25,8 +25,8 @@ faqs:
     answer: "A sole trader accountant typically charges between £200 and £600 per year for self assessment filing, depending on the complexity of your return. Missing the 31 January deadline by six months can cost you £1,500 in penalties plus interest. The accountant pays for itself even if you only avoid one penalty."
   - question: "Can I reduce my payments on account if my income drops?"
     answer: "Yes, you can apply to HMRC to reduce your payments on account if your income for the current year is lower than the previous year. But you must be accurate. If you reduce them and your income has not dropped, HMRC charges interest on the underpaid amount. An accountant can assess whether a reduction is safe for your situation."
-  - question: "What happens if I miss the Class 2 National Insurance deadline?"
-    answer: "If you miss the Class 2 NIC deadline, you may have gaps in your National Insurance record. This can reduce your state pension entitlement. For a sole trader nearing retirement, a single missed year can cost roughly £275 per year in reduced pension for life. Filing your self assessment on time through an accountant prevents this."
+  - question: "How does missing the self assessment deadline affect my National Insurance record?"
+    answer: "Class 2 NIC was abolished from 6 April 2024. For 2025/26, most sole traders build their National Insurance record through their Class 4 liability, which is calculated as part of the self assessment return. Filing late or filing incorrectly can leave gaps in your NI record. For a sole trader nearing retirement, a single gap can cost roughly £275 per year in reduced state pension for life. Filing on time through an accountant protects both your tax position and your NI record."
 ---
 
 <p>If you run a business as a sole trader, HMRC gives you a single filing deadline for your self assessment tax return. Miss it and you get a £100 penalty immediately. Leave it longer and the fines stack up to £900 plus interest on unpaid tax.</p>
@@ -65,19 +65,19 @@ faqs:
 
 <p>For a sole trader in Leeds with a typical annual bill of £12,000, the 31 July payment is often around £3,000 to £4,000. Forgetting it means interest at 7.25% from the due date. Over six months that is roughly £145 in interest. Avoidable entirely with a simple reminder.</p>
 
-<h2>3. The Class 2 National Insurance Deadline</h2>
+<h2>3. The National Insurance Record Deadline</h2>
 
 <p>This is the one that sneaks up on sole traders who have been trading for a while and think they have everything covered.</p>
 
-<p>Class 2 National Insurance contributions are the flat-rate payments that count towards your state pension and certain contributory benefits. For 2025/26, the rate is £3.50 per week. That is £182 per year.</p>
+<p>Class 2 National Insurance contributions were abolished from 6 April 2024. There is no flat-rate weekly Class 2 charge for 2024/25 or 2025/26, and no separate Class 2 payment deadline. Many sole traders and some outdated guides still refer to it as a live obligation, but it no longer exists as a mandatory charge.</p>
 
-<p>If your profits are below the Small Profits Threshold (currently £6,725 for 2025/26), you can pay voluntary Class 2 contributions to protect your entitlement. But you must pay them by the deadline, which is the same as your self assessment filing deadline: 31 January following the end of the tax year.</p>
+<p>How you build your National Insurance record now depends on your profit level. If your profits exceed the Lower Profits Limit (£12,570 in 2025/26), your Class 4 NIC liability generates a qualifying year towards your state pension automatically through your self assessment return. If your profits fall between the Small Profits Threshold (£6,725) and the Lower Profits Limit, you receive deemed NI credits at no additional cost. If your profits are below the Small Profits Threshold and you want to protect your record, voluntary Class 2 contributions are still available.</p>
 
-<p>The issue is that Class 2 is now collected through the self assessment system. It is part of your overall tax calculation. Many sole traders assume it is handled automatically. And it is, if you file on time. But if you miss the filing deadline, you also miss the Class 2 payment deadline. That can leave gaps in your National Insurance record that affect your state pension.</p>
+<p>For most sole traders, this means your National Insurance record depends on filing your self assessment return accurately and on time. Your Class 4 liability (6% on profits from £12,570 to £50,270, then 2% above that) is calculated as part of your return. A late or inaccurate return can leave a gap in your NI record for that year.</p>
 
-<p>A <strong>sole trader accountant</strong> ensures your self assessment return includes the correct Class 2 liability. They check whether voluntary contributions make sense for your situation. And they file early enough that the payment is included in your overall bill, not forgotten.</p>
+<p>A <strong>sole trader accountant</strong> ensures your return correctly reflects your trading profit, which determines both your tax bill and your NI credit for the year. They also check whether voluntary contributions are relevant if your profits are low. And they file early enough that everything is in order before the 31 January deadline.</p>
 
-<p>This is particularly important for sole traders nearing retirement age. A single missed year of Class 2 contributions can reduce your state pension by around £275 per year for the rest of your life. Over a twenty-year retirement, that is £5,500 lost because of a missed deadline.</p>
+<p>This is particularly important for sole traders nearing retirement age. A single gap in your National Insurance record can reduce your state pension by around £275 per year for the rest of your life. Over a twenty-year retirement, that is £5,500 lost because of a late or incorrect return.</p>
 
 <p>An accountant who handles your filing prevents that loss entirely.</p>
 
@@ -89,7 +89,7 @@ faqs:
 
 <p>An accountant does not just remember these dates. They build a schedule around your business. They know when your year ends, when your records will be ready, and when each payment is due. They file your return early enough that you have time to arrange payment without borrowing or using a credit card.</p>
 
-<p>At Holloway Davies, our ICAEW-qualified team works with sole traders across every sector. We see the same pattern every year. The sole traders who file early and pay on time are the ones who have professional support. The ones who file late and pay penalties are the ones doing it alone.</p>
+<p>At Holloway Davies, our experienced team works with sole traders across every sector. We see the same pattern every year. The sole traders who file early and pay on time are the ones who have professional support. The ones who file late and pay penalties are the ones doing it alone.</p>
 
 <p>That is not a criticism. Running a business takes up all your attention. Tax deadlines are easy to overlook when you are focused on delivering work, managing clients, and keeping the cash flow healthy. That is exactly why an accountant exists.</p>
 

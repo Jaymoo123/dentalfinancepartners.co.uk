@@ -99,7 +99,7 @@ imageCredit:
 
 <p>You cannot use the HMRC VAT payment deadline calculator if you make payments on account or use the annual accounting scheme <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup>. Those schemes have different deadlines.</p>
 
-<p>Late payment triggers interest and surcharges. The current Bank Rate is 3.75% <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. HMRC charges late payment interest at Bank Rate plus 2.5%. So as of early 2025, that is 6.25% per year. Late filing penalties start at £50 per month for the first return, rising to £100 per month for subsequent defaults.</p>
+<p>Late payment and late filing both carry consequences. Since January 2023, VAT late-submission penalties use a points-based system: each late return earns a penalty point, and a £200 penalty is charged when the threshold is reached (four points for quarterly filers, five for monthly filers, two for annual filers). Separate late payment penalties apply from 15 days after the due date. HMRC also charges late payment interest at the Bank of England base rate plus 2.5% <sup><a href="#ref-4" id="cite-4">[4]</a></sup>; check the current rate on gov.uk as it changes with monetary policy decisions.</p>
 
 <p>If you are struggling to pay, HMRC offers Time to Pay arrangements. You can set up a payment plan online if you owe less than £50,000.</p>
 
@@ -135,7 +135,7 @@ imageCredit:
 
 <p>VAT is one of the most complex areas of UK tax. If you are a sole trader with straightforward sales, a good software package and a basic understanding may be enough. But if you have multiple VAT rates, partial exemption, cross-border transactions, or a turnover above £250,000, professional advice pays for itself.</p>
 
-<p>As ICAEW qualified accountants, we help businesses with VAT registration, returns, partial exemption calculations, and HMRC enquiries. If your turnover crossed the VAT threshold in the last 30 days, register inside the 30-day window. If you are unsure about your VAT position, <a href="/contact">contact our team</a> for a review.</p>
+<p>We help businesses with VAT registration, returns, partial exemption calculations, and HMRC enquiries. If your turnover crossed the VAT threshold in the last 30 days, register inside the 30-day window. If you are unsure about your VAT position, <a href="/contact">contact our team</a> for a review.</p>
 
 <p>You can also explore our <a href="/services">full range of accounting services</a> for limited companies, sole traders, and partnerships.</p>
 

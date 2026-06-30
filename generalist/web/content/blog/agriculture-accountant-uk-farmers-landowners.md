@@ -7,8 +7,8 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Agriculture Accountant UK: Tax Planning for Farmers"
-metaDescription: "An agriculture accountant helps UK farmers and landowners with tax planning, VAT, succession, and subsidies. Practical guidance from ICAEW qualified"
-altText: "ICAEW qualified agriculture accountant reviewing farm accounts with a farmer at a wooden desk in a UK office"
+metaDescription: "An agriculture accountant helps UK farmers and landowners with tax planning, VAT, succession, and subsidies. Practical guidance from our specialist team"
+altText: "Agriculture accountant reviewing farm accounts with a farmer at a wooden desk in a UK office"
 image: "/blog/agriculture-accountant-uk-farmers-landowners.jpg"
 imageCredit:
   photographer: "Altaf Shah"
@@ -26,14 +26,14 @@ faqs:
   - question: "How does Agricultural Property Relief work for inheritance tax?"
     answer: "APR gives 100% relief on the agricultural value of farmland and buildings. The land must have been farmed for at least two years (if you own and occupy it) or seven years (if let). The relief applies to the agricultural value, not the market value if development potential exists. You still need to deal with the non-agricultural value separately. An agriculture accountant works with a surveyor to split the values."
   - question: "What happens to my VAT if I sell livestock to a VAT-registered buyer?"
-    answer: "If you are on the Flat Rate Scheme, you issue an invoice showing the flat rate additive (currently 6.5%). The buyer reclaims this as input VAT. If you are on standard VAT accounting, you charge 20% VAT and the buyer reclaims the full amount. Your agriculture accountant will advise which scheme suits your customer base and cost structure."
+    answer: "If you are on the Agricultural Flat Rate Scheme (AFRS), you issue an invoice showing the flat rate addition (currently 4%, the long-standing rate under the AFRS, which is separate from the general VAT Flat Rate Scheme). The buyer reclaims this as input VAT. If you are on standard VAT accounting, you charge 20% VAT and the buyer reclaims the full amount. Your agriculture accountant will advise which scheme suits your customer base and cost structure."
 ---
 
 <p>Farming is not like other businesses. The tax rules that apply to a plumber in Birmingham or a software consultant in Manchester do not always fit a mixed arable and livestock farm in Norfolk. That is why you need an <strong>agriculture accountant</strong> who understands the sector.</p>
 
 <p>An agriculture accountant is a specialist UK accountant who works with farmers, landowners, growers, and rural businesses. They handle the specific tax treatments that apply to agriculture: the herd basis for livestock, averaging relief for fluctuating profits, VAT on agricultural supplies, and the complex rules around subsidies and grants. They also deal with inheritance tax reliefs that can mean the difference between a family farm staying intact and being broken up to pay a tax bill.</p>
 
-<p>At <a href="/about">Holloway Davies</a>, our ICAEW qualified team works with agricultural businesses across the country. We see the same questions every season. This article answers them directly.</p>
+<p>At <a href="/about">Holloway Davies</a>, our experienced team works with agricultural businesses across the country. We see the same questions every season. This article answers them directly.</p>
 
 <h2>Why Farming Needs a Specialist Accountant</h2>
 
@@ -47,7 +47,7 @@ faqs:
 
 <h2>VAT for Farmers: The Flat Rate Scheme and More</h2>
 
-<p>VAT in agriculture is not straightforward. Many farmers use the <strong>Flat Rate Scheme</strong>, which lets them charge a lower rate of VAT on sales and keep the difference between what they charge and what they pay. The flat rate for agriculture is currently 6.5% (subject to change).</p>
+<p>VAT in agriculture is not straightforward. Many farmers use the <strong>Agricultural Flat Rate Scheme (AFRS)</strong>, a scheme separate from the general VAT Flat Rate Scheme, which lets unregistered farmers add a flat rate addition to invoices issued to VAT-registered buyers. The flat rate addition for agriculture under the AFRS is currently 4% (the rate in place since 1993).</p>
 
 <p>But the Flat Rate Scheme is not always the best option. If you sell most of your produce to VAT-registered businesses (like supermarkets or processors), you might be better off on standard VAT accounting. That way you can reclaim VAT on your inputs: feed, fertiliser, fuel, machinery repairs, and vet bills. An agriculture accountant runs the numbers both ways. They look at your specific cost structure and customer base.</p>
 

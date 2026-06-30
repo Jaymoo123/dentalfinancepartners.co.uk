@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "Payroll Services for Small Business: UK Guide for Owners"
-metaDescription: "Payroll services for small business explained. What you must run, when to outsource, and how to avoid HMRC penalties. ICAEW qualified team."
+metaDescription: "Payroll services for small business explained. What you must run, when to outsource, and how to avoid HMRC penalties. Specialist payroll team."
 altText: "UK small business owner reviewing payroll reports on a laptop in a modern office with a calculator and paperwork visible"
 image: "/blog/payroll-services-small-business.jpg"
 imageCredit:
@@ -41,7 +41,7 @@ faqs:
 <li>Setting up each employee on HMRC's RTI system with a starter checklist (form or equivalent data)</li>
 <li>Calculating PAYE income tax using the correct tax code (most codes are issued by HMRC, but some must be calculated by the employer)</li>
 <li>Deducting employee National Insurance (Class 1 primary) at 8% on earnings between £12,570 and £50,270, and 2% above £50,270</li>
-<li>Calculating employer National Insurance (Class 1 secondary) at 13.8% on earnings above the secondary threshold of £9,100 per year</li>
+<li>Calculating employer National Insurance (Class 1 secondary) at 15% on earnings above the secondary threshold of £5,000 per year</li>
 <li>Submitting a Full Payment Submission (FPS) to HMRC on or before each payday</li>
 <li>Issuing payslips to employees on or before payday (legal requirement under the Employment Rights Act 1996)</li>
 <li>Reporting benefits in kind via P11D or payrolling benefits (optional, but requires advance registration)</li>
@@ -69,7 +69,7 @@ faqs:
 <h3>Six or More Employees</h3>
 <p>At this point, the administrative burden is significant. You are likely dealing with holiday pay, overtime, commission, variable hours, and possibly multiple pay frequencies. Outsourcing becomes not just convenient but cost-effective. The time you would spend on payroll each month is better spent on growing your business.</p>
 
-<p>Our <a href="/services">ICAEW qualified team</a> runs payroll for businesses across Manchester, Birmingham, Bristol, and the rest of the UK. We see the same mistakes repeated by business owners who try to manage payroll themselves: incorrect NIC calculations, missed pension deadlines, late RTI submissions. The cost of those mistakes often exceeds the cost of the payroll service.</p>
+<p>Our <a href="/services">specialist team</a> runs payroll for businesses across Manchester, Birmingham, Bristol, and the rest of the UK. We see the same mistakes repeated by business owners who try to manage payroll themselves: incorrect NIC calculations, missed pension deadlines, late RTI submissions. The cost of those mistakes often exceeds the cost of the payroll service.</p>
 
 <h2>What to Look for in a Payroll Provider</h2>
 
@@ -104,7 +104,7 @@ faqs:
 
 <p>There is a middle ground between doing payroll yourself and outsourcing completely. Many small business owners use payroll software like BrightPay, Sage 50, or the payroll modules in Xero or FreeAgent. These tools automate the calculations and RTI submissions, but they still require you to enter the data correctly and manage the process.</p>
 
-<p>Software is a good option if you are comfortable with the rules and have the time to keep up with changes. The main changes for 2025/26 include the Employment Allowance rising to £10,500, the Class 1 secondary threshold remaining at £9,100, and the Class 1 primary threshold matching the personal allowance at £12,570.</p>
+<p>Software is a good option if you are comfortable with the rules and have the time to keep up with changes. The main changes for 2025/26 include the Employment Allowance rising to £10,500, the Class 1 secondary threshold falling to £5,000 from April 2025, and the Class 1 primary threshold matching the personal allowance at £12,570.</p>
 
 <p>Full-service payroll is better if you want to hand over the responsibility entirely. You send us the hours or salaries, and we do everything else. We calculate the deductions, submit the RTI, manage the pension, and produce the payslips and P60s. If HMRC queries anything, we deal with it.</p>
 
@@ -132,11 +132,11 @@ faqs:
 
 <p>This means a director's tax code may not give the full personal allowance in the first few months. HMRC issues a cumulative tax code, but if the director's salary is low, the system may deduct too much tax early in the year and refund it later. This is normal, but it can be confusing if you are not expecting it.</p>
 
-<p>Directors also have the option to take no salary and rely entirely on dividends. This is common for contractors working through their own limited company, particularly those operating outside IR35. However, taking no salary means you do not build up qualifying years for the state pension. The minimum salary to build a qualifying year is £6,380 for 2025/26 (the lower earnings limit).</p>
+<p>Directors also have the option to take no salary and rely entirely on dividends. This is common for contractors working through their own limited company, particularly those operating outside IR35. However, taking no salary means you do not build up qualifying years for the state pension. The minimum salary to build a qualifying year is £6,500 for 2025/26 (the lower earnings limit).</p>
 
-<p>The most common director payroll strategy is a salary of £12,570 per year, paid monthly. This matches the personal allowance and the primary NI threshold, so no income tax or employee NI is due. Employer NI is due on the portion above £9,100, but the Employment Allowance typically covers this for multi-director companies.</p>
+<p>The most common director payroll strategy is a salary of £12,570 per year, paid monthly. This matches the personal allowance and the primary NI threshold, so no income tax or employee NI is due. Employer NI is due on the portion above £5,000, but the Employment Allowance typically covers this for multi-director companies.</p>
 
-<p>If you are a sole director with no other employees, you cannot claim the Employment Allowance. In that case, the employer NI on a £12,570 salary is £479 per year (13.8% on £3,470). Some directors choose a lower salary of £9,100 to avoid employer NI entirely, accepting the loss of the personal allowance on the difference. The maths depends on your dividend strategy and total income. We cover this in detail on our <a href="/blog/director-pay-and-dividends">director pay and dividends page</a>.</p>
+<p>If you are a sole director with no other employees, you cannot claim the Employment Allowance. In that case, the employer NI on a £12,570 salary is £1,135.50 per year (15% on £7,570). Some directors choose a lower salary of £5,000 to avoid employer NI entirely, accepting the loss of the personal allowance on the difference. The maths depends on your dividend strategy and total income. We cover this in detail on our <a href="/blog/director-pay-and-dividends">director pay and dividends page</a>.</p>
 
 <h2>Payroll for Partnerships and Sole Traders</h2>
 
@@ -162,6 +162,6 @@ faqs:
 
 <p>If you have two or more employees, or if you value your time at more than £30 per hour, payroll services for small business providers are almost certainly worth the cost. The price of a good service is less than the cost of one mistake. And you get the peace of mind that comes from knowing your compliance is handled by professionals.</p>
 
-<p>We are ICAEW qualified accountants. We do not sell payroll services as an add-on. We treat it as a core compliance function that protects your business from penalties and keeps your employees paid correctly and on time.</p>
+<p>We are specialist accountants. We do not sell payroll services as an add-on. We treat it as a core compliance function that protects your business from penalties and keeps your employees paid correctly and on time.</p>
 
 <p>If you want to discuss your payroll needs, <a href="/contact">get in touch</a>. We work with businesses across the UK, from a single director in a Manchester tech startup to a 15-person team at a Birmingham construction firm. We can take your payroll off your hands and give you back the time to focus on what you do best.</p>

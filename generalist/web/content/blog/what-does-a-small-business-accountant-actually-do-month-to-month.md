@@ -24,7 +24,7 @@ faqs:
   - question: "Do I need a monthly accountant if I use accounting software like Xero or FreeAgent?"
     answer: "Software handles data entry but does not provide tax planning, compliance checks, or strategic advice. A monthly accountant reviews your software data, corrects errors, and ensures your VAT and payroll are filed correctly. Most business owners find the combination of software and a good accountant saves more in tax than the accountant costs."
   - question: "What happens if I miss a monthly deadline for VAT or payroll?"
-    answer: "HMRC charges late filing penalties for VAT returns (starting at £50 per return) and late payment interest. Payroll late submissions can trigger automatic penalties from HMRC. A good accountant will never let you miss a deadline because they manage your compliance calendar and remind you well in advance."
+    answer: "HMRC now uses a points-based penalty regime for VAT returns (from 1 January 2023): each missed filing deadline adds one penalty point, and a £200 financial penalty is charged when your points reach the relevant threshold (2 points for quarterly filers, 4 for monthly filers). Each further missed deadline after that adds another £200. Late payment interest also applies. Payroll late submissions can trigger automatic penalties from HMRC. A good accountant will never let you miss a deadline because they manage your compliance calendar and remind you well in advance."
   - question: "Can I switch accountants mid-year without losing money?"
     answer: "Yes. You can switch at any time. Your new accountant will request your accounting records from the old one. Most accountants will refund any unused portion of your monthly fee if you leave mid-month. Just make sure the new accountant can take over your VAT and payroll submissions without a gap."
 ---
@@ -119,7 +119,7 @@ faqs:
 
 <p>When you compare monthly accounting packages, ask the accountant to list the specific tasks they will complete each month. Not "bookkeeping and VAT". A proper list. How many bank reconciliations? How often do they review the director loan account? Do they prepare management accounts? How often do they review your tax position?</p>
 
-<p>If they cannot answer those questions, move on. <a href="/contact">Contact our ICAEW qualified team</a> if you want a clear breakdown of what we do each month for your type of business.</p>
+<p>If they cannot answer those questions, move on. <a href="/contact">Contact our specialist team</a> if you want a clear breakdown of what we do each month for your type of business.</p>
 
 <p>The right monthly accounting service saves you time, reduces your tax bill, and keeps you compliant. The wrong one just costs you money and creates stress at year end.</p>
 

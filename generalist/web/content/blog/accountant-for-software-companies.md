@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Accountant for Software Companies UK | Specialist Support"
-metaDescription: "Software companies face specific tax rules on R&D, SaaS revenue and share schemes. Our ICAEW qualified accountants explain what to look"
+metaDescription: "Software companies face specific tax rules on R&D, SaaS revenue and share schemes. Our specialist accountants explain what to look"
 altText: "Software development team working in a modern Manchester office with a financial report on a tablet"
 image: "/blog/accountant-for-software-companies.jpg"
 imageCredit:
@@ -22,7 +22,7 @@ faqs:
   - question: "Do I need a specialist accountant for my software company, or can a general accountant handle it?"
     answer: "A general accountant can handle basic compliance: filing your CT600, submitting your SA100, and processing payroll. But they will likely miss software-specific opportunities like R&D tax credits, correct SaaS revenue recognition, Patent Box relief, and EMI share scheme structuring. If your turnover exceeds £100,000 or you have multiple revenue streams, a specialist accountant for software companies will almost certainly save you more in tax than they cost in fees."
   - question: "What R&D tax credit rate applies to software companies in 2025/26?"
-    answer: "From 1 April 2024, the merged R&D scheme applies. For loss-making R&D-intensive companies (where R&D spend is 30% or more of total costs), the enhanced R&D Intensive Scheme (ERIS) gives a payable credit of 14.5% on qualifying expenditure. For profitable companies under the merged scheme, the credit is 15% of the enhanced expenditure (effectively reducing the corporation tax liability). The RDEC scheme at 20% applies to larger companies. Your accountant should calculate which scheme applies based on your specific circumstances."
+    answer: "From 1 April 2024, the merged R&D scheme applies. For loss-making R&D-intensive companies (where R&D spend is 30% or more of total costs), the Enhanced R&D Intensive Support (ERIS) scheme gives an 86% additional deduction and a payable credit of 14.5% on qualifying expenditure. For all other companies (including profitable SMEs) under the merged RDEC scheme, the expenditure credit is 20% (taxable, so the net post-tax benefit is lower once corporation tax is taken into account). Your accountant should calculate which scheme applies based on your specific circumstances."
   - question: "How should a SaaS company recognise revenue for corporation tax purposes?"
     answer: "Under UK GAAP (FRS 102), SaaS revenue must be recognised over the subscription period, not when the invoice is raised. If you invoice £12,000 for an annual licence in January, you should recognise £1,000 of revenue each month. The remaining £11,000 sits on your balance sheet as deferred income. This affects your corporation tax calculation because profit is spread across the correct periods. A specialist accountant for software companies will set up your accounting software to handle this automatically."
   - question: "What VAT rules apply to software companies selling digital services to EU customers?"
@@ -51,7 +51,7 @@ faqs:
 
 <p>If your software company is developing new products, improving existing platforms, or resolving technical uncertainty during development, you likely qualify for R&D tax credits. This is not limited to white-lab coat laboratories. A four-person software consultancy in Shoreditch building a new API integration almost certainly qualifies.</p>
 
-<p>The merged R&D scheme (effective from 1 April 2024) applies to most software companies. The SME enhanced deduction of 186% (for accounting periods starting before 1 April 2024) has been replaced by a single scheme with a 20% payable credit for R&D-intensive loss-making companies. The RDEC scheme continues for larger companies at 20%.</p>
+<p>The merged R&D scheme (effective from 1 April 2024) applies to most software companies. The SME enhanced deduction of 186% (for accounting periods starting before 1 April 2024) has been replaced by two coordinated schemes: R&D-intensive loss-making SMEs (where R&D spend is at least 30% of total costs) qualify for the Enhanced R&D Intensive Support (ERIS) scheme, giving an 86% additional deduction and a 14.5% payable credit; all other companies, including profitable SMEs, use the merged RDEC scheme, which gives a 20% expenditure credit (taxable).</p>
 
 <p>An accountant for software companies will know exactly which scheme applies to your situation. They will help you prepare the R&D Additional Information Form (R&D AIF) that must now accompany your CT600 corporation tax return. They will also advise on whether your subcontractor costs, cloud hosting fees, and staff salaries qualify as qualifying R&D expenditure. Many do. Many are missed.</p>
 
@@ -133,4 +133,4 @@ faqs:
 
 <p>If you are a sole trader or a very small consultancy with one client and straightforward income, a general accountant may be sufficient for now. But as soon as you incorporate, start developing your own product, or take on employees, the complexity increases and the case for a specialist becomes clear.</p>
 
-<p>At Holloway Davies, our <a href="/about">ICAEW qualified team</a> works with software companies across the UK, from Manchester's MediaCity to Bristol's Harbourside. We understand the sector because we work in it every day. If you want an accountant who actually gets what your business does, <a href="/contact">get in touch</a>.</p>
+<p>At Holloway Davies, our <a href="/about">experienced team</a> works with software companies across the UK, from Manchester's MediaCity to Bristol's Harbourside. We understand the sector because we work in it every day. If you want an accountant who actually gets what your business does, <a href="/contact">get in touch</a>.</p>

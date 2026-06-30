@@ -24,7 +24,7 @@ faqs:
   - question: "Can I pay different dividends to different shareholders?"
     answer: "Yes, but only if you have different share classes, such as alphabet shares. With a single class of ordinary shares, dividends must be paid in proportion to shareholdings. Alphabet shares let you allocate dividends flexibly between shareholders."
   - question: "What happens if a director loan is not repaid within 9 months?"
-    answer: "The company must pay Section 455 tax at 33.75% of the outstanding loan amount. This is repayable when the loan is eventually repaid, but it ties up company cash. The director also faces a benefit in kind charge on loans over £10,000."
+    answer: "The company must pay Section 455 tax on the outstanding loan amount. The rate equals the dividend upper rate for the year the loan was made: 33.75% for loans made in 2025/26, and 35.75% for loans made on or after 6 April 2026. This is repayable when the loan is eventually repaid, but it ties up company cash. The director also faces a benefit in kind charge on loans over £10,000."
   - question: "Can a silent investor claim Business Asset Disposal Relief?"
     answer: "Only if they have been an employee or officer of the company for at least 2 years before disposal. Silent investors who are not directors or employees cannot claim BADR. They pay the standard CGT rate of 24% on gains above their annual exemption."
 ---
@@ -68,7 +68,7 @@ faqs:
 
 <p>This matters for multi-shareholder companies because shareholders often own multiple companies. If two shareholders each have their own separate companies and also co-own a joint venture company, the joint venture company may be an associated company of both. That reduces the profit bands for all three companies.</p>
 
-<p>As ICAEW qualified accountants, we see this mistake regularly. A husband and wife team running two separate limited companies plus a property company between them can easily find all three treated as associated, pushing them into the 25% rate much sooner than expected.</p>
+<p>We see this mistake regularly. A husband and wife team running two separate limited companies plus a property company between them can easily find all three treated as associated, pushing them into the 25% rate much sooner than expected.</p>
 
 <h2>Dividend Allocation in a Multi-Shareholder Company</h2>
 
@@ -88,9 +88,9 @@ faqs:
 
 <p>Director loans are a common way for shareholders to extract money from a company. But in a multi-shareholder company, the rules get complicated.</p>
 
-<p>If a director borrows more than £10,000 from the company, the loan is a benefit in kind. The director pays tax on the benefit of having an interest-free or low-interest loan. The company must report it on a P11D and pay Class 1A NIC at 13.8%.</p>
+<p>If a director borrows more than £10,000 from the company, the loan is a benefit in kind. The director pays tax on the benefit of having an interest-free or low-interest loan. The company must report it on a P11D and pay Class 1A NIC at 15%.</p>
 
-<p>More importantly, if the loan is not repaid within 9 months and 1 day of the company's year end, the company must pay Section 455 tax at 33.75% of the outstanding amount. This is a charge on the company, not the director.</p>
+<p>More importantly, if the loan is not repaid within 9 months and 1 day of the company's year end, the company must pay Section 455 tax on the outstanding amount. The rate equals the dividend upper rate for the year the loan is made: 33.75% for loans made in 2025/26, and 35.75% for loans made on or after 6 April 2026. This is a charge on the company, not the director.</p>
 
 <p>The S455 tax is repayable when the loan is repaid. But it ties up cash that could otherwise be used for the business.</p>
 
@@ -115,9 +115,9 @@ faqs:
 
 <p>But growth shares require a formal valuation and legal documentation. Get it wrong and HMRC can reclassify the value as earnings, triggering PAYE and NIC.</p>
 
-<p>Similarly, if you have multiple shareholders and one wants to exit, the share structure affects whether Business Asset Disposal Relief (BADR) applies. BADR gives a 14% CGT rate on disposals up to £1 million (18% from April 2026). The shareholder must have held the shares for at least 2 years and been an employee or officer of the company.</p>
+<p>Similarly, if you have multiple shareholders and one wants to exit, the share structure affects whether Business Asset Disposal Relief (BADR) applies. BADR gives an 18% CGT rate on disposals up to £1 million (the rate from 6 April 2026; it was 14% in 2025/26 and 10% before 6 April 2025). The shareholder must have held the shares for at least 2 years and been an employee or officer of the company.</p>
 
-<p>If the company has multiple shareholders and one has never been an employee or officer, they cannot claim BADR on their shares. That means they pay 24% CGT on the gain instead of 14%.</p>
+<p>If the company has multiple shareholders and one has never been an employee or officer, they cannot claim BADR on their shares. That means they pay 24% CGT on the gain instead of 18%.</p>
 
 <h2>Practical Example: A Three-Shareholder Company</h2>
 
@@ -129,11 +129,11 @@ faqs:
 <li>Profits: £150,000</li>
 <li>Lower limit: £50,000</li>
 <li>Upper limit: £250,000</li>
-<li>Marginal relief applies: effective rate is around 22.5%</li>
-<li>Corporation tax: approximately £33,750</li>
+<li>Marginal relief applies: CT = 25% x £150,000, less 3/200 x (£250,000 - £150,000) = £37,500 - £1,500 = £36,000; effective rate is around 24%</li>
+<li>Corporation tax: approximately £36,000</li>
 </ul>
 
-<p>Post-tax profit: £116,250. The company declares a dividend of £100,000. Under a single class of ordinary shares, Alice gets £40,000, Bob gets £40,000 and Claire gets £20,000.</p>
+<p>Post-tax profit: £114,000. The company declares a dividend of £100,000. Under a single class of ordinary shares, Alice gets £40,000, Bob gets £40,000 and Claire gets £20,000.</p>
 
 <p>But Alice and Bob are both directors and want to take more income. Claire is happy with £20,000. The solution is to restructure into alphabet shares. Alice gets A shares, Bob gets B shares and Claire gets C shares. The dividend can then be split £50,000 to Alice, £40,000 to Bob and £10,000 to Claire.</p>
 
@@ -157,7 +157,7 @@ faqs:
 
 <p>If you have multiple shareholders who are also directors, each director must submit their own self assessment tax return (SA100) by 31 January after the tax year end. The company must provide P11D details and dividend vouchers in time for these returns.</p>
 
-<p>Late filing of the CT600 triggers penalties starting at £100 for one day late, rising to £1,500 for six months or more. Late payment of corporation tax incurs interest at the Bank of England base rate plus 2.5%.</p>
+<p>Late filing of the CT600 triggers penalties of £100 from one day late, a further £100 at three months, then 10% of the unpaid tax at six months and a further 10% at twelve months. Late payment of corporation tax incurs interest at the Bank of England base rate plus 4% (from 6 April 2025).</p>
 
 <h2>Common Mistakes in Multi-Shareholder Companies</h2>
 
@@ -167,7 +167,7 @@ faqs:
 
 <p><strong>Mistake 2: Paying dividends without board minutes.</strong> HMRC can challenge dividend payments if there is no formal record. In a multi-shareholder company, this is especially important because the dividend allocation must be agreed by all shareholders.</p>
 
-<p><strong>Mistake 3: Using director loans as a permanent extraction method.</strong> Loans must be repaid within 9 months and 1 day of year end, or the company pays S455 tax at 33.75%. This is not a substitute for dividends or salary.</p>
+<p><strong>Mistake 3: Using director loans as a permanent extraction method.</strong> Loans must be repaid within 9 months and 1 day of year end, or the company pays S455 tax (33.75% for loans made in 2025/26; 35.75% for loans made on or after 6 April 2026). This is not a substitute for dividends or salary.</p>
 
 <p><strong>Mistake 4: Assuming all shareholders can claim BADR.</strong> Only shareholders who are employees or officers and have held shares for at least 2 years can claim BADR. Silent investors often miss out.</p>
 
@@ -175,7 +175,7 @@ faqs:
 
 <h2>How We Help Multi-Shareholder Companies</h2>
 
-<p>At Holloway Davies, we specialise in structuring multi-owner companies for tax efficiency. Our ICAEW qualified team reviews your share structure, dividend policy and director loan accounts to make sure everything is optimised for both corporation tax and personal tax.</p>
+<p>At Holloway Davies, we specialise in structuring multi-owner companies for tax efficiency. Our specialist team reviews your share structure, dividend policy and director loan accounts to make sure everything is optimised for both corporation tax and personal tax.</p>
 
 <p>We also handle the compliance side: filing CT600 returns, preparing dividend vouchers, managing P11D reporting and ensuring confirmation statements are up to date.</p>
 

@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Accountant for Personal Trainers UK: Tax & Accounting Guide"
 metaDescription: "Find the right accountant for personal trainers in the UK. Covers sole trader vs Ltd, VAT on PT services, expenses, and when to register for Making Tax"
-altText: "Personal trainer reviewing accounts with an ICAEW qualified accountant in a modern UK office"
+altText: "Personal trainer reviewing accounts with a specialist accountant in a modern UK office"
 image: "/blog/accountant-for-personal-trainers.jpg"
 imageCredit:
   photographer: "AI25.Studio  Studio"
@@ -53,8 +53,8 @@ faqs:
 <li>£12,570 personal allowance (tax-free)</li>
 <li>£37,700 at 20% basic rate = £7,540 income tax</li>
 <li>£19,730 at 40% higher rate = £7,892 income tax</li>
-<li>Class 4 NI: £3,310 (9% on £36,800 between thresholds) + £395 (2% on £19,730 above £50,270)</li>
-<li>Total tax and NI: approximately £19,137</li>
+<li>Class 4 NI: £2,262 (6% on £37,700 between thresholds, 2025/26 rate) + £395 (2% on £19,730 above £50,270)</li>
+<li>Total tax and NI: approximately £18,089</li>
 </ul>
 
 <p>The same £70,000 profit through a limited company, taking £12,570 salary and £57,430 dividends:</p>
@@ -66,7 +66,7 @@ faqs:
 <li>Total tax: approximately £18,325</li>
 </ul>
 
-<p>That is a saving of roughly £812 per year. The difference grows as profit increases. At £100,000 profit, the saving is closer to £4,000. An <strong>accountant for personal trainers</strong> can run this calculation for your specific numbers and tell you the right time to incorporate.</p>
+<p>On these figures, the sole trader pays approximately £236 less than the limited company director at this profit level. The position shifts in the company's favour as profit rises further. At £100,000 profit, the limited company saving is closer to £4,000. An <strong>accountant for personal trainers</strong> can run this calculation for your specific numbers and tell you the right time to incorporate.</p>
 
 <p>If you are considering incorporation, our <a href="/incorporation">incorporation services page</a> covers the process step by step.</p>
 
@@ -145,13 +145,13 @@ faqs:
 <p>Not all accountants are equal. Here is what to check before you hire one for your PT business:</p>
 
 <ul>
-<li><strong>ICAEW or ACCA qualification.</strong> Anyone can call themselves an accountant. Qualified accountants are regulated and carry professional indemnity insurance. Holloway Davies are ICAEW qualified, which means we meet the Institute's standards for technical knowledge and ethics.</li>
+<li><strong>ICAEW or ACCA qualification.</strong> Anyone can call themselves an accountant. Qualified accountants are regulated and carry professional indemnity insurance. Check that your accountant holds a recognised qualification before you commit.</li>
 <li><strong>Experience with service businesses.</strong> Personal training is a service business with deferred income, block bookings, and variable VAT treatment. An accountant who only works with ecommerce or construction clients will not understand your revenue model.</li>
 <li><strong>Software recommendations.</strong> A good accountant will recommend Xero, FreeAgent, or QuickBooks and help you set it up. They should not insist on paper records or spreadsheets.</li>
 <li><strong>Fixed fee pricing.</strong> You should know what you are paying each month. Avoid accountants who charge by the hour for routine compliance work.</li>
 <li><strong>Proactive advice.</strong> Your accountant should tell you about VAT thresholds before you hit them, not after. They should suggest incorporation when your profit justifies it. They should flag Making Tax Digital deadlines well in advance.</li>
 </ul>
 
-<p>If you want to discuss your PT business with an ICAEW qualified accountant, <a href="/contact">contact us</a>. We work with personal trainers across the UK, from solo freelancers in Bristol to multi-trainer studios in Manchester's Northern Quarter.</p>
+<p>If you want to discuss your PT business with a specialist accountant, <a href="/contact">contact us</a>. We work with personal trainers across the UK, from solo freelancers in Bristol to multi-trainer studios in Manchester's Northern Quarter.</p>
 
 <h2>Frequently Asked Questions</h2>

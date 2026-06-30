@@ -22,7 +22,7 @@ faqs:
   - question: "Do I need an accountant if I only earn a few thousand pounds from music?"
     answer: "If you earn under £15,000 from music and your affairs are simple, you can file your own Self Assessment using software like FreeAgent or GoSimpleTax. But if you have multiple income sources, foreign income, or are unsure what expenses to claim, an accountant will likely save you more in tax than their fee costs. Many musicians start with DIY filing and switch to an accountant once their income grows or becomes more complex."
   - question: "What expenses can a musician claim against tax?"
-    answer: "Common allowable expenses include instrument costs and repairs, studio hire, travel to gigs (45p per mile for the first 10,000 business miles), equipment and accessories, practice space rent, website and marketing costs, professional memberships (PRS, PPL, MU), public liability insurance, and a proportion of phone and internet bills. Your accountant will help you identify everything that applies to your specific situation."
+    answer: "Common allowable expenses include instrument costs and repairs, studio hire, travel to gigs (55p per mile for the first 10,000 business miles from 2026/27; 45p applied up to 2025/26), equipment and accessories, practice space rent, website and marketing costs, professional memberships (PRS, PPL, MU), public liability insurance, and a proportion of phone and internet bills. Your accountant will help you identify everything that applies to your specific situation."
   - question: "Should I set up a limited company as a musician?"
     answer: "It depends on your income level and structure. A limited company can be more tax efficient once your profits exceed around £40,000 to £50,000 per year, because you pay corporation tax instead of income tax and national insurance on dividends. But a company also means more administrative work, filing annual accounts at Companies House, and running payroll. Your accountant can run the numbers for your specific situation and advise whether incorporation makes sense."
   - question: "How do I handle VAT on merchandise sales at EU gigs post Brexit?"
@@ -35,7 +35,7 @@ faqs:
 
 <p>An <strong>accountant for musicians</strong> understands these specific income types. A general high street accountant might not know the difference between mechanical royalties and performance royalties. They might not know that HMRC has specific rules around foreign tour income. They might not realise that your Spotify payout statement needs decoding before it can be entered into bookkeeping software.</p>
 
-<p>This guide covers what a music industry accountant actually does, when you should hire one, and what to look for. We are ICAEW qualified accountants at Holloway Davies, and we work with musicians across the UK from our bases in Manchester and London.</p>
+<p>This guide covers what a music industry accountant actually does, when you should hire one, and what to look for. We are specialist accountants at Holloway Davies, and we work with musicians across the UK from our bases in Manchester and London.</p>
 
 <h2>The Core Services an Accountant for Musicians Provides</h2>
 
@@ -48,7 +48,7 @@ faqs:
 <ul>
 <li>Instrument costs, repairs, and depreciation</li>
 <li>Studio hire and recording costs</li>
-<li>Travel to and from gigs (mileage at 45p per mile for the first 10,000 business miles)</li>
+<li>Travel to and from gigs (mileage at 55p per mile for the first 10,000 business miles from 2026/27; 45p applied up to 2025/26)</li>
 <li>Public liability insurance and instrument insurance</li>
 <li>Website hosting, domain fees, and social media advertising</li>
 <li>Music equipment, cables, stands, cases</li>
@@ -140,7 +140,7 @@ faqs:
 <li>How do you communicate? Monthly check ins? Quarterly reviews? Ad hoc email support?</li>
 </ul>
 
-<p>At Holloway Davies, we are ICAEW qualified accountants. We work with musicians across the UK, from session players in Manchester to touring artists based in London. We use Xero and FreeAgent for bookkeeping, and we offer a free initial consultation to discuss your situation.</p>
+<p>At Holloway Davies, we work with musicians across the UK, from session players in Manchester to touring artists based in London. We use Xero and FreeAgent for bookkeeping, and we offer a free initial consultation to discuss your situation.</p>
 
 <p>You can <a href="/contact">contact us here</a> to book that call.</p>
 
@@ -175,4 +175,4 @@ faqs:
 
 <p>The key is finding an accountant who genuinely knows the industry, not one who just says they do. Ask the right questions. Check their credentials. And if you want to talk to us, <a href="/contact">get in touch</a>.</p>
 
-<p>We work with musicians across the UK from our offices in Manchester and London. We are ICAEW qualified. And we have been helping creative businesses manage their tax for years.</p>
+<p>We work with musicians across the UK from our offices in Manchester and London. We have been helping creative businesses manage their tax for years.</p>

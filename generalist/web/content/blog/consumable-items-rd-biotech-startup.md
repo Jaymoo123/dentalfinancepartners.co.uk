@@ -116,7 +116,7 @@ faqs:
 
 <p>The qualifying items included cell culture media (£8,400), custom antibodies (£12,600), PCR reagents and plasticware (£6,200), and third-party sequencing (£4,800). The remaining £15,200 was non-qualifying: general lab gloves, cleaning supplies, and equipment maintenance contracts.</p>
 
-<p>The £47,200 was included in their RDEC claim, generating a net tax credit of £9,440 after corporation tax offset. Without proper categorisation, they would have claimed the full £63,400 and risked an enquiry.</p>
+<p>The £47,200 was included in their RDEC claim, generating a gross 20% expenditure credit of £9,440. Because RDEC is taxable income, the net cash benefit after corporation tax is approximately £7,080 at the 25% main rate (or £7,646 at the 19% small-profits rate). Without proper categorisation, they would have claimed the full £63,400 and risked an enquiry.</p>
 
 <h2>Record-keeping for consumable items</h2>
 
@@ -131,11 +131,11 @@ faqs:
 
 <p>Many biotech startups use lab management software like Labguru, Quartzy, or Benchling to track consumable usage. That data can be exported and used to support the claim. If you use a manual system, a simple Excel workbook updated weekly is sufficient.</p>
 
-<h2>How an ICAEW-qualified accountant helps</h2>
+<h2>How a specialist accountant helps</h2>
 
 <p>R&D tax credit claims are technical. The rules on consumable items are specific, and HMRC is increasingly focused on the quality of claims. A poorly prepared claim can trigger an enquiry that delays the credit by months.</p>
 
-<p>As <a href="/about">ICAEW-qualified accountants</a>, we work with biotech startups to structure their claims correctly from the start. We review the consumable list, identify non-qualifying items, and prepare the supporting documentation. We also handle the technical report that explains the R&D projects to HMRC.</p>
+<p>We work with biotech startups to structure their claims correctly from the start. We review the consumable list, identify non-qualifying items, and prepare the supporting documentation. We also handle the technical report that explains the R&D projects to HMRC. Visit our <a href="/about">about page</a> to find out more about our team.</p>
 
 <p>If your biotech startup is spending significant sums on lab consumables, it is worth getting the claim right. The relief can be substantial. A typical early-stage biotech company can recover 20% to 27% of qualifying R&D spend as a cash credit or reduced corporation tax.</p>
 

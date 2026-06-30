@@ -20,18 +20,18 @@ summary: "Many directors ask if they can use company funds to pay their personal
 schema: ""
 faqs:
   - question: "Can I pay my self assessment tax bill directly from my limited company bank account?"
-    answer: "No. Paying your self assessment tax bill directly from the company bank account creates a director's loan. That loan triggers S455 tax (33.75%) if not repaid within 9 months and 1 day of year-end, plus potential benefit in kind charges if over £10,000. The correct method is to extract the money as salary or dividends, then pay the bill from your personal account."
+    answer: "No. Paying your self assessment tax bill directly from the company bank account creates a director's loan. That loan triggers S455 tax (33.75% on loans made in 2025/26; 35.75% on loans made from 6 Apr 2026) if not repaid within 9 months and 1 day of year-end, plus potential benefit in kind charges if over £10,000. The correct method is to extract the money as salary or dividends, then pay the bill from your personal account."
   - question: "What if I pay the personal tax bill and then declare a dividend to cover it?"
     answer: "That works, but you must document the dividend properly before or at the same time as the payment. The sequence matters. If you pay the tax bill first and then declare a dividend weeks later, the loan existed in the interim. HMRC can still argue the payment was a loan, not a dividend. Always declare the dividend first, then transfer the funds."
   - question: "Can my company pay my personal tax bill as a business expense?"
     answer: "No. Personal tax liabilities are not incurred wholly and exclusively for the purposes of the trade. The company cannot deduct them as an expense. Even if you argue that staying tax-compliant helps the business, HMRC does not accept that argument. The only exception is a formal PAYE settlement agreement (PSA), which is rare and requires HMRC approval."
   - question: "What happens if I already paid my personal tax bill from the company and cannot repay the loan?"
-    answer: "You need to regularise the position. Record the payment as a director's loan in the books. Then either declare a dividend or pay a salary to clear the loan. If the loan is still outstanding at the 9-month deadline, the company must pay S455 tax at 33.75% on the corporation tax return. You can reclaim that tax when the loan is repaid, but it ties up cash. Speak to your accountant immediately to minimise penalties."
+    answer: "You need to regularise the position. Record the payment as a director's loan in the books. Then either declare a dividend or pay a salary to clear the loan. If the loan is still outstanding at the 9-month deadline, the company must pay S455 tax at 33.75% (loans made in 2025/26) or 35.75% (loans made from 6 Apr 2026) on the corporation tax return. You can reclaim that tax when the loan is repaid, but it ties up cash. Speak to your accountant immediately to minimise penalties."
 ---
 
 <p>You cannot pay a director's personal tax bill through their limited company. HMRC treats any payment of personal liabilities from company funds as a director's loan, not a legitimate business expense. That loan triggers tax consequences of its own, often making the situation worse than the original bill.</p>
 
-<p>This is one of the most common misunderstandings we see as ICAEW qualified accountants at Holloway Davies. Directors see a healthy company bank balance and a personal tax bill due, and the connection feels logical. It is not. The company is a separate legal entity. Its money is not your money until you extract it properly.</p>
+<p>This is one of the most common misunderstandings we see at Holloway Davies. Directors see a healthy company bank balance and a personal tax bill due, and the connection feels logical. It is not. The company is a separate legal entity. Its money is not your money until you extract it properly.</p>
 
 <p>Let's walk through what happens if you try to pay personal tax through your limited company, the penalties you risk, and the correct ways to get cash out of your company to cover personal liabilities.</p>
 
@@ -55,15 +55,15 @@ faqs:
 
 <h3>Section 455 Tax (S455)</h3>
 
-<p>Any director's loan outstanding at the end of the company's accounting period that is not repaid within 9 months and 1 day of the year-end triggers S455 tax. The rate is 33.75% of the loan amount. The company must pay this to HMRC on its corporation tax return (CT600).</p>
+<p>Any director's loan outstanding at the end of the company's accounting period that is not repaid within 9 months and 1 day of the year-end triggers S455 tax. The rate is 33.75% on loans made in 2025/26, rising to 35.75% on loans made from 6 Apr 2026. The company must pay this to HMRC on its corporation tax return (CT600).</p>
 
 <p>Example: You pay a £20,000 personal tax bill from the company on 1 March 2026. Your company year-end is 31 March 2026. The loan is still outstanding at year-end. You must repay it by 1 January 2027 (9 months and 1 day after 31 March 2026). If you do not, the company owes £6,750 in S455 tax. That tax is reclaimable once the loan is repaid, but it ties up cash in the meantime.</p>
 
 <h3>Benefit in Kind (Beneficial Loan)</h3>
 
-<p>If the director's loan exceeds £10,000 at any point in the tax year, it becomes a beneficial loan. The company must report it on a P11D, and you pay income tax on the notional interest benefit. The official rate of interest (2.25% for 2025/26) is used to calculate the benefit, unless you pay interest to the company at least at that rate.</p>
+<p>If the director's loan exceeds £10,000 at any point in the tax year, it becomes a beneficial loan. The company must report it on a P11D, and you pay income tax on the notional interest benefit. The official rate of interest (3.75% for 2025/26) is used to calculate the benefit, unless you pay interest to the company at least at that rate.</p>
 
-<p>For a £20,000 loan, the benefit is £450 (2.25% of £20,000). You would pay income tax on that £450 at your marginal rate. At 40%, that is an extra £180 in tax. Plus the company pays Class 1A NIC at 13.8% on the benefit, another £62.</p>
+<p>For a £20,000 loan, the benefit is £750 (3.75% of £20,000). You would pay income tax on that £750 at your marginal rate. At 40%, that is an extra £300 in tax. Plus the company pays Class 1A NIC at 15% on the benefit, another £112.50.</p>
 
 <h3>No Corporation Tax Deduction</h3>
 
@@ -79,17 +79,17 @@ faqs:
 
 <h3>Route 1: Salary</h3>
 
-<p>Pay yourself a salary through the company payroll. The salary is a deductible expense for the company, reducing corporation tax. You pay income tax and employee NI on the salary above the personal allowance (£12,570 for 2025/26). The company pays employer NI at 13.8% on salary above the secondary threshold (£9,100).</p>
+<p>Pay yourself a salary through the company payroll. The salary is a deductible expense for the company, reducing corporation tax. You pay income tax and employee NI on the salary above the personal allowance (£12,570 for 2025/26). The company pays employer NI at 15% on salary above the secondary threshold (£5,000), from 6 Apr 2025.</p>
 
 <p>Most directors take a salary at or just below the personal allowance to avoid income tax and NI while still getting the corporation tax deduction. But if you need more cash for a personal tax bill, you can increase the salary. Just factor in the NI costs.</p>
 
-<p>Example: You need £20,000 net for a personal tax bill. A salary of £20,000 costs the company approximately £21,476 (including employer NI of 13.8% on £10,900). You pay income tax at 20% on £7,430 (£20,000 minus £12,570 personal allowance), which is £1,486. You also pay employee NI at 8% on £7,430, which is £594. Your net take-home is roughly £17,920. You would need a slightly higher salary to net £20,000.</p>
+<p>Example: You need £20,000 net for a personal tax bill. A salary of £20,000 costs the company approximately £22,250 (including employer NI of 15% on £15,000 above the £5,000 secondary threshold = £2,250). You pay income tax at 20% on £7,430 (£20,000 minus £12,570 personal allowance), which is £1,486. You also pay employee NI at 8% on £7,430, which is £594. Your net take-home is roughly £17,920. You would need a slightly higher salary to net £20,000.</p>
 
 <h3>Route 2: Dividends</h3>
 
-<p>Dividends are paid from post-tax profits. The company must have sufficient retained profits to declare a dividend legally. Dividends are not a deductible expense for the company, so no corporation tax relief. But you pay dividend tax at lower rates than salary: 8.75% basic rate, 33.75% higher rate, 39.35% additional rate. The first £500 of dividends in 2025/26 are tax-free (dividend allowance).</p>
+<p>Dividends are paid from post-tax profits. The company must have sufficient retained profits to declare a dividend legally. Dividends are not a deductible expense for the company, so no corporation tax relief. But you pay dividend tax at lower rates than salary: 10.75% basic rate, 35.75% higher rate, 39.35% additional rate for 2026/27 (the 2025/26 rates were 8.75% and 33.75%). The first £500 of dividends each year are tax-free (dividend allowance).</p>
 
-<p>For a £20,000 dividend, you pay dividend tax at your marginal rate on £19,500 (after the £500 allowance). At 8.75%, that is £1,706. At 33.75%, it is £6,581. The company pays no NI on dividends.</p>
+<p>For a £20,000 dividend in 2026/27, you pay dividend tax at your marginal rate on £19,500 (after the £500 allowance). At 10.75%, that is £2,096. At 35.75%, it is £6,971. The company pays no NI on dividends.</p>
 
 <p>Dividends are often the most tax-efficient way to extract cash for directors who are basic rate taxpayers. For higher rate taxpayers, the maths depends on how much other income you have.</p>
 
@@ -115,7 +115,7 @@ faqs:
 <li><strong>Declare a dividend or pay a salary</strong> to cover the loan. This formalises the extraction and removes the loan balance. The dividend or salary is then taxable in your hands, but it stops the S455 clock.</li>
 </ul>
 
-<p>If the loan is still outstanding after the 9-month deadline, the company must pay the 33.75% S455 tax on the corporation tax return. You can reclaim that tax once the loan is repaid, but it ties up cash for months or years.</p>
+<p>If the loan is still outstanding after the 9-month deadline, the company must pay S455 tax (33.75% on loans made in 2025/26; 35.75% on loans made from 6 Apr 2026) on the corporation tax return. You can reclaim that tax once the loan is repaid, but it ties up cash for months or years.</p>
 
 <p>We recommend speaking to your accountant immediately if you have already done this. The sooner you regularise the position, the lower the risk of penalties.</p>
 
@@ -145,7 +145,7 @@ faqs:
 
 <p>Paying a personal tax bill through your limited company is not allowed. It creates a director's loan, triggers S455 tax, potentially a benefit in kind, and risks penalties. The correct approach is to extract the cash through salary or dividends, then pay the tax from your personal account.</p>
 
-<p>If your turnover has grown and you are unsure about the best extraction strategy for your circumstances, talk to us. As ICAEW qualified accountants, we help directors structure their pay to minimise tax while staying fully compliant. <a href="/contact">Contact Holloway Davies</a> to discuss your situation.</p>
+<p>If your turnover has grown and you are unsure about the best extraction strategy for your circumstances, talk to us. We help directors structure their pay to minimise tax while staying fully compliant. <a href="/contact">Contact Holloway Davies</a> to discuss your situation.</p>
 
 <h2>Related articles in Director Pay and Dividends</h2>
 <ul>

@@ -7,7 +7,7 @@
  *
  * STALE-LABEL FINDING (GAP-2 golden-test gate):
  *   EmployerNICalculator.tsx label reads "£5,000 off employer NI" (2024/25 rate).
- *   The canonical Employment Allowance for 2025/26 is £10,500 (uk-tax-rates.ts).
+ *   The canonical Employment Allowance for 2026/27 is £10,500 (uk-tax-rates.ts).
  *   User must approve updated label text before it ships.
  */
 import { UK_TAX_RATES as T } from "@/lib/uk-tax-rates";

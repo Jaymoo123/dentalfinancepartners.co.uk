@@ -22,11 +22,11 @@ import { JsonLd, buildService, buildFaqPage } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "R&D Tax Credits for UK Businesses | Specialist Claims",
   description:
-    "Specialist R&D tax credit claims for UK companies. Software, AI, engineering, manufacturing, biotech, food tech. Most claims leave money on the table. ICAEW qualified, no-win-no-fee available.",
+    "Specialist R&D tax credit claims for UK companies. Software, AI, engineering, manufacturing, biotech, food tech. Most claims leave money on the table. Fixed fee or no-win-no-fee available.",
   alternates: { canonical: `${siteConfig.url}/r-and-d-credits` },
   openGraph: {
     title: "R&D Tax Credits for UK Businesses",
-    description: "Specialist R&D tax credit claims for UK companies. ICAEW qualified.",
+    description: "Specialist R&D tax credit claims for UK companies. Fixed fee or contingent options available.",
     url: `${siteConfig.url}/r-and-d-credits`,
     type: "website",
   },

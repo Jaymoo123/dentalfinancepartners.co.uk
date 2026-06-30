@@ -16,7 +16,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-scrabble-tiles-on-a-white-surface-10044789/"
   source: "Pexels"
 h1: "Business Asset Disposal Relief Explained: What Happens When Your Company Has a Dormant Period"
-summary: "Business Asset Disposal Relief (BADR) gives a lower 14% CGT rate on company share disposals, but only if the company has been a trading company for two years. A dormant period can break that test. We explain when it matters and how to handle it."
+summary: "Business Asset Disposal Relief (BADR) gives a lower 18% CGT rate on company share disposals from 6 April 2026 (14% applied for disposals between 6 April 2025 and 5 April 2026), but only if the company has been a trading company for two years. A dormant period can break that test. We explain when it matters and how to handle it."
 schema: ""
 faqs:
   - question: "Can I claim BADR if my company was dormant for six months?"
@@ -29,7 +29,7 @@ faqs:
     answer: "Yes, but you need to restart trading and then hold the shares for a further two years before disposal. The two-year qualifying period runs from the date the company resumes trading. If the company was dormant for 18 months and then traded for six months before sale, the two-year test is not met. You would need to wait until the company has been trading for two continuous years after the restart."
 ---
 
-<p>Business Asset Disposal Relief (BADR) gives you a 14% Capital Gains Tax rate on the first £1 million of gains when you sell shares in your company. That is a significant saving compared to the standard 24% rate for non-residential asset gains. But there is a catch. The company must have been a <strong>trading company</strong> for at least two years before the disposal. And a dormant period can blow that requirement apart.</p>
+<p>Business Asset Disposal Relief (BADR) gives you an 18% Capital Gains Tax rate on the first £1 million of gains when you sell shares in your company (18% for disposals from 6 April 2026; the rate was 14% for disposals between 6 April 2025 and 5 April 2026). That is a significant saving compared to the standard 24% rate for non-residential asset gains. But there is a catch. The company must have been a <strong>trading company</strong> for at least two years before the disposal. And a dormant period can blow that requirement apart.</p>
 
 <p>This article explains how HMRC treats dormant periods when assessing the trading company test for BADR. We will cover what counts as trading, what counts as dormant, and what you can do if your company had a quiet spell before you sold it.</p>
 
@@ -131,14 +131,14 @@ faqs:
 <p>If BADR is not available because of a dormant period, you may still be able to use other reliefs. For example:</p>
 
 <ul>
-<li><strong>Investors' Relief</strong> gives a 14% rate on gains from shares issued to external investors (not employees or directors) held for three years. This is less common for owner-managed businesses.</li>
+<li><strong>Investors' Relief</strong> gives an 18% rate on gains from shares issued to external investors (not employees or directors) held for three years (18% from 6 April 2026; 14% applied in 2025/26, in line with the BADR rate changes). This is less common for owner-managed businesses.</li>
 <li><strong>Gift Hold-Over Relief</strong> can defer the gain if you gift shares to someone (not a company) and both parties elect. The gain is deferred until the recipient sells.</li>
 <li><strong>Incorporation Relief</strong> applies when a sole trader or partnership incorporates their business. It defers the gain on the transfer of business assets into the company.</li>
 </ul>
 
 <p>But none of these replace BADR for a straightforward share sale. If you need the cash from the sale, deferral reliefs do not help.</p>
 
-<h2>Our View as ICAEW Qualified Accountants</h2>
+<h2>Our View</h2>
 
 <p>We see this issue most often with contractor Ltd companies. A contractor takes a long break between contracts, the company goes dormant for 12 to 18 months, and then the contractor decides to sell the company. The dormant period is too long to be a temporary cessation. The contractor loses BADR.</p>
 

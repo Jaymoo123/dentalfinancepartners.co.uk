@@ -71,7 +71,7 @@ faqs:
 
 <h2>Interest on Late Corporation Tax</h2>
 
-<p>Interest runs from the date the corporation tax was originally due. For most small companies, that is 9 months and 1 day after the year-end. HMRC charges late payment interest at the Bank of England base rate plus 2.5%. As of early 2025, that is roughly 6.75% per year. It adds up.</p>
+<p>Interest runs from the date the corporation tax was originally due. For most small companies, that is 9 months and 1 day after the year-end. HMRC charges late payment interest at the Bank of England base rate plus 4% (raised from base rate plus 2.5% on 6 April 2025), so currently around 8.25% to 8.5% per year. It adds up.</p>
 
 <p>You cannot negotiate interest. It is statutory. The only way to reduce it is to pay the tax as quickly as possible once HMRC raises the assessment.</p>
 
@@ -94,7 +94,7 @@ faqs:
 <li>Request a closure notice if HMRC is dragging the enquiry out without good reason.</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we advise clients to cooperate fully but never to agree to anything without understanding the implications. If HMRC says you owe more tax, ask for a detailed breakdown. Check their calculations. They can make mistakes too.</p>
+<p>We advise clients to cooperate fully but never to agree to anything without understanding the implications. If HMRC says you owe more tax, ask for a detailed breakdown. Check their calculations. They can make mistakes too.</p>
 
 <h2>How to Respond to an HMRC Enquiry Letter</h2>
 

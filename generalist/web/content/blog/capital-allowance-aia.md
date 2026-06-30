@@ -19,7 +19,7 @@ faqs:
 - question: Can I claim the AIA on a van I use for my business?
   answer: Yes, vans qualify for the AIA as long as they are used wholly for business purposes. If you use the van partly for personal journeys, the AIA is restricted to the business use proportion. A van used 80% for business means you claim AIA on 80% of the cost. Keep a mileage log to support your business use percentage in case HMRC asks.
 - question: What happens if I spend more than £1m on qualifying assets in one year?
-  answer: You claim the AIA on the first £1m of qualifying spend. The excess goes into the main rate pool (18% writing down allowance) or special rate pool (6% writing down allowance), depending on the asset type. If your accounting period is shorter than 12 months, the £1m limit is reduced proportionally. Plan your purchases across accounting periods if you expect to exceed the limit.
+  answer: You claim the AIA on the first £1m of qualifying spend. The excess goes into the main rate pool (14% writing down allowance from 1 April 2026 for companies or 6 April 2026 for sole traders and partnerships under FA 2026; 18% before those dates) or special rate pool (6% writing down allowance), depending on the asset type. If your accounting period is shorter than 12 months, the £1m limit is reduced proportionally. Plan your purchases across accounting periods if you expect to exceed the limit.
 - question: Do I need to claim the AIA on my tax return, or is it automatic?
   answer: You must actively claim the AIA on your tax return. It is not automatic. For limited companies, you claim it in the capital allowances section of the CT600. For sole traders and partnerships, you claim it in the self-employment pages of your self assessment return (SA103 or SA800). If you do not make the claim, HMRC will not apply it for you. You will default to writing down allowances instead.
 dateModified: '2026-05-20'
@@ -37,7 +37,7 @@ imageCredit:
 
 <p>For the 2025/26 tax year, the AIA limit is £1,000,000. That is a temporary increase that has been in place since 1 January 2019 and is currently set to remain at that level. If you spend up to £1m on qualifying assets in a single accounting period, you can write off the whole amount against your profits.</p>
 
-<p>As ICAEW qualified accountants, we see businesses miss out on this relief every year because they do not realise what qualifies or they fail to track their capital spend properly.</p>
+<p>We see businesses miss out on this relief every year because they do not realise what qualifies or they fail to track their capital spend properly.</p>
 
 <h2>Who Can Claim the AIA?</h2>
 
@@ -67,7 +67,7 @@ imageCredit:
 <p>Some assets are specifically excluded from the AIA. The main ones are:</p>
 
 <ul>
-<li>Cars. Most cars go into the main rate or special rate pool and attract writing down allowances at 18% or 6% per year. Zero-emission cars qualify for 100% first year allowances instead.</li>
+<li>Cars. Most cars go into the main rate or special rate pool and attract writing down allowances at 14% or 6% per year (the main rate dropped from 18% to 14% from 1 April 2026 for companies, 6 April 2026 for income tax, under FA 2026). Zero-emission cars qualify for 100% first year allowances instead.</li>
 <li>Assets you already owned before the business started. These go into the pool at market value and attract writing down allowances.</li>
 <li>Assets gifted to you or inherited. Same treatment as above.</li>
 <li>Assets used partly for non-business purposes. The AIA is restricted to the business use proportion.</li>
@@ -78,7 +78,9 @@ imageCredit:
 
 <p>The AIA is not the only capital allowance available. Full Expensing is another 100% relief that applies to most main rate plant and machinery bought by limited companies from 1 April 2023. The key difference is that Full Expensing has no monetary cap, while the AIA is capped at £1m. For most small and medium businesses, the AIA is sufficient.</p>
 
-<p>If you spend more than £1m in a year, the excess goes into the main rate pool (18% writing down allowance) or special rate pool (6% writing down allowance), depending on the asset type. You can also claim the AIA on special rate assets like integral fixtures, but the £1m limit is shared across all qualifying spend.</p>
+<p>From 1 January 2026, a 40% first-year allowance on new and unused main-rate plant and machinery is also available (FA 2026 s.29). This sits alongside Full Expensing for limited companies and is relevant to any business spending above the £1m AIA cap on qualifying new assets.</p>
+
+<p>If you spend more than £1m in a year, the excess goes into the main rate pool (14% writing down allowance from 1 April 2026 for companies, 6 April 2026 for income tax under FA 2026; 18% before those dates) or special rate pool (6% writing down allowance), depending on the asset type. You can also claim the AIA on special rate assets like integral fixtures, but the £1m limit is shared across all qualifying spend.</p>
 
 <p>Structures and Buildings Allowance (SBA) gives 3% straight-line relief on the cost of constructing or renovating commercial buildings. That is separate from the AIA and runs alongside it.</p>
 

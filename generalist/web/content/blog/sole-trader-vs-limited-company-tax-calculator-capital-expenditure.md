@@ -35,7 +35,7 @@ faqs:
 
 <p>If you run a building firm buying a £60,000 digger, a catering business fitting out a new kitchen, or a tech company purchasing £40,000 of servers and laptops, the tax treatment of those purchases fundamentally changes the comparison. The standard calculator misses this entirely. Let us fix that.</p>
 
-<p>We are Holloway Davies, an ICAEW-qualified firm. We work with businesses across every sector. This article walks through the real numbers so you can make a decision grounded in your actual spending pattern, not a generic template.</p>
+<p>We are Holloway Davies. We work with businesses across every sector. This article walks through the real numbers so you can make a decision grounded in your actual spending pattern, not a generic template.</p>
 
 <h2>How Capital Allowances Work for a Sole Trader</h2>
 
@@ -51,7 +51,7 @@ faqs:
 
 <p>A limited company deducts the capital allowance from its taxable profit before corporation tax. If the company is paying corporation tax at 19% (profits under £50,000) or 25% (profits over £250,000), the saving is at that rate. A £40,000 van saves the company between £7,600 and £10,000 in corporation tax, depending on the profit level.</p>
 
-<p>But here is the detail that matters. The company then needs to get that money out to you as the director. The retained profit after corporation tax can be extracted as dividends (taxed at 8.75%, 33.75%, or 39.35%) or salary (taxed via PAYE with employer NIC). The net benefit to you personally is lower than the headline corporation tax saving suggests.</p>
+<p>But here is the detail that matters. The company then needs to get that money out to you as the director. The retained profit after corporation tax can be extracted as dividends (taxed at 10.75%, 35.75%, or 39.35% in 2026/27; the rates were 8.75%/33.75% up to 5 April 2026) or salary (taxed via PAYE with employer NIC). The net benefit to you personally is lower than the headline corporation tax saving suggests.</p>
 
 <p>For a sole trader, the saving is direct. Lower profit means lower income tax and NIC. No second layer of extraction. That is the structural advantage the standard calculators miss.</p>
 
@@ -73,33 +73,32 @@ faqs:
 <li>Class 4 NIC at 6% on £37,700: £2,262</li>
 <li>Class 4 NIC at 2% on £9,730: £194.60</li>
 <li>Total Class 4 NIC: £2,456.60</li>
-<li>Class 2 NIC: £179.40</li>
-<li><strong>Total tax and NIC: £14,068</strong></li>
-<li>Net cash in pocket after tax: £45,932</li>
+<li><strong>Total tax and NIC: £13,888.60</strong></li>
+<li>Net cash in pocket after tax: £46,111.40</li>
 </ul>
 
 <p><strong>Limited Company Scenario</strong></p>
 <ul>
-<li>Profit before capital allowances: £120,000</li>
-<li>Capital expenditure: £60,000</li>
+<li>Profit before salary, employer NIC and capital allowances: £120,000</li>
+<li>Director's salary (deductible company expense): £12,570</li>
+<li>Employer NIC on salary (15% x (£12,570 - £5,000 secondary threshold); Employment Allowance is not available to a single-director company): £1,135.50</li>
 <li>AIA claimed: £60,000</li>
-<li>Taxable profit: £60,000</li>
-<li>Corporation tax at 19% (profit under £50k marginal relief band, but let us assume full small profits rate for simplicity): £11,400</li>
-<li>Profit after corporation tax: £48,600</li>
-<li>Director draws £12,570 as salary (employer NIC covered by Employment Allowance, employee NIC nil as below threshold)</li>
-<li>Remaining profit distributed as dividend: £36,030</li>
+<li>Taxable profit for corporation tax: £46,294.50</li>
+<li>Corporation tax at 19% (profits below £50,000 small profits rate): £8,796</li>
+<li>Profit after corporation tax: £37,498.50</li>
+<li>Director has already received salary of £12,570; retained profit distributed as dividend: £37,498.50</li>
 <li>Dividend allowance: £500</li>
-<li>Dividend taxed at 8.75% on £35,530: £3,108.88</li>
-<li>Total tax on extraction: £3,108.88</li>
-<li><strong>Total corporation tax plus dividend tax: £14,508.88</strong></li>
-<li>Net cash in pocket after all tax: £45,491.12</li>
+<li>Dividend taxed at 8.75% on £36,998.50 (2025/26 rate): £3,237.37</li>
+<li>Total tax on extraction (dividend tax): £3,237.37</li>
+<li><strong>Total corporation tax, employer NIC and dividend tax: £13,168.87</strong></li>
+<li>Net cash in pocket after all tax: £46,831.13</li>
 </ul>
 
-<p><strong>Result: the sole trader is ahead by roughly £441</strong> in this scenario. The difference is small. But notice what happens if we remove the capital expenditure.</p>
+<p><strong>Result: the limited company is ahead by roughly £720</strong> in this scenario. The gap is narrower than it would be without the capital expenditure. But notice what happens if we remove the capital expenditure.</p>
 
-<p>Without the £60,000 spend, the sole trader pays tax on £120,000. The limited company pays corporation tax on £120,000. The sole trader's tax bill jumps significantly because the higher rate band is fully exposed. The limited company's corporation tax also jumps, but the extraction structure (salary plus dividends) still gives some shelter. In that case, the limited company wins.</p>
+<p>Without the £60,000 spend, the sole trader pays tax on £120,000. The limited company pays corporation tax on £120,000. The sole trader's tax bill jumps significantly because the higher rate band is fully exposed. The limited company's corporation tax also jumps, but the extraction structure (salary plus dividends) still gives some shelter. In that case, the limited company wins by a much wider margin.</p>
 
-<p>The capital expenditure is the swing factor. It pulls the sole trader's taxable profit down into the basic rate band. That is where the sole trader structure becomes genuinely competitive.</p>
+<p>The capital expenditure narrows the company's tax advantage significantly. It pulls the sole trader's taxable profit down into the basic rate band. That is where the sole trader structure becomes most competitive.</p>
 
 <h2>When the Sole Trader Structure Wins on Capital Spend</h2>
 
@@ -161,7 +160,7 @@ faqs:
 
 <p>If the difference is small, the sole trader route may be simpler and cheaper overall. If the difference is significant, the limited company structure justifies the extra cost.</p>
 
-<p>We run this exact modelling for clients. If your turnover crossed £90,000 in the last 30 days, you also need to consider VAT registration timing, which adds another layer to the decision. Our <a href="/services">services</a> page covers how we handle the full picture.</p>
+<p>We run this exact modelling for clients. If your rolling 12-month taxable turnover has crossed £90,000, you also need to consider VAT registration timing, which adds another layer to the decision. Our <a href="/services">services</a> page covers how we handle the full picture.</p>
 
 <h2>What to Do Next</h2>
 
@@ -169,4 +168,4 @@ faqs:
 
 <p>If you are a contractor, the IR35 status determination overrides most of the above. Get the status right first, then model the structure.</p>
 
-<p>For a full comparison with your actual figures, speak to an accountant who understands capital allowances. We are <a href="/about">ICAEW qualified</a> and work with businesses across the UK. Contact us to run the numbers properly.</p>
+<p>For a full comparison with your actual figures, speak to an accountant who understands capital allowances. We work with businesses across the UK. <a href="/contact">Contact us</a> to run the numbers properly.</p>

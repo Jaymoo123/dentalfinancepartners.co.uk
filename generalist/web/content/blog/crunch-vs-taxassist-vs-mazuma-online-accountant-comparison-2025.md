@@ -117,7 +117,7 @@ faqs:
 
 <p>If your business is growing, you may outgrow these services. A contractor turning over £60,000 has different needs from a software consultancy in Manchester turning over £420,000 with four employees. At that point, you need a firm that does more than compliance. You need strategic advice on <a href="/blog/corporation-tax">corporation tax planning</a>, <a href="/blog/director-pay-and-dividends">director remuneration</a>, and <a href="/blog/randd-tax-credits">R&D claims</a>.</p>
 
-<p>That is where a firm like Holloway Davies comes in. We are <a href="/about">ICAEW qualified accountants</a> working with businesses of every shape. We do not lock you into proprietary software. We work with Xero, FreeAgent, QuickBooks, and Sage. You get a dedicated accountant who knows your business, plus the software you prefer.</p>
+<p>That is where a firm like Holloway Davies comes in. We are <a href="/about">specialist accountants</a> working with businesses of every shape. We do not lock you into proprietary software. We work with Xero, FreeAgent, QuickBooks, and Sage. You get a dedicated accountant who knows your business, plus the software you prefer.</p>
 
 <h2>Key Differences at a Glance</h2>
 <table>
@@ -137,4 +137,4 @@ faqs:
 
 <p>If your business has outgrown a one-size-fits-all service, or if you are about to start a limited company and want the right structure from day one, talk to us. Our <a href="/services">services</a> page explains how we work. Or <a href="/contact">get in touch</a> for a no-obligation conversation about what you actually need.</p>
 
-<p>If your turnover crossed the VAT registration threshold of £90,000 in the last 30 days, you need to register within that 30-day window. That is a specific compliance trigger. Do not assume your online accountant service will flag it automatically. Check your position now.</p>
+<p>You must register for VAT once your taxable turnover exceeds £90,000 on a rolling 12-month basis. You then have 30 days from the end of the month you breached that threshold to notify HMRC. That is a specific compliance trigger. Do not assume your online accountant service will flag it automatically. Check your position now.</p>

@@ -7,7 +7,7 @@ author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "How Does Corporation Tax Work | UK Guide for Directors"
 metaDescription: "How does corporation tax work in the UK? Rates, deadlines, filing, reliefs. A complete guide for limited company directors and business owners."
-altText: "ICAEW-qualified accountant reviewing corporation tax computation on a laptop in a modern UK office"
+altText: "accountant reviewing corporation tax computation on a laptop in a modern UK office"
 image: "/blog/how-does-corporation-tax-work.jpg"
 imageCredit:
   photographer: "RDNE Stock project"
@@ -30,7 +30,7 @@ faqs:
 
 <p>If you run a limited company in the UK, you pay corporation tax on your profits. It's not optional. It's not like income tax where you file a return once a year and hope for the best. Corporation tax has its own rules, rates, deadlines, and penalties. Get it wrong and HMRC will find you.</p>
 
-<p>This guide answers the question <strong>how does corporation tax work</strong> from first principles. It is written for directors of small and growing limited companies, contractors working through their own Ltd, sole traders considering incorporation, and partnership owners wondering whether to make the switch. We are <a href="/about">ICAEW qualified accountants</a> based in the UK. We deal with corporation tax every working day.</p>
+<p>This guide answers the question <strong>how does corporation tax work</strong> from first principles. It is written for directors of small and growing limited companies, contractors working through their own Ltd, sole traders considering incorporation, and partnership owners wondering whether to make the switch. We are <a href="/about">specialist accountants</a> based in the UK. We deal with corporation tax every working day.</p>
 
 <p>By the end of this pillar you will know the current rates, how to calculate your liability, what forms to file, when to pay, and how to reduce your bill legitimately. Let's start with the basics.</p>
 

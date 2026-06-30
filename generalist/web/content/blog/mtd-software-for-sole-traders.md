@@ -33,7 +33,7 @@ faqs:
 
 <p>But here is the practical question most sole traders ask us: what MTD software for sole traders actually works? Which packages are compliant? And do you need to switch if you already use something like FreeAgent, Xero, or QuickBooks?</p>
 
-<p>As ICAEW qualified accountants working with sole traders across Manchester, Bristol, and London, we have tested the main options. This article tells you what you need, what works, and what to avoid.</p>
+<p>Working with sole traders across Manchester, Bristol, and London, we have tested the main options. This article tells you what you need, what works, and what to avoid.</p>
 
 <h2>What Is MTD for ITSA and Why Does It Matter for Sole Traders?</h2>
 
@@ -111,7 +111,7 @@ faqs:
 
 <h2>What About the £500 Dividend Allowance and Other Tax Changes?</h2>
 
-<p>MTD ITSA runs alongside other tax changes for 2025/26. The dividend allowance has dropped to £500. The basic rate band is £50,270. The personal allowance is £12,570. If you are a sole trader who also takes dividends from a limited company, both income streams count toward your qualifying income for MTD ITSA purposes.</p>
+<p>MTD ITSA runs alongside other tax changes for 2025/26. The dividend allowance has dropped to £500. The basic rate band is £50,270. The personal allowance is £12,570. If you are a sole trader who also takes dividends from a limited company, note that dividend income does not count toward the MTD ITSA qualifying income threshold. Only your self-employment profits and any property income are included in the qualifying income calculation.</p>
 
 <p>We covered the wider implications of MTD in our <a href="/blog/vat-and-making-tax-digital">MTD and Making Tax Digital blog</a>. The short version is that MTD ITSA is not just a software change. It changes how you interact with HMRC throughout the year rather than once annually.</p>
 
@@ -145,4 +145,4 @@ faqs:
 
 <p>MTD ITSA is the biggest change to self assessment in decades. Getting the software right is the first step, but you also need to understand the quarterly submission process, the end-of-year finalisation, and how it interacts with your wider tax position.</p>
 
-<p>Our ICAEW qualified team helps sole traders across the UK set up MTD compliant systems, manage quarterly submissions, and plan their tax efficiently. If you want to discuss which MTD software for sole traders fits your business, <a href="/contact">get in touch</a>. We can walk through your numbers and recommend the right setup.</p>
+<p>Our experienced team helps sole traders across the UK set up MTD compliant systems, manage quarterly submissions, and plan their tax efficiently. If you want to discuss which MTD software for sole traders fits your business, <a href="/contact">get in touch</a>. We can walk through your numbers and recommend the right setup.</p>

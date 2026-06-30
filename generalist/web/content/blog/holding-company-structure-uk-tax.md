@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "Incorporation and Structure"
 metaTitle: "Holding Company Structure UK Tax: A Practical Guide"
 metaDescription: "How a holding company structure affects UK tax for limited companies. Corporation tax, dividends, group relief and BADR explained with worked examples."
-altText: "Two UK business directors reviewing group structure documents with an ICAEW qualified accountant in a Manchester office meeting room"
+altText: "Two UK business directors reviewing group structure documents with an accountant in a Manchester office meeting room"
 image: "/blog/holding-company-structure-uk-tax.jpg"
 imageCredit:
   photographer: "Erik Mclean"
@@ -31,7 +31,7 @@ faqs:
 
 <p>If you own more than one limited company, or you are planning to expand your business by acquiring or starting additional trading companies, a holding company structure is worth serious consideration. It is not just about organisation charts. It changes how tax applies to your group.</p>
 
-<p>This guide explains how a holding company structure affects UK tax for limited companies. We cover corporation tax, dividend flows, group relief, Business Asset Disposal Relief (BADR) and the practical steps to set one up. As ICAEW qualified accountants, we work with business owners across Manchester, Birmingham, London and beyond who are weighing up whether a group structure makes sense for them.</p>
+<p>This guide explains how a holding company structure affects UK tax for limited companies. We cover corporation tax, dividend flows, group relief, Business Asset Disposal Relief (BADR) and the practical steps to set one up. We work with business owners across Manchester, Birmingham, London and beyond who are weighing up whether a group structure makes sense for them.</p>
 
 <h2>What Is a Holding Company Structure?</h2>
 
@@ -55,7 +55,7 @@ faqs:
 
 <p>If your holding company has no taxable profits (it holds assets but does not trade), it still counts as an associated company. This can push your trading subsidiaries into the marginal relief band or the main 25% rate sooner than if they stood alone.</p>
 
-<p>Example: a single trading company with £70,000 profit pays corporation tax at 19% on the full amount, because it is below £50,000? No. £70,000 is above £50,000. Marginal relief applies between £50,000 and £250,000. So a standalone company with £70,000 profit pays a blended rate around 19.75% after marginal relief. With three associated companies, the same £70,000 profit falls above the reduced upper limit of £83,333? Actually £70,000 is below £83,333, so marginal relief still applies, but the rate is higher because the thresholds are compressed.</p>
+<p>Example: a single trading company with £70,000 profit pays corporation tax at 19% on the full amount, because it is below £50,000? No. £70,000 is above £50,000. Marginal relief applies between £50,000 and £250,000. So a standalone company with £70,000 profit pays a blended rate around 21.1% after marginal relief (corporation tax of about £14,800). With three associated companies, the same £70,000 profit falls above the reduced upper limit of £83,333? Actually £70,000 is below £83,333, so marginal relief still applies, but the rate is higher because the thresholds are compressed.</p>
 
 <p>The exact calculation depends on the distribution of profits across the group. Our advice: if you are setting up a holding company structure, model the corporation tax position first. Do not assume you will still get the small profits rate.</p>
 
@@ -159,4 +159,4 @@ faqs:
 
 <p>If you are considering a group structure, start by modelling the tax position. Work out the corporation tax impact of associated companies. Check that BADR and SSE will still apply on your planned exit. And get the share exchange documentation right from the start.</p>
 
-<p>Our ICAEW qualified team advises business owners across the UK on group structures, corporation tax and exit planning. If your business is ready to expand, <a href="/contact">get in touch</a> to discuss your situation.</p>
+<p>Our specialist team advises business owners across the UK on group structures, corporation tax and exit planning. If your business is ready to expand, <a href="/contact">get in touch</a> to discuss your situation.</p>

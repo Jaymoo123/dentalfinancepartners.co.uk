@@ -8,6 +8,12 @@ author: Holloway Davies Editorial Team
 category: Exit and Capital Gains
 metaTitle: 'Capital Gains Tax on Residential Property 2026: Full Rates'
 metaDescription: 'How CGT applies to a residential property sale in 2026: 18% and 24% rates after a £3,000 annual exemption, plus the 60-day reporting rule.'
+keyTakeaways:
+  - "Residential property gains are taxed at 18% (basic rate) or 24% (higher rate) from 30 October 2024."
+  - "The annual exempt amount is £3,000 per individual for both 2025/26 and 2026/27."
+  - "All UK residential property disposals must be reported and the tax paid within 60 days of completion."
+  - "Private Residence Relief covers your main home period plus the final 9 months of ownership."
+  - "Married couples or civil partners who jointly own a property can each use the £3,000 annual exempt amount."
 altText: UK residential property with For Sale sign, capital gains tax rates 2026
 image: /blog/uk-capital-gains-tax-rates-residential-property-2026.jpg
 imageCredit:
@@ -17,9 +23,7 @@ imageCredit:
   source: Pexels
 h1: 'UK Capital Gains Tax Rates for Residential Property in 2026: What Property Owners Need to Know'
 summary: UK capital gains tax rates for residential property in 2026 are 18% for basic rate taxpayers and 24% for higher rate taxpayers. The annual exempt amount has been cut to £3,000. Here is how the rates apply, when you must report, and what reliefs are still available.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"UK Capital Gains Tax Rates for Residential Property in 2026: What Property Owners Need to Know","description":"How CGT applies to a residential property sale in 2026: 18% and 24% rates after a £3,000 annual exemption, plus the 60-day reporting rule.","url":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-capital-gains-tax-rates-residential-property-2026","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal
-  taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-capital-gains-tax-rates-residential-property-2026"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/uk-capital-gains-tax-rates-residential-property-2026.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Exit and Capital Gains","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains"},{"@type":"ListItem","position":3,"name":"UK Capital Gains Tax Rates for Residential Property in 2026: What Property Owners Need to Know","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-capital-gains-tax-rates-residential-property-2026"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the capital gains tax rate for residential property in 2026?","acceptedAnswer":{"@type":"Answer","text":"For disposals on or after 30 October 2024, the rate is 18% for basic rate taxpayers and 24% for higher rate and additional rate taxpayers. These rates apply for 2025/26 and 2026/27. The annual exempt amount is £3,000 per individual."}},{"@type":"Question","name":"Do I need to report a property sale within 60 days in 2026?","acceptedAnswer":{"@type":"Answer","text":"Yes. The 60-day reporting and payment rule applies to all UK residential property disposals. You must submit a CGT property return and pay the tax
-  within 60 days of completion, even if you file a self assessment return later."}},{"@type":"Question","name":"Can I avoid CGT by selling a property I used to live in?","acceptedAnswer":{"@type":"Answer","text":"Private Residence Relief covers the period you lived in the property as your main home, plus the final 9 months of ownership. The gain on the period you rented it out or left it empty is chargeable. You cannot avoid CGT entirely unless you lived there for the whole ownership period."}},{"@type":"Question","name":"What happens if I miss the 60-day CGT reporting deadline?","acceptedAnswer":{"@type":"Answer","text":"HMRC charges an automatic £100 penalty for the first day late, then £10 per day for up to 90 days. Further penalties apply after 90 days. Interest also accrues on unpaid tax from the original due date. File as soon as you realise you have missed the deadline to minimise penalties."}}]}]}'
+schema: ""
 faqs:
 - question: What is the capital gains tax rate for residential property in 2026?
   answer: For disposals on or after 30 October 2024, the rate is 18% for basic rate taxpayers and 24% for higher rate and additional rate taxpayers. These rates apply for 2025/26 and 2026/27. The annual exempt amount is £3,000 per individual.
@@ -32,8 +36,8 @@ faqs:
 metaTitle_prev: 'UK Capital Gains Tax Rates Residential Property 2026: Full'
 metaDescription_prev: 'CGT on residential property in 2026: 18% basic rate, 24% higher rate. £3,000 annual exemption gone. 60-day reporting still applies. Full rates'
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -51,7 +55,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li><strong>Additional rate taxpayers:</strong> 24% on all gains.</li>
 </ul>
 
-<p>These rates apply to UK residential property. They do not apply to commercial property, shares, or other assets, which have separate CGT rates (10% and 20% for most assets, or 14% and 18% for Business Asset Disposal Relief from April 2025).</p>
+<p>These rates apply to UK residential property. They do not apply to commercial property, shares, or other assets, which now also carry CGT rates of 18% and 24% (from 30 October 2024), or 18% for Business Asset Disposal Relief from 6 April 2026 (14% applied 6 April 2025 to 5 April 2026).</p>
 
 <p>The old rates of 18% and 28% (which applied before 30 October 2024) are gone. The new rates are lower for higher rate taxpayers, who previously paid 28% and now pay 24%.</p>
 
@@ -87,7 +91,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>PRR does not apply to buy-to-let properties, second homes, or properties you never lived in. If you lived in the property for part of the ownership period, the gain is apportioned. Only the non-resident period is chargeable.</p>
 
-<p><strong>Example:</strong> Tom bought a flat in Manchester in 2018 for £180,000. He lived there until 2022, then rented it out. He sells it in 2026 for £280,000. The total gain is £100,000. He lived there for 4 years out of 8 years of ownership. PRR covers 50% of the gain (£50,000). The remaining £50,000 is chargeable. After his £3,000 AEA, the chargeable gain is £47,000, taxed at 24% (if he is a higher rate taxpayer). CGT: £11,280.</p>
+<p><strong>Example:</strong> Tom bought a flat in Manchester in 2018 for £180,000. He lived there until 2022, then rented it out. He sells it in 2026 for £280,000. The total gain is £100,000. He lived there for 4 years out of 8 years of ownership, but PRR also covers the final 9 months of ownership. The qualifying period is therefore 57 months out of 96 (48 months of actual residence plus 9 months final period). PRR covers 59.375% of the gain (£59,375). The remaining £40,625 is chargeable. After his £3,000 AEA, the chargeable gain is £37,625, taxed at 24% (if he is a higher rate taxpayer). CGT: £9,030.</p>
 
 <h2>Other Reliefs That Still Apply</h2>
 
@@ -97,7 +101,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>Letting Relief was restricted from April 2020. It now only applies if you lived in the property at the same time as your tenant (i.e., you rented out a room while living there). It does not apply to standard buy-to-let properties where the tenant occupies the whole property. The relief is capped at £40,000 per owner.</p>
 
 <h3>Gift Relief (Hold-Over Relief)</h3>
-<p>If you gift a residential property to a charity or into a trust, you can claim hold-over relief to defer the gain. This does not apply to gifts to individuals. If you gift a property to a relative, the gain is still chargeable, though you may be able to use the annual exempt amount.</p>
+<p>If you gift a residential property to a UK registered charity, no CGT arises at all. The gain is exempt, not merely deferred. If you gift into a qualifying trust where the transfer is a chargeable lifetime transfer for inheritance tax purposes, you may be able to claim hold-over relief under section 260 TCGA 1992 to defer the gain instead. This does not apply to gifts to individuals. If you gift a property to a relative, the gain is still chargeable, though you may be able to use the annual exempt amount.</p>
 
 <h3>Transfer Between Spouses</h3>
 <p>Transfers of property between spouses or civil partners are tax-free. The receiving spouse inherits the original cost basis. This can be useful for planning: if one spouse has unused basic rate band or annual exempt amount, you can transfer part ownership before a sale to reduce the overall tax bill.</p>
@@ -154,4 +158,4 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If you are planning to sell a residential property that is not your main home, factor the CGT into your net proceeds. The 60-day reporting rule means you cannot defer the tax until your self assessment deadline. Plan ahead, keep good records, and consider using both spouses' allowances where possible.</p>
 
-<p>For advice specific to your situation, speak to a qualified accountant. Our <a href="/about">ICAEW qualified team</a> at Holloway Davies can help you structure property disposals tax-efficiently. Contact us through our <a href="/contact">contact page</a> for a consultation.</p>
+<p>For advice specific to your situation, speak to a qualified accountant. Our team at Holloway Davies can help you structure property disposals tax-efficiently. Contact us through our <a href="/contact">contact page</a> for a consultation.</p>

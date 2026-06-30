@@ -33,7 +33,7 @@ faqs:
 <p>Most IR35 guidance assumes you have one limited company and one contract at a time. It treats you as either inside or outside IR35 on a single contract, and the advice stops there.</p>
 <p>But what if you are a contractor running your own limited company for IT consultancy work, and you also own a separate limited company that runs a café in Manchester's Northern Quarter? Or you take outside-IR35 contracts through your personal service company while your wife runs a separate ecommerce business through another Ltd you both own?</p>
 <p>This is where <strong>ir35 explained</strong> for the real world gets complicated. HMRC looks at the whole picture, not just one contract in isolation. Get the structure wrong and you could trigger an IR35 enquiry, lose your outside-IR35 status, or create tax liabilities you did not see coming.</p>
-<p>As ICAEW qualified accountants, we see this situation more often than you might expect. Here is how to handle it properly.</p>
+<p>We see this situation more often than you might expect. Here is how to handle it properly.</p>
 
 <h2>Does Having a Separate Limited Company Affect Your IR35 Status?</h2>
 <p>Short answer: not directly. But it creates risks if you are not careful.</p>
@@ -110,7 +110,7 @@ faqs:
 <li><strong>Use separate bank accounts.</strong> This is non-negotiable. Each company needs its own business bank account. No transfers between them without formal loan agreements.</li>
 <li><strong>File separate accounts on time.</strong> Late filing at Companies House attracts penalties starting at £150 for a private company. Two companies means double the risk.</li>
 <li><strong>Keep separate payroll records.</strong> Even if you use the same payroll software, each company must have its own PAYE reference and RTI submissions.</li>
-<li><strong>Document intercompany loans.</strong> If one company lends to the other, use a formal loan agreement with commercial interest. Repay within 9 months and 1 day of the year-end to avoid S455 tax (33.75% on the loan amount).</li>
+<li><strong>Document intercompany loans.</strong> If one company lends to the other, use a formal loan agreement with commercial interest. Repay within 9 months and 1 day of the year-end to avoid s.455 tax (33.75% on loans made in 2025/26, rising to 35.75% for loans made on or after 6 April 2026).</li>
 <li><strong>Review your associated company status.</strong> If you control both companies, tell your accountant. They need to calculate corporation tax correctly using the associated company rules.</li>
 <li><strong>Keep outside-IR35 contracts properly documented.</strong> Use a contract review service for each new engagement. HMRC can look back 6 years on IR35 enquiries.</li>
 <li><strong>Consider professional indemnity insurance.</strong> If one company has a claim, the other company's assets should not be at risk. Proper separation helps.</li>

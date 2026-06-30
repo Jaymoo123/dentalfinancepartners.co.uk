@@ -82,7 +82,7 @@ faqs:
 
 <p>Not all MTD-compatible software handles both income types equally well. Some are designed primarily for sole traders and treat rental property as an afterthought. Others are built for landlords and handle self-employment less well.</p>
 
-<p>As ICAEW qualified accountants, we recommend checking three things before you choose software:</p>
+<p>We recommend checking three things before you choose software:</p>
 
 <ol>
 <li><strong>Does it support multiple MTD businesses?</strong> You need to submit separate updates for each income stream. Some software only supports one MTD business per account.</li>
@@ -114,7 +114,7 @@ faqs:
 
 <p>HMRC is introducing a new penalty system for MTD for ITSA. It is points-based. You receive a penalty point for each late submission. Once you accumulate a certain number of points, you receive a financial penalty. The points reset after a period of compliance.</p>
 
-<p>For quarterly updates, the threshold is two points for annual filers. That means two late quarterly updates within a 12-month period trigger a penalty. The penalty is £200 for each subsequent late submission after the threshold is reached.</p>
+<p>For quarterly updates the penalty points threshold is four points. Once you reach four points within the relevant period you receive a £200 penalty, and a further £200 for each subsequent late submission. (The two-point threshold applies to annual submission obligations, not quarterly ones.)</p>
 
 <p>For the final declaration, the penalty structure mirrors the current self assessment late filing penalties. £100 immediately if late, then daily penalties of £10 per day after 3 months, then further penalties after 6 and 12 months.</p>
 

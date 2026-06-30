@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "How a Limited Company Accountant Handles a Late Filing"
 metaDescription: "Late filing penalty from HMRC? A limited company accountant can appeal on reasonable excuse grounds. Here is exactly how we do it and when it works."
-altText: "ICAEW qualified accountant reviewing HMRC penalty notice with client in a UK office"
+altText: "Accountant reviewing HMRC penalty notice with client in a UK office"
 image: "/blog/how-a-limited-company-accountant-handles-a-late-filing-penalty-appeal.jpg"
 imageCredit:
   photographer: "RDNE Stock project"
@@ -30,10 +30,10 @@ faqs:
 ---
 
 <h2>HMRC Issues Penalties Automatically. They Are Not Final.</h2>
-<p>If your limited company files its Corporation Tax return (CT600) late, HMRC issues a penalty automatically. The first offence is £100. If you are six months late, it is £200 or 10% of the tax due, whichever is higher. At 12 months, it can reach 20% of the tax due.</p>
+<p>If your limited company files its Corporation Tax return (CT600) late, HMRC issues a penalty automatically. The first offence is £100. At six months late, HMRC estimates your Corporation Tax bill and charges a penalty of 10% of the unpaid tax. At 12 months, a further 10% is added (20% in total).</p>
 <p>These penalties land on your doormat without any human review. HMRC does not check whether you had a good reason. They just send the notice.</p>
 <p>But here is the thing: you can appeal. And a <strong>limited company accountant</strong> who knows the penalty regime can often get the penalty reduced or cancelled entirely.</p>
-<p>At Holloway Davies, we are ICAEW qualified. We handle these appeals regularly for directors who missed a deadline through no fault of their own. This article explains exactly how the appeal process works, what HMRC accepts as a reasonable excuse, and what you need to do if a penalty lands on your desk.</p>
+<p>At Holloway Davies, we handle these appeals regularly for directors who missed a deadline through no fault of their own. This article explains exactly how the appeal process works, what HMRC accepts as a reasonable excuse, and what you need to do if a penalty lands on your desk.</p>
 
 <h2>When Does HMRC Issue a Late Filing Penalty?</h2>
 <p>Your limited company must file its annual accounts and Company Tax Return (CT600) at Companies House and HMRC within 9 months of the accounting year-end. For a company with a 31 March year-end, the deadline is 31 December.</p>
@@ -41,8 +41,8 @@ faqs:
 <ul>
 <li><strong>First offence:</strong> £100 flat penalty.</li>
 <li><strong>3 months late:</strong> Another £100.</li>
-<li><strong>6 months late:</strong> The greater of £200 or 10% of the unpaid tax.</li>
-<li><strong>12 months late:</strong> The greater of £200 or 20% of the unpaid tax (or 10% if the return is filed voluntarily).</li>
+<li><strong>6 months late:</strong> HMRC estimates your Corporation Tax bill and charges 10% of the unpaid tax.</li>
+<li><strong>12 months late:</strong> A further 10% of the unpaid tax (20% in total).</li>
 </ul>
 <p>These penalties apply even if your company has no tax to pay. A nil return filed late still triggers the £100 penalty. The system is strict.</p>
 

@@ -35,7 +35,7 @@ faqs:
 
 <p>The threshold drops to £30,000 from April 2027, and to £20,000 from April 2028. If you are a sole trader with a separate portfolio of shares paying dividends, the key question is: do those dividends count towards the £50,000 threshold, and do you need to report them in your quarterly updates?</p>
 
-<p>The short answer is yes on both counts, but the detail matters. As ICAEW qualified accountants, we work through the specific rules below.</p>
+<p>The short answer is no on both counts, but the detail matters. We work through the specific rules below.</p>
 
 <h2>What Counts as "Qualifying Income" for the MTD Threshold?</h2>
 
@@ -82,7 +82,7 @@ faqs:
 <li>Dividends from unit trusts or OEICs</li>
 </ul>
 
-<p>The annual dividend allowance for 2025/26 is £500. Dividends above that are taxed at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate). Your MTD-compatible software should calculate the tax due based on your total income, including dividends, after the EOPS is submitted.</p>
+<p>The dividend allowance is £500. Dividends above that are taxed at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate) from 6 April 2026 (2026/27 rate; the 2025/26 rates were 8.75% basic and 33.75% higher). Your MTD-compatible software should calculate the tax due based on your total income, including dividends, after the EOPS is submitted.</p>
 
 <p>You do not need to provide a breakdown of each dividend payment. A single total figure for the year is sufficient. But HMRC may ask for supporting evidence, so keep your dividend vouchers and bank statements.</p>
 
@@ -132,4 +132,4 @@ faqs:
 
 <p>The key numbers to remember: £50,000 threshold for 2026, £30,000 for 2027, £20,000 for 2028. Dividends do not count towards those thresholds. But once you are mandated, all your income sources must be reported digitally, including dividends.</p>
 
-<p>If you need help setting up your MTD-compatible records or understanding how your dividend income fits into the new system, <a href="/about">our ICAEW qualified team</a> can guide you through it.</p>
+<p>If you need help setting up your MTD-compatible records or understanding how your dividend income fits into the new system, <a href="/about">our specialist team</a> can guide you through it.</p>

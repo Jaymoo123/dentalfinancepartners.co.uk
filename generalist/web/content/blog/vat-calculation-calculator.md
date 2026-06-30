@@ -110,7 +110,7 @@ imageCredit:
 
 <p>A VAT calculation calculator is a useful tool, but it cannot replace professional advice. If your business makes exempt supplies, uses a retail scheme, or has complex partial exemption calculations, you need an accountant who understands the rules.</p>
 
-<p>As ICAEW qualified accountants, we help businesses across the UK get their VAT right. We can set up your accounting software with the correct VAT codes, help you choose the right retail scheme, and handle partial exemption calculations. If you are unsure about any aspect of VAT, <a href="/contact">contact us</a> for a consultation.</p>
+<p>We help businesses across the UK get their VAT right. We can set up your accounting software with the correct VAT codes, help you choose the right retail scheme, and handle partial exemption calculations. If you are unsure about any aspect of VAT, <a href="/contact">contact us</a> for a consultation.</p>
 
 <p>You can also explore our <a href="/calculators">online calculators</a> for quick VAT checks, or visit our <a href="/services">services page</a> to see how we support businesses with VAT compliance.</p>
 

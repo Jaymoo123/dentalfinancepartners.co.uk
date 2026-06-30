@@ -35,7 +35,7 @@ faqs:
 
 <p>FreeAgent was built specifically for contractors, freelancers, and small limited companies. It was acquired by NatWest in 2018 but remains available to anyone, not just NatWest customers. Around 150,000 UK businesses use it. It is one of the three main accounting platforms for small Ltds alongside Xero and QuickBooks.</p>
 
-<p>As ICAEW qualified accountants, we use FreeAgent with most of our contractor clients. It automates the tasks that take up the most time: bank reconciliation, VAT calculations, and dividend paperwork. The key benefit is that your accountant can see your live financial position at any point, not just at year-end.</p>
+<p>As experienced accountants, we use FreeAgent with most of our contractor clients. It automates the tasks that take up the most time: bank reconciliation, VAT calculations, and dividend paperwork. The key benefit is that your accountant can see your live financial position at any point, not just at year-end.</p>
 
 <h2>How Does FreeAgent Help Contractors Specifically?</h2>
 
@@ -61,9 +61,9 @@ faqs:
 
 <h3>Dividend Processing</h3>
 
-<p>Contractors typically pay themselves a small salary and take the rest as dividends. FreeAgent tracks your dividend allowance (£500 for 2025/26), calculates the tax due at 8.75% basic rate, 33.75% higher rate, or 39.35% additional rate, and generates the dividend vouchers you need to keep for your records.</p>
+<p>Contractors typically pay themselves a small salary and take the rest as dividends. FreeAgent tracks your dividend allowance (£500 for 2025/26), calculates the tax due at 10.75% basic rate, 35.75% higher rate, or 39.35% additional rate (2026/27 rates; 8.75%/33.75% applied in 2025/26), and generates the dividend vouchers you need to keep for your records.</p>
 
-<p>It also tracks your director's loan account. If you take money from the company that is not salary or dividends, it shows as a loan. FreeAgent alerts you if that loan exceeds £10,000 (triggering a benefit in kind) or if it remains unpaid 9 months and 1 day after your year-end (triggering S455 tax at 33.75%).</p>
+<p>It also tracks your director's loan account. If you take money from the company that is not salary or dividends, it shows as a loan. FreeAgent alerts you if that loan exceeds £10,000 (triggering a benefit in kind) or if it remains unpaid 9 months and 1 day after your year-end (triggering S455 tax at the dividend upper rate for the year the loan is made: 33.75% for loans made in 2025/26, 35.75% for loans made on or after 6 April 2026).</p>
 
 <h2>What Does a FreeAgent Accountant Handle That You Cannot?</h2>
 
@@ -129,7 +129,7 @@ faqs:
 <li>Total: £112 to £219 per month</li>
 </ul>
 
-<p>Compare that to the cost of doing it yourself. A typical contractor limited company with £80,000 profit pays around £15,200 in corporation tax. If you make a mistake on your bookkeeping or miss a deadline, the penalties and interest can easily exceed the accountant's fee. The accountant is a cost saver, not a cost.</p>
+<p>Compare that to the cost of doing it yourself. A typical contractor limited company with £80,000 profit pays around £17,450 in corporation tax (25% main rate less marginal relief, effective rate around 21.8%, as £80,000 sits in the marginal-relief band above the £50,000 small-profits threshold). If you make a mistake on your bookkeeping or miss a deadline, the penalties and interest can easily exceed the accountant's fee. The accountant is a cost saver, not a cost.</p>
 
 <h2>FreeAgent vs Xero vs QuickBooks for Contractors</h2>
 
@@ -180,7 +180,7 @@ faqs:
 
 <p>A FreeAgent accountant costs around £150 per month. That is less than one day's billing for most contractors. It is one of the best investments you can make in your business.</p>
 
-<p>If you want to discuss whether a FreeAgent accountant is right for your contractor limited company, <a href="/contact">get in touch with our ICAEW qualified team</a>. We can talk through your specific situation and give you a straight answer.</p>
+<p>If you want to discuss whether a FreeAgent accountant is right for your contractor limited company, <a href="/contact">get in touch with our experienced team</a>. We can talk through your specific situation and give you a straight answer.</p>
 
 <h2>Related articles in Bookkeeping and Compliance</h2>
 <ul>

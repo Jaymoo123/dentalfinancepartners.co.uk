@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "Capital Gains Tax on UK Property 2025/26: Rates and Rules"
 metaDescription: "CGT on UK property in 2025/26: residential 18%/24%, non-residential 18%/24%, BADR 14%. How to calculate your gain, report it, and pay on time."
-altText: "ICAEW qualified accountant reviewing UK property capital gains tax calculations on a laptop in a modern Manchester office"
+altText: "Accountant reviewing UK property capital gains tax calculations on a laptop in a modern Manchester office"
 image: "/blog/capital-gains-tax-on-property-uk.jpg"
 imageCredit:
   photographer: "www.kaboompics.com"
@@ -128,7 +128,7 @@ faqs:
 <li><strong>Check whether you qualify for any relief.</strong> If you lived in the property at any point, Private Residence Relief may apply. If you used it for your business, BADR may apply.</li>
 <li><strong>Calculate your gain before you exchange contracts.</strong> This avoids a nasty surprise on completion day.</li>
 <li><strong>If you are selling a residential property, set a calendar reminder for 55 days after completion.</strong> You have 60 days to file and pay. Do not leave it to the last day.</li>
-<li><strong>Speak to an accountant before you sell.</strong> A few hours of advice can save thousands in tax. As ICAEW qualified accountants, we see clients who missed the 60-day deadline or failed to claim relief they were entitled to. Both are avoidable.</li>
+<li><strong>Speak to an accountant before you sell.</strong> A few hours of advice can save thousands in tax. We see clients who missed the 60-day deadline or failed to claim relief they were entitled to. Both are avoidable.</li>
 </ul>
 
 <p>For more on how property gains interact with your overall tax position, see our <a href="/blog/exit-and-capital-gains">Exit and Capital Gains</a> articles. If you are considering selling a business property and reinvesting, our <a href="/services">services page</a> explains how we help with rollover relief claims.</p>

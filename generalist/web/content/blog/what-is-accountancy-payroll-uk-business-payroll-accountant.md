@@ -42,7 +42,7 @@ faqs:
 <li><strong>Collecting starter information.</strong> Each new employee gives you a starter checklist (formerly P46) or a P45 from their previous employer. You need their tax code, student loan status, and NI number.</li>
 <li><strong>Gross-to-net calculations.</strong> This is the core of payroll. You calculate gross pay (salary, overtime, bonuses, commissions), then deduct income tax (via PAYE), employee NI, pension contributions, student loan repayments, and any other deductions (childcare vouchers, court orders).</li>
 <li><strong>RTI submissions.</strong> Every time you run payroll, you must send an RTI report to HMRC before or on the day you pay your employees. This tells HMRC exactly what each employee earned and what was deducted. Late or missed RTI submissions attract penalties.</li>
-<li><strong>Employer NI calculations.</strong> Employer NI is 13.8% of earnings above the secondary threshold (£9,100 for 2025/26). This is your cost, not the employee's. You pay it to HMRC along with the employee deductions.</li>
+<li><strong>Employer NI calculations.</strong> Employer NI is 15% of earnings above the secondary threshold (£5,000 from April 2025, continuing in 2026/27). This is your cost, not the employee's. You pay it to HMRC along with the employee deductions.</li>
 <li><strong>Pension auto-enrolment.</strong> Since 2012, every employer must automatically enrol eligible employees into a workplace pension scheme. You must deduct contributions, pay your own employer contribution (minimum 3% of qualifying earnings), and submit contributions to the pension provider on time. The Pensions Regulator fines businesses that fail to comply.</li>
 <li><strong>Processing leavers.</strong> When an employee leaves, you issue a P45 showing their earnings and deductions to date. You also stop their pension enrolment and update HMRC via the next RTI submission.</li>
 <li><strong>Year-end reporting.</strong> After 5 April each year, you must file a P60 for each employee (a summary of their total pay and deductions) and a P11D(b) if you provided benefits in kind. You also finalise your PAYE scheme for the year.</li>
@@ -60,7 +60,7 @@ faqs:
 <p>That consultancy needs accurate payroll. The director needs to know:</p>
 <ul>
 <li>What tax code applies to each employee (and why HMRC may change it mid-year).</li>
-<li>How much employer NI to budget for (it adds up quickly at 13.8% above £9,100).</li>
+<li>How much employer NI to budget for (it adds up quickly at 15% above the £5,000 secondary threshold from April 2025).</li>
 <li>Whether the Employment Allowance of up to £10,500 can offset the employer NI bill (it can, for most businesses with employer NI below that threshold).</li>
 <li>When to send the RTI submission (before payday, every time).</li>
 <li>How to handle the student loan deduction (it is not optional).</li>
@@ -81,7 +81,7 @@ faqs:
 
 <p><strong>Incorrect leaver processing.</strong> If you do not issue a P45 or fail to stop pension contributions for a leaver, you continue to accrue obligations. HMRC will expect tax and NI on earnings you are not actually paying. Untangling this takes time and correspondence.</p>
 
-<p><strong>Muddled director's loan account.</strong> When a director takes money from the company that is not salary, dividends, or expenses, it goes into the director's loan account. If the balance exceeds £10,000, it becomes a beneficial loan and must be reported on a P11D. If the loan is not repaid within 9 months and 1 day of the year-end, the company pays S455 tax at 33.75%. We have seen directors accidentally trigger this because their payroll did not properly track drawings versus salary.</p>
+<p><strong>Muddled director's loan account.</strong> When a director takes money from the company that is not salary, dividends, or expenses, it goes into the director's loan account. If the balance exceeds £10,000, it becomes a beneficial loan and must be reported on a P11D. If the loan is not repaid within 9 months and 1 day of the year-end, the company pays S455 tax at 35.75% for loans made on or after 6 April 2026 (2026/27 rate), or 33.75% for loans made in 2025/26 or earlier. We have seen directors accidentally trigger this because their payroll did not properly track drawings versus salary.</p>
 
 <h2>Accounting and Payroll: How They Fit Together</h2>
 
@@ -94,7 +94,7 @@ faqs:
 <li><strong>Corporation tax.</strong> Your payroll costs directly affect your taxable profit. Accurate payroll means accurate corporation tax calculations. Overstate payroll and you overpay tax. Understate it and you risk an HMRC enquiry.</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we see payroll as part of the broader accounting picture. A payroll accountant who understands the full <a href="/blog/corporation-tax">corporation tax</a> implications of salary decisions is far more valuable than someone who just runs the numbers.</p>
+<p>We see payroll as part of the broader accounting picture. A payroll accountant who understands the full <a href="/blog/corporation-tax">corporation tax</a> implications of salary decisions is far more valuable than someone who just runs the numbers.</p>
 
 <h2>When Should You Outsource Payroll to an Accountant?</h2>
 
@@ -120,7 +120,7 @@ faqs:
 <li><strong>Understand pension auto-enrolment.</strong> Your payroll accountant should handle the pension provider connection, contribution calculations, and re-enrolment cycles (every 3 years).</li>
 <li><strong>Offer year-round support.</strong> Payroll issues do not only arise at year-end. You need someone who responds to HMRC notices, corrects errors, and advises on tax code changes as they happen.</li>
 <li><strong>Provide clear reporting.</strong> You should receive a monthly payroll summary showing gross pay, deductions, net pay, employer costs, and the amount due to HMRC. No guesswork.</li>
-<li><strong>Be ICAEW qualified or ACCA qualified.</strong> This is not essential for payroll-only services, but it signals a commitment to professional standards and ongoing training. Our <a href="/about">ICAEW qualified team</a> stays current with every legislative change.</li>
+<li><strong>Be ICAEW qualified or ACCA qualified.</strong> This is not essential for payroll-only services, but it signals a commitment to professional standards and ongoing training. Our <a href="/about">team</a> stays current with every legislative change.</li>
 </ul>
 
 <h2>How Much Does a Payroll Accountant Cost?</h2>

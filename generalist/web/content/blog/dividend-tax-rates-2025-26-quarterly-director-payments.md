@@ -228,7 +228,7 @@ faqs:
 
 <h2>How Holloway Davies Can Help</h2>
 
-<p>As <a href="/about">ICAEW qualified accountants</a>, we work with directors across every sector to plan dividend payments around the <strong>dividend tax rates 2025/26</strong>. We prepare the projections, calculate the tax on each dividend, and ensure your company records are compliant.</p>
+<p>We work with directors across every sector to plan dividend payments around the <strong>dividend tax rates 2025/26</strong>. We prepare the projections, calculate the tax on each dividend, and ensure your company records are compliant.</p>
 
 <p>If your business is growing and your profits are pushing you towards higher rate tax, we can help you structure your dividends to minimise the overall tax bill. That might mean adjusting your salary, using a spouse's allowance, or timing dividends across tax years.</p>
 

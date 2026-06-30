@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Hospitality Accountant for Restaurants, Pubs & Hotels | UK"
-metaDescription: "A hospitality accountant understands your margins, VAT, tips, and payroll. Holloway Davies are ICAEW qualified. Get practical advice for your"
+metaDescription: "A hospitality accountant understands your margins, VAT, tips, and payroll. Holloway Davies are specialist hospitality accountants. Get practical advice for your"
 altText: "Professional accountant reviewing hospitality accounts for a restaurant or pub business in the UK."
 image: "/blog/hospitality-accountant-restaurant-pub-hotel.jpg"
 imageCredit:
@@ -60,7 +60,7 @@ faqs:
 
 <p><strong>Accommodation.</strong> Standard-rated at 20%. But if you provide accommodation for more than 28 consecutive nights, the VAT rate drops to 0% for the portion beyond 28 nights. This matters for serviced apartments and long-stay hotels.</p>
 
-<p><strong>Tourist accommodation.</strong> From April 2025, the reduced rate of 5% for holiday accommodation (caravans, camping, holiday lets) ended. These are now standard-rated.</p>
+<p><strong>Tourist accommodation.</strong> Holiday accommodation including caravans, camping pitches, and holiday lets is standard-rated at 20%. This has been the case since 1 April 2022, when the temporary COVID-era reduced rates (5% then 12.5%) ended. The April 2025 change affecting holiday lets was the abolition of the Furnished Holiday Lettings (FHL) income tax and capital gains tax regime, not a VAT change.</p>
 
 <p>A specialist <strong>hospitality accountant</strong> will review your EPOS data, your VAT returns, and your pricing to ensure you are not underpaying (which attracts penalties) or overpaying (which leaves money on the table).</p>
 
@@ -132,7 +132,7 @@ faqs:
 <li><strong>Do they understand tronc?</strong> They should be able to explain the difference between a discretionary and a mandatory service charge, and the tax implications of each.</li>
 <li><strong>Do they use sector-specific software?</strong> Xero, FreeAgent, or Sage 50 for accounts. BrightPay or Iris for payroll. Dext for invoice capture. EPOS integration matters.</li>
 <li><strong>Do they visit your venue?</strong> A good accountant will want to see your operation. They will walk the floor, look at your stock room, and understand your flow of customers and cash.</li>
-<li><strong>Are they ICAEW qualified?</strong> The ICAEW qualification means the firm is regulated, insured, and subject to professional standards. At Holloway Davies, we are ICAEW qualified and we work with hospitality businesses across the country, from a Shoreditch cocktail bar to a family-run hotel in the Lake District.</li>
+<li><strong>Are they ICAEW qualified?</strong> The ICAEW qualification means the firm is regulated, insured, and subject to professional standards. At Holloway Davies, we work with hospitality businesses across the country, from a Shoreditch cocktail bar to a family-run hotel in the Lake District.</li>
 </ul>
 
 <p>You can <a href="/contact">book a free initial consultation</a> to discuss your specific situation. We will tell you honestly whether we are a good fit for your business.</p>

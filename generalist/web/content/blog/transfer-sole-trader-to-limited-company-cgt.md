@@ -131,9 +131,9 @@ faqs: []
 
 <h2>When Should You Not Use Incorporation Relief?</h2>
 
-<p>There are situations where paying CGT now is actually better than deferring it. If you have brought-forward capital losses that would wipe out the gain, you may want to trigger the gain deliberately and use the losses. The CGT rate for business asset disposals is 14% for 2025/26, rising to 18% from April 2026. If your gain is small, paying the tax now and resetting the base cost of your shares to market value may be simpler than tracking the deferred gain for years.</p>
+<p>There are situations where paying CGT now is actually better than deferring it. If you have brought-forward capital losses that would wipe out the gain, you may want to trigger the gain deliberately and use the losses. The standard CGT rate on non-residential business assets is 18% within the basic-rate band, or 24% above it, since 30 October 2024. Business Asset Disposal Relief reduced this to 14% for disposals in 2025/26, rising to 18% from 6 April 2026. If your gain is small, paying the tax now and resetting the base cost of your shares to market value may be simpler than tracking the deferred gain for years.</p>
 
-<p>If you are planning to sell the company within a few years, the deferred gain will crystalise on the share sale anyway. You may prefer to pay CGT now at 14% (or 10% if you qualify for Business Asset Disposal Relief on the incorporation itself, which is rare but possible) rather than deferring it and paying a higher rate later.</p>
+<p>If you are planning to sell the company within a few years, the deferred gain will crystalise on the share sale anyway. You may prefer to pay CGT now at 18% or 24% (depending on your income band), or at 18% under Business Asset Disposal Relief from 6 April 2026 if you qualify on the incorporation itself (which is rare but possible; the BADR rate was 14% for 2025/26 disposals), rather than deferring it and paying at the prevailing rate later.</p>
 
 <p>These decisions require a proper calculation. Speak to an accountant before you commit to a particular structure. Our <a href="/services">services</a> page explains how we help clients through the incorporation process.</p>
 
@@ -163,6 +163,6 @@ faqs: []
 
 <p>The relief is automatic if you meet the conditions. But the conditions are strict, and the traps are real. Taking cash, retaining assets, or overvaluing goodwill can cost you the relief or trigger an HMRC enquiry.</p>
 
-<p>If you are considering incorporating your sole trader business, talk to an accountant before you do anything. We are <a href="/about">ICAEW qualified accountants</a> with years of experience in incorporations across every sector. We will help you structure the transfer correctly, value the assets properly, and file the right paperwork.</p>
+<p>If you are considering incorporating your sole trader business, talk to an accountant before you do anything. We are <a href="/about">experienced accountants</a> with years of experience in incorporations across every sector. We will help you structure the transfer correctly, value the assets properly, and file the right paperwork.</p>
 
 <p>Contact

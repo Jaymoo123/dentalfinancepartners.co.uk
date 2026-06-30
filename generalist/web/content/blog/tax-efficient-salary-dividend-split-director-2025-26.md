@@ -42,7 +42,7 @@ faqs:
 <p>Let us run a worked example. A director with no other income takes a salary of £12,570 and dividends of £37,700 (total income £50,270). The tax position looks like this:</p>
 
 <ul>
-<li>Salary: £12,570. No income tax. Employee NI: £0 (below primary threshold). Employer NI: £0 if Employment Allowance covers it, or £478 if it does not (13.8% on £3,470 above the secondary threshold of £9,100).</li>
+<li>Salary: £12,570. No income tax. Employee NI: £0 (below primary threshold). Employer NI: £0 if Employment Allowance covers it, or £1,135.50 if it does not (15% on £7,570 above the secondary threshold of £5,000).</li>
 <li>Dividends: £37,700. First £500 tax-free. Remaining £37,200 taxed at 8.75% = £3,255.</li>
 <li>Total personal tax: £3,255.</li>
 <li>Company corporation tax saving: the salary of £12,570 reduces taxable profits. At 19% (small profits rate) that saves £2,388. At 25% (main rate) it saves £3,143.</li>
@@ -60,7 +60,7 @@ faqs:
 <h3>2. You Have Employees</h3>
 <p>Once you employ someone else (even a part-time admin), the Employment Allowance becomes available. The allowance is up to £10,500 for 2025/26. It covers your employer NI on the first £10,500 of salary across all employees. If you have the allowance, paying yourself £12,570 costs zero employer NI. That makes the salary more attractive.</p>
 
-<p>If you do not have the allowance (director-only companies are excluded), you pay 13.8% employer NI on salary above £9,100. On a £12,570 salary, that is £478. That is still small relative to the corporation tax saving, but it shifts the maths slightly. At 19% corporation tax, the net saving after employer NI is about £1,910. At 25%, it is about £2,665.</p>
+<p>If you do not have the allowance (director-only companies are excluded), you pay 15% employer NI on salary above £5,000. On a £12,570 salary, that is £1,135.50. That is still less than the corporation tax saving, but it shifts the maths. At 19% corporation tax, the net saving after employer NI is about £1,253. At 25%, it is about £2,007.</p>
 
 <h3>3. Your Spouse Is a Director or Shareholder</h3>
 <p>Many husband-and-wife companies split income to use both personal allowances and basic rate bands. If your spouse has no other income, you can pay them a salary of £12,570 and dividends of £37,700. That doubles the tax-free and basic rate capacity. The total tax bill for two directors could be as low as £6,510 (two lots of £3,255) on combined income of £100,540.</p>
@@ -70,18 +70,18 @@ faqs:
 <p>For more on this structure, read our guide on <a href="/blog/director-pay-and-dividends">director pay and dividends</a>.</p>
 
 <h2>Salary Below £12,570: The NI Record Trap</h2>
-<p>Some directors pay themselves a salary of just £9,100 (the secondary threshold) to avoid employer NI entirely. That saves the £478. But it creates a problem. A salary below £12,570 means you do not make full NI contributions for the year. That can affect your state pension entitlement.</p>
+<p>Some directors pay themselves a salary of just £5,000 (the secondary threshold) to avoid employer NI entirely. That saves the £1,135.50. But it creates a problem. A salary below £12,570 means you do not make full NI contributions for the year. That can affect your state pension entitlement.</p>
 
 <p>For 2025/26, you need to earn at least £6,725 in a single job to get a qualifying year for NI. Below that, you get nothing. Between £6,725 and £12,570, you get a qualifying year but pay no NI. Above £12,570, you start paying employee NI (8% on earnings between £12,570 and £50,270).</p>
 
-<p>If you are young and far from retirement, the NI record gap may not matter. If you are over 50, it probably does. The £478 employer NI saving is small compared to a lost year of state pension (worth about £275 per week at current rates). Weigh the trade-off carefully.</p>
+<p>If you are young and far from retirement, the NI record gap may not matter. If you are over 50, it probably does. The £1,135.50 employer NI saving is small compared to a lost year of state pension (worth about £275 per week at current rates). Weigh the trade-off carefully.</p>
 
 <h2>Dividends Above the Basic Rate Band</h2>
 <p>Once your total income exceeds £50,270, dividends are taxed at 33.75% (higher rate) and 39.35% (additional rate). At those rates, the tax efficiency of dividends versus salary narrows. Compare:</p>
 
 <ul>
 <li>Dividend at higher rate: 33.75% tax. The company has already paid corporation tax on the profits (19% or 25%). The effective total tax rate is roughly 46% to 50%.</li>
-<li>Salary at higher rate: 40% income tax plus 2% employee NI plus 13.8% employer NI. The effective total tax rate is roughly 47%.</li>
+<li>Salary at higher rate: 40% income tax plus 2% employee NI plus 15% employer NI. The effective total tax rate is roughly 47%.</li>
 </ul>
 
 <p>The difference is small. For most directors, dividends remain marginally better because employer NI is avoided. But the gap is much smaller than at basic rate. If your company profits are high, consider retaining profits in the company and taking them as dividends in a future year when your income is lower. Or use a pension contribution instead (see below).</p>
@@ -101,7 +101,7 @@ faqs:
 <p>Our <a href="/services">services page</a> covers pension planning in more detail.</p>
 
 <h2>Director's Loan Account: The Hidden Trap</h2>
-<p>If you take more from the company than your salary and dividends justify, you create a director's loan account (DLA) debit. That is not a tax efficient strategy. If the loan exceeds £10,000, it is a benefit in kind (taxable on you, with a Class 1A NI charge on the company at 13.8%). If the loan is not repaid within 9 months and 1 day of the year-end, the company pays S455 tax at 33.75%. That tax is refundable when the loan is repaid, but it ties up cash.</p>
+<p>If you take more from the company than your salary and dividends justify, you create a director's loan account (DLA) debit. That is not a tax efficient strategy. If the loan exceeds £10,000, it is a benefit in kind (taxable on you, with a Class 1A NI charge on the company at 15%). If the loan is not repaid within 9 months and 1 day of the year-end, the company pays S455 tax at 33.75%. That tax is refundable when the loan is repaid, but it ties up cash.</p>
 
 <p>Never use the DLA as a substitute for proper salary and dividend planning. If you need more cash, take a dividend (subject to available profits) or a salary. Do not borrow from the company.</p>
 
@@ -116,7 +116,7 @@ faqs:
 
 <p>If your company is in the marginal relief band, every £1 of salary saves between 19p and 25p of corporation tax. The saving is highest at the top of the band. If you are close to the £250,000 threshold, paying a higher salary (or making a pension contribution) can keep you below the threshold, saving the full 25% rate on the marginal profits.</p>
 
-<p>For example, if your company profit is £260,000, the first £250,000 is taxed at 19% to 25% (marginal relief), and the last £10,000 is taxed at 25%. Paying an extra £10,000 salary saves £2,500 in corporation tax. That is a strong incentive to increase your drawings.</p>
+<p>For example, if your company profit is £260,000, all £260,000 is taxed at the flat 25% main rate (marginal relief does not apply once profits exceed £250,000). Paying an extra £10,000 salary brings profits to £250,000 and saves £2,500 in corporation tax. That is a strong incentive to increase your drawings.</p>
 
 <h2>Dividend Allowance: Down to £500</h2>
 <p>The dividend allowance dropped from £1,000 to £500 from 6 April 2024. That remains for 2025/26. It means the first £500 of dividends is tax-free, not £1,000. The impact is small for most directors (you lose £87.50 of tax-free income at basic rate), but it makes the tax efficient salary dividend split 2025/26 slightly less generous than previous years.</p>
@@ -128,7 +128,7 @@ faqs:
 
 <ul>
 <li><strong>Step 1:</strong> Do you have other income above £12,570? If yes, reduce salary to preserve your NI record only (£6,725 minimum). Take dividends up to your remaining basic rate band.</li>
-<li><strong>Step 2:</strong> Do you have employees (and therefore the Employment Allowance)? If yes, pay yourself £12,570 salary. If no, consider £9,100 salary (avoid employer NI) or £12,570 (accept £478 employer NI for better NI record).</li>
+<li><strong>Step 2:</strong> Do you have employees (and therefore the Employment Allowance)? If yes, pay yourself £12,570 salary. If no, consider £5,000 salary (avoid employer NI) or £12,570 (accept £1,135.50 employer NI for better NI record).</li>
 <li><strong>Step 3:</strong> Do you have a spouse who can take dividends? If yes, split dividends to use both basic rate bands. Ensure genuine involvement to avoid settlement rules.</li>
 <li><strong>Step 4:</strong> Do you have surplus profit above your basic rate band? Consider pension contributions before taking higher rate dividends.</li>
 <li><strong>Step 5:</strong> Are you close to the £250,000 profit threshold? Consider increasing salary or pension contributions to keep profits below the threshold.</li>
@@ -147,6 +147,6 @@ faqs:
 <li>You approach retirement.</li>
 </ul>
 
-<p>The tax efficient salary dividend split 2025/26 is not a set-and-forget decision. It needs annual attention. If you want us to run the numbers for your specific company, <a href="/contact">get in touch</a>. Our ICAEW qualified team can model the optimal split for your situation.</p>
+<p>The tax efficient salary dividend split 2025/26 is not a set-and-forget decision. It needs annual attention. If you want us to run the numbers for your specific company, <a href="/contact">get in touch</a>. Our experienced team can model the optimal split for your situation.</p>
 
 <h2>Frequently Asked Questions</h2>

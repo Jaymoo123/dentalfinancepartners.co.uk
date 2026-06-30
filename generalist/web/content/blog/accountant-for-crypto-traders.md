@@ -6,8 +6,8 @@ date: "2026-05-17"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
-metaTitle: "Accountant for Crypto Traders UK | Holloway Davies"
-metaDescription: "Crypto trading has specific UK tax rules. Our ICAEW-qualified team helps crypto traders with HMRC compliance, capital gains, and income tax."
+metaTitle: "Accountant for Crypto Traders UK"
+metaDescription: "Crypto trading has specific UK tax rules. Our specialist team helps crypto traders with HMRC compliance, capital gains, and income tax."
 altText: "UK accountant reviewing cryptocurrency trading records on a laptop with Bitcoin and Ethereum price charts visible."
 image: "/blog/accountant-for-crypto-traders.jpg"
 imageCredit:
@@ -50,7 +50,7 @@ faqs:
 
 <p>Every disposal triggers a calculation of gain or loss. You compare the sale proceeds (or market value at disposal) against the allowable cost. For UK residents, the first £3,000 of net gains in a tax year is tax free (the Annual Exempt Amount). Gains above that are taxed at 18% or 24% depending on your total income and whether the asset is residential property or not. Crypto is not residential property, so the rates are 18% (basic rate taxpayer) and 24% (higher rate taxpayer).</p>
 
-<p>If you trade frequently or with significant volume, HMRC may classify you as a trader rather than an investor. In that case, your profits are subject to Income Tax (20%, 40%, or 45%) and Class 2 and Class 4 National Insurance. There is no £3,000 allowance for trading income. Every pound of profit is taxable.</p>
+<p>If you trade frequently or with significant volume, HMRC may classify you as a trader rather than an investor. In that case, your profits are subject to Income Tax (20%, 40%, or 45%) and Class 4 National Insurance only (6% on profits between £12,570 and £50,270, then 2% above; Class 2 NIC was abolished from 6 April 2024). There is no £3,000 allowance for trading income. Every pound of profit is taxable.</p>
 
 <p>This distinction between capital gains and trading income is where most people need a specialist accountant for crypto traders. The boundary is not always clear, and HMRC can challenge your classification years later.</p>
 
@@ -86,7 +86,7 @@ faqs:
 
 <h2>How We Help Crypto Traders at Holloway Davies</h2>
 
-<p>We are an ICAEW qualified accountancy firm based in the UK. Our team works with crypto traders across the country, from a freelance developer in Shoreditch trading DeFi protocols to a limited company director in Manchester who holds a portfolio of Bitcoin and Ethereum. We do not just file your tax return. We help you structure your trading activity tax efficiently.</p>
+<p>We are an experienced accountancy firm based in the UK. Our team works with crypto traders across the country, from a freelance developer in Shoreditch trading DeFi protocols to a limited company director in Manchester who holds a portfolio of Bitcoin and Ethereum. We do not just file your tax return. We help you structure your trading activity tax efficiently.</p>
 
 <p>For most individual traders, we prepare your Self Assessment return (SA100 and SA108 Capital Gains pages) with a full crypto gains report attached. We check your exchange data against your wallet activity and flag any discrepancies. We advise on whether your activity is capital or trading income. And we handle any HMRC enquiries that arise.</p>
 

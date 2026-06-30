@@ -160,6 +160,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
 
               {takeaways ? (
                 <section
+                  id="answer-box"
                   className="tldr not-prose rounded-lg border-l-4 border-orange-600 bg-slate-50 p-6"
                   aria-label="Key takeaways"
                 >
@@ -176,7 +177,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   </ul>
                 </section>
               ) : post.summary ? (
-                <section className="tldr" aria-label="Summary">
+                <section id="answer-box" className="tldr" aria-label="Summary">
                   <p className="text-xs font-bold uppercase tracking-wider text-orange-700">
                     TL;DR
                   </p>

@@ -89,8 +89,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!s) return { title: "Stage not found" };
   const url = `${siteConfig.url}/blog/stage/${stage}`;
   return {
-    title: `${s.name} | Insights | ${siteConfig.name}`,
-    description: `UK tax, structure and finance articles for ${s.name.toLowerCase()}. Written by editorial team, reviewed by ICAEW Chartered Accountant.`,
+    title: `${s.name} | Insights`,
+    description: `UK tax, structure and finance articles for ${s.name.toLowerCase()}. Written by our editorial team, reviewed by James Holloway.`,
     alternates: { canonical: url },
     robots: { index: false, follow: true },
     openGraph: {

@@ -33,7 +33,7 @@ faqs:
 
 <p>If you are a UK business owner asking what an <strong>accounting fee</strong> should cost in 2025/26, the honest answer is: it depends on what you need. A sole trader filing a straightforward self assessment return will pay very different <strong>accounting fees</strong> compared to a limited company with employees, VAT, and R&D claims.</p>
 
-<p>At Holloway Davies, we are an ICAEW-qualified firm. We see business owners every week who are confused by pricing. Some pay £300 a year for a basic return. Others pay £3,000 for a full service. Both can be right. The trick is knowing which you need.</p>
+<p>At Holloway Davies, we see business owners every week who are confused by pricing. Some pay £300 a year for a basic return. Others pay £3,000 for a full service. Both can be right. The trick is knowing which you need.</p>
 
 <p>This guide covers typical <strong>accountant fees</strong> for different business types, what drives the cost, and how to avoid paying for services you do not need.</p>
 
@@ -188,7 +188,7 @@ faqs:
 
 <h2>How We Structure Our Fees at Holloway Davies</h2>
 
-<p>As an ICAEW-qualified firm, we offer transparent fixed fees. We will tell you exactly what is included and what is not. No hidden charges. No surprise bills.</p>
+<p>We offer transparent fixed fees. We will tell you exactly what is included and what is not. No hidden charges. No surprise bills.</p>
 
 <p>We work with businesses across every sector: trades, consultancies, ecommerce, creative, tech, services, retail. Whether you are a sole trader in Sheffield or a limited company in Shoreditch, we tailor the service to what you actually need.</p>
 

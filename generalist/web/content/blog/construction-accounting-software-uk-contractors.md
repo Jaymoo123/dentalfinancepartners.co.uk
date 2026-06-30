@@ -1,4 +1,4 @@
----
+﻿---
 title: Which Construction Accounting Software Works Best for UK Contractors in 2025/26?
 slug: construction-accounting-software-uk-contractors
 canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/construction-accounting-software-uk-contractors
@@ -8,6 +8,11 @@ author: Holloway Davies Editorial Team
 category: Bookkeeping and Compliance
 metaTitle: 'Construction Accounting Software UK: CIS, VAT, Payroll'
 metaDescription: Pick construction accounting software that handles CIS, reverse charge VAT and payroll. Compare Xero, QuickBooks, Sage and FreeAgent from £24 a month.
+keyTakeaways:
+  - "CIS deductions run at 20% for registered subcontractors and 30% for those not registered for CIS."
+  - "FreeAgent handles CIS natively at around £24 per month, or free with NatWest or RBS banking."
+  - "Domestic reverse charge has been mandatory for most construction services between VAT-registered businesses since March 2021."
+  - "From April 2026, sole traders with qualifying income over £50,000 must use MTD compatible software."
 altText: A UK construction site manager and an accountant reviewing financial reports on a laptop at a site office in Manchester.
 image: /blog/construction-accounting-software-uk-contractors.jpg
 imageCredit:
@@ -17,9 +22,7 @@ imageCredit:
   source: Pexels
 h1: Which Construction Accounting Software Works Best for UK Contractors in 2025/26?
 summary: A practical comparison of the main accounting software options for UK construction businesses. We cover CIS handling, VAT schemes, payroll integration and the specific features trades, builders and contractors actually need to run their finances properly.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Which Construction Accounting Software Works Best for UK Contractors in 2025/26?","description":"Pick construction accounting software that handles CIS, reverse charge VAT and payroll. Compare Xero, QuickBooks, Sage and FreeAgent from £24 a month.","url":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/construction-accounting-software-uk-contractors","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
-  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/construction-accounting-software-uk-contractors"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/construction-accounting-software-uk-contractors.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Bookkeeping and Compliance","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance"},{"@type":"ListItem","position":3,"name":"Which Construction Accounting Software Works Best for UK Contractors in 2025/26?","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/construction-accounting-software-uk-contractors"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I use standard accounting software for a construction business?","acceptedAnswer":{"@type":"Answer","text":"You can, but you will need add-ons for CIS handling and you will likely do retentions tracking manually. Standard software like Xero or QuickBooks works if you add the right tools. FreeAgent handles CIS natively without add-ons. Sage 50 Construction is purpose built for construction. Avoid generic software that cannot handle CIS300 returns or subcontractor statements automatically."}},{"@type":"Question","name":"Does construction accounting software handle the CIS domestic reverse charge?","acceptedAnswer":{"@type":"Answer","text":"Some do, some do not. Xero handles domestic reverse charge if
-  you set up the correct tax rates. QuickBooks requires manual adjustments in some cases. Sage 50 and FreeAgent handle it natively. If you regularly invoice other VAT registered construction businesses, check that your software supports reverse charge before you buy. Getting this wrong on your VAT return creates a mismatch HMRC will flag."}},{"@type":"Question","name":"What is the best accounting software for a sole trader builder?","acceptedAnswer":{"@type":"Answer","text":"QuickBooks Plus or FreeAgent are the best options for sole trader builders. QuickBooks Plus handles CIS and VAT at around £30 per month. FreeAgent is roughly £24 per month and handles CIS natively. Both are MTD ready for VAT and will be MTD ready for ITSA from April 2026. If you bank with NatWest or RBS, FreeAgent is often free."}},{"@type":"Question","name":"Do I need separate payroll software for construction employees and subcontractors?","acceptedAnswer":{"@type":"Answer","text":"Not necessarily. FreeAgent and Sage 50 Construction handle both employee payroll and CIS subcontractor payments in one module. Xero requires separate add-ons for each. QuickBooks handles employees via its payroll add-on and CIS payments via the main account. If you have both employees and regular subcontractors, a single platform approach saves time and reduces reconciliation errors."}}]}]}'
+schema: ""
 faqs:
 - question: Can I use standard accounting software for a construction business?
   answer: You can, but you will need add-ons for CIS handling and you will likely do retentions tracking manually. Standard software like Xero or QuickBooks works if you add the right tools. FreeAgent handles CIS natively without add-ons. Sage 50 Construction is purpose built for construction. Avoid generic software that cannot handle CIS300 returns or subcontractor statements automatically.
@@ -32,8 +35,8 @@ faqs:
 metaTitle_prev: Best Construction Accounting Software for UK Contractors
 metaDescription_prev: Compare Xero, QuickBooks, Sage and FreeAgent for construction accounting software. See which handles CIS, VAT and payroll for UK builders and trades.
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -112,7 +115,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <ul>
 <li>Calculate CIS deductions at the correct rate (20% standard, 30% for subcontractors not registered for CIS)</li>
-<li>Generate CIS300 returns monthly (the deadline is the 14th of each month)</li>
+<li>Generate CIS300 returns monthly (the deadline is the 19th of each month)</li>
 <li>Produce subcontractor statements showing gross payments and deductions</li>
 <li>Track gross payment status (some subcontractors are verified gross and should not have deductions applied)</li>
 </ul>
@@ -155,7 +158,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If you are a sole trader builder turning over £70,000, you must be on MTD compatible software by April 2026. Xero, QuickBooks and FreeAgent are all MTD ready. Sage 50 requires the cloud version for MTD compliance. Check your current version if you use Sage.</p>
 
-<p>Limited companies are not directly affected by MTD for ITSA, but the director's personal tax return may be. If you file a self assessment return as a director with dividend and salary income over £50,000, MTD will apply to your personal tax reporting from 2026. Your accounting software for the company does not need to handle this, but you should be aware of the timeline.</p>
+<p>Limited companies are not directly affected by MTD for ITSA. MTD for ITSA is triggered by qualifying income only, which means gross self-employment and property (rental) income. Salary and dividends do not count towards the £50,000 threshold and are not reported under MTD ITSA, so a director paid purely via salary and dividends from their company is generally not brought into MTD ITSA by that income alone. Your accounting software for the company does not need to handle this, but if you also have self-employment or rental income above the threshold, you should be aware of the April 2026 deadline.</p>
 
 <h2>Which Software Should You Choose?</h2>
 
@@ -170,7 +173,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Whichever you choose, make sure it handles CIS automatically, supports your VAT scheme and gives you job level profitability. Anything less is a compromise that costs you time and money.</p>
 
-<p>If you are unsure which platform suits your construction business, speak to an accountant who works with trade businesses. As ICAEW qualified accountants, we see the practical differences between these platforms every day. We can help you choose the right one and set it up properly for CIS, VAT and payroll.</p>
+<p>If you are unsure which platform suits your construction business, speak to an accountant who works with trade businesses. We see the practical differences between these platforms every day. We can help you choose the right one and set it up properly for CIS, VAT and payroll.</p>
 
 <p>Get in touch if you want to discuss your specific setup. We work with builders, electricians, plumbers and contractors across Manchester, Birmingham, Bristol and London.</p>
 

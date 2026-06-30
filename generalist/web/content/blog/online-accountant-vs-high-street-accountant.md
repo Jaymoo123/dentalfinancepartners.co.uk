@@ -24,7 +24,7 @@ faqs:
   - question: "Do online accountants handle HMRC investigations?"
     answer: "Yes. Most online accountants include HMRC enquiry support in their service, or offer it as a paid add-on. They'll deal with the correspondence, prepare the evidence, and represent you. The process is the same as with a high street firm. The only difference is that communication happens by email and post rather than face-to-face meetings."
   - question: "Are online accountants ICAEW qualified?"
-    answer: "Some are, some aren't. You need to check. The ICAEW (Institute of Chartered Accountants in England and Wales) is the gold standard. At Holloway Davies, we're ICAEW qualified. Always verify the qualifications of any firm you're considering, whether online or high street. A qualified accountant gives you proper compliance and access to professional indemnity insurance."
+    answer: "Some are, some aren't. You need to check. The ICAEW (Institute of Chartered Accountants in England and Wales) is the gold standard for accounting qualifications. Always verify the qualifications of any firm you're considering, whether online or high street. A qualified accountant gives you proper compliance and access to professional indemnity insurance."
   - question: "What software do I need for an online accountant?"
     answer: "Most online accountants use Xero, QuickBooks, or FreeAgent. They'll set you up and include the licence in your monthly fee. You'll need to upload receipts (using Dext or the software's own app) and record invoices. The accountant handles the rest. If you're a sole trader with simple affairs, some online accountants accept spreadsheets or GoSimpleTax. Ask before you sign up."
 ---
@@ -79,7 +79,7 @@ faqs:
 
 <p>Both models can handle standard compliance: corporation tax (CT600), VAT returns, payroll (P32, P60, P45), self assessment (SA100, SA103), and confirmation statements. Both can deal with HMRC queries and investigations.</p>
 
-<p>The difference shows in specialist areas. High street firms often have deeper knowledge of local industries. A firm in Manchester's Northern Quarter might specialise in hospitality and know the specific VAT rules for restaurants. A firm in Glasgow's Merchant City might focus on property and understand the 60-day CGT property return inside out.</p>
+<p>The difference shows in specialist areas. High street firms often have deeper knowledge of local industries. A firm in Manchester's Northern Quarter might specialise in hospitality and know the specific VAT rules for restaurants. A firm in Glasgow's Merchant City might focus on property and understand the 60-day CGT residential property return inside out.</p>
 
 <p>Online accountants tend to be generalists, but many now offer specialist services. Some have dedicated R&D tax credit teams. Others focus on contractors and IR35. A few specialise in ecommerce and cross-border VAT. The best online accountants hire specialists and make them accessible across the country.</p>
 
@@ -103,7 +103,7 @@ faqs:
 <li><strong>Partnerships and sole traders</strong> with simple affairs who prefer dropping off paperwork once a year.</li>
 <li><strong>Trade businesses</strong> (builders, electricians, plumbers) who use CIS and want someone local who understands the scheme.</li>
 <li><strong>Hospitality and retail</strong> businesses with complex stock, wastage, and margin calculations.</li>
-<li><strong>Businesses with significant property holdings</strong> where CGT planning and the 60-day property return are regular issues.</li>
+<li><strong>Businesses with significant residential property holdings</strong> where CGT planning and the 60-day residential property return are regular issues (commercial property and land gains are reported on the annual Self Assessment return, not the 60-day window).</li>
 <li><strong>Owners who value face-to-face relationships</strong> and don't want to manage software themselves.</li>
 </ul>
 
@@ -135,7 +135,7 @@ faqs:
 
 <p>If your business is complex (multiple entities, group structures, international trading, significant assets), you need specialist knowledge regardless of model. Look for an accountant who demonstrates expertise in your area, whether online or high street.</p>
 
-<p>At Holloway Davies, we're ICAEW qualified and offer a hybrid model. We use cloud software (Xero and FreeAgent primarily) and communicate online, but we're based in real offices and available for face-to-face meetings when needed. <a href="/services">Our services page</a> covers what we do for limited companies, sole traders, and partnerships. <a href="/contact">Get in touch</a> if you want to discuss which model works for your business.</p>
+<p>At Holloway Davies, we offer a hybrid model. We use cloud software (Xero and FreeAgent primarily) and communicate online, but we're based in real offices and available for face-to-face meetings when needed. <a href="/services">Our services page</a> covers what we do for limited companies, sole traders, and partnerships. <a href="/contact">Get in touch</a> if you want to discuss which model works for your business.</p>
 
 <h2>Frequently Asked Questions</h2>
 

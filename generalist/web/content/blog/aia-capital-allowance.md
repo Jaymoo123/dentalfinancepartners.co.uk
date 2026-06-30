@@ -17,7 +17,7 @@ faqs:
 - question: Can I claim AIA on a van?
   answer: Yes. Vans qualify for the AIA capital allowance. Unlike cars, vans are treated as plant and machinery. You can claim 100% relief on the purchase price up to the £1m limit. This applies to new and second-hand vans. The same rule applies to lorries, tractors, and other commercial vehicles.
 - question: What happens if I spend more than £1m in one year?
-  answer: The first £1m of qualifying expenditure attracts 100% AIA relief. The excess goes into the main capital allowances pool and attracts writing down allowances at 18% per year on a reducing balance basis. For limited companies, Full Expensing may be a better option for the excess, as it has no cap. Sole traders and partnerships cannot use Full Expensing.
+  answer: The first £1m of qualifying expenditure attracts 100% AIA relief. The excess goes into the main capital allowances pool and attracts writing down allowances at 14% per year on a reducing balance basis (18% applied before April 2026; FA 2026 s.28 reduced the rate from 1 April 2026 for companies and 6 April 2026 for sole traders). For limited companies, Full Expensing may be a better option for the excess, as it has no cap. Sole traders and partnerships cannot use Full Expensing.
 - question: Does the AIA apply to building refurbishments?
   answer: Partially. The building structure itself does not qualify. But integral features such as electrical systems, heating, air conditioning, lifts, and lighting do qualify for AIA. If you refurbish a commercial property, separate the cost of integral features from the building cost. Claim AIA on the integral features. The building cost goes into the structures and buildings allowance pool at 3% per year.
 - question: Can I claim AIA on assets bought before my business started?
@@ -63,7 +63,7 @@ The AIA covers most plant and machinery. HMRC defines plant and machinery broadl
 <li>Building alterations needed to install plant (but not the building itself)</li>
 </ul>
 
-A few specific items do not qualify. Cars are the main one. You claim writing down allowances on cars instead, at 6% or 18% per year depending on CO2 emissions. Land and buildings themselves do not qualify either, though integral features like lifts, heating systems, and electrical systems do.
+A few specific items do not qualify. Cars are the main one. You claim writing down allowances on cars instead, at 6% or 14% per year (from April 2026) depending on CO2 emissions. Land and buildings themselves do not qualify either, though integral features like lifts, heating systems, and electrical systems do.
 
 <h3>Integral Features</h3>
 
@@ -85,11 +85,11 @@ The £1m AIA limit applies per group of companies, not per company. If you have 
 
 The limit applies to your accounting period. If your accounting period is shorter than 12 months, the limit reduces proportionally. A 6-month period gives you £500,000.
 
-If you spend more than £1m in a year, the excess goes into the main pool and attracts writing down allowances at 18% per year. You still get relief, just not all in one year.
+If you spend more than £1m in a year, the excess goes into the main pool and attracts writing down allowances at 14% per year from April 2026 (FA 2026 s.28 reduced the main-rate WDA from 18% to 14% for periods starting on or after 1 April 2026 for companies and 6 April 2026 for sole traders). You still get relief, just not all in one year.
 
 <h3>Example: Spending £1.2m</h3>
 
-A Manchester-based software consultancy spends £1.2m on new servers and office fit-out. The first £1m qualifies for AIA, giving 100% relief. The remaining £200,000 goes into the main pool. At 18% writing down allowance, that gives £36,000 relief in year one. The balance carries forward.
+A Manchester-based software consultancy spends £1.2m on new servers and office fit-out in a period starting after April 2026. The first £1m qualifies for AIA, giving 100% relief. The remaining £200,000 goes into the main pool. At the current 14% writing down allowance (FA 2026 s.28), that gives £28,000 relief in year one. The balance carries forward.
 
 <h2>How to Claim the AIA</h2>
 
@@ -112,9 +112,9 @@ For limited companies spending over £1m, Full Expensing is often better. For sp
 Cars do not qualify for the AIA. You claim capital allowances on cars through the main pool or special rate pool, depending on CO2 emissions.
 
 <ul>
-<li>Cars with CO2 emissions up to 50g/km: 100% first year allowance (if new and zero-emission)</li>
-<li>Cars with CO2 emissions 51-130g/km: 18% writing down allowance</li>
-<li>Cars with CO2 emissions over 130g/km: 6% writing down allowance</li>
+<li>New zero-emission cars (0g/km): 100% first-year allowance</li>
+<li>Cars with CO2 emissions 1-50g/km: main pool, 14% writing down allowance from April 2026 (was 18% before FA 2026 s.28)</li>
+<li>Cars with CO2 emissions over 50g/km: special-rate pool, 6% writing down allowance</li>
 </ul>
 
 If you buy a van or a lorry, those do qualify for AIA. Only cars are excluded.
@@ -143,7 +143,7 @@ Timing matters. If you are close to the £1m limit, consider deferring some purc
 
 If your profits are low, you might prefer not to claim AIA. You can disclaim the allowance and carry the cost forward. This is useful if you have losses that would be wasted, or if you expect higher profits next year.
 
-As ICAEW qualified accountants, we often advise clients on the timing of capital purchases. A <a href="/services">conversation with our team</a> can help you plan the most tax-efficient approach.
+We often advise clients on the timing of capital purchases. A <a href="/services">conversation with our team</a> can help you plan the most tax-efficient approach.
 
 <h2>Common Mistakes</h2>
 

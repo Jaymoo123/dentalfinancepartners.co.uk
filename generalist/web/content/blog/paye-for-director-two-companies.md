@@ -57,13 +57,13 @@ faqs:
 <h2>National Insurance: The Key Difference</h2>
 <p>National Insurance works differently from income tax. Each employment is treated separately. The director pays NICs on each job based on its own earnings, not on combined earnings.</p>
 
-<p>This means a director earning £30,000 from each of two companies pays Class 1 NICs on both earnings streams independently. In 2025/26, the primary threshold is £12,570 per employment. So each company deducts employee NICs on earnings above £12,570. The director pays NICs on £17,430 from each job, giving total employee NICs of around £2,092 per job (at 12%) for a combined £4,184.</p>
+<p>This means a director earning £30,000 from each of two companies pays Class 1 NICs on both earnings streams independently. In 2025/26, the primary threshold is £12,570 per employment. So each company deducts employee NICs on earnings above £12,570. The director pays NICs on £17,430 from each job, giving total employee NICs of around £1,394 per job (at 8%, the 2025/26 primary rate) for a combined £2,789.</p>
 
-<p>If the same director earned £60,000 from a single company, they would pay NICs on £47,430 at 12% up to £50,270, then 2% on the excess. That works out at roughly £4,944 in employee NICs.</p>
+<p>If the same director earned £60,000 from a single company, they would pay NICs at 8% on £37,700 (earnings from £12,570 to £50,270), then 2% on £9,730 above £50,270. That works out at roughly £3,211 in employee NICs (£3,016 plus £195).</p>
 
-<p>The director pays less NICs overall when earnings are split across two employments. This is legitimate. HMRC does not combine NICs across separate employments. But the director's employer (each company) also pays employer NICs at 13.8% on earnings above the secondary threshold of £9,100 per employment.</p>
+<p>The director pays less NICs overall when earnings are split across two employments. This is legitimate. HMRC does not combine NICs across separate employments. But the director's employer (each company) also pays employer NICs at 15% on earnings above the secondary threshold of £5,000 per employment (the rate and threshold applying from 6 April 2025).</p>
 
-<p>For a director with two companies, each company pays employer NICs on the director's earnings above £9,100. This can increase total employer NIC costs compared to a single employment.</p>
+<p>For a director with two companies, each company pays employer NICs on the director's earnings above £5,000. This can reduce total employer NIC costs compared to a single employment, because each company benefits from its own secondary threshold deduction.</p>
 
 <h2>Director-Specific Rules: Annual Earnings Period</h2>
 <p>Directors are treated differently from other employees for NIC purposes. For most employees, NICs are calculated on each pay period (weekly or monthly). For directors, NICs are calculated on an annual basis, even if they are paid monthly.</p>
@@ -100,13 +100,13 @@ faqs:
 <li>Consultancy Ltd: code 1257L (full personal allowance)</li>
 <li>Property company: code BR (all earnings taxed at 20%)</li>
 </ul>
-<p>At the consultancy, Sarah's tax is calculated on £32,430 (£45,000 minus £12,570) at 20%, giving £6,486 in income tax. Her NICs are calculated on £32,430 (£45,000 minus £12,570) at 12%, giving £3,891.60 in employee NICs. The consultancy pays employer NICs of 13.8% on £35,900 (£45,000 minus £9,100), which is £4,954.20.</p>
+<p>At the consultancy, Sarah's tax is calculated on £32,430 (£45,000 minus £12,570) at 20%, giving £6,486 in income tax. Her NICs are calculated on £32,430 (£45,000 minus £12,570) at 8%, giving £2,594.40 in employee NICs. The consultancy pays employer NICs of 15% on £40,000 (£45,000 minus £5,000), which is £6,000.</p>
 
-<p>At the property company, Sarah's tax is calculated on the full £15,000 at 20%, giving £3,000. Her NICs are calculated on £2,430 (£15,000 minus £12,570) at 12%, giving £291.60. The property company pays employer NICs on £5,900 (£15,000 minus £9,100) at 13.8%, giving £814.20.</p>
+<p>At the property company, Sarah's tax is calculated on the full £15,000 at 20%, giving £3,000. Her NICs are calculated on £2,430 (£15,000 minus £12,570) at 8%, giving £194.40. The property company pays employer NICs on £10,000 (£15,000 minus £5,000) at 15%, giving £1,500.</p>
 
-<p>Total tax: £9,486. Total employee NICs: £4,183.20. Total employer NICs across both companies: £5,768.40.</p>
+<p>Total tax: £9,486. Total employee NICs: £2,788.80. Total employer NICs across both companies: £7,500.</p>
 
-<p>If Sarah earned £60,000 from a single company, her tax would be £9,486 (same) but her employee NICs would be higher at around £4,944. Her employer NICs would be lower at around £5,740. The difference is small but real.</p>
+<p>If Sarah earned £60,000 from a single company, her tax would be £9,486 (same) but her employee NICs would be higher at around £3,211. Her employer NICs would also be higher at around £8,250. The two-company structure saves both Sarah and her companies on NICs overall.</p>
 
 <h2>Common Mistakes to Avoid</h2>
 <p>Three mistakes crop up regularly with PAYE for director with two companies:</p>
@@ -124,7 +124,7 @@ faqs:
 <h2>Final Thoughts</h2>
 <p>PAYE for a director with two companies is manageable if you follow the rules. Use the tax codes HMRC issues. Treat NICs separately for each employment. File accurate RTI returns. And make sure the director includes both employments on their self assessment.</p>
 
-<p>If you are unsure about any aspect, speak to an ICAEW qualified accountant who can review the payroll setup for both companies. A small error in tax code allocation can lead to a large underpayment by year end.</p>
+<p>If you are unsure about any aspect, speak to a specialist accountant who can review the payroll setup for both companies. A small error in tax code allocation can lead to a large underpayment by year end.</p>
 
 <p>For more on payroll compliance, see our <a href="/blog/payroll-and-paye">payroll and PAYE guides</a>. If you need help setting up payroll for a new company, <a href="/contact">contact our team</a>.</p>
 

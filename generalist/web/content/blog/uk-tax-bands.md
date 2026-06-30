@@ -87,17 +87,17 @@ imageCredit:
 
 <ul>
 <li>Primary threshold (employees): £12,570 per year. Earnings below this pay no NI.</li>
-<li>Secondary threshold (employers): £9,100 per year. Employer NI of 13.8% applies above this.</li>
+<li>Secondary threshold (employers): £5,000 per year. Employer NI of 15% applies above this (from 6 April 2025, continuing into 2026/27).</li>
 <li>Upper earnings limit (employees): £50,270 per year. Earnings above this pay 2% employee NI.</li>
-<li>Class 4 (self-employed): profits between £12,570 and £50,270 pay 9%. Profits above £50,270 pay 2%.</li>
+<li>Class 4 (self-employed): profits between £12,570 and £50,270 pay 6%. Profits above £50,270 pay 2%.</li>
 <li>Class 2 (self-employed): abolished from April 2024. No longer payable.</li>
 </ul>
 
-<p>For a limited company director paying themselves a salary, the most efficient approach is often to set the salary at £12,570. This matches the personal allowance and the primary NI threshold. No income tax. No employee NI. But employer NI of 13.8% applies on the amount above £9,100.</p>
+<p>For a limited company director paying themselves a salary, the most efficient approach is often to set the salary at £12,570. This matches the personal allowance and the primary NI threshold. No income tax. No employee NI. But employer NI of 15% applies on the amount above £5,000 (£1,135.50 per year on a £12,570 salary).</p>
 
 <p>If your company qualifies for the Employment Allowance (up to £10,500 per year), that employer NI is covered. Many multi-director limited companies use this structure.</p>
 
-<p>For a sole trader, Class 4 NI is calculated on your trading profits. If your profits are £45,000, you pay 9% on the slice from £12,571 to £45,000. That is £2,918.70 in Class 4 NI.</p>
+<p>For a sole trader, Class 4 NI is calculated on your trading profits. If your profits are £45,000, you pay 6% on the slice from £12,571 to £45,000. That is £1,945.80 in Class 4 NI.</p>
 
 <h2>Dividend Tax Rates 2025/26</h2>
 
@@ -164,7 +164,7 @@ imageCredit:
 
 <p>For a business owner selling their company, BADR can save tens of thousands in tax. But the £1 million lifetime limit means you cannot use it indefinitely.</p>
 
-<p>If you sell a rental property, the 60-day reporting rule applies. You must report the gain and pay the tax within 60 days of completion. There is no annual wait.</p>
+<p>If you sell a UK residential rental property, the 60-day reporting rule applies. You must report the gain and pay the tax within 60 days of completion. Commercial property and land are reported through your annual Self Assessment return instead.</p>
 
 <h2>Corporation Tax Rates 2025/26</h2>
 
@@ -232,7 +232,7 @@ imageCredit:
 
 <h3>Employment Allowance</h3>
 
-<p>The Employment Allowance is up to £10,500 per year. It reduces your employer National Insurance bill. It is available to most businesses, but not to companies where the director is the only employee and the company is a personal service company.</p>
+<p>The Employment Allowance is up to £10,500 per year. It reduces your employer National Insurance bill. It is available to most businesses, but not to companies where the director is the only employee paid through payroll.</p>
 
 <p>If your employer NI bill is £8,000, the Employment Allowance reduces it to zero. You save the full £8,000.</p>
 
@@ -241,7 +241,7 @@ imageCredit:
 <p>For a limited company director, the most tax-efficient approach is typically:</p>
 
 <ol>
-<li>Pay yourself a salary of £12,570 per year. This uses your personal allowance and avoids income tax and employee NI. Employer NI of 13.8% applies on the amount above £9,100, but the Employment Allowance often covers this.</li>
+<li>Pay yourself a salary of £12,570 per year. This uses your personal allowance and avoids income tax and employee NI. Employer NI of 15% applies on the amount above £5,000 (£1,135.50 per year on a £12,570 salary), but the Employment Allowance often covers this.</li>
 <li>Take dividends from the company's post-tax profits. Keep your total income (salary plus dividends) within the basic rate band (£50,270) to pay 8.75% dividend tax.</li>
 <li>If your total income exceeds £50,270, the dividend tax rate rises to 33.75%. Consider whether it is worth taking the extra income or leaving it in the company.</li>
 <li>If your total income exceeds £100,000, the personal allowance taper starts. The marginal rate on dividends in this zone is 33.75% plus the effective 20% from the lost allowance. That is 53.75% in practice.</li>
@@ -249,9 +249,9 @@ imageCredit:
 
 <p>For a sole trader, the approach is different. You pay income tax and Class 4 NI on your profits. There is no dividend option. Your only levers are timing your income, claiming allowable expenses, and making pension contributions.</p>
 
-<p>If your profits are £60,000, you pay 20% on the slice from £12,571 to £50,270, and 40% on the slice from £50,271 to £60,000. Plus Class 4 NI at 9% on the slice from £12,571 to £50,270, and 2% on the slice above £50,270. Your total tax and NI bill is roughly £17,500.</p>
+<p>If your profits are £60,000, you pay 20% on the slice from £12,571 to £50,270, and 40% on the slice from £50,271 to £60,000. Plus Class 4 NI at 6% on the slice from £12,571 to £50,270, and 2% on the slice above £50,270. Your total tax and NI bill is roughly £13,889 (income tax £11,432 + Class 4 NI £2,457).</p>
 
-<p>A pension contribution reduces your taxable profits. If you contribute £10,000 to a personal pension, your taxable profits drop to £50,000. You save 40% income tax and 2% Class 4 NI on that £10,000. That is a saving of £4,200.</p>
+<p>A pension contribution reduces your taxable profits. If you contribute £10,000 to a personal pension, your taxable profits drop to £50,000. The £9,730 above £50,270 saves at 42% (40% income tax + 2% Class 4 NI); the remaining £270 saves at 26% (20% income tax + 6% Class 4 NI). Total saving approximately £4,157.</p>
 
 <h2>Making Tax Digital for Income Tax (MTD for ITSA)</h2>
 

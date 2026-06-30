@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
 metaTitle: "Dividend Tax Rates 2025/26: Quarterly Payments Guide"
 metaDescription: "The 2025/26 dividend tax rates are 8.75%, 33.75% and 39.35%. Here's how to plan quarterly dividends without pushing yourself into a higher tax band."
-altText: "ICAEW-qualified accountant reviewing dividend tax calculations on a laptop with a calculator and printed HMRC tax tables on a desk in a modern UK office."
+altText: "Accountant reviewing dividend tax calculations on a laptop with a calculator and printed HMRC tax tables on a desk in a modern UK office."
 image: "/blog/dividend-tax-rates-2025-26-quarterly-director.jpg"
 imageCredit:
   photographer: "Tara Winstead"
@@ -85,15 +85,15 @@ faqs:
 
 <p><strong>Q1 dividend (July 2025):</strong> £10,000. The first £125 of the annual £500 allowance applies (she has used one quarter of the allowance). The remaining £9,875 is taxed at 8.75%. Tax due: £864.06. But she does not pay this until her self assessment is filed in January 2027.</p>
 
-<p><strong>Q2 dividend (October 2025):</strong> £10,000. Another £125 of the allowance used. Remaining allowance: £250. The next £9,875 at 8.75%. Tax: £864.06. Cumulative dividends taken: £20,000. Remaining basic rate band: £37,700 minus £19,750 (dividends above allowance) equals £17,950.</p>
+<p><strong>Q2 dividend (October 2025):</strong> £10,000. Another £125 of the allowance used. Remaining allowance: £250. The next £9,875 at 8.75%. Tax: £864.06. Cumulative dividends taken: £20,000. Remaining basic rate band: £37,700 minus £20,000 (cumulative dividends) equals £17,700.</p>
 
-<p><strong>Q3 dividend (January 2026):</strong> £10,000. Another £125 of allowance used. Remaining allowance: £125. The next £9,875 at 8.75%. Tax: £864.06. Cumulative dividends taken: £30,000. Remaining basic rate band: £37,700 minus £29,625 equals £8,075.</p>
+<p><strong>Q3 dividend (January 2026):</strong> £10,000. Another £125 of allowance used. Remaining allowance: £125. The next £9,875 at 8.75%. Tax: £864.06. Cumulative dividends taken: £30,000. Remaining basic rate band: £37,700 minus £30,000 equals £7,700.</p>
 
-<p><strong>Q4 dividend (April 2026):</strong> £10,000. Final £125 of allowance used. The first £8,075 is at 8.75% (using the remaining basic rate band). Tax: £706.56. The remaining £1,800 is at 33.75%. Tax: £607.50.</p>
+<p><strong>Q4 dividend (April 2026):</strong> £10,000. Final £125 of allowance used. The first £7,575 is at 8.75% (using the remaining basic rate band). Tax: £662.81. The remaining £2,300 is at 33.75%. Tax: £776.25.</p>
 
-<p>Sarah's total dividend tax for the year: £864.06 + £864.06 + £864.06 + £706.56 + £607.50 = £3,906.24.</p>
+<p>Sarah's total dividend tax for the year: £864.06 + £864.06 + £864.06 + £662.81 + £776.25 = £4,031.24.</p>
 
-<p>If she had taken the full £40,000 as one dividend in Q1, the calculation would be different. The first £500 is tax-free. The next £37,700 is at 8.75% (£3,298.75). The remaining £1,800 is at 33.75% (£607.50). Total: £3,906.25. The same total. But the cashflow effect is different. She pays the same tax regardless of timing. The difference is that with quarterly payments, she has more flexibility to adjust if her income changes mid-year.</p>
+<p>If she had taken the full £40,000 as one dividend in Q1, the calculation would be different. The first £500 is tax-free. The next £37,200 is at 8.75% (£3,255). The remaining £2,300 is at 33.75% (£776.25). Total: £4,031.25. The same total. But the cashflow effect is different. She pays the same tax regardless of timing. The difference is that with quarterly payments, she has more flexibility to adjust if her income changes mid-year.</p>
 
 <h2>What Happens If Your Income Changes Mid-Year</h2>
 
@@ -113,7 +113,7 @@ faqs:
 
 <p>A common mistake is declaring a dividend based on gross profit rather than post-tax profit. If your company made £100,000 profit and you take £100,000 as dividends, you have nothing left to pay the £25,000 corporation tax bill. The dividend is legal (there is no law preventing it), but the company will have a director's loan account overdrawn or will need to borrow to pay HMRC.</p>
 
-<p>As ICAEW qualified accountants, we see this every year. Plan your dividends after you have calculated your estimated corporation tax liability. Leave a buffer.</p>
+<p>We see this every year. Plan your dividends after you have calculated your estimated corporation tax liability. Leave a buffer.</p>
 
 <h2>Quarterly Dividend Declaration: The Paperwork</h2>
 
@@ -167,7 +167,7 @@ faqs:
 
 <p>If your turnover crossed the VAT threshold in the last 30 days, that is a separate issue. But it affects your cashflow, which affects how much dividend you can take. The two interact.</p>
 
-<p>Our ICAEW qualified team at Holloway Davies can help you model your dividend strategy across the year. We work with directors in London, Manchester, Birmingham, Bristol and across the UK. <a href="/contact">Get in touch</a> if you want a second look at your quarterly dividend plan.</p>
+<p>Our specialist team at Holloway Davies can help you model your dividend strategy across the year. We work with directors in London, Manchester, Birmingham, Bristol and across the UK. <a href="/contact">Get in touch</a> if you want a second look at your quarterly dividend plan.</p>
 
 <p>For more on how dividends fit into your overall director pay strategy, see our guide on <a href="/blog/director-pay-and-dividends">director pay and dividends</a>.</p>
 

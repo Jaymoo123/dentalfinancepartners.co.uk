@@ -7,9 +7,9 @@ import { siteConfig } from "@/config/site";
 import { SignupForm } from "@/components/newsletter/SignupForm";
 
 export const metadata: Metadata = {
-  title: `Free UK Business Templates | ${siteConfig.name}`,
+  title: `Free UK Business Templates`,
   description:
-    "Free downloadable PDF templates for UK limited companies, sole traders and contractors. Invoice template, year-end checklist, MTD ITSA checklist, mileage log, dividend voucher, board minutes, monthly expense tracker. ICAEW reviewed.",
+    "Free downloadable PDF templates for UK limited companies, sole traders and contractors. Invoice template, year-end checklist, MTD ITSA checklist, mileage log, dividend voucher, board minutes, monthly expense tracker. Reviewed against current HMRC and Companies House requirements.",
   alternates: { canonical: `${siteConfig.url}/templates` },
   openGraph: {
     title: `Free UK Business Templates | ${siteConfig.name}`,
@@ -83,7 +83,7 @@ export default function TemplatesIndexPage() {
               UK business templates, free.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-neutral-600 max-w-2xl">
-              Seven PDF templates for UK limited companies, contractors and sole traders. Each one reviewed by an ICAEW Chartered Accountant. Download, fill in, use. No email required.
+              Seven PDF templates for UK limited companies, contractors and sole traders. Each one reviewed against current HMRC and Companies House requirements. Download, fill in, use. No email required.
             </p>
           </div>
         </div>
@@ -130,7 +130,7 @@ export default function TemplatesIndexPage() {
               About the templates
             </h2>
             <p className="mt-4 text-base text-neutral-700 leading-relaxed">
-              Every template is reviewed by James Holloway, ICAEW Chartered Accountant, against current HMRC and Companies House requirements. They are not a substitute for tailored tax advice, but they cover the standard documents most UK limited companies, contractors, sole traders and small businesses need.
+              Every template is reviewed by James Holloway against current HMRC and Companies House requirements. They are not a substitute for tailored tax advice, but they cover the standard documents most UK limited companies, contractors, sole traders and small businesses need.
             </p>
             <p className="mt-4 text-base text-neutral-700 leading-relaxed">
               No email required. Share them freely with your team, your accountant, or your network. If something is wrong or out of date, get in touch and the editorial team will fix it.

@@ -37,7 +37,7 @@ faqs:
 
 <p>From April 2027, the threshold drops to £30,000. From April 2028, it drops again to £20,000. If you are a sole trader earning £25,000 today, you will be caught by 2027. It is worth preparing now.</p>
 
-<p>As ICAEW qualified accountants, we have been working with clients on MTD for VAT since 2019. The principles for MTD ITSA are similar but the record keeping requirements are broader.</p>
+<p>We have been working with clients on MTD for VAT since 2019. The principles for MTD ITSA are similar but the record keeping requirements are broader.</p>
 
 <h2>What records must a sole trader keep under MTD ITSA?</h2>
 
@@ -55,11 +55,11 @@ faqs:
 
 <p>You do not need to scan every receipt into the software immediately. But you must record the transaction digitally within a reasonable time. HMRC has not specified a hard deadline for each entry, but the quarterly submission requires complete and accurate data for that period.</p>
 
-<h3>What about the "three clear days" rule?</h3>
+<h3>How long must you keep your MTD ITSA records?</h3>
 
-<p>Under MTD ITSA, you must keep your digital records for at least three years after the 31 January following the tax year. For the 2026/27 tax year, that means keeping records until at least 31 January 2031.</p>
+<p>Under MTD ITSA, you must keep your digital records for at least five years after the 31 January following the tax year. For the 2026/27 tax year, that means keeping records until at least 31 January 2033.</p>
 
-<p>This is longer than the standard self assessment record keeping requirement of 22 months after the tax year end. HMRC wants the digital records available for inspection if they open a compliance check.</p>
+<p>The five-year retention period matches the existing self assessment requirement for sole traders under TMA 1970 s.12B(2)(a), which is five years from the 31 January filing deadline. HMRC wants the digital records available for inspection if they open a compliance check.</p>
 
 <h2>What software do you need for MTD ITSA record keeping?</h2>
 
@@ -157,7 +157,7 @@ faqs:
 
 <p>MTD ITSA is not a distant future change. It is 12 months away for sole traders with income over £50,000. The record keeping requirements are specific but manageable if you have the right software and processes in place.</p>
 
-<p>The key takeaway is this: you must keep digital records of all business income and expenses, submit quarterly updates to HMRC, and retain those records for at least three years after the relevant tax year. Paper records and manual spreadsheets will not meet the requirement unless linked to compatible software.</p>
+<p>The key takeaway is this: you must keep digital records of all business income and expenses, submit quarterly updates to HMRC, and retain those records for at least five years after the 31 January following the relevant tax year. Paper records and manual spreadsheets will not meet the requirement unless linked to compatible software.</p>
 
 <p>If you need help setting up your digital record keeping system or understanding whether MTD ITSA applies to your business, <a href="/contact">contact our team</a>. We work with sole traders across the UK, from freelancers in Bristol's Harbourside to tradespeople in Leeds' city centre, and we can help you get compliant before the deadlines arrive.</p>
 

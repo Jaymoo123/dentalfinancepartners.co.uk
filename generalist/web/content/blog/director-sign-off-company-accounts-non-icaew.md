@@ -49,7 +49,7 @@ faqs:
 
 <p>If you prepare the accounts yourself, you are acting as the company's accountant even if you have no qualification. That is legal. But you must ensure the accounts meet the same legal standards that a qualified accountant would follow. That includes correct formats, proper notes, and compliance with FRS 102 or FRS 105 (the UK accounting standards for small companies).</p>
 
-<p>At <a href="/about">Holloway Davies</a>, our ICAEW qualified team prepares accounts for hundreds of limited companies each year. We see the common mistakes directors make when they go it alone: incorrect classification of director's loans, misstated deferred income, and missing notes on related party transactions. These errors can trigger HMRC enquiries and Companies House filing rejections.</p>
+<p>At <a href="/about">Holloway Davies</a>, our experienced team prepares accounts for hundreds of limited companies each year. We see the common mistakes directors make when they go it alone: incorrect classification of director's loans, misstated deferred income, and missing notes on related party transactions. These errors can trigger HMRC enquiries and Companies House filing rejections.</p>
 
 <h2>The Legal Requirements for Small Company Accounts</h2>
 
@@ -67,7 +67,7 @@ faqs:
 
 <ul>
 <li><strong>Incorrect corporation tax calculations.</strong> The accounts feed into the CT600 corporation tax return. Errors in the accounts mean errors in the tax return, potentially triggering penalties and interest.</li>
-<li><strong>Directors' loan account mistakes.</strong> If the company has lent money to a director, the accounts must reflect that correctly. Misstatement can lead to a benefit in kind charge or S455 tax at 33.75%.</li>
+<li><strong>Directors' loan account mistakes.</strong> If the company has lent money to a director, the accounts must reflect that correctly. Misstatement can lead to a benefit in kind charge or S455 tax at 35.75% on loans made on or after 6 April 2026 (33.75% for loans made in 2025/26).</li>
 <li><strong>Filing rejections.</strong> Companies House rejects accounts that do not meet format requirements. Late refiling incurs penalties starting at £150 for a private company.</li>
 <li><strong>HMRC enquiries.</strong> Accounts that look unusual or contain obvious errors increase the chance of a compliance check.</li>
 </ul>
@@ -134,6 +134,6 @@ faqs:
 
 <p>Our <a href="/blog/director-pay-and-dividends">director pay and dividends blog</a> covers related topics like salary and dividend planning, which often tie into the accounts. And our <a href="/blog/corporation-tax">corporation tax blog</a> explains how the accounts feed into the tax return. Both are worth reading if you are managing your own accounts.</p>
 
-<p>If you want certainty, speak to a qualified accountant. At Holloway Davies, we are ICAEW qualified and we help directors across the UK get their accounts right. We prepare the accounts, you sign them, and we handle the filing. It keeps you compliant and gives you peace of mind.</p>
+<p>If you want certainty, speak to a qualified accountant. At Holloway Davies, we are experienced accountants and we help directors across the UK get their accounts right. We prepare the accounts, you sign them, and we handle the filing. It keeps you compliant and gives you peace of mind.</p>
 
 <p>If your company's year-end is approaching or you have a set of accounts you are unsure about, <a href="/contact">get in touch</a>. We can review what you have and tell you whether it is safe to sign.</p>

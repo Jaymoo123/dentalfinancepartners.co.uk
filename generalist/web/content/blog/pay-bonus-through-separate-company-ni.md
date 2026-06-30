@@ -29,7 +29,7 @@ faqs:
     answer: "Pension salary sacrifice is the most effective: employer pension contributions are exempt from employer and employee NI. Share schemes (SIP, EMI) can also reduce NI. Dividends for shareholder employees carry no NI but are paid from post-tax profits. Trivial benefits under £50 per gift are NI-free but capped at £300 for directors of close companies."
 ---
 
-<p>You have a profitable year. Your key employee delivered. You want to pay them a £20,000 bonus. Then you think: what if I pay that bonus through a separate limited company I also control? The bonus comes from Company B, not Company A. Company B has no other activity. You hope the payment avoids employer National Insurance at 13.8% on Company A's payroll, and maybe employee NI too.</p>
+<p>You have a profitable year. Your key employee delivered. You want to pay them a £20,000 bonus. Then you think: what if I pay that bonus through a separate limited company I also control? The bonus comes from Company B, not Company A. Company B has no other activity. You hope the payment avoids employer National Insurance at 15% on Company A's payroll, and maybe employee NI too.</p>
 
 <p>This is a known arrangement. HMRC has seen it hundreds of times. And they have specific legislation to shut it down. The short answer is no, you cannot pay a bonus through a separate company to avoid NI. The longer answer involves disguised remuneration rules, the general anti-abuse rule (GAAR), and potential penalties that far exceed the NI you tried to save.</p>
 
@@ -59,19 +59,19 @@ faqs:
 
 <h2>Real Numbers: What the Penalties Look Like</h2>
 
-<p>Let us use a concrete example. A director in Manchester pays a £20,000 bonus through a separate company. The NI saved is 13.8% employer NI plus 2% employee NI (at the relevant rates) on the bonus. That is about £3,160 in total NI avoided.</p>
+<p>Let us use a concrete example. A director in Manchester pays a £20,000 bonus through a separate company. The NI saved is 15% employer NI plus 2% employee NI (at the relevant rates) on the bonus. That is about £3,400 in total NI avoided.</p>
 
 <p>HMRC opens an enquiry. They apply the disguised remuneration rules. The £20,000 is treated as earnings. The director's company now owes:</p>
 
 <ul>
 <li>PAYE income tax at 40% (if the director is a higher rate taxpayer): £8,000</li>
-<li>Employer Class 1 NIC at 13.8%: £2,760</li>
+<li>Employer Class 1 NIC at 15%: £3,000</li>
 <li>Employee Class 1 NIC at 2%: £400</li>
 <li>Interest on late payment: typically 4.25% per year, running from the original due date</li>
 <li>Penalties: up to 100% of the tax understated for deliberate non-disclosure</li>
 </ul>
 
-<p>Total potential liability: £11,160 in tax and NI, plus interest and penalties that could double that figure. The original NI saving of £3,160 is dwarfed by the penalties. And you still have the cost of setting up and running Company B, filing its accounts, and dealing with the enquiry.</p>
+<p>Total potential liability: £11,400 in tax and NI, plus interest and penalties that could double that figure. The original NI saving of £3,400 is dwarfed by the penalties. And you still have the cost of setting up and running Company B, filing its accounts, and dealing with the enquiry.</p>
 
 <h2>What About Loans or Director's Loan Accounts?</h2>
 
@@ -89,7 +89,7 @@ faqs:
 <p>You can provide trivial benefits of up to £50 per employee per benefit, with an annual cap of £300 for directors of close companies. These are exempt from tax and NI. A £50 gift voucher for Christmas or a birthday is fine. A £20,000 bonus is not a trivial benefit.</p>
 
 <h3>Salary Sacrifice Schemes</h3>
-<p>Certain salary sacrifice arrangements can reduce NI. Pension contributions are the most common example. Employer pension contributions are exempt from employer NI and employee NI. You can sacrifice bonus into a pension scheme. The employee gets the full contribution into their pension, and you save 13.8% employer NI. The employee saves their marginal rate of NI too.</p>
+<p>Certain salary sacrifice arrangements can reduce NI. Pension contributions are the most common example. Employer pension contributions are exempt from employer NI and employee NI. You can sacrifice bonus into a pension scheme. The employee gets the full contribution into their pension, and you save 15% employer NI. The employee saves their marginal rate of NI too.</p>
 
 <p>Other salary sacrifice schemes (cycle to work, electric cars) also reduce NI but are limited in scope. They do not work for cash bonuses.</p>
 
@@ -97,7 +97,7 @@ faqs:
 <p>Share incentive plans (SIPs) and share option schemes (EMI, CSOP) allow employees to receive shares or share options without immediate tax or NI. The NI saving is real, but the schemes require formal documentation, HMRC registration, and ongoing compliance. They work best for companies planning long-term growth and exit.</p>
 
 <h3>Dividends for Shareholder Employees</h3>
-<p>If the employee is also a shareholder, you can pay dividends instead of bonuses. Dividends carry no NI. But dividends are paid from post-tax profits (after corporation tax), and the employee pays dividend tax at 8.75%, 33.75% or 39.35% depending on their income band. The overall tax cost is often lower than a bonus, but only if the employee holds shares. You cannot pay dividends to non-shareholders.</p>
+<p>If the employee is also a shareholder, you can pay dividends instead of bonuses. Dividends carry no NI. But dividends are paid from post-tax profits (after corporation tax), and the employee pays dividend tax at 10.75%, 35.75% or 39.35% depending on their income band (2026/27 rates, up from 8.75%/33.75% before 6 April 2026). The overall tax cost is often lower than a bonus, but only if the employee holds shares. You cannot pay dividends to non-shareholders.</p>
 
 <h2>What HMRC Looks For</h2>
 <p>HMRC uses data matching and risk profiling to identify companies that might be using bonus-through-separate-company arrangements. Red flags include:</p>

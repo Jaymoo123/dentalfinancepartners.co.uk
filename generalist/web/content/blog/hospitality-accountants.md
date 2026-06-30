@@ -31,7 +31,7 @@ faqs:
 
 <p>Running a restaurant, pub, café, hotel or catering business in the UK is a different beast from most other industries. Your margins are tight. Your stock is perishable. Your staff work antisocial hours. And your tax treatment is riddled with quirks that a general accountant simply will not know.</p>
 
-<p>That is where specialist <strong>hospitality accountants</strong> come in. We are ICAEW qualified accountants who work with hospitality businesses across the UK, from a single-site gastropub in the Northern Quarter in Manchester to a multi-site restaurant group in Shoreditch. And we see the same mistakes repeated when business owners rely on generalist accountants who treat their hospitality business like any other limited company.</p>
+<p>That is where specialist <strong>hospitality accountants</strong> come in. We are specialist accountants who work with hospitality businesses across the UK, from a single-site gastropub in the Northern Quarter in Manchester to a multi-site restaurant group in Shoreditch. And we see the same mistakes repeated when business owners rely on generalist accountants who treat their hospitality business like any other limited company.</p>
 
 <p>This article explains what makes hospitality accounting different, where generalists get it wrong, and what you should look for in <strong>accountants for hospitality</strong> businesses.</p>
 
@@ -101,7 +101,7 @@ faqs:
 
 <h2>How We Help Hospitality Businesses</h2>
 
-<p>At Holloway Davies, we are ICAEW qualified and we work with hospitality businesses of all shapes and sizes. That includes a craft beer bar in Digbeth, Birmingham, a boutique hotel in Leith, Edinburgh, and a catering company operating out of a commercial kitchen in Camden.</p>
+<p>At Holloway Davies, we work with hospitality businesses of all shapes and sizes. That includes a craft beer bar in Digbeth, Birmingham, a boutique hotel in Leith, Edinburgh, and a catering company operating out of a commercial kitchen in Camden.</p>
 
 <p>Our services for hospitality businesses include:</p>
 

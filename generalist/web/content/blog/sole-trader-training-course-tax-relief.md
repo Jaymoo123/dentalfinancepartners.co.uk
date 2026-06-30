@@ -35,7 +35,7 @@ faqs:
 
 <p>This is a common area of confusion for sole traders. You might instinctively think any course that helps your business should be tax deductible. HMRC does not see it that way. They apply a strict "wholly and exclusively" test, plus a second test on whether the training is for the trade you are already carrying on.</p>
 
-<p>As <a href="/about">ICAEW qualified accountants</a>, we deal with this question regularly. The rules are not as generous as many business owners assume, but they are also not as restrictive as you might fear. Let us work through the detail.</p>
+<p>We deal with this question regularly. The rules are not as generous as many business owners assume, but they are also not as restrictive as you might fear. Let us work through the detail.</p>
 
 <h2>The Two Key Tests for Sole Trader Training Course Tax Relief</h2>
 

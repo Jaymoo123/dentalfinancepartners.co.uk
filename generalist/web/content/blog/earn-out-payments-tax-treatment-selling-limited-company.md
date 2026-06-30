@@ -21,10 +21,10 @@ schema: ""
 faqs:
   - question: "Can I claim Business Asset Disposal Relief on earn out payments?"
     answer: "Yes, provided the earn out is treated as capital consideration for the shares and you meet the 5% shareholding and 2-year holding conditions. The earn out must not be disguised remuneration. If HMRC reclassifies it as income, BADR does not apply. The BADR rate is 14% in 2025/26, rising to 18% from April 2026."
-  - question: "What is a Section 280 election and should I use it?"
-    answer: "Section 280 of TCGA 1992 lets you defer the gain on deferred consideration until you actually receive the earn out payments. You avoid having to value the right to future payments at completion. Most sellers prefer this because you only pay CGT when you have the cash. The election must be made in writing within 2 years of the end of the tax year of disposal."
+  - question: "Can the gain on a cash earn-out be deferred?"
+    answer: "Not by election. For a cash earn-out where the future payment is genuinely unascertainable at completion, the right to receive it is treated as a separate chargeable asset and must be valued at market value at completion (Marren v Ingles [1980]). CGT is due in that tax year. When cash is actually received, any difference is a further CGT event in that later year. The main structural deferral route is where the earn-out is satisfied in shares or qualifying loan notes rather than cash, in which case a TCGA 1992 s.138A election may defer the gain until those securities are disposed of. TCGA 1992 s.280 is sometimes misquoted as a deferral election: it allows the CGT itself to be paid by instalments in hardship cases where consideration is payable over more than 18 months, but it does not defer the gain or remove the need to value the contingent right."
   - question: "What happens if the earn out target is not met?"
-    answer: "If you used a s.280 election, you simply report no gain and no loss in the year the right expires. If you used the market value approach and overpaid CGT upfront, you can claim an allowable capital loss for the difference between the market value and the actual amount received (zero). That loss can be set against other capital gains."
+    answer: "If the earn-out right expires worthless because targets were not met, you have an allowable capital loss equal to the market value attributed to that right at completion. That loss can be set against other capital gains in the same year or carried forward. Where you received some but not the full earn-out, the loss is the difference between the attributed value and the actual cash received. The loss arises in the tax year the right to payment expires."
   - question: "Does HMRC challenge earn out structures often?"
     answer: "Yes, HMRC scrutinises earn outs where the seller remains involved in the business. The key risk is reclassification as employment income. HMRC looks at whether the earn out is linked to personal performance, whether you are required to work to receive it, and whether the payment is structured as a bonus or salary. Proper drafting and clean separation of roles reduce the risk significantly."
 ---
@@ -60,7 +60,7 @@ faqs:
 <li>You must not be an employee of the buyer after completion. If you are, the line between capital and income blurs significantly.</li>
 </ul>
 
-<p>If these conditions are met, the earn out is treated as deferred consideration for CGT purposes. You report the gain in the year of disposal using the market value of the right to future payments. Alternatively, you can elect under TCGA 1992 s.280 to hold over the gain until the earn out payments are actually received.</p>
+<p>If these conditions are met, the earn out is treated as deferred consideration for CGT purposes. Where the future payment is genuinely unascertainable at completion, the right to receive it is itself a separate chargeable asset that must be valued at market value and brought into the CGT computation at completion (Marren v Ingles [1980]). When the earn-out cash is actually received, any difference between that completion valuation and the actual amount received is a further CGT event in the year of receipt.</p>
 
 <h3>Income Treatment: When HMRC Challenges</h3>
 
@@ -74,11 +74,11 @@ faqs:
 <li>You remain a director or employee with significant control over the targets.</li>
 </ul>
 
-<p>If HMRC reclassifies the earn out as income, you will pay income tax at your marginal rate (up to 45%), plus employee NIC at 2%, and your company will pay employer NIC at 13.8%. On a £200,000 earn out, that could mean £90,000+ in tax versus £28,000 under BADR at 14%.</p>
+<p>If HMRC reclassifies the earn out as income, you will pay income tax at your marginal rate (up to 45%), plus employee NIC at 2%, and your company will pay employer NIC at 15% above the £5,000 secondary threshold (the rate from April 2025). On a £200,000 earn out, that could mean £90,000+ in tax versus £28,000 under BADR at 14%.</p>
 
 <h2>Structuring Earn Outs to Protect Capital Treatment</h2>
 
-<p>As ICAEW qualified accountants, we see earn out disputes arise most often when sellers fail to separate their role as shareholder from their role as employee or consultant. The solution is clean documentation and clean behaviour.</p>
+<p>We see earn out disputes arise most often when sellers fail to separate their role as shareholder from their role as employee or consultant. The solution is clean documentation and clean behaviour.</p>
 
 <p>Here is what a well-structured earn out looks like:</p>
 
@@ -92,7 +92,7 @@ faqs:
 
 <p>Let us use a real example. A Manchester-based software consultancy sold for £500,000 upfront plus an earn out of up to £300,000 based on revenue growth over two years. The seller stayed on as a consultant under a separate contract at £800 per day. The earn out was paid as capital consideration. The seller claimed BADR on the full £800,000, paying 14% CGT. Total tax: £112,000.</p>
 
-<p>Had the earn out been structured as a bonus linked to the seller's continued employment, the £300,000 would have been income. At 45% tax plus 2% NIC, that is £141,000 in tax on the earn out alone, plus employer NIC of £41,400. The difference is stark.</p>
+<p>Had the earn out been structured as a bonus linked to the seller's continued employment, the £300,000 would have been income. At 45% tax plus 2% NIC, that is £141,000 in tax on the earn out alone, plus employer NIC of approximately £44,250 (15% on £295,000 above the £5,000 secondary threshold). The difference is stark.</p>
 
 <h2>Tax Reliefs Available on Earn Out Payments</h2>
 
@@ -108,15 +108,15 @@ faqs:
 
 <p><strong>Option 1: Market value at completion.</strong> You value the right to receive future earn out payments at the date of sale and pay CGT on that value immediately. When you actually receive the cash, any difference between the estimated value and the actual payment is a further gain or loss in the year of receipt.</p>
 
-<p><strong>Option 2: Section 280 election.</strong> You elect under TCGA 1992 s.280 to defer the gain on the earn out until you actually receive the payments. This is simpler and avoids the need to value the contingent right. Most sellers prefer this route because you only pay tax when you have the cash in hand.</p>
+<p><strong>Option 2: Securities in lieu of cash (TCGA 1992 s.138A).</strong> Where the buyer is willing to satisfy the earn-out by issuing shares or qualifying loan notes rather than cash, a s.138A election may defer the gain entirely until those securities are eventually sold. This is the main structural deferral route, but it requires the earn-out to be paid in securities rather than cash and carries its own commercial risks. Specialist tax and legal advice is essential before agreeing this structure.</p>
 
-<p>The s.280 election must be made in writing to HMRC within 2 years of the end of the tax year in which the disposal occurred. Miss the deadline and you are stuck with the market value approach.</p>
+<p>Note: TCGA 1992 s.280 is sometimes cited in error as a deferral election for earn-outs. It is not. It is a limited hardship provision that allows the CGT itself (not the gain) to be paid in corresponding instalments where the sale consideration is itself payable by instalments over more than 18 months. It does not remove the obligation to value the contingent right at completion or defer the date of disposal.</p>
 
 <h2>What Happens If the Earn Out Target Is Missed?</h2>
 
 <p>If you never receive the earn out payment because the targets were not met, you have an allowable capital loss for CGT purposes. You can set that loss against other capital gains in the same year or carry it forward.</p>
 
-<p>The loss is calculated as the market value you originally attributed to the right to receive the earn out. If you used a s.280 election, the loss arises in the year the right to payment expires, and the amount is whatever you would have received had the target been met.</p>
+<p>The loss is calculated as the market value you originally attributed to the right to receive the earn out at completion. The loss arises in the tax year the right to payment expires and equals the difference between that attributed value and the actual cash received (which may be zero).</p>
 
 <p>This is a common area of confusion. Sellers often assume that a missed target means no tax consequence. In reality, if you used the market value approach and overvalued the earn out, you may have overpaid CGT upfront and need to claim a loss to recover it.</p>
 
@@ -134,16 +134,16 @@ faqs:
 <li><strong>Get the share sale agreement reviewed by a solicitor who understands tax.</strong> The drafting of the earn out clause is critical. Vague language invites HMRC challenge.</li>
 <li><strong>Separate your ongoing role from the earn out.</strong> If you stay on, have a separate contract with market-rate remuneration that does not reference the earn out.</li>
 <li><strong>Use company-level targets.</strong> EBITDA, revenue, or gross profit. Avoid personal metrics like billable hours or individual sales.</li>
-<li><strong>Consider a s.280 election.</strong> It simplifies your tax position and defers payment until you have the cash.</li>
-<li><strong>Model the tax difference.</strong> Compare CGT at 14% or 24% versus income tax at up to 45% plus NIC. The numbers will focus your mind on getting the structure right.</li>
+<li><strong>Consider a securities-based earn-out.</strong> If the buyer can satisfy the earn-out in shares or qualifying loan notes, a TCGA 1992 s.138A election may defer the gain until those securities are sold. Take specialist advice on the commercial and tax implications before committing.</li>
+<li><strong>Model the tax difference.</strong> Compare CGT at 18% (BADR, from April 2026) or 24% versus income tax at up to 45% plus NIC. The numbers will focus your mind on getting the structure right.</li>
 </ul>
 
 <p>If you are considering an earn out structure, speak to us early. Our <a href="/services">services</a> include exit planning and CGT advice for business owners across the UK, from <a href="/locations">our offices in Manchester and Birmingham</a>. We can review your draft agreement and model the tax outcomes before you commit.</p>
 
 <h2>Earn Out Payments Tax Treatment: Summary</h2>
 
-<p>The <strong>earn out payments tax treatment</strong> depends on one core question: is the payment consideration for your shares or remuneration for your services? Structure it right and you pay CGT at 14% to 24%. Get it wrong and you pay income tax at up to 45% plus NIC.</p>
+<p>The <strong>earn out payments tax treatment</strong> depends on one core question: is the payment consideration for your shares or remuneration for your services? Structure it right and you pay CGT at 18% to 24% from April 2026 (14% applied in 2025/26 only under BADR). Get it wrong and you pay income tax at up to 45% plus NIC.</p>
 
-<p>HMRC will look at the substance, not just the legal form. Clean documentation, separate service contracts, and company-level targets are your best protection. If you use a s.280 election, you defer tax until the cash arrives and avoid valuation disputes.</p>
+<p>HMRC will look at the substance, not just the legal form. Clean documentation, separate service contracts, and company-level targets are your best protection. If the earn-out is satisfied in securities rather than cash, a TCGA 1992 s.138A election may defer the gain until those securities are disposed of.</p>
 
 <p>For more on exit planning, read our guide on <a href="/blog/exit-and-capital-gains">capital gains tax when selling your business</a>. If you are at the negotiation stage, <a href="/contact">contact us</a> to discuss your earn out structure before you sign.</p>

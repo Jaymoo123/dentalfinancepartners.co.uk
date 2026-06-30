@@ -24,7 +24,7 @@ faqs:
   - question: "Can HMRC challenge a dividend paid to my spouse?"
     answer: "Yes, HMRC can challenge under the settlement provisions if they believe the shares were gifted as part of a tax avoidance arrangement. The risk is lower if your spouse subscribed for shares using their own money and the arrangement is properly documented. The spousal exemption in s.626 ITTOIA 2005 provides some protection, but HMRC may still argue it does not apply if you continue to benefit from the income."
   - question: "What is the tax saving from paying a dividend to a non-working spouse?"
-    answer: "The saving depends on your marginal tax rates. If you are a higher rate taxpayer (33.75% on dividends) and your spouse has no other income, they can receive up to £12,570 tax-free using their personal allowance, plus £500 at 0% under the dividend allowance. The next £37,200 is taxed at only 8.75%. On a £30,000 dividend, the saving compared to you taking it could be over £8,000 per year."
+    answer: "The saving depends on your marginal tax rates. If you are a higher rate taxpayer (35.75% on dividends in 2026/27; 33.75% in 2025/26) and your spouse has no other income, they can receive up to £12,570 tax-free using their personal allowance, plus £500 at 0% under the dividend allowance. The next £37,200 is taxed at only 10.75% (2026/27 rate; 8.75% in 2025/26). On a £30,000 dividend, the saving compared to you taking it could be over £8,000 per year."
   - question: "Do I need alphabet shares to pay a dividend to my spouse?"
     answer: "No, but alphabet shares make it much easier. With ordinary shares, dividends must be paid proportionally to each shareholder's holding. If your spouse holds 10% of the ordinary shares, they receive 10% of any dividend. With alphabet shares, you can declare a dividend on one class only, giving you full control over how much each person receives. This is the standard structure for family companies."
 ---
@@ -33,7 +33,7 @@ faqs:
 
 <p>This is one of the most common questions we hear from owner-managed businesses. A director wants to split income with their spouse to use both personal allowances and basic rate tax bands. It is a legitimate tax planning strategy. But HMRC will look closely at how the shares were acquired and whether the arrangement is genuine.</p>
 
-<p>In this guide, we cover the legal requirements for paying a <strong>dividend to spouse non director</strong>, the settlement rules that can catch out the unwary, and how to structure shareholdings properly. As <a href="/about">ICAEW qualified accountants</a>, we deal with this regularly for our clients across Manchester, Birmingham, and beyond.</p>
+<p>In this guide, we cover the legal requirements for paying a <strong>dividend to spouse non director</strong>, the settlement rules that can catch out the unwary, and how to structure shareholdings properly. We deal with this regularly for our clients across Manchester, Birmingham, and beyond.</p>
 
 <h2>Can You Pay a Dividend to a Spouse Who Is Not a Director or Employee?</h2>
 
@@ -107,24 +107,24 @@ faqs:
 
 <p>If your spouse has no other income, they can receive up to £12,570 in dividends tax-free using their personal allowance, plus another £500 at 0% under the dividend allowance. After that, dividends are taxed at 8.75% up to £50,270.</p>
 
-<p>This is a significant tax saving compared to paying yourself all the profits and being taxed at 33.75% or 39.35% on dividends above the basic rate band.</p>
+<p>This is a significant tax saving compared to paying yourself all the profits and being taxed at 35.75% or 39.35% on dividends above the basic rate band (2026/27 rates; 33.75% higher rate in 2025/26).</p>
 
 <h2>Dividend to Spouse Non Director: A Worked Example</h2>
 
 <p>Let us look at a practical example. A director in Birmingham runs a consultancy turning over £180,000. After salary and expenses, the company has £80,000 in distributable profits. The director is already taking a salary of £12,570 and dividends up to the basic rate band.</p>
 
-<p>Without any spouse dividend, the director would pay 33.75% on additional dividends above £50,270. On an extra £30,000 dividend, that is £10,125 in tax.</p>
+<p>Without any spouse dividend, the director would pay 35.75% on additional dividends above £50,270 (2026/27 rate). On an extra £30,000 dividend, that is £10,725 in tax.</p>
 
 <p>Instead, the director issues 100 B shares to their spouse, who is not a director or employee. The spouse subscribes for the shares using their own savings of £100. The company declares a £30,000 dividend on the B shares only. The spouse has no other income.</p>
 
-<p>The spouse's tax position:</p>
+<p>The spouse's tax position (2026/27 rates):</p>
 <ul>
 <li>Personal allowance: £12,570 (tax-free)</li>
 <li>Dividend allowance: £500 (tax-free)</li>
-<li>Remaining £16,930 taxed at 8.75%: £1,481</li>
+<li>Remaining £16,930 taxed at 10.75%: £1,820</li>
 </ul>
 
-<p>Total tax on the £30,000 dividend: £1,481. Compare that to £10,125 if the director had taken the dividend themselves. That is a saving of £8,644 per year.</p>
+<p>Total tax on the £30,000 dividend: £1,820. Compare that to £10,725 if the director had taken the dividend themselves. That is a saving of £8,905 per year.</p>
 
 <p>This is legitimate tax planning, provided the share structure is properly set up and documented. But you need to be aware of the settlement risk, particularly if the spouse is not involved in the business at all.</p>
 
@@ -132,7 +132,7 @@ faqs:
 
 <p>Dividends are not subject to National Insurance contributions. This is one of the reasons they are tax-efficient compared to salary. Your spouse does not pay NI on dividends they receive, and the company does not pay employer NI on dividends either.</p>
 
-<p>This is another advantage of using dividends to split income with a non-working spouse. A salary would attract employer NI at 13.8% above the secondary threshold of £9,100, and employee NI at 8% above the primary threshold. Dividends avoid both.</p>
+<p>This is another advantage of using dividends to split income with a non-working spouse. A salary would attract employer NI at 15% above the secondary threshold of £5,000 (from 6 Apr 2025), and employee NI at 8% above the primary threshold. Dividends avoid both.</p>
 
 <h2>Common Mistakes to Avoid</h2>
 
@@ -150,6 +150,6 @@ faqs:
 
 <p>If you are considering paying a <strong>dividend to spouse non director</strong>, you should speak to an accountant before you do it. The settlement rules are complex, and the facts of your specific situation matter. A properly structured arrangement is fine. A sloppy one can trigger an HMRC enquiry that costs far more than the tax you saved.</p>
 
-<p>At <a href="/services">Holloway Davies</a>, we help limited company directors set up alphabet share structures, document share transfers, and plan dividend payments efficiently. We are ICAEW qualified and deal with HMRC enquiries regularly. If your turnover is growing or your tax position is becoming more complex, get advice early.</p>
+<p>At <a href="/services">Holloway Davies</a>, we help limited company directors set up alphabet share structures, document share transfers, and plan dividend payments efficiently. We deal with HMRC enquiries regularly. If your turnover is growing or your tax position is becoming more complex, get advice early.</p>
 
 <p>For more on related topics, see our guides on <a href="/blog/director-pay-and-dividends">director pay and dividends</a> and <a href="/blog/limited-company-tax">limited company tax planning</a>.</p>

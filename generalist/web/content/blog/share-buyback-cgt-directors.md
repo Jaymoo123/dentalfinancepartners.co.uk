@@ -33,7 +33,7 @@ faqs:
 
 <p>A director in your limited company wants to leave. They own 30% of the shares. You and the other director own 70% between you. You want to buy their shares back. The company will pay them cash, cancel their shares, and you two will own 100% between you.</p>
 
-<p>That sounds straightforward. But the tax treatment depends entirely on how you structure the transaction. Get it wrong, and HMRC could treat the buyback as a dividend distribution to the remaining directors, hitting you with income tax at up to 39.35%. Get it right, and the departing director pays Capital Gains Tax at 14% or 24%, and you pay nothing.</p>
+<p>That sounds straightforward. But the tax treatment depends entirely on how you structure the transaction. Get it wrong, and HMRC could treat the buyback as a dividend distribution to the remaining directors, hitting you with income tax at up to 39.35%. Get it right, and the departing director pays Capital Gains Tax at 18% under Business Asset Disposal Relief or 24% without it (BADR rate 18% from 6 Apr 2026; 14% applied in 2025/26), and you pay nothing.</p>
 
 <p>This is a <strong>share buyback CGT directors</strong> planning point that comes up regularly when we advise growing businesses in Manchester, Birmingham and Bristol. The remaining directors often assume the tax falls only on the seller. That is not always true.</p>
 
@@ -49,9 +49,9 @@ faqs:
 
 <p>Here is the trap. HMRC can treat a share buyback as a distribution (a dividend) to the remaining shareholders if the main purpose is to benefit them rather than the company. The logic is that the company has spent cash to increase the remaining shareholders' percentage stake. That looks like a return of value to them.</p>
 
-<p>If HMRC reclassifies the buyback as a distribution, the remaining directors are treated as receiving a dividend equal to their proportionate share of the buyback cost. That dividend is taxed at dividend rates: 8.75% basic, 33.75% higher, 39.35% additional. No personal allowance on dividends above the £500 allowance.</p>
+<p>If HMRC reclassifies the buyback as a distribution, the remaining directors are treated as receiving a dividend equal to their proportionate share of the buyback cost. That dividend is taxed at dividend rates: 10.75% basic, 35.75% higher, 39.35% additional (2026/27 rates from 6 Apr 2026; 8.75% / 33.75% applied in 2025/26). No personal allowance on dividends above the £500 allowance.</p>
 
-<p>Take a concrete example. A company with two directors, you and a departing director. You own 50% each. The company buys back the departing director's shares for £100,000. HMRC could argue that the buyback benefits you by giving you 100% ownership. They could treat £50,000 of the buyback as a dividend to you. At higher rate tax, that is £16,875 in extra tax you did not expect.</p>
+<p>Take a concrete example. A company with two directors, you and a departing director. You own 50% each. The company buys back the departing director's shares for £100,000. HMRC could argue that the buyback benefits you by giving you 100% ownership. They could treat £50,000 of the buyback as a dividend to you. At the 2026/27 higher rate, that is £17,875 in extra tax you did not expect.</p>
 
 <p>This is why <strong>share buyback CGT directors</strong> planning is not just about the seller's tax position. It is about protecting the buyers too.</p>
 
@@ -102,7 +102,7 @@ faqs:
 
 <p>If the buyback does not meet the trade benefit test, or if the departing director remains connected (e.g. they stay as a consultant), HMRC treats the buyback as a distribution. The departing director pays dividend tax on the full amount received, not CGT.</p>
 
-<p>For a higher rate taxpayer receiving £100,000, dividend tax at 33.75% on £99,500 (after the £500 allowance) is £33,581. That is more than double the CGT bill under BADR.</p>
+<p>For a higher rate taxpayer receiving £100,000, dividend tax at 35.75% on £99,500 (after the £500 allowance) is £35,571 (2026/27 rate; 33.75% giving £33,581 in 2025/26). That is more than double the CGT bill under BADR.</p>
 
 <p>And as we covered earlier, the remaining directors can also face a deemed dividend. That double-hit makes an unplanned buyback extremely expensive.</p>
 
@@ -146,7 +146,7 @@ faqs:
 
 <p>BADR also requires the departing director to be an officer or employee of the company. If they have already resigned as a director before the buyback completes, they may lose the relief. The timing matters. Complete the buyback while they are still a director, then they resign afterwards.</p>
 
-<p>BADR requires a minimum two-year holding period. If the departing director acquired their shares less than two years ago, they will not qualify. They will pay CGT at 24% instead of 14%.</p>
+<p>BADR requires a minimum two-year holding period. If the departing director acquired their shares less than two years ago, they will not qualify. They will pay CGT at 24% instead of 18% (the current BADR rate from 6 Apr 2026; 14% applied in 2025/26).</p>
 
 <h2>Practical Example: A Manchester Consultancy Buyout</h2>
 
@@ -154,13 +154,13 @@ faqs:
 
 <p>The company had £180,000 in retained profits. The departing director's shares were valued at £95,000. The company bought them back using distributable profits. The departing director had held the shares for six years and had used £200,000 of their £1 million BADR allowance on a previous business sale.</p>
 
-<p>The departing director's gain was £94,500 (after £500 base cost). BADR applied to the full gain because it was within the remaining £800,000 allowance. Tax at 14% was £13,230. The remaining directors paid nothing personally. The company's retained profits reduced to £85,000, but that was sufficient for working capital.</p>
+<p>The departing director's gain was £94,500 (after £500 base cost). BADR applied to the full gain because it was within the remaining £800,000 allowance. After the £3,000 annual CGT allowance, the taxable gain was £91,500. Tax at 18% (the BADR rate from 6 Apr 2026; 14% applied in 2025/26) was £16,470. The remaining directors paid nothing personally. The company's retained profits reduced to £85,000, but that was sufficient for working capital.</p>
 
-<p>If we had structured it as a personal purchase by the remaining directors, they would have needed to extract £95,000 as dividends first. At 33.75% higher rate, that would have cost them £32,062 in dividend tax. The company buyback saved them that cost.</p>
+<p>If we had structured it as a personal purchase by the remaining directors, they would have needed to extract £95,000 as dividends first. At the 2026/27 higher rate of 35.75% on £94,500 (after the £500 dividend allowance), that would have cost them £33,784 in dividend tax (33.75% on the same taxable amount gives £31,894 in 2025/26). The company buyback saved them that cost.</p>
 
 <h2>When to Speak to an Accountant</h2>
 
-<p>A share buyback is not a DIY job. The tax treatment depends on the specific facts: the company's trade, the departing director's circumstances, the valuation, and the documentation. One wrong step can turn a 14% CGT bill into a 33.75% dividend tax bill for the seller and a deemed dividend for the buyers.</p>
+<p>A share buyback is not a DIY job. The tax treatment depends on the specific facts: the company's trade, the departing director's circumstances, the valuation, and the documentation. One wrong step can turn an 18% CGT bill (under BADR from 6 Apr 2026; 14% in 2025/26) into a 35.75% dividend tax bill (2026/27 higher rate; 33.75% in 2025/26) for the seller and a deemed dividend for the buyers.</p>
 
 <p>If you are considering a buyout, speak to an accountant before you do anything. Do not let the departing director resign first. Do not agree a price informally. Do not assume the company can just write a cheque.</p>
 

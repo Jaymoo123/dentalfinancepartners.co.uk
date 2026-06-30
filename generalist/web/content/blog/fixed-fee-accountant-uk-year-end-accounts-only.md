@@ -155,13 +155,13 @@ faqs:
 <li><strong>Software compatibility.</strong> Make sure they can work with whatever accounting software you use.</li>
 </ul>
 
-<p>As <a href="/about">ICAEW qualified accountants</a>, we see both models work well for different clients. The key is matching the service to the business, not the other way around.</p>
+<p>We see both models work well for different clients. The key is matching the service to the business, not the other way around.</p>
 
 <h2>What Happens at Year-End With a Fixed Fee Service</h2>
 
 <p>The process is straightforward. You send your records to the accountant after your year-end date. The accountant prepares the accounts and CT600. You review and approve them. The accountant files them with Companies House and HMRC.</p>
 
-<p>You then get a copy of the filed accounts, the CT600 receipt, and a note of any corporation tax due. The payment deadline is 9 months and 1 day after your year-end for most small companies. The filing deadline is 9 months after year-end for the CT600, and 9 months for the annual accounts at Companies House.</p>
+<p>You then get a copy of the filed accounts, the CT600 receipt, and a note of any corporation tax due. The payment deadline is 9 months and 1 day after your year-end for most small companies. The filing deadline is 12 months after year-end for the CT600, and 9 months for the annual accounts at Companies House.</p>
 
 <p>If you miss the filing deadline, Companies House charges late filing penalties starting at £150. HMRC charges interest and penalties on late corporation tax. The fixed fee service includes reminders, but the responsibility to provide your records on time is yours.</p>
 

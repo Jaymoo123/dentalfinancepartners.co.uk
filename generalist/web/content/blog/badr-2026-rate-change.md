@@ -20,9 +20,9 @@ summary: "The BADR rate rises from 14% to 18% on 6 April 2026. If you are planni
 schema: ""
 faqs:
   - question: "What is the BADR rate from April 2026?"
-    answer: "The BADR rate rises to 18% from 6 April 2026. It was 10% before 30 October 2024, then 14% from 6 April 2025. The 18% rate applies to disposals made on or after 6 April 2026."
+    answer: "The BADR rate rises to 18% from 6 April 2026. It was 10% up to 5 April 2025, then 14% from 6 April 2025 to 5 April 2026. The 18% rate applies to disposals made on or after 6 April 2026."
   - question: "Can I still get the 10% BADR rate?"
-    answer: "No. The 10% rate ended on 29 October 2024. Disposals from 30 October 2024 to 5 April 2025 were taxed at 14%. From 6 April 2025 to 5 April 2026, the rate is 14%. From 6 April 2026, it is 18%."
+    answer: "No. The 10% rate applied to disposals up to 5 April 2025. From 6 April 2025 to 5 April 2026 the rate is 14%. From 6 April 2026 it is 18%."
   - question: "Does the £1 million lifetime limit change?"
     answer: "No. The £1 million lifetime limit for BADR remains unchanged. What changes is the rate applied to gains within that limit."
   - question: "Does BADR apply to selling a rental property?"
@@ -33,7 +33,7 @@ faqs:
 
 <p>If you are considering selling your company, your shares, or your business assets, the timing of that sale matters more than ever. This article explains what the BADR 2026 rate change means, who it affects, and how to plan around it.</p>
 
-<p>As ICAEW qualified accountants, we work with business owners across the UK who are navigating these changes. This guidance is general. Your situation may differ, so speak to a qualified accountant before making any decisions.</p>
+<p>We work with business owners across the UK who are navigating these changes. This guidance is general. Your situation may differ, so speak to a qualified accountant before making any decisions.</p>
 
 <h2>What is BADR and Why Does the Rate Matter?</h2>
 
@@ -47,7 +47,7 @@ faqs:
 
 <p>The relief has a £1 million lifetime limit. Once you have used that limit, any further gains are taxed at the standard CGT rates: 18% for basic rate taxpayers and 24% for higher rate taxpayers (non-residential assets).</p>
 
-<p>The rate history matters here. Before 30 October 2024, BADR was 10%. The Autumn Budget 2024 raised it to 14% for disposals from 6 April 2025. The BADR 2026 rate change takes it to 18% from 6 April 2026. That is an 80% increase in the tax rate in under two years.</p>
+<p>The rate history matters here. Up to 5 April 2025, BADR was 10%. The Autumn Budget 2024 raised it to 14% for disposals from 6 April 2025. The BADR 2026 rate change takes it to 18% from 6 April 2026. That is an 80% increase in the tax rate in under two years.</p>
 
 <h2>Who Does the BADR 2026 Rate Change Affect?</h2>
 
@@ -151,10 +151,10 @@ faqs:
 <h2>Frequently Asked Questions</h2>
 
 <p><strong>What is the BADR rate from April 2026?</strong><br>
-The BADR rate rises to 18% from 6 April 2026. It was 10% before 30 October 2024, then 14% from 6 April 2025. The 18% rate applies to disposals made on or after 6 April 2026.</p>
+The BADR rate rises to 18% from 6 April 2026. It was 10% up to 5 April 2025, then 14% from 6 April 2025 to 5 April 2026. The 18% rate applies to disposals made on or after 6 April 2026.</p>
 
 <p><strong>Can I still get the 10% BADR rate?</strong><br>
-No. The 10% rate ended on 29 October 2024. Disposals from 30 October 2024 to 5 April 2025 were taxed at 14%. From 6 April 2025 to 5 April 2026, the rate is 14%. From 6 April 2026, it is 18%.</p>
+No. The 10% rate applied to disposals up to 5 April 2025. From 6 April 2025 to 5 April 2026 the rate is 14%. From 6 April 2026 it is 18%.</p>
 
 <p><strong>Does the £1 million lifetime limit change?</strong><br>
 No. The £1 million lifetime limit for BADR remains unchanged. What changes is the rate applied to gains within that limit.</p>
@@ -168,4 +168,4 @@ You can use BADR on each disposal as long as you meet the conditions at the time
 <p><strong>Do I need an accountant to claim BADR?</strong><br>
 You can claim BADR on your self assessment tax return yourself. But the rules are detailed and HMRC can challenge claims. An accountant can help you structure the disposal to qualify, calculate the gain correctly, and complete the return. Given the sums involved, professional advice is usually worth the cost.</p>
 
-<p>If you are planning a business exit and want to discuss the BADR 2026 rate change in your specific situation, <a href="/contact">get in touch</a>. Our ICAEW qualified team works with business owners across the UK, from Shoreditch to the Northern Quarter, helping them plan exits that minimise tax and maximise value.</p>
+<p>If you are planning a business exit and want to discuss the BADR 2026 rate change in your specific situation, <a href="/contact">get in touch</a>. Our experienced team works with business owners across the UK, from Shoreditch to the Northern Quarter, helping them plan exits that minimise tax and maximise value.</p>

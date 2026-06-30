@@ -86,7 +86,7 @@ faqs:
 <li><strong>Software compatibility.</strong> Do they support the same bookkeeping platform you use? Xero, QuickBooks, FreeAgent, Sage 50. If you are on Sage 50, many online accountants cannot handle it.</li>
 <li><strong>Receipt handling.</strong> Do they provide a scanning app and train you on it? Or do they expect you to figure it out?</li>
 <li><strong>Response time.</strong> How quickly do they reply to emails? Same day, next day, within 48 hours? For a physical business, a slow answer can hold up a supplier payment.</li>
-<li><strong>ICAEW qualification.</strong> Are they properly qualified? At Holloway Davies, we are ICAEW qualified, which means you get the same professional standards as any high street firm.</li>
+<li><strong>Professional qualification.</strong> Are they properly qualified? At Holloway Davies, our experienced team works to the same professional standards as any high street firm.</li>
 <li><strong>Fixed fee or time-based.</strong> Fixed fees are better for budgeting. Avoid firms that bill by the hour for routine work.</li>
 </ul>
 
@@ -115,7 +115,7 @@ faqs:
 
 <p>We are an online accountant UK service, so we are biased. But we are also honest. If you run a brick and mortar business with significant paper receipts and you are not comfortable with digital bookkeeping, we will tell you to find a local firm. It is not the right fit.</p>
 
-<p>If you are already digital, or willing to go digital, we can save you money and give you a better service than most local firms. Our ICAEW qualified team works with businesses across the UK, from a builders' merchant in Sheffield to a boutique retailer in Edinburgh. We know your sector.</p>
+<p>If you are already digital, or willing to go digital, we can save you money and give you a better service than most local firms. Our experienced team works with businesses across the UK, from a builders' merchant in Sheffield to a boutique retailer in Edinburgh. We know your sector.</p>
 
 <p>Read more about <a href="/fundamentals">the fundamentals of running a limited company</a> or check our <a href="/glossary">glossary of accounting terms</a> to understand the jargon before you make a decision.</p>
 

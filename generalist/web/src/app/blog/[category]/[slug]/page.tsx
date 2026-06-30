@@ -50,6 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: post.canonical,
       siteName: siteConfig.name,
       publishedTime: post.date,
+      modifiedTime: post.updatedDate ?? post.date,
       images: [
         {
           url: post.image || buildOgImageUrl(post.h1, post.category),

@@ -6,7 +6,7 @@ date: "2026-05-17"
 author: "Holloway Davies Editorial Team"
 category: "VAT and Making Tax Digital"
 metaTitle: "Making Tax Digital for Income Tax: UK Guide 2025/26"
-metaDescription: "MTD for Income Tax starts April 2026. Learn who it affects, what you must do, and how to prepare. Practical guide from ICAEW accountants."
+metaDescription: "MTD for Income Tax starts April 2026. Learn who it affects, what you must do, and how to prepare. Practical guide from specialist accountants."
 altText: "UK business owner using MTD-compatible accounting software on a laptop in a modern office"
 image: "/blog/making-tax-digital-for-income-tax-guide.jpg"
 imageCredit:
@@ -30,7 +30,7 @@ faqs:
 
 <p>Making Tax Digital for Income Tax (MTD ITSA) is the biggest change to how UK sole traders, landlords, and partnerships report their income since self-assessment was introduced. If you run a business or let property, this affects you directly. From April 2026, you will no longer file a single annual tax return. Instead, you will send HMRC quarterly digital updates and a final declaration.</p>
 
-<p>This guide is for UK business owners: sole traders, freelancers, contractors, landlords, and partnerships. It is written by ICAEW qualified accountants who work with businesses across every sector. We have helped clients from Shoreditch to the Northern Quarter, from Bristol Harbourside to Glasgow's Merchant City, prepare for this transition. This page gives you everything you need to understand MTD ITSA, assess whether it applies to you, and plan your compliance.</p>
+<p>This guide is for UK business owners: sole traders, freelancers, contractors, landlords, and partnerships. It is written by specialist accountants who work with businesses across every sector. We have helped clients from Shoreditch to the Northern Quarter, from Bristol Harbourside to Glasgow's Merchant City, prepare for this transition. This page gives you everything you need to understand MTD ITSA, assess whether it applies to you, and plan your compliance.</p>
 
 <h2>What is Making Tax Digital for Income Tax?</h2>
 

@@ -41,9 +41,9 @@ faqs:
 
 <p>The personal allowance of £12,570 comes off first. That leaves £49,430 of taxable income. The basic rate band runs from £12,571 to £50,270. You pay 20% on the first £37,700 of that. Then the remaining £11,730 sits in the higher rate band at 40%.</p>
 
-<p>Your income tax bill on the side hustle profit alone is roughly £3,720. Plus Class 4 National Insurance at 9% on profits between £12,570 and £50,270, and 2% above that. On £14,000 profit, that is another £1,260 in Class 4 NIC.</p>
+<p>Your income tax bill on the side hustle profit alone is roughly £3,720. Plus Class 4 National Insurance at 6% on profits between £12,570 and £50,270 (2025/26 rate), and 2% above that. On £14,000 profit, the Class 4 charge is approximately £86 (6% of the £1,430 above the £12,570 lower profits limit).</p>
 
-<p>Total tax and NI on the side hustle: approximately £4,980. That is a 35.6% effective rate on that £14,000.</p>
+<p>Total tax and NI on the side hustle: approximately £3,806. That is a 27.2% effective rate on that £14,000.</p>
 
 <h2>How Side Hustle Income Is Taxed Through A Limited Company</h2>
 
@@ -95,7 +95,7 @@ faqs:
 
 <h2>Salary Versus Dividends For The Side Hustle Director</h2>
 
-<p>Many side hustle directors take a small salary to use their personal allowance. The logic is standard: salary is deductible against corporation tax, and if it stays below the primary NI threshold (£12,570 in 2025/26), no employee or employer NI is due.</p>
+<p>Many side hustle directors take a small salary to use their personal allowance. The logic is standard: salary is deductible against corporation tax, and a salary up to £12,570 incurs no employee NIC, but employer (secondary) NIC at 15% still applies on earnings above the £5,000 secondary threshold. A £12,570 salary costs approximately £1,136 in employer NIC (15% of £7,570), and a single-director company cannot claim the Employment Allowance.</p>
 
 <p>But here is the trap. If you already earn £48,000 from your day job, your personal allowance is already fully used. A salary from your side hustle company is still deductible against corporation tax, but it is taxed as employment income at your marginal rate.</p>
 

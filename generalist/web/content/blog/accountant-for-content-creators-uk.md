@@ -6,7 +6,7 @@ date: "2026-05-17"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
-metaTitle: "Accountant for Content Creators UK | Holloway Davies"
+metaTitle: "Accountant for Content Creators UK"
 metaDescription: "Freelance income, ad revenue, sponsorships and expenses. We explain what a UK accountant for content creators handles and why specialist knowledge matters."
 altText: "UK accountant reviewing tax documents for a content creator client in a modern office"
 image: "/blog/accountant-for-content-creators-uk.jpg"
@@ -35,7 +35,7 @@ faqs:
 
 <p>That is why finding an <strong>accountant for content creators</strong> who understands these specific revenue types, and the expenses that go with them, matters. A general practice accountant might miss deductions specific to your industry. A specialist will not.</p>
 
-<p>Our ICAEW qualified team at Holloway Davies works with creators across the UK, from solo YouTubers in Manchester to multi-channel production companies in London. This guide covers what you need to know, and what to look for in an accountant.</p>
+<p>Our experienced team at Holloway Davies works with creators across the UK, from solo YouTubers in Manchester to multi-channel production companies in London. This guide covers what you need to know, and what to look for in an accountant.</p>
 
 <h2>Why Content Creators Have Unique Tax Needs</h2>
 
@@ -95,7 +95,7 @@ faqs:
 
 <p>Once your profits consistently exceed £50,000, a limited company starts to look attractive. Here is why.</p>
 
-<p>As a limited company, you pay corporation tax at 19% on profits up to £50,000, then marginal relief up to £250,000, then 25% above that. You then pay yourself a salary up to the personal allowance (£12,570) and dividends from the remaining profits. Dividend tax rates are 8.75% (basic rate), 33.75% (higher rate) and 39.35% (additional rate). The total tax on company profits distributed as dividends is typically lower than income tax and NI on self-employed profits at the same level.</p>
+<p>As a limited company, you pay corporation tax at 19% on profits up to £50,000, then marginal relief up to £250,000, then 25% above that. You then pay yourself a salary up to the personal allowance (£12,570) and dividends from the remaining profits. From 6 April 2026 (2026/27), dividend tax rates are 10.75% (basic rate), 35.75% (higher rate) and 39.35% (additional rate, unchanged). The 2025/26 rates were 8.75% (basic) and 33.75% (higher). The total tax on company profits distributed as dividends is typically lower than income tax and NI on self-employed profits at the same level.</p>
 
 <p>For example, a creator making £80,000 profit as a sole trader pays roughly £21,000 in income tax and Class 4 NI in 2025/26. The same profit through a limited company, extracted as £12,570 salary and £67,430 dividends, costs roughly £16,500 in corporation tax and personal tax combined. That is a saving of around £4,500.</p>
 
@@ -123,7 +123,7 @@ faqs:
 <li><strong>Do they advise on structure?</strong> A good accountant will not just file your return. They will tell you whether you should be a limited company, when to register for VAT, how to pay yourself and whether you qualify for R&D tax credits if you develop your own software or tools.</li>
 </ul>
 
-<p>At Holloway Davies, we are ICAEW qualified and we work with content creators across the UK. We handle everything from sole trader registration to complex multi-income limited company structures. If you want a second opinion on your current setup, or you are just starting out and want to get the structure right from day one, <a href="/contact">get in touch</a>.</p>
+<p>At Holloway Davies, we work with content creators across the UK. We handle everything from sole trader registration to complex multi-income limited company structures. If you want a second opinion on your current setup, or you are just starting out and want to get the structure right from day one, <a href="/contact">get in touch</a>.</p>
 
 <h2>Final Thoughts</h2>
 

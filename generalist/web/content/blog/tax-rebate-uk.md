@@ -17,7 +17,7 @@ faqs:
 - question: How do I know if I am owed a tax rebate?
   answer: Check your tax code on your payslip or personal tax account. If it is wrong, you are likely overpaying. Also review your self assessment returns for missed allowable expenses. If you have made personal pension contributions as a higher rate taxpayer, you are almost certainly owed relief. A quick review by an accountant usually confirms it within minutes.
 - question: How far back can I claim a tax rebate?
-  answer: You can claim for the current tax year and up to four previous tax years. For example, by 5 April 2026 you can claim for 2020/21 through 2025/26. After that, the 2020/21 claim window closes permanently. HMRC will not accept claims older than four years unless there is a very specific reason, such as official error.
+  answer: You can claim for the current tax year and up to four previous tax years. For example, by 5 April 2026 the claimable years are 2021/22 (deadline that day), 2022/23, 2023/24, and 2024/25. The 2020/21 window closed permanently on 5 April 2025. HMRC will not accept claims older than four years unless there is a very specific reason, such as official error.
 - question: Do I need to file a self assessment return to claim a rebate?
   answer: Not always. If you are employed only and the overpayment is due to a wrong tax code, you can correct it through your personal tax account without filing a full return. But if you are self employed, a company director, or have untaxed income over £1,000, you must file a self assessment return to claim any rebate.
 - question: How long does a tax rebate take to arrive?
@@ -39,7 +39,7 @@ imageCredit:
 
 <p>If you are a sole trader, a limited company director, or a contractor working through your own Ltd, the chances of being owed a rebate are higher. Your income is not a fixed salary. It fluctuates. HMRC's default assumptions often overestimate what you owe.</p>
 
-<p>As ICAEW qualified accountants, we see this regularly. A client's self assessment return comes back showing a refund of £2,400. The client had no idea they were due it. They had simply not claimed the expenses they were entitled to.</p>
+<p>We see this regularly. A client's self assessment return comes back showing a refund of £2,400. The client had no idea they were due it. They had simply not claimed the expenses they were entitled to.</p>
 
 <h2>Common Reasons You Might Be Owed a Tax Rebate</h2>
 
@@ -63,7 +63,7 @@ imageCredit:
 
 <ul>
 <li>Use of home as office (simplified flat rate or actual costs).</li>
-<li>Business mileage at 45p per mile for the first 10,000 miles, then 25p per mile.</li>
+<li>Business mileage at 55p per mile for the first 10,000 miles (45p in 2025/26 and earlier years), then 25p per mile.</li>
 <li>Professional subscriptions and trade body fees.</li>
 <li>Accountancy fees (including ours).</li>
 <li>Training directly related to your current business.</li>
@@ -102,7 +102,7 @@ imageCredit:
 
 <h3>Step 3: Claim for Previous Years</h3>
 
-<p>You can claim a rebate for the current tax year and up to four previous years. The deadline for claiming a 2020/21 rebate is 5 April 2026. After that, the money is lost.</p>
+<p>You can claim a rebate for the current tax year and up to four previous years. The deadline for claiming a 2021/22 rebate is 5 April 2026. After that, the money is permanently lost. The 2020/21 window has already closed (it closed on 5 April 2025).</p>
 
 <p>If you have not filed returns for those years, you will need to do so. HMRC will accept late returns for the purpose of claiming a refund, but you must have a reasonable excuse for the delay.</p>
 
@@ -124,7 +124,7 @@ imageCredit:
 
 <p>At Holloway Davies, we handle tax rebate claims as part of our standard <a href="/services">accounting services</a>. We review your income, expenses, and tax position for the current year and up to four prior years. If we find a refund is due, we prepare the return and submit it.</p>
 
-<p>Our <a href="/about">ICAEW qualified team</a> works with sole traders, contractors, and limited companies across every sector. We know what HMRC accepts and what triggers an enquiry. We also help you structure your affairs to minimise overpayments going forward.</p>
+<p>Our <a href="/about">experienced team</a> works with sole traders, contractors, and limited companies across every sector. We know what HMRC accepts and what triggers an enquiry. We also help you structure your affairs to minimise overpayments going forward.</p>
 
 <p>If you are not sure whether you are owed a rebate, start with our <a href="/calculators">online calculators</a> or get in touch through our <a href="/contact">contact page</a>. A quick review of your tax code and recent returns usually tells us within ten minutes whether a claim is worth pursuing.</p>
 

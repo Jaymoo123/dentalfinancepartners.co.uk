@@ -19,7 +19,7 @@ faqs:
 - question: Can I claim the AIA on a second-hand van?
   answer: Yes. The AIA covers both new and second-hand plant and machinery, as long as the asset is unused by your business before purchase. A second-hand van used for your trade qualifies for 100% relief up to the £1m limit. Keep the purchase invoice as evidence. The van must be used in your business, not for private use.
 - question: Does the AIA apply to cars?
-  answer: No. Most cars are excluded from the AIA. The only exception is new zero-emission cars (electric), which qualify for a 100% first-year allowance instead. For all other cars, you claim writing down allowances at 18% or 6% per year depending on CO2 emissions. Pool cars used by multiple employees may qualify differently.
+  answer: No. Most cars are excluded from the AIA. The only exception is new zero-emission cars (electric), which qualify for a 100% first-year allowance instead. For all other cars, you claim writing down allowances at 18% (reducing to 14% from April 2026 under FA 2026 s.28) or 6% per year depending on CO2 emissions. Pool cars used by multiple employees may qualify differently.
 - question: How do I claim the AIA on my corporation tax return?
   answer: You claim the AIA by including the qualifying expenditure in your capital allowances computation, which forms part of your CT600 corporation tax return. Most accounting software handles this if you tag assets correctly. Your accountant will prepare the capital allowances schedule. Keep purchase invoices and delivery notes for at least 6 years after the year-end.
 dateModified: '2026-05-20'
@@ -39,7 +39,7 @@ imageCredit:
 
 <h2>What Is the Annual Investment Allowance?</h2>
 
-<p>The AIA lets you deduct the full cost of qualifying plant and machinery from your taxable profits immediately. Instead of spreading the cost over several years through standard capital allowances (writing down allowances at 18% or 6% per year), you get 100% relief in one go.</p>
+<p>The AIA lets you deduct the full cost of qualifying plant and machinery from your taxable profits immediately. Instead of spreading the cost over several years through standard capital allowances (writing down allowances at 18% or 6% per year, though the main-rate 18% falls to 14% from 1 April 2026 for CT / 6 April 2026 for IT under FA 2026 s.28), you get 100% relief in one go.</p>
 
 <p>For a limited company paying 19% or 25% corporation tax, that means a £100,000 piece of equipment saves you between £19,000 and £25,000 in tax in the same accounting period.</p>
 
@@ -101,7 +101,7 @@ imageCredit:
 
 <p><strong>Step 1: Identify qualifying expenditure.</strong> Go through your asset register or purchase invoices for the accounting period. Identify all plant and machinery purchases that qualify for the AIA. Exclude cars, buildings, and other non-qualifying items.</p>
 
-<p><strong>Step 2: Calculate the AIA claim.</strong> Total up the qualifying expenditure. If it is £1m or less, you can claim 100% relief on the full amount. If it exceeds £1m, the first £1m gets 100% relief. The excess goes into the main pool or special rate pool for writing down allowances (18% or 6% per year).</p>
+<p><strong>Step 2: Calculate the AIA claim.</strong> Total up the qualifying expenditure. If it is £1m or less, you can claim 100% relief on the full amount. If it exceeds £1m, the first £1m gets 100% relief. The excess goes into the main pool or special rate pool for writing down allowances (18% or 6% per year; note the main-rate 18% reduces to 14% from 1 April 2026 for CT / 6 April 2026 for IT under FA 2026 s.28).</p>
 
 <p><strong>Step 3: Enter the claim on your tax return.</strong> For a limited company, the capital allowances go on the corporation tax return. Most accounting software (Xero, FreeAgent, QuickBooks) handles this automatically if you tag assets correctly. Your accountant will prepare the capital allowances schedule as part of the year-end accounts.</p>
 
@@ -168,7 +168,7 @@ imageCredit:
 
 <p>If your qualifying expenditure exceeds £1m in a 12-month period, the first £1m gets 100% relief. The excess goes into the main pool or special rate pool and attracts writing down allowances at the appropriate rate.</p>
 
-<p>For main pool assets, that is 18% per year on a reducing balance basis. For special rate pool assets, it is 6% per year.</p>
+<p>For main pool assets, that is 18% per year on a reducing balance basis (reducing to 14% from 1 April 2026 for CT / 6 April 2026 for IT per FA 2026 s.28). For special rate pool assets, it is 6% per year.</p>
 
 <p>If you are a limited company, Full Expensing may cover the excess on new assets. But for second-hand assets above £1m, you are stuck with writing down allowances.</p>
 
@@ -176,7 +176,7 @@ imageCredit:
 
 <h2>How Holloway Davies Can Help</h2>
 
-<p>As ICAEW qualified accountants, we help businesses across the UK claim the right capital allowances, including the Annual Investment Allowance. We review your asset purchases, prepare the capital allowances computation, and ensure your corporation tax return reflects the correct relief.</p>
+<p>We help businesses across the UK claim the right capital allowances, including the Annual Investment Allowance. We review your asset purchases, prepare the capital allowances computation, and ensure your corporation tax return reflects the correct relief.</p>
 
 <p>If you are planning significant capital expenditure in 2025/26, we can model the tax impact and help you time purchases for maximum benefit.</p>
 

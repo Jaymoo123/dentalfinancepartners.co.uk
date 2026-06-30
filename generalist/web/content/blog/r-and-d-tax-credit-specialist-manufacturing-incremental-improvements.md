@@ -33,7 +33,7 @@ faqs:
 
 <p>That assumption costs manufacturing businesses millions in unclaimed tax relief every year. The reality is that the UK's R&D tax credit rules explicitly cover incremental improvements to production methods, materials, and processes. You do not need a breakthrough. You need to have resolved a technical uncertainty that a competent professional in your field could not easily work out.</p>
 
-<p>As <a href="/about">ICAEW qualified accountants</a> working with manufacturers across the UK, we see claims succeed for businesses that made what they thought were routine production line tweaks. The key is understanding where the line falls between standard development work and qualifying R&D. This article explains that line, with real manufacturing examples.</p>
+<p>Working with manufacturers across the UK, we see claims succeed for businesses that made what they thought were routine production line tweaks. The key is understanding where the line falls between standard development work and qualifying R&D. This article explains that line, with real manufacturing examples.</p>
 
 <h2>What the Rules Actually Say</h2>
 
@@ -116,9 +116,9 @@ faqs:
 
 <p>For a profitable manufacturing company, the benefit is a reduction in your corporation tax liability. The amount depends on your qualifying R&D spend and your company's size.</p>
 
-<p>Under the merged scheme (post-1 April 2024), the payable credit rate for loss-making R&D-intensive companies (ERIS) is 14.5%. For profitable companies, the benefit comes through an enhanced deduction that reduces taxable profits. The effective saving is typically 19% to 25% of your qualifying R&D spend, depending on your corporation tax rate.</p>
+<p>Under the merged scheme (post-1 April 2024), the payable credit rate for loss-making R&D-intensive companies (ERIS) is 14.5%. For profitable companies, the benefit comes through a 20% above-the-line expenditure credit (RDEC). This credit is taxable income, so it offsets the corporation tax liability. After accounting for the tax on the credit itself, the net saving is approximately 15% to 16% of your qualifying R&D spend, depending on your corporation tax rate (around 16% at the 19% small-profits rate and around 15% at the 25% main rate).</p>
 
-<p>For a company spending £100,000 on qualifying R&D, the corporation tax saving is roughly £19,000 to £25,000. That is real money that can fund further innovation or improve your bottom line.</p>
+<p>For a company spending £100,000 on qualifying R&D, the corporation tax saving is roughly £15,000 to £16,000. That is real money that can fund further innovation or improve your bottom line.</p>
 
 <h2>Common Questions from Manufacturing Directors</h2>
 
@@ -140,7 +140,7 @@ faqs:
 
 <p>An R&D tax credit specialist who understands manufacturing can make the difference between a successful claim and a rejected one. They know what evidence HMRC expects, how to write a technical narrative that passes review, and how to identify qualifying projects you might have overlooked.</p>
 
-<p>At Holloway Davies, our ICAEW qualified team has experience across manufacturing sectors: precision engineering, packaging, metal finishing, plastics, food production, electronics assembly, and more. We see qualifying R&D in production lines every week. We also see businesses that missed claims because they thought their work was too routine.</p>
+<p>At Holloway Davies, our experienced team has experience across manufacturing sectors: precision engineering, packaging, metal finishing, plastics, food production, electronics assembly, and more. We see qualifying R&D in production lines every week. We also see businesses that missed claims because they thought their work was too routine.</p>
 
 <p>If you are a manufacturing director who has dismissed R&D tax credits as not relevant to your business, it is worth a second look. The cost is a conversation. The potential benefit is tens of thousands of pounds in tax relief you are already entitled to.</p>
 

@@ -7,11 +7,11 @@ generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Bookkeeping and Compliance
 metaTitle: 'Dentistry Compliance: A Guide for UK Dental Practices'
-metaDescription: Understand dentistry compliance for UK dental practices. Covers CQC, HMRC, VAT, payroll, and partnership rules. Practical guidance from ICAEW accountants.
+metaDescription: Understand dentistry compliance for UK dental practices. Covers CQC, HMRC, VAT, payroll, and partnership rules. Practical guidance from specialist accountants.
 altText: Dentist in a UK dental practice reviewing compliance paperwork with a dental nurse in the background
 image: https://images.pexels.com/photos/6627282/pexels-photo-6627282.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'Dentistry Compliance: A Complete Guide for UK Dental Practices'
-summary: A practical guide to dentistry compliance for UK dental practices. Covers CQC registration, HMRC tax obligations, VAT on dental services, associate vs. partnership structures, and payroll rules. Written by ICAEW-qualified accountants for practice owners.
+summary: A practical guide to dentistry compliance for UK dental practices. Covers CQC registration, HMRC tax obligations, VAT on dental services, associate vs. partnership structures, and payroll rules. Written by our specialist accountants for practice owners.
 schema: ''
 faqs:
 - question: Do dental practices need to register with the CQC?
@@ -37,7 +37,7 @@ imageCredit:
 
 <p>Get any of these wrong and you face fines, tax bills you did not budget for, or in the worst case, losing your registration to practise. This guide walks through the key compliance areas for UK dental practices. We cover what you need to do, when you need to do it, and where practices most often trip up.</p>
 
-<p>As ICAEW qualified accountants, we work with dental practices across the UK. The advice here is general guidance. Your specific situation may differ, so speak to a qualified accountant who knows the dental sector.</p>
+<p>We work with dental practices across the UK. The advice here is general guidance. Your specific situation may differ, so speak to a qualified accountant who knows the dental sector.</p>
 
 <h2>CQC Registration and Ongoing Compliance</h2>
 
@@ -70,7 +70,7 @@ imageCredit:
 
 <h2>Associate Dentists: Employment Status and IR35</h2>
 
-<p>Most associate dentists work under a contract for services, not a contract of employment. They are self-employed for tax purposes. They register for self assessment, file their own tax returns, and pay their own Class 2 and Class 4 National Insurance.</p>
+<p>Most associate dentists work under a contract for services, not a contract of employment. They are self-employed for tax purposes. They register for self assessment, file their own tax returns, and pay their own Class 4 National Insurance (Class 2 NIC was abolished from 6 April 2024).</p>
 
 <p>The practice does not operate PAYE on associate payments. But you must be careful. HMRC has challenged associate status in the past. If the reality of the working relationship looks more like employment, HMRC can reclassify the associate as an employee and demand unpaid tax and NI from the practice.</p>
 
@@ -103,7 +103,7 @@ imageCredit:
 
 <p>You must provide each employee with a payslip and a P60 at the end of the tax year. You must also deduct PAYE and National Insurance and pay these to HMRC monthly or quarterly depending on your payment schedule.</p>
 
-<p>Employer's National Insurance is 13.8% on earnings above the secondary threshold, which is £9,100 for 2025/26. If your total employer NI bill is under £10,500, you can claim the Employment Allowance to reduce it. Many dental practices qualify.</p>
+<p>Employer's National Insurance is 15% on earnings above the secondary threshold of £5,000 (from 6 April 2025, continuing into 2026/27). If your total employer NI bill is under £10,500, you can claim the Employment Allowance to reduce it. Many dental practices qualify.</p>
 
 <p>For associates paid via the practice, you do not operate payroll. But you must keep accurate records of all payments made to associates. HMRC can request these records in a compliance check. Keep a schedule of associate payments, their UTR numbers, and copies of their invoices to the practice.</p>
 
@@ -113,7 +113,7 @@ imageCredit:
 
 <p>Your company must file a corporation tax return (CT600) within 12 months of the year-end. But you must pay the tax due within 9 months and 1 day of the year-end. Late payment interest runs from the due date, not the filing date.</p>
 
-<p>Directors of dental companies typically take a small salary and the rest as dividends. The salary should be at least the National Insurance primary threshold (£12,570 for 2025/26) to build qualifying years for state pension. Dividends are then taxed at 8.75% for basic rate taxpayers, 33.75% for higher rate, and 39.35% for additional rate. The dividend allowance is £500 per year.</p>
+<p>Directors of dental companies typically take a small salary and the rest as dividends. The salary should be at least the National Insurance primary threshold (£12,570 for 2025/26) to build qualifying years for state pension. Dividends are then taxed at 10.75% for basic rate taxpayers, 35.75% for higher rate, and 39.35% for additional rate (2026/27 rates under FA 2026; 8.75%/33.75% applied in 2025/26). The dividend allowance is £500 per year.</p>
 
 <p>If you have multiple directors or shareholders, consider using alphabet shares to distribute dividends flexibly. This is common in husband-and-wife dental practices where one partner works fewer hours but still wants to receive income from the company.</p>
 
@@ -129,7 +129,7 @@ imageCredit:
 
 <p>We see the same issues come up repeatedly across UK dental practices. Here are the most common ones.</p>
 
-<p><strong>Mixing personal and practice finances.</strong> If you are a sole trader or partnership, you can draw money from the practice bank account for personal use. But you must keep clear records of drawings and capital introduced. For limited companies, mixing personal and business transactions creates director's loan account problems and can trigger S455 tax at 33.75%.</p>
+<p><strong>Mixing personal and practice finances.</strong> If you are a sole trader or partnership, you can draw money from the practice bank account for personal use. But you must keep clear records of drawings and capital introduced. For limited companies, mixing personal and business transactions creates director's loan account problems and can trigger S455 tax at 33.75% for loans made in 2025/26, rising to 35.75% for loans made on or after 6 April 2026.</p>
 
 <p><strong>Not registering for VAT on retail sales.</strong> A practice selling £95,000 of electric toothbrushes and whitening kits over 12 months must register for VAT, even if the dental services are exempt. The £90,000 threshold applies to taxable supplies only, but once registered, you must account for VAT on all taxable supplies.</p>
 

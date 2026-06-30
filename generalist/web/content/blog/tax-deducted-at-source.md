@@ -15,11 +15,11 @@ summary: Tax deducted at source (TDS) means income tax is taken from certain pay
 schema: ''
 faqs:
 - question: What is tax deducted at source?
-  answer: Tax deducted at source (TDS) is when income tax is removed from a payment before you receive it. The payer deducts the tax and sends it to HMRC. Common examples include PAYE on employment income, basic rate tax on savings interest, and withholding tax on rental income paid to non-resident landlords. You receive the net amount after tax.
+  answer: Tax deducted at source (TDS) is when income tax is removed from a payment before you receive it. The payer deducts the tax and sends it to HMRC. Common examples include PAYE on employment income and withholding tax on rental income paid to non-resident landlords. Banks and building societies have paid savings interest gross since 6 April 2016, so TDS no longer applies to standard savings accounts. You receive the net amount after tax where TDS applies.
 - question: Can I reclaim tax deducted at source on savings interest?
-  answer: Yes, if you are a non-taxpayer or if too much tax was deducted. Non-taxpayers can register to receive interest gross using form R85. If tax was already deducted, you can reclaim it using form R40 or through your self assessment return. Basic rate taxpayers with savings income within their personal savings allowance do not need to reclaim.
+  answer: Banks pay savings interest gross automatically since 6 April 2016, so there is no tax deduction at source to reclaim on standard savings accounts. If HMRC has collected tax on your savings income through a coding adjustment or self assessment in error, you can reclaim via form R40 or your self assessment return. For other income types where TDS applies (such as PAYE or NRL scheme deductions), reclaim through self assessment or by contacting HMRC.
 - question: Does tax deducted at source apply to dividends?
-  answer: No. UK companies do not deduct tax at source on dividends. Since April 2016, the dividend tax credit was abolished. You report dividend income on your self assessment and pay tax at your marginal rate (8.75%, 33.75%, or 39.35%) on amounts above the £500 dividend allowance. The company pays the dividend gross.
+  answer: 'No. UK companies do not deduct tax at source on dividends. Since April 2016, the dividend tax credit was abolished. You report dividend income on your self assessment and pay tax at your applicable rate: 10.75% (basic), 35.75% (higher), or 39.35% (additional) from 6 April 2026 (2026/27 rates) on amounts above the £500 dividend allowance. The company pays the dividend gross.'
 - question: What happens if my employer deducts too much tax through PAYE?
   answer: If your employer deducts too much tax, HMRC will usually correct it by adjusting your tax code in a future pay period. If the overpayment is significant or occurs near the end of the tax year, you can claim a refund by contacting HMRC or filing a self assessment return. Keep your P60 and P45 as evidence of the amounts deducted.
 dateModified: '2026-05-20'
@@ -39,7 +39,7 @@ imageCredit:
 
 <p>This system applies to several common income types in the UK: employment earnings through PAYE, interest on savings, dividends, rental income paid to non-resident landlords, and gift aid donations to charities. Understanding how TDS works helps you avoid overpaying tax and ensures you claim back what you are owed.</p>
 
-<p>As ICAEW qualified accountants, we deal with TDS regularly across our client base. This guide explains the key areas where tax deducted at source affects UK taxpayers, what your obligations are, and when you can reclaim.</p>
+<p>We deal with TDS regularly across our client base. This guide explains the key areas where tax deducted at source affects UK taxpayers, what your obligations are, and when you can reclaim.</p>
 
 <h2>How Tax Deducted at Source Works on Employment Income</h2>
 
@@ -53,9 +53,9 @@ imageCredit:
 
 <h2>Tax Deducted at Source on Interest and Dividends</h2>
 
-<p>Banks and building societies deduct basic rate tax (20%) from interest paid on savings accounts before the interest reaches you. This is a standard example of tax deducted at source. If you are a non-taxpayer, you can register to receive interest gross (without deduction) using form R85.</p>
+<p>Banks and building societies have paid savings interest gross since 6 April 2016, when the composite rate system was abolished. No tax is deducted at source on bank or building society savings accounts. You receive the full interest amount. If your savings interest exceeds your Personal Savings Allowance (£1,000 for basic-rate taxpayers, £500 for higher-rate taxpayers, nil for additional-rate taxpayers), the tax on the excess is settled via self assessment or an adjustment to your PAYE coding notice.</p>
 
-<p>Dividends from UK companies are paid with a 8.75% notional tax credit for basic rate taxpayers, but the mechanics changed in April 2016. The dividend allowance now stands at £500 (2025/26). Dividends above that are taxed at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate). The company does not deduct tax at source on dividends. You report them on your self assessment.</p>
+<p>UK companies do not deduct tax at source on dividends. Dividends are paid gross. The dividend allowance is £500. Dividend income above that is taxed at your applicable rate: 10.75% (basic), 35.75% (higher), or 39.35% (additional) from 6 April 2026 (2026/27 rates). You report dividend income on self assessment.</p>
 
 <p>Part 15 of the Income Tax Act 2007 imposes a duty to deduct sums representing income tax from certain payments, such as yearly interest <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. This means that when a company or partnership pays yearly interest to an individual, it must deduct basic rate tax before making the payment.</p>
 
@@ -96,7 +96,7 @@ imageCredit:
 <p>If you have had too much tax deducted at source, you can reclaim it. Common scenarios include:</p>
 
 <ul>
-<li>You are a non-taxpayer but had basic rate tax deducted from savings interest.</li>
+<li>You received interest subject to deduction of income tax at source under ITA 2007 Part 15 (for example, yearly interest from a company or partnership) but owe tax at a lower rate than was deducted.</li>
 <li>You are a basic rate taxpayer but had higher rate tax deducted from a pension or employment income due to an incorrect tax code.</li>
 <li>You are a non-resident landlord who registered for the NRL Scheme after tax was deducted.</li>
 <li>You are a higher rate taxpayer who made gift aid donations and need to claim the additional relief.</li>
@@ -114,7 +114,7 @@ imageCredit:
 
 <p>For partnerships, remember that the partnership itself is the 'person' for TDS purposes <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. If your partnership receives annual payments or interest, check whether the payer should be deducting tax. If they are not, you may need to account for it.</p>
 
-<p>For sole traders and freelancers, the main TDS issue is usually on savings interest or gift aid. If you are a non-taxpayer, register to receive interest gross. If you make gift aid donations, ensure you claim the higher rate relief if applicable.</p>
+<p>For sole traders and freelancers, the main TDS issues are gift aid and, where you receive yearly interest from a company or partnership, any deduction made under ITA 2007 Part 15. Bank savings interest has been paid gross since 2016 and no registration is needed. If you make gift aid donations, ensure you claim the higher rate relief if applicable.</p>
 
 <p>If you employ staff, you must operate PAYE and deduct tax at source from their wages. This is a legal requirement. You need to register as an employer with HMRC, set up a payroll system, and submit RTI (Real Time Information) returns on or before each pay day.</p>
 
@@ -130,7 +130,7 @@ imageCredit:
 
 <h3>Can I avoid tax deducted at source on savings interest?</h3>
 
-<p>If you are a non-taxpayer, you can register to receive interest gross using form R85. If you are a taxpayer, you cannot avoid it entirely, but your personal savings allowance (up to £1,000 for basic rate taxpayers, £500 for higher rate) means you may not owe additional tax on the interest.</p>
+<p>Banks and building societies pay savings interest gross to everyone automatically, so there is no tax deduction at source to avoid. Your Personal Savings Allowance (£1,000 for basic-rate taxpayers, £500 for higher-rate taxpayers, nil for additional-rate taxpayers) means most savers owe no tax on interest at all. If your interest exceeds the allowance, the liability is collected via self assessment or a PAYE coding adjustment. If you believe HMRC has overcollected tax on your savings income, you can reclaim using form R40.</p>
 
 <h3>What happens if my employer deducts too much tax?</h3>
 

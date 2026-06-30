@@ -26,7 +26,7 @@ faqs:
   - question: "What happens if my turnover goes over £150,000 while using the cash basis?"
     answer: "You must switch to accruals accounting from the start of the next tax year. You will need to make an adjustment to avoid double-counting income or missing expenses. HMRC provides guidance on the computational adjustment. If this happens, it is sensible to speak to an accountant to handle the transition correctly."
   - question: "Can I claim mileage instead of capital allowances under the cash basis?"
-    answer: "Yes. Under the cash basis, you cannot claim capital allowances on cars. Instead, you use HMRC's approved mileage rates. For 2025/26, that is 45p per mile for the first 10,000 business miles and 25p per mile thereafter. You can still claim capital allowances on other assets like computers and tools, deducting the full cost in the year of purchase."
+    answer: "Yes. Under the cash basis, you cannot claim capital allowances on cars. Instead, you use HMRC's approved mileage rates. From 2026/27 the rate is 55p per mile for the first 10,000 business miles and 25p per mile thereafter (45p applied up to 2025/26). You can still claim capital allowances on other assets like computers and tools, deducting the full cost in the year of purchase."
 ---
 
 <h2>What Is the Cash Basis for Sole Traders?</h2>
@@ -141,7 +141,7 @@ faqs:
 
 <p>That is simpler but can distort your profit in the year of a large purchase. If you buy a van for £25,000, under the cash basis you deduct the full £25,000 in that year. Under accruals, you would claim capital allowances (typically 18% or 6% per year on a reducing balance basis) and spread the deduction over several years.</p>
 
-<p>There are exceptions. Cars are treated differently under the cash basis. You can only deduct the business proportion of motoring costs using HMRC's approved mileage rates (45p per mile for the first 10,000 miles, 25p thereafter). You cannot deduct the full cost of a car under the cash basis.</p>
+<p>There are exceptions. Cars are treated differently under the cash basis. You can only deduct the business proportion of motoring costs using HMRC's approved mileage rates (55p per mile for the first 10,000 business miles from 2026/27; 45p applied up to 2025/26; 25p per mile thereafter). You cannot deduct the full cost of a car under the cash basis.</p>
 
 <p>If you use the cash basis and buy a car, you claim mileage rather than capital allowances. That is often simpler but may be less generous if you do high mileage.</p>
 
@@ -181,7 +181,7 @@ faqs:
 
 <p>Many sole traders start on the cash basis and switch to accruals as their business grows. That is a sensible approach. The cash basis keeps your tax return simple in the early years. Once your turnover approaches £150,000 or you need better financial data, you switch.</p>
 
-<p>As ICAEW qualified accountants, we see both methods used successfully across every sector. A freelance graphic designer in Shoreditch may prefer the cash basis for its simplicity. A management consultant in Canary Wharf with six-figure invoices may need accruals for accurate financial reporting. Both are valid.</p>
+<p>We see both methods used successfully across every sector. A freelance graphic designer in Shoreditch may prefer the cash basis for its simplicity. A management consultant in Canary Wharf with six-figure invoices may need accruals for accurate financial reporting. Both are valid.</p>
 
 <p>If you are unsure which method suits your business, speak to an accountant. The choice affects your tax liability, your record-keeping burden, and your financial visibility. It is worth getting right.</p>
 

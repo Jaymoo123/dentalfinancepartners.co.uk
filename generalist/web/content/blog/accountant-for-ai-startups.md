@@ -33,7 +33,7 @@ faqs:
 
 <p>That is why you need an <strong>accountant for AI startups</strong> who understands how your business actually works. Not a general practice accountant who files a few self assessments and calls it a day. You need someone who knows the specific tax reliefs, accounting treatments, and compliance obligations that apply to machine learning, generative AI, and SaaS businesses.</p>
 
-<p>At Holloway Davies, we are ICAEW qualified accountants who work with AI startups across the UK: from a two-person NLP consultancy in Edinburgh's Leith to a 15-person computer vision company in Manchester's Northern Quarter. This guide covers what to look for, what to avoid, and how to get the most from your accountant.</p>
+<p>At Holloway Davies, we work with AI startups across the UK: from a two-person NLP consultancy in Edinburgh's Leith to a 15-person computer vision company in Manchester's Northern Quarter. This guide covers what to look for, what to avoid, and how to get the most from your accountant.</p>
 
 <h2>Why AI Startups Need Specialist Accounting Support</h2>
 
@@ -77,7 +77,7 @@ faqs:
 
 <p>Your accountant should be able to walk you through the R&D claim process step by step. They should know about the Additional Information Form (AIF) that must be submitted before the claim, the technical narrative requirements, and the cost breakdown by category. They should also be realistic about HMRC enquiry risk and how to mitigate it with proper documentation.</p>
 
-<p>At Holloway Davies, we prepare R&D claims for AI and software companies as part of our core service. We do not outsource the technical narrative to a third party. Our ICAEW qualified team writes it based on our conversations with your developers.</p>
+<p>At Holloway Davies, we prepare R&D claims for AI and software companies as part of our core service. We do not outsource the technical narrative to a third party. Our experienced team writes it based on our conversations with your developers.</p>
 
 <h3>Software and Cloud Accounting Expertise</h3>
 
@@ -167,6 +167,6 @@ faqs:
 
 <p>If you are an AI startup founder looking for an <strong>accountant for AI startups</strong> who understands R&D tax credits, investor reporting, and the specific challenges of building a technology business, we would like to hear from you.</p>
 
-<p>We work with companies across the UK, from a computer vision startup in Bristol's Harbourside to a generative AI consultancy in Glasgow's Merchant City. We are ICAEW qualified, practical, and focused on helping you build a financially sound business.</p>
+<p>We work with companies across the UK, from a computer vision startup in Bristol's Harbourside to a generative AI consultancy in Glasgow's Merchant City. We are practical and focused on helping you build a financially sound business.</p>
 
 <p>Call us, email us, or <a href="/contact">fill in the contact form</a>. We will arrange a 30-minute call to understand your business and explain how we can help.</p>

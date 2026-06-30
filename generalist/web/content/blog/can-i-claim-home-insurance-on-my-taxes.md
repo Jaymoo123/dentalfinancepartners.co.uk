@@ -174,7 +174,7 @@ faqs:
 <li>You are unsure whether your home insurance policy covers business use.</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we deal with these questions regularly. The cost of a short consultation is usually recovered by getting the claim right.</p>
+<p>We deal with these questions regularly. The cost of a short consultation is usually recovered by getting the claim right.</p>
 
 <h2>Final Thoughts</h2>
 

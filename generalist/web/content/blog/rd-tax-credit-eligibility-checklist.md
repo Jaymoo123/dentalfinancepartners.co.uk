@@ -35,7 +35,7 @@ faqs:
 
 <p>This R&D tax credit eligibility checklist walks through the core conditions, the qualifying costs, and the common pitfalls that trip up otherwise valid claims. It covers the merged R&D scheme that applies to accounting periods starting on or after 1 April 2024, plus the enhanced R&D Intensive Scheme (ERIS) for loss-making companies where R&D spend exceeds 30% of total costs.</p>
 
-<p>We are ICAEW qualified accountants based in the UK. We deal with R&D claims across sectors: software consultancies in Manchester, engineering firms in Birmingham, food manufacturers in Leeds, and tech startups in Shoreditch. The principles below apply to all of them.</p>
+<p>We are specialist accountants based in the UK. We deal with R&D claims across sectors: software consultancies in Manchester, engineering firms in Birmingham, food manufacturers in Leeds, and tech startups in Shoreditch. The principles below apply to all of them.</p>
 
 <h2>Step 1: Does Your Project Meet the Definition of R&D?</h2>
 
@@ -86,11 +86,11 @@ faqs:
 
 <p><strong>Costs that do not qualify:</strong> capital expenditure, land, patent costs, training, marketing, routine data collection, and overheads like rent and utilities (unless metered and directly attributable).</p>
 
-<p>For a <strong>profit-making company</strong>, the merged scheme gives a 20% taxable credit (effectively reducing your corporation tax bill). For a <strong>loss-making company</strong>, you can surrender losses for a payable credit at a rate of 10% for most companies, or 14.5% for R&D-intensive loss-making companies (ERIS).</p>
+<p>For a <strong>profit-making company</strong>, the merged scheme gives a 20% taxable credit (effectively reducing your corporation tax bill). For a <strong>loss-making company</strong>, the 20% RDEC credit can still be payable in cash (subject to a PAYE and NIC cap) where it exceeds the corporation tax liability. Loss-making companies that are R&D-intensive under the Enhanced R&D Intensive Scheme (ERIS) can instead claim an 86% enhanced deduction, with the resulting surrenderable loss converted to a payable credit at 14.5%.</p>
 
 <h3>R&D Intensive Scheme (ERIS)</h3>
 
-<p>If your company is loss-making and your qualifying R&D spend is <strong>30% or more</strong> of your total costs, you qualify as R&D-intensive. You can claim a payable credit of 14.5% on the surrenderable loss, instead of 10%.</p>
+<p>If your company is loss-making and your qualifying R&D spend is <strong>30% or more</strong> of your total costs, you qualify as R&D-intensive. Under ERIS, you claim an 86% enhanced deduction on your qualifying R&D costs, with the resulting surrenderable loss converted to a payable credit at 14.5%.</p>
 
 <p>The 30% threshold is measured on a three-year rolling average. If you are a new company with fewer than three years of data, HMRC uses the available period.</p>
 
@@ -128,7 +128,7 @@ faqs:
 <li><strong>Including non-qualifying costs.</strong> Overheads, rent, marketing, and patent costs are not qualifying. Do not include them.</li>
 <li><strong>Poor documentation.</strong> A vague AIF narrative with no technical detail is a red flag. HMRC wants to see the problem, the uncertainty, and the method.</li>
 <li><strong>Claiming for subcontracted work when you are the subcontractor.</strong> Only the client can claim for R&D they commission.</li>
-<li><strong>Missing the deadline.</strong> R&D claims must be made within 12 months of the company's corporation tax return filing date. For most companies, that is 21 months after the year-end. Miss it and the relief is lost.</li>
+<li><strong>Missing the deadline.</strong> R&D claims must be made within 12 months of the company's corporation tax return filing date. For most companies, that is 24 months after the year-end. Miss it and the relief is lost.</li>
 </ul>
 
 <h2>Step 7: Should You Use a Specialist?</h2>

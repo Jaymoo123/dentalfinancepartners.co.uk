@@ -33,7 +33,7 @@ faqs:
 
 <p>But HMRC has specific rules that prevent you from setting the rent charge at whatever figure you choose. The <strong>rent charge connected company corporation tax</strong> rules are governed by transfer pricing legislation, and they require that any transaction between connected companies is priced at arm's length. That means the rent must be the same as what you would pay to an unconnected third party. Get it wrong, and HMRC can adjust the price, add interest, and charge penalties.</p>
 
-<p>This article explains how the rules work, what counts as a connected company, how to determine the market rent, and the common traps that catch business owners out. As ICAEW qualified accountants, we see this structure used effectively by property-owning groups and trading companies with separate property holding vehicles. But we also see it done badly.</p>
+<p>This article explains how the rules work, what counts as a connected company, how to determine the market rent, and the common traps that catch business owners out. We see this structure used effectively by property-owning groups and trading companies with separate property holding vehicles. But we also see it done badly.</p>
 
 <h2>What Is a Connected Company for These Purposes?</h2>
 
@@ -47,7 +47,7 @@ faqs:
 
 <p>The mechanism is simple. The trading company pays rent to the property company. The trading company deducts the rent as an allowable expense in its corporation tax computation. That reduces its taxable profits and therefore its corporation tax liability. The property company receives the rent as income and pays corporation tax on it.</p>
 
-<p>If the property company is taxed at a lower rate than the trading company, the group saves tax. For example, a trading company with profits of £200,000 pays corporation tax at an effective rate of 25% (the main rate). A property company with the same profits also pays 25%. But if the property company has brought-forward losses or capital allowances that shelter the rental income, its effective tax rate could be much lower. In that case, shifting profit from the trading company to the property company through a rent charge saves tax.</p>
+<p>If the property company is taxed at a lower rate than the trading company, the group saves tax. For example, a trading company with profits of £300,000 pays corporation tax at 25% (the main rate, which applies to profits above £250,000). A property company with the same profits also pays 25%. But if the property company has brought-forward losses or capital allowances that shelter the rental income, its effective tax rate could be much lower. In that case, shifting profit from the trading company to the property company through a rent charge saves tax.</p>
 
 <p>Even if both companies pay the same rate, the rent charge still defers tax. The property company can claim capital allowances on the building (structures and buildings allowance at 3% per year) and on any plant and machinery within it. Those allowances reduce the taxable rent income further.</p>
 

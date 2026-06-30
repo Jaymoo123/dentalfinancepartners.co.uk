@@ -1,4 +1,4 @@
----
+﻿---
 title: How Do You Change a Company Name with Companies House After Incorporation?
 slug: change-company-name-companies-house
 canonical: https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/change-company-name-companies-house
@@ -8,6 +8,11 @@ author: Holloway Davies Editorial Team
 category: Incorporation and Structure
 metaTitle: How to Change a Company Name at Companies House (NM01)
 metaDescription: 'Change your company name properly: pass a special resolution with 75% of votes, then file form NM01 online for £8. See every step.'
+keyTakeaways:
+  - "Changing a company name requires a special resolution passed by at least 75% of voting shareholders."
+  - "Online filing of form NM01 costs £8 and Companies House typically processes it within 24 hours."
+  - "The name change takes legal effect from the date Companies House issues the new certificate."
+  - "Your company number and Unique Taxpayer Reference remain unchanged after a company name change."
 altText: A UK business director signing a special resolution form to change a company name, with a laptop showing the Companies House website
 image: /blog/change-company-name-companies-house.jpg
 imageCredit:
@@ -17,9 +22,7 @@ imageCredit:
   source: Pexels
 h1: How Do You Change a Company Name with Companies House After Incorporation?
 summary: A step-by-step guide to changing your limited company name with Companies House. Covers the special resolution, form NM01, filing fee, timing, and everything you must update afterwards.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How Do You Change a Company Name with Companies House After Incorporation?","description":"Change your company name properly: pass a special resolution with 75% of votes, then file form NM01 online for £8. See every step.","url":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/change-company-name-companies-house","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
-  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/change-company-name-companies-house"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/change-company-name-companies-house.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Incorporation and Structure","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure"},{"@type":"ListItem","position":3,"name":"How Do You Change a Company Name with Companies House After Incorporation?","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/change-company-name-companies-house"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does it cost to change a company name with Companies House?","acceptedAnswer":{"@type":"Answer","text":"Online filing costs £8. Paper filing costs £10. If your application is rejected due to your own error, you do not get a refund. There are no other Companies House fees involved, though you may incur costs updating your bank accounts, stationery, and website."}},{"@type":"Question","name":"Can I change my company name back to a previous name?","acceptedAnswer":{"@type":"Answer","text":"Yes, provided the previous name is still available and not already taken by another company. You go through the same process: pass a special resolution and file form NM01. Companies House does not restrict you from reverting to an old name as long
-  as it is free on the register."}},{"@type":"Question","name":"Do I need to tell HMRC when I change my company name?","acceptedAnswer":{"@type":"Answer","text":"Yes. You must update your company name with HMRC for corporation tax, VAT, and PAYE. You can do this through your HMRC online services account or by writing to the relevant HMRC office. If you do not update HMRC, your tax records will still show the old name, which can cause delays when filing returns or making payments."}},{"@type":"Question","name":"What happens to contracts signed under the old company name after a name change?","acceptedAnswer":{"@type":"Answer","text":"Contracts signed under the old name remain legally valid. The company is the same legal entity, just with a different name. You do not need to re-sign existing contracts, though it is good practice to issue a notice of name change to all counterparties so they know who they are dealing with going forward."}}]}]}'
+schema: ""
 faqs:
 - question: How much does it cost to change a company name with Companies House?
   answer: Online filing costs £8. Paper filing costs £10. If your application is rejected due to your own error, you do not get a refund. There are no other Companies House fees involved, though you may incur costs updating your bank accounts, stationery, and website.
@@ -32,8 +35,8 @@ faqs:
 metaTitle_prev: 'Change company name Companies House: the process explained'
 metaDescription_prev: The full process to change company name Companies House. Steps, forms, fees, timing, and what to update after. Practical guidance for UK directors.
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -43,7 +46,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Companies House processes roughly 500,000 company name changes every year. The vast majority go through without issue. But if you skip a step or use the wrong form, you will get rejected and lose the filing fee. This article walks you through the exact process to change company name Companies House requires, from the initial resolution to updating your statutory registers.</p>
 
-<p>As ICAEW qualified accountants, we deal with company name changes regularly. The process is administrative, not strategic. But getting it right matters because your company name is how clients, suppliers, and HMRC identify you.</p>
+<p>In our accounting practice, we deal with company name changes regularly. The process is administrative, not strategic. But getting it right matters because your company name is how clients, suppliers, and HMRC identify you.</p>
 
 <h2>Step 1: Check Your New Name Is Available</h2>
 

@@ -85,21 +85,18 @@ faqs:
 
 <h2>The Financial Benefit: What You Can Claim</h2>
 
-<p>R&D tax credits for software companies come in two forms depending on your company's profitability and size.</p>
+<p>R&D tax credits for software companies are now calculated under the merged RDEC scheme for all companies, regardless of size. The old separate SME enhanced-deduction scheme was abolished for accounting periods beginning on or after 1 April 2024.</p>
 
-<h3>For Profitable SMEs (Under 500 Employees)</h3>
-<p>You can claim an enhanced deduction of 186% of qualifying R&D expenditure against your profits. This reduces your corporation tax bill.</p>
+<h3>For Profitable Companies (Merged RDEC, from 1 April 2024)</h3>
+<p>All companies now claim a 20% above-the-line expenditure credit on qualifying R&D costs. The credit is taxable, so the net benefit after corporation tax is approximately 16.2% at the 19% small profits rate and approximately 15% at the 25% main rate.</p>
 
-<p><strong>Example:</strong> A software company in Edinburgh spends £100,000 on qualifying R&D staff costs. The enhanced deduction gives them £186,000 of allowable expenditure. At 19% corporation tax (small profits rate), the tax saving is £35,340. At 25% (main rate), it is £46,500.</p>
+<p><strong>Example:</strong> A software company in Edinburgh spends £100,000 on qualifying R&D staff costs. The RDEC credit is £20,000. After corporation tax at 19% (small profits rate), the net saving is approximately £16,200. At 25% (main rate), it is approximately £15,000.</p>
 
-<h3>For Loss-Making SMEs</h3>
-<p>If your R&D spend puts you into a loss position, you can surrender the loss for a cash payment. The repayable credit is 14.5% of the enhanced loss. For the example above, the cash payment would be approximately £26,970.</p>
+<h3>For Loss-Making Companies (Merged RDEC)</h3>
+<p>If your company is loss-making, the 20% RDEC credit can be paid out in cash after offsetting against any tax liabilities, subject to a PAYE and NIC cap. On £100,000 of qualifying R&D costs, the potential cash credit is up to £20,000. The 14.5% payable credit on a surrenderable enhanced loss applies only to ERIS qualifying companies (see below), not to general loss-making companies.</p>
 
 <h3>For Loss-Making R&D Intensive SMEs (ERIS)</h3>
-<p>If your company is loss-making and R&D expenditure exceeds 30% of total costs, you qualify for the enhanced R&D Intensive Scheme (ERIS). The payable credit rate is higher. You can claim up to 27% of the enhanced loss as a cash payment. This is a significant benefit for early-stage software companies spending heavily on development.</p>
-
-<h3>For Large Companies (RDEC)</h3>
-<p>Companies with 500+ employees use the RDEC (Research and Development Expenditure Credit) scheme. The credit rate is 20% of qualifying expenditure. After tax, the net benefit is approximately 15%. This is less generous than the SME scheme but still valuable.</p>
+<p>If your company is loss-making and R&D expenditure exceeds 30% of total costs, you qualify for the Enhanced R&D Intensive Support scheme (ERIS). Under ERIS, you receive an 86% additional deduction on qualifying R&D costs, giving a total enhanced figure of 186% of your qualifying spend. The payable credit is 14.5% of the enhanced loss (approximately 27% of your qualifying R&D expenditure before the 86% uplift). On £100,000 of qualifying R&D costs, the enhanced figure is £186,000 and the cash payment is approximately £26,970 (14.5% x £186,000). This is a significant benefit for early-stage software companies spending heavily on development.</p>
 
 <h2>What Costs Qualify</h2>
 
@@ -117,7 +114,7 @@ faqs:
 
 <h2>How to Structure Your Claim</h2>
 
-<p>As ICAEW qualified accountants, we advise software companies to prepare their R&D claim alongside their annual accounts. Do not leave it until the corporation tax return is due.</p>
+<p>We advise software companies to prepare their R&D claim alongside their annual accounts. Do not leave it until the corporation tax return is due.</p>
 
 <p>Here is the process we recommend:</p>
 
@@ -127,7 +124,7 @@ faqs:
 
 <p><strong>Step 3: Prepare a technical report.</strong> HMRC does not require a formal report for every claim, but we recommend preparing one. It should describe the technical uncertainty, the work done, and why a competent professional could not have solved it using standard practice. A good technical report can prevent HMRC enquiries.</p>
 
-<p><strong>Step 4: Calculate the claim.</strong> Apply the enhanced deduction to your qualifying costs. For profitable companies, this reduces your corporation tax liability. For loss-making companies, calculate the payable credit.</p>
+<p><strong>Step 4: Calculate the claim.</strong> Apply the 20% RDEC credit to your qualifying costs. For profitable companies, this offsets your corporation tax liability (net benefit approximately 15% at the 25% main rate). For loss-making companies, the credit can be paid out in cash after offsetting any tax liabilities, subject to the PAYE and NIC cap.</p>
 
 <p><strong>Step 5: Submit with your CT600.</strong> The R&D claim is made on your corporation tax return (CT600) and the Additional Information Form (R&D AIF). The AIF must be submitted before you file the CT600.</p>
 

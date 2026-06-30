@@ -7,8 +7,8 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Accountant for GPs and Doctors UK | Specialist Tax Advice"
-metaDescription: "GPs and doctors face unique tax rules: NHS pensions, private income, partnership structures. Our ICAEW accountants explain what specialist support looks"
-altText: "A doctor in a white coat reviewing financial documents with an ICAEW qualified accountant in a modern UK office setting"
+metaDescription: "GPs and doctors face unique tax rules: NHS pensions, private income, partnership structures. Our specialist accountants explain what specialist support looks"
+altText: "A doctor in a white coat reviewing financial documents with an accountant in a modern UK office setting"
 image: "/blog/accountant-for-gps-and-doctors.jpg"
 imageCredit:
   photographer: "Gustavo Fring"
@@ -109,7 +109,7 @@ faqs:
 
 <h2>How We Support GPs and Doctors at Holloway Davies</h2>
 
-<p>Our team includes ICAEW qualified accountants who specialise in the medical sector. We work with GPs in partnerships, consultants with private practice, locum doctors, and salaried doctors who need personal tax planning.</p>
+<p>Our team specialises in the medical sector. We work with GPs in partnerships, consultants with private practice, locum doctors, and salaried doctors who need personal tax planning.</p>
 
 <p>We handle the full range of services: self assessment tax returns, partnership tax returns, limited company accounts for private practice, IR35 reviews, NHS pension annual allowance calculations, and ongoing tax planning throughout the year.</p>
 

@@ -31,7 +31,7 @@ faqs:
 
 <p>If your business has spent time and money developing a new product, process, or software, you might be sitting on a valuable tax relief without realising it. R&D tax credits are one of the most generous reliefs HMRC offers, yet thousands of eligible UK businesses never claim because the process feels complicated or they assume their work doesn't count.</p>
 
-<p>This guide covers exactly <strong>how to claim R&D tax credits</strong> for your UK business. We'll walk through what qualifies, what costs you can include, how the claim process works, and the mistakes that get claims rejected. If you are a limited company director, a contractor running your own Ltd, or a sole trader doing genuine development work, this applies to you.</p>
+<p>This guide covers exactly <strong>how to claim R&D tax credits</strong> for your UK business. We'll walk through what qualifies, what costs you can include, how the claim process works, and the mistakes that get claims rejected. If you are a limited company director or a contractor running your own Ltd doing genuine development work, this applies to you. (R&D tax credits are a corporation tax relief: sole traders and partnerships cannot claim, whatever the nature of their work.)</p>
 
 <h2>What Are R&D Tax Credits?</h2>
 
@@ -56,7 +56,7 @@ faqs:
 <li><strong>Life sciences and healthcare:</strong> Developing medical devices, diagnostic tools, or treatment methods.</li>
 </ul>
 
-<p>A 4-employee software consultancy in Manchester turning over £420,000 that spent 6 months building a new machine learning model for image recognition qualifies. A sole trader carpenter who spent weeks figuring out how to join two materials that had never been joined before qualifies. A digital marketing agency that just used standard tools to create a website does not.</p>
+<p>A 4-employee software consultancy in Manchester turning over £420,000 that spent 6 months building a new machine learning model for image recognition qualifies. A sole trader carpenter who spent weeks figuring out how to join two materials that had never been joined before is doing work that is R&D in nature, but cannot claim: R&D tax credits are a corporation tax relief and only limited companies can access them (incorporating would be the route to unlock that). A digital marketing agency that just used standard tools to create a website does not qualify, regardless of legal structure.</p>
 
 <h2>What Costs Can You Claim For?</h2>
 
@@ -103,7 +103,7 @@ faqs:
 <li>Why was it not readily deducible by a competent professional in your field?</li>
 </ul>
 
-<p>If you are a small business without in-house technical writers, our ICAEW qualified team at Holloway Davies can help structure this narrative. See our <a href="/r-and-d-credits">R&D tax credits page</a> for more detail.</p>
+<p>If you are a small business without in-house technical writers, our experienced team at Holloway Davies can help structure this narrative. See our <a href="/r-and-d-credits">R&D tax credits page</a> for more detail.</p>
 
 <h3>Step 4: Prepare Your Financial Summary</h3>
 <p>This is a breakdown of qualifying costs by category, linked to the technical report. HMRC will check that the costs match the narrative. If you claim £50,000 in staff costs for a project that involved one person working 2 days a week, expect questions.</p>
@@ -162,7 +162,7 @@ A Bristol biotech startup spends £150,000 on R&D and has £350,000 total costs 
 <li>Handle HMRC enquiries if they arise</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we handle R&D claims for businesses across every sector. If your turnover is above £100,000 and you are doing genuine development work, it is almost certainly worth a conversation. <a href="/contact">Contact us</a> to discuss your claim.</p>
+<p>We handle R&D claims for businesses across every sector. If your turnover is above £100,000 and you are doing genuine development work, it is almost certainly worth a conversation. <a href="/contact">Contact us</a> to discuss your claim.</p>
 
 <h2>Key Deadlines to Remember</h2>
 

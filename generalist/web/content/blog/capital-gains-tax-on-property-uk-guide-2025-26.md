@@ -25,7 +25,7 @@ faqs: []
 
 <p>Capital gains tax (CGT) is the tax you pay on the profit when you sell or dispose of an asset that has increased in value. For property, the rules differ depending on whether the property is your main home, a second home, a buy-to-let, or a commercial property.</p>
 
-<p>If you sell a property that is not your main residence, you will likely owe CGT on the gain. The gain is the difference between what you paid for it and what you sold it for, minus certain allowable costs. As ICAEW qualified accountants, we deal with this regularly for clients across the UK, from a landlord in Birmingham's Jewellery Quarter selling a flat to a tech founder in Shoreditch disposing of a company-owned office.</p>
+<p>If you sell a property that is not your main residence, you will likely owe CGT on the gain. The gain is the difference between what you paid for it and what you sold it for, minus certain allowable costs. We deal with this regularly for clients across the UK, from a landlord in Birmingham's Jewellery Quarter selling a flat to a tech founder in Shoreditch disposing of a company-owned office.</p>
 
 <p>The rates and rules changed significantly from 30 October 2024. This guide covers the current position for the 2025/26 tax year, including the new 18% and 24% rates for residential property gains, the 60-day reporting requirement, and the reliefs that can reduce your bill.</p>
 
@@ -51,7 +51,7 @@ faqs: []
 <table>
 <tr><th>Type of gain</th><th>Basic rate taxpayer</th><th>Higher rate taxpayer</th></tr>
 <tr><td>Residential property gain</td><td>18%</td><td>24%</td></tr>
-<tr><td>Non-residential property gain (commercial, land, shares)</td><td>10% (or 18% above the basic rate band)</td><td>24%</td></tr>
+<tr><td>Non-residential property gain (commercial, land, shares)</td><td>18%</td><td>24%</td></tr>
 <tr><td>Business Asset Disposal Relief (BADR) gains</td><td>14% (rising to 18% from 6 April 2026)</td><td>14% (rising to 18%)</td></tr>
 </table>
 
@@ -67,9 +67,10 @@ faqs: []
 
 <p>Her CGT calculation:</p>
 <ul>
-<li>£15,200 taxed at 18% = £2,736</li>
-<li>Remaining gain £114,800 taxed at 24% = £27,552</li>
-<li>Total CGT bill: £30,288</li>
+<li>Total gain: £130,000, less annual exempt amount (2025/26): £3,000, taxable gain: £127,000</li>
+<li>£15,200 within unused basic rate band, taxed at 18% = £2,736</li>
+<li>Remaining gain £111,800 taxed at 24% = £26,832</li>
+<li>Total CGT bill: £29,568</li>
 </ul>
 
 <p>She must report and pay this within 60 days of completion using the 60-day CGT property return.</p>
@@ -125,7 +126,7 @@ faqs: []
 
 <p>If you sell a property used in your business (e.g. a workshop, office, or storage unit) and you are a sole trader or partnership, you may qualify for BADR. The gain is taxed at 14% in 2025/26 (rising to 18% from 6 April 2026). You must have owned the business asset for at least 2 years. The lifetime limit is £1 million of gains.</p>
 
-<p>BADR does not apply to residential buy-to-lets unless you are a furnished holiday let that meets the qualifying conditions (you let it commercially, for at least 105 days per year, and it is available for 210 days).</p>
+<p>BADR does not apply to residential buy-to-lets. The Furnished Holiday Lettings (FHL) regime, which previously provided a route to BADR for qualifying short-term lets, was abolished from 6 April 2025. Holiday lets are now treated as ordinary residential property businesses for tax purposes and no longer qualify for BADR or the other historic FHL tax advantages.</p>
 
 <h3>Rollover Relief</h3>
 
@@ -151,7 +152,7 @@ faqs: []
 
 <p>Commercial property (offices, shops, warehouses, industrial units) is treated differently from residential. The 60-day reporting rule does not apply. You report the gain on your Self Assessment return by 31 January after the tax year.</p>
 
-<p>The rates are 10% (or 18% above the basic rate band) for basic rate taxpayers and 24% for higher rate taxpayers. These are lower than the residential property rates.</p>
+<p>The rates are 18% for gains within the basic rate band and 24% for higher rate taxpayers. From 30 October 2024, these are the same as the residential property rates.</p>
 
 <p>If you sell a commercial property that you used in your trade, you may qualify for BADR (14% rate, £1m lifetime limit) or Rollover Relief. Many sole traders and partnerships in trades, manufacturing, and retail benefit from these reliefs.</p>
 
@@ -201,13 +202,13 @@ faqs: []
 <li><strong>Consider the holding structure</strong> - if you are buying property now, think about whether to hold it personally, in a company, or in a trust. The decision affects CGT, income tax, and IHT. There is no one-size-fits-all answer.</li>
 </ul>
 
-<p>If your circumstances are complex, speak to a qualified accountant before you exchange contracts. Once the sale completes, your options for reducing the gain are limited. Our ICAEW qualified team can help you model the tax outcomes and choose the best strategy. <a href="/contact">Contact us</a> to discuss your property disposal plans.</p>
+<p>If your circumstances are complex, speak to a qualified accountant before you exchange contracts. Once the sale completes, your options for reducing the gain are limited. Our experienced team can help you model the tax outcomes and choose the best strategy. <a href="/contact">Contact us</a> to discuss your property disposal plans.</p>
 
 <h2>Summary: Key Takeaways</h2>
 
 <ul>
 <li>Residential property gains: 18% basic rate, 24% higher rate from 30 October 2024.</li>
-<li>Commercial property gains: 10% basic rate, 24% higher rate.</li>
+<li>Commercial property gains: 18% basic rate, 24% higher rate (same as residential from 30 October 2024).</li>
 <li>60-day reporting and payment deadline for UK residential property. Strict.</li>
 <li>Annual exempt amount: £3,000 for 2025/26.</li>
 <li>Private Residence Relief exempts your main home. Lettings Relief is now very restricted.</li>

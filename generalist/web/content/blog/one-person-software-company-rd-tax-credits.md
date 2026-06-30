@@ -127,9 +127,9 @@ faqs:
 
 <p>Total qualifying expenditure: approximately £5,041.</p>
 
-<p>Under the merged R&D scheme for accounting periods starting on or after 1 April 2024, your company would receive a tax credit worth up to 15% of the qualifying spend if you are loss-making. If your company is profitable, you would reduce your corporation tax liability by up to 25% of the qualifying spend (depending on your profit level and the marginal relief position).</p>
+<p>Under the merged R&D scheme for accounting periods starting on or after 1 April 2024, your company receives a 20% expenditure credit on qualifying spend (this credit is taxable income). After the corporation tax charged on that credit, the net benefit is approximately 15% of qualifying spend at the 25% main CT rate, or approximately 16% at the 19% small-profits rate. The mechanism works the same way whether your company is profitable or loss-making.</p>
 
-<p>In this example, a £5,041 qualifying spend could reduce your corporation tax bill by roughly £1,260 or generate a cash credit of around £756 if you are loss-making. That is real money from work you already did.</p>
+<p>In this example, a £5,041 qualifying spend generates a gross RDEC credit of approximately £1,008 (20% of £5,041). After corporation tax on that credit at the 25% main rate (approximately £252), the net benefit is approximately £756. That is real money from work you already did.</p>
 
 <h2>Common Mistakes Solo Developers Make on R&D Claims</h2>
 

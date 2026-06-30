@@ -22,7 +22,7 @@ faqs:
   - question: "What is the VAT flat rate scheme in simple terms?"
     answer: "It is a simplified VAT accounting method where you pay HMRC a fixed percentage of your VAT-inclusive turnover instead of calculating the difference between output VAT and input VAT. The percentage depends on your business sector. You keep any difference between what you charge customers and what you pay HMRC."
   - question: "What is the limited cost trader rule for VAT flat rate?"
-    answer: "If your spending on physical goods for your business is less than 2% of your VAT-inclusive turnover (or less than £1,000 per year if the 2% test gives a figure above £1,000), you are a limited cost trader. You must use a flat rate of 16.5% regardless of your sector. This rule catches most service businesses with low physical goods costs."
+    answer: "If your spending on physical goods for your business is less than 2% of your VAT-inclusive turnover, or less than £1,000 per year (these two conditions are independent of each other), you are a limited cost trader. You must use a flat rate of 16.5% regardless of your sector. This rule catches most service businesses with low physical goods costs."
   - question: "Can I reclaim VAT on purchases under the flat rate scheme?"
     answer: "Generally no, with one exception. You cannot reclaim input VAT on your day-to-day purchases under the flat rate scheme. But you can reclaim VAT on capital assets costing £2,000 or more (V"
 ---
@@ -35,7 +35,7 @@ faqs:
 
 <p>HMRC sets 23 sector-specific flat rates, ranging from 2% for some retail businesses to 14.5% for others. The standard flat rate for a business not covered by a specific sector is 12%. These rates apply to businesses registered for VAT under the scheme.</p>
 
-<p>As ICAEW qualified accountants, we work through the numbers with clients regularly. The scheme is not a one-size-fits-all saving. It works brilliantly for some businesses and costs money for others.</p>
+<p>We work through the numbers with clients regularly. The scheme is not a one-size-fits-all saving. It works brilliantly for some businesses and costs money for others.</p>
 
 <h2>Who Can Use the VAT Flat Rate Scheme?</h2>
 
@@ -67,7 +67,7 @@ faqs:
 <li><strong>Hotel or accommodation:</strong> 6.5%</li>
 <li><strong>Printing:</strong> 8.5%</li>
 <li><strong>Retail (excluding food, confectionery, newspapers, children's clothing, and some others):</strong> 7.5%</li>
-<li><strong>Retail (food, confectionery, newspapers, children's clothing):</strong> 2%</li>
+<li><strong>Retail (food, confectionery, newspapers, children's clothing):</strong> 4%</li>
 <li><strong>Social care:</strong> 11%</li>
 <li><strong>Transport or storage (including couriers, freight, removals):</strong> 10%</li>
 <li><strong>Wholesaling:</strong> 8.5%</li>
@@ -84,7 +84,7 @@ faqs:
 
 <ul>
 <li>Less than 2% of your VAT-inclusive turnover in a prescribed accounting period, or</li>
-<li>Less than £1,000 per year if the 2% test gives you a figure above £1,000</li>
+<li>Less than £1,000 per year (this applies independently of the 2% test, even where 2% of your VAT-inclusive turnover would also be below £1,000)</li>
 </ul>
 
 <p>"Relevant goods" means physical goods used exclusively for your business. It does not include:</p>
@@ -133,7 +133,7 @@ VAT payable to HMRC: <strong>£6,000</strong></p>
 <p><strong>Flat rate scheme (limited cost trader 16.5%):</strong><br>
 Flat rate payable: £36,000 x 16.5% = <strong>£5,940</strong></p>
 
-<p>Sarah saves £60 per quarter. Not a huge saving, but it simplifies her record-keeping. If she were not a limited cost trader (unlikely for an IT consultant), her sector rate of 14.5% would save her £1,020 per quarter. That is the difference the limited cost trader rule makes.</p>
+<p>Sarah saves £60 per quarter. Not a huge saving, but it simplifies her record-keeping. If she were not a limited cost trader (unlikely for an IT consultant), her sector rate of 14.5% would save her £780 per quarter (£36,000 x 14.5% = £5,220; £6,000 - £5,220 = £780). That is the difference the limited cost trader rule makes.</p>
 
 <p>If Sarah's turnover were £50,000 per quarter, standard accounting would cost her £8,333 in VAT. The flat rate at 16.5% would cost £8,250. She saves £83. Hardly worth the administrative risk of getting the limited cost trader classification wrong.</p>
 
@@ -141,7 +141,7 @@ Flat rate payable: £36,000 x 16.5% = <strong>£5,940</strong></p>
 
 <p>The scheme works best for businesses with low costs on physical goods. That means service businesses where the limited cost trader rule does not apply or where the sector rate is significantly below 16.5%.</p>
 
-<p>Retailers selling zero-rated goods (food, children's clothes, newspapers) use a 2% flat rate. A corner shop in Birmingham's Jewellery Quarter with £100,000 of VAT-inclusive turnover pays just £2,000 in VAT. Under standard accounting, they would charge 20% on standard-rated goods but recover input tax on purchases. The 2% rate is generous, but only for that specific category.</p>
+<p>Retailers selling zero-rated goods (food, children's clothes, newspapers) use a 4% flat rate. A corner shop in Birmingham's Jewellery Quarter with £100,000 of VAT-inclusive turnover pays just £4,000 in VAT. Under standard accounting, they would charge 20% on standard-rated goods but recover input tax on purchases. The 4% rate is generous, but only for that specific category.</p>
 
 <p>Hotels and accommodation businesses use 6.5%. A small B&B in the Lake District with £80,000 VAT-inclusive turnover pays £5,200. Under standard accounting, they would pay more because their input VAT recovery is limited (food is zero-rated, most costs are services). The 6.5% rate usually saves them money.</p>
 
@@ -195,4 +195,4 @@ Flat rate payable: £36,000 x 16.5% = <strong>£5,940</strong></p>
 
 <p>If your turnover is approaching the VAT registration threshold of £90,000, you should plan ahead. Registering for VAT is not optional once you cross that threshold. The choice between standard accounting and the flat rate scheme is one you make at registration, not one you defer.</p>
 
-<p>Our ICAEW qualified team at <a href="/services">Holloway Davies</a> can help you model the numbers and decide. We work with businesses across every sector from our offices in London, Manchester, Birmingham, and Bristol. If you are unsure whether the flat rate scheme works for you, <a href="/contact">get in touch</a>.</p>
+<p>Our experienced team at <a href="/services">Holloway Davies</a> can help you model the numbers and decide. We work with businesses across every sector from our offices in London, Manchester, Birmingham, and Bristol. If you are unsure whether the flat rate scheme works for you, <a href="/contact">get in touch</a>.</p>

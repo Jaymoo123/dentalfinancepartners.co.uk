@@ -9,10 +9,10 @@
 export const UK_TAX_RATES = {
   currency: "GBP",
   country: "GB",
-  taxYear: "2025-26",
-  taxYearStart: "2025-04-06",
-  taxYearEnd: "2026-04-05",
-  lastUpdated: "2026-05-17",
+  taxYear: "2026-27",
+  taxYearStart: "2026-04-06",
+  taxYearEnd: "2027-04-05",
+  lastUpdated: "2026-06-30",
   publisher: {
     name: "Holloway Davies",
     url: "https://www.hollowaydavies.co.uk",
@@ -31,8 +31,8 @@ export const UK_TAX_RATES = {
   },
   dividendTax: {
     allowance: 500,
-    basicRate: 0.0875,
-    higherRate: 0.3375,
+    basicRate: 0.1075,
+    higherRate: 0.3575,
     additionalRate: 0.3935,
   },
   incomeTax: {
@@ -58,9 +58,9 @@ export const UK_TAX_RATES = {
       employmentAllowance: 10500,
     },
     selfEmployed: {
-      smallProfitsThreshold: 6845,
+      smallProfitsThreshold: 7105,
       lowerProfitsThreshold: 12570,
-      class2VoluntaryWeekly: 3.50,
+      class2VoluntaryWeekly: 3.65,
       class4MainRate: 0.06,
       class4UpperRate: 0.02,
     },
@@ -136,11 +136,11 @@ export const UK_TAX_RATES = {
     juniorIsaAnnual: 9000,
   },
   studentLoans: {
-    planOneThreshold: 26065,
+    planOneThreshold: 26900,
     planOneRate: 0.09,
-    planTwoThreshold: 28470,
+    planTwoThreshold: 29385,
     planTwoRate: 0.09,
-    planFourThreshold: 32745,
+    planFourThreshold: 33795,
     planFourRate: 0.09,
     planFiveThreshold: 25000,
     planFiveRate: 0.09,

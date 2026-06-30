@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Agriculture Accountants: Tax, Grants and Compliance for UK"
-metaDescription: "Agriculture accountants help UK farmers and landowners with tax planning, VAT, grants, succession and compliance. Practical guidance from ICAEW qualified"
+metaDescription: "Agriculture accountants help UK farmers and landowners with tax planning, VAT, grants, succession and compliance. Practical guidance from our specialist accountants."
 altText: "UK farmer reviewing accounts with an agriculture accountant in a farm office, papers and a laptop on a wooden desk"
 image: "/blog/what-does-an-agriculture-accountant-do.jpg"
 imageCredit:
@@ -115,7 +115,7 @@ faqs:
 
 <h3>Farm Diversification Projects</h3>
 
-<p>Many farms diversify into holiday lets, glamping, farm shops, wedding venues, or renewable energy. These activities have different tax treatments. Holiday lets may qualify as a trade for BPR and rollover relief. Glamping may be treated as furnished holiday accommodation or as a trade, depending on the level of services provided.</p>
+<p>Many farms diversify into holiday lets, glamping, farm shops, wedding venues, or renewable energy. These activities have different tax treatments. Holiday lets and glamping no longer benefit from the Furnished Holiday Lettings (FHL) regime, which was abolished from 6 April 2025. Before abolition, qualifying holiday lets received automatic trade treatment for CGT rollover and holdover relief and were arguable for BPR. Under current rules, a holiday let or glamping venture can only be treated as a trade for those purposes if it meets the general trading criteria (typically, substantial services beyond mere passive occupation). Specialist advice is essential before assuming BPR or rollover relief applies to any letting activity.</p>
 
 <p>An agriculture accountant will advise on the correct tax treatment for each diversification activity. They will structure the business to protect APR and BPR on the core farming enterprise. They will also advise on VAT. A farm shop selling standard-rated goods alongside zero-rated food can create partial exemption headaches.</p>
 
@@ -137,7 +137,7 @@ faqs:
 
 <h3>Employer NI and Employment Allowance</h3>
 
-<p>Employer NI at 13.8% applies above the secondary threshold of £9,100 per employee per year. The Employment Allowance of up to £10,500 can reduce your employer NI bill. An agriculture accountant will ensure you claim the allowance if eligible.</p>
+<p>Employer NI at 15% applies above the secondary threshold of £5,000 per employee per year (from 6 April 2025, continuing into 2026/27). The Employment Allowance of up to £10,500 can reduce your employer NI bill. An agriculture accountant will ensure you claim the allowance if eligible.</p>
 
 <p>They will also advise on the correct treatment of directors' salaries if the farm is run through a limited company. The most efficient salary is typically £12,570 (matching the personal allowance and primary NI threshold), with the rest taken as dividends.</p>
 
@@ -183,7 +183,7 @@ faqs:
 
 <p>An agriculture accountant will save you more in tax and grant compliance than their fees. The key is to hire one before you make a decision, not after.</p>
 
-<p>If you would like to discuss your farming accounts with our ICAEW qualified team, <a href="/contact">get in touch</a>. We work with farmers and landowners across the UK.</p>
+<p>If you would like to discuss your farming accounts with our specialist team, <a href="/contact">get in touch</a>. We work with farmers and landowners across the UK.</p>
 
 <h2>Related articles in Limited Company Tax</h2>
 <ul>

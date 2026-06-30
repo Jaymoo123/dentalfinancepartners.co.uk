@@ -7,13 +7,13 @@ export const badrTool: GenericTool = {
   slug: "badr-cgt-calculator",
   name: "BADR CGT Calculator",
   category: "Capital Gains",
-  oneLiner: "See your post-relief CGT on a business sale, your remaining lifetime allowance, and what the 6 April 2026 rate jump from 14% to 18% costs if you delay.",
+  oneLiner: "See your post-relief CGT on a business sale, your remaining lifetime allowance, and how the 2026/27 BADR rate of 18% (up from 14% in 2025/26) affects your CGT bill.",
   embedHeight: 520,
-  metaTitle: "BADR CGT Calculator 2025/26 | Business Asset Disposal Relief",
+  metaTitle: "BADR CGT Calculator 2026/27 | Business Asset Disposal Relief",
   metaDescription:
     "Free BADR capital gains tax calculator for UK business owners. See CGT on sale proceeds with and without Business Asset Disposal Relief. 2025/26 and 2026/27 rates.",
   intro:
-    "Business Asset Disposal Relief (BADR) cuts your CGT rate to 14% on qualifying gains up to the £1 million lifetime limit — but only until 5 April 2026. From 6 April 2026 the rate rises to 18%. Enter your sale proceeds, cost, and any prior BADR usage to see your CGT bill under both years.",
+    "Business Asset Disposal Relief (BADR) reduces your CGT rate to 18% on qualifying gains up to the £1 million lifetime limit for disposals from 6 April 2026 (2026/27). The rate was 14% in 2025/26. Enter your sale proceeds, cost, and any prior BADR usage to see your CGT bill for 2025/26 or 2026/27.",
   fields: [
     {
       id: "saleProceeds",
@@ -48,7 +48,7 @@ export const badrTool: GenericTool = {
       id: "year",
       label: "Tax year of disposal",
       type: "select",
-      default: "2025/26",
+      default: "2026/27",
       options: [
         { value: "2025/26", label: "2025/26 (14% BADR rate)" },
         { value: "2026/27", label: "2026/27 (18% BADR rate)" },
@@ -96,8 +96,8 @@ export const badrTool: GenericTool = {
   explainer: {
     heading: "How BADR works",
     paragraphs: [
-      "Business Asset Disposal Relief reduces CGT to 14% (2025/26) on qualifying gains up to £1 million over your lifetime. Any gain above the lifetime limit is taxed at the standard higher rate of 24%.",
-      "The rate rises to 18% from 6 April 2026. If you are planning a sale, the difference on a £1 million eligible gain is £40,000 in CGT. Timing the disposal before the end of the 2025/26 tax year can save a significant amount.",
+      "Business Asset Disposal Relief reduces CGT to 18% (2026/27, from 6 April 2026) on qualifying gains up to £1 million over your lifetime. The rate was 14% in 2025/26. Any gain above the lifetime limit is taxed at the standard higher rate of 24%.",
+      "The BADR rate increased to 18% from 6 April 2026 (up from 14% in 2025/26). On a £1 million eligible gain, this rate change increases CGT by £40,000 compared with a 2025/26 disposal.",
     ],
   },
   faqs: [

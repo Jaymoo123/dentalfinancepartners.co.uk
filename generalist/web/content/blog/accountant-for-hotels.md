@@ -32,7 +32,7 @@ faqs:
 <h2>Hotels Are Not Like Other Businesses</h2>
 <p>If you run a hotel, a guest house, a pub with rooms, or a serviced apartment block, you already know this. Your business has multiple revenue streams. Accommodation, food and drink, conference facilities, weddings, parking, maybe a small shop. Each one has different VAT treatment. Your payroll is complex with shift workers, tips, and troncs. You have significant capital assets that need careful handling for capital allowances.</p>
 <p>A general accountant who handles a dozen high street shops and a few consultancies will not know the specific rules that apply to hotels. They might treat all your revenue as standard rated for VAT. They might miss the <strong>Tour Operators' Margin Scheme (TOMS)</strong> if you sell package holidays. They might not claim the correct capital allowances on your bedroom furniture, kitchen equipment, or building structure.</p>
-<p>That is where a specialist <strong>accountant for hotels</strong> makes the difference. At Holloway Davies, our ICAEW qualified team works with hotels across the UK, from boutique B&Bs in the Lake District to city centre hotels in Manchester and Birmingham. We know the rules because we work with them every day.</p>
+<p>That is where a specialist <strong>accountant for hotels</strong> makes the difference. At Holloway Davies, our specialist team works with hotels across the UK, from boutique B&Bs in the Lake District to city centre hotels in Manchester and Birmingham. We know the rules because we work with them every day.</p>
 
 <h2>VAT Is the Biggest Area Where Hotels Get It Wrong</h2>
 <p>VAT on hotel income is not straightforward. Here are the main points.</p>
@@ -65,7 +65,7 @@ faqs:
 <p>Your specialist accountant will ensure your accounting software is MTD compliant. At Holloway Davies, we work with Xero, QuickBooks, and FreeAgent. We can help you choose the right platform and set it up correctly for your hotel's specific needs.</p>
 
 <h2>Why Choose Holloway Davies as Your Accountant for Hotels</h2>
-<p>We are ICAEW qualified accountants based in the UK. We work with hotels of every size. A 10 bedroom guest house in the Cotswolds. A 120 room city centre hotel in Leeds. A wedding venue with 50 staff in the Peak District. We understand the sector because we live in it.</p>
+<p>We are specialist accountants based in the UK. We work with hotels of every size. A 10 bedroom guest house in the Cotswolds. A 120 room city centre hotel in Leeds. A wedding venue with 50 staff in the Peak District. We understand the sector because we live in it.</p>
 <p>We offer a full range of services. <a href="/services">Tax planning, VAT compliance, payroll, bookkeeping, year end accounts, and strategic advice</a>. We also handle company formations, R&D tax credits for hotels developing new systems, and exit planning if you are considering selling your property.</p>
 <p>We are not a faceless online service. You get a dedicated partner who knows your business. We visit your property, understand your operations, and build a relationship. That is how we spot opportunities a general accountant would miss.</p>
 <p>If you are considering selling your hotel, we can help with <a href="/blog/exit-and-capital-gains">Business Asset Disposal Relief (BADR)</a> planning. The lifetime limit is £1 million. The rate is 14% for disposals from 6 April 2025, rising to 18% from 6 April 2026. Early planning is essential.</p>

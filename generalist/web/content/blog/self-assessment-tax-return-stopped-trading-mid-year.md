@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Sole Trader and Self Employment
 metaTitle: 'Self Assessment When You Stop Trading Mid-Year: Cessation'
-metaDescription: Stopped trading mid-year? Your final return uses cessation basis periods and overlap relief, with a £100 penalty if you file late. Get the numbers right.
+metaDescription: Stopped trading mid-year? Under the tax-year basis, your final return covers 6 April to your cessation date, with a £100 penalty if you file late. Get the numbers right.
 altText: UK business owner reviewing self assessment paperwork at a desk in a home office, with a calculator and tax forms visible.
 image: /blog/self-assessment-tax-return-stopped-trading-mid-year.jpg
 imageCredit:
@@ -16,24 +16,22 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/tax-documents-on-the-table-6863332/
   source: Pexels
 h1: How Do You File a Self Assessment Tax Return If You Stopped Trading Mid-Year?
-summary: Stopping your business mid-year changes how you file your self assessment. You need cessation rules, overlap relief, and a final accounting period. This guide walks through each step so you get the numbers right.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How Do You File a Self Assessment Tax Return If You Stopped Trading Mid-Year?","description":"Stopped trading mid-year? Your final return uses cessation basis periods and overlap relief, with a £100 penalty if you file late. Get the numbers right.","url":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-tax-return-stopped-trading-mid-year","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal
-  taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-tax-return-stopped-trading-mid-year"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/self-assessment-tax-return-stopped-trading-mid-year.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Sole Trader and Self Employment","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment"},{"@type":"ListItem","position":3,"name":"How Do You File a Self Assessment Tax Return If You Stopped Trading Mid-Year?","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-tax-return-stopped-trading-mid-year"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is overlap relief and how do I claim it on my final return?","acceptedAnswer":{"@type":"Answer","text":"Overlap relief deducts profits that were taxed twice: once in your first year of trading and again in your final year. You claim it by entering the overlap profit figure in the relevant box on your SA103 self-employment pages (box 66 on the 2024/25 form). If you do not know your overlap figure, HMRC can provide it from their records."}},{"@type":"Question","name":"Do I need to file a self assessment if I stopped trading and had no profit?","acceptedAnswer":{"@type":"Answer","text":"Yes. You must file
-  a return for any tax year in which you were self-employed, even if your profit was zero. HMRC needs to see the cessation. If you do not file, they may assume you are still trading and send you reminders. File a nil return with the ceased box ticked."}},{"@type":"Question","name":"Can I use cash basis for my final year if I used accruals before?","acceptedAnswer":{"@type":"Answer","text":"Yes. HMRC allows you to switch to cash basis for the final period. This means you include income when you receive it, not when you invoice it. It can simplify your final return, especially if you have unpaid invoices. Any amounts received after cessation are not trading income."}},{"@type":"Question","name":"What happens to my capital allowances when I stop trading?","acceptedAnswer":{"@type":"Answer","text":"You must do a balancing adjustment. HMRC treats it as a deemed disposal of your business assets at market value. If the disposal value is less than the tax written-down value, you get a balancing allowance (deductible). If it is more, you get a balancing charge (taxable). You cannot continue claiming writing-down allowances after cessation."}}]}]}'
+summary: Stopping your business mid-year changes how you file your self assessment. Under the tax-year basis (from 2024/25), your final period runs from 6 April to your cessation date. This guide walks through each step so you get the numbers right.
+schema: ""
 faqs:
-- question: What is overlap relief and how do I claim it on my final return?
-  answer: 'Overlap relief deducts profits that were taxed twice: once in your first year of trading and again in your final year. You claim it by entering the overlap profit figure in the relevant box on your SA103 self-employment pages (box 66 on the 2024/25 form). If you do not know your overlap figure, HMRC can provide it from their records.'
+- question: What happened to overlap relief under the tax-year basis?
+  answer: 'Overlap relief applied under the old current-year basis, where some profits were taxed twice in the opening years of a business. Finance Act 2022 replaced that framework with a tax-year basis from 2024/25. The 2023/24 transition year was specifically designed to clear any remaining overlap relief from transition profits. For a cessation in 2025/26 or later, there is no overlap relief to claim on your SA103: any such balance was extinguished in 2023/24. If you ceased trading before 2024/25 and have an unresolved overlap figure, speak to an accountant about your earlier returns.'
 - question: Do I need to file a self assessment if I stopped trading and had no profit?
   answer: Yes. You must file a return for any tax year in which you were self-employed, even if your profit was zero. HMRC needs to see the cessation. If you do not file, they may assume you are still trading and send you reminders. File a nil return with the ceased box ticked.
 - question: Can I use cash basis for my final year if I used accruals before?
-  answer: Yes. HMRC allows you to switch to cash basis for the final period. This means you include income when you receive it, not when you invoice it. It can simplify your final return, especially if you have unpaid invoices. Any amounts received after cessation are not trading income.
+  answer: Yes. HMRC allows you to switch to cash basis for the final period. This means you include income when you receive it, not when you invoice it. It can simplify your final return, especially if you have unpaid invoices. Note that amounts received after cessation that relate to the former trade are post-cessation receipts, taxable as income under ITTOIA 2005 ss.241-257, not as capital.
 - question: What happens to my capital allowances when I stop trading?
   answer: You must do a balancing adjustment. HMRC treats it as a deemed disposal of your business assets at market value. If the disposal value is less than the tax written-down value, you get a balancing allowance (deductible). If it is more, you get a balancing charge (taxable). You cannot continue claiming writing-down allowances after cessation.
 metaTitle_prev: Self Assessment Tax Return Guide for Stopping Trading
 metaDescription_prev: Filing a self assessment after stopping trading? Use cessation rules, overlap relief, and final-year accounting. Practical guide for UK business owners.
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -47,11 +45,9 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>Basis Periods: The Core Concept You Need to Understand</h2>
 
-<p>HMRC does not tax you on your accounting year directly. Instead, they use "basis periods" to align your profits to the tax year (6 April to 5 April).</p>
+<p>HMRC does not tax you on your accounting year directly. Under the tax-year basis that has applied since 2024/25 (introduced by Finance Act 2022), profits are aligned directly to the 6 April to 5 April tax year, regardless of your accounting date. In your final year of trading, you report the profits arising from 6 April to the date you stopped.</p>
 
-<p>In your first year of trading, your basis period runs from the start date to the following 5 April. In ongoing years, it is the 12 months to your accounting date (usually the same date each year, like 31 March or 30 April). In your final year, the basis period runs from 6 April to the date you stopped.</p>
-
-<p>That final-year rule is the key change. You do not include any profits earned after the cessation date. Those profits are already accounted for in the final period. But you may also need to bring in some profits from your previous accounting period if they fall after 5 April and before the cessation date.</p>
+<p>That rule is the key point. You do not include any profits earned after the cessation date. If your accounting year straddles 6 April (for example, your accounts run from 1 April to 30 September), you apportion the profits to include only the days from 6 April onwards. The days before 6 April belong to the previous tax year and were already taxed in that year's return.</p>
 
 <p>Let us make that concrete.</p>
 
@@ -59,29 +55,27 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>You are a sole trader with a 31 March year end. You stop trading on 30 September 2025. Your last set of accounts runs from 1 April 2025 to 30 September 2025 (6 months). Your final basis period for the 2025/26 tax return is 6 April 2025 to 30 September 2025.</p>
 
-<p>But your accounts cover 1 April to 30 September. That includes 5 days (1 April to 5 April) that fall in the previous tax year. Those 5 days of profit were already taxed in 2024/25. So you need to exclude them from the 2025/26 return. You do this by applying overlap relief.</p>
+<p>But your accounts cover 1 April to 30 September. That includes 5 days (1 April to 5 April) that fall in the previous tax year. Those 5 days of profit were already taxed in 2024/25. Under the tax-year basis, you simply apportion: exclude the 1 to 5 April portion and include only the profits from 6 April to 30 September 2025. No overlap relief is involved.</p>
 
-<h2>Overlap Relief: What It Is and Why It Matters</h2>
+<h2>Overlap Relief: What It Was (and Why It No Longer Applies)</h2>
 
-<p>Overlap relief exists because HMRC taxes some profits twice when you start trading. In your first year, your basis period runs from start date to 5 April. If your accounting year ends on 31 March, your first basis period covers 12 months of profit (from start date to the following 5 April). But your first set of accounts only covers from start date to the following 31 March. The overlap is the period from 1 April to 5 April in that first year. Those 5 days of profit are taxed in year one and again in the final year unless you claim relief.</p>
+<p>Under the old current-year basis (which applied before 2024/25), HMRC could tax some profits twice in a trader's opening years. The resulting overlap amount was preserved to be deducted on eventual cessation. Finance Act 2022 abolished the current-year basis and replaced it with the tax-year basis from 2024/25.</p>
 
-<p>When you cease trading, you claim overlap relief to deduct those duplicated profits from your final year's taxable amount.</p>
+<p>The 2023/24 tax year was a specific transition year: traders deducted any remaining overlap relief from their 2023/24 transition profits to clear the slate. After that transition, overlap relief ceased to exist as a live mechanism.</p>
 
-<p>You find your overlap profit figure on your tax calculation from your first year of trading. If you do not have it, HMRC can provide it. You can also reconstruct it if you have your old accounts and know your start date.</p>
+<p>For a cessation in 2025/26 or later, there is no overlap relief to claim. Your taxable profit is the profit attributable to 6 April to your cessation date, calculated by apportionment where your accounts straddle 6 April.</p>
 
-<h3>How Overlap Relief Works in Practice</h3>
+<h3>How Your Final Year Profit Is Calculated</h3>
 
-<p>Using the example above: your final accounts show profit of £24,000 for the 6 months to 30 September 2025. That covers 183 days. The overlap period from your first year was 5 days (1 April to 5 April). If your overlap profit was, say, £650, you deduct that from the £24,000. Your taxable profit for 2025/26 becomes £23,350.</p>
+<p>Using the example above: your accounts show profit of £24,000 for the 6 months from 1 April to 30 September 2025 (183 days). You exclude the 5 days from 1 to 5 April (which belong to 2024/25) and include only 6 April to 30 September 2025 (178 days). Apportioning by days: £24,000 x 178/183 = approximately £23,344. That is your taxable profit for 2025/26.</p>
 
-<p>You enter that figure on your self assessment. The SA103 (self-employment pages) has a specific box for overlap relief claimed on cessation. It is box 66 on the 2024/25 version, and the equivalent box on later versions. Fill it in correctly or HMRC will not apply the relief.</p>
-
-<p>If you have never claimed overlap relief before, now is the time. It reduces your final tax bill.</p>
+<p>There is no overlap relief box to complete on the SA103 for a 2025/26 cessation. If your cessation was in an earlier year when the old current-year basis still applied, contact HMRC or your accountant, as different rules would have governed that return.</p>
 
 <h2>What About the Previous Year's Return?</h2>
 
-<p>Your penultimate year's return (the one before the final year) may also need adjusting. If your accounting date is not 5 April, your basis period for the penultimate year is the 12 months to your normal accounting date. That is straightforward. But if you stopped trading before your normal accounting date in the final year, the penultimate year's return is unaffected. You just file it as normal.</p>
+<p>Your penultimate year's return (the one before the final year) is normally unaffected by the cessation. Under the tax-year basis, each year's return covers 6 April to 5 April, so a cessation that occurs in the following tax year does not change how the previous year was calculated. You just file the penultimate year as normal.</p>
 
-<p>The complication arises if your cessation date falls before your normal accounting date and you have already filed the penultimate year's return using the standard basis period. In that case, you may need to amend the penultimate year's return to reflect the actual cessation. This is rare in practice because most people stop trading after their normal accounting date or plan the cessation to align with it.</p>
+<p>The main thing to watch is whether any events in the final accounting period (such as balancing adjustments on capital allowances or a late change to accounting method) have knock-on effects on prior figures. In most straightforward cessations, the penultimate year's return stands without amendment.</p>
 
 <p>If you are unsure, check with an accountant. The <a href="/services">services page</a> on our site explains how we handle these adjustments.</p>
 
@@ -97,11 +91,11 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Do not forget the Annual Investment Allowance (AIA). You can claim AIA on assets bought in the final period, up to the £1,000,000 limit, provided the asset is used for the business before cessation.</p>
 
-<h2>What About Overlap Relief for Partnerships?</h2>
+<h2>What About Cessation for Partnerships?</h2>
 
-<p>Partnerships follow similar rules, but each partner has their own overlap relief figure. The partnership return (SA800) handles the overall profit allocation. Each partner then reports their share on their individual SA100 with the SA104 partnership pages attached.</p>
+<p>Partnerships follow the same tax-year basis from 2024/25. The partnership return (SA800) handles the overall profit allocation for the period 6 April to cessation date. Each partner then reports their share on their individual SA100 with the SA104 partnership pages attached.</p>
 
-<p>If you are a partner who stopped trading, you claim your individual overlap relief on your personal return. The partnership return itself does not claim overlap relief. That is a partner-level adjustment.</p>
+<p>Under the old current-year basis, each partner had their own overlap relief figure to claim on cessation. That mechanism no longer applies to cessations in 2025/26 or later: overlap relief was cleared during the 2023/24 transition year at the individual partner level.</p>
 
 <p>Make sure the partnership accounts show a clear cessation date. HMRC will expect the partnership to file a final return marked as "ceased". You can do this on the partnership tax return form itself. There is a box to tick for "ceased trading".</p>
 
@@ -109,7 +103,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If you account on an accruals basis (which most sole traders do once they are established), you include income earned before cessation even if you have not yet been paid. That is the standard rule. But if you switch to cash basis for the final period, you can instead include income when you actually receive it.</p>
 
-<p>HMRC allows you to use cash basis for your final period even if you used accruals before. This can simplify things if you have a lot of unpaid invoices. You simply include the cash received up to the cessation date and ignore the rest. Any amounts received after cessation are not taxable as trading income. They are capital receipts and may be subject to capital gains tax instead, but in practice HMRC often ignores small amounts.</p>
+<p>HMRC allows you to use cash basis for your final period even if you used accruals before. This can simplify things if you have a lot of unpaid invoices. You simply include the cash received up to the cessation date. Any amounts received after cessation that relate to your former trade are post-cessation receipts, taxable as income under ITTOIA 2005 ss.241-257. They are not capital receipts and are not subject to capital gains tax. Specific reliefs are available, including an election to treat a post-cessation receipt as arising in the cessation year rather than the year of receipt. Take advice if you have significant post-cessation amounts, as the right approach depends on your circumstances.</p>
 
 <p>If you have significant outstanding invoices, consider the tax implications. You may prefer to stay on accruals and include the debtors in your final accounts. Then if a debtor later defaults, you can claim a bad debt relief in your final return. Talk to an accountant about which approach works for your numbers.</p>
 
@@ -133,7 +127,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If you have payments on account to make for the following year, you can reduce them if your final year's profit is lower. You do this by completing the "reduction of payments on account" section on your return. Or you can wait and HMRC will recalculate them automatically after you file.</p>
 
-<p>If you overpaid tax in previous years because of overlap relief not yet claimed, you can claim a repayment. HMRC will process this once they receive your final return.</p>
+<p>If you overpaid tax in previous years for any reason, include a repayment claim in your final return. HMRC will process refunds once they receive it.</p>
 
 <p>Do not miss the deadline. Late filing penalties start at £100 even if you owe no tax. They escalate quickly.</p>
 
@@ -150,7 +144,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>Here are the errors we see most often when clients file their own cessation returns:</p>
 
 <ul>
-<li><strong>Forgetting overlap relief.</strong> This is the biggest one. People file their final return without claiming the relief they are entitled to. They overpay tax by hundreds or thousands of pounds.</li>
+<li><strong>Using the wrong profit period.</strong> Under the tax-year basis (from 2024/25), your final return covers profits from 6 April to your cessation date. If your accounts straddle 6 April, you must apportion profits to exclude days before 6 April. Getting this wrong means taxing too many or too few profits.</li>
 <li><strong>Using the wrong basis period.</strong> Some people try to file a full 12-month return for the final year, including profits earned after cessation. That is incorrect. The basis period ends on the cessation date.</li>
 <li><strong>Not doing a balancing adjustment on capital allowances.</strong> If you keep assets, you must still do the deemed disposal calculation. HMRC will query it if you do not.</li>
 <li><strong>Ignoring the previous year's return.</strong> If your cessation date creates an overlap with the previous year's basis period, you may need to amend the previous year's return. Most people miss this.</li>
@@ -166,8 +160,8 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <ul>
 <li>Confirm your cessation date and your final accounting period.</li>
 <li>Calculate your final year's profit using the correct basis period (6 April to cessation date).</li>
-<li>Find your overlap relief figure from your first year of trading.</li>
-<li>Deduct overlap relief from your final year's profit.</li>
+<li>If your accounts straddle 6 April, apportion profits by days to arrive at the amount falling between 6 April and your cessation date.</li>
+<li>Note that overlap relief (a feature of the old current-year basis) was cleared in the 2023/24 transition year and does not apply to 2025/26 cessations.</li>
 <li>Do a balancing adjustment on capital allowances for all business assets.</li>
 <li>Decide whether to use cash basis or accruals for the final period.</li>
 <li>File the SA103 with the "ceased" box ticked.</li>

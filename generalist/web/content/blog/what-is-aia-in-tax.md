@@ -1,4 +1,4 @@
----
+﻿---
 title: What Is AIA in Tax? A Guide to the Annual Investment Allowance
 slug: what-is-aia-in-tax
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/what-is-aia-in-tax
@@ -12,12 +12,10 @@ altText: UK accountant explaining Annual Investment Allowance to a business owne
 image: https://images.pexels.com/photos/7111577/pexels-photo-7111577.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: What Is AIA in Tax? A Guide to the Annual Investment Allowance
 summary: The Annual Investment Allowance (AIA) gives UK businesses 100% tax relief on qualifying plant and machinery spending up to £1m per year. This guide explains what qualifies, how to claim it, and how it interacts with other capital allowances.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"What Is AIA in Tax? A Guide to the Annual Investment Allowance","description":"The Annual Investment Allowance lets your business deduct the full cost of qualifying plant and machinery, up to £1,000,000 a year. Claim it in year one.","url":"https://www.hollowaydavies.co.uk/blog/corporation-tax/what-is-aia-in-tax","datePublished":"2026-05-20","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
-  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/corporation-tax/what-is-aia-in-tax"},"inLanguage":"en-GB","image":"https://images.pexels.com/photos/7111577/pexels-photo-7111577.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Corporation Tax","item":"https://www.hollowaydavies.co.uk/blog/corporation-tax"},{"@type":"ListItem","position":3,"name":"What Is AIA in Tax? A Guide to the Annual Investment Allowance","item":"https://www.hollowaydavies.co.uk/blog/corporation-tax/what-is-aia-in-tax"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I claim AIA on a car?","acceptedAnswer":{"@type":"Answer","text":"No. Cars do not qualify for the Annual Investment Allowance. Only vans, lorries, and certain specialist vehicles (taxis, driving school cars, hearses) qualify. For cars, you claim writing down allowances at 18% or 6% depending on CO2 emissions. If you buy a car for your business, keep the CO2 figure from the V5C logbook to determine the correct pool."}},{"@type":"Question","name":"Does AIA apply to second-hand assets?","acceptedAnswer":{"@type":"Answer","text":"Yes. Second-hand plant and machinery qualifies for AIA as long as it is new to your business. This is a key difference from Full Expensing, which only applies to new assets. If you buy a used digger, a second-hand CNC machine, or refurbished office furniture, you can claim AIA on
-  the full cost."}},{"@type":"Question","name":"What happens if my accounting period is less than 12 months?","acceptedAnswer":{"@type":"Answer","text":"The AIA limit reduces proportionally. For a 6-month period, the limit is £500,000. For a 9-month period, it is £750,000. This applies to the first and last accounting periods of a business, or if you change your year-end. Plan your capital purchases around your accounting period to maximise relief."}},{"@type":"Question","name":"Can I claim AIA if I am a sole trader?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Annual Investment Allowance is available to all business structures: limited companies, sole traders, and partnerships. The £1m limit applies per business. Sole traders claim AIA on their self assessment return (SA103 self-employment pages). The same qualifying rules apply regardless of structure."}}]}]}'
+schema: ""
 faqs:
 - question: Can I claim AIA on a car?
-  answer: No. Cars do not qualify for the Annual Investment Allowance. Only vans, lorries, and certain specialist vehicles (taxis, driving school cars, hearses) qualify. For cars, you claim writing down allowances at 18% or 6% depending on CO2 emissions. If you buy a car for your business, keep the CO2 figure from the V5C logbook to determine the correct pool.
+  answer: No. Cars do not qualify for the Annual Investment Allowance. Only vans, lorries, and certain specialist vehicles (taxis, driving school cars, hearses) qualify. For cars, you claim writing down allowances at 14% or 6% depending on CO2 emissions (the main-pool rate dropped from 18% to 14% for accounting periods beginning on or after 1 April 2026, per FA 2026 s.28; the special-rate pool at 6% is unchanged). If you buy a car for your business, keep the CO2 figure from the V5C logbook to determine the correct pool.
 - question: Does AIA apply to second-hand assets?
   answer: Yes. Second-hand plant and machinery qualifies for AIA as long as it is new to your business. This is a key difference from Full Expensing, which only applies to new assets. If you buy a used digger, a second-hand CNC machine, or refurbished office furniture, you can claim AIA on the full cost.
 - question: What happens if my accounting period is less than 12 months?
@@ -34,8 +32,8 @@ imageCredit:
   source_url: https://www.pexels.com/photo/close-up-shot-of-coins-7111577/
 metaTitle_prev: What Is AIA in Tax? Annual Investment Allowance Guide
 metaDescription_prev: What is AIA in tax? The Annual Investment Allowance lets you claim 100% relief on qualifying plant and machinery costs up to £1m per year.
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -61,7 +59,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>What Happens If You Spend More Than £1m?</h3>
 
-<p>Spending above the AIA limit is common for larger capital projects. Say you spend £1.4m on qualifying plant and machinery in a 12-month period. You claim AIA on the first £1m. The remaining £400,000 goes into your main pool and attracts writing down allowances at 18% per year on a reducing balance basis.</p>
+<p>Spending above the AIA limit is common for larger capital projects. Say you spend £1.4m on qualifying plant and machinery in a 12-month period. You claim AIA on the first £1m. The remaining £400,000 goes into your main pool and attracts writing down allowances at 14% per year on a reducing balance basis (18% for periods beginning before 1 April 2026, per FA 2026 s.28).</p>
 
 <p>Some assets qualify for a 6% special rate pool (integral features, long-life assets, thermal insulation). If your spending exceeds the AIA limit, the excess goes into the appropriate pool.</p>
 
@@ -106,7 +104,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>Common Mistakes with AIA</h2>
 
-<p><strong>Claiming on cars.</strong> Cars do not qualify for AIA. Only vans, lorries, and certain specialist vehicles (like taxis or driving school cars) qualify. If you buy a car for your business, you use the main pool at 18% or special rate pool at 6%, depending on CO2 emissions.</p>
+<p><strong>Claiming on cars.</strong> Cars do not qualify for AIA. Only vans, lorries, and certain specialist vehicles (like taxis or driving school cars) qualify. If you buy a car for your business, you use the main pool at 14% (18% for periods beginning before 1 April 2026) or special rate pool at 6%, depending on CO2 emissions.</p>
 
 <p><strong>Claiming on buildings.</strong> The building structure itself does not qualify. But fixtures within the building (heating, lighting, lifts, security) do. This is a common area of dispute with HMRC. Get a specialist capital allowances survey if you are buying a commercial property.</p>
 
@@ -118,7 +116,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Take a limited company in Manchester's Northern Quarter that manufactures bespoke furniture. In the year to 31 March 2025, they spend £85,000 on a new CNC router, £12,000 on a dust extraction system, and £8,000 on office computers. Total qualifying spend: £105,000.</p>
 
-<p>They claim AIA on the full £105,000. Their taxable profit for the year is £180,000. After the AIA claim, it drops to £75,000. Corporation tax at 19% (small profits rate) is £14,250 instead of £34,200. That is a saving of £19,950 in the year.</p>
+<p>They claim AIA on the full £105,000. Their taxable profit for the year is £180,000. After the AIA claim, it drops to £75,000. Corporation tax on the £75,000 profit is £16,125 (marginal relief applies: 25% x £75,000 = £18,750, less £175,000 x 3/200 = £2,625), compared with £43,950 on the full £180,000 (25% x £180,000 = £45,000, less £70,000 x 3/200 = £1,050). That is a saving of £27,825 in the year.</p>
 
 <p>Without AIA, they would have claimed writing down allowances at 18% on the main pool, giving relief of about £18,900 in year one. The AIA gives them the full £105,000 relief immediately.</p>
 
@@ -128,7 +126,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>For businesses with associated companies, coordinate purchases to stay within the shared limit. If you have two associated companies, the £1m is split between them. You can agree how to allocate it, but the total cannot exceed £1m.</p>
 
-<p>Our <a href="/services">ICAEW qualified team at Holloway Davies</a> can help you plan capital expenditure to maximise tax relief. We work with businesses across every sector, from trades and manufacturing to tech and creative agencies.</p>
+<p>Our <a href="/services">team at Holloway Davies</a> can help you plan capital expenditure to maximise tax relief. We work with businesses across every sector, from trades and manufacturing to tech and creative agencies.</p>
 
 <h2>AIA and the Construction Industry Scheme</h2>
 

@@ -45,7 +45,7 @@ faqs:
 
 <ul>
 <li>Prepares and files your annual Self Assessment tax return (form SA100 with the SA103 self-employment pages)</li>
-<li>Calculates your tax liability and Class 2 and Class 4 National Insurance contributions</li>
+<li>Calculates your tax liability and Class 4 National Insurance contributions (Class 2 NIC was abolished as a mandatory charge from 6 April 2024; voluntary Class 2 may apply only to those with profits below the small profits threshold who choose to protect their NI record)</li>
 <li>Advises on allowable expenses to reduce your tax bill</li>
 <li>Helps with VAT registration and VAT returns if your turnover exceeds the £90,000 threshold or you register voluntarily</li>
 <li>Advises on Making Tax Digital for Income Tax (mandatory from April 2026 if your qualifying income exceeds £50,000)</li>
@@ -64,7 +64,7 @@ faqs:
 <li>Files the annual confirmation statement with Companies House</li>
 <li>Runs your payroll (RTI submissions to HMRC, payslips, P32, P60, P45)</li>
 <li>Advises on the most tax-efficient director salary and dividend strategy</li>
-<li>Manages your director's loan account and advises on repayments before the 9-month deadline to avoid S455 tax at 33.75%</li>
+<li>Manages your director's loan account and advises on repayments before the 9-month deadline to avoid S455 tax at 35.75% for loans made on or after 6 April 2026 (33.75% for loans made in 2025/26)</li>
 <li>Handles VAT returns if you are VAT registered</li>
 <li>Advises on IR35 status and contract reviews</li>
 <li>Files your personal Self Assessment tax return (including dividend income from the company)</li>
@@ -77,11 +77,11 @@ faqs:
 
 <p>A general high street accountant might handle everything from pub accounts to property portfolios. A specialist freelancer accountant UK focuses on exactly your situation: one-person or small-team businesses with a contractor or freelance model.</p>
 
-<p>The difference matters. Specialist firms know the IR35 rules inside out. They understand the most efficient director salary levels (typically the personal allowance of £12,570 to avoid income tax and employer NI when the Employment Allowance covers the NI). They know how to structure dividends to use the basic rate band and the £500 dividend allowance.</p>
+<p>The difference matters. Specialist firms know the IR35 rules inside out. They understand the most efficient director salary levels. For a single-director company with no other employees, the Employment Allowance is not available, so many one-person contractors set salary at or near the £5,000 secondary threshold to avoid employer NIC altogether and draw the remainder as dividends; those who pay up to £12,570 avoid employee income tax and employee NIC but absorb employer NIC at 15% on earnings above £5,000 with no EA to offset it. They know how to structure dividends to use the basic rate band and the £500 dividend allowance.</p>
 
-<p>They also know the common pitfalls. For example, if your limited company lends you more than £10,000, that is a benefit in kind that must be reported on a P11D. If the loan is not repaid within 9 months and 1 day of the year-end, the company pays S455 tax at 33.75% on the outstanding amount. A general accountant might miss that. A specialist will flag it months in advance.</p>
+<p>They also know the common pitfalls. For example, if your limited company lends you more than £10,000, that is a benefit in kind that must be reported on a P11D. If the loan is not repaid within 9 months and 1 day of the year-end, the company pays S455 tax at 35.75% on the outstanding amount (for loans made on or after 6 April 2026; 33.75% for loans made in 2025/26). A general accountant might miss that. A specialist will flag it months in advance.</p>
 
-<p>As ICAEW qualified accountants, we see contractors come to us after their first year with a general accountant who filed the CT600 late, missed the dividend allowance, or did not advise on the director's loan account. The cost of fixing those mistakes often exceeds a year of specialist fees.</p>
+<p>We see contractors come to us after their first year with a general accountant who filed the CT600 late, missed the dividend allowance, or did not advise on the director's loan account. The cost of fixing those mistakes often exceeds a year of specialist fees.</p>
 
 <h2>IR35 and the Freelancer Accountant UK</h2>
 
@@ -169,7 +169,7 @@ faqs:
 
 <p>A freelancer accountant UK does more than file tax returns. They keep you compliant, save you tax, and free up your time to focus on earning. For a limited company contractor, the monthly fee is typically recovered many times over in tax savings alone. For a sole trader, the annual cost is modest and the peace of mind is significant.</p>
 
-<p>If you are unsure whether your current accountant is giving you the right advice, or if you are doing it yourself and wondering if it is time to get help, <a href="/contact">contact our team</a>. We are ICAEW qualified and specialise in freelancers and contractors across the UK.</p>
+<p>If you are unsure whether your current accountant is giving you the right advice, or if you are doing it yourself and wondering if it is time to get help, <a href="/contact">contact our team</a>. We are specialist accountants and work with freelancers and contractors across the UK.</p>
 
 <h2>Related articles in Sole Trader and Self Employment</h2>
 <ul>

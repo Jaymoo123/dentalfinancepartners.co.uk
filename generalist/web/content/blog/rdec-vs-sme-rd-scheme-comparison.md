@@ -83,7 +83,7 @@ faqs:
 
 <p>Under the merged scheme (post-April 2024), they would claim a 20% RDEC-style credit. That gives them a credit of £30,000. This is taxable, so after corporation tax at 25%, the net benefit is £22,500. They can use this to reduce their corporation tax bill, or if loss-making, claim a cash payment capped at their PAYE and NIC.</p>
 
-<p>If they were still under the old SME scheme (pre-April 2024), they would get an enhanced deduction of 186%, reducing taxable profits by £279,000. At 19% corporation tax, that saves them £53,010. A significant difference.</p>
+<p>If they were still under the old SME scheme (pre-April 2024), they would get an enhanced deduction of 186%, providing an additional deduction of £129,000 on top of the normal cost deduction. At 19% corporation tax, that extra relief saves them around £24,510. The old SME scheme was modestly more generous for profitable SMEs.</p>
 
 <p>The merged scheme is less generous for profitable SMEs. But for loss-making intensive companies, ERIS can still deliver a valuable cash credit.</p>
 
@@ -93,7 +93,7 @@ faqs:
 
 <p>If you are a one-person limited company, you are likely an SME. You would use the merged scheme rules. But if you are notified by HMRC that you must use RDEC, perhaps because you received a grant, then RDEC applies.</p>
 
-<p>For a contractor in Shoreditch running a six-figure consultancy, the difference matters. Under the merged scheme, a £50,000 R&D spend gives a £10,000 credit, worth about £7,500 after tax. Under the old SME scheme, the same spend would save around £9,500 in corporation tax. The gap is real.</p>
+<p>For a contractor in Shoreditch running a six-figure consultancy, the difference matters. Under the merged scheme, a £50,000 R&D spend gives a £10,000 credit, worth about £7,500 after tax. Under the old SME scheme, the same spend would save around £8,170 in corporation tax at the 19% small profits rate, or around £10,750 at the 25% main rate. The difference depends on your corporation tax rate.</p>
 
 <h2>How to Handle a Notification from HMRC</h2>
 
@@ -129,7 +129,7 @@ faqs:
 
 <p>If you are unsure which scheme applies to your company, check your company size against the EU thresholds, review any grants or state aid you have received, and look for any notification letters from HMRC. Then speak to an accountant who specialises in R&D claims.</p>
 
-<p>At Holloway Davies, our ICAEW qualified team handles R&D claims for businesses across every sector, from software consultancies in Manchester to engineering firms in Bristol. If your turnover has grown or you have received a grant, we can help you determine the correct scheme and prepare a robust claim.</p>
+<p>At Holloway Davies, our specialist team handles R&D claims for businesses across every sector, from software consultancies in Manchester to engineering firms in Bristol. If your turnover has grown or you have received a grant, we can help you determine the correct scheme and prepare a robust claim.</p>
 
 <p>If you would like to discuss your R&D claim or a notification from HMRC, contact us. We can review your situation and advise on the best approach.</p>
 

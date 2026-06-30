@@ -26,7 +26,7 @@ faqs:
   - question: "Can I file my own company accounts without an accountant?"
     answer: "Yes, you can file your own accounts as a director. Many micro-entities use software like FreeAgent or Xero to generate and file accounts. However, an accountant ensures compliance with UK GAAP, identifies tax reliefs, and keeps you on schedule. The cost of an accountant often outweighs the risk of penalties or missed reliefs."
   - question: "What is a confirmation statement and how is it different from annual accounts?"
-    answer: "A confirmation statement (form CS01) is a separate filing that confirms your company's registered address, directors, shareholders, and SIC code are correct. It must be filed every 12 months regardless of whether anything has changed. It costs £13 online. It is not the same as your annual accounts and has a different deadline."
+    answer: "A confirmation statement (form CS01) is a separate filing that confirms your company's registered address, directors, shareholders, and SIC code are correct. It must be filed every 12 months regardless of whether anything has changed. It costs £34 online (since 1 May 2024). It is not the same as your annual accounts and has a different deadline."
 ---
 
 <p>Filing your company accounts is not optional. Every limited company registered in the UK must file annual accounts with Companies House and deliver a corporation tax return to HMRC. Miss the deadlines and you face automatic penalties, a damaged credit rating, and potential director disqualification.</p>
@@ -47,8 +47,8 @@ faqs:
 <p>Every private limited company (Ltd) registered at Companies House must file accounts each year. This includes:</p>
 <ul>
 <li>Single-director companies</li>
-<li>Micro-entities (turnover up to £632,000, balance sheet total up to £316,000, average employees up to 10)</li>
-<li>Small companies (turnover up to £10.2 million, balance sheet total up to £5.1 million, average employees up to 50)</li>
+<li>Micro-entities (turnover up to £1 million, balance sheet total up to £500,000, average employees up to 10; thresholds for periods beginning on or after 6 April 2025, up from £632,000 / £316,000 for earlier periods)</li>
+<li>Small companies (turnover up to £15 million, balance sheet total up to £7.5 million, average employees up to 50; thresholds for periods beginning on or after 6 April 2025, up from £10.2 million / £5.1 million for earlier periods)</li>
 <li>Medium and large companies</li>
 <li>Dormant companies (though the filing requirements are simpler)</li>
 </ul>
@@ -73,7 +73,7 @@ faqs:
 <h2>Step-by-Step: How to File Company Accounts in the UK</h2>
 <h3>Step 1: Prepare Your Accounts from Your Bookkeeping Records</h3>
 <p>Before you file anything, your accounts must be prepared. This means taking your raw bookkeeping data (sales invoices, purchase receipts, bank statements, payroll records) and turning it into a set of statutory accounts.</p>
-<p>Most small companies use accounting software like Xero, FreeAgent, QuickBooks, or Sage 50. These tools can generate draft accounts automatically. But the final accounts must comply with UK accounting standards. If you are not confident preparing accounts yourself, an ICAEW-qualified accountant like our team at Holloway Davies will handle this for you.</p>
+<p>Most small companies use accounting software like Xero, FreeAgent, QuickBooks, or Sage 50. These tools can generate draft accounts automatically. But the final accounts must comply with UK accounting standards. If you are not confident preparing accounts yourself, a specialist accountant like our team at Holloway Davies will handle this for you.</p>
 <p>The accounts must include a balance sheet signed by a director. The director's signature confirms the accounts are approved. Without that signature, Companies House will reject the filing.</p>
 
 <h3>Step 2: Decide Which Filing Format to Use at Companies House</h3>
@@ -120,7 +120,7 @@ faqs:
 <p>I see the same errors year after year. Here are the most frequent:</p>
 <ul>
 <li><strong>Filing the wrong accounts.</strong> Directors file abridged accounts at Companies House but forget HMRC still needs the full set. HMRC will chase you for the missing information.</li>
-<li><strong>Missing the confirmation statement.</strong> This is separate from the accounts. You must file a confirmation statement (form CS01) every 12 months, even if nothing has changed. It costs £13 online. Many directors confuse it with the annual accounts and miss the deadline.</li>
+<li><strong>Missing the confirmation statement.</strong> This is separate from the accounts. You must file a confirmation statement (form CS01) every 12 months, even if nothing has changed. It costs £34 online (since 1 May 2024). Many directors confuse it with the annual accounts and miss the deadline.</li>
 <li><strong>Not signing the balance sheet.</strong> Companies House will reject the filing if the director's signature is missing. This can delay the process and trigger a late filing penalty.</li>
 <li><strong>Using the wrong authentication code.</strong> If you have changed accountants or lost the code, request a new one well before the deadline. The postal delay can catch you out.</li>
 </ul>
@@ -128,7 +128,7 @@ faqs:
 <h2>Do You Need an Accountant to File Company Accounts?</h2>
 <p>Legally, no. You can file your own accounts as a director. Many micro-entities and small companies do exactly that using software like FreeAgent or Crunch.</p>
 <p>Practically, most directors benefit from professional help. An accountant ensures the accounts comply with UK GAAP, identifies tax reliefs you might miss (capital allowances, R&D credits, trivial benefits), and keeps you on the right side of HMRC. The cost of an accountant is usually less than the cost of one penalty or one missed tax relief.</p>
-<p>Our ICAEW qualified team at Holloway Davies handles the full filing process for clients across the UK. We prepare the accounts, file with Companies House, submit the CT600, and advise on tax planning. If you would rather focus on running your business, <a href="/services">speak to us about our accounts preparation service</a>.</p>
+<p>Our experienced team at Holloway Davies handles the full filing process for clients across the UK. We prepare the accounts, file with Companies House, submit the CT600, and advise on tax planning. If you would rather focus on running your business, <a href="/services">speak to us about our accounts preparation service</a>.</p>
 
 <h2>What About Dormant Companies?</h2>
 <p>If your company has no significant transactions during the year (no income, no expenses except filing fees), you can file dormant company accounts. These are simpler. You file a balance sheet only, with a note confirming the company is dormant.</p>

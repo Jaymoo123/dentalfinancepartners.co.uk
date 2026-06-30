@@ -1,4 +1,4 @@
----
+﻿---
 title: 'QuickBooks vs Xero: Which Cloud Accounting Software is Best for Your UK Small Business?'
 slug: quickbooks-vs-xero-cloud-accounting-comparison
 canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/quickbooks-vs-xero-cloud-accounting-comparison
@@ -8,6 +8,11 @@ author: Holloway Davies Editorial Team
 category: Bookkeeping and Compliance
 metaTitle: 'QuickBooks vs Xero UK: Which Suits Your Small Business'
 metaDescription: Choose between QuickBooks and Xero for a UK small business. QuickBooks Simple Start is around £14 a month. Compare pricing, payroll and MTD.
+keyTakeaways:
+  - "MTD for Income Tax Self Assessment becomes mandatory from April 2026 for those with qualifying income over £50,000."
+  - "Xero includes payroll in its Standard and Premium plans, while QuickBooks charges an extra fee per employee."
+  - "QuickBooks Plus and Advanced include built-in inventory management, whereas Xero requires a third-party app for stock tracking."
+  - "Xero integrates with over 1,000 third-party apps, including Dext, Stripe, and GoCardless."
 altText: Two laptop screens showing QuickBooks and Xero accounting software dashboards on a desk in a modern UK office
 image: /blog/quickbooks-vs-xero-cloud-accounting-comparison.jpg
 imageCredit:
@@ -17,9 +22,7 @@ imageCredit:
   source: Pexels
 h1: 'QuickBooks vs Xero: Cloud Accounting Software Comparison for UK Small Businesses'
 summary: Choosing between QuickBooks and Xero for your UK small business? We compare pricing, key features, MTD compliance, and which software suits limited companies, sole traders, and partnerships.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"QuickBooks vs Xero: Which Cloud Accounting Software is Best for Your UK Small Business?","description":"Choose between QuickBooks and Xero for a UK small business. QuickBooks Simple Start is around £14 a month. Compare pricing, payroll and MTD.","url":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/quickbooks-vs-xero-cloud-accounting-comparison","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
-  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/quickbooks-vs-xero-cloud-accounting-comparison"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/quickbooks-vs-xero-cloud-accounting-comparison.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Bookkeeping and Compliance","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance"},{"@type":"ListItem","position":3,"name":"QuickBooks vs Xero: Which Cloud Accounting Software is Best for Your UK Small Business?","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/quickbooks-vs-xero-cloud-accounting-comparison"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I use both QuickBooks and Xero at the same time?","acceptedAnswer":{"@type":"Answer","text":"Technically yes, but it creates unnecessary complexity. You would be duplicating data entry, risking reconciliation errors, and paying for two subscriptions. Pick one platform and stick with it. If you need to switch later, migrate properly rather than running both in parallel."}},{"@type":"Question","name":"Which platform is better for MTD for ITSA?","acceptedAnswer":{"@type":"Answer","text":"Both QuickBooks and Xero are fully compatible with Making Tax Digital for Income Tax Self Assessment. From April 2026, you will need to use MTD-compatible software if your qualifying income exceeds £50,000. Both platforms
-  will meet that requirement. The choice between them depends on your broader accounting needs, not MTD compliance alone."}},{"@type":"Question","name":"Do I need to buy payroll software separately with QuickBooks?","acceptedAnswer":{"@type":"Answer","text":"Yes, QuickBooks Payroll is an add-on that costs extra per employee per month. Xero includes payroll in its Standard and Premium plans (up to five employees on Standard, unlimited on Premium). If you have employees, factor that cost into your comparison. For a limited company director with no other employees, the payroll add-on may not be necessary if you use a separate payroll provider."}},{"@type":"Question","name":"Can my accountant access my QuickBooks or Xero data remotely?","acceptedAnswer":{"@type":"Answer","text":"Yes, both platforms give your accountant full remote access. They can log in, review transactions, run reports, and prepare your tax returns without you sending files. Xero was designed with accountant collaboration as a core feature, but QuickBooks offers similar functionality. If you work with an accountant, ask which platform they prefer before you choose."}}]}]}'
+schema: ""
 faqs:
 - question: Can I use both QuickBooks and Xero at the same time?
   answer: Technically yes, but it creates unnecessary complexity. You would be duplicating data entry, risking reconciliation errors, and paying for two subscriptions. Pick one platform and stick with it. If you need to switch later, migrate properly rather than running both in parallel.
@@ -32,8 +35,8 @@ faqs:
 metaTitle_prev: 'QuickBooks vs Xero: Which is Best for UK Small Businesses?'
 metaDescription_prev: Compare QuickBooks and Xero for UK small businesses. We cover pricing, features, MTD compliance, and which software suits your business type.
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -170,7 +173,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Xero was built with accountant collaboration in mind. Its practice dashboard lets accountants see all their clients in one view. QuickBooks has improved its accountant tools, but Xero still leads here for multi-client management.</p>
 
-<p>As ICAEW qualified accountants, we work with clients on both platforms. We do not have a bias toward one over the other. We recommend the platform that fits your business, not ours.</p>
+<p>We work with clients on both platforms. We do not have a bias toward one over the other. We recommend the platform that fits your business, not ours.</p>
 
 <h2>Making the Switch: Migrating from One to the Other</h2>
 

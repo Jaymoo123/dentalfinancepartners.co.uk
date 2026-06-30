@@ -120,7 +120,7 @@ faqs:
 
 <h2>How Holloway Davies Can Help</h2>
 
-<p>We are ICAEW qualified accountants based in the UK. We work with forex traders, contractors, limited companies and sole traders across every sector. Our team understands the specific tax rules that apply to currency trading, spread betting and CFDs.</p>
+<p>We are experienced accountants based in the UK. We work with forex traders, contractors, limited companies and sole traders across every sector. Our team understands the specific tax rules that apply to currency trading, spread betting and CFDs.</p>
 
 <p>We can review your trading activity and tell you whether HMRC would class you as a trader or an investor. We can set up your bookkeeping and record-keeping systems. We can prepare and file your self assessment tax return or your company accounts. And we can help you decide whether incorporating your trading business makes financial sense.</p>
 

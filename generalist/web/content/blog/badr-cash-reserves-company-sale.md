@@ -16,7 +16,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/rubber-band-wrapped-on-rolled-bills-4386472/"
   source: "Pexels"
 h1: "Can You Claim BADR When Your Company Has Large Cash Reserves?"
-summary: "Accumulated cash in your company can complicate a BADR claim. HMRC may argue the cash is a separate asset, not a business asset. We explain how to structure the sale to protect your 14% CGT rate."
+summary: "Accumulated cash in your company can complicate a BADR claim. HMRC may argue the cash is a separate asset, not a business asset. We explain how to structure the sale to protect your 18% BADR rate (the current rate for disposals from 6 April 2026)."
 schema: ""
 faqs:
   - question: "Can I pay a dividend from retained profits to reduce the cash in the company before a sale?"
@@ -24,7 +24,7 @@ faqs:
   - question: "What if the cash is needed for the company's trade but HMRC still challenges the BADR claim?"
     answer: "Document your rationale thoroughly. Board minutes should record why the cash is needed. Cash flow forecasts and contracts for planned expenditure strengthen your case. If HMRC still challenges, you may need to argue that the cash is held for trading purposes. Professional advice and proper documentation significantly reduce the risk."
   - question: "Does the BADR £1 million lifetime limit affect how cash reserves are treated?"
-    answer: "Not directly. The cash issue is about whether the gain qualifies for BADR at all. If your total gain is under £1 million, the apportionment between trading and non-trading elements determines how much of the gain gets the 14% rate. If your gain exceeds £1 million, the excess is taxed at standard rates regardless of the cash issue."
+    answer: "Not directly. The cash issue is about whether the gain qualifies for BADR at all. If your total gain is under £1 million, the apportionment between trading and non-trading elements determines how much of the gain gets the 18% BADR rate (from 6 April 2026). If your gain exceeds £1 million, the excess is taxed at standard rates regardless of the cash issue."
   - question: "Can I use a pension contribution to remove surplus cash from the company before a sale?"
     answer: "Yes. Employer pension contributions are corporation tax deductible and not subject to NI or income tax on extraction. You can contribute up to £60,000 per year (or more using carry forward). This is often the most tax-efficient way to remove surplus cash. The contribution must be genuine and properly documented."
 ---
@@ -33,15 +33,15 @@ faqs:
 
 <p>You have built up a successful limited company over several years. Maybe you are a contractor in Manchester's Northern Quarter, a software consultancy in Shoreditch, or a family-run construction firm in Birmingham's Jewellery Quarter. The company has been profitable, you have taken dividends each year, and there is now a significant cash balance sitting on the balance sheet. Perhaps £80,000. Perhaps £250,000. Perhaps more.</p>
 
-<p>Now you are considering selling the company. You want to claim Business Asset Disposal Relief (BADR) on the gain, locking in the 14% CGT rate that applies from April 2025 (rising to 18% from April 2026). But there is a problem. HMRC may argue that the cash in the company is not a business asset. If they win that argument, part of your gain becomes taxable at the full 24% CGT rate for non-residential assets.</p>
+<p>Now you are considering selling the company. You want to claim Business Asset Disposal Relief (BADR) on the gain, locking in the 18% CGT rate that applies from 6 April 2026 (it was 14% for disposals from 6 April 2025 to 5 April 2026, and 10% before that). But there is a problem. HMRC may argue that the cash in the company is not a business asset. If they win that argument, part of your gain becomes taxable at the full 24% CGT rate for non-residential assets.</p>
 
 <p>This is the distribution versus capital gain issue. It is one of the most common and most misunderstood traps in BADR planning. And it catches business owners who have been disciplined about retaining profits.</p>
 
-<p>As ICAEW qualified accountants, we deal with this regularly. The answer is not always straightforward, but there are clear rules and practical steps you can take. Let us work through them.</p>
+<p>We deal with this regularly. The answer is not always straightforward, but there are clear rules and practical steps you can take. Let us work through them.</p>
 
 <h2>How BADR Works on a Share Sale</h2>
 
-<p>BADR (formerly Entrepreneurs' Relief) reduces the CGT rate on qualifying gains to 14% for disposals from 6 April 2025. From 6 April 2026, the rate rises to 18%. The lifetime limit is £1 million of gains. Gains above that limit are taxed at the standard CGT rates: 18% for basic rate taxpayers and 24% for higher rate taxpayers on non-residential assets.</p>
+<p>BADR (formerly Entrepreneurs' Relief) reduces the CGT rate on qualifying gains to 18% for disposals from 6 April 2026 (it was 14% for disposals from 6 April 2025 to 5 April 2026, and 10% before that). The lifetime limit is £1 million of gains. Gains above that limit are taxed at the standard CGT rates: 18% for basic rate taxpayers and 24% for higher rate taxpayers on non-residential assets.</p>
 
 <p>To qualify for BADR on a share sale, you must meet three conditions:</p>
 
@@ -61,7 +61,7 @@ faqs:
 
 <p>This is not a new argument. The case of <em>HMRC v John L Brown (2010)</em> established that surplus cash can be treated as an investment asset. More recently, <em>HMRC v David J C P Davies (2023)</em> confirmed that the question is whether the cash is held for the purposes of the trade or as a separate investment.</p>
 
-<p>The practical effect is that you could end up paying 24% CGT on part of your gain instead of 14%. On a gain of £500,000, that is a difference of £50,000 in tax. On a gain of £1 million, it is £100,000.</p>
+<p>The practical effect is that you could end up paying 24% CGT on part of your gain instead of 18% (the BADR rate from 6 April 2026). On a gain of £500,000, that is a difference of £30,000 in tax. On a gain of £1 million, it is £60,000.</p>
 
 <h2>When Is Cash Considered Surplus?</h2>
 
@@ -91,9 +91,9 @@ faqs:
 
 <h3>Option 1: Extract the Cash as a Dividend</h3>
 
-<p>The simplest solution is to pay the surplus cash out as a dividend before you sell the shares. This reduces the company's value and removes the non-trading asset. You pay dividend tax on the extraction (at 8.75%, 33.75% or 39.35% depending on your tax bracket) but the remaining gain on the share sale qualifies for BADR.</p>
+<p>The simplest solution is to pay the surplus cash out as a dividend before you sell the shares. This reduces the company's value and removes the non-trading asset. You pay dividend tax on the extraction (at 10.75%, 35.75% or 39.35% from 6 April 2026, depending on your tax bracket) but the remaining gain on the share sale qualifies for BADR.</p>
 
-<p>The maths often works. If you have £100,000 of surplus cash and you are a higher rate taxpayer, you pay £33,750 in dividend tax (after the £500 allowance). The company's value drops by £100,000, so your capital gain reduces by the same amount. You save 14% BADR on £100,000 (£14,000) but pay 33.75% on the dividend. Net cost: £19,750. That is better than paying 24% on the £100,000 gain (£24,000) and still having the cash in the company.</p>
+<p>The maths often works. If you have £100,000 of surplus cash and you are a higher rate taxpayer, you pay approximately £35,571 in dividend tax (£99,500 after the £500 allowance, taxed at the 35.75% upper rate from 6 April 2026). The company's value drops by £100,000, so your capital gain reduces by the same amount. You save 18% BADR on £100,000 (£18,000) but pay 35.75% on the dividend. Net cost: £17,571. That is better than paying 24% on the £100,000 gain (£24,000) and still having the cash in the company.</p>
 
 <p>But there is a timing issue. You need to pay the dividend before you agree the sale. If the buyer knows the dividend is coming, they may reduce their offer price. And you need sufficient distributable reserves to pay the dividend.</p>
 
@@ -125,7 +125,7 @@ faqs:
 
 <h2>What About the BADR £1 Million Lifetime Limit?</h2>
 
-<p>The BADR limit is £1 million of gains. If your total gain (including the cash element) is below £1 million, you still get the 14% rate on the trading portion. The non-trading portion is taxed at the standard CGT rates. If your gain exceeds £1 million, the excess is taxed at standard rates regardless.</p>
+<p>The BADR limit is £1 million of gains. If your total gain (including the cash element) is below £1 million, you still get the 18% BADR rate on the trading portion. The non-trading portion is taxed at the standard CGT rates. If your gain exceeds £1 million, the excess is taxed at standard rates regardless.</p>
 
 <p>This means the cash issue is most painful when your gain is under £1 million. If you are already above the limit, the apportionment matters less because the excess is taxed at standard rates anyway.</p>
 
@@ -143,4 +143,4 @@ faqs:
 
 <p>If you are unsure whether your company's cash reserves will cause a problem, speak to a qualified accountant. The rules are not black and white, and the right approach depends on your specific circumstances.</p>
 
-<p>Our <a href="/services">ICAEW qualified team</a> regularly advises business owners on BADR planning. We can review your balance sheet, identify risks, and structure the sale to minimise tax. <a href="/contact">Get in touch</a> to discuss your situation.</p>
+<p>Our <a href="/services">specialist team</a> regularly advises business owners on BADR planning. We can review your balance sheet, identify risks, and structure the sale to minimise tax. <a href="/contact">Get in touch</a> to discuss your situation.</p>

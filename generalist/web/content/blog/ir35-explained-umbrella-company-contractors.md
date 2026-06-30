@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
 metaTitle: "IR35 Explained for Umbrella Company Contractors | UK Tax"
-metaDescription: "IR35 explained for umbrella company contractors. How HMRC rules apply to your pay, tax deductions, and employment rights. Practical guide from ICAEW"
+metaDescription: "IR35 explained for umbrella company contractors. How HMRC rules apply to your pay, tax deductions, and employment rights. Practical guide from specialist accountants"
 altText: "Professional contractor reviewing payslip with umbrella company deductions at modern UK office desk"
 image: "/blog/ir35-explained-umbrella-company-contractors.jpg"
 imageCredit:
@@ -24,7 +24,7 @@ faqs:
   - question: "Can I claim expenses through an umbrella company?"
     answer: "Only if you are not under supervision, direction, or control (SDC) by the end client. Most umbrella company contractors are under SDC, which means travel and subsistence expenses are not deductible since April 2016. Your umbrella company should ask you to complete an SDC determination. Be honest on this form. Incorrect claims can lead to HMRC penalties."
   - question: "How much tax will I pay through an umbrella company?"
-    answer: "You pay income tax at 20%, 40%, or 45% depending on your total taxable pay, plus employee National Insurance at 8% on earnings between £12,570 and £50,270 and 2% above that. Your umbrella also deducts employer NI at 13.8% and typically passes the cost to you via a reduced gross rate. On a £500/day contract, expect net take-home pay of around 56-60% of your assignment rate after all deductions."
+    answer: "You pay income tax at 20%, 40%, or 45% depending on your total taxable pay, plus employee National Insurance at 8% on earnings between £12,570 and £50,270 and 2% above that. Your umbrella also deducts employer NI at 15% (from 6 April 2025) and typically passes the cost to you via a reduced gross rate. On a £500/day contract, expect net take-home pay of around 56-60% of your assignment rate after all deductions."
   - question: "Should I use an umbrella company or a limited company for IR35?"
     answer: "Use an umbrella company if your contract is inside IR35, short-term, or if you want minimal admin. Use a limited company if your contract is outside IR35 and you earn over £400 per day. The limited company route typically saves you £8,000-£12,000 per year on a £500/day contract, but requires filing accounts, a confirmation statement, and corporation tax returns."
 ---
@@ -44,7 +44,7 @@ faqs:
 <p>The umbrella company takes your gross assignment rate and deducts:</p>
 
 <ul>
-<li>Employer's National Insurance at 13.8% above the secondary threshold (£9,100 for 2025/26)</li>
+<li>Employer's National Insurance at 15% above the secondary threshold (£5,000 for 2025/26 and 2026/27)</li>
 <li>Apprenticeship Levy at 0.5% if your annual pay exceeds £3 million across the umbrella's entire payroll (most umbrellas pass this cost to you)</li>
 <li>The umbrella company's margin (typically £75 to £150 per week or a percentage of your rate)</li>
 <li>Employee's National Insurance at 8% on earnings between £12,570 and £50,270, then 2% above that</li>
@@ -99,24 +99,24 @@ faqs:
 <li>Director salary: £12,570 (employer NI covered by Employment Allowance if eligible)</li>
 <li>Corporation tax on remaining profit (£94,430): 19% on first £50,000 (£9,500), then 25% on £44,430 (£11,107.50) with marginal relief. Rough total corporation tax: £20,607.50</li>
 <li>Post-tax profit available as dividends: £73,822.50</li>
-<li>Dividend tax: first £500 at 0%, next £37,200 at 8.75% (£3,255), remaining £36,122.50 at 33.75% (£12,191.34)</li>
-<li>Total personal tax: £3,255 + £12,191.34 = £15,446.34</li>
-<li>Net personal income after all tax: £12,570 salary + £73,822.50 dividends - £15,446.34 dividend tax = £70,946.16</li>
+<li>Dividend tax (2026/27 rates): first £500 at 0%, next £37,200 at 10.75% (£3,999), remaining £36,122.50 at 35.75% (£12,913.79)</li>
+<li>Total personal tax: £3,999 + £12,913.79 = £16,912.79</li>
+<li>Net personal income after all tax: £12,570 salary + £73,822.50 dividends - £16,912.79 dividend tax = £69,479.71</li>
 </ul>
 
 <p><strong>Umbrella company, inside IR35 (or always PAYE):</strong></p>
 <ul>
 <li>Gross assignment rate: £110,000</li>
-<li>Employer NI at 13.8%: £15,180</li>
+<li>Employer NI at 15% (rate from 6 April 2025): £15,750</li>
 <li>Apprenticeship Levy at 0.5%: £550</li>
 <li>Umbrella margin at £100/week: £5,200</li>
-<li>Taxable pay after deductions: £110,000 - £15,180 - £550 - £5,200 = £89,070</li>
-<li>Income tax: £12,570 at 0%, £37,700 at 20% (£7,540), £38,800 at 40% (£15,520) = £23,060</li>
-<li>Employee NI: £12,570 at 0%, £37,700 at 8% (£3,016), £38,800 at 2% (£776) = £3,792</li>
-<li>Net pay: £89,070 - £23,060 - £3,792 = £62,218</li>
+<li>Taxable pay after deductions: £110,000 - £15,750 - £550 - £5,200 = £88,500</li>
+<li>Income tax: £12,570 at 0%, £37,700 at 20% (£7,540), £38,230 at 40% (£15,292) = £22,832</li>
+<li>Employee NI: £12,570 at 0%, £37,700 at 8% (£3,016), £38,230 at 2% (£765) = £3,781</li>
+<li>Net pay: £88,500 - £22,832 - £3,781 = £61,887</li>
 </ul>
 
-<p>The difference is roughly £8,728 per year in favour of the limited company route. That gap narrows if you factor in accountancy fees, Companies House filing costs, and the administrative burden of running a limited company. But it is still a significant difference.</p>
+<p>The difference is roughly £7,593 per year in favour of the limited company route. That gap narrows if you factor in accountancy fees, Companies House filing costs, and the administrative burden of running a limited company. But it is still a significant difference.</p>
 
 <p>If your role is inside IR35 and you cannot operate outside it, the umbrella company becomes the simpler option. You avoid the compliance overhead of a limited company and still get a similar net outcome to operating a limited company inside IR35.</p>
 
@@ -142,7 +142,7 @@ faqs:
 <p>Your payslip should show:</p>
 <ul>
 <li>Your gross assignment rate for the period</li>
-<li>Employer NI deducted (13.8% on earnings above £9,100 annualised)</li>
+<li>Employer NI deducted (15% on earnings above £5,000 annualised; rate from 6 April 2025)</li>
 <li>Apprenticeship Levy if applicable</li>
 <li>The umbrella company's margin</li>
 <li>Your taxable gross pay (assignment rate minus employer deductions and margin)</li>
@@ -168,7 +168,7 @@ faqs:
 
 <p>It does not make sense if your contract is genuinely outside IR35 and you are willing to run a limited company. The tax savings from the limited company route are substantial enough to justify the extra admin, provided you are comfortable with the responsibilities of being a company director.</p>
 
-<p>If you are unsure which structure fits your situation, speak to an accountant who understands contractor taxation. As ICAEW qualified accountants, we see contractors in both structures every week. The right choice depends on your rate, your contract terms, your client's size, and your personal tax position.</p>
+<p>If you are unsure which structure fits your situation, speak to an accountant who understands contractor taxation. We see contractors in both structures every week. The right choice depends on your rate, your contract terms, your client's size, and your personal tax position.</p>
 
 <p>For more detail on the limited company side, read our guide on <a href="/blog/director-pay-and-dividends">director pay and dividends</a>. If you are considering incorporating, our <a href="/incorporation">incorporation page</a> walks through the process.</p>
 

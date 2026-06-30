@@ -33,7 +33,7 @@ faqs:
 
 <p>This is not a theoretical problem. Many company directors sell shares in stages. You might sell 40% of your holding one year and the rest later. Or you might sell shares in your company, then later sell shares in a second qualifying business. Each sale uses up part of your £1m BADR allowance.</p>
 
-<p>As ICAEW qualified accountants, we work with business owners who need to calculate BADR relief across multiple tax years. The rules are specific and the timing matters. Get it wrong and you could overpay CGT by thousands of pounds.</p>
+<p>We work with business owners who need to calculate BADR relief across multiple tax years. The rules are specific and the timing matters. Get it wrong and you could overpay CGT by thousands of pounds.</p>
 
 <h2>What is BADR and How Does the £1m Limit Work?</h2>
 
@@ -95,7 +95,7 @@ faqs:
 <li>Remaining lifetime allowance: £550,000</li>
 </ul>
 
-<p>Sarah pays £13,500 in 2024/25 and £44,100 in 2025/26. Total CGT: £57,600. Without BADR, the 2024/25 gain would have been taxed at 10%/20% and the 2025/26 gain at 18%/24%. Her total saving is substantial.</p>
+<p>Sarah pays £13,500 in 2024/25 and £44,100 in 2025/26. Total CGT: £57,600. Without BADR, both gains would have been taxed at the standard CGT rates of 18%/24% (applying since 30 October 2024 for all chargeable assets). Her total saving is substantial.</p>
 
 <h2>What Happens If Your Gain Exceeds the Remaining Allowance?</h2>
 

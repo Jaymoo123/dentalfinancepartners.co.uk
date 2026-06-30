@@ -35,7 +35,7 @@ faqs:
 
 <p>A general practice accountant might handle your annual self assessment return without issue. But when you are making decisions about buying, holding, refurbishing, or selling property, you need an accountant who specialises in property tax. An accountant for property will know the reliefs, the traps, and the planning opportunities that a generalist may miss.</p>
 
-<p>At Holloway Davies, our ICAEW qualified team works with landlords, property investors, and property developers across the UK. We see the same mistakes repeated. This article explains why a specialist property accountant is worth the fee and what you should look for when choosing one.</p>
+<p>At Holloway Davies, our experienced team works with landlords, property investors, and property developers across the UK. We see the same mistakes repeated. This article explains why a specialist property accountant is worth the fee and what you should look for when choosing one.</p>
 
 <h2>What Makes Property Tax Different?</h2>
 
@@ -49,7 +49,7 @@ faqs:
 
 <h3>SDLT Surcharges and Multiple Dwellings Relief</h3>
 
-<p>Buying a residential property in the UK triggers SDLT. If you already own a property, you pay a 3% surcharge on top of the standard rates. For companies buying residential property worth over £500,000, the surcharge is 15% unless the property qualifies for relief.</p>
+<p>Buying a residential property in the UK triggers SDLT. If you already own a property, you pay a 5% surcharge on top of the standard rates (increased from 3% on 31 October 2024). For companies buying residential property worth over £500,000, the surcharge is 15% unless the property qualifies for relief.</p>
 
 <p>Multiple Dwellings Relief (MDR) was abolished from 1 June 2024. If you bought multiple properties before that date, you may still have claims to make. A specialist property accountant will know the transitional rules and whether you can still benefit.</p>
 
@@ -67,7 +67,7 @@ faqs:
 
 <p>If you sell a property used in a trading business, you may qualify for Business Asset Disposal Relief (BADR). The rate is 14% for disposals from 6 April 2025, rising to 18% from 6 April 2026. The lifetime limit is £1 million.</p>
 
-<p>Property letting is not normally a trade for BADR purposes. But if you are a property developer or a furnished holiday lettings business, you may qualify. The rules around what counts as a trade are specific. A general accountant may not spot the opportunity. A specialist will.</p>
+<p>Property letting is not normally a trade for BADR purposes. But if you are a property developer, you may qualify. Note that the furnished holiday lettings (FHL) regime was abolished from 6 April 2025: FHL properties are now treated as ordinary property businesses, with no trading status, no FHL capital allowances, and no BADR eligibility under the old FHL rules. The rules around what counts as a trade are specific. A general accountant may not spot the opportunity. A specialist will.</p>
 
 <h2>What a Specialist Property Accountant Does</h2>
 
@@ -105,7 +105,7 @@ faqs:
 <li>You are a higher-rate or additional-rate taxpayer with mortgage interest</li>
 <li>You have sold a property in the last 60 days</li>
 <li>You are buying or selling a property worth over £500,000</li>
-<li>You run a furnished holiday lettings business</li>
+<li>You operated a furnished holiday lettings business before April 2025 and need help with the transition (the FHL regime was abolished from 6 April 2025)</li>
 <li>You are a property developer or trader</li>
 <li>You have overseas property or non-resident status</li>
 </ul>
@@ -121,12 +121,12 @@ faqs:
 <li>Do you handle SDLT returns and 60-day CGT returns in-house?</li>
 <li>Can you show me a worked example of incorporation relief?</li>
 <li>Do you advise on capital allowances for residential property?</li>
-<li>Are you familiar with the rules for furnished holiday lettings?</li>
+<li>Are you familiar with the abolition of the furnished holiday lettings regime from 6 April 2025 and the transitional consequences for former FHL owners?</li>
 </ul>
 
 <p>A genuine specialist will answer these questions confidently and with specific examples. A generalist will give vague answers or try to change the subject.</p>
 
-<p>At Holloway Davies, we are ICAEW qualified and work with property investors across the UK, from a single buy-to-let landlord in Camden to a portfolio of 20 properties in Manchester's Northern Quarter. We handle the full range of property tax work, from compliance to planning to exit strategy. If you want to speak to someone who understands property tax, <a href="/contact">contact our team</a>.</p>
+<p>At Holloway Davies, we work with property investors across the UK, from a single buy-to-let landlord in Camden to a portfolio of 20 properties in Manchester's Northern Quarter. We handle the full range of property tax work, from compliance to planning to exit strategy. If you want to speak to someone who understands property tax, <a href="/contact">contact our team</a>.</p>
 
 <h2>The Cost of Not Having a Specialist</h2>
 

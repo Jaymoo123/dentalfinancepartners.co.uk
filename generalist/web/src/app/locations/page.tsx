@@ -8,13 +8,13 @@ import { siteConfig } from "@/config/site";
 import { CITIES } from "./[slug]/data";
 
 export const metadata: Metadata = {
-  title: `Accountants near you across the UK | ${siteConfig.name}`,
+  title: `Accountants near you across the UK`,
   description:
-    "ICAEW chartered accountants for UK businesses across nearly 200 UK cities and towns. Local context, sector emphasis, fixed fees. Find your accountant in London, Manchester, Birmingham, Leeds, Bristol, Edinburgh and many more.",
+    "Specialist accountants for UK businesses across nearly 200 UK cities and towns. Local context, sector emphasis, fixed fees. Find your accountant in London, Manchester, Birmingham, Leeds, Bristol, Edinburgh and many more.",
   alternates: { canonical: `${siteConfig.url}/locations` },
   openGraph: {
     title: `Accountants near you across the UK | ${siteConfig.name}`,
-    description: "ICAEW chartered accountants for UK businesses across nearly 200 cities and towns.",
+    description: "Specialist accountants for UK businesses across nearly 200 cities and towns.",
     url: `${siteConfig.url}/locations`,
     type: "website",
   },
@@ -152,7 +152,7 @@ export default function LocationsIndexPage() {
               Find an accountant in your part of the UK
             </h1>
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-              ICAEW chartered accountants for limited companies, contractors, sole traders, partnerships and small businesses across {totalCities} UK cities and towns. Every location page is researched against the local economic mix, named employers and sector emphasis. National coverage, remote-first, in-person on request.
+              Specialist accountants for limited companies, contractors, sole traders, partnerships and small businesses across {totalCities} UK cities and towns. Every location page is researched against the local economic mix, named employers and sector emphasis. National coverage, remote-first, in-person on request.
             </p>
           </div>
         </div>

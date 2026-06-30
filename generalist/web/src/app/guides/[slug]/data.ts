@@ -267,7 +267,7 @@ export const GUIDES: Record<string, Guide> = {
     title: "Should You Switch Accountants? A 30-Day UK Business Owner's Checklist",
     teaser: "Changing your accountant can cut costs, improve tax planning, and reduce stress. This guide walks you through the signs you need a change, how to vet a specialist, the exact data to transfer, and a week-by-week timeline to complete the switch in under a month without missing a filing deadline.",
     category: "Switching accountants",
-    body: `<p>Every business owner reaches a point where their accountant no longer fits. Maybe the firm has grown too large to give you personal attention. Maybe they never challenge your assumptions about dividend versus salary extraction. Or perhaps you simply cannot get a straight answer on how the 2025/26 dividend allowance of £500 affects your quarterly drawings. This guide is built around a single question: should you switch, and if so, how do you do it cleanly? It covers the warning signs, the vetting process, the professional clearance mechanics, and the data migration steps for Xero, FreeAgent, and QuickBooks. Follow this timeline and you will complete the switch in 30 days without a single late filing penalty.</p>
+    body: `<p>Every business owner reaches a point where their accountant no longer fits. Maybe the firm has grown too large to give you personal attention. Maybe they never challenge your assumptions about dividend versus salary extraction. Or perhaps you simply cannot get a straight answer on how the 2026/27 dividend allowance of £500 affects your quarterly drawings. This guide is built around a single question: should you switch, and if so, how do you do it cleanly? It covers the warning signs, the vetting process, the professional clearance mechanics, and the data migration steps for Xero, FreeAgent, and QuickBooks. Follow this timeline and you will complete the switch in 30 days without a single late filing penalty.</p>
 
 <h2>When the Relationship Stops Working</h2>
 <p>Most business owners start with a generalist accountant who handles personal tax returns and a few limited company filings. As your business grows, the relationship often breaks down. Here are the specific signs that it is time to move on:</p>
@@ -275,7 +275,7 @@ export const GUIDES: Record<string, Guide> = {
   <li><strong>They do not understand your revenue model.</strong> If your accountant cannot explain how subscription revenue, retainer income, or project-based fees affect your VAT scheme or profit recognition, they are not equipped for your business.</li>
   <li><strong>You are paying for services you do not use.</strong> Generalists often bundle payroll for a single director or complex bookkeeping when you could use software like BrightPay or Xero's payroll module.</li>
   <li><strong>They are slow to respond during tax season.</strong> If you are chasing for P11D submissions or CT600 deadlines, your accountant is overwhelmed.</li>
-  <li><strong>They have never mentioned R&D tax credits.</strong> Many businesses qualify for R&D relief under the new 2025/26 rules, but a generalist may not spot it.</li>
+  <li><strong>They have never mentioned R&D tax credits.</strong> Many businesses qualify for R&D relief under the current rules, but a generalist may not spot it.</li>
   <li><strong>They do not use modern software.</strong> If they are still asking for paper receipts or CSV exports from Xero, they are not working efficiently.</li>
   <li><strong>You are paying more than you should.</strong> A specialist accountant often charges less than a generalist for the same work because they have streamlined processes for your industry.</li>
 </ul>
@@ -309,7 +309,7 @@ export const GUIDES: Record<string, Guide> = {
     <tr>
       <td>Tax planning</td>
       <td>Basic dividend vs salary optimisation</td>
-      <td>Understands dividend allowance (£500 for 2025/26), higher rate CGT (24%), and corporation tax thresholds (19% up to £50k, 25% above £250k)</td>
+      <td>Understands dividend allowance (£500 for 2026/27), higher rate CGT (24%), and corporation tax thresholds (19% up to £50k, 25% above £250k)</td>
     </tr>
     <tr>
       <td>R&D claims</td>
@@ -349,7 +349,7 @@ export const GUIDES: Record<string, Guide> = {
   <li>What is your policy on parallel running? Do you require a handover period?</li>
   <li>How do you charge for ad-hoc advice outside the monthly retainer?</li>
   <li>What is your approach to corporation tax planning for businesses with profits between £50k and £250k?</li>
-  <li>Do you have experience with the new 2025/26 dividend allowance rules?</li>
+  <li>Do you have experience with the new 2026/27 dividend allowance rules?</li>
 </ol>
 
 <h3>Check their credentials</h3>
@@ -487,7 +487,7 @@ export const GUIDES: Record<string, Guide> = {
   <li><strong>Week 2:</strong> Sign with your chosen firm and initiate the professional clearance process. Gather all authorisation codes (64-8, Government Gateway, VAT, PAYE).</li>
   <li><strong>Week 3:</strong> Back up your accounting software and transfer integrations. Keep your old subscription active for one month.</li>
   <li><strong>Week 4:</strong> Run both accounts in parallel for one month. Reconcile bank statements and VAT returns. Close the old account only when everything matches.</li>
-  <li><strong>After the switch:</strong> Review your new accountant's performance after three months. Check that they have filed your next VAT return on time, provided proactive tax planning (especially around the 2025/26 dividend allowance and corporation tax thresholds), and responded to your queries within 24 hours.</li>
+  <li><strong>After the switch:</strong> Review your new accountant's performance after three months. Check that they have filed your next VAT return on time, provided proactive tax planning (especially around the 2026/27 dividend allowance and corporation tax thresholds), and responded to your queries within 24 hours.</li>
 </ol>
 <p>If you follow this playbook, you will have a clean, compliant switch that positions your business for better financial management in the years ahead.</p>`,
   },
@@ -505,7 +505,7 @@ export const GUIDES: Record<string, Guide> = {
 <ul>
 <li><strong>Leaving the UK:</strong> You must spend fewer than 16 days in the UK per tax year to be non-resident under the automatic overseas test. If you have full-time work abroad, the threshold rises to 91 days, but you must work an average of at least 35 hours per week overseas.</li>
 <li><strong>Mid-year departure:</strong> If you leave partway through a tax year, you count days from 6 April to the date you leave, then from the date you leave to 5 April the following year. HMRC uses the midnight rule: you are present in the UK if you are here at midnight. Plan your flights accordingly.</li>
-<li><strong>2025/26 rates:</strong> The personal allowance remains at £12,570. If you exceed 15 days in the UK after leaving, you risk being UK-resident for the whole year.</li>
+<li><strong>2026/27 rates:</strong> The personal allowance remains at £12,570. If you exceed 15 days in the UK after leaving, you risk being UK-resident for the whole year.</li>
 </ul>
 
 <h3>The Ties Test: What You Must Break</h3>
@@ -553,7 +553,7 @@ export const GUIDES: Record<string, Guide> = {
 
 <h3>Option 3: Close the UK Company (Members Voluntary Liquidation)</h3>
 <ul>
-<li><strong>How it works:</strong> You put the company into a members voluntary liquidation (MVL). Distributions are treated as capital, not dividends, so you pay Capital Gains Tax at 24% (2025/26 rate for higher-rate taxpayers) instead of dividend tax at up to 39.35%.</li>
+<li><strong>How it works:</strong> You put the company into a members voluntary liquidation (MVL). Distributions are treated as capital, not dividends, so you pay Capital Gains Tax at 24% (2026/27 rate for higher-rate taxpayers) instead of dividend tax at up to 39.35%.</li>
 <li><strong>Pros:</strong> Clean break. You can extract retained profits at CGT rates rather than dividend rates. You close your UK tax obligations.</li>
 <li><strong>Cons:</strong> You lose the company structure. If you later need a UK entity, you must incorporate a new one. MVL costs between £2,000 and £5,000 in professional fees.</li>
 <li><strong>Best for:</strong> Business owners who plan to operate solely through a UAE entity and want to crystallise gains before leaving.</li>
@@ -562,7 +562,7 @@ export const GUIDES: Record<string, Guide> = {
 <p><strong>Action:</strong> Decide by month 10 before your move. If you choose MVL, start the process early. It takes 3 to 6 months.</p>
 
 <h2>3. Asset Disposal Timing: CGT-Efficient Sequencing</h2>
-<p>If you plan to sell assets (shares, property, cryptocurrency) before leaving, you need to sequence disposals to minimise tax. As a UK resident, you pay CGT at 10% (basic rate) or 24% (higher rate) on gains above your annual exempt amount (£3,000 in 2025/26). As a non-resident, you only pay CGT on UK land and property, not on shares or crypto.</p>
+<p>If you plan to sell assets (shares, property, cryptocurrency) before leaving, you need to sequence disposals to minimise tax. As a UK resident, you pay CGT at 18% (basic rate) or 24% (higher rate) on gains above your annual exempt amount (£3,000 in 2026/27). As a non-resident, you only pay CGT on UK land and property, not on shares or crypto.</p>
 
 <ul>
 <li><strong>Sell UK shares before leaving:</strong> If you sell shares in your business or other companies while UK-resident, you pay CGT. If you wait until after you become non-resident, you pay 0% (unless the shares derive value from UK land).</li>
@@ -574,7 +574,7 @@ export const GUIDES: Record<string, Guide> = {
 <p><strong>Action:</strong> List all assets you plan to dispose of in the next 18 months. Sequence disposals so that UK-resident gains are minimised and non-resident gains are on non-UK assets.</p>
 
 <h2>4. Pension Contributions: Use the £60,000 Annual Allowance</h2>
-<p>Before you leave, you can make pension contributions up to £60,000 per tax year (2025/26) and claim tax relief at your marginal rate. After you become non-resident, you can still contribute to a UK pension, but you will not get tax relief unless you have UK-source earnings.</p>
+<p>Before you leave, you can make pension contributions up to £60,000 per tax year (2026/27) and claim tax relief at your marginal rate. After you become non-resident, you can still contribute to a UK pension, but you will not get tax relief unless you have UK-source earnings.</p>
 
 <ul>
 <li><strong>Max out your allowance:</strong> If you have £60,000 of available annual allowance, contribute before you leave. You get 40% or 45% relief depending on your income. This is one of the most tax-efficient moves you can make.</li>
@@ -720,9 +720,9 @@ export const GUIDES: Record<string, Guide> = {
   "first-90-days-post-incorporation": {
     slug: "first-90-days-post-incorporation",
     title: "How to avoid the five most expensive mistakes new UK company directors make in their first quarter",
-    teaser: "A 90 day compliance and tax planning timeline for UK limited company directors. Covers the real deadlines that catch people out, the salary versus dividend trade off with 2025/26 figures, when VAT registration actually hurts you, and the two HMRC forms most first time directors file late. Written for independent retailers, subcontractors, consultancies, and anyone who has just incorporated.",
+    teaser: "A 90 day compliance and tax planning timeline for UK limited company directors. Covers the real deadlines that catch people out, the salary versus dividend trade off with 2026/27 figures, when VAT registration actually hurts you, and the two HMRC forms most first time directors file late. Written for independent retailers, subcontractors, consultancies, and anyone who has just incorporated.",
     category: "New founders",
-    body: `<p>Incorporating a limited company at Companies House takes roughly 24 hours and costs £12. The hard part starts the day after. This guide walks through the operational and tax decisions that must be made before your first quarter ends, with worked examples drawn from e commerce sellers, construction subcontractors, and independent retail businesses. The figures are all 2025/26 unless stated otherwise.</p>
+    body: `<p>Incorporating a limited company at Companies House takes roughly 24 hours and costs £12. The hard part starts the day after. This guide walks through the operational and tax decisions that must be made before your first quarter ends, with worked examples drawn from e commerce sellers, construction subcontractors, and independent retail businesses. The figures are all 2026/27 unless stated otherwise.</p>
 
 <h2>Week 1: Bank, software, and the SIC code trap</h2>
 
@@ -796,7 +796,7 @@ export const GUIDES: Record<string, Guide> = {
 <p>HMRC defines starting to trade as the date you first invoice, incur a business expense, or receive income. If you incorporated but have not yet done any of those things, the clock starts on the incorporation date. You must register online using the company&#x2019;s Unique Taxpayer Reference (UTR), which HMRC posts to your registered office address within 10 to 14 days of incorporation.</p>
 <ul>
   <li>Once registered, you will receive a notice to file a Company Tax Return (CT600) within 12 months of your accounting period end.</li>
-  <li>Corporation Tax rates for 2025/26: 19% on profits up to £50,000, 25% on profits over £250,000, with marginal relief between £50,000 and £250,000.</li>
+  <li>Corporation Tax rates for 2026/27: 19% on profits up to £50,000, 25% on profits over £250,000, with marginal relief between £50,000 and £250,000.</li>
   <li>If you miss the three month registration window, HMRC can issue a penalty of £100 plus daily penalties.</li>
 </ul>
 
@@ -815,18 +815,18 @@ export const GUIDES: Record<string, Guide> = {
 
 <h2>Week 4 to 5: Salary, dividends, and the Employment Allowance nuance</h2>
 
-<h3>The optimal director salary for 2025/26</h3>
-<p>The standard advice is to pay yourself a salary equal to the Personal Allowance of £12,570 per year (£1,047.50 per month). At this level you pay no Income Tax and no employee National Insurance, because £12,570 is exactly the Primary Threshold. However, you do pay employer National Insurance at 13.8% on earnings above the Secondary Threshold of £9,100. On £12,570 that works out at roughly £480 per year.</p>
-<p>If you want to avoid employer NI entirely, cap your salary at £9,100. The downside is that you lose £3,470 of Personal Allowance headroom, which you could otherwise use against dividend income. Most directors prefer the £12,570 figure and treat the £480 NI cost as a small price for full allowance utilisation.</p>
-<p><strong>Worked example:</strong> A director of a software consultancy pays herself £12,570 salary and takes £40,000 in dividends. Her salary uses up the Personal Allowance. The first £500 of dividends is tax free (the dividend allowance). The remaining £39,500 is taxed at 8.75% (basic rate), giving a dividend tax bill of £3,456. Her total effective tax rate on combined income of £52,570 is roughly 12.5%.</p>
+<h3>The optimal director salary for 2026/27</h3>
+<p>The standard advice is to pay yourself a salary equal to the Personal Allowance of £12,570 per year (£1,047.50 per month). At this level you pay no Income Tax and no employee National Insurance, because £12,570 is exactly the Primary Threshold. However, you do pay employer National Insurance at 15% on earnings above the Secondary Threshold of £5,000. On £12,570 that works out at roughly £1,136 per year.</p>
+<p>If you want to avoid employer NI entirely, cap your salary at £5,000. The downside is that you lose £7,570 of Personal Allowance headroom, which you could otherwise use against dividend income. Most directors prefer the £12,570 figure and treat the £1,136 NI cost as a meaningful tradeoff for full allowance utilisation.</p>
+<p><strong>Worked example:</strong> A director of a software consultancy pays herself £12,570 salary and takes £40,000 in dividends. Her salary uses up the Personal Allowance. The first £500 of dividends is tax free (the dividend allowance). The remaining £39,500 is taxed at 10.75% (basic rate), giving a dividend tax bill of £4,246 (£39,500 x 10.75%). Her total effective tax rate on combined income of £52,570 is roughly 8.1%.</p>
 
 <h3>Employment Allowance: when you can and cannot claim it</h3>
-<p>The Employment Allowance reduces your employer NI bill by up to £5,000 per year. You can claim it if your employer NI was less than £100,000 in the previous tax year. But there is a critical exclusion: if you are a company where the director is the only employee paid above the Secondary Threshold, you cannot claim it. If you have at least one other employee on payroll (even a part time administrator), you can.</p>
+<p>The Employment Allowance reduces your employer NI bill by up to £10,500 per year. You can claim it if your employer NI was less than £100,000 in the previous tax year. But there is a critical exclusion: if you are a company where the director is the only employee paid above the Secondary Threshold, you cannot claim it. If you have at least one other employee on payroll (even a part time administrator), you can.</p>
 
 <h2>Week 6 to 8: Declaring your first dividend correctly</h2>
 
 <h3>Dividend tax rates and the shrinking allowance</h3>
-<p>The dividend allowance for 2025/26 is £500, down from £1,000 in 2024/25. This means every pound of dividend income above £500 is taxed immediately.</p>
+<p>The dividend allowance for 2026/27 is £500, down from £1,000 in 2024/25. This means every pound of dividend income above £500 is taxed immediately.</p>
 <table>
   <thead>
     <tr>
@@ -837,11 +837,11 @@ export const GUIDES: Record<string, Guide> = {
   <tbody>
     <tr>
       <td>Basic rate (up to £50,270)</td>
-      <td>8.75%</td>
+      <td>10.75%</td>
     </tr>
     <tr>
       <td>Higher rate (£50,271 to £125,140)</td>
-      <td>33.75%</td>
+      <td>35.75%</td>
     </tr>
     <tr>
       <td>Additional rate (over £125,140)</td>
@@ -865,7 +865,7 @@ export const GUIDES: Record<string, Guide> = {
 <p>If you previously filed Self Assessment returns as a sole trader and are now engaging a new accountant for your limited company, your new accountant should write to your previous one using form 64-8 to confirm there are no outstanding HMRC issues. This is a professional courtesy that protects both firms. If you have never had an accountant, you can skip this step.</p>
 
 <h3>R&D tax credits for unexpected claimants</h3>
-<p>Many business owners assume R&D credits only apply to laboratories and pharmaceutical companies. In practice, a software developer building a new CRM platform for clients, a manufacturer improving a production process, or a construction company designing a new building method can all qualify. For 2025/26:</p>
+<p>Many business owners assume R&D credits only apply to laboratories and pharmaceutical companies. In practice, a software developer building a new CRM platform for clients, a manufacturer improving a production process, or a construction company designing a new building method can all qualify. For 2026/27:</p>
 <ul>
   <li>SME R&D Relief: Available to companies with fewer than 500 employees and turnover under €100M. Qualifying costs include staff salaries, software licences, and consumables used directly in R&D.</li>
   <li>Loss making SMEs can claim a payable credit worth up to 14.5% of the surrendered loss.</li>

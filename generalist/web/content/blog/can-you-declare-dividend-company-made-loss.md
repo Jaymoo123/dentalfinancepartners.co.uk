@@ -31,7 +31,7 @@ faqs:
 
 <p>If your company has made a loss this year, you cannot legally declare a dividend. A dividend declared from loss is unlawful under the Companies Act 2006. It does not matter if you have cash in the bank. It does not matter if you need the income. The law is clear: dividends can only be paid from distributable profits.</p>
 
-<p>This is one of the most common misunderstandings we see as <a href="/about">ICAEW-qualified accountants</a>. Directors see a positive bank balance and assume they can pay themselves a dividend. But company law does not work on a cash basis. It works on accumulated retained profits.</p>
+<p>This is one of the most common misunderstandings we see. Directors see a positive bank balance and assume they can pay themselves a dividend. But company law does not work on a cash basis. It works on accumulated retained profits.</p>
 
 <p>In this article, we explain what distributable profits actually are, what happens if you pay an illegal dividend, and what options you have when your company has no retained earnings to distribute.</p>
 
@@ -66,7 +66,7 @@ faqs:
 
 <p><strong>The dividend is not valid.</strong> Shareholders who received the money can be asked to return it. If you are the sole director and shareholder, that means you. You may have already spent the money, but the legal obligation to repay remains.</p>
 
-<p><strong>Tax treatment can be reversed.</strong> HMRC can reclassify an illegal dividend as a director's loan or as salary. If it is reclassified as a director's loan, you could face a Section 455 tax charge of 33.75% on the amount, plus a benefit in kind charge if the loan exceeds £10,000. If it is reclassified as salary, you owe PAYE and National Insurance on the full amount, plus late payment penalties.</p>
+<p><strong>Tax treatment can be reversed.</strong> HMRC can reclassify an illegal dividend as a director's loan or as salary. If it is reclassified as a director's loan, you could face a Section 455 tax charge of 35.75% on the amount (the rate for loans made on or after 6 Apr 2026; 33.75% for loans made in 2025/26), plus a benefit in kind charge if the loan exceeds £10,000. If it is reclassified as salary, you owe PAYE and National Insurance on the full amount, plus late payment penalties.</p>
 
 <p>We have seen directors face five-figure tax bills years after the event because they paid dividends from losses. It is not worth the risk.</p>
 
@@ -87,10 +87,10 @@ faqs:
 <h3>Pay Yourself a Salary</h3>
 <p>If you need the money, pay yourself a salary instead. Salary is a business expense, so it reduces your corporation tax liability. You will pay income tax and National Insurance on it, but that is often better than the consequences of an illegal dividend.</p>
 
-<p>The most efficient salary for most directors is £12,570 per year (matching the personal allowance). This avoids income tax and employee NI, though employer NI of 13.8% applies above the secondary threshold of £9,100. If your company qualifies for the Employment Allowance (up to £10,500), the employer NI cost is covered.</p>
+<p>The most efficient salary for most directors is £12,570 per year (matching the personal allowance). This avoids income tax and employee NI, though employer NI of 15% applies above the secondary threshold of £5,000 (from 6 Apr 2025, continuing into 2026/27). If your company qualifies for the Employment Allowance (up to £10,500), the employer NI cost is covered.</p>
 
 <h3>Use a Director's Loan Account</h3>
-<p>You can take money from the company as a director's loan. This is not income. It is a loan you must repay. There are tax implications: if the loan exceeds £10,000, you have a benefit in kind to report on a P11D, and the company must pay Section 455 tax of 33.75% on loans not repaid within 9 months and 1 day of the year-end.</p>
+<p>You can take money from the company as a director's loan. This is not income. It is a loan you must repay. There are tax implications: if the loan exceeds £10,000, you have a benefit in kind to report on a P11D, and the company must pay Section 455 tax of 35.75% on loans not repaid within 9 months and 1 day of the year-end (35.75% for loans made on or after 6 Apr 2026; 33.75% for loans made in 2025/26).</p>
 
 <p>But a director's loan is legal. An illegal dividend is not. If you expect the company to become profitable next year, you can repay the loan and then declare a dividend to cover it. This is a common structure for businesses in a temporary downturn.</p>
 

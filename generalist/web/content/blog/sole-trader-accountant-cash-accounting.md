@@ -19,8 +19,8 @@ h1: "What Does a Sole Trader Accountant Do Differently When You Use Cash Account
 summary: "Most accountants assume accruals accounting, but a sole trader accountant who understands cash basis works differently. This post explains how cash accounting changes your bookkeeping, tax return, and MTD obligations, and why getting the right support matters."
 schema: ""
 faqs:
-  - question: "Can I use cash accounting if my turnover is over £150,000?"
-    answer: "No. If your annual turnover exceeds £150,000, you must use traditional accruals accounting. You can choose to use accruals voluntarily below that threshold, but once you opt out of cash basis, you cannot switch back for 12 months. Your accountant should advise on which basis gives the lower tax bill."
+  - question: "Is there a turnover limit for sole trader cash accounting?"
+    answer: "No. From 6 April 2024, cash basis is the default for all sole traders regardless of turnover. There is no £150,000 ceiling. If you prefer accruals, you must positively elect for it. Once you switch to accruals, you cannot revert to cash basis for 12 months. Your accountant should advise on which basis gives the lower tax bill."
   - question: "Do I need to keep receipts for simplified expenses?"
     answer: "No, but you do need to keep a record of your business mileage and the number of hours you work from home. For vehicle costs, you need a mileage log showing the date, purpose, and distance of each business journey. HMRC can ask for that record, so keep it with your other tax records for at least 5 years."
   - question: "Can I claim capital allowances on cash basis?"
@@ -37,7 +37,7 @@ faqs:
 
 <h2>What Is Cash Accounting for Sole Traders?</h2>
 
-<p>Cash accounting is the default basis for most sole traders in the UK. HMRC allows you to use it if your annual turnover is below £150,000. From April 2024, the threshold increased to £150,000 from the previous £150,000 (it was already £150,000 for 2023/24, so no change there). If your turnover exceeds that, you must use traditional accruals accounting.</p>
+<p>Cash accounting is the default basis for sole traders in the UK. From 6 April 2024, under the Finance (No. 2) Act 2023, HMRC made cash basis the default method for all sole traders and partnerships regardless of turnover. There is no turnover ceiling. If you prefer accruals, you must positively elect for it on your Self Assessment return.</p>
 
 <p>Under the cash basis:</p>
 
@@ -64,7 +64,7 @@ faqs:
 
 <p>If you use accounting software like Xero, QuickBooks, or FreeAgent, your accountant should set the tax basis to cash. Most of these platforms default to accruals. If your accountant does not change that setting, your profit and loss report will show the wrong figures for your tax return.</p>
 
-<p>At Holloway Davies, we are ICAEW qualified accountants who routinely set up cash basis accounting for sole traders. It is not a niche adjustment. It is the default for most of our sole trader clients. But it must be done deliberately.</p>
+<p>At Holloway Davies, we routinely set up cash basis accounting for sole traders. It is not a niche adjustment. It is the default for most of our sole trader clients. But it must be done deliberately.</p>
 
 <h2>Simplified Expenses and What They Mean for Your Tax Return</h2>
 
@@ -78,9 +78,9 @@ faqs:
 
 <h3>Working from Home</h3>
 
-<p>The simplified rate for working from home is £6 per week if you work 25 hours or more a week from home. No receipts needed. Your accountant should check whether this is better than claiming a proportion of actual household costs like rent, mortgage interest, council tax, and utilities.</p>
+<p>HMRC simplified expenses for sole traders working from home use monthly flat rates based on hours of business use per month: £10 per month for 25 to 50 hours, £18 per month for 51 to 100 hours, and £26 per month for 101 hours or more. The minimum is 25 hours of business use per month (not per week). No receipts are needed. Note that the £6 per week figure applies to employees and their employers, not to sole traders using simplified expenses. Your accountant should check whether the applicable flat rate is better than claiming a proportion of actual household costs like rent, mortgage interest, council tax, and utilities.</p>
 
-<p>For a sole trader with a dedicated home office in a London flat, actual costs will almost certainly beat £6 per week. For someone using a corner of the dining table a few days a week, the flat rate is simpler and adequate.</p>
+<p>For a sole trader with a dedicated home office in a London flat, actual costs will often beat even the top band of £26 per month. For someone using a corner of the dining table a few days a week, the flat rate is simpler and adequate.</p>
 
 <h3>Private Use of Business Premises</h3>
 
@@ -100,7 +100,7 @@ faqs:
 <li><strong>Capital allowances.</strong> Under cash accounting, you cannot claim capital allowances on most assets. Instead, you deduct the full cost of plant and machinery (up to certain limits) as an expense when you pay for it. Your accountant must know this rule. Claiming capital allowances on a cash basis return is a common error.</li>
 </ul>
 
-<p>If your turnover is under £150,000, you can choose to use accruals instead. But once you opt out of cash basis, you cannot switch back for 12 months. Your accountant should advise you on which basis gives the lower tax bill, not just default to one.</p>
+<p>You can choose to use accruals by electing out of cash basis on your return. But once you opt out of cash basis, you cannot switch back for 12 months. Your accountant should advise you on which basis gives the lower tax bill, not just default to one.</p>
 
 <h2>Making Tax Digital for Income Tax and Cash Accounting</h2>
 
@@ -124,7 +124,7 @@ faqs:
 <li><strong>You are buying a significant asset.</strong> Under cash basis, you deduct the full cost in the year of purchase. That can wipe out your profit and waste your personal allowance. Accruals with capital allowances lets you spread the deduction over multiple years, smoothing your tax bill.</li>
 </ul>
 
-<p>Your accountant should model both bases for you. If they never mention accruals as an option, ask why. For most sole traders under £150,000 turnover, cash basis is fine. But it is not automatic.</p>
+<p>Your accountant should model both bases for you. If they never mention accruals as an option, ask why. Cash basis is the default from 6 April 2024, so you are already on it unless you have actively elected for accruals. But that does not mean it is always optimal.</p>
 
 <h2>What to Look for in a Sole Trader Accountant</h2>
 
@@ -138,7 +138,7 @@ faqs:
 <li>Do they explain the trade offs between cash and accruals? A good accountant gives you options, not a default.</li>
 </ul>
 
-<p>At <a href="/about">Holloway Davies</a>, our ICAEW qualified team works with sole traders across every sector. We set up cash basis accounting as standard for clients who qualify, and we always check whether accruals would give a better result. If you are a sole trader using cash accounting and want an accountant who understands the difference, <a href="/contact">get in touch</a>.</p>
+<p>At <a href="/about">Holloway Davies</a>, our experienced team works with sole traders across every sector. We set up cash basis accounting as standard for clients who qualify, and we always check whether accruals would give a better result. If you are a sole trader using cash accounting and want an accountant who understands the difference, <a href="/contact">get in touch</a>.</p>
 
 <h2>Final Practical Points</h2>
 
@@ -146,7 +146,7 @@ faqs:
 
 <p>If you want to switch from accruals to cash basis, you can do so on your next return. There is no formal application. You just complete the return on the new basis and tick the cash basis box. But you must stay on that basis for 12 months.</p>
 
-<p>If your turnover crossed £150,000 in the last accounting period, you must switch to accruals from the following year. Your accountant should flag this before you file the return.</p>
+<p>If you are considering switching to accruals, your accountant should model the tax impact before you make that election. There is no statutory turnover threshold that forces the switch.</p>
 
 <p>Cash accounting is simpler, but it is not a free pass. The rules around capital expenditure, interest, and losses are different. A good <strong>sole trader accountant</strong> knows those rules and applies them correctly. If yours does not, you are paying for advice that is not tailored to your business.</p>
 

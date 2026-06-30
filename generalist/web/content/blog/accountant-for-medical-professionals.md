@@ -6,7 +6,7 @@ date: "2026-05-17"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
-metaTitle: "Accountant for Medical Professionals UK | Holloway Davies"
+metaTitle: "Accountant for Medical Professionals UK"
 metaDescription: "Locum GP, dentist, or private consultant? We explain the tax rules unique to medical professionals and why a specialist accountant is worth the investment."
 altText: "A doctor in a consulting room with a stethoscope, reviewing financial documents with an accountant in a modern UK office."
 image: "/blog/accountant-for-medical-professionals.jpg"
@@ -94,7 +94,7 @@ faqs:
 </ul>
 
 <h2>How Holloway Davies Supports Medical Professionals</h2>
-<p>We are <a href="/about">ICAEW qualified accountants</a> based in the UK, working with medical professionals across England, Scotland, and Wales. Our team includes specialists who understand the NHS Pension Scheme, the BMA contract terms, and the specific tax rules that apply to doctors, dentists, and other healthcare professionals.</p>
+<p>We are <a href="/about">specialist accountants</a> based in the UK, working with medical professionals across England, Scotland, and Wales. Our team includes specialists who understand the NHS Pension Scheme, the BMA contract terms, and the specific tax rules that apply to doctors, dentists, and other healthcare professionals.</p>
 <p>We do not offer generic advice. We take the time to understand your specific combination of income sources, your pension position, and your personal financial goals. Then we build a tax structure that works for you.</p>
 <p>Our services for medical professionals include:</p>
 <ul>

@@ -30,7 +30,7 @@ faqs:
 
 <p>If you're a director of your own limited company, the question of how to pay yourself from a limited company is one of the first you'll face. Get it right and you can legally reduce your tax bill, keep your company solvent, and build retirement savings. Get it wrong and you could overpay thousands in tax or trigger an HMRC enquiry.</p>
 
-<p>This guide is written for UK directors of small and growing limited companies, contractors working through their own Ltd, and anyone considering incorporation. As ICAEW qualified accountants, we work with businesses of every shape across the UK, from a two-person tech startup in Shoreditch to a partnership in the Jewellery Quarter in Birmingham. The principles are the same. The details change every year.</p>
+<p>This guide is written for UK directors of small and growing limited companies, contractors working through their own Ltd, and anyone considering incorporation. We work with businesses of every shape across the UK, from a two-person tech startup in Shoreditch to a partnership in the Jewellery Quarter in Birmingham. The principles are the same. The details change every year.</p>
 
 <p>We'll cover salary versus dividends, the director's loan account, pension contributions, IR35 implications, and the specific tax rates for 2025/26. By the end, you'll have a clear action plan.</p>
 

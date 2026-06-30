@@ -33,15 +33,15 @@ faqs:
 
 <p>Flat rate VAT simplifies your paperwork and can put money in your pocket if your costs are low. Standard VAT lets you reclaim VAT on everything you buy, which works better for businesses with high overheads. The wrong choice costs you thousands. The right one saves time and tax.</p>
 
-<p>This guide compares flat rate VAT vs standard VAT using real numbers, explains the limited cost trader trap, and helps you pick the right scheme for your business. We are ICAEW qualified accountants. We run these numbers for clients every week.</p>
+<p>This guide compares flat rate VAT vs standard VAT using real numbers, explains the limited cost trader trap, and helps you pick the right scheme for your business. We run these numbers for clients every week.</p>
 
 <h2>What Is Flat Rate VAT?</h2>
 
 <p>Flat rate VAT is a simplified scheme for businesses with a VAT-exclusive turnover below £150,000. You charge your customers the standard 20% VAT on invoices. But instead of working out exactly how much VAT you owe on each sale and how much you can reclaim on each purchase, you pay HMRC a fixed percentage of your gross turnover.</p>
 
-<p>That fixed percentage depends on your business sector. A plumber pays 10.5% of gross turnover. An IT consultant pays 13%. A builder pays 9.5%. You can find the full list on the <a href="https://www.gov.uk/vat-flat-rate-scheme" target="_blank">GOV.UK flat rate scheme page</a>.</p>
+<p>That fixed percentage depends on your business sector. A plumber doing labour-only work pays 14.5% of gross turnover (or 9.5% if materials are supplied). An IT consultant or data processor pays 14.5%. A builder pays 9.5%. You can find the full list on the <a href="https://www.gov.uk/vat-flat-rate-scheme" target="_blank">GOV.UK flat rate scheme page</a>.</p>
 
-<p>The key advantage: you keep the difference between the 20% you charged your customer and the lower percentage you pay HMRC. If you are an IT consultant on the 13% flat rate, you keep 7% of every VAT-inclusive invoice as extra profit.</p>
+<p>The key advantage: you keep the difference between the 20% you charged your customer and the lower percentage you pay HMRC. If you are an IT consultant on the 14.5% flat rate, you keep 5.5% of every VAT-inclusive invoice as extra profit.</p>
 
 <p>The key disadvantage: you cannot reclaim VAT on your purchases except for certain capital assets over £2,000. If your business spends heavily on supplies, equipment, or subcontractors, you lose that reclaim.</p>
 
@@ -69,14 +69,14 @@ faqs:
 <li>Profit retained from VAT: £1,600 (the input tax reclaimed)</li>
 </ul>
 
-<p><strong>Under flat rate VAT (IT sector at 13%):</strong></p>
+<p><strong>Under flat rate VAT (IT consultancy sector at 14.5%):</strong></p>
 <ul>
 <li>Gross turnover: £60,000 + £12,000 = £72,000</li>
-<li>Flat rate payment: £72,000 × 13% = £9,360</li>
-<li>Profit retained from VAT: £12,000 minus £9,360 = £2,640</li>
+<li>Flat rate payment: £72,000 × 14.5% = £10,440</li>
+<li>Profit retained from VAT: £12,000 minus £10,440 = £1,560</li>
 </ul>
 
-<p>Alex keeps £1,040 more per year on the flat rate scheme. That is £1,040 of extra profit for doing nothing different. Over three years, that is over £3,000.</p>
+<p>On the 14.5% rate, Alex retains £1,560 under the flat rate versus £1,600 under standard VAT. Standard VAT saves £40 per year. There is also a limited cost trader issue: Alex's software subscriptions and hosting are services (excluded from the relevant goods test) and the laptop is a capital asset (also excluded). With no qualifying goods spend, Alex would be classified as a limited cost trader and required to use 16.5% instead. At 16.5%, the flat rate payment rises to £11,880 (£72,000 x 16.5%), leaving only £120 retained from VAT versus £1,600 under standard VAT. For a consultant profile like Alex, standard VAT is the right choice.</p>
 
 <h3>Example 2: A high-cost building contractor in Birmingham</h3>
 

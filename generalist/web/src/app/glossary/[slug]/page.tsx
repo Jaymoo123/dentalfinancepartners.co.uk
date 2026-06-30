@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = `${siteConfig.url}/glossary/${slug}`;
   return {
     title: `${entry.term}, Definition for UK Business Owners`,
-    description: `Plain-English definition of ${entry.term} for UK business owners. Includes current 2025/26 figures and what it means for your business.`,
+    description: `Plain-English definition of ${entry.term} for UK business owners. Includes current 2026/27 figures and what it means for your business.`,
     alternates: { canonical: url },
     openGraph: {
       title: `${entry.term}, UK Business Tax Glossary`,
@@ -88,7 +88,7 @@ export default async function GlossaryEntryPage({ params }: Props) {
                 Want this applied to your business?
               </h2>
               <p className="mt-3 text-base text-slate-200">
-                Book a free call with an ICAEW qualified accountant. We'll review your position and show you what to actually do.
+                Book a free call with a specialist accountant. We'll review your position and show you what to actually do.
               </p>
               <Link href="/contact" className={`${btnPrimary} mt-6`}>
                 Book a free call

@@ -17,22 +17,21 @@ imageCredit:
   source: Pexels
 h1: What Do UK Accountants Charge in 2025/26? A Complete Guide to Accounting Fees
 summary: A practical breakdown of what UK accountants charge in 2025/26, by business type, location, and service scope. Includes real numbers for sole traders, limited companies, contractors, and partnerships, plus what drives the differences in fee accounting.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"What Do UK Accountants Charge in 2025/26? A Complete Guide to Accounting Fees","description":"See what UK accountants charge by business type in 2025/26. Monthly fees run from £50 to £500 depending on structure and service level. Compare your costs.","url":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/uk-accounting-fees-guide-2025-26","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
-  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/uk-accounting-fees-guide-2025-26"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/uk-accounting-fees-guide-2025-26.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Bookkeeping and Compliance","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance"},{"@type":"ListItem","position":3,"name":"What Do UK Accountants Charge in 2025/26? A Complete Guide to Accounting Fees","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/uk-accounting-fees-guide-2025-26"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the average accounting fee for a limited company in the UK in 2025/26?","acceptedAnswer":{"@type":"Answer","text":"For a standard limited company with turnover under"}}]}]}'
+schema: ''
 faqs:
 - question: What is the average accounting fee for a limited company in the UK in 2025/26?
   answer: For a standard limited company with turnover under
 metaTitle_prev: 'UK Accounting Fees 2025/26: What Accountants Charge'
 metaDescription_prev: Accounting fees for UK businesses in 2025/26 range from £50/month for sole traders to £500+/month for Ltd companies. See what you should pay by business
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
 <p>If you run a UK business and you are wondering what you should be paying for an accountant in 2025/26, the honest answer is: it depends on what you need. A sole trader filing a straightforward tax return pays a very different fee to a limited company director with payroll, VAT, and quarterly management accounts.</p>
 
-<p>This guide covers what UK accountants charge by business type, what drives the differences, and what you should expect for your money. We are ICAEW qualified accountants ourselves, so these are real numbers from the market, not estimates from a directory.</p>
+<p>This guide covers what UK accountants charge by business type, what drives the differences, and what you should expect for your money. We are practising accountants, so these are real numbers from the market, not estimates from a directory.</p>
 
 <h2>Why Accounting Fees Vary So Much</h2>
 
@@ -120,7 +119,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If your firm does not include software, add £200 to £600 per year to your total cost. Some firms charge separately for add-ons like Dext (receipt capture) or BrightPay (payroll).</p>
 
-<p>As ICAEW qualified accountants, we include Xero or FreeAgent in our standard fees for most clients. It keeps everything in one place and reduces the time we spend chasing paperwork.</p>
+<p>We include Xero or FreeAgent in our standard fees for most clients. It keeps everything in one place and reduces the time we spend chasing paperwork.</p>
 
 <h2>Why Cheap Accounting Fees Can Cost You More</h2>
 
@@ -160,7 +159,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Where you are based affects what you pay. London firms typically charge 20-30% more than those in the North of England. A limited company service costing £1,800 in Manchester might cost £2,400 in London.</p>
 
-<p>That said, remote working means many firms now serve clients across the UK. A Manchester-based firm can handle a London client perfectly well using cloud software and video calls. You do not need a local accountant if you are happy working remotely. Many clients choose us because we offer ICAEW qualified expertise at competitive rates regardless of location.</p>
+<p>That said, remote working means many firms now serve clients across the UK. A Manchester-based firm can handle a London client perfectly well using cloud software and video calls. You do not need a local accountant if you are happy working remotely. Many clients choose us because we offer competitive rates regardless of location.</p>
 
 <p>Typical regional differences for a standard limited company service (turnover £100k, VAT registered, one employee):</p>
 
@@ -180,7 +179,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <ul>
 <li><strong>You are selling your company.</strong> Business Asset Disposal Relief (BADR) planning needs to start years in advance. A good accountant will structure the sale to minimise CGT. The 14% rate for 2025/26 rising to 18% from April 2026 makes timing critical.</li>
 <li><strong>You have R&D activities.</strong> The merged R&D scheme and the intensive SME regime (ERIS) require detailed technical narratives. A specialist R&D accountant can maximise your claim.</li>
-<li><strong>You are a contractor inside IR35.</strong> The off-payroll working rules mean your client determines your status. An accountant who understands IR35 can help you challenge a wrong determination and structure your affairs correctly.</li>
+<li><strong>You are a contractor inside IR35.</strong> For contracts with medium or large clients, the off-payroll working rules (Chapter 10 ITEPA 2003, since 6 April 2021) mean the client must assess your IR35 status and issue a Status Determination Statement. Contractors engaged by small clients (meeting the Companies Act small-company thresholds) continue to determine their own status under Chapter 8. An accountant who understands IR35 can help you challenge a wrong determination and structure your affairs correctly.</li>
 <li><strong>You have international income or assets.</strong> Cross-border tax is complex. A firm with international experience is worth the premium.</li>
 <li><strong>You want proactive tax planning.</strong> If you want quarterly reviews, cash flow forecasts, and strategic advice, you need a firm that offers that service. It costs more, but it can save you multiples of the fee in tax.</li>
 </ul>

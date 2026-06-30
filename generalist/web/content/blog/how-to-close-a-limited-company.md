@@ -22,7 +22,7 @@ faqs:
   - question: "Can I close a limited company myself without an accountant?"
     answer: "Yes, for a straightforward strike off where the company has no assets, no debts, and all tax returns are filed. You file a DS01 form online with Companies House for £8. But if the company has retained profits, assets, or any complexity, you risk tax charges or HMRC objections. An accountant's review before filing is cheap insurance."
   - question: "How much tax do I save using an MVL instead of a strike off?"
-    answer: "On £100,000 of retained profits, a higher rate taxpayer pays roughly £33,500 in dividend tax on a strike off distribution. With an MVL and BADR, the same £100,000 attracts roughly £13,500 in CGT. The saving is around £20,000. The MVL fee of £4,000 to £6,000 still leaves a net saving of £14,000 to £16,000."
+    answer: "On £100,000 of retained profits, a higher rate taxpayer pays roughly £35,500 in dividend tax on a strike off distribution (at the 2026/27 higher-rate dividend tax of 35.75%; 33.75% applied in 2025/26). With an MVL and BADR at 18% from 6 Apr 2026 (14% applied for disposals 6 Apr 2025 to 5 Apr 2026), the same £100,000 attracts roughly £17,500 in CGT. The saving is around £18,000. The MVL fee of £4,000 to £6,000 still leaves a net saving of £12,000 to £14,000."
   - question: "Can I close a limited company that has never traded?"
     answer: "Yes. A dormant company can be struck off using the same DS01 process. You must file any outstanding confirmation statements and annual accounts first. If the company has never traded, you can usually file dormant accounts for the final period. HMRC may ask you to confirm the company is dormant before they agree to the strike off."
   - question: "What happens if HMRC objects to my strike off application?"
@@ -48,17 +48,17 @@ faqs:
 <p>Why would anyone pay that? Because an MVL turns the company's retained profits into capital distributions. And capital distributions qualify for Business Asset Disposal Relief (BADR) in most cases.</p>
 
 <h3>How BADR Changes the Numbers</h3>
-<p>If you take retained profits as dividends before striking off, you pay dividend tax at your marginal rate. For a higher rate taxpayer, that is 33.75% on dividends above the £500 allowance. On £100,000 of retained profits, that is roughly £33,500 in tax.</p>
-<p>With an MVL, the same £100,000 is treated as a capital distribution. If you qualify for BADR, you pay 14% CGT on gains above your annual exempt amount (£3,000 in 2025/26). That is roughly £13,500 in tax on the same £100,000. The saving is around £20,000.</p>
+<p>If you take retained profits as dividends before striking off, you pay dividend tax at your marginal rate. For a higher rate taxpayer, that is 35.75% on dividends above the £500 allowance (2026/27 rate; 33.75% applied in 2025/26). On £100,000 of retained profits, that is roughly £35,500 in tax.</p>
+<p>With an MVL, the same £100,000 is treated as a capital distribution. If you qualify for BADR, you pay 18% CGT from 6 April 2026 (14% applied for disposals 6 Apr 2025 to 5 Apr 2026) on gains above your annual exempt amount (£3,000 in 2026/27). That is roughly £17,500 in tax on the same £100,000. The saving is around £18,000.</p>
 <p>BADR has conditions. You must have held at least 5% of the shares and 5% of the voting rights for the 2 years before the liquidation. You must also have been an employee or director of the company throughout that period. Most owner-directors meet these conditions without trouble.</p>
 
 <h2>When a Strike Off Makes More Sense</h2>
-<p>If the company has less than £25,000 in retained profits, the cost of an MVL often outweighs the tax saving. On £20,000 of retained profits, the dividend tax at higher rate is about £6,600. The CGT under BADR is about £2,400. The difference is £4,200. But the MVL costs £4,000 to £6,000. You break even or lose money.</p>
+<p>If the company has less than £25,000 in retained profits, the cost of an MVL often outweighs the tax saving. On £20,000 of retained profits, the dividend tax at higher rate is about £7,000. The CGT under BADR is about £3,100. The difference is around £3,900. But the MVL costs £4,000 to £6,000. You break even or lose money.</p>
 <p>Strike off is also simpler if you have already extracted most of the company's value over time through salaries and dividends. If the remaining cash is small, just take it as a final dividend, file the final accounts, and strike off.</p>
 <p>One more reason to strike off: you have no intention of returning to the same trade. BADR is a once-per-lifetime relief in effect (the £1 million limit applies across all disposals). If you plan to start another company later, you might want to preserve your BADR allowance for that eventual exit.</p>
 
 <h2>When an MVL Is the Better Choice</h2>
-<p>An MVL is the right choice when the company holds significant retained profits, typically £50,000 or more. The tax saving on £100,000 is £20,000 as shown above. On £250,000, the saving is around £50,000. The MVL fee becomes a small fraction of the benefit.</p>
+<p>An MVL is the right choice when the company holds significant retained profits, typically £50,000 or more. The tax saving on £100,000 is around £18,000 as shown above. On £250,000, the saving is around £45,000. The MVL fee becomes a small fraction of the benefit.</p>
 <p>An MVL is also necessary if the company owns assets that cannot be easily distributed to shareholders without triggering a tax charge. Property, intellectual property, investments, and vehicles are examples. The liquidator sells these assets and distributes the cash as capital.</p>
 <p>If the company has creditors who need to be paid off formally, an MVL provides a clean break. The liquidator handles creditor claims, and shareholders receive the surplus without future liability.</p>
 
@@ -102,7 +102,7 @@ faqs:
 <p>If the company has less than £25,000 in retained profits and no significant assets, strike off is the cheaper option. File the DS01, pay the £8 fee, and close the company.</p>
 <p>If the company has £50,000 or more in retained profits, or holds assets that are hard to distribute, an MVL saves you thousands in tax. Pay the liquidator's fee and claim BADR on the capital distribution.</p>
 <p>If the company is between £25,000 and £50,000, run the numbers. Compare the dividend tax on a final distribution against the MVL cost plus BADR CGT. The breakeven point varies by your tax band and the exact fees involved.</p>
-<p>As ICAEW qualified accountants, we help directors work through these decisions regularly. If your situation is straightforward, you can handle a strike off yourself. If there is any complexity, or if the retained profits are substantial, speak to us before committing to a route.</p>
+<p>We help directors work through these decisions regularly. If your situation is straightforward, you can handle a strike off yourself. If there is any complexity, or if the retained profits are substantial, speak to us before committing to a route.</p>
 <p>Get in touch through our <a href="/contact">contact page</a> or read more about <a href="/blog/exit-and-capital-gains">exit planning and capital gains</a> on our blog.</p>
 
 <h2>Related articles in Exit and Capital Gains</h2>

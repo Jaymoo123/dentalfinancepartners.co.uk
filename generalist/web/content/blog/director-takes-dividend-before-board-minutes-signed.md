@@ -20,9 +20,9 @@ summary: "Taking a dividend before the board minutes are signed is surprisingly 
 schema: ""
 faqs:
   - question: "Is a dividend still valid if the board minutes are signed after payment?"
-    answer: "It depends on how long after. If the minutes are signed within a few weeks and the company had sufficient distributable profits at the payment date, most accountants treat it as an administrative oversight and backdate the minutes. If the gap is months or crosses a year-end, HMRC may reclassify the payment as a director's loan. That triggers a 33.75% Section 455 tax charge."
+    answer: "It depends on how long after. If the minutes are signed within a few weeks and the company had sufficient distributable profits at the payment date, most accountants treat it as an administrative oversight and backdate the minutes. If the gap is months or crosses a year-end, HMRC may reclassify the payment as a director's loan. That triggers a Section 455 tax charge of 33.75% for loans made in 2025/26, rising to 35.75% for loans made on or after 6 April 2026."
   - question: "What happens if HMRC finds a dividend without signed minutes?"
-    answer: "HMRC will treat the payment as a director's loan, not a dividend. The company pays 33.75% of the amount under Section 455, and you personally pay tax on the benefit in kind if the loan exceeds £10,000. HMRC can also charge interest from the date the payment was due. The fix is to reclassify the payment and declare a properly documented dividend to clear the loan."
+    answer: "HMRC will treat the payment as a director's loan, not a dividend. The company pays 33.75% of the amount under Section 455 (35.75% for loans made on or after 6 April 2026), and you personally pay tax on the benefit in kind if the loan exceeds £10,000. HMRC can also charge interest from the date the payment was due. The fix is to reclassify the payment and declare a properly documented dividend to clear the loan."
   - question: "Can I backdate board minutes for a dividend?"
     answer: "Yes, if the directors genuinely intended to declare the dividend on that earlier date and the company had sufficient distributable profits at that date. Backdating to reflect a real intention is standard practice. But if the company did not have profits at the payment date, backdating does not make the dividend lawful. The directors are personally liable to repay it."
   - question: "Do I need a separate dividend voucher if I have board minutes?"
@@ -33,7 +33,7 @@ faqs:
 
 <p>But the board meeting minutes are still sitting unsigned in a drawer.</p>
 
-<p>This is a common scenario. And it matters. Taking a dividend before board minutes are signed does not automatically invalidate the dividend. But it does create a legal gap that needs closing. If you do not close it correctly, HMRC can reclassify the payment as a director's loan. That triggers a 33.75% tax charge under Section 455, plus a benefit in kind charge on your personal tax return.</p>
+<p>This is a common scenario. And it matters. Taking a dividend before board minutes are signed does not automatically invalidate the dividend. But it does create a legal gap that needs closing. If you do not close it correctly, HMRC can reclassify the payment as a director's loan. That triggers a Section 455 tax charge (33.75% for loans made in 2025/26; 35.75% for loans made on or after 6 April 2026), plus a benefit in kind charge on your personal tax return.</p>
 
 <p>Let us work through exactly what happens, how to fix it, and how to avoid the problem in future.</p>
 
@@ -49,7 +49,7 @@ faqs:
 
 <p>The consequences of a director's loan account being overdrawn are significant:</p>
 <ul>
-<li><strong>Section 455 tax charge:</strong> The company pays 33.75% of the loan amount if it is not repaid within 9 months and 1 day of the company's year-end.</li>
+<li><strong>Section 455 tax charge:</strong> The company pays 33.75% (2025/26) or 35.75% (loans made on or after 6 April 2026) of the loan amount if it is not repaid within 9 months and 1 day of the company's year-end.</li>
 <li><strong>Benefit in kind:</strong> You personally pay tax on the notional interest benefit if the loan exceeds £10,000. The company also reports this on a P11D.</li>
 <li><strong>Corporation tax:</strong> The company cannot deduct the loan as an expense. It is a distribution, not a business cost.</li>
 </ul>
@@ -102,7 +102,7 @@ faqs:
 </ul>
 <p>If you cannot produce signed minutes, HMRC will reclassify the payment. The Section 455 charge applies, plus interest from the date the payment was due.</p>
 
-<p>As ICAEW qualified accountants, we see this issue most often when a company has multiple directors and one acts without consulting the others. That is a governance problem as much as a tax problem. If you are the sole director, the risk is lower because there is no internal dispute. But HMRC still expects the paperwork.</p>
+<p>We see this issue most often when a company has multiple directors and one acts without consulting the others. That is a governance problem as much as a tax problem. If you are the sole director, the risk is lower because there is no internal dispute. But HMRC still expects the paperwork.</p>
 
 <h2>What About Interim And Final Dividends?</h2>
 <p>The rules differ slightly depending on the type of dividend.</p>

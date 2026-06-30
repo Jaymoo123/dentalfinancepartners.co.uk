@@ -19,7 +19,7 @@ faqs:
 - question: How do I calculate VAT on exports to the US?
   answer: Exports of goods from the UK to the US are zero-rated for VAT. You do not charge VAT on the sale, but you can still reclaim VAT on related costs. You must keep proof of export (such as shipping documents or customs clearance) within 180 days of the goods being dispatched to maintain the 0% rate.
 - question: What is the reduced VAT rate of 5% used for?
-  answer: The 5% reduced rate applies to specific items including domestic fuel and power, children's car seats, sanitary products, and certain home renovation work on empty residential properties. To add 5% VAT, multiply the price excluding VAT by 1.05. To remove it, divide the total by 1.05.
+  answer: 'The 5% reduced rate applies to specific items including domestic fuel and power, children''s car seats, and certain home renovation work on empty residential properties. To add 5% VAT, multiply the price excluding VAT by 1.05. To remove it, divide the total by 1.05. Note: menstrual (sanitary) products have been zero-rated (0%) since 1 January 2021 and are no longer in the 5% reduced-rate category.'
 - question: Can I correct a VAT calculation error on a previous return?
   answer: Yes, if the net error is under £10,000, or under 1% of your turnover (capped at £50,000), you can correct it on your next VAT return. Larger errors require a formal amendment using form VAT652. HMRC charges interest on underpaid VAT, so correct errors promptly to minimise costs.
 dateModified: '2026-05-20'
@@ -166,13 +166,13 @@ imageCredit:
 
 <h2>What Happens If You Get the Calculation Wrong?</h2>
 
-<p>HMRC charges interest on late or underpaid VAT. The current late payment interest rate is set at Bank of England base rate plus 2.5%. There are also penalties for errors, ranging from 0% to 30% of the underpaid tax depending on whether the error was careless or deliberate.</p>
+<p>HMRC charges interest on late or underpaid VAT. The current late payment interest rate is set at Bank of England base rate plus 2.5%. There are also penalties for errors: 0% to 30% for careless mistakes, up to 70% for deliberate errors, and up to 100% where HMRC considers an error was deliberately concealed. Disclosing errors voluntarily (unprompted) attracts the lowest penalties.</p>
 
 <p>If you discover an error on a past VAT return, you can correct it on the next return if the net error is under £10,000, or under 1% of your turnover (capped at £50,000). Larger errors require a formal amendment.</p>
 
 <h2>Getting Professional Help</h2>
 
-<p>VAT calculations are straightforward for most businesses with a single rate and simple supplies. But if you deal with mixed supplies, partial exemption, property transactions, or cross-border sales, the rules get more complex. As ICAEW qualified accountants, we handle VAT compliance for businesses across the UK, from sole traders in Bristol to limited companies in Leeds.</p>
+<p>VAT calculations are straightforward for most businesses with a single rate and simple supplies. But if you deal with mixed supplies, partial exemption, property transactions, or cross-border sales, the rules get more complex. We handle VAT compliance for businesses across the UK, from sole traders in Bristol to limited companies in Leeds.</p>
 
 <p>If your business has crossed the £90,000 VAT threshold in the last 30 days, you need to register within that 30-day window. Contact us through our <a href="/contact">contact page</a> to discuss your specific situation.</p>
 

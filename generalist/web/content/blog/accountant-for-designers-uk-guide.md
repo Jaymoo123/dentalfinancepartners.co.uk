@@ -24,7 +24,7 @@ faqs:
   - question: "Should I register for VAT voluntarily as a freelance designer?"
     answer: "It depends on your margins and your clients. If most of your clients are VAT-registered businesses, voluntary registration is usually beneficial because you reclaim the VAT on your expenses and the flat rate scheme can leave you with extra cash. If most of your clients are individuals or small businesses not registered for VAT, you will add 20% to your fees, which may make you less competitive. Run the numbers with an accountant before deciding."
   - question: "What happens if HMRC says I am inside IR35?"
-    answer: "If HMRC determines you are inside IR35, you must pay tax and NI as if you were an employee. That means your limited company pays employer NI (13.8%) and you pay employee NI and income tax on the deemed employment income. The practical effect is that your take-home pay drops significantly. A specialist accountant can help you restructure your contracts and working practices to stay outside IR35."
+    answer: "If HMRC determines you are inside IR35, you must pay tax and NI as if you were an employee. That means your limited company pays employer NI (15% above a £5,000 secondary threshold, from 6 April 2025) and you pay employee NI and income tax on the deemed employment income. The practical effect is that your take-home pay drops significantly. A specialist accountant can help you restructure your contracts and working practices to stay outside IR35."
   - question: "Do I need an accountant if I use accounting software like FreeAgent?"
     answer: "Accounting software handles the data entry and basic calculations, but it does not give you strategic tax advice. It will not tell you whether to incorporate, whether to register for VAT voluntarily, or whether you qualify for R&D tax credits. For a sole trader earning under £30,000, software alone is fine. Above that, the tax savings from professional advice typically exceed the accountancy fee."
 ---
@@ -121,7 +121,7 @@ faqs:
 <li><strong>12 months after year-end:</strong> confirmation statement deadline at Companies House</li>
 </ul>
 
-<p>Miss any of these and you face late filing penalties starting at £150 for Companies House and 5% of the tax due for HMRC. An accountant keeps you on track.</p>
+<p>Miss any of these and you face penalties. Companies House late accounts attract charges starting at £150. For HMRC, a self assessment return filed late carries a fixed £100 penalty, with separate late-payment penalties of 5% of tax due at 30 days, 6 months and 12 months overdue. An accountant keeps you on track.</p>
 
 <h2>When Should You Hire an Accountant for Designers?</h2>
 
@@ -161,6 +161,6 @@ faqs:
 <li><strong>Software compatibility.</strong> They should work with Xero, FreeAgent or QuickBooks. If they insist on paper records or spreadsheets, you will waste time.</li>
 </ul>
 
-<p>At Holloway Davies, our ICAEW qualified team works with designers across the UK. We are based in the North West but serve clients nationwide. If you want to talk through your situation, <a href="/contact">get in touch</a>.</p>
+<p>At Holloway Davies, our experienced team works with designers across the UK. We are based in the North West but serve clients nationwide. If you want to talk through your situation, <a href="/contact">get in touch</a>.</p>
 
 <h2>Frequently Asked Questions</h2>

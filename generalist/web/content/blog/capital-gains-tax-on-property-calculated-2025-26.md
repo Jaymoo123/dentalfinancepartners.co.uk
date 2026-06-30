@@ -33,7 +33,7 @@ faqs:
 
 <p>If you are a landlord selling a buy-to-let flat in Birmingham, a sole trader selling a commercial unit in Leeds, or a director selling a second home in Cornwall, the calculation follows the same structure. You take the sale proceeds, deduct the original cost and any allowable expenses, then apply the tax rate to the net gain. The detail is in what counts as an allowable cost and which reliefs you can claim.</p>
 
-<p>This article covers the 2025/26 rates, the calculation steps, the main reliefs including Private Residence Relief and Business Asset Disposal Relief, and the filing requirements. We are ICAEW qualified accountants and work with UK business owners every day on property disposals. The guidance here is general. Your specific situation may need a tailored review.</p>
+<p>This article covers the 2025/26 rates, the calculation steps, the main reliefs including Private Residence Relief and Business Asset Disposal Relief, and the filing requirements. We work with UK business owners every day on property disposals. The guidance here is general. Your specific situation may need a tailored review.</p>
 
 <h2>What Counts as a Chargeable Gain on Property?</h2>
 
@@ -68,7 +68,7 @@ faqs:
 
 <ul>
 <li><strong>Residential property:</strong> 18% basic rate, 24% higher rate</li>
-<li><strong>Non-residential property (commercial, land):</strong> 10% basic rate, 20% higher rate (these rates apply where the gain is not covered by Business Asset Disposal Relief)</li>
+<li><strong>Non-residential property (commercial, land):</strong> 18% basic rate, 24% higher rate (aligned with residential from 30 October 2024; Business Asset Disposal Relief at 14% may apply for qualifying business asset disposals in 2025/26)</li>
 </ul>
 
 <p>Your tax rate depends on your total taxable income for the year. If your income is below the basic rate band (£50,270 for 2025/26), the part of the gain that falls within the remaining basic rate band is taxed at the lower rate. The rest is taxed at the higher rate.</p>
@@ -118,9 +118,9 @@ Step 6: Total allowable costs = £200,000<br>
 Step 7: Gain = £302,000 minus £200,000 = £102,000<br>
 Step 8: Less annual exempt amount (£3,000) = £99,000 chargeable gain</p>
 
-<p>Tom's total income for the year is £45,000 (self-employed profits). His basic rate band is £50,270. He has £5,270 of unused basic rate band (£50,270 minus £45,000). So £5,270 of the gain is taxed at 10% (non-residential property, basic rate) = £527. The remaining £93,730 is taxed at 20% (higher rate, non-residential) = £18,746. Total CGT = £19,273.</p>
+<p>Tom's total income for the year is £45,000 (self-employed profits). His basic rate band is £50,270. He has £5,270 of unused basic rate band (£50,270 minus £45,000). So £5,270 of the gain is taxed at 18% (non-residential property, basic rate) = £948.60. The remaining £93,730 is taxed at 24% (higher rate, non-residential) = £22,495.20. Total CGT = £23,443.80.</p>
 
-<p>If the property had been residential (a buy-to-let flat), the rates would be 18% and 24% instead, giving a higher total.</p>
+<p>The same 18% and 24% rates apply to residential property such as a buy-to-let flat. Since 30 October 2024, residential and non-residential individual CGT rates are identical, so the tax bill on a residential gain of the same size would be the same. The one scenario where a lower rate may apply is where Business Asset Disposal Relief is available on the commercial disposal (14% for 2025/26).</p>
 
 <h2>When Do You Need to Report and Pay?</h2>
 
@@ -167,6 +167,6 @@ Step 8: Less annual exempt amount (£3,000) = £99,000 chargeable gain</p>
 
 <h2>How We Help with Property Disposals</h2>
 
-<p>As ICAEW qualified accountants, we review the full picture before you sell. That includes the ownership structure, the intended use of proceeds, and the timing of the disposal. We calculate the estimated tax, identify available reliefs, and file the returns on your behalf. For residential property, we handle the 60-day reporting so you do not miss the deadline.</p>
+<p>We review the full picture before you sell. That includes the ownership structure, the intended use of proceeds, and the timing of the disposal. We calculate the estimated tax, identify available reliefs, and file the returns on your behalf. For residential property, we handle the 60-day reporting so you do not miss the deadline.</p>
 
 <p>If you are selling a property and want to know the tax bill before you exchange contracts, <a href="/contact">contact us</a> for a consultation. We work with business owners across the UK, from a freelance consultant in Soho selling a second home in Kent to a partnership in the Jewellery Quarter in Birmingham disposing of a commercial unit.</p>

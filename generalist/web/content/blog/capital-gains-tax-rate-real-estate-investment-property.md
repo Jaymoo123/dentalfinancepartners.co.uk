@@ -33,7 +33,7 @@ faqs:
 
 <p>For 2025/26, the <strong>capital gains tax rate on real estate investment property</strong> is 18% for basic rate taxpayers and 24% for higher rate taxpayers on residential property gains. Commercial property gains are taxed at the same rates, but the rules around Private Residence Relief, reporting deadlines, and allowable costs differ significantly.</p>
 
-<p>This article covers the rates, the reliefs, and the practical steps you need to take before selling a property held as an investment. As ICAEW qualified accountants, we deal with these calculations regularly for clients across the UK.</p>
+<p>This article covers the rates, the reliefs, and the practical steps you need to take before selling a property held as an investment. We deal with these calculations regularly for clients across the UK.</p>
 
 <h2>The Two Rates: Residential vs Commercial Property</h2>
 

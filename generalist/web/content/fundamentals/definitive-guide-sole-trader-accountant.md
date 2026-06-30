@@ -5,7 +5,7 @@ canonical: "https://www.hollowaydavies.co.uk/fundamentals/definitive-guide-sole-
 date: "2026-05-17"
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
-metaTitle: "Sole Trader Accountant UK: 2025/26 Guide | ICAEW Experts"
+metaTitle: "Sole Trader Accountant UK: 2025/26 Guide | Specialist Accountants"
 metaDescription: "Find the right sole trader accountant for your UK business. Covers costs, services, MTD ITSA, tax planning, and what to ask before hiring. Written"
 altText: "UK sole trader accountant reviewing tax return documents with a client in a modern Manchester office"
 image: "/blog/definitive-guide-sole-trader-accountant.jpg"
@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/unrecognizable-shopper-with-asian-girlfriend-choosing-clothes-in-shop-5709608/"
   source: "Pexels"
 h1: "The Definitive Guide to Choosing a Sole Trader Accountant in the UK (2025/26)"
-summary: "Choosing the right sole trader accountant is one of the most important decisions you'll make for your business. This guide covers everything from what to expect in fees and services, how the 2025/26 tax rules affect you, and the specific questions you must ask before signing up. Written by ICAEW-qualified accountants who work with sole traders across the UK every day."
+summary: "Choosing the right sole trader accountant is one of the most important decisions you'll make for your business. This guide covers everything from what to expect in fees and services, how the 2025/26 tax rules affect you, and the specific questions you must ask before signing up. Written by our specialist accountants who work with sole traders across the UK every day."
 schema: ""
 faqs:
   - question: "Do I need a sole trader accountant if I only earn a small amount?"
@@ -34,7 +34,7 @@ faqs:
 
 <p>This guide is written for UK sole traders, freelancers, contractors working outside IR35, and small business owners who trade as individuals rather than through a limited company. It covers what an accountant actually does for you, what you should expect to pay, how the 2025/26 tax rules affect your bottom line, and the specific questions you need to ask before you hire anyone.</p>
 
-<p>We are <a href="/about">ICAEW-qualified accountants</a>. We work with sole traders across the UK, from a freelance graphic designer in Shoreditch to a builder in the Jewellery Quarter in Birmingham to a management consultant in Edinburgh's Old Town. Every business is different. But the principles of good tax planning and clean bookkeeping are universal.</p>
+<p>We are <a href="/about">specialist accountants</a>. We work with sole traders across the UK, from a freelance graphic designer in Shoreditch to a builder in the Jewellery Quarter in Birmingham to a management consultant in Edinburgh's Old Town. Every business is different. But the principles of good tax planning and clean bookkeeping are universal.</p>
 
 <h2>What Does a Sole Trader Accountant Actually Do?</h2>
 
@@ -151,7 +151,7 @@ faqs:
 <h3>Qualification and Regulation</h3>
 <p>Look for an accountant who is a member of a recognised professional body: <strong>ICAEW</strong>, <strong>ACCA</strong>, <strong>AAT</strong>, or <strong>CIMA</strong>. These bodies require ongoing professional development, adherence to ethical standards, and professional indemnity insurance. Anyone can call themselves an accountant. Not everyone is qualified.</p>
 
-<p>We are <a href="/services">ICAEW-qualified accountants</a>. That means we are regulated by the Institute of Chartered Accountants in England and Wales, which has some of the highest professional standards in the world.</p>
+<p>We are <a href="/services">specialist accountants</a>, working to high professional standards and carrying professional indemnity insurance.</p>
 
 <h3>Experience with Your Type of Business</h3>
 <p>An accountant who specialises in property landlords may not be the best fit for a freelance software developer. Ask about their experience with your sector. A good accountant will be able to talk knowledgeably about your specific expenses, allowable deductions, and common pitfalls.</p>
@@ -324,6 +324,6 @@ faqs:
 <li><strong>Sign up before your next tax year-end.</strong> The sooner you have an accountant, the more they can do for you in terms of planning.</li>
 </ol>
 
-<p>If you would like to speak to us, we offer a free initial consultation. We are <a href="/contact">ICAEW-qualified accountants</a> based in the UK, working with sole traders across every sector. We can help you understand your position, identify savings, and set you up for the MTD world.</p>
+<p>If you would like to speak to us, we offer a free initial consultation. We are <a href="/contact">specialist accountants</a> based in the UK, working with sole traders across every sector. We can help you understand your position, identify savings, and set you up for the MTD world.</p>
 
 <h2>Frequently Asked Questions</h2>

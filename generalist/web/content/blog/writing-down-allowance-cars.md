@@ -6,18 +6,18 @@ date: '2026-05-20'
 generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
-metaTitle: 'Writing Down Allowance Cars: UK Tax Guide 2025/26'
+metaTitle: 'Writing Down Allowance Cars: UK Tax Guide 2025/26 and 2026/27'
 metaDescription: Writing down allowance on cars explained for UK businesses. Rates, CO2 thresholds, and how to claim capital allowances on your company car.
 altText: Accountant reviewing car capital allowance calculations on a laptop in a modern UK office
 image: https://images.pexels.com/photos/35719571/pexels-photo-35719571.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'Writing Down Allowance on Cars: A Complete UK Guide'
-summary: Writing down allowance (WDA) is the capital allowance method for cars that don't qualify for full expensing or the annual investment allowance. The rate you get depends entirely on the car's CO2 emissions. This guide covers the 2025/26 rules, thresholds, and how to calculate your claim.
+summary: Writing down allowance (WDA) is the capital allowance method for cars that don't qualify for full expensing or the annual investment allowance. The rate you get depends entirely on the car's CO2 emissions. This guide covers the 2025/26 and 2026/27 rules, including the reduction in the main pool rate from 18% to 14% from April 2026 under FA 2026 s.28.
 schema: ''
 faqs:
-- question: What is the writing down allowance rate for cars in 2025/26?
-  answer: For cars bought from 1 April 2021 onwards, the writing down allowance rate is 18% per year (reducing balance) for cars with CO2 emissions of 50g/km or less, and 6% per year for cars with emissions above 50g/km. These rates apply for the 2025/26 tax year and have not changed. The rate depends entirely on the car's certified CO2 figure, not its age or fuel type.
+- question: What is the writing down allowance rate for cars in 2025/26 and 2026/27?
+  answer: For cars bought from 1 April 2021 onwards, the writing down allowance rate for cars with CO2 emissions of 50g/km or less was 18% per year (reducing balance) up to 31 March 2026 (corporation tax) or 5 April 2026 (income tax). FA 2026 s.28 reduced the main pool rate to 14% per year from 1 April 2026 (CT) or 6 April 2026 (IT). For cars with CO2 emissions above 50g/km, the special rate pool remains at 6% per year (unchanged). The rate depends entirely on the car's certified CO2 figure, not its age or fuel type.
 - question: Can I claim writing down allowance on a used car?
-  answer: Yes. Writing down allowance applies to both new and used cars. The rate depends on the car's CO2 emissions, not whether it is new or second-hand. You claim WDA on the actual cost you paid for the car. If you buy a used electric car, it goes into the main rate pool at 18% WDA rather than qualifying for full expensing (which is only available for new zero-emission cars).
+  answer: Yes. Writing down allowance applies to both new and used cars. The rate depends on the car's CO2 emissions, not whether it is new or second-hand. You claim WDA on the actual cost you paid for the car. If you buy a used electric car, it goes into the main rate pool rather than qualifying for full expensing (which is only available for new zero-emission cars). The main pool rate was 18% to 31 March 2026 (CT) or 5 April 2026 (IT), reducing to 14% from April 2026 under FA 2026 s.28.
 - question: How do I find the CO2 emissions figure for my car?
   answer: The CO2 emissions figure is on the vehicle's V5C registration certificate (log book) in section 4 under "CO2 emissions (g/km)". You can also find it on the manufacturer's website or on the Vehicle Certification Agency's database. If you cannot find the figure, HMRC will default the car to the special rate pool at 6% WDA. Keep a copy of the V5C with your tax records.
 - question: What happens to writing down allowance when I sell the car?
@@ -45,11 +45,11 @@ If the car is brand new and zero-emission (electric), it qualifies for full expe
 
 If the car is second-hand or has CO2 emissions above zero, it goes into the WDA system. The rate you get depends on the car's CO2 emissions figure.
 
-<h3>Main Rate Pool (18% WDA)</h3>
+<h3>Main Rate Pool (18% WDA to April 2026, then 14%)</h3>
 
-Cars with CO2 emissions of 50g/km or less go into the main rate pool. You claim 18% of the remaining value each year on a reducing balance basis.
+Cars with CO2 emissions of 50g/km or less go into the main rate pool. The writing down allowance rate was 18% per year (reducing balance) for periods up to 31 March 2026 (corporation tax) or 5 April 2026 (income tax). FA 2026 s.28 reduced this to 14% per year from 1 April 2026 (CT) or 6 April 2026 (IT). For accounting periods that straddle the April 2026 date, a time-apportioned hybrid rate applies.
 
-This covers most plug-in hybrids and some very low-emission petrol or diesel cars. If you bought a car after April 2021 that emits 50g/km or less, it qualifies for the 18% rate.
+This covers most plug-in hybrids and some very low-emission petrol or diesel cars. If you bought a car after April 2021 that emits 50g/km or less, it qualifies for the main rate pool (14% from April 2026).
 
 <h3>Special Rate Pool (6% WDA)</h3>
 
@@ -101,14 +101,6 @@ For a sole trader or partnership, you only claim WDA on the business-use proport
 
 For a limited company director, the rules are different. The company claims 100% of the WDA because the car is a company asset. But the director pays tax on the private use benefit through the benefit-in-kind (BIK) charge on form P11D. The company also pays Class 1A National Insurance on the BIK value.
 
-<h2>Cars Costing Over £250,000</h2>
-
-There is a special rule for expensive cars. If the car costs more than £250,000, the WDA is capped.
-
-The maximum WDA you can claim in any single year is limited to the allowance that would apply if the car cost exactly £250,000. The excess cost above £250,000 does not qualify for any capital allowance.
-
-This rule catches very high-value cars like luxury sports cars and high-end executive saloons. Most business cars fall well below this threshold, so it rarely applies in practice.
-
 <h2>Disposing of a Car and Balancing Adjustments</h2>
 
 When you sell or dispose of a car that has been in the WDA pool, you need to account for the disposal.
@@ -123,9 +115,9 @@ For cars in the main rate pool or special rate pool, disposals are pooled. You d
 
 Keep a record of the car's CO2 emissions figure. You can find this on the vehicle's V5C log book (section 4) or on the manufacturer's website. Without the CO2 figure, HMRC will default to the special rate pool at 6%.
 
-If you are buying a car through your limited company, compare the total tax position. A new electric car gives you full expensing and a low BIK rate (2% in 2025/26). A diesel car gives you 6% WDA and a much higher BIK rate. The electric car is almost always better for tax.
+If you are buying a car through your limited company, compare the total tax position. A new electric car gives you full expensing and a low BIK rate (3% in 2025/26, 4% in 2026/27, rising 1% per year under the published schedule). A diesel car gives you 6% WDA and a much higher BIK rate. The electric car is almost always better for tax.
 
-If you are a sole trader using your own car for business, you can choose between claiming capital allowances (including WDA) or using the simplified mileage rate of 45p per mile for the first 10,000 miles. The mileage rate includes both the running costs and the depreciation, so you cannot claim WDA on top of it.
+If you are a sole trader using your own car for business, you can choose between claiming capital allowances (including WDA) or using the simplified mileage rate of 55p per mile for the first 10,000 business miles (from 6 April 2026 / 2026/27; 45p applied in prior years), then 25p per mile above 10,000 miles. The mileage rate includes both the running costs and the depreciation, so you cannot claim WDA on top of it.
 
 <h2>Common Mistakes with Writing Down Allowance</h2>
 
@@ -139,9 +131,9 @@ Mistake four: not pooling disposals correctly. When you sell a car, add the sale
 
 <h2>How Holloway Davies Can Help</h2>
 
-As ICAEW qualified accountants, we deal with capital allowance calculations regularly. We can help you work out the correct WDA rate for your cars, ensure your claims are accurate, and advise on whether a different ownership structure would be more tax efficient.
+We deal with capital allowance calculations regularly. We can help you work out the correct WDA rate for your cars, ensure your claims are accurate, and advise on whether a different ownership structure would be more tax efficient.
 
-If you are considering buying a car through your business, speak to us first. The difference between full expensing, WDA at 18%, and WDA at 6% can be thousands of pounds in tax relief over the car's life.
+If you are considering buying a car through your business, speak to us first. The difference between full expensing, WDA at 14% (main pool from April 2026), and WDA at 6% (special rate pool) can be thousands of pounds in tax relief over the car's life.
 
 Contact our team or visit our <a href="/services">services page</a> to see how we support UK businesses with corporation tax, capital allowances, and tax planning. You can also read more on our <a href="/blog/corporation-tax">corporation tax blog</a> for regular updates on tax rules that affect your business.
 

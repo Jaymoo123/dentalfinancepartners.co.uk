@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "Incorporation and Structure"
 metaTitle: "Pre-Revenue Startup Accountant: Investor Funding & Share"
 metaDescription: "Pre-revenue with investor funding? Your accountant must handle EMI schemes, investor reporting, and share structures. Here is what to look for."
-altText: "Two startup founders meeting with an ICAEW qualified accountant in a modern London office discussing share structure and investor reporting"
+altText: "Two startup founders meeting with an accountant in a modern London office discussing share structure and investor reporting"
 image: "/blog/pre-revenue-startup-accountant-investor-funding.jpg"
 imageCredit:
   photographer: "RDNE Stock project"
@@ -26,7 +26,7 @@ faqs:
   - question: "What is an EMI scheme and why does my startup need one?"
     answer: "An Enterprise Management Incentive (EMI) scheme is a tax-advantaged share option plan for employees. It lets you grant options at a low value now, and employees pay Capital Gains Tax (not income tax) on the growth when they sell. It is the standard way to incentivise early employees in UK startups. Your accountant must file the scheme with HMRC within 92 days of grant."
   - question: "How do I pay myself from a pre-revenue startup with investor funding?"
-    answer: "The most tax-efficient approach is a salary up to £12,570 (matching the personal allowance) to build NI credits. Do not take dividends as there are no profits. Keep a director's loan account if you need more, but be careful: loans over £10,000 create a benefit in kind, and unpaid loans after 9 months trigger S455 tax at 33.75%. Check your investment agreement for any salary restrictions."
+    answer: "The most tax-efficient approach is a salary up to £12,570 (matching the personal allowance) to build NI credits. Do not take dividends as there are no profits. Keep a director's loan account if you need more, but be careful: loans over £10,000 create a benefit in kind, and unpaid loans after 9 months trigger S455 tax at 35.75% (the rate for loans made from 6 April 2026; 33.75% for loans made in 2025/26). Check your investment agreement for any salary restrictions."
 ---
 
 <p>If you have raised investor funding but your company has zero revenue yet, your accounting needs are different from a typical small business. A standard high street accountant who handles restaurant accounts and freelance contractors will not cut it. You need an <strong>accountant for startup</strong> operations who understands pre-revenue structures, investor reporting, and equity incentives.</p>
@@ -119,7 +119,7 @@ faqs:
 <li>Keep a director's loan account if you need to draw more than salary</li>
 </ul>
 
-<p>Be careful with director's loan accounts. If you take more than £10,000 from the company, it becomes a benefit in kind and you pay tax on the notional interest. If you do not repay it within 9 months and 1 day of the year-end, the company pays S455 tax at 33.75% on the outstanding amount. That is a 33.75% charge on money you have already spent.</p>
+<p>Be careful with director's loan accounts. If you take more than £10,000 from the company, it becomes a benefit in kind and you pay tax on the notional interest. If you do not repay it within 9 months and 1 day of the year-end, the company pays S455 tax at 35.75% (from 6 April 2026; 33.75% for loans made in 2025/26) on the outstanding amount. That is a substantial charge on money you have already spent.</p>
 
 <p>Your accountant should model your drawings against the company's cash position and investor restrictions. Some investment agreements limit director salaries without investor approval. Check your terms.</p>
 
@@ -160,7 +160,7 @@ faqs:
 <li>Uses cloud accounting software (Xero, FreeAgent, QuickBooks)</li>
 </ul>
 
-<p>As ICAEW qualified accountants, our team at Holloway Davies works with startups across the country. We have clients in Shoreditch building fintech platforms, in Manchester's Northern Quarter developing AI tools, and in Bristol's Harbourside running hardware startups. We understand the specific needs of a pre-revenue company with investor backing.</p>
+<p>Our team at Holloway Davies works with startups across the country. We have clients in Shoreditch building fintech platforms, in Manchester's Northern Quarter developing AI tools, and in Bristol's Harbourside running hardware startups. We understand the specific needs of a pre-revenue company with investor backing.</p>
 
 <p>If you are raising or have already raised funding, talk to us about how we can support your <a href="/about">startup accounting needs</a>. We can also help with <a href="/fundamentals">the fundamentals</a> of setting up your company structure properly from day one.</p>
 

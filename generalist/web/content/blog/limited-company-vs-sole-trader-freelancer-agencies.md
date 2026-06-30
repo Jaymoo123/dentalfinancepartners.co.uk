@@ -31,7 +31,7 @@ faqs:
 
 <p>Most online comparisons focus on headline tax rates. They show you the 19% corporation tax versus 20% income tax, or the dividend tax rates versus self-employed National Insurance. That is useful, but it misses the real constraint: many agencies will only work with limited company contractors, or they will default to umbrella company arrangements unless you push back. Your structure choice starts with what the agency contract allows.</p>
 
-<p>As ICAEW qualified accountants working with freelancers across every sector from tech contractors in Shoreditch to creative freelancers in the Northern Quarter, we see the same pattern. The structure that works best depends on three things: your IR35 status, your agency's preferred engagement model, and your earnings level. Here is how to work through each one.</p>
+<p>Working with freelancers across every sector from tech contractors in Shoreditch to creative freelancers in the Northern Quarter, we see the same pattern. The structure that works best depends on three things: your IR35 status, your agency's preferred engagement model, and your earnings level. Here is how to work through each one.</p>
 
 <h2>How Agencies Engage Freelancers: The Three Routes</h2>
 
@@ -41,7 +41,7 @@ faqs:
 
 <p><strong>Route two: Umbrella company.</strong> The agency places you on an umbrella company's payroll. The umbrella handles PAYE, NI, and pension deductions. You receive a net salary. This is the default option for many agencies when IR35 applies or when the contractor does not have a limited company.</p>
 
-<p><strong>Route three: Sole trader / self-employed.</strong> The agency contracts with you as an individual. You invoice them as a sole trader. You file self assessment returns and pay Class 2 and Class 4 National Insurance. This is less common for agency work, but it exists, particularly in creative industries and shorter-term engagements.</p>
+<p><strong>Route three: Sole trader / self-employed.</strong> The agency contracts with you as an individual. You invoice them as a sole trader. You file self assessment returns and pay Class 4 National Insurance (compulsory Class 2 was abolished from 6 April 2024). This is less common for agency work, but it exists, particularly in creative industries and shorter-term engagements.</p>
 
 <p>Your first question to any agency should be: <em>"What engagement models do you support for contractors?"</em> If they say limited company only, the decision is made. If they offer both limited company and sole trader, you then work through the tax and IR35 implications.</p>
 
@@ -55,7 +55,7 @@ faqs:
 
 <ul>
 <li><strong>If your contract is outside IR35:</strong> A limited company is almost always the better option. You retain the profits in the company, pay corporation tax at 19% or 25% instead of income tax at 20% or 40%, and extract profits as dividends taxed at 8.75% or 33.75%. The overall effective tax rate on profits extracted is typically 20-30% lower than equivalent self-employed income.</li>
-<li><strong>If your contract is inside IR35:</strong> The limited company advantage is minimal. You pay PAYE and NI on your deemed employment income, plus employer NI at 13.8%. You may keep a small margin of retained profit, but the tax saving is often not worth the additional compliance cost. Many contractors in this position switch to an umbrella or operate as a sole trader if the agency allows it.</li>
+<li><strong>If your contract is inside IR35:</strong> The limited company advantage is minimal. You pay PAYE and NI on your deemed employment income, plus employer NI at 15% (above the £5,000 secondary threshold, from 6 April 2025). You may keep a small margin of retained profit, but the tax saving is often not worth the additional compliance cost. Many contractors in this position switch to an umbrella or operate as a sole trader if the agency allows it.</li>
 <li><strong>If your contract status is uncertain:</strong> This is the trickiest scenario. If you have a mix of inside and outside IR35 contracts, a limited company can still work. You draw a salary from the inside-IR35 income and take dividends from the outside-IR35 income. But the compliance burden is higher, and you need an accountant who understands the interaction.</li>
 </ul>
 
@@ -71,29 +71,29 @@ faqs:
 <li>Personal allowance: £12,570</li>
 <li>Basic rate tax (20% on £37,700): £7,540</li>
 <li>Higher rate tax (40% on £26,730): £10,692</li>
-<li>Class 4 NI (9% on £37,700, then 2% on £39,300): £3,393 + £786 = £4,179</li>
-<li>Class 2 NI: £179.40</li>
-<li><strong>Total tax and NI: £22,590</strong></li>
-<li><strong>Net income: £54,410</strong></li>
+<li>Class 4 NI (6% on £37,700, then 2% on £26,730): £2,262 + £534.60 = £2,796.60</li>
+<li>Class 2 NI: £0 (abolished from 6 April 2024)</li>
+<li><strong>Total tax and NI: £21,028.60</strong></li>
+<li><strong>Net income: £55,971.40</strong></li>
 </ul>
 
 <h3>Limited Company on £80,000 (outside IR35)</h3>
 <ul>
 <li>Company turnover: £80,000</li>
 <li>Company expenses: £3,000 (including director salary)</li>
-<li>Director salary: £12,570 (no tax or NI due as it is within personal allowance and primary threshold)</li>
-<li>Company profit before tax: £64,430</li>
-<li>Corporation tax (19% on first £50k, 25% on £14,430): £9,500 + £3,607.50 = £13,107.50</li>
-<li>Profit after tax: £51,322.50</li>
-<li>Dividend taken: £51,322.50</li>
+<li>Director salary: £12,570 (no income tax or employee NIC; however, employer NIC of £1,135.50 is payable: 15% on £7,570 above the £5,000 secondary threshold; Employment Allowance is not available to a single-director company)</li>
+<li>Company profit before CT: £63,294.50 (£80,000 less £3,000 expenses, £12,570 salary and £1,135.50 employer NIC)</li>
+<li>Corporation tax (25% main rate with marginal relief: 25% x £63,294.50 less £186,705.50 x 3/200): £13,023.04</li>
+<li>Profit after tax: £50,271.46</li>
+<li>Dividend taken: £50,271.46</li>
 <li>Dividend allowance: £500</li>
 <li>Dividend taxed at basic rate (8.75% on £37,700): £3,298.75</li>
-<li>Dividend taxed at higher rate (33.75% on £13,122.50): £4,428.84</li>
-<li><strong>Total tax and NI: £13,107.50 + £3,298.75 + £4,428.84 = £20,835.09</strong></li>
-<li><strong>Net income: £59,164.91</strong></li>
+<li>Dividend taxed at higher rate (33.75% on £12,071.46): £4,074.12</li>
+<li><strong>Total tax and NI: £1,135.50 (employer NIC) + £13,023.04 (CT) + £3,298.75 + £4,074.12 = £21,531.41</strong></li>
+<li><strong>Net income: £55,468.59</strong></li>
 </ul>
 
-<p>In this example, the limited company saves you approximately £4,750 per year in tax. That is before accounting for the additional compliance costs of running a limited company (annual accounts, confirmation statement, corporation tax return, payroll RTI filing). Those costs typically run £800 to £1,500 per year with a good accountant. The net saving is still meaningful, around £3,250 to £3,950.</p>
+<p>In this example, once employer NIC on the director salary and the correct marginal relief CT calculation are applied, the two structures are close. The sole trader takes home approximately £55,971, the limited company director approximately £55,469. At £80,000 with a single-director salary, the limited company is marginally more expensive in tax terms, primarily because Employment Allowance is not available to a sole-director company. Add compliance costs of £800 to £1,500 per year for a good accountant and the tax case for incorporating at this earnings level is tighter than it might appear.</p>
 
 <p>But here is the catch. That saving only exists if your contract is <strong>outside IR35</strong>. If it is inside IR35, the limited company calculation changes dramatically. You would pay PAYE and NI on the deemed employment income, and the net saving shrinks to a few hundred pounds or disappears entirely.</p>
 
@@ -114,7 +114,7 @@ faqs:
 <p>The limited company structure shines in these situations:</p>
 
 <ul>
-<li><strong>Outside IR35 contracts above £50,000.</strong> The tax saving becomes material. At £80,000, you save around £4,000 per year. At £120,000, the saving grows to £8,000 or more.</li>
+<li><strong>Outside IR35 contracts above £50,000.</strong> The tax saving grows with earnings. At £120,000, the saving is typically £8,000 or more.</li>
 <li><strong>Multiple contracts simultaneously.</strong> A limited company can hold multiple contracts, retain profits, and time dividend extraction to minimise higher rate tax. A sole trader pays tax on all profit in the year it is earned.</li>
 <li><strong>You want to build retained profits.</strong> A limited company can retain profits for future investment, equipment purchases, or pension contributions. A sole trader cannot defer tax in the same way.</li>
 <li><strong>You want limited liability.</strong> If your work carries professional risk (consultancy, IT infrastructure, financial advice), the limited company structure protects your personal assets. A sole trader is personally liable for any claims.</li>
@@ -150,7 +150,7 @@ faqs:
 <li><strong>Get the IR35 status determination from the end client.</strong> If the role is inside IR35, a limited company offers little tax advantage. If it is outside IR35, the limited company structure is worth considering.</li>
 <li><strong>Estimate your annual turnover.</strong> If it is below £30,000, the compliance cost of a limited company often outweighs the tax saving. Above £50,000, the tax saving becomes meaningful.</li>
 <li><strong>Consider your medium-term plans.</strong> If you plan to grow your business, take on employees, or retain profits for investment, a limited company gives you more flexibility. If you plan to stay as a solo freelancer with no growth ambitions, a sole trader is simpler.</li>
-<li><strong>Run the numbers with an accountant.</strong> A proper comparison needs your specific expenses, pension contributions, and dividend strategy. Our ICAEW qualified team can run that comparison for you. <a href="/contact">Contact us</a> to book a consultation.</li>
+<li><strong>Run the numbers with an accountant.</strong> A proper comparison needs your specific expenses, pension contributions, and dividend strategy. Our experienced team can run that comparison for you. <a href="/contact">Contact us</a> to book a consultation.</li>
 </ol>
 
 <h2>Can You Switch Later?</h2>

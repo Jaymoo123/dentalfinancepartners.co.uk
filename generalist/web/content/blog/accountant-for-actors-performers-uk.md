@@ -20,9 +20,9 @@ summary: "Actors and performers face a unique set of tax challenges: irregular i
 schema: ""
 faqs:
   - question: "Can I claim driving lessons or travel expenses as an actor?"
-    answer: "You can claim travel expenses for journeys made specifically for auditions, rehearsals, or performances. This includes train fares, tube tickets, taxis, and mileage at 45p per mile for the first 10,000 business miles. You cannot claim the cost of learning to drive (that is a personal expense). You also cannot claim travel from your home to a permanent workplace if you have one. Keep a log of every business journey with dates, destinations, and purpose."
+    answer: "You can claim travel expenses for journeys made specifically for auditions, rehearsals, or performances. This includes train fares, tube tickets, taxis, and mileage at 55p per mile for the first 10,000 business miles (2026/27 rate; 45p applied up to 2025/26), then 25p per mile above 10,000. You cannot claim the cost of learning to drive (that is a personal expense). You also cannot claim travel from your home to a permanent workplace if you have one. Keep a log of every business journey with dates, destinations, and purpose."
   - question: "Do I need to register for VAT if I earn less than £90,000 as a performer?"
-    answer: "No, you are not required to register until your VAT-taxable turnover exceeds £90,000 in any rolling 12-month period. But you can register voluntarily before that threshold. Many performers do this to use the Flat Rate Scheme, where you charge 20% VAT but pay HMRC a fixed percentage (14.5% for the \"artists and writers\" sector). You keep the difference. Check with your accountant whether you qualify as a limited cost trader first, as that changes the rate to 16.5%."
+    answer: "No, you are not required to register until your VAT-taxable turnover exceeds £90,000 in any rolling 12-month period. But you can register voluntarily before that threshold. Many performers do this to use the Flat Rate Scheme, where you charge 20% VAT but pay HMRC a fixed percentage (12.5% for the Entertainment or journalism sector). You keep the difference. Check with your accountant whether you qualify as a limited cost trader first, as that changes the rate to 16.5%."
   - question: "Should I set up a limited company as an actor?"
     answer: "It depends on your income level and the type of work you do. If your annual profits consistently exceed £50,000 and most of your engagements fall outside IR35, a limited company is usually more tax-efficient. You can retain profits, split income with a spouse through dividends, and claim employer pension contributions as a deductible expense. If your income is lower or most of your work is inside IR35, staying as a sole trader is simpler and cheaper. Your accountant should model both scenarios with your actual numbers before you decide."
   - question: "What happens if I miss the self assessment deadline?"
@@ -61,7 +61,7 @@ faqs:
 <li>Agent's commission and fees (usually 10% to 20% of gross income)</li>
 <li>Showreel production and editing costs</li>
 <li>Headshot photography and printing</li>
-<li>Audition travel (train fares, tube, taxis, mileage at 45p per mile for the first 10,000 business miles)</li>
+<li>Audition travel (train fares, tube, taxis, mileage at 55p per mile for the first 10,000 business miles (2026/27 rate; 45p applied up to 2025/26), then 25p per mile above 10,000)</li>
 <li>Sheet music, scripts, and learning materials specific to an audition or role</li>
 <li>Dance classes, singing lessons, and acting workshops that maintain or improve skills for current work</li>
 <li>Costume and makeup for specific roles (not everyday wear)</li>
@@ -79,9 +79,9 @@ faqs:
 
 <p>If your VAT-registrable turnover exceeds £90,000 in any rolling 12-month period, you must register for VAT. But many performers choose to register voluntarily before that threshold because of the Flat Rate Scheme.</p>
 
-<p>Under the Flat Rate Scheme, you charge your clients 20% VAT but pay HMRC a fixed percentage based on your sector. For performers in the "artists and writers" sector, the flat rate is 14.5%. That means you keep 5.5% of the VAT you collect.</p>
+<p>Under the Flat Rate Scheme, you charge your clients 20% VAT but pay HMRC a fixed percentage based on your sector. For performers in the Entertainment or journalism sector, the flat rate is 12.5%. You pay 12.5% of your VAT-inclusive turnover to HMRC and keep the remainder of the VAT you collected.</p>
 
-<p>On a £10,000 engagement, you charge £12,000 including VAT. You pay HMRC £1,740 (14.5% of £12,000). You keep £260. Over a year of multiple engagements, that adds up.</p>
+<p>On a £10,000 engagement, you charge £12,000 including VAT. You pay HMRC £1,500 (12.5% of £12,000). You keep £500. Over a year of multiple engagements, that adds up.</p>
 
 <p>There is a catch. If you are a "limited cost trader" (your VAT-inclusive spend on relevant goods is less than 2% of your VAT-inclusive turnover or less than £1,000 per year), you must use the 16.5% flat rate. Many performers fall into this category because their main costs are services (agent fees, studio hire) rather than goods. Your accountant should check your eligibility before you join the scheme.</p>
 
@@ -118,13 +118,13 @@ faqs:
 <ul>
 <li><strong>Do they know IR35 inside out?</strong> Ask them to explain the difference between inside and outside IR35 for a TV actor versus a theatre actor. If they cannot give you a clear answer, move on.</li>
 <li><strong>Can they name the main union rates?</strong> Equity minimums, Spotlight fees, and the NUJ rates for voiceover work. If they do not know these exist, they do not work with performers.</li>
-<li><strong>Do they understand flat rate VAT for performers?</strong> Ask them about the limited cost trader test and the 14.5% rate. A generalist may not know this exists.</li>
+<li><strong>Do they understand flat rate VAT for performers?</strong> Ask them about the limited cost trader test and the correct FRS sector rate for performers (Entertainment or journalism, currently 12.5%). A generalist may not know this exists.</li>
 <li><strong>Can they handle multiple income streams?</strong> Acting income, voiceover royalties, teaching work, commercial residuals. Your accountant needs to track each one separately for HMRC purposes.</li>
 <li><strong>Are they familiar with the creative sector's expense rules?</strong> The line between deductible and non-deductible clothing is specific to performers. A good accountant will know HMRC's guidance on this.</li>
 <li><strong>Do they offer year-round support or just a January rush?</strong> Actors need advice throughout the year, not just at tax return time. Can you email them with a quick question about an IR35 contract at 9pm on a Tuesday?</li>
 </ul>
 
-<p>At Holloway Davies, our ICAEW qualified team works with performers across theatre, TV, film, voiceover, and commercial work. We are based in the UK and understand the sector's specific challenges. You can see our full <a href="/services">services for creative professionals here</a>.</p>
+<p>At Holloway Davies, our experienced team works with performers across theatre, TV, film, voiceover, and commercial work. We are based in the UK and understand the sector's specific challenges. You can see our full <a href="/services">services for creative professionals here</a>.</p>
 
 <h2>Making Tax Digital for Income Tax Self Assessment (MTD for ITSA)</h2>
 

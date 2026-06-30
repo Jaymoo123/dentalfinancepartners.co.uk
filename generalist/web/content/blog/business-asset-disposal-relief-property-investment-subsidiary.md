@@ -77,7 +77,7 @@ faqs:
 
 <p>Each option has tax consequences. You cannot simply move the property and ignore the tax. HMRC will treat any step that is part of a scheme or arrangement as ineffective for relief purposes if it is designed to circumvent the rules.</p>
 
-<p>As ICAEW qualified accountants, we see clients come to us six weeks before a sale asking if they can move the property out. Usually it is too late. The planning needs to happen years in advance, or at least before you have a binding agreement to sell.</p>
+<p>We see clients come to us six weeks before a sale asking if they can move the property out. Usually it is too late. The planning needs to happen years in advance, or at least before you have a binding agreement to sell.</p>
 
 <h2>What About a Company That Trades and Also Holds Investment Property Directly?</h2>
 

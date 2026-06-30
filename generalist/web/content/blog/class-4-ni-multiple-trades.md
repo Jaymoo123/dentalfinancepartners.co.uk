@@ -35,7 +35,7 @@ faqs:
 
 <p>This is the aggregation rule, and it matters because it can push you into a higher NI band than you expected. A common mistake is assuming each trade is treated independently, which leads to underpayment and a bill from HMRC later.</p>
 
-<p>For the 2025/26 tax year, Class 4 NI is charged at 9% on profits between £12,570 and £50,270, and 2% on profits above £50,270. If you have two trades each making £30,000, your combined profit is £60,000, not two separate £30,000 calculations. The first £50,270 of the combined profit is charged at 9%, and the remaining £9,730 at 2%.</p>
+<p>For the 2025/26 tax year, Class 4 NI is charged at 6% on profits between £12,570 and £50,270, and 2% on profits above £50,270. If you have two trades each making £30,000, your combined profit is £60,000, not two separate £30,000 calculations. The first £50,270 of the combined profit is charged at 6%, and the remaining £9,730 at 2%.</p>
 
 <h2>Who This Applies To</h2>
 
@@ -64,9 +64,9 @@ faqs:
 <p>The Class 4 calculation on £65,000 is:</p>
 
 <ul>
-<li>9% on the band from £12,570 to £50,270: that is £37,700 multiplied by 9% = £3,393.</li>
+<li>6% on the band from £12,570 to £50,270: that is £37,700 multiplied by 6% = £2,262.</li>
 <li>2% on the band above £50,270: that is £14,730 multiplied by 2% = £294.60.</li>
-<li>Total Class 4 NI due: £3,687.60.</li>
+<li>Total Class 4 NI due: £2,556.60.</li>
 </ul>
 
 <p>If you had incorrectly calculated each trade separately, you would have applied the lower rate band twice, underpaying by a significant margin. HMRC will correct this when your tax return is processed, but you will then face the bill in one lump sum.</p>
@@ -83,7 +83,7 @@ faqs:
 
 <h2>What About Class 2 NI?</h2>
 
-<p>Class 2 National Insurance is different. For the 2025/26 tax year, Class 2 NI is being abolished for most self employed people. You no longer need to pay a flat weekly amount. If your profits are below the small profits threshold (currently £6,725), you can still get NI credits for your state pension by making a voluntary contribution.</p>
+<p>Class 2 National Insurance is different. Class 2 NI was abolished as a compulsory charge from 6 April 2024. You no longer need to pay a flat weekly amount. If your profits are below the small profits threshold (currently £6,845 for 2025/26), you can still protect your state pension record by making voluntary Class 2 contributions.</p>
 
 <p>But the key point is that Class 2 NI is not aggregated in the same way as Class 4. It applies per individual, not per trade. So having multiple trades does not change your Class 2 position.</p>
 
@@ -93,7 +93,7 @@ faqs:
 
 <p>However, your total income from all sources affects your income tax bands, so the self employed profits can push you into a higher tax bracket. That is a separate calculation from Class 4 NI, but it is worth being aware of.</p>
 
-<p>For example, a teacher in Birmingham earning £35,000 through PAYE also runs a small tutoring business on the side making £15,000 profit. The Class 4 NI on the tutoring profit is 9% on the full £15,000 because the personal allowance and basic rate band are already used by the employment income. But the NI calculation itself only looks at the self employed profits.</p>
+<p>For example, a teacher in Birmingham earning £35,000 through PAYE also runs a small tutoring business on the side making £15,000 profit. The Class 4 NI on the tutoring profit is 6% on profits above the £12,570 lower profits limit, so on £2,430 in this case (£15,000 minus £12,570). The lower profits limit applies to self-employed profits directly regardless of employment income; the NI calculation only looks at the self employed profits.</p>
 
 <h2>How to Plan Around the Aggregation Rule</h2>
 

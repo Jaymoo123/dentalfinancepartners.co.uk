@@ -1,4 +1,4 @@
----
+﻿---
 title: How Corporation Tax Works When Your Company Has Multiple Shareholders
 slug: how-corporation-tax-works-multiple-shareholders
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/how-corporation-tax-works-multiple-shareholders
@@ -17,23 +17,21 @@ imageCredit:
   source: Pexels
 h1: How Corporation Tax Works When Your Company Has Multiple Shareholders
 summary: Corporation tax is paid by the company itself, not the shareholders. But when you have multiple shareholders, the decisions around dividends, director loans, and profit extraction become more complex. This guide explains how corporation tax interacts with your ownership structure.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How Corporation Tax Works When Your Company Has Multiple Shareholders","description":"Corporation tax is the company''s tax, not the shareholders''. See how dividends, director loans and the 19% small profits rate work with several owners.","url":"https://www.hollowaydavies.co.uk/blog/corporation-tax/how-corporation-tax-works-multiple-shareholders","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
-  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/corporation-tax/how-corporation-tax-works-multiple-shareholders"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/how-corporation-tax-works-multiple-shareholders.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Corporation Tax","item":"https://www.hollowaydavies.co.uk/blog/corporation-tax"},{"@type":"ListItem","position":3,"name":"How Corporation Tax Works When Your Company Has Multiple Shareholders","item":"https://www.hollowaydavies.co.uk/blog/corporation-tax/how-corporation-tax-works-multiple-shareholders"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does having multiple shareholders change the corporation tax rate my company pays?","acceptedAnswer":{"@type":"Answer","text":"No. The corporation tax rate depends on your company''s taxable profit, not the number of shareholders. A company with one shareholder and a company with ten shareholders pay the same rate on the same profit. However, if your shareholders control other companies, the associated company rules may reduce the profit thresholds for the small profits rate and marginal relief."}},{"@type":"Question","name":"Can we use dividends to reduce the company''s corporation tax bill?","acceptedAnswer":{"@type":"Answer","text":"No. Dividends are paid from post-tax profits. The company must pay corporation tax on its profits first. Dividends do not
-  reduce taxable profit. They are a distribution of profit after tax. The only way to reduce corporation tax is to increase allowable expenses, claim capital allowances, or make pension contributions."}},{"@type":"Question","name":"What happens if one director has an overdrawn loan account and another has a credit balance?","acceptedAnswer":{"@type":"Answer","text":"Each director''s loan account is separate. The company pays S455 tax at 33.75% on any overdrawn balance not repaid within 9 months and 1 day of the year-end. You cannot net off one director''s overdraft against another''s credit balance. The company must report each overdrawn DLA on the CT600 and pay the tax."}},{"@type":"Question","name":"How do associated company rules work when we have multiple shareholders?","acceptedAnswer":{"@type":"Answer","text":"If a shareholder controls another company, that company is associated with yours. Control means holding more than 50% of shares or having the power to appoint directors. Spouses and minor children are connected persons. Associated companies share the £50,000 small profits threshold and the £250,000 main rate threshold. Two associated companies each use a £25,000 threshold for the small profits rate."}}]}]}'
+schema: ""
 faqs:
 - question: Does having multiple shareholders change the corporation tax rate my company pays?
   answer: No. The corporation tax rate depends on your company's taxable profit, not the number of shareholders. A company with one shareholder and a company with ten shareholders pay the same rate on the same profit. However, if your shareholders control other companies, the associated company rules may reduce the profit thresholds for the small profits rate and marginal relief.
 - question: Can we use dividends to reduce the company's corporation tax bill?
   answer: No. Dividends are paid from post-tax profits. The company must pay corporation tax on its profits first. Dividends do not reduce taxable profit. They are a distribution of profit after tax. The only way to reduce corporation tax is to increase allowable expenses, claim capital allowances, or make pension contributions.
 - question: What happens if one director has an overdrawn loan account and another has a credit balance?
-  answer: Each director's loan account is separate. The company pays S455 tax at 33.75% on any overdrawn balance not repaid within 9 months and 1 day of the year-end. You cannot net off one director's overdraft against another's credit balance. The company must report each overdrawn DLA on the CT600 and pay the tax.
+  answer: Each director's loan account is separate. The company pays S455 tax at the dividend upper rate for the year the loan is made (33.75% for loans made in 2025/26; 35.75% for loans made on or after 6 April 2026) on any overdrawn balance not repaid within 9 months and 1 day of the year-end. You cannot net off one director's overdraft against another's credit balance. The company must report each overdrawn DLA on the CT600 and pay the tax.
 - question: How do associated company rules work when we have multiple shareholders?
   answer: If a shareholder controls another company, that company is associated with yours. Control means holding more than 50% of shares or having the power to appoint directors. Spouses and minor children are connected persons. Associated companies share the £50,000 small profits threshold and the £250,000 main rate threshold. Two associated companies each use a £25,000 threshold for the small profits rate.
 metaTitle_prev: How Corporation Tax Works With Multiple Shareholders | UK
 metaDescription_prev: Corporation tax is paid by the company, not the shareholders. But multiple shareholders affect dividend allocation, director loans, and profit extraction
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -55,7 +53,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>The marginal relief fraction is 3/200 for the 2024/25 and 2025/26 periods. That means if your company makes £120,000 in taxable profit, you do not pay 25% on the whole amount. You pay 19% on the first £50,000, then a blended rate on the rest using the marginal relief calculation.</p>
 
-<p>Here is a worked example. A company with two equal shareholders makes £120,000 taxable profit. The corporation tax bill is approximately £26,250, not £30,000. That is a saving of £3,750 compared to the main rate. The effective rate is 21.875%.</p>
+<p>Here is a worked example. A company with two equal shareholders makes £120,000 taxable profit. Marginal relief = 3/200 x (£250,000 - £120,000) = £1,950, so corporation tax = £30,000 - £1,950 = £28,050. That is a saving of £1,950 compared to the main rate. The effective rate is 23.375%.</p>
 
 <p>If your company has associated companies, the thresholds are divided between them. Associated companies are companies under common control, including those controlled by the same shareholders or connected persons. Two companies each with £60,000 profit would each use a £25,000 small profits threshold, not £50,000. That pushes both into marginal relief territory faster.</p>
 
@@ -77,11 +75,11 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Director loans are a frequent source of confusion in multi-shareholder companies. If a director takes more from the company than their salary, dividends, and expenses, the excess goes into a director's loan account (DLA).</p>
 
-<p>Here is the corporation tax link. If the DLA is overdrawn at the company's year-end and not repaid within 9 months and 1 day, the company pays <strong>S455 tax</strong> at 33.75% on the outstanding amount. This is a charge on the company, not the director. It is repayable when the loan is repaid.</p>
+<p>Here is the corporation tax link. If the DLA is overdrawn at the company's year-end and not repaid within 9 months and 1 day, the company pays <strong>S455 tax</strong> at the dividend upper rate for the year the loan was made (33.75% for loans in 2025/26; 35.75% for loans on or after 6 April 2026) on the outstanding amount. This is a charge on the company, not the director. It is repayable when the loan is repaid.</p>
 
 <p>In a multi-shareholder company, each director's DLA is separate. If Director A has a £15,000 overdrawn DLA and Director B has a £5,000 credit balance, the company only pays S455 tax on Director A's balance. The company cannot net them off.</p>
 
-<p>This creates a trap. Two directors who both take drawings throughout the year, without coordinating, can each build up overdrawn DLAs. The company ends up paying 33.75% on both balances. A £20,000 combined overdraft triggers £6,750 in S455 tax.</p>
+<p>This creates a trap. Two directors who both take drawings throughout the year, without coordinating, can each build up overdrawn DLAs. The company ends up paying S455 on both balances at the applicable rate (33.75% for 2025/26 loans; 35.75% for loans on or after 6 April 2026). A £20,000 combined overdraft made in 2025/26 triggers £6,750 in S455 tax.</p>
 
 <h3>Profit Extraction Strategy</h3>
 
@@ -125,7 +123,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>A tech consultancy in Shoreditch. Two founders. One runs the business full-time. The other is a silent investor. The active director takes a £12,570 salary. Both take dividends. The company makes £200,000 profit.</p>
 
-<p>Corporation tax: approximately £44,750 (marginal relief applies). Distributable profit after tax: £155,250. If they split dividends 50/50, each gets £77,625. The active director pays dividend tax at basic and higher rates. The silent investor does the same.</p>
+<p>Corporation tax: approximately £49,250 (marginal relief: 3/200 x (£250,000 - £200,000) = £750 relief, so CT = £50,000 - £750). Distributable profit after tax: £150,750. If they split dividends 50/50, each gets £75,375. The active director pays dividend tax at basic and higher rates. The silent investor does the same.</p>
 
 <p>But the silent investor might prefer to take less dividend and leave more profit in the company. That is a commercial decision, not a tax one. The company's corporation tax is already paid. The retained profit is available for growth.</p>
 
@@ -133,7 +131,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>A 4-employee software consultancy in Manchester turning over £420,000. Three shareholders: 50%, 30%, 20%. All are directors. The company makes £180,000 profit.</p>
 
-<p>Corporation tax: approximately £39,750. Distributable profit: £140,250. Dividends allocated 50/30/20: £70,125, £42,075, £28,050. Each shareholder's personal tax depends on their other income.</p>
+<p>Corporation tax: approximately £43,950 (marginal relief: 3/200 x (£250,000 - £180,000) = £1,050 relief, so CT = £45,000 - £1,050). Distributable profit: £136,050. Dividends allocated 50/30/20: £68,025, £40,815, £27,210. Each shareholder's personal tax depends on their other income.</p>
 
 <p>The 50% shareholder is a higher-rate taxpayer. The 20% shareholder is basic rate. The 30% shareholder is just below the higher-rate threshold. They could use alphabet shares to allocate more dividend to the 30% shareholder, pushing them to the higher-rate threshold, and less to the 50% shareholder. The company's corporation tax is unchanged. The combined personal tax falls.</p>
 
@@ -141,17 +139,17 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>A husband-and-wife Ltd company running a Leeds city centre retail shop. Two adult children are also shareholders but not directors. The company makes £90,000 profit.</p>
 
-<p>Corporation tax: approximately £17,750 (marginal relief). Distributable profit: £72,250. Dividends can be split four ways. Each shareholder gets £18,062.50. All are basic rate taxpayers, so dividend tax is 8.75% on the amount above the £500 allowance.</p>
+<p>Corporation tax: approximately £20,100 (marginal relief: 3/200 x (£250,000 - £90,000) = £2,400 relief, so CT = £22,500 - £2,400). Distributable profit: £69,900. Dividends can be split four ways. Each shareholder gets £17,475. All are basic rate taxpayers, so dividend tax is 8.75% on the amount above the £500 allowance.</p>
 
 <p>But there is a trap. If the children are not actively involved, HMRC may apply settlement legislation. This treats dividends paid to a non-active family member as still belonging to the person who transferred the shares. The tax falls on the original owner. Alphabet shares and proper documentation help, but the risk is real.</p>
 
 <h2>Director Responsibilities and Compliance</h2>
 
-<p>As an ICAEW qualified firm, Holloway Davies see common compliance issues in multi-shareholder companies. Here are the key ones.</p>
+<p>At Holloway Davies, we regularly see compliance issues in multi-shareholder companies. Here are the key ones.</p>
 
 <p><strong>Statutory registers.</strong> You must maintain a register of members, register of directors, and register of people with significant control (PSC register). Companies House requires these. Failure to file a confirmation statement on time triggers penalties starting at £150.</p>
 
-<p><strong>Annual accounts.</strong> Filed at Companies House within 9 months of the year-end. Corporation tax return (CT600) filed with HMRC within 12 months. Late filing of the CT600 triggers automatic penalties: £100 for 1 day late, £200 for 3 months, £500 for 6 months, £1,000 for 12 months. These are per return, not per shareholder.</p>
+<p><strong>Annual accounts.</strong> Filed at Companies House within 9 months of the year-end. Corporation tax return (CT600) filed with HMRC within 12 months. Late filing of the CT600 triggers automatic penalties: £100 at 1 day late, a further £100 at 3 months (£200 total), then 10% of unpaid corporation tax at 6 months and a further 10% at 12 months. These are per return, not per shareholder.</p>
 
 <p><strong>Dividend documentation.</strong> Every dividend needs a board minute or written resolution, a dividend voucher for each shareholder, and sufficient distributable reserves. HMRC can reclassify dividends as director loans if the paperwork is missing. That triggers S455 tax and potential personal tax charges.</p>
 
@@ -159,7 +157,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>Planning for Growth and Exit</h2>
 
-<p>If your company is growing, the corporation tax position changes. Once profits exceed £250,000, the main rate of 25% applies. No marginal relief. The effective rate jumps from around 21.875% at £120,000 profit to 25% at £250,000+.</p>
+<p>If your company is growing, the corporation tax position changes. Once profits exceed £250,000, the main rate of 25% applies. No marginal relief. The effective rate jumps from around 23.375% at £120,000 profit to 25% at £250,000+.</p>
 
 <p>This changes the profit extraction maths. At 19%, retaining profit is relatively cheap. At 25%, the tax cost of retaining profit is higher. Shareholders may prefer to extract more as dividends, even if it means higher personal tax.</p>
 
@@ -171,6 +169,6 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Managing corporation tax in a multi-shareholder company requires coordination. Every shareholder's personal tax position is different. The company's tax is a single calculation, but the decisions around profit extraction affect everyone differently.</p>
 
-<p>At Holloway Davies, our ICAEW qualified team works with multi-owner companies across every sector. We help with dividend planning, director loan management, associated company rules, and exit strategy. If your company has multiple shareholders and you want to optimise your tax position, <a href="/contact">contact us</a> for a discussion specific to your situation.</p>
+<p>At Holloway Davies, our experienced team works with multi-owner companies across every sector. We help with dividend planning, director loan management, associated company rules, and exit strategy. If your company has multiple shareholders and you want to optimise your tax position, <a href="/contact">contact us</a> for a discussion specific to your situation.</p>
 
 <p>We also have resources on <a href="/blog/director-pay-and-dividends">director pay and dividends</a>, <a href="/blog/corporation-tax">corporation tax</a>, and <a href="/blog/exit-and-capital-gains">exit and capital gains</a> that may be useful.</p>

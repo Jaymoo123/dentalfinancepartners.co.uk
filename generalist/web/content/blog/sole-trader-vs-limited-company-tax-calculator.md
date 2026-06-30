@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Incorporation and Structure"
 metaTitle: "Sole Trader vs Limited Company Tax Calculator 2025/26"
-metaDescription: "Compare take-home pay as a sole trader vs limited company director. Use our real-number worked example for 2025/26 rates. ICAEW accountants explain"
+metaDescription: "Compare take-home pay as a sole trader vs limited company director. Use our real-number worked example for 2025/26 rates. Specialist accountants explain"
 altText: "Accountant comparing sole trader and limited company tax calculations on a laptop in a modern UK office"
 image: "/blog/sole-trader-vs-limited-company-tax-calculator.jpg"
 imageCredit:
@@ -31,7 +31,7 @@ faqs:
 
 <p>If you are comparing sole trader vs limited company tax calculator results online, you are probably trying to decide which trading structure leaves you with more money in your pocket. The answer depends on your profit level, how you take money out of the business, and whether you need to reinvest profits year on year.</p>
 
-<p>This article walks through a real worked example using 2025/26 tax rates. We compare a sole trader paying income tax and Class 2 and Class 4 National Insurance against a limited company director paying corporation tax, salary, and dividends. The numbers are specific. You can adapt them to your own situation.</p>
+<p>This article walks through a real worked example using 2025/26 tax rates. We compare a sole trader paying income tax and Class 4 National Insurance against a limited company director paying corporation tax, salary, and dividends. The numbers are specific. You can adapt them to your own situation.</p>
 
 <h2>Why the Comparison Matters</h2>
 
@@ -39,7 +39,7 @@ faqs:
 
 <p>The limited company route adds administrative cost. You need annual accounts, a corporation tax return (CT600), a confirmation statement, and payroll if you take a salary. Sole traders file one self assessment return (SA100 with SA103 supplementary pages). The extra compliance cost typically runs between £800 and £1,500 per year for a small limited company. That must be factored into the comparison.</p>
 
-<p>As ICAEW qualified accountants, we see clients in both structures every week. The right choice is not always the limited company. For some profit levels, the sole trader route is simpler and leaves you with more money after all costs.</p>
+<p>We see clients in both structures every week. The right choice is not always the limited company. For some profit levels, the sole trader route is simpler and leaves you with more money after all costs.</p>
 
 <h2>The 2025/26 Tax Rates at a Glance</h2>
 
@@ -51,14 +51,14 @@ faqs:
 <li>Basic rate: £12,571 to £50,270 (20% income tax)</li>
 <li>Higher rate: £50,271 to £125,140 (40% income tax)</li>
 <li>Additional rate: above £125,140 (45% income tax)</li>
-<li>Class 2 National Insurance: £3.45 per week (if profits exceed £6,725)</li>
+<li>Class 2 National Insurance: nil (abolished from 6 April 2024)</li>
 <li>Class 4 National Insurance: 6% on profits between £12,570 and £50,270, 2% above £50,270</li>
 </ul>
 
 <h3>Limited Company Rates</h3>
 <ul>
 <li>Corporation tax: 19% on profits up to £50,000, 25% above £250,000, with marginal relief between £50,000 and £250,000</li>
-<li>Salary: subject to PAYE income tax and employee NI (13.8% employer NI above £9,100, though Employment Allowance can offset up to £10,500 of employer NI)</li>
+<li>Salary: subject to PAYE income tax and employee NI (15% employer NI above the £5,000 secondary threshold from 6 April 2025; Employment Allowance is not available to a company where the sole employee is also the only director)</li>
 <li>Dividend tax: 8.75% basic rate, 33.75% higher rate, 39.35% additional rate</li>
 <li>Dividend allowance: £500 tax-free per year</li>
 </ul>
@@ -78,40 +78,43 @@ faqs:
 <li>Basic rate band: £37,700 at 20% = £7,540 income tax</li>
 <li>Higher rate band: £13,130 at 40% = £5,252 income tax</li>
 <li>Total income tax: £12,792</li>
-<li>Class 2 NI: £3.45 x 52 = £179.40</li>
+<li>Class 2 NI: nil (abolished from 6 April 2024)</li>
 <li>Class 4 NI: 6% on £37,700 = £2,262, plus 2% on £13,130 = £262.60. Total Class 4: £2,524.60</li>
-<li>Total tax and NI: £12,792 + £179.40 + £2,524.60 = £15,496</li>
-<li>Take-home pay: £63,400 minus £15,496 = £47,904</li>
+<li>Total tax and NI: £12,792 + £2,524.60 = £15,316.60</li>
+<li>Take-home pay: £63,400 minus £15,316.60 = £48,083.40</li>
 </ul>
 
-<p>The sole trader keeps £47,904 after all taxes. No further compliance costs beyond the self assessment return.</p>
+<p>The sole trader keeps £48,083.40 after all taxes. No further compliance costs beyond the self assessment return.</p>
 
 <h3>Limited Company: The Numbers</h3>
-<p>Company profit before costs: £63,400</p>
+<p>Company profit before costs: £63,400. Director salary is an allowable deduction before corporation tax is computed.</p>
 <ul>
-<li>Accountancy and compliance: £1,200</li>
-<li>Adjusted profit for corporation tax: £62,200</li>
-<li>Corporation tax at 19%: £11,818</li>
-<li>Profit after corporation tax: £62,200 minus £11,818 = £50,382</li>
+<li>Less accountancy and compliance: £1,200</li>
+<li>Less director salary (deductible company expense): £12,570</li>
+<li>Less employer NIC on salary: £1,135.50 [(£12,570 minus £5,000 secondary threshold) x 15%; Employment Allowance is not available where the sole employee is also the only director]</li>
+<li>Taxable profit for corporation tax: £48,494.50</li>
+<li>Corporation tax at 19% (taxable profit is below the £50,000 small-profits threshold): £9,214</li>
+<li>Retained profit after corporation tax: £39,280.50</li>
 </ul>
 
-<p>Now we extract the £50,382 as salary and dividends. The most tax-efficient approach is to take a salary up to the personal allowance and the rest as dividends.</p>
+<p>The retained post-tax profit is the dividend source. The director also draws the salary separately as a personal receipt.</p>
 <ul>
-<li>Salary: £12,570 (no income tax, no employee NI, employer NI covered by Employment Allowance)</li>
-<li>Dividends: £50,382 minus £12,570 = £37,812</li>
-<li>Dividend allowance: first £500 tax-free</li>
-<li>Taxable dividends: £37,312</li>
-<li>Dividend tax at 8.75% (basic rate): £37,312 x 8.75% = £3,264.80</li>
-<li>Total personal tax: £3,264.80</li>
-<li>Take-home pay: £12,570 (salary) + £37,812 (dividends) minus £3,264.80 (dividend tax) = £47,117.20</li>
+<li>Salary: £12,570 (no income tax as it falls within the personal allowance; no employee NIC as earnings are at the £12,570 primary threshold)</li>
+<li>Dividends: £39,280.50</li>
+<li>Total income: £51,850.50 (exceeds the £50,270 basic rate limit by £1,580.50)</li>
+<li>Dividend allowance: first £500 at nil rate within the basic rate band</li>
+<li>Dividend tax at 8.75% (basic rate, on £37,200 after allowance): £3,255</li>
+<li>Dividend tax at 33.75% (higher rate, on £1,580.50): £533.42</li>
+<li>Total dividend tax: £3,788.42</li>
+<li>Take-home pay: £12,570 (salary) + £39,280.50 (dividends) minus £3,788.42 (dividend tax) = £48,062.08</li>
 </ul>
 
-<p>The limited company director keeps £47,117.20 after all taxes and compliance costs.</p>
+<p>The limited company director keeps approximately £48,062 after all taxes, National Insurance, and compliance costs.</p>
 
 <h3>The Comparison</h3>
-<p>Sole trader: £47,904 take-home. Limited company: £47,117 take-home. The sole trader is £787 better off at this profit level.</p>
+<p>Sole trader: £48,083 take-home. Limited company: £48,062 take-home. The two structures produce almost identical results at this profit level (within £22 of each other), so compliance burden, liability protection, and personal circumstances carry as much weight as the raw tax figures.</p>
 
-<p>That gap narrows or reverses as profits rise. At higher profit levels, the limited company structure becomes more efficient because corporation tax at 19% is lower than the combined income tax and NI on sole trader profits above £50,270.</p>
+<p>The gap widens in favour of the limited company as profits rise. At higher profit levels, the limited company structure becomes more efficient because corporation tax at 19% is lower than the combined income tax and NI on sole trader profits above £50,270.</p>
 
 <h2>When the Limited Company Pulls Ahead</h2>
 
@@ -152,7 +155,7 @@ faqs:
 
 <h2>The Bottom Line</h2>
 
-<p>At £63,400 profit, the sole trader is slightly better off in 2025/26. At higher profits, the limited company becomes more efficient. At lower profits, the sole trader is almost always the better choice once you account for compliance costs.</p>
+<p>At £63,400 profit, the sole trader and limited company produce almost identical take-home pay in 2025/26, separated by around £21. At higher profits, the limited company becomes more efficient. At lower profits, the sole trader is almost always the better choice once you account for compliance costs.</p>
 
 <p>But tax is only one factor. Liability protection, client requirements, and IR35 status can override the tax calculation entirely. Run the numbers for your specific profit level, factor in your personal spending needs, and decide based on the full picture.</p>
 

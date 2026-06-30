@@ -19,7 +19,7 @@ type Props = {
   updatedDate?: string;
   /** Size variant */
   size?: "sm" | "md";
-  /** Slug of the technical reviewer (ICAEW Chartered Accountant). Optional. */
+  /** Slug of the technical reviewer. Optional. */
   reviewerSlug?: string;
 };
 

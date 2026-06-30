@@ -59,16 +59,16 @@ describe("take-home-pay compute", () => {
     expect(r.personalAllowance).toBe(12570);
   });
 
-  it("salary=60000 plan2 SL (2025/26 threshold 28470) → correct deductions", () => {
+  it("salary=60000 plan2 SL (2026/27 threshold 29385) → correct deductions", () => {
     // Income tax: basic(37700*0.20=7540) + higher(9730*0.40=3892) = 11432
     // NI: 37700*0.08 + 9730*0.02 = 3016 + 194.60 = 3210.60
-    // SL plan2: (60000-28470)*0.09 = 31530*0.09 = 2837.70
-    // Net = 60000 - 11432 - 3210.60 - 2837.70 = 42519.70
+    // SL plan2: (60000-29385)*0.09 = 30615*0.09 = 2755.35
+    // Net = 60000 - 11432 - 3210.60 - 2755.35 = 42602.05
     const r = calcTakeHomePay(60000, 0, "plan2");
     expect(r2(r.incomeTax)).toBe(11432);
     expect(r2(r.ni)).toBe(3210.60);
-    expect(r2(r.studentLoan)).toBe(2837.70);
-    expect(r2(r.net)).toBe(42519.70);
+    expect(r2(r.studentLoan)).toBe(2755.35);
+    expect(r2(r.net)).toBe(42602.05);
   });
 
   it("pension sacrifice reduces income-tax base but not NI base", () => {
@@ -91,15 +91,15 @@ describe("take-home-pay compute", () => {
 describe("salary-dividend compute", () => {
   it("modelExtraction: salary=0, profit=50000, noEA → correct breakdown", () => {
     // CT on 50000 = 50000*0.19 = 9500
-    // dividend = 40500; divTax basic: (40500-12570-500)*0.0875 = 27430*0.0875 = 2400.125
+    // dividend = 40500; divTax basic: (40500-12570-500)*0.1075 = 27430*0.1075 = 2948.725 (2026/27 dividend rate)
     const r = modelExtraction(0, 50000, false);
     expect(r.salary).toBe(0);
     expect(r2(r.corporationTax)).toBe(9500);
     expect(r2(r.dividend)).toBe(40500);
-    expect(r2(r.dividendTax)).toBe(2400.13); // 27430*0.0875=2400.125 → rounds to 2400.13
+    expect(r2(r.dividendTax)).toBe(2948.73); // 27430*0.1075=2948.725 → rounds to 2948.73
     expect(r.employeeNi).toBe(0);
     expect(r.incomeTax).toBe(0);
-    expect(r2(r.netCash)).toBe(38099.88); // 40500 - 2400.13
+    expect(r2(r.netCash)).toBe(37551.28); // 40500 - 2948.725 = 37551.275 → 37551.28
   });
 
   it("modelExtraction: salary=12570, profit=50000, noEA → optimal-region result", () => {
@@ -107,14 +107,14 @@ describe("salary-dividend compute", () => {
     // profitAfterPayroll = 50000 - 12570 - 1135.5 = 36294.5
     // CT = 36294.5*0.19 = 6895.955; distributable = 29398.545
     // employeeNi = 0 (exactly at threshold); incomeTax = 0
-    // divTax: taxable = 29398.545-500 = 28898.545; inBasic = *0.0875 = 2528.6229
-    // netCash = 12570 + 29398.545 - 2528.6229 = 39439.922
+    // divTax: taxable = 29398.545-500 = 28898.545; inBasic = *0.1075 = 3106.5936 (2026/27 dividend rate)
+    // netCash = 12570 + 29398.545 - 3106.5936 = 38861.951
     const r = modelExtraction(12570, 50000, false);
     expect(r2(r.employerNi)).toBe(1135.50);
     expect(r2(r.corporationTax)).toBe(6895.96);
     expect(r.employeeNi).toBe(0);
     expect(r.incomeTax).toBe(0);
-    expect(r2(r.netCash)).toBeCloseTo(39439.92, 0);
+    expect(r2(r.netCash)).toBeCloseTo(38861.95, 0);
   });
 
   it("findOptimalSalary: profit=100000, noEA → optimal at salary=12570 (NI threshold)", () => {

@@ -31,7 +31,7 @@ faqs:
 
 <p>If you are starting a new limited company in the UK, the registration process itself takes about 30 minutes and costs £50. But if your chosen name is too similar to an existing trademark or registered company name, you could face rejection from Companies House or, worse, a legal challenge later. This guide covers exactly how to register a limited company UK with a name that is protected or contested.</p>
 
-<p>We are ICAEW qualified accountants based in the UK. We work with business owners across every sector, from a freelance consultant in Shoreditch to a husband-and-wife Ltd company running a Birmingham café. We have seen the problems that arise when company names clash. This guide will help you avoid them.</p>
+<p>We work with business owners across every sector, from a freelance consultant in Shoreditch to a husband-and-wife Ltd company running a Birmingham café. We have seen the problems that arise when company names clash. This guide will help you avoid them.</p>
 
 <h2>Why Your Company Name Matters</h2>
 
@@ -143,7 +143,7 @@ faqs:
 
 <h2>How We Can Help</h2>
 
-<p>At Holloway Davies, we help business owners through every stage of incorporation. We can review your proposed company name, check for potential conflicts, and guide you through the registration process. We are ICAEW qualified, so you can trust our advice.</p>
+<p>At Holloway Davies, we help business owners through every stage of incorporation. We can review your proposed company name, check for potential conflicts, and guide you through the registration process.</p>
 
 <p>If you are unsure about your company name or need help with the registration process, <a href="/contact">get in touch</a>. We can also help with the wider setup, including <a href="/services">opening a business bank account</a>, setting up payroll, and registering for VAT.</p>
 

@@ -6,7 +6,7 @@ import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: `Insights by business stage | ${siteConfig.name}`,
+  title: `Insights by business stage`,
   description:
     "UK tax, structure and finance articles grouped by where you are in the business lifecycle: starting, running, scaling or exiting.",
   alternates: { canonical: `${siteConfig.url}/blog/stage` },

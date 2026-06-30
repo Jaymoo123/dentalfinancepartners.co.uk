@@ -42,7 +42,7 @@ faqs:
 <h3>Confirmation Statement Filing</h3>
 <p>Every UK limited company must file a confirmation statement at least once every 12 months. This is not the same as your annual accounts. The confirmation statement confirms that the information Companies House holds about your company is correct: registered office address, director details, shareholder information, and people with significant control (PSC register).</p>
 
-<p>A company secretarial service will prepare and file this on your behalf, checking the information against your statutory registers before submission. The filing fee is £13 (or £34 if filed on paper, which nobody should do). A good service will diarise the 12-month deadline and file it before the due date, not after.</p>
+<p>A company secretarial service will prepare and file this on your behalf, checking the information against your statutory registers before submission. The filing fee is £34 (or £62 if filed on paper, which nobody should do), since 1 May 2024. A good service will diarise the 12-month deadline and file it before the due date, not after.</p>
 
 <h3>Maintaining Statutory Registers</h3>
 <p>Every limited company must maintain several statutory registers. These include the register of directors, register of directors' residential addresses (not open to public inspection), register of secretaries (if you have one), register of members (shareholders), register of people with significant control, and register of charges (mortgages or loans secured against company assets).</p>
@@ -102,11 +102,11 @@ faqs:
 
 <p>Not all company secretarial services are the same quality. Here is what to check before engaging a provider.</p>
 
-<p><strong>Qualification and oversight.</strong> As ICAEW qualified accountants, we see providers of all standards. Look for a provider that is regulated by a recognised body: ICAEW, ACCA, CIMA, or the Institute of Chartered Secretaries and Administrators (ICSA). Regulation means professional indemnity insurance, complaints procedures, and continuing professional development.</p>
+<p><strong>Qualification and oversight.</strong> Providers vary considerably in quality. Look for a provider that is regulated by a recognised body: ICAEW, ACCA, CIMA, or the Institute of Chartered Secretaries and Administrators (ICSA). Regulation means professional indemnity insurance, complaints procedures, and continuing professional development.</p>
 
 <p><strong>Software and technology.</strong> A good provider uses specialist software for company secretarial work, not just spreadsheets. Software like Inform Direct, Company Watch, or Iris Company Secretary ensures registers are properly formatted, deadlines are tracked, and filings are made electronically.</p>
 
-<p><strong>Scope of service.</strong> Check exactly what is included. Does the fee cover the confirmation statement filing fee (£13) or is that added on? Does it include filing director changes? Does it include maintaining the PSC register? Does it cover annual accounts filing with Companies House, or only the confirmation statement? Get the scope in writing.</p>
+<p><strong>Scope of service.</strong> Check exactly what is included. Does the fee cover the confirmation statement filing fee (£34 online, or £62 by paper, since 1 May 2024) or is that added on? Does it include filing director changes? Does it include maintaining the PSC register? Does it cover annual accounts filing with Companies House, or only the confirmation statement? Get the scope in writing.</p>
 
 <p><strong>Deadline management.</strong> The provider should have a clear process for tracking and managing deadlines. Ask how they handle it. Do they send reminders? Do they file automatically? What happens if a deadline is missed?</p>
 
@@ -143,7 +143,7 @@ faqs:
 
 <h2>Our Approach at Holloway Davies</h2>
 
-<p>We offer company secretarial services as part of our broader compliance package for limited companies. Our ICAEW qualified team handles confirmation statement filing, statutory register maintenance, director and shareholder changes, and annual accounts coordination. We use specialist software to track deadlines and maintain accurate records.</p>
+<p>We offer company secretarial services as part of our broader compliance package for limited companies. Our experienced team handles confirmation statement filing, statutory register maintenance, director and shareholder changes, and annual accounts coordination. We use specialist software to track deadlines and maintain accurate records.</p>
 
 <p>For clients who use us for their annual accounting and tax work, adding company secretarial services means one point of contact for all compliance. We handle the coordination between Companies House filings and HMRC filings, so nothing falls through the cracks.</p>
 

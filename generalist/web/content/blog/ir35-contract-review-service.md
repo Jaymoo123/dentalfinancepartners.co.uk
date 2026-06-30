@@ -6,8 +6,8 @@ date: "2026-05-17"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
-metaTitle: "IR35 Contract Review Service | Holloway Davies"
-metaDescription: "Get an IR35 contract review service to check your outside IR35 status. We assess your contract, working practices and client setup. ICAEW qualified."
+metaTitle: "IR35 Contract Review Service"
+metaDescription: "Get an IR35 contract review service to check your outside IR35 status. We assess your contract, working practices and client setup."
 altText: "UK contractor reviewing a contract document on a desk in a modern office with a laptop open"
 image: "/blog/ir35-contract-review-service.jpg"
 imageCredit:
@@ -35,7 +35,7 @@ faqs:
 
 <p>The review covers two things. First, the written terms: substitution clauses, control clauses, mutuality of obligation, and how the contract describes the relationship. Second, your real-world working practices: do you genuinely control your hours, can you send a substitute, and are you integrated into the client's business like an employee?</p>
 
-<p>This is not a general check. It is a specific, documented assessment that you can rely on if HMRC ever opens an enquiry. As ICAEW qualified accountants, we see contractors who have worked for years assuming they are outside IR35, only to find their contract says something different. A review catches that before it becomes a problem.</p>
+<p>This is not a general check. It is a specific, documented assessment that you can rely on if HMRC ever opens an enquiry. We see contractors who have worked for years assuming they are outside IR35, only to find their contract says something different. A review catches that before it becomes a problem.</p>
 
 <h2>Who Needs an IR35 Contract Review?</h2>
 
@@ -67,7 +67,7 @@ faqs:
 <p>We ask you about your day-to-day working relationship. Do you report to a manager? Do you use the client's equipment? Do you attend team meetings? Do you get holiday pay or sick pay? Each answer shifts the balance one way or the other.</p>
 
 <h3>Client Size</h3>
-<p>The off-payroll rules (Chapter 10, ITEPA 2003) apply differently depending on client size. A medium or large client must determine your status. A small client leaves it to you. We check the client's size using the Companies Act definitions: turnover under £10.2 million, balance sheet under £5.1 million, and fewer than 50 employees. Two of the three must apply for the client to be small.</p>
+<p>The off-payroll rules (Chapter 10, ITEPA 2003) apply differently depending on client size. A medium or large client must determine your status. A small client leaves it to you. We check the client's size using the Companies Act definitions: turnover under £15 million, balance sheet under £7.5 million, and fewer than 50 employees (for periods beginning on/after 6 April 2025; the limits were £10.2 million and £5.1 million before that date). Two of the three must apply for the client to be small.</p>
 
 <p>If the client is small, you are responsible for the determination. If the client is medium or large, they are. We tell you which side of that line your client falls on.</p>
 

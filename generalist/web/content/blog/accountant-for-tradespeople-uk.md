@@ -57,13 +57,13 @@ faqs:
 
 <p>Many tradespeople work through their own limited company, especially if they contract for larger developers or public sector clients. If you do, IR35 applies. The off-payroll working rules mean the client (if they are medium or large) decides your employment status and issues a Status Determination Statement (SDS).</p>
 
-<p>If you are inside IR35, your limited company pays employer NI (13.8%) and the Apprenticeship Levy (0.5% on earnings above £3 million) on your deemed employment income. You also pay employee NI and income tax through payroll. The dividend route disappears. Your accountant should model both scenarios before you take a contract.</p>
+<p>If you are inside IR35, your limited company pays employer NI (15% from 6 April 2025) and the Apprenticeship Levy (0.5% on earnings above £3 million) on your deemed employment income. You also pay employee NI and income tax through payroll. The dividend route disappears. Your accountant should model both scenarios before you take a contract.</p>
 
 <p>If you are outside IR35, your accountant should help you prepare a robust contract and working practices review. They should also keep records of your working arrangements in case HMRC opens an enquiry.</p>
 
 <h3>Year-End Tax Planning</h3>
 
-<p>A good accountant does not just prepare your year-end accounts. They plan ahead. For a trade business, that means thinking about capital allowances. If you buy a new van, you can claim 100% first-year allowances on zero-emission vans (up to £85,000 for cars, but vans have no cap if zero-emission). For a standard van, you claim the Annual Investment Allowance (AIA) at £1 million per year. That means you can deduct the full cost of a £35,000 van from your taxable profits in the year you buy it.</p>
+<p>A good accountant does not just prepare your year-end accounts. They plan ahead. For a trade business, that means thinking about capital allowances. If you buy a new van, you can claim 100% first-year allowances on zero-emission vans and zero-emission cars alike (cars are excluded from the Annual Investment Allowance but qualify for this dedicated first-year allowance, which is uncapped). For a standard van, you claim the Annual Investment Allowance (AIA) at £1 million per year. That means you can deduct the full cost of a £35,000 van from your taxable profits in the year you buy it.</p>
 
 <p>Your accountant should also review your structure. Are you better off as a sole trader or a limited company? The answer depends on your profit level, your personal tax position, and whether you want to take dividends or salary. For a tradesperson earning £60,000 profit, a limited company often saves thousands in tax compared to being a sole trader. But that saving comes with extra admin and filing requirements. Your accountant should run the numbers for your specific situation.</p>
 
@@ -81,7 +81,7 @@ faqs:
 
 <h3>ICAEW or ACCA Qualification</h3>
 
-<p>Look for a firm that is ICAEW or ACCA qualified. These are the two main chartered accountancy bodies in the UK. They require ongoing professional development and adherence to strict ethical standards. Holloway Davies are ICAEW qualified, which means our team meets those standards. It is a mark of quality and accountability.</p>
+<p>Look for a firm that is ICAEW or ACCA qualified. These are the two main chartered accountancy bodies in the UK. They require ongoing professional development and adherence to strict ethical standards. At Holloway Davies, we hold ourselves to those same high professional standards.</p>
 
 <h3>Experience with CIS and VAT</h3>
 

@@ -147,7 +147,7 @@ faqs:
 
 <h2>Common Mistakes We See</h2>
 
-<p>Our ICAEW qualified team at Holloway Davies regularly sees zero-rated traders make these errors:</p>
+<p>Our team at Holloway Davies regularly sees zero-rated traders make these errors:</p>
 
 <ul>
 <li><strong>Not registering at all</strong> because they assume zero-rated means no VAT involvement. It does not. The £90,000 threshold applies to all taxable supplies, including zero-rated.</li>

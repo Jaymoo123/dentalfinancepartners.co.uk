@@ -74,7 +74,7 @@ export default async function GuideDownloadPage({ params }: Props) {
             <div className="mt-12 bg-slate-900 p-8 sm:p-10 text-white print:hidden">
               <h2 className="text-2xl font-bold sm:text-3xl">Want this applied to your business?</h2>
               <p className="mt-3 text-base sm:text-lg text-slate-200">
-                Book a free call with an ICAEW qualified accountant. We'll review your specific situation and tell you exactly what to do.
+                Book a free call with a specialist accountant. We'll review your specific situation and tell you exactly what to do.
               </p>
               <Link href="/contact" className={`${btnPrimary} mt-6`}>
                 Book a free call

@@ -35,7 +35,7 @@ faqs:
 
 <p>An <strong>accountant for startup</strong> businesses needs to understand that context. The standard compliance work (filing accounts, submitting corporation tax returns, managing payroll) is the baseline. What separates a good startup accountant from a general practice is their ability to advise on structure, tax relief, and cash management in a founder-stage context.</p>
 
-<p>This is not about saving £200 on your first year's accounting fees. It is about avoiding mistakes that cost you thousands in tax or lost investor confidence later. As ICAEW qualified accountants, we see founders who incorporated without advice, chose the wrong share structure, or missed R&D relief worth tens of thousands. Every time, the cost of fixing it exceeds the cost of getting it right first time.</p>
+<p>This is not about saving £200 on your first year's accounting fees. It is about avoiding mistakes that cost you thousands in tax or lost investor confidence later. We see founders who incorporated without advice, chose the wrong share structure, or missed R&D relief worth tens of thousands. Every time, the cost of fixing it exceeds the cost of getting it right first time.</p>
 
 <h2>Incorporation: Getting the Legal Structure Right</h2>
 
@@ -93,7 +93,7 @@ faqs:
 <p>In the founder stage, you are probably paying yourself the minimum to keep personal costs covered. The standard structure for a UK limited company director is a small salary plus dividends. For 2025/26, the most efficient approach is:</p>
 
 <ul>
-<li>Salary of £12,570 (matches the personal allowance and the primary NI threshold). Employer NI of 13.8% applies above the secondary threshold (£9,100), so the actual salary cost is about £12,570 plus NI on the excess. If the company qualifies for Employment Allowance (up to £10,500), that NI is offset.</li>
+<li>Salary of £12,570 (matches the personal allowance and the primary NI threshold). Employer NI of 15% applies above the secondary threshold (£5,000), so the actual salary cost is about £12,570 plus NI on the excess. If the company qualifies for Employment Allowance (up to £10,500), that NI is offset.</li>
 <li>Dividends up to the basic rate band (£50,270 total income). The first £500 of dividends is tax-free (the dividend allowance). Above that, dividends are taxed at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate).</li>
 </ul>
 
@@ -151,7 +151,7 @@ faqs:
 <li><strong>Do they use modern software?</strong> If your accountant insists on paper records or emailing spreadsheets, they are not set up for a fast-moving startup. You need cloud-based collaboration.</li>
 </ul>
 
-<p>We are an ICAEW qualified firm that works with startups across the UK. If you want to discuss your specific situation, <a href="/contact">contact our team</a>. We can review your current structure, identify any issues, and help you plan the next 12 months.</p>
+<p>We are a specialist firm that works with startups across the UK. If you want to discuss your specific situation, <a href="/contact">contact our team</a>. We can review your current structure, identify any issues, and help you plan the next 12 months.</p>
 
 <h2>The Cost of Getting It Wrong</h2>
 

@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "Capital Gains Tax and Property: UK Guide 2025/26"
-metaDescription: "Capital gains tax and property explained for UK owners. Rates, reliefs, 60-day reporting, and worked examples for 2025/26. Practical guidance from ICAEW"
+metaDescription: "Capital gains tax and property explained for UK owners. Rates, reliefs, 60-day reporting, and worked examples for 2025/26. Practical guidance from specialist accountants."
 altText: "UK property owner reviewing capital gains tax paperwork with accountant in Manchester office"
 image: "/blog/capital-gains-tax-and-property-guide-2025-26.jpg"
 imageCredit:
@@ -27,7 +27,7 @@ faqs:
 
 <p>If you sell a residential property that is not your main home, you almost certainly owe capital gains tax on the profit. The same applies if you sell a buy-to-let, a second home, or land that you developed. The rules changed significantly from 30 October 2024, and further changes to Business Asset Disposal Relief (BADR) take effect from April 2025 and April 2026.</p>
 
-<p>This guide covers everything a UK business owner needs to know about capital gains tax and property for the 2025/26 tax year. We will cover the rates, the reliefs, the reporting deadlines, and the traps that catch people out. We are ICAEW qualified accountants and we see these issues every week with clients across Manchester, Birmingham, Bristol and beyond.</p>
+<p>This guide covers everything a UK business owner needs to know about capital gains tax and property for the 2025/26 tax year. We will cover the rates, the reliefs, the reporting deadlines, and the traps that catch people out. We see these issues every week with clients across Manchester, Birmingham, Bristol and beyond.</p>
 
 <h2>Current Capital Gains Tax Rates on Property (2025/26)</h2>
 
@@ -98,7 +98,7 @@ Total base cost: £216,550</p>
 
 <p>You report the gain even if you have not yet filed your self assessment return for the year. The 60-day return is a standalone filing. You then include the same gain on your self assessment return (SA100 plus the property pages) later. HMRC will match the two filings and adjust the tax you owe if the 60-day calculation was provisional.</p>
 
-<p><strong>Important:</strong> If you are a non-UK resident selling UK property, you have 30 days to report, not 60. This applies to any UK residential property, including your former main home in some cases.</p>
+<p><strong>Important:</strong> If you are a non-UK resident selling UK residential property, the same 60-day report-and-pay window applies. There is no separate shorter deadline for non-residents; the 30-day window that existed from 6 April 2020 was extended to 60 days from 27 October 2021. Non-UK residents must also report all UK land and property disposals (including commercial property and land, not only residential) via HMRC's non-resident CGT service.</p>
 
 <h2>Private Residence Relief: When You Do Not Pay CGT on Your Main Home</h2>
 
@@ -189,7 +189,7 @@ Total base cost: £216,550</p>
 <li>You are selling multiple properties in the same tax year.</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we handle these calculations daily for clients across the UK. If your situation matches any of the above, <a href="/contact">contact us</a> before you exchange contracts. A few hours of advice can save thousands in tax.</p>
+<p>We handle these calculations daily for clients across the UK. If your situation matches any of the above, <a href="/contact">contact us</a> before you exchange contracts. A few hours of advice can save thousands in tax.</p>
 
 <h2>Summary of Key Figures for 2025/26</h2>
 

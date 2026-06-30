@@ -23,16 +23,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const url = `${siteConfig.url}/locations/${city.slug}`;
   // Singular "Accountant in [City]" per the primary keyword research.
+  // Title is brand-less: the root layout template appends " | Holloway Davies"
+  // once. Including the brand here as well double-stamped it ("... | Holloway
+  // Davies | Holloway Davies"). Description folds in small-business service-intent.
   return {
-    title: `Accountant in ${city.name} | ${siteConfig.name}`,
-    description: `ICAEW qualified accountant in ${city.name}. Corporation tax, VAT, payroll, R&D credits, exit planning for ${city.name} limited companies, contractors and sole traders. Fixed fees, free call.`,
+    title: `Accountant in ${city.name}`,
+    description: `Small business accountant in ${city.name}: corporation tax, VAT, payroll, self assessment, R&D and exit planning for limited companies, contractors and sole traders. Fixed fees, free call.`,
     alternates: {
       canonical: url,
       languages: { "en-GB": url, "x-default": url },
     },
     openGraph: {
       title: `Accountant in ${city.name}`,
-      description: `ICAEW qualified accountant in ${city.name}. Fixed fees, national coverage, free initial call.`,
+      description: `Specialist accountant in ${city.name}. Fixed fees, national coverage, free initial call.`,
       url,
       type: "website",
     },
@@ -48,7 +51,7 @@ export default async function CityPage({ params }: Props) {
   // sector knowledge for richer local entity signals.
   const localBusiness = buildAccountingService({
     name: `${siteConfig.name} - ${city.name}`,
-    description: `ICAEW qualified accountant in ${city.name}. Corporation tax, VAT, payroll, R&D credits, exit planning. Serving limited companies, contractors, sole traders, partnerships and small businesses across ${city.region}.`,
+    description: `Senior accountant in ${city.name}. Corporation tax, VAT, payroll, R&D credits, exit planning. Serving limited companies, contractors, sole traders, partnerships and small businesses across ${city.region}.`,
     url: `/locations/${city.slug}`,
     city: city.name,
     address: { addressRegion: city.region },
@@ -120,7 +123,7 @@ export default async function CityPage({ params }: Props) {
             <div className="mt-6 flex flex-wrap gap-4 text-sm text-slate-200">
               <div className="flex items-center gap-2">
                 <BadgeCheck className="h-4 w-4 text-orange-400" />
-                <span className="font-semibold">ICAEW qualified</span>
+                <span className="font-semibold">Experienced team</span>
               </div>
               <div className="flex items-center gap-2">
                 <BadgeCheck className="h-4 w-4 text-orange-400" />

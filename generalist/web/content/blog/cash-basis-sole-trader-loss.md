@@ -24,7 +24,7 @@ faqs:
   - question: "Does using the cash basis affect how much loss I can carry forward?"
     answer: "No. The loss carried forward is simply the loss figure calculated under the cash basis. You carry it forward against future profits from the same trade. The accounting method does not change the carry forward rules. The only difference is the timing of when income and expenses are recognised, which affects the loss figure itself."
   - question: "Can I switch from cash basis to accruals basis in a loss year?"
-    answer: "Yes. You can opt out of the cash basis on your self assessment return for any year. If your turnover is below the threshold, you can choose either method each year. Switching in a loss year might be beneficial if the accruals basis gives you a smaller loss or a profit, depending on your other income. But once you opt out, you must generally stay on accruals for at least one tax year."
+    answer: "Yes. You can opt out of the cash basis on your self assessment return for any year. Since 2024/25 there is no turnover limit on cash basis eligibility, so you can choose either method each year regardless of your turnover. Switching in a loss year might be beneficial if the accruals basis gives you a smaller loss or a profit, depending on your other income. But once you opt out, you must generally stay on accruals for at least one tax year."
   - question: "What if my cash basis loss is from buying equipment?"
     answer: "That is fine. Under the cash basis, the full cost of plant and machinery is deductible as an expense in the year you pay for it. This includes vans, tools, computers, and machinery. The resulting loss is treated the same as any other trading loss. You can claim loss relief against it, including sideways relief or carry forward."
 ---
@@ -35,7 +35,7 @@ faqs:
 
 <h2>What Is the Cash Basis for Sole Traders?</h2>
 
-<p>The cash basis is a simplified accounting method for sole traders and partnerships. You record income when you actually receive it and expenses when you actually pay them. No accruals, no debtors, no creditors. It is the default method for sole traders from 2024/25 onwards, unless your turnover exceeds £150,000 (or £300,000 in some transition cases) or you actively opt out.</p>
+<p>The cash basis is a simplified accounting method for sole traders and partnerships. You record income when you actually receive it and expenses when you actually pay them. No accruals, no debtors, no creditors. It is the default method for sole traders from 2024/25 onwards, with no turnover limit; you only move to accruals if you actively opt out.</p>
 
 <p>Under the traditional accruals basis, you record income when you invoice it and expenses when you incur them, regardless of when cash changes hands. The cash basis is simpler, but it can produce different profit or loss figures in any given year.</p>
 
@@ -47,7 +47,7 @@ faqs:
 
 <p>However, you need to be careful about one thing. If your business has made losses in several consecutive years, HMRC may question whether you are genuinely trading. That is a separate issue from the accounting method. But if you are trading with a genuine intention to make a profit, and the losses are temporary or part of a startup phase, the cash basis is fine.</p>
 
-<p>As ICAEW qualified accountants, we see this most often with new sole traders in their first year. A freelance graphic designer in Shoreditch might spend £8,000 on a new MacBook, software licences, and website costs before earning a single invoice. That first year loss is perfectly normal, and the cash basis handles it cleanly.</p>
+<p>We see this most often with new sole traders in their first year. A freelance graphic designer in Shoreditch might spend £8,000 on a new MacBook, software licences, and website costs before earning a single invoice. That first year loss is perfectly normal, and the cash basis handles it cleanly.</p>
 
 <h2>How Loss Relief Works Under the Cash Basis</h2>
 
@@ -96,7 +96,7 @@ faqs:
 
 <p>Conversely, if you have paid expenses in advance (prepayments), the cash basis deducts them immediately. The accruals basis spreads them over the period they relate to. If you prepaid £6,000 of business insurance for 12 months in March 2026, the cash basis deducts the full £6,000 in 2025/26. Accruals would only deduct £500 (one month). The cash basis gives you a larger loss now.</p>
 
-<p>You can opt out of the cash basis if it does not suit your circumstances. You do that on your self assessment tax return by ticking the box to use accruals accounting instead. If your turnover is below the threshold, you can choose either method each year. You are not locked in.</p>
+<p>You can opt out of the cash basis if it does not suit your circumstances. You do that on your self assessment tax return by ticking the box to use accruals accounting instead. Since 2024/25 there is no turnover limit, so you can choose either method each year. You are not locked in.</p>
 
 <h2>Making Tax Digital for Income Tax Self Assessment (MTD for ITSA)</h2>
 
@@ -124,7 +124,7 @@ faqs:
 
 <h2>Cash Basis Loss and Partnership Businesses</h2>
 
-<p>Partnerships can also use the cash basis, provided the partnership turnover is below the threshold. If a partnership makes a loss, each partner's share of the loss is calculated under the cash basis. Each partner then claims loss relief on their individual tax return.</p>
+<p>Partnerships can also use the cash basis, with no turnover limit since 2024/25. If a partnership makes a loss, each partner's share of the loss is calculated under the cash basis. Each partner then claims loss relief on their individual tax return.</p>
 
 <p>The same rules apply. A partner in a small design partnership in Bristol's Harbourside can offset their share of the partnership loss against their other income, carry it forward, or use early trade loss relief if the partnership is new.</p>
 

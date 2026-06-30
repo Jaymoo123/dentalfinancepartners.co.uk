@@ -17,9 +17,7 @@ imageCredit:
   source: Pexels
 h1: Self Assessment Tax Return Guide for a Sole Trader Running Multiple Trades
 summary: Running two or more separate trades as a sole trader means reporting each one separately on your self assessment. This guide covers the specific SA103F and SA103S pages, how to allocate expenses, and what happens when one trade makes a loss and the other makes a profit. No vague generalisations. Just the box numbers and the rules.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Self Assessment Tax Return Guide for a Sole Trader Running Multiple Trades","description":"Run two or more trades? Report each on its own SA103 page, never combined, and offset a loss in one against profit in another. Avoid errors.","url":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-tax-return-guide-sole-trader-multiple-trades","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
-  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-tax-return-guide-sole-trader-multiple-trades"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/self-assessment-tax-return-guide-sole-trader-multiple-trades.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Sole Trader and Self Employment","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment"},{"@type":"ListItem","position":3,"name":"Self Assessment Tax Return Guide for a Sole Trader Running Multiple Trades","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-tax-return-guide-sole-trader-multiple-trades"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I combine two trades into one self-employment page on my tax return?","acceptedAnswer":{"@type":"Answer","text":"No. HMRC requires each separate trade to have its own SA103F or SA103S page. Combining them means HMRC cannot see the individual performance of each trade, and you risk losing the ability to claim loss relief correctly. If you have two distinct trades, file two separate schedules."}},{"@type":"Question","name":"What happens if one trade makes a loss and the other makes a profit?","acceptedAnswer":{"@type":"Answer","text":"You can offset the loss against the profit from the other trade in the same tax year using same-year loss relief under
-  s.64 ITA 2007. On the SA100, the loss reduces your total self-employment income. You pay income tax and Class 4 NIC on the combined figure. Tick the relevant box on the return to claim the relief."}},{"@type":"Question","name":"Do I need separate bank accounts for each trade?","acceptedAnswer":{"@type":"Answer","text":"No, but it makes record keeping much easier. If you use one account, you must be able to identify which income and expenses belong to which trade. HMRC can ask for records for any"}}]}]}'
+schema: ""
 faqs:
 - question: Can I combine two trades into one self-employment page on my tax return?
   answer: No. HMRC requires each separate trade to have its own SA103F or SA103S page. Combining them means HMRC cannot see the individual performance of each trade, and you risk losing the ability to claim loss relief correctly. If you have two distinct trades, file two separate schedules.
@@ -30,8 +28,8 @@ faqs:
 metaTitle_prev: Self Assessment Tax Return Guide for Sole Traders
 metaDescription_prev: Running two or more separate businesses as a sole trader? Here is the box-by-box guide to reporting each trade on your self assessment tax return. Avoid
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -39,7 +37,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Most self assessment tax return guides assume you have one trade. They walk you through the SA103S (short) or SA103F (full) pages once and move on. That misses the critical detail for anyone running, say, a <strong>Bristol-based landscaping business alongside a separate ecommerce store</strong>, or a <strong>Manchester freelance consultancy with a buy-to-let portfolio</strong> that has crossed into trading.</p>
 
-<p>This guide covers the specific forms, the box numbers, the expense allocation traps, and what happens when one trade makes a loss while the other turns a profit. As ICAEW qualified accountants, we handle these scenarios regularly for UK business owners across every sector.</p>
+<p>This guide covers the specific forms, the box numbers, the expense allocation traps, and what happens when one trade makes a loss while the other turns a profit. We handle these scenarios regularly for UK business owners across every sector.</p>
 
 <h2>When Do You Have Multiple Trades, Not One Business?</h2>
 
@@ -62,7 +60,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Here is the practical flow:</p>
 <ul>
-<li><strong>Trade 1</strong>: Complete SA103F (or SA103S if turnover is under £85,000 and your expenses are simple). Box 1.1 to Box 1.30 on the full pages.</li>
+<li><strong>Trade 1</strong>: Complete SA103F (or SA103S if turnover is under £90,000 and your expenses are simple). Box 1.1 to Box 1.30 on the full pages.</li>
 <li><strong>Trade 2</strong>: Complete a <strong>second</strong> SA103F (or SA103S). Same box numbers. Different figures.</li>
 <li><strong>Summary page (SA100)</strong>: The totals from each SA103 page feed into the main return automatically. Box 9 on the SA100 shows the combined self-employment profit or loss.</li>
 </ul>
@@ -157,7 +155,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li><strong>Combining turnover</strong>: Putting both trades' sales into one box. This inflates your turnover figure and means HMRC cannot see the individual performance of each trade. It also causes problems if one trade is VAT-registered and the other is not.</li>
 <li><strong>Double-claiming expenses</strong>: Claiming the full broadband cost against both trades. HMRC's computer will flag identical expense figures on two schedules. You will get a compliance check.</li>
 <li><strong>Ignoring the loss relief box</strong>: If you have a loss in one trade, tick the correct box on the SA100 to claim same-year relief. If you miss it, you can amend the return within 12 months, but it is easier to get it right first time.</li>
-<li><strong>Using the wrong form version</strong>: The SA103S (short) is for simple businesses with turnover under £85,000 and limited expenses. If either trade has capital allowances, business use of home, or adjustments for private use, you need the SA103F (full) pages. Using the short form when you should use the full form can mean you miss claiming legitimate deductions.</li>
+<li><strong>Using the wrong form version</strong>: The SA103S (short) is for simple businesses with turnover under £90,000 and limited expenses. If either trade has capital allowances, business use of home, or adjustments for private use, you need the SA103F (full) pages. Using the short form when you should use the full form can mean you miss claiming legitimate deductions.</li>
 <li><strong>Forgetting the second schedule entirely</strong>: If you submit your return online and only complete one self-employment page, HMRC will not know about the second trade. You will need to amend the return, which costs time and can trigger a penalty if you miss the filing deadline.</li>
 </ul>
 
@@ -167,7 +165,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If you use Xero or FreeAgent for both trades, each trade will need its own quarterly update. HMRC will see separate schedules for each trade, just as they do on the annual return. The quarterly updates are not the final return. You still file the annual SA103 pages at year-end to confirm the figures.</p>
 
-<p>For sole traders with combined income between <strong>£30,000</strong> and <strong>£50,000</strong>, MTD for ITSA becomes mandatory from April 2027. Below £20,000, it is voluntary.</p>
+<p>For sole traders with combined income between <strong>£30,000</strong> and <strong>£50,000</strong>, MTD for ITSA becomes mandatory from April 2027. For those with combined income between £20,000 and £30,000, the mandatory start date is April 2028. Below £20,000, there is currently no mandated start date.</p>
 
 <h2>Final Checks Before You File</h2>
 
@@ -183,7 +181,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If you are unsure about any of these points, speak to your accountant before hitting submit. Amending a return after filing is possible, but it is better to get it right first time.</p>
 
-<p>Our <a href="/services">ICAEW qualified team</a> handles self assessment returns for sole traders with multiple trades across the UK. If you need help preparing your return or want to check whether HMRC would treat your activities as separate trades, <a href="/contact">get in touch</a>.</p>
+<p>Our <a href="/services">team</a> handles self assessment returns for sole traders with multiple trades across the UK. If you need help preparing your return or want to check whether HMRC would treat your activities as separate trades, <a href="/contact">get in touch</a>.</p>
 
 <h2>Related articles in Sole Trader and Self Employment</h2>
 <ul>

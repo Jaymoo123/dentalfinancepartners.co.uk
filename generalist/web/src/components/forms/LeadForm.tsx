@@ -91,8 +91,9 @@ export function LeadForm({
     const form = e.currentTarget;
     const data = new FormData(form);
 
-    // LD-03: honeypot — bots fill company_url; humans never see or tab to this field
-    if (String(data.get("company_url") || "").trim()) return;
+    // LD-03: honeypot — bots fill enquiry_ref; humans never see or tab to this field.
+    // Renamed from company_url: that name was an autofill magnet that silently dropped real submits.
+    if (String(data.get("enquiry_ref") || "").trim()) return;
 
     const errs = validate(data);
     setFieldErrors(errs);
@@ -177,8 +178,8 @@ export function LeadForm({
       <input type="hidden" name="sourceUrl" value={sourceUrl} />
       {/* LD-03: honeypot — visually hidden, bots fill it, humans never reach it */}
       <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }}>
-        <label htmlFor="company_url">Company website (leave blank)</label>
-        <input id="company_url" type="text" name="company_url" tabIndex={-1} autoComplete="off" />
+        <label htmlFor="enquiry_ref">Reference (leave blank)</label>
+        <input id="enquiry_ref" type="text" name="enquiry_ref" tabIndex={-1} autoComplete="off" />
       </div>
 
       <div>

@@ -6,11 +6,11 @@ import { JsonLd, buildOrganization } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: `About`,
-  description: `${siteConfig.name} is an ICAEW chartered accountancy practice serving UK limited companies, sole traders, contractors and partnerships. National coverage, fixed fees, plain-English advice.`,
+  description: `${siteConfig.name} serves UK limited companies, sole traders, contractors and partnerships. National coverage, fixed fees, plain-English advice.`,
   alternates: { canonical: `${siteConfig.url}/about` },
   openGraph: {
     title: `About | ${siteConfig.name}`,
-    description: "ICAEW chartered accountants for UK businesses of every shape.",
+    description: "Accountants for UK businesses of every shape.",
     url: `${siteConfig.url}/about`,
     type: "website",
   },
@@ -24,8 +24,8 @@ const principles = [
   },
   {
     n: "02",
-    title: "Credentials matter, plainly.",
-    body: "We operate to ICAEW chartered accountancy standards. That&rsquo;s a deliberate technical floor. Many UK firms employ AAT-qualified bookkeepers and trade as accountants; the work doesn&rsquo;t always read the same.",
+    title: "Technical standards, plainly.",
+    body: "Every answer we give is traceable to a primary source: HMRC guidance, Companies House rules, or the relevant statute. One named accountant on every file means the reasoning doesn&rsquo;t get diluted through handoffs or junior routing.",
   },
   {
     n: "03",
@@ -72,14 +72,13 @@ export default function AboutPage() {
             </p>
             <h1 className="mt-6 text-4xl font-semibold tracking-tight text-neutral-900 leading-[1.05] sm:text-6xl lg:text-7xl text-balance">
               A modern firm,{" "}
-              <span className="text-orange-500">classically qualified.</span>
+              <span className="text-orange-500">technically rigorous.</span>
             </h1>
             <p className="mt-8 max-w-2xl text-lg leading-relaxed text-neutral-600 sm:text-xl">
-              {siteConfig.name} is an ICAEW chartered accountancy practice for UK
-              business owners. We cover the four trading structures (limited
-              company, sole trader, contractor, partnership) across every sector,
-              with the depth a specialist firm would bring and the responsiveness
-              an in-house team would expect.
+              {siteConfig.name} works with UK business owners across every sector.
+              We cover the four trading structures (limited company, sole trader,
+              contractor, partnership), with the depth a specialist firm would
+              bring and the responsiveness an in-house team would expect.
             </p>
           </div>
         </div>
@@ -155,7 +154,7 @@ export default function AboutPage() {
             </div>
             <div className="prose-blog max-w-2xl">
               <p>
-                Every figure on this site uses 2025/26 UK tax rates and is
+                Every figure on this site uses 2026/27 UK tax rates and is
                 traceable to a primary source: HMRC, Companies House, ICAEW
                 guidance, or the relevant statute. Where rates are scheduled to
                 change, we say so and date the change.

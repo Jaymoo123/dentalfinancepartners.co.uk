@@ -24,7 +24,7 @@ faqs:
   - question: "How long can I carry forward a trading loss in a limited company?"
     answer: "There is no time limit on carrying forward trading losses. They remain available until the company has sufficient profits to use them. However, you can only use carried-forward losses against 50% of profits in a single year if profits exceed £5 million. For most small companies, this restriction does not apply, so you can use 100% of the loss against profits up to £5 million each year."
   - question: "Do I need to file a corporation tax return if my company made no profit?"
-    answer: "Yes. You must file a CT600 corporation tax return for every accounting period, even if you made a loss and owe no tax. HMRC charges late filing penalties starting at £150 for returns filed up to 3 months late, rising to £1,500 for returns filed more than 6 months late. File the return on time even when there is no tax to pay."
+    answer: "Yes. You must file a CT600 corporation tax return for every accounting period, even if you made a loss and owe no tax. HMRC charges a late filing penalty of £100 for returns filed up to 3 months late, rising to £200 for returns filed more than 3 months late, with further tax-geared penalties (10% of unpaid tax) applying at 18 and 24 months. File the return on time even when there is no tax to pay."
   - question: "Can I use a trading loss to reduce my personal tax as a director?"
     answer: "No. A company's trading loss is a company asset. It cannot be used to reduce your personal income tax or capital gains tax. The loss stays in the company and can only be offset against the company's future profits or, in some cases, surrendered to another group company. If you personally lent the company money, that is a separate director's loan account matter."
 ---
@@ -33,7 +33,7 @@ faqs:
 
 <p>The short answer is straightforward. You do not pay corporation tax on a loss. But the longer answer matters more. The way you handle that loss on your corporation tax return (the CT600) determines how much tax you save in future years. Get it right and you turn a difficult first year into a valuable tax asset. Get it wrong and you leave money on the table.</p>
 
-<p>As ICAEW qualified accountants, we work with new companies across the UK every week. From a freelance consultant in Manchester incorporating for the first time to a husband-and-wife team opening a café in Birmingham. The loss relief rules are the same. But the best option depends on your specific circumstances.</p>
+<p>We work with new companies across the UK every week. From a freelance consultant in Manchester incorporating for the first time to a husband-and-wife team opening a café in Birmingham. The loss relief rules are the same. But the best option depends on your specific circumstances.</p>
 
 <h2>What Is a Trading Loss for Corporation Tax Purposes?</h2>
 
@@ -101,7 +101,7 @@ faqs:
 
 <p>A loss-making company often means the director has put money into the business. If you lent your company money personally, that creates a director's loan account credit balance. The company owes you money. This is separate from the tax loss.</p>
 
-<p>If the company makes a loss but you have taken dividends or salary exceeding the company's retained earnings, your director's loan account goes overdrawn. That triggers a benefit in kind charge and potential Section 455 tax at 33.75% if the loan is not repaid within 9 months of the year-end.</p>
+<p>If the company makes a loss but you have taken dividends or salary exceeding the company's retained earnings, your director's loan account goes overdrawn. That triggers a benefit in kind charge and potential Section 455 tax (33.75% for loans made in 2025/26; 35.75% for loans made on or after 6 April 2026) if the loan is not repaid within 9 months of the year-end. The charge is repayable under s.458 once the loan is cleared.</p>
 
 <p>Losses do not automatically fix an overdrawn loan account. You still need to repay the company or have the loan formally written off (which is a deemed dividend for you personally). This is a common trap for new directors who assume a loss means they can take money out tax-free. It does not work that way.</p>
 
@@ -164,7 +164,7 @@ faqs:
 
 <p>Loss relief is not complicated for a simple year-one loss. But it becomes complex quickly if you have associated companies, R&D activity, capital gains, or a director's loan account. If any of these apply, speak to a qualified accountant before filing the CT600.</p>
 
-<p>Our ICAEW qualified team handles loss relief claims for new companies across the UK. From a tech startup in Shoreditch to a construction company in Leeds. The rules are the same. The planning is different for each business.</p>
+<p>Our specialist team handles loss relief claims for new companies across the UK. From a tech startup in Shoreditch to a construction company in Leeds. The rules are the same. The planning is different for each business.</p>
 
 <p>If you are unsure how to handle a loss in your first year, <a href="/contact">contact us</a>. We can review your accounts, calculate the best loss relief option, and file the CT600 correctly. Do not leave tax relief on the table.</p>
 

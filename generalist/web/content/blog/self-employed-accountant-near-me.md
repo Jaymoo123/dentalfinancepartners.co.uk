@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Self Employed Accountant Near Me: Find the Right Fit in 2025"
-metaDescription: "Searching for a self employed accountant near me? We explain what to look for, typical costs, and how an ICAEW-qualified firm can save you more than they"
+metaDescription: "Searching for a self employed accountant near me? We explain what to look for, typical costs, and how the right accountant can save you more than their fee."
 altText: "A self employed accountant meeting a sole trader client in a modern UK office with laptops and paperwork visible."
 image: "/blog/self-employed-accountant-near-me.jpg"
 imageCredit:
@@ -33,14 +33,14 @@ faqs:
 
 <p>The right accountant for self employed people does more than file your tax return. They save you time, reduce your tax bill legitimately, and keep you compliant with HMRC. But not every accountant is the same, and the one who works for a 50-employee Ltd company is rarely the best fit for a self employed plumber in Manchester or a freelance consultant in Bristol.</p>
 
-<p>This article explains what to look for, what you should expect to pay, and how to choose an accountant who actually understands self employment. As ICAEW qualified accountants, we work with self employed people across every sector. Here is what matters.</p>
+<p>This article explains what to look for, what you should expect to pay, and how to choose an accountant who actually understands self employment. We work with self employed people across every sector. Here is what matters.</p>
 
 <h2>What Does a Self Employed Accountant Actually Do?</h2>
 
 <p>A good accountant for self employed clients handles more than just the annual self assessment return (form SA100 or SA103 if you are self employed). The real value comes from the work they do throughout the year.</p>
 
 <ul>
-<li><strong>Year-end accounts and tax return preparation.</strong> They take your income and expenses, organise them correctly, and file your return to HMRC. This includes calculating your Class 2 and Class 4 National Insurance contributions.</li>
+<li><strong>Year-end accounts and tax return preparation.</strong> They take your income and expenses, organise them correctly, and file your return to HMRC. This includes calculating your Class 4 National Insurance contributions (Class 2 NIC was abolished from 6 April 2024).</li>
 <li><strong>Tax planning.</strong> This is where the savings happen. Your accountant should identify allowable expenses you are missing, advise on pension contributions to reduce your tax bill, and help you structure your business tax-efficiently.</li>
 <li><strong>VAT advice and registration.</strong> If your turnover approaches the £90,000 VAT threshold, your accountant should flag it and advise whether to register voluntarily or wait. They should also handle the VAT return if you are registered.</li>
 <li><strong>HMRC correspondence.</strong> If HMRC opens an enquiry into your return, your accountant deals with it. That alone is worth the fee.</li>
@@ -128,7 +128,7 @@ faqs:
 
 <h2>How We Work with Self Employed Clients</h2>
 
-<p>At Holloway Davies, we are ICAEW qualified and work with self employed people across every sector. We use Xero and FreeAgent for bookkeeping, both MTD-compatible. We offer fixed-fee monthly packages that include software, your annual self assessment return, and ongoing tax planning advice.</p>
+<p>At Holloway Davies, we work with self employed people across every sector. We use Xero and FreeAgent for bookkeeping, both MTD-compatible. We offer fixed-fee monthly packages that include software, your annual self assessment return, and ongoing tax planning advice.</p>
 
 <p>We also handle VAT returns, payroll if you have staff, and HMRC correspondence. If you are considering incorporation, we will run the numbers and give you a straight answer. No pressure. Just facts.</p>
 

@@ -30,7 +30,7 @@ faqs:
 
 <p>If you run a limited company, work as a sole trader, or operate through a partnership in the UK, you have likely asked yourself: <em>should I use an online accountant?</em> It is a fair question. The market has changed dramatically over the last decade. Traditional high-street firms still exist, but a growing number of business owners now choose an <strong>online accountant UK</strong> firm that works entirely through cloud software, email, and video calls.</p>
 
-<p>This guide is for you if you are a director of a small limited company, a contractor operating through your own Ltd, a sole trader or freelancer, or a partner in a small partnership. We are ICAEW-qualified accountants who work with businesses of every shape across the UK, from a one-person consultancy in Shoreditch to a growing digital agency in the Northern Quarter of Manchester, a property partnership in Edinburgh's Leith district, and a manufacturing company in the Jewellery Quarter of Birmingham.</p>
+<p>This guide is for you if you are a director of a small limited company, a contractor operating through your own Ltd, a sole trader or freelancer, or a partner in a small partnership. We are specialist accountants who work with businesses of every shape across the UK, from a one-person consultancy in Shoreditch to a growing digital agency in the Northern Quarter of Manchester, a property partnership in Edinburgh's Leith district, and a manufacturing company in the Jewellery Quarter of Birmingham.</p>
 
 <p>We have written this pillar to give you the definitive comparison. Not a marketing page. Not a list of features copied from each provider's website. A genuine, practitioner-level guide that helps you decide which online accountant UK firm, if any, is right for your business.</p>
 
@@ -226,7 +226,7 @@ faqs:
 <li><strong>Schedule a call.</strong> Most firms offer a free initial consultation. Use it. Ask specific questions about your business. If they cannot answer confidently, that is a red flag.</li>
 </ol>
 
-<p>Once you have completed this checklist, you will have a clear picture of which firm is right for you. If you want to discuss your specific situation with an ICAEW-qualified team, <a href="/contact">contact us</a> for a no-obligation conversation.</p>
+<p>Once you have completed this checklist, you will have a clear picture of which firm is right for you. If you want to discuss your specific situation with our specialist team, <a href="/contact">contact us</a> for a no-obligation conversation.</p>
 
 <h2>Common Mistakes When Choosing an Online Accountant UK</h2>
 
@@ -256,7 +256,7 @@ faqs:
 
 <h2>How We Can Help</h2>
 
-<p>We are ICAEW-qualified accountants who have worked with UK businesses of every shape and size. We use Xero, QuickBooks, FreeAgent, and Sage. We offer a hybrid model, remote efficiency with the option of face-to-face meetings when you need them. We serve clients from London to Glasgow, from Shoreditch to the Quayside in Newcastle.</p>
+<p>We are specialist accountants who have worked with UK businesses of every shape and size. We use Xero, QuickBooks, FreeAgent, and Sage. We offer a hybrid model, remote efficiency with the option of face-to-face meetings when you need them. We serve clients from London to Glasgow, from Shoreditch to the Quayside in Newcastle.</p>
 
 <p>If you are considering an online accountant UK firm and want an honest, no-pressure conversation about whether we are the right fit, <a href="/contact">get in touch</a>. We will listen to your situation, answer your questions, and give you our genuine recommendation, even if that recommendation is not us.</p>
 

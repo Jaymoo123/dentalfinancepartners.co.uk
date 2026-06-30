@@ -17,9 +17,9 @@ faqs:
 - question: What is the Annual Investment Allowance limit for 2025/26?
   answer: The Annual Investment Allowance limit is £1,000,000 for the 2025/26 tax year. This applies to accounting periods that start on or after 1 April 2023. For shorter periods, the limit is proportionally reduced. If your accounting period is 9 months long, your AIA limit is £750,000.
 - question: Can I claim the Annual Investment Allowance on a car?
-  answer: No, most cars are excluded from the AIA. Vans, lorries, tractors, and other commercial vehicles do qualify. If you buy a car for your business, it goes into the main pool at 18% writing down allowance or the special rate pool at 6%, depending on its CO2 emissions. Electric cars qualify for 100% first-year allowances separately.
+  answer: No, most cars are excluded from the AIA. Vans, lorries, tractors, and other commercial vehicles do qualify. If you buy a car for your business, it goes into the main pool (14% writing down allowance from 1 April 2026 for companies and 6 April 2026 for unincorporated businesses per FA 2026 s.28; 18% for earlier periods) or the special rate pool at 6%, depending on its CO2 emissions. Electric cars qualify for 100% first-year allowances separately.
 - question: What happens if I spend more than £1m on qualifying plant and machinery?
-  answer: You claim the AIA on the first £1m of qualifying expenditure. The excess goes into the main pool (18% writing down allowance) or the special rate pool (6% writing down allowance), depending on the asset type. Limited companies can also use Full Expensing on new assets above the AIA limit, giving 100% relief with no cap.
+  answer: You claim the AIA on the first £1m of qualifying expenditure. The excess goes into the main pool or the special rate pool (6% writing down allowance), depending on the asset type. The main-pool writing down allowance is 14% from 1 April 2026 for companies and 6 April 2026 for unincorporated businesses (FA 2026 s.28); it was 18% for earlier periods. From 1 January 2026 a 40% first-year allowance also applies to new and unused main-rate plant and machinery (FA 2026 s.29), available to all businesses including sole traders and partnerships. Limited companies can also use Full Expensing on new assets above the AIA limit, giving 100% relief with no cap.
 - question: Does the AIA apply to second-hand assets?
   answer: Yes, the AIA covers both new and second-hand plant and machinery. This is a key difference from Full Expensing, which only applies to new assets. If you buy used equipment for your business, you can claim the AIA on the full cost up to the £1m limit, provided the asset qualifies as plant and machinery.
 dateModified: '2026-05-20'
@@ -78,7 +78,7 @@ imageCredit:
 <li>IT infrastructure (servers, networking equipment, point-of-sale systems)</li>
 </ul>
 
-<p>If you are unsure whether a specific asset qualifies, check the HMRC Capital Allowances Manual or speak to an accountant. As ICAEW qualified accountants, we review capital allowance schedules regularly for clients across sectors from a Shoreditch tech consultancy to a Birmingham manufacturing firm.</p>
+<p>If you are unsure whether a specific asset qualifies, check the HMRC Capital Allowances Manual or speak to an accountant. We review capital allowance schedules regularly for clients across sectors, from a Shoreditch tech consultancy to a Birmingham manufacturing firm.</p>
 
 <h2>The £1m Limit: How It Works in Practice</h2>
 
@@ -92,7 +92,7 @@ imageCredit:
 
 <h3>What Happens If You Spend More Than £1m?</h3>
 
-<p>If your qualifying expenditure exceeds the AIA limit in a period, you claim the AIA on the first £1m. The excess goes into the main pool (18% writing down allowance per year) or the special rate pool (6% per year) depending on the asset type.</p>
+<p>If your qualifying expenditure exceeds the AIA limit in a period, you claim the AIA on the first £1m. The excess goes into the main pool or the special rate pool (6% per year) depending on the asset type. The main-pool writing down allowance was 18% per year up to 31 March 2026 for companies (5 April 2026 for unincorporated businesses); it falls to 14% from 1 April 2026 for companies and 6 April 2026 for unincorporated businesses (FA 2026 s.28).</p>
 
 <p>Example: A Leeds-based logistics company spends £1,400,000 on new warehouse racking and forklifts in the year to 31 March 2026.</p>
 
@@ -108,7 +108,7 @@ imageCredit:
 
 <p>From 1 April 2023, limited companies can also use Full Expensing. This gives 100% first-year relief on most main-rate plant and machinery, with no cap. It is effectively an unlimited version of the AIA for companies only.</p>
 
-<p>Sole traders and partnerships cannot use Full Expensing. They rely on the AIA and writing down allowances.</p>
+<p>Sole traders and partnerships cannot use Full Expensing. They rely on the AIA and writing down allowances. From 1 January 2026, however, a 40% first-year allowance is available on new and unused main-rate plant and machinery (FA 2026 s.29). This applies to all businesses, including sole traders and partnerships, and provides additional first-year relief on new assets above the AIA limit.</p>
 
 <p>Full Expensing applies to new assets only. Second-hand assets do not qualify. The AIA covers both new and second-hand assets, which makes it more flexible for many businesses.</p>
 
@@ -151,9 +151,9 @@ imageCredit:
 
 <p>If you are planning significant capital investment, timing matters. The £1m limit resets each accounting period. If you have a large purchase coming up, consider whether splitting it across two periods makes sense.</p>
 
-<p>Example: A Bristol-based café group plans to spend £1,600,000 on new kitchen equipment and fit-outs. If they do it all in one year, £1m gets AIA relief and £600,000 goes into the pool at 18%. If they split it as £800,000 in year one and £800,000 in year two, both tranches get full AIA relief.</p>
+<p>Example: A Bristol-based café group plans to spend £1,600,000 on new kitchen equipment and fit-outs. If they do it all in one year, £1m gets AIA relief and £600,000 goes into the main pool at 14% (the main-rate WDA from 1 April 2026 per FA 2026 s.28): £84,000 relief in year one. If they split it as £800,000 in year one and £800,000 in year two, both tranches get full AIA relief.</p>
 
-<p>That is a difference of £600,000 of expenditure attracting 18% relief versus 100% relief. On a 25% corporation tax rate, the tax saving from timing is £123,000.</p>
+<p>That is a difference of £600,000 of expenditure attracting 14% relief versus 100% relief. On a 25% corporation tax rate, the tax saving from timing is £129,000.</p>
 
 <p>For sole traders and partnerships, the same principle applies. The AIA limit is per business, not per person. A partnership gets one £1m limit for the whole partnership.</p>
 
@@ -199,7 +199,7 @@ imageCredit:
 
 <p>The AIA is straightforward for most businesses, but the interaction with Full Expensing, associated company rules, and special rate assets can complicate things. If your capital expenditure exceeds £500,000 in a year, or if you are part of a group, take advice before filing.</p>
 
-<p>Our <a href="/contact">team of ICAEW qualified accountants</a> can review your capital allowance position and ensure you claim everything you are entitled to. We work with businesses across the UK, from a sole trader electrician in Glasgow to a multi-company group in the Northern Quarter in Manchester.</p>
+<p>Our <a href="/contact">experienced team</a> can review your capital allowance position and ensure you claim everything you are entitled to. We work with businesses across the UK, from a sole trader electrician in Glasgow to a multi-company group in the Northern Quarter in Manchester.</p>
 
 <p>If you are planning significant capital investment in 2025/26, get in touch. We can model the tax impact of different spending timings and help you structure the purchases for maximum relief.</p>
 

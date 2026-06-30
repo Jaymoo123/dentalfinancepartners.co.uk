@@ -11,7 +11,7 @@ export const vatTool: GenericTool = {
   embedHeight: 500,
   metaTitle: "VAT Scheme Comparator | Standard vs Flat Rate UK Calculator",
   metaDescription:
-    "Free VAT scheme comparator for UK businesses. Compares Standard vs Flat Rate (with Limited Cost Trader test). Find out which VAT scheme costs less. 2025/26.",
+    "Free VAT scheme comparator for UK businesses. Compares Standard vs Flat Rate (with Limited Cost Trader test). Find out which VAT scheme costs less. 2026/27.",
   intro:
     "Picking the wrong VAT scheme costs four-figure sums a year for most service businesses. Run your turnover and input VAT through the comparator to see whether the Flat Rate Scheme beats Standard VAT for you, and whether the Limited Cost Trader rules would force you onto the 16.5% sector rate anyway.",
   fields: [

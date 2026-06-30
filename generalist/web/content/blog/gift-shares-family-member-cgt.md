@@ -109,7 +109,7 @@ faqs:
 <p>Combined CGT: £33,179 + £154,099 = £187,278. Saving of £721. Minimal.</p>
 
 <p>Option 3: Gift 20% now, claim holdover relief, child sells in 12 months.</p>
-<p>No CGT on the gift. Child's base cost is 20p. They sell at £240,000. Gain £239,999. No BADR (held less than 2 years). They pay CGT at 24% (assuming higher rate) = £57,599. You pay CGT on your 80% as above: £154,099. Combined: £211,698. Worse than Option 1.</p>
+<p>No CGT on the gift. Child's base cost is 20p. They sell at £240,000. Gain £239,999. No BADR (held less than 2 years). They pay CGT at 24% (assuming higher rate) = £57,599. You pay 14% BADR on your full 80% gain (your BADR allowance is untouched because the gift was held over): £959,999 × 14% = £134,400. Combined: £57,599 + £134,400 = £191,999. Worse than Option 1.</p>
 
 <p>Option 4: Gift 20% now, child holds for 2+ years, then sells.</p>
 <p>You pay CGT on the gift at 14% BADR: £33,179. Child holds for 2 years, then sells. They claim BADR on their gain (assuming they meet the conditions). Gain £239,999 at 14% = £33,599. Combined: £66,778. You sell your 80% at the same time: £154,099. Total: £220,877. Worse than Option 1.</p>
@@ -147,7 +147,7 @@ faqs:
 <li><strong>File the holdover relief claim.</strong> If you want holdover relief, both you and the recipient must sign the joint claim. Include it with your self assessment return for the year of the gift.</li>
 <li><strong>Consider the timing.</strong> If the sale is imminent (within 12 months), gifting shares is unlikely to produce a net benefit. If the sale is 3+ years away, the picture changes.</li>
 </ol>
-<p>As ICAEW qualified accountants, we see many business owners assume gifting shares to family members is a straightforward tax saving. It is not. The interaction between holdover relief, BADR, and the recipient's tax position means the outcome is highly sensitive to the specific facts.</p>
+<p>We see many business owners assume gifting shares to family members is a straightforward tax saving. It is not. The interaction between holdover relief, BADR, and the recipient's tax position means the outcome is highly sensitive to the specific facts.</p>
 
 <p>If you are considering a share gift as part of your exit planning, <a href="/contact">contact our team</a>. We will run the calculations for your specific situation and tell you whether the strategy works or whether selling personally is the cleaner route.</p>
 

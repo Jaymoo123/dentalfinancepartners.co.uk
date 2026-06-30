@@ -30,7 +30,7 @@ faqs:
 
 <p>If your limited company has spent money developing a new product, process, or software, you could be owed tens of thousands of pounds from HMRC. R&D tax credits are not a niche relief for scientists in white coats. They apply to businesses across every sector, from a precision engineering firm in Sheffield's Kelham Island to a fintech startup in London's Shoreditch. This is <strong>r&d tax credits explained</strong> from first principles to the 2025/26 rules, written for directors who need to know what qualifies, what doesn't, and how to claim without triggering an HMRC enquiry.</p>
 
-<p>As ICAEW qualified accountants working with UK businesses of every shape, we see claims fail for three reasons: poor documentation, misunderstanding what qualifies, and missing the deadline. This guide eliminates all three risks. It covers the merged R&D scheme that applies from 1 April 2024, the Enhanced R&D Intensive Scheme (ERIS) for loss-making companies, and the practical steps to build a defensible claim.</p>
+<p>Working with UK businesses of every shape, we see claims fail for three reasons: poor documentation, misunderstanding what qualifies, and missing the deadline. This guide eliminates all three risks. It covers the merged R&D scheme that applies from 1 April 2024, the Enhanced R&D Intensive Scheme (ERIS) for loss-making companies, and the practical steps to build a defensible claim.</p>
 
 <h2>What Are R&D Tax Credits?</h2>
 

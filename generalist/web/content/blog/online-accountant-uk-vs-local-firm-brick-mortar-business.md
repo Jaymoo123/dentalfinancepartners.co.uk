@@ -91,8 +91,8 @@ faqs:
 </ul>
 <p>If you are considering switching, read our guide on <a href="/blog/bookkeeping-and-compliance">bookkeeping and compliance</a> to understand what a smooth transition looks like.</p>
 
-<h2>Our View as ICAEW Qualified Accountants</h2>
-<p>We are ICAEW qualified accountants working with UK businesses of every shape. We see the pros and cons of both models every day.</p>
+<h2>Our View</h2>
+<p>We are specialist accountants working with UK businesses of every shape. We see the pros and cons of both models every day.</p>
 <p>For a brick and mortar business with high volumes of paper receipts and staff on the payroll, we generally recommend a service that includes physical receipt collection. That might be a local firm, or it might be an online service that offers a bookkeeper visit as an add-on. The key is that someone else does the data entry.</p>
 <p>For a business that is already digital, or a low-volume sole trader, an online accountant UK service is often the better fit. The cost is lower and the convenience is real.</p>
 <p>The wrong choice is the one that leaves you with a backlog of receipts and a stressed owner doing data entry at 10pm on a Sunday. That is not a good use of anyone's time.</p>

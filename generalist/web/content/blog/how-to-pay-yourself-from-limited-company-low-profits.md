@@ -22,11 +22,11 @@ faqs:
   - question: "Can I pay myself a dividend if my company made a loss this year?"
     answer: "No. A dividend can only be paid from retained earnings (accumulated profits after tax). If the company has made a loss this year but has retained profits from prior years, you can pay a dividend from those retained profits. But if the company has negative retained earnings overall, a dividend is unlawful. Directors can be personally liable for repaying unlawful dividends."
   - question: "What is the minimum salary I must pay myself as a director of a limited company?"
-    answer: "There is no legal minimum salary for a director. You can pay yourself zero if the company cannot afford it. However, if you are the only director and employee, you must still register for PAYE if you pay yourself any salary above the NI lower earnings limit (£6,240 in 2025/26). But you do not have to pay yourself anything at all. Many directors of low-profit companies take no salary and rely on dividends from retained profits."
+    answer: "There is no legal minimum salary for a director. You can pay yourself zero if the company cannot afford it. However, if you are the only director and employee, you must still register for PAYE if you pay yourself any salary above the NI lower earnings limit (£6,500 in 2025/26). But you do not have to pay yourself anything at all. Many directors of low-profit companies take no salary and rely on dividends from retained profits."
   - question: "Do I need to set up payroll if I only pay myself dividends?"
     answer: "No. Dividends are not salary. They are reported on your personal self assessment tax return, not through payroll. You do not need a PAYE scheme if you only pay dividends. But be careful. If you later decide to pay yourself a salary, you must register for PAYE before making the first payment. HMRC can charge penalties for late PAYE registration."
   - question: "Can I pay my spouse a salary from a low-profit company?"
-    answer: "Yes, as long as the salary is for genuine work done for the business. HMRC can challenge salaries paid to family members if the work is not real or the salary is excessive for the work done. A spouse salary at the secondary threshold of £9,100 is common and defensible if they perform administrative, marketing, or bookkeeping tasks. Keep timesheets or a record of work done to support the payment."
+    answer: "Yes, as long as the salary is for genuine work done for the business. HMRC can challenge salaries paid to family members if the work is not real or the salary is excessive for the work done. A spouse salary at the secondary threshold of £5,000 is common and defensible if they perform administrative, marketing, or bookkeeping tasks. Keep timesheets or a record of work done to support the payment."
 ---
 
 <p>Most guides on paying yourself from a limited company assume your business is turning over six figures. They talk about the full £50,270 basic rate band, the £12,570 salary, and dividends up to the higher rate threshold. That is all well and good if you have the profit.</p>
@@ -45,9 +45,9 @@ faqs:
 
 <p>But when profit is under £20,000, the maths changes. You have to ask whether the corporation tax saving on the salary is actually worth the cash leaving the business. And you have to consider whether the company can afford the employer National Insurance on a salary above the secondary threshold.</p>
 
-<p>Here is the key number. The secondary threshold for employer NI in 2025/26 is £9,100. Any salary above that triggers 13.8% employer NI. A £12,570 salary means £3,470 of salary is subject to employer NI. That is £479 in employer NI alone. Plus you have payroll software costs, pension auto-enrolment duties if you cross the earnings threshold, and the administrative hassle.</p>
+<p>Here is the key number. The secondary threshold for employer NI in 2025/26 is £5,000. Any salary above that triggers 15% employer NI. A £12,570 salary means £7,570 of salary is subject to employer NI. That is £1,135.50 in employer NI alone. Plus you have payroll software costs, pension auto-enrolment duties if you cross the earnings threshold, and the administrative hassle.</p>
 
-<p>If your company profit is £15,000, paying a £12,570 salary leaves only £2,430 of profit. The corporation tax saving on the salary is 19% of £12,570, which is £2,388. But you have just paid £479 in employer NI. Your net corporation tax saving after employer NI is £1,909. And you have taken £12,570 out of the business in cash. Is that worth it?</p>
+<p>If your company profit is £15,000, paying a £12,570 salary leaves only £2,430 of profit. The corporation tax saving on the salary is 19% of £12,570, which is £2,388. But you have just paid £1,135.50 in employer NI. Your net corporation tax saving after employer NI is £1,252.50. And you have taken £12,570 out of the business in cash. Is that worth it?</p>
 
 <p>In many cases, the answer is no. You are better off keeping cash in the company and taking a smaller salary, or taking no salary at all and relying on dividends if you have retained profits from a prior year.</p>
 
@@ -59,11 +59,11 @@ faqs:
 
 <p>So in this scenario, you are limited to salary. What do you do?</p>
 
-<p><strong>Option A: Pay the full £12,570 salary.</strong> You cannot. The company only has £12,000 profit. A £12,570 salary would create a loss of £570. That is legal, but the company then has negative retained earnings. You cannot pay a dividend in the future until that loss is recovered. And you pay employer NI on the amount above £9,100. The employer NI on £3,470 is £479. So the total cost to the company is £13,049. You receive £12,570 gross. No income tax or employee NI because it is within the personal allowance and primary threshold. But the company is now overdrawn.</p>
+<p><strong>Option A: Pay the full £12,570 salary.</strong> You cannot. The company only has £12,000 profit. A £12,570 salary would create a loss of £570. That is legal, but the company then has negative retained earnings. You cannot pay a dividend in the future until that loss is recovered. And you pay employer NI on the amount above £5,000. The employer NI on £7,570 is £1,135.50. So the total cost to the company is £13,705.50. You receive £12,570 gross. No income tax or employee NI because it is within the personal allowance and primary threshold. But the company is now overdrawn.</p>
 
-<p><strong>Option B: Pay a salary of £9,100.</strong> This is the secondary threshold. No employer NI is due. The company pays you £9,100. Corporation tax saving at 19% is £1,729. Net cost to the company after corporation tax saving is £7,371. You receive £9,100 gross. No tax or NI. The company retains £2,900 profit, which can be used for a future dividend.</p>
+<p><strong>Option B: Pay a salary of £5,000.</strong> This is the secondary threshold. No employer NI is due. The company pays you £5,000. Corporation tax saving at 19% is £950. Net cost to the company after corporation tax saving is £4,050. You receive £5,000 gross. No tax or NI. The company retains £7,000 profit, which can be used for a future dividend.</p>
 
-<p><strong>Option C: Pay a salary of £6,000.</strong> No employer NI. Corporation tax saving of £1,140. Net cost to company is £4,860. You keep more cash in the business for growth. You receive £6,000 tax-free.</p>
+<p><strong>Option C: Pay a salary of £3,000.</strong> No employer NI (below the £5,000 secondary threshold). Corporation tax saving of £570. Net cost to company is £2,430. You keep more cash in the business for growth. You receive £3,000 tax-free.</p>
 
 <p>For a new company with £12,000 profit, Option B is usually the best balance. You take a salary that avoids employer NI, you get the corporation tax saving, and you leave enough profit in the company to pay a small dividend in year two once you have filed your accounts and confirmed retained earnings.</p>
 
@@ -73,11 +73,11 @@ faqs:
 
 <p>In this case, any salary from the Ltd company is taxed at your marginal rate. If you are a basic rate taxpayer, that is 20% income tax plus employee NI at 8% (on earnings above £12,570 from all sources combined). If you are a higher rate taxpayer, it is 40% plus 2% employee NI.</p>
 
-<p>A £9,100 salary from the Ltd company would cost the company £9,100 (no employer NI because it is at the secondary threshold). But you would pay income tax and NI on it because it is on top of your main job income. At basic rate, you lose about 28% to tax and NI. You keep about £6,552 net. The corporation tax saving at 19% is £1,729. So the net cost to the company is £7,371, and you receive £6,552. That is a net loss of £819. You are worse off than if the company simply kept the profit and you paid yourself nothing.</p>
+<p>A £9,100 salary from the Ltd company incurs employer NI of £615 (15% on the £4,100 above the £5,000 secondary threshold), so the total company outlay is £9,715. But you would pay income tax and NI on it because it is on top of your main job income. At basic rate, you lose about 28% to tax and NI. You keep about £6,552 net. The corporation tax saving at 19% is £1,729. So the net cost to the company is £7,986, and you receive £6,552. That is a net loss of £1,434. You are worse off than if the company simply kept the profit and you paid yourself nothing.</p>
 
 <p><strong>What should you do instead?</strong> Take no salary. Keep the £8,000 profit in the company. Pay corporation tax at 19% (£1,520). The company retains £6,480 after tax. In a future year when you have more profit, or when you leave your main job, you can pay a dividend from those retained earnings. Dividends are taxed at 8.75% for basic rate, 33.75% for higher rate. That is likely lower than your marginal income tax rate on a salary.</p>
 
-<p>Alternatively, if you need the cash now, take a small dividend. But only if the company has distributable profits from a prior year or from the current year confirmed by management accounts. A £6,480 dividend would use the £500 dividend allowance, then the remaining £5,980 is taxed at 8.75% if you are a basic rate taxpayer. That is £523 in dividend tax. You keep £5,957. Compare that to the salary route where you kept £6,552 but the company spent £9,100. The dividend route leaves more cash in the company overall.</p>
+<p>Alternatively, if you need the cash now, take a small dividend. But only if the company has distributable profits from a prior year or from the current year confirmed by management accounts. A £6,480 dividend would use the £500 dividend allowance, then the remaining £5,980 is taxed at 8.75% if you are a basic rate taxpayer. That is £523 in dividend tax. You keep £5,957. Compare that to the salary route where you kept £6,552 but the company spent £9,715 (salary plus employer NI). The dividend route leaves more cash in the company overall.</p>
 
 <p>For a side-hustle Ltd, the answer is almost always: no salary, retain profit, pay a dividend when the personal circumstances change.</p>
 
@@ -87,7 +87,7 @@ faqs:
 
 <p>You can pay each of you a salary of £9,100. That totals £18,200. But the company only has £18,000 profit. You would create a small loss of £200. That is fine, but it means no retained profit for dividends.</p>
 
-<p>The salaries cost the company £18,200. No employer NI because each salary is at the secondary threshold. Corporation tax saving at 19% is £3,458. Net cost to company after tax saving is £14,742. Each of you receives £9,100 gross. No tax or NI if you each have no other income, or if the salary sits within your personal allowance.</p>
+<p>The salaries cost the company £18,200. Employer NI applies at 15% above the £5,000 secondary threshold: £615 per director, £1,230 in total. As a two-director company you can claim the Employment Allowance (up to £10,500), which covers the £1,230 entirely. Net employer NI: £0. Corporation tax saving at 19% is £3,458. Net cost to company after tax saving is £14,742. Each of you receives £9,100 gross. No tax or NI if you each have no other income, or if the salary sits within your personal allowance.</p>
 
 <p>If you each have other income that uses your personal allowance, the salary is taxed at your marginal rate. In that case, the same logic from Scenario 2 applies. You might be better off paying no salaries and retaining the profit.</p>
 
@@ -97,7 +97,7 @@ faqs:
 
 <p>The Employment Allowance lets eligible employers reduce their employer NI by up to £10,500 in 2025/26. If your company is a single-director Ltd with no other employees, you <strong>cannot</strong> claim the Employment Allowance. The rules exclude companies where the director is the only employee paid above the secondary threshold.</p>
 
-<p>If you have two directors and both are paid above £9,100, you can claim the Employment Allowance. That wipes out the employer NI on the salaries. In Scenario 3, the Employment Allowance would cover the employer NI on any salary above £9,100 for both of you. So you could pay each of you £12,570 and the company would pay no employer NI (up to the £10,500 cap). That extracts more cash tax-free.</p>
+<p>If you have two directors and both are paid above £5,000 (the secondary threshold), you can claim the Employment Allowance. That wipes out the employer NI on the salaries. In Scenario 3, the Employment Allowance would cover the employer NI on any salary above £5,000 for both of you. So you could pay each of you £12,570 and the company would pay no employer NI (up to the £10,500 cap). That extracts more cash tax-free.</p>
 
 <p>But again, the company only has £18,000 profit. Paying two salaries of £12,570 totals £25,140. That creates a loss of £7,140. That is legal, but it means the company has negative retained earnings. You cannot pay dividends in future until that loss is recovered. And the company has no cash left for reinvestment.</p>
 
@@ -117,7 +117,7 @@ faqs:
 
 <p>If your company has low profit but you want to save for retirement, a direct company pension contribution is worth considering. The contribution is deductible against corporation tax, and there is no NI on it. You can contribute up to £60,000 per year (subject to the annual allowance) and the company gets the full corporation tax saving.</p>
 
-<p>For a company with £15,000 profit, a £15,000 pension contribution would reduce profit to zero. Corporation tax is £0. The company saves £2,850 in corporation tax. You get £15,000 into your pension. You cannot access it until age 57 (rising to 58), but it is a highly tax-efficient way to extract value from a low-profit company if you do not need the cash now.</p>
+<p>For a company with £15,000 profit, a £15,000 pension contribution would reduce profit to zero. Corporation tax is £0. The company saves £2,850 in corporation tax. You get £15,000 into your pension. You cannot access it until age 55 (rising to 57 from 6 April 2028), but it is a highly tax-efficient way to extract value from a low-profit company if you do not need the cash now.</p>
 
 <p>The trade-off is that you cannot use the money for living expenses. So this only works if you have other income or savings to live on.</p>
 
@@ -127,7 +127,7 @@ faqs:
 
 <p><strong>Step 1:</strong> Check if the company has distributable retained profits from prior years. If yes, consider a dividend. No employer NI, lower tax rates, and you keep cash in the company for growth.</p>
 
-<p><strong>Step 2:</strong> If no retained profits, consider a salary at or below the secondary threshold of £9,100. This avoids employer NI and gives you a corporation tax saving. It is clean and simple.</p>
+<p><strong>Step 2:</strong> If no retained profits, consider a salary at or below the secondary threshold of £5,000. This avoids employer NI and gives you a corporation tax saving. It is clean and simple.</p>
 
 <p><strong>Step 3:</strong> If you have no other income and the company can afford it, a salary up to £12,570 is fine. But be aware of the employer NI cost and the impact on retained earnings.</p>
 

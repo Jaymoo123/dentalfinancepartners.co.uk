@@ -2,7 +2,7 @@
  * BADR CGT Calculator — pure compute module.
  *
  * Extracted from BADRCalculator.tsx. No React / DOM / fetch.
- * All rates match uk-tax-rates.ts 2025/26 values.
+ * Current year: 2026/27. Rates sourced from uk-tax-rates.ts.
  */
 
 const BADR_RATE_2025_26 = 0.14;   // uk-tax-rates.ts capitalGainsTax.badr.rate_2025_26 ✓

@@ -6,7 +6,7 @@ date: "2026-05-17"
 author: "Holloway Davies Editorial Team"
 category: "Incorporation and Structure"
 metaTitle: "How to Register a Limited Company UK: Step-by-Step Guide"
-metaDescription: "Register a limited company UK in 2025/26. Step-by-step process, costs, SIC codes, PSC register, and post-incorporation obligations. Written by ICAEW"
+metaDescription: "Register a limited company UK in 2025/26. Step-by-step process, costs, SIC codes, PSC register, and post-incorporation obligations. Written by specialist accountants"
 altText: "UK business owner registering a limited company online at a desk in a modern Manchester office with Companies House website on screen"
 image: "/blog/how-to-register-a-limited-company-uk.jpg"
 imageCredit:
@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/marker-note-on-craft-paper-near-laptop-7310136/"
   source: "Pexels"
 h1: "How to Register a Limited Company UK: The Complete Step-by-Step Guide"
-summary: "Registering a limited company UK is a straightforward process through Companies House, but the decisions you make at incorporation have lasting tax and legal consequences. This guide covers the full process, from choosing your company name and SIC code through to your first CT600 return and dividend paperwork. Written by ICAEW-qualified accountants who work with UK business owners every day."
+summary: "Registering a limited company UK is a straightforward process through Companies House, but the decisions you make at incorporation have lasting tax and legal consequences. This guide covers the full process, from choosing your company name and SIC code through to your first CT600 return and dividend paperwork. Written by specialist accountants who work with UK business owners every day."
 schema: ""
 faqs:
   - question: "How long does it take to register a limited company UK?"
@@ -30,7 +30,7 @@ faqs:
 
 <p>You have decided to incorporate. You are ready to move from sole trader to director, or you are starting your first business and want the limited liability and tax planning a company gives you. The question is simple: how to register a limited company UK in a way that sets you up properly from day one.</p>
 
-<p>This guide answers that question. It is written for UK directors, contractors, freelancers, and small business owners who want to incorporate with confidence. We are ICAEW-qualified accountants. We have helped hundreds of businesses through this process. The registration itself takes 15 minutes online. The decisions you make during those 15 minutes affect your tax bill, your personal liability, and your ability to raise investment for years to come.</p>
+<p>This guide answers that question. It is written for UK directors, contractors, freelancers, and small business owners who want to incorporate with confidence. We are specialist accountants. We have helped hundreds of businesses through this process. The registration itself takes 15 minutes online. The decisions you make during those 15 minutes affect your tax bill, your personal liability, and your ability to raise investment for years to come.</p>
 
 <p>We cover every step: choosing your company name, selecting your SIC code, appointing directors and a PSC register, deciding on share structure, registering for Corporation Tax, and what happens after you get your company number. We include worked examples, a comparison table of share types, and an action checklist for your first 90 days as a director.</p>
 

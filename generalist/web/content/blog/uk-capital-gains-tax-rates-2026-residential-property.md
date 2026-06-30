@@ -24,7 +24,7 @@ faqs:
   - question: "Do I have to report a property sale within 60 days?"
     answer: "Yes. For UK residents selling UK residential property, you must report the gain and pay the tax within 60 days of completion. This is a separate filing from your self-assessment tax return. Missing the deadline triggers interest and penalties."
   - question: "Does Business Asset Disposal Relief apply to residential property in 2026/27?"
-    answer: "BADR applies to residential property only if it qualifies as a business asset, such as a furnished holiday let meeting the letting conditions or a property used in a trading business. From April 2026, the BADR rate is 18% on the first £1 million of lifetime gains."
+    answer: "BADR applies to residential property only if it qualifies as a genuine business asset, such as a property used in a trading business (for example, a care home or commercial guesthouse run with staff and trading infrastructure). The furnished holiday letting regime was abolished from 6 April 2025 and no longer qualifies for BADR. From April 2026, the BADR rate is 18% on the first £1 million of lifetime gains."
   - question: "Can I avoid CGT on a property that was once my main home?"
     answer: "You may get partial Principal Private Residence relief. The gain is apportioned between the period you lived there (exempt) and the period you did not (chargeable). The final 9 months of ownership are always exempt. Letting relief may also apply in limited circumstances."
 ---
@@ -45,7 +45,7 @@ faqs:
 
 <p>These rates apply to gains above your annual CGT allowance, which is £3,000 for 2025/26 and remains at £3,000 for 2026/27 (as confirmed in the Autumn Budget 2024).</p>
 
-<p>The 18% and 24% rates are specific to residential property. Non-residential assets (shares, business assets, commercial property) still use the old 10% and 20% rates (or 14% and 24% after BADR adjustments).</p>
+<p>From 30 October 2024, the 18% and 24% rates apply to all chargeable assets. Shares, commercial property, and other non-residential gains are taxed at the same rates as residential property. There is no longer a lower CGT rate for non-residential gains.</p>
 
 <h3>How Your Income Tax Band Determines Your CGT Rate</h3>
 
@@ -53,7 +53,7 @@ faqs:
 
 <p>Add your taxable income (salary, dividends, pension, rental profits) to your capital gain. If the total stays within the basic rate band (£50,270 for 2026/27), the gain is taxed at 18%. Any gain that pushes you into the higher rate band is taxed at 24%.</p>
 
-<p>Example: Sarah earns £40,000 in salary. She sells a buy-to-let flat and makes a £30,000 gain. Her total is £70,000. The first £10,270 of the gain (taking her to £50,270) is taxed at 18%. The remaining £19,730 is taxed at 24%.</p>
+<p>Example: Sarah earns £40,000 in salary. She sells a buy-to-let flat and makes a £30,000 gain. Her taxable income is £27,430 (£40,000 minus the £12,570 personal allowance), leaving a remaining basic rate band of £22,840 (£50,270 minus £27,430). The first £22,840 of the gain is taxed at 18% = £4,111.20. The remaining £7,160 is taxed at 24% = £1,718.40.</p>
 
 <h2>The 60-Day Reporting Window for Residential Property</h2>
 
@@ -61,7 +61,7 @@ faqs:
 
 <p>You use the <a href="/calculators">HMRC property disposal calculator</a> or file through your HMRC online account. If you miss the 60-day window, HMRC charges interest and penalties from day 61.</p>
 
-<p>The 60-day rule applies to UK residents selling UK residential property. Non-residents selling UK property also have a 30-day window (different rules apply).</p>
+<p>The 60-day rule applies to UK residents selling UK residential property. Non-residents selling UK residential property are also subject to the same 60-day reporting and payment window.</p>
 
 <h3>What Counts as Residential Property for CGT Purposes</h3>
 
@@ -74,7 +74,7 @@ faqs:
 <li>Properties you lived in but later let out (partial relief may apply)</li>
 </ul>
 
-<p>Commercial property, land without buildings, and furnished holiday lettings that meet specific criteria are treated differently for CGT purposes.</p>
+<p>Commercial property and land without buildings are treated differently for CGT purposes and are not subject to the 60-day reporting window. The furnished holiday letting regime was abolished from 6 April 2025; properties previously used as furnished holiday lets are now taxed as standard residential property.</p>
 
 <h2>Business Asset Disposal Relief (BADR) Changes from April 2026</h2>
 
@@ -85,13 +85,14 @@ faqs:
 <p>BADR applies to residential property only if it qualifies as a business asset. This typically means:</p>
 
 <ul>
-<li>A property used as a furnished holiday letting that meets the qualifying conditions (available for letting 210+ days, actually let 105+ days, and not used significantly by the owner)</li>
-<li>A property used in a trading business (e.g., a care home, a guesthouse, or a property used for trade purposes)</li>
+<li>A property used in a trading business (for example, a care home, a commercial guesthouse with staff, or another property used as an asset of a genuine trade)</li>
 </ul>
+
+<p>Note: the furnished holiday letting (FHL) regime was abolished from 6 April 2025. Properties previously qualifying as FHLs are now taxed as standard residential property and do not qualify for BADR.</p>
 
 <p>If your property qualifies for BADR, you get the lower rate on the first £1 million of lifetime gains. Above that, standard residential property rates apply.</p>
 
-<p>Example: James sells a furnished holiday let in the Lake District in July 2026. The gain is £400,000. He has not used any BADR before. The entire gain is taxed at 18% (the BADR rate from April 2026), saving £24,000 compared to the 24% higher rate.</p>
+<p>Example: James has run a small commercial guesthouse as a sole trader for more than two years and sells the property in July 2026. The gain is £400,000. He has not used any BADR before, and the property qualifies for BADR as a genuine business asset used in a trading business. The entire gain is taxed at 18% (the BADR rate from April 2026), saving £24,000 compared to the 24% higher rate.</p>
 
 <h2>Principal Private Residence Relief: When You Pay No CGT</h2>
 
@@ -122,11 +123,11 @@ faqs:
 <p>Gain: £220,000 - £160,000 - £8,000 = £52,000<br>
 Less annual allowance: £52,000 - £3,000 = £49,000 chargeable gain</p>
 
-<p>Tom's total income plus gain: £35,000 + £49,000 = £84,000. He is a higher rate taxpayer on the portion above £50,270.</p>
+<p>Tom's taxable income is £22,430 (£35,000 minus the £12,570 personal allowance). The remaining basic rate band is £27,840 (£50,270 minus £22,430). His gain above that threshold is taxed at 24%.</p>
 
-<p>First £15,270 of gain (taking him to £50,270): taxed at 18% = £2,748.60<br>
-Remaining £33,730: taxed at 24% = £8,095.20<br>
-Total CGT: £10,843.80</p>
+<p>First £27,840 of gain: taxed at 18% = £5,011.20<br>
+Remaining £21,160: taxed at 24% = £5,078.40<br>
+Total CGT: £10,089.60</p>
 
 <h3>Example 2: Higher Rate Taxpayer Selling a Second Home</h3>
 
@@ -139,14 +140,14 @@ Less annual allowance: £138,000 - £3,000 = £135,000 chargeable gain</p>
 
 <p>She must report and pay within 60 days of completion.</p>
 
-<h3>Example 3: Furnished Holiday Let Qualifying for BADR</h3>
+<h3>Example 3: Trading Business Property Qualifying for BADR</h3>
 
-<p>David owns a furnished holiday let in the Lake District. He sells it in September 2026 for £500,000. He bought it for £250,000. Costs total £15,000.</p>
+<p>David has run a small guesthouse in the Lake District as a sole trader for more than two years, employing two part-time staff. He sells the property in September 2026 for £500,000. He bought it for £250,000. Costs total £15,000.</p>
 
 <p>Gain: £500,000 - £250,000 - £15,000 = £235,000<br>
 Less annual allowance: £235,000 - £3,000 = £232,000 chargeable gain</p>
 
-<p>David has not used any BADR before. The entire gain qualifies for BADR at 18% (from April 2026).</p>
+<p>David has not used any BADR before. The entire gain qualifies for BADR at 18% (from April 2026) because the property was used as an asset of a genuine trading business and David has met the two-year qualifying period as owner-operator.</p>
 
 <p>CGT: £232,000 x 18% = £41,760. Without BADR, it would have been £55,680 at 24%. Saving: £13,920.</p>
 
@@ -159,7 +160,7 @@ Less annual allowance: £235,000 - £3,000 = £232,000 chargeable gain</p>
 <li><strong>Transfer to a spouse:</strong> Transfers between spouses are tax-free. If your spouse has unused basic rate band or annual allowance, transferring part ownership before sale can reduce the overall tax.</li>
 <li><strong>Claim all allowable costs:</strong> Purchase costs, sale costs, stamp duty, legal fees, estate agent fees, and capital improvements (not repairs) reduce the gain.</li>
 <li><strong>Check for PPR relief:</strong> If you ever lived in the property, you may have partial relief.</li>
-<li><strong>Consider BADR:</strong> If the property qualifies as a furnished holiday let or business asset, BADR may apply.</li>
+<li><strong>Consider BADR:</strong> If the property qualifies as a genuine business asset used in a trading business, BADR may apply at 18% from April 2026. Note that the furnished holiday letting regime was abolished from 6 April 2025 and no longer provides a BADR route.</li>
 </ul>
 
 <p>If you are a limited company director selling a property held in the company, different rules apply. Company property sales are subject to corporation tax (19% to 25%), not CGT. The <a href="/blog/exit-and-capital-gains">exit and capital gains</a> section of our blog covers company property sales in detail.</p>
@@ -174,6 +175,6 @@ Less annual allowance: £235,000 - £3,000 = £232,000 chargeable gain</p>
 
 <p>If you are selling a residential property that is not your main home, speak to a qualified accountant before completion. The 60-day window is tight. Getting the calculation wrong or missing the deadline can be costly.</p>
 
-<p>Our <a href="/services">ICAEW qualified team</a> at Holloway Davies handles property CGT calculations, BADR claims, and 60-day reporting for clients across the UK. We work with landlords, property investors, and business owners selling property assets.</p>
+<p>Our <a href="/services">specialist team</a> at Holloway Davies handles property CGT calculations, BADR claims, and 60-day reporting for clients across the UK. We work with landlords, property investors, and business owners selling property assets.</p>
 
 <p>If your sale completes within the next 60 days, <a href="/contact">contact us</a> immediately so we can prepare the report and payment on time.</p>

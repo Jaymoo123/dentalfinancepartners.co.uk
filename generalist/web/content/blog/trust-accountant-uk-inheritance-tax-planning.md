@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
 metaTitle: "Trust Accountant UK: Do You Need One for IHT Planning?"
-metaDescription: "Trusts can save Inheritance Tax but the rules are complex. Our ICAEW qualified trust accountants explain when you need specialist advice and what it costs."
+metaDescription: "Trusts can save Inheritance Tax but the rules are complex. Our specialist trust accountants explain when you need specialist advice and what it costs."
 altText: "Professional trust accountant reviewing inheritance tax documents with a UK business owner in a modern office in Manchester city centre."
 image: "/blog/trust-accountant-uk-inheritance-tax-planning.jpg"
 imageCredit:
@@ -26,7 +26,7 @@ faqs:
   - question: "Can I save IHT by putting my business shares into a trust?"
     answer: "Possibly, but it depends on the type of trust and whether Business Property Relief (BPR) applies. If the shares qualify for 100% BPR and the trust is structured correctly, the shares can be outside your estate immediately with no IHT. But the trust must meet specific conditions. Get specialist advice before transferring any shares. The wrong structure can lose the relief."
   - question: "What happens if I miss the trust registration deadline?"
-    answer: "HMRC can issue penalties starting at £5,000 for late or incorrect trust registration. Interest also accrues on any unpaid tax. If you realise you have missed a deadline, contact HMRC or your accountant immediately. A voluntary disclosure can reduce penalties compared to waiting for HMRC to write to you."
+    answer: "HMRC can issue late-registration penalties starting at £100 for minor or first-time failures, rising to up to £5,000 for serious or deliberate non-compliance. Interest also accrues on any unpaid tax. If you realise you have missed a deadline, contact HMRC or your accountant immediately. A voluntary disclosure can reduce penalties compared to waiting for HMRC to write to you."
 ---
 
 <h2>What Is a Trust Accountant and When Do You Need One?</h2>
@@ -35,7 +35,7 @@ faqs:
 
 <p>You typically need a <strong>trust accountant UK</strong> when you are setting up a trust, have inherited one, or are considering transferring assets into a trust to reduce your IHT bill. The rules are specific and the penalties for getting them wrong are significant. A single missed filing deadline can cost thousands.</p>
 
-<p>As ICAEW qualified accountants, we deal with trust matters regularly. Most business owners do not need a trust until their personal wealth or business value pushes them close to the IHT threshold. That threshold is currently £325,000 (the nil rate band), plus an additional £175,000 residence nil rate band if you pass your main home to direct descendants. That gives a married couple or civil partners up to £1m before IHT applies. But many business owners exceed that without realising it.</p>
+<p>As specialist accountants, we deal with trust matters regularly. Most business owners do not need a trust until their personal wealth or business value pushes them close to the IHT threshold. That threshold is currently £325,000 (the nil rate band), plus an additional £175,000 residence nil rate band if you pass your main home to direct descendants. That gives a married couple or civil partners up to £1m before IHT applies. But many business owners exceed that without realising it.</p>
 
 <h2>Why Trusts Matter for UK Business Owners</h2>
 
@@ -50,8 +50,8 @@ faqs:
 <p>A trust accountant's role goes beyond filing a tax return once a year. Here is what you can expect:</p>
 
 <ul>
-<li><strong>Trust registration.</strong> Most trusts must be registered with HMRC's Trust Registration Service (TRS) within 90 days of creation. Non-UK trusts and certain non-taxable trusts also need registering. The penalties for late registration start at £5,000.</li>
-<li><strong>SA900 trust tax return.</strong> Trusts pay income tax at special rates: 8.75% on dividend income (basic rate band), 39.35% on other income above £1,000. The trust tax return is more complex than a personal self assessment. It requires a full income statement, a statement of trust capital, and details of beneficiary entitlements.</li>
+<li><strong>Trust registration.</strong> Most trusts must be registered with HMRC's Trust Registration Service (TRS) within 90 days of creation. Non-UK trusts and certain non-taxable trusts also need registering. Late registration penalties start at £100 for minor or first-time failures and can reach up to £5,000 for serious or deliberate non-compliance.</li>
+<li><strong>SA900 trust tax return.</strong> Trusts pay income tax at special rates: 10.75% on dividend income within the £1,000 standard rate band (2026/27 rate), 45% on non-dividend income above £1,000 (the trust rate), and 39.35% on dividend income above £1,000 (the dividend trust rate). The trust tax return is more complex than a personal self assessment. It requires a full income statement, a statement of trust capital, and details of beneficiary entitlements.</li>
 <li><strong>IHT periodic and exit charges.</strong> Discretionary trusts face an IHT charge every ten years (the periodic charge) and when capital leaves the trust (the exit charge). Calculating these requires understanding the relevant property regime, the nil rate band available at the trust's creation, and the value of the trust fund at each chargeable event.</li>
 <li><strong>Capital gains tax planning.</strong> Transfers into and out of trusts can trigger CGT. Trustees have their own annual exempt amount (half the individual allowance, currently £1,500 for 2025/26). A trust accountant ensures disposals are timed to use this allowance and that holdover relief is claimed where available.</li>
 <li><strong>Advising on trust structure.</strong> Should you use a bare trust, an interest in possession trust, or a discretionary trust? Each has different tax treatment. A bare trust is simplest but the beneficiary has immediate entitlement. A discretionary trust gives maximum flexibility but attracts the highest tax charges. Your accountant will model the numbers for your specific situation.</li>
@@ -99,7 +99,7 @@ faqs:
 <li><strong>Transparent pricing.</strong> Ask for a fixed fee for the annual compliance work. Avoid hourly billing for routine trust administration. You want to know the cost upfront.</li>
 </ul>
 
-<p>At Holloway Davies, our ICAEW qualified team handles trust compliance and IHT planning for business owners across the UK. We work with your solicitor to get the structure right from the start. <a href="/services">You can see our full range of services here</a>.</p>
+<p>At Holloway Davies, our experienced team handles trust compliance and IHT planning for business owners across the UK. We work with your solicitor to get the structure right from the start. <a href="/services">You can see our full range of services here</a>.</p>
 
 <h2>Next Steps: Do You Need a Trust?</h2>
 

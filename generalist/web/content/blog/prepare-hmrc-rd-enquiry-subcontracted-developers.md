@@ -45,7 +45,7 @@ faqs:
 <li><strong>Inflated or duplicated costs.</strong> HMRC checks whether the same costs appear in both your R&D claim and your subcontractor's claim. This is a common compliance issue.</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we see these patterns regularly. A well-prepared file reduces the chance of a full enquiry and improves your position if one opens.</p>
+<p>We see these patterns regularly. A well-prepared file reduces the chance of a full enquiry and improves your position if one opens.</p>
 
 <h2>What HMRC Will Ask About Subcontracted Developers</h2>
 
@@ -58,7 +58,7 @@ faqs:
 <p>They will ask for invoices, payment records, and the methodology used to identify qualifying costs. If you used a percentage allocation, they will want to see the basis for that percentage. A flat 50% allocation without supporting analysis will not hold up.</p>
 
 <h3>Was The Subcontractor Connected To Your Company?</h3>
-<p>Connected parties change the rules. If the subcontractor is a connected company (same director, family member, or shared ownership), HMRC applies different cost limits. For connected subcontractors, only 65% of the qualifying cost is eligible, and you must have a written contract in place before the work started.</p>
+<p>Connected parties change the rules. If the subcontractor is a connected company (same director, family member, or shared ownership), HMRC applies different cost limits. For connected subcontractors, the eligible cost is the lower of the amount you paid and the relevant R&D expenditure actually incurred by the connected company. There is no percentage cap for connected parties. For unconnected (third-party) subcontractors under the old SME scheme, 65% of the amount paid was eligible. In either case, you must have a written contract in place before the work started.</p>
 
 <h3>Did The Subcontractor Claim R&D Relief On The Same Costs?</h3>
 <p>HMRC cross-checks claims. If your subcontractor also submitted an R&D claim that includes the same staff costs you are claiming, both claims will be reviewed. Double claiming is not allowed.</p>
@@ -111,7 +111,7 @@ faqs:
 <li><strong>Inconsistent narratives.</strong> If your technical narrative says the subcontractor solved a specific technical problem but the contract describes routine development, HMRC will flag the inconsistency.</li>
 <li><strong>Claiming costs twice.</strong> If your subcontractor also claims R&D relief on the same staff costs, both claims are invalid for those amounts.</li>
 <li><strong>No evidence of direction.</strong> HMRC expects your company to direct and control the R&D work. If the subcontractor worked autonomously, the costs may not qualify.</li>
-<li><strong>Overclaiming connected party costs.</strong> For connected subcontractors, the qualifying cost is capped at 65% of the subcontractor's relevant expenditure. Many claims get this wrong.</li>
+<li><strong>Overclaiming connected party costs.</strong> For connected subcontractors, the qualifying cost is the lower of the amount paid and the relevant R&D expenditure the connected company actually incurred. There is no 65% percentage cap for connected parties. That 65% cap applied to unconnected (third-party) subcontractors under the old SME scheme. Many claims get this wrong by applying the cap to the wrong category.</li>
 </ul>
 
 <h2>What Happens If HMRC Rejects Your Claim</h2>
@@ -136,7 +136,7 @@ faqs:
 <li><strong>Use a qualified accountant</strong> who specialises in R&D claims. DIY claims are much more likely to be selected for review.</li>
 <li><strong>Keep contemporaneous records.</strong> Write up technical narratives while the project is fresh. Do not reconstruct them months later.</li>
 <li><strong>Be precise about subcontractor costs.</strong> Only include costs that directly relate to qualifying R&D activities. Do not inflate figures.</li>
-<li><strong>Check connected party rules.</strong> If you use a connected subcontractor, ensure the contract is in place before work starts and that you understand the 65% cap.</li>
+<li><strong>Check connected party rules.</strong> If you use a connected subcontractor, ensure the contract is in place before work starts and apply the correct rule: the eligible cost is the lower of the amount paid and the connected company's own relevant R&D expenditure. The 65% cap does not apply to connected parties; it applied to unconnected (third-party) subcontractors under the old SME scheme.</li>
 <li><strong>Review your claim before submission.</strong> Have someone independent check the numbers and the narrative for consistency.</li>
 </ul>
 

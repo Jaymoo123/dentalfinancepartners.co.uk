@@ -7,7 +7,7 @@ author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Small Business Accountant UK: The Definitive 2025 Guide"
 metaDescription: "How to find, choose, and work with a small business accountant in the UK. Covers costs, services, compliance, and what to expect. For directors"
-altText: "Two business owners reviewing financial reports with their ICAEW-qualified accountant in a modern Manchester office"
+altText: "Two business owners reviewing financial reports with their accountant in a modern Manchester office"
 image: "/blog/small-business-accountant-guide.jpg"
 imageCredit:
   photographer: "Anete Lusina"
@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/person-choosing-document-in-folder-4792285/"
   source: "Pexels"
 h1: "The Definitive Guide to Choosing and Working with a Small Business Accountant"
-summary: "Choosing the right small business accountant is one of the most important decisions you'll make as a business owner. This guide covers everything from what an accountant actually does for a limited company versus a sole trader, to how much you should expect to pay, what software they should use, and how to spot a good one before you sign. Written by ICAEW-qualified accountants for UK business owners."
+summary: "Choosing the right small business accountant is one of the most important decisions you'll make as a business owner. This guide covers everything from what an accountant actually does for a limited company versus a sole trader, to how much you should expect to pay, what software they should use, and how to spot a good one before you sign. Written by our specialist accountants for UK business owners."
 schema: ""
 faqs:
   - question: "How much does a small business accountant cost in the UK?"
@@ -30,7 +30,7 @@ faqs:
 
 <p>If you run a limited company, work as a contractor through your own Ltd, trade as a sole trader, or run a partnership with a business partner, you need a <strong>small business accountant</strong> who understands your specific situation. Not a general practice that files a few tax returns alongside wills and probate. Not a bookkeeper who can't advise on corporation tax planning. You need a qualified accountant who works with businesses like yours every day.</p>
 
-<p>This guide is for UK business owners who want to understand exactly what a small business accountant does, how much it costs, what to look for when choosing one, and how to get the most out of the relationship. We are ICAEW-qualified accountants. We work with limited companies, contractors, sole traders, partnerships, and small businesses across every sector. This is the guide we wish every business owner read before they hired anyone.</p>
+<p>This guide is for UK business owners who want to understand exactly what a small business accountant does, how much it costs, what to look for when choosing one, and how to get the most out of the relationship. We work with limited companies, contractors, sole traders, partnerships, and small businesses across every sector. This is the guide we wish every business owner read before they hired anyone.</p>
 
 <h2>What Does a Small Business Accountant Actually Do?</h2>
 
@@ -65,7 +65,7 @@ faqs:
 <p>Here is what to look for:</p>
 
 <h3>Qualification and Regulation</h3>
-<p>The main UK accountancy bodies are ICAEW (Institute of Chartered Accountants in England and Wales), ACCA (Association of Chartered Certified Accountants), ICAS (Scotland), and AAT (Association of Accounting Technicians). ICAEW and ACCA are the gold standards for practice. AAT is a technical qualification, fine for bookkeeping but not sufficient for complex tax advice. Always check that the firm is regulated by one of these bodies. <a href="/about">We are ICAEW-qualified accountants</a>, and we take that responsibility seriously.</p>
+<p>The main UK accountancy bodies are ICAEW (Institute of Chartered Accountants in England and Wales), ACCA (Association of Chartered Certified Accountants), ICAS (Scotland), and AAT (Association of Accounting Technicians). ICAEW and ACCA are the gold standards for practice. AAT is a technical qualification, fine for bookkeeping but not sufficient for complex tax advice. Always check that the firm is regulated by one of these bodies. <a href="/about">We hold ourselves to those professional standards</a>, and take that responsibility seriously.</p>
 
 <h3>Industry Experience</h3>
 <p>A good small business accountant should have experience with businesses like yours. If you are a contractor in IT, look for an accountant who understands IR35, the off-payroll working rules, and the intricacies of a personal service company. If you run a retail business in Camden, look for someone who understands stock valuation, margin analysis, and the VAT implications of imports. If you are a sole trader electrician in Leeds, look for someone who knows the CIS scheme inside out.</p>

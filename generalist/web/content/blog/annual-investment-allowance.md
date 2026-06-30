@@ -48,7 +48,7 @@ imageCredit:
 <ul>
 <li>You can claim 100% relief on qualifying expenditure up to £1m per 12-month accounting period.</li>
 <li>If your accounting period is shorter than 12 months, the limit is proportionally reduced. A 6-month period gives you a £500,000 limit.</li>
-<li>If you buy assets that cost more than £1m, the excess goes into the main pool and attracts writing down allowances at 18% per year (or 6% for special rate assets).</li>
+<li>If you buy assets that cost more than £1m, the excess goes into the main pool and attracts writing down allowances: main-rate pool 18% per year for periods ending before 1 April 2026 (CT) / 6 April 2026 (IT), reducing to 14% from those dates (FA 2026 s.28); special rate pool stays at 6%.</li>
 </ul>
 
 <p>Example: A software consultancy in Shoreditch buys new servers and office equipment costing £180,000 in the 2025/26 tax year. The full £180,000 qualifies for AIA. The company deducts the entire amount from its taxable profits, saving corporation tax at 19% or 25% depending on profit level. At 25% corporation tax, that is a £45,000 tax saving in year one.</p>
@@ -91,7 +91,7 @@ imageCredit:
 
 <p>If you use accounting software like Xero, FreeAgent, or QuickBooks, your accountant can prepare the capital allowances schedule as part of your year-end accounts. Most accountants will ask you for a list of asset purchases during the year and then calculate the AIA claim.</p>
 
-<p>Our <a href="/services">ICAEW qualified team at Holloway Davies</a> handles AIA claims as part of our standard corporation tax and self-assessment services. We review your asset purchases, identify qualifying items, and ensure you claim the maximum relief available.</p>
+<p>Our <a href="/services">experienced team at Holloway Davies</a> handles AIA claims as part of our standard corporation tax and self-assessment services. We review your asset purchases, identify qualifying items, and ensure you claim the maximum relief available.</p>
 
 <h2>AIA and the Corporation Tax Rates</h2>
 
@@ -117,13 +117,15 @@ imageCredit:
 
 <p>In practice, most businesses use the AIA first because it covers both main rate and special rate assets. Full Expensing only covers main rate assets. If you spend £1.2m on main rate assets, you use the AIA for the first £1m and Full Expensing for the remaining £200,000.</p>
 
-<p>For sole traders and partnerships, the AIA is the only 100% relief option. Full Expensing is not available to them.</p>
+<p>From 1 January 2026, a further option is available to companies: a 40% first-year allowance on new and unused main-rate plant and machinery, introduced by FA 2026 s.29. This sits alongside AIA and Full Expensing as a third first-year relief route for companies, and may be useful where AIA headroom is already used and Full Expensing is unavailable on a particular asset category.</p>
+
+<p>For sole traders and partnerships, the AIA is the only 100% relief option. Full Expensing and the 40% first-year allowance are not available to them.</p>
 
 <h2>Planning Your Capital Expenditure Around the AIA</h2>
 
-<p>If you are planning significant capital expenditure, timing matters. The AIA limit resets at the start of each accounting period. If you are close to the £1m limit in one period, you might delay some purchases to the next period to stay within the limit and avoid the 18% writing down allowance on excess spend.</p>
+<p>If you are planning significant capital expenditure, timing matters. The AIA limit resets at the start of each accounting period. If you are close to the £1m limit in one period, you might delay some purchases to the next period to stay within the limit and avoid the 14% writing down allowance on excess spend (14% applies from 1 April 2026 for CT / 6 April 2026 for IT under FA 2026 s.28; 18% applied before those dates).</p>
 
-<p>Example: A manufacturing company in Leeds has already spent £950,000 on qualifying assets in the current year. It plans to buy another £200,000 of equipment. If it buys now, only £50,000 qualifies for AIA. The remaining £150,000 goes into the main pool at 18% writing down allowance. If it delays the purchase by two weeks to the start of the next accounting period, the full £200,000 qualifies for AIA.</p>
+<p>Example: A manufacturing company in Leeds has already spent £950,000 on qualifying assets in the current year. It plans to buy another £200,000 of equipment. If it buys now, only £50,000 qualifies for AIA. The remaining £150,000 goes into the main pool at 14% writing down allowance (the main-rate WDA for periods from 1 April 2026 per FA 2026 s.28). If it delays the purchase by two weeks to the start of the next accounting period, the full £200,000 qualifies for AIA.</p>
 
 <p>This kind of planning is straightforward but requires you to track your capital spend throughout the year. We recommend keeping a running total of qualifying purchases so you know where you stand against the £1m limit.</p>
 

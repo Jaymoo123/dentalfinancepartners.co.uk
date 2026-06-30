@@ -30,7 +30,7 @@ faqs:
 
 <p>VAT is the tax UK business owners most often get wrong. Not because they are careless, but because the rules shift constantly, the deadlines are unforgiving, and the penalties for mistakes are now automatic under Making Tax Digital (MTD). Whether you are a limited company director in Shoreditch, a sole trader in the Jewellery Quarter in Birmingham, or a partnership operating from the Quayside in Newcastle, you need to understand how VAT affects your business, and when to bring in a <a href="/services">VAT accountant</a>.</p>
 
-<p>This guide is written for UK business owners who want the full picture. We cover compulsory and voluntary registration, every VAT scheme HMRC offers, the real cost of getting it wrong, and how MTD changes everything from April 2026. We are ICAEW qualified accountants who work with businesses of every shape across the UK. This is the page you will bookmark and come back to.</p>
+<p>This guide is written for UK business owners who want the full picture. We cover compulsory and voluntary registration, every VAT scheme HMRC offers, the real cost of getting it wrong, and how MTD changes everything from April 2026. We are specialist accountants who work with businesses of every shape across the UK. This is the page you will bookmark and come back to.</p>
 
 <h2>Do You Need a VAT Accountant?</h2>
 
@@ -226,7 +226,7 @@ faqs:
 
 <h3>Common Mistakes on VAT Returns</h3>
 
-<p>The most frequent errors we see as ICAEW qualified accountants:</p>
+<p>The most frequent errors we see:</p>
 
 <ul>
 <li>Claiming input VAT on entertaining clients (generally blocked)</li>
@@ -407,7 +407,7 @@ faqs:
 
 <h2>How We Can Help</h2>
 
-<p>We are ICAEW qualified accountants based in the UK. We work with limited companies, sole traders, and partnerships across every sector. Our VAT services include:</p>
+<p>We are specialist accountants based in the UK. We work with limited companies, sole traders, and partnerships across every sector. Our VAT services include:</p>
 
 <ul>
 <li>VAT registration (compulsory and voluntary)</li>

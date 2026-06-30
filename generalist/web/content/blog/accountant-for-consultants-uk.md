@@ -107,7 +107,7 @@ faqs:
 
 <p>Consultancy covers many sub-sectors: management consulting, IT consulting, engineering consulting, marketing consulting, financial consulting. Each has different expense patterns, contract structures, and tax issues. An accountant who works with IT contractors in Manchester may not be the best fit for a management consultant in Bristol. Look for someone who has worked with consultants in your specific field.</p>
 
-<p>At <a href="/about">Holloway Davies</a>, our ICAEW qualified team works with consultants across every sector. We see the patterns and know the pitfalls.</p>
+<p>At <a href="/about">Holloway Davies</a>, our experienced team works with consultants across every sector. We see the patterns and know the pitfalls.</p>
 
 <h2>Common Mistakes Consultants Make with Their Accounts</h2>
 
@@ -116,7 +116,7 @@ faqs:
 <ul>
 <li><strong>Mixing personal and business expenses.</strong> It is messy, it risks HMRC penalties, and it makes bookkeeping harder. Keep a separate business bank account and use it for everything business-related.</li>
 <li><strong>Ignoring the 24-month rule.</strong> Travel to a client site that lasts more than 24 months becomes a permanent workplace. Your travel costs stop being deductible. Your accountant should track this for you.</li>
-<li><strong>Taking too much dividend without planning.</strong> If your total income pushes you into higher rate tax, the dividend tax rate jumps from 8.75% to 33.75%. A little planning can save thousands.</li>
+<li><strong>Taking too much dividend without planning.</strong> If your total income pushes you into higher rate tax, the dividend tax rate jumps from 10.75% to 35.75% (2026/27 rates; 8.75% to 33.75% in 2025/26). A little planning can save thousands.</li>
 <li><strong>Failing to register for VAT on time.</strong> If your turnover crosses £90,000 and you do not register within 30 days, HMRC can charge penalties. Your accountant should monitor your rolling turnover.</li>
 <li><strong>Not reviewing contracts for IR35.</strong> A contract that looks outside IR35 on paper might still be caught if your working practices suggest employment. A proper review covers both.</li>
 </ul>

@@ -35,7 +35,7 @@ faqs:
 
 <p>For UK businesses, an HR accountant is often the person who makes sure your payroll runs correctly, your employees are paid on time, and HMRC receives the right tax and NI. They also handle the paperwork that comes with hiring, paying, and sometimes letting people go.</p>
 
-<p>Most small and growing businesses do not need a full-time HR accountant. They use an external firm like Holloway Davies, who are ICAEW qualified and handle payroll and employment tax as part of a broader service. That is the typical arrangement for a limited company with 1 to 50 employees.</p>
+<p>Most small and growing businesses do not need a full-time HR accountant. They use an external firm like Holloway Davies, who handle payroll and employment tax as part of a broader service. That is the typical arrangement for a limited company with 1 to 50 employees.</p>
 
 <h2>What HR Accountants Actually Do: The Full List</h2>
 
@@ -45,13 +45,13 @@ faqs:
 
 <p>This is the core function. The HR accountant runs your payroll each month or each week. They calculate gross pay, deductions for tax and NI, student loan repayments, pension contributions, and net pay. They produce payslips and the FPS (Full Payment Submission) that goes to HMRC each time you run payroll.</p>
 
-<p>They also handle the year-end tasks: issuing P60s to employees, submitting the P35 (employer annual return) if needed, and reconciling the payroll with HMRC records.</p>
+<p>They also handle the year-end tasks: issuing P60s to employees by 31 May, submitting any outstanding Employer Payment Summary (EPS) to reconcile the payroll with HMRC records, and preparing P11Ds for benefits.</p>
 
 <p>For a contractor working through their own limited company, the HR accountant might process a single director salary each month. For a growing business with 20 staff, they handle variable hours, overtime, commission, and statutory payments like sick pay and maternity pay.</p>
 
 <h3>PAYE and National Insurance Compliance</h3>
 
-<p>Every employer must operate PAYE (Pay As You Earn). The HR accountant ensures you deduct the correct income tax and National Insurance from each employee. They also calculate the employer's NI contribution (currently 13.8% above the secondary threshold of £9,100 for 2025/26).</p>
+<p>Every employer must operate PAYE (Pay As You Earn). The HR accountant ensures you deduct the correct income tax and National Insurance from each employee. They also calculate the employer's NI contribution (currently 15% above the secondary threshold of £5,000 per year, from 6 April 2025).</p>
 
 <p>They handle the tricky bits too: the Employment Allowance (up to £10,500 if eligible), the NIC holiday for certain groups, and the annual reconciliation that HMRC calls an Employer Payment Summary (EPS).</p>
 
@@ -169,7 +169,7 @@ faqs:
 <li><strong>Responsive.</strong> Payroll has deadlines. Your accountant should reply quickly when something goes wrong.</li>
 </ul>
 
-<p>At <a href="/about">Holloway Davies</a>, our ICAEW qualified team handles payroll and employment tax for limited companies, contractors, and sole traders across every sector. We use Xero and FreeAgent for payroll, and we include payroll as part of our core service for most clients.</p>
+<p>At <a href="/about">Holloway Davies</a>, our experienced team handles payroll and employment tax for limited companies, contractors, and sole traders across every sector. We use Xero and FreeAgent for payroll, and we include payroll as part of our core service for most clients.</p>
 
 <p>If you are not sure whether you need an HR accountant, <a href="/contact">contact us</a>. We will look at your current setup and tell you what is missing.</p>
 

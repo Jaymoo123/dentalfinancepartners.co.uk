@@ -136,7 +136,7 @@ faqs:
 
 <h3>Investors' Relief</h3>
 
-<p>Investors' Relief applies to shares in unlisted trading companies that were subscribed for (not bought from another shareholder). The rate for 2025/26 is 14%, matching BADR. The lifetime limit is £10 million.</p>
+<p>Investors' Relief applies to shares in unlisted trading companies that were subscribed for (not bought from another shareholder). The rate for 2025/26 is 14%, matching BADR. The lifetime limit is £1 million (reduced from £10 million for disposals on or after 30 October 2024).</p>
 
 <p>This is relevant for angel investors and early-stage shareholders who subscribed for shares in a company. The shares must have been held for at least 3 years from 6 April 2016 (or from the date of issue if later).</p>
 
@@ -212,6 +212,6 @@ faqs:
 
 <p>If your gain is large, or the disposal is complex (multiple assets, partial disposals, or associated companies), speak to a qualified accountant before completing the sale. The tax treatment of a disposal is determined on the date of completion, not the date you agree the price.</p>
 
-<p>At Holloway Davies, we are <a href="/about">ICAEW qualified</a> and work with business owners across every sector. If you are considering a sale and want to understand your CGT position, <a href="/contact">get in touch</a>. We can model the tax bill under different scenarios and help you plan the most tax-efficient route.</p>
+<p>At Holloway Davies, we are specialist accountants and work with business owners across every sector. If you are considering a sale and want to understand your CGT position, <a href="/contact">get in touch</a>. We can model the tax bill under different scenarios and help you plan the most tax-efficient route.</p>
 
 <p>For more on related topics, see our guides on <a href="/blog/exit-and-capital-gains">exit and capital gains planning</a> and <a href="/blog/director-pay-and-dividends">director pay and dividends</a>.</p>

@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { GUIDES } from "./[slug]/data";
 
 export const metadata: Metadata = {
-  title: `Free Guides | ${siteConfig.name}`,
+  title: `Free Guides`,
   description:
     "Free in-depth guides for UK business owners. Year-end tax checklist, switching accountants playbook, first 90 days post-incorporation, contractor playbook.",
   alternates: { canonical: `${siteConfig.url}/guides` },

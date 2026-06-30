@@ -65,9 +65,9 @@ export default async function GuideLandingPage({ params }: Props) {
               <ul className="space-y-3 text-base text-slate-700">
                 {[
                   "Specific actionable steps with deadlines",
-                  "2025/26 UK tax figures throughout",
+                  "2026/27 UK tax figures throughout",
                   "Real software, HMRC form references, and worked examples",
-                  "Written by ICAEW qualified accountants",
+                  "Written by our specialist accountants",
                   "Free, no obligation, no follow-up sales calls",
                 ].map((b) => (
                   <li key={b} className="flex items-start gap-3">

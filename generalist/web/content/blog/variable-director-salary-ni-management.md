@@ -22,7 +22,7 @@ faqs:
   - question: "Can I pay myself a director salary of £0 for six months and then catch up?"
     answer: "Yes, because directors use an annual earnings period for NI. HMRC calculates NI on your total salary for the tax year, not on each payslip. You could pay nothing for six months and then pay the full £12,570 in the remaining months, and the NI calculation will be the same as if you spread it evenly. Just remember to submit an RTI return on or before each payment date."
   - question: "Does varying my director salary affect my State Pension?"
-    answer: "It can. To build a qualifying year towards the State Pension, you need to earn at least £6,815 (2025/26 figure, the Lower Earnings Limit) in that tax year. If your variable salary keeps your total below that threshold, you will not get a qualifying year. If you plan to vary your salary, ensure your annual total stays above the Lower Earnings Limit if State Pension contributions matter to you."
+    answer: "It can. To build a qualifying year towards the State Pension, you need to earn at least £6,500 (2025/26 Lower Earnings Limit) in that tax year. If your variable salary keeps your total below that threshold, you will not get a qualifying year. If you plan to vary your salary, ensure your annual total stays above the Lower Earnings Limit if State Pension contributions matter to you."
   - question: "What happens if I pay myself a large salary in one month and trigger employer NI above the Employment Allowance cap?"
     answer: "The Employment Allowance covers employer NI up to £10,500 per tax year. If a single month's salary pushes your cumulative employer NI above that cap, the excess is payable. For a single director on a £12,570 salary, this is unlikely. But if you have other employees or pay yourself a higher salary in one month, check the cumulative employer NI figure before processing the payment."
   - question: "Can I use variable director salary NI management if my company has other employees?"
@@ -47,13 +47,13 @@ faqs:
 
 <h2>The Optimal Director Salary for 2025/26</h2>
 
-<p>For most limited company directors, the most tax-efficient salary is set at or just below the <strong>primary threshold</strong> for employee NI (£12,570 for 2025/26) and the <strong>secondary threshold</strong> for employer NI (£9,100 for 2025/26).</p>
+<p>For most limited company directors, the most tax-efficient salary is set at or just below the <strong>primary threshold</strong> for employee NI (£12,570 for 2025/26) and the <strong>secondary threshold</strong> for employer NI (£5,000 for 2025/26).</p>
 
-<p>Here is why those numbers matter. Employee NI at 8% kicks in above £12,570. Employer NI at 13.8% kicks in above £9,100. If you set your salary at £12,570 per year, you pay no employee NI. You do pay employer NI on the amount above £9,100, which is £3,470 at 13.8% = £479. But if your company qualifies for the <strong>Employment Allowance</strong> (up to £10,500 in 2025/26), that employer NI is covered by the allowance. The net result is zero NI cost on a £12,570 salary.</p>
+<p>Here is why those numbers matter. Employee NI at 8% kicks in above £12,570. Employer NI at 15% kicks in above £5,000 (from 6 April 2025). If you set your salary at £12,570 per year, you pay no employee NI. You do pay employer NI on the amount above £5,000, which is £7,570 at 15% = £1,135.50. But if your company qualifies for the <strong>Employment Allowance</strong> (up to £10,500 in 2025/26), that employer NI is covered by the allowance. The net result is zero NI cost on a £12,570 salary.</p>
 
 <p>The qualification point matters: a company whose only employee paid above the NI secondary threshold is also a director is excluded from the Employment Allowance. So a true one-person company cannot claim it. The allowance is available once there is at least one other employee (or a second director) paid above the threshold. Where the company does qualify, it must claim through its RTI payroll submission. Many eligible companies miss this claim. Do not be one of them.</p>
 
-<p>If your company does not qualify for Employment Allowance (the common case for a sole director with no other staff), the maths still favours a £12,570 salary. The £479 employer NI is a small price to pay for building a qualifying year towards the State Pension and keeping your salary within the personal allowance.</p>
+<p>If your company does not qualify for Employment Allowance (the common case for a sole director with no other staff), the maths still favours a £12,570 salary. The £1,135.50 employer NI is a small price to pay for building a qualifying year towards the State Pension and keeping your salary within the personal allowance.</p>
 
 <h2>Can You Vary the Monthly Amount?</h2>
 
@@ -69,7 +69,7 @@ faqs:
 
 <p>There are three common pitfalls.</p>
 
-<p><strong>First: the employer NI threshold is not annualised for all purposes.</strong> While the annual earnings period applies to the NI calculation itself, the secondary threshold (£9,100) is still tested on a cumulative basis within the year. If you pay a large salary in one month that pushes cumulative earnings above £9,100, employer NI is due on the excess in that month. You cannot defer employer NI to the year-end. The payroll software will calculate this automatically, but you need to understand that employer NI can crystallise earlier in the year than you expect.</p>
+<p><strong>First: the employer NI threshold is not annualised for all purposes.</strong> While the annual earnings period applies to the NI calculation itself, the secondary threshold (£5,000) is still tested on a cumulative basis within the year. If you pay a large salary in one month that pushes cumulative earnings above £5,000, employer NI is due on the excess in that month. You cannot defer employer NI to the year-end. The payroll software will calculate this automatically, but you need to understand that employer NI can crystallise earlier in the year than you expect.</p>
 
 <p><strong>Second: the Employment Allowance cap.</strong> If your company claims Employment Allowance, it covers employer NI on the first £10,500 of employer NI liability. If your variable salary pattern pushes employer NI above that cap in a single month, the excess is payable. This is unusual for a single director on a £12,570 salary, but if you pay yourself a higher salary in some months (say £5,000 in one month), the employer NI on that month could exceed the allowance cap if you have other employees.</p>
 
@@ -77,9 +77,9 @@ faqs:
 
 <h2>What About Salary Above the Primary Threshold?</h2>
 
-<p>Some directors consider paying themselves a salary above £12,570 to maximise pension contributions or to use up the basic rate band. If you do this, employee NI at 8% applies above £12,570 and employer NI at 13.8% applies above £9,100. The variable approach still works for NI purposes, but the benefit of variable director salary NI management diminishes as the salary increases because the NI liability becomes unavoidable regardless of timing.</p>
+<p>Some directors consider paying themselves a salary above £12,570 to maximise pension contributions or to use up the basic rate band. If you do this, employee NI at 8% applies above £12,570 and employer NI at 15% applies above £5,000. The variable approach still works for NI purposes, but the benefit of variable director salary NI management diminishes as the salary increases because the NI liability becomes unavoidable regardless of timing.</p>
 
-<p>For example, a director paying themselves a £50,270 salary (top of basic rate band) will pay employee NI of 8% on £37,700 and employer NI of 13.8% on £41,170. That is £3,016 employee NI and £5,681 employer NI, totalling £8,697. No amount of variable timing will reduce that figure. The annual earnings period means the NI is calculated on the total, but the liability is the same whether you pay it monthly or in a lump sum.</p>
+<p>For example, a director paying themselves a £50,270 salary (top of basic rate band) will pay employee NI of 8% on £37,700 and employer NI of 15% on £45,270 (£50,270 minus the £5,000 secondary threshold). That is £3,016 employee NI and £6,790.50 employer NI, totalling £9,806.50. No amount of variable timing will reduce that figure. The annual earnings period means the NI is calculated on the total, but the liability is the same whether you pay it monthly or in a lump sum.</p>
 
 <p>Variable timing helps with cash flow, not with reducing the total NI bill at higher salary levels.</p>
 
@@ -108,7 +108,7 @@ faqs:
 
 <h2>What About Sole Traders and Partnerships?</h2>
 
-<p>Sole traders and partners cannot use this strategy. They are not employees of their own business. Their National Insurance is calculated on annual trading profits through self assessment, not through payroll. Class 2 NIC (if applicable) and Class 4 NIC are based on profit, not on a variable salary. The variable director salary NI management approach is specific to limited company directors.</p>
+<p>Sole traders and partners cannot use this strategy. They are not employees of their own business. Their National Insurance is calculated on annual trading profits through self assessment, not through payroll. Class 4 NIC is based on profit (Class 2 NIC was abolished from 6 April 2024), not on a variable salary. The variable director salary NI management approach is specific to limited company directors.</p>
 
 <p>If you are a sole trader considering incorporation, the ability to manage your salary and dividends is one of the main advantages. Our <a href="/incorporation">incorporation</a> page covers the process and the tax implications.</p>
 
@@ -116,4 +116,4 @@ faqs:
 
 <p>Variable director salary NI management is a legitimate strategy for limited company directors who want to align their salary payments with cash flow. The annual earnings period gives you flexibility that regular employees do not have. But the strategy works best at lower salary levels where NI is minimal or covered by Employment Allowance. At higher salary levels, the timing of payments has little effect on the total NI bill.</p>
 
-<p>If you are a director in Manchester, Bristol, or anywhere in the UK, and you want to review your current salary structure, we can help. Our ICAEW qualified team works with directors across every sector. <a href="/contact">Contact us</a> to arrange a review of your payroll and director remuneration strategy.</p>
+<p>If you are a director in Manchester, Bristol, or anywhere in the UK, and you want to review your current salary structure, we can help. Our experienced team works with directors across every sector. <a href="/contact">Contact us</a> to arrange a review of your payroll and director remuneration strategy.</p>

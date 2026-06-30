@@ -35,7 +35,7 @@ faqs:
 
 <p>A general accountant might miss the distinction between rental income and trading income. That distinction determines which reliefs you can claim, how you report your income, and how much tax you pay. An <strong>accountant for Airbnb hosts</strong> understands this boundary and can structure your affairs to keep more of your earnings.</p>
 
-<p>At Holloway Davies, we are ICAEW qualified accountants who work with Airbnb hosts across the UK, from a single-room let in a Manchester city centre flat to a portfolio of holiday cottages in the Lake District. This guide explains the tax rules you need to know and the exact point at which you should get professional help.</p>
+<p>At Holloway Davies, we work with Airbnb hosts across the UK, from a single-room let in a Manchester city centre flat to a portfolio of holiday cottages in the Lake District. This guide explains the tax rules you need to know and the exact point at which you should get professional help.</p>
 
 <h2>Is Your Airbnb Income Rental or Trading?</h2>
 
@@ -47,26 +47,22 @@ faqs:
 
 <p>Most standard Airbnb lets fall into the rental income category. If you offer a serviced apartment with daily cleaning and breakfast, you are likely trading. If you are unsure, HMRC has guidance on the distinction, but the safest route is to speak to an <strong>accountant for Airbnb hosts</strong> who can review your specific setup.</p>
 
-<h2>Furnished Holiday Lettings (FHL) Rules</h2>
+<h2>Furnished Holiday Lettings (FHL): Abolished from April 2025</h2>
 
-<p>If your property qualifies as a Furnished Holiday Letting (FHL), you get significant tax advantages. The rules are strict. To qualify for 2025/26, your property must:</p>
+<p>The Furnished Holiday Letting (FHL) tax regime was abolished from 6 April 2025. No property can qualify as an FHL for 2025/26 onward. All Airbnb lets are now taxed as ordinary residential property businesses. The information below is historical context only.</p>
 
-<ul>
-<li>Be available for letting to the public for at least 210 days in the year.</li>
-<li>Be actually let for at least 105 days in the year.</li>
-<li>Not be occupied by the same person for more than 31 continuous days in any 7-month period.</li>
-</ul>
+<p>Under the old FHL regime (which applied up to 5 April 2025), a property had to meet strict day-count tests: available for letting for at least 210 days in the year, actually let for at least 105 days, and not occupied by the same person for more than 31 continuous days in any 7-month period.</p>
 
-<p>If you meet these conditions, you can claim:</p>
+<p>Hosts who met those tests previously benefited from:</p>
 
 <ul>
-<li>Capital allowances on furniture and equipment (not just the wear and tear allowance available to standard landlords).</li>
-<li>Business Asset Disposal Relief (BADR) on sale, currently at 14% CGT for disposals before 6 April 2025, rising to 18% from 6 April 2026. This is far lower than the standard 24% CGT rate for residential property.</li>
-<li>Full deduction for mortgage interest (standard landlords can only claim the basic rate tax credit).</li>
-<li>Profit counts as earnings for pension purposes.</li>
+<li>Capital allowances on furniture and equipment (no longer available for residential lets from April 2025).</li>
+<li>Business Asset Disposal Relief (BADR) on sale. BADR rates: 10% for disposals before 6 April 2025; 14% for disposals from 6 April 2025 to 5 April 2026; 18% from 6 April 2026 (the current rate). Properties that lost FHL status from April 2025 no longer qualify for BADR on those grounds; gains are taxed at the standard residential rate (18% within the basic-rate band, 24% above).</li>
+<li>Full deduction for mortgage interest against rental profits (no longer available to individual landlords; see the expenses section below).</li>
+<li>Profits counting as earnings for pension purposes.</li>
 </ul>
 
-<p>The FHL rules changed significantly from 6 April 2025. The government abolished the FHL tax regime for new properties. Existing FHL properties are being phased out. If you currently qualify, you need to review your position now. An <strong>accountant for Airbnb hosts</strong> can model the impact and recommend whether to restructure.</p>
+<p>From 6 April 2025, all these advantages ceased. If you previously relied on FHL status, speak to an <strong>accountant for Airbnb hosts</strong> about your revised tax position.</p>
 
 <h2>Allowable Expenses for Airbnb Hosts</h2>
 
@@ -81,7 +77,7 @@ faqs:
 <li>Letting agent fees and platform fees (Airbnb's service fee is deductible).</li>
 <li>Advertising and marketing (photography, listing optimisation, paid ads).</li>
 <li>Professional fees (accountant, solicitor, tax adviser).</li>
-<li>Mortgage interest (standard landlords get basic rate tax credit only. FHL landlords get full deduction, but FHL is being phased out).</li>
+<li>Mortgage interest: individual residential landlords receive a 20% basic-rate tax reducer on finance costs (rising to 22% from April 2027). A full deduction is not available to individual landlords. The FHL full-deduction route was abolished from 6 April 2025.</li>
 <li>Travel costs (to visit the property for maintenance or check-ins. Keep a mileage log).</li>
 </ul>
 
@@ -93,11 +89,11 @@ faqs:
 
 <p><strong>Trigger 1: Your income exceeds the VAT threshold.</strong> The VAT registration threshold is £90,000 in a rolling 12-month period. If your Airbnb income crosses this, you must register for VAT. You then charge 20% VAT on your bookings. That changes your pricing and your profit margins. An accountant can help you decide whether to register under the Flat Rate Scheme or absorb the VAT into your prices.</p>
 
-<p><strong>Trigger 2: You own multiple properties.</strong> The FHL rules apply per property. If you have three cottages, each must meet the 105-day let test individually. You also need to consider the associated companies rules if you use separate limited companies. The corporation tax marginal relief thresholds (£50k to £250k) are divided by the number of associated companies. That can push you into the 25% main rate faster.</p>
+<p><strong>Trigger 2: You own multiple properties.</strong> With multiple Airbnb properties you need to consider the associated companies rules if you use separate limited companies. The corporation tax marginal relief thresholds (£50k to £250k) are divided by the number of associated companies. That can push you into the 25% main rate faster. The old FHL per-property day-count tests no longer apply from April 2025.</p>
 
 <p><strong>Trigger 3: You use a limited company structure.</strong> Many Airbnb hosts incorporate to limit liability and improve tax efficiency. A limited company pays 19% to 25% corporation tax on profits. You then extract income as salary and dividends. The maths works well if you reinvest profits. But the compliance burden is higher. You need annual accounts, a corporation tax return (CT600), a confirmation statement, and payroll if you pay yourself a salary. An accountant handles all of this.</p>
 
-<p><strong>Trigger 4: You sell a property.</strong> If you sell an Airbnb property that qualified as FHL, you may be eligible for BADR. The 14% rate (rising to 18% from April 2026) is far lower than the standard 24% residential property rate. But you must meet the 2-year ownership and letting tests. If you sell after the FHL regime ends, you lose this relief. Timing matters.</p>
+<p><strong>Trigger 4: You sell a property.</strong> If you sell an Airbnb property, CGT applies at 18% within the basic-rate band and 24% above. The FHL regime was abolished from 6 April 2025, so BADR is no longer available on residential let properties on FHL grounds. BADR rates for reference: 10% applied before 6 April 2025; 14% for disposals from 6 April 2025 to 5 April 2026; 18% from 6 April 2026 (the current rate). An accountant can advise on whether any other reliefs apply to your specific sale.</p>
 
 <p><strong>Trigger 5: HMRC opens an enquiry.</strong> HMRC is increasingly focused on the sharing economy. They have access to Airbnb booking data through the OECD's DAC7 reporting rules. If HMRC challenges your tax return, you need professional representation. An accountant can handle the correspondence, prepare the evidence, and negotiate a settlement if needed.</p>
 
@@ -111,11 +107,11 @@ faqs:
 
 <h2>How Holloway Davies Can Help</h2>
 
-<p>We are ICAEW qualified accountants based in the UK. We work with Airbnb hosts across the country, from a single room in a Bristol terrace to a portfolio of holiday lets in Cornwall. Our services include:</p>
+<p>We are specialist accountants based in the UK. We work with Airbnb hosts across the country, from a single room in a Bristol terrace to a portfolio of holiday lets in Cornwall. Our services include:</p>
 
 <ul>
 <li>Tax planning and compliance for Airbnb income.</li>
-<li>FHL qualification reviews and restructuring advice.</li>
+<li>Advice on the loss of FHL status from April 2025 and your revised property income position.</li>
 <li>VAT registration and Flat Rate Scheme analysis.</li>
 <li>Limited company formation and ongoing compliance.</li>
 <li>Capital gains tax planning on property sales.</li>

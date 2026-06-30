@@ -7,21 +7,21 @@ generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
 metaTitle: 'Writing Down Allowance Rates 2025/26: UK Guide'
-metaDescription: Writing down allowance rates for 2025/26 explained. Main rate 18%, special rate 6%. See how capital allowances reduce your corporation tax bill.
+metaDescription: 'Writing down allowance rates explained: 18% main pool and 6% special rate for 2025/26. FA 2026 s.28 reduces the main pool rate to 14% from 1 April 2026. See how WDAs reduce your tax bill.'
 altText: Accountant reviewing capital allowances schedule for writing down allowance rates 2025/26
 image: https://images.pexels.com/photos/29509452/pexels-photo-29509452.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'Writing Down Allowance Rates 2025/26: A Complete Guide'
-summary: Writing down allowance rates for 2025/26 are 18% for main pool assets and 6% for special rate pool assets. This guide explains how they work, what qualifies, and how to claim them on your corporation tax return.
+summary: Writing down allowance rates for 2025/26 are 18% for main pool assets and 6% for special rate pool assets. FA 2026 s.28 reduces the main pool rate to 14% for accounting periods beginning on or after 1 April 2026 (companies) or 6 April 2026 (sole traders and partnerships). The special rate pool remains 6%. This guide explains how WDAs work, what qualifies, and how to claim them on your tax return.
 schema: ''
 faqs:
 - question: What is the writing down allowance rate for 2025/26?
-  answer: For the 2025/26 tax year, the main pool writing down allowance rate is 18% and the special rate pool rate is 6%. Both are calculated on a reducing balance basis. The main pool covers most plant and machinery. The special rate pool covers integral features, long-life assets, and cars over 50g/km CO2.
+  answer: For the 2025/26 tax year, the main pool writing down allowance rate is 18% and the special rate pool rate is 6%. FA 2026 s.28 reduces the main pool rate to 14% for accounting periods beginning on or after 1 April 2026 (companies) or 6 April 2026 (sole traders and partnerships). The special rate pool remains 6%. Both rates are calculated on a reducing balance basis. The main pool covers most plant and machinery. The special rate pool covers integral features, long-life assets, and cars over 50g/km CO2.
 - question: Can I claim writing down allowances instead of the Annual Investment Allowance?
   answer: Yes. You can choose not to claim AIA on an asset and instead let it attract writing down allowances. This is useful if you want to spread tax relief into future years, for example if your profits are low this year but expected to rise. You must make the election on your tax return.
 - question: What happens to writing down allowances when I sell an asset?
   answer: When you sell an asset, you deduct the sale proceeds (capped at original cost) from the pool balance. If the pool goes negative, the negative amount is a balancing charge added to your taxable profits. If the pool stays positive, you continue claiming WDAs on the reduced balance.
 - question: Do writing down allowances apply to cars?
-  answer: Yes, but the rate depends on CO2 emissions. Cars with emissions over 50g/km go into the special rate pool at 6%. Cars with emissions of 50g/km or less go into the main pool at 18% and may also qualify for Full Expensing if bought new. Cars used partly for private purposes have restricted claims.
+  answer: Yes, but the rate depends on CO2 emissions. Cars with emissions over 50g/km go into the special rate pool at 6%. Cars with emissions of 50g/km or less go into the main pool at 18% for 2025/26 (14% for periods beginning on or after 1 April 2026 under FA 2026 s.28). Cars are excluded from Full Expensing and from the Annual Investment Allowance. Only zero-emission cars (0g/km CO2) qualify for a separate 100% first-year allowance under s.45D CAA 2001. Cars used partly for private purposes have restricted claims.
 dateModified: '2026-05-20'
 sourcesVerifiedAt: '2026-05-20'
 sourceDomains: []
@@ -35,7 +35,7 @@ imageCredit:
 
 <p>Writing down allowances (WDAs) are the annual capital allowances you claim on assets your business keeps using. Unlike the Annual Investment Allowance (AIA) which gives you 100% relief in the year of purchase, WDAs spread the relief over the asset's useful life.</p>
 
-<p>Think of them as the tax equivalent of depreciation. But the rates are set by HMRC, not by your accounting policy. For the 2025/26 tax year, the main rate is 18% and the special rate is 6%.</p>
+<p>Think of them as the tax equivalent of depreciation. But the rates are set by HMRC, not by your accounting policy. For the 2025/26 tax year, the main rate is 18% and the special rate is 6%. FA 2026 s.28 reduces the main pool rate to 14% for accounting periods beginning on or after 1 April 2026 (companies) or 6 April 2026 (sole traders and partnerships). The special rate pool remains 6%.</p>
 
 <p>If you run a limited company, a sole trade, or a partnership, you claim WDAs on your corporation tax return (CT600) or self assessment return (SA103 for sole traders, SA800 for partnerships).</p>
 
@@ -62,7 +62,7 @@ imageCredit:
 
 <p>Full Expensing is another option for limited companies. It gives 100% relief on most main rate plant and machinery, and 50% on special rate assets. If you claim Full Expensing, the asset does not go into the pool. No WDAs apply to that asset in later years.</p>
 
-<p>As ICAEW qualified accountants, we see many business owners assume they must claim the maximum relief immediately. That is not always the best move. If you are loss-making or expect higher profits in future years, deferring relief through WDAs can be more efficient.</p>
+<p>We see many business owners assume they must claim the maximum relief immediately. That is not always the best move. If you are loss-making or expect higher profits in future years, deferring relief through WDAs can be more efficient.</p>
 
 <h2>Small Pools Allowance</h2>
 
@@ -84,7 +84,7 @@ imageCredit:
 <li>Structures and buildings (these attract Structures and Buildings Allowance at 3% per year instead)</li>
 </ul>
 
-<p>If you buy a car for your limited company that emits 120g/km CO2, it goes into the special rate pool at 6%. A car emitting 48g/km qualifies for main pool treatment at 18% and also qualifies for Full Expensing if you buy it new.</p>
+<p>If you buy a car for your limited company that emits 120g/km CO2, it goes into the special rate pool at 6%. A car emitting 48g/km goes into the main pool at 18% WDA for 2025/26 (14% for periods from 1 April 2026 under FA 2026 s.28). Cars are excluded from Full Expensing and from the Annual Investment Allowance. Only zero-emission cars (0g/km CO2) qualify for a separate 100% first-year allowance under s.45D CAA 2001.</p>
 
 <h2>Disposals and the Pool</h2>
 
@@ -101,6 +101,7 @@ imageCredit:
 <p>Consider these factors when deciding whether to claim AIA or leave assets in the pool for WDAs:</p>
 
 <ul>
+<li><strong>WDA rate change from April 2026.</strong> FA 2026 s.28 reduces the main pool WDA from 18% to 14% for accounting periods beginning on or after 1 April 2026 (companies) or 6 April 2026 (sole traders and partnerships). If you have assets sitting in the main pool, they will attract only 14% WDA from those periods onward. This makes claiming AIA or Full Expensing (companies) in the year of purchase relatively more attractive.</li>
 <li><strong>Profit levels.</strong> If your taxable profits are below £50,000, you pay 19% corporation tax. Claiming AIA now saves 19p per £1. If you expect profits above £250,000 next year (25% rate), deferring relief could save 25p per £1.</li>
 <li><strong>Loss positions.</strong> If you are loss-making, WDAs add to your pool and carry forward. AIA creates or increases a loss that can be carried forward or surrendered (group relief).</li>
 <li><strong>Cash flow.</strong> AIA gives immediate cash flow benefit. WDAs spread the benefit. If you need cash now, claim AIA.</li>
@@ -129,11 +130,11 @@ imageCredit:
 
 <p><strong>3. Forgetting the small pools allowance.</strong> If your pool balance is under £1,000, claim the full write-off. Many businesses miss this and carry forward tiny balances for years.</p>
 
-<p>If you are unsure about your capital allowances position, speak to an accountant. Our <a href="/contact">contact page</a> connects you with our ICAEW qualified team.</p>
+<p>If you are unsure about your capital allowances position, speak to an accountant. Our <a href="/contact">contact page</a> connects you with our experienced team.</p>
 
 <h2>Records You Need to Keep</h2>
 
-<p>HMRC can ask for evidence of your capital allowances claims up to 12 months after you file your return. Keep:</p>
+<p>You must keep records supporting capital allowances claims for at least 5 years after the 31 January filing deadline (sole traders and partnerships) or 6 years from the accounting period end (companies). HMRC can open an enquiry beyond the standard 12-month window where there is a careless or deliberate error. Keep:</p>
 
 <ul>
 <li>Invoices for every asset purchase</li>
@@ -149,7 +150,7 @@ imageCredit:
 
 <h2>Final Thoughts</h2>
 
-<p>Writing down allowance rates for 2025/26 are straightforward: 18% for main pool assets, 6% for special rate pool assets. The planning lies in deciding which assets to claim AIA on and which to leave in the pool.</p>
+<p>Writing down allowance rates for 2025/26 are 18% for main pool assets and 6% for special rate pool assets. From 1 April 2026 (companies) or 6 April 2026 (sole traders and partnerships), FA 2026 s.28 reduces the main pool rate to 14%. The special rate pool remains 6%. The planning lies in deciding which assets to claim AIA on and which to leave in the pool.</p>
 
 <p>If your business buys significant plant and machinery each year, the interaction between AIA, Full Expensing, and WDAs can save thousands in corporation tax. Get the classification right and the timing right.</p>
 

@@ -26,7 +26,7 @@ faqs:
   - question: "What happens if one trade makes a loss and the other makes a profit?"
     answer: "You can offset the loss against the profit in the same tax year. This reduces your total self-employment income and your tax bill. Each trade's loss is tracked separately. If both trades make losses, you cannot offset those losses against employment income in the same year. You carry them forward to set against future profits from the same trade."
   - question: "Does Making Tax Digital apply differently if I have multiple trades?"
-    answer: "MTD for ITSA applies based on your combined self-employment income from all trades. If your combined turnover is over £50,000, you are inside from April 2026. Between £30,000 and £50,000, from April 2027. You must keep digital records for each trade separately, then submit quarterly updates for the combined figures. Most accounting software handles this automatically with separate nominal codes."
+    answer: "MTD for ITSA applies based on your combined self-employment income from all trades. If your combined turnover is over £50,000, you are inside from April 2026. Between £30,000 and £50,000, from April 2027. Between £20,000 and £30,000, from April 2028. Below £20,000, you remain on the annual return system under current legislation. You must keep digital records for each trade separately, then submit quarterly updates for the combined figures. Most accounting software handles this automatically with separate nominal codes."
 ---
 
 <h2>Why Multiple Trades Changes Your Self Assessment Tax Return</h2>
@@ -89,7 +89,7 @@ faqs:
 
 <p>Capital allowances are claimed per trade. If you buy a laptop for trade A only, the Annual Investment Allowance (AIA) claim goes on trade A's page. If you buy equipment used across both trades, apportion the cost.</p>
 
-<p>Each trade has its own AIA entitlement. The £1,000,000 annual limit applies per business, not per person. So trade A can claim up to £1M and trade B can claim up to £1M, provided each trade genuinely uses the assets.</p>
+<p>Capital allowances are claimed per trade, but your total AIA across all trades is a single £1,000,000 limit, not £1M per trade. You can split that £1M between trade A and trade B however you choose, but the combined claim cannot exceed £1,000,000. Each trade's assets should be listed on its own SA103 page with the relevant share of the AIA entered in Box 36.</p>
 
 <p>Box 36 asks for the total AIA claimed. Box 37 covers other capital allowances (writing down allowances, first year allowances). Box 41 gives the total capital allowances for that trade.</p>
 
@@ -113,7 +113,7 @@ faqs:
 
 <p>Class 4 NIC is calculated on your combined self-employment profits. HMRC adds trade A and trade B profits together, then applies the Class 4 thresholds to the total.</p>
 
-<p>For 2025/26, Class 4 NIC is 9% on profits between £12,570 and £50,270, and 2% on profits above £50,270. If trade A made £30,000 and trade B made £25,000, your combined £55,000 triggers Class 4 on the first £37,700 (from £12,571 to £50,270) at 9%, and the remaining £4,730 at 2%.</p>
+<p>For 2025/26 and 2026/27, Class 4 NIC is 6% on profits between £12,570 and £50,270, and 2% on profits above £50,270. If trade A made £30,000 and trade B made £25,000, your combined £55,000 triggers Class 4 on the first £37,700 (from £12,571 to £50,270) at 6% (£2,262), and the remaining £4,730 at 2% (£94.60), giving a total Class 4 bill of £2,356.60.</p>
 
 <p>Class 2 NIC was abolished from April 2024 for most sole traders. You no longer need to pay a flat weekly amount. However, you may still need to pay voluntary Class 2 or Class 3 contributions to protect your state pension entitlement if your combined profits are low.</p>
 
@@ -141,7 +141,7 @@ faqs:
 
 <p>From April 2026, sole traders with combined self-employment income over £50,000 must use MTD-compatible software to file quarterly updates and an end-of-year declaration. This applies to your combined turnover from all trades.</p>
 
-<p>If trade A turns over £35,000 and trade B turns over £20,000, your combined £55,000 puts you inside MTD for ITSA from April 2026. If your combined turnover is between £30,000 and £50,000, you are inside from April 2027. Below £20,000, you can stay on the current annual return system for now.</p>
+<p>If trade A turns over £35,000 and trade B turns over £20,000, your combined £55,000 puts you inside MTD for ITSA from April 2026. If your combined turnover is between £30,000 and £50,000, you are inside from April 2027. If your combined income is between £20,000 and £30,000, you enter MTD from April 2028. Below £20,000, you remain on the annual return system under current legislation.</p>
 
 <p>MTD for ITSA requires digital record-keeping for each trade separately. You need to maintain digital records of income and expenses for trade A and trade B, then submit quarterly updates for the combined figures. Most accounting software handles this automatically once you set up separate nominal codes for each trade.</p>
 
@@ -157,7 +157,7 @@ faqs:
 
 <p>If you are unsure about the split, ask HMRC or speak to an accountant. A badly prepared return with multiple trades is a common trigger for an HMRC enquiry. Getting it right the first time saves time and stress.</p>
 
-<p>Our team at Holloway Davies are ICAEW qualified and handle multiple-trade returns regularly. You can <a href="/contact">contact us</a> for advice specific to your situation.</p>
+<p>Our team at Holloway Davies handle multiple-trade returns regularly. You can <a href="/contact">contact us</a> for advice specific to your situation.</p>
 
 <h2>Filing Deadlines and Penalties</h2>
 

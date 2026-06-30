@@ -31,7 +31,7 @@ faqs:
 
 <p>If you are searching for "accounting service charges" in 2025/26, you are probably trying to work out what a fair price looks like and whether you are getting value for money. You are right to check. The range of prices across the market is wide, and the services bundled into those prices vary even more.</p>
 
-<p>We are ICAEW qualified accountants at Holloway Davies. We work with limited companies, contractors, sole traders, and partnerships across every sector. This article explains exactly what accounting service charges typically cover, what they do not cover, and how to compare quotes on a like-for-like basis.</p>
+<p>We are specialist accountants at Holloway Davies. We work with limited companies, contractors, sole traders, and partnerships across every sector. This article explains exactly what accounting service charges typically cover, what they do not cover, and how to compare quotes on a like-for-like basis.</p>
 
 <h2>What Is Included in a Standard Accounting Service Charge?</h2>
 
@@ -62,7 +62,7 @@ faqs:
 
 <ul>
 <li>Preparation and filing of the self assessment tax return (SA100 and SA103)</li>
-<li>Calculation of income tax and Class 2 and Class 4 National Insurance</li>
+<li>Calculation of income tax and Class 4 National Insurance (Class 2 NIC was abolished from April 2024; voluntary Class 2 is only relevant for low earners protecting their NI record)</li>
 <li>Advice on allowable expenses and capital allowances</li>
 <li>Bookkeeping support, often via FreeAgent or QuickBooks</li>
 <li>Help with VAT registration and returns if applicable</li>
@@ -131,7 +131,7 @@ faqs:
 
 <h3>Location and Firm Type</h3>
 
-<p>A high-street firm in London's Canary Wharf or Manchester's city centre will charge more than a remote firm based in a smaller town. Online-only firms tend to be cheaper because they have lower overheads. We operate from offices in Manchester's Northern Quarter and serve clients across the UK, with pricing that reflects the value of ICAEW-qualified advice without the central London premium.</p>
+<p>A high-street firm in London's Canary Wharf or Manchester's city centre will charge more than a remote firm based in a smaller town. Online-only firms tend to be cheaper because they have lower overheads. We operate from offices in Manchester's Northern Quarter and serve clients across the UK, with pricing that reflects the value of expert advice without the central London premium.</p>
 
 <h3>Advisory vs Compliance Focus</h3>
 
@@ -175,7 +175,7 @@ faqs:
 <p>We structure our accounting service charges to be transparent and predictable. Every client gets a fixed monthly fee with a clear scope of work. There are no surprise bills for standard compliance work. Our packages include:</p>
 
 <ul>
-<li>Dedicated ICAEW-qualified accountant as your point of contact</li>
+<li>Dedicated specialist accountant as your point of contact</li>
 <li>FreeAgent or Xero software included in the fee</li>
 <li>Quarterly reviews and year-end planning meetings</li>
 <li>Unlimited email support and scheduled phone calls</li>

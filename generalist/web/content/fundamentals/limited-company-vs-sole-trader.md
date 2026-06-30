@@ -30,7 +30,7 @@ faqs:
 
 <p>If you are starting a business in the UK, or you are already trading and wondering whether you have the right structure, the limited company vs sole trader question is the first big decision you will face. It affects how much tax you pay, what happens if something goes wrong, how you take money out of the business, and what you can sell when you leave.</p>
 
-<p>This guide is written for UK business owners. Directors of limited companies. Contractors working through their own Ltd. Sole traders and freelancers. People in partnerships. Anyone about to incorporate. We are ICAEW qualified accountants who work with businesses of every shape across the UK, from a freelance designer in a Bristol studio to a manufacturing Ltd in the Leeds city centre. This is the guide we wish every client read before they started.</p>
+<p>This guide is written for UK business owners. Directors of limited companies. Contractors working through their own Ltd. Sole traders and freelancers. People in partnerships. Anyone about to incorporate. We are specialist accountants who work with businesses of every shape across the UK, from a freelance designer in a Bristol studio to a manufacturing Ltd in the Leeds city centre. This is the guide we wish every client read before they started.</p>
 
 <p>The answer is not the same for everyone. A limited company will save you thousands in tax in some situations. In others, it adds cost and complexity for no benefit. This guide gives you the framework to decide.</p>
 
@@ -352,6 +352,6 @@ faqs:
 
 <p>The right answer depends on your profit level, your risk exposure, your growth plans, and your personal circumstances. Use the framework in this guide to work through it. Run the numbers. Talk to an accountant who understands your sector.</p>
 
-<p>If you would like to discuss your specific situation, <a href="/contact">contact our team</a>. We are ICAEW qualified accountants who work with UK businesses of every shape, from sole traders in the Baltic Triangle in Liverpool to limited companies in Canary Wharf in London. A 30-minute conversation is usually enough to give you a clear answer.</p>
+<p>If you would like to discuss your specific situation, <a href="/contact">contact our team</a>. We are specialist accountants who work with UK businesses of every shape, from sole traders in the Baltic Triangle in Liverpool to limited companies in Canary Wharf in London. A 30-minute conversation is usually enough to give you a clear answer.</p>
 
 <p>For more detail on the specific tax rules, see our <a href="/fundamentals">fundamentals</a> page and our guides on <a href="/blog/sole-trader-and-self-employment">sole trader and self-employment</a> and <a href="/blog/limited-company-tax">limited company tax</a>.</p>

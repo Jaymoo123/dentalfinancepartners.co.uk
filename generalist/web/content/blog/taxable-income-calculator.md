@@ -40,7 +40,7 @@ imageCredit:
 
 <p>HMRC provides its own version on GOV.UK. The current tax year runs from 6 April 2026 to 5 April 2027 <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. The previous tax year runs from 6 April 2025 to 5 April 2026 <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. If you are filing a Self Assessment return for 2024/25, you are working with a closed year. If you are planning ahead for 2025/26, you are estimating.</p>
 
-<p>As ICAEW qualified accountants, we see clients use these calculators for three reasons: checking their tax code is right, estimating a Self Assessment bill before the January deadline, and deciding whether to adjust their salary or dividend mix.</p>
+<p>We see clients use these calculators for three reasons: checking their tax code is right, estimating a Self Assessment bill before the January deadline, and deciding whether to adjust their salary or dividend mix.</p>
 
 <h2>Who Should Use the HMRC Taxable Income Calculator?</h2>
 
@@ -92,13 +92,13 @@ imageCredit:
 <li>Additional rate: 45% on income above £125,140</li>
 </ul>
 
-<p>Dividends are taxed at 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate). The dividend allowance is £500 per year.</p>
+<p>Dividends are taxed at 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate) for 2025/26. From 6 April 2026 (2026/27 onwards), dividend rates rise to 10.75% (basic rate), 35.75% (higher rate), and 39.35% (additional rate) under FA 2026 s.4. The dividend allowance is £500 per year.</p>
 
 <p>Savings interest has its own 0% starting rate (up to £5,000, but only if your other income is below £17,570) and a personal savings allowance of £1,000 for basic rate taxpayers, £500 for higher rate, and £0 for additional rate.</p>
 
 <h3>Step 4: Calculate National Insurance</h3>
 
-<p>For employees, Class 1 NIC is 8% on earnings between £12,570 and £50,270, then 2% above that. For self-employed sole traders, Class 4 NIC is 6% on profits between £12,570 and £50,270, then 2% above that. Class 2 NIC is abolished from April 2025.</p>
+<p>For employees, Class 1 NIC is 8% on earnings between £12,570 and £50,270, then 2% above that. For self-employed sole traders, Class 4 NIC is 6% on profits between £12,570 and £50,270, then 2% above that. Class 2 NIC is abolished from April 2024.</p>
 
 <p>A good taxable income calculator will combine Income Tax and NIC into a single estimated figure.</p>
 
@@ -126,7 +126,7 @@ imageCredit:
 <p>A taxable income calculator gives you the headline figure. It does not handle every edge case. For example:</p>
 
 <ul>
-<li>If your income is above £35,000 and you get the Winter Fuel Payment, you will need to pay it back through higher tax the following year <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</li>
+<li>Winter Fuel Payment is now restricted to households receiving Pension Credit or certain qualifying means-tested benefits. If you do not qualify, you will not receive it. There is no income-based clawback through tax.</li>
 <li>If you have a director's loan account balance over £10,000, there is a benefit in kind to report on a P11D.</li>
 <li>If you are a higher rate taxpayer, your Child Benefit may be clawed back through the High Income Child Benefit Charge.</li>
 <li>If you make pension contributions, your basic rate band extends, reducing higher rate tax. Most calculators miss this.</li>
@@ -148,7 +148,7 @@ imageCredit:
 
 <p>But a calculator cannot give you personalised advice. It does not know about your company structure, your spouse's income, your capital gains position, or your R&D claim. If your affairs are more complex than a single PAYE job or a straightforward sole trade, you need a professional review.</p>
 
-<p>Our <a href="/about">ICAEW qualified team</a> at Holloway Davies works with business owners across the UK. We see the gaps that calculators leave open. If your turnover crossed the VAT threshold in the last 30 days, register inside the 30-day window. If you are about to incorporate, check the <a href="/incorporation">incorporation page</a> for the tax implications. If you are spending on software development, check whether you qualify for <a href="/r-and-d-credits">R&D tax credits</a>.</p>
+<p>Our specialist team at Holloway Davies works with business owners across the UK. We see the gaps that calculators leave open. If your turnover crossed the VAT threshold in the last 30 days, register inside the 30-day window. If you are about to incorporate, check the <a href="/incorporation">incorporation page</a> for the tax implications. If you are spending on software development, check whether you qualify for <a href="/r-and-d-credits">R&D tax credits</a>.</p>
 
 <p>A calculator is a starting point. A conversation with an accountant is the finishing line.</p>
 

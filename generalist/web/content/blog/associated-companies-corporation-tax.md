@@ -8,7 +8,7 @@ author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Associated companies corporation tax: how they affect your"
 metaDescription: "Associated companies reduce the profit bands for the 19% and 25% corporation tax rates. We explain the rules, exclusions, and how to calculate your"
-altText: "ICAEW qualified accountant reviewing group structure documents at a desk in a modern UK office"
+altText: "Accountant reviewing group structure documents at a desk in a modern UK office"
 image: "/blog/associated-companies-corporation-tax.jpg"
 imageCredit:
   photographer: "RDNE Stock project"
@@ -119,7 +119,7 @@ faqs:
 
 <p><strong>Disincorporation.</strong> If you have multiple companies that are no longer trading, consider striking them off or putting them into members' voluntary liquidation. A dormant company that stays on the register still counts as associated. If it has no assets and no liabilities, strike it off to remove it from the association count.</p>
 
-<p>As ICAEW qualified accountants, we regularly see business owners who have accumulated several dormant companies over the years without realising the impact on their active company's corporation tax rate. A clean-up of the company register can save thousands in tax.</p>
+<p>We regularly see business owners who have accumulated several dormant companies over the years without realising the impact on their active company's corporation tax rate. A clean-up of the company register can save thousands in tax.</p>
 
 <h2>How to Calculate Your Effective Corporation Tax Rate</h2>
 

@@ -18,8 +18,8 @@ imageCredit:
 h1: "P11D Benefits in Kind Explained: What UK Employers and Directors Need to Report"
 summary: "A practical 2025/26 guide to P11D benefits in kind for UK employers and directors. Covers what counts as a taxable benefit, exempt benefits, how to calculate company cars, fuel, loans and private medical insurance, Class 1A NIC at 15%, payrolling options, filing deadlines and penalties. Written for directors, business owners and payroll managers."
 dateModified: "2026-06-12"
-reviewedBy: "ICAEW Senior Reviewer"
-reviewerCredentials: "Chartered Accountant (ACA, ICAEW)"
+reviewedBy: "Holloway Davies Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-12"
 schema: |
   {

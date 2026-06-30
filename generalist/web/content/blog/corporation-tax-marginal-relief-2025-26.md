@@ -20,13 +20,13 @@ summary: "Corporation tax marginal relief bridges the gap between the 19% small 
 schema: ""
 faqs:
   - question: "What is the effective corporation tax rate for a company with £100,000 profit?"
-    answer: "For 2025/26, a company with £100,000 taxable profits and no associated companies pays £14,500 in corporation tax. That is an effective rate of 14.5%. The rate is lower than 19% because marginal relief is generous at the lower end of the band. At £100,000, you are getting nearly the full benefit of the relief before it starts tapering off."
+    answer: "For 2025/26, a company with £100,000 taxable profits and no associated companies pays £22,750 in corporation tax. That is an effective rate of 22.75%. The effective rate rises smoothly from 19% at £50,000 towards 25% at £250,000. Marginal relief reduces what you would otherwise pay at the full 25% main rate."
   - question: "Does marginal relief apply if my company has associated companies?"
     answer: "Yes, but the thresholds are divided by the total number of associated companies. If you have two associated companies, the lower limit becomes £25,000 and the upper limit becomes £125,000. Marginal relief applies between those adjusted thresholds. You must include all companies under common control, including those owned by your spouse or close family."
   - question: "How do dividends from other companies affect marginal relief?"
     answer: "Dividends received from non-group companies increase your augmented profits figure. Marginal relief is calculated using augmented profits, not just taxable profits. If those dividends push your augmented profits above £250,000 (or the adjusted upper limit), you lose marginal relief entirely. Even if your trading profits are well below £250,000, check your augmented profits before assuming you qualify."
   - question: "Can I plan to stay within the marginal relief band to get a lower effective rate?"
-    answer: "Yes, but be careful. The effective rate dips below 19% between roughly £60,000 and £130,000. If you can time capital investments, R&D claims, or pension contributions to keep profits in that sweet spot, you benefit from a lower rate. But do not turn down profitable work just to stay in a lower tax band. The extra profit after tax is still more than no profit at all. Plan sensibly around the thresholds, but do not let tax drive commercial decisions."
+    answer: "Yes, but plan carefully. Your effective rate sits between 19% and 25% across the entire band, rising smoothly as profits increase. The marginal rate within the band is around 26.5%, so each extra pound of profit in the band costs more tax than the 19% flat rate would. Timing capital investments, R&D claims, or pension contributions to reduce profits below £50,000 (where the flat 19% rate applies) can save tax. But do not turn down profitable work just to stay in a lower tax band. The extra profit after tax is still more than no profit at all."
 ---
 
 <h2>What Is Corporation Tax Marginal Relief?</h2>
@@ -51,7 +51,9 @@ faqs:
 
 <p>Here is the formula for 2025/26:</p>
 
-<p><strong>Marginal Relief = (Upper Limit minus Augmented Profits) x (Standard Rate Fraction minus Small Profits Rate Fraction) x (Augmented Profits / Taxable Total Profits)</strong></p>
+<p><strong>Marginal Relief = (Upper Limit minus Augmented Profits) x 3/200 x (Augmented Profits / Taxable Total Profits)</strong></p>
+
+<p>The fraction 3/200 (0.015) is set by statute and is the same for all companies in FY2025 and FY2026. It is not the difference between the two CT rates.</p>
 
 <p>That looks complicated, so let us use real numbers.</p>
 
@@ -60,32 +62,32 @@ faqs:
 <ul>
 <li>Upper limit: £250,000</li>
 <li>Augmented profits: £92,800 (assume no dividends received, so same as taxable profits)</li>
-<li>Standard rate fraction: 25%</li>
-<li>Small profits rate fraction: 19%</li>
+<li>Marginal relief fraction: 3/200 (0.015, statutory for FY2025 and FY2026)</li>
+<li>Taxable total profits: £92,800 (same as augmented profits here, so the final multiplier is 1)</li>
 </ul>
 
-<p>Marginal relief = (£250,000 minus £92,800) x (25% minus 19%) x (£92,800 / £92,800)</p>
+<p>Marginal relief = (£250,000 minus £92,800) x 3/200 x (£92,800 / £92,800)</p>
 
-<p>Marginal relief = £157,200 x 6% x 1</p>
+<p>Marginal relief = £157,200 x 0.015 x 1</p>
 
-<p>Marginal relief = £9,432</p>
+<p>Marginal relief = £2,358</p>
 
 <p>Corporation tax at 25% on £92,800 = £23,200</p>
 
-<p>Corporation tax after marginal relief = £23,200 minus £9,432 = <strong>£13,768</strong></p>
+<p>Corporation tax after marginal relief = £23,200 minus £2,358 = <strong>£20,842</strong></p>
 
-<p>Effective tax rate: 14.84%</p>
+<p>Effective tax rate: 22.46%</p>
 
-<p>That is below 19%. How? Because marginal relief is generous at the lower end of the band. As profits approach £250,000, the effective rate climbs towards 25%.</p>
+<p>The effective rate of 22.46% sits between the 19% small profits rate and the 25% main rate, as it always must within the band. The marginal rate within the band is around 26.5%, meaning each extra pound of profit above £50,000 attracts more tax than the 19% flat rate would. As profits approach £250,000, the effective rate climbs towards 25%.</p>
 
 <p><strong>Example 2: A Birmingham IT consultancy with £187,400 taxable profits</strong></p>
 
 <ul>
-<li>Marginal relief = (£250,000 minus £187,400) x 6% x 1</li>
-<li>Marginal relief = £62,600 x 6% = £3,756</li>
+<li>Marginal relief = (£250,000 minus £187,400) x 3/200 x 1</li>
+<li>Marginal relief = £62,600 x 0.015 = £939</li>
 <li>Corporation tax at 25% = £46,850</li>
-<li>Corporation tax after relief = £46,850 minus £3,756 = <strong>£43,094</strong></li>
-<li>Effective rate: 23.0%</li>
+<li>Corporation tax after relief = £46,850 minus £939 = <strong>£45,911</strong></li>
+<li>Effective rate: 24.50%</li>
 </ul>
 
 <p>As you can see, the closer you get to £250,000, the closer your effective rate gets to 25%.</p>
@@ -97,17 +99,17 @@ faqs:
 <table>
 <tr><th>Taxable Profits</th><th>Corporation Tax Due</th><th>Effective Rate</th></tr>
 <tr><td>£50,000</td><td>£9,500</td><td>19.00%</td></tr>
-<tr><td>£75,000</td><td>£11,750</td><td>15.67%</td></tr>
-<tr><td>£100,000</td><td>£14,500</td><td>14.50%</td></tr>
-<tr><td>£125,000</td><td>£18,500</td><td>14.80%</td></tr>
-<tr><td>£150,000</td><td>£24,500</td><td>16.33%</td></tr>
-<tr><td>£175,000</td><td>£31,750</td><td>18.14%</td></tr>
-<tr><td>£200,000</td><td>£39,500</td><td>19.75%</td></tr>
-<tr><td>£225,000</td><td>£47,750</td><td>21.22%</td></tr>
+<tr><td>£75,000</td><td>£16,125</td><td>21.50%</td></tr>
+<tr><td>£100,000</td><td>£22,750</td><td>22.75%</td></tr>
+<tr><td>£125,000</td><td>£29,375</td><td>23.50%</td></tr>
+<tr><td>£150,000</td><td>£36,000</td><td>24.00%</td></tr>
+<tr><td>£175,000</td><td>£42,625</td><td>24.36%</td></tr>
+<tr><td>£200,000</td><td>£49,250</td><td>24.63%</td></tr>
+<tr><td>£225,000</td><td>£55,875</td><td>24.83%</td></tr>
 <tr><td>£250,000</td><td>£62,500</td><td>25.00%</td></tr>
 </table>
 
-<p>The effective rate dips below 19% between roughly £60,000 and £130,000. That is the sweet spot where marginal relief is most valuable.</p>
+<p>The effective rate rises smoothly from 19% at the lower limit to 25% at the upper limit. It never falls below 19%. The marginal rate within the band is around 26.5%, so each extra pound earned in the band costs more tax than if the company were sitting just below £50,000.</p>
 
 <h2>What Are Augmented Profits?</h2>
 
@@ -148,11 +150,11 @@ faqs:
 
 <p>When your company is in the marginal relief band, each extra pound of profit attracts a higher effective rate. That can make dividend extraction more attractive at certain profit levels.</p>
 
-<p>Consider a company with £100,000 profit. The effective rate is 14.5%. If the director takes an extra £10,000 salary, that reduces company profit to £90,000. The effective rate drops further to about 14.2%. But the salary triggers employer NI at 13.8% and income tax on the director.</p>
+<p>Consider a company with £100,000 profit. The effective rate is 22.75%. If the director takes an extra £10,000 salary, that reduces company profit to £90,000. The effective CT rate drops to about 22.33%. But the salary triggers employer NIC at 15% (above the £5,000 secondary threshold, from 6 April 2025) and income tax on the director.</p>
 
 <p>Dividends are different. Taking a £10,000 dividend from retained profits does not reduce the current year's corporation tax. But it does reduce the retained profits available for reinvestment.</p>
 
-<p>The key point: marginal relief makes the effective rate lower than 19% at the lower end of the band. That means retaining profits in the company is actually more tax-efficient than extracting them, provided you need the cash for growth.</p>
+<p>The key point: within the marginal relief band the effective rate is always between 19% and 25%, rising with profit. Retaining profits in the company can still be more tax-efficient than extracting them, provided you need the cash for growth and your personal income tax rate on extracted income exceeds the company's effective CT rate.</p>
 
 <p>Read our guide on <a href="/blog/director-pay-and-dividends">director pay and dividends</a> for the full breakdown of salary versus dividend planning alongside marginal relief.</p>
 
@@ -162,7 +164,7 @@ faqs:
 
 <p>If your company is in the marginal relief band, investing in qualifying assets can drop your profits below £50,000. That means you pay 19% on the remaining profits, not the marginal rate.</p>
 
-<p><strong>Example:</strong> A Bristol joinery company makes £140,000 profit. It buys £95,000 of new machinery. Taxable profits drop to £45,000. The company pays 19% on £45,000 = £8,550. Without the investment, it would have paid around £20,300 (14.5% effective rate). The £95,000 investment saves £11,750 in corporation tax.</p>
+<p><strong>Example:</strong> A Bristol joinery company makes £140,000 profit. It buys £95,000 of new machinery. Taxable profits drop to £45,000. The company pays 19% on £45,000 = £8,550. Without the investment, it would have paid £33,350 in corporation tax (an effective rate of 23.82%). The £95,000 investment saves around £24,800 in corporation tax.</p>
 
 <p>If your company is close to the £50,000 threshold, capital investment can be a powerful tool to drop into the 19% band. Just make sure the investment is commercially sensible, not just tax-driven.</p>
 
@@ -186,7 +188,7 @@ faqs:
 <li><strong>Ignoring associated companies.</strong> Directors often forget to include dormant companies or companies owned by their spouse. That overstates the thresholds and understates the tax due.</li>
 <li><strong>Confusing augmented profits with taxable profits.</strong> If you received dividends from non-group companies, your augmented profits are higher. That reduces or eliminates marginal relief.</li>
 <li><strong>Assuming marginal relief applies automatically.</strong> It does, but only if you file the correct figures on your CT600. If you use accounting software that calculates it, double-check the augmented profits figure.</li>
-<li><strong>Not planning for the effective rate.</strong> If you are at £130,000 profit, your effective rate is about 14.8%. That is lower than 19%. But if you grow to £200,000, the effective rate jumps to 19.75%. Plan your dividend extraction accordingly.</li>
+<li><strong>Not planning for the effective rate.</strong> If you are at £130,000 profit, your effective rate is about 23.62%. If you grow to £200,000, the effective rate rises to 24.63%. Both sit within the 19%-to-25% band. Plan your dividend extraction with these figures in mind.</li>
 </ul>
 
 <h2>Do You Need to Worry About Marginal Relief?</h2>

@@ -8,6 +8,12 @@ author: Holloway Davies Editorial Team
 category: Sole Trader and Self Employment
 metaTitle: Self Assessment After Stopping Trading Mid-Year Guide
 metaDescription: Stopped trading before 5 April? Your final return follows cessation rules, with overlap relief to claim and a £100 penalty if you file late.
+keyTakeaways:
+  - "Stopping mid-year triggers cessation rules, so your final return covers only profits up to the cessation date."
+  - "Overlap relief reduces taxable profits on a cessation return and is claimed via the SA103 self-employment pages."
+  - "The final self assessment return deadline is 31 January after the tax year, the same as normal."
+  - "Filing late attracts a £100 penalty for returns up to three months overdue, plus £10 daily after that."
+  - "Closing a limited company does not automatically stop your personal self assessment filing obligation."
 altText: UK business owner reviewing self assessment tax return documents after ceasing trading mid-year, with calculator and HMRC correspondence on desk
 image: /blog/self-assessment-tax-return-guide-stopped-trading-mid-year.jpg
 imageCredit:
@@ -17,9 +23,7 @@ imageCredit:
   source: Pexels
 h1: Self Assessment Tax Return Guide for Someone Who Stopped Trading Mid-Year
 summary: Stopping your business mid-year changes how you file your self assessment tax return. This guide explains the cessation rules, overlap relief, and the specific deadlines you need to hit as a sole trader, partnership, or limited company director.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Self Assessment Tax Return Guide: How to File If You Stopped Trading Mid-Year","description":"Stopped trading before 5 April? Your final return follows cessation rules, with overlap relief to claim and a £100 penalty if you file late.","url":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-tax-return-guide-stopped-trading-mid-year","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
-  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-tax-return-guide-stopped-trading-mid-year"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/self-assessment-tax-return-guide-stopped-trading-mid-year.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Sole Trader and Self Employment","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment"},{"@type":"ListItem","position":3,"name":"Self Assessment Tax Return Guide: How to File If You Stopped Trading Mid-Year","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/self-assessment-tax-return-guide-stopped-trading-mid-year"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need to file a self assessment return if I stopped trading and had no income in the final period?","acceptedAnswer":{"@type":"Answer","text":"Yes, you still need to file a final return even if you had zero profits or made a loss. HMRC needs the return to confirm you have ceased trading. If you do not file, they may continue to issue filing reminders and penalties. File a nil return and mark it as final."}},{"@type":"Question","name":"Can I claim overlap relief if I do not know the exact figure?","acceptedAnswer":{"@type":"Answer","text":"Yes, but you need to find the figure first. Check your opening year tax return or call HMRC''s self assessment helpline.
-  They can tell you the overlap relief amount on your record. If you cannot find it, estimate based on your opening year accounts and note that HMRC may query it."}},{"@type":"Question","name":"What happens if I miss the deadline for my final self assessment return?","acceptedAnswer":{"@type":"Answer","text":"Late filing penalties apply even for a final return. The first penalty is £100 if your return is up to 3 months late. After that, daily penalties of £10 per day (up to 90 days) apply. Further penalties of 5% of the tax due apply at 6 months and 12 months. File as soon as possible to stop penalties accumulating."}},{"@type":"Question","name":"Do I need to deregister from self assessment after ceasing trading?","acceptedAnswer":{"@type":"Answer","text":"Yes, but only after your final return is filed and any tax paid. Notify HMRC that you have ceased self employment and have no further income to report. They will update your record. Do not deregister before filing the final return, or you may struggle to submit it."}}]}]}'
+schema: ''
 faqs:
 - question: Do I need to file a self assessment return if I stopped trading and had no income in the final period?
   answer: Yes, you still need to file a final return even if you had zero profits or made a loss. HMRC needs the return to confirm you have ceased trading. If you do not file, they may continue to issue filing reminders and penalties. File a nil return and mark it as final.
@@ -32,8 +36,8 @@ faqs:
 metaTitle_prev: 'Self Assessment Tax Return Guide: Stopped Trading Mid-Year'
 metaDescription_prev: Filing a self assessment after stopping trading mid-year? This guide covers cessation rules, overlap relief, and final return deadlines for UK business
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -62,9 +66,9 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>Cessation Rules for Sole Traders</h2>
 
-<p>If you are a sole trader, your self assessment tax return for the year of cessation uses a different basis period than normal. Normally, sole traders are taxed on the profits of the accounting year ending in the tax year. That is the "current year basis". When you cease trading, you switch to a "final year basis".</p>
+<p>If you are a sole trader, your self assessment tax return for the year of cessation uses a different basis period than normal. From 2024/25 onwards, sole traders are taxed on the tax year basis: actual profits from 6 April to 5 April (or to the cessation date if earlier). The old "current year basis" and "final year basis" applied only up to 2023/24, which was the transition year.</p>
 
-<p>Your final return covers profits from the end of your last accounting period up to the cessation date. If you prepared accounts to 31 March each year and ceased on 30 September 2024, your final return covers 1 April 2024 to 30 September 2024. You also need to include any profits from the previous year that were not yet taxed.</p>
+<p>Under the tax year basis, your final return covers actual profits from 6 April of the tax year in which you ceased to the cessation date. If you prepared accounts to 31 March each year and ceased on 30 September 2024, your final return covers 6 April 2024 to 30 September 2024. If you have unused overlap relief from the old system that was not already deducted in the 2023/24 transition year, you can still claim it on your cessation return.</p>
 
 <p>This is where overlap relief comes in. Overlap relief arises when you started your business and had profits taxed twice in the opening years. HMRC allows you to deduct that overlap relief from your final year's profits. The relief reduces your taxable profit in the cessation year.</p>
 
@@ -72,7 +76,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>Example: Sole Trader Cessation</h3>
 
-<p>Take a freelance graphic designer in Bristol who started trading in 2018. They ceased trading on 31 January 2025. Their last set of accounts ran to 31 March 2024. Their final accounting period is 1 April 2024 to 31 January 2025. Profits for that period are £18,400. They have overlap relief of £2,100 from when they started. Their taxable profit for the final year is £16,300.</p>
+<p>Take a freelance graphic designer in Bristol who started trading in 2018. They ceased trading on 31 January 2025. Their last set of accounts ran to 31 March 2024. Under the tax year basis (which applies from 2024/25), their final accounting period runs from 6 April 2024 to 31 January 2025. Profits for that period are £18,400. They have overlap relief of £2,100 accumulated under the old system (not already used in the 2023/24 transition year). Their taxable profit for the final year is £16,300.</p>
 
 <p>They file their self assessment return for 2024/25 by the normal deadline of 31 January 2026. But they must mark the return as a "final return" and enter the cessation date. HMRC then knows not to expect future returns.</p>
 
@@ -148,7 +152,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>Common Mistakes on Cessation Returns</h2>
 
-<p>The most common mistakes we see as ICAEW qualified accountants are:</p>
+<p>The most common mistakes we see are:</p>
 
 <ul>
 <li>Filing a full-year return instead of a part-year return. This overstates profits and tax due.</li>

@@ -20,13 +20,13 @@ summary: "From April 2026, Making Tax Digital for Income Tax (MTD ITSA) will req
 schema: ""
 faqs:
   - question: "What is the deadline for MTD ITSA quarterly submissions?"
-    answer: "Each quarterly submission is due within one month of the quarter end. The quarters run from 6 April to 5 July, 6 July to 5 October, 6 October to 5 January, and 6 January to 5 April. So the first submission deadline for the 2026/27 tax year is 5 August 2026. Miss it and penalties start at £5 per day."
+    answer: "Each quarterly submission is due by the 7th of the second month after the quarter end. The quarters run from 6 April to 5 July, 6 July to 5 October, 6 October to 5 January, and 6 January to 5 April. The deadlines for 2026/27 are 7 August 2026, 7 November 2026, 7 February 2027 and 7 May 2027. Miss a deadline and you receive a penalty point under HMRC's points-based system. Accumulate 4 points and a £200 fixed penalty applies, with a further £200 for each subsequent default at the threshold."
   - question: "Can I use a spreadsheet for MTD ITSA?"
     answer: "Yes, but only if your spreadsheet can connect to HMRC's API through bridging software. A simple Excel file with no API connection will not work. Most accountants recommend using MTD-compatible accounting software like Xero, FreeAgent or QuickBooks instead, because the bridging software adds complexity and another cost."
   - question: "Does MTD ITSA apply to limited company directors?"
     answer: "MTD ITSA applies to your self employed income and rental income, not to your director's salary or dividends. If you are a director with no self employed work and no rental properties, MTD ITSA does not affect you directly. If you file a self assessment return because of dividend income above the allowance, that return remains annual for now."
   - question: "Will I still need to file a self assessment return under MTD ITSA?"
-    answer: "The annual self assessment return is being replaced by quarterly updates, an End of Period Statement, and a final declaration. You will no longer file the traditional SA100 or SA103 return if you are within MTD ITSA. However, you still need to declare any income that falls outside MTD ITSA (such as employment income or capital gains) through a separate process. Your accountant can handle this."
+    answer: "The annual self assessment return is being replaced by four quarterly updates and a final declaration. You will no longer file the traditional SA100 or SA103 return if you are within MTD ITSA. However, you still need to declare any income that falls outside MTD ITSA (such as employment income or capital gains) through a separate process. Your accountant can handle this."
 ---
 
 <h2>What Is Making Tax Digital for Income Tax?</h2>
@@ -35,8 +35,7 @@ faqs:
 
 <ul>
 <li>Keep digital records of your business income and expenses using MTD-compatible software</li>
-<li>Send a quarterly summary of your income and expenses to HMRC within one month of each quarter end</li>
-<li>Submit an End of Period Statement (EOPS) after your final quarter of the tax year</li>
+<li>Send a quarterly summary of your income and expenses to HMRC by the 7th of the second month after each quarter end (7 August, 7 November, 7 February and 7 May for standard tax-year quarters)</li>
 <li>Complete a final declaration to finalise your tax position for the year</li>
 </ul>
 
@@ -53,7 +52,7 @@ faqs:
 <li>Helping you organise your records digitally so they feed into the software correctly</li>
 <li>Submitting the quarterly updates on your behalf (or teaching you to do it yourself)</li>
 <li>Reviewing the quarterly figures for errors or missed deductions before they go to HMRC</li>
-<li>Preparing and submitting the End of Period Statement and final declaration</li>
+<li>Preparing and submitting the final declaration</li>
 <li>Managing any tax payments that arise from the quarterly figures</li>
 </ul>
 
@@ -65,11 +64,11 @@ faqs:
 
 <p>You need to categorise every transaction correctly every quarter. If you misclassify a business expense as personal, or miss a deductible cost, your quarterly figures are wrong. HMRC will see those numbers. If they trigger a tax calculation that is too low, you will owe interest and possibly penalties when the final declaration corrects it.</p>
 
-<p>You also need to understand the timing rules. A quarter runs from 6 April to 5 July, then 6 July to 5 October, then 6 October to 5 January, then 6 January to 5 April. You have one month from the end of each quarter to submit. Miss the deadline and penalties start at £5 per day for the first 5 days, then more.</p>
+<p>You also need to understand the timing rules. A quarter runs from 6 April to 5 July, then 6 July to 5 October, then 6 October to 5 January, then 6 January to 5 April. Each quarterly update is due by the 7th of the second month after the quarter end: 7 August, 7 November, 7 February and 7 May. Miss a deadline and you receive a penalty point under HMRC's points-based system. Accumulate 4 points and a £200 fixed penalty is charged, with a further £200 for each subsequent default at the threshold.</p>
 
 <p>For a sole trader with straightforward income and few transactions, doing it yourself is possible. For anyone with multiple income streams, rental properties, capital allowances, or a limited company director who also does self employed work, an accountant is the safer route.</p>
 
-<p>As ICAEW qualified accountants, we see clients every week who have made errors in their self assessment returns that cost them thousands in overpaid tax or penalties. Quarterly filing multiplies the risk of those errors because you are filing four times as often.</p>
+<p>We see clients every week who have made errors in their self assessment returns that cost them thousands in overpaid tax or penalties. Quarterly filing multiplies the risk of those errors because you are filing four times as often.</p>
 
 <h2>What Software Do You Need for MTD ITSA?</h2>
 
@@ -95,13 +94,13 @@ faqs:
 
 <p>Costs vary by firm, location, and complexity. For a sole trader with straightforward income, expect to pay between £80 and £150 per month for full MTD ITSA compliance including quarterly submissions and the year-end declaration. For a landlord with multiple properties, expect £100 to £200 per month. For a limited company director who also does self employed work, the cost may be higher because the structure is more complex.</p>
 
-<p>Compare that to the cost of a penalty. Late filing penalties for MTD ITSA start at £5 per day for the first 5 days, then £10 per day for the next 5 days, then £15 per day for the next 5 days, then £30 per day for the remaining days up to 90 days. After 90 days, additional penalties apply. A single missed quarter can cost you hundreds of pounds in penalties. An accountant costs less than that per month.</p>
+<p>Compare that to the cost of a penalty. MTD ITSA uses HMRC's points-based late submission system: each missed quarterly obligation adds one penalty point, and once you reach the threshold of 4 points a fixed £200 penalty is charged, with a further £200 for each subsequent default while at the threshold. Late payment carries percentage-based charges on top. A single missed quarter can cost you hundreds of pounds. An accountant costs less than that per month.</p>
 
 <h2>What Happens If You Ignore MTD ITSA?</h2>
 
 <p>If you are over the £50,000 threshold and do nothing, HMRC will send you reminders. If you still do nothing, penalties will start. The first penalty period runs from the first missed quarterly deadline. HMRC has made it clear that ignorance of the rules is not a defence. The legislation is in place. The system is live.</p>
 
-<p>There is no grace period. The first quarterly deadline for the 2026/27 tax year is 5 August 2026 (covering the period 6 April to 5 July 2026). If you have not submitted by that date, the penalty clock starts.</p>
+<p>There is no grace period. The first quarterly deadline for the 2026/27 tax year is 7 August 2026 (covering the period 6 April to 5 July 2026). If you have not submitted by that date, you receive a penalty point under HMRC's points-based system.</p>
 
 <h2>How to Choose a Making Tax Digital Accountant</h2>
 
@@ -133,7 +132,7 @@ faqs:
 
 <p>MTD ITSA is the biggest change to self assessment since the system was introduced in 1996. Quarterly filing is a significant shift in how you interact with HMRC. It requires discipline, organisation, and the right software. A good making tax digital accountant removes the administrative burden and gives you confidence that your filings are correct.</p>
 
-<p>If your turnover crossed the £50,000 threshold in the last 12 months, speak to us now. We can set up your software, organise your digital records, and handle the quarterly submissions from day one. <a href="/contact">Contact our team</a> to discuss your MTD ITSA requirements. We are ICAEW qualified and registered with HMRC as MTD agents. We work with Xero, FreeAgent, QuickBooks and Sage. We cover sole traders, landlords, partnerships and limited companies across every sector.</p>
+<p>If your turnover crossed the £50,000 threshold in the last 12 months, speak to us now. We can set up your software, organise your digital records, and handle the quarterly submissions from day one. <a href="/contact">Contact our team</a> to discuss your MTD ITSA requirements. We are registered with HMRC as MTD agents. We work with Xero, FreeAgent, QuickBooks and Sage. We cover sole traders, landlords, partnerships and limited companies across every sector.</p>
 
 <h2>Related articles in VAT and Making Tax Digital</h2>
 <ul>

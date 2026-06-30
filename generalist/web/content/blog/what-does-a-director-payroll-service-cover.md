@@ -20,7 +20,7 @@ summary: "If you run a limited company, paying yourself through payroll is not o
 schema: ""
 faqs:
   - question: "Do I need a director payroll service if I only pay myself £12,570 per year?"
-    answer: "Not necessarily. A £12,570 salary generates no income tax and no National Insurance. The calculation is simple. If you use FreeAgent, Xero or HMRC Basic PAYE Tools, you can run payroll yourself in about 10 minutes per month. A payroll service is worth it if you value your time more than £30 per month or if you simply want to outsource the task entirely."
+    answer: "Not necessarily. A £12,570 salary generates no income tax and no employee National Insurance (the primary NIC threshold is £12,570). However, a single-director company cannot claim Employment Allowance, so employer NIC of approximately £1,135 still applies (15% on the £7,570 above the £5,000 secondary threshold, from 6 April 2025). If you use FreeAgent, Xero or HMRC Basic PAYE Tools, you can run payroll yourself in about 10 minutes per month. A payroll service is worth it if you value your time more than £30 per month or if you simply want to outsource the task entirely."
   - question: "Can a director payroll service handle irregular or annual salary payments?"
     answer: "Yes. Directors are not subject to the same payroll rules as employees. You can pay yourself annually, quarterly or at irregular intervals. A good director payroll service will handle any payment schedule. Just make sure the service you choose does not charge per RTI submission if you only submit once a year."
   - question: "Does a director payroll service include P11D filing for benefits in kind?"
@@ -90,7 +90,7 @@ faqs:
 <h3>You Probably Do Not Need One If...</h3>
 
 <ul>
-<li>You take a fixed salary of exactly £12,570 per year (the personal allowance and primary NI threshold). This is the most common director salary. It generates no income tax and no National Insurance. The calculation is simple. You can run this yourself using FreeAgent, Xero, or even HMRC's Basic PAYE Tools for free.</li>
+<li>You take a fixed salary of exactly £12,570 per year (the personal allowance and primary NI threshold). This is a common director salary. It generates no income tax and no employee National Insurance. Bear in mind that a single-director company cannot claim Employment Allowance, so employer NIC of approximately £1,135 still applies (15% on £7,570 above the £5,000 secondary threshold from 6 April 2025). Many single-director companies therefore set salary at £5,000 to eliminate employer NIC entirely. The calculation is straightforward either way, and you can run it yourself using FreeAgent, Xero, or even HMRC's Basic PAYE Tools for free.</li>
 <li>You are comfortable using payroll software. FreeAgent and Xero both have built-in payroll modules. If you are already using one for your bookkeeping, you can run payroll yourself in about 10 minutes per month.</li>
 <li>You have only one director and no other employees. The admin load is low.</li>
 </ul>
@@ -98,7 +98,7 @@ faqs:
 <h3>You Probably Do Need One If...</h3>
 
 <ul>
-<li>You take a salary above the NI thresholds. Once you go above £12,570, employer NI at 13.8% kicks in. The calculations become more complex, especially if you vary the amount each month.</li>
+<li>You take a salary above the NI thresholds. Once you go above the £5,000 secondary NIC threshold, employer NI at 15% kicks in (from 6 April 2025). The calculations become more complex, especially if you vary the amount each month.</li>
 <li>You have multiple directors or employees. Payroll for a team of 5 or more people takes time. Mistakes cost money.</li>
 <li>You have benefits in kind. P11D filing is fiddly. A payroll service handles it.</li>
 <li>You simply do not want to think about it. Some directors value their time at £100+ per hour. Spending 10 hours per year on payroll admin is a false economy. A payroll service costs far less than that.</li>
@@ -202,7 +202,7 @@ faqs:
 
 <p>If you are unsure, speak to your accountant. A good accountant will tell you honestly whether you need payroll support or whether you can handle it yourself.</p>
 
-<p>If you do not yet have an accountant, our <a href="/contact">team is happy to advise</a> on your specific situation. We are ICAEW qualified and work with limited company directors across every sector, from freelancers in Shoreditch to engineering firms in the Northern Quarter.</p>
+<p>If you do not yet have an accountant, our <a href="/contact">team is happy to advise</a> on your specific situation. We are experienced accountants and work with limited company directors across every sector, from freelancers in Shoreditch to engineering firms in the Northern Quarter.</p>
 
 <h2>Final Point: Payroll Is Not Optional</h2>
 

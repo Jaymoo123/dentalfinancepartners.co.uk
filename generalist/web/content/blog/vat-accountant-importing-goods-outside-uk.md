@@ -20,7 +20,7 @@ summary: "If you import goods from outside the UK, standard VAT advice won't cut
 schema: ""
 faqs:
   - question: "Do I need a VAT accountant if I only import occasionally?"
-    answer: "If you import less than once a quarter and the values are low, you may manage with standard bookkeeping software and your existing accountant. But the rules still apply. If your import value exceeds £90,000 in any 12-month period, you must register for VAT. And if you do not use PVA correctly, you lose cash flow. A one-off review with a VAT accountant who understands imports costs far less than a correction later."
+    answer: "If you import less than once a quarter and the values are low, you may manage with standard bookkeeping software and your existing accountant. But the rules still apply. VAT registration is triggered by your taxable turnover (the value of taxable supplies you make) exceeding £90,000 in any rolling 12-month period, not by the value of goods you import. If you do not use PVA correctly, you also lose cash flow. A one-off review with a VAT accountant who understands imports costs far less than a correction later."
   - question: "What is the difference between import VAT and customs duty?"
     answer: "Import VAT is a tax on the value of the goods plus freight and insurance. It is recoverable as input VAT if you are VAT registered and use the goods for business purposes. Customs duty is a separate tax based on the commodity code and country of origin. Duty is not recoverable. It is a cost of goods sold. A VAT accountant ensures both are correctly accounted for on your return and in your profit calculations."
   - question: "Can I use postponed VAT accounting for all imports?"
@@ -35,7 +35,7 @@ faqs:
 
 <p>This is where a specialist <strong>vat accountant</strong> becomes essential. Not just any accountant who files your quarterly return. One who understands the mechanics of postponed VAT accounting, customs valuation methods, and the specific HMRC forms that apply to importers.</p>
 
-<p>At <a href="/about">Holloway Davies</a>, our ICAEW qualified team works with businesses across the country who bring in goods from China, the EU, the US, and beyond. This article explains exactly what a VAT accountant does for an importing business and why the standard high street accountant may not be enough.</p>
+<p>At <a href="/about">Holloway Davies</a>, our experienced team works with businesses across the country who bring in goods from China, the EU, the US, and beyond. This article explains exactly what a VAT accountant does for an importing business and why the standard high street accountant may not be enough.</p>
 
 <h2>Postponed VAT Accounting: The Single Most Important Change for Importers</h2>
 
@@ -69,9 +69,9 @@ faqs:
 
 <h2>VAT Registration Threshold and Importers</h2>
 
-<p>The standard UK VAT registration threshold is £90,000 in taxable turnover over a rolling 12-month period. But importers face a different rule. If you import goods into the UK from outside the UK, you must register for VAT regardless of your turnover if the value of imported goods exceeds £90,000 in any 12-month period. This catches many businesses off guard.</p>
+<p>The UK VAT registration threshold is £90,000 in taxable turnover over a rolling 12-month period (the value of taxable supplies you make, not the value of goods you import). There is no separate import-value registration trigger under UK VAT law. In practice, most businesses that import goods for resale or use in taxable business activity will find that their sales revenue approaches the £90,000 threshold well before their import spend does, but it is turnover that triggers the obligation, not import values.</p>
 
-<p>A <strong>vat accountant</strong> monitors your import levels and flags when you approach this threshold. They also handle the registration application using form VAT1 and ensure you register within the 30-day window. Late registration carries penalties. And if you are importing without being registered, you cannot reclaim the import VAT you paid at the border. That is a direct cost to your business.</p>
+<p>A <strong>vat accountant</strong> monitors your taxable turnover and flags when you approach the £90,000 threshold. They also handle the registration application using form VAT1 and ensure you register within the 30-day window once the threshold is breached. Late registration carries penalties. And if you are importing without being registered, you cannot reclaim the import VAT you paid at the border. That is a direct cost to your business.</p>
 
 <h2>Importing from the EU vs. Rest of World</h2>
 
@@ -91,7 +91,7 @@ faqs:
 
 <p>If your business has grown and you now import regularly, your existing accountant may not have import experience. Ask them directly: do you handle postponed VAT accounting? Do you reconcile C79 certificates? Do you know the customs valuation rules? If they hesitate, find a specialist.</p>
 
-<p>At <a href="/blog/vat-and-making-tax-digital">Holloway Davies</a>, we work with importers across Manchester, Birmingham, Bristol, and London. We see the same issues repeatedly: missed C79 certificates, incorrect PVA application, and failure to register for VAT when import values cross the threshold. These are all fixable. But fixing them after the fact costs time and money.</p>
+<p>At <a href="/blog/vat-and-making-tax-digital">Holloway Davies</a>, we work with importers across Manchester, Birmingham, Bristol, and London. We see the same issues repeatedly: missed C79 certificates, incorrect PVA application, and failure to register for VAT once taxable turnover crosses the £90,000 threshold. These are all fixable. But fixing them after the fact costs time and money.</p>
 
 <h2>Practical Steps for Your Business</h2>
 
@@ -101,10 +101,10 @@ faqs:
 <li>Check whether you use postponed VAT accounting. If not, instruct your customs agent to switch to procedure code 40 00 001.</li>
 <li>Access your monthly postponed VAT accounting statement from the HMRC online service. Reconcile it against your customs entries.</li>
 <li>If you pay import VAT at the border, collect every C79 certificate. Store them in a single file. Reconcile them against your customs entries before your VAT return.</li>
-<li>Check your turnover and import values against the £90,000 threshold. If you are close, register for VAT now. Do not wait until you cross it.</li>
+<li>Check your taxable turnover against the £90,000 threshold. If you are close, register for VAT now. Do not wait until you cross it.</li>
 <li>Speak to a <strong>vat accountant</strong> who understands importers. Ask about their experience with PVA, customs valuation, and duty relief schemes.</li>
 </ul>
 
 <p>Importing goods is a growth strategy for many UK businesses. The VAT and customs rules should not hold you back. With the right accountant, they become a manageable part of your compliance, not a source of stress.</p>
 
-<p>If you want to discuss your specific situation, <a href="/contact">contact our team</a>. We are ICAEW qualified and work with importers across every sector, from ecommerce retailers in Shoreditch to manufacturing businesses in the Jewellery Quarter.</p>
+<p>If you want to discuss your specific situation, <a href="/contact">contact our team</a>. We work with importers across every sector, from ecommerce retailers in Shoreditch to manufacturing businesses in the Jewellery Quarter.</p>

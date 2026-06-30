@@ -7,19 +7,17 @@ generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
 metaTitle: 'Capital Allowances on Property: What Qualifies in the UK'
-metaDescription: Cut tax by claiming capital allowances on commercial property and holiday lets. The Annual Investment Allowance gives 100% relief up to £1,000,000.
+metaDescription: Cut tax by claiming capital allowances on commercial property. The Annual Investment Allowance gives 100% relief up to £1,000,000.
 altText: A modern commercial office building in Manchester city centre with glass facade and reception area, representing a property eligible for capital allowances claims.
 image: https://images.pexels.com/photos/20703515/pexels-photo-20703515.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'Capital Allowances on Property: A Complete UK Guide'
-summary: Capital allowances on property let you claim tax relief on the cost of certain fixtures, fittings, and building features. This guide explains what qualifies, how to calculate your claim, and the key rules for commercial and furnished holiday let properties.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Capital Allowances on Property: A Complete UK Guide","description":"Cut tax by claiming capital allowances on commercial property and holiday lets. The Annual Investment Allowance gives 100% relief up to £1,000,000.","url":"https://www.hollowaydavies.co.uk/blog/corporation-tax/capital-allowances-on-property","datePublished":"2026-05-20","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway
-  Davies Ltd","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/corporation-tax/capital-allowances-on-property"},"inLanguage":"en-GB","image":"https://images.pexels.com/photos/20703515/pexels-photo-20703515.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Corporation Tax","item":"https://www.hollowaydavies.co.uk/blog/corporation-tax"},{"@type":"ListItem","position":3,"name":"Capital Allowances on Property: A Complete UK Guide","item":"https://www.hollowaydavies.co.uk/blog/corporation-tax/capital-allowances-on-property"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I claim capital allowances on a residential buy-to-let property?","acceptedAnswer":{"@type":"Answer","text":"No. Standard residential buy-to-let properties do not qualify for capital allowances on fixtures and fittings. You can claim replacement of domestic items relief on white goods and furniture instead. The only exception is furnished holiday lets, which are treated as a trade for capital allowances purposes."}},{"@type":"Question","name":"What is the difference between the Annual Investment Allowance and Writing Down Allowances?","acceptedAnswer":{"@type":"Answer","text":"The Annual Investment Allowance (AIA) gives 100% relief on qualifying plant and machinery in the year you buy it, up to £1,000,000. Writing Down Allowances (WDA) give a percentage of the cost each year on a reducing
-  balance basis: 18% for main rate assets and 6% for special rate assets like integral building features. You use the AIA first, then claim WDAs on any remaining balance."}},{"@type":"Question","name":"Do I need a surveyor to claim capital allowances on a commercial property purchase?","acceptedAnswer":{"@type":"Answer","text":"Not legally, but it is strongly recommended. A surveyor or capital allowances specialist can identify all qualifying plant and machinery and prepare a detailed apportionment of the purchase price. HMRC expects a reasonable apportionment, and a professional report provides the evidence to support your claim. The cost of the survey is itself allowable as a capital allowance."}},{"@type":"Question","name":"What happens to capital allowances when I sell a commercial property?","acceptedAnswer":{"@type":"Answer","text":"When you sell a commercial property, you must make a balancing adjustment to your capital allowances pool. If the sale proceeds are less than the tax written-down value, you get a balancing allowance. If the proceeds are more, you have a balancing charge that increases your taxable profits. The buyer can claim capital allowances on the qualifying plant they acquire, based on the apportioned purchase price."}}]}]}'
+summary: Capital allowances on property let you claim tax relief on the cost of certain fixtures, fittings, and building features. This guide explains what qualifies, how to calculate your claim, and the key rules for commercial properties. Note that the furnished holiday lettings regime was abolished from April 2025.
+schema: ''
 faqs:
 - question: Can I claim capital allowances on a residential buy-to-let property?
-  answer: No. Standard residential buy-to-let properties do not qualify for capital allowances on fixtures and fittings. You can claim replacement of domestic items relief on white goods and furniture instead. The only exception is furnished holiday lets, which are treated as a trade for capital allowances purposes.
+  answer: No. Standard residential buy-to-let properties do not qualify for capital allowances on fixtures and fittings. You can claim replacement of domestic items relief on white goods and furniture instead. The furnished holiday lettings (FHL) regime previously allowed trade treatment for capital allowances, but it was abolished from April 2025. Former FHLs are now treated as ordinary property businesses and no longer qualify for this treatment.
 - question: What is the difference between the Annual Investment Allowance and Writing Down Allowances?
-  answer: 'The Annual Investment Allowance (AIA) gives 100% relief on qualifying plant and machinery in the year you buy it, up to £1,000,000. Writing Down Allowances (WDA) give a percentage of the cost each year on a reducing balance basis: 18% for main rate assets and 6% for special rate assets like integral building features. You use the AIA first, then claim WDAs on any remaining balance.'
+  answer: 'The Annual Investment Allowance (AIA) gives 100% relief on qualifying plant and machinery in the year you buy it, up to £1,000,000. Writing Down Allowances (WDA) give a percentage of the cost each year on a reducing balance basis: 14% for main-rate assets from 1 April 2026 (companies) and 6 April 2026 (unincorporated businesses); the rate was 18% before those dates. Special-rate assets such as integral building features remain at 6%. You use the AIA first, then claim WDAs on any remaining balance.'
 - question: Do I need a surveyor to claim capital allowances on a commercial property purchase?
   answer: Not legally, but it is strongly recommended. A surveyor or capital allowances specialist can identify all qualifying plant and machinery and prepare a detailed apportionment of the purchase price. HMRC expects a reasonable apportionment, and a professional report provides the evidence to support your claim. The cost of the survey is itself allowable as a capital allowance.
 - question: What happens to capital allowances when I sell a commercial property?
@@ -34,14 +32,14 @@ imageCredit:
   source_url: https://www.pexels.com/photo/terraced-houses-in-london-20703515/
 metaTitle_prev: 'Capital Allowances on Property: A Complete UK Guide'
 metaDescription_prev: Claim capital allowances on property to reduce your tax bill. Learn what qualifies, how to claim, and avoid common mistakes. Practical UK guide
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-<p>If you own or lease a commercial property, or a furnished holiday let, you could be missing out on significant tax relief. Capital allowances on property let you deduct the cost of certain fixtures, fittings, and building features from your taxable profits. The rules are detailed, but the savings can be substantial.</p>
+<p>If you own or lease a commercial property, you could be missing out on significant tax relief. Capital allowances on property let you deduct the cost of certain fixtures, fittings, and building features from your taxable profits. The rules are detailed, but the savings can be substantial.</p>
 
-<p>This guide covers what qualifies, how to calculate your claim, and the common pitfalls to avoid. We are ICAEW qualified accountants, and we deal with these claims regularly for clients across the UK, from a Manchester software consultancy with a converted warehouse office to a Bristol landlord with a portfolio of holiday lets.</p>
+<p>This guide covers what qualifies, how to calculate your claim, and the common pitfalls to avoid. We deal with these claims regularly for clients across the UK, from a Manchester software consultancy with a converted warehouse office to a Bristol landlord with a portfolio of holiday lets.</p>
 
 <h2>What Are Capital Allowances on Property?</h2>
 
@@ -57,11 +55,11 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <ul>
 <li><strong>Commercial properties</strong> used for trade purposes: offices, shops, factories, warehouses, and similar.</li>
-<li><strong>Furnished holiday lets (FHLs)</strong> that meet the qualifying conditions: available for letting 210+ days per year, actually let 105+ days, and not occupied by the same person for more than 31 consecutive days.</li>
+<li><strong>Furnished holiday lets (FHLs) (historical):</strong> before April 2025, FHLs meeting the qualifying conditions were treated as a trade and could claim capital allowances on furniture, fittings, and equipment. The FHL regime was abolished from 6 April 2025. From 2025/26 onwards, former FHLs are treated as ordinary property businesses and do not qualify for this treatment.</li>
 <li><strong>Properties used in a trade</strong> where the building is integral to the business, such as a hotel or care home.</li>
 </ul>
 
-<p>Residential properties that are not furnished holiday lets do not qualify for most capital allowances. Buy-to-let residential properties are excluded. If you let a standard residential flat in Leeds city centre, you cannot claim capital allowances on the fixtures. You would instead claim replacement of domestic items relief on white goods and furniture.</p>
+<p>Residential properties do not qualify for capital allowances. Buy-to-let residential properties are excluded, and the furnished holiday lettings exception was abolished from April 2025. If you let a standard residential flat in Leeds city centre, you cannot claim capital allowances on the fixtures. You would instead claim replacement of domestic items relief on white goods and furniture.</p>
 
 <h2>What Specifically Qualifies as Plant and Machinery?</h2>
 
@@ -93,9 +91,9 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>Writing Down Allowances (WDA)</h3>
 
-<p>If you cannot use the AIA (for example, because you have already used the £1,000,000 limit in the year), you can claim writing down allowances. These give you a percentage of the cost each year. The main rate is 18% per year on a reducing balance basis. The special rate (for integral features and long-life assets) is 6% per year.</p>
+<p>If you cannot use the AIA (for example, because you have already used the £1,000,000 limit in the year), you can claim writing down allowances. These give you a percentage of the cost each year. The main rate is 14% per year on a reducing balance basis from 1 April 2026 (for companies) and from 6 April 2026 (for sole traders and partnerships); the rate was 18% before those dates. The special rate (for integral features and long-life assets) is 6% per year, unchanged.</p>
 
-<p>For example, if you buy a commercial property with qualifying plant worth £200,000 and you have no AIA remaining, you claim 18% of £200,000 (£36,000) in year one. In year two, you claim 18% of the remaining £164,000 (£29,520), and so on.</p>
+<p>For example, if you buy a commercial property with qualifying plant worth £200,000 and you have no AIA remaining, you claim 14% of £200,000 (£28,000) in year one (at the 2026/27 rate; pre-April 2026 the rate was 18%, giving £36,000). In year two, you claim 14% of the remaining £172,000 (£24,080), and so on.</p>
 
 <h3>Full Expensing</h3>
 
@@ -111,20 +109,18 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>There are also pooling rules. When you buy a property, the qualifying plant enters a pool. You claim writing down allowances on the pool each year. If you sell the property, you may need to make a balancing adjustment to the pool.</p>
 
-<h2>Furnished Holiday Lets: A Special Case</h2>
+<h2>Furnished Holiday Lets: The Regime Has Now Ended</h2>
 
-<p>Furnished holiday lets are treated as a trade for capital allowances purposes. This means you can claim on furniture, furnishings, and equipment, as well as the integral features of the property. A typical FHL claim might include beds, sofas, tables, chairs, curtains, carpets, a washing machine, a dishwasher, a television, and the heating system.</p>
+<p>The furnished holiday lettings (FHL) regime was abolished from 6 April 2025. Before that date, FHLs were treated as a trade for capital allowances purposes, which meant you could claim on furniture, furnishings, and equipment, as well as the integral features of the property. A typical pre-2025 FHL claim might have included beds, sofas, tables, chairs, curtains, carpets, a washing machine, a dishwasher, a television, and the heating system.</p>
 
-<p>The AIA applies to FHLs, so you can claim 100% relief on qualifying items in the year you buy them. If you spend £15,000 furnishing a holiday let in the Lake District, you can deduct the full £15,000 from your FHL profits in that year.</p>
-
-<p>Be careful with the qualifying conditions. HMRC reviews FHL claims closely. If your property does not meet the letting conditions in a particular year, you lose the capital allowances treatment for that period.</p>
+<p>From 2025/26 onwards, former FHLs are treated as ordinary residential property businesses. That means no capital allowances on furniture or fittings, and no AIA on those items. If you have a residual capital allowances pool from claims made before April 2025, speak to an accountant about how transitional rules may apply to your remaining balance.</p>
 
 <h2>Common Mistakes and Pitfalls</h2>
 
 <p>We see the same errors repeatedly. Here are the ones to watch for:</p>
 
 <ul>
-<li><strong>Claiming on residential buy-to-let properties.</strong> Standard residential lets do not qualify. You cannot claim capital allowances on a flat in Soho or a house in Digbeth unless it is a furnished holiday let.</li>
+<li><strong>Claiming on residential buy-to-let properties.</strong> Standard residential lets do not qualify. You cannot claim capital allowances on a flat in Soho or a house in Digbeth. The furnished holiday lettings regime that previously allowed this for short-term lets was abolished from April 2025.</li>
 <li><strong>Claiming on the building structure.</strong> The walls, roof, and floors are not plant. Only the fixtures and fittings inside qualify.</li>
 <li><strong>Not apportioning the purchase price correctly.</strong> HMRC can challenge an unreasonable apportionment. If you claim 50% of the purchase price as plant, expect questions.</li>
 <li><strong>Ignoring the pooling rules.</strong> When you sell a property, you must adjust the pool. If you do not, you overclaim allowances.</li>
@@ -151,10 +147,10 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>When to Get Professional Help</h2>
 
-<p>Capital allowances on property are not straightforward. The rules are detailed, and HMRC challenges claims that are not properly supported. If you are buying a commercial property, or if you have a portfolio of furnished holiday lets, it pays to get specialist advice.</p>
+<p>Capital allowances on property are not straightforward. The rules are detailed, and HMRC challenges claims that are not properly supported. If you are buying a commercial property, or if you have a residual pool from a former FHL business that operated before April 2025, it pays to get specialist advice.</p>
 
-<p>We handle capital allowances claims as part of our broader <a href="/services">accounting services</a>. Our ICAEW qualified team can review your property portfolio, identify qualifying assets, and prepare the claim. We also work with surveyors and capital allowances specialists for larger claims.</p>
+<p>We handle capital allowances claims as part of our broader <a href="/services">accounting services</a>. Our team can review your property portfolio, identify qualifying assets, and prepare the claim. We also work with surveyors and capital allowances specialists for larger claims.</p>
 
-<p>If you are unsure whether your property qualifies, or if you have a claim from a previous year that you missed, speak to us. The deadline for amending a return is tight, but we can often still make a claim through a separate capital allowances computation.</p>
+<p>If you are unsure whether your property qualifies, or if you have a claim from a previous year that you missed, or if you have a residual FHL pool from before April 2025, speak to us. The deadline for amending a return is tight, but we can often still make a claim through a separate capital allowances computation.</p>
 
 <p>For more on how capital allowances fit into your overall tax planning, read our <a href="/blog/corporation-tax">corporation tax blog</a> or visit our <a href="/fundamentals">fundamentals page</a> for a broader overview of business tax reliefs.</p>

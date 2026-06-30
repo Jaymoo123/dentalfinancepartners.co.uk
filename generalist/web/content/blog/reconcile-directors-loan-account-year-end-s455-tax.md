@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
 metaTitle: "Reconcile Director Loan Account Year End: Avoid S455 Tax"
-metaDescription: "Reconcile your director's loan account before year end to avoid a 33.75% S455 tax charge. Practical steps, worked examples, and HMRC deadlines for 2025/26."
+metaDescription: "Reconcile your director's loan account before year end to avoid S455 tax (33.75% for 2025/26 loans, 35.75% from 6 April 2026). Practical steps, worked examples, and HMRC deadlines."
 altText: "Director reviewing loan account statements on laptop with calculator and company accounts folder on desk"
 image: "/blog/reconcile-directors-loan-account-year-end-s455-tax.jpg"
 imageCredit:
@@ -16,20 +16,20 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/crop-anonymous-financier-planning-budget-writing-numbers-in-notebook-4386339/"
   source: "Pexels"
 h1: "How to Reconcile Your Director's Loan Account Before Year End to Avoid S455 Tax"
-summary: "If your director's loan account is overdrawn at year end, HMRC can charge you 33.75% tax under S455. This guide walks through exactly how to reconcile the account, when the charge applies, and how to clear the balance before the deadline."
+summary: "If your director's loan account is overdrawn at year end, HMRC can charge S455 tax on the outstanding balance: 33.75% for loans made in 2025/26, or 35.75% for loans made on or after 6 April 2026. This guide walks through exactly how to reconcile the account, when the charge applies, and how to clear the balance before the deadline."
 schema: ""
 faqs:
   - question: "What is the 9 month deadline for repaying a director's loan?"
-    answer: "The deadline is 9 months and 1 day after the company's year end. For a 31 March year end, the deadline is 1 January. For a 30 April year end, it is 1 February. If you repay the loan before this deadline, no S455 tax is due. If you miss it, the company pays 33.75% on the outstanding balance."
+    answer: "The deadline is 9 months and 1 day after the company's year end. For a 31 March year end, the deadline is 1 January. For a 30 April year end, it is 1 February. If you repay the loan before this deadline, no S455 tax is due. If you miss it, the company pays S455 tax on the outstanding balance: 33.75% for loans made in 2025/26, or 35.75% for loans made on or after 6 April 2026."
   - question: "Can I clear an overdrawn DLA with a dividend?"
     answer: "Yes, if the company has sufficient distributable reserves. You need to follow the correct procedure: board minutes, dividend voucher, and a record in the company's books. The dividend is credited to the DLA, reducing the debit balance. Do not backdate dividends. They must be voted on or before the date you need the credit to apply."
   - question: "What happens if I never repay the director's loan?"
-    answer: "The company pays the 33.75% S455 tax and cannot reclaim it. If the company later writes off the loan, HMRC treats it as a distribution (dividend) in your hands. You then pay income tax on the amount written off, at your marginal dividend rate (8.75%, 33.75%, or 39.35% for 2025/26). This is a double tax hit. Avoid it by repaying or properly documenting the loan."
+    answer: "The company pays S455 tax (33.75% for loans made in 2025/26, 35.75% for loans made on or after 6 April 2026) and cannot reclaim it. If the company later writes off the loan, HMRC treats it as a distribution (dividend) in your hands. You then pay income tax on the amount written off, at your marginal dividend rate (8.75%, 33.75%, or 39.35% for 2025/26). This is a double tax hit. Avoid it by repaying or properly documenting the loan."
   - question: "Is there a minimum amount before S455 applies?"
-    answer: "Yes. If the total overdrawn balance across all directors is below £10,000 at any point in the year, and the loan is repaid within 9 months of the year end, S455 does not apply. But if the balance exceeds £10,000 at any time, the full amount is potentially chargeable. Check the rules carefully. Many directors mistakenly think a small overdrawn balance is safe when it is not."
+    answer: "No. S455 applies to any overdrawn director's loan balance, regardless of the amount. Even a balance of £1 outstanding more than 9 months and 1 day after the accounting period end is chargeable. The £10,000 figure is relevant only to the beneficial loan benefit-in-kind (BIK) rules: if your loan exceeds £10,000 at any point in the tax year, the interest saved is a taxable employment benefit reported on a P11D. That is a separate charge from s.455, not an exemption from it. Many directors mistakenly think a small overdrawn balance is safe from s.455. It is not."
 ---
 
-<p>If your limited company has ever lent you money, or paid a personal bill on your behalf, your director's loan account (DLA) is probably overdrawn. An overdrawn DLA at your company's year end can trigger a 33.75% tax charge under Section 455 of the Corporation Tax Act 2010. That is a significant cost if you miss the deadline to clear it.</p>
+<p>If your limited company has ever lent you money, or paid a personal bill on your behalf, your director's loan account (DLA) is probably overdrawn. An overdrawn DLA at your company's year end can trigger a tax charge under Section 455 of the Corporation Tax Act 2010: 33.75% for loans made in 2025/26, or 35.75% for loans made on or after 6 April 2026. That is a significant cost if you miss the deadline to clear it.</p>
 
 <p>Reconciling your director's loan account before year end is not optional. It is a core part of year end planning that every director should understand. This guide covers what S455 tax is, how to reconcile the account, the key deadlines, and what happens if you miss them.</p>
 
@@ -45,14 +45,13 @@ faqs:
 
 <h2>When Does S455 Tax Apply?</h2>
 <p>Section 455 applies when a director's loan account is overdrawn (debit balance) at the company's year end, and the loan is not repaid within 9 months and 1 day of that year end.</p>
-<p>The tax is 33.75% of the overdrawn amount. It is payable by the company, not by you personally. The company must pay it as part of its corporation tax bill, due 9 months and 1 day after the year end.</p>
+<p>The tax equals the dividend upper rate for the year the loan was made: 33.75% for loans made in 2025/26, or 35.75% for loans made on or after 6 April 2026. It is payable by the company, not by you personally. The company must pay it as part of its corporation tax bill, due 9 months and 1 day after the year end.</p>
 <p>There are some exceptions. S455 does not apply if:</p>
 <ul>
-<li>The total overdrawn balance across all directors is below £10,000 and the loan is repaid within 9 months of the year end</li>
 <li>The loan is a qualifying loan (e.g. for a house purchase, but strict conditions apply)</li>
 <li>The loan is made in the ordinary course of a money-lending business</li>
 </ul>
-<p>For most small limited companies, these exceptions do not apply. If your DLA is overdrawn at year end, plan for the 33.75% charge.</p>
+<p>For most small limited companies, these exceptions do not apply. If your DLA is overdrawn at year end, plan for the S455 charge at the rate above. Note separately that if the loan exceeds £10,000 at any point in the tax year, the interest saved is also a taxable benefit-in-kind reported on a P11D under the beneficial loan rules. That is a different charge from s.455, not an exemption from it.</p>
 
 <h2>How to Reconcile Your Director's Loan Account Before Year End</h2>
 <p>Reconciling the DLA means checking every transaction in the account against the supporting documents. Here is the step by step process.</p>
@@ -109,7 +108,7 @@ faqs:
 <h2>The 9 Month Repayment Window</h2>
 <p>If your DLA is overdrawn at year end, you have 9 months and 1 day to repay the balance. For a company with a 31 March year end, the deadline is 1 January of the following year. For a 30 April year end, it is 1 February.</p>
 <p>If you repay within this window, the company does not have to pay S455 tax. The loan is treated as repaid, and no charge arises.</p>
-<p>If you do not repay, the company must pay 33.75% of the overdrawn amount to HMRC. The company reports this on its corporation tax return (CT600) and pays it as part of the corporation tax bill.</p>
+<p>If you do not repay, the company must pay S455 tax on the overdrawn amount to HMRC (33.75% for loans made in 2025/26, or 35.75% for loans made on or after 6 April 2026). The company reports this on its corporation tax return (CT600) and pays it as part of the corporation tax bill.</p>
 <p>If the loan is later repaid, the company can reclaim the S455 tax. But that is a separate process and takes time. It is far better to avoid the charge in the first place.</p>
 
 <h2>How to Clear an Overdrawn DLA Before the Deadline</h2>
@@ -123,7 +122,7 @@ faqs:
 <p>One warning: do not use a "bed and breakfasting" arrangement. If you repay the loan just before year end and then immediately take it out again, HMRC can treat the repayment as not genuine. The repayment must be real and permanent.</p>
 
 <h2>What Happens if You Miss the Deadline</h2>
-<p>If the loan is still outstanding after 9 months and 1 day, the company pays the 33.75% S455 tax. The company reports the loan on the CT600 and pays the tax with its corporation tax.</p>
+<p>If the loan is still outstanding after 9 months and 1 day, the company pays S455 tax (33.75% for loans made in 2025/26, or 35.75% from 6 April 2026). The company reports the loan on the CT600 and pays the tax with its corporation tax.</p>
 <p>The company can reclaim the tax later if the loan is repaid. But the reclaim process is not automatic. You must submit a claim to HMRC, and it can take weeks or months to get the money back.</p>
 <p>If the loan is never repaid, the company is stuck with the tax. HMRC also has the power to treat the loan as a distribution (dividend) if it is written off, which triggers income tax on you personally.</p>
 
@@ -138,7 +137,7 @@ faqs:
 <li>Document all repayments and dividends properly</li>
 <li>Check the balance again after the year end to confirm it is cleared</li>
 </ul>
-<p>As ICAEW qualified accountants, we see directors caught out by S455 every year. The tax is avoidable with proper planning. If your DLA is overdrawn, <a href="/contact">speak to our team</a> before the year end to agree a plan.</p>
+<p>We see directors caught out by S455 every year. The tax is avoidable with proper planning. If your DLA is overdrawn, <a href="/contact">speak to our team</a> before the year end to agree a plan.</p>
 
 <h2>Common Mistakes Directors Make</h2>
 <p>Here are the most frequent errors we see:</p>
@@ -151,4 +150,4 @@ faqs:
 
 <h2>When to Get Professional Help</h2>
 <p>If your DLA is overdrawn by more than £10,000, or if you have complex transactions (asset transfers, multiple directors, group companies), get professional advice. The S455 rules are strict, and the penalties for getting it wrong are significant.</p>
-<p>We handle DLA reconciliations as part of our <a href="/services">year end accounting services</a>. If you are unsure about your DLA balance, <a href="/contact">book a call</a> before the year end. It is much cheaper to fix it now than to pay the 33.75% charge later.</p>
+<p>We handle DLA reconciliations as part of our <a href="/services">year end accounting services</a>. If you are unsure about your DLA balance, <a href="/contact">book a call</a> before the year end. It is much cheaper to fix it now than to pay the S455 charge later.</p>

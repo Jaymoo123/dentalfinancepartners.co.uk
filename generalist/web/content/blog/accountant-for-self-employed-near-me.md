@@ -91,7 +91,7 @@ faqs:
 
 <p>In the UK, anyone can call themselves an accountant. There is no legal protection on the title. You want someone registered with a recognised professional body. The main ones are ICAEW, ACCA, CIMA, and AAT.</p>
 
-<p>As ICAEW qualified accountants, we are regulated by the Institute of Chartered Accountants in England and Wales. That means we follow strict professional standards, carry professional indemnity insurance, and have a complaints process if something goes wrong. A high street bookkeeper without professional qualifications might be cheaper, but you have less protection.</p>
+<p>We work to high professional standards, carry professional indemnity insurance, and have a complaints process if something goes wrong. A high street bookkeeper without professional qualifications might be cheaper, but you have less protection.</p>
 
 <h3>Do They Use Modern Software?</h3>
 

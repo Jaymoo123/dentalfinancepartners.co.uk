@@ -31,9 +31,9 @@ faqs:
 
 <p>If you are a director of a UK limited company, or thinking about incorporating, the question of <strong>accountant cost limited company</strong> is probably near the top of your list. And it should be. Accountancy fees are a recurring business cost, not a one-off. Get the structure wrong and you either overpay for services you do not need or underpay and miss critical compliance deadlines.</p>
 
-<p>This guide covers what you can expect to pay a limited company accountant in the 2025/26 tax year. We use real numbers from our own ICAEW-qualified practice and the wider market. No vague ranges. No "it depends" without showing you what it depends on.</p>
+<p>This guide covers what you can expect to pay a limited company accountant in the 2025/26 tax year. We use real numbers from our own practice and the wider market. No vague ranges. No "it depends" without showing you what it depends on.</p>
 
-<p>As ICAEW qualified accountants working with businesses across the UK, we see the full spectrum of fee structures. From a freelance consultant in Manchester paying £80 a month for a basic compliance package to a 12-employee engineering firm in Bristol paying £450 a month for full management accounts and tax planning. This article maps out the landscape so you can benchmark your own costs.</p>
+<p>Working with businesses across the UK, we see the full spectrum of fee structures. From a freelance consultant in Manchester paying £80 a month for a basic compliance package to a 12-employee engineering firm in Bristol paying £450 a month for full management accounts and tax planning. This article maps out the landscape so you can benchmark your own costs.</p>
 
 <h2>The Baseline: What Every Limited Company Accountant Must Do</h2>
 <p>Before we talk about fees, you need to understand what a limited company accountant <em>must</em> do for you. These are not optional extras. They are statutory requirements.</p>
@@ -116,7 +116,7 @@ faqs:
 <p>If your company qualifies for R&D tax credits, preparing the claim is specialist work. The R&D Additional Information Form (R&D AIF) requires a detailed technical narrative and cost breakdown. Some accountants charge separately for this, typically £500 to £1,500 per claim, depending on complexity. Others include it in the monthly fee for higher-tier clients.</p>
 
 <h3>Director's Loan Account</h3>
-<p>If you borrow from the company and do not repay within 9 months and 1 day of the year-end, you trigger S455 tax at 33.75%. Managing a director's loan account properly takes more time. If yours is messy, expect your accountant to charge more to sort it out.</p>
+<p>If you borrow from the company and do not repay within 9 months and 1 day of the year-end, you trigger S455 tax at 33.75% for loans made in 2025/26, rising to 35.75% for loans made from 6 April 2026 (FA 2026 s.4). Managing a director's loan account properly takes more time. If yours is messy, expect your accountant to charge more to sort it out.</p>
 
 <h3>Location</h3>
 <p>Accountant fees vary by region. A firm in central London (Canary Wharf, Soho) will charge 20-40% more than a firm in Sheffield or Newcastle. But with remote working, many firms now offer national coverage at regional rates. We work with clients across the UK from our base and charge consistent rates regardless of location.</p>
@@ -149,7 +149,7 @@ faqs:
 <li><strong>Transparent pricing:</strong> The best firms publish their fees or give you a clear written quote before you start. Avoid firms that only give vague ranges.</li>
 <li><strong>Proactive advice:</strong> A good accountant does not just file your returns. They call you before the year-end to discuss dividend strategy, pension contributions, and tax planning.</li>
 </ul>
-<p>If you are looking for a firm that combines ICAEW qualification with practical, hands-on support for growing businesses, <a href="/about">our team at Holloway Davies</a> works with limited companies across every sector. We offer fixed monthly fees with no hidden charges.</p>
+<p>If you are looking for a firm that combines specialist expertise with practical, hands-on support for growing businesses, <a href="/about">our team at Holloway Davies</a> works with limited companies across every sector. We offer fixed monthly fees with no hidden charges.</p>
 
 <h2>Can You Do It Yourself and Save the Accountant Cost?</h2>
 <p>Yes, you can file your own annual accounts and CT600. The software exists. Companies House and HMRC have online filing portals. But here is the reality for most directors.</p>

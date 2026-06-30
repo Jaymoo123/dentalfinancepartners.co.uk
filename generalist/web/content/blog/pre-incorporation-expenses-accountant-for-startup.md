@@ -1,4 +1,4 @@
----
+﻿---
 title: What Happens to Costs Incurred Before Your Company Existed? Pre-Incorporation Expenses Explained
 slug: pre-incorporation-expenses-accountant-for-startup
 canonical: https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/pre-incorporation-expenses-accountant-for-startup
@@ -17,12 +17,10 @@ imageCredit:
   source: Pexels
 h1: What Happens to Costs Incurred Before Your Company Existed? Pre-Incorporation Expenses Explained
 summary: If you spent money on software, equipment, or professional fees before your company was legally registered, those costs do not disappear. This post explains how your limited company can reclaim the VAT and claim corporation tax relief on pre-incorporation expenses.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"What Happens to Costs Incurred Before Your Company Existed? Pre-Incorporation Expenses Explained","description":"Reclaim corporation tax relief on costs paid before your company existed, from software to developer fees, via the director''s loan account.","url":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/pre-incorporation-expenses-accountant-for-startup","datePublished":"2026-05-17","dateModified":"2026-06-12","author":{"@type":"Person","name":"James Holloway","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW)","knowsAbout":["UK SME taxation","Corporation tax","Personal
-  taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/pre-incorporation-expenses-accountant-for-startup"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/pre-incorporation-expenses-accountant-for-startup.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Incorporation and Structure","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure"},{"@type":"ListItem","position":3,"name":"What Happens to Costs Incurred Before Your Company Existed? Pre-Incorporation Expenses Explained","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/pre-incorporation-expenses-accountant-for-startup"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I reclaim VAT on a laptop I bought before my company was registered?","acceptedAnswer":{"@type":"Answer","text":"No, not in most cases. The VAT invoice is in your personal name, not the company''s. HMRC only allows VAT recovery by the person who received the supply. If the supplier can reissue the invoice in the company''s name after the company is VAT-registered, you may be able to reclaim it, but this is rare. The full cost including VAT is still deductible for corporation tax."}},{"@type":"Question","name":"How do I record pre-incorporation expenses in my company accounts?","acceptedAnswer":{"@type":"Answer","text":"Record
-  the expense in the profit and loss account as normal, with the credit going to the director''s loan account. When the company repays you, it reduces the director''s loan balance. Do not record the repayment as a dividend or salary. Use Xero, FreeAgent, or QuickBooks to create an expense claim from the director, coded to the relevant expense account."}},{"@type":"Question","name":"Do I need a formal agreement to transfer pre-incorporation costs to my company?","acceptedAnswer":{"@type":"Answer","text":"Yes, you should have a written resolution or board resolution confirming that the company adopts the pre-incorporation contracts and expenses. This is not legally required for small amounts, but it provides clear evidence for HMRC if they query the deduction. Keep the resolution in the company''s minute book alongside the original receipts."}},{"@type":"Question","name":"What happens if I was a sole trader before incorporating? Can the company claim the same expenses again?","acceptedAnswer":{"@type":"Answer","text":"No. The sole trader''s expenses were already claimed on their self assessment return. The company can take over assets and liabilities at market value on incorporation, but it does not get a second deduction for the same costs. You will need a proper incorporation balance sheet showing the transfer of assets. Professional advice is recommended here, especially for goodwill and capital assets."}}]}]}'
+schema: ""
 faqs:
 - question: Can I reclaim VAT on a laptop I bought before my company was registered?
-  answer: No, not in most cases. The VAT invoice is in your personal name, not the company's. HMRC only allows VAT recovery by the person who received the supply. If the supplier can reissue the invoice in the company's name after the company is VAT-registered, you may be able to reclaim it, but this is rare. The full cost including VAT is still deductible for corporation tax.
+  answer: Yes, in most cases. Under VAT Regulations 1995 reg.111, a newly VAT-registered company can claim pre-registration input tax on its first VAT return. For goods such as a laptop, the company can recover the VAT if the goods were purchased within 4 years before the VAT registration date and are still on hand at the time of registration. For services, the window is 6 months before registration. Crucially, the original invoice does not need to be in the company's name; an invoice in the founder's personal name is acceptable provided the other conditions are met.
 - question: How do I record pre-incorporation expenses in my company accounts?
   answer: Record the expense in the profit and loss account as normal, with the credit going to the director's loan account. When the company repays you, it reduces the director's loan balance. Do not record the repayment as a dividend or salary. Use Xero, FreeAgent, or QuickBooks to create an expense claim from the director, coded to the relevant expense account.
 - question: Do I need a formal agreement to transfer pre-incorporation costs to my company?
@@ -32,8 +30,8 @@ faqs:
 metaTitle_prev: 'Pre-incorporation expenses: Accountant for startup costs'
 metaDescription_prev: Can a limited company claim back VAT or corporation tax relief on costs incurred before incorporation? Yes, but the rules are specific. Here is how it
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW)
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -41,7 +39,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>All of that happened before your company legally existed. Can the company now reclaim the VAT on those purchases? Can it deduct those costs from its corporation tax bill?</p>
 
-<p>The answer is yes, but only if you follow the correct process. As <a href="/about">ICAEW qualified accountants</a>, we deal with this question regularly from new clients. The rules are specific, and getting them wrong means losing relief you are entitled to.</p>
+<p>The answer is yes, but only if you follow the correct process. As <a href="/about">experienced accountants</a>, we deal with this question regularly from new clients. The rules are specific, and getting them wrong means losing relief you are entitled to.</p>
 
 <p>This post covers the corporation tax treatment, the VAT treatment, how to record the transactions, and what happens if you were a sole trader before incorporating. If you are looking for an <strong>accountant for startup</strong> costs and pre-incorporation planning, the detail below will save you time and money.</p>
 
@@ -86,20 +84,25 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>VAT Treatment: Can the Company Reclaim the VAT?</h2>
 
-<p>This is where the rules get more restrictive. If you personally paid for goods or services before the company was VAT-registered, the company cannot normally reclaim the VAT on those purchases. Here is why.</p>
+<p>Better news here than many founders expect. Under VAT Regulations 1995 reg.111, a newly VAT-registered company can reclaim pre-registration input tax on its very first VAT return, subject to time limits and conditions.</p>
 
-<p>VAT is reclaimable only by a VAT-registered person who received the supply. If you bought the laptop as an individual before the company existed, the VAT invoice is in your name, not the company's. HMRC does not allow the company to reclaim that VAT, even if the company later adopts the contract.</p>
+<p>The rules are:</p>
 
-<p>There is one exception. If the supplier can reissue the VAT invoice in the company's name, and the supply was made after the company was registered for VAT, the company can reclaim the VAT. But this only works if the supplier agrees to reissue, and only if the original supply date falls within the company's VAT registration period.</p>
+<ul>
+<li><strong>Goods (equipment, stock, materials):</strong> the company can recover the VAT if the goods were purchased within 4 years before the VAT registration date and are still on hand (held by the business) at the date of registration.</li>
+<li><strong>Services (professional fees, software subscriptions, developer work):</strong> the company can recover the VAT if the services were received within 6 months before the VAT registration date.</li>
+</ul>
+
+<p>Critically, the invoice does not need to be in the company's name. An invoice in the founder's personal name is acceptable provided the purchase was made for business purposes and the relevant time-window conditions are satisfied.</p>
 
 <p>For practical purposes, this means:</p>
 
 <ul>
-<li>If you bought the laptop on 1 May and the company registered for VAT on 1 September, you cannot reclaim the VAT on that laptop. The supply happened before the company existed and before it was VAT-registered.</li>
-<li>If you bought the laptop on 1 May, the company registered for VAT on 1 June, and the supplier reissues the invoice dated after 1 June, the company can reclaim the VAT. This is rare in practice.</li>
+<li>If you bought the laptop on 1 May and the company registered for VAT on 1 September (within 4 years, and the laptop is still on hand), the company can reclaim the VAT on its first VAT return even though the invoice is in your personal name.</li>
+<li>If the developer fees of £2,400 were paid on 1 April and the company registered for VAT on 1 September, those services fall outside the 6-month window and the input VAT on those fees cannot be reclaimed.</li>
 </ul>
 
-<p>The safest approach is to delay significant purchases until after the company is registered and, ideally, after it is VAT-registered if the turnover justifies it. If you cannot wait, accept that the VAT element is a sunk cost. You still get corporation tax relief on the full amount including VAT.</p>
+<p>The practical advice is: register for VAT promptly once the company is incorporated, keep all receipts, and check that any goods are still on hand at the registration date. Where the 4-year or 6-month windows cannot be met, corporation tax relief on the full amount (including the irrecoverable VAT element) still applies.</p>
 
 <h2>What If You Were a Sole Trader Before Incorporating?</h2>
 
@@ -133,7 +136,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p><strong>Mistake 2: Not adopting the expenses formally.</strong> HMRC can challenge the deduction if there is no evidence the company adopted the contracts. A simple board resolution or written director's resolution is enough. Keep it in the company's minute book.</p>
 
-<p><strong>Mistake 3: Claiming VAT you cannot reclaim.</strong> Do not put the pre-incorporation VAT through your VAT return unless the invoice is in the company's name and dated after VAT registration. HMRC will assess it back with interest.</p>
+<p><strong>Mistake 3: Getting the pre-incorporation VAT claim wrong.</strong> Under reg.111 you can reclaim pre-registration input tax on your first VAT return, but only within the permitted windows: goods must have been purchased within 4 years before VAT registration and must still be on hand at that date; services must have been received within 6 months before registration. Do not claim VAT on goods already sold or consumed before registration, or on services received outside the 6-month window. HMRC will assess disallowed amounts back with interest.</p>
 
 <p><strong>Mistake 4: Mixing pre-incorporation costs with the director's loan account incorrectly.</strong> If you also loaned the company money for working capital, keep those separate. The pre-incorporation expense reimbursement is not a loan. It is a repayment of costs incurred on the company's behalf.</p>
 
@@ -155,6 +158,6 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>Summary</h2>
 
-<p>Pre-incorporation expenses are deductible for corporation tax if the company formally adopts them and reimburses you. VAT on those expenses is generally not recoverable unless the supplier reissues the invoice after VAT registration. Record the reimbursement through the director's loan account, not as a dividend or salary.</p>
+<p>Pre-incorporation expenses are deductible for corporation tax if the company formally adopts them and reimburses you. VAT on those expenses can be reclaimed on the company's first VAT return under VAT Regulations 1995 reg.111: goods purchased within 4 years before VAT registration (and still on hand at that date) and services received within 6 months before registration qualify, even where the original invoice is in the founder's personal name. Record the reimbursement through the director's loan account, not as a dividend or salary.</p>
 
 <p>Keep your receipts. Pass a resolution. And if the numbers are significant, get an accountant involved before you file your first corporation tax return.</p>

@@ -76,7 +76,7 @@ faqs:
 
 <p>The dividend income of £8,000 goes onto the final declaration only. Not into quarterly updates.</p>
 
-<h2>Dividend Allowance and Tax Rates for 2025/26</h2>
+<h2>Dividend Allowance and Tax Rates: 2025/26 and 2026/27</h2>
 
 <p>For the 2025/26 tax year, the dividend allowance is £500. That means the first £500 of dividend income is tax-free. Above that, dividends are taxed at:</p>
 <ul>
@@ -84,7 +84,9 @@ faqs:
 <li>33.75% higher rate (£50,271 to £125,140)</li>
 <li>39.35% additional rate (above £125,140)</li>
 </ul>
-<p>Dividends sit on top of your other income for tax band purposes. So in our example, the consultant has £65,000 self-employment profit. After the personal allowance of £12,570, their taxable self-employment income is £52,430. That puts them in higher rate territory above £50,270. The £8,000 dividend income then gets taxed at 33.75% on the £7,500 above the £500 allowance, giving a dividend tax bill of £2,531.25.</p>
+<p>From 6 April 2026 (the 2026/27 tax year, when MTD ITSA starts for higher-rate taxpayers), dividend rates rise under FA 2026 s.4 to 10.75% (basic) / 35.75% (higher) / 39.35% (additional). The £500 allowance is unchanged.</p>
+
+<p>Dividends sit on top of your other income for tax band purposes. So in our example, the consultant has £65,000 self-employment profit. After the personal allowance of £12,570, their taxable self-employment income is £52,430. That puts them in higher rate territory above £50,270. The £8,000 dividend income then gets taxed on the £7,500 above the £500 allowance. At the 2025/26 rate that is 33.75%, giving a dividend tax bill of £2,531.25. From 6 April 2026 (when this consultant enters MTD ITSA), the rate rises to 35.75%, giving a bill of £2,681.25 (£7,500 x 35.75%).</p>
 
 <p>Under MTD ITSA, that calculation happens in the final declaration. Not in quarterly updates.</p>
 
@@ -112,7 +114,7 @@ faqs:
 
 <p>But be careful. If you are a director of that company, your salary from the company is employment income (PAYE). That also stays out of quarterly updates. Only your sole trade or property income triggers quarterly reporting.</p>
 
-<p>If you are unsure whether your income sources trigger MTD ITSA, check the HMRC guidance or speak to your accountant. As ICAEW qualified accountants, we see many business owners with mixed income streams, and the rules are not always intuitive.</p>
+<p>If you are unsure whether your income sources trigger MTD ITSA, check the HMRC guidance or speak to your accountant. We see many business owners with mixed income streams, and the rules are not always intuitive.</p>
 
 <h2>Penalties for Late MTD ITSA Submissions</h2>
 
@@ -141,7 +143,7 @@ faqs:
 <li>MTD ITSA requires quarterly digital updates for self-employment income only.</li>
 <li>Dividend income from a separate share portfolio does not need quarterly reporting.</li>
 <li>Dividends go onto the annual final declaration, alongside all other non-trading income.</li>
-<li>The £500 dividend allowance and tax rates (8.75%, 33.75%, 39.35%) remain unchanged under MTD ITSA.</li>
+<li>Dividend rates rise from 6 April 2026 (the first MTD ITSA year) to 10.75% / 35.75% / 39.35% (FA 2026 s.4); the £500 dividend allowance is unchanged.</li>
 <li>If you are above the threshold, you must use MTD-compatible software from April 2026.</li>
 <li>Penalties apply for late submissions, but only on the parts of the return that require quarterly updates.</li>
 <li>Voluntary adoption is possible if your income is below the threshold.</li>
