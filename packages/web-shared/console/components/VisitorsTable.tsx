@@ -76,6 +76,11 @@ export default function VisitorsTable({
   const [q, setQ] = useState("");
   const [filter, setFilter] = useState<Filter>("all");
   const [sort, setSort] = useState<Sort>("recent");
+  // Render only the first slice by default. Search/filter/sort still run over
+  // every loaded row; this only caps how many <tr> the browser paints at once,
+  // which is what makes opening this tab feel sluggish with a large sample.
+  const [showAll, setShowAll] = useState(false);
+  const VISIBLE_CAP = 100;
 
   const converted = rows.filter((r) => r.converted).length;
   const returning = rows.filter((r) => r.total_sessions > 1).length;
@@ -99,6 +104,8 @@ export default function VisitorsTable({
     });
     return out;
   }, [rows, q, filter, sort]);
+
+  const visible = showAll ? filtered : filtered.slice(0, VISIBLE_CAP);
 
   const chip = (key: Filter, label: string) => (
     <button
@@ -145,8 +152,20 @@ export default function VisitorsTable({
         </select>
       </div>
 
-      <p className="mt-2 text-xs text-slate-500">
-        Showing {filtered.length} of {rows.length}. Click any visitor to see their full journey.
+      <p className="mt-2 flex flex-wrap items-center gap-2 text-xs text-slate-500">
+        <span>
+          Showing {visible.length} of {filtered.length}
+          {filtered.length !== rows.length ? ` (filtered from ${rows.length})` : ""}. Click any visitor to see their full journey.
+        </span>
+        {!showAll && filtered.length > VISIBLE_CAP && (
+          <button
+            type="button"
+            onClick={() => setShowAll(true)}
+            className="rounded-full bg-slate-100 px-3 py-1 font-semibold text-slate-600 hover:bg-slate-200"
+          >
+            Show all {filtered.length}
+          </button>
+        )}
       </p>
 
       <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
@@ -173,7 +192,7 @@ export default function VisitorsTable({
                 <td colSpan={12} className="px-3 py-4 text-center text-slate-400">No visitors match.</td>
               </tr>
             ) : (
-              filtered.map((v) => (
+              visible.map((v) => (
                 <tr key={v.visitor_id} className={`border-t border-slate-100 ${v.converted ? "bg-emerald-50/40" : ""}`}>
                   <td className="px-3 py-2">
                     <Link href={`${visitorBasePath}/${v.visitor_id}`} className="font-mono text-xs text-emerald-700 underline">

@@ -9,11 +9,18 @@
  * generalised. Property keeps its own copy until adoption is separately approved.
  */
 
+import { unstable_cache } from "next/cache";
+
 const SUPABASE_URL =
   process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL || "";
 const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || "";
 
-async function rest<T>(path: string, params: Record<string, string>): Promise<T[]> {
+/** Default cache TTL for console reads (seconds). Admin-only data refreshed
+ * manually, so a short shared window turns repeat loads / tab-switches into
+ * ~zero DB work without any meaningful staleness. Tune per-call where needed. */
+const DEFAULT_TTL = 60;
+
+async function restUncached<T>(path: string, params: Record<string, string>): Promise<T[]> {
   if (!SUPABASE_URL || !SERVICE_KEY) return [];
   const qs = new URLSearchParams(params).toString();
   const res = await fetch(`${SUPABASE_URL}/rest/v1/${path}?${qs}`, {
@@ -22,6 +29,36 @@ async function rest<T>(path: string, params: Record<string, string>): Promise<T[
   });
   if (!res.ok) return [];
   return (await res.json()) as T[];
+}
+
+/**
+ * Cached Supabase REST read. The result is memoised in Next's Data Cache keyed
+ * by (path, params) for `ttlSeconds`, so the heavy rollup views (each a full
+ * Seq Scan of the growing web_events table) are recomputed at most once per
+ * window per distinct query no matter how often an operator refreshes or
+ * switches tabs. Works under `force-dynamic` (it is a separate cache layer).
+ * Pass ttlSeconds=0 to bypass the cache (paginated / per-visitor drill-downs
+ * that must stay fresh, or large per-event payloads we don't want to retain).
+ */
+function rest<T>(
+  path: string,
+  params: Record<string, string>,
+  ttlSeconds: number = DEFAULT_TTL,
+): Promise<T[]> {
+  if (ttlSeconds <= 0) return restUncached<T>(path, params);
+  // unstable_cache throws ("incrementalCache missing") when called outside a
+  // Next request/render scope (unit tests, scripts). It is always present during
+  // RSC rendering in the app, but degrade gracefully to an uncached read so the
+  // helper never crashes a non-request caller.
+  try {
+    return unstable_cache(
+      () => restUncached<T>(path, params),
+      ["console-rest", path, JSON.stringify(params)],
+      { revalidate: ttlSeconds, tags: ["console-data"] },
+    )().catch(() => restUncached<T>(path, params));
+  } catch {
+    return restUncached<T>(path, params);
+  }
 }
 
 function withCountry(
@@ -351,6 +388,8 @@ export function getVisitorJourney(siteKey: string, visitorId: string) {
 }
 
 export function getVisitorEvents(siteKey: string, visitorId: string) {
+  // Per-visitor drill-down: keep fresh (ttl 0) and uncached — large per-event
+  // props payloads we don't want to retain in the Data Cache.
   return rest<VisitorEvent>("web_events", {
     site_key: `eq.${siteKey}`,
     visitor_id: `eq.${visitorId}`,
@@ -358,7 +397,7 @@ export function getVisitorEvents(siteKey: string, visitorId: string) {
     select: "ts,session_id,event_name,page_path,props",
     order: "ts.asc",
     limit: "2000",
-  });
+  }, 0);
 }
 
 export function getLeadsForSite(siteKey: string, limit = 200) {
@@ -381,20 +420,34 @@ export function getLeadForVisitor(siteKey: string, visitorId: string) {
 }
 
 export function getLeadsPage(siteKey: string, offset: number, limit: number) {
+  // Paginated ledger: keep fresh (ttl 0) so paging never serves a stale page.
   return rest<LeadInfo>("leads", {
     source: `eq.${siteKey}`,
     select: LEAD_COLS,
     order: "created_at.desc",
     offset: String(offset),
     limit: String(limit),
-  });
+  }, 0);
 }
 
 export async function getCountryOptions(siteKey: string): Promise<string[]> {
-  const rows = await rest<{ country: string | null }>("vw_visitor_journey", {
-    site_key: `eq.${siteKey}`,
-    select: "country",
-  });
+  // Distinct countries for the filter dropdown. Read straight from web_sessions
+  // (≈11k rows, indexed by site_key) instead of re-aggregating vw_visitor_journey
+  // — the old source did a full Seq Scan of the entire web_events table (~115 ms)
+  // purely to populate a rarely-changing dropdown, AND that same heavy view is
+  // already computed by getTopVisitors on the same page load. Cached for an hour:
+  // the set of countries a site has ever seen changes very slowly.
+  const rows = await rest<{ country: string | null }>(
+    "web_sessions",
+    {
+      site_key: `eq.${siteKey}`,
+      is_bot: "eq.false",
+      human_confirmed: "eq.true",
+      country: "not.is.null",
+      select: "country",
+    },
+    3600,
+  );
   return Array.from(
     new Set(rows.map((r) => r.country).filter((c): c is string => !!c)),
   ).sort();

@@ -11,6 +11,7 @@
  * Server-only: never import into a client component.
  */
 
+import { unstable_cache } from "next/cache";
 import type { SiteKpis, TimePoint } from "./adminData";
 export type { SiteKpis };
 
@@ -18,7 +19,9 @@ const SUPABASE_URL =
   process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL || "";
 const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || "";
 
-async function rest<T>(path: string, params: Record<string, string>): Promise<T[]> {
+const DEFAULT_TTL = 60;
+
+async function restUncached<T>(path: string, params: Record<string, string>): Promise<T[]> {
   if (!SUPABASE_URL || !SERVICE_KEY) return [];
   const qs = new URLSearchParams(params).toString();
   const res = await fetch(`${SUPABASE_URL}/rest/v1/${path}?${qs}`, {
@@ -27,6 +30,31 @@ async function rest<T>(path: string, params: Record<string, string>): Promise<T[
   });
   if (!res.ok) return [];
   return (await res.json()) as T[];
+}
+
+/**
+ * Cached Supabase REST read for the estate (cross-site) layer. Same rationale as
+ * adminData.rest(): the estate home page fires ~27 reads per load (two of them
+ * full-history scans) with nothing memoised. A short shared TTL collapses repeat
+ * loads to ~zero DB work. ttlSeconds=0 bypasses the cache. See adminData.ts.
+ */
+function rest<T>(
+  path: string,
+  params: Record<string, string>,
+  ttlSeconds: number = DEFAULT_TTL,
+): Promise<T[]> {
+  if (ttlSeconds <= 0) return restUncached<T>(path, params);
+  // See adminData.rest(): unstable_cache throws outside a request/render scope;
+  // degrade gracefully to an uncached read so non-request callers never crash.
+  try {
+    return unstable_cache(
+      () => restUncached<T>(path, params),
+      ["console-rest", path, JSON.stringify(params)],
+      { revalidate: ttlSeconds, tags: ["console-data"] },
+    )().catch(() => restUncached<T>(path, params));
+  } catch {
+    return restUncached<T>(path, params);
+  }
 }
 
 const n = (v: unknown): number => Number(v) || 0;
@@ -191,11 +219,13 @@ type RawCalcConversion = {
  * This is the authoritative list for the site switcher.
  */
 export async function getSitesRegistry(): Promise<SiteRegistryEntry[]> {
+  // The site registry changes ~never; cache an hour. Fetched on every console
+  // page (and it serially gates the per-site dashboard's main query batch).
   const rows = await rest<RawSite>("sites", {
     select: "site_key,display_name,domain,niche,active",
     order: "site_key.asc",
     limit: "50",
-  });
+  }, 3600);
   return rows.map((r) => ({
     site_key: r.site_key,
     display_name: r.display_name,
@@ -214,7 +244,7 @@ export async function getActiveSites(): Promise<SiteRegistryEntry[]> {
     active: "eq.true",
     order: "site_key.asc",
     limit: "50",
-  });
+  }, 3600);
   return rows.map((r) => ({
     site_key: r.site_key,
     display_name: r.display_name,

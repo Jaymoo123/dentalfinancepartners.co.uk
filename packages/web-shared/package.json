@@ -68,6 +68,7 @@
     "./console/components/KpiWindowCarousel": "./console/components/KpiWindowCarousel.tsx",
     "./console/components/CountrySelect": "./console/components/CountrySelect.tsx",
     "./console/components/VisitorsTable": "./console/components/VisitorsTable.tsx",
+    "./console/components/DeferredMount": "./console/components/DeferredMount.tsx",
     "./console/components/ExperimentCards": "./console/components/ExperimentCards.tsx",
     "./console/components/experimentMetaTypes": "./console/components/experimentMetaTypes.ts",
     "./experiments/types": "./experiments/types.ts",

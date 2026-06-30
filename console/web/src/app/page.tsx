@@ -23,6 +23,7 @@ import KpiWindowCarousel, {
   type KpiPage,
 } from "@accounting-network/web-shared/console/components/KpiWindowCarousel";
 import { Sparkline } from "@accounting-network/web-shared/console/components/Sparkline";
+import DeferredMount from "@accounting-network/web-shared/console/components/DeferredMount";
 import { TrendChart } from "@/components/TrendChart";
 import { WeeklyOverlayChart } from "@/components/WeeklyOverlayChart";
 import { CategoryBarChart } from "@/components/CategoryBarChart";
@@ -268,19 +269,25 @@ export default async function EstatePage() {
         <p className="mt-1 text-xs text-slate-500">
           All sites combined. Sessions and visitors are GB-scoped; leads count all countries.
         </p>
-        <div className="mt-3 grid gap-3 lg:grid-cols-3">
-          <TrendChart data={estate30d} metric="sessions" label="Sessions · daily" formatType="day" />
-          <TrendChart data={estate30d} metric="humans" label="Visitors · daily" formatType="day" />
-          <TrendChart data={estate30d} metric="leads" label="Leads · daily" formatType="day" />
-        </div>
-        <div className="mt-3 grid gap-3 lg:grid-cols-3">
-          <WeeklyOverlayChart data={estate30d} metric="sessions" label="Sessions by weekday (4 weeks)" />
-          <WeeklyOverlayChart data={estate30d} metric="humans" label="Visitors by weekday (4 weeks)" />
-          <WeeklyOverlayChart data={estate30d} metric="leads" label="Leads by weekday (4 weeks)" />
-        </div>
-        <div className="mt-3">
-          <CategoryBarChart label="Leads by site (all time)" data={leadsBySite} color="#059669" valueLabel="Leads" />
-        </div>
+        <DeferredMount>
+          <div className="mt-3 grid gap-3 lg:grid-cols-3">
+            <TrendChart data={estate30d} metric="sessions" label="Sessions · daily" formatType="day" />
+            <TrendChart data={estate30d} metric="humans" label="Visitors · daily" formatType="day" />
+            <TrendChart data={estate30d} metric="leads" label="Leads · daily" formatType="day" />
+          </div>
+        </DeferredMount>
+        <DeferredMount>
+          <div className="mt-3 grid gap-3 lg:grid-cols-3">
+            <WeeklyOverlayChart data={estate30d} metric="sessions" label="Sessions by weekday (4 weeks)" />
+            <WeeklyOverlayChart data={estate30d} metric="humans" label="Visitors by weekday (4 weeks)" />
+            <WeeklyOverlayChart data={estate30d} metric="leads" label="Leads by weekday (4 weeks)" />
+          </div>
+        </DeferredMount>
+        <DeferredMount minHeight={320}>
+          <div className="mt-3">
+            <CategoryBarChart label="Leads by site (all time)" data={leadsBySite} color="#059669" valueLabel="Leads" />
+          </div>
+        </DeferredMount>
 
         {/* Site comparison — one line per site */}
         <h2 className="mt-10 text-lg font-bold text-slate-900">Site comparison (last 30 days)</h2>
@@ -288,31 +295,35 @@ export default async function EstatePage() {
           One line per site. Sessions and visitors are GB-scoped; conversion is a 7-day rolling
           lead conversion rate (converted sessions / sessions).
         </p>
-        <div className="mt-3 grid gap-3 lg:grid-cols-3">
-          <MultiSiteTrendChart data={cmp.sessions} series={cmp.series} label="Daily sessions" />
-          <MultiSiteTrendChart data={cmp.visitors} series={cmp.series} label="Daily visitors" />
-          <MultiSiteTrendChart
-            data={cmp.conversion}
-            series={cmp.series}
-            label="Lead conversion rate"
-            asPercent
-            note="converted sessions / sessions, 7-day rolling"
-          />
-        </div>
+        <DeferredMount>
+          <div className="mt-3 grid gap-3 lg:grid-cols-3">
+            <MultiSiteTrendChart data={cmp.sessions} series={cmp.series} label="Daily sessions" />
+            <MultiSiteTrendChart data={cmp.visitors} series={cmp.series} label="Daily visitors" />
+            <MultiSiteTrendChart
+              data={cmp.conversion}
+              series={cmp.series}
+              label="Lead conversion rate"
+              asPercent
+              note="converted sessions / sessions, 7-day rolling"
+            />
+          </div>
+        </DeferredMount>
 
         {/* Visitor trend — weekly average daily visitors, all time */}
         <h2 className="mt-10 text-lg font-bold text-slate-900">Visitor trend (weekly average)</h2>
         <p className="mt-1 text-xs text-slate-500">
           Each point is one week; the value is that week&apos;s average visitors per day. All time, GB-scoped — a new point lands every week.
         </p>
-        <div className="mt-3 max-w-2xl">
-          <MultiSiteTrendChart
-            data={estateWeekly.points}
-            series={estateWeekly.series}
-            label="Avg daily visitors · per week"
-            note="all time"
-          />
-        </div>
+        <DeferredMount>
+          <div className="mt-3 max-w-2xl">
+            <MultiSiteTrendChart
+              data={estateWeekly.points}
+              series={estateWeekly.series}
+              label="Avg daily visitors · per week"
+              note="all time"
+            />
+          </div>
+        </DeferredMount>
 
         {/* Per-site comparison strip */}
         <h2 className="mt-10 text-lg font-bold text-slate-900">Sites (last 7 days)</h2>
