@@ -439,6 +439,29 @@ export function getLeadForVisitor(siteKey: string, visitorId: string) {
   }).then((rows) => rows[0] ?? null);
 }
 
+export interface FormLeadCount {
+  form_id: string;
+  lead_sessions: number;
+  lead_events: number;
+  form_start_sessions: number;
+}
+
+/**
+ * Leads + form-starts captured through a single capture surface, by its formId
+ * (from vw_form_lead_counts). Durable and formId-based, so a surface that has
+ * stopped being an A/B experiment (e.g. the result gate, form_id
+ * 'calc_result_gate') can still be tracked. Returns null if it has no events yet.
+ */
+export async function getResultGateLeads(siteKey: string): Promise<FormLeadCount | null> {
+  const rows = await rest<FormLeadCount>("vw_form_lead_counts", {
+    site_key: `eq.${siteKey}`,
+    form_id: "eq.calc_result_gate",
+    select: "form_id,lead_sessions,lead_events,form_start_sessions",
+    limit: "1",
+  });
+  return rows[0] ?? null;
+}
+
 export function getLeadsPage(siteKey: string, offset: number, limit: number) {
   // Paginated ledger: keep fresh (ttl 0) so paging never serves a stale page.
   return rest<LeadInfo>("leads", {

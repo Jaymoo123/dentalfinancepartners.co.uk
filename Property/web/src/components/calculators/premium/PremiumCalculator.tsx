@@ -50,14 +50,12 @@ import { track } from "@accounting-network/web-shared/analytics/track";
 import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
 import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 import { ResultGateModal } from "@/components/calculators/ResultGateModal";
-import { useExperiment } from "@/components/experiments/useExperiment";
-import { trackExperimentView } from "@/lib/experiments/exposure";
 import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
 import { btnPrimary } from "@/components/ui/layout-utils";
 
-// The result-gate interstitial (result_gate_capture treatment) shows at most once
-// per session: the cheeky capture moment. After it has shown, the per-calc "See
-// your result" button reveals the result directly without re-popping.
+// The result-gate interstitial shows at most once per session: the cheeky capture
+// moment. After it has shown, the per-calc "See your result" button reveals the
+// result directly without re-popping.
 let gateModalShownThisSession = false;
 
 /* ---------------------------------------------------------------------------
@@ -477,16 +475,14 @@ export function PremiumCalculator({
   const interactedRef = useRef(false);
   const computeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // result_gate_capture experiment (in-blog only). Treatment hides the result
-  // behind a "See your result" button + interstitial capture; control keeps the
-  // inline form below. Converted visitors are never gated (instant access).
-  const variant = useExperiment("result_gate_capture");
-  const inExperiment = placement === "blog" && !isConverted();
-  const gated = variant === "treatment" && inExperiment;
-  const measuredControl = variant === "control" && inExperiment;
+  // Result gate (shipped default 2026-06-30, was the result_gate_capture treatment;
+  // concluded to treatment — it netted more leads than the ungated control). In-blog
+  // calculators hold the result behind a "See your result" button + interstitial
+  // capture. Converted visitors are never gated (instant access), and non-blog
+  // placements (calculator pages, embeds) are never gated either.
+  const gated = placement === "blog" && !isConverted();
   const [revealed, setRevealed] = useState(false);
   const [gateOpen, setGateOpen] = useState(false);
-  const expViewedRef = useRef(false);
   const showResult = !gated || revealed;
 
   // Shared event context: which tool, where, and that this is the premium kind.
@@ -515,12 +511,6 @@ export function PremiumCalculator({
       interactedRef.current = true;
       track("calc_result_viewed", base);
     }
-    // result_gate_capture exposure (both arms): once per session per calc, when the
-    // reader reaches a result. Excludes converted visitors + non-blog placements.
-    if (!expViewedRef.current && variant && inExperiment) {
-      expViewedRef.current = true;
-      trackExperimentView("result_gate_capture", "calc_result");
-    }
     if (computeTimer.current) clearTimeout(computeTimer.current);
     computeTimer.current = setTimeout(() => {
       track("calc_computed", base);
@@ -537,18 +527,10 @@ export function PremiumCalculator({
     onInteract("grid");
   };
 
-  // Treatment "See your result": opens the interstitial the first time this
-  // session, otherwise reveals directly. The press is auto-captured as a cta_click
-  // via the button's data-cta.
+  // "See your result": opens the interstitial the first time this session,
+  // otherwise reveals directly. The press is auto-captured as a cta_click via the
+  // button's data-cta ("see_result"), which still feeds the on-page diagnostics.
   const onSeeResult = () => {
-    // A treatment user can press this on the DEFAULT figure with no input change,
-    // so fire the (once-per-session) exposure here too: this guarantees every gate
-    // form-start is preceded by an experiment_view (acted is always a subset of
-    // exposed). De-duped with the onInteract exposure via expViewedRef.
-    if (!expViewedRef.current && variant && inExperiment) {
-      expViewedRef.current = true;
-      trackExperimentView("result_gate_capture", "calc_result");
-    }
     if (!gateModalShownThisSession) {
       gateModalShownThisSession = true;
       setGateOpen(true);
@@ -675,16 +657,14 @@ export function PremiumCalculator({
           email Excel gate placed further down the article). Add a form-bound CTA
           so a reader who just saw their numbers can go straight to a specialist.
           data-cta-goal="form" feeds the funnel's form-CTA stage + vw_cta_performance. */}
-      {/* Control (and converted visitors): keep the inline capture below the result.
-          Treatment removes it (the interstitial gate is the capture instead). The
-          control arm threads the experiment key so both arms measure the same
-          building-block; exposure already fired at the result moment above. */}
+      {/* Non-gated readers (converted visitors, who get the result instantly) keep
+          the inline capture below the result. Gated readers don't: the interstitial
+          gate is their capture instead, so the inline form would be redundant. */}
       {placement === "blog" && !gated && !revealed && (
         <div className="border-t border-slate-200 bg-white px-5 py-4 sm:px-7">
           <CalcResultCta
             campaign={config.id}
             label="Get a specialist to check your numbers →"
-            experimentKey={measuredControl ? "result_gate_capture" : undefined}
           />
         </div>
       )}

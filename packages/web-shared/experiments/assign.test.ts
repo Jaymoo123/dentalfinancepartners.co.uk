@@ -7,13 +7,18 @@
  * assignment would scramble running experiments.
  *
  * Methodology:
- *  - 64 (visitorId, key) -> variant triples were computed from Property's
+ *  - The (visitorId, key) -> variant triples were computed from Property's
  *    CURRENT lib/experiments/assign.ts BEFORE the lift, using the djb2 hash
  *    algorithm with the `${visitorId}:${key}` seed.
- *  - Triples cover: all 6 running experiments, visitor ids landing in each
- *    variant, weighted bucket edges (ids hashing near the 25/75 personalization
- *    boundary and the 50/50 boundaries), empty/missing visitor id, unknown
- *    experiment key, and off/disabled experiments.
+ *  - All Property experiments are now CONCLUDED (registry reports 0 running; the
+ *    last, result_gate_capture, was locked to treatment 2026-06-30). The 22
+ *    GOLDEN_TRIPLES below pin continuity for the two representative keys kept as
+ *    the proof pair -- personalization (25/75) and exit_intent_offer (50/50) --
+ *    resolved from the frozen CONCLUDED_PROPERTY_EXPERIMENTS snapshot rather than
+ *    the live (now off) registry. They cover visitor ids landing in each variant
+ *    and the 25/75 personalization bucket edges. That is sufficient to prove the
+ *    hash + bucketing path is byte-unchanged; pinning every concluded key adds
+ *    nothing once the algorithm itself is proven stable.
  *  - Any change to the hash function or bucketing logic that breaks a triple
  *    is a STOP -- it means live visitor assignments would diverge.
  *
@@ -21,9 +26,8 @@
  *  - Empty visitorId -> null (treat as control on calling side)
  *  - Unknown experiment key -> null (experiment object is null)
  *  - "off" experiment -> null (getExperiment returns null for off status)
- *  - Boundary buckets: personalization last-control (bucket 24) and
- *    first-treatment (bucket 25); calc_result_capture last-control (bucket 49)
- *    and first-treatment (bucket 50)
+ *  - Boundary buckets: personalization last-control (bucket 24, v_test_34) and
+ *    first-treatment (bucket 25, v_test_79)
  */
 
 import { describe, it, expect } from "vitest";
@@ -59,7 +63,8 @@ function getPropertyExp(key: string): Experiment | null {
 }
 
 // ---------------------------------------------------------------------------
-// 1. Golden continuity triples (64 triples, all 6 Property experiments)
+// 1. Golden continuity triples (22 triples; personalization + exit_intent_offer
+//    pinned from the frozen snapshot — all Property experiments now concluded).
 //    Computed from Property's CURRENT assign.ts before the lift.
 // ---------------------------------------------------------------------------
 
@@ -295,12 +300,11 @@ describe("registry map completeness", () => {
     }
   });
 
-  it("property registry has 1 running experiment (result_gate_capture)", () => {
+  it("property registry has 0 running experiments (result_gate_capture concluded 2026-06-30, locked to treatment)", () => {
     const running = propertyRegistry.experiments.filter(
       (e) => e.status === "running",
     );
-    expect(running).toHaveLength(1);
-    expect(running[0].key).toBe("result_gate_capture");
+    expect(running).toHaveLength(0);
   });
 
   it("property registry meta has entries for all running experiment keys", () => {

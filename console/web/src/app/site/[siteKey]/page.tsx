@@ -41,6 +41,8 @@ import {
   getExperimentResults,
   getExperimentArms,
   getExperimentFunnel,
+  getResultGateLeads,
+  type FormLeadCount,
   getPersonalizationResults,
   getNurtureFunnel,
   getLeadIntentMix,
@@ -674,13 +676,14 @@ export default async function SitePage({
   const newVsReturning: Array<[string, number]> = [["Returning", returningCount], ["New", newCount]];
 
   // Capability-conditional data fetches (only fetch if capability is on)
-  const [experimentResults, experimentArms, experimentFunnel, personalisationResults, nurtureFunnel, leadIntent] = await Promise.all([
+  const [experimentResults, experimentArms, experimentFunnel, personalisationResults, nurtureFunnel, leadIntent, resultGateLeads] = await Promise.all([
     caps.experiments ? getExperimentResults(siteKey) : Promise.resolve([] as ExperimentResult[]),
     caps.experiments ? getExperimentArms(siteKey) : Promise.resolve({} as Record<string, ExperimentArms>),
     caps.experiments ? getExperimentFunnel(siteKey) : Promise.resolve({} as Record<string, ExperimentFunnelArms>),
     caps.personalisation ? getPersonalizationResults(siteKey) : Promise.resolve([]),
     caps.nurture ? getNurtureFunnel(siteKey) : Promise.resolve([]),
     caps.leadIntent ? getLeadIntentMix(siteKey) : Promise.resolve([]),
+    caps.experiments ? getResultGateLeads(siteKey) : Promise.resolve(null as FormLeadCount | null),
   ]);
 
   // ── Tab sections ──
@@ -742,7 +745,33 @@ export default async function SitePage({
   const experimentsSection = (
     <div className="space-y-8">
       {caps.experiments ? (
-        experimentResults.length === 0 ? (
+        <>
+          {resultGateLeads && (
+            <div>
+              <h2 className="text-lg font-bold text-slate-900">Result gate (shipped default)</h2>
+              <p className="mt-1 text-xs text-slate-500">
+                The calculator result-gate interstitial won its A/B test and is now the default for every in-blog
+                visitor. Leads captured through the gate form, tracked directly by form (no longer an experiment).
+              </p>
+              <div className="mt-3 grid max-w-md gap-3 sm:grid-cols-2">
+                <SnapshotCard
+                  label="Result-gate leads"
+                  value={String(resultGateLeads.lead_sessions)}
+                  sub={`${resultGateLeads.form_start_sessions} form starts`}
+                  accent="emerald"
+                />
+                <SnapshotCard
+                  label="Form start → lead"
+                  value={
+                    resultGateLeads.form_start_sessions > 0
+                      ? `${Math.round((resultGateLeads.lead_sessions / resultGateLeads.form_start_sessions) * 100)}%`
+                      : "—"
+                  }
+                />
+              </div>
+            </div>
+          )}
+          {experimentResults.length === 0 ? (
           <p className="text-sm text-slate-400">No experiment results yet.</p>
         ) : (
           <>
@@ -818,7 +847,8 @@ export default async function SitePage({
               </div>
             </div>
           </>
-        )
+          )}
+        </>
       ) : (
         <NotOperatedPanel
           feature="A/B experiments"

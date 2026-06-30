@@ -65,11 +65,15 @@ export const propertyRegistry: SiteExperimentRegistry = {
     // vs email-only (treatment) -- volume vs quality.
     { key: "lead_form_length", status: "off", variants: [{ id: "control", weight: 50 }, { id: "treatment", weight: 50 }] }, // RETIRED: phone is now mandatory on every capture 2026-06-16
 
-    // NEW lead-capture program, test #1 (launched 2026-06-23): gate the in-blog
-    // calculator result behind an interstitial capture (treatment) vs today's
-    // inline form below the result (control). Building-block metric = of visitors
-    // who reach a calculator result, what fraction start a capture form.
-    { key: "result_gate_capture", status: "running", variants: [{ id: "control", weight: 50 }, { id: "treatment", weight: 50 }] },
+    // Lead-capture program, test #1 (launched 2026-06-23, CONCLUDED 2026-06-30):
+    // gated the in-blog calculator result behind an interstitial capture (treatment)
+    // vs today's inline form below the result (control). CONCLUDED to TREATMENT:
+    // over 7 days the gate netted 3 leads vs control's 0 on comparable traffic
+    // (every directional signal favoured it; directional, not significant). The
+    // gate is now locked ON for every in-blog non-converted visitor in
+    // PremiumCalculator (no longer arm-gated); converted + non-blog are untouched.
+    // Kept here (off) so the dashboard can still show its history.
+    { key: "result_gate_capture", status: "off", variants: [{ id: "control", weight: 50 }, { id: "treatment", weight: 50 }] },
   ],
 
   meta: {

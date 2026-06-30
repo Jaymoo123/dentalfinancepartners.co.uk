@@ -1,9 +1,10 @@
 "use client";
 
 /**
- * Result-gate interstitial: the treatment arm of the `result_gate_capture`
- * experiment. Shown once per session when a reader presses "See your result" on
- * an in-blog calculator. It offers a qualified capture before revealing the
+ * Result-gate interstitial: shipped default since 2026-06-30 (was the treatment
+ * arm of the now-concluded `result_gate_capture` experiment, which it won on
+ * leads). Shown once per session when a reader presses "See your result" on an
+ * in-blog calculator. It offers a qualified capture before revealing the
  * figure, with a small de-emphasized escape so the result is NEVER walled off:
  * closing it any way (escape link, X, backdrop, Esc) reveals the result, and so
  * does submitting (which also marks the visitor converted via the lead path, so
@@ -82,14 +83,15 @@ export function ResultGateModal({
 
         <MiniCapture
           formId="calc_result_gate"
-          experimentKey="result_gate_capture"
-          exposeOnView={false}
           messagePrefix={`[Result gate: ${campaign}]`}
           heading={topic?.ctaCopy || "Want a specialist to check your figure?"}
           blurb="A calculator gives the shape of the answer. Tell us your situation and a specialist will confirm your exact figure and the legitimate ways to reduce it, with no obligation."
           submitLabel="Get my figure confirmed"
           successText="Thanks, we'll be in touch within 24 hours. Your result is below."
           className="mt-2"
+          messagePlaceholder="The more detail the better. Tell us about the property or situation, rough figures, and what you're trying to work out. A couple of sentences is ideal."
+          messageMinLength={40}
+          messageMinWords={8}
           onSuccess={onReveal}
         />
 

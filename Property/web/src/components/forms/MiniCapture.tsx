@@ -33,6 +33,9 @@ export function MiniCapture({
   submitLabel = "Request a callback",
   successText = "Thanks. We'll be in touch within 24 hours.",
   className = "my-8 rounded-2xl border-l-4 border-emerald-600 bg-slate-50 p-6 sm:p-8",
+  messagePlaceholder = "A sentence or two about your situation helps us help you",
+  messageMinLength = 10,
+  messageMinWords = 0,
   experimentKey,
   exposeOnView = true,
   onSuccess,
@@ -48,6 +51,15 @@ export function MiniCapture({
   submitLabel?: string;
   successText?: string;
   className?: string;
+  /** Placeholder (background text) for the message field. Defaults to the gentle
+   *  shared prompt; a surface can override it to encourage more detail. */
+  messagePlaceholder?: string;
+  /** Minimum message length (chars) before submit is allowed. Default 10 — the
+   *  shared "some text" floor. Raise it on a surface that wants a fuller message. */
+  messageMinLength?: number;
+  /** Minimum message word count. Default 0 (off). Combined with messageMinLength,
+   *  a surface (e.g. the result gate) can require "a couple of sentences" of flesh. */
+  messageMinWords?: number;
   /** Parent A/B experiment this capture belongs to (e.g. "exit_intent_offer").
    *  Drives experiment_view (on scroll-into-view, unless exposeOnView=false) +
    *  experiment_action (on first field focus = engaged the capture). */
@@ -90,9 +102,19 @@ export function MiniCapture({
     if (!emailRe.test(String(data.get("email") || "").trim())) errs.email = "Enter a valid email address.";
     const digits = String(data.get("phone") || "").replace(/\D/g, "");
     if (digits.length < 10) errs.phone = "Enter a phone number we can call you on.";
-    if (String(data.get("message") || "").trim().length < 10) errs.message = "Tell us a sentence or two about your situation.";
+    const message = String(data.get("message") || "").trim();
+    const wordCount = message ? message.split(/\s+/).filter(Boolean).length : 0;
+    // Default forms: messageMinLength=10, messageMinWords=0 => unchanged ("some
+    // text" floor). A surface that opts into a higher bar (the result gate) gets a
+    // fuller-message requirement + a more encouraging prompt.
+    if (message.length < messageMinLength || wordCount < messageMinWords) {
+      errs.message =
+        messageMinWords > 0 || messageMinLength > 10
+          ? "Please add a little more detail, a couple of sentences about the property or situation, rough figures, and what you'd like us to work out, so a specialist can give you a genuinely useful answer."
+          : "Tell us a sentence or two about your situation.";
+    }
     return errs;
-  }, []);
+  }, [messageMinLength, messageMinWords]);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -245,7 +267,7 @@ export function MiniCapture({
               required
               rows={3}
               maxLength={1000}
-              placeholder="A sentence or two about your situation helps us help you"
+              placeholder={messagePlaceholder}
               className={inputClass}
               aria-invalid={!!fieldErrors.message}
             />
