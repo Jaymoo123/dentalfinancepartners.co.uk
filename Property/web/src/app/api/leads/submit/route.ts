@@ -268,13 +268,12 @@ export async function POST(req: Request) {
         const stateRow = { lead_id: leadId, step: 0, generated_copy: null, copy_status: null, best_send_hour: bestSendHour };
         const ctx = await buildLeadMessageContext(lead, stateRow);
         await processLeadStep(lead, 0, config, sender, ctx);
-        // Fire step 1 (SMS) synchronously when we are inside the send window:
-        // maximum speed-to-lead at the moment of highest intent. When outside the
-        // window the nextActionAt hook already scheduled step 1 at the window open
-        // so the cron will fire it at the right time.
-        if (ctx.inSmsWindow) {
-          await processLeadStep(lead, 1, config, sender, ctx);
-        }
+        // Fire step 1 (SMS + WhatsApp) synchronously too, regardless of the hour.
+        // This is an immediate response to an enquiry the person just submitted, so
+        // they are clearly awake and expecting contact and the quiet-hours rule does
+        // not apply to this first touch. The LATER cron-driven nudges still respect
+        // the send window via the config dispatch gate.
+        await processLeadStep(lead, 1, config, sender, ctx);
 
         // Fire-and-forget: generate personalised AI copy for later touches.
         // Uses after() (Next.js 15+) so the response is not blocked and the

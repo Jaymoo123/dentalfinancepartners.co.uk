@@ -413,7 +413,7 @@ describe("day7_email copy variants", () => {
     expect(msgs).toHaveLength(1);
     expect(msgs[0].channel).toBe("email");
     const blob = (msgs[0].html ?? "") + (msgs[0].text ?? "");
-    expect(blob).toContain("understand your portfolio tax position");
+    expect(blob).toContain("If a short call would help");
     expect(blob).not.toContain("holding you back");
   });
 

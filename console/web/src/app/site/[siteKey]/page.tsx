@@ -58,7 +58,6 @@ import {
   getBookedLeads,
   getEnrolledLeadFacts,
   computeContactabilityWindows,
-  computeT0Readout,
   type SiteKpis,
   type ContactabilityFunnel,
   type ContactabilityLeadRow,
@@ -556,7 +555,6 @@ function LeadContactabilityPanel({
   nurtureControl,
   unreachableLeads,
   bookedLeads,
-  t0,
   windows,
 }: {
   funnel: ContactabilityFunnel | null;
@@ -568,7 +566,6 @@ function LeadContactabilityPanel({
   nurtureControl: NurtureControl;
   unreachableLeads: UnreachableLead[];
   bookedLeads: BookedLead[];
-  t0: { branded: RateWindow; personal: RateWindow };
   windows: { d7: RateWindow; d28: RateWindow; all: RateWindow };
 }) {
   const contactableRate =
@@ -751,30 +748,6 @@ function LeadContactabilityPanel({
             Health metrics not yet available (migration pending).
           </p>
         )}
-      </div>
-
-      {/* First-touch A/B (T0) */}
-      <div className="mt-4 rounded-xl border border-slate-200 bg-white p-4">
-        <h3 className="text-sm font-bold text-slate-700">First-touch A/B (T0)</h3>
-        <div className="mt-3 grid grid-cols-2 gap-3">
-          <SnapshotCard
-            label="Branded CTA"
-            value={`${t0.branded.enrolled} enrolled`}
-            sub={`${pct(t0.branded.rate)} contactable`}
-            accent="sky"
-            compact
-          />
-          <SnapshotCard
-            label="Personal reply-led"
-            value={`${t0.personal.enrolled} enrolled`}
-            sub={`${pct(t0.personal.rate)} contactable`}
-            accent="sky"
-            compact
-          />
-        </div>
-        <p className="mt-2 text-xs text-slate-400">
-          Deterministic split recomputed from lead id; needs volume to be conclusive.
-        </p>
       </div>
 
       {funnel ? (
@@ -1313,7 +1286,6 @@ export default async function SitePage({
     isProperty ? getEnrolledLeadFacts(siteKey) : Promise.resolve([] as EnrolledLeadFact[]),
   ]);
 
-  const t0 = computeT0Readout(enrolledLeadFacts);
   const windows = computeContactabilityWindows(enrolledLeadFacts, Date.now());
 
   // ── Tab sections ──
@@ -1553,7 +1525,6 @@ export default async function SitePage({
           nurtureControl={nurtureControl}
           unreachableLeads={unreachableLeads}
           bookedLeads={bookedLeads}
-          t0={t0}
           windows={windows}
         />
       )}

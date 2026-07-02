@@ -164,7 +164,7 @@ function buildOptOutUrl(leadId: string, base: string): string {
 const COMPANY  = "Property Tax Partners";
 const SIGNOFF  = `Speak soon, the team at ${COMPANY}`;
 const FOOTER   =
-  "You are receiving this because you submitted an enquiry on propertytaxpartners.co.uk. To stop these follow-ups, use the opt-out link below.";
+  "You are receiving this because you submitted an enquiry on propertytaxpartners.co.uk.";
 
 // ---------------------------------------------------------------------------
 // Booked event meta shape
@@ -266,9 +266,6 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
           const sendRowId = await claimSend(leadId, sequence, 0, "email");
           if (sendRowId) {
             try {
-              const optOutLine = optOutUrl ? `\n\nOr opt out of these follow-ups: ${optOutUrl}` : "";
-              const footerNote = `${FOOTER}${optOutLine}`;
-
               const { html, text } = renderLeadServiceEmail({
                 preheader: `Your review call is tomorrow, ${firstName}`,
                 greeting: `Hi ${firstName},`,
@@ -278,7 +275,8 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
                 ],
                 cta: { label: "Pick a different time", href: bookingUrl },
                 signoff: SIGNOFF,
-                footerNote,
+                footerNote: FOOTER,
+                ...(optOutUrl ? { optOutUrl } : {}),
               });
 
               const headers: Record<string, string> = {

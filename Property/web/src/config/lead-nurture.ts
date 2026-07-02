@@ -99,7 +99,7 @@ const SEQUENCE_NAME = "property_contactability";
 const COMPANY = "Property Tax Partners";
 const SIGNOFF = `Speak soon, the team at ${COMPANY}`;
 const FOOTER =
-  "You are receiving this because you submitted an enquiry on propertytaxpartners.co.uk. To stop these follow-ups, use the opt-out link below.";
+  "You are receiving this because you submitted an enquiry on propertytaxpartners.co.uk.";
 const OPT_OUT = "Reply STOP to opt out.";
 
 function base(): string {
@@ -259,15 +259,6 @@ function buildBookingUrl(lead: NurtureLead, b: string): string {
   }
 }
 
-// ── HTML escape (local copy, template's esc is not exported) ─────────────────
-
-function esc(s: string): string {
-  return s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
-}
-
 // ── Message builders ──────────────────────────────────────────────────────────
 
 /**
@@ -291,11 +282,6 @@ function emailMsg(
   const finalParagraphs =
     gen?.paragraphs && gen.paragraphs.length > 0 ? gen.paragraphs : paragraphs;
 
-  const optOutLine = ctx.optOutUrl
-    ? `\n\nOr opt out of these follow-ups: ${ctx.optOutUrl}`
-    : "";
-  const footerNote = `${FOOTER}${optOutLine}`;
-
   const { html, text } = renderLeadServiceEmail({
     preheader: finalPreheader,
     greeting: `Hi ${ctx.firstName},`,
@@ -303,67 +289,12 @@ function emailMsg(
     cta: { label: "Pick a time for your review", href: ctx.bookingUrl },
     secondary: { label: "confirm you would like a call", href: ctx.confirmUrl },
     signoff: SIGNOFF,
-    footerNote,
+    footerNote: FOOTER,
+    ...(ctx.optOutUrl ? { optOutUrl: ctx.optOutUrl } : {}),
   });
 
   const headers = buildUnsubHeaders(ctx);
   return { channel: "email", subject: finalSubject, html, text, ...(headers ? { headers } : {}) };
-}
-
-/**
- * Minimal personal-style email for the t0_personal variant: plain <p> tags,
- * no CTA button (reply is the call to action). The booking URL appears as a
- * plain text link inside one of the paragraphs instead.
- */
-function personalEmail(
-  ctx: LeadMessageContext,
-  subject: string,
-  paragraphs: string[],
-  stepKey?: string,
-): LeadStepMessage {
-  const gen: GeneratedStepCopy | undefined =
-    stepKey && ctx.generatedCopy?.[stepKey] ? ctx.generatedCopy[stepKey] : undefined;
-
-  const finalSubject = gen?.subject?.trim() || subject;
-  const finalParagraphs =
-    gen?.paragraphs && gen.paragraphs.length > 0 ? gen.paragraphs : paragraphs;
-
-  const optOutLine = ctx.optOutUrl
-    ? `\n\nOr opt out of these follow-ups: ${ctx.optOutUrl}`
-    : "";
-  const footerNote = `${FOOTER}${optOutLine}`;
-
-  const paras = finalParagraphs
-    .map((p) => `<p style="margin:0 0 14px;">${esc(p)}</p>`)
-    .join("");
-
-  const html = `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
-<body style="margin:0;background:#f6f7f8;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#0f172a;">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f6f7f8;padding:24px 0;">
-<tr><td align="center">
-<table role="presentation" width="560" cellpadding="0" cellspacing="0" style="max-width:560px;background:#ffffff;border:1px solid #e5e7eb;border-radius:8px;padding:32px;">
-<tr><td>
-${paras}
-<p style="margin:22px 0 0;">${esc(SIGNOFF)}</p>
-<hr style="border:none;border-top:1px solid #e5e7eb;margin:24px 0 12px;">
-<p style="margin:0;font-size:12px;color:#64748b;">${esc(footerNote)}</p>
-</td></tr>
-</table>
-</td></tr>
-</table>
-</body></html>`;
-
-  const text = [...finalParagraphs, "", SIGNOFF, "", footerNote].join("\n");
-
-  const headers = buildUnsubHeaders(ctx);
-  return {
-    channel: "email",
-    subject: finalSubject,
-    html,
-    text,
-    ...(headers ? { headers } : {}),
-  };
 }
 
 function buildUnsubHeaders(
@@ -404,38 +335,20 @@ const STEPS: LeadNurtureStep[] = [
     key: "t0_email",
     delayHours: 0,
     channels: ["email"],
-    buildMessages: (c) => {
-      if (c.variant === "t0_personal") {
-        // Plain person-shaped email: question-led, reply as CTA, no button.
-        return [
-          personalEmail(
-            c,
-            "Quick one about your enquiry",
-            [
-              `Hi ${c.firstName}, it is the team at Property Tax Partners. Your enquiry just came through.`,
-              `Reading it back: you would like to ${c.callGoalEcho}. Have I got that right?`,
-              `Reply and let me know, and we will get a call booked in with one of our property tax specialists. If it is easier, you can pick a time straight away here: ${c.bookingUrl}`,
-              "Speak soon.",
-            ],
-            "t0_email",
-          ),
-        ];
-      }
-      // t0_branded (default): standard CTA email.
-      return [
-        emailMsg(
-          c,
-          `Got your enquiry, ${c.firstName}. Here is what happens next.`,
-          "A property tax specialist will call. Pick a time that suits you.",
-          [
-            `Thanks for getting in touch. I have read what you sent us, and wanting to ${c.callGoalEcho} is exactly the kind of thing our property tax specialists work on every week, so you are in the right place.`,
-            "The next step is a short call with a specialist. There is no charge and no obligation, and it is genuinely useful even if you decide to do nothing afterwards. The quickest way is to pick a time that suits you below. It takes under a minute and you will get a confirmation straight away.",
-            "If it is easier, just reply to this email, or tap the confirm link and we will phone you.",
-          ],
-          "t0_email",
-        ),
-      ];
-    },
+    buildMessages: (c) => [
+      // Single standard first-touch email for everyone (the T0 A/B was retired).
+      emailMsg(
+        c,
+        `Got your enquiry, ${c.firstName}. Here is what happens next.`,
+        "A property tax specialist will call. Pick a time that suits you.",
+        [
+          "Thanks for getting in touch. We have received your enquiry and a property tax specialist will be glad to help.",
+          "The next step is a short call. There is no charge and no obligation, and it is genuinely useful even if you decide to do nothing afterwards. Just pick a time that suits you below. It takes under a minute and you will get a confirmation straight away.",
+          "If you would rather we called you, tap the confirm link and we will be in touch.",
+        ],
+        "t0_email",
+      ),
+    ],
   },
 
   // ── Step 1: T0 SMS + WhatsApp ──────────────────────────────────────────────
@@ -479,7 +392,7 @@ const STEPS: LeadNurtureStep[] = [
       smsMsgWithGen(
         c,
         "day1_sms",
-        `Hi ${c.firstName}, following up on the property tax review you asked about. You said you'd like to ${c.callGoalEcho}, so we've kept some specialist time free this week for exactly that. Grab whichever slot suits: ${c.bookingUrl} ${c.optOutText}`,
+        `Hi ${c.firstName}, following up on your property tax enquiry. We have kept some specialist time free this week for a short call. Grab whichever slot suits: ${c.bookingUrl} ${c.optOutText}`,
       ),
       whatsappTemplate("lead_reminder", [c.firstName, c.bookingUrl]),
     ],
@@ -559,7 +472,7 @@ const STEPS: LeadNurtureStep[] = [
       const p2 =
         c.engagementVariant === "hesitation"
           ? `If something is holding you back, reply and tell us. There is no cost, no obligation, and no hard sell on the call, it is genuinely just a review of where you stand.`
-          : `If a short call would help you ${c.callGoalEcho}, it is one decision and a minute to book. And if you would rather we call you, just reply to this email with a good time.`;
+          : `If a short call would help, it is one decision and a minute to book. And if you would rather we called you, tap the confirm link and we will be in touch.`;
 
       return [
         emailMsg(

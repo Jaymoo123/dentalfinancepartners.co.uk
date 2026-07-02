@@ -509,7 +509,7 @@ describe("dormant vs armed", () => {
     expect(step0Calls).toHaveLength(1);
   });
 
-  it("does NOT fire step 1 when ctx.inSmsWindow is false", async () => {
+  it("fires step 1 at submit even when ctx.inSmsWindow is false (instant SMS regardless of hour)", async () => {
     stubArmed(true);
     stubSender();
     stubNurtureInfra({ inSmsWindow: false });
@@ -517,7 +517,7 @@ describe("dormant vs armed", () => {
     const step1Calls = mockProcessLeadStep.mock.calls.filter(
       ([, stepIdx]) => stepIdx === 1,
     );
-    expect(step1Calls).toHaveLength(0);
+    expect(step1Calls).toHaveLength(1);
   });
 
   it("fires step 1 when armed AND ctx.inSmsWindow is true", async () => {

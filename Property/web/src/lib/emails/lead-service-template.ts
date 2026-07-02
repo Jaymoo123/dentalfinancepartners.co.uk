@@ -21,8 +21,10 @@ export interface LeadServiceEmail {
   secondary?: { label: string; href: string };
   /** Sign-off name/line. */
   signoff: string;
-  /** Small print under the signature (reply / opt-out note). */
+  /** Small print under the signature (why they are receiving this). */
   footerNote: string;
+  /** Optional one-click opt-out URL, rendered as a linked "Opt out" in the footer. */
+  optOutUrl?: string;
 }
 
 function esc(s: string): string {
@@ -54,7 +56,7 @@ ${paras}
 ${secondary}
 <p style="margin:22px 0 0;">${esc(e.signoff)}</p>
 <hr style="border:none;border-top:1px solid #e5e7eb;margin:24px 0 12px;">
-<p style="margin:0;font-size:12px;color:#64748b;">${esc(e.footerNote)}</p>
+<p style="margin:0;font-size:12px;color:#64748b;">${esc(e.footerNote)}${e.optOutUrl ? ` <a href="${e.optOutUrl}" style="color:#64748b;text-decoration:underline;">Opt out of these emails</a>.` : ""}</p>
 </td></tr>
 </table>
 </td></tr>
@@ -72,6 +74,7 @@ ${secondary}
     e.signoff,
     "",
     e.footerNote,
+    ...(e.optOutUrl ? ["", `Opt out of these emails: ${e.optOutUrl}`] : []),
   ];
   return { html, text: textLines.join("\n") };
 }

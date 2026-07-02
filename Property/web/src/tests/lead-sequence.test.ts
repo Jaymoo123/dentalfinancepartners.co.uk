@@ -184,28 +184,14 @@ describe("vip_sameday", () => {
 describe("t0_email variants", () => {
   const step = steps.find((s) => s.key === "t0_email")!;
 
-  it("t0_branded produces a message with a CTA button (html contains button label)", () => {
+  it("t0_email produces the single standard message with a CTA button", () => {
     const msgs = step.buildMessages(BRANDED_CTX);
     expect(msgs).toHaveLength(1);
     const m = msgs[0];
     expect(m.channel).toBe("email");
-    // The CTA button label is rendered inside the HTML
+    // The T0 A/B was retired: everyone now gets the standard CTA email.
     expect(m.html).toContain("Pick a time for your review");
-  });
-
-  it("t0_personal does not contain the CTA button label", () => {
-    const msgs = step.buildMessages(PERSONAL_CTX);
-    expect(msgs).toHaveLength(1);
-    const m = msgs[0];
-    expect(m.channel).toBe("email");
-    expect(m.html).not.toContain("Pick a time for your review");
-  });
-
-  it("t0_personal contains the reply question", () => {
-    const msgs = step.buildMessages(PERSONAL_CTX);
-    const m = msgs[0];
-    const blob = (m.html ?? "") + (m.text ?? "");
-    expect(blob).toContain("Have I got that right?");
+    expect(m.html).toContain("The next step is a short call");
   });
 });
 
