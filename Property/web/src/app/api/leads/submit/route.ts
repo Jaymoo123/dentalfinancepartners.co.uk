@@ -281,7 +281,9 @@ export async function POST(req: Request) {
         // serverless function is kept alive until the fetch dispatches.
         if (copyAiEnabled()) {
           const seqUrl = `${getSiteUrl().replace(/\/$/, "")}/api/leads/generate-sequence`;
-          const internalToken = process.env.LEAD_NURTURE_TOKEN_SECRET ?? "";
+          // GAP-8: prefer a dedicated internal secret over the master token secret.
+          const internalToken =
+            process.env.LEAD_INTERNAL_SECRET || process.env.LEAD_NURTURE_TOKEN_SECRET || "";
           after(() => {
             void fetch(seqUrl, {
               method: "POST",

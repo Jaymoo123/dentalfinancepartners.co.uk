@@ -16,7 +16,16 @@
  * helper").
  */
 
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { describe, it, expect, vi, beforeEach, beforeAll, afterAll } from "vitest";
+
+// buildCallBrief is now gated on the LEAD_COPY_AI_ENABLED flag (M4); enable it
+// for this suite, which exercises the AI call-brief generation path.
+beforeAll(() => {
+  process.env.LEAD_COPY_AI_ENABLED = "true";
+});
+afterAll(() => {
+  delete process.env.LEAD_COPY_AI_ENABLED;
+});
 
 // ── Mock @anthropic-ai/sdk before any imports that might load it ──────────────
 

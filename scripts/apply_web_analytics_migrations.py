@@ -58,6 +58,9 @@ MIGRATIONS = [
     # Fix: reconcile the dual leads.status CHECK conflict found on prod (old
     # leads_status_check blocked contactable/unreachable/forwarded).
     "20260702000002_leads_status_constraint_reconcile.sql",
+    # Wave 2 observability v2: cron heartbeat cols, enrolled-cohort funnel,
+    # step-health aux-sequence exclusion, opened/clicked on the health view.
+    "20260702000003_lead_nurture_observability_v2.sql",
 ]
 
 

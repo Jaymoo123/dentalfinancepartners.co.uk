@@ -16,6 +16,7 @@ import { z } from "zod";
 import { anthropicConfigured, generateJson } from "@/lib/ai/anthropic";
 import { qaGateMessage } from "@/lib/ai/qa-gate";
 import { humanisePath, type LeadDossier } from "@/lib/leads/dossier";
+import { copyAiEnabled } from "@/lib/leads/sequence-gen";
 
 // The URL used by the QA gate to validate any links in the output.
 // The brief is text-only (no URLs expected), but the gate still needs an origin.
@@ -75,6 +76,7 @@ export async function buildCallBrief(
   enquiryMessage?: string | null,
 ): Promise<CallBrief | null> {
   if (!anthropicConfigured()) return null;
+  if (!copyAiEnabled()) return null;
 
   try {
     const enr = dossier.enrichment;

@@ -30,6 +30,7 @@ import { adminSelect, adminUpdate } from "@/lib/supabase/admin";
 import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
 import { LEAD_SEQUENCE_NAME } from "@/config/lead-nurture";
 import { getResend, getFromAddress } from "@/lib/resend";
+import { resolveLeadTo } from "@/lib/lead-routing";
 import { sendContactableHandoff, type HandoffResult } from "./handoff";
 
 type EventRow = { event_type: string; channel: string | null };
@@ -239,4 +240,80 @@ export async function stopNurture(
     { id: `eq.${leadId}`, status: "in.(new,nurturing)" },
     { status: "closed" },
   );
+
+  // Detect post-handoff opt-outs and alert the operator so DJH can be notified
+  // of the objection within 2 working days, as required by the data-sharing agreement.
+  // Wrapped entirely in try/catch so it can never throw out of this webhook path.
+  try {
+    // Fetch the lead's full_name, source and current status in one call.
+    // Status check: contactable/forwarded means the lead was already handed off
+    // (the update above only touches new/nurturing, so these states are unchanged).
+    let leadName = "the lead";
+    let leadSource: string | null = null;
+    let wasHandedOff = false;
+
+    try {
+      const leadRes = await adminSelect<{
+        full_name: string;
+        source: string | null;
+        status: string;
+      }>("leads", {
+        id: `eq.${leadId}`,
+        select: "full_name,source,status",
+        limit: "1",
+      });
+      const row = leadRes.data[0];
+      if (row) {
+        if (row.full_name) leadName = row.full_name;
+        leadSource = row.source ?? null;
+        if (row.status === "contactable" || row.status === "forwarded") {
+          wasHandedOff = true;
+        }
+      }
+    } catch {
+      // best-effort; proceed to event check
+    }
+
+    // If the status check was inconclusive, confirm via the handed_off event record.
+    if (!wasHandedOff) {
+      try {
+        const evRes = await adminSelect<{ id: string }>("lead_contact_events", {
+          lead_id: `eq.${leadId}`,
+          event_type: "eq.handed_off",
+          select: "id",
+          limit: "1",
+        });
+        wasHandedOff = evRes.data.length > 0;
+      } catch {
+        // best-effort
+      }
+    }
+
+    // Send one operator alert. Skip for test leads and when Resend is unconfigured.
+    if (wasHandedOff && leadSource !== "test" && process.env.RESEND_API_KEY) {
+      const to = resolveLeadTo(leadSource ?? undefined);
+      const safeName = leadName
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+      await getResend().emails.send({
+        from: getFromAddress(),
+        to,
+        subject: `Post-handoff opt-out: ${leadName}`,
+        html:
+          `<p><strong>${safeName}</strong> has opted out of further contact via ${channel} ` +
+          `AFTER their enquiry was forwarded to DJH.</p>` +
+          `<p>Under the data-sharing agreement, DJH must be notified of this objection ` +
+          `within 2 working days. Please contact DJH directly to inform them that this ` +
+          `lead has withdrawn consent and must not be contacted further.</p>`,
+        text:
+          `${leadName} has opted out of further contact via ${channel} AFTER their enquiry ` +
+          `was forwarded to DJH. Under the data-sharing agreement, DJH must be notified of ` +
+          `this objection within 2 working days. Please contact DJH directly to inform them ` +
+          `that this lead has withdrawn consent and must not be contacted further.`,
+      });
+    }
+  } catch (alertErr) {
+    console.error("[contactability] post-handoff opt-out alert failed", alertErr);
+  }
 }

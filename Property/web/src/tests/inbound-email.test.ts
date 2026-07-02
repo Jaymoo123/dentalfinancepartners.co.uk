@@ -13,7 +13,16 @@
  * and a mocked classify function.
  */
 
-import { describe, it, expect, beforeEach, vi } from "vitest";
+import { describe, it, expect, beforeEach, beforeAll, afterAll, vi } from "vitest";
+
+// The inbound-email AI classify is now gated on the LEAD_COPY_AI_ENABLED flag
+// (M4). These tests exercise the AI-classify path, so enable it for the file.
+beforeAll(() => {
+  process.env.LEAD_COPY_AI_ENABLED = "true";
+});
+afterAll(() => {
+  delete process.env.LEAD_COPY_AI_ENABLED;
+});
 
 // ── Shared in-memory store ────────────────────────────────────────────────────
 

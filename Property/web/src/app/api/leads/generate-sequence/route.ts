@@ -13,17 +13,33 @@
  */
 
 import { NextResponse } from "next/server";
+import { timingSafeEqual } from "crypto";
 import { generateLeadSequenceCopy } from "@/lib/leads/sequence-gen";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
 
+/** Constant-time string compare (padded so length never leaks via timing). */
+function safeEqual(a: string, b: string): boolean {
+  try {
+    const ab = Buffer.from(a.padEnd(256, "\0"), "utf8");
+    const bb = Buffer.from(b.padEnd(256, "\0"), "utf8");
+    if (ab.length !== bb.length) return false;
+    return timingSafeEqual(ab, bb);
+  } catch {
+    return false;
+  }
+}
+
 export async function POST(req: Request) {
   // Shared-secret guard: only the submit route (same deployment) should call this.
-  const secret = process.env.LEAD_NURTURE_TOKEN_SECRET ?? "";
+  // Prefer a DEDICATED secret (GAP-8) so this internal endpoint never reuses the
+  // master token-signing secret; fall back to it only if the dedicated one is
+  // unset, and compare in constant time (unlike the old `token !== secret`).
+  const secret = process.env.LEAD_INTERNAL_SECRET || process.env.LEAD_NURTURE_TOKEN_SECRET || "";
   const token = req.headers.get("x-internal-token") ?? "";
 
-  if (!secret || token !== secret) {
+  if (!secret || !safeEqual(token, secret)) {
     return NextResponse.json({ error: "Unauthorised" }, { status: 401 });
   }
 

@@ -99,7 +99,7 @@ const SEQUENCE_NAME = "property_contactability";
 const COMPANY = "Property Tax Partners";
 const SIGNOFF = `Speak soon, the team at ${COMPANY}`;
 const FOOTER =
-  "You are receiving this because you submitted an enquiry on propertytaxpartners.co.uk. Reply to this email if you would prefer we did not contact you about it.";
+  "You are receiving this because you submitted an enquiry on propertytaxpartners.co.uk. To stop these follow-ups, use the opt-out link below.";
 const OPT_OUT = "Reply STOP to opt out.";
 
 function base(): string {

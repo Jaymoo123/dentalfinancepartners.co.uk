@@ -31,6 +31,7 @@ import { adminSelect } from "@/lib/supabase/admin";
 import { classify } from "@/lib/ai/anthropic";
 import { recordResponseAndEvaluate, stopNurture } from "@/lib/leads/contactability";
 import { extractEmail, stripQuotedHistory } from "@/lib/leads/email-parse";
+import { copyAiEnabled } from "@/lib/leads/sequence-gen";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -136,19 +137,24 @@ export async function POST(req: NextRequest) {
       return ok200();
     }
 
-    // Classify with Haiku. Null (AI down or unconfigured) is safe-defaulted to
-    // genuine_reply so a real human reply is never silently dropped.
-    const label = await classify({
-      system:
-        "You are classifying an inbound email reply to a property-tax service follow-up " +
-        "sent to the sender about their own property-tax enquiry. " +
-        "genuine_reply = a real human response expressing interest, questions, or intent. " +
-        "auto_responder = out-of-office, auto-acknowledgement, delivery notification, or other system message. " +
-        "opt_out = any message expressing a wish not to be contacted further.",
-      prompt: `Subject: ${subject.slice(0, 200)}\n\nBody:\n${strippedBody.slice(0, 300)}`,
-      labels: ["genuine_reply", "auto_responder", "opt_out"] as const,
-      cacheSystem: true,
-    });
+    // Classify with Haiku. Null (AI down, unconfigured, or flag off) is safe-defaulted
+    // to genuine_reply so a real human reply is never silently dropped.
+    //
+    // Gate on copyAiEnabled(): an Anthropic key added for the copy layer must not
+    // silently fire ungated calls on lead content when the flag is OFF.
+    const label = copyAiEnabled()
+      ? await classify({
+          system:
+            "You are classifying an inbound email reply to a property-tax service follow-up " +
+            "sent to the sender about their own property-tax enquiry. " +
+            "genuine_reply = a real human response expressing interest, questions, or intent. " +
+            "auto_responder = out-of-office, auto-acknowledgement, delivery notification, or other system message. " +
+            "opt_out = any message expressing a wish not to be contacted further.",
+          prompt: `Subject: ${subject.slice(0, 200)}\n\nBody:\n${strippedBody.slice(0, 300)}`,
+          labels: ["genuine_reply", "auto_responder", "opt_out"] as const,
+          cacheSystem: true,
+        })
+      : null;
 
     // Null AI response -> treat as genuine (safe direction: never drop a real reply).
     const effective = label ?? "genuine_reply";

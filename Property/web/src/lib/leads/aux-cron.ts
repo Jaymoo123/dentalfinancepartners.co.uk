@@ -164,7 +164,7 @@ function buildOptOutUrl(leadId: string, base: string): string {
 const COMPANY  = "Property Tax Partners";
 const SIGNOFF  = `Speak soon, the team at ${COMPANY}`;
 const FOOTER   =
-  "You are receiving this because you submitted an enquiry on propertytaxpartners.co.uk. Reply to this email if you would prefer we did not contact you about it.";
+  "You are receiving this because you submitted an enquiry on propertytaxpartners.co.uk. To stop these follow-ups, use the opt-out link below.";
 
 // ---------------------------------------------------------------------------
 // Booked event meta shape
