@@ -360,7 +360,7 @@ const STEPS: LeadNurtureStep[] = [
       smsMsgWithGen(
         c,
         "t0_sms",
-        `Hi ${c.firstName}, it's Property Tax Partners. Thanks for your enquiry about your property tax. Two easy options: pick a time for your specialist call here ${c.bookingUrl}, or just reply YES and we'll ring you. ${c.optOutText}`,
+        `Hi ${c.firstName}, it's Property Tax Partners. Thanks for your enquiry about your property tax. Reply YES and one of our specialists will call you, or pick a time here: ${c.bookingUrl} ${c.optOutText}`,
       ),
       whatsappTemplate("lead_welcome", [c.firstName, c.bookingUrl]),
     ],
