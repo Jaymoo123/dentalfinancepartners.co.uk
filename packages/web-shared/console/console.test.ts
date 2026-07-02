@@ -21,11 +21,14 @@ import {
   clearSessionCookie,
   CONSOLE_COOKIE_NAME,
 } from "./consoleAuth";
-import type { VisitorEvent, ExperimentResult, ExperimentFunnelRow } from "./adminData";
+import type { VisitorEvent, ExperimentResult, ExperimentFunnelRow, EnrolledLeadFact } from "./adminData";
 import {
   parseExperimentArms,
   parseExperimentFunnel,
+  computeContactabilityWindows,
+  computeT0Readout,
 } from "./adminData";
+import { t0Variant } from "../lead-nurture/t0";
 import {
   humanise,
   buildActivityRows,
@@ -471,5 +474,140 @@ describe("parseExperimentFunnel", () => {
     const result = parseExperimentFunnel(rows);
     expect(result.future_experiment.control?.exposed).toBe(20);
     expect(result.future_experiment.treatment?.exposed).toBe(22);
+  });
+});
+
+// ── computeContactabilityWindows tests ────────────────────────────────────
+
+describe("computeContactabilityWindows", () => {
+  const NOW = new Date("2026-07-02T12:00:00Z").getTime();
+  const MS_DAY = 24 * 60 * 60 * 1000;
+
+  function mkFact(daysAgo: number, status: string, idx = 0): EnrolledLeadFact {
+    return {
+      leadId: `lead-${daysAgo}-${status}-${idx}`,
+      createdAt: new Date(NOW - daysAgo * MS_DAY).toISOString(),
+      status,
+    };
+  }
+
+  it("returns zero rate and zero enrolled for empty input (no divide-by-zero)", () => {
+    const result = computeContactabilityWindows([], NOW);
+    expect(result.d7.enrolled).toBe(0);
+    expect(result.d7.rate).toBe(0);
+    expect(result.d28.enrolled).toBe(0);
+    expect(result.d28.rate).toBe(0);
+    expect(result.all.enrolled).toBe(0);
+    expect(result.all.rate).toBe(0);
+  });
+
+  it("includes all facts in the all-time bucket regardless of age", () => {
+    const facts = [mkFact(60, "contactable"), mkFact(1, "submitted")];
+    const { all } = computeContactabilityWindows(facts, NOW);
+    expect(all.enrolled).toBe(2);
+  });
+
+  it("filters d7 to facts within the last 7 days; d28 includes more", () => {
+    const facts = [
+      mkFact(3, "contactable"),   // inside d7 and d28
+      mkFact(10, "contactable"),  // inside d28 only
+      mkFact(35, "contactable"),  // outside both windows, inside all
+    ];
+    const { d7, d28, all } = computeContactabilityWindows(facts, NOW);
+    expect(d7.enrolled).toBe(1);
+    expect(d28.enrolled).toBe(2);
+    expect(all.enrolled).toBe(3);
+  });
+
+  it("counts contactable and forwarded as contactable; other statuses do not count", () => {
+    const facts = [
+      mkFact(1, "contactable"),
+      mkFact(2, "forwarded"),
+      mkFact(3, "submitted"),
+      mkFact(4, "unreachable"),
+    ];
+    const { all } = computeContactabilityWindows(facts, NOW);
+    expect(all.contactable).toBe(2);
+    expect(all.enrolled).toBe(4);
+  });
+
+  it("computes rate as contactable / enrolled", () => {
+    const facts = [
+      mkFact(1, "contactable"),
+      mkFact(2, "submitted"),
+      mkFact(3, "submitted"),
+      mkFact(4, "submitted"),
+    ];
+    const { all } = computeContactabilityWindows(facts, NOW);
+    expect(all.rate).toBeCloseTo(0.25);
+  });
+
+  it("returns rate = 0 when no enrolled falls inside the d7 window", () => {
+    // Fact is 30 days old, outside the 7-day window
+    const facts = [mkFact(30, "contactable")];
+    const { d7 } = computeContactabilityWindows(facts, NOW);
+    expect(d7.enrolled).toBe(0);
+    expect(d7.rate).toBe(0);
+  });
+});
+
+// ── computeT0Readout tests ────────────────────────────────────────────────
+
+describe("computeT0Readout", () => {
+  // Two arbitrary UUIDs; their arms are resolved at runtime by t0Variant so
+  // the tests stay correct however the hash lands.
+  const UUID_A = "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa";
+  const UUID_B = "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb";
+
+  it("returns zero enrolled and rate = 0 for empty input", () => {
+    const result = computeT0Readout([]);
+    expect(result.branded.enrolled).toBe(0);
+    expect(result.branded.rate).toBe(0);
+    expect(result.personal.enrolled).toBe(0);
+    expect(result.personal.rate).toBe(0);
+  });
+
+  it("places each fact into the arm returned by t0Variant (deterministic split)", () => {
+    const facts: EnrolledLeadFact[] = [
+      { leadId: UUID_A, createdAt: "2026-07-01T00:00:00Z", status: "contactable" },
+      { leadId: UUID_B, createdAt: "2026-07-01T00:00:00Z", status: "contactable" },
+    ];
+    const result = computeT0Readout(facts);
+
+    // Count expected branded / personal from the canonical t0Variant function
+    const brandedExpected = [UUID_A, UUID_B].filter((id) => t0Variant(id) === "t0_branded").length;
+    const personalExpected = [UUID_A, UUID_B].filter((id) => t0Variant(id) === "t0_personal").length;
+
+    expect(result.branded.enrolled).toBe(brandedExpected);
+    expect(result.personal.enrolled).toBe(personalExpected);
+    // Total across both arms must equal 2
+    expect(result.branded.enrolled + result.personal.enrolled).toBe(2);
+  });
+
+  it("counts forwarded and contactable as contactable in each arm", () => {
+    const facts: EnrolledLeadFact[] = [
+      { leadId: UUID_A, createdAt: "2026-07-01T00:00:00Z", status: "forwarded" },
+      { leadId: UUID_B, createdAt: "2026-07-01T00:00:00Z", status: "contactable" },
+    ];
+    const result = computeT0Readout(facts);
+
+    // Both statuses are contactable, so the total across arms must equal 2
+    expect(result.branded.contactable + result.personal.contactable).toBe(2);
+  });
+
+  it("does not count submitted or unreachable as contactable", () => {
+    const facts: EnrolledLeadFact[] = [
+      { leadId: UUID_A, createdAt: "2026-07-01T00:00:00Z", status: "submitted" },
+      { leadId: UUID_B, createdAt: "2026-07-01T00:00:00Z", status: "unreachable" },
+    ];
+    const result = computeT0Readout(facts);
+    expect(result.branded.contactable + result.personal.contactable).toBe(0);
+  });
+
+  it("is deterministic: calling twice with the same facts yields the same split", () => {
+    const facts: EnrolledLeadFact[] = [
+      { leadId: UUID_A, createdAt: "2026-07-01T00:00:00Z", status: "contactable" },
+    ];
+    expect(computeT0Readout(facts)).toEqual(computeT0Readout(facts));
   });
 });

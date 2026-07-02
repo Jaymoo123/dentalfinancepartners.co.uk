@@ -23,7 +23,7 @@ import type { NurtureLead } from "@accounting-network/web-shared/lead-nurture/co
 import { buildPropertyLeadNurtureConfig, buildLeadMessageContext } from "@/config/lead-nurture";
 import { buildLeadChannelSender, leadNurtureArmed } from "@/lib/leads/channels";
 import { runLeadAuxScans } from "@/lib/leads/aux-cron";
-import { isNurturePaused } from "@/lib/leads/nurture-control";
+import { isNurturePaused, recordCronHeartbeat } from "@/lib/leads/nurture-control";
 import { runNurtureGuardrails } from "@/lib/leads/nurture-health";
 
 export const runtime = "nodejs";
@@ -51,6 +51,15 @@ async function run(req: NextRequest): Promise<NextResponse> {
   }
   if (!authorized(req)) {
     return NextResponse.json({ ok: false, error: "unauthorized" }, { status: 401 });
+  }
+
+  // Heartbeat: stamp last_cron_run_at on every authorised tick, even when
+  // paused or dormant, so the dashboard can confirm the cron is alive.
+  // Best-effort: never blocks or fails the run.
+  try {
+    await recordCronHeartbeat();
+  } catch (err) {
+    console.error("[lead-nurture-cron] heartbeat write failed", err);
   }
 
   const config = buildPropertyLeadNurtureConfig();

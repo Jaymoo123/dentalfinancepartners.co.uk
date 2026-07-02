@@ -55,6 +55,39 @@ Absolute counts now (rates are meaningless at ~20-lead volume); revisit toward r
 ## Gates at close (2026-07-02)
 Property tsc PASS, console tsc PASS, Property vitest 706, web-shared vitest 326. Migration applied to staging (`fyabqbuklfrjqjxaofcx`) and all three views + control row verified queryable. Adversarial review clean after the fix pass (2 HIGH integration bugs fixed: step-health view pivoted to wide; digest `created_at`->`ts`).
 
+## EMERGENCY PAUSE (no redeploy) — runbook (GAP-4)
+Three ways to stop all sends immediately, fastest first. Pausing sets `lead_nurture_control.paused=true`; the hourly cron reads it every run and short-circuits the main run + aux scans (guardrail alerting still runs). Un-pausing is the reverse. **No redeploy needed for any of these.**
+
+1. **Console button (preferred).** Estate-console → the site's page → Lead contactability → **Pause sends**. Gated by the console login cookie. Requires the console deployment to be live (Wave 2 redeploy).
+2. **SQL (always works, even if the console is down).** In the Supabase dashboard SQL editor for the Property project (`dhlxwmvmkrfnmcgjbntk`):
+   ```sql
+   -- PAUSE everything now:
+   update public.lead_nurture_control
+     set paused = true, paused_reason = 'manual emergency pause', paused_at = now(), paused_by = 'owner-sql', updated_at = now()
+   where id = 1;
+   -- RESUME:
+   update public.lead_nurture_control
+     set paused = false, paused_reason = null, paused_at = null, paused_by = 'owner-sql', updated_at = now()
+   where id = 1;
+   -- CONFIRM current state:
+   select paused, paused_reason, paused_at, last_cron_run_at from public.lead_nurture_control where id = 1;
+   ```
+   Effect is immediate on the next hourly cron tick (at most ~1 hour). To also stop the instant step-0 send at submit time, additionally flip the env flag (option 3).
+3. **Env kill (stops instant sends too, needs a redeploy to take effect).** Set `LEAD_NURTURE_ENABLED` to empty/`0` in Vercel prod and redeploy. This is the master arm; it stops both the cron AND the synchronous submit-time touch. Slower (redeploy) but total. Deploy from repo root: `VERCEL_ORG_ID=team_XF9WAygZX7SGk9Fo4tOAnihH VERCEL_PROJECT_ID=prj_Di0U5vYZVPlkm7xcA3p9il9gyDzU npx vercel --prod --yes`.
+
+Note: the kill switch fails OPEN (a DB read error returns "not paused") so sends are never blocked by a bad DB state; this means a paused state must be confirmed from the row above, not inferred from behaviour.
+
+## Wave 2 observability additions (2026-07-02)
+Migration `supabase/migrations/20260702000003_lead_nurture_observability_v2.sql` (additive + idempotent):
+- **Cron heartbeat (GAP-3):** `lead_nurture_control` gains `last_cron_run_at` / `last_digest_run_at`. The hourly cron and the daily digest stamp their column every authorised run. The console shows a live/amber/**STALE** badge (hourly red if > 2h, digest red if > 25h) and the daily digest carries a "CRON LIVENESS" line, so a dead cron is now distinguishable from a genuinely quiet day. **Owner action recommended:** wire an EXTERNAL dead-man's-switch (e.g. an uptime monitor or a healthchecks.io ping the cron hits) so a total outage is caught even if the whole app is down. The internal heartbeat + digest liveness line are the in-app signal; they cannot catch "the app is entirely offline".
+- **Funnel cohort (GAP-7):** `vw_lead_contactability_funnel` now counts only the ENROLLED cohort (leads with a `lead_nurture_state` row), so the 47 pre-go-live leads no longer dilute every rate. Enrolment is the go-live cohort filter (no hardcoded date).
+- **Step-health accuracy:** `vw_lead_nurture_step_health` excludes the aux sequences (`booking_reminder:*`, `abandoned_booking`) so reminder/nudge sends no longer inflate the main sequence's step 0/1.
+- **Open/click (AN-5):** `vw_lead_nurture_health` now returns `opened_24h/clicked_24h/opened_7d/clicked_7d` (populate once the Resend engagement webhook secret, H3, is set).
+- **T0 experiment readout (AN-6):** console computes the branded-vs-personal split by recomputing `t0Variant(leadId)` (shared `@accounting-network/web-shared/lead-nurture/t0`) over the enrolled cohort; no persisted variant column needed.
+- **Windowed contactability rate (AN-7):** console shows the contactable rate for 7d / 28d / all-time over the enrolled cohort, so week-over-week movement against the 3-of-9 baseline is readable.
+
+Apply: `python scripts/apply_web_analytics_migrations.py staging 20260702000003` then `... prod 20260702000003` (owner-gated; requires 20260702000001 first). Then redeploy Property (heartbeat writes + digest line) and the estate-console (new panels + pause button).
+
 ## Deferred (documented, not built)
 - Per-lead hard-bounce auto-stop (currently a hard bounce is recorded but the lead is not auto-stopped; the system-level bounce alert covers it).
 - Attempt-count / send-latency columns on `lead_nurture_sends` (would enable retry-loop and claim-to-confirm latency views; kept off to avoid touching the hardened send path).

@@ -33,6 +33,10 @@ function makeHealth(overrides: Partial<NurtureHealth> = {}): NurtureHealth {
     optouts7d: 0,
     replies24h: 1,
     booked24h: 2,
+    opened24h: 0,
+    clicked24h: 0,
+    opened7d: 0,
+    clicked7d: 0,
     activeLeads: 5,
     stuckLeads: 0,
     contactable: 3,
@@ -50,6 +54,8 @@ function makeControl(overrides: Partial<NurtureControl> = {}): NurtureControl {
     pausedBy: null,
     lastAlertAt: null,
     lastAlertKey: null,
+    lastCronRunAt: null,
+    lastDigestRunAt: null,
     ...overrides,
   };
 }

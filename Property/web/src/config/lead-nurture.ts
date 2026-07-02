@@ -106,24 +106,11 @@ function base(): string {
   return getSiteUrl().replace(/\/$/, "");
 }
 
-// ── FNV-1a hash + variant bucket ─────────────────────────────────────────────
-
-function fnv1a32(str: string): number {
-  let h = 2166136261 >>> 0;
-  for (let i = 0; i < str.length; i++) {
-    h ^= str.charCodeAt(i);
-    h = Math.imul(h, 16777619) >>> 0;
-  }
-  return h;
-}
-
-/**
- * Stable A/B bucket for the T0 experiment. Exported for offline analysis.
- * Uses FNV-1a hash of the lead UUID so retries always return the same variant.
- */
-export function t0Variant(leadId: string): "t0_branded" | "t0_personal" {
-  return fnv1a32(leadId) % 2 === 0 ? "t0_branded" : "t0_personal";
-}
+// ── T0 experiment variant ─────────────────────────────────────────────────────
+// Single source of truth lives in web-shared so the console readout recomputes
+// the exact same split; re-exported here for the copy layer's existing importers.
+import { t0Variant } from "@accounting-network/web-shared/lead-nurture/t0";
+export { t0Variant };
 
 // ── Calculator slug map (verified against real routes) ───────────────────────
 

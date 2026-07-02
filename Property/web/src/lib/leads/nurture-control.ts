@@ -21,6 +21,8 @@ export type NurtureControl = {
   pausedBy: string | null;
   lastAlertAt: string | null;
   lastAlertKey: string | null;
+  lastCronRunAt: string | null;
+  lastDigestRunAt: string | null;
 };
 
 type DbRow = {
@@ -30,6 +32,8 @@ type DbRow = {
   paused_by: string | null;
   last_alert_at: string | null;
   last_alert_key: string | null;
+  last_cron_run_at: string | null;
+  last_digest_run_at: string | null;
 };
 
 const DEFAULT_CONTROL: NurtureControl = {
@@ -39,6 +43,8 @@ const DEFAULT_CONTROL: NurtureControl = {
   pausedBy: null,
   lastAlertAt: null,
   lastAlertKey: null,
+  lastCronRunAt: null,
+  lastDigestRunAt: null,
 };
 
 function toControl(row: DbRow): NurtureControl {
@@ -49,6 +55,8 @@ function toControl(row: DbRow): NurtureControl {
     pausedBy: row.paused_by,
     lastAlertAt: row.last_alert_at,
     lastAlertKey: row.last_alert_key,
+    lastCronRunAt: row.last_cron_run_at,
+    lastDigestRunAt: row.last_digest_run_at,
   };
 }
 
@@ -62,7 +70,7 @@ function toControl(row: DbRow): NurtureControl {
 export async function getNurtureControl(): Promise<NurtureControl> {
   try {
     const res = await adminSelect<DbRow>("lead_nurture_control", {
-      select: "paused,paused_reason,paused_at,paused_by,last_alert_at,last_alert_key",
+      select: "paused,paused_reason,paused_at,paused_by,last_alert_at,last_alert_key,last_cron_run_at,last_digest_run_at",
       id: "eq.1",
       limit: "1",
     });
@@ -163,5 +171,56 @@ export async function recordGuardrailAlert(key: string): Promise<void> {
     }
   } catch (err) {
     console.error("[nurture-control] recordGuardrailAlert error", err);
+  }
+}
+
+/**
+ * Record that the hourly lead-nurture cron has fired. Upserts id=1 updating
+ * only last_cron_run_at and updated_at (merge-duplicates so paused state is
+ * untouched). Fails silently if the table is missing. Never throws.
+ */
+export async function recordCronHeartbeat(): Promise<void> {
+  const nowIso = new Date().toISOString();
+  try {
+    const res = await adminInsert(
+      "lead_nurture_control",
+      {
+        id: 1,
+        last_cron_run_at: nowIso,
+        updated_at: nowIso,
+      },
+      { onConflict: "id" },
+    );
+    if (!res.ok) {
+      console.error("[nurture-control] recordCronHeartbeat write failed", res.status);
+    }
+  } catch (err) {
+    console.error("[nurture-control] recordCronHeartbeat error", err);
+  }
+}
+
+/**
+ * Record that the daily lead-nurture digest cron has fired. Upserts id=1
+ * updating only last_digest_run_at and updated_at (merge-duplicates so
+ * paused state is untouched). Fails silently if the table is missing.
+ * Never throws.
+ */
+export async function recordDigestHeartbeat(): Promise<void> {
+  const nowIso = new Date().toISOString();
+  try {
+    const res = await adminInsert(
+      "lead_nurture_control",
+      {
+        id: 1,
+        last_digest_run_at: nowIso,
+        updated_at: nowIso,
+      },
+      { onConflict: "id" },
+    );
+    if (!res.ok) {
+      console.error("[nurture-control] recordDigestHeartbeat write failed", res.status);
+    }
+  } catch (err) {
+    console.error("[nurture-control] recordDigestHeartbeat error", err);
   }
 }

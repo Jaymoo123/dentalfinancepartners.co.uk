@@ -54,6 +54,10 @@ export type NurtureHealth = {
   contactable: number;
   unreachable: number;
   forwarded: number;
+  opened24h: number;
+  clicked24h: number;
+  opened7d: number;
+  clicked7d: number;
 };
 
 export type GuardrailThresholds = {
@@ -228,6 +232,10 @@ type HealthViewRow = {
   contactable: number | null;
   unreachable: number | null;
   forwarded: number | null;
+  opened_24h: number | null;
+  clicked_24h: number | null;
+  opened_7d: number | null;
+  clicked_7d: number | null;
 };
 
 // ── getNurtureHealth ──────────────────────────────────────────────────────────
@@ -270,6 +278,10 @@ export async function getNurtureHealth(
       contactable: n(r.contactable),
       unreachable: n(r.unreachable),
       forwarded: n(r.forwarded),
+      opened24h: n(r.opened_24h),
+      clicked24h: n(r.clicked_24h),
+      opened7d: n(r.opened_7d),
+      clicked7d: n(r.clicked_7d),
     };
   } catch {
     return null;
@@ -320,6 +332,8 @@ export async function runNurtureGuardrails(opts: {
     pausedBy: null as string | null,
     lastAlertAt: null as string | null,
     lastAlertKey: null as string | null,
+    lastCronRunAt: null as string | null,
+    lastDigestRunAt: null as string | null,
   }));
 
   let alerted = false;

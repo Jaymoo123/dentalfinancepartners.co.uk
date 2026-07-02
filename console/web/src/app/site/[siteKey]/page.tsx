@@ -56,6 +56,9 @@ import {
   getNurtureControl,
   getUnreachableLeads,
   getBookedLeads,
+  getEnrolledLeadFacts,
+  computeContactabilityWindows,
+  computeT0Readout,
   type SiteKpis,
   type ContactabilityFunnel,
   type ContactabilityLeadRow,
@@ -66,6 +69,8 @@ import {
   type NurtureControl,
   type UnreachableLead,
   type BookedLead,
+  type EnrolledLeadFact,
+  type RateWindow,
   type VisitorJourney,
   type CalculatorConversionPlacement,
   type ClientError,
@@ -551,6 +556,8 @@ function LeadContactabilityPanel({
   nurtureControl,
   unreachableLeads,
   bookedLeads,
+  t0,
+  windows,
 }: {
   funnel: ContactabilityFunnel | null;
   leads: ContactabilityLeadRow[];
@@ -561,6 +568,8 @@ function LeadContactabilityPanel({
   nurtureControl: NurtureControl;
   unreachableLeads: UnreachableLead[];
   bookedLeads: BookedLead[];
+  t0: { branded: RateWindow; personal: RateWindow };
+  windows: { d7: RateWindow; d28: RateWindow; all: RateWindow };
 }) {
   const contactableRate =
     funnel && funnel.submitted > 0 ? funnel.contactable / funnel.submitted : null;
@@ -569,6 +578,14 @@ function LeadContactabilityPanel({
     nurtureHealth && nurtureHealth.sends_24h > 0
       ? nurtureHealth.sent_24h / nurtureHealth.sends_24h
       : null;
+
+  // Cron-liveness: age in minutes from lastCronRunAt / lastDigestRunAt
+  const cronMins = nurtureControl.lastCronRunAt
+    ? Math.round((Date.now() - new Date(nurtureControl.lastCronRunAt).getTime()) / 60000)
+    : null;
+  const digestMins = nurtureControl.lastDigestRunAt
+    ? Math.round((Date.now() - new Date(nurtureControl.lastDigestRunAt).getTime()) / 60000)
+    : null;
 
   return (
     <div>
@@ -620,7 +637,36 @@ function LeadContactabilityPanel({
           </p>
         )}
 
+        {/* Cron-liveness badges */}
+        <div className="mt-3 flex flex-wrap gap-2">
+          <span
+            className={`rounded px-2 py-0.5 text-xs font-semibold ${
+              cronMins == null || cronMins > 120
+                ? "bg-rose-100 text-rose-700"
+                : cronMins > 90
+                ? "bg-amber-100 text-amber-700"
+                : "bg-emerald-100 text-emerald-700"
+            }`}
+          >
+            {cronMins == null
+              ? "Hourly cron: STALE"
+              : `Hourly cron: ran ${cronMins < 60 ? `${cronMins}m` : `${Math.floor(cronMins / 60)}h ${cronMins % 60}m`} ago`}
+          </span>
+          <span
+            className={`rounded px-2 py-0.5 text-xs font-semibold ${
+              digestMins == null || digestMins > 1500
+                ? "bg-rose-100 text-rose-700"
+                : "bg-emerald-100 text-emerald-700"
+            }`}
+          >
+            {digestMins == null
+              ? "Daily digest: STALE"
+              : `Daily digest: ran ${digestMins < 60 ? `${digestMins}m` : digestMins < 1440 ? `${Math.floor(digestMins / 60)}h` : `${Math.floor(digestMins / 1440)}d`} ago`}
+          </span>
+        </div>
+
         {nurtureHealth ? (
+          <>
           <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-5 lg:grid-cols-10">
             <SnapshotCard
               label="Send success 24h"
@@ -683,12 +729,52 @@ function LeadContactabilityPanel({
               accent={nurtureHealth.stuck_leads > 0 ? "rose" : "sky"}
               compact
             />
+            <SnapshotCard
+              label="Opened 24h"
+              value={String(nurtureHealth.opened24h)}
+              accent={nurtureHealth.opened24h > 0 ? "emerald" : "sky"}
+              compact
+            />
+            <SnapshotCard
+              label="Clicked 24h"
+              value={String(nurtureHealth.clicked24h)}
+              accent={nurtureHealth.clicked24h > 0 ? "emerald" : "sky"}
+              compact
+            />
           </div>
+          <p className="mt-1 text-xs text-slate-400">
+            Opened/Clicked figures populate once the Resend engagement webhook is configured.
+          </p>
+          </>
         ) : (
           <p className="mt-2 text-xs text-slate-400">
             Health metrics not yet available (migration pending).
           </p>
         )}
+      </div>
+
+      {/* First-touch A/B (T0) */}
+      <div className="mt-4 rounded-xl border border-slate-200 bg-white p-4">
+        <h3 className="text-sm font-bold text-slate-700">First-touch A/B (T0)</h3>
+        <div className="mt-3 grid grid-cols-2 gap-3">
+          <SnapshotCard
+            label="Branded CTA"
+            value={`${t0.branded.enrolled} enrolled`}
+            sub={`${pct(t0.branded.rate)} contactable`}
+            accent="sky"
+            compact
+          />
+          <SnapshotCard
+            label="Personal reply-led"
+            value={`${t0.personal.enrolled} enrolled`}
+            sub={`${pct(t0.personal.rate)} contactable`}
+            accent="sky"
+            compact
+          />
+        </div>
+        <p className="mt-2 text-xs text-slate-400">
+          Deterministic split recomputed from lead id; needs volume to be conclusive.
+        </p>
       </div>
 
       {funnel ? (
@@ -764,6 +850,34 @@ function LeadContactabilityPanel({
           Contactability pipeline not yet active (migration pending or no data).
         </p>
       )}
+
+      {/* Contactability rate by window */}
+      <div className="mt-4 rounded-xl border border-slate-200 bg-white p-4">
+        <h3 className="text-sm font-bold text-slate-700">Contactability rate by window</h3>
+        <div className="mt-3 grid grid-cols-3 gap-3">
+          <SnapshotCard
+            label="7d"
+            value={pct(windows.d7.rate)}
+            sub={`n=${windows.d7.enrolled}`}
+            accent="sky"
+            compact
+          />
+          <SnapshotCard
+            label="28d"
+            value={pct(windows.d28.rate)}
+            sub={`n=${windows.d28.enrolled}`}
+            accent="sky"
+            compact
+          />
+          <SnapshotCard
+            label="All time"
+            value={pct(windows.all.rate)}
+            sub={`n=${windows.all.enrolled}`}
+            accent="sky"
+            compact
+          />
+        </div>
+      </div>
 
       {/* Where leads get stuck: per-step throughput */}
       {nurtureStepHealth.length > 0 && (
@@ -1183,6 +1297,7 @@ export default async function SitePage({
     nurtureControl,
     unreachableLeads,
     bookedLeads,
+    enrolledLeadFacts,
   ] = await Promise.all([
     isProperty ? getContactabilityFunnel(siteKey) : Promise.resolve(null),
     isProperty ? getContactabilityLeads(siteKey) : Promise.resolve([] as ContactabilityLeadRow[]),
@@ -1192,10 +1307,14 @@ export default async function SitePage({
     isProperty ? getFailedSends(siteKey) : Promise.resolve([] as FailedSend[]),
     isProperty
       ? getNurtureControl()
-      : Promise.resolve({ paused: false, paused_reason: null, paused_at: null, paused_by: null, last_alert_at: null, last_alert_key: null } as NurtureControl),
+      : Promise.resolve({ paused: false, paused_reason: null, paused_at: null, paused_by: null, last_alert_at: null, last_alert_key: null, lastCronRunAt: null, lastDigestRunAt: null } as NurtureControl),
     isProperty ? getUnreachableLeads(siteKey) : Promise.resolve([] as UnreachableLead[]),
     isProperty ? getBookedLeads(siteKey) : Promise.resolve([] as BookedLead[]),
+    isProperty ? getEnrolledLeadFacts(siteKey) : Promise.resolve([] as EnrolledLeadFact[]),
   ]);
+
+  const t0 = computeT0Readout(enrolledLeadFacts);
+  const windows = computeContactabilityWindows(enrolledLeadFacts, Date.now());
 
   // ── Tab sections ──
 
@@ -1434,6 +1553,8 @@ export default async function SitePage({
           nurtureControl={nurtureControl}
           unreachableLeads={unreachableLeads}
           bookedLeads={bookedLeads}
+          t0={t0}
+          windows={windows}
         />
       )}
       {caps.leadIntent ? (

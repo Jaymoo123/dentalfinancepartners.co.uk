@@ -10,6 +10,7 @@
  */
 
 import { unstable_cache } from "next/cache";
+import { t0Variant } from "../lead-nurture/t0";
 
 const SUPABASE_URL =
   process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL || "";
@@ -1040,6 +1041,11 @@ export type NurtureHealth = {
   booked_24h: number;
   failed_24h: number;
   bounces_24h: number;
+  /** Email engagement figures; populated once the Resend engagement webhook is configured. */
+  opened24h: number;
+  clicked24h: number;
+  opened7d: number;
+  clicked7d: number;
 };
 
 /**
@@ -1091,6 +1097,10 @@ export type NurtureControl = {
   paused_by: string | null;
   last_alert_at: string | null;
   last_alert_key: string | null;
+  /** ISO timestamp of the most recent hourly cron run (null = never run / unknown). */
+  lastCronRunAt: string | null;
+  /** ISO timestamp of the most recent daily digest run (null = never run / unknown). */
+  lastDigestRunAt: string | null;
 };
 
 // ── Lead-nurture observability: fetchers ─────────────────────────────────────
@@ -1104,7 +1114,15 @@ export type NurtureControl = {
 export async function getNurtureHealth(
   siteKey: string,
 ): Promise<NurtureHealth | null> {
-  const rows = await rest<NurtureHealth>(
+  // Raw row type: existing snake_case fields plus the new engagement columns from
+  // the view. The camelCase fields on NurtureHealth are mapped explicitly below.
+  type RawHealth = Omit<NurtureHealth, "opened24h" | "clicked24h" | "opened7d" | "clicked7d"> & {
+    opened_24h: number;
+    clicked_24h: number;
+    opened_7d: number;
+    clicked_7d: number;
+  };
+  const rows = await rest<RawHealth>(
     "vw_lead_nurture_health",
     {
       site_key: `eq.${siteKey}`,
@@ -1128,6 +1146,10 @@ export async function getNurtureHealth(
     booked_24h: n(r.booked_24h),
     failed_24h: n(r.failed_24h),
     bounces_24h: n(r.bounces_24h),
+    opened24h: n(r.opened_24h),
+    clicked24h: n(r.clicked_24h),
+    opened7d: n(r.opened_7d),
+    clicked7d: n(r.clicked_7d),
   };
 }
 
@@ -1242,6 +1264,8 @@ const DEFAULT_NURTURE_CONTROL: NurtureControl = {
   paused_by: null,
   last_alert_at: null,
   last_alert_key: null,
+  lastCronRunAt: null,
+  lastDigestRunAt: null,
 };
 
 /**
@@ -1252,11 +1276,21 @@ const DEFAULT_NURTURE_CONTROL: NurtureControl = {
  * pending), so the console always renders a Resume/Pause button.
  */
 export async function getNurtureControl(): Promise<NurtureControl> {
-  const rows = await rest<NurtureControl>(
+  type RawControl = {
+    paused: boolean;
+    paused_reason: string | null;
+    paused_at: string | null;
+    paused_by: string | null;
+    last_alert_at: string | null;
+    last_alert_key: string | null;
+    last_cron_run_at: string | null;
+    last_digest_run_at: string | null;
+  };
+  const rows = await rest<RawControl>(
     "lead_nurture_control",
     {
       id: "eq.1",
-      select: "paused,paused_reason,paused_at,paused_by,last_alert_at,last_alert_key",
+      select: "paused,paused_reason,paused_at,paused_by,last_alert_at,last_alert_key,last_cron_run_at,last_digest_run_at",
       limit: "1",
     },
     0,
@@ -1270,6 +1304,8 @@ export async function getNurtureControl(): Promise<NurtureControl> {
     paused_by: r.paused_by ?? null,
     last_alert_at: r.last_alert_at ?? null,
     last_alert_key: r.last_alert_key ?? null,
+    lastCronRunAt: r.last_cron_run_at ?? null,
+    lastDigestRunAt: r.last_digest_run_at ?? null,
   };
 }
 
@@ -1403,4 +1439,128 @@ export async function setNurturePaused(
     const txt = await res.text().catch(() => "");
     throw new Error(`nurture-control upsert ${res.status}: ${txt}`);
   }
+}
+
+// ── Enrolled-cohort facts + contactability window helpers ──────────────────
+
+/**
+ * Minimal fact per enrolled lead for contactability window calculations.
+ * Derived from lead_nurture_state joined to leads (enrolled cohort only).
+ */
+export type EnrolledLeadFact = {
+  leadId: string;
+  createdAt: string;
+  status: string;
+};
+
+/**
+ * Enrolled-lead cohort from lead_nurture_state (PostgREST embed on leads).
+ *
+ * Only leads that have a lead_nurture_state row are enrolled; no state row
+ * means the lead pre-dates or has not entered the nurture sequence.
+ *
+ * Fails soft: returns [] on any error or missing table (migration pending).
+ */
+export async function getEnrolledLeadFacts(siteKey: string): Promise<EnrolledLeadFact[]> {
+  type RawRow = {
+    lead_id: string;
+    leads: { id: string; created_at: string; status: string; source: string };
+  };
+  try {
+    const rows = await rest<RawRow>(
+      "lead_nurture_state",
+      {
+        select: "lead_id,leads!inner(id,created_at,status,source)",
+        "leads.source": `eq.${siteKey}`,
+        limit: "2000",
+      },
+      60,
+    );
+    return rows.map((row) => ({
+      leadId: row.lead_id,
+      createdAt: row.leads.created_at,
+      status: row.leads.status,
+    }));
+  } catch {
+    return [];
+  }
+}
+
+/** Shared rate-window shape used by contactability window helpers. */
+export type RateWindow = { enrolled: number; contactable: number; rate: number };
+
+/**
+ * Returns true for statuses that represent a successfully contacted lead.
+ * A forwarded lead was contactable first; both count as "made contactable".
+ * Exported for testing.
+ */
+export function isContactableStatus(s: string): boolean {
+  return s === "contactable" || s === "forwarded";
+}
+
+/**
+ * Computes contactability rates over 7-day, 28-day, and all-time windows.
+ *
+ * Filtering is by `createdAt >= nowMs - windowMs`. The all-time bucket
+ * includes every fact. When enrolled = 0 rate is 0 (no divide-by-zero).
+ *
+ * Exported (pure function) for testing.
+ *
+ * @param facts  - Enrolled-lead facts from getEnrolledLeadFacts.
+ * @param nowMs  - Current time in milliseconds (injectable for testability).
+ */
+export function computeContactabilityWindows(
+  facts: EnrolledLeadFact[],
+  nowMs: number,
+): { d7: RateWindow; d28: RateWindow; all: RateWindow } {
+  const MS_7D = 7 * 24 * 60 * 60 * 1000;
+  const MS_28D = 28 * 24 * 60 * 60 * 1000;
+
+  function bucket(cutoffMs: number | null): RateWindow {
+    const filtered =
+      cutoffMs == null
+        ? facts
+        : facts.filter((f) => new Date(f.createdAt).getTime() >= cutoffMs);
+    const enrolled = filtered.length;
+    const contactable = filtered.filter((f) => isContactableStatus(f.status)).length;
+    return { enrolled, contactable, rate: enrolled > 0 ? contactable / enrolled : 0 };
+  }
+
+  return {
+    d7: bucket(nowMs - MS_7D),
+    d28: bucket(nowMs - MS_28D),
+    all: bucket(null),
+  };
+}
+
+/**
+ * Groups enrolled-lead facts by their T0 experiment arm (deterministic FNV-1a
+ * split from the lead id) and computes per-arm contactability rates.
+ *
+ * The split is recomputed from the lead id rather than read from a persisted
+ * column, so this readout can never drift out of sync with the live assignment.
+ *
+ * Exported (pure function) for testing.
+ */
+export function computeT0Readout(
+  facts: EnrolledLeadFact[],
+): { branded: RateWindow; personal: RateWindow } {
+  const brandedFacts: EnrolledLeadFact[] = [];
+  const personalFacts: EnrolledLeadFact[] = [];
+  for (const f of facts) {
+    if (t0Variant(f.leadId) === "t0_branded") {
+      brandedFacts.push(f);
+    } else {
+      personalFacts.push(f);
+    }
+  }
+  function summarise(fs: EnrolledLeadFact[]): RateWindow {
+    const enrolled = fs.length;
+    const contactable = fs.filter((f) => isContactableStatus(f.status)).length;
+    return { enrolled, contactable, rate: enrolled > 0 ? contactable / enrolled : 0 };
+  }
+  return {
+    branded: summarise(brandedFacts),
+    personal: summarise(personalFacts),
+  };
 }

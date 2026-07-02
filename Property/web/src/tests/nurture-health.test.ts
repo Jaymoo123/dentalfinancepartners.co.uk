@@ -39,6 +39,10 @@ function makeHealth(overrides: Partial<NurtureHealth> = {}): NurtureHealth {
     contactable: 0,
     unreachable: 0,
     forwarded: 0,
+    opened24h: 0,
+    clicked24h: 0,
+    opened7d: 0,
+    clicked7d: 0,
     ...overrides,
   };
 }

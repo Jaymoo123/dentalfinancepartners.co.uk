@@ -170,6 +170,16 @@ function fmtDate(iso: string): string {
   }
 }
 
+function relativeAge(isoTs: string): string {
+  const diffMs = Date.now() - new Date(isoTs).getTime();
+  const diffMins = Math.floor(diffMs / 60_000);
+  if (diffMins < 60) return `${diffMins} minute${diffMins === 1 ? "" : "s"} ago`;
+  const diffHours = Math.floor(diffMins / 60);
+  if (diffHours < 24) return `${diffHours} hour${diffHours === 1 ? "" : "s"} ago`;
+  const diffDays = Math.floor(diffHours / 24);
+  return `${diffDays} day${diffDays === 1 ? "" : "s"} ago`;
+}
+
 /**
  * Compose a plain-text operator digest from gathered data. PURE: no I/O.
  * No em or en dashes anywhere. Uses colons, parentheses, and pipe characters
@@ -196,6 +206,20 @@ export function composeDigestEmail(d: DigestData): {
     lines.push(`  Paused by: ${by} at ${at}`);
   } else {
     lines.push(`Pause state: running.`);
+  }
+  lines.push(``);
+
+  // Cron liveness
+  lines.push(`CRON LIVENESS`);
+  if (d.control.lastCronRunAt === null) {
+    lines.push(`  Hourly cron last ran: never recorded.`);
+    lines.push(`  WARNING: the hourly cron has not run in over 2 hours; sends may be stalled.`);
+  } else {
+    lines.push(`  Hourly cron last ran: ${relativeAge(d.control.lastCronRunAt)}`);
+    const cronAgeMs = Date.now() - new Date(d.control.lastCronRunAt).getTime();
+    if (cronAgeMs > 2 * 60 * 60 * 1000) {
+      lines.push(`  WARNING: the hourly cron has not run in over 2 hours; sends may be stalled.`);
+    }
   }
   lines.push(``);
 

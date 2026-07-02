@@ -19,6 +19,7 @@ import { timingSafeEqual } from "crypto";
 import { adminConfigured } from "@/lib/supabase/admin";
 import { leadNurtureArmed } from "@/lib/leads/channels";
 import { runNurtureDigest } from "@/lib/leads/nurture-digest";
+import { recordDigestHeartbeat } from "@/lib/leads/nurture-control";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -45,6 +46,15 @@ async function run(req: NextRequest): Promise<NextResponse> {
   }
   if (!authorized(req)) {
     return NextResponse.json({ ok: false, error: "unauthorized" }, { status: 401 });
+  }
+
+  // Heartbeat: stamp last_digest_run_at on every authorised tick so the
+  // dashboard can confirm the digest cron is alive. Best-effort: never
+  // blocks or fails the run.
+  try {
+    await recordDigestHeartbeat();
+  } catch (err) {
+    console.error("[lead-nurture-digest] heartbeat write failed", err);
   }
 
   // Dormancy: no digest when the nurture system is disarmed.
