@@ -241,8 +241,8 @@ describe("acknowledgeReply", () => {
     expect(senderSpy).toHaveBeenCalledTimes(1);
     const msg = senderSpy.mock.calls[0][0] as unknown as { channel: string; body: string };
     expect(msg.channel).toBe("sms");
-    expect(msg.body).toMatch(/best time/i);
-    expect(msg.body).toContain("https://cal.example/slot");
+    expect(msg.body).toMatch(/in touch/i);
+    expect(msg.body).not.toContain("https://cal.example/slot"); // no booking push after a reply
     expect(msg.body).not.toContain("—"); // no em-dashes in copy
 
     const second = await acknowledgeReply({

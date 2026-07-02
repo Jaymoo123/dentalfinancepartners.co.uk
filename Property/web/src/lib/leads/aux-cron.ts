@@ -266,7 +266,6 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
           const sendRowId = await claimSend(leadId, sequence, 0, "email");
           if (sendRowId) {
             try {
-              const icsUrl = `${siteUrl}/api/leads/ics?t=${encodeURIComponent(mintLeadToken(leadId, "book"))}`;
               const optOutLine = optOutUrl ? `\n\nOr opt out of these follow-ups: ${optOutUrl}` : "";
               const footerNote = `${FOOTER}${optOutLine}`;
 
@@ -276,7 +275,6 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
                 paragraphs: [
                   `A quick reminder: your free property tax review call is booked for ${label}. Your specialist will have read your enquiry before they ring.`,
                   `The call takes about 20 minutes and there is nothing to prepare. If the time no longer works, you can pick a new one here: ${bookingUrl}`,
-                  `Want it in your calendar? Add it here: ${icsUrl}`,
                 ],
                 cta: { label: "Pick a different time", href: bookingUrl },
                 signoff: SIGNOFF,

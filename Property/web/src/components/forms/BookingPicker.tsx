@@ -20,7 +20,7 @@ import { setBookingDone } from "@accounting-network/web-shared/analytics/visitMe
 type Status = "idle" | "submitting" | "done" | "error" | "expired";
 
 const chipBase =
-  "flex min-h-12 touch-manipulation flex-col items-center justify-center border-2 px-3 py-2 text-sm font-bold transition-all duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600";
+  "flex min-h-12 touch-manipulation flex-col items-center justify-center border-2 px-1.5 sm:px-3 py-2 text-sm font-bold transition-all duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600";
 const chipIdle = "border-slate-300 bg-white text-slate-900 hover:border-emerald-600 hover:bg-emerald-50";
 const chipSelected = "border-emerald-600 bg-emerald-600 text-white";
 
@@ -78,14 +78,6 @@ export default function BookingPicker({ token }: { token: string }) {
           The call takes about 20 minutes. Your specialist will have read your enquiry before they
           ring.
         </p>
-        <p className="mt-3 text-sm">
-          <a
-            href={`/api/leads/ics?t=${encodeURIComponent(token)}`}
-            className="font-medium text-emerald-700 underline underline-offset-2 hover:text-emerald-900"
-          >
-            Add to calendar
-          </a>
-        </p>
       </div>
     );
   }
@@ -109,7 +101,7 @@ export default function BookingPicker({ token }: { token: string }) {
       <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-500">
         1. Pick a day
       </p>
-      <div className="grid grid-cols-5 gap-2">
+      <div className="grid grid-cols-5 gap-1 sm:gap-2">
         {days.map((d) => (
           <button
             key={d.iso}

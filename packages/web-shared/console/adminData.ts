@@ -897,6 +897,7 @@ export type ContactabilityLeadRow = {
   created_at: string;
   status: string | null;
   phone_status: string | null;
+  email_status: string | null;
   verify_pass: boolean | null;
   nurture_step: number | null;
   nurture_status: string | null;
@@ -969,14 +970,14 @@ export async function getContactabilityLeads(
   const idFilter = `in.(${ids.join(",")})`;
   const batchLimit = String(ids.length + 1);
 
-  type RawVer = { lead_id: string; phone_status: string | null; verify_pass: boolean | null };
+  type RawVer = { lead_id: string; phone_status: string | null; email_status: string | null; verify_pass: boolean | null };
   type RawNurture = { lead_id: string; step: number | null; status: string | null; next_action_at: string | null };
   type RawEvent = { lead_id: string };
 
   const [verRows, nurtureRows, eventRows] = await Promise.all([
     rest<RawVer>("lead_verification", {
       lead_id: idFilter,
-      select: "lead_id,phone_status,verify_pass",
+      select: "lead_id,phone_status,email_status,verify_pass",
       limit: batchLimit,
     }, 0),
     rest<RawNurture>("lead_nurture_state", {
@@ -1009,6 +1010,7 @@ export async function getContactabilityLeads(
       created_at: l.created_at,
       status: l.status ?? null,
       phone_status: ver?.phone_status ?? null,
+      email_status: ver?.email_status ?? null,
       verify_pass: ver != null ? (ver.verify_pass ?? null) : null,
       nurture_step: nurture?.step ?? null,
       nurture_status: nurture?.status ?? null,
@@ -1034,6 +1036,10 @@ export type NurtureHealth = {
   complaints_7d: number;
   bounces_7d: number;
   optouts_7d: number;
+  replies_24h: number;
+  booked_24h: number;
+  failed_24h: number;
+  bounces_24h: number;
 };
 
 /**
@@ -1083,6 +1089,8 @@ export type NurtureControl = {
   paused_reason: string | null;
   paused_at: string | null;
   paused_by: string | null;
+  last_alert_at: string | null;
+  last_alert_key: string | null;
 };
 
 // ── Lead-nurture observability: fetchers ─────────────────────────────────────
@@ -1116,6 +1124,10 @@ export async function getNurtureHealth(
     complaints_7d: n(r.complaints_7d),
     bounces_7d: n(r.bounces_7d),
     optouts_7d: n(r.optouts_7d),
+    replies_24h: n(r.replies_24h),
+    booked_24h: n(r.booked_24h),
+    failed_24h: n(r.failed_24h),
+    bounces_24h: n(r.bounces_24h),
   };
 }
 
@@ -1228,6 +1240,8 @@ const DEFAULT_NURTURE_CONTROL: NurtureControl = {
   paused_reason: null,
   paused_at: null,
   paused_by: null,
+  last_alert_at: null,
+  last_alert_key: null,
 };
 
 /**
@@ -1242,7 +1256,7 @@ export async function getNurtureControl(): Promise<NurtureControl> {
     "lead_nurture_control",
     {
       id: "eq.1",
-      select: "paused,paused_reason,paused_at,paused_by",
+      select: "paused,paused_reason,paused_at,paused_by,last_alert_at,last_alert_key",
       limit: "1",
     },
     0,
@@ -1254,7 +1268,100 @@ export async function getNurtureControl(): Promise<NurtureControl> {
     paused_reason: r.paused_reason ?? null,
     paused_at: r.paused_at ?? null,
     paused_by: r.paused_by ?? null,
+    last_alert_at: r.last_alert_at ?? null,
+    last_alert_key: r.last_alert_key ?? null,
   };
+}
+
+// ── Per-site lead-status lists ─────────────────────────────────────────────
+
+/**
+ * Lead row for the unreachable list (leads.status = 'unreachable').
+ * Fails soft: getUnreachableLeads() returns [] when the table is absent.
+ */
+export type UnreachableLead = {
+  id: string;
+  full_name: string | null;
+  created_at: string;
+};
+
+/**
+ * Recent unreachable leads for this site.
+ *
+ * TTL=0: operational ops view, must stay fresh.
+ * Returns [] when there are no unreachable leads or on any error.
+ */
+export function getUnreachableLeads(siteKey: string): Promise<UnreachableLead[]> {
+  return rest<UnreachableLead>(
+    "leads",
+    {
+      source: `eq.${siteKey}`,
+      status: "eq.unreachable",
+      select: "id,full_name,created_at",
+      order: "created_at.desc",
+    },
+    0,
+  );
+}
+
+/**
+ * Booked-appointment event joined with the lead's full_name in memory.
+ * Mirrors the getFailedSends join pattern.
+ * Fails soft: getBookedLeads() returns [] when the table or column is absent.
+ */
+export type BookedLead = {
+  id: string;
+  lead_id: string;
+  full_name: string | null;
+  ts: string;
+};
+
+/**
+ * Last ~25 booked events for this site, joined with lead full_name in memory.
+ *
+ * Reads lead_contact_events (event_type = booked), parallel-fetches lead rows to
+ * resolve full_name and filter by source = siteKey. Fetches 100 events before
+ * filtering so cross-site events do not exhaust the 25-row target.
+ *
+ * TTL=0: always fresh (operational view).
+ * Returns [] when the table is absent (migration pending) or on any error.
+ */
+export async function getBookedLeads(siteKey: string): Promise<BookedLead[]> {
+  type RawEvent = { id: string; lead_id: string; ts: string };
+  const events = await rest<RawEvent>(
+    "lead_contact_events",
+    {
+      event_type: "eq.booked",
+      select: "id,lead_id,ts",
+      order: "ts.desc",
+      limit: "100",
+    },
+    0,
+  );
+  if (!events.length) return [];
+
+  const ids = [...new Set(events.map((e) => e.lead_id))];
+  type RawLead = { id: string; full_name: string | null; source: string };
+  const leadRows = await restUncached<RawLead>("leads", {
+    id: `in.(${ids.join(",")})`,
+    select: "id,full_name,source",
+    limit: String(ids.length + 1),
+  });
+  const leadMap = new Map(leadRows.map((l) => [l.id, l]));
+
+  const out: BookedLead[] = [];
+  for (const e of events) {
+    const lead = leadMap.get(e.lead_id);
+    if (!lead || lead.source !== siteKey) continue;
+    out.push({
+      id: e.id,
+      lead_id: e.lead_id,
+      full_name: lead.full_name ?? null,
+      ts: e.ts,
+    });
+    if (out.length >= 25) break;
+  }
+  return out;
 }
 
 /**

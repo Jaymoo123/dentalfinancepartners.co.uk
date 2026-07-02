@@ -47,7 +47,7 @@ export default async function ThankYouPage({
         <div className={`${siteContainerLg} text-center`}>
           <div className="mx-auto max-w-2xl">
             <CheckIcon />
-            <h1 className="text-4xl font-bold text-slate-900 sm:text-5xl">
+            <h1 className="text-2xl font-bold text-slate-900 sm:text-4xl">
               You will not hear from us again about this enquiry
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-slate-700">
@@ -138,7 +138,7 @@ export default async function ThankYouPage({
           </ol>
 
           {bookingToken ? (
-            <div className="mt-8 border-2 border-slate-200 bg-white p-6 text-left sm:p-8">
+            <div className="mt-8 border-2 border-slate-200 bg-white p-3 text-left sm:p-8">
               <p className="mb-6 text-center text-base font-semibold text-slate-800">
                 Want to skip the back and forth? Pick a time for your call now.
               </p>

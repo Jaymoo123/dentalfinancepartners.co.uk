@@ -330,7 +330,7 @@ describe("Scan A: T-24 email", () => {
     expect(mockSend).not.toHaveBeenCalled();
   });
 
-  it("email contains the ICS link and the booking URL", async () => {
+  it("email contains the booking URL", async () => {
     vi.useFakeTimers();
     vi.setSystemTime(new Date("2026-07-03T10:00:00.000Z"));
 
@@ -342,8 +342,8 @@ describe("Scan A: T-24 email", () => {
     const emailCall = mockSend.mock.calls.find((c) => c[0].channel === "email");
     expect(emailCall).toBeDefined();
     const bodyText: string = emailCall![0].text ?? emailCall![0].html ?? "";
-    expect(bodyText).toContain("/api/leads/ics");
     expect(bodyText).toContain("/book");
+    expect(bodyText).not.toContain("/api/leads/ics");
   });
 });
 
@@ -618,7 +618,6 @@ describe("Scan B: abandoned-booking nudge", () => {
 
 describe("QA gate: reminder copy", () => {
   const BOOKING_URL = `${SITE_URL}/book?t=tok-${LEAD_ID}-book`;
-  const ICS_URL     = `${SITE_URL}/api/leads/ics?t=tok-${LEAD_ID}-book`;
   const LABEL       = "Tue 14 Jul, morning (9am to 12pm)";
 
   it("T-24 email subject and paragraphs pass the QA gate", () => {
@@ -626,7 +625,6 @@ describe("QA gate: reminder copy", () => {
     const paragraphs = [
       `A quick reminder: your free property tax review call is booked for ${LABEL}. Your specialist will have read your enquiry before they ring.`,
       `The call takes about 20 minutes and there is nothing to prepare. If the time no longer works, you can pick a new one here: ${BOOKING_URL}`,
-      `Want it in your calendar? Add it here: ${ICS_URL}`,
     ];
     const result = qaGateMessage(
       "email",
@@ -670,7 +668,6 @@ describe("QA gate: reminder copy", () => {
       "Your review call is tomorrow, Sam",
       `A quick reminder: your free property tax review call is booked for ${LABEL}. Your specialist will have read your enquiry before they ring.`,
       `The call takes about 20 minutes and there is nothing to prepare. If the time no longer works, you can pick a new one here: ${BOOKING_URL}`,
-      `Want it in your calendar? Add it here: ${ICS_URL}`,
       `Hi Sam, your free property tax review call is later today, ${LABEL}. Your specialist will call you then. Need a different time? ${BOOKING_URL} Reply STOP to opt out.`,
       `Looks like you started to pick a time, Sam. Anything I can make easier? Reply and I'll sort it. Or the slots are here: ${BOOKING_URL} Reply STOP to opt out.`,
     ].join(" ");

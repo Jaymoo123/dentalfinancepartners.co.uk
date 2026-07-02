@@ -1,22 +1,18 @@
 /**
- * Enriched "READY FOR DJH" handoff email. Fired once, when a lead becomes
- * contactable. It sends the operator a full readiness dossier: the enquiry,
- * verification, AI + Companies House enrichment, the on-site journey (what they
- * read, which calculators they used), the conversation so far (verbatim replies
- * with timestamps), a best call window, and an explainable A/B/C readiness
- * grade. The goal: every forwarded lead is an evidence pack DJH can trust.
+ * Qualified lead handoff email. Fired once, when a lead becomes contactable.
+ * Sends the owner a full lead brief: the enquiry, verification status,
+ * AI + Companies House enrichment, the on-site journey (what they read, which
+ * calculators they used), the conversation so far (verbatim replies with
+ * timestamps), a best call window, and an explainable quality score.
  *
- * This email goes to the OPERATOR inbox (Junayd), never to DJH directly — the
- * manual forward stays a deliberate QA gate. Test leads and an unconfigured
- * Resend are skipped (no send), so the synthetic probe can assert the handoff
- * fired without emailing anyone.
+ * Test leads and an unconfigured Resend are skipped (no send), so the
+ * synthetic probe can assert the handoff fired without emailing anyone.
  */
 
 import { getResend, getFromAddress } from "@/lib/resend";
 import { resolveLeadTo } from "@/lib/lead-routing";
 import { adminSelect } from "@/lib/supabase/admin";
 import { gatherLeadDossier, humanisePath, formatLatency, type LeadDossier } from "./dossier";
-import { buildCallBrief, renderBriefSection } from "./call-brief";
 
 interface LeadRow {
   id: string;
@@ -107,10 +103,6 @@ export async function sendContactableHandoff(
     message: lead.message,
   });
 
-  // Best-effort call brief. Returns null when unconfigured or on any error.
-  const brief = await buildCallBrief(d, lead.message);
-  const briefSection = renderBriefSection(brief);
-
   const ver = d.verification;
   const enr = d.enrichment;
   const gradeColour = GRADE_COLOURS[d.readiness.grade] || "#047857";
@@ -190,10 +182,10 @@ export async function sendContactableHandoff(
   const html = `<div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#0f172a;max-width:640px;">
 <p style="font-size:16px;">
 <span style="display:inline-block;background:${gradeColour};color:#ffffff;border-radius:4px;padding:2px 10px;font-weight:700;margin-right:8px;">Grade ${esc(d.readiness.grade)} &middot; ${esc(d.readiness.score)}/10</span>
-<strong style="color:#047857;">Verified and actively responded, ready to forward to DJH.</strong>
+<strong style="color:#047857;">Contact details verified. Actively responded and ready for a call.</strong>
 </p>
 ${bookedLine ? `<p>${bookedLine}</p>` : ""}
-${briefSection.html}<table style="border-collapse:collapse;font-size:14px;margin:12px 0;">${detail}</table>
+<table style="border-collapse:collapse;font-size:14px;margin:12px 0;">${detail}</table>
 <div style="background:#f8fafc;border:1px solid #e5e7eb;border-radius:6px;padding:12px 14px;font-size:14px;">
 <div style="color:#64748b;margin-bottom:4px;">Their enquiry</div>
 <div>${esc(lead.message || "(no message)")}</div>
@@ -201,25 +193,22 @@ ${briefSection.html}<table style="border-collapse:collapse;font-size:14px;margin
 ${topPagesHtml}
 ${timelineHtml}
 ${reasonsHtml}
-<p style="font-size:13px;color:#64748b;margin-top:16px;">Forward to Michael.Winniczuk@djh.co.uk per the SOP, then log it in the Delivery Log.</p>
 </div>`;
 
   const lastReply = d.replies.length ? d.replies[d.replies.length - 1] : null;
   const text =
-    `READY FOR DJH (Grade ${d.readiness.grade}, ${d.readiness.score}/10): ${lead.full_name} is contactable (${reason}).\n` +
+    `New qualified enquiry: ${lead.full_name}\n` +
+    `Grade ${d.readiness.grade} (${d.readiness.score}/10)\n` +
     `Phone: ${ver.phone_e164 || lead.phone} (${ver.phone_status || "?"})\n` +
     `Email: ${lead.email} (${ver.email_status || "?"})\n` +
-    (d.bookingStart ? `Booked: ${fmtTs(d.bookingStart)}\n` : "") +
-    (briefSection.text ? `\n${briefSection.text}` : "") +
+    (d.bookingStart ? `Booked callback: ${fmtTs(d.bookingStart)}\n` : "") +
     (d.responseLatencyMs !== null
       ? `Responded ${formatLatency(d.responseLatencyMs)} after enquiring.\n`
       : "") +
     (d.callWindow ? `${d.callWindow}.\n` : "") +
     (lastReply ? `Last reply (${lastReply.channel}): "${lastReply.body}"\n` : "") +
-    (journeyStory(d) ? `Journey: ${journeyStory(d)}\n` : "") +
-    `Why: ${d.readiness.reasons.join("; ") || "n/a"}\n` +
-    `Enquiry: ${lead.message || "(none)"}\n` +
-    `Forward to Michael.Winniczuk@djh.co.uk per the SOP.`;
+    (journeyStory(d) ? `On-site journey: ${journeyStory(d)}\n` : "") +
+    `Enquiry: ${lead.message || "(none)"}`;
 
   // Do not actually email for synthetic test leads, or if Resend is unconfigured.
   if (lead.source === "test") return { sent: false, to, skipped: "test" };
@@ -228,7 +217,7 @@ ${reasonsHtml}
   const { data, error } = await getResend().emails.send({
     from: getFromAddress(),
     to,
-    subject: `READY FOR DJH (Grade ${d.readiness.grade}): ${lead.full_name} is contactable (${reason})`,
+    subject: `New qualified enquiry: ${lead.full_name}`,
     html,
     text,
   });

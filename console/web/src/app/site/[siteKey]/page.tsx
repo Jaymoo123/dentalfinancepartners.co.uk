@@ -54,6 +54,8 @@ import {
   getStuckLeads,
   getFailedSends,
   getNurtureControl,
+  getUnreachableLeads,
+  getBookedLeads,
   type SiteKpis,
   type ContactabilityFunnel,
   type ContactabilityLeadRow,
@@ -62,6 +64,8 @@ import {
   type StuckLead,
   type FailedSend,
   type NurtureControl,
+  type UnreachableLead,
+  type BookedLead,
   type VisitorJourney,
   type CalculatorConversionPlacement,
   type ClientError,
@@ -545,6 +549,8 @@ function LeadContactabilityPanel({
   stuckLeads,
   failedSends,
   nurtureControl,
+  unreachableLeads,
+  bookedLeads,
 }: {
   funnel: ContactabilityFunnel | null;
   leads: ContactabilityLeadRow[];
@@ -553,6 +559,8 @@ function LeadContactabilityPanel({
   stuckLeads: StuckLead[];
   failedSends: FailedSend[];
   nurtureControl: NurtureControl;
+  unreachableLeads: UnreachableLead[];
+  bookedLeads: BookedLead[];
 }) {
   const contactableRate =
     funnel && funnel.submitted > 0 ? funnel.contactable / funnel.submitted : null;
@@ -600,14 +608,43 @@ function LeadContactabilityPanel({
             </button>
           </form>
         </div>
+        {(nurtureControl.last_alert_at || nurtureControl.last_alert_key) && (
+          <p className="mt-2 text-xs text-slate-500">
+            Last alert:{" "}
+            {nurtureControl.last_alert_key && (
+              <span className="font-medium text-slate-700">{nurtureControl.last_alert_key}</span>
+            )}
+            {nurtureControl.last_alert_at && (
+              <span className="ml-1 text-slate-400">{ago(nurtureControl.last_alert_at)}</span>
+            )}
+          </p>
+        )}
 
         {nurtureHealth ? (
-          <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-7">
+          <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-5 lg:grid-cols-10">
             <SnapshotCard
               label="Send success 24h"
               value={sendSuccessRate != null ? pct(sendSuccessRate) : "-"}
               sub={`${nurtureHealth.sent_24h} of ${nurtureHealth.sends_24h}`}
               accent={sendSuccessRate != null && sendSuccessRate < 0.9 ? "rose" : "emerald"}
+              compact
+            />
+            <SnapshotCard
+              label="Replies 24h"
+              value={String(nurtureHealth.replies_24h)}
+              accent={nurtureHealth.replies_24h > 0 ? "emerald" : "sky"}
+              compact
+            />
+            <SnapshotCard
+              label="Booked 24h"
+              value={String(nurtureHealth.booked_24h)}
+              accent={nurtureHealth.booked_24h > 0 ? "emerald" : "sky"}
+              compact
+            />
+            <SnapshotCard
+              label="Failed 24h"
+              value={String(nurtureHealth.failed_24h)}
+              accent={nurtureHealth.failed_24h > 0 ? "rose" : "sky"}
               compact
             />
             <SnapshotCard
@@ -829,6 +866,50 @@ function LeadContactabilityPanel({
         </Detail>
       )}
 
+      {/* Unreachable leads */}
+      {unreachableLeads.length > 0 && (
+        <Detail summary={`Unreachable leads (${unreachableLeads.length})`}>
+          <table className="w-full text-sm">
+            <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+              <tr>
+                <th className="px-3 py-2">Name</th>
+                <th className="px-3 py-2">Submitted</th>
+              </tr>
+            </thead>
+            <tbody>
+              {unreachableLeads.map((l) => (
+                <tr key={l.id} className="border-t border-slate-100">
+                  <td className="px-3 py-2 font-medium text-slate-800">{l.full_name || "(unnamed)"}</td>
+                  <td className="px-3 py-2 text-xs text-slate-500">{ago(l.created_at)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </Detail>
+      )}
+
+      {/* Booked appointments */}
+      {bookedLeads.length > 0 && (
+        <Detail summary={`Booked appointments (${bookedLeads.length})`}>
+          <table className="w-full text-sm">
+            <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+              <tr>
+                <th className="px-3 py-2">Name</th>
+                <th className="px-3 py-2">Booked</th>
+              </tr>
+            </thead>
+            <tbody>
+              {bookedLeads.map((b) => (
+                <tr key={b.id} className="border-t border-slate-100">
+                  <td className="px-3 py-2 font-medium text-slate-800">{b.full_name || "(unnamed)"}</td>
+                  <td className="px-3 py-2 text-xs text-slate-500">{ago(b.ts)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </Detail>
+      )}
+
       {/* Recent leads ops table */}
       <div className="mt-6">
         <h3 className="text-sm font-bold text-slate-700">
@@ -871,6 +952,11 @@ function LeadContactabilityPanel({
                       {l.phone_status && (
                         <span className="ml-1 text-slate-400">
                           ({l.phone_status.replace("valid_", "")})
+                        </span>
+                      )}
+                      {l.email_status && (
+                        <span className="ml-1 text-slate-400">
+                          {l.email_status.replace("valid_", "")}
                         </span>
                       )}
                     </td>
@@ -1095,6 +1181,8 @@ export default async function SitePage({
     stuckLeads,
     failedSends,
     nurtureControl,
+    unreachableLeads,
+    bookedLeads,
   ] = await Promise.all([
     isProperty ? getContactabilityFunnel(siteKey) : Promise.resolve(null),
     isProperty ? getContactabilityLeads(siteKey) : Promise.resolve([] as ContactabilityLeadRow[]),
@@ -1104,7 +1192,9 @@ export default async function SitePage({
     isProperty ? getFailedSends(siteKey) : Promise.resolve([] as FailedSend[]),
     isProperty
       ? getNurtureControl()
-      : Promise.resolve({ paused: false, paused_reason: null, paused_at: null, paused_by: null } as NurtureControl),
+      : Promise.resolve({ paused: false, paused_reason: null, paused_at: null, paused_by: null, last_alert_at: null, last_alert_key: null } as NurtureControl),
+    isProperty ? getUnreachableLeads(siteKey) : Promise.resolve([] as UnreachableLead[]),
+    isProperty ? getBookedLeads(siteKey) : Promise.resolve([] as BookedLead[]),
   ]);
 
   // ── Tab sections ──
@@ -1342,6 +1432,8 @@ export default async function SitePage({
           stuckLeads={stuckLeads}
           failedSends={failedSends}
           nurtureControl={nurtureControl}
+          unreachableLeads={unreachableLeads}
+          bookedLeads={bookedLeads}
         />
       )}
       {caps.leadIntent ? (
