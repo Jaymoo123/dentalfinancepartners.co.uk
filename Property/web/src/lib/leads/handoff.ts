@@ -202,9 +202,6 @@ export async function sendContactableHandoff(
 <span style="display:inline-block;background:${gradeColour};color:#ffffff;border-radius:4px;padding:2px 10px;font-weight:700;margin-right:8px;">Grade ${esc(d.readiness.grade)} &middot; ${esc(d.readiness.score)}/10</span>
 <strong style="color:#047857;">Contact details verified. Actively responded and ready for a call.</strong>
 </p>
-<div style="background:#fffbeb;border:1px solid #fde68a;border-left:3px solid #b45309;border-radius:8px;padding:12px 14px;margin:12px 0;font-size:13px;color:#78350f;">
-<strong>Forwarding to DJH:</strong> under the data-sharing agreement (Annex A), forward only the enquirer's name, contact details and their enquiry (the name/phone/email rows and the "Their enquiry" block). The grade, on-site activity, enrichment and reply history further down are internal context for your decision and must NOT be forwarded to DJH.
-</div>
 ${bookedLine ? `<p>${bookedLine}</p>` : ""}
 <table style="border-collapse:collapse;font-size:14px;margin:12px 0;">${detail}</table>
 <div style="background:#f8fafc;border:1px solid #e5e7eb;border-radius:6px;padding:12px 14px;font-size:14px;">
@@ -220,8 +217,6 @@ ${forwardedButton}
   const lastReply = d.replies.length ? d.replies[d.replies.length - 1] : null;
   const text =
     `New qualified enquiry: ${lead.full_name}\n` +
-    `FORWARDING TO DJH: forward only the name, contact details and enquiry (Annex A). ` +
-    `The grade, on-site activity, enrichment and reply history are internal context, do NOT forward them.\n` +
     `Grade ${d.readiness.grade} (${d.readiness.score}/10)\n` +
     `Phone: ${ver.phone_e164 || lead.phone} (${ver.phone_status || "?"})\n` +
     `Email: ${lead.email} (${ver.email_status || "?"})\n` +

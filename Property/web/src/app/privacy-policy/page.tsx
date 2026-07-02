@@ -140,8 +140,12 @@ export default function PrivacyPolicyPage() {
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">5. Who we share your information with</h2>
         {partner ? (
           <p>
-            When you submit an enquiry, we share the details you provide with our specialist partner firm,{" "}
-            <strong>{partner.name}</strong>, so that they can contact you and provide the advice you asked for. We do this
+            When you submit an enquiry, we share information about you and your enquiry with our specialist partner firm,{" "}
+            <strong>{partner.name}</strong>, so that they can contact you and provide the advice you asked for. As well as the
+            details you give us (your name, contact details and your enquiry), this includes the result of our checks to
+            confirm your contact details are valid, a short summary and priority rating we prepare to help route your enquiry,
+            any messages you send us in response, a note of how you used our website in connection with your enquiry, where
+            relevant publicly available information about your business, and any call time you book. We do this
             on the basis of our <strong>legitimate interests</strong> (see section 4), and you can object at any time (see
             section 7). {partner.name} acts as an <strong>independent data controller</strong> of the information it
             receives, may share it within its own group of companies for the same purpose, and uses it under its own{" "}
@@ -157,7 +161,7 @@ export default function PrivacyPolicyPage() {
             ) : (
               "privacy policy"
             )}
-            . We share your enquiry only for the purpose of responding to it.
+            . We share this information only for the purpose of arranging and providing the advice you asked for.
           </p>
         ) : (
           <p>
