@@ -132,6 +132,24 @@ export interface LeadNurtureConfig {
    * step should fire. When absent the engine uses fromMs + delayHours.
    */
   nextActionAt?: (fromMs: number, nextStep: LeadNurtureStep, ctx: LeadMessageContext) => number;
+  /**
+   * Optional per-site DISPATCH-time gate. The cron calls this for each due row
+   * BEFORE sending. Return { ok:false, retryAtMs } to defer the whole step (e.g.
+   * an SMS-bearing step that has fallen outside the send window after a cron
+   * backlog or a pause/resume); the cron reschedules next_action_at to retryAtMs
+   * and skips this tick. When absent, every due step dispatches immediately.
+   * This is the dispatch-time complement to nextActionAt (scheduling-time), so a
+   * step scheduled inside the window but dispatched late is still guarded.
+   */
+  dispatchGate?: (step: LeadNurtureStep, nowMs: number) => { ok: boolean; retryAtMs?: number };
+  /**
+   * Optional per-site hook fired when a lead's sequence is exhausted (chased
+   * through every step with no two-way response) and lead_nurture_state.status
+   * has just been set to 'unreachable'. Fired ONLY when that transition actually
+   * occurred. Property uses it to also flip public.leads.status to 'unreachable'
+   * so the funnel / console / digest reflect it. Best-effort (must not throw).
+   */
+  onSequenceExhausted?: (leadId: string) => Promise<void>;
 }
 
 /**

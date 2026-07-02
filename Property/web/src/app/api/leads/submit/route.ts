@@ -118,27 +118,57 @@ export async function POST(req: Request) {
   // 3. Dedupe (best-effort) against a recent same-email/phone lead, else insert.
   //    A dedupe hiccup must NEVER lose a lead, so it is isolated from the insert.
   let leadId: string | null = null;
+  let existingRow: { id: string; full_name: string; phone: string; message: string } | null = null;
   try {
     // Dedupe on email only. Email is regex-validated and (as a standalone eq
     // filter) safe; folding phone into an `or=(...)` group risked breaking the
     // PostgREST filter on stray characters, and stored phones are raw anyway.
     const since = new Date(Date.now() - DEDUPE_WINDOW_MS).toISOString();
-    const existing = await adminSelect<{ id: string }>("leads", {
-      select: "id",
+    const existing = await adminSelect<{ id: string; full_name: string; phone: string; message: string }>("leads", {
+      select: "id,full_name,phone,message",
       source: `eq.${source}`,
       email: `eq.${email}`,
       created_at: `gte.${since}`,
       order: "created_at.desc",
       limit: "1",
     });
-    if (existing.data.length) leadId = existing.data[0].id;
+    if (existing.data.length) {
+      leadId = existing.data[0].id;
+      existingRow = existing.data[0];
+    }
   } catch (e) {
     console.error("[leads/submit] dedupe lookup failed (non-fatal)", e);
   }
 
   if (leadId) {
     try {
-      await adminUpdate("leads", { id: `eq.${leadId}` }, { message, role, submitted_at: baseRow.submitted_at });
+      // Adopt corrections: use the newly submitted value when non-empty, so a
+      // resubmit can fix a wrong stored phone or populate an email-only prior
+      // row (SpecialistWidget/ResourceGate inserts full_name:"", phone:"").
+      // Append messages: combine so no context is lost; cap at 4 000 chars,
+      // trimming from the front so the most recent context is always retained.
+      const MAX_MSG = 4_000;
+      const priorMsg = (existingRow?.message ?? "").trim();
+      const newMsg   = message.trim();
+      let mergedMessage: string;
+      if (!priorMsg || priorMsg === newMsg) {
+        mergedMessage = newMsg || priorMsg;
+      } else {
+        const combined = `${priorMsg}\n\n---\n${newMsg}`;
+        mergedMessage = combined.length > MAX_MSG ? combined.slice(-MAX_MSG) : combined;
+      }
+
+      const dedupeUpdate: Record<string, unknown> = {
+        message: mergedMessage,
+        role,
+        submitted_at: baseRow.submitted_at,
+      };
+      // Only include full_name / phone when the new submission is non-empty,
+      // so a good stored value is never overwritten with a blank.
+      if (full_name) dedupeUpdate.full_name = full_name;
+      if (phone)     dedupeUpdate.phone    = phone;
+
+      await adminUpdate("leads", { id: `eq.${leadId}` }, dedupeUpdate);
     } catch (e) {
       console.error("[leads/submit] dedupe update failed (non-fatal)", e);
     }

@@ -6,9 +6,11 @@
  *
  * vercel.json cron: { "path": "/api/nurture/send", "schedule": "0 9 * * *" }
  *
- * EN-04 dormancy: CRON_SECRET unset -> returns 401 (cannot authorize). This
- * is the "dormant" posture: the endpoint exists but is unreachable without
- * the secret. No email leaves until CRON_SECRET is set.
+ * EN-04 dormancy: CRON_SECRET unset -> returns 401 (cannot authorize). Even
+ * when authorized, the drip stays PARKED unless SUBSCRIBER_NURTURE_ENABLED is
+ * also set (GAP-1): CRON_SECRET is shared with the lead-nurture cron, so the
+ * newsletter must not ride on it. No subscriber email leaves until BOTH the
+ * secret and the dedicated flag are set.
  *
  * SEC-05:
  *   - Returns 503 when Supabase is unconfigured.
@@ -62,7 +64,15 @@ async function run(req: NextRequest): Promise<NextResponse> {
   }
 
   const provider = buildResendProvider();
-  const cronArmed = Boolean(process.env.CRON_SECRET);
+  // GAP-1: the subscriber marketing drip must NOT arm on CRON_SECRET alone.
+  // CRON_SECRET was set for the lead-nurture go-live, which silently un-parked
+  // this legacy drip (it shares the sending domain but sits outside the lead
+  // kill-switch / guardrails / digest). It now also requires a DEDICATED flag,
+  // default OFF, so the newsletter stays parked until deliberately activated.
+  const newsletterArmed =
+    process.env.SUBSCRIBER_NURTURE_ENABLED === "1" ||
+    process.env.SUBSCRIBER_NURTURE_ENABLED === "true";
+  const cronArmed = Boolean(process.env.CRON_SECRET) && newsletterArmed;
 
   const result = await runNurtureCron(config, provider, cronArmed);
   return NextResponse.json({ ok: true, ...result });

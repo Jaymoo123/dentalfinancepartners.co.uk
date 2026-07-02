@@ -12,6 +12,8 @@
 import { getResend, getFromAddress } from "@/lib/resend";
 import { resolveLeadTo } from "@/lib/lead-routing";
 import { adminSelect } from "@/lib/supabase/admin";
+import { getSiteUrl } from "@/config/niche-loader";
+import { mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 import { gatherLeadDossier, humanisePath, formatLatency, type LeadDossier } from "./dossier";
 
 interface LeadRow {
@@ -79,6 +81,7 @@ export interface HandoffResult {
   to: string;
   skipped?: "test" | "no-resend" | "no-lead";
   messageId?: string;
+  reason?: string;
 }
 
 export async function sendContactableHandoff(
@@ -179,6 +182,21 @@ export async function sendContactableHandoff(
 </div>`
     : "";
 
+  // Operator "mark as forwarded to DJH" one-click link (AN-2). Best-effort: if
+  // the token secret is unset the button is simply omitted from the email.
+  let forwardedUrl: string | null = null;
+  try {
+    forwardedUrl = `${getSiteUrl().replace(/\/$/, "")}/api/leads/forwarded/${mintLeadToken(lead.id, "forwarded")}`;
+  } catch {
+    forwardedUrl = null;
+  }
+  const forwardedButton = forwardedUrl
+    ? `<div style="margin:22px 0 4px;">
+<a href="${forwardedUrl}" style="display:inline-block;background:#047857;color:#ffffff;text-decoration:none;border-radius:6px;padding:11px 20px;font-size:14px;font-weight:600;">I have forwarded this to DJH</a>
+<div style="color:#94a3b8;font-size:12px;margin-top:6px;">Click once you have sent this enquiry to DJH, to log the hand-over.</div>
+</div>`
+    : "";
+
   const html = `<div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#0f172a;max-width:640px;">
 <p style="font-size:16px;">
 <span style="display:inline-block;background:${gradeColour};color:#ffffff;border-radius:4px;padding:2px 10px;font-weight:700;margin-right:8px;">Grade ${esc(d.readiness.grade)} &middot; ${esc(d.readiness.score)}/10</span>
@@ -193,6 +211,7 @@ ${bookedLine ? `<p>${bookedLine}</p>` : ""}
 ${topPagesHtml}
 ${timelineHtml}
 ${reasonsHtml}
+${forwardedButton}
 </div>`;
 
   const lastReply = d.replies.length ? d.replies[d.replies.length - 1] : null;
@@ -208,19 +227,36 @@ ${reasonsHtml}
     (d.callWindow ? `${d.callWindow}.\n` : "") +
     (lastReply ? `Last reply (${lastReply.channel}): "${lastReply.body}"\n` : "") +
     (journeyStory(d) ? `On-site journey: ${journeyStory(d)}\n` : "") +
-    `Enquiry: ${lead.message || "(none)"}`;
+    `Enquiry: ${lead.message || "(none)"}` +
+    (forwardedUrl ? `\n\nOnce forwarded to DJH, log it here: ${forwardedUrl}` : "");
 
   // Do not actually email for synthetic test leads, or if Resend is unconfigured.
   if (lead.source === "test") return { sent: false, to, skipped: "test" };
   if (!process.env.RESEND_API_KEY) return { sent: false, to, skipped: "no-resend" };
 
-  const { data, error } = await getResend().emails.send({
-    from: getFromAddress(),
-    to,
-    subject: `New qualified enquiry: ${lead.full_name}`,
-    html,
-    text,
-  });
-  if (error) throw new Error(`handoff send error: ${JSON.stringify(error)}`);
-  return { sent: true, to, messageId: data?.id };
+  // Try up to 3 times with short backoffs before giving up gracefully.
+  // Total worst-case wait is ~1.1 s, well inside any route budget.
+  const backoffs = [300, 800];
+  let lastError: unknown;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    if (attempt > 0) {
+      await new Promise<void>((resolve) => setTimeout(resolve, backoffs[attempt - 1]));
+    }
+    const { data, error } = await getResend().emails.send({
+      from: getFromAddress(),
+      to,
+      subject: `New qualified enquiry: ${lead.full_name}`,
+      html,
+      text,
+    });
+    if (!error) return { sent: true, to, messageId: data?.id };
+    lastError = error;
+  }
+  const failReason =
+    lastError instanceof Error
+      ? lastError.message
+      : typeof lastError === "object" && lastError !== null && "message" in lastError
+        ? String((lastError as { message: unknown }).message)
+        : String(lastError ?? "send error");
+  return { sent: false, to, reason: failReason };
 }

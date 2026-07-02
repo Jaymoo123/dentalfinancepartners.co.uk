@@ -15,7 +15,7 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
 
 // ── In-memory store backing the mocked admin layer ───────────────────────────
-type SendRow = { id: string; lead_id: string; sequence: string; step: number; channel: string; status?: string; provider_id?: string | null };
+type SendRow = { id: string; lead_id: string; sequence: string; step: number; channel: string; status?: string; provider_id?: string | null; sent_at?: string | null };
 type StateRow = { lead_id: string; sequence: string; step: number; status: string; next_action_at: string | null; last_action_at?: string | null; generated_copy?: Record<string, unknown> | null; copy_status?: string | null; best_send_hour?: number | null };
 type LeadRow = { id: string; full_name: string; email: string; phone: string; role: string | null; source: string; message?: string | null };
 
@@ -256,7 +256,7 @@ describe("runLeadNurtureCron", () => {
     seedState(1);
     store.leads.push(LEAD);
     const sender = okSender();
-    const res = await runLeadNurtureCron(CFG, sender, async () => CTX, false);
+    const res = await runLeadNurtureCron(CFG, () => sender, async () => CTX, false);
     expect(res).toEqual({ processed: 0, dispatched: 0 });
     expect(sender.send).not.toHaveBeenCalled();
   });
@@ -265,7 +265,7 @@ describe("runLeadNurtureCron", () => {
     seedState(1); // due (next_action_at in the past)
     store.leads.push(LEAD);
     const sender = okSender();
-    const res = await runLeadNurtureCron(CFG, sender, async () => CTX, true);
+    const res = await runLeadNurtureCron(CFG, () => sender, async () => CTX, true);
     expect(res.processed).toBe(1);
     expect(res.dispatched).toBe(1); // step 1 has one sms channel
     expect(store.states[0].step).toBe(2);
@@ -275,9 +275,83 @@ describe("runLeadNurtureCron", () => {
     seedState(1, "contactable");
     store.leads.push(LEAD);
     const sender = okSender();
-    const res = await runLeadNurtureCron(CFG, sender, async () => CTX, true);
+    const res = await runLeadNurtureCron(CFG, () => sender, async () => CTX, true);
     expect(res.processed).toBe(0);
     expect(sender.send).not.toHaveBeenCalled();
+  });
+});
+
+// ── Wave 1: dispatch gate, per-lead sender, retry cap, exhaustion hook ────────
+describe("engine safety (Wave 1)", () => {
+  it("defers a due step and reschedules when config.dispatchGate returns ok:false (ENG-01/M2)", async () => {
+    seedState(1); // due
+    store.leads.push(LEAD);
+    const sender = okSender();
+    const retryAt = Date.now() + 5 * 3_600_000;
+    const cfgGated: LeadNurtureConfig = { ...CFG, dispatchGate: () => ({ ok: false, retryAtMs: retryAt }) };
+    const res = await runLeadNurtureCron(cfgGated, () => sender, async () => CTX, true);
+    expect(res.processed).toBe(0);
+    expect(res.dispatched).toBe(0);
+    expect(sender.send).not.toHaveBeenCalled();
+    expect(store.states[0].status).toBe("active"); // held, not advanced
+    expect(store.states[0].step).toBe(1);
+    expect(new Date(store.states[0].next_action_at as string).getTime()).toBe(retryAt);
+  });
+
+  it("dispatches normally when dispatchGate returns ok:true", async () => {
+    seedState(1);
+    store.leads.push(LEAD);
+    const sender = okSender();
+    const cfgGated: LeadNurtureConfig = { ...CFG, dispatchGate: () => ({ ok: true }) };
+    const res = await runLeadNurtureCron(cfgGated, () => sender, async () => CTX, true);
+    expect(res.processed).toBe(1);
+    expect(sender.send).toHaveBeenCalled();
+  });
+
+  it("builds the sender per lead so source can gate real vs test sends (ENG-02)", async () => {
+    seedState(1);
+    store.leads.push(LEAD);
+    const seen: string[] = [];
+    const sender = okSender();
+    await runLeadNurtureCron(CFG, (lead) => { seen.push(lead.source); return sender; }, async () => CTX, true);
+    expect(seen).toEqual(["property"]);
+  });
+
+  it("force-advances a permanently-failing step once past the retry cap (ENG-05/ENTRY-2)", async () => {
+    seedState(0);
+    const old = new Date(Date.now() - 7 * 3_600_000).toISOString();
+    store.sends.push(
+      { id: "s1", lead_id: LEAD.id, sequence: CFG.sequenceName, step: 0, channel: "email", status: "failed", sent_at: old },
+      { id: "s2", lead_id: LEAD.id, sequence: CFG.sequenceName, step: 0, channel: "sms", status: "failed", sent_at: old },
+    );
+    const failing: ChannelSender = { send: vi.fn(async () => { throw new Error("still down"); }) };
+    await processLeadStep(LEAD, 0, CFG, failing, CTX);
+    expect(store.states[0].step).toBe(1); // forced past the wedged step
+  });
+
+  it("does NOT force-advance a freshly-failing step (within the retry cap)", async () => {
+    seedState(0);
+    const failing: ChannelSender = { send: vi.fn(async () => { throw new Error("down"); }) };
+    await processLeadStep(LEAD, 0, CFG, failing, CTX);
+    expect(store.states[0].step).toBe(0); // held for the next tick to retry
+  });
+
+  it("fires onSequenceExhausted with the lead id at exhaustion (INBOUND-3)", async () => {
+    seedState(2); // last index
+    const hook = vi.fn(async () => {});
+    const cfgHook: LeadNurtureConfig = { ...CFG, onSequenceExhausted: hook };
+    await processLeadStep(LEAD, 2, cfgHook, okSender(), CTX);
+    expect(store.states[0].status).toBe("unreachable");
+    expect(hook).toHaveBeenCalledWith(LEAD.id);
+  });
+
+  it("does NOT fire onSequenceExhausted when no transition happened (already contactable)", async () => {
+    seedState(2, "contactable");
+    const hook = vi.fn(async () => {});
+    const cfgHook: LeadNurtureConfig = { ...CFG, onSequenceExhausted: hook };
+    await processLeadStep(LEAD, 2, cfgHook, okSender(), CTX);
+    expect(store.states[0].status).toBe("contactable");
+    expect(hook).not.toHaveBeenCalled();
   });
 });
 

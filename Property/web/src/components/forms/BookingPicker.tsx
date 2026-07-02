@@ -11,7 +11,7 @@
  * House style: sharp corners, emerald/slate, no em-dashes in copy.
  */
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { upcomingWeekdays, CALL_WINDOWS } from "@/lib/leads/booking";
@@ -27,6 +27,19 @@ const chipSelected = "border-emerald-600 bg-emerald-600 text-white";
 export default function BookingPicker({ token }: { token: string }) {
   const days = useMemo(() => upcomingWeekdays(10), []);
   const [date, setDate] = useState<string | null>(null);
+
+  // Fire a booking_viewed signal once on mount (real browser only; JS required).
+  // The ref guard prevents React 18 StrictMode double-invoke from sending twice.
+  const viewedFired = useRef(false);
+  useEffect(() => {
+    if (!token || viewedFired.current) return;
+    viewedFired.current = true;
+    fetch("/api/leads/booking-viewed", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ token }),
+    }).catch(() => {});
+  }, []);
   const [windowKey, setWindowKey] = useState<string | null>(null);
   const [status, setStatus] = useState<Status>("idle");
   const [confirmedLabel, setConfirmedLabel] = useState<string | null>(null);

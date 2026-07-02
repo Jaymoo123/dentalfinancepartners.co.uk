@@ -29,6 +29,7 @@
 import { adminSelect, adminUpdate } from "@/lib/supabase/admin";
 import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
 import { LEAD_SEQUENCE_NAME } from "@/config/lead-nurture";
+import { getResend, getFromAddress } from "@/lib/resend";
 import { sendContactableHandoff, type HandoffResult } from "./handoff";
 
 type EventRow = { event_type: string; channel: string | null };
@@ -109,31 +110,85 @@ export interface PromoteResult {
 
 /** Promote to contactable (idempotent), stop the chase, fire the handoff once. */
 export async function promoteIfContactable(leadId: string): Promise<PromoteResult> {
-  const verdict = await evaluateContactability(leadId);
-  if (!verdict.contactable) return { promoted: false, reason: verdict.reason };
+  try {
+    const verdict = await evaluateContactability(leadId);
+    if (!verdict.contactable) return { promoted: false, reason: verdict.reason };
 
-  const nowIso = new Date().toISOString();
-  // Stop chasing (whatever state the sequence is in).
-  await adminUpdate(
-    "lead_nurture_state",
-    { lead_id: `eq.${leadId}`, sequence: `eq.${LEAD_SEQUENCE_NAME}` },
-    { status: "contactable", next_action_at: null, updated_at: nowIso },
-  );
+    const nowIso = new Date().toISOString();
+    // Stop chasing (whatever state the sequence is in).
+    await adminUpdate(
+      "lead_nurture_state",
+      { lead_id: `eq.${leadId}`, sequence: `eq.${LEAD_SEQUENCE_NAME}` },
+      { status: "contactable", next_action_at: null, updated_at: nowIso },
+    );
 
-  // Flip leads.status exactly once: the filter excludes already-promoted states,
-  // so a second call updates zero rows and does not re-fire the handoff.
-  const flip = await adminUpdate<{ id: string }>(
-    "leads",
-    { id: `eq.${leadId}`, status: "in.(new,nurturing)" },
-    { status: "contactable" },
-  );
-  if (flip.data.length === 0) {
-    return { promoted: false, alreadyPromoted: true, reason: verdict.reason };
+    // Flip leads.status exactly once: the filter excludes already-promoted states,
+    // so a second call updates zero rows and does not re-fire the handoff.
+    const flip = await adminUpdate<{ id: string }>(
+      "leads",
+      { id: `eq.${leadId}`, status: "in.(new,nurturing)" },
+      { status: "contactable" },
+    );
+    if (flip.data.length === 0) {
+      return { promoted: false, alreadyPromoted: true, reason: verdict.reason };
+    }
+
+    // Fire the handoff first; the audit event is recorded only once we know the outcome.
+    const handoff = await sendContactableHandoff(leadId, verdict.reason);
+
+    if (handoff.sent === true || handoff.skipped) {
+      // Sent successfully, or a known/expected skip (test, no-resend, no-lead):
+      // record the standard handed-off event.
+      await recordLeadContactEvent(leadId, "handed_off", "system", { reason: verdict.reason });
+      // The contactable -> forwarded flip is OPERATOR-driven (owner decision AN-2):
+      // it happens when the operator clicks "I have forwarded this to DJH" in the
+      // handoff email (POST /api/leads/forwarded/[token]), so 'forwarded' means a
+      // real DJH hand-over, not merely that our brief email was delivered.
+    } else {
+      // Real send failure after retries: audit it, then alert the operator.
+      // leads.status remains 'contactable' so the handoff can be re-attempted later.
+      await recordLeadContactEvent(leadId, "send_failed", "system", {
+        kind: "handoff_failed",
+        reason: handoff.reason,
+      });
+      // Best-effort operator alert: wrapped in its own try/catch so it can never throw.
+      try {
+        // Fetch the lead name for a readable subject; fall back to a generic label.
+        let alertName = "the lead";
+        try {
+          const nameRes = await adminSelect<{ full_name: string }>("leads", {
+            id: `eq.${leadId}`,
+            select: "full_name",
+            limit: "1",
+          });
+          if (nameRes.data[0]?.full_name) alertName = nameRes.data[0].full_name;
+        } catch {
+          // best-effort; generic label is fine
+        }
+        // handoff.to is already resolveLeadTo(source) so no second lookup is needed.
+        if (handoff.to && process.env.RESEND_API_KEY) {
+          const safe = (s: string) =>
+            s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+          const safeAlertName = safe(alertName);
+          const safeReason = safe(handoff.reason ?? "unknown");
+          await getResend().emails.send({
+            from: getFromAddress(),
+            to: handoff.to,
+            subject: `Handoff email failed: ${alertName}`,
+            html: `<p><strong>${safeAlertName}</strong> has passed the contactability gate and their status is now <strong>contactable</strong>, but the READY-FOR-DJH handoff email did not send after 3 attempts.</p><p>Please check the console for this lead and follow up manually. The lead has not been lost.</p><p>Failure reason: ${safeReason}</p>`,
+            text: `${alertName} has passed the contactability gate (status: contactable) but the READY-FOR-DJH handoff email failed after 3 attempts. Please check the console and follow up manually. Failure reason: ${handoff.reason ?? "unknown"}`,
+          });
+        }
+      } catch (alertErr) {
+        console.error("[contactability] operator alert send failed", alertErr);
+      }
+    }
+
+    return { promoted: true, reason: verdict.reason, handoff };
+  } catch (err) {
+    console.error("[contactability] promoteIfContactable unexpected error", err);
+    return { promoted: false, reason: "unexpected error" };
   }
-
-  await recordLeadContactEvent(leadId, "handed_off", "system", { reason: verdict.reason });
-  const handoff = await sendContactableHandoff(leadId, verdict.reason);
-  return { promoted: true, reason: verdict.reason, handoff };
 }
 
 /**

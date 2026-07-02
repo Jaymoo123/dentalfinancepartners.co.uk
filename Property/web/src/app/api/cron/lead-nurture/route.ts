@@ -19,6 +19,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import { timingSafeEqual } from "crypto";
 import { adminConfigured } from "@/lib/supabase/admin";
 import { runLeadNurtureCron } from "@accounting-network/web-shared/lead-nurture/cron";
+import type { NurtureLead } from "@accounting-network/web-shared/lead-nurture/config";
 import { buildPropertyLeadNurtureConfig, buildLeadMessageContext } from "@/config/lead-nurture";
 import { buildLeadChannelSender, leadNurtureArmed } from "@/lib/leads/channels";
 import { runLeadAuxScans } from "@/lib/leads/aux-cron";
@@ -53,7 +54,11 @@ async function run(req: NextRequest): Promise<NextResponse> {
   }
 
   const config = buildPropertyLeadNurtureConfig();
-  const sender = buildLeadChannelSender({ live: true });
+  // Per-lead sender: a real lead gets the live sender; a source='test' lead gets
+  // a skip-only sender so a synthetic probe never messages a real provider from
+  // the cron path (ENG-02). Mirrors the submit route's { live: !isTest }.
+  const senderForLead = (lead: NurtureLead) =>
+    buildLeadChannelSender({ live: lead.source !== "test" });
   // Master arm: nothing is processed (or advanced) until LEAD_NURTURE_ENABLED.
   const cronArmed = leadNurtureArmed();
   // DB-pause gate: a kill-switch in the database halts processing even when
@@ -63,7 +68,7 @@ async function run(req: NextRequest): Promise<NextResponse> {
 
   const result = await runLeadNurtureCron(
     config,
-    sender,
+    senderForLead,
     (lead, state) => buildLeadMessageContext(lead, state),
     effectiveArmed,
   );

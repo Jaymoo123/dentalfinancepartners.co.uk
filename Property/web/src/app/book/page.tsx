@@ -3,9 +3,6 @@ import Link from "next/link";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import BookingPicker from "@/components/forms/BookingPicker";
-import { verifyLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
-import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
-import { adminSelect } from "@/lib/supabase/admin";
 
 /**
  * Standalone booking page, linked from every nurture SMS/email as
@@ -27,29 +24,6 @@ export default async function BookPage({
 }) {
   const params = await searchParams;
   const token = (params.t ?? "").trim();
-
-  // Record one booking_viewed engagement signal per lead per day. Best-effort:
-  // never throws and never delays the page render.
-  if (token) {
-    try {
-      const verdict = verifyLeadToken(token, "book");
-      if (verdict.ok) {
-        const since = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
-        const existing = await adminSelect<{ id: string }>("lead_contact_events", {
-          select: "id",
-          lead_id: `eq.${verdict.leadId}`,
-          event_type: "eq.booking_viewed",
-          created_at: `gte.${since}`,
-          limit: "1",
-        });
-        if (existing.data.length === 0) {
-          await recordLeadContactEvent(verdict.leadId, "booking_viewed", "web");
-        }
-      }
-    } catch {
-      // best-effort: never block render on event recording failure
-    }
-  }
 
   return (
     <section className="bg-white py-16 sm:py-20">

@@ -190,7 +190,11 @@ function buildHtml(r: LeadRecord, partnerCopied: boolean): string {
                     ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;">
                   <tr><td style="background:#f8fafc;border:1px solid #e2e8f0;border-left:3px solid #0f172a;border-radius:8px;padding:12px 16px;color:#0f172a;font-size:14px;font-weight:600;">Forward this email to Reflex Accounting</td></tr>
                 </table>`
-                    : ""
+                    : (r.source ?? "").toLowerCase() === "property"
+                      ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;">
+                  <tr><td style="background:#fef2f2;border:1px solid #fecaca;border-left:3px solid #b91c1c;border-radius:8px;padding:12px 16px;color:#7f1d1d;font-size:14px;font-weight:600;">Nurture in progress. Do NOT forward this yet. Wait for the separate READY handoff email, which arrives only once the lead is verified and has actively responded.</td></tr>
+                </table>`
+                      : ""
                 }
                 <p style="margin:${partnerCopied ? "24px" : "0"} 0 4px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Lead details</p>
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;table-layout:fixed;">
@@ -224,6 +228,11 @@ function buildText(r: LeadRecord, partnerCopied: boolean): string {
   const lines: string[] = [`NEW ${siteLabel.toUpperCase()} LEAD`, headerName];
   if (received) lines.push(`Received ${received}`);
   if (partnerCopied) lines.push("", "Forward this email to Reflex Accounting");
+  else if ((r.source ?? "").toLowerCase() === "property")
+    lines.push(
+      "",
+      "NURTURE IN PROGRESS. Do NOT forward this yet. Wait for the separate READY handoff email, which arrives only once the lead is verified and has actively responded.",
+    );
   lines.push("", "LEAD DETAILS");
   for (const field of DETAIL_FIELDS) {
     const raw = (field.get(r) ?? "").toString().trim();

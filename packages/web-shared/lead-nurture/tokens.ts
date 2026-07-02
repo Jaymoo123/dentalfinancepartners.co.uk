@@ -6,7 +6,7 @@
  * Token format: base64url(payload).base64url(sig)
  * Payload JSON: { l, i, x } where
  *   l = lead id (uuid)
- *   i = intent ("confirm" | "optout" | "book")
+ *   i = intent ("confirm" | "optout" | "book" | "forwarded")
  *   x = expiry (unix seconds)
  *
  * The confirm link proves a human acted (a contactability signal); the opt-out
@@ -17,7 +17,7 @@
 
 import crypto from "crypto";
 
-export type LeadTokenIntent = "confirm" | "optout" | "book";
+export type LeadTokenIntent = "confirm" | "optout" | "book" | "forwarded";
 
 type Payload = { l: string; i: LeadTokenIntent; x: number };
 
@@ -46,11 +46,18 @@ function sign(payload: Buffer, secret: string): Buffer {
 
 const CONFIRM_TTL_SECONDS = 14 * 24 * 60 * 60; // 14 days (cadence length)
 const OPTOUT_TTL_SECONDS = 365 * 24 * 60 * 60; // 1 year
+const FORWARDED_TTL_SECONDS = 90 * 24 * 60 * 60; // 90 days (operator confirms the DJH forward)
 
 export function mintLeadToken(leadId: string, intent: LeadTokenIntent): string {
   const secret = getLeadTokenSecret();
-  // confirm + book live as long as the chase cadence; opt-out links last a year.
-  const ttl = intent === "optout" ? OPTOUT_TTL_SECONDS : CONFIRM_TTL_SECONDS;
+  // confirm + book live as long as the chase cadence; opt-out lasts a year; the
+  // operator's "forwarded to DJH" confirmation link lasts 90 days.
+  const ttl =
+    intent === "optout"
+      ? OPTOUT_TTL_SECONDS
+      : intent === "forwarded"
+        ? FORWARDED_TTL_SECONDS
+        : CONFIRM_TTL_SECONDS;
   const payload: Payload = {
     l: leadId,
     i: intent,

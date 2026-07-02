@@ -91,7 +91,7 @@ export function decideEngagementVariant(
 import { mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 import { getSiteUrl } from "./niche-loader";
 import { renderLeadServiceEmail } from "@/lib/emails/lead-service-template";
-import { adminSelect } from "@/lib/supabase/admin";
+import { adminSelect, adminUpdate } from "@/lib/supabase/admin";
 import { parseEnquiryEchoes, normaliseEcho, categoryPhrase } from "@/lib/leads/enquiry-message";
 import { computeNextSendMs, inSendWindow } from "@/lib/leads/send-window";
 
@@ -222,10 +222,13 @@ export async function buildLeadMessageContext(
     const fourteenDaysAgo = new Date(Date.now() - 14 * 24 * 60 * 60 * 1000).toISOString();
     const [eventsRes, sendsRes] = await Promise.all([
       adminSelect<EngagementEvent>("lead_contact_events", {
-        select: "event_type,created_at",
+        // The column is `ts` (there is no created_at column). Alias it back to
+        // created_at so decideEngagementVariant and its tests keep that field
+        // name, and filter on the real column so the query no longer 400s (AN-1).
+        select: "event_type,created_at:ts",
         lead_id: `eq.${lead.id}`,
         event_type: "in.(opened,clicked,booked)",
-        created_at: `gte.${fourteenDaysAgo}`,
+        ts: `gte.${fourteenDaysAgo}`,
       }),
       adminSelect<{ id: string }>("lead_nurture_sends", {
         select: "id",
@@ -620,6 +623,41 @@ export function buildPropertyLeadNurtureConfig(): LeadNurtureConfig {
         ),
         preferMonday: nextStep.preferMonday,
       }),
+    // Dispatch-time send-window guard (ENG-01 / M2). Scheduling already lands
+    // steps inside the window via nextActionAt, but an OVERDUE step (a cron
+    // backlog, or a pause/resume dumping the queue) could otherwise fire an SMS
+    // at any hour of the night. For a step that sends on SMS/WhatsApp, if we are
+    // outside the window at dispatch time, defer to the next window open. Email-
+    // only steps carry no PECR hour restriction and dispatch anytime.
+    dispatchGate: (step, nowMs) => {
+      const hasSms = (step.channels ?? []).some(
+        (c) => c === "sms" || c === "whatsapp",
+      );
+      if (!hasSms) return { ok: true };
+      if (inSendWindow(nowMs, true)) return { ok: true };
+      return {
+        ok: false,
+        retryAtMs: computeNextSendMs(nowMs, 0, {
+          hasSms: true,
+          preferMonday: step.preferMonday,
+        }),
+      };
+    },
+    // Sequence exhausted with no two-way response: the shared engine has just set
+    // lead_nurture_state.status='unreachable'; also flip public.leads.status so
+    // the funnel / console / digest stop reading 0 (INBOUND-3). Only downgrade
+    // from an in-flight state, never from contactable/forwarded/converted/closed.
+    onSequenceExhausted: async (leadId) => {
+      try {
+        await adminUpdate(
+          "leads",
+          { id: `eq.${leadId}`, status: "in.(new,nurturing)" },
+          { status: "unreachable" },
+        );
+      } catch (err) {
+        console.error("[lead-nurture] mark lead unreachable failed", err);
+      }
+    },
   };
 }
 

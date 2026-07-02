@@ -32,6 +32,12 @@ import type {
 
 const HOUR_MS = 3_600_000;
 const TERMINAL_SEND = new Set(["sent", "skipped", "delivered"]);
+// Retry cap: a step whose channels all keep failing (e.g. an unroutable phone
+// that toE164UK rejects, or a permanently-bad address) must not wedge the lead
+// on that step forever. Once the OLDEST attempt for the step is older than this,
+// the step is force-advanced so the lead can progress on other channels/steps
+// and eventually reach 'unreachable' at exhaustion (ENG-05 / ENTRY-2).
+const RETRY_CAP_MS = 6 * HOUR_MS;
 
 type ChannelResult = "sent" | "skipped" | "duplicate" | "failed";
 
@@ -157,13 +163,24 @@ async function advanceLeadState(
   };
   if (next >= totalSteps) {
     // Chased through every touch with no two-way response -> unreachable.
-    await adminUpdate("lead_nurture_state", where, {
+    const res = await adminUpdate("lead_nurture_state", where, {
       step: next,
       status: "unreachable",
       last_action_at: nowIso,
       next_action_at: null,
       updated_at: nowIso,
     });
+    // Fire the exhaustion hook ONLY when this call actually made the transition.
+    // The guard is status='active' AND step=current, so a lead that became
+    // contactable mid-flight matches zero rows and must never be marked
+    // unreachable. Property uses the hook to flip public.leads.status too.
+    if (res.data.length > 0) {
+      try {
+        await config.onSequenceExhausted?.(leadId);
+      } catch (err) {
+        console.error("[lead-nurture/send] onSequenceExhausted hook failed", err);
+      }
+    }
     return;
   }
   const nextStep = config.steps[next] as LeadNurtureStep;
@@ -177,6 +194,32 @@ async function advanceLeadState(
     next_action_at: nextAt,
     updated_at: nowIso,
   });
+}
+
+/**
+ * Oldest send-attempt time (epoch ms) across all channels of a (lead, sequence,
+ * step), or null when there is no timestamped attempt. sent_at is stamped at the
+ * FIRST claim and left unchanged on take-over, so it is a faithful "how long has
+ * this step been failing" clock for the retry cap.
+ */
+async function oldestStepAttemptMs(
+  leadId: string,
+  sequence: string,
+  stepIndex: number,
+): Promise<number | null> {
+  const res = await adminSelect<{ sent_at: string | null }>("lead_nurture_sends", {
+    select: "sent_at",
+    lead_id: `eq.${leadId}`,
+    sequence: `eq.${sequence}`,
+    step: `eq.${stepIndex}`,
+  });
+  let oldest: number | null = null;
+  for (const r of res.data) {
+    if (!r.sent_at) continue;
+    const t = Date.parse(r.sent_at);
+    if (!Number.isNaN(t)) oldest = oldest === null ? t : Math.min(oldest, t);
+  }
+  return oldest;
 }
 
 /**
@@ -226,6 +269,21 @@ export async function processLeadStep(
   const shouldAdvance = failed === 0 ? resolved > 0 : sent > 0;
   if (shouldAdvance) {
     await advanceLeadState(lead.id, stepIndex, config.steps.length, config, ctx);
+  } else if (failed > 0) {
+    // Retry cap (ENG-05 / ENTRY-2): nothing sent and at least one channel failed,
+    // so normally we hold the step for the next tick to retry. But if this step
+    // has been failing longer than RETRY_CAP_MS, force past it: a permanently
+    // unroutable channel (e.g. a phone toE164UK rejects, or a dead mailbox) must
+    // not wedge the lead here forever. The lead then advances and, if every
+    // channel keeps failing, reaches 'unreachable' at exhaustion.
+    const oldest = await oldestStepAttemptMs(lead.id, config.sequenceName, stepIndex);
+    if (oldest !== null && Date.now() - oldest >= RETRY_CAP_MS) {
+      await recordLeadContactEvent(lead.id, "send_failed", null, {
+        step: stepIndex,
+        reason: "retry_cap_exhausted_step_skipped",
+      });
+      await advanceLeadState(lead.id, stepIndex, config.steps.length, config, ctx);
+    }
   }
   return sent;
 }

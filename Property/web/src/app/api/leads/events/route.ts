@@ -93,10 +93,13 @@ async function fetchLeadForAlert(leadId: string): Promise<LeadRow | null> {
 async function hasRecentComplaintAlert(leadId: string): Promise<boolean> {
   const since = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
   const res = await adminSelect<ContactEventRow>("lead_contact_events", {
-    select: "id,created_at,meta",
+    // The column is `ts` (no created_at column). Alias it back so the type keeps
+    // its field name; filter on the real column so the 24h throttle actually
+    // works instead of 400-ing and alerting on every complaint (AN-3).
+    select: "id,created_at:ts,meta",
     lead_id: `eq.${leadId}`,
     event_type: "eq.operator_update",
-    created_at: `gte.${since}`,
+    ts: `gte.${since}`,
   });
   return res.data.some((e) => (e.meta as Record<string, unknown> | null)?.kind === "complaint_alert");
 }

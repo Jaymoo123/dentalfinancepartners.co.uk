@@ -16,6 +16,8 @@ import { toE164UK } from "@/lib/leads/channels";
 import { recordResponseAndEvaluate, stopNurture } from "@/lib/leads/contactability";
 import { acknowledgeReply } from "@/lib/leads/reply-ack";
 import { conciergeEnabled, handleInboundReply } from "@/lib/leads/concierge";
+import { classifyReplyIntent } from "@/lib/leads/reply-intent";
+import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -23,14 +25,6 @@ export const dynamic = "force-dynamic";
 const EMPTY_TWIML =
   '<?xml version="1.0" encoding="UTF-8"?><Response></Response>';
 
-const OPT_OUT_KEYWORDS = new Set([
-  "STOP",
-  "STOPALL",
-  "UNSUBSCRIBE",
-  "CANCEL",
-  "END",
-  "QUIT",
-]);
 
 /** Verify Twilio signature per https://www.twilio.com/docs/usage/security */
 function verifyTwilioSignature(
@@ -176,11 +170,11 @@ export async function POST(req: NextRequest) {
     return twimlOk();
   }
 
-  const keyword = body.trim().toUpperCase();
+  const intent = classifyReplyIntent(body);
   try {
-    if (OPT_OUT_KEYWORDS.has(keyword)) {
+    if (intent === "opt_out") {
       await stopNurture(leadId, channel);
-    } else {
+    } else if (intent === "positive") {
       const result = await recordResponseAndEvaluate(leadId, "replied", channel, {
         body: body.slice(0, 300),
       });
@@ -219,6 +213,16 @@ export async function POST(req: NextRequest) {
           alreadyContactable: result.alreadyPromoted === true,
         }).catch((err) => console.error("[leads/inbound/twilio] reply-ack failed", err));
       }
+    } else {
+      // Ambiguous reply — unclear intent. Record for human review only: do not
+      // promote the lead, do not fire the DJH handoff, and send no ack message.
+      // This prevents objections or non-committal messages (e.g. "maybe later",
+      // "who is this") from being miscounted as positive engagement (INBOUND-4 /
+      // DSA Sch 2 §6).
+      await recordLeadContactEvent(leadId, "operator_update", channel, {
+        kind: "needs_review",
+        body: body.slice(0, 300),
+      });
     }
   } catch (err) {
     console.error("[leads/inbound/twilio] signal recording failed", err);
