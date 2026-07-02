@@ -19,6 +19,7 @@ export const RULE_LABELS: Record<string, string> = {
   deep_scroll_offer: "Deep-scroll offer",
   returning_welcome: "Returning greeting",
   topic_next_step: "Next-step suggestion",
+  booking_nudge: "Booking nudge (pick a callback slot)",
 };
 
 /** surface (the Surface union in engine.ts) -> human label. */
@@ -54,6 +55,7 @@ export const RULE_TRIGGER: Record<string, string> = {
   deep_scroll_offer: "Scrolled past 70% of the page",
   returning_welcome: "A return visit (resumes last topic)",
   topic_next_step: "Reached the end of the article",
+  booking_nudge: "Converted lead with an unbooked callback slot",
 };
 
 /** Human label for a rule_id (falls back to a tidied form of the raw id). */

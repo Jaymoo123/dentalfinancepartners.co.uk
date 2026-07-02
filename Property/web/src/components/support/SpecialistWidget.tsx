@@ -24,11 +24,11 @@ import { useFormTracking } from "@/components/analytics/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { onAnalyticsEvent } from "@accounting-network/web-shared/analytics/bus";
-import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
+import { isConverted, getBookingNudge } from "@accounting-network/web-shared/analytics/visitMemory";
 import { useIntentContext } from "@/components/intent/IntentProvider";
 import { getTopic } from "@/lib/intent/taxonomy";
 import { initJourneyModel, recordPath, getJourneyProfile } from "@/lib/intent/journeyModel";
-import { openerFor, exitOpener, frictionOpener } from "@/lib/assistant/opener";
+import { openerFor, exitOpener, frictionOpener, bookingConciergeOpener } from "@/lib/assistant/opener";
 
 type Status = "idle" | "loading" | "success" | "error";
 type Trigger = "cadence" | "exit" | "friction";
@@ -72,12 +72,17 @@ export function SpecialistWidget() {
   // Suppress the proactive layer only for visitors who've already converted.
   // (Within a session, an actual engagement also stops it via engagedRef — no
   // cross-session lock, so a non-converting visitor can be helped again next time.)
-  const suppressed = useMemo(() => {
-    if (typeof window === "undefined") return true;
+  // ONE exception: a converted visitor still holding a live booking capability
+  // (submitted, hasn't picked a slot) keeps the widget active in "booking
+  // concierge" mode until they book or the token expires (then suppression returns).
+  const { suppressed, bookingNudge } = useMemo(() => {
+    if (typeof window === "undefined") return { suppressed: true, bookingNudge: null };
     try {
-      return isConverted();
+      const converted = isConverted();
+      const nudge = converted ? getBookingNudge() : null;
+      return { suppressed: converted && !nudge, bookingNudge: nudge };
     } catch {
-      return false;
+      return { suppressed: false, bookingNudge: null };
     }
   }, []);
 
@@ -87,7 +92,14 @@ export function SpecialistWidget() {
     const profile = getJourneyProfile();
     let line: string;
     let variant: string;
-    if (trigger === "friction") {
+    if (bookingNudge) {
+      // Booking concierge: ONE ping per session (the earliest trigger wins),
+      // always the same job — get the callback slot booked.
+      if (pingCountRef.current > 0) return;
+      line = bookingConciergeOpener();
+      variant = "booking";
+      pingCountRef.current += 1;
+    } else if (trigger === "friction") {
       line = frictionOpener();
       variant = "friction";
     } else if (trigger === "exit") {
@@ -117,7 +129,7 @@ export function SpecialistWidget() {
     setPeekVisible(true);
     setUnread((n) => n + 1);
     track("personalization_shown", props);
-  }, []);
+  }, [bookingNudge]);
 
   // The visitor engaged: stop this session's proactive cadence + clear the badge.
   const engage = useCallback(() => {
@@ -225,7 +237,7 @@ export function SpecialistWidget() {
         /* ignore */
       }
       const profile = getJourneyProfile();
-      const line = openerFor(profile, 0);
+      const line = bookingNudge ? bookingConciergeOpener() : openerFor(profile, 0);
       lastLineRef.current = line;
       if (window.innerWidth < 640) {
         // Mobile: a full card would cover the screen. Announce with the peek; tap to open.
@@ -252,7 +264,7 @@ export function SpecialistWidget() {
       }
     }, AUTO_OPEN_DELAY_MS);
     return () => window.clearTimeout(t);
-  }, [active, suppressed]);
+  }, [active, suppressed, bookingNudge]);
 
   // ctx is null in /embed, /admin, or when the visitor opted out.
   if (!ctx) return null;
@@ -268,7 +280,7 @@ export function SpecialistWidget() {
   }
 
   function handleOpen(fromPeek: boolean) {
-    if (!peekLine) setPeekLine(openerFor(getJourneyProfile(), 0));
+    if (!peekLine) setPeekLine(bookingNudge ? bookingConciergeOpener() : openerFor(getJourneyProfile(), 0));
     setComposing(false);
     setOpen(true);
     if (!openedRef.current) {
@@ -423,12 +435,14 @@ export function SpecialistWidget() {
                     See your numbers
                   </a>
                 )}
+                {/* Booking concierge: the primary chip points at the live slot picker
+                    (signed capability token) instead of the contact form. */}
                 <a
-                  href="/contact"
+                  href={bookingNudge ? `/book?t=${encodeURIComponent(bookingNudge.token)}` : "/contact"}
                   onClick={() => onChip("call")}
                   className="inline-flex items-center rounded-full border border-emerald-300 bg-white px-3 py-2 text-sm font-medium leading-none text-emerald-800 hover:bg-emerald-50"
                 >
-                  Book a free call
+                  {bookingNudge ? "Pick a callback time" : "Book a free call"}
                 </a>
               </div>
             ) : null}

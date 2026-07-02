@@ -1,0 +1,237 @@
+/**
+ * Enriched "READY FOR DJH" handoff email. Fired once, when a lead becomes
+ * contactable. It sends the operator a full readiness dossier: the enquiry,
+ * verification, AI + Companies House enrichment, the on-site journey (what they
+ * read, which calculators they used), the conversation so far (verbatim replies
+ * with timestamps), a best call window, and an explainable A/B/C readiness
+ * grade. The goal: every forwarded lead is an evidence pack DJH can trust.
+ *
+ * This email goes to the OPERATOR inbox (Junayd), never to DJH directly — the
+ * manual forward stays a deliberate QA gate. Test leads and an unconfigured
+ * Resend are skipped (no send), so the synthetic probe can assert the handoff
+ * fired without emailing anyone.
+ */
+
+import { getResend, getFromAddress } from "@/lib/resend";
+import { resolveLeadTo } from "@/lib/lead-routing";
+import { adminSelect } from "@/lib/supabase/admin";
+import { gatherLeadDossier, humanisePath, formatLatency, type LeadDossier } from "./dossier";
+import { buildCallBrief, renderBriefSection } from "./call-brief";
+
+interface LeadRow {
+  id: string;
+  full_name: string;
+  email: string;
+  phone: string;
+  role: string | null;
+  message: string | null;
+  source: string;
+  source_url: string | null;
+  created_at: string;
+  visitor_id: string | null;
+}
+
+function esc(s: unknown): string {
+  return String(s ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+function row(label: string, value: string): string {
+  return `<tr><td style="padding:4px 12px 4px 0;color:#64748b;vertical-align:top;">${esc(label)}</td><td style="padding:4px 0;font-weight:600;">${value}</td></tr>`;
+}
+
+const GRADE_COLOURS: Record<string, string> = {
+  A: "#047857",
+  B: "#b45309",
+  C: "#b91c1c",
+};
+
+function fmtTs(iso: string): string {
+  try {
+    return new Intl.DateTimeFormat("en-GB", {
+      timeZone: "Europe/London",
+      weekday: "short",
+      day: "numeric",
+      month: "short",
+      hour: "2-digit",
+      minute: "2-digit",
+    }).format(new Date(iso));
+  } catch {
+    return iso;
+  }
+}
+
+function journeyStory(d: LeadDossier): string {
+  const j = d.journey;
+  if (!j) return "";
+  const bits: string[] = [];
+  if (j.totalSessions > 0) {
+    const mins = Math.round(j.totalEngagedMs / 60000);
+    bits.push(
+      `${j.totalSessions} visit${j.totalSessions === 1 ? "" : "s"}, ${j.pageViews} page view${j.pageViews === 1 ? "" : "s"}${mins ? `, ~${mins} min engaged` : ""}`,
+    );
+  }
+  if (j.calcEvents > 0) bits.push("used our tax calculators");
+  if (j.referrerHost) bits.push(`arrived via ${j.referrerHost}`);
+  return bits.join("; ");
+}
+
+export interface HandoffResult {
+  sent: boolean;
+  to: string;
+  skipped?: "test" | "no-resend" | "no-lead";
+  messageId?: string;
+}
+
+export async function sendContactableHandoff(
+  leadId: string,
+  reason: string,
+): Promise<HandoffResult> {
+  const leadRes = await adminSelect<LeadRow>("leads", {
+    id: `eq.${leadId}`,
+    select: "id,full_name,email,phone,role,message,source,source_url,created_at,visitor_id",
+    limit: "1",
+  });
+  const lead = leadRes.data[0];
+  if (!lead) return { sent: false, to: "", skipped: "no-lead" };
+
+  const to = resolveLeadTo(lead.source);
+
+  // Best-effort dossier (never blocks the handoff; sparse when data is missing).
+  const d = await gatherLeadDossier({
+    id: lead.id,
+    created_at: lead.created_at,
+    visitor_id: lead.visitor_id,
+    message: lead.message,
+  });
+
+  // Best-effort call brief. Returns null when unconfigured or on any error.
+  const brief = await buildCallBrief(d, lead.message);
+  const briefSection = renderBriefSection(brief);
+
+  const ver = d.verification;
+  const enr = d.enrichment;
+  const gradeColour = GRADE_COLOURS[d.readiness.grade] || "#047857";
+
+  const bookedLine = d.bookingStart
+    ? `Booked callback: <strong>${esc(fmtTs(d.bookingStart))}</strong>`
+    : "";
+
+  const detail = [
+    row("Name", esc(lead.full_name)),
+    row(
+      "Phone",
+      `${esc(ver.phone_e164 || lead.phone)} ${ver.phone_status ? `(${esc(ver.phone_status)}${ver.phone_carrier ? ", " + esc(ver.phone_carrier) : ""})` : ""}`,
+    ),
+    row("Email", `${esc(lead.email)} ${ver.email_status ? `(${esc(ver.email_status)})` : ""}`),
+    row("Role", esc(lead.role || "")),
+    row("How they responded", `<strong style="color:#047857;">${esc(reason)}</strong>`),
+    d.responseLatencyMs !== null
+      ? row("Response time", esc(`${formatLatency(d.responseLatencyMs)} after enquiring`))
+      : "",
+    d.callWindow ? row("Best call window", esc(d.callWindow)) : "",
+    enr.intent_category
+      ? row("Intent", `${esc(enr.intent_category)} (quality ${esc(enr.quality_score ?? "?")}/5)`)
+      : "",
+    enr.summary ? row("Summary", esc(enr.summary)) : "",
+    enr.ch_company_name
+      ? row(
+          "Companies House",
+          `${esc(enr.ch_company_name)} (${esc(enr.ch_company_number)}, ${esc(enr.ch_company_status)})`,
+        )
+      : "",
+    d.journey?.country || d.journey?.device
+      ? row(
+          "Device / location",
+          esc([d.journey?.device, d.journey?.country].filter(Boolean).join(", ")),
+        )
+      : "",
+    journeyStory(d) ? row("On-site journey", esc(journeyStory(d))) : "",
+    lead.source_url ? row("From page", esc(lead.source_url)) : "",
+  ]
+    .filter(Boolean)
+    .join("");
+
+  const topPagesHtml = d.journey?.topPages.length
+    ? `<div style="margin:12px 0;">
+<div style="color:#64748b;font-size:13px;margin-bottom:4px;">What they read on the site</div>
+<ul style="margin:0;padding-left:18px;font-size:14px;">${d.journey.topPages
+        .map(
+          (p) =>
+            `<li>${esc(humanisePath(p.path))}${p.views > 1 ? ` <span style="color:#64748b;">(x${p.views})</span>` : ""}</li>`,
+        )
+        .join("")}</ul>
+</div>`
+    : "";
+
+  const timelineHtml = d.timeline.length
+    ? `<div style="margin:12px 0;">
+<div style="color:#64748b;font-size:13px;margin-bottom:4px;">Conversation so far</div>
+<table style="border-collapse:collapse;font-size:13px;">${d.timeline
+        .map(
+          (t) =>
+            `<tr><td style="padding:2px 10px 2px 0;color:#64748b;white-space:nowrap;vertical-align:top;">${esc(fmtTs(t.ts))}</td><td style="padding:2px 0;">${esc(t.label)}${t.detail ? `<div style="background:#f1f5f9;border-radius:4px;padding:4px 8px;margin-top:2px;font-style:italic;">&ldquo;${esc(t.detail)}&rdquo;</div>` : ""}</td></tr>`,
+        )
+        .join("")}</table>
+</div>`
+    : "";
+
+  const reasonsHtml = d.readiness.reasons.length
+    ? `<div style="margin:12px 0;">
+<div style="color:#64748b;font-size:13px;margin-bottom:4px;">Why this grade</div>
+<ul style="margin:0;padding-left:18px;font-size:13px;color:#334155;">${d.readiness.reasons
+        .map((r) => `<li>${esc(r)}</li>`)
+        .join("")}</ul>
+</div>`
+    : "";
+
+  const html = `<div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#0f172a;max-width:640px;">
+<p style="font-size:16px;">
+<span style="display:inline-block;background:${gradeColour};color:#ffffff;border-radius:4px;padding:2px 10px;font-weight:700;margin-right:8px;">Grade ${esc(d.readiness.grade)} &middot; ${esc(d.readiness.score)}/10</span>
+<strong style="color:#047857;">Verified and actively responded, ready to forward to DJH.</strong>
+</p>
+${bookedLine ? `<p>${bookedLine}</p>` : ""}
+${briefSection.html}<table style="border-collapse:collapse;font-size:14px;margin:12px 0;">${detail}</table>
+<div style="background:#f8fafc;border:1px solid #e5e7eb;border-radius:6px;padding:12px 14px;font-size:14px;">
+<div style="color:#64748b;margin-bottom:4px;">Their enquiry</div>
+<div>${esc(lead.message || "(no message)")}</div>
+</div>
+${topPagesHtml}
+${timelineHtml}
+${reasonsHtml}
+<p style="font-size:13px;color:#64748b;margin-top:16px;">Forward to Michael.Winniczuk@djh.co.uk per the SOP, then log it in the Delivery Log.</p>
+</div>`;
+
+  const lastReply = d.replies.length ? d.replies[d.replies.length - 1] : null;
+  const text =
+    `READY FOR DJH (Grade ${d.readiness.grade}, ${d.readiness.score}/10): ${lead.full_name} is contactable (${reason}).\n` +
+    `Phone: ${ver.phone_e164 || lead.phone} (${ver.phone_status || "?"})\n` +
+    `Email: ${lead.email} (${ver.email_status || "?"})\n` +
+    (d.bookingStart ? `Booked: ${fmtTs(d.bookingStart)}\n` : "") +
+    (briefSection.text ? `\n${briefSection.text}` : "") +
+    (d.responseLatencyMs !== null
+      ? `Responded ${formatLatency(d.responseLatencyMs)} after enquiring.\n`
+      : "") +
+    (d.callWindow ? `${d.callWindow}.\n` : "") +
+    (lastReply ? `Last reply (${lastReply.channel}): "${lastReply.body}"\n` : "") +
+    (journeyStory(d) ? `Journey: ${journeyStory(d)}\n` : "") +
+    `Why: ${d.readiness.reasons.join("; ") || "n/a"}\n` +
+    `Enquiry: ${lead.message || "(none)"}\n` +
+    `Forward to Michael.Winniczuk@djh.co.uk per the SOP.`;
+
+  // Do not actually email for synthetic test leads, or if Resend is unconfigured.
+  if (lead.source === "test") return { sent: false, to, skipped: "test" };
+  if (!process.env.RESEND_API_KEY) return { sent: false, to, skipped: "no-resend" };
+
+  const { data, error } = await getResend().emails.send({
+    from: getFromAddress(),
+    to,
+    subject: `READY FOR DJH (Grade ${d.readiness.grade}): ${lead.full_name} is contactable (${reason})`,
+    html,
+    text,
+  });
+  if (error) throw new Error(`handoff send error: ${JSON.stringify(error)}`);
+  return { sent: true, to, messageId: data?.id };
+}

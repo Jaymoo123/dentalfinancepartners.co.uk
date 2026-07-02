@@ -29,6 +29,14 @@ wheels/
 .env.local
 .env.*.local
 
+# Personal expense reconciliation — raw financial exports (PayPal/AMEX/bank CSVs,
+# Outlook .pst, Gmail .mbox), generated ledgers, and figure-bearing summary docs stay
+# LOCAL, never committed. (Code parsers + README methodology remain committable.)
+/expense-reconciliation/data/
+/expense-reconciliation/output/
+/expense-reconciliation/GOAL.md
+/expense-reconciliation/QA_REPORT.md
+
 # Secrets (API keys, service accounts)
 secrets/
 *.json

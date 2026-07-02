@@ -89,7 +89,11 @@
     "./nurture/send": "./nurture/send.ts",
     "./nurture/subscribe": "./nurture/subscribe.ts",
     "./nurture/webhook": "./nurture/webhook.ts",
-    "./nurture/cron": "./nurture/cron.ts"
+    "./nurture/cron": "./nurture/cron.ts",
+    "./lead-nurture/config": "./lead-nurture/config.ts",
+    "./lead-nurture/tokens": "./lead-nurture/tokens.ts",
+    "./lead-nurture/send": "./lead-nurture/send.ts",
+    "./lead-nurture/cron": "./lead-nurture/cron.ts"
   },
   "optionalPeerDependencies": {
     "@microsoft/clarity": ">=1",

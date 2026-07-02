@@ -5,9 +5,11 @@ import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
-import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { submitPropertyLead, type PropertyLeadPayload } from "@/lib/leads/submit-client";
+import { validateEnquiryParts, composeEnquiryMessage, SITUATION_MIN_CHARS } from "@/lib/leads/enquiry-message";
 import { useFormTracking } from "@/components/analytics/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
+import { setBookingNudge } from "@accounting-network/web-shared/analytics/visitMemory";
 
 const fieldClass =
   "mt-1 w-full min-h-12 touch-manipulation rounded-lg border-2 border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 shadow-sm focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-600/25 transition-colors";
@@ -36,6 +38,7 @@ export function LeadForm({
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
+  const [situationLen, setSituationLen] = useState(0);
   const ft = useFormTracking("lead_form");
 
   useEffect(() => {
@@ -43,8 +46,6 @@ export function LeadForm({
       setSourceUrl(window.location.href);
     }
   }, []);
-
-  const { supabaseUrl, supabaseKey } = getSupabaseConfig();
 
   const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
 
@@ -54,7 +55,6 @@ export function LeadForm({
     const email = String(data.get("email") || "").trim();
     const phone = String(data.get("phone") || "").trim();
     const role = String(data.get("role") || "").trim();
-    const message = String(data.get("message") || "").trim();
 
     if (fullName.length < 2) errs.fullName = "Enter your name.";
     if (!emailRe.test(email)) errs.email = "Enter a valid email address.";
@@ -69,9 +69,11 @@ export function LeadForm({
 
     if (!role) errs.role = "Select your landlord type.";
 
-    if (message.length < 10) {
-      errs.message = "Tell us a sentence or two about your situation.";
-    }
+    const situation = String(data.get("situation") || "").trim();
+    const prompted = String(data.get("prompted") || "").trim();
+    const callGoal = String(data.get("callGoal") || "").trim();
+    const enquiryErrs = validateEnquiryParts({ situation, prompted, callGoal });
+    Object.assign(errs, enquiryErrs);
 
     return errs;
   }, []);
@@ -81,17 +83,9 @@ export function LeadForm({
     setErrorMessage(null);
     const form = e.currentTarget;
     const data = new FormData(form);
-    // Honeypot: only bots fill this hidden field. Silently drop.
-    // Field is named `enquiry_ref` (a non-semantic token) so browser autofill / password
-    // managers don't target it — the old name `company_url` was an autofill magnet that
-    // silently dropped real humans. See [[property_leadform_honeypot_silent_drop]].
-    if (String(data.get("enquiry_ref") || "").trim() !== "") {
-      // Honeypot trip. Emit a value-free diagnostic (field name + kind only, never any
-      // field values) so a real human silently dropped here becomes observable instead of
-      // invisible. Behaviour unchanged: this still blocks.
-      ft.onError("enquiry_ref", "honeypot");
-      return;
-    }
+    // Capture honeypot value; the server decides what to do with it (never silently drops).
+    const honeypotValue = String(data.get("enquiry_ref") || "").trim();
+
     const errs = validate(data);
     setFieldErrors(errs);
     if (Object.keys(errs).length > 0) {
@@ -100,21 +94,16 @@ export function LeadForm({
     }
     ft.onSubmit(Object.keys(data).length);
 
-    if (!supabaseUrl || !supabaseKey) {
-      setStatus("error");
-      setErrorMessage(
-        "Form not connected. Email us directly — we respond same day.",
-      );
-      return;
-    }
-
     setStatus("loading");
-    const payload = {
+    const situation = String(data.get("situation") || "").trim();
+    const prompted = String(data.get("prompted") || "").trim();
+    const callGoal = String(data.get("callGoal") || "").trim();
+    const payload: PropertyLeadPayload = {
       full_name: String(data.get("fullName") || "").trim(),
       email: String(data.get("email") || "").trim(),
       phone: String(data.get("phone") || "").trim(),
       role: String(data.get("role") || "").trim(),
-      message: String(data.get("message") || "").trim(),
+      message: composeEnquiryMessage({ situation, prompted, callGoal }),
       source: niche.content_strategy.source_identifier,
       source_url: sourceUrl || String(data.get("sourceUrl") || "").trim(),
       submitted_at: new Date().toISOString(),
@@ -129,7 +118,7 @@ export function LeadForm({
       session_id: getSessionId() || undefined,
     };
 
-    const result = await submitLead(payload, supabaseUrl, supabaseKey);
+    const result = await submitPropertyLead(payload, honeypotValue);
 
     if (!result.success) {
       setStatus("error");
@@ -153,12 +142,27 @@ export function LeadForm({
       }
     }
 
+    if (result.needsCheck) {
+      // Lead was recorded but the phone number looks wrong. Stay on the form.
+      setStatus("idle");
+      setFieldErrors({ phone: "That number does not look right. Please check it and submit again." });
+      return;
+    }
+
     setStatus("success");
     form.reset();
+    setSituationLen(0);
+
+    // Remember the booking capability (token only, nothing personal) so the
+    // continuity layer can nudge them back to pick a slot until they book.
+    if (result.bookingToken) setBookingNudge(result.bookingToken, Date.now() + 14 * 24 * 3600000);
 
     if (redirectOnSuccess) {
+      // Carry the signed booking token so the thank-you page can offer the
+      // native slot picker straight away (the highest-intent moment).
+      const bt = result.bookingToken ? `?bt=${encodeURIComponent(result.bookingToken)}` : "";
       setTimeout(() => {
-        router.push("/thank-you");
+        router.push(`/thank-you${bt}`);
       }, 800);
     }
   }
@@ -282,23 +286,85 @@ export function LeadForm({
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-semibold text-slate-900">
-          Message
+        <label htmlFor="situation" className="block text-sm font-semibold text-slate-900">
+          Your situation
         </label>
         <textarea
-          id="message"
-          name="message"
+          id="situation"
+          name="situation"
           required
           rows={4}
-          maxLength={1000}
-          placeholder={niche.lead_form.placeholders.message}
+          maxLength={800}
+          placeholder="e.g. I own two buy to lets in my own name and this year's tax bill has jumped. Wondering if a limited company makes sense."
           className={fieldClass}
-          aria-invalid={!!fieldErrors.message}
-          aria-describedby={fieldErrors.message ? "message-error" : undefined}
+          aria-invalid={!!fieldErrors.situation}
+          aria-describedby={fieldErrors.situation ? "situation-error" : "situation-hint"}
+          onChange={(e) => setSituationLen(e.target.value.trim().length)}
         />
-        {fieldErrors.message && (
-          <p id="message-error" className="mt-1.5 text-xs font-medium text-red-600">
-            {fieldErrors.message}
+        {fieldErrors.situation ? (
+          <p id="situation-error" className="mt-1.5 text-xs font-medium text-red-600">
+            {fieldErrors.situation}
+          </p>
+        ) : (
+          <p
+            id="situation-hint"
+            className={
+              situationLen >= SITUATION_MIN_CHARS
+                ? "mt-1.5 text-xs font-medium text-emerald-700"
+                : "mt-1.5 text-xs text-slate-500"
+            }
+          >
+            {situationLen === 0
+              ? "A couple of sentences helps us prepare properly for your call."
+              : situationLen < SITUATION_MIN_CHARS
+                ? "Keep going. A couple of sentences helps us prepare properly for your call."
+                : "Thanks, that gives us plenty to work with."}
+          </p>
+        )}
+      </div>
+
+      <div>
+        <label htmlFor="prompted" className="block text-sm font-semibold text-slate-900">
+          What&#39;s prompted this now?
+        </label>
+        <input
+          type="text"
+          id="prompted"
+          name="prompted"
+          required
+          maxLength={200}
+          placeholder="e.g. Just received my Self Assessment bill"
+          autoComplete="off"
+          className={fieldClass}
+          aria-invalid={!!fieldErrors.prompted}
+          aria-describedby={fieldErrors.prompted ? "prompted-error" : undefined}
+        />
+        {fieldErrors.prompted && (
+          <p id="prompted-error" className="mt-1.5 text-xs font-medium text-red-600">
+            {fieldErrors.prompted}
+          </p>
+        )}
+      </div>
+
+      <div>
+        <label htmlFor="callGoal" className="block text-sm font-semibold text-slate-900">
+          What do you want from the call?
+        </label>
+        <input
+          type="text"
+          id="callGoal"
+          name="callGoal"
+          required
+          maxLength={200}
+          placeholder="e.g. To know whether a limited company would save me money"
+          autoComplete="off"
+          className={fieldClass}
+          aria-invalid={!!fieldErrors.callGoal}
+          aria-describedby={fieldErrors.callGoal ? "callGoal-error" : undefined}
+        />
+        {fieldErrors.callGoal && (
+          <p id="callGoal-error" className="mt-1.5 text-xs font-medium text-red-600">
+            {fieldErrors.callGoal}
           </p>
         )}
       </div>
@@ -333,7 +399,7 @@ export function LeadForm({
         disabled={status === "loading" || status === "success"}
         className={`${btnPrimary} w-full`}
       >
-        {status === "loading" ? "Sending..." : status === "success" ? "Sent!" : submitLabel}
+        {status === "loading" ? "Verifying your details..." : status === "success" ? "Sent!" : submitLabel}
       </button>
 
       <p className="text-xs leading-relaxed text-slate-500">

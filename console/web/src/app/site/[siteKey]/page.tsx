@@ -47,7 +47,21 @@ import {
   getNurtureFunnel,
   getLeadIntentMix,
   getSiteKpis,
+  getContactabilityFunnel,
+  getContactabilityLeads,
+  getNurtureHealth,
+  getNurtureStepHealth,
+  getStuckLeads,
+  getFailedSends,
+  getNurtureControl,
   type SiteKpis,
+  type ContactabilityFunnel,
+  type ContactabilityLeadRow,
+  type NurtureHealth,
+  type NurtureStepHealth,
+  type StuckLead,
+  type FailedSend,
+  type NurtureControl,
   type VisitorJourney,
   type CalculatorConversionPlacement,
   type ClientError,
@@ -512,6 +526,391 @@ function VisitsConvPanel({ rows }: { rows: VisitsBucket[] }) {
   );
 }
 
+// ── Lead contactability panel (Property only) ─────────────────────────────
+
+const NURTURE_LABEL: Record<string, string> = {
+  active: "Active",
+  awaiting_response: "Awaiting reply",
+  contactable: "Contactable",
+  unreachable: "Unreachable",
+  stopped: "Stopped",
+  completed: "Completed",
+};
+
+function LeadContactabilityPanel({
+  funnel,
+  leads,
+  nurtureHealth,
+  nurtureStepHealth,
+  stuckLeads,
+  failedSends,
+  nurtureControl,
+}: {
+  funnel: ContactabilityFunnel | null;
+  leads: ContactabilityLeadRow[];
+  nurtureHealth: NurtureHealth | null;
+  nurtureStepHealth: NurtureStepHealth[];
+  stuckLeads: StuckLead[];
+  failedSends: FailedSend[];
+  nurtureControl: NurtureControl;
+}) {
+  const contactableRate =
+    funnel && funnel.submitted > 0 ? funnel.contactable / funnel.submitted : null;
+
+  const sendSuccessRate =
+    nurtureHealth && nurtureHealth.sends_24h > 0
+      ? nurtureHealth.sent_24h / nurtureHealth.sends_24h
+      : null;
+
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">Lead contactability</h2>
+      <p className="mt-1 text-xs text-slate-500">
+        Verify-then-nurture pipeline: only leads that are verified live and demonstrably responsive are forwarded.
+      </p>
+
+      {/* System health strip */}
+      <div className="mt-4 rounded-xl border border-slate-200 bg-white p-4">
+        <div className="flex flex-wrap items-center gap-3">
+          <h3 className="text-sm font-bold text-slate-700">System health</h3>
+          {nurtureControl.paused ? (
+            <div className="flex-1 rounded bg-rose-100 px-3 py-1.5 text-xs font-semibold text-rose-800">
+              PAUSED
+              {nurtureControl.paused_reason ? ` (${nurtureControl.paused_reason})` : ""}
+              {nurtureControl.paused_at ? `, ${ago(nurtureControl.paused_at)}` : ""}
+              {nurtureControl.paused_by ? `, by ${nurtureControl.paused_by}` : ""}
+            </div>
+          ) : (
+            <span className="rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">
+              Active
+            </span>
+          )}
+          <form method="POST" action="/api/nurture-control">
+            <input type="hidden" name="paused" value={String(!nurtureControl.paused)} />
+            <input type="hidden" name="by" value="console-operator" />
+            <button
+              type="submit"
+              className={`rounded px-3 py-1 text-xs font-semibold ${
+                nurtureControl.paused
+                  ? "bg-emerald-600 text-white hover:bg-emerald-700"
+                  : "bg-rose-50 text-rose-700 ring-1 ring-rose-200 hover:bg-rose-100"
+              }`}
+            >
+              {nurtureControl.paused ? "Resume sends" : "Pause sends"}
+            </button>
+          </form>
+        </div>
+
+        {nurtureHealth ? (
+          <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-7">
+            <SnapshotCard
+              label="Send success 24h"
+              value={sendSuccessRate != null ? pct(sendSuccessRate) : "-"}
+              sub={`${nurtureHealth.sent_24h} of ${nurtureHealth.sends_24h}`}
+              accent={sendSuccessRate != null && sendSuccessRate < 0.9 ? "rose" : "emerald"}
+              compact
+            />
+            <SnapshotCard
+              label="Complaints 24h"
+              value={String(nurtureHealth.complaints_24h)}
+              accent={nurtureHealth.complaints_24h > 0 ? "rose" : "sky"}
+              compact
+            />
+            <SnapshotCard
+              label="Complaints 7d"
+              value={String(nurtureHealth.complaints_7d)}
+              accent={nurtureHealth.complaints_7d > 0 ? "rose" : "sky"}
+              compact
+            />
+            <SnapshotCard
+              label="Bounces 7d"
+              value={String(nurtureHealth.bounces_7d)}
+              accent={nurtureHealth.bounces_7d > 0 ? "rose" : "sky"}
+              compact
+            />
+            <SnapshotCard
+              label="Opt-outs 7d"
+              value={String(nurtureHealth.optouts_7d)}
+              accent={nurtureHealth.optouts_7d > 0 ? "rose" : "sky"}
+              compact
+            />
+            <SnapshotCard
+              label="Active leads"
+              value={String(nurtureHealth.active_leads)}
+              accent="sky"
+              compact
+            />
+            <SnapshotCard
+              label="Stuck leads"
+              value={String(nurtureHealth.stuck_leads)}
+              accent={nurtureHealth.stuck_leads > 0 ? "rose" : "sky"}
+              compact
+            />
+          </div>
+        ) : (
+          <p className="mt-2 text-xs text-slate-400">
+            Health metrics not yet available (migration pending).
+          </p>
+        )}
+      </div>
+
+      {funnel ? (
+        <>
+          {/* Headline + secondary stats */}
+          <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <SnapshotCard
+              label="Contactable rate"
+              value={contactableRate != null ? pct(contactableRate) : "-"}
+              sub={
+                funnel.submitted > 0
+                  ? `${funnel.contactable} of ${funnel.submitted} submitted`
+                  : "No leads yet"
+              }
+              accent="emerald"
+            />
+            <SnapshotCard
+              label="Forwarded"
+              value={String(funnel.forwarded)}
+              sub={funnel.submitted > 0 ? pct(funnel.forwarded / funnel.submitted) : "-"}
+              accent="emerald"
+              compact
+            />
+            <SnapshotCard
+              label="Unreachable"
+              value={String(funnel.unreachable)}
+              sub={funnel.submitted > 0 ? pct(funnel.unreachable / funnel.submitted) : "-"}
+              accent="rose"
+              compact
+            />
+          </div>
+
+          {/* Funnel step strip: submitted to contactable */}
+          <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-5">
+            <SnapshotCard
+              label="Submitted"
+              value={String(funnel.submitted)}
+              accent="sky"
+              compact
+            />
+            <SnapshotCard
+              label="Verified"
+              value={String(funnel.verified)}
+              sub={funnel.submitted > 0 ? pct(funnel.verified / funnel.submitted) : "-"}
+              accent="sky"
+              compact
+            />
+            <SnapshotCard
+              label="Messaged"
+              value={String(funnel.messaged)}
+              sub={funnel.submitted > 0 ? pct(funnel.messaged / funnel.submitted) : "-"}
+              accent="sky"
+              compact
+            />
+            <SnapshotCard
+              label="Responded"
+              value={String(funnel.responded)}
+              sub={funnel.submitted > 0 ? pct(funnel.responded / funnel.submitted) : "-"}
+              accent="emerald"
+              compact
+            />
+            <SnapshotCard
+              label="Contactable"
+              value={String(funnel.contactable)}
+              sub={funnel.submitted > 0 ? pct(funnel.contactable / funnel.submitted) : "-"}
+              accent="emerald"
+              compact
+            />
+          </div>
+        </>
+      ) : (
+        <p className="mt-3 text-sm text-slate-400">
+          Contactability pipeline not yet active (migration pending or no data).
+        </p>
+      )}
+
+      {/* Where leads get stuck: per-step throughput */}
+      {nurtureStepHealth.length > 0 && (
+        <div className="mt-6">
+          <h3 className="text-sm font-bold text-slate-700">Where leads get stuck</h3>
+          <div className="mt-2 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+            <table className="w-full text-sm">
+              <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+                <tr>
+                  <th className="px-3 py-2">Step</th>
+                  <th className="px-3 py-2 text-right">Sent</th>
+                  <th className="px-3 py-2 text-right">Failed</th>
+                  <th className="px-3 py-2 text-right">Skipped</th>
+                  <th className="px-3 py-2">Success rate</th>
+                </tr>
+              </thead>
+              <tbody>
+                {nurtureStepHealth.map((s) => {
+                  const total = s.sent + s.failed + s.skipped;
+                  const sr = total > 0 ? s.sent / total : null;
+                  return (
+                    <tr key={s.step} className="border-t border-slate-100">
+                      <td className="px-3 py-2 font-medium text-slate-800">Step {s.step}</td>
+                      <td className="px-3 py-2 text-right font-mono text-slate-700">{s.sent}</td>
+                      <td className={`px-3 py-2 text-right font-mono ${s.failed > 0 ? "font-semibold text-rose-600" : "text-slate-500"}`}>{s.failed}</td>
+                      <td className="px-3 py-2 text-right font-mono text-slate-500">{s.skipped}</td>
+                      <td className="px-3 py-2">
+                        <div className="flex items-center gap-2">
+                          <span className={`text-xs ${sr != null && sr < 0.8 ? "font-semibold text-rose-600" : "text-slate-700"}`}>{pct(sr)}</span>
+                          {sr != null && (
+                            <div className="h-1.5 w-16 rounded bg-slate-100">
+                              <div
+                                className={`h-1.5 rounded ${sr < 0.8 ? "bg-rose-400" : "bg-emerald-500"}`}
+                                style={{ width: `${Math.min(100, sr * 100)}%` }}
+                              />
+                            </div>
+                          )}
+                        </div>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
+
+      {/* Stuck / overdue leads */}
+      {stuckLeads.length > 0 && (
+        <Detail summary={`Stuck / overdue leads (${stuckLeads.length})`}>
+          <table className="w-full text-sm">
+            <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+              <tr>
+                <th className="px-3 py-2">Name</th>
+                <th className="px-3 py-2">Submitted</th>
+                <th className="px-3 py-2 text-right">Overdue</th>
+                <th className="px-3 py-2 text-right">Step</th>
+              </tr>
+            </thead>
+            <tbody>
+              {stuckLeads.map((l) => (
+                <tr key={l.lead_id} className="border-t border-slate-100">
+                  <td className="px-3 py-2 font-medium text-slate-800">{l.full_name || "(unnamed)"}</td>
+                  <td className="px-3 py-2 text-xs text-slate-500">{ago(l.created_at)}</td>
+                  <td className="px-3 py-2 text-right text-xs font-semibold text-rose-600">{l.overdue_hours}h</td>
+                  <td className="px-3 py-2 text-right text-xs text-slate-600">{l.step ?? "-"}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </Detail>
+      )}
+
+      {/* Failed sends */}
+      {failedSends.length > 0 && (
+        <Detail summary={`Failed sends (${failedSends.length})`}>
+          <table className="w-full text-sm">
+            <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+              <tr>
+                <th className="px-3 py-2">Name</th>
+                <th className="px-3 py-2">Channel</th>
+                <th className="px-3 py-2">Step</th>
+                <th className="px-3 py-2">Reason</th>
+                <th className="px-3 py-2">When</th>
+              </tr>
+            </thead>
+            <tbody>
+              {failedSends.map((f) => (
+                <tr key={f.id} className="border-t border-slate-100">
+                  <td className="px-3 py-2 font-medium text-slate-800">{f.full_name || "(unnamed)"}</td>
+                  <td className="px-3 py-2 text-xs text-slate-600">{f.channel ?? "-"}</td>
+                  <td className="px-3 py-2 text-xs text-slate-600">{f.step ?? "-"}</td>
+                  <td className="px-3 py-2 text-xs text-rose-600">{f.reason ?? "-"}</td>
+                  <td className="px-3 py-2 text-xs text-slate-500">{ago(f.ts)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </Detail>
+      )}
+
+      {/* Recent leads ops table */}
+      <div className="mt-6">
+        <h3 className="text-sm font-bold text-slate-700">
+          Recent leads ({leads.length})
+        </h3>
+        <div className="mt-2 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+          <table className="w-full text-sm">
+            <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+              <tr>
+                <th className="px-3 py-2">Name</th>
+                <th className="px-3 py-2">Submitted</th>
+                <th className="px-3 py-2">Verify</th>
+                <th className="px-3 py-2">Nurture</th>
+                <th className="px-3 py-2 text-center">Responded</th>
+                <th className="px-3 py-2">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {leads.length === 0 ? (
+                <tr>
+                  <td colSpan={6} className="px-3 py-4 text-center text-slate-400">
+                    No leads yet.
+                  </td>
+                </tr>
+              ) : (
+                leads.map((l) => (
+                  <tr key={l.id} className="border-t border-slate-100">
+                    <td className="px-3 py-2 font-medium text-slate-800">
+                      {l.full_name || "(unnamed)"}
+                    </td>
+                    <td className="px-3 py-2 text-xs text-slate-500">{ago(l.created_at)}</td>
+                    <td className="px-3 py-2 text-xs">
+                      {l.verify_pass === true ? (
+                        <span className="font-medium text-emerald-700">Pass</span>
+                      ) : l.verify_pass === false ? (
+                        <span className="font-medium text-rose-600">Fail</span>
+                      ) : (
+                        <span className="text-slate-400">Pending</span>
+                      )}
+                      {l.phone_status && (
+                        <span className="ml-1 text-slate-400">
+                          ({l.phone_status.replace("valid_", "")})
+                        </span>
+                      )}
+                    </td>
+                    <td className="px-3 py-2 text-xs">
+                      {l.nurture_status ? (
+                        <span
+                          className={`font-medium ${
+                            l.nurture_status === "contactable"
+                              ? "text-emerald-700"
+                              : l.nurture_status === "unreachable"
+                              ? "text-rose-600"
+                              : "text-slate-700"
+                          }`}
+                        >
+                          {NURTURE_LABEL[l.nurture_status] ?? l.nurture_status}
+                          {l.nurture_step != null && ` (step ${l.nurture_step})`}
+                        </span>
+                      ) : (
+                        <span className="text-slate-400">Not started</span>
+                      )}
+                    </td>
+                    <td className="px-3 py-2 text-center text-xs">
+                      {l.responded ? (
+                        <span className="font-medium text-emerald-700">Yes</span>
+                      ) : (
+                        <span className="text-slate-400">No</span>
+                      )}
+                    </td>
+                    <td className="px-3 py-2 text-xs text-slate-600">{l.status ?? "-"}</td>
+                  </tr>
+                ))
+              )}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ── Page ───────────────────────────────────────────────────────────────────
 
 export default async function SitePage({
@@ -535,6 +934,7 @@ export default async function SitePage({
   if (!site) notFound();
 
   const caps = getSiteCapabilities(siteKey);
+  const isProperty = siteKey === "property";
 
   const now = new Date();
   const isoOf = (d: Date) => d.toISOString();
@@ -684,6 +1084,27 @@ export default async function SitePage({
     caps.nurture ? getNurtureFunnel(siteKey) : Promise.resolve([]),
     caps.leadIntent ? getLeadIntentMix(siteKey) : Promise.resolve([]),
     caps.experiments ? getResultGateLeads(siteKey) : Promise.resolve(null as FormLeadCount | null),
+  ]);
+
+  // Property-only: contactability pipeline data + nurture observability
+  const [
+    contactabilityFunnel,
+    contactabilityLeads,
+    nurtureHealth,
+    nurtureStepHealth,
+    stuckLeads,
+    failedSends,
+    nurtureControl,
+  ] = await Promise.all([
+    isProperty ? getContactabilityFunnel(siteKey) : Promise.resolve(null),
+    isProperty ? getContactabilityLeads(siteKey) : Promise.resolve([] as ContactabilityLeadRow[]),
+    isProperty ? getNurtureHealth(siteKey) : Promise.resolve(null as NurtureHealth | null),
+    isProperty ? getNurtureStepHealth(siteKey) : Promise.resolve([] as NurtureStepHealth[]),
+    isProperty ? getStuckLeads(siteKey) : Promise.resolve([] as StuckLead[]),
+    isProperty ? getFailedSends(siteKey) : Promise.resolve([] as FailedSend[]),
+    isProperty
+      ? getNurtureControl()
+      : Promise.resolve({ paused: false, paused_reason: null, paused_at: null, paused_by: null } as NurtureControl),
   ]);
 
   // ── Tab sections ──
@@ -912,6 +1333,17 @@ export default async function SitePage({
 
   const conversionSection = (
     <div className="space-y-8">
+      {isProperty && (
+        <LeadContactabilityPanel
+          funnel={contactabilityFunnel}
+          leads={contactabilityLeads}
+          nurtureHealth={nurtureHealth}
+          nurtureStepHealth={nurtureStepHealth}
+          stuckLeads={stuckLeads}
+          failedSends={failedSends}
+          nurtureControl={nurtureControl}
+        />
+      )}
       {caps.leadIntent ? (
         leadIntent.length > 0 ? (
           <div>

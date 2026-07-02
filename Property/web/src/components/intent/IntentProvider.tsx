@@ -16,7 +16,7 @@ import { usePathname } from "next/navigation";
 import { useConsent } from "../analytics/ConsentProvider";
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { deriveTopic } from "@/lib/intent/deriveTopic";
-import { getEntryTopic, getLastTopic, isReturning, isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
+import { getEntryTopic, getLastTopic, isReturning, isConverted, getBookingNudge } from "@accounting-network/web-shared/analytics/visitMemory";
 import { getMaxScrollPct, getEngagedMs } from "@accounting-network/web-shared/analytics/autoCapture";
 import { evaluate, type IntentAction, type IntentContext, type Surface } from "@/lib/intent/engine";
 import type { TopicKey } from "@/lib/intent/taxonomy";
@@ -61,6 +61,7 @@ export function IntentProvider({ children }: { children: React.ReactNode }) {
       lastTopic: mounted ? (getLastTopic() as TopicKey | null) : null,
       returning: mounted ? isReturning() : false,
       converted: mounted ? isConverted() : false,
+      bookingNudge: mounted ? getBookingNudge() : null,
       scrollPct: signals.scrollPct,
       engagedMs: signals.engagedMs,
       isMobile: mounted && typeof window !== "undefined" ? window.innerWidth < 640 : false,

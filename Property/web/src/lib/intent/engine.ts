@@ -28,10 +28,12 @@ export type IntentContext = {
   scrollPct: number; // current page max scroll depth
   engagedMs: number; // cumulative engaged time this session
   isMobile: boolean;
+  /** live booking capability (converted lead who hasn't picked a slot yet). */
+  bookingNudge?: { token: string } | null;
 };
 
 /** The matched asset a surface should promote — a real, live resource. */
-export type OfferKind = "tool" | "guide" | "specialist";
+export type OfferKind = "tool" | "guide" | "specialist" | "booking";
 
 export type IntentOffer = {
   /** which kind of asset this is (also stamped onto events as `content`). */
@@ -92,6 +94,21 @@ function reviewOffer(
     blurb: "A free, no-obligation review of your position with a property tax specialist.",
     href: "/contact",
     reason,
+  };
+}
+
+/**
+ * Build the "booking" offer: the converted visitor holds a live booking
+ * capability (the signed token from their submit) but hasn't picked a slot,
+ * so the one useful next step is the native slot picker.
+ */
+function bookingOffer(token: string): IntentOffer {
+  return {
+    kind: "booking",
+    title: "Pick your callback slot",
+    blurb: "It takes about 20 seconds and a specialist will call you at the time you choose.",
+    href: `/book?t=${encodeURIComponent(token)}`,
+    reason: "Your specialist callback is ready to book",
   };
 }
 
@@ -163,7 +180,17 @@ export function evaluate(surface: Surface, ctx: IntentContext): IntentAction | n
   switch (surface) {
     case "hero_cta":
     case "sticky_cta": {
-      if (ctx.converted) return null; // never nag someone who already converted
+      if (ctx.converted) {
+        // Never nag someone who already converted, with ONE exception: a live
+        // booking capability (they submitted but haven't picked a slot) turns
+        // the sticky bar into the final step instead of silence.
+        if (surface === "sticky_cta" && ctx.bookingNudge) {
+          return build(surface, "booking_nudge", primary ?? "services", bookingOffer(ctx.bookingNudge.token), {
+            variant: "booking",
+          });
+        }
+        return null;
+      }
       if (!primary) return null;
       const offer = pickOffer(primary, ctx);
       if (!offer) return null;
@@ -195,7 +222,18 @@ export function evaluate(surface: Surface, ctx: IntentContext): IntentAction | n
     }
 
     case "returning_bar": {
-      if (ctx.converted || !ctx.returning) return null;
+      if (!ctx.returning) return null;
+      if (ctx.converted) {
+        // A returning converted lead holding a live booking capability gets the
+        // single useful next step (pick the callback slot); otherwise stay quiet.
+        if (ctx.bookingNudge) {
+          const topic = ctx.lastTopic ?? ctx.entryTopic ?? "services";
+          return build(surface, "booking_nudge", topic, bookingOffer(ctx.bookingNudge.token), {
+            variant: "booking",
+          });
+        }
+        return null;
+      }
       // Resume their last topic with a free review, so a return visit picks up
       // where they left off rather than back at square one.
       const resume = ctx.lastTopic ?? ctx.entryTopic;

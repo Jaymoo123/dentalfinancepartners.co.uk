@@ -4,6 +4,8 @@
   "buildCommand": "npm run build",
   "framework": "nextjs",
   "crons": [
-    { "path": "/api/nurture/send", "schedule": "0 9 * * *" }
+    { "path": "/api/nurture/send", "schedule": "0 9 * * *" },
+    { "path": "/api/cron/lead-nurture", "schedule": "0 * * * *" },
+    { "path": "/api/cron/lead-nurture-digest", "schedule": "0 7 * * *" }
   ]
 }

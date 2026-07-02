@@ -12,7 +12,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
-import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { submitPropertyLead, type PropertyLeadPayload } from "@/lib/leads/submit-client";
 import { useFormTracking } from "@/components/analytics/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
@@ -93,7 +93,6 @@ export function MiniCapture({
     if (typeof window !== "undefined") setSourceUrl(window.location.href);
   }, []);
 
-  const { supabaseUrl, supabaseKey } = getSupabaseConfig();
   const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
 
   const validate = useCallback((data: FormData) => {
@@ -121,26 +120,17 @@ export function MiniCapture({
     setErrorMessage(null);
     const form = e.currentTarget;
     const data = new FormData(form);
-    // Honeypot named `enquiry_ref` (non-semantic) so autofill/password managers don't target
-    // it — old name `company_url` silently dropped real humans. [[property_leadform_honeypot_silent_drop]]
-    if (String(data.get("enquiry_ref") || "").trim() !== "") {
-      ft.onError("enquiry_ref", "honeypot"); // value-free diagnostic; behaviour unchanged (still blocks)
-      return;
-    }
+    // Capture honeypot value; the server decides what to do with it (never silently drops).
+    const honeypotValue = String(data.get("enquiry_ref") || "").trim();
+
     const errs = validate(data);
     setFieldErrors(errs);
     if (Object.keys(errs).length > 0) return;
     ft.onSubmit(4); // passed validation, about to POST
 
-    if (!supabaseUrl || !supabaseKey) {
-      setStatus("error");
-      setErrorMessage("Form not connected. Email us directly, we respond same day.");
-      return;
-    }
-
     setStatus("loading");
     const userMessage = String(data.get("message") || "").trim();
-    const payload = {
+    const payload: PropertyLeadPayload = {
       full_name: String(data.get("full_name") || "").trim(),
       email: String(data.get("email") || "").trim(),
       phone: String(data.get("phone") || "").trim(),
@@ -158,7 +148,7 @@ export function MiniCapture({
       session_id: getSessionId() || undefined,
     };
 
-    const result = await submitLead(payload, supabaseUrl, supabaseKey);
+    const result = await submitPropertyLead(payload, honeypotValue);
     if (!result.success) {
       setStatus("error");
       setErrorMessage(result.error || "Something went wrong. Please try again or use the full form below.");
@@ -171,6 +161,13 @@ export function MiniCapture({
     if (typeof window !== "undefined" && "gtag" in window) {
       const gtag = (window as { gtag?: (...args: unknown[]) => void }).gtag;
       if (gtag) gtag("event", "generate_lead", { event_category: "engagement", event_label: `${niche.niche_id}_${formId}`, value: 1 });
+    }
+
+    if (result.needsCheck) {
+      // Lead was recorded but the phone number looks wrong. Stay on the form.
+      setStatus("idle");
+      setFieldErrors({ phone: "That number does not look right. Please check it and submit again." });
+      return;
     }
 
     setStatus("success");
@@ -289,7 +286,7 @@ export function MiniCapture({
           )}
 
           <button type="submit" disabled={status === "loading"} className={`${btnPrimary} w-full sm:w-auto`}>
-            {status === "loading" ? "Sending..." : submitLabel}
+            {status === "loading" ? "Verifying your details..." : submitLabel}
           </button>
         </form>
       )}

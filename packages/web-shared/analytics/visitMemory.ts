@@ -13,6 +13,9 @@
  *  - <prefix>_last_topic  (localStorage):   most-recent non-null topic across visits
  *  - <prefix>_visits      (localStorage):   session count (returning detection)
  *  - <prefix>_converted   (localStorage):   lead converted flag (stop nagging)
+ *  - <prefix>_booking_nudge (localStorage): {t, exp} signed booking capability
+ *    token from the lead submit (nothing personal), until it expires
+ *  - <prefix>_booked      (localStorage):   callback booked flag (kills the nudge)
  */
 import { getSdkConfig } from "./init";
 
@@ -121,5 +124,45 @@ export function isConverted(): boolean {
     return s.getItem(`${p()}_converted`) === "1";
   } catch {
     return false;
+  }
+}
+
+/** Persist the signed booking capability token at submit (nothing personal, just the capability). */
+export function setBookingNudge(token: string, expiresAtMs: number): void {
+  const s = ls();
+  if (!s || !token) return;
+  try {
+    s.setItem(`${p()}_booking_nudge`, JSON.stringify({ t: token, exp: expiresAtMs }));
+  } catch {
+    /* ignore */
+  }
+}
+
+/** The live booking nudge, or null when absent/expired/already booked. */
+export function getBookingNudge(): { token: string } | null {
+  const s = ls();
+  if (!s) return null;
+  try {
+    if (s.getItem(`${p()}_booked`) === "1") return null;
+    const raw = s.getItem(`${p()}_booking_nudge`);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as { t?: unknown; exp?: unknown };
+    if (typeof parsed.t !== "string" || !parsed.t) return null;
+    if (typeof parsed.exp !== "number" || Date.now() >= parsed.exp) return null;
+    return { token: parsed.t };
+  } catch {
+    return null;
+  }
+}
+
+/** Mark the callback as booked: clears the nudge permanently. */
+export function setBookingDone(): void {
+  const s = ls();
+  if (!s) return;
+  try {
+    s.setItem(`${p()}_booked`, "1");
+    s.removeItem(`${p()}_booking_nudge`);
+  } catch {
+    /* ignore */
   }
 }

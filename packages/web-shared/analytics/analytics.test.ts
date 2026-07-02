@@ -15,6 +15,7 @@ import { getVisitorId, getSessionId, isNewSession, _resetMigration, safeGet } fr
 import { scrubProps } from "./track";
 import { sanitiseEvents, buildSession } from "./server/createTrackHandler";
 import { detectBot } from "./server/bots";
+import { setBookingNudge, getBookingNudge, setBookingDone } from "./visitMemory";
 import { setActiveExperiment, activeExperimentString, _clearExperiments } from "./experiments/active";
 import { registerExperiments, getExperiment } from "./experiments/registry";
 import { assignVariant } from "./experiments/assign";
@@ -558,6 +559,74 @@ describe("experiments stamping", () => {
 
   it("getExperiment returns null from empty registry", () => {
     expect(getExperiment("anything")).toBeNull();
+  });
+});
+
+// ---------------------------------------------------------------------------
+// 8. visitMemory booking nudge (on-site continuity capability)
+// ---------------------------------------------------------------------------
+
+describe("visitMemory booking nudge", () => {
+  beforeEach(() => {
+    setupBrowserMocks();
+    _resetSdkConfig();
+    initAnalytics({ siteKey: "test", siteName: "Test", storagePrefix: "t", posture: "opt-out" });
+  });
+  afterEach(teardownBrowserMocks);
+
+  it("returns null when nothing is stored", () => {
+    expect(getBookingNudge()).toBeNull();
+  });
+
+  it("returns the token after setBookingNudge with a future expiry", () => {
+    setBookingNudge("tok_abc", Date.now() + 60_000);
+    expect(getBookingNudge()).toEqual({ token: "tok_abc" });
+  });
+
+  it("stores under the configured prefix", () => {
+    setBookingNudge("tok_abc", Date.now() + 60_000);
+    expect(mockLS.getItem("t_booking_nudge")).toContain("tok_abc");
+    expect(mockLS.getItem("sdk_booking_nudge")).toBeNull();
+  });
+
+  it("returns null once the expiry has passed", () => {
+    setBookingNudge("tok_abc", Date.now() - 1);
+    expect(getBookingNudge()).toBeNull();
+  });
+
+  it("setBookingDone clears a live nudge (and removes the stored token)", () => {
+    setBookingNudge("tok_abc", Date.now() + 60_000);
+    setBookingDone();
+    expect(getBookingNudge()).toBeNull();
+    expect(mockLS.getItem("t_booking_nudge")).toBeNull();
+  });
+
+  it("booked flag is permanent: a later setBookingNudge stays dead", () => {
+    setBookingDone();
+    setBookingNudge("tok_later", Date.now() + 60_000);
+    expect(getBookingNudge()).toBeNull();
+  });
+
+  it("ignores an empty token", () => {
+    setBookingNudge("", Date.now() + 60_000);
+    expect(getBookingNudge()).toBeNull();
+  });
+
+  it("returns null on malformed stored JSON", () => {
+    mockLS.setItem("t_booking_nudge", "{not json");
+    expect(getBookingNudge()).toBeNull();
+  });
+
+  it("returns null on a well-formed value with the wrong shapes", () => {
+    mockLS.setItem("t_booking_nudge", JSON.stringify({ t: 42, exp: "soon" }));
+    expect(getBookingNudge()).toBeNull();
+  });
+
+  it("is SSR-safe: no window -> no-throw and null", () => {
+    teardownBrowserMocks(); // simulate the server (afterEach re-delete is harmless)
+    expect(() => setBookingNudge("tok", Date.now() + 1000)).not.toThrow();
+    expect(getBookingNudge()).toBeNull();
+    expect(() => setBookingDone()).not.toThrow();
   });
 });
 

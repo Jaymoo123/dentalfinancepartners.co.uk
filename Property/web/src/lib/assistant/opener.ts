@@ -126,6 +126,14 @@ export function openerFor(profile: JourneyProfile, pingIndex = 0): string {
   return GENERIC[i];
 }
 
+/**
+ * Booking concierge: the visitor already converted and holds a live booking
+ * capability, so the only useful nudge is to pick the callback slot.
+ */
+export function bookingConciergeOpener(): string {
+  return "Your specialist call is ready to book. Want to pick a time? It takes about 20 seconds.";
+}
+
 /** Instant copy when a form silently fails (honeypot/validation) — the visitor's own action. */
 export function frictionOpener(): string {
   return "Looks like that form's being fiddly. Tell me what you need right here and I'll make sure it reaches us.";

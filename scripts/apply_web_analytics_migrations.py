@@ -51,6 +51,13 @@ MIGRATIONS = [
     "20260617000002_geo_leads_weekly_and_journey_fix.sql",
     "20260617000003_vw_probable_ai_direct.sql",
     "20260617000004_bing_ai_performance_table.sql",
+    # Lead contactability & nurture system (verify -> nurture -> gate before DJH).
+    "20260701000001_lead_contactability_nurture.sql",
+    # Lead nurture observability: control plane table + health/step/stuck views.
+    "20260702000001_lead_nurture_observability.sql",
+    # Fix: reconcile the dual leads.status CHECK conflict found on prod (old
+    # leads_status_check blocked contactable/unreachable/forwarded).
+    "20260702000002_leads_status_constraint_reconcile.sql",
 ]
 
 

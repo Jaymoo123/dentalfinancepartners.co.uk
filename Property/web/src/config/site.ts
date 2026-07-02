@@ -18,7 +18,7 @@ const partner = niche.partner;
 // third-party sharing is still disclosed in the linked Privacy Policy (which names
 // the partner), keeping a transparent layered notice without naming the partner at
 // the point of collection.
-const leadConsentText = `By submitting this enquiry you agree to ${niche.display_name} using your details to respond and provide the advice you have requested.`;
+const leadConsentText = `By submitting this form you agree to ${niche.display_name} contacting you by phone, email, SMS and WhatsApp to arrange your free review.`;
 // Email-only sign-ups (resource downloads) are NOT shared with the partner firm
 // (agreement Annex B.2). They keep a tick-to-consent box with their own wording,
 // which must never mention the partner. Forms append "See our Privacy Policy."
