@@ -11,14 +11,18 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
 
 // Specialist partner firm that enquiries are shared with. Kept configured so the
 // Privacy Policy + lead routing keep disclosing and honouring the data-sharing
-// arrangement, even though the FORM wording below no longer names the partner.
+// arrangement; the lead-form wording below also names the partner at the point of
+// collection, as required by Annex B.1 (restored 2026-07-02, finding C1).
 const partner = niche.partner;
-// Lead-form enquiry wording (each form appends "See our Privacy Policy."). Reverted
-// 2026-06-25 to the in-house pre-data-sharing wording on the form ITSELF: the
-// third-party sharing is still disclosed in the linked Privacy Policy (which names
-// the partner), keeping a transparent layered notice without naming the partner at
-// the point of collection.
-const leadConsentText = `By submitting this form you agree to ${niche.display_name} contacting you by phone, email, SMS and WhatsApp to arrange your free review.`;
+// Lead-form enquiry wording (each form appends "See our Privacy Policy."). Restored
+// 2026-07-02 (owner-approved, audit finding C1) to the exact Annex B.1 point-of-collection
+// acknowledgement required by the executed Lead Generation & Data Sharing Agreement: it
+// names DJH Business Advisers Limited as the specialist partner the enquiry is shared with,
+// AT the point of collection. Annex B.4 forbids materially weakening this without DJH's
+// prior written agreement, so do NOT soften it in code (raise a B.4 variation with DJH
+// first). The rendered form text and the stored consent_text row both equal the B.1
+// wording verbatim once the trailing "See our Privacy Policy." is appended by each form.
+const leadConsentText = `To answer your enquiry, your details will be shared with our specialist partner firm DJH Business Advisers Limited (part of the DJH group of companies), an independent data controller that will contact you and use your details under its own privacy policy. By submitting this enquiry you confirm you understand this.`;
 // Email-only sign-ups (resource downloads) are NOT shared with the partner firm
 // (agreement Annex B.2). They keep a tick-to-consent box with their own wording,
 // which must never mention the partner. Forms append "See our Privacy Policy."
