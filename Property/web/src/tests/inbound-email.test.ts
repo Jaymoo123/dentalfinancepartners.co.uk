@@ -98,11 +98,8 @@ import {
   evaluateContactability,
   recordResponseAndEvaluate,
 } from "@/lib/leads/contactability";
-import {
-  POST,
-  stripQuotedHistory,
-  extractEmail,
-} from "@/app/api/leads/inbound/email/route";
+import { POST } from "@/app/api/leads/inbound/email/route";
+import { stripQuotedHistory, extractEmail } from "@/lib/leads/email-parse";
 
 // ── Fixtures ──────────────────────────────────────────────────────────────────
 

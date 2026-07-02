@@ -30,6 +30,7 @@ import { verifyResendWebhook } from "@accounting-network/web-shared/nurture/webh
 import { adminSelect } from "@/lib/supabase/admin";
 import { classify } from "@/lib/ai/anthropic";
 import { recordResponseAndEvaluate, stopNurture } from "@/lib/leads/contactability";
+import { extractEmail, stripQuotedHistory } from "@/lib/leads/email-parse";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -50,36 +51,6 @@ type InboundEmailPayload = {
   data?: InboundEmailData;
   [key: string]: unknown;
 };
-
-// ── Pure helpers (exported for tests) ────────────────────────────────────────
-
-const EMAIL_ANGLE_RE = /<([^>\s]+@[^>\s]+)>/;
-const EMAIL_BARE_RE = /([^\s@,;]+@[^\s@,;]+\.[^\s@,;]+)/;
-
-/**
- * Extract a bare lower-cased email address from a From header value.
- * Handles both "Name <email>" and plain "email" forms.
- */
-export function extractEmail(from: string): string | null {
-  const m = from.match(EMAIL_ANGLE_RE) ?? from.match(EMAIL_BARE_RE);
-  if (!m) return null;
-  return m[1].toLowerCase().trim();
-}
-
-/**
- * Strip quoted reply history from a plain-text email body.
- * Cuts at the first line beginning with ">" (quoted block) or matching a
- * "On ... wrote:" attribution line. Trims whitespace and caps length.
- */
-export function stripQuotedHistory(text: string, maxLen = 1000): string {
-  const lines = text.split("\n");
-  const cutIdx = lines.findIndex((l) => {
-    const t = l.trimStart();
-    return t.startsWith(">") || /^On .+ wrote:/i.test(t);
-  });
-  const relevant = cutIdx === -1 ? lines : lines.slice(0, cutIdx);
-  return relevant.join("\n").trim().slice(0, maxLen);
-}
 
 // Keyword opt-out detection (case-insensitive, word-bounded).
 const OPT_OUT_RE =

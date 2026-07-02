@@ -313,7 +313,7 @@ export async function runNurtureGuardrails(opts: {
     .join("|");
 
   // Read control once: shared by email-dedup check and pause check.
-  let control = await getNurtureControl().catch(() => ({
+  const control = await getNurtureControl().catch(() => ({
     paused: false,
     pausedReason: null as string | null,
     pausedAt: null as string | null,
