@@ -132,14 +132,14 @@ export async function POST(req: Request) {
   // 3. Dedupe (best-effort) against a recent same-email/phone lead, else insert.
   //    A dedupe hiccup must NEVER lose a lead, so it is isolated from the insert.
   let leadId: string | null = null;
-  let existingRow: { id: string; full_name: string; phone: string; message: string } | null = null;
+  let existingRow: { id: string; full_name: string; phone: string; message: string; status: string } | null = null;
   try {
     // Dedupe on email only. Email is regex-validated and (as a standalone eq
     // filter) safe; folding phone into an `or=(...)` group risked breaking the
     // PostgREST filter on stray characters, and stored phones are raw anyway.
     const since = new Date(Date.now() - DEDUPE_WINDOW_MS).toISOString();
-    const existing = await adminSelect<{ id: string; full_name: string; phone: string; message: string }>("leads", {
-      select: "id,full_name,phone,message",
+    const existing = await adminSelect<{ id: string; full_name: string; phone: string; message: string; status: string }>("leads", {
+      select: "id,full_name,phone,message,status",
       source: `eq.${source}`,
       email: `eq.${email}`,
       created_at: `gte.${since}`,
@@ -182,7 +182,24 @@ export async function POST(req: Request) {
       if (full_name) dedupeUpdate.full_name = full_name;
       if (phone)     dedupeUpdate.phone    = phone;
 
+      // A fresh form submission is fresh consent. If the matched lead was
+      // closed (opted out) or exhausted (unreachable), reopen it and record
+      // re_consented so the contactability gate stops treating the historical
+      // opted_out as absolute (it blocks only when no LATER re_consented
+      // exists). Without this, a resubmit re-enrolled but the lead stayed
+      // closed and could never promote (2026-07-03 incident).
+      const reopened =
+        existingRow?.status === "closed" || existingRow?.status === "unreachable";
+      if (reopened) dedupeUpdate.status = "nurturing";
+
       await adminUpdate("leads", { id: `eq.${leadId}` }, dedupeUpdate);
+      if (reopened) {
+        await adminInsert("lead_contact_events", {
+          lead_id: leadId,
+          event_type: "re_consented",
+          channel: "web",
+        });
+      }
     } catch (e) {
       console.error("[leads/submit] dedupe update failed (non-fatal)", e);
     }

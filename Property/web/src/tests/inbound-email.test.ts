@@ -649,3 +649,78 @@ describe("htmlToText", () => {
     expect(htmlToText("Tom &amp; Jerry &gt; cartoons")).toBe("Tom & Jerry > cartoons");
   });
 });
+
+// ── Outlook/Hotmail quote stripping (2026-07-03 incident) ─────────────────────
+
+describe("stripQuotedHistory — Outlook-family formats", () => {
+  it("cuts at the Outlook underscore separator", () => {
+    const t = "My number is 07500897741.\n\n________________________________\nFrom: Junayd at Property Tax Partners <junayd@propertytaxpartners.co.uk>\nSent: Thursday, July 3, 2026\nTo: junaydmoughal@hotmail.co.uk\nSubject: Re: your enquiry\n\nThanks for your message... To opt out, just reply STOP.";
+    const s = stripQuotedHistory(t);
+    expect(s).toContain("07500897741");
+    expect(s).not.toContain("STOP");
+    expect(s).not.toContain("From:");
+  });
+
+  it("cuts at -----Original Message-----", () => {
+    const t = "Yes tomorrow works.\n-----Original Message-----\nFrom: x\nTo opt out, just reply STOP.";
+    const s = stripQuotedHistory(t);
+    expect(s).toBe("Yes tomorrow works.");
+  });
+
+  it("cuts at a bare From:/Sent: header block without a separator", () => {
+    const t = "Call me Tuesday.\nFrom: Property Tax Partners\nSent: 3 July 2026\nSubject: Re\nquoted stuff STOP";
+    const s = stripQuotedHistory(t);
+    expect(s).toBe("Call me Tuesday.");
+  });
+
+  it("cuts at a hard-wrapped attribution ending in wrote:", () => {
+    const t = "Here you go: 07811111111\nOn Thu, 3 Jul 2026 at 14:34, Junayd at Property Tax\nPartners <junayd@propertytaxpartners.co.uk> wrote:\n> original";
+    const s = stripQuotedHistory(t);
+    expect(s).toBe("Here you go: 07811111111");
+  });
+
+  it("does not cut a first line that merely starts with From:", () => {
+    const t = "From: my point of view this looks great, call me on 07700900000";
+    expect(stripQuotedHistory(t)).toBe(t);
+  });
+});
+
+// ── Full-route regression: the exact 2026-07-03 Hotmail incident ──────────────
+
+describe("inbound email route — Hotmail reply with quoted footer (regression)", () => {
+  beforeEach(() => {
+    process.env.LEAD_RESEND_INBOUND_SECRET = "whsec_dGVzdA==";
+  });
+
+  it("captures the phone and records replied instead of opting out", async () => {
+    db.leads.push({ id: LID, status: "nurturing", email: SENDER, phone: "", full_name: "", source: "property" });
+    db.lead_nurture_state.push({ lead_id: LID, sequence: "property_detail_capture", step: 1, status: "active" });
+    mockClassify.mockResolvedValueOnce("genuine_reply");
+    mockVerifyLead.mockResolvedValueOnce({
+      phone: { status: "valid_mobile", line_type: "mobile", carrier: "EE", e164: "+447500897741" },
+      email: { status: "valid", domain: "hotmail.co.uk" },
+      verify_pass: true,
+      provider: "twilio",
+      raw: {},
+    });
+    // Hotmail keeps the whole original underneath with NO ">" prefixes.
+    mockFetchReceivedText.mockResolvedValueOnce(
+      "Hi, it's Junayd. Best number is 07500 897741, tomorrow afternoon.\n\n" +
+      "________________________________\n" +
+      "From: Junayd at Property Tax Partners <junayd@propertytaxpartners.co.uk>\n" +
+      "Sent: Thursday, July 3, 2026 3:34 PM\n" +
+      "To: junaydmoughal@hotmail.co.uk\n" +
+      "Subject: Thanks for your message, one quick thing\n\n" +
+      "Thanks for reaching out... To opt out, just reply STOP.",
+    );
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const res = await POST(makeReq(inboundPayload({ omitText: true, email_id: "rcv-hotmail" })) as any);
+
+    expect(res.status).toBe(200);
+    expect(db.lead_contact_events.some((e) => e.event_type === "opted_out")).toBe(false);
+    expect(db.lead_contact_events.some((e) => e.event_type === "replied" && e.channel === "email")).toBe(true);
+    expect(db.leads[0].phone).toBe("07500 897741");
+    expect(db.leads[0].status).toBe("contactable");
+  });
+});

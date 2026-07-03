@@ -84,8 +84,8 @@ function seedLead(status = "nurturing") {
 function seedVerification(phone_status: string) {
   db.lead_verification.push({ lead_id: LID, phone_status });
 }
-function seedEvent(event_type: string, channel: string | null) {
-  db.lead_contact_events.push({ lead_id: LID, event_type, channel });
+function seedEvent(event_type: string, channel: string | null, ts?: string) {
+  db.lead_contact_events.push({ lead_id: LID, event_type, channel, ...(ts ? { ts } : {}) });
 }
 
 beforeEach(() => {
@@ -158,6 +158,28 @@ describe("contactability gate", () => {
     expect(v.contactable).toBe(false);
     const p = await promoteIfContactable(LID);
     expect(p.promoted).toBe(false);
+  });
+
+  it("a fresh form submission (re_consented AFTER opt-out) lifts the block", async () => {
+    seedLead("nurturing"); // submit route reopens the lead before the gate runs
+    seedVerification("valid_mobile");
+    seedEvent("opted_out", "email", "2026-07-03T14:35:00Z");
+    seedEvent("re_consented", "web", "2026-07-03T15:00:00Z");
+    seedEvent("replied", "sms", "2026-07-03T15:05:00Z");
+    const v = await evaluateContactability(LID);
+    expect(v.contactable).toBe(true);
+    const p = await promoteIfContactable(LID);
+    expect(p.promoted).toBe(true);
+  });
+
+  it("a re_consented BEFORE the opt-out does NOT lift the block", async () => {
+    seedLead("closed");
+    seedVerification("valid_mobile");
+    seedEvent("re_consented", "web", "2026-07-03T14:00:00Z");
+    seedEvent("opted_out", "email", "2026-07-03T14:35:00Z");
+    seedEvent("replied", "sms", "2026-07-03T15:05:00Z");
+    const v = await evaluateContactability(LID);
+    expect(v.contactable).toBe(false);
   });
 
   it("a booked VoIP number is held for manual review, not auto-contactable", async () => {

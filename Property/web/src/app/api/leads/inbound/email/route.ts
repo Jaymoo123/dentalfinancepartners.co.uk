@@ -32,6 +32,7 @@ import { classify } from "@/lib/ai/anthropic";
 import { recordResponseAndEvaluate, stopNurture } from "@/lib/leads/contactability";
 import { extractEmail, stripQuotedHistory } from "@/lib/leads/email-parse";
 import { fetchReceivedEmailText } from "@/lib/leads/inbound-content";
+import { classifyEmailReplyIntent } from "@/lib/leads/reply-intent";
 import { copyAiEnabled } from "@/lib/leads/sequence-gen";
 import { verifyLead } from "@/lib/leads/verify";
 import { extractUkPhone } from "@/lib/leads/reply-extract";
@@ -60,9 +61,9 @@ type InboundEmailPayload = {
   [key: string]: unknown;
 };
 
-// Keyword opt-out detection (case-insensitive, word-bounded).
-const OPT_OUT_RE =
-  /\b(unsubscribe|stop|opt.?out|remove me|no longer|don't contact|do not contact)\b/i;
+// Opt-out detection lives in classifyEmailReplyIntent (reply-intent.ts): tiered
+// so our own quoted footer ("reply STOP") can never opt a lead out — the exact
+// failure of 2026-07-03, when a Hotmail reply's unstripped quote did just that.
 
 // ── Lead resolution ───────────────────────────────────────────────────────────
 
@@ -150,10 +151,8 @@ export async function POST(req: NextRequest) {
   const leadId = lead.id;
 
   try {
-    // Detect opt-out by keyword BEFORE calling the AI (avoids unnecessary API spend).
-    const isKeywordOptOut =
-      OPT_OUT_RE.test(subject) || OPT_OUT_RE.test(strippedBody);
-    if (isKeywordOptOut) {
+    // Detect opt-out deterministically BEFORE calling the AI (avoids API spend).
+    if (classifyEmailReplyIntent(strippedBody, subject) === "opt_out") {
       await stopNurture(leadId, "email");
       return ok200();
     }

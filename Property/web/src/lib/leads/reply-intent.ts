@@ -119,3 +119,67 @@ export function classifyReplyIntent(body: string): ReplyIntent {
 
   return 'ambiguous';
 }
+
+// ── Email replies ─────────────────────────────────────────────────────────────
+// Email needs different handling from SMS: bodies are long, and mail clients
+// quote our own footer ("To opt out, just reply STOP.") beneath the reply, so a
+// bare STOP/OPT OUT keyword can NOT be trusted in a long body. A Hotmail reply
+// was falsely opted out by exactly this on 2026-07-03. Tiers:
+//   1. Our own boilerplate lines are removed before anything is matched, so
+//      even an unstripped quote of our footer can never drive an opt-out.
+//   2. Explicit, unambiguous opt-out PHRASES (subject or body) are honoured.
+//   3. A SHORT stripped body is treated like an SMS and run through the full
+//      classifier (catches a bare "STOP", "NO", "unsubscribe").
+//   4. Anything else is a genuine reply; the operator forward puts a human in
+//      the loop, so a misread never silently kills a lead.
+
+/** Our own footer wording (current + the earlier linked variant). */
+const SELF_BOILERPLATE_RES: ReadonlyArray<RegExp> = [
+  /to opt out,?\s*just reply stop\.?/gi,
+  /opt out of these emails/gi,
+  /reply stop to opt out\.?/gi,
+];
+
+const EMAIL_STRONG_OPT_OUT_PHRASES: ReadonlyArray<string> = [
+  'UNSUBSCRIBE',
+  'OPT ME OUT',
+  'REMOVE ME',
+  'DO NOT CONTACT',
+  'DONT CONTACT',
+  'DO NOT EMAIL',
+  'DONT EMAIL',
+  'STOP EMAILING',
+  'STOP CONTACTING',
+  'STOP MESSAGING',
+  'NOT INTERESTED',
+  'NO LONGER INTERESTED',
+  'LEAVE ME ALONE',
+  'WRONG PERSON',
+];
+const EMAIL_STRONG_REGEXES: ReadonlyArray<RegExp> =
+  EMAIL_STRONG_OPT_OUT_PHRASES.map(wbPhrase);
+
+/** A stripped body at or under this length is classified like an SMS. */
+const SHORT_EMAIL_BODY_CHARS = 80;
+
+export type EmailReplyIntent = 'opt_out' | 'genuine';
+
+/**
+ * Classify an inbound EMAIL reply (post quote-stripping) as opt_out or genuine.
+ * `subject` participates only in the strong-phrase tier (someone writing
+ * "unsubscribe" in the subject means it).
+ */
+export function classifyEmailReplyIntent(strippedBody: string, subject = ''): EmailReplyIntent {
+  let cleaned = strippedBody;
+  for (const re of SELF_BOILERPLATE_RES) cleaned = cleaned.replace(re, ' ');
+
+  const bodyNorm = normalise(cleaned);
+  const subjNorm = normalise(subject);
+  for (const re of EMAIL_STRONG_REGEXES) {
+    if (re.test(bodyNorm) || re.test(subjNorm)) return 'opt_out';
+  }
+  if (bodyNorm.length <= SHORT_EMAIL_BODY_CHARS && classifyReplyIntent(cleaned) === 'opt_out') {
+    return 'opt_out';
+  }
+  return 'genuine';
+}

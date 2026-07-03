@@ -6,7 +6,7 @@
  * compound tokens like "STOPWATCH" are never treated as opt-outs.
  */
 import { describe, it, expect } from "vitest";
-import { classifyReplyIntent } from "@/lib/leads/reply-intent";
+import { classifyReplyIntent, classifyEmailReplyIntent } from "@/lib/leads/reply-intent";
 
 // ── Opt-out ───────────────────────────────────────────────────────────────────
 
@@ -199,5 +199,58 @@ describe("opt_out beats positive when both signals appear", () => {
     // 'PLEASE DO' is in the positive phrases, but 'DO NOT CONTACT' is
     // an opt-out phrase and opt_out is evaluated first.
     expect(classifyReplyIntent("please do not contact")).toBe("opt_out");
+  });
+});
+
+// ── Email reply intent (classifyEmailReplyIntent) ─────────────────────────────
+// Regression suite for the 2026-07-03 incident: a Hotmail reply whose unstripped
+// quote contained our own "reply STOP" footer was falsely opted out.
+
+describe("classifyEmailReplyIntent — the 2026-07-03 false-opt-out class", () => {
+  it("a long reply containing our quoted footer is GENUINE, not opt-out", () => {
+    const body =
+      "Hi, it's Junayd. Best number is 07500 897741, tomorrow afternoon works.\n\n" +
+      "Thanks for your message, one quick thing so we can help properly...\n" +
+      "To opt out, just reply STOP.";
+    expect(classifyEmailReplyIntent(body)).toBe("genuine");
+  });
+
+  it("the older linked footer wording is also inert", () => {
+    const body = "Yes please call me. Opt out of these emails";
+    expect(classifyEmailReplyIntent(body)).toBe("genuine");
+  });
+
+  it("a bare 'stop' inside a long conversational body is genuine ('stop by')", () => {
+    const body =
+      "Happy to talk this through, you could even stop by the office if easier. " +
+      "I have three buy to lets and want to discuss incorporation options soon.";
+    expect(classifyEmailReplyIntent(body)).toBe("genuine");
+  });
+});
+
+describe("classifyEmailReplyIntent — real opt-outs still honoured", () => {
+  it.each([
+    ["STOP"],
+    ["stop"],
+    ["No"],
+    ["unsubscribe"],
+    ["please stop"],
+    ["opt out"],
+  ])("short reply '%s' is an opt-out", (body) => {
+    expect(classifyEmailReplyIntent(body)).toBe("opt_out");
+  });
+
+  it.each([
+    ["Please unsubscribe me from these emails, I have found another accountant."],
+    ["I'm not interested in this service any more, thanks anyway for the info."],
+    ["Do not contact me again about this, I never asked for these messages."],
+    ["Wrong person, I never enquired about property tax. Remove me please."],
+    ["Could you stop emailing me about this? I've already sorted my tax position."],
+  ])("long reply with an explicit phrase is an opt-out: '%s'", (body) => {
+    expect(classifyEmailReplyIntent(body)).toBe("opt_out");
+  });
+
+  it("an 'unsubscribe' SUBJECT is honoured regardless of body", () => {
+    expect(classifyEmailReplyIntent("see subject", "unsubscribe")).toBe("opt_out");
   });
 });

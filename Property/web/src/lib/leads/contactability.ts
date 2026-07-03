@@ -33,7 +33,7 @@ import { getResend, getFromAddress } from "@/lib/resend";
 import { resolveLeadTo } from "@/lib/lead-routing";
 import { sendContactableHandoff, type HandoffResult } from "./handoff";
 
-type EventRow = { event_type: string; channel: string | null };
+type EventRow = { event_type: string; channel: string | null; ts?: string | null };
 type VerRow = { phone_status: string | null };
 
 export interface ContactabilityVerdict {
@@ -48,7 +48,7 @@ export async function evaluateContactability(leadId: string): Promise<Contactabi
   const [evRes, verRes] = await Promise.all([
     adminSelect<EventRow>("lead_contact_events", {
       lead_id: `eq.${leadId}`,
-      select: "event_type,channel",
+      select: "event_type,channel,ts",
     }),
     adminSelect<VerRow>("lead_verification", {
       lead_id: `eq.${leadId}`,
@@ -58,9 +58,22 @@ export async function evaluateContactability(leadId: string): Promise<Contactabi
   ]);
 
   const events = evRes.data;
-  // Opt-out is absolute: a lead who replied STOP is never contactable, even if a
-  // still-valid confirm/booking link is clicked afterwards.
-  if (events.some((e) => e.event_type === "opted_out")) {
+  // Opt-out blocks promotion — a still-valid confirm/booking link clicked
+  // afterwards must never resurrect the lead. The ONE thing that lifts it is a
+  // LATER re_consented event (recorded when the person submits a fresh form,
+  // i.e. gives fresh consent). ISO timestamps compare correctly as strings;
+  // a missing ts (defensive) sorts as "" so a bare opted_out still blocks.
+  const latestTs = (type: string): string | null => {
+    const ts = events
+      .filter((e) => e.event_type === type)
+      .map((e) => e.ts ?? "")
+      .sort()
+      .pop();
+    return ts === undefined ? null : ts;
+  };
+  const optedOutAt = latestTs("opted_out");
+  const reConsentedAt = latestTs("re_consented");
+  if (optedOutAt !== null && !(reConsentedAt !== null && reConsentedAt > optedOutAt)) {
     return { contactable: false, responded: false, phoneProven: false, reason: "opted out" };
   }
   const repliedViaPhone = events.some(
