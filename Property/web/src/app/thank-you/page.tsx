@@ -102,6 +102,9 @@ export default async function ThankYouPage({
               <p className="mt-4 text-base text-slate-600">
                 Your message is with our team. We aim to respond within 24 hours, usually same day.
               </p>
+              <p className="mt-4 text-sm text-slate-500">
+                Cannot see our email? Please check your spam or junk folder, and mark it as not spam so our messages reach you.
+              </p>
             </>
           ) : (
             <p className="mt-6 text-lg leading-relaxed text-slate-700">

@@ -419,7 +419,7 @@ export function SpecialistWidget() {
                   </svg>
                 </span>
                 <div className="max-w-[82%] rounded-2xl rounded-tl-sm border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-900 shadow-sm">
-                  Thanks. A specialist has your message and will reply within one working day.
+                  Thanks, a specialist has your message and will be in touch by email. Please keep an eye on your inbox, and your spam or junk folder just in case, so our reply does not get missed.
                 </div>
               </div>
             ) : !composing ? (
