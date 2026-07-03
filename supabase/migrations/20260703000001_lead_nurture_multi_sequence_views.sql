@@ -27,7 +27,8 @@
 --   already holds, gated identically). Both are granted to service_role alone;
 --   the underlying tables have RLS enabled with no policies, so anon /
 --   authenticated PostgREST roles stay fully denied. ADDITIVE / prod-safe and
---   idempotent (drop-then-create for step_health; create-or-replace for stuck).
+--   idempotent (drop-then-create for both views; the sequence column reorders the
+--   stuck view, which CREATE OR REPLACE forbids).
 -- ============================================================================
 
 -- ---- vw_lead_nurture_step_health: per (site_key, sequence, step) wide pivot ---
@@ -64,7 +65,10 @@ comment on view public.vw_lead_nurture_step_health is
 -- ---- vw_lead_nurture_stuck: overdue active leads, now sequence-labelled -------
 -- Recreated from 20260702000001 with ns.sequence added to the SELECT; every other
 -- column, the WHERE (active AND overdue > 3h), and the ORDER BY are identical.
-create or replace view public.vw_lead_nurture_stuck as
+-- drop-then-create (not create-or-replace) because the new sequence column changes
+-- the column order, which CREATE OR REPLACE VIEW forbids.
+drop view if exists public.vw_lead_nurture_stuck;
+create view public.vw_lead_nurture_stuck as
 select
   l.id              as lead_id,
   l.source          as site_key,
