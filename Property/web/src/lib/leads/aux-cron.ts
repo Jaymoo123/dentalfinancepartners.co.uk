@@ -35,6 +35,13 @@ const WINDOW_BOUNDS: Record<string, WindowBounds> = {
   late_afternoon:{ startH: 15, startM: 0, endH: 17, endM: 30 },
 };
 
+/** Human phrase for the booked window, used in the T-24 reminder email. */
+const WINDOW_PHRASES: Record<string, string> = {
+  morning:        "in the morning, between 9am and 12pm",
+  afternoon:      "in the afternoon, between 12pm and 3pm",
+  late_afternoon: "in the late afternoon, between 3pm and 5.30pm",
+};
+
 // ---------------------------------------------------------------------------
 // London-to-UTC conversion (mirrors send-window.ts londonEpochMs)
 // ---------------------------------------------------------------------------
@@ -252,18 +259,21 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
         const label      = meta.start || `${meta.window} on ${meta.date}`;
         const sequence   = `booking_reminder:${meta.date}:${meta.window}`;
 
-        // Step 0: T-24 email.
+        // Step 0: T-24 email. Copy from the approved preview
+        // (docs/property/email-previews/booking_t24_reminder.html).
         const inT24 = now >= slotStartMs - 24 * 3600_000 && now < slotStartMs;
         if (inT24) {
           const sendRowId = await claimSend(leadId, sequence, 0, "email");
           if (sendRowId) {
             try {
+              const windowPhrase = WINDOW_PHRASES[meta.window] ?? `in your booked slot (${label})`;
               const { html, text } = renderLeadServiceEmail({
-                preheader: `Your review call is tomorrow, ${firstName}`,
+                preheader: "Booked for tomorrow. Reply if the time no longer works.",
                 greeting: `Hi ${firstName},`,
                 paragraphs: [
-                  `A quick reminder: your free property tax review call is booked for ${label}. Your specialist will have read your enquiry before they ring.`,
-                  "The call takes about 20 minutes and there is nothing to prepare. If the time no longer works, just reply to this email and we will rearrange it.",
+                  `Your free property tax review call is tomorrow, ${windowPhrase}.`,
+                  "One of our property tax specialists will ring you then. They will have read your enquiry before they call, the call takes about 20 minutes, and there is nothing to prepare.",
+                  "If the time no longer works, just reply to this email and I will move it to one that does.",
                 ],
                 signoff: SIGNOFF,
                 footerNote: FOOTER,
@@ -278,7 +288,7 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
               const result = await sender.send({
                 channel: "email",
                 to: lead.email,
-                subject: `Your review call is tomorrow, ${firstName}`,
+                subject: `Your call is tomorrow, ${firstName}`,
                 html,
                 text,
                 headers,

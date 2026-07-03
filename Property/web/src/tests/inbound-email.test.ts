@@ -116,6 +116,17 @@ vi.mock("@/lib/leads/inbound-content", () => ({
   fetchReceivedEmailText: (id: string) => mockFetchReceivedText(id),
 }));
 
+// Mock the Resend client so the prospect ack email (sent through the REAL
+// channels.ts sender when the nurture flags are on) never leaves the process.
+const resendSendSpy = vi.fn(async (_opts?: Record<string, unknown>) => ({
+  data: { id: "em_ack_1" },
+  error: null,
+}));
+vi.mock("@/lib/resend", () => ({
+  getResend: () => ({ emails: { send: resendSendSpy } }),
+  getFromAddress: () => "Property Tax Partners <ops@x>",
+}));
+
 // ── Imports (after mocks) ─────────────────────────────────────────────────────
 
 import {
@@ -722,5 +733,132 @@ describe("inbound email route — Hotmail reply with quoted footer (regression)"
     expect(db.lead_contact_events.some((e) => e.event_type === "replied" && e.channel === "email")).toBe(true);
     expect(db.leads[0].phone).toBe("07500 897741");
     expect(db.leads[0].status).toBe("contactable");
+  });
+});
+
+// ── Prospect ack email (genuine reply -> "Got your reply") ───────────────────
+// The ack goes through the REAL channels.ts sender (flag gating + shared
+// from/reply-to identity) into the mocked Resend client; the nurture flags set
+// below are what arm it.
+
+describe("inbound email route: prospect ack email", () => {
+  beforeEach(() => {
+    process.env.LEAD_RESEND_INBOUND_SECRET = "whsec_dGVzdA==";
+    // buildLeadMessageContext mints confirm/opt-out tokens for the ack email.
+    process.env.LEAD_NURTURE_TOKEN_SECRET = "test-secret-test-secret-test-secret!";
+    process.env.LEAD_NURTURE_ENABLED = "1";
+    process.env.LEAD_NURTURE_EMAIL_ENABLED = "1";
+    // Keep the operator-notify path off so the only Resend traffic is the ack.
+    delete process.env.RESEND_API_KEY;
+  });
+
+  afterAll(() => {
+    delete process.env.LEAD_NURTURE_TOKEN_SECRET;
+    delete process.env.LEAD_NURTURE_ENABLED;
+    delete process.env.LEAD_NURTURE_EMAIL_ENABLED;
+  });
+
+  function seedAckLead(source = "property", full_name = "Sam Jones") {
+    db.leads.push({
+      id: LID,
+      status: "nurturing",
+      email: SENDER,
+      phone: "07811111111",
+      full_name,
+      source,
+    });
+    db.lead_nurture_state.push({
+      lead_id: LID,
+      sequence: "property_contactability",
+      step: 2,
+      status: "active",
+    });
+    db.lead_verification.push({ lead_id: LID, phone_status: "valid_mobile" });
+  }
+
+  function emailAckEvents() {
+    return db.lead_contact_events.filter(
+      (e) => e.event_type === "ack_sent" && e.channel === "email",
+    );
+  }
+
+  it("genuine reply -> one ack email to the prospect + ack_sent/email recorded", async () => {
+    seedAckLead();
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const res = await POST(makeReq(inboundPayload({})) as any);
+
+    expect(res.status).toBe(200);
+    expect(resendSendSpy).toHaveBeenCalledTimes(1);
+    const call = resendSendSpy.mock.calls[0][0] as unknown as {
+      from: string;
+      to: string;
+      replyTo: string;
+      subject: string;
+      html: string;
+      text: string;
+    };
+    expect(call.to).toBe(SENDER);
+    expect(call.subject).toBe("Got your reply, Sam");
+    // Identity comes from the shared channels.ts helpers, never hardcoded here.
+    expect(call.from).toMatch(/<.+@.+>/);
+    expect(call.replyTo).toMatch(/@/);
+    expect(call.html).toContain("Got your reply, thank you. That is everything we need.");
+    expect(call.text).toContain("One of our property tax specialists will call you");
+    // Reply-only service email: no booking CTA button.
+    expect(call.text).not.toContain("Pick a time");
+    // House style: no em or en dashes anywhere in the copy.
+    const dashPattern = new RegExp("[" + "\\u2013" + "\\u2014" + "]");
+    expect(call.html).not.toMatch(dashPattern);
+    expect(call.text).not.toMatch(dashPattern);
+    expect(emailAckEvents()).toHaveLength(1);
+  });
+
+  it("second genuine reply -> no duplicate ack (idempotent per lead)", async () => {
+    seedAckLead();
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    await POST(makeReq(inboundPayload({})) as any);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    await POST(makeReq(inboundPayload({ text: "Also, evenings suit best." })) as any);
+
+    expect(resendSendSpy).toHaveBeenCalledTimes(1);
+    expect(emailAckEvents()).toHaveLength(1);
+  });
+
+  it("nameless lead -> subject falls back to plain 'Got your reply'", async () => {
+    seedAckLead("property", "");
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    await POST(makeReq(inboundPayload({})) as any);
+
+    expect(resendSendSpy).toHaveBeenCalledTimes(1);
+    const call = resendSendSpy.mock.calls[0][0] as unknown as { subject: string; html: string };
+    expect(call.subject).toBe("Got your reply");
+    expect(call.html).toContain("Hi there,");
+  });
+
+  it("test-source lead -> ack skipped entirely", async () => {
+    seedAckLead("test");
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const res = await POST(makeReq(inboundPayload({})) as any);
+
+    expect(res.status).toBe(200);
+    expect(resendSendSpy).not.toHaveBeenCalled();
+    expect(emailAckEvents()).toHaveLength(0);
+  });
+
+  it("nurture flags off -> ack skipped and NOT recorded (retries when armed)", async () => {
+    seedAckLead();
+    delete process.env.LEAD_NURTURE_ENABLED;
+    delete process.env.LEAD_NURTURE_EMAIL_ENABLED;
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const res = await POST(makeReq(inboundPayload({})) as any);
+
+    expect(res.status).toBe(200);
+    expect(resendSendSpy).not.toHaveBeenCalled();
+    expect(emailAckEvents()).toHaveLength(0);
   });
 });

@@ -91,7 +91,12 @@ describe("field-aware, reply-based copy", () => {
           const text = [m.subject, m.text].filter(Boolean).join("\n");
           expect(text, `${step.key} mentions the ask`).toContain(c.missingPhrase);
           // Reply-based: no links to on-site forms anywhere in the email body.
-          expect(m.html, `${step.key} html has no link`).not.toContain("http");
+          // The fixed signature-block brand link is the only URL the branded
+          // shell may carry, so strip that exact href and require no other URL.
+          const htmlWithoutSignatureLink = (m.html ?? "")
+            .split('href="https://www.propertytaxpartners.co.uk"')
+            .join("");
+          expect(htmlWithoutSignatureLink, `${step.key} html has no action link`).not.toContain("http");
           expect(m.text, `${step.key} text has no link`).not.toContain("http");
           expect(m.text?.toLowerCase(), `${step.key} asks them to reply`).toContain("reply");
         }
@@ -115,11 +120,20 @@ describe("no em/en dash in copy", () => {
 });
 
 describe("graceful nameless rendering (default case)", () => {
-  it("degrades to 'Hi there,' with no malformed personalization", () => {
+  // Approved previews: nameless leads get a first-person introduction instead
+  // of a personal greeting; a named lead keeps "Hi {firstName},".
+  const NAMELESS_GREETINGS: Record<string, string> = {
+    detail_capture_t0: "Hi, Junayd here from Property Tax Partners.",
+    detail_capture_day1: "Hi, Junayd again from Property Tax Partners.",
+    detail_capture_day3: "Hi, Junayd here from Property Tax Partners.",
+    detail_capture_day7: "Hi, Junayd here, one last time.",
+  };
+
+  it("uses the first-person introduction with no malformed personalization", () => {
     for (const step of steps) {
       for (const m of step.buildMessages(BOTH)) {
         const text = [m.subject, m.text].filter(Boolean).join("\n");
-        expect(text, `${step.key} greeting`).toContain("Hi there,");
+        expect(text, `${step.key} greeting`).toContain(NAMELESS_GREETINGS[step.key]);
         expect(text, `${step.key} no empty greeting`).not.toContain("Hi ,");
         expect(text, `${step.key} no empty token`).not.toContain(", ,");
         expect(text, `${step.key} no double space`).not.toContain("  ");
@@ -128,14 +142,36 @@ describe("graceful nameless rendering (default case)", () => {
       }
     }
   });
+
+  it("keeps the personal greeting when a name exists (phone-only variant)", () => {
+    for (const step of steps) {
+      for (const m of step.buildMessages(PHONE)) {
+        expect(m.text, `${step.key} named greeting`).toContain("Hi Alex,");
+        expect(m.text, `${step.key} no Junayd intro when named`).not.toContain("Hi, Junayd");
+      }
+    }
+  });
 });
 
 describe("warm, non-blaming tone", () => {
   it("owns the gap when the capture form did not ask (contactUnasked)", () => {
-    // Step 0 opener acknowledges we reached back out, rather than implying the
-    // lead withheld details we never requested.
+    // Step 0 opener owns the gap (the form never asked), rather than implying
+    // the lead withheld details we never requested.
     const step0 = steps[0].buildMessages(BOTH)[0];
-    expect(step0.text).toContain("reaching out through our site");
+    expect(step0.text).toContain("The form you used didn't ask for");
+  });
+
+  it("stays neutral when the form did ask (contactUnasked false)", () => {
+    const step0 = steps[0].buildMessages(PHONE)[0];
+    expect(step0.text).not.toContain("The form you used");
+    expect(step0.text).toContain("To set up your call, I just need");
+  });
+
+  it("t0 bakes in the any-reply-verifies-the-channel line (owner correction)", () => {
+    for (const [, c] of VARIANTS) {
+      const step0 = steps[0].buildMessages(c)[0];
+      expect(step0.text).toContain("even a one-word reply is fine");
+    }
   });
 
   it("never blames the lead for a field we did not ask for", () => {

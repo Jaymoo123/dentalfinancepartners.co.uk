@@ -51,9 +51,9 @@ export interface EngagementEvent {
  * Decide which engagement-signal copy variant (if any) applies to this lead.
  *
  * Rules (in precedence order):
- *   hesitation    — a booking-link click exists AND no booking AND click >= 24 h
+ *   hesitation   , a booking-link click exists AND no booking AND click >= 24 h
  *                   old. The lead looked but did not commit; address the friction.
- *   channel_shift — 3+ emails sent with ZERO open events. Emails may not be
+ *   channel_shift, 3+ emails sent with ZERO open events. Emails may not be
  *                   reaching the lead; pivot to SMS for day-7.
  *
  * Hesitation wins when both conditions are true (a lead who clicked IS engaged;
@@ -364,6 +364,8 @@ function emailMsg(
     cta?: { label: string; href: string } | null;
     /** Override the secondary one-tap link. Pass null to omit it entirely. */
     secondary?: { label: string; href: string } | null;
+    /** Override the greeting line (default "Hi {firstName},"). Used for the nameless detail-capture intro. */
+    greeting?: string;
   },
 ): LeadStepMessage {
   const gen: GeneratedStepCopy | undefined =
@@ -388,7 +390,7 @@ function emailMsg(
 
   const { html, text } = renderLeadServiceEmail({
     preheader: finalPreheader,
-    greeting: `Hi ${ctx.firstName},`,
+    greeting: opts?.greeting ?? `Hi ${ctx.firstName},`,
     paragraphs: finalParagraphs,
     ...(cta ? { cta } : {}),
     ...(secondary ? { secondary } : {}),
@@ -441,14 +443,17 @@ const STEPS: LeadNurtureStep[] = [
     channels: ["email"],
     buildMessages: (c) => [
       // Single standard first-touch email for everyone (the T0 A/B was retired).
+      // Copy from the approved preview (docs/property/email-previews/t0_email.html)
+      // with the owner corrections applied: the call is CONTINGENT on a reply
+      // (never "otherwise we will call you"), and any reply verifies the channel.
       emailMsg(
         c,
-        `Got your enquiry, ${c.firstName}. Here is what happens next.`,
-        "A property tax specialist will call. Just reply to arrange a time.",
+        `Got your enquiry, ${c.firstName}`,
+        "Just reply with a time that suits and a specialist will call you.",
         [
-          "Thanks for getting in touch. We have received your enquiry and a property tax specialist will be glad to help.",
-          "The next step is a short call. There is no charge and no obligation, and it is genuinely useful even if you decide to do nothing afterwards. Just reply to this email with a day and time that suits you, and a specialist will call you then.",
-          "Or if you would rather we simply called you, reply with the best number to reach you on and we will do the rest.",
+          "Thanks for your enquiry, it has just landed with me and a property tax specialist is ready to help.",
+          "The call is a free review of where you stand, about 20 minutes, with no charge and no obligation.",
+          "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you best, tell me and we will work around it.",
         ],
         "t0_email",
         { cta: null, secondary: null },
@@ -509,15 +514,16 @@ const STEPS: LeadNurtureStep[] = [
     delayHours: 24,
     channels: ["email"],
     buildMessages: (c) => [
+      // Copy from the approved preview (day2_give_email.html); the opening is
+      // adjusted so no call is promised before a reply (owner correction).
       emailMsg(
         c,
-        `Two things worth having to hand for your call, ${c.firstName}`,
-        "A couple of things that make the call more useful.",
+        `One thing landlords often miss, ${c.firstName}`,
+        "Money spent before your first tenant moved in can often be claimed.",
         [
-          "While we line up your call, here are a couple of things that make these conversations more useful.",
-          "First, so you can get the most from it, it helps to have a rough idea of your figures to hand: what the property or portfolio brings in, what it costs, and any mortgage interest. Nothing formal, the specialist works with whatever you have.",
-          "Second, so you know what to expect, your review will cover: where you stand today, the options that realistically apply to someone in your position, and the one or two things worth doing next. No jargon, and nothing to prepare.",
-          "Whenever you are ready, just reply with a day and time that suits and a specialist will call you.",
+          "A quick pointer while your enquiry is with me. Most landlords do not realise that money spent before the first tenant moved in, things like repairs, advertising and insurance, can usually be claimed against rental income, even up to seven years later.",
+          "If that rings a bell for your property, it is exactly the kind of thing your free review would cover.",
+          "Whenever suits, just reply with a day and time and I will get a specialist to call you.",
         ],
         "day2_give_email",
         { cta: null, secondary: null },
@@ -551,9 +557,10 @@ const STEPS: LeadNurtureStep[] = [
   // ["email","sms"] so the scheduler hint stays accurate. generatedCopy is
   // bypassed for channel_shift (deliverability trumps personalisation).
   //
-  // hesitation variant: swap paragraph 2 for friction-reducing copy. The
-  // emailMsg wrapper means generatedCopy still wins over variant paragraphs
-  // (normal override precedence), except for channel_shift (above).
+  // The email body is hesitation-aware by design (approved preview
+  // day7_email.html): one body covers both the default and the hesitation
+  // variant, so no paragraph branching is needed. generatedCopy still wins via
+  // the emailMsg wrapper (normal override precedence), except for channel_shift.
   {
     key: "day7_email",
     delayHours: 72,
@@ -569,20 +576,14 @@ const STEPS: LeadNurtureStep[] = [
         ];
       }
 
-      // hesitation variant: replace paragraph 2 with friction-reducing copy.
-      const p2 =
-        c.engagementVariant === "hesitation"
-          ? `If something is holding you back, reply and tell us. There is no cost, no obligation, and no hard sell on the call, it is genuinely just a review of where you stand.`
-          : `If a short call would help, just reply with a day and time that suits, or the best number to reach you on, and a specialist will call you. No forms, no fuss.`;
-
       return [
         emailMsg(
           c,
-          `Still here whenever the timing is right, ${c.firstName}`,
-          "No rush. One short conversation whenever it suits.",
+          `Still here when you are, ${c.firstName}`,
+          "No rush at all. A one line reply is all it takes.",
           [
-            "New week, so a quick and final-but-one note. Your free review is still open and there is no rush at all. If now is not the moment, that is completely fine.",
-            p2,
+            "Just checking in, and there is genuinely no rush. Your free review is still open, and if now is not the right moment, that is completely fine.",
+            "If something is holding you back, or life has simply been busy, a one line reply is all it takes. Give me a day and a time, or ask whatever is on your mind, and I will take it from there.",
           ],
           "day7_email",
           { cta: null, secondary: null },
@@ -597,14 +598,15 @@ const STEPS: LeadNurtureStep[] = [
     delayHours: 96,
     channels: ["email"],
     buildMessages: (c) => [
+      // Copy from the approved preview (breakup_day11.html), verbatim.
       emailMsg(
         c,
-        `We'll leave it there for now, ${c.firstName}`,
-        "The door stays open whenever you need us.",
+        `Last one from me, ${c.firstName}`,
+        "Stopping the reminders now. The door stays open whenever you need it.",
         [
-          "We have reached out a few times about your enquiry, so we will stop the reminders now and leave the ball in your court. No hard feelings at all.",
-          "One parting thought that costs nothing: if your situation changes, the moments most worth a quick review are usually a new purchase, a sale, or the arrival of your Self Assessment bill. Whenever one of those lands, we are one message away and the review is still free.",
-          "You can reply to this email any time and we will pick it straight back up. All the best with your property.",
+          "This is my last note, I will stop the reminders here. No hard feelings at all, the timing has to be right.",
+          "For what it is worth, the moments a review really earns its keep are a new purchase, a sale, or a Self Assessment bill that looks bigger than it should. If one of those lands, reply to this email, even months from now, and I will pick it straight back up.",
+          "All the best with the property.",
         ],
         "breakup_day11",
         { cta: null, secondary: null },
@@ -670,12 +672,23 @@ function buildContactabilityConfig(): LeadNurtureConfig {
 // ctx.missingPhrase (recomputed per send, so a partial completion auto-narrows
 // later touches). No SMS steps: email is the universal prerequisite, and a
 // phone-less SMS step would only self-skip and pollute the send dashboards.
-// Graceful when nameless (the DEFAULT case here): greetings degrade to
-// "Hi there," via firstNameOf, and no subject uses a "Thanks {name}," construction.
+// Graceful when nameless (the DEFAULT case here): the greeting becomes a
+// first-person introduction ("Hi, Junayd here from Property Tax Partners.")
+// per the approved previews; when a name exists it stays "Hi {firstName},".
+// No subject uses a "Thanks {name}," construction.
 
 /** Safe missing-detail phrase for copy (never empty, even for a stray build). */
 function detailAsk(c: LeadMessageContext): string {
   return c.missingPhrase && c.missingPhrase.trim() ? c.missingPhrase : "your details";
+}
+
+/**
+ * Greeting line: nameless leads get the first-person introduction from the
+ * approved previews; leads with a name keep the default "Hi {firstName},"
+ * (returning undefined lets emailMsg fall back to it).
+ */
+function detailGreeting(c: LeadMessageContext, namelessLine: string): { greeting?: string } {
+  return c.missingFields?.includes("name") ? { greeting: namelessLine } : {};
 }
 
 /**
@@ -684,9 +697,10 @@ function detailAsk(c: LeadMessageContext): string {
  * for withholding something we never requested. Otherwise stay neutral.
  */
 function detailIntro(c: LeadMessageContext): string {
+  const ask = detailAsk(c);
   return c.contactUnasked
-    ? "Thanks for reaching out through our site. Your message has landed with a property tax specialist who would be glad to help."
-    : "Thanks for starting your enquiry. A property tax specialist would be glad to help.";
+    ? `Thanks for your message. The form you used didn't ask for ${ask}, so I have no way to call you back yet.`
+    : `Thanks for your message. To set up your call, I just need ${ask}.`;
 }
 
 const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
@@ -697,17 +711,23 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
     buildMessages: (c) => {
       const ask = detailAsk(c);
       return [
+        // Copy from the approved preview (detail_capture_t0.html), with the
+        // owner correction: any reply verifies the channel works.
         emailMsg(
           c,
-          "Thanks for your message, one quick thing so we can help",
-          `So a specialist can get back to you, could you share ${ask}?`,
+          "Got your message, one quick thing",
+          `Reply with ${ask} and a specialist will call you.`,
           [
             detailIntro(c),
-            `So we know who we are speaking to and can get back to you properly, just reply to this email with ${ask}. It takes a few seconds and there is nothing else to do.`,
-            "Reply whenever it suits and a specialist will take it from there.",
+            `Just reply to this email with ${ask} and I'll have one of our property tax specialists call you. It's free, there's no obligation, and there's nothing to prepare.`,
+            "If it's easier, reply with anything at all, even a one-word reply is fine. It confirms we can reach you and I'll take it from there.",
           ],
           "detail_capture_t0",
-          { cta: null, secondary: null },
+          {
+            cta: null,
+            secondary: null,
+            ...detailGreeting(c, "Hi, Junayd here from Property Tax Partners."),
+          },
         ),
       ];
     },
@@ -721,15 +741,18 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
       return [
         emailMsg(
           c,
-          "Still happy to help with your property tax",
-          "A specialist has time set aside this week.",
+          "Still happy to help",
+          `Reply with ${ask} and I will sort the rest.`,
           [
-            "Just following up on the message you sent us. A specialist has time set aside this week for a short call about your property tax, whenever suits you.",
-            `The only thing we need to set it up is ${ask}, so we know who we are speaking to. Just reply to this email and a specialist will call you.`,
-            "There is no cost and no obligation at any point.",
+            "A quick nudge on the message you sent us yesterday. I'd still like to get a specialist on the phone to you this week.",
+            `All I need is ${ask}. Just reply to this email and I'll sort the rest. No cost and no obligation at any point.`,
           ],
           "detail_capture_day1",
-          { cta: null, secondary: null },
+          {
+            cta: null,
+            secondary: null,
+            ...detailGreeting(c, "Hi, Junayd again from Property Tax Partners."),
+          },
         ),
       ];
     },
@@ -743,15 +766,18 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
       return [
         emailMsg(
           c,
-          "A minute now and a specialist can take it from there",
-          `Reply with ${ask} and we will do the rest.`,
+          "One pointer while you decide",
+          "Two reliefs landlords often miss, and a free call if you want one.",
           [
-            "Most people who ask us the kind of question you did get a genuinely useful answer from one short call.",
-            `To set that up, we just need ${ask}. Just reply to this email and a specialist will pick it up from there.`,
-            "If now is not the right time, that is completely fine. Reply whenever you are ready.",
+            "One quick pointer while your enquiry sits with us. The two reliefs landlords most often miss on Self Assessment are replacement of domestic items and pre-letting expenses. Worth checking you claim both, whoever handles your tax.",
+            `And if you'd rather a specialist looked at the whole picture, just reply with ${ask} and I'll set up a free call.`,
           ],
           "detail_capture_day3",
-          { cta: null, secondary: null },
+          {
+            cta: null,
+            secondary: null,
+            ...detailGreeting(c, "Hi, Junayd here from Property Tax Partners."),
+          },
         ),
       ];
     },
@@ -766,15 +792,19 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
       return [
         emailMsg(
           c,
-          "We will leave it here for now",
-          "The door stays open whenever the timing is right.",
+          "I'll leave it with you",
+          "No more reminders. Reply any time and we will pick it straight up.",
           [
-            "We have reached out a couple of times about your message, so we will leave it with you now.",
-            `If you would still like that free review, just reply with ${ask} whenever it suits.`,
-            "Whenever your situation changes, a new purchase, a sale, or a Self Assessment bill, we are one message away. All the best with your property.",
+            "I've asked a couple of times now, so I'll stop the reminders and leave it with you. No hard feelings at all.",
+            `If you'd still like a free review, just reply with ${ask}, whether that's next week or next year. The moments it tends to matter most are a purchase, a sale, or a Self Assessment bill landing.`,
+            "All the best with your property.",
           ],
           "detail_capture_day7",
-          { cta: null, secondary: null },
+          {
+            cta: null,
+            secondary: null,
+            ...detailGreeting(c, "Hi, Junayd here, one last time."),
+          },
         ),
       ];
     },

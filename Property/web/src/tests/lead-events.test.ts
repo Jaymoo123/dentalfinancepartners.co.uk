@@ -408,21 +408,25 @@ describe("day4_sms copy variants", () => {
 describe("day7_email copy variants", () => {
   const step = steps.find((s) => s.key === "day7_email")!;
 
-  it("returns an email with standard p2 when no engagementVariant", () => {
+  // The approved preview (day7_email.html) uses ONE hesitation-aware body that
+  // covers both the default and the hesitation variant, so both paths must
+  // render the same email copy.
+  it("returns the hesitation-aware email when no engagementVariant", () => {
     const msgs = step.buildMessages({ ...BASE_CTX, engagementVariant: undefined });
     expect(msgs).toHaveLength(1);
     expect(msgs[0].channel).toBe("email");
     const blob = (msgs[0].html ?? "") + (msgs[0].text ?? "");
-    expect(blob).toContain("If a short call would help");
-    expect(blob).not.toContain("holding you back");
+    expect(blob).toContain("a one line reply is all it takes");
+    expect(blob).toContain("holding you back");
   });
 
-  it("returns an email with hesitation p2 when engagementVariant is hesitation", () => {
+  it("returns the same hesitation-aware email when engagementVariant is hesitation", () => {
     const msgs = step.buildMessages({ ...BASE_CTX, engagementVariant: "hesitation" });
     expect(msgs).toHaveLength(1);
     expect(msgs[0].channel).toBe("email");
     const blob = (msgs[0].html ?? "") + (msgs[0].text ?? "");
     expect(blob).toContain("holding you back");
+    expect(blob).toContain("a one line reply is all it takes");
     expect(blob).not.toContain("understand your portfolio tax position");
   });
 

@@ -37,7 +37,7 @@ import { copyAiEnabled } from "@/lib/leads/sequence-gen";
 import { verifyLead } from "@/lib/leads/verify";
 import { extractUkPhone } from "@/lib/leads/reply-extract";
 import { phoneMeetsFloor } from "@/lib/leads/field-floors";
-import { notifyOperatorOfReply } from "@/lib/leads/reply-ack";
+import { acknowledgeEmailReply, notifyOperatorOfReply } from "@/lib/leads/reply-ack";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -62,7 +62,7 @@ type InboundEmailPayload = {
 };
 
 // Opt-out detection lives in classifyEmailReplyIntent (reply-intent.ts): tiered
-// so our own quoted footer ("reply STOP") can never opt a lead out — the exact
+// so our own quoted footer ("reply STOP") can never opt a lead out, the exact
 // failure of 2026-07-03, when a Hotmail reply's unstripped quote did just that.
 
 // ── Lead resolution ───────────────────────────────────────────────────────────
@@ -97,7 +97,7 @@ function ok200(): Response {
 export async function POST(req: NextRequest) {
   const secret = process.env.LEAD_RESEND_INBOUND_SECRET;
   if (!secret) {
-    console.error("[leads/inbound/email] LEAD_RESEND_INBOUND_SECRET not set — refusing");
+    console.error("[leads/inbound/email] LEAD_RESEND_INBOUND_SECRET not set, refusing");
     return new Response("Service not configured", { status: 503 });
   }
 
@@ -219,6 +219,10 @@ export async function POST(req: NextRequest) {
       // Always surface the reply to the operator so a human sees exactly what the
       // prospect said (name, number, best time), whether or not it promoted.
       await notifyOperatorOfReply({ leadId, channel: "email", replyBody: strippedBody });
+      // Close the loop with the prospect: one short ack email confirming the
+      // reply landed and a specialist will call. Idempotent per lead, dormancy
+      // and test gated, fail-soft inside (never throws out of the webhook).
+      await acknowledgeEmailReply({ leadId });
     }
     // auto_responder: record nothing, fall through to 200.
   } catch (err) {

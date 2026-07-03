@@ -1,0 +1,37 @@
+PROPERTY TAX PARTNERS, LEAD NURTURE SMS COPY SHEET
+Updated 2026-07-03. Plain text reference for the two core SMS touches.
+Source of truth for send logic: Property/web/src/config/lead-nurture.ts
+
+
+1. FIRST SMS (key: t0_sms, sends at T0 alongside the T0 email)
+   STATUS: APPROVED, KEEP AS IS. Do not reword without owner sign-off.
+
+   Hi {firstName}, it's Property Tax Partners. Thanks for your enquiry about your property tax. Reply YES and one of our specialists will call you. Reply STOP to opt out.
+
+   Notes:
+   . 156 characters before the name is inserted, so it renders as two
+     segments for most names (161 with a 5 character name). Approved in
+     this form, leave it alone.
+   . Leads with reply YES, opt out sits last, per owner direction
+     (commit 7df4645c).
+
+
+2. NEW POST-YES ACKNOWLEDGMENT SMS (sends immediately when the lead replies YES)
+   STATUS: PROPOSED, reworded per owner brief of a warm confirmation.
+
+   Great, thank you {firstName}. One of our specialists will call you shortly. Nothing to prepare. Speak soon.
+
+   Nameless fallback (if no first name is held, drop the name and comma):
+
+   Great, thank you. One of our specialists will call you shortly. Nothing to prepare. Speak soon.
+
+   Notes:
+   . 96 characters before the name is inserted (101 with a 5 character
+     name), single segment for any realistic name. Nameless fallback is
+     95 characters.
+   . No dashes, no links, no exclamation marks.
+   . No STOP line here by design: the lead has just opted in by replying
+     YES, and the opt out instruction was already given in the first SMS.
+   . "Shortly" plus "Speak soon" avoids the "soon ... then" clash in the
+     owner's draft while keeping the same warm, brief tone. "Nothing to
+     prepare" mirrors the email copy and lowers call anxiety.

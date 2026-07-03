@@ -625,15 +625,18 @@ describe("QA gate: reminder copy", () => {
   const LABEL       = "Tue 14 Jul, morning (9am to 12pm)";
 
   it("T-24 email subject and paragraphs pass the QA gate", () => {
-    const subject    = "Your review call is tomorrow, Sam";
+    // Mirrors the live T-24 copy (approved preview booking_t24_reminder.html):
+    // reply-based, so no booking CTA link is required or present.
+    const subject    = "Your call is tomorrow, Sam";
     const paragraphs = [
-      `A quick reminder: your free property tax review call is booked for ${LABEL}. Your specialist will have read your enquiry before they ring.`,
-      `The call takes about 20 minutes and there is nothing to prepare. If the time no longer works, you can pick a new one here: ${BOOKING_URL}`,
+      "Your free property tax review call is tomorrow, in the morning, between 9am and 12pm.",
+      "One of our property tax specialists will ring you then. They will have read your enquiry before they call, the call takes about 20 minutes, and there is nothing to prepare.",
+      "If the time no longer works, just reply to this email and I will move it to one that does.",
     ];
     const result = qaGateMessage(
       "email",
       { subject, paragraphs },
-      { siteUrl: SITE_URL, requireBookingCta: true },
+      { siteUrl: SITE_URL, requireBookingCta: false },
     );
     if (!result.ok) console.error("QA failures:", result.failures);
     expect(result.ok).toBe(true);
@@ -669,9 +672,10 @@ describe("QA gate: reminder copy", () => {
 
   it("copy contains no em-dashes or en-dashes", () => {
     const allCopy = [
-      "Your review call is tomorrow, Sam",
-      `A quick reminder: your free property tax review call is booked for ${LABEL}. Your specialist will have read your enquiry before they ring.`,
-      `The call takes about 20 minutes and there is nothing to prepare. If the time no longer works, you can pick a new one here: ${BOOKING_URL}`,
+      "Your call is tomorrow, Sam",
+      "Your free property tax review call is tomorrow, in the morning, between 9am and 12pm.",
+      "One of our property tax specialists will ring you then. They will have read your enquiry before they call, the call takes about 20 minutes, and there is nothing to prepare.",
+      "If the time no longer works, just reply to this email and I will move it to one that does.",
       `Hi Sam, your free property tax review call is later today, ${LABEL}. Your specialist will call you then. Need a different time? ${BOOKING_URL} Reply STOP to opt out.`,
       `Looks like you started to pick a time, Sam. Anything I can make easier? Reply and I'll sort it. Or the slots are here: ${BOOKING_URL} Reply STOP to opt out.`,
     ].join(" ");

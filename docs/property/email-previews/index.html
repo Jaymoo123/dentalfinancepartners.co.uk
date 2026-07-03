@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Property Tax Partners - lead email previews</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f6f7f8;font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
+
+<div style="max-width:760px;margin:0 auto;padding:32px 16px 48px;">
+
+  <h1 style="margin:0 0 4px;font-size:24px;color:#0f172a;">Property Tax Partners - lead email previews</h1>
+  <p style="margin:0 0 28px;font-size:14px;color:#64748b;">Every nurture email in the lead pipeline. Each preview opens the rendered HTML with an annotation strip (key, timing, subject). Source of truth for send logic: <code style="font-family:Consolas,Menlo,monospace;font-size:13px;">Property/web/src/config/lead-nurture.ts</code></p>
+
+  <!-- Contactability -->
+  <h2 style="margin:0 0 4px;font-size:18px;color:#0f172a;border-bottom:2px solid #059669;padding-bottom:6px;">Contactability</h2>
+  <p style="margin:8px 0 12px;font-size:13px;color:#64748b;">Main chase for leads we can contact but have not yet reached. Goal: get a call booked.</p>
+
+  <table style="width:100%;border-collapse:collapse;background:#ffffff;border:1px solid #e5e7eb;border-radius:8px;font-size:14px;margin:0 0 32px;">
+    <tr style="background:#f8fafc;">
+      <th style="text-align:left;padding:10px 12px;border-bottom:1px solid #e5e7eb;color:#475569;font-size:12px;text-transform:uppercase;letter-spacing:0.05em;">Key</th>
+      <th style="text-align:left;padding:10px 12px;border-bottom:1px solid #e5e7eb;color:#475569;font-size:12px;text-transform:uppercase;letter-spacing:0.05em;">Subject</th>
+      <th style="text-align:left;padding:10px 12px;border-bottom:1px solid #e5e7eb;color:#475569;font-size:12px;text-transform:uppercase;letter-spacing:0.05em;">When it sends</th>
+    </tr>
+    <tr>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;white-space:nowrap;"><a href="t0_email.html" style="color:#059669;font-weight:600;text-decoration:none;">t0_email</a></td>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;">Got your enquiry, {firstName}</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;color:#64748b;">Instantly at enquiry submit (T0, delay 0h)</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;white-space:nowrap;"><a href="day2_give_email.html" style="color:#059669;font-weight:600;text-decoration:none;">day2_give_email</a></td>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;">One thing landlords often miss, {firstName}</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;color:#64748b;">48h after T0 (day 2, 24h after the day-1 SMS)</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;white-space:nowrap;"><a href="day7_email.html" style="color:#059669;font-weight:600;text-decoration:none;">day7_email</a></td>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;">Still here when you are, {firstName}</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;color:#64748b;">Day 7 (168h after T0, preferMonday so it lands early week); hesitation-aware copy</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 12px;white-space:nowrap;"><a href="breakup_day11.html" style="color:#059669;font-weight:600;text-decoration:none;">breakup_day11</a></td>
+      <td style="padding:10px 12px;">Last one from me, {firstName}</td>
+      <td style="padding:10px 12px;color:#64748b;">Day 11 (264h after T0); final email, sequence exhausts after this</td>
+    </tr>
+  </table>
+
+  <!-- Detail capture -->
+  <h2 style="margin:0 0 4px;font-size:18px;color:#0f172a;border-bottom:2px solid #059669;padding-bottom:6px;">Detail capture</h2>
+  <p style="margin:8px 0 12px;font-size:13px;color:#64748b;">For leads missing a name and/or phone number. The {ask} token recomputes per send. On exhaustion, a lead with a usable phone hands over to the contactability chase, otherwise marked unreachable.</p>
+
+  <table style="width:100%;border-collapse:collapse;background:#ffffff;border:1px solid #e5e7eb;border-radius:8px;font-size:14px;margin:0 0 32px;">
+    <tr style="background:#f8fafc;">
+      <th style="text-align:left;padding:10px 12px;border-bottom:1px solid #e5e7eb;color:#475569;font-size:12px;text-transform:uppercase;letter-spacing:0.05em;">Key</th>
+      <th style="text-align:left;padding:10px 12px;border-bottom:1px solid #e5e7eb;color:#475569;font-size:12px;text-transform:uppercase;letter-spacing:0.05em;">Subject</th>
+      <th style="text-align:left;padding:10px 12px;border-bottom:1px solid #e5e7eb;color:#475569;font-size:12px;text-transform:uppercase;letter-spacing:0.05em;">When it sends</th>
+    </tr>
+    <tr>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;white-space:nowrap;"><a href="detail_capture_t0.html" style="color:#059669;font-weight:600;text-decoration:none;">detail_capture_t0</a></td>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;">Got your message, one quick thing</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;color:#64748b;">Instantly at enquiry submit (delayHours 0)</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;white-space:nowrap;"><a href="detail_capture_day1.html" style="color:#059669;font-weight:600;text-decoration:none;">detail_capture_day1</a></td>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;">Still happy to help</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;color:#64748b;">24h after detail_capture_t0 (delayHours 24)</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;white-space:nowrap;"><a href="detail_capture_day3.html" style="color:#059669;font-weight:600;text-decoration:none;">detail_capture_day3</a></td>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;">One pointer while you decide</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;color:#64748b;">48h after day1 (cumulative 72h, day 3 after t0)</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 12px;white-space:nowrap;"><a href="detail_capture_day7.html" style="color:#059669;font-weight:600;text-decoration:none;">detail_capture_day7</a></td>
+      <td style="padding:10px 12px;">I'll leave it with you</td>
+      <td style="padding:10px 12px;color:#64748b;">168h after day3 (cumulative 240h, ~day 10; preferMonday so it lands early week)</td>
+    </tr>
+  </table>
+
+  <!-- Reminders and acknowledgments -->
+  <h2 style="margin:0 0 4px;font-size:18px;color:#0f172a;border-bottom:2px solid #059669;padding-bottom:6px;">Reminders and acknowledgments</h2>
+  <p style="margin:8px 0 12px;font-size:13px;color:#64748b;">Event-triggered sends outside the drip sequences.</p>
+
+  <table style="width:100%;border-collapse:collapse;background:#ffffff;border:1px solid #e5e7eb;border-radius:8px;font-size:14px;margin:0 0 32px;">
+    <tr style="background:#f8fafc;">
+      <th style="text-align:left;padding:10px 12px;border-bottom:1px solid #e5e7eb;color:#475569;font-size:12px;text-transform:uppercase;letter-spacing:0.05em;">Key</th>
+      <th style="text-align:left;padding:10px 12px;border-bottom:1px solid #e5e7eb;color:#475569;font-size:12px;text-transform:uppercase;letter-spacing:0.05em;">Subject</th>
+      <th style="text-align:left;padding:10px 12px;border-bottom:1px solid #e5e7eb;color:#475569;font-size:12px;text-transform:uppercase;letter-spacing:0.05em;">When it sends</th>
+    </tr>
+    <tr>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;white-space:nowrap;"><a href="booking_t24_reminder.html" style="color:#059669;font-weight:600;text-decoration:none;">booking_t24_reminder</a></td>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;">Your call is tomorrow, {firstName}</td>
+      <td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;color:#64748b;">Hourly cron scan; once, when now is within 24h before the booked slot (Europe/London windows)</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 12px;white-space:nowrap;"><a href="email_reply_ack.html" style="color:#059669;font-weight:600;text-decoration:none;">email_reply_ack</a></td>
+      <td style="padding:10px 12px;">Got your reply, {firstName}</td>
+      <td style="padding:10px 12px;color:#64748b;">Immediately after the prospect's email reply is captured</td>
+    </tr>
+  </table>
+
+  <!-- SMS copy -->
+  <h2 style="margin:0 0 4px;font-size:18px;color:#0f172a;border-bottom:2px solid #059669;padding-bottom:6px;">SMS copy</h2>
+  <p style="margin:8px 0 12px;font-size:14px;">
+    <a href="sms-copy.txt" style="color:#059669;font-weight:600;text-decoration:none;">sms-copy.txt</a>
+    <span style="color:#64748b;font-size:13px;"> &middot; plain-text copy sheet for the two core SMS touches: t0_sms (sends at T0 alongside the T0 email, approved) and the post-YES acknowledgment SMS (sends immediately when the lead replies YES, proposed)</span>
+  </p>
+
+</div>
+</body>
+</html>

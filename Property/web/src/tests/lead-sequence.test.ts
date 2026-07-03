@@ -190,11 +190,27 @@ describe("t0_email variants", () => {
     expect(msgs).toHaveLength(1);
     const m = msgs[0];
     expect(m.channel).toBe("email");
-    // Reply-based: no booking button, no links in the body.
+    // Reply-based: no booking button, no action links in the body. The fixed
+    // signature-block brand link is the only URL the branded shell may carry,
+    // so strip that exact href and require no other URL remains.
     expect(m.html).not.toContain("Pick a time for your review");
-    expect(m.html).not.toContain("http");
+    const htmlWithoutSignatureLink = (m.html ?? "")
+      .split('href="https://www.propertytaxpartners.co.uk"')
+      .join("");
+    expect(htmlWithoutSignatureLink).not.toContain("http");
     expect(m.text?.toLowerCase()).toContain("reply");
-    expect(m.html).toContain("The next step is a short call");
+    expect(m.html).toContain("The call is a free review of where you stand");
+  });
+
+  it("t0_email makes the call contingent on a reply (owner corrections)", () => {
+    const m = step.buildMessages(BRANDED_CTX)[0];
+    const blob = [m.subject, m.text].filter(Boolean).join("\n");
+    // Correction 1: never an unconditional call promise; a reply arranges the call.
+    expect(blob).toContain("we will arrange your call");
+    expect(blob.toLowerCase()).not.toContain("otherwise we will call");
+    expect(blob.toLowerCase()).not.toContain("otherwise i will call");
+    // Correction 2: any reply counts, it verifies the channel works.
+    expect(blob).toContain("Even a one-word reply is fine");
   });
 });
 
