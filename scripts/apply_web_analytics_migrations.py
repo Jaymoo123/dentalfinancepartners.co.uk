@@ -61,6 +61,10 @@ MIGRATIONS = [
     # Wave 2 observability v2: cron heartbeat cols, enrolled-cohort funnel,
     # step-health aux-sequence exclusion, opened/clicked on the health view.
     "20260702000003_lead_nurture_observability_v2.sql",
+    # Multi-sequence observability: step_health + stuck views gain a `sequence`
+    # dimension so property_contactability and property_detail_capture read apart.
+    "20260703000001_lead_nurture_multi_sequence_views.sql",
+    "20260703000002_lead_event_re_consented.sql",
 ]
 
 
