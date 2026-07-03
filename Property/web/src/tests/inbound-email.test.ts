@@ -109,6 +109,13 @@ vi.mock("@/lib/leads/verify", () => ({
   verifyLead: (...args: unknown[]) => mockVerifyLead(...args),
 }));
 
+// Resend's email.received payload is metadata-only; the route fetches the body
+// by email_id via fetchReceivedEmailText. Mock it so no network fires.
+const mockFetchReceivedText = vi.fn(async (_id: string) => "");
+vi.mock("@/lib/leads/inbound-content", () => ({
+  fetchReceivedEmailText: (id: string) => mockFetchReceivedText(id),
+}));
+
 // ── Imports (after mocks) ─────────────────────────────────────────────────────
 
 import {
@@ -116,7 +123,7 @@ import {
   recordResponseAndEvaluate,
 } from "@/lib/leads/contactability";
 import { POST } from "@/app/api/leads/inbound/email/route";
-import { stripQuotedHistory, extractEmail } from "@/lib/leads/email-parse";
+import { stripQuotedHistory, extractEmail, htmlToText } from "@/lib/leads/email-parse";
 
 // ── Fixtures ──────────────────────────────────────────────────────────────────
 
@@ -364,14 +371,18 @@ function inboundPayload(opts: {
   from?: string;
   subject?: string;
   text?: string;
+  email_id?: string;
+  /** Model the real Resend payload, which carries NO body (metadata only). */
+  omitText?: boolean;
 }): Record<string, unknown> {
   return {
     type: "email.received",
     data: {
+      ...(opts.email_id ? { email_id: opts.email_id } : {}),
       from: opts.from ?? `${SENDER}`,
       to: ["hello@propertytaxpartners.co.uk"],
       subject: opts.subject ?? "Re: Property tax",
-      text: opts.text ?? "Hello, I want to proceed.",
+      ...(opts.omitText ? {} : { text: opts.text ?? "Hello, I want to proceed." }),
     },
   };
 }
@@ -542,5 +553,99 @@ describe("inbound email route — phone capture from reply", () => {
 
     expect(mockVerifyLead).not.toHaveBeenCalled();
     expect(db.leads[0].phone).toBe("07811111111"); // unchanged
+  });
+});
+
+// ── Metadata-only payload: body fetched by email_id ──────────────────────────
+// The REAL Resend email.received event carries no body: only metadata plus an
+// email_id to fetch content with. These tests model that production shape.
+
+describe("inbound email route — metadata-only payload (email_id)", () => {
+  beforeEach(() => {
+    process.env.LEAD_RESEND_INBOUND_SECRET = "whsec_dGVzdA==";
+  });
+
+  it("fetches the body by email_id and captures the phone from it", async () => {
+    db.leads.push({ id: LID, status: "nurturing", email: SENDER, phone: "", full_name: "", source: "property" });
+    db.lead_nurture_state.push({ lead_id: LID, sequence: "property_detail_capture", step: 1, status: "active" });
+    mockClassify.mockResolvedValueOnce("genuine_reply");
+    mockFetchReceivedText.mockResolvedValueOnce("Hi, Alex here. Best number is 07700900000, Tuesday suits.");
+    mockVerifyLead.mockResolvedValueOnce({
+      phone: { status: "valid_mobile", line_type: "mobile", carrier: "EE", e164: "+447700900000" },
+      email: { status: "valid", domain: "example.com" },
+      verify_pass: true,
+      provider: "twilio",
+      raw: {},
+    });
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const res = await POST(makeReq(inboundPayload({ omitText: true, email_id: "rcv-1" })) as any);
+
+    expect(res.status).toBe(200);
+    expect(mockFetchReceivedText).toHaveBeenCalledWith("rcv-1");
+    expect(db.leads[0].phone).toBe("07700900000");
+    expect(db.leads[0].status).toBe("contactable");
+  });
+
+  it("keyword opt-out inside the fetched body stops the nurture", async () => {
+    db.leads.push({ id: LID, status: "nurturing", email: SENDER, phone: "", full_name: "", source: "property" });
+    db.lead_nurture_state.push({ lead_id: LID, sequence: "property_detail_capture", step: 1, status: "active" });
+    mockFetchReceivedText.mockResolvedValueOnce("Please unsubscribe me from these emails.");
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const res = await POST(makeReq(inboundPayload({ omitText: true, email_id: "rcv-2" })) as any);
+
+    expect(res.status).toBe(200);
+    expect(mockClassify).not.toHaveBeenCalled();
+    expect(db.lead_contact_events.some((e) => e.event_type === "opted_out")).toBe(true);
+    expect(db.leads[0].status).toBe("closed");
+  });
+
+  it("a failed body fetch still records the reply (fail-soft)", async () => {
+    db.leads.push({ id: LID, status: "nurturing", email: SENDER, phone: "", full_name: "", source: "property" });
+    db.lead_nurture_state.push({ lead_id: LID, sequence: "property_detail_capture", step: 1, status: "active" });
+    mockClassify.mockResolvedValueOnce("genuine_reply");
+    mockFetchReceivedText.mockResolvedValueOnce(""); // fetch failed -> empty body
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const res = await POST(makeReq(inboundPayload({ omitText: true, email_id: "rcv-3" })) as any);
+
+    expect(res.status).toBe(200);
+    expect(db.lead_contact_events.some((e) => e.event_type === "replied" && e.channel === "email")).toBe(true);
+    expect(mockVerifyLead).not.toHaveBeenCalled();
+  });
+
+  it("does not fetch when the payload already carries text", async () => {
+    db.leads.push({ id: LID, status: "nurturing", email: SENDER, phone: "07811111111", full_name: "Sam", source: "property" });
+    db.lead_nurture_state.push({ lead_id: LID, sequence: "property_contactability", step: 2, status: "active" });
+    db.lead_verification.push({ lead_id: LID, phone_status: "valid_mobile" });
+    mockClassify.mockResolvedValueOnce("genuine_reply");
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    await POST(makeReq(inboundPayload({ text: "Yes, Tuesday works.", email_id: "rcv-4" })) as any);
+
+    expect(mockFetchReceivedText).not.toHaveBeenCalled();
+  });
+});
+
+// ── htmlToText (fallback when the received email has no plain-text part) ─────
+
+describe("htmlToText", () => {
+  it("strips tags and keeps the phone number readable", () => {
+    const t = htmlToText("<div><p>Hi, Alex here.</p><p>Best number is <b>07700 900000</b>.</p></div>");
+    expect(t).toContain("Hi, Alex here.");
+    expect(t).toContain("07700 900000");
+    expect(t).not.toContain("<");
+  });
+
+  it("drops style and script content entirely", () => {
+    const t = htmlToText("<style>p{color:red}</style><script>alert(1)</script><p>unsubscribe</p>");
+    expect(t).not.toContain("color");
+    expect(t).not.toContain("alert");
+    expect(t).toContain("unsubscribe");
+  });
+
+  it("decodes common entities", () => {
+    expect(htmlToText("Tom &amp; Jerry &gt; cartoons")).toBe("Tom & Jerry > cartoons");
   });
 });

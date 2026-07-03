@@ -31,6 +31,7 @@ import { adminSelect, adminUpdate, adminInsert } from "@/lib/supabase/admin";
 import { classify } from "@/lib/ai/anthropic";
 import { recordResponseAndEvaluate, stopNurture } from "@/lib/leads/contactability";
 import { extractEmail, stripQuotedHistory } from "@/lib/leads/email-parse";
+import { fetchReceivedEmailText } from "@/lib/leads/inbound-content";
 import { copyAiEnabled } from "@/lib/leads/sequence-gen";
 import { verifyLead } from "@/lib/leads/verify";
 import { extractUkPhone } from "@/lib/leads/reply-extract";
@@ -43,6 +44,8 @@ export const dynamic = "force-dynamic";
 // ── Payload types ─────────────────────────────────────────────────────────────
 
 type InboundEmailData = {
+  /** Id of the received email; the body must be fetched with it (the webhook carries metadata only). */
+  email_id?: string;
   from?: string;
   to?: string | string[];
   subject?: string;
@@ -122,7 +125,14 @@ export async function POST(req: NextRequest) {
   const data = payload.data ?? {};
   const fromRaw = typeof data.from === "string" ? data.from : "";
   const subject = typeof data.subject === "string" ? data.subject : "";
-  const rawText = typeof data.text === "string" ? data.text : "";
+
+  // Resend's email.received payload is metadata-only: the body must be fetched
+  // by email_id. Keep the inline-text path first so a payload that does carry
+  // text (tests, future shapes) skips the extra call.
+  let rawText = typeof data.text === "string" ? data.text : "";
+  if (!rawText.trim() && typeof data.email_id === "string" && data.email_id) {
+    rawText = await fetchReceivedEmailText(data.email_id);
+  }
 
   const senderEmail = extractEmail(fromRaw);
   if (!senderEmail) return ok200();

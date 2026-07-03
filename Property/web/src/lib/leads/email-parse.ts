@@ -31,3 +31,26 @@ export function stripQuotedHistory(text: string, maxLen = 1000): string {
   const relevant = cutIdx === -1 ? lines : lines.slice(0, cutIdx);
   return relevant.join("\n").trim().slice(0, maxLen);
 }
+
+/**
+ * Crude HTML-to-text for received emails whose plain-text part is absent.
+ * Good enough for opt-out keyword matching, phone extraction and the operator
+ * forward; not a general-purpose renderer.
+ */
+export function htmlToText(html: string): string {
+  return html
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<\/(p|div|tr|li|h[1-6])>/gi, "\n")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&#39;|&apos;/gi, "'")
+    .replace(/&quot;/gi, '"')
+    .replace(/[ \t]+/g, " ")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
