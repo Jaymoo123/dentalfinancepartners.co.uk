@@ -146,3 +146,52 @@ export async function acknowledgeReply(opts: {
 
   return result;
 }
+
+/**
+ * Fire a capped operator notification with the verbatim reply body, for any
+ * channel. Used by the inbound EMAIL route so a human always sees what a prospect
+ * said (especially a detail-capture lead whose name/number arrive in the reply),
+ * whether or not the gate promoted. Idempotency/cap shares the operator_update
+ * event with acknowledgeReply. Never throws.
+ */
+export async function notifyOperatorOfReply(opts: {
+  leadId: string;
+  channel: "email" | "sms" | "whatsapp";
+  replyBody: string;
+}): Promise<boolean> {
+  try {
+    if (!opts.replyBody.trim() || !process.env.RESEND_API_KEY) return false;
+    const lead = await fetchLead(opts.leadId);
+    if (!lead || lead.source === "test") return false;
+    const priorUpdates = await countEvents(opts.leadId, "operator_update");
+    if (priorUpdates >= OPERATOR_UPDATE_CAP) return false;
+
+    const who = (lead.full_name || "").trim() || lead.email;
+    const quoted = opts.replyBody.slice(0, 500);
+    const esc = (s: string) =>
+      s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    const channelLabel =
+      opts.channel === "whatsapp" ? "WhatsApp" : opts.channel === "sms" ? "SMS" : "email";
+
+    const { error } = await getResend().emails.send({
+      from: getFromAddress(),
+      to: resolveLeadTo(lead.source),
+      subject: `Lead replied: ${who}`,
+      html: `<div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#0f172a;max-width:640px;">
+<p><strong>${esc(who)}</strong> replied by ${channelLabel}:</p>
+<div style="background:#f1f5f9;border-radius:6px;padding:10px 14px;font-style:italic;">&ldquo;${esc(quoted)}&rdquo;</div>
+<p style="font-size:13px;color:#64748b;">This reply may include their name, a phone number, or a preferred call time.</p>
+</div>`,
+      text: `${who} replied by ${channelLabel}: "${quoted}"`,
+    });
+    if (error) throw new Error(`operator reply notify error: ${JSON.stringify(error)}`);
+    await recordLeadContactEvent(opts.leadId, "operator_update", opts.channel, {
+      body: quoted,
+      kind: "reply",
+    });
+    return true;
+  } catch (err) {
+    console.error("[leads/reply-ack] notifyOperatorOfReply failed", err);
+    return false;
+  }
+}

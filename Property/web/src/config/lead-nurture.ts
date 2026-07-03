@@ -360,8 +360,8 @@ function emailMsg(
   paragraphs: string[],
   stepKey?: string,
   opts?: {
-    /** Override the primary CTA (default: book a time). */
-    cta?: { label: string; href: string };
+    /** Override the primary CTA (default: book a time). Pass null for a reply-only email (no button/link). */
+    cta?: { label: string; href: string } | null;
     /** Override the secondary one-tap link. Pass null to omit it entirely. */
     secondary?: { label: string; href: string } | null;
   },
@@ -374,9 +374,13 @@ function emailMsg(
   const finalParagraphs =
     gen?.paragraphs && gen.paragraphs.length > 0 ? gen.paragraphs : paragraphs;
 
-  const cta = opts?.cta ?? { label: "Pick a time for your review", href: ctx.bookingUrl };
-  // Default keeps the confirm link; opts.secondary === null omits it (detail-
-  // capture has nothing to confirm until we can actually reach the lead).
+  // undefined => default booking CTA; null => no CTA at all (reply-only email).
+  const cta =
+    opts?.cta === undefined
+      ? { label: "Pick a time for your review", href: ctx.bookingUrl }
+      : opts.cta;
+  // Default keeps the confirm link; opts.secondary === null omits it (reply-based
+  // emails have nothing to confirm via a link).
   const secondary =
     opts?.secondary === undefined
       ? { label: "confirm you would like a call", href: ctx.confirmUrl }
@@ -386,7 +390,7 @@ function emailMsg(
     preheader: finalPreheader,
     greeting: `Hi ${ctx.firstName},`,
     paragraphs: finalParagraphs,
-    cta,
+    ...(cta ? { cta } : {}),
     ...(secondary ? { secondary } : {}),
     signoff: SIGNOFF,
     footerNote: FOOTER,
@@ -440,13 +444,14 @@ const STEPS: LeadNurtureStep[] = [
       emailMsg(
         c,
         `Got your enquiry, ${c.firstName}. Here is what happens next.`,
-        "A property tax specialist will call. Pick a time that suits you.",
+        "A property tax specialist will call. Just reply to arrange a time.",
         [
           "Thanks for getting in touch. We have received your enquiry and a property tax specialist will be glad to help.",
-          "The next step is a short call. There is no charge and no obligation, and it is genuinely useful even if you decide to do nothing afterwards. Just pick a time that suits you below. It takes under a minute and you will get a confirmation straight away.",
-          "If you would rather we called you, tap the confirm link and we will be in touch.",
+          "The next step is a short call. There is no charge and no obligation, and it is genuinely useful even if you decide to do nothing afterwards. Just reply to this email with a day and time that suits you, and a specialist will call you then.",
+          "Or if you would rather we simply called you, reply with the best number to reach you on and we will do the rest.",
         ],
         "t0_email",
+        { cta: null, secondary: null },
       ),
     ],
   },
@@ -460,7 +465,7 @@ const STEPS: LeadNurtureStep[] = [
       smsMsgWithGen(
         c,
         "t0_sms",
-        `Hi ${c.firstName}, it's Property Tax Partners. Thanks for your enquiry about your property tax. Reply YES and one of our specialists will call you, or pick a time here: ${c.bookingUrl} ${c.optOutText}`,
+        `Hi ${c.firstName}, it's Property Tax Partners. Thanks for your enquiry about your property tax. Reply YES and one of our specialists will call you. ${c.optOutText}`,
       ),
       whatsappTemplate("lead_welcome", [c.firstName, c.bookingUrl]),
     ],
@@ -477,7 +482,7 @@ const STEPS: LeadNurtureStep[] = [
         smsMsgWithGen(
           c,
           "vip_sameday",
-          `Hi ${c.firstName}, Property Tax Partners again. Enquiries like yours are exactly what our senior specialists handle, so we have set aside time this week. Pick whichever slot suits: ${c.bookingUrl} or reply YES. ${c.optOutText}`,
+          `Hi ${c.firstName}, Property Tax Partners again. Enquiries like yours are exactly what our senior specialists handle, so we have set aside time this week. Reply YES and a specialist will call you. ${c.optOutText}`,
         ),
       ];
     },
@@ -492,7 +497,7 @@ const STEPS: LeadNurtureStep[] = [
       smsMsgWithGen(
         c,
         "day1_sms",
-        `Hi ${c.firstName}, following up on your property tax enquiry. We have kept some specialist time free this week for a short call. Grab whichever slot suits: ${c.bookingUrl} ${c.optOutText}`,
+        `Hi ${c.firstName}, following up on your property tax enquiry. We have kept some specialist time free this week for a short call. Reply YES and we will call you. ${c.optOutText}`,
       ),
       whatsappTemplate("lead_reminder", [c.firstName, c.bookingUrl]),
     ],
@@ -503,25 +508,21 @@ const STEPS: LeadNurtureStep[] = [
     key: "day2_give_email",
     delayHours: 24,
     channels: ["email"],
-    buildMessages: (c) => {
-      const calcPara =
-        c.calculatorName && c.calculatorUrl
-          ? `First, if it helps to see rough numbers for yourself, our ${c.calculatorName} lets you plug in your own figures in a few minutes: ${c.calculatorUrl}. It is a starting point, not advice, but it usually sharpens the questions worth asking.`
-          : `First, so you can get the most from it, it helps to have a rough idea of your figures to hand: what the property or portfolio brings in, what it costs, and any mortgage interest. Nothing formal, the specialist works with whatever you have.`;
-      return [
-        emailMsg(
-          c,
-          `Two things worth having to hand for your call, ${c.firstName}`,
-          "A quick way to see your own numbers before we speak.",
-          [
-            "While you decide on a time, here are a couple of things that make these calls more useful.",
-            calcPara,
-            "Second, so you know what to expect, your review will cover: where you stand today, the options that realistically apply to someone in your position, and the one or two things worth doing next. No jargon, and nothing to prepare.",
-          ],
-          "day2_give_email",
-        ),
-      ];
-    },
+    buildMessages: (c) => [
+      emailMsg(
+        c,
+        `Two things worth having to hand for your call, ${c.firstName}`,
+        "A couple of things that make the call more useful.",
+        [
+          "While we line up your call, here are a couple of things that make these conversations more useful.",
+          "First, so you can get the most from it, it helps to have a rough idea of your figures to hand: what the property or portfolio brings in, what it costs, and any mortgage interest. Nothing formal, the specialist works with whatever you have.",
+          "Second, so you know what to expect, your review will cover: where you stand today, the options that realistically apply to someone in your position, and the one or two things worth doing next. No jargon, and nothing to prepare.",
+          "Whenever you are ready, just reply with a day and time that suits and a specialist will call you.",
+        ],
+        "day2_give_email",
+        { cta: null, secondary: null },
+      ),
+    ],
   },
 
   // ── Step 5: Day 4 SMS + WhatsApp ──────────────────────────────────────────
@@ -535,8 +536,8 @@ const STEPS: LeadNurtureStep[] = [
     buildMessages: (c) => {
       const smsBody =
         c.engagementVariant === "hesitation"
-          ? `Hi ${c.firstName}, Property Tax Partners here. Picking a time is quick and truly no-strings: if the call does not help, you have lost 20 minutes and owe nothing. Slots here: ${c.bookingUrl} or reply YES. Reply STOP to opt out.`
-          : `Hi ${c.firstName}, Property Tax Partners here. Most landlords we speak to came to us with the same question you raised, and one short call usually clears up months of second-guessing. Happy to do the same for you: ${c.bookingUrl} or reply YES. ${c.optOutText}`;
+          ? `Hi ${c.firstName}, Property Tax Partners here. A quick call is truly no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and a specialist will call you. Reply STOP to opt out.`
+          : `Hi ${c.firstName}, Property Tax Partners here. Most landlords we speak to came to us with the same question you raised, and one short call usually clears up months of second-guessing. Reply YES and we will call you. ${c.optOutText}`;
       return [
         smsMsgWithGen(c, "day4_sms", smsBody),
         whatsappTemplate("lead_reminder", [c.firstName, c.bookingUrl]),
@@ -563,7 +564,7 @@ const STEPS: LeadNurtureStep[] = [
       if (c.engagementVariant === "channel_shift") {
         return [
           smsMsg(
-            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free property tax review is still open: ${c.bookingUrl} or reply YES. Reply STOP to opt out.`,
+            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free property tax review is still open. Reply YES and a specialist will call you. Reply STOP to opt out.`,
           ),
         ];
       }
@@ -572,7 +573,7 @@ const STEPS: LeadNurtureStep[] = [
       const p2 =
         c.engagementVariant === "hesitation"
           ? `If something is holding you back, reply and tell us. There is no cost, no obligation, and no hard sell on the call, it is genuinely just a review of where you stand.`
-          : `If a short call would help, it is one decision and a minute to book. And if you would rather we called you, tap the confirm link and we will be in touch.`;
+          : `If a short call would help, just reply with a day and time that suits, or the best number to reach you on, and a specialist will call you. No forms, no fuss.`;
 
       return [
         emailMsg(
@@ -584,6 +585,7 @@ const STEPS: LeadNurtureStep[] = [
             p2,
           ],
           "day7_email",
+          { cta: null, secondary: null },
         ),
       ];
     },
@@ -602,9 +604,10 @@ const STEPS: LeadNurtureStep[] = [
         [
           "We have reached out a few times about your enquiry, so we will stop the reminders now and leave the ball in your court. No hard feelings at all.",
           "One parting thought that costs nothing: if your situation changes, the moments most worth a quick review are usually a new purchase, a sale, or the arrival of your Self Assessment bill. Whenever one of those lands, we are one message away and the review is still free.",
-          "Your booking link stays live below. All the best with your property.",
+          "You can reply to this email any time and we will pick it straight back up. All the best with your property.",
         ],
         "breakup_day11",
+        { cta: null, secondary: null },
       ),
     ],
   },
@@ -675,11 +678,6 @@ function detailAsk(c: LeadMessageContext): string {
   return c.missingPhrase && c.missingPhrase.trim() ? c.missingPhrase : "your details";
 }
 
-/** The detail-capture CTA: label matches the missing field(s), href = /complete link. */
-function detailCta(c: LeadMessageContext): { label: string; href: string } {
-  return { label: ctaLabelFor(c.missingFields), href: c.detailsUrl || `${base()}/contact` };
-}
-
 /**
  * Opening line. When contactUnasked (the capture form did not ask for the missing
  * field, e.g. the specialist widget), OWN the gap so the lead never feels blamed
@@ -705,11 +703,11 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           `So a specialist can get back to you, could you share ${ask}?`,
           [
             detailIntro(c),
-            `So we know who we are speaking to and can get back to you properly, could you add ${ask}? There is nothing else to fill in and it takes under a minute.`,
-            "Just use the button below and a specialist will take it from there.",
+            `So we know who we are speaking to and can get back to you properly, just reply to this email with ${ask}. It takes a few seconds and there is nothing else to do.`,
+            "Reply whenever it suits and a specialist will take it from there.",
           ],
           "detail_capture_t0",
-          { cta: detailCta(c), secondary: null },
+          { cta: null, secondary: null },
         ),
       ];
     },
@@ -727,11 +725,11 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "A specialist has time set aside this week.",
           [
             "Just following up on the message you sent us. A specialist has time set aside this week for a short call about your property tax, whenever suits you.",
-            `The only thing we need to set it up is ${ask}, so we know who we are speaking to. You can add it below in a few seconds.`,
+            `The only thing we need to set it up is ${ask}, so we know who we are speaking to. Just reply to this email and a specialist will call you.`,
             "There is no cost and no obligation at any point.",
           ],
           "detail_capture_day1",
-          { cta: detailCta(c), secondary: null },
+          { cta: null, secondary: null },
         ),
       ];
     },
@@ -746,14 +744,14 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
         emailMsg(
           c,
           "A minute now and a specialist can take it from there",
-          `Add ${ask} and we will do the rest.`,
+          `Reply with ${ask} and we will do the rest.`,
           [
             "Most people who ask us the kind of question you did get a genuinely useful answer from one short call.",
-            `To set that up, we just need ${ask}. Pop it in below and a specialist will pick it up from there.`,
-            "If now is not the right time, that is completely fine. The link stays live whenever you are ready.",
+            `To set that up, we just need ${ask}. Just reply to this email and a specialist will pick it up from there.`,
+            "If now is not the right time, that is completely fine. Reply whenever you are ready.",
           ],
           "detail_capture_day3",
-          { cta: detailCta(c), secondary: null },
+          { cta: null, secondary: null },
         ),
       ];
     },
@@ -772,11 +770,11 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "The door stays open whenever the timing is right.",
           [
             "We have reached out a couple of times about your message, so we will leave it with you now.",
-            `If you would still like that free review, the only thing we need is ${ask}, and the link below stays live.`,
+            `If you would still like that free review, just reply with ${ask} whenever it suits.`,
             "Whenever your situation changes, a new purchase, a sale, or a Self Assessment bill, we are one message away. All the best with your property.",
           ],
           "detail_capture_day7",
-          { cta: detailCta(c), secondary: null },
+          { cta: null, secondary: null },
         ),
       ];
     },

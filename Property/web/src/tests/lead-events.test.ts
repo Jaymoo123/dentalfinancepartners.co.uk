@@ -368,7 +368,7 @@ describe("day4_sms copy variants", () => {
     const msgs = step.buildMessages({ ...BASE_CTX, engagementVariant: "hesitation" });
     const sms = msgs.find((m) => m.channel === "sms");
     expect(sms?.body).toContain("no-strings");
-    expect(sms?.body).toContain(BASE_CTX.bookingUrl);
+    expect(sms?.body?.toUpperCase()).toContain("REPLY YES");
     expect(sms?.body).toContain("Reply STOP");
   });
 
@@ -431,7 +431,7 @@ describe("day7_email copy variants", () => {
     expect(msgs).toHaveLength(1);
     expect(msgs[0].channel).toBe("sms");
     expect(msgs[0].body).toContain("our emails may not be reaching you");
-    expect(msgs[0].body).toContain(BASE_CTX.bookingUrl);
+    expect(msgs[0].body?.toUpperCase()).toContain("REPLY YES");
     expect(msgs[0].body).toContain("Reply STOP");
   });
 

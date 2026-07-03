@@ -83,18 +83,17 @@ describe("buildPropertyLeadNurtureConfigs", () => {
   });
 });
 
-describe("field-aware copy", () => {
+describe("field-aware, reply-based copy", () => {
   for (const [name, c] of VARIANTS) {
-    it(`references the missing phrase and points the CTA at /complete (${name})`, () => {
+    it(`references the missing phrase and contains NO links, just reply (${name})`, () => {
       for (const step of steps) {
         for (const m of step.buildMessages(c)) {
           const text = [m.subject, m.text].filter(Boolean).join("\n");
           expect(text, `${step.key} mentions the ask`).toContain(c.missingPhrase);
-          // CTA is the /complete link, never the booking link.
-          expect(m.text, `${step.key} CTA href`).toContain(DETAILS_URL);
-          expect(m.text, `${step.key} no booking CTA`).not.toContain("/book?t=");
-          // No secondary confirm link on detail-capture emails.
-          expect(m.html, `${step.key} no confirm secondary`).not.toContain("confirm here");
+          // Reply-based: no links to on-site forms anywhere in the email body.
+          expect(m.html, `${step.key} html has no link`).not.toContain("http");
+          expect(m.text, `${step.key} text has no link`).not.toContain("http");
+          expect(m.text?.toLowerCase(), `${step.key} asks them to reply`).toContain("reply");
         }
       }
     });

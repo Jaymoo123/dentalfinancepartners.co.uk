@@ -27,11 +27,15 @@
 
 import { type NextRequest } from "next/server";
 import { verifyResendWebhook } from "@accounting-network/web-shared/nurture/webhook";
-import { adminSelect } from "@/lib/supabase/admin";
+import { adminSelect, adminUpdate, adminInsert } from "@/lib/supabase/admin";
 import { classify } from "@/lib/ai/anthropic";
 import { recordResponseAndEvaluate, stopNurture } from "@/lib/leads/contactability";
 import { extractEmail, stripQuotedHistory } from "@/lib/leads/email-parse";
 import { copyAiEnabled } from "@/lib/leads/sequence-gen";
+import { verifyLead } from "@/lib/leads/verify";
+import { extractUkPhone } from "@/lib/leads/reply-extract";
+import { phoneMeetsFloor } from "@/lib/leads/field-floors";
+import { notifyOperatorOfReply } from "@/lib/leads/reply-ack";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -59,16 +63,22 @@ const OPT_OUT_RE =
 
 // ── Lead resolution ───────────────────────────────────────────────────────────
 
-type LeadRow = { id: string };
+type LeadRow = {
+  id: string;
+  full_name: string | null;
+  email: string;
+  phone: string | null;
+  source: string;
+};
 
-async function resolveLeadByEmail(senderEmail: string): Promise<string | null> {
+async function resolveLeadByEmail(senderEmail: string): Promise<LeadRow | null> {
   const res = await adminSelect<LeadRow>("leads", {
-    select: "id",
+    select: "id,full_name,email,phone,source",
     email: `eq.${senderEmail}`,
     order: "created_at.desc",
     limit: "1",
   });
-  if (res.ok && res.data.length > 0) return res.data[0].id;
+  if (res.ok && res.data.length > 0) return res.data[0];
   return null;
 }
 
@@ -120,13 +130,14 @@ export async function POST(req: NextRequest) {
   const strippedBody = stripQuotedHistory(rawText);
 
   // Resolve sender to a Property lead (most recent match wins).
-  let leadId: string | null = null;
+  let lead: LeadRow | null = null;
   try {
-    leadId = await resolveLeadByEmail(senderEmail);
+    lead = await resolveLeadByEmail(senderEmail);
   } catch (err) {
     console.error("[leads/inbound/email] resolveLeadByEmail failed", err);
   }
-  if (!leadId) return ok200();
+  if (!lead) return ok200();
+  const leadId = lead.id;
 
   try {
     // Detect opt-out by keyword BEFORE calling the AI (avoids unnecessary API spend).
@@ -162,9 +173,43 @@ export async function POST(req: NextRequest) {
     if (effective === "opt_out") {
       await stopNurture(leadId, "email");
     } else if (effective === "genuine_reply") {
+      // If the lead has no usable phone yet, capture one from the reply so the gate
+      // can promote (detail-capture leads reply with their number). Deterministic
+      // extraction, no third party; Twilio Lookup verifies it, so a wrong grab just
+      // fails verification and does not promote.
+      if (!phoneMeetsFloor(lead.phone)) {
+        const extracted = extractUkPhone(strippedBody);
+        if (extracted) {
+          try {
+            await adminUpdate("leads", { id: `eq.${leadId}` }, { phone: extracted });
+            const v = await verifyLead({ email: lead.email, phone: extracted });
+            await adminInsert(
+              "lead_verification",
+              {
+                lead_id: leadId,
+                phone_status: v.phone.status,
+                phone_line_type: v.phone.line_type,
+                phone_carrier: v.phone.carrier,
+                phone_e164: v.phone.e164,
+                email_status: v.email.status,
+                email_domain: v.email.domain,
+                verify_pass: v.verify_pass,
+                provider: v.provider,
+                raw: v.raw,
+              },
+              { onConflict: "lead_id" },
+            );
+          } catch (e) {
+            console.error("[leads/inbound/email] phone capture failed", e);
+          }
+        }
+      }
       await recordResponseAndEvaluate(leadId, "replied", "email", {
         body: strippedBody.slice(0, 300),
       });
+      // Always surface the reply to the operator so a human sees exactly what the
+      // prospect said (name, number, best time), whether or not it promoted.
+      await notifyOperatorOfReply({ leadId, channel: "email", replyBody: strippedBody });
     }
     // auto_responder: record nothing, fall through to 200.
   } catch (err) {

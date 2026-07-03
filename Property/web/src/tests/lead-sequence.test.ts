@@ -144,9 +144,10 @@ describe("no em/en dash in copy", () => {
 describe("SMS messages", () => {
   const smsMsgs = steps.flatMap((s) => s.buildMessages(VIP_CTX)).filter((m) => m.channel === "sms");
 
-  it("every SMS contains the booking URL", () => {
+  it("every SMS is reply-based (Reply YES) with no booking link", () => {
     for (const m of smsMsgs) {
-      expect(m.body, `SMS body must contain booking URL`).toContain(VIP_CTX.bookingUrl);
+      expect(m.body?.toUpperCase(), `SMS must invite a reply`).toContain("REPLY YES");
+      expect(m.body, `SMS must not link to a form`).not.toContain("/book");
     }
   });
 
@@ -184,13 +185,15 @@ describe("vip_sameday", () => {
 describe("t0_email variants", () => {
   const step = steps.find((s) => s.key === "t0_email")!;
 
-  it("t0_email produces the single standard message with a CTA button", () => {
+  it("t0_email is a single reply-based email with no link", () => {
     const msgs = step.buildMessages(BRANDED_CTX);
     expect(msgs).toHaveLength(1);
     const m = msgs[0];
     expect(m.channel).toBe("email");
-    // The T0 A/B was retired: everyone now gets the standard CTA email.
-    expect(m.html).toContain("Pick a time for your review");
+    // Reply-based: no booking button, no links in the body.
+    expect(m.html).not.toContain("Pick a time for your review");
+    expect(m.html).not.toContain("http");
+    expect(m.text?.toLowerCase()).toContain("reply");
     expect(m.html).toContain("The next step is a short call");
   });
 });
@@ -239,7 +242,7 @@ describe("generatedCopy override", () => {
     const step = steps.find((s) => s.key === "day1_sms")!;
     const msgs = step.buildMessages(ctxNoGen);
     const sms = msgs.find((m) => m.channel === "sms");
-    expect(sms?.body).toContain(BASE_CTX.bookingUrl);
+    expect(sms?.body).toContain("Reply YES");
     expect(sms?.body).not.toContain("GENERATED");
   });
 });

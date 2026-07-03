@@ -252,12 +252,13 @@ describe("Property contactability sequence (golden)", () => {
     }
   });
 
-  it("sms messages carry the booking link and an opt-out", () => {
+  it("sms messages are reply-based (Reply YES) with an opt-out", () => {
     const smsMsgs = steps.flatMap((s) => s.buildMessages(ctx)).filter((m) => m.channel === "sms");
     expect(smsMsgs.length).toBeGreaterThan(0);
     // Step 1 (t0_sms) is the instant SMS touch
     const instantSms = steps[1].buildMessages(ctx).find((m) => m.channel === "sms");
-    expect(instantSms?.body).toContain(ctx.bookingUrl);
+    expect(instantSms?.body?.toUpperCase()).toContain("REPLY YES");
+    expect(instantSms?.body).not.toContain("/book");
     expect(instantSms?.body?.toUpperCase()).toContain("STOP");
   });
 

@@ -15,15 +15,20 @@ export interface LeadServiceEmail {
   greeting: string;
   /** Body paragraphs, plain text (rendered as <p>). */
   paragraphs: string[];
-  /** Primary call to action (book a time). */
-  cta: { label: string; href: string };
+  /** Optional primary call to action (a button). Omit entirely for a reply-only email. */
+  cta?: { label: string; href: string };
   /** Optional secondary one-tap link (confirm). */
   secondary?: { label: string; href: string };
   /** Sign-off name/line. */
   signoff: string;
   /** Small print under the signature (why they are receiving this). */
   footerNote: string;
-  /** Optional one-click opt-out URL, rendered as a linked "Opt out" in the footer. */
+  /**
+   * When set, the email is opt-out-eligible: a "reply STOP" line is shown in the
+   * footer and the caller adds the List-Unsubscribe header. Kept as a URL because
+   * the machine one-click header (built by the caller) points at it; the visible
+   * footer no longer renders it as a link (reply-based opt-out instead).
+   */
   optOutUrl?: string;
 }
 
@@ -50,13 +55,13 @@ export function renderLeadServiceEmail(e: LeadServiceEmail): { html: string; tex
 <tr><td>
 <p style="margin:0 0 18px;font-weight:700;">${esc(e.greeting)}</p>
 ${paras}
-<table role="presentation" cellpadding="0" cellspacing="0" style="margin:22px 0;"><tr><td>
+${e.cta ? `<table role="presentation" cellpadding="0" cellspacing="0" style="margin:22px 0;"><tr><td>
 <a href="${e.cta.href}" style="display:inline-block;background:#047857;color:#ffffff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:6px;">${esc(e.cta.label)}</a>
-</td></tr></table>
+</td></tr></table>` : ""}
 ${secondary}
 <p style="margin:22px 0 0;">${esc(e.signoff)}</p>
 <hr style="border:none;border-top:1px solid #e5e7eb;margin:24px 0 12px;">
-<p style="margin:0;font-size:12px;color:#64748b;">${esc(e.footerNote)}${e.optOutUrl ? ` <a href="${e.optOutUrl}" style="color:#64748b;text-decoration:underline;">Opt out of these emails</a>.` : ""}</p>
+<p style="margin:0;font-size:12px;color:#64748b;">${esc(e.footerNote)}${e.optOutUrl ? " To opt out, just reply STOP." : ""}</p>
 </td></tr>
 </table>
 </td></tr>
@@ -68,13 +73,13 @@ ${secondary}
     "",
     ...e.paragraphs,
     "",
-    `${e.cta.label}: ${e.cta.href}`,
+    ...(e.cta ? [`${e.cta.label}: ${e.cta.href}`] : []),
     ...(e.secondary ? [`${e.secondary.label}: ${e.secondary.href}`] : []),
     "",
     e.signoff,
     "",
     e.footerNote,
-    ...(e.optOutUrl ? ["", `Opt out of these emails: ${e.optOutUrl}`] : []),
+    ...(e.optOutUrl ? ["", "To opt out, just reply STOP."] : []),
   ];
   return { html, text: textLines.join("\n") };
 }

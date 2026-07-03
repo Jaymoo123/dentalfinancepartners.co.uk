@@ -142,14 +142,6 @@ async function markSendStatus(
 // URL builders
 // ---------------------------------------------------------------------------
 
-function buildBookingUrl(leadId: string, base: string): string {
-  try {
-    return `${base}/book?t=${encodeURIComponent(mintLeadToken(leadId, "book"))}`;
-  } catch {
-    return `${base}/contact`;
-  }
-}
-
 function buildOptOutUrl(leadId: string, base: string): string {
   try {
     return `${base}/api/leads/optout/${mintLeadToken(leadId, "optout")}`;
@@ -256,7 +248,6 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
         if (slotStartMs <= now) continue;
 
         const firstName  = firstNameOf(lead.full_name);
-        const bookingUrl = buildBookingUrl(leadId, siteUrl);
         const optOutUrl  = buildOptOutUrl(leadId, siteUrl);
         const label      = meta.start || `${meta.window} on ${meta.date}`;
         const sequence   = `booking_reminder:${meta.date}:${meta.window}`;
@@ -272,9 +263,8 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
                 greeting: `Hi ${firstName},`,
                 paragraphs: [
                   `A quick reminder: your free property tax review call is booked for ${label}. Your specialist will have read your enquiry before they ring.`,
-                  `The call takes about 20 minutes and there is nothing to prepare. If the time no longer works, you can pick a new one here: ${bookingUrl}`,
+                  "The call takes about 20 minutes and there is nothing to prepare. If the time no longer works, just reply to this email and we will rearrange it.",
                 ],
-                cta: { label: "Pick a different time", href: bookingUrl },
                 signoff: SIGNOFF,
                 footerNote: FOOTER,
                 ...(optOutUrl ? { optOutUrl } : {}),
@@ -319,7 +309,7 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
               try {
                 const body =
                   `Hi ${firstName}, your free property tax review call is later today, ${label}. ` +
-                  `Your specialist will call you then. Need a different time? ${bookingUrl} Reply STOP to opt out.`;
+                  `Your specialist will call you then. Need a different time? Just reply and we will rearrange. Reply STOP to opt out.`;
 
                 const result = await sender.send({
                   channel: "sms",
@@ -432,10 +422,9 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
 
             try {
               const firstName  = firstNameOf(lead.full_name);
-              const bookingUrl = buildBookingUrl(lead.id, siteUrl);
               const body =
-                `Looks like you started to pick a time, ${firstName}. Anything I can make easier? ` +
-                `Reply and I'll sort it. Or the slots are here: ${bookingUrl} Reply STOP to opt out.`;
+                `Looks like you started to arrange a time, ${firstName}. Anything I can make easier? ` +
+                `Just reply and I'll sort it. Reply STOP to opt out.`;
 
               const result = await sender.send({
                 channel: "sms",

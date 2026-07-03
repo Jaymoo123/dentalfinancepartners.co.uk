@@ -101,6 +101,14 @@ vi.mock("@/lib/ai/anthropic", () => ({
   anthropicConfigured: () => true,
 }));
 
+// verifyLead is only invoked when a phone is captured from a reply body; mock it
+// so no real Twilio Lookup fires. Existing tests never trigger it (their bodies
+// carry no phone), so this is inert for them.
+const mockVerifyLead = vi.fn();
+vi.mock("@/lib/leads/verify", () => ({
+  verifyLead: (...args: unknown[]) => mockVerifyLead(...args),
+}));
+
 // ── Imports (after mocks) ─────────────────────────────────────────────────────
 
 import {
@@ -491,5 +499,48 @@ describe("inbound email route — POST", () => {
     const res = await POST(makeReq(inboundPayload({})) as any);
 
     expect(res.status).toBe(503);
+  });
+});
+
+// ── Phone capture from a reply body ──────────────────────────────────────────
+
+describe("inbound email route — phone capture from reply", () => {
+  beforeEach(() => {
+    process.env.LEAD_RESEND_INBOUND_SECRET = "whsec_dGVzdA==";
+  });
+
+  it("captures + verifies a phone from a phone-less lead's reply and promotes", async () => {
+    db.leads.push({ id: LID, status: "nurturing", email: SENDER, phone: "", full_name: "", source: "property" });
+    db.lead_nurture_state.push({ lead_id: LID, sequence: "property_detail_capture", step: 1, status: "active" });
+    mockClassify.mockResolvedValueOnce("genuine_reply");
+    mockVerifyLead.mockResolvedValueOnce({
+      phone: { status: "valid_mobile", line_type: "mobile", carrier: "EE", e164: "+447700900000" },
+      email: { status: "valid", domain: "example.com" },
+      verify_pass: true,
+      provider: "twilio",
+      raw: {},
+    });
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const res = await POST(makeReq(inboundPayload({ text: "Hi, it's Sam. My number is 07700900000, call me Tuesday." })) as any);
+
+    expect(res.status).toBe(200);
+    expect(db.leads[0].phone).toBe("07700900000");
+    expect(mockVerifyLead).toHaveBeenCalledWith(expect.objectContaining({ phone: "07700900000" }));
+    // Phone now verified + replied by email -> promoted.
+    expect(db.leads[0].status).toBe("contactable");
+  });
+
+  it("does not extract or verify when the lead already has a usable phone", async () => {
+    db.leads.push({ id: LID, status: "nurturing", email: SENDER, phone: "07811111111", full_name: "Sam", source: "property" });
+    db.lead_nurture_state.push({ lead_id: LID, sequence: "property_contactability", step: 2, status: "active" });
+    db.lead_verification.push({ lead_id: LID, phone_status: "valid_mobile" });
+    mockClassify.mockResolvedValueOnce("genuine_reply");
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    await POST(makeReq(inboundPayload({ text: "Yes please, Tuesday afternoon works." })) as any);
+
+    expect(mockVerifyLead).not.toHaveBeenCalled();
+    expect(db.leads[0].phone).toBe("07811111111"); // unchanged
   });
 });

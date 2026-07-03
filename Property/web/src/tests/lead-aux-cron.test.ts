@@ -333,7 +333,7 @@ describe("Scan A: T-24 email", () => {
     expect(mockSend).not.toHaveBeenCalled();
   });
 
-  it("email contains the booking URL", async () => {
+  it("T-24 email is reply-based with no booking link", async () => {
     vi.useFakeTimers();
     vi.setSystemTime(new Date("2026-07-03T10:00:00.000Z"));
 
@@ -345,7 +345,8 @@ describe("Scan A: T-24 email", () => {
     const emailCall = mockSend.mock.calls.find((c) => c[0].channel === "email");
     expect(emailCall).toBeDefined();
     const bodyText: string = emailCall![0].text ?? emailCall![0].html ?? "";
-    expect(bodyText).toContain("/book");
+    expect(bodyText).not.toContain("/book");
+    expect(bodyText.toLowerCase()).toContain("reply");
     expect(bodyText).not.toContain("/api/leads/ics");
   });
 });
@@ -502,7 +503,7 @@ describe("Scan B: abandoned-booking nudge", () => {
 
     const smsSends = mockSend.mock.calls.filter((c) => c[0].channel === "sms");
     expect(smsSends).toHaveLength(1);
-    expect(smsSends[0][0].body).toContain("started to pick a time");
+    expect(smsSends[0][0].body).toContain("started to arrange a time");
     expect(smsSends[0][0].body).toContain("STOP");
     expect(result.nudges).toBe(1);
   });
