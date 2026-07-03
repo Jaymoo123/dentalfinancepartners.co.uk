@@ -20,6 +20,8 @@ The psychology and UX layer (built 2026-07-02) sits on top of the core system an
 
 An ordered set of 8 steps (including the optional VIP step) fires over approximately 11 days. Any two-way response (reply, booking, or one-tap confirmation) halts the sequence and promotes the lead to `contactable`. The sequence name is `property_contactability`.
 
+This is the primary sequence for leads that arrive with a name and a usable phone. Since 2026-07-03 there is a SECOND primary sequence, `property_detail_capture`, for email-only leads missing a name and/or phone (an email-only chase that collects the missing detail(s), then routes the lead into the standard flow). `routePrimarySequence(lead)` in `Property/web/src/config/lead-nurture.ts` selects the sequence from the lead's missing contact fields. The per-touch design of `property_detail_capture`, the phone-aware exhaustion rule, and the cross-sequence gate/opt-out handling are documented in `docs/property/LEAD_DETAIL_CAPTURE.md`; this section covers the `property_contactability` cadence.
+
 ### Psychology rationale
 
 The step-level mechanisms are grounded in established influence principles. Each touch does exactly one thing and does it for a clear psychological reason. The progression moves from reciprocity to social proof to autonomy to a warm ending, matching the emotional arc of a lead who is genuinely interested but busy.

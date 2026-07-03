@@ -75,6 +75,30 @@ export interface LeadMessageContext {
    * "channel_shift" - 3+ emails sent with zero opens (deliverability concern).
    */
   engagementVariant?: "hesitation" | "channel_shift";
+  /**
+   * Contact fields still missing on the lead (drives the detail-capture sequence
+   * copy). Recomputed from the live lead row on every send, so partial completions
+   * auto-narrow later touches. Absent/empty for a contact-complete lead.
+   */
+  missingFields?: ("name" | "phone")[];
+  /**
+   * Natural-language phrase for the missing field(s), e.g. "a phone number we can
+   * reach you on". Empty string when nothing is missing.
+   */
+  missingPhrase?: string;
+  /**
+   * True when the capture surface did NOT ask for the now-missing contact fields
+   * (e.g. the "Ask a specialist" widget takes email + message only). The detail-
+   * capture copy uses this to OWN the gap ("we did not catch your details") rather
+   * than implying the lead withheld something they were never asked for. Defaults
+   * to the neutral framing when unknown.
+   */
+  contactUnasked?: boolean;
+  /**
+   * Absolute tokenised URL to the /complete detail-capture form (profile intent),
+   * where the lead supplies whichever contact detail(s) are missing.
+   */
+  detailsUrl?: string;
 }
 
 /** One outbound message within a step, on a single channel. */

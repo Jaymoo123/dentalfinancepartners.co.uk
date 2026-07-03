@@ -11,8 +11,8 @@ The nurture system auto-messages real leads once `LEAD_NURTURE_ENABLED` is set. 
 Additive + idempotent (drop-then-create for the reshaped views). Adds:
 - **`lead_nurture_control`** — single-row (`id=1`) control plane: `paused`, `paused_reason`, `paused_at`, `paused_by`, `last_alert_at`, `last_alert_key`, `updated_at`. RLS on, no policies (service-role only). Seeded `paused=false`.
 - **`vw_lead_nurture_health`** — per `site_key`, counts only (no PII): 24h/1h send volume (`sends/sent/failed/skipped`), `complaints_24h/7d`, `bounces_24h/7d`, `optouts_7d`, `replies_24h`, `booked_24h`, `active_leads`, `stuck_leads` (active + overdue > 3h), `contactable/unreachable/forwarded`. Built from independent per-table CTEs LEFT JOINed to a distinct-site base, so no join fan-out. Lead counts are `count(distinct lead_id)`.
-- **`vw_lead_nurture_step_health`** — per `(site_key, step)` wide: `sent/failed/skipped`. Spots a step that consistently fails or is skipped.
-- **`vw_lead_nurture_stuck`** — actionable list of active leads overdue > 3h (`lead_id`, `full_name`, `created_at`, `step`, `next_action_at`, `overdue_hours`). Service-role only (same PII gating as `leads`). Per `(lead, sequence)`; 1:1 today because only `property_contactability` exists.
+- **`vw_lead_nurture_step_health`**: per `(site_key, sequence, step)` wide: `sent/failed/skipped`. Spots a step that consistently fails or is skipped. (Originally `(site_key, step)`; the `sequence` dimension was added 2026-07-03, see the multi-sequence note below.)
+- **`vw_lead_nurture_stuck`**: actionable list of active leads overdue > 3h (`lead_id`, `full_name`, `sequence`, `created_at`, `step`, `next_action_at`, `overdue_hours`). Service-role only (same PII gating as `leads`). One row per `(lead, sequence)`; the `sequence` column (added 2026-07-03) shows which primary flow a lead is stuck in.
 
 Apply: `python scripts/apply_web_analytics_migrations.py staging 20260702000001` (done + verified 2026-07-02), then `... prod 20260702000001` (owner-gated). Requires the base nurture migration `20260701000001` applied first.
 
@@ -81,12 +81,21 @@ Note: the kill switch fails OPEN (a DB read error returns "not paused") so sends
 Migration `supabase/migrations/20260702000003_lead_nurture_observability_v2.sql` (additive + idempotent):
 - **Cron heartbeat (GAP-3):** `lead_nurture_control` gains `last_cron_run_at` / `last_digest_run_at`. The hourly cron and the daily digest stamp their column every authorised run. The console shows a live/amber/**STALE** badge (hourly red if > 2h, digest red if > 25h) and the daily digest carries a "CRON LIVENESS" line, so a dead cron is now distinguishable from a genuinely quiet day. **Owner action recommended:** wire an EXTERNAL dead-man's-switch (e.g. an uptime monitor or a healthchecks.io ping the cron hits) so a total outage is caught even if the whole app is down. The internal heartbeat + digest liveness line are the in-app signal; they cannot catch "the app is entirely offline".
 - **Funnel cohort (GAP-7):** `vw_lead_contactability_funnel` now counts only the ENROLLED cohort (leads with a `lead_nurture_state` row), so the 47 pre-go-live leads no longer dilute every rate. Enrolment is the go-live cohort filter (no hardcoded date).
-- **Step-health accuracy:** `vw_lead_nurture_step_health` excludes the aux sequences (`booking_reminder:*`, `abandoned_booking`) so reminder/nudge sends no longer inflate the main sequence's step 0/1.
+- **Step-health accuracy:** `vw_lead_nurture_step_health` excludes the aux sequences (`booking_reminder:*`, `abandoned_booking`) so reminder/nudge sends no longer inflate the primary sequences' step 0/1. (As of 2026-07-03 the view also splits by `sequence`, so the two primary flows read apart; see the multi-sequence note.)
 - **Open/click (AN-5):** `vw_lead_nurture_health` now returns `opened_24h/clicked_24h/opened_7d/clicked_7d` (populate once the Resend engagement webhook secret, H3, is set).
 - **T0 experiment readout (AN-6):** console computes the branded-vs-personal split by recomputing `t0Variant(leadId)` (shared `@accounting-network/web-shared/lead-nurture/t0`) over the enrolled cohort; no persisted variant column needed.
 - **Windowed contactability rate (AN-7):** console shows the contactable rate for 7d / 28d / all-time over the enrolled cohort, so week-over-week movement against the 3-of-9 baseline is readable.
 
 Apply: `python scripts/apply_web_analytics_migrations.py staging 20260702000003` then `... prod 20260702000003` (owner-gated; requires 20260702000001 first). Then redeploy Property (heartbeat writes + digest line) and the estate-console (new panels + pause button).
+
+## Multi-sequence observability additions (2026-07-03)
+A second PRIMARY sequence, `property_detail_capture`, now runs ALONGSIDE `property_contactability` (it chases email-only leads for a missing name and/or phone; full design in `docs/property/LEAD_DETAIL_CAPTURE.md`). The system is no longer single-sequence, so the per-step / stuck views gained a `sequence` dimension in `supabase/migrations/20260703000001_lead_nurture_multi_sequence_views.sql` (additive + idempotent):
+- **`vw_lead_nurture_step_health`** is now grouped by `(site_key, sequence, step)`. Previously `(site_key, step)`, which would have SUMMED both primary sequences into a single step row once detail-capture went live. The aux-sequence exclusions and the sent/failed/skipped counts are unchanged.
+- **`vw_lead_nurture_stuck`** now exposes `sequence`, so an operator sees which primary flow a stuck lead is stuck in. All other columns and the >3h overdue filter are identical.
+- The **funnel** (`vw_lead_contactability_funnel`) and **health** (`vw_lead_nurture_health`) views are deliberately NOT split: they count a lead once (`count(distinct lead_id)`) and a lead is in exactly one primary sequence at a time, so their totals stay correct.
+- **Console:** `NurtureStepHealth` gains a `sequence` field; `StuckLead` gains an optional `sequence`. `getNurtureStepHealth` filters to `sequence=eq.property_contactability` so the live "Where leads get stuck" panel is byte-for-byte unchanged (a detail-capture panel can drop the filter later). `getStuckLeads` includes `sequence` in the select (backward-compatible).
+
+Apply: `python scripts/apply_web_analytics_migrations.py staging 20260703000001` then `... prod 20260703000001` (owner-gated; requires 20260702000001 first). Rollback = re-run 20260702000003 (step_health) and 20260702000001 (stuck) to drop the `sequence` column.
 
 ## Deferred (documented, not built)
 - Per-lead hard-bounce auto-stop (currently a hard bounce is recorded but the lead is not auto-stopped; the system-level bounce alert covers it).

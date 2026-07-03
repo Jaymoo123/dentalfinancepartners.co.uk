@@ -1,9 +1,17 @@
 /**
  * Server chokepoint for Property lead submission. Replaces the client-side
- * direct-to-Supabase insert for the PHONE-bearing surfaces (contact form +
- * MiniCapture), giving us a place to verify, dedupe, and enrol before anything
- * else happens. Email-only surfaces (SpecialistWidget, ResourceGate) keep the
- * shared path.
+ * direct-to-Supabase insert, giving us a place to verify, dedupe, and enrol
+ * before anything else happens.
+ *
+ * Two capture modes:
+ *   - "full" (default): name + phone + email + message (the contact form +
+ *     MiniCapture). Enrols into the contactability sequence.
+ *   - "email_only": email + message, with name/phone optional (the "Ask a
+ *     specialist" widget). Validation is relaxed to email + message; the lead is
+ *     routed by its missing contact fields into the detail-capture sequence,
+ *     which collects the missing name/phone before it can be forwarded.
+ * The ResourceGate download surface keeps the shared direct-insert path (Annex
+ * B.2 in-house consent, never forwarded, so intentionally not nurtured here).
  *
  * Flow:
  *   1. Honeypot -> store flagged (never silently lose a possible real lead) + skip.
@@ -24,17 +32,9 @@
 import { NextResponse, after } from "next/server";
 import { adminConfigured, adminSelect, adminInsert, adminUpdate } from "@/lib/supabase/admin";
 import { verifyLead } from "@/lib/leads/verify";
-import { buildLeadChannelSender, leadNurtureArmed } from "@/lib/leads/channels";
-import {
-  buildPropertyLeadNurtureConfig,
-  buildLeadMessageContext,
-  LEAD_SEQUENCE_NAME,
-} from "@/config/lead-nurture";
-import { bestHourFromTimestamps } from "@/lib/leads/send-window";
-import {
-  processLeadStep,
-  recordLeadContactEvent,
-} from "@accounting-network/web-shared/lead-nurture/send";
+import { enrollLead } from "@/lib/leads/enroll";
+import { routePrimarySequence, LEAD_SEQUENCE_NAMES } from "@/config/lead-nurture";
+import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
 import type { NurtureLead } from "@accounting-network/web-shared/lead-nurture/config";
 import { mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 import { copyAiEnabled } from "@/lib/leads/sequence-gen";
@@ -67,6 +67,9 @@ export async function POST(req: Request) {
   const message = String(body.message ?? "").trim();
   const source = (String(body.source ?? "property").trim() || "property").toLowerCase();
   const isTest = source === "test";
+  // Capture mode: "email_only" relaxes validation to email + message (name/phone
+  // optional) for the "Ask a specialist" widget; anything else is the full form.
+  const emailOnly = String(body.captureMode ?? "full").trim() === "email_only";
 
   const baseRow = {
     full_name,
@@ -107,10 +110,21 @@ export async function POST(req: Request) {
     return NextResponse.json({ success: true });
   }
 
-  // 2. Validate.
-  if (full_name.length < 2 || !EMAIL_RE.test(email) || digits(phone) < 10 || message.length < MIN_MESSAGE) {
+  // 2. Validate. email_only requires just a valid email + a short message (name
+  //    and phone are collected later by the detail-capture sequence); the full
+  //    form still requires name + phone too, so the phone-bearing surfaces are
+  //    not weakened.
+  const validationFails = emailOnly
+    ? !EMAIL_RE.test(email) || message.length < MIN_MESSAGE
+    : full_name.length < 2 || !EMAIL_RE.test(email) || digits(phone) < 10 || message.length < MIN_MESSAGE;
+  if (validationFails) {
     return NextResponse.json(
-      { success: false, error: "Please complete your name, a valid email and phone, and a short message." },
+      {
+        success: false,
+        error: emailOnly
+          ? "Please enter a valid email and a short message."
+          : "Please complete your name, a valid email and phone, and a short message.",
+      },
       { status: 400 },
     );
   }
@@ -222,82 +236,45 @@ export async function POST(req: Request) {
     console.error("[leads/submit] verification failed", e);
   }
 
-  // 5. Enrol + fire the instant touch (only on a brand-new enrolment, and only
-  //    when the system is ARMED). While dormant we save + verify but do NOT
-  //    enrol, so no state accumulates and (critically) the high-impact instant
-  //    touch is not "spent" as a skipped send before go-live.
-  if (leadNurtureArmed()) {
-    try {
-      const nowIso = new Date().toISOString();
+  // 5. Enrol + fire the instant touch via the shared enrolment path. enrollLead
+  //    no-ops while dormant, routes the lead by its missing contact fields
+  //    (full form -> contactability; email_only widget -> detail-capture), and
+  //    fires the instant touch only on a brand-new enrolment. Best-effort: never
+  //    blocks or loses the lead.
+  try {
+    const lead: NurtureLead = { id: leadId, full_name, email, phone, role, source, message };
+    const sequenceName = routePrimarySequence(lead);
+    const result = await enrollLead(lead, {
+      sequenceName,
+      live: !isTest,
+      visitorId: baseRow.visitor_id,
+    });
 
-      // Best-effort: derive preferred send hour from prior web sessions
-      let bestSendHour: number | null = null;
-      if (baseRow.visitor_id) {
-        try {
-          const sessRes = await adminSelect<{ started_at: string }>("web_sessions", {
-            select: "started_at",
-            visitor_id: `eq.${baseRow.visitor_id}`,
-            order: "started_at.desc",
-            limit: "50",
-          });
-          const timestamps = sessRes.data.map((r) => r.started_at).filter(Boolean);
-          bestSendHour = bestHourFromTimestamps(timestamps);
-        } catch {
-          // non-fatal
-        }
-      }
-
-      const enrol = await adminInsert<{ lead_id: string }>(
-        "lead_nurture_state",
-        {
-          lead_id: leadId,
-          sequence: LEAD_SEQUENCE_NAME,
-          step: 0,
-          status: "active",
-          next_action_at: nowIso,
-          ...(bestSendHour !== null ? { best_send_hour: bestSendHour } : {}),
-        },
-        { onConflict: "lead_id,sequence", ignoreDuplicates: true },
-      );
-      const newlyEnrolled = enrol.ok && enrol.data.length > 0;
-      if (newlyEnrolled) {
-        await adminUpdate("leads", { id: `eq.${leadId}`, status: "eq.new" }, { status: "nurturing" });
-        const config = buildPropertyLeadNurtureConfig();
-        const sender = buildLeadChannelSender({ live: !isTest });
-        const lead: NurtureLead = { id: leadId, full_name, email, phone, role, source, message };
-        const stateRow = { lead_id: leadId, step: 0, generated_copy: null, copy_status: null, best_send_hour: bestSendHour };
-        const ctx = await buildLeadMessageContext(lead, stateRow);
-        await processLeadStep(lead, 0, config, sender, ctx);
-        // Fire step 1 (SMS + WhatsApp) synchronously too, regardless of the hour.
-        // This is an immediate response to an enquiry the person just submitted, so
-        // they are clearly awake and expecting contact and the quiet-hours rule does
-        // not apply to this first touch. The LATER cron-driven nudges still respect
-        // the send window via the config dispatch gate.
-        await processLeadStep(lead, 1, config, sender, ctx);
-
-        // Fire-and-forget: generate personalised AI copy for later touches.
-        // Uses after() (Next.js 15+) so the response is not blocked and the
-        // serverless function is kept alive until the fetch dispatches.
-        if (copyAiEnabled()) {
-          const seqUrl = `${getSiteUrl().replace(/\/$/, "")}/api/leads/generate-sequence`;
-          // GAP-8: prefer a dedicated internal secret over the master token secret.
-          const internalToken =
-            process.env.LEAD_INTERNAL_SECRET || process.env.LEAD_NURTURE_TOKEN_SECRET || "";
-          after(() => {
-            void fetch(seqUrl, {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-                "x-internal-token": internalToken,
-              },
-              body: JSON.stringify({ leadId }),
-            }).catch(() => {});
-          });
-        }
-      }
-    } catch (e) {
-      console.error("[leads/submit] enrol/instant-touch failed", e);
+    // Fire-and-forget: generate personalised AI copy for later touches, but only
+    // for contactability (the detail-capture copy is field-aware static). Uses
+    // after() (Next.js 15+) so the response is not blocked.
+    if (
+      result.newlyEnrolled &&
+      sequenceName === LEAD_SEQUENCE_NAMES.contactability &&
+      copyAiEnabled()
+    ) {
+      const seqUrl = `${getSiteUrl().replace(/\/$/, "")}/api/leads/generate-sequence`;
+      // GAP-8: prefer a dedicated internal secret over the master token secret.
+      const internalToken =
+        process.env.LEAD_INTERNAL_SECRET || process.env.LEAD_NURTURE_TOKEN_SECRET || "";
+      after(() => {
+        void fetch(seqUrl, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-internal-token": internalToken,
+          },
+          body: JSON.stringify({ leadId }),
+        }).catch(() => {});
+      });
     }
+  } catch (e) {
+    console.error("[leads/submit] enrol/instant-touch failed", e);
   }
 
   // Signed booking token so the thank-you page can offer the native slot picker

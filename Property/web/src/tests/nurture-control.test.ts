@@ -34,6 +34,10 @@ vi.mock("@accounting-network/web-shared/lead-nurture/cron", () => ({
 
 vi.mock("@/config/lead-nurture", () => ({
   buildPropertyLeadNurtureConfig: () => ({ steps: [] }),
+  buildPropertyLeadNurtureConfigs: () => [
+    { sequenceName: "property_contactability", steps: [] },
+    { sequenceName: "property_detail_capture", steps: [] },
+  ],
   buildLeadMessageContext: vi.fn(() => ({})),
 }));
 

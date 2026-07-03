@@ -16,6 +16,7 @@ import { inSendWindow } from "@/lib/leads/send-window";
 import { renderLeadServiceEmail } from "@/lib/emails/lead-service-template";
 import { getSiteUrl } from "@/config/niche-loader";
 import { firstNameOf } from "@accounting-network/web-shared/lead-nurture/config";
+import { LEAD_SEQUENCE_NAMES } from "@/config/lead-nurture";
 
 // ---------------------------------------------------------------------------
 // Window bounds (Europe/London wall-clock)
@@ -369,13 +370,16 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
     const viewedLeadIds = [...new Set(recentViewed.map((e) => e.lead_id))];
 
     if (viewedLeadIds.length > 0) {
-      // Only leads with status='active'.
+      // Only leads active in the standard contactability chase. Scoping by sequence
+      // stops a second active detail-capture row from making a lead eligible for a
+      // booking-abandonment nudge it should not get.
       const statesRes = await adminSelect<{ lead_id: string }>(
         "lead_nurture_state",
         {
           select: "lead_id",
           lead_id: `in.(${viewedLeadIds.join(",")})`,
           status: "eq.active",
+          sequence: `eq.${LEAD_SEQUENCE_NAMES.contactability}`,
         },
       );
       const activeIds = new Set(statesRes.data.map((n) => n.lead_id));

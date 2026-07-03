@@ -19,7 +19,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
-import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { submitPropertyLead } from "@/lib/leads/submit-client";
 import { useFormTracking } from "@/components/analytics/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { track } from "@accounting-network/web-shared/analytics/track";
@@ -270,7 +270,6 @@ export function SpecialistWidget() {
   if (!ctx) return null;
 
   const topic = getTopic(ctx.pageTopic ?? ctx.entryTopic);
-  const { supabaseUrl, supabaseKey } = getSupabaseConfig();
   // Journey-primary topic drives the welcome line + the "see your numbers" shortcut.
   const journeyTopic = open ? getTopic(getJourneyProfile().primaryTopic) : null;
   const calcSlug = journeyTopic?.primaryCalculator ?? topic?.primaryCalculator ?? null;
@@ -315,10 +314,11 @@ export function SpecialistWidget() {
     const data = new FormData(e.currentTarget);
     // Honeypot named `enquiry_ref` (non-semantic) so autofill/password managers don't target
     // it — old name `company_url` silently dropped real humans. [[property_leadform_honeypot_silent_drop]]
-    if (String(data.get("enquiry_ref") || "").trim() !== "") {
-      ft.onError("enquiry_ref", "honeypot"); // value-free diagnostic; behaviour unchanged (still blocks)
-      return;
-    }
+    // Value-free diagnostic only; do NOT early-return. The server chokepoint stores a
+    // honeypot hit flagged and returns success, so a real human caught by autofill is
+    // never silently dropped.
+    const honeypot = String(data.get("enquiry_ref") || "").trim();
+    if (honeypot) ft.onError("enquiry_ref", "honeypot");
     const email = String(data.get("email") || "").trim();
     const question = String(data.get("question") || "").trim();
     if (!emailRe.test(email)) {
@@ -332,11 +332,6 @@ export function SpecialistWidget() {
       return;
     }
     ft.onSubmit(2);
-    if (!supabaseUrl || !supabaseKey) {
-      setStatus("error");
-      setError("Form not connected. Email us directly, we reply same day.");
-      return;
-    }
     setStatus("loading");
     const topicTag = topic ? ` (${topic.key})` : "";
     const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
@@ -362,8 +357,11 @@ export function SpecialistWidget() {
         capture_channel: "assistant",
         trigger: (lastPropsRef.current?.trigger as string) ?? "widget",
       },
+      // Email + message only; the server routes this into the detail-capture
+      // sequence, which collects the missing name/phone before any DJH handoff.
+      captureMode: "email_only" as const,
     };
-    const result = await submitLead(payload, supabaseUrl, supabaseKey);
+    const result = await submitPropertyLead(payload, honeypot);
     if (!result.success) {
       setStatus("error");
       setError(result.error || "Something went wrong. Please try again.");

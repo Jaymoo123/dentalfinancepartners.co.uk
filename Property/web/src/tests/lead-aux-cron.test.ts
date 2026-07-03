@@ -170,10 +170,13 @@ function seedBookingViewedEvent(tsIso: string) {
   });
 }
 
-function seedNurtureState(status = "active") {
+function seedNurtureState(status = "active", sequence = "property_contactability") {
   (db.lead_nurture_state as Row[]).push({
     lead_id: LEAD_ID,
     status,
+    // Real rows always carry a sequence; the abandoned-booking scan now scopes to
+    // the contactability sequence, so the seed must set it to be matched.
+    sequence,
   });
 }
 

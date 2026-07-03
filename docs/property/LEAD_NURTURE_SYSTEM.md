@@ -37,9 +37,12 @@ inbound (deterministic):
         -> promote leads.status='contactable' (once) -> enriched handoff email to operator
 ```
 
+## Two primary sequences (2026-07-03)
+There are now TWO primary nurture sequences and a lead is in exactly one at a time: `property_contactability` (leads with a name + usable phone; the flow above) and `property_detail_capture` (email-only leads missing a name and/or phone, e.g. the "Ask a specialist" widget; an email-only chase to collect the missing detail(s) via a signed `/complete` link, then route into the standard flow). `routePrimarySequence(lead)` in `src/config/lead-nurture.ts` picks the sequence from the missing contact fields; the hourly cron drives each sequence as an independent pass. Full design, the phone-aware exhaustion rule, the cross-sequence gate/opt-out fix, and the retro-enrol + reconciliation safety nets are in `docs/property/LEAD_DETAIL_CAPTURE.md`.
+
 ## Data model (migration `20260701000001_lead_contactability_nurture.sql`)
 - `lead_verification` (1:1) — phone/email verify result + `verify_pass`.
-- `lead_nurture_state` (PK lead_id+sequence) — reactive scheduler: `step`, `status`, `next_action_at`.
+- `lead_nurture_state` (PK lead_id+sequence) — reactive scheduler: `step`, `status`, `next_action_at`. The `sequence` PK column lets a lead hold state in either primary sequence (and any aux sequence) independently.
 - `lead_nurture_sends` — immutable multi-channel send log; UNIQUE (lead_id,sequence,step,channel) = claim-before-send idempotency.
 - `lead_contact_events` — the contactability audit trail feeding the gate.
 - `leads.status` extended: + `nurturing`, `contactable`, `unreachable`, `forwarded` (now actually written).

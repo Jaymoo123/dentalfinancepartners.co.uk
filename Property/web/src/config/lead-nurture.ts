@@ -33,6 +33,10 @@ import type {
   NurtureLead,
 } from "@accounting-network/web-shared/lead-nurture/config";
 import { firstNameOf } from "@accounting-network/web-shared/lead-nurture/config";
+import {
+  computeMissingContact,
+  type MissingContactField,
+} from "@accounting-network/web-shared/lead-nurture/lead-nurture-shared";
 
 // ── Engagement-variant decision (pure, exported for unit tests) ───────────────
 
@@ -91,11 +95,57 @@ export function decideEngagementVariant(
 import { mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 import { getSiteUrl } from "./niche-loader";
 import { renderLeadServiceEmail } from "@/lib/emails/lead-service-template";
-import { adminSelect, adminUpdate } from "@/lib/supabase/admin";
+import { adminSelect, adminUpdate, adminInsert } from "@/lib/supabase/admin";
 import { parseEnquiryEchoes, normaliseEcho, categoryPhrase } from "@/lib/leads/enquiry-message";
 import { computeNextSendMs, inSendWindow } from "@/lib/leads/send-window";
 
 const SEQUENCE_NAME = "property_contactability";
+const DETAIL_CAPTURE_SEQUENCE_NAME = "property_detail_capture";
+
+/** Primary sequence variants. Names live here once so no write/gate path hardcodes them. */
+export type LeadSequenceVariant = "contactability" | "detail_capture";
+export const LEAD_SEQUENCE_NAMES = {
+  contactability: SEQUENCE_NAME,
+  detail_capture: DETAIL_CAPTURE_SEQUENCE_NAME,
+} as const;
+
+/**
+ * Route a lead to its primary sequence by which required contact fields are
+ * missing: any missing (name and/or phone) => the detail-capture chase that
+ * collects them; otherwise the standard contactability chase. Single source of
+ * truth for the submit route, retro-enrol, and the reconciliation safety-net, so
+ * every path agrees.
+ */
+export function routePrimarySequence(lead: {
+  full_name?: string | null;
+  phone?: string | null;
+}): string {
+  return computeMissingContact(lead).length > 0
+    ? DETAIL_CAPTURE_SEQUENCE_NAME
+    : SEQUENCE_NAME;
+}
+
+/** Natural-language phrase for the missing contact field(s). No em/en dashes. */
+export function missingPhraseFor(missing: MissingContactField[]): string {
+  const hasName = missing.includes("name");
+  const hasPhone = missing.includes("phone");
+  if (hasName && hasPhone) return "your name and a phone number";
+  if (hasPhone) return "a phone number we can reach you on";
+  if (hasName) return "your name";
+  return "";
+}
+
+/** CTA button label for the detail-capture "add your details" link. */
+export function ctaLabelFor(missing: MissingContactField[] | undefined): string {
+  const m = missing ?? [];
+  const hasName = m.includes("name");
+  const hasPhone = m.includes("phone");
+  if (hasName && hasPhone) return "Add your details";
+  if (hasPhone) return "Add your number";
+  if (hasName) return "Add your name";
+  return "Add your details";
+}
+
 const COMPANY = "Property Tax Partners";
 const SIGNOFF = `Speak soon, the team at ${COMPANY}`;
 const FOOTER =
@@ -161,6 +211,30 @@ export async function buildLeadMessageContext(
   const confirmUrl = `${b}/api/leads/confirm/${mintLeadToken(lead.id, "confirm")}`;
   const optOutUrl = `${b}/api/leads/optout/${mintLeadToken(lead.id, "optout")}`;
   const bookingUrl = buildBookingUrl(lead, b);
+  const detailsUrl = buildDetailsUrl(lead, b);
+  // Which contact detail(s) the lead still owes us, and a natural phrase for the
+  // copy. Recomputed from the live lead row on every send, so a partial completion
+  // auto-narrows later detail-capture touches with no per-step branching.
+  const missingFields = computeMissingContact(lead);
+  const missingPhrase = missingPhraseFor(missingFields);
+  // Did the capture surface even ASK for the missing field(s)? The "Ask a
+  // specialist" widget stamps extras.capture_channel='assistant' and only takes
+  // email + message, so those leads are "unasked" and the copy must own the gap
+  // rather than imply the lead withheld it. Read lazily: only when something is
+  // missing (contactability leads skip this query entirely). Best-effort.
+  let contactUnasked = false;
+  if (missingFields.length > 0) {
+    try {
+      const exRes = await adminSelect<{ extras: Record<string, unknown> | null }>("leads", {
+        select: "extras",
+        id: `eq.${lead.id}`,
+        limit: "1",
+      });
+      contactUnasked = exRes.data[0]?.extras?.capture_channel === "assistant";
+    } catch {
+      // best-effort: default to the neutral framing
+    }
+  }
 
   // Parse guided-enquiry echoes from the stored message
   const parts = parseEnquiryEchoes(lead.message);
@@ -248,12 +322,24 @@ export async function buildLeadMessageContext(
     inSmsWindow: inSendWindow(Date.now(), true),
     variant: t0Variant(lead.id),
     engagementVariant,
+    missingFields,
+    missingPhrase,
+    detailsUrl,
+    contactUnasked,
   };
 }
 
 function buildBookingUrl(lead: NurtureLead, b: string): string {
   try {
     return `${b}/book?t=${encodeURIComponent(mintLeadToken(lead.id, "book"))}`;
+  } catch {
+    return `${b}/contact`;
+  }
+}
+
+function buildDetailsUrl(lead: NurtureLead, b: string): string {
+  try {
+    return `${b}/complete?t=${encodeURIComponent(mintLeadToken(lead.id, "profile"))}`;
   } catch {
     return `${b}/contact`;
   }
@@ -273,6 +359,12 @@ function emailMsg(
   preheader: string,
   paragraphs: string[],
   stepKey?: string,
+  opts?: {
+    /** Override the primary CTA (default: book a time). */
+    cta?: { label: string; href: string };
+    /** Override the secondary one-tap link. Pass null to omit it entirely. */
+    secondary?: { label: string; href: string } | null;
+  },
 ): LeadStepMessage {
   const gen: GeneratedStepCopy | undefined =
     stepKey && ctx.generatedCopy?.[stepKey] ? ctx.generatedCopy[stepKey] : undefined;
@@ -282,12 +374,20 @@ function emailMsg(
   const finalParagraphs =
     gen?.paragraphs && gen.paragraphs.length > 0 ? gen.paragraphs : paragraphs;
 
+  const cta = opts?.cta ?? { label: "Pick a time for your review", href: ctx.bookingUrl };
+  // Default keeps the confirm link; opts.secondary === null omits it (detail-
+  // capture has nothing to confirm until we can actually reach the lead).
+  const secondary =
+    opts?.secondary === undefined
+      ? { label: "confirm you would like a call", href: ctx.confirmUrl }
+      : opts.secondary;
+
   const { html, text } = renderLeadServiceEmail({
     preheader: finalPreheader,
     greeting: `Hi ${ctx.firstName},`,
     paragraphs: finalParagraphs,
-    cta: { label: "Pick a time for your review", href: ctx.bookingUrl },
-    secondary: { label: "confirm you would like a call", href: ctx.confirmUrl },
+    cta,
+    ...(secondary ? { secondary } : {}),
     signoff: SIGNOFF,
     footerNote: FOOTER,
     ...(ctx.optOutUrl ? { optOutUrl: ctx.optOutUrl } : {}),
@@ -510,7 +610,7 @@ const STEPS: LeadNurtureStep[] = [
   },
 ];
 
-export function buildPropertyLeadNurtureConfig(): LeadNurtureConfig {
+function buildContactabilityConfig(): LeadNurtureConfig {
   return {
     siteKey: "property",
     sequenceName: SEQUENCE_NAME,
@@ -559,6 +659,197 @@ export function buildPropertyLeadNurtureConfig(): LeadNurtureConfig {
       }
     },
   };
+}
+
+// ── Detail-capture sequence ────────────────────────────────────────────────────
+// Email-only variant for leads that arrived missing a required contact field
+// (name and/or phone). Each step asks for exactly what is missing, driven by
+// ctx.missingPhrase (recomputed per send, so a partial completion auto-narrows
+// later touches). No SMS steps: email is the universal prerequisite, and a
+// phone-less SMS step would only self-skip and pollute the send dashboards.
+// Graceful when nameless (the DEFAULT case here): greetings degrade to
+// "Hi there," via firstNameOf, and no subject uses a "Thanks {name}," construction.
+
+/** Safe missing-detail phrase for copy (never empty, even for a stray build). */
+function detailAsk(c: LeadMessageContext): string {
+  return c.missingPhrase && c.missingPhrase.trim() ? c.missingPhrase : "your details";
+}
+
+/** The detail-capture CTA: label matches the missing field(s), href = /complete link. */
+function detailCta(c: LeadMessageContext): { label: string; href: string } {
+  return { label: ctaLabelFor(c.missingFields), href: c.detailsUrl || `${base()}/contact` };
+}
+
+/**
+ * Opening line. When contactUnasked (the capture form did not ask for the missing
+ * field, e.g. the specialist widget), OWN the gap so the lead never feels blamed
+ * for withholding something we never requested. Otherwise stay neutral.
+ */
+function detailIntro(c: LeadMessageContext): string {
+  return c.contactUnasked
+    ? "Thanks for reaching out through our site. Your message has landed with a property tax specialist who would be glad to help."
+    : "Thanks for starting your enquiry. A property tax specialist would be glad to help.";
+}
+
+const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
+  {
+    key: "detail_capture_t0",
+    delayHours: 0,
+    channels: ["email"],
+    buildMessages: (c) => {
+      const ask = detailAsk(c);
+      return [
+        emailMsg(
+          c,
+          "Thanks for your message, one quick thing so we can help",
+          `So a specialist can get back to you, could you share ${ask}?`,
+          [
+            detailIntro(c),
+            `So we know who we are speaking to and can get back to you properly, could you add ${ask}? There is nothing else to fill in and it takes under a minute.`,
+            "Just use the button below and a specialist will take it from there.",
+          ],
+          "detail_capture_t0",
+          { cta: detailCta(c), secondary: null },
+        ),
+      ];
+    },
+  },
+  {
+    key: "detail_capture_day1",
+    delayHours: 24,
+    channels: ["email"],
+    buildMessages: (c) => {
+      const ask = detailAsk(c);
+      return [
+        emailMsg(
+          c,
+          "Still happy to help with your property tax",
+          "A specialist has time set aside this week.",
+          [
+            "Just following up on the message you sent us. A specialist has time set aside this week for a short call about your property tax, whenever suits you.",
+            `The only thing we need to set it up is ${ask}, so we know who we are speaking to. You can add it below in a few seconds.`,
+            "There is no cost and no obligation at any point.",
+          ],
+          "detail_capture_day1",
+          { cta: detailCta(c), secondary: null },
+        ),
+      ];
+    },
+  },
+  {
+    key: "detail_capture_day3",
+    delayHours: 48,
+    channels: ["email"],
+    buildMessages: (c) => {
+      const ask = detailAsk(c);
+      return [
+        emailMsg(
+          c,
+          "A minute now and a specialist can take it from there",
+          `Add ${ask} and we will do the rest.`,
+          [
+            "Most people who ask us the kind of question you did get a genuinely useful answer from one short call.",
+            `To set that up, we just need ${ask}. Pop it in below and a specialist will pick it up from there.`,
+            "If now is not the right time, that is completely fine. The link stays live whenever you are ready.",
+          ],
+          "detail_capture_day3",
+          { cta: detailCta(c), secondary: null },
+        ),
+      ];
+    },
+  },
+  {
+    key: "detail_capture_day7",
+    delayHours: 168,
+    channels: ["email"],
+    preferMonday: true,
+    buildMessages: (c) => {
+      const ask = detailAsk(c);
+      return [
+        emailMsg(
+          c,
+          "We will leave it here for now",
+          "The door stays open whenever the timing is right.",
+          [
+            "We have reached out a couple of times about your message, so we will leave it with you now.",
+            `If you would still like that free review, the only thing we need is ${ask}, and the link below stays live.`,
+            "Whenever your situation changes, a new purchase, a sale, or a Self Assessment bill, we are one message away. All the best with your property.",
+          ],
+          "detail_capture_day7",
+          { cta: detailCta(c), secondary: null },
+        ),
+      ];
+    },
+  },
+];
+
+function buildDetailCaptureConfig(): LeadNurtureConfig {
+  return {
+    siteKey: "property",
+    sequenceName: DETAIL_CAPTURE_SEQUENCE_NAME,
+    steps: DETAIL_CAPTURE_STEPS,
+    // Email-only, so no SMS window clamp is needed at scheduling or dispatch time.
+    nextActionAt: (fromMs, nextStep, ctx) =>
+      computeNextSendMs(fromMs, nextStep.delayHours, {
+        bestSendHour: ctx.bestSendHour,
+        hasSms: false,
+        preferMonday: nextStep.preferMonday,
+      }),
+    // Phone-aware exhaustion: a lead with no usable phone is genuinely unreachable;
+    // a lead that HAS a good phone (only a name was ever missing) is reachable, so
+    // hand it to the standard contactability chase instead of marking it unreachable.
+    onSequenceExhausted: async (leadId) => {
+      try {
+        const res = await adminSelect<{ full_name: string | null; phone: string | null }>(
+          "leads",
+          { select: "full_name,phone", id: `eq.${leadId}`, limit: "1" },
+        );
+        const row = res.data[0];
+        const hasUsablePhone = row ? !computeMissingContact(row).includes("phone") : false;
+        if (!hasUsablePhone) {
+          await adminUpdate(
+            "leads",
+            { id: `eq.${leadId}`, status: "in.(new,nurturing)" },
+            { status: "unreachable" },
+          );
+        } else {
+          // Reachable by phone: hand over to contactability. A direct state insert
+          // (not enrollLead) avoids a circular import; the next cron tick fires it
+          // from step 0. leads.status stays 'nurturing' (still in flight).
+          await adminInsert(
+            "lead_nurture_state",
+            {
+              lead_id: leadId,
+              sequence: SEQUENCE_NAME,
+              step: 0,
+              status: "active",
+              next_action_at: new Date().toISOString(),
+            },
+            { onConflict: "lead_id,sequence", ignoreDuplicates: true },
+          );
+        }
+      } catch (err) {
+        console.error("[lead-nurture] detail-capture exhaustion failed", err);
+      }
+    },
+  };
+}
+
+/**
+ * Build a Property lead-nurture config. Defaults to the contactability sequence
+ * for back-compat with existing single-sequence callers.
+ */
+export function buildPropertyLeadNurtureConfig(
+  variant: LeadSequenceVariant = "contactability",
+): LeadNurtureConfig {
+  return variant === "detail_capture"
+    ? buildDetailCaptureConfig()
+    : buildContactabilityConfig();
+}
+
+/** All primary sequences the cron must drive each tick, in priority order. */
+export function buildPropertyLeadNurtureConfigs(): LeadNurtureConfig[] {
+  return [buildContactabilityConfig(), buildDetailCaptureConfig()];
 }
 
 export const LEAD_SEQUENCE_NAME = SEQUENCE_NAME;

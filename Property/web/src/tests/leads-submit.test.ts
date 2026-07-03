@@ -54,6 +54,11 @@ vi.mock("@/config/lead-nurture", () => ({
   buildPropertyLeadNurtureConfig: () => mockBuildPropertyLeadNurtureConfig(),
   buildLeadMessageContext: (...args: unknown[]) => mockBuildLeadMessageContext(...args),
   LEAD_SEQUENCE_NAME: "property_contactability",
+  LEAD_SEQUENCE_NAMES: {
+    contactability: "property_contactability",
+    detail_capture: "property_detail_capture",
+  },
+  routePrimarySequence: () => "property_contactability",
 }));
 
 vi.mock("@/lib/leads/send-window", () => ({
@@ -149,7 +154,14 @@ function stubSender() {
 }
 
 function stubNurtureInfra({ inSmsWindow = false } = {}) {
-  mockBuildPropertyLeadNurtureConfig.mockReturnValue({ steps: [] });
+  // Mirror the contactability shape: step 0 (email) and step 1 (sms) are both
+  // instant (delayHours 0), so enrollLead fires both synchronously at submit.
+  mockBuildPropertyLeadNurtureConfig.mockReturnValue({
+    steps: [
+      { key: "t0_email", delayHours: 0 },
+      { key: "t0_sms", delayHours: 0 },
+    ],
+  });
   mockBuildLeadMessageContext.mockResolvedValue({
     firstName: "Jane",
     bookingUrl: "https://www.propertytaxpartners.co.uk/book?t=test-token-abc",
@@ -231,6 +243,43 @@ describe("honeypot (enquiry_ref non-empty)", () => {
     const extras = row.extras as Record<string, unknown>;
     expect(extras.foo).toBe("bar");
     expect(extras.honeypot).toBe(true);
+  });
+});
+
+// ── 1b. email_only capture mode ───────────────────────────────────────────────
+
+describe("email_only capture mode", () => {
+  const EMAIL_ONLY_BODY: Record<string, unknown> = {
+    full_name: "",
+    email: "jane@example.com",
+    phone: "",
+    message: "I have a question about incorporation for my portfolio",
+    source: "property",
+    captureMode: "email_only",
+  };
+
+  it("accepts a body with no name or phone (validation relaxed) and still saves the lead", async () => {
+    const res = await POST(makeReq(EMAIL_ONLY_BODY));
+    expect(res.status).toBe(200);
+    const body = (await res.json()) as { success: boolean };
+    expect(body.success).toBe(true);
+    const leadInsert = mockAdminInsert.mock.calls.find(([t]) => t === "leads");
+    expect(leadInsert).toBeTruthy();
+  });
+
+  it("still rejects an email_only body with an invalid email", async () => {
+    const res = await POST(makeReq({ ...EMAIL_ONLY_BODY, email: "nope" }));
+    expect(res.status).toBe(400);
+  });
+
+  it("still rejects an email_only body with no message", async () => {
+    const res = await POST(makeReq({ ...EMAIL_ONLY_BODY, message: "" }));
+    expect(res.status).toBe(400);
+  });
+
+  it("the full form still requires name and phone (email_only not set)", async () => {
+    const res = await POST(makeReq({ ...EMAIL_ONLY_BODY, captureMode: "full" }));
+    expect(res.status).toBe(400);
   });
 });
 

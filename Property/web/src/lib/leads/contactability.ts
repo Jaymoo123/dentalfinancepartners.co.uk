@@ -28,7 +28,7 @@
 
 import { adminSelect, adminUpdate } from "@/lib/supabase/admin";
 import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
-import { LEAD_SEQUENCE_NAME } from "@/config/lead-nurture";
+import { LEAD_SEQUENCE_NAMES } from "@/config/lead-nurture";
 import { getResend, getFromAddress } from "@/lib/resend";
 import { resolveLeadTo } from "@/lib/lead-routing";
 import { sendContactableHandoff, type HandoffResult } from "./handoff";
@@ -116,10 +116,16 @@ export async function promoteIfContactable(leadId: string): Promise<PromoteResul
     if (!verdict.contactable) return { promoted: false, reason: verdict.reason };
 
     const nowIso = new Date().toISOString();
-    // Stop chasing (whatever state the sequence is in).
+    // Stop chasing on BOTH primary sequences (contactability + detail-capture), so a
+    // lead promoted while still in detail-capture is halted too. Aux sequences
+    // (booking_reminder:*, abandoned_booking) are intentionally left running, since a
+    // now-contactable lead who booked still wants their booking reminder.
     await adminUpdate(
       "lead_nurture_state",
-      { lead_id: `eq.${leadId}`, sequence: `eq.${LEAD_SEQUENCE_NAME}` },
+      {
+        lead_id: `eq.${leadId}`,
+        sequence: `in.(${LEAD_SEQUENCE_NAMES.contactability},${LEAD_SEQUENCE_NAMES.detail_capture})`,
+      },
       { status: "contactable", next_action_at: null, updated_at: nowIso },
     );
 
@@ -227,9 +233,11 @@ export async function stopNurture(
 ): Promise<void> {
   await recordLeadContactEvent(leadId, "opted_out", channel);
   const nowIso = new Date().toISOString();
+  // Opt-out withdraws consent for ALL automated contact: halt every sequence for
+  // this lead (both primary chases and any aux booking reminders), not just one.
   await adminUpdate(
     "lead_nurture_state",
-    { lead_id: `eq.${leadId}`, sequence: `eq.${LEAD_SEQUENCE_NAME}` },
+    { lead_id: `eq.${leadId}` },
     { status: "stopped", next_action_at: null, updated_at: nowIso },
   );
   // Also close the lead so an in-flight confirm/booking link cannot resurrect it

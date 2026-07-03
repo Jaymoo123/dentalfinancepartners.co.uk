@@ -6,7 +6,7 @@
  * Token format: base64url(payload).base64url(sig)
  * Payload JSON: { l, i, x } where
  *   l = lead id (uuid)
- *   i = intent ("confirm" | "optout" | "book" | "forwarded")
+ *   i = intent ("confirm" | "optout" | "book" | "forwarded" | "profile")
  *   x = expiry (unix seconds)
  *
  * The confirm link proves a human acted (a contactability signal); the opt-out
@@ -17,7 +17,7 @@
 
 import crypto from "crypto";
 
-export type LeadTokenIntent = "confirm" | "optout" | "book" | "forwarded";
+export type LeadTokenIntent = "confirm" | "optout" | "book" | "forwarded" | "profile";
 
 type Payload = { l: string; i: LeadTokenIntent; x: number };
 
@@ -47,17 +47,24 @@ function sign(payload: Buffer, secret: string): Buffer {
 const CONFIRM_TTL_SECONDS = 14 * 24 * 60 * 60; // 14 days (cadence length)
 const OPTOUT_TTL_SECONDS = 365 * 24 * 60 * 60; // 1 year
 const FORWARDED_TTL_SECONDS = 90 * 24 * 60 * 60; // 90 days (operator confirms the DJH forward)
+// "profile" = the detail-capture "add your details" link. Longer than the confirm
+// bucket so a late click on a week-old capture email still resolves (a fresh token
+// is also minted on every send, so this only matters for stale email opens).
+const PROFILE_TTL_SECONDS = 30 * 24 * 60 * 60; // 30 days
 
 export function mintLeadToken(leadId: string, intent: LeadTokenIntent): string {
   const secret = getLeadTokenSecret();
   // confirm + book live as long as the chase cadence; opt-out lasts a year; the
-  // operator's "forwarded to DJH" confirmation link lasts 90 days.
+  // operator's "forwarded to DJH" confirmation link lasts 90 days; the detail-
+  // capture "add your details" link lasts 30 days.
   const ttl =
     intent === "optout"
       ? OPTOUT_TTL_SECONDS
       : intent === "forwarded"
         ? FORWARDED_TTL_SECONDS
-        : CONFIRM_TTL_SECONDS;
+        : intent === "profile"
+          ? PROFILE_TTL_SECONDS
+          : CONFIRM_TTL_SECONDS;
   const payload: Payload = {
     l: leadId,
     i: intent,

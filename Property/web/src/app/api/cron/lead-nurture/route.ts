@@ -18,9 +18,9 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { timingSafeEqual } from "crypto";
 import { adminConfigured } from "@/lib/supabase/admin";
-import { runLeadNurtureCron } from "@accounting-network/web-shared/lead-nurture/cron";
+import { runLeadNurtureCron, type LeadCronResult } from "@accounting-network/web-shared/lead-nurture/cron";
 import type { NurtureLead } from "@accounting-network/web-shared/lead-nurture/config";
-import { buildPropertyLeadNurtureConfig, buildLeadMessageContext } from "@/config/lead-nurture";
+import { buildPropertyLeadNurtureConfigs, buildLeadMessageContext } from "@/config/lead-nurture";
 import { buildLeadChannelSender, leadNurtureArmed } from "@/lib/leads/channels";
 import { runLeadAuxScans } from "@/lib/leads/aux-cron";
 import { isNurturePaused, recordCronHeartbeat } from "@/lib/leads/nurture-control";
@@ -62,7 +62,7 @@ async function run(req: NextRequest): Promise<NextResponse> {
     console.error("[lead-nurture-cron] heartbeat write failed", err);
   }
 
-  const config = buildPropertyLeadNurtureConfig();
+  const configs = buildPropertyLeadNurtureConfigs();
   // Per-lead sender: a real lead gets the live sender; a source='test' lead gets
   // a skip-only sender so a synthetic probe never messages a real provider from
   // the cron path (ENG-02). Mirrors the submit route's { live: !isTest }.
@@ -75,12 +75,23 @@ async function run(req: NextRequest): Promise<NextResponse> {
   const dbPaused = await isNurturePaused();
   const effectiveArmed = cronArmed && !dbPaused;
 
-  const result = await runLeadNurtureCron(
-    config,
-    senderForLead,
-    (lead, state) => buildLeadMessageContext(lead, state),
-    effectiveArmed,
-  );
+  // Drive each primary sequence as an independent pass (contactability first, so if
+  // maxDuration is ever hit the higher-value flow has completed). Each pass is scoped
+  // by config.sequenceName in the engine, so passes never touch each other's rows.
+  let processed = 0;
+  let dispatched = 0;
+  const perSequence: Record<string, LeadCronResult> = {};
+  for (const config of configs) {
+    const r = await runLeadNurtureCron(
+      config,
+      senderForLead,
+      (lead, state) => buildLeadMessageContext(lead, state),
+      effectiveArmed,
+    );
+    perSequence[config.sequenceName] = r;
+    processed += r.processed;
+    dispatched += r.dispatched;
+  }
   const aux = effectiveArmed ? await runLeadAuxScans() : { reminders: 0, nudges: 0 };
 
   // Guardrail scan: fires whenever env-armed, regardless of dbPaused, so
@@ -98,7 +109,7 @@ async function run(req: NextRequest): Promise<NextResponse> {
     }
   }
 
-  return NextResponse.json({ ok: true, armed: cronArmed, dbPaused, ...result, aux, guard });
+  return NextResponse.json({ ok: true, armed: cronArmed, dbPaused, processed, dispatched, perSequence, aux, guard });
 }
 
 export async function GET(req: NextRequest) {
