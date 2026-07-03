@@ -1051,9 +1051,15 @@ export type NurtureHealth = {
 /**
  * Per-step throughput from vw_lead_nurture_step_health (site-keyed).
  * Fails soft: getNurtureStepHealth() returns [] when the view is absent.
+ *
+ * `sequence` distinguishes the two primary nurture flows
+ * (property_contactability vs property_detail_capture); the live panel filters
+ * to property_contactability, so this field is present but effectively constant
+ * there until a detail-capture panel is added.
  */
 export type NurtureStepHealth = {
   site_key: string;
+  sequence: string;
   step: number;
   sent: number;
   failed: number;
@@ -1070,6 +1076,8 @@ export type StuckLead = {
   created_at: string;
   overdue_hours: number;
   step: number | null;
+  /** Which nurture sequence the lead is stuck in; optional so older callers are unaffected. */
+  sequence?: string;
 };
 
 /**
@@ -1161,11 +1169,18 @@ export async function getNurtureHealth(
 export async function getNurtureStepHealth(
   siteKey: string,
 ): Promise<NurtureStepHealth[]> {
+  // The view now carries a `sequence` dimension (property_contactability vs
+  // property_detail_capture). Filter to the contactability sequence so this LIVE
+  // panel stays byte-for-byte identical to its single-sequence behaviour; a
+  // dedicated detail-capture panel can drop the filter (or query the other
+  // sequence) later. select/order include `sequence` for that future use.
   return rest<NurtureStepHealth>(
     "vw_lead_nurture_step_health",
     {
       site_key: `eq.${siteKey}`,
-      order: "step.asc",
+      sequence: "eq.property_contactability",
+      select: "site_key,sequence,step,sent,failed,skipped",
+      order: "sequence.asc,step.asc",
     },
     60,
   );
@@ -1180,10 +1195,14 @@ export async function getNurtureStepHealth(
 export async function getStuckLeads(
   siteKey: string,
 ): Promise<StuckLead[]> {
+  // `sequence` is included so the UI can (optionally) show which flow a lead is
+  // stuck in; it is backward-compatible (StuckLead.sequence is optional, so the
+  // existing accordion that ignores it is unaffected).
   return rest<StuckLead>(
     "vw_lead_nurture_stuck",
     {
       site_key: `eq.${siteKey}`,
+      select: "lead_id,full_name,created_at,overdue_hours,step,sequence",
       order: "overdue_hours.desc",
     },
     0,
