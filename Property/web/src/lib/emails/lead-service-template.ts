@@ -33,6 +33,12 @@ export interface LeadServiceEmail {
    * footer no longer renders it as a link (reply-based opt-out instead).
    */
   optOutUrl?: string;
+  /**
+   * Optional key/value rows rendered as an inline-styled table between the body
+   * paragraphs and the CTA area. Use for contact details, booking slots, etc.
+   * When absent (or empty), the output is byte-identical to the baseline.
+   */
+  detailRows?: Array<{ label: string; value: string }>;
 }
 
 function esc(s: string): string {
@@ -49,6 +55,16 @@ export function renderLeadServiceEmail(e: LeadServiceEmail): { html: string; tex
   const paras = e.paragraphs
     .map((p) => `<p style="margin:0 0 16px 0;">${esc(p)}</p>`)
     .join("\n");
+
+  const detailRowsHtml =
+    e.detailRows && e.detailRows.length > 0
+      ? `<table style="border-collapse:collapse;font-size:14px;margin:12px 0;">${e.detailRows
+          .map(
+            (r) =>
+              `<tr><td style="padding:4px 12px 4px 0;color:#64748b;vertical-align:top;">${esc(r.label)}</td><td style="padding:4px 0;font-weight:600;">${esc(r.value)}</td></tr>`,
+          )
+          .join("")}</table>\n`
+      : "";
 
   const ctaHtml = e.cta
     ? `<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 22px 0;"><tr><td style="border-radius:6px;background-color:#059669;">
@@ -81,7 +97,7 @@ export function renderLeadServiceEmail(e: LeadServiceEmail): { html: string; tex
 <td style="padding:26px 28px 6px 28px;font-family:${FONT};font-size:16px;line-height:1.6;color:#334155;">
 <p style="margin:0 0 16px 0;">${esc(e.greeting)}</p>
 ${paras}
-${ctaHtml}${secondaryHtml}<p style="margin:0 0 8px 0;">${esc(e.signoff)}</p>
+${detailRowsHtml}${ctaHtml}${secondaryHtml}<p style="margin:0 0 8px 0;">${esc(e.signoff)}</p>
 </td>
 </tr>
 <tr>
@@ -113,10 +129,15 @@ ${ctaHtml}${secondaryHtml}<p style="margin:0 0 8px 0;">${esc(e.signoff)}</p>
     ...(e.cta ? [`${e.cta.label}: ${e.cta.href}`] : []),
     ...(e.secondary ? [`${e.secondary.label}: ${e.secondary.href}`] : []),
   ];
+  const detailTextLines =
+    e.detailRows && e.detailRows.length > 0
+      ? ["", ...e.detailRows.map((r) => `${r.label}: ${r.value}`)]
+      : [];
   const textLines = [
     e.greeting,
     "",
     ...e.paragraphs,
+    ...detailTextLines,
     ...(actionLines.length > 0 ? ["", ...actionLines] : []),
     "",
     e.signoff,

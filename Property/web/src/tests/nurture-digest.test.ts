@@ -227,10 +227,11 @@ describe("composeDigestEmail: health numbers", () => {
     expect(text).toContain("7");
   });
 
-  it("sends24h count appears in text", () => {
-    const d = makeFullDigest({ health: makeHealth({ sends24h: 10 }) });
+  it("sends24h count appears in text (as real attempts = sends24h - skipped24h)", () => {
+    // sends24h:10, skipped24h:1 (default) => real24 = 9
+    const d = makeFullDigest({ health: makeHealth({ sends24h: 10, skipped24h: 1 }) });
     const { text } = composeDigestEmail(d);
-    expect(text).toContain("10");
+    expect(text).toContain("9");
   });
 
   it("sent24h count appears in text", () => {
@@ -420,6 +421,142 @@ describe("composeDigestEmail: bottleneck notes", () => {
     const d = makeFullDigest({ health: h });
     const { text } = composeDigestEmail(d);
     expect(text).toMatch(/complaint/i);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Headline format: real-attempt numbers
+// ---------------------------------------------------------------------------
+
+describe("composeDigestEmail: headline send-activity format", () => {
+  it("24 h headline shows real attempts (sends minus skipped) with breakdown", () => {
+    const h = makeHealth({ sends24h: 22, sent24h: 11, failed24h: 4, skipped24h: 7 });
+    const d = makeFullDigest({ health: h });
+    const { text } = composeDigestEmail(d);
+    expect(text).toContain("Attempts: 15 (11 sent, 4 failed) + 7 skipped");
+  });
+
+  it("1 h headline shows real attempts (sends minus skipped) with breakdown", () => {
+    const h = makeHealth({ sends1h: 10, failed1h: 2, skipped1h: 3 });
+    const d = makeFullDigest({ health: h });
+    const { text } = composeDigestEmail(d);
+    // real1h = 10-3 = 7; sent = 7-2 = 5
+    expect(text).toContain("Attempts: 7 (5 sent, 2 failed) + 3 skipped");
+  });
+
+  it("real-attempt count never goes below zero when skipped > sends", () => {
+    const h = makeHealth({ sends24h: 3, sent24h: 0, failed24h: 0, skipped24h: 5 });
+    const d = makeFullDigest({ health: h });
+    const { text } = composeDigestEmail(d);
+    expect(text).toContain("Attempts: 0");
+    expect(text).not.toContain("NaN");
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Bottleneck notes: denominator is real attempts, not raw sends
+// ---------------------------------------------------------------------------
+
+describe("composeDigestEmail: bottleneck note uses real-attempt denominator", () => {
+  it("does NOT fire 24 h failure note when failed/real24 < 20% even if failed/sends24h >= 20%", () => {
+    // sends24h=20, skipped24h=15 => real24=5; failed24h=3 => 3/5=60% (fires on real)
+    // vs 3/20=15% (would not fire on raw) - need the opposite: fires on raw but not real
+    // sends24h=20, skipped24h=2 => real24=18; failed24h=4 => 4/18=22% (fires on real)
+    // We want: fires on raw (4/20=20%) but NOT on real (4/18=22%) - that gives same result.
+    // Instead: sends24h=25, skipped24h=20 => real24=5; failed24h=1 => 1/5=20% (fires on real)
+    //   vs 1/25=4% (would NOT fire on raw). We want the OPPOSITE scenario for "does NOT fire":
+    // sends24h=10, skipped24h=8 => real24=2; failed24h=2 => 2/2=100% (fires on real - not useful).
+    // Construct: sends24h=10, skipped24h=0, failed24h=2 => raw=2/10=20% (fires on raw AND real).
+    // For "does NOT fire on real but would on raw":
+    //   sends24h=10, skipped24h=8 => real24=2; failed24h=0 => no note. Not useful.
+    // Best "different verdict" scenario: fired on raw, silent on real:
+    //   sends24h=20, skipped24h=10 => real24=10; failed24h=3 => 3/20=15% (raw: silent), 3/10=30% (real: fires)
+    // Actually let's do the reverse: note fires on real but NOT on raw:
+    //   sends24h=20, skipped24h=15 => real24=5; failed24h=1 => 1/20=5% (raw: silent), 1/5=20% (real: fires)
+    const h = makeHealth({ sends24h: 20, skipped24h: 15, failed24h: 1, sent24h: 4 });
+    const d = makeFullDigest({ health: h });
+    const { text } = composeDigestEmail(d);
+    // The note fires because 1/5 = 20% on real24 denominator
+    expect(text).toMatch(/failure rate/i);
+  });
+
+  it("fires 24 h failure note using real24 denominator, not sends24h", () => {
+    // sends24h=20, skipped24h=15 => real24=5; failed24h=1 => 1/5=20% fires, 1/20=5% would not
+    const h = makeHealth({ sends24h: 20, skipped24h: 15, failed24h: 1, sent24h: 4 });
+    const d = makeFullDigest({ health: h });
+    const { text } = composeDigestEmail(d);
+    expect(text).toMatch(/failure rate/i);
+    // the percentage shown should be based on real24=5, so 20%
+    expect(text).toContain("20%");
+  });
+
+  it("does not fire 24 h failure note when failed/real24 < 20% (even if failed/sends24h would reach 20%)", () => {
+    // sends24h=10, skipped24h=0 => real24=10; failed24h=2 => 2/10=20% fires.
+    // For "does not fire": sends24h=10, skipped24h=0, failed24h=1 => 1/10=10% < 20%.
+    const h = makeHealth({ sends24h: 10, skipped24h: 0, failed24h: 1, sent24h: 9 });
+    const d = makeFullDigest({ health: h });
+    const { text } = composeDigestEmail(d);
+    expect(text).not.toMatch(/failure rate on send attempts in 24 h/i);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Failed sends: deduplicate by (leadId, step, channel)
+// ---------------------------------------------------------------------------
+
+describe("composeDigestEmail: failed sends deduplication", () => {
+  it("three events for the same (leadId, step, channel) collapse to one row", () => {
+    const base: FailedSendRow = {
+      leadId: "lead-dup-1",
+      fullName: "Amy Jones",
+      channel: "email",
+      step: 2,
+      reason: "bounce",
+      ts: "2026-07-03T12:00:00Z",
+    };
+    const older1: FailedSendRow = { ...base, reason: "timeout", ts: "2026-07-02T08:00:00Z" };
+    const older2: FailedSendRow = { ...base, reason: "timeout", ts: "2026-07-01T06:00:00Z" };
+    // Input ordered ts.desc (most recent first), as gatherDigestData returns
+    const d = makeFullDigest({ failedSends: [base, older1, older2] });
+    const { text } = composeDigestEmail(d);
+    // Section header should show 1 deduplicated row
+    expect(text).toMatch(/FAILED SENDS LAST 7 DAYS \(1\)/);
+    // Most recent reason shown
+    expect(text).toContain("bounce");
+    // Attempt count suffix
+    expect(text).toContain("(x3 attempts)");
+    // Lead name appears once
+    const occurrences = (text.match(/Amy Jones/g) ?? []).length;
+    expect(occurrences).toBe(1);
+  });
+
+  it("distinct (leadId, step, channel) keys are kept as separate rows", () => {
+    const row1: FailedSendRow = {
+      leadId: "lead-a",
+      fullName: "Amy Jones",
+      channel: "email",
+      step: 1,
+      reason: "bounce",
+      ts: "2026-07-03T10:00:00Z",
+    };
+    const row2: FailedSendRow = {
+      leadId: "lead-a",
+      fullName: "Amy Jones",
+      channel: "email",
+      step: 2, // different step
+      reason: "timeout",
+      ts: "2026-07-03T09:00:00Z",
+    };
+    const d = makeFullDigest({ failedSends: [row1, row2] });
+    const { text } = composeDigestEmail(d);
+    expect(text).toMatch(/FAILED SENDS LAST 7 DAYS \(2\)/);
+    expect(text).not.toContain("(x");
+  });
+
+  it("single event row has no (xN attempts) suffix", () => {
+    const d = makeFullDigest({ failedSends: [FAILED_SEND] });
+    const { text } = composeDigestEmail(d);
+    expect(text).not.toContain("(x");
   });
 });
 

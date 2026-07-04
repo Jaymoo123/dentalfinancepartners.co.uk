@@ -31,6 +31,8 @@ import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurt
 import { LEAD_SEQUENCE_NAMES } from "@/config/lead-nurture";
 import { getResend, getFromAddress } from "@/lib/resend";
 import { resolveLeadTo } from "@/lib/lead-routing";
+import { getSiteUrl } from "@/config/niche-loader";
+import { mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 import { sendContactableHandoff, type HandoffResult } from "./handoff";
 
 type EventRow = { event_type: string; channel: string | null; ts?: string | null };
@@ -157,9 +159,50 @@ export async function promoteIfContactable(leadId: string): Promise<PromoteResul
     const handoff = await sendContactableHandoff(leadId, verdict.reason);
 
     if (handoff.sent === true || handoff.skipped) {
-      // Sent successfully, or a known/expected skip (test, no-resend, no-lead):
-      // record the standard handed-off event.
+      // Sent successfully (or known/expected skip): record the standard handed-off event.
       await recordLeadContactEvent(leadId, "handed_off", "system", { reason: verdict.reason });
+
+      // Partial failure: the forwardable brief landed but the internal ops email did not.
+      if (handoff.sent === true && handoff.internal && !handoff.internal.sent) {
+        await recordLeadContactEvent(leadId, "send_failed", "system", {
+          kind: "handoff_internal_failed",
+          reason: handoff.internal.reason,
+        });
+        // Best-effort operator alert so the log button can still be used.
+        try {
+          let alertName = "the lead";
+          try {
+            const nameRes = await adminSelect<{ full_name: string }>("leads", {
+              id: `eq.${leadId}`,
+              select: "full_name",
+              limit: "1",
+            });
+            if (nameRes.data[0]?.full_name) alertName = nameRes.data[0].full_name;
+          } catch {
+            // best-effort
+          }
+          if (handoff.to && process.env.RESEND_API_KEY) {
+            let logUrl: string | null = null;
+            try {
+              logUrl = `${getSiteUrl().replace(/\/$/, "")}/api/leads/forwarded/${mintLeadToken(leadId, "forwarded")}`;
+            } catch {
+              // best-effort; omit the URL if minting fails
+            }
+            const safe = (s: string) =>
+              s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            const safeAlertName = safe(alertName);
+            await getResend().emails.send({
+              from: getFromAddress(),
+              to: handoff.to,
+              subject: `Internal hand-over email failed: ${alertName}`,
+              html: `<p>The forwardable brief for <strong>${safeAlertName}</strong> was delivered successfully. However, the internal ops email (which contains the log button and context) did not send after 3 attempts.</p>${logUrl ? `<p>You can still log the hand-over here: <a href="${logUrl}">${logUrl}</a></p>` : "<p>The log button could not be generated; please log the hand-over via the console.</p>"}`,
+              text: `The forwardable brief for ${alertName} was delivered successfully. However, the internal ops email did not send after 3 attempts.${logUrl ? `\n\nLog the hand-over here: ${logUrl}` : "\n\nThe log button could not be generated; please log the hand-over via the console."}`,
+            });
+          }
+        } catch (alertErr) {
+          console.error("[contactability] internal-ops alert send failed", alertErr);
+        }
+      }
       // The contactable -> forwarded flip is OPERATOR-driven (owner decision AN-2):
       // it happens when the operator clicks "I have forwarded this to DJH" in the
       // handoff email (POST /api/leads/forwarded/[token]), so 'forwarded' means a

@@ -29,6 +29,7 @@ import type {
   LeadNurtureStep,
   NurtureLead,
 } from "./config";
+import { isPermanentSendError, type PermanentSendError } from "./config";
 
 const HOUR_MS = 3_600_000;
 const TERMINAL_SEND = new Set(["sent", "skipped", "delivered"]);
@@ -39,7 +40,14 @@ const TERMINAL_SEND = new Set(["sent", "skipped", "delivered"]);
 // and eventually reach 'unreachable' at exhaustion (ENG-05 / ENTRY-2).
 const RETRY_CAP_MS = 6 * HOUR_MS;
 
-type ChannelResult = "sent" | "skipped" | "duplicate" | "failed";
+// "failed_permanent" means the provider issued a permanent rejection (e.g. an
+// invalid number or a region-permission denial). The send row is marked 'failed'
+// and a single send_failed event is recorded; the step advances immediately
+// rather than retrying on the next cron tick. Any code outside this file that
+// receives a ChannelResult and does not recognise "failed_permanent" should treat
+// it as "failed" -- the union is additive and the only consumer of ChannelResult
+// is processLeadStep (internal to this module), so this is non-breaking.
+type ChannelResult = "sent" | "skipped" | "duplicate" | "failed" | "failed_permanent";
 
 /** Insert a lead lifecycle event (replied / confirmed / booked / opted_out / ...). */
 export async function recordLeadContactEvent(
@@ -133,6 +141,20 @@ async function sendChannel(
     return "sent";
   } catch (err) {
     await adminUpdate("lead_nurture_sends", { id: `eq.${sendRowId}` }, { status: "failed" });
+    if (isPermanentSendError(err)) {
+      // Permanent provider rejection: record once and signal the caller to advance
+      // immediately. No further retries will succeed, so holding the step is wasteful
+      // and trips the failed-send-rate guardrail.
+      const pErr = err as PermanentSendError;
+      await recordLeadContactEvent(lead.id, "send_failed", msg.channel, {
+        step: stepIndex,
+        reason: String(pErr.message).slice(0, 200),
+        permanent: true,
+        code: pErr.providerCode,
+      });
+      console.error("[lead-nurture/send] permanent provider rejection, advancing step", err);
+      return "failed_permanent";
+    }
     await recordLeadContactEvent(lead.id, "send_failed", msg.channel, {
       step: stepIndex,
       reason: String(err instanceof Error ? err.message : err).slice(0, 200),
@@ -244,8 +266,9 @@ export async function processLeadStep(
     return 0;
   }
   let sent = 0;
-  let resolved = 0; // sent + skipped + duplicate (i.e. not a hard failure)
-  let failed = 0;
+  let resolved = 0;        // sent + skipped + duplicate (i.e. not a hard failure)
+  let failed = 0;          // transient failures: provider down, network error, etc.
+  let permanentFailed = 0; // permanent failures: invalid number, region denied, etc.
 
   for (const msg of messages) {
     const r = await sendChannel(lead, config, stepIndex, msg, sender);
@@ -254,28 +277,57 @@ export async function processLeadStep(
       resolved++;
     } else if (r === "skipped" || r === "duplicate") {
       resolved++;
+    } else if (r === "failed_permanent") {
+      permanentFailed++;
     } else {
       failed++;
     }
   }
 
-  // Advance rules:
-  //  - No failures: advance if anything resolved (all sent, or all skipped when
-  //    dormant). This is the normal path.
-  //  - Some failures: advance ONLY if at least one channel actually SENT (the
-  //    lead was reached on >=1 channel; the failed one is logged as send_failed).
-  //    If nothing sent (all failed, or skipped+failed with no send), do NOT
-  //    advance, so the next cron tick retries the failed channel(s).
-  const shouldAdvance = failed === 0 ? resolved > 0 : sent > 0;
+  // Advance rules (updated to handle permanent failures):
+  //
+  //  CASE 1 -- no failures of any kind: advance if anything resolved (all sent,
+  //    or all skipped when dormant). This is the normal path.
+  //
+  //  CASE 2 -- permanent failures only (no transient failures): treat permanent
+  //    failures as resolution. They will never succeed on retry, so burning cron
+  //    ticks and provider credits is wasteful. Advance when
+  //    (resolved + permanentFailed) > 0 -- i.e. every channel either resolved
+  //    cleanly or hit a definitive rejection.
+  //    Edge case preserved (noted in comment): if one channel fails transiently
+  //    and another permanently in the same step, the step holds and the next tick
+  //    will re-attempt the permanent channel once more (RETRY_CAP_MS backstop
+  //    handles the ultimate force-advance for such mixed cases).
+  //
+  //  CASE 3 -- some transient failures (with or without permanent failures):
+  //    advance ONLY if at least one channel actually SENT. If nothing sent (all
+  //    failed/permanently-failed, or skipped+failed with no send), do NOT advance,
+  //    so the next cron tick retries the transiently-failed channel(s).
+  //
+  // Old expression (CASE 2 merged into CASE 3):
+  //   failed === 0 ? resolved > 0 : sent > 0
+  // New expression (CASE 2 split out):
+  //   failed === 0 && permanentFailed === 0 ? resolved > 0
+  //   : failed === 0                        ? (resolved + permanentFailed) > 0
+  //   :                                       sent > 0
+  const shouldAdvance =
+    failed === 0 && permanentFailed === 0
+      ? resolved > 0
+      : failed === 0
+        ? (resolved + permanentFailed) > 0
+        : sent > 0;
+
   if (shouldAdvance) {
     await advanceLeadState(lead.id, stepIndex, config.steps.length, config, ctx);
   } else if (failed > 0) {
-    // Retry cap (ENG-05 / ENTRY-2): nothing sent and at least one channel failed,
-    // so normally we hold the step for the next tick to retry. But if this step
-    // has been failing longer than RETRY_CAP_MS, force past it: a permanently
-    // unroutable channel (e.g. a phone toE164UK rejects, or a dead mailbox) must
-    // not wedge the lead here forever. The lead then advances and, if every
-    // channel keeps failing, reaches 'unreachable' at exhaustion.
+    // Retry cap (ENG-05 / ENTRY-2): nothing sent and at least one channel failed
+    // transiently, so normally we hold the step for the next tick to retry. But if
+    // this step has been failing longer than RETRY_CAP_MS, force past it: a
+    // permanently unroutable channel (e.g. a phone toE164UK rejects, or a dead
+    // mailbox) must not wedge the lead here forever. The lead then advances and, if
+    // every channel keeps failing, reaches 'unreachable' at exhaustion.
+    // Note: if the only failures were permanent (failed === 0), shouldAdvance above
+    // already covers the advance -- this branch only runs for transient failures.
     const oldest = await oldestStepAttemptMs(lead.id, config.sequenceName, stepIndex);
     if (oldest !== null && Date.now() - oldest >= RETRY_CAP_MS) {
       await recordLeadContactEvent(lead.id, "send_failed", null, {

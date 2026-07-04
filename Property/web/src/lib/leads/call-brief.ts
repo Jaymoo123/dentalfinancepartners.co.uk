@@ -8,8 +8,8 @@
  *
  * renderBriefSection: pure render helper. Takes the brief (or null) and
  * returns the HTML block and plain-text equivalent ready to splice into the
- * handoff email. Returns empty strings when brief is null so the caller can
- * interpolate safely without extra conditionals in the template.
+ * internal ops email. Returns empty strings when brief is null so the caller
+ * can interpolate safely without extra conditionals in the template.
  */
 
 import { z } from "zod";
@@ -66,8 +66,8 @@ const SYSTEM_PROMPT =
  * enquiry (the three labelled answers from the guided composer). The verbatim
  * text is what lets the opening line reference their own words; the enrichment
  * summary alone is a lossy paraphrase. Other inputs: intent category and
- * quality score, readiness grade and reasons, best call window, booked slot
- * label, top pages read, and verbatim reply excerpts from the nurture sequence.
+ * quality score, best call window, booked slot label, top pages read, and
+ * verbatim reply excerpts from the nurture sequence.
  *
  * Returns null on any error or QA failure.
  */
@@ -80,7 +80,6 @@ export async function buildCallBrief(
 
   try {
     const enr = dossier.enrichment;
-    const readiness = dossier.readiness;
 
     const replyLines = dossier.replies
       .slice(0, 3)
@@ -97,8 +96,6 @@ export async function buildCallBrief(
       enr.intent_category ? `Intent category: ${enr.intent_category}` : null,
       enr.quality_score != null ? `Quality score: ${enr.quality_score}/5` : null,
       enr.summary ? `AI summary of their enquiry: ${enr.summary}` : null,
-      `Readiness grade: ${readiness.grade} (${readiness.score}/10)`,
-      `Why this grade: ${readiness.reasons.join("; ")}`,
       dossier.callWindow
         ? `Best call window from their response history: ${dossier.callWindow}`
         : null,

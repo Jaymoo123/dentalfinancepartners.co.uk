@@ -407,34 +407,25 @@ Speed-to-reply is the strongest predictor of conversion in inbound lead manageme
 
 ---
 
-## 11. Readiness dossier (Grades A, B, C)
+## 11. Lead dossier (ungraded evidence pack) and the two-email handover
 
 ### What it does
 
-`gatherLeadDossier` in `Property/web/src/lib/leads/dossier.ts` assembles every signal held about a lead and computes an explainable readiness grade. The dossier is rendered into the "READY FOR DJH" handoff email.
+`gatherLeadDossier` in `Property/web/src/lib/leads/dossier.ts` assembles every signal held about a lead into an ungraded evidence pack. The dossier feeds the internal ops email sent to the operator when a lead becomes contactable.
 
-`computeReadiness` is a pure, deterministic function. Each point comes with an explicit reason string.
+Signals gathered: verification (phone/email status and carrier), AI enrichment (intent category, quality score, Companies House match), on-site journey (sessions, page views, top pages, calculator usage), conversation timeline (sends, replies, bookings, confirms), best call window, and response latency.
 
-### Scoring model (from `dossier.ts`)
+### Two-email handover
 
-| Signal | Points | Reason string |
-|---|---|---|
-| phone verified as valid mobile | +2 | "Verified live UK mobile" |
-| phone verified as landline | +1 | "Verified landline" |
-| phone is VoIP | -1 | "VoIP number, calls may not land reliably" |
-| phone failed verification | -2 | "Phone failed verification" |
-| email deliverable | +1 | "Email deliverable" |
-| email undeliverable | -1 | "Email bounced verification" |
-| booked a slot | +3 | "Booked a callback slot themselves" |
-| replied by SMS/WhatsApp | +2 | "Replied by SMS/WhatsApp from the verified number" |
-| confirmed via email one-tap | +1 | "Confirmed interest via one-tap email link" |
-| response within 1 hour of enquiring | +1 | "Responded within an hour of enquiring" |
-| totalEngagedMs >= 5 min OR sessions >= 2 | +1 | "Researched the site before enquiring (repeat/engaged visitor)" |
-| calculator events > 0 | +1 | "Used our tax calculator(s), numbers in hand" |
-| AI enrichment quality_score >= 4 | +1 | "AI triage rates the enquiry {score}/5" |
-| message length >= 200 chars | +1 | "Detailed written enquiry" |
+When a lead passes the contactability gate, `sendContactableHandoff` in `Property/web/src/lib/leads/handoff.ts` sends the operator TWO emails:
 
-Grade thresholds: A >= 7, B >= 4, C < 4. Score is clamped to [0, 10].
+1. **Forwardable brief** (subject `New qualified enquiry: {name}`). Built by `buildForwardableBrief`, rendered via the branded service-email shell. Annex-A-safe by construction: name, phone (normalised E.164), email, booked call slot (if any), the source page, and the verbatim enquiry. No verification statuses, no journey, no transcript, no buttons. The operator forwards this email to DJH as-is.
+
+2. **Internal ops email** (subject `[Internal] {name}: log hand-over and context`). Built by `buildInternalOpsEmail`. Opens with an amber boundary box stating that only the separate brief may be forwarded. Carries the full dossier: verification detail (status/carrier), response latency, best call window, enrichment and Companies House match, on-site journey, the conversation timeline, and the one-click "I have forwarded this to DJH" log button. Never forwarded.
+
+The brief is sent first (3 attempts with backoff). If it fails after retries the handoff reports `sent: false` and the existing failure alert fires. If the brief lands but the internal email fails, the result carries `internal: { sent: false, reason }`; the lead is still recorded as handed off, a `send_failed` event with `kind: "handoff_internal_failed"` is logged, and the operator receives an alert containing a freshly minted forwarded-log URL so the hand-over can still be logged.
+
+A hand-over can be re-sent for a `contactable` or `forwarded` lead via `POST /api/leads/handoff/resend` (x-internal-token guarded); a successful re-send records an `operator_update` event with `kind: "handoff_resent"`.
 
 ### Best call window
 
@@ -446,13 +437,15 @@ Grade thresholds: A >= 7, B >= 4, C < 4. Score is clamped to [0, 10].
 
 ### What it does
 
-`buildCallBrief` in `Property/web/src/lib/leads/call-brief.ts` generates a four-field structured brief to include in the handoff email. It uses the lead's verbatim enquiry text, enrichment data, readiness grade, best call window, booking slot label (if any), top pages read, and verbatim reply transcript (up to 3 replies).
+`buildCallBrief` in `Property/web/src/lib/leads/call-brief.ts` generates a four-field structured brief to include in the internal ops email. It uses the lead's verbatim enquiry text, enrichment data, best call window, booking slot label (if any), top pages read, and verbatim reply transcript (up to 3 replies).
 
 Four fields, each max 300 chars: `opening` (natural first sentence for DJH to say), `theirGoal` (one sentence), `suggestedAngle` (tone and focus, no advice), `bestWindow` (when to call and why).
 
+Inputs: verbatim enquiry text, enrichment data (intent category, quality score, summary), best call window, booking slot label (if any), top pages read, and verbatim reply excerpts (up to 3 replies).
+
 ### Model and QA
 
-`generateJson` with `model: "sonnet"`, `maxTokens: 512`. The QA gate runs with `kind: "brief"` and `requireBookingCta: false`. Combined field text must not exceed 1200 chars and must pass all banned-pattern checks. Returns null on any failure; the handoff email renders an empty string in that case.
+`generateJson` with `model: "sonnet"`, `maxTokens: 512`. The QA gate runs with `kind: "brief"` and `requireBookingCta: false`. Combined field text must not exceed 1200 chars and must pass all banned-pattern checks. Returns null on any failure; the internal ops email renders an empty string in that case.
 
 ### Decisions and tradeoffs
 

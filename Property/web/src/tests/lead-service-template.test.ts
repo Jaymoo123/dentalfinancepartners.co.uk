@@ -188,3 +188,44 @@ describe("escaping", () => {
     expect(html).not.toContain("Rates < 20%");
   });
 });
+
+describe("detailRows", () => {
+  it("absent: no extra table rows injected (byte-identical to baseline)", () => {
+    const { html: withoutRows } = renderLeadServiceEmail(BASE);
+    const { html: withUndefined } = renderLeadServiceEmail({ ...BASE, detailRows: undefined });
+    expect(withoutRows).toBe(withUndefined);
+  });
+
+  it("present: renders a table with label and value columns", () => {
+    const { html, text } = renderLeadServiceEmail({
+      ...BASE,
+      detailRows: [
+        { label: "Name", value: "Jane Smith" },
+        { label: "Phone", value: "+447700900999" },
+      ],
+    });
+    expect(html).toContain("Jane Smith");
+    expect(html).toContain("+447700900999");
+    expect(html).toContain("Name");
+    expect(html).toContain("Phone");
+    expect(text).toContain("Name: Jane Smith");
+    expect(text).toContain("Phone: +447700900999");
+  });
+
+  it("escapes HTML-sensitive characters in labels and values", () => {
+    const { html } = renderLeadServiceEmail({
+      ...BASE,
+      detailRows: [{ label: "From <page>", value: "Rate & relief" }],
+    });
+    expect(html).toContain("From &lt;page&gt;");
+    expect(html).toContain("Rate &amp; relief");
+    expect(html).not.toContain("From <page>");
+    expect(html).not.toContain("Rate & relief");
+  });
+
+  it("empty array: no detail table injected", () => {
+    const { html: withEmpty } = renderLeadServiceEmail({ ...BASE, detailRows: [] });
+    const { html: withoutRows } = renderLeadServiceEmail(BASE);
+    expect(withEmpty).toBe(withoutRows);
+  });
+});

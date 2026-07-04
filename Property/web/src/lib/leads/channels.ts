@@ -16,6 +16,7 @@
  */
 
 import type { ChannelSender } from "@accounting-network/web-shared/lead-nurture/config";
+import { PermanentSendError } from "@accounting-network/web-shared/lead-nurture/config";
 import { getResend } from "@/lib/resend";
 
 function flagOn(name: string): boolean {
@@ -89,6 +90,19 @@ export function toE164UK(raw: string): string | null {
 
 // ── Twilio (SMS + WhatsApp) ──────────────────────────────────────────────────
 
+/**
+ * Twilio error codes that represent permanent, non-retriable rejections. A send
+ * that hits one of these will never succeed regardless of how many times it is
+ * retried, so we throw PermanentSendError to let the engine advance immediately
+ * instead of burning hourly cron ticks up to the 6 h RETRY_CAP_MS ceiling.
+ *
+ *  21211 -- invalid To phone number (the number itself is malformed or unassigned)
+ *  21408 -- permission (geo-permission) not enabled for this region/country
+ *  21610 -- message body or number is blacklisted (recipient unsubscribed via STOP)
+ *  21614 -- To number is not a valid mobile number capable of receiving SMS
+ */
+export const PERMANENT_TWILIO_ERROR_CODES = new Set([21211, 21408, 21610, 21614]);
+
 export interface TwilioAuth {
   accountSid: string;
   /** Basic-auth username: the AC... Account SID, or an SK... API Key SID. */
@@ -141,8 +155,22 @@ async function twilioSendMessage(form: Record<string, string>): Promise<{ id?: s
     },
   );
   if (!res.ok) {
-    const body = await res.text().catch(() => "");
-    throw new Error(`Twilio send failed (${res.status}): ${body.slice(0, 300)}`);
+    const bodyText = await res.text().catch(() => "");
+    let parsed: { code?: unknown; message?: unknown } = {};
+    try {
+      parsed = JSON.parse(bodyText) as { code?: unknown; message?: unknown };
+    } catch {
+      // Not valid JSON -- fall through to the generic throw below.
+    }
+    const code = typeof parsed.code === "number" ? parsed.code : undefined;
+    if (code !== undefined && PERMANENT_TWILIO_ERROR_CODES.has(code)) {
+      const detail =
+        typeof parsed.message === "string"
+          ? parsed.message
+          : bodyText.slice(0, 200);
+      throw new PermanentSendError(`Twilio ${code}: ${detail}`, code);
+    }
+    throw new Error(`Twilio send failed (${res.status}): ${bodyText.slice(0, 300)}`);
   }
   const data = (await res.json()) as { sid?: string };
   return data.sid ? { id: data.sid } : null;
@@ -192,8 +220,13 @@ async function sendWhatsApp(
 
 /**
  * Build the Property lead-nurture channel sender.
- * @param opts.live  When false (test leads), every channel is skipped — no real
+ * @param opts.live  When false (test leads), every channel is skipped -- no real
  *                   provider is ever contacted, but the state machine advances.
+ *
+ * Future option (NOT built): before calling sendSms, check whether `to` resolves
+ * to a non-+44 number and return { skipped: true } rather than attempting the
+ * send. This would suppress the 21408 (geo-permission) rejection at source for
+ * international numbers and avoid the PermanentSendError path entirely.
  */
 export function buildLeadChannelSender(opts?: { live?: boolean }): ChannelSender {
   const live = opts?.live !== false;

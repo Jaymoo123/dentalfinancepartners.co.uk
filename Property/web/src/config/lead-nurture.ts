@@ -432,7 +432,8 @@ function whatsappTemplate(name: string, vars: string[]): LeadStepMessage {
 
 // ── The sequence ──────────────────────────────────────────────────────────────
 // 8 steps; step 0 = T0 email (instant, fires at submit), step 1 = T0 SMS
-// (fires instantly if inside send window, else cron fires at next window open).
+// (fires unconditionally at submit regardless of the send window; the hourly
+// cron dispatchGate keeps actual delivery inside the UK window).
 // Cumulative delay hours from step 0: 0, 0, 4, 24, 48, 96, 168, 264.
 
 const STEPS: LeadNurtureStep[] = [

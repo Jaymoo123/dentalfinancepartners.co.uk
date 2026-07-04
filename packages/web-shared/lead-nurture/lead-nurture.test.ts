@@ -129,6 +129,7 @@ import { processLeadStep, recordLeadContactEvent } from "./send.js";
 import { runLeadNurtureCron } from "./cron.js";
 import { mintLeadToken, verifyLeadToken, getLeadTokenSecret } from "./tokens.js";
 import type { ChannelSender, LeadMessageContext, LeadNurtureConfig, NurtureLead } from "./config.js";
+import { PermanentSendError, isPermanentSendError } from "./config.js";
 
 // ── Fixtures ─────────────────────────────────────────────────────────────────
 const CFG: LeadNurtureConfig = {
@@ -425,6 +426,104 @@ describe("advanceLeadState: config.nextActionAt overrides the default schedule",
     const maxExpected = after + nextStep.delayHours * 3_600_000;
     expect(recordedAt).toBeGreaterThanOrEqual(minExpected);
     expect(recordedAt).toBeLessThanOrEqual(maxExpected);
+  });
+});
+
+// ── Permanent send failures ──────────────────────────────────────────────────
+describe("processLeadStep: permanent send failures", () => {
+  it("(a) SMS-only step: permanent failure marks row failed, records exactly one send_failed with permanent:true, and advances the step immediately", async () => {
+    const cfgSms: LeadNurtureConfig = {
+      ...CFG,
+      steps: [
+        { key: "instant", delayHours: 0, buildMessages: () => [{ channel: "sms", body: "Hi" }] },
+        { key: "d1", delayHours: 24, buildMessages: () => [{ channel: "sms", body: "nudge" }] },
+      ],
+    };
+    seedState(0);
+    const permSender: ChannelSender = {
+      send: vi.fn(async () => { throw new PermanentSendError("Twilio 21408: region not enabled", 21408); }),
+    };
+    const dispatched = await processLeadStep(LEAD, 0, cfgSms, permSender, CTX);
+
+    // No real send succeeded.
+    expect(dispatched).toBe(0);
+    // The send row must be marked failed (permanent-fail still writes 'failed' to the DB row).
+    expect(store.sends).toHaveLength(1);
+    expect(store.sends[0].status).toBe("failed");
+    // Exactly one send_failed event, carrying permanent:true.
+    const permEvents = store.events.filter(
+      (e) => e.event_type === "send_failed" && (e.meta as Record<string, unknown>)?.permanent === true,
+    );
+    expect(permEvents).toHaveLength(1);
+    expect((permEvents[0].meta as Record<string, unknown>).code).toBe(21408);
+    // Step must have advanced immediately (not held for retry).
+    expect(store.states[0].step).toBe(1);
+    expect(store.states[0].status).toBe("active");
+  });
+
+  it("(b) email sent + SMS permanent-fail: step still advances", async () => {
+    seedState(0);
+    // Step 0 has email + sms; email sends fine, sms is permanent.
+    const mixedSender: ChannelSender = {
+      send: vi.fn(async (m) => {
+        if (m.channel === "sms") throw new PermanentSendError("Twilio 21211: invalid To", 21211);
+        return { id: "email-ok" };
+      }),
+    };
+    const dispatched = await processLeadStep(LEAD, 0, CFG, mixedSender, CTX);
+
+    // Email sent successfully.
+    expect(dispatched).toBe(1);
+    expect(store.states[0].step).toBe(1);
+    expect(store.states[0].status).toBe("active");
+    // One permanent event recorded.
+    const permEvents = store.events.filter(
+      (e) => e.event_type === "send_failed" && (e.meta as Record<string, unknown>)?.permanent === true,
+    );
+    expect(permEvents).toHaveLength(1);
+  });
+
+  it("(c) WhatsApp skipped + SMS permanent-fail: step advances without any real send", async () => {
+    // Deliberate relaxation: a step with no transient failures and at least one
+    // permanent failure (plus any number of skips) is considered resolved --
+    // retrying will never yield a different result for the permanent channel.
+    const cfgWaSms: LeadNurtureConfig = {
+      ...CFG,
+      steps: [
+        {
+          key: "instant",
+          delayHours: 0,
+          buildMessages: () => [
+            { channel: "whatsapp", body: "Hi" },
+            { channel: "sms", body: "Hi" },
+          ],
+        },
+        { key: "d1", delayHours: 24, buildMessages: () => [{ channel: "sms", body: "nudge" }] },
+      ],
+    };
+    seedState(0);
+    const skipPermSender: ChannelSender = {
+      send: vi.fn(async (m) => {
+        if (m.channel === "whatsapp") return { skipped: true };
+        throw new PermanentSendError("Twilio 21614: not a valid mobile", 21614);
+      }),
+    };
+    const dispatched = await processLeadStep(LEAD, 0, cfgWaSms, skipPermSender, CTX);
+
+    expect(dispatched).toBe(0); // no real send
+    expect(store.states[0].step).toBe(1); // still advances
+    expect(store.states[0].status).toBe("active");
+  });
+
+  it("(d) isPermanentSendError: plain object with marker returns true; generic Error returns false", () => {
+    // Marker-property check is robust across module-boundary duplication.
+    expect(isPermanentSendError({ permanentSendFailure: true })).toBe(true);
+    expect(isPermanentSendError(new PermanentSendError("test", 21408))).toBe(true);
+    expect(isPermanentSendError(new Error("generic"))).toBe(false);
+    expect(isPermanentSendError(null)).toBe(false);
+    expect(isPermanentSendError(undefined)).toBe(false);
+    expect(isPermanentSendError({ permanentSendFailure: false })).toBe(false);
+    expect(isPermanentSendError("string")).toBe(false);
   });
 });
 

@@ -224,6 +224,42 @@ export interface ChannelSender {
 }
 
 /**
+ * Thrown by a channel sender to signal a PERMANENT provider rejection: one where
+ * retrying will never succeed (e.g. Twilio 21408 region permission denied, 21211
+ * invalid To number). The engine catches this, marks the send row 'failed' once,
+ * records a single send_failed event with permanent:true, and advances the step
+ * immediately rather than holding it for hourly retries.
+ *
+ * The marker property `permanentSendFailure` is used by `isPermanentSendError`
+ * for the membership check so the guard is robust across module-duplication
+ * scenarios where instanceof may give a false negative.
+ */
+export class PermanentSendError extends Error {
+  readonly permanentSendFailure = true;
+  readonly providerCode?: number;
+
+  constructor(message: string, providerCode?: number) {
+    super(message);
+    this.name = "PermanentSendError";
+    this.providerCode = providerCode;
+  }
+}
+
+/**
+ * Returns true when `err` carries the permanentSendFailure marker. Uses a
+ * property check rather than instanceof so it works correctly when the same
+ * class is bundled into multiple module instances (e.g. in edge runtimes or
+ * monorepo symlink setups where the class identity differs).
+ */
+export function isPermanentSendError(err: unknown): boolean {
+  return (
+    typeof err === "object" &&
+    err !== null &&
+    (err as Record<string, unknown>)["permanentSendFailure"] === true
+  );
+}
+
+/**
  * Read a required string from an environment variable, or throw. Mirrors the
  * subscriber engine's requireEnv so the lead engine refuses to run half-armed.
  */

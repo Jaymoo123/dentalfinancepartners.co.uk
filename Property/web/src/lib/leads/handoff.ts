@@ -1,12 +1,17 @@
 /**
- * Qualified lead handoff email. Fired once, when a lead becomes contactable.
- * Sends the owner a full lead brief: the enquiry, verification status,
- * AI + Companies House enrichment, the on-site journey (what they read, which
- * calculators they used), the conversation so far (verbatim replies with
- * timestamps), a best call window, and an explainable quality score.
+ * Qualified lead handoff: fires once when a lead becomes contactable.
  *
- * Test leads and an unconfigured Resend are skipped (no send), so the
- * synthetic probe can assert the handoff fired without emailing anyone.
+ * Sends TWO emails to the operator:
+ *
+ * 1. Forwardable brief -- Annex-A-safe: name, contact details and the enquiry
+ *    only. Rendered via the branded service-email shell. May be forwarded to
+ *    DJH as-is.
+ *
+ * 2. Internal ops email -- plain styled, carries all internal context: verification
+ *    detail, journey, enrichment, conversation timeline, and the one-click
+ *    "I have forwarded this to DJH" log button. Must NOT be forwarded.
+ *
+ * Test leads and an unconfigured Resend are skipped (neither email is sent).
  */
 
 import { getResend, getFromAddress } from "@/lib/resend";
@@ -14,6 +19,7 @@ import { resolveLeadTo } from "@/lib/lead-routing";
 import { adminSelect } from "@/lib/supabase/admin";
 import { getSiteUrl } from "@/config/niche-loader";
 import { mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
+import { renderLeadServiceEmail } from "@/lib/emails/lead-service-template";
 import { gatherLeadDossier, humanisePath, formatLatency, type LeadDossier } from "./dossier";
 
 interface LeadRow {
@@ -39,12 +45,6 @@ function esc(s: unknown): string {
 function row(label: string, value: string): string {
   return `<tr><td style="padding:4px 12px 4px 0;color:#64748b;vertical-align:top;">${esc(label)}</td><td style="padding:4px 0;font-weight:600;">${value}</td></tr>`;
 }
-
-const GRADE_COLOURS: Record<string, string> = {
-  A: "#047857",
-  B: "#b45309",
-  C: "#b91c1c",
-};
 
 function fmtTs(iso: string): string {
   try {
@@ -82,47 +82,72 @@ export interface HandoffResult {
   skipped?: "test" | "no-resend" | "no-lead";
   messageId?: string;
   reason?: string;
+  internal?: { sent: boolean; reason?: string };
 }
 
-export async function sendContactableHandoff(
-  leadId: string,
+// ── Pure email builders ───────────────────────────────────────────────────────
+
+/** Annex-A-safe forwardable brief. Contains name, contact details, and the
+ *  enquiry only. No grade, no verification status, no internal content. */
+export function buildForwardableBrief(
+  lead: LeadRow,
+  d: LeadDossier,
+): { subject: string; html: string; text: string } {
+  const subject = `New qualified enquiry: ${lead.full_name}`;
+
+  const detailRows: Array<{ label: string; value: string }> = [
+    { label: "Name", value: lead.full_name },
+    { label: "Phone", value: d.verification.phone_e164 || lead.phone },
+    { label: "Email", value: lead.email },
+  ];
+  if (d.bookingStart) {
+    detailRows.push({ label: "Booked call", value: fmtTs(d.bookingStart) });
+  }
+  if (lead.source_url) {
+    detailRows.push({ label: "From page", value: lead.source_url });
+  }
+
+  const { html, text } = renderLeadServiceEmail({
+    preheader: `New qualified enquiry from ${lead.full_name} via propertytaxpartners.co.uk.`,
+    greeting: "Hello,",
+    paragraphs: [
+      "A new qualified enquiry from the Property Tax Partners website.",
+      `Their enquiry: ${lead.message || "(no message)"}`,
+    ],
+    detailRows,
+    signoff: "Property Tax Partners",
+    footerNote: "This enquiry was submitted via propertytaxpartners.co.uk.",
+  });
+
+  return { subject, html, text };
+}
+
+/** Internal ops email. Contains all context that must NOT be forwarded to DJH:
+ *  verification detail, journey, enrichment, conversation history, and the
+ *  one-click forwarded-log button. */
+export function buildInternalOpsEmail(
+  lead: LeadRow,
+  d: LeadDossier,
   reason: string,
-): Promise<HandoffResult> {
-  const leadRes = await adminSelect<LeadRow>("leads", {
-    id: `eq.${leadId}`,
-    select: "id,full_name,email,phone,role,message,source,source_url,created_at,visitor_id",
-    limit: "1",
-  });
-  const lead = leadRes.data[0];
-  if (!lead) return { sent: false, to: "", skipped: "no-lead" };
-
-  const to = resolveLeadTo(lead.source);
-
-  // Best-effort dossier (never blocks the handoff; sparse when data is missing).
-  const d = await gatherLeadDossier({
-    id: lead.id,
-    created_at: lead.created_at,
-    visitor_id: lead.visitor_id,
-    message: lead.message,
-  });
+  forwardedUrl: string | null,
+): { subject: string; html: string; text: string } {
+  const subject = `[Internal] ${lead.full_name}: log hand-over and context`;
 
   const ver = d.verification;
   const enr = d.enrichment;
-  const gradeColour = GRADE_COLOURS[d.readiness.grade] || "#047857";
 
-  const bookedLine = d.bookingStart
-    ? `Booked callback: <strong>${esc(fmtTs(d.bookingStart))}</strong>`
-    : "";
+  const boundaryBoxHtml = `<div style="background:#fffbeb;border:2px solid #f59e0b;border-radius:6px;padding:12px 14px;font-size:14px;margin-bottom:16px;color:#92400e;">
+<strong>Important:</strong> Forward ONLY the separate email titled "New qualified enquiry: ${esc(lead.full_name)}" to DJH. Under the data-sharing agreement (Annex A) that means name, contact details and the enquiry only. Everything in THIS email is internal: verification detail, journey, enrichment and the conversation history must not be forwarded.
+</div>`;
 
   const detail = [
-    row("Name", esc(lead.full_name)),
-    row(
-      "Phone",
-      `${esc(ver.phone_e164 || lead.phone)} ${ver.phone_status ? `(${esc(ver.phone_status)}${ver.phone_carrier ? ", " + esc(ver.phone_carrier) : ""})` : ""}`,
-    ),
-    row("Email", `${esc(lead.email)} ${ver.email_status ? `(${esc(ver.email_status)})` : ""}`),
-    row("Role", esc(lead.role || "")),
-    row("How they responded", `<strong style="color:#047857;">${esc(reason)}</strong>`),
+    `<p style="font-size:16px;"><strong style="color:#047857;">Contact details verified. Actively responded and ready for a call.</strong></p>`,
+    `<p style="font-size:14px;color:#334155;">How they responded: <strong>${esc(reason)}</strong></p>`,
+  ].join("\n");
+
+  const verDetail = [
+    row("Phone (verified)", `${esc(ver.phone_e164 || lead.phone)} ${ver.phone_status ? `(${esc(ver.phone_status)}${ver.phone_carrier ? ", " + esc(ver.phone_carrier) : ""})` : ""}`),
+    row("Email (verified)", `${esc(lead.email)} ${ver.email_status ? `(${esc(ver.email_status)})` : ""}`),
     d.responseLatencyMs !== null
       ? row("Response time", esc(`${formatLatency(d.responseLatencyMs)} after enquiring`))
       : "",
@@ -144,7 +169,6 @@ export async function sendContactableHandoff(
         )
       : "",
     journeyStory(d) ? row("On-site journey", esc(journeyStory(d))) : "",
-    lead.source_url ? row("From page", esc(lead.source_url)) : "",
   ]
     .filter(Boolean)
     .join("");
@@ -173,23 +197,6 @@ export async function sendContactableHandoff(
 </div>`
     : "";
 
-  const reasonsHtml = d.readiness.reasons.length
-    ? `<div style="margin:12px 0;">
-<div style="color:#64748b;font-size:13px;margin-bottom:4px;">Why this grade</div>
-<ul style="margin:0;padding-left:18px;font-size:13px;color:#334155;">${d.readiness.reasons
-        .map((r) => `<li>${esc(r)}</li>`)
-        .join("")}</ul>
-</div>`
-    : "";
-
-  // Operator "mark as forwarded to DJH" one-click link (AN-2). Best-effort: if
-  // the token secret is unset the button is simply omitted from the email.
-  let forwardedUrl: string | null = null;
-  try {
-    forwardedUrl = `${getSiteUrl().replace(/\/$/, "")}/api/leads/forwarded/${mintLeadToken(lead.id, "forwarded")}`;
-  } catch {
-    forwardedUrl = null;
-  }
   const forwardedButton = forwardedUrl
     ? `<div style="margin:22px 0 4px;">
 <a href="${forwardedUrl}" style="display:inline-block;background:#047857;color:#ffffff;text-decoration:none;border-radius:6px;padding:11px 20px;font-size:14px;font-weight:600;">I have forwarded this to DJH</a>
@@ -198,27 +205,21 @@ export async function sendContactableHandoff(
     : "";
 
   const html = `<div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#0f172a;max-width:640px;">
-<p style="font-size:16px;">
-<span style="display:inline-block;background:${gradeColour};color:#ffffff;border-radius:4px;padding:2px 10px;font-weight:700;margin-right:8px;">Grade ${esc(d.readiness.grade)} &middot; ${esc(d.readiness.score)}/10</span>
-<strong style="color:#047857;">Contact details verified. Actively responded and ready for a call.</strong>
-</p>
-${bookedLine ? `<p>${bookedLine}</p>` : ""}
-<table style="border-collapse:collapse;font-size:14px;margin:12px 0;">${detail}</table>
-<div style="background:#f8fafc;border:1px solid #e5e7eb;border-radius:6px;padding:12px 14px;font-size:14px;">
-<div style="color:#64748b;margin-bottom:4px;">Their enquiry</div>
-<div>${esc(lead.message || "(no message)")}</div>
-</div>
+${boundaryBoxHtml}
+${detail}
+<table style="border-collapse:collapse;font-size:14px;margin:12px 0;">${verDetail}</table>
 ${topPagesHtml}
 ${timelineHtml}
-${reasonsHtml}
 ${forwardedButton}
 </div>`;
 
   const lastReply = d.replies.length ? d.replies[d.replies.length - 1] : null;
   const text =
-    `New qualified enquiry: ${lead.full_name}\n` +
-    `Grade ${d.readiness.grade} (${d.readiness.score}/10)\n` +
-    `Phone: ${ver.phone_e164 || lead.phone} (${ver.phone_status || "?"})\n` +
+    `[Internal] ${lead.full_name}: log hand-over and context\n\n` +
+    `IMPORTANT: Forward ONLY the separate email titled "New qualified enquiry: ${lead.full_name}" to DJH. Everything in this message is internal and must not be forwarded.\n\n` +
+    `Contact details verified. Actively responded and ready for a call.\n` +
+    `How they responded: ${reason}\n` +
+    `Phone: ${ver.phone_e164 || lead.phone} (${ver.phone_status || "?"}${ver.phone_carrier ? ", " + ver.phone_carrier : ""})\n` +
     `Email: ${lead.email} (${ver.email_status || "?"})\n` +
     (d.bookingStart ? `Booked callback: ${fmtTs(d.bookingStart)}\n` : "") +
     (d.responseLatencyMs !== null
@@ -227,36 +228,106 @@ ${forwardedButton}
     (d.callWindow ? `${d.callWindow}.\n` : "") +
     (lastReply ? `Last reply (${lastReply.channel}): "${lastReply.body}"\n` : "") +
     (journeyStory(d) ? `On-site journey: ${journeyStory(d)}\n` : "") +
-    `Enquiry: ${lead.message || "(none)"}` +
-    (forwardedUrl ? `\n\nOnce forwarded to DJH, log it here: ${forwardedUrl}` : "");
+    (forwardedUrl ? `\nOnce forwarded to DJH, log it here: ${forwardedUrl}` : "");
 
-  // Do not actually email for synthetic test leads, or if Resend is unconfigured.
-  if (lead.source === "test") return { sent: false, to, skipped: "test" };
-  if (!process.env.RESEND_API_KEY) return { sent: false, to, skipped: "no-resend" };
+  return { subject, html, text };
+}
 
-  // Try up to 3 times with short backoffs before giving up gracefully.
-  // Total worst-case wait is ~1.1 s, well inside any route budget.
+// ── 3-attempt retry helper ────────────────────────────────────────────────────
+
+async function sendWithRetry(
+  payload: Parameters<ReturnType<typeof getResend>["emails"]["send"]>[0],
+): Promise<{ messageId?: string; error?: unknown }> {
   const backoffs = [300, 800];
   let lastError: unknown;
   for (let attempt = 0; attempt < 3; attempt++) {
     if (attempt > 0) {
       await new Promise<void>((resolve) => setTimeout(resolve, backoffs[attempt - 1]));
     }
-    const { data, error } = await getResend().emails.send({
-      from: getFromAddress(),
-      to,
-      subject: `New qualified enquiry: ${lead.full_name}`,
-      html,
-      text,
-    });
-    if (!error) return { sent: true, to, messageId: data?.id };
+    const { data, error } = await getResend().emails.send(payload);
+    if (!error) return { messageId: data?.id };
     lastError = error;
   }
-  const failReason =
-    lastError instanceof Error
-      ? lastError.message
-      : typeof lastError === "object" && lastError !== null && "message" in lastError
-        ? String((lastError as { message: unknown }).message)
-        : String(lastError ?? "send error");
-  return { sent: false, to, reason: failReason };
+  return { error: lastError };
+}
+
+function extractReason(err: unknown): string {
+  if (err instanceof Error) return err.message;
+  if (typeof err === "object" && err !== null && "message" in err) return String((err as { message: unknown }).message);
+  return String(err ?? "send error");
+}
+
+// ── Orchestrator ──────────────────────────────────────────────────────────────
+
+export async function sendContactableHandoff(
+  leadId: string,
+  reason: string,
+): Promise<HandoffResult> {
+  const leadRes = await adminSelect<LeadRow>("leads", {
+    id: `eq.${leadId}`,
+    select: "id,full_name,email,phone,role,message,source,source_url,created_at,visitor_id",
+    limit: "1",
+  });
+  const lead = leadRes.data[0];
+  if (!lead) return { sent: false, to: "", skipped: "no-lead" };
+
+  const to = resolveLeadTo(lead.source);
+
+  // Do not email for synthetic test leads, or if Resend is unconfigured.
+  if (lead.source === "test") return { sent: false, to, skipped: "test" };
+  if (!process.env.RESEND_API_KEY) return { sent: false, to, skipped: "no-resend" };
+
+  // Best-effort dossier (never blocks the handoff).
+  const d = await gatherLeadDossier({
+    id: lead.id,
+    created_at: lead.created_at,
+    visitor_id: lead.visitor_id,
+    message: lead.message,
+  });
+
+  // Mint the forwarded-log token (best-effort; omit button on failure).
+  let forwardedUrl: string | null = null;
+  try {
+    forwardedUrl = `${getSiteUrl().replace(/\/$/, "")}/api/leads/forwarded/${mintLeadToken(lead.id, "forwarded")}`;
+  } catch {
+    forwardedUrl = null;
+  }
+
+  // 1. Send the forwardable brief first.
+  const brief = buildForwardableBrief(lead, d);
+  const briefResult = await sendWithRetry({
+    from: getFromAddress(),
+    to,
+    subject: brief.subject,
+    html: brief.html,
+    text: brief.text,
+  });
+  if (briefResult.error) {
+    return { sent: false, to, reason: extractReason(briefResult.error) };
+  }
+
+  // 2. Send the internal ops email.
+  const ops = buildInternalOpsEmail(lead, d, reason, forwardedUrl);
+  const opsResult = await sendWithRetry({
+    from: getFromAddress(),
+    to,
+    subject: ops.subject,
+    html: ops.html,
+    text: ops.text,
+  });
+  if (opsResult.error) {
+    return {
+      sent: true,
+      to,
+      messageId: briefResult.messageId,
+      internal: { sent: false, reason: extractReason(opsResult.error) },
+    };
+  }
+
+  return {
+    sent: true,
+    to,
+    messageId: briefResult.messageId,
+    internal: { sent: true },
+  };
 }

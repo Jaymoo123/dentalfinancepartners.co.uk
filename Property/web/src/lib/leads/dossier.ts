@@ -1,113 +1,14 @@
 /**
- * Lead readiness dossier: gathers every signal we hold about a lead (verification,
+ * Lead dossier: gathers every signal we hold about a lead (verification,
  * AI + Companies House enrichment, on-site journey, sends, and the two-way
- * conversation) and distils it into an explainable readiness grade, a best
- * call window, and a chronological timeline. Consumed by the "READY FOR DJH"
- * handoff email so the operator forwards an evidence pack, not just a name.
+ * conversation) into an ungraded evidence pack. Consumed by the internal ops
+ * handoff email sent to the operator when a lead becomes contactable.
  *
  * All data gathering is best-effort: a missing table/view or a query error never
- * blocks the handoff, it just produces a sparser dossier. The scoring functions
- * are pure and unit-tested.
+ * blocks the handoff, it just produces a sparser dossier.
  */
 
 import { adminSelect } from "@/lib/supabase/admin";
-
-// ── Pure: readiness grade ────────────────────────────────────────────────────
-
-export type ResponseKind = "booked" | "replied" | "confirmed" | null;
-
-export interface ReadinessInput {
-  phoneStatus: string | null;
-  emailStatus: string | null;
-  bestResponse: ResponseKind;
-  /** ms from lead submit to their first two-way response; null if unknown. */
-  responseLatencyMs: number | null;
-  totalEngagedMs: number;
-  totalSessions: number;
-  calcEvents: number;
-  /** AI enrichment quality_score 0-5, when present. */
-  enrichmentQuality: number | null;
-  messageLength: number;
-}
-
-export interface Readiness {
-  score: number; // 0-10
-  grade: "A" | "B" | "C";
-  reasons: string[];
-}
-
-const HOUR_MS = 60 * 60 * 1000;
-
-/**
- * Deterministic, explainable 0-10 score. Every point comes with a reason so the
- * operator (and DJH) can see WHY a lead is graded the way it is.
- */
-export function computeReadiness(input: ReadinessInput): Readiness {
-  let score = 0;
-  const reasons: string[] = [];
-
-  if (input.phoneStatus === "valid_mobile") {
-    score += 2;
-    reasons.push("Verified live UK mobile");
-  } else if (input.phoneStatus === "valid_landline") {
-    score += 1;
-    reasons.push("Verified landline");
-  } else if (input.phoneStatus === "voip") {
-    score -= 1;
-    reasons.push("VoIP number, calls may not land reliably");
-  } else if (input.phoneStatus === "invalid") {
-    score -= 2;
-    reasons.push("Phone failed verification");
-  }
-
-  if (input.emailStatus === "deliverable") {
-    score += 1;
-    reasons.push("Email deliverable");
-  } else if (input.emailStatus === "undeliverable") {
-    score -= 1;
-    reasons.push("Email bounced verification");
-  }
-
-  if (input.bestResponse === "booked") {
-    score += 3;
-    reasons.push("Booked a callback slot themselves");
-  } else if (input.bestResponse === "replied") {
-    score += 2;
-    reasons.push("Replied by SMS/WhatsApp from the verified number");
-  } else if (input.bestResponse === "confirmed") {
-    score += 1;
-    reasons.push("Confirmed interest via one-tap email link");
-  }
-
-  if (input.responseLatencyMs !== null && input.responseLatencyMs <= HOUR_MS) {
-    score += 1;
-    reasons.push("Responded within an hour of enquiring");
-  }
-
-  if (input.totalEngagedMs >= 5 * 60 * 1000 || input.totalSessions >= 2) {
-    score += 1;
-    reasons.push("Researched the site before enquiring (repeat/engaged visitor)");
-  }
-
-  if (input.calcEvents > 0) {
-    score += 1;
-    reasons.push("Used our tax calculator(s), numbers in hand");
-  }
-
-  if (input.enrichmentQuality !== null && input.enrichmentQuality >= 4) {
-    score += 1;
-    reasons.push(`AI triage rates the enquiry ${input.enrichmentQuality}/5`);
-  }
-
-  if (input.messageLength >= 200) {
-    score += 1;
-    reasons.push("Detailed written enquiry");
-  }
-
-  score = Math.max(0, Math.min(10, score));
-  const grade: Readiness["grade"] = score >= 7 ? "A" : score >= 4 ? "B" : "C";
-  return { score, grade, reasons };
-}
 
 // ── Pure: best call window ───────────────────────────────────────────────────
 
@@ -234,7 +135,6 @@ export interface LeadDossier {
   responseLatencyMs: number | null;
   callWindow: string | null;
   touchesBeforeResponse: number;
-  readiness: Readiness;
 }
 
 interface DossierLead {
@@ -410,27 +310,6 @@ export async function gatherLeadDossier(lead: DossierLead): Promise<LeadDossier>
   timeline.sort((a, b) => new Date(a.ts).getTime() - new Date(b.ts).getTime());
   const cappedTimeline = timeline.slice(0, 25);
 
-  // Grade.
-  const bestResponse: ResponseKind = responses.some((e) => e.event_type === "booked")
-    ? "booked"
-    : responses.some((e) => e.event_type === "replied")
-      ? "replied"
-      : responses.some((e) => e.event_type === "confirmed")
-        ? "confirmed"
-        : null;
-
-  const readiness = computeReadiness({
-    phoneStatus: (ver.phone_status as string) || null,
-    emailStatus: (ver.email_status as string) || null,
-    bestResponse,
-    responseLatencyMs,
-    totalEngagedMs: journey?.totalEngagedMs ?? 0,
-    totalSessions: journey?.totalSessions ?? 0,
-    calcEvents,
-    enrichmentQuality: enr.quality_score != null ? Number(enr.quality_score) : null,
-    messageLength: (lead.message || "").length,
-  });
-
   const callWindow = bestCallWindow(responses.map((e) => new Date(e.ts)));
 
   return {
@@ -455,6 +334,5 @@ export async function gatherLeadDossier(lead: DossierLead): Promise<LeadDossier>
     responseLatencyMs,
     callWindow,
     touchesBeforeResponse,
-    readiness,
   };
 }

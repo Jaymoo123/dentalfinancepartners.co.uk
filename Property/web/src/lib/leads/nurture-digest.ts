@@ -235,16 +235,14 @@ export function composeDigestEmail(d: DigestData): {
     lines.push(`  Stuck in queue:  ${h.stuckLeads}`);
     lines.push(``);
 
+    const real24 = Math.max(0, h.sends24h - h.skipped24h);
     lines.push(`SEND ACTIVITY (last 24 h)`);
-    lines.push(`  Attempts:  ${h.sends24h}`);
-    lines.push(`  Sent:      ${h.sent24h}`);
-    lines.push(`  Failed:    ${h.failed24h}`);
-    lines.push(`  Skipped:   ${h.skipped24h}`);
+    lines.push(`  Attempts: ${real24} (${h.sent24h} sent, ${h.failed24h} failed) + ${h.skipped24h} skipped`);
     lines.push(``);
 
+    const real1h = Math.max(0, h.sends1h - h.skipped1h);
     lines.push(`SEND ACTIVITY (last 1 h)`);
-    lines.push(`  Attempts:  ${h.sends1h}`);
-    lines.push(`  Failed:    ${h.failed1h}`);
+    lines.push(`  Attempts: ${real1h} (${Math.max(0, real1h - h.failed1h)} sent, ${h.failed1h} failed) + ${h.skipped1h} skipped`);
     lines.push(``);
 
     lines.push(`DELIVERABILITY`);
@@ -263,8 +261,8 @@ export function composeDigestEmail(d: DigestData): {
     // Per-step bottleneck notes (one line each, only when actionable).
     const notes: string[] = [];
 
-    if (h.sends24h > 0 && h.failed24h > 0) {
-      const failPct = Math.round((h.failed24h / h.sends24h) * 100);
+    if (real24 > 0 && h.failed24h > 0) {
+      const failPct = Math.round((h.failed24h / real24) * 100);
       if (failPct >= 20) {
         notes.push(
           `${failPct}% failure rate on send attempts in 24 h. ` +
@@ -272,10 +270,10 @@ export function composeDigestEmail(d: DigestData): {
         );
       }
     }
-    if (h.sends1h > 0 && h.failed1h / h.sends1h > 0.25) {
-      const pct = Math.round((h.failed1h / h.sends1h) * 100);
+    if (real1h > 0 && h.failed1h / real1h > 0.25) {
+      const pct = Math.round((h.failed1h / real1h) * 100);
       notes.push(
-        `${pct}% failure rate in the last hour (${h.failed1h}/${h.sends1h}). ` +
+        `${pct}% failure rate in the last hour (${h.failed1h}/${real1h}). ` +
           `Sending may be impaired right now.`,
       );
     }
@@ -297,11 +295,11 @@ export function composeDigestEmail(d: DigestData): {
           `Review sending frequency and message relevance.`,
       );
     }
-    if (h.bounces24h > 0 && h.sends24h >= 20) {
-      const bouncePct = Math.round((h.bounces24h / h.sends24h) * 100);
+    if (h.bounces24h > 0 && real24 >= 20) {
+      const bouncePct = Math.round((h.bounces24h / real24) * 100);
       if (bouncePct >= 5) {
         notes.push(
-          `Hard bounce rate is ${bouncePct}% (${h.bounces24h}/${h.sends24h} in 24 h). ` +
+          `Hard bounce rate is ${bouncePct}% (${h.bounces24h}/${real24} in 24 h). ` +
             `Consider suppressing undeliverable addresses.`,
         );
       }
@@ -338,12 +336,32 @@ export function composeDigestEmail(d: DigestData): {
   }
   lines.push(``);
 
-  // Failed sends (last 7 days)
-  lines.push(`FAILED SENDS LAST 7 DAYS (${d.failedSends.length})`);
-  if (d.failedSends.length === 0) {
+  // Failed sends (last 7 days): dedupe by (leadId, step, channel), keep most
+  // recent event per group, append "(xN attempts)" when N > 1.
+  const dedupedFailedSends = ((): FailedSendRow[] => {
+    const groups = new Map<string, { row: FailedSendRow; count: number }>();
+    // Input is already ordered ts.desc from gatherDigestData, so the first
+    // occurrence of each key is the most recent event.
+    for (const f of d.failedSends) {
+      const key = `${f.leadId}|${f.step}|${f.channel}`;
+      const existing = groups.get(key);
+      if (!existing) {
+        groups.set(key, { row: f, count: 1 });
+      } else {
+        existing.count += 1;
+      }
+    }
+    return Array.from(groups.values()).map(({ row, count }) => ({
+      ...row,
+      reason: count > 1 ? `${row.reason} (x${count} attempts)` : row.reason,
+    }));
+  })();
+
+  lines.push(`FAILED SENDS LAST 7 DAYS (${dedupedFailedSends.length})`);
+  if (dedupedFailedSends.length === 0) {
     lines.push(`  None.`);
   } else {
-    for (const f of d.failedSends) {
+    for (const f of dedupedFailedSends) {
       const name = f.fullName ?? "(unknown)";
       lines.push(
         `  ${name} | ${f.channel} step ${f.step} | reason: ${f.reason} | ` +

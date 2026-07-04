@@ -1,7 +1,7 @@
 /**
- * Lead readiness dossier + reply-ack tests.
+ * Lead dossier (ungraded evidence pack) + reply-ack tests.
  *
- * The dossier's scoring/formatting functions are pure, so most of this file is
+ * The dossier's formatting functions are pure, so most of this file is
  * straight input -> output. acknowledgeReply is tested against the same
  * in-memory admin mock pattern as lead-nurture.test.ts, with the channel sender
  * and Resend mocked so nothing leaves the process.
@@ -87,7 +87,6 @@ vi.mock("@/lib/lead-routing", () => ({
 }));
 
 import {
-  computeReadiness,
   bestCallWindow,
   humanisePath,
   formatLatency,
@@ -99,74 +98,6 @@ beforeEach(() => {
   vi.clearAllMocks();
   senderSpy.mockResolvedValue({ id: "SM_test" });
   process.env.RESEND_API_KEY = "re_test";
-});
-
-// ── computeReadiness ─────────────────────────────────────────────────────────
-describe("computeReadiness", () => {
-  it("verified mobile + fast booking + engagement -> Grade A with reasons", () => {
-    const r = computeReadiness({
-      phoneStatus: "valid_mobile",
-      emailStatus: "deliverable",
-      bestResponse: "booked",
-      responseLatencyMs: 30 * 60 * 1000,
-      totalEngagedMs: 6 * 60 * 1000,
-      totalSessions: 3,
-      calcEvents: 2,
-      enrichmentQuality: 4,
-      messageLength: 250,
-    });
-    expect(r.grade).toBe("A");
-    expect(r.score).toBe(10); // clamped
-    expect(r.reasons.join(" ")).toMatch(/mobile/i);
-    expect(r.reasons.join(" ")).toMatch(/booked/i);
-  });
-
-  it("invalid phone + bounced email + no response -> Grade C", () => {
-    const r = computeReadiness({
-      phoneStatus: "invalid",
-      emailStatus: "undeliverable",
-      bestResponse: null,
-      responseLatencyMs: null,
-      totalEngagedMs: 0,
-      totalSessions: 0,
-      calcEvents: 0,
-      enrichmentQuality: null,
-      messageLength: 40,
-    });
-    expect(r.grade).toBe("C");
-    expect(r.score).toBe(0); // floored
-  });
-
-  it("VoIP number is penalised and the reason says so", () => {
-    const r = computeReadiness({
-      phoneStatus: "voip",
-      emailStatus: "deliverable",
-      bestResponse: "confirmed",
-      responseLatencyMs: null,
-      totalEngagedMs: 0,
-      totalSessions: 1,
-      calcEvents: 0,
-      enrichmentQuality: null,
-      messageLength: 0,
-    });
-    expect(r.reasons.join(" ")).toMatch(/voip/i);
-    expect(r.grade).toBe("C");
-  });
-
-  it("SMS reply on an unverified number lands mid-table (B)", () => {
-    const r = computeReadiness({
-      phoneStatus: "unknown",
-      emailStatus: "deliverable",
-      bestResponse: "replied",
-      responseLatencyMs: 45 * 60 * 1000,
-      totalEngagedMs: 0,
-      totalSessions: 1,
-      calcEvents: 0,
-      enrichmentQuality: null,
-      messageLength: 100,
-    });
-    expect(r.grade).toBe("B");
-  });
 });
 
 // ── bestCallWindow ───────────────────────────────────────────────────────────

@@ -107,14 +107,6 @@ const sampleDossier: LeadDossier = {
   responseLatencyMs: 3_600_000,
   callWindow: "They respond in the mornings (8am to 12pm)",
   touchesBeforeResponse: 1,
-  readiness: {
-    score: 7,
-    grade: "A",
-    reasons: [
-      "Verified live UK mobile",
-      "Replied by SMS/WhatsApp from the verified number",
-    ],
-  },
 };
 
 const goodBriefPayload = {
@@ -188,6 +180,14 @@ describe("buildCallBrief()", () => {
 
     await expect(buildCallBrief(sampleDossier)).resolves.toBeNull();
   });
+
+  it("prompt does not include readiness grade", async () => {
+    mockGenerateJson.mockResolvedValue(goodBriefPayload);
+    await buildCallBrief(sampleDossier);
+    const callOpts = mockGenerateJson.mock.calls[0][0] as { prompt?: string };
+    expect(callOpts.prompt).not.toContain("Readiness grade");
+    expect(callOpts.prompt).not.toContain("Why this grade");
+  });
 });
 
 // ── renderBriefSection ────────────────────────────────────────────────────────
@@ -243,16 +243,16 @@ describe("renderBriefSection()", () => {
     expect(text).toBe("");
   });
 
-  it("HTML section renders after the grade badge block (no section present when null)", () => {
-    // When null, interpolating into the handoff template produces no extra content.
-    const template = `<p>Grade A</p>${renderBriefSection(null).html}<table>detail</table>`;
-    expect(template).toBe("<p>Grade A</p><table>detail</table>");
+  it("HTML section is empty string when null (clean interpolation)", () => {
+    // When null, interpolating into the email template produces no extra content.
+    const template = `<div>context</div>${renderBriefSection(null).html}<table>detail</table>`;
+    expect(template).toBe("<div>context</div><table>detail</table>");
   });
 
   it("HTML section is present when brief is non-null", () => {
-    const template = `<p>Grade A</p>${renderBriefSection(sampleBrief).html}<table>detail</table>`;
+    const template = `<div>context</div>${renderBriefSection(sampleBrief).html}<table>detail</table>`;
     expect(template).toContain("How to open this call");
-    expect(template).toContain("<p>Grade A</p>");
+    expect(template).toContain("<div>context</div>");
     expect(template).toContain("<table>detail</table>");
   });
 });

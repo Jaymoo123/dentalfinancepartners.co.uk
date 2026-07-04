@@ -55,7 +55,9 @@ vi.mock("@/lib/supabase/admin", () => ({
   adminDelete: vi.fn(() => Promise.resolve({ ok: true, status: 204, data: [] })),
 }));
 
-const handoffSpy = vi.fn(async () => ({ sent: false, to: "ops@x", skipped: "test" as const }));
+const handoffSpy = vi.fn(
+  async (): Promise<import("@/lib/leads/handoff").HandoffResult> => ({ sent: false, to: "ops@x", skipped: "test" as const }),
+);
 vi.mock("@/lib/leads/handoff", () => ({ sendContactableHandoff: (...a: unknown[]) => handoffSpy(...(a as [])) }));
 
 // contactability records events via the shared engine's recordLeadContactEvent
@@ -139,6 +141,29 @@ describe("contactability gate", () => {
     expect(r2.promoted).toBe(false);
     expect(r2.alreadyPromoted).toBe(true);
     expect(handoffSpy).toHaveBeenCalledTimes(1); // not re-fired
+  });
+
+  it("internal-ops-email failure: still records handed_off but also records send_failed kind handoff_internal_failed", async () => {
+    seedLead("nurturing");
+    seedVerification("valid_mobile");
+    seedEvent("booked", "web");
+    handoffSpy.mockResolvedValueOnce({
+      sent: true,
+      to: "operator@example.com",
+      messageId: "em_brief",
+      internal: { sent: false, reason: "SMTP timeout" },
+    });
+
+    const r = await promoteIfContactable(LID);
+    expect(r.promoted).toBe(true);
+    // handed_off is recorded (the forwardable brief landed)
+    const handedOff = db.lead_contact_events.find((e) => e.event_type === "handed_off");
+    expect(handedOff).toBeDefined();
+    // send_failed is also recorded for the internal failure
+    const sendFailed = db.lead_contact_events.find(
+      (e) => e.event_type === "send_failed" && (e.meta as { kind?: string } | null)?.kind === "handoff_internal_failed",
+    );
+    expect(sendFailed).toBeDefined();
   });
 
   it("stopNurture records opt-out, stops the sequence, and closes the lead", async () => {
