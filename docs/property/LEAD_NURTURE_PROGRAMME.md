@@ -407,25 +407,21 @@ Speed-to-reply is the strongest predictor of conversion in inbound lead manageme
 
 ---
 
-## 11. Lead dossier (ungraded evidence pack) and the two-email handover
+## 11. Lead dossier (ungraded evidence pack) and the handover email
 
 ### What it does
 
-`gatherLeadDossier` in `Property/web/src/lib/leads/dossier.ts` assembles every signal held about a lead into an ungraded evidence pack. The dossier feeds the internal ops email sent to the operator when a lead becomes contactable.
+`gatherLeadDossier` in `Property/web/src/lib/leads/dossier.ts` assembles every signal held about a lead into an ungraded evidence pack. The dossier feeds the single handover email sent to the operator when a lead becomes contactable.
 
 Signals gathered: verification (phone/email status and carrier), AI enrichment (intent category, quality score, Companies House match), on-site journey (sessions, page views, top pages, calculator usage), conversation timeline (sends, replies, bookings, confirms), best call window, and response latency.
 
-### Two-email handover
+### The handover email
 
-When a lead passes the contactability gate, `sendContactableHandoff` in `Property/web/src/lib/leads/handoff.ts` sends the operator TWO emails:
+When a lead passes the contactability gate, `sendContactableHandoff` in `Property/web/src/lib/leads/handoff.ts` sends the operator ONE email (subject `New qualified enquiry: {name}`), built by `buildHandoffEmail` in the original flat table style. It contains: the verified/ready headline, booked callback (if any), a detail table (name, phone with verification status and carrier, email with status, role, how they responded, response time, best call window, intent, summary, Companies House, device/location, on-site journey, source page), the verbatim enquiry, top pages read, and the conversation timeline.
 
-1. **Forwardable brief** (subject `New qualified enquiry: {name}`). Built by `buildForwardableBrief`, rendered via the branded service-email shell. Annex-A-safe by construction: name, phone (normalised E.164), email, booked call slot (if any), the source page, and the verbatim enquiry. No verification statuses, no journey, no transcript, no buttons. The operator forwards this email to DJH as-is.
+By owner decision (2026-07-04) the email deliberately contains NO grading, NO partner names, NO action buttons and NO internal notices, so nothing in it is out of place if the operator forwards it. Send is 3 attempts with backoff; on total failure the handoff reports `sent: false` and the existing failure alert fires.
 
-2. **Internal ops email** (subject `[Internal] {name}: log hand-over and context`). Built by `buildInternalOpsEmail`. Opens with an amber boundary box stating that only the separate brief may be forwarded. Carries the full dossier: verification detail (status/carrier), response latency, best call window, enrichment and Companies House match, on-site journey, the conversation timeline, and the one-click "I have forwarded this to DJH" log button. Never forwarded.
-
-The brief is sent first (3 attempts with backoff). If it fails after retries the handoff reports `sent: false` and the existing failure alert fires. If the brief lands but the internal email fails, the result carries `internal: { sent: false, reason }`; the lead is still recorded as handed off, a `send_failed` event with `kind: "handoff_internal_failed"` is logged, and the operator receives an alert containing a freshly minted forwarded-log URL so the hand-over can still be logged.
-
-A hand-over can be re-sent for a `contactable` or `forwarded` lead via `POST /api/leads/handoff/resend` (x-internal-token guarded); a successful re-send records an `operator_update` event with `kind: "handoff_resent"`.
+A hand-over can be re-sent for a `contactable` or `forwarded` lead via `POST /api/leads/handoff/resend` (x-internal-token guarded); a successful re-send records an `operator_update` event with `kind: "handoff_resent"`. The `contactable -> forwarded` status flip endpoint (`/api/leads/forwarded/[token]`) still exists but no email links to it; the Delivery Log (see the SOP) remains the invoicing source of truth.
 
 ### Best call window
 

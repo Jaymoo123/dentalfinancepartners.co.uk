@@ -1,10 +1,11 @@
 /**
- * Tests for the split handoff email system (lib/leads/handoff.ts) and the
+ * Tests for the handoff email (lib/leads/handoff.ts) and the
  * /api/leads/handoff/resend route.
  *
- * sendContactableHandoff sends two emails: a forwardable brief (Annex-A-safe)
- * and an internal ops email (carries the log button and context). Tests verify
- * content, ordering, subject lines, partial-failure paths, and the resend route.
+ * sendContactableHandoff sends ONE email to the operator: the original flat
+ * evidence-pack format with verified contact details, response behaviour,
+ * enrichment, journey and conversation timeline. No grading, no partner names,
+ * no action buttons (owner decision 2026-07-04).
  */
 
 import { describe, it, expect, beforeEach, vi } from "vitest";
@@ -75,24 +76,10 @@ vi.mock("@/lib/lead-routing", () => ({
   resolveLeadTo: () => "operator@example.com",
 }));
 
-vi.mock("@/config/niche-loader", () => ({
-  getSiteUrl: () => "https://www.propertytaxpartners.co.uk",
-}));
+import { sendContactableHandoff, buildHandoffEmail } from "@/lib/leads/handoff";
 
-vi.mock("@accounting-network/web-shared/lead-nurture/tokens", () => ({
-  mintLeadToken: vi.fn((_id: string, _type: string) => "tok_test_123"),
-}));
-
-vi.mock("@accounting-network/web-shared/lead-nurture/send", () => ({
-  recordLeadContactEvent: vi.fn(async (leadId: string, event_type: string, channel: string | null, meta?: unknown) => {
-    db.lead_contact_events.push({ lead_id: leadId, event_type, channel, meta: meta ?? null });
-  }),
-}));
-
-import { sendContactableHandoff, buildForwardableBrief, buildInternalOpsEmail } from "@/lib/leads/handoff";
-
-type HandoffLead = Parameters<typeof buildForwardableBrief>[0];
-type HandoffDossier = Parameters<typeof buildForwardableBrief>[1];
+type HandoffLead = Parameters<typeof buildHandoffEmail>[0];
+type HandoffDossier = Parameters<typeof buildHandoffEmail>[1];
 
 const BASE_LEAD = {
   id: "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
@@ -136,6 +123,9 @@ const BASE_DOSSIER = {
   touchesBeforeResponse: 1,
 };
 
+const LEAD = BASE_LEAD as unknown as HandoffLead;
+const DOSSIER = BASE_DOSSIER as unknown as HandoffDossier;
+
 function seedLead(overrides: Partial<typeof BASE_LEAD> = {}) {
   db.leads.push({ ...BASE_LEAD, ...overrides });
 }
@@ -147,111 +137,66 @@ beforeEach(() => {
   resendSendSpy.mockResolvedValue({ data: { id: "em_test_1" }, error: null });
 });
 
-// ── buildForwardableBrief ─────────────────────────────────────────────────────
+// ── buildHandoffEmail ─────────────────────────────────────────────────────────
 
-describe("buildForwardableBrief()", () => {
+describe("buildHandoffEmail()", () => {
   it("subject is exactly 'New qualified enquiry: Jane Smith'", () => {
-    const { subject } = buildForwardableBrief(BASE_LEAD as unknown as HandoffLead, BASE_DOSSIER as unknown as HandoffDossier);
+    const { subject } = buildHandoffEmail(LEAD, DOSSIER, "replied by SMS");
     expect(subject).toBe("New qualified enquiry: Jane Smith");
   });
 
-  it("contains name, phone, email and enquiry", () => {
-    const { html, text } = buildForwardableBrief(BASE_LEAD as unknown as HandoffLead, BASE_DOSSIER as unknown as HandoffDossier);
+  it("contains name, verified phone and email, and the enquiry", () => {
+    const { html, text } = buildHandoffEmail(LEAD, DOSSIER, "replied by SMS");
     expect(html).toContain("Jane Smith");
     expect(html).toContain("+447700900999");
+    expect(html).toContain("valid_mobile");
+    expect(html).toContain("EE");
     expect(html).toContain("jane@example.com");
+    expect(html).toContain("deliverable");
     expect(html).toContain("I want to understand my CGT position");
-    expect(text).toContain("Jane Smith");
     expect(text).toContain("+447700900999");
     expect(text).toContain("I want to understand my CGT position");
   });
 
-  it("contains the branded shell marker (PROPERTY TAX)", () => {
-    const { html } = buildForwardableBrief(BASE_LEAD as unknown as HandoffLead, BASE_DOSSIER as unknown as HandoffDossier);
-    expect(html).toContain("PROPERTY");
-    expect(html).toContain("PARTNERS");
+  it("contains the extra evidence fields in the detail table", () => {
+    const { html } = buildHandoffEmail(LEAD, DOSSIER, "replied by SMS");
+    expect(html).toContain("How they responded");
+    expect(html).toContain("replied by SMS");
+    expect(html).toContain("Response time");
+    expect(html).toContain("Best call window");
+    expect(html).toContain("Intent");
+    expect(html).toContain("Summary");
+    expect(html).toContain("From page");
   });
 
-  it("contains the booked call row when bookingStart is set", () => {
-    const dossierWithBooking = { ...BASE_DOSSIER, bookingStart: "2026-07-05T14:00:00Z" };
-    const { html, text } = buildForwardableBrief(BASE_LEAD as unknown as HandoffLead, dossierWithBooking as unknown as HandoffDossier);
-    expect(html).toContain("Booked call");
-    expect(text).toContain("Booked call");
+  it("contains the verified/ready headline and the conversation timeline", () => {
+    const { html } = buildHandoffEmail(LEAD, DOSSIER, "replied by SMS");
+    expect(html).toContain("Contact details verified. Actively responded and ready for a call.");
+    expect(html).toContain("Conversation so far");
+    expect(html).toContain("Yes, happy to discuss.");
   });
 
-  it("does NOT contain booked call row when bookingStart is null", () => {
-    const { html } = buildForwardableBrief(BASE_LEAD as unknown as HandoffLead, BASE_DOSSIER as unknown as HandoffDossier);
-    expect(html).not.toContain("Booked call");
+  it("contains the booked callback line when bookingStart is set", () => {
+    const withBooking = { ...BASE_DOSSIER, bookingStart: "2026-07-05T14:00:00Z" } as unknown as HandoffDossier;
+    const { html, text } = buildHandoffEmail(LEAD, withBooking, "booked a callback");
+    expect(html).toContain("Booked callback:");
+    expect(text).toContain("Booked callback:");
   });
 
-  it("MUST NOT contain: Grade, forwarded API path, Conversation so far, What they read, valid_mobile, Internal", () => {
-    const { html, text } = buildForwardableBrief(BASE_LEAD as unknown as HandoffLead, BASE_DOSSIER as unknown as HandoffDossier);
+  it("MUST NOT contain: grading, partner names, action links, internal notices", () => {
+    const { html, text } = buildHandoffEmail(LEAD, DOSSIER, "replied by SMS");
     const combined = html + text;
     expect(combined).not.toContain("Grade");
+    expect(combined).not.toContain("DJH");
     expect(combined).not.toContain("/api/leads/forwarded/");
-    expect(combined).not.toContain("Conversation so far");
-    expect(combined).not.toContain("What they read");
-    expect(combined).not.toContain("valid_mobile");
-    expect(combined).not.toMatch(/\bInternal\b/);
+    expect(combined).not.toContain("[Internal]");
+    expect(combined).not.toContain("Important:");
+    expect(combined).not.toContain("I have forwarded");
+    expect(combined).not.toContain("log the hand-over");
   });
 
   it("contains no em-dashes or en-dashes", () => {
-    const { html, text } = buildForwardableBrief(BASE_LEAD as unknown as HandoffLead, BASE_DOSSIER as unknown as HandoffDossier);
-    expect(html).not.toMatch(/[—–]/);
-    expect(text).not.toMatch(/[—–]/);
-  });
-});
-
-// ── buildInternalOpsEmail ─────────────────────────────────────────────────────
-
-describe("buildInternalOpsEmail()", () => {
-  const forwardedUrl = "https://www.propertytaxpartners.co.uk/api/leads/forwarded/tok_test_123";
-
-  it("subject starts with [Internal]", () => {
-    const { subject } = buildInternalOpsEmail(BASE_LEAD as unknown as HandoffLead, BASE_DOSSIER as unknown as HandoffDossier, "replied by SMS", forwardedUrl);
-    expect(subject).toMatch(/^\[Internal\]/);
-  });
-
-  it("contains the amber boundary note", () => {
-    const { html } = buildInternalOpsEmail(BASE_LEAD as unknown as HandoffLead, BASE_DOSSIER as unknown as HandoffDossier, "replied by SMS", forwardedUrl);
-    expect(html).toContain("Forward ONLY the separate email titled");
-    expect(html).toContain("Annex A");
-    expect(html).toContain("must not be forwarded");
-  });
-
-  it("contains the forwarded-log URL and button copy", () => {
-    const { html, text } = buildInternalOpsEmail(BASE_LEAD as unknown as HandoffLead, BASE_DOSSIER as unknown as HandoffDossier, "replied by SMS", forwardedUrl);
-    expect(html).toContain(forwardedUrl);
-    expect(html).toContain("I have forwarded this to DJH");
-    expect(text).toContain("Once forwarded to DJH, log it here:");
-    expect(text).toContain(forwardedUrl);
-  });
-
-  it("contains timeline content (Conversation so far)", () => {
-    const { html } = buildInternalOpsEmail(BASE_LEAD as unknown as HandoffLead, BASE_DOSSIER as unknown as HandoffDossier, "replied by SMS", forwardedUrl);
-    expect(html).toContain("Conversation so far");
-    expect(html).toContain("They replied by SMS");
-  });
-
-  it("contains verification detail (phone status)", () => {
-    const { html } = buildInternalOpsEmail(BASE_LEAD as unknown as HandoffLead, BASE_DOSSIER as unknown as HandoffDossier, "replied by SMS", forwardedUrl);
-    expect(html).toContain("valid_mobile");
-  });
-
-  it("MUST NOT contain: Grade", () => {
-    const { html, text } = buildInternalOpsEmail(BASE_LEAD as unknown as HandoffLead, BASE_DOSSIER as unknown as HandoffDossier, "replied by SMS", forwardedUrl);
-    expect(html).not.toContain("Grade");
-    expect(text).not.toContain("Grade");
-  });
-
-  it("omits the button when forwardedUrl is null", () => {
-    const { html, text } = buildInternalOpsEmail(BASE_LEAD as unknown as HandoffLead, BASE_DOSSIER as unknown as HandoffDossier, "replied by SMS", null);
-    expect(html).not.toContain("I have forwarded this to DJH");
-    expect(text).not.toContain("log it here:");
-  });
-
-  it("contains no em-dashes or en-dashes", () => {
-    const { html, text } = buildInternalOpsEmail(BASE_LEAD as unknown as HandoffLead, BASE_DOSSIER as unknown as HandoffDossier, "replied by SMS", forwardedUrl);
+    const { html, text } = buildHandoffEmail(LEAD, DOSSIER, "replied by SMS");
     expect(html).not.toMatch(/[—–]/);
     expect(text).not.toMatch(/[—–]/);
   });
@@ -260,40 +205,22 @@ describe("buildInternalOpsEmail()", () => {
 // ── sendContactableHandoff orchestration ──────────────────────────────────────
 
 describe("sendContactableHandoff()", () => {
-  it("sends brief FIRST then internal email (in order)", async () => {
+  it("sends exactly ONE email with the handoff subject", async () => {
     seedLead();
     const result = await sendContactableHandoff(BASE_LEAD.id, "booked a callback");
     expect(result.sent).toBe(true);
-    expect(resendSendSpy).toHaveBeenCalledTimes(2);
-    // First call should be the forwardable brief
-    const firstCall = resendSendSpy.mock.calls[0][0] as { subject: string };
-    expect(firstCall.subject).toBe("New qualified enquiry: Jane Smith");
-    // Second call should be the internal email
-    const secondCall = resendSendSpy.mock.calls[1][0] as { subject: string };
-    expect(secondCall.subject).toMatch(/^\[Internal\]/);
+    expect(resendSendSpy).toHaveBeenCalledTimes(1);
+    const call = resendSendSpy.mock.calls[0][0];
+    expect(call.subject).toBe("New qualified enquiry: Jane Smith");
   });
 
-  it("brief fails 3x -> {sent:false} and internal never attempted", async () => {
+  it("fails 3x -> {sent:false, reason}", async () => {
     seedLead();
     resendSendSpy.mockResolvedValue({ data: null, error: new Error("network error") });
     const result = await sendContactableHandoff(BASE_LEAD.id, "booked a callback");
     expect(result.sent).toBe(false);
     expect(result.reason).toBeTruthy();
-    // Internal never attempted after brief fails
-    expect(resendSendSpy).toHaveBeenCalledTimes(3); // 3 retries for brief only
-  });
-
-  it("brief ok + internal fails 3x -> {sent:true, internal:{sent:false}}", async () => {
-    seedLead();
-    // First call (brief) succeeds; all subsequent calls (internal retries) fail.
-    resendSendSpy
-      .mockResolvedValueOnce({ data: { id: "em_brief" }, error: null })
-      .mockResolvedValue({ data: null, error: new Error("internal send error") });
-    const result = await sendContactableHandoff(BASE_LEAD.id, "booked a callback");
-    expect(result.sent).toBe(true);
-    expect(result.internal).toBeDefined();
-    expect(result.internal!.sent).toBe(false);
-    expect(result.internal!.reason).toBeTruthy();
+    expect(resendSendSpy).toHaveBeenCalledTimes(3);
   });
 
   it("source:'test' -> skip, zero provider calls", async () => {
@@ -318,39 +245,19 @@ describe("sendContactableHandoff()", () => {
     expect(result.sent).toBe(false);
     expect(result.skipped).toBe("no-lead");
   });
-});
 
-// ── HandoffResult shape ───────────────────────────────────────────────────────
-
-describe("HandoffResult shape", () => {
-  it("happy path includes sent:true, to, messageId, internal:{sent:true}", async () => {
+  it("happy path result shape: sent, to, messageId", async () => {
     seedLead();
     const result = await sendContactableHandoff(BASE_LEAD.id, "booked a callback");
     expect(result.sent).toBe(true);
     expect(result.to).toBe("operator@example.com");
     expect(result.messageId).toBeTruthy();
-    expect(result.internal).toBeDefined();
-    expect(result.internal!.sent).toBe(true);
   });
 });
 
 // ── Resend route ─────────────────────────────────────────────────────────────
 
 describe("/api/leads/handoff/resend route", () => {
-  // Mock sendContactableHandoff for route tests so we don't re-exercise the orchestrator.
-  beforeEach(() => {
-    vi.doMock("@/lib/leads/handoff", () => ({
-      sendContactableHandoff: vi.fn(async () => ({
-        sent: true,
-        to: "operator@example.com",
-        messageId: "em_1",
-        internal: { sent: true },
-      })),
-      buildForwardableBrief,
-      buildInternalOpsEmail,
-    }));
-  });
-
   it("401 without x-internal-token", async () => {
     process.env.LEAD_INTERNAL_SECRET = "secret123";
     const { POST } = await import("@/app/api/leads/handoff/resend/route");
@@ -376,7 +283,7 @@ describe("/api/leads/handoff/resend route", () => {
     expect(res.status).toBe(409);
   });
 
-  it("happy path: sends emails and records handoff_resent event", async () => {
+  it("happy path: sends the email and records handoff_resent event", async () => {
     process.env.LEAD_INTERNAL_SECRET = "secret123";
     db.leads.push({ ...BASE_LEAD, status: "contactable" });
     const { POST } = await import("@/app/api/leads/handoff/resend/route");

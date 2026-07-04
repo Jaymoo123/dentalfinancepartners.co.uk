@@ -143,29 +143,6 @@ describe("contactability gate", () => {
     expect(handoffSpy).toHaveBeenCalledTimes(1); // not re-fired
   });
 
-  it("internal-ops-email failure: still records handed_off but also records send_failed kind handoff_internal_failed", async () => {
-    seedLead("nurturing");
-    seedVerification("valid_mobile");
-    seedEvent("booked", "web");
-    handoffSpy.mockResolvedValueOnce({
-      sent: true,
-      to: "operator@example.com",
-      messageId: "em_brief",
-      internal: { sent: false, reason: "SMTP timeout" },
-    });
-
-    const r = await promoteIfContactable(LID);
-    expect(r.promoted).toBe(true);
-    // handed_off is recorded (the forwardable brief landed)
-    const handedOff = db.lead_contact_events.find((e) => e.event_type === "handed_off");
-    expect(handedOff).toBeDefined();
-    // send_failed is also recorded for the internal failure
-    const sendFailed = db.lead_contact_events.find(
-      (e) => e.event_type === "send_failed" && (e.meta as { kind?: string } | null)?.kind === "handoff_internal_failed",
-    );
-    expect(sendFailed).toBeDefined();
-  });
-
   it("stopNurture records opt-out, stops the sequence, and closes the lead", async () => {
     seedLead("nurturing");
     await stopNurture(LID, "sms");
