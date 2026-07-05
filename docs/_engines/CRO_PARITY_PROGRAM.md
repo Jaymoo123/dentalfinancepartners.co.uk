@@ -92,11 +92,11 @@ Status vocabulary: `pending / building / built / QA'd / gated / DEPLOYED(tag) / 
 |---|---|---|
 | G-0 backlog release | **DEPLOYED(deploy/generalist/2026-07-05-g0) + post-deploy battery OVERALL GREEN (8/8)**; 48h soak until ~2026-07-07 17:15 BST | n/a |
 | Parity matrix audit | DONE 2026-07-05 (see log — 10 uncovered gaps folded into WP scopes) | DONE 2026-07-05 |
-| M1 shared chokepoint factory | building (factory+tests+export written; battery running) | — |
-| WS7 experiments wind-down | pending (estate-level, once, incl. construction-cis) | — |
-| R1: WS1 capture core (WP-A/WP-B) | pending | pending |
-| R1: WS2 intent layer (WP-C/WP-D) | pending | pending |
-| R1: WS3 blog+exit (WP-E) | pending | pending |
+| M1 shared chokepoint factory | **DONE — commit `7adce444`** (17-test suite; battery green: 365 web-shared + Property build + 1076; merge-guard bug caught by own tests) | — |
+| WS7 experiments wind-down | **DONE — commit `82614899`** (calc_promo_inline→TREATMENT hardcoded on data 509/0/0 vs 460/2/2; construction personalization→locked ON, assign stripped; console caps updated; 0 running estate-wide; construction+console changes take effect at their next gated deploys) | — |
+| R1: WS1 capture core (WP-A/WP-B) | building (Workflow wf_3d8ffb26-909, Sonnet) | building |
+| R1: WS2 intent layer (WP-C/WP-D) | queued in workflow | queued |
+| R1: WS3 blog+exit (WP-E) | queued in workflow | queued |
 | R1 Opus QA + gates + SHIP | pending | pending |
 | R2: WS4 premium tools + gates (WP-F/G/H) | pending | pending |
 | R2 QA + SHIP | pending | pending |
@@ -107,6 +107,9 @@ Status vocabulary: `pending / building / built / QA'd / gated / DEPLOYED(tag) / 
 
 ### Waves 2-5 (template instantiations after wave-1 go)
 Dentists → Medical (FLAT blog routing! use `scripts/medical_flat_link_audit.py`) → cfp+cis twin → agency (relink first). All pending.
+
+## Owner authorization 2026-07-05 (evening)
+"Ship R1 when the gates are green" — R1 deploy sign-off GRANTED IN ADVANCE, conditional on the full gate pipeline being green (tests, builds, predeploy_gate, spinup, Opus adversarial QA, post-deploy battery per site). The 48h G-0 soak is treated as waived by this instruction if gates go green earlier; consequence recorded: lead-recovery attribution between the G-0 honeypot rename and the R1 server chokepoint will be read as ONE combined honeypot-fix effect in the 7d/28d reads. Order still generalist first, Solicitors after generalist's synthetic probe passes.
 
 ## Gate results log
 - 2026-07-05: LIVE traffic/leads baseline queried (table above). 22 unregistered migrations verified applied on prod via object-existence batch query (all true; leads_source_valid CHECK includes all 8 keys + test; sites rows for cfp/cis present).
@@ -123,6 +126,9 @@ Dentists → Medical (FLAT blog routing! use `scripts/medical_flat_link_audit.py
 - contractors-ir35: placeholder phone `+44 20 0000 0000` in niche.config — fix in its wave.
 - digital-agency: no `.vercel` link; weakest traffic; wave 5.
 - Deploy gotchas for fresh Vercel projects: framework preset must be Next.js, root dir `<site>/web`, "Include files outside root directory" ON.
+
+## Harness lesson (for any successor agent)
+`npm test --workspace <pkg> 2>&1 | tail` in Git Bash can MASK failures even with `set -e -o pipefail` (the npm.cmd shim). NEVER trust "=== OK ===" markers alone: always grep the output for "failed|npm error" AND for the expected pass counts before declaring a battery green.
 
 ## RESUME HERE
 **Current position:** Phase 0 COMPLETE (all baselines committed + pushed; on branch `estate-cro-parity`). Phase 1 (G-0 generalist backlog release) in progress. Generalist tests+build already green in the Phase-0 battery. Next actions, in order: (1) `python scripts/predeploy_gate.py --site generalist` and (2) `python scripts/spinup_site_check.py generalist` — both must pass; (3) pre-deploy baseline snapshot → `docs/generalist/cro_baseline_2026-07-05.md` (live queries: 30d non-bot sessions, funnel event counts by event_name, leads by source, per the Measurement section of the plan); (4) OWNER SIGN-OFF with diff summary (G-0 payload = everything on the branch touching generalist: committed parity waves incl. honeypot fix + credential strip + keyTakeaways backfill + homepage rewrite + the B3 remediation set) + rollback plan (vercel rollback + git revert); (5) deploy: `VERCEL_ORG_ID=team_XF9WAygZX7SGk9Fo4tOAnihH VERCEL_PROJECT_ID=prj_rMK56yY2qcCPTObgwkQjVXQl8yl3 vercel deploy --prod --yes` from repo root, verify alias = www.hollowaydavies.co.uk; (6) post-deploy battery per Gate pipeline §7 (AN-01, headers, notify-401 probe, honeypot-filled browser submit = success UI + NO row, honeypot_health.py); (7) tag `deploy/generalist/2026-07-05` + push; (8) 48h soak before G-1. Meanwhile Phase-2 prep runs in parallel: parity-matrix Explore agent audit (generalist+Solicitors) is in flight; M1 (shared createLeadSubmitHandler factory in packages/web-shared/leads/server/ — MANAGER-DIRECT, additive-only, full battery after) can start once G-0 is out the door.
