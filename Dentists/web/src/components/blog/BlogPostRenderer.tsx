@@ -12,6 +12,8 @@ import { extractHeadings } from "@/lib/markdown-utils";
 import { calculateReadTime } from "@/lib/blog";
 import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
+import { topicForBlogSlug } from "@/lib/intent/taxonomy";
+import { PremiumUpgrade } from "@/components/tools/premium/PremiumUpgrade";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -63,6 +65,10 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
   const verified = post.sourcesVerifiedAt ? formatUkDate(post.sourcesVerifiedAt) : "";
 
   const midSplit = splitContentAtMidScroll(post.contentHtml);
+
+  // Resolve the premium topic from the category slug (slug-derived, never the
+  // human post.category label, per the brief's hardening invariant).
+  const premiumTopic = topicForBlogSlug(categorySlug);
 
   return (
     <>
@@ -213,13 +219,32 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 <div dangerouslySetInnerHTML={{ __html: midSplit.before }} />
                 {midSplit.after ? (
                   <>
+                    {/* R2 premium island: injected in the early split, BEFORE the
+                        R1 mid-scroll InlineMiniLeadForm. Topic resolved from the
+                        category slug (slug-derived, not the human label).
+                        PremiumUpgrade renders nothing for non-mapped categories. */}
+                    <PremiumUpgrade
+                      topic={premiumTopic}
+                      placement="blog"
+                      category={categorySlug}
+                    />
                     {/* Mid-scroll injection: InlineMiniLeadForm before the second
                         half. Topic is the human display label from the post (used
                         as a readable tag in the lead message prefix). */}
                     <InlineMiniLeadForm topic={post.category} />
                     <div dangerouslySetInnerHTML={{ __html: midSplit.after }} />
                   </>
-                ) : null}
+                ) : (
+                  /* Short-post fallback: fewer than 4 h2s, no mid-split.
+                     Still inject the premium island after the article body so
+                     mapped categories get the tool even on short posts.
+                     PremiumUpgrade renders nothing for non-mapped categories. */
+                  <PremiumUpgrade
+                    topic={premiumTopic}
+                    placement="blog"
+                    category={categorySlug}
+                  />
+                )}
               </div>
 
               {post.faqs && post.faqs.length > 0 ? (
