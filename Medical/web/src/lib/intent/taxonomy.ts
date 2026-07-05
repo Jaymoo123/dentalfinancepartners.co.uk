@@ -91,7 +91,7 @@ export const TOPICS: Topic[] = [
     blogCategorySlugs: ["gp-tax-and-accounts", "medical-expenses"],
     primaryCalculator: "locum-tax-calculator",
     ctaCopy: "Estimate your tax as a salaried or self-employed doctor",
-    resourceId: null,
+    resourceId: "locum",
   },
   {
     key: "nhs-pension",
@@ -99,7 +99,7 @@ export const TOPICS: Topic[] = [
     blogCategorySlugs: ["nhs-pension-planning"],
     primaryCalculator: "nhs-pension-annual-allowance",
     ctaCopy: "Check your NHS pension annual allowance and taper",
-    resourceId: null,
+    resourceId: "nhs-pension",
   },
   {
     key: "locum",
@@ -107,7 +107,7 @@ export const TOPICS: Topic[] = [
     blogCategorySlugs: ["locum-tax"],
     primaryCalculator: "locum-tax-calculator",
     ctaCopy: "Calculate your take-home pay as a locum doctor",
-    resourceId: null,
+    resourceId: "locum",
   },
   {
     key: "incorporation-private",
@@ -118,7 +118,7 @@ export const TOPICS: Topic[] = [
     ],
     primaryCalculator: "private-practice-incorporation",
     ctaCopy: "Model your tax saving from incorporating your private practice",
-    resourceId: null,
+    resourceId: "incorporation-private",
   },
 ];
 

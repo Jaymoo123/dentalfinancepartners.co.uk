@@ -62,6 +62,11 @@ export const siteConfig = {
     : null,
   // Canonical lead-form consent text (see derivation above). Forms append the link.
   leadConsentText,
+  // Resource-gate consent text: in-house only. Never names a partner firm.
+  // Used exclusively by ResourceGate (gated Excel downloads) so that resource
+  // submissions are not co-mingled with the lead-sharing consent flow.
+  resourceConsentText:
+    "I agree to Medical Accountants UK using my email address to send me the requested resource and occasional relevant updates. I can unsubscribe at any time.",
 } as const;
 
 export type LocationEntry = (typeof siteConfig.locations)[number];

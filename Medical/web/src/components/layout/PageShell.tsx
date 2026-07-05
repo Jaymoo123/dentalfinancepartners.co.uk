@@ -3,6 +3,7 @@ import { SiteFooter } from "./SiteFooter";
 import { SiteHeader } from "./SiteHeader";
 import { StickyCTA } from "@/components/ui/StickyCTA";
 import { ExitIntentModal } from "@/components/blog/ExitIntentModal";
+import { SpecialistWidget } from "@/components/support/SpecialistWidget";
 
 type PageShellProps = {
   children: ReactNode;
@@ -24,6 +25,11 @@ export function PageShell({ children }: PageShellProps) {
       <SiteFooter />
       <StickyCTA />
       <ExitIntentModal />
+      {/* SpecialistWidget: deterministic Phase-0 assistant (no LLM).
+          Mounted next to ExitIntentModal so both overlays share the same z-index
+          layer. Sets ma_assistant_active="1" on mount; ExitIntentModal reads this
+          at line 91 to suppress itself while the widget is open. */}
+      <SpecialistWidget />
     </div>
   );
 }

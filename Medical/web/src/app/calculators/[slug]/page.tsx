@@ -7,6 +7,7 @@ import { Calculator as CalcIcon } from "lucide-react";
 import { JsonLd, buildWebApplication, buildFaqPage } from "@/lib/schema";
 import { CalculatorClient } from "@/components/tools/CalculatorClient";
 import { getGenericTool, allTools } from "@/lib/tools/registry";
+import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 import Link from "next/link";
 
 export const dynamicParams = false;
@@ -88,6 +89,12 @@ export default async function CalculatorPage({
           <div className="max-w-4xl mx-auto">
             {/* slug only — the function-bearing tool config resolves client-side (RSC lesson) */}
             <CalculatorClient slug={slug} variant="page" />
+
+            {/* ResourceGate island: "Go deeper" section below the calculator.
+                Renders only when a resource is enabled for the calculator's topic.
+                captureMode "email_only" and extras {resource_gate:true} are set inside
+                CalculatorPageResources -> ResourceGate. No-op for unmatched slugs. */}
+            <CalculatorPageResources slug={slug} pageTitle={tool.metaTitle} />
 
             {tool.explainer && (
               <div className="mt-12 border-l-4 border-[var(--copper)] bg-slate-50 p-6 sm:p-8">

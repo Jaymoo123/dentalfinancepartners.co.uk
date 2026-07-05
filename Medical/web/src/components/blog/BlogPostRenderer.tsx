@@ -16,6 +16,9 @@ import { topicFromCategory } from "@/lib/intent/deriveTopic";
 import { TopicOverrideProvider } from "@/components/intent/IntentProvider";
 import { topicForBlogSlug } from "@/lib/intent/taxonomy";
 import { PremiumUpgrade } from "@/components/tools/premium/PremiumUpgrade";
+import { ResourceGate } from "@/components/resources/ResourceGate";
+import { hasEnabledResource, resourceForTopic } from "@/lib/resources/registry";
+import { gateCopy } from "@/lib/resources/copy";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -85,6 +88,13 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
   const verified = post.sourcesVerifiedAt ? formatUkDate(post.sourcesVerifiedAt) : "";
 
   const midSplit = splitContentAtMidScroll(post.contentHtml);
+
+  // Resource gate: resolved from the categorySlug-derived premiumTopic (FLAT routing).
+  // hasEnabledResource returns false for gp-practice (no resource) and null topics.
+  const resourceTopic = premiumTopic;
+  const resourceEnabled = resourceTopic ? hasEnabledResource(resourceTopic) : false;
+  const resourceEntry = resourceEnabled && resourceTopic ? resourceForTopic(resourceTopic) : null;
+  const resourceGateCopy = resourceEnabled && resourceTopic ? gateCopy(resourceTopic, post.title) : null;
 
   return (
     // TopicOverrideProvider injects the category-resolved topic into IntentProvider.
@@ -214,19 +224,41 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       placement="blog"
                       category={categorySlug}
                     />
-                    {/* InlineMiniLeadForm follows after the premium tool. */}
+                    {/* ResourceGate: gated Excel download, appended after PremiumUpgrade.
+                        Renders only when a resource is enabled for the resolved topic.
+                        captureMode "email_only" and extras {resource_gate:true} are set
+                        inside ResourceGate. On-page delivery only (RESOURCE_EMAIL_DELIVERY_ENABLED=false). */}
+                    {resourceEnabled && resourceGateCopy && resourceEntry?.xlsx && resourceTopic ? (
+                      <ResourceGate
+                        topic={resourceTopic}
+                        copy={resourceGateCopy}
+                        placement="blog"
+                        category={categorySlug}
+                      />
+                    ) : null}
+                    {/* InlineMiniLeadForm follows after the premium tool and resource gate. */}
                     <InlineMiniLeadForm topic={post.category} />
                     <div dangerouslySetInnerHTML={{ __html: midSplit.after }} />
                   </>
                 ) : (
                   /* Short-post fallback: fewer than 4 h2s, no mid-split.
-                     PremiumUpgrade is placed after the article body so mapped
-                     categories still get the tool on short posts. */
-                  <PremiumUpgrade
-                    topic={premiumTopic}
-                    placement="blog"
-                    category={categorySlug}
-                  />
+                     PremiumUpgrade and ResourceGate are placed after the article body
+                     so mapped categories still get the tools on short posts. */
+                  <>
+                    <PremiumUpgrade
+                      topic={premiumTopic}
+                      placement="blog"
+                      category={categorySlug}
+                    />
+                    {resourceEnabled && resourceGateCopy && resourceEntry?.xlsx && resourceTopic ? (
+                      <ResourceGate
+                        topic={resourceTopic}
+                        copy={resourceGateCopy}
+                        placement="blog"
+                        category={categorySlug}
+                      />
+                    ) : null}
+                  </>
                 )}
               </div>
 
