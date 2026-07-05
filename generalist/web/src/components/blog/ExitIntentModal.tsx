@@ -8,8 +8,10 @@
  * Uses the qualified MiniCapture (name + phone + email + message) with a
  * topic-aware offer. This is a qualified-lead capture modal, not a newsletter.
  *
- * TODO WS6: re-add the assistant stand-down guard once the on-site assistant
- * is wired (check sessionStorage key "hd_assistant_active" === "1").
+ * WS6: hd_assistant_active stand-down guard wired. When the SpecialistWidget is
+ * open (or has been auto-opened this session), it sets "hd_assistant_active" in
+ * sessionStorage. The exit modal bails when that key is "1", so both exit
+ * surfaces never fire together (the assistant's own exit ping supersedes this).
  */
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
@@ -64,6 +66,9 @@ export function ExitIntentModal() {
     const armTimer = window.setTimeout(() => { armed = true; }, desktop ? 10000 : 8000);
     const fire = () => {
       if (!armed || isSuppressed()) return;
+      // WS6 stand-down: if the SpecialistWidget is active this session, let it
+      // handle the exit ping instead of stacking two exit surfaces.
+      if (window.sessionStorage.getItem("hd_assistant_active") === "1") return;
       setOpen(true);
       suppress();
     };

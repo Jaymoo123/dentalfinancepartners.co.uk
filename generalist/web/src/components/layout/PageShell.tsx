@@ -6,6 +6,7 @@ import { StickyCTA } from "@/components/ui/StickyCTA";
 // dropped across the estate). The component file is kept on disk untouched.
 // The blog ExitIntentModal (qualified lead capture) is mounted here instead.
 import { ExitIntentModal } from "@/components/blog/ExitIntentModal";
+import { SpecialistWidget } from "@/components/support/SpecialistWidget";
 
 type PageShellProps = {
   children: ReactNode;
@@ -27,6 +28,7 @@ export function PageShell({ children }: PageShellProps) {
       <SiteFooter />
       <StickyCTA />
       <ExitIntentModal />
+      <SpecialistWidget />
     </div>
   );
 }

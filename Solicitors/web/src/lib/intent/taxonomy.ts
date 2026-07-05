@@ -69,7 +69,7 @@ export const TOPICS: Topic[] = [
     ],
     primaryCalculator: "sra-client-account-reserve",
     ctaCopy: "Check your SRA client account reserve",
-    resourceId: null,
+    resourceId: "sra-compliance",
   },
   {
     key: "sole-practitioner",
@@ -81,7 +81,7 @@ export const TOPICS: Topic[] = [
     ],
     primaryCalculator: "solicitor-take-home",
     ctaCopy: "Estimate your take-home as a solicitor",
-    resourceId: null,
+    resourceId: "sole-practitioner",
   },
   {
     key: "partnership-llp",
@@ -92,7 +92,7 @@ export const TOPICS: Topic[] = [
     ],
     primaryCalculator: "llp-profit-share-allocation",
     ctaCopy: "Calculate your LLP profit share",
-    resourceId: null,
+    resourceId: "partnership-llp",
   },
   {
     key: "succession-sale",
@@ -104,7 +104,7 @@ export const TOPICS: Topic[] = [
     ],
     primaryCalculator: "law-firm-valuation",
     ctaCopy: "Value your law firm",
-    resourceId: null,
+    resourceId: "succession-sale",
   },
   {
     key: "practice-finance",

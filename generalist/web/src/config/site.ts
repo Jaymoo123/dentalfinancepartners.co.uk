@@ -62,6 +62,11 @@ export const siteConfig = {
     : null,
   // Canonical lead-form consent text (see derivation above). Forms append the link.
   leadConsentText,
+  // In-house resource consent text — used by the resource gate ONLY (never the
+  // partner-shared lead form). Resources are delivered on-page; the email path
+  // is stubbed behind RESOURCE_EMAIL_DELIVERY_ENABLED until a verified from-domain
+  // exists. Wording mirrors Property's Annex B.2 posture for this site.
+  resourceConsentText: `I agree to ${niche.display_name} using my email to send me the resource I requested.`,
 } as const;
 
 export type LocationEntry = (typeof siteConfig.locations)[number];

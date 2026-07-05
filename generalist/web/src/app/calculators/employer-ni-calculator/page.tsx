@@ -6,6 +6,7 @@ import { siteConfig } from "@/config/site";
 import { EmployerNICalculator } from "@/components/calculators/EmployerNICalculator";
 import { Calculator } from "lucide-react";
 import { JsonLd, buildWebApplication, buildFaqPage } from "@/lib/schema";
+import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 
 export const metadata: Metadata = {
   title: "Employer NI & Cost-to-Hire Calculator 2026/27 | UK Business",
@@ -81,6 +82,9 @@ export default function EmployerNICalculatorPage() {
         <div className={siteContainerLg}>
           <div className="max-w-4xl mx-auto">
             <EmployerNICalculator />
+
+            {/* Resource gate island for the payroll topic */}
+            <CalculatorPageResources slug="employer-ni-calculator" />
 
             <div className="mt-12 border-l-4 border-orange-600 bg-slate-50 p-6 sm:p-8">
               <h2 className="text-xl font-bold text-slate-900">How this works</h2>

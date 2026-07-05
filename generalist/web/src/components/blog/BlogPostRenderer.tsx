@@ -16,6 +16,7 @@ import { CalcPromoCard } from "@/components/blog/CalcPromoCard";
 import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
 import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
+import { GateOrForm } from "@/components/resources/GateOrForm";
 import { topicForBlogSlug } from "@/lib/intent/taxonomy";
 
 type BlogPostRendererProps = {
@@ -230,16 +231,24 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 {midSplit.after ? (
                   <>
                     {/* Mid-scroll injection: InlineMiniLeadForm (unchanged) plus the
-                        premium tool for this category. topic is resolved from the
-                        category SLUG, not the human label post.category. */}
+                        premium tool and the resource gate for this category. topic is
+                        resolved from the category SLUG, not the human label post.category. */}
                     <InlineMiniLeadForm topic={post.category} />
                     <PremiumUpgrade topic={topic} placement="blog" category={categorySlug} />
+                    {topic && (
+                      <GateOrForm topic={topic} placement="blog" category={categorySlug} />
+                    )}
                     <div dangerouslySetInnerHTML={{ __html: midSplit.after }} />
                   </>
                 ) : (
-                  /* Short posts (<4 H2s) get no mid-split. Add a premium tool fallback
-                     at the end of the article body so they still get a tool. */
-                  <PremiumUpgrade topic={topic} placement="blog" category={categorySlug} />
+                  /* Short posts (<4 H2s) get no mid-split. Add the premium tool and gate
+                     at the end of the article body so they still surface the resource. */
+                  <>
+                    <PremiumUpgrade topic={topic} placement="blog" category={categorySlug} />
+                    {topic && (
+                      <GateOrForm topic={topic} placement="blog" category={categorySlug} />
+                    )}
+                  </>
                 )}
               </div>
 

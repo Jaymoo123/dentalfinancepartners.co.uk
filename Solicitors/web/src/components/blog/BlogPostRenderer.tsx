@@ -15,6 +15,8 @@ import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
 import { PremiumUpgrade } from "@/components/tools/premium/PremiumUpgrade";
 import { topicForBlogSlug } from "@/lib/intent/taxonomy";
+import { ResourceGate } from "@/components/resources/ResourceGate";
+import { gateCopy } from "@/lib/resources/copy";
 
 type RelatedItem = {
   slug: string;
@@ -221,6 +223,18 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   <>
                     <InlineMiniLeadForm topic={post.category} />
                     <div dangerouslySetInnerHTML={{ __html: midSplit.after }} />
+                    {/* Resource gate: injected after the late content split so the
+                        download offer appears near the bottom of the article where
+                        intent is highest. Renders nothing when no enabled asset
+                        exists for this topic or when the topic cannot be derived. */}
+                    {blogTopic ? (
+                      <ResourceGate
+                        topic={blogTopic}
+                        copy={gateCopy(blogTopic)}
+                        placement="blog"
+                        category={categorySlug}
+                      />
+                    ) : null}
                   </>
                 ) : null}
               </div>

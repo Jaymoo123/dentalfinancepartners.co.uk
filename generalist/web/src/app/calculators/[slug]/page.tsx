@@ -6,6 +6,7 @@ import { siteConfig } from "@/config/site";
 import { Calculator as CalcIcon } from "lucide-react";
 import { JsonLd, buildWebApplication, buildFaqPage } from "@/lib/schema";
 import { CalculatorClient } from "@/components/tools/CalculatorClient";
+import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 import { getGenericTool, allTools } from "@/lib/tools/registry";
 import Link from "next/link";
 
@@ -88,6 +89,10 @@ export default async function CalculatorPage({
           <div className="max-w-4xl mx-auto">
             {/* slug only — the function-bearing tool config resolves client-side */}
             <CalculatorClient slug={slug} variant="page" />
+
+            {/* Resource gate island: resolves topic from slug, renders only when
+                an enabled asset exists (renders null for unmapped/disabled topics). */}
+            <CalculatorPageResources slug={slug} />
 
             {tool.explainer && (
               <div className="mt-12 border-l-4 border-orange-600 bg-slate-50 p-6 sm:p-8">

@@ -8,6 +8,7 @@ import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react
 import { IntentProvider } from "@/components/intent/IntentProvider";
 import { ReturningBar } from "@/components/intent/ReturningBar";
 import { DeepScrollModal } from "@/components/intent/DeepScrollModal";
+import { SpecialistWidget } from "@/components/support/SpecialistWidget";
 import { siteConfig } from "@/config/site";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -102,6 +103,10 @@ export default function RootLayout({
               <PageShell>{children}</PageShell>
               <ReturningBar />
               <DeepScrollModal />
+              {/* Specialist widget: fixed bottom-right, print:hidden, Phase-0 deterministic */}
+              <div className="print:hidden">
+                <SpecialistWidget />
+              </div>
             </IntentProvider>
           </AnalyticsProvider>
         </ConsentProvider>

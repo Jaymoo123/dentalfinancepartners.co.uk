@@ -53,6 +53,8 @@ export function ExitIntentModal() {
   // only on relevant routes and when not suppressed.
   useEffect(() => {
     if (typeof window === "undefined" || !relevant || isSuppressed()) return;
+    // Stand-down: the SpecialistWidget is already active; don't stack another modal.
+    if (window.sessionStorage.getItem("afl_assistant_active") === "1") return;
     // Consent gate: honour opt-out like the other intent surfaces.
     if (getConsent() === "denied") return;
 

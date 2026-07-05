@@ -6,6 +6,7 @@ import { siteConfig } from "@/config/site";
 import { JsonLd, buildWebApplication, buildFaqPage } from "@/lib/schema";
 import { CalculatorClient } from "@/components/tools/CalculatorClient";
 import { getGenericTool, allTools } from "@/lib/tools/registry";
+import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 import Link from "next/link";
 
 export const dynamicParams = false;
@@ -103,6 +104,10 @@ export default async function CalculatorPage({
                 ))}
               </div>
             )}
+
+            {/* Resource island: gated xlsx + guide for the matched topic (renders nothing
+                when no enabled asset exists for the calculator's topic). */}
+            <CalculatorPageResources slug={slug} pageTitle={tool.name} />
 
             {tool.faqs && tool.faqs.length > 0 && (
               <section className="mt-12">
