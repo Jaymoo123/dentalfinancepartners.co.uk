@@ -8,8 +8,9 @@
  * - Personal allowance £12,570 (HMRC 2026/27, unchanged)
  * - Basic rate limit £50,270 / higher rate limit £125,140 (HMRC 2026/27, unchanged)
  * - Class 4 NI lower £12,570, upper £50,270 (HMRC 2026/27, unchanged); rates 6%/2%
- * - Primary NI threshold £12,570, secondary £9,100 (HMRC 2026/27)
- * - Employee NI basic 8%, employer NI 15% (FA 2025 — from April 2025, unchanged)
+ * - Primary NI threshold £12,570, secondary £5,000 (employer NIC 15% above
+ *   £5,000 from 6 April 2025; corrected 2026-07-06, was stale at £9,100)
+ * - Employee NI basic 8%, employer NI 15% (FA 2025, from April 2025, unchanged)
  * - Dividend allowance £500 (2024/25 onwards, unchanged)
  * - Dividend tax 10.75%/35.75%/39.35% (FA 2026 s.4, from 6 April 2026)
  *   HP §3: "from 6 April 2026 (Finance Act 2026 c.11 s.4) ordinary 10.75% / upper 35.75%,
@@ -33,7 +34,7 @@ const HIGHER_RATE_LIMIT = 125140;
 const CLASS4_LOWER = 12570;
 const CLASS4_UPPER = 50270;
 const NI_PRIMARY = 12570;
-const NI_SECONDARY = 9100;
+const NI_SECONDARY = 5000;
 const EMPLOYEE_NI_BASIC = 0.08;
 const EMPLOYER_NI = 0.15;
 const INCOME_BASIC = 0.20;

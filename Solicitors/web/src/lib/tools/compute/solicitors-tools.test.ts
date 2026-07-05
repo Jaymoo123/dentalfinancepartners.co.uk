@@ -86,6 +86,24 @@ describe("calcSolicitorTakeHome — golden tests (2026/27 rates, R2 updated)", (
     expect(r.ltd.tax).toBeGreaterThan(0);
   });
 
+  it("Ltd GOLDEN: exact figures pinned on the corrected 2026/27 basis", () => {
+    // Pinned 2026-07-06 after the employer-NIC secondary-threshold correction
+    // (9,100 -> 5,000 from 6 April 2025). Employer NIC on the 12,570 salary is
+    // 15% x (12,570 - 5,000) = 1,135.50; dividend rates 10.75%/35.75%/39.35%
+    // (FA 2026 s.4). Values derived by executing the corrected lib; internal
+    // conservation holds exactly: net + tax === profit (tax includes the 2,500
+    // admin cost). These pins exist because the previous typeof-only assertions
+    // let the stale 9,100 threshold survive undetected.
+    const r150 = calcSolicitorTakeHome({ profit: 150000, pensionContrib: 0 });
+    expect(r150.ltd.net).toBeCloseTo(84384.44, 1);
+    expect(r150.ltd.tax).toBeCloseTo(65615.56, 1);
+    expect(r150.ltd.net + r150.ltd.tax).toBeCloseTo(150000, 4);
+    const r60 = calcSolicitorTakeHome({ profit: 60000, pensionContrib: 0 });
+    expect(r60.ltd.net).toBeCloseTo(43591.2, 1);
+    expect(r60.ltd.tax).toBeCloseTo(16408.8, 1);
+    expect(r60.ltd.net + r60.ltd.tax).toBeCloseTo(60000, 4);
+  });
+
   it("ED-01: break PA taper threshold — this test detects the change (guard test)", () => {
     // At profit=100001, PA taper kicks in (PA = max(0, 12570 - 0.5) = 12569.5)
     // At profit=100000, PA taper starts: (100000-100000)/2 = 0, so PA = 12570

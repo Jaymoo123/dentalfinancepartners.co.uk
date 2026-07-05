@@ -154,7 +154,7 @@ export const solePractitionerConfig: PremiumToolConfig = {
     heading: "How this calculator works",
     paragraphs: [
       "For a sole practitioner or partner in a tax-transparent partnership or LLP, practice profit is taxed as personal income: income tax at 20%, 40% and 45% plus Class 4 National Insurance at 6% on profits from £12,570 to £50,270 and 2% above. Class 2 NIC was abolished from 6 April 2024. The personal allowance (£12,570) is tapered above £100,000 and lost at £125,140.",
-      "For a limited company, the calculator applies corporation tax on profits (19% on profits up to £50,000, 25% main rate above £250,000, marginal relief between), employer NIC at 15% on the minimum salary above £9,100, then dividend tax on the remaining distributable profit at 2026/27 rates (10.75% basic / 35.75% higher / 39.35% additional, FA 2026 s.4 from 6 April 2026). A fixed £2,500 annual admin cost is included.",
+      "For a limited company, the calculator applies corporation tax on profits (19% on profits up to £50,000, 25% main rate above £250,000, marginal relief between), employer NIC at 15% on the minimum salary above £5,000, then dividend tax on the remaining distributable profit at 2026/27 rates (10.75% basic / 35.75% higher / 39.35% additional, FA 2026 s.4 from 6 April 2026). A fixed £2,500 annual admin cost is included.",
       "Following the FA 2026 dividend rise, the tax advantage of a limited company over a partnership or LLP has narrowed at typical partner profit levels. Before incorporating, a solicitor must also weigh SRA authorisation requirements (HP §1): an SRA-regulated firm incorporating as a limited company needs recognition as a recognised body, or an ABS licence if any non-lawyer holds an interest.",
     ],
   },

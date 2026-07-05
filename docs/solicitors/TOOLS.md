@@ -58,11 +58,11 @@ The RSC boundary is the site-local `CalculatorClient.tsx` wrapper. Server pages 
 | Class 4 NI lower rate | 6% on profits £12,570 to £50,270 | HMRC — National Insurance rates 2025/26 |
 | Class 4 NI upper rate | 2% above £50,270 | HMRC — National Insurance rates 2025/26 |
 | Employee NI basic | 8% above £12,570 | FA 2025 (from April 2025) |
-| Employer NI | 15% above £9,100 | FA 2025 (from April 2025) |
+| Employer NI | 15% above £5,000 | FA 2025 (from April 2025; secondary threshold reduced from £9,100 to £5,000) |
 | Dividend allowance | £500 | HMRC — Dividend Tax 2024/25 onwards |
-| Dividend tax basic | 8.75% | HMRC — Dividend Tax 2023/24 onwards |
-| Dividend tax higher | 33.75% | HMRC — Dividend Tax 2023/24 onwards |
-| Dividend tax additional | 39.35% | HMRC — Dividend Tax 2023/24 onwards |
+| Dividend tax basic | 10.75% | FA 2026 s.4, from 6 April 2026 |
+| Dividend tax higher | 35.75% | FA 2026 s.4, from 6 April 2026 |
+| Dividend tax additional | 39.35% | FA 2026 s.4, from 6 April 2026 (unchanged) |
 | CT small profits rate | 19% on profits up to £50,000 | FA 2023 |
 | CT main rate | 25% on profits above £250,000 | FA 2023 |
 | CT marginal rate | 26.5% between £50,000 and £250,000 | FA 2023 |
@@ -191,8 +191,7 @@ The RSC boundary is the site-local `CalculatorClient.tsx` wrapper. Server pages 
 
 | Figure | Value | Source |
 |---|---|---|
-| De minimis exemption — peak | Peak client money up to £10,000 | SRA Accounts Rules Rule 12.2 |
-| De minimis exemption — average | Average balance up to £250 | SRA Accounts Rules Rule 12.2 |
+| De minimis exemption (Rule 12.2) | Average client balance no more than £10,000 AND maximum client balance no more than £250,000 | SRA Accounts Rules Rule 12.2 (HP §5.G) |
 | Volume average balance — low | £2,500/matter | Indicative operational figure |
 | Volume average balance — moderate | £8,000/matter | Indicative operational figure |
 | Volume average balance — high | £25,000/matter | Indicative operational figure |
