@@ -100,9 +100,9 @@ Status vocabulary: `pending / building / built / QA'd / gated / DEPLOYED(tag) / 
 | R1 Opus QA + gates + SHIP | **DEPLOYED(deploy/generalist/2026-07-05-g1)** commit `700ff921`; Opus QA SHIP, findings fixed pre-commit; probe A+B+C PASS (chokepoint proven end-to-end in prod); live-surface battery green (one agent false-alarm on chunk sampling, disproven via SSR HTML) | **DEPLOYED(deploy/solicitors/2026-07-05-s1)** commit `9a3930e9`; Opus QA SHIP, findings fixed pre-commit (fallback honeypot flag, succession category normalised ×10, em-dashes, sticky telemetry); probe A+B+C PASS; live-surface battery 7/7 GREEN (compliance fixes live: "Do not track" footer control + GA4 consent-gated; old category variant 404s correctly) |
 | R2: WS4 premium tools + gates (WP-F/G/H) | built (6 tools, 23 goldens; Workflow wf_c4bec3b5-51a) | built (4 tools + CGT/BADR lib + 2 factual lib fixes; 131 tests) |
 | R2 QA + SHIP | **DEPLOYED(deploy/generalist/2026-07-06-g2)** commit `8f267ac9`; Opus QA SHIP, findings fixed pre-commit (blog chart render, dead import); probes A+B+C PASS | **DEPLOYED(deploy/solicitors/2026-07-06-s2)** same commit; QA SHIP, findings fixed (gate topic threaded as prop, test em-dashes); probes PASS; S-1 category-fallout repaired (22 links + 301s, old path 308→200 verified); factual fixes LIVE (2026/27 dividend rates, GBP 250 figure gone) |
-| R3: WS5 resources (WP-I/J) | pending | pending |
-| R3: WS6 widget/assistant (WP-K/L) | pending | pending |
-| R3 QA + SHIP | pending | pending |
+| R3: WS5 resources (WP-I/J) | building (Workflow wf_ec95f8e8-eab; briefs committed) | building |
+| R3: WS6 widget/assistant (WP-K/L) | queued in workflow | queued |
+| R3 QA + SHIP | pending (**R3 ship gate needs OWNER: (1) prod application of migration 20260706000001 resource-gate notify/enrich skip — staged file verified against prod introspection (both fns exist, 1 trigger each; staging lacks the fns entirely, N/A there); (2) nod on in-house-only resource consent posture**) | pending (same gate) |
 | 7d verify + go/no-go + CRO_PARITY_TEMPLATE.md | pending | pending |
 
 ### Waves 2-5 (template instantiations after wave-1 go)
@@ -113,6 +113,8 @@ Dentists → Medical (FLAT blog routing! use `scripts/medical_flat_link_audit.py
 **EXTENDED (later same evening): same standing authorization for R2 and R3 — ship when gates green, no per-release ask.** Owner also confirmed no artificial post-deploy waits: the "48h check" is a monitoring read-back, never a blocker; build phases proceed continuously.
 
 ## Gate results log
+- 2026-07-06: THIRD live factual defect fixed (commit `ddb7a24c`): Solicitors take-home employer NIC secondary threshold 9,100→5,000 (stale since Apr 2025; understated NIC ≤ £615/yr on every Ltd output). Survived because Ltd tests asserted typeof-only — REAL pinned goldens added (conservation-checked, 132/132). TOOLS.md also corrected (£250 SRA line + 2025/26 dividend rates). Running tally of live advisory-grade defects caught by program fact-tracing: 3 (dividend rates, SRA £250, NIC threshold).
+- 2026-07-06: migration `20260706000001_resource_gate_notify_skip.sql` written+registered+committed (`16eddc86`); staging apply N/A (trigger fns exist only on prod — created via Management API with secrets); prod-readiness verified by introspection. PROD APPLICATION = owner sign-off at R3 ship gate.
 - 2026-07-05: LIVE traffic/leads baseline queried (table above). 22 unregistered migrations verified applied on prod via object-existence batch query (all true; leads_source_valid CHECK includes all 8 keys + test; sites rows for cfp/cis present).
 - 2026-07-05: Phase 0 battery GREEN — web-shared 348/348, Property 1076/1076 (suite grew from ~961) + prod build, console build, generalist 33/33 + build. Baselines B1-B5 = d8b8d6f6, f5dc9d1f, 7053d489, cca3cc8e, 69d125f0; branch `estate-cro-parity` @ tag `baseline/estate-cro-2026-07-05`, pushed.
 - 2026-07-05: Parity-matrix audit (generalist+Solicitors vs 71-capability standard) running via Explore agent — results land in this log.
