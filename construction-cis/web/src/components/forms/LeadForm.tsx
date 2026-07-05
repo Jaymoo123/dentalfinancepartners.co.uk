@@ -5,11 +5,10 @@ import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
-import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { submitCisLead } from "@/lib/leads/submit-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { tradeTypes } from "@/data/trade-types";
-import { composeLeadMessage } from "@/lib/lead-message";
 
 const fieldClass =
   "mt-2 w-full min-h-12 touch-manipulation border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-orange-500 focus:outline-none";
@@ -62,6 +61,8 @@ export function LeadForm({
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
   const [consent, setConsent] = useState(false);
+  // Honeypot ref value — read from the hidden input at submit time.
+  const [honeypotValue, setHoneypotValue] = useState("");
 
   // Segment-aware optional fields
   const [selectedRole, setSelectedRole] = useState("");
@@ -77,8 +78,6 @@ export function LeadForm({
   // AN-02: form lifecycle tracking — no field values captured, only names + outcome.
   const { onFieldFocus, onFieldBlur, onError, onSubmit: trackFormSubmit, onLead } =
     useFormTracking("lead_form");
-
-  const { supabaseUrl, supabaseKey } = getSupabaseConfig();
 
   const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
 
@@ -116,9 +115,6 @@ export function LeadForm({
     const form = e.currentTarget;
     const data = new FormData(form);
 
-    // LD-03: honeypot — bots fill company_url; humans never see or tab to this field
-    if (String(data.get("company_url") || "").trim()) return;
-
     const errs = validate(data);
     setFieldErrors(errs);
     if (Object.keys(errs).length > 0) {
@@ -133,14 +129,6 @@ export function LeadForm({
       return;
     }
 
-    if (!supabaseUrl || !supabaseKey) {
-      setStatus("error");
-      setErrorMessage(
-        "Form not connected. Email us directly and we will respond same day.",
-      );
-      return;
-    }
-
     setStatus("loading");
 
     // LD-02: emit form_submit with count of completed fields (includes optional segment fields)
@@ -152,12 +140,10 @@ export function LeadForm({
       + (selectedSubbieCount ? 1 : 0);
     trackFormSubmit(completedCount);
 
-    // Compose message with structured prefix lines for segment data
-    const composedMessage = composeLeadMessage({
-      trade: selectedTrade || undefined,
-      subbieCount: selectedSubbieCount || undefined,
-      message: String(data.get("message") || "").trim() || undefined,
-    });
+    // Qualifiers go into extras (not crammed into message) — schema-clean.
+    const extras: Record<string, unknown> = {};
+    if (selectedTrade) extras.trade = selectedTrade;
+    if (selectedSubbieCount) extras.subbie_count = selectedSubbieCount;
 
     // LD-05: stitch visitor + session ids so each lead row links to its analytics events
     const payload = {
@@ -165,7 +151,7 @@ export function LeadForm({
       email: String(data.get("email") || "").trim(),
       phone: String(data.get("phone") || "").trim(),
       role: String(data.get("role") || "").trim(),
-      message: composedMessage,
+      message: String(data.get("message") || "").trim(),
       source: niche.content_strategy.source_identifier,
       source_url: sourceUrl || String(data.get("sourceUrl") || "").trim(),
       submitted_at: new Date().toISOString(),
@@ -174,9 +160,12 @@ export function LeadForm({
       consent_at: new Date().toISOString(),
       visitor_id: getVisitorId() ?? undefined,
       session_id: getSessionId() ?? undefined,
+      extras: Object.keys(extras).length > 0 ? extras : undefined,
     };
 
-    const result = await submitLead(payload, supabaseUrl, supabaseKey);
+    // LD-03: pass enquiry_ref honeypot value to the server chokepoint.
+    // The server stores flagged rows and returns success; it never signals detection.
+    const result = await submitCisLead(payload, honeypotValue);
 
     if (!result.success) {
       setStatus("error");
@@ -191,6 +180,7 @@ export function LeadForm({
     setSelectedRole("");
     setSelectedTrade("");
     setSelectedSubbieCount("");
+    setHoneypotValue("");
 
     if (redirectOnSuccess) {
       setTimeout(() => {
@@ -206,18 +196,21 @@ export function LeadForm({
     <form onSubmit={onSubmit} className="space-y-6" noValidate aria-busy={status === "loading"}>
       <input type="hidden" name="sourceUrl" value={sourceUrl} />
 
-      {/* LD-03: honeypot — visually hidden, bots fill it, humans never reach it */}
+      {/* LD-03: honeypot — visually hidden, bots fill it, humans never see or tab to this field.
+          Named enquiry_ref (estate-standard). Value passed to submit-client, never used to abort. */}
       <div
         aria-hidden="true"
         style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }}
       >
-        <label htmlFor="company_url">Company website (leave blank)</label>
+        <label htmlFor="enquiry_ref">Company website (leave blank)</label>
         <input
-          id="company_url"
+          id="enquiry_ref"
           type="text"
-          name="company_url"
+          name="enquiry_ref"
           tabIndex={-1}
           autoComplete="off"
+          value={honeypotValue}
+          onChange={(e) => setHoneypotValue(e.target.value)}
         />
       </div>
 

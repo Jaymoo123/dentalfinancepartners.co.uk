@@ -12,7 +12,7 @@ import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
-import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { submitContractorLead } from "@/lib/leads/submit-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
@@ -56,7 +56,6 @@ export function MiniCapture({
     if (typeof window !== "undefined") setSourceUrl(window.location.href);
   }, []);
 
-  const { supabaseUrl, supabaseKey } = getSupabaseConfig();
   const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
 
   const validate = useCallback((data: FormData) => {
@@ -75,17 +74,18 @@ export function MiniCapture({
     setErrorMessage(null);
     const form = e.currentTarget;
     const data = new FormData(form);
-    if (String(data.get("company_url") || "").trim() !== "") return; // honeypot
+    // LD-03: pass honeypot to server rather than aborting client-side.
+    const honeypotValue = String(data.get("enquiry_ref") || "").trim();
     const errs = validate(data);
     setFieldErrors(errs);
-    if (Object.keys(errs).length > 0) return;
-    ft.onSubmit(4); // passed validation, about to POST
-
-    if (!supabaseUrl || !supabaseKey) {
-      setStatus("error");
-      setErrorMessage("Form not connected. Email us directly, we respond same day.");
+    if (Object.keys(errs).length > 0) {
+      // Emit form_error for each failing field so the funnel has a denominator.
+      for (const [field] of Object.entries(errs)) {
+        ft.onError(field, "required");
+      }
       return;
     }
+    ft.onSubmit(4); // passed validation, about to POST
 
     setStatus("loading");
     const userMessage = String(data.get("message") || "").trim();
@@ -105,7 +105,7 @@ export function MiniCapture({
       session_id: getSessionId() ?? undefined,
     };
 
-    const result = await submitLead(payload, supabaseUrl, supabaseKey);
+    const result = await submitContractorLead(payload, honeypotValue);
     if (!result.success) {
       setStatus("error");
       setErrorMessage(result.error || "Something went wrong. Please try again or use the full form below.");
@@ -151,8 +151,8 @@ export function MiniCapture({
           noValidate
           aria-busy={status === "loading"}
         >
-          {/* Honeypot */}
-          <input type="text" name="company_url" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-px w-px opacity-0" />
+          {/* Honeypot — enquiry_ref; bots fill it, server stores flagged, never silent-drop */}
+          <input type="text" name="enquiry_ref" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-px w-px opacity-0" />
 
           <div>
             <label htmlFor={`${formId}-name`} className="block text-sm font-semibold text-neutral-900">Full name</label>

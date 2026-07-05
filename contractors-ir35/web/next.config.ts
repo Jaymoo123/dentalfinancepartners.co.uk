@@ -17,7 +17,10 @@ const nextConfig: NextConfig = {
     ],
   },
   async headers() {
-    return buildSecurityHeaders({ ga: true, supabase: true });
+    // embedPrefix: "embed" allows /embed/* to be framed in third-party iframes
+    // (SEC-03 fix: without this, buildSecurityHeaders emits X-Frame-Options DENY
+    // site-wide, which blocks the embed pages from working in iframe contexts).
+    return buildSecurityHeaders({ ga: true, supabase: true, embedPrefix: "embed" });
   },
 };
 

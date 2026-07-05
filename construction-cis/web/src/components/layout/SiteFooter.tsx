@@ -2,6 +2,7 @@ import Link from "next/link";
 import { focusRing, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { UnionJack } from "@/components/brand/UnionJack";
+import { ConsentToggle } from "@/components/analytics/ConsentToggle";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -77,6 +78,9 @@ export function SiteFooter() {
               Specialist CIS accountants. Editorial content only. Book a call for advice specific to your situation.
             </p>
           </div>
+          <p className="text-xs text-neutral-400">
+            <ConsentToggle className="underline hover:no-underline text-neutral-400 hover:text-neutral-600" />
+          </p>
         </div>
       </div>
     </footer>

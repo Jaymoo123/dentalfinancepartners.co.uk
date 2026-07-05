@@ -5,13 +5,15 @@
  * with a clear topic, surface that topic's calculator (and, once authored in
  * Phase 4, its free resource). Modal overlay = no layout shift. Frequency-capped:
  * one per session (module flag) and a 30-day per-topic suppress. Measured.
+ *
+ * cfp_ keys, petrol-cyan palette.
  */
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useIntent, trackPersonalization } from "./IntentProvider";
 
 const SUPPRESS_DAYS = 30;
-const suppressKey = (topic: string) => `bfp_deepscroll_${topic}`;
+const suppressKey = (topic: string) => `cfp_deepscroll_${topic}`;
 
 function isSuppressed(topic: string): boolean {
   try {
@@ -39,16 +41,15 @@ export function DeepScrollModal() {
 
   useEffect(() => {
     if (!action || open || shownThisSession) return;
-    if (isSuppressed(action.topic)) return;
-    // Shared per-session cap with ExitIntentModal: only one topic-offer modal per session.
+    // Shared per-session cap with ExitIntentModal: at most ONE topic-offer
+    // modal per session (QA finding, twins wave; mirrors Dentists).
     try {
-      if (window.sessionStorage.getItem("bfp_modal_shown") === "1") return;
-    } catch { /* ignore */ }
+      if (window.sessionStorage.getItem("cfp_modal_shown") === "1") return;
+      window.sessionStorage.setItem("cfp_modal_shown", "1");
+    } catch { /* private browsing: module flag still applies */ }
+    if (isSuppressed(action.topic)) return;
     setOpen(true);
     shownThisSession = true;
-    try {
-      window.sessionStorage.setItem("bfp_modal_shown", "1");
-    } catch { /* ignore */ }
     suppress(action.topic);
     if (!shownRef.current) {
       shownRef.current = true;
@@ -93,21 +94,21 @@ export function DeepScrollModal() {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-start justify-between gap-3">
-          <h2 className="text-lg font-bold text-slate-900">{offer.title}</h2>
+          <h2 className="text-lg font-bold text-neutral-900">{offer.title}</h2>
           <button
             type="button"
             aria-label="Close"
             data-cta="deep_scroll_close"
             onClick={() => close(true)}
-            className="text-slate-400 hover:text-slate-700"
+            className="text-neutral-400 hover:text-neutral-700"
           >
             &times;
           </button>
         </div>
-        <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-orange-700">
+        <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-cyan-700">
           {offer.reason}
         </p>
-        <p className="mt-2 text-sm text-slate-600">{offer.blurb}</p>
+        <p className="mt-2 text-sm text-neutral-600">{offer.blurb}</p>
         <div className="mt-5 flex flex-col gap-2">
           <Link
             href={offer.href}
@@ -117,7 +118,7 @@ export function DeepScrollModal() {
               trackPersonalization("clicked", action);
               setOpen(false);
             }}
-            className="rounded-lg bg-orange-500 px-4 py-2.5 text-center font-semibold text-white hover:bg-orange-600"
+            className="rounded-lg bg-cyan-700 px-4 py-2.5 text-center font-semibold text-white hover:bg-cyan-800"
           >
             {primaryLabel}
           </Link>
@@ -127,7 +128,7 @@ export function DeepScrollModal() {
               trackPersonalization("clicked", action);
               setOpen(false);
             }}
-            className="rounded-lg border border-slate-200 px-4 py-2.5 text-center font-semibold text-slate-700 hover:bg-slate-50"
+            className="rounded-lg border border-neutral-200 px-4 py-2.5 text-center font-semibold text-neutral-700 hover:bg-neutral-50"
           >
             {secondaryLabel}
           </Link>

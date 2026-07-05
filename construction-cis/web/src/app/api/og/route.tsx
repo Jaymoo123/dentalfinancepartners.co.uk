@@ -3,6 +3,7 @@ import type { NextRequest } from "next/server";
 import { niche } from "@/config/niche-loader";
 
 export const runtime = "edge";
+export const maxDuration = 10;
 
 /**
  * OG image route.

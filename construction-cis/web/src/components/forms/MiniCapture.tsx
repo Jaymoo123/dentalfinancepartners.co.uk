@@ -7,12 +7,16 @@
  * fit for partner handoff. Topic-aware, consent-gated, honeypot-protected, and
  * fully stitched to the first-party journey (visitor_id/session_id) so it fires
  * form_start / form_submit / lead_submitted.
+ *
+ * Honeypot: enquiry_ref is passed to the server chokepoint which stores it
+ * flagged and returns success. Client NEVER silently drops a submission.
+ * Validation aborts emit form_error (no swallowing).
  */
 import { useCallback, useEffect, useRef, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
-import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { submitCisLead } from "@/lib/leads/submit-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
@@ -64,6 +68,8 @@ export function MiniCapture({
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
   const [consent, setConsent] = useState(false);
+  // Honeypot value — tracked in state so bots that fill it are detected server-side.
+  const [honeypotValue, setHoneypotValue] = useState("");
   const ft = useFormTracking(formId);
 
   // Building-block funnel: exposure on scroll-into-view (unless the parent fires
@@ -82,7 +88,6 @@ export function MiniCapture({
     if (typeof window !== "undefined") setSourceUrl(window.location.href);
   }, []);
 
-  const { supabaseUrl, supabaseKey } = getSupabaseConfig();
   const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
 
   const validate = useCallback((data: FormData) => {
@@ -101,17 +106,18 @@ export function MiniCapture({
     setErrorMessage(null);
     const form = e.currentTarget;
     const data = new FormData(form);
-    if (String(data.get("company_url") || "").trim() !== "") return; // honeypot
+
+    // Validate first; emit form_error on each failing field (no swallowing).
     const errs = validate(data);
     setFieldErrors(errs);
-    if (Object.keys(errs).length > 0) return;
-    ft.onSubmit(4); // passed validation, about to POST
-
-    if (!supabaseUrl || !supabaseKey) {
-      setStatus("error");
-      setErrorMessage("Form not connected. Email us directly, we respond same day.");
+    if (Object.keys(errs).length > 0) {
+      for (const [field, _msg] of Object.entries(errs)) {
+        ft.onError(field, "required");
+      }
       return;
     }
+
+    ft.onSubmit(4); // passed validation, about to POST
 
     setStatus("loading");
     const userMessage = String(data.get("message") || "").trim();
@@ -131,7 +137,8 @@ export function MiniCapture({
       session_id: getSessionId() ?? undefined,
     };
 
-    const result = await submitLead(payload, supabaseUrl, supabaseKey);
+    // LD-03: honeypot value passed to the server; server stores flagged, returns success.
+    const result = await submitCisLead(payload, honeypotValue);
     if (!result.success) {
       setStatus("error");
       setErrorMessage(result.error || "Something went wrong. Please try again or use the full form below.");
@@ -149,6 +156,7 @@ export function MiniCapture({
     setStatus("success");
     form.reset();
     setConsent(false);
+    setHoneypotValue("");
   }
 
   return (
@@ -180,8 +188,18 @@ export function MiniCapture({
           noValidate
           aria-busy={status === "loading"}
         >
-          {/* Honeypot */}
-          <input type="text" name="company_url" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-px w-px opacity-0" />
+          {/* LD-03: honeypot — visually hidden, bots fill it, humans never tab to this field.
+              Named enquiry_ref (estate-standard). Value passed to server, never used to abort. */}
+          <input
+            type="text"
+            name="enquiry_ref"
+            tabIndex={-1}
+            autoComplete="off"
+            aria-hidden="true"
+            className="absolute left-[-9999px] top-[-9999px] h-px w-px opacity-0"
+            value={honeypotValue}
+            onChange={(e) => setHoneypotValue(e.target.value)}
+          />
 
           <div>
             <label htmlFor={`${formId}-name`} className="block text-sm font-semibold text-slate-900">Full name</label>

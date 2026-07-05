@@ -6,6 +6,10 @@ import { PageShell } from "@/components/layout/PageShell";
 import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
 import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
 import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
+import { IntentProvider } from "@/components/intent/IntentProvider";
+import { ReturningBar } from "@/components/intent/ReturningBar";
+import { DeepScrollModal } from "@/components/intent/DeepScrollModal";
+import { ExitIntentModal } from "@/components/blog/ExitIntentModal";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
 import { buildOrganizationJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
@@ -95,7 +99,12 @@ export default function RootLayout({
             noTrackPrefixes={["/admin", "/embed"]}
           >
             <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
-            <PageShell>{children}</PageShell>
+            <IntentProvider>
+              <PageShell>{children}</PageShell>
+              <ReturningBar />
+              <DeepScrollModal />
+              <ExitIntentModal />
+            </IntentProvider>
           </AnalyticsProvider>
         </ConsentProvider>
       </body>

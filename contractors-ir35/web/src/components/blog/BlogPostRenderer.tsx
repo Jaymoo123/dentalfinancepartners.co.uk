@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { BlogPost } from "@/types/blog";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
+import { NextStepOffer } from "@/components/intent/NextStepOffer";
 import { buildBlogPostingJsonLd, buildFaqJsonLd } from "@/lib/schema";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -10,6 +12,7 @@ import { TableOfContents } from "@accounting-network/web-shared/content/TableOfC
 import { ReadingProgress } from "@accounting-network/web-shared/content/ReadingProgress";
 import { extractHeadings } from "@/lib/markdown-utils";
 import { calculateReadTime } from "@/lib/blog";
+import { topicForBlogSlug } from "@/lib/intent/taxonomy";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -23,9 +26,30 @@ function formatUkDate(isoDate: string): string {
   return d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 }
 
+/**
+ * Split HTML content at roughly the 60% scroll point (after the 3rd or 4th h2)
+ * so InlineMiniLeadForm lands mid-article. Falls back to the full article with
+ * no split when there are fewer than 4 headings (short posts).
+ */
+function splitContentAtMidScroll(html: string): { before: string; after: string | null } {
+  const headings = [...html.matchAll(/<h2[^>]*>/g)];
+  if (headings.length < 4) {
+    return { before: html, after: null };
+  }
+  const targetIdx = Math.floor(headings.length * 0.6);
+  const target = headings[targetIdx];
+  if (target?.index === undefined) {
+    return { before: html, after: null };
+  }
+  return { before: html.slice(0, target.index), after: html.slice(target.index) };
+}
+
 export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostRendererProps) {
   const headings = extractHeadings(post.contentHtml);
   const readTime = calculateReadTime(post.contentHtml);
+  const midSplit = splitContentAtMidScroll(post.contentHtml);
+  // Resolve the topic using the SLUG (not the human label post.category).
+  const _topic = topicForBlogSlug(categorySlug); // reserved for R2 premium island
   const jsonLd =
     post.schema?.trim() ||
     buildBlogPostingJsonLd(post, `/blog/${categorySlug}/${post.slug}`);
@@ -188,10 +212,18 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 <TableOfContents headings={headings} />
               </div>
 
-              <div
-                className="article-body prose-blog mt-10"
-                dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+              <div className="article-body prose-blog mt-10"
+                dangerouslySetInnerHTML={{ __html: midSplit.before }}
               />
+              {midSplit.after !== null && (
+                <>
+                  {/* Mid-scroll: InlineMiniLeadForm at ~60% of article */}
+                  <InlineMiniLeadForm topic={post.category} />
+                  <div className="article-body prose-blog"
+                    dangerouslySetInnerHTML={{ __html: midSplit.after }}
+                  />
+                </>
+              )}
 
               {post.faqs && post.faqs.length > 0 ? (
                 <section className="mt-16" aria-labelledby="faq-heading">
@@ -224,6 +256,8 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   </Link>
                 </div>
               </aside>
+
+              <NextStepOffer />
 
               <div className="mt-16 border-2 border-cyan-200 bg-gradient-to-br from-cyan-50 to-white p-8 sm:p-10 rounded-2xl">
                 <h2 className="text-2xl font-bold text-cyan-900 sm:text-3xl">

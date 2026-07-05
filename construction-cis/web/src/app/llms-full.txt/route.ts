@@ -2,6 +2,8 @@ import { buildLlmsFullRoute } from "@accounting-network/web-shared/content/llmsF
 import { niche } from "@/config/niche-loader";
 import { GLOSSARY } from "@/app/glossary/[slug]/data";
 
+export const runtime = "nodejs";
+export const maxDuration = 10;
 export const dynamic = "force-static";
 export const revalidate = 3600;
 

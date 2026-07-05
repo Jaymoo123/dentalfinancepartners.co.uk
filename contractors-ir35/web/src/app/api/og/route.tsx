@@ -2,7 +2,10 @@ import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";
 import { niche } from "@/config/niche-loader";
 
+// SEC-04: runtime and maxDuration declared at route level so Vercel can read
+// them statically. Dynamic is omitted (edge OG uses search params).
 export const runtime = "edge";
+export const maxDuration = 10;
 
 /**
  * OG image route.

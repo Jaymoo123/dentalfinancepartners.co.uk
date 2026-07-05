@@ -5,7 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
-import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { submitContractorLead } from "@/lib/leads/submit-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
@@ -53,8 +53,6 @@ export function LeadForm({
   const { onFieldFocus, onFieldBlur, onError, onSubmit: trackFormSubmit, onLead } =
     useFormTracking("lead_form");
 
-  const { supabaseUrl, supabaseKey } = getSupabaseConfig();
-
   const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
 
   const validate = useCallback((data: FormData) => {
@@ -91,8 +89,10 @@ export function LeadForm({
     const form = e.currentTarget;
     const data = new FormData(form);
 
-    // LD-03: honeypot — bots fill company_url; humans never see or tab to this field
-    if (String(data.get("company_url") || "").trim()) return;
+    // LD-03: honeypot — pass enquiry_ref to the server rather than aborting
+    // client-side (the client-side abort lost real leads when browsers autofilled
+    // the hidden field; the server stores the row flagged and returns success).
+    const honeypotValue = String(data.get("enquiry_ref") || "").trim();
 
     const errs = validate(data);
     setFieldErrors(errs);
@@ -105,14 +105,6 @@ export function LeadForm({
           : "required";
         onError(field, kind);
       }
-      return;
-    }
-
-    if (!supabaseUrl || !supabaseKey) {
-      setStatus("error");
-      setErrorMessage(
-        "Form not connected. Email us directly and we will respond same day.",
-      );
       return;
     }
 
@@ -141,7 +133,7 @@ export function LeadForm({
       session_id: getSessionId() ?? undefined,
     };
 
-    const result = await submitLead(payload, supabaseUrl, supabaseKey);
+    const result = await submitContractorLead(payload, honeypotValue);
 
     if (!result.success) {
       setStatus("error");
@@ -165,16 +157,17 @@ export function LeadForm({
     <form onSubmit={onSubmit} className="space-y-6" noValidate aria-busy={status === "loading"}>
       <input type="hidden" name="sourceUrl" value={sourceUrl} />
 
-      {/* LD-03: honeypot — visually hidden, bots fill it, humans never reach it */}
+      {/* LD-03: honeypot — visually hidden, bots fill it, humans never reach it.
+          Renamed enquiry_ref to avoid browser autofill matching "company". */}
       <div
         aria-hidden="true"
         style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }}
       >
-        <label htmlFor="company_url">Company website (leave blank)</label>
+        <label htmlFor="enquiry_ref">Leave blank</label>
         <input
-          id="company_url"
+          id="enquiry_ref"
           type="text"
-          name="company_url"
+          name="enquiry_ref"
           tabIndex={-1}
           autoComplete="off"
         />

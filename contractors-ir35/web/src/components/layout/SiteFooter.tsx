@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { focusRing, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { ConsentToggle } from "@/components/analytics/ConsentToggle";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -65,6 +66,9 @@ export function SiteFooter() {
               Specialist contractor accountants. Editorial content only. Book a call for advice specific to your situation.
             </p>
           </div>
+          <p className="text-xs text-neutral-500">
+            <ConsentToggle className="underline hover:no-underline text-neutral-500" />
+          </p>
         </div>
       </div>
     </footer>

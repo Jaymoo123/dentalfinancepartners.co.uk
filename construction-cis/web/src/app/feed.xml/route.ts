@@ -2,6 +2,8 @@ import { buildFeedRoute } from "@accounting-network/web-shared/content/feed";
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
 import { siteConfig } from "@/config/site";
 
+export const runtime = "nodejs";
+export const maxDuration = 10;
 export const dynamic = "force-static";
 export const revalidate = 3600;
 
