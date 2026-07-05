@@ -74,11 +74,14 @@ export function calcIncorporation(input: IncorporationInput): IncorporationResul
   const taxableAfterPA = Math.max(0, soleTraderTaxableIncome - PERSONAL_ALLOWANCE);
   const soleTraderIncomeTax = calcIncomeTax(taxableAfterPA);
 
-  // Class 4 NI on private practice profit only
+  // Class 4 NI on private practice profit only. Main rate 6% (the 9% rate was
+  // abolished from 6 April 2024; HP section 5/section 8 lock 6%/2%, matching
+  // locum-tax.ts). Corrected 2026-07-06; the old 9% inflated sole-trader tax
+  // and biased the incorporation comparison.
   let soleTraderNI = 0;
   if (soleTraderProfit > NI_LOWER_LIMIT) {
     const niableBand1 = Math.min(soleTraderProfit - NI_LOWER_LIMIT, NI_UPPER_LIMIT - NI_LOWER_LIMIT);
-    soleTraderNI += niableBand1 * 0.09;
+    soleTraderNI += niableBand1 * 0.06;
     if (soleTraderProfit > NI_UPPER_LIMIT) {
       soleTraderNI += (soleTraderProfit - NI_UPPER_LIMIT) * 0.02;
     }

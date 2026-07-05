@@ -182,13 +182,18 @@ describe("calcIncorporation — golden tests (pinned to OLD component outputs)",
     //   nhsIncomeTaxableAfterPA = 50000 - 12570 = 37430
     //   nhsIncomeTax = 37430 * 0.2 = 7486
     //   ltdTotalTax = 21250 + 18118.1 + 7486 = 46854.1
-    //   taxSavings = 46012.6 - 46854.1 = -841.5 (incorporation costs more here)
+    //   Class 4 corrected to 6% (2026-07-06; 9% abolished Apr 2024): soleTraderTotalTax
+    //   = 44881.60, taxSavings = 44881.60 - 46854.10 = -1972.50 (incorporation costs more here)
     const r = calcIncorporation({ privateIncome: 100000, expenses: 15000, desiredSalary: 12570, nhsIncome: 50000 });
     expect(r.soleTraderTaxableIncome).toBe(135000);
     expect(r.companyProfit).toBe(85000);
     expect(r.corporationTax).toBe(21250);
-    // taxSavings may be negative (sole trader is cheaper at these inputs)
-    expect(typeof r.taxSavings).toBe("number");
+    // PINNED 2026-07-06 after the Class 4 rate correction (9% -> 6%): these
+    // exact figures exist because typeof-only assertions let the abolished 9%
+    // rate survive undetected. Delta vs old = 3% x 37,700 = 1,131.00 exactly.
+    expect(r.soleTraderTotalTax).toBeCloseTo(44881.6, 1);
+    expect(r.limitedCompanyTotalTax).toBeCloseTo(46854.1, 1);
+    expect(r.taxSavings).toBeCloseTo(-1972.5, 1);
     expect(r.savingsPerMonth).toBeCloseTo(r.taxSavings / 12, 5);
   });
 
