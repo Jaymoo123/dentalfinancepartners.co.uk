@@ -65,6 +65,35 @@ MIGRATIONS = [
     # dimension so property_contactability and property_detail_capture read apart.
     "20260703000001_lead_nurture_multi_sequence_views.sql",
     "20260703000002_lead_event_re_consented.sql",
+    # ---------------------------------------------------------------------
+    # Retroactive registration 2026-07-05 (CRO parity program, baseline B1):
+    # the 22 migrations below were applied to prod individually over June but
+    # never added to this list. Each verified present on prod via a batched
+    # object-existence query (functions/views/columns/constraint defs/rows)
+    # before registration. Do NOT bulk re-run; apply-by-substring only.
+    # ---------------------------------------------------------------------
+    "20260608000009_leads_to_enrich_webhook.sql",
+    "20260609000002_landlord_tax_index.sql",
+    "20260610000001_add_generalist_to_leads_source.sql",
+    "20260611000001_fix_visits_to_conversion_attribution.sql",
+    "20260611000002_channel_view_registry_internal.sql",
+    "20260611000003_leads_extras_jsonb.sql",
+    "20260612000001_subscribers_double_optin_fields.sql",
+    "20260612000002_generalist_newsletter_to_subscribers_data_migration.sql",
+    "20260612000003_agency_newsletter_to_subscribers_data_migration.sql",
+    "20260612000004_web_vitals_summary_view.sql",
+    "20260613000001_add_contractors_ir35_to_sites.sql",
+    "20260613000002_add_contractors_ir35_to_leads_source.sql",
+    "20260614000001_add_construction_cis_to_sites.sql",
+    "20260614000002_add_construction_cis_to_leads_source.sql",
+    "20260616000001_dashboard_humans_kpis.sql",
+    "20260616000001_rebrand_contractors_ir35.sql",
+    "20260616000002_estate_kpis_country.sql",
+    "20260616000003_chart_timeseries.sql",
+    "20260624000001_test_data_isolation.sql",
+    "20260630000001_console_perf_section_action_and_workmem.sql",
+    "20260630000002_form_lead_counts.sql",
+    "20260704000001_metric_consistency_visitor_id.sql",
 ]
 
 
