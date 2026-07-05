@@ -14,7 +14,7 @@
  * Shared across all operator consoles. Lifted from Property with auth pattern
  * corrected (Property keeps its own copy until adoption).
  */
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 
 export type VisitorRow = {
@@ -76,6 +76,15 @@ export default function VisitorsTable({
   const [q, setQ] = useState("");
   const [filter, setFilter] = useState<Filter>("all");
   const [sort, setSort] = useState<Sort>("recent");
+  // "Last seen" is a relative label computed by ago() from Date.now(). React does
+  // not re-render on its own, so without this it froze at page-load time and only
+  // moved on a manual refresh. Re-render every 30s so the relative times advance
+  // on their own. Cheap: no re-fetch, just recomputes the already-loaded rows.
+  const [, setTick] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setTick((t) => t + 1), 30_000);
+    return () => clearInterval(id);
+  }, []);
   // Render only the first slice by default. Search/filter/sort still run over
   // every loaded row; this only caps how many <tr> the browser paints at once,
   // which is what makes opening this tab feel sluggish with a large sample.

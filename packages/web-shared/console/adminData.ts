@@ -389,6 +389,13 @@ export function getResourceConversion(siteKey: string) {
   });
 }
 
+/** TTL for the Visitors table read. Shorter than DEFAULT_TTL because the "Last
+ * seen" column is a live-recency signal an operator watches — a 60s window made
+ * it feel laggy / needed a manual refresh. ~20s keeps it near-live while still
+ * collapsing rapid repeat loads. (The client also ticks the relative label every
+ * 30s; this controls how fresh the underlying timestamp is on a navigation.) */
+const VISITORS_TTL = 20;
+
 export function getTopVisitors(siteKey: string, limit = 500, country?: string) {
   return rest<VisitorJourney>(
     "vw_visitor_journey",
@@ -396,6 +403,7 @@ export function getTopVisitors(siteKey: string, limit = 500, country?: string) {
       { site_key: `eq.${siteKey}`, select: "*", order: "last_seen.desc", limit: String(limit) },
       country,
     ),
+    VISITORS_TTL,
   );
 }
 
