@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GP Accountant Liverpool: Specialist Tax and Financial Services for Medical Professionals"
 slug: "gp-accountant-liverpool"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-liverpool"

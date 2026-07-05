@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Medical Professional Expenses: What Is Claimable for UK Doctors'
 slug: medical-professional-expenses-what-is-claimable
 date: '2026-04-01'

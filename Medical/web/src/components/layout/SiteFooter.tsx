@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BrandWordmarkHomeLink } from "@/components/brand/BrandWordmarkHomeLink";
+import { ConsentToggle } from "@/components/analytics/ConsentToggle";
 import { focusRing, siteContainer } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 
@@ -68,6 +69,9 @@ export function SiteFooter() {
             <p className="text-xs leading-relaxed text-slate-400 min-[480px]:text-right">
               © {year} {siteConfig.company.legalName} t/a {siteConfig.company.tradingName}.
               <span className="mt-1 block text-slate-500">{siteConfig.domain}</span>
+            </p>
+            <p className="text-xs text-slate-500 min-[480px]:text-right">
+              <ConsentToggle className="underline hover:no-underline text-slate-400 hover:text-slate-300 transition-colors" />
             </p>
           </div>
         </div>

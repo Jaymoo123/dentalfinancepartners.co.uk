@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GP Corporation Tax: Complete Guide for UK Medical Professionals"
 slug: "gp-corporation-tax"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-corporation-tax"

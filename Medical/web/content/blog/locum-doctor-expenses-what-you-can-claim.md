@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Locum Doctor Expenses: What You Can Claim - Complete Guide"
 slug: "locum-doctor-expenses-what-you-can-claim"
 canonical: "https://www.medicalaccounts.co.uk/blog/locum-doctor-expenses-what-you-can-claim"

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Self Assessment for Doctors and GPs (2026/27): Who Files, Deadlines and Payments on Account"
 slug: "accountant-self-assessment"
 canonical: "https://www.medicalaccounts.co.uk/blog/accountant-self-assessment"

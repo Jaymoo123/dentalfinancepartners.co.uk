@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GP Accountant Newcastle: Specialist Medical Accounting Services"
 slug: "gp-accountant-newcastle"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-newcastle"

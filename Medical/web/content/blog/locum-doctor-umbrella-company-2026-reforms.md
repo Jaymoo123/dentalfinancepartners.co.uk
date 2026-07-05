@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Locum Doctor Umbrella Company 2026 Reforms: Joint and Several Liability Explained"
 slug: "locum-doctor-umbrella-company-2026-reforms"
 date: "2026-04-01"

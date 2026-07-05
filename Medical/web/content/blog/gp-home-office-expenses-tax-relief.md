@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GP Home Office Expenses Tax Relief: Complete Guide for Medical Professionals"
 slug: "gp-home-office-expenses-tax-relief"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-home-office-expenses-tax-relief"

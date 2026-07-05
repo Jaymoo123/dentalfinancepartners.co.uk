@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Locum Doctor IR35: What You Need to Know"
 slug: "locum-doctor-ir35-what-you-need-to-know"
 canonical: "https://www.medicalaccounts.co.uk/blog/locum-doctor-ir35-what-you-need-to-know"

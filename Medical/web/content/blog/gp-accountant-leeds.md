@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GP Accountant Leeds: Specialist Medical Accounting Services"
 slug: "gp-accountant-leeds"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-leeds"

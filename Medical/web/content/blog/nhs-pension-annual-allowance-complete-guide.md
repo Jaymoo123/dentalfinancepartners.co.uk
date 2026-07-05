@@ -1,4 +1,4 @@
-﻿---
+---
 title: NHS Pension Annual Allowance Complete Guide for Medical Professionals
 slug: nhs-pension-annual-allowance-complete-guide
 canonical: https://www.medicalaccounts.co.uk/blog/nhs-pension-annual-allowance-complete-guide

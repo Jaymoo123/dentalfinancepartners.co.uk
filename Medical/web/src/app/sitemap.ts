@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
 import { getAllPosts, getAllCategories } from "@/lib/blog";
 import { allTools } from "@/lib/tools/registry";
+import { MEDICAL_GUIDES } from "@/lib/medical-guides-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
@@ -18,6 +19,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/privacy-policy",
     "/terms",
     "/cookie-policy",
+    "/medical-guides",
+    "/free-practice-health-check",
+    // /for-* audience pages
+    "/for-gps",
+    "/for-consultants",
+    "/for-locum-doctors",
+    "/for-junior-doctors",
   ];
 
   const hreflang = (url: string) => ({
@@ -76,6 +84,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: post.date ? new Date(post.date) : new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
+      alternates: hreflang(url),
+    });
+  }
+
+  // Medical guide pages — derived from the TS data array (no file system glob needed)
+  for (const guide of MEDICAL_GUIDES) {
+    const url = `${base}/medical-guides/${guide.slug}`;
+    entries.push({
+      url,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.75,
       alternates: hreflang(url),
     });
   }

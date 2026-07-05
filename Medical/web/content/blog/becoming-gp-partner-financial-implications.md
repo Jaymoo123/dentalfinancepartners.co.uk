@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Becoming a GP Partner: Complete Guide to Financial Implications'
 slug: becoming-gp-partner-financial-implications
 date: '2026-04-01'

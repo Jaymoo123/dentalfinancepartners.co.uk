@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'GP Limited Company Tax Benefits and Drawbacks: Complete Guide'
 slug: gp-limited-company-tax-benefits-drawbacks
 canonical: https://www.medicalaccounts.co.uk/blog/gp-limited-company-tax-benefits-drawbacks

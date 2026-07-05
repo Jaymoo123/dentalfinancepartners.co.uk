@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GP Accountant Cost: What Drives the Fee for UK Medical Accounting"
 slug: "gp-accountant-cost"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-cost"

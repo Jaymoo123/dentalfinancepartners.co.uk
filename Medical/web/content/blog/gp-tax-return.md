@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GP Tax Return: Complete Guide for UK General Practitioners"
 slug: "gp-tax-return"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-tax-return"

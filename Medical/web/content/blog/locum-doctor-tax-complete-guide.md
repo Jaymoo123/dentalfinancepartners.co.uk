@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Locum Doctor Tax Complete Guide: Everything You Need to Know'
 slug: locum-doctor-tax-complete-guide
 canonical: https://www.medicalaccounts.co.uk/blog/locum-doctor-tax-complete-guide

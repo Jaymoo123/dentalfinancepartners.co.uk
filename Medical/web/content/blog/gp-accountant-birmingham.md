@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GP Accountant Birmingham: Specialist Medical Accounting Services"
 slug: "gp-accountant-birmingham"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-birmingham"

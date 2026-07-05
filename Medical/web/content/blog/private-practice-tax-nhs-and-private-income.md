@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Private Practice Tax: Managing NHS and Private Income"
 slug: "private-practice-tax-nhs-and-private-income"
 canonical: "https://www.medicalaccounts.co.uk/blog/private-practice-tax-nhs-and-private-income"

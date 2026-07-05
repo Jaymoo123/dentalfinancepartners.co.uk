@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { BlogPostRenderer } from "@/components/blog/BlogPostRenderer";
 import { siteConfig } from "@/config/site";
 import { buildOgImageUrl } from "@/lib/schema";
-import { getAllPosts, getPostBySlug, getRelatedPosts } from "@/lib/blog";
+import { getAllPosts, getPostBySlug, getRelatedPosts, getCategorySlug } from "@/lib/blog";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
   const canonical = post.canonical || `${siteConfig.url}/blog/${post.slug}`;
   const ogImage = post.image || buildOgImageUrl(post.h1, post.category);
-  
+
   return {
     title: post.metaTitle,
     description: post.metaDescription,
@@ -55,11 +55,15 @@ export default async function BlogArticlePage({ params }: Props) {
     notFound();
   }
 
+  // Derive the category slug server-side so the renderer can resolve the intent
+  // topic (FLAT-routing parity: topic cannot be derived from the URL path).
+  const categorySlug = getCategorySlug(post);
+
   const related = getRelatedPosts(post.slug, post.category, 3).map((r) => ({
     slug: r.slug,
     title: r.title,
     summary: r.summary,
   }));
 
-  return <BlogPostRenderer post={post} related={related} />;
+  return <BlogPostRenderer post={post} categorySlug={categorySlug} related={related} />;
 }

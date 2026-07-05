@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Accountant Accounting Services for Medical Professionals"
 slug: "accountant-accounting-services"
 canonical: "https://www.medicalaccounts.co.uk/blog/accountant-accounting-services"

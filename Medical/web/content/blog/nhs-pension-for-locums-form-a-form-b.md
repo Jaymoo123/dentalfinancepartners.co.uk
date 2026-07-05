@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'NHS Pension for Locums: Form A and Form B Guide'
 slug: nhs-pension-for-locums-form-a-form-b
 canonical: https://www.medicalaccounts.co.uk/blog/nhs-pension-for-locums-form-a-form-b

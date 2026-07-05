@@ -2,11 +2,14 @@ import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { PageShell } from "@/components/layout/PageShell";
-import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
 import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
 import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
+import { IntentProvider } from "@/components/intent/IntentProvider";
+import { ReturningBar } from "@/components/intent/ReturningBar";
+import { DeepScrollModal } from "@/components/intent/DeepScrollModal";
 import { siteConfig } from "@/config/site";
+import { niche } from "@/config/niche-loader";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
@@ -21,8 +24,6 @@ const cormorant = Cormorant_Garamond({
 });
 
 const siteUrl = siteConfig.url;
-
-import { niche } from "@/config/niche-loader";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -72,20 +73,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-GB">
-      <head>
-        <GoogleAnalytics measurementId={niche.seo.google_analytics_id} />
-      </head>
       <body
         className={`${plusJakarta.variable} ${cormorant.variable} ${plusJakarta.className} antialiased`}
       >
         {/*
          * AN-01 (opt-out posture): track by default under legitimate interest.
-         * Visitor can opt out via the "Do not track me" footer link.
-         * GA4 tag retained alongside first-party analytics per Phase D spec
-         * (keep-or-drop-GA4 is a separate later call — do not remove GA4 here).
+         * Visitor can opt out via the "Do not track me" footer link (ConsentToggle
+         * in SiteFooter).
+         *
+         * GA4 is mounted ONLY via ConsentedScripts (gaMeasurementId prop) so it
+         * respects the consent gate. The unconditional GoogleAnalytics in <head>
+         * has been removed (compliance fix: the site promised opt-out but GA4 fired
+         * regardless of consent state).
+         *
          * SEC-08: analytics writes flow through /api/track (server-side
          * service-role only); ConsentProvider guards client-side consent state.
          * storagePrefix "ma" is FROZEN at adoption per Phase D frozen table.
+         *
+         * IntentProvider (WS2 Wave-3 CRO parity): mounted inside AnalyticsProvider
+         * so it can read consent state. Personalisation is unconditionally ON (no
+         * experiment arms). FLAT-routing note: deriveTopic returns null for flat
+         * blog post paths; the topic is resolved server-side from post.category
+         * and injected via TopicOverrideProvider in BlogPostRenderer.
          */}
         <ConsentProvider>
           <AnalyticsProvider
@@ -93,10 +102,14 @@ export default function RootLayout({
             siteName={niche.display_name}
             storagePrefix="ma"
             posture="opt-out"
-            noTrackPrefixes={["/admin"]}
+            noTrackPrefixes={["/admin", "/embed"]}
           >
-            <ConsentedScripts />
-            <PageShell>{children}</PageShell>
+            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
+            <IntentProvider>
+              <PageShell>{children}</PageShell>
+              <ReturningBar />
+              <DeepScrollModal />
+            </IntentProvider>
           </AnalyticsProvider>
         </ConsentProvider>
       </body>

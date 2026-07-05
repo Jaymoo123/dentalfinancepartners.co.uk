@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'GP Partner vs Salaried GP Tax Comparison: Complete Guide for 2026/27'
 slug: gp-partner-vs-salaried-gp-tax-comparison
 canonical: https://www.medicalaccounts.co.uk/blog/gp-partner-vs-salaried-gp-tax-comparison

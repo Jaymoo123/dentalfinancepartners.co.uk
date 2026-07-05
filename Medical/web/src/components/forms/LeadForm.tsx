@@ -5,16 +5,16 @@ import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
+import { submitMedicalLead } from "@/lib/leads/submit-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
 const fieldClass =
-  "mt-1 w-full min-h-12 touch-manipulation rounded-lg border border-[var(--border)] bg-[var(--surface)] px-3.5 py-3 text-base text-[var(--ink)] shadow-sm focus:border-[var(--accent)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/25";
+  "mt-1 w-full min-h-12 touch-manipulation rounded-lg border border-[var(--border)] bg-[var(--surface)] px-3.5 py-3 text-base text-[var(--ink)] shadow-sm focus:border-[var(--copper)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)]/25";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
 const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-// UK phone: at least 10 digits total (ignoring spaces, dashes, parens, +)
 const ukPhoneRe = /^[\d\s+().-]{10,}$/;
 
 function hasMinDigits(phone: string, min: number): boolean {
@@ -45,11 +45,8 @@ export function LeadForm({
     }
   }, []);
 
-  // SEC-08: form lifecycle tracking — no field values captured, only field names + outcome.
+  // SEC-08: form lifecycle tracking (no field values captured, only field names + outcome).
   const { onFieldFocus, onFieldBlur, onError, onSubmit: trackFormSubmit, onLead } = useFormTracking("lead_form");
-
-  const supabaseUrl = typeof process !== "undefined" ? process.env.NEXT_PUBLIC_SUPABASE_URL : undefined;
-  const supabaseKey = typeof process !== "undefined" ? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY : undefined;
 
   const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
 
@@ -64,17 +61,16 @@ export function LeadForm({
     if (fullName.length < 2) errs.fullName = "Enter your name.";
     if (!emailRe.test(email)) errs.email = "Enter a valid email address.";
 
-    // Phone: must have at least 10 digits and only allowed chars
     if (!ukPhoneRe.test(phone)) {
-      errs.phone = "Use only digits, spaces, +, -, ( ) — e.g. 07700 900123 or +44 20 1234 5678";
+      errs.phone = "Use only digits, spaces, +, -, ( ) e.g. 07700 900123 or +44 20 1234 5678";
     } else if (!hasMinDigits(phone, 10)) {
       errs.phone = "Enter at least 10 digits.";
     }
 
-    if (!role) errs.role = "Tell us whether you are an associate, owner, or group.";
+    if (!role) errs.role = "Tell us which type of medical professional you are.";
 
     if (message.length > 0 && message.length < 10) {
-      errs.message = "If you add a note, a sentence or two is enough — but not just a word or two.";
+      errs.message = "If you add a note, a sentence or two is enough, but not just a word or two.";
     }
 
     if (!data.get("consent")) errs.consent = "Please tick the box to continue.";
@@ -88,8 +84,8 @@ export function LeadForm({
     const form = e.currentTarget;
     const data = new FormData(form);
 
-    // LD-03: honeypot — bots fill company_url; humans never see or tab to this field
-    if (String(data.get("company_url") || "").trim()) return;
+    // Collect honeypot value; pass through to server rather than dropping silently.
+    const honeypot = String(data.get("enquiry_ref") || "").trim();
 
     const errs = validate(data);
     setFieldErrors(errs);
@@ -105,14 +101,6 @@ export function LeadForm({
       return;
     }
 
-    if (!supabaseUrl || !supabaseKey) {
-      setStatus("error");
-      setErrorMessage(
-        "This form is not connected yet. Email us using the address on this page — we will pick it up the same day.",
-      );
-      return;
-    }
-
     setStatus("loading");
 
     // LD-02: emit form_submit with count of completed fields
@@ -121,15 +109,14 @@ export function LeadForm({
         .filter((f) => String(data.get(f) || "").trim()).length + (consent ? 1 : 0);
     trackFormSubmit(completedCount);
 
+    const practiceName = String(data.get("practiceName") || "").trim();
+
     // LD-05: stitch visitor + session ids so each lead row links to its analytics events
     const payload = {
       full_name: String(data.get("fullName") || "").trim(),
       email: String(data.get("email") || "").trim(),
       phone: String(data.get("phone") || "").trim(),
       role: String(data.get("role") || "").trim(),
-      ...(String(data.get("practiceName") || "").trim()
-        ? { practice_name: String(data.get("practiceName") || "").trim() }
-        : {}),
       message: String(data.get("message") || "").trim(),
       source: niche.content_strategy.source_identifier,
       source_url: sourceUrl || String(data.get("sourceUrl") || "").trim(),
@@ -139,43 +126,27 @@ export function LeadForm({
       consent_at: new Date().toISOString(),
       visitor_id: getVisitorId() ?? undefined,
       session_id: getSessionId() ?? undefined,
+      extras: practiceName ? { practice_name: practiceName } : undefined,
     };
 
-    try {
-      const res = await fetch(`${supabaseUrl}/rest/v1/leads`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "apikey": supabaseKey,
-          "Authorization": `Bearer ${supabaseKey}`,
-          "Prefer": "return=minimal"
-        },
-        body: JSON.stringify(payload),
-      });
+    const result = await submitMedicalLead(payload, honeypot);
 
-      if (!res.ok) {
-        const errorText = await res.text().catch(() => "");
-        console.error("Form submission failed:", res.status, errorText);
-        throw new Error(`Request failed (${res.status})`);
-      }
-
-      console.log("Form submission success");
-
-      setStatus("success");
-      // LD-04: fire first-party lead event (replaces direct gtag conversion call)
-      onLead({ role: payload.role });
-      form.reset();
-      setConsent(false);
-      if (redirectOnSuccess) {
-        router.push("/thank-you");
-      }
-    } catch (err) {
-      console.error("Form submission error:", err);
+    if (!result.success) {
       setStatus("error");
-      const errMsg = err instanceof Error ? err.message : String(err);
       setErrorMessage(
-        `That did not go through (${errMsg}). Try again, or email us — either works.`
+        result.error ||
+          "That did not go through. Try again, or email us. Either works.",
       );
+      return;
+    }
+
+    setStatus("success");
+    // LD-04: fire first-party lead event (replaces direct gtag conversion call)
+    onLead({ role: payload.role });
+    form.reset();
+    setConsent(false);
+    if (redirectOnSuccess) {
+      router.push("/thank-you");
     }
   }
 
@@ -185,7 +156,7 @@ export function LeadForm({
         className="rounded-xl border border-emerald-200 bg-emerald-50 p-6 text-emerald-900"
         role="status"
       >
-        <p className="font-semibold">Thank you — we have your message.</p>
+        <p className="font-semibold">Thank you. We have your message.</p>
         <p className="mt-2 text-sm">We will come back within one working day.</p>
       </div>
     );
@@ -199,11 +170,12 @@ export function LeadForm({
       aria-busy={status === "loading" ? "true" : "false"}
     >
       <input type="hidden" name="sourceUrl" value={sourceUrl} readOnly />
+      {/* practiceName preserved for medical practice context; stored in extras */}
       <input type="hidden" name="practiceName" value="" readOnly />
-      {/* LD-03: honeypot — visually hidden, bots fill it, humans never reach it */}
+      {/* LD-03: honeypot -- visually hidden, bots fill it, humans never reach it */}
       <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }}>
-        <label htmlFor="company_url">Company website (leave blank)</label>
-        <input id="company_url" type="text" name="company_url" tabIndex={-1} autoComplete="off" />
+        <label htmlFor="enquiry_ref">Enquiry reference (leave blank)</label>
+        <input id="enquiry_ref" type="text" name="enquiry_ref" tabIndex={-1} autoComplete="off" />
       </div>
 
       <div>
@@ -341,13 +313,13 @@ export function LeadForm({
             type="checkbox"
             checked={consent}
             onChange={(e) => setConsent(e.target.checked)}
-            className="mt-0.5 h-4 w-4 shrink-0 accent-[var(--accent)]"
+            className="mt-0.5 h-4 w-4 shrink-0 accent-[var(--copper)]"
             aria-invalid={fieldErrors.consent ? "true" : "false"}
             aria-describedby={fieldErrors.consent ? "err-consent" : undefined}
           />
           <span>
             {siteConfig.leadConsentText} See our{" "}
-            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium text-[var(--accent)] underline">
+            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium text-[var(--copper)] underline">
               Privacy Policy
             </a>
             .
@@ -374,7 +346,7 @@ export function LeadForm({
         disabled={status === "loading" || !consent}
         className={`${btnPrimary} w-full min-w-0 sm:min-w-[12rem]`}
       >
-        {status === "loading" ? "Sending…" : submitLabel}
+        {status === "loading" ? "Sending..." : submitLabel}
       </button>
 
       <p className="text-xs leading-relaxed text-[var(--muted)]">We store your details securely.</p>

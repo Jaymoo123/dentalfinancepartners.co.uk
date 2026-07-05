@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GP Tax Advice: Essential Tax Planning for UK General Practitioners"
 slug: "gp-tax-advice"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-tax-advice"

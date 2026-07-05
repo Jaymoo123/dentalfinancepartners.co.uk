@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'GP Payroll Services: Complete Guide for Medical Practices'
 slug: gp-payroll-services
 canonical: https://www.medicalaccounts.co.uk/blog/gp-payroll-services

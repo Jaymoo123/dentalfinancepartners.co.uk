@@ -1,4 +1,4 @@
-# Medical Finance Partners — Calculator Tools
+# Medical Finance Partners: Calculator Tools
 
 Deployed under Phase D standardisation (2026-06-11).
 Tool platform: shared `@accounting-network/web-shared` GenericTool renderer.
@@ -42,15 +42,15 @@ Compute lib: `Medical/web/src/lib/tools/compute/locum-tax.ts`
 | Personal allowance | £12,570 | ITEPA 2003, s.35 / FA 2021 (frozen to 2028) |
 | Basic rate band limit | £50,270 | FA 2021 (frozen to 2028) |
 | Higher rate threshold | £125,140 | FA 2022, s.5 (where PA is tapered to zero) |
-| Income tax — basic rate | 20% | 2025/26 |
-| Income tax — higher rate | 40% | 2025/26 |
-| Income tax — additional rate | 45% | 2025/26 |
+| Income tax: basic rate | 20% | 2025/26 |
+| Income tax: higher rate | 40% | 2025/26 |
+| Income tax: additional rate | 45% | 2025/26 |
 | Class 4 NI lower threshold | £12,570 | NIC Regulations 2025/26 |
 | Class 4 NI upper threshold | £50,270 | NIC Regulations 2025/26 |
 | Class 4 NI main rate | 6% | FA 2024, s.2 (reduced from 9% from 6 Apr 2024) |
 | Class 4 NI upper rate | 2% | NIC Regulations 2025/26 |
 
-**STALE-FIGURE NOTICE — student loan thresholds: RESOLVED 2026-06-11.**
+**STALE-FIGURE NOTICE: student loan thresholds: RESOLVED 2026-06-11.**
 The old inline component carried 2024/25 thresholds; the extraction pinned them
 first (golden-test STOP rule), then the deliberate user-approved correction to
 2025/26 values landed with golden tests intentionally updated:
@@ -74,11 +74,12 @@ Compute lib: `Medical/web/src/lib/tools/compute/incorporation.ts`
 | CT small profits rate | 19% | FA 2023, s.6 (profits under £50k) |
 | CT marginal relief | Yes | FA 2023, s.6 |
 | Dividend allowance | £500 | FA 2024 (reduced from £1,000) |
-| Dividend basic rate | 8.75% | FA 2023 (2025/26 rate) |
-| Dividend higher rate | 33.75% | FA 2023 (2025/26 rate) |
-| Dividend additional rate | 39.35% | FA 2023 (2025/26 rate) |
-| NI employer threshold | £9,100 (secondary) | NIC Regs 2025/26 |
+| Dividend basic rate | 10.75% | FA 2026, s.4 (raised from 8.75%; applies from 6 Apr 2026) |
+| Dividend higher rate | 35.75% | FA 2026, s.4 (raised from 33.75%; applies from 6 Apr 2026) |
+| Dividend additional rate | 39.35% | FA 2026, s.4 (unchanged from 2025/26) |
+| NI employer threshold | £5,000 (secondary) | FA 2025, s.1 (reduced from £9,100 from 6 Apr 2025) |
 | Employer NI rate | 15% | FA 2025, s.1 (raised from 13.8% from Apr 2025) |
+| NOTE | The compute libs do NOT model employer NI (all three tools are employee/self-employed focused). This row is doc-only. Do not add employer NI to compute libs without a new tool brief. |
 
 ---
 
@@ -86,7 +87,7 @@ Compute lib: `Medical/web/src/lib/tools/compute/incorporation.ts`
 
 ```
 Medical/web/src/lib/tools/
-  registry.ts                       # makeRegistryHelpers — allTools, getGenericTool, toolPath
+  registry.ts                       # makeRegistryHelpers: allTools, getGenericTool, toolPath
   compute/
     nhs-pension.ts                  # TL-03 pure compute (no React/DOM/fetch)
     locum-tax.ts                    # TL-03 pure compute
@@ -98,7 +99,7 @@ Medical/web/src/lib/tools/
     incorporation-calculator.ts     # GenericTool config
 
 Medical/web/src/components/tools/
-  CalculatorClient.tsx              # "use client" RSC boundary — resolves tool from slug client-side
+  CalculatorClient.tsx              # "use client" RSC boundary: resolves tool from slug client-side
 
 Medical/web/src/app/
   calculators/page.tsx              # Gallery from allTools()

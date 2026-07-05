@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GP Bookkeeping: Essential Guide for UK General Practice Partners"
 slug: "gp-bookkeeping-guide-uk"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-bookkeeping-guide-uk"

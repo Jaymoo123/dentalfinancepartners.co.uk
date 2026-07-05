@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Medical Practice Incorporation Step by Step: Complete Guide for UK Doctors"
 slug: "medical-practice-incorporation-step-by-step"
 canonical: "https://www.medicalaccounts.co.uk/blog/medical-practice-incorporation-step-by-step"

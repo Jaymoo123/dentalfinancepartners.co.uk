@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GP Accountant Glasgow: Specialist Tax and Financial Services for Medical Professionals"
 slug: "gp-accountant-glasgow"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-glasgow"

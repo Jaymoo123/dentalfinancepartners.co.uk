@@ -19,7 +19,9 @@ function parsePostFile(filePath: string): BlogPost {
   return {
     title: fm.title!,
     slug: fm.slug!,
-    date: fm.date!,
+    // CT-03: coerce date to string so YAML bare-date values (2025-01-15)
+    // that gray-matter parses as Date objects don't break downstream rendering.
+    date: fm.date ? String(fm.date) : "",
     author: fm.author ?? "",
     category: fm.category!,
     metaTitle: fm.metaTitle ?? fm.title!,
@@ -31,6 +33,10 @@ function parsePostFile(filePath: string): BlogPost {
     schema: fm.schema,
     canonical: fm.canonical,
     faqs: fm.faqs,
+    // WS8 optional fields: gracefully absent for 0/73 posts currently.
+    keyTakeaways: Array.isArray(fm.keyTakeaways) ? fm.keyTakeaways : undefined,
+    updatedDate: fm.updatedDate ? String(fm.updatedDate) : undefined,
+    sourcesVerifiedAt: fm.sourcesVerifiedAt ? String(fm.sourcesVerifiedAt) : undefined,
     contentHtml: contentWithIds,
   };
 }

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Why Every GP Needs a Specialist GP Accountant: Expert Tax and Financial Guidance"
 slug: "gp-accountant"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant"

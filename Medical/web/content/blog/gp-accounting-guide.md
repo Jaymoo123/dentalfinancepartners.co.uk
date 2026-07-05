@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'GP Accounting: Essential Guide for UK General Practitioners'
 slug: gp-accounting-guide
 date: '2026-04-01'

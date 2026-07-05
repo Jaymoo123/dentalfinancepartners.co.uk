@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Locum Doctor Limited Company: Pros and Cons Explained"
 slug: "locum-doctor-limited-company-pros-and-cons"
 canonical: "https://www.medicalaccounts.co.uk/blog/locum-doctor-limited-company-pros-and-cons"

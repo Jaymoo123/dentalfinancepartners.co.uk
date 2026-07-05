@@ -7,8 +7,13 @@
  * a compute FUNCTION — is resolved here, inside the client module graph, so it
  * never crosses the RSC serialization boundary. Functions cannot be passed from
  * Server to Client Components; this is the GAP-2 RSC lesson, applied verbatim.
+ *
+ * When variant="page" a CalcResultCta is injected into the result slot via the
+ * shared Calculator's resultCta prop. Embed pages (variant="embed") automatically
+ * exclude the CTA because the shared Calculator only renders resultCta for pages.
  */
 import { Calculator } from "@accounting-network/web-shared/tools/components/Calculator";
+import { CalcResultCta } from "@/components/tools/CalcResultCta";
 import { getGenericTool } from "@/lib/tools/registry";
 
 export function CalculatorClient({
@@ -20,5 +25,11 @@ export function CalculatorClient({
 }) {
   const tool = getGenericTool(slug);
   if (!tool) return null;
-  return <Calculator tool={tool} variant={variant} />;
+  return (
+    <Calculator
+      tool={tool}
+      variant={variant}
+      resultCta={variant === "page" ? <CalcResultCta campaign={slug} /> : undefined}
+    />
+  );
 }

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GP Accountant Bristol: Specialist Medical Accounting Services"
 slug: "gp-accountant-bristol"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-bristol"

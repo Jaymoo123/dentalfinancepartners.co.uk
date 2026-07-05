@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'GP Tax Deductions Complete List 2026: What You Can and Cannot Claim'
 slug: gp-tax-deductions-complete-list-2026
 date: '2026-04-01'

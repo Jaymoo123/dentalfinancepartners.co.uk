@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'GP Partnership Tax: Complete Guide for 2026/27'
 slug: gp-partnership-tax-complete-guide
 canonical: https://www.medicalaccounts.co.uk/blog/gp-partnership-tax-complete-guide

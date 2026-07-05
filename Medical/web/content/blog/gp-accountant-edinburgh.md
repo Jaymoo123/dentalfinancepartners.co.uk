@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GP Accountant Edinburgh: Specialist Tax and Financial Services for Medical Professionals"
 slug: "gp-accountant-edinburgh"
 date: "2026-04-01"

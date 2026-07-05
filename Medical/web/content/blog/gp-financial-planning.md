@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GP Financial Planning: A Complete Guide for UK General Practitioners"
 slug: "gp-financial-planning"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-financial-planning"

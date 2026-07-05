@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GP Partnership Profit Sharing Tax Planning: Essential Strategies for 2026/27"
 slug: "gp-partnership-profit-sharing-tax-planning"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-partnership-profit-sharing-tax-planning"

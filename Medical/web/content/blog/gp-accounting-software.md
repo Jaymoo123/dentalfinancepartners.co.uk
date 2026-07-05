@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GP Accounting Software: Essential Guide for UK Medical Practices"
 slug: "gp-accounting-software"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-accounting-software"

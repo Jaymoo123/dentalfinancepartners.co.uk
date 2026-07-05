@@ -6,7 +6,7 @@ import { CheckCircle2, ChevronRight, AlertTriangle, Info } from "lucide-react";
 import { btnPrimary, focusRing } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
-import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { submitMedicalLead } from "@/lib/leads/submit-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
@@ -74,7 +74,7 @@ function deriveFindings(answers: Answers): Finding[] {
     findings.push({
       priority: "medium",
       title: "Private practice company worth modelling",
-      body: "At consistent private income above £80,000-£100,000, a limited company for your private practice may reduce your combined income tax and NI materially. This requires a shareholder structure that allows income splitting and careful modelling of the NHS pension interaction. It is worth a formal analysis.",
+      body: "At consistent private income above £80,000 to £100,000, a limited company for your private practice may reduce your combined income tax and NI materially. This requires a shareholder structure that allows income splitting and careful modelling of the NHS pension interaction. It is worth a formal analysis.",
     });
   }
 
@@ -90,7 +90,7 @@ function deriveFindings(answers: Answers): Finding[] {
     findings.push({
       priority: "medium",
       title: "Limited company structure worth modelling at your income level",
-      body: "At sustained locum income above £80,000-£100,000 from outside-IR35 engagements, a limited company can save £5,000-£15,000 per year depending on your shareholder structure. We compare all three structures (sole trader, limited company, umbrella) at your actual income level including the NHS pension access trade-off.",
+      body: "At sustained locum income above £80,000 to £100,000 from outside-IR35 engagements, a limited company can save £5,000 to £15,000 per year depending on your shareholder structure. We compare all three structures (sole trader, limited company, umbrella) at your actual income level including the NHS pension access trade-off.",
     });
   }
 
@@ -194,13 +194,15 @@ export function MedicalHealthCheckWizard() {
     name: "",
     email: "",
   });
+  // Honeypot state: tracks the hidden enquiry_ref field value (always empty for real users)
+  const [enquiryRef] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [findings, setFindings] = useState<Finding[]>([]);
   // LD-04: consent only ever comes from this rendered, user-operated checkbox.
   const [consent, setConsent] = useState(false);
 
-  // SEC-08: wizard lifecycle tracking — no field values captured, only step + outcome.
+  // SEC-08: wizard lifecycle tracking (no field values captured, only step + outcome).
   const { onSubmit: trackFormSubmit, onLead } = useFormTracking("health_check_wizard");
 
   const canProceed = () => {
@@ -222,40 +224,66 @@ export function MedicalHealthCheckWizard() {
     // LD-02: emit form_submit (step count = completed questionnaire steps)
     trackFormSubmit(TOTAL_STEPS);
 
-    const { supabaseUrl, supabaseKey } = getSupabaseConfig();
-    if (supabaseUrl && supabaseKey) {
-      const payload = {
-        full_name: answers.name.trim(),
-        email: answers.email.trim().toLowerCase(),
-        phone: "—",
-        role: answers.role,
-        message: `Medical health check: role=${answers.role}, pension=${answers.pensionStatus}, private=${answers.privatePractice}, income=${answers.incomeLevel}, accountant=${answers.currentAccountant}. Findings: ${derived.map((f) => f.title).join("; ")}`,
-        // PF-07: source from niche config, never a literal
-        source: niche.content_strategy.source_identifier,
-        source_url:
-          typeof window !== "undefined"
-            ? window.location.href
-            : "/free-practice-health-check",
-        submitted_at: new Date().toISOString(),
-        // LD-04: real consent state from the step-6 checkbox; the stored text is
-        // exactly what the visitor saw next to it.
-        consent_given: consent,
-        consent_text: CONSENT_TEXT,
-        consent_at: new Date().toISOString(),
-        // LD-05: stitch visitor + session ids so the wizard lead links to analytics events
-        visitor_id: getVisitorId() ?? undefined,
-        session_id: getSessionId() ?? undefined,
-      };
+    // Build a human-readable summary message from wizard answers and findings.
+    const highPriorityTitles = derived
+      .filter((f) => f.priority === "high")
+      .map((f) => f.title);
+    const summaryParts = [
+      `Role: ${answers.role}`,
+      `Pension: ${answers.pensionStatus}`,
+      `Private practice: ${answers.privatePractice}`,
+      `Income: ${answers.incomeLevel}`,
+      `Accountant: ${answers.currentAccountant}`,
+    ];
+    const findingsSummary = highPriorityTitles.length > 0
+      ? `High-priority findings: ${highPriorityTitles.join("; ")}.`
+      : "No high-priority findings.";
 
-      try {
-        const result = await submitLead(payload, supabaseUrl, supabaseKey);
-        if (result.success) {
-          // First-party lead event only after a confirmed submission.
-          onLead({ role: answers.role });
-        }
-      } catch {
-        // Non-critical: show findings regardless of submission status
+    const payload = {
+      full_name: answers.name.trim(),
+      email: answers.email.trim().toLowerCase(),
+      // No phone collected in the wizard; server captureMode="email_only" relaxes phone requirement.
+      phone: "",
+      role: answers.role,
+      message: `Medical health check. ${summaryParts.join(". ")}. ${findingsSummary}`,
+      captureMode: "email_only" as const,
+      source: niche.content_strategy.source_identifier,
+      source_url:
+        typeof window !== "undefined"
+          ? window.location.href
+          : "/free-practice-health-check",
+      submitted_at: new Date().toISOString(),
+      // LD-04: real consent state from the step-6 checkbox; the stored text is
+      // exactly what the visitor saw next to it.
+      consent_given: consent,
+      consent_text: CONSENT_TEXT,
+      consent_at: new Date().toISOString(),
+      // LD-05: stitch visitor + session ids so the wizard lead links to analytics events
+      visitor_id: getVisitorId() ?? undefined,
+      session_id: getSessionId() ?? undefined,
+      extras: {
+        health_check: {
+          role: answers.role,
+          pension_status: answers.pensionStatus,
+          private_practice: answers.privatePractice,
+          income_level: answers.incomeLevel,
+          current_accountant: answers.currentAccountant,
+          findings_count: derived.length,
+          high_priority_count: highPriorityTitles.length,
+        },
+      },
+    };
+
+    try {
+      // enquiryRef is always "" for real users; bots may fill it via a hidden field.
+      // Passing it through so the server stores flagged if non-empty.
+      const result = await submitMedicalLead(payload, enquiryRef);
+      if (result.success) {
+        // First-party lead event only after a confirmed submission.
+        onLead({ role: answers.role });
       }
+    } catch {
+      // Non-critical: show findings regardless of submission status
     }
 
     setSubmitting(false);
@@ -404,6 +432,11 @@ export function MedicalHealthCheckWizard() {
                 placeholder="sarah@example.com"
                 className="w-full min-h-12 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-base text-[var(--ink)] transition-all focus:border-[var(--copper)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)]/20"
               />
+            </div>
+            {/* LD-03: honeypot -- visually hidden, bots fill it, humans never reach it */}
+            <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }}>
+              <label htmlFor="hc-enquiry-ref">Enquiry reference (leave blank)</label>
+              <input id="hc-enquiry-ref" type="text" name="enquiry_ref" tabIndex={-1} autoComplete="off" readOnly value={enquiryRef} />
             </div>
             {/* LD-04: real, user-operated consent checkbox; CONSENT_TEXT mirrors this label exactly. */}
             <label htmlFor="hc-consent" className="flex items-start gap-3 text-xs leading-relaxed text-[var(--muted)]">

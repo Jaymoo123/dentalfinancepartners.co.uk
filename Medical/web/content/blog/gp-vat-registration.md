@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'GP VAT Registration: Complete Guide for UK Medical Practices'
 slug: gp-vat-registration
 canonical: https://www.medicalaccounts.co.uk/blog/gp-vat-registration

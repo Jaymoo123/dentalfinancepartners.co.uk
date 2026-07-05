@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GP Accountant Manchester: Specialist Tax & Financial Services for Medical Professionals"
 slug: "gp-accountant-manchester"
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-manchester"
