@@ -98,8 +98,8 @@ Status vocabulary: `pending / building / built / QA'd / gated / DEPLOYED(tag) / 
 | R1: WS2 intent layer (WP-C/WP-D) | built (personalisation default-ON) | built (+ GA4 consent-gated, ConsentToggle in footer) |
 | R1: WS3 blog+exit (WP-E) | built (newsletter exit modal retired) | built (+ next/image hero, dynamic [category] hub) |
 | R1 Opus QA + gates + SHIP | **DEPLOYED(deploy/generalist/2026-07-05-g1)** commit `700ff921`; Opus QA SHIP, findings fixed pre-commit; probe A+B+C PASS (chokepoint proven end-to-end in prod); live-surface battery green (one agent false-alarm on chunk sampling, disproven via SSR HTML) | **DEPLOYED(deploy/solicitors/2026-07-05-s1)** commit `9a3930e9`; Opus QA SHIP, findings fixed pre-commit (fallback honeypot flag, succession category normalised ×10, em-dashes, sticky telemetry); probe A+B+C PASS; live-surface battery 7/7 GREEN (compliance fixes live: "Do not track" footer control + GA4 consent-gated; old category variant 404s correctly) |
-| R2: WS4 premium tools + gates (WP-F/G/H) | pending | pending |
-| R2 QA + SHIP | pending | pending |
+| R2: WS4 premium tools + gates (WP-F/G/H) | built (6 tools, 23 goldens; Workflow wf_c4bec3b5-51a) | built (4 tools + CGT/BADR lib + 2 factual lib fixes; 131 tests) |
+| R2 QA + SHIP | **DEPLOYED(deploy/generalist/2026-07-06-g2)** commit `8f267ac9`; Opus QA SHIP, findings fixed pre-commit (blog chart render, dead import); probes A+B+C PASS | **DEPLOYED(deploy/solicitors/2026-07-06-s2)** same commit; QA SHIP, findings fixed (gate topic threaded as prop, test em-dashes); probes PASS; S-1 category-fallout repaired (22 links + 301s, old path 308→200 verified); factual fixes LIVE (2026/27 dividend rates, GBP 250 figure gone) |
 | R3: WS5 resources (WP-I/J) | pending | pending |
 | R3: WS6 widget/assistant (WP-K/L) | pending | pending |
 | R3 QA + SHIP | pending | pending |
