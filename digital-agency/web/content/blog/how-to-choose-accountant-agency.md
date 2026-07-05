@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: Choose an Accountant for Your Agency | Expert Guide
 metaDescription: A practical guide for UK agency founders on selecting the right accountant. Covers agency-specific expertise, IR35, R&D, and what to ask before signing.
-altText: Agency founder reviewing financial documents with an ICAEW qualified accountant in a modern UK office
+altText: Agency founder reviewing financial documents with an specialist agency accountant in a modern UK office
 image: /blog/how-to-choose-accountant-agency.jpg
 imageCredit:
   photographer: Nataliya Vaitkevich
@@ -126,7 +126,7 @@ keyTakeaways:
 <li><strong>They do not ask about your agency model.</strong> If the first conversation is about fees and compliance deadlines, not about your revenue mix, your contractor usage, or your growth plans, they are not thinking about your business.</li>
 <li><strong>They recommend a flat salary without discussing dividends.</strong> This is basic tax planning for any limited company director. If they do not raise it, they are not proactive.</li>
 <li><strong>They say "HMRC will accept that" without explaining why.</strong> A good accountant gives you the reasoning. They cite specific legislation, HMRC manuals, or case law. Vague reassurance is not advice.</li>
-<li><strong>They are not ICAEW, ACCA, or CIMA qualified.</strong> There are good unqualified accountants, but qualification matters for professional indemnity insurance, regulatory oversight, and technical depth. We are <a href="/about">ICAEW qualified accountants</a>, and we recommend you look for a similar standard.</li>
+<li><strong>They lack professional qualifications.</strong> Qualification matters for professional indemnity insurance, regulatory oversight, and technical depth. Look for a firm with relevant professional training and membership of a recognised accounting body.</li>
 <li><strong>They do not use cloud accounting software.</strong> If they are still working on paper or desktop software, they are not keeping up with MTD (Making Tax Digital). From April 2026, MTD for ITSA will be mandatory for self-employed income over £50k. Your accountant needs to be digital-ready.</li>
 </ul>
 
@@ -152,7 +152,7 @@ keyTakeaways:
 
 <h2>Ready to Find the Right Fit?</h2>
 
-<p>At Agency Founder Finance, we work exclusively with agency founders. We understand your revenue model, your contractor risks, your R&D opportunities, and your exit goals. We are ICAEW qualified, cloud-native, and based in the UK.</p>
+<p>At Agency Founder Finance, we work exclusively with agency founders. We understand your revenue model, your contractor risks, your R&D opportunities, and your exit goals. We are agency-specialist, cloud-native, and based in the UK.</p>
 
 <p>If you want to see if we are the right fit, <a href="/contact">book a call</a>. We will ask you about your agency, your numbers, and your goals. If we are not the right fit, we will tell you. If we are, we will show you exactly how we can help.</p>
 

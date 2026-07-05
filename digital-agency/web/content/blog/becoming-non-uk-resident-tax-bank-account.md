@@ -145,7 +145,7 @@ keyTakeaways:
 
 <p>If you are planning to leave the UK within the next 12 months, speak to an accountant who understands both UK residence rules and international agency structures. This is not a DIY area. The Statutory Residence Test is complex, and the bank account issue is just one piece of a larger puzzle.</p>
 
-<p>As ICAEW qualified accountants, we work with agency founders moving to Dubai, Singapore, Switzerland, and other jurisdictions. We help them structure their banking, their contracts, and their corporate structure before they leave, so HMRC has no grounds to challenge their residence status.</p>
+<p>Working exclusively with agency founders, we work with agency founders moving to Dubai, Singapore, Switzerland, and other jurisdictions. We help them structure their banking, their contracts, and their corporate structure before they leave, so HMRC has no grounds to challenge their residence status.</p>
 
 <p>If your contractor mix has changed in the last 12 months, or if you are already receiving income in a non-UK account, ask your accountant before year-end. Do not wait until HMRC sends an information notice.</p>
 

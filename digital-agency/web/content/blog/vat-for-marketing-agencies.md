@@ -140,7 +140,7 @@ keyTakeaways:
 <li>You are close to the threshold anyway (you will have to register soon, so voluntary registration just accelerates the admin)</li>
 </ul>
 
-<p>As <a href="/about">ICAEW qualified accountants</a>, we run this calculation for agency founders regularly. The answer depends on your specific client mix and cost base.</p>
+<p>Working exclusively with agency founders, we run this calculation for agency founders regularly. The answer depends on your specific client mix and cost base.</p>
 
 <h2>How to Handle the Transition</h2>
 

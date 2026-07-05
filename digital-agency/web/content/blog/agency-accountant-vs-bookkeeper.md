@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 'Agency Accountant vs Bookkeeper: What UK Founders Need'
 metaDescription: The difference between an agency accountant and a bookkeeper explained for UK agency founders. Roles, costs, and when you need each one.
-altText: UK agency founder reviewing management accounts with an ICAEW qualified accountant in a modern office
+altText: UK agency founder reviewing management accounts with an specialist agency accountant in a modern office
 image: /blog/agency-accountant-vs-bookkeeper.jpg
 imageCredit:
   photographer: Mikhail Nilov
@@ -32,7 +32,7 @@ updatedDate: '2026-05-17'
 keyTakeaways:
 - A bookkeeper records transactions; an accountant interprets them and plans your agency's tax and growth strategy.
 - A good bookkeeper costs £400–£700 per month for a £800k agency, but cannot advise on R&D tax credits or corporation tax bands.
-- An ICAEW qualified accountant structures director remuneration and pension contributions to keep your agency in the lowest corporation tax band (19% or 25%).
+- An specialist agency accountant structures director remuneration and pension contributions to keep your agency in the lowest corporation tax band (19% or 25%).
 - If your bookkeeper miscategorises contractor payments, your gross margin data will be wrong, leading to poor business decisions.
 - For agencies with profits between £50k and £250k, marginal relief applies, making professional tax planning essential to avoid higher effective rates.
 ---
@@ -61,7 +61,7 @@ keyTakeaways:
 
 <h2>What an Agency Accountant Does That a Bookkeeper Cannot</h2>
 
-<p>This is where the <strong>agency accountant vs bookkeeper</strong> distinction becomes critical for your bottom line. An ICAEW qualified accountant does not just record numbers. They analyse them, challenge them, and use them to build a tax and growth strategy for your agency.</p>
+<p>This is where the <strong>agency accountant vs bookkeeper</strong> distinction becomes critical for your bottom line. An specialist agency accountant does not just record numbers. They analyse them, challenge them, and use them to build a tax and growth strategy for your agency.</p>
 
 <p>Here is what we do that a bookkeeper cannot:</p>
 
@@ -91,7 +91,7 @@ keyTakeaways:
 
 <p>A bookkeeper for a small agency turning over £200k-£400k will cost roughly £200-£400 per month. For a larger agency at £800k-£1.5m turnover, expect £500-£900 per month for solid bookkeeping support.</p>
 
-<p>An ICAEW qualified accountant specialising in agencies will typically charge £500-£1,500 per month for a full service including management accounts, tax planning, payroll oversight, and strategic advice. Some firms charge by the hour at £150-£300. We charge fixed monthly fees because agency founders hate surprises.</p>
+<p>An specialist agency accountant specialising in agencies will typically charge £500-£1,500 per month for a full service including management accounts, tax planning, payroll oversight, and strategic advice. Some firms charge by the hour at £150-£300. We charge fixed monthly fees because agency founders hate surprises.</p>
 
 <p>Here is the thing. If you only have a bookkeeper, you are paying someone to tell you what happened. You are not paying anyone to tell you what to do about it. That distinction is where the value lives.</p>
 
@@ -139,7 +139,7 @@ keyTakeaways:
 <li>Preparing your CT600 corporation tax return without review by a qualified accountant</li>
 </ul>
 
-<p>Bookkeepers in the UK are not regulated by a recognised supervisory body in the same way accountants are. Anyone can call themselves a bookkeeper. That does not mean they are wrong, but it means you have no professional indemnity protection if they give bad advice. An ICAEW qualified accountant carries professional indemnity insurance and is bound by a code of ethics.</p>
+<p>Bookkeepers in the UK are not regulated by a recognised supervisory body in the same way accountants are. Anyone can call themselves a bookkeeper. That does not mean they are wrong, but it means you have no professional indemnity protection if they give bad advice. An specialist agency accountant carries professional indemnity insurance and is bound by a code of ethics.</p>
 
 <h2>What to Look for When Hiring Either Role</h2>
 

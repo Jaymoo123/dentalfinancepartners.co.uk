@@ -79,7 +79,7 @@ keyTakeaways:
 
 <p>If you are using a spreadsheet to record dividends and manually entering figures into your tax return, that will not work under MTD. Spreadsheets are not MTD-compatible unless they are linked to bridging software that submits the data to HMRC. Most agency founders will find it simpler to move to proper accounting software.</p>
 
-<p>As ICAEW qualified accountants, we typically recommend Xero or FreeAgent for agency clients. Both handle dividend recording cleanly and integrate with your bank feed, so the transaction arrives in the software automatically. You then categorise it as a dividend, add the relevant details, and the record is stored digitally.</p>
+<p>Working exclusively with agency founders, we typically recommend Xero or FreeAgent for agency clients. Both handle dividend recording cleanly and integrate with your bank feed, so the transaction arrives in the software automatically. You then categorise it as a dividend, add the relevant details, and the record is stored digitally.</p>
 
 <h2>What Information Must Your Digital Record Contain for Each Dividend?</h2>
 

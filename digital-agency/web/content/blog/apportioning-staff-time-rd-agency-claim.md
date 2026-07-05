@@ -141,7 +141,7 @@ imageCredit:
 
 <h2>How Agency Founder Finance Can Help</h2>
 
-<p>As ICAEW qualified accountants, we work exclusively with agency founders. We have helped dozens of agencies prepare robust R&D claims that stand up to HMRC scrutiny. We do not just calculate the numbers. We help you set up the time tracking systems, document the technical uncertainty, and apportion costs correctly from the start.</p>
+<p>Working exclusively with agency founders, we work exclusively with agency founders. We have helped dozens of agencies prepare robust R&D claims that stand up to HMRC scrutiny. We do not just calculate the numbers. We help you set up the time tracking systems, document the technical uncertainty, and apportion costs correctly from the start.</p>
 
 <p>If you are considering an R&D claim for your agency, start by reviewing your time tracking. If you do not have a system in place, set one up before you begin the R&D work. Retrospective claims are possible, but they are harder to defend.</p>
 

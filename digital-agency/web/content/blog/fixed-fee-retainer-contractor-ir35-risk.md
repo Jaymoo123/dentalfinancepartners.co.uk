@@ -161,7 +161,7 @@ keyTakeaways:
 <li><strong>Run each contractor through the CEST tool.</strong> Document the results and your reasoning for any determination you make.</li>
 <li><strong>Restructure any retainer that looks like employment.</strong> Move to project-based fees, introduce financial risk, or reduce control.</li>
 <li><strong>Issue SDS documents</strong> if you are a medium or large agency and have not already done so.</li>
-<li><strong>Talk to a qualified accountant</strong> who understands agency contractor models. As ICAEW qualified accountants, we see these issues regularly and can help you structure engagements that work for your business and stay compliant with HMRC.</li>
+<li><strong>Talk to a qualified accountant</strong> who understands agency contractor models. Working exclusively with agency founders, we see these issues regularly and can help you structure engagements that work for your business and stay compliant with HMRC.</li>
 </ol>
 
 <p>If your contractor mix has changed in the last 12 months, or if you are planning to put a new contractor on a retainer, ask your accountant before you agree the terms. A few hours of proper structuring now can save you thousands in tax, interest, and penalties later.</p>

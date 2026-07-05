@@ -40,7 +40,7 @@ keyTakeaways:
 <p>You set up a US subsidiary because your agency needed a stateside presence. Maybe you have US clients who prefer paying in dollars. Maybe you needed a local entity to win contracts in New York or LA. Either way, the subsidiary has generated profits and you want to bring some of that money back to your UK holding company.</p>
 <p>The question is simple: what tax do you pay on a dividend from your US subsidiary to your UK agency?</p>
 <p>The answer is not simple. But it is knowable. This article walks through the UK tax treatment of a dividend from a US subsidiary of your agency, covering the rates, the reliefs, and the practical steps your accountant needs to handle.</p>
-<p>As ICAEW qualified accountants working exclusively with agency founders, we deal with these cross-border structures regularly. Here is what you need to understand before you declare that dividend.</p>
+<p>Working exclusively with agency founders, we deal with these cross-border structures regularly. Here is what you need to understand before you declare that dividend.</p>
 
 <h2>The Core Principle: UK Corporation Tax Applies</h2>
 <p>When your UK agency receives a dividend from its US subsidiary, that dividend is not automatically tax-free. UK corporation tax applies to the dividend income of your UK company, regardless of where the dividend originates.</p>
@@ -109,7 +109,7 @@ keyTakeaways:
 <h2>When to Speak to Your Accountant</h2>
 <p>If you are reading this and thinking "my US subsidiary is an LLC and I have not elected C corporation status," stop. Do not declare a dividend. Speak to your accountant first.</p>
 <p>If your US subsidiary has been operating for more than a year and you have not filed UK corporation tax returns reflecting the US income, you may have a disclosure obligation. HMRC's worldwide debt rules require you to report all foreign income, even if it is retained in the US subsidiary and not distributed.</p>
-<p>Our ICAEW qualified team at Agency Founder Finance handles these structures regularly. If your agency has a US subsidiary, or you are thinking of setting one up, we can help you structure it correctly from day one.</p>
+<p>Our team at Agency Founder Finance handles these structures regularly. If your agency has a US subsidiary, or you are thinking of setting one up, we can help you structure it correctly from day one.</p>
 <p>Contact us to discuss your situation. The paperwork matters. Getting it right saves you thousands.</p>
 
 <h2>Related articles in International Agencies</h2>

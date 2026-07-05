@@ -150,7 +150,7 @@ keyTakeaways:
 
 <p>It also makes exit planning cleaner. A buyer for the recruitment book does not want the creative agency. A buyer for the creative agency does not want the contractor payroll. Separate structures mean you can sell one without disrupting the other.</p>
 
-<p>As ICAEW qualified accountants, we see mixed agencies try to run everything through one company. It works until it does not. When HMRC opens an IR35 enquiry on the recruitment side, they will look at the whole company's books. Keep them separate.</p>
+<p>Working exclusively with agency founders, we see mixed agencies try to run everything through one company. It works until it does not. When HMRC opens an IR35 enquiry on the recruitment side, they will look at the whole company's books. Keep them separate.</p>
 
 <h2>VAT and the Two Agency Types</h2>
 
@@ -216,7 +216,7 @@ keyTakeaways:
 
 <p>If you are unsure about your specific situation, speak to an accountant who works with agency founders. The wrong structure can cost you tens of thousands in tax and legal fees. The right one saves you money and protects your personal assets.</p>
 
-<p>Our ICAEW qualified team at Agency Founder Finance works with both recruitment and creative agencies. We know the sector-specific rules. <a href="/contact">Get in touch</a> if you want to run through your structure before you make the move.</p>
+<p>Our team at Agency Founder Finance works with both recruitment and creative agencies. We know the sector-specific rules. <a href="/contact">Get in touch</a> if you want to run through your structure before you make the move.</p>
 
 <h2>Related articles in Incorporation and Structure</h2>
 <ul>

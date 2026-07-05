@@ -7,8 +7,8 @@ generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Agency Exit Planning: The Accountant''s Role and Timing'
-metaDescription: When should you involve an accountant in agency exit planning? Here's what a specialist accountant does before, during, and after a sale. ICAEW qualified
-altText: Two agency founders meeting with an ICAEW qualified accountant in a modern UK office, discussing exit planning documents and valuation reports
+metaDescription: When should you involve an accountant in agency exit planning? Here's what a specialist accountant does before, during, and after a sale. agency-specialist
+altText: Two agency founders meeting with an specialist agency accountant in a modern UK office, discussing exit planning documents and valuation reports
 image: /blog/accountants-role-agency-exit-planning.jpg
 imageCredit:
   photographer: Nataliya Vaitkevich
@@ -32,7 +32,7 @@ updatedDate: '2026-05-17'
 keyTakeaways:
 - Involve your accountant two to three years before selling your agency, not six months, to allow time for meaningful tax planning.
 - Clean up your balance sheet early, including directors' loan accounts and inter-company loans, to avoid due diligence issues and S455 tax charges.
-- Review your share structure at least two years before exit to qualify for Business Asset Disposal Relief (BADR) at 18% (rising to 18% from 6 April 2026).
+- Review your share structure at least two years before exit to qualify for Business Asset Disposal Relief (BADR) at 14% for disposals 6 April 2025 to 5 April 2026 (18% from 6 April 2026).
 - Prepare a normalised EBITDA calculation that adds back personal expenses and one-off costs, as buyers value agencies on maintainable earnings.
 - For multiple founders, model the tax position individually, as holding shares through a company may disqualify them from BADR.
 ---
@@ -118,7 +118,7 @@ keyTakeaways:
 <li>Whether Entrepreneurs' Relief (now BADR) or Investors' Relief applies</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we model these scenarios before the deal is structured, not after. Once the heads of terms are signed, the tax position is largely fixed.</p>
+<p>Working exclusively with agency founders, we model these scenarios before the deal is structured, not after. Once the heads of terms are signed, the tax position is largely fixed.</p>
 
 <h2>Stage Three: Deal Execution (3-6 Months Before Exit)</h2>
 
@@ -175,7 +175,7 @@ keyTakeaways:
 
 <p>If your current accountant cannot show you examples of exit work they have led, consider whether you need to <strong>choose an accountant for agency</strong> exit planning specifically. Many founders keep their compliance accountant and bring in a specialist for the exit. That is a perfectly sensible approach.</p>
 
-<p>At Agency Founder Finance, we work with agency founders throughout the exit lifecycle. We are ICAEW qualified accountants who understand agency finances from the inside. <a href="/services">Our services</a> cover the full range from preparation through to post-exit planning.</p>
+<p>At Agency Founder Finance, we work with agency founders throughout the exit lifecycle. We work exclusively with agency founders who understand agency finances from the inside. <a href="/services">Our services</a> cover the full range from preparation through to post-exit planning.</p>
 
 <p>If you are thinking about selling in the next three to five years, <a href="/contact">get in touch</a>. We will run through the key preparation steps and give you a realistic timeline. No pressure, just practical advice.</p>
 

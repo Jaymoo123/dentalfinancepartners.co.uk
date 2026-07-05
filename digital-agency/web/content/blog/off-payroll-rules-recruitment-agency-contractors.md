@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: Off-Payroll Rules for Agencies Using Recruitment Firms
 metaDescription: Who holds the IR35 liability when your agency uses a recruitment firm to hire contractors? We explain the rules, the fee-payer definition, and how
-altText: Two agency founders in a Shoreditch co-working space reviewing a contractor agreement with their ICAEW-qualified accountant
+altText: Two agency founders in a Shoreditch co-working space reviewing a contractor agreement with their specialist accountant
 image: /blog/off-payroll-rules-recruitment-agency-contractors.jpg
 imageCredit:
   photographer: Markus Winkler
@@ -42,7 +42,7 @@ keyTakeaways:
 
 <p>Who is responsible for determining the contractor's IR35 status? And if HMRC later decides that contractor was inside IR35, who pays the tax and National Insurance?</p>
 
-<p>This is one of the most misunderstood areas of the off-payroll rules. And getting it wrong can cost you tens of thousands of pounds in back taxes, interest, and penalties. As ICAEW qualified accountants working exclusively with agency founders, we see this confusion regularly. Let's clear it up.</p>
+<p>This is one of the most misunderstood areas of the off-payroll rules. And getting it wrong can cost you tens of thousands of pounds in back taxes, interest, and penalties. Working exclusively with agency founders, we see this confusion regularly. Let's clear it up.</p>
 
 <h2>The Off-Payroll Rules: A Quick Refresher</h2>
 
@@ -134,7 +134,7 @@ keyTakeaways:
 
 <p>Second, check whether you took reasonable care in making the status determination. If you used CEST and it gave a reasonable result, that helps. If you commissioned a professional review, even better. If you just guessed, you have a problem.</p>
 
-<p>Third, contact your accountant. As ICAEW qualified accountants, we have handled many IR35 enquiries for agency clients. The key is to respond promptly, provide complete information, and negotiate from a position of strength.</p>
+<p>Third, contact your accountant. Working exclusively with agency founders, we have handled many IR35 enquiries for agency clients. The key is to respond promptly, provide complete information, and negotiate from a position of strength.</p>
 
 <p>If HMRC decides the liability rests with your agency, you may be able to recover some of the tax from the contractor or the recruitment firm, depending on the terms of your contracts. But that is a civil matter, not a tax matter. Do not rely on it.</p>
 

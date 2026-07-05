@@ -155,7 +155,7 @@ keyTakeaways:
 
 <p>Third, speak to your accountant. If you're not already using accruals accounting for retainer income, ask them to restate your prior year accounts. This might mean filing amended corporation tax returns. But it's worth it. The tax refund from correcting several years of overpaid corporation tax can be substantial.</p>
 
-<p>If you don't have an accountant who understands agency retainer structures, <a href="/services">our ICAEW qualified team</a> works exclusively with agency founders. We see these issues every week.</p>
+<p>If you don't have an accountant who understands agency retainer structures, <a href="/services">our specialist team</a> works exclusively with agency founders. We see these issues every week.</p>
 
 <h2>The Bottom Line on Corporation Tax and Retainers</h2>
 

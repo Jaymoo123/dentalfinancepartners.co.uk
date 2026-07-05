@@ -89,7 +89,7 @@ faqs:
 
 <p>Over five years, that adds up. A director sacrificing £20,000 per year saves their agency £15,000 in employer NI alone. That money can fund a new hire, cover software subscriptions, or simply improve the agency's gross margin.</p>
 
-<p>Our ICAEW qualified team at Agency Founder Finance regularly sees agency directors who have been paying bonuses for years without considering salary sacrifice. The employer NI they have paid is substantial.</p>
+<p>Our team at Agency Founder Finance regularly sees agency directors who have been paying bonuses for years without considering salary sacrifice. The employer NI they have paid is substantial.</p>
 
 <h2>Annual Allowance and Tapering: The Trap to Avoid</h2>
 

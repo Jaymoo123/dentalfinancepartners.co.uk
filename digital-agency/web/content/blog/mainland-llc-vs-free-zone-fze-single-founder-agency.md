@@ -40,7 +40,7 @@ keyTakeaways:
 
 <p>The FZE (Free Zone Establishment) is specifically designed for a single shareholder. That sounds like a perfect fit. But it comes with trading restrictions that could limit your agency's growth. The mainland LLC, by contrast, lets you trade anywhere in the UAE but requires a local service agent. That agent does not own any of your company. They simply act as a liaison with government bodies.</p>
 
-<p>This article covers the real differences between a mainland LLC and a free zone FZE for a single founder agency. We will look at costs, trading scope, visa allowances, and what happens when you want to expand. As ICAEW qualified accountants who work with agency founders in both the UK and UAE, we see these decisions made well and made badly. Here is what you need to know.</p>
+<p>This article covers the real differences between a mainland LLC and a free zone FZE for a single founder agency. We will look at costs, trading scope, visa allowances, and what happens when you want to expand. As specialist agency accountants who work with agency founders in both the UK and UAE, we see these decisions made well and made badly. Here is what you need to know.</p>
 
 <h2>What Is a Free Zone FZE?</h2>
 

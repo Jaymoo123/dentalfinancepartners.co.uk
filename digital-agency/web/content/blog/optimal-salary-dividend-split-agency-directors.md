@@ -38,7 +38,7 @@ keyTakeaways:
 
 <h2>Why a Salary Dividend Split Exists in the First Place</h2>
 
-<p>As an ICAEW qualified accountant, I get asked this constantly: why not just take a big salary? Because salary attracts both income tax and National Insurance contributions from you and your company. Dividends do not attract National Insurance. That is the whole game.</p>
+<p>As an specialist agency accountant, I get asked this constantly: why not just take a big salary? Because salary attracts both income tax and National Insurance contributions from you and your company. Dividends do not attract National Insurance. That is the whole game.</p>
 
 <p>Your agency pays corporation tax on its profits. Then you extract those post-tax profits as dividends. You pay dividend tax on them, but at rates lower than equivalent salary income. And your agency saves the 15% employer NI it would have paid on a salary.</p>
 
@@ -154,7 +154,7 @@ keyTakeaways:
 
 <p>But, and this is important, HMRC can challenge dividend waivers and arrangements where shares are issued purely for tax avoidance. If you are setting up a spouse shareholding, do it properly. Issue actual shares with real value. Document the decision. Do not just hand over a few shares and call it done.</p>
 
-<p>If you want to explore this, speak to your accountant before you issue the shares. Our ICAEW qualified team at <a href="/about">Agency Founder Finance</a> can walk you through the structure.</p>
+<p>If you want to explore this, speak to your accountant before you issue the shares. Our specialist team at <a href="/about">Agency Founder Finance</a> can walk you through the structure.</p>
 
 <h2>What About Your Pension?</h2>
 

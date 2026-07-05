@@ -176,6 +176,6 @@ keyTakeaways:
 
 <p>For everyone else, and that means most agencies reading this, standard VAT accounting will save you more money. The numbers do not lie. Run the calculation for your own agency. If you are unsure, ask your accountant to model both scenarios before your next VAT return.</p>
 
-<p>As ICAEW qualified accountants, we see too many agency founders leaving thousands of pounds on the table by staying on flat rate out of habit. Don't let that be you.</p>
+<p>Working exclusively with agency founders, we see too many agency founders leaving thousands of pounds on the table by staying on flat rate out of habit. Don't let that be you.</p>
 
 <p>If your contractor mix or cost structure has changed in the last 12 months, ask your accountant before your next VAT quarter ends. A 30-minute review could save you five figures over the next year.</p>

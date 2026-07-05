@@ -127,7 +127,7 @@ Rent, rates, utilities, cleaning, coffee, snacks. If you are remote-first, this 
 Salaries for admin, finance, management who are not billable. Also include pension contributions, training, recruitment fees, and staff social events.</p>
 
 <p><strong>6200, Professional Fees</strong><br>
-Accountancy, legal, HR consultancy, insurance. This is where your ICAEW qualified accountants at Agency Founder Finance would appear on your P&L. And yes, we know what we look like on there.</p>
+Accountancy, legal, HR consultancy, insurance. This is where your specialist accountants at Agency Founder Finance would appear on your P&L. And yes, we know what we look like on there.</p>
 
 <p><strong>6300, Marketing and Business Development</strong><br>
 Your own agency's marketing spend. Website hosting, Google Ads for your own brand, content creation, events, sponsorships. Many agencies underinvest here because they are too busy delivering client work.</p>

@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: 'Negotiate Agency Accountant Fees: Size & Complexity Guide'
 metaDescription: Stop paying standard rates. Learn how to negotiate your agency accountant cost based on headcount, revenue, contractor mix, and complexity. Real numbers
-altText: Agency founder reviewing accounting fee proposal with ICAEW qualified accountant in a modern UK office setting
+altText: Agency founder reviewing accounting fee proposal with specialist agency accountant in a modern UK office setting
 image: /blog/negotiate-agency-accountant-fees-size-complexity.jpg
 imageCredit:
   photographer: RDNE Stock project
@@ -59,7 +59,7 @@ keyTakeaways:
 
 <h2>Typical Agency Accountant Cost Ranges for 2025/26</h2>
 
-<p>These are real numbers from the market, not theoretical ranges. They vary by location (London firms charge more than Manchester or Bristol firms) and by specialism. An ICAEW qualified firm that works exclusively with agencies will charge differently from a general practice that handles corner shops and agencies alike.</p>
+<p>These are real numbers from the market, not theoretical ranges. They vary by location (London firms charge more than Manchester or Bristol firms) and by specialism. An agency-specialist firm that works exclusively with agencies will charge differently from a general practice that handles corner shops and agencies alike.</p>
 
 <p><strong>Solo agency founder (turnover £50k-£150k)</strong><br>
 Monthly fee: £150-£300 per month<br>
@@ -160,7 +160,7 @@ Includes: group structures, consolidated accounts, exit planning, BADR structuri
 <li>You have outgrown their expertise</li>
 </ul>
 
-<p>If you switch, look for an ICAEW qualified firm that works exclusively with agencies. General practice accountants are fine for a corner shop. They are not fine for a growing agency with contractors, multiple revenue streams, and an exit plan. Our <a href="/services">agency accounting services</a> page explains what specialist support looks like.</p>
+<p>If you switch, look for an agency-specialist firm that works exclusively with agencies. General practice accountants are fine for a corner shop. They are not fine for a growing agency with contractors, multiple revenue streams, and an exit plan. Our <a href="/services">agency accounting services</a> page explains what specialist support looks like.</p>
 
 <h2>The One Thing That Changes Everything: Your Bookkeeping Quality</h2>
 

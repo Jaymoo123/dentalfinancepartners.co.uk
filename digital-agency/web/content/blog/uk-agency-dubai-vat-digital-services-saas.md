@@ -170,7 +170,7 @@ faqs:
 
 <p>This isn't a DIY area. The interaction between UK VAT and UAE VAT on digital services is complex, and the penalties for getting it wrong are severe. You need an accountant who understands both systems and how they interact.</p>
 
-<p>As <a href="/about">ICAEW qualified accountants</a> working exclusively with agency founders, we handle this exact situation regularly. We'll audit your current setup, register you in both countries if needed, and set up your billing systems correctly. We'll also file your returns and handle any compliance checks.</p>
+<p>As <a href="/about">specialist agency accountants</a> working exclusively with agency founders, we handle this exact situation regularly. We'll audit your current setup, register you in both countries if needed, and set up your billing systems correctly. We'll also file your returns and handle any compliance checks.</p>
 
 <p>If your agency sells digital services to UK and UAE customers, <a href="/contact">get in touch</a>. We'll run a free initial review of your VAT position and tell you exactly what needs to change.</p>
 

@@ -42,7 +42,7 @@ keyTakeaways:
 
 <p>That is the temporary non residence rule in action. It is one of the most commonly missed planning points for UK agency founders moving to the UAE. And it is expensive when it catches you.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we see this scenario more often than you would expect. A founder moves to Dubai, sells their agency or a significant asset, then circumstances change. A family issue. A business opportunity. A partner who does not settle. They return to the UK within five years, and HMRC sends them a tax bill for a gain they thought was safe.</p>
+<p>Working exclusively with agency founders, we see this scenario more often than you would expect. A founder moves to Dubai, sells their agency or a significant asset, then circumstances change. A family issue. A business opportunity. A partner who does not settle. They return to the UK within five years, and HMRC sends them a tax bill for a gain they thought was safe.</p>
 
 <p>This article explains the <strong>temporary non residence rule five years</strong> threshold in plain English, with real numbers, so you can plan your exit properly.</p>
 
@@ -128,7 +128,7 @@ keyTakeaways:
 
 <h2>What About BADR?</h2>
 
-<p>Business Asset Disposal Relief (formerly Entrepreneurs' Relief) is available on the first £1 million of qualifying gains. The rate is 18% for disposals from 6 April 2025, rising to 18% from 6 April 2026.</p>
+<p>Business Asset Disposal Relief (formerly Entrepreneurs' Relief) is available on the first £1 million of qualifying gains. the rate is 14% for disposals from 6 April 2025 to 5 April 2026, rising to 18% from 6 April 2026.</p>
 
 <p>If you are temporarily non-resident and return within five years, you can still claim BADR on the clawed-back gain, provided you met the qualifying conditions at the time of disposal. You need to have held at least 5% of the shares and been an officer or employee for the two years before the sale.</p>
 

@@ -7,8 +7,8 @@ generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: What to Look for in an Accountant Specialises Creative
-metaDescription: Hiring an accountant specialises creative agencies? Here are the 7 criteria we use ourselves. ICAEW qualified, agency-focused, and practical.
-altText: Creative agency founder reviewing financial reports with an ICAEW qualified accountant in a modern London office
+metaDescription: Hiring an accountant specialises creative agencies? Here are the 7 criteria we use ourselves. agency-specialist, agency-focused, and practical.
+altText: Creative agency founder reviewing financial reports with an specialist agency accountant in a modern London office
 image: /blog/what-to-look-for-in-an-accountant-specialises-creative-agencies.jpg
 imageCredit:
   photographer: Pavel Danilyuk
@@ -21,17 +21,17 @@ schema: ''
 faqs:
 - question: What is the difference between a general accountant and one who specialises in creative agencies?
   answer: 'A general accountant can handle compliance work like filing tax returns and processing payroll. An accountant who specialises in creative agencies understands the specific financial dynamics of agencies: retainer billing, project-based revenue, contractor IR35 determinations, utilisation rates, gross margin analysis, and exit planning. They proactively advise on structure, tax efficiency, and cash flow, rather than just reporting on what already happened.'
-- question: Do I need an ICAEW qualified accountant for my creative agency?
-  answer: You do not legally need ICAEW qualification, but it is a strong indicator of technical depth. ICAEW qualified accountants have passed rigorous exams and are regulated by a recognised body. For agency-specific issues like IR35, R&D tax credits, BADR planning, and director's loan account management, you want someone with that level of technical knowledge. A bookkeeper or unqualified accountant may not have the expertise to handle complex tax planning.
+- question: Do I need an specialist agency accountant for my creative agency?
+  answer: You do not legally need a specialist agency accountant, but agency specialism is a strong indicator of relevant technical depth. For agency-specific issues like IR35, R&D tax credits, BADR planning, and director's loan account management, you want someone with that background. A bookkeeper or general-practice accountant may not have the expertise to handle complex agency tax planning.
 - question: How much should I expect to pay for an accountant who works with creative agencies?
   answer: Fees vary widely depending on the scope of work and the size of your agency. A fixed monthly fee for a small agency (turnover up to £500k) typically ranges from £200 to £500 per month. This should cover year-end accounts, corporation tax, personal tax, payroll, VAT returns, and ongoing advice. Always ask for a detailed breakdown of what is included. Avoid firms that charge per phone call or email.
 - question: What questions should I ask when interviewing an accountant for my agency?
-  answer: 'Ask these specific questions: How many agency clients do you work with? Are you ICAEW qualified? Can you explain utilisation rate and gross margin? How do you handle IR35 determinations? What is the optimal salary and dividend structure for my situation? Have you helped agencies plan for BADR and exit? How often do you proactively contact clients? What software do you recommend? What are your fees and what is included? Can you share a relevant case study?'
+  answer: 'Ask these specific questions: How many agency clients do you work with? Are you agency-specialist? Can you explain utilisation rate and gross margin? How do you handle IR35 determinations? What is the optimal salary and dividend structure for my situation? Have you helped agencies plan for BADR and exit? How often do you proactively contact clients? What software do you recommend? What are your fees and what is included? Can you share a relevant case study?'
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - Look for an accountant with genuine agency experience, not just a website page claiming to serve creative businesses.
-- An ICAEW-qualified accountant is essential for handling technical complexities like IR35, R&D claims, and BADR planning.
+- An specialist accountant is essential for handling technical complexities like IR35, R&D claims, and BADR planning.
 - Your accountant must understand agency-specific finances, including retainer billing, utilisation rates, and variable gross margins.
 - A qualified accountant can help improve gross margins, as seen with agencies moving from 45% to 62% through contractor restructuring.
 - Ask direct questions about agency clients, turnover ranges, and past margin improvements to verify an accountant's expertise.
@@ -63,15 +63,15 @@ keyTakeaways:
 
 <p>If the answers are vague or generic, move on.</p>
 
-<h2>2. ICAEW Qualification and Technical Depth</h2>
+<h2>2. Professional Qualification and Technical Depth</h2>
 
 <p>There is a difference between a bookkeeper and a qualified accountant. Both have their place. For an agency owner, you want a qualified accountant who can handle the technical complexity that comes with running a limited company.</p>
 
-<p>ICAEW (Institute of Chartered Accountants in England and Wales) qualification is the gold standard in the UK. It means the firm has passed rigorous exams, maintains ongoing professional development, and is regulated by a recognised body. It matters because agency tax planning involves judgement calls, not just data entry. IR35 determinations, R&D claims, BADR planning, holding company structures, and director's loan account management all require technical knowledge that a bookkeeper simply does not have.</p>
+<p>A professionally qualified accountant is regulated by a recognised body, maintains ongoing professional development, and carries professional indemnity insurance. It matters because agency tax planning involves judgement calls, not just data entry. IR35 determinations, R&D claims, BADR planning, holding company structures, and director's loan account management all require technical knowledge that a bookkeeper simply does not have.</p>
 
-<p>Ask: "Are you ICAEW qualified? How many of your team hold that qualification?"</p>
+<p>Ask: "Are you agency-specialist? What professional qualifications do your team hold?"</p>
 
-<p>At Agency Founder Finance, we are ICAEW qualified accountants who work exclusively with agency founders. That focus means we see the same patterns across dozens of agencies, and we know what works.</p>
+<p>At Agency Founder Finance, we work exclusively with agency founders. That focus means we see the same patterns across dozens of agencies, and we know what works.</p>
 
 <h2>3. They Understand the Agency Business Model</h2>
 
@@ -181,7 +181,7 @@ keyTakeaways:
 
 <ul>
 <li>How many agency clients do you currently work with?</li>
-<li>Are you ICAEW qualified?</li>
+<li>Are you agency-specialist?</li>
 <li>Can you explain utilisation rate and gross margin?</li>
 <li>How do you handle IR35 determinations?</li>
 <li>What is the optimal salary and dividend structure for my situation?</li>
@@ -196,7 +196,7 @@ keyTakeaways:
 
 <p>Your agency deserves an accountant who understands it. Not just someone who can file a return.</p>
 
-<p>If you want to talk to a team that works exclusively with agency founders, <a href="/contact">get in touch</a>. We are ICAEW qualified, agency-focused, and we know how creative agencies work.</p>
+<p>If you want to talk to a team that works exclusively with agency founders, <a href="/contact">get in touch</a>. We are agency-specialist, agency-focused, and we know how creative agencies work.</p>
 
 <h2>Related articles in Agency Accountant Services</h2>
 <ul>

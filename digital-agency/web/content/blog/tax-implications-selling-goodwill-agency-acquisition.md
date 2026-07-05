@@ -124,7 +124,7 @@ keyTakeaways:
 
 <p>This is complex. HMRC has anti-avoidance rules (specifically the transactions in securities rules, and the targeted anti-avoidance rules for goodwill). You need specialist advice before attempting this structure.</p>
 
-<p>Our <a href="/services">ICAEW qualified team</a> has structured several agency exits using holding company arrangements. It is not something you want to DIY.</p>
+<p>Our <a href="/services">specialist team</a> has structured several agency exits using holding company arrangements. It is not something you want to DIY.</p>
 
 <h2>What Happens to Goodwill If You Have Already Bought an Agency?</h2>
 
@@ -181,4 +181,4 @@ keyTakeaways:
 
 <p>Do not let a buyer dictate the structure without you understanding the tax cost. Do not assume your accountant will handle it at the last minute. Goodwill tax planning needs to start before you find a buyer, not after you sign the heads of terms.</p>
 
-<p>If you are considering an exit, <a href="/contact">speak to our team</a>. We are ICAEW qualified accountants who work exclusively with agency founders. We know how these deals work and how to protect your position.</p>
+<p>If you are considering an exit, <a href="/contact">speak to our team</a>. We work exclusively with agency founders. We know how these deals work and how to protect your position.</p>

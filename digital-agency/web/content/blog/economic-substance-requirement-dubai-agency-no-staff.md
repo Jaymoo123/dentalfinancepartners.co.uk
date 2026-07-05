@@ -134,7 +134,7 @@ keyTakeaways:
 
 <p>This is the GAAR risk I mentioned earlier. HMRC has become much more aggressive on offshore structures that lack substance. If you are running a Dubai agency with no staff and no real presence, you are a target.</p>
 
-<p>At Agency Founder Finance, we are ICAEW qualified accountants who work with agency founders on both sides of the equation. We help UK-based founders structure their international operations properly, so they do not fall foul of either UAE or UK rules.</p>
+<p>At Agency Founder Finance, we work exclusively with agency founders who work with agency founders on both sides of the equation. We help UK-based founders structure their international operations properly, so they do not fall foul of either UAE or UK rules.</p>
 
 <p>If you are unsure whether your Dubai structure passes the substance test, start by reviewing your ESR notification. If you have not filed one, you are already behind.</p>
 

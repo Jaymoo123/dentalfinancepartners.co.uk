@@ -135,7 +135,7 @@ keyTakeaways:
 <li><strong>Declare dividends properly.</strong> Each dividend declaration must specify the class of shares receiving the dividend and the amount per share. Keep minutes of the board meeting where dividends are declared.</li>
 </ol>
 
-<p>As ICAEW qualified accountants, we see alphabet share structures set up correctly and incorrectly. The most common mistake is failing to document the rights properly. If the rights are ambiguous, HMRC can argue the shares are actually ordinary shares and tax accordingly. Get the paperwork right from the start.</p>
+<p>Working exclusively with agency founders, we see alphabet share structures set up correctly and incorrectly. The most common mistake is failing to document the rights properly. If the rights are ambiguous, HMRC can argue the shares are actually ordinary shares and tax accordingly. Get the paperwork right from the start.</p>
 
 <h2>Alphabet Shares and Exit Planning</h2>
 

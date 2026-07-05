@@ -151,7 +151,7 @@ keyTakeaways:
 <li>Exit planning and BADR qualification</li>
 </ul>
 
-<p>But the quarterly data entry? That is purely administrative. Our ICAEW qualified team at Agency Founder Finance helps agency founders with the strategic stuff, tax planning, structure, and compliance, while you handle the day-to-day bookkeeping with automated tools. If your agency finances are getting more complex, <a href="/contact">get in touch</a> to discuss how we can support your growth without taking over your bookkeeping.</p>
+<p>But the quarterly data entry? That is purely administrative. Our team at Agency Founder Finance helps agency founders with the strategic stuff, tax planning, structure, and compliance, while you handle the day-to-day bookkeeping with automated tools. If your agency finances are getting more complex, <a href="/contact">get in touch</a> to discuss how we can support your growth without taking over your bookkeeping.</p>
 
 <p>For most agency founders, the right approach is: automate the quarterly MTD ITSA updates yourself using Xero or FreeAgent, and bring in an accountant for the annual tax return, tax planning, and any complex issues. That keeps your costs down and your compliance solid.</p>
 

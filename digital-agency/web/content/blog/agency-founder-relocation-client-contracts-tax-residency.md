@@ -149,4 +149,4 @@ keyTakeaways:
 
 <p>Renegotiate now. Not after you land in Dubai. Not when HMRC writes to you. Now.</p>
 
-<p>As ICAEW qualified accountants, we work exclusively with agency founders on international structuring. If your client mix is predominantly UK-based and you are considering a Dubai move, speak to us before you change anything. One badly worded contract clause can cost you more in UK tax than you save by moving.</p>
+<p>Working exclusively with agency founders, we work exclusively with agency founders on international structuring. If your client mix is predominantly UK-based and you are considering a Dubai move, speak to us before you change anything. One badly worded contract clause can cost you more in UK tax than you save by moving.</p>

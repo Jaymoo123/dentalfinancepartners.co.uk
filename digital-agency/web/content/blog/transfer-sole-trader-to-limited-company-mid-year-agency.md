@@ -54,7 +54,7 @@ keyTakeaways:
 
 <p>That’s fine in principle. But you need to avoid a situation where your sole trader profit pushes you into a higher tax bracket than expected, because you didn’t account for the full year’s earnings when estimating your tax liability. A sole trader earning £60,000 profit in nine months before incorporation might find themselves in the 40% bracket unexpectedly, with no company structure to spread the tax burden.</p>
 
-<p>If you’re planning a mid-year transfer, speak to your accountant before picking a date. As ICAEW qualified accountants, we’d typically recommend incorporating at the start of a month, with the company’s first accounting period ending 12 months later. That keeps things clean for filing purposes.</p>
+<p>If you’re planning a mid-year transfer, speak to your accountant before picking a date. Working exclusively with agency founders, we’d typically recommend incorporating at the start of a month, with the company’s first accounting period ending 12 months later. That keeps things clean for filing purposes.</p>
 
 <h2>Step 2: Value the Business Being Transferred</h2>
 

@@ -36,7 +36,7 @@ keyTakeaways:
 - Strategic accountants provide monthly management accounts with P&L, balance sheet, and cash flow, not just annual compliance filings.
 - For agencies with staff or multiple income streams, compliance-only accounting leaves money on the table and risk undetected.
 ---
-<p>Most agency founders realise they need an accountant when they start making money. The question is what kind. The difference between a compliance-only accountant and a strategic agency accountant is not about qualifications. Both can be ICAEW qualified. Both can file your tax return on time. The difference is what they do with the rest of the year.</p>
+<p>Most agency founders realise they need an accountant when they start making money. The question is what kind. The difference between a compliance-only accountant and a strategic agency accountant is not about qualifications. Both can be agency-specialist. Both can file your tax return on time. The difference is what they do with the rest of the year.</p>
 
 <p>A compliance accountant files your accounts and taxes. A strategic agency accountant helps you build a more profitable, more saleable agency. One is a cost. The other is an investment. If you are running a 12-person digital agency billing £800k per year, the wrong choice costs you far more than the fee difference.</p>
 
@@ -143,7 +143,7 @@ keyTakeaways:
 
 <p>But the return on that difference is usually 5x to 10x. Between tax savings, R&D claims, avoided penalties, and better pricing decisions, a strategic accountant pays for itself many times over. The question is not whether you can afford the higher fee. It is whether you can afford to miss what a compliance accountant will not see.</p>
 
-<p>At Agency Founder Finance, we are ICAEW qualified accountants who work exclusively with agency founders. We do the compliance work to a high standard, but the reason our clients stay with us is the strategic advice. The monthly reviews. The structure planning. The exit preparation. That is the difference.</p>
+<p>At Agency Founder Finance, we work exclusively with agency founders. We do the compliance work to a high standard, but the reason our clients stay with us is the strategic advice. The monthly reviews. The structure planning. The exit preparation. That is the difference.</p>
 
 <p>If your current accountant only calls you once a year, or if you are choosing an accountant for the first time and want someone who understands agencies, <a href="/contact">get in touch</a>. We will walk you through what a strategic service looks like for your specific agency.</p>
 

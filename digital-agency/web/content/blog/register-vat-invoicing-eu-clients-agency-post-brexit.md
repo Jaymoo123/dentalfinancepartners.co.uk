@@ -177,7 +177,7 @@ keyTakeaways:
 <li>Your agency sells digital products or SaaS to EU consumers (not just services to businesses)</li>
 </ul>
 
-<p>As <a href="/about">ICAEW qualified accountants</a> working exclusively with agency founders, we handle this daily. The rules are not complicated once you know them, but getting them wrong creates unnecessary friction with clients and HMRC.</p>
+<p>As <a href="/about">specialist agency accountants</a> working exclusively with agency founders, we handle this daily. The rules are not complicated once you know them, but getting them wrong creates unnecessary friction with clients and HMRC.</p>
 
 <p>If your client mix has changed in the last 12 months to include EU businesses, ask your accountant before your next VAT return. A 15-minute check can save you a penalty.</p>
 

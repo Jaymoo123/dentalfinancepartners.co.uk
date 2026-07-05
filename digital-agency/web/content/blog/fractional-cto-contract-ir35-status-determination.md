@@ -42,7 +42,7 @@ keyTakeaways:
 
 <p>This is not about the standard IR35 advice you see everywhere. This is about the specific risk profile of fractional executives who sit on both sides of the table. They attend board meetings. They influence strategy. They have access to everything. And that is exactly what triggers HMRC scrutiny.</p>
 
-<p>As ICAEW qualified accountants who work exclusively with agency founders, we have seen these determinations go wrong more often than they go right. Here is how to write a contract that actually passes a status determination.</p>
+<p>Working exclusively with agency founders, we have seen these determinations go wrong more often than they go right. Here is how to write a contract that actually passes a status determination.</p>
 
 <h2>Why Fractional CTOs Are Different from Standard Contractors</h2>
 
@@ -195,7 +195,7 @@ keyTakeaways:
 
 <p><strong>Three:</strong> Brief your team. Make sure everyone who interacts with the fractional CTO understands that they are a contractor, not an employee. That means no treating them like a staff member, no expecting them to attend non-essential meetings, and no giving them employee perks.</p>
 
-<p>If you are working with an agency that has a fractional CTO or is considering one, and you want to check whether your current contracts would pass a status determination, speak to your accountant. If your accountant is not familiar with the specific risks of fractional executive arrangements, find one who is. Our ICAEW qualified team at Agency Founder Finance works with agency founders on exactly these issues.</p>
+<p>If you are working with an agency that has a fractional CTO or is considering one, and you want to check whether your current contracts would pass a status determination, speak to your accountant. If your accountant is not familiar with the specific risks of fractional executive arrangements, find one who is. Our team at Agency Founder Finance works with agency founders on exactly these issues.</p>
 
 <p>Fractional CTOs can be a great solution for growing agencies. But the tax consequences of getting the IR35 determination wrong are severe. Get the contract right, operate it correctly, and keep the documentation. That is the only way to make it work.</p>
 

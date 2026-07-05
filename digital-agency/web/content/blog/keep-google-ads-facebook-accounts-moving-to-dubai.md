@@ -126,7 +126,7 @@ keyTakeaways:
 <li><strong>Check your payment methods.</strong> Open a UAE bank account that can make international payments in GBP. Or set up a TransferWise/Currencycloud account that can hold multiple currencies.</li>
 <li><strong>Plan the timing.</strong> Change your billing address during a low-spend period. If you run retainer campaigns that can't pause, schedule the change for a weekend.</li>
 <li><strong>Update your tax registrations.</strong> Cancel your UK VAT registration for Google Ads (if you're VAT-registered in the UK). Register for UAE VAT if your ad spend exceeds the AED 375,000 threshold.</li>
-<li><strong>Tell your accountant.</strong> Your ICAEW-qualified accountant needs to know the date your billing address changed. It affects your UK corporation tax return, your UAE tax return, and your personal tax position.</li>
+<li><strong>Tell your accountant.</strong> Your specialist accountant needs to know the date your billing address changed. It affects your UK corporation tax return, your UAE tax return, and your personal tax position.</li>
 </ol>
 
 <h2>The bottom line for UK agency founders</h2>
@@ -135,7 +135,7 @@ keyTakeaways:
 
 <p>If your agency spends more than £10k per month on ads, the currency mismatch might cost you enough in FX fees to justify a new account. If you spend £2k per month, it's probably not worth the hassle.</p>
 
-<p>Every agency's situation is different. The right answer depends on your ad spend, your client mix, and your long-term plans in the UAE. If you're planning a move and want to map out the tax and account implications, our team at Agency Founder Finance works with UK agency founders moving to Dubai. We're ICAEW qualified accountants who understand both the UK tax side and the ad platform side. <a href="/contact">Get in touch</a> before you update that billing address.</p>
+<p>Every agency's situation is different. The right answer depends on your ad spend, your client mix, and your long-term plans in the UAE. If you're planning a move and want to map out the tax and account implications, our team at Agency Founder Finance works with UK agency founders moving to Dubai. We're specialist agency accountants who understand both the UK tax side and the ad platform side. <a href="/contact">Get in touch</a> before you update that billing address.</p>
 
 <h2>Related articles in International Agencies</h2>
 <ul>

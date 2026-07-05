@@ -116,6 +116,19 @@ export async function POST(req: NextRequest) {
   } catch {
     return NextResponse.json({ ok: false, error: "Invalid JSON" }, { status: 400 });
   }
+
+  // SEC-HP: server-side honeypot check. enquiry_ref non-empty = bot fill.
+  // Return a plausible success shape so the bot receives no signal, but do not
+  // process the submission or send any emails.
+  if (
+    body &&
+    typeof body === "object" &&
+    typeof (body as Record<string, unknown>).enquiry_ref === "string" &&
+    ((body as Record<string, unknown>).enquiry_ref as string).trim()
+  ) {
+    return NextResponse.json({ ok: true, submissionId: "bot", topThreeTitles: [], counts: { high: 0, medium: 0, low: 0, info: 0 } });
+  }
+
   const validated = validate(body);
   if ("error" in validated) {
     return NextResponse.json({ ok: false, error: validated.error }, { status: 400 });

@@ -127,7 +127,7 @@ imageCredit:
 
 <p>Capital allowances on property are not a DIY area for most agency founders. The rules are detailed, and the stakes are high. A mistake could mean overpaying tax by thousands of pounds, or underpaying and facing an HMRC enquiry.</p>
 
-<p>As ICAEW qualified accountants, we work with agency founders every day on exactly these questions. We can help you identify qualifying expenditure, prepare the claim, and file it on time. If you are buying a property or fitting out a new office, talk to us before you sign anything.</p>
+<p>Working exclusively with agency founders, we work with agency founders every day on exactly these questions. We can help you identify qualifying expenditure, prepare the claim, and file it on time. If you are buying a property or fitting out a new office, talk to us before you sign anything.</p>
 
 <p>If you are already in a lease or own your office, it is not too late. We can review your past capital expenditure and see if there are unclaimed allowances from previous years. Just remember the two-year time limit.</p>
 

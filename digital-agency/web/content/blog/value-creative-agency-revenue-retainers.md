@@ -151,7 +151,7 @@ keyTakeaways:
 <li>Staff utilisation rates and key person dependency analysis</li>
 </ul>
 
-<p>If you cannot produce clean, accurate management accounts for the last 12 months, a buyer will assume the worst. They will discount your valuation or walk away. This is where having an ICAEW-qualified accountant who understands agency finances matters. At <a href="/about">Agency Founder Finance</a>, we help agency founders prepare these reports as standard.</p>
+<p>If you cannot produce clean, accurate management accounts for the last 12 months, a buyer will assume the worst. They will discount your valuation or walk away. This is where having an specialist accountant who understands agency finances matters. At <a href="/about">Agency Founder Finance</a>, we help agency founders prepare these reports as standard.</p>
 
 <p>A buyer will also run the numbers through their own model. They will apply their own multiples, their own discount rates, and their own assumptions about future growth. Your job is to present the cleanest, most defensible data possible. That means having your retainer revenue clearly separated, your contracts documented, and your churn rate low.</p>
 
@@ -179,4 +179,4 @@ keyTakeaways:
 
 <p>If your retainer mix is below 50%, that is your priority for the next 12 to 24 months. Every percentage point you shift from project to retainer adds real pounds to your eventual sale price.</p>
 
-<p>If you'd like to discuss your agency's valuation or prepare for an exit, <a href="/contact">get in touch</a>. Our ICAEW-qualified team works exclusively with agency founders and knows what buyers look for.</p>
+<p>If you'd like to discuss your agency's valuation or prepare for an exit, <a href="/contact">get in touch</a>. Our agency-specialist team works exclusively with agency founders and knows what buyers look for.</p>

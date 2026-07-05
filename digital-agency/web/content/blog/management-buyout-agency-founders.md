@@ -126,7 +126,7 @@ keyTakeaways:
 <li><strong>Reduce client concentration.</strong> If one client represents more than 20% of revenue, that is a risk. Diversify before you market the deal.</li>
 <li><strong>Build the management team.</strong> An MBO only works if the management team is credible. If your senior team lacks experience in running the full business, consider bringing in a finance director or operations director before the deal.</li>
 <li><strong>Get a valuation.</strong> Commission an independent valuation from a firm that understands agencies. This gives you a benchmark and helps you negotiate realistically.</li>
-<li><strong>Speak to your accountant early.</strong> As ICAEW qualified accountants working exclusively with agency founders, we see MBOs where the tax planning starts too late. The structure needs to be in place before the deal is agreed, not after. <a href="/contact">Talk to us</a> before you start negotiations.</li>
+<li><strong>Speak to your accountant early.</strong> Working exclusively with agency founders, we see MBOs where the tax planning starts too late. The structure needs to be in place before the deal is agreed, not after. <a href="/contact">Talk to us</a> before you start negotiations.</li>
 </ol>
 
 <h2>Is an MBO Right for Your Agency?</h2>

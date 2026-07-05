@@ -109,7 +109,7 @@ keyTakeaways:
 
 <p>CEST is free and gives you HMRC's view of the status. But it has limitations. It does not handle complex arrangements well. It relies on honest answers about working practices. And HMRC have said they will stand by CEST determinations only if you answer all questions accurately and the tool gives a clear result.</p>
 
-<p>If CEST says "undetermined," you have no HMRC protection. In those cases, you need professional advice. As ICAEW qualified accountants, we see many agencies using CEST as a starting point and then reviewing borderline cases with a tax specialist.</p>
+<p>If CEST says "undetermined," you have no HMRC protection. In those cases, you need professional advice. Working exclusively with agency founders, we see many agencies using CEST as a starting point and then reviewing borderline cases with a tax specialist.</p>
 
 <p>For a 12-person agency billing £800k per year, CEST will handle most straightforward contractor engagements. But if you have contractors who work closely with your team, use your equipment, or have been with you for years, get professional input.</p>
 

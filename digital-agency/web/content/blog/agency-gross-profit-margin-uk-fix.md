@@ -167,7 +167,7 @@ keyTakeaways:
 
 <h2>How We Help Agency Founders Get This Right</h2>
 
-<p>As ICAEW qualified accountants, we see this misclassification in nearly every new client's first set of books. It is not a sign of incompetence. It is a sign that the agency outgrew its original accounting setup.</p>
+<p>Working exclusively with agency founders, we see this misclassification in nearly every new client's first set of books. It is not a sign of incompetence. It is a sign that the agency outgrew its original accounting setup.</p>
 
 <p>When you started as a freelancer or a two-person shop, lumping everything into one cost line made sense. At £200k revenue, the margin error was small. At £800k or £1.5m, that same error is costing you real money and real decisions.</p>
 

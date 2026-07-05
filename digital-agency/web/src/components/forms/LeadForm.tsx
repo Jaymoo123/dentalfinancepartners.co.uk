@@ -5,7 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
-import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { submitAffLead } from "@/lib/leads/submit-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
@@ -50,8 +50,6 @@ export function LeadForm({
   // AN-01: form lifecycle tracking — no field values captured, only field names + outcome.
   const { onFieldFocus, onFieldBlur, onError, onSubmit: trackFormSubmit, onLead } = useFormTracking("lead_form");
 
-  const { supabaseUrl, supabaseKey } = getSupabaseConfig();
-
   const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
 
   const validate = useCallback((data: FormData) => {
@@ -88,8 +86,10 @@ export function LeadForm({
     const form = e.currentTarget;
     const data = new FormData(form);
 
-    // LD-03: honeypot — bots fill company_url; humans never see or tab to this field.
-    if (String(data.get("company_url") || "").trim()) return;
+    // LD-03: honeypot — enquiry_ref is visually hidden; bots fill it; humans never reach it.
+    // Value is passed to the server chokepoint which stores it flagged and returns success.
+    // NEVER abort client-side on honeypot (silent-drop kills real autofilled submissions).
+    const honeypotValue = String(data.get("enquiry_ref") || "").trim();
 
     const errs = validate(data);
     setFieldErrors(errs);
@@ -102,14 +102,6 @@ export function LeadForm({
           : "required";
         onError(field, kind);
       }
-      return;
-    }
-
-    if (!supabaseUrl || !supabaseKey) {
-      setStatus("error");
-      setErrorMessage(
-        "Form not connected. Email us directly and we will respond same day.",
-      );
       return;
     }
 
@@ -138,7 +130,7 @@ export function LeadForm({
       session_id: getSessionId() ?? undefined,
     };
 
-    const result = await submitLead(payload, supabaseUrl, supabaseKey);
+    const result = await submitAffLead(payload, honeypotValue);
 
     if (!result.success) {
       setStatus("error");
@@ -162,11 +154,17 @@ export function LeadForm({
   return (
     <form onSubmit={onSubmit} className="space-y-5" noValidate aria-busy={status === "loading"}>
       <input type="hidden" name="sourceUrl" value={sourceUrl} readOnly />
-      {/* LD-03: honeypot — visually hidden, bots fill it, humans never reach it */}
-      <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }}>
-        <label htmlFor="company_url">Company website (leave blank)</label>
-        <input id="company_url" type="text" name="company_url" tabIndex={-1} autoComplete="off" />
-      </div>
+      {/* LD-03: honeypot — visually hidden, estate-standard name enquiry_ref.
+          Value passed to server chokepoint which stores it flagged and returns success.
+          Client NEVER aborts on honeypot — silent drop kills real autofilled submissions. */}
+      <input
+        type="text"
+        name="enquiry_ref"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ position: "absolute", left: "-9999px", top: "-9999px", width: 1, height: 1, opacity: 0 }}
+      />
 
       <div>
         <label htmlFor="role" className="block text-sm font-semibold text-slate-900">

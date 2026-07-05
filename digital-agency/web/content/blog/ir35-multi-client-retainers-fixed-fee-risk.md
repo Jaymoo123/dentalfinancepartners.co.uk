@@ -128,7 +128,7 @@ keyTakeaways:
 <li><strong>End the arrangement</strong> if it cannot be restructured and you cannot justify an outside-IR35 determination.</li>
 </ul>
 
-<p>Our ICAEW qualified team at Agency Founder Finance can help you review your contractor agreements and issue compliant SDSs. We work exclusively with agency founders and understand the retainer model inside out. <a href="/contact">Contact us</a> to discuss your specific situation.</p>
+<p>Our team at Agency Founder Finance can help you review your contractor agreements and issue compliant SDSs. We work exclusively with agency founders and understand the retainer model inside out. <a href="/contact">Contact us</a> to discuss your specific situation.</p>
 
 <h2>The Bottom Line</h2>
 

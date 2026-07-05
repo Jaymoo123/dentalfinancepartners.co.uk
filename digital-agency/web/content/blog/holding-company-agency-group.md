@@ -33,7 +33,7 @@ keyTakeaways:
 - A holding company structure protects agency assets like IP and cash reserves from trading subsidiary creditors.
 - Intra-group dividends paid from a subsidiary to a holding company are generally tax-free, avoiding dividend tax.
 - A holding company can loan cash between subsidiaries without triggering personal dividend tax for the founder.
-- Selling shares in the holding company can qualify for Business Asset Disposal Relief at 18% (rising to 18% from 6 April 2026).
+- Selling shares in the holding company can qualify for Business Asset Disposal Relief at 14% for disposals 6 April 2025 to 5 April 2026 (18% from 6 April 2026).
 - Multiple subsidiaries under a holding company allow separate sales to different buyers, each potentially qualifying for BADR.
 ---
 <h2>What Is a Holding Company Structure for an Agency Group?</h2>
@@ -138,7 +138,7 @@ keyTakeaways:
 
 <p>If you are a sole trader or single-company founder with turnover under £250,000, a holding company is unlikely to be worth the cost. Revisit the decision when you hit that threshold or when you launch a second entity.</p>
 
-<p>At Agency Founder Finance, we are ICAEW qualified accountants who work exclusively with agency founders. We see holding company structures set up correctly and incorrectly every week. The difference is usually a conversation before the restructuring happens, not after.</p>
+<p>At Agency Founder Finance, we work exclusively with agency founders. We see holding company structures set up correctly and incorrectly every week. The difference is usually a conversation before the restructuring happens, not after.</p>
 
 <p>If your situation has changed in the last 12 months, or if you are planning a new agency launch, book a call with our team. We will tell you whether a holding company makes sense for your numbers, not in theory.</p>
 

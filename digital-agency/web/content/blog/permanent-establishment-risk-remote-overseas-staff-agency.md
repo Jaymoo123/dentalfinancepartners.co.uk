@@ -167,7 +167,7 @@ keyTakeaways:
 
 <p>Fourth, consider a voluntary disclosure. If you believe you have an undisclosed PE, telling the tax authority before they find you can reduce penalties significantly. This is a specialist area. Do not attempt it without professional advice.</p>
 
-<p>If you need help assessing your current structure, our team at <a href="/about">Agency Founder Finance</a> can walk through your specific situation. We are ICAEW qualified accountants who work exclusively with agency founders. We understand the cross-border tax issues that come with remote teams.</p>
+<p>If you need help assessing your current structure, our team at <a href="/about">Agency Founder Finance</a> can walk through your specific situation. We work exclusively with agency founders. We understand the cross-border tax issues that come with remote teams.</p>
 
 <h2>The Bottom Line on Permanent Establishment Risk</h2>
 

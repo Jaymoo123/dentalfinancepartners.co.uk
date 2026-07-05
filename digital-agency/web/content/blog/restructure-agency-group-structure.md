@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Agency Group Restructure: Single to Multi-Company Guide'
 metaDescription: Thinking of restructuring your agency into a group? We cover holding companies, tax implications, BADR protection, and the step-by-step process for UK
-altText: Two agency founders reviewing group structure documents with their ICAEW accountant in a modern UK office
+altText: Two agency founders reviewing group structure documents with their specialist accountant in a modern UK office
 image: /blog/restructure-agency-group-structure.jpg
 imageCredit:
   photographer: Thirdman
@@ -100,7 +100,7 @@ keyTakeaways:
 
 <p>This transaction needs to be documented properly. HMRC will look at whether the exchange was carried out for genuine commercial reasons, not purely for tax avoidance. You need a clearance application under TCGA 1992, s.138 to confirm HMRC will not challenge the transaction. Without that clearance, you risk a tax charge later.</p>
 
-<p>As ICAEW qualified accountants, we always recommend getting advance clearance before proceeding. It adds a few weeks to the timeline but removes a significant risk.</p>
+<p>Working exclusively with agency founders, we always recommend getting advance clearance before proceeding. It adds a few weeks to the timeline but removes a significant risk.</p>
 
 <h2>Corporation Tax Implications of a Group Structure</h2>
 
@@ -117,7 +117,7 @@ keyTakeaways:
 
 <h2>Protecting BADR in a Group Structure</h2>
 
-<p>Business Asset Disposal Relief (formerly Entrepreneurs' Relief) gives a 18% capital gains tax rate on qualifying disposals (2025/26 rate, rising to 18% from April 2026), up to a lifetime limit of £1 million. If you restructure into a group, you need to make sure you do not accidentally lose BADR eligibility.</p>
+<p>Business Asset Disposal Relief (formerly Entrepreneurs' Relief) gives a 14% capital gains tax rate on qualifying disposals in 2025/26 (rising to 18% from 6 April 2026), up to a lifetime limit of £1 million. If you restructure into a group, you need to make sure you do not accidentally lose BADR eligibility.</p>
 
 <p>The key conditions for BADR on shares in a holding company are:</p>
 

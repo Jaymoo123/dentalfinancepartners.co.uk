@@ -154,4 +154,4 @@ keyTakeaways:
 
 <p>If you are an agency founder with retained profits above £100k, a clear exit timeline, or plans to acquire other agencies, the holding company structure is worth a serious conversation. If you are turning over £250k and reinvesting everything into growth, focus on that first.</p>
 
-<p>Our <a href="/services">ICAEW qualified team at Agency Founder Finance</a> works exclusively with agency founders. We have advised on dozens of these restructures. We know the questions to ask and the pitfalls to avoid. If you want a no-obligation assessment of whether a holding company makes sense for your agency, <a href="/contact">book a call</a>.</p>
+<p>Our <a href="/services">specialist team at Agency Founder Finance</a> works exclusively with agency founders. We have advised on dozens of these restructures. We know the questions to ask and the pitfalls to avoid. If you want a no-obligation assessment of whether a holding company makes sense for your agency, <a href="/contact">book a call</a>.</p>

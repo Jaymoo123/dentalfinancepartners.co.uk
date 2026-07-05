@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: Incorporate a Partnership Agency Without Goodwill Tax Charge
-metaDescription: Incorporate your partnership agency without triggering a tax charge on goodwill. Our ICAEW accountants explain the reliefs available and the steps
+metaDescription: Incorporate your partnership agency without triggering a tax charge on goodwill. We explain the reliefs available and the steps agency founders must follow.
 altText: Two agency partners reviewing incorporation documents with their accountant in a modern UK office
 image: /blog/incorporate-partnership-agency-without-goodwill-tax-charge.jpg
 imageCredit:
@@ -42,7 +42,7 @@ keyTakeaways:
 
 <p>This is not a theoretical problem. I have seen agency partnerships with a combined goodwill value of £400,000 face a capital gains tax bill of £80,000 or more on incorporation, simply because they did not structure the transaction correctly. That is cash out of your pocket for an asset you created by building your agency, not by selling it.</p>
 
-<p>This article explains how to incorporate your partnership agency without triggering that tax charge, using incorporation relief, gift relief, and careful timing. We work exclusively with agency founders at Agency Founder Finance, and we are ICAEW qualified accountants who deal with this transition regularly.</p>
+<p>This article explains how to incorporate your partnership agency without triggering that tax charge, using incorporation relief, gift relief, and careful timing. We work exclusively with agency founders at Agency Founder Finance, and we work exclusively with agency founders who deal with this transition regularly.</p>
 
 <h2>What Is Goodwill in an Agency Context?</h2>
 

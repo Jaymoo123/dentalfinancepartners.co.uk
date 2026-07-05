@@ -72,7 +72,7 @@ keyTakeaways:
 
 <p>For contract placements, you typically invoice monthly in arrears. You recognise revenue in the month the contractor worked, even though you receive the cash the following month. This creates a timing difference between your profit and loss account and your bank balance.</p>
 
-<p>As ICAEW qualified accountants, we see recruitment agencies that treat the full contract billing as revenue in their management accounts. That overstates profit and can lead to incorrect dividend decisions and tax payments. We cover this in more detail on our <a href="/agencies/recruitment-agencies">recruitment agency accounting services page</a>.</p>
+<p>Working exclusively with agency founders, we see recruitment agencies that treat the full contract billing as revenue in their management accounts. That overstates profit and can lead to incorrect dividend decisions and tax payments. We cover this in more detail on our <a href="/agencies/recruitment-agencies">recruitment agency accounting services page</a>.</p>
 
 <h2>Revenue vs Billings Recruitment Agency: The Key Differences</h2>
 

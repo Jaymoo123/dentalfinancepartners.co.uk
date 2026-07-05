@@ -112,7 +112,7 @@ keyTakeaways:
 
 <h2>When You Need Professional Advice</h2>
 <p>The UK-UAE treaty exemption is well established. But every situation has nuance. If your agency has any UK presence, such as a UK-based director, a UK subsidiary, or UK employees, the analysis changes. You may have a permanent establishment, and the treaty exemption may not apply.</p>
-<p>If you are unsure, speak to a qualified accountant who understands both UK and UAE tax rules. As ICAEW qualified accountants, we work with agency founders in Dubai and other international locations. We can review your structure and confirm whether the treaty exemption is safe for your specific setup.</p>
+<p>If you are unsure, speak to a qualified accountant who understands both UK and UAE tax rules. Working exclusively with agency founders, we work with agency founders in Dubai and other international locations. We can review your structure and confirm whether the treaty exemption is safe for your specific setup.</p>
 <p>If your contractor mix has changed or you are considering a UK office, ask your accountant before your next invoice run.</p>
 
 <h2>Summary</h2>

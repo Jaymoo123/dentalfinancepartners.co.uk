@@ -61,7 +61,7 @@ keyTakeaways:
 
 <p>The SDS is not a one-size-fits-all document. It must reflect the specific facts of each engagement. A freelance designer working on a six-month retainer for a single client is different from a designer brought in for a two-week project sprint.</p>
 
-<p>As <a href="/agencies/creative-agencies">ICAEW qualified accountants specialising in creative agencies</a>, we see too many agencies treating the SDS as a tick-box exercise. That is where the risk lives.</p>
+<p>As <a href="/agencies/creative-agencies">specialist agency accountants specialising in creative agencies</a>, we see too many agencies treating the SDS as a tick-box exercise. That is where the risk lives.</p>
 
 <h2>The Three Tests That Matter for Freelance Designers</h2>
 
@@ -202,4 +202,4 @@ keyTakeaways:
 
 <p>Your agency's IR35 compliance is not just about avoiding penalties. It is about building a sustainable business that can hire the talent it needs without creating unnecessary tax risk.</p>
 
-<p>If you are unsure about any of your current freelance designer engagements, <a href="/contact">speak to our ICAEW qualified team</a> before your next year-end. We can review your SDS process and help you identify any exposure.</p>
+<p>If you are unsure about any of your current freelance designer engagements, <a href="/contact">speak to our specialist team</a> before your next year-end. We can review your SDS process and help you identify any exposure.</p>

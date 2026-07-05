@@ -57,7 +57,7 @@ keyTakeaways:
 <li>Freelancers who are paid through their own limited company but behave like employees</li>
 </ul>
 
-<p>If any of those patterns describe your freelancer arrangements, you need to take this seriously. Our <a href="/agencies">ICAEW qualified team at Agency Founder Finance</a> handles these checks regularly for agency founders.</p>
+<p>If any of those patterns describe your freelancer arrangements, you need to take this seriously. Our <a href="/agencies">agency-specialist team at Agency Founder Finance</a> handles these checks regularly for agency founders.</p>
 
 <h2>Step One: Do Not Ignore the Letter</h2>
 
@@ -164,6 +164,6 @@ If HMRC decides you were careless (you should have known but did not check prope
 
 <p>The agencies that get into serious trouble are the ones that ignore the letters, destroy evidence, or try to mislead HMRC. Do not be that agency.</p>
 
-<p>If you have received a compliance check letter and need help responding, <a href="/contact">contact us at Agency Founder Finance</a>. We are ICAEW qualified accountants who work exclusively with agency founders. We know how HMRC thinks and how to protect your position.</p>
+<p>If you have received a compliance check letter and need help responding, <a href="/contact">contact us at Agency Founder Finance</a>. We work exclusively with agency founders. We know how HMRC thinks and how to protect your position.</p>
 
 <p>Get the evidence together, get professional advice, and get the response sent. Then you can get back to running your agency.</p>

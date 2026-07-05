@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'AIA for Agency Equipment: 2025/26 Guide'
 metaDescription: Use the annual investment allowance to claim 100% tax relief on agency equipment. £1m cap applies. Computers, software, office fit-out all qualify.
-altText: Agency founder reviewing equipment invoices with ICAEW accountant in London office, discussing Annual Investment Allowance claims for 2025/26
+altText: Agency founder reviewing equipment invoices with a specialist accountant in London office, discussing Annual Investment Allowance claims for 2025/26
 image: /blog/annual-investment-allowance-agency-equipment-2025-26.jpg
 imageCredit:
   photographer: www.kaboompics.com
@@ -134,7 +134,7 @@ keyTakeaways:
 
 <h2>How Agency Founder Finance Can Help</h2>
 
-<p>We are ICAEW qualified accountants who work exclusively with agency founders. We see capital allowance claims go wrong all the time. Agencies miss qualifying expenditure. They claim the wrong amounts. They forget to tell their accountant about purchases made mid-year.</p>
+<p>We work exclusively with agency founders. We see capital allowance claims go wrong all the time. Agencies miss qualifying expenditure. They claim the wrong amounts. They forget to tell their accountant about purchases made mid-year.</p>
 
 <p>We build capital allowance planning into our year-end process. We ask the right questions: What did you buy this year? Are you planning any large purchases? Are you moving offices? Then we prepare the claim and file it with your corporation tax return.</p>
 

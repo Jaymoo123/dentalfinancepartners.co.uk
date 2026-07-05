@@ -112,7 +112,7 @@ keyTakeaways:
 
 <p>The key is to stop treating exchange rates as something that just happens to you. <strong>Currency risk GBP AED agency invoices</strong> is a manageable business cost. Treat it like one. Set a policy. Review it quarterly. Adjust when your revenue mix changes.</p>
 
-<p>If you want to talk through your specific situation, our ICAEW qualified team at <a href="/services">Agency Founder Finance</a> works with UK agency founders based in Dubai. We understand both the UK tax side and the practical cash flow realities of cross-border operations. <a href="/contact">Get in touch</a> and we will map out a strategy that fits your numbers.</p>
+<p>If you want to talk through your specific situation, our specialist team at <a href="/services">Agency Founder Finance</a> works with UK agency founders based in Dubai. We understand both the UK tax side and the practical cash flow realities of cross-border operations. <a href="/contact">Get in touch</a> and we will map out a strategy that fits your numbers.</p>
 
 <h2>Related articles in International Agencies</h2>
 <ul>

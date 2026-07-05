@@ -79,7 +79,7 @@ keyTakeaways:
 
 <h3>Get Specialist Cross-Border Advice</h3>
 <p>If you have a pension pot over £250,000, or if you are considering transferring to a QROPS in any jurisdiction, you need advice from a specialist cross-border pension adviser who is authorised by the Financial Conduct Authority (FCA) in the UK. Do not use a Dubai-based adviser who is not FCA-regulated. The FCA has issued multiple warnings about unauthorised overseas pension transfers.</p>
-<p>As ICAEW qualified accountants, we work with agency founders who are moving to Dubai or already based there. We can help you understand the tax implications of your pension choices, but we will always recommend you speak to a regulated pension transfer specialist before making any decision. The cost of getting this wrong is simply too high.</p>
+<p>Working exclusively with agency founders, we work with agency founders who are moving to Dubai or already based there. We can help you understand the tax implications of your pension choices, but we will always recommend you speak to a regulated pension transfer specialist before making any decision. The cost of getting this wrong is simply too high.</p>
 
 <h2>What If You Have Already Transferred?</h2>
 <p>If you have already transferred your UK pension to a scheme that is not a genuine QROPS, you may be able to correct the position. HMRC has a process called "remediation" where you can transfer the funds back to a UK pension scheme and potentially reduce or avoid the unauthorised payment charge. But this is time-sensitive and complex. You need to act quickly.</p>

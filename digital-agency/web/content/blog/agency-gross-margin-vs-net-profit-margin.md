@@ -102,7 +102,7 @@ keyTakeaways:
 
 <p>Some agencies classify account management as a direct cost. Others put it in overhead. There is no right answer, but you need to be consistent. If you move account management costs from overhead to direct costs, your gross margin drops but your net margin stays the same. The gap just moves.</p>
 
-<p>The important thing is to know where you put each cost and why. If you cannot explain the classification to your ICAEW qualified accountant, you probably have it wrong.</p>
+<p>The important thing is to know where you put each cost and why. If you cannot explain the classification to your specialist agency accountant, you probably have it wrong.</p>
 
 <h2>How to Improve Gross Margin</h2>
 
@@ -168,7 +168,7 @@ keyTakeaways:
 
 <p>If your contractor mix has changed in the last 12 months, ask your accountant before year-end. IR35 can add significant employer NI costs that hit your net margin. A Status Determination Statement should be issued for every contractor before engagement.</p>
 
-<p>Our ICAEW qualified team at Agency Founder Finance works exclusively with agency founders. We see these margin patterns every day. If you want a second opinion on your numbers, <a href="/contact">get in touch</a>.</p>
+<p>Our team at Agency Founder Finance works exclusively with agency founders. We see these margin patterns every day. If you want a second opinion on your numbers, <a href="/contact">get in touch</a>.</p>
 
 <h2>Related articles in Agency Finance Essentials</h2>
 <ul>

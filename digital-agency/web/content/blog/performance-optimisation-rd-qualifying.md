@@ -145,7 +145,7 @@ keyTakeaways:
 
 <p>We recommend using a tool like <strong>Xero</strong> or <strong>QuickBooks</strong> with project tracking enabled, and recording R&D time against a specific project code. If you use <strong>FreeAgent</strong>, you can set up a separate project for R&D work and tag relevant expenses.</p>
 
-<p>As ICAEW qualified accountants, we prepare R&D claims for agencies across the UK. We see the same pattern repeatedly: agencies that document their R&D work properly from the start get through HMRC reviews smoothly. Agencies that try to reconstruct documentation after the fact often face challenges, delays, and in some cases, rejected claims.</p>
+<p>Working exclusively with agency founders, we prepare R&D claims for agencies across the UK. We see the same pattern repeatedly: agencies that document their R&D work properly from the start get through HMRC reviews smoothly. Agencies that try to reconstruct documentation after the fact often face challenges, delays, and in some cases, rejected claims.</p>
 
 <h2>What to Do Next</h2>
 

@@ -132,7 +132,7 @@ keyTakeaways:
 
 <p>You can prepare and submit an R&D claim yourself. The form (CT600L) is straightforward. The hard part is the technical narrative and the cost breakdown.</p>
 
-<p>For a simple claim under £25,000 of qualifying spend, a competent finance person in your agency can probably handle it. For larger claims, or if your project structure is complex, use a specialist. As ICAEW qualified accountants working with agencies, we see the difference a well-prepared claim makes. HMRC enquiries are time-consuming and stressful. Getting the claim right the first time is cheaper than defending a bad one later.</p>
+<p>For a simple claim under £25,000 of qualifying spend, a competent finance person in your agency can probably handle it. For larger claims, or if your project structure is complex, use a specialist. As specialist agency accountants working with agencies, we see the difference a well-prepared claim makes. HMRC enquiries are time-consuming and stressful. Getting the claim right the first time is cheaper than defending a bad one later.</p>
 
 <p>If you are thinking about claiming for the first time, <a href="/services">speak to us</a> before you start writing the technical narrative. We can tell you within a 15-minute call whether your Klaviyo work is likely to qualify, and what evidence you need to gather.</p>
 

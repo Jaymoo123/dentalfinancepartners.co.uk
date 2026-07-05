@@ -94,7 +94,7 @@ keyTakeaways:
 <p>If it falls between £30,000 and £50,000, you are in scope from April 2027. If it is under £30,000, you are not required to comply, though you can volunteer.</p>
 
 <h3>Talk to Your Accountant</h3>
-<p>If you work with an ICAEW-qualified firm like Agency Founder Finance, your accountant will already be planning for this. Ask them specifically: "Am I in scope for MTD ITSA, and what software will we use?"</p>
+<p>If you work with an agency-specialist firm like Agency Founder Finance, your accountant will already be planning for this. Ask them specifically: "Am I in scope for MTD ITSA, and what software will we use?"</p>
 <p>Your accountant can set up the digital record-keeping and software integration now, so you are not scrambling in early 2026.</p>
 
 <h3>Review Your Software</h3>
@@ -141,7 +141,7 @@ keyTakeaways:
 <p>The <strong>MTD VAT vs MTD ITSA agency founder</strong> difference comes down to this: MTD VAT is about your business's VAT. MTD ITSA is about your personal tax. Both require digital record-keeping and compatible software. Both are mandatory. But they apply to different entities and have different filing schedules.</p>
 <p>If you are already filing MTD VAT returns through Xero or QuickBooks, you are ahead of the game. You understand the digital record-keeping requirement. MTD ITSA extends that same principle to your personal finances.</p>
 <p>Start preparing now. Check your personal income against the £50,000 threshold. Talk to your accountant about software compatibility. Get your personal records organised. April 2026 will arrive faster than you expect.</p>
-<p>If you want to discuss how MTD ITSA affects your specific situation, <a href="/contact">get in touch with our ICAEW-qualified team</a>. We work exclusively with agency founders and we are already preparing our clients for the transition.</p>
+<p>If you want to discuss how MTD ITSA affects your specific situation, <a href="/contact">get in touch with our agency-specialist team</a>. We work exclusively with agency founders and we are already preparing our clients for the transition.</p>
 
 <h2>Related articles in Making Tax Digital</h2>
 <ul>

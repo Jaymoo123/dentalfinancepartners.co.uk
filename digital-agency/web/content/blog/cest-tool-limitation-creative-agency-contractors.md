@@ -126,7 +126,7 @@ keyTakeaways:
 
 <p>Document your reasoning in writing. Save it alongside the contract. If HMRC ever asks, you can show them you applied the correct legal test, not a simplified online questionnaire.</p>
 
-<p>As ICAEW qualified accountants, we see too many agencies treat CEST as definitive. It is not. It is a directional tool at best, and a misleading one for creative work.</p>
+<p>Working exclusively with agency founders, we see too many agencies treat CEST as definitive. It is not. It is a directional tool at best, and a misleading one for creative work.</p>
 
 <h2>When CEST Might Be Acceptable</h2>
 

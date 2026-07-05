@@ -27,6 +27,7 @@ import { buildAgencyNurtureConfig } from "@/config/nurture";
 import { buildResendProvider } from "@/lib/nurture-provider";
 
 export const runtime = "nodejs";
+export const maxDuration = 10;
 export const dynamic = "force-dynamic";
 
 type Body = {

@@ -94,7 +94,7 @@ keyTakeaways:
 
 <p>But CEST has limitations. It works well for straightforward cases but struggles with complex arrangements. It does not handle scenarios where the contractor works through their own limited company but also provides services to other clients. It does not account for the full range of case law factors.</p>
 
-<p>As ICAEW qualified accountants, we recommend using CEST as a starting point, not a final answer. If the tool says outside IR35 but the engagement looks borderline, get a professional IR35 review. The cost of a review is typically £300-£800 per contractor. The cost of getting it wrong is far higher.</p>
+<p>Working exclusively with agency founders, we recommend using CEST as a starting point, not a final answer. If the tool says outside IR35 but the engagement looks borderline, get a professional IR35 review. The cost of a review is typically £300-£800 per contractor. The cost of getting it wrong is far higher.</p>
 
 <h2>What Happens If You Get the Status Wrong?</h2>
 
@@ -119,7 +119,7 @@ keyTakeaways:
 <li><strong>Issue a Status Determination Statement</strong> for every contractor, even if you believe they are outside IR35. The SDS must state your decision and the reasons for it. You must pass this to the contractor and to any agency in the supply chain above you.</li>
 <li><strong>Review your contracts.</strong> Standard employment-style contracts will get you into trouble. Your contractor agreements should reflect genuine self-employment: right of substitution, no guaranteed hours, no holiday or sick pay, the contractor provides their own equipment.</li>
 <li><strong>Separate your contractors from your employees.</strong> Do not invite contractors to team social events. Do not give them company email addresses. Do not include them in performance reviews. The more you treat them like employees, the harder it is to argue they are outside IR35.</li>
-<li><strong>Get professional advice</strong> on borderline cases. If you are unsure, pay for a proper IR35 review. Our <a href="/services">ICAEW qualified team</a> can review your contractor arrangements and give you a clear recommendation.</li>
+<li><strong>Get professional advice</strong> on borderline cases. If you are unsure, pay for a proper IR35 review. Our <a href="/services">specialist team</a> can review your contractor arrangements and give you a clear recommendation.</li>
 </ol>
 
 <h2>IR35 and Your Agency's Financial Planning</h2>

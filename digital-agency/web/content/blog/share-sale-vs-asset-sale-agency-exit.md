@@ -22,7 +22,7 @@ faqs: []
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- A share sale qualifies for Business Asset Disposal Relief (BADR) at 18% on the first £1m of gains, rising to 18% from 6 April 2026.
+- A share sale qualifies for Business Asset Disposal Relief (BADR) at 14% on the first £1m of gains for disposals 6 April 2025 to 5 April 2026 (18% from 6 April 2026).
 - An asset sale leaves the company as a shell; you extract proceeds via a capital distribution, often taxed at 20% above the BADR limit.
 - Buyers typically prefer asset sales to avoid inheriting the company's liabilities, tax history, and employment contracts.
 - On a £1.26m share sale with BADR, the founder keeps over £1.1m after tax, versus a potentially higher tax bill on an asset sale.
@@ -168,7 +168,7 @@ keyTakeaways:
 
 <p>Do not rely on the buyer's lawyers to explain the implications. They work for the buyer. Your interests are not aligned. Engage your own corporate finance adviser and a tax-specialist accountant.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we see the same pattern repeatedly. Founders who involve us six months before a sale have far more options than those who call us after the heads of terms are signed.</p>
+<p>Working exclusively with agency founders, we see the same pattern repeatedly. Founders who involve us six months before a sale have far more options than those who call us after the heads of terms are signed.</p>
 
 <h2>The Negotiation Use Points</h2>
 

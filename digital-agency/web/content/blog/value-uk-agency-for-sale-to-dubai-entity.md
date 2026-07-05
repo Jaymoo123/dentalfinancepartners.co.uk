@@ -80,13 +80,13 @@ keyTakeaways:
 <li>A comparability analysis showing how the price compares to arm’s length transactions</li>
 <li>A conclusion stating the arm’s length price</li>
 </ul>
-<p>You don’t need a full OECD-compliant transfer pricing report for every transaction. But for a sale worth over £500k, HMRC will expect a professional analysis. As <a href="/">ICAEW qualified accountants</a>, we recommend commissioning a transfer pricing specialist if the deal is material. It’s cheaper than a HMRC enquiry.</p>
+<p>You don’t need a full OECD-compliant transfer pricing report for every transaction. But for a sale worth over £500k, HMRC will expect a professional analysis. As <a href="/">specialist agency accountants</a>, we recommend commissioning a transfer pricing specialist if the deal is material. It’s cheaper than a HMRC enquiry.</p>
 
 <h2>The Tax Consequences of Selling to a Dubai Entity</h2>
 
 <p>Selling your agency to a Dubai entity triggers UK tax. The key points:</p>
 <ul>
-<li><strong>Capital Gains Tax</strong>, if you sell shares personally, you’ll pay CGT on the gain. The current rate for basic rate taxpayers is 18% (24% for higher rate). If you qualify for Business Asset Disposal Relief (BADR), the rate is 18% for 2025/26, rising to 18% from April 2026. The £1m lifetime limit applies.</li>
+<li><strong>Capital Gains Tax</strong>, if you sell shares personally, you’ll pay CGT on the gain. The current rate for basic rate taxpayers is 18% (24% for higher rate). If you qualify for Business Asset Disposal Relief (BADR), the rate is 14% for 2025/26, rising to 18% from 6 April 2026. The £1m lifetime limit applies.</li>
 <li><strong>Corporation Tax</strong>, if the agency itself sells its trade and assets to the Dubai entity, the gain is subject to corporation tax at 19% or 25%, depending on profit level.</li>
 <li><strong>Stamp Duty</strong>, on share purchases over £1,000, 0.5% stamp duty applies.</li>
 </ul>

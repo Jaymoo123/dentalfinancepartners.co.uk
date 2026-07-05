@@ -82,7 +82,7 @@ keyTakeaways:
 
 <p>A decent accountant handling all of this for a small agency typically charges £1,200-£2,500 per year. For agencies turning over £250k+ with multiple directors, contractors, and complex revenue streams, expect £3,000-£4,500.</p>
 
-<p>At Agency Founder Finance, we are ICAEW qualified accountants who work exclusively with agency founders. Our fees reflect the complexity of agency finances, retainer billing, project accounting, contractor payments, and international clients. We do not offer a £49-per-month service because agency accounts are not that simple.</p>
+<p>At Agency Founder Finance, we work exclusively with agency founders. Our fees reflect the complexity of agency finances, retainer billing, project accounting, contractor payments, and international clients. We do not offer a £49-per-month service because agency accounts are not that simple.</p>
 
 <h3>Payroll and pension: £200-£600 per year</h3>
 
@@ -215,7 +215,7 @@ keyTakeaways:
 
 <p>Incorporation is not a magic bullet. It is a structural choice with real costs and real benefits. For most agency founders turning over £150,000 or more, the benefits outweigh the costs. But you should go in with your eyes open, not because a LinkedIn post told you to "get a Ltd co."</p>
 
-<p>If you want to talk through your specific numbers, our ICAEW qualified team at Agency Founder Finance works exclusively with agency founders. We know how agency finances work, retainer vs project, contractor costs, international clients, and exit planning. <a href="/contact">Get in touch</a> and we will run the comparison for your agency.</p>
+<p>If you want to talk through your specific numbers, our team at Agency Founder Finance works exclusively with agency founders. We know how agency finances work, retainer vs project, contractor costs, international clients, and exit planning. <a href="/contact">Get in touch</a> and we will run the comparison for your agency.</p>
 
 <h2>Related articles in Incorporation and Structure</h2>
 <ul>

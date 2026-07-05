@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
 metaTitle: 'Salary Dividend Split Agency: Pension Strategy for Founders'
-metaDescription: Optimise your salary dividend split agency founders use, integrated with pension contributions. Real numbers for a £120k profit agency. ICAEW guidance.
+metaDescription: Optimise your salary dividend split agency founders use, integrated with pension contributions. Real numbers for a £120k profit agency.
 altText: Agency founder reviewing salary and dividend split with pension contribution calculations on a laptop in a London office
 image: /blog/salary-dividend-split-agency-pension-contributions.jpg
 imageCredit:
@@ -155,7 +155,7 @@ keyTakeaways:
 
 <p><strong>Step 5: Monitor your directors' loan account.</strong> If you take dividends before the company has sufficient retained profits, you create a directors' loan account debit. That can trigger a section 455 tax charge at 35.75% if not repaid within nine months of the year end. Only declare dividends from distributable reserves.</p>
 
-<p>If your agency structure is more complex, perhaps you have a holding company or multiple trading subsidiaries, the strategy changes. <a href="/services">Speak to our ICAEW qualified team</a> for a structure-specific review.</p>
+<p>If your agency structure is more complex, perhaps you have a holding company or multiple trading subsidiaries, the strategy changes. <a href="/services">Speak to our specialist team</a> for a structure-specific review.</p>
 
 <h2>Common Mistakes Agency Founders Make</h2>
 

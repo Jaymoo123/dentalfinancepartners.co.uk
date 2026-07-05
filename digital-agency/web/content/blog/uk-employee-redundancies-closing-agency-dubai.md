@@ -172,7 +172,7 @@ keyTakeaways:
 
 <h2>How We Can Help</h2>
 
-<p>As <a href="/about">ICAEW qualified accountants</a> working exclusively with agency founders, we regularly help agency owners plan their exit from the UK. We work alongside employment solicitors to ensure the redundancy process is handled correctly, and we can help you structure your Dubai move tax-efficiently once the UK business is closed.</p>
+<p>As <a href="/about">specialist agency accountants</a> working exclusively with agency founders, we regularly help agency owners plan their exit from the UK. We work alongside employment solicitors to ensure the redundancy process is handled correctly, and we can help you structure your Dubai move tax-efficiently once the UK business is closed.</p>
 
 <p>If you are planning to close your UK agency and move to Dubai, <a href="/contact">get in touch</a>. We will help you map out the redundancy process, the company closure, and the personal tax implications of your move. Do not leave your employees' rights to chance.</p>
 

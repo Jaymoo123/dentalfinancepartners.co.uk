@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Non-Dom Rules 2025: Save Agency Foreign Profits from UK Tax'
 metaDescription: The 2025 non-dom reforms create a 4-year window for foreign income exemption. UK agency founders with overseas clients need to act before 6 April 2025.
-altText: ICAEW qualified accountant reviewing tax documents with agency founder in modern London office overlooking the city
+altText: specialist agency accountant reviewing tax documents with agency founder in modern London office overlooking the city
 image: /blog/uk-non-dom-rules-2025-foreign-profits-agency.jpg
 imageCredit:
   photographer: Markus Winkler
@@ -70,7 +70,7 @@ keyTakeaways:
 <h3>1. You may need to restructure your agency</h3>
 <p>If you have a UK company that invoices overseas clients, those profits are already subject to UK corporation tax. The non-dom rules primarily affect personal income, not corporate profits. But if you earn foreign income personally, through a foreign company, or through a partnership, the new rules bring that income into the UK tax net.</p>
 
-<p>Some founders hold their agency through a foreign company. Under the new rules, the foreign company's profits could be attributed to you personally if you control it and are UK resident. That is a complex area called the "transparent entity" rules, and it requires specific advice from an ICAEW qualified accountant who understands both UK and international tax.</p>
+<p>Some founders hold their agency through a foreign company. Under the new rules, the foreign company's profits could be attributed to you personally if you control it and are UK resident. That is a complex area called the "transparent entity" rules, and it requires specific advice from an specialist agency accountant who understands both UK and international tax.</p>
 
 <h3>2. You may need to consider relocation</h3>
 <p>If your 4-year window has expired or is about to expire, and you have substantial foreign income, relocating outside the UK for a period may be the only way to protect those profits from UK tax. The new rules include a "temporary non-residence" provision: if you leave the UK for 5 years or more, you can reset your residence status and potentially qualify for a new 4-year exemption if you return.</p>
@@ -98,11 +98,11 @@ keyTakeaways:
 <li><strong>Evaluate relocation.</strong> If your 4-year window has expired, leaving the UK before 6 April 2025 for a period of 5 years may be the only way to protect your foreign income. This is a big decision, but for some founders it is the right one.</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we work with agency founders in exactly these situations. We can help you model the tax impact of staying versus leaving, and structure your affairs to minimise your tax liability within the law.</p>
+<p>Working exclusively with agency founders, we work with agency founders in exactly these situations. We can help you model the tax impact of staying versus leaving, and structure your affairs to minimise your tax liability within the law.</p>
 
 <h2>The Interaction with Agency Structures and BADR</h2>
 
-<p>There is another layer to consider. If you relocate outside the UK and sell your agency shares later, the UK's Business Asset Disposal Relief (BADR) may still apply. BADR gives a 18% CGT rate on the first £1 million of gains (rising to 18% from April 2026). But the relief requires you to be an officer or employee of the company and hold 5% of the shares for at least 2 years.</p>
+<p>There is another layer to consider. If you relocate outside the UK and sell your agency shares later, the UK's Business Asset Disposal Relief (BADR) may still apply. BADR gives a 14% CGT rate for disposals 6 April 2025 to 5 April 2026 (18% from 6 April 2026) on the first £1 million of gains. But the relief requires you to be an officer or employee of the company and hold 5% of the shares for at least 2 years.</p>
 
 <p>If you leave the UK and become non-resident, you may still qualify for BADR if you meet the conditions at the time of sale. But the interaction between non-residence and BADR is complex. You need to plan the sale timing carefully.</p>
 

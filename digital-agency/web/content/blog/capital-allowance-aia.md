@@ -43,7 +43,7 @@ imageCredit:
 
 <p>You can only claim the AIA in the period you bought the item <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. You cannot spread it across multiple years. If you miss the window, you lose the relief for that asset (though you can still claim writing down allowances at a lower rate).</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we see this relief overlooked more often than you would expect. A 12-person digital agency billing £800k per year might spend £15k on laptops and monitors in a single quarter. That £15k is deductible in full if claimed correctly.</p>
+<p>Working exclusively with agency founders, we see this relief overlooked more often than you would expect. A 12-person digital agency billing £800k per year might spend £15k on laptops and monitors in a single quarter. That £15k is deductible in full if claimed correctly.</p>
 
 <h2>How the AIA Works in Practice</h2>
 

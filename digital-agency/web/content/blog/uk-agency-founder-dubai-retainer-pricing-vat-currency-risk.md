@@ -126,7 +126,7 @@ keyTakeaways:
 
 <p>UAE VAT is simpler than UK VAT in many ways. The rate is 5%. Filing is quarterly. But you need to get it right from day one. If you charge 0% to a UK client, you need the correct documentation to support that treatment. Otherwise, the UAE tax authority could assess you for the VAT.</p>
 
-<p>Work with a UAE tax agent or an accountant who understands both UK and UAE regimes. As <a href="/about">ICAEW qualified accountants</a> with a focus on agency founders, we see this mistake regularly. Founders assume VAT is VAT. It is not.</p>
+<p>Work with a UAE tax agent or an accountant who understands both UK and UAE regimes. As <a href="/about">specialist agency accountants</a> with a focus on agency founders, we see this mistake regularly. Founders assume VAT is VAT. It is not.</p>
 
 <h2>What About Your UK VAT Registration?</h2>
 

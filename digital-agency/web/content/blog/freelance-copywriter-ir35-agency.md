@@ -139,7 +139,7 @@ faqs:
 
 <p>The tool is directional. It is not definitive. And it is notoriously unreliable for creative roles. The questions are designed with IT contractors in mind. A copywriter who works to a brief and cannot send a substitute will often get an "inside" result even if the real-world arrangement is genuinely self-employed.</p>
 
-<p>Use CEST as a starting point. Then get a professional review from an accountant who understands creative freelancers. Our ICAEW qualified team at Agency Founder Finance reviews IR35 determinations regularly. We can tell you whether the tool's conclusion matches the reality of your engagement.</p>
+<p>Use CEST as a starting point. Then get a professional review from an accountant who understands creative freelancers. Our team at Agency Founder Finance reviews IR35 determinations regularly. We can tell you whether the tool's conclusion matches the reality of your engagement.</p>
 
 <p>If CEST says "inside", you should usually accept that result and operate the engagement through payroll. If CEST says "outside", do not stop there. Check the reasoning. Make sure the contract and working practices match.</p>
 

@@ -95,7 +95,7 @@ keyTakeaways:
 <li><strong>File your corporate tax return on time.</strong> The UAE corporate tax return is due within 9 months of your financial year end. Late filing carries penalties.</li>
 <li><strong>Get audited financial statements.</strong> Free zone entities must have their accounts audited by a UAE-registered auditor. This is not optional.</li>
 </ul>
-<p>As <a href="/about">ICAEW qualified accountants</a> specialising in agency finance, we review these structures regularly. The most common failure point is substance. Founders try to run a Dubai entity from the UK. That approach rarely survives scrutiny.</p>
+<p>As <a href="/about">specialist agency accountants</a> specialising in agency finance, we review these structures regularly. The most common failure point is substance. Founders try to run a Dubai entity from the UK. That approach rarely survives scrutiny.</p>
 
 <h2>What About Your UK Tax Position?</h2>
 <p>If your free zone agency is genuinely managed and controlled from the UAE, it should not be UK tax resident. That means you do not pay UK corporation tax on its profits. But you must be able to prove this to HMRC if asked.</p>

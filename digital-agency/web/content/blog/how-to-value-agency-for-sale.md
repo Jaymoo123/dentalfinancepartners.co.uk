@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Agency Valuation UK: Sell Your Agency at Top Price'
 metaDescription: How to value a marketing, digital, or creative agency for sale in the UK. Real multiples, EBITDA adjustments, and steps to maximise your exit price.
-altText: UK agency founder reviewing financial documents with ICAEW qualified accountant in a modern office
+altText: UK agency founder reviewing financial documents with specialist agency accountant in a modern office
 image: /blog/how-to-value-agency-for-sale.jpg
 imageCredit:
   photographer: Ann H
@@ -122,7 +122,7 @@ keyTakeaways:
 
 <p>Get your accounts up to date. Clear the director's loan account. Separate personal and business costs. Use accounting software like Xero or QuickBooks and keep it reconciled monthly.</p>
 
-<p>As ICAEW qualified accountants, we see deals fall apart at due diligence because the seller's records do not match the narrative. Do not let that be you.</p>
+<p>Working exclusively with agency founders, we see deals fall apart at due diligence because the seller's records do not match the narrative. Do not let that be you.</p>
 
 <h2>What Buyers Actually Look For</h2>
 
@@ -189,7 +189,7 @@ keyTakeaways:
 
 <p>If you are serious about selling, get a valuation done 12-18 months before you plan to list. That gives you time to fix the weak spots and maximise the price.</p>
 
-<p>Our team at Agency Founder Finance works with agency founders on exit planning. We are ICAEW qualified accountants who understand the agency model. <a href="/contact">Get in touch</a> if you want a confidential conversation about your agency's value.</p>
+<p>Our team at Agency Founder Finance works with agency founders on exit planning. We work exclusively with agency founders who understand the agency model. <a href="/contact">Get in touch</a> if you want a confidential conversation about your agency's value.</p>
 
 <h2>Final Thoughts</h2>
 

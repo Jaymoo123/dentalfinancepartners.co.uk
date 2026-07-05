@@ -142,7 +142,7 @@ keyTakeaways:
 
 <p>On the corporation tax side, the Dubai entity will be subject to UAE corporate tax (9% on profits above AED 375,000 from June 2023). But if the Dubai entity has a UK permanent establishment (a fixed place of business, a UK office, or a UK-based team), those profits are taxable in the UK too.</p>
 
-<p>This is where a holding company structure can help. If you own both the UK and Dubai entities through a holding company, you can manage profit distribution and tax liabilities more efficiently. Our team at Agency Founder Finance can advise on that structure. We are <a href="/about">ICAEW qualified accountants</a> with experience in UK-UAE agency migrations.</p>
+<p>This is where a holding company structure can help. If you own both the UK and Dubai entities through a holding company, you can manage profit distribution and tax liabilities more efficiently. Our team at Agency Founder Finance can advise on that structure. We work exclusively with agency founders with experience in UK-UAE agency migrations.</p>
 
 <h2>What to Do If a Client Refuses</h2>
 

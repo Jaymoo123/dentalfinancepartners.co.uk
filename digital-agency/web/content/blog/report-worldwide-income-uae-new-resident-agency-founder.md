@@ -50,7 +50,7 @@ keyTakeaways:
 
 <p>Why does the FTA want this? Because the UAE is subject to international tax transparency standards under the Common Reporting Standard (CRS). The UAE exchanges financial account information with other countries, including the UK. If you hold UK bank accounts, investment accounts, or a UK company that pays you dividends, HMRC will know about them. The FTA wants to see that you have declared those correctly.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we see more FTA queries each year. The question is no longer "will they ask?" but "can you prove it?"</p>
+<p>Working exclusively with agency founders, we see more FTA queries each year. The question is no longer "will they ask?" but "can you prove it?"</p>
 
 <h2>What You Actually Need to Report to the UAE</h2>
 
@@ -93,7 +93,7 @@ keyTakeaways:
 
 <p><strong>Option 2: Set up a UAE free zone company.</strong> Many agency founders establish a UAE free zone entity (in DIFC, ADGM, or a mainland free zone) and move their client contracts to the new entity. This can be tax-efficient if done correctly, but it requires careful planning. You need to transfer your client relationships, IP, and contracts. The UK company may still have tax liabilities on the transfer. You also need to consider VAT, if your UK agency is VAT-registered and you move clients to a UAE entity, you may create cross-border VAT issues.</p>
 
-<p><strong>Option 3: Wind down the UK company and operate solely from the UAE.</strong> This is the cleanest option but takes time. You need to settle all UK liabilities, distribute remaining profits, and file final accounts. You then apply for BADR (Business Asset Disposal Relief) on the share sale, which gives you a 18% CGT rate for disposals before 6 April 2025, rising to 18% from 6 April 2026. You need to hold the shares for at least 2 years before disposal. If you are planning this, start the process 12-18 months before you move.</p>
+<p><strong>Option 3: Wind down the UK company and operate solely from the UAE.</strong> This is the cleanest option but takes time. You need to settle all UK liabilities, distribute remaining profits, and file final accounts. You then apply for BADR (Business Asset Disposal Relief) on the share sale, which gives you a 14% CGT rate for disposals from 6 April 2025 to 5 April 2026, rising to 18% from 6 April 2026. You need to hold the shares for at least 2 years before disposal. If you are planning this, start the process 12-18 months before you move.</p>
 
 <p>Each option has different implications for how you report worldwide income to the UAE as a new resident. Option 1 means you report UK dividends. Option 2 means you report UAE company profits and possibly UK residual income. Option 3 means you report a capital gain (if any) and then ongoing UAE-source income only.</p>
 

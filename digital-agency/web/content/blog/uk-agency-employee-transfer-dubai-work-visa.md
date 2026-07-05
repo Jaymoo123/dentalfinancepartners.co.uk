@@ -40,7 +40,7 @@ keyTakeaways:
 
 <p>Then you start looking into the paperwork. And you realise that transferring a UK employee to a Dubai free zone is not a simple relocation. It is a legal, tax, and immigration puzzle that most accountants cannot solve because they only know one side of the equation.</p>
 
-<p>As ICAEW qualified accountants working with agency founders on both sides of this move, we see the same mistakes repeatedly. Founders assume their employees can just "transfer" their employment. They cannot. The <strong>uk agency employee transfer dubai work visa</strong> process is different from what you expect, and getting it wrong costs time, money, and sometimes your team.</p>
+<p>As specialist agency accountants working with agency founders on both sides of this move, we see the same mistakes repeatedly. Founders assume their employees can just "transfer" their employment. They cannot. The <strong>uk agency employee transfer dubai work visa</strong> process is different from what you expect, and getting it wrong costs time, money, and sometimes your team.</p>
 
 <h2>The Free Zone Visa Quota Problem</h2>
 
@@ -116,7 +116,7 @@ keyTakeaways:
 
 <p>Document the commercial reasons for the move. Document the roles and responsibilities of each entity. Document how the employees' work changes post-relocation. If an employee does the same job for the same clients from a Dubai beach, HMRC will argue the move has no commercial substance. You need to show that the Dubai entity has real operational activity, real clients, real management, and real decision-making.</p>
 
-<p>This is where working with an ICAEW qualified accountant who understands both UK and UAE tax is critical. We see agency founders set up Dubai entities that are shell companies on paper, then wonder why HMRC opens an enquiry. Do not be that person.</p>
+<p>This is where working with an specialist agency accountant who understands both UK and UAE tax is critical. We see agency founders set up Dubai entities that are shell companies on paper, then wonder why HMRC opens an enquiry. Do not be that person.</p>
 
 <h2>Healthcare and Insurance</h2>
 

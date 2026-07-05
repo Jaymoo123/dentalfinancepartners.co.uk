@@ -170,7 +170,7 @@ keyTakeaways:
 
 <h2>What to Do If You Are Unsure</h2>
 
-<p>If your copywriter engagement falls somewhere between these two scenarios, you need to take advice before the engagement starts. As ICAEW qualified accountants, we review IR35 status for agency clients regularly. We look at your contract, your working practices, and your specific facts. We then issue a written opinion that you can rely on for your SDS.</p>
+<p>If your copywriter engagement falls somewhere between these two scenarios, you need to take advice before the engagement starts. Working exclusively with agency founders, we review IR35 status for agency clients regularly. We look at your contract, your working practices, and your specific facts. We then issue a written opinion that you can rely on for your SDS.</p>
 
 <p>If your contractor mix has changed in the last 12 months, or if you have copywriters on rolling retainers that have been running for more than a year, ask your accountant before year-end. The cost of a professional review is a fraction of the cost of an HMRC enquiry.</p>
 

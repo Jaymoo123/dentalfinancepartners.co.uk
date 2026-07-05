@@ -166,7 +166,7 @@ faqs:
 <li>You are selling digital services directly to UAE consumers (B2C)</li>
 </ul>
 
-<p>In any of these cases, the place of supply rules can shift. You need bespoke advice from an accountant who understands both UK VAT and UAE VAT. As <a href="/about">ICAEW qualified accountants</a>, we work with agency founders in both jurisdictions. We can help you set up the correct processes and review your existing cross-border invoices.</p>
+<p>In any of these cases, the place of supply rules can shift. You need bespoke advice from an accountant who understands both UK VAT and UAE VAT. Working exclusively with agency founders, we work with agency founders in both jurisdictions. We can help you set up the correct processes and review your existing cross-border invoices.</p>
 
 <p>If you are unsure whether your current VAT treatment is correct, start with your most recent inter-company invoice. Ask yourself: where is the customer established? Is it B2B or B2C? If the answer is B2B and the customer is in a different country, the reverse charge should apply. If you have been charging VAT, you may need to correct it.</p>
 

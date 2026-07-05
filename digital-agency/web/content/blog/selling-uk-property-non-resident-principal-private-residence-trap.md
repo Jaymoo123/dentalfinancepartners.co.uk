@@ -147,7 +147,7 @@ keyTakeaways:
 
 <p>For a property that was your home, individual ownership is almost always better for tax purposes. The PPR relief trap exists, but the tax rate on the chargeable gain (18-24%) is still lower than the effective rate through a company (25% corporation tax plus dividend tax).</p>
 
-<p>If you are considering a holding company structure for multiple properties or your agency, speak to an accountant who understands both UK property tax and agency structures. As ICAEW qualified accountants, we see founders make this mistake regularly.</p>
+<p>If you are considering a holding company structure for multiple properties or your agency, speak to an accountant who understands both UK property tax and agency structures. Working exclusively with agency founders, we see founders make this mistake regularly.</p>
 
 <h2>Practical Steps Before You Sell</h2>
 <ol>

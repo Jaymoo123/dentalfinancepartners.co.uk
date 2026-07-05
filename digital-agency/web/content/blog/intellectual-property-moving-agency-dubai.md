@@ -100,7 +100,7 @@ keyTakeaways:
 
 <p>The directors' loan account also comes into play. If the Dubai entity pays the UK company for the IP, that's straightforward. If the UK company transfers the IP for shares in the Dubai entity, you need to value the shares correctly. HMRC will challenge undervaluation.</p>
 
-<p>As ICAEW qualified accountants, we recommend getting a formal valuation of your IP before any transfer. A chartered surveyor or IP valuation specialist can produce a report that HMRC will accept. Budget £3,000-£8,000 for a proper valuation.</p>
+<p>Working exclusively with agency founders, we recommend getting a formal valuation of your IP before any transfer. A chartered surveyor or IP valuation specialist can produce a report that HMRC will accept. Budget £3,000-£8,000 for a proper valuation.</p>
 
 <h2>What Happens If You Don't Do This Properly</h2>
 
@@ -135,7 +135,7 @@ keyTakeaways:
 
 <h2>How Agency Founder Finance Can Help</h2>
 
-<p>We work with agency founders moving to Dubai every month. Our ICAEW qualified team handles the UK tax side of IP transfers, including corporation tax clearance, valuation review, and directors' loan account management. We don't do the legal work, but we coordinate with your IP solicitor to make sure the numbers stack up for HMRC.</p>
+<p>We work with agency founders moving to Dubai every month. Our specialist team handles the UK tax side of IP transfers, including corporation tax clearance, valuation review, and directors' loan account management. We don't do the legal work, but we coordinate with your IP solicitor to make sure the numbers stack up for HMRC.</p>
 
 <p>If your contractor mix has changed in the last 12 months, or if you've used freelancers without written agreements, ask your accountant before you start the IP transfer process. The retrospective assignments can take longer than you expect.</p>
 

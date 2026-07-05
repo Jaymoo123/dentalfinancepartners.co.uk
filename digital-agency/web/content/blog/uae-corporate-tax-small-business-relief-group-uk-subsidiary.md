@@ -126,9 +126,9 @@ keyTakeaways:
 
 <p>That said, if you are planning a full exit, the structure matters. If you want to use Business Asset Disposal Relief (BADR) on your UK shares, you need to hold them for two years. Restructuring now could affect that. Talk to your accountant before making any changes.</p>
 
-<h2>How ICAEW Qualified Accountants Can Help</h2>
+<h2>How a Specialist Agency Accountant Can Help</h2>
 
-<p>At Agency Founder Finance, we are ICAEW qualified accountants who work exclusively with agency founders. We understand both UK and UAE tax. We see agency groups caught by this trap every quarter.</p>
+<p>At Agency Founder Finance, we work exclusively with agency founders. We understand both UK and UAE tax. We see agency groups caught by this trap every quarter.</p>
 
 <p>If you have a UAE entity and a UK subsidiary, we can review your group structure, calculate your group revenue, and tell you whether you qualify for Small Business Relief. We can also help with the full Corporate Tax return if you do not qualify.</p>
 

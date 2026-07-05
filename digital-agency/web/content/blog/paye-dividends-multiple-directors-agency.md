@@ -189,7 +189,7 @@ keyTakeaways:
 
 <p>What you can do is consider a different share structure. For example, issue non-voting shares to a spouse who is a basic rate taxpayer. But this only works if the spouse genuinely owns the shares and bears the economic risk. HMRC's settlements legislation (often called "income shifting") prevents you from simply giving shares to a lower-taxed family member to avoid tax.</p>
 
-<p>If this applies to your agency, speak to an ICAEW qualified accountant who understands agency structures before making changes.</p>
+<p>If this applies to your agency, speak to an specialist agency accountant who understands agency structures before making changes.</p>
 
 <h2>When to Review Your PAYE and Dividend Structure</h2>
 

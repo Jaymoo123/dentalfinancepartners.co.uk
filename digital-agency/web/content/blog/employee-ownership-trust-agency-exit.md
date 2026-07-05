@@ -195,7 +195,7 @@ keyTakeaways:
 
 <p>You need a solicitor who has done EOT work before, ideally several times. You need an accountant who understands the tax rules and can model the cash flow implications. And you need an independent valuer who knows how to price an agency.</p>
 
-<p>As ICAEW qualified accountants, we work with agency founders on exit planning, including EOT structures. We can help you assess whether an EOT fits your situation and connect you with the right legal and valuation specialists.</p>
+<p>Working exclusively with agency founders, we work with agency founders on exit planning, including EOT structures. We can help you assess whether an EOT fits your situation and connect you with the right legal and valuation specialists.</p>
 
 <p>If you are thinking about your exit, whether through an EOT, a trade sale, or a management buyout, start the conversation early. Exit planning takes time, and the best outcomes come from preparation, not last-minute decisions.</p>
 

@@ -152,11 +152,11 @@ keyTakeaways:
 
 <p>For a full breakdown of the conditions, read our guide on <a href="/blog/growth-and-exit">growth and exit planning for agency founders</a>.</p>
 
-<h2>Working With an ICAEW Qualified Accountant on Your Exit</h2>
+<h2>Working With a Specialist Agency Accountant on Your Exit</h2>
 
 <p>BADR is one of those areas where the difference between good advice and great advice is measured in six figures. A generic accountant will tell you the 2-year rule exists. A specialist who works with agency founders will help you structure your shareholding from day one to preserve the relief.</p>
 
-<p>At Agency Founder Finance, we are ICAEW qualified accountants who work exclusively with agency founders. We see these holding period traps regularly. We help founders plan their exits years in advance, not weeks before.</p>
+<p>At Agency Founder Finance, we work exclusively with agency founders. We see these holding period traps regularly. We help founders plan their exits years in advance, not weeks before.</p>
 
 <p>If you are thinking about selling your agency, or if you have recently issued shares and want to check your BADR position, <a href="/contact">get in touch</a>. We can review your share structure and tell you exactly where you stand.</p>
 

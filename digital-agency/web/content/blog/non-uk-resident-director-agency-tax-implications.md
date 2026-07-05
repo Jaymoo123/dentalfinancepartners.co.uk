@@ -139,7 +139,7 @@ keyTakeaways:
 <li><strong>Check the double tax treaty.</strong> If the director is from a treaty country, understand how the treaty allocates taxing rights. If not, expect double taxation.</li>
 <li><strong>Update your payroll processes.</strong> Ensure your payroll software can handle apportioned salaries and non-resident reporting. Xero and QuickBooks can do this, but you need to set it up correctly.</li>
 <li><strong>Review your director's loan account.</strong> If the non-resident director borrows from the company, have a formal loan agreement with repayment terms. Enforce them.</li>
-<li><strong>Get professional advice.</strong> This is not a DIY area. The interaction of UK tax law, double tax treaties, and international payroll is complex. As ICAEW qualified accountants, we see too many agencies get this wrong and face significant tax bills.</li>
+<li><strong>Get professional advice.</strong> This is not a DIY area. The interaction of UK tax law, double tax treaties, and international payroll is complex. Working exclusively with agency founders, we see too many agencies get this wrong and face significant tax bills.</li>
 </ol>
 
 <h2>What Happens If You Get It Wrong?</h2>

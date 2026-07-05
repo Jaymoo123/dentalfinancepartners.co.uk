@@ -174,7 +174,7 @@ keyTakeaways:
 
 <p>Beyond the regulatory risk, there is a commercial angle. When you eventually sell your agency, the buyer will conduct due diligence. Data protection compliance will be on their checklist. If you cannot demonstrate it, they will discount the purchase price or walk away.</p>
 
-<p>As ICAEW qualified accountants, we see this regularly in agency transactions. The compliance gap reduces value. Fixing it before you sell means a cleaner process and a higher price.</p>
+<p>Working exclusively with agency founders, we see this regularly in agency transactions. The compliance gap reduces value. Fixing it before you sell means a cleaner process and a higher price.</p>
 
 <p>If you are planning an exit, or even just building for long-term value, get your data protection house in order now. It costs less to do it proactively than to fix it under pressure from a client audit or an ICO investigation.</p>
 

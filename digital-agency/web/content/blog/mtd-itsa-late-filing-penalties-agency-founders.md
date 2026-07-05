@@ -36,7 +36,7 @@ keyTakeaways:
 
 <p>The key change is not just that you file quarterly. It is that the penalty system changes completely. The old system of a single £100 late filing penalty, with escalating daily fines after three months, is gone. In its place is a point-based penalty regime that is less forgiving and easier to trigger by accident.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we have been following the MTD ITSA rollout closely. This article covers the penalty structure, the deadlines, and what you need to do to avoid fines.</p>
+<p>Working exclusively with agency founders, we have been following the MTD ITSA rollout closely. This article covers the penalty structure, the deadlines, and what you need to do to avoid fines.</p>
 
 <h2>The Old Penalty System vs the New Point-Based System</h2>
 

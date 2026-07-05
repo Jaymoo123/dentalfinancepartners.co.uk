@@ -144,7 +144,7 @@ keyTakeaways:
 
 <p>If you are an <a href="/agencies/digital-agencies">agency founder</a> with a growing international client base, you should also consider whether your current accounting software handles multi-currency invoicing and outside-the-scope VAT codes correctly. If it does not, you may need to upgrade or add a manual workaround.</p>
 
-<p>At <a href="/about">Agency Founder Finance</a>, we are ICAEW qualified accountants who work exclusively with agency founders. We deal with international VAT questions like this regularly. If your client base includes Australian businesses or consumers, we can help you set up your VAT reporting correctly from day one.</p>
+<p>At <a href="/about">Agency Founder Finance</a>, we work exclusively with agency founders. We deal with international VAT questions like this regularly. If your client base includes Australian businesses or consumers, we can help you set up your VAT reporting correctly from day one.</p>
 
 <p>The rules are clear. Get the paperwork right, record the sale in the correct boxes, and you will have no issues with HMRC. Get it wrong, and you could face a VAT assessment, penalties, or a messy correction process. It is worth spending 30 minutes to get it right.</p>
 

@@ -63,7 +63,7 @@ keyTakeaways:
 
 <p>The problem is that many recruitment agencies have historically treated all contractors as outside IR35, relying on blanket determinations or simply not asking the right questions. HMRC has been issuing "nudge letters" to recruitment agencies since 2022, and we are now seeing full compliance reviews and tax bills running into six figures.</p>
 
-<p>As ICAEW qualified accountants, we have seen cases where a recruitment agency with 30 contractors on its books received a retrospective bill for £340,000 in unpaid tax and penalties. That is the kind of liability that can put an agency out of business.</p>
+<p>Working exclusively with agency founders, we have seen cases where a recruitment agency with 30 contractors on its books received a retrospective bill for £340,000 in unpaid tax and penalties. That is the kind of liability that can put an agency out of business.</p>
 
 <h2>Your Responsibilities as a Recruitment Agency</h2>
 

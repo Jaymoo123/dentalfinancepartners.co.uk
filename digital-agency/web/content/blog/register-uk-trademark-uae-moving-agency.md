@@ -141,7 +141,7 @@ keyTakeaways:
 
 <p>You also need to use the mark in commerce. UAE trademark law allows a third party to file for cancellation of a mark that has not been used for five consecutive years. If you register your mark but never trade under it in the UAE, you risk losing it.</p>
 
-<p>As an ICAEW qualified firm working with agency founders, we see the trademark issue come up most often during exit planning. A buyer wants clean IP ownership across all jurisdictions. If your UAE trademark is not registered, or is registered in the wrong entity name, it becomes a due diligence problem. Sort it now, not when you are trying to sell.</p>
+<p>As an agency-specialist firm working with agency founders, we see the trademark issue come up most often during exit planning. A buyer wants clean IP ownership across all jurisdictions. If your UAE trademark is not registered, or is registered in the wrong entity name, it becomes a due diligence problem. Sort it now, not when you are trying to sell.</p>
 
 <h2>When to Speak to a UAE Trademark Agent</h2>
 

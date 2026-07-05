@@ -145,7 +145,7 @@ imageCredit:
 
 <h2>How Agency Founder Finance Can Help</h2>
 
-<p>As ICAEW qualified accountants, we work exclusively with agency founders. We know which assets qualify for AIA and which do not. We also know how to structure your capital allowances claims to maximise relief while staying within HMRC rules.</p>
+<p>Working exclusively with agency founders, we work exclusively with agency founders. We know which assets qualify for AIA and which do not. We also know how to structure your capital allowances claims to maximise relief while staying within HMRC rules.</p>
 
 <p>If you are planning a significant equipment purchase, or if you think you may have missed AIA claims in previous years, <a href="/contact">get in touch</a>. We can review your fixed asset register and identify missed opportunities.</p>
 

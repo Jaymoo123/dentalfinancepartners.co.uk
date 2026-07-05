@@ -122,7 +122,7 @@ imageCredit:
 
 <p><strong>What you need to keep:</strong> The purchase invoice, proof of payment, and a record of business mileage if there is any private use. HMRC can ask for this if they open a compliance check.</p>
 
-<p>If you are unsure about any of this, speak to your accountant. At Agency Founder Finance, we are <a href="/about">ICAEW qualified accountants</a> who work exclusively with agency founders. We handle capital allowance claims as part of our standard compliance work.</p>
+<p>If you are unsure about any of this, speak to your accountant. At Agency Founder Finance, we are <a href="/about">specialist agency accountants</a> who work exclusively with agency founders. We handle capital allowance claims as part of our standard compliance work.</p>
 
 <h2>Common Mistakes Agency Founders Make</h2>
 

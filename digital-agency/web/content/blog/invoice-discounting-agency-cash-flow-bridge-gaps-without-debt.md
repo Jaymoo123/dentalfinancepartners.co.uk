@@ -138,7 +138,7 @@ keyTakeaways:
 
 <p>Check the notice period for termination. Some providers lock you in for 12 months. Others are month-to-month. If your cash flow improves and you no longer need the facility, you do not want to pay fees for six more months.</p>
 
-<p>As ICAEW qualified accountants, we have seen agencies sign up with providers that looked cheap on paper but charged hidden fees for same-day transfers, manual invoice processing, and early termination. Read the contract carefully. If anything is unclear, ask your accountant to review it.</p>
+<p>Working exclusively with agency founders, we have seen agencies sign up with providers that looked cheap on paper but charged hidden fees for same-day transfers, manual invoice processing, and early termination. Read the contract carefully. If anything is unclear, ask your accountant to review it.</p>
 
 <h2>Alternatives to Invoice Discounting</h2>
 
@@ -170,7 +170,7 @@ keyTakeaways:
 
 <p>Third, speak to three providers. Ask for a quote based on your actual invoice profile. Compare the fees, the advance rates, and the contract terms.</p>
 
-<p>Fourth, talk to your accountant. They can review the contract, check the impact on your balance sheet, and advise on whether the facility fits your broader financial plan. If you work with an ICAEW qualified firm like Agency Founder Finance, we can help you model the costs and benefits before you commit.</p>
+<p>Fourth, talk to your accountant. They can review the contract, check the impact on your balance sheet, and advise on whether the facility fits your broader financial plan. If you work with an agency-specialist firm like Agency Founder Finance, we can help you model the costs and benefits before you commit.</p>
 
 <p>Invoice discounting is a tool. Used well, it smooths agency cash flow without adding debt. Used badly, it becomes an expensive crutch. Know your numbers, choose your provider carefully, and use it for what it is: a bridge between work done and cash received.</p>
 

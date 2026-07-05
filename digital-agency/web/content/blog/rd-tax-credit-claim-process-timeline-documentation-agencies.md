@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'R&D Tax Credit Claim Process: Timeline and Documentation'
-metaDescription: Step-by-step guide to the R&D tax credit claim process for UK agencies. Timeline, documentation, and common pitfalls explained by ICAEW qualified
+metaDescription: Step-by-step guide to the R&D tax credit claim process for UK agencies. Timeline, documentation, and common pitfalls explained by agency-specialist
 altText: Agency founder reviewing R&D tax credit documentation with accountant in a modern UK office
 image: https://images.pexels.com/photos/7821476/pexels-photo-7821476.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'R&D Tax Credit Claim Process: Timeline and Documentation for Agencies'
@@ -115,8 +115,8 @@ imageCredit:
 <p>Employers and agencies who use them can become liable for the full unpaid tax/NIC, penalties, and interest, even if the scheme was promoted by a third-party payroll provider. <sup><a href="#ref-4" id="cite-4">[4]</a></sup> These schemes claim to acquire businesses, sometimes those in administration, that allegedly hold unused tax credits with HMRC. HMRC reports that in many cases no taxes are being paid at all. <sup><a href="#ref-4" id="cite-4">[4]</a></sup></p>
 <p>If a promoter offers you access to "tax credits" to reduce your payroll costs, walk away. It is fraud.</p>
 
-<h2>How ICAEW Qualified Accountants Help</h2>
-<p>As ICAEW qualified accountants working exclusively with agency founders, we handle the entire R&D claim process. We identify qualifying projects, prepare the technical report, calculate costs, submit the additional information form, and file the CT600. We also handle HMRC enquiries if they arise.</p>
+<h2>How a Specialist Agency Accountant Helps</h2>
+<p>Working exclusively with agency founders, we handle the entire R&D claim process. We identify qualifying projects, prepare the technical report, calculate costs, submit the additional information form, and file the CT600. We also handle HMRC enquiries if they arise.</p>
 <p>If you are considering an R&D claim, start the conversation early. The documentation is easier to gather while the project is still fresh in your team's minds. Waiting until the year end means you will be reconstructing technical work from memory, which leads to weaker claims.</p>
 <p>We work with <a href="/agencies/digital-agencies">digital agencies</a>, <a href="/agencies/creative-agencies">creative agencies</a>, <a href="/agencies/web-design-agencies">web design agencies</a>, and <a href="/agencies/seo-agencies">SEO agencies</a> across the UK. If your agency has done genuinely technical work, we can help you claim what you are entitled to.</p>
 <p>For more on how we support agency founders, see our <a href="/services">full range of services</a> or <a href="/contact">get in touch</a>.</p>

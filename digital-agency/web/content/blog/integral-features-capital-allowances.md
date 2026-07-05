@@ -127,7 +127,7 @@ imageCredit:
 
 <p>If you have already completed a fit-out and did not claim integral features capital allowances, you can amend your corporation tax return within 12 months of the filing deadline. After that, you may need to make a separate claim outside the return.</p>
 
-<p>At <a href="/services">Agency Founder Finance</a>, we work exclusively with agency founders. Our ICAEW qualified team can help you identify qualifying expenditure and prepare the capital allowances computation for your corporation tax return.</p>
+<p>At <a href="/services">Agency Founder Finance</a>, we work exclusively with agency founders. Our specialist team can help you identify qualifying expenditure and prepare the capital allowances computation for your corporation tax return.</p>
 
 <p>If you are buying or fitting out an office, <a href="/contact">contact us</a> before you exchange contracts. A properly drafted capital allowances election can save you thousands.</p>
 

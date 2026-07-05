@@ -42,7 +42,7 @@ keyTakeaways:
 
 <p>Here is the truth: <strong>R&D tax credits for custom software built for client projects are absolutely claimable</strong>, provided the work meets HMRC's definition of qualifying R&D. The ownership of the intellectual property is not the deciding factor. What matters is whether the project involved resolving technical uncertainty that a competent professional in the field could not readily overcome.</p>
 
-<p>This article explains exactly where the line sits, what HMRC looks for, and how to structure a claim that survives scrutiny. We are ICAEW qualified accountants who work exclusively with agency founders, and we see too many agencies leave this money on the table because of a misunderstanding that is now costing them real cash.</p>
+<p>This article explains exactly where the line sits, what HMRC looks for, and how to structure a claim that survives scrutiny. We work exclusively with agency founders, and we see too many agencies leave this money on the table because of a misunderstanding that is now costing them real cash.</p>
 
 <h2>What HMRC Actually Means by R&D</h2>
 

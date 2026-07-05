@@ -116,7 +116,7 @@ keyTakeaways:
 
 <p>This reduces the volume of currency conversion significantly. You are only converting profit, not revenue. On a 20% net profit margin, that is an 80% reduction in conversion volume. The 3% cost applies to a much smaller number.</p>
 
-<p>This structure requires proper tax advice in both jurisdictions. Transfer pricing rules apply. But for agencies billing over £500k per year, it is worth exploring. Our team at Agency Founder Finance works with ICAEW qualified accountants who can advise on cross-border structures. You can read more about our <a href="/services">services</a> for international agencies.</p>
+<p>This structure requires proper tax advice in both jurisdictions. Transfer pricing rules apply. But for agencies billing over £500k per year, it is worth exploring. Our team at Agency Founder Finance works with specialist agency accountants who can advise on cross-border structures. You can read more about our <a href="/services">services</a> for international agencies.</p>
 
 <h2>What to Do This Week</h2>
 

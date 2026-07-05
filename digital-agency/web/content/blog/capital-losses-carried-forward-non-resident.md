@@ -92,7 +92,7 @@ keyTakeaways:
 
 <p>On that return, you'll declare the gain and claim the losses. HMRC will want to see evidence that the losses were correctly computed and that they have been carried forward correctly. If you haven't been keeping records, now is the time to start.</p>
 
-<p>For agency founders moving to Dubai, this is where working with an accountant who understands both UK and UAE tax rules becomes essential. At <a href="/about">Agency Founder Finance</a>, we're ICAEW qualified accountants who specialise in exactly this transition. We help founders keep their UK tax affairs in order while managing their UAE residence.</p>
+<p>For agency founders moving to Dubai, this is where working with an accountant who understands both UK and UAE tax rules becomes essential. At <a href="/about">Agency Founder Finance</a>, we're specialist agency accountants who specialise in exactly this transition. We help founders keep their UK tax affairs in order while managing their UAE residence.</p>
 
 <h2>What Happens If You Return to the UK?</h2>
 
@@ -130,6 +130,6 @@ keyTakeaways:
 
 <p>If you are an agency founder planning a move to Dubai or any other jurisdiction, get your loss position sorted before you leave. Quantify the losses, document them properly, and understand how they interact with your future plans.</p>
 
-<p>At <a href="/services">Agency Founder Finance</a>, we help agency founders navigate exactly this kind of planning. Our ICAEW qualified team works exclusively with agency founders, so we understand the specific assets, structures, and timelines that matter to you.</p>
+<p>At <a href="/services">Agency Founder Finance</a>, we help agency founders navigate exactly this kind of planning. Our specialist team works exclusively with agency founders, so we understand the specific assets, structures, and timelines that matter to you.</p>
 
 <p>If your capital losses position is unclear, or if you are planning a disposal of your agency shares while non-resident, <a href="/contact">get in touch</a>. We'll help you work through the numbers and make sure nothing is left on the table.</p>

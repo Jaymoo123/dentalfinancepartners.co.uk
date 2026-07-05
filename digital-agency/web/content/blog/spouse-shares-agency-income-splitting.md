@@ -132,7 +132,7 @@ keyTakeaways:
 <li>HMRC releases new guidance on the settlement legislation</li>
 </ul>
 
-<p>As <a href="/about">ICAEW qualified accountants</a>, we see many agency founders who set up spouse shareholdings early on and then forget about them. That is fine while the arrangement remains compliant, but it only takes one HMRC enquiry to cause problems. A periodic review is cheap insurance.</p>
+<p>Working exclusively with agency founders, we see many agency founders who set up spouse shareholdings early on and then forget about them. That is fine while the arrangement remains compliant, but it only takes one HMRC enquiry to cause problems. A periodic review is cheap insurance.</p>
 
 <h2>The Bottom Line on Spouse Shares and Income Splitting</h2>
 

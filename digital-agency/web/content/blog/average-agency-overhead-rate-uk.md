@@ -44,7 +44,7 @@ keyTakeaways:
 
 <p>Most agency founders I meet have a rough idea of their revenue and their profit. Very few know their overhead rate off the top of their head. That is a problem, because your overhead rate is the single most useful number for pricing, hiring, and deciding whether to take on that next retainer.</p>
 
-<p>As ICAEW qualified accountants who work exclusively with agency founders, we see the same pattern repeat: agencies that track this number grow faster and exit cleaner. Those that don't eventually hit a margin wall they cannot explain.</p>
+<p>Working exclusively with agency founders, we see the same pattern repeat: agencies that track this number grow faster and exit cleaner. Those that don't eventually hit a margin wall they cannot explain.</p>
 
 <p>This post covers the <strong>average agency overhead rate UK</strong>, how to calculate yours in 10 minutes, and what to do if your number is too high.</p>
 

@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: Family Investment Company for Agency Inheritance Tax Savings
 metaDescription: Set up a family investment company to pass your agency to your children without a 40% inheritance tax bill. Practical guide for UK agency founders.
-altText: Agency founder reviewing estate planning documents with an ICAEW qualified accountant in a modern UK office
+altText: Agency founder reviewing estate planning documents with an specialist agency accountant in a modern UK office
 image: /blog/family-investment-company-agency-inheritance-tax.jpg
 imageCredit:
   photographer: Ann H
@@ -109,7 +109,7 @@ keyTakeaways:
 <h3>Capital Gains Tax on Future Sale</h3>
 <p>Your children inherit your base cost in the FIC shares. If the agency is sold later, your children pay capital gains tax on the gain from your original cost. Business Asset Disposal Relief (BADR) may apply if the FIC is a trading company and your children hold at least 5% of the shares and are employees or officers.</p>
 <p>Plan for this. If your children are not involved in the agency, they may not qualify for BADR. The sale proceeds could be taxed at 20% rather than 10%.</p>
-<p>Our ICAEW qualified team at Agency Founder Finance models these scenarios before you commit. We look at the full lifecycle, not just the IHT saving.</p>
+<p>Our team at Agency Founder Finance models these scenarios before you commit. We look at the full lifecycle, not just the IHT saving.</p>
 
 <h2>Does a FIC Make Sense for Your Agency?</h2>
 <p>A family investment company works best when:</p>

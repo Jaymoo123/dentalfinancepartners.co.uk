@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { focusRing, siteContainer } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
-import { SignupForm } from "@/components/newsletter/SignupForm";
+import { ConsentToggle } from "@/components/analytics/ConsentToggle";
+// Newsletter SignupForm RETIRED (owner-locked, 0 signups recorded).
+// Components left on disk; mounts removed from all surfaces.
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -14,15 +16,6 @@ export function SiteFooter() {
             <p className="mt-3 max-w-md text-sm leading-relaxed text-slate-300">
               {siteConfig.description}
             </p>
-            <div className="mt-6 max-w-md">
-              <SignupForm
-                source="footer"
-                heading="The Agency Founder Tax Brief"
-                body="One short email a week, UK + UAE tax for agency founders. Plain text, unsubscribe one click."
-                ctaLabel="Subscribe"
-                showAgencyType={false}
-              />
-            </div>
           </div>
 
           <div className="min-w-0">
@@ -52,6 +45,7 @@ export function SiteFooter() {
             <p className="text-xs leading-relaxed text-slate-400">
               &copy; {year} {siteConfig.company.legalName} t/a {siteConfig.company.tradingName}.
             </p>
+            <ConsentToggle className="text-xs text-slate-400 underline hover:text-slate-200 hover:no-underline self-start sm:self-auto" />
           </div>
         </div>
       </div>

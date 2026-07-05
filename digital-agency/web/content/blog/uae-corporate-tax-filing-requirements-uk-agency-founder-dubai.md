@@ -42,7 +42,7 @@ keyTakeaways:
 
 <p>The headline rate is 9% on taxable profits above AED 375,000 (roughly £80,000 at current exchange rates). Profits below that threshold are taxed at 0%. That sounds simple. The complexity comes from how you structure your agency group, whether you maintain a UK company, and how you move money between jurisdictions.</p>
 
-<p>This article covers the filing requirements, deadlines, and common traps for UK agency founders who have moved to Dubai but still own or operate UK agencies. We are ICAEW qualified accountants who work with agency founders in both the UK and UAE. The following is general guidance. Your specific circumstances will need a proper review.</p>
+<p>This article covers the filing requirements, deadlines, and common traps for UK agency founders who have moved to Dubai but still own or operate UK agencies. We work exclusively with agency founders who work with agency founders in both the UK and UAE. The following is general guidance. Your specific circumstances will need a proper review.</p>
 
 <h2>Who Needs to Register for UAE Corporate Tax?</h2>
 
@@ -189,4 +189,4 @@ keyTakeaways:
 
 <p>The good news is that the regime is straightforward for most agency businesses. You are unlikely to face complex issues unless you have intercompany transactions or multiple entities. But the bad news is that the penalties for getting it wrong are significant. A missed registration deadline can cost you AED 10,000 before you even start.</p>
 
-<p>If you want to discuss your specific situation, <a href="/contact">get in touch</a>. We work with agency founders across the UK and UAE and can help you navigate both tax systems. We are ICAEW qualified accountants, and we understand how agency businesses operate. That makes a difference when you are trying to structure a group that spans two jurisdictions.</p>
+<p>If you want to discuss your specific situation, <a href="/contact">get in touch</a>. We work with agency founders across the UK and UAE and can help you navigate both tax systems. We work exclusively with agency founders, and we understand how agency businesses operate. That makes a difference when you are trying to structure a group that spans two jurisdictions.</p>

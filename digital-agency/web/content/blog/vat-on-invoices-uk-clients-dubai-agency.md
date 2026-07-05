@@ -89,7 +89,7 @@ If you are unsure whether your turnover triggers registration, check the AED 375
 
 <h2>How Agency Founder Finance Can Help</h2>
 
-This is where specialist advice matters. As ICAEW qualified accountants, we work with agency founders who operate across the UK and UAE. We help you structure your invoices, file your UAE VAT returns, and manage the reverse charge explanation for your UK clients.
+This is where specialist advice matters. Working exclusively with agency founders, we work with agency founders who operate across the UK and UAE. We help you structure your invoices, file your UAE VAT returns, and manage the reverse charge explanation for your UK clients.
 
 We also help with the broader picture. Corporation tax in the UAE (9% from June 2023), personal tax planning, and how to move money between your UAE company and UK personal accounts without triggering unnecessary tax.
 

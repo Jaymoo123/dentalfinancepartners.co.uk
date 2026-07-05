@@ -172,7 +172,7 @@ keyTakeaways:
 
 <p>If you are working with an accountant who understands both UK and UAE tax, this process is straightforward. If you are trying to do it yourself or with an accountant who only handles standard UK companies, you risk missing a step.</p>
 
-<p>As ICAEW qualified accountants, we handle these transitions regularly for agency founders moving to Dubai. The <strong>UK corporation tax final period before moving</strong> is a well-defined process. It just needs to be followed correctly.</p>
+<p>Working exclusively with agency founders, we handle these transitions regularly for agency founders moving to Dubai. The <strong>UK corporation tax final period before moving</strong> is a well-defined process. It just needs to be followed correctly.</p>
 
 <h2>What If You Change Your Mind?</h2>
 

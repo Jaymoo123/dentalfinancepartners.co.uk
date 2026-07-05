@@ -2,12 +2,21 @@ import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { PageShell } from "@/components/layout/PageShell";
-import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
 import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
 import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
+import { IntentProvider } from "@/components/intent/IntentProvider";
+import { ReturningBar } from "@/components/intent/ReturningBar";
+import { DeepScrollModal } from "@/components/intent/DeepScrollModal";
+import { ExitIntentModal } from "@/components/blog/ExitIntentModal";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
+
+// GoogleAnalytics removed: was mounted unconditionally in <head> (the latent
+// Solicitors pre-fix defect identified in the Wave-5 audit). GA4 is now gated
+// correctly via ConsentedScripts inside ConsentProvider, which honours the
+// visitor's opt-out consent state. ConsentToggle in SiteFooter provides the
+// visible control.
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
@@ -77,20 +86,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-GB">
-      <head>
-        <GoogleAnalytics measurementId={niche.seo.google_analytics_id} />
-      </head>
+      <head />
       <body
         className={`${plusJakarta.variable} ${plusJakarta.className} antialiased`}
       >
         {/*
          * AN-01 (opt-out posture): track by default under legitimate interest.
-         * Visitor can opt out via the "Do not track me" footer link.
-         * GA4 tag retained alongside first-party analytics per Phase D spec
-         * (keep-or-drop-GA4 is a separate later call — do not remove GA4 here).
-         * SEC-08: analytics writes flow through /api/track (server-side
-         * service-role only); ConsentProvider guards client-side consent state.
-         * storagePrefix "aff" is FROZEN at adoption per Phase D frozen table.
+         * Visitor can opt out via the ConsentToggle in SiteFooter.
+         * GA4 is gated via ConsentedScripts (inside ConsentProvider); it is NOT
+         * mounted unconditionally in <head>. storagePrefix "aff" is FROZEN at
+         * adoption per Phase D frozen table.
+         *
+         * IntentProvider wraps PageShell (and ReturningBar / DeepScrollModal /
+         * ExitIntentModal) so personalisation surfaces have access to the intent
+         * context. Personalisation is hardcoded default-ON (treatment locked per
+         * estate experiments wind-down 2026-06-30).
          */}
         <ConsentProvider>
           <AnalyticsProvider
@@ -100,8 +110,15 @@ export default function RootLayout({
             posture="opt-out"
             noTrackPrefixes={["/admin", "/embed"]}
           >
-            <ConsentedScripts />
-            <PageShell>{children}</PageShell>
+            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id || undefined} />
+            <IntentProvider>
+              <PageShell>{children}</PageShell>
+              {/* Personalisation overlays (outside PageShell so z-index stacks above it) */}
+              <ReturningBar />
+              <DeepScrollModal />
+              {/* Qualified-lead ExitIntentModal (replaces retired newsletter modal) */}
+              <ExitIntentModal />
+            </IntentProvider>
           </AnalyticsProvider>
         </ConsentProvider>
       </body>

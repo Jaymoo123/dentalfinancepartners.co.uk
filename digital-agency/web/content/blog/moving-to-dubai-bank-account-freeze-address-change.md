@@ -40,7 +40,7 @@ keyTakeaways:
 
 <p>This is not a hypothetical. I have seen it happen to agency founders who thought changing their address was a simple administrative task. The problem is structural. UK banks are required by law to verify your residential address under anti-money laundering (AML) regulations. A PO Box in Dubai does not satisfy that requirement. The bank's automated systems flag the change, trigger a freeze, and you enter a manual review queue that can take weeks.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we help clients navigate exactly this kind of cross-border complexity. Here is what you need to know about the <strong>moving to dubai bank account freeze address change</strong> risk, and how to avoid it.</p>
+<p>Working exclusively with agency founders, we help clients navigate exactly this kind of cross-border complexity. Here is what you need to know about the <strong>moving to dubai bank account freeze address change</strong> risk, and how to avoid it.</p>
 
 <h2>Why a PO Box Triggers a Freeze</h2>
 

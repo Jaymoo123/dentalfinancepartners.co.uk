@@ -40,7 +40,7 @@ keyTakeaways:
 
 <p>HMRC's R&D rules are specific about what counts as qualifying development. Building a standard CRM for a client using off-the-shelf components does not qualify. Building a novel image recognition system that solves a technical problem no one has solved before, that might. The difference comes down to the nature of the work, not the industry you are in.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we see this question a lot. Agencies in Manchester's Northern Quarter, Bristol Harbourside, and London's Soho are all building software. Some of it qualifies. Most of it does not. Here is how to tell the difference.</p>
+<p>Working exclusively with agency founders, we see this question a lot. Agencies in Manchester's Northern Quarter, Bristol Harbourside, and London's Soho are all building software. Some of it qualifies. Most of it does not. Here is how to tell the difference.</p>
 
 <h2>What HMRC Actually Looks For</h2>
 
@@ -154,7 +154,7 @@ keyTakeaways:
 
 <p>If your contractor mix has changed or you have taken on new technical staff specifically for a software project, that is another trigger. Ask your accountant whether the work qualifies before you spend time documenting it.</p>
 
-<p>At <a href="/about">Agency Founder Finance</a>, we help agency founders navigate these questions every day. We are ICAEW qualified accountants who understand how agencies work. If you want to discuss whether your custom software project qualifies for R&D tax credits, <a href="/contact">get in touch</a>.</p>
+<p>At <a href="/about">Agency Founder Finance</a>, we help agency founders navigate these questions every day. We work exclusively with agency founders who understand how agencies work. If you want to discuss whether your custom software project qualifies for R&D tax credits, <a href="/contact">get in touch</a>.</p>
 
 <h2>Related articles in Tax and Compliance</h2>
 <ul>

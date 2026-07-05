@@ -164,7 +164,7 @@ keyTakeaways:
 
 <p>If you are a UK agency founder moving to Dubai, get advice on both sides. The interaction between UK and UAE tax rules is complex. One mistake can cost you dearly.</p>
 
-<p>At <a href="/about">Agency Founder Finance</a>, we work with agency founders in the UK and UAE. Our ICAEW qualified team understands both jurisdictions. If you want to check your structure before it becomes a problem, <a href="/contact">get in touch</a>.</p>
+<p>At <a href="/about">Agency Founder Finance</a>, we work with agency founders in the UK and UAE. Our specialist team understands both jurisdictions. If you want to check your structure before it becomes a problem, <a href="/contact">get in touch</a>.</p>
 
 <p>The UAE corporate tax 9% connected person rule is not a theoretical risk. It is a practical one. Get it right from day one.</p>
 

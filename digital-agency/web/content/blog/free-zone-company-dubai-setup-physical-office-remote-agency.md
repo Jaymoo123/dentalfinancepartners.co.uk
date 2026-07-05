@@ -44,7 +44,7 @@ keyTakeaways:
 
 <p>The free zone company Dubai setup physical office requirement varies wildly between zones. Some genuinely let you operate from a co-working desk or a virtual address. Others require a physical office with a lockable door, a desk, and someone on site during business hours. If you run a five-person digital agency from London or Manchester, with occasional trips to Dubai, that second category kills your model.</p>
 
-<p>We are ICAEW qualified accountants who work with agency founders setting up in the UAE. We have seen clients sign up for a zone they thought was remote-friendly, only to discover six months later that the economic substance rules or physical presence requirements mean they need to rent space they never use, or employ someone they do not need.</p>
+<p>We work exclusively with agency founders who work with agency founders setting up in the UAE. We have seen clients sign up for a zone they thought was remote-friendly, only to discover six months later that the economic substance rules or physical presence requirements mean they need to rent space they never use, or employ someone they do not need.</p>
 
 <p>This article covers exactly what the physical office rule means, which free zones enforce it, and how to structure your setup so you do not get caught.</p>
 
@@ -170,7 +170,7 @@ keyTakeaways:
 
 <h2>How We Help Agency Founders with UAE Setup</h2>
 
-<p>We are not a setup agent. We are ICAEW qualified accountants who work with agency founders on the finance side of their international operations. That includes helping you understand the tax implications of a free zone structure, the bank account requirements, and how to move money between your UK and UAE entities without triggering unnecessary tax charges.</p>
+<p>We are not a setup agent. We work exclusively with agency founders who work with agency founders on the finance side of their international operations. That includes helping you understand the tax implications of a free zone structure, the bank account requirements, and how to move money between your UK and UAE entities without triggering unnecessary tax charges.</p>
 
 <p>If you are considering a free zone setup, we recommend you speak to a setup agent first, then come to us for the financial structuring. We can help you model the costs, choose the right zone for your operating model, and set up your UK and UAE entities so they work together efficiently.</p>
 

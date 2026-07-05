@@ -128,7 +128,7 @@ keyTakeaways:
 
 <p>If your profit forecast changes by more than 20% mid-year, you should speak to your accountant before taking any further dividends. The same applies if you are considering changing your salary, or if your director's loan account is overdrawn.</p>
 
-<p>As ICAEW qualified accountants, we see agency founders make the same mistake every year. They set a salary dividend split in April, ignore it until January, and then discover they have either overpaid tax or created an overdrawn loan account. A 30-minute mid-year review with your accountant can save you thousands in unnecessary tax.</p>
+<p>Working exclusively with agency founders, we see agency founders make the same mistake every year. They set a salary dividend split in April, ignore it until January, and then discover they have either overpaid tax or created an overdrawn loan account. A 30-minute mid-year review with your accountant can save you thousands in unnecessary tax.</p>
 
 <p>If your agency profit forecast has shifted, <a href="/contact">contact us</a> to review your current position and adjust your salary dividend split before it becomes a problem.</p>
 

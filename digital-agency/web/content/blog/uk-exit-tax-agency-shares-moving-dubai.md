@@ -24,7 +24,7 @@ faqs:
 - question: What is deemed disposal and does it apply to my agency shares?
   answer: Deemed disposal is when HMRC treats you as having sold an asset even though you did not. For most agency founders with direct shareholdings in their own trading company, deemed disposal does not apply. It can apply if you transfer shares into a trust, restructure your shareholding, or trigger a capital event within the company itself.
 - question: Can I claim Business Asset Disposal Relief if I sell my shares while non-resident?
-  answer: No. BADR requires you to be UK resident at the time of disposal. If you sell while non-resident, you cannot claim the relief. You either sell while UK resident (and pay 18% or 18% on the first £1 million) or wait five years and pay 0% UK tax on the entire gain.
+  answer: No. BADR requires you to be UK resident at the time of disposal. If you sell while non-resident, you cannot claim the relief. You either sell while UK resident (and pay 14% for disposals to 5 April 2026, or 18% from 6 April 2026, on the first £1 million of qualifying gains) or wait five years and pay 0% UK tax on the entire gain.
 - question: What records do I need to prove I am non-resident in the UK?
   answer: 'You need evidence of your physical presence in the UAE: flight records, tenancy agreements, utility bills, bank statements showing local spending, and proof of economic activity (employment contract, business registration). HMRC can challenge your residence status years later, so keep records for at least six years after your departure.'
 authorSlug: james-whitfield
@@ -74,9 +74,9 @@ keyTakeaways:
 
 <h2>What About Business Asset Disposal Relief (BADR)?</h2>
 
-<p>If you sell your agency shares while UK resident, you can claim BADR (formerly Entrepreneurs' Relief) on the first £1 million of gains, currently at a 18% CGT rate (rising to 18% from 6 April 2026). But if you sell while non-resident, BADR is not available. The relief requires you to be UK resident at the time of disposal.</p>
+<p>If you sell your agency shares while UK resident, you can claim BADR (formerly Entrepreneurs' Relief) on the first £1 million of gains, at 14% for disposals from 6 April 2025 to 5 April 2026, rising to 18% from 6 April 2026. But if you sell while non-resident, BADR is not available. The relief requires you to be UK resident at the time of disposal.</p>
 
-<p>This creates a trade-off. Sell before you leave and pay 18% (or 18% from April 2026) on up to £1 million of gains, with the balance at 24%. Or move to Dubai, wait five years, and pay 0% UK tax on the entire gain. For a founder with a £2 million gain, the difference is significant.</p>
+<p>This creates a trade-off. Sell before you leave and pay 14% (or 18% from 6 April 2026) on up to £1 million of gains, with the balance at 24%. Or move to Dubai, wait five years, and pay 0% UK tax on the entire gain. For a founder with a £2 million gain, the difference is significant.</p>
 
 <p>But remember: if you sell while non-resident within the five-year window, you lose BADR and pay full UK rates anyway. There is no halfway house. You are either UK resident and eligible for BADR, or you are non-resident and outside the UK CGT net entirely (after five years).</p>
 
@@ -121,7 +121,7 @@ keyTakeaways:
 <h2>Final Thoughts</h2>
 <p>UK exit tax on shares moving to Dubai is not an automatic charge for agency founders with unlisted shares. The deemed disposal rules are narrow and rarely apply to straightforward shareholdings. But the temporary non-residence rule is a real trap. If you sell within five years, the gain is taxed in the UK as if you never left.</p>
 
-<p>Plan your departure date, your share structure, and your exit timeline carefully. If you are unsure about any of these points, speak to an accountant who understands both UK and UAE tax rules. Our ICAEW qualified team at Agency Founder Finance works with agency founders on these exact scenarios, <a href="/contact">get in touch</a> if you want to run through your numbers.</p>
+<p>Plan your departure date, your share structure, and your exit timeline carefully. If you are unsure about any of these points, speak to an accountant who understands both UK and UAE tax rules. Our team at Agency Founder Finance works with agency founders on these exact scenarios, <a href="/contact">get in touch</a> if you want to run through your numbers.</p>
 
 <p>For more on structuring your agency for a future exit, read our guide on <a href="/blog/growth-and-exit">growth and exit planning for agency founders</a>.</p>
 

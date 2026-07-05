@@ -138,7 +138,7 @@ imageCredit:
 
 <p>If you are a sole trader on cash basis, check whether you can claim at all. If not, consider switching to accruals basis if it makes sense for your wider tax position.</p>
 
-<p>At <a href="/services">Agency Founder Finance</a>, we are ICAEW qualified accountants who work exclusively with agency founders. We handle capital allowances, corporation tax, and all the other tax compliance that comes with running a growing agency. If you need advice on a van purchase or any other asset, <a href="/contact">get in touch</a>.</p>
+<p>At <a href="/services">Agency Founder Finance</a>, we work exclusively with agency founders. We handle capital allowances, corporation tax, and all the other tax compliance that comes with running a growing agency. If you need advice on a van purchase or any other asset, <a href="/contact">get in touch</a>.</p>
 
 <p>We also work with <a href="/agencies/marketing-agencies">marketing agencies</a>, <a href="/agencies/digital-agencies">digital agencies</a>, and <a href="/agencies/creative-agencies">creative agencies</a> across the UK. The rules are the same, but the context matters. A van for a PR agency in Soho is a different proposition from a van for a web design agency in the Lake District. We can help you apply the rules to your specific situation.</p>
 

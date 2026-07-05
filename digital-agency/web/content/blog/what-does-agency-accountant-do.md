@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: 'Agency Accountant Role: What They Do for UK Founders'
 metaDescription: What does an agency accountant actually do? We explain the real difference between a general accountant and specialist agency accountant services.
-altText: Two agency founders reviewing financial reports with their ICAEW qualified accountant in a modern UK office
+altText: Two agency founders reviewing financial reports with their specialist agency accountant in a modern UK office
 image: /blog/what-does-agency-accountant-do.jpg
 imageCredit:
   photographer: Leeloo The First
@@ -146,9 +146,9 @@ keyTakeaways:
 
 <p>If they cannot answer, or if they look confused, you probably need a specialist.</p>
 
-<h2>Why ICAEW Qualification Matters</h2>
+<h2>Why Specialist Experience Matters</h2>
 
-<p>At Agency Founder Finance, we are <a href="/about">ICAEW qualified accountants</a>. That means we are regulated by the Institute of Chartered Accountants in England and Wales. We follow strict ethical and professional standards. We carry professional indemnity insurance. And we specialise exclusively in agency clients. We do not do property, retail, or construction. We do agencies.</p>
+<p>At Agency Founder Finance, we are <a href="/about">specialist agency accountants</a>. We work exclusively with agency clients. We do not do property, retail, or construction. We do agencies.</p>
 
 <p>That focus means we see the same patterns across dozens of agency businesses. We know what works and what does not. We know which HMRC enquiries are common for agencies and how to respond. We know how to structure a holding company for a multi-brand agency group.</p>
 

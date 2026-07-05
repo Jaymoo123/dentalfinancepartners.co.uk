@@ -107,7 +107,7 @@ keyTakeaways:
 <p><strong>Growing agency, £150k to £2m turnover, multiple currencies, subcontractors, project-based work.</strong> Use Xero. The multi-currency feature, project tracking, and add-on ecosystem make it the best fit for a serious agency. The monthly cost is worth it for the time saved and the visibility you gain.</p>
 <p><strong>Sole trader or very small agency, prefer spreadsheet-style interface, no multi-currency.</strong> Use QuickBooks Simple Start. It is cheap and works fine for basic invoicing and VAT. But be aware that you will outgrow it quickly if your agency takes on international clients or grows headcount.</p>
 
-<p>If you are still unsure, speak to your accountant. At <a href="/about">Agency Founder Finance</a>, we are ICAEW qualified accountants who work exclusively with agency founders. We help our clients set up their accounting software, connect the right add-ons, and produce management accounts that actually drive decisions. We can tell you within ten minutes whether Xero, QuickBooks or FreeAgent is right for your agency.</p>
+<p>If you are still unsure, speak to your accountant. At <a href="/about">Agency Founder Finance</a>, we work exclusively with agency founders. We help our clients set up their accounting software, connect the right add-ons, and produce management accounts that actually drive decisions. We can tell you within ten minutes whether Xero, QuickBooks or FreeAgent is right for your agency.</p>
 
 <h2>Setting Up Your Accounting Software the Right Way</h2>
 

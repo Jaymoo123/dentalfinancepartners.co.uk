@@ -30,7 +30,7 @@ keyTakeaways:
 ---
 <p>If you are a UK agency founder looking at Dubai, the first number you see on a free zone website is usually the licence fee. Something like AED 15,000 for a freelance permit, or AED 30,000 for a full company licence. Those numbers look manageable. But the <strong>Dubai free zone company setup cost 2025</strong> is never just the licence fee. You need a realistic budget that includes visas, office space, PRO (Public Relations Officer) fees, and several mandatory extras that the brochure often leaves out.</p>
 
-<p>This article is a practical breakdown of what you will actually spend. I am writing it from the perspective of an ICAEW-qualified accountant who works with agency founders moving to or expanding into Dubai. Not a property developer. Not a visa agent. An accountant who has seen the hidden costs catch people out.</p>
+<p>This article is a practical breakdown of what you will actually spend. I am writing it from the perspective of an specialist accountant who works with agency founders moving to or expanding into Dubai. Not a property developer. Not a visa agent. An accountant who has seen the hidden costs catch people out.</p>
 
 <h2>Why Free Zones Exist and Which One Fits an Agency</h2>
 
@@ -135,7 +135,7 @@ keyTakeaways:
 
 <h2>Tax Considerations for UK Agency Founders</h2>
 
-<p>This is where the accounting gets specific. As an ICAEW-qualified firm, we work with agency founders who move to Dubai while maintaining UK connections. The tax implications are not straightforward.</p>
+<p>This is where the accounting gets specific. As an agency-specialist firm, we work with agency founders who move to Dubai while maintaining UK connections. The tax implications are not straightforward.</p>
 
 <p><strong>Dubai corporate tax</strong>: From June 2023, the UAE introduced a 9% corporate tax on profits above AED 375,000 (about £79,000). Below that threshold, the rate is 0%. Free zone companies can still qualify for 0% on qualifying income if they meet specific conditions, including having adequate substance in the free zone. That means a physical office, employees, and genuine business activity in Dubai.</p>
 
@@ -192,7 +192,7 @@ keyTakeaways:
 
 <p><strong>2. The substance requirements.</strong> Free zones are cracking down on "shell" companies. If you set up a Dubai company but do all your work from London, you risk losing your 0% tax status. You need a real office, real employees, and real activity in the free zone. This is not optional.</p>
 
-<p><strong>3. The UK exit tax.</strong> If you sell your UK agency company before moving, you may trigger Business Asset Disposal Relief (BADR) at 18% CGT (rising to 18% from April 2026). If you move to Dubai first and then sell, HMRC may still treat the sale as UK-sourced if the company's assets or management are UK-based. Get advice before you move, not after.</p>
+<p><strong>3. The UK exit tax.</strong> If you sell your UK agency company before moving, you may trigger Business Asset Disposal Relief (BADR) at 14% CGT for disposals 6 April 2025 to 5 April 2026 (18% from 6 April 2026). If you move to Dubai first and then sell, HMRC may still treat the sale as UK-sourced if the company's assets or management are UK-based. Get advice before you move, not after.</p>
 
 <h2>Should You Use a Setup Agent or Do It Yourself?</h2>
 

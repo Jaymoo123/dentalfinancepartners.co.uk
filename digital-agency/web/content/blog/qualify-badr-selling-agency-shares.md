@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Qualify BADR Selling Agency Shares: 5 Key Rules'
 metaDescription: To qualify BADR selling agency shares, you need 5% ownership, 2-year holding, and director/employee status. Miss one rule and you pay 20% CGT instead
-altText: Agency founder reviewing share sale documents with ICAEW qualified accountant in a UK office meeting room
+altText: Agency founder reviewing share sale documents with specialist agency accountant in a UK office meeting room
 image: /blog/qualify-badr-selling-agency-shares.jpg
 imageCredit:
   photographer: energepic.com
@@ -16,7 +16,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/close-up-photo-of-monitor-159888/
   source: Pexels
 h1: How to Qualify for Business Asset Disposal Relief When Selling Your Agency Shares
-summary: Business Asset Disposal Relief (formerly Entrepreneurs' Relief) lets you pay 18% Capital Gains Tax instead of 24% when you sell your agency shares (2025/26 rate, rising to 18% from April 2026). But the rules are precise. Miss one condition and you lose the relief entirely. Here is exactly what you need to meet, and the traps that catch agency founders out.
+summary: Business Asset Disposal Relief (formerly Entrepreneurs' Relief) lets you pay 14% Capital Gains Tax for disposals from 6 April 2025 to 5 April 2026 (18% from 6 April 2026) instead of 24%. But the rules are precise. Miss one condition and you lose the relief entirely. Here is exactly what you need to meet, and the traps that catch agency founders out.
 schema: ''
 faqs:
 - question: Can I claim BADR if I sell my agency's assets instead of shares?
@@ -30,7 +30,7 @@ faqs:
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- BADR reduces Capital Gains Tax to 18% on the first £1m of lifetime gains from selling agency shares in 2025/26, rising to 18% from April 2026.
+- BADR reduces Capital Gains Tax to 14% on the first £1m of lifetime gains from selling agency shares in 2025/26, rising to 18% from 6 April 2026.
 - You must be a director or employee of the agency for at least 12 months before the sale; being a shareholder only does not qualify.
 - You must hold at least 5% of the ordinary share capital and be entitled to 5% of profits, assets on winding up, and sale proceeds.
 - Selling assets rather than shares disqualifies you from BADR; always structure an agency sale as a share sale to claim the relief.
@@ -118,7 +118,7 @@ keyTakeaways:
 
 <h2>Common Traps That Cost Agency Founders the Relief</h2>
 
-<p>Here are the situations I see most often in my ICAEW qualified practice:</p>
+<p>Here are the situations I see most often in my agency-specialist practice:</p>
 
 <h3>Share Restructuring Before Sale</h3>
 
@@ -166,7 +166,7 @@ keyTakeaways:
 
 <p>If you are within 24 months of a potential sale, speak to an accountant now. Do not wait until you have an offer. The conditions take time to fix. A share restructuring, a director appointment, or a cash extraction all need to happen before the 12-month qualifying period starts.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we see these situations regularly. The difference between a qualifying and a non-qualifying sale is often a simple piece of paperwork done at the right time.</p>
+<p>Working exclusively with agency founders, we see these situations regularly. The difference between a qualifying and a non-qualifying sale is often a simple piece of paperwork done at the right time.</p>
 
 <p>If your share structure has changed in the last two years, or if you have accumulated significant cash in the business, ask your accountant before you start the sale process. A 30-minute review could save you six figures in tax.</p>
 

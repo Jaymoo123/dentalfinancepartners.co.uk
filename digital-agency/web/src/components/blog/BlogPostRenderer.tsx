@@ -10,8 +10,11 @@ import { ReadingProgress } from "@accounting-network/web-shared/content/ReadingP
 import { AuthorByline } from "@/components/blog/AuthorByline";
 import { extractHeadings } from "@/lib/markdown-utils";
 import { calculateReadTime } from "@/lib/blog";
-import { InlinePrompt } from "@/components/newsletter/InlinePrompt";
+// Newsletter InlinePrompt RETIRED (owner-locked). Replaced by InlineMiniLeadForm.
 import { LeadForm } from "@/components/forms/LeadForm";
+import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
+import { NextStepOffer } from "@/components/intent/NextStepOffer";
+import { topicForBlogSlug } from "@/lib/intent/taxonomy";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -25,6 +28,23 @@ function formatUkDate(isoDate: string): string {
   return d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 }
 
+/**
+ * Split HTML content at the approximate midpoint (by <p>/<h2> boundaries)
+ * to insert the mid-scroll InlineMiniLeadForm between the two halves.
+ * Returns { before, after } where `after` may be null for short posts.
+ */
+function splitContentAtMidScroll(html: string): { before: string; after: string | null } {
+  // Split on block-level opening tags so we cut at paragraph/heading boundaries.
+  const blockRe = /(?=<(?:p|h[2-6]|ul|ol|blockquote|table|figure)\b)/gi;
+  const parts = html.split(blockRe).filter(Boolean);
+  if (parts.length < 4) return { before: html, after: null };
+  const mid = Math.max(2, Math.floor(parts.length / 2));
+  return {
+    before: parts.slice(0, mid).join(""),
+    after: parts.slice(mid).join(""),
+  };
+}
+
 export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostRendererProps) {
   const headings = extractHeadings(post.contentHtml);
   const readTime = calculateReadTime(post.contentHtml);
@@ -32,15 +52,18 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
     post.schema?.trim() ||
     buildBlogPostingJsonLd(post, `/blog/${categorySlug}/${post.slug}`);
 
-  // Resolve the byline: prefer the new authorSlug field; default every post to
-  // the editorial lead so the Person schema in JSON-LD always has a real
-  // /team/[slug] URL. Legacy free-text `author` is honoured as a label
-  // fallback only when no slug resolves.
+  // Derive the intent topic from the category slug (SLUG-level matching; no
+  // frontmatter category renames needed). Used by InlineMiniLeadForm.
+  const topicKey = topicForBlogSlug(categorySlug);
+
+  // Resolve the byline: prefer the new authorSlug field; default to editorial lead.
   const authorSlug = post.authorSlug || "james-whitfield";
 
   const takeaways = post.keyTakeaways && post.keyTakeaways.length > 0
     ? post.keyTakeaways
     : null;
+
+  const { before, after } = splitContentAtMidScroll(post.contentHtml);
 
   return (
     <>
@@ -189,16 +212,22 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 <TableOfContents headings={headings} />
               </div>
 
+              {/* First half of article body */}
               <div
                 className="article-body prose-blog mt-10"
-                dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+                dangerouslySetInnerHTML={{ __html: before }}
               />
 
-              <InlinePrompt
-                source={`blog-${categorySlug}-${post.slug}`.slice(0, 80)}
-                heading="Get the Tax Brief in your inbox."
-                body={`One short email a week, UK + UAE tax for agency founders. Plain text, unsubscribe one click. Most useful when ${post.category.toLowerCase()} is on your mind.`}
-              />
+              {/* Mid-scroll InlineMiniLeadForm (replaces newsletter InlinePrompt) */}
+              <InlineMiniLeadForm topic={topicKey ?? undefined} />
+
+              {/* Second half of article body (null for short posts) */}
+              {after ? (
+                <div
+                  className="article-body prose-blog"
+                  dangerouslySetInnerHTML={{ __html: after }}
+                />
+              ) : null}
 
               {post.faqs && post.faqs.length > 0 ? (
                 <section className="mt-16" aria-labelledby="faq-heading">
@@ -227,10 +256,13 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   <p className="mt-1 text-lg font-bold text-slate-900">{niche.display_name}</p>
                   <p className="mt-2 text-sm text-slate-600 leading-relaxed">{niche.description}</p>
                   <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-indigo-700 hover:text-indigo-800">
-                    Learn more about our team →
+                    Learn more about our team
                   </Link>
                 </div>
               </aside>
+
+              {/* NextStepOffer: personalised intent card before the bottom lead form */}
+              <NextStepOffer />
 
               <div className="mt-16 bg-slate-900 p-8 sm:p-10 text-white">
                 <h2 className="text-2xl font-bold text-white sm:text-3xl">

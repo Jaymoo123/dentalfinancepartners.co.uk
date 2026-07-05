@@ -125,7 +125,7 @@ keyTakeaways:
 <h2>Should You Incorporate Now or Wait?</h2>
 <p>If your profit is below £50,000, wait. The cost to incorporate an agency 2025/26 is not justified by the tax savings. Focus on growing revenue and margin first.</p>
 <p>If your profit is above £60,000 and you plan to reinvest in growth, incorporate now. The corporation tax rate of 19% on profits up to £50,000 (or 25% above £250,000) is lower than your personal income tax rate on sole trader profits. And the ability to retain profits in the company gives you flexibility for hiring, equipment, or acquisitions.</p>
-<p>If you are approaching an exit, selling the agency in the next two to three years, incorporation is essential. You need the shares to qualify for Business Asset Disposal Relief (18% CGT on the gain for 2025/26, rising to 18% from April 2026). You cannot claim BADR as a sole trader. Read our <a href="/blog/growth-and-exit">growth and exit blog</a> for more on that.</p>
+<p>If you are approaching an exit, selling the agency in the next two to three years, incorporation is essential. You need the shares to qualify for Business Asset Disposal Relief (14% CGT on the gain for 2025/26, rising to 18% from 6 April 2026). You cannot claim BADR as a sole trader. Read our <a href="/blog/growth-and-exit">growth and exit blog</a> for more on that.</p>
 
 <h2>Final Checklist Before You Incorporate</h2>
 <ul>
@@ -138,4 +138,4 @@ keyTakeaways:
 <li>Claim incorporation relief on asset transfers if applicable</li>
 <li>Draft a shareholder agreement if you have co-founders</li>
 </ul>
-<p>If your situation is more complex, for example, you have overseas clients, you are based in the UAE, or you have a property in the business, speak to an accountant before filing. Our <a href="/contact">team at Agency Founder Finance</a> handles these scenarios regularly. We are ICAEW qualified accountants who work exclusively with agency founders, so we know the specific questions to ask.</p>
+<p>If your situation is more complex, for example, you have overseas clients, you are based in the UAE, or you have a property in the business, speak to an accountant before filing. Our <a href="/contact">team at Agency Founder Finance</a> handles these scenarios regularly. We work exclusively with agency founders, so we know the specific questions to ask.</p>

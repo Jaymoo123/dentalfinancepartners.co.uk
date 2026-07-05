@@ -39,7 +39,7 @@ imageCredit:
 
 <p>The short answer is yes, in most cases. But there are specific rules that catch agency founders out. Buy a second-hand server from a liquidator and you are fine. Buy your brother's old MacBook for the business and you are not. The difference matters for your corporation tax bill.</p>
 
-<p>This article explains exactly when second-hand assets qualify for AIA, when they do not, and what to do if you are unsure. We are <a href="/about">ICAEW qualified accountants</a> who work exclusively with agency founders. These are the rules we apply every day.</p>
+<p>This article explains exactly when second-hand assets qualify for AIA, when they do not, and what to do if you are unsure. We work exclusively with agency founders. These are the rules we apply every day.</p>
 
 <h2>What Is the Annual Investment Allowance?</h2>
 
@@ -124,7 +124,7 @@ imageCredit:
 </ol>
 <p>If your agency is growing and you are buying equipment regularly, it is worth reviewing your capital allowance position with your accountant. The AIA limit is £1 million until 31 March 2026 <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. That is a lot of headroom for most agencies, but the rules on connected parties and second-hand assets catch people out.</p>
 
-<p>We work with agency founders across the UK, from Shoreditch to Manchester's Northern Quarter. If your contractor mix has changed or you are buying significant equipment, <a href="/contact">speak to our ICAEW qualified team</a> before your year-end. A five-minute conversation can save you thousands in tax.</p>
+<p>We work with agency founders across the UK, from Shoreditch to Manchester's Northern Quarter. If your contractor mix has changed or you are buying significant equipment, <a href="/contact">speak to our specialist team</a> before your year-end. A five-minute conversation can save you thousands in tax.</p>
 
 <p>For more on agency-specific tax planning, read our <a href="/blog/tax-and-compliance">tax and compliance articles</a> or see how we help <a href="/agencies/digital-agencies">digital agencies</a> structure their finances.</p>
 

@@ -178,7 +178,7 @@ keyTakeaways:
 
 <p>If you are an incorporated agency founder, MTD ITSA does not apply to you personally yet. But the direction of travel is clear. Eventually, all tax will be digital. Getting comfortable with digital record-keeping now saves hassle later.</p>
 
-<p>At Agency Founder Finance, we are ICAEW qualified accountants who work exclusively with agency founders. We help our clients set up MTD-compliant systems, manage quarterly submissions, and avoid penalties. If you want to understand how MTD ITSA affects your specific situation, <a href="/contact">get in touch</a>.</p>
+<p>At Agency Founder Finance, we work exclusively with agency founders. We help our clients set up MTD-compliant systems, manage quarterly submissions, and avoid penalties. If you want to understand how MTD ITSA affects your specific situation, <a href="/contact">get in touch</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 

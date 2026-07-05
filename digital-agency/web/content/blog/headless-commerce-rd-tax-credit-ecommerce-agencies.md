@@ -164,7 +164,7 @@ keyTakeaways:
 
 <p>Talk to your lead developers. Ask them: "Which projects had you scratching your head? Where did standard approaches fail?" Those are your qualifying projects.</p>
 
-<p>Then, work with an accountant who understands both R&D tax credits and the agency world. As ICAEW qualified accountants, we've helped agencies claim over £2M in R&D tax credits. We know how to structure claims that HMRC accepts.</p>
+<p>Then, work with an accountant who understands both R&D tax credits and the agency world. Working exclusively with agency founders, we've helped agencies claim over £2M in R&D tax credits. We know how to structure claims that HMRC accepts.</p>
 
 <p>If you're unsure whether a specific project qualifies, <a href="/contact">get in touch</a>. We'll review it with you. The initial conversation costs nothing, and it might uncover thousands in relief you didn't know existed.</p>
 

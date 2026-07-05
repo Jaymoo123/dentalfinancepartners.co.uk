@@ -166,7 +166,7 @@ imageCredit:
 
 <p>Talk to your accountant before making large purchases. The interaction between full expensing, AIA, and writing-down allowances can get complex, especially if you have a short accounting period or if you buy assets just before year-end.</p>
 
-<p>As ICAEW qualified accountants, we work with agency founders across the UK, from Shoreditch to Bristol Harbourside. If your agency is planning capital expenditure, <a href="/contact">get in touch</a> to check your full expensing position before you buy.</p>
+<p>Working exclusively with agency founders, we work with agency founders across the UK, from Shoreditch to Bristol Harbourside. If your agency is planning capital expenditure, <a href="/contact">get in touch</a> to check your full expensing position before you buy.</p>
 
 <p>For more on how agency finances work in practice, read our <a href="/blog/agency-finance-essentials">agency finance essentials</a> series.</p>
 

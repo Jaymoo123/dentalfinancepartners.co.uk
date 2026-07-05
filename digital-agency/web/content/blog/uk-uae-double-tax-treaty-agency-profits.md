@@ -133,7 +133,7 @@ keyTakeaways:
 <p>If you are running an agency between the UK and UAE, here is what I recommend:</p>
 
 <ol>
-<li>Get a proper UK-UAE cross-border tax review from an ICAEW qualified accountant who understands both jurisdictions. <a href="/services">Our team at Agency Founder Finance</a> works with agency founders in exactly this position.</li>
+<li>Get a proper UK-UAE cross-border tax review from an specialist agency accountant who understands both jurisdictions. <a href="/services">Our team at Agency Founder Finance</a> works with agency founders in exactly this position.</li>
 <li>Document your UAE management and control. Keep board minutes, travel records, and evidence of where decisions are made.</li>
 <li>Review your contractor and employee arrangements. Are any UK-based people creating a PE risk?</li>
 <li>Consider a UK subsidiary if you need a UK presence. It is cleaner than trying to avoid a PE that probably already exists.</li>

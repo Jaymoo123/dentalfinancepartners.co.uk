@@ -172,7 +172,7 @@ keyTakeaways:
 <li><strong>Submit the claim with your corporation tax return.</strong> The claim is made on the CT600 form, with supporting calculations in the computation.</li>
 </ol>
 
-<p>As <a href="/about">ICAEW qualified accountants</a> working exclusively with agency founders, we see R&D claims come through our doors in two states: well-documented and defensible, or thrown together at year-end with no supporting evidence. The former gets you a tax saving. The latter gets you an HMRC letter asking for more information.</p>
+<p>As <a href="/about">specialist agency accountants</a> working exclusively with agency founders, we see R&D claims come through our doors in two states: well-documented and defensible, or thrown together at year-end with no supporting evidence. The former gets you a tax saving. The latter gets you an HMRC letter asking for more information.</p>
 
 <p>If your agency builds bespoke integrations and you have not considered an R&D claim, you are probably leaving money on the table. The key is to start documenting the technical challenges now, while the work is fresh in your developers' minds, rather than trying to reconstruct it eighteen months later when HMRC asks.</p>
 

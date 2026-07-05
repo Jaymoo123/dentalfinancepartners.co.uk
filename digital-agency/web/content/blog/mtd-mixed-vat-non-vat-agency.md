@@ -40,7 +40,7 @@ keyTakeaways:
 
 <p>A common scenario: you run a digital agency through a limited company (VAT registered) but also take on freelance consulting work as a sole trader (below the £90,000 VAT threshold). Or you have a partnership that handles non-VATable income alongside your main agency. In these cases, <strong>MTD for mixed VAT and non-VAT agencies</strong> creates a genuine compliance puzzle.</p>
 
-<p>This article explains exactly what you need to do, what software you need, and where the traps are. We are ICAEW qualified accountants, and we see this issue more often than most people realise.</p>
+<p>This article explains exactly what you need to do, what software you need, and where the traps are. We work exclusively with agency founders, and we see this issue more often than most people realise.</p>
 
 <h2>What MTD Actually Means for Your Agency</h2>
 
@@ -142,7 +142,7 @@ keyTakeaways:
 <h2>When to Speak to an Accountant</h2>
 <p>If your mixed structure involves more than two entities, or if your sole trade income is close to the VAT threshold, or if you are considering changing your structure (incorporating the sole trade, for example), speak to an accountant before April 2026. The transition to MTD for ITSA is not something to leave until the last minute.</p>
 
-<p>Our team at Agency Founder Finance works with agency founders in exactly these situations. We are ICAEW qualified accountants who understand both the tax rules and the practical realities of running an agency. If your <strong>MTD for mixed VAT and non-VAT agencies</strong> setup is causing you headaches, <a href="/contact">get in touch</a>.</p>
+<p>Our team at Agency Founder Finance works with agency founders in exactly these situations. We work exclusively with agency founders who understand both the tax rules and the practical realities of running an agency. If your <strong>MTD for mixed VAT and non-VAT agencies</strong> setup is causing you headaches, <a href="/contact">get in touch</a>.</p>
 
 <p>We can review your current structure, recommend the right software setup, and make sure you are compliant before the April 2026 deadline. Do not wait until HMRC sends you a penalty notice.</p>
 

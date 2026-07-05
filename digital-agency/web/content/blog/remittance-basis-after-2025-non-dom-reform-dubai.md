@@ -26,7 +26,7 @@ faqs:
 - question: How does the reform affect my UK property if I move to Dubai?
   answer: If you're non-resident, you pay UK tax on rental income (20% basic rate) and capital gains on UK property. If you remain UK resident, the reform means you can no longer use the remittance basis to shield foreign income while owning UK property. You'll need to plan your property ownership structure carefully.
 - question: What should I do now if I'm planning a move to Dubai?
-  answer: First, confirm your UK residence status under the statutory residence test. Second, review your UK property and investment holdings. Third, consider timing, if you're already using the remittance basis, the 2025/26 and 2026/27 transitional periods allow you to remit pre-2025 income. Finally, speak to an ICAEW-qualified accountant who understands both UK and Dubai tax systems.
+  answer: First, confirm your UK residence status under the statutory residence test. Second, review your UK property and investment holdings. Third, consider timing, if you're already using the remittance basis, the 2025/26 and 2026/27 transitional periods allow you to remit pre-2025 income. Finally, speak to an specialist accountant who understands both UK and Dubai tax systems.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -121,7 +121,7 @@ keyTakeaways:
 
 <p><strong>4. Plan your exit timing.</strong> If you're already using the remittance basis and planning to move to Dubai, the transitional period (2025/26 and 2026/27) gives you two years to remit pre-2025 foreign income and gains at potentially favourable rates. Don't waste that window.</p>
 
-<p><strong>5. Speak to an ICAEW-qualified accountant.</strong> At Agency Founder Finance, we work with agency founders across the UK and Dubai. The <strong>remittance basis after 2025 non-dom reform</strong> is a significant change, but it doesn't have to derail your plans. It just means you need to be more deliberate about your structure.</p>
+<p><strong>5. Speak to an specialist accountant.</strong> At Agency Founder Finance, we work with agency founders across the UK and Dubai. The <strong>remittance basis after 2025 non-dom reform</strong> is a significant change, but it doesn't have to derail your plans. It just means you need to be more deliberate about your structure.</p>
 
 <h2>Common Questions About the Remittance Basis Reform</h2>
 
@@ -143,7 +143,7 @@ keyTakeaways:
 
 <p>Get your residence status right. Plan your property and investment structure early. And work with accountants who understand both UK and Dubai tax systems.</p>
 
-<p>If you're an agency founder considering a move to Dubai, or you're already there and want to review your UK tax position, <a href="/contact">get in touch</a>. Our ICAEW-qualified team at Agency Founder Finance can help you navigate the <strong>remittance basis after 2025 non-dom reform</strong> and structure your affairs for the new regime.</p>
+<p>If you're an agency founder considering a move to Dubai, or you're already there and want to review your UK tax position, <a href="/contact">get in touch</a>. Our agency-specialist team at Agency Founder Finance can help you navigate the <strong>remittance basis after 2025 non-dom reform</strong> and structure your affairs for the new regime.</p>
 
 <h2>Related articles in International Agencies</h2>
 <ul>

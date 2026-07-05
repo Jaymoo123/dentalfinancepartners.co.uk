@@ -137,5 +137,5 @@ keyTakeaways:
 
 <h2>What to Do Next</h2>
 <p>If you are currently looking for an accountant, write these questions down. Take them to your meetings. See how the accountant responds. Do they give you straight answers or dodge the question? Do they show genuine interest in your agency or treat you like another number on their client list?</p>
-<p>At <a href="/about">Agency Founder Finance</a>, we are ICAEW qualified accountants who work exclusively with agency founders. We answer these questions every day. If you want to see how we stack up, <a href="/contact">book a call</a>. We will walk through your situation, answer these questions directly, and let you decide if we are the right fit.</p>
+<p>At <a href="/about">Agency Founder Finance</a>, we work exclusively with agency founders. We answer these questions every day. If you want to see how we stack up, <a href="/contact">book a call</a>. We will walk through your situation, answer these questions directly, and let you decide if we are the right fit.</p>
 <p>But more importantly, use these questions with whoever you interview. The right accountant will transform your business. The wrong one will just file your tax return and charge you for the privilege. Make sure you pick the right one.</p>

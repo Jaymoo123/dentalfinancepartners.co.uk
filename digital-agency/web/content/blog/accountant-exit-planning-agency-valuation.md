@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Accountant Exit Planning Agency Valuation: A Founder''s Guide'
 metaDescription: How your accountant helps with exit planning and agency valuation. Learn the numbers, the process, and the tax strategies that maximise your sale price.
-altText: Agency founder reviewing financial documents with ICAEW qualified accountant for exit planning and valuation advice in a modern UK office
+altText: Agency founder reviewing financial documents with specialist agency accountant for exit planning and valuation advice in a modern UK office
 image: /blog/accountant-exit-planning-agency-valuation.jpg
 imageCredit:
   photographer: Nataliya Vaitkevich
@@ -162,7 +162,7 @@ keyTakeaways:
 <li>"Can you build a three-year forecast that shows me what I need to achieve for my target sale price?"</li>
 </ul>
 
-<p>If your accountant hesitates on any of these, that is your signal. Exit planning is specialised work. Our ICAEW qualified team at Agency Founder Finance works exclusively with agency founders on this. We know the metrics that matter, the tax structures that save you money, and the process from first conversation to completion.</p>
+<p>If your accountant hesitates on any of these, that is your signal. Exit planning is specialised work. Our team at Agency Founder Finance works exclusively with agency founders on this. We know the metrics that matter, the tax structures that save you money, and the process from first conversation to completion.</p>
 
 <p>If you want to discuss your agency's valuation or start exit planning, <a href="/contact">get in touch</a>. We will give you a straight answer on where you stand and what to do next.</p>
 

@@ -20,7 +20,7 @@ summary: If your agency operates on Net 60 or Net 90 payment terms, proving 1M A
 schema: ''
 faqs:
 - question: Can I use my UK company's audited accounts instead of bank statements for the Dubai Golden Visa?
-  answer: Yes, audited accounts from an ICAEW-qualified firm are generally accepted as proof of revenue. They show income on an accruals basis, which means they reflect your true revenue even if clients pay Net 60 or Net 90. You will need a cover letter explaining the difference between accruals and cash accounting. The authorities want to understand why your bank statements show less than your audited revenue.
+  answer: Yes, audited accounts from an agency-specialist firm are generally accepted as proof of revenue. They show income on an accruals basis, which means they reflect your true revenue even if clients pay Net 60 or Net 90. You will need a cover letter explaining the difference between accruals and cash accounting. The authorities want to understand why your bank statements show less than your audited revenue.
 - question: What if my agency revenue is exactly 1M AED but my bank statements show less due to Net 60 terms?
   answer: This is the exact scenario where you risk rejection. If your bank statements show less than 1M AED, the immigration officer may refuse the application. Your options are to time your application to capture a full cash cycle, provide audited accounts as primary evidence, or build a cash reserve to top up your deposits. Do not apply without addressing this gap first.
 - question: How far back do the UAE authorities look for revenue proof?
@@ -122,7 +122,7 @@ keyTakeaways:
 
 <h3>2. Use Audited Accounts Instead of Bank Statements</h3>
 
-<p>If your agency has audited financial statements from an ICAEW-qualified firm, those carry significantly more weight than raw bank statements.</p>
+<p>If your agency has audited financial statements from an agency-specialist firm, those carry significantly more weight than raw bank statements.</p>
 
 <p>Audited accounts show your true revenue on an accruals basis. That means they recognise income when you earn it, not when you receive it. For an agency on Net 60 terms, audited accounts will show a higher revenue figure than your bank statements for the same period.</p>
 
@@ -162,7 +162,7 @@ keyTakeaways:
 
 <h2>How Agency Founder Finance Can Help</h2>
 
-<p>We are ICAEW-qualified accountants who work exclusively with agency founders. We understand the Net 60 and Net 90 problem because we see it in our clients' books every day.</p>
+<p>We are specialist accountants who work exclusively with agency founders. We understand the Net 60 and Net 90 problem because we see it in our clients' books every day.</p>
 
 <p>When you work with us, we prepare your financial documentation specifically for the Golden Visa application. That means audited accounts where appropriate, cover letters explaining your revenue recognition policies, and a cash flow projection that shows the authorities exactly how your agency's revenue works.</p>
 

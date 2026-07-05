@@ -65,7 +65,7 @@ keyTakeaways:
 
 <p>The key test is whether a competent professional in your field would have known the solution in advance. If they wouldn't, you have technological uncertainty. That is the heart of a qualifying R&D project.</p>
 
-<p>As <a href="/agencies/digital-agencies">ICAEW qualified accountants working with digital agencies</a>, we regularly see claims for work that founders dismissed as "just building stuff." If you wrote code that solved a problem no one had solved before, document it.</p>
+<p>As <a href="/agencies/digital-agencies">specialist agency accountants working with digital agencies</a>, we regularly see claims for work that founders dismissed as "just building stuff." If you wrote code that solved a problem no one had solved before, document it.</p>
 
 <h2>The Core Documents You Need to Keep</h2>
 
@@ -164,6 +164,6 @@ keyTakeaways:
 
 <p>If your agency has already completed qualifying work in the current financial year and you have not been documenting it, start today. Go back through your emails, Slack archives, and project management tools. Pull whatever contemporaneous evidence exists. It will not be as strong as documentation created in real time, but it is better than nothing.</p>
 
-<p>As <a href="/agencies">ICAEW qualified accountants who work exclusively with agency founders</a>, we help our clients set up these systems before the work starts. If your contractor mix has changed, or you are taking on a major development project, ask your accountant before year-end. The cost of setting up documentation is trivial compared to the value of a successful R&D claim.</p>
+<p>As <a href="/agencies">specialist agency accountants who work exclusively with agency founders</a>, we help our clients set up these systems before the work starts. If your contractor mix has changed, or you are taking on a major development project, ask your accountant before year-end. The cost of setting up documentation is trivial compared to the value of a successful R&D claim.</p>
 
 <p><a href="/services">Contact us</a> if you want to discuss whether your agency's current development work qualifies for R&D tax credits, and how to document it properly from day one.</p>

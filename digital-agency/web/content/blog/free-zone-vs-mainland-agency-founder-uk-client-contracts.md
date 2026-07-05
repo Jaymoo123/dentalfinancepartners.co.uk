@@ -116,7 +116,7 @@ faqs:
 <li>Check your UK personal tax position. If you remain UK resident for part of the tax year, your worldwide income may still be subject to UK tax. The statutory residence test determines this.</li>
 </ol>
 
-<p>As ICAEW qualified accountants working with agency founders, we see clients who skip step 2 and end up with angry clients or contractual disputes. Do not be that person.</p>
+<p>As specialist agency accountants working with agency founders, we see clients who skip step 2 and end up with angry clients or contractual disputes. Do not be that person.</p>
 
 <h2>What About UK Tax on the UAE Company's Profits?</h2>
 <p>This is a common concern. The short answer is: if you are genuinely non-UK resident and your UAE company is managed and controlled in the UAE, the profits are not subject to UK corporation tax. The UAE company pays UAE corporate tax on its profits.</p>

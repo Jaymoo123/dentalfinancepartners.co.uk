@@ -73,7 +73,7 @@ keyTakeaways:
 <li><strong>Gross margin matters.</strong> An agency with 60% gross margin can service more debt than one with 35%. Higher margin means more cash available for interest payments.</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we look at these factors before we recommend a target ratio. The textbook answer of "1.0" is a starting point, not a finish line.</p>
+<p>Working exclusively with agency founders, we look at these factors before we recommend a target ratio. The textbook answer of "1.0" is a starting point, not a finish line.</p>
 
 <h2>How to Calculate Your Agency's Ratio</h2>
 

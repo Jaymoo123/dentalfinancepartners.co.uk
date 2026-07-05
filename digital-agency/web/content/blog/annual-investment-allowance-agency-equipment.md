@@ -183,7 +183,7 @@ imageCredit:
 
 <p>The annual investment allowance is a straightforward relief that saves agency founders real money. If you are buying equipment this year, make sure you claim it. The rules are generous, but they have specific timing requirements. Get the date wrong and you lose the relief for that period.</p>
 
-<p>If you want to discuss your agency's equipment plans and how to structure purchases for maximum tax efficiency, <a href="/contact">get in touch</a>. Our ICAEW qualified team works exclusively with agency founders and knows the capital allowance rules inside out.</p>
+<p>If you want to discuss your agency's equipment plans and how to structure purchases for maximum tax efficiency, <a href="/contact">get in touch</a>. Our specialist team works exclusively with agency founders and knows the capital allowance rules inside out.</p>
 
 <p>For more on agency tax planning, read our <a href="/blog/tax-and-compliance">tax and compliance blog</a> or see how we help <a href="/agencies/digital-agencies">digital agencies</a> manage their finances.</p>
 

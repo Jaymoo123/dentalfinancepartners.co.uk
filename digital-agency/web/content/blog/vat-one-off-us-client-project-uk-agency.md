@@ -39,7 +39,7 @@ keyTakeaways:
 <h2>You've Landed a US Client. Now What?</h2>
 <p>You run a 12-person digital agency in Shoreditch. You've just won a £63,400 project from a New York-based SaaS company. It's your first US client. You're excited. Then you start thinking about the tax implications.</p>
 <p>Do you need to register for US sales tax? What about VAT? Will the IRS come after you? Can you just invoice them like a UK client and hope for the best?</p>
-<p>This is the exact scenario we walk agency founders through regularly at Agency Founder Finance. As ICAEW qualified accountants, we see the same questions come up every time a UK agency lands their first American project. The good news: a single US project rarely triggers US tax registration. But the VAT treatment is different, and you need to get it right from day one.</p>
+<p>This is the exact scenario we walk agency founders through regularly at Agency Founder Finance. Working exclusively with agency founders, we see the same questions come up every time a UK agency lands their first American project. The good news: a single US project rarely triggers US tax registration. But the VAT treatment is different, and you need to get it right from day one.</p>
 
 <h2>Does a One-Off US Project Create a US Tax Obligation?</h2>
 <p>Short answer: almost certainly not. But there are conditions.</p>

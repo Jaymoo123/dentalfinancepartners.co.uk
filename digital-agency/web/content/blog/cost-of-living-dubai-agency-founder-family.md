@@ -145,7 +145,7 @@ keyTakeaways:
 <h2>Is Dubai Right for Your Agency?</h2>
 <p>The cost of living in Dubai for an agency founder and their family is higher than most people expect. But the tax savings can still make it work, especially if your agency is profitable and you structure your move properly. The key is to run the numbers before you go, not after.</p>
 
-<p>If you are considering a move, talk to us first. We are <a href="/about">ICAEW qualified accountants</a> who work with agency founders in both the UK and UAE. We can help you model the real numbers for your situation, including corporation tax implications, VAT registration, and personal tax planning. <a href="/contact">Get in touch</a> to discuss your specific circumstances.</p>
+<p>If you are considering a move, talk to us first. We work exclusively with agency founders who work with agency founders in both the UK and UAE. We can help you model the real numbers for your situation, including corporation tax implications, VAT registration, and personal tax planning. <a href="/contact">Get in touch</a> to discuss your specific circumstances.</p>
 
 <h2>Related articles in International Agencies</h2>
 <ul>

@@ -194,7 +194,7 @@ keyTakeaways:
 
 <p>If you are unsure, ask your accountant. Say: "Can you provide dividend voucher and board minute templates? And do you want me to send you copies when I declare a dividend?" The answer will tell you how much support you can expect.</p>
 
-<p>At <a href="/about">Agency Founder Finance</a>, we provide templates and review your dividend records as part of our regular check-ins. Our ICAEW qualified team knows that agency founders have enough to manage without chasing paperwork. But we also know that the paperwork matters.</p>
+<p>At <a href="/about">Agency Founder Finance</a>, we provide templates and review your dividend records as part of our regular check-ins. Our specialist team knows that agency founders have enough to manage without chasing paperwork. But we also know that the paperwork matters.</p>
 
 <h2>The Bottom Line on Dividend Vouchers and Board Minutes</h2>
 

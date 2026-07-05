@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: 'Audit Contractor Engagements IR35 Compliance: Agency Guide'
 metaDescription: Step-by-step guide to auditing your agency's contractor engagements for IR35 compliance before HMRC checks. Includes checklist, SDS review, and CEST tool
-altText: ICAEW accountant reviewing IR35 compliance documents for agency contractor engagements in a modern UK office
+altText: Specialist accountant reviewing IR35 compliance documents for agency contractor engagements in a modern UK office
 image: /blog/audit-contractor-engagements-ir35-compliance.jpg
 imageCredit:
   photographer: Pixabay
@@ -118,7 +118,7 @@ keyTakeaways:
 
 <p>Use CEST as part of your audit, not as the whole audit. Run each engagement through the tool. Document the questions you answered and the result you got. If CEST says outside IR35, that gives you some protection. But if the working reality clearly points to inside IR35, CEST will not save you from a challenge.</p>
 
-<p>For borderline cases, consider getting a professional IR35 review from an accountant or employment solicitor who specialises in this area. Our ICAEW qualified team at Agency Founder Finance runs these reviews regularly for agency clients. The cost is small compared to the potential liability.</p>
+<p>For borderline cases, consider getting a professional IR35 review from an accountant or employment solicitor who specialises in this area. Our team at Agency Founder Finance runs these reviews regularly for agency clients. The cost is small compared to the potential liability.</p>
 
 <h2>Step 5: Check Your Contract Terms Against Working Practices</h2>
 
@@ -192,6 +192,6 @@ keyTakeaways:
 
 <p>If you are reading this and thinking "I should probably check this," you are right. Start with step one. List your contractors. Then work through the steps in order. If you get stuck, get help.</p>
 
-<p>Our ICAEW qualified team at Agency Founder Finance works exclusively with agency founders. We run IR35 compliance audits, review SDSs, and help with voluntary disclosures when needed. If your contractor mix has changed in the last 12 months, or if you have never done a proper IR35 review, <a href="/contact">get in touch</a>. A one-hour review now can save you tens of thousands of pounds later.</p>
+<p>Our team at Agency Founder Finance works exclusively with agency founders. We run IR35 compliance audits, review SDSs, and help with voluntary disclosures when needed. If your contractor mix has changed in the last 12 months, or if you have never done a proper IR35 review, <a href="/contact">get in touch</a>. A one-hour review now can save you tens of thousands of pounds later.</p>
 
 <p>For more on managing contractors in your agency, read our guide on <a href="/blog/contractors-and-ir35">contractors and IR35</a>. If you are thinking about your agency structure, our <a href="/blog/incorporation-and-structure">incorporation and structure</a> articles cover holding companies and exit planning. And if you need a full-service agency accountant who understands your business, <a href="/agencies">see how we work with agencies like yours</a>.</p>

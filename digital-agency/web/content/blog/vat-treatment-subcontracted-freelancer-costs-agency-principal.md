@@ -124,7 +124,7 @@ keyTakeaways:
 
 <p>But the freelancer charges you £8,000 plus £1,600 VAT. Under Flat Rate, you cannot reclaim that £1,600. Your net position is £1,200 retained minus £1,600 irrecoverable VAT = £400 loss on the VAT alone.</p>
 
-<p>If you subcontract heavily, the Flat Rate Scheme can cost you money. Many agencies switch to standard VAT accounting once their freelancer costs exceed a certain threshold. Our ICAEW qualified team at Agency Founder Finance has seen multiple clients make this switch after a single large project with heavy subcontracting.</p>
+<p>If you subcontract heavily, the Flat Rate Scheme can cost you money. Many agencies switch to standard VAT accounting once their freelancer costs exceed a certain threshold. Our team at Agency Founder Finance has seen multiple clients make this switch after a single large project with heavy subcontracting.</p>
 
 <h2>Limited Cost Trader: What It Means for Agencies</h2>
 
@@ -198,7 +198,7 @@ keyTakeaways:
 <li>Invoicing clients in the EU or outside the UK</li>
 </ul>
 
-<p>Our ICAEW qualified team at Agency Founder Finance works exclusively with agency founders. We see these issues every week. The cost of getting it wrong is far higher than the cost of a quick check before you submit.</p>
+<p>Our team at Agency Founder Finance works exclusively with agency founders. We see these issues every week. The cost of getting it wrong is far higher than the cost of a quick check before you submit.</p>
 
 <p>If you are unsure about your VAT treatment on a specific project, email your accountant with the contract and the freelancer invoice. A ten-minute review can save you thousands in penalties and interest.</p>
 

@@ -161,7 +161,7 @@ Total tax: £12,811.70 + £19,347.29 = £32,158.99</p>
 
 <p>Every situation is different. The numbers in this article are general guidance, not personal advice. Speak to an accountant who understands agency businesses before making the switch.</p>
 
-<p>At Agency Founder Finance, we are <a href="/about">ICAEW qualified accountants</a> who work exclusively with agency founders. We help freelancers through the incorporation process, from choosing the right structure to filing your first CT600. If you are considering incorporation, <a href="/contact">get in touch</a> and we will talk through your numbers.</p>
+<p>At Agency Founder Finance, we are <a href="/about">specialist agency accountants</a> who work exclusively with agency founders. We help freelancers through the incorporation process, from choosing the right structure to filing your first CT600. If you are considering incorporation, <a href="/contact">get in touch</a> and we will talk through your numbers.</p>
 
 <h2>Related articles in Incorporation and Structure</h2>
 <ul>

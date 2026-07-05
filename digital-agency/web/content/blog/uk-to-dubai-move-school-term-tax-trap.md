@@ -66,7 +66,7 @@ keyTakeaways:
 
 <ul>
 <li>Salary and dividends from the agency: £120,000 (paid before you leave)</li>
-<li>Capital gain from share sale: £800,000 (assuming BADR at 18% before April 2025, but if the sale completes after April 2025, the rate rises to 18% from April 2026)</li>
+<li>Capital gain from share sale: £800,000 (assuming BADR at 14% for 2025/26 disposals, rising to 18% from 6 April 2026)</li>
 <li>Dubai salary from a new role: £80,000</li>
 <li>Investment income from UK property: £15,000</li>
 </ul>
@@ -164,7 +164,7 @@ keyTakeaways:
 
 <p>If your story does not add up, HMRC will open an enquiry. That takes 12-18 months. The cost of professional fees to defend an enquiry is typically £10,000-£25,000. The cost of losing is the full tax bill plus interest plus penalties.</p>
 
-<p>As <a href="/">ICAEW qualified accountants</a> working with agency founders, we see this pattern repeatedly. Founders who move in August without planning the tax year end up paying more than they need to. Founders who move in March, with a clear plan, save six figures.</p>
+<p>As <a href="/">specialist agency accountants</a> working with agency founders, we see this pattern repeatedly. Founders who move in August without planning the tax year end up paying more than they need to. Founders who move in March, with a clear plan, save six figures.</p>
 
 <h2>The Bottom Line</h2>
 

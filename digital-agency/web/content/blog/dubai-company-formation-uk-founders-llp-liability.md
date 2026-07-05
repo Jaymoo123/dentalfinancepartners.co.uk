@@ -114,7 +114,7 @@ keyTakeaways:
 
 <p>You need to plan the timing. If you are thinking of selling within the next 18 months, restructuring now might lock you out of BADR. In that scenario, it might be better to keep the LLP in place, complete the sale, and then set up the Dubai entity with the sale proceeds.</p>
 
-<p>This is not a decision to make alone. Speak to an ICAEW qualified accountant who understands both UK and UAE structures before you change anything.</p>
+<p>This is not a decision to make alone. Speak to an specialist agency accountant who understands both UK and UAE structures before you change anything.</p>
 
 <h2>What About Free Zone vs Mainland Dubai?</h2>
 
@@ -132,7 +132,7 @@ keyTakeaways:
 
 <p>This sequence takes 4-8 weeks to execute properly. It is not a same-day fix. But it is the only way to avoid the structural mismatch that catches so many agency founders off guard.</p>
 
-<p>Our ICAEW qualified team at Agency Founder Finance works with agency founders on both UK and UAE structuring. If your current structure involves an LLP and you are considering Dubai, <a href="/contact">get in touch</a> before you register anything. We can review your specific situation and map out the restructuring steps.</p>
+<p>Our team at Agency Founder Finance works with agency founders on both UK and UAE structuring. If your current structure involves an LLP and you are considering Dubai, <a href="/contact">get in touch</a> before you register anything. We can review your specific situation and map out the restructuring steps.</p>
 
 <p>The Dubai opportunity is real. But the structure has to work on both sides of the border.</p>
 

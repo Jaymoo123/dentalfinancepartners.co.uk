@@ -95,7 +95,7 @@ keyTakeaways:
 
 <p>The UAE does not tax capital gains for individuals. If the property is held in a company, the gain is taxed as corporate income in the UK, and potentially in the UAE if the company is managed from Dubai.</p>
 
-<p>Business Asset Disposal Relief (BADR) does not apply to rental properties held personally. It only applies to qualifying business assets, typically shares in your trading company. If you sell your agency, BADR gives you a 18% CGT rate (rising to 18% from April 2026) on the first £1 million of gains. That is separate from property.</p>
+<p>Business Asset Disposal Relief (BADR) does not apply to rental properties held personally. It only applies to qualifying business assets, typically shares in your trading company. If you sell your agency, BADR gives you a 14% CGT rate for disposals 6 April 2025 to 5 April 2026 (18% from 6 April 2026) on the first £1 million of gains. That is separate from property.</p>
 
 <h2>Practical Steps Before You Move</h2>
 <p>If you are planning to relocate to Dubai, here is what I would do before you go.</p>
@@ -122,7 +122,7 @@ keyTakeaways:
 <h2>Get Specialist Advice</h2>
 <p>This area is complex because it involves two tax jurisdictions, a company structure, and a personal move. The rules are not always intuitive. If your contractor mix has changed in the last 12 months, or if you have moved to Dubai and own UK property through your company, ask your accountant before your next year-end.</p>
 
-<p>At Agency Founder Finance, we are ICAEW qualified accountants who work exclusively with agency founders. We help you structure your affairs so you keep more of what you earn, whether you are in the UK, Dubai, or both. If you want to <a href="/contact">book a call</a>, we can review your current setup and tell you exactly where the risks are.</p>
+<p>At Agency Founder Finance, we work exclusively with agency founders. We help you structure your affairs so you keep more of what you earn, whether you are in the UK, Dubai, or both. If you want to <a href="/contact">book a call</a>, we can review your current setup and tell you exactly where the risks are.</p>
 
 <p>For more on how agency founders manage their finances across borders, read our <a href="/blog/international-agencies">International Agencies</a> series.</p>
 

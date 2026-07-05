@@ -108,7 +108,7 @@ keyTakeaways:
 
 <p>One more thing on BADR. If the founder stays on as a consultant or part-time employee after the sale, HMRC may argue they are still "associated" with the company. This can jeopardise the relief if not structured correctly. The founder needs to sever their directorship and reduce their involvement to a genuine consultancy role, typically less than 20 hours per week.</p>
 
-<p>As <a href="/about">ICAEW qualified accountants</a>, we always run a BADR eligibility check before any MBO proceeds. The rules are tight, and HMRC has been challenging claims aggressively since 2023.</p>
+<p>Working exclusively with agency founders, we always run a BADR eligibility check before any MBO proceeds. The rules are tight, and HMRC has been challenging claims aggressively since 2023.</p>
 
 <h2>What the Management Team Needs in Their Shareholder Agreement</h2>
 

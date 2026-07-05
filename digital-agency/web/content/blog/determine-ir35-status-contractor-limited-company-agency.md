@@ -95,7 +95,7 @@ keyTakeaways:
 
 <p>You can use HMRC's Check Employment Status for Tax (CEST) tool to help, but be careful. CEST gives directional guidance only. It is notoriously unreliable for complex arrangements, especially where the contractor works across multiple clients or has a genuine substitution right.</p>
 
-<p>We recommend using CEST as a starting point, not a final answer. For any borderline case, take professional advice from an accountant or employment tax specialist. As ICAEW qualified accountants, we handle IR35 determinations for agency clients regularly. The cost of advice is small compared to the cost of getting it wrong.</p>
+<p>We recommend using CEST as a starting point, not a final answer. For any borderline case, take professional advice from an accountant or employment tax specialist. Working exclusively with agency founders, we handle IR35 determinations for agency clients regularly. The cost of advice is small compared to the cost of getting it wrong.</p>
 
 <h2>Common Mistakes Agency Founders Make</h2>
 

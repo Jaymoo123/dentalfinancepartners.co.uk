@@ -171,7 +171,7 @@ keyTakeaways:
 
 <h2>When to Get Your Accountant Involved</h2>
 
-<p>You can handle steps one through three yourself. Steps four through seven are where most agency founders call us. As ICAEW qualified accountants, we see the same patterns repeatedly: a founder spends 30 hours migrating data, gets 95% of the way there, and cannot find the missing £2,300 that makes the balance sheet disagree with the bank.</p>
+<p>You can handle steps one through three yourself. Steps four through seven are where most agency founders call us. Working exclusively with agency founders, we see the same patterns repeatedly: a founder spends 30 hours migrating data, gets 95% of the way there, and cannot find the missing £2,300 that makes the balance sheet disagree with the bank.</p>
 
 <p>If your agency has more than 500 transactions per month, or if you have multiple bank accounts, or if you use foreign currency accounts, get your accountant involved before you start the import. The cost of fixing a corrupted migration is higher than the cost of doing it right the first time.</p>
 

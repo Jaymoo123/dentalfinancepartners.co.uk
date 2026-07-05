@@ -139,7 +139,7 @@ And so on, reducing each year.</p>
 <li><strong>Keep accurate records.</strong> CO2 emissions, purchase date, and business use percentage are all essential for correct claims.</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we work exclusively with agency founders. If your agency's car situation has changed in the last 12 months, or you are planning a purchase, ask your accountant before year-end. The difference between a 100% first-year allowance and a 6% writing down allowance is significant.</p>
+<p>Working exclusively with agency founders, we work exclusively with agency founders. If your agency's car situation has changed in the last 12 months, or you are planning a purchase, ask your accountant before year-end. The difference between a 100% first-year allowance and a 6% writing down allowance is significant.</p>
 
 <p>For more guidance on agency tax planning, see our <a href="/blog/tax-and-compliance">tax and compliance articles</a> or <a href="/services">book a consultation</a> with our team.</p>
 

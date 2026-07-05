@@ -72,7 +72,7 @@ keyTakeaways:
 
 <h3>Scenario B: Optimal Split (Salary + Dividends)</h3>
 
-<p>Now let us use the standard structure our ICAEW qualified team recommends for most agency founders:</p>
+<p>Now let us use the standard structure our specialist team recommends for most agency founders:</p>
 
 <ul>
 <li>Salary: £12,570 (up to the primary NI threshold, no employee NI, no employer NI)</li>
@@ -139,7 +139,7 @@ keyTakeaways:
 
 <p>At very high profit levels, say £300,000+ withdrawn annually, the optimal structure may shift. Some founders benefit from taking more salary to use the full corporation tax deduction, even though it triggers NI. The numbers depend on your specific profit level, dividend allowance, and other income.</p>
 
-<p>This is where professional advice matters. Our <a href="/services">ICAEW qualified team</a> runs these calculations for agency founders every week. The answer is rarely "all salary" or "all dividends". It is almost always a tailored split.</p>
+<p>This is where professional advice matters. Our <a href="/services">specialist team</a> runs these calculations for agency founders every week. The answer is rarely "all salary" or "all dividends". It is almost always a tailored split.</p>
 
 <h2>The Practical Mechanics: How to Pay Yourself</h2>
 
@@ -220,4 +220,4 @@ keyTakeaways:
 
 <p>If your current structure has not been reviewed in the last 12 months, or if your agency's profit has changed significantly, it is worth running the numbers again. The <strong>NI savings dividends vs salary agency</strong> founders achieve are real, but only if the structure is right for your specific situation.</p>
 
-<p>Our ICAEW qualified team at Agency Founder Finance specialises in agency founder remuneration. We can run your numbers and show you the optimal split for your agency. <a href="/contact">Get in touch</a> for a no-obligation discussion.</p>
+<p>Our team at Agency Founder Finance specialises in agency founder remuneration. We can run your numbers and show you the optimal split for your agency. <a href="/contact">Get in touch</a> for a no-obligation discussion.</p>

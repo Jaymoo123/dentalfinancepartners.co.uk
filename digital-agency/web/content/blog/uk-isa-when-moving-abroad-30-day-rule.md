@@ -94,7 +94,7 @@ keyTakeaways:
 
 <p><strong>Second, you may accidentally trigger a breach of the rules.</strong> If you move money into your ISA after the 30-day window, even by mistake, you could lose the tax-free status on the whole account. This is rare, but it happens. If you use a direct debit that you forgot to cancel, or if a dividend reinvestment counts as a contribution, you could have a problem.</p>
 
-<p>Our <a href="/services">ICAEW qualified team</a> has seen this happen. A client moved to Dubai, left his ISA untouched for two years, then transferred money from his UK bank account into the ISA thinking it was just a regular savings account. HMRC flagged it. He had to pay tax on the growth for that year. It was an expensive mistake.</p>
+<p>Our <a href="/services">specialist team</a> has seen this happen. A client moved to Dubai, left his ISA untouched for two years, then transferred money from his UK bank account into the ISA thinking it was just a regular savings account. HMRC flagged it. He had to pay tax on the growth for that year. It was an expensive mistake.</p>
 
 <h2>What About the Lifetime ISA?</h2>
 

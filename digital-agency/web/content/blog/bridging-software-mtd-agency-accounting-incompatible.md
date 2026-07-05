@@ -114,7 +114,7 @@ keyTakeaways:
 
 <p><strong>Excel add-ins.</strong> Some firms offer Excel add-ins that turn your spreadsheet into an MTD-compatible submission tool. These are less common for income tax but exist. Ask your accountant if they have a preferred option.</p>
 
-<p>Your accountant may also have their own bridging software or a preferred partner. Many ICAEW-qualified firms, including ours, use practice management software that includes bridging functionality for clients.</p>
+<p>Your accountant may also have their own bridging software or a preferred partner. Many agency-specialist firms, including ours, use practice management software that includes bridging functionality for clients.</p>
 
 <h2>What Bridging Software Cannot Do</h2>
 
@@ -186,7 +186,7 @@ keyTakeaways:
 
 <p>If you are using spreadsheets, a niche tool, or a custom system, you do not need to change everything. You just need a bridge. Pick one. Test it. File your first quarterly submission. Then get back to running your agency.</p>
 
-<p>If you want to talk through your specific situation, our team are ICAEW qualified accountants who work exclusively with agency founders. We can help you choose the right bridging software, review your current systems, and make sure you are ready for MTD. <a href="/contact">Get in touch</a> when you are ready.</p>
+<p>If you want to talk through your specific situation, our team are specialist agency accountants who work exclusively with agency founders. We can help you choose the right bridging software, review your current systems, and make sure you are ready for MTD. <a href="/contact">Get in touch</a> when you are ready.</p>
 
 <h2>Related articles in Making Tax Digital</h2>
 <ul>

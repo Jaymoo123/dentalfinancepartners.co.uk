@@ -140,7 +140,7 @@ keyTakeaways:
 
 <p>Many agency founders in Dubai find that their UK clients can still reclaim VAT on services from a non-UK supplier under the <strong>reverse charge</strong> mechanism. But that's a separate topic. For now, focus on closing the UK entity cleanly.</p>
 
-<p>As <a href="/about">ICAEW qualified accountants</a> working with agency founders, we see this scenario regularly. The cleanest exits happen when founders plan the closure 3-6 months in advance, not 3-6 weeks.</p>
+<p>As <a href="/about">specialist agency accountants</a> working with agency founders, we see this scenario regularly. The cleanest exits happen when founders plan the closure 3-6 months in advance, not 3-6 weeks.</p>
 
 <h2>Common Mistakes Agency Founders Make</h2>
 

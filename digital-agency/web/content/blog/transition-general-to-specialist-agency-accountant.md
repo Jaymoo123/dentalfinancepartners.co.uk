@@ -33,7 +33,7 @@ keyTakeaways:
 - A general practice accountant cannot advise on IR35 Status Determination Statements or contractor margin modelling for your agency.
 - Specialist agency accountants provide monthly management accounts with utilisation rates, gross margin by service line, and cash runway.
 - If your accountant cannot answer IR35 questions or issues SDSs late, it is a clear sign you need a specialist.
-- A specialist structures shares and dividends from day one to qualify for Business Asset Disposal Relief at 18% (rising to 18% from 6 April 2026).
+- A specialist structures shares and dividends from day one to qualify for Business Asset Disposal Relief at 14% for disposals 6 April 2025 to 5 April 2026 (18% from 6 April 2026).
 - Benchmarking data from a specialist shows a healthy digital agency runs at 65–75% utilisation and revenue per head above £80k.
 ---
 <h2>Your Agency Has Outgrown Its Accountant. Now What?</h2>
@@ -141,7 +141,7 @@ keyTakeaways:
 <p>Not all agency accountants are equal. Some call themselves agency specialists but work with any small business. Here is how to vet one:</p>
 
 <ul>
-<li><strong>Ask about their ICAEW qualification.</strong> A chartered accountant has a minimum standard of training and ongoing professional development. Agency Founder Finance are ICAEW qualified accountants, which means we meet that standard.</li>
+<li><strong>Ask about their professional qualifications and regulatory status.</strong> A professionally qualified accountant is regulated, carries professional indemnity insurance, and maintains ongoing development. These are the standards to look for.</li>
 <li><strong>Ask which agencies they work with.</strong> If they say "all types", they are not a specialist. A true specialist will name specific agency types: marketing, digital, creative, PR, advertising, web design, recruitment.</li>
 <li><strong>Ask for a benchmark.</strong> "What is a healthy gross margin for a digital agency?" If they cannot answer with a specific percentage, keep looking.</li>
 <li><strong>Ask about their software stack.</strong> If they recommend spreadsheets, they are not a specialist. A specialist uses Xero, QuickBooks, or FreeAgent with add-ons for forecasting and reporting.</li>

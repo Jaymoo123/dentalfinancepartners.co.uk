@@ -2,11 +2,5 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "installCommand": "cd ../.. && npm install --no-audit --no-fund",
   "buildCommand": "npm run build",
-  "framework": "nextjs",
-  "crons": [
-    {
-      "path": "/api/nurture/send",
-      "schedule": "0 7 * * *"
-    }
-  ]
+  "framework": "nextjs"
 }

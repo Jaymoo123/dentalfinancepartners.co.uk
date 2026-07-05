@@ -169,7 +169,7 @@ keyTakeaways:
 
 <p>Choosing MTD-compatible software isn't a one-size-fits-all decision. Your agency's project mix, client base, and growth plans all affect what you need.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we've helped dozens of agencies make this transition. We know which software works for which setup. We also know the common mistakes that cost agencies time and money.</p>
+<p>Working exclusively with agency founders, we've helped dozens of agencies make this transition. We know which software works for which setup. We also know the common mistakes that cost agencies time and money.</p>
 
 <p>If your agency is preparing for MTD and you want to make sure you're set up correctly, <a href="/contact">get in touch</a>. We'll look at your current setup, your project structure, and your client mix, then recommend the right approach.</p>
 

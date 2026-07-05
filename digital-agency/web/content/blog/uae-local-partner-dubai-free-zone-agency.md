@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Local Partner Requirement Dubai Free Zone: Agency Founder'
 metaDescription: Dubai free zones do not require a local partner for 100% foreign ownership. We explain the rules, costs, and why mainland setup might still be relevant
-altText: Agency founder reviewing Dubai free zone setup documents with an ICAEW qualified accountant in a modern office
+altText: Agency founder reviewing Dubai free zone setup documents with an specialist agency accountant in a modern office
 image: /blog/uae-local-partner-dubai-free-zone-agency.jpg
 imageCredit:
   photographer: Eslam Mohammed Abdelmaksoud
@@ -88,7 +88,7 @@ keyTakeaways:
 
 <p>For a UK agency founder, the key tax consideration is your UK residence status. If you spend more than 183 days in the UK in a tax year, you remain UK tax resident. Your Dubai company's profits would then be subject to UK corporation tax, unless you have a valid reason for non-residence and meet the Statutory Residence Test criteria.</p>
 
-<p>This is where proper planning matters. Setting up a Dubai free zone company does not automatically make you non-UK resident. You need to manage your physical presence, your ties to the UK, and your business activities carefully. As ICAEW qualified accountants, we work with agency founders to structure this correctly before they make the move.</p>
+<p>This is where proper planning matters. Setting up a Dubai free zone company does not automatically make you non-UK resident. You need to manage your physical presence, your ties to the UK, and your business activities carefully. Working exclusively with agency founders, we work with agency founders to structure this correctly before they make the move.</p>
 
 <h2>Cost Comparison: Free Zone vs Mainland for an Agency</h2>
 

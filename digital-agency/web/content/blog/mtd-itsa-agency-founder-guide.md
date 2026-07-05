@@ -85,7 +85,7 @@ keyTakeaways:
 
 <p>You must maintain digital records of all income and expenses. Spreadsheets are acceptable only if they integrate with MTD-compatible software through a bridging tool. Manual records on paper or in a basic spreadsheet without bridging software will not comply.</p>
 
-<p>This means your agency needs accounting software that is MTD ITSA compliant. <a href="/services">Our ICAEW-qualified team</a> works with Xero, QuickBooks, FreeAgent, and Sage, all of which are MTD-ready. If you are using a spreadsheet-only system, you need to upgrade before April 2026.</p>
+<p>This means your agency needs accounting software that is MTD ITSA compliant. <a href="/services">Our agency-specialist team</a> works with Xero, QuickBooks, FreeAgent, and Sage, all of which are MTD-ready. If you are using a spreadsheet-only system, you need to upgrade before April 2026.</p>
 
 <h3>3. Quarterly Figures Are Not Final</h3>
 
@@ -181,7 +181,7 @@ keyTakeaways:
 
 <h3>5. Talk to Your Accountant</h3>
 
-<p>If you work with an accountant, ask them about their MTD ITSA readiness. <a href="/agencies">Agency Founder Finance</a> are ICAEW qualified accountants and we are fully prepared for MTD ITSA. We help our clients set up software, categorise transactions, and file quarterly updates.</p>
+<p>If you work with an accountant, ask them about their MTD ITSA readiness. <a href="/agencies">Agency Founder Finance</a> are specialist agency accountants and we are fully prepared for MTD ITSA. We help our clients set up software, categorise transactions, and file quarterly updates.</p>
 
 <p>If you do not use an accountant, consider engaging one before the deadlines hit. The quarterly filing requirement adds administrative burden. An accountant reduces that burden and ensures compliance.</p>
 

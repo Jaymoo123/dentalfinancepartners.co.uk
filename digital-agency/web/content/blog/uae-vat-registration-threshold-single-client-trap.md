@@ -130,7 +130,7 @@ keyTakeaways:
 
 <p><strong>5. Agree the commercial terms.</strong> If your contract says "AED 50,000 per month exclusive of VAT" and you are not VAT registered, you cannot add VAT later without changing the contract. If you say "AED 50,000 inclusive of VAT", you are effectively charging AED 47,619 plus AED 2,381 VAT. Your margin shrinks.</p>
 
-<p>As ICAEW qualified accountants, we recommend you discuss any UAE contract with your accountant before signing. The <a href="/contact">team at Agency Founder Finance</a> can help you assess whether registration is required and handle the process.</p>
+<p>Working exclusively with agency founders, we recommend you discuss any UAE contract with your accountant before signing. The <a href="/contact">team at Agency Founder Finance</a> can help you assess whether registration is required and handle the process.</p>
 
 <h2>The Voluntary Registration Question</h2>
 

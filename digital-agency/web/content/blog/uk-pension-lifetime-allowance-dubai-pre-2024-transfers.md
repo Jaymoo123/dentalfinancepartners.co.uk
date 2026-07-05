@@ -165,7 +165,7 @@ faqs:
 
 <p>And if you are already in Dubai with a UK pension you have not yet touched, you may not need to do anything at all. The UK pension system works well for non-residents. Transferring is rarely the right answer.</p>
 
-<p>As ICAEW qualified accountants working with agency founders, we see these issues regularly. The <strong>uk pension lifetime allowance dubai</strong> trap is real, but it is avoidable with the right advice and timing.</p>
+<p>As specialist agency accountants working with agency founders, we see these issues regularly. The <strong>uk pension lifetime allowance dubai</strong> trap is real, but it is avoidable with the right advice and timing.</p>
 
 <p>If your situation is complex, or if you want a second opinion on a transfer you have already made, speak to your accountant. Ask them specifically about the lifetime allowance test that applied at the point of transfer. If they cannot give you a clear answer, get a second opinion from someone who works with cross-border pensions regularly.</p>
 

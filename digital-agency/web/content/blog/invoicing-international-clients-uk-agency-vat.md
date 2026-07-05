@@ -187,7 +187,7 @@ keyTakeaways:
 
 <h2>How Agency Founder Finance Can Help</h2>
 
-<p>We are <a href="/services">ICAEW qualified accountants</a> who work exclusively with agency founders. International VAT is one of the areas where we save our clients time and money. We review your client list, confirm the correct VAT treatment for each, and set up your accounting software with the right tax rates.</p>
+<p>We are <a href="/services">specialist agency accountants</a> who work exclusively with agency founders. International VAT is one of the areas where we save our clients time and money. We review your client list, confirm the correct VAT treatment for each, and set up your accounting software with the right tax rates.</p>
 
 <p>If your agency has started working with international clients recently, or if your client mix has changed, book a call with us. We will check your current invoicing and fix any issues before HMRC does.</p>
 

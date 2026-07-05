@@ -115,7 +115,7 @@ keyTakeaways:
 
 <p>If you are planning to set up in a UAE free zone, do not assume the 0% rate covers everything. Build your client acquisition strategy around non-UAE resident clients or free zone clients if you want the full benefit. If your target market is mainland UAE businesses, a free zone structure may not save you tax.</p>
 
-<p>As ICAEW qualified accountants working with agency founders across the UK and UAE, we see this issue regularly. The free zone 0% rate is a powerful tool, but only if your income structure fits the rules. If your agency's revenue includes consultancy fees to UAE mainland clients, you need to calculate the tax exposure and plan accordingly.</p>
+<p>As specialist agency accountants working with agency founders across the UK and UAE, we see this issue regularly. The free zone 0% rate is a powerful tool, but only if your income structure fits the rules. If your agency's revenue includes consultancy fees to UAE mainland clients, you need to calculate the tax exposure and plan accordingly.</p>
 
 <p>Speak to a qualified accountant who understands both UAE corporate tax and agency business models before you file your next return. The cost of getting this wrong is higher than the cost of getting it right.</p>
 

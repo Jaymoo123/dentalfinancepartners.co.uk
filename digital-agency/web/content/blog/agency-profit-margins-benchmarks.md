@@ -40,7 +40,7 @@ keyTakeaways:
 
 <p>I sit down with agency founders every week. Some are turning over £300k. Some are north of £3m. Almost all of them have a gut feel for whether they are profitable. Almost none of them know how they compare to other agencies in their sector. That is the gap this article fills.</p>
 
-<p>We work exclusively with agency founders at Agency Founder Finance, and we are ICAEW qualified accountants. We see the numbers across hundreds of agencies. This is what normal looks like. And what it does not.</p>
+<p>We work exclusively with agency founders at Agency Founder Finance, and we work exclusively with agency founders. We see the numbers across hundreds of agencies. This is what normal looks like. And what it does not.</p>
 
 <h2>What We Mean by Profit Margin</h2>
 
@@ -156,4 +156,4 @@ keyTakeaways:
 
 <p>Your margin is not just a number on a spreadsheet. It is your buffer against bad months. It is your ability to invest in growth. It is your exit value. Treat it like the strategic asset it is.</p>
 
-<p>If you want to know how your agency compares to others in your sector, we can help. We are <a href="/about">ICAEW qualified accountants</a> who work exclusively with agency founders. <a href="/contact">Get in touch</a> and we will run a margin review for you.</p>
+<p>If you want to know how your agency compares to others in your sector, we can help. We work exclusively with agency founders. <a href="/contact">Get in touch</a> and we will run a margin review for you.</p>

@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: How Often Should You Meet Your Accountant for Strategic
 metaDescription: Most agencies meet their accountant once a year. That is not enough. Here is the review cadence we recommend for growing agency businesses.
-altText: Agency founder and ICAEW accountant reviewing financial reports in a modern London office meeting room
+altText: Agency founder and specialist accountant reviewing financial reports in a modern London office meeting room
 image: /blog/how-often-should-your-agency-meet-with-its-accountant-for-strategic-reviews.jpg
 imageCredit:
   photographer: Mikhail Nilov
@@ -145,7 +145,7 @@ keyTakeaways:
 <li>"Will you proactively suggest tax planning moves, or do I have to ask?"</li>
 </ul>
 
-<p>If the answer to any of these is "we do not really do that", keep looking. You need an accountant who understands agency businesses. That is what we do at <a href="/agencies">Agency Founder Finance</a>. We are ICAEW qualified accountants who work exclusively with agency founders. We know the difference between a retainer book and a project burn. We know how IR35 affects your contractor costs. We know what a healthy utilisation rate looks like.</p>
+<p>If the answer to any of these is "we do not really do that", keep looking. You need an accountant who understands agency businesses. That is what we do at <a href="/agencies">Agency Founder Finance</a>. We work exclusively with agency founders. We know the difference between a retainer book and a project burn. We know how IR35 affects your contractor costs. We know what a healthy utilisation rate looks like.</p>
 
 <h2>The Bottom Line</h2>
 

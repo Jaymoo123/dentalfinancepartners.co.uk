@@ -182,7 +182,7 @@ keyTakeaways:
 
 <p>If your situation is straightforward, you have a UAE visa, a UAE home, and you spend most of your time there, the personal allowance is yours to claim. If your situation is more complex, you still have a UK home, a UK family, or a UK business that requires your regular presence, you need to work through the treaty carefully.</p>
 
-<p>As ICAEW qualified accountants, we work with agency founders in both the UK and UAE. We see this scenario regularly. If your contractor mix has changed in the last 12 months, or if you are planning a move to Dubai, ask your accountant before year-end. The personal allowance is worth £2,514 in tax saved. It's worth getting right.</p>
+<p>Working exclusively with agency founders, we work with agency founders in both the UK and UAE. We see this scenario regularly. If your contractor mix has changed in the last 12 months, or if you are planning a move to Dubai, ask your accountant before year-end. The personal allowance is worth £2,514 in tax saved. It's worth getting right.</p>
 
 <p><a href="/contact">Get in touch</a> if you want to discuss your specific situation.</p>
 

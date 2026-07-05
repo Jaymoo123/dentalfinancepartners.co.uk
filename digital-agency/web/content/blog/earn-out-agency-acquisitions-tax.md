@@ -156,7 +156,7 @@ keyTakeaways:
 <p>If you are considering an offer that includes an earn-out, do this before you instruct lawyers:</p>
 
 <ul>
-<li><strong>Get tax advice on the draft structure.</strong> Ask your accountant, ideally one who understands agency exits, to review the term sheet. Our ICAEW qualified team at Agency Founder Finance sees these structures regularly and can flag issues early.</li>
+<li><strong>Get tax advice on the draft structure.</strong> Ask your accountant, ideally one who understands agency exits, to review the term sheet. Our team at Agency Founder Finance sees these structures regularly and can flag issues early.</li>
 <li><strong>Model the post-tax outcome.</strong> Work out what you actually keep after tax under different earn-out scenarios. Use real numbers, not round figures. A £500,000 earn-out taxed at 18% is £450,000 net. The same earn-out taxed at 42% (40% income tax plus 2% NI) is £290,000. That £160,000 difference is real money.</li>
 <li><strong>Negotiate the earn-out terms before you agree the headline price.</strong> Once the price is fixed, buyers have less incentive to improve the structure. Push for capital treatment as part of the initial negotiation.</li>
 <li><strong>Check the two-year BADR holding period.</strong> If you are close to the threshold, delay completion or restructure the deal to qualify.</li>

@@ -84,7 +84,7 @@ keyTakeaways:
 
 <p>You must issue an SDS to the contractor before they start. This document sets out your conclusion on whether the engagement is inside or outside IR35, and the reasons for that conclusion. HMRC can request to see these statements in an investigation. If you cannot produce them, you are already behind.</p>
 
-<p>Use the CEST tool (Check Employment Status for Tax) as a starting point. It is free and gives you a reference number. But CEST is directional, not definitive. For complex arrangements, get a professional contract review from a specialist employment solicitor or an ICAEW qualified accountant who works with agencies.</p>
+<p>Use the CEST tool (Check Employment Status for Tax) as a starting point. It is free and gives you a reference number. But CEST is directional, not definitive. For complex arrangements, get a professional contract review from a specialist employment solicitor or an specialist agency accountant who works with agencies.</p>
 
 <h3>2. A Contract That Reflects the Reality</h3>
 
@@ -139,7 +139,7 @@ keyTakeaways:
 
 <p><strong>Step 3:</strong> Check your umbrella contract. Look for the IR35 liability clause. If the umbrella has passed the risk back to you, factor that into your risk assessment.</p>
 
-<p><strong>Step 4:</strong> Speak to your accountant. If you work with an ICAEW qualified firm like Agency Founder Finance, we can review your contractor arrangements and tell you where the gaps are. If you do not have an accountant who understands agency contractor models, now is the time to find one.</p>
+<p><strong>Step 4:</strong> Speak to your accountant. If you work with an agency-specialist firm like Agency Founder Finance, we can review your contractor arrangements and tell you where the gaps are. If you do not have an accountant who understands agency contractor models, now is the time to find one.</p>
 
 <p><strong>Step 5:</strong> For any new contractor engagements, issue an SDS before the contractor starts. Use CEST as a baseline, but get a professional review for anything borderline.</p>
 

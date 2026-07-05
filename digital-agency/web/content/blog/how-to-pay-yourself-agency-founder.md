@@ -190,6 +190,6 @@ keyTakeaways:
 
 <p>And always, always document your dividends properly. A dividend voucher, a board minute, and distributable reserves. Without those, HMRC can reclassify your dividends as a directors' loan and hit you with a 35.75% tax charge.</p>
 
-<p>If your agency is growing and you want to <strong>pay yourself as an agency founder</strong> in the most tax-efficient way, speak to an ICAEW qualified accountant who understands agency finances. We work with agency founders every day. We know the numbers, the pitfalls, and the opportunities.</p>
+<p>If your agency is growing and you want to <strong>pay yourself as an agency founder</strong> in the most tax-efficient way, speak to an specialist agency accountant who understands agency finances. We work with agency founders every day. We know the numbers, the pitfalls, and the opportunities.</p>
 
 <p><a href="/contact">Get in touch</a> if you want to run your specific numbers. We will show you exactly what your pay structure should look like.</p>

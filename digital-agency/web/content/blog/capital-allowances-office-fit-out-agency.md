@@ -218,7 +218,7 @@ keyTakeaways:
 
 <p>If you’re an agency founder reading this and thinking “I definitely missed something on my last fit-out”, ask your accountant to review your fixed asset register. You may be able to amend a recent return. If not, at least you’ll know for next time.</p>
 
-<p>And if your current accountant isn’t comfortable with capital allowances, <a href="/services">speak to us</a>. As ICAEW qualified accountants working exclusively with agency founders, we deal with these claims regularly. We know what qualifies and what doesn’t, and we won’t let HMRC push back on a valid claim.</p>
+<p>And if your current accountant isn’t comfortable with capital allowances, <a href="/services">speak to us</a>. Working exclusively with agency founders, we deal with these claims regularly. We know what qualifies and what doesn’t, and we won’t let HMRC push back on a valid claim.</p>
 
 <h2>Related articles in Tax and Compliance</h2>
 <ul>

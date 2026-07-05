@@ -161,7 +161,7 @@ keyTakeaways:
 
 <p>If your claim has high subcontractor costs relative to staff costs, expect questions. HMRC wants to know why you could not do the work in-house and whether the subcontractor was genuinely undertaking R&D or just routine development.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we see HMRC open more enquiries into agency R&D claims than almost any other sector. The 65% rule is rarely the only issue, but it is often the trigger.</p>
+<p>Working exclusively with agency founders, we see HMRC open more enquiries into agency R&D claims than almost any other sector. The 65% rule is rarely the only issue, but it is often the trigger.</p>
 
 <h2>Common Mistakes Agency Founders Make With the 65% Rule</h2>
 

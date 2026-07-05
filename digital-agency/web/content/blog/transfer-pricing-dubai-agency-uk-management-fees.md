@@ -149,7 +149,7 @@ keyTakeaways:
 <p>Transfer pricing is not a set-and-forget exercise. If the Dubai entity's costs change, or the nature of the services changes, the fee should be adjusted. Review the policy at each year-end and update the documentation.</p>
 
 <h3>5. Get Professional Advice</h3>
-<p>This is not a DIY area. A poorly structured management fee arrangement can cost you tens of thousands in tax and penalties. As ICAEW qualified accountants who work with agency founders, we see the same mistakes repeatedly. A small upfront investment in getting the structure right saves a much larger cost later.</p>
+<p>This is not a DIY area. A poorly structured management fee arrangement can cost you tens of thousands in tax and penalties. As specialist agency accountants who work with agency founders, we see the same mistakes repeatedly. A small upfront investment in getting the structure right saves a much larger cost later.</p>
 
 <h2>Does the UAE Corporate Tax Impact Your Transfer Pricing?</h2>
 

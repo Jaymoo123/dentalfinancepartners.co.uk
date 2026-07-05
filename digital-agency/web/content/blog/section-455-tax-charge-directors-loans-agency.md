@@ -190,7 +190,7 @@ keyTakeaways:
 <li><strong>Set up a repayment plan.</strong> If you can't repay in one go, agree a schedule with your accountant. The charge is already triggered, but repaying the loan allows you to reclaim it later.</li>
 </ol>
 
-<p>If you're unsure about your current DLA position, speak to your accountant. If you don't have one who specialises in agencies, <a href="/contact">get in touch</a>. As ICAEW qualified accountants, we deal with this regularly for agency founders across the UK.</p>
+<p>If you're unsure about your current DLA position, speak to your accountant. If you don't have one who specialises in agencies, <a href="/contact">get in touch</a>. Working exclusively with agency founders, we deal with this regularly for agency founders across the UK.</p>
 
 <h2>Section 455 and Business Asset Disposal Relief</h2>
 

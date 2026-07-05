@@ -36,7 +36,7 @@ keyTakeaways:
 
 <p>The standard advice is simple: incorporate once your profits hit a certain threshold. But that advice misses the real question. The question isn't "when do I save tax?" It's "what does the full cost picture look like for <em>my</em> agency?"</p>
 
-<p>This guide walks through the actual numbers for a side hustle agency founder considering incorporation in 2026/27. We'll cover the tax arithmetic, the hidden costs most guides ignore, and the practical triggers that tell you when it's time to make the switch. As ICAEW qualified accountants working exclusively with agency founders, we see this decision made well and made badly every month.</p>
+<p>This guide walks through the actual numbers for a side hustle agency founder considering incorporation in 2026/27. We'll cover the tax arithmetic, the hidden costs most guides ignore, and the practical triggers that tell you when it's time to make the switch. Working exclusively with agency founders, we see this decision made well and made badly every month.</p>
 
 <h2>The Starting Point: Sole Trader vs Limited Company Tax in 2026/27</h2>
 
@@ -224,7 +224,7 @@ Net take-home: £88,198</p>
 
 <p>If your profit is above £60k and you're unsure which path fits your situation, speak to an accountant who works with agency founders. The decision is specific to your numbers, your growth plans, and your risk tolerance. A good accountant will walk you through the scenarios with your actual figures, not generic thresholds.</p>
 
-<p>If you'd like to run your specific numbers through our <a href="/services">incorporation analysis</a>, our ICAEW qualified team works exclusively with agency founders. We know the patterns and the pitfalls.</p>
+<p>If you'd like to run your specific numbers through our <a href="/services">incorporation analysis</a>, our specialist team works exclusively with agency founders. We know the patterns and the pitfalls.</p>
 
 <h2>Related articles in Incorporation and Structure</h2>
 <ul>

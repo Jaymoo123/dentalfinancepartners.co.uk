@@ -192,7 +192,7 @@ keyTakeaways:
 
 <p>If you have already paid a dividend that created an overdrawn director's loan, do not wait until year end to address it. Speak to your accountant now. The nine-month repayment clock starts ticking from your year end. If you act early, you have more options.</p>
 
-<p>As <a href="/about">ICAEW qualified accountants</a> working exclusively with agency founders, we see this issue in almost every new client we take on. It is fixable. But it is much better to avoid it in the first place.</p>
+<p>As <a href="/about">specialist agency accountants</a> working exclusively with agency founders, we see this issue in almost every new client we take on. It is fixable. But it is much better to avoid it in the first place.</p>
 
 <p>If you want to <a href="/contact">speak to us about your dividend strategy</a>, we can review your current position and help you set up a process that keeps your director's loan account at zero. That is the goal. Every dividend you pay should be properly documented, supported by real retained profits, and backed by available cash. Do that, and the director's loan problem disappears entirely.</p>
 

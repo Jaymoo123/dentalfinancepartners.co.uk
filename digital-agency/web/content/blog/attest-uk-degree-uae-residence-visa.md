@@ -38,7 +38,7 @@ keyTakeaways:
 ---
 <p>If you are a UK agency founder moving your business to Dubai, you will discover that getting a UAE residence visa requires more than just your passport. One step that catches people out is the requirement to attest your UK degree. It is not optional for certain visa categories, and the process takes several weeks. Start it before you book your flight.</p>
 
-<p>This guide covers exactly what documents you need, where to send them, and how long each stage takes. We are ICAEW qualified accountants, not immigration lawyers, but we have helped dozens of agency founders through this process. The practical detail here comes from real client experience.</p>
+<p>This guide covers exactly what documents you need, where to send them, and how long each stage takes. We work exclusively with agency founders, not immigration lawyers, but we have helped dozens of agency founders through this process. The practical detail here comes from real client experience.</p>
 
 <h2>Why Do You Need to Attest Your UK Degree for a UAE Visa?</h2>
 
@@ -181,7 +181,7 @@ keyTakeaways:
 
 <h2>How We Help Agency Founders with UAE Relocation</h2>
 
-<p>We are <a href="/about">ICAEW qualified accountants</a> based in the UK. We work exclusively with agency founders. We do not handle immigration or degree attestation directly, but we help our clients plan their finances around the move.</p>
+<p>We work exclusively with agency founders based in the UK. We work exclusively with agency founders. We do not handle immigration or degree attestation directly, but we help our clients plan their finances around the move.</p>
 
 <p>If you are moving your agency to Dubai, you need to think about your tax position, your company structure, and your personal finances. The UAE has a different tax regime. Your UK company may need to be restructured. Your personal tax residency changes.</p>
 

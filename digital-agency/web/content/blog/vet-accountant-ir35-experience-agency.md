@@ -176,7 +176,7 @@ keyTakeaways:
 
 <p>And if you are already working with an accountant and you are not sure about their IR35 competence, ask them these same questions. A good accountant will welcome the scrutiny. A bad one will get defensive. That reaction tells you everything.</p>
 
-<p>At Agency Founder Finance, we are ICAEW qualified accountants who work exclusively with agency founders. IR35 is not a side topic for us. It is a central part of how we advise our clients. If you want to discuss how we approach IR35 for the agencies we work with, <a href="/contact">get in touch</a>. We are happy to show you our process, share examples, and answer your specific questions.</p>
+<p>At Agency Founder Finance, we work exclusively with agency founders. IR35 is not a side topic for us. It is a central part of how we advise our clients. If you want to discuss how we approach IR35 for the agencies we work with, <a href="/contact">get in touch</a>. We are happy to show you our process, share examples, and answer your specific questions.</p>
 
 <p>Your agency's IR35 exposure is too important to leave to chance. Vet your accountant properly. Ask the hard questions. And if the answers are not good enough, keep looking.</p>
 

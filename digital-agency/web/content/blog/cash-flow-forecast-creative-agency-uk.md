@@ -112,7 +112,7 @@ keyTakeaways:
 <h2>Step 7: Review and revise monthly with your accountant</h2>
 <p>A forecast is not set in stone. Your actual revenue will differ from your forecast. Your actual payment timing will differ. The point is to track the variance and understand why it happened.</p>
 <p>Every month, compare your forecast to your actual cash position. If you predicted £63,400 in receipts and got £51,200, ask why. Was it a client who paid late? A project that finished later than expected? A retainer client who paused spend? That information feeds back into next month's forecast and makes it more accurate.</p>
-<p>As ICAEW qualified accountants, we review these forecasts with our agency clients every quarter. The conversation is not about the numbers. It is about what the numbers tell you about your business. If your cash flow forecast creative agency UK founders use shows a consistent gap in January and August, that is not a surprise. It is a pattern. And patterns can be planned for.</p>
+<p>Working exclusively with agency founders, we review these forecasts with our agency clients every quarter. The conversation is not about the numbers. It is about what the numbers tell you about your business. If your cash flow forecast creative agency UK founders use shows a consistent gap in January and August, that is not a surprise. It is a pattern. And patterns can be planned for.</p>
 <p>If you want to build a proper forecast for your own agency, <a href="/contact">get in touch</a>. We can set up the template, show you how to maintain it, and review it with you monthly. It takes the guesswork out of seasonal cash flow.</p>
 
 <h2>Common mistakes creative agencies make with cash flow forecasts</h2>

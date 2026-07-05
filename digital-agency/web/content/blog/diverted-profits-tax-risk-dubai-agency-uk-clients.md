@@ -124,7 +124,7 @@ keyTakeaways:
 
 <p>HMRC has a team dedicated to offshore compliance. They have access to banking data, travel records, and property registries. They know who is claiming non-residence while still spending half the year in the UK. The question is not whether they will find out. It is when.</p>
 
-<p>If you are considering a Dubai move for your agency, or if you have already moved and want to check your structure, speak to an accountant who understands both UK and UAE tax. Our ICAEW qualified team at Agency Founder Finance works with agency founders in both jurisdictions. We can help you assess your <strong>diverted profits tax risk Dubai agency</strong> structure and make sure you are compliant before HMRC comes knocking.</p>
+<p>If you are considering a Dubai move for your agency, or if you have already moved and want to check your structure, speak to an accountant who understands both UK and UAE tax. Our team at Agency Founder Finance works with agency founders in both jurisdictions. We can help you assess your <strong>diverted profits tax risk Dubai agency</strong> structure and make sure you are compliant before HMRC comes knocking.</p>
 
 <p>Get in touch through our <a href="/contact">contact page</a> to discuss your situation. We work with <a href="/agencies/digital-agencies">digital agencies</a>, <a href="/agencies/marketing-agencies">marketing agencies</a>, and <a href="/agencies/creative-agencies">creative agencies</a> operating cross-border.</p>
 

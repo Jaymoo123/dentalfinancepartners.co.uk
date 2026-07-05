@@ -142,7 +142,7 @@ keyTakeaways:
 <li>Issuing the SDS before day one</li>
 </ul>
 
-<p>If you are unsure, take professional advice. The cost of a 30-minute call with an ICAEW qualified accountant is a fraction of the cost of an HMRC investigation.</p>
+<p>If you are unsure, take professional advice. The cost of a 30-minute call with an specialist agency accountant is a fraction of the cost of an HMRC investigation.</p>
 
 <h3>Step 3: Consider Using an Umbrella Company for Inside IR35 Engagements</h3>
 
@@ -164,7 +164,7 @@ keyTakeaways:
 
 <p>If they determine the contractor was inside IR35 and you did not make a reasonable care determination, they will issue a tax bill. You can appeal, but the process takes months and requires specialist tax advice. Prevention is far cheaper than cure.</p>
 
-<p>As ICAEW qualified accountants, we handle IR35 investigations for agency clients. The ones that go well are the ones where the client has good records and took reasonable care. The ones that go badly are the ones where the client assumed it would never happen to them.</p>
+<p>Working exclusively with agency founders, we handle IR35 investigations for agency clients. The ones that go well are the ones where the client has good records and took reasonable care. The ones that go badly are the ones where the client assumed it would never happen to them.</p>
 
 <h2>Can You Pass IR35 Risk Down the Supply Chain?</h2>
 

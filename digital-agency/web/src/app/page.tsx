@@ -10,7 +10,7 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
 import { getAllFundamentals } from "@/lib/fundamentals";
 import { ArrowRight, BookOpen, Calculator, LineChart, Building2, FileCheck, Quote, ShieldCheck } from "lucide-react";
-import { SignupForm } from "@/components/newsletter/SignupForm";
+// Newsletter SignupForm RETIRED (owner-locked). Mounts removed from homepage.
 
 export const metadata: Metadata = {
   title: "Accountants for Marketing Agencies | Agency Founder Finance",
@@ -386,21 +386,6 @@ export default function HomePage() {
           </div>
         </section>
       )}
-
-      {/* Newsletter inline */}
-      <section className="bg-slate-50 py-12 sm:py-16">
-        <div className={siteContainerLg}>
-          <div className="max-w-2xl mx-auto">
-            <SignupForm
-              source="homepage-mid"
-              variant="card"
-              heading="One tax idea a week. Thursdays."
-              body="A short read for UK agency founders: tax, pay, structure, exit. Plain text, one CTA, unsubscribe one click."
-              showAgencyType={false}
-            />
-          </div>
-        </div>
-      </section>
 
       {/* Latest Insights */}
       {recentPosts.length > 0 && (

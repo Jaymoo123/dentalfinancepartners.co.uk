@@ -31,7 +31,7 @@ authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - In an asset sale, retainer contracts are treated as contractual rights, not goodwill, affecting how the purchase price is allocated for tax purposes.
-- Selling via share sale avoids retainer contract renegotiation and lets you pay CGT at 18% with Business Asset Disposal Relief (rising to 18% from 6 April 2026).
+- Selling via share sale avoids retainer contract renegotiation and lets you pay CGT at 14% with Business Asset Disposal Relief for disposals 6 April 2025 to 5 April 2026 (18% from 6 April 2026).
 - Buyers prefer asset sales to avoid inheriting liabilities, but sellers must understand how each retainer contract's sale proceeds are taxed.
 - Listing retainer contracts individually in the sale agreement allows the buyer to confirm enforceability, check non-assignment clauses, and allocate the purchase price.
 - Most agency sales under £5 million are asset sales, where the buyer selects specific assets including retainer contracts, leaving the seller to liquidate the company.
@@ -126,7 +126,7 @@ keyTakeaways:
 
 <p>Most buyers will insist on seeing the retainer contracts before exchange. If any have non-assignment clauses, the sale agreement will include a condition precedent, the sale only completes if the clients consent. This creates a delay and a risk. If a key client refuses, the deal falls through.</p>
 
-<p>As <a href="/about">ICAEW qualified accountants</a> working with agency founders, we have seen deals collapse because the founder did not check the contracts before marketing the business. Do not let that be you.</p>
+<p>As <a href="/about">specialist agency accountants</a> working with agency founders, we have seen deals collapse because the founder did not check the contracts before marketing the business. Do not let that be you.</p>
 
 <h2>VAT on Retainer Transfers</h2>
 

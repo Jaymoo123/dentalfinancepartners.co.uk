@@ -143,7 +143,7 @@ keyTakeaways:
 
 <p>For larger debts, say over £10,000, your accountant may want to review the evidence before you finalise the write-off. This is standard practice. It protects you if HMRC later challenges the claim.</p>
 
-<p>At <a href="/services">Agency Founder Finance</a>, we handle bad debt claims regularly for our agency clients. As ICAEW qualified accountants, we know what HMRC looks for and how to structure the claim to minimise the risk of enquiry.</p>
+<p>At <a href="/services">Agency Founder Finance</a>, we handle bad debt claims regularly for our agency clients. Working exclusively with agency founders, we know what HMRC looks for and how to structure the claim to minimise the risk of enquiry.</p>
 
 <h2>Summary: The Three-Step Process</h2>
 

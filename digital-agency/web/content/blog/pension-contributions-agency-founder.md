@@ -125,7 +125,7 @@ keyTakeaways:
 
 <p>One catch: if your total remuneration (salary, dividends, pension) is significantly out of line with what is reasonable for your role, HMRC can challenge it. For a working director taking a market-rate salary plus dividends, a pension contribution of up to the annual allowance is almost never challenged. If you try to contribute £200,000 on a £30,000 salary, expect questions.</p>
 
-<p>Our <a href="/services">ICAEW qualified team</a> can help you structure contributions to stay well within HMRC's comfort zone.</p>
+<p>Our <a href="/services">specialist team</a> can help you structure contributions to stay well within HMRC's comfort zone.</p>
 
 <h2>Lifetime Allowance: What Changed</h2>
 

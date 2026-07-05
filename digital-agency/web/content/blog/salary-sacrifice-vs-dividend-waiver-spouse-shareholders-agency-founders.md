@@ -215,7 +215,7 @@ keyTakeaways:
 <li>Process the dividend payments through your accounting software.</li>
 </ol>
 
-<p>Both strategies require careful record-keeping. As ICAEW qualified accountants, we recommend you discuss any income shifting with your accountant before implementing it. The rules around settlements (the "settlements legislation") mean HMRC can reattribute income back to you if the arrangement is purely for tax avoidance without any commercial purpose. If your spouse genuinely owns shares and is involved in the business, this is rarely an issue. But if the arrangement looks artificial, HMRC may challenge it.</p>
+<p>Both strategies require careful record-keeping. Working exclusively with agency founders, we recommend you discuss any income shifting with your accountant before implementing it. The rules around settlements (the "settlements legislation") mean HMRC can reattribute income back to you if the arrangement is purely for tax avoidance without any commercial purpose. If your spouse genuinely owns shares and is involved in the business, this is rarely an issue. But if the arrangement looks artificial, HMRC may challenge it.</p>
 
 <h2>Final Thoughts</h2>
 

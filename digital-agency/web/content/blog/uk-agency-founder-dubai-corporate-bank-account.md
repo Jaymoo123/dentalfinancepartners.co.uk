@@ -42,7 +42,7 @@ keyTakeaways:
 
 <p>UAE banks do not want new free zone companies with no local credit history. They especially do not want them when the founder has no UAE personal credit file either. This is the banking problem that catches most UK agency founders off guard. And it is a serious problem, because without a corporate account you cannot invoice clients in the UAE, pay staff, or draw a salary.</p>
 
-<p>As ICAEW qualified accountants working with agency founders who relocate to the UAE, we see this pattern repeatedly. The good news is that it is solvable. You just need to know what you are walking into before you land.</p>
+<p>As specialist agency accountants working with agency founders who relocate to the UAE, we see this pattern repeatedly. The good news is that it is solvable. You just need to know what you are walking into before you land.</p>
 
 <h2>Why UAE Banks Reject New Free Zone Companies</h2>
 
@@ -134,7 +134,7 @@ keyTakeaways:
 
 <h2>How We Help Agency Founders with This Process</h2>
 
-<p>At Agency Founder Finance, we are ICAEW qualified accountants who work with UK agency founders relocating to the UAE. We do not open bank accounts for you. But we do help you prepare the documentation that banks require.</p>
+<p>At Agency Founder Finance, we work exclusively with agency founders who work with UK agency founders relocating to the UAE. We do not open bank accounts for you. But we do help you prepare the documentation that banks require.</p>
 
 <p>We organise your UK company's financial records in a format that UAE banks understand. We prepare management accounts and trading histories. We provide letters confirming your UK compliance record. We advise on which free zones are most bank-friendly before you incorporate.</p>
 

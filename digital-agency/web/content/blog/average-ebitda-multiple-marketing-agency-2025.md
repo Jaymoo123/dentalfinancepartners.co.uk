@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Average EBITDA Multiple Marketing Agency 2025: UK Benchmarks'
 metaDescription: UK marketing agency EBITDA multiples in 2025 range from 3.5x to 7x. We break down the data by agency type, size, and what drives a higher valuation.
-altText: Two agency founders reviewing a valuation report with their ICAEW accountant in a London meeting room
+altText: Two agency founders reviewing a valuation report with their specialist accountant in a London meeting room
 image: /blog/average-ebitda-multiple-marketing-agency-2025.jpg
 imageCredit:
   photographer: Jorge Alcalá
@@ -125,7 +125,7 @@ keyTakeaways:
 
 <p>If your management accounts are six months behind, or if you cannot produce a clean P&L and balance sheet within two weeks of month-end, buyers will assume the worst. They will discount your multiple to cover the risk that your numbers are wrong.</p>
 
-<p>As <a href="/agencies">ICAEW qualified accountants working with agencies</a>, we see this constantly. Agencies with real-time Xero or QuickBooks data, reconciled monthly, sell faster and at higher multiples than those with spreadsheets and guesswork.</p>
+<p>Working exclusively with agency founders, we see this constantly. Agencies with real-time Xero or QuickBooks data, reconciled monthly, sell faster and at higher multiples than those with spreadsheets and guesswork.</p>
 
 <h3>Outdated Service Lines</h3>
 

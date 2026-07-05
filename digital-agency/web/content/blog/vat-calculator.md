@@ -40,7 +40,7 @@ imageCredit:
 
 <p>But the real value comes when your agency deals with mixed rates, partial exemption, or the flat rate scheme. A basic calculator won't handle those. You need to understand the rules behind the numbers.</p>
 
-<p>As ICAEW qualified accountants, we see agency founders make the same mistakes with VAT calculations. They assume all income is standard-rated. They forget about reduced-rate supplies. They miss the de minimis limits on exempt input tax. A calculator is only as good as the data you feed it.</p>
+<p>Working exclusively with agency founders, we see agency founders make the same mistakes with VAT calculations. They assume all income is standard-rated. They forget about reduced-rate supplies. They miss the de minimis limits on exempt input tax. A calculator is only as good as the data you feed it.</p>
 
 <h2>Standard VAT Calculation for Agencies</h2>
 

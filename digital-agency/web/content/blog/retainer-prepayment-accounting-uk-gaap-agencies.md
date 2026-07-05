@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: Retainer Prepayment Accounting UK GAAP for Agencies | Guide
 metaDescription: Retainer prepayment accounting UK GAAP explained for agency founders. How to recognise revenue, avoid misstated accounts, and handle deferred income
-altText: Agency founder reviewing retainer prepayment accounting with ICAEW qualified accountant in UK office
+altText: Agency founder reviewing retainer prepayment accounting with specialist agency accountant in UK office
 image: /blog/retainer-prepayment-accounting-uk-gaap-agencies.jpg
 imageCredit:
   photographer: RDNE Stock project
@@ -134,7 +134,7 @@ keyTakeaways:
 
 <p>If you use <strong>Dext</strong> for receipt capture and <strong>Float</strong> for cash flow forecasting, ensure your deferred income balances are reflected in your forecasts. Otherwise your cash flow projection will show more available cash than you actually have to spend.</p>
 
-<p>For agencies with complex retainer structures, multiple currencies, quarterly invoicing, variable scopes, we recommend a monthly management accounts review with your accountant. Our ICAEW qualified team at Agency Founder Finance sets up deferred income schedules for all retainer-based clients as standard.</p>
+<p>For agencies with complex retainer structures, multiple currencies, quarterly invoicing, variable scopes, we recommend a monthly management accounts review with your accountant. Our team at Agency Founder Finance sets up deferred income schedules for all retainer-based clients as standard.</p>
 
 <h2>Retainer Prepayments and Cash Flow Forecasting</h2>
 

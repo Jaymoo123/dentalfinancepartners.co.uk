@@ -150,7 +150,7 @@ keyTakeaways:
 
 <h2>How to Reduce Your Dividend Tax Bill</h2>
 
-<p>There are legitimate ways to reduce the tax you pay on dividends. None of them are loopholes. They are standard planning options that ICAEW qualified accountants use for agency clients every day.</p>
+<p>There are legitimate ways to reduce the tax you pay on dividends. None of them are loopholes. They are standard planning options that specialist agency accountants use for agency clients every day.</p>
 
 <h3>Use Your Spouse's Allowances</h3>
 
@@ -207,7 +207,7 @@ keyTakeaways:
 
 <p>The dividend tax rates for 2026/27 are straightforward. The planning around them is not. If you are taking more than £50,000 in dividends, the tax bill starts to bite. If you are above £100,000, the personal allowance trap adds another layer of cost.</p>
 
-<p>Our ICAEW qualified team at Agency Founder Finance works exclusively with agency founders. We know the numbers because we see them every day. If your dividend strategy has not been reviewed since the rates changed, now is the time.</p>
+<p>Our team at Agency Founder Finance works exclusively with agency founders. We know the numbers because we see them every day. If your dividend strategy has not been reviewed since the rates changed, now is the time.</p>
 
 <p><a href="/contact">Get in touch</a> if you want to run through your specific numbers. We will tell you exactly what you will pay and whether there is a better way to structure your drawings.</p>
 

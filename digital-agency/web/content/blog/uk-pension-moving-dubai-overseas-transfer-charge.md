@@ -109,7 +109,7 @@ keyTakeaways:
 
 <p>Work with a UK-regulated pension transfer specialist. Not a UAE-based adviser who happens to mention QROPS. A UK-regulated adviser holds professional indemnity insurance and is accountable to the Financial Conduct Authority. If they get it wrong, you have recourse. With an unregulated adviser, you have none.</p>
 
-<p>As <a href="/about">ICAEW qualified accountants</a>, we see the aftermath of bad QROPS advice regularly. Agency founders who transferred early, lost 25%, and then discovered their QROPS was not even HMRC-registered. The cost is not just the charge. It is the time, stress, and legal fees to sort it out.</p>
+<p>Working exclusively with agency founders, we see the aftermath of bad QROPS advice regularly. Agency founders who transferred early, lost 25%, and then discovered their QROPS was not even HMRC-registered. The cost is not just the charge. It is the time, stress, and legal fees to sort it out.</p>
 
 <h2>Reporting Requirements for the Transfer</h2>
 

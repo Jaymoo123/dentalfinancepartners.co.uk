@@ -147,7 +147,7 @@ keyTakeaways:
 <h2>What About the Dividend Allowance and CGT Allowance?</h2>
 <p>If you are non-resident, your UK dividend allowance (£500 for 2025/26) still applies to dividends from UK companies. Your CGT annual exempt amount (£3,000 for 2025/26) also applies. But these are small. If you have a significant portfolio, you will exceed them quickly.</p>
 
-<p>As ICAEW qualified accountants, we advise founders moving abroad to get a full tax planning review before they leave. The bed and breakfast rule is just one of several traps that catch people who try to reorganise their affairs at the last minute.</p>
+<p>Working exclusively with agency founders, we advise founders moving abroad to get a full tax planning review before they leave. The bed and breakfast rule is just one of several traps that catch people who try to reorganise their affairs at the last minute.</p>
 
 <h2>Summary: The Rule in Plain English</h2>
 <ul>

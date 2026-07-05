@@ -120,7 +120,7 @@ keyTakeaways:
 
 <p>Most agency founders I work with do not do this. They look at their bank balance and assume everything is fine. Then a £30k payment is late, and they are scrambling to cover payroll. A 13-week forecast costs you 20 minutes a week and prevents that scramble entirely.</p>
 
-<p>As ICAEW qualified accountants, we recommend using Xero combined with Float for this. The data flows automatically from your invoices and bills. You get a live view of your cash position and a forecast that updates as new invoices are raised.</p>
+<p>Working exclusively with agency founders, we recommend using Xero combined with Float for this. The data flows automatically from your invoices and bills. You get a live view of your cash position and a forecast that updates as new invoices are raised.</p>
 
 <h2>When to Use External Finance</h2>
 

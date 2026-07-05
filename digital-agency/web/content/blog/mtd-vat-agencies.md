@@ -172,7 +172,7 @@ keyTakeaways:
 
 <h2>How Your Accountant Can Help</h2>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we handle MTD compliance for our clients as part of our standard service. Here is what that looks like in practice.</p>
+<p>Working exclusively with agency founders, we handle MTD compliance for our clients as part of our standard service. Here is what that looks like in practice.</p>
 
 <p>We check that your software is MTD-compatible before your first MTD return. We set up the HMRC authorisation on your behalf. We review each VAT return before it is submitted. And we handle any penalty notices or HMRC queries that arise.</p>
 

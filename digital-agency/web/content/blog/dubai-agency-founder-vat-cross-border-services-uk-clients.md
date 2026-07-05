@@ -135,7 +135,7 @@ keyTakeaways:
 
 <p>For the vast majority of Dubai agency founders working with UK business clients, none of these apply. You remain outside the UK VAT system.</p>
 
-<p>If you are unsure whether your circumstances trigger a UK VAT registration requirement, speak to a qualified accountant who understands both UAE and UK VAT. <a href="/services">Our ICAEW-qualified team</a> works with agency founders in both jurisdictions and can advise on your specific situation.</p>
+<p>If you are unsure whether your circumstances trigger a UK VAT registration requirement, speak to a qualified accountant who understands both UAE and UK VAT. <a href="/services">Our agency-specialist team</a> works with agency founders in both jurisdictions and can advise on your specific situation.</p>
 
 <h2>Practical Steps for Your First UK Client Invoice</h2>
 

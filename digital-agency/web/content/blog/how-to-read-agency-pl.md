@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 'How to Read Your Agency P&L: Finance 101 for Founders'
-metaDescription: Learn to read your agency P&L like an ICAEW accountant. Understand gross margin, utilisation, and net profit with real examples. No fluff.
+metaDescription: Learn to read your agency P&L like a specialist accountant. Understand gross margin, utilisation, and net profit with real examples. No fluff.
 altText: Agency founder reviewing a profit and loss statement on a desk in a London office with a laptop and printed accounts
 image: /blog/how-to-read-agency-pl.jpg
 imageCredit:
@@ -254,7 +254,7 @@ keyTakeaways:
 
 <p>Go through each line. Compare this month to last month. Compare this quarter to the same quarter last year. Look for trends, not single data points.</p>
 
-<p>If something does not make sense, ask your accountant. A good ICAEW qualified accountant will explain the numbers, not just file them. That is the difference between compliance and advice.</p>
+<p>If something does not make sense, ask your accountant. A good specialist agency accountant will explain the numbers, not just file them. That is the difference between compliance and advice.</p>
 
 <p>If you do not have a monthly P&L, ask your accountant to set one up. It should take them less than an hour once your bookkeeping is clean. If they push back, find a different accountant.</p>
 

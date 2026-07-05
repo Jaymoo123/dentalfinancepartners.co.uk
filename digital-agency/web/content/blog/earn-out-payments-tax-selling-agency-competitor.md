@@ -34,7 +34,7 @@ keyTakeaways:
 - To qualify for Business Asset Disposal Relief on earn-out payments, you must meet the 5% shareholding and officer/employee conditions for two years before the sale.
 - In an asset sale, earn-out payments are typically treated as income, taxed at up to 45% plus National Insurance, unless structured as capital consideration.
 - Your solicitor must draft the share purchase agreement so the earn-out is clearly part of the consideration for shares, not a separate payment for services.
-- Business Asset Disposal Relief gives a 18% capital gains tax rate on qualifying disposals up to £1 million, rising to 18% from 6 April 2026.
+- Business Asset Disposal Relief gives a 14% capital gains tax rate on qualifying disposals up to £1 million for disposals 6 April 2025 to 5 April 2026, rising to 18% from 6 April 2026.
 ---
 <p>You have found a buyer for your agency. The deal is structured as an upfront payment plus an earn-out based on the agency hitting certain revenue or profit targets over the next two to three years. That earn-out could be worth hundreds of thousands of pounds. But how is it taxed?</p>
 
@@ -131,7 +131,7 @@ keyTakeaways:
 
 <p>Loan notes are similar. You receive loan notes that pay interest and are redeemed after a set period. The interest is taxable as income. The gain on redemption is capital. The structure of the loan notes (qualifying corporate bonds vs. non-qualifying) affects whether you can defer the gain or must pay it immediately.</p>
 
-<p>This is specialist territory. Do not try to structure loan notes yourself. You need a corporate finance solicitor and an ICAEW qualified accountant who have done this before.</p>
+<p>This is specialist territory. Do not try to structure loan notes yourself. You need a corporate finance solicitor and an specialist agency accountant who have done this before.</p>
 
 <h2>Badr and Earn-Outs: The Two-Year Rule</h2>
 
@@ -150,7 +150,7 @@ keyTakeaways:
 <p>If you are considering selling your agency and the deal includes an earn-out, here is what to do before you sign the heads of terms:</p>
 
 <ol>
-<li><strong>Speak to your accountant first.</strong> Before you even start negotiations, have a conversation with your accountant about the tax implications of different earn-out structures. At Agency Founder Finance, we are ICAEW qualified accountants who work exclusively with agency founders. We see earn-out structures regularly and can advise on the tax-efficient approach for your specific situation.</li>
+<li><strong>Speak to your accountant first.</strong> Before you even start negotiations, have a conversation with your accountant about the tax implications of different earn-out structures. At Agency Founder Finance, we work exclusively with agency founders. We see earn-out structures regularly and can advise on the tax-efficient approach for your specific situation.</li>
 
 <li><strong>Instruct a solicitor who understands agency sales.</strong> Not all corporate solicitors understand the nuances of earn-outs in service businesses. Ask your solicitor how many agency sales they have handled. If the answer is fewer than five, find someone else.</li>
 
@@ -175,7 +175,7 @@ keyTakeaways:
 
 <p>The difference between paying 10% capital gains tax and 45% income tax on a £500,000 earn-out is £175,000. That is not a detail to leave to chance.</p>
 
-<p>If you are planning an exit and expect an earn-out to form part of the deal, speak to us early. Our ICAEW qualified team at Agency Founder Finance can help you model the tax outcomes, structure the earn-out correctly, and ensure you keep as much of your hard-earned sale proceeds as possible.</p>
+<p>If you are planning an exit and expect an earn-out to form part of the deal, speak to us early. Our team at Agency Founder Finance can help you model the tax outcomes, structure the earn-out correctly, and ensure you keep as much of your hard-earned sale proceeds as possible.</p>
 
 <p><a href="/contact">Contact us</a> to discuss your agency exit plans. Or read more about <a href="/blog/growth-and-exit">exit planning for agency founders</a> on our blog.</p>
 

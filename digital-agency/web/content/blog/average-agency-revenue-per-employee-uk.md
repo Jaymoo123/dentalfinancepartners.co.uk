@@ -163,7 +163,7 @@ keyTakeaways:
 
 <h2>How We Help Agency Founders</h2>
 
-<p>At Agency Founder Finance, we work exclusively with agency founders. Our ICAEW qualified team sees the numbers across dozens of UK agencies every month. We know what a healthy revenue per employee looks like for your specific agency type and size.</p>
+<p>At Agency Founder Finance, we work exclusively with agency founders. Our specialist team sees the numbers across dozens of UK agencies every month. We know what a healthy revenue per employee looks like for your specific agency type and size.</p>
 
 <p>If you want to benchmark your agency properly, we can help. We will look at your revenue, headcount, gross margin, and utilisation. We will tell you where you sit compared to similar agencies and what specific actions will move the needle. <a href="/contact">Get in touch</a> if that sounds useful.</p>
 

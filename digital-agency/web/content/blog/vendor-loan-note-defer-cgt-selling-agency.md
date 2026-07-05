@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Vendor Loan Notes: Defer CGT When Selling Your Agency'
 metaDescription: Learn how a vendor loan note defers Capital Gains Tax on your agency sale. Structure, tax rates, and worked examples for UK agency founders.
-altText: UK agency founder reviewing a vendor loan note agreement with an ICAEW accountant in a modern office
+altText: UK agency founder reviewing a vendor loan note agreement with a specialist accountant in a modern office
 image: /blog/vendor-loan-note-defer-cgt-selling-agency.jpg
 imageCredit:
   photographer: www.kaboompics.com
@@ -155,7 +155,7 @@ keyTakeaways:
 <li><strong>Plan for the 60-day CGT reporting.</strong> Even with a loan note, you still need to report the cash element of the sale to HMRC within 60 days. Miss the deadline and you face penalties.</li>
 </ol>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we see vendor loan notes used successfully in about one in four agency sales we advise on. They are not universal, but for the right deal, they save significant tax.</p>
+<p>Working exclusively with agency founders, we see vendor loan notes used successfully in about one in four agency sales we advise on. They are not universal, but for the right deal, they save significant tax.</p>
 
 <h2>Common Mistakes Agency Founders Make</h2>
 

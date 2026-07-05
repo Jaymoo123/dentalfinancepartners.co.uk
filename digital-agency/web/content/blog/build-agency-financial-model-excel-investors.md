@@ -42,7 +42,7 @@ keyTakeaways:
 
 <p>This guide walks you through building an agency financial model from scratch in Excel. It is designed for a founder of a 10-to-50 person agency billing between £500k and £5m per year. The same structure works for smaller and larger agencies with minor adjustments.</p>
 
-<p>We are ICAEW qualified accountants who work exclusively with agency founders. We see these models every day. The good ones share a common structure. The bad ones share common mistakes. This guide gives you the structure and helps you avoid the mistakes.</p>
+<p>We work exclusively with agency founders. We see these models every day. The good ones share a common structure. The bad ones share common mistakes. This guide gives you the structure and helps you avoid the mistakes.</p>
 
 <h2>Why Most Agency Financial Models Fail</h2>
 
@@ -197,7 +197,7 @@ keyTakeaways:
 
 <p>For most UK agency founders, the five-tab structure in this guide is enough to start conversations with investors. Build it. Test it. Break it. Then rebuild it until it tells the story of your agency honestly.</p>
 
-<p>If you need a second set of eyes on your model before you present it, <a href="/contact">get in touch</a>. Our ICAEW qualified team works with agency founders every day. We know what investors ask and we know when a model is ready.</p>
+<p>If you need a second set of eyes on your model before you present it, <a href="/contact">get in touch</a>. Our specialist team works with agency founders every day. We know what investors ask and we know when a model is ready.</p>
 
 <p>The <strong>agency finance fundamentals</strong> are not complicated. Revenue, costs, cash. Get those right in your model and you have a tool that helps you run your agency better, regardless of whether you raise investment or not.</p>
 

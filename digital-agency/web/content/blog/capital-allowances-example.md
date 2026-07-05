@@ -122,7 +122,7 @@ imageCredit:
 
 <h2>When to Speak to Your Accountant</h2>
 <p>If you have spent more than £10,000 on equipment in the last 12 months, ask your accountant before year-end. The timing matters. You claim allowances in the period you incur the expenditure, not when you pay the invoice. If you ordered laptops in March but paid in April, the allowance belongs to the March year-end.</p>
-<p>Our ICAEW qualified team at Agency Founder Finance handles capital allowances computations for agency founders across the UK. If you want to check whether your recent purchases qualify, <a href="/contact">get in touch</a>. We work with <a href="/agencies/marketing-agencies">marketing agencies</a>, <a href="/agencies/digital-agencies">digital agencies</a>, and <a href="/agencies/creative-agencies">creative agencies</a> specifically.</p>
+<p>Our team at Agency Founder Finance handles capital allowances computations for agency founders across the UK. If you want to check whether your recent purchases qualify, <a href="/contact">get in touch</a>. We work with <a href="/agencies/marketing-agencies">marketing agencies</a>, <a href="/agencies/digital-agencies">digital agencies</a>, and <a href="/agencies/creative-agencies">creative agencies</a> specifically.</p>
 <p>Capital allowances are one of the most straightforward ways to reduce your corporation tax bill. The example above shows how a £62,500 spend can save between £11,875 and £15,625 in tax. That is real cash in your pocket, not deferred relief. Use it.</p>
 
 <h2>Sources</h2>

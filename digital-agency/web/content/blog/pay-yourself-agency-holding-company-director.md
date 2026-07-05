@@ -49,7 +49,7 @@ keyTakeaways:
 <p>There are two main ways agency founders set up holding company structures. Which one you have determines how you pay yourself.</p>
 <p><strong>Structure A: Holding company owns agency shares, you own holding company shares.</strong> The agency pays dividends up to the holding company. The holding company then pays dividends to you. This is the standard group structure.</p>
 <p><strong>Structure B: You own shares in both companies directly.</strong> Less common, but some founders do this for flexibility. You are a director of both and a shareholder of both.</p>
-<p>Most ICAEW qualified accountants will recommend Structure A for agency groups. It keeps the ownership chain clean and makes exit planning easier.</p>
+<p>Most specialist agency accountants will recommend Structure A for agency groups. It keeps the ownership chain clean and makes exit planning easier.</p>
 
 <h2>Salary: Pick One Company</h2>
 <p>You can take a salary from either the holding company or the agency. Do not take a salary from both unless you want double the payroll admin and a potential tax headache.</p>
@@ -68,7 +68,7 @@ keyTakeaways:
 <p>When you have two companies, the temptation is to move money between them informally. You take £5,000 from the agency account for a personal expense. You take another £3,000 from the holding company. You pay for a family holiday from the agency credit card.</p>
 <p>That creates director's loan account (DLA) entries. If the total owed to either company exceeds £10,000 at any point in the tax year, the company must report it as a beneficial loan on your P11D. You pay tax on the notional interest benefit. Worse, if the loan is not repaid within nine months of the company's year end, the company pays Section 455 tax at 35.75% on the outstanding amount.</p>
 <p>With two companies, you have two DLAs to track. And the rules apply separately to each company. You could be within limits in the agency but overdrawn in the holding company. The Section 455 charge applies per company.</p>
-<p>Our ICAEW qualified team sees this constantly. Agency founders treat the group as one pot of money. HMRC does not see it that way. Each company is a separate legal entity. Each DLA is a separate obligation.</p>
+<p>Our specialist team sees this constantly. Agency founders treat the group as one pot of money. HMRC does not see it that way. Each company is a separate legal entity. Each DLA is a separate obligation.</p>
 <p>If you need to borrow from the group, borrow from one company only. Keep a written loan agreement. Set a repayment schedule. And repay within nine months of the year end if you want to avoid the 35.75% charge.</p>
 
 <h2>Pension Contributions: One of the Best Ways to Pay Yourself</h2>
@@ -110,7 +110,7 @@ keyTakeaways:
 
 <h2>When to Speak to Your Accountant</h2>
 <p>If your group structure has changed recently, or you are planning to add a new agency subsidiary, talk to your accountant before you change how you pay yourself. The rules around group structures, director's loan accounts, and dividend routing are specific. A mistake costs more to fix than it does to get right the first time.</p>
-<p>If you do not have an accountant who understands agency groups, <a href="/services">our ICAEW qualified team</a> works with agency founders across the UK. We see these structures every day. We know where the traps are.</p>
+<p>If you do not have an accountant who understands agency groups, <a href="/services">our specialist team</a> works with agency founders across the UK. We see these structures every day. We know where the traps are.</p>
 
 <h2>Related articles in Salary and Dividends</h2>
 <ul>

@@ -193,7 +193,7 @@ keyTakeaways:
 
 <h3>5. Get Professional Advice</h3>
 
-<p>IR35 is not a set-and-forget area. The rules change, HMRC's interpretation evolves, and your freelancer arrangements change as your agency grows. Working with an <a href="/services">ICAEW qualified accountant</a> who understands agency finances and IR35 compliance is essential.</p>
+<p>IR35 is not a set-and-forget area. The rules change, HMRC's interpretation evolves, and your freelancer arrangements change as your agency grows. Working with an <a href="/services">specialist agency accountant</a> who understands agency finances and IR35 compliance is essential.</p>
 
 <p>At Agency Founder Finance, we work exclusively with agency founders. We know the IR35 freelancers agency landscape because we deal with it daily. If your contractor mix has changed in the last 12 months, ask your accountant before year-end. If you do not have an accountant who understands agency IR35, <a href="/contact">speak to us</a>.</p>
 

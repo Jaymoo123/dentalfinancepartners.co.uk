@@ -117,7 +117,7 @@ keyTakeaways:
 <h2>Get Professional Advice</h2>
 <p>This guide covers the basics. But UAE content law is complex and evolves. What is acceptable today may not be acceptable tomorrow. The authorities also have discretion in how they interpret the laws.</p>
 <p>If you are serious about operating in the UAE, work with a local lawyer who specialises in media and cybercrime law. They can review your specific content and give you tailored advice. Do not rely on general guides or hearsay from other agency founders.</p>
-<p>As ICAEW qualified accountants, we focus on the financial and tax side of your agency structure. But we work closely with legal partners who handle the compliance side. If you are planning a move to Dubai or setting up a UAE subsidiary, talk to us early. We can help you structure the entity and then connect you with the right legal advisors for the content compliance piece.</p>
+<p>Working exclusively with agency founders, we focus on the financial and tax side of your agency structure. But we work closely with legal partners who handle the compliance side. If you are planning a move to Dubai or setting up a UAE subsidiary, talk to us early. We can help you structure the entity and then connect you with the right legal advisors for the content compliance piece.</p>
 <p>Your agency website is your shop window. Make sure it does not get you shut down.</p>
 
 <h2>Related articles in International Agencies</h2>

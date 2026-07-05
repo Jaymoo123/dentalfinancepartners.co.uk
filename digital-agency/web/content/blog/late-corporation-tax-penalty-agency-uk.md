@@ -118,7 +118,7 @@ keyTakeaways:
 
 <p><strong>Founder distraction.</strong> Growing an agency takes all your attention. Filing a CT600 feels administrative, not strategic. So it gets deferred. Then forgotten. Then penalised.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we see this every quarter. It is fixable, but it requires a system, not just good intentions.</p>
+<p>Working exclusively with agency founders, we see this every quarter. It is fixable, but it requires a system, not just good intentions.</p>
 
 <h2>How to Avoid Late Corporation Tax Penalties</h2>
 
@@ -199,4 +199,4 @@ keyTakeaways:
 
 <p>If your contractor mix or business structure has changed in the last 12 months, ask your accountant before year end. Changes in <a href="/blog/contractors-and-ir35">contractor arrangements</a> or <a href="/blog/incorporation-and-structure">company structure</a> can affect your filing requirements. Better to know now than after the deadline.</p>
 
-<p>If you are an agency founder and want to make sure your corporation tax filing is handled properly, <a href="/contact">get in touch</a>. Our ICAEW qualified team works exclusively with agencies and knows the deadlines inside out.</p>
+<p>If you are an agency founder and want to make sure your corporation tax filing is handled properly, <a href="/contact">get in touch</a>. Our specialist team works exclusively with agencies and knows the deadlines inside out.</p>

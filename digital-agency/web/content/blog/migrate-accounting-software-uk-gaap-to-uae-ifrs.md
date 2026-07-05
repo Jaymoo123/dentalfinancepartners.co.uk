@@ -128,7 +128,7 @@ keyTakeaways:
 
 <h2>Common Mistakes Agency Founders Make</h2>
 
-<p><strong>Mistake 1: Assuming your UK accountant can handle UAE IFRS.</strong> Most UK accountants trained on UK GAAP. IFRS is a different framework. If your UK accountant has not prepared IFRS-compliant accounts for a UAE entity before, they will make errors. Use an accountant who understands both regimes. Our <a href="/services">ICAEW qualified team</a> works with agencies operating in both the UK and UAE.</p>
+<p><strong>Mistake 1: Assuming your UK accountant can handle UAE IFRS.</strong> Most UK accountants trained on UK GAAP. IFRS is a different framework. If your UK accountant has not prepared IFRS-compliant accounts for a UAE entity before, they will make errors. Use an accountant who understands both regimes. Our <a href="/services">specialist team</a> works with agencies operating in both the UK and UAE.</p>
 
 <p><strong>Mistake 2: Keeping both entities in one software file.</strong> This creates a single point of failure. If your software corrupts, you lose both sets of books. If your bookkeeper posts a transaction to the wrong entity, you have a reconciliation nightmare. Separate files, separate charts of accounts, separate bank feeds.</p>
 

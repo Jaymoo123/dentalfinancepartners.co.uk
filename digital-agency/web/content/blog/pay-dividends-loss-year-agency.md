@@ -66,7 +66,7 @@ keyTakeaways:
 <h3>2. The Liquidity Test</h3>
 <p>Even if you have distributable profits on paper, you need to consider whether paying the dividend would leave your agency unable to pay its debts as they fall due. This is the wrongful trading risk. If you pay a dividend and your agency becomes insolvent within 12 months, the dividend could be clawed back and you could face personal liability.</p>
 
-<p>As ICAEW qualified accountants, we see founders focus entirely on the profit test and forget the liquidity test. Both matter.</p>
+<p>Working exclusively with agency founders, we see founders focus entirely on the profit test and forget the liquidity test. Both matter.</p>
 
 <h2>What Happens If You Pay a Dividend From a Loss</h2>
 

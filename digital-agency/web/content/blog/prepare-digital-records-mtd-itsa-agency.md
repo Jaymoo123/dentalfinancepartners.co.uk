@@ -77,7 +77,7 @@ keyTakeaways:
 
 <p>You must also keep the original source documents, invoices, receipts, bank statements, but those can be digital copies. HMRC accepts scanned receipts and digital invoices. You do not need to keep paper originals, though many accountants recommend keeping them for six years as a backup.</p>
 
-<p>Our ICAEW qualified team recommends using Dext or AutoEntry for receipt capture. Both integrate with the main accounting platforms and let you photograph receipts on your phone. The software extracts the key data and categorises it. No more lost receipts from that client lunch in Shoreditch.</p>
+<p>Our specialist team recommends using Dext or AutoEntry for receipt capture. Both integrate with the main accounting platforms and let you photograph receipts on your phone. The software extracts the key data and categorises it. No more lost receipts from that client lunch in Shoreditch.</p>
 
 <h2>Which Software Is MTD ITSA Compatible?</h2>
 
@@ -161,7 +161,7 @@ keyTakeaways:
 
 <h2>How Your Accountant Can Help</h2>
 
-<p>If you work with an ICAEW qualified accountant like Agency Founder Finance, they handle the technical compliance. You handle the record-keeping. Under MTD ITSA, that division of labour becomes even more important.</p>
+<p>If you work with an specialist agency accountant like Agency Founder Finance, they handle the technical compliance. You handle the record-keeping. Under MTD ITSA, that division of labour becomes even more important.</p>
 
 <p>Your accountant can:</p>
 <ul>
@@ -192,6 +192,6 @@ keyTakeaways:
 
 <p>To <strong>prepare digital records MTD ITSA agency</strong> founders need to act now. Set up your software. Connect your bank feeds. Start capturing receipts digitally. Run a test quarter. By the time the 2026 deadline arrives, you will wonder why you ever did it the old way.</p>
 
-<p>If you need guidance specific to your agency's situation, <a href="/contact">contact us</a>. Our ICAEW qualified team works exclusively with agency founders. We know the software, the deadlines, and the practical realities of running a client services business while staying compliant.</p>
+<p>If you need guidance specific to your agency's situation, <a href="/contact">contact us</a>. Our specialist team works exclusively with agency founders. We know the software, the deadlines, and the practical realities of running a client services business while staying compliant.</p>
 
 <p>For more on digital record-keeping and compliance, browse our <a href="/blog/tax-and-compliance">tax and compliance blog</a> or our <a href="/blog/making-tax-digital">Making Tax Digital articles</a>.</p>

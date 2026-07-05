@@ -177,7 +177,7 @@ keyTakeaways:
 
 <p>If your digital product sales are growing, speak to your accountant before you hit the VAT registration threshold. The MOSS registration process takes time, and you want it in place before your first EU B2C sale, not after.</p>
 
-<p>At <a href="/services">Agency Founder Finance</a>, we help agency founders navigate exactly these scenarios. Our ICAEW qualified team works with digital agencies, creative agencies, and web design agencies across the UK. If your digital product sales are creating VAT complexity, <a href="/contact">get in touch</a>.</p>
+<p>At <a href="/services">Agency Founder Finance</a>, we help agency founders navigate exactly these scenarios. Our specialist team works with digital agencies, creative agencies, and web design agencies across the UK. If your digital product sales are creating VAT complexity, <a href="/contact">get in touch</a>.</p>
 
 <p>The VAT rules for digital products are not difficult once you understand the place of supply principle. But they are different from what you apply to your client services. Get the distinction right, and you avoid nasty surprises at year-end.</p>
 

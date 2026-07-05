@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'P11D Agency Director: What to Report as Benefits in Kind'
 metaDescription: P11D agency director reporting explained. What counts as a benefit in kind, what to report, and the penalties for getting it wrong. Practical guide for UK
-altText: ICAEW qualified accountant reviewing P11D forms with an agency director in a modern London office
+altText: specialist agency accountant reviewing P11D forms with an agency director in a modern London office
 image: /blog/p11d-benefits-kind-agency-directors.jpg
 imageCredit:
   photographer: Pavel Danilyuk
@@ -153,7 +153,7 @@ keyTakeaways:
 <li>You're not sure whether something counts as a benefit or a business expense</li>
 </ul>
 
-<p>As ICAEW qualified accountants, we see P11D errors regularly in agency clients. The good news is that most are fixable if caught early. The bad news is that HMRC penalties add up fast if you ignore the requirement.</p>
+<p>Working exclusively with agency founders, we see P11D errors regularly in agency clients. The good news is that most are fixable if caught early. The bad news is that HMRC penalties add up fast if you ignore the requirement.</p>
 
 <p>If you need help with your P11D reporting, <a href="/contact">get in touch with us</a>. We handle this for agency clients across the UK, from Shoreditch to Manchester's Northern Quarter.</p>
 

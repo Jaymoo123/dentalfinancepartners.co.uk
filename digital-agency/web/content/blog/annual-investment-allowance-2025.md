@@ -80,7 +80,7 @@ imageCredit:
 <li><strong>Assets bought in the period your business ceases to trade</strong>, no AIA in the final accounting period</li>
 </ul>
 
-<p>If you are unsure whether a specific purchase qualifies, ask your accountant before you buy. Our <a href="/services">ICAEW qualified team</a> can review your planned expenditure and confirm the relief available.</p>
+<p>If you are unsure whether a specific purchase qualifies, ask your accountant before you buy. Our <a href="/services">specialist team</a> can review your planned expenditure and confirm the relief available.</p>
 
 <h2>When is an asset "bought"?</h2>
 
@@ -147,7 +147,7 @@ imageCredit:
 
 <h2>How Agency Founder Finance can help</h2>
 
-<p>We are <a href="/about">ICAEW qualified accountants</a> who work exclusively with agency founders. We know how agencies operate, what equipment they need, and how to structure capital allowance claims for maximum tax relief.</p>
+<p>We work exclusively with agency founders. We know how agencies operate, what equipment they need, and how to structure capital allowance claims for maximum tax relief.</p>
 
 <p>If you are planning a significant equipment purchase, or if you want to review your current year's capital allowance position, <a href="/contact">get in touch</a>. We will run the numbers and tell you exactly what relief you are entitled to.</p>
 

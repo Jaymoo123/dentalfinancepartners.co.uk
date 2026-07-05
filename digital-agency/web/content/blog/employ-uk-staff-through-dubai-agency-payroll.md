@@ -121,6 +121,6 @@ keyTakeaways:
 <p>For agency founders who are themselves UK nationals living in Dubai, the rules around your own salary and dividends are different again. We cover that in our guide on <a href="/blog/salary-and-dividends">salary and dividends for agency founders</a>.</p>
 
 <h2>How Agency Founder Finance Can Help</h2>
-<p>As ICAEW qualified accountants, we work with agency founders running cross-border operations between the UK and UAE. We help you structure employment correctly from day one, whether through an EOR, a UK subsidiary, or direct registration.</p>
+<p>Working exclusively with agency founders, we work with agency founders running cross-border operations between the UK and UAE. We help you structure employment correctly from day one, whether through an EOR, a UK subsidiary, or direct registration.</p>
 <p>If you already have UK staff on your Dubai payroll, we can help you regularise the position with HMRC and minimise penalties. The key is to act before HMRC contacts you, not after.</p>
 <p>Get in touch through our <a href="/contact">contact page</a> or read more about how we work with <a href="/agencies">agencies</a> of all types, including <a href="/agencies/digital-agencies">digital agencies</a>, <a href="/agencies/creative-agencies">creative agencies</a>, and <a href="/agencies/marketing-agencies">marketing agencies</a>.</p>

@@ -159,7 +159,7 @@ keyTakeaways:
 
 <p><strong>Mixing R&D and non-R&D costs.</strong> If a developer spent 60% of their time on R&D and 40% on production work, only the 60% qualifies. HMRC expects reasonable allocation. Use timesheets or project tracking.</p>
 
-<p><strong>Not using a specialist accountant.</strong> R&D claims for AI work are technically complex. A general accountant who files a standard claim form without understanding the technology will miss qualifying costs and risk rejection. As ICAEW qualified accountants working exclusively with agency founders, we see this regularly.</p>
+<p><strong>Not using a specialist accountant.</strong> R&D claims for AI work are technically complex. A general accountant who files a standard claim form without understanding the technology will miss qualifying costs and risk rejection. Working exclusively with agency founders, we see this regularly.</p>
 
 <h2>Real Numbers: What a Typical AI Agency Claim Looks Like</h2>
 

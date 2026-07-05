@@ -158,6 +158,6 @@ Talk to the staff member on the retainer. Ask them: who sets your deadlines? Who
 
 <p>If you have any retainer where a staff member works predominantly on one client, or where the client has significant control over the work, speak to your accountant before your next contract renewal. Do not wait until HMRC writes to you.</p>
 
-<p>Our <a href="/services">ICAEW qualified team</a> at Agency Founder Finance works with agency founders across the UK on exactly this issue. We review retainer contracts, audit working practices, and advise on restructuring before HMRC gets involved. If your retainer book has grown in the last 12 months, or if you have staff who are effectively embedded with clients, <a href="/contact">get in touch</a> for a review.</p>
+<p>Our <a href="/services">specialist team</a> at Agency Founder Finance works with agency founders across the UK on exactly this issue. We review retainer contracts, audit working practices, and advise on restructuring before HMRC gets involved. If your retainer book has grown in the last 12 months, or if you have staff who are effectively embedded with clients, <a href="/contact">get in touch</a> for a review.</p>
 
 <p>The key point is this: you are running an agency, not a staffing company. Your contracts and your working practices should reflect that. If they do not, the tax liability is yours, not your client's. Fix it now, before HMRC finds it for you.</p>

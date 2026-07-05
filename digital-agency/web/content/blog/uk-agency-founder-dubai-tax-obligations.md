@@ -22,7 +22,7 @@ faqs:
 - question: Do I need to pay UK tax if I live in Dubai and own a UK agency?
   answer: Your personal UK tax depends on your residency status. If you pass the Statutory Residence Test and are genuinely non-resident, you do not pay UK tax on most income, including dividends from your UK company under the UK-UAE Double Taxation Agreement. But your UK company still pays corporation tax on its profits, and you still have filing obligations. If HMRC considers you UK-resident, you pay UK tax as normal.
 - question: Can my UK company become tax-resident in the UAE?
-  answer: In theory, yes, if the company's management and control takes place entirely in the UAE. In practice, it is difficult for agencies with UK clients, UK staff, or UK bank accounts. HMRC resists these arguments, and the process is complex. Most agency founders keep their company UK-tax-resident and manage their personal position instead. Speak to an ICAEW-qualified accountant before attempting this.
+  answer: In theory, yes, if the company's management and control takes place entirely in the UAE. In practice, it is difficult for agencies with UK clients, UK staff, or UK bank accounts. HMRC resists these arguments, and the process is complex. Most agency founders keep their company UK-tax-resident and manage their personal position instead. Speak to an specialist accountant before attempting this.
 - question: How many days can I spend in the UK without becoming resident?
   answer: If you have been non-resident for the previous three tax years, you can spend up to 45 days in the UK per tax year without becoming resident. If you have been UK-resident in any of the previous three years, the limit drops to 15 days. These limits change if you have sufficient ties to the UK, such as family, accommodation, or UK work. The full SRT calculation is needed for certainty.
 - question: What happens if HMRC challenges my non-residency?
@@ -74,7 +74,7 @@ keyTakeaways:
 
 <p>What can change is where the company's management and control takes place. If you run the company entirely from Dubai, with no board meetings in the UK and all strategic decisions made from your desk in Dubai Marina, there is an argument that the company is managed and controlled from the UAE. That could shift its tax residence. But it is a complex area, and HMRC resists it. You would need professional advice before attempting this, and even then, it rarely succeeds for agencies with UK clients, UK staff, or UK bank accounts.</p>
 
-<p>For almost all agency founders, the safest approach is to accept that your UK company remains UK-tax-resident and file accordingly. If you want to explore changing your company's tax residence, speak to an ICAEW-qualified accountant who specialises in international structures. Do not attempt it based on online forums.</p>
+<p>For almost all agency founders, the safest approach is to accept that your UK company remains UK-tax-resident and file accordingly. If you want to explore changing your company's tax residence, speak to an specialist accountant who specialises in international structures. Do not attempt it based on online forums.</p>
 
 <h2>Dividends and Your Personal Tax Position</h2>
 
@@ -121,7 +121,7 @@ keyTakeaways:
 <li><strong>Keep your UK company compliant.</strong> File your CT600, annual accounts, and confirmation statement on time. Pay corporation tax when due. If you use a cloud accounting platform like Xero or QuickBooks, your accountant can manage this remotely.</li>
 <li><strong>Process dividends correctly.</strong> Do not take informal drawings. Hold board meetings (even virtually) and issue dividend vouchers. Keep minutes showing the dividend was declared properly.</li>
 <li><strong>Monitor your director's loan account.</strong> Review it quarterly. Clear any overdrawn balance before the nine-month deadline.</li>
-<li><strong>Get professional advice.</strong> This is not a DIY area. The rules on residency, double taxation, and company management interact in ways that are specific to your situation. An ICAEW-qualified accountant who understands agency finances and international tax can save you far more than their fee.</li>
+<li><strong>Get professional advice.</strong> This is not a DIY area. The rules on residency, double taxation, and company management interact in ways that are specific to your situation. An specialist accountant who understands agency finances and international tax can save you far more than their fee.</li>
 </ol>
 
 <p>If you are considering a move to Dubai, or if you are already there and want to check your position, speak to us. We work with agency founders in both the UK and UAE, and we know the questions HMRC asks. <a href="/contact">Contact our team</a> to arrange a call.</p>

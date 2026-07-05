@@ -138,7 +138,7 @@ imageCredit:
 
 <h2>How Agency Founder Finance Can Help</h2>
 
-<p>We are <a href="/about">ICAEW qualified accountants</a> who work exclusively with agency founders. We see the AIA claim every day. It is one of the simplest ways to reduce your tax bill, but only if you get the timing and classification right.</p>
+<p>We work exclusively with agency founders. We see the AIA claim every day. It is one of the simplest ways to reduce your tax bill, but only if you get the timing and classification right.</p>
 
 <p>If you are planning a significant equipment purchase, or if you think you may have missed AIA claims in previous years, <a href="/contact">get in touch</a>. We can review your fixed asset register and your past tax returns to make sure you are claiming everything you are entitled to.</p>
 

@@ -44,7 +44,7 @@ keyTakeaways:
 
 <p>Without the right paperwork and structure, the IRS can take a cut of that income. And HMRC can take a cut too. That is <strong>double taxation on US client income</strong> for your agency, and it can cost you anywhere from 15% to 30% of the revenue you earned from that client.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we see this issue crop up regularly. The good news is that the US-UK Double Taxation Treaty exists specifically to prevent this. But you have to know how to use it. You cannot just assume it applies.</p>
+<p>Working exclusively with agency founders, we see this issue crop up regularly. The good news is that the US-UK Double Taxation Treaty exists specifically to prevent this. But you have to know how to use it. You cannot just assume it applies.</p>
 
 <h2>What Double Taxation Actually Means for Your Agency</h2>
 
@@ -143,7 +143,7 @@ keyTakeaways:
 
 <p>And if your US revenue is growing, have a conversation with your accountant about whether a US entity makes sense. That decision depends on your revenue level, your US presence, and your long-term plans. It is not a decision to make alone.</p>
 
-<p>At Agency Founder Finance, we are ICAEW qualified accountants who work exclusively with agency founders. We help agencies like yours structure cross-border income correctly, avoid double taxation, and keep more of what you earn. If you want to discuss your specific situation, <a href="/contact">get in touch</a>.</p>
+<p>At Agency Founder Finance, we work exclusively with agency founders. We help agencies like yours structure cross-border income correctly, avoid double taxation, and keep more of what you earn. If you want to discuss your specific situation, <a href="/contact">get in touch</a>.</p>
 
 <h2>Related articles in International Agencies</h2>
 <ul>

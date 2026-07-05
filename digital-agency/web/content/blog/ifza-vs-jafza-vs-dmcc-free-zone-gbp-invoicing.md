@@ -146,7 +146,7 @@ keyTakeaways:
 
 <p>Avoid JAFZA unless you have a specific reason (such as a logistics or trading component to your business). The banking friction is not worth the hassle for a pure agency operation.</p>
 
-<p>As ICAEW qualified accountants working with agency founders, we have seen too many founders choose a free zone based on cost alone, then spend months fixing banking issues. Get the banking right first. The free zone decision follows.</p>
+<p>As specialist agency accountants working with agency founders, we have seen too many founders choose a free zone based on cost alone, then spend months fixing banking issues. Get the banking right first. The free zone decision follows.</p>
 
 <p>If you are considering a Dubai entity and want to understand the full tax and banking implications for your UK agency, <a href="/contact">speak to our team</a>. We work with agency founders in both the UK and UAE.</p>
 

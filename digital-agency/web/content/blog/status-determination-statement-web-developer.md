@@ -143,7 +143,7 @@ keyTakeaways:
 
 <h2>How Agency Founder Finance Can Help</h2>
 
-<p>We work with agency founders across the UK who engage web developers, designers, copywriters, and other contractors. As <a href="/about">ICAEW qualified accountants</a>, we review your contractor engagements, help you draft compliant SDS documents, and advise on IR35 risk before HMRC comes knocking.</p>
+<p>We work with agency founders across the UK who engage web developers, designers, copywriters, and other contractors. Working exclusively with agency founders, we review your contractor engagements, help you draft compliant SDS documents, and advise on IR35 risk before HMRC comes knocking.</p>
 
 <p>If your contractor mix has changed in the last 12 months, or you are about to bring on a web developer for a major project, <a href="/contact">get in touch</a>. We will review your current SDS process and make sure you are covered.</p>
 

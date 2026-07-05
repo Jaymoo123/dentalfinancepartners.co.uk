@@ -42,7 +42,7 @@ keyTakeaways:
 
 <p>The SDS is the document that sets out whether the contractor falls inside or outside IR35. If you get it wrong, or if you do not issue one at all, the liability for unpaid tax and National Insurance falls on your agency. Not the contractor. Not the end client. You.</p>
 
-<p>We have seen agencies hit with six-figure bills because they assumed the end client would handle the determination, or because they used HMRC's CEST tool without understanding its limits. As ICAEW qualified accountants who work exclusively with agency founders, we want to make sure you have the practical detail you need.</p>
+<p>We have seen agencies hit with six-figure bills because they assumed the end client would handle the determination, or because they used HMRC's CEST tool without understanding its limits. Working exclusively with agency founders, we want to make sure you have the practical detail you need.</p>
 
 <p>This article covers the legal requirements for an SDS IR35 agency document, the four key employment tests you must apply, and a template you can adapt for your own engagements.</p>
 

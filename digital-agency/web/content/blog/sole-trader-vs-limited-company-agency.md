@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Sole Trader vs Limited Company Agency: Which Structure Wins?'
 metaDescription: 'Sole trader vs limited company agency: tax, liability, and growth compared. Real numbers for UK agency founders. Make the right call before you'
-altText: ICAEW qualified accountant reviewing paperwork with a UK agency founder in a modern office setting
+altText: specialist agency accountant reviewing paperwork with a UK agency founder in a modern office setting
 image: /blog/sole-trader-vs-limited-company-agency.jpg
 imageCredit:
   photographer: Tima Miroshnichenko
@@ -245,7 +245,7 @@ keyTakeaways:
 
 <p>The worst move is not making a decision at all. Many agency founders drift as sole traders for years, paying more tax than necessary and carrying personal risk they do not fully understand.</p>
 
-<p>If your profit has crossed £50,000 and you are still a sole trader, it is time to have the conversation. <a href="/contact">Speak to our ICAEW qualified team</a> and we will run the numbers for your specific situation.</p>
+<p>If your profit has crossed £50,000 and you are still a sole trader, it is time to have the conversation. <a href="/contact">Speak to our specialist team</a> and we will run the numbers for your specific situation.</p>
 
 <h2>Frequently Asked Questions</h2>
 

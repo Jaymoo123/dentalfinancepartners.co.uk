@@ -149,7 +149,7 @@ keyTakeaways:
 <li>You are considering moving overseas or restructuring your agency with an international element.</li>
 </ul>
 
-<p>Our <a href="/services">ICAEW qualified team</a> at Agency Founder Finance works with agency founders who have international income streams. We handle the CT600, the CT600J, the double tax relief computations, and the transfer pricing documentation. If your agency has foreign income, get it on the return correctly from day one.</p>
+<p>Our <a href="/services">specialist team</a> at Agency Founder Finance works with agency founders who have international income streams. We handle the CT600, the CT600J, the double tax relief computations, and the transfer pricing documentation. If your agency has foreign income, get it on the return correctly from day one.</p>
 
 <h2>Summary</h2>
 

@@ -26,7 +26,7 @@ faqs:
 - question: Can accrual accounting make my agency look less profitable than it really is?
   answer: Yes, but only temporarily. If you have completed work that you have not yet invoiced, accrual accounting requires you to recognise that revenue as accrued income. This can make your P&L look less profitable in the short term if you are not posting those accruals. The opposite is also true, recognising revenue before it is earned inflates profit. The key is consistency. Proper accrual accounting smooths out these timing differences and gives you a reliable picture over time.
 - question: Do I need an accountant to set up accrual accounting for my agency?
-  answer: You can set up basic accruals yourself using the built-in features of Xero, QuickBooks, or FreeAgent. But most agency founders find it easier to have an accountant set up the chart of accounts, deferred revenue templates, and monthly accrual journals. If your agency has more than five staff or turnover above £250k, the complexity of project tracking, scope creep, and milestone billing usually justifies professional help. An ICAEW qualified accountant who works with agencies can get this right in a few hours.
+  answer: You can set up basic accruals yourself using the built-in features of Xero, QuickBooks, or FreeAgent. But most agency founders find it easier to have an accountant set up the chart of accounts, deferred revenue templates, and monthly accrual journals. If your agency has more than five staff or turnover above £250k, the complexity of project tracking, scope creep, and milestone billing usually justifies professional help. An specialist agency accountant who works with agencies can get this right in a few hours.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -137,7 +137,7 @@ keyTakeaways:
 
 <p>For agencies with turnover above £250k, we recommend monthly management accounts that include a cash flow forecast alongside the accrual P&L. This gives you the complete picture.</p>
 
-<p>If you are working with an ICAEW qualified accountant, like our team at Agency Founder Finance, they should be providing this as standard. If they are not, ask why.</p>
+<p>If you are working with an specialist agency accountant, like our team at Agency Founder Finance, they should be providing this as standard. If they are not, ask why.</p>
 
 <h2>What Good Looks Like: A Real Example</h2>
 
@@ -159,4 +159,4 @@ keyTakeaways:
 
 <p>If your accountant has not explained this to you, or if your management accounts do not include proper accruals, that is a red flag. <strong>Agency finance fundamentals</strong> should be the foundation of your financial reporting, not an afterthought.</p>
 
-<p>We work exclusively with agency founders at Agency Founder Finance. Our ICAEW qualified team understands the specific accounting challenges that agencies face. If you want to get your numbers right, <a href="/services">see how we work with agencies</a> or <a href="/contact">get in touch</a>.</p>
+<p>We work exclusively with agency founders at Agency Founder Finance. Our specialist team understands the specific accounting challenges that agencies face. If you want to get your numbers right, <a href="/services">see how we work with agencies</a> or <a href="/contact">get in touch</a>.</p>

@@ -112,7 +112,7 @@ keyTakeaways:
 <li><strong>Employment contracts:</strong> Your UK employment contracts likely include IP assignment clauses. These need to be reviewed for UAE compliance. The UAE Labour Law has specific provisions about employee inventions and IP ownership.</li>
 <li><strong>Domain portfolio:</strong> Register all relevant UAE domains (.ae, .dubai) plus common misspellings. A squatter registering "youragency.ae" with one letter different is surprisingly common.</li>
 </ul>
-<p>As ICAEW qualified accountants, we don't provide legal advice on trademark registration. But we see the financial consequences of founders skipping this step. The £2,000-£3,000 you spend on a UAE trademark application is trivial compared to the £15,000-£50,000 buyback cost if you don't.</p>
+<p>Working exclusively with agency founders, we don't provide legal advice on trademark registration. But we see the financial consequences of founders skipping this step. The £2,000-£3,000 you spend on a UAE trademark application is trivial compared to the £15,000-£50,000 buyback cost if you don't.</p>
 
 <h2>How Your Agency Structure Affects IP Ownership</h2>
 

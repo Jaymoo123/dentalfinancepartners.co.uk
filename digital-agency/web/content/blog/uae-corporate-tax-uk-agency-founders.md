@@ -38,7 +38,7 @@ keyTakeaways:
 
 <p>This is not a small tweak. It is the first time the UAE has introduced a broad-based corporate tax. For UK agency founders who moved to Dubai to take advantage of the zero-tax environment, or who run a branch of their UK agency from a free zone, the rules around UAE corporate tax UK agency interactions now matter a great deal.</p>
 
-<p>In this article, I will explain how the UAE corporate tax works, who it applies to, and how it interacts with your UK tax obligations. I will use real numbers and agency scenarios. As ICAEW qualified accountants, we work with agency founders operating in both jurisdictions, so this is grounded in what we see day to day.</p>
+<p>In this article, I will explain how the UAE corporate tax works, who it applies to, and how it interacts with your UK tax obligations. I will use real numbers and agency scenarios. Working exclusively with agency founders, we work with agency founders operating in both jurisdictions, so this is grounded in what we see day to day.</p>
 
 <h2>What Is the UAE Corporate Tax Rate?</h2>
 
@@ -189,7 +189,7 @@ keyTakeaways:
 
 <p><strong>Mistake 3: Ignoring substance requirements.</strong> A free zone company with no office, no staff, and no bank account in the UAE will not qualify for the 0% rate. And HMRC may see it as a tax avoidance structure. Do it properly or do not do it at all.</p>
 
-<p>The UAE corporate tax regime is still relatively new. The FTA is still issuing guidance and clarifying rules. If you are operating in both jurisdictions, stay informed and get advice tailored to your situation. As ICAEW qualified accountants working specifically with agency founders, we can help you navigate this. <a href="/services">Our services</a> page covers how we support international agency structures.</p>
+<p>The UAE corporate tax regime is still relatively new. The FTA is still issuing guidance and clarifying rules. If you are operating in both jurisdictions, stay informed and get advice tailored to your situation. As specialist agency accountants working specifically with agency founders, we can help you navigate this. <a href="/services">Our services</a> page covers how we support international agency structures.</p>
 
 <h2>Related articles in International Agencies</h2>
 <ul>

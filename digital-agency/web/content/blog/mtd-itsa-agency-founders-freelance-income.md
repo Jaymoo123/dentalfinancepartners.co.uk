@@ -94,7 +94,7 @@ keyTakeaways:
 
 <p><strong>Dext</strong> is worth considering for receipt capture. It integrates with most accounting platforms and automates the digital record-keeping requirement. If you hate manual data entry, Dext saves hours.</p>
 
-<p>We recommend speaking to your accountant before choosing software. Not all platforms handle the mixed-income scenario well. As ICAEW qualified accountants, we help agency founders set up the right structure for both their agency and personal finances. You can <a href="/contact">contact us</a> to discuss your specific situation.</p>
+<p>We recommend speaking to your accountant before choosing software. Not all platforms handle the mixed-income scenario well. Working exclusively with agency founders, we help agency founders set up the right structure for both their agency and personal finances. You can <a href="/contact">contact us</a> to discuss your specific situation.</p>
 
 <h2>How to Prepare Now, Before April 2026</h2>
 
@@ -152,4 +152,4 @@ keyTakeaways:
 
 <p>Set up digital record-keeping now. Choose MTD-compatible software. Keep your freelance and agency finances completely separate. And talk to your accountant about how this affects your overall tax position.</p>
 
-<p>We work exclusively with agency founders at <a href="/">Agency Founder Finance</a>. Our ICAEW qualified team understands the mixed-income scenario because we see it every day. If you want to review your position before the April 2026 deadline, <a href="/contact">get in touch</a>.</p>
+<p>We work exclusively with agency founders at <a href="/">Agency Founder Finance</a>. Our specialist team understands the mixed-income scenario because we see it every day. If you want to review your position before the April 2026 deadline, <a href="/contact">get in touch</a>.</p>

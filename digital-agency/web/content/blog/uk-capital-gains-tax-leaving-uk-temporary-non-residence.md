@@ -79,7 +79,7 @@ keyTakeaways:
 
 <h3>What About Business Asset Disposal Relief?</h3>
 
-<p>If you sell your agency shares and qualify for Business Asset Disposal Relief (BADR), the CGT rate is 18% for disposals from 6 April 2025, rising to 18% from 6 April 2026. That is still a significant tax charge. Moving to Dubai to avoid it only works if you stay non-resident for 5 complete tax years.</p>
+<p>If you sell your agency shares and qualify for Business Asset Disposal Relief (BADR), the CGT rate is 14% for disposals from 6 April 2025 to 5 April 2026, rising to 18% from 6 April 2026. That is still a significant tax charge. Moving to Dubai to avoid it only works if you stay non-resident for 5 complete tax years.</p>
 
 <p>BADR itself has its own conditions. You need to hold the shares for at least 2 years, and you must be an officer or employee of the company. If you sell after leaving the UK but before the 2 year holding period ends, you lose the relief entirely. That is a separate issue from the temporary non-residence rule, but it compounds the problem.</p>
 
@@ -127,7 +127,7 @@ keyTakeaways:
 
 <p>For <a href="/agencies/pr-agencies">PR agency</a> and <a href="/agencies/web-design-agencies">web design agency</a> founders, the most common mistake is assuming that working remotely from Dubai for 3 years is enough. It is not. You need to be non-resident for 5 complete tax years, not 3 calendar years. The difference is significant.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we see this issue regularly. The temporary non-residence rule is one of the most misunderstood parts of UK tax law for founders moving to Dubai. It is not complicated. It is just poorly communicated by most advisers.</p>
+<p>Working exclusively with agency founders, we see this issue regularly. The temporary non-residence rule is one of the most misunderstood parts of UK tax law for founders moving to Dubai. It is not complicated. It is just poorly communicated by most advisers.</p>
 
 <h2>What About the UAE Double Tax Treaty?</h2>
 

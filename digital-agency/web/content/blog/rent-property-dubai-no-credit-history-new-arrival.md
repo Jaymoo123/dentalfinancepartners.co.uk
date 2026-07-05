@@ -134,7 +134,7 @@ keyTakeaways:
 
 <p>If you are running an agency from Dubai, this matters. Your ability to secure property without tying up huge cash reserves improves significantly after 12 months. Plan your cash flow accordingly in year one, and you will have more flexibility in year two.</p>
 
-<p>For agency founders managing finances across the UK and UAE, our <a href="/services">ICAEW qualified team</a> can help structure your affairs to minimise tax exposure while meeting Dubai's rental requirements. If you are considering a move, speak to us before you sign anything.</p>
+<p>For agency founders managing finances across the UK and UAE, our <a href="/services">agency-specialist team</a> can help structure your affairs to minimise tax exposure while meeting Dubai's rental requirements. If you are considering a move, speak to us before you sign anything.</p>
 
 <h2>Related articles in International Agencies</h2>
 <ul>

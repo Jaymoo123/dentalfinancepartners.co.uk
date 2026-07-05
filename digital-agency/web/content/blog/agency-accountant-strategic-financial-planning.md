@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: Agency Accountant Services for Strategic Financial Planning
 metaDescription: Most agency founders only use their accountant for compliance. Here's how to get strategic financial planning that drives growth, profitability, and exit
-altText: Agency founder reviewing financial forecasts with an ICAEW qualified accountant in a modern UK office
+altText: Agency founder reviewing financial forecasts with an specialist agency accountant in a modern UK office
 image: /blog/agency-accountant-strategic-financial-planning.jpg
 imageCredit:
   photographer: Artem Podrez
@@ -140,7 +140,7 @@ keyTakeaways:
 
 <p>First, ask them directly: "Can we move to a strategic relationship? I want monthly management accounts, cash flow forecasting, and quarterly planning sessions." If they say no, or quote a price that doesn't reflect the value, consider switching.</p>
 
-<p>Second, look for an accountant who specialises in agencies. <a href="/about">Our ICAEW qualified team</a> works exclusively with agency founders. We understand utilisation rates, retainer vs project billing, IR35, and the specific cash flow patterns of a service business. A generalist accountant won't.</p>
+<p>Second, look for an accountant who specialises in agencies. <a href="/about">Our specialist team</a> works exclusively with agency founders. We understand utilisation rates, retainer vs project billing, IR35, and the specific cash flow patterns of a service business. A generalist accountant won't.</p>
 
 <p>We've written more about <a href="/blog/agency-finance-essentials">agency finance essentials</a> and <a href="/blog/growth-and-exit">growth and exit planning</a> elsewhere on this site.</p>
 

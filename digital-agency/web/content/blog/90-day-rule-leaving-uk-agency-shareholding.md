@@ -125,7 +125,7 @@ keyTakeaways:
 <h3>5. Get Professional Advice Before You Move</h3>
 <p>The 90 day rule is straightforward on paper. In practice, it interacts with other rules, the 30 day rule, the "sufficient ties" test, the overseas workday relief rules, and the temporary non-residence rules.</p>
 
-<p>As ICAEW qualified accountants, we work with agency founders moving to Dubai and other jurisdictions. We help them structure their departure, track their days, and plan their share sale to minimise UK tax.</p>
+<p>Working exclusively with agency founders, we work with agency founders moving to Dubai and other jurisdictions. We help them structure their departure, track their days, and plan their share sale to minimise UK tax.</p>
 
 <p>If you are considering a move, speak to us before you go. A conversation now can save you six figures later.</p>
 

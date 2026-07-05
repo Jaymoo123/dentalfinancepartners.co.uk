@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'BADR Agency Founders: Qualify Before CGT Rates Rise in 2025'
 metaDescription: Capital Gains Tax rates changed in 2025. Here's exactly how BADR agency founders can still qualify for 18% tax on their exit. Conditions, deadlines
-altText: Agency founder reviewing share sale documents with ICAEW accountant in a London office meeting room
+altText: Agency founder reviewing share sale documents with a specialist accountant in a London office meeting room
 image: /blog/qualify-for-badr-agency-shares-2025-cgt-changes.jpg
 imageCredit:
   photographer: Markus Winkler
@@ -36,7 +36,7 @@ keyTakeaways:
 - The two-year qualifying period starts when you meet all conditions, not when you acquired the shares, so plan your role and shareholding well before sale.
 - If you have already used part of your £1m BADR lifetime limit, track the remaining balance from previous tax returns to calculate your relief.
 ---
-<p>If you own shares in your agency and you are thinking about selling up, the 2025 Capital Gains Tax rate changes have made BADR more valuable than ever. The main rate of CGT on business asset disposals rose from 10% to 18% for most assets in the 2025 Budget. But Business Asset Disposal Relief (BADR) still gives you a 18% rate on the first £1m of lifetime gains. That is a saving of £80,000 per million compared to the new main rate.</p>
+<p>If you own shares in your agency and you are thinking about selling up, the 2025 Capital Gains Tax rate changes have made BADR more valuable than ever. The main rate of CGT on business asset disposals rose from 10% to 18% for most assets in the 2025 Budget. But Business Asset Disposal Relief (BADR) still gives you a 14% rate for disposals 6 April 2025 to 5 April 2026 (18% from 6 April 2026) on the first £1m of lifetime gains. That is a saving of £80,000 per million compared to the new main rate.</p>
 
 <p>For BADR agency founders, the difference between qualifying and missing out is the difference between keeping £900,000 and keeping £820,000 on a million-pound exit. The rules have not changed. But the penalty for getting them wrong just got a lot bigger.</p>
 
@@ -74,7 +74,7 @@ keyTakeaways:
 
 <p>If you have diluted your holding through investment rounds or an EMI scheme, check your current percentage. If you are at 4.8%, you cannot rely on BADR. You need to restructure or accept the higher rate.</p>
 
-<p>If you are close to the threshold, speak to an ICAEW qualified accountant before you do anything. There are ways to reorganise share structures, but they need to be done well before the sale.</p>
+<p>If you are close to the threshold, speak to an specialist agency accountant before you do anything. There are ways to reorganise share structures, but they need to be done well before the sale.</p>
 
 <h3>3. The Shares Must Be Held for at Least 24 Months</h3>
 
@@ -167,7 +167,7 @@ keyTakeaways:
 
 <h2>How We Help BADR Agency Founders</h2>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we see these scenarios regularly. We review your share structure, your company's asset composition, and your personal tax position to confirm whether you qualify for BADR. If you do not, we tell you what needs to change and by when.</p>
+<p>Working exclusively with agency founders, we see these scenarios regularly. We review your share structure, your company's asset composition, and your personal tax position to confirm whether you qualify for BADR. If you do not, we tell you what needs to change and by when.</p>
 
 <p>We work with <a href="/agencies/marketing-agencies">marketing agencies</a>, <a href="/agencies/digital-agencies">digital agencies</a>, <a href="/agencies/creative-agencies">creative agencies</a>, and every other agency type. The BADR rules are the same across sectors, but the traps vary depending on how your agency is structured and how it generates revenue.</p>
 

@@ -39,7 +39,7 @@ imageCredit:
 
 <p>Writing down allowance rates determine how much of your capital expenditure you can deduct from your profits each year. From April 2026, the main rate dropped from 18% to 14%, and the special rate pool fell from 6% to 4% <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup>. If you are planning a significant equipment purchase or a studio fit-out, these changes matter.</p>
 
-<p>This article covers what writing down allowances are, how the rates work, what qualifies for each pool, and what the recent changes mean for your agency. As ICAEW qualified accountants working exclusively with agency founders, we see these rules misapplied more often than you would expect. Let us fix that.</p>
+<p>This article covers what writing down allowances are, how the rates work, what qualifies for each pool, and what the recent changes mean for your agency. Working exclusively with agency founders, we see these rules misapplied more often than you would expect. Let us fix that.</p>
 
 <h2>What Are Writing Down Allowances?</h2>
 
@@ -142,7 +142,7 @@ imageCredit:
 
 <h2>How We Help Agency Founders</h2>
 
-<p>At Agency Founder Finance, we are ICAEW qualified accountants who work exclusively with agency founders. We handle capital allowances as part of your annual tax compliance and year-end planning. If your asset register is a mess or you are unsure which pool an asset belongs to, we can sort it out.</p>
+<p>At Agency Founder Finance, we work exclusively with agency founders. We handle capital allowances as part of your annual tax compliance and year-end planning. If your asset register is a mess or you are unsure which pool an asset belongs to, we can sort it out.</p>
 
 <p>We also help with <a href="/services">broader tax and compliance</a> for agencies, including corporation tax returns, VAT, and payroll. If you are thinking about a studio fit-out or a significant equipment purchase, talk to us before you spend the money. The timing and structure of the purchase affect your tax relief.</p>
 

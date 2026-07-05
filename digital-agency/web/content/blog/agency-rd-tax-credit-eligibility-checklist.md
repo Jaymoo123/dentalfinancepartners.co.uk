@@ -101,13 +101,11 @@ keyTakeaways:
 
 <p>There are two schemes. Which one applies depends on your company size.</p>
 
-<h3>SME R&D Relief</h3>
-<p>If your agency has under 500 employees and either turnover under €100m or a balance sheet under €86m, you are an SME for R&D purposes. The relief works like this:</p>
-<p>You can claim an enhanced deduction of 186% of your qualifying R&D expenditure. That means for every £10,000 you spent on qualifying R&D salaries, software, or subcontractors, you can deduct £18,600 from your taxable profits. At 19% corporation tax, that saves you £1,767 per £10,000 spent.</p>
-<p>If your agency is loss-making, you can surrender the loss for a cash payment of up to 14.5% of the surrendered amount. This is real cash, not a tax credit. Loss-making agencies can receive up to £27.50 per £100 of qualifying R&D spend.</p>
+<h3>Merged R&D Scheme (from 1 April 2024)</h3>
+<p>For accounting periods beginning on or after 1 April 2024, a single merged scheme replaces the old SME and RDEC regimes. Under the merged scheme, all companies (regardless of size) receive a taxable expenditure credit of 20% of qualifying R&D spend. After 25% corporation tax on the credit, the net benefit is approximately 15% of qualifying costs. Loss-making R&D-intensive SMEs (qualifying R&D at least 30% of total costs) may instead claim under Enhanced R&D Intensive Support (ERIS), giving an 86% enhanced deduction and a 14.5% payable credit.</p>
 
-<h3>RDEC for Large Companies</h3>
-<p>If you are above the SME thresholds, you use the Research and Development Expenditure Credit (RDEC) scheme. The credit rate is 20% of qualifying expenditure, taxable. After tax, the net benefit is approximately 15-16%. Large agencies that have grown past 500 people or significant turnover use this route.</p>
+<h3>The old SME scheme and RDEC (pre-1 April 2024)</h3>
+<p>For accounting periods beginning before 1 April 2024, the old two-scheme structure applied. SMEs (under 500 employees and either turnover under €100m or a balance sheet under €86m) could claim an enhanced deduction of 186% of qualifying R&D expenditure. Loss-making SMEs could surrender the loss for a cash payment of up to 14.5% of the surrendered amount. Larger companies used the RDEC scheme at a 20% credit rate. These rates do not apply to post-1-April-2024 periods.</p>
 
 <h2>What Costs Qualify</h2>
 
@@ -143,7 +141,7 @@ keyTakeaways:
 <li>Increased scrutiny on all future claims</li>
 </ul>
 
-<p>The way to avoid this is straightforward: only claim for genuinely qualifying work, document it properly, and have a qualified accountant review the claim before submission. As ICAEW qualified accountants, we review every claim against the five-part test before it goes anywhere near a CT600.</p>
+<p>The way to avoid this is straightforward: only claim for genuinely qualifying work, document it properly, and have a qualified accountant review the claim before submission. Working exclusively with agency founders, we review every claim against the five-part test before it goes anywhere near a CT600.</p>
 
 <h2>The Checklist: Should You Investigate Further?</h2>
 

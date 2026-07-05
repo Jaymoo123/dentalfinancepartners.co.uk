@@ -190,7 +190,7 @@ keyTakeaways:
 
 <h2>The Role of Your Accountant</h2>
 
-<p>As ICAEW qualified accountants, we see these patterns every day. The agencies that hit 15-25% net profit margins share one thing: they review their numbers monthly. They do not wait for year-end to find out if they made money. They know their net profit margin in real time and they make decisions based on it.</p>
+<p>Working exclusively with agency founders, we see these patterns every day. The agencies that hit 15-25% net profit margins share one thing: they review their numbers monthly. They do not wait for year-end to find out if they made money. They know their net profit margin in real time and they make decisions based on it.</p>
 
 <p>If you do not have monthly management accounts, ask your accountant to produce them. If your accountant cannot or will not, find one who specialises in agencies. Our team at Agency Founder Finance works exclusively with agency founders. We know the benchmarks, the cost traps, and the tax strategies that work for businesses like yours.</p>
 

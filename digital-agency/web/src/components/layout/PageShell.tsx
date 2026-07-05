@@ -2,7 +2,9 @@ import type { ReactNode } from "react";
 import { SiteFooter } from "./SiteFooter";
 import { SiteHeader } from "./SiteHeader";
 import { StickyCTA } from "@/components/ui/StickyCTA";
-import { ExitIntentModal } from "@/components/newsletter/ExitIntentModal";
+// Newsletter ExitIntentModal RETIRED (owner-locked, 111 subscribe_views -> 0 signups).
+// Qualified-lead ExitIntentModal is mounted in app/layout.tsx alongside
+// DeepScrollModal and ReturningBar; components/newsletter/ left on disk (dormant).
 
 type PageShellProps = {
   children: ReactNode;
@@ -23,7 +25,6 @@ export function PageShell({ children }: PageShellProps) {
       </main>
       <SiteFooter />
       <StickyCTA />
-      <ExitIntentModal />
     </div>
   );
 }

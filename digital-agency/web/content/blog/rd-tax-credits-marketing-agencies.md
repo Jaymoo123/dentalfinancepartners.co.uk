@@ -164,7 +164,7 @@ keyTakeaways:
 
 <p>But if you're building software, developing automation, solving data problems, or creating new technical capabilities, you should at least investigate. The benefit is real. For a growing agency, a £20k-£30k cash credit or tax saving can fund a new hire, a software subscription, or a marketing push.</p>
 
-<p>As ICAEW qualified accountants, we've helped marketing agencies prepare claims that stand up to scrutiny. If you're unsure whether your work qualifies, start by documenting your technical projects as they happen. The evidence is the hardest part to reconstruct after the year end.</p>
+<p>Working exclusively with agency founders, we've helped marketing agencies prepare claims that stand up to scrutiny. If you're unsure whether your work qualifies, start by documenting your technical projects as they happen. The evidence is the hardest part to reconstruct after the year end.</p>
 
 <p>If you want to discuss whether your agency's technical work qualifies for R&D tax credits, <a href="/contact">get in touch</a>. We'll tell you honestly whether it's worth pursuing, and if it is, we'll help you prepare a claim that HMRC will accept.</p>
 

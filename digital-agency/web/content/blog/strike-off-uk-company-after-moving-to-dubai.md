@@ -114,7 +114,7 @@ United Kingdom</p>
 
 <p>For agency founders who have moved to Dubai, the practical challenge is monitoring the Gazette notices. You're not in the UK, you may not be checking post or emails associated with the company, and you could miss the objection entirely. If you miss it and the company is reinstated, you face penalties and have to start again.</p>
 
-<p>The solution is simple: instruct your accountant to monitor the process on your behalf. As ICAEW qualified accountants, we handle this for our clients. We file the DS01, track the Gazette notices, and confirm dissolution to HMRC and Companies House. You don't need to think about it again.</p>
+<p>The solution is simple: instruct your accountant to monitor the process on your behalf. Working exclusively with agency founders, we handle this for our clients. We file the DS01, track the Gazette notices, and confirm dissolution to HMRC and Companies House. You don't need to think about it again.</p>
 
 <h2>Step 7: Close the Company Bank Account and Cancel Direct Debits</h2>
 

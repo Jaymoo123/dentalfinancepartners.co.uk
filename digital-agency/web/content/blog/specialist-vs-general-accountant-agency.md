@@ -110,8 +110,8 @@ keyTakeaways:
 <h3>Do They Provide Management Accounts, Not Just Year-End Accounts?</h3>
 <p>If your accountant only files annual accounts and tax returns, they are not helping you run your business. A specialist will provide monthly or quarterly management accounts: profit and loss, balance sheet, cash flow, and key metrics like utilisation rate, gross margin, and revenue per head. That is the information you need to make decisions, not just to satisfy HMRC.</p>
 
-<h3>Are They ICAEW Qualified?</h3>
-<p>There are many good accountants who are not chartered. But ICAEW qualification is a mark of rigorous training and ongoing professional development. As <a href="/about">ICAEW qualified accountants</a>, we are held to standards that go beyond basic compliance. It matters when your affairs are complex.</p>
+<h3>Do They Specialise in Agencies?</h3>
+<p>Working exclusively with agency founders, we apply standards that go beyond basic compliance. It matters when your affairs are complex.</p>
 
 <h2>The Cost Difference</h2>
 <p>A general accountant might charge £100-£200 per month for a limited company. A specialist will charge £300-£600 per month, sometimes more for complex agencies. That sounds like a big jump.</p>

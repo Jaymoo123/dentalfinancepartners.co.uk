@@ -165,7 +165,7 @@ keyTakeaways:
 
 <p>Most agency founders keep their UK company running for existing clients and set up a separate UAE entity for new work. This is a common structure. But it requires careful planning around transfer pricing, VAT, and corporate tax in both jurisdictions.</p>
 
-<p>As ICAEW qualified accountants, we advise agency founders to speak to both a UK accountant and a UAE tax advisor before making the move. The visa process is the easy part. The tax structuring is where it gets complex.</p>
+<p>Working exclusively with agency founders, we advise agency founders to speak to both a UK accountant and a UAE tax advisor before making the move. The visa process is the easy part. The tax structuring is where it gets complex.</p>
 
 <h2>What About Your UK Company's Ongoing Obligations?</h2>
 

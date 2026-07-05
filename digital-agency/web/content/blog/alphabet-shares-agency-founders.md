@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Alphabet shares for agency founders: structure, tax'
 metaDescription: Alphabet shares let agency founders pay different dividends to different shareholders. Here's how they work, when they make sense, and the tax
-altText: ICAEW qualified accountant reviewing share structure documents with agency founder in a modern London office meeting room
+altText: specialist agency accountant reviewing share structure documents with agency founder in a modern London office meeting room
 image: /blog/alphabet-shares-agency-founders.jpg
 imageCredit:
   photographer: Arturo Añez.
@@ -40,7 +40,7 @@ keyTakeaways:
 <p>Alphabet shares are separate classes of ordinary shares in a company, each designated by a letter. You might have A shares, B shares, C shares, and so on. They all represent ownership in the same company, but each class carries different rights.</p>
 <p>The most common difference is dividend rights. Class A shares might get £10 per share in dividends, while Class B shares get £5. Or Class A gets nothing in a particular year while Class B gets the full distribution. That flexibility is the entire point.</p>
 <p>For agency founders, alphabet shares solve a specific problem. You want to reward a key senior team member or bring in a silent investor, but you don't want to give them the same dividend entitlement as the founder who built the business from scratch. Alphabet shares let you do that without creating a separate legal entity.</p>
-<p>As ICAEW qualified accountants who work exclusively with agency founders, we see alphabet shares used most often in three scenarios: retaining talent, bringing in investment, and preparing for an exit. Each has different considerations.</p>
+<p>Working exclusively with agency founders, we see alphabet shares used most often in three scenarios: retaining talent, bringing in investment, and preparing for an exit. Each has different considerations.</p>
 
 <h2>How Alphabet Shares Work in Practice</h2>
 <p>Every limited company has a share structure set out in its articles of association. A standard agency starts with one class of ordinary shares, typically 100 shares held by the founder. All shares carry the same rights to dividends, voting, and capital on a winding up.</p>
@@ -125,4 +125,4 @@ keyTakeaways:
 <li>What happens to the shares if a shareholder leaves or dies?</li>
 </ul>
 <p>Your accountant should be able to answer these questions directly, or bring in a tax specialist where needed. If they cannot, that is a red flag. Alphabet shares are a specialist area, and getting them wrong is expensive.</p>
-<p>Our <a href="/services">ICAEW qualified team</a> works with agency founders on share structures every week. If you are thinking about alphabet shares, <a href="/contact">get in touch</a>. We will tell you whether it makes sense for your specific situation, or whether a simpler structure would achieve the same result.</p>
+<p>Our <a href="/services">specialist team</a> works with agency founders on share structures every week. If you are thinking about alphabet shares, <a href="/contact">get in touch</a>. We will tell you whether it makes sense for your specific situation, or whether a simpler structure would achieve the same result.</p>

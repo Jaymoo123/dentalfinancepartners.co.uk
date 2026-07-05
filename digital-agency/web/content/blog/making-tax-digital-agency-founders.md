@@ -42,7 +42,7 @@ keyTakeaways:
 
 <p>The short version: instead of filing one annual tax return, you will send quarterly digital updates to HMRC using MTD-compatible software. You will also make payments on account more frequently. It is a fundamental shift in how the tax system works for the self-employed, sole traders, and partners. It is not optional.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we have been tracking this programme closely. The rollout has been delayed twice already. But the current dates are firm. If your agency income is above the thresholds, you need to act before April 2026.</p>
+<p>Working exclusively with agency founders, we have been tracking this programme closely. The rollout has been delayed twice already. But the current dates are firm. If your agency income is above the thresholds, you need to act before April 2026.</p>
 
 <h2>Who Does MTD for ITSA Apply To?</h2>
 
@@ -151,7 +151,7 @@ keyTakeaways:
 
 <h2>How Agency Founder Finance Can Help</h2>
 
-<p>We are ICAEW qualified accountants who work exclusively with agency founders. MTD for ITSA is a compliance change, but it is also an opportunity. Quarterly updates mean you see your financial position more frequently. That is useful for running your agency, not just for HMRC.</p>
+<p>We work exclusively with agency founders. MTD for ITSA is a compliance change, but it is also an opportunity. Quarterly updates mean you see your financial position more frequently. That is useful for running your agency, not just for HMRC.</p>
 
 <p>If you are a sole trader or partnership agency founder with income over £50k, we can help you choose the right software, set up your digital records, and handle the quarterly submissions. If you are a limited company director, we can advise on whether MTD affects you now or later.</p>
 

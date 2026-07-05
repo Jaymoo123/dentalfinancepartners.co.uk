@@ -101,7 +101,7 @@ keyTakeaways:
 <li><strong>Understand your lifetime allowance position.</strong> If your total pension savings are above £1.073 million, or likely to be by the time you retire, you need a plan.</li>
 <li><strong>Decide on your QROPS strategy.</strong> If a transfer is right for you, the window before April 2026 may be relevant. But do not transfer without regulated advice from a firm specialising in cross-border pensions.</li>
 <li><strong>Review your contributions.</strong> If you are still contributing to a UK pension from Dubai, check whether you get tax relief. You may be better off using a Dubai-based savings vehicle instead.</li>
-<li><strong>Speak to an accountant.</strong> Your UK pension strategy should be part of your wider tax and residency planning. As ICAEW qualified accountants, we work with agency founders moving to Dubai to make sure their pension, company structure, and personal tax position all fit together.</li>
+<li><strong>Speak to an accountant.</strong> Your UK pension strategy should be part of your wider tax and residency planning. Working exclusively with agency founders, we work with agency founders moving to Dubai to make sure their pension, company structure, and personal tax position all fit together.</li>
 </ul>
 
 <h2>Real Numbers: A Worked Example</h2>

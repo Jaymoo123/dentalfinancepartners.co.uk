@@ -40,7 +40,7 @@ keyTakeaways:
 
 <p>Take a salary above £12,570 and you start paying employee National Insurance at 8% on the excess, plus income tax at 20%. Take a salary below it and you leave your personal allowance unused, pushing more income into higher-taxed dividends. £12,570 is the sweet spot.</p>
 
-<p>This post walks through the full calculation, shows you the savings compared to other approaches, and covers the edge cases where a different salary might make sense. We are ICAEW qualified accountants and we work exclusively with agency founders. These are the numbers we run for every new client.</p>
+<p>This post walks through the full calculation, shows you the savings compared to other approaches, and covers the edge cases where a different salary might make sense. We work exclusively with agency founders and we work exclusively with agency founders. These are the numbers we run for every new client.</p>
 
 <h2>The Core Calculation: Why £12,570 Works</h2>
 

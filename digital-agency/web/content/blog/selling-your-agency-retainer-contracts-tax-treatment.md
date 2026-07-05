@@ -32,7 +32,7 @@ updatedDate: '2026-05-17'
 keyTakeaways:
 - In a share sale, retainer contracts stay with the company, avoiding the need to novate each client agreement.
 - Retainer-heavy agencies typically sell for 4-6x EBITDA, compared to 2-4x for project-based agencies.
-- Gains on share sales qualify for Business Asset Disposal Relief at 18% on the first £1m, rising to 18% from 6 April 2026.
+- Gains on share sales qualify for Business Asset Disposal Relief at 14% on the first £1m for disposals 6 April 2025 to 5 April 2026 (18% from 6 April 2026).
 - Deferred consideration linked to retainer retention may be treated differently by HMRC, potentially as employment income.
 - Asset sales require novating every retainer contract, making them impractical for agencies with large client books.
 ---
@@ -79,7 +79,7 @@ keyTakeaways:
 
 <p>The founder ended up paying income tax at 40% plus NI on the earn-out, rather than 18% CGT under BADR. That cost them roughly £120k in extra tax.</p>
 
-<p><strong>The lesson:</strong> If your sale includes an earn-out linked to retainer retention, get the wording in the share purchase agreement reviewed by an ICAEW qualified accountant before you sign. The distinction between "consideration for shares" and "remuneration for services" is a matter of contract drafting, not just tax law.</p>
+<p><strong>The lesson:</strong> If your sale includes an earn-out linked to retainer retention, get the wording in the share purchase agreement reviewed by an specialist agency accountant before you sign. The distinction between "consideration for shares" and "remuneration for services" is a matter of contract drafting, not just tax law.</p>
 
 <h2>Goodwill and Retainer Contracts: What Are You Actually Selling?</h2>
 
@@ -121,7 +121,7 @@ keyTakeaways:
 
 <p><strong>4. Check BADR eligibility.</strong> You need to hold at least 5% of the shares and be an officer or employee for two years before the sale. If you're planning to step down as a director before the sale, make sure the timing works.</p>
 
-<p><strong>5. Get a tax review before you engage a buyer.</strong> Once you're in negotiations, your flexibility on structure is limited. A pre-sale tax review with an ICAEW qualified accountant can identify the optimal structure before you start talking to buyers.</p>
+<p><strong>5. Get a tax review before you engage a buyer.</strong> Once you're in negotiations, your flexibility on structure is limited. A pre-sale tax review with an specialist agency accountant can identify the optimal structure before you start talking to buyers.</p>
 
 <p>At Agency Founder Finance, we work with agency founders on exit planning as part of our broader services. If you're starting to think about a sale, we can help you understand the tax implications of your retainer book before you commit to a deal structure. <a href="/contact">Get in touch</a> for a confidential conversation.</p>
 

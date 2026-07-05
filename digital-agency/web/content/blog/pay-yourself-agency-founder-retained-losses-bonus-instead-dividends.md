@@ -156,7 +156,7 @@ keyTakeaways:
 
 <p>Unlike dividends, bonuses do not require a board meeting or dividend voucher. You do need to document the bonus decision in the company records, a simple board minute confirming the amount and the basis for it is enough. Your accountant will want this for the year-end file.</p>
 
-<p>If you are an ICAEW qualified accountant like our team at Agency Founder Finance, we will check that the bonus is commercially justifiable. HMRC can challenge excessive bonuses if they look like a disguised dividend, but if you are the sole director and the bonus reflects your work for the company, there is usually no issue.</p>
+<p>If you are an specialist agency accountant like our team at Agency Founder Finance, we will check that the bonus is commercially justifiable. HMRC can challenge excessive bonuses if they look like a disguised dividend, but if you are the sole director and the bonus reflects your work for the company, there is usually no issue.</p>
 
 <h2>When a Bonus Is Actually Better Than a Dividend</h2>
 

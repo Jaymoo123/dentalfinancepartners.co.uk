@@ -26,7 +26,7 @@ faqs:
 - question: What is the difference between a genuine relocation and phoenixing?
   answer: A genuine relocation means you physically move to Dubai, spend at least 183 days there, have a residency visa and local bank account, and your agency's operations genuinely move with you. The UK company is closed with all debts paid. Phoenixing means you stay in the UK, close the UK company with unpaid tax, and transfer clients and assets to a Dubai entity without any real change in where you live or work.
 - question: What should I do if I have already closed a UK agency with debts and moved to Dubai?
-  answer: Speak to an ICAEW qualified accountant with experience in cross-border insolvency immediately. Do not ignore the situation. HMRC can pursue you for up to six years after dissolution, and longer if they suspect fraud. An accountant can assess whether you have a problem and advise on the best course of action, which may include voluntary disclosure or negotiating a settlement.
+  answer: Speak to an specialist agency accountant with experience in cross-border insolvency immediately. Do not ignore the situation. HMRC can pursue you for up to six years after dissolution, and longer if they suspect fraud. An accountant can assess whether you have a problem and advise on the best course of action, which may include voluntary disclosure or negotiating a settlement.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -42,7 +42,7 @@ keyTakeaways:
 
 <p>The phoenixing risk closing agency reopening Dubai is real. HMRC does not accept that moving to a different jurisdiction automatically wipes out your UK tax liabilities. If the substance of your business remains the same, they will treat the closure as avoidance, not a genuine relocation.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we see this scenario more often than you might expect. Usually from founders who have been advised by someone who does not understand UK company law or HMRC's enforcement powers. This article explains exactly what the risk is, how HMRC identifies it, and what you need to do to stay on the right side of the rules.</p>
+<p>Working exclusively with agency founders, we see this scenario more often than you might expect. Usually from founders who have been advised by someone who does not understand UK company law or HMRC's enforcement powers. This article explains exactly what the risk is, how HMRC identifies it, and what you need to do to stay on the right side of the rules.</p>
 
 <h2>What is phoenixing in plain English?</h2>
 
@@ -140,6 +140,6 @@ keyTakeaways:
 <p>If HMRC challenges you, you need to show that the company was insolvent at the point you stopped trading, that you did not take assets out of the company, and that you did not transfer the business to the new entity. That is a much harder case to make if your clients, your brand, and your team all move with you.</p>
 
 <h2>What to do if you are already in this position</h2>
-<p>If you have already closed a UK agency with unpaid tax and reopened in Dubai, speak to an ICAEW qualified accountant with experience in cross-border insolvency. Do not ignore the problem. HMRC's time limits for pursuing directors are generous. They can bring proceedings up to six years after the company's dissolution, and in cases of fraud, there is no time limit.</p>
+<p>If you have already closed a UK agency with unpaid tax and reopened in Dubai, speak to an specialist agency accountant with experience in cross-border insolvency. Do not ignore the problem. HMRC's time limits for pursuing directors are generous. They can bring proceedings up to six years after the company's dissolution, and in cases of fraud, there is no time limit.</p>
 <p>We work with agency founders in exactly this situation. If you want to discuss your specific circumstances, <a href="/contact">get in touch</a>. We will tell you honestly whether you have a problem and what your options are.</p>
 <p>For more on how we help agency founders with international structures, see our <a href="/services">services page</a> or our dedicated pages for <a href="/agencies/marketing-agencies">marketing agencies</a>, <a href="/agencies/digital-agencies">digital agencies</a>, and <a href="/agencies/creative-agencies">creative agencies</a>.</p>

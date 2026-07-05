@@ -152,7 +152,7 @@ keyTakeaways:
 
 <p>The answers will tell you immediately whether they understand your business.</p>
 
-<p>At <a href="/about">Agency Founder Finance</a>, we're ICAEW qualified accountants who work exclusively with agency founders. We don't do corner shops or consultancies. We do agencies. That focus means we spot the issues before they become problems, and we plan for your future, not just your filing deadline.</p>
+<p>At <a href="/about">Agency Founder Finance</a>, we're specialist agency accountants who work exclusively with agency founders. We don't do corner shops or consultancies. We do agencies. That focus means we spot the issues before they become problems, and we plan for your future, not just your filing deadline.</p>
 
 <p>If you're not getting that from your current accountant, <a href="/contact">get in touch</a>. We'll tell you honestly whether we're a fit.</p>
 

@@ -174,7 +174,7 @@ keyTakeaways:
 
 <p>If you are a UK agency founder living in Dubai and you own a UK property, speak to an accountant before you sell. The rules are specific, the deadlines are tight, and the penalties for getting it wrong are real.</p>
 
-<p>As ICAEW qualified accountants, we work with agency founders across the UK and UAE. We handle the 60-day NRCGT reporting, the PRR calculations, and the tax planning around the sale. If your property has been your main home, if you hold it through a company, or if you have other UK income, the position is more complex than a straightforward sale.</p>
+<p>Working exclusively with agency founders, we work with agency founders across the UK and UAE. We handle the 60-day NRCGT reporting, the PRR calculations, and the tax planning around the sale. If your property has been your main home, if you hold it through a company, or if you have other UK income, the position is more complex than a straightforward sale.</p>
 
 <p>Contact us before you exchange contracts. We will run the numbers, file the return, and make sure you do not miss the deadline.</p>
 

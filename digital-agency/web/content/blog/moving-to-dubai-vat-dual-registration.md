@@ -134,7 +134,7 @@ keyTakeaways:
 
 <h2>How Agency Founder Finance Can Help</h2>
 
-<p>As <a href="/about">ICAEW qualified accountants</a>, we work with agency founders who move to Dubai while keeping their UK operations. We handle the dual VAT registration, the cross-border filing, and the structure planning that makes it work.</p>
+<p>Working exclusively with agency founders, we work with agency founders who move to Dubai while keeping their UK operations. We handle the dual VAT registration, the cross-border filing, and the structure planning that makes it work.</p>
 
 <p>We do not just tell you to register for VAT in both countries. We look at your specific client mix, your business structure, and your long-term plans. Then we recommend a route that minimises compliance burden and tax cost.</p>
 

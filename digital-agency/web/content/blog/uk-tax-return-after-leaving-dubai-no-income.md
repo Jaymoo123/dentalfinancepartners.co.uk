@@ -70,7 +70,7 @@ keyTakeaways:
 
 <p>If you do not do this, HMRC will keep sending notices. Ignoring them leads to penalties. And those penalties are not automatically cancelled just because you had no tax liability.</p>
 
-<p>As ICAEW qualified accountants, we have seen clients receive penalty letters for £1,600 or more simply because they assumed their registration had lapsed. It had not.</p>
+<p>Working exclusively with agency founders, we have seen clients receive penalty letters for £1,600 or more simply because they assumed their registration had lapsed. It had not.</p>
 
 <h2>The Split Year Trap</h2>
 

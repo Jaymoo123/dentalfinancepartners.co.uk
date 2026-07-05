@@ -105,7 +105,7 @@ keyTakeaways:
 
 <p>Even then, HMRC may challenge the position. The burden of proof is on you to demonstrate that CMC has moved. HMRC's default assumption is that a UK-registered company remains UK-managed unless proven otherwise.</p>
 
-<p>As ICAEW qualified accountants working with agency founders, we have seen HMRC win these arguments repeatedly. The founders who succeed are the ones who plan the move properly, document everything, and take professional advice before they relocate.</p>
+<p>As specialist agency accountants working with agency founders, we have seen HMRC win these arguments repeatedly. The founders who succeed are the ones who plan the move properly, document everything, and take professional advice before they relocate.</p>
 
 <h2>The Alternative: Keep CMC in the UK and Accept the Tax</h2>
 

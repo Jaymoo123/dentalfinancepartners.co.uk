@@ -132,7 +132,7 @@ keyTakeaways:
 
 <h2>How Agency Founder Finance Can Help</h2>
 
-<p>As <a href="/about">ICAEW qualified accountants</a> working exclusively with agency founders, we've handled R&D claims for agencies building everything from RAG pipelines to custom AI training platforms. We know what HMRC expects because we deal with them regularly.</p>
+<p>As <a href="/about">specialist agency accountants</a> working exclusively with agency founders, we've handled R&D claims for agencies building everything from RAG pipelines to custom AI training platforms. We know what HMRC expects because we deal with them regularly.</p>
 
 <p>We'll help you:</p>
 <ul>

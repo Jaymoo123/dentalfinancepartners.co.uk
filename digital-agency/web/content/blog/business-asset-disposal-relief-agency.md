@@ -146,7 +146,7 @@ keyTakeaways:
 
 <p><strong>Review your shareholder agreements.</strong> Do they restrict your ability to sell? Do they give other shareholders rights that could complicate a sale?</p>
 
-<p><strong>Talk to your accountant.</strong> As ICAEW qualified accountants, we work with agency founders on exit planning regularly. We can model the tax position under different scenarios and help you structure the sale to maximise BADR.</p>
+<p><strong>Talk to your accountant.</strong> Working exclusively with agency founders, we work with agency founders on exit planning regularly. We can model the tax position under different scenarios and help you structure the sale to maximise BADR.</p>
 
 <h2>What If You Don't Qualify for BADR?</h2>
 

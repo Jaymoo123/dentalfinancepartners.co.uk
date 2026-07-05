@@ -130,7 +130,7 @@ keyTakeaways:
 
 <h2>What About Business Asset Disposal Relief?</h2>
 
-<p>BADR (formerly Entrepreneurs' Relief) applies at 18% for disposals from 6 April 2025, rising to 18% from 6 April 2026. The lifetime limit is £1 million of gains.</p>
+<p>BADR (formerly Entrepreneurs' Relief) applies at 14% for disposals from 6 April 2025 to 5 April 2026, rising to 18% from 6 April 2026. The lifetime limit is £1 million of gains.</p>
 
 <p>If you trigger the exit charge on shares in your agency, you may qualify for BADR. The conditions are the same as for a normal disposal: you must hold at least 5% of the shares, be an officer or employee, and have held the shares for at least 2 years.</p>
 
@@ -154,7 +154,7 @@ keyTakeaways:
 
 <p>Most general practice accountants focus on property CGT and the main residence exemption when a client moves abroad. They assume that if you are not selling anything, there is no tax. That is wrong for share options.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we see this regularly. A founder moves to Dubai, keeps their agency running, and gets a letter from HMRC 18 months later demanding tax on options they never exercised. The exit charge is real, and it is often larger than expected.</p>
+<p>Working exclusively with agency founders, we see this regularly. A founder moves to Dubai, keeps their agency running, and gets a letter from HMRC 18 months later demanding tax on options they never exercised. The exit charge is real, and it is often larger than expected.</p>
 
 <p>The other common mistake is assuming that the exit charge only applies to large holdings. It applies to any shares or options that would give rise to a gain. Even a 5% holding in a £500k agency triggers the charge. Do not assume you are too small to be caught.</p>
 

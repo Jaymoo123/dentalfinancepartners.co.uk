@@ -92,7 +92,7 @@ keyTakeaways:
 
 <h2>How to Get These Numbers Without Drowning</h2>
 <p>You do not need to build a spreadsheet from scratch. If you use Xero or QuickBooks, most of these KPIs can be generated from your management accounts. The key is setting them up properly from the start.</p>
-<p>At Agency Founder Finance, we build management accounts for agency founders that show all eight of these KPIs every month. Our ICAEW qualified team structures your chart of accounts around agency-specific categories, delivery salaries, freelancer costs, retainer revenue, project revenue, so the numbers actually mean something.</p>
+<p>At Agency Founder Finance, we build management accounts for agency founders that show all eight of these KPIs every month. Our specialist team structures your chart of accounts around agency-specific categories, delivery salaries, freelancer costs, retainer revenue, project revenue, so the numbers actually mean something.</p>
 <p>If you're doing your own bookkeeping, here is the minimum setup:</p>
 <ul>
 <li>Use separate nominal codes for delivery staff and overhead staff</li>

@@ -8,7 +8,7 @@ author: "Agency Founder Finance Editorial Team"
 category: "Agency Accountant Services"
 metaTitle: "Agency Accountant Cost: What's Included vs What's Extra"
 metaDescription: "What does a typical agency accountant fee cover? We break down the included services and the chargeable extras. No hidden costs, just clarity for UK"
-altText: "Agency founder reviewing a fee breakdown with an ICAEW qualified accountant in a modern London office"
+altText: "Agency founder reviewing a fee breakdown with an specialist agency accountant in a modern London office"
 image: "/blog/what-is-included-in-typical-agency-accountant-fee.jpg"
 imageCredit:
   photographer: "Jakub Zerdzicki"
@@ -35,7 +35,7 @@ faqs:
 
 <p>The problem is simple: there's no standard scope for an "agency accountant." Some firms include everything except the kitchen sink. Others quote a bare-bones price and charge for every phone call.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we see this confusion every day. So let's cut through it. Here's what a typical agency accountant cost covers, what it doesn't, and where you'll get stung if you don't ask the right questions upfront.</p>
+<p>Working exclusively with agency founders, we see this confusion every day. So let's cut through it. Here's what a typical agency accountant cost covers, what it doesn't, and where you'll get stung if you don't ask the right questions upfront.</p>
 
 <h2>The Core Services: What a Standard Fee Should Include</h2>
 
@@ -158,7 +158,7 @@ faqs:
 
 <h2>How to Avoid Surprise Charges</h2>
 
-<p>The single best thing you can do is ask for a written scope of services before you engage. A reputable firm, like ours at Agency Founder Finance, will give you a clear breakdown. We're <a href="/about">ICAEW qualified accountants</a> who work exclusively with agency founders, so we know exactly what agencies need and what they don't.</p>
+<p>The single best thing you can do is ask for a written scope of services before you engage. A reputable firm, like ours at Agency Founder Finance, will give you a clear breakdown. We're <a href="/about">specialist agency accountants</a> who work exclusively with agency founders, so we know exactly what agencies need and what they don't.</p>
 
 <p>If a firm won't put their scope in writing, walk away. If they say "everything is included" but can't list what "everything" means, walk away. Transparency is the baseline, not a bonus.</p>
 

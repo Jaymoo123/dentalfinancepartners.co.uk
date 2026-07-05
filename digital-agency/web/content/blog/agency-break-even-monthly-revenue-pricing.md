@@ -210,7 +210,7 @@ keyTakeaways:
 
 <p>If you run through this calculation and realise your pricing is wrong, do not panic. Most agency founders are in the same position. The difference is you now know the problem.</p>
 
-<p>Our <a href="/services">ICAEW qualified team at Agency Founder Finance</a> works with agency founders every day on exactly this. We help you build the financial model, set pricing that works, and keep your break-even number in view as you grow.</p>
+<p>Our <a href="/services">specialist team at Agency Founder Finance</a> works with agency founders every day on exactly this. We help you build the financial model, set pricing that works, and keep your break-even number in view as you grow.</p>
 
 <p>If you want to run through your numbers with someone who understands agencies, <a href="/contact">book a call</a>. We will look at your fixed costs, your variable costs, and your pricing. No jargon. Just the numbers that matter.</p>
 

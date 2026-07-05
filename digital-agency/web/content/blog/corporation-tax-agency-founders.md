@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Corporation Tax for Agency Founders: 2025/26 Guide'
 metaDescription: Corporation tax rates, deadlines, and reliefs for UK agency founders in 2025/26. Practical examples, key dates, and what to do before year-end.
-altText: Agency founder reviewing corporation tax documents with an ICAEW accountant in a modern UK office
+altText: Agency founder reviewing corporation tax documents with a specialist accountant in a modern UK office
 image: /blog/corporation-tax-agency-founders.jpg
 imageCredit:
   photographer: RDNE Stock project
@@ -121,7 +121,7 @@ keyTakeaways:
 
 <p>Many agency founders assume R&D tax credits are only for pharmaceutical or engineering companies. That is wrong. Software agencies, digital agencies, AI agencies, and creative agencies developing new tools, algorithms, or processes can qualify.</p>
 
-<p>The SME scheme offers an enhanced deduction of 186% on qualifying R&D expenditure for accounting periods starting on or after 1 April 2023. If your agency spent £50,000 on qualifying R&D, you can deduct £93,000 from taxable profits. That reduces your corporation tax bill significantly.</p>
+<p>For accounting periods beginning on or after 1 April 2024, the merged R&D scheme applies: a single 20% taxable expenditure credit on qualifying spend, giving a net benefit of approximately 15% after corporation tax. The old SME enhanced deduction of 186% applied only to periods beginning before 1 April 2024. If your agency spent £50,000 on qualifying R&D in a post-March-2024 period, the 20% credit gives roughly £7,500 net benefit after tax.</p>
 
 <p>Common qualifying activities in agencies include: building proprietary software tools, developing AI-driven analytics platforms, creating new automation processes, and designing novel campaign measurement systems.</p>
 
@@ -166,11 +166,11 @@ keyTakeaways:
 <h3>3. Check Your Directors' Loan Account</h3>
 <p>If you have borrowed from the company, repay before the 9-month window closes. Or convert the loan to a formal dividend if there are sufficient retained profits.</p>
 
-<h2>Working With an ICAEW Qualified Accountant</h2>
+<h2>Working With a Specialist Agency Accountant</h2>
 
 <p>Corporation tax is not complicated in principle, but the details matter. Rates, reliefs, deadlines, and traps vary by agency type, profit level, and structure. A specialist accountant who works with agency founders will spot opportunities a general practitioner might miss.</p>
 
-<p>At Agency Founder Finance, we are ICAEW qualified accountants who work exclusively with agency founders. We handle your corporation tax compliance, year-end filing, and planning so you can focus on building your agency. <a href="/services">See our services here</a> or <a href="/contact">get in touch</a>.</p>
+<p>At Agency Founder Finance, we work exclusively with agency founders. We handle your corporation tax compliance, year-end filing, and planning so you can focus on building your agency. <a href="/services">See our services here</a> or <a href="/contact">get in touch</a>.</p>
 
 <p>We work with <a href="/agencies/marketing-agencies">marketing agencies</a>, <a href="/agencies/digital-agencies">digital agencies</a>, <a href="/agencies/creative-agencies">creative agencies</a>, <a href="/agencies/advertising-agencies">advertising agencies</a>, <a href="/agencies/pr-agencies">PR agencies</a>, <a href="/agencies/web-design-agencies">web design agencies</a>, <a href="/agencies/seo-agencies">SEO agencies</a>, <a href="/agencies/recruitment-agencies">recruitment agencies</a>, and more. If you run an agency, we understand your numbers.</p>
 

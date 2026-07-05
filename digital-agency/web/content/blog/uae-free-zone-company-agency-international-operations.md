@@ -16,7 +16,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/people-sitting-at-the-table-6476256/
   source: Pexels
 h1: How to Set Up a UAE Free Zone Company for Your Agency's International Operations
-summary: Thinking about a UAE free zone company for your agency's international operations? This guide covers the practical setup process, UK tax implications, substance requirements, and what ICAEW-qualified accountants want you to know before you make the move.
+summary: Thinking about a UAE free zone company for your agency's international operations? This guide covers the practical setup process, UK tax implications, substance requirements, and what specialist accountants want you to know before you make the move.
 schema: ''
 faqs:
 - question: Do I need to close my UK agency company to set up a UAE free zone company?
@@ -38,7 +38,7 @@ keyTakeaways:
 
 <p>But the gap between "it sounds good" and "it works for my agency" is wider than most founders expect. I have sat with agency owners who moved too fast, triggered UK tax charges they did not see coming, or set up structures that HMRC later challenged. The setup itself is straightforward. The UK tax and substance requirements are where it gets complicated.</p>
 
-<p>This guide covers what a UAE free zone company actually involves, how it interacts with your UK tax position, and what you need to have in place before you register. I am writing this as an ICAEW qualified accountant who works with agency founders. None of this is personal advice. Your situation will differ. But these are the questions you need answers to before you spend a penny on setup fees.</p>
+<p>This guide covers what a UAE free zone company actually involves, how it interacts with your UK tax position, and what you need to have in place before you register. I am writing this as an specialist agency accountant who works with agency founders. None of this is personal advice. Your situation will differ. But these are the questions you need answers to before you spend a penny on setup fees.</p>
 
 <h2>What Is a UAE Free Zone Company?</h2>
 
@@ -202,7 +202,7 @@ keyTakeaways:
 
 <h2>What to Do Next</h2>
 
-<p>If you are considering this route, start with professional advice from both a UK accountant who understands agency structures and a UAE-based corporate service provider. The UK side is where most mistakes happen. Our ICAEW qualified team at Agency Founder Finance works with agency founders on international structuring, including UAE free zone setups. We can help you model the numbers and understand the UK tax implications before you commit.</p>
+<p>If you are considering this route, start with professional advice from both a UK accountant who understands agency structures and a UAE-based corporate service provider. The UK side is where most mistakes happen. Our team at Agency Founder Finance works with agency founders on international structuring, including UAE free zone setups. We can help you model the numbers and understand the UK tax implications before you commit.</p>
 
 <p>Book a call if you want to talk through your specific situation. Or read more about how we work with <a href="/agencies/digital-agencies">digital agencies</a> and <a href="/agencies/marketing-agencies">marketing agencies</a> on international structures.</p>
 

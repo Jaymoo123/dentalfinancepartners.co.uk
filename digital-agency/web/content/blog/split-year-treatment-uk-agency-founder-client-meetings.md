@@ -112,7 +112,7 @@ keyTakeaways:
 <p>Most founders do not track UK days accurately until it is too late. Start a spreadsheet on day one. Record every UK arrival and departure. Record every UK work day separately. Use a tool like Float or a simple Google Sheet. If you hit 25 UK days by month eight, you know you have only 6 days left for the rest of the year.</p>
 
 <h3>Consider a Holding Company Structure</h3>
-<p>If you are moving abroad but keeping your UK agency, a <a href="/blog/incorporation-and-structure">holding company structure</a> can help separate your personal tax position from the business. Dividends paid to a non-UK resident director are still subject to UK withholding tax rules, but your personal tax liability on worldwide income disappears once you are non-resident. Talk to an <a href="/services">ICAEW qualified accountant</a> before restructuring.</p>
+<p>If you are moving abroad but keeping your UK agency, a <a href="/blog/incorporation-and-structure">holding company structure</a> can help separate your personal tax position from the business. Dividends paid to a non-UK resident director are still subject to UK withholding tax rules, but your personal tax liability on worldwide income disappears once you are non-resident. Talk to an <a href="/services">specialist agency accountant</a> before restructuring.</p>
 
 <h2>What Happens If You Break the Condition</h2>
 
@@ -137,7 +137,7 @@ keyTakeaways:
 <li>Plan your UK visits in advance. Batch them. Minimise travel days.</li>
 <li>Set up a day-tracking system. Use a spreadsheet or a dedicated app. Update it every time you cross the UK border.</li>
 <li>Review your agency's <a href="/agencies">agency structure</a> with an accountant. If you are a director of a UK company, your work days include board meetings, strategy sessions, and any substantive business activity.</li>
-<li>Speak to an <a href="/about">ICAEW qualified accountant</a> who specialises in international tax for agency founders. The rules are detailed, and the cost of getting them wrong is high.</li>
+<li>Speak to an <a href="/about">specialist agency accountant</a> who specialises in international tax for agency founders. The rules are detailed, and the cost of getting them wrong is high.</li>
 </ul>
 
 <p>Split year treatment is one of the most valuable tax reliefs available to agency founders moving abroad. But it is not a simple calendar split. It is a strict, condition-based test that requires planning and discipline. If you fly back for client meetings without tracking your days, you risk losing the relief entirely.</p>

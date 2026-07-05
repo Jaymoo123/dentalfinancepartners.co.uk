@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: When to incorporate agency with unequal partner profit
 metaDescription: Moving from partnership to limited company? Unequal profit shares create tax complications. Here's how to structure the transition without a tax bill
-altText: Two agency founders reviewing partnership incorporation documents with their ICAEW accountant in a modern UK office
+altText: Two agency founders reviewing partnership incorporation documents with their specialist accountant in a modern UK office
 image: /blog/unequal-profit-shares-incorporating-partnership-agency.jpg
 imageCredit:
   photographer: Towfiqu barbhuiya
@@ -151,7 +151,7 @@ keyTakeaways:
 
 <p>If your profit shares are equal, incorporation is straightforward. If they are unequal, it is not. The difference between a clean incorporation and a messy one is often a single conversation with an accountant who has done this before.</p>
 
-<p>At <a href="/about">Agency Founder Finance</a>, we are ICAEW qualified accountants who work exclusively with agency founders. We have handled partnership incorporations with every kind of profit share structure. We know where HMRC pushes back and how to structure the transition so that no partner gets an unexpected tax bill.</p>
+<p>At <a href="/about">Agency Founder Finance</a>, we work exclusively with agency founders. We have handled partnership incorporations with every kind of profit share structure. We know where HMRC pushes back and how to structure the transition so that no partner gets an unexpected tax bill.</p>
 
 <p>If your agency is considering incorporation and your profit shares are not equal, <a href="/contact">get in touch</a> before you file any paperwork. A 30-minute call can save you thousands in tax and months of correspondence with HMRC.</p>
 

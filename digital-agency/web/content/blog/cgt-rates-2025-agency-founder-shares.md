@@ -169,4 +169,4 @@ keyTakeaways:
 
 <p>This is not a reason to panic or rush an exit. But it is a reason to plan. If you have been thinking about selling shares, the numbers have changed. Run them again. And if you have already used your BADR allowance, the new 24% rate makes alternative structures, holding companies, loan notes, earn-outs, significantly more attractive.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we see these Budget changes through the lens of real exits. If you want to understand exactly what the new <strong>CGT rates 2025 agency founder shares</strong> mean for your specific agency, <a href="/services">book a call with our team</a>. We will run the numbers with you, not at you.</p>
+<p>Working exclusively with agency founders, we see these Budget changes through the lens of real exits. If you want to understand exactly what the new <strong>CGT rates 2025 agency founder shares</strong> mean for your specific agency, <a href="/services">book a call with our team</a>. We will run the numbers with you, not at you.</p>

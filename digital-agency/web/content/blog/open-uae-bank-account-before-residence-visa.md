@@ -39,7 +39,7 @@ keyTakeaways:
 <h2>Can You Open a UAE Bank Account Before Your Residence Visa?</h2>
 <p>If you are an agency founder moving your business to Dubai, you are probably asking this question early in the process. The short answer is: yes, you can open a UAE bank account for your agency before you have a residence visa, but not with every bank, and not without the right paperwork.</p>
 <p>The standard requirement across most UAE banks is a valid residence visa and an Emirates ID. Without these, many banks will simply say no. But a few banks allow what is sometimes called a "non-resident" account opening for companies, or they will accept a pre-approval letter from the relevant free zone authority. The process is not transparent, and it varies from one bank to another. Let me explain exactly what you need and how to approach it.</p>
-<p>As ICAEW qualified accountants working with agency founders relocating to the UAE, we have seen the process from both sides. This article covers the practical steps, the documentation required, and the banks most likely to help you open a UAE bank account before residence visa.</p>
+<p>As specialist agency accountants working with agency founders relocating to the UAE, we have seen the process from both sides. This article covers the practical steps, the documentation required, and the banks most likely to help you open a UAE bank account before residence visa.</p>
 
 <h2>Why Would You Want to Open a UAE Bank Account Before Your Visa?</h2>
 <p>There are several reasons you might want the account open before your visa arrives. The most common one is timing. Your trade licence can be issued within a few days of submitting your application to a free zone. But your residence visa process takes longer, typically 2 to 4 weeks after entry, plus medical tests and Emirates ID processing. If you need to invoice clients from your UAE entity, pay suppliers, or receive funds from existing retainer clients, you cannot wait a month.</p>
@@ -112,5 +112,5 @@ keyTakeaways:
 
 <h2>Final Thoughts</h2>
 <p>Opening a UAE bank account for your agency before your residence visa is possible, but it is not straightforward. You need the right bank, the right documents, and realistic expectations about timing. Do not assume it will happen in a week. Plan for delays and have a backup.</p>
-<p>If you are relocating your agency to the UAE and need advice on the financial structure, tax implications, or banking setup, speak to us. We are <a href="/about">ICAEW qualified accountants</a> who work exclusively with agency founders, and we understand the specific challenges of moving a UK agency to Dubai.</p>
+<p>If you are relocating your agency to the UAE and need advice on the financial structure, tax implications, or banking setup, speak to us. We work exclusively with agency founders who work exclusively with agency founders, and we understand the specific challenges of moving a UK agency to Dubai.</p>
 <p>Get in touch through our <a href="/contact">contact page</a> or book a call. We can help you get the structure right from day one.</p>

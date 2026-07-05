@@ -144,7 +144,7 @@ keyTakeaways:
 
 <p>UK pension rules for non-residents are not straightforward. The interaction between UK tax law, UAE residency rules, and your specific agency structure creates edge cases that general advice often misses.</p>
 
-<p>If you are an agency founder considering a move to Dubai, or already living there and wondering about your pension options, speak to an accountant who understands both jurisdictions. At Agency Founder Finance, we are ICAEW qualified accountants who work with agency founders in the UK and UAE. We can help you model the numbers and decide what makes sense for your situation.</p>
+<p>If you are an agency founder considering a move to Dubai, or already living there and wondering about your pension options, speak to an accountant who understands both jurisdictions. At Agency Founder Finance, we work exclusively with agency founders who work with agency founders in the UK and UAE. We can help you model the numbers and decide what makes sense for your situation.</p>
 
 <p>If your agency structure or residency status has changed in the last 12 months, ask your accountant before making any pension contributions. A small mistake in the paperwork can cost you more in tax than you save in pension growth.</p>
 

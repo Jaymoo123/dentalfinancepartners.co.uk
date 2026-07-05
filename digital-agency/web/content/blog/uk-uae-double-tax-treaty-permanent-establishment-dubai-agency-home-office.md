@@ -151,7 +151,7 @@ keyTakeaways:
 
 <p>First, gather the facts. How many days did you spend in the UK last tax year? What did you do on those days? Do you own or rent a UK property? Do you have a dedicated office space there? Do you have a UAE office with staff who actually run the business when you are away?</p>
 
-<p>Second, speak to an accountant who understands both UK and UAE tax. Not every accountant knows the UK-UAE double tax treaty inside out. Our <a href="/about">ICAEW qualified team</a> at Agency Founder Finance works with agency founders in both jurisdictions, and we see these scenarios regularly.</p>
+<p>Second, speak to an accountant who understands both UK and UAE tax. Not every accountant knows the UK-UAE double tax treaty inside out. Our <a href="/about">agency-specialist team</a> at Agency Founder Finance works with agency founders in both jurisdictions, and we see these scenarios regularly.</p>
 
 <p>Third, consider making a disclosure to HMRC if the exposure is significant. Voluntary disclosure reduces penalties. The Contractual Disclosure Facility (CDF) is available if HMRC has not already opened an enquiry. But do not do this without professional advice first.</p>
 

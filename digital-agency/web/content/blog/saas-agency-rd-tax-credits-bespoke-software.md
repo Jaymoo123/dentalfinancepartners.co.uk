@@ -141,7 +141,7 @@ keyTakeaways:
 
 <p><strong>Keep records of failed approaches.</strong> HMRC wants to see that you tried things that didn't work. Keep notes, emails, and code commits that show the iterative process. A claim that only describes the successful outcome looks suspicious.</p>
 
-<p><strong>Work with an accountant who knows R&D.</strong> This is not a DIY area. The technical narrative needs to be written by someone who understands both the technology and HMRC's requirements. As ICAEW qualified accountants, we see claims that would be straightforward but are rejected because the narrative is wrong.</p>
+<p><strong>Work with an accountant who knows R&D.</strong> This is not a DIY area. The technical narrative needs to be written by someone who understands both the technology and HMRC's requirements. Working exclusively with agency founders, we see claims that would be straightforward but are rejected because the narrative is wrong.</p>
 
 <h2>When to Claim and When Not To</h2>
 

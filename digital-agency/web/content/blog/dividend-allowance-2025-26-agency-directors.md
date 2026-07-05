@@ -170,6 +170,6 @@ keyTakeaways:
 
 <p>If you are taking more than £50,270, you are paying 35.75% on the excess. That is still better than salary (which attracts NI), but it is a big jump from 10.75%. Plan your extraction carefully.</p>
 
-<p>If you are unsure about your dividend strategy or want to run the numbers for your specific agency, <a href="/services">speak to our ICAEW qualified team</a>. We work exclusively with agency founders and see these scenarios every day.</p>
+<p>If you are unsure about your dividend strategy or want to run the numbers for your specific agency, <a href="/services">speak to our specialist team</a>. We work exclusively with agency founders and see these scenarios every day.</p>
 
 <p>For more on how to structure your pay efficiently, <a href="/blog/salary-and-dividends">read our full guide to salary and dividends for agency directors</a>.</p>

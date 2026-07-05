@@ -40,7 +40,7 @@ keyTakeaways:
 
 <p>What the cost comparisons miss is the <strong>uae mainland vs free zone company client perception</strong> problem. And it is a problem that can cost you contracts worth six or seven figures before you even get a seat at the table.</p>
 
-<p>As ICAEW qualified accountants working with agency founders, we see this play out regularly. A UK agency sets up in a free zone because the numbers look better on a spreadsheet. Then they discover that the Dubai government entity they wanted to pitch to has a procurement policy requiring mainland registration. Or that the large corporate client they were counting on has an internal compliance rule that excludes free zone companies from their approved supplier list.</p>
+<p>As specialist agency accountants working with agency founders, we see this play out regularly. A UK agency sets up in a free zone because the numbers look better on a spreadsheet. Then they discover that the Dubai government entity they wanted to pitch to has a procurement policy requiring mainland registration. Or that the large corporate client they were counting on has an internal compliance rule that excludes free zone companies from their approved supplier list.</p>
 
 <p>This article is not about whether free zones are bad. They are not. For many agency founders, a free zone is the right choice. But you need to understand the full picture before you decide. And that includes the perception gap that no setup cost comparison will ever show you.</p>
 
@@ -124,7 +124,7 @@ keyTakeaways:
 <p>Some agency founders set up a free zone entity for international work and a separate mainland entity for local UAE work. This is more expensive but gives you full flexibility. It is worth considering if your client mix is genuinely split 50-50 between local and international.</p>
 
 <h3>Step 4: Talk to an Accountant Who Understands the Agency Model</h3>
-<p>This is not a decision to make based on a blog post or a Google search. You need someone who understands both the legal structure and the commercial reality of running an agency in Dubai. As ICAEW qualified accountants, we work with agency founders on exactly these decisions. We can help you model the costs and revenue implications of each structure based on your specific situation.</p>
+<p>This is not a decision to make based on a blog post or a Google search. You need someone who understands both the legal structure and the commercial reality of running an agency in Dubai. Working exclusively with agency founders, we work with agency founders on exactly these decisions. We can help you model the costs and revenue implications of each structure based on your specific situation.</p>
 
 <h2>The Bottom Line on UAE Mainland vs Free Zone Company Client Perception</h2>
 

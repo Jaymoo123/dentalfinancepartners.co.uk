@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: 'Agency Accountant Cost 2025/26: UK Pricing Guide'
 metaDescription: What does an agency accountant cost in 2025/26? £120-£400+ per month. See real pricing by agency size and what you actually get for your money.
-altText: Agency founder reviewing monthly management accounts with an ICAEW qualified accountant in a Manchester office
+altText: Agency founder reviewing monthly management accounts with an specialist agency accountant in a Manchester office
 image: /blog/how-much-agency-accountant-cost.jpg
 imageCredit:
   photographer: Monstera Production
@@ -26,7 +26,7 @@ faqs:
 - question: What is the average agency accountant cost for a 5-person digital agency?
   answer: For a 5-person digital agency turning over £300k-£500k, expect to pay between £250 and £350 per month. This should include monthly management accounts, VAT returns, payroll, year-end accounts, and regular tax planning. If you are paying more than £400 per month at this size, ask what extra value you are getting.
 - question: Should I pay monthly or annually for my agency accountant?
-  answer: Monthly is standard and better for cash flow. Most ICAEW qualified firms charge a fixed monthly fee by direct debit. Annual billing is rare for ongoing work, though some firms offer a discount for paying upfront. For compliance-only work (Self Assessment or a simple year-end), annual billing is more common. For ongoing agency accounting, monthly is the norm.
+  answer: Monthly is standard and better for cash flow. Most agency-specialist firms charge a fixed monthly fee by direct debit. Annual billing is rare for ongoing work, though some firms offer a discount for paying upfront. For compliance-only work (Self Assessment or a simple year-end), annual billing is more common. For ongoing agency accounting, monthly is the norm.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -61,7 +61,7 @@ keyTakeaways:
 
 <h2>Real Agency Accountant Costs for 2025/26</h2>
 
-<p>The figures below are based on what ICAEW qualified firms like ours charge for agency clients. They are not the cheapest on the market. They are also not the most expensive. They reflect the level of service a growing agency actually needs.</p>
+<p>The figures below are based on what agency-specialist firms like ours charge for agency clients. They are not the cheapest on the market. They are also not the most expensive. They reflect the level of service a growing agency actually needs.</p>
 
 <h3>Sole Trader or Freelance Agency (turnover under £50k)</h3>
 <p><strong>£90 to £150 per month</strong></p>
@@ -124,7 +124,7 @@ keyTakeaways:
 <li>"What software do you recommend?", If they say "whatever you like" without giving a reasoned opinion, they don't have a strong view. That is fine for some businesses. For an agency, it matters.</li>
 <li>"Who will be my main contact?", You want a qualified accountant, not a junior bookkeeper. Ask to speak to them before you commit.</li>
 <li>"What is not included in the monthly fee?", Get it in writing. Surprise bills are the number one complaint we hear from founders who switched to us.</li>
-<li>"Do you have ICAEW accreditation?", ICAEW qualified accountants follow a strict code of ethics and professional standards. It is not a guarantee of perfection, but it is a strong signal of competence and accountability.</li>
+<li>"What professional qualifications do your team hold and which accounting body regulates the firm?", A professionally qualified and regulated firm follows a code of ethics and carries professional indemnity insurance. It is a strong signal of competence and accountability.</li>
 </ul>
 
 <h2>Is It Worth Paying More for an Agency Specialist?</h2>
@@ -148,7 +148,7 @@ keyTakeaways:
 <li>Established agency (10+ people): £400-£800+ per month</li>
 </ul>
 
-<p>These are ranges for ICAEW qualified firms providing proper agency accounting, not just compliance. You can pay less. You can pay more. What matters is that you know what you are getting and whether it matches what your agency actually needs.</p>
+<p>These are ranges for agency-specialist firms providing proper agency accounting, not just compliance. You can pay less. You can pay more. What matters is that you know what you are getting and whether it matches what your agency actually needs.</p>
 
 <p>If your current accountant is not giving you management accounts, not advising on tax structure, and not returning your calls within 24 hours, you are probably overpaying regardless of the monthly fee.</p>
 

@@ -6,7 +6,11 @@
 const CONSENT_TEXT =
   "I agree that Agency Founder Finance may use the information I have provided to generate this report and contact me about relevant services. I have read the privacy policy.";
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
+import { submitAffLead } from "@/lib/leads/submit-client";
+import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
+import { track } from "@accounting-network/web-shared/analytics/track";
+import { healthCheckMessagePrefix } from "@/lib/lead-message";
 import {
   AGENCY_TYPE_OPTIONS,
   CONTRACTOR_OPTIONS,
@@ -76,6 +80,8 @@ export function HealthCheckWizard() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<Result | null>(null);
+  // LD-03: honeypot tracked in ref so bots that fill it are detected server-side.
+  const honeypotRef = useRef<HTMLInputElement>(null);
 
   const totalSteps = 6;
   const progress = useMemo(() => Math.round((step / totalSteps) * 100), [step, totalSteps]);
@@ -148,6 +154,61 @@ export function HealthCheckWizard() {
     }
     setSubmitting(true);
     setError(null);
+
+    const honeypot = honeypotRef.current?.value?.trim() ?? "";
+    const consentAt = new Date().toISOString();
+
+    // STEP 1: Submit to the chokepoint as a qualified lead so that consent is
+    // persisted in the leads table and the owner notification fires.
+    // The agencyType is the closest proxy for the lead role (maps to niche config
+    // role_options values). extras.health_check = true marks this as a wizard
+    // submission for downstream filtering.
+    try {
+      // email_only: the wizard collects no phone. Full-mode validation would
+      // 400 on the empty phone and the lead would silently vanish (QA BLOCKING
+      // finding, wave 5 - the exact defect class this rewire exists to kill).
+      const chokepointResult = await submitAffLead(
+        {
+          full_name: a.name,
+          email: a.email,
+          phone: "",
+          captureMode: "email_only",
+          role: a.agencyType || "Other",
+          message: `${healthCheckMessagePrefix()}${a.topConcern ? a.topConcern.slice(0, 200) : "(health check submitted)"}`,
+          source: "agency",
+          source_url: typeof window !== "undefined" ? window.location.href : "",
+          submitted_at: consentAt,
+          consent_given: consentGiven,
+          consent_text: CONSENT_TEXT,
+          consent_at: consentAt,
+          visitor_id: getVisitorId() ?? undefined,
+          session_id: getSessionId() ?? undefined,
+          extras: {
+            health_check: true,
+            agencyType: a.agencyType,
+            revenueBand: a.revenueBand,
+            entity: a.entity,
+            rdActivity: a.rdActivity,
+            contractorUse: a.contractorUse,
+            exitHorizon: a.exitHorizon,
+          },
+        },
+        honeypot,
+      );
+      if (!chokepointResult.success) {
+        // A returned failure (4xx) means the lead was NOT written. Surface it
+        // (never silently discard a rejected qualified lead) but stay fail-open
+        // for the PDF fulfilment below.
+        track("form_error", { form_id: "health_check_lead", reason: "chokepoint_rejected" });
+        console.warn("[health-check/wizard] chokepoint rejected the lead (non-fatal)", chokepointResult.error);
+      }
+    } catch {
+      // Non-fatal: fail-open so the PDF/email fulfilment still runs.
+      console.warn("[health-check/wizard] chokepoint submit failed (non-fatal)");
+    }
+
+    // STEP 2: PDF generation and email delivery (fail-open: the lead is already
+    // captured above; this route is for fulfilment only).
     try {
       const res = await fetch("/api/health-check/submit", {
         method: "POST",
@@ -157,7 +218,7 @@ export function HealthCheckWizard() {
         body: JSON.stringify({
           ...a,
           consent_given: consentGiven,
-          consent_at: new Date().toISOString(),
+          consent_at: consentAt,
           consent_text: CONSENT_TEXT,
         }),
       });
@@ -227,6 +288,17 @@ export function HealthCheckWizard() {
 
   return (
     <div className="bg-white border border-slate-200 rounded-lg p-6 sm:p-8">
+      {/* LD-03: honeypot — visually hidden, estate-standard name enquiry_ref.
+          Value passed to server chokepoint which stores it flagged and returns success. */}
+      <input
+        ref={honeypotRef}
+        type="text"
+        name="enquiry_ref"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ position: "absolute", left: "-9999px", top: "-9999px", width: 1, height: 1, opacity: 0 }}
+      />
       <div className="flex items-center justify-between text-xs font-semibold text-slate-600">
         <span>
           Step {step} of {totalSteps}

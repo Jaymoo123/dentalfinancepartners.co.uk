@@ -196,7 +196,7 @@ keyTakeaways:
 
 <p>If your contractor mix has changed in the last 12 months or you are planning a significant R&D project, ask your accountant before you start spending. A quick calculation now can save you thousands in lost credit later.</p>
 
-<p>At <a href="/about">Agency Founder Finance</a>, we are ICAEW qualified accountants who work exclusively with agency founders. We see the PAYE-NI cap catch people out every year. If you want to check whether your claim is at risk, <a href="/contact">get in touch</a>. We will run the numbers and tell you where you stand.</p>
+<p>At <a href="/about">Agency Founder Finance</a>, we work exclusively with agency founders. We see the PAYE-NI cap catch people out every year. If you want to check whether your claim is at risk, <a href="/contact">get in touch</a>. We will run the numbers and tell you where you stand.</p>
 
 <h2>Related articles in Tax and Compliance</h2>
 <ul>

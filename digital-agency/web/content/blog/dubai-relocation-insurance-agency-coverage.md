@@ -119,7 +119,7 @@ keyTakeaways:
 
 <h2>How Agency Founder Finance Can Help</h2>
 
-<p>We are <a href="/about">ICAEW qualified accountants</a> who work exclusively with agency founders. We do not sell insurance. But we see the consequences of uninsured claims in our clients' accounts and we help them structure their finances to avoid those risks.</p>
+<p>We work exclusively with agency founders. We do not sell insurance. But we see the consequences of uninsured claims in our clients' accounts and we help them structure their finances to avoid those risks.</p>
 
 <p>If you are planning a Dubai relocation, we can review your current business structure, flag the insurance gaps, and connect you with a UAE insurance broker we trust. We also handle the UK side of the transition: corporation tax filings, director's loan account clearance, and VAT deregistration where needed.</p>
 

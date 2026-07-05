@@ -135,7 +135,7 @@ keyTakeaways:
 
 <p>The key is to ensure your UK company is either closed or dormant before you move. Do not run two active companies with the same clients across two jurisdictions. That creates transfer pricing issues and tax complications.</p>
 
-<p>As ICAEW qualified accountants, we recommend you speak to a cross-border tax specialist before making any changes. The rules around residency, permanent establishment, and double taxation are complex. A mistake could cost you tens of thousands in unexpected tax bills.</p>
+<p>Working exclusively with agency founders, we recommend you speak to a cross-border tax specialist before making any changes. The rules around residency, permanent establishment, and double taxation are complex. A mistake could cost you tens of thousands in unexpected tax bills.</p>
 
 <h2>Practical Steps: A Checklist for Agency Founders Moving to Dubai</h2>
 

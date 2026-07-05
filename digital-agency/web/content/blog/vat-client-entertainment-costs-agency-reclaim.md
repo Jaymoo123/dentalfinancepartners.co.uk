@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'VAT on client entertainment costs: reclaim rules'
 metaDescription: HMRC blocks VAT recovery on client entertainment. Here’s how UK agencies handle lunch, tickets, and events without triggering a challenge.
-altText: Agency founder reviewing client entertainment receipts with an ICAEW accountant in a London office
+altText: Agency founder reviewing client entertainment receipts with a specialist accountant in a London office
 image: /blog/vat-client-entertainment-costs-agency-reclaim.jpg
 imageCredit:
   photographer: Kindel Media
@@ -165,7 +165,7 @@ keyTakeaways:
 
 <p>If HMRC writes to you about entertainment costs on your VAT return, do not ignore it. Respond promptly with the evidence you have. If you do not have evidence, be honest and offer to repay the VAT. HMRC is more lenient with taxpayers who cooperate.</p>
 
-<p>If you believe your claim is correct but HMRC disagrees, you can appeal. This is where having an ICAEW qualified accountant on your side matters. We can review your evidence, assess your chances, and represent you in discussions with HMRC.</p>
+<p>If you believe your claim is correct but HMRC disagrees, you can appeal. This is where having an specialist agency accountant on your side matters. We can review your evidence, assess your chances, and represent you in discussions with HMRC.</p>
 
 <p>For agencies that work with us at Agency Founder Finance, we review VAT returns before submission. That catches entertainment reclaim errors before they become inspection issues.</p>
 

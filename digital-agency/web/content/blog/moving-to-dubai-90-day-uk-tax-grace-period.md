@@ -168,7 +168,7 @@ keyTakeaways:
 
 <p>If your agency turns over more than £500k, if you have multiple companies, or if you own property in the UK, this is not a DIY exercise. The interaction between UK corporation tax, personal tax, and UAE tax residence is complex. One wrong step and you're looking at a multi-year HMRC enquiry.</p>
 
-<p>As ICAEW qualified accountants working exclusively with agency founders, we see this every month. The founders who get it right plan six months ahead. The ones who get it wrong book a call in a panic after HMRC sends a letter.</p>
+<p>Working exclusively with agency founders, we see this every month. The founders who get it right plan six months ahead. The ones who get it wrong book a call in a panic after HMRC sends a letter.</p>
 
 <p>If you're considering a move to Dubai, speak to an accountant who understands both UK and UAE tax. Not a generalist. Someone who knows how agency structures work, how directors' loan accounts interact with residence changes, and how to time your departure to maximise the 90-day grace period.</p>
 

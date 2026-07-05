@@ -98,7 +98,7 @@ imageCredit:
 
 <p>HMRC knows which firms submit high-risk claims. If your R&D claim has been prepared by a firm that specialises in maximising claim values rather than building defensible submissions, your claim is more likely to be investigated. This is not about small firms versus large firms. It is about methodology. A claim that uses percentage allocations without justification, or that includes costs that are clearly not qualifying, will be flagged.</p>
 
-<p>As ICAEW qualified accountants, we see claims that have been prepared by non-specialist bookkeepers or by R&D claim mills that have no understanding of agency operations. Those claims are the ones that get opened up.</p>
+<p>Working exclusively with agency founders, we see claims that have been prepared by non-specialist bookkeepers or by R&D claim mills that have no understanding of agency operations. Those claims are the ones that get opened up.</p>
 
 <h2>What Happens During an HMRC R&D Enquiry</h2>
 

@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Share Buyback for Co-Founder Exit: Tax-Efficient Agency UK'
-metaDescription: Agency co-founder leaving? Structure a share buyback to minimise tax. We cover BADR, capital treatment, and the steps you must follow. ICAEW guide.
+metaDescription: Agency co-founder leaving? Structure a share buyback to minimise tax. We cover BADR, capital treatment, and the steps you must follow.
 altText: Two agency co-founders shaking hands in a modern UK office meeting room with financial documents on the table
 image: /blog/share-buyback-exit-co-founder-agency-tax-efficiently.jpg
 imageCredit:
@@ -42,7 +42,7 @@ keyTakeaways:
 
 <p>But a share buyback has tax traps. Get the paperwork wrong and HMRC treats the payment as a dividend. That means the leaving founder pays income tax on the proceeds, not capital gains tax. The difference is material. A dividend payment to a higher-rate taxpayer is taxed at 35.75%. A capital gain qualifying for Business Asset Disposal Relief (BADR) is taxed at 18%. On a £500,000 buyout, that is a £118,750 difference.</p>
 
-<p>This guide covers how to structure a share buyback when <strong>selling agency tax UK</strong> considerations matter most. We are ICAEW qualified accountants who work exclusively with agency founders. We see these scenarios regularly.</p>
+<p>This guide covers how to structure a share buyback when <strong>selling agency tax UK</strong> considerations matter most. We work exclusively with agency founders. We see these scenarios regularly.</p>
 
 <h2>The Two Routes: Capital vs Income Treatment</h2>
 
@@ -137,7 +137,7 @@ keyTakeaways:
 
 <p>If the co-founder has already left and you are now dealing with the buyback, move quickly. The longer you wait, the more likely HMRC will question the transaction. And if you have already paid them as a dividend, you cannot unwind it.</p>
 
-<p>Speak to your accountant before you sign anything. If you do not have an accountant who understands agency share buybacks, talk to us. We are <a href="/about">ICAEW qualified accountants</a> who work with agency founders every day. We can run the numbers, check the conditions, and handle the HMRC filings.</p>
+<p>Speak to your accountant before you sign anything. If you do not have an accountant who understands agency share buybacks, talk to us. We work exclusively with agency founders who work with agency founders every day. We can run the numbers, check the conditions, and handle the HMRC filings.</p>
 
 <p>One final point. If your agency has contractors or freelancers, check whether any of them might be deemed employees under IR35. A departing co-founder who stays on as a contractor can create IR35 problems. We cover this in our <a href="/blog/contractors-and-ir35">contractors and IR35</a> guide.</p>
 

@@ -104,7 +104,7 @@ imageCredit:
 
 <p>Many agency founders choose to register voluntarily before hitting the threshold. If your clients are all VAT-registered businesses, they can reclaim the VAT you charge them, so it costs them nothing. Registering early lets you reclaim VAT on your own purchases, which can be valuable if you are investing in equipment or software.</p>
 
-<p>If you are unsure whether to register, speak to an accountant. Our <a href="/services">ICAEW qualified team</a> works exclusively with agency founders and can help you decide.</p>
+<p>If you are unsure whether to register, speak to an accountant. Our <a href="/services">specialist team</a> works exclusively with agency founders and can help you decide.</p>
 
 <h2>VAT Payment Deadlines and Penalties</h2>
 
