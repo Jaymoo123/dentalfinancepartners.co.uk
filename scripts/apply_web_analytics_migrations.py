@@ -94,6 +94,10 @@ MIGRATIONS = [
     "20260630000001_console_perf_section_action_and_workmem.sql",
     "20260630000002_form_lead_counts.sql",
     "20260704000001_metric_consistency_visitor_id.sql",
+    # R3 resource-gate consent isolation: WHEN clauses on the notify/enrich
+    # triggers so in-house-consent resource downloads never CC the partner or
+    # consume paid enrichment. Triggers only; functions (with secrets) untouched.
+    "20260706000001_resource_gate_notify_skip.sql",
 ]
 
 
