@@ -83,6 +83,43 @@ DATAFORSEO_LANGUAGE_CODE_EN = "en"
 
 
 # ---------------------------------------------------------------------------
+# SE Ranking (7-day trial — credit-metered, LOCAL-ONLY ledger)
+# ---------------------------------------------------------------------------
+# Unlike DataForSEO (USD-metered, Supabase cost log), the SE Ranking trial work
+# is local-only: no Supabase. The client keeps a JSON credit ledger + idempotency
+# cache on disk under briefs/property/seranking/. Add the current trial's key to
+# the root .env as:  SERANKING_API_TOKEN=<key>   (the May token is dead — 403).
+SERANKING_API_TOKEN: str = os.getenv("SERANKING_API_TOKEN", "")
+SERANKING_BASE_URL: str = os.getenv("SERANKING_BASE_URL", "https://api.seranking.com")
+SERANKING_SYSTEM_UK: str = os.getenv("SERANKING_SYSTEM_UK", "uk")  # regional db / system code
+
+# Hard credit ceiling for the whole trial. A call whose estimate would push
+# cumulative ledger spend over this is refused. The Day-0 gate reads the real
+# trial allowance from the balance endpoint and we tighten this to match.
+SERANKING_CREDIT_CEILING: int = int(os.getenv("SERANKING_CREDIT_CEILING", "20000"))
+
+# Per-endpoint credit cost: base = per-request credits, per_row = per record.
+# From the public pricing page; the Day-0 gate confirms the real numbers from
+# live response headers/body before any bulk spend. Keyed by short endpoint name
+# (same .get() + endswith fallback that DataForSEO's _estimate_cost uses).
+SERANKING_COSTS: dict[str, dict[str, Any]] = {
+    "domain/keywords":      {"base": 100, "per_row": 0},   # flat per request
+    "domain/competitors":   {"base": 100, "per_row": 0},
+    "domain/overview":      {"base": 100, "per_row": 0},
+    "keywords/export":      {"base": 0,   "per_row": 10},
+    "keywords/related":     {"base": 0,   "per_row": 10},
+    "keywords/similar":     {"base": 0,   "per_row": 10},
+    "keywords/questions":   {"base": 0,   "per_row": 10},
+    "keywords/longtail":    {"base": 0,   "per_row": 1},
+    "backlinks/summary":    {"base": 0,   "per_row": 100},
+    "backlinks/all":        {"base": 0,   "per_row": 1},
+    "backlinks/refdomains": {"base": 0,   "per_row": 1},
+    "ai/overview":          {"base": 0,   "per_row": 0},    # confirm at gate
+    "account/balance":      {"base": 0,   "per_row": 0},    # free
+}
+
+
+# ---------------------------------------------------------------------------
 # Sites
 # ---------------------------------------------------------------------------
 

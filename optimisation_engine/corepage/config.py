@@ -49,6 +49,52 @@ CORE_PAGES: dict[str, dict[str, dict]] = {
             ],
             # ILIKE patterns used to detect the head family in gsc_query_data.
             "head_match_like": ["%accountant%", "%accountancy%"],
+            # Single tokens worth tracking on-page (term_analysis density).
+            "root_tokens": ["accountant", "accountants", "property", "landlord",
+                            "landlords", "tax", "buy-to-let", "investor", "investors"],
+            # The "main keyword" rollup (singular+plural of the primary term).
+            "main_keyword_terms": ["property accountant", "property accountants"],
+        },
+    },
+    "generalist": {
+        "homepage": {
+            "site_key": "generalist",
+            "page_key": "homepage",
+            "page_type": "homepage",
+            # Bare registrable domain (no scheme/www) — drops our own results
+            # out of the competitor SERP.
+            "domain": "hollowaydavies.co.uk",
+            "page_url": "https://www.hollowaydavies.co.uk/",
+            "canonical_path": "/",
+            "source_tsx": "generalist/web/src/app/page.tsx",
+            "web_root": "generalist/web",
+            # National head-keyword family the homepage should OWN. Holloway
+            # Davies is a general-practice firm for UK SMEs (limited companies,
+            # contractors, sole traders, partnerships). These mirror the firm's
+            # own /fundamentals pillar pages and the commercial-intent demand.
+            "head_terms": [
+                "small business accountant",
+                "accountant for small business",
+                "limited company accountant",
+                "accountant for limited company",
+                "online accountant",
+                "contractor accountant",
+                "sole trader accountant",
+                "fixed fee accountant",
+            ],
+            # Geo modifiers seen in GSC -> local intent should funnel to
+            # /locations / /accountant-near-me, NOT be claimed by the homepage.
+            "geo_modifiers": [
+                "london", "manchester", "birmingham", "leeds", "liverpool",
+                "bristol", "glasgow", "edinburgh", "st albans", "burnley",
+                "near me",
+            ],
+            "head_match_like": ["%accountant%", "%accountancy%"],
+            "root_tokens": ["accountant", "accountants", "accountancy", "tax",
+                            "small", "business", "limited", "company",
+                            "contractor", "sole", "trader"],
+            "main_keyword_terms": ["small business accountant",
+                                   "accountant for small business"],
         },
     },
 }

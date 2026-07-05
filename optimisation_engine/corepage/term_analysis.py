@@ -76,7 +76,20 @@ def phrase_count(words: list[str], phrase: str) -> int:
     return joined.count(" " + phrase.lower().strip() + " ")
 
 
-def keyword_stats(text: str, head_terms: list[str]) -> dict:
+def keyword_stats(
+    text: str,
+    head_terms: list[str],
+    *,
+    main_terms: list[str] | None = None,
+    root_tokens: list[str] | None = None,
+) -> dict:
+    """Site-agnostic on-page term stats.
+
+    ``main_terms`` (the primary head phrase[s] rolled up as the "main keyword")
+    and ``root_tokens`` (single tokens tracked individually) come from the
+    CORE_PAGES entry. They default to sensible derivations so any site works
+    without property-specific hardcoding.
+    """
     words = tokenize(text)
     n = max(len(words), 1)
     terms = {}
@@ -85,16 +98,21 @@ def keyword_stats(text: str, head_terms: list[str]) -> dict:
         terms[t] = {"count": c, "per_1000": round(c / n * 1000, 2)}
     roots = {}
     wc = Counter(words)
-    for r in ROOT_TOKENS:
+    rtoks = root_tokens if root_tokens is not None else ROOT_TOKENS
+    for r in rtoks:
         c = wc.get(r, 0)
         roots[r] = {"count": c, "per_1000": round(c / n * 1000, 2)}
-    # "main keyword" rollup: property accountant(s) singular+plural
-    main = phrase_count(words, "property accountant") + phrase_count(words, "property accountants")
+    # "main keyword" rollup: sum of the primary head term(s). Defaults to the
+    # first two head terms (for property that is the singular+plural pair).
+    mterms = main_terms if main_terms is not None else head_terms[:2]
+    main = sum(phrase_count(words, m) for m in mterms)
+    main_words = max((len(m.split()) for m in mterms), default=2)
     return {
         "word_count": n,
         "main_keyword_count": main,
-        "main_keyword_density_pct": round(main * 2 / n * 100, 2),  # 2-word phrase
+        "main_keyword_density_pct": round(main * main_words / n * 100, 2),
         "main_keyword_per_1000": round(main / n * 1000, 2),
+        "main_terms": mterms,
         "head_terms": terms,
         "roots": roots,
     }
@@ -125,12 +143,18 @@ def headings(html: str) -> dict:
     }
 
 
-def analyse_page(url: str, head_terms: list[str]) -> dict:
+def analyse_page(
+    url: str,
+    head_terms: list[str],
+    *,
+    main_terms: list[str] | None = None,
+    root_tokens: list[str] | None = None,
+) -> dict:
     status, html = _fetch_any(url)
     if status != 200 or not html:
         return {"url": url, "status": status, "error": "fetch_failed"}
     text = visible_text(html)
-    ks = keyword_stats(text, head_terms)
+    ks = keyword_stats(text, head_terms, main_terms=main_terms, root_tokens=root_tokens)
     hs = headings(html)
     return {
         "url": url,
@@ -156,6 +180,8 @@ def _median(xs: list[float]) -> float:
 def run_term_analysis(site_key: str, page_key: str, *, our_url: str | None = None) -> dict:
     cfg = get_core_page(site_key, page_key)
     head_terms = cfg["head_terms"]
+    main_terms = cfg.get("main_keyword_terms")
+    root_tokens = cfg.get("root_tokens")
     out_dir = ROOT / "briefs" / site_key / page_key
     pack_path = out_dir / "_analysis_pack.json"
     if not pack_path.exists():
@@ -166,7 +192,7 @@ def run_term_analysis(site_key: str, page_key: str, *, our_url: str | None = Non
     print(f"[term] analysing {len(comp_urls)} competitors + our page...")
     competitors = []
     for u in comp_urls:
-        res = analyse_page(u, head_terms)
+        res = analyse_page(u, head_terms, main_terms=main_terms, root_tokens=root_tokens)
         competitors.append(res)
         tag = "OK" if not res.get("error") else res.get("error")
         print(f"  {tag:14} {u}")
@@ -174,7 +200,7 @@ def run_term_analysis(site_key: str, page_key: str, *, our_url: str | None = Non
     ours = None
     our_target = our_url or cfg["page_url"]
     print(f"[term] our page: {our_target}")
-    ours = analyse_page(our_target, head_terms)
+    ours = analyse_page(our_target, head_terms, main_terms=main_terms, root_tokens=root_tokens)
 
     ok = [c for c in competitors if not c.get("error")]
     # Aggregate the shared vocabulary across competitors.
@@ -218,6 +244,7 @@ def run_term_analysis(site_key: str, page_key: str, *, our_url: str | None = Non
     }
 
     report = {"site_key": site_key, "page_key": page_key, "head_terms": head_terms,
+              "main_terms": (main_terms or head_terms[:2]),
               "summary": summary, "ours": ours, "competitors": competitors}
     report["readable_md"] = render_md(report)
     (out_dir / "_term_analysis.json").write_text(json.dumps(report, indent=2, default=str), encoding="utf-8")
@@ -237,7 +264,7 @@ def render_md(r: dict) -> str:
     L.append(f"- Ours: **{wc['ours']}** | competitor median **{wc['competitor_median']}** "
              f"(range {wc['competitor_min']}-{wc['competitor_max']})\n")
 
-    L.append("## Main keyword ('property accountant(s)') usage")
+    L.append(f"## Main keyword ('{' / '.join(r.get('main_terms') or [])}') usage")
     mk = s["main_keyword_count"]; md = s["main_keyword_per_1000"]
     L.append(f"- Count: ours **{mk['ours']}**, competitor median **{mk['competitor_median']}** (max {mk['competitor_max']}).")
     L.append(f"- Per 1,000 words: ours **{md['ours']}**, competitor median **{md['competitor_median']}**.\n")

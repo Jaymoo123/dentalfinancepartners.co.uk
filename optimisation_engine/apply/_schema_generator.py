@@ -129,7 +129,7 @@ SITE_EEAT_PROFILES: dict[str, dict] = {
         "author": {
             "@type": "Person",
             "name": "James Holloway",
-            "jobTitle": "Chartered Accountant (ACA, ICAEW)",
+            "jobTitle": "Senior accountant",
             "knowsAbout": [
                 "UK corporation tax", "Limited company structures", "VAT registration",
                 "Director remuneration", "R&D tax credits", "MTD compliance",

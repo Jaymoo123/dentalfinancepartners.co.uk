@@ -101,6 +101,43 @@ SITE_RULES = {
             ("HMRC Property Rental Toolkit", "https://www.gov.uk/government/publications/hmrc-property-rental-toolkit"),
         ],
     },
+    "generalist": {
+        "content_dir": "generalist/web/content/blog",
+        "web_root": "generalist/web",
+        "domain": "https://www.hollowaydavies.co.uk",
+        "audience": "UK SME owners — limited company directors, contractors and freelancers, sole traders, and partnerships/LLPs",
+        "lead_form_segments": [
+            "Limited company",
+            "Sole trader",
+            "Contractor or freelancer",
+            "Partnership or LLP",
+            "Just starting out",
+        ],
+        "pillar_pages": {
+            "Limited company accountant (definitive)": "/fundamentals/definitive-guide-limited-company-accountant",
+            "Sole trader accountant (definitive)": "/fundamentals/definitive-guide-sole-trader-accountant",
+            "Contractor accountant (definitive)": "/fundamentals/definitive-guide-choosing-contractor-accountant-uk",
+            "Online accountant UK (definitive)": "/fundamentals/definitive-guide-online-accountant-uk",
+            "Small business accountant guide": "/fundamentals/small-business-accountant-guide",
+            "How corporation tax works": "/fundamentals/how-does-corporation-tax-work",
+            "Limited company vs sole trader": "/fundamentals/limited-company-vs-sole-trader",
+            "VAT accountant / when to register": "/fundamentals/vat-accountant",
+            "R&D tax credits explained": "/fundamentals/r-and-d-tax-credits-explained",
+            "IR35 explained": "/fundamentals/ir35-explained",
+            "MTD for Income Tax": "/fundamentals/making-tax-digital-for-income-tax-guide",
+        },
+        "authority_links": [
+            ("HMRC Company Taxation Manual (CTM)", "https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual"),
+            ("HMRC Business Income Manual (BIM)", "https://www.gov.uk/hmrc-internal-manuals/business-income-manual"),
+            ("HMRC VAT registration", "https://www.gov.uk/vat-registration"),
+            ("HMRC PAYE for employers", "https://www.gov.uk/paye-for-employers"),
+            ("gov.uk MTD for ITSA sign-up checker", "https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax"),
+            ("HMRC R&D tax relief (CIRD manual)", "https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual"),
+            ("HMRC off-payroll working (IR35) guidance", "https://www.gov.uk/guidance/understanding-off-payroll-working-ir35"),
+            ("Companies House — file your annual accounts", "https://www.gov.uk/file-your-company-annual-accounts"),
+            ("HMRC Business Asset Disposal Relief", "https://www.gov.uk/business-asset-disposal-relief"),
+        ],
+    },
 }
 
 UNIVERSAL_RULES = """
