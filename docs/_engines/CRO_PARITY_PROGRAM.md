@@ -118,6 +118,8 @@ If resuming cold: check `/workflows` or relaunch via the script paths in the wor
 
 **WAVE 2 CLOSED 2026-07-06: Dentists at FULL PARITY** (D-1 `9c9d852d`, D-2 `dfc01b11`, D-3 `92615fa6`; tags deploy/dentists/2026-07-06-d{1,2,3}; all probes PASS; resources+workbooks live; 372 tests). D-3 QA caught a would-be-total-outage (ResourceGate missing captureMode email_only = 400 on every download) + 57 pre-existing undefined var(--primary) usages swept. **Medical R1 LIVE (M-1), R2 building (wf_6ae5c288-742); Class 4 defect #4 fixed (`91f95969`).** Twin wave (cfp+cis) R1 launching. Placeholder-phone posture: display removed where config phone is the 0000 placeholder (form-first per estate rule); owner to supply real numbers if wanted.
 
+**Owner 2026-07-06 (late): "ship the twins when green then finish medical" — twins R1 (wf_2f16225c-a51) ships on green; Medical R2 (wf_6ae5c288-742) then R3 complete wave 3. Standing ship-when-green covers all.**
+
 ## Gate results log
 - 2026-07-06: THIRD live factual defect fixed (commit `ddb7a24c`): Solicitors take-home employer NIC secondary threshold 9,100→5,000 (stale since Apr 2025; understated NIC ≤ £615/yr on every Ltd output). Survived because Ltd tests asserted typeof-only — REAL pinned goldens added (conservation-checked, 132/132). TOOLS.md also corrected (£250 SRA line + 2025/26 dividend rates). Running tally of live advisory-grade defects caught by program fact-tracing: 3 (dividend rates, SRA £250, NIC threshold).
 - 2026-07-06: migration `20260706000001_resource_gate_notify_skip.sql` written+registered+committed (`16eddc86`); staging apply N/A (trigger fns exist only on prod — created via Management API with secrets); prod-readiness verified by introspection.
