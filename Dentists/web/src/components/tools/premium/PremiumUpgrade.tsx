@@ -16,7 +16,7 @@
  * TOKEN DISCIPLINE: Dentists does NOT define --primary. The "Free interactive tool"
  * eyebrow chip uses bg-[var(--navy)] (dark brand fill) with white text. Loading
  * placeholder skeleton uses var(--gold) accent bar and var(--border) pulses.
- * No var(--primary) anywhere.
+ * No var(--gold) anywhere.
  *
  * topicKey is threaded as a PROP from PremiumUpgrade into PremiumCalculator into
  * ResultGateModal. It is NEVER re-derived from the URL inside the gate.

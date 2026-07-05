@@ -8,7 +8,7 @@
  * No recharts, no radix, no new npm dependencies.
  *
  * Token discipline: uses var(--gold), var(--navy), var(--border), var(--ink),
- * var(--ink-soft). Dentists does NOT define --primary; no var(--primary) here.
+ * var(--ink-soft). Dentists does NOT define --primary; no var(--gold) here.
  *
  * Bar rendering:
  *   - Groups are spaced evenly across the SVG width.

@@ -14,6 +14,9 @@ import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
 import { topicForBlogSlug } from "@/lib/intent/taxonomy";
 import { PremiumUpgrade } from "@/components/tools/premium/PremiumUpgrade";
+import { ResourceGate } from "@/components/resources/ResourceGate";
+import { gateCopy } from "@/lib/resources/copy";
+import { hasEnabledResource } from "@/lib/resources/registry";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -190,7 +193,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
 
               {takeaways ? (
                 <section
-                  className="not-prose rounded-lg border-l-4 border-[var(--primary)] bg-[var(--surface-elevated)] p-6"
+                  className="not-prose rounded-lg border-l-4 border-[var(--gold)] bg-[var(--surface-elevated)] p-6"
                   aria-label="Key takeaways"
                 >
                   <p className="text-xs font-bold uppercase tracking-wider text-[var(--accent-strong)]">
@@ -206,7 +209,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   </ul>
                 </section>
               ) : post.summary ? (
-                <p className="text-lg text-[var(--ink-soft)] leading-relaxed border-l-4 border-[var(--primary)] bg-[var(--surface-elevated)] p-6">
+                <p className="text-lg text-[var(--ink-soft)] leading-relaxed border-l-4 border-[var(--gold)] bg-[var(--surface-elevated)] p-6">
                   {post.summary}
                 </p>
               ) : null}
@@ -228,6 +231,15 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       placement="blog"
                       category={categorySlug}
                     />
+                    {/* R3 resource gate: appended after PremiumUpgrade. Renders nothing
+                        when no enabled resource exists for this topic. */}
+                    {hasEnabledResource(premiumTopic) && (
+                      <ResourceGate
+                        topic={premiumTopic!}
+                        copy={gateCopy(premiumTopic, post.title)}
+                        placement="blog"
+                      />
+                    )}
                     {/* Mid-scroll injection: InlineMiniLeadForm before the second
                         half. Topic is the human display label from the post (used
                         as a readable tag in the lead message prefix). */}
@@ -236,14 +248,21 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   </>
                 ) : (
                   /* Short-post fallback: fewer than 4 h2s, no mid-split.
-                     Still inject the premium island after the article body so
-                     mapped categories get the tool even on short posts.
-                     PremiumUpgrade renders nothing for non-mapped categories. */
-                  <PremiumUpgrade
-                    topic={premiumTopic}
-                    placement="blog"
-                    category={categorySlug}
-                  />
+                     Inject both the premium island and the resource gate. */
+                  <>
+                    <PremiumUpgrade
+                      topic={premiumTopic}
+                      placement="blog"
+                      category={categorySlug}
+                    />
+                    {hasEnabledResource(premiumTopic) && (
+                      <ResourceGate
+                        topic={premiumTopic!}
+                        copy={gateCopy(premiumTopic, post.title)}
+                        placement="blog"
+                      />
+                    )}
+                  </>
                 )}
               </div>
 
@@ -254,7 +273,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   </h2>
                   <dl className="space-y-4">
                     {post.faqs.map((faq, i) => (
-                      <div key={i} className="border-l-4 border-[var(--primary)] bg-[var(--surface)] p-6">
+                      <div key={i} className="border-l-4 border-[var(--gold)] bg-[var(--surface)] p-6">
                         <dt className="text-lg font-bold text-[var(--ink)]">{faq.question}</dt>
                         <dd className="mt-3 text-base text-[var(--ink-soft)] leading-relaxed">{faq.answer}</dd>
                       </div>
@@ -264,16 +283,16 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
               ) : null}
 
               <aside className="mt-16 flex gap-5 items-start bg-[var(--surface)] border border-[var(--border)] p-6 sm:p-8 rounded-lg">
-                <div className="hidden sm:block shrink-0 w-14 h-14 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center">
+                <div className="hidden sm:block shrink-0 w-14 h-14 rounded-full bg-[var(--gold)]/10 text-[var(--gold)] flex items-center justify-center">
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-bold uppercase tracking-wider text-[var(--primary)]">About the author</p>
+                  <p className="text-sm font-bold uppercase tracking-wider text-[var(--gold)]">About the author</p>
                   <p className="mt-1 text-lg font-bold text-[var(--ink)]">{niche.display_name}</p>
                   <p className="mt-2 text-sm text-[var(--ink-soft)] leading-relaxed">{niche.description}</p>
-                  <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-[var(--primary)] hover:underline">
+                  <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-[var(--gold)] hover:underline">
                     Learn more about our team →
                   </Link>
                 </div>
@@ -281,8 +300,8 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
 
               <NextStepOffer />
 
-              <div className="mt-16 border-2 border-[var(--primary)]/20 bg-gradient-to-br from-[var(--primary)]/5 to-[var(--accent)]/5 p-8 sm:p-10 rounded-2xl">
-                <h2 className="text-2xl font-bold text-[var(--primary)] sm:text-3xl">
+              <div className="mt-16 border-2 border-[var(--gold)]/20 bg-gradient-to-br from-[var(--gold)]/5 to-[var(--accent)]/5 p-8 sm:p-10 rounded-2xl">
+                <h2 className="text-2xl font-bold text-[var(--gold)] sm:text-3xl">
                   {niche.blog.cta_heading}
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)]">
@@ -303,7 +322,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       <li key={r.slug}>
                         <Link
                           href={`/blog/${r.categorySlug}/${r.slug}`}
-                          className="block border-l-4 border-[var(--border)] bg-[var(--surface)] p-6 transition-all hover:border-[var(--primary)] hover:bg-white hover:shadow-md"
+                          className="block border-l-4 border-[var(--border)] bg-[var(--surface)] p-6 transition-all hover:border-[var(--gold)] hover:bg-white hover:shadow-md"
                         >
                           <h3 className="text-lg font-bold text-[var(--ink)]">{r.title}</h3>
                           <p className="mt-2 text-sm text-[var(--muted)]">{r.summary}</p>

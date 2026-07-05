@@ -66,7 +66,7 @@ export default function PracticeFinancePillarPage() {
         ]}
       />
 
-      <header className="border-l-4 border-[var(--primary)] bg-[var(--surface)] p-8">
+      <header className="border-l-4 border-[var(--gold)] bg-[var(--surface)] p-8">
         <h1 className="text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl md:text-5xl">
           Complete Dental Practice Finance Guide
         </h1>
@@ -166,8 +166,8 @@ export default function PracticeFinancePillarPage() {
           </section>
         )}
 
-        <div className="mt-16 border-2 border-[var(--primary)]/20 bg-gradient-to-br from-[var(--primary)]/5 to-[var(--accent)]/5 p-8 sm:p-10 rounded-2xl">
-          <h2 className="text-2xl font-bold text-[var(--primary)] sm:text-3xl">
+        <div className="mt-16 border-2 border-[var(--gold)]/20 bg-gradient-to-br from-[var(--gold)]/5 to-[var(--accent)]/5 p-8 sm:p-10 rounded-2xl">
+          <h2 className="text-2xl font-bold text-[var(--gold)] sm:text-3xl">
             Need Practice Finance Support?
           </h2>
           <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)]">

@@ -20,7 +20,7 @@
  *   - var(--border): borders and grid lines
  *   - var(--surface) / var(--surface-elevated): card surfaces
  *   - var(--ink) / var(--ink-soft) / var(--muted): text hierarchy
- * No var(--primary) anywhere.
+ * No var(--gold) anywhere.
  *
  * Analytics: fires only allowlisted event names (calc_view / calc_input_change /
  * calc_computed / calc_result_viewed / cta_click) per packages/web-shared/analytics/types.ts.

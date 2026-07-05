@@ -10,9 +10,9 @@
  *
  * This is a qualified-lead capture modal, not a newsletter.
  *
- * R3-equivalent stand-down guard: when `dfp_assistant_active` is set to "1"
- * in sessionStorage (by a future on-site assistant in Phase 1), this modal
- * defers so both surfaces never fire together.
+ * R3 stand-down guard: when `dfp_assistant_active` is set to "1"
+ * in sessionStorage (by the SpecialistWidget, live in R3 WS6), this modal
+ * defers so both exit surfaces never fire together.
  */
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
@@ -76,9 +76,8 @@ export function ExitIntentModal() {
       try {
         if (window.sessionStorage.getItem("dfp_modal_shown") === "1") return;
       } catch { /* ignore */ }
-      // Stand-down: if the on-site assistant (Phase 1) is active this session,
-      // let it handle the exit ping instead of stacking two exit surfaces.
-      // dfp_assistant_active is set by the assistant component (not yet built).
+      // Stand-down: the SpecialistWidget (R3 WS6) sets dfp_assistant_active on mount.
+      // When it is active this session, defer so both exit surfaces never fire together.
       if (window.sessionStorage.getItem("dfp_assistant_active") === "1") return;
       try {
         window.sessionStorage.setItem("dfp_modal_shown", "1");

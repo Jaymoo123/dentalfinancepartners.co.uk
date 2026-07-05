@@ -9,7 +9,7 @@
  * sm:hidden block.
  *
  * TOKEN DISCIPLINE: Dentists does NOT define --primary. Uses var(--gold) for the
- * left accent border (matching the Dentists MiniCapture default). No var(--primary).
+ * left accent border (matching the Dentists MiniCapture default). No var(--gold).
  *
  * MobileToolSlot notes per brief Section 3:
  *   - formId="mobile_tool"

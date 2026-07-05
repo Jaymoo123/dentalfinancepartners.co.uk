@@ -92,7 +92,7 @@ export function BlogListWithSearch({
               placeholder="Search articles..."
               value={searchQuery}
               onChange={(e) => handleSearchChange(e.target.value)}
-              className={`w-full min-h-[48px] pl-12 pr-4 py-3 text-base rounded-lg border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] placeholder:text-[var(--muted)] transition-colors focus:border-[var(--primary)] focus:outline-none ${focusRing}`}
+              className={`w-full min-h-[48px] pl-12 pr-4 py-3 text-base rounded-lg border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] placeholder:text-[var(--muted)] transition-colors focus:border-[var(--gold)] focus:outline-none ${focusRing}`}
             />
           </div>
         </div>
@@ -105,7 +105,7 @@ export function BlogListWithSearch({
             id="blog-sort"
             value={sortBy}
             onChange={(e) => handleSortChange(e.target.value as SortOption)}
-            className={`min-h-[48px] px-4 py-3 text-sm sm:text-base rounded-lg border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] transition-colors focus:border-[var(--primary)] focus:outline-none ${focusRing}`}
+            className={`min-h-[48px] px-4 py-3 text-sm sm:text-base rounded-lg border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] transition-colors focus:border-[var(--gold)] focus:outline-none ${focusRing}`}
           >
             <option value="date-desc">Newest First</option>
             <option value="date-asc">Oldest First</option>
@@ -178,7 +178,7 @@ export function BlogListWithSearch({
                   {currentPage > 1 && (
                     <button
                       onClick={() => setCurrentPage((p) => p - 1)}
-                      className={`flex items-center justify-center min-h-[48px] min-w-[100px] px-4 rounded-lg border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] font-medium transition-colors hover:border-[var(--primary)] hover:bg-[var(--primary)]/5 active:scale-95 ${focusRing}`}
+                      className={`flex items-center justify-center min-h-[48px] min-w-[100px] px-4 rounded-lg border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] font-medium transition-colors hover:border-[var(--gold)] hover:bg-[var(--gold)]/5 active:scale-95 ${focusRing}`}
                     >
                       Previous
                     </button>
@@ -189,7 +189,7 @@ export function BlogListWithSearch({
                   {currentPage < totalPages && (
                     <button
                       onClick={() => setCurrentPage((p) => p + 1)}
-                      className={`flex items-center justify-center min-h-[48px] min-w-[100px] px-4 rounded-lg border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] font-medium transition-colors hover:border-[var(--primary)] hover:bg-[var(--primary)]/5 active:scale-95 ${focusRing}`}
+                      className={`flex items-center justify-center min-h-[48px] min-w-[100px] px-4 rounded-lg border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] font-medium transition-colors hover:border-[var(--gold)] hover:bg-[var(--gold)]/5 active:scale-95 ${focusRing}`}
                     >
                       Next
                     </button>

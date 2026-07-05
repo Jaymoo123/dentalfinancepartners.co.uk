@@ -61,6 +61,14 @@ export const siteConfig = {
     : null,
   // Canonical lead-form consent text (see derivation above). Forms append the link.
   leadConsentText,
+  /**
+   * Consent text for the resource gate (in-house only).
+   * ResourceGate is a first-party data capture by Dental Finance Partners.
+   * It does NOT name any partner firm, so it is separate from leadConsentText.
+   * Forms append "See our Privacy Policy." with a link.
+   */
+  resourceConsentText:
+    `I agree to Dental Finance Partners using my details to send me the free resource I have requested and to respond to any enquiry I submit.`,
 } as const;
 
 export type LocationEntry = (typeof siteConfig.locations)[number];

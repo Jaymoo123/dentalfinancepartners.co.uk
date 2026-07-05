@@ -6,6 +6,7 @@ import { focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/component
 import { siteConfig } from "@/config/site";
 import { JsonLd, buildWebApplication, buildFaqPage } from "@/lib/schema/index";
 import { CalculatorClient } from "@/components/tools/CalculatorClient";
+import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 import { getGenericTool, allTools } from "@/lib/tools/registry";
 
 export const dynamicParams = false;
@@ -93,6 +94,8 @@ export default async function CalculatorPage({
           <div className="mx-auto max-w-3xl">
             {/* slug only — the function-bearing tool config resolves client-side */}
             <CalculatorClient slug={slug} variant="page" />
+            {/* R3: additive resource gate; renders nothing when no asset is available for this topic */}
+            <CalculatorPageResources slug={slug} pageTitle={tool.name} />
           </div>
         </div>
       </section>

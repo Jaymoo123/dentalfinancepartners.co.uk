@@ -55,12 +55,12 @@ export function TestimonialSlider() {
 
   return (
     <div className="relative">
-      <div className="border-l-4 border-[var(--primary)] bg-white p-8">
+      <div className="border-l-4 border-[var(--gold)] bg-white p-8">
         <blockquote className="text-lg leading-relaxed text-slate-700">
           &ldquo;{currentTestimonial.quote}&rdquo;
         </blockquote>
         <div className="mt-6 flex items-center gap-4 border-t border-slate-200 pt-6">
-          <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center bg-[var(--primary)] text-lg font-bold text-white">
+          <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center bg-[var(--gold)] text-lg font-bold text-white">
             {currentTestimonial.initials}
           </div>
           <div className="flex-1">
@@ -69,8 +69,8 @@ export function TestimonialSlider() {
           </div>
         </div>
         {currentTestimonial.outcome && (
-          <div className="mt-4 border-l-4 border-[var(--primary)] bg-[var(--primary)]/5 px-4 py-3">
-            <span className="text-sm font-bold text-[var(--primary)]">Result: {currentTestimonial.outcome}</span>
+          <div className="mt-4 border-l-4 border-[var(--gold)] bg-[var(--gold)]/5 px-4 py-3">
+            <span className="text-sm font-bold text-[var(--gold)]">Result: {currentTestimonial.outcome}</span>
           </div>
         )}
       </div>
@@ -78,7 +78,7 @@ export function TestimonialSlider() {
       <div className="mt-6 flex items-center justify-center gap-4">
         <button
           onClick={() => setIsPaused(!isPaused)}
-          className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100 text-slate-700 transition-colors hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2"
+          className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100 text-slate-700 transition-colors hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-[var(--gold)] focus:ring-offset-2"
           aria-label={isPaused ? "Resume auto-rotation" : "Pause auto-rotation"}
           type="button"
         >
@@ -101,8 +101,8 @@ export function TestimonialSlider() {
                 setCurrentIndex(idx);
                 setIsPaused(true);
               }}
-              className={`h-3 w-3 rounded-full transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2 ${
-                idx === currentIndex ? "bg-[var(--primary)] scale-125" : "bg-slate-300 hover:bg-slate-400"
+              className={`h-3 w-3 rounded-full transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[var(--gold)] focus:ring-offset-2 ${
+                idx === currentIndex ? "bg-[var(--gold)] scale-125" : "bg-slate-300 hover:bg-slate-400"
               }`}
               aria-label={`Go to testimonial ${idx + 1}`}
               aria-current={idx === currentIndex ? "true" : "false"}

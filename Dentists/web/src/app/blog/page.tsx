@@ -58,13 +58,13 @@ export default function BlogIndexPage() {
             <Link
               key={cat.slug}
               href={`/blog/${cat.slug}`}
-              className={`block min-h-[120px] p-5 sm:p-6 rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] transition-all hover:border-[var(--primary)] hover:shadow-lg active:scale-[0.98] ${focusRing}`}
+              className={`block min-h-[120px] p-5 sm:p-6 rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] transition-all hover:border-[var(--gold)] hover:shadow-lg active:scale-[0.98] ${focusRing}`}
             >
               <h3 className="text-base sm:text-lg font-bold text-[var(--ink)] mb-2">{cat.name}</h3>
               <p className="text-sm text-[var(--muted)] mb-3">
                 {cat.count} article{cat.count !== 1 ? 's' : ''}
               </p>
-              <span className="inline-flex items-center text-sm font-medium text-[var(--primary)]">
+              <span className="inline-flex items-center text-sm font-medium text-[var(--gold)]">
                 View guide
                 <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

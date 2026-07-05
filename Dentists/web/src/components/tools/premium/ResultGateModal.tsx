@@ -18,7 +18,7 @@
  *   - var(--accent): focus rings
  *   - var(--navy): backdrop scrim (bg-[var(--navy)]/60)
  *   - var(--muted), var(--ink): text hierarchy
- * No var(--primary) anywhere.
+ * No var(--gold) anywhere.
  *
  * Three non-negotiables (Section 4 of the brief):
  *   1. Escape hatch ALWAYS reveals (X, backdrop click, Esc, "No thanks" link).
