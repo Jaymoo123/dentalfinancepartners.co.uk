@@ -1,4 +1,4 @@
-﻿---
+---
 title: Can My Company Claim Enhanced Capital Allowances for Electric Vehicle Charging Points Installed in 2025/26?
 slug: enhanced-capital-allowances-ev-charging-points-2025-26
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/enhanced-capital-allowances-ev-charging-points-2025-26

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Integral Features Capital Allowances: A Complete Guide for UK Property Owners'
 slug: integral-features-capital-allowances
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/integral-features-capital-allowances

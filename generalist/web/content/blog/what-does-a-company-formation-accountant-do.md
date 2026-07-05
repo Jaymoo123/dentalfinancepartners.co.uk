@@ -1,4 +1,4 @@
-﻿---
+---
 title: What Does a Company Formation Accountant Do for a New Limited Company?
 slug: what-does-a-company-formation-accountant-do
 canonical: https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/what-does-a-company-formation-accountant-do

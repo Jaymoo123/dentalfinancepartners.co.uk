@@ -1,4 +1,4 @@
-﻿---
+---
 title: How Corporation Tax Works When Your Company Has Multiple Shareholders
 slug: how-corporation-tax-works-multiple-shareholders
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/how-corporation-tax-works-multiple-shareholders

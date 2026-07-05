@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'UK Taxation Bands 2025/26: Income Tax, NI, and More'
 slug: taxation-bands-uk
 canonical: https://www.hollowaydavies.co.uk/blog/payroll-and-paye/taxation-bands-uk

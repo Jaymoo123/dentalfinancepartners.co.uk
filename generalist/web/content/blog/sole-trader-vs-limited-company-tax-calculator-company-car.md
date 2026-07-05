@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Sole Trader vs Limited Company Tax Calculator: How a Company Car Changes the Numbers'
 slug: sole-trader-vs-limited-company-tax-calculator-company-car
 canonical: https://www.hollowaydavies.co.uk/blog/limited-company-tax/sole-trader-vs-limited-company-tax-calculator-company-car

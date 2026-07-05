@@ -1,4 +1,4 @@
-﻿---
+---
 title: Which Construction Accounting Software Works Best for UK Contractors in 2025/26?
 slug: construction-accounting-software-uk-contractors
 canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/construction-accounting-software-uk-contractors

@@ -1,4 +1,4 @@
-﻿---
+---
 title: What Are the UK CGT Rates for Residential Property in 2026?
 slug: uk-cgt-rates-2026-residential-property
 canonical: https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-cgt-rates-2026-residential-property

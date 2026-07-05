@@ -1,4 +1,4 @@
-﻿---
+---
 title: How Do You Change a Company Name with Companies House After Incorporation?
 slug: change-company-name-companies-house
 canonical: https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/change-company-name-companies-house

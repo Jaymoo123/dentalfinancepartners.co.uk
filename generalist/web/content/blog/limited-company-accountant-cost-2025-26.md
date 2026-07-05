@@ -1,4 +1,4 @@
-﻿---
+---
 title: How Much Does a Limited Company Accountant Cost in 2025/26?
 slug: limited-company-accountant-cost-2025-26
 canonical: https://www.hollowaydavies.co.uk/blog/limited-company-tax/limited-company-accountant-cost-2025-26

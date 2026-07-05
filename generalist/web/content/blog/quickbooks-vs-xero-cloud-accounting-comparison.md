@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'QuickBooks vs Xero: Which Cloud Accounting Software is Best for Your UK Small Business?'
 slug: quickbooks-vs-xero-cloud-accounting-comparison
 canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/quickbooks-vs-xero-cloud-accounting-comparison

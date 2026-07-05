@@ -1,4 +1,4 @@
-﻿---
+---
 title: "OnlyFans Accountant UK: Tax, VAT and Structuring Your Creator Business"
 slug: accountant-for-onlyfans-creators-uk
 canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-onlyfans-creators-uk

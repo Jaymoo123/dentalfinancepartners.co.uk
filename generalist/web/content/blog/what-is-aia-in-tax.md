@@ -1,4 +1,4 @@
-﻿---
+---
 title: What Is AIA in Tax? A Guide to the Annual Investment Allowance
 slug: what-is-aia-in-tax
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/what-is-aia-in-tax

@@ -20,7 +20,7 @@ summary: If you run a limited company alongside a full-time PAYE job, the standa
 schema: ""
 faqs:
 - question: Can I take dividends from my limited company if I already have a full-time job?
-  answer: Yes. Dividends are paid from post-tax profits, so your employment income does not affect your ability to declare dividends. The only limit is that your company must have sufficient retained profits. Your dividend tax rate depends on your total income (salary plus dividends combined): 8.75% at basic rate, 33.75% at higher rate, or 39.35% at additional rate in 2025/26.
+  answer: "Yes. Dividends are paid from post-tax profits, so your employment income does not affect your ability to declare dividends. The only limit is that your company must have sufficient retained profits. Your dividend tax rate depends on your total income (salary plus dividends combined): 8.75% at basic rate, 33.75% at higher rate, or 39.35% at additional rate in 2025/26."
 metaTitle_prev: How to Pay Yourself From a Limited Company With a PAYE Job
 metaDescription_prev: Running a limited company alongside a PAYE job? Here is how to pay yourself efficiently, avoid NI traps, and keep your tax code correct. 2025/26 rates.
 dateModified: '2026-06-12'

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Can I Claim Mileage as a Limited Company Director?
 slug: can-i-claim-mileage-limited-company-director
 canonical: https://www.hollowaydavies.co.uk/blog/limited-company-tax/can-i-claim-mileage-limited-company-director
