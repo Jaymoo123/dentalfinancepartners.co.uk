@@ -5,7 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
-import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { submitGeneralistLead } from "@/lib/leads/submit-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
@@ -50,10 +50,8 @@ export function LeadForm({
     }
   }, []);
 
-  // SEC-08: form lifecycle tracking — no field values captured, only field names + outcome.
+  // SEC-08: form lifecycle tracking - no field values captured, only field names + outcome.
   const { onFieldFocus, onFieldBlur, onError, onSubmit: trackFormSubmit, onLead } = useFormTracking("lead_form");
-
-  const { supabaseUrl, supabaseKey } = getSupabaseConfig();
 
   const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
 
@@ -91,9 +89,10 @@ export function LeadForm({
     const form = e.currentTarget;
     const data = new FormData(form);
 
-    // LD-03: honeypot — bots fill enquiry_ref; humans never see or tab to this field.
-    // Renamed from company_url: that name was an autofill magnet that silently dropped real submits.
-    if (String(data.get("enquiry_ref") || "").trim()) return;
+    // LD-03: collect honeypot value and pass it to the server chokepoint.
+    // The server stores flagged rows rather than silently dropping them, so no
+    // real lead is ever lost and bots receive no detection signal.
+    const honeypot = String(data.get("enquiry_ref") || "").trim();
 
     const errs = validate(data);
     setFieldErrors(errs);
@@ -106,14 +105,6 @@ export function LeadForm({
           : "required";
         onError(field, kind);
       }
-      return;
-    }
-
-    if (!supabaseUrl || !supabaseKey) {
-      setStatus("error");
-      setErrorMessage(
-        "Form not connected. Email us directly and we will respond same day.",
-      );
       return;
     }
 
@@ -142,7 +133,7 @@ export function LeadForm({
       session_id: getSessionId() ?? undefined,
     };
 
-    const result = await submitLead(payload, supabaseUrl, supabaseKey);
+    const result = await submitGeneralistLead(payload, honeypot);
 
     if (!result.success) {
       setStatus("error");
@@ -176,7 +167,7 @@ export function LeadForm({
   return (
     <form onSubmit={onSubmit} className="space-y-6" noValidate aria-busy={status === "loading"}>
       <input type="hidden" name="sourceUrl" value={sourceUrl} />
-      {/* LD-03: honeypot — visually hidden, bots fill it, humans never reach it */}
+      {/* LD-03: honeypot - visually hidden, bots fill it, humans never reach it */}
       <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }}>
         <label htmlFor="enquiry_ref">Reference (leave blank)</label>
         <input id="enquiry_ref" type="text" name="enquiry_ref" tabIndex={-1} autoComplete="off" />

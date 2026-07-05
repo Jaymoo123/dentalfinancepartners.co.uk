@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";
 
 export const runtime = "edge";
+export const maxDuration = 10;
 
 const BRAND_COLOR = "#4f46e5";
 const BRAND_NAME = "Holloway Davies";

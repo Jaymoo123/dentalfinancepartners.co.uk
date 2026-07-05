@@ -9,9 +9,14 @@
  * from Server to Client Components; this is the same pattern Property's
  * site-local Calculator uses, adapted for the shared renderer which cannot
  * import a site's registry itself.)
+ *
+ * Page variant: renders a CalcResultCta after the result panel so users can
+ * convert in-flow at peak intent. Embed variant: no capture (iframed contexts
+ * should not show the full lead form).
  */
 import { Calculator } from "@accounting-network/web-shared/tools/components/Calculator";
 import { getGenericTool } from "@/lib/tools/registry";
+import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 
 export function CalculatorClient({
   slug,
@@ -24,5 +29,11 @@ export function CalculatorClient({
   // valid slugs (generateStaticParams only emits registry slugs).
   const tool = getGenericTool(slug);
   if (!tool) return null;
-  return <Calculator tool={tool} variant={variant} />;
+  return (
+    <Calculator
+      tool={tool}
+      variant={variant}
+      resultCta={variant === "page" ? <CalcResultCta campaign={slug} /> : undefined}
+    />
+  );
 }

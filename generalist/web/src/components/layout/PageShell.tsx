@@ -2,7 +2,10 @@ import type { ReactNode } from "react";
 import { SiteFooter } from "./SiteFooter";
 import { SiteHeader } from "./SiteHeader";
 import { StickyCTA } from "@/components/ui/StickyCTA";
-import { ExitIntentModal } from "@/components/newsletter/ExitIntentModal";
+// Newsletter ExitIntentModal unmounted (owner decision: newsletter surfaces
+// dropped across the estate). The component file is kept on disk untouched.
+// The blog ExitIntentModal (qualified lead capture) is mounted here instead.
+import { ExitIntentModal } from "@/components/blog/ExitIntentModal";
 
 type PageShellProps = {
   children: ReactNode;

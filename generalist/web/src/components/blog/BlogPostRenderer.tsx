@@ -13,6 +13,8 @@ import { calculateReadTime } from "@/lib/blog";
 import { InlinePrompt } from "@/components/newsletter/InlinePrompt";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { CalcPromoCard } from "@/components/blog/CalcPromoCard";
+import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
+import { NextStepOffer } from "@/components/intent/NextStepOffer";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -24,6 +26,24 @@ function formatUkDate(isoDate: string): string {
   const d = new Date(isoDate);
   if (Number.isNaN(d.getTime())) return "";
   return d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+}
+
+/**
+ * Split HTML content at roughly the 60% scroll point (after the 3rd or 4th h2)
+ * so InlineMiniLeadForm lands mid-article. Falls back to the full article with
+ * no split when there are fewer than 4 headings (short posts).
+ */
+function splitContentAtMidScroll(html: string): { before: string; after: string | null } {
+  const headings = [...html.matchAll(/<h2[^>]*>/g)];
+  if (headings.length < 4) {
+    return { before: html, after: null };
+  }
+  const targetIdx = Math.floor(headings.length * 0.6);
+  const target = headings[targetIdx];
+  if (target?.index === undefined) {
+    return { before: html, after: null };
+  }
+  return { before: html.slice(0, target.index), after: html.slice(target.index) };
 }
 
 export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostRendererProps) {
@@ -42,6 +62,8 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
   const takeaways = post.keyTakeaways && post.keyTakeaways.length > 0
     ? post.keyTakeaways
     : null;
+
+  const midSplit = splitContentAtMidScroll(post.contentHtml);
 
   return (
     <>
@@ -196,10 +218,15 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   between the intro section and the article prose. */}
               <CalcPromoCard />
 
-              <div
-                className="article-body prose-blog mt-10"
-                dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-              />
+              <div className="article-body prose-blog mt-10">
+                <div dangerouslySetInnerHTML={{ __html: midSplit.before }} />
+                {midSplit.after ? (
+                  <>
+                    <InlineMiniLeadForm topic={post.category} />
+                    <div dangerouslySetInnerHTML={{ __html: midSplit.after }} />
+                  </>
+                ) : null}
+              </div>
 
               <InlinePrompt
                 source={`blog-${categorySlug}-${post.slug}`.slice(0, 80)}
@@ -238,6 +265,8 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   </Link>
                 </div>
               </aside>
+
+              <NextStepOffer />
 
               <div className="mt-16 bg-slate-900 p-8 sm:p-10 text-white">
                 <h2 className="text-2xl font-bold text-white sm:text-3xl">

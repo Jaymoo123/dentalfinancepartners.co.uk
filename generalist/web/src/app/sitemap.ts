@@ -31,6 +31,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/privacy-policy",
     "/terms",
     "/cookie-policy",
+    "/templates",
+    "/accountant-near-me",
   ];
 
   const hreflang = (url: string) => ({
