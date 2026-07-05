@@ -64,7 +64,7 @@ keyTakeaways:
 
 <p>But there are nuances. If you have multiple directors in the company, the Employment Allowance of £10,500 can cover the employer NI on salaries up to £12,570 each. That changes the maths. A specialist accountant will run the numbers for your specific situation rather than applying a one-size-fits-all rule.</p>
 
-<p>Dividends are taxed at 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate) in 2025/26. The annual dividend allowance is just £500. Your accountant should project your total income for the year and advise on the most tax-efficient dividend strategy.</p>
+<p>Dividends are taxed at 10.75% (basic rate), 35.75% (higher rate), and 39.35% (additional rate) in 2026/27. The annual dividend allowance is just £500. Your accountant should project your total income for the year and advise on the most tax-efficient dividend strategy.</p>
 
 <h3>Expenses and Travel</h3>
 

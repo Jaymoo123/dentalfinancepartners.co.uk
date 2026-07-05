@@ -155,8 +155,8 @@ export default function AboutPage() {
             <div className="prose-blog max-w-2xl">
               <p>
                 Every figure on this site uses 2026/27 UK tax rates and is
-                traceable to a primary source: HMRC, Companies House, ICAEW
-                guidance, or the relevant statute. Where rates are scheduled to
+                traceable to a primary source: HMRC, Companies House, or the
+                relevant statute. Where rates are scheduled to
                 change, we say so and date the change.
               </p>
               <p>

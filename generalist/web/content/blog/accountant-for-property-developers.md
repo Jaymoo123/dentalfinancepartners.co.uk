@@ -26,7 +26,7 @@ faqs:
   - question: "How does VAT work for property developers?"
     answer: "The domestic reverse charge applies to most construction supplies between VAT-registered businesses. This means you do not pay VAT to your builder; you account for it on your own VAT return. Whether you can recover VAT on costs depends on whether the sale of the property is standard-rated (new commercial) or exempt (residential). You may be able to opt to tax the property to recover input VAT."
   - question: "What SDLT reliefs can property developers claim?"
-    answer: "Multiple dwellings relief (MDR) applies to purchases of six or more dwellings in a single transaction. Mixed-use relief applies where the property has both residential and non-residential elements. Both can significantly reduce your SDLT bill. The rules are technical, and HMRC is challenging some claims, so you need an accountant who understands the current legislation."
+    answer: "Multiple dwellings relief (MDR) was abolished from 1 June 2024 and is no longer available on new purchases. Mixed-use relief applies where the property has both residential and non-residential elements, and can significantly reduce your SDLT bill. The rules are technical, and HMRC scrutinises claims, so you need an accountant who keeps pace with the current legislation."
 keyTakeaways:
   - "HMRC treats property development as trading, so profits are subject to corporation tax or income tax, not the lower capital gains tax rates that apply to investment property."
   - "The corporation tax rate for 2025/26 is 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief between those thresholds."
@@ -76,9 +76,9 @@ keyTakeaways:
 
 <p>SDLT is a significant cost in any property transaction. For developers, there are specific reliefs and surcharges to navigate.</p>
 
-<p>Multiple dwellings relief (MDR) allows you to claim a lower SDLT rate when you buy multiple properties in a single transaction. This was common for developers buying blocks of flats or portfolios. The rules tightened from June 2024, but MDR is still available for qualifying purchases of six or more dwellings. A specialist accountant will know whether your purchase qualifies.</p>
+<p>Multiple dwellings relief (MDR) was abolished from 1 June 2024. It is no longer available on new purchases, so developers can no longer rely on it to reduce SDLT on portfolio transactions. If your accountant is still planning around MDR, that is a warning sign.</p>
 
-<p>Mixed-use property purchases also benefit from lower SDLT rates. If you buy a building with a shop on the ground floor and flats above, the whole transaction may be treated as mixed-use, avoiding the 3% surcharge on additional dwellings. Again, this is an area where a general accountant may miss the relief.</p>
+<p>Mixed-use property purchases benefit from lower SDLT rates. If you buy a building with a shop on the ground floor and flats above, the whole transaction may be treated as mixed-use, avoiding the 5% surcharge on additional dwellings that applies from 31 October 2024. This is an area where a general accountant may miss the relief.</p>
 
 <h2>Capital Gains Tax and Property Developers</h2>
 
@@ -127,7 +127,7 @@ keyTakeaways:
 <ul>
 <li><strong>Treating development profit as a capital gain.</strong> HMRC will reclassify it as trading income and charge interest and penalties.</li>
 <li><strong>Ignoring the VAT reverse charge.</strong> Incorrect VAT returns lead to HMRC assessments and cash flow problems.</li>
-<li><strong>Missing SDLT reliefs.</strong> Multiple dwellings relief and mixed-use relief can save tens of thousands of pounds. If your accountant does not know about them, you lose that money.</li>
+<li><strong>Missing SDLT reliefs.</strong> Mixed-use relief can save tens of thousands of pounds if your purchase qualifies. Multiple dwellings relief was abolished from 1 June 2024. If your accountant does not keep pace with legislative changes, you may miss current reliefs or try to claim ones that no longer exist.</li>
 <li><strong>Poor record keeping.</strong> HMRC expects detailed records of costs, financing, and timelines. If you cannot substantiate your deductions, you pay more tax.</li>
 <li><strong>Not planning for tax payments.</strong> Corporation tax is due 9 months and 1 day after your year-end. If you have not set aside the cash, you face interest and penalties.</li>
 </ul>

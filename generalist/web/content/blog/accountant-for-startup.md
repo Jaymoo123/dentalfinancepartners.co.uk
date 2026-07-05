@@ -95,14 +95,14 @@ keyTakeaways:
 
 <h2>Director Pay and Dividend Strategy</h2>
 
-<p>In the founder stage, you are probably paying yourself the minimum to keep personal costs covered. The standard structure for a UK limited company director is a small salary plus dividends. For 2025/26, the most efficient approach is:</p>
+<p>In the founder stage, you are probably paying yourself the minimum to keep personal costs covered. The standard structure for a UK limited company director is a small salary plus dividends. For 2026/27, the most efficient approach is:</p>
 
 <ul>
 <li>Salary of £12,570 (matches the personal allowance and the primary NI threshold). Employer NI of 15% applies above the secondary threshold (£5,000), so the actual salary cost is about £12,570 plus NI on the excess. If the company qualifies for Employment Allowance (up to £10,500), that NI is offset.</li>
-<li>Dividends up to the basic rate band (£50,270 total income). The first £500 of dividends is tax-free (the dividend allowance). Above that, dividends are taxed at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate).</li>
+<li>Dividends up to the basic rate band (£50,270 total income). The first £500 of dividends is tax-free (the dividend allowance). Above that, dividends are taxed at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate).</li>
 </ul>
 
-<p>For a founder with no other income, drawing £50,270 in total (salary plus dividends) results in a personal tax bill of roughly £4,400. That is an effective rate of under 9%. Compare that to taking the same amount as salary through PAYE, which would cost over £12,000 in income tax and employee NI.</p>
+<p>For a founder with no other income, drawing £50,270 in total (salary plus dividends) results in a personal tax bill of roughly £4,000. That is an effective rate of under 9%. Compare that to taking the same amount as salary through PAYE, which would cost around £10,500 in income tax and employee NI.</p>
 
 <p>Your accountant should model this for you with your actual numbers. If you have co-founders, the strategy may differ depending on their personal circumstances (other income, spouse's income, student loan repayments).</p>
 

@@ -109,7 +109,7 @@ keyTakeaways:
 
 <p>Not all company secretarial services are the same quality. Here is what to check before engaging a provider.</p>
 
-<p><strong>Qualification and oversight.</strong> Providers vary considerably in quality. Look for a provider that is regulated by a recognised body: ICAEW, ACCA, CIMA, or the Institute of Chartered Secretaries and Administrators (ICSA). Regulation means professional indemnity insurance, complaints procedures, and continuing professional development.</p>
+<p><strong>Qualification and oversight.</strong> Providers vary considerably in quality. Look for a provider that is regulated by a recognised body: the ACCA, CIMA, or the Institute of Chartered Secretaries and Administrators (ICSA). Regulation means professional indemnity insurance, complaints procedures, and continuing professional development.</p>
 
 <p><strong>Software and technology.</strong> A good provider uses specialist software for company secretarial work, not just spreadsheets. Software like Inform Direct, Company Watch, or Iris Company Secretary ensures registers are properly formatted, deadlines are tracked, and filings are made electronically.</p>
 

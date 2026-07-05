@@ -27,7 +27,6 @@ sourcesVerifiedAt: '2026-05-20'
 sourceDomains:
 - aka.hmrc.gov.uk
 - gov.uk
-- icaew.com
 imageCredit:
   photographer: Mathias Reding
   photographer_url: https://www.pexels.com/@matreding
@@ -47,7 +46,7 @@ keyTakeaways:
 <p>You may also be able to use the online service or the HMRC app to check how much Income Tax you paid last year and request a refund <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. But there is a catch. If you paid any part of your Income Tax through Self Assessment, you cannot use the P800 route. Your overpayment is handled inside your Self Assessment return instead <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
 
 <h2>Who Typically Qualifies for a Rebate?</h2>
-<p>Thousands of taxpayers could be missing out on tax refunds, according to ICAEW <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. The most common scenarios that trigger a rebate include:</p>
+<p>Thousands of taxpayers could be missing out on tax refunds. The most common scenarios that trigger a rebate include:</p>
 <ul>
 <li><strong>Emergency tax code.</strong> If you started a new job and HMRC did not have your correct tax code, you may have been put on a BR, D0, or D1 code and overpaid.</li>
 <li><strong>Multiple jobs in one year.</strong> Each employer applies a separate tax code. If your total earnings across all jobs fall within the personal allowance (£12,570 for 2025/26), you may have overpaid.</li>
@@ -108,12 +107,11 @@ keyTakeaways:
 
 <h2>Final Thoughts</h2>
 <p>An HMRC tax rebate is straightforward if you know what to look for. Check your P800 letter if you are employed. File your Self Assessment return accurately if you are self-employed or a director. And if you think you have overpaid, act within the 4-year window.</p>
-<p>Thousands of people miss out on refunds every year <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. Do not be one of them. If you are unsure about your tax position, contact our team through our <a href="/contact">contact page</a> for a no-obligation chat.</p>
+<p>Thousands of people miss out on refunds every year. Do not be one of them. If you are unsure about your tax position, contact our team through our <a href="/contact">contact page</a> for a no-obligation chat.</p>
 
 <h2>Sources</h2>
 <ol>
   <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/check-income-tax-last-year" rel="noopener noreferrer">Check how much Income Tax you paid last year - GOV.UK</a></li>
-  <li id="ref-2"><strong>icaew.com</strong>: <a href="https://www.icaew.com/insights/tax-news/2026/apr-2026/thousands-of-taxpayers-could-be-missing-out-on-tax-refunds" rel="noopener noreferrer">Thousands of taxpayers could be missing out on tax refunds | ICAEW</a></li>
   <li id="ref-3"><strong>aka.hmrc.gov.uk</strong>: <a href="http://aka.hmrc.gov.uk/incometax/refund-reclaim.htm" rel="noopener noreferrer">Check how to claim a tax refund - GOV.UK</a></li>
 </ol>
 

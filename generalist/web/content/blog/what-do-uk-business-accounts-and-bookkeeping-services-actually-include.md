@@ -142,7 +142,7 @@ keyTakeaways:
 
 <h2>How to Choose a Provider</h2>
 
-<p>Look for three things. First, qualification. An ICAEW qualified accountant has passed rigorous exams and follows a code of ethics. That matters when your financial data is on the line.</p>
+<p>Look for three things. First, qualification. A qualified chartered accountant has passed rigorous exams and follows a code of ethics. That matters when your financial data is on the line.</p>
 
 <p>Second, industry fit. An accountant who works with ecommerce businesses will understand Amazon settlements, multi-currency transactions and stock valuation. One who works with construction firms will know CIS returns and the gross payment scheme. If your accountant does not understand your sector, you will spend your time explaining basic concepts.</p>
 

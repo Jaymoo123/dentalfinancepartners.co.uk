@@ -111,7 +111,7 @@ keyTakeaways:
 
 <p>If you miss the 60-day window, HMRC charges interest on the late payment and may issue penalties. The penalty starts at £100 for a late return, rising to £10 or more per day for continued delay, plus a percentage of the tax due.</p>
 
-<p>For property sold after 26 October 2021, the 60-day rule applies to both UK residents and non-UK residents. Non-UK residents are subject to the same 60-day window. For disposals before 27 October 2021, UK residents had until the Self Assessment deadline (31 January after the tax year).</p>
+<p>For property sold after 27 October 2021, the 60-day rule applies to both UK residents and non-UK residents. Non-UK residents are subject to the same 60-day window. For disposals before 27 October 2021, UK residents had until the Self Assessment deadline (31 January after the tax year).</p>
 
 <h2>Business Asset Disposal Relief and Property</h2>
 
@@ -150,7 +150,7 @@ keyTakeaways:
 
 <p><strong>Check Private Residence Relief.</strong> If you ever lived in the property as your main home, you may have partial relief. The final 9 months of ownership always qualify, even if you moved out earlier.</p>
 
-<p><strong>Consider incorporating.</strong> If you hold multiple rental properties, holding them through a limited company can change the tax treatment. Corporation tax on gains is 19% or 25% (depending on profit level), and you may extract proceeds as dividends rather than paying CGT personally. This is a significant decision with ongoing compliance costs. Speak to an ICAEW qualified accountant before restructuring.</p>
+<p><strong>Consider incorporating.</strong> If you hold multiple rental properties, holding them through a limited company can change the tax treatment. Corporation tax on gains is 19% or 25% (depending on profit level), and you may extract proceeds as dividends rather than paying CGT personally. This is a significant decision with ongoing compliance costs. Speak to a qualified chartered accountant before restructuring.</p>
 
 <h2>What About Non-UK Residents Selling UK Property?</h2>
 

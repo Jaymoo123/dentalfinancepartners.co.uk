@@ -115,7 +115,7 @@ keyTakeaways:
 <li>Do they know the VAT rules for your type of retail (standard goods, mixed goods, second-hand, or food)?</li>
 <li>Can they handle payroll for part-time and seasonal staff?</li>
 <li>Do they use cloud accounting software that works for retail?</li>
-<li>Are they ICAEW qualified or ACCA qualified?</li>
+<li>Are they ACCA qualified or a member of another recognised professional body?</li>
 </ul>
 <p>If the answer to any of these is no, keep looking. A specialist accountant for retail shops UK will answer yes to all of them.</p>
 

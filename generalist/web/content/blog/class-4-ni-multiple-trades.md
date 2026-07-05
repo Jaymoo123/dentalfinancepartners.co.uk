@@ -48,7 +48,7 @@ keyTakeaways:
 <ul>
 <li>A freelance graphic designer who also runs a small ecommerce shop on Etsy.</li>
 <li>A builder who takes on domestic work and also does subcontracting through the CIS scheme.</li>
-<li>A landlord with furnished holiday lettings who also does freelance consulting.</li>
+<li>A personal trainer who takes individual clients and also runs a separate online fitness coaching business.</li>
 <li>A musician who performs gigs and also runs a teaching practice.</li>
 </ul>
 

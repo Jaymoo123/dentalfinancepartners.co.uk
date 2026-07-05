@@ -150,7 +150,7 @@ keyTakeaways:
 
 <p>If the claim is for a significant amount (say, over £20,000 in relief), the cost of professional advice is usually justified by the reduced risk of rejection. A rejected claim can trigger a full HMRC enquiry into your company's tax affairs, which is time-consuming regardless of the outcome.</p>
 
-<p>Our <a href="/r-and-d-credits">R&D tax credits page</a> explains the process in more detail. If you have a failed project and are unsure whether it qualifies, a conversation with an ICAEW qualified accountant is a low-cost way to find out before you invest time in the paperwork.</p>
+<p>Our <a href="/r-and-d-credits">R&D tax credits page</a> explains the process in more detail. If you have a failed project and are unsure whether it qualifies, a conversation with a qualified chartered accountant is a low-cost way to find out before you invest time in the paperwork.</p>
 
 <h2>Common Questions About Failed-Project R&D Claims</h2>
 

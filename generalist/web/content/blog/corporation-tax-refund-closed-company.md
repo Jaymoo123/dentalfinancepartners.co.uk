@@ -59,7 +59,7 @@ keyTakeaways:
 
 <h2>The Legal Problem: Bona Vacantia</h2>
 
-<p>When a company is dissolved (struck off the register at Companies House), all its assets and property automatically pass to the Crown. This is the legal principle of Bona Vacantia (Latin for "ownerless goods"). The Treasury Solicitor (for England and Wales) or the Queen's and Lord Treasurer's Remembrancer (for Scotland) becomes the legal owner of those assets.</p>
+<p>When a company is dissolved (struck off the register at Companies House), all its assets and property automatically pass to the Crown. This is the legal principle of Bona Vacantia (Latin for "ownerless goods"). The Treasury Solicitor (for England and Wales) or the King's and Lord Treasurer's Remembrancer (for Scotland) becomes the legal owner of those assets.</p>
 
 <p>This includes bank balances, physical assets, and crucially, any tax refunds owed to the company. HMRC will not pay a refund directly to a former director or shareholder. They will only pay it to the company's legal owner. And the legal owner is now the Crown.</p>
 

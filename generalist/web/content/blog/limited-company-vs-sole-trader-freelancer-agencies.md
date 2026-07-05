@@ -24,7 +24,7 @@ faqs:
   - question: "Does IR35 apply to sole traders?"
     answer: "No. IR35 only applies to contractors working through an intermediary, typically a limited company. If you are a sole trader, you are directly self-employed and IR35 does not apply. However, the end client may still assess your employment status for other purposes, such as employment rights and holiday pay."
   - question: "What is the best structure for a freelancer earning £60,000 through agencies?"
-    answer: "If your contract is"
+    answer: "If your contract is outside IR35 and your earnings are consistent at around £60,000, a limited company is worth considering. The tax saving over sole trader status is modest at that level but typically positive once you account for dividend extraction. If your contract is inside IR35, the tax advantage largely disappears and an umbrella company or sole trader arrangement is usually simpler. Run a full comparison with an accountant based on your specific expenses and how much profit you plan to extract each year."
 keyTakeaways:
   - "IR35 does not apply to sole traders; it only affects contractors working through an intermediary such as a personal service company."
   - "Outside IR35, at £120,000 annual earnings, a limited company typically saves a contractor £8,000 or more in tax compared with operating as a sole trader."
@@ -61,7 +61,7 @@ keyTakeaways:
 <p>Here is the practical impact on the limited company vs sole trader decision:</p>
 
 <ul>
-<li><strong>If your contract is outside IR35:</strong> A limited company is almost always the better option. You retain the profits in the company, pay corporation tax at 19% or 25% instead of income tax at 20% or 40%, and extract profits as dividends taxed at 8.75% or 33.75%. The overall effective tax rate on profits extracted is typically 20-30% lower than equivalent self-employed income.</li>
+<li><strong>If your contract is outside IR35:</strong> A limited company is almost always the better option. You retain the profits in the company, pay corporation tax at 19% or 25% instead of income tax at 20% or 40%, and extract profits as dividends taxed at 10.75% or 35.75%. The overall effective tax rate on profits extracted is typically 20-30% lower than equivalent self-employed income.</li>
 <li><strong>If your contract is inside IR35:</strong> The limited company advantage is minimal. You pay PAYE and NI on your deemed employment income, plus employer NI at 15% (above the £5,000 secondary threshold, from 6 April 2025). You may keep a small margin of retained profit, but the tax saving is often not worth the additional compliance cost. Many contractors in this position switch to an umbrella or operate as a sole trader if the agency allows it.</li>
 <li><strong>If your contract status is uncertain:</strong> This is the trickiest scenario. If you have a mix of inside and outside IR35 contracts, a limited company can still work. You draw a salary from the inside-IR35 income and take dividends from the outside-IR35 income. But the compliance burden is higher, and you need an accountant who understands the interaction.</li>
 </ul>

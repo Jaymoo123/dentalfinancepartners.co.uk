@@ -78,7 +78,7 @@ keyTakeaways:
 <p>You can also use our <a href="/contact">contact page</a> to speak to us about negotiating a Time to Pay arrangement. We do this regularly for clients.</p>
 
 <h2>How Payments on Account Affect Your Self Assessment Deadlines</h2>
-<p>The deadlines do not change just because your bill is large. For the 2024/25 tax year:</p>
+<p>The deadlines do not change just because your bill is large. Based on a 2024/25 tax bill, payments on account for 2025/26 fall as follows:</p>
 <ul>
 <li>First payment on account: 31 January 2026</li>
 <li>Second payment on account: 31 July 2026</li>

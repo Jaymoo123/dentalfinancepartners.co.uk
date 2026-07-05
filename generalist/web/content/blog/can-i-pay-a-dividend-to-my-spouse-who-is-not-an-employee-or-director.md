@@ -94,19 +94,19 @@ keyTakeaways:
 <h2>Tax Planning: The Numbers That Matter</h2>
 <p>Let's run through a worked example. A limited company in Birmingham's Jewellery Quarter has retained profits of £80,000. The director is the sole earner and takes a salary of £12,570 (the personal allowance level). Their spouse holds B shares and is not an employee or director.</p>
 
-<p>For 2025/26, the dividend tax rates are:</p>
+<p>For 2026/27, the dividend tax rates are:</p>
 <ul>
 <li>Dividend allowance: £500 per person</li>
-<li>Basic rate (up to £50,270 total income): 8.75%</li>
-<li>Higher rate (up to £125,140): 33.75%</li>
+<li>Basic rate (up to £50,270 total income): 10.75%</li>
+<li>Higher rate (up to £125,140): 35.75%</li>
 <li>Additional rate (above £125,140): 39.35%</li>
 </ul>
 
-<p>The director can pay a dividend of up to £37,700 to their spouse (the remaining basic rate band after the £12,570 salary). The first £500 is tax-free under the dividend allowance. The remaining £37,200 is taxed at 8.75%, giving a tax bill of £3,255.</p>
+<p>The director can pay a dividend of up to £37,700 to their spouse (the remaining basic rate band after the £12,570 salary). The first £500 is tax-free under the dividend allowance. The remaining £37,200 is taxed at 10.75%, giving a tax bill of £3,999.</p>
 
-<p>If the director took that same £37,700 as a dividend themselves, it would sit on top of their £12,570 salary and £500 dividend allowance. The tax would be the same 8.75% on the first £37,700 of dividends. So in this example, there is no tax saving from splitting the dividend. The saving comes when the director's total income pushes them into the higher rate band.</p>
+<p>If the director took that same £37,700 as a dividend themselves, it would sit on top of their £12,570 salary and £500 dividend allowance. The tax would be the same 10.75% on the first £37,700 of dividends. So in this example, there is no tax saving from splitting the dividend. The saving comes when the director's total income pushes them into the higher rate band.</p>
 
-<p>If the director's total income (salary plus dividends) exceeds £50,270, the excess dividends are taxed at 33.75%. By diverting some dividends to a spouse who has no other income, the couple can keep more of the company's profits at the basic rate.</p>
+<p>If the director's total income (salary plus dividends) exceeds £50,270, the excess dividends are taxed at 35.75%. By diverting some dividends to a spouse who has no other income, the couple can keep more of the company's profits at the basic rate.</p>
 
 <p>For a director in Bristol with a total income of £90,000, diverting £20,000 of dividends to a non-working spouse saves around £5,000 in dividend tax each year. That is real money.</p>
 
@@ -125,7 +125,7 @@ keyTakeaways:
 <h2>What About the Spouse's National Insurance and Pension?</h2>
 <p>Dividends do not count as earnings for National Insurance purposes. That is one of the reasons they are attractive. But it also means your spouse will not build up NI credits towards the state pension if they have no other earned income.</p>
 
-<p>If your spouse is not working and not claiming benefits, they may miss out on NI credits. You can pay them a small salary (up to the NI primary threshold of £12,570 for 2025/26) to maintain their NI record. The salary would be tax-free for them and would give them qualifying years for the state pension.</p>
+<p>If your spouse is not working and not claiming benefits, they may miss out on NI credits. You can pay them a small salary (up to the NI primary threshold of £12,570 for 2026/27) to maintain their NI record. The salary would be tax-free for them and would give them qualifying years for the state pension.</p>
 
 <p>Alternatively, if your spouse is the main carer for children under 12, they may receive NI credits automatically through Child Benefit. Check their NI record on the HMRC app or by calling the NI helpline.</p>
 
@@ -133,7 +133,7 @@ keyTakeaways:
 <p>There are situations where this structure does not make sense:</p>
 
 <ul>
-<li><strong>Your spouse already uses their full basic rate band.</strong> If they have their own job or business income above £50,270, diverting dividends to them saves nothing. They will pay 33.75% on the dividends just as you would.</li>
+<li><strong>Your spouse already uses their full basic rate band.</strong> If they have their own job or business income above £50,270, diverting dividends to them saves nothing. They will pay 35.75% on the dividends just as you would.</li>
 <li><strong>Your company needs the retained profits for growth.</strong> Taking dividends reduces the cash available for investment, hiring, or equipment. Do not strip profits out of the business just to save tax if the company needs the capital.</li>
 <li><strong>The settlement risk is too high.</strong> If you transferred shares to your spouse after the company became profitable and HMRC challenges the arrangement, you could face a tax bill plus interest and penalties. In borderline cases, the tax saving may not be worth the compliance risk.</li>
 <li><strong>Your spouse is a higher-rate taxpayer in their own right.</strong> There is no point diverting income to someone who pays the same or higher marginal rate.</li>

@@ -52,9 +52,9 @@ keyTakeaways:
 
 <p>Most personal trainers start as sole traders. It is simple to set up, cheap to run, and you file one self assessment return each year. If you are earning under £50,000 profit per year and working solo, this is usually the right structure.</p>
 
-<p>Once your profit passes £50,000, the tax maths changes. As a sole trader, you pay 40% income tax on earnings above £50,270 (2025/26 rates) plus 2% Class 4 National Insurance on profits above £50,270. As a limited company director, you can take a salary of £12,570 (no income tax, no NI) and draw the rest as dividends taxed at 8.75% up to the basic rate band and 33.75% above that.</p>
+<p>Once your profit passes £50,000, the tax maths changes. As a sole trader, you pay 40% income tax on earnings above £50,270 (2025/26 rates) plus 2% Class 4 National Insurance on profits above £50,270. As a limited company director, you can take a salary of £12,570 (no income tax, no NI) and draw the rest as dividends taxed at 10.75% up to the basic rate band and 35.75% above that (2026/27 rates).</p>
 
-<p>Here is a worked example. A personal trainer in Manchester earning £70,000 profit as a sole trader pays roughly:</p>
+<p>Here is an illustrative example using 2025/26 tax rates. A personal trainer in Manchester earning £70,000 profit as a sole trader would pay roughly:</p>
 
 <ul>
 <li>£12,570 personal allowance (tax-free)</li>
@@ -64,7 +64,7 @@ keyTakeaways:
 <li>Total tax and NI: approximately £18,089</li>
 </ul>
 
-<p>The same £70,000 profit through a limited company, taking £12,570 salary and £57,430 dividends:</p>
+<p>The same £70,000 profit through a limited company in 2025/26, taking £12,570 salary and £57,430 dividends:</p>
 
 <ul>
 <li>Corporation tax at 19% on £70,000 profit = £13,300</li>
@@ -73,7 +73,7 @@ keyTakeaways:
 <li>Total tax: approximately £18,325</li>
 </ul>
 
-<p>On these figures, the sole trader pays approximately £236 less than the limited company director at this profit level. The position shifts in the company's favour as profit rises further. At £100,000 profit, the limited company saving is closer to £4,000. An <strong>accountant for personal trainers</strong> can run this calculation for your specific numbers and tell you the right time to incorporate.</p>
+<p>On these 2025/26 figures, the sole trader pays approximately £236 less than the limited company director at this profit level. The position shifts in the company's favour as profit rises further. At £100,000 profit, the limited company saving is closer to £4,000. For 2026/27, dividend tax rates are 10.75% at the basic rate and 35.75% at the higher rate; corporation tax on profits above £50,000 is also subject to marginal relief, raising the effective rate above 19%. An <strong>accountant for personal trainers</strong> can run the current-year calculation for your specific numbers and confirm the right time to incorporate.</p>
 
 <p>If you are considering incorporation, our <a href="/incorporation">incorporation services page</a> covers the process step by step.</p>
 
@@ -152,7 +152,7 @@ keyTakeaways:
 <p>Not all accountants are equal. Here is what to check before you hire one for your PT business:</p>
 
 <ul>
-<li><strong>ICAEW or ACCA qualification.</strong> Anyone can call themselves an accountant. Qualified accountants are regulated and carry professional indemnity insurance. Check that your accountant holds a recognised qualification before you commit.</li>
+<li><strong>ACCA qualification or equivalent.</strong> Anyone can call themselves an accountant. Qualified accountants are regulated and carry professional indemnity insurance. Check that your accountant holds a recognised qualification before you commit.</li>
 <li><strong>Experience with service businesses.</strong> Personal training is a service business with deferred income, block bookings, and variable VAT treatment. An accountant who only works with ecommerce or construction clients will not understand your revenue model.</li>
 <li><strong>Software recommendations.</strong> A good accountant will recommend Xero, FreeAgent, or QuickBooks and help you set it up. They should not insist on paper records or spreadsheets.</li>
 <li><strong>Fixed fee pricing.</strong> You should know what you are paying each month. Avoid accountants who charge by the hour for routine compliance work.</li>

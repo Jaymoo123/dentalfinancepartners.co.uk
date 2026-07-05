@@ -8,7 +8,7 @@ author: Holloway Davies Editorial Team
 category: Limited Company Tax
 metaTitle: Can a Limited Company Director Claim Mileage? UK Rules
 metaDescription: Yes, directors can claim 55p a mile for the first 10,000 business miles from 6 April 2026, then 25p, tax-free and deductible against corporation tax.
-altText: Limited company director in a car consulting with an ICAEW accountant at a desk in a Manchester office
+altText: Limited company director in a car consulting with a qualified accountant at a desk in a Manchester office
 image: /blog/can-i-claim-mileage-limited-company-director.jpg
 imageCredit:
   photographer: Damir K .
@@ -16,7 +16,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/car-speedometer-display-showing-76-km-h-37072314/
   source: Pexels
 h1: Can I Claim Mileage as a Limited Company Director?
-summary: Yes, you can claim mileage as a limited company director. Your company can pay you tax-free mileage at HMRC's approved rates, and the company deducts the cost against corporation tax. Here's exactly how it works in 2025/26, including what counts as business travel, the rates to use, and the records you must keep.
+summary: Yes, you can claim mileage as a limited company director. Your company can pay you tax-free mileage at HMRC's approved rates, and the company deducts the cost against corporation tax. Here's exactly how it works in 2026/27, including what counts as business travel, the rates to use, and the records you must keep.
 schema: ""
 faqs:
 - question: Can I claim mileage for driving from home to my office?
@@ -44,7 +44,7 @@ keyTakeaways:
 ---
 <p>If you run your own limited company and use your personal car for business trips, you can claim mileage. The short answer is yes, you can claim mileage as a limited company director. Your company pays you a tax-free mileage allowance, and the company deducts that cost against its corporation tax bill. Done correctly, this is one of the simplest and most tax-efficient ways to handle business travel costs through your company.</p>
 
-<p>But there are rules. Use the wrong rates. Mix personal and business trips without separating them. Skip the mileage log. Any of those mistakes can turn a straightforward claim into an HMRC enquiry. This article covers exactly what counts as business mileage, the rates for 2025/26, how to record it, and what happens when you use a company car instead.</p>
+<p>But there are rules. Use the wrong rates. Mix personal and business trips without separating them. Skip the mileage log. Any of those mistakes can turn a straightforward claim into an HMRC enquiry. This article covers exactly what counts as business mileage, the rates for 2026/27, how to record it, and what happens when you use a company car instead.</p>
 
 <h2>What Counts as Business Mileage for a Director?</h2>
 

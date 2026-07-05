@@ -108,7 +108,7 @@ keyTakeaways:
 
 <p>You can appeal the notification if you believe it is incorrect. The process involves writing to HMRC within 30 days, explaining why you qualify as an SME. You may need to provide evidence of your company structure, shareholding, and independence.</p>
 
-<p>If you are unsure whether the notification is correct, speak to an ICAEW qualified accountant. We deal with these notifications regularly and can help you challenge them if appropriate.</p>
+<p>If you are unsure whether the notification is correct, speak to a qualified chartered accountant. We deal with these notifications regularly and can help you challenge them if appropriate.</p>
 
 <h2>Which Scheme Should You Use?</h2>
 

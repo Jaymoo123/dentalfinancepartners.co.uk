@@ -66,7 +66,7 @@ keyTakeaways:
 
 <p>Here is a concrete example. You are a plumber in Manchester's Northern Quarter. Your 2024/25 tax bill is £9,600. HMRC calculates your payments on account for 2025/26 as two payments of £4,800 each. The first £4,800 is due by 31 January 2026 alongside any balancing payment for 2024/25. The second £4,800 is due by 31 July 2026.</p>
 
-<p>Miss the 31 July payment and HMRC charges late payment interest from that date. There is no automatic penalty for late payment of payments on account, but the interest adds up. At 7.0%, £4,800 for three months costs about £84 in interest. If you are consistently late, HMRC may also charge a 5% surcharge on any amount still unpaid after 30 days, with further 5% surcharges at six and twelve months.</p>
+<p>Miss the 31 July payment and HMRC charges late payment interest from that date. At 7.0%, £4,800 for three months costs about £84 in interest. A 5% surcharge also applies on any amount still unpaid after 30 days, with further 5% surcharges at six and twelve months.</p>
 
 <p>Most sole traders do not budget for payments on account. They see the 31 January bill, pay it, and forget about July. A <strong>sole trader accountant</strong> flags the July payment at the same time as the January one. We send reminders. We help you set aside the money monthly so the July payment is not a surprise. If your income has dropped significantly, we can apply to reduce your payments on account using form SA303. But that needs to be done before the deadline, not after.</p>
 

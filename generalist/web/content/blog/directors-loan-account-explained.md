@@ -82,7 +82,7 @@ keyTakeaways:
 
 <p>Many directors use the loan account as a default. They take money out of the company whenever they need it, and sort out the paperwork at year end. This is common but risky. The loan account is not designed to be your regular payment method.</p>
 
-<p>Salary and dividends are the proper ways to pay yourself. Salary goes through payroll, triggers PAYE and NI, but counts as an allowable expense for the company. Dividends come from post-tax profits and are taxed at 8.75%, 33.75% or 39.35% depending on your income tax band. Both are cleaner than running a loan balance.</p>
+<p>Salary and dividends are the proper ways to pay yourself. Salary goes through payroll, triggers PAYE and NI, but counts as an allowable expense for the company. Dividends come from post-tax profits and are taxed at 10.75%, 35.75% or 39.35% depending on your income tax band (2026/27 rates). Both are cleaner than running a loan balance.</p>
 
 <p>If you take a dividend that exceeds the company's distributable profits, that is an illegal dividend. The loan account catches that too. You cannot declare a dividend if the company does not have enough retained earnings to cover it. If you do, the excess sits in the loan account as an overdrawn balance.</p>
 

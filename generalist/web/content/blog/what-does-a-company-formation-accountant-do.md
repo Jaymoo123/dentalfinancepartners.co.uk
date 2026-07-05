@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Incorporation and Structure
 metaTitle: What a Company Formation Accountant Does for a New Ltd
-metaDescription: 'A company formation accountant does more than the £12 Companies House filing: corporation tax registration, PAYE, shares and first-year compliance.'
+metaDescription: 'A company formation accountant does more than the £50 Companies House filing: corporation tax registration, PAYE, shares and first-year compliance.'
 altText: A UK company formation accountant meeting a new client in a modern Manchester office with laptops and paperwork on a desk
 image: /blog/what-does-a-company-formation-accountant-do.jpg
 imageCredit:
@@ -20,7 +20,7 @@ summary: A company formation accountant handles the registration, tax setup, and
 schema: ""
 faqs:
 - question: Do I really need a company formation accountant, or can I register my company myself?
-  answer: You can register your company yourself through Companies House for £12. But that only gives you a certificate of incorporation. A company formation accountant also registers you for corporation tax, sets up PAYE, advises on share structure, and handles the compliance setup that most new directors miss. For most businesses, the accountant's fee is small compared to the cost of fixing mistakes later.
+  answer: You can register your company yourself through Companies House for £50. But that only gives you a certificate of incorporation. A company formation accountant also registers you for corporation tax, sets up PAYE, advises on share structure, and handles the compliance setup that most new directors miss. For most businesses, the accountant's fee is small compared to the cost of fixing mistakes later.
 - question: How much does a company formation accountant cost in 2025/26?
   answer: Basic incorporation only costs £30 to £60. A standard formation package (incorporation plus corporation tax registration, PAYE setup, and registered office address) costs £100 to £200. A premium package with tailored articles, shareholder agreements, and initial tax planning costs £200 to £400. Compare what is included before choosing.
 - question: What does a company formation accountant do that Companies House does not?
@@ -40,9 +40,9 @@ keyTakeaways:
   - "An overdrawn director's loan account not repaid within nine months and one day of the year end triggers s.455 tax, charged at 35.75% for loans made in 2026/27."
   - "Standard formation packages cost £100 to £200, covering incorporation, corporation tax registration, PAYE setup and a registered office address, while premium packages cost £200 to £400."
   - "Three separate year-end deadlines apply: file Companies House accounts within 9 months, pay corporation tax 9 months and 1 day after year end, and file the CT600 within 12 months."
-  - "When choosing a formation accountant, look for ICAEW, ACCA or CIMA qualification, which signals strict professional standards and professional indemnity insurance cover."
+  - "When choosing a formation accountant, look for ACCA or CIMA qualification, which signals strict professional standards and professional indemnity insurance cover."
 ---
-<p>If you are setting up a limited company in the UK, you have probably seen the phrase "company formation accountant" while researching your options. It sounds like a specialist service, but what does it actually cover? And do you really need one, or can you handle the process yourself through Companies House for £12?</p>
+<p>If you are setting up a limited company in the UK, you have probably seen the phrase "company formation accountant" while researching your options. It sounds like a specialist service, but what does it actually cover? And do you really need one, or can you handle the process yourself through Companies House for £50?</p>
 
 <p>The short answer is that you can register a company yourself for the statutory fee. But a company formation accountant does far more than file a single form. They set your company up correctly from a tax perspective, register you with HMRC, advise on share structure, and make sure you do not miss any compliance deadlines in your first year. For most business owners, that is worth the cost.</p>
 
@@ -73,7 +73,7 @@ keyTakeaways:
 
 <h2>Why You Should Use a Company Formation Accountant Instead of Doing It Yourself</h2>
 
-<p>The Companies House online incorporation service costs £12 and takes about 15 minutes. You fill in your company name, registered office address, director details, and shareholder information. That is it. You get a certificate of incorporation and a company number within 24 hours in most cases.</p>
+<p>The Companies House online incorporation service costs £50 and takes about 15 minutes. You fill in your company name, registered office address, director details, and shareholder information. That is it. You get a certificate of incorporation and a company number within 24 hours in most cases.</p>
 
 <p>So why pay an accountant?</p>
 
@@ -127,7 +127,7 @@ keyTakeaways:
 
 <h3>Qualification and Regulatory Status</h3>
 
-<p>Look for a firm that is ICAEW, ACCA, or CIMA qualified. These bodies have strict professional standards, compulsory CPD, and disciplinary procedures. A qualified accountant is also covered by professional indemnity insurance, which protects you if they make a mistake.</p>
+<p>Look for a firm that is ACCA or CIMA qualified. These bodies have strict professional standards, compulsory CPD, and disciplinary procedures. A qualified accountant is also covered by professional indemnity insurance, which protects you if they make a mistake.</p>
 
 <p>At Holloway Davies, we hold ourselves to rigorous professional and technical standards in the accounting profession.</p>
 

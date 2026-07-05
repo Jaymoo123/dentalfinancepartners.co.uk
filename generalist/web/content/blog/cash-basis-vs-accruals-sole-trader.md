@@ -23,8 +23,8 @@ faqs:
     answer: "Yes, you can use the cash basis for income tax even if you are VAT registered. The VAT accounting method is separate. You might use the VAT cash accounting scheme (which works like the cash basis for VAT) while using accruals for income tax, or vice versa. The two are independent choices."
   - question: "Does the cash basis mean I pay less tax overall?"
     answer: "Not necessarily. The cash basis changes the timing of when you recognise income and expenses, which can defer tax to a later year. But over the lifetime of your business, the total tax you pay should be broadly similar. The main benefit is cash flow and simplicity, not a permanent tax saving."
-  - question: "What happens if my turnover goes over £150,000 while using the cash basis?"
-    answer: "You must switch to accruals accounting from the start of the next tax year. You will need to make an adjustment to avoid double-counting income or missing expenses. HMRC provides guidance on the computational adjustment. If this happens, it is sensible to speak to an accountant to handle the transition correctly."
+  - question: "Is there a turnover limit for using the cash basis?"
+    answer: "No. The £150,000 entry threshold and £300,000 exit threshold were abolished from 6 April 2024. Cash basis is now the default for eligible sole traders and partnerships with no turnover cap. You can use accruals instead by opting in on your self-assessment return. Some businesses are excluded entirely (limited companies, LLPs, partnerships with a corporate partner, and Lloyd's underwriters) but there is no turnover ceiling for those who are eligible."
   - question: "Can I claim mileage instead of capital allowances under the cash basis?"
     answer: "Yes. Under the cash basis, you cannot claim capital allowances on cars. Instead, you use HMRC's approved mileage rates. From 2026/27 the rate is 55p per mile for the first 10,000 business miles and 25p per mile thereafter (45p applied up to 2025/26). You can still claim capital allowances on other assets like computers and tools, deducting the full cost in the year of purchase."
 keyTakeaways:
@@ -70,9 +70,7 @@ keyTakeaways:
 
 <h2>Which Sole Traders Can Use the Cash Basis?</h2>
 
-<p>HMRC allows sole traders and partnerships (where all partners are individuals) to use the cash basis if they meet the conditions. From the 2024/25 tax year onwards, the turnover threshold for mandatory cash basis use was removed. You can choose either method if your turnover is under £150,000.</p>
-
-<p>If your turnover exceeds £150,000, you must use accruals accounting. That threshold applies to your annual turnover, not your profit.</p>
+<p>HMRC allows sole traders and partnerships (where all partners are individuals) to use the cash basis. From 6 April 2024, cash basis became the default method for eligible businesses with no turnover cap. If you want to use accruals instead, you must actively opt in on your self-assessment return.</p>
 
 <p>Some businesses cannot use the cash basis at all. You must use accruals if:</p>
 
@@ -81,10 +79,9 @@ keyTakeaways:
 <li>You are a limited liability partnership (LLP).</li>
 <li>You are a partnership with a corporate partner.</li>
 <li>Your business is a Lloyd's underwriter.</li>
-<li>You previously used accruals and had turnover above the threshold.</li>
 </ul>
 
-<p>If you are unsure whether you qualify, check your turnover for the last 12 months. If it is under £150,000 and you are a sole trader, you can use the cash basis.</p>
+<p>If you are unsure whether you qualify, check whether your business falls into one of the excluded categories above. Most sole traders can use the cash basis by default, with no turnover limit.</p>
 
 <h2>When the Cash Basis Saves You Tax</h2>
 
@@ -114,7 +111,7 @@ keyTakeaways:
 
 <p>If you switch from accruals to cash, the adjustment works in reverse. You remove debtors and creditors from your accounts and only recognise income and expenses when cash moves.</p>
 
-<p>In practice, most sole traders choose one method and stick with it. Switching is possible but adds complexity to your self-assessment return. If your circumstances change significantly, for example your turnover crosses the £150,000 threshold, you may have no choice.</p>
+<p>In practice, most sole traders choose one method and stick with it. Switching is possible but adds complexity to your self-assessment return. If your circumstances change significantly, for example you need accruals accounts for a mortgage application or require better management information, switching makes sense.</p>
 
 <h2>Record-Keeping Requirements for Each Method</h2>
 
@@ -145,7 +142,7 @@ keyTakeaways:
 
 <p>Under the cash basis, you cannot claim capital allowances on most assets. Instead, you deduct the full cost of plant and machinery (equipment, tools, computers, vehicles) as an expense in the year you pay for them.</p>
 
-<p>That is simpler but can distort your profit in the year of a large purchase. If you buy a van for £25,000, under the cash basis you deduct the full £25,000 in that year. Under accruals, you would claim capital allowances (typically 18% or 6% per year on a reducing balance basis) and spread the deduction over several years.</p>
+<p>That is simpler but can distort your profit in the year of a large purchase. If you buy a van for £25,000, under the cash basis you deduct the full £25,000 in that year. Under accruals, you would claim capital allowances (typically 14% or 6% per year on a reducing balance basis from April 2026; the main-pool WDA was 18% before that date) and spread the deduction over several years.</p>
 
 <p>There are exceptions. Cars are treated differently under the cash basis. You can only deduct the business proportion of motoring costs using HMRC's approved mileage rates (55p per mile for the first 10,000 business miles from 2026/27; 45p applied up to 2025/26; 25p per mile thereafter). You cannot deduct the full cost of a car under the cash basis.</p>
 
@@ -169,7 +166,6 @@ keyTakeaways:
 
 <p>Choose the cash basis if:</p>
 <ul>
-<li>Your turnover is under £150,000.</li>
 <li>Your clients typically pay you within a few weeks of invoicing.</li>
 <li>You want the simplest possible record-keeping.</li>
 <li>You do not need to apply for business loans or mortgages based on your accounts.</li>
@@ -178,14 +174,13 @@ keyTakeaways:
 
 <p>Choose accruals if:</p>
 <ul>
-<li>Your turnover exceeds £150,000.</li>
 <li>You need accurate monthly or quarterly management accounts.</li>
 <li>You plan to apply for finance.</li>
 <li>You have significant work in progress or prepaid expenses.</li>
 <li>You want a true picture of your business's financial performance.</li>
 </ul>
 
-<p>Many sole traders start on the cash basis and switch to accruals as their business grows. That is a sensible approach. The cash basis keeps your tax return simple in the early years. Once your turnover approaches £150,000 or you need better financial data, you switch.</p>
+<p>Many sole traders start on the cash basis and switch to accruals as their business grows. That is a sensible approach. The cash basis keeps your tax return simple in the early years. Once you need better financial data or plan to apply for finance, switching to accruals makes sense.</p>
 
 <p>We see both methods used successfully across every sector. A freelance graphic designer in Shoreditch may prefer the cash basis for its simplicity. A management consultant in Canary Wharf with six-figure invoices may need accruals for accurate financial reporting. Both are valid.</p>
 

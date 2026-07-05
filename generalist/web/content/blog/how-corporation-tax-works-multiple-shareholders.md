@@ -74,7 +74,7 @@ keyTakeaways:
 
 <p>When you have multiple shareholders, dividend allocation matters. Most companies with multiple shareholders use <strong>alphabet shares</strong> to allow flexible dividend payments. Shareholder A gets A shares, Shareholder B gets B shares. Each class can receive a different dividend rate.</p>
 
-<p>This does not affect corporation tax. The company pays the same tax regardless of who gets the dividend. But it affects the shareholders' personal tax positions. Each shareholder pays dividend tax at their own marginal rate: 8.75% basic rate, 33.75% higher rate, 39.35% additional rate. The annual dividend allowance is £500 per person for 2025/26.</p>
+<p>This does not affect corporation tax. The company pays the same tax regardless of who gets the dividend. But it affects the shareholders' personal tax positions. Each shareholder pays dividend tax at their own marginal rate: 10.75% basic rate, 35.75% higher rate, 39.35% additional rate. The annual dividend allowance is £500 per person for 2026/27.</p>
 
 <p>A common scenario: a husband-and-wife company running a Birmingham café. He is the full-time director on a £12,570 salary. She works elsewhere and is a higher-rate taxpayer. They use alphabet shares to allocate more dividends to him, less to her. The company's corporation tax is unchanged. Their combined personal tax bill drops significantly.</p>
 
@@ -146,7 +146,7 @@ keyTakeaways:
 
 <p>A husband-and-wife Ltd company running a Leeds city centre retail shop. Two adult children are also shareholders but not directors. The company makes £90,000 profit.</p>
 
-<p>Corporation tax: approximately £20,100 (marginal relief: 3/200 x (£250,000 - £90,000) = £2,400 relief, so CT = £22,500 - £2,400). Distributable profit: £69,900. Dividends can be split four ways. Each shareholder gets £17,475. All are basic rate taxpayers, so dividend tax is 8.75% on the amount above the £500 allowance.</p>
+<p>Corporation tax: approximately £20,100 (marginal relief: 3/200 x (£250,000 - £90,000) = £2,400 relief, so CT = £22,500 - £2,400). Distributable profit: £69,900. Dividends can be split four ways. Each shareholder gets £17,475. All are basic rate taxpayers, so dividend tax is 10.75% (2026/27 basic rate) on the amount above the £500 allowance.</p>
 
 <p>But there is a trap. If the children are not actively involved, HMRC may apply settlement legislation. This treats dividends paid to a non-active family member as still belonging to the person who transferred the shares. The tax falls on the original owner. Alphabet shares and proper documentation help, but the risk is real.</p>
 

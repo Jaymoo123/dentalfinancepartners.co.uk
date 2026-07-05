@@ -20,7 +20,7 @@ summary: A practical breakdown of what UK accountants charge in 2025/26, by busi
 schema: ''
 faqs:
 - question: What is the average accounting fee for a limited company in the UK in 2025/26?
-  answer: For a standard limited company with turnover under
+  answer: For a standard limited company with turnover under £250,000, accountants typically charge £1,500 to £3,000 per year in 2025/26. This usually covers annual accounts, corporation tax return (CT600), confirmation statement, payroll for one or two directors, and quarterly VAT returns. A micro-entity with a single director and low turnover may pay £800 to £1,500 per year.
 metaTitle_prev: 'UK Accounting Fees 2025/26: What Accountants Charge'
 metaDescription_prev: Accounting fees for UK businesses in 2025/26 range from £50/month for sole traders to £500+/month for Ltd companies. See what you should pay by business
 dateModified: '2026-06-12'
@@ -104,7 +104,7 @@ keyTakeaways:
 <ul>
 <li><strong>VAT registration:</strong> £150 to £400 one-off. Includes completing the VAT1 form and advising on the best scheme (flat rate, annual accounting, or standard).</li>
 <li><strong>R&D tax credits claim:</strong> 15-25% of the claim value, or a fixed fee of £500 to £2,000. The merged R&D scheme from April 2024 has made claims more detailed, so fees have risen.</li>
-<li><strong>Company incorporation:</strong> £50 to £200 plus Companies House fee (£12 for online, £40 for paper). Some firms include this in the first year's fee.</li>
+<li><strong>Company incorporation:</strong> £50 to £200 plus Companies House fee (£50 for online, £40 for paper). Some firms include this in the first year's fee.</li>
 <li><strong>Payroll only:</strong> £10 to £30 per month per employee. Covers RTI submissions, pension auto-enrolment, and P45/P60 processing.</li>
 <li><strong>Bookkeeping catch-up:</strong> £25 to £50 per hour. If your records are behind, expect to pay for the time to bring them up to date.</li>
 <li><strong>Self-assessment only (non-business):</strong> £150 to £300 per year. For employed people with a side income or rental property.</li>
@@ -157,7 +157,7 @@ keyTakeaways:
 <li>Is there a charge for responding to emails or quick questions?</li>
 <li>What happens if HMRC opens an enquiry? Is that covered or charged extra?</li>
 <li>Do you have a dedicated contact, or do you speak to whoever is free?</li>
-<li>Are you ICAEW or ACCA qualified? Qualified firms are regulated and carry professional indemnity insurance.</li>
+<li>Are you ACCA qualified or a member of a recognised professional body? Qualified firms are regulated and carry professional indemnity insurance.</li>
 </ul>
 
 <p>A good accountant should be able to give you a fixed fee in writing before you start. If they cannot, ask why. Most reputable firms will quote a fixed annual fee for a defined scope of work.</p>

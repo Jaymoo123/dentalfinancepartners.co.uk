@@ -155,7 +155,7 @@ keyTakeaways:
 <p>Not every accountant can handle a funded pre-revenue startup. Here is what to look for:</p>
 
 <ul>
-<li><strong>ICAEW or ACCA qualified</strong>: You want someone regulated by a recognised professional body. It matters for investor confidence.</li>
+<li><strong>ACCA qualified</strong>: You want someone regulated by a recognised professional body. It matters for investor confidence.</li>
 <li><strong>Experience with share structures</strong>: Ask them to explain how they would record a share premium account or an EMI option grant. If they hesitate, move on.</li>
 <li><strong>R&D tax credit experience</strong>: They should have a track record of successful claims for software or technology startups. Ask for examples.</li>
 <li><strong>Investor reporting capability</strong>: They should be able to produce quarterly management accounts in a format investors accept. If they only offer annual accounts, they are not the right fit.</li>

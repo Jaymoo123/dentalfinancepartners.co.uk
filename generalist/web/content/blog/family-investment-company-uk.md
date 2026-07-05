@@ -24,7 +24,7 @@ faqs:
   - question: "Can a Family Investment Company own a trading business?"
     answer: "Yes. A FIC can hold shares in a trading company. But the associated companies rules mean the two companies are treated as one group for corporation tax profit thresholds. That can push both companies into the 25% rate sooner. The interaction needs careful planning."
   - question: "How does a Family Investment Company compare to a trust for IHT planning?"
-    answer: "A F"
+    answer: "A FIC pays corporation tax at 19% to 25% on investment income, while a discretionary trust is charged income tax at 45% on income above £500 and faces a 10-year anniversary charge of up to 6% on the trust fund value. Shares gifted from a FIC are potentially exempt transfers: if the donor survives seven years the shares leave the estate entirely. The FIC lets the founding generation retain voting control over investment decisions, whereas a trust vests control in the trustees. Which structure works better depends on the portfolio type, the family's tax position, and how much ongoing control the parents want to keep."
 keyTakeaways:
   - "A FIC pays corporation tax at 19% to 25% on investment profits, while trusts pay 45% on income above £500 and face periodic 10-year anniversary charges."
   - "From 6 April 2026, dividend rates from a FIC are 10.75% for basic rate, 35.75% for higher rate, and 39.35% for additional rate taxpayers, with a £500 annual dividend allowance."

@@ -24,7 +24,7 @@ faqs:
 - question: Do LLPs have to pay corporation tax?
   answer: No. An LLP is transparent for tax purposes. The LLP itself pays no tax. Instead, each member pays income tax and Class 4 National Insurance on their share of the LLP's profits through self assessment. This is a key difference from a limited company, which pays corporation tax on its profits before dividends are distributed.
 - question: Is an LLP better than a limited company for IR35 protection?
-  answer: The off-payroll working rules (IR35) apply to intermediaries, typically limited companies. An LLP is not an intermediary for IR35 purposes, so the rules do not apply. However, HMRC can still challenge an LLP arrangement under the general anti-abuse rule if they believe it is being used to avoid tax. If you are genuinely self-employed and outside IR35, a limited company is usually fine. If you work through a single
+  answer: The off-payroll working rules (IR35) apply to intermediaries, typically limited companies. An LLP is not an intermediary for IR35 purposes, so the rules do not apply. However, HMRC can still challenge an LLP arrangement under the general anti-abuse rule if they believe it is being used to avoid tax. If you are genuinely self-employed and outside IR35, a limited company is usually fine. If you work through a single client for an extended period, an LLP is likely to be the safer option.
 metaTitle_prev: 'Limited Company vs LLP for a Consultant: Tax, Risk'
 metaDescription_prev: Comparing limited company vs LLP for consultants. Tax rates, NI, liability, and admin. Practical guidance for UK consultants choosing a structure.
 dateModified: '2026-06-12'
@@ -54,7 +54,7 @@ keyTakeaways:
 
 <ul>
 <li>Corporation tax at 19% on profits up to £50,000, then marginal relief up to 25% on profits above £250,000.</li>
-<li>Directors pay themselves a salary (subject to PAYE and employer NI) and dividends (taxed at 8.75%, 33.75%, or 39.35% depending on your personal income tax band).</li>
+<li>Directors pay themselves a salary (subject to PAYE and employer NI) and dividends (taxed at 10.75%, 35.75%, or 39.35% depending on your personal income tax band, for 2026/27).</li>
 <li>Limited liability: your personal assets are separate from company debts (with some exceptions for personal guarantees and director misconduct).</li>
 <li>Annual accounts filed at Companies House and a CT600 filed with HMRC.</li>
 <li>Confirmation statement every 12 months.</li>

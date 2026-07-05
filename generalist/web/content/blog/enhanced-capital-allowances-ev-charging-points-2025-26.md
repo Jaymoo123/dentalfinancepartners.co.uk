@@ -26,7 +26,7 @@ faqs:
 - question: What is the difference between full expensing and the 100% first year allowance for EV chargers?
   answer: Full expensing is available only to limited companies and applies to all new main-rate plant and machinery, including EV chargers. The 100% first year allowance is available to all businesses (including sole traders and partnerships) but only for designated environmentally beneficial assets. Both give 100% relief in the year of purchase.
 - question: Can I claim capital allowances on a second-hand EV charging point?
-  answer: No. Both full expensing and the 100% first year allowance require the asset to be new and unused. If you buy a second-hand charger, it goes into the main rate pool and attracts writing down allowances at 18% per year on a reducing balance basis. The same applies to any charger that is not brand new.
+  answer: No. Both full expensing and the 100% first year allowance require the asset to be new and unused. If you buy a second-hand charger, it goes into the main rate pool and attracts writing down allowances at 18% per year on a reducing balance basis in 2025/26, reducing to 14% from April 2026 under Finance Act 2026. The same applies to any charger that is not brand new.
 metaTitle_prev: Enhanced Capital Allowances EV Charging Points 2025/26
 metaDescription_prev: Claim enhanced capital allowances for EV charging points in 2025/26. Full expensing, AIA, and 100% first year allowances explained for UK limited
 dateModified: '2026-06-12'
@@ -64,7 +64,7 @@ keyTakeaways:
 
 <p>There is no upper limit on full expensing. If you spend £50,000 on charging points for your office car park, you deduct £50,000. If you spend £500,000, you deduct £500,000. The relief is uncapped.</p>
 
-<p>There is one important condition: the charging point must be new and unused. Second-hand chargers do not qualify for full expensing. They would instead attract writing down allowances at 18% per year on a reducing balance basis.</p>
+<p>There is one important condition: the charging point must be new and unused. Second-hand chargers do not qualify for full expensing. They would instead attract writing down allowances at 18% per year on a reducing balance basis in 2025/26, reducing to 14% from April 2026.</p>
 
 <h2>Can Sole Traders and Partnerships Claim 100% Relief on EV Chargers?</h2>
 
@@ -95,7 +95,7 @@ keyTakeaways:
 <ul>
 <li>The charger unit and its mounting post or wall bracket.</li>
 <li>Cabling, wiring, and electrical connection work.</li>
->Groundworks, ducting, and trenching.</li>
+<li>Groundworks, ducting, and trenching.</li>
 <li>Installation labour directly related to the charger.</li>
 </ul>
 

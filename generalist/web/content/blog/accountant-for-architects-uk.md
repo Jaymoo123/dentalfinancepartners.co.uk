@@ -89,7 +89,7 @@ keyTakeaways:
 
 <p>If your practice employs at least one person other than a director who earns above the secondary threshold (£5,000 from 6 April 2025, at 15% employer NIC above that threshold), you can claim the Employment Allowance of up to £10,500. That means you can pay yourself a salary up to £12,570 without incurring employer NI. The salary is tax-deductible for the company and uses your personal allowance.</p>
 
-<p>Above the salary, take dividends up to the basic rate band. The dividend allowance is £500 for 2025/26. After that, dividends are taxed at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate).</p>
+<p>Above the salary, take dividends up to the basic rate band. The dividend allowance is £500 for 2026/27. After that, dividends are taxed at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate).</p>
 
 <p>If you have a spouse or partner who works in the business, you can issue alphabet shares to them and pay dividends flexibly. This is common in husband-and-wife practices. But be careful with settlement legislation if you gift shares to a non-working spouse. Our <a href="/blog/director-pay-and-dividends">director pay and dividends guide</a> explains this in detail.</p>
 

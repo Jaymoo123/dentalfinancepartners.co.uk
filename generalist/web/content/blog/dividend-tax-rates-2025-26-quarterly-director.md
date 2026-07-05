@@ -22,7 +22,7 @@ faqs:
   - question: "What is the dividend allowance for 2025/26?"
     answer: "The dividend allowance for 2025/26 is £500. This is the amount of dividend income you can receive each year without paying any tax. It applies across all your dividend income combined, not per company. If you have multiple companies, you get one £500 allowance total."
   - question: "How do I calculate my dividend tax if I pay myself quarterly?"
-    answer: "Calculate your total non-dividend income for the year, subtract your personal allowance, then see how much basic rate band remains (£50,270 minus your taxable non-dividend income). Each quarterly dividend uses up part of that band. Dividends within the band are taxed at 8.75% (above the £500 allowance). Dividends above the band are taxed at 33.75% or 39.35%."
+    answer: "Calculate your total non-dividend income for the year, subtract your personal allowance, then see how much basic rate band remains (£50,270 minus your taxable non-dividend income). Each quarterly dividend uses up part of that band. In 2025/26, dividends within the band are taxed at 8.75% (above the £500 allowance). Dividends above the band are taxed at 33.75% or 39.35%."
   - question: "Can I change my dividend amount mid-year if my income changes?"
     answer: "Yes, you can change future dividend amounts. But you cannot change dividends already paid. If your income increases mid-year and pushes you into a higher tax band, dividends already taken are taxed at the higher rate. You cannot undo them. The best strategy is to reduce or stop further dividends for the rest of the year."
 keyTakeaways:

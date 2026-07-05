@@ -27,7 +27,6 @@ sourcesVerifiedAt: '2026-05-20'
 sourceDomains:
 - acas.org.uk
 - gov.uk
-- icaew.com
 - taxscape.deloitte.com
 imageCredit:
   photographer: Nataliya Vaitkevich
@@ -88,13 +87,13 @@ keyTakeaways:
 
 <h2>Charities and Tax Deducted at Source on Gift Aid</h2>
 
-<p>Charities in the UK can reclaim tax deducted at source on gift aid donations. When a UK taxpayer makes a gift aid donation, the charity can claim back the basic rate tax (20%) that the donor has already paid on that income <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</p>
+<p>Charities in the UK can reclaim tax deducted at source on gift aid donations. When a UK taxpayer makes a gift aid donation, the charity can claim back the basic rate tax (20%) that the donor has already paid on that income.</p>
 
 <p>For example, if you donate £100 to a charity under gift aid, the charity reclaims £25 from HMRC (the basic rate tax on the gross donation of £125). If you are a higher rate taxpayer, you can also claim relief on the difference between the higher rate and basic rate through your self assessment.</p>
 
-<p>Charities can also reclaim withholding tax on certain types of income, including dividends and interest, under the terms of double taxation treaties <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. According to HMRC, charities could be missing out on up to £100 million per year in unclaimed withholding tax on overseas investments <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</p>
+<p>Charities can also reclaim withholding tax on certain types of income, including dividends and interest, under the terms of double taxation treaties. According to HMRC, charities could be missing out on up to £100 million per year in unclaimed withholding tax on overseas investments.</p>
 
-<p>Charities should review their investment portfolios to identify any foreign income that may have had tax deducted at source <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. The process for reclaiming withholding tax can be complex and may require submitting claims to multiple tax authorities <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</p>
+<p>Charities should review their investment portfolios to identify any foreign income that may have had tax deducted at source. The process for reclaiming withholding tax can be complex and may require submitting claims to multiple tax authorities.</p>
 
 <p>This is a specialist area. If you run a charity or advise one, it is worth checking whether you are claiming all the tax deducted at source that you are entitled to.</p>
 
@@ -160,6 +159,5 @@ keyTakeaways:
   <li id="ref-1"><strong>acas.org.uk</strong>: <a href="https://www.acas.org.uk/final-pay-when-someone-leaves-a-job" rel="noopener noreferrer">Final pay when someone leaves a job - Acas</a></li>
   <li id="ref-2"><strong>gov.uk</strong>: <a href="https://www.gov.uk/hmrc-internal-manuals/partnership-manual/pm277000" rel="noopener noreferrer">Deduction of Income Tax at source - HMRC internal manual - GOV.UK</a></li>
   <li id="ref-3"><strong>taxscape.deloitte.com</strong>: <a href="https://taxscape.deloitte.com/article/non-resident-landlords-scheme.aspx" rel="noopener noreferrer">Non-resident landlords scheme - TaxScape | Deloitte</a></li>
-  <li id="ref-4"><strong>icaew.com</strong>: <a href="https://www.icaew.com/technical/charity-community/articles/is-your-charity-missing-out-on-withholding-tax-reclaims" rel="noopener noreferrer">Is your charity missing out on withholding tax reclaims? - ICAEW.com</a></li>
 </ol>
 

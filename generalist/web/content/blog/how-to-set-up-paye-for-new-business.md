@@ -142,7 +142,7 @@ howToSteps:
 <li>Net pay (gross pay minus deductions)</li>
 </ul>
 
-<p>Check the figures before submitting. A common mistake is forgetting to apply the Employment Allowance. If you are eligible (most businesses with employer NI bills under £100,000 qualify), you can claim up to £10,500 off your employer NI each year. Tick the box in your software to apply it.</p>
+<p>Check the figures before submitting. A common mistake is forgetting to apply the Employment Allowance. If you are eligible (most businesses qualify; the old £100,000 prior-year employer NI eligibility cap was removed from 6 April 2025), you can claim up to £10,500 off your employer NI each year. Tick the box in your software to apply it.</p>
 
 <p>Submit the FPS to HMRC. The software sends it electronically. You will get a confirmation message. Keep a record of every submission.</p>
 

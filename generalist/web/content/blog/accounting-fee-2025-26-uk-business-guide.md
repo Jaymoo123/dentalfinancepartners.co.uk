@@ -150,7 +150,7 @@ keyTakeaways:
 <h2>Red Flags When Choosing an Accountant</h2>
 
 <ul>
-<li><strong>No ICAEW, ACCA, or CIMA qualification.</strong> Anyone can call themselves an accountant. Qualified accountants carry professional indemnity insurance and follow ethical standards.</li>
+<li><strong>No ACCA or CIMA qualification.</strong> Anyone can call themselves an accountant. Qualified accountants carry professional indemnity insurance and follow ethical standards.</li>
 <li><strong>Vague pricing.</strong> If they will not give you a written quote, walk away.</li>
 <li><strong>No software integration.</strong> In 2025/26, your accountant should use cloud accounting software. If they still ask for paper records, you are paying for their inefficiency.</li>
 <li><strong>No mention of MTD.</strong> Making Tax Digital for income tax starts April 2026 for businesses with turnover over £50,000. Your accountant should already be preparing for it.</li>

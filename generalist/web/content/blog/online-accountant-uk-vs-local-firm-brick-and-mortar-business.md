@@ -130,6 +130,6 @@ keyTakeaways:
 
 <p>Here is a simple test. Take your last month of receipts. Count how many are paper. If it is more than 20, and you do not want to scan them yourself, choose a local firm. If it is fewer than 20, or you are happy to use a scanning app, an online accountant UK service will likely save you money and give you faster turnaround on your accounts.</p>
 
-<p>Either way, check the accountant is properly qualified. Look for ICAEW, ACCA, or CIMA accreditation. And read the terms carefully. Some online accountants lock you into 12-month contracts. Others, like us, work month to month.</p>
+<p>Either way, check the accountant is properly qualified. Look for ACCA or CIMA accreditation. And read the terms carefully. Some online accountants lock you into 12-month contracts. Others, like us, work month to month.</p>
 
 <p>If you want to discuss your specific situation, <a href="/contact">get in touch</a>. We will tell you honestly whether we are the right fit.</p>

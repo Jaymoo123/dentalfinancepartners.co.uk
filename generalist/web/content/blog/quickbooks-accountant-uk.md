@@ -35,7 +35,7 @@ keyTakeaways:
 
 <p>If you run a UK business and use QuickBooks for your bookkeeping, you already know the basics of the software. But using the software and using it correctly for your tax and compliance obligations are two different things. That is where a QuickBooks accountant UK comes in.</p>
 
-<p>This article covers what a QuickBooks accountant actually does, when you need one, how to choose the right one, and why working with an ICAEW qualified firm that knows QuickBooks inside out can save you time, money, and HMRC headaches.</p>
+<p>This article covers what a QuickBooks accountant actually does, when you need one, how to choose the right one, and why working with a qualified accounting firm that knows QuickBooks inside out can save you time, money, and HMRC headaches.</p>
 
 <h2>What Is a QuickBooks Accountant UK?</h2>
 
@@ -73,9 +73,9 @@ keyTakeaways:
 
 <p>QuickBooks runs a ProAdvisor programme for accountants. A certified ProAdvisor has passed exams on the software and has access to priority support from Intuit. This is not a legal requirement, but it is a strong signal that the accountant has invested time in learning the software properly. Many good accountants hold this certification. Some do not. Ask the question.</p>
 
-<h3>ICAEW or ACCA Qualification</h3>
+<h3>A Recognised Professional Qualification</h3>
 
-<p>Software knowledge is important, but accounting knowledge is non-negotiable. Your accountant should be qualified with a recognised body like ICAEW, ACCA, or CIMA. At Holloway Davies, we work to high professional standards, carry professional indemnity insurance, and are subject to regular practice reviews. A qualified accountant who knows QuickBooks is far more valuable than a bookkeeper who knows the software but cannot advise on corporation tax planning or dividend strategy.</p>
+<p>Software knowledge is important, but accounting knowledge is non-negotiable. Your accountant should be qualified with a recognised body like the ACCA or CIMA. At Holloway Davies, we work to high professional standards, carry professional indemnity insurance, and are subject to regular practice reviews. A qualified accountant who knows QuickBooks is far more valuable than a bookkeeper who knows the software but cannot advise on corporation tax planning or dividend strategy.</p>
 
 <h3>Experience With Your Business Type</h3>
 
@@ -145,7 +145,7 @@ keyTakeaways:
 
 <h2>How to Find the Right QuickBooks Accountant UK for Your Business</h2>
 
-<p>Start by searching for "QuickBooks accountant UK" and look for firms that mention QuickBooks ProAdvisor status and ICAEW or ACCA qualification. Read their website. Look for case studies or client examples that match your business type. Check whether they offer a free initial consultation. Most good firms do.</p>
+<p>Start by searching for "QuickBooks accountant UK" and look for firms that mention QuickBooks ProAdvisor status and ACCA or CIMA qualification. Read their website. Look for case studies or client examples that match your business type. Check whether they offer a free initial consultation. Most good firms do.</p>
 
 <p>At Holloway Davies, we offer a free initial call to discuss your QuickBooks setup, your current accounting process, and what you need from an accountant. We work with limited companies, contractors, sole traders, and partnerships across the UK, from London and Manchester to Bristol, Birmingham, and beyond. <a href="/contact">Contact us</a> to arrange a call.</p>
 

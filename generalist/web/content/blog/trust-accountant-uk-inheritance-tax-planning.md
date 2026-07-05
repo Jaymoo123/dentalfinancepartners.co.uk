@@ -60,7 +60,7 @@ keyTakeaways:
 <li><strong>Trust registration.</strong> Most trusts must be registered with HMRC's Trust Registration Service (TRS) within 90 days of creation. Non-UK trusts and certain non-taxable trusts also need registering. Late registration penalties start at £100 for minor or first-time failures and can reach up to £5,000 for serious or deliberate non-compliance.</li>
 <li><strong>SA900 trust tax return.</strong> Trusts pay income tax at special rates: 10.75% on dividend income within the £1,000 standard rate band (2026/27 rate), 45% on non-dividend income above £1,000 (the trust rate), and 39.35% on dividend income above £1,000 (the dividend trust rate). The trust tax return is more complex than a personal self assessment. It requires a full income statement, a statement of trust capital, and details of beneficiary entitlements.</li>
 <li><strong>IHT periodic and exit charges.</strong> Discretionary trusts face an IHT charge every ten years (the periodic charge) and when capital leaves the trust (the exit charge). Calculating these requires understanding the relevant property regime, the nil rate band available at the trust's creation, and the value of the trust fund at each chargeable event.</li>
-<li><strong>Capital gains tax planning.</strong> Transfers into and out of trusts can trigger CGT. Trustees have their own annual exempt amount (half the individual allowance, currently £1,500 for 2025/26). A trust accountant ensures disposals are timed to use this allowance and that holdover relief is claimed where available.</li>
+<li><strong>Capital gains tax planning.</strong> Transfers into and out of trusts can trigger CGT. Trustees have their own annual exempt amount (half the individual allowance, currently £1,500 for 2026/27). A trust accountant ensures disposals are timed to use this allowance and that holdover relief is claimed where available.</li>
 <li><strong>Advising on trust structure.</strong> Should you use a bare trust, an interest in possession trust, or a discretionary trust? Each has different tax treatment. A bare trust is simplest but the beneficiary has immediate entitlement. A discretionary trust gives maximum flexibility but attracts the highest tax charges. Your accountant will model the numbers for your specific situation.</li>
 </ul>
 
@@ -100,7 +100,7 @@ keyTakeaways:
 <p>Not all accountants are trust specialists. Here is what to look for:</p>
 
 <ul>
-<li><strong>ICAEW or ACCA qualification.</strong> These bodies have specific trust and tax modules. Ask if the firm has a dedicated trust specialist.</li>
+<li><strong>ACCA qualification.</strong> This body has specific trust and tax modules. Ask if the firm has a dedicated trust specialist.</li>
 <li><strong>Experience with business owners.</strong> Trusts for trading companies are different from trusts holding cash or quoted shares. Your accountant should understand Business Property Relief, holdover relief, and the interaction with the company's articles of association.</li>
 <li><strong>Willingness to work with your solicitor.</strong> The trust deed is a legal document. Your accountant should review it before it is signed to ensure the tax treatment is correct. A solicitor who specialises in private client work is essential.</li>
 <li><strong>Transparent pricing.</strong> Ask for a fixed fee for the annual compliance work. Avoid hourly billing for routine trust administration. You want to know the cost upfront.</li>

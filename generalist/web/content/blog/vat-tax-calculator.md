@@ -29,7 +29,6 @@ sourceDomains:
 - aka.hmrc.gov.uk
 - bankofengland.co.uk
 - gov.uk
-- icaew.com
 imageCredit:
   photographer: Mikhail Nilov
   photographer_url: https://www.pexels.com/@mikhail-nilov
@@ -111,7 +110,7 @@ keyTakeaways:
 
 <p>HMRC provides a VAT payment deadline calculator on its website <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. You cannot use it if you make payments on account or use the annual accounting scheme <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. For most businesses on quarterly returns, it gives a clear date.</p>
 
-<p>Late payment interest is charged from the due date. The current rate is set at Bank of England base rate plus 2.5%. The Bank of England cut interest rates to 4.5% in February 2025 <sup><a href="#ref-5" id="cite-5">[5]</a></sup>, so the late payment rate is currently 7%. That adds up quickly on a large VAT bill.</p>
+<p>Late payment interest is charged from the due date. The rate is set at Bank of England base rate plus 2.5%. The exact rate moves with Bank of England decisions, so check the current rate on <a href="https://www.gov.uk/guidance/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments" rel="noopener noreferrer">HMRC's interest rates page</a> before calculating a potential liability. That adds up quickly on a large VAT bill.</p>
 
 <h2>Common Mistakes with VAT Calculators</h2>
 
@@ -146,7 +145,7 @@ keyTakeaways:
 
 <h2>Sources</h2>
 <ol>
-  <li id="ref-1"><strong>icaew.com</strong>: <a href="https://www.icaew.com/insights/tax-news/2025/oct-2025/economy-explainers-what-is-vat" rel="noopener noreferrer">Economy explainers: what is VAT? - ICAEW.com</a></li>
+  <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/vat-rates" rel="noopener noreferrer">VAT rates - GOV.UK</a></li>
   <li id="ref-2"><strong>aka.hmrc.gov.uk</strong>: <a href="http://aka.hmrc.gov.uk/tools/vatpaymentsdeadline/index.htm" rel="noopener noreferrer">VAT payment deadline calculator - GOV.UK</a></li>
   <li id="ref-3"><strong>gov.uk</strong>: <a href="https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay" rel="noopener noreferrer">VAT Flat Rate Scheme: Work out your flat rate - GOV.UK</a></li>
   <li id="ref-4"><strong>gov.uk</strong>: <a href="https://www.gov.uk/guidance/vat-exports-dispatches-and-supplying-goods-abroad-notice-703" rel="noopener noreferrer">VAT on exports: HMRC Notice 703 - GOV.UK</a></li>

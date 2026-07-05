@@ -158,7 +158,7 @@ keyTakeaways:
 <li><strong>Clear scope of work.</strong> The quote should list exactly what is included and what is not.</li>
 <li><strong>No hidden extras.</strong> Ask if the fee covers the confirmation statement, Companies House filing, and HMRC correspondence.</li>
 <li><strong>Fixed for at least one year.</strong> The fee should not change unless your business structure changes significantly.</li>
-<li><strong>ICAEW or ACCA qualified.</strong> You want a qualified professional signing off your accounts, not an unregulated bookkeeper.</li>
+<li><strong>ACCA qualified or recognised professional body.</strong> You want a qualified professional signing off your accounts, not an unregulated bookkeeper.</li>
 <li><strong>Software compatibility.</strong> Make sure they can work with whatever accounting software you use.</li>
 </ul>
 

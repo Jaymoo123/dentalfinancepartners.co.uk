@@ -190,6 +190,6 @@ keyTakeaways:
 
 <p>If your total gains across all disposals will be under £1m, the main decision is timing. If your gains will exceed £1m, you need to plan which portion of the gain falls in which year to minimise your overall tax bill.</p>
 
-<p>Either way, keep good records. And if you are unsure, speak to an ICAEW qualified accountant who understands the rules.</p>
+<p>Either way, keep good records. And if you are unsure, speak to a qualified chartered accountant who understands the rules.</p>
 
 <p>For a full breakdown of BADR and other capital gains reliefs, visit our <a href="/glossary">glossary of tax terms</a>.</p>

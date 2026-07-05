@@ -112,7 +112,7 @@ keyTakeaways:
 
 <p>Many farms diversify to survive. Farm shops, holiday lets, campsites, livery yards, renewable energy, wedding venues, and equestrian centres all generate income. Each has different tax treatments.</p>
 
-<p><strong>Holiday lets</strong> can qualify as furnished holiday lettings (FHL) if they meet the availability and occupancy tests. FHL income is treated as trading income for most tax purposes, which means it qualifies for capital allowances, pension contributions, and reliefs like BADR (Business Asset Disposal Relief). But the rules changed in April 2025. The FHL regime was abolished for 2025/26 onwards. From 6 April 2025, holiday lets are treated as property income, not trading income. This removes many of the previous tax advantages. An agriculture accountant advises on the transition and whether to restructure.</p>
+<p><strong>Holiday lets</strong> previously qualified under the furnished holiday lettings (FHL) regime if they met the availability and occupancy tests. Under that regime, FHL income was treated as trading income for most tax purposes, which meant it qualified for capital allowances, pension contributions, and reliefs like BADR (Business Asset Disposal Relief). The FHL regime was abolished from 6 April 2025. From that date, holiday lets are treated as property income, not trading income, removing many of the previous tax advantages. An agriculture accountant advises on the transition and whether to restructure.</p>
 
 <p><strong>Farm shops</strong> and <strong>cafes</strong> are trading businesses. They have their own VAT rules (some food is zero rated, some standard rated). They also have different capital allowances rules (a shop fit out is different from a grain store).</p>
 
@@ -122,7 +122,7 @@ keyTakeaways:
 
 <p>Not all accountants understand farming. You need someone who has seen a set of farm accounts before. Someone who knows the difference between a beef suckler herd and a dairy herd for herd basis purposes. Someone who can talk to your land agent about grant conditions and your bank manager about borrowing against BPS entitlements.</p>
 
-<p>Look for an accountant who is <strong>ICAEW qualified</strong> (that is the gold standard in UK accountancy) and who lists agriculture as a specialism. Ask them about their experience with herd basis, averaging relief, and APR. Ask them how they handle MTD for ITSA. Ask them if they work with your software (many farmers use Xero or FreeAgent, but some still use Sage 50 or paper records).</p>
+<p>Look for an accountant who is <strong>qualified with a recognised professional body</strong> and who lists agriculture as a specialism. Ask them about their experience with herd basis, averaging relief, and APR. Ask them how they handle MTD for ITSA. Ask them if they work with your software (many farmers use Xero or FreeAgent, but some still use Sage 50 or paper records).</p>
 
 <p>At <a href="/services">Holloway Davies</a>, we work with farmers across the UK. We handle everything from sole trader returns to complex limited company structures. We know the sector because we work in it every day.</p>
 

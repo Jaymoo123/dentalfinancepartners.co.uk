@@ -24,7 +24,7 @@ faqs:
   - question: "What is holdover relief and how does it work on gifted shares?"
     answer: "Holdover relief allows you to defer the CGT on a gift of shares in a trading company. No tax is due on the gift itself. Instead, the gain is deducted from the recipient's base cost, so they pay the tax when they sell. Both donor and recipient must make a joint claim to HMRC. Holdover relief is only available for shares in trading companies, not investment or property companies."
   - question: "Can my child claim BADR on shares I gift to them?"
-    answer: "Yes, but only if they hold the shares for at least 2 years before selling. The 2-year holding period starts from the date of the gift, not from your original acquisition. If you gift shares and the company is sold within 2 years, your child cannot claim BADR. They will pay CGT at the standard rates (18"
+    answer: "Yes, but only if they hold the shares for at least 2 years before selling. The 2-year holding period starts from the date of the gift, not from your original acquisition. If you gift shares and the company is sold within 2 years, your child cannot claim BADR. They will pay CGT at the standard rates (18% for basic rate taxpayers, 24% for higher rate taxpayers), which may significantly reduce the benefit of the gift."
 keyTakeaways:
   - "HMRC treats a gift of shares as a disposal at open market value for CGT purposes, so the donor is liable for any gain even though no cash is received."
   - "Spouse and civil partner transfers carry no immediate CGT, but the recipient inherits the donor's original base cost and pays CGT on the entire gain when they sell."
@@ -58,7 +58,7 @@ keyTakeaways:
 
 <p>The recipient inherits the donor's original base cost. So if you subscribed for shares at £1 each and gift them to your spouse, their base cost is £1 per share. When they sell, they pay CGT on the full gain from £1 to the sale price.</p>
 
-<p>This means gifting to a spouse does not eliminate the gain. It defers the tax to the spouse's return. If your spouse has unused basic rate band (£50,270) and you are a higher rate taxpayer, this can save 20% CGT (24% vs 18% on non-residential gains).</p>
+<p>This means gifting to a spouse does not eliminate the gain. It defers the tax to the spouse's return. If your spouse has unused basic rate band (£50,270) and you are a higher rate taxpayer, this can save 6 percentage points of CGT (24% vs 18% on non-residential gains).</p>
 
 <p>But the gain is still taxable. The spouse exemption does not wipe out the gain. It just shifts who pays the tax.</p>
 
@@ -68,7 +68,7 @@ keyTakeaways:
 
 <p>Gifting shares to a child, sibling, parent, or other non-spouse family member triggers a disposal at market value. You are liable for CGT on the gain from your base cost to the market value at the date of the gift.</p>
 
-<p>If you gift shares worth £200,000 with a base cost of £1, your gain is £199,999. You pay CGT at 14% (if BADR applies and the shares have been held for 2+ years) or 24% (if BADR does not apply, for disposals from 30 October 2024).</p>
+<p>If you gift shares worth £200,000 with a base cost of £1, your gain is £199,999. You pay CGT at 18% (if BADR applies from April 2026 and the shares have been held for 2+ years) or 24% (if BADR does not apply, for disposals from 30 October 2024).</p>
 
 <p>The recipient's base cost becomes the market value at the date of the gift. So if they sell later at the same value, they have no gain. If the value has risen, they pay CGT on the increase from the date of the gift.</p>
 
@@ -89,13 +89,13 @@ keyTakeaways:
 </ul>
 <p>If you claim holdover relief, you cannot also claim BADR on the gift. BADR gives a lower rate of tax (14% in 2025/26) but requires the tax to be paid. Holdover relief defers the tax entirely but at the cost of the recipient inheriting your low base cost.</p>
 
-<p>Which is better depends on your circumstances. If you have no cash to pay the CGT on a large gift, holdover relief is essential. If you have cash and want to lock in the 14% BADR rate before it rises to 18% in April 2026, paying the tax now might be the right call.</p>
+<p>Which is better depends on your circumstances. If you have no cash to pay the CGT on a large gift, holdover relief is essential. If you have cash and BADR applies at the current 18% rate (from April 2026), paying the tax on the gift now rather than deferring may suit you if the recipient's eventual gain would otherwise be taxed at the higher 24% rate.</p>
 
 <h2>The Interaction With BADR: A Critical Choice</h2>
 
 <p>If you gift shares to a family member and they sell within 2 years, the recipient cannot claim BADR on their sale. BADR requires the shares to have been held for at least 2 years prior to disposal. The recipient's holding period starts from the date of the gift, not your original acquisition.</p>
 
-<p>So if you gift shares to your son in January 2026 and he sells in December 2026, he pays CGT at 24% (non-residential rate) or 18% (basic rate) rather than 14% BADR. The tax saving from using his allowances may be wiped out by the higher rate.</p>
+<p>So if you gift shares to your son in January 2026 and he sells in December 2026, he pays CGT at 24% (non-residential rate) or 18% (basic rate) rather than 18% BADR (from April 2026), which removes any rate advantage for a higher rate taxpayer using their own allowances. The tax saving from using his allowances may be wiped out by the higher rate.</p>
 
 <p>If the recipient holds the shares for 2+ years after the gift, they can claim BADR on their own disposal. But that requires the company to remain trading throughout. If you are selling the entire company, the recipient's holding period resets on the gift, so they will not qualify for BADR unless the sale happens more than 2 years after the gift.</p>
 
@@ -103,7 +103,7 @@ keyTakeaways:
 
 <p>Let's look at a worked example.</p>
 
-<h3>Example: Gifting Shares to a Child Before Sale</h3>
+<h3>Example: Gifting Shares to a Child Before Sale (2025/26 rates)</h3>
 
 <p>You own 100% of a trading company worth £1.2 million. Your base cost is £1. You have held the shares for 10 years. You plan to sell the company in 12 months.</p>
 
@@ -121,6 +121,8 @@ keyTakeaways:
 <p>Option 4: Gift 20% now, child holds for 2+ years, then sells.</p>
 <p>You pay CGT on the gift at 14% BADR: £33,179. Child holds for 2 years, then sells. They claim BADR on their gain (assuming they meet the conditions). Gain £239,999 at 14% = £33,599. Combined: £66,778. You sell your 80% at the same time: £154,099. Total: £220,877. Worse than Option 1.</p>
 
+<p>Note: the figures above use the BADR rate of 14% that applied in 2025/26. From April 2026 BADR is 18%, which reduces the tax saving in Option 4 and changes the relative comparisons across all options. Run the calculations using the rate in force at your disposal date.</p>
+
 <p>The numbers shift dramatically depending on the size of the gain, the availability of BADR, and the recipient's tax position. In many cases, the simplest approach (selling all shares yourself) produces the lowest total tax bill.</p>
 
 <p>Gifting shares to family members is not a magic bullet. It works best when the recipient has low income and can use their basic rate band and annual exempt amount, and when the donor has already used their BADR allowance. For most owner-managers with a full £1 million BADR allowance, selling personally is the better route.</p>
@@ -129,7 +131,7 @@ keyTakeaways:
 
 <p>There are specific scenarios where gift shares family member CGT planning is genuinely beneficial:</p>
 <ul>
-<li><strong>You have already used your BADR allowance.</strong> If you have sold a previous business and used the full £1 million, BADR is gone. Gifting shares to a family member who can claim BADR after 2 years can save 10% (the difference between 24% and 14%).</li>
+<li><strong>You have already used your BADR allowance.</strong> If you have sold a previous business and used the full £1 million, BADR is gone. Gifting shares to a family member who can claim BADR after 2 years can save 6 percentage points (the difference between 24% and 18% BADR from April 2026).</li>
 <li><strong>The recipient has significant unused basic rate band.</strong> If your child earns £20,000, they have £30,270 of basic rate band available. CGT at 18% rather than 24% on gains up to that amount saves 6%.</li>
 <li><strong>The company is not BADR-qualifying.</strong> If the company is an investment company or a property company, BADR does not apply anyway. Gifting shares to use allowances and basic rate bands is more attractive.</li>
 <li><strong>You want to extract value gradually.</strong> If the company is not being sold immediately, gifting shares each year to use annual exempt amounts (£3,000 per donor per year) can slowly shift value tax-free.</li>

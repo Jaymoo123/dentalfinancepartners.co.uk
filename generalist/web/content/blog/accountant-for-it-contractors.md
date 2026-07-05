@@ -133,7 +133,7 @@ keyTakeaways:
 <p>Not all contractor accountants are the same. Here is what to look for:</p>
 
 <ul>
-<li><strong>ICAEW or ACCA qualified.</strong> This is a basic requirement. Anyone can call themselves an accountant. Qualified status means they are regulated and insured.</li>
+<li><strong>ACCA qualified.</strong> This is a basic requirement. Anyone can call themselves an accountant. Qualified status means they are regulated and insured.</li>
 <li><strong>IR35 expertise.</strong> Ask them how many IR35 reviews they do per year. If the answer is vague, keep looking.</li>
 <li><strong>Software preference.</strong> If you already use Xero, FreeAgent, or QuickBooks, make sure your accountant works with it. If not, ask which one they recommend and why.</li>
 <li><strong>Client base.</strong> Ask what proportion of their clients are IT contractors. A firm that works mainly with IT contractors will understand the specific issues you face.</li>

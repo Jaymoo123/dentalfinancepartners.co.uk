@@ -146,7 +146,7 @@ keyTakeaways:
 <p>Here is what to look for:</p>
 
 <ul>
-<li><strong>Qualification</strong>: Are they ICAEW, ACCA, or AAT qualified? Anyone can call themselves an accountant. Qualified firms carry professional indemnity insurance and follow ethical standards.</li>
+<li><strong>Qualification</strong>: Are they ACCA or AAT qualified? Anyone can call themselves an accountant. Qualified firms carry professional indemnity insurance and follow ethical standards.</li>
 <li><strong>Industry experience</strong>: Do they work with businesses like yours? A firm that specialises in contractors may not be the best fit for a retail business with stock and VAT.</li>
 <li><strong>Software compatibility</strong>: Do they use Xero, FreeAgent, or QuickBooks? If you already use a platform, make sure they work with it.</li>
 <li><strong>Communication</strong>: Do they respond to emails within 24 hours? Do you get a named contact or a shared inbox?</li>

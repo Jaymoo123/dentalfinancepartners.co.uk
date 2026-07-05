@@ -98,7 +98,7 @@ keyTakeaways:
 
 <p>FreeAgent generates draft year-end accounts. But they need to be reviewed by a qualified accountant before filing. Your accountant checks the accruals, prepayments, deferred income, and sundry expenses. They ensure the accounts comply with FRS 102 or FRS 105 (depending on your company size). Then they file the CT600 corporation tax return with HMRC and the accounts with Companies House.</p>
 
-<p>The deadline is 9 months after your year-end for filing, and 9 months and 1 day for paying the tax. Miss it and you face penalties starting at £150 (1 month late) up to £1,500 (6+ months late), plus interest on late tax payments.</p>
+<p>The CT600 filing deadline is 12 months after your year-end, and corporation tax is due for payment 9 months and 1 day after your year-end. Miss it and you face penalties starting at £150 (1 month late) up to £1,500 (6+ months late), plus interest on late tax payments.</p>
 
 <h2>What to Look for in a FreeAgent Accountant</h2>
 

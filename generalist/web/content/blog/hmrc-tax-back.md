@@ -28,7 +28,6 @@ sourceDomains:
 - aka.hmrc.gov.uk
 - bda.org
 - gov.uk
-- icaew.com
 imageCredit:
   photographer: Nataliya Vaitkevich
   photographer_url: https://www.pexels.com/@n-voitkevich
@@ -93,7 +92,7 @@ keyTakeaways:
 
 <p>If you realise you overpaid in a previous year, you can amend your return. For most people, you have up to 12 months from the filing deadline to make a correction. After that, you may need to write to HMRC.</p>
 
-<p>We see many business owners miss out on refunds simply because they do not check their tax position regularly. A quick review of your tax account each year can save you money. <sup><a href="#ref-4" id="cite-4">[4]</a></sup></p>
+<p>We see many business owners miss out on refunds simply because they do not check their tax position regularly. A quick review of your tax account each year can save you money.</p>
 
 <h2>What About Redundancy Pay?</h2>
 
@@ -125,7 +124,7 @@ keyTakeaways:
 
 <p>Do not ignore a tax code notice. If HMRC sends you a coding notice (P2), read it carefully. It shows the allowances and deductions HMRC is using. If it is wrong, tell them immediately.</p>
 
-<p>Do not assume HMRC will automatically correct an overpayment. While they do catch many errors, they also miss some. It is your responsibility to check your tax position. <sup><a href="#ref-4" id="cite-4">[4]</a></sup></p>
+<p>Do not assume HMRC will automatically correct an overpayment. While they do catch many errors, they also miss some. It is your responsibility to check your tax position.</p>
 
 <h2>When to Get Professional Help</h2>
 
@@ -149,6 +148,5 @@ keyTakeaways:
   <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/claim-tax-refund" rel="noopener noreferrer">Check how to claim a tax refund - GOV.UK</a></li>
   <li id="ref-2"><strong>aka.hmrc.gov.uk</strong>: <a href="http://aka.hmrc.gov.uk/incometax/refund-reclaim.htm" rel="noopener noreferrer">Check how to claim a tax refund - GOV.UK</a></li>
   <li id="ref-3"><strong>bda.org</strong>: <a href="https://www.bda.org/become-a-bda-member/fees/reclaim-my-tax/" rel="noopener noreferrer">Reclaim my tax - British Dental Association</a></li>
-  <li id="ref-4"><strong>icaew.com</strong>: <a href="https://www.icaew.com/insights/tax-news/2026/apr-2026/thousands-of-taxpayers-could-be-missing-out-on-tax-refunds" rel="noopener noreferrer">Thousands of taxpayers could be missing out on tax refunds | ICAEW</a></li>
 </ol>
 

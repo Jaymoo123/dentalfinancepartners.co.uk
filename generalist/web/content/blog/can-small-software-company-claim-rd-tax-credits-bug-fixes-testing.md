@@ -26,7 +26,7 @@ faqs:
   - question: "How do I prove that my bug fixes involved technological uncertainty?"
     answer: "Document the problem before you start fixing it. Record what you tried, what did not work, and why. Note the resources you consulted and why they did not provide a solution. If a competent developer could have fixed the bug using standard documentation or common knowledge, it is not R&D. Your records should demonstrate that the fix required genuine experimentation."
   - question: "What happens if HMRC challenges my R&D claim for bug fixes and testing?"
-    answer: "HMRC may open a compliance check and request supporting evidence. If your claim includes routine bug fixes and testing without proper documentation, they may reduce or reject the claim. Penalties can apply if the claim is found to be deliberately overstated. Working with an ICAEW-qualified accountant who specialises in R&D claims significantly reduces this risk."
+    answer: "HMRC may open a compliance check and request supporting evidence. If your claim includes routine bug fixes and testing without proper documentation, they may reduce or reject the claim. Penalties can apply if the claim is found to be deliberately overstated. Working with a qualified chartered accountant who specialises in R&D claims significantly reduces this risk."
 keyTakeaways:
   - "Bug fixes and testing qualify for R&D tax credits only when they resolve a genuine technological uncertainty that a competent professional could not solve through routine methods."
   - "Routine regression testing, unit testing, and user acceptance testing do not qualify as R&D, because they involve no technological uncertainty."

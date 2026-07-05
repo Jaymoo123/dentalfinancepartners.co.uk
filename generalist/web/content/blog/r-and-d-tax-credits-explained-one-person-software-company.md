@@ -128,7 +128,7 @@ keyTakeaways:
 
 <p>If your software company is profitable, you claim the <strong>merged R&D tax credit scheme</strong> (for accounting periods starting on or after 1 April 2024). The benefit comes as a reduction in your corporation tax bill.</p>
 
-<p>Example. Your company has £80,000 of taxable profit. You spent £30,000 on qualifying R&D costs (your own salary, software licenses, cloud computing costs for experimentation). Under the merged scheme, you receive a 20% expenditure credit on that £30,000, giving a gross credit of £6,000. Because the credit is treated as taxable income, corporation tax is due on it: at the 25% main rate that reduces the net benefit to approximately £4,500 (at the 19% small-profits rate the net benefit is closer to £5,040). Profitable companies use the merged RDEC rate of 20% in all cases.</p>
+<p>Example. Your company has £80,000 of taxable profit. You spent £30,000 on qualifying R&D costs (your own salary, software licenses, cloud computing costs for experimentation). Under the merged scheme, you receive a 20% expenditure credit on that £30,000, giving a gross credit of £6,000. Because the credit is treated as taxable income, corporation tax is due on it: at the 25% main rate that reduces the net benefit to approximately £4,500 (at the 19% small-profits rate the net benefit is closer to £4,860). Profitable companies use the merged RDEC rate of 20% in all cases.</p>
 
 <h3>Loss-Making Solo Company</h3>
 

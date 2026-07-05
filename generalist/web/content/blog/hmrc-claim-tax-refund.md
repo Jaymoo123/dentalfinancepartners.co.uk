@@ -121,7 +121,7 @@ keyTakeaways:
 
 <p>Tax refunds are a target for scammers. You may receive emails, texts, or phone calls claiming to be from HMRC offering a refund. HMRC will never contact you by email or text to tell you about a refund. They will never ask for your bank details by email. If you receive such a message, do not click any links. Report it to HMRC.</p>
 
-<p>Another pitfall is using unregulated tax repayment agents. Some companies promise to get you a refund for a fee. They often charge high percentages of the refund. You can do the same work yourself for free through your Personal Tax Account. If you do use an agent, check they are regulated by a recognised body such as the ICAEW, ACCA, or ATT.</p>
+<p>Another pitfall is using unregulated tax repayment agents. Some companies promise to get you a refund for a fee. They often charge high percentages of the refund. You can do the same work yourself for free through your Personal Tax Account. If you do use an agent, check they are regulated by a recognised body such as the ACCA or ATT.</p>
 
 <p>Be wary of tax avoidance schemes. HMRC does not approve tax avoidance schemes for use <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. Promoters market them as clever ways to pay less tax, but they rarely work as claimed. Users can end up with large tax bills, sometimes paying far more than the tax they tried to avoid, including interest and penalties <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</p>
 

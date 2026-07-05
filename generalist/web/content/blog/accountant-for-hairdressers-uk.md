@@ -52,7 +52,7 @@ keyTakeaways:
 
 <p>The tax saving can be significant once your profits exceed roughly £40,000 to £50,000 per year. Take a hairdresser with profits of £55,000 operating as a sole trader. They would pay approximately £8,000 in income tax and approximately £2,360 in Class 4 NIC for the 2025/26 tax year (6% on profits between £12,570 and £50,270, then 2% above). Total: around £10,400.</p>
 
-<p>If the same hairdresser incorporated and took a salary of £12,570 (no tax or NI due) and dividends of £42,430, the corporation tax at 19% would be roughly £8,060 on the profit. The director would pay no personal tax on the salary, and dividend tax at 8.75% on the dividends above the £500 allowance. Total tax: roughly £11,700. A saving of around £800, plus the company retains the remaining profits for reinvestment.</p>
+<p>If the same hairdresser incorporated and took a salary of £12,570 (no tax or NI due) and dividends of £42,430, the corporation tax at 19% would be roughly £8,060 on the profit (2025/26 figures). The director would pay no personal tax on the salary, and dividend tax at 8.75% on the dividends above the £500 allowance. Total tax: roughly £11,700. A saving of around £800, plus the company retains the remaining profits for reinvestment. From 6 April 2026, the basic-rate dividend tax rate rises to 10.75%, which increases the personal tax element in this comparison.</p>
 
 <p>But incorporation is not always the right move. You have additional costs: filing annual accounts, a confirmation statement, and running payroll. You also lose the ability to draw money freely from the business bank account. Any money you take beyond salary and dividends goes on a director's loan account, which has strict rules.</p>
 

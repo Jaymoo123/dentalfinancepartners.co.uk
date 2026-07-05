@@ -127,7 +127,7 @@ keyTakeaways:
 <p>Your qualifying R&D costs would be:</p>
 
 <ul>
-<li><strong>Staff costs:</strong> 30% of £12,570 salary = £3,771. Employer NI on that portion (approximately £520 at 13.8%) also qualifies. Total staff cost: roughly £4,291.</li>
+<li><strong>Staff costs:</strong> 30% of £12,570 salary = £3,771. Employer NI on that portion (approximately £520 at 13.8%, the 2024/25 rate) also qualifies. Total staff cost: roughly £4,291. From April 2025, employer NIC rose to 15% above a reduced £5,000 secondary threshold, so claims for later accounting periods should use the updated rate.</li>
 <li><strong>Software licenses:</strong> You bought a £200 per month API subscription for the traffic data during the development phase. Three months of testing = £600.</li>
 <li><strong>Consumables:</strong> Cloud computing costs for running your test simulations. You spent £150 on additional compute capacity during the R&D phase.</li>
 </ul>
@@ -156,7 +156,7 @@ keyTakeaways:
 
 <h3>Ignoring the Subsidised Nature of Client-Funded Work</h3>
 
-<p>If a client paid you to do the R&D work, HMRC considers that a subsidy. The rules changed in 2024. For accounting periods starting on or after 1 April 2024, if your R&D project is subsidised (including by a client), you must claim under the RDEC scheme, not the SME scheme. This is a complex area. If a client funded the project, speak to an ICAEW-qualified accountant before you submit the claim.</p>
+<p>If a client paid you to do the R&D work, HMRC considers that a subsidy. The rules changed in 2024. For accounting periods starting on or after 1 April 2024, if your R&D project is subsidised (including by a client), you must claim under the RDEC scheme, not the SME scheme. This is a complex area. If a client funded the project, speak to a qualified chartered accountant before you submit the claim.</p>
 
 <h2>How to Prepare Your Solo R&D Claim</h2>
 

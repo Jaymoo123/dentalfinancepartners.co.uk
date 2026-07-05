@@ -139,7 +139,7 @@ keyTakeaways:
 
 <p>If the loan exceeds £10,000 at any point in the year, the company must report it as a benefit in kind on a P11D. You pay tax on the beneficial loan interest (the difference between the official rate and any interest you pay).</p>
 
-<p>More importantly, if the loan is not repaid within 9 months and 1 day of the company's year-end, the company pays S455 tax at 33.75% on the outstanding amount. This is a charge that sits on top of corporation tax. The company can reclaim the S455 tax when you repay the loan, but it is a cash flow cost in the meantime.</p>
+<p>More importantly, if the loan is not repaid within 9 months and 1 day of the company's year-end, the company pays S455 tax at 33.75% on the outstanding amount (rising to 35.75% for loans made on or after 6 April 2026). This is a charge that sits on top of corporation tax. The company can reclaim the S455 tax when you repay the loan, but it is a cash flow cost in the meantime.</p>
 
 <p>The clean way to extract money from your company is to declare a dividend. This requires sufficient retained profits, a board meeting, and dividend vouchers. It avoids the director's loan account complications entirely.</p>
 
@@ -167,7 +167,7 @@ keyTakeaways:
 
 <p><strong>Not considering associated companies.</strong> If you control multiple companies, each one's corporation tax thresholds are divided. This can push a small company into the marginal relief band unexpectedly.</p>
 
-<p><strong>Forgetting the Employment Allowance.</strong> If your company's total employer NI is under £100,000 per year, you can claim the Employment Allowance of up to £10,500. This can make a £12,570 salary more efficient than taking a lower salary to avoid employer NI.</p>
+<p><strong>Forgetting the Employment Allowance.</strong> You can claim the Employment Allowance of up to £10,500 (the previous £100,000 prior-year employer NI eligibility cap was removed from 6 April 2025). This can make a £12,570 salary more efficient than taking a lower salary to avoid employer NI.</p>
 
 <h2>How to Calculate Your Total Tax Bill</h2>
 

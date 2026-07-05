@@ -58,9 +58,9 @@ keyTakeaways:
 
 <p>Total spend: £48,500. All items qualify as plant and machinery.</p>
 
-<p>The company has taxable profits of £92,800 before capital allowances. Corporation tax at 19% (small profits rate) would be £17,632. But the company can claim capital allowances on the full £48,500.</p>
+<p>The company has taxable profits of £92,800 before capital allowances. At £92,800 the company falls in the marginal relief band (between £50,000 and £250,000), so corporation tax is approximately £20,842 (25% on profits, reduced by the 3/200 marginal relief fraction). But the company can claim capital allowances on the full £48,500.</p>
 
-<p>Under the Annual Investment Allowance (AIA), the company can deduct 100% of the cost in the same year, up to a £1,000,000 limit. That means the full £48,500 is deductible. Taxable profits drop to £44,300. Corporation tax becomes £8,417. The company saves £9,215 in tax.</p>
+<p>Under the Annual Investment Allowance (AIA), the company can deduct 100% of the cost in the same year, up to a £1,000,000 limit. That means the full £48,500 is deductible. Taxable profits drop to £44,300, which falls below the £50,000 small profits threshold. Corporation tax at 19% becomes £8,417. The company saves £12,425 in tax.</p>
 
 <p>That is the core benefit. You spend on qualifying assets, and the taxman effectively covers 19% to 25% of the cost (depending on your corporation tax rate).</p>
 

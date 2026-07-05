@@ -63,7 +63,7 @@ keyTakeaways:
 
 <p>Many designers start as sole traders. It is simple, cheap, and low admin. But once your turnover passes a certain point, or you start working with agencies that require limited company status, the balance shifts.</p>
 
-<p>An accountant will run the numbers for your specific situation. For example, a freelance brand designer in Manchester earning £63,400 per year might be better off as a limited company, paying themselves a £12,570 salary and the rest as dividends. That saves roughly £3,800 per year in NI compared to being a sole trader. But if you are earning £28,000 part-time while studying, sole trader is probably the right call.</p>
+<p>An accountant will run the numbers for your specific situation. For example, a freelance brand designer in Manchester earning £63,400 per year might be better off as a limited company, paying themselves a £12,570 salary and the rest as dividends. The NI saving depends on the rates in force: under 2026/27 rates (Class 4 NIC at 6% and employer NIC at 15% above the £5,000 secondary threshold), the advantage is smaller than it was in earlier years when Class 4 ran at 9% and employer NIC at 13.8%. An accountant will calculate the current saving for your exact income and structure. But if you are earning £28,000 part-time while studying, sole trader is probably the right call.</p>
 
 <p>We cover the decision in detail on our <a href="/incorporation">incorporation page</a>.</p>
 
@@ -123,8 +123,8 @@ keyTakeaways:
 <ul>
 <li><strong>31 January:</strong> online self assessment deadline and first payment on account</li>
 <li><strong>31 July:</strong> second payment on account</li>
-<li><strong>9 months after year-end:</strong> corporation tax payment and filing deadline for private companies</li>
-<li><strong>12 months after year-end:</strong> confirmation statement deadline at Companies House</li>
+<li><strong>9 months and 1 day after year-end:</strong> corporation tax payment deadline for private companies</li>
+<li><strong>12 months after year-end:</strong> CT600 (company tax return) filing deadline and company accounts at Companies House</li>
 </ul>
 
 <p>Miss any of these and you face penalties. Companies House late accounts attract charges starting at £150. For HMRC, a self assessment return filed late carries a fixed £100 penalty, with separate late-payment penalties of 5% of tax due at 30 days, 6 months and 12 months overdue. An accountant keeps you on track.</p>
@@ -160,7 +160,7 @@ keyTakeaways:
 
 <p>Not all accountants who say they work with creatives actually understand the sector. Here is what to look for.</p>
 <ul>
-<li><strong>ICAEW or ACCA qualified.</strong> This is the minimum. It means they are regulated, insured, and bound by a professional code.</li>
+<li><strong>ACCA or equivalent professional qualification.</strong> This is the minimum. It means they are regulated, insured, and bound by a professional code.</li>
 <li><strong>Experience with IR35.</strong> Ask how many IR35 reviews they have done in the last 12 months. If the answer is zero, move on.</li>
 <li><strong>Knowledge of the flat rate VAT scheme.</strong> They should be able to explain the limited cost trader rules without hesitation.</li>
 <li><strong>References from other designers.</strong> Ask for a testimonial from a freelance graphic designer or a small design studio.</li>

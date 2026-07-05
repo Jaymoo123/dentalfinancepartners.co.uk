@@ -76,7 +76,7 @@ keyTakeaways:
 
 <p>Many accountants now offer bookkeeping as part of their monthly package. And many bookkeepers offer management accounts that look like what an accountant produces. So how do you tell them apart?</p>
 
-<p>The key difference is qualification and scope of work. A bookkeeper does not need a formal accounting qualification, though many hold AAT (Association of Accounting Technicians) or ICB (Institute of Certified Bookkeepers) certification. An accountant will typically hold ACA (ICAEW), ACCA, or CIMA qualifications. These require years of study and supervised work experience.</p>
+<p>The key difference is qualification and scope of work. A bookkeeper does not need a formal accounting qualification, though many hold AAT (Association of Accounting Technicians) or ICB (Institute of Certified Bookkeepers) certification. An accountant will typically hold ACA, ACCA, or CIMA qualifications. These require years of study and supervised work experience.</p>
 
 <p>An accountant can also act as your company's filing agent with Companies House and HMRC. A bookkeeper cannot file your corporation tax return or self assessment return on your behalf unless they are also a qualified accountant or registered with HMRC as an agent.</p>
 
@@ -142,7 +142,7 @@ keyTakeaways:
 
 <p>For a bookkeeper, look for ICB or AAT qualification. Ask how they handle reconciliation and what software they use. Check they understand your sector. A bookkeeper who works mainly with ecommerce businesses on Shopify and Xero is different from one who works with construction contractors on Sage and CIS300 returns.</p>
 
-<p>For an accountant, look for ICAEW, ACCA, or CIMA qualification. Ask how many limited company clients they have. Ask about their approach to director pay and dividend planning. Ask if they include bookkeeping in their monthly fee or charge separately. Ask how they handle the year-end process and whether they use cloud software like Xero or FreeAgent.</p>
+<p>For an accountant, look for ACCA or CIMA qualification. Ask how many limited company clients they have. Ask about their approach to director pay and dividend planning. Ask if they include bookkeeping in their monthly fee or charge separately. Ask how they handle the year-end process and whether they use cloud software like Xero or FreeAgent.</p>
 
 <p>Check they are registered with HMRC as an agent. Any accountant filing your returns needs an HMRC agent code. You can verify this yourself.</p>
 

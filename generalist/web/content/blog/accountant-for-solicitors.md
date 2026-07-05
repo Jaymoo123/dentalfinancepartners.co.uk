@@ -22,7 +22,7 @@ faqs:
   - question: "Do I need a specialist accountant if I am a sole practitioner solicitor?"
     answer: "Yes. Even a sole practitioner holding client money must comply with the SRA Accounts Rules and submit an annual SRA Accountant's Report. A general accountant may not know the rules. A specialist will keep you compliant and save you tax on your personal income."
   - question: "Can a general accountant prepare an SRA Accountant's Report?"
-    answer: "Technically yes, if they are a member of a recognised supervisory body like ICAEW. But in practice, most general accountants have never prepared one. The SRA rules are detailed and the report must be in the correct format (Form 2 or Form 3). A specialist accountant for solicitors will do this correctly first time."
+    answer: "Technically yes, if they are a member of a recognised supervisory body such as the ACCA. But in practice, most general accountants have never prepared one. The SRA rules are detailed and the report must be in the correct format (Form 2 or Form 3). A specialist accountant for solicitors will do this correctly first time."
   - question: "How much does a specialist accountant for solicitors cost?"
     answer: "Fees vary by firm size and complexity. A sole practitioner might pay £1,500 to £3,000 per year for full accounting, tax, and SRA reporting. A five-partner firm might pay £5,000 to £10,000. The cost is offset by the tax savings and compliance protection a specialist provides."
   - question: "What happens if my SRA Accountant's Report is late?"
@@ -140,7 +140,7 @@ keyTakeaways:
 
 <ul>
 <li><strong>SRA experience.</strong> Ask how many SRA Accountant's Reports they have prepared in the last 12 months.</li>
-<li><strong>ICAEW or ACCA qualification.</strong> The SRA requires the reporting accountant to be a member of a recognised supervisory body. ICAEW is the most common.</li>
+<li><strong>A recognised professional qualification.</strong> The SRA requires the reporting accountant to be a member of a recognised supervisory body, such as the ACCA.</li>
 <li><strong>Law firm sector knowledge.</strong> Do they understand WIP, disbursements, and counsel fees? Ask for a recent example.</li>
 <li><strong>Software compatibility.</strong> Do they work with the practice management system you use (P4W, Proclaim, Actionstep, Clio, etc.)?</li>
 <li><strong>Proactive advice.</strong> Do they just file your accounts, or do they suggest tax planning opportunities?</li>
@@ -156,7 +156,7 @@ keyTakeaways:
 <p>Yes. Even a sole practitioner holding client money must comply with the SRA Accounts Rules and submit an annual SRA Accountant's Report. A general accountant may not know the rules. A specialist will keep you compliant and save you tax on your personal income.</p>
 
 <h3>Can a general accountant prepare an SRA Accountant's Report?</h3>
-<p>Technically yes, if they are a member of a recognised supervisory body (like ICAEW). But in practice, most general accountants have never prepared one. The SRA rules are detailed and the report must be in the correct format (Form 2 or Form 3). A specialist accountant for solicitors will do this correctly first time.</p>
+<p>Technically yes, if they are a member of a recognised supervisory body. But in practice, most general accountants have never prepared one. The SRA rules are detailed and the report must be in the correct format (Form 2 or Form 3). A specialist accountant for solicitors will do this correctly first time.</p>
 
 <h3>How much does a specialist accountant for solicitors cost?</h3>
 <p>Fees vary by firm size and complexity. A sole practitioner might pay £1,500 to £3,000 per year for full accounting, tax, and SRA reporting. A five-partner firm might pay £5,000 to £10,000. The cost is offset by the tax savings and compliance protection a specialist provides.</p>

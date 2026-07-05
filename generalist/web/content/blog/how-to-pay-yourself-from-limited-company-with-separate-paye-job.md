@@ -20,7 +20,7 @@ summary: If you run a limited company alongside a full-time PAYE job, the standa
 schema: ""
 faqs:
 - question: Can I take dividends from my limited company if I already have a full-time job?
-  answer: Yes. Dividends are paid from post-tax profits, so your employment income does not affect your ability to declare dividends. The only limit is that your company must have sufficient retained profits. Your dividend tax rate depends on your total income (salary plus
+  answer: Yes. Dividends are paid from post-tax profits, so your employment income does not affect your ability to declare dividends. The only limit is that your company must have sufficient retained profits. Your dividend tax rate depends on your total income (salary plus dividends combined): 8.75% at basic rate, 33.75% at higher rate, or 39.35% at additional rate in 2025/26.
 metaTitle_prev: How to Pay Yourself From a Limited Company With a PAYE Job
 metaDescription_prev: Running a limited company alongside a PAYE job? Here is how to pay yourself efficiently, avoid NI traps, and keep your tax code correct. 2025/26 rates.
 dateModified: '2026-06-12'
@@ -52,7 +52,7 @@ keyTakeaways:
 
 <h2>Dividends Are Usually the Better Option</h2>
 
-<p>Dividends do not attract National Insurance. They are taxed at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate), depending on your total income. And the company does not pay corporation tax on the profits distributed as dividends (dividends are paid from post-tax profits).</p>
+<p>Dividends do not attract National Insurance. They are taxed at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate) in 2025/26, depending on your total income. And the company does not pay corporation tax on the profits distributed as dividends (dividends are paid from post-tax profits).</p>
 
 <p>For a director with a separate PAYE job, dividends are almost always the most efficient way to extract money from the company. You avoid employer NI entirely. You avoid employee NI entirely. And the dividend tax rates are lower than the combined income tax and NI you would pay on a second salary.</p>
 
@@ -151,7 +151,7 @@ keyTakeaways:
 
 <p>Sarah's PAYE job uses her personal allowance and basic rate band. Her £55,000 salary puts her in higher rate tax (40% on earnings above £50,270). Her total income with dividends is £80,000.</p>
 
-<p>She takes the full £25,000 as dividends. The first £500 is tax-free. The remaining £24,500 is taxed at 33.75%: £8,269 in dividend tax. She keeps £16,731. Her company pays 19% corporation tax on the £25,000 profit: £4,750. Total tax on the £25,000 is £13,019 (company + personal). Effective rate: 52%.</p>
+<p>She takes the full £25,000 as dividends. The first £500 is tax-free. The remaining £24,500 is taxed at 33.75% (higher rate, 2025/26): £8,269 in dividend tax. She keeps £16,731. Her company pays 19% corporation tax on the £25,000 profit: £4,750. Total tax on the £25,000 is £13,019 (company + personal). Effective rate: 52%.</p>
 
 <p>If Sarah paid herself a salary of £12,570 instead, the maths is worse. The salary is taxed at 40% (no personal allowance left) plus employee NI at 2% (above £50,270, NI drops to 2%). Employer NI at 15% on £7,570 (above the £5,000 secondary threshold, 2025/26) costs £1,136. The net result is she keeps less than the dividend route.</p>
 

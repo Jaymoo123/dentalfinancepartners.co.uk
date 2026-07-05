@@ -109,7 +109,7 @@ keyTakeaways:
 
 <ol>
 <li>Read the letter carefully. Note the specific areas under enquiry and the deadline for response.</li>
-<li>Contact your accountant immediately. If you do not have one, find an ICAEW qualified firm that handles HMRC enquiries. This is not a job for a general bookkeeper.</li>
+<li>Contact your accountant immediately. If you do not have one, find a qualified accountancy firm that handles HMRC enquiries. This is not a job for a general bookkeeper.</li>
 <li>Gather the supporting documents HMRC has requested. Do not destroy anything. Do not alter records.</li>
 <li>Respond within the deadline. Even if you need more time, write to HMRC and ask for an extension. They usually grant one if you have a genuine reason.</li>
 <li>Do not admit liability for errors you are unsure about. Let your accountant review the position first.</li>

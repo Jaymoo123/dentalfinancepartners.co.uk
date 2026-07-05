@@ -131,7 +131,7 @@ keyTakeaways:
 <h2>Should You Use an Accountant for Your R&D Claim?</h2>
 <p>R&D tax credits are one area where professional advice almost always pays for itself. The technical and financial reporting requirements are detailed, and HMRC has become more aggressive in reviewing claims, particularly in sectors like construction where they see a higher proportion of incorrect claims.</p>
 
-<p>An ICAEW qualified accountant who understands construction R&D can help you identify qualifying projects, calculate costs correctly, and prepare the technical narrative. They can also handle the AIF submission and any HMRC enquiries that follow. The cost of the advice is typically far less than the additional relief you would miss or the risk of a rejected claim.</p>
+<p>A qualified chartered accountant who understands construction R&D can help you identify qualifying projects, calculate costs correctly, and prepare the technical narrative. They can also handle the AIF submission and any HMRC enquiries that follow. The cost of the advice is typically far less than the additional relief you would miss or the risk of a rejected claim.</p>
 
 <p>If you are developing new materials or construction methods, speak to our team at <a href="/r-and-d-credits">Holloway Davies</a>. We work with construction companies across the UK, from Birmingham's Jewellery Quarter to Glasgow's Merchant City, helping them claim the R&D relief they are entitled to.</p>
 

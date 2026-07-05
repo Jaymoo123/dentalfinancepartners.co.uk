@@ -26,7 +26,7 @@ faqs:
   - question: "Are accountant fees tax deductible for a limited company?"
     answer: "Yes. Accountant fees are a legitimate business expense for a limited company. They reduce your taxable profit and therefore your corporation tax bill. For a sole trader, they are also deductible against your self-employed income. You are effectively getting the accounting cost at a 19-25% discount through the tax relief."
   - question: "What should I look for when comparing accountant quotes?"
-    answer: "Look beyond the headline monthly fee. Ask for a full written list of what is included and what is charged extra. Check whether software licenses are included. Ask about the notice period and whether there are setup fees. Verify the firm's qualifications (ICAEW, ACCA, or CIMA). And speak to them on the phone. If they cannot explain their fees clearly in the sales call, that is a red flag."
+    answer: "Look beyond the headline monthly fee. Ask for a full written list of what is included and what is charged extra. Check whether software licenses are included. Ask about the notice period and whether there are setup fees. Verify the firm's qualifications (ACCA or CIMA). And speak to them on the phone. If they cannot explain their fees clearly in the sales call, that is a red flag."
 keyTakeaways:
   - "A sole trader on basic self assessment with no VAT typically pays £80 to £130 per month (£960 to £1,560 per year) in 2025/26."
   - "A simple one-director limited company typically costs £150 to £250 per month; adding VAT returns and payroll pushes fees to £180 to £300 per month."
@@ -129,7 +129,7 @@ keyTakeaways:
 
 <ol>
 <li><strong>Get a full written quote.</strong> Ask for everything included and everything excluded.</li>
-<li><strong>Check qualifications.</strong> ICAEW, ACCA, or CIMA are the main chartered bodies. Anyone can call themselves an accountant. These letters mean they have passed rigorous exams and follow a code of ethics.</li>
+<li><strong>Check qualifications.</strong> ACCA or CIMA are the main chartered bodies. Anyone can call themselves an accountant. These letters mean they have passed rigorous exams and follow a code of ethics.</li>
 <li><strong>Ask about software.</strong> Do they use cloud accounting tools? Do they include the license in the fee? A firm that still uses spreadsheets and desktop software will be slower and more expensive in the long run.</li>
 <li><strong>Read the contract.</strong> What is the notice period? Can you leave at year-end without penalty? Most reputable firms require 3 months notice.</li>
 <li><strong>Talk to them.</strong> Do they answer your questions clearly? Do they explain things in plain English? If they talk down to you in the sales call, they will do the same when you have a problem.</li>

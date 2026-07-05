@@ -54,7 +54,7 @@ howToSteps:
 <p>At Holloway Davies, we handle these appeals regularly for directors who missed a deadline through no fault of their own. This article explains exactly how the appeal process works, what HMRC accepts as a reasonable excuse, and what you need to do if a penalty lands on your desk.</p>
 
 <h2>When Does HMRC Issue a Late Filing Penalty?</h2>
-<p>Your limited company must file its annual accounts and Company Tax Return (CT600) at Companies House and HMRC within 9 months of the accounting year-end. For a company with a 31 March year-end, the deadline is 31 December.</p>
+<p>Your limited company must file its annual accounts at Companies House within 9 months of the accounting year-end, and its Company Tax Return (CT600) with HMRC within 12 months of the accounting period end. For a company with a 31 March year-end, the Companies House accounts deadline is 31 December and the CT600 deadline is 31 March the following year. Corporation Tax itself must be paid 9 months and 1 day after the period end (1 January for a 31 March year-end).</p>
 <p>If you miss that deadline, HMRC issues:</p>
 <ul>
 <li><strong>First offence:</strong> £100 flat penalty.</li>

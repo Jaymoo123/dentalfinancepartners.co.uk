@@ -135,7 +135,7 @@ keyTakeaways:
 <p>Not all firms are the same. Here is what to look for:</p>
 
 <ul>
-<li><strong>ICAEW, ACCA, or CIMA qualification</strong>. Anyone can call themselves an accountant. A chartered qualification means they are regulated, insured, and subject to professional standards.</li>
+<li><strong>ACCA or CIMA qualification</strong>. Anyone can call themselves an accountant. A recognised professional qualification means they are regulated, insured, and subject to professional standards.</li>
 <li><strong>Specialist in your sector</strong>. A firm that handles IT contractors may not be the best fit for a freelance graphic designer or a construction subcontractor. Ask who their typical clients are.</li>
 <li><strong>Transparent pricing</strong>. You should know the monthly fee and exactly what it covers before you sign up. Ask whether VAT returns, bookkeeping, and Self Assessment are included or charged extra.</li>
 <li><strong>Responsive communication</strong>. You should get a reply within 24 hours during the working week. Some firms offer a dedicated manager. Others have a team model. Both work, but know which you are getting.</li>

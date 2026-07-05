@@ -151,9 +151,9 @@ faqs:
 
 <p>Not all accountants understand contracting. A high-street firm that handles corner shops and dental practices may not know the first thing about IR35, dividend planning, or the specific challenges of a contractor operating through a limited company. Here is what to look for.</p>
 
-<h3>ICAEW or ACCA Qualification</h3>
+<h3>Recognised Professional Qualification</h3>
 
-<p>Look for a firm that employs qualified accountants from a recognised body like ICAEW, ACCA, or CIMA. We are experienced, qualified accountants ourselves, and we know the difference it makes. Qualified accountants are bound by ethical codes and professional standards. They carry professional indemnity insurance. They update their knowledge continuously.</p>
+<p>Look for a firm that employs qualified accountants from a recognised body like the ACCA or CIMA. We are experienced, qualified accountants ourselves, and we know the difference it makes. Qualified accountants are bound by ethical codes and professional standards. They carry professional indemnity insurance. They update their knowledge continuously.</p>
 
 <h3>Specialist Contractor Experience</h3>
 
@@ -247,7 +247,7 @@ faqs:
 <ol>
 <li><strong>Assess your current position.</strong> Are you inside or outside IR35? What is your current pay structure? Do you have a director's loan balance? Gather your last three months of bank statements and invoices.</li>
 <li><strong>Define your requirements.</strong> Do you need IR35 contract reviews? R&D support? MTD compliance? Pension planning? Write down your non-negotiables.</li>
-<li><strong>Research firms.</strong> Look for ICAEW-qualified firms that specialise in contractors. Read reviews. Ask for client references.</li>
+<li><strong>Research firms.</strong> Look for firms that employ qualified accountants from a recognised professional body and specialise in contractors. Read reviews. Ask for client references.</li>
 <li><strong>Request a proposal.</strong> Ask for a fixed-fee quote that itemises what is included. Ask about software, response times, and who your point of contact will be.</li>
 <li><strong>Check the contract.</strong> Make sure you understand the notice period, what happens if you leave, and whether your data is portable.</li>
 <li><strong>Make the switch.</strong> Your new accountant will handle the transfer of your books, HMRC records, and filing obligations. Most firms manage the entire process.</li>

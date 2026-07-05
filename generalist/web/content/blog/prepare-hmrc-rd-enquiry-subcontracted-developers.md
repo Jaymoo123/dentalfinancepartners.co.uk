@@ -44,7 +44,7 @@ howToSteps:
   - name: "Write a professional covering letter"
     text: "Summarise your response, confirm that all documents are provided, state that you believe the claim is correct, and keep the tone professional and cooperative throughout."
   - name: "Have your accountant review everything before sending"
-    text: "An ICAEW qualified accountant can spot gaps or weak points in your response that HMRC will otherwise exploit; if a third-party agent prepared the original claim, involve them too."
+    text: "A qualified chartered accountant can spot gaps or weak points in your response that HMRC will otherwise exploit; if a third-party agent prepared the original claim, involve them too."
 ---
 
 <p>If you claimed R&D tax credits and included costs for subcontracted developers, you are in a higher risk category for an HMRC enquiry. HMRC sees subcontractor costs as one of the most common areas of error and abuse in R&D claims. That does not mean your claim is wrong. It means your evidence needs to be solid.</p>
@@ -115,7 +115,7 @@ howToSteps:
 <li><strong>Assign a lead contact.</strong> One person in your company should coordinate the response. This is usually the finance director or the accountant who prepared the claim.</li>
 <li><strong>Gather evidence in order.</strong> Organise documents by subcontractor and by project. Use a clear index so HMRC can cross-reference your response against their questions.</li>
 <li><strong>Write a covering letter.</strong> Summarise your response, confirm that all documents are provided, and state that you believe the claim is correct. Keep the tone professional and cooperative.</li>
-<li><strong>Review with your accountant.</strong> Before sending anything, have your accountant review the response. An ICAEW qualified accountant can spot gaps or weak points that HMRC will exploit.</li>
+<li><strong>Review with your accountant.</strong> Before sending anything, have your accountant review the response. A qualified chartered accountant can spot gaps or weak points that HMRC will exploit.</li>
 </ol>
 
 <p>If your <a href="/r-and-d-credits">R&D tax credit claim</a> was prepared by a third-party agent, involve them in the response. HMRC will expect the agent to explain the methodology used.</p>

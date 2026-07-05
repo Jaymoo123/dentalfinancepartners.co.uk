@@ -65,7 +65,7 @@ faqs:
 <p>Here is what to look for:</p>
 
 <h3>Qualification and Regulation</h3>
-<p>The main UK accountancy bodies are ICAEW (Institute of Chartered Accountants in England and Wales), ACCA (Association of Chartered Certified Accountants), ICAS (Scotland), and AAT (Association of Accounting Technicians). ICAEW and ACCA are the gold standards for practice. AAT is a technical qualification, fine for bookkeeping but not sufficient for complex tax advice. Always check that the firm is regulated by one of these bodies. <a href="/about">We hold ourselves to those professional standards</a>, and take that responsibility seriously.</p>
+<p>The main UK accountancy bodies are ACCA (Association of Chartered Certified Accountants), ICAS (Scotland), and AAT (Association of Accounting Technicians). ACCA and ICAS are the gold standards for practice. AAT is a technical qualification, fine for bookkeeping but not sufficient for complex tax advice. Always check that the firm is regulated by one of these bodies. <a href="/about">We hold ourselves to those professional standards</a>, and take that responsibility seriously.</p>
 
 <h3>Industry Experience</h3>
 <p>A good small business accountant should have experience with businesses like yours. If you are a contractor in IT, look for an accountant who understands IR35, the off-payroll working rules, and the intricacies of a personal service company. If you run a retail business in Camden, look for someone who understands stock valuation, margin analysis, and the VAT implications of imports. If you are a sole trader electrician in Leeds, look for someone who knows the CIS scheme inside out.</p>

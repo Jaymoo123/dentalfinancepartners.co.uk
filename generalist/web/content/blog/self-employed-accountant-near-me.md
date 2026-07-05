@@ -24,12 +24,12 @@ faqs:
   - question: "What is the typical cost for a self employed accountant in 2025?"
     answer: "For a straightforward sole trader, expect £100 to £150 per month for a full-service package including bookkeeping software, self assessment filing, and ongoing advice. A basic annual return only costs £300 to £600. Fees vary by location and complexity. A freelance consultant with £120,000 turnover and VAT registration will pay more than a part-time sole trader earning £25,000."
   - question: "What should I ask when interviewing a self employed accountant?"
-    answer: "Ask how many self employed clients they work with, what software they use, how they handle HMRC enquiries, and whether they are registered with ICAEW or ACCA. Also ask for a fixed fee quote and whether professional indemnity insurance is in place. Listen for specific examples relevant to your business type, not vague promises."
+    answer: "Ask how many self employed clients they work with, what software they use, how they handle HMRC enquiries, and whether they are registered with the ACCA, AAT, or another recognised body. Also ask for a fixed fee quote and whether professional indemnity insurance is in place. Listen for specific examples relevant to your business type, not vague promises."
   - question: "Will an accountant save me more than they cost?"
     answer: "In most cases, yes. A good accountant identifies allowable expenses you miss, advises on pension contributions to reduce your tax bill, and keeps you compliant with HMRC. They also handle enquiries if HMRC challenges your return. The tax savings and time saved typically outweigh the fee. But this depends on choosing the right accountant for your situation."
 keyTakeaways:
   - "Under Making Tax Digital, self employed people with qualifying income over £50,000 must comply from April 2026, those over £30,000 from April 2027, and over £20,000 from April 2028."
-  - "\"Accountant\" is not a regulated UK term, so anyone can use it; look for ICAEW or ACCA registration, which requires exams, a code of conduct, and indemnity insurance."
+  - "\"Accountant\" is not a regulated UK term, so anyone can use it; look for ACCA or AAT registration, which requires exams, a code of conduct, and indemnity insurance."
   - "Class 2 National Insurance was abolished from 6 April 2024, so self employed people now pay only Class 4 NIC."
   - "The VAT registration threshold is £90,000 turnover; a good accountant flags when you approach it and advises whether to register voluntarily or wait."
   - "A sole trader under £50,000 turnover typically pays £100 to £150 per month for bookkeeping, tax filing, and year-end accounts; a basic annual return costs £300 to £600."
@@ -60,11 +60,11 @@ keyTakeaways:
 
 <p>Google will show you dozens of results when you search for a self employed accountant near me. Here is how to filter them effectively.</p>
 
-<h3>Look for ICAEW or ACCA Qualification</h3>
+<h3>Look for a Recognised Professional Qualification</h3>
 
-<p>Anyone can call themselves an accountant. That is not a regulated term in the UK. But ICAEW (Institute of Chartered Accountants in England and Wales) and ACCA (Association of Chartered Certified Accountants) are recognised professional bodies with strict standards. An ICAEW qualified accountant has passed rigorous exams and follows a professional code of conduct. They also carry mandatory professional indemnity insurance.</p>
+<p>Anyone can call themselves an accountant. That is not a regulated term in the UK. But recognised professional bodies such as the ACCA (Association of Chartered Certified Accountants) and AAT set strict standards. A qualified chartered accountant has passed rigorous exams and follows a professional code of conduct. They also carry mandatory professional indemnity insurance.</p>
 
-<p>When you see "ICAEW Chartered Accountant" on a firm's website, it means they are regulated, inspected, and accountable. That matters when your tax return is on the line.</p>
+<p>When you see "Chartered Accountant" or "ACCA" on a firm's website, it means they are regulated, inspected, and accountable. That matters when your tax return is on the line.</p>
 
 <h3>Check They Work with Self Employed Clients Specifically</h3>
 
@@ -89,7 +89,7 @@ keyTakeaways:
 <ul>
 <li><strong>They guarantee a specific tax refund before seeing your numbers.</strong> No ethical accountant does this. They can estimate likely savings, but a guarantee is a sales tactic.</li>
 <li><strong>They do not ask about your business.</strong> If the first meeting is all about their fees and nothing about your income, expenses, or goals, walk away.</li>
-<li><strong>They are not registered with a professional body.</strong> No ICAEW, ACCA, or AAT accreditation means no regulatory oversight. You have no comeback if they make a mistake.</li>
+<li><strong>They are not registered with a professional body.</strong> No ACCA or AAT accreditation means no regulatory oversight. You have no comeback if they make a mistake.</li>
 <li><strong>They promise to "save you thousands" with no explanation.</strong> Legitimate tax planning involves specific strategies like pension contributions, capital allowances, or loss relief. If they cannot explain how, they are selling hope, not advice.</li>
 <li><strong>They do not have professional indemnity insurance.</strong> This is non-negotiable. If they make an error on your return, you need to be covered.</li>
 </ul>
@@ -116,7 +116,7 @@ keyTakeaways:
 <li>"What software do you use, and is it included in your fee?"</li>
 <li>"How do you handle HMRC enquiries?"</li>
 <li>"What tax planning opportunities do you typically identify for someone in my line of work?"</li>
-<li>"Are you registered with ICAEW, ACCA, or another recognised body?"</li>
+<li>"Are you registered with the ACCA, AAT, or another recognised body?"</li>
 <li>"Do you have professional indemnity insurance?"</li>
 <li>"How often will we communicate during the year?"</li>
 <li>"Can you provide a fixed fee quote for the first year?"</li>

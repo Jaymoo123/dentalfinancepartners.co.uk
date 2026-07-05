@@ -24,14 +24,14 @@ faqs:
   - question: "What tax reliefs are available to UK charities?"
     answer: "Charities are exempt from corporation tax on most income used for charitable purposes. Gift Aid allows you to reclaim 25p per £1 donated from HMRC. Charities get mandatory 80% business rates relief (with discretionary top-up to 100%). VAT relief is available on certain goods like advertising and equipment for disabled people. Payroll giving lets employees donate from pre-tax pay. Each relief has specific conditions. A specialist charity accountant will help you claim all the reliefs you are entitled to."
   - question: "When does a charity need an audit instead of an independent examination?"
-    answer: "A full statutory audit is required when a charity's gross income exceeds £1 million or its gross assets exceed £3.26 million. Below that, an independent examination is required when income exceeds £500,000 (for accruals accounts) or £250,000 (for receipts and payments accounts). The independent examiner must be a member of a recognised professional body like ICAEW, ACCA, or CIPFA. The audit must be carried out by a registered auditor."
+    answer: "A full statutory audit is required when a charity's gross income exceeds £1 million or its gross assets exceed £3.26 million. Below that, an independent examination is required when income exceeds £500,000 (for accruals accounts) or £250,000 (for receipts and payments accounts). The independent examiner must be a member of a recognised professional body like ACCA or CIPFA. The audit must be carried out by a registered auditor."
   - question: "How much does a charity accountant cost in the UK?"
     answer: "Costs vary by size and complexity. Small charities with income under £25,000 might pay £500 to £1,000 per year for basic compliance. Medium charities with income between £250,000 and £1 million might pay £2,000 to £5,000 for full SORP accounts and independent examination. Large charities requiring a full audit will pay £5,000 to £15,000 or more. Most specialist charity accountants offer fixed fees for ongoing compliance work. Ask for a quote based on your specific circumstances."
 keyTakeaways:
   - "Charities with gross income exceeding £250,000 must prepare accounts under the Charities SORP, using a Statement of Financial Activities in place of a profit and loss account."
   - "Gift Aid allows charities to reclaim 25p for every £1 donated, so a £100 donation becomes £125 after the claim."
   - "A full statutory audit is required when a charity's gross income exceeds £1 million or its gross assets exceed £3.26 million."
-  - "An independent examination is required once income exceeds £500,000, and the examiner must be a member of a recognised professional body such as ICAEW, ACCA or CIPFA."
+  - "An independent examination is required once income exceeds £500,000, and the examiner must be a member of a recognised professional body such as ACCA or CIPFA."
   - "Charities receive mandatory 80% business rates relief, with discretionary top-up to 100% at the local authority's discretion."
   - "Most charities have 10 months from their year end to file accounts with the Charity Commission; late filing can trigger a Charity Commission inquiry."
 ---
@@ -70,7 +70,7 @@ keyTakeaways:
 
 <p>At £250,000 income, the SORP applies in full. The accounts must include a trustees' annual report, a SOFA, a balance sheet, and notes. The trustees are personally responsible for the accuracy of the accounts. If they are not accountants, they need professional support.</p>
 
-<p>At £500,000 income, an independent examination is required. The examiner must be a member of a recognised professional body (like ICAEW, ACCA, or CIPFA). Many charities use their existing accountant for this role. At £1 million income, a full audit is required. That means a registered auditor, not just an accountant. The audit can be costly, but it is a legal requirement.</p>
+<p>At £500,000 income, an independent examination is required. The examiner must be a member of a recognised professional body (like ACCA or CIPFA). Many charities use their existing accountant for this role. At £1 million income, a full audit is required. That means a registered auditor, not just an accountant. The audit can be costly, but it is a legal requirement.</p>
 
 <p>Even below these thresholds, there are good reasons to use a specialist. Gift Aid claims need to be accurate. HMRC can and does audit Gift Aid claims. If you claim on ineligible donations or fail to maintain the correct records, you could face a penalty and a repayment demand. A charity accountant will set up the correct donor records, issue the correct declarations, and submit the claims on time.</p>
 
@@ -80,7 +80,7 @@ keyTakeaways:
 
 <p>Not all accountants are the same. A general practice accountant may file your CT600 and your annual return, but they may not know the SORP inside out. They may not know the independent examination standards. They may not know the VAT partial exemption rules for charities.</p>
 
-<p>Look for an accountant who is a member of a recognised professional body (ICAEW, ACCA, CIPFA, or AAT). Check that they have experience with charities of a similar size and type to yours. Ask about their knowledge of the SORP, the Charity Commission filing requirements, and the tax reliefs available. Ask if they have handled Gift Aid audits. Ask if they have dealt with restricted fund accounting.</p>
+<p>Look for an accountant who is a member of a recognised professional body (ACCA, CIPFA, or AAT). Check that they have experience with charities of a similar size and type to yours. Ask about their knowledge of the SORP, the Charity Commission filing requirements, and the tax reliefs available. Ask if they have handled Gift Aid audits. Ask if they have dealt with restricted fund accounting.</p>
 
 <p>At Holloway Davies, our experienced team works with charities across the UK. We prepare accounts under the SORP, handle Gift Aid claims, manage independent examinations, and advise on tax reliefs. We are based in Manchester but work remotely with charities nationwide. You can read more about our <a href="/services">services for charities</a> or <a href="/contact">get in touch</a> for a no-obligation discussion.</p>
 

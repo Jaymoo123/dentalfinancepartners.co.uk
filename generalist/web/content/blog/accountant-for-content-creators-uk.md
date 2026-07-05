@@ -103,7 +103,7 @@ keyTakeaways:
 
 <p>As a limited company, you pay corporation tax at 19% on profits up to £50,000, then marginal relief up to £250,000, then 25% above that. You then pay yourself a salary up to the personal allowance (£12,570) and dividends from the remaining profits. From 6 April 2026 (2026/27), dividend tax rates are 10.75% (basic rate), 35.75% (higher rate) and 39.35% (additional rate, unchanged). The 2025/26 rates were 8.75% (basic) and 33.75% (higher). The total tax on company profits distributed as dividends is typically lower than income tax and NI on self-employed profits at the same level.</p>
 
-<p>For example, a creator making £80,000 profit as a sole trader pays roughly £21,000 in income tax and Class 4 NI in 2025/26. The same profit through a limited company, extracted as £12,570 salary and £67,430 dividends, costs roughly £16,500 in corporation tax and personal tax combined. That is a saving of around £4,500.</p>
+<p>For example, a creator making £80,000 profit as a sole trader in 2025/26 pays roughly £22,000 in income tax and Class 4 NI combined. Running the same profit through a limited company in 2025/26 and extracting a mix of salary up to the personal allowance and dividends from after-tax profits can produce a meaningful saving in combined corporation tax and dividend tax, though the exact amount depends on the corporation tax band that applies, how much profit is extracted and your total personal income from all sources. Your accountant should model your specific position.</p>
 
 <p>There are costs. A limited company needs annual accounts filed at Companies House, a confirmation statement, a corporation tax return (CT600) and payroll reporting. You need an accountant to handle these. The fees are typically higher than for a sole trader. But the tax saving usually outweighs the cost once profits exceed £50,000 to £60,000.</p>
 
@@ -125,7 +125,7 @@ keyTakeaways:
 <li><strong>Do they work with other creators?</strong> Ask for examples. A creator accountant will know the specific HMRC guidance on YouTube income, affiliate commissions and digital product VAT.</li>
 <li><strong>Do they use cloud accounting software?</strong> You need software that connects to your bank feed, PayPal, Stripe and your affiliate networks. Xero and FreeAgent are the most common choices. Avoid firms that still use desktop software and expect you to send them paper receipts.</li>
 <li><strong>Do they offer quarterly bookkeeping reviews?</strong> Year-end catch-ups are not enough for creators with multiple income streams. Quarterly reviews keep your VAT position, dividend planning and expense tracking on track.</li>
-<li><strong>Are they ICAEW qualified?</strong> ICAEW qualification means the firm follows strict professional standards and keeps up to date with changing tax law. It is a mark of reliability.</li>
+<li><strong>Are they qualified with a recognised professional body?</strong> Membership of a recognised professional body means the firm follows strict professional standards and keeps up to date with changing tax law. It is a mark of reliability.</li>
 <li><strong>Do they advise on structure?</strong> A good accountant will not just file your return. They will tell you whether you should be a limited company, when to register for VAT, how to pay yourself and whether you qualify for R&D tax credits if you develop your own software or tools.</li>
 </ul>
 

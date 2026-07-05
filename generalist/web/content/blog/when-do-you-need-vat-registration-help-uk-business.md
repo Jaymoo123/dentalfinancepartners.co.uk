@@ -66,7 +66,7 @@ keyTakeaways:
 
 <h2>Voluntary VAT Registration: When It Makes Sense</h2>
 
-<p>Around 40% of UK businesses that register for VAT do so voluntarily before hitting the threshold. The main reason is to reclaim input VAT on purchases.</p>
+<p>Many UK businesses register for VAT voluntarily before hitting the threshold. The main reason is to reclaim input VAT on purchases.</p>
 
 <p><strong>Example:</strong> A 4-employee software consultancy in Manchester turns over £420,000 and spends £60,000 on subcontractors, software licences, and equipment. At 20% VAT, that is £12,000 of input VAT they can reclaim each year. They register voluntarily at £85,000 turnover and reclaim that VAT from day one.</p>
 

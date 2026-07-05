@@ -54,7 +54,7 @@ keyTakeaways:
 
 <p>The cost of missing this deadline is not just the £100 initial penalty. If your return is more than three months late, you get an additional £10 per day up to a maximum of £900. After six months, it is another £300 or 5% of the tax due, whichever is greater. After twelve months, it is another £300 or 5% of the tax due.</p>
 
-<p>A sole trader with a £15,000 tax bill who files twelve months late faces penalties of £1,600 plus interest. That is money you could have kept by using an accountant to file on time.</p>
+<p>A sole trader with a £15,000 tax bill who files twelve months late faces penalties of £2,500 plus interest. That is money you could have kept by using an accountant to file on time.</p>
 
 <h2>2. The 31 July Payment on Account</h2>
 

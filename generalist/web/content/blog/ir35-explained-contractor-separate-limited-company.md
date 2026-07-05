@@ -83,7 +83,7 @@ keyTakeaways:
 <p>From your contractor Ltd (outside-IR35 contracts), you pay yourself a salary and dividends in the normal way. The salary is subject to PAYE and NI. Dividends come from post-tax profits.</p>
 <p>From your trading company, you do the same. But the combined picture matters for your personal tax position.</p>
 <p>Your personal allowance is £12,570 for 2025/26. If both companies pay you a salary, the total salary is added together. If you take £10,000 from the contractor Ltd and £10,000 from the café Ltd, that is £20,000 total salary. The first £12,570 is tax-free. The remaining £7,430 is taxed at 20% basic rate.</p>
-<p>Dividends from both companies are also combined. The £500 dividend allowance applies to your total dividend income across all sources, not per company. Dividends above £500 are taxed at 8.75% basic rate, 33.75% higher rate, or 39.35% additional rate depending on your total income.</p>
+<p>Dividends from both companies are also combined. The £500 dividend allowance applies to your total dividend income across all sources, not per company. Dividends above £500 are taxed at 10.75% basic rate, 35.75% higher rate, or 39.35% additional rate depending on your total income (2026/27 rates).</p>
 <p>This means you need to coordinate your pay strategy across both companies. Taking maximum dividends from both could push you into the higher rate tax band unnecessarily.</p>
 
 <h2>Should You Have One Company or Two?</h2>

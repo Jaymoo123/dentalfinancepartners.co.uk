@@ -76,7 +76,7 @@ keyTakeaways:
 
 <h3>Travel and Mileage</h3>
 
-<p>Travel to shoots, client meetings, and print fairs is deductible. Use HMRC's approved mileage rates: 45p per mile for the first 10,000 business miles, then 25p per mile. Keep a logbook. HMRC will ask for it if you are investigated.</p>
+<p>Travel to shoots, client meetings, and print fairs is deductible. Use HMRC's approved mileage rates: 55p per mile for the first 10,000 business miles, then 25p per mile (rates from 6 April 2026). Keep a logbook. HMRC will ask for it if you are investigated.</p>
 
 <p>Parking, congestion charges (London, Birmingham, Manchester, etc.), and tolls are also deductible. But not the cost of commuting from home to a permanent workplace. If you have a studio you work from daily, travel from home to that studio is commuting and not allowable.</p>
 

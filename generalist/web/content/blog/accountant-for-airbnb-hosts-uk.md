@@ -38,7 +38,7 @@ keyTakeaways:
 
 <h2>Why Airbnb Hosts Need a Specialist Accountant</h2>
 
-<p>Running an Airbnb in the UK is not the same as running a standard rental business. The tax treatment depends on whether your property is furnished holiday accommodation, a residential let, or a trading activity. HMRC looks at the level of services you provide, not just the fact you are letting a room.</p>
+<p>Running an Airbnb in the UK is not the same as running a standard rental business. The tax treatment depends on whether your property income is classified as a residential let or a trading activity. The Furnished Holiday Letting regime was abolished from 6 April 2025 and is no longer a live category. HMRC looks at the level of services you provide, not just the fact you are letting a room.</p>
 
 <p>A general accountant might miss the distinction between rental income and trading income. That distinction determines which reliefs you can claim, how you report your income, and how much tax you pay. An <strong>accountant for Airbnb hosts</strong> understands this boundary and can structure your affairs to keep more of your earnings.</p>
 

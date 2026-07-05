@@ -24,7 +24,7 @@ faqs:
   - question: "Does the director pay income tax on a written off loan?"
     answer: "Yes. The loan amount written off is treated as a benefit in kind. The director reports it on their self assessment (SA100) and pays income tax at their marginal rate (20%, 40%, or 45%). The company also pays Class 1A NIC at 15% on the amount and reports it on a P11D."
   - question: "Can I avoid the tax by declaring a dividend instead of writing off the loan?"
-    answer: "Yes, if the company has sufficient distributable reserves. Declaring a dividend equal to the loan amount converts the debt into a taxed distribution. The director pays dividend tax (8.75%, 33.75%, or 39.35%) instead of income tax and BIK charges. The company avoids S455. But the dividend must be properly documented and supported by reserves. You cannot backdate a dividend to cover an existing loan."
+    answer: "Yes, if the company has sufficient distributable reserves. Declaring a dividend equal to the loan amount converts the debt into a taxed distribution. The director pays dividend tax (10.75%, 35.75%, or 39.35%) instead of income tax and BIK charges. The company avoids S455. But the dividend must be properly documented and supported by reserves. You cannot backdate a dividend to cover an existing loan."
   - question: "What if the loan was written off in a previous year and not reported?"
     answer: "You need to make a disclosure to HMRC as soon as possible. HMRC can go back up to 6 years (20 years for deliberate non-disclosure) and assess the tax, interest, and penalties. Use the Digital Disclosure Service or write to your HMRC office. Unprompted disclosures attract lower penalties than prompted ones. Do not ignore it."
 keyTakeaways:
@@ -81,12 +81,12 @@ keyTakeaways:
 <ul>
 <li>Benefit in kind: £20,000 treated as earnings</li>
 <li>Income tax at 40% (assuming higher rate): £8,000</li>
-<li>Class 1 NIC (employer 15% and employee 2% on the BIK amount): roughly £3,400 combined (£3,000 employer at 15% plus £400 employee at 2%)</li>
+<li>Class 1A NIC (employer only, 15% on the BIK amount): £3,000 (BIK does not attract employee NIC)</li>
 <li>The director reports this on their self assessment (SA100) for 2025/26</li>
 <li>The company reports it on a P11D and pays employer NIC on the BIK</li>
 </ul>
 
-<p>Total tax triggered: roughly £18,150 on a £20,000 loan write off. That is an effective tax rate of over 90%. The director gets no cash. The company gets no deduction.</p>
+<p>Total tax triggered: roughly £17,750 on a £20,000 loan write off. That is an effective tax rate of nearly 89%. The director gets no cash. The company gets no deduction.</p>
 
 <h2>Does the Company Get a Corporation Tax Deduction for the Write Off?</h2>
 
@@ -139,9 +139,9 @@ keyTakeaways:
 
 <p>There are limited options to reduce the tax impact, but none that eliminate it entirely.</p>
 
-<p><strong>Repay the loan instead of writing it off.</strong> If the director can repay the loan from personal funds, the DLA clears without triggering S455 or BIK. The director then draws the money back as a dividend or salary in a later year, which is taxed at normal rates. This is often cheaper than the 90% effective rate on a write off.</p>
+<p><strong>Repay the loan instead of writing it off.</strong> If the director can repay the loan from personal funds, the DLA clears without triggering S455 or BIK. The director then draws the money back as a dividend or salary in a later year, which is taxed at normal rates. This is often cheaper than the nearly 89% effective rate on a write off.</p>
 
-<p><strong>Convert the loan to a dividend.</strong> If the company has sufficient distributable reserves, it can declare a dividend equal to the loan amount. The director pays dividend tax on that amount (8.75%, 33.75%, or 39.35% depending on their tax band). The company avoids S455. The director avoids the BIK. But the dividend must be properly documented and supported by distributable profits. You cannot backdate a dividend to cover an existing loan. The dividend must be declared before the loan is written off, or the company must have the reserves to support it at the time of the write off.</p>
+<p><strong>Convert the loan to a dividend.</strong> If the company has sufficient distributable reserves, it can declare a dividend equal to the loan amount. The director pays dividend tax on that amount (10.75%, 35.75%, or 39.35% depending on their tax band). The company avoids S455. The director avoids the BIK. But the dividend must be properly documented and supported by distributable profits. You cannot backdate a dividend to cover an existing loan. The dividend must be declared before the loan is written off, or the company must have the reserves to support it at the time of the write off.</p>
 
 <p><strong>Negotiate a repayment plan.</strong> If the director cannot repay in one lump sum, agree a formal repayment schedule with the company. Interest must be charged at HMRC's official rate (3.75% for 2025/26, from 6 April 2025) to avoid a benefit in kind. The loan stays on the balance sheet and reduces over time.</p>
 
@@ -166,6 +166,6 @@ keyTakeaways:
 <li>If you discover an unwritten write off from a prior year, disclose it to HMRC promptly</li>
 </ul>
 
-<p>If you are considering writing off a director's loan, run the numbers first. The <strong>director loan write off tax implications</strong> can turn a £20,000 debt into a £17,000 tax bill. In many cases, a different route works better. We help directors and companies plan these decisions before they become problems.</p>
+<p>If you are considering writing off a director's loan, run the numbers first. The <strong>director loan write off tax implications</strong> can turn a £20,000 debt into a £17,750 tax bill. In many cases, a different route works better. We help directors and companies plan these decisions before they become problems.</p>
 
 <p>For more on managing your company's finances, see our guides on <a href="/blog/director-pay-and-dividends">director pay and dividends</a> and <a href="/blog/corporation-tax">corporation tax planning</a>. If you need specific advice on your DLA, <a href="/contact">contact our team</a>.</p>

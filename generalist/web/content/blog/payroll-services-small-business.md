@@ -87,7 +87,7 @@ keyTakeaways:
 <li><strong>Pension auto-enrolment.</strong> The provider should handle your staging date, re-enrolment every three years, and contributions to the pension scheme. Many small business owners forget the re-enrolment duty and face fines from The Pensions Regulator.</li>
 <li><strong>Benefits in kind.</strong> If you provide company cars, private medical insurance, or gym memberships, the provider should either payroll these benefits or prepare the P11D forms.</li>
 <li><strong>Statutory payments.</strong> The provider should calculate SSP, SMP, SPP, and ShPP, and include the recoveries on your EPS.</li>
-<li><strong>Employment Allowance.</strong> If your employer NI bill is under £100,000 per year, you can claim the Employment Allowance (up to £10,500 from April 2025). The provider should claim this on your behalf.</li>
+<li><strong>Employment Allowance.</strong> Eligible employers can claim the Employment Allowance (up to £10,500 from April 2025). The prior-year NI bill cap of £100,000 was removed from 6 April 2025, so more businesses now qualify. The provider should claim this on your behalf.</li>
 <li><strong>Year-end processing.</strong> The provider should produce P60s, P11D(b), and the final EPS for the tax year.</li>
 <li><strong>Director payroll.</strong> If you are a director, the provider should understand the annual earnings period rules and the interaction between salary and dividends.</li>
 </ul>

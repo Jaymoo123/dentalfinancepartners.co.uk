@@ -60,7 +60,7 @@ keyTakeaways:
 <ul>
 <li>Residential landlords renting out one or more properties</li>
 <li>Commercial property landlords</li>
-<li>Landlords with furnished holiday lettings (note: the furnished holiday lettings tax regime was abolished from 6 April 2025; these properties are now taxed as ordinary property income)</li>
+<li>Properties formerly classified as furnished holiday lettings (the FHL regime was abolished from 6 April 2025; they are now taxed as ordinary property income and subject to the same MTD rules as any other rental property)</li>
 <li>Individuals who let property through a partnership (each partner's share counts toward their own threshold)</li>
 </ul>
 

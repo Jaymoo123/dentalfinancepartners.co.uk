@@ -124,7 +124,7 @@ keyTakeaways:
 
 <p>In practice, most businesses use the AIA first because it covers both main rate and special rate assets. Full Expensing only covers main rate assets. If you spend £1.2m on main rate assets, you use the AIA for the first £1m and Full Expensing for the remaining £200,000.</p>
 
-<p>From 1 January 2026, a further option is available to companies: a 40% first-year allowance on new and unused main-rate plant and machinery, introduced by FA 2026 s.29. This sits alongside AIA and Full Expensing as a third first-year relief route for companies, and may be useful where AIA headroom is already used and Full Expensing is unavailable on a particular asset category.</p>
+<p>From April 2026, a further option is available to companies: a 40% first-year allowance on new and unused main-rate plant and machinery, introduced by FA 2026 s.29. This sits alongside AIA and Full Expensing as a third first-year relief route for companies, and may be useful where AIA headroom is already used and Full Expensing is unavailable on a particular asset category.</p>
 
 <p>For sole traders and partnerships, the AIA is the only 100% relief option. Full Expensing and the 40% first-year allowance are not available to them.</p>
 

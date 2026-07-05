@@ -53,7 +53,7 @@ keyTakeaways:
 
 <h3>SDLT Surcharges and Multiple Dwellings Relief</h3>
 
-<p>Buying a second home or a buy-to-let property triggers an extra 3% SDLT surcharge on top of standard rates. Buying through a company triggers an extra 3% on top of that for properties over £40,000. If you are buying six flats in a single transaction, Multiple Dwellings Relief may reduce the SDLT bill significantly. If you are buying a mixed-use property (shop with a flat above), the residential surcharge may not apply at all.</p>
+<p>Buying a second home or a buy-to-let property triggers an extra 5% SDLT surcharge on top of standard rates (the additional-dwelling surcharge rose from 3% to 5% on 31 October 2024). Buying through a company triggers the same additional-dwelling surcharge for properties over £40,000. Multiple Dwellings Relief was abolished from 1 June 2024 and is no longer available. If you are buying a mixed-use property (shop with a flat above), the residential surcharge may not apply at all.</p>
 
 <p>These are not niche edge cases. They are everyday decisions for property investors in Manchester, Leeds, and Bristol. A general accountant who has never completed an SDLT return will not advise you on the optimal purchasing structure. A specialist will.</p>
 
@@ -79,7 +79,7 @@ keyTakeaways:
 
 <h3>Dividend Planning for Property Companies</h3>
 
-<p>Extracting profits from a property company requires careful dividend planning. The <strong>dividend allowance</strong> is £500 for 2025/26. Above that, you pay 8.75% basic rate, 33.75% higher rate, or 39.35% additional rate. If you have other income (salary, pension, trading profits), you need to calculate the optimal dividend amount to stay within the basic rate band.</p>
+<p>Extracting profits from a property company requires careful dividend planning. The <strong>dividend allowance</strong> is £500. Above that, you pay 10.75% basic rate, 35.75% higher rate, or 39.35% additional rate for 2026/27 (the basic and higher rates rose from 8.75% and 33.75% from 6 April 2026). If you have other income (salary, pension, trading profits), you need to calculate the optimal dividend amount to stay within the basic rate band.</p>
 
 <p>A specialist property accountant will model this for you. They will also advise on <strong>alphabet shares</strong> if you have a spouse or business partner, allowing you to pay different dividend rates to different shareholders. And they will flag the <strong>settlement legislation</strong> if you gift shares to a non-spouse to avoid income shifting rules.</p>
 
@@ -109,9 +109,9 @@ keyTakeaways:
 
 <ul>
 <li><strong>Do they file ATED returns?</strong> If they have never filed one, they cannot advise on high-value property structures.</li>
-<li><strong>Do they understand SDLT surcharges?</strong> Ask them to explain the 3% surcharge on second homes and the 3% company surcharge.</li>
+<li><strong>Do they understand SDLT surcharges?</strong> Ask them to explain the 5% additional-dwelling surcharge (which rose from 3% to 5% on 31 October 2024) and how it applies to companies.</li>
 <li><strong>Can they model the finance cost restriction?</strong> They should be able to show you the tax impact of holding a property personally versus in a company.</li>
-<li><strong>Do they know the furnished holiday letting rules?</strong> Ask them to list the three conditions for FHL treatment.</li>
+<li><strong>Do they know the FHL regime has gone?</strong> The furnished holiday letting regime was abolished from 6 April 2025. A specialist should be able to advise on the tax implications for former FHL properties and any planning steps that remain open.</li>
 <li><strong>Do they use property-specific software?</strong> Xero and FreeAgent are fine for standard bookkeeping. For property portfolios, look for tools like <strong>Hammock</strong> (for buy-to-let landlords) or <strong>Limeade</strong> (for portfolio management).</li>
 </ul>
 
@@ -121,7 +121,7 @@ keyTakeaways:
 
 <p>Here are real numbers from cases we have seen.</p>
 
-<p>A landlord in Leeds bought a second property through a limited company. The general accountant did not flag the 3% SDLT company surcharge. The SDLT bill was £18,400 instead of the expected £12,600. The landlord had not budgeted for the extra £5,800.</p>
+<p>A landlord in Leeds bought a second property through a limited company. The general accountant did not flag the additional-dwelling SDLT surcharge (3% at the time of this case; the surcharge has since risen to 5% from October 2024). The SDLT bill was £18,400 instead of the expected £12,600. The landlord had not budgeted for the extra £5,800.</p>
 
 <p>A property investor in Manchester sold a residential property and did not file the 60-day CGT return. HMRC charged interest of £340 and a late filing penalty of £100. The investor had the cash but missed the deadline because the accountant did not know the rule.</p>
 

@@ -131,7 +131,7 @@ keyTakeaways:
 <li>Choose your software. Sign up for a free trial of two or three options. Spend 30 minutes entering a month of transactions into each. Pick the one that feels natural.</li>
 <li>Set up bank feeds. Most software connects to your business bank account automatically. This saves hours of manual data entry.</li>
 <li>Start keeping digital records now. If you still use paper receipts, get a receipt scanning app like Dext. The habit of digitising immediately will save you stress when MTD goes live.</li>
-<li>Talk to your accountant. If you do not have one, find an ICAEW qualified firm that knows MTD. We handle the quarterly submissions for our clients so they do not have to think about it.</li>
+<li>Talk to your accountant. If you do not have one, find a qualified accountancy firm that knows MTD. We handle the quarterly submissions for our clients so they do not have to think about it.</li>
 </ol>
 
 <p>If your income is below the current threshold but likely to grow, consider voluntarily registering for MTD ITSA early. The software is the same. The quarterly habit is easier to build when you are not under pressure.</p>

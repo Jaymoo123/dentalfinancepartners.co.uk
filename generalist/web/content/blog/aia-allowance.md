@@ -44,7 +44,7 @@ keyTakeaways:
 
 <h2>How the AIA Allowance Works</h2>
 
-<p>The AIA allowance applies to most plant and machinery that a business buys for use in its trade. When you claim it, you reduce your taxable profits pound for pound. If your company buys a £50,000 piece of machinery and has £100,000 of taxable profit, the AIA brings that profit down to £50,000. You pay corporation tax on £50,000 instead of £100,000. At the 19% small profits rate, that saves you £9,500 in tax.</p>
+<p>The AIA allowance applies to most plant and machinery that a business buys for use in its trade. When you claim it, you reduce your taxable profits pound for pound. If your company buys a £50,000 piece of machinery and has £100,000 of taxable profit, the AIA brings that profit down to £50,000. At the 19% small profits rate you pay £9,500 on the remaining £50,000. Without the AIA, the full £100,000 sits in the marginal relief band and attracts a tax bill of approximately £22,750 (25% x £100,000, less the marginal relief fraction of (£250,000 - £100,000) x 3/200). The AIA saves around £13,250 in corporation tax in that year.</p>
 
 <p>The relief is automatic in most cases. Your accountant will include it in your capital allowances calculation when preparing your corporation tax return (CT600). You do not need to apply to HMRC in advance. You just need to make sure the asset qualifies and that you have not exceeded the annual limit.</p>
 
@@ -130,7 +130,7 @@ keyTakeaways:
 
 <p><strong>Third, missing the partial use restriction.</strong> If you use an asset 60% for business and 40% personally, the AIA only applies to the 60% business proportion. You must apportion the cost.</p>
 
-<p>These are easy to get wrong if you prepare your own return. An ICAEW qualified accountant will catch them as part of the normal review process.</p>
+<p>These are easy to get wrong if you prepare your own return. A qualified chartered accountant will catch them as part of the normal review process.</p>
 
 <h2>AIA and the Construction Industry</h2>
 

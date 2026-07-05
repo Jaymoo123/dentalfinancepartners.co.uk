@@ -29,7 +29,6 @@ sourceDomains:
 - fca.org.uk
 - gdc-uk.org
 - gov.uk
-- icaew.com
 imageCredit:
   photographer: Mathias Reding
   photographer_url: https://www.pexels.com/@matreding
@@ -180,7 +179,7 @@ For more guidance on your specific situation, explore our <a href="/services">fu
 <h2>Sources</h2>
 <ol>
   <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/claim-tax-refund" rel="noopener noreferrer">Check how to claim a tax refund - GOV.UK</a></li>
-  <li id="ref-2"><strong>icaew.com</strong>: <a href="https://www.icaew.com/insights/tax-news/2026/may-2026/new-tax-return-requirements-for-directors-cause-uncertainty" rel="noopener noreferrer">New tax return requirements for directors cause uncertainty | ICAEW</a></li>
+  <li id="ref-2"><a href="https://www.icaew.com/insights/tax-news/2026/may-2026/new-tax-return-requirements-for-directors-cause-uncertainty" rel="noopener noreferrer">New tax return requirements for directors cause uncertainty</a></li>
   <li id="ref-3"><strong>fca.org.uk</strong>: <a href="https://www.fca.org.uk/news/warnings/botleyfx-tax-refund" rel="noopener noreferrer">Botleyfx tax refund - FCA</a></li>
   <li id="ref-4"><strong>gdc-uk.org</strong>: <a href="https://www.gdc-uk.org/news-blogs/blog/detail/blogs/2023/10/04/tax-avoidance-don-t-get-caught-out" rel="noopener noreferrer">Tax avoidance: don't get caught out - General Dental Council</a></li>
   <li id="ref-5"><strong>acas.org.uk</strong>: <a href="https://www.acas.org.uk/deductions-from-pay-and-wages/handling-overpayments" rel="noopener noreferrer">Handling overpayments - Deductions from pay and wages - Acas</a></li>

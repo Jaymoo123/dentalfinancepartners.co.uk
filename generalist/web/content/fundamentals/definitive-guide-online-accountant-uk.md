@@ -25,7 +25,7 @@ faqs:
   - question: "Do I need to use specific accounting software with an online accountant?"
     answer: "Most online accountants UK firms support Xero, QuickBooks, FreeAgent, or Sage Accounting. Some use their own proprietary software. If you already use a platform, choose a firm that specialises in it. If you are starting fresh, ask for their recommendation. We recommend choosing a firm that uses an open platform like Xero or QuickBooks so you own your data and can switch firms easily if needed."
   - question: "What qualifications should my online accountant have?"
-    answer: "Your online accountant should be regulated by a recognised professional body, ICAEW, ACCA, AAT, or CIOT. These bodies require their members to follow strict ethical guidelines, maintain professional indemnity insurance, and complete continuing professional development. Anyone can call themselves an accountant in the UK, so always check their qualifications and regulatory status before engaging them."
+    answer: "Your online accountant should be regulated by a recognised professional body, ACCA, AAT, or CIOT. These bodies require their members to follow strict ethical guidelines, maintain professional indemnity insurance, and complete continuing professional development. Anyone can call themselves an accountant in the UK, so always check their qualifications and regulatory status before engaging them."
 ---
 
 <p>If you run a limited company, work as a sole trader, or operate through a partnership in the UK, you have likely asked yourself: <em>should I use an online accountant?</em> It is a fair question. The market has changed dramatically over the last decade. Traditional high-street firms still exist, but a growing number of business owners now choose an <strong>online accountant UK</strong> firm that works entirely through cloud software, email, and video calls.</p>
@@ -221,7 +221,7 @@ faqs:
 <li><strong>Get a full price schedule.</strong> Ask for a written breakdown of all fees, monthly, annual, and per-item. Include setup fees, software costs, and any charges for additional services.</li>
 <li><strong>Read the contract.</strong> How do you cancel? Is there a notice period? Do you own your data and software if you leave? Most online accountants UK firms use a 30-day rolling contract, but some lock you in for 12 months.</li>
 <li><strong>Test communication.</strong> Send an email or use the contact form. How long do they take to respond? Is the response helpful or generic? This is a good test of their service.</li>
-<li><strong>Ask about their team.</strong> Who will handle your account? Is it one person or a team? What are their qualifications? Are they ICAEW, ACCA, or AAT qualified?</li>
+<li><strong>Ask about their team.</strong> Who will handle your account? Is it one person or a team? What are their qualifications? Are they ACCA or AAT qualified?</li>
 <li><strong>Check reviews.</strong> Look at Trustpilot, Google Reviews, and industry forums. Ignore the five-star reviews that sound fake. Read the three-star and four-star reviews, they are usually the most honest.</li>
 <li><strong>Schedule a call.</strong> Most firms offer a free initial consultation. Use it. Ask specific questions about your business. If they cannot answer confidently, that is a red flag.</li>
 </ol>
@@ -239,7 +239,7 @@ faqs:
 <p>Some online accountants use proprietary software that you cannot take with you if you leave. If you sign up with a firm that uses its own platform, you lose all your bookkeeping data when you switch. Choose a firm that uses an open platform like Xero or QuickBooks, where you own your data.</p>
 
 <h3>Not Checking Qualifications</h3>
-<p>Anyone can call themselves an accountant. In the UK, the term is not regulated. Check that the firm is regulated by a recognised professional body, ICAEW, ACCA, AAT, or CIOT. If they are not, you have no protection if they make a mistake that costs you money or triggers an HMRC penalty.</p>
+<p>Anyone can call themselves an accountant. In the UK, the term is not regulated. Check that the firm is regulated by a recognised professional body, ACCA, AAT, or CIOT. If they are not, you have no protection if they make a mistake that costs you money or triggers an HMRC penalty.</p>
 
 <h3>Assuming All Online Accountants Are the Same</h3>
 <p>They are not. Some specialise in contractors. Some focus on property businesses. Some are generalists. Some are excellent at compliance but weak at advisory. Some are the opposite. Match the firm to your needs, not to the lowest price.</p>

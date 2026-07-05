@@ -152,7 +152,7 @@ keyTakeaways:
 <p>If you decide to outsource, here is what to look for:</p>
 
 <ul>
-<li><strong>ICAEW or ACCA qualified</strong>. That means they are regulated and carry professional indemnity insurance. If they make a mistake, you have recourse.</li>
+<li><strong>ACCA or a recognised professional qualification</strong>. That means they are regulated and carry professional indemnity insurance. If they make a mistake, you have recourse.</li>
 <li><strong>Uses modern software</strong>. They should use cloud-based payroll software that integrates with your bookkeeping. BrightPay, Xero Payroll, or Sage Payroll are standard. If they are still using spreadsheets, walk away.</li>
 <li><strong>Handles auto-enrolment</strong>. Pension duties are not optional. Your payroll accountant should manage enrolment, contributions, and re-enrolment cycles.</li>
 <li><strong>Offers P11D support</strong>. If anyone in your business has benefits in kind, you need P11Ds filed by 6 July each year. Not all payroll services include this.</li>

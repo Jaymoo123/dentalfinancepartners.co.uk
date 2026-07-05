@@ -86,7 +86,7 @@ keyTakeaways:
 <li>Do they know the VAT treatment of accommodation versus food versus conference facilities?</li>
 <li>Have they handled tronc and tips for hotel payroll?</li>
 <li>Do they use cloud accounting software that integrates with your property management system (PMS)?</li>
-<li>Are they ICAEW qualified? That means they are regulated and insured.</li>
+<li>Are they qualified with a recognised professional body such as ACCA or CIMA? That means they are regulated and insured.</li>
 </ul>
 <p>If the answer to any of these is no, keep looking. Your hotel is too important to trust to someone who does not understand it.</p>
 

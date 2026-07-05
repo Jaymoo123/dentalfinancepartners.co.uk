@@ -273,7 +273,7 @@ Corporation tax £16,125 plus dividend income tax £7,847 = <strong>£23,972</st
 <ul>
 <li><strong>Annual Investment Allowance:</strong> £1,000,000 per year (100% relief on most plant and machinery; both companies and unincorporated businesses; CAA 2001 s.38A/s.51A)</li>
 <li><strong>Main-rate writing-down allowance:</strong> 18% for accounting periods to 31 March 2026 (CT) / 5 April 2026 (IT), then reducing to <strong>14%</strong> from 1 April 2026 (CT) / 6 April 2026 (IT) per <a href="https://www.legislation.gov.uk/ukpga/2026/11/section/28" rel="noopener noreferrer">Finance Act 2026 s.28</a> (amending CAA 2001 s.56)</li>
-<li><strong>40% first-year allowance:</strong> new and unused main-rate plant and machinery incurred from 1 January 2026, per <a href="https://www.legislation.gov.uk/ukpga/2026/11/section/29" rel="noopener noreferrer">Finance Act 2026 s.29</a> (CAA 2001 ss.45U/45V)</li>
+<li><strong>40% first-year allowance:</strong> new and unused main-rate plant and machinery incurred from April 2026 (1 April 2026 for corporation tax; 6 April 2026 for income tax), per <a href="https://www.legislation.gov.uk/ukpga/2026/11/section/29" rel="noopener noreferrer">Finance Act 2026 s.29</a> (CAA 2001 ss.45U/45V)</li>
 <li><strong>Full expensing (companies only):</strong> 100% FYA on new main-rate plant; 50% FYA on new special-rate plant</li>
 <li><strong>Special-rate pool WDA:</strong> 6% (integral features, long-life assets; unchanged)</li>
 <li><strong>Structures and Buildings Allowance:</strong> 3% per year on qualifying construction cost</li>

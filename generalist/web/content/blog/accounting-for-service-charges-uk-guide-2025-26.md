@@ -27,7 +27,7 @@ faqs:
   answer: Yes, if the property is used for your trade and the charge is wholly and exclusively for business purposes. Deduct the cost in the period the service relates to, using the accrual basis. If you pay in advance, record a prepayment and deduct it later.
 - question: What happens if I incorrectly treat service charges as exempt from VAT?
   answer: HMRC can assess you for the underpaid VAT plus interest and penalties. If you have been undercharging VAT, you may need to issue corrective invoices to tenants. If you have been over recovering input VAT, you will need to repay it. Speak to an accountant promptly to regularise the position.
-metaTitle_prev: Accounting for Service Charges UK Guide 2025/26 | ICAEW
+metaTitle_prev: Accounting for Service Charges UK Guide 2025/26
 metaDescription_prev: How to account for service charges correctly as a UK business. Covers VAT, corporation tax, leaseholder rules, and common mistakes. Practical guide
 dateModified: '2026-06-12'
 reviewedBy: Holloway Davies Editorial Team

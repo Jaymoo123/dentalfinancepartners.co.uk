@@ -91,13 +91,13 @@ keyTakeaways:
 <li>Advise on the Employment Allowance (up to £10,500 off your employer NI bill)</li>
 </ul>
 
-<p>The Employment Allowance is often missed by plumbing businesses that employ staff. You can claim it if your employer NI bill was under £100,000 in the previous tax year. It's a direct saving on your payroll costs.</p>
+<p>The Employment Allowance is often missed by plumbing businesses that employ staff. You can claim it if you employ people (the old £100,000 prior-year NIC eligibility cap was removed from 6 April 2025). It's a direct saving on your payroll costs.</p>
 
 <h3>Business Structure: Sole Trader vs Limited Company</h3>
 
 <p>Most plumbers start as sole traders. It's simple to set up and you don't need to file company accounts at Companies House. But as your income grows, a limited company structure often saves tax.</p>
 
-<p>Here's a real comparison. A plumber in Leeds earning £80,000 profit as a sole trader in 2025/26 pays roughly £20,400 in income tax and Class 4 NI combined. The same plumber operating through a limited company could take a £12,570 salary (deductible from company profit), leaving £67,430 as the taxable company profit. The 19% small-profits rate applies only to profits up to £50,000; £67,430 sits in the marginal-relief band, so CT = 25% x £67,430 minus (£250,000 minus £67,430) x 3/200 = approximately £14,119 (effective rate around 20.9%), leaving roughly £53,300 post-tax to distribute as dividends. Dividend tax at 2025/26 rates (8.75% basic, 33.75% higher) on those dividends adds approximately £8,500 in personal tax. Combined total tax (CT plus personal dividend tax) comes to roughly £22,600. At this profit level the difference versus the sole trader route is narrow and turns on individual factors such as employer NI costs and pension contributions; the limited company structure tends to show a more pronounced advantage at higher profit levels.</p>
+<p>Here's a real comparison. A plumber in Leeds earning £80,000 profit as a sole trader in 2025/26 pays roughly £20,400 in income tax and Class 4 NI combined. The same plumber operating through a limited company could take a £12,570 salary (deductible from company profit), leaving £67,430 as the taxable company profit. The 19% small-profits rate applies only to profits up to £50,000; £67,430 sits in the marginal-relief band, so CT = 25% x £67,430 minus (£250,000 minus £67,430) x 3/200 = approximately £14,119 (effective rate around 20.9%), leaving roughly £53,300 post-tax to distribute as dividends. Dividend tax at 2025/26 rates (8.75% basic, 33.75% higher) on those dividends adds approximately £8,500 in personal tax. (From 2026/27 the rates rise to 10.75% basic and 35.75% higher, which increases the personal dividend tax in this example.) Combined total tax (CT plus personal dividend tax) comes to roughly £22,600. At this profit level the difference versus the sole trader route is narrow and turns on individual factors such as employer NI costs and pension contributions; the limited company structure tends to show a more pronounced advantage at higher profit levels.</p>
 
 <p>An accountant for plumbers will model both structures for you and recommend which one fits your situation. They'll also handle the incorporation process if you decide to switch.</p>
 
@@ -135,7 +135,7 @@ keyTakeaways:
 
 <p>Look for an accountant who:</p>
 <ul>
-<li>Is ICAEW, ACCA, or AAT qualified (check their register)</li>
+<li>Is ACCA or AAT qualified (check their register)</li>
 <li>Has experience with CIS and can show you examples of how they've helped other plumbing businesses</li>
 <li>Uses cloud accounting software you can access from your phone (Xero or FreeAgent are common)</li>
 <li>Offers fixed fees so you know what you're paying each month</li>
@@ -158,7 +158,7 @@ keyTakeaways:
 
 <h2>Common Mistakes Plumbers Make with Their Accounts</h2>
 
-<p><strong>Mixing personal and business spending.</strong> If you run a limited company, HMRC treats personal expenses paid from the business account as director's loans. If the loan exceeds £10,000, it's a benefit in kind. If it's not repaid within 9 months of year end, the company pays 33.75% S455 tax on it.</p>
+<p><strong>Mixing personal and business spending.</strong> If you run a limited company, HMRC treats personal expenses paid from the business account as director's loans. If the loan exceeds £10,000, it's a benefit in kind. If it's not repaid within 9 months of year end, the company pays 33.75% S455 tax on it (2025/26 rate; 35.75% applies to loans taken on or after 6 April 2026).</p>
 
 <p><strong>Not tracking CIS deductions properly.</strong> HMRC often shows different figures to what contractors report. You need to reconcile your CIS deductions against your own records before filing your return. A good accountant for plumbers does this as standard.</p>
 

@@ -46,7 +46,7 @@ keyTakeaways:
 ---
 <p>If you own or lease a commercial property, you could be missing out on significant tax relief. Capital allowances on property let you deduct the cost of certain fixtures, fittings, and building features from your taxable profits. The rules are detailed, but the savings can be substantial.</p>
 
-<p>This guide covers what qualifies, how to calculate your claim, and the common pitfalls to avoid. We deal with these claims regularly for clients across the UK, from a Manchester software consultancy with a converted warehouse office to a Bristol landlord with a portfolio of holiday lets.</p>
+<p>This guide covers what qualifies, how to calculate your claim, and the common pitfalls to avoid. We deal with these claims regularly for clients across the UK, from a Manchester software consultancy with a converted warehouse office to a Bristol commercial landlord refitting a portfolio of serviced offices.</p>
 
 <h2>What Are Capital Allowances on Property?</h2>
 

@@ -71,7 +71,7 @@ keyTakeaways:
 <li><strong>Gift Aid expertise.</strong> Do they know the claim process, the record-keeping requirements, and the HMRC deadlines?</li>
 <li><strong>Clergy payroll knowledge.</strong> Do they understand the housing allowance and the specific tax rules for ministers?</li>
 <li><strong>Charity Commission filing.</strong> Do they handle the annual return and the trustees' annual report?</li>
-<li><strong>ICAEW qualification.</strong> Look for an ICAEW qualified firm. This ensures they follow the highest professional standards.</li>
+<li><strong>Professional qualification.</strong> Look for a firm regulated by a recognised professional body. This ensures they follow the highest professional standards.</li>
 </ul>
 
 <p>At Holloway Davies, our <a href="/about">specialist team</a> has specific experience with church finances, Gift Aid claims, clergy payroll, and Charity Commission filing. We are not a general practice firm trying to fit church work into a standard template.</p>

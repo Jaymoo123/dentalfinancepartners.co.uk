@@ -26,7 +26,7 @@ faqs:
   - question: "How much does a bookkeeper cost per month in the UK?"
     answer: "For a typical limited company with modest transaction volumes, expect to pay £150 to £400 per month for bookkeeping. Hourly rates range from £20 to £45. Some bookkeepers charge per transaction. Always ask for a fixed monthly quote based on your expected volume so there are no surprises."
   - question: "What qualifications should my accountant have?"
-    answer: "Look for ACA (ICAEW), ACCA, or CIMA qualifications. These are the main chartered accountancy bodies in the UK. A qualified accountant must follow ethical guidelines, carry professional indemnity insurance, and keep their knowledge current. If they are not qualified with one of these bodies, ask why. Some excellent accountants are also AAT qualified or hold a licence from HMRC to file tax returns directly."
+    answer: "Look for ACA, ACCA, or CIMA qualifications. These are the main chartered accountancy bodies in the UK. A qualified accountant must follow ethical guidelines, carry professional indemnity insurance, and keep their knowledge current. If they are not qualified with one of these bodies, ask why. Some excellent accountants are also AAT qualified or hold a licence from HMRC to file tax returns directly."
 keyTakeaways:
   - "Bookkeepers record daily transactions and reconcile bank accounts; accountants file statutory returns such as the CT600 and provide strategic tax advice."
   - "Only a qualified accountant or licensed tax agent can file a CT600 corporation tax return with HMRC; a bookkeeper offering to do so is operating outside their competence."
@@ -106,7 +106,7 @@ keyTakeaways:
 
 <p>But if your business is complex, you benefit from separation. A bookkeeper who specialises in your sector can keep your records cleaner than a generalist accountant who only looks at them once a year. And an accountant who is not bogged down in data entry can focus on the strategic questions that actually save you tax.</p>
 
-<p>For example, a 4-employee software consultancy in Manchester turning over £420,000 might use a part-time bookkeeper for 10 hours a month and an ICAEW chartered accountant for year-end and quarterly reviews. The bookkeeper costs £25 to £35 per hour. The accountant costs £100 to £200 per hour but works far fewer hours. Total cost: around £500 per month for both. That is cheaper than hiring an in-house finance person and more effective than doing it yourself.</p>
+<p>For example, a 4-employee software consultancy in Manchester turning over £420,000 might use a part-time bookkeeper for 10 hours a month and a qualified chartered accountant for year-end and quarterly reviews. The bookkeeper costs £25 to £35 per hour. The accountant costs £100 to £200 per hour but works far fewer hours. Total cost: around £500 per month for both. That is cheaper than hiring an in-house finance person and more effective than doing it yourself.</p>
 
 <h2>How Much Does Each Cost in the UK?</h2>
 

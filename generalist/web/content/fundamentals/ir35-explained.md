@@ -148,7 +148,7 @@ faqs:
 
 <p>Conversely, if your working practices genuinely support self-employment but your contract is poorly drafted, you may still be challenged. The ideal scenario is a contract that accurately reflects your working practices, and working practices that clearly demonstrate self-employment.</p>
 
-<p>A proper IR35 review involves reading the contract alongside a detailed questionnaire about how you actually work. An ICAEW qualified accountant or a specialist IR35 solicitor can help with this. We do this regularly for contractors based in Birmingham's Digbeth, Bristol's Harbourside, and Leeds city centre.</p>
+<p>A proper IR35 review involves reading the contract alongside a detailed questionnaire about how you actually work. A qualified chartered accountant or a specialist IR35 solicitor can help with this. We do this regularly for contractors based in Birmingham's Digbeth, Bristol's Harbourside, and Leeds city centre.</p>
 
 <h3>Common Contract Clauses That Trigger IR35</h3>
 
@@ -308,7 +308,7 @@ faqs:
 
 <p>If you have been inside IR35 for the entire life of your company, HMRC may argue that you were not genuinely trading, and therefore BADR does not apply. This is a complex area. If you are planning to close your company and claim BADR, you need to show that your company was a genuine business, not just a vehicle for disguised employment.</p>
 
-<p>Having some outside IR35 contracts, or other business activities, strengthens your BADR claim. If you have been inside IR35 exclusively, speak to an ICAEW qualified accountant before making any disposal. The tax difference between BADR and the main CGT rate is significant: 14% vs 24% for higher rate taxpayers.</p>
+<p>Having some outside IR35 contracts, or other business activities, strengthens your BADR claim. If you have been inside IR35 exclusively, speak to a qualified chartered accountant before making any disposal. The tax difference between BADR and the main CGT rate is significant: 14% vs 24% for higher rate taxpayers.</p>
 
 <h3>Closing Your Company After IR35</h3>
 

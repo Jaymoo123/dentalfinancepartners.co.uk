@@ -154,7 +154,7 @@ keyTakeaways:
 <li>Choose a company name. Check it is available on Companies House.</li>
 <li>Find a UK registered office address. Use a service if needed.</li>
 <li>Prepare the incorporation documents: Memorandum of Association, Articles of Association, and Form IN01.</li>
-<li>File online with Companies House. The fee is £50 (or £12 for same-day service if you file by web incorporation).</li>
+<li>File online with Companies House. The fee is £50.</li>
 <li>Receive your Certificate of Incorporation. This confirms the company number and date of incorporation.</li>
 <li>Register for Corporation Tax with HMRC. You will receive a CT41G form by post to your registered office address.</li>
 <li>Open a UK business bank account (see the challenges above).</li>

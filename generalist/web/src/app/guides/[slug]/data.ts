@@ -353,7 +353,7 @@ export const GUIDES: Record<string, Guide> = {
 </ol>
 
 <h3>Check their credentials</h3>
-<p>Verify that the firm is registered with a recognised body (ICAEW, ACCA, or AAT). Check their FCA registration if they offer any investment advice. Look for reviews on Google and Trustpilot, but also ask for client references you can call.</p>
+<p>Verify that the firm is registered with a recognised body (ACCA or AAT). Check their FCA registration if they offer any investment advice. Look for reviews on Google and Trustpilot, but also ask for client references you can call.</p>
 
 <h2>Week 2: Initiate the Switch</h2>
 <h3>Send the professional clearance letter</h3>

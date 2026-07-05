@@ -24,14 +24,14 @@ faqs:
   - question: "How much does an accounting bookkeeping service cost per month?"
     answer: "For a sole trader, expect £50 to £150 per month. For a limited company, £100 to £600 per month depending on scope. Higher turnover or complex businesses may pay £500 to £1,500+ per month. Always ask for a detailed scope of work. The cheapest option often excludes year-end accounts or HMRC correspondence."
   - question: "Do I need an accounting bookkeeping service if I use accounting software?"
-    answer: "Software records transactions, but it does not ensure they are correct, complete, or HMRC compliant. A service reviews your software data,"
+    answer: "Software records transactions, but it does not ensure they are correct, complete, or HMRC compliant. A service reviews your software data, corrects categorisation errors, and ensures your records are accurate and HMRC compliant throughout the year."
 keyTakeaways:
   - "From April 2026, MTD for Income Tax makes digital record keeping mandatory for sole traders with qualifying income over £50,000."
   - "An overdrawn director's loan unpaid 9 months and 1 day after year-end triggers S455 tax of 33.75% in 2025/26, rising to 35.75% for loans from 6 April 2026."
   - "Corporation tax is due 9 months and 1 day after the company year-end; self assessment income tax falls due on 31 January."
   - "Monthly fees for sole trader bookkeeping typically range from £50 to £150; a limited company full service costs £200 to £600 per month in 2025/26."
   - "Accounting and bookkeeping fees are usually tax deductible, reducing a limited company's corporation tax liability or a sole trader's income tax bill."
-  - "Providers should hold ICAEW, ACCA, CIMA, or AAT qualification and carry professional indemnity insurance, giving you recourse if something goes wrong."
+  - "Providers should hold ACCA, CIMA, or AAT qualification and carry professional indemnity insurance, giving you recourse if something goes wrong."
 ---
 
 <p>If you run a UK business, you have likely seen the phrase "accounting bookkeeping service" and wondered what it actually covers. Is it just data entry? Does it replace your accountant? Will it save you money or just add another monthly cost?</p>
@@ -125,7 +125,7 @@ keyTakeaways:
 <p>Not all services are equal. Here is what to look for.</p>
 
 <h3>Qualification and Regulation</h3>
-<p>The provider should be qualified and regulated. ICAEW, ACCA, CIMA, or AAT are the main UK accountancy bodies. We recommend checking that the firm holds professional indemnity insurance and is registered with a recognised supervisory body. This protects you if something goes wrong.</p>
+<p>The provider should be qualified and regulated. ACCA, CIMA, or AAT are the main UK accountancy bodies. We recommend checking that the firm holds professional indemnity insurance and is registered with a recognised supervisory body. This protects you if something goes wrong.</p>
 
 <p>If the service includes payroll or VAT, the provider should be registered with HMRC as an agent. You can check this on the HMRC agent register.</p>
 

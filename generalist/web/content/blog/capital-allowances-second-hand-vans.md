@@ -128,7 +128,7 @@ keyTakeaways:
 
 <p><strong>Forgetting the AIA.</strong> Many business owners claim writing down allowances when they could claim 100% relief through the AIA. If you have AIA available, use it on the van.</p>
 
-<p><strong>Not keeping records.</strong> You need the purchase invoice, the CO2 emissions certificate, and a mileage log if there is any private use. Without these, your claim is vulnerable.</p>
+<p><strong>Not keeping records.</strong> You need the purchase invoice and a mileage log if there is any private use. Unlike cars, vans do not require a CO2 certificate for capital allowances. Without adequate records, your claim is vulnerable.</p>
 
 <p><strong>Claiming on a car disguised as a van.</strong> Some vehicles marketed as vans are actually cars for tax purposes. The key test is the design weight and the primary purpose. A vehicle with rear seats and windows that is clearly designed for passengers is a car, not a van.</p>
 

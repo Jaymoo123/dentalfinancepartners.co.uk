@@ -137,7 +137,7 @@ keyTakeaways:
 
 <p>Third, ask about employment status. They should be able to explain the difference between employed, self-employed, and CIS subcontractor status and the risks of getting it wrong. If they downplay the risk, walk away. HMRC is actively auditing construction businesses on this issue.</p>
 
-<p>Fourth, check they are ICAEW, ACCA, or AAT qualified. That gives you professional indemnity insurance and a complaints process if something goes wrong. At Holloway Davies, we specialise in construction businesses and work to the same high professional standards.</p>
+<p>Fourth, check they are ACCA or AAT qualified. That gives you professional indemnity insurance and a complaints process if something goes wrong. At Holloway Davies, we specialise in construction businesses and work to the same high professional standards.</p>
 
 <p>Finally, ask about software. A modern accountant for builders uses cloud software like Xero, QuickBooks, or FreeAgent. They should offer to set up your bookkeeping and connect it to their system so they can see your numbers in real time. If they still use paper spreadsheets or desktop Sage 50, you will struggle with MTD.</p>
 

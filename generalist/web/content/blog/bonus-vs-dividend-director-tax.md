@@ -22,7 +22,7 @@ faqs:
   - question: "Is a bonus always better than a dividend for a higher rate taxpayer?"
     answer: "No, but it often is. The bonus route benefits from a corporation tax deduction that the dividend route does not. When your company pays 25% corporation tax, that deduction is worth 25p per £1 of bonus. For a higher rate taxpayer, the bonus typically leaves more take-home pay. But the exact comparison depends on your company's profit level, your personal tax band, and whether you can claim Employment Allowance."
   - question: "Can I take both a bonus and a dividend in the same year?"
-    answer: "Yes, you can. Many directors take a small salary (typically £12,570) to use their personal allowance, then take some profit as a bonus and the rest as a dividend. The optimal mix depends on your specific tax position. A common strategy is to take enough bonus to use the basic rate band, then take the rest as dividends. This keeps the dividend tax at 8.75% rather than 33.75%."
+    answer: "Yes, you can. Many directors take a small salary (typically £12,570) to use their personal allowance, then take some profit as a bonus and the rest as a dividend. The optimal mix depends on your specific tax position. A common strategy is to take enough bonus to use the basic rate band, then take the rest as dividends. This keeps the dividend tax at 8.75% rather than 33.75% (2025/26 rates)."
   - question: "Does taking a bonus affect my state pension?"
     answer: "Yes, it can. Bonus payments count as earnings for National Insurance purposes. If your total earnings for the year are above the lower earnings limit (£6,500 for 2025/26), you build up qualifying years for the state pension. Taking a bonus can help you reach the 35 qualifying years needed for the full state pension. Dividends do not count as earnings for state pension purposes."
   - question: "What happens if my company cannot afford the employer NI on a bonus?"
@@ -36,7 +36,7 @@ keyTakeaways:
   - "A bonus accrued in the company accounts must be paid within 9 months of the year-end to secure the corporation tax deduction in that accounting year."
 ---
 
-<p>If you are a director of a UK limited company, you have two main ways to extract profit: salary (or bonus) and dividends. The standard advice has long been to take a small salary up to the National Insurance threshold and take the rest as dividends. But dividend tax rates have risen significantly. The dividend allowance dropped to £500 from April 2024, and the tax rates themselves are now 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate).</p>
+<p>If you are a director of a UK limited company, you have two main ways to extract profit: salary (or bonus) and dividends. The standard advice has long been to take a small salary up to the National Insurance threshold and take the rest as dividends. But dividend tax rates have risen significantly. The dividend allowance dropped to £500 from April 2024, and the tax rates for 2025/26 are 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate).</p>
 
 <p>That has more directors asking whether a bonus might actually be cheaper. The question is not straightforward. You need to compare the total tax cost on both sides of the transaction: the company's corporation tax deduction versus the personal tax and National Insurance on the bonus, and the corporation tax paid on retained profits versus the dividend tax on the distribution.</p>
 

@@ -174,7 +174,7 @@ keyTakeaways:
 
 <p>If you are interested in a management accounting service, the first step is a discovery conversation with your accountant. They will review your business structure, your accounting software, and your reporting needs. They will agree a reporting schedule, a set of KPIs, and a budget.</p>
 
-<p>You do not need to switch accountants to get management accounts. Many compliance-focused firms now offer management accounting as an add-on service. If your current accountant does not offer it, ask for a referral or look for an ICAEW qualified firm that specialises in advisory work.</p>
+<p>You do not need to switch accountants to get management accounts. Many compliance-focused firms now offer management accounting as an add-on service. If your current accountant does not offer it, ask for a referral or look for a qualified accountancy firm that specialises in advisory work.</p>
 
 <p>For UK businesses operating across sectors, from ecommerce in Digbeth to consultancies in MediaCity, management accounts are the single most impactful investment you can make in your financial infrastructure. They turn accounting from a backward-looking compliance cost into a forward-looking strategic asset.</p>
 

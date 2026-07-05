@@ -158,7 +158,7 @@ keyTakeaways:
 <li>Do you have experience with SEIS and EIS advance assurance applications? Ask how many they have submitted.</li>
 <li>What accounting software do you recommend for tech startups? If they say Sage 50 without hesitation, that is a red flag for a modern tech business. Xero and FreeAgent are the standard choices.</li>
 <li>Do you produce monthly management accounts? If they only do year-end accounts, they are not a tech startup accountant.</li>
-<li>Are you ICAEW qualified? This matters for credibility with investors and for the technical depth required for complex tax work.</li>
+<li>Do you hold a recognised professional qualification, such as ACCA or CIMA? This matters for credibility with investors and for the technical depth required for complex tax work.</li>
 </ul>
 
 <p>At Holloway Davies, our experienced team works with tech startups across the UK. We handle R&D credits, SEIS/EIS compliance, management accounts, and all the day-to-day compliance. If you are a tech founder looking for an <strong>accountant for tech startups</strong> who understands your business, <a href="/contact">get in touch</a>.</p>

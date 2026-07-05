@@ -17,8 +17,8 @@ faqs:
 - question: Can I claim mortgage interest as an expense if I own my BTL property personally?
   answer: Not as a direct deduction from rental income. Since April 2020, individual landlords receive a 20% tax credit on mortgage interest instead. That means you pay tax on your full rental income, then reduce your tax bill by 20% of the interest paid. For basic rate taxpayers the result is neutral. For higher and additional rate taxpayers, it creates a higher tax bill than under the old rules. Limited companies can still deduct mortgage interest as a trading expense.
 - question: Is it worth transferring my BTL properties into a limited company?
-  answer: It depends on your circumstances. The main benefit is that companies can deduct mortgage interest in full, saving significant tax for higher rate taxpayers with large mortgages. The costs include stamp duty land tax on the transfer (3% surcharge), capital gains tax on deemed disposal, and ongoing company admin costs. For a portfolio with mortgage interest above £10,000 per year, incorporation often pays back within three to five years. For a single property with a small mortgage, it rarely makes sense. Get a personalised calculation before deciding.
-- question: What are the CGT rates for selling a BTL property in 2025/26?
+  answer: It depends on your circumstances. The main benefit is that companies can deduct mortgage interest in full, saving significant tax for higher rate taxpayers with large mortgages. The costs include stamp duty land tax on the transfer (5% surcharge), capital gains tax on deemed disposal, and ongoing company admin costs. For a portfolio with mortgage interest above £10,000 per year, incorporation often pays back within three to five years. For a single property with a small mortgage, it rarely makes sense. Get a personalised calculation before deciding.
+- question: What are the CGT rates for selling a BTL property in 2026/27?
   answer: For residential property, the CGT rates are 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply from 30 October 2024. You must report the gain to HMRC within 60 days of completion using the 60-day CGT property return. The annual exempt amount is £3,000 for individuals. Companies pay corporation tax on gains at 19% to 25%, but have no annual exempt amount.
 - question: Do I need to register for Making Tax Digital as a landlord?
   answer: From April 2026, MTD for ITSA is mandatory if your total qualifying income (including rental income) exceeds £50,000. From April 2027, the threshold drops to £30,000. From April 2028, it drops to £20,000. You will need to keep digital records and submit quarterly updates to HMRC using compatible software. If you hold properties through a limited company, the company is not within MTD for ITSA, but your personal dividend income may push you over the threshold.
@@ -45,7 +45,7 @@ keyTakeaways:
 
 <p>We work with landlords across the UK. From a single flat in Manchester's Northern Quarter to a portfolio of ten houses in Birmingham's Jewellery Quarter. The questions are always the same. Should I incorporate? How do I handle my BTL mortgage interest? What happens when I sell?</p>
 
-<p>This article gives you the answers. It is not generic advice. It is specific, practical, and grounded in the current tax rules for 2025/26.</p>
+<p>This article gives you the answers. It is not generic advice. It is specific, practical, and grounded in the current tax rules for 2026/27.</p>
 
 <h2>The Mortgage Interest Restriction: What It Means for You</h2>
 
@@ -81,13 +81,13 @@ keyTakeaways:
 <li>Total tax: £5,320</li>
 </ul>
 
-<p>The difference is £10,680 per year. That is before you take dividends out of the company. Dividends attract further tax at your personal rate (8.75% basic, 33.75% higher, 39.35% additional). But even after dividend tax, the company structure often wins for higher rate taxpayers with significant mortgage interest.</p>
+<p>The difference is £10,680 per year. That is before you take dividends out of the company. Dividends attract further tax at your personal rate (10.75% basic, 35.75% higher, 39.35% additional). But even after dividend tax, the company structure often wins for higher rate taxpayers with significant mortgage interest.</p>
 
 <p>There are costs to running a limited company. Annual accounts, a confirmation statement, corporation tax returns, and payroll if you take a salary. But for portfolios with meaningful mortgage interest, the tax saving usually outweighs the admin cost.</p>
 
 <h2>When Incorporation Does Not Make Sense</h2>
 
-<p>Incorporation is not always the right answer. If you own one property with a small mortgage or no mortgage, the benefit is smaller. You also face stamp duty land tax when transferring properties into a company. That is a 3% surcharge on top of the normal rates for additional dwellings. On a £200,000 property, that is £6,000 in SDLT alone.</p>
+<p>Incorporation is not always the right answer. If you own one property with a small mortgage or no mortgage, the benefit is smaller. You also face stamp duty land tax when transferring properties into a company. That is a 5% surcharge on top of the normal rates for additional dwellings, a rate that has applied since 31 October 2024. On a £200,000 property, that is £10,000 in SDLT alone.</p>
 
 <p>Capital gains tax also applies on the transfer. You are deemed to sell the property at market value when you transfer it to your company. That triggers a CGT charge. For a property that has grown significantly in value, that can be a large bill.</p>
 
@@ -101,7 +101,7 @@ keyTakeaways:
 
 <p>You must report the gain to HMRC within 60 days of completion. That is done through the 60-day CGT property return. You pay the tax at the same time. If you miss the deadline, HMRC charges interest and penalties.</p>
 
-<p>For a limited company, the gain is taxed as part of the company's profits at corporation tax rates (19% to 25%). That is often lower than the personal CGT rate. But the company cannot use the annual exempt amount (£3,000 for individuals in 2025/26). Companies do not have an annual exempt amount for CGT.</p>
+<p>For a limited company, the gain is taxed as part of the company's profits at corporation tax rates (19% to 25%). That is often lower than the personal CGT rate. But the company cannot use the annual exempt amount (£3,000 for individuals in 2026/27). Companies do not have an annual exempt amount for CGT.</p>
 
 <p>If you hold properties personally and sell, you can use your annual exempt amount each year. That is worth up to £720 in tax saved for a higher rate taxpayer. If you have multiple properties, you can stagger sales across tax years to use multiple annual exempt amounts.</p>
 
@@ -117,14 +117,14 @@ keyTakeaways:
 
 <h2>Stamp Duty Land Tax for Company Purchases</h2>
 
-<p>When a limited company buys a residential property, it pays the higher rate of SDLT. That is the standard rate plus a 3% surcharge for additional dwellings. There is no exemption for companies buying their first property.</p>
+<p>When a limited company buys a residential property, it pays the higher rate of SDLT. That is the standard rate plus a 5% surcharge for additional dwellings (since 31 October 2024). There is no exemption for companies buying their first property.</p>
 
 <p>For a property costing £300,000, the SDLT is:</p>
 <ul>
 <li>0% on first £250,000: £0</li>
 <li>5% on next £50,000: £2,500</li>
-<li>Plus 3% surcharge on whole £300,000: £9,000</li>
-<li>Total SDLT: £11,500</li>
+<li>Plus 5% surcharge on whole £300,000: £15,000</li>
+<li>Total SDLT: £17,500</li>
 </ul>
 
 <p>That is a significant upfront cost. It is one reason why incorporating an existing portfolio is often better than buying new properties through a company. The SDLT on transfer is a one-off cost. The ongoing tax saving from mortgage interest relief can outweigh it within a few years.</p>
@@ -135,11 +135,11 @@ keyTakeaways:
 
 <p>Once your company makes a profit, you need to extract that money personally. The most common method is dividends. Dividends are paid from post-tax profits. The company pays corporation tax first, then distributes the remaining profit as dividends.</p>
 
-<p>Your personal dividend tax rates for 2025/26 are:</p>
+<p>Your personal dividend tax rates for 2026/27 are:</p>
 <ul>
 <li>Dividend allowance: £500 (tax-free)</li>
-<li>Basic rate: 8.75%</li>
-<li>Higher rate: 33.75%</li>
+<li>Basic rate: 10.75%</li>
+<li>Higher rate: 35.75%</li>
 <li>Additional rate: 39.35%</li>
 </ul>
 

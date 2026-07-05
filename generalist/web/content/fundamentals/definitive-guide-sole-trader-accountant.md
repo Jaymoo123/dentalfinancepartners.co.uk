@@ -25,7 +25,7 @@ faqs:
   - question: "Can a sole trader accountant help with VAT registration?"
     answer: "Yes. Your accountant should monitor your turnover and advise you on when to register. They can also handle your VAT returns, advise on the Flat Rate Scheme (if it still benefits you), and help you reclaim input VAT on purchases. VAT is one of the most common areas where sole traders get into trouble. An accountant prevents that."
   - question: "How do I find a good sole trader accountant near me?"
-    answer: "Start with professional body directories (ICAEW, ACCA, AAT). Ask other business owners for recommendations. Look for accountants who work with businesses in your sector and your location. Many accountants now operate remotely, so geography matters less than it used to. But a local accountant who understands your area can be valuable. We work with sole traders across the UK, from London to Manchester to Glasgow. Contact us for a free consultation."
+    answer: "Start with professional body directories (ACCA, AAT). Ask other business owners for recommendations. Look for accountants who work with businesses in your sector and your location. Many accountants now operate remotely, so geography matters less than it used to. But a local accountant who understands your area can be valuable. We work with sole traders across the UK, from London to Manchester to Glasgow. Contact us for a free consultation."
 ---
 
 <p>If you run your own business as a sole trader, you already know the drill: you do the work, you chase the invoices, you pay the tax. But the part that trips most people up is the paperwork. The record keeping. The knowing what you can claim, what you can't, and when HMRC expects to be paid.</p>
@@ -149,7 +149,7 @@ faqs:
 <p>Not all accountants are the same. Here is what separates a good one from a mediocre one.</p>
 
 <h3>Qualification and Regulation</h3>
-<p>Look for an accountant who is a member of a recognised professional body: <strong>ICAEW</strong>, <strong>ACCA</strong>, <strong>AAT</strong>, or <strong>CIMA</strong>. These bodies require ongoing professional development, adherence to ethical standards, and professional indemnity insurance. Anyone can call themselves an accountant. Not everyone is qualified.</p>
+<p>Look for an accountant who is a member of a recognised professional body: <strong>ACCA</strong>, <strong>AAT</strong>, or <strong>CIMA</strong>. These bodies require ongoing professional development, adherence to ethical standards, and professional indemnity insurance. Anyone can call themselves an accountant. Not everyone is qualified.</p>
 
 <p>We are <a href="/services">specialist accountants</a>, working to high professional standards and carrying professional indemnity insurance.</p>
 
@@ -256,7 +256,7 @@ faqs:
 <p>Before you sign up, ask these questions. The answers will tell you everything you need to know.</p>
 
 <ol>
-<li><strong>What qualifications do you hold, and which professional body regulates you?</strong> Look for ICAEW, ACCA, AAT, or CIMA.</li>
+<li><strong>What qualifications do you hold, and which professional body regulates you?</strong> Look for ACCA, AAT, or CIMA.</li>
 <li><strong>How much will you charge, and what is included?</strong> Get a fixed fee in writing. Check what is excluded.</li>
 <li><strong>What software do you recommend, and do you provide training?</strong> With MTD ITSA coming, this matters.</li>
 <li><strong>Who will be my main point of contact?</strong> You want a named person, not a call centre.</li>

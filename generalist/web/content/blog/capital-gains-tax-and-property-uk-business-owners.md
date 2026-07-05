@@ -78,7 +78,7 @@ keyTakeaways:
 
 <p>Companies don't get the CGT annual exempt amount. They also don't qualify for BADR on the sale of property (BADR applies to shares and business assets, not property held directly by the company).</p>
 
-<p>If you extract the proceeds from the company, you'll face further tax: dividends (taxed at 8.75%, 33.75%, or 39.35%) or a capital distribution on liquidation (potentially qualifying for BADR on the shares). The overall tax rate can be higher than selling personally, so structure matters.</p>
+<p>If you extract the proceeds from the company, you'll face further tax: dividends (taxed at 8.75%, 33.75%, or 39.35% in 2025/26; from 6 April 2026 the rates are 10.75%, 35.75%, and 39.35%) or a capital distribution on liquidation (potentially qualifying for BADR on the shares). The overall tax rate can be higher than selling personally, so structure matters.</p>
 
 <h2>Business Asset Disposal Relief and Property</h2>
 

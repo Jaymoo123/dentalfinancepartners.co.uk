@@ -144,7 +144,7 @@ keyTakeaways:
 
 <p><strong>Missing corporation tax payment deadlines.</strong> The payment deadline is 9 months and 1 day after the year-end. The filing deadline is 12 months. Many directors pay the tax on the filing deadline and incur interest. Set a calendar reminder for the payment date.</p>
 
-<p><strong>Failing to file confirmation statements.</strong> Limited companies and LLPs must file a confirmation statement with Companies House every 12 months. The fee is £13 online. Late filing does not carry a penalty for the confirmation statement itself, but it can delay other filings and cause your company to be struck off.</p>
+<p><strong>Failing to file confirmation statements.</strong> Limited companies and LLPs must file a confirmation statement with Companies House every 12 months. The fee is £34 online. Late filing does not carry a penalty for the confirmation statement itself, but it can delay other filings and cause your company to be struck off.</p>
 
 <h2>How We Help Dental Practices Stay Compliant</h2>
 

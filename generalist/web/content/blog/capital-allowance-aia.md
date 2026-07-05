@@ -85,7 +85,7 @@ keyTakeaways:
 
 <p>The AIA is not the only capital allowance available. Full Expensing is another 100% relief that applies to most main rate plant and machinery bought by limited companies from 1 April 2023. The key difference is that Full Expensing has no monetary cap, while the AIA is capped at £1m. For most small and medium businesses, the AIA is sufficient.</p>
 
-<p>From 1 January 2026, a 40% first-year allowance on new and unused main-rate plant and machinery is also available (FA 2026 s.29). This sits alongside Full Expensing for limited companies and is relevant to any business spending above the £1m AIA cap on qualifying new assets.</p>
+<p>From April 2026, a 40% first-year allowance on new and unused main-rate plant and machinery is also available (FA 2026 s.29). This sits alongside Full Expensing for limited companies and is relevant to any business spending above the £1m AIA cap on qualifying new assets.</p>
 
 <p>If you spend more than £1m in a year, the excess goes into the main rate pool (14% writing down allowance from 1 April 2026 for companies, 6 April 2026 for income tax under FA 2026; 18% before those dates) or special rate pool (6% writing down allowance), depending on the asset type. You can also claim the AIA on special rate assets like integral fixtures, but the £1m limit is shared across all qualifying spend.</p>
 

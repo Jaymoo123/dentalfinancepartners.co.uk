@@ -131,7 +131,7 @@ keyTakeaways:
 <h2>One-Off Costs: Setup and Incorporation</h2>
 <p>If you are incorporating for the first time, or switching from a sole trader to a limited company, you will face some one-off costs.</p>
 <ul>
-<li><strong>Company incorporation:</strong> £12 to £50 if you do it yourself via Companies House. £50 to £150 if your accountant handles it (including registered office address, service address, and initial share structure advice).</li>
+<li><strong>Company incorporation:</strong> £50 if you do it yourself online via Companies House (the standard online incorporation fee rose from £12 to £50 in May 2024). £50 to £150 if your accountant handles it (including registered office address, service address, and initial share structure advice).</li>
 <li><strong>Setup fee:</strong> Some accountants charge a one-off setup fee of £100 to £300 to register for corporation tax, set up payroll, register for VAT if needed, and open the company in their software.</li>
 <li><strong>CT41G filing:</strong> Your accountant will handle the CT41G (new company notification to HMRC). This is usually included in the setup fee.</li>
 </ul>
@@ -150,7 +150,7 @@ keyTakeaways:
 <p>Price matters, but it is not the only factor. A cheap accountant who misses your corporation tax deadline or files your CT600 incorrectly will cost you far more in penalties and stress than a slightly more expensive one who keeps you compliant.</p>
 <p>Look for these signals:</p>
 <ul>
-<li><strong>ICAEW, ACCA, or CIMA qualification:</strong> This is the minimum. It means the firm is regulated and follows professional standards.</li>
+<li><strong>ACCA, CIMA, or a recognised professional body qualification:</strong> This is the minimum. It means the firm is regulated and follows professional standards.</li>
 <li><strong>Software compatibility:</strong> Do they use Xero, FreeAgent, or QuickBooks? If you already use one, make sure they support it. If not, ask which they recommend.</li>
 <li><strong>Industry experience:</strong> A firm that works with contractors may not be the best fit for a retail business. Ask if they have clients in your sector.</li>
 <li><strong>Transparent pricing:</strong> The best firms publish their fees or give you a clear written quote before you start. Avoid firms that only give vague ranges.</li>
@@ -171,7 +171,7 @@ keyTakeaways:
 <li><strong>Growing business, VAT, 1-5 staff:</strong> £150 to £250 per month</li>
 <li><strong>Established business, multi-director, complex:</strong> £300 to £600+ per month</li>
 </ul>
-<p>These are market rates for 2025/26 from ICAEW-qualified firms. If you are paying significantly more, ask what extra services you are getting. If you are paying significantly less, check what is excluded.</p>
+<p>These are market rates for 2025/26 from regulated accountancy firms. If you are paying significantly more, ask what extra services you are getting. If you are paying significantly less, check what is excluded.</p>
 <p>For a detailed breakdown of how your specific company compares, <a href="/contact">get in touch with our team</a>. We can give you a fixed quote based on your actual transaction volumes and structure.</p>
 
 <h2>Related articles in Limited Company Tax</h2>

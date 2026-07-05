@@ -15,7 +15,7 @@ metaDescription: 'Claim capital allowances on vans: 100% AIA or 40% FYA in year 
 altText: "White Ford Transit van parked outside a modern office building in Manchester city centre, UK business vehicle"
 image: https://images.pexels.com/photos/678582/pexels-photo-678582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'Capital Allowances on Vans: AIA, Full Expensing and the 2026 Changes'
-summary: "Vans qualify for 100% Annual Investment Allowance, full expensing (companies only, new vans) and the new 40% FYA from 1 January 2026 on new main-rate plant. From 1 April 2026 (CT) and 6 April 2026 (IT) the fallback writing-down allowance drops from 18% to 14% per FA 2026 s.28. This guide covers what qualifies as a van, how each allowance works, private use rules, electric vans, double cab pickups post-April 2025, and the disposal balancing charge."
+summary: "Vans qualify for 100% Annual Investment Allowance, full expensing (companies only, new vans) and the new 40% FYA from April 2026 on new main-rate plant. From 1 April 2026 (CT) and 6 April 2026 (IT) the fallback writing-down allowance drops from 18% to 14% per FA 2026 s.28. This guide covers what qualifies as a van, how each allowance works, private use rules, electric vans, double cab pickups post-April 2025, and the disposal balancing charge."
 schema: ''
 sourcesVerifiedAt: '2026-06-12'
 sourceDomains:
@@ -34,7 +34,7 @@ faqs:
 - question: "Can annual investment allowance be claimed on vans?"
   answer: "Yes. The Annual Investment Allowance (AIA) of up to £1,000,000 per year applies to vans. Cars are excluded from AIA by CAA 2001 s.38B, but vans are not cars under s.268A because they are primarily suited for the conveyance of goods. A sole trader with mixed use restricts the claim to the business proportion; a limited company claims 100% and accounts for the private-use benefit in kind separately."
 - question: "What is the difference between AIA and full expensing for vans?"
-  answer: "AIA gives 100% relief on both new and second-hand vans up to the £1,000,000 annual limit and is available to sole traders, partnerships and limited companies. Full expensing gives 100% relief on new vans with no annual cap but is available to limited companies only. The new 40% first-year allowance (FA 2026 s.29, from 1 January 2026) gives 40% in year one on new main-rate plant including new vans, with the remaining 60% entering the main pool; it is available to companies and unincorporated businesses. For most van purchases AIA is the simplest and quickest route to 100% relief."
+  answer: "AIA gives 100% relief on both new and second-hand vans up to the £1,000,000 annual limit and is available to sole traders, partnerships and limited companies. Full expensing gives 100% relief on new vans with no annual cap but is available to limited companies only. The new 40% first-year allowance (FA 2026 s.29, from April 2026) gives 40% in year one on new main-rate plant including new vans, with the remaining 60% entering the main pool; it is available to companies and unincorporated businesses. For most van purchases AIA is the simplest and quickest route to 100% relief."
 - question: "What is the writing-down allowance rate for vans in 2025/26 and 2026/27?"
   answer: "If AIA or another first-year allowance is not claimed, vans in the main pool attract the main-rate writing-down allowance. That rate is 18% for chargeable periods ending before 1 April 2026 (CT) or 6 April 2026 (IT). It falls to 14% from those dates under FA 2026 s.28, which amends CAA 2001 s.56. A business with a year straddling the change uses a hybrid time-apportioned rate."
 - question: "Can I claim capital allowances on a second-hand van?"
@@ -44,7 +44,7 @@ faqs:
 - question: "Does a double cab pickup qualify as a van for capital allowances?"
   answer: "Not for most purchases from April 2025 onwards. HMRC changed its position on double cab pickups (DCPs) in April 2025. For expenditure incurred on or after 1 April 2025 (CT) or 6 April 2025 (IT), most double cab pickups are treated as cars under CAA 2001 s.268A because they are equally suited to carry passengers and goods. Cars cannot claim AIA, full expensing or the 40% FYA. A transitional rule preserved the old van treatment for contracts entered before 1 April 2025 (or 6 April 2025 for IT) where delivery occurred before 1 October 2025."
 - question: "Do electric vans qualify for capital allowances?"
-  answer: "Yes. Electric vans qualify for AIA, full expensing (if new, company only) and the 40% FYA (if new, from 1 January 2026). An electric van is not a car under CAA 2001 s.268A provided it is primarily designed for goods rather than passengers, so it does not face the CO2-based restrictions that apply to electric cars. The benefit in kind for a zero-emission van is currently £0 (0% of the £4,020 2025/26 van benefit), making electric vans particularly efficient for company use."
+  answer: "Yes. Electric vans qualify for AIA, full expensing (if new, company only) and the 40% FYA (if new, from April 2026). An electric van is not a car under CAA 2001 s.268A provided it is primarily designed for goods rather than passengers, so it does not face the CO2-based restrictions that apply to electric cars. The benefit in kind for a zero-emission van is currently £0 (0% of the £4,020 2025/26 van benefit), making electric vans particularly efficient for company use."
 - question: "What happens to capital allowances when I sell my van?"
   answer: "If you claimed AIA or full expensing on the van, the van has a nil tax value in the pool. Any sale proceeds become a balancing charge, added to your taxable profits in the year of sale. Selling a van for £9,000 that was fully expensed creates £9,000 of taxable income in that year. If the van was in the main pool without a full first-year claim, the sale proceeds reduce the pool balance; if proceeds exceed the balance, the excess is a balancing charge. Plan for this when replacing vehicles."
 - question: "How do I claim capital allowances on a van used for only part of a year before the business ceases?"
@@ -56,7 +56,7 @@ faqs:
 - question: "Can I part claim AIA on my van and then use the 14% writing-down allowance for the balance?"
   answer: "You can split the claim. AIA covers all expenditure on a van up to the annual £1,000,000 limit. If your total AIA-qualifying spend across all assets in the year has already used the full limit, the excess goes into the main pool at 14% WDA (from 1 April 2026 for CT, 6 April 2026 for IT, down from 18%). Alternatively, if you deliberately choose not to use the full AIA (for example, to preserve relief for a higher-profit year), you can add the van to the pool and claim WDA. The pool balance carries forward indefinitely."
 ---
-<p>Vans qualify for 100% capital allowances in year one through the Annual Investment Allowance or full expensing, and from 1 January 2026 there is a further option: the 40% first-year allowance on new main-rate plant introduced by Finance Act 2026 s.29. The fallback writing-down allowance drops from 18% to 14% from April 2026 under FA 2026 s.28, which makes year-one claims more valuable than before. Getting the classification right matters: a vehicle HMRC treats as a car cannot access any of these reliefs.</p>
+<p>Vans qualify for 100% capital allowances in year one through the Annual Investment Allowance or full expensing, and from April 2026 there is a further option: the 40% first-year allowance on new main-rate plant introduced by Finance Act 2026 s.29. The fallback writing-down allowance drops from 18% to 14% from April 2026 under FA 2026 s.28, which makes year-one claims more valuable than before. Getting the classification right matters: a vehicle HMRC treats as a car cannot access any of these reliefs.</p>
 
 <h2>What Counts as a Van for Capital Allowances?</h2>
 
@@ -109,15 +109,15 @@ faqs:
 
 <p>Full expensing is not available to sole traders, partnerships or LLPs. Those businesses use AIA to achieve the same economic result (100% in year one), subject to the £1,000,000 limit. For most van purchases the AIA limit is not a constraint; the difference matters only if the total qualifying spend across all assets in the year exceeds £1,000,000.</p>
 
-<h2>The 40% First-Year Allowance from 1 January 2026</h2>
+<h2>The 40% First-Year Allowance from April 2026</h2>
 
-<p>Finance Act 2026 s.29 inserts CAA 2001 ss.45U and 45V to create a new 40% first-year allowance on main-rate plant and machinery (including vans). The 40% FYA applies to expenditure incurred on or after 1 January 2026 on assets that are new and unused. It is available to both companies and unincorporated businesses, unlike full expensing which is company-only.</p>
+<p>Finance Act 2026 s.29 inserts CAA 2001 ss.45U and 45V to create a new 40% first-year allowance on main-rate plant and machinery (including vans). The 40% FYA applies to expenditure incurred on or after 1 April 2026 (corporation tax) or 6 April 2026 (income tax) on assets that are new and unused. It is available to both companies and unincorporated businesses, unlike full expensing which is company-only.</p>
 
 <p>The 40% FYA covers 40% of the cost in year one; the remaining 60% enters the main pool and attracts the WDA in future years. It is therefore less generous than AIA or full expensing for the first year, but it provides an alternative where the AIA limit has already been fully used by other assets in the period.</p>
 
 <h3>Worked example: 40% FYA versus AIA on a new van</h3>
 
-<p>A sole trader buys a brand-new van for £20,000 in March 2026 (within the FA 2026 s.29 window). Their AIA limit has already been fully used by machinery purchases earlier in the year.</p>
+<p>A sole trader buys a brand-new van for £20,000 in June 2026 (within the FA 2026 s.29 window). Their AIA limit has already been fully used by machinery purchases earlier in the year.</p>
 
 <p>Using the 40% FYA (no AIA remaining):</p>
 
@@ -174,7 +174,7 @@ faqs:
 <td>New only</td>
 <td>All businesses</td>
 <td>None</td>
-<td>1 January 2026</td>
+<td>April 2026</td>
 </tr>
 <tr>
 <td>Main pool WDA</td>
@@ -246,7 +246,7 @@ faqs:
 </tr>
 <tr>
 <td>40% FYA available?</td>
-<td>Yes (new, from Jan 2026)</td>
+<td>Yes (new, from April 2026)</td>
 <td>No</td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ faqs:
 
 <h2>Claiming in Practice: CT600 and SA103</h2>
 
-<p>Capital allowances on a van are claimed through the capital allowances computation in your annual tax return. For a limited company, the computation accompanies the CT600 corporation tax return, due (with payment) nine months and one day after the end of the accounting period. For a sole trader, it appears on the self-employment pages (SA103) within the Self Assessment return, due 31 January after the tax year.</p>
+<p>Capital allowances on a van are claimed through the capital allowances computation in your annual tax return. For a limited company, the computation accompanies the CT600 corporation tax return, due for filing 12 months after the end of the accounting period (with corporation tax payable nine months and one day after the period end). For a sole trader, it appears on the self-employment pages (SA103) within the Self Assessment return, due 31 January after the tax year.</p>
 
 <p>Keep these records for any van claim:</p>
 

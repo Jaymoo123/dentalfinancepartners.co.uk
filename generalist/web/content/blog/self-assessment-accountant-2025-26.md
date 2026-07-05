@@ -26,7 +26,7 @@ faqs:
   - question: "Can a self assessment accountant help with HMRC enquiries or investigations?"
     answer: "Yes. If HMRC opens an enquiry into your return, an accountant handles the correspondence, prepares the evidence, and represents you. This is one of the most valuable services we provide. HMRC enquiries can be time consuming and stressful. Having a professional on your side makes a significant difference."
   - question: "How do I find a good self assessment accountant near me?"
-    answer: "Look for a qualified accountant registered with a recognised body like the ICAEW, ACCA, or AAT. Check they have experience with your type of business (sole trader, Ltd company, partnership). Read reviews or ask for client references. We work with clients across the UK, so location is less important than expertise and availability."
+    answer: "Look for a qualified accountant registered with a recognised body like the ACCA or AAT. Check they have experience with your type of business (sole trader, Ltd company, partnership). Read reviews or ask for client references. We work with clients across the UK, so location is less important than expertise and availability."
 keyTakeaways:
   - "The online self assessment deadline is 31 January; missing it triggers an automatic £100 penalty, rising to £10 per day (up to 90 days) after 3 months."
   - "You must file a self assessment return if you are self-employed with gross income over £1,000, have untaxed income over £2,500, or have total income over £100,000."

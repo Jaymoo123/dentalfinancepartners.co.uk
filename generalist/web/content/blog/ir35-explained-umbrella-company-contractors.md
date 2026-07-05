@@ -104,11 +104,11 @@ keyTakeaways:
 <li>Company revenue: £110,000</li>
 <li>Less expenses (accountancy, insurance, software): £3,000</li>
 <li>Director salary: £12,570 (employer NI covered by Employment Allowance if eligible)</li>
-<li>Corporation tax on remaining profit (£94,430): 19% on first £50,000 (£9,500), then 25% on £44,430 (£11,107.50) with marginal relief. Rough total corporation tax: £20,607.50</li>
-<li>Post-tax profit available as dividends: £73,822.50</li>
-<li>Dividend tax (2026/27 rates): first £500 at 0%, next £37,200 at 10.75% (£3,999), remaining £36,122.50 at 35.75% (£12,913.79)</li>
-<li>Total personal tax: £3,999 + £12,913.79 = £16,912.79</li>
-<li>Net personal income after all tax: £12,570 salary + £73,822.50 dividends - £16,912.79 dividend tax = £69,479.71</li>
+<li>Corporation tax on remaining profit (£94,430): 25% of £94,430 (£23,607.50) less marginal relief of £2,333.55 ((£250,000 minus £94,430) multiplied by 3/200). Total corporation tax: £21,273.95</li>
+<li>Post-tax profit available as dividends: £73,156.05</li>
+<li>Dividend tax (2026/27 rates): first £500 at 0%, next £37,200 at 10.75% (£3,999), remaining £35,456.05 at 35.75% (£12,675.54)</li>
+<li>Total personal tax: £3,999 + £12,675.54 = £16,674.54</li>
+<li>Net personal income after all tax: £12,570 salary + £73,156.05 dividends - £16,674.54 dividend tax = £69,051.51</li>
 </ul>
 
 <p><strong>Umbrella company, inside IR35 (or always PAYE):</strong></p>
@@ -123,7 +123,7 @@ keyTakeaways:
 <li>Net pay: £88,500 - £22,832 - £3,781 = £61,887</li>
 </ul>
 
-<p>The difference is roughly £7,593 per year in favour of the limited company route. That gap narrows if you factor in accountancy fees, Companies House filing costs, and the administrative burden of running a limited company. But it is still a significant difference.</p>
+<p>The difference is roughly £7,165 per year in favour of the limited company route. That gap narrows if you factor in accountancy fees, Companies House filing costs, and the administrative burden of running a limited company. But it is still a significant difference.</p>
 
 <p>If your role is inside IR35 and you cannot operate outside it, the umbrella company becomes the simpler option. You avoid the compliance overhead of a limited company and still get a similar net outcome to operating a limited company inside IR35.</p>
 

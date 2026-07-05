@@ -46,7 +46,7 @@ keyTakeaways:
 
 <h2>Why the Standard Salary and Dividend Strategy Falls Apart Below £20,000</h2>
 
-<p>The classic director pay strategy is a salary of £12,570 (the personal allowance and primary NI threshold) and then dividends up to the basic rate band. The salary is deductible against corporation tax, and the dividends use the £500 dividend allowance plus the 8.75% basic rate.</p>
+<p>The classic director pay strategy is a salary of £12,570 (the personal allowance and primary NI threshold) and then dividends up to the basic rate band. The salary is deductible against corporation tax, and the dividends use the £500 dividend allowance plus the 8.75% basic rate (2025/26).</p>
 
 <p>That works well when your company has £60,000 or more of profit. The corporation tax saving on the salary is real. The dividend tax is manageable.</p>
 
@@ -82,9 +82,9 @@ keyTakeaways:
 
 <p>A £9,100 salary from the Ltd company incurs employer NI of £615 (15% on the £4,100 above the £5,000 secondary threshold), so the total company outlay is £9,715. But you would pay income tax and NI on it because it is on top of your main job income. At basic rate, you lose about 28% to tax and NI. You keep about £6,552 net. The corporation tax saving at 19% is £1,729. So the net cost to the company is £7,986, and you receive £6,552. That is a net loss of £1,434. You are worse off than if the company simply kept the profit and you paid yourself nothing.</p>
 
-<p><strong>What should you do instead?</strong> Take no salary. Keep the £8,000 profit in the company. Pay corporation tax at 19% (£1,520). The company retains £6,480 after tax. In a future year when you have more profit, or when you leave your main job, you can pay a dividend from those retained earnings. Dividends are taxed at 8.75% for basic rate, 33.75% for higher rate. That is likely lower than your marginal income tax rate on a salary.</p>
+<p><strong>What should you do instead?</strong> Take no salary. Keep the £8,000 profit in the company. Pay corporation tax at 19% (£1,520). The company retains £6,480 after tax. In a future year when you have more profit, or when you leave your main job, you can pay a dividend from those retained earnings. Dividends are taxed at 8.75% for basic rate and 33.75% for higher rate (2025/26 rates). That is likely lower than your marginal income tax rate on a salary.</p>
 
-<p>Alternatively, if you need the cash now, take a small dividend. But only if the company has distributable profits from a prior year or from the current year confirmed by management accounts. A £6,480 dividend would use the £500 dividend allowance, then the remaining £5,980 is taxed at 8.75% if you are a basic rate taxpayer. That is £523 in dividend tax. You keep £5,957. Compare that to the salary route where you kept £6,552 but the company spent £9,715 (salary plus employer NI). The dividend route leaves more cash in the company overall.</p>
+<p>Alternatively, if you need the cash now, take a small dividend. But only if the company has distributable profits from a prior year or from the current year confirmed by management accounts. A £6,480 dividend would use the £500 dividend allowance, then the remaining £5,980 is taxed at 8.75% (2025/26) if you are a basic rate taxpayer. That is £523 in dividend tax. You keep £5,957. Compare that to the salary route where you kept £6,552 but the company spent £9,715 (salary plus employer NI). The dividend route leaves more cash in the company overall.</p>
 
 <p>For a side-hustle Ltd, the answer is almost always: no salary, retain profit, pay a dividend when the personal circumstances change.</p>
 
@@ -142,7 +142,7 @@ keyTakeaways:
 
 <p><strong>Step 5:</strong> If you do not need the cash now, consider a company pension contribution. It is the most tax-efficient route but locks the money away until retirement.</p>
 
-<p>Every situation is different. The right answer depends on your total income, your personal tax position, your cash needs, and your long-term plans for the business. If you are unsure, speak to an ICAEW qualified accountant who can run the numbers for your specific circumstances.</p>
+<p>Every situation is different. The right answer depends on your total income, your personal tax position, your cash needs, and your long-term plans for the business. If you are unsure, speak to a qualified chartered accountant who can run the numbers for your specific circumstances.</p>
 
 <p>If your company is about to cross the £90,000 VAT threshold, that changes the planning entirely. Read our guide on <a href="/blog/vat-and-making-tax-digital">VAT and Making Tax Digital</a> to understand the implications.</p>
 

@@ -32,7 +32,7 @@ keyTakeaways:
   - "Basic self assessment filing typically costs £150 to £350 per year, while a full service covering bookkeeping, VAT returns and year-round advice costs £120 to £250 per month."
   - "VAT registration applies when your self employed turnover approaches or exceeds the £90,000 threshold."
   - "Most self employed clients work with their accountant remotely by email, phone or video call, so the accountant's location matters less than their knowledge of your specific trade."
-  - "Anyone in the UK can legally call themselves an accountant, so check they are registered with a recognised body such as ICAEW, ACCA, CIMA or AAT."
+  - "Anyone in the UK can legally call themselves an accountant, so check they are registered with a recognised body such as ACCA, CIMA or AAT."
   - "A useful rule of thumb is that an accountant should save you at least twice their fee in tax, time, or both."
 ---
 
@@ -96,7 +96,7 @@ keyTakeaways:
 
 <h3>Are They Registered with a Recognised Body?</h3>
 
-<p>In the UK, anyone can call themselves an accountant. There is no legal protection on the title. You want someone registered with a recognised professional body. The main ones are ICAEW, ACCA, CIMA, and AAT.</p>
+<p>In the UK, anyone can call themselves an accountant. There is no legal protection on the title. You want someone registered with a recognised professional body. The main ones are ACCA, CIMA, and AAT.</p>
 
 <p>We work to high professional standards, carry professional indemnity insurance, and have a complaints process if something goes wrong. A high street bookkeeper without professional qualifications might be cheaper, but you have less protection.</p>
 
@@ -130,7 +130,7 @@ keyTakeaways:
 
 <ul>
 <li><strong>They promise a specific refund before seeing your figures.</strong> No reputable accountant guarantees a tax refund before reviewing your records. Anyone who does is guessing.</li>
-<li><strong>They are not registered with a professional body.</strong> As mentioned, anyone can call themselves an accountant. Check their credentials on the ICAEW, ACCA, or AAT register.</li>
+<li><strong>They are not registered with a professional body.</strong> As mentioned, anyone can call themselves an accountant. Check their credentials on the ACCA or AAT register.</li>
 <li><strong>They do not ask about your business.</strong> If they quote a fee without understanding what you do, how you trade, and what your turnover is, they are not going to give you tailored advice.</li>
 <li><strong>They are not transparent about fees.</strong> A good accountant tells you exactly what is included and what costs extra. If they are vague, walk away.</li>
 </ul>

@@ -79,7 +79,7 @@ keyTakeaways:
 
 <h3>Vehicle Costs</h3>
 
-<p>Simplified vehicle expenses use a flat rate per business mile. For 2025/26, the rates are 45p per mile for the first 10,000 miles and 25p per mile thereafter for cars and vans. Motorcycles are 24p per mile.</p>
+<p>Simplified vehicle expenses use a flat rate per business mile. For 2026/27, the rates are 55p per mile for the first 10,000 miles and 25p per mile thereafter for cars and vans. Motorcycles are 24p per mile.</p>
 
 <p>Your accountant should compare this against your actual vehicle costs (fuel, insurance, servicing, depreciation) and tell you which gives the bigger deduction. For a sole trader driving 12,000 business miles a year in a low-cost car, simplified expenses often win. For someone driving 5,000 miles in a new electric car with low running costs, actual costs may be better.</p>
 
@@ -139,7 +139,7 @@ keyTakeaways:
 
 <ul>
 <li>Do they ask whether you use cash or accruals before preparing your return? If they assume accruals, that is a red flag.</li>
-<li>Do they know the simplified expense rates for 2025/26? They should quote them without looking them up.</li>
+<li>Do they know the simplified expense rates for 2026/27? They should quote them without looking them up.</li>
 <li>Do they understand that capital allowances do not apply under cash basis? If they mention writing down allowances for your van, ask how that works with cash accounting.</li>
 <li>Do they use software that supports cash basis reporting? Xero and FreeAgent do. Some older desktop software does not.</li>
 <li>Do they explain the trade offs between cash and accruals? A good accountant gives you options, not a default.</li>

@@ -149,7 +149,7 @@ keyTakeaways:
 
 <p>If your limited company owns property, the company pays corporation tax on the gain, not CGT. The corporation tax rate is 19% to 25% depending on profit level. This can be lower than the personal CGT rates.</p>
 
-<p>But there is a catch. When you extract the sale proceeds from the company (as dividends or on winding up), you pay tax personally. Dividend tax rates are 8.75%, 33.75%, or 39.35%. If you close the company and take capital distributions, you may pay CGT on the gain in your shares, potentially at 14% (BADR) if you qualify.</p>
+<p>But there is a catch. When you extract the sale proceeds from the company (as dividends or on winding up), you pay tax personally. Dividend tax rates in 2025/26 are 8.75%, 33.75%, and 39.35% (these rise to 10.75%, 35.75%, and 39.35% from 2026/27). If you close the company and take capital distributions, you may pay CGT on the gain in your shares, potentially at 14% (BADR) if you qualify.</p>
 
 <p>The total tax on a property held in a company can be higher than holding it personally, because you pay both corporation tax and extraction tax. Always model both scenarios before deciding where to hold property.</p>
 
@@ -225,7 +225,7 @@ keyTakeaways:
 <li>Keep all receipts and paperwork for 6 years.</li>
 </ul>
 
-<p>Capital gains tax on property in the UK is not simple, but with the right planning you can keep more of your profit. If your turnover crossed the VAT threshold or you are selling a significant
+<p>Capital gains tax on property in the UK is not simple, but with the right planning you can keep more of your profit.</p>
 
 <h2>Related articles in Exit and Capital Gains</h2>
 <ul>

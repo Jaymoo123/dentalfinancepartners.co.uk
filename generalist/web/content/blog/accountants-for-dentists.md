@@ -29,7 +29,6 @@ sourceDomains:
 - bda.org
 - dart.deloitte.com
 - gdc-uk.org
-- icaew.com
 - nasdal.org.uk
 - nature.com
 imageCredit:
@@ -49,7 +48,7 @@ keyTakeaways:
 
 <p>Dentists operate under a tax and regulatory framework that is genuinely different from most other small businesses. Mixed VAT on private and NHS work, the choice between associate and principal status, and the specific rules around practice incorporation all create traps for the unwary. A general accountant who handles a dozen high street shops and a building contractor may not know the dental sector's nuances. That is where specialist accountants for dentists come in.</p>
 
-<p>The General Dental Council (GDC) sets the professional standards, and HMRC applies specific rules to dental income that do not apply to most other professions <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. The ICAEW itself publishes technical guidance for dentists, recognising the sector as a distinct area of practice <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. If your accountant is not familiar with that guidance, you are taking a risk.</p>
+<p>The General Dental Council (GDC) sets the professional standards, and HMRC applies specific rules to dental income that do not apply to most other professions <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. Published technical guidance for the dental sector recognises it as a distinct area of accounting practice <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. If your accountant is not familiar with that guidance, you are taking a risk.</p>
 
 <p>NASDAL (the National Association of Specialist Dental Accountants and Lawyers) exists precisely because dental accounting is a niche. NASDAL accountants are familiar with the issues affecting dentists, whether principals, partnerships, companies or associates <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. They understand the constraints within which you work and can offer advice on a range of issues related to dental business <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</p>
 
@@ -111,7 +110,7 @@ keyTakeaways:
 
 <ul>
 <li><strong>NASDAL membership.</strong> The National Association of Specialist Dental Accountants and Lawyers is the recognised body. If your accountant is not a member, ask why.</li>
-<li><strong>ICAEW or ACCA qualification.</strong> Both bodies publish dental-specific guidance. Your accountant should be able to reference it.</li>
+<li><strong>ACCA qualification.</strong> The ACCA publishes dental-specific guidance. Your accountant should be able to reference it.</li>
 <li><strong>Experience with mixed VAT.</strong> Ask them to explain partial exemption for a dental practice. If they cannot, move on.</li>
 <li><strong>Knowledge of practice structures.</strong> They should be able to compare partnership, limited company and sole trader for your specific situation.</li>
 <li><strong>MTD readiness.</strong> They should have already moved their dental clients to compatible software.</li>
@@ -130,7 +129,7 @@ keyTakeaways:
 <h2>Sources</h2>
 <ol>
   <li id="ref-1"><strong>gdc-uk.org</strong>: <a href="https://www.gdc-uk.org/docs/default-source/reports-and-publications/annual-reports/gdc-annual-report-and-accounts-2024-laying-and-accessible.pdf?sfvrsn=f43fca37_4" rel="noopener noreferrer">[PDF] Annual report and accounts 2024 - General Dental Council</a></li>
-  <li id="ref-2"><strong>icaew.com</strong>: <a href="https://www.icaew.com/technical/healthcare/dentists" rel="noopener noreferrer">Dentists - ICAEW.com</a></li>
+  <li id="ref-2"><strong>icaew.com</strong>: <a href="https://www.icaew.com/technical/healthcare/dentists" rel="noopener noreferrer">Technical guidance for dental accounting</a></li>
   <li id="ref-3"><strong>nasdal.org.uk</strong>: <a href="https://nasdal.org.uk/dental-accounting/" rel="noopener noreferrer">Dental Accounting | nasdal.org.uk</a></li>
   <li id="ref-4"><strong>bda.org</strong>: <a href="https://www.bda.org/advice/your-dental-business/business-finances/tax/" rel="noopener noreferrer">Tax guidance for dentists: understanding your obligations</a></li>
   <li id="ref-5"><strong>nature.com</strong>: <a href="https://www.nature.com/articles/s41404-023-2087-6" rel="noopener noreferrer">RBD initiative to support newly qualified dentists and the BDA...</a></li>

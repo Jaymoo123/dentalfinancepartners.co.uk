@@ -137,7 +137,7 @@ keyTakeaways:
 <li>Can they produce investor-ready management accounts?</li>
 <li>Do they have experience with EMI share option schemes?</li>
 <li>Do they use cloud accounting software that integrates with your billing platform?</li>
-<li>Are they ICAEW or ACCA qualified?</li>
+<li>Are they ACCA qualified or a member of a recognised professional body?</li>
 <li>Do they offer a fixed fee or do they bill by the hour?</li>
 </ul>
 <p>If the answer to most of these is "no", keep looking. Your accountant is a strategic partner, not just a compliance cost. The right one will save you more in tax and time than they cost in fees.</p>

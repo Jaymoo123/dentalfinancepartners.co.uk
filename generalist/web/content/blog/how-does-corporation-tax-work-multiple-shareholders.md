@@ -87,7 +87,7 @@ keyTakeaways:
 
 <p>For example, a two-person company where one shareholder is active in the business and the other is a silent investor. The active shareholder might take £40,000 of dividends and the silent investor £10,000. With alphabet shares, this is perfectly legal. With a single class of ordinary shares, it would not be.</p>
 
-<p>The dividend allowance for 2025/26 is £500 per person. Each shareholder gets their own allowance. Dividends above that are taxed at 8.75% for basic rate taxpayers, 33.75% for higher rate and 39.35% for additional rate.</p>
+<p>The dividend allowance for 2026/27 is £500 per person. Each shareholder gets their own allowance. Dividends above that are taxed at 10.75% for basic rate taxpayers, 35.75% for higher rate and 39.35% for additional rate.</p>
 
 <p>Proper dividend allocation can save thousands in personal tax. But it must be documented properly with board minutes and dividend vouchers.</p>
 
@@ -144,7 +144,7 @@ keyTakeaways:
 
 <p>But Alice and Bob are both directors and want to take more income. Claire is happy with £20,000. The solution is to restructure into alphabet shares. Alice gets A shares, Bob gets B shares and Claire gets C shares. The dividend can then be split £50,000 to Alice, £40,000 to Bob and £10,000 to Claire.</p>
 
-<p>Alice and Bob each use their £500 dividend allowance and pay 8.75% on the rest (assuming they are basic rate taxpayers). Claire stays within the basic rate band too.</p>
+<p>Alice and Bob each use their £500 dividend allowance and pay 8.75% on the rest in 2025/26 (assuming they are basic rate taxpayers). Claire stays within the basic rate band too. From 2026/27 the basic rate dividend tax rises to 10.75%.</p>
 
 <p>Without alphabet shares, this allocation would not be possible without triggering a distribution of assets at market value, which HMRC would treat as a deemed dividend or a director loan.</p>
 

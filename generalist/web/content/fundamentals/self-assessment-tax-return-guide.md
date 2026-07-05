@@ -161,7 +161,7 @@ faqs:
 <li>Advertising and marketing: website hosting, Google Ads, social media, business cards</li>
 <li>Stock and raw materials: cost of goods sold</li>
 <li>Interest on business loans: but not capital repayments</li>
-<li>Subscriptions to professional bodies: ICAEW, ACCA, RIBA, etc.</li>
+<li>Subscriptions to professional bodies: ACCA, RIBA, etc.</li>
 </ul>
 
 <h3>Working from Home</h3>

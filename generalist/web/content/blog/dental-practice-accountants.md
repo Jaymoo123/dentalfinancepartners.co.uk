@@ -91,7 +91,7 @@ keyTakeaways:
 <p>Not every accountant who says they work with dentists is a true specialist. Here is what to look for.</p>
 
 <ul>
-<li><strong>ICAEW or ACCA qualification.</strong> This is the baseline. It means the accountant has passed rigorous exams and follows a professional code of conduct. Our <a href="/about">about page</a> explains our approach and what it means for our clients.</li>
+<li><strong>ACCA or recognised professional qualification.</strong> This is the baseline. It means the accountant has passed rigorous exams and follows a professional code of conduct. Our <a href="/about">about page</a> explains our approach and what it means for our clients.</li>
 <li><strong>Existing dental clients.</strong> Ask how many dental practices they currently work with. A specialist should have at least a handful of dental clients. They should be able to name common issues without hesitation.</li>
 <li><strong>Knowledge of NHS contract accounting.</strong> They should understand UDAs, patient charge income, and the NHS pension scheme. If they look blank when you mention UDAs, move on.</li>
 <li><strong>VAT partial exemption experience.</strong> They should know the dental VAT rules inside out. Ask them to explain how they handle partial exemption for a mixed dental practice.</li>
@@ -134,4 +134,4 @@ keyTakeaways:
 
 <p>Dental practice accountants are not a luxury. They are a practical necessity for any practice that wants to stay compliant and minimise tax. The rules around associate status, NHS contract accounting, VAT partial exemption, and capital allowances are too specific for a general accountant to handle well.</p>
 
-<p>Look for an ICAEW qualified accountant with existing dental clients and a track record of proactive tax planning. The fee will pay for itself in tax savings and avoided penalties.</p>
+<p>Look for a qualified chartered accountant with existing dental clients and a track record of proactive tax planning. The fee will pay for itself in tax savings and avoided penalties.</p>

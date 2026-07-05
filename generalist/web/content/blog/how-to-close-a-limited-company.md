@@ -51,7 +51,7 @@ keyTakeaways:
 
 <h2>What Is a Members' Voluntary Liquidation (MVL)?</h2>
 <p>An MVL is a formal insolvency process for solvent companies. You appoint a licensed insolvency practitioner (IP) to wind up the company, sell its assets, pay its debts, and distribute the remaining cash to shareholders.</p>
-<p>The process takes longer than a strike off. Typically 6 to 12 weeks for the liquidation itself, then a further period before the company is dissolved. The cost is higher too. Expect to pay £3,000 to £6,000 plus VAT for a straightforward MVL, sometimes more if the company is complex.</p>
+<p>The process takes longer than a strike off. Typically 6 to 12 weeks for the liquidation itself, then a further period before the company is dissolved. The cost is higher too. Expect to pay £4,000 to £6,000 plus VAT for a straightforward MVL, sometimes more if the company is complex.</p>
 <p>Why would anyone pay that? Because an MVL turns the company's retained profits into capital distributions. And capital distributions qualify for Business Asset Disposal Relief (BADR) in most cases.</p>
 
 <h3>How BADR Changes the Numbers</h3>

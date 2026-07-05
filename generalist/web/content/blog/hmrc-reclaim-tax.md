@@ -35,7 +35,6 @@ sourceDomains:
 - bda.org
 - fca.org.uk
 - gov.uk
-- icaew.com
 imageCredit:
   photographer: Mathias Reding
   photographer_url: https://www.pexels.com/@matreding
@@ -109,7 +108,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If you have foreign income that has been taxed in another country, you may be able to claim Foreign Tax Credit Relief from HMRC. This prevents double taxation. The relief is claimed through your Self Assessment return using the foreign pages.</p>
 
-<p>HMRC has been known to check claims for foreign tax credit relief carefully <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. You need to provide evidence of the foreign tax paid, usually a tax certificate from the overseas tax authority. Without it, HMRC may reject the claim or ask for more information, which can delay your refund by months.</p>
+<p>HMRC has been known to check claims for foreign tax credit relief carefully. You need to provide evidence of the foreign tax paid, usually a tax certificate from the overseas tax authority. Without it, HMRC may reject the claim or ask for more information, which can delay your refund by months.</p>
 
 <p>If you live abroad but have UK income, you may also be able to reclaim UK tax. The rules depend on the double taxation agreement between the UK and your country of residence. You should check the specific treaty provisions before claiming.</p>
 
@@ -184,7 +183,6 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
   <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/claim-tax-refund" rel="noopener noreferrer">Check how to claim a tax refund - GOV.UK</a></li>
   <li id="ref-2"><strong>acas.org.uk</strong>: <a href="https://www.acas.org.uk/deductions-from-pay-and-wages" rel="noopener noreferrer">Making and checking deductions - Deductions from pay and wages</a></li>
   <li id="ref-3"><strong>bda.org</strong>: <a href="https://www.bda.org/become-a-bda-member/fees/reclaim-my-tax/" rel="noopener noreferrer">Reclaim my tax - British Dental Association</a></li>
-  <li id="ref-4"><strong>icaew.com</strong>: <a href="https://www.icaew.com/insights/tax-news/2025/nov-2025/check-claims-for-foreign-tax-credit-relief-says-hmrc" rel="noopener noreferrer">Check claims for foreign tax credit relief, says HMRC - ICAEW.com</a></li>
   <li id="ref-5"><strong>fca.org.uk</strong>: <a href="https://www.fca.org.uk/news/statements/tax-free-pension-lump-sums-cancellation-rights" rel="noopener noreferrer">Tax-free pension lump sums and cancellation rights - FCA</a></li>
 </ol>
 

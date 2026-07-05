@@ -17,7 +17,7 @@ faqs:
 - question: Can I claim integral features capital allowances on a residential property?
   answer: No. Integral features capital allowances are only available on commercial properties or properties used for a qualifying business purpose. Residential properties do not qualify. If you own a mixed-use property (for example, a shop with a flat above), you can claim on the integral features serving the commercial part only. The residential part is excluded.
 - question: What is the difference between integral features and fixtures?
-  answer: Fixtures is a broader legal term covering anything fixed to a building that would be considered part of the property on a sale. Integral features are a specific subset of fixtures that qualify for the 6% special rate pool. Other fixtures, like fitted kitchen units or bathroom suites, do not qualify as integral features. They may qualify for structures and buildings allowances at 3% or, in some cases, general plant and machinery at 18%.
+  answer: Fixtures is a broader legal term covering anything fixed to a building that would be considered part of the property on a sale. Integral features are a specific subset of fixtures that qualify for the 6% special rate pool. Other fixtures, like fitted kitchen units or bathroom suites, do not qualify as integral features. They may qualify for structures and buildings allowances at 3% or, in some cases, general plant and machinery at 14%.
 - question: Do I need a formal valuation to claim integral features on a property I already own?
   answer: If you already own the property and have not previously claimed, you can still make a claim. You need to establish the original cost of the integral features at the time they were installed. If you do not have the invoices, a retrospective valuation by a quantity surveyor is acceptable. HMRC may challenge the valuation, so keep supporting evidence. Claims can be made up to two years after the end of the accounting period to which they relate.
 - question: Can I claim integral features allowances on a property I lease?
@@ -54,7 +54,7 @@ keyTakeaways:
 
 <h2>What Counts as an Integral Feature?</h2>
 
-<p>The legislation lists eight specific categories. If an item falls into one of these, it qualifies as an integral feature. If it does not, it may still qualify as general plant and machinery (at 18% or 6% rates) or as a structure and buildings allowance (3% straight line).</p>
+<p>The legislation lists eight specific categories. If an item falls into one of these, it qualifies as an integral feature. If it does not, it may still qualify as general plant and machinery (at 14% or 6% rates) or as a structure and buildings allowance (3% straight line).</p>
 
 <p>The eight categories are:</p>
 
@@ -76,14 +76,14 @@ keyTakeaways:
 <p>Some items look like they should qualify but do not. The legislation specifically excludes:</p>
 
 <ul>
-<li>Gas supply systems and pipework for gas-fired appliances (these are general plant and machinery at 18%).</li>
+<li>Gas supply systems and pipework for gas-fired appliances (these are general plant and machinery at 14%).</li>
 <li>Drainage systems and sewerage pipework (these are structures and buildings allowances at 3%).</li>
-<li>Fire alarm systems and security systems (these are general plant and machinery at 18%).</li>
-<li>Data cabling and telecoms infrastructure (general plant and machinery at 18%).</li>
+<li>Fire alarm systems and security systems (these are general plant and machinery at 14%).</li>
+<li>Data cabling and telecoms infrastructure (general plant and machinery at 14%).</li>
 <li>Sanitary ware such as toilets, sinks, and showers (these are structures and buildings allowances at 3%).</li>
 </ul>
 
-<p>The distinction matters because the rate of relief differs. Claiming at 6% (special rate) items that should be at 3% SBA, or at 18% main rate items that should be at 6%, will be corrected by HMRC on enquiry. Getting it wrong can mean repaying relief plus interest and penalties.</p>
+<p>The distinction matters because the rate of relief differs. Claiming at 6% (special rate) items that should be at 3% SBA, or at 14% main rate items that should be at 6%, will be corrected by HMRC on enquiry. Getting it wrong can mean repaying relief plus interest and penalties.</p>
 
 <h2>What Rate of Relief Applies?</h2>
 
@@ -93,7 +93,7 @@ keyTakeaways:
 
 <p>For a limited company paying corporation tax at 19% or 25%, the tax saved in year one on that £4,800 claim is between £912 and £1,200. Over the life of the asset, the total relief equals the original cost, just spread over many years.</p>
 
-<p>The 100% first year allowance for energy-saving or water-efficient plant via HMRC's Energy Technology List (the Enhanced Capital Allowances scheme) was abolished for expenditure from April 2020 and is no longer available. For limited companies, the current first-year relief options are full expensing (100% on new main-rate plant and machinery) and the 50% first-year allowance on new special-rate plant, as well as the Annual Investment Allowance available to all businesses.</p>
+<p>The 100% first year allowance for energy-saving or water-efficient plant via HMRC's Energy Technology List (the Enhanced Capital Allowances scheme) was abolished for expenditure from April 2020 and is no longer available. For limited companies, the current first-year relief options are full expensing (100% on new main-rate plant and machinery) and the 40% first-year allowance on new special-rate plant (from April 2026), as well as the Annual Investment Allowance available to all businesses.</p>
 
 <h2>Can You Claim on Second-Hand Properties?</h2>
 
@@ -135,7 +135,7 @@ keyTakeaways:
 
 <h2>Common Mistakes We See</h2>
 
-<p>The most common mistake is claiming integral features at the 18% main rate instead of the 6% special rate. That sounds like a good thing (higher relief), but it is wrong. If HMRC enquires into your return, they will adjust the claim and may charge interest on the underpaid tax.</p>
+<p>The most common mistake is claiming integral features at the 14% main rate instead of the 6% special rate. That sounds like a good thing (higher relief), but it is wrong. If HMRC enquires into your return, they will adjust the claim and may charge interest on the underpaid tax.</p>
 
 <p>The second most common mistake is failing to identify integral features at all. Many property owners claim only on visible plant like boilers and air conditioning units but miss the electrical systems, lifts, and ventilation ductwork. Those are often the largest value items.</p>
 

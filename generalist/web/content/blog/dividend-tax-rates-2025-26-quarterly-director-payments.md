@@ -26,7 +26,7 @@ faqs:
   - question: "Can I take dividends from my limited company without paying tax?"
     answer: "You can take up to £500 in dividends tax-free per tax year under the dividend allowance. Above that, you pay tax at 8.75%, 33.75% or 39.35% depending on your total income. If your total income (including salary) is below £12,570, you may have unused personal allowance, but dividends still use the dividend allowance first."
   - question: "What happens if I take too much dividend and cross into higher rate tax?"
-    answer: "The portion of your dividend income that falls into the higher rate band (above £50,270 total income) is taxed at 33.75% instead of 8.75%. You pay the difference when you file your self"
+    answer: "The portion of your dividend income that falls into the higher rate band (above £50,270 total income) is taxed at 33.75% instead of 8.75%. You pay the difference when you file your self assessment tax return."
 keyTakeaways:
   - "The 2025/26 dividend tax rates are 8.75% for basic rate, 33.75% for higher rate and 39.35% for additional rate, with the first £500 of dividend income tax-free."
   - "Dividends are treated as the top slice of taxable income, sitting above salary, rental and interest, so other income fills the lower tax bands before dividends are assessed."

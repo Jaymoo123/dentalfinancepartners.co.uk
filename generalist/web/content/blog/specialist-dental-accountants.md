@@ -117,7 +117,7 @@ keyTakeaways:
 <h2>What to Look for in a Specialist Dental Accountant</h2>
 <p>Not every accountant who says they work with dentists is truly a specialist. Here is what to check:</p>
 <ul>
-<li>Do they hold ICAEW or ACCA qualification? This is a baseline for competence.</li>
+<li>Do they hold the ACCA qualification or equivalent recognition from a professional body? This is a baseline for competence.</li>
 <li>Do they have current clients who are dentists? Ask for examples of practices they work with.</li>
 <li>Do they understand NHS contract income and the pension scheme? If they cannot explain the annual allowance taper, they are not a specialist.</li>
 <li>Do they handle VAT partial exemption for dental practices? This is a niche area that most general accountants avoid.</li>

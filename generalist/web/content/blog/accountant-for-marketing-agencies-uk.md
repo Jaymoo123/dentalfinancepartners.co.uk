@@ -122,7 +122,7 @@ keyTakeaways:
 <li>Do they understand VAT on cross-border services, including the post-Brexit rules for EU clients?</li>
 <li>Can they advise on IR35 and contractor engagement, not just prepare your payroll?</li>
 <li>Do they recommend project-level accounting and monthly management accounts, or just annual accounts and a tax return?</li>
-<li>Are they ICAEW qualified? That gives you assurance of professional standards and technical competence.</li>
+<li>Do they hold a recognised professional qualification, such as ACCA or CIMA? That gives you assurance of professional standards and technical competence.</li>
 </ul>
 <p>A good accountant for marketing agencies will also help you with cash flow forecasting, pricing strategy, and exit planning. If you plan to sell your agency in the next three to five years, you need clean financial records and a tax-efficient structure. Business Asset Disposal Relief (BADR) currently gives an 18% CGT rate on the first £1 million of qualifying gains (it was 14% for 6 April 2025 to 5 April 2026, and 10% before that). But you must hold the shares for at least two years and meet the trading company conditions. A specialist accountant will help you structure for that from the start.</p>
 

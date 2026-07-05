@@ -119,7 +119,7 @@ keyTakeaways:
 <h2>What to Do If You Are Already Using This Arrangement</h2>
 <p>If you have already set up a bonus-through-separate-company structure, you have options. The safest is to disclose the arrangement to HMRC under the Contractual Disclosure Facility (CDF) if you believe it is deliberate tax avoidance. The CDF gives you a reduced penalty in exchange for full disclosure.</p>
 <p>Alternatively, you can unwind the arrangement voluntarily. Close Company B, bring the bonus payments onto Company A's payroll, and settle the outstanding tax and NI through a voluntary disclosure. HMRC's penalty regime is more lenient for unprompted disclosures than for those made after an enquiry opens.</p>
-<p>Speak to an ICAEW qualified accountant before doing anything. The disclosure process is technical, and the wrong wording can trigger a full criminal investigation.</p>
+<p>Speak to a qualified chartered accountant before doing anything. The disclosure process is technical, and the wrong wording can trigger a full criminal investigation.</p>
 
 <h2>Final Word</h2>
 <p>Paying a bonus through a separate limited company to avoid NI does not work. HMRC has the legislation, the resources, and the appetite to pursue these arrangements. The penalties can easily exceed the NI saved. If you are considering this route, stop. If you are already using it, disclose it.</p>

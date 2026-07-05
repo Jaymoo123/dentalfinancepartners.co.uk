@@ -127,7 +127,7 @@ keyTakeaways:
 <li><strong>Understand pension auto-enrolment.</strong> Your payroll accountant should handle the pension provider connection, contribution calculations, and re-enrolment cycles (every 3 years).</li>
 <li><strong>Offer year-round support.</strong> Payroll issues do not only arise at year-end. You need someone who responds to HMRC notices, corrects errors, and advises on tax code changes as they happen.</li>
 <li><strong>Provide clear reporting.</strong> You should receive a monthly payroll summary showing gross pay, deductions, net pay, employer costs, and the amount due to HMRC. No guesswork.</li>
-<li><strong>Be ICAEW qualified or ACCA qualified.</strong> This is not essential for payroll-only services, but it signals a commitment to professional standards and ongoing training. Our <a href="/about">team</a> stays current with every legislative change.</li>
+<li><strong>Be ACCA qualified or hold a recognised professional qualification.</strong> This is not essential for payroll-only services, but it signals a commitment to professional standards and ongoing training. Our <a href="/about">team</a> stays current with every legislative change.</li>
 </ul>
 
 <h2>How Much Does a Payroll Accountant Cost?</h2>

@@ -265,7 +265,7 @@ editorialNote: Full Track-2 rewrite 2026-06-12. Fixed Class 4 NIC (9% to 6%), fi
 
 <h2>What an OnlyFans Accountant Actually Does</h2>
 
-<p>The phrase "OnlyFans accounting specialist" is sometimes overloaded. The underlying tax rules are the same sole trader and self-employment rules that apply to any freelance trade. What matters is an accountant who understands the specific cost categories (production equipment, props, studio rental, content management tools), the VAT position when turnover grows, and the IR35 exposure if you work with agencies. An ICAEW or ACCA qualified firm with experience of self-employed clients in the creative and digital sectors will handle all of this correctly.</p>
+<p>The phrase "OnlyFans accounting specialist" is sometimes overloaded. The underlying tax rules are the same sole trader and self-employment rules that apply to any freelance trade. What matters is an accountant who understands the specific cost categories (production equipment, props, studio rental, content management tools), the VAT position when turnover grows, and the IR35 exposure if you work with agencies. An ACCA-qualified firm with experience of self-employed clients in the creative and digital sectors will handle all of this correctly.</p>
 
 <p>Concretely, an accountant for OnlyFans creators should: register you for self assessment and manage the first-year POA timing so you are not caught short; review your expense records and challenge any claims that are not well-documented before they go on the return; model sole trader versus limited company using your actual profit figures and extraction plans; set up MTD-compatible software if you are approaching the threshold; and deal with HMRC correspondence if an enquiry is opened.</p>
 

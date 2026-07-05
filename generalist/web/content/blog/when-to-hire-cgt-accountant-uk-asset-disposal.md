@@ -128,7 +128,7 @@ keyTakeaways:
 <p>Not every accountant handles CGT well. Some focus on compliance and do not have the experience to plan complex disposals. Here is what to look for.</p>
 
 <ul>
-<li><strong>ICAEW or ACCA qualification.</strong> This is a minimum. It means the accountant has passed rigorous exams and follows a professional code of conduct.</li>
+<li><strong>ACCA or a recognised professional qualification.</strong> This is a minimum. It means the accountant has passed rigorous exams and follows a professional code of conduct.</li>
 <li><strong>Specific CGT experience.</strong> Ask how many disposal transactions they have handled in the last 12 months. If the answer is vague, keep looking.</li>
 <li><strong>Knowledge of your asset type.</strong> Selling a limited company is different from selling a buy-to-let. The reliefs, forms, and deadlines differ. Make sure the accountant has handled your type of disposal before.</li>
 <li><strong>Proactive planning.</strong> A good CGT accountant does not wait for the sale to happen. They review your situation in advance and suggest timing, structuring, and relief strategies.</li>

@@ -20,7 +20,7 @@ summary: "If you are searching for an accountant for small businesses near me, y
 schema: ""
 faqs:
   - question: "How do I find a good accountant for small businesses near me?"
-    answer: "Start by searching online and checking the firm's website for evidence of specialisation in small businesses. Look for ICAEW, ACCA, or AAT qualification. Read their blog to see if they cover topics relevant to you. Book a free initial call and ask specific questions about their experience with your business type and sector."
+    answer: "Start by searching online and checking the firm's website for evidence of specialisation in small businesses. Look for ACCA or AAT qualification. Read their blog to see if they cover topics relevant to you. Book a free initial call and ask specific questions about their experience with your business type and sector."
   - question: "What is the difference between a local accountant and an online-only accountant?"
     answer: "A local accountant offers face-to-face meetings, understands your regional business landscape, and provides a higher level of personal accountability. Online-only accountants often use junior staff and generic advice. For most small businesses, a local firm gives better value and more tailored support."
   - question: "How much does an accountant for a small limited company cost in the UK?"
@@ -63,7 +63,7 @@ keyTakeaways:
 
 <h3>Qualification and Regulation</h3>
 
-<p>Look for ICAEW, ACCA, or AAT qualification. ICAEW is the gold standard for UK business accountants. It means the firm is regulated, insured, and follows a strict code of ethics. We are specialist accountants at <a href="/about">Holloway Davies</a>, and that matters to our clients.</p>
+<p>Look for ACCA or AAT qualification. Choosing a qualified, regulated accountant means the firm is insured and follows a strict code of ethics. We are specialist accountants at <a href="/about">Holloway Davies</a>, and that matters to our clients.</p>
 
 <h3>Experience with Your Business Type</h3>
 
@@ -106,7 +106,7 @@ keyTakeaways:
 
 <ul>
 <li><strong>Choosing based on price alone.</strong> The cheapest accountant is rarely the best. You get what you pay for. A £50-a-month service will not give you the same advice as a firm that charges £150 and puts a qualified accountant on your account.</li>
-<li><strong>Ignoring qualification.</strong> Anyone can call themselves an accountant. Only qualified, regulated professionals can call themselves ICAEW, ACCA, or AAT. Check their register.</li>
+<li><strong>Ignoring qualification.</strong> Anyone can call themselves an accountant. Only qualified, regulated professionals can hold ACCA or AAT membership. Check their register.</li>
 <li><strong>Not checking for specialisation.</strong> A general practice accountant might handle your tax return. But if you need R&D advice, IR35 support, or help with <a href="/incorporation">incorporation</a>, you need someone who does that regularly.</li>
 <li><strong>Assuming all accountants are the same.</strong> They are not. Some are brilliant with contractors but hopeless with ecommerce. Some specialise in property. Some focus on tech. Pick one that matches your sector.</li>
 </ul>

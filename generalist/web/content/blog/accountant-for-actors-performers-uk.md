@@ -106,7 +106,7 @@ keyTakeaways:
 <li>You need the limited liability protection (though most performers have insurance for this anyway)</li>
 </ul>
 
-<p>If you do incorporate, you will need to run a payroll for yourself. The most common approach is a salary of £12,570 per year (matching the personal allowance and primary NI threshold) plus dividends drawn from retained profits. For the 2025/26 tax year, dividends are taxed at 8.75% within the basic rate band, 33.75% within the higher rate band, and 39.35% above that. The annual dividend allowance is £500.</p>
+<p>If you do incorporate, you will need to run a payroll for yourself. The most common approach is a salary of £12,570 per year (matching the personal allowance and primary NI threshold) plus dividends drawn from retained profits. For the 2026/27 tax year, dividends are taxed at 10.75% within the basic rate band, 35.75% within the higher rate band, and 39.35% above that. The annual dividend allowance is £500.</p>
 
 <p>Your accountant should model both scenarios for you with real numbers. A performer earning £60,000 gross through a limited company can often take home £4,000 to £6,000 more per year than the same performer as a sole trader, after all taxes and costs. But that gap narrows if most of your work falls inside IR35.</p>
 

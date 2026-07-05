@@ -23,7 +23,7 @@ faqs:
   - question: "Do I need a limited company accountant if I use FreeAgent or Xero?"
     answer: "Software handles data entry and basic reporting, but it does not provide tax advice, calculate Corporation Tax marginal relief, monitor your director's loan account, or advise on IR35. You still need a qualified accountant to prepare your statutory accounts, file your CT600, and ensure you comply with all HMRC and Companies House requirements. Many accountants include software in their fee, so you get the best of both."
   - question: "What is the difference between a bookkeeper and a limited company accountant?"
-    answer: "A bookkeeper records transactions, sales, purchases, bank entries. A limited company accountant prepares your statutory accounts, calculates your tax liability, files your returns, and advises on tax planning. Bookkeepers are not regulated and cannot sign off accounts. Accountants are professionally qualified, regulated by bodies like ICAEW or ACCA, and carry professional indemnity insurance. Most small companies benefit from having both, or using an accountant who also provides bookkeeping."
+    answer: "A bookkeeper records transactions, sales, purchases, bank entries. A limited company accountant prepares your statutory accounts, calculates your tax liability, files your returns, and advises on tax planning. Bookkeepers are not regulated and cannot sign off accounts. Accountants are professionally qualified, regulated by bodies like the ACCA, and carry professional indemnity insurance. Most small companies benefit from having both, or using an accountant who also provides bookkeeping."
   - question: "Can I switch accountants mid-year?"
     answer: "Yes. You can switch at any time. Your records belong to you, not your old accountant. Your new accountant will request a professional clearance letter and then ask for your records to be transferred. The process usually takes two to four weeks. Your old accountant may charge a reasonable fee for extracting data. Switching mid-year is common and straightforward."
 ---
@@ -36,7 +36,7 @@ faqs:
 
 <h2>What Does a Limited Company Accountant Actually Do?</h2>
 
-<p>Let's start with the basics. A limited company accountant is not a bookkeeper, though many bookkeepers call themselves accountants. A limited company accountant is professionally qualified, typically ACA (ICAEW), ACCA, or AAT at minimum, and holds a practising certificate. They are regulated by a professional body. They carry professional indemnity insurance. They can sign off accounts and act as your company's reporting accountant with Companies House and HMRC.</p>
+<p>Let's start with the basics. A limited company accountant is not a bookkeeper, though many bookkeepers call themselves accountants. A limited company accountant is professionally qualified, typically ACCA, AAT, or CIMA at minimum, and holds a practising certificate. They are regulated by a professional body. They carry professional indemnity insurance. They can sign off accounts and act as your company's reporting accountant with Companies House and HMRC.</p>
 
 <h3>Statutory Compliance Work</h3>
 
@@ -110,7 +110,7 @@ faqs:
 
 <h3>Professional Qualification and Regulation</h3>
 
-<p>Your accountant should be a member of one of the recognised professional bodies: ICAEW, ACCA, AAT, CIMA, or ATT. Membership means they are bound by a code of ethics, carry mandatory PI insurance, and are subject to regular practice reviews.</p>
+<p>Your accountant should be a member of one of the recognised professional bodies: ACCA, AAT, CIMA, or ATT. Membership means they are bound by a code of ethics, carry mandatory PI insurance, and are subject to regular practice reviews.</p>
 
 <p>Check the firm's register entry. Any accountant can call themselves an accountant. Only qualified, regulated professionals can call themselves chartered accountants.</p>
 
@@ -265,7 +265,7 @@ faqs:
 <p>Use this checklist when evaluating a new accountant. Tick each item off before you sign the engagement letter.</p>
 
 <ul>
-<li><strong>Check their qualification.</strong> Are they ICAEW, ACCA, or AAT? Verify on the professional body's register.</li>
+<li><strong>Check their qualification.</strong> Are they ACCA, AAT, or a member of another recognised body? Verify on the professional body's register.</li>
 <li><strong>Ask about their client base.</strong> Do they work with businesses like yours? Ask for examples.</li>
 <li><strong>Get a fixed fee in writing.</strong> What is included? What is excluded? How often does it increase?</li>
 <li><strong>Ask about software.</strong> Which platform do they use? Is it included in the fee?</li>

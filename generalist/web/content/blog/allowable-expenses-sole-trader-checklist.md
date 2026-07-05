@@ -26,7 +26,7 @@ faqs:
 - question: Can I claim my mortgage payments as a sole trader working from home?
   answer: You can claim the interest element of your mortgage, not the capital repayments. You calculate the business proportion based on floor area or the number of rooms used. If your home office is 10% of your house, you claim 10% of the mortgage interest. You cannot claim the capital repayment part.
 - question: What is the difference between simplified expenses and actual costs for a home office?
-  answer: Simplified expenses use HMRC's flat rates based on hours worked from home per month. Maximum claim is £312 per year. Actual costs involve calculating the business proportion of your actual household bills. For most sole traders with a dedicated home office, actual costs produce a higher claim. Simplified expenses are simpler but often lower. You choose whichever
+  answer: Simplified expenses use HMRC's flat rates based on hours worked from home per month. Maximum claim is £312 per year. Actual costs involve calculating the business proportion of your actual household bills. For most sole traders with a dedicated home office, actual costs produce a higher claim. Simplified expenses are simpler but often lower. You choose whichever method you prefer, though most sole traders with a dedicated room find actual costs produce a larger deduction.
 metaTitle_prev: 'Allowable Expenses Sole Trader: 2025/26 Deductions Checklist'
 metaDescription_prev: Full list of allowable expenses for sole traders in 2025/26. Covers home office, vehicle, equipment, travel, and software. Real examples with HMRC rules.
 dateModified: '2026-06-12'
@@ -193,9 +193,9 @@ keyTakeaways:
 
 <h2>A Quick Note on Cash vs Accrual Basis</h2>
 
-<p>Most sole traders use the cash basis. You record income when it hits your bank account and expenses when they leave it. Simple. The cash basis is the default for sole traders with a turnover under £150,000.</p>
+<p>Most sole traders use the cash basis. You record income when it hits your bank account and expenses when they leave it. Simple. Since April 2024, cash basis is the default for all sole traders with no turnover cap; the old £150,000 entry threshold was abolished.</p>
 
-<p>The accrual basis records income when you invoice and expenses when you receive the bill, regardless of when money moves. It is more complex. It is mandatory if your turnover exceeds £150,000 or if you are a limited company.</p>
+<p>The accrual basis records income when you invoice and expenses when you receive the bill, regardless of when money moves. It is more complex. Accruals accounting is opt-in for sole traders since April 2024. It is mandatory for limited companies.</p>
 
 <p>For most sole traders, the cash basis is fine. It aligns with your bank balance. It is what your bookkeeping software will default to.</p>
 
@@ -206,7 +206,7 @@ keyTakeaways:
 <li>You use your home extensively for business and want to maximise the home office claim.</li>
 <li>You have a mixed-use vehicle and are unsure whether mileage or actual costs works better.</li>
 <li>You are close to the VAT registration threshold (£90,000 turnover in a rolling 12 months).</li>
-<li>Your turnover is approaching £150,000 and you need to move from cash to accrual basis.</li>
+<li>You are considering switching from cash to accrual basis and want advice on the transition.</li>
 <li>You are considering incorporating as a limited company.</li>
 </ul>
 

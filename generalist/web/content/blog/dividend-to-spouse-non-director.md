@@ -103,16 +103,16 @@ keyTakeaways:
 
 <h2>Tax Implications for the Spouse Receiving Dividends</h2>
 
-<p>If your spouse receives dividends as a shareholder, they are taxed on those dividends at their own marginal rates. For the 2025/26 tax year:</p>
+<p>If your spouse receives dividends as a shareholder, they are taxed on those dividends at their own marginal rates. For the 2026/27 tax year:</p>
 
 <ul>
 <li>The first £500 of dividends is tax-free (the dividend allowance).</li>
-<li>Dividends within the basic rate band (£12,571 to £50,270) are taxed at 8.75%.</li>
-<li>Dividends within the higher rate band (£50,271 to £125,140) are taxed at 33.75%.</li>
+<li>Dividends within the basic rate band (£12,571 to £50,270) are taxed at 10.75%.</li>
+<li>Dividends within the higher rate band (£50,271 to £125,140) are taxed at 35.75%.</li>
 <li>Dividends above £125,140 are taxed at 39.35%.</li>
 </ul>
 
-<p>If your spouse has no other income, they can receive up to £12,570 in dividends tax-free using their personal allowance, plus another £500 at 0% under the dividend allowance. After that, dividends are taxed at 8.75% up to £50,270.</p>
+<p>If your spouse has no other income, they can receive up to £12,570 in dividends tax-free using their personal allowance, plus another £500 at 0% under the dividend allowance. After that, dividends are taxed at 10.75% up to £50,270.</p>
 
 <p>This is a significant tax saving compared to paying yourself all the profits and being taxed at 35.75% or 39.35% on dividends above the basic rate band (2026/27 rates; 33.75% higher rate in 2025/26).</p>
 

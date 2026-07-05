@@ -24,7 +24,7 @@ faqs:
   - question: "Do I need to register for self assessment if my side hustle is through a limited company?"
     answer: "Yes. Even if your limited company pays corporation tax on its own return, you must file a personal self assessment return (SA100) to report any dividends or salary you take from the company. If your only income from the company is dividends below the £500 allowance, you may not need to file, but most side hustle directors do."
   - question: "What is the cheapest way to set up a limited company for a side hustle?"
-    answer: "Register directly with Companies House online for £12. You need"
+    answer: "Register directly with Companies House online for £50. You need a registered UK office address, at least one director, and at least one shareholder. The process typically completes within 24 hours."
 keyTakeaways:
   - "A higher-rate taxpayer extracting all side hustle profit as dividends faces a 45.1% effective tax rate in 2025/26, versus 27.2% as a sole trader on £14,000 profit."
   - "Deferring dividend extraction to a later year when you are a basic-rate taxpayer saves £2,835 on £11,340 of retained company profit."
@@ -76,9 +76,9 @@ keyTakeaways:
 
 <p>Suppose you plan to reduce your day job hours in three years. Or you have a year where your employment income drops. You can hold the retained profits in the company and extract them in a year where you have more basic rate band available.</p>
 
-<p>That flexibility is worth real money. If you can extract dividends in a year where you are a basic rate taxpayer, the dividend tax drops to 8.75% instead of 33.75%.</p>
+<p>That flexibility is worth real money. If you can extract dividends in a year where you are a basic rate taxpayer, the dividend tax drops to 10.75% instead of 35.75%.</p>
 
-<p>On £11,340 of retained profit, the difference between extracting at 8.75% versus 33.75% is £2,835 in your pocket.</p>
+<p>On £11,340 of retained profit, the difference between extracting at 10.75% versus 35.75% is £2,835 in your pocket.</p>
 
 <p>This is the single most important reason to incorporate a side hustle. Not because it saves tax year one. Because it gives you control over when you pay the personal tax.</p>
 
@@ -92,7 +92,7 @@ keyTakeaways:
 
 <ul>
 <li><strong>Annual accounts</strong> to Companies House within 9 months of the year end. Late filing penalties start at £150 for a private company and escalate quickly.</li>
-<li><strong>Confirmation statement</strong> to Companies House every 12 months. £13 filing fee online.</li>
+<li><strong>Confirmation statement</strong> to Companies House every 12 months. £34 filing fee online.</li>
 <li><strong>Corporation tax return (CT600)</strong> to HMRC within 12 months of the year end. But the tax is due 9 months and 1 day after the year end.</li>
 <li><strong>Self assessment return (SA100)</strong> for your personal tax, including the dividend income from your company. Due 31 January.</li>
 <li><strong>Payroll reporting</strong> if you pay yourself a salary through the company. Even a small salary requires RTI (Real Time Information) submissions to HMRC every month or quarter.</li>
@@ -152,7 +152,7 @@ keyTakeaways:
 
 <h2>What About The Side Hustle That Grows?</h2>
 
-<p>If your side hustle is likely to become your main income source within two to three years, incorporating earlier makes sense. The cost of setting up a limited company is low (£12 online at Companies House). The ongoing filing obligations are manageable if you use good software.</p>
+<p>If your side hustle is likely to become your main income source within two to three years, incorporating earlier makes sense. The cost of setting up a limited company is low (£50 online at Companies House). The ongoing filing obligations are manageable if you use good software.</p>
 
 <p>If you incorporate while the business is small, you build a track record of filed accounts. That helps when you need a business bank account, a mortgage, or credit terms with suppliers.</p>
 
@@ -160,7 +160,7 @@ keyTakeaways:
 
 <p>Our <a href="/incorporation">incorporation guide</a> walks through the process step by step, including the tax implications of transferring a sole trade into a limited company.</p>
 
-<h2>Real Numbers: Three Side Hustle Scenarios</h2>
+<h2>Real Numbers: Three Side Hustle Scenarios (2025/26 Rates)</h2>
 
 <p><strong>Scenario 1: Low profit, stable day job.</strong> You earn £35,000 from employment. Your side hustle makes £8,000 profit. As a sole trader, the tax is roughly £1,200. As a limited company, the corporation tax is £1,520, and extracting the remaining £6,480 as dividends costs another £540 (basic rate). Total limited company cost: £2,060. Sole trader wins by £860.</p>
 
@@ -190,4 +190,4 @@ keyTakeaways:
 
 <p>If you are unsure, run the numbers for your specific situation. The difference between <strong>limited company vs sole trader</strong> depends entirely on your income levels, your extraction timing, and your growth plans. There is no universal right answer.</p>
 
-<p>Our team at Holloway Davies works with side hustle owners across every sector, from freelance consultants in Shoreditch to tradespeople in the Manchester Northern Quarter. We are <a href="/about">ICAEW qualified</a> and we see the full range of structures in practice. If you want a proper comparison for your numbers, <a href="/contact">get in touch</a>.</p>
+<p>Our team at Holloway Davies works with side hustle owners across every sector, from freelance consultants in Shoreditch to tradespeople in the Manchester Northern Quarter. We see the full range of structures in practice. If you want a proper comparison for your numbers, <a href="/contact">get in touch</a>.</p>

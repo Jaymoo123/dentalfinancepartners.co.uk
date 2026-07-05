@@ -288,8 +288,8 @@ faqs:
 
 <p>Not all accountants are R&D specialists. General practice accountants may not have the technical knowledge to prepare a robust claim. Here is what to look for.</p>
 
-<h3>ICAEW Qualification and R&D Experience</h3>
-<p>Look for a firm that is ICAEW qualified and has a track record of R&D claims. Ask how many claims they have submitted in the last 12 months. Ask about their enquiry rate. A good specialist will have a low enquiry rate because their claims are well-prepared.</p>
+<h3>Recognised Professional Qualification and R&D Experience</h3>
+<p>Look for a firm whose advisers hold a recognised professional qualification and have a track record of R&D claims. Ask how many claims they have submitted in the last 12 months. Ask about their enquiry rate. A good specialist will have a low enquiry rate because their claims are well-prepared.</p>
 
 <h3>Sector Knowledge</h3>
 <p>Your specialist should understand your industry. A software R&D claim is very different from a manufacturing claim. The technical narrative must reflect the specific challenges of your field. We have prepared claims for software firms in Shoreditch, engineering firms in Sheffield's Kelham Island, and biotech firms in Cambridge. Sector knowledge matters.</p>

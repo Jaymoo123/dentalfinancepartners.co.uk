@@ -184,7 +184,7 @@ keyTakeaways:
 <li>Have you handled a property incorporation before? Can you walk me through the process?</li>
 <li>What software do you use for bookkeeping and tax returns?</li>
 <li>Do you have experience with the former furnished holiday lettings (FHL) regime and the transition to standard property income rules from April 2025?</li>
-<li>Are you ICAEW, ACCA, or CIMA qualified? (Professional body membership matters for technical competence and indemnity insurance.)</li>
+<li>Are you ACCA or CIMA qualified? (Professional body membership matters for technical competence and indemnity insurance.)</li>
 </ul>
 
 <p><strong>Red flags to watch for:</strong></p>

@@ -132,7 +132,7 @@ keyTakeaways:
 
 <h3>Check Their Professional Qualifications</h3>
 
-<p>Look for accountants who are members of the ICAEW, ACCA, or CIMA. These qualifications require ongoing professional development and adherence to strict ethical standards. An ICAEW qualified accountant, for example, has passed rigorous exams and must complete continuing professional development each year.</p>
+<p>Look for accountants who are members of the ACCA or CIMA. These qualifications require ongoing professional development and adherence to strict ethical standards. A qualified chartered accountant, for example, has passed rigorous exams and must complete continuing professional development each year.</p>
 
 <h3>Ask About Software and Technology</h3>
 

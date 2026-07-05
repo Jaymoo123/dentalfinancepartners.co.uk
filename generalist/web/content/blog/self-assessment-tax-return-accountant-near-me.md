@@ -69,7 +69,7 @@ keyTakeaways:
 <p>Not all accountants are the same. Here is what to check before you appoint one.</p>
 
 <h3>Qualification</h3>
-<p>Look for a recognised qualification: ICAEW, ACCA, AAT, or CIMA. Our team at <a href="/about">Holloway Davies</a> work to high professional standards and carry professional indemnity insurance. An unqualified preparer might be cheaper, but you have no recourse if they make a mistake that costs you in penalties or interest.</p>
+<p>Look for a recognised qualification: ACCA, AAT, or CIMA. Our team at <a href="/about">Holloway Davies</a> work to high professional standards and carry professional indemnity insurance. An unqualified preparer might be cheaper, but you have no recourse if they make a mistake that costs you in penalties or interest.</p>
 
 <h3>Experience with Your Type of Work</h3>
 <p>Ask whether they regularly handle returns for your specific situation. A contractor inside IR35 has very different filing needs to a freelance graphic designer or a landlord with five properties. If you are a limited company director taking a mix of salary and dividends, the accountant needs to understand the interaction between your company's CT600 and your personal SA100. If you have overseas income or capital gains, that adds another layer.</p>

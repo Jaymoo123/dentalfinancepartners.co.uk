@@ -51,7 +51,7 @@ keyTakeaways:
 
 <p>The most common approach for a director of a small limited company is to take a salary set at the personal allowance threshold (£12,570 for 2025/26). This avoids income tax and employee National Insurance. The employer NI on this salary is £nil if you claim the Employment Allowance, or about £1,136 (15% on the £7,570 above the £5,000 secondary threshold) if you do not. Most small companies with one director do claim it.</p>
 
-<p>You then take the rest of your income as dividends. Dividends are not payroll. They come from post-tax profits and are declared through your personal tax return, not through payroll. The dividend allowance for 2025/26 is just £500. Above that, you pay dividend tax at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate).</p>
+<p>You then take the rest of your income as dividends. Dividends are not payroll. They come from post-tax profits and are declared through your personal tax return, not through payroll. The dividend allowance is just £500. For 2025/26, dividend tax rates are 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate). From 6 April 2026 these rise to 10.75% (basic rate) and 35.75% (higher rate); the additional rate remains 39.35%.</p>
 
 <p>You need payroll software to run payroll correctly. FreeAgent, Xero, and BrightPay are all common choices. If you use FreeAgent or Xero for your bookkeeping, the payroll module is built in. BrightPay is a standalone payroll package that integrates with most accounting software.</p>
 

@@ -162,13 +162,13 @@ keyTakeaways:
 
 <ul>
 <li><strong>Salary up to the personal allowance (£12,570):</strong> This preserves NI contribution record and uses the personal allowance. Employer NI is covered by Employment Allowance if available.</li>
-<li><strong>Dividends up to the basic rate band:</strong> Dividends within the basic rate band are taxed at 8.75% above the £500 allowance. This is lower than income tax.</li>
+<li><strong>Dividends up to the basic rate band:</strong> Dividends within the basic rate band are taxed at 8.75% (2025/26) above the £500 allowance. This is lower than income tax.</li>
 <li><strong>Bonuses above the basic rate band:</strong> Once you hit higher rate tax, bonuses may be cheaper than dividends because the company saves corporation tax at 25%.</li>
 <li><strong>Retained profits for reinvestment:</strong> Leave profits in the company if you do not need them. The company pays corporation tax but you avoid personal tax until withdrawal.</li>
 </ul>
 
 <h3>Real Example: Manchester Software Consultancy</h3>
-<p>A director of a 4-employee software consultancy in Manchester turning over £420,000 takes a £12,570 salary and £37,700 in dividends each year (basic rate band). The company pays 25% corporation tax on remaining profits. The director pays 8.75% dividend tax on £37,200 after the £500 allowance. Total personal tax: £3,255. Effective rate: 8.6% on the dividend portion.</p>
+<p>A director of a 4-employee software consultancy in Manchester turning over £420,000 takes a £12,570 salary and £37,700 in dividends each year (basic rate band). The company pays 25% corporation tax on remaining profits. The director pays 8.75% dividend tax (2025/26 rate) on £37,200 after the £500 allowance. Total personal tax: £3,255. Effective rate: 8.6% on the dividend portion.</p>
 
 <p>If that same director wanted to extract an extra £50,000, a bonus would cost 47.9% effective tax. A dividend would cost 49.7%. The bonus wins, but only just. The director might choose the dividend for simplicity and cash flow timing.</p>
 

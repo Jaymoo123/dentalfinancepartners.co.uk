@@ -98,7 +98,7 @@ keyTakeaways:
 
 <h3>Look for Sector Qualifications</h3>
 
-<p>The best school accountants are often members of the ICAEW, ACCA, or CIPFA, with additional qualifications or training in the public sector or charity accounting. Some firms hold the ICAEW's School and Academy Specialist status. That is a strong signal of expertise.</p>
+<p>The best school accountants are often members of the ACCA or CIPFA, with additional qualifications or training in the public sector or charity accounting. Some firms hold specialist status in school and academy accounting from a recognised professional body. That is a strong signal of expertise.</p>
 
 <h3>Ask About Their Software</h3>
 

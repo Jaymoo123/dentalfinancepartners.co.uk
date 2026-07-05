@@ -169,7 +169,7 @@ keyTakeaways:
 <p>If you need an HR accountant, look for these qualities.</p>
 
 <ul>
-<li><strong>ICAEW or ACCA qualified.</strong> This ensures they have the technical training to handle complex employment tax issues.</li>
+<li><strong>ACCA qualified.</strong> This ensures they have the technical training to handle complex employment tax issues.</li>
 <li><strong>Experience with your sector.</strong> Construction, tech, and creative industries each have specific payroll quirks.</li>
 <li><strong>Cloud-based.</strong> Your payroll data should be accessible to you online, not locked in a desktop system.</li>
 <li><strong>Transparent pricing.</strong> No hidden fees for year-end tasks or P11D preparation.</li>

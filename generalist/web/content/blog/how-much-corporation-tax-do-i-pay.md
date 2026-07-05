@@ -24,7 +24,7 @@ faqs:
   - question: "Is corporation tax 19% or 25% for small companies?"
     answer: "It depends on your profit level. Companies with augmented profits of £50,000 or less pay 19% (the small profits rate). Companies with profits over £250,000 pay 25% (the main rate). Between £50,000 and £250,000, marginal relief applies and the effective rate sits between 19% and 25%. The old flat 19% rate for all companies ended on 31 March 2023."
   - question: "Do I pay corporation tax if my company made a loss?"
-    answer: "No. Corporation tax is charged on taxable profits only. If your company makes a loss, you"
+    answer: "No. Corporation tax is charged on taxable profits only. If your company makes a loss, you have no corporation tax liability for that period. You may be able to carry the loss back against profits from the previous year to claim a repayment, or carry it forward indefinitely to reduce corporation tax in future profitable years."
 keyTakeaways:
   - "For 2025/26, UK limited companies pay corporation tax at 19% on profits up to £50,000 and at 25% on profits over £250,000."
   - "Profits between £50,000 and £250,000 attract marginal relief at a standard fraction of 3/200, giving an effective marginal rate of 26.5% through that band."

@@ -122,7 +122,7 @@ keyTakeaways:
 <p>Not all accounting and bookkeeping services are the same. Here are the specific things to check before you appoint one.</p>
 
 <ul>
-<li><strong>Qualification.</strong> Are they ICAEW, ACCA or AAT qualified? That matters because chartered accountants follow a code of ethics and maintain professional indemnity insurance.</li>
+<li><strong>Qualification.</strong> Are they ACCA or AAT qualified? That matters because qualified accountants follow a code of ethics and maintain professional indemnity insurance.</li>
 <li><strong>Software.</strong> Do they use Xero, FreeAgent, QuickBooks or Sage? Ask which one they recommend for your business type. A provider that only works in one platform may not be the best fit if you prefer another.</li>
 <li><strong>Communication.</strong> How do you contact them? Email only? Phone? A dedicated portal? A good provider responds within 24 hours during working days.</li>
 <li><strong>Scope.</strong> Does the fee cover VAT returns, payroll, year end accounts and corporation tax? Or is each one a separate charge? Get the full scope in writing.</li>

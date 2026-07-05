@@ -24,7 +24,7 @@ faqs:
   - question: "Do I need an accountant if I am a sole trader?"
     answer: "You are not legally required to use an accountant. You can file your self assessment return yourself through HMRC's online system. But if your affairs are anything beyond the simplest (single income stream, no expenses, no capital gains), an accountant usually saves you more in tax than they cost in fees. The average sole trader pays £150 to £350 for a self assessment return, and the tax planning advice alone often covers that cost."
   - question: "Can I claim accountant fees as a business expense?"
-    answer: "Yes. Accountant fees are a wholly and exclusively business expense for all business structures. Sole traders deduct them from trading profits before"
+    answer: "Yes. Accountant fees are a wholly and exclusively business expense for all business structures. Sole traders deduct them from trading profits before calculating their taxable income on their self assessment return. Limited companies deduct them as a company expense, reducing the corporation tax liability."
 keyTakeaways:
   - "Sole traders typically pay £150 to £350 per year for a basic self assessment return in 2025/26."
   - "A standard limited company package covering annual accounts, corporation tax, and a director's personal return costs £1,200 to £2,400 per year in 2025/26."
@@ -135,7 +135,7 @@ keyTakeaways:
 
 <p>A good accountant spots that you could claim the Annual Investment Allowance on that new van, or that your R&D activities qualify for a claim worth £15,000, or that your director's loan account is about to trigger a s.455 tax charge at 33.75% for loans made in 2025/26, rising to 35.75% for loans made from 6 April 2026. Those savings dwarf the fee difference.</p>
 
-<p>If you are a limited company director paying yourself through a combination of salary and dividends, the dividend tax rates for 2025/26 are 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate). The annual dividend allowance is now £500. Getting the tax planning wrong costs thousands. Getting it right pays for the accountant many times over.</p>
+<p>If you are a limited company director paying yourself through a combination of salary and dividends, the dividend tax rates for 2025/26 are 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate). From 6 April 2026, the rates rise to 10.75% (basic rate), 35.75% (higher rate), and 39.35% (additional rate). The annual dividend allowance is £500. Getting the tax planning wrong costs thousands. Getting it right pays for the accountant many times over.</p>
 
 <h2>What You Should Not Pay For</h2>
 
@@ -192,7 +192,7 @@ keyTakeaways:
 <li><strong>Partnership with bookkeeping and VAT:</strong> £1,800 to £3,600 per year (£150 to £300 per month).</li>
 </ul>
 
-<p>These are typical ranges for firms that are ICAEW qualified or similarly accredited. If you are paying significantly less, ask yourself what you are not getting. If you are paying significantly more, ask what extra value you are receiving.</p>
+<p>These are typical ranges for firms that are qualified and regulated by a recognised professional body. If you are paying significantly less, ask yourself what you are not getting. If you are paying significantly more, ask what extra value you are receiving.</p>
 
 <p>If you want a tailored quote for your specific situation, <a href="/contact">get in touch with our team</a>. We work with businesses across every sector and every structure, from sole traders in Bristol's Harbourside to limited companies in Leeds city centre. We will tell you exactly what you need and what it costs.</p>
 

@@ -26,7 +26,7 @@ faqs:
   - question: "Should I choose a fixed fee accountant or an hourly rate accountant?"
     answer: "A fixed fee accountant is better if you want predictable monthly costs and your business has consistent transaction volumes. Hourly rate accountants can work well if you have very seasonal activity or need significant ad hoc advisory work. For most small UK businesses, a fixed fee provides better budgeting certainty and encourages the accountant to be efficient."
   - question: "How do I know if a fixed fee accountant is good value?"
-    answer: "Compare the total annual cost against what is included. A £150 per month fee that covers annual accounts, corporation tax, personal tax return, confirmation statement, VAT returns, and payroll is better value than a £100 per month fee that only covers the basics and charges extra for everything else. Also check the accountant's qualifications. ICAEW chartered accountants have passed rigorous exams and follow strict professional standards."
+    answer: "Compare the total annual cost against what is included. A £150 per month fee that covers annual accounts, corporation tax, personal tax return, confirmation statement, VAT returns, and payroll is better value than a £100 per month fee that only covers the basics and charges extra for everything else. Also check the accountant's qualifications. A qualified chartered accountant has passed rigorous exams and follows strict professional standards."
 keyTakeaways:
   - "Fixed fee accountants in the UK typically charge sole traders and freelancers £50 to £120 per month in 2025/26."
   - "A single-director limited company with straightforward accounts typically pays £100 to £200 per month for a fixed fee package."
@@ -115,7 +115,7 @@ keyTakeaways:
 <li>Who will handle my work? A senior accountant or a junior? You want to know who you will deal with.</li>
 <li>What software do you use? If you use Xero or FreeAgent, make sure your accountant works with it. Some firms only use Sage or QuickBooks.</li>
 <li>Do you offer a fixed fee for the first year? Some firms offer a discounted rate for year one to attract new clients.</li>
-<li>Are you ICAEW qualified? Not all accountants are. ICAEW chartered accountants have passed rigorous exams and follow a strict code of ethics.</li>
+<li>Are you qualified with a recognised professional body? Not all accountants are. A qualified chartered accountant has passed rigorous exams and follows a strict code of ethics.</li>
 </ul>
 
 <h2>Is a Fixed Fee Accountant Right for Your Business?</h2>

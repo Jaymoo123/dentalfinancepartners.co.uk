@@ -139,7 +139,7 @@ keyTakeaways:
 <li><strong>Do they understand tronc?</strong> They should be able to explain the difference between a discretionary and a mandatory service charge, and the tax implications of each.</li>
 <li><strong>Do they use sector-specific software?</strong> Xero, FreeAgent, or Sage 50 for accounts. BrightPay or Iris for payroll. Dext for invoice capture. EPOS integration matters.</li>
 <li><strong>Do they visit your venue?</strong> A good accountant will want to see your operation. They will walk the floor, look at your stock room, and understand your flow of customers and cash.</li>
-<li><strong>Are they ICAEW qualified?</strong> The ICAEW qualification means the firm is regulated, insured, and subject to professional standards. At Holloway Davies, we work with hospitality businesses across the country, from a Shoreditch cocktail bar to a family-run hotel in the Lake District.</li>
+<li><strong>Are they professionally qualified?</strong> A recognised professional qualification (such as ACCA or CIMA) means the firm is regulated, insured, and subject to professional standards. At Holloway Davies, we work with hospitality businesses across the country, from a Shoreditch cocktail bar to a family-run hotel in the Lake District.</li>
 </ul>
 
 <p>You can <a href="/contact">book a free initial consultation</a> to discuss your specific situation. We will tell you honestly whether we are a good fit for your business.</p>

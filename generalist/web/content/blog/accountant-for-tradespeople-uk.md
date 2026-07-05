@@ -26,7 +26,7 @@ faqs:
   - question: "Can I claim back VAT on my van as a tradesperson?"
     answer: "Yes, if you are VAT registered on the standard scheme, you can reclaim the VAT on a van used solely for business. If you use the van for personal journeys too, you can only reclaim the business proportion. On the Flat Rate Scheme, you cannot reclaim VAT on van purchases unless you use the scheme's limited cost trader rules. Your accountant can advise on the best approach."
   - question: "How do I find a good accountant for tradespeople near me?"
-    answer: "Start by searching for \"accountant for tradespeople\" plus your location. Check the firm's website for evidence of trade clients. Ask for referrals from other tradespeople you know. During the consultation, ask about their experience with CIS, VAT, and IR35. Look for ICAEW or ACCA qualification. At Holloway Davies, we work with tradespeople across the UK and offer remote services, so location is less important than expertise."
+    answer: "Start by searching for \"accountant for tradespeople\" plus your location. Check the firm's website for evidence of trade clients. Ask for referrals from other tradespeople you know. During the consultation, ask about their experience with CIS, VAT, and IR35. Look for ACCA qualification or membership of another recognised professional body. At Holloway Davies, we work with tradespeople across the UK and offer remote services, so location is less important than expertise."
 keyTakeaways:
   - "Under CIS, subcontractors have 20% deducted from invoices by clients, rising to 30% if not registered for gross payment status with HMRC."
   - "The VAT registration threshold is £90,000 in a rolling 12-month period, after which tradespeople must choose between the standard scheme and the Flat Rate Scheme."
@@ -86,9 +86,9 @@ keyTakeaways:
 
 <p>Not all accountants who claim to work with tradespeople are the same. Here are the specific things to check before you appoint one.</p>
 
-<h3>ICAEW or ACCA Qualification</h3>
+<h3>Recognised Professional Qualification</h3>
 
-<p>Look for a firm that is ICAEW or ACCA qualified. These are the two main chartered accountancy bodies in the UK. They require ongoing professional development and adherence to strict ethical standards. At Holloway Davies, we hold ourselves to those same high professional standards.</p>
+<p>Look for a firm that is ACCA-qualified or holds a recognised professional body qualification. Such bodies require ongoing professional development and adherence to strict ethical standards. At Holloway Davies, we hold ourselves to those same high professional standards.</p>
 
 <h3>Experience with CIS and VAT</h3>
 

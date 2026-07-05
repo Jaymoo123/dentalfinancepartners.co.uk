@@ -22,7 +22,7 @@ faqs:
   - question: "Can I register a limited company with a name that is similar to an existing company?"
     answer: "Yes, Companies House does not pre-screen for similarity. The system only checks for exact matches. But if an existing company objects and the names are too similar, Companies House can direct you to change it after incorporation. You also risk trademark infringement if the existing company holds a registered trademark. Always check both the Companies House register and the IPO trademark database before registering."
   - question: "How much does it cost to register a limited company in the UK?"
-    answer: "The standard fee is £12 for online registration through Companies House WebFiling. Postal applications cost £40. Some formation agents charge more for same-day processing or additional services like a registered office address. The £12 fee covers the basic registration, and you receive the certificate of incorporation within 24 hours in most cases."
+    answer: "The standard fee is £50 for online registration through Companies House WebFiling (raised from £12 in May 2024). Postal applications cost £40. Some formation agents charge more for same-day processing or additional services like a registered office address. The £50 fee covers the basic registration, and you receive the certificate of incorporation within 24 hours in most cases."
   - question: "What happens if someone trademarks a name after I have registered my company?"
     answer: "If you registered your company name before the trademark was filed, you generally have prior use rights. You can continue trading under that name as long as you can prove you were using it in commerce before the trademark application date. But if the trademark holder challenges you, the legal costs can be significant. Registering your own trademark early gives you stronger protection."
   - question: "Do I need a registered office address, and can I use my home address?"
@@ -51,7 +51,7 @@ howToSteps:
     text: "Maintain registers of directors, shareholders, PSCs, and directors' residential addresses at your registered office or a SAIL address, and file a confirmation statement at least once every 12 months at an online fee of £13."
 ---
 
-<p>Registering a limited company in the UK is a process you can complete online in under 30 minutes. Companies House processes most applications within 24 hours, often the same day. The basic steps are simple: choose a name, provide a registered office address, appoint at least one director, and submit the IN01 form with a £12 fee.</p>
+<p>Registering a limited company in the UK is a process you can complete online in under 30 minutes. Companies House processes most applications within 24 hours, often the same day. The basic steps are simple: choose a name, provide a registered office address, appoint at least one director, and submit the IN01 form with a £50 fee.</p>
 
 <p>But what happens when the name you want is taken? Or worse, what if it's not taken but is so similar to an existing brand that you risk a legal dispute down the line? This is where most online guides stop. They cover the mechanics of registration but not the practical steps to avoid a name that could get you a cease-and-desist letter six months after you start trading.</p>
 
@@ -109,7 +109,7 @@ howToSteps:
 <li>A Standard Industrial Classification (SIC) code. This describes your business activity. Choose the one that best matches what you actually do.</li>
 </ul>
 
-<p>Submit the IN01 form online through the Companies House WebFiling service or through an authorised formation agent. The fee is £12 for online filing, £40 for postal. Most people use online because it is faster and cheaper.</p>
+<p>Submit the IN01 form online through the Companies House WebFiling service or through an authorised formation agent. The fee is £50 for online filing, £40 for postal. Most people use online because it is faster and cheaper.</p>
 
 <p>You will receive a certificate of incorporation within 24 hours in most cases. This is your company's birth certificate. It shows the company number, date of incorporation, and registered office address. Keep it safe. You will need it to open a business bank account and register for tax.</p>
 
@@ -131,7 +131,7 @@ howToSteps:
 
 <p>Another mistake is using a home address as the registered office without considering privacy. The registered office is public. Anyone can look it up on the Companies House register. If you work from home and do not want clients or competitors knowing your home address, use a registered office service. Many accountants offer this as part of their incorporation package.</p>
 
-<p>A third mistake is failing to file the confirmation statement on time. Every company must file a confirmation statement at least once every 12 months. The fee is £13 online. If you miss the deadline, Companies House will issue a warning, and eventually strike the company off the register. Set a reminder in your calendar as soon as you incorporate.</p>
+<p>A third mistake is failing to file the confirmation statement on time. Every company must file a confirmation statement at least once every 12 months. The fee is £34 online. If you miss the deadline, Companies House will issue a warning, and eventually strike the company off the register. Set a reminder in your calendar as soon as you incorporate.</p>
 
 <h2>When to Speak to an Accountant Before Incorporating</h2>
 

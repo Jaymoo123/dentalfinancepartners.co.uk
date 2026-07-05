@@ -105,8 +105,8 @@ keyTakeaways:
 <h3>They Know the VAT Rules for Marketplaces</h3>
 <p>If you sell to EU customers, Etsy handles VAT collection on some transactions but not all. The rules depend on whether you sell physical goods, digital products, or services. A specialist accountant will know when you need to register for VAT in another country and when Etsy's IOSS scheme covers you.</p>
 
-<h3>They Are ICAEW or ACCA Qualified</h3>
-<p>Qualification matters. An ICAEW or ACCA qualified accountant has passed rigorous exams and follows a professional code of conduct. They also carry professional indemnity insurance. That protects you if they make a mistake.</p>
+<h3>They Hold a Recognised Professional Qualification</h3>
+<p>Qualification matters. An ACCA-qualified accountant has passed rigorous exams and follows a professional code of conduct. They also carry professional indemnity insurance. That protects you if they make a mistake.</p>
 
 <p>We have experience working with creative businesses, including Etsy sellers, makers, and designers.</p>
 
