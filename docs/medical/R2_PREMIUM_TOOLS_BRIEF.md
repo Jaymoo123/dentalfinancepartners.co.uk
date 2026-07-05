@@ -227,7 +227,10 @@ posts remain untouched and the island renders nothing.
 
 ---
 
-## Section 2 — Goldens (derived by EXECUTING the libs)
+## Section 2
+
+> **CRITICAL UPDATE (2026-07-06):** the incorporation lib's Class 4 rate was corrected 9% -> 6% (commit 91f95969) AFTER this brief was written. The INC golden figures below are the 9%-era values; the SHIPPED goldens in premium-tools.test.ts were re-derived against the corrected lib (INC-A: soleTrader 44,881.60 / ltd 46,854.10 / savings -1,972.50). Trust the test file, not this table.
+ — Goldens (derived by EXECUTING the libs)
 
 All figures below were produced by EXECUTING the three compute libs in Node on
 2026-07-06 (not hand-traced), with conservation checks. The premium test file

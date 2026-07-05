@@ -14,6 +14,8 @@ import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
 import { topicFromCategory } from "@/lib/intent/deriveTopic";
 import { TopicOverrideProvider } from "@/components/intent/IntentProvider";
+import { topicForBlogSlug } from "@/lib/intent/taxonomy";
+import { PremiumUpgrade } from "@/components/tools/premium/PremiumUpgrade";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -71,6 +73,11 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
   // Resolve topic from category for intent personalisation surfaces.
   // topicFromCategory slugifies post.category and looks up the taxonomy.
   const topic = topicFromCategory(post.category);
+
+  // Resolve the premium topic from the categorySlug prop (the slug-derived
+  // contract: FLAT routing means the page passes categorySlug and the premium
+  // island must use it, never window.location or URL parsing).
+  const premiumTopic = topicForBlogSlug(categorySlug);
 
   const takeaways =
     post.keyTakeaways && post.keyTakeaways.length > 0 ? post.keyTakeaways : null;
@@ -197,13 +204,30 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 <div dangerouslySetInnerHTML={{ __html: midSplit.before }} />
                 {midSplit.after ? (
                   <>
-                    {/* Mid-scroll injection: InlineMiniLeadForm before the second
-                        half. Topic is the human display label from the post (used
-                        as a readable tag in the lead message prefix). */}
+                    {/* Mid-scroll injection: PremiumUpgrade (premium tool island)
+                        placed before InlineMiniLeadForm. Resolves from the slug-
+                        derived premiumTopic so the gate never touches the URL.
+                        Renders nothing for topics with no premium tool (gp-practice
+                        and null). */}
+                    <PremiumUpgrade
+                      topic={premiumTopic}
+                      placement="blog"
+                      category={categorySlug}
+                    />
+                    {/* InlineMiniLeadForm follows after the premium tool. */}
                     <InlineMiniLeadForm topic={post.category} />
                     <div dangerouslySetInnerHTML={{ __html: midSplit.after }} />
                   </>
-                ) : null}
+                ) : (
+                  /* Short-post fallback: fewer than 4 h2s, no mid-split.
+                     PremiumUpgrade is placed after the article body so mapped
+                     categories still get the tool on short posts. */
+                  <PremiumUpgrade
+                    topic={premiumTopic}
+                    placement="blog"
+                    category={categorySlug}
+                  />
+                )}
               </div>
 
               {post.faqs && post.faqs.length > 0 ? (

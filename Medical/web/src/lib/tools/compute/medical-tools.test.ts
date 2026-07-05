@@ -166,10 +166,10 @@ describe("calcIncorporation — golden tests (pinned to OLD component outputs)",
     //   higherBand = 74870 * 0.4 = 29948
     //   additional = (122430-112570) * 0.45 = 9860 * 0.45 = 4437
     //   incomeTax = 41925
-    //   NI: niable1 = min(85000-12570, 37700) = 37700 * 0.09 = 3393
+    //   NI: niable1 = min(85000-12570, 37700) = 37700 * 0.06 = 2262
     //       niable2 = (85000-50270) * 0.02 = 34730 * 0.02 = 694.6
     //   NI = 4087.6
-    //   totalTax = 41925 + 4087.6 = 46012.6
+    //   totalTax = 41925 + 4087.6 = 44881.6
     // Ltd:
     //   companyProfit = 85000; CT = 21250; profitAfterCT = 63750
     //   dividendAmount = 63750 - 12570 = 51180
