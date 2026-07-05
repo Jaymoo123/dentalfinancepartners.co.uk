@@ -63,7 +63,7 @@ export const TOPICS: Topic[] = [
     blogCategorySlugs: ["limited-company-tax"],
     primaryCalculator: "salary-dividend-optimiser",
     ctaCopy: "Optimise your salary and dividend split",
-    resourceId: null,
+    resourceId: "limited-company",
   },
   {
     key: "sole-trader",
@@ -71,7 +71,7 @@ export const TOPICS: Topic[] = [
     blogCategorySlugs: ["sole-trader-and-self-employment"],
     primaryCalculator: "take-home-pay-calculator",
     ctaCopy: "Calculate your take-home pay as a sole trader",
-    resourceId: null,
+    resourceId: "sole-trader",
   },
   {
     key: "vat-mtd",
@@ -79,7 +79,7 @@ export const TOPICS: Topic[] = [
     blogCategorySlugs: ["vat-and-making-tax-digital"],
     primaryCalculator: "vat-scheme-comparator",
     ctaCopy: "Compare VAT schemes and find the right one",
-    resourceId: null,
+    resourceId: "vat-mtd",
   },
   {
     key: "payroll",
@@ -87,7 +87,7 @@ export const TOPICS: Topic[] = [
     blogCategorySlugs: ["payroll-and-paye"],
     primaryCalculator: "employer-ni-calculator",
     ctaCopy: "Calculate your employer National Insurance bill",
-    resourceId: null,
+    resourceId: "payroll",
   },
   {
     key: "rnd",
@@ -98,7 +98,7 @@ export const TOPICS: Topic[] = [
     blogCategorySlugs: ["randd-tax-credits"],
     primaryCalculator: "rd-tax-credit-estimator",
     ctaCopy: "Estimate your R&D tax credit claim",
-    resourceId: null,
+    resourceId: "rnd",
   },
   {
     key: "incorporation",
@@ -106,7 +106,7 @@ export const TOPICS: Topic[] = [
     blogCategorySlugs: ["incorporation-and-structure"],
     primaryCalculator: "salary-dividend-optimiser",
     ctaCopy: "See what you could save by incorporating",
-    resourceId: null,
+    resourceId: "incorporation",
   },
   {
     key: "exit-cgt",
@@ -114,7 +114,7 @@ export const TOPICS: Topic[] = [
     blogCategorySlugs: ["exit-and-capital-gains"],
     primaryCalculator: "badr-cgt-calculator",
     ctaCopy: "Estimate your capital gains and BADR relief",
-    resourceId: null,
+    resourceId: "exit-cgt",
   },
   {
     key: "director-pay",
@@ -122,7 +122,7 @@ export const TOPICS: Topic[] = [
     blogCategorySlugs: ["director-pay-and-dividends"],
     primaryCalculator: "salary-dividend-optimiser",
     ctaCopy: "Find the most tax-efficient way to pay yourself",
-    resourceId: null,
+    resourceId: "director-pay",
   },
   {
     key: "compliance",

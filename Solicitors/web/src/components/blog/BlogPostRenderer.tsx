@@ -13,6 +13,8 @@ import { extractHeadings } from "@/lib/markdown-utils";
 import { calculateReadTime } from "@/lib/blog";
 import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
+import { PremiumUpgrade } from "@/components/tools/premium/PremiumUpgrade";
+import { topicForBlogSlug } from "@/lib/intent/taxonomy";
 
 type RelatedItem = {
   slug: string;
@@ -64,6 +66,9 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
   const credit = post.imageCredit;
 
   const midSplit = splitContentAtMidScroll(post.contentHtml);
+  // Derive the topic key from the category slug so the premium island receives
+  // the canonical topic, not the human category label.
+  const blogTopic = topicForBlogSlug(categorySlug);
 
   return (
     <>
@@ -202,6 +207,16 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
 
               <div className="article-body prose-blog mt-10">
                 <div dangerouslySetInnerHTML={{ __html: midSplit.before }} />
+                {/* Premium island: injected in the early split (after the first content
+                    block), before the R1 mid-scroll capture. PremiumUpgrade renders
+                    nothing when the topic has no registered premium config, so posts in
+                    non-mapped categories are unchanged. min-height on the section inside
+                    PremiumUpgrade guards against CLS. */}
+                <PremiumUpgrade
+                  topic={blogTopic}
+                  placement="blog"
+                  category={categorySlug}
+                />
                 {midSplit.after ? (
                   <>
                     <InlineMiniLeadForm topic={post.category} />

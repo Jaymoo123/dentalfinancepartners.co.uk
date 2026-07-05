@@ -67,7 +67,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>A <strong>partnership or LLP has no shares</strong>, so it can only complete an <strong>asset (business) sale</strong>. Goodwill, work in progress, debtors, fixtures and client relationships are transferred individually, and clients move across by consent or novation. An <strong>incorporated firm</strong>, a limited company or a licensed ABS, can instead do a <strong>share sale</strong>, where the buyer acquires the company that already holds the practice, its contracts and its history.</p>
 
-<p>If you operate as an unincorporated practice but want the option of a later share sale, you can incorporate first. Section 162 incorporation relief can roll the business into a company and defer the gain on that transfer, setting up a cleaner share disposal down the line. Each route carries different tax, liability and SRA-authorisation consequences, so model the comparison before committing. For a fuller breakdown, see <a href="/blog/practice-sale-succession/asset-sale-vs-share-sale-uk-law-firm">asset sale vs share sale for a UK law firm</a>.</p>
+<p>If you operate as an unincorporated practice but want the option of a later share sale, you can incorporate first. Section 162 incorporation relief can roll the business into a company and defer the gain on that transfer, setting up a cleaner share disposal down the line. Each route carries different tax, liability and SRA-authorisation consequences, so model the comparison before committing. For a fuller breakdown, see <a href="/blog/practice-succession-sale/asset-sale-vs-share-sale-uk-law-firm">asset sale vs share sale for a UK law firm</a>.</p>
 
 <h2>Marketing, Due Diligence and Documentation</h2>
 
@@ -99,11 +99,11 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li><strong>18%</strong> from 6 April 2026 onwards.</li>
 </ul>
 
-<p>That rising scale makes <strong>completion timing a live planning lever</strong>. A sale completing in the 2025/26 window is taxed at 14% on qualifying gains, while the same gain crossing into 6 April 2026 steps up to 18%, so the calendar around year end can move the bill materially. Where gains exceed the lifetime limit, or BADR does not apply, the standard CGT rates of <strong>18% and 24%</strong> (from 30 October 2024) apply instead, against an annual exempt amount of <strong>£3,000</strong> for 2025/26. For the detail on how goodwill is taxed and evidenced, see <a href="/blog/practice-sale-succession/goodwill-tax-treatment-law-firm-sale">goodwill tax treatment on a law firm sale</a>.</p>
+<p>That rising scale makes <strong>completion timing a live planning lever</strong>. A sale completing in the 2025/26 window is taxed at 14% on qualifying gains, while the same gain crossing into 6 April 2026 steps up to 18%, so the calendar around year end can move the bill materially. Where gains exceed the lifetime limit, or BADR does not apply, the standard CGT rates of <strong>18% and 24%</strong> (from 30 October 2024) apply instead, against an annual exempt amount of <strong>£3,000</strong> for 2025/26. For the detail on how goodwill is taxed and evidenced, see <a href="/blog/practice-succession-sale/goodwill-tax-treatment-law-firm-sale">goodwill tax treatment on a law firm sale</a>.</p>
 
 <h3>Work in Progress and Debtors</h3>
 
-<p>Work in progress and debtors are <strong>income, not capital</strong>. They represent unbilled and billed earnings of the practice and are taxed at income tax rates in the seller's hands, which can create a substantial liability where WIP balances are large. Because the treatment differs so sharply from goodwill, the agreement should split consideration between capital items (goodwill, fixtures) and income items (WIP, debtors) rather than blending them. How and when you bill or transfer WIP affects the outcome, so plan it with the buyer. See <a href="/blog/practice-sale-succession/wip-treatment-on-law-firm-sale">WIP treatment on a law firm sale</a> for the mechanics.</p>
+<p>Work in progress and debtors are <strong>income, not capital</strong>. They represent unbilled and billed earnings of the practice and are taxed at income tax rates in the seller's hands, which can create a substantial liability where WIP balances are large. Because the treatment differs so sharply from goodwill, the agreement should split consideration between capital items (goodwill, fixtures) and income items (WIP, debtors) rather than blending them. How and when you bill or transfer WIP affects the outcome, so plan it with the buyer. See <a href="/blog/practice-succession-sale/wip-treatment-on-law-firm-sale">WIP treatment on a law firm sale</a> for the mechanics.</p>
 
 <h3>Partnership and Allocation Points</h3>
 
@@ -130,5 +130,5 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
 <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">Related guide</p>
 <p style="color: var(--muted); margin-bottom: 1rem;">Go deeper on the tax mechanics behind a practice sale: how goodwill is taxed as capital, how WIP and debtors are taxed as income, and how to weigh an asset sale against a share sale.</p>
-<p><a href="/blog/practice-sale-succession/goodwill-tax-treatment-law-firm-sale" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Goodwill tax treatment on a law firm sale &rarr;</a></p>
+<p><a href="/blog/practice-succession-sale/goodwill-tax-treatment-law-firm-sale" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Goodwill tax treatment on a law firm sale &rarr;</a></p>
 </div>

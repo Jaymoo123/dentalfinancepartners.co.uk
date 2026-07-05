@@ -58,7 +58,7 @@ faqs:
 
 <p>If the seller qualifies for <strong>Business Asset Disposal Relief (BADR)</strong>, the CGT rate on qualifying gains up to the £1 million lifetime limit is <strong>14%</strong> for disposals to 5 April 2026, rising to <strong>18%</strong> from 6 April 2026. BADR requires the qualifying conditions to be met throughout the two-year period to disposal. For solicitors completing late in 2025/26, the step up from 14% to 18% on 6 April 2026 is a live timing point on the goodwill element.</p>
 
-<p>So on the same deal you can have two very different tax treatments side by side: goodwill taxed as a capital gain (potentially at 14%), and WIP and debtors taxed as income at up to 45% plus Class 4 national insurance. That contrast is exactly why the split has to be done carefully. For the goodwill side of the analysis, see our guide to the <a href="/blog/practice-sale-succession/goodwill-tax-treatment-law-firm-sale">tax treatment of goodwill on a law firm sale</a>.</p>
+<p>So on the same deal you can have two very different tax treatments side by side: goodwill taxed as a capital gain (potentially at 14%), and WIP and debtors taxed as income at up to 45% plus Class 4 national insurance. That contrast is exactly why the split has to be done carefully. For the goodwill side of the analysis, see our guide to the <a href="/blog/practice-succession-sale/goodwill-tax-treatment-law-firm-sale">tax treatment of goodwill on a law firm sale</a>.</p>
 
 <h2>Why the Sale Agreement Must Split Goodwill From WIP and Debtors</h2>
 
@@ -110,7 +110,7 @@ faqs:
 
 <p>In the sale agreement and on the tax return, the two elements are kept apart. The goodwill figure is a capital gain. If the seller qualifies for BADR and is within the lifetime limit, that gain is charged at 14% (to 5 April 2026), after the annual exempt amount. The WIP and debtors figure is income: it is brought into account under ITTOIA 2005 sections 182 to 185 and charged to income tax at the seller's marginal rate, plus Class 4 national insurance.</p>
 
-<p>The practical lesson is not that one structure dodges tax and another does not. It is that the same pound is taxed very differently depending on whether it is goodwill or WIP. A seller who understands the split, prices it correctly in the agreement and reports each part properly avoids both an unexpected income tax charge and an HMRC challenge to the allocation. For the wider mechanics of how a practice is sold, see our <a href="/blog/practice-sale-succession/asset-sale-vs-share-sale-uk-law-firm">comparison of asset sales and share sales for law firms</a> and our <a href="/blog/practice-succession-sale/solicitor-practice-sale-guide">guide to selling a solicitors' practice</a>.</p>
+<p>The practical lesson is not that one structure dodges tax and another does not. It is that the same pound is taxed very differently depending on whether it is goodwill or WIP. A seller who understands the split, prices it correctly in the agreement and reports each part properly avoids both an unexpected income tax charge and an HMRC challenge to the allocation. For the wider mechanics of how a practice is sold, see our <a href="/blog/practice-succession-sale/asset-sale-vs-share-sale-uk-law-firm">comparison of asset sales and share sales for law firms</a> and our <a href="/blog/practice-succession-sale/solicitor-practice-sale-guide">guide to selling a solicitors' practice</a>.</p>
 
 <h2>Common Mistakes Solicitors Make With WIP on a Sale</h2>
 

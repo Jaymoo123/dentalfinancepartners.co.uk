@@ -128,8 +128,9 @@ Dentists → Medical (FLAT blog routing! use `scripts/medical_flat_link_audit.py
 - digital-agency: no `.vercel` link; weakest traffic; wave 5.
 - Deploy gotchas for fresh Vercel projects: framework preset must be Next.js, root dir `<site>/web`, "Include files outside root directory" ON.
 
-## Harness lesson (for any successor agent)
-`npm test --workspace <pkg> 2>&1 | tail` in Git Bash can MASK failures even with `set -e -o pipefail` (the npm.cmd shim). NEVER trust "=== OK ===" markers alone: always grep the output for "failed|npm error" AND for the expected pass counts before declaring a battery green.
+## Harness lessons (for any successor agent)
+1. `npm test --workspace <pkg> 2>&1 | tail` in Git Bash can MASK failures even with `set -e -o pipefail` (the npm.cmd shim). NEVER trust "=== OK ===" markers alone: always grep the output for "failed|npm error" AND for the expected pass counts before declaring a battery green.
+2. **Gates bind to the FINAL tree, not to when you ran them.** S-1 shipped with a post-gate content edit (category normalisation) that changed 10 post URLs and broke 22 internal links in prod for a few hours; the R2 gate caught it. Rule: ANY edit after a gate re-runs that gate before ship. Corollary: renaming a blog category MOVES its posts' URLs — always pair with content-link sweep + a permanent redirect in next.config.
 
 ## RESUME HERE
 **Current position (2026-07-05 late evening): WAVE-1 R1 FULLY SHIPPED AND VERIFIED.** G-0 (`deploy/generalist/2026-07-05-g0`), G-1 (`deploy/generalist/2026-07-05-g1`, commit `700ff921`) and S-1 (`deploy/solicitors/2026-07-05-s1`, commit `9a3930e9`) are live in production. Both sites: chokepoint probes A+B+C PASS (money path proven end-to-end incl. probe-secret→source='test' rewrite), live-surface batteries green, compliance fixes live on Solicitors. Property-harm audit CLEAN (Property/ diff vs baseline empty; web-shared changes additive-only: new leads/ module + registry status flips + continuity-test update + package.json export; Property prod 200/200; NO Property deploys occurred). LEAD_PROBE_SECRET set on both site projects + root .env.

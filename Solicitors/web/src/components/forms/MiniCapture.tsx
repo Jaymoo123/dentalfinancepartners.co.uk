@@ -43,6 +43,10 @@ export function MiniCapture({
   className = "my-8 rounded-2xl border-l-4 border-[var(--primary)] bg-[var(--surface-elevated)] p-6 sm:p-8",
   experimentKey,
   exposeOnView = true,
+  messagePlaceholder,
+  messageMinLength,
+  messageMinWords,
+  onSuccess,
 }: {
   /** Surface id for analytics (form tracking + GA label), e.g. "calc_result". */
   formId: string;
@@ -61,6 +65,27 @@ export function MiniCapture({
   experimentKey?: string;
   /** Set false when the parent surface already fires the exposure itself. */
   exposeOnView?: boolean;
+  /**
+   * Optional: custom placeholder text for the message textarea.
+   * Parity with Property MiniCapture. When absent the existing default is used.
+   */
+  messagePlaceholder?: string;
+  /**
+   * Optional: minimum character count for the message field (additive, overrides
+   * the default 10-char minimum only when supplied). Parity with Property.
+   */
+  messageMinLength?: number;
+  /**
+   * Optional: minimum word count for the message field. When supplied, validation
+   * also requires at least this many whitespace-separated words. Parity with Property.
+   */
+  messageMinWords?: number;
+  /**
+   * Optional: callback fired after a successful lead submission (before the
+   * success state is rendered). Parity with Property's ResultGateModal wiring:
+   * used to reveal the gated result immediately on submit.
+   */
+  onSuccess?: () => void;
 }) {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -86,6 +111,9 @@ export function MiniCapture({
 
   const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
 
+  const effectiveMinLength = messageMinLength ?? 10;
+  const effectiveMinWords = messageMinWords ?? 0;
+
   const validate = useCallback((data: FormData) => {
     const errs: Record<string, string> = {};
     if (String(data.get("full_name") || "").trim().length < 2)
@@ -95,12 +123,17 @@ export function MiniCapture({
     const digits = String(data.get("phone") || "").replace(/\D/g, "");
     if (digits.length < 10)
       errs.phone = "Enter a phone number we can call you on.";
-    if (String(data.get("message") || "").trim().length < 10)
+    const msgVal = String(data.get("message") || "").trim();
+    const msgTooShort = msgVal.length < effectiveMinLength;
+    const msgTooFewWords =
+      effectiveMinWords > 0 &&
+      msgVal.split(/\s+/).filter(Boolean).length < effectiveMinWords;
+    if (msgTooShort || msgTooFewWords)
       errs.message = "Tell us a sentence or two about your situation.";
     if (!data.get("consent"))
       errs.consent = "Please tick the box to continue.";
     return errs;
-  }, []);
+  }, [effectiveMinLength, effectiveMinWords]);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -164,6 +197,7 @@ export function MiniCapture({
     form.reset();
     setConsent(false);
     setEnquiryRef("");
+    onSuccess?.();
   }
 
   return (
@@ -316,7 +350,7 @@ export function MiniCapture({
               required
               rows={3}
               maxLength={1000}
-              placeholder="A sentence or two about your situation helps us prepare"
+              placeholder={messagePlaceholder ?? "A sentence or two about your situation helps us prepare"}
               className={`${inputClass} min-h-[6rem] resize-y py-3`}
               aria-invalid={!!fieldErrors.message}
               aria-describedby={fieldErrors.message ? `${formId}-err-message` : undefined}

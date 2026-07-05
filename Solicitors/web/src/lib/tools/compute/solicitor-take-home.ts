@@ -2,21 +2,29 @@
  * Solicitor take-home compute lib (pure TypeScript, no React/window/document/fetch).
  *
  * Extracted from SolicitorTakeHomeCalculator.tsx.
- * Tax year: 2025/26 UK rates.
+ * Tax year: 2026/27 UK rates (updated from 2025/26).
  *
  * FIGURES TRACED:
- * - Personal allowance £12,570 (HMRC 2025/26)
- * - Basic rate limit £50,270 / higher rate limit £125,140 (HMRC 2025/26)
- * - Class 4 NI lower £12,570, upper £50,270 (HMRC 2025/26); rates 6%/2%
- * - Primary NI threshold £12,570, secondary £9,100 (HMRC 2025/26)
- * - Employee NI basic 8%, employer NI 15% (FA 2025 — from April 2025)
- * - Dividend allowance £500 (2024/25 onwards)
- * - Dividend tax 8.75%/33.75%/39.35% (2023/24 onwards)
+ * - Personal allowance £12,570 (HMRC 2026/27, unchanged)
+ * - Basic rate limit £50,270 / higher rate limit £125,140 (HMRC 2026/27, unchanged)
+ * - Class 4 NI lower £12,570, upper £50,270 (HMRC 2026/27, unchanged); rates 6%/2%
+ * - Primary NI threshold £12,570, secondary £9,100 (HMRC 2026/27)
+ * - Employee NI basic 8%, employer NI 15% (FA 2025 — from April 2025, unchanged)
+ * - Dividend allowance £500 (2024/25 onwards, unchanged)
+ * - Dividend tax 10.75%/35.75%/39.35% (FA 2026 s.4, from 6 April 2026)
+ *   HP §3: "from 6 April 2026 (Finance Act 2026 c.11 s.4) ordinary 10.75% / upper 35.75%,
+ *   additional 39.35% unchanged"
  * - CT small profits rate 19% (profits <= 50,000), main rate 25%, marginal 26.5% (FA 2023)
+ *
+ * MANAGER-ORDERED FIX (2026-07-05, estate CRO parity R2):
+ *   Dividend rates updated from 8.75%/33.75% (2025/26) to 10.75%/35.75% (2026/27 FA 2026 s.4).
+ *   Additional rate 39.35% unchanged. All outputs relabelled 2026/27 basis.
+ *   HP §3 locked; estate ground truth confirmed 2026-07-05.
  *
  * LIMITATIONS: Partnership and LLP are tax-transparent (same as sole trader).
  * Ltd assumes min-salary (£12,570), remainder as dividend, £2,500 admin cost,
- * no Employment Allowance. Matches old calculator output exactly.
+ * no Employment Allowance. Matches old calculator output exactly except for the
+ * updated 2026/27 dividend rates.
  */
 
 const PERSONAL_ALLOWANCE = 12570;
@@ -32,8 +40,9 @@ const INCOME_BASIC = 0.20;
 const INCOME_HIGHER = 0.40;
 const INCOME_ADDITIONAL = 0.45;
 const DIVIDEND_ALLOWANCE = 500;
-const DIVIDEND_BASIC = 0.0875;
-const DIVIDEND_HIGHER = 0.3375;
+// FA 2026 s.4: dividend rates from 6 April 2026 (HP §3)
+const DIVIDEND_BASIC = 0.1075;
+const DIVIDEND_HIGHER = 0.3575;
 const DIVIDEND_ADDITIONAL = 0.3935;
 const CT_SMALL_THRESHOLD = 50000;
 const CT_MAIN_RATE = 0.25;

@@ -15,6 +15,8 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { CalcPromoCard } from "@/components/blog/CalcPromoCard";
 import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
+import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
+import { topicForBlogSlug } from "@/lib/intent/taxonomy";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -64,6 +66,11 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
     : null;
 
   const midSplit = splitContentAtMidScroll(post.contentHtml);
+
+  // Resolve the topic using the SLUG (not the human label `post.category`).
+  // topicForBlogSlug uses the slugified category key, which is the correct
+  // taxonomy lookup — post.category is the human display label, not the slug.
+  const topic = topicForBlogSlug(categorySlug);
 
   return (
     <>
@@ -222,10 +229,18 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 <div dangerouslySetInnerHTML={{ __html: midSplit.before }} />
                 {midSplit.after ? (
                   <>
+                    {/* Mid-scroll injection: InlineMiniLeadForm (unchanged) plus the
+                        premium tool for this category. topic is resolved from the
+                        category SLUG, not the human label post.category. */}
                     <InlineMiniLeadForm topic={post.category} />
+                    <PremiumUpgrade topic={topic} placement="blog" category={categorySlug} />
                     <div dangerouslySetInnerHTML={{ __html: midSplit.after }} />
                   </>
-                ) : null}
+                ) : (
+                  /* Short posts (<4 H2s) get no mid-split. Add a premium tool fallback
+                     at the end of the article body so they still get a tool. */
+                  <PremiumUpgrade topic={topic} placement="blog" category={categorySlug} />
+                )}
               </div>
 
               <InlinePrompt

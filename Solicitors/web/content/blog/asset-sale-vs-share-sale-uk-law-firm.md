@@ -63,7 +63,7 @@ faqs:
 
 <p><strong>WIP and debtors are trading income.</strong> When unbilled time and outstanding bills are sold or billed as a trading receipt, they are taxed at income tax rates plus Class 4 National Insurance, not at CGT rates, and they do not qualify for BADR. This matters because income tax can reach 40% or 45% at the margin, well above the CGT rates.</p>
 
-<p>The practical consequence is that the sale agreement must split the consideration clearly between goodwill and fixed assets (capital) and WIP and debtors (income). A vague single price invites HMRC to tax more of the deal as income than the seller intended. For the detail on each element, see our <a href="/blog/practice-sale-succession/goodwill-tax-treatment-law-firm-sale">goodwill tax treatment guide</a> and our <a href="/blog/practice-sale-succession/wip-treatment-on-law-firm-sale">guide to WIP on a law firm sale</a>.</p>
+<p>The practical consequence is that the sale agreement must split the consideration clearly between goodwill and fixed assets (capital) and WIP and debtors (income). A vague single price invites HMRC to tax more of the deal as income than the seller intended. For the detail on each element, see our <a href="/blog/practice-succession-sale/goodwill-tax-treatment-law-firm-sale">goodwill tax treatment guide</a> and our <a href="/blog/practice-succession-sale/wip-treatment-on-law-firm-sale">guide to WIP on a law firm sale</a>.</p>
 
 <h3>Standard CGT Rates and the Annual Exempt Amount</h3>
 

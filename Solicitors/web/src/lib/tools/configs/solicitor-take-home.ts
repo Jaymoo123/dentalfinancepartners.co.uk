@@ -8,11 +8,11 @@ export const solicitorTakeHomeTool: GenericTool = {
   name: "Solicitor Take-Home Calculator",
   category: "Income Tax",
   oneLiner:
-    "Compare sole trader, partnership/LLP and limited company on annual net take-home. UK 2025/26 rates.",
+    "Compare sole trader, partnership/LLP and limited company on annual net take-home. UK 2026/27 rates.",
   embedHeight: 520,
-  metaTitle: "Solicitor Take-Home Calculator 2025/26 | Sole Trader vs LLP vs Ltd",
+  metaTitle: "Solicitor Take-Home Calculator 2026/27 | Sole Trader vs LLP vs Ltd",
   metaDescription:
-    "Free solicitor take-home calculator. Compare sole trader, partnership/LLP and limited company structures on net annual income. UK 2025/26 income tax and NI.",
+    "Free solicitor take-home calculator. Compare sole trader, partnership/LLP and limited company structures on net annual income. UK 2026/27 income tax and NI.",
   intro:
     "Choosing the right structure affects your annual net take-home more than most solicitors realise. Enter your profit and pension contribution to see how sole trader, partnership/LLP and limited company compare on a like-for-like basis.",
   fields: [
@@ -60,7 +60,7 @@ export const solicitorTakeHomeTool: GenericTool = {
         tone: "good" as const,
       },
       rows,
-      note: "UK 2025/26. Partnership and LLP are tax-transparent (identical result). Ltd assumes £12,570 salary + dividend, £2,500 admin cost, no Employment Allowance.",
+      note: "UK 2026/27 (FA 2026 dividend rates from 6 April 2026: 10.75% basic / 35.75% higher / 39.35% additional). Partnership and LLP are tax-transparent (identical result). Ltd assumes £12,570 salary + dividend, £2,500 admin cost, no Employment Allowance.",
     };
   },
   explainer: {
@@ -68,7 +68,7 @@ export const solicitorTakeHomeTool: GenericTool = {
     paragraphs: [
       "For sole trader and partnership/LLP, profit is taxed as personal income (income tax at 20%/40%/45% plus Class 4 NI at 6%/2%). Both structures are tax-transparent so they produce the same result.",
       "For a limited company, the calculation applies corporation tax on profits (19% small/25% main rate), employer NI on the minimum salary (£12,570), then dividend tax on the remaining distributable profit. A fixed £2,500 annual admin cost is included.",
-      "The headline tax efficiency of Ltd over partnership/LLP is often smaller than expected at 2025/26 rates. The real reasons to incorporate (retained earnings, multiple shareholders, future share sale) usually matter more than the marginal tax saving.",
+      "The headline tax efficiency of Ltd over partnership/LLP has narrowed at 2026/27 rates following the FA 2026 dividend rise (basic rate 10.75%, higher rate 35.75%). The real reasons to incorporate (retained earnings, multiple shareholders, future share sale) usually matter more than the marginal tax saving.",
     ],
   },
   faqs: [
@@ -85,7 +85,7 @@ export const solicitorTakeHomeTool: GenericTool = {
     {
       question: "What pension contribution should I enter?",
       answer:
-        "Enter your planned annual personal pension contribution. This reduces your taxable income for all three structures (sole trader, partnership/LLP, and the Ltd salary/dividend split). The annual allowance is £60,000 (2025/26), tapering for high earners.",
+        "Enter your planned annual personal pension contribution. This reduces your taxable income for all three structures (sole trader, partnership/LLP, and the Ltd salary/dividend split). The annual allowance is £60,000 (2026/27), tapering for high earners.",
     },
   ],
 };

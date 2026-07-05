@@ -1,7 +1,7 @@
 ---
 title: "Law Firm EBITDA Multiples UK 2025/26: What's a Realistic Range?"
 slug: "law-firm-ebitda-multiples-uk-2025-26"
-canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-succession/law-firm-ebitda-multiples-uk-2025-26"
+canonical: "https://www.accountsforlawyers.co.uk/blog/practice-succession-sale/law-firm-ebitda-multiples-uk-2025-26"
 date: "2026-05-19"
 generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"

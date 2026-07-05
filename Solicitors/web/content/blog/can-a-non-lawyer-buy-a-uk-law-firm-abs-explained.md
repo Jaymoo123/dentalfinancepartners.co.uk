@@ -150,7 +150,7 @@ faqs:
 <li>Unlimited liability for all partners, including any non-lawyer investors, makes it unattractive for most external capital.</li>
 </ul>
 
-<p>For most non-lawyer buyers, the limited-company ABS is the default. It gives liability protection, sits comfortably with corporate and institutional investors, and keeps a clean route to a future share sale. For how that exit is taxed (goodwill as a capital asset, Business Asset Disposal Relief and the standard CGT rates), see our <a href="/blog/practice-sale-succession/asset-sale-vs-share-sale-uk-law-firm">asset sale versus share sale guide</a>.</p>
+<p>For most non-lawyer buyers, the limited-company ABS is the default. It gives liability protection, sits comfortably with corporate and institutional investors, and keeps a clean route to a future share sale. For how that exit is taxed (goodwill as a capital asset, Business Asset Disposal Relief and the standard CGT rates), see our <a href="/blog/practice-succession-sale/asset-sale-vs-share-sale-uk-law-firm">asset sale versus share sale guide</a>.</p>
 
 <h2>The deal flow: ABS acquisition timeline</h2>
 
@@ -164,7 +164,7 @@ faqs:
 <li><strong>Set-up stage</strong>: the ABS specialist solicitor is engaged, the governance and capital structure are agreed, and banking and financing relationships are established.</li>
 </ul>
 
-<p>A clean, well-resourced acquisition through the ABS route typically runs to a year or more from "deciding to acquire" to "completed under ABS ownership". Faster is possible but uncommon, because the licence sits on the critical path. For the funding side of the deal, see our <a href="/blog/practice-sale-succession/financing-a-uk-law-firm-acquisition">guide to financing a UK law firm acquisition</a>.</p>
+<p>A clean, well-resourced acquisition through the ABS route typically runs to a year or more from "deciding to acquire" to "completed under ABS ownership". Faster is possible but uncommon, because the licence sits on the critical path. For the funding side of the deal, see our <a href="/blog/practice-succession-sale/financing-a-uk-law-firm-acquisition">guide to financing a UK law firm acquisition</a>.</p>
 
 <h2>Common reasons ABS applications fail or take longer</h2>
 

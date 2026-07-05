@@ -38,7 +38,7 @@ faqs:
 
 <p>How that goodwill is taxed decides how much of the price you actually keep. Treat it correctly and the gain is charged to Capital Gains Tax (CGT), potentially at a reduced rate. Treat it as trading income by mistake and you can hand over a much larger slice in income tax and National Insurance. This article sets out how goodwill is taxed on the sale of an England and Wales law firm: the capital-versus-income line, the Business Asset Disposal Relief rate and its conditions, section 162 incorporation relief, and the relief the buyer can (and often cannot) claim.</p>
 
-<p>This page covers the tax. The mechanics of putting a number on the goodwill in the first place are dealt with separately in our guide to <a href="/blog/practice-succession-sale/law-firm-goodwill-valuation">how law firm goodwill is valued</a>, and the choice between an asset sale and a share sale is covered in <a href="/blog/practice-sale-succession/asset-sale-vs-share-sale-uk-law-firm">asset sale versus share sale for a UK law firm</a>.</p>
+<p>This page covers the tax. The mechanics of putting a number on the goodwill in the first place are dealt with separately in our guide to <a href="/blog/practice-succession-sale/law-firm-goodwill-valuation">how law firm goodwill is valued</a>, and the choice between an asset sale and a share sale is covered in <a href="/blog/practice-succession-sale/asset-sale-vs-share-sale-uk-law-firm">asset sale versus share sale for a UK law firm</a>.</p>
 
 <h2>What Counts as Goodwill in a Law Firm</h2>
 
@@ -59,7 +59,7 @@ faqs:
 
 <p>That distinction does real work. Income would be taxed at rates of up to 45%, with Class 4 National Insurance on top for a partner. A capital gain is taxed at 18% or 24%, and potentially less if a relief applies. Reporting goodwill as income, or letting the sale agreement blur the two, is an expensive error.</p>
 
-<p>It also matters because not everything in the deal is capital. <strong>Work in progress (WIP) and debtors are trading income</strong>, not goodwill. WIP is brought into account as an income receipt on a sale or cessation (ITTOIA 2005 ss.182 to 185) and is taxed at income tax rates plus Class 4 NIC, and billed debtors are simply trading receipts. The sale agreement therefore has to split the consideration cleanly: goodwill and fixed assets on the capital side, WIP and debtors on the income side. We deal with this in detail in our note on <a href="/blog/practice-sale-succession/wip-treatment-on-law-firm-sale">how WIP is treated on a law firm sale</a>. If the split is vague, HMRC can recharacterise part of what you thought was a capital gain as income.</p>
+<p>It also matters because not everything in the deal is capital. <strong>Work in progress (WIP) and debtors are trading income</strong>, not goodwill. WIP is brought into account as an income receipt on a sale or cessation (ITTOIA 2005 ss.182 to 185) and is taxed at income tax rates plus Class 4 NIC, and billed debtors are simply trading receipts. The sale agreement therefore has to split the consideration cleanly: goodwill and fixed assets on the capital side, WIP and debtors on the income side. We deal with this in detail in our note on <a href="/blog/practice-succession-sale/wip-treatment-on-law-firm-sale">how WIP is treated on a law firm sale</a>. If the split is vague, HMRC can recharacterise part of what you thought was a capital gain as income.</p>
 
 <h2>The Capital Gains Tax Rates That Apply</h2>
 

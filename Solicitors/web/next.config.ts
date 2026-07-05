@@ -27,6 +27,19 @@ const nextConfig: NextConfig = {
         destination: "https://www.accountsforlawyers.co.uk/:path*",
         permanent: true,
       },
+      // 2026-07-06: the duplicate category spelling "Practice Sale & Succession"
+      // was normalised to "Practice Succession & Sale", moving 10 post URLs.
+      // 301 the old slugs so indexed URLs and inbound links keep resolving.
+      {
+        source: "/blog/practice-sale-succession/:slug*",
+        destination: "/blog/practice-succession-sale/:slug*",
+        permanent: true,
+      },
+      {
+        source: "/blog/practice-sale-succession",
+        destination: "/blog/practice-succession-sale",
+        permanent: true,
+      },
     ];
   },
   async headers() {

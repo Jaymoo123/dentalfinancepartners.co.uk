@@ -101,7 +101,7 @@ faqs:
 <li><strong>18%</strong> for disposals from 6 April 2026.</li>
 </ul>
 
-<p>BADR requires the qualifying conditions to be held throughout the two-year period to disposal, and for a share sale it needs at least 5% of ordinary share capital and voting rights plus officer or employee status. Gains above the £1 million lifetime limit, or any gain that does not qualify, are taxed at the standard 18% or 24%. The step from 14% to 18% on 6 April 2026 makes the timing of a late-2025/26 completion a genuine planning point. For the full sale mechanics, see our guides on <a href="/blog/practice-sale-succession/asset-sale-vs-share-sale-uk-law-firm">asset sale versus share sale</a> and the <a href="/blog/practice-sale-succession/goodwill-tax-treatment-law-firm-sale">tax treatment of goodwill on a law firm sale</a>.</p>
+<p>BADR requires the qualifying conditions to be held throughout the two-year period to disposal, and for a share sale it needs at least 5% of ordinary share capital and voting rights plus officer or employee status. Gains above the £1 million lifetime limit, or any gain that does not qualify, are taxed at the standard 18% or 24%. The step from 14% to 18% on 6 April 2026 makes the timing of a late-2025/26 completion a genuine planning point. For the full sale mechanics, see our guides on <a href="/blog/practice-succession-sale/asset-sale-vs-share-sale-uk-law-firm">asset sale versus share sale</a> and the <a href="/blog/practice-succession-sale/goodwill-tax-treatment-law-firm-sale">tax treatment of goodwill on a law firm sale</a>.</p>
 
 <h2>Timing and forecasting</h2>
 

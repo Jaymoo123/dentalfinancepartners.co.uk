@@ -1,17 +1,22 @@
 /**
  * Golden tests for Solicitors site calculator compute libs.
  *
- * All values are pinned to the OLD component outputs (pre-extraction).
- * Any mismatch means the extraction changed behaviour — that is a STOP.
+ * All values are pinned to the current lib outputs (post R2 updates).
+ * Any mismatch means a lib changed behaviour — that is a STOP.
  *
- * FIGURES CHECKED (2026-06-11):
- * - SolicitorTakeHome: 2025/26 UK rates (income tax, Class 4 NI, dividend tax, CT).
- *   No stale-figure STOP found. Rates match 2025/26 HMRC published values.
+ * FIGURES CHECKED (2026-07-05 — R2 manager-ordered fixes applied):
+ * - SolicitorTakeHome: UPDATED to 2026/27 UK rates (FA 2026 s.4 dividend rates
+ *   10.75%/35.75%/39.35% from 6 Apr 2026, HP §3). Partnership/sole-trader golden
+ *   values are unchanged (no dividends). Ltd golden values updated to 2026/27
+ *   dividend rates. All outputs relabelled 2026/27 basis.
  * - FA2014SalariedMember: purely statutory test (FA 2014 s.863A-863G), no date-sensitive rates.
  *   No stale-figure STOP.
  * - LLPProfitShare: no tax rates, pure allocation arithmetic. No stale-figure STOP.
  * - LawFirmValuation: indicative market multiples, no statutory rates. No stale-figure STOP.
- * - SraReserve: indicative operational buffer, no statutory rates. No stale-figure STOP.
+ * - SraReserve: UPDATED exemption test (R2 flag F3). The old `avgBalance <= 250` was
+ *   WRONG against HP §5.G. Corrected to `averageBalance <= 10000 && maximumBalance <= 250000`.
+ *   The exemptionEligible field now requires averageBalance + maximumBalance inputs; when
+ *   omitted, exemptionEligible is undefined (not false).
  * - IndemnityPremium: indicative market rates, not statutory. No stale-figure STOP.
  */
 
@@ -24,10 +29,13 @@ import { calcSraReserve } from "./sra-client-account-reserve";
 import { calcIndemnityPremium } from "./indemnity-premium";
 
 // ── SolicitorTakeHomeCalculator golden tests ─────────────────────────────────
+// 2026/27 rates (updated R2 2026-07-05). Partnership/sole-trader arithmetic is
+// unchanged from 2025/26 (no dividends involved). Ltd arithmetic uses the updated
+// 2026/27 dividend rates: 10.75% basic / 35.75% higher / 39.35% additional (FA 2026 s.4).
 
-describe("calcSolicitorTakeHome — golden tests (pinned to OLD component outputs)", () => {
+describe("calcSolicitorTakeHome — golden tests (2026/27 rates, R2 updated)", () => {
   it("default inputs: profit=150000 pension=0", () => {
-    // Sole trader / partnership:
+    // Sole trader / partnership (unchanged from 2025/26 — no dividends):
     //   income tax: PA taper not triggered (150000 > 100000, so PA = max(0, 12570 - 25000) = 0)
     //   t = 150000; basic = 37700 => 7540; higher = (125140-50270)=74870 => 29948;
     //   additional = 150000 - 37700 - 74870 = 37430 => 37430 * 0.45 = 16843.5
@@ -238,39 +246,66 @@ describe("calcLawFirmValuation — golden tests (pinned to OLD component outputs
 });
 
 // ── SraReserveCalculator golden tests ───────────────────────────────────────
+// R2 update (2026-07-05): exemptionEligible API changed.
+// The field is undefined when averageBalance/maximumBalance are not supplied.
+// When supplied, the corrected Rule 12.2 test is: averageBalance <= 10000 AND
+// maximumBalance <= 250000 (HP §5.G; the old avgBalance <= 250 was WRONG).
 
-describe("calcSraReserve — golden tests (pinned to OLD component outputs)", () => {
-  it("default inputs: 150 matters, high volume, conveyancing", () => {
-    // avgBalance = 25000; peakClientMoney = 150*25000 = 3750000
+describe("calcSraReserve — golden tests (R2 corrected exemption, 2026-07-05)", () => {
+  it("default inputs: 150 matters, high volume, conveyancing — no exemption inputs", () => {
+    // avgBalancePerMatter = 25000; peakClientMoney = 150*25000 = 3750000
     // riskFactor = 0.025; suggestedReserve = 3750000*0.025 = 93750
     // lowReserve = 93750*0.7 = 65625; highReserve = 93750*1.5 = 140625
-    // exemptionEligible = false (peak > 10000)
+    // exemptionEligible = undefined (no averageBalance/maximumBalance supplied)
     const r = calcSraReserve({ openMatters: 150, volume: "high", matterType: "conveyancing" });
     expect(r.peakClientMoney).toBe(3750000);
     expect(r.suggestedReserve).toBeCloseTo(93750, 0);
     expect(r.lowReserve).toBeCloseTo(65625, 0);
     expect(r.highReserve).toBeCloseTo(140625, 0);
+    expect(r.exemptionEligible).toBeUndefined();
+  });
+
+  it("150 matters, high volume, conveyancing — exemption inputs provided (large firm, not exempt)", () => {
+    // averageBalance=150000 > 10000 -> not exempt
+    const r = calcSraReserve({ openMatters: 150, volume: "high", matterType: "conveyancing", averageBalance: 150000, maximumBalance: 3750000 });
     expect(r.exemptionEligible).toBe(false);
   });
 
   it("low volume private-client: risk factor 0.005", () => {
-    // avgBalance = 2500; peak = 50*2500 = 125000
+    // avgBalancePerMatter = 2500; peak = 50*2500 = 125000
     // reserve = 125000*0.005 = 625
     const r = calcSraReserve({ openMatters: 50, volume: "low", matterType: "private-client" });
     expect(r.suggestedReserve).toBeCloseTo(625, 0);
   });
 
-  it("de minimis exemption: peak <= 10000 AND avgBalance <= 250", () => {
-    // volume=low avgBalance=2500 -> exemption NOT eligible (avgBalance > 250)
-    const r1 = calcSraReserve({ openMatters: 4, volume: "low", matterType: "mixed" });
-    // 4*2500 = 10000, avgBalance=2500 > 250 -> not eligible
-    expect(r1.exemptionEligible).toBe(false);
+  it("corrected Rule 12.2 exemption: averageBalance <= 10000 AND maximumBalance <= 250000", () => {
+    // HP §5.G: average not exceeding £10,000 AND maximum not exceeding £250,000
+    // Eligible: averageBalance=8000 <= 10000, maximumBalance=200000 <= 250000
+    const rEligible = calcSraReserve({ openMatters: 4, volume: "low", matterType: "mixed", averageBalance: 8000, maximumBalance: 200000 });
+    expect(rEligible.exemptionEligible).toBe(true);
+    // Not eligible: averageBalance=12000 > 10000
+    const rAvgFail = calcSraReserve({ openMatters: 4, volume: "low", matterType: "mixed", averageBalance: 12000, maximumBalance: 200000 });
+    expect(rAvgFail.exemptionEligible).toBe(false);
+    // Not eligible: maximumBalance=260000 > 250000
+    const rMaxFail = calcSraReserve({ openMatters: 4, volume: "low", matterType: "mixed", averageBalance: 8000, maximumBalance: 260000 });
+    expect(rMaxFail.exemptionEligible).toBe(false);
   });
 
   it("very-high volume commercial: large reserve", () => {
     const r = calcSraReserve({ openMatters: 20, volume: "very-high", matterType: "commercial" });
-    // avgBalance=75000; peak=1500000; riskFactor=0.008; reserve=12000
+    // avgBalancePerMatter=75000; peak=1500000; riskFactor=0.008; reserve=12000
     expect(r.suggestedReserve).toBeCloseTo(12000, 0);
+  });
+
+  it("guard: £250 figure never appears in exemption eligibility (HP §5.G invariant)", () => {
+    // The corrected test uses 10000 (average) and 250000 (maximum), never 250.
+    // A balance of exactly 250 should have no special meaning.
+    const r = calcSraReserve({ openMatters: 1, volume: "low", matterType: "mixed", averageBalance: 250, maximumBalance: 5000 });
+    // averageBalance=250 <= 10000 AND maximumBalance=5000 <= 250000 -> eligible
+    expect(r.exemptionEligible).toBe(true);
+    // A balance just above 250 is also eligible (since 250 is not a threshold)
+    const r2 = calcSraReserve({ openMatters: 1, volume: "low", matterType: "mixed", averageBalance: 251, maximumBalance: 5000 });
+    expect(r2.exemptionEligible).toBe(true);
   });
 });
 

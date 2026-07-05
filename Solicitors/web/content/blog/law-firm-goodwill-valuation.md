@@ -100,7 +100,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>On a typical law firm sale, goodwill is the largest single component of the price, because a practice's worth is overwhelmingly its clients, reputation and recurring work rather than its physical kit. Tangible fixed assets (furniture, IT, fit-out) are usually modest by comparison.</p>
 
-<p>Two other elements are settled alongside goodwill but on their own terms. <strong>Work in progress and debtors are treated as income, not capital</strong>, so the sale agreement should split them out clearly from goodwill and deal with them separately (see our guides on <a href="/blog/practice-sale-succession/wip-treatment-on-law-firm-sale">how WIP is treated on a law firm sale</a> and the <a href="/blog/practice-accounting/wip-valuation-method-uk-law-firms">WIP valuation method for UK firms</a>). Because a partnership or LLP has no shares, its sale is an <a href="/blog/practice-sale-succession/asset-sale-vs-share-sale-uk-law-firm">asset sale rather than a share sale</a>, with the buyer acquiring goodwill, WIP, debtors and fixed assets and the outgoing partners' capital accounts settled in the deal.</p>
+<p>Two other elements are settled alongside goodwill but on their own terms. <strong>Work in progress and debtors are treated as income, not capital</strong>, so the sale agreement should split them out clearly from goodwill and deal with them separately (see our guides on <a href="/blog/practice-succession-sale/wip-treatment-on-law-firm-sale">how WIP is treated on a law firm sale</a> and the <a href="/blog/practice-accounting/wip-valuation-method-uk-law-firms">WIP valuation method for UK firms</a>). Because a partnership or LLP has no shares, its sale is an <a href="/blog/practice-succession-sale/asset-sale-vs-share-sale-uk-law-firm">asset sale rather than a share sale</a>, with the buyer acquiring goodwill, WIP, debtors and fixed assets and the outgoing partners' capital accounts settled in the deal.</p>
 
 <h2>Tax treatment: the high-level position</h2>
 
@@ -108,7 +108,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p><strong>Business Asset Disposal Relief (BADR)</strong> can reduce the CGT on qualifying gains, up to a <strong>£1 million lifetime limit per individual</strong>, provided the conditions are met over the two-year period to disposal. The relief was formerly called Entrepreneurs' Relief, but do not rely on the old headline rate: <strong>the BADR rate is 14% for disposals from 6 April 2025 to 5 April 2026, and 18% from 6 April 2026</strong> (it was 10% only up to 5 April 2025). Any gain above the £1 million lifetime limit, or any gain that does not qualify for BADR, is taxed at the <strong>standard individual CGT rates of 18% (within the basic-rate band) or 24% (above it)</strong>, with an annual exempt amount of £3,000 for 2025/26. The step up from 14% to 18% on 6 April 2026 makes completion timing a genuine planning point for late-2025/26 sales.</p>
 
-<p>This is the headline only. Partnership and LLP goodwill, section 162 incorporation relief, the buyer-side position, and the interaction with the salaried member rules all carry conditions and traps. For the full treatment, read our dedicated guide on <a href="/blog/practice-sale-succession/goodwill-tax-treatment-law-firm-sale">how goodwill is taxed when a law firm is sold</a>.</p>
+<p>This is the headline only. Partnership and LLP goodwill, section 162 incorporation relief, the buyer-side position, and the interaction with the salaried member rules all carry conditions and traps. For the full treatment, read our dedicated guide on <a href="/blog/practice-succession-sale/goodwill-tax-treatment-law-firm-sale">how goodwill is taxed when a law firm is sold</a>.</p>
 
 <h2>Practical steps for a defensible valuation</h2>
 
@@ -127,5 +127,5 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
 <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">Related guide</p>
 <p style="color: var(--muted); margin-bottom: 1rem;">Once you know what the goodwill is worth, the next question is the tax. Our companion guide walks through capital disposal, BADR by date band, and section 162 incorporation relief.</p>
-<p><a href="/blog/practice-sale-succession/goodwill-tax-treatment-law-firm-sale" style="color: var(--primary); font-weight: 600; text-decoration: underline;">How goodwill is taxed when a law firm is sold →</a></p>
+<p><a href="/blog/practice-succession-sale/goodwill-tax-treatment-law-firm-sale" style="color: var(--primary); font-weight: 600; text-decoration: underline;">How goodwill is taxed when a law firm is sold →</a></p>
 </div>

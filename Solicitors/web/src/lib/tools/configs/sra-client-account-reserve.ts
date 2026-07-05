@@ -64,17 +64,13 @@ export const sraClientAccountReserveTool: GenericTool = {
       { label: "Prudent (high)", value: gbp(Math.round(r.highReserve)) },
     ];
 
-    if (r.exemptionEligible) {
-      rows.unshift({ label: "De minimis status", value: "Likely Rule 12.2 exempt" });
-    }
-
+    // exemptionEligible is now undefined when averageBalance/maximumBalance not supplied
+    // (R2 fix: the old tool did not collect those inputs, so we never show exemption here)
     return {
       headline: {
-        label: r.exemptionEligible ? "Likely de minimis exempt" : "Indicative client money reserve",
+        label: "Indicative client money reserve",
         value: `${gbp(Math.round(r.lowReserve))} to ${gbp(Math.round(r.highReserve))}`,
-        sub: r.exemptionEligible
-          ? "Peak client money suggests possible Rule 12.2 exemption — confirm with your accountant"
-          : `Peak client money exposure: ~${gbp(Math.round(r.peakClientMoney))}`,
+        sub: `Peak client money exposure: ~${gbp(Math.round(r.peakClientMoney))}`,
         tone: "default" as const,
       },
       rows,
@@ -86,7 +82,7 @@ export const sraClientAccountReserveTool: GenericTool = {
     paragraphs: [
       "The SRA Accounts Rules (2019) do not mandate firms to hold a specific reserve against client money. However, prudent practice requires a buffer to cover: shortfalls discovered at reconciliation that need to be funded from office account pending investigation, residual balances awaiting client return, and contingency for client money interest payments.",
       "The calculator estimates peak client money exposure (matters x average balance) then applies a risk factor by matter type. Conveyancing attracts the highest factor due to fraud risk, fund misdirection, and registration errors. The range reflects variation in firm controls and the precision of your input estimates.",
-      "Rule 12.2 of the SRA Accounts Rules provides a de minimis exemption from the annual Accountant's Report obligation for firms where peak client money held is no more than £10,000 and average balance per client is no more than £250.",
+      "Rule 12.2 of the SRA Accounts Rules provides a de minimis exemption from the annual Accountant's Report obligation for firms where the average client-account balance in the period did not exceed £10,000 and the maximum balance did not exceed £250,000 (HP §5.G).",
     ],
   },
   faqs: [
