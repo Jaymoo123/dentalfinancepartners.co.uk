@@ -5,7 +5,7 @@ canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-and-successi
 date: "2026-05-18"
 generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
-category: "Practice Sale & Succession"
+category: "Practice Succession & Sale"
 metaTitle: "WIP on a Law Firm Sale: Income, Not Capital | Solicitors"
 metaDescription: "Work in progress and debtors are taxed as income on a law firm sale, not capital. Why the goodwill/WIP split matters, ss.182 to 185, valuation under FRS 102."
 altText: "UK solicitor reviewing law firm work in progress valuation before a practice sale"

@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";
 
 export const runtime = "edge";
+export const maxDuration = 10;
 
 const BRAND_COLOR = "#c41e3a";
 const BRAND_NAME = "Accounts for Lawyers";

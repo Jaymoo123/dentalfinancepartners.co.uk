@@ -5,7 +5,7 @@ canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-and-successi
 date: "2026-05-18"
 generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
-category: "Practice Sale & Succession"
+category: "Practice Succession & Sale"
 metaTitle: "Sole Practitioner Succession Planning for UK Solicitors"
 metaDescription: "How UK sole practitioner solicitors can plan succession, structure client transfers, use locum agreements, and manage SRA compliance. Practical guide with worked examples."
 altText: "UK solicitor sole practitioner reviewing succession plan documents with SRA compliance checklist"

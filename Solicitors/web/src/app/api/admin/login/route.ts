@@ -14,6 +14,7 @@
  * The credential is NEVER placed in a URL query parameter (OB-01 design).
  */
 export const runtime = "nodejs";
+export const maxDuration = 5;
 export const dynamic = "force-dynamic";
 
 import { NextRequest, NextResponse } from "next/server";

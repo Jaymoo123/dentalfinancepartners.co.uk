@@ -24,7 +24,8 @@ import type {
 } from "@/lib/health-check/types";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
-import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { submitSolicitorLead } from "@/lib/leads/submit-client";
+import { composeHealthCheckSummary } from "@/lib/lead-message";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
@@ -49,6 +50,8 @@ type Answers = {
   topConcern: string;
   // LD-04: consent is part of the Answers state so Step6 can bind it via update().
   consent: boolean;
+  // LD-03: honeypot field value, forwarded to the server.
+  enquiryRef: string;
 };
 
 const INITIAL: Answers = {
@@ -68,6 +71,7 @@ const INITIAL: Answers = {
   accountantSatisfaction: "",
   topConcern: "",
   consent: false,
+  enquiryRef: "",
 };
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -87,7 +91,7 @@ export function HealthCheckWizard() {
   const totalSteps = 6;
   const progress = useMemo(() => Math.round((step / totalSteps) * 100), [step, totalSteps]);
 
-  // SEC-08: wizard lifecycle tracking — no field values captured, only step + outcome.
+  // SEC-08: wizard lifecycle tracking - no field values captured, only step + outcome.
   const { onSubmit: trackFormSubmit, onLead } = useFormTracking("health_check_wizard");
 
   function update<K extends keyof Answers>(key: K, value: Answers[K]) {
@@ -180,56 +184,74 @@ export function HealthCheckWizard() {
     // LD-02: emit form_submit (step count = questionnaire steps completed)
     trackFormSubmit(totalSteps);
 
-    const { supabaseUrl, supabaseKey } = getSupabaseConfig();
-    if (supabaseUrl && supabaseKey) {
-      const summary = opportunities
-        .slice(0, 5)
-        .map((o, i) => `${i + 1}. [${o.severity.toUpperCase()}] ${o.title}`)
-        .join("\n");
-      const leadPayload = {
-        full_name: validatedAnswers.name,
-        email: validatedAnswers.email,
-        phone: "—",
-        role: validatedAnswers.role,
-        ...(validatedAnswers.firmName
-          ? { practice_name: validatedAnswers.firmName }
-          : {}),
-        message:
-          `Firm health check submission\n` +
-          `Role: ${validatedAnswers.role}\n` +
-          `Firm type: ${validatedAnswers.firmType}\n` +
-          `Practice area: ${validatedAnswers.practiceArea}\n` +
-          `Entity: ${validatedAnswers.entity}\n` +
-          `Profit pre-tax: £${validatedAnswers.profitPreTax.toLocaleString("en-GB")}\n` +
-          `Client money: ${validatedAnswers.clientMoneyVolume}\n` +
-          `COFA in place: ${validatedAnswers.cofaInPlace ? "yes" : "NO"}\n` +
-          `Exit horizon: ${validatedAnswers.exitHorizon}\n` +
-          `Accountant: ${validatedAnswers.accountantSatisfaction}\n\n` +
-          `Top opportunities (${opportunities.length}):\n${summary}\n\n` +
-          (validatedAnswers.topConcern ? `Top concern: ${validatedAnswers.topConcern}` : ""),
-        // PF-07: source from niche config, never a literal
-        source: niche.content_strategy.source_identifier,
-        source_url: typeof window !== "undefined" ? window.location.href : "/free-firm-health-check",
-        submitted_at: new Date().toISOString(),
-        // LD-04: real consent state from the step-6 checkbox; the stored text is
-        // exactly what the visitor saw next to it.
-        consent_given: a.consent,
-        consent_text: CONSENT_TEXT,
-        consent_at: new Date().toISOString(),
-        // LD-05: stitch visitor + session ids so this lead links to its analytics events
-        visitor_id: getVisitorId() ?? undefined,
-        session_id: getSessionId() ?? undefined,
-      };
+    // Build a short human-readable message for the partner inbox; full answers
+    // go into extras so the schema never grows unboundedly.
+    const message = composeHealthCheckSummary({
+      role: validatedAnswers.role,
+      firmType: validatedAnswers.firmType,
+      practiceArea: validatedAnswers.practiceArea,
+      entity: validatedAnswers.entity,
+      cofaInPlace: validatedAnswers.cofaInPlace,
+      topConcern: validatedAnswers.topConcern,
+    });
 
-      try {
-        const submitResult = await submitLead(leadPayload, supabaseUrl, supabaseKey);
-        if (submitResult.success) {
-          // First-party lead event only after a confirmed submission.
-          onLead({ role: validatedAnswers.role });
-        }
-      } catch {
-        // Non-critical: show findings regardless of submission status
+    // Niche qualifier answers that do not belong in top-level columns live in extras.
+    const topOpportunities = opportunities
+      .slice(0, 5)
+      .map((o) => ({ severity: o.severity, title: o.title }));
+
+    const extras: Record<string, unknown> = {
+      health_check: {
+        firmType: validatedAnswers.firmType,
+        practiceArea: validatedAnswers.practiceArea,
+        entity: validatedAnswers.entity,
+        feeEarnerCount: validatedAnswers.feeEarnerCount,
+        profitPreTax: validatedAnswers.profitPreTax,
+        partnerDrawings: validatedAnswers.partnerDrawings,
+        clientMoneyVolume: validatedAnswers.clientMoneyVolume,
+        cofaInPlace: validatedAnswers.cofaInPlace,
+        exitHorizon: validatedAnswers.exitHorizon,
+        accountantSatisfaction: validatedAnswers.accountantSatisfaction,
+        topConcern: validatedAnswers.topConcern,
+        opportunityCount: opportunities.length,
+        topOpportunities,
+      },
+      // practice_name is not a top-level leads column; preserve via extras.
+      ...(validatedAnswers.firmName ? { practice_name: validatedAnswers.firmName } : {}),
+    };
+
+    const leadPayload = {
+      full_name: validatedAnswers.name,
+      email: validatedAnswers.email,
+      // No phone collected in the health-check wizard; pass captureMode email_only
+      // so server validation does not require a phone number.
+      phone: "",
+      role: validatedAnswers.role,
+      message,
+      // PF-07: source from niche config, never a literal
+      source: niche.content_strategy.source_identifier,
+      source_url: typeof window !== "undefined" ? window.location.href : "/free-firm-health-check",
+      submitted_at: new Date().toISOString(),
+      // LD-04: real consent state from the step-6 checkbox; the stored text is
+      // exactly what the visitor saw next to it.
+      consent_given: a.consent,
+      consent_text: CONSENT_TEXT,
+      consent_at: new Date().toISOString(),
+      // LD-05: stitch visitor + session ids so this lead links to its analytics events
+      visitor_id: getVisitorId() ?? undefined,
+      session_id: getSessionId() ?? undefined,
+      extras,
+      captureMode: "email_only" as const,
+    };
+
+    try {
+      const submitResult = await submitSolicitorLead(leadPayload, a.enquiryRef);
+      if (submitResult.success) {
+        // First-party lead event only after a confirmed submission.
+        onLead({ role: validatedAnswers.role });
       }
+    } catch {
+      // Non-critical: show findings regardless of submission status
     }
 
     setResult({ opportunities, counts });
@@ -521,6 +543,24 @@ function Step6({ a, update }: { a: Answers; update: <K extends keyof Answers>(k:
       <p className="text-sm text-[var(--ink-soft)]">
         Last check before we generate. We&apos;ll show your top items on this page and follow up to <strong>{a.email}</strong>.
       </p>
+
+      {/* LD-03: honeypot -- visually hidden, server stores flagged when non-empty */}
+      <div
+        aria-hidden="true"
+        style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }}
+      >
+        <label htmlFor="hc-enquiry-ref">Reference (leave blank)</label>
+        <input
+          id="hc-enquiry-ref"
+          type="text"
+          name="enquiry_ref"
+          tabIndex={-1}
+          autoComplete="off"
+          value={a.enquiryRef}
+          onChange={(e) => update("enquiryRef", e.target.value)}
+        />
+      </div>
+
       <dl className="mt-4 grid grid-cols-1 gap-3 text-sm sm:grid-cols-2">
         <ReviewRow label="Name" value={a.name} />
         <ReviewRow label="Email" value={a.email} />
@@ -560,7 +600,7 @@ function ReviewRow({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex items-start justify-between gap-3 border-b border-[var(--border)] py-1.5">
       <span className="text-[var(--muted)]">{label}</span>
-      <span className="text-right font-medium text-[var(--ink)]">{value || "—"}</span>
+      <span className="text-right font-medium text-[var(--ink)]">{value || "-"}</span>
     </div>
   );
 }

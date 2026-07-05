@@ -5,7 +5,7 @@ canonical: https://www.accountsforlawyers.co.uk/blog/practice-sale-and-successio
 date: '2026-05-18'
 generator: deepseek-chat/legacy-bulk
 author: Accounts for Lawyers Editorial Team
-category: Practice Sale & Succession
+category: Practice Succession & Sale
 metaTitle: 'Buying a UK Law Firm: Financial Due Diligence Guide'
 metaDescription: 'Run financial due diligence before buying a law firm: get at least 3 years of statutory accounts, value WIP conservatively, and review the SRA reports.'
 altText: UK solicitor reviewing law firm financial documents and due diligence checklist in a modern office

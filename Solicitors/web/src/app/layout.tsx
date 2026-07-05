@@ -2,10 +2,12 @@ import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { PageShell } from "@/components/layout/PageShell";
-import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
 import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
 import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
+import { IntentProvider } from "@/components/intent/IntentProvider";
+import { ReturningBar } from "@/components/intent/ReturningBar";
+import { DeepScrollModal } from "@/components/intent/DeepScrollModal";
 import { siteConfig } from "@/config/site";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -72,17 +74,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-GB">
-      <head>
-        <GoogleAnalytics measurementId={niche.seo.google_analytics_id} />
-      </head>
+      <head />
       <body
         className={`${plusJakarta.variable} ${cormorant.variable} ${plusJakarta.className} antialiased`}
       >
         {/*
          * AN-01 (opt-out posture): track by default under legitimate interest.
          * Visitor can opt out via the "Do not track me" footer link.
-         * GA4 tag retained alongside first-party analytics per Phase D spec
-         * (keep-or-drop-GA4 is a separate later call — do not remove GA4 here).
+         * COMPLIANCE FIX 1: GA4 (G-N6ZPRB3DSQ) is now loaded ONLY via
+         * ConsentedScripts (consent-gated). The previous unconditional
+         * <GoogleAnalytics> mount in <head> has been removed. GA never fires
+         * for visitors who have opted out.
          * SEC-08: analytics writes flow through /api/track (server-side
          * service-role only); ConsentProvider guards client-side consent state.
          * storagePrefix "afl" is FROZEN at adoption per Phase D frozen table.
@@ -95,8 +97,12 @@ export default function RootLayout({
             posture="opt-out"
             noTrackPrefixes={["/admin", "/embed"]}
           >
-            <ConsentedScripts />
-            <PageShell>{children}</PageShell>
+            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
+            <IntentProvider>
+              <PageShell>{children}</PageShell>
+              <ReturningBar />
+              <DeepScrollModal />
+            </IntentProvider>
           </AnalyticsProvider>
         </ConsentProvider>
       </body>

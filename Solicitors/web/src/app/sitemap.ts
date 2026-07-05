@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
 import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
 import { allTools } from "@/lib/tools/registry";
+import { getGuideSlugs } from "@/lib/solicitor-guides";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
@@ -15,6 +16,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/locations",
     "/blog",
     "/calculators",
+    "/solicitor-guides",
+    "/for-partners",
+    "/for-firm-buyers",
+    "/for-junior-solicitors",
+    "/for-locum-solicitors",
+    "/free-firm-health-check",
+    "/uk-solicitor-tax-rates",
+    "/specialist-vs-generalist-accountant",
     "/privacy-policy",
     "/terms",
     "/cookie-policy",
@@ -79,6 +88,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.75,
+      alternates: hreflang(url),
+    });
+  }
+
+  // Solicitor guide pages (derived from the content directory via getGuideSlugs)
+  for (const slug of getGuideSlugs()) {
+    const url = `${base}/solicitor-guides/${slug}`;
+    entries.push({
+      url,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
       alternates: hreflang(url),
     });
   }

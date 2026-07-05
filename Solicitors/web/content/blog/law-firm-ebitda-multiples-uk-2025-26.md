@@ -5,7 +5,7 @@ canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-succession/l
 date: "2026-05-19"
 generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
-category: "Practice Sale & Succession"
+category: "Practice Succession & Sale"
 metaTitle: "Law Firm EBITDA Multiples UK 2025/26 | Sale Valuation"
 metaDescription: "UK law firm EBITDA multiples 2025/26 by firm type. Conveyancing 0.8-1.5x. Mid-market 1.2-2.0x. Specialist 2-3x+. Normalised EBITDA, market drivers."
 altText: "Senior partners reviewing law firm EBITDA multiple analysis for sale planning"

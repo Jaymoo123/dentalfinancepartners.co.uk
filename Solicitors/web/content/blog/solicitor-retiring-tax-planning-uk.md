@@ -5,7 +5,7 @@ canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-and-successi
 date: "2026-05-18"
 generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
-category: "Practice Sale & Succession"
+category: "Practice Succession & Sale"
 metaTitle: "Solicitor Retirement Tax Planning UK | LLP Partner Exit Strategy"
 metaDescription: "UK solicitor retiring from an LLP? Tax on partnership profit share, goodwill, deferred consideration, and BADR. Practical guide for law firm partners."
 altText: "UK solicitor reviewing retirement tax planning documents with a legal-sector accountant in a modern law office"

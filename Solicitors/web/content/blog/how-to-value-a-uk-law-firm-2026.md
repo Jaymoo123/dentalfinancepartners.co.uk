@@ -5,7 +5,7 @@ canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-and-successi
 date: "2026-05-18"
 generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
-category: "Practice Sale & Succession"
+category: "Practice Succession & Sale"
 metaTitle: "How to Value a UK Law Firm in 2026 | Solicitor Valuation Guide"
 metaDescription: "Practical guide for UK solicitors on law firm valuation methods, profit multiples, goodwill valuation, and what drives a firm's sale price in 2025/26."
 altText: "UK law firm partner reviewing valuation documents in a modern office meeting room"

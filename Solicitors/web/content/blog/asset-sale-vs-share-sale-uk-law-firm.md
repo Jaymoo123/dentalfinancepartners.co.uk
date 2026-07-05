@@ -5,7 +5,7 @@ canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-and-successi
 date: "2026-05-18"
 generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
-category: "Practice Sale & Succession"
+category: "Practice Succession & Sale"
 metaTitle: "Asset Sale vs Share Sale: UK Law Firm Seller CGT and BADR Guide"
 metaDescription: "Asset sale vs share sale for a UK law firm: a partnership or LLP can only do an asset sale, a company an ABS can do a share sale. Seller CGT, BADR, TOGC explained."
 altText: "Two UK solicitors reviewing a law firm sale agreement at a meeting table with documents and a calculator"

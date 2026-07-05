@@ -5,7 +5,7 @@ canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-and-successi
 date: "2026-05-18"
 generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
-category: "Practice Sale & Succession"
+category: "Practice Succession & Sale"
 metaTitle: "Financing a UK Law Firm Acquisition: Solicitor's Guide"
 metaDescription: "How UK solicitors finance a law firm acquisition: bank lending, asset finance, vendor financing, and SRA compliance. Practical guide for firm buyers."
 altText: "UK solicitor reviewing law firm acquisition finance documents with a lender"

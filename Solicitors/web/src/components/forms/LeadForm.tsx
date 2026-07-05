@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
+import { submitSolicitorLead } from "@/lib/leads/submit-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
@@ -38,6 +39,7 @@ export function LeadForm({
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
   const [consent, setConsent] = useState(false);
+  const [enquiryRef, setEnquiryRef] = useState("");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -45,11 +47,8 @@ export function LeadForm({
     }
   }, []);
 
-  // SEC-08: form lifecycle tracking — no field values captured, only field names + outcome.
+  // SEC-08: form lifecycle tracking - no field values captured, only field names + outcome.
   const { onFieldFocus, onFieldBlur, onError, onSubmit: trackFormSubmit, onLead } = useFormTracking("lead_form");
-
-  const supabaseUrl = typeof process !== "undefined" ? process.env.NEXT_PUBLIC_SUPABASE_URL : undefined;
-  const supabaseKey = typeof process !== "undefined" ? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY : undefined;
 
   const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
 
@@ -66,7 +65,7 @@ export function LeadForm({
 
     // Phone: must have at least 10 digits and only allowed chars
     if (!ukPhoneRe.test(phone)) {
-      errs.phone = "Use only digits, spaces, +, -, ( ) — e.g. 07700 900123 or +44 20 1234 5678";
+      errs.phone = "Use only digits, spaces, +, -, ( ), e.g. 07700 900123 or +44 20 1234 5678";
     } else if (!hasMinDigits(phone, 10)) {
       errs.phone = "Enter at least 10 digits.";
     }
@@ -74,7 +73,7 @@ export function LeadForm({
     if (!role) errs.role = "Tell us whether you are an associate, owner, or group.";
 
     if (message.length > 0 && message.length < 10) {
-      errs.message = "If you add a note, a sentence or two is enough — but not just a word or two.";
+      errs.message = "If you add a note, a sentence or two is enough, but not just a word or two.";
     }
 
     if (!data.get("consent")) errs.consent = "Please tick the box to continue.";
@@ -88,8 +87,10 @@ export function LeadForm({
     const form = e.currentTarget;
     const data = new FormData(form);
 
-    // LD-03: honeypot — bots fill company_url; humans never see or tab to this field
-    if (String(data.get("company_url") || "").trim()) return;
+    // LD-03: honeypot value is forwarded to the server chokepoint which stores
+    // the row flagged when non-empty. We do NOT silently drop here: a real lead
+    // autofilled by a browser would have been lost with the old client-side drop.
+    const honeypotValue = enquiryRef;
 
     const errs = validate(data);
     setFieldErrors(errs);
@@ -105,14 +106,6 @@ export function LeadForm({
       return;
     }
 
-    if (!supabaseUrl || !supabaseKey) {
-      setStatus("error");
-      setErrorMessage(
-        "This form is not connected yet. Email us using the address on this page — we will pick it up the same day.",
-      );
-      return;
-    }
-
     setStatus("loading");
 
     // LD-02: emit form_submit with count of completed fields
@@ -122,14 +115,12 @@ export function LeadForm({
     trackFormSubmit(completedCount);
 
     // LD-05: stitch visitor + session ids so each lead row links to its analytics events
+    const practiceName = String(data.get("practiceName") || "").trim();
     const payload = {
       full_name: String(data.get("fullName") || "").trim(),
       email: String(data.get("email") || "").trim(),
       phone: String(data.get("phone") || "").trim(),
       role: String(data.get("role") || "").trim(),
-      ...(String(data.get("practiceName") || "").trim()
-        ? { practice_name: String(data.get("practiceName") || "").trim() }
-        : {}),
       message: String(data.get("message") || "").trim(),
       source: niche.content_strategy.source_identifier,
       source_url: sourceUrl || String(data.get("sourceUrl") || "").trim(),
@@ -139,43 +130,30 @@ export function LeadForm({
       consent_at: new Date().toISOString(),
       visitor_id: getVisitorId() ?? undefined,
       session_id: getSessionId() ?? undefined,
+      // practice_name is not a top-level leads column -- pass through extras so
+      // the data is never lost even when the column does not exist.
+      ...(practiceName ? { extras: { practice_name: practiceName } } : {}),
     };
 
-    try {
-      const res = await fetch(`${supabaseUrl}/rest/v1/leads`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "apikey": supabaseKey,
-          "Authorization": `Bearer ${supabaseKey}`,
-          "Prefer": "return=minimal"
-        },
-        body: JSON.stringify(payload),
-      });
+    const result = await submitSolicitorLead(payload, honeypotValue);
 
-      if (!res.ok) {
-        const errorText = await res.text().catch(() => "");
-        console.error("Form submission failed:", res.status, errorText);
-        throw new Error(`Request failed (${res.status})`);
-      }
-
-      console.log("Form submission success");
-
-      setStatus("success");
-      // LD-04: fire first-party lead event (replaces direct gtag conversion call)
-      onLead({ role: payload.role });
-      form.reset();
-      setConsent(false);
-      if (redirectOnSuccess) {
-        router.push("/thank-you");
-      }
-    } catch (err) {
-      console.error("Form submission error:", err);
+    if (!result.success) {
       setStatus("error");
-      const errMsg = err instanceof Error ? err.message : String(err);
       setErrorMessage(
-        `That did not go through (${errMsg}). Try again, or email us — either works.`
+        result.error ||
+          "That did not go through. Please try again, or contact us directly.",
       );
+      return;
+    }
+
+    setStatus("success");
+    // LD-04: fire first-party lead event (replaces direct gtag conversion call)
+    onLead({ role: payload.role });
+    form.reset();
+    setConsent(false);
+    setEnquiryRef("");
+    if (redirectOnSuccess) {
+      router.push("/thank-you");
     }
   }
 
@@ -185,7 +163,7 @@ export function LeadForm({
         className="rounded-xl border border-emerald-200 bg-emerald-50 p-6 text-emerald-900"
         role="status"
       >
-        <p className="font-semibold">Thank you — we have your message.</p>
+        <p className="font-semibold">Thank you. We have your message.</p>
         <p className="mt-2 text-sm">We will come back within one working day.</p>
       </div>
     );
@@ -200,10 +178,20 @@ export function LeadForm({
     >
       <input type="hidden" name="sourceUrl" value={sourceUrl} readOnly />
       <input type="hidden" name="practiceName" value="" readOnly />
-      {/* LD-03: honeypot — visually hidden, bots fill it, humans never reach it */}
+      {/* LD-03: honeypot -- visually hidden, bots fill it, humans never reach it.
+          Value is forwarded to the server which stores the row flagged -- the old
+          client-side silent drop has been removed so real leads are never lost. */}
       <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }}>
-        <label htmlFor="company_url">Company website (leave blank)</label>
-        <input id="company_url" type="text" name="company_url" tabIndex={-1} autoComplete="off" />
+        <label htmlFor="enquiry_ref">Reference (leave blank)</label>
+        <input
+          id="enquiry_ref"
+          type="text"
+          name="enquiry_ref"
+          tabIndex={-1}
+          autoComplete="off"
+          value={enquiryRef}
+          onChange={(e) => setEnquiryRef(e.target.value)}
+        />
       </div>
 
       <div>

@@ -5,7 +5,7 @@ canonical: "https://www.accountsforlawyers.co.uk/blog/practice-sale-and-successi
 date: "2026-05-18"
 generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
-category: "Practice Sale & Succession"
+category: "Practice Succession & Sale"
 metaTitle: "Merging Two UK Law Firms: Tax, SRA and Goodwill"
 metaDescription: "How a UK law firm merger is taxed: goodwill and CGT, the structure of the merged firm, SRA authorisation, client account transfers and PII continuity for solicitors."
 altText: "Two UK solicitors shaking hands across a desk in a modern law firm office, representing a law firm merger."
