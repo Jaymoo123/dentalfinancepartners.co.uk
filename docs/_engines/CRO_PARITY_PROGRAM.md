@@ -79,13 +79,13 @@ Status vocabulary: `pending / building / built / QA'd / gated / DEPLOYED(tag) / 
 
 ### Phase 0 — Baselines
 - [x] State doc created (this file)
-- [ ] B1 orphan migrations registered (22 files verified applied-on-prod 2026-07-05, see log) + apply-list reconciled
-- [ ] B2 web-shared console residue committed (after full Property battery)
-- [ ] B3 generalist 165-file remediation set committed
-- [ ] B4 optimisation_engine files committed
-- [ ] B5 durable docs committed
-- [ ] Pushed; branch `estate-cro-parity` + tag `baseline/estate-cro-2026-07-05` created + pushed
-- [ ] Memory index updated
+- [x] B1 orphan migrations registered — commit `d8b8d6f6` (22 files verified applied-on-prod 2026-07-05, see log)
+- [x] B2 web-shared console residue — commit `f5dc9d1f` (battery green first: web-shared 348/348, Property 1076/1076 + build, console build, generalist 33/33 + build)
+- [x] B3 generalist 165-file remediation set — commit `7053d489`
+- [x] B4 optimisation_engine files — commit `cca3cc8e` (py_compile lint gate passed)
+- [x] B5 durable docs + seranking kit — commit `69d125f0` (scratch left untracked by design)
+- [x] Pushed; branch `estate-cro-parity` + tag `baseline/estate-cro-2026-07-05` created + pushed (baselines also on origin/property-onsite-assistant-mvp)
+- [x] Memory index updated (`estate_cro_parity_program.md` + MEMORY.md line + delegation feedback tightened)
 
 ### Wave 1
 | step | generalist | Solicitors |
@@ -110,6 +110,8 @@ Dentists → Medical (FLAT blog routing! use `scripts/medical_flat_link_audit.py
 
 ## Gate results log
 - 2026-07-05: LIVE traffic/leads baseline queried (table above). 22 unregistered migrations verified applied on prod via object-existence batch query (all true; leads_source_valid CHECK includes all 8 keys + test; sites rows for cfp/cis present).
+- 2026-07-05: Phase 0 battery GREEN — web-shared 348/348, Property 1076/1076 (suite grew from ~961) + prod build, console build, generalist 33/33 + build. Baselines B1-B5 = d8b8d6f6, f5dc9d1f, 7053d489, cca3cc8e, 69d125f0; branch `estate-cro-parity` @ tag `baseline/estate-cro-2026-07-05`, pushed.
+- 2026-07-05: Parity-matrix audit (generalist+Solicitors vs 71-capability standard) running via Explore agent — results land in this log.
 
 ## Per-site quirks
 - Solicitors + Medical LeadForms currently post raw PostgREST with anon key (drift) — replaced by chokepoint in their waves. Solicitors honeypot `company_url` silent-drop is THE live lead-loss bug.
@@ -120,4 +122,4 @@ Dentists → Medical (FLAT blog routing! use `scripts/medical_flat_link_audit.py
 - Deploy gotchas for fresh Vercel projects: framework preset must be Next.js, root dir `<site>/web`, "Include files outside root directory" ON.
 
 ## RESUME HERE
-**Current position:** Phase 0 in progress. State doc just created. Next action = B1: edit `scripts/apply_web_analytics_migrations.py` to append the 22 verified-applied migrations (chronological order, commented "already applied to prod, registered retroactively 2026-07-05"), then `git add supabase/migrations/20260704000001_metric_consistency_visitor_id.sql scripts/apply_web_analytics_migrations.py docs/_engines/CRO_PARITY_PROGRAM.md` and commit as `cro-parity: B1 register 22 applied-but-unlisted migrations + program state doc`. Then B2 (run full Property battery first: web-shared 348 tests, Property build, Property ~961 tests, console build; then commit `packages/web-shared/console/adminData.ts` + `console/components/VisitorsTable.tsx`). Then B3 (generalist 165 files; gate = generalist tests+build). Then B4 (optimisation_engine 5 modified files, flake8 E9,F63,F7,F82). Then B5 (durable docs: `docs/console/METRIC_CONSISTENCY_AND_LOAD.md`, `docs/property/LEAD_NURTURE_AUDIT_FIX_KICKOFF.md`, `docs/property/REDESIGN_ARCHITECTURE.md`; leave scratch untracked). Then push, branch `estate-cro-parity`, tag, push. Then Phase 1 (G-0) — full gate pipeline above, OWNER SIGN-OFF before the deploy step.
+**Current position:** Phase 0 COMPLETE (all baselines committed + pushed; on branch `estate-cro-parity`). Phase 1 (G-0 generalist backlog release) in progress. Generalist tests+build already green in the Phase-0 battery. Next actions, in order: (1) `python scripts/predeploy_gate.py --site generalist` and (2) `python scripts/spinup_site_check.py generalist` — both must pass; (3) pre-deploy baseline snapshot → `docs/generalist/cro_baseline_2026-07-05.md` (live queries: 30d non-bot sessions, funnel event counts by event_name, leads by source, per the Measurement section of the plan); (4) OWNER SIGN-OFF with diff summary (G-0 payload = everything on the branch touching generalist: committed parity waves incl. honeypot fix + credential strip + keyTakeaways backfill + homepage rewrite + the B3 remediation set) + rollback plan (vercel rollback + git revert); (5) deploy: `VERCEL_ORG_ID=team_XF9WAygZX7SGk9Fo4tOAnihH VERCEL_PROJECT_ID=prj_rMK56yY2qcCPTObgwkQjVXQl8yl3 vercel deploy --prod --yes` from repo root, verify alias = www.hollowaydavies.co.uk; (6) post-deploy battery per Gate pipeline §7 (AN-01, headers, notify-401 probe, honeypot-filled browser submit = success UI + NO row, honeypot_health.py); (7) tag `deploy/generalist/2026-07-05` + push; (8) 48h soak before G-1. Meanwhile Phase-2 prep runs in parallel: parity-matrix Explore agent audit (generalist+Solicitors) is in flight; M1 (shared createLeadSubmitHandler factory in packages/web-shared/leads/server/ — MANAGER-DIRECT, additive-only, full battery after) can start once G-0 is out the door.
