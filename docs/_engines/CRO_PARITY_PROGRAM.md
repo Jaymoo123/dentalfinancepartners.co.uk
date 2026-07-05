@@ -46,7 +46,7 @@ Wave-1 prize at Property's 0.78%: generalist + solicitors ≈ 7-8 leads/mo each 
 - `Property/**` READ-ONLY. No Property deploys. Never edit `Property/web/src/app/api/leads/**`, `lib/lead-routing.ts`, pg_net triggers, Property Vercel env, frozen storage prefixes (ptp/hd/dfp/ma/afl/aff/cfp/bfp).
 - `packages/web-shared`: additive-only, MANAGER edits only. After ANY web-shared edit: `npm test --workspace packages/web-shared` (348) + `npm run build --workspace Property/web` + `npm test --workspace Property/web` (~961). Before deploying anything containing web-shared changes: build sweep of all 9 apps.
 - Supabase migrations: additive-only, no RLS changes on `leads`; git + MIGRATIONS-list registration in same commit → staging → owner sign-off → prod (`python scripts/apply_web_analytics_migrations.py {staging|prod} <substring>`).
-- Central pipeline probe before/after every deploy: `curl -s -o /dev/null -w "%{http_code}" https://www.propertytaxpartners.co.uk/api/leads/notify` → expect **401** (404 = ALL sites' notify down → incident).
+- Central pipeline probe before/after every deploy: `curl -s -o /dev/null -w "%{http_code}" https://www.propertytaxpartners.co.uk/api/leads/notify` → healthy = **200 on GET** (observed 2026-07-05; the route exists and responds). **404 = ALL sites' notify down → incident.**
 - Synthetic leads: ALWAYS `source='test'`. Never bare `vercel deploy` from repo root (root `.vercel` = Property!). Deploys: `VERCEL_ORG_ID=team_XF9WAygZX7SGk9Fo4tOAnihH VERCEL_PROJECT_ID=<prj> vercel deploy --prod --yes` with echo-first project ID.
 
 ## Vercel project IDs
@@ -90,9 +90,9 @@ Status vocabulary: `pending / building / built / QA'd / gated / DEPLOYED(tag) / 
 ### Wave 1
 | step | generalist | Solicitors |
 |---|---|---|
-| G-0 backlog release | pending | n/a |
-| Parity matrix audit | pending | pending |
-| M1 shared chokepoint factory | pending (estate-level, once) | — |
+| G-0 backlog release | **DEPLOYED(deploy/generalist/2026-07-05-g0) + post-deploy battery OVERALL GREEN (8/8)**; 48h soak until ~2026-07-07 17:15 BST | n/a |
+| Parity matrix audit | DONE 2026-07-05 (see log — 10 uncovered gaps folded into WP scopes) | DONE 2026-07-05 |
+| M1 shared chokepoint factory | building (factory+tests+export written; battery running) | — |
 | WS7 experiments wind-down | pending (estate-level, once, incl. construction-cis) | — |
 | R1: WS1 capture core (WP-A/WP-B) | pending | pending |
 | R1: WS2 intent layer (WP-C/WP-D) | pending | pending |
@@ -112,6 +112,9 @@ Dentists → Medical (FLAT blog routing! use `scripts/medical_flat_link_audit.py
 - 2026-07-05: LIVE traffic/leads baseline queried (table above). 22 unregistered migrations verified applied on prod via object-existence batch query (all true; leads_source_valid CHECK includes all 8 keys + test; sites rows for cfp/cis present).
 - 2026-07-05: Phase 0 battery GREEN — web-shared 348/348, Property 1076/1076 (suite grew from ~961) + prod build, console build, generalist 33/33 + build. Baselines B1-B5 = d8b8d6f6, f5dc9d1f, 7053d489, cca3cc8e, 69d125f0; branch `estate-cro-parity` @ tag `baseline/estate-cro-2026-07-05`, pushed.
 - 2026-07-05: Parity-matrix audit (generalist+Solicitors vs 71-capability standard) running via Explore agent — results land in this log.
+- 2026-07-05 G-0 pre-deploy gates ALL GREEN: frontmatter blocker found by predeploy_gate (21 BOM files + 1 unquoted colon-space scalar) fixed in `37da3bb8`; gate re-run PASS (61 pricing warnings non-blocking, pre-existing); generalist tests 33/33; build pass; spinup_site_check 12/12 PASS.
+- 2026-07-05 ~17:15 BST **G-0 DEPLOYED to production** (owner signed off; deployment `holloway-davies-fidissd4v`, target=production, Ready; tag `deploy/generalist/2026-07-05-g0`). Post-deploy battery via Haiku agent: **8/8 PASS** (routes 200; `enquiry_ref` live + no `company_url`; 55p live; Key-takeaways live; homepage "Small business accountants"; ingest 11 sessions/2h; honeypot_health clean; llms.txt OK). Baseline snapshot: `docs/generalist/cro_baseline_2026-07-05.md`. NOTE: Vercel CLI 54.x prints a misleading "Promote to production" JSON hint even on a real `--prod` deploy — always confirm via `vercel inspect` (target=production). CLI auth = stored login (VERCEL_TOKEN in .env is EMPTY — do not use --token).
+- 2026-07-05 Parity-matrix audit COMPLETE (Explore agent, 71 caps × 2 sites). 10 gaps beyond WS1-8 folded into scopes: S consent opt-out missing while cookie policy promises it (compliance!); S GA4 mounted outside consent gate; S health-check Wizard (no honeypot, phone "—" sentinel, qualifiers crammed into message → rewire to chokepoint + extras); chokepoint hardening (rate limiter + runtime/maxDuration — DONE in M1 factory); sitemap holes (S: whole /solicitor-guides fleet + 7 static routes; G: /templates, /accountant-near-me); S hand-registered category hubs → dynamic [category] route; PF-05 env examples (S missing entirely, G drifted); S raw <img> blog hero → next/image in WP-E; SEC-04 stragglers (admin/login, og, uk-tax-rates routes); minor (OG brand literals, S stale markdown-utils fork, S conventions doc).
 
 ## Per-site quirks
 - Solicitors + Medical LeadForms currently post raw PostgREST with anon key (drift) — replaced by chokepoint in their waves. Solicitors honeypot `company_url` silent-drop is THE live lead-loss bug.
