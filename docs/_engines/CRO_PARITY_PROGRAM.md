@@ -58,7 +58,7 @@ Wave-1 prize at Property's 0.78%: generalist + solicitors ≈ 7-8 leads/mo each 
 | Medical | medicalaccounts.co.uk | prj_50vByZ3rqXQQwCUeENUTBbNBB41n |
 | contractors-ir35 | contractor-finance-partners | prj_AJhtTBB8SMdKluzfCNvwCCqU1yii |
 | construction-cis | trade-tax-specialists | prj_zaehvfgdTKx0Ftc8GQVedmRnjp4g |
-| digital-agency | (NO local link — relink before its wave) | — |
+| digital-agency | agency-founder-finance (RELINKED 2026-07-06) | prj_roTeeTjzABAR7D649dTkq2ta4rQi |
 | Property (DO NOT DEPLOY) | property-tax-partners | prj_Di0U5vYZVPlkm7xcA3p9il9gyDzU |
 
 ## Gate pipeline (EVERY deploy, no skips)
@@ -119,6 +119,8 @@ If resuming cold: check `/workflows` or relaunch via the script paths in the wor
 **WAVE 2 CLOSED 2026-07-06: Dentists at FULL PARITY** (D-1 `9c9d852d`, D-2 `dfc01b11`, D-3 `92615fa6`; tags deploy/dentists/2026-07-06-d{1,2,3}; all probes PASS; resources+workbooks live; 372 tests). D-3 QA caught a would-be-total-outage (ResourceGate missing captureMode email_only = 400 on every download) + 57 pre-existing undefined var(--primary) usages swept. **Medical R1 + R2 LIVE (M-1, M-2 `c8810d1c` tag deploy/medical/2026-07-06-m2; Class 4 fix live; island verified in real post SSR after a silent-deploy-failure catch). R3 brief designing.** Twin wave (cfp+cis) R1 launching. Placeholder-phone posture: display removed where config phone is the 0000 placeholder (form-first per estate rule); owner to supply real numbers if wanted.
 
 **Owner 2026-07-06 (late): "ship the twins when green then finish medical" — twins R1 (wf_2f16225c-a51) ships on green; Medical R2 (wf_6ae5c288-742) then R3 complete wave 3. Standing ship-when-green covers all.**
+
+**AGENCY PREP STARTED 2026-07-06 (owner: "then start agency prep"):** (1) Vercel RELINKED (digital-agency/web/.vercel -> agency-founder-finance, prj_roTeeTjzABAR7D649dTkq2ta4rQi) - the audit's worst-case deploy-provenance risk is CLOSED; (2) house_positions.md authoring in flight (Opus); (3) newsletter retirement = locked round-2 decision, cron disarm ships with the wave; (4) baseline snapshot in flight (incl. health_check_submissions + subscriber counts).
 
 ## Gate results log
 - 2026-07-06: THIRD live factual defect fixed (commit `ddb7a24c`): Solicitors take-home employer NIC secondary threshold 9,100→5,000 (stale since Apr 2025; understated NIC ≤ £615/yr on every Ltd output). Survived because Ltd tests asserted typeof-only — REAL pinned goldens added (conservation-checked, 132/132). TOOLS.md also corrected (£250 SRA line + 2025/26 dividend rates). Running tally of live advisory-grade defects caught by program fact-tracing: 3 (dividend rates, SRA £250, NIC threshold).
