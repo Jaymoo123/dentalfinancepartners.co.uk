@@ -328,12 +328,18 @@ describe("registry map completeness", () => {
 
   // ── G2: generalist registry shape ──────────────────────────────────────────
 
-  it("generalist registry has 1 running experiment (calc_promo_inline)", () => {
+  it("generalist registry has 0 running experiments (calc_promo_inline concluded 2026-07-05)", () => {
+    // Estate experiments wind-down (CRO parity program): treatment locked in and
+    // hardcoded in CalcPromoCard; registry entry kept with status "off" so the
+    // console's concluded-experiment history keeps rendering.
     const running = siteRegistries.generalist.experiments.filter(
       (e) => e.status === "running",
     );
-    expect(running).toHaveLength(1);
-    expect(running[0].key).toBe("calc_promo_inline");
+    expect(running).toHaveLength(0);
+    const concluded = siteRegistries.generalist.experiments.find(
+      (e) => e.key === "calc_promo_inline",
+    );
+    expect(concluded?.status).toBe("off");
   });
 
   it("generalist calc_promo_inline is 50/50", () => {

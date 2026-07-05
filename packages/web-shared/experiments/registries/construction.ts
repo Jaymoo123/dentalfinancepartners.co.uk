@@ -25,9 +25,13 @@ export const constructionRegistry: SiteExperimentRegistry = {
     // The arm is registered in IntentProvider so props.exp = "personalization:<arm>"
     // is stamped on every event; vw_experiment_results + the Experiments dashboard
     // panel then show personalization:control vs personalization:treatment.
+    // CONCLUDED 2026-07-05 (estate experiments wind-down, CRO parity program):
+    // treatment locked ON for all visitors (IntentProvider assign block removed;
+    // personalisation unconditional, mirroring Property's concluded winner).
+    // Volume never reached significance; Property's estate-level verdict governs.
     {
       key: "personalization",
-      status: "running",
+      status: "off",
       variants: [
         { id: "control", weight: 25 },
         { id: "treatment", weight: 75 },

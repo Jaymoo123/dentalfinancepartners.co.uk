@@ -27,9 +27,14 @@ export const generalistRegistry: SiteExperimentRegistry = {
     // Minimum-exposure note: at ~35 sessions/week (~17 per arm), expect 4-6 weeks
     // to reach the ~120-arm minimum needed to detect a 50% relative lift on a
     // 30% baseline click rate. Use "awaiting exposure" until that threshold.
+    // CONCLUDED 2026-07-05 (estate experiments wind-down, CRO parity program):
+    // TREATMENT locked in and hardcoded in CalcPromoCard. Final read
+    // (vw_experiment_results): control 509 sessions, 0 cta_clicks, 0 conversions;
+    // treatment 460 sessions, 2 cta_clicks, 2 converted_sessions. Directional,
+    // not significant, but control produced literally nothing; positive-vs-zero.
     {
       key: "calc_promo_inline",
-      status: "running",
+      status: "off",
       variants: [
         { id: "control", weight: 50 },
         { id: "treatment", weight: 50 },

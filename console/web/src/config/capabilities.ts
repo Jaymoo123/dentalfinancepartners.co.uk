@@ -4,11 +4,15 @@
  * Drives which panels render "not operated on this site" vs full data.
  * Data, not code branches: add a site here when it onboards a new system.
  *
- * Current state (2026-06-11, updated G2):
+ * Current state (2026-07-05, CRO parity program wave 1):
  *   - property: full stack (experiments, nurture, lead-intent, personalisation)
- *   - generalist: experiments (calc_promo_inline starter)
+ *   - generalist: experiments history (calc_promo_inline concluded) + personalisation (R1)
+ *   - solicitors: personalisation (R1)
+ *   - construction-cis: experiments history (personalization concluded) + personalisation
  *   - digital-agency: nurture only
  *   - all others: analytics + leads only
+ * NOTE: 0 experiments RUNNING estate-wide since 2026-07-05 (wind-down); the
+ * experiments flag keeps concluded-experiment history visible in the panel.
  */
 
 export type SiteCapabilities = {
@@ -40,7 +44,19 @@ const CAPABILITY_MAP: Record<string, SiteCapabilities> = {
     experiments: true,
     nurture: false,
     leadIntent: false,
-    personalisation: false,
+    personalisation: true,
+  },
+  solicitors: {
+    experiments: false,
+    nurture: false,
+    leadIntent: false,
+    personalisation: true,
+  },
+  "construction-cis": {
+    experiments: true,
+    nurture: false,
+    leadIntent: false,
+    personalisation: true,
   },
   "digital-agency": {
     experiments: false,
