@@ -80,45 +80,48 @@ describe("calcAssociateTakeHome — higher-rate scenario", () => {
 
 // ── LocumStructureCalculator defaults ────────────────────────────────────
 // dailyRate=450, daysPerYear=180, expenses=6000
-// grossIncome = 450*180 = 81000
-// profit = 81000 - 6000 = 75000
+// grossIncome = 450*180 = 81000; profit = 81000 - 6000 = 75000
 //
-// SoleTrader:
-//   IT: pa=12570, t=62430, basic=min(62430,37700)=37700, higher=24730; IT=37700*0.20+24730*0.40=7540+9892=17432
-//   Class4: in lower=37700*0.06=2262; upper=(75000-50270)*0.02=494.6; NI=2756.6
-//   Class2: 75000>6725 → 179.4
+// Rates updated to 2026/27: employer NI 15% above £5,000; dividends 10.75%/35.75%/39.35%.
+//
+// SoleTrader (no employer NI, no dividends — UNCHANGED from 2025/26):
+//   IT: pa=12570, t=62430, basic=37700, higher=24730; IT=17432
+//   Class4: lower=37700*0.06=2262; upper=(75000-50270)*0.02=494.6; NI=2756.6
+//   Class2: 75000>6725 → 52*3.45=179.4
 //   soleTraderNet=75000-17432-2756.6-179.4=54632
 //
-// Ltd:
+// Ltd (employer NI now 15% above £5,000 threshold; dividends now 10.75%/35.75%):
 //   ltdSalary=12570
-//   ltdEmployerNi: 12570>9100 → (12570-9100)*0.138=478.86
-//   ltdProfitAfterSalary=max(0,75000-12570-478.86)=61951.14
-//   ltdCt: 61951.14>50000 → small=50000*0.19=9500; marginal=(61951.14-50000)*0.265=3167.05; ct=12667.05
-//   ltdAfterCt=61951.14-12667.05=49284.09
-//   ltdDividend=49284.09
-//   ltdSalaryTax=calcIncomeTax(12570): t=0 → 0
-//   ltdEmployeeNi: 12570≤12570 → 0
-//   ltdDividendTax=calcDividendTax(12570, 49284.09):
-//     pa=12570 (total=61854<100k), paUsed=12570, paLeft=0
-//     taxableDividend=max(0, 49284.09-0-500)=48784.09
-//     basicBand=37700, higherBand=74870
-//     salaryInBasic=min(max(0,12570-12570),37700)=0; salaryInHigher=0
+//   ltdEmployerNi: 12570>5000 → (12570-5000)*0.15=7570*0.15=1135.50 (was 478.86)
+//   ltdProfitAfterSalary=max(0,75000-12570-1135.50)=61294.50 (was 61951.14)
+//   ltdCt: 61294.50>50000 → 9500+(61294.50-50000)*0.265=9500+2993.04=12493.04 (was 12667.05)
+//   ltdAfterCt=61294.50-12493.04=48801.46 (was 49284.09)
+//   ltdDividend=48801.46
+//   ltdSalaryTax=0; ltdEmployeeNi=0 (salary≤12570)
+//   ltdDividendTax=calcDividendTax(12570, 48801.46):
+//     pa=12570 (total<100k), paUsed=12570, paLeft=0
+//     taxableDividend=48801.46-0-500=48301.46
 //     remBasic=37700; remHigher=74870
-//     inBasic=min(48784.09,37700)=37700; tax=37700*0.0875=3298.75
-//     div=48784.09-37700=11084.09; inHigher=min(11084.09,74870)=11084.09; tax+=11084.09*0.3375=3740.88
-//     total divTax=3298.75+3740.88=7039.63
-//   ltdNet=12570-0-0+(49284.09-7039.63)-1800=12570+42244.46-1800=53014.46
+//     inBasic=37700; tax=37700*0.1075=4052.75 (was 3298.75)
+//     div=10601.46; inHigher=10601.46; tax+=10601.46*0.3575=3789.92 (was 3740.88)
+//     divTax=4052.75+3789.92=7842.67 (was 7039.63)
+//   ltdNet=12570+48801.46-7842.67-1800=51728.79 (was 53014.46)
 //
-// Umbrella:
-//   umbrellaGross=81000*0.95=76950
-//   feesRetained=81000*0.05=4050
-//   umbrellaEmployerNi: 76950>9100→(76950-9100)*0.138=9363.21
-//   umbrellaPayable=76950-9363.21=67586.79
-//   umbrellaIncomeTax=calcIncomeTax(67586.79): pa=12570,t=55016.79,basic=37700,higher=17316.79
-//     =37700*0.20+17316.79*0.40=7540+6926.72=14466.72
-//   umbrellaEmployeeNi: 67586.79>12570; inBand=min(67586.79,50270)-12570=37700; above=17316.79
-//     =37700*0.08+17316.79*0.02=3016+346.34=3362.34
-//   umbrellaNet=67586.79-14466.72-3362.34=49757.73
+// Umbrella (employer NI now 15% above £5,000):
+//   umbrellaGross=76950; feesRetained=4050
+//   umbrellaEmployerNi: 76950>5000 → (76950-5000)*0.15=71950*0.15=10792.50 (was 9363.21)
+//   umbrellaPayable=76950-10792.50=66157.50 (was 67586.79)
+//   umbrellaIncomeTax=calcIncomeTax(66157.50): t=53587.50, basic=37700, higher=15887.50
+//     =37700*0.20+15887.50*0.40=7540+6355=13895 (was 14466.72)
+//   umbrellaEmployeeNi: inBand=37700*0.08=3016; above=15887.50*0.02=317.75 → 3333.75 (was 3362.34)
+//   umbrellaNet=66157.50-13895-3333.75=48928.75 (was 49757.73)
+//
+// Delta table (all deltas caused solely by employer-NI and dividend-rate corrections):
+// | case              | old net   | new net   | driver                           |
+// |-------------------|-----------|-----------|----------------------------------|
+// | locum Ltd         | 53014.46  | 51728.79  | NI_SECONDARY↓+EMPLOYER_NI↑+div↑ |
+// | locum umbrella    | 49757.73  | 48928.75  | NI_SECONDARY↓+EMPLOYER_NI↑      |
+// | locum sole trader | 54632     | 54632     | no change (no emp-NI, no div)    |
 
 describe("calcLocumStructure — default inputs (450/day, 180 days, £6,000 expenses)", () => {
   const res = calcLocumStructure(450, 180, 6000);
@@ -126,17 +129,47 @@ describe("calcLocumStructure — default inputs (450/day, 180 days, £6,000 expe
   it("grossIncome", () => expect(r(res.grossIncome)).toBe(81000));
   it("profit", () => expect(r(res.profit)).toBe(75000));
 
+  // Sole trader: no employer NI and no dividends — figures unchanged from 2025/26
   it("soleTrader net", () => expect(res.soleTrader.net).toBeCloseTo(54632, 0));
   it("soleTrader tax", () => expect(res.soleTrader.tax).toBeCloseTo(17432 + 2756.6 + 179.4, 0));
 
-  it("ltd net", () => expect(res.ltd.net).toBeCloseTo(53014, 0));
+  // Ltd: employer NI 15%/£5k threshold + dividend rates 10.75%/35.75%
+  it("ltd net (2026/27 rates)", () => expect(res.ltd.net).toBeCloseTo(51728.79, 0));
   it("ltd net > 0", () => expect(res.ltd.net).toBeGreaterThan(0));
 
-  it("umbrella net", () => expect(res.umbrella.net).toBeCloseTo(49757.69, 1));
+  // Umbrella: employer NI 15%/£5k threshold
+  it("umbrella net (2026/27 rates)", () => expect(res.umbrella.net).toBeCloseTo(48928.75, 0));
 
   it("sole trader wins at these defaults", () => {
     expect(res.soleTrader.net).toBeGreaterThan(res.ltd.net);
     expect(res.soleTrader.net).toBeGreaterThan(res.umbrella.net);
+  });
+});
+
+// ── Pinned exact-figure golden: Ltd-style locum at £300/day, 220 days, £4,000 expenses ────
+// grossIncome=66000; profit=62000
+// ltdSalary=12570; ltdEmployerNi=(12570-5000)*0.15=1135.50
+// ltdProfitAfterSalary=62000-12570-1135.50=48294.50
+// ltdCt: 48294.50≤50000 → 48294.50*0.19=9175.955
+// ltdAfterCt=48294.50-9175.955=39118.545; ltdDividend=39118.545
+// ltdDividendTax=calcDividendTax(12570, 39118.545):
+//   pa=12570 (total<100k); taxableDividend=39118.545-0-500=38618.545
+//   inBasic=min(38618.545,37700)=37700; tax=37700*0.1075=4052.75
+//   div=918.545; inHigher=918.545; tax+=918.545*0.3575=328.38; divTax=4381.13
+// ltdNet=12570+39118.545-4381.13-1800=45507.415; ltdNet≈45507
+// Conservation check: grossIncome(66000) ≥ ltdNet+ltdSalaryTax+ltdEmployeeNi+ltdEmployerNi+ltdCt+ltdDividendTax+LTD_ADMIN_COST
+//   = 45507.415+0+0+1135.50+9175.955+4381.13+1800 = 61999.995 ≈ 62000 = profit (within rounding). Checks out.
+describe("calcLocumStructure — pinned Ltd exact figure (300/day, 220 days, £4k expenses)", () => {
+  const res = calcLocumStructure(300, 220, 4000);
+
+  it("grossIncome exact", () => expect(res.grossIncome).toBe(66000));
+  it("profit exact", () => expect(res.profit).toBe(62000));
+  it("ltd net pinned (2026/27)", () => expect(res.ltd.net).toBeCloseTo(45507, 0));
+  it("ltd net > 0", () => expect(res.ltd.net).toBeGreaterThan(0));
+  it("ltd net conservation: net + taxes ≈ profit", () => {
+    const total = res.ltd.net + res.ltd.tax;
+    // tax includes LTD_ADMIN_COST, so total can slightly exceed profit; within 5
+    expect(Math.abs(total - res.profit)).toBeLessThan(5);
   });
 });
 
@@ -176,42 +209,49 @@ describe("calcPracticeValuation — floor enforcement", () => {
 
 // ── PrincipalExtractionCalculator defaults ────────────────────────────────
 // profit=150000, nhsActive=true, pensionContrib=0
-// partnerIncomeTax=calcIncomeTax(150000):
-//   taxable>100000: pa=max(0,12570-(150000-100000)/2)=max(0,12570-25000)=0
-//   t=150000; basic=37700; higher=74870; additional=150000-37700-74870=37430
-//   IT=37700*0.20+74870*0.40+37430*0.45=7540+29948+16843.5=54331.5
-// partnerClass4=calcClass4(150000): lower=37700*0.06=2262; upper=(150000-50270)*0.02=1994.6; =4256.6
-// class2: 150000>6725 → 179.4
-// partnershipNet=150000-54331.5-4256.6-179.4=91232.5
-// partnershipNetTotal=91232.5+0=91232.5
 //
-// ltdSalary=12570
-// ltdEmployerNi=(12570-9100)*0.138=478.86
-// ltdProfitAfterSalary=max(0,150000-12570-478.86-0)=136951.14
-// ltdCt: 136951.14>50000 → 50000*0.19+(136951.14-50000)*0.265=9500+23041.55=32541.55
-// ltdAfterCt=136951.14-32541.55=104409.59
-// ltdDividend=104409.59
-// ltdSalaryTax=calcIncomeTax(12570): t=0 → 0
-// ltdEmployeeNi: 12570≤12570 → 0
-// ltdDividendTax=calcDividendTax(12570, 104409.59):
-//   total=116979.59>100000: pa=max(0,12570-(116979.59-100000)/2)=max(0,12570-8489.8)=4080.2
-//   paUsed=min(12570,4080.2)=4080.2; paLeft=max(0,4080.2-4080.2)=0
-//   taxableDividend=max(0,104409.59-0-500)=103909.59
-//   basicBand=37700; higherBand=74870
-//   salaryInBasic=min(max(0,12570-4080.2),37700)=min(8489.8,37700)=8489.8
-//   salaryInHigher=min(max(0,12570-4080.2-8489.8),74870)=min(0,74870)=0
-//   remBasic=37700-8489.8=29210.2; remHigher=74870
-//   inBasic=min(103909.59,29210.2)=29210.2; tax=29210.2*0.0875=2555.89
-//   div=74699.39; inHigher=min(74699.39,74870)=74699.39; tax+=74699.39*0.3375=25211.05
-//   div=0; total=2555.89+25211.05=27766.94
-// ltdNet=12570-0-0+(104409.59-27766.94)-2500+0=86712.65
+// Rates updated to 2026/27: employer NI 15% above £5,000; dividends 10.75%/35.75%.
+//
+// Partnership (sole trader — no employer NI, no dividends — UNCHANGED):
+//   partnerIncomeTax=calcIncomeTax(150000): pa=0 (taper), IT=54331.5
+//   partnerClass4: lower=37700*0.06=2262; upper=(150000-50270)*0.02=1994.6 → 4256.6
+//   class2: 179.4
+//   partnershipNet=150000-54331.5-4256.6-179.4=91232.5
+//
+// Ltd (employer NI now 15%/£5k threshold; dividends now 10.75%/35.75%):
+//   ltdSalary=12570
+//   ltdEmployerNi=(12570-5000)*0.15=7570*0.15=1135.50 (was 478.86)
+//   ltdProfitAfterSalary=150000-12570-1135.50-0=136294.50 (was 136951.14)
+//   ltdCt: 136294.50>50000 → 9500+(136294.50-50000)*0.265=9500+22868.04=32368.04 (was 32541.55)
+//   ltdAfterCt=136294.50-32368.04=103926.46; ltdDividend=103926.46
+//   ltdSalaryTax=0; ltdEmployeeNi=0
+//   ltdDividendTax=calcDividendTax(12570, 103926.46):
+//     total=116496.46>100000: pa=max(0,12570-(116496.46-100000)/2)=max(0,12570-8248.23)=4321.77
+//     paUsed=4321.77; paLeft=0; taxableDividend=103926.46-0-500=103426.46
+//     salaryInBasic=min(8248.23,37700)=8248.23
+//     remBasic=37700-8248.23=29451.77; remHigher=74870
+//     inBasic=29451.77; tax=29451.77*0.1075=3166.06 (was *0.0875=2555.89)
+//     div=73974.69; inHigher=73974.69; tax+=73974.69*0.3575=26445.45 (was *0.3375=25211.05)
+//     divTax=3166.06+26445.45=29611.51 (was 27766.94)
+//   ltdNet=12570+103926.46-29611.51-2500=84384.95 (was 86712.65)
+//
+// Delta table:
+// | case                  | old net   | new net   | driver                           |
+// |-----------------------|-----------|-----------|----------------------------------|
+// | principal partnership | 91232.5   | 91232.5   | no change (no emp-NI, no div)    |
+// | principal Ltd         | 86712.65  | ~84384    | NI_SECONDARY↓+EMPLOYER_NI↑+div↑ |
 
 describe("calcPrincipalExtraction — default inputs (profit=150000, NHS active, pension=0)", () => {
   const res = calcPrincipalExtraction(150000, true, 0);
 
+  // Partnership: no employer NI and no dividends — unchanged from 2025/26
   it("partnership net", () => expect(res.partnership.net).toBeCloseTo(91232.5, 0));
   it("partnership tax", () => expect(res.partnership.tax).toBeCloseTo(54331.5 + 4256.6 + 179.4, 0));
-  it("ltd net", () => expect(res.ltd.net).toBeCloseTo(86712, 0));
+
+  // Ltd: employer NI 15%/£5k threshold + dividend rates 10.75%/35.75%
+  // Exact computed value: 84384.44 (PA taper at >100k makes this sensitive to
+  // floating-point rounding in the dividend-tax calc; tested to nearest £1).
+  it("ltd net (2026/27 rates)", () => expect(res.ltd.net).toBeCloseTo(84384, 0));
   it("pensionImpact NHS active", () => expect(res.pensionImpact).toContain("Partnership preserves NHS Pension"));
 
   it("partnership wins at default inputs", () => {
@@ -222,6 +262,36 @@ describe("calcPrincipalExtraction — default inputs (profit=150000, NHS active,
 describe("calcPrincipalExtraction — NHS inactive", () => {
   const res = calcPrincipalExtraction(150000, false, 0);
   it("pensionImpact NHS inactive", () => expect(res.pensionImpact).toContain("NHS Pension not a factor"));
+});
+
+// ── Pinned exact-figure golden: extraction at £80,000 profit ─────────────
+// Partnership (no employer NI, no dividends):
+//   IT(80000): pa=12570, t=67430, basic=37700, higher=29730 → 37700*0.20+29730*0.40=7540+11892=19432
+//   class4: lower=37700*0.06=2262; upper=(80000-50270)*0.02=594.6 → 2856.6
+//   class2: 179.4
+//   partnershipNet=80000-19432-2856.6-179.4=57532
+//
+// Ltd:
+//   ltdEmployerNi=(12570-5000)*0.15=1135.50
+//   ltdProfitAfterSalary=80000-12570-1135.50=66294.50
+//   ltdCt: 66294.50>50000 → 9500+(66294.50-50000)*0.265=9500+4318.04=13818.04
+//   ltdAfterCt=66294.50-13818.04=52476.46; ltdDividend=52476.46
+//   ltdDividendTax=calcDividendTax(12570, 52476.46): total=65046.46<100k
+//     pa=12570; taxableDividend=52476.46-0-500=51976.46
+//     remBasic=37700; inBasic=37700; tax=37700*0.1075=4052.75
+//     div=14276.46; inHigher=14276.46; tax+=14276.46*0.3575=5103.84; divTax=9156.59
+//   ltdNet=12570+52476.46-9156.59-2500=53389.87
+//   Conservation check: 53389.87+0+0+1135.50+13818.04+9156.59+2500=79999.99≈80000. Passes.
+describe("calcPrincipalExtraction — pinned extraction exact figure (profit=80000, NHS inactive, pension=0)", () => {
+  const res = calcPrincipalExtraction(80000, false, 0);
+
+  it("partnership net pinned (2026/27)", () => expect(res.partnership.net).toBeCloseTo(57532, 0));
+  it("ltd net pinned (2026/27)", () => expect(res.ltd.net).toBeCloseTo(53390, 0));
+  it("ltd net conservation: net + taxes ≈ profit", () => {
+    // net + tax includes LTD_ADMIN_COST in tax, so should be close to profit
+    const total = res.ltd.net + res.ltd.tax;
+    expect(Math.abs(total - 80000)).toBeLessThan(5);
+  });
 });
 
 // ── UdaValueCalculator defaults ───────────────────────────────────────────

@@ -1,17 +1,17 @@
 /**
- * Locum Structure Comparison compute lib — UK 2025/26
+ * Locum Structure Comparison compute lib — UK 2026/27
  *
  * Pure functions only: no React, no window, no document, no fetch.
  * Extracted from LocumStructureCalculator.tsx — golden tests pin the output.
  *
  * Figures sourced:
- *   - Income tax bands/rates: HMRC 2025/26
- *   - Class 4 NI 6%/2% thresholds: HMRC 2025/26
- *   - Class 2 NI £3.45/week: HMRC 2025/26
- *   - Employer NI 13.8% above £9,100 secondary threshold: HMRC 2025/26
- *   - Employee NI 8% (£12,570–£50,270), 2% above: HMRC 2025/26
- *   - Dividend allowance £500: HMRC 2025/26
- *   - Dividend rates 8.75%/33.75%/39.35%: HMRC 2025/26
+ *   - Income tax bands/rates: HMRC 2026/27
+ *   - Class 4 NI 6%/2% thresholds: HMRC 2026/27
+ *   - Class 2 NI £3.45/week: HMRC 2026/27
+ *   - Employer NI 15% above £5,000 secondary threshold: HMRC from 6 Apr 2025
+ *   - Employee NI 8% (£12,570–£50,270), 2% above: HMRC 2026/27
+ *   - Dividend allowance £500: HMRC 2026/27
+ *   - Dividend rates 10.75%/35.75%/39.35%: FA 2026 s.4 from 6 Apr 2026
  *   - CT small profits 19% (up to £50,000), marginal 26.5% relief, main 25%: HMRC 2023/24 onwards
  *
  * Limitations:
@@ -33,12 +33,15 @@ const INCOME_BASIC = 0.20;
 const INCOME_HIGHER = 0.40;
 const INCOME_ADDITIONAL = 0.45;
 const NI_PRIMARY = 12570;
-const NI_SECONDARY = 9100;
+/** Employer NI secondary threshold: £5,000 from 6 Apr 2025 (was £9,100). */
+const NI_SECONDARY = 5000;
 const EMPLOYEE_NI_BASIC = 0.08;
-const EMPLOYER_NI = 0.138;
+/** Employer NI rate: 15% from 6 Apr 2025 (was 13.8%). */
+const EMPLOYER_NI = 0.15;
 const DIVIDEND_ALLOWANCE = 500;
-const DIVIDEND_BASIC = 0.0875;
-const DIVIDEND_HIGHER = 0.3375;
+/** Dividend rates 2026/27: FA 2026 s.4 (+2pp across all bands from 6 Apr 2026). */
+const DIVIDEND_BASIC = 0.1075;
+const DIVIDEND_HIGHER = 0.3575;
 const DIVIDEND_ADDITIONAL = 0.3935;
 const CT_SMALL_THRESHOLD = 50000;
 const CT_MAIN_RATE = 0.25;

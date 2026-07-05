@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
-import { getAllPosts, calculateReadTime } from "@/lib/blog";
+import { getAllPosts, calculateReadTime, slugifyCategory } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 export default function AssociateTaxPillarPage() {
   const allPosts = getAllPosts();
-  const relatedPosts = allPosts.filter((p) => p.category === "Associate tax");
+  const relatedPosts = allPosts.filter((p) => slugifyCategory(p.category) === "associate-tax");
 
   const jsonLd = {
     "@context": "https://schema.org",

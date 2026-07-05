@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
 import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
 import { allTools } from "@/lib/tools/registry";
+import { getAllGuides } from "@/lib/dental-guides";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
@@ -14,6 +15,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/locations",
     "/blog",
     "/calculators",
+    "/dental-guides",
+    "/for-associates",
+    "/for-principals",
+    "/for-practice-buyers",
+    "/for-locum-dentists",
+    "/free-practice-health-check",
     "/privacy-policy",
     "/terms",
     "/cookie-policy",
@@ -77,6 +84,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.75,
+      alternates: hreflang(url),
+    });
+  }
+
+  // Pillar guides (/dental-guides/[slug])
+  const guides = getAllGuides();
+  for (const guide of guides) {
+    const url = `${base}/dental-guides/${guide.slug}`;
+    entries.push({
+      url,
+      lastModified: guide.date ? new Date(guide.date) : new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
       alternates: hreflang(url),
     });
   }

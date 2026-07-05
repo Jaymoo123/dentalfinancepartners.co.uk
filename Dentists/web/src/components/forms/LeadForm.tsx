@@ -5,7 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
-import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { submitDentistLead } from "@/lib/leads/submit-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
@@ -48,11 +48,9 @@ export function LeadForm({
     }
   }, []);
 
-  // AN-02: form lifecycle tracking — no field values captured, only names + outcome.
+  // AN-02: form lifecycle tracking, no field values captured, only names + outcome.
   const { onFieldFocus, onFieldBlur, onError, onSubmit: trackFormSubmit, onLead } =
     useFormTracking("lead_form");
-
-  const { supabaseUrl, supabaseKey } = getSupabaseConfig();
 
   const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
 
@@ -68,7 +66,7 @@ export function LeadForm({
     if (!emailRe.test(email)) errs.email = "Enter a valid email address.";
 
     if (!ukPhoneRe.test(phone)) {
-      errs.phone = "Use only digits, spaces, +, -, ( ) — e.g. 07700 900123 or +44 20 1234 5678";
+      errs.phone = "Use only digits, spaces, +, -, ( ), e.g. 07700 900123 or +44 20 1234 5678";
     } else if (!hasMinDigits(phone, 10)) {
       errs.phone = "Enter at least 10 digits.";
     }
@@ -76,7 +74,7 @@ export function LeadForm({
     if (!role) errs.role = "Tell us whether you are an associate, owner, or group.";
 
     if (message.length > 0 && message.length < 10) {
-      errs.message = "If you add a note, a sentence or two is enough — but not just a word or two.";
+      errs.message = "If you add a note, a sentence or two is enough, but not just a word or two.";
     }
 
     if (!data.get("consent")) errs.consent = "Please tick the box to continue.";
@@ -90,8 +88,9 @@ export function LeadForm({
     const form = e.currentTarget;
     const data = new FormData(form);
 
-    // LD-03: honeypot — bots fill company_url; humans never see or tab to this field
-    if (String(data.get("company_url") || "").trim()) return;
+    // LD-03: honeypot, bots fill enquiry_ref; pass value to server (stored
+    // flagged) rather than silently dropping, which destroyed autofilled real leads.
+    const honeypot = String(data.get("enquiry_ref") || "").trim();
 
     const errs = validate(data);
     setFieldErrors(errs);
@@ -104,14 +103,6 @@ export function LeadForm({
           : "required";
         onError(field, kind);
       }
-      return;
-    }
-
-    if (!supabaseUrl || !supabaseKey) {
-      setStatus("error");
-      setErrorMessage(
-        "This form is not connected yet. Email us using the address on this page — we will pick it up the same day.",
-      );
       return;
     }
 
@@ -140,17 +131,20 @@ export function LeadForm({
       session_id: getSessionId() ?? undefined,
     };
 
-    const result = await submitLead(payload, supabaseUrl, supabaseKey);
+    const result = await submitDentistLead(payload, honeypot);
 
     if (!result.success) {
       setStatus("error");
       setErrorMessage(
-        result.error || "That did not go through. Try again, or email us — either works.",
+        result.error || "That did not go through. Try again, or email us, either works.",
       );
       return;
     }
 
-    // Fire GA4 generate_lead event
+    setStatus("success");
+    onLead({ role: payload.role });
+
+    // Fire GA4 generate_lead event only after a confirmed successful submit.
     if (typeof window !== "undefined" && "gtag" in window) {
       const gtag = (window as { gtag?: (...args: unknown[]) => void }).gtag;
       if (gtag) {
@@ -162,8 +156,6 @@ export function LeadForm({
       }
     }
 
-    setStatus("success");
-    onLead({ role: payload.role });
     form.reset();
     setConsent(false);
 
@@ -180,7 +172,7 @@ export function LeadForm({
         className="rounded-xl border border-emerald-200 bg-emerald-50 p-6 text-emerald-900"
         role="status"
       >
-        <p className="font-semibold">Thank you — we have your message.</p>
+        <p className="font-semibold">Thank you, we have your message.</p>
         <p className="mt-2 text-sm">We will come back within one working day.</p>
       </div>
     );
@@ -195,16 +187,17 @@ export function LeadForm({
     >
       <input type="hidden" name="sourceUrl" value={sourceUrl} readOnly />
 
-      {/* LD-03: honeypot — visually hidden, bots fill it, humans never reach it */}
+      {/* LD-03: honeypot, visually hidden; bots fill it; real users never reach it.
+          Named enquiry_ref (not company_url) to avoid browser autofill triggering it. */}
       <div
         aria-hidden="true"
         style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }}
       >
-        <label htmlFor="company_url">Company website (leave blank)</label>
+        <label htmlFor="enquiry_ref">Leave blank</label>
         <input
-          id="company_url"
+          id="enquiry_ref"
           type="text"
-          name="company_url"
+          name="enquiry_ref"
           tabIndex={-1}
           autoComplete="off"
         />

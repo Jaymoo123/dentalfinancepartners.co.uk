@@ -78,7 +78,7 @@ export default async function CalculatorPage({
           <Breadcrumb items={breadcrumbItems} variant="light" />
           <div className="mt-8 max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--gold)]">
-              Free calculator · UK 2025/26 rates
+              Free calculator · UK 2026/27 rates
             </p>
             <h1 className="mt-3 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl">
               {tool.name}

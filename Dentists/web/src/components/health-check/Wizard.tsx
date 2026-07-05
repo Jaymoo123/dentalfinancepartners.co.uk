@@ -24,7 +24,7 @@ import type {
 } from "@/lib/health-check/types";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
-import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
+import { submitDentistLead } from "@/lib/leads/submit-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
@@ -45,6 +45,8 @@ type Answers = {
   accountantSatisfaction: AccountantSatisfaction | "";
   topConcern: string;
   consent: boolean;
+  /** Honeypot, hidden from real users; bots fill it; value forwarded to server. */
+  enquiryRef: string;
 };
 
 const CONSENT_TEXT = `${siteConfig.leadConsentText} See our Privacy Policy.`;
@@ -66,6 +68,7 @@ const INITIAL: Answers = {
   accountantSatisfaction: "",
   topConcern: "",
   consent: false,
+  enquiryRef: "",
 };
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -87,8 +90,6 @@ export function HealthCheckWizard() {
     () => Math.round((step / totalSteps) * 100),
     [step, totalSteps],
   );
-
-  const { supabaseUrl, supabaseKey } = getSupabaseConfig();
 
   // AN-02: wizard lifecycle tracking
   const { onSubmit: trackFormSubmit, onLead } = useFormTracking("health_check");
@@ -176,73 +177,83 @@ export function HealthCheckWizard() {
       info: opportunities.filter((o) => o.severity === "info").length,
     };
 
-    if (supabaseUrl && supabaseKey) {
-      const summary = opportunities
-        .slice(0, 5)
-        .map((o, i) => `${i + 1}. [${o.severity.toUpperCase()}] ${o.title}`)
-        .join("\n");
-      const leadPayload = {
-        full_name: validatedAnswers.name,
-        email: validatedAnswers.email,
-        phone: "—",
+    // Build a concise human-readable message summary from the health check answers.
+    const topSummary = opportunities
+      .slice(0, 5)
+      .map((o, i) => `${i + 1}. [${o.severity.toUpperCase()}] ${o.title}`)
+      .join("\n");
+
+    const humanMessage =
+      `Practice health check – ${validatedAnswers.role}` +
+      (validatedAnswers.topConcern ? `. Concern: ${validatedAnswers.topConcern}` : "") +
+      `. Top items: ${counts.high} priority, ${counts.medium} notable, ${counts.low} tweaks.`;
+
+    // Qualifiers stored in extras rather than in phone (phone sentinel removed).
+    const healthCheckExtras = {
+      health_check: {
         role: validatedAnswers.role,
-        ...(validatedAnswers.practiceName
-          ? { practice_name: validatedAnswers.practiceName }
-          : {}),
-        message:
-          `Practice health check submission\n` +
-          `Role: ${validatedAnswers.role}\n` +
-          `Practice type: ${validatedAnswers.practiceType}\n` +
-          `UDA band: ${validatedAnswers.udaBand}\n` +
-          `Entity: ${validatedAnswers.entity}\n` +
-          `Profit pre-tax: £${validatedAnswers.profitPreTax.toLocaleString("en-GB")}\n` +
-          `NHS Pension: ${validatedAnswers.nhsPensionStatus}\n` +
-          `Sale plans: ${validatedAnswers.goodwillPlans}\n` +
-          `Accountant: ${validatedAnswers.accountantSatisfaction}\n\n` +
-          `Top opportunities (${opportunities.length}):\n${summary}\n\n` +
-          (validatedAnswers.topConcern
-            ? `Top concern: ${validatedAnswers.topConcern}`
-            : ""),
-        // PF-07: source from niche config, never a literal
-        source: niche.content_strategy.source_identifier,
-        source_url:
-          typeof window !== "undefined"
-            ? window.location.href
-            : "/free-practice-health-check",
-        submitted_at: new Date().toISOString(),
-        // LD-04: real consent state from the step-1 checkbox; the stored text is
-        // exactly what the visitor saw next to it.
-        consent_given: a.consent,
-        consent_text: CONSENT_TEXT,
-        consent_at: new Date().toISOString(),
-        // LD-05: stitch visitor + session ids
-        visitor_id: getVisitorId() ?? undefined,
-        session_id: getSessionId() ?? undefined,
-      };
+        practiceType: validatedAnswers.practiceType,
+        udaBand: validatedAnswers.udaBand,
+        entity: validatedAnswers.entity,
+        profitPreTax: validatedAnswers.profitPreTax,
+        nhsPensionStatus: validatedAnswers.nhsPensionStatus,
+        goodwillPlans: validatedAnswers.goodwillPlans,
+        accountantSatisfaction: validatedAnswers.accountantSatisfaction,
+        topConcern: validatedAnswers.topConcern || null,
+        opportunityCount: opportunities.length,
+        priorityCounts: counts,
+        topOpportunities: topSummary,
+        ...(validatedAnswers.practiceName ? { practiceName: validatedAnswers.practiceName } : {}),
+      },
+    };
 
-      // LD-02: emit form_submit
-      trackFormSubmit(6);
+    const leadPayload = {
+      full_name: validatedAnswers.name,
+      email: validatedAnswers.email,
+      // No phone collected in the health-check wizard; use email_only capture mode.
+      phone: "",
+      role: validatedAnswers.role,
+      message: humanMessage,
+      source: niche.content_strategy.source_identifier,
+      source_url:
+        typeof window !== "undefined"
+          ? window.location.href
+          : "/free-practice-health-check",
+      submitted_at: new Date().toISOString(),
+      // LD-04: real consent state from the step-1 checkbox.
+      consent_given: a.consent,
+      consent_text: CONSENT_TEXT,
+      consent_at: new Date().toISOString(),
+      // LD-05: stitch visitor + session ids.
+      visitor_id: getVisitorId() ?? undefined,
+      session_id: getSessionId() ?? undefined,
+      extras: healthCheckExtras,
+      // No phone is collected, so relax server validation to email + message.
+      captureMode: "email_only" as const,
+    };
 
-      try {
-        const result = await submitLead(leadPayload, supabaseUrl, supabaseKey);
+    // LD-02: emit form_submit
+    trackFormSubmit(6);
 
-        if (result.success) {
-          onLead({ role: validatedAnswers.role });
+    try {
+      const submitResult = await submitDentistLead(leadPayload, a.enquiryRef);
 
-          if (typeof window !== "undefined" && "gtag" in window) {
-            const gtag = (window as { gtag?: (...args: unknown[]) => void }).gtag;
-            if (gtag) {
-              gtag("event", "generate_lead", {
-                event_category: "engagement",
-                event_label: `${niche.niche_id}_health_check`,
-                value: 1,
-              });
-            }
+      if (submitResult.success) {
+        onLead({ role: validatedAnswers.role });
+
+        if (typeof window !== "undefined" && "gtag" in window) {
+          const gtag = (window as { gtag?: (...args: unknown[]) => void }).gtag;
+          if (gtag) {
+            gtag("event", "generate_lead", {
+              event_category: "engagement",
+              event_label: `${niche.niche_id}_health_check`,
+              value: 1,
+            });
           }
         }
-      } catch (err) {
-        console.error("Health check submission error:", err);
       }
+    } catch (err) {
+      console.error("Health check submission error:", err);
     }
 
     setResult({ opportunities, counts });
@@ -324,7 +335,7 @@ export function HealthCheckWizard() {
         </div>
 
         <p className="mt-6 text-xs text-[var(--muted)]">
-          Editorial: this report is generated from your answers and is directional only, not personalised tax advice. All figures use UK 2025/26 rates.
+          Editorial: this report is generated from your answers and is directional only, not personalised tax advice. All figures use UK 2026/27 rates.
         </p>
       </div>
     );
@@ -414,6 +425,18 @@ function Step1({
 }) {
   return (
     <>
+      {/* LD-03: honeypot, visually hidden; bots fill it; real users never reach it.
+          Named enquiry_ref (not company_url) to avoid browser autofill. */}
+      <input
+        type="text"
+        value={a.enquiryRef}
+        onChange={(e) => update("enquiryRef", e.target.value)}
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden", opacity: 0 }}
+      />
+
       <h3 className="font-serif text-xl font-semibold text-[var(--ink)]">First, about you</h3>
       <div>
         <Label>Your name</Label>
@@ -772,7 +795,7 @@ function ReviewRow({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex items-start justify-between gap-3 border-b border-[var(--border)] py-1.5">
       <span className="text-[var(--muted)]">{label}</span>
-      <span className="text-right font-medium text-[var(--ink)]">{value || "—"}</span>
+      <span className="text-right font-medium text-[var(--ink)]">{value || "-"}</span>
     </div>
   );
 }

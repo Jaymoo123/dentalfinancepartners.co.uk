@@ -10,12 +10,32 @@ import { TableOfContents } from "@accounting-network/web-shared/content/TableOfC
 import { ReadingProgress } from "@accounting-network/web-shared/content/ReadingProgress";
 import { extractHeadings } from "@/lib/markdown-utils";
 import { calculateReadTime } from "@/lib/blog";
+import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
+import { NextStepOffer } from "@/components/intent/NextStepOffer";
 
 type BlogPostRendererProps = {
   post: BlogPost;
   categorySlug: string;
   related?: { slug: string; title: string; summary: string; category: string; categorySlug: string }[];
 };
+
+/**
+ * Split HTML content at roughly the 60% scroll point (after the 3rd or 4th h2)
+ * so InlineMiniLeadForm lands mid-article. Falls back to the full article with
+ * no split when there are fewer than 4 headings (short posts).
+ */
+function splitContentAtMidScroll(html: string): { before: string; after: string | null } {
+  const headings = [...html.matchAll(/<h2[^>]*>/g)];
+  if (headings.length < 4) {
+    return { before: html, after: null };
+  }
+  const targetIdx = Math.floor(headings.length * 0.6);
+  const target = headings[targetIdx];
+  if (target?.index === undefined) {
+    return { before: html, after: null };
+  }
+  return { before: html.slice(0, target.index), after: html.slice(target.index) };
+}
 
 function formatUkDate(isoDate: string): string {
   const d = new Date(isoDate);
@@ -41,6 +61,8 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
     post.keyTakeaways && post.keyTakeaways.length > 0 ? post.keyTakeaways : null;
   const showUpdated = post.updatedDate && post.updatedDate !== post.date;
   const verified = post.sourcesVerifiedAt ? formatUkDate(post.sourcesVerifiedAt) : "";
+
+  const midSplit = splitContentAtMidScroll(post.contentHtml);
 
   return (
     <>
@@ -187,10 +209,18 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 <TableOfContents headings={headings} />
               </div>
 
-              <div
-                className="article-body prose-blog mt-10"
-                dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-              />
+              <div className="article-body prose-blog mt-10">
+                <div dangerouslySetInnerHTML={{ __html: midSplit.before }} />
+                {midSplit.after ? (
+                  <>
+                    {/* Mid-scroll injection: InlineMiniLeadForm before the second
+                        half. Topic is the human display label from the post (used
+                        as a readable tag in the lead message prefix). */}
+                    <InlineMiniLeadForm topic={post.category} />
+                    <div dangerouslySetInnerHTML={{ __html: midSplit.after }} />
+                  </>
+                ) : null}
+              </div>
 
               {post.faqs && post.faqs.length > 0 ? (
                 <section className="mt-16" aria-labelledby="faq-heading">
@@ -223,6 +253,8 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   </Link>
                 </div>
               </aside>
+
+              <NextStepOffer />
 
               <div className="mt-16 border-2 border-[var(--primary)]/20 bg-gradient-to-br from-[var(--primary)]/5 to-[var(--accent)]/5 p-8 sm:p-10 rounded-2xl">
                 <h2 className="text-2xl font-bold text-[var(--primary)] sm:text-3xl">

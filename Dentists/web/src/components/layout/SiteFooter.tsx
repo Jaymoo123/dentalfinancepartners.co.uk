@@ -2,6 +2,7 @@ import Link from "next/link";
 import { BrandWordmarkHomeLink } from "@/components/brand/BrandWordmarkHomeLink";
 import { focusRing, siteContainer } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { ConsentToggle } from "@/components/analytics/ConsentToggle";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -69,6 +70,12 @@ export function SiteFooter() {
               © {year} {siteConfig.company.legalName} t/a {siteConfig.company.tradingName}.{" "}
               <span className="text-slate-500">{siteConfig.domain}</span>
             </p>
+            {/*
+             * COMPLIANCE FIX: the cookie policy at /cookie-policy promises a
+             * "Do not track me" control in the footer. ConsentToggle fulfils
+             * that promise by opting out of first-party analytics and GA4.
+             */}
+            <ConsentToggle className="mt-2 text-xs text-slate-400 underline hover:text-slate-100 hover:no-underline min-[480px]:block min-[480px]:text-right" />
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
-import { getAllPosts, calculateReadTime } from "@/lib/blog";
+import { getAllPosts, calculateReadTime, slugifyCategory } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 export default function PracticeFinancePillarPage() {
   const allPosts = getAllPosts();
-  const relatedPosts = allPosts.filter((p) => p.category === "Practice finance");
+  const relatedPosts = allPosts.filter((p) => slugifyCategory(p.category) === "practice-finance");
 
   const jsonLd = {
     "@context": "https://schema.org",

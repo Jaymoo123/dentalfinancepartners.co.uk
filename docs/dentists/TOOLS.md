@@ -147,16 +147,18 @@ The RSC boundary is the site-local `CalculatorClient.tsx` wrapper. Server pages 
 
 | Figure | Value | Source |
 |---|---|---|
-| Income tax bands | Same as Associate Take-Home above | HMRC 2025/26 |
-| Class 2 / 4 NI | Same as Associate Take-Home above | HMRC 2025/26 |
-| Director salary threshold | £12,570 | HMRC — National Insurance rates 2025/26 |
-| Corporation tax — small profits rate | 19% on profits up to £50,000 | HMRC — Corporation Tax rates 2025/26 |
-| Corporation tax — main rate | 25% on profits above £250,000 | HMRC — Corporation Tax rates 2025/26 |
+| Income tax bands | Same as Associate Take-Home above | HMRC 2026/27 |
+| Class 2 / 4 NI | Same as Associate Take-Home above | HMRC 2026/27 |
+| Director salary threshold | £12,570 | HMRC — National Insurance rates 2026/27 |
+| Employer NI secondary threshold | £5,000 (from 6 Apr 2025) | HMRC — National Insurance rates; Budget 2024 |
+| Employer NI rate | 15% (from 6 Apr 2025, was 13.8%) | HMRC — National Insurance rates; Budget 2024 |
+| Corporation tax — small profits rate | 19% on profits up to £50,000 | HMRC — Corporation Tax rates 2026/27 |
+| Corporation tax — main rate | 25% on profits above £250,000 | HMRC — Corporation Tax rates 2026/27 |
 | CT marginal relief | Applied between £50,000 and £250,000 | Finance Act 2023 |
-| Dividend allowance | £500 | HMRC — Dividend Tax 2025/26 |
-| Basic-rate dividend tax | 8.75% | HMRC — Dividend Tax 2025/26 |
-| Higher-rate dividend tax | 33.75% | HMRC — Dividend Tax 2025/26 |
-| Additional-rate dividend tax | 39.35% | HMRC — Dividend Tax 2025/26 |
+| Dividend allowance | £500 | HMRC — Dividend Tax 2026/27 |
+| Basic-rate dividend tax | 10.75% (from 6 Apr 2026, was 8.75%) | FA 2026 s.4 |
+| Higher-rate dividend tax | 35.75% (from 6 Apr 2026, was 33.75%) | FA 2026 s.4 |
+| Additional-rate dividend tax | 39.35% | HMRC — Dividend Tax 2026/27 |
 | Ltd admin cost (fixed) | £1,800 | Indicative accountancy + filing estimate |
 | Umbrella margin | 5% of gross | Indicative; actual umbrella margins vary |
 
@@ -185,10 +187,12 @@ The RSC boundary is the site-local `CalculatorClient.tsx` wrapper. Server pages 
 
 | Figure | Value | Source |
 |---|---|---|
-| Income tax bands | Same as Associate Take-Home above | HMRC 2025/26 |
-| Class 2 / 4 NI | Same as Associate Take-Home above | HMRC 2025/26 |
-| CT and dividend rates | Same as Locum Structure above | HMRC 2025/26 |
-| Director salary | £12,570 | HMRC 2025/26 |
+| Income tax bands | Same as Associate Take-Home above | HMRC 2026/27 |
+| Class 2 / 4 NI | Same as Associate Take-Home above | HMRC 2026/27 |
+| CT and dividend rates | Same as Locum Structure above (incl. 2026/27 updates) | FA 2026 s.4 + HMRC |
+| Employer NI secondary threshold | £5,000 (from 6 Apr 2025) | HMRC — Budget 2024 |
+| Employer NI rate | 15% (from 6 Apr 2025, was 13.8%) | HMRC — Budget 2024 |
+| Director salary | £12,570 | HMRC 2026/27 |
 | Ltd admin cost (fixed) | £2,500 | Indicative; slightly higher than locum model (practice admin overhead) |
 
 **Limitations:**

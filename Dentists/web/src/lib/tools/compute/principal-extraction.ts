@@ -1,12 +1,14 @@
 /**
- * Principal Extraction compute lib — UK 2025/26
+ * Principal Extraction compute lib — UK 2026/27
  *
  * Pure functions only: no React, no window, no document, no fetch.
  * Extracted from PrincipalExtractionCalculator.tsx — golden tests pin the output.
  *
  * Figures sourced:
  *   - Same tax engine as locum-structure.ts (income tax, Class 4 NI, CT, dividend).
- *   - HMRC 2025/26 bands and rates.
+ *   - HMRC 2026/27 bands and rates.
+ *   - Employer NI 15% above £5,000 secondary threshold: from 6 Apr 2025.
+ *   - Dividend rates 10.75%/35.75%/39.35%: FA 2026 s.4 from 6 Apr 2026.
  *
  * Limitations:
  *   - Does NOT model NHS Pension accrual loss from incorporation.
@@ -26,12 +28,15 @@ const INCOME_BASIC = 0.20;
 const INCOME_HIGHER = 0.40;
 const INCOME_ADDITIONAL = 0.45;
 const NI_PRIMARY = 12570;
-const NI_SECONDARY = 9100;
+/** Employer NI secondary threshold: £5,000 from 6 Apr 2025 (was £9,100). */
+const NI_SECONDARY = 5000;
 const EMPLOYEE_NI_BASIC = 0.08;
-const EMPLOYER_NI = 0.138;
+/** Employer NI rate: 15% from 6 Apr 2025 (was 13.8%). */
+const EMPLOYER_NI = 0.15;
 const DIVIDEND_ALLOWANCE = 500;
-const DIVIDEND_BASIC = 0.0875;
-const DIVIDEND_HIGHER = 0.3375;
+/** Dividend rates 2026/27: FA 2026 s.4 (+2pp across all bands from 6 Apr 2026). */
+const DIVIDEND_BASIC = 0.1075;
+const DIVIDEND_HIGHER = 0.3575;
 const DIVIDEND_ADDITIONAL = 0.3935;
 const CT_SMALL_THRESHOLD = 50000;
 const CT_MAIN_RATE = 0.25;
