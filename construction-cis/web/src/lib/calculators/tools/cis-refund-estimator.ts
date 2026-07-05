@@ -1,5 +1,6 @@
 import type { GenericTool } from "@accounting-network/web-shared/tools/types";
 import { gbp } from "../format";
+import { PERSONAL_ALLOWANCE, BASIC_RATE_LIMIT, CLASS4_NI, INCOME_TAX_RATES } from "../cis-tax";
 
 export const cisRefundEstimator: GenericTool = {
   kind: "generic",
@@ -76,22 +77,18 @@ export const cisRefundEstimator: GenericTool = {
     // Total income including other sources
     const totalIncome = cisProfit + otherIncome;
 
-    // Personal allowance: £12,570
-    const pa = 12570;
-    const taxable = Math.max(0, totalIncome - pa);
+    // Personal allowance and taxable income (HP §11a)
+    const taxable = Math.max(0, totalIncome - PERSONAL_ALLOWANCE);
 
-    // Income tax: 20% on first £37,700 (basic rate band), 40% above
-    const basicBand = 37700;
-    const basicTax = Math.min(taxable, basicBand) * 0.2;
-    const higherTax = Math.max(0, taxable - basicBand) * 0.4;
+    // Income tax: 20% on first BASIC_RATE_LIMIT, 40% above (HP §11a)
+    const basicTax = Math.min(taxable, BASIC_RATE_LIMIT) * INCOME_TAX_RATES.basic;
+    const higherTax = Math.max(0, taxable - BASIC_RATE_LIMIT) * INCOME_TAX_RATES.higher;
     const incomeTax = basicTax + higherTax;
 
-    // Class 4 NI on CIS profit: 6% on £12,570-£50,270, 2% above
-    const niLower = 12570;
-    const niUpper = 50270;
+    // Class 4 NI on CIS profit: 6% on £12,570-£50,270, 2% above (HP §11a)
     const class4Lower =
-      Math.min(Math.max(0, cisProfit - niLower), niUpper - niLower) * 0.06;
-    const class4Upper = Math.max(0, cisProfit - niUpper) * 0.02;
+      Math.min(Math.max(0, cisProfit - CLASS4_NI.lowerLimit), CLASS4_NI.upperLimit - CLASS4_NI.lowerLimit) * CLASS4_NI.main;
+    const class4Upper = Math.max(0, cisProfit - CLASS4_NI.upperLimit) * CLASS4_NI.upper;
     const class4Ni = class4Lower + class4Upper;
 
     const totalLiability = incomeTax + class4Ni;

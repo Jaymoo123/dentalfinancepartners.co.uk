@@ -1,5 +1,6 @@
 import type { GenericTool } from "@accounting-network/web-shared/tools";
 import { gbp } from "../format";
+import { saLiability } from "../cis-tax";
 
 export const cisBackYearsCalculator: GenericTool = {
   kind: "generic",
@@ -167,20 +168,8 @@ export const cisBackYearsCalculator: GenericTool = {
       otherIncome: number,
       cisDeducted: number
     ) {
-      const pa = 12570;
-      const basicBand = 37700;
-      const niLower = 12570;
-      const niUpper = 50270;
       const profit = Math.max(0, gross - expenses);
-      const totalIncome = profit + otherIncome;
-      const taxable = Math.max(0, totalIncome - pa);
-      const incomeTax =
-        Math.min(taxable, basicBand) * 0.2 +
-        Math.max(0, taxable - basicBand) * 0.4;
-      const class4 =
-        Math.min(Math.max(0, profit - niLower), niUpper - niLower) * 0.06 +
-        Math.max(0, profit - niUpper) * 0.02;
-      const liability = incomeTax + class4;
+      const { total: liability } = saLiability({ profit, otherIncome });
       return cisDeducted - liability;
     }
 

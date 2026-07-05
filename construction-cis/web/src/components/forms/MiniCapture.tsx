@@ -43,6 +43,10 @@ export function MiniCapture({
   className = "my-8 rounded-2xl border-l-4 border-orange-500 bg-slate-50 p-6 sm:p-8",
   experimentKey,
   exposeOnView = true,
+  messagePlaceholder,
+  messageMinLength,
+  messageMinWords,
+  onSuccess,
 }: {
   /** Surface id for analytics (form tracking + GA label), e.g. "calc_result". */
   formId: string;
@@ -62,6 +66,16 @@ export function MiniCapture({
   /** Set false when the parent surface already fires the exposure itself (e.g.
    *  the exit-intent modal fires it once on open for both arms). */
   exposeOnView?: boolean;
+  // ---- Gate-props extension (additive, R2, brief Section 4) ----
+  /** Custom placeholder for the message textarea (default: existing string). */
+  messagePlaceholder?: string;
+  /** Minimum character count for the message field (default: 10). */
+  messageMinLength?: number;
+  /** Minimum word count for the message field (default: none). */
+  messageMinWords?: number;
+  /** Called after a successful submit (in addition to existing state change).
+   *  Used by ResultGateModal to reveal the result on capture. */
+  onSuccess?: () => void;
 }) {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -96,10 +110,16 @@ export function MiniCapture({
     if (!emailRe.test(String(data.get("email") || "").trim())) errs.email = "Enter a valid email address.";
     const digits = String(data.get("phone") || "").replace(/\D/g, "");
     if (digits.length < 10) errs.phone = "Enter a phone number we can call you on.";
-    if (String(data.get("message") || "").trim().length < 10) errs.message = "Tell us a sentence or two about your situation.";
+    const msgText = String(data.get("message") || "").trim();
+    const minLen = messageMinLength ?? 10;
+    if (msgText.length < minLen) errs.message = "Tell us a sentence or two about your situation.";
+    else if (messageMinWords !== undefined) {
+      const wordCount = msgText.split(/\s+/).filter(Boolean).length;
+      if (wordCount < messageMinWords) errs.message = "Please add a bit more detail (a sentence or two is ideal).";
+    }
     if (!data.get("consent")) errs.consent = "Please tick the box to continue.";
     return errs;
-  }, []);
+  }, [messageMinLength, messageMinWords]);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -154,6 +174,7 @@ export function MiniCapture({
     }
 
     setStatus("success");
+    onSuccess?.();
     form.reset();
     setConsent(false);
     setHoneypotValue("");
@@ -258,7 +279,7 @@ export function MiniCapture({
               required
               rows={3}
               maxLength={1000}
-              placeholder="A sentence or two about your situation helps us help you"
+              placeholder={messagePlaceholder ?? "A sentence or two about your situation helps us help you"}
               className={inputClass}
               aria-invalid={!!fieldErrors.message}
             />

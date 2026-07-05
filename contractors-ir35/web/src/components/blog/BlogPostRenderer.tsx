@@ -13,6 +13,7 @@ import { ReadingProgress } from "@accounting-network/web-shared/content/ReadingP
 import { extractHeadings } from "@/lib/markdown-utils";
 import { calculateReadTime } from "@/lib/blog";
 import { topicForBlogSlug } from "@/lib/intent/taxonomy";
+import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -49,7 +50,8 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
   const readTime = calculateReadTime(post.contentHtml);
   const midSplit = splitContentAtMidScroll(post.contentHtml);
   // Resolve the topic using the SLUG (not the human label post.category).
-  const _topic = topicForBlogSlug(categorySlug); // reserved for R2 premium island
+  // Used for R2 premium island injection (PremiumUpgrade below).
+  const premiumTopic = topicForBlogSlug(categorySlug);
   const jsonLd =
     post.schema?.trim() ||
     buildBlogPostingJsonLd(post, `/blog/${categorySlug}/${post.slug}`);
@@ -215,14 +217,26 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
               <div className="article-body prose-blog mt-10"
                 dangerouslySetInnerHTML={{ __html: midSplit.before }}
               />
-              {midSplit.after !== null && (
+              {midSplit.after !== null ? (
                 <>
-                  {/* Mid-scroll: InlineMiniLeadForm at ~60% of article */}
+                  {/* Mid-scroll: InlineMiniLeadForm + PremiumUpgrade at ~60% of article */}
                   <InlineMiniLeadForm topic={post.category} />
+                  <PremiumUpgrade
+                    topic={premiumTopic}
+                    placement="blog"
+                    category={categorySlug}
+                  />
                   <div className="article-body prose-blog"
                     dangerouslySetInnerHTML={{ __html: midSplit.after }}
                   />
                 </>
+              ) : (
+                /* Short post fallback: inject PremiumUpgrade at end of body */
+                <PremiumUpgrade
+                  topic={premiumTopic}
+                  placement="blog"
+                  category={categorySlug}
+                />
               )}
 
               {post.faqs && post.faqs.length > 0 ? (

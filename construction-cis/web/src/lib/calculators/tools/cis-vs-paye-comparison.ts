@@ -1,5 +1,6 @@
 import type { GenericTool } from "@accounting-network/web-shared/tools";
 import { gbp } from "../format";
+import { PERSONAL_ALLOWANCE, BASIC_RATE_LIMIT, CLASS4_NI, CLASS1_NI, INCOME_TAX_RATES } from "../cis-tax";
 
 export const cisVsPayeComparison: GenericTool = {
   kind: "generic",
@@ -48,36 +49,31 @@ export const cisVsPayeComparison: GenericTool = {
     const gross = Number(v.grossEarnings);
     const expenses = Number(v.cisExpenses);
     const cisRate = Number(v.cisRate) / 100;
-    const pa = 12570;
-    const basicBand = 37700;
-    const niLower = 12570;
-    const niUpper = 50270;
-
-    // --- CIS PATH ---
+    // --- CIS PATH (HP §11a) ---
     const cisProfit = Math.max(0, gross - expenses);
-    const cisTaxable = Math.max(0, cisProfit - pa);
+    const cisTaxable = Math.max(0, cisProfit - PERSONAL_ALLOWANCE);
     const cisIncomeTax =
-      Math.min(cisTaxable, basicBand) * 0.2 +
-      Math.max(0, cisTaxable - basicBand) * 0.4;
-    // Class 4 NI
+      Math.min(cisTaxable, BASIC_RATE_LIMIT) * INCOME_TAX_RATES.basic +
+      Math.max(0, cisTaxable - BASIC_RATE_LIMIT) * INCOME_TAX_RATES.higher;
+    // Class 4 NI (HP §11a)
     const class4Lower =
-      Math.min(Math.max(0, cisProfit - niLower), niUpper - niLower) * 0.06;
-    const class4Upper = Math.max(0, cisProfit - niUpper) * 0.02;
+      Math.min(Math.max(0, cisProfit - CLASS4_NI.lowerLimit), CLASS4_NI.upperLimit - CLASS4_NI.lowerLimit) * CLASS4_NI.main;
+    const class4Upper = Math.max(0, cisProfit - CLASS4_NI.upperLimit) * CLASS4_NI.upper;
     const cisNi = class4Lower + class4Upper;
     const cisTotalTax = cisIncomeTax + cisNi;
     const cisTakeHome = gross - expenses - cisTotalTax;
-    // CIS advance deducted at source (cash flow impact -- they receive this minus deduction, get refund later)
+    // CIS advance deducted at source (cash flow impact - they receive this minus deduction, get refund later)
     const cisAdvanceDeducted = gross * cisRate;
 
-    // --- PAYE PATH ---
-    const payeTaxable = Math.max(0, gross - pa);
+    // --- PAYE PATH (HP §11a) ---
+    const payeTaxable = Math.max(0, gross - PERSONAL_ALLOWANCE);
     const payeIncomeTax =
-      Math.min(payeTaxable, basicBand) * 0.2 +
-      Math.max(0, payeTaxable - basicBand) * 0.4;
-    // Employee Class 1 NI: 8% on £12,570–£50,270, 2% above
+      Math.min(payeTaxable, BASIC_RATE_LIMIT) * INCOME_TAX_RATES.basic +
+      Math.max(0, payeTaxable - BASIC_RATE_LIMIT) * INCOME_TAX_RATES.higher;
+    // Employee Class 1 NI: 8% on £12,570-£50,270, 2% above (HP §11a)
     const payeNiLower =
-      Math.min(Math.max(0, gross - niLower), niUpper - niLower) * 0.08;
-    const payeNiUpper = Math.max(0, gross - niUpper) * 0.02;
+      Math.min(Math.max(0, gross - CLASS4_NI.lowerLimit), CLASS4_NI.upperLimit - CLASS4_NI.lowerLimit) * CLASS1_NI.main;
+    const payeNiUpper = Math.max(0, gross - CLASS4_NI.upperLimit) * CLASS1_NI.upper;
     const payeNi = payeNiLower + payeNiUpper;
     const payeTotalTax = payeIncomeTax + payeNi;
     const payeTakeHome = gross - payeTotalTax;

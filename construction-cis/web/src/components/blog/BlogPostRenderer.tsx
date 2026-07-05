@@ -13,6 +13,7 @@ import { extractHeadings } from "@/lib/markdown-utils";
 import { calculateReadTime } from "@/lib/blog";
 import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 import { topicForBlogSlug } from "@/lib/intent/taxonomy";
+import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -61,7 +62,8 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
   // Mid-scroll split: InlineMiniLeadForm injected at the 60% point.
   const midSplit = splitContentAtMidScroll(post.contentHtml);
   // Topic resolved from category slug (slug-derived, never the human label).
-  const _topic = topicForBlogSlug(categorySlug);
+  // Used by PremiumUpgrade to resolve the correct tool for this post's category.
+  const premiumTopic = topicForBlogSlug(categorySlug);
 
   return (
     <>
@@ -218,15 +220,21 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 <div dangerouslySetInnerHTML={{ __html: midSplit.before }} />
                 {midSplit.after ? (
                   <>
-                    {/* Mid-scroll injection: InlineMiniLeadForm before the second half.
+                    {/* Mid-scroll injection: InlineMiniLeadForm + PremiumUpgrade before the second half.
+                        PremiumUpgrade renders nothing when the category has no premium tool mapped.
+                        topicKey is threaded from categorySlug -- never re-derived inside the gate.
                         Topic is the human display label from the post (used as a readable
                         tag in the lead message prefix). */}
                     <InlineMiniLeadForm topic={post.category} />
+                    <PremiumUpgrade topic={premiumTopic} placement="blog" category={categorySlug} />
                     <div dangerouslySetInnerHTML={{ __html: midSplit.after }} />
                   </>
                 ) : (
-                  /* Short posts (fewer than 4 h2s): no split, InlineMiniLeadForm appended. */
-                  <InlineMiniLeadForm topic={post.category} />
+                  /* Short posts (fewer than 4 h2s): no split, InlineMiniLeadForm + PremiumUpgrade appended. */
+                  <>
+                    <InlineMiniLeadForm topic={post.category} />
+                    <PremiumUpgrade topic={premiumTopic} placement="blog" category={categorySlug} />
+                  </>
                 )}
               </div>
 

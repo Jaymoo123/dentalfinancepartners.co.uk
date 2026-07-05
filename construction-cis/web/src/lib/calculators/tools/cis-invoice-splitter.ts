@@ -1,5 +1,6 @@
 import type { GenericTool } from "@accounting-network/web-shared/tools";
 import { gbp } from "../format";
+import { CIS_RATES, VAT_STANDARD } from "../cis-tax";
 
 export const cisInvoiceSplitter: GenericTool = {
   kind: "generic",
@@ -64,7 +65,7 @@ export const cisInvoiceSplitter: GenericTool = {
     const vatRegistered = Boolean(v.vatRegistered);
     const drc = Boolean(v.drcApplies);
 
-    const rate = status === "gps" ? 0 : status === "registered" ? 0.20 : 0.30;
+    const rate = status === "gps" ? CIS_RATES.gps : status === "registered" ? CIS_RATES.registered : CIS_RATES.unregistered;
     const rateLabel = status === "gps" ? "0% (GPS)" : status === "registered" ? "20%" : "30%";
 
     const labour = Math.max(0, total - materials);
@@ -73,10 +74,10 @@ export const cisInvoiceSplitter: GenericTool = {
     const netReceived = total - cisDeducted;
 
     const vatNote = !vatRegistered
-      ? "Not VAT-registered — no VAT on this invoice"
+      ? "Not VAT-registered, no VAT on this invoice"
       : drc
       ? "DRC applies: your contractor accounts for the VAT; you do not charge VAT on your invoice"
-      : `VAT at 20%: add ${gbp(total * 0.20)} to your invoice; contractor pays you ${gbp(total * 1.20)} gross, deducts ${gbp(cisDeducted)} CIS from the ex-VAT labour element`;
+      : `VAT at 20%: add ${gbp(total * VAT_STANDARD)} to your invoice; contractor pays you ${gbp(total * (1 + VAT_STANDARD))} gross, deducts ${gbp(cisDeducted)} CIS from the ex-VAT labour element`;
 
     return {
       headline: {

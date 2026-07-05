@@ -1,5 +1,6 @@
 import type { GenericTool } from "@accounting-network/web-shared/tools/types";
 import { gbp } from "../format";
+import { gpsQualifiesOnTurnover, GPS_WHOLE_BUSINESS_CAP, GPS_PER_HEAD, type EntityType } from "../cis-tax";
 
 export const cisGpsEligibilityChecker: GenericTool = {
   kind: "generic",
@@ -63,23 +64,33 @@ export const cisGpsEligibilityChecker: GenericTool = {
     },
   ],
   compute: (v) => {
-    const entityType = v.entityType as string;
+    const entityType = v.entityType as EntityType;
     const turnover = Number(v.annualTurnover);
     const partners = Math.max(1, Number(v.partners));
     const filedOnTime = Boolean(v.filedOnTime);
     const noOverdueTax = Boolean(v.noOverdueTax);
 
-    // Turnover threshold per entity type.
-    // Sole trader: £30,000; Partnership: £30,000/partner (min £30k);
-    // Limited: £30,000/director (min £30k); Closely controlled: £30,000/controller.
-    const baseThreshold = 30000;
+    // Turnover threshold per entity type: the CORRECTED HP section 2 rule
+    // (sole trader: per-head; partnership/limited: per-head OR the 100,000
+    // whole-business cap, whichever is met first), single-sourced from
+    // cis-tax.ts. Manager ruling, live defect #6: the old capless per-head-only
+    // rule wrongly failed multi-partner firms between the cap and
+    // 30,000 x partners. Display threshold = the LOWER effective bar.
+    const perHead =
+      entityType === "sole_trader" ? GPS_PER_HEAD : GPS_PER_HEAD * partners;
     const threshold =
-      entityType === "sole_trader" ? baseThreshold : baseThreshold * partners;
+      entityType === "sole_trader"
+        ? perHead
+        : Math.min(perHead, GPS_WHOLE_BUSINESS_CAP);
 
     // Business test is assumed passed: the subcontractor is using a CIS tool,
     // indicating UK construction activity through a bank account.
     const passesBusinessTest = true;
-    const passesTurnoverTest = turnover >= threshold;
+    const passesTurnoverTest = gpsQualifiesOnTurnover({
+      entityType,
+      heads: partners,
+      turnover,
+    }).passes;
     const passesComplianceTest = filedOnTime && noOverdueTax;
 
     const allPass =
@@ -95,7 +106,7 @@ export const cisGpsEligibilityChecker: GenericTool = {
     if (!noOverdueTax)
       failures.push("Compliance test: you have overdue tax payments");
 
-    const annualSavingAt20 = turnover * 0.2;
+    const annualSavingAt20 = turnover * 0.20; // 20% registered rate (HP §1)
 
     return {
       headline: {
@@ -116,8 +127,8 @@ export const cisGpsEligibilityChecker: GenericTool = {
         {
           label: `Turnover test (threshold: ${gbp(threshold)})`,
           value: passesTurnoverTest
-            ? `Pass — ${gbp(turnover)} meets the threshold`
-            : `Fail — ${gbp(threshold - turnover)} short of ${gbp(threshold)}`,
+            ? "Pass: " + gbp(turnover) + " meets the threshold"
+            : "Fail: " + gbp(threshold - turnover) + " short of " + gbp(threshold),
         },
         {
           label: "Compliance test (returns and payments)",

@@ -1,5 +1,6 @@
 import type { GenericTool } from "@accounting-network/web-shared/tools";
 import { gbp } from "../format";
+import { PERSONAL_ALLOWANCE, BASIC_RATE_LIMIT, CLASS4_NI, INCOME_TAX_RATES } from "../cis-tax";
 
 export const cisSelfAssessmentCalculator: GenericTool = {
   kind: "generic",
@@ -69,23 +70,19 @@ export const cisSelfAssessmentCalculator: GenericTool = {
     // Total income
     const totalIncome = cisProfit + otherIncome;
 
-    // Personal allowance
-    const pa = 12570;
-    const taxable = Math.max(0, totalIncome - pa);
+    // Personal allowance (HP §11a)
+    const taxable = Math.max(0, totalIncome - PERSONAL_ALLOWANCE);
 
-    // Income tax: 20% on first £37,700, 40% above
-    const basicBand = 37700;
-    const basicTax = Math.min(taxable, basicBand) * 0.2;
-    const higherTax = Math.max(0, taxable - basicBand) * 0.4;
+    // Income tax: 20% on first BASIC_RATE_LIMIT, 40% above (HP §11a)
+    const basicTax = Math.min(taxable, BASIC_RATE_LIMIT) * INCOME_TAX_RATES.basic;
+    const higherTax = Math.max(0, taxable - BASIC_RATE_LIMIT) * INCOME_TAX_RATES.higher;
     const incomeTax = basicTax + higherTax;
 
-    // Class 4 NI on CIS profit: 6% on £12,570–£50,270, 2% above
-    const niLower = 12570;
-    const niUpper = 50270;
+    // Class 4 NI on CIS profit: 6% on £12,570-£50,270, 2% above (HP §11a)
     const niBase = cisProfit;
     const class4Lower =
-      Math.min(Math.max(0, niBase - niLower), niUpper - niLower) * 0.06;
-    const class4Upper = Math.max(0, niBase - niUpper) * 0.02;
+      Math.min(Math.max(0, niBase - CLASS4_NI.lowerLimit), CLASS4_NI.upperLimit - CLASS4_NI.lowerLimit) * CLASS4_NI.main;
+    const class4Upper = Math.max(0, niBase - CLASS4_NI.upperLimit) * CLASS4_NI.upper;
     const class4Ni = class4Lower + class4Upper;
 
     const totalLiability = incomeTax + class4Ni;
@@ -112,7 +109,7 @@ export const cisSelfAssessmentCalculator: GenericTool = {
         { label: "Total income", value: gbp(totalIncome) },
         {
           label: "Less personal allowance (£12,570)",
-          value: `−${gbp(Math.min(pa, totalIncome))}`,
+          value: `−${gbp(Math.min(PERSONAL_ALLOWANCE, totalIncome))}`,
         },
         { label: "Taxable income", value: gbp(taxable) },
         { label: "Income tax", value: gbp(incomeTax) },

@@ -1,5 +1,6 @@
 import type { GenericTool } from "@accounting-network/web-shared/tools/types";
 import { gbp } from "../format";
+import { CIS_RATES } from "../cis-tax";
 
 export const cisDeductionCalculator: GenericTool = {
   kind: "generic",
@@ -57,7 +58,7 @@ export const cisDeductionCalculator: GenericTool = {
     const status = v.status as string;
     const drc = Boolean(v.drc);
 
-    const rate = status === "gps" ? 0 : status === "registered" ? 0.20 : 0.30;
+    const rate = status === "gps" ? CIS_RATES.gps : status === "registered" ? CIS_RATES.registered : CIS_RATES.unregistered;
     const rateLabel =
       status === "gps" ? "0% (GPS)" : status === "registered" ? "20%" : "30%";
 
