@@ -96,7 +96,7 @@ def _gsc_site_url_for(site_key: str) -> str:
     mapping = {
         "property":  "sc-domain:propertytaxpartners.co.uk",
         "dentists":  "sc-domain:dentistaccountants.co.uk",
-        "medical":   "sc-domain:medicalaccountants.co.uk",
+        "medical":   "sc-domain:medicalaccounts.co.uk",
         "solicitors": "sc-domain:solicitoraccountants.co.uk",
         "agency":    "sc-domain:agencyfounderfinance.co.uk",
         "generalist": "sc-domain:hollowaydavies.co.uk",
