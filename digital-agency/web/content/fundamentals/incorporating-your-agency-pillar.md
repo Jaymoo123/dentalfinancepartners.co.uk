@@ -6,8 +6,8 @@ date: '2026-05-16'
 author: Agency Founder Finance Editorial Team
 category: Incorporation and Structure
 metaTitle: 'Incorporating Agency UK Guide: Structure, Tax & Timing'
-metaDescription: Should you incorporate your agency? We cover sole trader vs Ltd, holding companies, alphabet shares, and timing. Written by ICAEW accountants for UK
-altText: UK agency founder reviewing incorporation documents with ICAEW accountant in a modern London office
+metaDescription: Should you incorporate your agency? We cover sole trader vs Ltd, holding companies, alphabet shares, and timing. Written by specialist accountants for UK
+altText: UK agency founder reviewing incorporation documents with a specialist accountant in a modern London office
 image: /blog/incorporating-your-agency-pillar.jpg
 imageCredit:
   photographer: Mikael Blomkvist
@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/people-sitting-at-the-table-6476256/
   source: Pexels
 h1: 'Incorporating Your Agency: The Definitive Guide to UK Structure'
-summary: This is the definitive guide for UK agency founders considering incorporation. We cover sole trader vs limited company trade-offs, the optimal timing for incorporation, holding company structures, alphabet shares, and the full process from start to finish. Written by ICAEW-qualified accountants who work exclusively with agency founders.
+summary: This is the definitive guide for UK agency founders considering incorporation. We cover sole trader vs limited company trade-offs, the optimal timing for incorporation, holding company structures, alphabet shares, and the full process from start to finish. Written by specialist accountants who work exclusively with agency founders.
 schema: ''
 faqs:
 - question: How much does it cost to incorporate an agency?
@@ -37,7 +37,7 @@ keyTakeaways:
 ---
 <p>Should you incorporate your agency? It's the single biggest structural decision you'll make as a founder. Get it right, and you'll save tens of thousands in tax, protect your personal assets, and build a business that can scale, attract investment, and eventually exit. Get it wrong, and you'll spend years unpicking a structure that costs you money, flexibility, and sleep.</p>
 
-<p>This is the definitive guide to <strong>incorporating agency UK</strong> for founders of marketing, digital, creative, PR, advertising, web design, SEO, PPC, and recruitment agencies. We work with 73+ UK and UAE agency founders as ICAEW-qualified accountants. We've seen every structure, every mistake, and every optimal path. This guide covers everything from first principles, sole trader vs limited company, through to advanced structures like holding companies, family investment companies, and alphabet shares.</p>
+<p>This is the definitive guide to <strong>incorporating agency UK</strong> for founders of marketing, digital, creative, PR, advertising, web design, SEO, PPC, and recruitment agencies. We work exclusively with UK and UAE agency founders. We've seen every structure, every mistake, and every optimal path. This guide covers everything from first principles, sole trader vs limited company, through to advanced structures like holding companies, family investment companies, and alphabet shares.</p>
 
 <p>This guide is for you if you're a UK agency founder asking any of these questions:</p>
 <ul>
@@ -356,4 +356,4 @@ A: You cannot transfer sole trader losses to the company. You can only use them 
 <p><strong>Q: Do I need a shareholders' agreement?</strong><br>
 A: If you have more than one shareholder, yes. A shareholders' agreement covers deadlock resolution, drag-along/tag-along rights, share transfer restrictions, and dispute resolution. Without one, a 50/50 deadlock can destroy the company. We recommend one for any multi-founder agency.</p>
 
-<p>This guide is general guidance. Every agency founder's situation is different. <a href="/contact">Speak to us</a> for advice tailored to your specific circumstances. We're ICAEW-qualified accountants working exclusively with agency founders.</p>
+<p>This guide is general guidance. Every agency founder's situation is different. <a href="/contact">Speak to us</a> for advice tailored to your specific circumstances. We're specialist accountants working exclusively with agency founders.</p>

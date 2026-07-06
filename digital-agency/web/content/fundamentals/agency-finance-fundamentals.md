@@ -6,7 +6,7 @@ date: '2026-05-16'
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
 metaTitle: 'Agency Finance Fundamentals: Complete Guide for UK Founders'
-metaDescription: Master cash flow, P&L, margins, KPIs, and tax for your UK agency. Practical guidance from ICAEW accountants working with 73+ agency founders.
+metaDescription: Master cash flow, P&L, margins, KPIs, and tax for your UK agency. Practical guidance from specialist accountants working exclusively with agency founders.
 altText: UK agency founder reviewing financial reports on a laptop in a modern office with Shoreditch skyline visible through window
 image: /blog/agency-finance-fundamentals.jpg
 imageCredit:
@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/person-reading-a-book-about-fundamentals-of-financial-planning-7821487/
   source: Pexels
 h1: 'Agency Finance Fundamentals: The Complete Founder''s Guide'
-summary: This is the definitive guide to agency finance fundamentals for UK founders. It covers cash flow management, profit and loss analysis, margin structures, the KPIs that matter, software choices, and the financial hygiene habits that separate thriving agencies from those that fail. Written by ICAEW-qualified accountants who work exclusively with agency founders.
+summary: This is the definitive guide to agency finance fundamentals for UK founders. It covers cash flow management, profit and loss analysis, margin structures, the KPIs that matter, software choices, and the financial hygiene habits that separate thriving agencies from those that fail. Written by specialist accountants who work exclusively with agency founders.
 schema: ''
 faqs:
 - question: What is the most important financial metric for an agency founder?
@@ -39,7 +39,7 @@ keyTakeaways:
 
 <p>This guide is for founders of marketing, digital, creative, PR, advertising, web design, SEO, and recruitment agencies. You're running a business that sells people's time and expertise. Your biggest asset walks out the door every evening. Your biggest liability is a client who pays on day 90. And your biggest opportunity is understanding the financial fundamentals that most agency founders never learn.</p>
 
-<p>At Agency Founder Finance, we work with 73+ UK and UAE agency founders as their ICAEW-qualified accountants. We see the same patterns, good and bad, across every agency type. This guide collects what we've learned into one place. Bookmark it. Refer back to it. Share it with your co-founder.</p>
+<p>At Agency Founder Finance, we work exclusively with UK and UAE agency founders. We see the same patterns, good and bad, across every agency type. This guide collects what we've learned into one place. Bookmark it. Refer back to it. Share it with your co-founder.</p>
 
 <h2>What Makes Agency Finance Different from Other Businesses</h2>
 

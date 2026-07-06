@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/smartphone-with-opened-calculator-lying-on-a-document-with-an-income-statement-8962520/
   source: Pexels
 h1: 'How to Choose an Accountant for Your Agency: The Definitive Founder''s Guide'
-summary: Choosing the right accountant is one of the most important decisions an agency founder makes. This guide covers what a specialist agency accountant actually does, how much you should expect to pay, the questions you must ask before signing, and when it's time to switch. Written by an ICAEW-qualified accountant who works with 73+ UK and UAE agency founders.
+summary: Choosing the right accountant is one of the most important decisions an agency founder makes. This guide covers what a specialist agency accountant actually does, how much you should expect to pay, the questions you must ask before signing, and when it's time to switch. Written by specialist accountants who work exclusively with UK and UAE agency founders.
 schema: ''
 faqs:
 - question: How do I know if my current accountant is good enough for my agency?
@@ -37,7 +37,7 @@ keyTakeaways:
 ---
 <p>If you run a marketing, digital, creative, PR, or recruitment agency, your accountant is not a cost centre. They are a strategic partner. Get this decision wrong and you will overpay tax, miss reliefs, face HMRC penalties, and waste hours on admin. Get it right and you will save five figures annually, sleep better through MTD, and exit cleanly when the time comes.</p>
 
-<p>This guide is for UK agency founders who want to <strong>choose an accountant for their agency</strong> with confidence. It covers what a specialist agency accountant actually does, how much you should expect to pay, the questions you must ask before signing, and when it's time to switch. I am an ICAEW-qualified accountant, and I work with 73+ agency founders across the UK and UAE. This is the advice I give them.</p>
+<p>This guide is for UK agency founders who want to <strong>choose an accountant for their agency</strong> with confidence. It covers what a specialist agency accountant actually does, how much you should expect to pay, the questions you must ask before signing, and when it's time to switch. We work exclusively with agency founders across the UK and UAE. This is the advice we give them.</p>
 
 <h2>Why a Generalist Accountant Is Usually the Wrong Choice</h2>
 

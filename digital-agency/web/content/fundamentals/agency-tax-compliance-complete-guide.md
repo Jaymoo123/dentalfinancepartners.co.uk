@@ -7,7 +7,7 @@ author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Agency Tax Compliance UK: Key Steps for Founders'
 metaDescription: Corporation tax, VAT, PAYE, P11D, R&D credits, MTD, BADR. The definitive guide to UK agency tax compliance for agency founders.
-altText: UK agency founder reviewing tax compliance documents with an ICAEW-qualified accountant in a modern office in Shoreditch, London
+altText: UK agency founder reviewing tax compliance documents with a specialist accountant in a modern office in Shoreditch, London
 image: /blog/agency-tax-compliance-complete-guide.jpg
 imageCredit:
   photographer: Nataliya Vaitkevich
@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/tax-planning-6863243/
   source: Pexels
 h1: 'Agency Tax Compliance UK: The Complete Guide for Agency Founders'
-summary: This is the definitive guide to agency tax compliance in the UK for 2026/27. Written by ICAEW-qualified accountants who work exclusively with agency founders, it covers corporation tax, VAT, PAYE, P11D reporting, R&D tax credits, Making Tax Digital, and capital gains planning. You will find specific HMRC forms, real deadlines, and worked examples throughout.
+summary: This is the definitive guide to agency tax compliance in the UK for 2026/27. Written by specialist accountants who work exclusively with agency founders, it covers corporation tax, VAT, PAYE, P11D reporting, R&D tax credits, Making Tax Digital, and capital gains planning. You will find specific HMRC forms, real deadlines, and worked examples throughout.
 schema: ''
 faqs:
 - question: What is the corporation tax rate for a UK agency in 2026/27?
@@ -41,7 +41,7 @@ keyTakeaways:
 
 <p>This guide is written for founders of marketing, digital, creative, PR, advertising, web design, SEO, and recruitment agencies. You run the business. You do not want to become a tax expert. But you need to know enough to spot problems before they cost you money.</p>
 
-<p>At Agency Founder Finance, we work with 73+ UK and UAE agency founders. We are ICAEW-qualified accountants who specialise in this sector. This guide distils what we tell every new client in their first quarter.</p>
+<p>At Agency Founder Finance, we work exclusively with UK and UAE agency founders. We specialise in this sector and nothing else. This guide distils what we tell every new client in their first quarter.</p>
 
 <p>We cover corporation tax, VAT, PAYE, P11D, R&D tax credits, Making Tax Digital, capital gains planning, and the deadlines that matter. Every section includes real forms, real software, and real numbers. No fluff.</p>
 

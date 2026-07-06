@@ -6,7 +6,7 @@ date: '2026-05-16'
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Selling Your Agency Tax Guide: BADR & Earn-Outs'
-metaDescription: Selling your agency? This ICAEW guide covers BADR, earn-outs, goodwill, due diligence, and valuation. Written for UK agency founders by a senior
+metaDescription: Selling your agency? This guide covers BADR, earn-outs, goodwill, due diligence, and valuation. Written for UK agency founders by a senior
 altText: Agency founder signing sale documents with their accountant in a Manchester office overlooking the Northern Quarter
 image: /blog/selling-your-agency-pillar.jpg
 imageCredit:
@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/a-person-writing-on-white-paper-6927374/
   source: Pexels
 h1: 'Selling Your Agency: The Complete Guide to a Tax-Efficient Exit'
-summary: Selling your agency is likely the biggest financial event of your life. This pillar guide covers everything from BADR and earn-outs to goodwill valuation and due diligence, written from the perspective of an ICAEW-qualified accountant who has advised on dozens of agency exits. Whether you’re planning a trade sale, an MBO, or a phased exit, you’ll find the numbers, forms, and strategy you need to keep more of what you’ve built.
+summary: Selling your agency is likely the biggest financial event of your life. This pillar guide covers everything from BADR and earn-outs to goodwill valuation and due diligence, written from the perspective of specialist accountants who work exclusively with agency founders. Whether you’re planning a trade sale, an MBO, or a phased exit, you’ll find the numbers, forms, and strategy you need to keep more of what you’ve built.
 schema: ''
 faqs:
 - question: What is the difference between BADR and Entrepreneurs’ Relief?
@@ -37,9 +37,9 @@ keyTakeaways:
 ---
 <p>You’ve built a business that clients trust, that generates real profit, and that someone else wants to buy. The question you’re now asking, the one that keeps you awake, is how to sell it without handing half the proceeds to HMRC.</p>
 
-<p>This is the definitive guide to a tax-efficient agency exit. It’s written for founders of marketing, digital, creative, PR, web design, SEO, advertising, and recruitment agencies. We work with 73+ UK and UAE agency founders, and we’ve seen the difference between a well-structured exit and one that costs six figures in unnecessary tax.</p>
+<p>This is the definitive guide to a tax-efficient agency exit. It’s written for founders of marketing, digital, creative, PR, web design, SEO, advertising, and recruitment agencies. We work exclusively with UK and UAE agency founders, and we’ve seen the difference between a well-structured exit and one that costs six figures in unnecessary tax.</p>
 
-<p>As ICAEW qualified accountants, we don’t do generic advice. This guide covers the specific numbers, forms, and deadlines you need to know. We’ll walk through Business Asset Disposal Relief, earn-out structures, goodwill valuation, due diligence, and the practical steps you should take now, even if a sale is three years away.</p>
+<p>As specialists in agency finance, we don’t do generic advice. This guide covers the specific numbers, forms, and deadlines you need to know. We’ll walk through Business Asset Disposal Relief, earn-out structures, goodwill valuation, due diligence, and the practical steps you should take now, even if a sale is three years away.</p>
 
 <h2>Why Most Agency Founders Overpay Tax on Exit</h2>
 
@@ -281,7 +281,7 @@ keyTakeaways:
 <li><strong>Commission a valuation.</strong> Get a professional opinion on what your agency is worth and what multiple it will achieve.</li>
 <li><strong>Prepare your data room.</strong> Organise three years of accounts, management accounts, client contracts, staff contracts, and tax filings. A clean data room speeds up due diligence and strengthens your negotiating position.</li>
 <li><strong>Review your share structure.</strong> Ensure all shares are ordinary shares with full rights. Convert any unusual classes.</li>
-<li><strong>Engage specialist advisors.</strong> You need an ICAEW-qualified accountant with M&A experience, a corporate solicitor, and a tax specialist. Don’t use your general practice accountant for a multi-million-pound sale.</li>
+<li><strong>Engage specialist advisors.</strong> You need an accountant with M&A experience, a corporate solicitor, and a tax specialist. Don’t use your general practice accountant for a multi-million-pound sale.</li>
 <li><strong>Plan your post-exit life.</strong> Consider earn-out terms, non-compete clauses, and your personal financial plan. The tax-efficient structure depends on what you do with the proceeds.</li>
 </ol>
 

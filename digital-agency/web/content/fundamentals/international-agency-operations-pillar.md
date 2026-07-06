@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/un-armored-vehicle-at-deployment-site-in-madrid-37296832/"
   source: "Pexels"
 h1: "International Operations for UK Agencies: The Complete Guide"
-summary: "Expanding your UK agency into international markets is a major strategic move, but the financial and legal pitfalls are real. This guide covers everything from setting up a UAE entity and managing cross-border VAT to understanding non-dom rules and structuring for a profitable exit. Written by an ICAEW-qualified accountant who works exclusively with agency founders, it is the definitive resource for taking your agency global."
+summary: "Expanding your UK agency into international markets is a major strategic move, but the financial and legal pitfalls are real. This guide covers everything from setting up a UAE entity and managing cross-border VAT to understanding non-dom rules and structuring for a profitable exit. Written by specialist accountants who work exclusively with agency founders, it is the definitive resource for taking your agency global."
 schema: ""
 faqs:
   - question: "Do I need to register for VAT in the EU if I invoice a single EU client?"
@@ -30,7 +30,7 @@ faqs:
 
 <p>You have built a successful UK agency. Your retainer book is solid. Your team is strong. Now you are looking at international clients, maybe setting up a UAE entity, or perhaps you are a non-dom founder wondering how to structure your agency for tax efficiency and growth. This is the <strong>UK agency international operations guide</strong> you need.</p>
 
-<p>As ICAEW-qualified accountants working exclusively with 73+ UK and UAE agency founders, we have seen the good, the bad, and the expensive. This guide covers everything from first principles to advanced edge cases. It is for marketing, digital, creative, PR, advertising, web design, SEO, PPC, and recruitment agency founders. Not for accountants. For you.</p>
+<p>As specialist accountants working exclusively with UK and UAE agency founders, we have seen the good, the bad, and the expensive. This guide covers everything from first principles to advanced edge cases. It is for marketing, digital, creative, PR, advertising, web design, SEO, PPC, and recruitment agency founders. Not for accountants. For you.</p>
 
 <p>We will cover UAE entities, non-dom rules, cross-border invoicing, VAT on services to foreign clients, and the specific structures that protect your wealth and prepare you for exit. Every section includes real numbers, named HMRC forms, and specific software. No fluff. No padding.</p>
 
@@ -248,7 +248,7 @@ faqs:
 <li><strong>Prepare your W-8BEN-E forms.</strong> If you invoice US clients, have these ready. Update them every three years.</li>
 <li><strong>Review your non-dom status.</strong> If you are a non-dom, calculate your remittance basis charge and plan for the 15-year rule. Consider whether to leave the UK before April 2025.</li>
 <li><strong>Plan your exit.</strong> Structure your group so that you can sell tax-efficiently. If you are a non-dom, consider keeping your UAE company separate from your UK company.</li>
-<li><strong>Get professional advice.</strong> This is not a DIY project. You need an ICAEW-qualified accountant who specialises in international agency structures. <a href="/contact">Contact us</a> to discuss your situation.</li>
+<li><strong>Get professional advice.</strong> This is not a DIY project. You need an accountant who specialises in international agency structures. <a href="/contact">Contact us</a> to discuss your situation.</li>
 </ol>
 
 <h2>Frequently Asked Questions</h2>

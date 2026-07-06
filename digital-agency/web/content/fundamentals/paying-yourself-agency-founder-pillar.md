@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/gold-chain-necklace-on-white-table-6214394/"
   source: "Pexels"
 h1: "Paying Yourself as an Agency Founder: The Definitive Guide to Salary, Dividends and Pension"
-summary: "This is the definitive guide for UK agency founders on how to pay yourself. It covers the optimal split between salary and dividends, the tax implications of each, how to use pension contributions to reduce your corporation tax bill, and the role of spouse shareholdings. Written by ICAEW-qualified accountants who work exclusively with agency founders, this guide gives you the numbers, the forms, and the strategy."
+summary: "This is the definitive guide for UK agency founders on how to pay yourself. It covers the optimal split between salary and dividends, the tax implications of each, how to use pension contributions to reduce your corporation tax bill, and the role of spouse shareholdings. Written by specialist accountants who work exclusively with agency founders, this guide gives you the numbers, the forms, and the strategy."
 schema: ""
 faqs:
   - question: "What is the most tax-efficient way for an agency founder to pay themselves in 2026/27?"
@@ -30,7 +30,7 @@ faqs:
 
 <p>How should you pay yourself from your agency? It is the single most common question we get from new clients, and the one where getting it wrong costs the most money.</p>
 
-<p>As ICAEW-qualified accountants working exclusively with agency founders, we currently work with 73+ UK and UAE agency founders, we see the same patterns. Founders take too much salary, pay too much tax, miss pension opportunities, and leave money on the table that could be in their own pockets or their family's future.</p>
+<p>As specialist accountants working exclusively with UK and UAE agency founders, we see the same patterns. Founders take too much salary, pay too much tax, miss pension opportunities, and leave money on the table that could be in their own pockets or their family's future.</p>
 
 <p>This guide covers the full picture. The optimal salary-dividend split for 2026/27. How dividend tax rates affect your take-home. When to use a pension instead of retained profits. How spouse shareholdings work in practice. And the specific HMRC rules, forms, and deadlines you need to know.</p>
 

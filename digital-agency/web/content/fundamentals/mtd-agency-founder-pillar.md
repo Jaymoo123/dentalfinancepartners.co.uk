@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/smartphone-and-documents-on-desk-8962519/
   source: Pexels
 h1: 'Making Tax Digital for Agency Founders: The Complete Survival Guide'
-summary: Making Tax Digital is the single biggest change to UK tax administration in a generation, and agency founders are directly in scope. This guide covers everything you need to know, from MTD for VAT to the incoming MTD for Income Tax Self Assessment, with specific deadlines, software recommendations, and a practical action checklist. Written by ICAEW-qualified accountants who work with 73+ UK and UAE agency founders.
+summary: Making Tax Digital is the single biggest change to UK tax administration in a generation, and agency founders are directly in scope. This guide covers everything you need to know, from MTD for VAT to the incoming MTD for Income Tax Self Assessment, with specific deadlines, software recommendations, and a practical action checklist. Written by specialist accountants who work exclusively with UK and UAE agency founders.
 schema: ''
 faqs:
 - question: What is the MTD threshold for agency founders?
@@ -37,7 +37,7 @@ keyTakeaways:
 ---
 <p>Making Tax Digital is the most significant change to UK tax administration since self assessment was introduced in 1996. For agency founders running marketing, digital, creative, PR, advertising, web design, SEO, or recruitment agencies, it means the end of annual tax returns as you know them. Quarterly digital updates to HMRC. Mandatory compatible software. No more spreadsheets for your main tax filings.</p>
 
-<p>This is the definitive MTD agency founder guide. It covers everything from the VAT rules already in force to the incoming MTD for Income Tax Self Assessment (ITSA) that will affect most agency founders from April 2026. We've written it as ICAEW-qualified accountants who work exclusively with agency founders, we know how your businesses operate, where your tax complexities lie, and what you actually need to do to stay compliant without drowning in admin.</p>
+<p>This is the definitive MTD agency founder guide. It covers everything from the VAT rules already in force to the incoming MTD for Income Tax Self Assessment (ITSA) that will affect most agency founders from April 2026. We've written it as specialist accountants who work exclusively with agency founders, we know how your businesses operate, where your tax complexities lie, and what you actually need to do to stay compliant without drowning in admin.</p>
 
 <p>If you're a limited company director paying yourself a small salary and dividends, or a sole trader running a consultancy-style agency, or a partnership with multiple founders, you are in scope. This guide is for you.</p>
 

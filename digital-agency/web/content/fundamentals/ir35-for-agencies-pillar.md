@@ -6,7 +6,7 @@ date: '2026-05-16'
 author: Agency Founder Finance Editorial Team
 category: Contractors and IR35
 metaTitle: 'IR35 Agency Complete Guide: Off-Payroll Rules for UK Firms'
-metaDescription: Master IR35 for your agency. SDS obligations, CEST limits, and fee-payer rules. Written by an ICAEW-qualified accountant for UK agency founders.
+metaDescription: Master IR35 for your agency. SDS obligations, CEST limits, and fee-payer rules. Written by specialist accountants for UK agency founders.
 altText: UK agency founder reviewing IR35 contract documents with accountant in a Manchester office meeting room
 image: /blog/ir35-for-agencies-pillar.jpg
 imageCredit:
@@ -37,9 +37,9 @@ keyTakeaways:
 ---
 <p>If your agency engages contractors, freelancers, or interim staff, IR35 is the single biggest tax risk on your balance sheet. Get the determination wrong and you inherit the tax bill. Get the process wrong and HMRC can issue a penalty regardless of the underlying status.</p>
 
-<p>This is the definitive guide to IR35 for agencies. It covers the off-payroll working rules as they stand in the 2025/26 tax year, the obligations on fee-payers, the limits of the CEST tool, and the practical steps you need to protect your agency. We work with 73+ UK and UAE agency founders, many of whom run marketing, digital, creative, and recruitment agencies that rely on contractor talent. This guide draws on that experience.</p>
+<p>This is the definitive guide to IR35 for agencies. It covers the off-payroll working rules as they stand in the 2025/26 tax year, the obligations on fee-payers, the limits of the CEST tool, and the practical steps you need to protect your agency. We work exclusively with UK and UAE agency founders, many of whom run marketing, digital, creative, and recruitment agencies that rely on contractor talent. This guide draws on that experience.</p>
 
-<p>As ICAEW qualified accountants, we do not deal in generalities. You will find specific HMRC forms, named software, real-world numbers, and worked examples throughout. The rules change. The principles do not.</p>
+<p>As specialists in agency finance, we do not deal in generalities. You will find specific HMRC forms, named software, real-world numbers, and worked examples throughout. The rules change. The principles do not.</p>
 
 <h2>What IR35 Actually Means for Your Agency</h2>
 
@@ -389,7 +389,7 @@ keyTakeaways:
 <li>Conduct a full IR35 audit of all contractor engagements from the past three years</li>
 <li>Review any long-term contractor relationships (over 12 months) for signs of drift into employment</li>
 <li>Update your processes for any changes in the off-payroll rules</li>
-<li>Speak to an ICAEW-qualified accountant about your specific situation</li>
+<li>Speak to a specialist accountant about your specific situation</li>
 </ul>
 
 <p>We help agency founders with IR35 compliance as part of our <a href="/services">agency accounting services</a>. If you need a review of your current contractor engagements, <a href="/contact">get in touch</a>.</p>
