@@ -6,7 +6,7 @@ import { RelocationLayout, type RelocationDestination } from "@/components/reloc
 export const metadata: Metadata = {
   title: "UK Agency Founder Relocating to Greece? | Golden Visa & Tax",
   description:
-    "Specialist UK and Greece financial guidance for agency founders. Greek Golden Visa, non-dom tax regime (€100k flat), corporate tax, UK Ltd from Athens. ICAEW qualified.",
+    "Specialist UK and Greece financial guidance for agency founders. Greek Golden Visa, non-dom tax regime (€100k flat), corporate tax, UK Ltd from Athens. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/greece-relocation` },
 };
 
@@ -55,7 +55,7 @@ const data: RelocationDestination = {
     },
     {
       q: "Can you advise on Greek tax?",
-      a: "We handle the UK side to ICAEW standards. For Greek tax, Golden Visa applications, non-dom regime registration and local compliance we partner with Athens-based specialists. You get one coordinated plan with us as primary contact.",
+      a: "We handle the UK side, applying UK tax law and current HMRC guidance. For Greek tax, Golden Visa applications, non-dom regime registration and local compliance we partner with Athens-based specialists. You get one coordinated plan with us as primary contact.",
     },
   ],
 };

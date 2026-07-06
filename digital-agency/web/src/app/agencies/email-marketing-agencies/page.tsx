@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: `Accountants for Email Marketing Agencies | ${siteConfig.name}`,
-  description: "Specialist accountants for UK email marketing agency founders. Klaviyo and HubSpot partner commissions, retainer income, R&D credits for automation. ICAEW qualified.",
+  description: "Specialist accountants for UK email marketing agency founders. Klaviyo and HubSpot partner commissions, retainer income, R&D credits for automation. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/agencies/email-marketing-agencies` },
   openGraph: {
     title: "Accountants for Email Marketing Agencies",

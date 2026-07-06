@@ -6,7 +6,7 @@ import { RelocationLayout, type RelocationDestination } from "@/components/reloc
 export const metadata: Metadata = {
   title: "UK Agency Founder Relocating to Switzerland? | Cantonal Tax Guide",
   description:
-    "Specialist UK and Switzerland financial guidance for agency founders. Lump-sum taxation, cantonal variation, GmbH/AG setup, B/C permits. ICAEW qualified.",
+    "Specialist UK and Switzerland financial guidance for agency founders. Lump-sum taxation, cantonal variation, GmbH/AG setup, B/C permits. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/switzerland-relocation` },
 };
 
@@ -55,7 +55,7 @@ const data: RelocationDestination = {
     },
     {
       q: "Can you advise on Swiss tax?",
-      a: "We handle the UK side to ICAEW standards. For Swiss federal/cantonal tax, permit applications, lump-sum negotiations and local compliance we partner with Swiss specialists in the canton you choose. You get one coordinated plan with us as primary contact.",
+      a: "We handle the UK side, applying UK tax law and current HMRC guidance. For Swiss federal/cantonal tax, permit applications, lump-sum negotiations and local compliance we partner with Swiss specialists in the canton you choose. You get one coordinated plan with us as primary contact.",
     },
   ],
 };

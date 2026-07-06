@@ -23,14 +23,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = `${siteConfig.url}/locations/${city.slug}`;
   return {
     title: `Agency Accountants in ${city.name} | ${siteConfig.name}`,
-    description: `Specialist accountants for ${city.name} agency founders. Tax planning, management accounts, IR35, R&D credits and exit planning. ICAEW qualified, fixed fees, free initial call.`,
+    description: `Specialist accountants for ${city.name} agency founders. Tax planning, management accounts, IR35, R&D credits and exit planning. Agency-only focus, fixed fees, free initial call.`,
     alternates: {
       canonical: url,
       languages: { "en-GB": url, "x-default": url },
     },
     openGraph: {
       title: `Agency Accountants in ${city.name}`,
-      description: `Specialist accountants for ${city.name} agency founders. ICAEW qualified, fixed fees.`,
+      description: `Specialist accountants for ${city.name} agency founders. Agency-only focus, fixed fees.`,
       url,
       type: "website",
     },
@@ -44,7 +44,7 @@ export default async function CityPage({ params }: Props) {
 
   const localBusiness = buildAccountingService({
     name: `${siteConfig.name} - ${city.name}`,
-    description: `Specialist accountants for ${city.name} agency founders. ICAEW qualified, fixed fees, agency-only focus.`,
+    description: `Specialist accountants for ${city.name} agency founders. Agency-only focus, fixed fees.`,
     url: `/locations/${city.slug}`,
     city: city.name,
     address: { addressRegion: city.region },
@@ -92,7 +92,7 @@ export default async function CityPage({ params }: Props) {
             <div className="mt-6 flex flex-wrap gap-4 text-sm text-slate-300">
               <div className="flex items-center gap-2">
                 <BadgeCheck className="h-4 w-4 text-indigo-400" />
-                <span className="font-semibold">ICAEW qualified</span>
+                <span className="font-semibold">Agency-only focus</span>
               </div>
               <div className="flex items-center gap-2">
                 <BadgeCheck className="h-4 w-4 text-indigo-400" />

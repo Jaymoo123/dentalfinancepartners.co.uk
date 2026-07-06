@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: `Accountants for AI Agencies | ${siteConfig.name}`,
-  description: "Specialist accountants for UK AI agency founders. R&D tax credits for ML and LLM work, model training costs, API spend treatment, IP ownership. ICAEW qualified.",
+  description: "Specialist accountants for UK AI agency founders. R&D tax credits for ML and LLM work, model training costs, API spend treatment, IP ownership. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/agencies/ai-agencies` },
   openGraph: {
     title: "Accountants for AI Agencies",

@@ -302,8 +302,8 @@ export function HealthCheckPdf({ answers, opportunities, generatedAt, submission
           <Text style={styles.ctaTitle}>Talk it through</Text>
           <Text style={styles.ctaBody}>
             The opportunities flagged here are directional. To put real numbers
-            against each one, the next step is a 60-minute call with an ICAEW
-            qualified accountant on the Agency Founder Finance team. No
+            against each one, the next step is a 60-minute call with a
+            specialist agency accountant on the Agency Founder Finance team. No
             obligation, no follow-up sales drip.
           </Text>
           <Text style={styles.ctaLink}>

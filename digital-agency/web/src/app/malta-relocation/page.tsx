@@ -6,7 +6,7 @@ import { RelocationLayout, type RelocationDestination } from "@/components/reloc
 export const metadata: Metadata = {
   title: "UK Agency Founder Relocating to Malta? | Tax Structure Guide",
   description:
-    "Specialist UK and Malta financial guidance for agency founders. Malta refund system (effective 5% corporate tax), residency programmes, English-speaking EU jurisdiction. ICAEW qualified.",
+    "Specialist UK and Malta financial guidance for agency founders. Malta refund system (effective 5% corporate tax), residency programmes, English-speaking EU jurisdiction. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/malta-relocation` },
 };
 
@@ -55,7 +55,7 @@ const data: RelocationDestination = {
     },
     {
       q: "Can you advise on Malta tax?",
-      a: "We handle the UK side to ICAEW standards. For Malta personal tax, corporate refund applications, residency programme applications and local compliance we partner with Valletta-based specialists. You get one coordinated plan with us as primary contact.",
+      a: "We handle the UK side, applying UK tax law and current HMRC guidance. For Malta personal tax, corporate refund applications, residency programme applications and local compliance we partner with Valletta-based specialists. You get one coordinated plan with us as primary contact.",
     },
   ],
 };

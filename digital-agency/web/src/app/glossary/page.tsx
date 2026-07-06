@@ -49,7 +49,7 @@ export default function GlossaryIndexPage() {
               UK agency tax &amp; finance glossary
             </h1>
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-              {entries.length} definitions of the terms UK agency founders actually need to understand. Written by ICAEW qualified accountants. All figures verified for 2025/26.
+              {entries.length} definitions of the terms UK agency founders actually need to understand. Written by accountants who work exclusively with agency founders. All figures verified for 2025/26.
             </p>
           </div>
         </div>

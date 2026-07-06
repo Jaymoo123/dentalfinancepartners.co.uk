@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: `Accountants for E-commerce Agencies | ${siteConfig.name}`,
-  description: "Specialist accountants for UK e-commerce agency founders. Shopify Plus, Klaviyo partner commissions, project + retainer mix, performance fees. ICAEW qualified.",
+  description: "Specialist accountants for UK e-commerce agency founders. Shopify Plus, Klaviyo partner commissions, project + retainer mix, performance fees. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/agencies/ecommerce-agencies` },
   openGraph: {
     title: "Accountants for E-commerce Agencies",

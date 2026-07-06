@@ -6,7 +6,7 @@ import { RelocationLayout, type RelocationDestination } from "@/components/reloc
 export const metadata: Metadata = {
   title: "UK Agency Founder Relocating to Singapore? | Specialist Guidance",
   description:
-    "Specialist UK and Singapore financial guidance for agency founders. Employment Pass, Tech.Pass, 17% corporate tax, no CGT, Singapore entity setup. ICAEW qualified.",
+    "Specialist UK and Singapore financial guidance for agency founders. Employment Pass, Tech.Pass, 17% corporate tax, no CGT, Singapore entity setup. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/singapore-relocation` },
 };
 
@@ -79,7 +79,7 @@ const data: RelocationDestination = {
     },
     {
       q: "Can you advise on Singapore tax?",
-      a: "We handle the UK side to ICAEW standards. For Singapore corporate tax, GST registration, EP/Tech.Pass applications and local compliance we partner with Singapore-based specialists. You get one coordinated plan with us as primary contact.",
+      a: "We handle the UK side, applying UK tax law and current HMRC guidance. For Singapore corporate tax, GST registration, EP/Tech.Pass applications and local compliance we partner with Singapore-based specialists. You get one coordinated plan with us as primary contact.",
     },
   ],
 };

@@ -71,9 +71,9 @@ const agencyTypes = [
 ];
 
 const keyStats = [
-  { value: "73+", label: "Agency clients served" },
-  { value: "£30M+", label: "In agency finance managed" },
-  { value: "ICAEW", label: "Qualified accountants" },
+  { value: "Agency-only", label: "Exclusive specialism" },
+  { value: "Fixed fees", label: "No hidden charges" },
+  { value: "24hr", label: "Response guarantee" },
   { value: "UK & UAE", label: "Territories covered" },
 ];
 
@@ -141,14 +141,14 @@ export default function HomePage() {
         <div className={`${siteContainerLg} relative z-10 h-full flex items-center py-14 sm:py-0`}>
           <div className="max-w-3xl">
             <div className="inline-block bg-indigo-600 px-3 py-1.5 text-xs sm:text-sm font-bold text-white uppercase tracking-wider mb-4 sm:mb-6 shadow-lg">
-              ICAEW qualified accountants for agency founders
+              Specialist accountants for agency founders
             </div>
             <h1 className="text-3xl font-bold leading-[1.15] text-white text-balance sm:text-5xl sm:leading-[1.1] lg:text-7xl">
               Accountants for marketing agencies{" "}
               <span className="text-indigo-400">and 18 other types.</span>
             </h1>
             <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-slate-200 sm:text-xl lg:text-2xl max-w-2xl">
-              From first-incorporation decisions to mid-7-figure exits. ICAEW-qualified network, agency-only focus, optional Dubai support when you&rsquo;re ready to leave.
+              From first-incorporation decisions to mid-7-figure exits. Agency-only focus, optional Dubai support when you&rsquo;re ready to leave.
             </p>
             <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/free-health-check" className={`${btnPrimary} text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
@@ -332,7 +332,7 @@ export default function HomePage() {
                   The definitive guides for agency founders
                 </h2>
                 <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
-                  Long-form, ICAEW-written reference guides on the decisions that matter: tax, structure, IR35, exit.
+                  Long-form, specialist-written reference guides on the decisions that matter: tax, structure, IR35, exit.
                 </p>
               </div>
               <div className="grid gap-6 sm:gap-8 md:grid-cols-3">
@@ -468,7 +468,7 @@ export default function HomePage() {
               </p>
               <div className="mt-8 space-y-4">
                 {[
-                  { title: "ICAEW qualified accountants", sub: "Professional standards, not just registered agents" },
+                  { title: "Specialist agency accountants", sub: "Accountants who work exclusively with agencies" },
                   { title: "24-hour response time", sub: "Usually the same day" },
                   { title: "Fixed fees, no surprises", sub: "Transparent pricing upfront" },
                   { title: "Agency specialists only", sub: "We work exclusively with agencies" },

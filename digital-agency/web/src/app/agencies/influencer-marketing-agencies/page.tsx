@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: `Accountants for Influencer Marketing Agencies | ${siteConfig.name}`,
-  description: "Specialist accountants for UK influencer marketing agency founders. Cross-border creator payments, IR35 risk, VAT on international fees. ICAEW qualified.",
+  description: "Specialist accountants for UK influencer marketing agency founders. Cross-border creator payments, IR35 risk, VAT on international fees. Agency-only specialists.",
   alternates: { canonical: `${siteConfig.url}/agencies/influencer-marketing-agencies` },
   openGraph: {
     title: "Accountants for Influencer Marketing Agencies",

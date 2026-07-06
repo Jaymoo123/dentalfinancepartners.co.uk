@@ -6,7 +6,7 @@ import { RelocationLayout, type RelocationDestination } from "@/components/reloc
 export const metadata: Metadata = {
   title: "UK Agency Founder Relocating to Cyprus? | Specialist Guidance",
   description:
-    "Specialist UK and Cyprus financial guidance for agency founders. Non-dom status, 60-day rule, 12.5% corporate tax, IP box regime. ICAEW qualified.",
+    "Specialist UK and Cyprus financial guidance for agency founders. Non-dom status, 60-day rule, 12.5% corporate tax, IP box regime. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/cyprus-relocation` },
 };
 
@@ -79,7 +79,7 @@ const data: RelocationDestination = {
     },
     {
       q: "Can you advise on Cyprus tax?",
-      a: "We handle the UK side to ICAEW standards. For Cyprus personal tax, non-dom registration, IP box and local compliance we partner with Limassol or Nicosia based specialists. You get one coordinated plan with us as primary contact and Cyprus specialists for local matters.",
+      a: "We handle the UK side, applying UK tax law and current HMRC guidance. For Cyprus personal tax, non-dom registration, IP box and local compliance we partner with Limassol or Nicosia based specialists. You get one coordinated plan with us as primary contact and Cyprus specialists for local matters.",
     },
   ],
 };

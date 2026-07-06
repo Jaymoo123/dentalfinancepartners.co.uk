@@ -67,7 +67,7 @@ export default async function GuideLandingPage({ params }: Props) {
                   "Specific actionable steps with deadlines",
                   "2025/26 UK tax figures throughout",
                   "Real software, HMRC form references, and worked examples",
-                  "Written by ICAEW qualified accountants",
+                  "Written by accountants who work exclusively with agency founders",
                   "Free, no obligation, no follow-up sales calls",
                 ].map((b) => (
                   <li key={b} className="flex items-start gap-3">
@@ -80,7 +80,7 @@ export default async function GuideLandingPage({ params }: Props) {
               <div className="mt-8 bg-slate-50 border-l-4 border-indigo-600 p-6">
                 <h3 className="text-base font-bold text-slate-900">Why we publish these for free</h3>
                 <p className="mt-2 text-sm text-slate-700 leading-relaxed">
-                  We work with 73+ UK and UAE agency founders. The patterns we see repeat. Publishing the playbooks publicly is how we demonstrate the value of working with us. If you find this useful and want it applied to your specific situation, the free health check is where that conversation starts.
+                  We work exclusively with UK and UAE agency founders. The patterns we see repeat. Publishing the playbooks publicly is how we demonstrate the value of working with us. If you find this useful and want it applied to your specific situation, the free health check is where that conversation starts.
                 </p>
               </div>
             </div>

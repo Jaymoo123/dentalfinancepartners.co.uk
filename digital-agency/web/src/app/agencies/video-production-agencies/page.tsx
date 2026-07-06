@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: `Accountants for Video Production Agencies | ${siteConfig.name}`,
-  description: "Specialist accountants for UK video and film production agency founders. Capital allowances on kit, project accounting, talent costs, IR35 for crew. ICAEW qualified.",
+  description: "Specialist accountants for UK video and film production agency founders. Capital allowances on kit, project accounting, talent costs, IR35 for crew. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/agencies/video-production-agencies` },
   openGraph: {
     title: "Accountants for Video Production Agencies",

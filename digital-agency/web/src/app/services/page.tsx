@@ -53,7 +53,7 @@ const services = [
   {
     icon: "📝",
     title: "Annual Accounts & CT Returns",
-    description: "Statutory accounts and corporation tax returns for agency limited companies, filed accurately and on time by ICAEW qualified accountants.",
+    description: "Statutory accounts and corporation tax returns for agency limited companies, filed accurately and on time by agency specialists.",
     features: ["Statutory accounts preparation", "Corporation tax returns", "Directors' personal tax returns", "Companies House filings"],
   },
   {
@@ -66,8 +66,8 @@ const services = [
 
 const included = [
   {
-    title: "ICAEW qualified accountants",
-    body: "We are ICAEW members, not just registered agents. ICAEW qualification requires ongoing professional development and adherence to the highest ethical standards in UK accountancy.",
+    title: "Specialist agency accountants",
+    body: "Every client we work with is an agency founder. That exclusive focus means we see agency finance problems every week, not once every few years. The advice is faster, more relevant, and grounded in patterns across agencies like yours.",
   },
   {
     title: "24-hour response guarantee",
@@ -129,7 +129,7 @@ export default function ServicesPage() {
               Accounting services built for agency founders
             </h1>
             <p className="mt-3 sm:mt-4 text-base sm:text-xl text-white">
-              From management accounts to exit planning. ICAEW qualified specialist support at every stage of your agency.
+              From management accounts to exit planning. Specialist agency support at every stage of your agency.
             </p>
           </div>
         </div>
@@ -293,7 +293,7 @@ export default function ServicesPage() {
               <ul className="mt-8 space-y-3 text-sm text-indigo-100">
                 <li className="flex items-start gap-3">
                   <span className="text-white font-bold flex-shrink-0">✓</span>
-                  <span>60-minute review with an ICAEW qualified accountant</span>
+                  <span>60-minute review with a specialist agency accountant</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-white font-bold flex-shrink-0">✓</span>

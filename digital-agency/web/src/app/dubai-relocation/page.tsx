@@ -23,7 +23,7 @@ import { JsonLd, buildService, buildFaqPage } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "UK Agency Founder Relocating to Dubai? | Specialist Guidance",
   description:
-    "Specialist UK and UAE financial guidance for agency founders relocating to Dubai. Statutory residence test, UAE entity setup, cross-border tax, agency operations. ICAEW qualified.",
+    "Specialist UK and UAE financial guidance for agency founders relocating to Dubai. Statutory residence test, UAE entity setup, cross-border tax, agency operations. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/dubai-relocation` },
   openGraph: {
     title: "UK Agency Founder Relocating to Dubai?",
@@ -115,7 +115,7 @@ const faqs = [
   },
   {
     q: "Can you advise on UAE-side tax?",
-    a: "We work to UK ICAEW standards and our regulated advice is UK-focused. For UAE corporate tax, VAT and licensing we partner with Dubai-based specialists who handle that side. You get a coordinated plan with one point of contact (us) and specialist UAE input where the rules require it.",
+    a: "Our advice covers the UK side: statutory residence, UK entity decisions and UK tax on non-resident income. For UAE corporate tax, VAT and licensing we partner with Dubai-based specialists who handle that side. You get a coordinated plan with one point of contact (us) and specialist UAE input where the rules require it.",
   },
 ];
 
@@ -168,7 +168,7 @@ export default function DubaiRelocationPage() {
               UK agency founder <span className="text-indigo-400">relocating to Dubai?</span>
             </h1>
             <p className="mt-4 text-lg sm:text-xl text-slate-200 max-w-2xl">
-              Specialist UK and UAE financial guidance for agency founders making the move. From statutory residence test to running a UK Ltd from Dubai. ICAEW qualified.
+              Specialist UK and UAE financial guidance for agency founders making the move. From statutory residence test to running a UK Ltd from Dubai. Agency-only specialists.
             </p>
             <div className="mt-6 flex flex-wrap gap-3 sm:gap-4">
               <Link href="#consultation" className={`${btnPrimary} text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4`}>
@@ -263,7 +263,7 @@ export default function DubaiRelocationPage() {
                   Book your relocation consultation
                 </h2>
                 <p className="mt-3 text-base sm:text-lg text-slate-700">
-                  90 minutes with an ICAEW qualified accountant. We map your UK exit position, your UAE setup options and your agency's structure. You leave with a written plan. No obligation.
+                  90 minutes with a specialist agency accountant. We map your UK exit position, your UAE setup options and your agency's structure. You leave with a written plan. No obligation.
                 </p>
               </div>
               <LeadForm redirectOnSuccess={false} submitLabel="Book my relocation consultation" />

@@ -6,7 +6,7 @@ import { AudienceStageLayout, type AudienceStage } from "@/components/audience/A
 export const metadata: Metadata = {
   title: "Accountant for New Agency Founders | First Year & Pre-Incorporation",
   description:
-    "Specialist accountants for new UK agency founders. From sole trader vs Ltd to first VAT registration, first dividend, first hire. ICAEW qualified, fixed fees.",
+    "Specialist accountants for new UK agency founders. From sole trader vs Ltd to first VAT registration, first dividend, first hire. Agency-only focus, fixed fees.",
   alternates: { canonical: `${siteConfig.url}/for-new-founders` },
 };
 
@@ -61,7 +61,7 @@ const data: AudienceStage = {
     { title: "Incorporation handled end-to-end", body: "Company formation, Companies House registration, HMRC corporation tax registration, bank account introduction, accounting software setup." },
     { title: "First dividend mechanics", body: "Board minutes template, dividend voucher, accounting treatment, personal tax implications. Done properly so HMRC can't challenge it later." },
     { title: "VAT registration & scheme selection", body: "Voluntary vs compulsory, flat rate vs standard, cash accounting. We pick the right scheme for your business model and revenue trajectory." },
-    { title: "Year-one tax return + accounts", body: "Statutory accounts, CT600 corporation tax return, personal SA100. Filed accurately and on time by ICAEW qualified accountants." },
+    { title: "Year-one tax return + accounts", body: "Statutory accounts, CT600 corporation tax return, personal SA100. Filed accurately and on time by specialist agency accountants." },
   ],
   faqs: [
     {

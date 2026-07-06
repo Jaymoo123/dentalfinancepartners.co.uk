@@ -242,7 +242,7 @@ function buildHealthCheckBody(unsubUrl: string) {
       "If anything in the last two weeks has made you wonder whether you've got the structure right, the salary/dividend split right, the R&D claim right, or the exit clock running, you can book a free agency finance health check.",
     ),
     para(
-      "It's 60 minutes, on a call, with a qualified accountant on the team. You get a written summary by email afterwards with anything specific we'd recommend. No sales pitch. About half the founders we speak to we tell to stay with their current accountant and just change one thing.",
+      "It's 60 minutes, on a call, with a specialist agency accountant on the team. You get a written summary by email afterwards with anything specific we'd recommend. No sales pitch. About half the founders we speak to we tell to stay with their current accountant and just change one thing.",
     ),
     para(
       "The emails will now drop to one a week (Thursday morning), the regular Tax Brief. You can unsubscribe any time using the link at the bottom of every email.",
@@ -257,7 +257,7 @@ function buildHealthCheckBody(unsubUrl: string) {
       "",
       "If anything in the last two weeks has made you wonder whether you've got the structure right, the salary/dividend split right, the R&D claim right, or the exit clock running, you can book a free agency finance health check.",
       "",
-      "It's 60 minutes, on a call, with a qualified accountant on the team. You get a written summary by email afterwards with anything specific we'd recommend. No sales pitch. About half the founders we speak to we tell to stay with their current accountant and just change one thing.",
+      "It's 60 minutes, on a call, with a specialist agency accountant on the team. You get a written summary by email afterwards with anything specific we'd recommend. No sales pitch. About half the founders we speak to we tell to stay with their current accountant and just change one thing.",
       "",
       "The emails will now drop to one a week (Thursday morning), the regular Tax Brief. You can unsubscribe any time using the link at the bottom of every email.",
       "",

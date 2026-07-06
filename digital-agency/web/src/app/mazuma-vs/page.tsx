@@ -26,9 +26,9 @@ const data: Comparison = {
     { feature: "IR35 status determination support", competitor: false, us: true },
     { feature: "Salary & dividend modelling for shareholders", competitor: "Generic", us: "Per-shareholder, annual" },
     { feature: "Exit planning + BADR support", competitor: false, us: true },
-    { feature: "Direct accountant relationship", competitor: "Shared support team", us: "Same named ICAEW accountant every time" },
+    { feature: "Direct accountant relationship", competitor: "Shared support team", us: "Same named specialist every time" },
     { feature: "24-hour response time", competitor: "Standard SLA", us: true },
-    { feature: "ICAEW qualified accountants", competitor: "Mixed (some ICB / AAT)", us: true },
+    { feature: "Accountants who work only with agencies", competitor: false, us: true },
   ],
   whoIsRightFor: {
     competitor: {
@@ -49,7 +49,7 @@ const data: Comparison = {
         "You build custom tech (R&D credit eligibility)",
         "You have co-founders or family shareholders",
         "You're thinking about a holding company, MBO or exit",
-        "You want one named ICAEW accountant who knows your agency",
+        "You want one named specialist who knows your agency",
       ],
     },
   },

@@ -135,7 +135,7 @@ export function AudienceStageLayout({ data }: Props) {
                 </div>
                 <h2 className="text-3xl font-bold text-indigo-900 sm:text-4xl">{data.ctaTitle}</h2>
                 <p className="mt-3 text-base sm:text-lg text-slate-700">
-                  60 minutes with an ICAEW qualified accountant. Tailored to where you are now. No obligation.
+                  60 minutes with a specialist agency accountant. Tailored to where you are now. No obligation.
                 </p>
               </div>
               <LeadForm redirectOnSuccess={false} submitLabel="Book my free health check" />

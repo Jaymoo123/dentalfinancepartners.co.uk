@@ -6,7 +6,7 @@ import { RelocationLayout, type RelocationDestination } from "@/components/reloc
 export const metadata: Metadata = {
   title: "UK Agency Founder Relocating to Estonia? | e-Residency & Tax Guide",
   description:
-    "Specialist UK and Estonia financial guidance for agency founders. e-Residency, 0% retained-profits tax, fully digital company setup, EU resident. ICAEW qualified.",
+    "Specialist UK and Estonia financial guidance for agency founders. e-Residency, 0% retained-profits tax, fully digital company setup, EU resident. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/estonia-relocation` },
 };
 
@@ -55,7 +55,7 @@ const data: RelocationDestination = {
     },
     {
       q: "Can you advise on Estonian tax?",
-      a: "We handle the UK side to ICAEW standards. For Estonian e-Residency applications, OÜ setup, local compliance and Estonian tax filings we partner with Tallinn-based specialists. You get one coordinated plan with us as primary contact.",
+      a: "We handle the UK side, applying UK tax law and current HMRC guidance. For Estonian e-Residency applications, OÜ setup, local compliance and Estonian tax filings we partner with Tallinn-based specialists. You get one coordinated plan with us as primary contact.",
     },
   ],
 };

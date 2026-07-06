@@ -6,7 +6,7 @@ import { AudienceStageLayout, type AudienceStage } from "@/components/audience/A
 export const metadata: Metadata = {
   title: "Accountant for Pre-Exit Agency Founders | Sale Planning & BADR",
   description:
-    "Specialist accountants for UK agency founders preparing for sale or MBO. BADR planning, sale-ready accounts, earn-out structuring, due diligence support. ICAEW qualified.",
+    "Specialist accountants for UK agency founders preparing for sale or MBO. BADR planning, sale-ready accounts, earn-out structuring, due diligence support. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/for-pre-exit` },
 };
 

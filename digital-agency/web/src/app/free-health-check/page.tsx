@@ -10,7 +10,7 @@ import { JsonLd, buildService, buildFaqPage } from "@/lib/schema";
 export const metadata: Metadata = {
   title: `Free Agency Finance Health Check | ${siteConfig.name}`,
   description:
-    "Free, instant agency finance health check for UK founders. Answer 12 questions, get a personalised PDF report flagging tax, structure, VAT, R&D and exit opportunities. ICAEW-quality framework.",
+    "Free, instant agency finance health check for UK founders. Answer 12 questions, get a personalised PDF report flagging tax, structure, VAT, R&D and exit opportunities. Agency specialist framework.",
   alternates: { canonical: `${siteConfig.url}/free-health-check` },
   openGraph: {
     title: "Free Agency Finance Health Check, instant personalised PDF",
@@ -58,7 +58,7 @@ const steps = [
   {
     n: "03",
     title: "Optional 60-minute call",
-    body: "Want to put real numbers on each opportunity? Book a call with an ICAEW qualified accountant. No obligation, no sales drip.",
+    body: "Want to put real numbers on each opportunity? Book a call with a specialist agency accountant. No obligation, no sales drip.",
   },
 ];
 

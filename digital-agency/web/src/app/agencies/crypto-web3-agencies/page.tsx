@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: `Accountants for Crypto & Web3 Agencies | ${siteConfig.name}`,
-  description: "Specialist accountants for UK crypto and Web3 agency founders. Token payments, stablecoin invoicing, smart contract IP, regulatory edge cases. ICAEW qualified.",
+  description: "Specialist accountants for UK crypto and Web3 agency founders. Token payments, stablecoin invoicing, smart contract IP, regulatory edge cases. Agency-only specialists.",
   alternates: { canonical: `${siteConfig.url}/agencies/crypto-web3-agencies` },
   openGraph: {
     title: "Accountants for Crypto and Web3 Agencies",
@@ -19,7 +19,7 @@ export default function CryptoWeb3AgenciesPage() {
     <AgencyTypeLayout
       slug="crypto-web3-agencies"
       title="Accountants for crypto and Web3 agencies"
-      hero="Specialist tax and accounting for UK crypto and Web3 agency founders. Token payments from clients, stablecoin invoicing, smart contract development, NFT project work and the regulatory edge cases generalist accountants don't see. ICAEW qualified."
+      hero="Specialist tax and accounting for UK crypto and Web3 agency founders. Token payments from clients, stablecoin invoicing, smart contract development, NFT project work and the regulatory edge cases generalist accountants don't see. We work exclusively with agency founders."
       sections={[
         {
           heading: "Token payments and stablecoin revenue",

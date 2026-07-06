@@ -36,7 +36,7 @@ export default function HealthCheckDelivery({ firstName, topThreeTitles }: Props
         </Text>
         <Text style={p}>
           If you want to talk any of it through, the next step is a 60-minute
-          call with an ICAEW qualified accountant on the team. No obligation,
+          call with a specialist agency accountant on the team. No obligation,
           no follow-up sales drip.
         </Text>
         <Button href="https://www.agencyfounderfinance.co.uk/contact" style={button}>

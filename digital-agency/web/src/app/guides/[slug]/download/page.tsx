@@ -74,7 +74,7 @@ export default async function GuideDownloadPage({ params }: Props) {
             <div className="mt-12 bg-slate-900 p-8 sm:p-10 text-white print:hidden">
               <h2 className="text-2xl font-bold sm:text-3xl">Want this applied to your agency?</h2>
               <p className="mt-3 text-base sm:text-lg text-slate-200">
-                Book a free 60-minute Agency Finance Health Check. An ICAEW qualified accountant will review your specific situation and tell you exactly what to do.
+                Book a free 60-minute Agency Finance Health Check. An agency specialist accountant will review your specific situation and tell you exactly what to do.
               </p>
               <Link href="/free-health-check" className={`${btnPrimary} mt-6`}>
                 Book a free health check

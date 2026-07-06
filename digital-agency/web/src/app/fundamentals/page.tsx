@@ -10,7 +10,7 @@ import { ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Fundamentals | Pillar Guides for UK Agency Founders",
   description:
-    "Definitive pillar guides on agency tax, finance, incorporation, IR35, MTD, exit planning and more. Written by ICAEW qualified specialist accountants for UK and UAE agency founders.",
+    "Definitive pillar guides on agency tax, finance, incorporation, IR35, MTD, exit planning and more. Written by specialist agency accountants for UK and UAE agency founders.",
   alternates: { canonical: `${siteConfig.url}/fundamentals` },
   openGraph: {
     title: "Fundamentals | Pillar Guides for UK Agency Founders",

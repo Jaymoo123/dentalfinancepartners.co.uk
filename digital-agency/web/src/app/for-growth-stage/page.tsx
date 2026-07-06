@@ -6,7 +6,7 @@ import { AudienceStageLayout, type AudienceStage } from "@/components/audience/A
 export const metadata: Metadata = {
   title: "Accountant for Growth-Stage Agencies | £500k-£3m Revenue",
   description:
-    "Specialist accountants for UK agencies at £500k-£3m revenue. Management accounts, R&D credits, IR35, salary optimisation, growth-stage tax planning. ICAEW qualified.",
+    "Specialist accountants for UK agencies at £500k-£3m revenue. Management accounts, R&D credits, IR35, salary optimisation, growth-stage tax planning. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/for-growth-stage` },
 };
 

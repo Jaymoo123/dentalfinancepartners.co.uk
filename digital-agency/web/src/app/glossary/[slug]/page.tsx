@@ -88,7 +88,7 @@ export default async function GlossaryEntryPage({ params }: Props) {
                 Want this applied to your agency?
               </h2>
               <p className="mt-3 text-base text-slate-200">
-                Book a free 60-minute Agency Finance Health Check. An ICAEW qualified accountant will review your position and show you what to actually do.
+                Book a free 60-minute Agency Finance Health Check. An agency specialist accountant will review your position and show you what to actually do.
               </p>
               <Link href="/free-health-check" className={`${btnPrimary} mt-6`}>
                 Book a free health check

@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: `Accountants for Branding Agencies | ${siteConfig.name}`,
-  description: "Specialist accountants for UK branding and identity agency founders. Project revenue recognition, IP rights, deposits and long sales cycles. ICAEW qualified.",
+  description: "Specialist accountants for UK branding and identity agency founders. Project revenue recognition, IP rights, deposits and long sales cycles. Agency-only specialists.",
   alternates: { canonical: `${siteConfig.url}/agencies/branding-agencies` },
   openGraph: {
     title: "Accountants for Branding Agencies",
@@ -19,7 +19,7 @@ export default function BrandingAgenciesPage() {
     <AgencyTypeLayout
       slug="branding-agencies"
       title="Accountants for branding agencies"
-      hero="Specialist tax and accounting for UK branding and identity agency founders. Long project cycles, IP rights, deposit-heavy invoicing and creative team scaling, handled by ICAEW accountants who understand how a branding studio actually earns."
+      hero="Specialist tax and accounting for UK branding and identity agency founders. Long project cycles, IP rights, deposit-heavy invoicing and creative team scaling, handled by specialist agency accountants who understand how a branding studio actually earns."
       sections={[
         {
           heading: "Project revenue recognition for long branding engagements",

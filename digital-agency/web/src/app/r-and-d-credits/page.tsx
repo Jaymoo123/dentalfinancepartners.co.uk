@@ -22,11 +22,11 @@ import { JsonLd, buildService, buildFaqPage } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "R&D Tax Credits for UK Agencies | Specialist Claims",
   description:
-    "Specialist R&D tax credit claims for UK agencies. AI, SaaS, performance marketing, e-commerce builds, most agencies leave money on the table. ICAEW qualified, no-win-no-fee available.",
+    "Specialist R&D tax credit claims for UK agencies. AI, SaaS, performance marketing, e-commerce builds, most agencies leave money on the table. Agency specialist claims, no-win-no-fee available.",
   alternates: { canonical: `${siteConfig.url}/r-and-d-credits` },
   openGraph: {
     title: "R&D Tax Credits for UK Agencies",
-    description: "Specialist R&D tax credit claims for UK agencies. ICAEW qualified.",
+    description: "Specialist R&D tax credit claims for UK agencies. Agency-only focus.",
     url: `${siteConfig.url}/r-and-d-credits`,
     type: "website",
   },
@@ -79,11 +79,11 @@ const faqs = [
   },
   {
     q: "What's the typical claim size for an agency?",
-    a: "Highly variable. AI agencies with 4-8 engineers commonly claim £40k-£150k per year. SaaS agencies and performance marketing agencies building proprietary tooling typically claim £15k-£60k. Smaller agencies doing some custom development work might claim £5k-£20k. The R&D-intensive enhanced rate (27% vs 20%) can lift these significantly.",
+    a: "Highly variable. AI agencies with 4-8 engineers commonly claim £40k-£150k per year. SaaS agencies and performance marketing agencies building proprietary tooling typically claim £15k-£60k. Smaller agencies doing some custom development work might claim £5k-£20k. The enhanced R&D-intensive support (ERIS) can lift these significantly for loss-making agencies that qualify.",
   },
   {
     q: "What changed with the merged scheme in April 2023?",
-    a: "The old SME and RDEC schemes were merged into one above-the-line credit at 20% of qualifying expenditure. R&D-intensive SMEs (where R&D spend is 40%+ of total expenditure) get an enhanced 27% rate. Subcontractor costs are claimable at 65%. The PAYE-NI cap may apply to limit claims for businesses with low payroll relative to claim size.",
+    a: "The old SME and RDEC schemes were merged into one above-the-line credit at 20% of qualifying expenditure for accounting periods beginning on or after 1 April 2024 (roughly 15% net of corporation tax). Loss-making R&D-intensive SMEs (R&D spend at least 30% of total expenditure) can instead use enhanced R&D intensive support (ERIS): an 86% enhanced deduction plus a 14.5% payable credit. Subcontractor costs are generally claimable at 65%. The PAYE-NI cap may apply to limit claims for businesses with low payroll relative to claim size.",
   },
   {
     q: "Do you charge a percentage of the claim?",
@@ -156,7 +156,7 @@ export default function RDPage() {
           <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4">
             {[
               { v: "20%", l: "Standard merged scheme rate" },
-              { v: "27%", l: "R&D intensive enhanced rate" },
+              { v: "14.5%", l: "ERIS payable credit rate" },
               { v: "65%", l: "Subcontractor cost claimable" },
               { v: "£15k-£150k+", l: "Typical agency claim range" },
             ].map((s) => (

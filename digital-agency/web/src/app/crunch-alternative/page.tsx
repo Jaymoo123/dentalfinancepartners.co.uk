@@ -28,7 +28,7 @@ const data: Comparison = {
     { feature: "IR35 advisory + SDS preparation", competitor: "Generic", us: "Agency-specific" },
     { feature: "Exit planning (BADR, MBO, earn-out)", competitor: false, us: true },
     { feature: "Multi-shareholder salary/dividend modelling", competitor: "Basic", us: "Annual, per-shareholder" },
-    { feature: "Direct named accountant", competitor: "Shared team", us: "Same ICAEW accountant" },
+    { feature: "Direct named accountant", competitor: "Shared team", us: "Same named specialist" },
     { feature: "Response time", competitor: "Standard SLA", us: "24 hours, usually same day" },
   ],
   whoIsRightFor: {

@@ -22,35 +22,35 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { JsonLd, buildOrganization } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: `About ${siteConfig.name} | ICAEW Qualified Agency Accountants`,
+  title: `About ${siteConfig.name} | Specialist Agency Accountants for Founders`,
   description:
-    "Agency Founder Finance works exclusively with agency founders across the UK and UAE. ICAEW qualified accountants with 73+ agency clients and over £30M in agency finance managed.",
+    "Agency Founder Finance works exclusively with agency founders across the UK and UAE. Agency-only specialist accountants with fixed fees and plain-English advice.",
   alternates: { canonical: `${siteConfig.url}/about` },
   openGraph: {
     title: `About ${siteConfig.name}`,
-    description: "ICAEW qualified accountants for agency founders. Agency-only focus across the UK and UAE.",
+    description: "Specialist agency accountants for founders. Agency-only focus across the UK and UAE.",
     url: `${siteConfig.url}/about`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: `About ${siteConfig.name}`,
-    description: "ICAEW qualified accountants for agency founders. Agency-only focus across the UK and UAE.",
+    description: "Specialist agency accountants for founders. Agency-only focus across the UK and UAE.",
   },
 };
 
 const whyWeExist = [
   {
     title: "Agency finance is genuinely different",
-    body: "Retainer revenue, utilisation rates, contractor IR35 exposure, salary and dividend extraction, R&D credits for tech-enabled work, exit multiples driven by EBITDA. Agency finance has a specific set of problems that a generalist accountant handles once every few years. We handle them every day, across 73+ agency clients.",
+    body: "Retainer revenue, utilisation rates, contractor IR35 exposure, salary and dividend extraction, R&D credits for tech-enabled work, exit multiples driven by EBITDA. Agency finance has a specific set of problems that a generalist accountant handles once every few years. We handle them every day.",
   },
   {
     title: "Most agency founders are financially underserved",
     body: "The accounts get filed on time, but the strategic advice is missing. Should you incorporate? When? Is your salary and dividend split optimal? Could you claim R&D credits? What is your agency actually worth on a sale? Most accountants cannot answer these questions quickly because they do not see enough agency clients. We can, because we only work with agency founders.",
   },
   {
-    title: "ICAEW qualification matters",
-    body: "We are ICAEW qualified accountants, not just registered agents. ICAEW membership requires ongoing professional development, adherence to ethical standards and regulatory oversight. When your agency is navigating complex tax planning, IR35 risk or an exit transaction, the quality of your accountant matters.",
+    title: "Pattern recognition you cannot get one client at a time",
+    body: "Because we see the same decisions play out across agencies, we can tell you how similar founders structured a first hire, priced a retainer or timed an exit, and what happened next. You get the benefit of those patterns rather than theory, without paying for anyone's learning curve on your account.",
   },
   {
     title: "We only work with agency founders",
@@ -72,7 +72,7 @@ const howWeWork = [
   {
     icon: Headset,
     title: "Transparent and accessible",
-    body: "Fixed fees with no surprises. You speak to the same ICAEW qualified accountant every time. Plain English explanations, not jargon. We are here when you need us, not just at year end.",
+    body: "Fixed fees with no surprises. You speak to the same specialist accountant every time. Plain English explanations, not jargon. We are here when you need us, not just at year end.",
   },
   {
     icon: Globe2,
@@ -89,8 +89,8 @@ const differentiators = [
   },
   {
     icon: BadgeCheck,
-    title: "ICAEW qualified, not just registered",
-    body: "ICAEW qualification is the gold standard for UK accountancy. Ongoing professional development, strict ethical standards, regulatory oversight. Not all small-business accountants are ICAEW qualified. We are.",
+    title: "Plain English, not jargon",
+    body: "Tax is complicated. We make it clear. Every piece of advice comes with an explanation of what it means in pounds for your agency. No technical jargon, no filing for the sake of it, just clear guidance that helps you make better decisions.",
   },
   {
     icon: Wallet,
@@ -100,7 +100,7 @@ const differentiators = [
   {
     icon: UserCheck,
     title: "Same accountant every time",
-    body: "You are not passed around a team. You work with one qualified accountant who knows your agency, your goals, and your tax position. They are available when you need them, not just at year end.",
+    body: "You are not passed around a team. You work with one specialist accountant who knows your agency, your goals, and your tax position. They are available when you need them, not just at year end.",
   },
 ];
 
@@ -139,15 +139,15 @@ const agencyTypes = [
 ];
 
 const stats = [
-  { value: "73+", label: "Agency clients" },
-  { value: "£30M+", label: "Agency finance managed" },
-  { value: "ICAEW", label: "Qualified accountants" },
+  { value: "Agency-only", label: "Exclusive specialism" },
+  { value: "24hr", label: "Response guarantee" },
+  { value: "Fixed fees", label: "No surprise billing" },
   { value: "UK + UAE", label: "Territories covered" },
 ];
 
 const trustBadges = [
-  "ICAEW qualified",
   "Agency specialists",
+  "Agency-only focus",
   "24hr response",
   "Fixed fees",
   "UK & UAE founders",
@@ -184,7 +184,7 @@ export default function AboutPage() {
               The accountant <span className="text-indigo-400">built for agencies.</span>
             </h1>
             <p className="mt-4 text-lg sm:text-xl leading-relaxed text-slate-200 max-w-2xl">
-              ICAEW qualified accountants working exclusively with agency founders across the UK and UAE.
+              Specialist accountants working exclusively with agency founders across the UK and UAE.
             </p>
           </div>
         </div>
@@ -307,7 +307,7 @@ export default function AboutPage() {
               </div>
               <h2 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">Why founders choose us</h2>
               <p className="mt-4 text-lg text-slate-300">
-                Specialist, qualified, transparent, consistent. The four things that matter when you trust someone with your agency's finances.
+                Specialist, responsive, transparent, consistent. The four things that matter when you trust someone with your agency's finances.
               </p>
             </div>
             <div className="grid gap-6 sm:gap-8 md:grid-cols-2">

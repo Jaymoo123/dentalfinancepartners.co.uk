@@ -30,7 +30,7 @@ const data: Comparison = {
     { feature: "Management accounts (by client, gross margin)", competitor: "Generic P&L", us: "Agency-specific KPIs" },
     { feature: "UAE / international tax integration", competitor: false, us: true },
     { feature: "Knows competitor agency benchmarks", competitor: false, us: true },
-    { feature: "ICAEW qualified", competitor: "Often", us: true },
+    { feature: "Agency-only specialism", competitor: false, us: true },
     { feature: "Typical annual fee (growth-stage agency)", competitor: "£1,500-£3,500", us: "£3,000-£8,000" },
   ],
   whoIsRightFor: {

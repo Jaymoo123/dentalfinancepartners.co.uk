@@ -6,7 +6,7 @@ import { RelocationLayout, type RelocationDestination } from "@/components/reloc
 export const metadata: Metadata = {
   title: "UK Agency Founder Relocating to Spain? | Beckham Law Guide",
   description:
-    "Specialist UK and Spain financial guidance for agency founders. Beckham Law (24% flat tax), Spanish entity setup, autonomos vs SL, UK Ltd from Spain. ICAEW qualified.",
+    "Specialist UK and Spain financial guidance for agency founders. Beckham Law (24% flat tax), Spanish entity setup, autonomos vs SL, UK Ltd from Spain. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/spain-relocation` },
 };
 
@@ -79,7 +79,7 @@ const data: RelocationDestination = {
     },
     {
       q: "Can you advise on Spanish tax?",
-      a: "We handle the UK side to ICAEW standards. For Spanish personal tax, Beckham Law application, wealth tax planning and local compliance we partner with Madrid- or Barcelona-based specialists. You get one coordinated plan with us as primary contact.",
+      a: "We handle the UK side, applying UK tax law and current HMRC guidance. For Spanish personal tax, Beckham Law application, wealth tax planning and local compliance we partner with Madrid- or Barcelona-based specialists. You get one coordinated plan with us as primary contact.",
     },
   ],
 };

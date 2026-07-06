@@ -137,7 +137,7 @@ export function RelocationLayout({ data }: Props) {
                 </div>
                 <h2 className="text-3xl font-bold text-indigo-900 sm:text-4xl">{data.consultation.title}</h2>
                 <p className="mt-3 text-base sm:text-lg text-slate-700">
-                  90 minutes with an ICAEW qualified accountant. We map your UK exit position, your {data.shortName} setup options, and your agency's structure. You leave with a written plan. No obligation.
+                  90 minutes with a specialist agency accountant. We map your UK exit position, your {data.shortName} setup options, and your agency's structure. You leave with a written plan. No obligation.
                 </p>
               </div>
               <LeadForm redirectOnSuccess={false} submitLabel="Book my relocation consultation" />

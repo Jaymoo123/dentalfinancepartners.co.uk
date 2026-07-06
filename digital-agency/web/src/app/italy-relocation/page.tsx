@@ -6,7 +6,7 @@ import { RelocationLayout, type RelocationDestination } from "@/components/reloc
 export const metadata: Metadata = {
   title: "UK Agency Founder Relocating to Italy? | Impatriati Regime Guide",
   description:
-    "Specialist UK and Italy financial guidance for agency founders. Impatriati regime (50-70% income exemption), €200k flat-tax option, Italian entity setup. ICAEW qualified.",
+    "Specialist UK and Italy financial guidance for agency founders. Impatriati regime (50-70% income exemption), €200k flat-tax option, Italian entity setup. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/italy-relocation` },
 };
 
@@ -55,7 +55,7 @@ const data: RelocationDestination = {
     },
     {
       q: "Can you advise on Italian tax?",
-      a: "We handle the UK side to ICAEW standards. For Italian personal tax, impatriati eligibility, SRL setup and local compliance we partner with Milan- or Rome-based specialists. You get one coordinated plan with us as primary contact.",
+      a: "We handle the UK side, applying UK tax law and current HMRC guidance. For Italian personal tax, impatriati eligibility, SRL setup and local compliance we partner with Milan- or Rome-based specialists. You get one coordinated plan with us as primary contact.",
     },
   ],
 };

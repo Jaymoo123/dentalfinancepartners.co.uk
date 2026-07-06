@@ -6,7 +6,7 @@ import { RelocationLayout, type RelocationDestination } from "@/components/reloc
 export const metadata: Metadata = {
   title: "UK Agency Founder Relocating to Portugal? | Specialist Guidance",
   description:
-    "Specialist UK and Portugal financial guidance for agency founders. NHR 2.0 (IFICI), statutory residence test, Portuguese entity options, UK Ltd from Portugal. ICAEW qualified.",
+    "Specialist UK and Portugal financial guidance for agency founders. NHR 2.0 (IFICI), statutory residence test, Portuguese entity options, UK Ltd from Portugal. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/portugal-relocation` },
 };
 
@@ -79,7 +79,7 @@ const data: RelocationDestination = {
     },
     {
       q: "Can you advise on Portuguese tax?",
-      a: "We work to UK ICAEW standards and our regulated advice is UK-focused. For Portuguese personal tax, IFICI qualification and local compliance we partner with Lisbon-based specialists. You get a coordinated plan with one point of contact (us) and specialist Portuguese input where the rules require it.",
+      a: "Our advice covers the UK side: statutory residence, UK entity decisions and UK tax on non-resident income. For Portuguese personal tax, IFICI qualification and local compliance we partner with Lisbon-based specialists. You get a coordinated plan with one point of contact (us) and specialist Portuguese input where the rules require it.",
     },
   ],
 };

@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: `Accountants for SaaS & Software Agencies | ${siteConfig.name}`,
-  description: "Specialist accountants for UK SaaS and software agency founders. Product vs services revenue split, R&D credits, deferred revenue, exit valuations. ICAEW qualified.",
+  description: "Specialist accountants for UK SaaS and software agency founders. Product vs services revenue split, R&D credits, deferred revenue, exit valuations. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/agencies/saas-agencies` },
   openGraph: {
     title: "Accountants for SaaS and Software Agencies",
