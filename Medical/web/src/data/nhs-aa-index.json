@@ -1,0 +1,393 @@
+{
+  "meta": {
+    "generated_at": "2026-07-06",
+    "retrieved_date": "2026-07-06",
+    "hmrc_publication_date": "2025-07-31",
+    "hmrc_edition": "July 2025",
+    "latest_year": "2023/24",
+    "provisional_years": [
+      "2023/24"
+    ],
+    "revised_years": [
+      "2016/17",
+      "2017/18",
+      "2018/19",
+      "2019/20",
+      "2020/21",
+      "2021/22",
+      "2022/23"
+    ],
+    "foi_snapshot_date": "2024-09-26",
+    "foi_safe_window": [
+      "2015/16",
+      "2016/17",
+      "2017/18",
+      "2018/19",
+      "2019/20",
+      "2020/21",
+      "2021/22"
+    ],
+    "nhs_scope": "England and Wales",
+    "temporal_coverage": "2006-04-06/2024-04-05",
+    "license": "Open Government Licence v3.0",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "update_cadence": "Annual. HMRC publishes each July; the next edition is due Summer 2026.",
+    "next_release": "Summer 2026",
+    "sources": [
+      {
+        "name": "Private pension statistics (Table 7, annual allowance)",
+        "publisher": "HM Revenue and Customs",
+        "url": "https://www.gov.uk/government/statistics/personal-and-stakeholder-pensions-statistics",
+        "licence": "OGL v3.0"
+      },
+      {
+        "name": "NHS Pension Scheme Annual Report and Accounts 2024-25 (membership, section 3.3)",
+        "publisher": "NHS Business Services Authority",
+        "url": "https://www.nhsbsa.nhs.uk/information-about-nhs-pensions/nhs-pension-scheme-accounts-and-valuation-reports",
+        "licence": "OGL v3.0"
+      },
+      {
+        "name": "FOI-02228: members exceeding the annual allowance and Scheme Pays records",
+        "publisher": "NHS Business Services Authority",
+        "url": "https://opendata.nhsbsa.net/dataset/foi-02228",
+        "licence": "OGL v3.0"
+      },
+      {
+        "name": "FOI-02711: Scheme Pays election forms 2019/20 by role",
+        "publisher": "NHS Business Services Authority",
+        "url": "https://opendata.nhsbsa.net/dataset/foi-02711",
+        "licence": "OGL v3.0"
+      }
+    ],
+    "notes": "The recurring money and count series is HMRC data for all UK registered pension schemes; there is no NHS split in that source. The NHS layer is an NHSBSA FOI snapshot for the England and Wales scheme. The Self Assessment value column is contributions above the allowance, not a tax charge. Scheme Pays (Accounting for Tax) values begin in 2012/13. FOI figures for 2022/23 and 2023/24 are excluded as undercounted at the snapshot date."
+  },
+  "hmrc": {
+    "series": [
+      {
+        "tax_year": "2006/07",
+        "standard_aa_gbp": 215000,
+        "aft_charges_n": null,
+        "aft_charges_value_gbp_m": null,
+        "sa_individuals_over_aa_n": 140,
+        "sa_excess_value_gbp_m": 2,
+        "provisional": false,
+        "revised": false
+      },
+      {
+        "tax_year": "2007/08",
+        "standard_aa_gbp": 225000,
+        "aft_charges_n": null,
+        "aft_charges_value_gbp_m": null,
+        "sa_individuals_over_aa_n": 230,
+        "sa_excess_value_gbp_m": 3,
+        "provisional": false,
+        "revised": false
+      },
+      {
+        "tax_year": "2008/09",
+        "standard_aa_gbp": 235000,
+        "aft_charges_n": null,
+        "aft_charges_value_gbp_m": null,
+        "sa_individuals_over_aa_n": 190,
+        "sa_excess_value_gbp_m": 8,
+        "provisional": false,
+        "revised": false
+      },
+      {
+        "tax_year": "2009/10",
+        "standard_aa_gbp": 245000,
+        "aft_charges_n": null,
+        "aft_charges_value_gbp_m": null,
+        "sa_individuals_over_aa_n": 170,
+        "sa_excess_value_gbp_m": 5,
+        "provisional": false,
+        "revised": false
+      },
+      {
+        "tax_year": "2010/11",
+        "standard_aa_gbp": 255000,
+        "aft_charges_n": null,
+        "aft_charges_value_gbp_m": null,
+        "sa_individuals_over_aa_n": 140,
+        "sa_excess_value_gbp_m": 6,
+        "provisional": false,
+        "revised": false
+      },
+      {
+        "tax_year": "2011/12",
+        "standard_aa_gbp": 50000,
+        "aft_charges_n": null,
+        "aft_charges_value_gbp_m": null,
+        "sa_individuals_over_aa_n": 5570,
+        "sa_excess_value_gbp_m": 148,
+        "provisional": false,
+        "revised": false
+      },
+      {
+        "tax_year": "2012/13",
+        "standard_aa_gbp": 50000,
+        "aft_charges_n": 590,
+        "aft_charges_value_gbp_m": 14,
+        "sa_individuals_over_aa_n": 3850,
+        "sa_excess_value_gbp_m": 95,
+        "provisional": false,
+        "revised": false
+      },
+      {
+        "tax_year": "2013/14",
+        "standard_aa_gbp": 50000,
+        "aft_charges_n": 2460,
+        "aft_charges_value_gbp_m": 51,
+        "sa_individuals_over_aa_n": 5840,
+        "sa_excess_value_gbp_m": 178,
+        "provisional": false,
+        "revised": false
+      },
+      {
+        "tax_year": "2014/15",
+        "standard_aa_gbp": 40000,
+        "aft_charges_n": 1780,
+        "aft_charges_value_gbp_m": 40,
+        "sa_individuals_over_aa_n": 7280,
+        "sa_excess_value_gbp_m": 184,
+        "provisional": false,
+        "revised": false
+      },
+      {
+        "tax_year": "2015/16",
+        "standard_aa_gbp": 40000,
+        "aft_charges_n": 3010,
+        "aft_charges_value_gbp_m": 62,
+        "sa_individuals_over_aa_n": 5460,
+        "sa_excess_value_gbp_m": 143,
+        "provisional": false,
+        "revised": false
+      },
+      {
+        "tax_year": "2016/17",
+        "standard_aa_gbp": 40000,
+        "aft_charges_n": 2940,
+        "aft_charges_value_gbp_m": 64,
+        "sa_individuals_over_aa_n": 18720,
+        "sa_excess_value_gbp_m": 584,
+        "provisional": false,
+        "revised": true
+      },
+      {
+        "tax_year": "2017/18",
+        "standard_aa_gbp": 40000,
+        "aft_charges_n": 6810,
+        "aft_charges_value_gbp_m": 122,
+        "sa_individuals_over_aa_n": 29990,
+        "sa_excess_value_gbp_m": 914,
+        "provisional": false,
+        "revised": true
+      },
+      {
+        "tax_year": "2018/19",
+        "standard_aa_gbp": 40000,
+        "aft_charges_n": 13770,
+        "aft_charges_value_gbp_m": 210,
+        "sa_individuals_over_aa_n": 34490,
+        "sa_excess_value_gbp_m": 824,
+        "provisional": false,
+        "revised": true
+      },
+      {
+        "tax_year": "2019/20",
+        "standard_aa_gbp": 40000,
+        "aft_charges_n": 21630,
+        "aft_charges_value_gbp_m": 256,
+        "sa_individuals_over_aa_n": 45210,
+        "sa_excess_value_gbp_m": 1011,
+        "provisional": false,
+        "revised": true
+      },
+      {
+        "tax_year": "2020/21",
+        "standard_aa_gbp": 40000,
+        "aft_charges_n": 20070,
+        "aft_charges_value_gbp_m": 216,
+        "sa_individuals_over_aa_n": 44290,
+        "sa_excess_value_gbp_m": 822,
+        "provisional": false,
+        "revised": true
+      },
+      {
+        "tax_year": "2021/22",
+        "standard_aa_gbp": 40000,
+        "aft_charges_n": 50590,
+        "aft_charges_value_gbp_m": 328,
+        "sa_individuals_over_aa_n": 56270,
+        "sa_excess_value_gbp_m": 1288,
+        "provisional": false,
+        "revised": true
+      },
+      {
+        "tax_year": "2022/23",
+        "standard_aa_gbp": 40000,
+        "aft_charges_n": 54920,
+        "aft_charges_value_gbp_m": 348,
+        "sa_individuals_over_aa_n": 34190,
+        "sa_excess_value_gbp_m": 728,
+        "provisional": false,
+        "revised": true
+      },
+      {
+        "tax_year": "2023/24",
+        "standard_aa_gbp": 60000,
+        "aft_charges_n": 49590,
+        "aft_charges_value_gbp_m": 350,
+        "sa_individuals_over_aa_n": 23370,
+        "sa_excess_value_gbp_m": 466,
+        "provisional": true,
+        "revised": false
+      }
+    ]
+  },
+  "nhs": {
+    "foi_reference": "FOI-02228",
+    "snapshot_date": "2024-09-26",
+    "scope": "England and Wales",
+    "basis": "Standard annual allowance only; pre-McCloud-rollback (members in the 2015 scheme).",
+    "exceeded_aa": [
+      {
+        "tax_year": "2015/16",
+        "practitioner_exceeded": 3111,
+        "officer_exceeded": 12562,
+        "total_exceeded": 15673,
+        "practitioner_scheme_pays_records": 292,
+        "officer_scheme_pays_records": 222
+      },
+      {
+        "tax_year": "2016/17",
+        "practitioner_exceeded": 8996,
+        "officer_exceeded": 20817,
+        "total_exceeded": 29813,
+        "practitioner_scheme_pays_records": 1892,
+        "officer_scheme_pays_records": 1286
+      },
+      {
+        "tax_year": "2017/18",
+        "practitioner_exceeded": 9251,
+        "officer_exceeded": 18776,
+        "total_exceeded": 28027,
+        "practitioner_scheme_pays_records": 3630,
+        "officer_scheme_pays_records": 3162
+      },
+      {
+        "tax_year": "2018/19",
+        "practitioner_exceeded": 6637,
+        "officer_exceeded": 13259,
+        "total_exceeded": 19896,
+        "practitioner_scheme_pays_records": 3646,
+        "officer_scheme_pays_records": 3805
+      },
+      {
+        "tax_year": "2019/20",
+        "practitioner_exceeded": 6925,
+        "officer_exceeded": 19130,
+        "total_exceeded": 26055,
+        "practitioner_scheme_pays_records": 9356,
+        "officer_scheme_pays_records": 10476
+      },
+      {
+        "tax_year": "2020/21",
+        "practitioner_exceeded": 6200,
+        "officer_exceeded": 23289,
+        "total_exceeded": 29489,
+        "practitioner_scheme_pays_records": 4962,
+        "officer_scheme_pays_records": 4902
+      },
+      {
+        "tax_year": "2021/22",
+        "practitioner_exceeded": 7991,
+        "officer_exceeded": 46135,
+        "total_exceeded": 54126,
+        "practitioner_scheme_pays_records": 6424,
+        "officer_scheme_pays_records": 7639
+      }
+    ]
+  },
+  "nhs_role_split_2019_20": {
+    "foi_reference": "FOI-02711",
+    "basis": "Scheme Pays election forms registered in 2019/20 (submission-date basis).",
+    "scope": "England and Wales",
+    "rows": [
+      {
+        "employment_type": "GDP",
+        "scheme_pays_forms": 442,
+        "applied_aa_compensation": 255
+      },
+      {
+        "employment_type": "GP",
+        "scheme_pays_forms": 8239,
+        "applied_aa_compensation": 6611
+      },
+      {
+        "employment_type": "Hospital Dentist",
+        "scheme_pays_forms": 26,
+        "applied_aa_compensation": 24
+      },
+      {
+        "employment_type": "Hospital Doctor",
+        "scheme_pays_forms": 9745,
+        "applied_aa_compensation": 8344
+      },
+      {
+        "employment_type": "Non-SC Nurse",
+        "scheme_pays_forms": 319,
+        "applied_aa_compensation": 232
+      },
+      {
+        "employment_type": "Officer",
+        "scheme_pays_forms": 890,
+        "applied_aa_compensation": 345
+      },
+      {
+        "employment_type": "Special Class Nurse",
+        "scheme_pays_forms": 190,
+        "applied_aa_compensation": 152
+      }
+    ]
+  },
+  "member_counts": {
+    "scope": "England and Wales",
+    "source": "NHS Pension Scheme Annual Report and Accounts, section 3.3 movement table (closing figures).",
+    "rows": [
+      {
+        "as_at": "2023-03-31",
+        "active": 1815310,
+        "deferred": 772560,
+        "pensions_in_payment": 1098388
+      },
+      {
+        "as_at": "2024-03-31",
+        "active": 1868523,
+        "deferred": 802262,
+        "pensions_in_payment": 1145617
+      },
+      {
+        "as_at": "2025-03-31",
+        "active": 1872287,
+        "deferred": 845020,
+        "pensions_in_payment": 1199771
+      }
+    ]
+  },
+  "headline": {
+    "scheme_pays_value_latest_gbp_m": 350,
+    "scheme_pays_value_latest_year": "2023/24",
+    "scheme_pays_value_2016_17_gbp_m": 64,
+    "sa_peak_individuals": 56270,
+    "sa_peak_year": "2021/22",
+    "sa_2016_17_individuals": 18720,
+    "nhs_officer_peak_2021_22": 46135,
+    "nhs_practitioner_2021_22": 7991,
+    "aa_2006_07_gbp": 215000,
+    "aa_latest_gbp": 60000,
+    "aa_latest_year": "2023/24",
+    "member_active_latest": 1872287,
+    "member_active_latest_as_at": "2025-03-31"
+  }
+}
