@@ -9,7 +9,7 @@
 - Agency `/r-and-d-credits` CODE page ERIS figures: FIXED 2026-07-06 (14.5%/30%/86%, merged-scheme dating).
 - Agency `rd-tax-credit.ts` compute lib: CORRECTED (pre-R2; goldens pinned).
 - Agency BADR/CGT money-page cluster: FIXED 2026-07-06 (selling-agency, earn-out, when-to-incorporate, exit-tax/temp-non-residence verified clean; commit `71da7b5d`).
-- Property: 518-page credential sweep + source fix LIVE since 2026-06-23. Generalist: full de-credential STAGED locally, **awaiting OWNER deploy sign-off** (owner gate, not agent work).
+- Property: 518-page credential sweep + source fix LIVE since 2026-06-23. Generalist: full de-credential VERIFIED LIVE 2026-07-06 (rode the CRO-parity G-0 deploy; live JSON-LD + home/about checked; generalist CLOSED).
 
 ## THE SWEEPS (priority order)
 
@@ -39,4 +39,4 @@ Fleet tool configs label "2025/26" while computing FA-2026 (2026/27) rates in se
 - Resend from-domains: everything sends under the Property-verified domain "for the time being" — owner will revisit; emailed resource delivery stays OFF (on-page delivery live) until he does.
 - Phone numbers: NO phone numbers displayed on any site (verified 2026-07-06: zero rendered phones/tel:/JSON-LD telephone estate-wide; only the lead-form input placeholder shows a format example — that stays).
 - /newsletter disposition approved as-is (delinked, cron disarmed, page live).
-- Generalist credential-strip deploy: still awaiting owner sign-off (owner gate).
+- Generalist credential-strip: owner said "deploy it" 2026-07-06; verification showed it was ALREADY LIVE (shipped inside the CRO program's G-0 baseline deploy). Closed, no action.
