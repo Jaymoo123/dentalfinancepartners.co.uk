@@ -282,7 +282,15 @@ def check_3_layout_providers(site_key: str, site_dir: Optional[Path]) -> None:
 
     has_consent = grep_file(layout, r"ConsentProvider")
     has_analytics = grep_file(layout, r"AnalyticsProvider")
-    prefix_match = re.search(r'storagePrefix\s*[=:]\s*["\'](\w+)["\']', layout.read_text(encoding="utf-8", errors="replace"))
+    prefix_re = r'storagePrefix\s*[=:]\s*["\'](\w+)["\']'
+    prefix_match = re.search(prefix_re, layout.read_text(encoding="utf-8", errors="replace"))
+    if not prefix_match:
+        # Some sites (construction-cis) set the frozen prefix inside a local
+        # AnalyticsProvider wrapper mounted by layout.tsx rather than as a
+        # literal prop in layout itself. Follow that one hop.
+        wrapper = site_dir / "src" / "components" / "analytics" / "AnalyticsProvider.tsx"
+        if wrapper.exists():
+            prefix_match = re.search(prefix_re, wrapper.read_text(encoding="utf-8", errors="replace"))
 
     if not has_consent:
         gap(cid, "ConsentProvider not found in layout.tsx — adopt analytics SDK (SITE_SPINUP.md Step 2b)")
