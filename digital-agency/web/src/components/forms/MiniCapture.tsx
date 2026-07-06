@@ -47,6 +47,7 @@ export function MiniCapture({
   exposeOnView = true,
   messagePlaceholder,
   messageMinLength = 10,
+  messageMinWords,
   onSuccess,
 }: {
   /** Surface id for analytics (form tracking + GA label), e.g. "calc_result". */
@@ -69,6 +70,14 @@ export function MiniCapture({
   messagePlaceholder?: string;
   /** Minimum message length (default 10). */
   messageMinLength?: number;
+  /**
+   * Minimum word count for the message field. When set, validate() requires
+   * the message to have at least messageMinWords words AND at least
+   * messageMinLength chars; on failure the message field error is set and
+   * form_error is emitted. When unset, only the char-length rule applies.
+   * Additive and backward-compatible: existing callers pass no value.
+   */
+  messageMinWords?: number;
   /** Called after a successful submission (e.g. to close a modal). */
   onSuccess?: () => void;
 }) {
@@ -105,11 +114,16 @@ export function MiniCapture({
       const digits = String(data.get("phone") || "").replace(/\D/g, "");
       if (digits.length < 10) errs.phone = "Enter a phone number we can call you on.";
       const msg = String(data.get("message") || "").trim();
-      if (msg.length < messageMinLength) errs.message = "Tell us a sentence or two about your situation.";
+      if (msg.length < messageMinLength) {
+        errs.message = "Tell us a sentence or two about your situation.";
+      } else if (messageMinWords !== undefined) {
+        const wordCount = msg.split(/\s+/).filter(Boolean).length;
+        if (wordCount < messageMinWords) errs.message = "A couple of sentences works best, please add a little more detail.";
+      }
       if (!data.get("consent")) errs.consent = "Please tick the box to continue.";
       return errs;
     },
-    [messageMinLength],
+    [messageMinLength, messageMinWords],
   );
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {

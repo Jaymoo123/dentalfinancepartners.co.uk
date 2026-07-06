@@ -15,6 +15,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
 import { topicForBlogSlug } from "@/lib/intent/taxonomy";
+import { PremiumUpgrade } from "@/components/tools/premium/PremiumUpgrade";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -220,6 +221,13 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
 
               {/* Mid-scroll InlineMiniLeadForm (replaces newsletter InlinePrompt) */}
               <InlineMiniLeadForm topic={topicKey ?? undefined} />
+
+              {/* Premium tool island: topic-to-tool via resources spine.
+                  Renders nothing for unmapped/excluded topics (e.g. international).
+                  A single injection covers both long and short posts because
+                  InlineMiniLeadForm is unconditional at this split point.
+                  R3 will append <ResourceGate> as a clean sibling after this. */}
+              <PremiumUpgrade topic={topicKey} placement="blog" category={categorySlug} />
 
               {/* Second half of article body (null for short posts) */}
               {after ? (
