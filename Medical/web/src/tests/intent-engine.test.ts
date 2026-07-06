@@ -473,9 +473,44 @@ describe("evaluate: deep_scroll_modal", () => {
     expect(evaluate("deep_scroll_modal", ctx)).toBeNull();
   });
 
-  it("returns null when no pageTopic even above threshold", () => {
-    const ctx = { ...baseCtx, pageTopic: null, scrollPct: 80 };
+  it("returns null when both pageTopic and entryTopic are null even above threshold", () => {
+    // baseCtx has entryTopic: null, so topic = null ?? null = null -> still null
+    const ctx = { ...baseCtx, pageTopic: null, entryTopic: null, scrollPct: 80 };
     expect(evaluate("deep_scroll_modal", ctx)).toBeNull();
+  });
+
+  it("returns action when pageTopic is null but entryTopic is set (flat-post ctx)", () => {
+    // Flat blog posts: TopicOverrideProvider mounts inside BlogPostRenderer after
+    // IntentProvider has already resolved pageTopic=null. entryTopic is set from
+    // visitMemory (the topic the visitor entered on). The fallback must fire.
+    const ctx = {
+      ...baseCtx,
+      pageTopic: null,
+      entryTopic: "nhs-pension" as const,
+      scrollPct: 75,
+      converted: false,
+    };
+    const action = evaluate("deep_scroll_modal", ctx);
+    expect(action).not.toBeNull();
+    expect(action!.surface).toBe("deep_scroll_modal");
+    expect(action!.topic).toBe("nhs-pension");
+  });
+
+  it("flat-post ctx: returns specialist offer for locum when scrolled deeply (engaged reader path)", () => {
+    // At scrollPct >= SCROLL_ESCALATE_PCT (60), pickOffer takes the engagedReader
+    // branch which calls reviewOffer first (href=/contact). That is correct behaviour
+    // for a deeply-scrolled reader, even for a topic that has a calculator.
+    const ctx = {
+      ...baseCtx,
+      pageTopic: null,
+      entryTopic: "locum" as const,
+      scrollPct: 80,
+    };
+    const action = evaluate("deep_scroll_modal", ctx);
+    expect(action).not.toBeNull();
+    expect(action!.topic).toBe("locum");
+    expect(action!.offer.kind).toBe("specialist");
+    expect(action!.offer.href).toBe("/contact");
   });
 });
 
@@ -537,8 +572,36 @@ describe("evaluate: returning_bar", () => {
 });
 
 describe("evaluate: next_step", () => {
-  it("returns null when no pageTopic", () => {
+  it("returns null when both pageTopic and entryTopic are null", () => {
+    // baseCtx has both null; topic = null ?? null = null -> still null
     expect(evaluate("next_step", baseCtx)).toBeNull();
+  });
+
+  it("returns action when pageTopic is null but entryTopic is set (flat-post ctx)", () => {
+    // Flat blog posts have pageTopic=null in IntentProvider; entryTopic carries
+    // the topic the visitor entered on. next_step must use it as fallback.
+    const ctx = {
+      ...baseCtx,
+      pageTopic: null,
+      entryTopic: "gp-practice" as const,
+    };
+    const action = evaluate("next_step", ctx);
+    expect(action).not.toBeNull();
+    expect(action!.surface).toBe("next_step");
+    expect(action!.topic).toBe("gp-practice");
+  });
+
+  it("flat-post ctx: returns tool offer when entryTopic has a calculator (locum)", () => {
+    const ctx = {
+      ...baseCtx,
+      pageTopic: null,
+      entryTopic: "locum" as const,
+    };
+    const action = evaluate("next_step", ctx);
+    expect(action).not.toBeNull();
+    expect(action!.topic).toBe("locum");
+    expect(action!.offer.kind).toBe("tool");
+    expect(action!.offer.href).toContain("locum-tax-calculator");
   });
 
   it("returns action with pageTopic (gp-practice, no calc -> specialist)", () => {

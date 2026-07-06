@@ -11,6 +11,12 @@ metaDescription: 'How GP partnership profit is taxed in 2026/27: SA800 to SA104,
 altText: GP partners reviewing partnership tax documents and financial statements
 image: ''
 h1: 'GP Partnership Tax: Complete Guide for 2026/27'
+keyTakeaways:
+- "GP partners are taxed on their allocated profit share, not drawings; the partnership files one SA800 and each partner reports their share on SA104."
+- "Class 4 NIC is 6% on profit between £12,570 and £50,270 and 2% above for 2026/27; no separate weekly Class 2 payment since 6 April 2024."
+- "NHS GP goodwill has been unsellable since 1 April 2004 (SI 2019/251); only genuinely private, non-NHS goodwill can ever be sold."
+- "The £60,000 pension annual allowance tapers above £200,000 threshold income and £260,000 adjusted income, down to a £10,000 floor."
+- "General partnerships are deferred from MTD for Income Tax, but separate sole-trader income above £50,000 is caught from 6 April 2026."
 summary: GP partners are taxed on their profit share, not their drawings, through the partnership return (SA800) and the partnership pages of their personal tax return (SA104). This 2026/27 guide explains how partnership profits flow to tax, Class 4 National Insurance, allowable expenses, capital accounts, the NHS goodwill rules and how partnership profits interact with the NHS pension.
 schema: ''
 faqs:

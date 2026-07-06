@@ -10,6 +10,12 @@ metaDescription: 'How GP practice accounts work: the SA800 partnership return, p
 altText: UK GP reviewing financial documents and accounting records at medical practice
 image: ''
 h1: 'GP Accounting: Complete Guide for UK General Practitioners'
+keyTakeaways:
+- "A GP partnership is not a limited company and files no Companies House accounts; it files an SA800, with each partner reporting their share on SA104."
+- "Partners are taxed on their year-end profit share, not on the monthly drawings taken during the year."
+- "Core NHS income comes through the GMS, PMS or APMS contract: the Carr-Hill-weighted Global Sum, QOF, enhanced services and PCN or ARRS funding."
+- "Superannuation is deducted through PCSE before distributable profit; Type 1 partners certify pensionable profit each year on the Annual Certificate."
+- "Partnerships are deferred from MTD for Income Tax, but a partner's other self-employed income above £50,000 is caught from 6 April 2026."
 summary: A complete GP accounting guide covering the SA800 partnership structure, drawings versus profit share, NHS income streams, NHS pension on the accounts, expenses, year-end tax and MTD for UK general practitioners.
 schema: ''
 canonical: https://www.medicalaccounts.co.uk/blog/gp-accounting-guide

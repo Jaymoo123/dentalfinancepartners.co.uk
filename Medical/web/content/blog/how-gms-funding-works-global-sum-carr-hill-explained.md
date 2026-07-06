@@ -11,6 +11,17 @@ metaDescription: "How an NHS GP practice is paid: the Global Sum per weighted pa
 altText: "GP practice manager reviewing NHS Global Sum funding statements at a desk"
 image: ""
 h1: "How GMS Practice Funding Works: The Global Sum, the Carr-Hill Formula and Weighted Patients"
+howtoSteps:
+  - name: "Start from the registered patient list"
+    text: "Take the practice's raw registered headcount, the starting point before any weighting is applied."
+  - name: "Apply the Carr-Hill formula to weight the list"
+    text: "Convert the raw list into weighted patients using the Carr-Hill factors: age and sex, additional needs, list turnover, nursing and residential homes, rurality, and a staff market-forces adjustment, so funding follows relative workload."
+  - name: "Calculate the Global Sum on the weighted list"
+    text: "Multiply the weighted patient count by the national price per weighted patient set in the Statement of Financial Entitlements and uplifted each April. It is paid monthly by the commissioner."
+  - name: "Reconcile the monthly payment"
+    text: "Break the single remittance back into its component lines and reconcile the core funding month on month, allowing for the quarterly list-cleaning lag between a list change and the payment."
+  - name: "Recognise it as practice income, then profit share"
+    text: "The Global Sum lands in the practice as trading income; after expenses the remaining profit is shared between partners, who are taxed on their profit share, not their drawings."
 summary: "Most GP partners draw a profit share but have never seen how the money actually arrives. This guide opens up the engine room of NHS GP income: the Global Sum as the core per-weighted-patient payment, the Carr-Hill formula that turns a raw list into weighted patients, the Statement of Financial Entitlements that governs it, and where GMS, PMS and APMS contracts diverge. It then connects that funding to what a partner takes home, because the Global Sum is practice trading income, not a pay packet."
 schema: ""
 faqs:

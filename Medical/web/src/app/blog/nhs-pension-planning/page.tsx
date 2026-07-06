@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
-  title: "NHS Pension Planning for Doctors & GPs | Medical Accountants UK",
+  title: "NHS Pension Planning for Doctors & GPs",
   description:
     "Expert guidance on the NHS Pension Scheme, annual allowance, tapered relief, McCloud remedy and retirement planning for UK doctors and GPs.",
   alternates: { canonical: `${siteConfig.url}/blog/nhs-pension-planning` },
@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/blog/nhs-pension-planning`,
     siteName: siteConfig.name,
     type: "website",
+    images: [{ url: `/api/og?title=${encodeURIComponent("NHS Pension Planning for Doctors & GPs")}`, width: 1200, height: 630, alt: "NHS Pension Planning for Doctors & GPs" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -59,6 +60,7 @@ export default function NHSPensionPlanningPillarPage() {
       />
       <article className={`${contentNarrow} ${sectionY}`}>
         <Breadcrumb
+          suppressJsonLd
           items={[
             { label: "Home", href: "/" },
             { label: "Blog", href: "/blog" },

@@ -6,7 +6,7 @@ date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
-metaTitle: "GP Accountant Liverpool | Medical Accountants UK"
+metaTitle: "GP Accountant Liverpool"
 metaDescription: "Liverpool GP accountant for NHS partners, locums and consultants. NHS pension annual allowance, profit-share returns and private-practice tax across Merseyside."
 altText: "Liverpool medical professionals reviewing financial documents with specialist GP accountant"
 image: ""

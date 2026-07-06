@@ -7,21 +7,22 @@ import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
-  title: "GP Tax & Accounts — Tax Planning for General Practitioners | Medical Accountants UK",
+  title: "GP Tax & Accounts: Tax Planning for General Practitioners",
   description:
     "Expert guidance on GP tax returns, NHS income reporting, partnership taxation and tax-efficient strategies for general practitioners across the UK.",
   alternates: { canonical: `${siteConfig.url}/blog/gp-tax-and-accounts` },
   openGraph: {
-    title: "GP Tax & Accounts — Tax Planning for General Practitioners",
+    title: "GP Tax & Accounts: Tax Planning for General Practitioners",
     description:
       "Expert guidance on GP tax returns, NHS income reporting, partnership taxation and tax-efficient strategies.",
     url: `${siteConfig.url}/blog/gp-tax-and-accounts`,
     siteName: siteConfig.name,
     type: "website",
+    images: [{ url: `/api/og?title=${encodeURIComponent("GP Tax & Accounts: Tax Planning for General Practitioners")}`, width: 1200, height: 630, alt: "GP Tax & Accounts: Tax Planning for General Practitioners" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GP Tax & Accounts — Tax Planning for General Practitioners",
+    title: "GP Tax & Accounts: Tax Planning for General Practitioners",
     description:
       "Expert guidance on GP tax returns, NHS income reporting, partnership taxation and tax-efficient strategies.",
   },
@@ -59,6 +60,7 @@ export default function GPTaxAccountsPillarPage() {
       />
       <article className={`${contentNarrow} ${sectionY}`}>
         <Breadcrumb
+          suppressJsonLd
           items={[
             { label: "Home", href: "/" },
             { label: "Blog", href: "/blog" },

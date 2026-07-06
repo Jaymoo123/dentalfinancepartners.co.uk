@@ -20,6 +20,7 @@ export const metadata: Metadata = {
       "NHS salary, private practice, medico-legal income, and NHS pension planning for UK hospital consultants. Specialist medical accountants.",
     url: `${siteConfig.url}/for-consultants`,
     type: "website",
+    images: [{ url: `/api/og?title=${encodeURIComponent("Accountants for Hospital Consultants | NHS & Private Practice Tax")}`, width: 1200, height: 630, alt: "Accountants for Hospital Consultants | NHS & Private Practice Tax" }],
   },
 };
 

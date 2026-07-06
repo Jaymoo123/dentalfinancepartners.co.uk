@@ -11,6 +11,12 @@ metaDescription: 'How GP partner and salaried GP pay compare: profit share vs sa
 altText: UK medical professionals reviewing tax documents comparing GP partner versus salaried GP tax implications
 image: ''
 h1: 'GP Partner vs Salaried GP Tax Comparison: Complete Guide for 2026/27'
+keyTakeaways:
+- "A GP partner is self-employed, taxed on their profit share via SA800 and SA104; a salaried GP is a PAYE employee taxed at source."
+- "Partners pay Class 4 NIC at 6% on profit between £12,570 and £50,270 and 2% above; salaried GPs pay Class 1 employee NIC."
+- "Both routes accrue NHS Pension in the 2015 CARE section: a partner pensions profit as Type 1, a salaried GP as Type 2."
+- "The pension annual allowance is £60,000 for 2025/26, tapering once threshold income exceeds £200,000 and adjusted income exceeds £260,000."
+- "Partnership adds Self Assessment and payments on account on 31 January and 31 July; the take-home gain over a salaried GP is usually modest."
 summary: Understanding the tax differences between GP partners and salaried GPs is crucial for career decisions and financial planning. This guide breaks down the key tax implications of each role.
 schema: ''
 faqs:

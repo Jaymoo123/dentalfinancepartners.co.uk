@@ -23,6 +23,7 @@ export const metadata: Metadata = {
       "In-depth guides for UK doctors: NHS pension allowance, GP partnership accounts, consultant private practice tax, locum structure, expenses, and IR35.",
     url: `${siteConfig.url}/medical-guides`,
     type: "website",
+    images: [{ url: `/api/og?title=${encodeURIComponent("Medical Guides | NHS Pension, GP Tax & Locum Accounting")}`, width: 1200, height: 630, alt: "Medical Guides | NHS Pension, GP Tax & Locum Accounting" }],
   },
 };
 

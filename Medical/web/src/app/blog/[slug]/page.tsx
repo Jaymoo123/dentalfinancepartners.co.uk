@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BlogPostRenderer } from "@/components/blog/BlogPostRenderer";
 import { siteConfig } from "@/config/site";
-import { buildOgImageUrl } from "@/lib/schema";
+import { JsonLd, buildOgImageUrl, buildPostHowToJsonLd } from "@/lib/schema";
 import { getAllPosts, getPostBySlug, getRelatedPosts, getCategorySlug } from "@/lib/blog";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -65,5 +65,15 @@ export default async function BlogArticlePage({ params }: Props) {
     summary: r.summary,
   }));
 
-  return <BlogPostRenderer post={post} categorySlug={categorySlug} related={related} />;
+  // Procedural posts (those carrying howtoSteps frontmatter) emit a HowTo
+  // JSON-LD block alongside the existing BlogPosting/FAQPage schema. Returns
+  // null for the other posts, so this is a no-op for non-procedural content.
+  const howTo = buildPostHowToJsonLd(post, `/blog/${post.slug}`);
+
+  return (
+    <>
+      {howTo && <JsonLd data={howTo} />}
+      <BlogPostRenderer post={post} categorySlug={categorySlug} related={related} />
+    </>
+  );
 }

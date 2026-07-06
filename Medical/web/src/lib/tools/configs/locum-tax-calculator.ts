@@ -84,13 +84,13 @@ export const locumTaxTool: GenericTool = {
         tone: "good" as const,
       },
       rows,
-      note: "For self-employed locum doctors. 2025/26 tax year. Includes Class 4 NI. Does not include Class 2 NI (~Â£3.70/week). Standard tax code assumed.",
+      note: "For self-employed locum doctors. 2025/26 tax year. Includes Class 4 NI. Does not include Class 2 NI (~£3.70/week). Standard tax code assumed.",
     };
   },
   explainer: {
     heading: "How this calculator works",
     paragraphs: [
-      "The calculator applies the 2025/26 personal allowance of Â£12,570 (no taper above Â£100,000 for self-employed; the taper applies to adjusted net income), the three income tax bands, and Class 4 National Insurance at 6% on profits between Â£12,570 and Â£50,270 and 2% above. Class 2 NI (approximately Â£3.70/week) is not included in this estimate.",
+      "The calculator applies the 2025/26 personal allowance of £12,570 (no taper above £100,000 for self-employed; the taper applies to adjusted net income), the three income tax bands, and Class 4 National Insurance at 6% on profits between £12,570 and £50,270 and 2% above. Class 2 NI (approximately £3.70/week) is not included in this estimate.",
       "Your gross locum income minus allowable expenses and pension contributions gives your net income. Tax, NI and any student loan repayments are calculated on that net figure. Student loan thresholds and rates vary by plan.",
     ],
   },
@@ -103,7 +103,7 @@ export const locumTaxTool: GenericTool = {
     {
       question: "Do I pay Class 2 as well as Class 4 NI?",
       answer:
-        "Class 2 NI is around Â£3.70 per week (approximately Â£192/year) and is not included in this calculator. It is usually collected via your self-assessment return along with Class 4. Class 2 is being phased out but is still payable in 2025/26.",
+        "Class 2 NI is around £3.70 per week (approximately £192/year) and is not included in this calculator. It is usually collected via your self-assessment return along with Class 4. Class 2 is being phased out but is still payable in 2025/26.",
     },
     {
       question: "What student loan plan am I on?",
@@ -113,7 +113,7 @@ export const locumTaxTool: GenericTool = {
     {
       question: "Should I work through a limited company as a locum?",
       answer:
-        "It depends on your income level, IR35 status across engagements, and NHS pension position. At sustained income above roughly Â£80,000 to Â£100,000 from outside-IR35 engagements, a limited company can save materially. Use the Private Practice Incorporation Calculator to model the comparison, or book a free call with a specialist.",
+        "It depends on your income level, IR35 status across engagements, and NHS pension position. At sustained income above roughly £80,000 to £100,000 from outside-IR35 engagements, a limited company can save materially. Use the Private Practice Incorporation Calculator to model the comparison, or book a free call with a specialist.",
     },
   ],
 };

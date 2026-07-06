@@ -11,6 +11,12 @@ metaDescription: 'Weigh a GP limited company honestly: corporation tax at 19% on
 altText: UK GP weighing the tax benefits and drawbacks of running a limited company with accounts and a calculator
 image: ''
 h1: 'GP Limited Company Tax Benefits and Drawbacks: What You Need to Know'
+keyTakeaways:
+- "Corporation tax is 19% on profits up to £50,000 and 25% above £250,000, versus income tax up to 45%, but applies to private work only."
+- "A company cannot hold an NHS GMS or PMS contract and its income is not NHS-pensionable, so dividends build no NHS pension accrual."
+- "For 2026/27 the saving narrowed: dividend rates rose to 10.75% ordinary and 35.75% upper from 6 April 2026."
+- "IR35 still applies to a GP personal service company; inside-IR35 engagements deduct PAYE and NIC at source."
+- "Business Asset Disposal Relief can apply to a genuine private-practice disposal at 18% from 6 April 2026, never to NHS goodwill."
 summary: Wondering whether a GP limited company is worth it? This guide weighs the real tax benefits against the NHS pension and contract drawbacks, with 2026/27 dividend and corporation tax figures, so you can decide whether to incorporate.
 schema: ''
 faqs:

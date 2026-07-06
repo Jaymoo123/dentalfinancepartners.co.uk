@@ -14,9 +14,11 @@ export {
 
 import {
   buildWebApplication as _buildWebApplication,
+  buildWebSite as _buildWebSite,
   buildService,
   buildBreadcrumb,
   buildFaqPage as _buildFaqPage,
+  buildHowTo,
   type SchemaThing,
   type SiteSchemaOpts,
   type WebApplicationInput,
@@ -38,6 +40,35 @@ function getSiteOpts(): SiteSchemaOpts {
 /** Site-bound wrapper so calculator/tool pages call the shared builder with one argument. */
 export function buildWebApplication(input: WebApplicationInput): SchemaThing {
   return _buildWebApplication(input, getSiteOpts());
+}
+
+/**
+ * Site-bound WebSite + SearchAction node. Emitted once site-wide from the root
+ * layout so the whole entity graph has a WebSite root whose publisher resolves
+ * to the canonical Organization @id, and so search engines can offer a
+ * sitelinks search box. Estate-consistent (SearchAction targets /blog?q=).
+ */
+export function buildWebSite(): SchemaThing {
+  return _buildWebSite(getSiteOpts());
+}
+
+/**
+ * HowTo JSON-LD for a procedural post that carries a `howtoSteps` frontmatter
+ * field. Name and description resolve from the post itself; steps come from the
+ * body-derived frontmatter. Returns null when the post has no howtoSteps so
+ * callers can render conditionally. Schema-only: adds no rendered markup.
+ */
+export function buildPostHowToJsonLd(post: BlogPost, path: string): SchemaThing | null {
+  if (!post.howtoSteps || post.howtoSteps.length === 0) return null;
+  return buildHowTo(
+    {
+      name: post.h1,
+      description: post.summary || post.metaDescription,
+      path,
+      steps: post.howtoSteps,
+    },
+    getSiteOpts(),
+  );
 }
 
 /**
@@ -201,7 +232,9 @@ export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
     description: post.metaDescription,
     image: imageUrl,
     datePublished: post.date,
-    dateModified: post.date,
+    // Freshness signal: emit the real last-modified date when the post carries
+    // one, falling back to the publish date so unedited posts are unchanged.
+    dateModified: post.dateModified ?? post.date,
     author: {
       "@type": "Person" as const,
       name: `${siteConfig.name} Editorial Team`,

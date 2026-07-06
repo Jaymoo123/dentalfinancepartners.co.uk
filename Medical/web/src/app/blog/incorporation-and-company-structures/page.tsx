@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Incorporation & Company Structures for Doctors | Medical Accountants UK",
+  title: "Incorporation & Company Structures for Doctors",
   description:
     "Guide to incorporating a medical practice in the UK — limited company vs LLP, tax savings, CQC rules and the transition process for doctors and GPs.",
   alternates: { canonical: `${siteConfig.url}/blog/incorporation-and-company-structures` },
@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/blog/incorporation-and-company-structures`,
     siteName: siteConfig.name,
     type: "website",
+    images: [{ url: `/api/og?title=${encodeURIComponent("Incorporation & Company Structures for Doctors")}`, width: 1200, height: 630, alt: "Incorporation & Company Structures for Doctors" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -61,6 +62,7 @@ export default function IncorporationPillarPage() {
       />
       <article className={`${contentNarrow} ${sectionY}`}>
         <Breadcrumb
+          suppressJsonLd
           items={[
             { label: "Home", href: "/" },
             { label: "Blog", href: "/blog" },

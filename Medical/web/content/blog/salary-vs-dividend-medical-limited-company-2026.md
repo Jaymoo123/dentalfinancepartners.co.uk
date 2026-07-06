@@ -11,6 +11,12 @@ metaDescription: "The 2026/27 salary and dividend split for a consultant's priva
 altText: "Consultant reviewing salary and dividend extraction figures for a private medical limited company"
 image: ""
 h1: "Salary vs Dividend for a Medical or Consultant Limited Company (2026/27)"
+keyTakeaways:
+  - "Single-director medical companies typically set salary near the £5,000 secondary NIC threshold, below the £12,570 personal allowance, avoiding employer NIC and income tax."
+  - "The £10,500 Employment Allowance is not available where the only employee is also the sole director of the company."
+  - "From 6 April 2026 dividends are taxed at 10.75%, 35.75% and 39.35% above the £500 allowance, with the ordinary and upper rates up two points on 2025/26."
+  - "An overdrawn director's loan outstanding nine months after year-end triggers a s.455 charge at 35.75% on loans made from 6 April 2026."
+  - "Employer pension contributions are often the sharpest lever: deductible for corporation tax, free of NIC, and outside the dividend rates."
 summary: "Once you have a private medical company, the recurring question is how to get money out of it efficiently. This guide covers the 2026/27 salary and dividend split: why single-director companies typically pin salary near the £5,000 secondary threshold, what the new 35.75% upper dividend rate means for higher earners, and why employer pension contributions are often the sharpest lever of all."
 schema: ""
 faqs:

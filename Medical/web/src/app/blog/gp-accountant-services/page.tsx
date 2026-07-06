@@ -7,21 +7,22 @@ import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
-  title: "GP Accountant Services — Specialist Accounting for GPs | Medical Accountants UK",
+  title: "GP Accountant Services: Specialist Accounting for GPs",
   description:
     "Specialist GP accountant services covering tax returns, NHS pensions, practice accounts and superannuation. Why GPs need a dedicated medical accountant.",
   alternates: { canonical: `${siteConfig.url}/blog/gp-accountant-services` },
   openGraph: {
-    title: "GP Accountant Services — Specialist Accounting for GPs",
+    title: "GP Accountant Services: Specialist Accounting for GPs",
     description:
       "Specialist GP accountant services covering tax returns, NHS pensions, practice accounts and superannuation.",
     url: `${siteConfig.url}/blog/gp-accountant-services`,
     siteName: siteConfig.name,
     type: "website",
+    images: [{ url: `/api/og?title=${encodeURIComponent("GP Accountant Services: Specialist Accounting for GPs")}`, width: 1200, height: 630, alt: "GP Accountant Services: Specialist Accounting for GPs" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GP Accountant Services — Specialist Accounting for GPs",
+    title: "GP Accountant Services: Specialist Accounting for GPs",
     description:
       "Specialist GP accountant services covering tax returns, NHS pensions, practice accounts and superannuation.",
   },
@@ -59,6 +60,7 @@ export default function GPAccountantServicesPillarPage() {
       />
       <article className={`${contentNarrow} ${sectionY}`}>
         <Breadcrumb
+          suppressJsonLd
           items={[
             { label: "Home", href: "/" },
             { label: "Blog", href: "/blog" },

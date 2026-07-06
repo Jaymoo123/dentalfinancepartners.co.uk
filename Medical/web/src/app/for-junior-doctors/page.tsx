@@ -20,6 +20,7 @@ export const metadata: Metadata = {
       "Locum shift taxation, student loan repayments, trust moves, NHS pension, and training expenses for UK junior doctors.",
     url: `${siteConfig.url}/for-junior-doctors`,
     type: "website",
+    images: [{ url: `/api/og?title=${encodeURIComponent("Accountants for Junior Doctors | Locum Shifts, Student Loans & Tax")}`, width: 1200, height: 630, alt: "Accountants for Junior Doctors | Locum Shifts, Student Loans & Tax" }],
   },
 };
 

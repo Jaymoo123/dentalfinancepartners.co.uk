@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Allowable Medical Expenses for UK Doctors | Medical Accountants UK",
+  title: "Allowable Medical Expenses for UK Doctors",
   description:
     "Complete guide to tax-deductible expenses for UK doctors: professional subscriptions, indemnity, equipment, travel, CPD and more.",
   alternates: { canonical: `${siteConfig.url}/blog/medical-expenses` },
@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/blog/medical-expenses`,
     siteName: siteConfig.name,
     type: "website",
+    images: [{ url: `/api/og?title=${encodeURIComponent("Allowable Medical Expenses for UK Doctors")}`, width: 1200, height: 630, alt: "Allowable Medical Expenses for UK Doctors" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -59,6 +60,7 @@ export default function MedicalExpensesPillarPage() {
       />
       <article className={`${contentNarrow} ${sectionY}`}>
         <Breadcrumb
+          suppressJsonLd
           items={[
             { label: "Home", href: "/" },
             { label: "Blog", href: "/blog" },

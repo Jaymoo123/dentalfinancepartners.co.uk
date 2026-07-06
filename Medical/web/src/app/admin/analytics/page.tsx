@@ -760,8 +760,8 @@ export default async function AdminAnalyticsPage({
         reason="Not operated on this site. The experiments engine requires a running experimentation registry. Medical does not currently run A/B tests."
       />
       <NotOperatedPanel
-        feature="Personalisation"
-        reason="Not operated on this site. Behavioural personalisation (intent-matched offers) requires the personalisation engine. Medical does not currently run it."
+        feature="Personalisation: running (metrics not yet wired)"
+        reason="IntentProvider, StickyCTA, and SpecialistWidget are active on this site and delivering intent-matched offers. The session-level personalisation metrics panel is not yet wired; conversion uplift is visible only via lead counts above."
       />
     </div>
   );

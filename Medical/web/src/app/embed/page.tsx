@@ -4,7 +4,7 @@ import { allTools } from "@/lib/tools/registry";
 import { siteConfig } from "@/config/site";
 
 export const metadata = {
-  title: "Embed Medical Calculators | Medical Finance Partners",
+  title: `Embed Medical Calculators | ${siteConfig.name}`,
   robots: { index: false },
 };
 
@@ -17,7 +17,7 @@ function iframeSnippet(slug: string, height: number) {
   height="${height}"
   frameborder="0"
   scrolling="no"
-  title="Medical Finance Partners calculator"
+  title="${siteConfig.name} calculator"
 ></iframe>
 <script>
 window.addEventListener("message", function(e) {

@@ -15,10 +15,17 @@ type BreadcrumbProps = {
    * section (e.g. the navy calculator hero).
    */
   variant?: "default" | "light";
+  /**
+   * When true, the component does not emit its own BreadcrumbList JSON-LD
+   * script tag. Use this on pages that already include a BreadcrumbList
+   * inside a @graph block to avoid emitting two BreadcrumbList blocks on
+   * the same page.
+   */
+  suppressJsonLd?: boolean;
 };
 
-export function Breadcrumb({ items, variant = "default" }: BreadcrumbProps) {
-  const jsonLd = buildBreadcrumbJsonLd(items);
+export function Breadcrumb({ items, variant = "default", suppressJsonLd = false }: BreadcrumbProps) {
+  const jsonLd = suppressJsonLd ? null : buildBreadcrumbJsonLd(items);
 
   const olColour =
     variant === "light" ? "text-white/70" : "text-[var(--muted)]";
@@ -35,10 +42,12 @@ export function Breadcrumb({ items, variant = "default" }: BreadcrumbProps) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: jsonLd }}
-      />
+      {jsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLd }}
+        />
+      )}
       <nav aria-label="Breadcrumb" className="mb-6">
       <ol className={`flex flex-wrap items-center gap-2 text-sm ${olColour}`}>
         {items.map((item, index) => {

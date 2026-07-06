@@ -6,7 +6,7 @@ date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
-metaTitle: "GP Accountant Birmingham | Medical Accountants UK"
+metaTitle: "GP Accountant Birmingham"
 metaDescription: "Specialist GP accountant in Birmingham for NHS partners, salaried GPs and locums. NHS pension annual allowance, profit-share accounts and 2026/27 tax planning across the Midlands."
 altText: "Professional accountant working with GP practice financial documents in Birmingham office"
 image: ""

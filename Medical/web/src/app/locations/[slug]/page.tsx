@@ -23,11 +23,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cityName = slug.charAt(0).toUpperCase() + slug.slice(1);
   const canonical = `${siteConfig.url}/locations/${loc.slug}`;
   return {
-    title: `GP Accountant ${cityName} | Medical Accountants UK`,
+    title: `Medical Accountants in ${cityName} for GPs and Consultants`,
     description: `Specialist GP accountant in ${cityName} for doctors, consultants & medical practices. NHS pension planning, locum tax, private practice incorporation. Book free consultation.`,
     alternates: { canonical },
     openGraph: {
-      title: `GP Accountant ${cityName} | Medical Accountants UK`,
+      title: `Medical Accountants in ${cityName} for GPs and Consultants`,
       description: `Specialist GP accountant in ${cityName}. NHS pension planning, locum tax, private practice advice.`,
       url: canonical,
       type: "website",
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: `GP Accountant ${cityName}`,
+      title: `Medical Accountants in ${cityName} for GPs and Consultants`,
       description: `Specialist GP accountant in ${cityName} for medical professionals.`,
       images: [siteConfig.publisherLogoUrl],
     },

@@ -7,21 +7,22 @@ import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
-  title: "GP Practice Management — Financial Guidance for Practices | Medical Accountants UK",
+  title: "GP Practice Management: Financial Guidance for Practices",
   description:
     "Financial management guidance for GP practices covering partnership structures, payroll, mergers, CQC compliance and practice budgeting across the UK.",
   alternates: { canonical: `${siteConfig.url}/blog/gp-practice-management` },
   openGraph: {
-    title: "GP Practice Management — Financial Guidance for Practices",
+    title: "GP Practice Management: Financial Guidance for Practices",
     description:
       "Financial management guidance for GP practices covering partnership structures, payroll, mergers and compliance.",
     url: `${siteConfig.url}/blog/gp-practice-management`,
     siteName: siteConfig.name,
     type: "website",
+    images: [{ url: `/api/og?title=${encodeURIComponent("GP Practice Management: Financial Guidance for Practices")}`, width: 1200, height: 630, alt: "GP Practice Management: Financial Guidance for Practices" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GP Practice Management — Financial Guidance for Practices",
+    title: "GP Practice Management: Financial Guidance for Practices",
     description:
       "Financial management guidance for GP practices covering partnership structures, payroll, mergers and compliance.",
   },
@@ -59,6 +60,7 @@ export default function GPPracticeManagementPillarPage() {
       />
       <article className={`${contentNarrow} ${sectionY}`}>
         <Breadcrumb
+          suppressJsonLd
           items={[
             { label: "Home", href: "/" },
             { label: "Blog", href: "/blog" },

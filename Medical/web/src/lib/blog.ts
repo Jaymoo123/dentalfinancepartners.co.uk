@@ -36,6 +36,10 @@ function parsePostFile(filePath: string): BlogPost {
     // WS8 optional fields: gracefully absent for 0/73 posts currently.
     keyTakeaways: Array.isArray(fm.keyTakeaways) ? fm.keyTakeaways : undefined,
     updatedDate: fm.updatedDate ? String(fm.updatedDate) : undefined,
+    // Freshness signal: parse the optional dateModified frontmatter so JSON-LD
+    // + sitemap can reflect real edit dates rather than the publish date.
+    dateModified: fm.dateModified ? String(fm.dateModified) : undefined,
+    howtoSteps: Array.isArray(fm.howtoSteps) ? fm.howtoSteps : undefined,
     sourcesVerifiedAt: fm.sourcesVerifiedAt ? String(fm.sourcesVerifiedAt) : undefined,
     contentHtml: contentWithIds,
   };

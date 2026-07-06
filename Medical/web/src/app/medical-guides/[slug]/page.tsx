@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: guide.metaDescription,
       url: `${siteConfig.url}/medical-guides/${slug}`,
       type: "article",
+      images: [{ url: `/api/og?title=${encodeURIComponent(guide.metaTitle)}`, width: 1200, height: 630, alt: guide.metaTitle }],
     },
   };
 }

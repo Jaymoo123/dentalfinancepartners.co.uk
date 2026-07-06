@@ -113,9 +113,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const post of posts) {
     const url = `${base}/blog/${post.slug}`;
+    // Freshness signal: prefer the real last-modified date when present so an
+    // actively maintained post does not signal as stale at its publish date.
+    const postLastMod = post.dateModified || post.date;
     entries.push({
       url,
-      lastModified: post.date ? new Date(post.date) : STATIC,
+      lastModified: postLastMod ? new Date(postLastMod) : STATIC,
       changeFrequency: "monthly",
       priority: 0.8,
       alternates: hreflang(url),

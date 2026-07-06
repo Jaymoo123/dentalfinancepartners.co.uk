@@ -6,7 +6,7 @@ date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "GP Corporation Tax Rates 2026/27 (19% to 25%) | Medical Accountants UK"
+metaTitle: "GP Corporation Tax Rates 2026/27 (19% to 25%)"
 metaDescription: "Corporation tax for an incorporated GP or medical company in 2026/27: 19% to 25% with marginal relief, plus the 2026/27 dividend rates and the NHS pension trap."
 altText: "UK GP reviewing corporation tax rates and dividend figures for an incorporated private medical company"
 image: ""

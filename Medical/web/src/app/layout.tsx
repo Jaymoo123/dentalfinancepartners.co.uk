@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { PageShell } from "@/components/layout/PageShell";
 import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
@@ -10,6 +11,7 @@ import { ReturningBar } from "@/components/intent/ReturningBar";
 import { DeepScrollModal } from "@/components/intent/DeepScrollModal";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
+import { JsonLd, buildWebSite } from "@/lib/schema";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
@@ -76,6 +78,10 @@ export default function RootLayout({
       <body
         className={`${plusJakarta.variable} ${cormorant.variable} ${plusJakarta.className} antialiased`}
       >
+        {/* Site-wide WebSite + SearchAction entity graph root; publisher
+            references the canonical Organization @id. Emitted once here so
+            every page carries the root node without per-page duplication. */}
+        <JsonLd data={buildWebSite()} />
         {/*
          * AN-01 (opt-out posture): track by default under legitimate interest.
          * Visitor can opt out via the "Do not track me" footer link (ConsentToggle
@@ -112,6 +118,8 @@ export default function RootLayout({
             </IntentProvider>
           </AnalyticsProvider>
         </ConsentProvider>
+        {/* Vercel Speed Insights: anonymous, cookieless real-user Core Web Vitals. */}
+        <SpeedInsights />
       </body>
     </html>
   );

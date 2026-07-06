@@ -7,7 +7,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 
 export const metadata: Metadata = {
-  title: "About Medical Accountants UK | Specialist GP Accountants & Medical Tax Advisors",
+  title: "About: Specialist GP Accountants & Medical Tax Advisors",
   description:
     "Why we focus exclusively on UK medical professionals. Specialist GP accountants and medical tax advisors serving doctors, consultants, and practice owners. NHS pension expertise, locum tax planning, and private practice incorporation advice from accountants who understand the medical sector.",
   alternates: { canonical: `${siteConfig.url}/about` },

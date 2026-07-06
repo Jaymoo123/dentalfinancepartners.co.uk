@@ -52,6 +52,7 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: `${siteConfig.url}/free-practice-health-check`,
     type: "website",
+    images: [{ url: `/api/og?title=${encodeURIComponent(TITLE)}`, width: 1200, height: 630, alt: TITLE }],
   },
   twitter: {
     card: "summary_large_image",

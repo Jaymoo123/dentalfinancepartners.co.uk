@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Locum Tax: Tax Guidance for Locum Doctors | Medical Accountants UK",
+  title: "Locum Tax: Tax Guidance for Locum Doctors",
   description:
     "Tax guidance for locum doctors covering employment status, self-assessment, allowable expenses, record keeping and tax planning strategies across the UK.",
   alternates: { canonical: `${siteConfig.url}/blog/locum-tax` },
@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/blog/locum-tax`,
     siteName: siteConfig.name,
     type: "website",
+    images: [{ url: `/api/og?title=${encodeURIComponent("Locum Tax: Tax Guidance for Locum Doctors")}`, width: 1200, height: 630, alt: "Locum Tax: Tax Guidance for Locum Doctors" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -59,6 +60,7 @@ export default function LocumTaxPillarPage() {
       />
       <article className={`${contentNarrow} ${sectionY}`}>
         <Breadcrumb
+          suppressJsonLd
           items={[
             { label: "Home", href: "/" },
             { label: "Blog", href: "/blog" },

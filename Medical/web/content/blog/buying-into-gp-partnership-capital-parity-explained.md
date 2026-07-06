@@ -11,6 +11,12 @@ metaDescription: 'What you pay to buy into a GP partnership: a capital share of 
 altText: Incoming GP partner reviewing a capital buy-in figure and partnership accounts with an adviser
 image: ''
 h1: 'Buying Into a GP Partnership: The Capital Buy-In, Parity and How the Cost Is Set'
+keyTakeaways:
+- "A GP buy-in is a capital contribution for your share of the practice's net assets, working capital and any premises, not a payment for goodwill."
+- "You are never buying NHS goodwill: its sale has been prohibited since 1 April 2004 under SI 2019/251."
+- "The figure is anchored to net assets in the accounts, with any premises share valued separately by a surveyor or the District Valuer."
+- "Parity is a full, equal profit share, often reached by stepping up from a reduced share over a period set in the partnership deed."
+- "During the parity period you are taxed on your allocated profit share for the year, not on the drawings you actually take."
 summary: 'When a salaried or sessional GP is offered a partnership, the practical question is what you actually pay to come in, and what that money buys. This page isolates the capital buy-in itself: a contribution into the partnership capital accounts for your share of net assets, working capital and any premises share. It explains parity (working up from a reduced share to a full, equal profit share over an agreed period), and how the figure is set and valued, namely on net assets per the accounts and a surveyor or District Valuer basis for premises, never an NHS goodwill multiple. It is the money-and-mechanics page for joining, not a broad pros-and-cons of partnership.'
 schema: ''
 faqs:

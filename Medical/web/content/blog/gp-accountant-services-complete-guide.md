@@ -5,7 +5,7 @@ date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
-metaTitle: "GP Accountant Services: The Complete Guide (2026/27) | Medical Accountants UK"
+metaTitle: "GP Accountant Services: The Complete Guide (2026/27)"
 metaDescription: "What a specialist GP and medical accountant actually does, from partnership accounts and NHS pension certificates to tax returns, payroll and incorporation. Updated for 2026/27."
 altText: "GP accountant reviewing medical practice accounts and tax documents on desk"
 image: ""

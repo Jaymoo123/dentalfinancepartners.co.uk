@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     description: `Specialist GP accounting and medical tax services across major UK cities. NHS pension planning, locum tax, private practice advice.`,
     url: `${siteConfig.url}/locations`,
     type: "website",
+    images: [{ url: `/api/og?title=${encodeURIComponent("GP Accountants by Location | UK Medical Accounting")}`, width: 1200, height: 630, alt: "GP Accountants by Location | UK Medical Accounting" }],
   },
   twitter: {
     card: "summary_large_image",

@@ -5,6 +5,7 @@ import { contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
+import { JsonLd, buildServicePageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Medical Accounting Services | GP Tax, NHS Pension Planning & Locum Tax Returns",
@@ -59,15 +60,31 @@ const sections = [
 
 export default function ServicesPage() {
   const orgSchema = buildOrganizationJsonLd();
-  
+
+  // Service + OfferCatalog (with a single BreadcrumbList) so the services hub
+  // emits the same answer-ready structured data as /nhs-pension. The visible
+  // Breadcrumb below suppresses its own JSON-LD so only one BreadcrumbList is
+  // emitted (no duplicate). Offer items mirror the six services listed on-page.
+  const serviceSchema = buildServicePageSchema({
+    name: "Medical accounting services",
+    description:
+      "Specialist accounting and tax support for GPs, consultants, locums and practice owners across the UK: GP partnership accounts, NHS pension annual allowance planning, locum tax returns, private practice incorporation, medical expense claims and consultant tax planning.",
+    path: "/services",
+    breadcrumbLabel: "Services",
+    serviceType: "Medical accountancy and tax",
+    offerItems: sections.map((s) => s.title),
+  });
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
       />
+      <JsonLd data={serviceSchema} />
       <div className={`${contentNarrow} ${sectionY}`}>
         <Breadcrumb
+          suppressJsonLd
           items={[
             { label: "Home", href: "/" },
             { label: "Services" },

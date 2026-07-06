@@ -16,6 +16,7 @@ export const metadata: Metadata = {
       "Calculate NHS pension allowance, locum tax, and incorporation savings. 2025/26 and 2026/27 rates.",
     url: `${siteConfig.url}/calculators`,
     type: "website",
+    images: [{ url: `/api/og?title=${encodeURIComponent("Free Medical Tax Calculators for UK Doctors")}`, width: 1200, height: 630, alt: "Free Medical Tax Calculators for UK Doctors" }],
   },
 };
 

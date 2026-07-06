@@ -20,6 +20,7 @@ export const metadata: Metadata = {
       "NHS pension annual allowance, GP partnership accounts, mixed income tax, and medical expense claims. 100% medical focus.",
     url: `${siteConfig.url}/for-gps`,
     type: "website",
+    images: [{ url: `/api/og?title=${encodeURIComponent("Accountants for GP Partners & Salaried GPs")}`, width: 1200, height: 630, alt: "Accountants for GP Partners & Salaried GPs" }],
   },
 };
 

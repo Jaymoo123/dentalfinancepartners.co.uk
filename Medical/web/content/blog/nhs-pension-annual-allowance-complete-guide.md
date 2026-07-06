@@ -11,6 +11,12 @@ metaDescription: 'Work out your NHS pension annual allowance: the £60,000 limit
 altText: UK medical professional reviewing NHS pension annual allowance documentation
 image: ''
 h1: 'NHS Pension Annual Allowance: Complete Guide for UK Medical Professionals'
+keyTakeaways:
+- "For defined-benefit NHS pensions the test is the growth in your benefits (the pension input amount), not the contributions you pay."
+- "The standard annual allowance is £60,000 for 2025/26, tapering by £1 for every £2 of adjusted income above £260,000 to a £10,000 floor."
+- "Any excess above your allowance, after carry forward from the previous three years, is taxed at your marginal rate of 20%, 40% or 45%."
+- "Mandatory Scheme Pays applies where the charge exceeds £2,000 and NHS growth alone exceeds £60,000, meeting it from your future pension."
+- "The lifetime allowance ended on 6 April 2024, replaced by a £268,275 Lump Sum Allowance and a £1,073,100 Lump Sum and Death Benefit Allowance."
 summary: The NHS pension annual allowance limits how much your pension can grow tax free each year. For a defined benefit scheme the test is the growth in your benefits (the pension input amount), not the contributions you pay, which is why high earning doctors are caught even though they never chose to over-contribute.
 schema: ''
 faqs:

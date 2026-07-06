@@ -20,6 +20,7 @@ export const metadata: Metadata = {
       "IR35 status reviews, limited company vs umbrella analysis, locum expense claims, and NHS pension guidance. 100% medical focus.",
     url: `${siteConfig.url}/for-locum-doctors`,
     type: "website",
+    images: [{ url: `/api/og?title=${encodeURIComponent("Accountants for Locum Doctors | IR35, Ltd Company & Tax Returns")}`, width: 1200, height: 630, alt: "Accountants for Locum Doctors | IR35, Ltd Company & Tax Returns" }],
   },
 };
 

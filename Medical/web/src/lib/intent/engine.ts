@@ -158,19 +158,21 @@ export function evaluate(surface: Surface, ctx: IntentContext): IntentAction | n
     }
 
     case "next_step": {
-      if (!ctx.pageTopic) return null;
-      const offer = pickOffer(ctx.pageTopic, ctx);
+      const topic = ctx.pageTopic ?? ctx.entryTopic;
+      if (!topic) return null;
+      const offer = pickOffer(topic, ctx);
       if (!offer) return null;
-      return build(surface, "topic_next_step", ctx.pageTopic, offer);
+      return build(surface, "topic_next_step", topic, offer);
     }
 
     case "deep_scroll_modal": {
       if (ctx.converted) return null;
       if (ctx.scrollPct < SCROLL_MODAL_PCT) return null;
-      if (!ctx.pageTopic) return null;
-      const offer = pickOffer(ctx.pageTopic, ctx);
+      const topic = ctx.pageTopic ?? ctx.entryTopic;
+      if (!topic) return null;
+      const offer = pickOffer(topic, ctx);
       if (!offer) return null;
-      return build(surface, "deep_scroll_offer", ctx.pageTopic, offer);
+      return build(surface, "deep_scroll_offer", topic, offer);
     }
 
     case "returning_bar": {

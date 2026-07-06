@@ -7,7 +7,21 @@ import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from 
 import { siteConfig } from "@/config/site";
 import { getPostBySlug } from "@/lib/blog";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
+import { buildFaqPage } from "@/lib/schema";
 import { TestimonialSlider } from "@/components/medical/TestimonialSlider";
+
+// FAQPage JSON-LD for the homepage's single visible Q&A (the "Do I need a
+// specialist accountant" details block). Schema-only: this mirrors the on-page
+// answer so answer engines can extract it. The comma below stands in for the
+// on-page dash to keep the estate no-em-dash rule; the answer is otherwise the
+// same text rendered on the page. No rendered markup is changed.
+const HOMEPAGE_FAQS = [
+  {
+    question: "Do I need a specialist accountant as a medical professional?",
+    answer:
+      "Not strictly, but the question is whether a generalist accountant can give you genuinely useful advice on the financial specifics of the medical sector. In our experience, the gap shows most clearly around NHS pension planning, locum tax rules, mixed NHS/private income, and practice partnership structures. A competent generalist can handle your compliance. A medical specialist can do that and help you make better financial decisions that protect your wealth.",
+  },
+];
 
 const btnMailOutline =
   "inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--medical-teal)]/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-[var(--medical-teal)] transition-all duration-200 hover:border-[var(--medical-teal)] hover:bg-[var(--medical-teal)]/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--coral)]";
@@ -157,6 +171,7 @@ export default function HomePage() {
   );
 
   const orgSchema = buildOrganizationJsonLd();
+  const faqSchema = buildFaqPage(HOMEPAGE_FAQS);
 
   return (
     <>
@@ -165,6 +180,12 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <section className="hero-brand border-b border-white/10">
         <div className={`hero-inner ${siteContainerLg} ${sectionYLoose}`}>
           <div className="hero-reveal">

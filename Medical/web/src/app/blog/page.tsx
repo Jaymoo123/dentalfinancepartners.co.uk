@@ -17,6 +17,7 @@ export const metadata: Metadata = {
       "Expert articles on GP tax planning, NHS pension annual allowance, locum tax returns, and private practice accounting for UK doctors.",
     url: `${siteConfig.url}/blog`,
     type: "website",
+    images: [{ url: `/api/og?title=${encodeURIComponent("Medical Accounting Blog | GP Tax & NHS Pension Advice")}`, width: 1200, height: 630, alt: "Medical Accounting Blog | GP Tax & NHS Pension Advice" }],
   },
   twitter: {
     card: "summary_large_image",

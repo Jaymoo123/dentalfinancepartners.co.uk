@@ -1,15 +1,16 @@
 import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";
+import { niche } from "@/config/niche-loader";
 
 export const runtime = "edge";
 export const maxDuration = 10;
 
-const BRAND_COLOR = "#0891b2";
-const BRAND_NAME = "Medical Accountants UK";
+const BRAND_COLOR = niche.brand.primary_color;
+const BRAND_NAME = niche.display_name;
 
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl;
-  const title = searchParams.get("title") ?? "Medical Accountants UK";
+  const title = searchParams.get("title") ?? niche.display_name;
   const category = searchParams.get("category") ?? "";
 
   return new ImageResponse(

@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Private Practice for UK Doctors & Consultants | Medical Accountants UK",
+  title: "Private Practice for UK Doctors & Consultants",
   description:
     "How to set up and grow a private medical practice in the UK — structure, VAT, insurance, financial planning and tax-efficient income strategies.",
   alternates: { canonical: `${siteConfig.url}/blog/private-practice` },
@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/blog/private-practice`,
     siteName: siteConfig.name,
     type: "website",
+    images: [{ url: `/api/og?title=${encodeURIComponent("Private Practice for UK Doctors & Consultants")}`, width: 1200, height: 630, alt: "Private Practice for UK Doctors & Consultants" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -59,6 +60,7 @@ export default function PrivatePracticePillarPage() {
       />
       <article className={`${contentNarrow} ${sectionY}`}>
         <Breadcrumb
+          suppressJsonLd
           items={[
             { label: "Home", href: "/" },
             { label: "Blog", href: "/blog" },

@@ -52,7 +52,7 @@ export const incorporationTool: GenericTool = {
       min: 0,
       max: 100000,
       step: 1000,
-      help: "Usually Â£12,570 (personal allowance)",
+      help: "Usually £12,570 (personal allowance)",
     },
   ],
   compute(values) {
@@ -63,11 +63,11 @@ export const incorporationTool: GenericTool = {
     const r = calcIncorporation({ privateIncome, nhsIncome, expenses, desiredSalary });
 
     const rows = [
-      { label: "Sole trader â€” income tax + NI", value: `-${gbp(r.soleTraderTotalTax)}` },
-      { label: "Sole trader â€” net income", value: gbp(r.soleTraderNetIncome), strong: true as const },
-      { label: "Ltd co â€” corporation tax (25%)", value: `-${gbp(r.corporationTax)}` },
-      { label: "Ltd co â€” dividend tax", value: `-${gbp(r.dividendTax)}` },
-      { label: "Ltd co â€” net income", value: gbp(r.limitedCompanyNetIncome), strong: true as const },
+      { label: "Sole trader: income tax + NI", value: `-${gbp(r.soleTraderTotalTax)}` },
+      { label: "Sole trader: net income", value: gbp(r.soleTraderNetIncome), strong: true as const },
+      { label: "Ltd co: corporation tax (25%)", value: `-${gbp(r.corporationTax)}` },
+      { label: "Ltd co: dividend tax", value: `-${gbp(r.dividendTax)}` },
+      { label: "Ltd co: net income", value: gbp(r.limitedCompanyNetIncome), strong: true as const },
     ];
 
     const tone = r.taxSavings > 0 ? ("good" as const) : ("default" as const);
@@ -86,8 +86,8 @@ export const incorporationTool: GenericTool = {
   explainer: {
     heading: "When does incorporating private practice make sense?",
     paragraphs: [
-      "The tax saving from incorporating depends on your total income level, NHS pension position, and how much private practice income you can leave in the company rather than extracting immediately. A limited company pays 25% corporation tax, then dividends carry a lower tax rate than income tax on the same profit â€” but only if the total rate is lower than the income tax you would otherwise pay.",
-      "At private practice income below roughly Â£50,000 to Â£70,000, the administrative cost and accountancy fees of running a company often outweigh the tax saving. Above Â£100,000 of consistent private income, a specialist structure that allows income splitting with a spouse can save Â£5,000 to Â£20,000 per year depending on circumstances.",
+      "The tax saving from incorporating depends on your total income level, NHS pension position, and how much private practice income you can leave in the company rather than extracting immediately. A limited company pays 25% corporation tax, then dividends carry a lower tax rate than income tax on the same profit, but only if the total rate is lower than the income tax you would otherwise pay.",
+      "At private practice income below roughly £50,000 to £70,000, the administrative cost and accountancy fees of running a company often outweigh the tax saving. Above £100,000 of consistent private income, a specialist structure that allows income splitting with a spouse can save £5,000 to £20,000 per year depending on circumstances.",
       "This calculator provides a simplified comparison. The actual position depends on IR35 status for each engagement, carry-forward pension planning, NHS pension carry-in amounts, and whether the company structure is sustainable under current HMRC practice. A formal one-off analysis is worthwhile before committing to a structure.",
     ],
   },
@@ -100,7 +100,7 @@ export const incorporationTool: GenericTool = {
     {
       question: "What is the dividend allowance?",
       answer:
-        "The dividend allowance is Â£500 in 2025/26 and 2026/27. Dividends up to this amount are tax-free, regardless of your income tax band. Above the allowance, dividends are taxed at 8.75% (basic), 33.75% (higher) or 39.35% (additional) in 2025/26 â€” rising to 10.75%/35.75%/39.35% in 2026/27 under FA 2025 changes.",
+        "The dividend allowance is £500 in 2025/26 and 2026/27. Dividends up to this amount are tax-free, regardless of your income tax band. Above the allowance, dividends are taxed at 8.75% (basic), 33.75% (higher) or 39.35% (additional) in 2025/26, rising to 10.75%/35.75%/39.35% in 2026/27 under FA 2025 changes.",
     },
     {
       question: "Can I put my spouse on the company payroll or as a shareholder?",
@@ -110,7 +110,7 @@ export const incorporationTool: GenericTool = {
     {
       question: "What are the main costs of running a limited company?",
       answer:
-        "Accountancy fees are typically Â£1,500 to Â£3,000 per year for a small medical company, plus Companies House filing fees. You will also need separate business banking. These costs reduce the net saving shown by the calculator and should be factored into your decision.",
+        "Accountancy fees are typically £1,500 to £3,000 per year for a small medical company, plus Companies House filing fees. You will also need separate business banking. These costs reduce the net saving shown by the calculator and should be factored into your decision.",
     },
   ],
 };

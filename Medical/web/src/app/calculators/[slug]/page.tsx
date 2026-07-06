@@ -35,6 +35,7 @@ export async function generateMetadata({
       description: tool.metaDescription,
       url: `${siteConfig.url}/calculators/${slug}`,
       type: "website",
+      images: [{ url: `/api/og?title=${encodeURIComponent(tool.metaTitle)}`, width: 1200, height: 630, alt: tool.metaTitle }],
     },
   };
 }
