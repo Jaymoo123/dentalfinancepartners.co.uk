@@ -40,7 +40,7 @@ SITE_BLOG = {
     "solicitors": "Solicitors/web/content/blog",
     "medical": "Medical/web/content/blog",
     "generalist": "generalist/web/content/blog",
-    "agency": "Digital Agency/web/content/blog",
+    "agency": "digital-agency/web/content/blog",
     "construction-cis": "construction-cis/web/content/blog",
     "contractors-ir35": "contractors-ir35/web/content/blog",
 }

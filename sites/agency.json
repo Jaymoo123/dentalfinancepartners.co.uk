@@ -1,0 +1,23 @@
+{
+  "site": "agency",
+  "displayName": "Agency Founder Finance",
+  "paths": {
+    "repoRoot": "C:/Users/user/Documents/Accounting",
+    "worktreeBase": "C:/Users/user/Documents",
+    "worktreePattern": "Accounting-wt-{site}-{wavekind}{wave}-{bucket}",
+    "branchPattern": "{site}-{wavekind}{wave}-{bucket}",
+    "docsDir": "docs/agency",
+    "briefsDir": "briefs/agency",
+    "sessionsDir": "docs/sessions/agency",
+    "blogContentDir": "digital-agency/web/content/blog",
+    "blogRoutesDir": "digital-agency/web/src/app/blog",
+    "buildDir": "digital-agency/web",
+    "housePositions": "docs/agency/house_positions.md",
+    "netnewProgram": "docs/_engines/NETNEW_PROGRAM.md",
+    "siteConfigJson": "digital-agency/niche.config.json"
+  },
+  "vercel": {
+    "projectJson": "digital-agency/web/.vercel/project.json",
+    "productionDomain": "www.agencyfounderfinance.co.uk"
+  }
+}

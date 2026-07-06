@@ -200,7 +200,7 @@ keyTakeaways:
 
 <h2>Related articles in Salary and Dividends</h2>
 <ul>
-    <li><a href="/blog/salary-and-dividends/pension-contributions-agency-founder">Pension Contributions Through Your Agency: The Founder's Guide</a></li>
-    <li><a href="/blog/salary-and-dividends/spouse-shares-agency-income-splitting">Should Your Spouse or Partner Own Shares in Your Agency?</a></li>
+    <li><a href="/blog/agency-finance-essentials/pension-contributions-agency-founder">Pension Contributions Through Your Agency: The Founder's Guide</a></li>
+    <li><a href="/blog/incorporation-and-structure/spouse-shares-agency-income-splitting">Should Your Spouse or Partner Own Shares in Your Agency?</a></li>
 </ul>
 

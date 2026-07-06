@@ -228,7 +228,7 @@ Net take-home: £88,198</p>
 
 <h2>Related articles in Incorporation and Structure</h2>
 <ul>
-    <li><a href="/blog/incorporation-and-structure/non-uk-resident-director-agency-tax-implications">What Are the Tax Implications of Having a Non-UK Resident Director in Your Agency?</a></li>
+    <li><a href="/blog/international-agencies/non-uk-resident-director-agency-tax-implications">What Are the Tax Implications of Having a Non-UK Resident Director in Your Agency?</a></li>
     <li><a href="/blog/incorporation-and-structure/restructure-agency-group-structure">How to Restructure Your Agency from a Single Company to a Group Structure</a></li>
 </ul>
 

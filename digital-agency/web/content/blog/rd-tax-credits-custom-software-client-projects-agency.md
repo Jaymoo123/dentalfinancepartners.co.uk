@@ -175,7 +175,7 @@ keyTakeaways:
 
 <h2>Related articles in Tax and Compliance</h2>
 <ul>
-    <li><a href="/blog/tax-and-compliance/cgt-rates-2025-agency-founder-shares">How Does the 2025 Budget Change to CGT Rates Affect Agency Founders Selling Shares?</a></li>
-    <li><a href="/blog/tax-and-compliance/setting-up-paye-first-agency-hire">Setting Up PAYE for Your First Agency Hire</a></li>
+    <li><a href="/blog/growth-and-exit/cgt-rates-2025-agency-founder-shares">How Does the 2025 Budget Change to CGT Rates Affect Agency Founders Selling Shares?</a></li>
+    <li><a href="/blog/agency-finance-essentials/setting-up-paye-first-agency-hire">Setting Up PAYE for Your First Agency Hire</a></li>
 </ul>
 

@@ -184,6 +184,6 @@ keyTakeaways:
 <h2>Related articles in Tax and Compliance</h2>
 <ul>
     <li><a href="/blog/tax-and-compliance/rd-tax-credits-custom-software-client-projects-agency">Can You Claim R&D Tax Credits for Custom Software Built for Client Projects?</a></li>
-    <li><a href="/blog/tax-and-compliance/cgt-rates-2025-agency-founder-shares">How Does the 2025 Budget Change to CGT Rates Affect Agency Founders Selling Shares?</a></li>
+    <li><a href="/blog/growth-and-exit/cgt-rates-2025-agency-founder-shares">How Does the 2025 Budget Change to CGT Rates Affect Agency Founders Selling Shares?</a></li>
 </ul>
 

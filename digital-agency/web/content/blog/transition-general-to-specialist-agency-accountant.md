@@ -162,7 +162,7 @@ keyTakeaways:
 
 <h2>Related articles in Agency Accountant Services</h2>
 <ul>
-    <li><a href="/blog/agency-accountant-services/agency-accountant-vs-bookkeeper">What Is the Difference Between an Agency Accountant and a Bookkeeper?</a></li>
+    <li><a href="/blog/agency-finance-essentials/agency-accountant-vs-bookkeeper">What Is the Difference Between an Agency Accountant and a Bookkeeper?</a></li>
     <li><a href="/blog/agency-accountant-services/how-often-should-your-agency-meet-with-its-accountant-for-strategic-reviews">How Often Should Your Agency Meet with Its Accountant for Strategic Reviews?</a></li>
 </ul>
 
