@@ -9,6 +9,7 @@ import { siteConfig } from "@/config/site";
 import { buildCalculatorJsonLd } from "@/lib/calculator-schema";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
 import { genericTools, getGenericTool } from "@/lib/calculators/registry";
+import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -78,6 +79,7 @@ export default async function CalculatorToolPage({ params }: Props) {
         <div className={siteContainerLg}>
           <div className="max-w-5xl">
             <CalculatorClient slug={tool.slug} variant="page" resultCta={<CalcResultCta campaign={tool.slug} />} />
+            <CalculatorPageResources slug={tool.slug} />
           </div>
         </div>
       </section>

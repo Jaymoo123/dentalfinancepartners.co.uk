@@ -14,6 +14,9 @@ import { extractHeadings } from "@/lib/markdown-utils";
 import { calculateReadTime } from "@/lib/blog";
 import { topicForBlogSlug } from "@/lib/intent/taxonomy";
 import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
+import { ResourceGate } from "@/components/resources/ResourceGate";
+import { hasEnabledResource } from "@/lib/resources/registry";
+import { gateCopy } from "@/lib/resources/copy";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -219,24 +222,32 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
               />
               {midSplit.after !== null ? (
                 <>
-                  {/* Mid-scroll: InlineMiniLeadForm + PremiumUpgrade at ~60% of article */}
+                  {/* Mid-scroll: InlineMiniLeadForm + PremiumUpgrade + ResourceGate at ~60% of article */}
                   <InlineMiniLeadForm topic={post.category} />
                   <PremiumUpgrade
                     topic={premiumTopic}
                     placement="blog"
                     category={categorySlug}
                   />
+                  {premiumTopic && hasEnabledResource(premiumTopic) && (
+                    <ResourceGate topic={premiumTopic} copy={gateCopy(premiumTopic)} placement="blog" category={categorySlug} />
+                  )}
                   <div className="article-body prose-blog"
                     dangerouslySetInnerHTML={{ __html: midSplit.after }}
                   />
                 </>
               ) : (
-                /* Short post fallback: inject PremiumUpgrade at end of body */
-                <PremiumUpgrade
-                  topic={premiumTopic}
-                  placement="blog"
-                  category={categorySlug}
-                />
+                /* Short post fallback: inject PremiumUpgrade + ResourceGate at end of body */
+                <>
+                  <PremiumUpgrade
+                    topic={premiumTopic}
+                    placement="blog"
+                    category={categorySlug}
+                  />
+                  {premiumTopic && hasEnabledResource(premiumTopic) && (
+                    <ResourceGate topic={premiumTopic} copy={gateCopy(premiumTopic)} placement="blog" category={categorySlug} />
+                  )}
+                </>
               )}
 
               {post.faqs && post.faqs.length > 0 ? (

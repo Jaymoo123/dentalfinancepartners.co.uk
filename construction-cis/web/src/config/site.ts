@@ -62,6 +62,10 @@ export const siteConfig = {
     : null,
   // Canonical lead-form consent text (see derivation above). Forms append the link.
   leadConsentText,
+  // In-house resource-gate consent text. Derived independently of the partner branch
+  // so a resource download is never framed as a data-share with a third-party firm.
+  resourceConsentText:
+    "I agree to Trade Tax Specialists using my details to send me the free resource I have requested and to respond to any enquiry I submit.",
 } as const;
 
 export type LocationEntry = (typeof siteConfig.locations)[number];

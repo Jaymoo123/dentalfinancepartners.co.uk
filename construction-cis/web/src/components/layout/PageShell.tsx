@@ -3,6 +3,7 @@ import { SiteFooter } from "./SiteFooter";
 import { SiteHeader } from "./SiteHeader";
 import { StickyCTA } from "@/components/ui/StickyCTA";
 import { ExitIntentModal } from "@/components/blog/ExitIntentModal";
+import { SpecialistWidget } from "@/components/support/SpecialistWidget";
 
 type PageShellProps = {
   children: ReactNode;
@@ -24,6 +25,7 @@ export function PageShell({ children }: PageShellProps) {
       <SiteFooter />
       <StickyCTA />
       <ExitIntentModal />
+      <SpecialistWidget />
     </div>
   );
 }

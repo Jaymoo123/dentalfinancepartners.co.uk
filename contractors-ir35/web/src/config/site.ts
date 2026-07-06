@@ -61,6 +61,10 @@ export const siteConfig = {
     : null,
   // Canonical lead-form consent text (see derivation above). Forms append the link.
   leadConsentText,
+  // In-house resource consent text. Used by the ResourceGate only (not the partner-aware lead path).
+  // Derived in-house: never references a partner firm.
+  resourceConsentText:
+    "I agree to Contractor Tax Accountants using my details to send me the free resource I have requested and to respond to any enquiry I submit.",
 } as const;
 
 export type LocationEntry = (typeof siteConfig.locations)[number];
