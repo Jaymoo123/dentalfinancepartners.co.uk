@@ -16,7 +16,7 @@ export const salaryDividendTool: GenericTool = {
   oneLiner: "Find the most tax-efficient mix of salary and dividends for a UK limited company agency director. 2025/26 rates.",
   metaTitle: "Salary & Dividend Optimiser 2025/26 | Free UK Calculator",
   metaDescription:
-    "Free salary vs dividend calculator for UK limited company agency directors. Optimal split using 2025/26 tax rates. Built by ICAEW accountants.",
+    "Free salary vs dividend calculator for UK limited company agency directors. Optimal split using 2026/27 tax rates.",
   intro:
     "Find the optimal salary and dividend mix for a UK limited company director. Models corporation tax, employer NI, employee NI, income tax and dividend tax together so you see the true net position. 2025/26 rates.",
   embedHeight: 480,

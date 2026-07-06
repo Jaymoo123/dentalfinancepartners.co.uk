@@ -49,7 +49,7 @@ export default function CalculatorsIndexPage() {
               Free calculators for agency founders
             </h1>
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-              Practical UK tax and finance calculators built by ICAEW qualified accountants. Uses current 2025/26 rates and thresholds. No sign-up.
+              Practical UK tax and finance calculators built for agency founders. Uses current UK rates and thresholds. No sign-up.
             </p>
           </div>
         </div>

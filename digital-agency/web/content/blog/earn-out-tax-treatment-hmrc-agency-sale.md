@@ -41,7 +41,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>An earn-out is a deferred payment structure where you receive part of the sale price only if the agency hits certain targets after completion. Common targets include revenue growth, profit margins, client retention, or EBITDA milestones. For buyers, it protects them from overpaying if the agency underperforms post-sale. For sellers, it can bridge a valuation gap and access a higher total price.</p>
 
-<p>The tax treatment of an earn-out under HMRC rules is not straightforward. Get the structure wrong and you could pay income tax at 45% instead of capital gains tax at 18% or 20%. That is a difference of tens or hundreds of thousands of pounds.</p>
+<p>The tax treatment of an earn-out under HMRC rules is not straightforward. Get the structure wrong and you could pay income tax at 45% instead of capital gains tax at 18% or 24%. That is a difference of tens or hundreds of thousands of pounds.</p>
 
 <p>Working exclusively with agency founders, we see earn-outs in at least half of the agency sales we advise on. This article covers exactly how HMRC treats earn-outs, what the 2026/27 rules say, and how to structure your deal to keep more of the money you have earned.</p>
 
@@ -63,9 +63,9 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>To qualify for BADR on an earn-out, you must meet the conditions at the time of the original disposal. You need to have held at least 5% of the shares, been an officer or employee of the agency, and held both for at least two years before the sale.</p>
 
-<p>Here is where it gets specific. If you receive an earn-out payment in a later tax year, HMRC allows you to claim BADR on that payment provided the original disposal qualified. You do not need to re-qualify at the point you receive the earn-out cash. This is a critical point many founders miss.</p>
+<p>Here is where it gets specific. Whether BADR reaches the earn-out depends on how it is structured. A fixed, ascertainable deferred payment is taxed as part of the original disposal, so BADR applies at the rate for the year you sold. A contingent earn-out whose value is unknown at completion (the classic revenue-target earn-out) is treated as a separate disposal of a right when the cash arrives, and BADR is usually not available on that second disposal. This is a critical point many founders miss.</p>
 
-<p><strong>Example.</strong> You sell your agency in June 2025. You qualify for BADR on the upfront consideration of £800,000. The earn-out is £200,000, payable in June 2027 if the agency hits its revenue targets. When you receive that £200,000 in 2027, you can claim BADR on it, provided the original disposal qualified. The gain is taxed at 18%, not 20%.</p>
+<p><strong>Example.</strong> You sell your agency in June 2025. You qualify for BADR on the upfront consideration of £800,000, taxed at the 14% rate for 2025/26 disposals. The earn-out is £200,000, payable in June 2027 if the agency hits its revenue targets. Because that payment is contingent and unascertainable at completion, it is a separate disposal when the cash arrives, and BADR usually does not reach it. Plan on the main 24% rate for the earn-out unless your advisers structure the deal otherwise.</p>
 
 <p>There is a trap. If the earn-out is structured as a separate contract for services rather than deferred consideration for shares, BADR does not apply. You lose the reduced rate entirely. We have seen buyers push for this structure because it gives them a tax deduction for the earn-out payment. Do not agree to it without understanding the cost to you.</p>
 

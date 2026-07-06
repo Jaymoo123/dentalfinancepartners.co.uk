@@ -102,7 +102,7 @@ Total tax: £12,811.70 + £19,347.29 = £32,158.99</p>
 
 <p>As a sole trader, you can hire staff. It is legal. But the practicalities are messy. You need to register as an employer with HMRC, operate PAYE, run payroll, submit RTI returns, and handle pension auto-enrolment. All of that is easier within a limited company structure because the company is the employer, not you personally.</p>
 
-<p>More importantly, if you hire contractors, IR35 becomes a consideration. As a sole trader, you are not typically the party issuing Status Determination Statements (SDS). But once you have a limited company and you engage contractors, you become a medium or large agency for IR35 purposes if you meet the size criteria (turnover over £10.2m, balance sheet over £5.1m, or more than 50 employees). Most agencies are below that threshold, but the rules still apply if you are a public authority or if the contractor is engaged through an intermediary.</p>
+<p>More importantly, if you hire contractors, IR35 becomes a consideration. As a sole trader, you are not typically the party issuing Status Determination Statements (SDS). But once you have a limited company and you engage contractors, you become a medium or large agency for IR35 purposes if you meet the Companies Act medium or large size criteria (based on turnover, balance sheet total and employee headcount; the thresholds were uplifted in 2025, so check the current figures). Most agencies are below that threshold, but the rules still apply if you are a public authority or if the contractor is engaged through an intermediary.</p>
 
 <p>Even without IR35 complications, having a company structure makes it cleaner to engage subcontractors, issue invoices, and manage payments. Your company contracts with theirs. Your personal tax affairs stay separate.</p>
 
@@ -120,9 +120,9 @@ Total tax: £12,811.70 + £19,347.29 = £32,158.99</p>
 
 <p>You cannot sell a sole tradership. You can sell the assets, the goodwill, the client list, but you cannot sell the business as a going concern in the same way you can sell a limited company.</p>
 
-<p>If you have any ambition to exit your agency for a lump sum, you need to be incorporated. Business Asset Disposal Relief (BADR) allows you to pay 18% capital gains tax on qualifying disposals, up to a £1 million lifetime limit. To qualify, you must have held at least 5% of the shares and been an officer or employee of the company for at least two years before the disposal.</p>
+<p>If you have any ambition to exit your agency for a lump sum, you need to be incorporated. Business Asset Disposal Relief (BADR) allows you to pay 18% capital gains tax (the rate for disposals from 6 April 2026) on qualifying disposals, up to a £1 million lifetime limit. To qualify, you must have held at least 5% of the shares and been an officer or employee of the company for at least two years before the disposal.</p>
 
-<p>That two-year clock starts ticking from incorporation. If you wait until you are ready to sell to incorporate, you lose the relief. You pay full CGT at 20% (or 24% for residential property) instead of 10%.</p>
+<p>That two-year clock starts ticking from incorporation. If you wait until you are ready to sell to incorporate, you lose the relief. You pay full CGT at 24% instead of the 18% BADR rate.</p>
 
 <p>Even if an exit is five or ten years away, incorporating now means the clock is running. You can structure your shareholding, build the company's value, and plan for a tax-efficient sale.</p>
 
