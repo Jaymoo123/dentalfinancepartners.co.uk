@@ -53,6 +53,13 @@
   --brand-primary: var(--copper);
   --brand-primary-strong: var(--copper-strong);
   --brand-on-primary: #ffffff;
+
+  /* Chart palette (recharts via shadcn ChartContainer pattern) */
+  --chart-1: #001b3d;
+  --chart-2: #b87333;
+  --chart-3: #2d4a6f;
+  --chart-4: #cd8e5a;
+  --chart-5: #5c6b80;
 }
 
 @theme inline {
@@ -60,6 +67,11 @@
   --color-foreground: var(--ink);
   --font-sans: var(--font-plus-jakarta);
   --font-serif: var(--font-cormorant);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
 }
 
 *,

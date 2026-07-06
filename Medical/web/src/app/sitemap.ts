@@ -4,12 +4,14 @@ import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
 import { allTools } from "@/lib/tools/registry";
 import { MEDICAL_GUIDES } from "@/lib/medical-guides-data";
 
-// Stable last-modified dates — no new Date() churn on every build.
+// Stable last-modified dates: no new Date() churn on every build.
 // Google documents that churning lastmod degrades sitemap crawl-scheduling trust.
 // Calculator fleet + audience landing pages shipped in the CRO-parity wave 2026-07-05.
 // Informational statics and content structure pages stable since site launch 2026-06-03.
 const CRO_WAVE = new Date("2026-07-05");
 const STATIC = new Date("2026-06-03");
+// Research asset shipped 2026-07-06; stable lastmod independent of CRO wave.
+const RESEARCH_DATE = new Date("2026-07-06");
 
 // Paths that received content changes in the 2026-07-05 CRO-parity wave.
 // Everything else in staticPaths defaults to STATIC.
@@ -20,6 +22,12 @@ const CRO_WAVE_PATHS = new Set([
   "/for-consultants",
   "/for-locum-doctors",
   "/for-junior-doctors",
+]);
+
+// Research pages carry their own stable lastmod (RESEARCH_DATE), not CRO_WAVE.
+const RESEARCH_PATHS = new Set([
+  "/research",
+  "/research/annual-allowance-pension-tax-index",
 ]);
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -39,6 +47,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/cookie-policy",
     "/medical-guides",
     "/free-practice-health-check",
+    // /research pages: Annual Allowance Pension Tax Index (launched 2026-07-06)
+    "/research",
+    "/research/annual-allowance-pension-tax-index",
     // /for-* audience pages
     "/for-gps",
     "/for-consultants",
@@ -54,14 +65,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}${path}`;
     return {
       url,
-      lastModified: CRO_WAVE_PATHS.has(path) ? CRO_WAVE : STATIC,
+      lastModified: CRO_WAVE_PATHS.has(path) ? CRO_WAVE : RESEARCH_PATHS.has(path) ? RESEARCH_DATE : STATIC,
       changeFrequency: path === "/blog" ? "weekly" : "monthly",
       priority: path === "" ? 1 : 0.7,
       alternates: hreflang(url),
     };
   });
 
-  // Calculator tool pages — derived from registry (SEO-01, no hand-listing)
+  // Calculator tool pages, derived from registry (SEO-01, no hand-listing)
   for (const tool of allTools()) {
     const url = `${base}/calculators/${tool.slug}`;
     entries.push({
@@ -125,7 +136,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
-  // Medical guide pages — derived from the TS data array (no file system glob needed)
+  // Medical guide pages, derived from the TS data array (no file system glob needed)
   for (const guide of MEDICAL_GUIDES) {
     const url = `${base}/medical-guides/${guide.slug}`;
     entries.push({

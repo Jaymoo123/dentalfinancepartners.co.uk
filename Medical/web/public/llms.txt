@@ -89,6 +89,13 @@ The full machine-readable content dump (all blog posts) is at https://www.medica
 - NHS Pension Scheme Pays, Doctors Deadlines: https://www.medicalaccounts.co.uk/blog/nhs-pension-scheme-pays-doctors-deadlines
   Mandatory vs voluntary scheme pays, the 31 July election deadline, benefit reduction mechanics, and the McCloud interaction.
 
+## Original research and data
+
+- Annual Allowance Pension Tax Index: https://www.medicalaccounts.co.uk/research/annual-allowance-pension-tax-index
+  Medical Accountants UK analysis of official open data on the pension annual allowance burden. Across all UK registered pension schemes (HMRC Private pension statistics, Table 7), the value of annual allowance charges settled through Scheme Pays reached £350m in 2023/24 (provisional), up from £64m in 2016/17, and Self Assessment reports of pension savings above the allowance peaked at 56,270 individuals in 2021/22. An NHS-specific layer (NHSBSA Freedom of Information data, England and Wales) shows 46,135 officer members exceeded the standard allowance in 2021/22. Annual data, published by HMRC each July, around two tax years in arrears. Downloadable CSV: https://www.medicalaccounts.co.uk/research/annual-allowance-pension-tax-index/data . Free to cite with attribution to Medical Accountants UK (Open Government Licence v3.0).
+
+- Research index: https://www.medicalaccounts.co.uk/research
+
 ## Sitemap
 
 https://www.medicalaccounts.co.uk/sitemap.xml
