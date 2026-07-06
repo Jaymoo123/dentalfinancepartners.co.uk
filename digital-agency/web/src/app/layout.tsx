@@ -9,6 +9,7 @@ import { IntentProvider } from "@/components/intent/IntentProvider";
 import { ReturningBar } from "@/components/intent/ReturningBar";
 import { DeepScrollModal } from "@/components/intent/DeepScrollModal";
 import { ExitIntentModal } from "@/components/blog/ExitIntentModal";
+import { SpecialistWidget } from "@/components/support/SpecialistWidget";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
 
@@ -118,6 +119,9 @@ export default function RootLayout({
               <DeepScrollModal />
               {/* Qualified-lead ExitIntentModal (replaces retired newsletter modal) */}
               <ExitIntentModal />
+              {/* R3 deterministic Phase-0 proactive assistant (aff divergence B: in layout, not PageShell).
+                  Sets aff_assistant_active so ExitIntentModal (line 91) stands down. */}
+              <SpecialistWidget />
             </IntentProvider>
           </AnalyticsProvider>
         </ConsentProvider>

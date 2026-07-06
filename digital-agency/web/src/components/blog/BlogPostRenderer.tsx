@@ -16,6 +16,9 @@ import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
 import { topicForBlogSlug } from "@/lib/intent/taxonomy";
 import { PremiumUpgrade } from "@/components/tools/premium/PremiumUpgrade";
+import { ResourceGate } from "@/components/resources/ResourceGate";
+import { hasEnabledResource } from "@/lib/resources/registry";
+import { gateCopy } from "@/lib/resources/copy";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -225,9 +228,21 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
               {/* Premium tool island: topic-to-tool via resources spine.
                   Renders nothing for unmapped/excluded topics (e.g. international).
                   A single injection covers both long and short posts because
-                  InlineMiniLeadForm is unconditional at this split point.
-                  R3 will append <ResourceGate> as a clean sibling after this. */}
+                  InlineMiniLeadForm is unconditional at this split point. */}
               <PremiumUpgrade topic={topicKey} placement="blog" category={categorySlug} />
+
+              {/* R3 ResourceGate: free model/guide behind email capture.
+                  Single injection point (aff divergence A): no short-post fallback.
+                  Guarded by hasEnabledResource so it only renders for topics with
+                  an asset (pay-planning, exit, compliance-vat). */}
+              {topicKey && hasEnabledResource(topicKey) && (
+                <ResourceGate
+                  topic={topicKey}
+                  copy={gateCopy(topicKey, post.title)}
+                  placement="blog"
+                  category={categorySlug}
+                />
+              )}
 
               {/* Second half of article body (null for short posts) */}
               {after ? (

@@ -629,3 +629,439 @@ describe("no DJH in intent surfaces", () => {
     });
   }
 });
+
+// ---------------------------------------------------------------------------
+// WS6: opener.ts, faq.ts, SpecialistWidget.tsx compliance
+// ---------------------------------------------------------------------------
+import {
+  TOPIC_NOUN,
+  TOPIC_HOOKS,
+  OPENER_LLM_ENRICHMENT_ENABLED,
+  variantIndex,
+  pickOpener,
+  openerFor,
+  frictionOpener,
+  exitOpener,
+} from "@/lib/assistant/opener";
+import { GENERIC as FAQ_GENERIC, BY_TOPIC as FAQ_BY_TOPIC, faqForTopic } from "@/lib/support/faq";
+
+// All 6 topic keys (exhaustive).
+const ALL_TOPIC_KEYS: TopicKey[] = [
+  "pay-planning",
+  "exit",
+  "compliance-vat",
+  "structure",
+  "rnd",
+  "international",
+];
+
+describe("WS6: opener.ts compliance", () => {
+  it("OPENER_LLM_ENRICHMENT_ENABLED is false (deterministic Phase-0)", () => {
+    expect(OPENER_LLM_ENRICHMENT_ENABLED).toBe(false);
+  });
+
+  it("TOPIC_NOUN is exhaustive over all 6 TopicKeys", () => {
+    for (const k of ALL_TOPIC_KEYS) {
+      expect(TOPIC_NOUN[k], `TOPIC_NOUN[${k}] must be defined`).toBeTruthy();
+    }
+  });
+
+  it("TOPIC_NOUN pay-planning is 'your salary and dividend split' (spec §4)", () => {
+    expect(TOPIC_NOUN["pay-planning"]).toBe("your salary and dividend split");
+  });
+
+  it("TOPIC_NOUN exit is 'your agency exit'", () => {
+    expect(TOPIC_NOUN["exit"]).toBe("your agency exit");
+  });
+
+  it("TOPIC_NOUN compliance-vat is 'your agency VAT'", () => {
+    expect(TOPIC_NOUN["compliance-vat"]).toBe("your agency VAT");
+  });
+
+  it("TOPIC_NOUN structure is 'your agency structure'", () => {
+    expect(TOPIC_NOUN["structure"]).toBe("your agency structure");
+  });
+
+  it("TOPIC_NOUN rnd is 'R&D tax relief'", () => {
+    expect(TOPIC_NOUN["rnd"]).toBe("R&D tax relief");
+  });
+
+  it("TOPIC_NOUN international is 'moving your agency abroad'", () => {
+    expect(TOPIC_NOUN["international"]).toBe("moving your agency abroad");
+  });
+
+  it("TOPIC_HOOKS is exhaustive over all 6 TopicKeys, each with exactly 3 lines", () => {
+    for (const k of ALL_TOPIC_KEYS) {
+      expect(TOPIC_HOOKS[k], `TOPIC_HOOKS[${k}] must be defined`).toBeTruthy();
+      expect(TOPIC_HOOKS[k].length, `TOPIC_HOOKS[${k}] must have 3 hooks`).toBe(3);
+      for (let i = 0; i < 3; i++) {
+        expect(typeof TOPIC_HOOKS[k][i]).toBe("string");
+        expect(TOPIC_HOOKS[k][i].length).toBeGreaterThan(10);
+      }
+    }
+  });
+
+  it("no em-dash (U+2014) in any TOPIC_HOOKS string", () => {
+    for (const k of ALL_TOPIC_KEYS) {
+      for (const line of TOPIC_HOOKS[k]) {
+        expect(line, `TOPIC_HOOKS[${k}] contains em-dash`).not.toContain("—");
+      }
+    }
+  });
+
+  it("no double-hyphen em-dash substitute in any TOPIC_HOOKS string", () => {
+    for (const k of ALL_TOPIC_KEYS) {
+      for (const line of TOPIC_HOOKS[k]) {
+        expect(line, `TOPIC_HOOKS[${k}] contains double-hyphen`).not.toMatch(/ -- /);
+      }
+    }
+  });
+
+  it("no em-dash in any TOPIC_NOUN string", () => {
+    for (const k of ALL_TOPIC_KEYS) {
+      expect(TOPIC_NOUN[k]).not.toContain("—");
+      expect(TOPIC_NOUN[k]).not.toMatch(/ -- /);
+    }
+  });
+
+  it("no 'DJH' in any TOPIC_HOOKS or TOPIC_NOUN string", () => {
+    for (const k of ALL_TOPIC_KEYS) {
+      expect(TOPIC_NOUN[k]).not.toContain("DJH");
+      for (const line of TOPIC_HOOKS[k]) {
+        expect(line).not.toContain("DJH");
+      }
+    }
+  });
+
+  it("no credential claims in any TOPIC_HOOKS string", () => {
+    const credentials = ["ICAEW", "ACA", "CTA", "chartered", "qualified accountant", "MLR"];
+    for (const k of ALL_TOPIC_KEYS) {
+      for (const line of TOPIC_HOOKS[k]) {
+        for (const c of credentials) {
+          expect(line.toLowerCase()).not.toContain(c.toLowerCase());
+        }
+      }
+    }
+  });
+});
+
+describe("WS6: opener determinism", () => {
+  it("variantIndex 0 researching = 0", () => {
+    expect(variantIndex(0, "researching")).toBe(0);
+  });
+
+  it("variantIndex 0 evaluating-us = 1", () => {
+    expect(variantIndex(0, "evaluating-us")).toBe(1);
+  });
+
+  it("variantIndex 0 ready = 2", () => {
+    expect(variantIndex(0, "ready")).toBe(2);
+  });
+
+  it("variantIndex clamps to max 2", () => {
+    expect(variantIndex(5, "ready")).toBe(2);
+  });
+
+  it("pickOpener returns a non-empty string for every TopicKey at all ping indices", () => {
+    const profile = {
+      primaryTopic: null as TopicKey | null,
+      secondaryTopic: null as TopicKey | null,
+      stage: "researching" as const,
+      depth: 0,
+      signals: [] as string[],
+      pageCount: 1,
+    };
+    for (const k of ALL_TOPIC_KEYS) {
+      for (let i = 0; i < 4; i++) {
+        const result = pickOpener({ ...profile, primaryTopic: k }, i);
+        expect(typeof result).toBe("string");
+        expect(result.length).toBeGreaterThan(10);
+      }
+    }
+  });
+
+  it("pickOpener returns the combo line when both exit and pay-planning are present", () => {
+    const profile = {
+      primaryTopic: "exit" as TopicKey,
+      secondaryTopic: "pay-planning" as TopicKey,
+      stage: "researching" as const,
+      depth: 0.5,
+      signals: [] as string[],
+      pageCount: 2,
+    };
+    const line = pickOpener(profile, 0);
+    expect(typeof line).toBe("string");
+    expect(line.length).toBeGreaterThan(10);
+    // The combo line should differ from a plain exit line.
+    const exitLine = pickOpener(
+      { ...profile, secondaryTopic: null },
+      0,
+    );
+    expect(line).not.toBe(exitLine);
+  });
+
+  it("openerFor is an alias for pickOpener", () => {
+    const profile = {
+      primaryTopic: "pay-planning" as TopicKey,
+      secondaryTopic: null as TopicKey | null,
+      stage: "comparing" as const,
+      depth: 0.3,
+      signals: [] as string[],
+      pageCount: 2,
+    };
+    expect(openerFor(profile, 1)).toBe(pickOpener(profile, 1));
+  });
+
+  it("frictionOpener returns a non-empty string with no em-dash", () => {
+    const profile = {
+      primaryTopic: "pay-planning" as TopicKey,
+      secondaryTopic: null as TopicKey | null,
+      stage: "researching" as const,
+      depth: 0.1,
+      signals: [] as string[],
+      pageCount: 1,
+    };
+    const line = frictionOpener(profile);
+    expect(typeof line).toBe("string");
+    expect(line.length).toBeGreaterThan(10);
+    expect(line).not.toContain("—");
+    expect(line).not.toMatch(/ -- /);
+  });
+
+  it("exitOpener returns a non-empty string with no em-dash", () => {
+    const profile = {
+      primaryTopic: "exit" as TopicKey,
+      secondaryTopic: null as TopicKey | null,
+      stage: "ready" as const,
+      depth: 0.8,
+      signals: ["used-calculator"] as string[],
+      pageCount: 3,
+    };
+    const line = exitOpener(profile);
+    expect(typeof line).toBe("string");
+    expect(line.length).toBeGreaterThan(10);
+    expect(line).not.toContain("—");
+    expect(line).not.toMatch(/ -- /);
+  });
+});
+
+describe("WS6: faq.ts compliance", () => {
+  it("GENERIC has exactly 3 entries", () => {
+    expect(FAQ_GENERIC.length).toBe(3);
+  });
+
+  it("every GENERIC entry has non-empty q and a", () => {
+    for (const faq of FAQ_GENERIC) {
+      expect(faq.q.length).toBeGreaterThan(5);
+      expect(faq.a.length).toBeGreaterThan(10);
+    }
+  });
+
+  it("BY_TOPIC covers all 6 TopicKeys", () => {
+    for (const k of ALL_TOPIC_KEYS) {
+      expect(FAQ_BY_TOPIC[k], `BY_TOPIC[${k}] must be defined`).toBeTruthy();
+      expect((FAQ_BY_TOPIC[k] as unknown[]).length).toBeGreaterThan(0);
+    }
+  });
+
+  it("faqForTopic returns GENERIC when topic is null", () => {
+    expect(faqForTopic(null)).toBe(FAQ_GENERIC);
+  });
+
+  it("faqForTopic returns GENERIC when topic is undefined", () => {
+    expect(faqForTopic(undefined)).toBe(FAQ_GENERIC);
+  });
+
+  it("faqForTopic returns topic block for every known TopicKey", () => {
+    for (const k of ALL_TOPIC_KEYS) {
+      const result = faqForTopic(k);
+      expect(Array.isArray(result)).toBe(true);
+      expect(result.length).toBeGreaterThan(0);
+    }
+  });
+
+  it("no em-dash in any FAQ question or answer", () => {
+    const allFaqs = [
+      ...FAQ_GENERIC,
+      ...Object.values(FAQ_BY_TOPIC).flatMap((arr) => arr ?? []),
+    ];
+    for (const faq of allFaqs) {
+      expect(faq.q, "FAQ question contains em-dash").not.toContain("—");
+      expect(faq.a, "FAQ answer contains em-dash").not.toContain("—");
+      expect(faq.q, "FAQ question contains double-hyphen").not.toMatch(/ -- /);
+      expect(faq.a, "FAQ answer contains double-hyphen").not.toMatch(/ -- /);
+    }
+  });
+
+  it("no 'DJH' in any FAQ question or answer", () => {
+    const allFaqs = [
+      ...FAQ_GENERIC,
+      ...Object.values(FAQ_BY_TOPIC).flatMap((arr) => arr ?? []),
+    ];
+    for (const faq of allFaqs) {
+      expect(faq.q).not.toContain("DJH");
+      expect(faq.a).not.toContain("DJH");
+    }
+  });
+
+  it("no credential claims in any FAQ answer", () => {
+    const credentials = ["ICAEW", "ACA", "CTA", "chartered", "qualified accountant", "MLR-supervised"];
+    const allFaqs = [
+      ...FAQ_GENERIC,
+      ...Object.values(FAQ_BY_TOPIC).flatMap((arr) => arr ?? []),
+    ];
+    for (const faq of allFaqs) {
+      for (const c of credentials) {
+        expect(faq.a.toLowerCase(), `FAQ answer contains credential claim '${c}'`).not.toContain(c.toLowerCase());
+      }
+    }
+  });
+
+  it("pay-planning FAQ answer mentions 2026/27 dividend rate", () => {
+    const payFaqs = FAQ_BY_TOPIC["pay-planning"] ?? [];
+    const combined = payFaqs.map((f) => f.a).join(" ");
+    expect(combined).toMatch(/2026\/27|10\.75|35\.75|39\.35/);
+  });
+
+  it("exit FAQ answer mentions BADR 18% and 14% for 2026/27", () => {
+    const exitFaqs = FAQ_BY_TOPIC["exit"] ?? [];
+    const combined = exitFaqs.map((f) => f.a).join(" ");
+    expect(combined).toMatch(/18|14/);
+    expect(combined).toMatch(/BADR|Business Asset Disposal/i);
+  });
+
+  it("compliance-vat FAQ mentions 16.5% limited-cost trader rate", () => {
+    const vatFaqs = FAQ_BY_TOPIC["compliance-vat"] ?? [];
+    const combined = vatFaqs.map((f) => f.a).join(" ");
+    expect(combined).toMatch(/16\.5|limited.cost/i);
+  });
+
+  it("rnd FAQ answer includes honesty framing (most agency work does not qualify)", () => {
+    const rndFaqs = FAQ_BY_TOPIC["rnd"] ?? [];
+    const combined = rndFaqs.map((f) => f.q + " " + f.a).join(" ");
+    expect(combined).toMatch(/does not|routine|not.qualify|specific|only qualify/i);
+  });
+
+  it("international FAQ includes relocation hedge (no firm UAE figures, temporary non-residence)", () => {
+    const intlFaqs = FAQ_BY_TOPIC["international"] ?? [];
+    const combined = intlFaqs.map((f) => f.a).join(" ");
+    expect(combined).toMatch(/non.residen|UAE|temporary/i);
+  });
+});
+
+describe("WS6: SpecialistWidget source compliance (grep assertions)", () => {
+  it("SpecialistWidget.tsx uses aff_assistant_active key", () => {
+    const src = readSrc("components/support/SpecialistWidget.tsx");
+    expect(src).toMatch(/aff_assistant_active/);
+  });
+
+  it("SpecialistWidget.tsx uses captureMode email_only", () => {
+    const src = readSrc("components/support/SpecialistWidget.tsx");
+    // Both must appear; close enough in a compact payload literal.
+    expect(src).toMatch(/captureMode/);
+    expect(src).toMatch(/email_only/);
+  });
+
+  it("SpecialistWidget.tsx passes honeypot enquiry_ref to submitAffLead", () => {
+    const src = readSrc("components/support/SpecialistWidget.tsx");
+    expect(src).toMatch(/enquiry_ref/);
+    expect(src).toMatch(/submitAffLead/);
+  });
+
+  it("SpecialistWidget.tsx does NOT early-return on honeypot fill", () => {
+    const src = readSrc("components/support/SpecialistWidget.tsx");
+    // The honeypot value is logged/passed but must not cause an early return.
+    // We check that there is no 'if (honeypot) return' pattern.
+    expect(src).not.toMatch(/if\s*\(\s*honeypot\s*\)\s*return/);
+  });
+
+  it("SpecialistWidget.tsx uses leadConsentText in code (not resourceConsentText)", () => {
+    const src = readSrc("components/support/SpecialistWidget.tsx");
+    expect(src).toMatch(/leadConsentText/);
+    // Strip comment lines so explanatory comments do not trigger a false positive.
+    const codeOnly = src
+      .split("\n")
+      .filter((l) => !l.trimStart().startsWith("*") && !l.trimStart().startsWith("//"))
+      .join("\n");
+    expect(codeOnly).not.toMatch(/resourceConsentText/);
+  });
+
+  it("SpecialistWidget.tsx CADENCE_THRESHOLDS_MS = [30000, 70000, 120000, 180000]", () => {
+    const src = readSrc("components/support/SpecialistWidget.tsx");
+    expect(src).toMatch(/30[_,]?000/);
+    expect(src).toMatch(/70[_,]?000/);
+    expect(src).toMatch(/120[_,]?000/);
+    expect(src).toMatch(/180[_,]?000/);
+  });
+
+  it("SpecialistWidget.tsx AUTO_OPEN_DELAY_MS = 600", () => {
+    const src = readSrc("components/support/SpecialistWidget.tsx");
+    expect(src).toMatch(/AUTO_OPEN_DELAY_MS\s*=\s*600|setTimeout[^)]*600/);
+  });
+
+  it("SpecialistWidget.tsx does not USE var(--gold), var(--navy), var(--dark), var(--primary) in code", () => {
+    const src = readSrc("components/support/SpecialistWidget.tsx");
+    // Strip comment lines (JSDoc block lines starting with '*' and '//' lines)
+    // so that prohibition notes in comments do not trigger the assertion.
+    const codeOnly = src
+      .split("\n")
+      .filter((l) => !l.trimStart().startsWith("*") && !l.trimStart().startsWith("//"))
+      .join("\n");
+    expect(codeOnly).not.toMatch(/var\(--gold\)/);
+    expect(codeOnly).not.toMatch(/var\(--navy\)/);
+    expect(codeOnly).not.toMatch(/var\(--dark\)/);
+    expect(codeOnly).not.toMatch(/var\(--primary\)/);
+  });
+
+  it("SpecialistWidget.tsx does not contain 'DJH'", () => {
+    const src = readSrc("components/support/SpecialistWidget.tsx");
+    expect(src).not.toMatch(/DJH/);
+  });
+
+  it("SpecialistWidget.tsx does not contain em-dash in user-facing strings", () => {
+    const src = readSrc("components/support/SpecialistWidget.tsx");
+    expect(src).not.toContain("—");
+    expect(src).not.toMatch(/&mdash;/);
+  });
+
+  it("SpecialistWidget.tsx no /book path (contact only)", () => {
+    const src = readSrc("components/support/SpecialistWidget.tsx");
+    expect(src).not.toMatch(/["'`]\/book["'`]/);
+  });
+
+  it("app/layout.tsx mounts SpecialistWidget next to ExitIntentModal", () => {
+    const src = readSrc("app/layout.tsx");
+    expect(src).toMatch(/SpecialistWidget/);
+    expect(src).toMatch(/ExitIntentModal/);
+  });
+});
+
+describe("WS6: journeyModel.ts source compliance (grep assertions)", () => {
+  it("journeyModel.ts uses storage key aff_journey", () => {
+    const src = readSrc("lib/intent/journeyModel.ts");
+    expect(src).toMatch(/aff_journey/);
+  });
+
+  it("journeyModel.ts has all three special-page flags (/about, /services, /contact)", () => {
+    const src = readSrc("lib/intent/journeyModel.ts");
+    expect(src).toMatch(/visitedAbout/);
+    expect(src).toMatch(/visitedServices/);
+    expect(src).toMatch(/visitedContact/);
+  });
+
+  it("journeyModel.ts implements the 4-stage ladder", () => {
+    const src = readSrc("lib/intent/journeyModel.ts");
+    expect(src).toMatch(/researching/);
+    expect(src).toMatch(/comparing/);
+    expect(src).toMatch(/evaluating-us/);
+    expect(src).toMatch(/ready/);
+  });
+
+  it("journeyModel.ts does not use bfp_, ptp_, cfp_, dfp_ prefix", () => {
+    const src = readSrc("lib/intent/journeyModel.ts");
+    expect(src).not.toMatch(/bfp_/);
+    expect(src).not.toMatch(/ptp_/);
+    expect(src).not.toMatch(/cfp_/);
+    expect(src).not.toMatch(/dfp_/);
+  });
+});

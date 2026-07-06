@@ -18,6 +18,7 @@ import { siteConfig } from "@/config/site";
 import { JsonLd, buildWebApplication, buildFaqPage } from "@/lib/schema";
 import { allTools, getGenericTool } from "@/lib/tools/registry";
 import { CalculatorClient } from "@/components/tools/CalculatorClient";
+import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 
 export function generateStaticParams() {
   return allTools().map((t) => ({ slug: t.slug }));
@@ -96,6 +97,11 @@ export default async function ToolPage({
         <div className={siteContainerLg}>
           <div className="max-w-4xl mx-auto">
             <CalculatorClient slug={slug} variant="page" />
+
+            {/* R3 CalculatorPageResources: Excel model and guide for topics with an enabled asset.
+                Mounted once per page shell (not in CalculatorClient) to keep the
+                server/client boundary clean. Renders nothing for slugs with no asset. */}
+            <CalculatorPageResources slug={slug} pageTitle={tool.name} />
 
             <div className="mt-12 border-l-4 border-indigo-600 bg-slate-50 p-6 sm:p-8">
               <h2 className="text-xl font-bold text-slate-900">
