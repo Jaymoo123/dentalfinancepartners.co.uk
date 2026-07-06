@@ -7,12 +7,12 @@ import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Locum Tax — Tax Guidance for Locum Doctors | Medical Accountants UK",
+  title: "Locum Tax: Tax Guidance for Locum Doctors | Medical Accountants UK",
   description:
     "Tax guidance for locum doctors covering employment status, self-assessment, allowable expenses, record keeping and tax planning strategies across the UK.",
   alternates: { canonical: `${siteConfig.url}/blog/locum-tax` },
   openGraph: {
-    title: "Locum Tax — Tax Guidance for Locum Doctors",
+    title: "Locum Tax: Tax Guidance for Locum Doctors",
     description:
       "Tax guidance for locum doctors covering employment status, self-assessment, allowable expenses and tax planning.",
     url: `${siteConfig.url}/blog/locum-tax`,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Locum Tax — Tax Guidance for Locum Doctors",
+    title: "Locum Tax: Tax Guidance for Locum Doctors",
     description:
       "Tax guidance for locum doctors covering employment status, self-assessment, allowable expenses and tax planning.",
   },
@@ -71,7 +71,7 @@ export default function LocumTaxPillarPage() {
             Locum Tax
           </h1>
           <p className="mt-4 text-lg text-[var(--ink-soft)] leading-relaxed">
-            Locum doctors enjoy flexibility and variety — but the tax side of locum work can
+            Locum doctors enjoy flexibility and variety, but the tax side of locum work can
             be complex. From determining your employment status and registering for Self
             Assessment to claiming legitimate expenses and planning for tax bills, this hub
             gives you a solid grounding in the tax essentials every locum GP and hospital
@@ -91,7 +91,7 @@ export default function LocumTaxPillarPage() {
               working through direct bookings with practices, controlling their own schedule and
               providing their own equipment, will be classified as self-employed. However, locums
               working through agencies or on longer-term placements where the practice controls
-              how and when work is done may be deemed employed — or caught by the off-payroll
+              how and when work is done may be deemed employed, or caught by the off-payroll
               working rules (IR35).
             </p>
             <p className="text-base leading-relaxed text-[var(--ink-soft)]">
@@ -101,7 +101,7 @@ export default function LocumTaxPillarPage() {
               right to claim business expenses. HMRC&apos;s Check Employment Status for Tax (CEST)
               tool provides an initial indication, but its results are not always reliable for
               medical locums. Where there is any doubt, take professional advice before starting
-              an engagement — not after HMRC opens an enquiry.
+              an engagement, not after HMRC opens an enquiry.
             </p>
           </section>
 
@@ -113,14 +113,14 @@ export default function LocumTaxPillarPage() {
               Self-employed locum doctors must register with HMRC for Self Assessment and Class 2
               National Insurance within three months of starting locum work. You&apos;ll then file
               an annual tax return reporting all self-employed income and expenses. The deadline
-              is 31 January following the end of the tax year — for example, income earned between
+              is 31 January following the end of the tax year; for example, income earned between
               6 April 2025 and 5 April 2026 must be reported by 31 January 2027.
             </p>
             <p className="text-base leading-relaxed text-[var(--ink-soft)]">
               If you also have PAYE income from a salaried NHS role, this must be included on the
               same return. Many locums underestimate their tax liability because they forget that
               locum earnings are added on top of salaried income, potentially pushing them into a
-              higher tax band. Payments on account apply — HMRC requires two advance payments
+              higher tax band. Payments on account apply. HMRC requires two advance payments
               (31 January and 31 July), each equal to half the previous year&apos;s Self Assessment
               liability. New locums should set aside 30–40% of net locum income from day one to
               avoid a cash-flow shock when the first tax bill arrives.
@@ -138,10 +138,10 @@ export default function LocumTaxPillarPage() {
               business. Common allowable expenses include:
             </p>
             <ul className="space-y-2 text-base text-[var(--ink-soft)] ml-6 list-disc">
-              <li>Travel costs to temporary workplaces — mileage (45p per mile for the first 10,000 miles, 25p thereafter), parking, train fares and accommodation for distant placements</li>
-              <li>Professional indemnity (MDU, MPS or other provider) — fully deductible</li>
-              <li>Professional subscriptions — GMC registration, BMA, RCGP, Royal College fees</li>
-              <li>Medical equipment — stethoscopes, ophthalmoscopes, bags and clinical tools</li>
+              <li>Travel costs to temporary workplaces: mileage (55p per mile for the first 10,000 business miles in 2026/27, then 25p per mile), parking, train fares and accommodation for distant placements</li>
+              <li>Professional indemnity (MDU, MPS or other provider), fully deductible</li>
+              <li>Professional subscriptions: GMC registration, BMA, RCGP, Royal College fees</li>
+              <li>Medical equipment: stethoscopes, ophthalmoscopes, bags and clinical tools</li>
               <li>Training and CPD courses directly related to your medical practice</li>
               <li>Accountancy fees for preparing your tax return and business accounts</li>
               <li>Phone, internet and home office costs (proportionate business use)</li>
@@ -159,7 +159,7 @@ export default function LocumTaxPillarPage() {
               Record Keeping Best Practices
             </h2>
             <p className="text-base leading-relaxed text-[var(--ink-soft)] mb-4">
-              Good record keeping is not optional — HMRC requires self-employed individuals to
+              Good record keeping is not optional. HMRC requires self-employed individuals to
               maintain records for at least five years after the 31 January filing deadline for
               the relevant tax year. For locum doctors, this means keeping systematic records of
               every session worked, every invoice raised and every expense incurred. Falling
@@ -168,7 +168,7 @@ export default function LocumTaxPillarPage() {
             </p>
             <ul className="space-y-2 text-base text-[var(--ink-soft)] ml-6 list-disc">
               <li>Use cloud accounting software (Xero, FreeAgent or QuickBooks) to log income and expenses in real time</li>
-              <li>Photograph receipts immediately — paper fades, and lost receipts cannot support expense claims</li>
+              <li>Photograph receipts immediately, as paper fades and lost receipts cannot support expense claims</li>
               <li>Maintain a mileage log recording date, destination, purpose and miles for every business journey</li>
               <li>Reconcile bank statements monthly to catch missing invoices or uncategorised payments</li>
               <li>Keep a separate business bank account to simplify record keeping and demonstrate clear business boundaries to HMRC</li>
@@ -181,7 +181,7 @@ export default function LocumTaxPillarPage() {
             </h2>
             <p className="text-base leading-relaxed text-[var(--ink-soft)] mb-4">
               Beyond claiming expenses, locum doctors have several strategies available to manage
-              their tax position. Pension contributions are one of the most effective — if you are
+              their tax position. Pension contributions are one of the most effective options: if you are
               not already contributing to the NHS Pension Scheme through a salaried role, making
               personal pension contributions provides income tax relief at your marginal rate.
               Even locums who are in the NHS Scheme can make additional voluntary contributions
@@ -192,10 +192,10 @@ export default function LocumTaxPillarPage() {
               taking a career break, returning to training or reducing sessions), consider
               deferring invoicing or accelerating expenses into the current year where
               commercially reasonable. For locums earning above £100,000, the personal allowance
-              taper means effective marginal tax rates can reach 60% — even small reductions in
+              taper means effective marginal tax rates can reach 60%; even small reductions in
               adjusted net income through pension contributions or Gift Aid donations can restore
               thousands of pounds of personal allowance. If your annual locum turnover exceeds
-              the VAT registration threshold (currently £90,000), you must register for VAT —
+              the VAT registration threshold (currently £90,000), you must register for VAT,
               though most medical services are VAT-exempt, some locum agency structures may
               require standard-rated treatment.
             </p>

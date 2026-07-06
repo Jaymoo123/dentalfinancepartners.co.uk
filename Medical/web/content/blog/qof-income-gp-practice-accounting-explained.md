@@ -146,6 +146,12 @@ faqs:
 
 <p>A further mistake worth naming is treating a clawback as a surprise rather than a built-in feature. Because aspiration is paid in advance, a year of lower-than-expected achievement will mechanically produce an adjustment, and a practice that has spent the full aspiration as if it were earned income can find itself short. The accrual protects against this by recognising only what the practice expects to keep, so the accounts and the partners' drawings already reflect the likely position rather than the gross cash. Where a practice keeps its QOF performance data and its accruals aligned through the year, the year-end reconciliation becomes a confirmation rather than a shock.</p>
 
+<div style="border:1px solid #c7d5e8;border-left:4px solid #1e6fbf;border-radius:4px;padding:16px 20px;margin:28px 0;background:#f5f8fd;">
+<p style="margin:0 0 6px;font-weight:600;">Is your QOF accrual keeping each partner's profit share accurate?</p>
+<p style="margin:0 0 10px;">A misaccrued QOF position can overstate or understate profit and distort partner drawings in the same period. A free practice health check will confirm whether your QOF recognition is consistent and whether each partner's tax position reflects genuinely earned income.</p>
+<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">speak to our medical accounting team</a> about your practice accounts.</p>
+</div>
+
 <h2>How we help GP practices</h2>
 
 <p>Much of our QOF work <a href="/for-gps">with practices</a> is about getting the accrual right and keeping it consistent year to year. We help practices estimate likely year-end achievement so the accounts recognise the QOF the practice has actually earned, reconcile the aspiration and achievement payments against expectation, and make sure the profit (and therefore each partner's tax and drawings) reflects earned income rather than the lumpy cash. We also make sure partner changes mid-year are handled fairly against the accrued position. The result is QOF that reads correctly in the accounts and holds up at the year-end. This is general information rather than advice for your circumstances, and because the point value and indicator set are reviewed every year, the current Statement of Financial Entitlements and QOF guidance are always the figures to check. If you would like a second pair of eyes on how your practice accounts for QOF, please <a href="/contact">get in touch</a>.</p>

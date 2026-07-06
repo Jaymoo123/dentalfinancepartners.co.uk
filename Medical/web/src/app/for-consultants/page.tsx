@@ -120,6 +120,18 @@ const data: AudienceStage = {
   ctaTitle: "Speak to a consultant specialist",
   ctaBody:
     "30-minute call, free. We look at your income structure, NHS pension position, and whether your private practice arrangement is tax-efficient. No obligation.",
+  relatedCalculators: [
+    {
+      href: "/calculators/nhs-pension-annual-allowance",
+      name: "NHS Pension Annual Allowance Calculator",
+      desc: "Calculate your tapered allowance and potential charge on consultant-level pension growth. Uses your NHSBSA pension savings statement figures. 2025/26 rates.",
+    },
+    {
+      href: "/calculators/private-practice-incorporation",
+      name: "Private Practice Incorporation Calculator",
+      desc: "Compare sole trader vs limited company net take-home on your private practice income. Instant, no sign-up.",
+    },
+  ],
   relatedGuides: [
     {
       href: "/medical-guides/consultant-private-practice-tax",

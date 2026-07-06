@@ -120,6 +120,13 @@ const data: AudienceStage = {
   ctaTitle: "Get your GP accounts done properly",
   ctaBody:
     "30-minute scoping call, free. We look at your current setup, check your NHS pension position, and flag any expense claims you may be missing. No obligation.",
+  relatedCalculators: [
+    {
+      href: "/calculators/nhs-pension-annual-allowance",
+      name: "NHS Pension Annual Allowance Calculator",
+      desc: "Enter your threshold income and annual pension growth from your NHSBSA statement to see your tapered allowance and any potential charge. 2025/26 rates.",
+    },
+  ],
   relatedGuides: [
     {
       href: "/medical-guides/nhs-pension-annual-allowance",

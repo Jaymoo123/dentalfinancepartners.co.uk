@@ -198,6 +198,12 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Because the calculation depends on your actual profit share, salary, expenses and pension position, and because the rules change, it pays to model both routes properly. As specialist medical accountants for UK doctors and GPs, we help partners and salaried GPs alike compare the routes, plan around the annual allowance, and stay compliant. Get in touch for a calculation based on your own circumstances.</p>
 
+<div style="border:1px solid #c7d5e8;border-left:4px solid #1e6fbf;border-radius:4px;padding:16px 20px;margin:28px 0;background:#f5f8fd;">
+<p style="margin:0 0 6px;font-weight:600;">Ready to compare your own numbers?</p>
+<p style="margin:0 0 10px;">The tax gap between the partner and salaried routes depends on your profit share, salary, expenses and pension position. A short health check will identify which route looks stronger for your situation and where the planning opportunities sit.</p>
+<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">speak to our medical accounting team</a> for a calculation built on your actual numbers.</p>
+</div>
+
 <h2>Related Reading</h2>
 
 <ul>

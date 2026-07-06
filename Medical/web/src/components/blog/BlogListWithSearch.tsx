@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import { focusRing } from "@/components/ui/layout-utils";
 import type { BlogPost } from "@/types/blog";
@@ -15,14 +15,27 @@ type SortOption = "date-desc" | "date-asc" | "title-asc" | "title-desc";
 
 export function BlogListWithSearch({
   posts,
-  categories,
+  categories: _categories,
   readTimes,
 }: BlogListWithSearchProps) {
+  // isHydrated starts false so the pre-hydration branch executes on both the
+  // server render and the matching initial client render, avoiding any React
+  // hydration mismatch. useEffect only runs client-side and flips it to true,
+  // at which point the full interactive UI replaces the static list.
+  const [isHydrated, setIsHydrated] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState<SortOption>("date-desc");
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 12;
 
+  useEffect(() => {
+    setIsHydrated(true);
+  }, []);
+
+  // All hooks must be declared before any conditional return (React rules).
+  // filteredAndSortedPosts is also used in the pre-hydration branch: with the
+  // initial state (searchQuery="", sortBy="date-desc") it equals ALL posts
+  // sorted newest-first, which is exactly what we want in the SSR HTML.
   const filteredAndSortedPosts = useMemo(() => {
     let filtered = posts;
 
@@ -69,6 +82,54 @@ export function BlogListWithSearch({
     setCurrentPage(1);
   };
 
+  // Pre-hydration branch: renders ALL posts as a full semantic list.
+  // This is the HTML Googlebot and other crawlers see. The same branch
+  // also runs during React's initial client-side render (before useEffect),
+  // so the DOM matches the server HTML exactly (no hydration warning).
+  // No search, sort or pagination controls are rendered here because they
+  // require JavaScript to function; they appear once the page hydrates.
+  if (!isHydrated) {
+    return (
+      <ul className="mt-8 space-y-4 sm:space-y-5">
+        {filteredAndSortedPosts.map((p) => {
+          const readTime = readTimes.get(p.slug) || 0;
+          return (
+            <li key={p.slug}>
+              <article className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm transition-shadow hover:shadow-md sm:p-6">
+                <p className="text-[11px] font-semibold uppercase tracking-wide text-[var(--accent-strong)] sm:text-xs">
+                  {p.category}
+                </p>
+                <h2 className="mt-2 font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">
+                  <Link
+                    href={`/blog/${p.slug}`}
+                    className={`hover:text-[var(--accent-strong)] transition-colors ${focusRing} rounded`}
+                  >
+                    {p.title}
+                  </Link>
+                </h2>
+                <p className="mt-2 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{p.summary}</p>
+                <div className="mt-4 flex items-center gap-3 text-sm text-[var(--muted)]">
+                  {p.date ? (
+                    <time dateTime={p.date}>
+                      {new Intl.DateTimeFormat("en-GB", {
+                        day: "numeric",
+                        month: "long",
+                        year: "numeric",
+                      }).format(new Date(p.date))}
+                    </time>
+                  ) : null}
+                  <span>•</span>
+                  <span>{readTime} min read</span>
+                </div>
+              </article>
+            </li>
+          );
+        })}
+      </ul>
+    );
+  }
+
+  // Post-hydration: full interactive UI with search, sort and pagination.
   return (
     <div>
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-4">

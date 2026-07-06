@@ -80,7 +80,7 @@ export default function ServicesPage() {
           Specialist accounting and tax support for GPs, consultants, locums and practice owners across the UK. From essential compliance to strategic planning, our medical accounting services are designed specifically for the healthcare sector. Whether you're a GP partner navigating NHS pension complexities, a locum doctor managing multiple income streams, or a consultant considering private practice incorporation, our GP accountants provide sector-specific expertise that generalist firms simply cannot match.
         </p>
         <p className="mt-4 text-base leading-relaxed text-[var(--muted)]">
-          We work exclusively with medical professionals. Every client is a GP, consultant, locum doctor, or practice owner. This concentrated focus means our accountants have deep experience with medical sector financial challenges — from NHS superannuation annual allowance calculations to locum IR35 compliance, medical expense claims, and practice partnership structures.
+          We work exclusively with medical professionals. Every client is a GP, consultant, locum doctor, or practice owner. This concentrated focus means our accountants have deep experience with medical sector financial challenges, from NHS superannuation annual allowance calculations to locum IR35 compliance, medical expense claims, and practice partnership structures.
         </p>
 
         <ol className="mt-10 list-none space-y-10 pl-0 sm:mt-12 sm:space-y-12">
@@ -119,17 +119,83 @@ export default function ServicesPage() {
           ))}
         </ol>
 
+        {/* Where we help */}
+        <section className="mt-12 sm:mt-16">
+          <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">
+            Where we help
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
+            We work with GPs, consultants, and locum doctors throughout the UK. Location pages cover local context and how to book.
+          </p>
+          <ul className="mt-6 grid list-none gap-3 pl-0 sm:grid-cols-2 lg:grid-cols-3">
+            {siteConfig.locations.map((loc) => {
+              const city = loc.slug.charAt(0).toUpperCase() + loc.slug.slice(1);
+              return (
+                <li key={loc.slug}>
+                  <Link
+                    href={`/locations/${loc.slug}`}
+                    className={`flex items-center justify-between rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 transition-all hover:border-[var(--accent-strong)] hover:shadow-sm ${focusRing}`}
+                  >
+                    <span className="text-sm font-semibold text-[var(--ink)]">{city}</span>
+                    <span className="text-xs font-medium text-[var(--accent-strong)]">GP accountant →</span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+
+        {/* Try our calculators */}
+        <section className="mt-12 sm:mt-16">
+          <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">
+            Try our free calculators
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
+            Instant estimates for NHS pension annual allowance, locum tax liability, and private practice incorporation savings. No email gate, no sign-up.
+          </p>
+          <ul className="mt-6 grid list-none gap-4 pl-0 sm:grid-cols-3">
+            {[
+              {
+                href: "/calculators/nhs-pension-annual-allowance",
+                name: "NHS Pension Annual Allowance Calculator",
+                desc: "Tapered allowance and potential charge on your pension growth. 2025/26 rates.",
+              },
+              {
+                href: "/calculators/locum-tax-calculator",
+                name: "Locum Doctor Tax Calculator",
+                desc: "Net take-home and tax bill for locum income. Includes student loan. 2025/26 rates.",
+              },
+              {
+                href: "/calculators/private-practice-incorporation",
+                name: "Private Practice Incorporation Calculator",
+                desc: "Sole trader vs limited company take-home comparison on private practice income.",
+              },
+            ].map((c) => (
+              <li key={c.href}>
+                <Link
+                  href={c.href}
+                  className={`block rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 transition-all hover:border-[var(--accent-strong)] hover:shadow-sm ${focusRing}`}
+                >
+                  <h3 className="text-sm font-semibold text-[var(--ink)]">{c.name}</h3>
+                  <p className="mt-1.5 text-xs leading-relaxed text-[var(--muted)]">{c.desc}</p>
+                  <span className="mt-3 block text-xs font-semibold text-[var(--accent-strong)]">Open calculator →</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+
         <div className="mt-12 space-y-8 sm:mt-16 sm:space-y-10">
           <CTASection
             title="Book a short scoping call"
-            description="Walk us through your professional structure — NHS commitments, private practice, and your financial goals for the year ahead."
+            description="Walk us through your professional structure: your NHS commitments, private practice, and financial goals for the year ahead."
             primaryHref="/contact"
             secondaryHref="/blog"
             secondaryLabel="Read related articles"
           />
           <CTASection
             title="Prefer to start with content?"
-            description="Our articles are written for UK medical professionals — practical, sector-specific, and free of generic tax advice."
+            description="Our articles are written for UK medical professionals: practical, sector-specific, and free of generic tax advice."
             primaryHref="/blog"
             primaryLabel="Open the blog"
             secondaryHref="/about"

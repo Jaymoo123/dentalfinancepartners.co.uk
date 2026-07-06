@@ -50,7 +50,7 @@ const cityContent: Record<string, {
 }> = {
   london: {
     intro: "We're specialist medical accountants serving GPs, consultants, and medical practice owners across London. Whether you're based in Harley Street, the City, Canary Wharf, or anywhere across Greater London, we provide expert GP accounting and tax services tailored to medical professionals.",
-    areas: "We work with doctors across Central London, North London, South London, East London, and West London — including Westminster, Camden, Islington, Hackney, Tower Hamlets, Southwark, Lambeth, Wandsworth, Hammersmith & Fulham, Kensington & Chelsea, and surrounding boroughs.",
+    areas: "We work with doctors across Central London, North London, South London, East London, and West London, including Westminster, Camden, Islington, Hackney, Tower Hamlets, Southwark, Lambeth, Wandsworth, Hammersmith & Fulham, Kensington & Chelsea, and surrounding boroughs.",
     whyLocal: "London has the highest concentration of medical professionals in the UK, from GP surgeries in every borough to major teaching hospitals and private consulting rooms. We understand the London medical landscape, including higher practice costs, competitive private markets, and the complex mix of NHS and private income streams.",
     services: [
       {
@@ -255,6 +255,31 @@ export default async function LocationPage({ params }: Props) {
             </ul>
           </section>
         )}
+
+        {/* Sibling cities */}
+        <section className="mt-12 sm:mt-16">
+          <h2 className="font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">
+            Medical accountants in other UK cities
+          </h2>
+          <ul className="mt-4 grid list-none gap-3 pl-0 sm:grid-cols-2">
+            {siteConfig.locations
+              .filter((l) => l.slug !== slug)
+              .map((l) => {
+                const siblingCity = l.slug.charAt(0).toUpperCase() + l.slug.slice(1);
+                return (
+                  <li key={l.slug}>
+                    <Link
+                      href={`/locations/${l.slug}`}
+                      className={`flex items-center justify-between rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 transition-all hover:border-[var(--medical-teal)]/50 hover:shadow-sm ${focusRing}`}
+                    >
+                      <span className="text-sm font-semibold text-[var(--ink)]">{siblingCity}</span>
+                      <span className="text-xs font-medium text-[var(--accent-strong)]">GP accountant →</span>
+                    </Link>
+                  </li>
+                );
+              })}
+          </ul>
+        </section>
 
         <div className="mt-12 sm:mt-16">
           <CTASection

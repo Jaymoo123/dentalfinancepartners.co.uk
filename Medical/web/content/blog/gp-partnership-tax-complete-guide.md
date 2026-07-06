@@ -152,6 +152,12 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Even for private work, the case is rarely a clear win at typical profit levels, and the 2026/27 dividend rate rise narrows it further: dividend tax is 10.75% (ordinary), 35.75% (upper) and 39.35% (additional) from 6 April 2026, with a £500 dividend allowance, up from 8.75% and 33.75% in 2025/26. Any tax comparison must be paired with the loss of NHS pension accrual on income taken as dividends. See our guides to <a href="/blog/medical-practice-incorporation-step-by-step">incorporating private medical work step by step</a> and the <a href="/blog/gp-limited-company-tax-benefits-drawbacks">benefits and drawbacks of a GP limited company</a>.</p>
 
+<div style="border:1px solid #c7d5e8;border-left:4px solid #1e6fbf;border-radius:4px;padding:16px 20px;margin:28px 0;background:#f5f8fd;">
+<p style="margin:0 0 6px;font-weight:600;">Not sure whether incorporation makes sense for your private work?</p>
+<p style="margin:0 0 10px;">The answer depends on your private income level, dividend tax position and how much NHS pension accrual you would give up. Our free practice health check takes stock of where your partnership stands and where the planning opportunities are.</p>
+<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">speak to our medical accounting team</a> to model the options for your situation.</p>
+</div>
+
 <h2>Self Assessment, Payments on Account and MTD</h2>
 
 <p>Your share of partnership profit is reported on the partnership pages (SA104) of your personal self assessment return. The return and the balancing payment are due by <strong>31 January following the tax year</strong>, so 2026/27 profits are due by 31 January 2028. If your prior-year liability exceeded £1,000 (and less than 80% was collected at source), you also make two <strong>payments on account</strong>, each 50% of the prior year's liability, due 31 January and 31 July.</p>

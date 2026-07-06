@@ -9,12 +9,12 @@ import { LeadForm } from "@/components/forms/LeadForm";
 export const metadata: Metadata = {
   title: "Allowable Medical Expenses for UK Doctors | Medical Accountants UK",
   description:
-    "Complete guide to tax-deductible expenses for UK doctors — professional subscriptions, indemnity, equipment, travel, CPD and more.",
+    "Complete guide to tax-deductible expenses for UK doctors: professional subscriptions, indemnity, equipment, travel, CPD and more.",
   alternates: { canonical: `${siteConfig.url}/blog/medical-expenses` },
   openGraph: {
     title: "Allowable Medical Expenses for UK Doctors",
     description:
-      "Complete guide to tax-deductible expenses for UK doctors — professional subscriptions, indemnity, equipment, travel, CPD and more.",
+      "Complete guide to tax-deductible expenses for UK doctors: professional subscriptions, indemnity, equipment, travel, CPD and more.",
     url: `${siteConfig.url}/blog/medical-expenses`,
     siteName: siteConfig.name,
     type: "website",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Allowable Medical Expenses for UK Doctors",
     description:
-      "Complete guide to tax-deductible expenses for UK doctors — professional subscriptions, indemnity, equipment, travel, CPD and more.",
+      "Complete guide to tax-deductible expenses for UK doctors: professional subscriptions, indemnity, equipment, travel, CPD and more.",
   },
 };
 
@@ -72,8 +72,8 @@ export default function MedicalExpensesPillarPage() {
           </h1>
           <p className="mt-4 text-lg text-[var(--ink-soft)] leading-relaxed">
             Claiming every legitimate expense reduces your tax bill and ensures you are not paying
-            more than you owe. Yet many doctors — particularly those juggling NHS employment with
-            locum or private work — miss out on thousands of pounds of deductions each year simply
+            more than you owe. Yet many doctors, particularly those juggling NHS employment with
+            locum or private work, miss out on thousands of pounds of deductions each year simply
             because they are unsure what qualifies. This hub explains the main categories of
             allowable expenses for UK medical professionals and how to claim them correctly.
           </p>
@@ -92,8 +92,8 @@ export default function MedicalExpensesPillarPage() {
               bodies, and any subscription to an organisation on that list qualifies automatically.
             </p>
             <p className="text-base leading-relaxed text-[var(--ink-soft)]">
-              Medical indemnity or defence-organisation subscriptions — such as those paid to the
-              MDU, MPS or MDDUS — are also deductible where you are required to hold cover to
+              Medical indemnity or defence-organisation subscriptions (such as those paid to the
+              MDU, MPS or MDDUS) are also deductible where you are required to hold cover to
               practise. Since the state-backed Clinical Negligence Scheme for General Practice
               (CNSGP) now covers NHS GP work, indemnity costs have shifted, but many doctors still
               pay for private-practice cover, Good Samaritan cover or enhanced advisory services.
@@ -115,8 +115,8 @@ export default function MedicalExpensesPillarPage() {
             </p>
             <p className="text-base leading-relaxed text-[var(--ink-soft)]">
               For self-employed GPs and private practitioners, the full cost of equipping a
-              consulting room — examination couches, IT hardware, clinical-waste disposal and
-              consumables — is allowable against practice income. Employed doctors may claim via a
+              consulting room (examination couches, IT hardware, clinical-waste disposal and
+              consumables) is allowable against practice income. Employed doctors may claim via a
               Self Assessment tax return for items bought out of their own pocket where the expense
               is incurred &ldquo;wholly, exclusively and necessarily&rdquo; in the performance of
               their duties. Keeping receipts and a brief note of the clinical purpose strengthens
@@ -129,17 +129,17 @@ export default function MedicalExpensesPillarPage() {
               Travel and Motor Expenses
             </h2>
             <p className="text-base leading-relaxed text-[var(--ink-soft)] mb-4">
-              Travel between two workplaces — for example, driving from your NHS hospital to a
-              private clinic — is an allowable business journey. Locum doctors travelling to
+              Travel between two workplaces (for example, driving from your NHS hospital to a
+              private clinic) is an allowable business journey. Locum doctors travelling to
               temporary engagements can claim the full cost of travel, including mileage, parking,
-              tolls and public transport fares. The approved HMRC mileage rate is 45p per mile for
-              the first 10,000 business miles in a tax year and 25p per mile thereafter when using
+              tolls and public transport fares. The approved HMRC mileage rate is 55p per mile for
+              the first 10,000 business miles in 2026/27 (it rose from 45p on 6 April 2026) and 25p per mile thereafter when using
               your own car.
             </p>
             <p className="text-base leading-relaxed text-[var(--ink-soft)]">
               Travel from home to a permanent workplace is commuting and is not deductible. However,
-              where a locum or portfolio GP has no permanent workplace — because each engagement is a
-              temporary posting — travel from home to each site can qualify. The distinction hinges
+              where a locum or portfolio GP has no permanent workplace (because each engagement is a
+              temporary posting), travel from home to each site can qualify. The distinction hinges
               on HMRC&apos;s &ldquo;24-month rule&rdquo; and the pattern of your working
               arrangements. Conference travel, including flights, hotels and subsistence for
               attending CPD events, is also allowable provided the primary purpose of the trip is
@@ -156,7 +156,7 @@ export default function MedicalExpensesPillarPage() {
               GMC register, and the costs of meeting that requirement are tax-deductible. This covers
               course fees, conference registration, online learning-platform subscriptions and the
               purchase of medical textbooks and journals. Examination fees for postgraduate
-              qualifications — such as MRCP, MRCGP or FRCS — are deductible where the qualification
+              qualifications (such as MRCP, MRCGP or FRCS) are deductible where the qualification
               is needed to maintain or improve your existing skills rather than to enter an entirely
               new profession.
             </p>
@@ -164,7 +164,7 @@ export default function MedicalExpensesPillarPage() {
               Self-employed doctors can deduct these costs directly on their tax return. Employed
               doctors claim through the employment-expenses section of Self Assessment, subject to
               the &ldquo;wholly, exclusively and necessarily&rdquo; test. Where your employer
-              reimburses CPD costs, you cannot also claim tax relief — double-claiming is a common
+              reimburses CPD costs, you cannot also claim tax relief; double-claiming is a common
               error flagged in HMRC compliance checks. Maintaining a CPD log that ties each expense
               to a specific learning activity makes the claim straightforward to evidence.
             </p>
@@ -175,8 +175,8 @@ export default function MedicalExpensesPillarPage() {
               Home Office and Administrative Costs
             </h2>
             <p className="text-base leading-relaxed text-[var(--ink-soft)] mb-4">
-              Doctors who carry out administrative work from home — preparing reports, completing
-              appraisal portfolios, managing practice accounts — may be able to claim a proportion of
+              Doctors who carry out administrative work from home (preparing reports, completing
+              appraisal portfolios, managing practice accounts) may be able to claim a proportion of
               household costs. HMRC allows a flat-rate deduction of £6 per week (£312 per year)
               without the need for supporting evidence. Alternatively, you can calculate the actual
               proportion of household expenses (heating, lighting, broadband, insurance) attributable

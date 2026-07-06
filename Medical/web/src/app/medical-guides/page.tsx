@@ -105,6 +105,49 @@ export default function MedicalGuidesPage() {
         </div>
       </section>
 
+      {/* Calculator tools */}
+      <section className="bg-white border-t border-[var(--border)]">
+        <div className={`${siteContainerLg} py-12 sm:py-16`}>
+          <div className="max-w-4xl">
+            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+              Free calculators for UK doctors
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-[var(--muted)]">
+              Use alongside the guides to estimate your numbers. Instant results, no email required.
+            </p>
+            <div className="mt-8 grid gap-4 sm:grid-cols-3">
+              {[
+                {
+                  href: "/calculators/nhs-pension-annual-allowance",
+                  name: "NHS Pension Annual Allowance Calculator",
+                  desc: "Tapered allowance and potential charge on your pension growth. 2025/26 limits.",
+                },
+                {
+                  href: "/calculators/locum-tax-calculator",
+                  name: "Locum Doctor Tax Calculator",
+                  desc: "Net take-home and tax bill for locum income, including student loan repayment. 2025/26 rates.",
+                },
+                {
+                  href: "/calculators/private-practice-incorporation",
+                  name: "Private Practice Incorporation Calculator",
+                  desc: "Sole trader vs limited company take-home comparison on private practice income.",
+                },
+              ].map((c) => (
+                <Link
+                  key={c.href}
+                  href={c.href}
+                  className={`group block rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 transition-all hover:border-[var(--copper)] hover:shadow-md ${focusRing}`}
+                >
+                  <h3 className="font-semibold text-sm text-[var(--ink)] group-hover:text-[var(--copper)]">{c.name}</h3>
+                  <p className="mt-1.5 text-xs leading-relaxed text-[var(--muted)]">{c.desc}</p>
+                  <span className="mt-3 block text-xs font-semibold text-[var(--copper)]">Open calculator →</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Audience quick links */}
       <section className="bg-[var(--surface)] border-t border-[var(--border)]">
         <div className={`${siteContainerLg} py-12 sm:py-16`}>

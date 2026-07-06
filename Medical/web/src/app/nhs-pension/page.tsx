@@ -6,6 +6,7 @@ import { CTASection } from "@/components/ui/CTASection";
 import { btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
+import { JsonLd, buildServicePageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "NHS Pension Annual Allowance Planning | Tapered Allowance Calculator",
@@ -84,6 +85,26 @@ const processSteps = [
 export default function NHSPensionPage() {
   return (
     <>
+      {/* BreadcrumbList + Service JSON-LD so AI answer engines and search
+          resolve this as the firm's NHS pension annual allowance service.
+          Provider resolves to the canonical Organization @id. */}
+      <JsonLd
+        data={buildServicePageSchema({
+          name: "NHS Pension Annual Allowance Planning",
+          description:
+            "Specialist NHS pension annual allowance planning for GPs and consultants. We model your pension input amount against the £60,000 annual allowance and the taper (threshold income above £200,000 and adjusted income above £260,000, down to a £10,000 floor), check carry-forward, and review Scheme Pays before any charge crystallises.",
+          path: "/nhs-pension",
+          breadcrumbLabel: "NHS Pension",
+          serviceType: "NHS pension and tax planning",
+          offerItems: [
+            "NHS pension annual allowance calculation",
+            "Tapered annual allowance modelling",
+            "Carry-forward analysis",
+            "Scheme Pays election review",
+            "Pension savings statement checking",
+          ],
+        })}
+      />
       <section className="relative h-[320px] sm:h-[380px] lg:h-[400px] overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=2000&q=85"

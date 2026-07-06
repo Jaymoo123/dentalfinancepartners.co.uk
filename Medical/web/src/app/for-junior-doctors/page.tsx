@@ -120,6 +120,13 @@ const data: AudienceStage = {
   ctaTitle: "Get your junior doctor tax sorted",
   ctaBody:
     "30-minute call, free. We look at your current tax position, your locum income setup, and your student loan situation. No obligation.",
+  relatedCalculators: [
+    {
+      href: "/calculators/locum-tax-calculator",
+      name: "Locum Doctor Tax Calculator",
+      desc: "Work out the tax on your locum shifts alongside your NHS salary. Includes student loan plan 2 repayment calculation. 2025/26 rates.",
+    },
+  ],
   relatedGuides: [
     {
       href: "/medical-guides/medical-expenses-tax-treatment",

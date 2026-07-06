@@ -147,6 +147,12 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>We are medical accounting specialists who work with consultants, GP partners and locums on exactly these questions. This guide is general information and not personal advice; your position depends on your scheme sections, income and history. If you would like your annual allowance position modelled and your options set out clearly, <a href="/contact">get in touch with our medical accounting team</a> for a conversation about your circumstances.</p>
 
+<div style="border:1px solid #c7d5e8;border-left:4px solid #1e6fbf;border-radius:4px;padding:16px 20px;margin:28px 0;background:#f5f8fd;">
+<p style="margin:0 0 6px;font-weight:600;">Could you be heading for an annual allowance charge this year?</p>
+<p style="margin:0 0 10px;">The taper catches many GPs by surprise when a profit jump coincides with a high income year. A free practice health check will flag your likely pension input amount, your threshold and adjusted income, and the carry-forward available before you hit a charge.</p>
+<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">speak to our medical accounting team</a> to get your annual allowance position modelled.</p>
+</div>
+
 <h2>Recent Changes and the Current Figures</h2>
 
 <p>For context, the standard annual allowance was increased from £40,000 to £60,000 in April 2023, and the taper thresholds and floor were eased at the same time. Those were the historical changes; the figures that apply now for 2025/26 are a <strong>standard allowance of £60,000</strong>, a <strong>threshold income gateway of £200,000</strong>, an <strong>adjusted income threshold of £260,000</strong>, a <strong>tapered minimum of £10,000</strong>, and an <strong>MPAA of £10,000</strong>. Always confirm your planning reflects the current rules, because pension tax limits are reviewed regularly.</p>

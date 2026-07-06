@@ -135,6 +135,12 @@ faqs:
 
 <p>For the mechanics of where each PCN line sits in the books, see our <a href="/blog/gp-accounting-guide">GP accounting guide</a> and <a href="/blog/gp-bookkeeping-guide-uk">GP bookkeeping guide</a>; for running the practice and network payroll, see <a href="/blog/gp-payroll-services">GP payroll services</a>.</p>
 
+<div style="border:1px solid #c7d5e8;border-left:4px solid #1e6fbf;border-radius:4px;padding:16px 20px;margin:28px 0;background:#f5f8fd;">
+<p style="margin:0 0 6px;font-weight:600;">Is your ARRS reimbursement netting off correctly in the practice accounts?</p>
+<p style="margin:0 0 10px;">A misposted ARRS reimbursement flows straight through to each partner's profit share and tax bill. Our free practice health check will show whether your PCN income streams are being recognised correctly and where corrections would be material.</p>
+<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">speak to our medical accounting team</a> about your practice accounts.</p>
+</div>
+
 <h2>VAT and Pension in One Breath</h2>
 
 <p><strong>VAT.</strong> Core NHS network income to the practices is outside the scope of VAT, so the funding itself does not create a VAT problem. The exposure sits elsewhere: the way shared ARRS staff are employed and recharged between practices can create a standard-rated supply of staff, and because practices make mostly exempt and outside-the-scope supplies, that VAT can be largely irrecoverable. We do not teach it here; the detail (the control test, the registration threshold, joint employment and cost sharing groups) is in the <a href="/blog/arrs-reimbursement-employing-pcn-staff-tax">ARRS and employing PCN staff</a> guide.</p>

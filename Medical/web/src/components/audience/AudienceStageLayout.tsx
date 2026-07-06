@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { LucideIcon } from "lucide-react";
 import { siteContainerLg, btnOnDark, focusRing } from "@/components/ui/layout-utils";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { JsonLd, buildAudiencePageSchema } from "@/lib/schema";
 
 export type AudienceStage = {
   slug: string;
@@ -17,6 +18,7 @@ export type AudienceStage = {
   ctaTitle: string;
   ctaBody: string;
   relatedGuides?: { href: string; title: string; body: string }[];
+  relatedCalculators?: { href: string; name: string; desc: string }[];
 };
 
 type Props = { data: AudienceStage };
@@ -24,6 +26,10 @@ type Props = { data: AudienceStage };
 export function AudienceStageLayout({ data }: Props) {
   return (
     <>
+      {/* Answer-ready structured data for AI engines (BreadcrumbList + Service
+          + FAQPage). Built once in @/lib/schema so every /for-* audience page
+          emits it. The FAQ mirrors the visible Q&A below verbatim. */}
+      <JsonLd data={buildAudiencePageSchema(data)} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-[#000d1f] via-[var(--navy)] to-[var(--navy-soft)]">
         <div
@@ -138,6 +144,35 @@ export function AudienceStageLayout({ data }: Props) {
           </div>
         </div>
       </section>
+
+      {/* Calculator tools */}
+      {data.relatedCalculators && data.relatedCalculators.length > 0 && (
+        <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 sm:py-12">
+          <div className={siteContainerLg}>
+            <div className="mx-auto max-w-4xl">
+              <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">
+                Try our free calculators
+              </h2>
+              <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
+                Instant estimates. No email address required.
+              </p>
+              <div className="mt-6 grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                {data.relatedCalculators.map((c) => (
+                  <Link
+                    key={c.href}
+                    href={c.href}
+                    className={`group block rounded-2xl border border-[var(--border)] bg-white p-5 transition-all hover:border-[var(--copper)] hover:shadow-md ${focusRing}`}
+                  >
+                    <h3 className="text-sm font-semibold text-[var(--ink)] group-hover:text-[var(--copper)]">{c.name}</h3>
+                    <p className="mt-1.5 text-xs leading-relaxed text-[var(--muted)]">{c.desc}</p>
+                    <span className="mt-3 block text-xs font-semibold text-[var(--copper)]">Open calculator →</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Lead form CTA */}
       <section className="bg-[var(--surface)] py-16 sm:py-20">

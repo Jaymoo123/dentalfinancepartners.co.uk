@@ -106,7 +106,7 @@ const data: AudienceStage = {
     },
     {
       q: "Can I claim the cost of my car as a locum doctor?",
-      a: "Yes, but only the business portion. Travel from home to your first engagement is typically not allowable (it is ordinary commuting). Travel between separate practices or to separate engagements in a day is allowable. If you use your car for both personal and business purposes, you claim either the approved mileage rate (45p per mile up to 10,000 miles, 25p thereafter) or the actual business proportion of all running costs and capital allowances. We assess which method gives you the better deduction based on your vehicle and mileage.",
+      a: "Yes, but only the business portion. Travel from home to your first engagement is typically not allowable (it is ordinary commuting). Travel between separate practices or to separate engagements in a day is allowable. If you use your car for both personal and business purposes, you claim either the approved mileage rate (55p per mile for the first 10,000 business miles in 2026/27, then 25p per mile) or the actual business proportion of all running costs and capital allowances. We assess which method gives you the better deduction based on your vehicle and mileage.",
     },
     {
       q: "How does the NHS Pension Scheme type 2 certificate work?",
@@ -120,6 +120,13 @@ const data: AudienceStage = {
   ctaTitle: "Get your locum tax done right",
   ctaBody:
     "30-minute call, free. We review your current structure, check your IR35 exposure, and identify any expense claims you are missing. No obligation.",
+  relatedCalculators: [
+    {
+      href: "/calculators/locum-tax-calculator",
+      name: "Locum Doctor Tax Calculator",
+      desc: "Enter your gross locum income, allowable expenses, and student loan plan. See your net take-home and estimated tax bill. 2025/26 and 2026/27 rates.",
+    },
+  ],
   relatedGuides: [
     {
       href: "/medical-guides/locum-limited-company-vs-umbrella",

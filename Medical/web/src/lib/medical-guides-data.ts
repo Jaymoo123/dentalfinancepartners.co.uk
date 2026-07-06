@@ -266,7 +266,7 @@ export const MEDICAL_GUIDES: MedicalGuide[] = [
       },
       {
         heading: "Motor and travel expenses",
-        body: "The allowable motor expense rules for doctors depend on whether you are employed or self-employed:\n\nSelf-employed doctors (GPs, locums, private practice): You can claim either the HMRC approved mileage rate (45p per mile for the first 10,000 miles per tax year, 25p thereafter) or the actual business proportion of all motor costs (fuel, insurance, road tax, servicing, depreciation). You cannot combine both methods; you choose one and stick with it for that vehicle.\n\nTravel between separate professional locations is allowable. Travel from home to your regular base of work is not (ordinary commuting). Home visits, travel to hospital sessions, travel to separate practice locations, and travel to CPD events are allowable.\n\nEmployed doctors claiming travel under HMRC's employment expense rules: The rules are narrower. You can claim travel for duties that take you away from your usual place of work, but not ordinary commuting. Multi-site employed consultants travelling between NHS sites can claim the costs of those journeys above their ordinary commute distance.",
+        body: "The allowable motor expense rules for doctors depend on whether you are employed or self-employed:\n\nSelf-employed doctors (GPs, locums, private practice): You can claim either the HMRC approved mileage rate (55p per mile for the first 10,000 miles per tax year in 2026/27, then 25p per mile; the first-tier rate rose from 45p on 6 April 2026) or the actual business proportion of all motor costs (fuel, insurance, road tax, servicing, depreciation). You cannot combine both methods; you choose one and stick with it for that vehicle.\n\nTravel between separate professional locations is allowable. Travel from home to your regular base of work is not (ordinary commuting). Home visits, travel to hospital sessions, travel to separate practice locations, and travel to CPD events are allowable.\n\nEmployed doctors claiming travel under HMRC's employment expense rules: The rules are narrower. You can claim travel for duties that take you away from your usual place of work, but not ordinary commuting. Multi-site employed consultants travelling between NHS sites can claim the costs of those journeys above their ordinary commute distance.",
       },
       {
         heading: "Home consulting room and home office",
@@ -278,7 +278,7 @@ export const MEDICAL_GUIDES: MedicalGuide[] = [
       "Medical indemnity premiums (MDU, MPS, MDDUS) are allowable trade expenses.",
       "CPD must relate to existing practice, not career changes, to be fully allowable.",
       "Equipment and software are claimable through Annual Investment Allowance (100% first-year deduction).",
-      "Mileage rate: 45p/mile for first 10,000 miles, 25p thereafter (2025/26 rates).",
+      "Mileage rate: 55p/mile for first 10,000 business miles in 2026/27, 25p thereafter (rate rose from 45p on 6 April 2026).",
       "Home consulting room claims require exclusive professional use and carry a private residence relief consideration.",
     ],
     relatedGuides: [

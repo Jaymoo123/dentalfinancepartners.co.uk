@@ -14,6 +14,9 @@ export {
 
 import {
   buildWebApplication as _buildWebApplication,
+  buildService,
+  buildBreadcrumb,
+  buildFaqPage as _buildFaqPage,
   type SchemaThing,
   type SiteSchemaOpts,
   type WebApplicationInput,
@@ -35,6 +38,102 @@ function getSiteOpts(): SiteSchemaOpts {
 /** Site-bound wrapper so calculator/tool pages call the shared builder with one argument. */
 export function buildWebApplication(input: WebApplicationInput): SchemaThing {
   return _buildWebApplication(input, getSiteOpts());
+}
+
+/**
+ * Schema graph for an audience landing page (/for-gps, /for-consultants,
+ * /for-locum-doctors, /for-junior-doctors). Emits BreadcrumbList + Service
+ * (with an OfferCatalog of the listed services, provider = the canonical
+ * Organization) + FAQPage so AI answer engines can extract the Q&A directly.
+ * Built once here and consumed by AudienceStageLayout, so every /for-* page
+ * gains answer-ready structured data from one place.
+ */
+export function buildAudiencePageSchema(data: {
+  slug: string;
+  displayRole: string;
+  heroHeading: string;
+  intro: string;
+  services: { title: string; body: string }[];
+  faqs: { q: string; a: string }[];
+}): SchemaThing[] {
+  const opts = getSiteOpts();
+  const url = `${siteConfig.url}/${data.slug}`;
+
+  const things: SchemaThing[] = [
+    buildBreadcrumb(
+      [
+        { label: "Home", href: "/" },
+        { label: `For ${data.displayRole}` },
+      ],
+      opts,
+    ),
+    buildService(
+      {
+        name: data.heroHeading,
+        description: data.intro,
+        url,
+        serviceType: "Medical accountancy and tax",
+        areaServed: "United Kingdom",
+        audience: data.displayRole,
+        hasOfferCatalog: {
+          name: `Services for ${data.displayRole}`,
+          items: data.services.map((s) => s.title),
+        },
+      },
+      opts,
+    ),
+  ];
+
+  const faq = _buildFaqPage(
+    data.faqs.map((f) => ({ question: f.q, answer: f.a })),
+  );
+  if (faq) things.push(faq);
+
+  return things;
+}
+
+/**
+ * BreadcrumbList + Service graph for a core commercial/service tsx page
+ * (e.g. /nhs-pension). Service.provider resolves to the canonical
+ * Organization @id, so AI knowledge-graph crawlers tie the offering to the
+ * firm. Pass offerItems to emit an OfferCatalog of the sub-services.
+ */
+export function buildServicePageSchema(input: {
+  name: string;
+  description: string;
+  path: string;
+  breadcrumbLabel: string;
+  serviceType?: string;
+  offerItems?: string[];
+}): SchemaThing[] {
+  const opts = getSiteOpts();
+  return [
+    buildBreadcrumb(
+      [
+        { label: "Home", href: "/" },
+        { label: input.breadcrumbLabel },
+      ],
+      opts,
+    ),
+    buildService(
+      {
+        name: input.name,
+        description: input.description,
+        url: `${siteConfig.url}${input.path}`,
+        serviceType: input.serviceType ?? "Medical accountancy and tax",
+        areaServed: "United Kingdom",
+        ...(input.offerItems && input.offerItems.length > 0
+          ? {
+              hasOfferCatalog: {
+                name: input.name,
+                items: input.offerItems,
+              },
+            }
+          : {}),
+      },
+      opts,
+    ),
+  ];
 }
 
 export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]) {

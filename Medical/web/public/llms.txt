@@ -1,22 +1,94 @@
-# Medical Accountants UK
+# Medical Accounts: Specialist Accountants for UK Doctors
 
-> Specialist UK accountants for GPs, medical professionals, and NHS practices.
+> Specialist accounting, tax planning, and NHS pension advisory for GPs, consultants, locum doctors, and junior doctors in the UK.
 
 ## About
-Medical Accountants UK provides specialist accounting, tax planning, and NHS pension advisory services for UK medical professionals. We cover GP tax and accounts, NHS pension planning, locum tax, private practice tax, medical expenses, and incorporation strategies.
 
-## Key Pages
-- Homepage: https://www.medicalaccountantsuk.co.uk/
-- Services: https://www.medicalaccountantsuk.co.uk/services
-- About: https://www.medicalaccountantsuk.co.uk/about
-- Blog: https://www.medicalaccountantsuk.co.uk/blog
-- Contact: https://www.medicalaccountantsuk.co.uk/contact
-- Locations: https://www.medicalaccountantsuk.co.uk/locations
-- NHS Pension: https://www.medicalaccountantsuk.co.uk/nhs-pension
-- Calculators: https://www.medicalaccountantsuk.co.uk/calculators
+Medical Accounts (trading name of Ashfield Trading Ltd, co. 16358723) provides specialist financial and accounting services exclusively for UK medical professionals. Areas covered: GP partnership accounts and tax, NHS pension planning (annual allowance, scheme pays, McCloud remedy), locum doctor self-assessment and IR35, private practice incorporation, consultant tax, VAT for medical services, and Making Tax Digital.
 
-## Blog Topics
-GP tax, self-assessment, partnership accounting, NHS pension annual allowance, locum doctor tax, private practice tax, medical expenses and deductions, practice incorporation, consultant tax planning.
+All tax figures reflect 2026/27 UK rates (Finance Act 2026). For regulated advice specific to your situation, use the contact form at https://www.medicalaccounts.co.uk/contact.
+
+The full machine-readable content dump (all blog posts) is at https://www.medicalaccounts.co.uk/llms-full.txt.
+
+## Core Service Pages
+
+- Homepage: https://www.medicalaccounts.co.uk/
+  Specialist medical accountancy overview, lead capture, and route-finder for each doctor type.
+
+- Services: https://www.medicalaccounts.co.uk/services
+  Full list of accountancy and tax services for medical professionals.
+
+- About: https://www.medicalaccounts.co.uk/about
+  Firm background and specialist medical accounting credentials.
+
+- NHS Pension: https://www.medicalaccounts.co.uk/nhs-pension
+  NHS Pension Scheme guide: 1995/2008/2015 sections, annual allowance (AA £60,000), taper, scheme pays, McCloud remedy, and LTA abolition.
+
+- Contact: https://www.medicalaccounts.co.uk/contact
+  Enquiry form for GPs, consultants, locums, and junior doctors.
+
+## Specialist Pages by Doctor Type
+
+- For GPs (partners and practices): https://www.medicalaccounts.co.uk/for-gps
+  Partnership accounts, profit-sharing, Global Sum funding, PCSE reconciliation, premises (notional rent vs cost rent), goodwill rules, capital accounts.
+
+- For Consultants: https://www.medicalaccounts.co.uk/for-consultants
+  NHS employment plus private practice: sole-trader vs incorporation, BADR on private-practice disposals, annual allowance, pensionability of private income.
+
+- For Locum Doctors: https://www.medicalaccounts.co.uk/for-locum-doctors
+  Self-assessment (SA103), IR35 for NHS Trust engagements, locum pension forms A and B, expenses, MTD from April 2026.
+
+- For Junior Doctors: https://www.medicalaccounts.co.uk/for-junior-doctors
+  PAYE, self-assessment for locum/private sessions on top of NHS employment, expenses, early NHS pension decisions.
+
+- Free Practice Health Check: https://www.medicalaccounts.co.uk/free-practice-health-check
+  No-cost diagnostic review of GP practice finances, tax position, and NHS pension exposure.
+
+- Medical Guides: https://www.medicalaccounts.co.uk/medical-guides
+  In-depth reference guides on GP practice incorporation, locum tax, and NHS pension planning.
+
+- Locations: https://www.medicalaccounts.co.uk/locations
+  Regional service pages for GPs and medical professionals across the UK.
+
+## Free Calculators
+
+- NHS Pension Annual Allowance Calculator: https://www.medicalaccounts.co.uk/calculators/nhs-pension-annual-allowance
+  Calculates your pension input amount against the £60,000 annual allowance and taper threshold; flags a potential scheme-pays charge.
+
+- Locum Tax Calculator: https://www.medicalaccounts.co.uk/calculators/locum-tax-calculator
+  Income tax and Class 4 NIC estimate for sole-trader locum doctors (2026/27 rates).
+
+- Private Practice Incorporation Calculator: https://www.medicalaccounts.co.uk/calculators/private-practice-incorporation
+  Compares sole-trader vs limited-company net take-home on private income, including the 2026/27 dividend rate rise and pension-accrual loss.
+
+- All Calculators: https://www.medicalaccounts.co.uk/calculators
+
+## Highest-Value Blog Posts
+
+- Becoming a GP Partner, Financial Implications: https://www.medicalaccounts.co.uk/blog/becoming-gp-partner-financial-implications
+  Capital buy-in, profit-share taxation (SA800/SA104), drawings vs profit, NHS pension as a partner, goodwill rules, and the last-man-standing premises risk.
+
+- GP Partner vs Salaried GP, Tax Comparison: https://www.medicalaccounts.co.uk/blog/gp-partner-vs-salaried-gp-tax-comparison
+  Side-by-side income tax, NIC, pension, and take-home comparison for the two most common GP employment structures.
+
+- GP Partnership Tax, Complete Guide: https://www.medicalaccounts.co.uk/blog/gp-partnership-tax-complete-guide
+  Full walkthrough of GP partnership accounts: profit allocation, basis-period reform, drawings policy, capital accounts, year-end tax reserving.
+
+- NHS Pension Annual Allowance, Complete Guide: https://www.medicalaccounts.co.uk/blog/nhs-pension-annual-allowance-complete-guide
+  Annual allowance £60,000, taper (threshold income £200,000 / adjusted £260,000), pension input amount for DB schemes, scheme pays, carry-forward.
+
+- Locum Doctor Tax, Complete Guide: https://www.medicalaccounts.co.uk/blog/locum-doctor-tax-complete-guide
+  Self-assessment, allowable expenses, locum pension forms A and B, IR35 for NHS Trust work, MTD for ITSA from April 2026.
+
+- Buying Into a GP Partnership, Capital Parity Explained: https://www.medicalaccounts.co.uk/blog/buying-into-gp-partnership-capital-parity-explained
+  How capital parity works, financing a buy-in, tax relief on loan interest, and the risks of underfunded capital accounts.
+
+- GP Limited Company, Tax Benefits and Drawbacks: https://www.medicalaccounts.co.uk/blog/gp-limited-company-tax-benefits-drawbacks
+  When incorporation of private work makes sense (and when it does not): corporation tax, 2026/27 dividend rates, pension-accrual loss, IR35 exposure.
+
+- NHS Pension Scheme Pays, Doctors Deadlines: https://www.medicalaccounts.co.uk/blog/nhs-pension-scheme-pays-doctors-deadlines
+  Mandatory vs voluntary scheme pays, the 31 July election deadline, benefit reduction mechanics, and the McCloud interaction.
 
 ## Sitemap
-https://www.medicalaccountantsuk.co.uk/sitemap.xml
+
+https://www.medicalaccounts.co.uk/sitemap.xml

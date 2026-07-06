@@ -105,6 +105,12 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li><strong>Incorporating without modelling the loss.</strong> Drawing locum income as dividends through a company removes it from the NHS scheme entirely.</li>
 </ul>
 
+<div style="border:1px solid #c7d5e8;border-left:4px solid #1e6fbf;border-radius:4px;padding:16px 20px;margin:28px 0;background:#f5f8fd;">
+<p style="margin:0 0 6px;font-weight:600;">Missed pensionable months are rarely recoverable.</p>
+<p style="margin:0 0 10px;">If you are not confident your form A and form B cycle is running correctly, or you want to check you are on the right contribution tier across all your practices, a free health check will flag any gaps before they become permanent losses.</p>
+<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">speak to our medical accounting team</a> about your locum pension position.</p>
+</div>
+
 <h2>Self-Assessment and MTD for Locums</h2>
 
 <p>As a self-employed locum you report your trading income on the self-employment pages (SA103) of your Self Assessment return, and your Class 4 National Insurance is now <strong>6% on profits between £12,570 and £50,270 and 2% above</strong> (2025/26). Class 2 is no longer a required weekly payment from 6 April 2024 where profits are at or above the Small Profits Threshold. Most full-time locums earn above the <strong>£50,000 Making Tax Digital for Income Tax threshold that applies from 6 April 2026</strong> (falling to £30,000 from April 2027 and £20,000 from April 2028), so will need to keep digital records and file quarterly updates. The pension contributions you pay through forms A and B are a separate stream from your tax return, but both need to be kept on top of.</p>

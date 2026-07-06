@@ -1,5 +1,5 @@
 import { buildFeedRoute } from "@accounting-network/web-shared/content/feed";
-import { getAllPosts, getCategorySlug } from "@/lib/blog";
+import { getAllPosts } from "@/lib/blog";
 import { siteConfig } from "@/config/site";
 
 export const dynamic = "force-static";
@@ -16,7 +16,10 @@ export const GET = buildFeedRoute({
       .slice(0, 50)
       .map((p) => ({
         title: p.title,
-        url: `${siteConfig.url}/blog/${getCategorySlug(p)}/${p.slug}`,
+        // FLAT blog routing: posts live at /blog/<slug>. A nested
+        // /blog/<category>/<slug> URL 404s, so the feed (consumed by AI
+        // crawlers and readers) must emit the flat, canonical path.
+        url: `${siteConfig.url}/blog/${p.slug}`,
         date: p.date,
         description: p.metaDescription || p.summary || "",
         category: p.category,
