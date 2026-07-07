@@ -113,6 +113,61 @@ async function directTimeseries(
   return res.json() as Promise<unknown[]>;
 }
 
+/**
+ * Refresh the web_rollup for TODAY, one grain at a time (chunked so no single
+ * call can hit the Supabase gateway timeout). ts is server-receive time, so past
+ * buckets never change — only the current day needs recomputing. Daily also
+ * covers yesterday so end-of-day totals finalise exactly. Each call is time-boxed
+ * and best-effort: a failure is recorded but never blocks cache population.
+ */
+async function refreshRollupToday(
+  startOfToday: string,
+  startOfYesterday: string,
+  nowISO: string,
+  errors: string[],
+): Promise<void> {
+  if (!SUPABASE_URL || !SERVICE_KEY) return;
+  const grains: Array<[string, string]> = [
+    ["1 day", startOfYesterday],
+    ["1 hour", startOfToday],
+    ["15 minutes", startOfToday],
+  ];
+  for (const [grain, from] of grains) {
+    try {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/rpc/_rollup_grain_window`, {
+        method: "POST",
+        headers: {
+          apikey: SERVICE_KEY,
+          Authorization: `Bearer ${SERVICE_KEY}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ p_grain: grain, p_from: from, p_to: nowISO }),
+        cache: "no-store",
+        signal: AbortSignal.timeout(90_000),
+      });
+      if (!res.ok) errors.push(`rollup:${grain}: ${res.status}`);
+    } catch (e: unknown) {
+      errors.push(`rollup:${grain}: ${e instanceof Error ? e.message : String(e)}`);
+    }
+  }
+  // Retention prune (cheap DELETEs; best-effort).
+  try {
+    await fetch(`${SUPABASE_URL}/rest/v1/rpc/prune_web_rollups`, {
+      method: "POST",
+      headers: {
+        apikey: SERVICE_KEY,
+        Authorization: `Bearer ${SERVICE_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({}),
+      cache: "no-store",
+      signal: AbortSignal.timeout(30_000),
+    });
+  } catch {
+    /* prune is non-critical */
+  }
+}
+
 function capture(
   key: string,
   fn: () => Promise<unknown>,
@@ -157,6 +212,9 @@ export async function GET(_req: NextRequest): Promise<NextResponse> {
   const startOfToday = new Date(
     Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()),
   ).toISOString();
+  const startOfYesterday = new Date(
+    Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() - 1),
+  ).toISOString();
   const h24 = new Date(now.getTime() - 24 * 3600_000).toISOString();
   const d7 = new Date(now.getTime() - 7 * 86400_000).toISOString();
   const d14 = new Date(now.getTime() - 14 * 86400_000).toISOString();
@@ -168,9 +226,9 @@ export async function GET(_req: NextRequest): Promise<NextResponse> {
   const cap = (key: string, fn: () => Promise<unknown>) =>
     capture(key, fn, errors, counter);
 
-  // Rollup freshness is handled by the separate /api/console/refresh-rollups cron
-  // (the heavy count(DISTINCT) aggregation). This cron only READS the rollup
-  // (fast) plus the non-timeseries views, so it stays well under budget.
+  // ── 0. Refresh today's rollup (chunked, sequential, best-effort) so the
+  //        timeseries reads below are current. Single-cron design = no concurrency.
+  await refreshRollupToday(startOfToday, startOfYesterday, nowISO, errors);
 
   // ── 1. Estate-level ───────────────────────────────────────────────────────
   await flush(

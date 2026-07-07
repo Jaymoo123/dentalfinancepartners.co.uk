@@ -134,6 +134,18 @@ $$;
 
 GRANT EXECUTE ON FUNCTION public.refresh_web_rollups(int) TO service_role;
 
+-- Retention prune (called cheaply from the cron; keeps finer grains bounded).
+CREATE OR REPLACE FUNCTION public.prune_web_rollups()
+RETURNS void
+LANGUAGE sql
+SECURITY DEFINER
+SET search_path = public
+AS $$
+  DELETE FROM public.web_rollup WHERE grain = '15 minutes' AND bucket < now() - interval '48 hours';
+  DELETE FROM public.web_rollup WHERE grain = '1 hour'     AND bucket < now() - interval '35 days';
+$$;
+GRANT EXECUTE ON FUNCTION public.prune_web_rollups() TO service_role;
+
 -- ----------------------------------------------------------------------------
 -- 4. One-time backfill — chunked (daily month-by-month, hourly/15min day-by-day)
 --    so each statement stays small and never hits the count(DISTINCT) spill that
