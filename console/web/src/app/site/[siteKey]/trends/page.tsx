@@ -1,23 +1,11 @@
-/**
- * Per-site trends page: interactive time-series charts at multiple
- * granularities. Cookie-gated, never indexed.
- *
- * Charts are the recovered Property TrendChart (recharts, hover tooltips,
- * cursor-tracking points) ported console-app-local. Data is fetched here on
- * the server and passed as serialisable arrays plus a formatType STRING into
- * the "use client" chart (the established RSC lesson). The at-a-glance
- * Sparklines stay on the overview cards; this page is the interactive view.
- */
-import { redirect, notFound } from "next/navigation";
+"use client";
+
+import { useParams } from "next/navigation";
 import Link from "next/link";
-import type { Metadata } from "next";
-import { CONSOLE_NOINDEX_META } from "@accounting-network/web-shared/console/consoleAuth";
-import {
-  getTimeseries,
-  getChannelConversion,
-  getFunnelDaily,
-} from "@accounting-network/web-shared/console/adminData";
-import { getSitesRegistry } from "@accounting-network/web-shared/console/estateData";
+import { useMemo } from "react";
+import { useConsoleAuth } from "@/hooks/useConsoleAuth";
+import { useConsoleData, cacheGet } from "@/hooks/useConsoleData";
+import { DashboardSkeleton } from "@/components/Skeleton";
 import { TrendChart } from "@/components/TrendChart";
 import { WeeklyOverlayChart } from "@/components/WeeklyOverlayChart";
 import { CategoryBarChart } from "@/components/CategoryBarChart";
@@ -26,12 +14,34 @@ import { FunnelOverTimeChart } from "@/components/FunnelOverTimeChart";
 import { CumulativeChart } from "@/components/CumulativeChart";
 import { MultiSiteTrendChart } from "@/components/MultiSiteTrendChart";
 import { buildMultiSiteSeries, buildWeeklyAvgVisitors } from "@/lib/multiSiteSeries";
-import { checkAuth } from "@/lib/checkAuth";
 
-export const dynamic = "force-dynamic";
-export const metadata: Metadata = CONSOLE_NOINDEX_META;
+type SiteEntry = {
+  site_key: string;
+  display_name: string;
+  domain: string;
+  niche: string | null;
+  active: boolean;
+};
 
-const isoOf = (d: Date) => d.toISOString();
+type TimePoint = { bucket: string; sessions: number; humans: number; events: number; leads: number };
+
+type FunnelRow = {
+  date: string;
+  sessions: number;
+  engaged_sessions: number;
+  calc_sessions: number;
+  form_cta_sessions: number;
+  form_start_sessions: number;
+  converted_sessions: number;
+};
+
+type ChannelRow = {
+  site_key: string;
+  channel: string;
+  sessions: number;
+  leads: number;
+  conversion_rate: number | null;
+};
 
 const CHANNEL_LABEL: Record<string, string> = {
   ai: "AI engines",
@@ -42,45 +52,51 @@ const CHANNEL_LABEL: Record<string, string> = {
   direct: "Direct",
 };
 
-export default async function SiteTrendsPage({
-  params,
-  searchParams,
-}: {
-  params: Promise<{ siteKey: string }>;
-  searchParams: Promise<{ country?: string }>;
-}) {
-  const authed = await checkAuth();
-  if (!authed) redirect("/login");
+export default function SiteTrendsPage() {
+  useConsoleAuth();
 
-  const { siteKey } = await params;
-  const { country: countryParam } = await searchParams;
+  const params = useParams<{ siteKey: string }>();
+  const siteKey = params.siteKey;
+  const countryParam = "GB";
 
-  const sites = await getSitesRegistry();
-  const site = sites.find((s) => s.site_key === siteKey);
-  if (!site) notFound();
+  const trendsKeys = useMemo(
+    () => [
+      "estate:sites_registry",
+      `site:${siteKey}:timeseries:15min:24h:${countryParam}`,
+      `site:${siteKey}:timeseries:1h:24h:${countryParam}`,
+      `site:${siteKey}:timeseries:1h:7d:${countryParam}`,
+      `site:${siteKey}:timeseries:1h:30d:${countryParam}`,
+      `site:${siteKey}:timeseries:30d:${countryParam}`,
+      `site:${siteKey}:timeseries:1d:alltime:${countryParam}`,
+      `site:${siteKey}:channels:all`,
+      `site:${siteKey}:funnel:${countryParam}`,
+    ],
+    [siteKey],
+  );
 
-  const country = countryParam || "GB";
-  const countryFilter = country === "ALL" ? undefined : country;
-  const now = new Date();
-  const h24 = new Date(now.getTime() - 24 * 3600_000);
-  const d7 = new Date(now.getTime() - 7 * 86400_000);
-  const d30 = new Date(now.getTime() - 30 * 86400_000);
-  const allTimeFrom = new Date("2000-01-01");
+  const { cache, loading } = useConsoleData(trendsKeys);
 
-  const [q15, h24hourly, w7hourly, w7daily, m30daily, m30hourly, channelRows, funnelRows, siteAllDaily] =
-    await Promise.all([
-      getTimeseries(siteKey, "15 minutes", isoOf(h24), isoOf(now), countryFilter),
-      getTimeseries(siteKey, "1 hour", isoOf(h24), isoOf(now), countryFilter),
-      getTimeseries(siteKey, "1 hour", isoOf(d7), isoOf(now), countryFilter),
-      getTimeseries(siteKey, "1 day", isoOf(d7), isoOf(now), countryFilter),
-      getTimeseries(siteKey, "1 day", isoOf(d30), isoOf(now), countryFilter),
-      getTimeseries(siteKey, "1 hour", isoOf(d30), isoOf(now), countryFilter),
-      getChannelConversion(siteKey),
-      getFunnelDaily(siteKey, countryFilter),
-      getTimeseries(siteKey, "1 day", isoOf(allTimeFrom), isoOf(now), countryFilter),
-    ]);
+  const allSites = cacheGet<SiteEntry[]>(cache, "estate:sites_registry", []);
+  const site = allSites.find((s) => s.site_key === siteKey);
 
-  // Leads by channel (all countries, attributable/stitched leads), summed per channel.
+  const q15         = cacheGet<TimePoint[]>(cache, `site:${siteKey}:timeseries:15min:24h:${countryParam}`, []);
+  const h24hourly   = cacheGet<TimePoint[]>(cache, `site:${siteKey}:timeseries:1h:24h:${countryParam}`, []);
+  const w7hourly    = cacheGet<TimePoint[]>(cache, `site:${siteKey}:timeseries:1h:7d:${countryParam}`, []);
+  const m30hourly   = cacheGet<TimePoint[]>(cache, `site:${siteKey}:timeseries:1h:30d:${countryParam}`, []);
+  const m30daily    = cacheGet<TimePoint[]>(cache, `site:${siteKey}:timeseries:30d:${countryParam}`, []);
+  const siteAllDaily = cacheGet<TimePoint[]>(cache, `site:${siteKey}:timeseries:1d:alltime:${countryParam}`, []);
+  const channelRows  = cacheGet<ChannelRow[]>(cache, `site:${siteKey}:channels:all`, []);
+  const funnelRows   = cacheGet<FunnelRow[]>(cache, `site:${siteKey}:funnel:${countryParam}`, []);
+
+  // Derive last-7-days daily from 30d cache (avoids an extra cache key)
+  const d7cutoff = new Date(Date.now() - 7 * 86400_000).toISOString().slice(0, 10);
+  const w7daily = m30daily.filter((p) => p.bucket.slice(0, 10) >= d7cutoff);
+
+  const siteName = site?.display_name ?? siteKey;
+
+  if (loading && !site) return <DashboardSkeleton />;
+
+  // Channel aggregation
   const channelMap = new Map<string, { leads: number; sessions: number }>();
   for (const r of channelRows) {
     const cur = channelMap.get(r.channel) ?? { leads: 0, sessions: 0 };
@@ -96,7 +112,6 @@ export default async function SiteTrendsPage({
     }))
     .sort((a, b) => b.value - a.value);
 
-  // Funnel over time (GB audience): one point per day.
   const funnelData = funnelRows.map((r) => ({
     date: r.date,
     sessions: r.sessions,
@@ -105,29 +120,26 @@ export default async function SiteTrendsPage({
     converted_sessions: r.converted_sessions,
   }));
 
-  // Single-site version of the estate comparison charts (one line, this site).
   const siteCmp = buildMultiSiteSeries(
-    [{ site_key: siteKey, display_name: site.display_name }],
+    [{ site_key: siteKey, display_name: siteName }],
     [m30daily],
     [funnelRows],
   );
-
-  // Weekly average daily visitors, all-time (this site).
-  const siteWeekly = buildWeeklyAvgVisitors(siteAllDaily, siteKey, site.display_name, "#059669");
+  const siteWeekly = buildWeeklyAvgVisitors(siteAllDaily, siteKey, siteName, "#059669");
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10">
       <div className="flex items-baseline justify-between gap-3">
         <div>
           <h1 className="text-2xl font-bold text-slate-900">Trends</h1>
-          <p className="mt-0.5 text-xs text-slate-400">{site.display_name}</p>
+          <p className="mt-0.5 text-xs text-slate-400">{siteName}</p>
         </div>
         <Link href={`/site/${siteKey}`} className="text-sm text-emerald-700 underline">
           Overview
         </Link>
       </div>
       <p className="mt-1 text-xs text-slate-500">
-        Human-only (bots excluded), UTC buckets. Country: {countryFilter ?? "all"}.
+        Human-only (bots excluded), UTC buckets. Country: {countryParam}.
       </p>
 
       <h2 className="mt-8 text-lg font-bold text-slate-900">Over time (last 30 days)</h2>
