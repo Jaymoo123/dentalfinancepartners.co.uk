@@ -98,9 +98,10 @@ async function directTimeseries(
   from: string,
   to: string,
   country: string | undefined,
+  bucket = "1 day",
 ): Promise<unknown[]> {
   if (!SUPABASE_URL || !SERVICE_KEY) throw new Error("supabase env missing");
-  const params: Record<string, string> = { p_site_key: siteKey, p_bucket: "1 day", p_from: from, p_to: to };
+  const params: Record<string, string> = { p_site_key: siteKey, p_bucket: bucket, p_from: from, p_to: to };
   if (country) params.p_country = country;
   const qs = new URLSearchParams(params).toString();
   const res = await fetch(`${SUPABASE_URL}/rest/v1/rpc/web_timeseries?${qs}`, {
@@ -155,6 +156,7 @@ export async function GET(_req: NextRequest): Promise<NextResponse> {
   const startOfToday = new Date(
     Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()),
   ).toISOString();
+  const h24 = new Date(now.getTime() - 24 * 3600_000).toISOString();
   const d7 = new Date(now.getTime() - 7 * 86400_000).toISOString();
   const d14 = new Date(now.getTime() - 14 * 86400_000).toISOString();
   const d30 = new Date(now.getTime() - 30 * 86400_000).toISOString();
@@ -218,6 +220,14 @@ export async function GET(_req: NextRequest): Promise<NextResponse> {
           cap(ck("kpis:30d"),                () => getSiteKpis(sk, d30,          nowISO, c)),
           cap(ck("kpis:all"),                () => getSiteKpis(sk, allTime,      nowISO, c)),
           cap(ck("timeseries:30d"),          () => directTimeseries(sk, d30, nowISO, c)),
+          // Trends-page granularities — GB only (trends page default)
+          ...(country === "GB" ? [
+            cap(ck("timeseries:15min:24h"), () => directTimeseries(sk, h24, nowISO, c, "15 minutes")),
+            cap(ck("timeseries:1h:24h"),    () => directTimeseries(sk, h24, nowISO, c, "1 hour")),
+            cap(ck("timeseries:1h:7d"),     () => directTimeseries(sk, d7,  nowISO, c, "1 hour")),
+            cap(ck("timeseries:1h:30d"),    () => directTimeseries(sk, d30, nowISO, c, "1 hour")),
+            cap(ck("timeseries:1d:alltime"),() => directTimeseries(sk, allTime, nowISO, c)),
+          ] : []),
           cap(ck("funnel"),                  () => getFunnelDaily(sk, c)),
           cap(ck("visitors"),                () => getTopVisitors(sk, 500, c)),
           cap(ck("channels"),                () => getChannelConversion(sk, c)),

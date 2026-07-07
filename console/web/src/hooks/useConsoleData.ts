@@ -5,6 +5,9 @@ import { useEffect, useRef, useState } from "react";
 export type CacheEntry = { data: unknown; refreshed_at: string };
 export type CacheMap = Record<string, CacheEntry>;
 
+// Module-level cache — survives route changes so navigating back is instant
+const moduleCache: CacheMap = {};
+
 export type ConsoleDataResult = {
   cache: CacheMap;
   /** ISO timestamp from the most recently refreshed key (null until first load) */
@@ -12,34 +15,30 @@ export type ConsoleDataResult = {
   loading: boolean;
 };
 
-/**
- * Fetches a set of console_cache keys from /api/console/data and keeps them
- * fresh with an auto-refresh interval.
- *
- * - On mount: immediate fetch
- * - When keys change (new keys added): immediate re-fetch for the new keys
- * - On interval: re-fetch all keys
- * - On 401: redirects to /login (session expired mid-session)
- *
- * @param keys      Cache key slugs (e.g. "estate:kpis:7d", "site:property:visitors:GB")
- * @param intervalMs Auto-refresh interval in ms (default 30 000)
- */
 export function useConsoleData(
   keys: string[],
   intervalMs = 30_000,
 ): ConsoleDataResult {
-  const [cache, setCache] = useState<CacheMap>({});
-  const [refreshedAt, setRefreshedAt] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
-
-  // Serialise key list so we can detect changes in the useEffect dependency
-  const keysStr = keys.join("|");
-
-  // Stable ref so the interval closure always uses the current key list
-  const keysRef = useRef(keys);
-  useEffect(() => {
-    keysRef.current = keys;
+  // Seed from module cache immediately — returning to a page renders data instantly
+  const [cache, setCache] = useState<CacheMap>(() => {
+    const pre: CacheMap = {};
+    for (const k of keys) if (moduleCache[k]) pre[k] = moduleCache[k];
+    return pre;
   });
+  const [refreshedAt, setRefreshedAt] = useState<string | null>(() => {
+    let latest: string | null = null;
+    for (const k of keys) {
+      const ts = moduleCache[k]?.refreshed_at;
+      if (ts && (!latest || ts > latest)) latest = ts;
+    }
+    return latest;
+  });
+  // loading = false if every key is already in module cache
+  const [loading, setLoading] = useState(() => keys.some((k) => !moduleCache[k]));
+
+  const keysStr = keys.join("|");
+  const keysRef = useRef(keys);
+  useEffect(() => { keysRef.current = keys; });
 
   useEffect(() => {
     if (keys.length === 0) {
@@ -75,6 +74,7 @@ export function useConsoleData(
         for (const [k, entry] of Object.entries(json.results)) {
           if (!entry) continue;
           next[k] = entry;
+          moduleCache[k] = entry; // write-through to module cache
           if (!latestTs || entry.refreshed_at > latestTs) {
             latestTs = entry.refreshed_at;
           }
@@ -96,7 +96,7 @@ export function useConsoleData(
       clearInterval(timer);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [keysStr, intervalMs]); // re-fetches immediately when key list changes
+  }, [keysStr, intervalMs]);
 
   return { cache, refreshedAt, loading };
 }
