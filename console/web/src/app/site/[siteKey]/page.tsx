@@ -1,77 +1,101 @@
-"use client";
-
-import { useState, useMemo } from "react";
-import { useParams } from "next/navigation";
+/**
+ * Per-site dashboard (full panel view).
+ *
+ * Cookie-gated, never indexed. Equivalent to the per-site /admin/analytics
+ * consoles, parameterised by siteKey from the URL.
+ *
+ * Capability-aware: panels for systems not operated on a site render the
+ * established NotOperatedPanel state (no empty boxes, no misleading zeros).
+ *
+ * RSC BOUNDARY: DashboardTabs, VisitorsTable, CountrySelect are "use client"
+ * shared components. They receive only serialisable props (ReactNode /
+ * VisitorRow[] / string[]). No functions cross the server/client boundary.
+ */
+import { redirect, notFound } from "next/navigation";
 import Link from "next/link";
-import { useConsoleAuth } from "@/hooks/useConsoleAuth";
-import { useConsoleData, cacheGet } from "@/hooks/useConsoleData";
-import { DashboardSkeleton } from "@/components/Skeleton";
-import { StalenessBar } from "@/components/StalenessBar";
+import type { Metadata } from "next";
+import { CONSOLE_NOINDEX_META } from "@accounting-network/web-shared/console/consoleAuth";
 import { SnapshotCard } from "@accounting-network/web-shared/console/components/SnapshotCard";
 import DashboardTabs from "@accounting-network/web-shared/console/components/DashboardTabs";
 import KpiWindowCarousel, {
   type KpiPage,
 } from "@accounting-network/web-shared/console/components/KpiWindowCarousel";
+import CountrySelect from "@accounting-network/web-shared/console/components/CountrySelect";
 import VisitorsTable, {
   type VisitorRow,
 } from "@accounting-network/web-shared/console/components/VisitorsTable";
+import {
+  getFunnelDaily,
+  getCalculatorConversionByPlacement,
+  getTopVisitors,
+  getLeadsForSite,
+  getCountryOptions,
+  getCtaPerformance,
+  getFormFieldDropoff,
+  getSectionActions,
+  getUxFriction,
+  getClientErrors,
+  getEventDaily,
+  getChannelConversion,
+  getVisitsToConversion,
+  getExperimentResults,
+  getExperimentArms,
+  getExperimentFunnel,
+  getResultGateLeads,
+  type FormLeadCount,
+  getPersonalizationResults,
+  getNurtureFunnel,
+  getLeadIntentMix,
+  getSiteKpis,
+  getContactabilityFunnel,
+  getContactabilityLeads,
+  getNurtureHealth,
+  getNurtureStepHealth,
+  getStuckLeads,
+  getFailedSends,
+  getNurtureControl,
+  getUnreachableLeads,
+  getBookedLeads,
+  getEnrolledLeadFacts,
+  computeContactabilityWindows,
+  type SiteKpis,
+  type ContactabilityFunnel,
+  type ContactabilityLeadRow,
+  type NurtureHealth,
+  type NurtureStepHealth,
+  type StuckLead,
+  type FailedSend,
+  type NurtureControl,
+  type UnreachableLead,
+  type BookedLead,
+  type EnrolledLeadFact,
+  type RateWindow,
+  type VisitorJourney,
+  type CalculatorConversionPlacement,
+  type ClientError,
+  type CtaPerformance,
+  type SectionAction,
+  type ChannelConversion,
+  type VisitsBucket,
+  type FormFieldDropoff,
+  type ExperimentResult,
+  type ExperimentArms,
+  type ExperimentFunnelArms,
+} from "@accounting-network/web-shared/console/adminData";
 import { ExperimentCard } from "@accounting-network/web-shared/console/components/ExperimentCards";
 import { getExperimentMeta, siteRegistries } from "@accounting-network/web-shared/experiments/registries";
+import {
+  getSitesRegistry,
+} from "@accounting-network/web-shared/console/estateData";
+import { checkAuth } from "@/lib/checkAuth";
 import { getSiteCapabilities } from "@/config/capabilities";
 import SiteSwitcher from "@/components/SiteSwitcher";
 import ConversionFunnel from "@/components/ConversionFunnel";
 
-// ── Inline types (avoid importing server-only adminData) ──────────────────────
+export const dynamic = "force-dynamic";
+export const metadata: Metadata = CONSOLE_NOINDEX_META;
 
-type SiteEntry = { site_key: string; display_name: string; domain: string; niche: string | null; active: boolean };
-type SiteKpis = { sessions: number; humans: number; new_humans: number; converted_humans: number; leads_all: number; leads_uk: number };
-type FunnelDay = { date: string; sessions: number; engaged_sessions: number; calc_sessions: number; form_cta_sessions: number; form_start_sessions: number; converted_sessions: number };
-type VisitorJourney = { visitor_id: string; last_seen: string; total_sessions: number; page_views: number; total_engaged_ms: number; max_scroll_pct: number | null; cta_clicks: number | null; device_type: string | null; country: string | null; referrer_host: string | null; utm_source: string | null; converted: boolean | null };
-type CalculatorConversionPlacement = { calculator_slug: string; placement: string; tool_kind: string; viewed: number; computed: number; lead_sessions: number; compute_rate: number | null; computed_to_lead_rate: number | null };
-type ClientError = { message: string; kind: string; count: number; sessions: number; last_seen: string | null };
-type CtaPerformance = { cta_id: string; goal: string; clicks: number; lead_sessions: number; click_to_form_rate: number | null };
-type SectionAction = { page_path: string; section_id: string; section_text: string | null; read_sessions: number; acted_sessions: number; converted_sessions: number };
-type ChannelConversion = { channel: string; sessions: number; leads: number; conversion_rate: number | null };
-type VisitsBucket = { visits_bucket: number; visitors: number; converted_visitors: number };
-type FormFieldDropoff = { form_id: string; field: string; focuses: number; abandons: number; abandon_rate: number | null };
-type UxFrictionRow = { rage_clicks: number; dead_clicks: number };
-type SiteLead = { id: string; visitor_id: string | null; full_name: string | null; email: string | null; role: string | null };
-type ErrorDailyRow = { bucket: string; count: number };
-type CountryOption = string | { value: string; label?: string };
-type ExperimentResult = { exp: string; sessions: number; cta_clicks: number; form_starts: number; conversion_rate: number | null };
-type FormLeadCount = { lead_sessions: number; form_start_sessions: number };
-type NurtureFunnelRow = { sequence: string; step: number; sent: number; opened: number; clicked: number };
-type PersonalisationResult = { rule_id: string; surface: string; shown: number; clicked: number; click_rate: number | null };
-type LeadIntentRow = { intent_category: string; leads: number; avg_quality: number | null; high_value: number };
-type ContactabilityFunnel = { submitted: number; verified: number; messaged: number; responded: number; contactable: number; forwarded: number; unreachable: number };
-type ContactabilityLeadRow = { id: string; full_name: string | null; created_at: string; verify_pass: boolean | null; phone_status: string | null; email_status: string | null; nurture_status: string | null; nurture_step: number | null; responded: boolean | null; status: string | null };
-type NurtureHealth = { sends_24h: number; sent_24h: number; replies_24h: number; booked_24h: number; failed_24h: number; complaints_24h: number; complaints_7d: number; bounces_7d: number; optouts_7d: number; active_leads: number; stuck_leads: number; opened24h: number; clicked24h: number };
-type NurtureStepHealth = { step: number; sent: number; failed: number; skipped: number };
-type StuckLead = { lead_id: string; full_name: string | null; created_at: string; overdue_hours: number; step: number | null };
-type FailedSend = { id: string; full_name: string | null; channel: string | null; step: number | null; reason: string | null; ts: string };
-type NurtureControl = { paused: boolean; paused_reason: string | null; paused_at: string | null; paused_by: string | null; last_alert_at: string | null; last_alert_key: string | null; lastCronRunAt: string | null; lastDigestRunAt: string | null };
-type UnreachableLead = { id: string; full_name: string | null; created_at: string };
-type BookedLead = { id: string; full_name: string | null; ts: string };
-type EnrolledLeadFact = { created_at: string; contactable: boolean; first_contact_at: string | null };
-type RateWindow = { enrolled: number; contactable: number; rate: number | null };
-
-// ── Defaults ──────────────────────────────────────────────────────────────────
-
-const DEFAULT_KPIS: SiteKpis = { sessions: 0, humans: 0, new_humans: 0, converted_humans: 0, leads_all: 0, leads_uk: 0 };
-const DEFAULT_NURTURE_CONTROL: NurtureControl = { paused: false, paused_reason: null, paused_at: null, paused_by: null, last_alert_at: null, last_alert_key: null, lastCronRunAt: null, lastDigestRunAt: null };
-
-// ── Pure helpers ──────────────────────────────────────────────────────────────
-
-function computeContactabilityWindows(facts: EnrolledLeadFact[], nowMs: number): { d7: RateWindow; d28: RateWindow; all: RateWindow } {
-  const windowRate = (daysAgo: number | null) => {
-    const cutoff = daysAgo == null ? 0 : nowMs - daysAgo * 86400_000;
-    const subset = facts.filter((f) => new Date(f.created_at).getTime() >= cutoff);
-    const enrolled = subset.length;
-    const contactable = subset.filter((f) => f.contactable).length;
-    return { enrolled, contactable, rate: enrolled > 0 ? contactable / enrolled : null };
-  };
-  return { d7: windowRate(7), d28: windowRate(28), all: windowRate(null) };
-}
+// ── Helpers ────────────────────────────────────────────────────────────────
 
 function pct(n: number | null | undefined): string {
   return n == null ? "-" : `${(n * 100).toFixed(1)}%`;
@@ -98,6 +122,23 @@ function tally(rows: VisitorJourney[], key: keyof VisitorJourney): Array<[string
   return Array.from(m.entries()).sort((a, b) => b[1] - a[1]).slice(0, 8);
 }
 
+function densify<T>(rows: T[], days: number, valueOf: (r: T) => number, dateKey: keyof T): number[] {
+  const byDate = new Map<string, number>();
+  for (const r of rows) {
+    const raw = r[dateKey];
+    if (raw == null) continue;
+    const day = String(raw).slice(0, 10);
+    byDate.set(day, (byDate.get(day) || 0) + valueOf(r));
+  }
+  const out: number[] = [];
+  const today = Date.now();
+  for (let i = days - 1; i >= 0; i--) {
+    const day = new Date(today - i * 86400000).toISOString().slice(0, 10);
+    out.push(byDate.get(day) || 0);
+  }
+  return out;
+}
+
 function deltaVsPrior(series: number[]): number | null {
   const n = series.length;
   if (n < 4) return null;
@@ -108,7 +149,7 @@ function deltaVsPrior(series: number[]): number | null {
   return (recent - prior) / prior;
 }
 
-// ── Panel sub-components (pure, unchanged from server version) ────────────────
+// ── Panel components ───────────────────────────────────────────────────────
 
 function Kpi({ label, value, sub }: { label: string; value: string; sub?: string }) {
   return (
@@ -189,7 +230,16 @@ function CalcStepBar({ rate, kind }: { rate: number | null; kind: "compute" | "l
   );
 }
 
-function KpiGrid({ kpi, engagedMs, windowLabel }: { kpi: SiteKpis; engagedMs: number; windowLabel: string }) {
+/** One window's worth of the 6 Overview KPIs, all from a single estate_kpis row. */
+function KpiGrid({
+  kpi,
+  engagedMs,
+  windowLabel,
+}: {
+  kpi: SiteKpis;
+  engagedMs: number;
+  windowLabel: string;
+}) {
   const ukSessConv = kpi.sessions > 0 ? kpi.leads_uk / kpi.sessions : null;
   const allSessConv = kpi.sessions > 0 ? kpi.leads_all / kpi.sessions : null;
   const visitorConv = kpi.humans > 0 ? kpi.converted_humans / kpi.humans : null;
@@ -215,32 +265,32 @@ function CalculatorsPanel({ placement }: { placement: CalculatorConversionPlacem
       ) : (
         <Detail summary={`Per-tool detail by placement (${rows.length})`}>
           <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
-                <tr>
-                  <th className="px-3 py-2">Tool</th>
-                  <th className="px-3 py-2">Where</th>
-                  <th className="px-3 py-2 text-right">Viewed</th>
-                  <th className="px-3 py-2 text-right">Computed</th>
-                  <th className="px-3 py-2 text-right">Leads</th>
-                  <th className="px-3 py-2">View-to-Compute</th>
-                  <th className="hidden px-3 py-2 lg:table-cell">Compute-to-Lead</th>
+          <table className="w-full text-sm">
+            <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+              <tr>
+                <th className="px-3 py-2">Tool</th>
+                <th className="px-3 py-2">Where</th>
+                <th className="px-3 py-2 text-right">Viewed</th>
+                <th className="px-3 py-2 text-right">Computed</th>
+                <th className="px-3 py-2 text-right">Leads</th>
+                <th className="px-3 py-2">View-to-Compute</th>
+                <th className="hidden px-3 py-2 lg:table-cell">Compute-to-Lead</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((c, i) => (
+                <tr key={`${c.calculator_slug}-${c.placement}-${c.tool_kind}-${i}`} className="border-t border-slate-100">
+                  <td className="px-3 py-2 font-medium text-slate-800">{c.calculator_slug}</td>
+                  <td className="px-3 py-2 text-slate-600">{PLACEMENT_LABEL[c.placement] ?? c.placement}</td>
+                  <td className="px-3 py-2 text-right font-mono">{c.viewed}</td>
+                  <td className="px-3 py-2 text-right font-mono">{c.computed}</td>
+                  <td className="px-3 py-2 text-right font-mono">{c.lead_sessions}</td>
+                  <td className="w-28 px-3 py-2"><CalcStepBar rate={c.compute_rate} kind="compute" /></td>
+                  <td className="hidden w-28 px-3 py-2 lg:table-cell"><CalcStepBar rate={c.computed_to_lead_rate} kind="lead" /></td>
                 </tr>
-              </thead>
-              <tbody>
-                {rows.map((c, i) => (
-                  <tr key={`${c.calculator_slug}-${c.placement}-${c.tool_kind}-${i}`} className="border-t border-slate-100">
-                    <td className="px-3 py-2 font-medium text-slate-800">{c.calculator_slug}</td>
-                    <td className="px-3 py-2 text-slate-600">{PLACEMENT_LABEL[c.placement] ?? c.placement}</td>
-                    <td className="px-3 py-2 text-right font-mono">{c.viewed}</td>
-                    <td className="px-3 py-2 text-right font-mono">{c.computed}</td>
-                    <td className="px-3 py-2 text-right font-mono">{c.lead_sessions}</td>
-                    <td className="w-28 px-3 py-2"><CalcStepBar rate={c.compute_rate} kind="compute" /></td>
-                    <td className="hidden w-28 px-3 py-2 lg:table-cell"><CalcStepBar rate={c.computed_to_lead_rate} kind="lead" /></td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+              ))}
+            </tbody>
+          </table>
           </div>
         </Detail>
       )}
@@ -484,6 +534,8 @@ function VisitsConvPanel({ rows }: { rows: VisitsBucket[] }) {
   );
 }
 
+// ── Lead contactability panel (Property only) ─────────────────────────────
+
 const NURTURE_LABEL: Record<string, string> = {
   active: "Active",
   awaiting_response: "Awaiting reply",
@@ -494,8 +546,16 @@ const NURTURE_LABEL: Record<string, string> = {
 };
 
 function LeadContactabilityPanel({
-  funnel, leads, nurtureHealth, nurtureStepHealth, stuckLeads, failedSends,
-  nurtureControl, unreachableLeads, bookedLeads, windows,
+  funnel,
+  leads,
+  nurtureHealth,
+  nurtureStepHealth,
+  stuckLeads,
+  failedSends,
+  nurtureControl,
+  unreachableLeads,
+  bookedLeads,
+  windows,
 }: {
   funnel: ContactabilityFunnel | null;
   leads: ContactabilityLeadRow[];
@@ -508,10 +568,21 @@ function LeadContactabilityPanel({
   bookedLeads: BookedLead[];
   windows: { d7: RateWindow; d28: RateWindow; all: RateWindow };
 }) {
-  const contactableRate = funnel && funnel.submitted > 0 ? funnel.contactable / funnel.submitted : null;
-  const sendSuccessRate = nurtureHealth && nurtureHealth.sends_24h > 0 ? nurtureHealth.sent_24h / nurtureHealth.sends_24h : null;
-  const cronMins = nurtureControl.lastCronRunAt ? Math.round((Date.now() - new Date(nurtureControl.lastCronRunAt).getTime()) / 60000) : null;
-  const digestMins = nurtureControl.lastDigestRunAt ? Math.round((Date.now() - new Date(nurtureControl.lastDigestRunAt).getTime()) / 60000) : null;
+  const contactableRate =
+    funnel && funnel.submitted > 0 ? funnel.contactable / funnel.submitted : null;
+
+  const sendSuccessRate =
+    nurtureHealth && nurtureHealth.sends_24h > 0
+      ? nurtureHealth.sent_24h / nurtureHealth.sends_24h
+      : null;
+
+  // Cron-liveness: age in minutes from lastCronRunAt / lastDigestRunAt
+  const cronMins = nurtureControl.lastCronRunAt
+    ? Math.round((Date.now() - new Date(nurtureControl.lastCronRunAt).getTime()) / 60000)
+    : null;
+  const digestMins = nurtureControl.lastDigestRunAt
+    ? Math.round((Date.now() - new Date(nurtureControl.lastDigestRunAt).getTime()) / 60000)
+    : null;
 
   return (
     <div>
@@ -520,6 +591,7 @@ function LeadContactabilityPanel({
         Verify-then-nurture pipeline: only leads that are verified live and demonstrably responsive are forwarded.
       </p>
 
+      {/* System health strip */}
       <div className="mt-4 rounded-xl border border-slate-200 bg-white p-4">
         <div className="flex flex-wrap items-center gap-3">
           <h3 className="text-sm font-bold text-slate-700">System health</h3>
@@ -531,14 +603,20 @@ function LeadContactabilityPanel({
               {nurtureControl.paused_by ? `, by ${nurtureControl.paused_by}` : ""}
             </div>
           ) : (
-            <span className="rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">Active</span>
+            <span className="rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">
+              Active
+            </span>
           )}
           <form method="POST" action="/api/nurture-control">
             <input type="hidden" name="paused" value={String(!nurtureControl.paused)} />
             <input type="hidden" name="by" value="console-operator" />
             <button
               type="submit"
-              className={`rounded px-3 py-1 text-xs font-semibold ${nurtureControl.paused ? "bg-emerald-600 text-white hover:bg-emerald-700" : "bg-rose-50 text-rose-700 ring-1 ring-rose-200 hover:bg-rose-100"}`}
+              className={`rounded px-3 py-1 text-xs font-semibold ${
+                nurtureControl.paused
+                  ? "bg-emerald-600 text-white hover:bg-emerald-700"
+                  : "bg-rose-50 text-rose-700 ring-1 ring-rose-200 hover:bg-rose-100"
+              }`}
             >
               {nurtureControl.paused ? "Resume sends" : "Pause sends"}
             </button>
@@ -547,69 +625,234 @@ function LeadContactabilityPanel({
         {(nurtureControl.last_alert_at || nurtureControl.last_alert_key) && (
           <p className="mt-2 text-xs text-slate-500">
             Last alert:{" "}
-            {nurtureControl.last_alert_key && <span className="font-medium text-slate-700">{nurtureControl.last_alert_key}</span>}
-            {nurtureControl.last_alert_at && <span className="ml-1 text-slate-400">{ago(nurtureControl.last_alert_at)}</span>}
+            {nurtureControl.last_alert_key && (
+              <span className="font-medium text-slate-700">{nurtureControl.last_alert_key}</span>
+            )}
+            {nurtureControl.last_alert_at && (
+              <span className="ml-1 text-slate-400">{ago(nurtureControl.last_alert_at)}</span>
+            )}
           </p>
         )}
+
+        {/* Cron-liveness badges */}
         <div className="mt-3 flex flex-wrap gap-2">
-          <span className={`rounded px-2 py-0.5 text-xs font-semibold ${cronMins == null || cronMins > 120 ? "bg-rose-100 text-rose-700" : cronMins > 90 ? "bg-amber-100 text-amber-700" : "bg-emerald-100 text-emerald-700"}`}>
-            {cronMins == null ? "Hourly cron: STALE" : `Hourly cron: ran ${cronMins < 60 ? `${cronMins}m` : `${Math.floor(cronMins / 60)}h ${cronMins % 60}m`} ago`}
+          <span
+            className={`rounded px-2 py-0.5 text-xs font-semibold ${
+              cronMins == null || cronMins > 120
+                ? "bg-rose-100 text-rose-700"
+                : cronMins > 90
+                ? "bg-amber-100 text-amber-700"
+                : "bg-emerald-100 text-emerald-700"
+            }`}
+          >
+            {cronMins == null
+              ? "Hourly cron: STALE"
+              : `Hourly cron: ran ${cronMins < 60 ? `${cronMins}m` : `${Math.floor(cronMins / 60)}h ${cronMins % 60}m`} ago`}
           </span>
-          <span className={`rounded px-2 py-0.5 text-xs font-semibold ${digestMins == null || digestMins > 1500 ? "bg-rose-100 text-rose-700" : "bg-emerald-100 text-emerald-700"}`}>
-            {digestMins == null ? "Daily digest: STALE" : `Daily digest: ran ${digestMins < 60 ? `${digestMins}m` : digestMins < 1440 ? `${Math.floor(digestMins / 60)}h` : `${Math.floor(digestMins / 1440)}d`} ago`}
+          <span
+            className={`rounded px-2 py-0.5 text-xs font-semibold ${
+              digestMins == null || digestMins > 1500
+                ? "bg-rose-100 text-rose-700"
+                : "bg-emerald-100 text-emerald-700"
+            }`}
+          >
+            {digestMins == null
+              ? "Daily digest: STALE"
+              : `Daily digest: ran ${digestMins < 60 ? `${digestMins}m` : digestMins < 1440 ? `${Math.floor(digestMins / 60)}h` : `${Math.floor(digestMins / 1440)}d`} ago`}
           </span>
         </div>
+
         {nurtureHealth ? (
           <>
-            <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-5 lg:grid-cols-10">
-              <SnapshotCard label="Send success 24h" value={sendSuccessRate != null ? pct(sendSuccessRate) : "-"} sub={`${nurtureHealth.sent_24h} of ${nurtureHealth.sends_24h}`} accent={sendSuccessRate != null && sendSuccessRate < 0.9 ? "rose" : "emerald"} compact />
-              <SnapshotCard label="Replies 24h" value={String(nurtureHealth.replies_24h)} accent={nurtureHealth.replies_24h > 0 ? "emerald" : "sky"} compact />
-              <SnapshotCard label="Booked 24h" value={String(nurtureHealth.booked_24h)} accent={nurtureHealth.booked_24h > 0 ? "emerald" : "sky"} compact />
-              <SnapshotCard label="Failed 24h" value={String(nurtureHealth.failed_24h)} accent={nurtureHealth.failed_24h > 0 ? "rose" : "sky"} compact />
-              <SnapshotCard label="Complaints 24h" value={String(nurtureHealth.complaints_24h)} accent={nurtureHealth.complaints_24h > 0 ? "rose" : "sky"} compact />
-              <SnapshotCard label="Complaints 7d" value={String(nurtureHealth.complaints_7d)} accent={nurtureHealth.complaints_7d > 0 ? "rose" : "sky"} compact />
-              <SnapshotCard label="Bounces 7d" value={String(nurtureHealth.bounces_7d)} accent={nurtureHealth.bounces_7d > 0 ? "rose" : "sky"} compact />
-              <SnapshotCard label="Opt-outs 7d" value={String(nurtureHealth.optouts_7d)} accent={nurtureHealth.optouts_7d > 0 ? "rose" : "sky"} compact />
-              <SnapshotCard label="Active leads" value={String(nurtureHealth.active_leads)} accent="sky" compact />
-              <SnapshotCard label="Stuck leads" value={String(nurtureHealth.stuck_leads)} accent={nurtureHealth.stuck_leads > 0 ? "rose" : "sky"} compact />
-              <SnapshotCard label="Opened 24h" value={String(nurtureHealth.opened24h)} accent={nurtureHealth.opened24h > 0 ? "emerald" : "sky"} compact />
-              <SnapshotCard label="Clicked 24h" value={String(nurtureHealth.clicked24h)} accent={nurtureHealth.clicked24h > 0 ? "emerald" : "sky"} compact />
-            </div>
-            <p className="mt-1 text-xs text-slate-400">Opened/Clicked figures populate once the Resend engagement webhook is configured.</p>
+          <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-5 lg:grid-cols-10">
+            <SnapshotCard
+              label="Send success 24h"
+              value={sendSuccessRate != null ? pct(sendSuccessRate) : "-"}
+              sub={`${nurtureHealth.sent_24h} of ${nurtureHealth.sends_24h}`}
+              accent={sendSuccessRate != null && sendSuccessRate < 0.9 ? "rose" : "emerald"}
+              compact
+            />
+            <SnapshotCard
+              label="Replies 24h"
+              value={String(nurtureHealth.replies_24h)}
+              accent={nurtureHealth.replies_24h > 0 ? "emerald" : "sky"}
+              compact
+            />
+            <SnapshotCard
+              label="Booked 24h"
+              value={String(nurtureHealth.booked_24h)}
+              accent={nurtureHealth.booked_24h > 0 ? "emerald" : "sky"}
+              compact
+            />
+            <SnapshotCard
+              label="Failed 24h"
+              value={String(nurtureHealth.failed_24h)}
+              accent={nurtureHealth.failed_24h > 0 ? "rose" : "sky"}
+              compact
+            />
+            <SnapshotCard
+              label="Complaints 24h"
+              value={String(nurtureHealth.complaints_24h)}
+              accent={nurtureHealth.complaints_24h > 0 ? "rose" : "sky"}
+              compact
+            />
+            <SnapshotCard
+              label="Complaints 7d"
+              value={String(nurtureHealth.complaints_7d)}
+              accent={nurtureHealth.complaints_7d > 0 ? "rose" : "sky"}
+              compact
+            />
+            <SnapshotCard
+              label="Bounces 7d"
+              value={String(nurtureHealth.bounces_7d)}
+              accent={nurtureHealth.bounces_7d > 0 ? "rose" : "sky"}
+              compact
+            />
+            <SnapshotCard
+              label="Opt-outs 7d"
+              value={String(nurtureHealth.optouts_7d)}
+              accent={nurtureHealth.optouts_7d > 0 ? "rose" : "sky"}
+              compact
+            />
+            <SnapshotCard
+              label="Active leads"
+              value={String(nurtureHealth.active_leads)}
+              accent="sky"
+              compact
+            />
+            <SnapshotCard
+              label="Stuck leads"
+              value={String(nurtureHealth.stuck_leads)}
+              accent={nurtureHealth.stuck_leads > 0 ? "rose" : "sky"}
+              compact
+            />
+            <SnapshotCard
+              label="Opened 24h"
+              value={String(nurtureHealth.opened24h)}
+              accent={nurtureHealth.opened24h > 0 ? "emerald" : "sky"}
+              compact
+            />
+            <SnapshotCard
+              label="Clicked 24h"
+              value={String(nurtureHealth.clicked24h)}
+              accent={nurtureHealth.clicked24h > 0 ? "emerald" : "sky"}
+              compact
+            />
+          </div>
+          <p className="mt-1 text-xs text-slate-400">
+            Opened/Clicked figures populate once the Resend engagement webhook is configured.
+          </p>
           </>
         ) : (
-          <p className="mt-2 text-xs text-slate-400">Health metrics not yet available (migration pending).</p>
+          <p className="mt-2 text-xs text-slate-400">
+            Health metrics not yet available (migration pending).
+          </p>
         )}
       </div>
 
       {funnel ? (
         <>
+          {/* Headline + secondary stats */}
           <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
-            <SnapshotCard label="Contactable rate" value={contactableRate != null ? pct(contactableRate) : "-"} sub={funnel.submitted > 0 ? `${funnel.contactable} of ${funnel.submitted} submitted` : "No leads yet"} accent="emerald" />
-            <SnapshotCard label="Forwarded" value={String(funnel.forwarded)} sub={funnel.submitted > 0 ? pct(funnel.forwarded / funnel.submitted) : "-"} accent="emerald" compact />
-            <SnapshotCard label="Unreachable" value={String(funnel.unreachable)} sub={funnel.submitted > 0 ? pct(funnel.unreachable / funnel.submitted) : "-"} accent="rose" compact />
+            <SnapshotCard
+              label="Contactable rate"
+              value={contactableRate != null ? pct(contactableRate) : "-"}
+              sub={
+                funnel.submitted > 0
+                  ? `${funnel.contactable} of ${funnel.submitted} submitted`
+                  : "No leads yet"
+              }
+              accent="emerald"
+            />
+            <SnapshotCard
+              label="Forwarded"
+              value={String(funnel.forwarded)}
+              sub={funnel.submitted > 0 ? pct(funnel.forwarded / funnel.submitted) : "-"}
+              accent="emerald"
+              compact
+            />
+            <SnapshotCard
+              label="Unreachable"
+              value={String(funnel.unreachable)}
+              sub={funnel.submitted > 0 ? pct(funnel.unreachable / funnel.submitted) : "-"}
+              accent="rose"
+              compact
+            />
           </div>
+
+          {/* Funnel step strip: submitted to contactable */}
           <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-5">
-            <SnapshotCard label="Submitted" value={String(funnel.submitted)} accent="sky" compact />
-            <SnapshotCard label="Verified" value={String(funnel.verified)} sub={funnel.submitted > 0 ? pct(funnel.verified / funnel.submitted) : "-"} accent="sky" compact />
-            <SnapshotCard label="Messaged" value={String(funnel.messaged)} sub={funnel.submitted > 0 ? pct(funnel.messaged / funnel.submitted) : "-"} accent="sky" compact />
-            <SnapshotCard label="Responded" value={String(funnel.responded)} sub={funnel.submitted > 0 ? pct(funnel.responded / funnel.submitted) : "-"} accent="emerald" compact />
-            <SnapshotCard label="Contactable" value={String(funnel.contactable)} sub={funnel.submitted > 0 ? pct(funnel.contactable / funnel.submitted) : "-"} accent="emerald" compact />
+            <SnapshotCard
+              label="Submitted"
+              value={String(funnel.submitted)}
+              accent="sky"
+              compact
+            />
+            <SnapshotCard
+              label="Verified"
+              value={String(funnel.verified)}
+              sub={funnel.submitted > 0 ? pct(funnel.verified / funnel.submitted) : "-"}
+              accent="sky"
+              compact
+            />
+            <SnapshotCard
+              label="Messaged"
+              value={String(funnel.messaged)}
+              sub={funnel.submitted > 0 ? pct(funnel.messaged / funnel.submitted) : "-"}
+              accent="sky"
+              compact
+            />
+            <SnapshotCard
+              label="Responded"
+              value={String(funnel.responded)}
+              sub={funnel.submitted > 0 ? pct(funnel.responded / funnel.submitted) : "-"}
+              accent="emerald"
+              compact
+            />
+            <SnapshotCard
+              label="Contactable"
+              value={String(funnel.contactable)}
+              sub={funnel.submitted > 0 ? pct(funnel.contactable / funnel.submitted) : "-"}
+              accent="emerald"
+              compact
+            />
           </div>
         </>
       ) : (
-        <p className="mt-3 text-sm text-slate-400">Contactability pipeline not yet active (migration pending or no data).</p>
+        <p className="mt-3 text-sm text-slate-400">
+          Contactability pipeline not yet active (migration pending or no data).
+        </p>
       )}
 
+      {/* Contactability rate by window */}
       <div className="mt-4 rounded-xl border border-slate-200 bg-white p-4">
         <h3 className="text-sm font-bold text-slate-700">Contactability rate by window</h3>
         <div className="mt-3 grid grid-cols-3 gap-3">
-          <SnapshotCard label="7d" value={pct(windows.d7.rate)} sub={`n=${windows.d7.enrolled}`} accent="sky" compact />
-          <SnapshotCard label="28d" value={pct(windows.d28.rate)} sub={`n=${windows.d28.enrolled}`} accent="sky" compact />
-          <SnapshotCard label="All time" value={pct(windows.all.rate)} sub={`n=${windows.all.enrolled}`} accent="sky" compact />
+          <SnapshotCard
+            label="7d"
+            value={pct(windows.d7.rate)}
+            sub={`n=${windows.d7.enrolled}`}
+            accent="sky"
+            compact
+          />
+          <SnapshotCard
+            label="28d"
+            value={pct(windows.d28.rate)}
+            sub={`n=${windows.d28.enrolled}`}
+            accent="sky"
+            compact
+          />
+          <SnapshotCard
+            label="All time"
+            value={pct(windows.all.rate)}
+            sub={`n=${windows.all.enrolled}`}
+            accent="sky"
+            compact
+          />
         </div>
       </div>
 
+      {/* Where leads get stuck: per-step throughput */}
       {nurtureStepHealth.length > 0 && (
         <div className="mt-6">
           <h3 className="text-sm font-bold text-slate-700">Where leads get stuck</h3>
@@ -639,7 +882,10 @@ function LeadContactabilityPanel({
                           <span className={`text-xs ${sr != null && sr < 0.8 ? "font-semibold text-rose-600" : "text-slate-700"}`}>{pct(sr)}</span>
                           {sr != null && (
                             <div className="h-1.5 w-16 rounded bg-slate-100">
-                              <div className={`h-1.5 rounded ${sr < 0.8 ? "bg-rose-400" : "bg-emerald-500"}`} style={{ width: `${Math.min(100, sr * 100)}%` }} />
+                              <div
+                                className={`h-1.5 rounded ${sr < 0.8 ? "bg-rose-400" : "bg-emerald-500"}`}
+                                style={{ width: `${Math.min(100, sr * 100)}%` }}
+                              />
                             </div>
                           )}
                         </div>
@@ -653,6 +899,7 @@ function LeadContactabilityPanel({
         </div>
       )}
 
+      {/* Stuck / overdue leads */}
       {stuckLeads.length > 0 && (
         <Detail summary={`Stuck / overdue leads (${stuckLeads.length})`}>
           <table className="w-full text-sm">
@@ -678,6 +925,7 @@ function LeadContactabilityPanel({
         </Detail>
       )}
 
+      {/* Failed sends */}
       {failedSends.length > 0 && (
         <Detail summary={`Failed sends (${failedSends.length})`}>
           <table className="w-full text-sm">
@@ -705,6 +953,7 @@ function LeadContactabilityPanel({
         </Detail>
       )}
 
+      {/* Unreachable leads */}
       {unreachableLeads.length > 0 && (
         <Detail summary={`Unreachable leads (${unreachableLeads.length})`}>
           <table className="w-full text-sm">
@@ -726,6 +975,7 @@ function LeadContactabilityPanel({
         </Detail>
       )}
 
+      {/* Booked appointments */}
       {bookedLeads.length > 0 && (
         <Detail summary={`Booked appointments (${bookedLeads.length})`}>
           <table className="w-full text-sm">
@@ -747,8 +997,11 @@ function LeadContactabilityPanel({
         </Detail>
       )}
 
+      {/* Recent leads ops table */}
       <div className="mt-6">
-        <h3 className="text-sm font-bold text-slate-700">Recent leads ({leads.length})</h3>
+        <h3 className="text-sm font-bold text-slate-700">
+          Recent leads ({leads.length})
+        </h3>
         <div className="mt-2 overflow-x-auto rounded-xl border border-slate-200 bg-white">
           <table className="w-full text-sm">
             <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
@@ -763,27 +1016,61 @@ function LeadContactabilityPanel({
             </thead>
             <tbody>
               {leads.length === 0 ? (
-                <tr><td colSpan={6} className="px-3 py-4 text-center text-slate-400">No leads yet.</td></tr>
+                <tr>
+                  <td colSpan={6} className="px-3 py-4 text-center text-slate-400">
+                    No leads yet.
+                  </td>
+                </tr>
               ) : (
                 leads.map((l) => (
                   <tr key={l.id} className="border-t border-slate-100">
-                    <td className="px-3 py-2 font-medium text-slate-800">{l.full_name || "(unnamed)"}</td>
+                    <td className="px-3 py-2 font-medium text-slate-800">
+                      {l.full_name || "(unnamed)"}
+                    </td>
                     <td className="px-3 py-2 text-xs text-slate-500">{ago(l.created_at)}</td>
                     <td className="px-3 py-2 text-xs">
-                      {l.verify_pass === true ? <span className="font-medium text-emerald-700">Pass</span> : l.verify_pass === false ? <span className="font-medium text-rose-600">Fail</span> : <span className="text-slate-400">Pending</span>}
-                      {l.phone_status && <span className="ml-1 text-slate-400">({l.phone_status.replace("valid_", "")})</span>}
-                      {l.email_status && <span className="ml-1 text-slate-400">{l.email_status.replace("valid_", "")}</span>}
+                      {l.verify_pass === true ? (
+                        <span className="font-medium text-emerald-700">Pass</span>
+                      ) : l.verify_pass === false ? (
+                        <span className="font-medium text-rose-600">Fail</span>
+                      ) : (
+                        <span className="text-slate-400">Pending</span>
+                      )}
+                      {l.phone_status && (
+                        <span className="ml-1 text-slate-400">
+                          ({l.phone_status.replace("valid_", "")})
+                        </span>
+                      )}
+                      {l.email_status && (
+                        <span className="ml-1 text-slate-400">
+                          {l.email_status.replace("valid_", "")}
+                        </span>
+                      )}
                     </td>
                     <td className="px-3 py-2 text-xs">
                       {l.nurture_status ? (
-                        <span className={`font-medium ${l.nurture_status === "contactable" ? "text-emerald-700" : l.nurture_status === "unreachable" ? "text-rose-600" : "text-slate-700"}`}>
+                        <span
+                          className={`font-medium ${
+                            l.nurture_status === "contactable"
+                              ? "text-emerald-700"
+                              : l.nurture_status === "unreachable"
+                              ? "text-rose-600"
+                              : "text-slate-700"
+                          }`}
+                        >
                           {NURTURE_LABEL[l.nurture_status] ?? l.nurture_status}
                           {l.nurture_step != null && ` (step ${l.nurture_step})`}
                         </span>
-                      ) : <span className="text-slate-400">Not started</span>}
+                      ) : (
+                        <span className="text-slate-400">Not started</span>
+                      )}
                     </td>
                     <td className="px-3 py-2 text-center text-xs">
-                      {l.responded ? <span className="font-medium text-emerald-700">Yes</span> : <span className="text-slate-400">No</span>}
+                      {l.responded ? (
+                        <span className="font-medium text-emerald-700">Yes</span>
+                      ) : (
+                        <span className="text-slate-400">No</span>
+                      )}
                     </td>
                     <td className="px-3 py-2 text-xs text-slate-600">{l.status ?? "-"}</td>
                   </tr>
@@ -797,196 +1084,143 @@ function LeadContactabilityPanel({
   );
 }
 
-// ── Page ──────────────────────────────────────────────────────────────────────
+// ── Page ───────────────────────────────────────────────────────────────────
 
-export default function SitePage() {
-  const params = useParams<{ siteKey: string }>();
-  const siteKey = params?.siteKey ?? "";
-  const [country, setCountry] = useState("all");
+export default async function SitePage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ siteKey: string }>;
+  searchParams: Promise<{ country?: string }>;
+}) {
+  const authed = await checkAuth();
+  if (!authed) redirect("/login");
 
-  useConsoleAuth();
+  const { siteKey } = await params;
+  const { country: countryParam } = await searchParams;
+  const country = countryParam || "GB";
+  const countryFilter = country === "ALL" ? undefined : country;
 
-  const isProperty = siteKey === "property";
+  // Validate the siteKey against the registry
+  const sites = await getSitesRegistry();
+  const site = sites.find((s) => s.site_key === siteKey);
+  if (!site) notFound();
+
   const caps = getSiteCapabilities(siteKey);
+  const isProperty = siteKey === "property";
 
-  const keys = useMemo(() => {
-    if (!siteKey) return [];
-    const ck = (m: string) => `site:${siteKey}:${m}:${country}`;
-    const list = [
-      "estate:sites_registry",
-      ck("kpis:daily"),
-      ck("kpis:7d"),
-      ck("kpis:30d"),
-      ck("kpis:all"),
-      ck("funnel"),
-      ck("visitors"),
-      ck("channels"),
-      ck("calculators"),
-      ck("ctas"),
-      ck("form_dropoff"),
-      ck("sections"),
-      ck("friction"),
-      ck("errors"),
-      ck("errors_daily"),
-      ck("visits_to_conversion"),
-      `site:${siteKey}:site_leads`,
-      `site:${siteKey}:country_options`,
-    ];
-    if (caps.experiments) list.push(`site:${siteKey}:experiments`);
-    if (caps.nurture) list.push(`site:${siteKey}:nurture_funnel`);
-    if (caps.personalisation) list.push(`site:${siteKey}:personalisation`);
-    if (caps.leadIntent) list.push(`site:${siteKey}:lead_intent`);
-    if (isProperty) {
-      list.push(
-        `site:${siteKey}:nurture_health`,
-        `site:${siteKey}:nurture_step_health`,
-        `site:${siteKey}:contactability`,
-        `site:${siteKey}:contactability_leads`,
-        `site:${siteKey}:stuck_leads`,
-        `site:${siteKey}:failed_sends`,
-        `site:${siteKey}:nurture_control`,
-        `site:${siteKey}:unreachable_leads`,
-        `site:${siteKey}:booked_leads`,
-        `site:${siteKey}:enrolled_leads`,
-      );
-    }
-    return list;
-  }, [siteKey, country, isProperty, caps.experiments, caps.nurture, caps.personalisation, caps.leadIntent]);
-
-  const { cache, refreshedAt, loading } = useConsoleData(keys);
-
-  if (loading) return <DashboardSkeleton />;
-
-  const allSites = cacheGet<SiteEntry[]>(cache, "estate:sites_registry", []);
-  const site = allSites.find((s) => s.site_key === siteKey);
-  if (!site) {
-    return <div className="p-8 text-sm text-slate-500">Site not found: <code>{siteKey}</code></div>;
-  }
-
-  // ── Read cache ─────────────────────────────────────────────────────────────
-  const ck = (m: string) => `site:${siteKey}:${m}:${country}`;
-
-  const kpiToday = cacheGet<SiteKpis>(cache, ck("kpis:daily"), DEFAULT_KPIS);
-  const kpi7     = cacheGet<SiteKpis>(cache, ck("kpis:7d"),    DEFAULT_KPIS);
-  const kpi      = cacheGet<SiteKpis>(cache, ck("kpis:30d"),   DEFAULT_KPIS);
-  const kpiAll   = cacheGet<SiteKpis>(cache, ck("kpis:all"),   DEFAULT_KPIS);
-
-  const funnel             = cacheGet<FunnelDay[]>(cache,                       ck("funnel"),                []);
-  const visitors           = cacheGet<VisitorJourney[]>(cache,                  ck("visitors"),              []);
-  const channelConversion  = cacheGet<ChannelConversion[]>(cache,               ck("channels"),              []);
-  const calcPlacement      = cacheGet<CalculatorConversionPlacement[]>(cache,   ck("calculators"),           []);
-  const ctaPerformance     = cacheGet<CtaPerformance[]>(cache,                  ck("ctas"),                  []);
-  const formDropoff        = cacheGet<FormFieldDropoff[]>(cache,                 ck("form_dropoff"),          []);
-  const sectionActions     = cacheGet<SectionAction[]>(cache,                   ck("sections"),              []);
-  const uxFriction         = cacheGet<UxFrictionRow[]>(cache,                   ck("friction"),              []);
-  const clientErrors       = cacheGet<ClientError[]>(cache,                     ck("errors"),                []);
-  const errorsDaily        = cacheGet<ErrorDailyRow[]>(cache,                   ck("errors_daily"),          []);
-  const visitsToConversion = cacheGet<VisitsBucket[]>(cache,                    ck("visits_to_conversion"),  []);
-
-  const rawSiteLeads   = cacheGet<SiteLead[]>(cache, `site:${siteKey}:site_leads`, []);
-  const rawCountryOpts = cacheGet<CountryOption[]>(cache, `site:${siteKey}:country_options`, []);
-
-  // Experiments bundle: { results, arms, funnel, resultGate }
-  type ExperimentsBundle = { results: ExperimentResult[]; arms: Record<string, unknown>; funnel: Record<string, unknown>; resultGate: FormLeadCount | null };
-  const experimentsData    = cacheGet<ExperimentsBundle | null>(cache, `site:${siteKey}:experiments`, null);
-  const experimentResults  = experimentsData?.results ?? ([] as ExperimentResult[]);
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const experimentArms     = (experimentsData?.arms ?? {}) as Record<string, any>;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const experimentFunnel   = (experimentsData?.funnel ?? {}) as Record<string, any>;
-  const resultGateLeads    = experimentsData?.resultGate ?? null;
-
-  const nurtureFunnel           = cacheGet<NurtureFunnelRow[]>(cache,         `site:${siteKey}:nurture_funnel`,  []);
-  const personalisationResults  = cacheGet<PersonalisationResult[]>(cache,    `site:${siteKey}:personalisation`, []);
-  const leadIntent              = cacheGet<LeadIntentRow[]>(cache,             `site:${siteKey}:lead_intent`,     []);
-
-  const nurtureHealth      = isProperty ? cacheGet<NurtureHealth | null>(cache,          `site:${siteKey}:nurture_health`,       null)                    : null;
-  const nurtureStepHealth  = isProperty ? cacheGet<NurtureStepHealth[]>(cache,           `site:${siteKey}:nurture_step_health`,  [])                      : [];
-  const contactabilityFunnel = isProperty ? cacheGet<ContactabilityFunnel | null>(cache, `site:${siteKey}:contactability`,       null)                    : null;
-  const contactabilityLeads  = isProperty ? cacheGet<ContactabilityLeadRow[]>(cache,     `site:${siteKey}:contactability_leads`, [])                      : [];
-  const stuckLeads           = isProperty ? cacheGet<StuckLead[]>(cache,                 `site:${siteKey}:stuck_leads`,          [])                      : [];
-  const failedSends          = isProperty ? cacheGet<FailedSend[]>(cache,                `site:${siteKey}:failed_sends`,         [])                      : [];
-  const nurtureControl       = isProperty ? cacheGet<NurtureControl>(cache,              `site:${siteKey}:nurture_control`,      DEFAULT_NURTURE_CONTROL) : DEFAULT_NURTURE_CONTROL;
-  const unreachableLeads     = isProperty ? cacheGet<UnreachableLead[]>(cache,           `site:${siteKey}:unreachable_leads`,    [])                      : [];
-  const bookedLeads          = isProperty ? cacheGet<BookedLead[]>(cache,                `site:${siteKey}:booked_leads`,         [])                      : [];
-  const enrolledLeadFacts    = isProperty ? cacheGet<EnrolledLeadFact[]>(cache,          `site:${siteKey}:enrolled_leads`,       [])                      : [];
-
-  // ── Derived ────────────────────────────────────────────────────────────────
   const now = new Date();
-  const startOfTodayUTC   = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
-  const from7             = new Date(now.getTime() - 7  * 86400000);
-  const from30            = new Date(now.getTime() - 30 * 86400000);
-  const allTimeFrom       = new Date(Date.UTC(2020, 0, 1));
+  const isoOf = (d: Date) => d.toISOString();
+  const from14 = new Date(now.getTime() - 14 * 86400000);
+  const from30 = new Date(now.getTime() - 30 * 86400000);
+  const from7 = new Date(now.getTime() - 7 * 86400000);
+  const startOfTodayUTC = new Date(
+    Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()),
+  );
+  const allTimeFrom = new Date(Date.UTC(2020, 0, 1)); // before any site data
 
-  const windows = computeContactabilityWindows(enrolledLeadFacts, now.getTime());
+  const [
+    funnel,
+    calcPlacement,
+    visitors,
+    leads,
+    countryOptions,
+    ctaPerformance,
+    formDropoff,
+    sectionActions,
+    uxFriction,
+    clientErrors,
+    errorsDaily,
+    channelConversion,
+    visitsToConversion,
+    kpi,
+    kpiToday,
+    kpi7,
+    kpiAll,
+  ] = await Promise.all([
+    getFunnelDaily(siteKey, countryFilter),
+    getCalculatorConversionByPlacement(siteKey, countryFilter),
+    getTopVisitors(siteKey, 500, countryFilter),
+    getLeadsForSite(siteKey),
+    getCountryOptions(siteKey),
+    getCtaPerformance(siteKey, countryFilter),
+    getFormFieldDropoff(siteKey, countryFilter),
+    getSectionActions(siteKey, countryFilter),
+    getUxFriction(siteKey, countryFilter),
+    getClientErrors(siteKey, countryFilter),
+    getEventDaily(siteKey, "client_error", isoOf(from14), isoOf(now), countryFilter),
+    getChannelConversion(siteKey, countryFilter),
+    getVisitsToConversion(siteKey, countryFilter),
+    getSiteKpis(siteKey, isoOf(from30), isoOf(now), country),
+    getSiteKpis(siteKey, isoOf(startOfTodayUTC), isoOf(now), country),
+    getSiteKpis(siteKey, isoOf(from7), isoOf(now), country),
+    getSiteKpis(siteKey, isoOf(allTimeFrom), isoOf(now), country),
+  ]);
 
-  // Lead enrichment: visitor_id → lead details map (for visitor row name/email)
-  const leadByVisitor = new Map<string, SiteLead>();
-  for (const l of rawSiteLeads) {
+  const leadByVisitor = new Map<string, (typeof leads)[number]>();
+  for (const l of leads) {
     if (l.visitor_id && !leadByVisitor.has(l.visitor_id)) leadByVisitor.set(l.visitor_id, l);
   }
 
-  // 14-day error sparkline: map daily bucket rows into a fixed-length series
-  const errorsSeries: number[] = (() => {
-    const byDate = new Map<string, number>();
-    for (const r of errorsDaily) byDate.set(r.bucket.slice(0, 10), (byDate.get(r.bucket.slice(0, 10)) ?? 0) + r.count);
-    const out: number[] = [];
-    for (let i = 13; i >= 0; i--) {
-      const day = new Date(now.getTime() - i * 86400000).toISOString().slice(0, 10);
-      out.push(byDate.get(day) ?? 0);
-    }
-    return out;
-  })();
-
-  // Country select options: normalise whatever getCountryOptions returned
-  const countrySelectOptions: Array<{ value: string; label: string }> = [
-    { value: "all", label: "All countries" },
-    ...rawCountryOpts
-      .map((o) => (typeof o === "string" ? { value: o, label: o } : { value: (o as { value: string; label?: string }).value, label: (o as { value: string; label?: string }).label ?? (o as { value: string }).value }))
-      .filter((o) => o.value && o.value !== "all"),
-  ];
-
+  // Funnel stage totals for a time window: sum the daily funnel rows on/after the
+  // window's start date (mirrors the KPI-card windows). Each FunnelDay is one date.
   const sumFunnel = (fromMs: number) => {
     const since = new Date(fromMs).toISOString().slice(0, 10);
     return funnel.reduce(
-      (a, d) => d.date >= since ? { sessions: a.sessions + d.sessions, engaged: a.engaged + d.engaged_sessions, calc: a.calc + d.calc_sessions, formCta: a.formCta + d.form_cta_sessions, form: a.form + d.form_start_sessions, converted: a.converted + d.converted_sessions } : a,
+      (a, d) =>
+        d.date >= since
+          ? {
+              sessions: a.sessions + d.sessions,
+              engaged: a.engaged + d.engaged_sessions,
+              calc: a.calc + d.calc_sessions,
+              formCta: a.formCta + d.form_cta_sessions,
+              form: a.form + d.form_start_sessions,
+              converted: a.converted + d.converted_sessions,
+            }
+          : a,
       { sessions: 0, engaged: 0, calc: 0, formCta: 0, form: 0, converted: 0 },
     );
   };
+  const errorsSeries = densify(errorsDaily, 14, (r) => r.count, "bucket");
 
+  // Per-window average engaged time (ms), derived from the top-500 visitor set
+  // filtered by last_seen. Exact for short windows; 500-capped for all-time
+  // (same behaviour as before). No DB change needed.
   const engagedMsForWindow = (fromMs: number): number => {
     const vs = visitors.filter((v) => new Date(v.last_seen).getTime() >= fromMs);
-    return vs.length ? vs.reduce((a, v) => a + (v.total_engaged_ms || 0), 0) / vs.length : 0;
+    return vs.length
+      ? vs.reduce((a, v) => a + (v.total_engaged_ms || 0), 0) / vs.length
+      : 0;
   };
 
-  const uxTotals = uxFriction.reduce((a, r) => ({ rage: a.rage + r.rage_clicks, dead: a.dead + r.dead_clicks }), { rage: 0, dead: 0 });
-
-  const kpiCaption = country === "all"
-    ? "All countries · windows in UTC"
-    : `${country} visitors · all-country leads · windows in UTC`;
-
+  // Four explicit time windows, same 6 metrics each (most granular -> widest).
   const kpiPages: KpiPage[] = [
-    { key: "today", label: "Daily",    meta: "Today (since 00:00 UTC)", node: <KpiGrid kpi={kpiToday} engagedMs={engagedMsForWindow(startOfTodayUTC.getTime())} windowLabel="Daily"    /> },
-    { key: "d7",    label: "Weekly",   meta: "Last 7 days",             node: <KpiGrid kpi={kpi7}     engagedMs={engagedMsForWindow(from7.getTime())}           windowLabel="Weekly"   /> },
-    { key: "d30",   label: "Monthly",  meta: "Last 30 days",            node: <KpiGrid kpi={kpi}      engagedMs={engagedMsForWindow(from30.getTime())}          windowLabel="Monthly"  /> },
-    { key: "all",   label: "All time", meta: "All time",                node: <KpiGrid kpi={kpiAll}   engagedMs={engagedMsForWindow(0)}                         windowLabel="All time" /> },
+    { key: "today", label: "Daily", meta: "Today (since 00:00 UTC)", node: <KpiGrid kpi={kpiToday} engagedMs={engagedMsForWindow(startOfTodayUTC.getTime())} windowLabel="Daily" /> },
+    { key: "d7", label: "Weekly", meta: "Last 7 days", node: <KpiGrid kpi={kpi7} engagedMs={engagedMsForWindow(from7.getTime())} windowLabel="Weekly" /> },
+    { key: "d30", label: "Monthly", meta: "Last 30 days", node: <KpiGrid kpi={kpi} engagedMs={engagedMsForWindow(from30.getTime())} windowLabel="Monthly" /> },
+    { key: "all", label: "All time", meta: "All time", node: <KpiGrid kpi={kpiAll} engagedMs={engagedMsForWindow(0)} windowLabel="All time" /> },
   ];
+  const kpiCaption =
+    country === "ALL"
+      ? "All countries · windows in UTC"
+      : `${country} visitors · all-country leads · windows in UTC`;
 
+  const uxTotals = uxFriction.reduce(
+    (a, r) => ({ rage: a.rage + r.rage_clicks, dead: a.dead + r.dead_clicks }),
+    { rage: 0, dead: 0 },
+  );
+
+  // Conversion funnel with the same Daily / Weekly / Monthly / All-time windows as
+  // the KPI cards, computed from the daily funnel rows (no DB change needed).
   const funnelPages: KpiPage[] = [
-    { key: "today", label: "Daily",    meta: "Today (since 00:00 UTC)", node: <ConversionFunnel totals={sumFunnel(startOfTodayUTC.getTime())} /> },
-    { key: "d7",    label: "Weekly",   meta: "Last 7 days",             node: <ConversionFunnel totals={sumFunnel(from7.getTime())}           /> },
-    { key: "d30",   label: "Monthly",  meta: "Last 30 days",            node: <ConversionFunnel totals={sumFunnel(from30.getTime())}          /> },
-    { key: "all",   label: "All time", meta: "All time",                node: <ConversionFunnel totals={sumFunnel(allTimeFrom.getTime())}     /> },
+    { key: "today", label: "Daily", meta: "Today (since 00:00 UTC)", node: <ConversionFunnel totals={sumFunnel(startOfTodayUTC.getTime())} /> },
+    { key: "d7", label: "Weekly", meta: "Last 7 days", node: <ConversionFunnel totals={sumFunnel(from7.getTime())} /> },
+    { key: "d30", label: "Monthly", meta: "Last 30 days", node: <ConversionFunnel totals={sumFunnel(from30.getTime())} /> },
+    { key: "all", label: "All time", meta: "All time", node: <ConversionFunnel totals={sumFunnel(allTimeFrom.getTime())} /> },
   ];
-
-  let newCount = 0, returningCount = 0;
-  for (const v of visitors) {
-    if ((v.total_sessions || 0) > 1) returningCount++; else newCount++;
-  }
-  const newVsReturning: Array<[string, number]> = [["Returning", returningCount], ["New", newCount]];
 
   const visitorRows: VisitorRow[] = visitors.map((v) => {
-    const lead = leadByVisitor.get(v.visitor_id) ?? null;
+    const lead = leadByVisitor.get(v.visitor_id) || null;
     return {
       visitor_id: v.visitor_id,
       last_seen: v.last_seen,
@@ -1006,22 +1240,65 @@ export default function SitePage() {
     };
   });
 
-  // Experiments: running vs retired classification
-  const experimentKeys = Array.from(new Set([...Object.keys(experimentArms), ...Object.keys(experimentFunnel)]));
-  const _siteRegistry = siteRegistries[siteKey];
-  const _runningSet = new Set((_siteRegistry?.experiments ?? []).filter((e) => e.status === "running").map((e) => e.key));
-  const runningExperimentKeys = experimentKeys.filter((k) => _runningSet.has(k));
-  const retiredExperimentKeys = experimentKeys.filter((k) => !_runningSet.has(k));
+  let newCount = 0;
+  let returningCount = 0;
+  for (const v of visitors) {
+    if ((v.total_sessions || 0) > 1) returningCount++;
+    else newCount++;
+  }
+  const newVsReturning: Array<[string, number]> = [["Returning", returningCount], ["New", newCount]];
 
-  // ── Tab sections ──────────────────────────────────────────────────────────
+  // Capability-conditional data fetches (only fetch if capability is on)
+  const [experimentResults, experimentArms, experimentFunnel, personalisationResults, nurtureFunnel, leadIntent, resultGateLeads] = await Promise.all([
+    caps.experiments ? getExperimentResults(siteKey) : Promise.resolve([] as ExperimentResult[]),
+    caps.experiments ? getExperimentArms(siteKey) : Promise.resolve({} as Record<string, ExperimentArms>),
+    caps.experiments ? getExperimentFunnel(siteKey) : Promise.resolve({} as Record<string, ExperimentFunnelArms>),
+    caps.personalisation ? getPersonalizationResults(siteKey) : Promise.resolve([]),
+    caps.nurture ? getNurtureFunnel(siteKey) : Promise.resolve([]),
+    caps.leadIntent ? getLeadIntentMix(siteKey) : Promise.resolve([]),
+    caps.experiments ? getResultGateLeads(siteKey) : Promise.resolve(null as FormLeadCount | null),
+  ]);
+
+  // Property-only: contactability pipeline data + nurture observability
+  const [
+    contactabilityFunnel,
+    contactabilityLeads,
+    nurtureHealth,
+    nurtureStepHealth,
+    stuckLeads,
+    failedSends,
+    nurtureControl,
+    unreachableLeads,
+    bookedLeads,
+    enrolledLeadFacts,
+  ] = await Promise.all([
+    isProperty ? getContactabilityFunnel(siteKey) : Promise.resolve(null),
+    isProperty ? getContactabilityLeads(siteKey) : Promise.resolve([] as ContactabilityLeadRow[]),
+    isProperty ? getNurtureHealth(siteKey) : Promise.resolve(null as NurtureHealth | null),
+    isProperty ? getNurtureStepHealth(siteKey) : Promise.resolve([] as NurtureStepHealth[]),
+    isProperty ? getStuckLeads(siteKey) : Promise.resolve([] as StuckLead[]),
+    isProperty ? getFailedSends(siteKey) : Promise.resolve([] as FailedSend[]),
+    isProperty
+      ? getNurtureControl()
+      : Promise.resolve({ paused: false, paused_reason: null, paused_at: null, paused_by: null, last_alert_at: null, last_alert_key: null, lastCronRunAt: null, lastDigestRunAt: null } as NurtureControl),
+    isProperty ? getUnreachableLeads(siteKey) : Promise.resolve([] as UnreachableLead[]),
+    isProperty ? getBookedLeads(siteKey) : Promise.resolve([] as BookedLead[]),
+    isProperty ? getEnrolledLeadFacts(siteKey) : Promise.resolve([] as EnrolledLeadFact[]),
+  ]);
+
+  const windows = computeContactabilityWindows(enrolledLeadFacts, Date.now());
+
+  // ── Tab sections ──
 
   const overviewSection = (
     <div>
       <KpiWindowCarousel pages={kpiPages} caption={kpiCaption} />
+
       <h2 className="mt-8 text-lg font-bold text-slate-900">Conversion funnel</h2>
       <div className="mt-3">
         <KpiWindowCarousel pages={funnelPages} caption={kpiCaption} />
       </div>
+
       <div className="mt-8">
         <h2 className="text-lg font-bold text-slate-900">How people arrive</h2>
         <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -1031,6 +1308,7 @@ export default function SitePage() {
           <Breakdown title="New vs returning" rows={newVsReturning} />
         </div>
       </div>
+
       <div className="mt-8"><ChannelPanel rows={channelConversion} /></div>
       <div className="mt-8"><VisitsConvPanel rows={visitsToConversion} /></div>
     </div>
@@ -1045,6 +1323,27 @@ export default function SitePage() {
     />
   );
 
+  // Derive which experiment keys have data (for the card loop).
+  // All keys from both arms + funnel, deduplicated, so unknown ids also show.
+  const experimentKeys = Array.from(
+    new Set([
+      ...Object.keys(experimentArms),
+      ...Object.keys(experimentFunnel),
+    ]),
+  );
+
+  // Classify each key as running vs retired using the registry.
+  // Keys absent from the registry (unknown/legacy) are treated as retired.
+  const _siteRegistry = siteRegistries[siteKey];
+  const _runningSet = new Set(
+    (_siteRegistry?.experiments ?? [])
+      .filter((e) => e.status === "running")
+      .map((e) => e.key),
+  );
+  const runningExperimentKeys = experimentKeys.filter((k) => _runningSet.has(k));
+  const retiredExperimentKeys = experimentKeys.filter((k) => !_runningSet.has(k));
+
+  // Experiments tab -- capability-conditional, rich card view
   const experimentsSection = (
     <div className="space-y-8">
       {caps.experiments ? (
@@ -1053,71 +1352,112 @@ export default function SitePage() {
             <div>
               <h2 className="text-lg font-bold text-slate-900">Result gate (shipped default)</h2>
               <p className="mt-1 text-xs text-slate-500">
-                The calculator result-gate interstitial won its A/B test and is now the default for every in-blog visitor.
+                The calculator result-gate interstitial won its A/B test and is now the default for every in-blog
+                visitor. Leads captured through the gate form, tracked directly by form (no longer an experiment).
               </p>
               <div className="mt-3 grid max-w-md gap-3 sm:grid-cols-2">
-                <SnapshotCard label="Result-gate leads" value={String(resultGateLeads.lead_sessions)} sub={`${resultGateLeads.form_start_sessions} form starts`} accent="emerald" />
-                <SnapshotCard label="Form start → lead" value={resultGateLeads.form_start_sessions > 0 ? `${Math.round((resultGateLeads.lead_sessions / resultGateLeads.form_start_sessions) * 100)}%` : "—"} />
+                <SnapshotCard
+                  label="Result-gate leads"
+                  value={String(resultGateLeads.lead_sessions)}
+                  sub={`${resultGateLeads.form_start_sessions} form starts`}
+                  accent="emerald"
+                />
+                <SnapshotCard
+                  label="Form start → lead"
+                  value={
+                    resultGateLeads.form_start_sessions > 0
+                      ? `${Math.round((resultGateLeads.lead_sessions / resultGateLeads.form_start_sessions) * 100)}%`
+                      : "—"
+                  }
+                />
               </div>
             </div>
           )}
           {experimentResults.length === 0 ? (
-            <p className="text-sm text-slate-400">No experiment results yet.</p>
-          ) : (
-            <>
-              {runningExperimentKeys.length > 0 && (
-                <div>
-                  <h2 className="text-lg font-bold text-slate-900">Live A/B tests</h2>
-                  <div className="mt-3 space-y-4">
-                    {runningExperimentKeys.map((key) => (
-                      <ExperimentCard key={key} meta={getExperimentMeta(siteKey, key)} arms={experimentArms[key] ?? { control: null, treatment: null }} funnel={experimentFunnel[key]} />
-                    ))}
-                  </div>
-                </div>
-              )}
-              {retiredExperimentKeys.length > 0 && (
-                <div>
-                  <h2 className="text-lg font-bold text-slate-900">Retired tests (historical data)</h2>
-                  <div className="mt-3 space-y-4">
-                    {retiredExperimentKeys.map((key) => (
-                      <ExperimentCard key={key} meta={getExperimentMeta(siteKey, key)} arms={experimentArms[key] ?? { control: null, treatment: null }} funnel={experimentFunnel[key]} />
-                    ))}
-                  </div>
-                </div>
-              )}
+          <p className="text-sm text-slate-400">No experiment results yet.</p>
+        ) : (
+          <>
+            {runningExperimentKeys.length > 0 && (
               <div>
-                <h2 className="text-lg font-bold text-slate-900">All results (raw ledger)</h2>
-                <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
-                  <table className="w-full text-sm">
-                    <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
-                      <tr>
-                        <th className="px-3 py-2">Experiment : variant</th>
-                        <th className="px-3 py-2 text-right">Sessions</th>
-                        <th className="hidden px-3 py-2 text-right sm:table-cell">CTA clicks</th>
-                        <th className="hidden px-3 py-2 text-right sm:table-cell">Form starts</th>
-                        <th className="px-3 py-2 text-right">Conversion</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {experimentResults.map((x) => (
-                        <tr key={x.exp} className="border-t border-slate-100">
-                          <td className="px-3 py-2 font-mono text-slate-700">{x.exp}</td>
-                          <td className="px-3 py-2 text-right font-mono">{x.sessions}</td>
-                          <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{x.cta_clicks}</td>
-                          <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{x.form_starts}</td>
-                          <td className="px-3 py-2 text-right">{pct(x.conversion_rate)}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                <h2 className="text-lg font-bold text-slate-900">Live A/B tests</h2>
+                <p className="mt-1 text-xs text-slate-500">
+                  Each running experiment, control (current) vs treatment (new), updating as data accrues. Lift and
+                  significance are honest: directional until each arm has enough sessions.
+                </p>
+                <div className="mt-3 space-y-4">
+                  {runningExperimentKeys.map((key) => (
+                    <ExperimentCard
+                      key={key}
+                      meta={getExperimentMeta(siteKey, key)}
+                      arms={experimentArms[key] ?? { control: null, treatment: null }}
+                      funnel={experimentFunnel[key]}
+                    />
+                  ))}
                 </div>
               </div>
-            </>
+            )}
+
+            {retiredExperimentKeys.length > 0 && (
+              <div>
+                <h2 className="text-lg font-bold text-slate-900">Retired tests (historical data)</h2>
+                <p className="mt-1 text-xs text-slate-500">
+                  Stopped experiments, shown for their historical results. Not assigning new visitors.
+                </p>
+                <div className="mt-3 space-y-4">
+                  {retiredExperimentKeys.map((key) => (
+                    <ExperimentCard
+                      key={key}
+                      meta={getExperimentMeta(siteKey, key)}
+                      arms={experimentArms[key] ?? { control: null, treatment: null }}
+                      funnel={experimentFunnel[key]}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Secondary: raw all-results ledger */}
+            <div>
+              <h2 className="text-lg font-bold text-slate-900">All results (raw ledger)</h2>
+              <p className="mt-1 text-xs text-slate-500">
+                Flat view of every experiment:variant row from vw_experiment_results. New experiments appear here
+                automatically as events accrue.
+              </p>
+              <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+                <table className="w-full text-sm">
+                  <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+                    <tr>
+                      <th className="px-3 py-2">Experiment : variant</th>
+                      <th className="px-3 py-2 text-right">Sessions</th>
+                      <th className="hidden px-3 py-2 text-right sm:table-cell">CTA clicks</th>
+                      <th className="hidden px-3 py-2 text-right sm:table-cell">Form starts</th>
+                      <th className="px-3 py-2 text-right">Conversion</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {experimentResults.map((x) => (
+                      <tr key={x.exp} className="border-t border-slate-100">
+                        <td className="px-3 py-2 font-mono text-slate-700">{x.exp}</td>
+                        <td className="px-3 py-2 text-right font-mono">{x.sessions}</td>
+                        <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{x.cta_clicks}</td>
+                        <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{x.form_starts}</td>
+                        <td className="px-3 py-2 text-right">{pct(x.conversion_rate)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </>
           )}
         </>
       ) : (
-        <NotOperatedPanel feature="A/B experiments" reason="Not operated on this site. Experiments engine requires an active experimentation registry." />
+        <NotOperatedPanel
+          feature="A/B experiments"
+          reason="Not operated on this site. Experiments engine requires an active experimentation registry."
+        />
       )}
+
       {caps.personalisation ? (
         personalisationResults.length === 0 ? (
           <p className="mt-4 text-sm text-slate-400">No personalisation results yet.</p>
@@ -1148,7 +1488,10 @@ export default function SitePage() {
           </Detail>
         )
       ) : (
-        <NotOperatedPanel feature="Personalisation" reason="Not operated on this site. Behavioural personalisation requires the personalisation engine." />
+        <NotOperatedPanel
+          feature="Personalisation"
+          reason="Not operated on this site. Behavioural personalisation requires the personalisation engine."
+        />
       )}
     </div>
   );
@@ -1216,8 +1559,12 @@ export default function SitePage() {
           <p className="text-sm text-slate-400">No lead intent data yet.</p>
         )
       ) : (
-        <NotOperatedPanel feature="Lead-intent enrichment" reason="Not operated on this site. Lead-intent classifier requires the Opus enrichment pipeline." />
+        <NotOperatedPanel
+          feature="Lead-intent enrichment"
+          reason="Not operated on this site. Lead-intent classifier requires the Opus enrichment pipeline."
+        />
       )}
+
       {caps.nurture ? (
         nurtureFunnel.length > 0 ? (
           <div>
@@ -1251,8 +1598,12 @@ export default function SitePage() {
           <p className="text-sm text-slate-400">No nurture data yet.</p>
         )
       ) : (
-        <NotOperatedPanel feature="Nurture engine" reason="Not operated on this site. Marketing opt-in and drip nurture are not running here." />
+        <NotOperatedPanel
+          feature="Nurture engine"
+          reason="Not operated on this site. Marketing opt-in and drip nurture are not running here."
+        />
       )}
+
       <CtaPanel rows={ctaPerformance} />
       <FormDropoffPanel rows={formDropoff} />
       <div>
@@ -1265,6 +1616,7 @@ export default function SitePage() {
 
   return (
     <div className="min-h-screen bg-slate-50">
+      {/* Chrome */}
       <header className="border-b border-slate-200 bg-white px-4 py-3">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
           <div className="flex items-center gap-2">
@@ -1273,16 +1625,7 @@ export default function SitePage() {
             <span className="text-sm font-bold text-slate-900">{site.display_name}</span>
           </div>
           <div className="flex flex-wrap items-center gap-3 text-xs">
-            <select
-              value={country}
-              onChange={(e) => setCountry(e.target.value)}
-              className="rounded border border-slate-200 bg-white px-2 py-1 text-xs text-slate-700"
-            >
-              {countrySelectOptions.map((o) => (
-                <option key={o.value} value={o.value}>{o.label}</option>
-              ))}
-            </select>
-            <StalenessBar refreshedAt={refreshedAt} loading={loading} />
+            <CountrySelect value={country} options={countryOptions} basePath={`/site/${siteKey}`} />
             <Link href={`/site/${siteKey}/trends`} className="text-emerald-700 underline">Trends</Link>
             <Link href={`/site/${siteKey}/leads`} className="text-emerald-700 underline">Leads</Link>
             <span className="text-slate-400">Human-only</span>
@@ -1291,11 +1634,14 @@ export default function SitePage() {
       </header>
 
       <div className="mx-auto max-w-7xl px-4 py-6">
+        {/* Site switcher below the header on the site view */}
         <div className="mb-4 overflow-x-auto">
-          <SiteSwitcher sites={allSites} activeSiteKey={siteKey} />
+          <SiteSwitcher sites={sites} activeSiteKey={siteKey} />
         </div>
+
         <h1 className="text-xl font-bold text-slate-900">{site.display_name}</h1>
         <p className="mt-0.5 text-xs text-slate-400">{site.domain} · {siteKey}</p>
+
         <DashboardTabs
           overview={overviewSection}
           visitors={visitorsSection}
