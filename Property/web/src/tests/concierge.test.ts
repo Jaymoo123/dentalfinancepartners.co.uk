@@ -228,11 +228,25 @@ function seedState(overrides: Partial<ConversationStateRow> = {}): void {
   });
 }
 
-/** Slot fixtures with known dates. 2026-07-06 = Monday (weekday), 2026-07-07 = Tuesday. */
+/**
+ * Slot fixtures on the NEXT future Monday/Tuesday so isValidBookingDate always
+ * passes (hardcoded dates expired once the calendar caught up and flipped the
+ * booked path into the slot-expired escalation). Word-match tests need slots
+ * 1-2 on a Monday and slot 3 on a Tuesday, with "Mon"/"Tue" in the labels.
+ */
+function nextWeekdayIso(targetDow: number): { iso: string; day: number; month: string } {
+  const d = new Date();
+  d.setUTCDate(d.getUTCDate() + 1);
+  while (d.getUTCDay() !== targetDow) d.setUTCDate(d.getUTCDate() + 1);
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  return { iso: d.toISOString().slice(0, 10), day: d.getUTCDate(), month: months[d.getUTCMonth()] };
+}
+const NEXT_MON = nextWeekdayIso(1);
+const NEXT_TUE = nextWeekdayIso(2);
 const FIXED_SLOTS: PendingSlot[] = [
-  { n: 1, date: "2026-07-06", window: "morning", label: "Mon 6 Jul, morning (9am to 12pm)" },
-  { n: 2, date: "2026-07-06", window: "afternoon", label: "Mon 6 Jul, afternoon (12pm to 3pm)" },
-  { n: 3, date: "2026-07-07", window: "morning", label: "Tue 7 Jul, morning (9am to 12pm)" },
+  { n: 1, date: NEXT_MON.iso, window: "morning", label: `Mon ${NEXT_MON.day} ${NEXT_MON.month}, morning (9am to 12pm)` },
+  { n: 2, date: NEXT_MON.iso, window: "afternoon", label: `Mon ${NEXT_MON.day} ${NEXT_MON.month}, afternoon (12pm to 3pm)` },
+  { n: 3, date: NEXT_TUE.iso, window: "morning", label: `Tue ${NEXT_TUE.day} ${NEXT_TUE.month}, morning (9am to 12pm)` },
 ];
 
 /** Expired slots (past dates). */
