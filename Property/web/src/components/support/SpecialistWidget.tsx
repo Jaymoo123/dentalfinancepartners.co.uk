@@ -227,10 +227,16 @@ export function SpecialistWidget() {
   }, [active, suppressed, runPing]);
 
   // Friction: form silently failed (honeypot/validation) -> instant ping.
+  // Never while the visitor is focused inside a form: client-side floor errors
+  // now emit form_error too (multi-step mini-forms), and pinging someone who is
+  // mid-correction interrupts the very form we want them to finish.
   useEffect(() => {
     if (!active) return;
     return onAnalyticsEvent((name: string) => {
-      if (name === "form_error" && !engagedRef.current) runPing("friction");
+      if (name !== "form_error" || engagedRef.current) return;
+      const ae = document.activeElement;
+      if (ae && ae.closest("form")) return;
+      runPing("friction");
     });
   }, [active, runPing]);
 
