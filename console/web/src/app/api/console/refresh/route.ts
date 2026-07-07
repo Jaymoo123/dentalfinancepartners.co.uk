@@ -5,6 +5,7 @@
  */
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+export const maxDuration = 300; // Pro plan ceiling; timeseries now rollup-backed so we stay well under
 
 import { NextRequest, NextResponse } from "next/server";
 import { getSiteCapabilities } from "@/config/capabilities";
@@ -167,6 +168,10 @@ export async function GET(_req: NextRequest): Promise<NextResponse> {
   const cap = (key: string, fn: () => Promise<unknown>) =>
     capture(key, fn, errors, counter);
 
+  // Rollup freshness is handled by the separate /api/console/refresh-rollups cron
+  // (the heavy count(DISTINCT) aggregation). This cron only READS the rollup
+  // (fast) plus the non-timeseries views, so it stays well under budget.
+
   // ── 1. Estate-level ───────────────────────────────────────────────────────
   await flush(
     await Promise.all([
@@ -220,13 +225,13 @@ export async function GET(_req: NextRequest): Promise<NextResponse> {
           cap(ck("kpis:30d"),                () => getSiteKpis(sk, d30,          nowISO, c)),
           cap(ck("kpis:all"),                () => getSiteKpis(sk, allTime,      nowISO, c)),
           cap(ck("timeseries:30d"),          () => directTimeseries(sk, d30, nowISO, c)),
-          // Trends-page sub-day granularities — GB only, 24h window only (stay fast)
-          // timeseries:1h:30d (27s/site) and timeseries:1d:alltime (89s/site) exceed
-          // the cron budget and are intentionally omitted.
+          // Trends-page granularities — GB only. All rollup-backed now (sub-100ms).
           ...(country === "GB" ? [
             cap(ck("timeseries:15min:24h"), () => directTimeseries(sk, h24, nowISO, c, "15 minutes")),
             cap(ck("timeseries:1h:24h"),    () => directTimeseries(sk, h24, nowISO, c, "1 hour")),
             cap(ck("timeseries:1h:7d"),     () => directTimeseries(sk, d7,  nowISO, c, "1 hour")),
+            cap(ck("timeseries:1h:30d"),    () => directTimeseries(sk, d30, nowISO, c, "1 hour")),
+            cap(ck("timeseries:1d:alltime"),() => directTimeseries(sk, allTime, nowISO, c)),
           ] : []),
           cap(ck("funnel"),                  () => getFunnelDaily(sk, c)),
           cap(ck("visitors"),                () => getTopVisitors(sk, 500, c)),

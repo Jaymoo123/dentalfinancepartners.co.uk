@@ -98,6 +98,10 @@ MIGRATIONS = [
     # triggers so in-house-consent resource downloads never CC the partner or
     # consume paid enrichment. Triggers only; functions (with secrets) untouched.
     "20260706000001_resource_gate_notify_skip.sql",
+    # Timeseries rollup layer: web_rollup table + refresh/backfill fns + rewrite
+    # web_timeseries/estate_timeseries to read the rollup (kills 89s all-time
+    # scans / 7d-hourly 500s). Backfill run separately after apply.
+    "20260707000002_web_timeseries_rollups.sql",
 ]
 
 

@@ -3,6 +3,10 @@
     {
       "path": "/api/console/refresh",
       "schedule": "*/2 * * * *"
+    },
+    {
+      "path": "/api/console/refresh-rollups",
+      "schedule": "*/10 * * * *"
     }
   ]
 }
