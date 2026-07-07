@@ -168,21 +168,50 @@ async function refreshRollupToday(
   }
 }
 
+// ── Global concurrency limiter ────────────────────────────────────────────────
+// The small Supabase instance's connection pool cannot take the ~160 simultaneous
+// queries the refresh used to fire — it starved the dashboard's own reads (blank
+// dashboard). Cap concurrent DB calls so reads always have a free connection.
+// The refresh just takes a bit longer in the background; nobody is waiting on it.
+const MAX_CONCURRENT = 5;
+let active = 0;
+const waiters: Array<() => void> = [];
+function resetLimiter(): void {
+  active = 0;
+  waiters.length = 0;
+}
+function acquire(): Promise<void> {
+  if (active < MAX_CONCURRENT) {
+    active++;
+    return Promise.resolve();
+  }
+  return new Promise<void>((res) => waiters.push(res));
+}
+function release(): void {
+  const next = waiters.shift();
+  if (next) next();
+  else active--;
+}
+
 function capture(
   key: string,
   fn: () => Promise<unknown>,
   errors: string[],
   counter: { n: number },
 ): Promise<CacheRow> {
-  return fn()
-    .then((data) => {
+  return (async (): Promise<CacheRow> => {
+    await acquire();
+    try {
+      const data = await fn();
       counter.n++;
       return { cache_key: key, data };
-    })
-    .catch((e: unknown) => {
+    } catch (e: unknown) {
       errors.push(`${key}: ${e instanceof Error ? e.message : String(e)}`);
       return null;
-    });
+    } finally {
+      release();
+    }
+  })();
 }
 
 async function flush(
@@ -203,6 +232,7 @@ async function flush(
 
 // ponytail: no auth — this endpoint only writes to an internal analytics cache
 export async function GET(_req: NextRequest): Promise<NextResponse> {
+  resetLimiter(); // clear any state a maxDuration-killed prior run left behind
   const t0 = Date.now();
   const now = new Date();
   const nowISO = now.toISOString();
@@ -256,14 +286,13 @@ export async function GET(_req: NextRequest): Promise<NextResponse> {
   for (const site of activeSites) {
     const sk = site.site_key;
 
-    // Discover which countries have traffic for this site; always include "all".
-    // getCountryOptions may return string[] or {value: string}[] — normalise either.
+    // Cache only GB + all-countries. Fanning out to ~10 countries fired ~160
+    // concurrent Supabase queries per site, swamping the small instance's
+    // connection pool (PostgREST fell over). GB + all are the only country scopes
+    // the dashboard actually leads with (plan Phase 4). Keep the discovered list
+    // for the dropdown, but only COMPUTE these two.
     const rawCountryOpts = await getCountryOptions(sk).catch(() => [] as unknown[]);
-    const discoveredCodes = (rawCountryOpts as Array<string | { value: string }>)
-      .map((o) => (typeof o === "string" ? o : o.value))
-      .filter(Boolean);
-    // Always include "GB" regardless of what getCountryOptions returns; cap at 9 more.
-    const countriesToCompute = ["all", "GB", ...new Set(discoveredCodes.filter((c) => c !== "GB"))].slice(0, 10);
+    const countriesToCompute = ["all", "GB"];
 
     // Cache the raw options list for the per-site country dropdown.
     await flush(
