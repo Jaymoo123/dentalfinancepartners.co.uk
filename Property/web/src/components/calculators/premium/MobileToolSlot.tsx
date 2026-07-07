@@ -20,6 +20,7 @@ export function MobileToolSlot({ topic, label }: { topic: TopicKey; label: strin
       blurb="Our interactive tool is built for a larger screen. Tell us your numbers and a specialist will send your figure and the next sensible step, with no obligation."
       submitLabel="Send me my figure"
       className="rounded-2xl border-l-4 border-emerald-600 bg-slate-50 p-5 sm:p-6"
+      postSubmit="redirect"
     />
   );
 }

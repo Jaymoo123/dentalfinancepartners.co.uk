@@ -29,6 +29,7 @@ export function CalcResultCta({
         blurb="A calculator gives the shape of the answer. We confirm your exact figure and the legitimate ways to reduce it, with no obligation. Leave your details and we'll be in touch."
         submitLabel="Get my figure confirmed"
         className="rounded-2xl border-l-4 border-emerald-600 bg-slate-50 p-5 sm:p-6"
+        postSubmit="redirect"
       />
     </div>
   );

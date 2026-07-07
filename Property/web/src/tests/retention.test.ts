@@ -1,17 +1,33 @@
 /**
- * Unit tests for retentionCutoffIso (pure date arithmetic).
+ * Unit tests for retentionCutoffIso (pure date arithmetic) and
+ * runLeadRetentionPurge extras scrub (mocked admin layer).
  *
- * The database path (runLeadRetentionPurge) is not tested here as it requires
- * a live Supabase admin client. All assertions use getUTC* methods so the
- * results are timezone-independent and deterministic in any Node.js locale.
+ * All date assertions use getUTC* methods so results are timezone-independent
+ * and deterministic in any Node.js locale.
  *
  * Epoch fixtures: noon UTC on the target date to stay clear of day-boundary
  * differences between UTC and BST (where noon UTC is 13:00 local, still the
  * same calendar day).
  */
 
-import { describe, it, expect } from "vitest";
-import { retentionCutoffIso } from "@/lib/leads/retention";
+import { describe, it, expect, vi, beforeEach } from "vitest";
+import { retentionCutoffIso, runLeadRetentionPurge } from "@/lib/leads/retention";
+
+// ---------------------------------------------------------------------------
+// Module mocks (hoisted by vitest before imports are evaluated)
+// ---------------------------------------------------------------------------
+
+const mockAdminSelectRet = vi.fn();
+const mockAdminUpdateRet = vi.fn();
+
+vi.mock("@/lib/supabase/admin", () => ({
+  adminSelect: (...args: unknown[]) => mockAdminSelectRet(...args),
+  adminUpdate: (...args: unknown[]) => mockAdminUpdateRet(...args),
+}));
+
+vi.mock("@/config/site", () => ({
+  siteConfig: { company: { enquiryRetentionMonths: 3 } },
+}));
 
 // ---------------------------------------------------------------------------
 // Epoch fixtures (noon UTC on each date to avoid timezone day-boundary drift)
@@ -94,5 +110,102 @@ describe("retentionCutoffIso", () => {
       const cutoff = new Date(retentionCutoffIso(ms, months)).getTime();
       expect(cutoff).toBeLessThanOrEqual(ms);
     }
+  });
+});
+
+// ---------------------------------------------------------------------------
+// runLeadRetentionPurge extras scrub
+// ---------------------------------------------------------------------------
+
+const RET_LEAD_ID = "lead-ret-001";
+const RET_NOW_MS = Date.UTC(2026, 6, 7, 12, 0, 0); // 2026-07-07T12:00:00.000Z
+const RET_NOW_ISO = new Date(RET_NOW_MS).toISOString();
+
+describe("runLeadRetentionPurge extras scrub", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+    mockAdminUpdateRet.mockResolvedValue({ ok: true, status: 200, data: [] });
+  });
+
+  it("stamps anonymised_at, removes role_detail, and preserves form_id and honeypot flags", async () => {
+    mockAdminSelectRet.mockResolvedValue({
+      ok: true,
+      status: 200,
+      data: [
+        {
+          id: RET_LEAD_ID,
+          email: "jane@example.com",
+          extras: {
+            form_id: "exit_intent",
+            role_detail: "Executor of an estate",
+            honeypot: false,
+          },
+        },
+      ],
+    });
+
+    await runLeadRetentionPurge({ dryRun: false, nowMs: RET_NOW_MS });
+
+    const leadsCall = mockAdminUpdateRet.mock.calls.find(([table]) => table === "leads");
+    expect(leadsCall).toBeDefined();
+    const [,, patch] = leadsCall as [string, Record<string, string>, Record<string, unknown>];
+    const extras = patch.extras as Record<string, unknown>;
+    expect(extras.anonymised_at).toBe(RET_NOW_ISO);
+    expect("role_detail" in extras).toBe(false);
+    expect(extras.form_id).toBe("exit_intent");
+    expect(extras.honeypot).toBe(false);
+  });
+
+  it("stamps anonymised_at and omits role_detail when extras is null", async () => {
+    mockAdminSelectRet.mockResolvedValue({
+      ok: true,
+      status: 200,
+      data: [{ id: RET_LEAD_ID, email: "jane@example.com", extras: null }],
+    });
+
+    await runLeadRetentionPurge({ dryRun: false, nowMs: RET_NOW_MS });
+
+    const leadsCall = mockAdminUpdateRet.mock.calls.find(([table]) => table === "leads");
+    expect(leadsCall).toBeDefined();
+    const [,, patch] = leadsCall as [string, Record<string, string>, Record<string, unknown>];
+    const extras = patch.extras as Record<string, unknown>;
+    expect(extras.anonymised_at).toBe(RET_NOW_ISO);
+    expect("role_detail" in extras).toBe(false);
+  });
+
+  it("returns dryRun:true and does not call adminUpdate when dryRun is set", async () => {
+    mockAdminSelectRet.mockResolvedValue({
+      ok: true,
+      status: 200,
+      data: [
+        { id: RET_LEAD_ID, email: "jane@example.com", extras: { role_detail: "Executor" } },
+      ],
+    });
+
+    const result = await runLeadRetentionPurge({ dryRun: true, nowMs: RET_NOW_MS });
+
+    expect(result.dryRun).toBe(true);
+    expect(result.candidates).toBe(1);
+    expect(mockAdminUpdateRet).not.toHaveBeenCalled();
+  });
+
+  it("skips rows that already contain anonymised_at in extras", async () => {
+    mockAdminSelectRet.mockResolvedValue({
+      ok: true,
+      status: 200,
+      data: [
+        {
+          id: RET_LEAD_ID,
+          email: "redacted@invalid",
+          extras: { anonymised_at: "2026-04-01T00:00:00.000Z", role_detail: "old" },
+        },
+      ],
+    });
+
+    const result = await runLeadRetentionPurge({ dryRun: false, nowMs: RET_NOW_MS });
+
+    expect(result.candidates).toBe(0);
+    const leadsUpdates = mockAdminUpdateRet.mock.calls.filter(([table]) => table === "leads");
+    expect(leadsUpdates).toHaveLength(0);
   });
 });

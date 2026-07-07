@@ -7,6 +7,7 @@ import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
 import { submitPropertyLead, type PropertyLeadPayload } from "@/lib/leads/submit-client";
 import { validateEnquiryParts, composeEnquiryMessage, SITUATION_MIN_CHARS } from "@/lib/leads/enquiry-message";
+import { OTHER_ROLE_VALUE, buildRoleExtras, buildThankYouUrl } from "@/lib/leads/capture-steps";
 import { useFormTracking } from "@/components/analytics/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { setBookingNudge } from "@accounting-network/web-shared/analytics/visitMemory";
@@ -39,6 +40,7 @@ export function LeadForm({
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
   const [situationLen, setSituationLen] = useState(0);
+  const [role, setRole] = useState("");
   const ft = useFormTracking("lead_form");
 
   useEffect(() => {
@@ -69,6 +71,9 @@ export function LeadForm({
 
     if (!role) errs.role = "Select your landlord type.";
 
+    const roleDetail = String(data.get("roleDetail") || "").trim();
+    if (role === OTHER_ROLE_VALUE && !roleDetail) errs.roleDetail = "Tell us what best describes you.";
+
     const situation = String(data.get("situation") || "").trim();
     const prompted = String(data.get("prompted") || "").trim();
     const callGoal = String(data.get("callGoal") || "").trim();
@@ -98,6 +103,7 @@ export function LeadForm({
     const situation = String(data.get("situation") || "").trim();
     const prompted = String(data.get("prompted") || "").trim();
     const callGoal = String(data.get("callGoal") || "").trim();
+    const roleDetail = String(data.get("roleDetail") || "").trim();
     const payload: PropertyLeadPayload = {
       full_name: String(data.get("fullName") || "").trim(),
       email: String(data.get("email") || "").trim(),
@@ -116,6 +122,7 @@ export function LeadForm({
       // Stitch this lead to its anonymous first-party journey (no-op if untracked).
       visitor_id: getVisitorId() || undefined,
       session_id: getSessionId() || undefined,
+      extras: buildRoleExtras(String(data.get("role") || "").trim(), roleDetail),
     };
 
     const result = await submitPropertyLead(payload, honeypotValue);
@@ -158,11 +165,10 @@ export function LeadForm({
     if (result.bookingToken) setBookingNudge(result.bookingToken, Date.now() + 14 * 24 * 3600000);
 
     if (redirectOnSuccess) {
-      // Carry the signed booking token so the thank-you page can offer the
-      // native slot picker straight away (the highest-intent moment).
-      const bt = result.bookingToken ? `?bt=${encodeURIComponent(result.bookingToken)}` : "";
+      // Carry the signed booking token and originating page so the thank-you
+      // page can offer the slot picker and a return link at the highest-intent moment.
       setTimeout(() => {
-        router.push(`/thank-you${bt}`);
+        router.push(buildThankYouUrl(result.bookingToken, window.location.pathname + window.location.search + window.location.hash));
       }, 800);
     }
   }
@@ -199,6 +205,7 @@ export function LeadForm({
           className={fieldClass}
           aria-invalid={!!fieldErrors.role}
           aria-describedby={fieldErrors.role ? "role-error" : undefined}
+          onChange={(e) => setRole(e.target.value)}
         >
           <option value="">Select...</option>
           {niche.lead_form.role_options.map((opt) => (
@@ -213,6 +220,30 @@ export function LeadForm({
           </p>
         )}
       </div>
+
+      {role === OTHER_ROLE_VALUE && (
+        <div>
+          <label htmlFor="roleDetail" className="block text-sm font-semibold text-slate-900">
+            Tell us what best describes you
+          </label>
+          <input
+            type="text"
+            id="roleDetail"
+            name="roleDetail"
+            required
+            autoComplete="off"
+            maxLength={150}
+            className={fieldClass}
+            aria-invalid={!!fieldErrors.roleDetail}
+            aria-describedby={fieldErrors.roleDetail ? "roleDetail-error" : undefined}
+          />
+          {fieldErrors.roleDetail && (
+            <p id="roleDetail-error" className="mt-1.5 text-xs font-medium text-red-600">
+              {fieldErrors.roleDetail}
+            </p>
+          )}
+        </div>
+      )}
 
       <div>
         <label htmlFor="fullName" className="block text-sm font-semibold text-slate-900">

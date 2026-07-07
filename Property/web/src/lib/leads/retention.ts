@@ -145,6 +145,7 @@ export async function runLeadRetentionPurge(opts: {
         ...existingExtras,
         anonymised_at: nowIso,
       };
+      delete mergedExtras.role_detail; // free text; must not outlive the retention window
 
       // 1. Strip PII from the leads row.
       const leadsRes = await adminUpdate<unknown>(

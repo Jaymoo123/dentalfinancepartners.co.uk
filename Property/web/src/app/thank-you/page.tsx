@@ -3,6 +3,7 @@ import Link from "next/link";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import BookingPicker from "@/components/forms/BookingPicker";
+import { isSafeReturnPath } from "@/lib/leads/capture-steps";
 
 export const metadata: Metadata = {
   title: `Thank you | ${siteConfig.name}`,
@@ -26,7 +27,7 @@ const CheckIcon = () => (
 export default async function ThankYouPage({
   searchParams,
 }: {
-  searchParams: Promise<{ confirmed?: string; bt?: string; optout?: string }>;
+  searchParams: Promise<{ confirmed?: string; bt?: string; optout?: string; rt?: string }>;
 }) {
   const params = await searchParams;
   const confirmed = params.confirmed === "1";
@@ -34,6 +35,8 @@ export default async function ThankYouPage({
   // Signed booking token from the submit response: enables the inline native
   // slot picker at the highest-intent moment, straight after the form.
   const bookingToken = (params.bt ?? "").trim() || null;
+  const rawRt = params.rt ?? "";
+  const returnPath = isSafeReturnPath(rawRt) ? rawRt : null;
   // The enhanced "we have just messaged you" copy is only truthful once nurture
   // is armed. While dormant we must not tell people to watch for outreach that
   // will never arrive, so we fall back to honest "we will be in touch" copy.
@@ -165,6 +168,11 @@ export default async function ThankYouPage({
             <Link href="/blog" className="inline-flex items-center justify-center border-2 border-slate-300 bg-white px-8 py-3.5 text-base font-bold text-slate-900 transition-all hover:border-emerald-600 hover:bg-slate-50">
               Read property tax insights
             </Link>
+            {returnPath && (
+              <Link href={returnPath} data-cta="thankyou-return-article" data-cta-placement="thank_you" className="inline-flex items-center justify-center border-2 border-slate-300 bg-white px-8 py-3.5 text-base font-bold text-slate-900 transition-all hover:border-emerald-600 hover:bg-slate-50">
+                Back to the page you were reading
+              </Link>
+            )}
           </div>
         </div>
       </div>

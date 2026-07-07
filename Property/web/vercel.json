@@ -8,6 +8,7 @@
     { "path": "/api/cron/lead-nurture", "schedule": "0 * * * *" },
     { "path": "/api/cron/lead-nurture-digest", "schedule": "0 7 * * *" },
     { "path": "/api/cron/lead-retention", "schedule": "30 3 * * *" },
-    { "path": "/api/cron/lead-reconcile", "schedule": "30 4 * * *" }
+    { "path": "/api/cron/lead-reconcile", "schedule": "30 4 * * *" },
+    { "path": "/api/cron/deploy-watch", "schedule": "30 7 * * *" }
   ]
 }

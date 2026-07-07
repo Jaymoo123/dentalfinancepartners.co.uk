@@ -13,6 +13,7 @@ import { getResend, getFromAddress } from "@/lib/resend";
 import { resolveLeadTo } from "@/lib/lead-routing";
 import { adminSelect } from "@/lib/supabase/admin";
 import { gatherLeadDossier, humanisePath, formatLatency, type LeadDossier } from "./dossier";
+import { roleLabel, surfaceLabel } from "./role-labels";
 
 interface LeadRow {
   id: string;
@@ -25,6 +26,7 @@ interface LeadRow {
   source_url: string | null;
   created_at: string;
   visitor_id: string | null;
+  extras?: Record<string, unknown> | null;
 }
 
 function esc(s: unknown): string {
@@ -91,6 +93,10 @@ export function buildHandoffEmail(
     ? `Booked callback: <strong>${esc(fmtTs(d.bookingStart))}</strong>`
     : "";
 
+  const extras = lead.extras ?? {};
+  const roleDetail = typeof extras.role_detail === "string" && extras.role_detail ? extras.role_detail : null;
+  const formId = typeof extras.form_id === "string" && extras.form_id ? extras.form_id : null;
+
   const detail = [
     row("Name", esc(lead.full_name)),
     row(
@@ -98,7 +104,9 @@ export function buildHandoffEmail(
       `${esc(ver.phone_e164 || lead.phone)} ${ver.phone_status ? `(${esc(ver.phone_status)}${ver.phone_carrier ? ", " + esc(ver.phone_carrier) : ""})` : ""}`,
     ),
     row("Email", `${esc(lead.email)} ${ver.email_status ? `(${esc(ver.email_status)})` : ""}`),
-    row("Role", esc(lead.role || "")),
+    row("Role", esc(roleLabel(lead.role))),
+    roleDetail ? row("In their words", esc(roleDetail)) : "",
+    formId ? row("Came via", esc(surfaceLabel(formId) ?? formId)) : "",
     row("How they responded", `<strong style="color:#047857;">${esc(reason)}</strong>`),
     d.responseLatencyMs !== null
       ? row("Response time", esc(`${formatLatency(d.responseLatencyMs)} after enquiring`))
@@ -187,7 +195,7 @@ export async function sendContactableHandoff(
 ): Promise<HandoffResult> {
   const leadRes = await adminSelect<LeadRow>("leads", {
     id: `eq.${leadId}`,
-    select: "id,full_name,email,phone,role,message,source,source_url,created_at,visitor_id",
+    select: "id,full_name,email,phone,role,message,source,source_url,created_at,visitor_id,extras",
     limit: "1",
   });
   const lead = leadRes.data[0];

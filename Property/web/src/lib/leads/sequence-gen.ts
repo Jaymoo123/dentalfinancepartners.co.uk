@@ -27,6 +27,7 @@ import { mintLeadToken } from "@accounting-network/web-shared/lead-nurture/token
 import { firstNameOf } from "@accounting-network/web-shared/lead-nurture/config";
 import { t0Variant } from "@/config/lead-nurture";
 import type { GeneratedStepCopy } from "@accounting-network/web-shared/lead-nurture/config";
+import { roleLabel } from "./role-labels";
 
 // ---------------------------------------------------------------------------
 // Constants
@@ -313,6 +314,7 @@ interface UserPromptOptions {
   situationEcho: string;
   promptedEcho?: string;
   role?: string;
+  role_detail?: string;
   intentCategory?: string;
   qualityScore?: number;
   journeyDigest: JourneyDigest | null;
@@ -356,7 +358,7 @@ function buildUserPrompt(opts: UserPromptOptions): string {
 Generate personalised follow-up copy for this property tax enquiry lead.
 
 LEAD CONTEXT:
-Role: ${opts.role || "Not specified"}
+Role: ${roleLabel(opts.role) || "Not specified"}${opts.role_detail ? ` (${opts.role_detail})` : ""}
 What they want from the review: ${opts.callGoalEcho}${opts.situationEcho ? `\nTheir situation (their own words): ${opts.situationEcho}` : ""}${opts.promptedEcho ? `\nWhat prompted their enquiry: ${opts.promptedEcho}` : ""}
 Intent category: ${opts.intentCategory || "general property tax"}
 Quality score: ${opts.qualityScore !== undefined ? `${opts.qualityScore}/5` : "not scored"}
@@ -455,6 +457,7 @@ interface LeadRow {
   message: string | null;
   source: string;
   visitor_id: string | null;
+  extras?: Record<string, unknown> | null;
 }
 
 // ---------------------------------------------------------------------------
@@ -517,12 +520,18 @@ async function runGeneration(
 
   const variant = t0Variant(leadId);
 
+  const roleDetail =
+    typeof lead.extras?.role_detail === "string" && lead.extras.role_detail
+      ? lead.extras.role_detail
+      : undefined;
+
   const system = buildSystemPrompt();
   const userPrompt = buildUserPrompt({
     callGoalEcho,
     situationEcho,
     promptedEcho: promptedEcho || undefined,
     role: lead.role || undefined,
+    role_detail: roleDetail,
     intentCategory,
     qualityScore,
     journeyDigest,
@@ -599,7 +608,7 @@ export async function generateLeadSequenceCopy(
 
   // Read lead
   const leadRes = await adminSelect<LeadRow>("leads", {
-    select: "id,full_name,role,message,source,visitor_id",
+    select: "id,full_name,role,message,source,visitor_id,extras",
     id: `eq.${leadId}`,
     limit: "1",
   });
@@ -719,7 +728,7 @@ export async function regenerateLeadCopy(leadId: string): Promise<void> {
 
   // Read lead
   const leadRes = await adminSelect<LeadRow>("leads", {
-    select: "id,full_name,role,message,source,visitor_id",
+    select: "id,full_name,role,message,source,visitor_id,extras",
     id: `eq.${leadId}`,
     limit: "1",
   });

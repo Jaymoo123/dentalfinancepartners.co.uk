@@ -20,6 +20,13 @@ import { usePathname } from "next/navigation";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
 import { submitPropertyLead } from "@/lib/leads/submit-client";
+import {
+  miniformsMultistepEnabled,
+  validateStep1,
+  buildRoleExtras,
+  OTHER_ROLE_VALUE,
+  MINI_MESSAGE_MIN_CHARS,
+} from "@/lib/leads/capture-steps";
 import { useFormTracking } from "@/components/analytics/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { track } from "@accounting-network/web-shared/analytics/track";
@@ -57,6 +64,13 @@ export function SpecialistWidget() {
   const [peekLine, setPeekLine] = useState<string | null>(null);
   const [peekVisible, setPeekVisible] = useState(false);
   const [composing, setComposing] = useState(false);
+  // Two-step composer state (flag-gated; unused when the multi-step flag is off).
+  const [step, setStep] = useState<1 | 2>(1);
+  const [role, setRole] = useState("");
+  const [roleDetail, setRoleDetail] = useState("");
+  const [question, setQuestion] = useState("");
+  const [email, setEmail] = useState("");
+  const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
 
   const openedRef = useRef(false);
   const engagedRef = useRef(false);
@@ -65,7 +79,11 @@ export function SpecialistWidget() {
   const visibleMsRef = useRef(0);
   const lastLineRef = useRef<string | null>(null);
   const lastPropsRef = useRef<Record<string, string | number> | null>(null);
-  const ft = useFormTracking("specialist_widget");
+  const stepHeaderRef = useRef<HTMLParagraphElement>(null);
+  const viewedStepRef = useRef<number | null>(null);
+  const multi = miniformsMultistepEnabled();
+  const ft = useFormTracking("specialist_widget", { flow: multi ? "multi" : "single" });
+  const { onStepView, onStepComplete, onStepBack } = ft;
 
   const active = !!ctx;
 
@@ -266,6 +284,20 @@ export function SpecialistWidget() {
     return () => window.clearTimeout(t);
   }, [active, suppressed, bookingNudge]);
 
+  // Two-step composer: announce + focus the step header on each step change and
+  // emit the step-view event (mirrors MiniCapture's stepped instrumentation).
+  useEffect(() => {
+    if (!multi || !open || !composing || status === "success") {
+      if (!composing) viewedStepRef.current = null;
+      return;
+    }
+    if (viewedStepRef.current !== step) {
+      viewedStepRef.current = step;
+      onStepView(step, step === 1 ? "question_role" : "email");
+      stepHeaderRef.current?.focus({ preventScroll: true });
+    }
+  }, [multi, open, composing, step, status, onStepView]);
+
   // ctx is null in /embed, /admin, or when the visitor opted out.
   if (!ctx) return null;
 
@@ -300,7 +332,14 @@ export function SpecialistWidget() {
   function onChip(goal: "calculator" | "question" | "call") {
     track("cta_click", { cta_id: `assistant_${goal}`, placement: "assistant_card", topic: topic?.key ?? "" });
     engage();
-    if (goal === "question") setComposing(true);
+    if (goal === "question") {
+      setComposing(true);
+      if (multi) {
+        setStep(1);
+        setFieldErrors({});
+        setError(null);
+      }
+    }
   }
 
   function dismissPeek() {
@@ -372,6 +411,86 @@ export function SpecialistWidget() {
     setStatus("success");
   }
 
+  // Multi-step composer, step 1 -> 2. Validates the question + role floor before
+  // advancing; the question floor uses the shared MINI_MESSAGE defaults.
+  function goToStep2() {
+    const errs = validateStep1({ role, roleDetail, message: question });
+    setFieldErrors(errs);
+    if (Object.keys(errs).length > 0) {
+      if (errs.role) ft.onError("role", "role_missing", 1);
+      if (errs.roleDetail) ft.onError("roleDetail", "role_missing", 1);
+      if (errs.message) {
+        ft.onError("message", question.trim().length < MINI_MESSAGE_MIN_CHARS ? "min_length" : "min_words", 1);
+      }
+      return;
+    }
+    onStepComplete(1, "question_role", { lead_role: role });
+    setStep(2);
+  }
+
+  function backToStep1() {
+    onStepBack(2, 1);
+    setError(null);
+    setStep(1);
+  }
+
+  // Final submit for the multi-step flow. Keeps the inline "[Specialist question]"
+  // prefix + email_only mode; adds the captured role (and role_detail) to extras.
+  async function submitMulti(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setError(null);
+    const data = new FormData(e.currentTarget);
+    // Honeypot handled exactly as the single flow: value-free diagnostic, never an early return.
+    const honeypot = String(data.get("enquiry_ref") || "").trim();
+    if (honeypot) ft.onError("enquiry_ref", "honeypot");
+    const trimmedEmail = email.trim();
+    if (!emailRe.test(trimmedEmail)) {
+      setFieldErrors({ email: "Enter a valid email address." });
+      ft.onError("email", "validation", 2);
+      return;
+    }
+    setFieldErrors({});
+    ft.onSubmit(2);
+    setStatus("loading");
+    const topicTag = topic ? ` (${topic.key})` : "";
+    const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
+    const payload = {
+      full_name: "",
+      email: trimmedEmail,
+      phone: "",
+      role,
+      message: `[Specialist question${topicTag}] ${question.trim()}`,
+      source: niche.content_strategy.source_identifier,
+      source_url: typeof window !== "undefined" ? window.location.href : "",
+      submitted_at: new Date().toISOString(),
+      consent_given: true,
+      consent_text: consentText,
+      consent_at: new Date().toISOString(),
+      visitor_id: getVisitorId() || undefined,
+      session_id: getSessionId() || undefined,
+      // capture_channel + trigger preserved exactly (nurture copy reads capture_channel);
+      // form_id + role_detail added for the multi-step flow.
+      extras: {
+        capture_channel: "assistant",
+        trigger: (lastPropsRef.current?.trigger as string) ?? "widget",
+        form_id: "specialist_widget",
+        ...(buildRoleExtras(role, roleDetail) ?? {}),
+      },
+      // Email + message only; the server routes this into the detail-capture
+      // sequence, which collects the missing name/phone before any DJH handoff.
+      captureMode: "email_only" as const,
+    };
+    const result = await submitPropertyLead(payload, honeypot);
+    if (!result.success) {
+      setStatus("error");
+      setError(result.error || "Something went wrong. Please try again.");
+      ft.onError("form", "server");
+      return;
+    }
+    ft.onLead({ source: payload.source, role: "specialist_widget" });
+    setStatus("success");
+  }
+
   return (
     <div className="fixed bottom-24 right-4 z-[55] flex flex-col items-end print:hidden">
       {open && (
@@ -419,7 +538,9 @@ export function SpecialistWidget() {
                   </svg>
                 </span>
                 <div className="max-w-[82%] rounded-2xl rounded-tl-sm border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-900 shadow-sm">
-                  Thanks, a specialist has your message and will be in touch by email. Please keep an eye on your inbox, and your spam or junk folder just in case, so our reply does not get missed.
+                  {multi
+                    ? "Sent. Check your email and phone now, we have just messaged you to arrange your free review."
+                    : "Thanks, a specialist has your message and will be in touch by email. Please keep an eye on your inbox, and your spam or junk folder just in case, so our reply does not get missed."}
                 </div>
               </div>
             ) : !composing ? (
@@ -459,8 +580,8 @@ export function SpecialistWidget() {
             </div>
           )}
 
-          {/* Composer — revealed when they choose "Ask a specialist" */}
-          {composing && status !== "success" && (
+          {/* Composer, revealed when they choose "Ask a specialist" (single-step, flag off) */}
+          {composing && status !== "success" && !multi && (
             <div className="border-t border-slate-200 bg-white p-3">
               <form
                 onSubmit={onSubmit}
@@ -488,6 +609,142 @@ export function SpecialistWidget() {
                 >
                   {status === "loading" ? "Sending..." : "Send to a specialist"}
                 </button>
+                <p className="text-[11px] leading-relaxed text-slate-500">
+                  {siteConfig.leadConsentText} See our{" "}
+                  <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-semibold text-emerald-700 underline">
+                    Privacy Policy
+                  </a>
+                  .
+                </p>
+              </form>
+            </div>
+          )}
+
+          {/* Two-step composer, revealed when they choose "Ask a specialist" (flag on).
+              Step 1 captures the question + role; step 2 captures email only (the
+              detail-capture sequence collects name/phone later by design). */}
+          {composing && status !== "success" && multi && (
+            <div className="border-t border-slate-200 bg-white p-3">
+              <form
+                onSubmit={submitMulti}
+                className="space-y-2"
+                noValidate
+                onFocusCapture={(e) => {
+                  const t = e.target;
+                  if ((t instanceof HTMLInputElement || t instanceof HTMLTextAreaElement) && t.name) ft.onFieldFocus(t.name);
+                }}
+                onBlurCapture={(e) => {
+                  const t = e.target;
+                  if ((t instanceof HTMLInputElement || t instanceof HTMLTextAreaElement) && t.name)
+                    ft.onFieldBlur(t.name, Boolean(t.value && t.value.trim()), t.name === "email" ? t.value.length : undefined);
+                }}
+              >
+                {/* Honeypot, non-semantic name so autofill/password managers don't target it (was company_url) */}
+                <input type="text" name="enquiry_ref" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-px w-px opacity-0" />
+
+                <p
+                  ref={stepHeaderRef}
+                  tabIndex={-1}
+                  aria-live="polite"
+                  className="text-xs font-semibold text-slate-600 focus:outline-none"
+                >
+                  {step === 1 ? "Step 1 of 2 · Your question" : "Step 2 of 2 · Your email"}
+                </p>
+
+                {step === 1 ? (
+                  <>
+                    <textarea
+                      name="question"
+                      required
+                      rows={3}
+                      maxLength={500}
+                      value={question}
+                      onChange={(e) => setQuestion(e.target.value)}
+                      placeholder="Your message to a specialist"
+                      aria-label="Your message to a specialist"
+                      className={inputClass}
+                      aria-invalid={!!fieldErrors.message}
+                      aria-describedby={fieldErrors.message ? "sw-question-error" : undefined}
+                    />
+                    {fieldErrors.message && <p id="sw-question-error" className="text-xs font-medium text-red-600">{fieldErrors.message}</p>}
+                    <select
+                      name="role"
+                      required
+                      value={role}
+                      onChange={(e) => setRole(e.target.value)}
+                      aria-label={niche.lead_form.role_label}
+                      className={inputClass}
+                      aria-invalid={!!fieldErrors.role}
+                      aria-describedby={fieldErrors.role ? "sw-role-error" : undefined}
+                    >
+                      <option value="" disabled>Select...</option>
+                      {niche.lead_form.role_options.map((opt) => (
+                        <option key={opt.value} value={opt.value}>{opt.label}</option>
+                      ))}
+                    </select>
+                    {fieldErrors.role && <p id="sw-role-error" className="text-xs font-medium text-red-600">{fieldErrors.role}</p>}
+                    {role === OTHER_ROLE_VALUE && (
+                      <>
+                        <input
+                          type="text"
+                          name="roleDetail"
+                          required
+                          maxLength={150}
+                          autoComplete="off"
+                          value={roleDetail}
+                          onChange={(e) => setRoleDetail(e.target.value)}
+                          placeholder="Tell us what best describes you"
+                          aria-label="Tell us what best describes you"
+                          className={inputClass}
+                          aria-invalid={!!fieldErrors.roleDetail}
+                          aria-describedby={fieldErrors.roleDetail ? "sw-role-detail-error" : undefined}
+                        />
+                        {fieldErrors.roleDetail && <p id="sw-role-detail-error" className="text-xs font-medium text-red-600">{fieldErrors.roleDetail}</p>}
+                      </>
+                    )}
+                    <button
+                      type="button"
+                      onClick={goToStep2}
+                      className="w-full rounded-lg bg-emerald-600 px-4 py-3 text-sm font-semibold text-white hover:bg-emerald-700"
+                    >
+                      Continue
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <input
+                      type="email"
+                      name="email"
+                      required
+                      autoComplete="email"
+                      maxLength={100}
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Your email"
+                      aria-label="Your email"
+                      className={inputClass}
+                      aria-invalid={!!fieldErrors.email}
+                      aria-describedby={fieldErrors.email ? "sw-email-error" : undefined}
+                    />
+                    {fieldErrors.email && <p id="sw-email-error" className="text-xs font-medium text-red-600">{fieldErrors.email}</p>}
+                    {error && <p className="text-xs font-medium text-red-600">{error}</p>}
+                    <button
+                      type="submit"
+                      disabled={status === "loading"}
+                      className="w-full rounded-lg bg-emerald-600 px-4 py-3 text-sm font-semibold text-white hover:bg-emerald-700 disabled:opacity-60"
+                    >
+                      {status === "loading" ? "Sending..." : "Send to a specialist"}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={backToStep1}
+                      className="text-xs font-medium text-slate-500 hover:text-slate-700"
+                    >
+                      Back
+                    </button>
+                  </>
+                )}
+
                 <p className="text-[11px] leading-relaxed text-slate-500">
                   {siteConfig.leadConsentText} See our{" "}
                   <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-semibold text-emerald-700 underline">

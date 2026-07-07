@@ -9,6 +9,7 @@
  */
 import { generateObject } from "ai";
 import { z } from "zod";
+import { surfaceLabel } from "./leads/role-labels";
 
 const MODEL = "anthropic/claude-opus-4-8";
 
@@ -68,6 +69,8 @@ export async function classifyLead(input: {
   message: string;
   role?: string;
   sourceUrl?: string;
+  role_detail?: string;
+  form_id?: string;
 }): Promise<LeadClassification | null> {
   const message = (input.message || "").trim();
   if (!message) return null;
@@ -76,7 +79,7 @@ export async function classifyLead(input: {
       model: MODEL,
       schema,
       system: SYSTEM,
-      prompt: `Enquiry message:\n"""${message.slice(0, 4000)}"""\n\nRole given: ${input.role ?? "unknown"}\nSubmitted from page: ${input.sourceUrl ?? "unknown"}\n\nClassify this enquiry.`,
+      prompt: `Enquiry message:\n"""${message.slice(0, 4000)}"""\n\nRole given: ${input.role ?? "unknown"}${input.role_detail ? `\nRole detail (their own words): ${input.role_detail}` : ""}\nCapture surface: ${input.form_id ? (surfaceLabel(input.form_id) ?? input.form_id) : "unknown"}\nSubmitted from page: ${input.sourceUrl ?? "unknown"}\n\nClassify this enquiry.`,
       temperature: 0,
     });
     return object as LeadClassification;

@@ -138,6 +138,7 @@ export function ExitIntentModal() {
           blurb={blurb}
           submitLabel="Request my review"
           className="mt-2"
+          postSubmit="redirect"
         />
       </div>
     </div>

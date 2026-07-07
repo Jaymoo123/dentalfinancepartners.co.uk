@@ -132,14 +132,14 @@ export async function POST(req: Request) {
   // 3. Dedupe (best-effort) against a recent same-email/phone lead, else insert.
   //    A dedupe hiccup must NEVER lose a lead, so it is isolated from the insert.
   let leadId: string | null = null;
-  let existingRow: { id: string; full_name: string; phone: string; message: string; status: string } | null = null;
+  let existingRow: { id: string; full_name: string; phone: string; message: string; status: string; extras: Record<string, unknown> | null } | null = null;
   try {
     // Dedupe on email only. Email is regex-validated and (as a standalone eq
     // filter) safe; folding phone into an `or=(...)` group risked breaking the
     // PostgREST filter on stray characters, and stored phones are raw anyway.
     const since = new Date(Date.now() - DEDUPE_WINDOW_MS).toISOString();
-    const existing = await adminSelect<{ id: string; full_name: string; phone: string; message: string; status: string }>("leads", {
-      select: "id,full_name,phone,message,status",
+    const existing = await adminSelect<{ id: string; full_name: string; phone: string; message: string; status: string; extras: Record<string, unknown> | null }>("leads", {
+      select: "id,full_name,phone,message,status,extras",
       source: `eq.${source}`,
       email: `eq.${email}`,
       created_at: `gte.${since}`,
@@ -191,6 +191,20 @@ export async function POST(req: Request) {
       const reopened =
         existingRow?.status === "closed" || existingRow?.status === "unreachable";
       if (reopened) dedupeUpdate.status = "nurturing";
+
+      // Merge extras so role_detail/form_id survive a resubmit. adminUpdate
+      // replaces the whole extras column, so the merge happens here in JS.
+      const priorExtras: Record<string, unknown> = { ...(existingRow?.extras ?? {}) };
+      const incomingExtras: Record<string, unknown> = { ...(baseRow.extras ?? {}) };
+      const mergedExtras: Record<string, unknown> = { ...priorExtras, ...incomingExtras };
+      if (role !== "Other") {
+        delete mergedExtras.role_detail;
+      }
+      // role === "Other" + incoming has role_detail -> already spread in above.
+      // role === "Other" + no incoming role_detail -> prior value retained (already in merged).
+      const bothExtrasEmpty =
+        Object.keys(priorExtras).length === 0 && Object.keys(incomingExtras).length === 0;
+      if (!bothExtrasEmpty) dedupeUpdate.extras = mergedExtras;
 
       await adminUpdate("leads", { id: `eq.${leadId}` }, dedupeUpdate);
       if (reopened) {

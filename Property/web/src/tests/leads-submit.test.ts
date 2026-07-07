@@ -455,6 +455,75 @@ describe("dedupe adopt (Wave 1 ENTRY-1)", () => {
   });
 });
 
+// ── 3b. Dedupe extras merge (role_detail coherence) ──────────────────────────
+
+describe("dedupe extras merge (role_detail coherence)", () => {
+  const EXTRAS_LEAD_ID = "existing-lead-extras-003";
+
+  function stubExtrasDedupeRow(extras: Record<string, unknown> | null) {
+    mockAdminSelect.mockReset();
+    mockAdminSelect
+      .mockResolvedValueOnce({
+        ok: true,
+        status: 200,
+        data: [
+          {
+            id: EXTRAS_LEAD_ID,
+            full_name: "Jane Smith",
+            phone: "07700900000",
+            message: "I want to reduce my tax bill",
+            status: "nurturing",
+            extras,
+          },
+        ],
+      })
+      .mockResolvedValue({ ok: true, status: 200, data: [] });
+    mockAdminInsert.mockResolvedValue({ ok: true, status: 201, data: [] });
+    stubVerify();
+  }
+
+  function getLeadsUpdatePatch(): Record<string, unknown> {
+    const calls = mockAdminUpdate.mock.calls.filter(([table]) => table === "leads");
+    expect(calls.length).toBeGreaterThanOrEqual(1);
+    const [,, patch] = calls[0] as [string, Record<string, string>, Record<string, unknown>];
+    return patch;
+  }
+
+  it("drops role_detail and keeps form_id when resubmitting with a non-Other role", async () => {
+    stubExtrasDedupeRow({ form_id: "exit_intent", role_detail: "executor" });
+    await POST(makeReq({ ...VALID_BODY, role: "Portfolio owner" }));
+    const patch = getLeadsUpdatePatch();
+    const extras = patch.extras as Record<string, unknown>;
+    expect(extras).toBeDefined();
+    expect(extras.form_id).toBe("exit_intent");
+    expect("role_detail" in extras).toBe(false);
+  });
+
+  it("replaces role_detail when resubmitting role Other with an incoming detail", async () => {
+    stubExtrasDedupeRow({ form_id: "exit_intent", role_detail: "executor" });
+    await POST(
+      makeReq({
+        ...VALID_BODY,
+        role: "Other",
+        extras: { form_id: "exit_intent", role_detail: "Trustee" },
+      }),
+    );
+    const patch = getLeadsUpdatePatch();
+    const extras = patch.extras as Record<string, unknown>;
+    expect(extras.role_detail).toBe("Trustee");
+    expect(extras.form_id).toBe("exit_intent");
+  });
+
+  it("retains prior role_detail when resubmitting role Other without an incoming detail", async () => {
+    stubExtrasDedupeRow({ form_id: "exit_intent", role_detail: "executor" });
+    await POST(makeReq({ ...VALID_BODY, role: "Other" }));
+    const patch = getLeadsUpdatePatch();
+    const extras = patch.extras as Record<string, unknown>;
+    expect(extras.role_detail).toBe("executor");
+    expect(extras.form_id).toBe("exit_intent");
+  });
+});
+
 // ── 4. New lead insert + enrolment ────────────────────────────────────────────
 
 describe("new lead (no dedupe match)", () => {
@@ -514,6 +583,22 @@ describe("new lead (no dedupe match)", () => {
     await POST(makeReq(VALID_BODY));
     // newlyEnrolled is false -> processLeadStep must not have been called
     expect(mockProcessLeadStep).not.toHaveBeenCalled();
+  });
+
+  it("persists extras.role_detail on the stored lead row (insert path)", async () => {
+    await POST(
+      makeReq({
+        ...VALID_BODY,
+        role: "Other",
+        extras: { form_id: "exit_intent", role_detail: "Executor of an estate" },
+      }),
+    );
+    const leadInsert = mockAdminInsert.mock.calls.find(([t]) => t === "leads");
+    expect(leadInsert).toBeDefined();
+    const [, row] = leadInsert as [string, Record<string, unknown>];
+    const extras = row.extras as Record<string, unknown>;
+    expect(extras.role_detail).toBe("Executor of an estate");
+    expect(extras.form_id).toBe("exit_intent");
   });
 });
 

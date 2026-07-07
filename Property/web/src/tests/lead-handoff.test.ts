@@ -200,6 +200,48 @@ describe("buildHandoffEmail()", () => {
     expect(html).not.toMatch(/[—–]/);
     expect(text).not.toMatch(/[—–]/);
   });
+
+  it("role 'landlord' falls back to raw value (raw-fallback test)", () => {
+    // BASE_LEAD has role: "landlord" which is not in the niche config map
+    const { html } = buildHandoffEmail(LEAD, DOSSIER, "replied by SMS");
+    expect(html).toContain("landlord");
+  });
+
+  it("role renders the config label for known values", () => {
+    const lead = { ...BASE_LEAD, role: "Portfolio owner", extras: null } as unknown as HandoffLead;
+    const { html } = buildHandoffEmail(lead, DOSSIER, "replied by SMS");
+    expect(html).toContain("Portfolio owner (4-10 properties)");
+  });
+
+  it("renders 'In their words' row when extras.role_detail is present", () => {
+    const lead = {
+      ...BASE_LEAD,
+      extras: { role_detail: "I have about 8 buy-to-let flats" },
+    } as unknown as HandoffLead;
+    const { html } = buildHandoffEmail(lead, DOSSIER, "replied by SMS");
+    expect(html).toContain("In their words");
+    expect(html).toContain("I have about 8 buy-to-let flats");
+  });
+
+  it("does not render 'In their words' row when extras.role_detail is absent", () => {
+    const { html } = buildHandoffEmail(LEAD, DOSSIER, "replied by SMS");
+    expect(html).not.toContain("In their words");
+  });
+
+  it("renders 'Came via' row with surface label when extras.form_id is present", () => {
+    const lead = {
+      ...BASE_LEAD,
+      extras: { form_id: "lead_form" },
+    } as unknown as HandoffLead;
+    const { html } = buildHandoffEmail(lead, DOSSIER, "replied by SMS");
+    expect(html).toContain("Came via");
+    expect(html).toContain("Contact form (full enquiry)");
+  });
+
+  it("does not render 'Came via' row when extras.form_id is absent", () => {
+    const { html } = buildHandoffEmail(LEAD, DOSSIER, "replied by SMS");
+    expect(html).not.toContain("Came via");
+  });
 });
 
 // ── sendContactableHandoff orchestration ──────────────────────────────────────

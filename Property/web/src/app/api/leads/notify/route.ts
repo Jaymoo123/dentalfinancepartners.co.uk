@@ -20,6 +20,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import crypto from "node:crypto";
 import { getResend, getFromAddress } from "@/lib/resend";
 import { resolveLeadCc, resolveLeadTo, ccExcludedSources } from "@/lib/lead-routing";
+import { roleLabel, surfaceLabel } from "@/lib/leads/role-labels";
 
 export const runtime = "nodejs";
 export const maxDuration = 30;
@@ -40,6 +41,7 @@ type LeadRecord = {
   consent_given?: boolean;
   consent_text?: string;
   consent_at?: string;
+  extras?: Record<string, unknown> | null;
 };
 
 type WebhookPayload = {
@@ -53,17 +55,37 @@ type WebhookPayload = {
 // timestamp, the free-text message and the lead id are presented separately (header,
 // message block and footer), so they are not listed here. To add, remove or reorder
 // a table row, edit this array; `kind` controls how the value renders.
+// `optional: true` suppresses the row entirely when the value is empty (rather than
+// showing "Not provided"), suitable for supplementary fields like role_detail.
 //
 // Single source of truth for both the HTML table and the plain-text fallback.
 type DetailField = {
   label: string;
   get: (r: LeadRecord) => string | undefined;
   kind?: "url" | "pill";
+  optional?: boolean;
 };
 const DETAIL_FIELDS: DetailField[] = [
   { label: "Email", get: (r) => r.email },
   { label: "Phone", get: (r) => r.phone },
-  { label: "Role", get: (r) => r.role },
+  { label: "Role", get: (r) => roleLabel(r.role) || undefined },
+  {
+    label: "In their words",
+    get: (r) => {
+      const d = r.extras?.role_detail;
+      return typeof d === "string" && d ? d : undefined;
+    },
+    optional: true,
+  },
+  {
+    label: "Came via",
+    get: (r) => {
+      const fid = r.extras?.form_id;
+      if (typeof fid !== "string" || !fid) return undefined;
+      return surfaceLabel(fid) ?? fid;
+    },
+    optional: true,
+  },
   { label: "Company / practice", get: (r) => r.practice_name },
   { label: "Site", get: (r) => prettySource(r.source) },
   { label: "Source page", get: (r) => r.source_url, kind: "url" },
@@ -134,12 +156,18 @@ function buildHtml(r: LeadRecord, partnerCopied: boolean): string {
   const received = formatTimestamp(r.created_at);
   const message = (r.message ?? "").trim();
 
-  const detailRows = DETAIL_FIELDS.map(
-    (field) => `<tr>
+  const detailRows = DETAIL_FIELDS
+    .filter((field) => {
+      if (!field.optional) return true;
+      const val = (field.get(r) ?? "").toString().trim();
+      return val.length > 0;
+    })
+    .map(
+      (field) => `<tr>
                   <td style="padding:11px 0;border-bottom:1px solid #f1f5f9;color:#64748b;font-size:13px;font-weight:600;vertical-align:top;word-break:break-word;">${escapeHtml(field.label)}</td>
                   <td style="padding:11px 0 11px 16px;border-bottom:1px solid #f1f5f9;color:#0f172a;font-size:14px;font-weight:500;vertical-align:top;word-break:break-word;overflow-wrap:break-word;">${renderCell(field, r)}</td>
                 </tr>`,
-  ).join("");
+    ).join("");
 
   // Always render the message block so the field never silently disappears; an
   // empty message shows a muted "Not provided" like the other detail fields, so
@@ -236,6 +264,7 @@ function buildText(r: LeadRecord, partnerCopied: boolean): string {
   lines.push("", "LEAD DETAILS");
   for (const field of DETAIL_FIELDS) {
     const raw = (field.get(r) ?? "").toString().trim();
+    if (field.optional && !raw) continue;
     lines.push(`${field.label}: ${raw || "Not provided"}`);
   }
   lines.push("", "MESSAGE", message || "Not provided");

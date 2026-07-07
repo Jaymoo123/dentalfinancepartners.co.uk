@@ -87,12 +87,12 @@ export function ResultGateModal({
           heading={topic?.ctaCopy || "Want a specialist to check your figure?"}
           blurb="A calculator gives the shape of the answer. Tell us your situation and a specialist will confirm your exact figure and the legitimate ways to reduce it, with no obligation."
           submitLabel="Get my figure confirmed"
-          successText="Thanks, we'll be in touch within 24 hours. Your result is below."
+          successText="Sent. Check your email and phone now, we have just messaged you to arrange your free review."
           className="mt-2"
           messagePlaceholder="The more detail the better. Tell us about the property or situation, rough figures, and what you're trying to work out. A couple of sentences is ideal."
           messageMinLength={40}
           messageMinWords={8}
-          onSuccess={onReveal}
+          onSuccess={() => window.setTimeout(onReveal, 1800)}
         />
 
         <button
