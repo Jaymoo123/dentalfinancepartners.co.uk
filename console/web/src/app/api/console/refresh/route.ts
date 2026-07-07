@@ -220,13 +220,13 @@ export async function GET(_req: NextRequest): Promise<NextResponse> {
           cap(ck("kpis:30d"),                () => getSiteKpis(sk, d30,          nowISO, c)),
           cap(ck("kpis:all"),                () => getSiteKpis(sk, allTime,      nowISO, c)),
           cap(ck("timeseries:30d"),          () => directTimeseries(sk, d30, nowISO, c)),
-          // Trends-page granularities — GB only (trends page default)
+          // Trends-page sub-day granularities — GB only, 24h window only (stay fast)
+          // timeseries:1h:30d (27s/site) and timeseries:1d:alltime (89s/site) exceed
+          // the cron budget and are intentionally omitted.
           ...(country === "GB" ? [
             cap(ck("timeseries:15min:24h"), () => directTimeseries(sk, h24, nowISO, c, "15 minutes")),
             cap(ck("timeseries:1h:24h"),    () => directTimeseries(sk, h24, nowISO, c, "1 hour")),
             cap(ck("timeseries:1h:7d"),     () => directTimeseries(sk, d7,  nowISO, c, "1 hour")),
-            cap(ck("timeseries:1h:30d"),    () => directTimeseries(sk, d30, nowISO, c, "1 hour")),
-            cap(ck("timeseries:1d:alltime"),() => directTimeseries(sk, allTime, nowISO, c)),
           ] : []),
           cap(ck("funnel"),                  () => getFunnelDaily(sk, c)),
           cap(ck("visitors"),                () => getTopVisitors(sk, 500, c)),

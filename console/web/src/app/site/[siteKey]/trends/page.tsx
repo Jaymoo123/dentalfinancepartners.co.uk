@@ -13,7 +13,7 @@ import { ConversionRateChart } from "@/components/ConversionRateChart";
 import { FunnelOverTimeChart } from "@/components/FunnelOverTimeChart";
 import { CumulativeChart } from "@/components/CumulativeChart";
 import { MultiSiteTrendChart } from "@/components/MultiSiteTrendChart";
-import { buildMultiSiteSeries, buildWeeklyAvgVisitors } from "@/lib/multiSiteSeries";
+import { buildMultiSiteSeries } from "@/lib/multiSiteSeries";
 
 type SiteEntry = {
   site_key: string;
@@ -66,8 +66,6 @@ export default function SiteTrendsPage() {
       `site:${siteKey}:timeseries:1h:24h:${countryParam}`,
       `site:${siteKey}:timeseries:1h:7d:${countryParam}`,
       `site:${siteKey}:timeseries:30d:${countryParam}`,
-      `site:${siteKey}:timeseries:1h:30d:${countryParam}`,
-      `site:${siteKey}:timeseries:1d:alltime:${countryParam}`,
       `site:${siteKey}:channels:all`,
       `site:${siteKey}:funnel:${countryParam}`,
     ],
@@ -83,8 +81,6 @@ export default function SiteTrendsPage() {
   const h24hourly  = cacheGet<TimePoint[]>(cache, `site:${siteKey}:timeseries:1h:24h:${countryParam}`, []);
   const w7hourly   = cacheGet<TimePoint[]>(cache, `site:${siteKey}:timeseries:1h:7d:${countryParam}`, []);
   const m30daily   = cacheGet<TimePoint[]>(cache, `site:${siteKey}:timeseries:30d:${countryParam}`, []);
-  const m30hourly  = cacheGet<TimePoint[]>(cache, `site:${siteKey}:timeseries:1h:30d:${countryParam}`, []);
-  const siteAllDaily = cacheGet<TimePoint[]>(cache, `site:${siteKey}:timeseries:1d:alltime:${countryParam}`, []);
   const channelRows  = cacheGet<ChannelRow[]>(cache, `site:${siteKey}:channels:all`, []);
   const funnelRows   = cacheGet<FunnelRow[]>(cache, `site:${siteKey}:funnel:${countryParam}`, []);
 
@@ -125,7 +121,6 @@ export default function SiteTrendsPage() {
     [m30daily],
     [funnelRows],
   );
-  const siteWeekly = buildWeeklyAvgVisitors(siteAllDaily, siteKey, siteName, "#059669");
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10">
@@ -152,19 +147,6 @@ export default function SiteTrendsPage() {
           label="Lead conversion rate"
           asPercent
           note="converted sessions / sessions, 7-day rolling"
-        />
-      </div>
-
-      <h2 className="mt-8 text-lg font-bold text-slate-900">Visitor trend (weekly average)</h2>
-      <p className="mt-1 text-xs text-slate-500">
-        Each point is one week; the value is that week&apos;s average visitors per day. All time.
-      </p>
-      <div className="mt-3 max-w-2xl">
-        <MultiSiteTrendChart
-          data={siteWeekly.points}
-          series={siteWeekly.series}
-          label="Avg daily visitors · per week"
-          note="all time"
         />
       </div>
 
@@ -196,8 +178,6 @@ export default function SiteTrendsPage() {
         <TrendChart data={m30daily} metric="sessions" label="Sessions · daily" formatType="day" />
         <TrendChart data={m30daily} metric="humans" label="Visitors · daily" formatType="day" />
         <TrendChart data={m30daily} metric="leads" label="Leads · daily" formatType="day" />
-        <TrendChart data={m30hourly} metric="sessions" label="Sessions · hourly · 30 days" formatType="day" />
-        <TrendChart data={m30hourly} metric="humans" label="Visitors · hourly · 30 days" formatType="day" />
       </div>
 
       <h2 className="mt-8 text-lg font-bold text-slate-900">Leads</h2>
