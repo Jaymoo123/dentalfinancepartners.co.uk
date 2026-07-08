@@ -62,6 +62,7 @@ Dentists is indexed and earning impressions for its head family ("accountants fo
 - Wave 1 surfaced a rewrite-engine backlog (FA-2026 rate-currency staleness: BADR 10% pages, sole-trader-vs-ltd "saves £5k", pre-FA-2026 dividend pages) — see wave1_page_tracker flags F-1..F-4.
 
 - SERP META BATCH 1 (2026-06-12): 35 pages re-titled/re-described from fresh 90d GSC + Bing query data, deployed + IndexNow'd; 90-day regression watch in monitored_pages (to 2026-09-10); engine + methodology in docs/_engines/SERP_META_PROGRAM.md; content-gap follow-ups in docs/dentists/opportunity_register_meta_2026-06-12.md.
+- SERP META BATCH 2 (2026-07-08): 10 pages, Opus copy + Sonnet adversarial QA, DEPLOYED + IndexNow'd; monitored to 2026-10-06. how-to-value-a-uk-dental-practice-2026 re-angled to worth-intent to avoid title/query collision with dental-practice-valuation-methods-uk (the stronger page for 'dental practice valuation uk'). Estate readouts: docs/_engines/meta_batch1_verdicts_2026-07.md + OPPORTUNITY_READOUT_2026-07.md. Batch-1 26d pre-read: imp 186->658, clicks 2->4 (uda-value page = cleanest CTR win). Dominant untouched fact: homepage holds 4,825 imp / 1 click and head terms (accountants for dentists 1,081 imp) rank pos 44-70 = AUTHORITY/core-page problem, not meta.
 
 ## Blog audit + rewrite program (2026-06-12)
 
