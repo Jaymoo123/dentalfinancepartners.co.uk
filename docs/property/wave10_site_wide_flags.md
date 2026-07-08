@@ -160,4 +160,27 @@ No §-ref in house_positions covers the £1,000 property income allowance (ITTOI
 
 ---
 
+## F-41 -- INTERNAL_LINK -- fic-estate-planning page should back-link to A1 pillar (portfolio-landlord-tax-planning-strategy-guide)
+
+**Raised by:** Stage 2 sub-agent Session A (S2-ENTITY), 2026-07-09, during A1 full-brief extension.
+
+**Issue:** The existing page `fic-estate-planning-landlord-portfolio-value-freezing-iht-mechanics` covers IHT value-freeze mechanics for a FIC. It has no internal link to the new Wave 10 pillar `portfolio-landlord-tax-planning-strategy-guide`, which is the integrating strategy page for the whole portfolio cluster. The pillar needs back-links from existing adjacent pages to signal cluster authority.
+
+**Required action (back-patch at wave-close):** Add a one-line cross-link signpost to `portfolio-landlord-tax-planning-strategy-guide` in the existing fic-estate-planning page -- e.g. in the intro or a "see also" section.
+
+**Blocking:** Does not block. Back-patch at step 6 of WRAP.
+
+---
+
+## F-42 -- BRIEF_DRIFT -- CA 2006 s.629 cited as "variation of class rights" in Stage 1 A10 seed brief -- WRONG
+
+**Raised by:** Stage 2 sub-agent Session A (S2-ENTITY), 2026-07-09, during A10 (family-investment-company-mechanics-share-classes-property) brief extension.
+
+**Issue:** The Stage 1 seed brief for A10 (family-investment-company-mechanics-share-classes-property) cited CA 2006 s.629 as the provision governing variation of class rights. WebFetch of legislation.gov.uk/ukpga/2006/46/section/629 (confirmed HTTP 200 2026-07-09) shows s.629 is headed "Classes of shares" -- a definitional provision (shares are of one class if rights are in all respects uniform). The variation-of-class-rights provision is CA 2006 **s.630** ("Variation of class rights: companies having a share capital" -- confirmed HTTP 200: requires 75% written consent or special resolution of the class). The Stage 2 brief for A10 has been corrected throughout to cite s.630.
+
+**Required action:** No action needed on the Stage 1 seed brief (Stage 2 correction sufficient). RUN-phase writer for A10 must cite s.630 (not s.629) for variation of class rights.
+
+**Blocking:** Does not block; corrected in Stage 2 brief.
+
+---
 
