@@ -43,9 +43,11 @@ faqs:
     answer: "You need: the original purchase contract (showing the price in foreign currency and the completion date), evidence of the exchange rate on each transaction date (bank statements, conveyancer records, or a published rate source), receipts for enhancement expenditure with dates paid, the sale contract showing the sale price and completion date, evidence of incidental disposal costs (estate agent fees, legal fees, conveyancer costs) with dates paid, and the foreign tax assessment or receipt showing foreign tax paid on the same gain. For FTCR, HMRC may require evidence that the foreign tax has actually been paid, not merely assessed."
 ---
 
-<p>This page is for UK tax residents who own property located outside the UK and are considering selling it, or who have recently sold. The question this page answers is: how does UK capital gains tax work on an overseas property disposal? This is the <strong>opposite</strong> situation from a non-UK resident selling UK property. If you are a non-UK resident selling a UK property, <a href="/blog/non-resident-landlord-tax/non-resident-cgt-selling-uk-property-overseas-guide">see our non-resident CGT guide instead</a> as completely different rules apply.</p>
+<p>UK tax residents pay CGT on worldwide gains under TCGA 1992 s.1(1), including property located overseas. Two points catch most people: first, each amount in the computation converts to sterling at the spot rate on its own transaction date (Bentley v Pike [1981] 53 TC 590; HMRC CG78310), not a single conversion of the net gain; second, the 60-day UK property return does not apply to overseas disposals at all. You report on SA108 and the foreign supplementary pages (SA106) by 31 January after the tax year of sale. Foreign tax already paid on the same gain is creditable under TIOPA 2010, capped at the lower of the foreign tax and the UK CGT attributable to that gain.</p>
 
-<p>The technical content most readers miss: the FX conversion rule that requires two different spot rates (one for purchase, one for sale), the fact that the 60-day UK property return does <strong>not</strong> apply to overseas disposals, and how Foreign Tax Credit Relief under TIOPA 2010 interacts with a UK CGT bill. This guide covers all three, with a worked example based on a Spanish apartment disposal, and a clear reporting roadmap via SA108 and the foreign supplementary pages.</p>
+<p>This page is for UK tax residents who own property located outside the UK and are considering selling it, or who have recently sold. This is the <strong>opposite</strong> situation from a non-UK resident selling UK property. If you are a non-UK resident selling a UK property, <a href="/blog/non-resident-landlord-tax/non-resident-cgt-selling-uk-property-overseas-guide">see our non-resident CGT guide instead</a> as completely different rules apply.</p>
+
+<p>The technical content most readers miss: the FX conversion rule that requires two different spot rates (one for purchase, one for sale), the 60-day non-application, and how Foreign Tax Credit Relief under TIOPA 2010 interacts with a UK CGT bill. This guide covers all three, with a worked example based on a Spanish apartment disposal, and a clear reporting roadmap via SA108 and the foreign supplementary pages.</p>
 
 <p>For the broader CGT framework, see our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT on property: complete guide</a>.</p>
 
@@ -324,7 +326,7 @@ faqs:
 
 <p>Practical note: if you bought an overseas property as a holiday home or investment, PPR does not apply for those periods, even if you spent time there. It requires occupation as your <em>main</em> residence. Occasional use of a holiday home does not qualify.</p>
 
-<p>Importantly, PPR only eliminates UK CGT. The overseas country may still charge its own tax on the gain even where PPR reduces the UK liability to nil. FTCR cannot be claimed against UK CGT that has already been reduced to nil by PPR.</p>
+<p>PPR eliminates UK CGT on the qualifying period, and nothing more. The overseas country charges its own tax on the gain regardless, and FTCR cannot be claimed against a UK liability that PPR has already reduced to nil, so the two reliefs do not combine.</p>
 
 <h2>Common scenarios</h2>
 
