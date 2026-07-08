@@ -1,0 +1,7 @@
+stage: 2b
+signed_off: 2026-07-09
+by: conductor (Fable)
+spot_checks: overseas-FX brief (s.252 fully stripped, only correction warnings remain), allowance brief (BN/BO/BP correct; s.783BM rent-a-room gate confirmed -> HP §41 amended), profit-extraction (2026/27 dividend rates clean, no 8.75/33.75 residue), NRL/BADR/SIPP cluster verified by S2 agent vs §22.X/§5.A/§40 with zero drift
+drift_closed: F-42 (CA 2006 s.629->s.630, corrected in brief)
+flag_corrections: F-51/F-52 closed - pages exist, 404s were un-nested URLs; writers must use /blog/<category>/<slug>
+open_for_wrap: F-41 (fic-estate-planning back-link), F-53 (cgt-gifting back-link), F-61 (IHTM lag - cite legislation directly), F-62 (gov.uk BADR URL relocate at write time)

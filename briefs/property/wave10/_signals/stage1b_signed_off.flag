@@ -1,0 +1,6 @@
+stage: 1b
+signed_off: 2026-07-08
+by: conductor (Fable, manager-direct locks)
+locks: HP 1.P, 5.A, 21.9, 29.13, 39, 40, 41 (commits 2a07bcc1, 1ea630c1, 69a5d980)
+flags_closed: F-11 F-12 F-13 F-21 F-22 F-31 F-32
+stage2_corrections: A9 strip TCGA s.252 (use Bentley v Pike/Capcount + CG78310); A5 use ss.783BN/BO/BP; A6 dividend attribution per HP 21.9; A8 PR-rate verify-at-write per HP 39; A12 LSA refs per HP 40
