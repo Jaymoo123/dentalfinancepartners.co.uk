@@ -23,6 +23,48 @@ Flags never block. Sessions continue work after flagging.
 
 ---
 
+## F-11 — HOUSE_POSITION_EXTENSION — SDLT on mortgage assumption in gifted-property transaction (NEW LOCK NEEDED)
+
+**Raised by:** Stage 1 sub-agent Session A, 2026-07-08, during A11 seed brief (gifting-property-and-deed-of-gift-tax-implications).
+
+**Issue:** No existing house position explicitly covers the SDLT treatment where a gifted property carries an outstanding mortgage and the donee assumes that mortgage. Under FA 2003 Sch 4 para 8, the outstanding mortgage balance constitutes chargeable consideration for SDLT; SDLT is therefore payable at standard residential rates on the debt assumed (including the 5% SDLT surcharge on additional dwellings where applicable). A pure gift with zero mortgage = zero consideration = no SDLT. This mechanics point is a frequent reader misconception ("gifts are free of SDLT").
+
+**Required action (manager at Stage 1b):** Add a sub-section to §1 (or §1.F) locking: (a) FA 2003 Sch 4 para 8 as the statutory anchor; (b) chargeable consideration = mortgage balance assumed; (c) SDLT at standard residential rates on that amount; (d) additional dwellings 5% surcharge applies where the donee already owns property.
+
+**Blocking:** Does not block A11 Stage 2; Stage 2 writer should reference "mortgage assumption = SDLT on debt assumed under FA 2003 Sch 4 para 8" with a note to verify verbatim wording at legislation.gov.uk.
+
+**Status:** OPEN
+
+---
+
+## F-12 — HOUSE_POSITION_EXTENSION — TCGA 1992 s.62(1) probate base cost (CGT on inherited property) — no dedicated HP lock
+
+**Raised by:** Stage 1 sub-agent Session A, 2026-07-08, during A8 seed brief (cgt-on-inherited-property-uk-probate-base-cost).
+
+**Issue:** §5 covers CGT rates, 60-day reporting, and personal representative rate (24%) but contains no locked position on s.62(1) itself: the rule that a legatee's CGT acquisition cost is the market value at the date of death (probate/IHT value), NOT the original purchase price. The IHT/CGT interaction (IHT probate value = CGT base cost; no double-charge on the same uplift) is also unanchored.
+
+**Required action (manager at Stage 1b):** Add a §5.A (CGT on inherited property — s.62 mechanics) covering: (a) s.62(1) statutory bright-line: base cost = market value at date of death; (b) personal representative vs. legatee disposal paths; (c) PR rate 24% vs. beneficiary rates 18%/24%; (d) 60-day return: applies only where UK land sold and tax is due — not automatically from the estate, only once the legatee has disposed; (e) deed of variation cross-reference (§22.2 already locked).
+
+**Blocking:** Does not block A8 Stage 2; Stage 2 writer to verify s.62(1) verbatim at legislation.gov.uk.
+
+**Status:** OPEN
+
+---
+
+## F-13 — HOUSE_POSITION_EXTENSION — CGT FX base-cost conversion and 60-day non-application to overseas property (NEW LOCK NEEDED)
+
+**Raised by:** Stage 1 sub-agent Session A, 2026-07-08, during A9 seed brief (cgt-overseas-property-uk-residents-foreign-disposals).
+
+**Issue:** §10 covers the DTA framework and foreign tax credit at a general level; §16 covers DTA article map. Neither locks the operational mechanics for a UK resident computing CGT on an overseas property disposal: (a) TCGA 1992 s.252 foreign-currency conversion rule (acquisition cost converted at acquisition-date spot rate; disposal proceeds at disposal-date spot rate — creating an embedded FX component in the gain); (b) explicit confirmation that the 60-day UK property return does NOT apply to overseas disposals (overseas gains go on the annual SA return only); (c) SA108 + foreign supplementary pages as the correct reporting path.
+
+**Required action (manager at Stage 1b):** Add §10.A (or extend §16) locking the three mechanics above, with s.252 TCGA 1992 as the primary citation for FX conversion. Also lock: treaty credit relief for foreign CGT is credit (not exemption) under TIOPA 2010 s.18 — this is already implied by §16.3 but should be made explicit for the overseas-disposal context.
+
+**Blocking:** Does not block A9 Stage 2; Stage 2 writer to WebFetch s.252 TCGA 1992 and TIOPA 2010 s.18 verbatim.
+
+**Status:** OPEN
+
+---
+
 ## F-21 — HOUSE_POSITION_EXTENSION — Serviced accommodation trading test for BADR (NEW LOCK NEEDED)
 
 **Raised by:** sub-agent S1-NRL-MISC, 2026-07-08, during A2 seed brief (business-asset-disposal-relief-residential-property-qualification).
@@ -32,6 +74,20 @@ Flags never block. Sessions continue work after flagging.
 **Required action (manager at Stage 1b):** Establish and lock the house position on the trading/investment distinction for short-let property operations post-FHL abolition. If the position cannot be cleanly locked (fact-dependent), lock the framing: "depends on level of services rendered; cite HMRC BIM22000+ indicators; advise specialist review."
 
 **Blocking:** Does not block A2 seed or Stage 2; Stage 2 writer should use cautious framing pending this lock.
+
+**Status:** OPEN
+
+---
+
+## F-22 — HOUSE_POSITION_EXTENSION — FA 2024 lump-sum allowance architecture for SIPP in-specie contributions (NEW LOCK NEEDED)
+
+**Raised by:** sub-agent S1-NRL-MISC, 2026-07-08, during A12 seed brief (buying-commercial-property-through-a-sipp).
+
+**Issue:** House position §22.21 (SIPP/SSAS commercial property lock) references the lifetime allowance abolition and instructs sessions to use the FA 2024 lump-sum allowance (LSA) and lump-sum-and-death-benefit allowance (LSDBA) architecture. However, §22.21 does not itself lock the FA 2024 provision numbers, the quantum of LSA/LSDBA, or the interaction with in-specie commercial property contributions. This gap means Stage 2 writers lack a house-position anchor for the in-specie contribution mechanics at the allowance level.
+
+**Required action (manager at Stage 1b):** Extend §22.21 (or add §22.21A) locking: (a) FA 2024 provision numbers for LSA and LSDBA; (b) LSA quantum (£268,275) and LSDBA quantum (£1,073,100) — verify at legislation.gov.uk; (c) how in-specie contribution of commercial property interacts with the annual allowance (£60,000 per §8) vs the lump-sum allowances (which govern tax-free cash / death benefits, not contribution limits).
+
+**Blocking:** Does not block A12 Stage 2; Stage 2 writer should note "in-specie contributions are subject to the annual allowance of £60,000 (§8); the FA 2024 lump-sum allowances govern tax-free cash and death-benefit mechanics, not the contribution itself" and flag this for HP lock.
 
 **Status:** OPEN
 

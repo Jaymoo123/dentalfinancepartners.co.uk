@@ -25,7 +25,7 @@ Tracker columns: status | pos | slug | category | body words | FAQ count | monit
 | [x] | A9 | cgt-overseas-property-uk-residents-foreign-disposals | capital-gains-tax | | | | S1 seed done |
 | [x] | A10 | family-investment-company-mechanics-share-classes-property | incorporation-and-company-structures | | | | S1 seed done |
 | [x] | A11 | gifting-property-and-deed-of-gift-tax-implications | capital-gains-tax | | | | S1 seed done; NEW LOCK NEEDED F-11 |
-| [ ] | A12 | buying-commercial-property-through-a-sipp | | | | | |
+| [x] | A12 | buying-commercial-property-through-a-sipp | portfolio-management | | | | S1 seed done 2026-07-08; F-22 raised |
 ---
 
 ## Sequencing constraints
