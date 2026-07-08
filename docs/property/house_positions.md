@@ -4016,7 +4016,7 @@ Verified by the manager at legislation.gov.uk + the GOV.UK measure page on 2026-
 
 - **£1,000 per tax year** (s.783BD). Full relief where relevant property income ≤ £1,000 (s.783BE): receipts AND expenses excluded (s.783BF). Partial relief by election (s.783BK): deduct £1,000 INSTEAD of actual expenses (ss.783BG-BH).
 - **Exclusions (correct section numbers):** income from one's employer (s.783BN), from a partnership where the individual is a partner/connected (s.783BO), from a close company where the individual is a participator/associate (s.783BP). The commonly-cited "s.783BM" for exclusions is WRONG.
-- Rent-a-room: no explicit interaction section in Part 6A; governed by general priority rules — a source within rent-a-room relief is handled there, not stacked with the property allowance.
+- Rent-a-room: **s.783BM is the explicit Part 6A exclusion gate** (Stage 2 catch, 2026-07-09): it blocks property-allowance relief on income within the rent-a-room regime. Different income sources can use each regime separately (rent-a-room on lodger income, property allowance on separate BTL income); never stack both on the same income.
 - Per person (each joint owner has their own £1,000 against their share).
 
 ## 21.9 Dividend rates 2026-27 numeric lock + CIHC letting carve-out — Wave 10 mini-lock (added 2026-07-08, manager source-verified)

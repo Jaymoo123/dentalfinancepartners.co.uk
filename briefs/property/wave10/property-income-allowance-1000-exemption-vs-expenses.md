@@ -16,7 +16,7 @@ The £1,000 Property Income Allowance: When to Use It and When to Claim Actual E
 
 ## Statutory anchor
 
-- **Primary:** ITTOIA 2005 Part 6A ss.783B-783BQ (property allowance: full relief, partial relief election, interaction with other reliefs, blocked situations) — NEW HP LOCK NEEDED (§29 and other §-refs do not cover the property allowance; s.24 HP covers finance-cost restriction only; see F-32 below)
+- **Primary:** ITTOIA 2005 Part 6A ss.783B-783BQ (property allowance: full relief, partial relief election, interaction with other reliefs, blocked situations) — HP §41 (LOCKED 2026-07-08 at Stage 1b; F-32 closed)
 - **Key sub-provisions to verify at Stage 2:**
   - s.783B: definition and scope of the property allowance
   - s.783BC: full relief (income at or below £1,000 = no Self Assessment liability on that income)

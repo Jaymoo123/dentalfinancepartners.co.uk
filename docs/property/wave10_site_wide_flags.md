@@ -186,6 +186,8 @@ No §-ref in house_positions covers the £1,000 property income allowance (ITTOI
 
 ## F-51 — INTERNAL_LINK — non-resident CGT reverse-flow page returned 404
 
+**CLOSED 2026-07-09 Stage 2b: NOT a dead page — non-resident-cgt-selling-uk-property-overseas-guide exists (category Non-Resident Landlord Tax). The 404 was an un-nested URL guess; internal links must use /blog/<category-slug>/<slug>. Writers: use nested path; link audit enforces.**
+
 **Raised by:** Stage 2 sub-agent S2-CGT-IHT (Session A), 2026-07-09, during A9 full-brief extension (cgt-overseas-property-uk-residents-foreign-disposals).
 
 **Issue:** The slug `non-resident-cgt-selling-uk-property-overseas-guide` returned HTTP 404 (checked 2026-07-08). This page is either unpublished, at a different URL, or deleted. The overseas-property brief references the reverse-flow page for the cannib guard (directional contrast between UK resident selling overseas vs. non-UK resident selling UK property). The brief cannot link to the reverse-flow page until a live URL is confirmed.
@@ -197,6 +199,8 @@ No §-ref in house_positions covers the £1,000 property income allowance (ITTOI
 ---
 
 ## F-52 — INTERNAL_LINK — IHT 7-year clock gifting page returned 404
+
+**CLOSED 2026-07-09 Stage 2b: NOT a dead page — iht-7-year-clock-property-gifting-mid-life-landlord-strategy exists (category Landlord Tax Essentials). Same nested-path correction as F-51.**
 
 **Raised by:** Stage 2 sub-agent S2-CGT-IHT (Session A), 2026-07-09, during A11 full-brief extension (gifting-property-and-deed-of-gift-tax-implications).
 
