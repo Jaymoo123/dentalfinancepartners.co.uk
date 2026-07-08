@@ -4003,3 +4003,23 @@ Verified by the manager at legislation.gov.uk + the GOV.UK measure page on 2026-
 - **SIPP borrowing cap:** FA 2004 s.182 formula (APB + PB) / VA ≤ 0.5 — total borrowing max 50% of net scheme assets.
 - **Residential property is "taxable property"** for investment-regulated schemes (FA 2004 Sch 29A); acquisition triggers unauthorised-payment charges under FA 2004 ss.208-209 (55% member charge + 15% scheme sanction surcharge — effective up to ~70%). Commercial property is permitted; connected-party purchases must be at market value; rent paid to the scheme must be arm's length.
 - Annual allowance £60,000 remains per §8.
+
+
+## 29.13 VAT residential conversions — Sch 7A Grp 6/7, Sch 8 Grp 5, s.35 DIY — Wave 10 sub-lock (added 2026-07-08, manager source-verified)
+
+- **5% reduced rate — VATA 1994 Sch 7A Group 6 "Residential conversions":** qualifying services (+ incorporated materials) in a qualifying conversion — changed number of dwellings, or non-residential → residential. **Group 7 "Residential renovations and alterations"** is the separate 5% group for renovating dwellings empty 2+ years. Do NOT attach the 2-year-empty condition to Group 6 (it belongs to Group 7).
+- **Zero rate — Sch 8 Group 5 Item 1(b):** first grant of a major interest by the person "converting a non-residential building or a non-residential part of a building into a building designed as a dwelling or number of dwellings". Note (7)(b): non-residential = 10+ years with no residential use; Note (9): converting only part must create additional dwellings.
+- **DIY converters refund:** VATA 1994 s.35 (non-business self-conversions; s.35(1D) definition; post-May-2024 evidence rules).
+- Interaction with an existing option to tax + CGS clawback: per §29.1/§29.5. VAT Notice 708 ss.6/7/18.
+
+## 41. Property income allowance — ITTOIA 2005 Part 6A — Wave 10 lock (added 2026-07-08, manager source-verified)
+
+- **£1,000 per tax year** (s.783BD). Full relief where relevant property income ≤ £1,000 (s.783BE): receipts AND expenses excluded (s.783BF). Partial relief by election (s.783BK): deduct £1,000 INSTEAD of actual expenses (ss.783BG-BH).
+- **Exclusions (correct section numbers):** income from one's employer (s.783BN), from a partnership where the individual is a partner/connected (s.783BO), from a close company where the individual is a participator/associate (s.783BP). The commonly-cited "s.783BM" for exclusions is WRONG.
+- Rent-a-room: no explicit interaction section in Part 6A; governed by general priority rules — a source within rent-a-room relief is handled there, not stacked with the property allowance.
+- Per person (each joint owner has their own £1,000 against their share).
+
+## 21.9 Dividend rates 2026-27 numeric lock + CIHC letting carve-out — Wave 10 mini-lock (added 2026-07-08, manager source-verified)
+
+- **Dividend rates from 6 April 2026 (ITA 2007 s.8 as in force): ordinary 10.75%, upper 35.75%, additional 39.35%.** FA 2026 s.4 amended ONLY the ordinary (8.75%→10.75%) and upper (33.75%→35.75%) rates; the 39.35% additional rate was already in force (FA 2022). Do not attribute 39.35% to FA 2026.
+- **CIHC (CTA 2010 s.18N):** a close company letting land COMMERCIALLY TO UNCONNECTED persons exists for a permitted purpose and is NOT a close investment-holding company (small profits rate available). Letting to connected persons/their family falls outside the carve-out → CIHC → main rate. State the connectedness condition whenever citing the carve-out.
