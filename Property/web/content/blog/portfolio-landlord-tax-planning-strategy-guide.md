@@ -7,7 +7,7 @@ generator: opus-4.8/netnew-wave
 author: "Property Tax Partners Editorial Team"
 category: "Portfolio Management"
 metaTitle: "Portfolio Landlord Tax Planning: The Strategy Guide"
-metaDescription: "Entity choice, S24 break-even, ATED governance, loss relief, profit extraction, and succession planning for UK portfolio landlords in one strategic framework."
+metaDescription: "Entity choice, S24 break-even, ATED, loss relief, profit extraction and succession planning for UK portfolio landlords in one strategic framework."
 altText: "UK portfolio landlord reviewing tax planning documents with adviser across a table with property files and financial spreadsheets"
 image: ""
 h1: "Portfolio Landlord Tax Planning: The Strategy Guide"
