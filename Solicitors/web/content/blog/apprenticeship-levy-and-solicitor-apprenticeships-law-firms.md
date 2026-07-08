@@ -1,55 +1,58 @@
 ---
-title: "The Apprenticeship Levy and Solicitor Apprenticeships: A Guide for Law Firms"
-slug: "apprenticeship-levy-and-solicitor-apprenticeships-law-firms"
-canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/apprenticeship-levy-and-solicitor-apprenticeships-law-firms"
-date: "2026-06-03"
+title: 'The Apprenticeship Levy and Solicitor Apprenticeships: A Guide for Law Firms'
+slug: apprenticeship-levy-and-solicitor-apprenticeships-law-firms
+canonical: https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/apprenticeship-levy-and-solicitor-apprenticeships-law-firms
+date: '2026-06-03'
 generator: opus-4.8/netnew-wave
-author: "Accounts for Lawyers Editorial Team"
-category: "Practice Finance & Cash Flow"
-metaTitle: "Apprenticeship Levy and Solicitor Apprenticeships: Law Firms"
-metaDescription: "How the apprenticeship levy applies to UK law firms: 0.5%, the £15,000 allowance, £3m threshold, 50% transfers and funding solicitor apprenticeships."
-altText: "Law firm finance lead reviewing the apprenticeship levy pay bill calculation and the apprenticeship service account"
-image: ""
-h1: "The Apprenticeship Levy and Solicitor Apprenticeships: A Guide for Law Firms"
-summary: "The apprenticeship levy is a payroll charge of 0.5% of an employer's annual pay bill, reduced by a £15,000 allowance, so in practice only firms with a pay bill over £3 million pay it. This guide explains how the levy is calculated, how the apprenticeship service account and co-investment work, the levy transfer (now up to 50% of the previous year's funds since 22 April 2024), and how levy funds can support the Level 7 solicitor apprenticeship, against a level 7 funding restriction that took effect from January 2026."
+author: Accounts for Lawyers Editorial Team
+category: Practice Finance & Cash Flow
+metaTitle: 'Apprenticeship Levy for Law Firms: Does Yours Pay?'
+metaDescription: Work out if your firm pays the apprenticeship levy. It bites only on a pay bill above £3 million, with the allowance wiping it out below that line.
+altText: Law firm finance lead reviewing the apprenticeship levy pay bill calculation and the apprenticeship service account
+image: ''
+h1: 'The Apprenticeship Levy and Solicitor Apprenticeships: A Guide for Law Firms'
+summary: The apprenticeship levy is a payroll charge of 0.5% of an employer's annual pay bill, reduced by a £15,000 allowance, so in practice only firms with a pay bill over £3 million pay it. This guide explains how the levy is calculated, how the apprenticeship service account and co-investment work, the levy transfer (now up to 50% of the previous year's funds since 22 April 2024), and how levy funds can support the Level 7 solicitor apprenticeship, against a level 7 funding restriction that took effect from January 2026.
 keyTakeaways:
-  - "The levy is 0.5% of the annual pay bill, reduced by a £15,000 allowance, so it effectively bites only on a pay bill over £3,000,000 per year. Larger firms pay it; smaller firms do not."
-  - "The pay bill is all earnings subject to employer (Class 1 secondary) NICs: wages, bonuses and commissions. Connected employers and multiple PAYE schemes share one £15,000 allowance."
-  - "A levy payer can transfer up to 50% of the previous year's funds to other employers (raised from 25% on 22 April 2024). Firms below £3m use government co-investment instead."
-  - "The Level 7 solicitor apprenticeship, with the SQE forming part of the end-point assessment, can be funded from the pot or co-investment, but government funding for level 7 was restricted from January 2026, so confirm current eligibility at source."
-  - "The levy itself is a deductible payroll cost. Whether SQE training costs are deductible is a separate question covered on our SQE costs page."
-schema: ""
+- The levy is 0.5% of the annual pay bill, reduced by a £15,000 allowance, so it effectively bites only on a pay bill over £3,000,000 per year. Larger firms pay it; smaller firms do not.
+- 'The pay bill is all earnings subject to employer (Class 1 secondary) NICs: wages, bonuses and commissions. Connected employers and multiple PAYE schemes share one £15,000 allowance.'
+- A levy payer can transfer up to 50% of the previous year's funds to other employers (raised from 25% on 22 April 2024). Firms below £3m use government co-investment instead.
+- The Level 7 solicitor apprenticeship, with the SQE forming part of the end-point assessment, can be funded from the pot or co-investment, but government funding for level 7 was restricted from January 2026, so confirm current eligibility at source.
+- The levy itself is a deductible payroll cost. Whether SQE training costs are deductible is a separate question covered on our SQE costs page.
+schema: ''
 faqs:
-  - question: "Does my law firm pay the apprenticeship levy?"
-    answer: "Only if your annual pay bill exceeds £3 million. The levy is 0.5% of the pay bill, reduced by a £15,000 annual allowance, and £15,000 is 0.5% of £3 million. So a firm with a pay bill at or below £3 million has the whole levy wiped out by the allowance, and a firm above £3 million pays the levy only on the excess. Most small and mid-sized firms do not pay it; large firms do."
-  - question: "How much is the apprenticeship levy?"
-    answer: "It is 0.5% of your annual pay bill, reduced by a £15,000 annual allowance spread across the year (£1,250 a month). The pay bill is all earnings subject to employer Class 1 secondary National Insurance, such as wages, bonuses and commissions. So a firm with a £4 million pay bill (2025/26) has a gross levy of £20,000, less the £15,000 allowance, leaving £5,000 payable across the year."
-  - question: "What is the £3 million threshold?"
-    answer: "It is the point at which the levy starts to cost anything. Because the levy is 0.5% of the pay bill and the £15,000 allowance equals 0.5% of £3 million, the allowance fully offsets the levy up to a £3 million pay bill. Above £3 million you pay 0.5% on the excess. HMRC also asks employers who expect to cross the threshold to operate the levy through PAYE, so estimate carefully if your pay bill is near £3 million."
-  - question: "What counts as the pay bill?"
-    answer: "The pay bill is all payments to employees that are subject to employer (Class 1 secondary) National Insurance contributions, such as wages, bonuses and commissions. It is the same base as your employer NIC, so your payroll already calculates it. It does not include payments not subject to secondary NIC. Partners' profit shares are not earnings subject to employer NIC, so a genuine partner's drawings do not form part of the pay bill."
-  - question: "Can a small law firm get apprenticeship funding without paying the levy?"
-    answer: "Yes. A firm below the £3 million pay-bill threshold does not have a levy pot, but it can still take on apprentices through government co-investment, where the government funds the large majority of the approved training cost and the employer pays a small share. A small firm can also receive a levy transfer from a larger firm. Confirm the current co-investment percentage and any full-funding categories at gov.uk before you budget."
-  - question: "How much can I transfer from my levy pot?"
-    answer: "A levy-paying firm can transfer up to 50% of the previous financial year's apprenticeship levy funds to other employers, a limit raised from 25% on 22 April 2024. So a large firm can fund a smaller firm's apprentices, for example a firm in its network, group or supply chain. Transfers are arranged through the apprenticeship service account, and the receiving employer uses the funds for approved apprenticeship training."
-  - question: "Can the levy fund a solicitor apprenticeship?"
-    answer: "Yes. Levy funds in the apprenticeship service account, or government co-investment for non-payers, can pay an approved training provider for an approved apprenticeship standard, including the Level 7 solicitor apprenticeship that incorporates the SQE. The funding pays for the training and assessment, subject to the apprentice meeting current eligibility rules. Note that government funding for level 7 was restricted from January 2026, so check eligibility before relying on it."
-  - question: "What is the Level 7 solicitor apprenticeship?"
-    answer: "It is an apprenticeship route to qualifying as a solicitor, taking a recruit through to qualification with the SQE assessments forming part of the end-point assessment. It is an alternative to the traditional degree plus self-funded SQE path: the apprentice works at the firm while training, and the training can be funded from levy funds or co-investment where the apprentice is eligible. The Institute for Apprenticeships and the SRA publish the standard and the qualification detail."
-  - question: "Has Level 7 funding changed?"
-    answer: "Yes. Government funding for the Level 7 solicitor apprenticeship was restricted from January 2026, broadly limiting government and levy funding for level 7 to younger apprentices and specific eligibility groups. The detail has been in flux, so do not treat any age band as settled. Confirm current eligibility with the training provider, the Institute for Apprenticeships and gov.uk before committing to fund a level 7 apprentice from your pot."
-  - question: "Do my levy funds expire?"
-    answer: "Levy funds in the apprenticeship service account are intended to be used within a limited window and are commonly described as expiring after a period on a first-in, first-out basis if not spent. The exact window is set by the current apprenticeship-funding rules, so check the present position rather than relying on a fixed figure. The practical message is the same: plan your apprentice intake so the pot is used rather than allowed to lapse."
-  - question: "Is the apprenticeship levy tax deductible?"
-    answer: "Yes. The levy is a payroll cost incurred wholly and exclusively for the purposes of the trade, so it is an allowable business expense (ITTOIA 2005 s.34 for an unincorporated firm, CTA 2009 for a company). It is deducted like other employment costs. Note that the training funded from the pot is paid with levy or government money, not a fresh firm expense, so you do not deduct the same cost twice."
-  - question: "Is the levy the same as claiming SQE training costs against tax?"
-    answer: "No, they are different questions. The levy is a payroll charge, and the pot funds approved apprenticeship training. The income-tax or corporation-tax deductibility of SQE and other training costs, whether employer-paid, reimbursed or self-funded by a locum, is a separate matter with its own rules. We cover that on our SQE training costs page. Keep the levy mechanism and the deductibility of training fees in separate boxes."
-  - question: "How is the levy collected?"
-    answer: "The levy is reported and paid through PAYE alongside your other payroll deductions, each month, using your payroll software or provider. You allocate the £15,000 annual allowance across the year (or share it across PAYE schemes and connected employers). Because it runs through PAYE on the same pay-bill base as employer NIC, your payroll function handles it as part of the monthly RTI submission."
-  - question: "Does the levy apply across the UK?"
-    answer: "The levy charge itself is UK-wide, collected through PAYE wherever the employer operates. But the apprenticeship service account and the apprenticeship-funding rules are England-specific. Scotland, Wales and Northern Ireland fund apprenticeships through their own devolved arrangements. So a firm with offices across the UK pays one UK-wide levy but accesses funded apprenticeships under the relevant nation's system."
+- question: Does my law firm pay the apprenticeship levy?
+  answer: Only if your annual pay bill exceeds £3 million. The levy is 0.5% of the pay bill, reduced by a £15,000 annual allowance, and £15,000 is 0.5% of £3 million. So a firm with a pay bill at or below £3 million has the whole levy wiped out by the allowance, and a firm above £3 million pays the levy only on the excess. Most small and mid-sized firms do not pay it; large firms do.
+- question: How much is the apprenticeship levy?
+  answer: It is 0.5% of your annual pay bill, reduced by a £15,000 annual allowance spread across the year (£1,250 a month). The pay bill is all earnings subject to employer Class 1 secondary National Insurance, such as wages, bonuses and commissions. So a firm with a £4 million pay bill (2025/26) has a gross levy of £20,000, less the £15,000 allowance, leaving £5,000 payable across the year.
+- question: What is the £3 million threshold?
+  answer: It is the point at which the levy starts to cost anything. Because the levy is 0.5% of the pay bill and the £15,000 allowance equals 0.5% of £3 million, the allowance fully offsets the levy up to a £3 million pay bill. Above £3 million you pay 0.5% on the excess. HMRC also asks employers who expect to cross the threshold to operate the levy through PAYE, so estimate carefully if your pay bill is near £3 million.
+- question: What counts as the pay bill?
+  answer: The pay bill is all payments to employees that are subject to employer (Class 1 secondary) National Insurance contributions, such as wages, bonuses and commissions. It is the same base as your employer NIC, so your payroll already calculates it. It does not include payments not subject to secondary NIC. Partners' profit shares are not earnings subject to employer NIC, so a genuine partner's drawings do not form part of the pay bill.
+- question: Can a small law firm get apprenticeship funding without paying the levy?
+  answer: Yes. A firm below the £3 million pay-bill threshold does not have a levy pot, but it can still take on apprentices through government co-investment, where the government funds the large majority of the approved training cost and the employer pays a small share. A small firm can also receive a levy transfer from a larger firm. Confirm the current co-investment percentage and any full-funding categories at gov.uk before you budget.
+- question: How much can I transfer from my levy pot?
+  answer: A levy-paying firm can transfer up to 50% of the previous financial year's apprenticeship levy funds to other employers, a limit raised from 25% on 22 April 2024. So a large firm can fund a smaller firm's apprentices, for example a firm in its network, group or supply chain. Transfers are arranged through the apprenticeship service account, and the receiving employer uses the funds for approved apprenticeship training.
+- question: Can the levy fund a solicitor apprenticeship?
+  answer: Yes. Levy funds in the apprenticeship service account, or government co-investment for non-payers, can pay an approved training provider for an approved apprenticeship standard, including the Level 7 solicitor apprenticeship that incorporates the SQE. The funding pays for the training and assessment, subject to the apprentice meeting current eligibility rules. Note that government funding for level 7 was restricted from January 2026, so check eligibility before relying on it.
+- question: What is the Level 7 solicitor apprenticeship?
+  answer: 'It is an apprenticeship route to qualifying as a solicitor, taking a recruit through to qualification with the SQE assessments forming part of the end-point assessment. It is an alternative to the traditional degree plus self-funded SQE path: the apprentice works at the firm while training, and the training can be funded from levy funds or co-investment where the apprentice is eligible. The Institute for Apprenticeships and the SRA publish the standard and the qualification detail.'
+- question: Has Level 7 funding changed?
+  answer: Yes. Government funding for the Level 7 solicitor apprenticeship was restricted from January 2026, broadly limiting government and levy funding for level 7 to younger apprentices and specific eligibility groups. The detail has been in flux, so do not treat any age band as settled. Confirm current eligibility with the training provider, the Institute for Apprenticeships and gov.uk before committing to fund a level 7 apprentice from your pot.
+- question: Do my levy funds expire?
+  answer: 'Levy funds in the apprenticeship service account are intended to be used within a limited window and are commonly described as expiring after a period on a first-in, first-out basis if not spent. The exact window is set by the current apprenticeship-funding rules, so check the present position rather than relying on a fixed figure. The practical message is the same: plan your apprentice intake so the pot is used rather than allowed to lapse.'
+- question: Is the apprenticeship levy tax deductible?
+  answer: Yes. The levy is a payroll cost incurred wholly and exclusively for the purposes of the trade, so it is an allowable business expense (ITTOIA 2005 s.34 for an unincorporated firm, CTA 2009 for a company). It is deducted like other employment costs. Note that the training funded from the pot is paid with levy or government money, not a fresh firm expense, so you do not deduct the same cost twice.
+- question: Is the levy the same as claiming SQE training costs against tax?
+  answer: No, they are different questions. The levy is a payroll charge, and the pot funds approved apprenticeship training. The income-tax or corporation-tax deductibility of SQE and other training costs, whether employer-paid, reimbursed or self-funded by a locum, is a separate matter with its own rules. We cover that on our SQE training costs page. Keep the levy mechanism and the deductibility of training fees in separate boxes.
+- question: How is the levy collected?
+  answer: The levy is reported and paid through PAYE alongside your other payroll deductions, each month, using your payroll software or provider. You allocate the £15,000 annual allowance across the year (or share it across PAYE schemes and connected employers). Because it runs through PAYE on the same pay-bill base as employer NIC, your payroll function handles it as part of the monthly RTI submission.
+- question: Does the levy apply across the UK?
+  answer: The levy charge itself is UK-wide, collected through PAYE wherever the employer operates. But the apprenticeship service account and the apprenticeship-funding rules are England-specific. Scotland, Wales and Northern Ireland fund apprenticeships through their own devolved arrangements. So a firm with offices across the UK pays one UK-wide levy but accesses funded apprenticeships under the relevant nation's system.
+metaTitle_prev: 'Apprenticeship Levy and Solicitor Apprenticeships: Law Firms'
+metaDescription_prev: 'How the apprenticeship levy applies to UK law firms: 0.5%, the £15,000 allowance, £3m threshold, 50% transfers and funding solicitor apprenticeships.'
+dateModified: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>What the Apprenticeship Levy Is, and Whether Your Firm Pays It</h2>
 
 <p>The apprenticeship levy is a payroll charge of <strong>0.5% of an employer's annual pay bill</strong>, reduced by a <strong>£15,000 annual allowance</strong>. Because £15,000 is exactly 0.5% of £3 million, the allowance fully offsets the levy up to a pay bill of £3 million, which means in practice the levy is paid only by employers with an <strong>annual pay bill over £3,000,000</strong>. Larger law firms therefore pay it; smaller firms do not.</p>

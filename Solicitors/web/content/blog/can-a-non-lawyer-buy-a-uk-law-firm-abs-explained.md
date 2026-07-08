@@ -1,35 +1,39 @@
 ---
-title: "Can a Non-Lawyer Buy a UK Law Firm? ABS Rules Explained 2025/26"
-slug: "can-a-non-lawyer-buy-a-uk-law-firm-abs-explained"
-canonical: "https://www.accountsforlawyers.co.uk/blog/firm-acquisition-merger/can-a-non-lawyer-buy-a-uk-law-firm-abs-explained"
-date: "2026-05-19"
+title: Can a Non-Lawyer Buy a UK Law Firm? ABS Rules Explained 2025/26
+slug: can-a-non-lawyer-buy-a-uk-law-firm-abs-explained
+canonical: https://www.accountsforlawyers.co.uk/blog/firm-acquisition-merger/can-a-non-lawyer-buy-a-uk-law-firm-abs-explained
+date: '2026-05-19'
 generator: opus-4.8/track2-rewrite
-author: "Accounts for Lawyers Editorial Team"
-category: "Firm Acquisition & Merger"
-metaTitle: "Can a Non-Lawyer Buy a UK Law Firm? ABS Rules 2025/26"
-metaDescription: "Can a non-lawyer buy a UK law firm? Yes, via an ABS licence under the Legal Services Act 2007. Ownership rules, the SRA route, structure and tax explained."
-altText: "Non-lawyer investor reviewing an ABS application for a UK law firm acquisition"
-h1: "Can a Non-Lawyer Buy a UK Law Firm? ABS Rules Explained 2025/26"
-summary: "Yes, non-lawyers can buy or own a UK law firm via the Alternative Business Structure (ABS) regime under Part 5 of the Legal Services Act 2007. We cover the SRA licensing route, Approved Owner and Approved Manager status, the entity and tax structure of an incorporated ABS, and the realistic acquisition timeline."
+author: Accounts for Lawyers Editorial Team
+category: Firm Acquisition & Merger
+metaTitle: Can a Non-Lawyer Own a UK Law Firm? ABS Rules Explained
+metaDescription: Yes, non-lawyers can own a UK law firm via an ABS licence under the Legal Services Act 2007, with Approved Owner status from a 10% interest.
+altText: Non-lawyer investor reviewing an ABS application for a UK law firm acquisition
+h1: Can a Non-Lawyer Buy a UK Law Firm? ABS Rules Explained 2025/26
+summary: Yes, non-lawyers can buy or own a UK law firm via the Alternative Business Structure (ABS) regime under Part 5 of the Legal Services Act 2007. We cover the SRA licensing route, Approved Owner and Approved Manager status, the entity and tax structure of an incorporated ABS, and the realistic acquisition timeline.
 keyTakeaways:
-  - "Non-lawyers can own a UK law firm via an ABS (licensed body) under Part 5 of the Legal Services Act 2007, regulated by the SRA in England and Wales."
-  - "Approved Owner status applies to anyone holding a material interest (broadly 10% or more of shares or voting rights); Approved Manager status applies to those with management control."
-  - "An ABS licence does not let non-lawyers perform reserved legal activities; those must still be carried out by appropriately qualified, authorised individuals."
-  - "Tax follows the entity, not the ABS status: an LLP is tax-transparent, while a limited company pays corporation tax (19% up to 50,000 pounds, 25% above 250,000 pounds, marginal relief between)."
-  - "A clean ABS acquisition typically takes a year or more, because the SRA licence is the long-lead item on the critical path."
+- Non-lawyers can own a UK law firm via an ABS (licensed body) under Part 5 of the Legal Services Act 2007, regulated by the SRA in England and Wales.
+- Approved Owner status applies to anyone holding a material interest (broadly 10% or more of shares or voting rights); Approved Manager status applies to those with management control.
+- An ABS licence does not let non-lawyers perform reserved legal activities; those must still be carried out by appropriately qualified, authorised individuals.
+- 'Tax follows the entity, not the ABS status: an LLP is tax-transparent, while a limited company pays corporation tax (19% up to 50,000 pounds, 25% above 250,000 pounds, marginal relief between).'
+- A clean ABS acquisition typically takes a year or more, because the SRA licence is the long-lead item on the critical path.
 faqs:
-  - question: "Is it legal for a non-lawyer to own a UK law firm?"
-    answer: "Yes. Part 5 of the Legal Services Act 2007 introduced Alternative Business Structures (ABS, also called licensed bodies), which allow non-lawyers to own, invest in and manage law firms in England and Wales. The SRA is a designated licensing authority and regulates a licensed body to the same conduct, Accounts Rules and PII standards as a traditional firm. By contrast, a wholly lawyer-owned company or LLP is authorised as a recognised body and does not need an ABS licence. Scotland operates a separate regime via the Law Society of Scotland; Northern Ireland has not introduced ABS, so non-lawyer ownership of NI law firms remains restricted."
-  - question: "What is the difference between a recognised body and a licensed body (ABS)?"
-    answer: "It turns on who owns and manages the firm. A recognised body is a company, LLP or partnership owned and managed wholly by lawyers (solicitors or other approved legal professionals). A licensed body, or ABS, has at least one non-lawyer owner or manager and so must be licensed under Part 5 of the Legal Services Act 2007 by a designated licensing authority (the SRA in England and Wales). Both are authorised by the SRA, both must appoint a COLP and a COFA, and both are bound by the SRA Accounts Rules. The ABS licence is the additional layer that permits the non-lawyer interest."
-  - question: "What is the difference between Approved Owner and Approved Manager status?"
-    answer: "Approved Owner status applies to anyone holding a material interest, broadly 10 percent or more of the shares or voting rights of the licensed body. Approved Manager status applies to anyone who exercises material control over the firm's management, typically directors, partners or senior managers, regardless of ownership. Both require SRA approval. The assessment covers fitness and propriety, financial standing, regulatory history and conflicts. A non-lawyer can hold both statuses once approved."
-  - question: "Does the ABS still need solicitors to do the legal work?"
-    answer: "Yes. An ABS can be owned and even managed by non-lawyers, but the reserved legal activities under the Legal Services Act 2007 (rights of audience, conduct of litigation, certain probate and other reserved work) must still be carried out by appropriately qualified and authorised individuals. The ABS licence opens up ownership and investment; it does not let a non-lawyer perform reserved legal work. The firm must also appoint a COLP and a COFA and hold the required PII."
-  - question: "Are ABSs taxed differently from traditional law firms?"
-    answer: "No. Tax treatment follows the underlying entity type, not the ABS regulatory status. An ABS structured as an LLP is taxed as an LLP (tax-transparent, with members taxed personally on their profit share). An ABS structured as a limited company pays corporation tax at the entity level (19 percent on profits up to 50,000 pounds, 25 percent above 250,000 pounds, with marginal relief between, for FY2025 and FY2026), and the owners extract profit by salary and dividend. The ABS licence overlays the entity's normal tax treatment with the regulatory ownership rules; it does not create a separate tax person."
+- question: Is it legal for a non-lawyer to own a UK law firm?
+  answer: Yes. Part 5 of the Legal Services Act 2007 introduced Alternative Business Structures (ABS, also called licensed bodies), which allow non-lawyers to own, invest in and manage law firms in England and Wales. The SRA is a designated licensing authority and regulates a licensed body to the same conduct, Accounts Rules and PII standards as a traditional firm. By contrast, a wholly lawyer-owned company or LLP is authorised as a recognised body and does not need an ABS licence. Scotland operates a separate regime via the Law Society of Scotland; Northern Ireland has not introduced ABS, so non-lawyer ownership of NI law firms remains restricted.
+- question: What is the difference between a recognised body and a licensed body (ABS)?
+  answer: It turns on who owns and manages the firm. A recognised body is a company, LLP or partnership owned and managed wholly by lawyers (solicitors or other approved legal professionals). A licensed body, or ABS, has at least one non-lawyer owner or manager and so must be licensed under Part 5 of the Legal Services Act 2007 by a designated licensing authority (the SRA in England and Wales). Both are authorised by the SRA, both must appoint a COLP and a COFA, and both are bound by the SRA Accounts Rules. The ABS licence is the additional layer that permits the non-lawyer interest.
+- question: What is the difference between Approved Owner and Approved Manager status?
+  answer: Approved Owner status applies to anyone holding a material interest, broadly 10 percent or more of the shares or voting rights of the licensed body. Approved Manager status applies to anyone who exercises material control over the firm's management, typically directors, partners or senior managers, regardless of ownership. Both require SRA approval. The assessment covers fitness and propriety, financial standing, regulatory history and conflicts. A non-lawyer can hold both statuses once approved.
+- question: Does the ABS still need solicitors to do the legal work?
+  answer: Yes. An ABS can be owned and even managed by non-lawyers, but the reserved legal activities under the Legal Services Act 2007 (rights of audience, conduct of litigation, certain probate and other reserved work) must still be carried out by appropriately qualified and authorised individuals. The ABS licence opens up ownership and investment; it does not let a non-lawyer perform reserved legal work. The firm must also appoint a COLP and a COFA and hold the required PII.
+- question: Are ABSs taxed differently from traditional law firms?
+  answer: No. Tax treatment follows the underlying entity type, not the ABS regulatory status. An ABS structured as an LLP is taxed as an LLP (tax-transparent, with members taxed personally on their profit share). An ABS structured as a limited company pays corporation tax at the entity level (19 percent on profits up to 50,000 pounds, 25 percent above 250,000 pounds, with marginal relief between, for FY2025 and FY2026), and the owners extract profit by salary and dividend. The ABS licence overlays the entity's normal tax treatment with the regulatory ownership rules; it does not create a separate tax person.
+metaTitle_prev: Can a Non-Lawyer Buy a UK Law Firm? ABS Rules 2025/26
+metaDescription_prev: Can a non-lawyer buy a UK law firm? Yes, via an ABS licence under the Legal Services Act 2007. Ownership rules, the SRA route, structure and tax explained.
+dateModified: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+schema: ''
 ---
-
 <p><strong>Yes, non-lawyers can buy or own a UK law firm via the Alternative Business Structure (ABS) regime.</strong> Part 5 of the Legal Services Act 2007 opened legal services in England and Wales to non-lawyer ownership and investment. A firm with one or more non-lawyer owners or managers must be licensed as an ABS (a "licensed body") by a designated licensing authority. The SRA is the licensing authority for solicitors' firms, and it regulates a licensed body to the same standards as a traditional firm.</p>
 
 <p>This guide covers who can use the ABS route, how the licence application works, what entity and tax structure makes sense, and the realistic timeline from "deciding to buy" to "completion of a regulated firm under non-lawyer ownership".</p>

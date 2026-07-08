@@ -1,37 +1,40 @@
 ---
-title: "COFA Responsibilities: The Compliance Officer for Finance and Administration Explained"
-slug: "cofa-responsibilities-uk-law-firms"
-canonical: "https://www.accountsforlawyers.co.uk/blog/compliance-and-risk-colp-cofa/cofa-responsibilities-uk-law-firms"
-date: "2026-05-18"
+title: 'COFA Responsibilities: The Compliance Officer for Finance and Administration Explained'
+slug: cofa-responsibilities-uk-law-firms
+canonical: https://www.accountsforlawyers.co.uk/blog/compliance-and-risk-colp-cofa/cofa-responsibilities-uk-law-firms
+date: '2026-05-18'
 generator: opus-4.8/track2-rewrite
-author: "Accounts for Lawyers Editorial Team"
-category: "Compliance & Risk (COLP / COFA)"
-metaTitle: "COFA Responsibilities for UK Law Firms: Full Duties Guide"
-metaDescription: "The COFA's duties under the SRA Accounts Rules: client money safeguarding, five-weekly reconciliations, the accountant's report, breach reporting, and personal accountability."
-altText: "UK solicitor firm COFA signing off a five-weekly client account reconciliation in a modern law office."
-image: ""
-h1: "COFA Responsibilities: The Compliance Officer for Finance and Administration Explained"
-summary: "A deep, practical guide to the duties of the Compliance Officer for Finance and Administration (COFA) in an SRA-regulated law firm. Covers the SRA Accounts Rules, client money safeguarding, the five-weekly reconciliation, the accountant's report and its exemption, breach reporting, records, and the COFA's personal accountability."
+author: Accounts for Lawyers Editorial Team
+category: Compliance & Risk (COLP / COFA)
+metaTitle: 'COFA Responsibilities: SRA Accounts Rules Duties Explained'
+metaDescription: Know what the COFA is personally accountable for. Rule 8.3 requires the client account reconciled every 5 weeks, signed off by the COFA.
+altText: UK solicitor firm COFA signing off a five-weekly client account reconciliation in a modern law office.
+image: ''
+h1: 'COFA Responsibilities: The Compliance Officer for Finance and Administration Explained'
+summary: A deep, practical guide to the duties of the Compliance Officer for Finance and Administration (COFA) in an SRA-regulated law firm. Covers the SRA Accounts Rules, client money safeguarding, the five-weekly reconciliation, the accountant's report and its exemption, breach reporting, records, and the COFA's personal accountability.
 keyTakeaways:
-  - "Every SRA-regulated firm must appoint a COFA, who is personally accountable for compliance with the SRA Accounts Rules 2019."
-  - "Rule 8.3 requires the client account to be reconciled at least every five weeks, signed off by the COFA or a manager."
-  - "A firm needs an annual accountant's report under Rule 12 unless client money stayed within an average of £10,000 and a maximum of £250,000."
-  - "The SRA can sanction a COFA personally, so a maintained breach register and signed reconciliations are the evidence of reasonable steps."
-  - "Rule 3.3 prohibits using the client account to provide banking facilities, and a client ledger must never go into debit."
-schema: ""
+- Every SRA-regulated firm must appoint a COFA, who is personally accountable for compliance with the SRA Accounts Rules 2019.
+- Rule 8.3 requires the client account to be reconciled at least every five weeks, signed off by the COFA or a manager.
+- A firm needs an annual accountant's report under Rule 12 unless client money stayed within an average of £10,000 and a maximum of £250,000.
+- The SRA can sanction a COFA personally, so a maintained breach register and signed reconciliations are the evidence of reasonable steps.
+- Rule 3.3 prohibits using the client account to provide banking facilities, and a client ledger must never go into debit.
+schema: ''
 faqs:
-  - question: "Can a COFA be held personally liable for a firm's breach of the SRA Accounts Rules?"
-    answer: "Yes. The SRA can take enforcement action against a COFA personally, separately from any action against the firm, if the COFA fails to take reasonable steps to ensure compliance. Outcomes range from a written rebuke or a fine to conditions on a practising certificate, and in serious cases referral to the Solicitors Disciplinary Tribunal. The SRA judges the COFA on whether they had adequate systems in place and acted promptly when problems surfaced, not on whether a breach ever occurred. A COFA who can show a working reconciliation regime, a maintained breach register, and timely reporting is far better placed than one who cannot evidence any oversight."
-  - question: "What exactly does the COFA do that the COLP does not?"
-    answer: "The COFA owns financial compliance: the SRA Accounts Rules, client money safeguarding, the five-weekly reconciliation under Rule 8.3, the annual accountant's report under Rule 12, and reporting serious financial breaches. The COLP owns the wider regulatory picture (the Principles, the Codes of Conduct, the annual compliance return). The two roles overlap because Accounts Rules breaches can be both financial and conduct matters, so the COFA and COLP usually report serious issues together. One person can hold both roles, which is common in sole practices and small firms. For a side-by-side of the two roles, see our COLP and COFA overview."
-  - question: "What happens if a COFA discovers a breach of the Accounts Rules?"
-    answer: "The COFA records every breach, however minor, in the firm's breach register, then assesses whether it is serious. A serious breach (one that puts client money at risk, points to a systemic control failure, or is part of a pattern) must be reported to the SRA promptly. The report should set out the nature of the breach, the amount and clients affected, the remedy and the date client money was made good, and the controls changed to prevent recurrence. Isolated minor breaches that are corrected quickly are logged but do not each need reporting; it is the materiality and the pattern that trigger the obligation."
-  - question: "Does every firm need an annual accountant's report, and who arranges it?"
-    answer: "A firm that has held or received client money during the accounting period must obtain an accountant's report within six months of the period end (Rule 12). The firm is exempt only if, across the period, the client money balance did not exceed an average of £10,000 and a maximum of £250,000, or if all client money held was money from the Legal Aid Agency. The COFA is responsible for instructing a reporting accountant (a firm registered with a recognised supervisory body such as the ICAEW or ACCA) and for keeping the accounting records in a state the accountant can audit. A qualified report that shows client money at risk must be delivered to the SRA; a clean report is retained, not filed."
-  - question: "Does a sole practitioner need a COFA, and can they also be the COLP?"
-    answer: "Yes on both counts. Every SRA-regulated firm must have a COFA, including a sole practitioner, who typically holds both the COLP and COFA roles. This is permitted, but the individual must have the time and a genuine working knowledge of the Accounts Rules. A sole practitioner COFA still has to run the five-weekly reconciliation, keep client and office ledgers separate, maintain a breach register, and obtain the accountant's report unless the firm falls within the exemption above. The small scale of the practice does not reduce the duties; it concentrates them on one person."
+- question: Can a COFA be held personally liable for a firm's breach of the SRA Accounts Rules?
+  answer: Yes. The SRA can take enforcement action against a COFA personally, separately from any action against the firm, if the COFA fails to take reasonable steps to ensure compliance. Outcomes range from a written rebuke or a fine to conditions on a practising certificate, and in serious cases referral to the Solicitors Disciplinary Tribunal. The SRA judges the COFA on whether they had adequate systems in place and acted promptly when problems surfaced, not on whether a breach ever occurred. A COFA who can show a working reconciliation regime, a maintained breach register, and timely reporting is far better placed than one who cannot evidence any oversight.
+- question: What exactly does the COFA do that the COLP does not?
+  answer: 'The COFA owns financial compliance: the SRA Accounts Rules, client money safeguarding, the five-weekly reconciliation under Rule 8.3, the annual accountant''s report under Rule 12, and reporting serious financial breaches. The COLP owns the wider regulatory picture (the Principles, the Codes of Conduct, the annual compliance return). The two roles overlap because Accounts Rules breaches can be both financial and conduct matters, so the COFA and COLP usually report serious issues together. One person can hold both roles, which is common in sole practices and small firms. For a side-by-side of the two roles, see our COLP and COFA overview.'
+- question: What happens if a COFA discovers a breach of the Accounts Rules?
+  answer: The COFA records every breach, however minor, in the firm's breach register, then assesses whether it is serious. A serious breach (one that puts client money at risk, points to a systemic control failure, or is part of a pattern) must be reported to the SRA promptly. The report should set out the nature of the breach, the amount and clients affected, the remedy and the date client money was made good, and the controls changed to prevent recurrence. Isolated minor breaches that are corrected quickly are logged but do not each need reporting; it is the materiality and the pattern that trigger the obligation.
+- question: Does every firm need an annual accountant's report, and who arranges it?
+  answer: A firm that has held or received client money during the accounting period must obtain an accountant's report within six months of the period end (Rule 12). The firm is exempt only if, across the period, the client money balance did not exceed an average of £10,000 and a maximum of £250,000, or if all client money held was money from the Legal Aid Agency. The COFA is responsible for instructing a reporting accountant (a firm registered with a recognised supervisory body such as the ICAEW or ACCA) and for keeping the accounting records in a state the accountant can audit. A qualified report that shows client money at risk must be delivered to the SRA; a clean report is retained, not filed.
+- question: Does a sole practitioner need a COFA, and can they also be the COLP?
+  answer: Yes on both counts. Every SRA-regulated firm must have a COFA, including a sole practitioner, who typically holds both the COLP and COFA roles. This is permitted, but the individual must have the time and a genuine working knowledge of the Accounts Rules. A sole practitioner COFA still has to run the five-weekly reconciliation, keep client and office ledgers separate, maintain a breach register, and obtain the accountant's report unless the firm falls within the exemption above. The small scale of the practice does not reduce the duties; it concentrates them on one person.
+metaTitle_prev: 'COFA Responsibilities for UK Law Firms: Full Duties Guide'
+metaDescription_prev: 'The COFA''s duties under the SRA Accounts Rules: client money safeguarding, five-weekly reconciliations, the accountant''s report, breach reporting, and personal accountability.'
+dateModified: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>What the COFA Is, and Why Every Firm Must Have One</h2>
 
 <p>Every law firm regulated by the Solicitors Regulation Authority (SRA) in England and Wales must appoint a Compliance Officer for Finance and Administration (COFA). This is mandatory under the SRA Authorisation of Firms Rules and applies to every structure: sole practitioners, traditional partnerships, LLPs, and Alternative Business Structures (ABSs). A firm cannot be authorised, or remain authorised, without a named COFA.</p>

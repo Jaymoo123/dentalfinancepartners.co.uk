@@ -1,55 +1,58 @@
 ---
-title: "Abortive Conveyancing Transactions: VAT and WIP Write-Off for Law Firms"
-slug: "abortive-conveyancing-transactions-vat-and-wip"
-canonical: "https://www.accountsforlawyers.co.uk/blog/conveyancing-compliance/abortive-conveyancing-transactions-vat-and-wip"
-date: "2026-06-03"
+title: 'Abortive Conveyancing Transactions: VAT and WIP Write-Off for Law Firms'
+slug: abortive-conveyancing-transactions-vat-and-wip
+canonical: https://www.accountsforlawyers.co.uk/blog/conveyancing-compliance/abortive-conveyancing-transactions-vat-and-wip
+date: '2026-06-03'
 generator: opus-4.8/netnew-wave
-author: "Accounts for Lawyers Editorial Team"
-category: "Conveyancing Compliance"
-metaTitle: "Abortive Conveyancing: VAT and WIP Write-Off for Law Firms"
-metaDescription: "When a conveyancing deal falls through, is the abortive fee subject to VAT? How to treat unbilled WIP and disbursements on a collapsed file."
-altText: "Conveyancing solicitor reviewing a collapsed property file and abortive billing in a UK law firm office"
-image: ""
-h1: "Abortive Conveyancing Transactions: VAT and WIP Write-Off"
-summary: "A conveyancing deal collapsing does not make the work tax-free. If you raise an abortive-cost charge, you have supplied legal services and the fee is standard-rated for VAT at 20%, exactly as a completion fee would be. This guide covers the VAT on the abortive charge, the WIP write-off under FRS 102, how disbursements already incurred are handled, and the tax point under VATA 1994 s.6."
+author: Accounts for Lawyers Editorial Team
+category: Conveyancing Compliance
+metaTitle: 'Abortive Fees VAT: Collapsed Conveyancing and WIP Write-Off'
+metaDescription: When a deal falls through, is the abortive fee taxable? Yes, legal services are standard-rated at 20%, so it carries VAT like a completion fee.
+altText: Conveyancing solicitor reviewing a collapsed property file and abortive billing in a UK law firm office
+image: ''
+h1: 'Abortive Conveyancing Transactions: VAT and WIP Write-Off'
+summary: A conveyancing deal collapsing does not make the work tax-free. If you raise an abortive-cost charge, you have supplied legal services and the fee is standard-rated for VAT at 20%, exactly as a completion fee would be. This guide covers the VAT on the abortive charge, the WIP write-off under FRS 102, how disbursements already incurred are handled, and the tax point under VATA 1994 s.6.
 keyTakeaways:
-  - "An abortive-transaction fee is standard-rated for VAT at 20%: the trigger is that you supplied legal services, not whether the client got the house."
-  - "A 'no completion, no fee' promise is a commercial pricing decision, not a VAT rule. Where you raise no fee there is no output VAT on it, but disbursements and WIP still need handling."
-  - "Unbilled time is work in progress under FRS 102. On a dead matter you reduce WIP to its recoverable amount, writing off what you will not bill, which lowers recognised revenue and taxable profit for the period."
-  - "Disbursements already paid are tested on the same eight conditions as on a live matter. A search you interpreted in your advice is part of your standard-rated supply (Brabners), so it carries 20% VAT if recharged."
-  - "A request for payment on account is not a VAT invoice and creates no tax point. Output VAT on the abortive charge falls when you issue the bill or VAT invoice, or receive payment, whichever is first."
-schema: ""
+- 'An abortive-transaction fee is standard-rated for VAT at 20%: the trigger is that you supplied legal services, not whether the client got the house.'
+- A 'no completion, no fee' promise is a commercial pricing decision, not a VAT rule. Where you raise no fee there is no output VAT on it, but disbursements and WIP still need handling.
+- Unbilled time is work in progress under FRS 102. On a dead matter you reduce WIP to its recoverable amount, writing off what you will not bill, which lowers recognised revenue and taxable profit for the period.
+- Disbursements already paid are tested on the same eight conditions as on a live matter. A search you interpreted in your advice is part of your standard-rated supply (Brabners), so it carries 20% VAT if recharged.
+- A request for payment on account is not a VAT invoice and creates no tax point. Output VAT on the abortive charge falls when you issue the bill or VAT invoice, or receive payment, whichever is first.
+schema: ''
 faqs:
-  - question: "Do I charge VAT on an abortive conveyancing fee?"
-    answer: "Yes. Legal services are standard-rated for VAT at 20%, and an abortive-cost charge is consideration for work you actually performed (taking instructions, title work, raising enquiries, reviewing searches). The deal collapsing changes the commercial outcome, not the VAT character of the supply. If your engagement letter lets you charge for abortive work and you raise that charge, you add 20% VAT to the fee in exactly the same way as a completion fee."
-  - question: "Is a 'no completion, no fee' charge subject to VAT?"
-    answer: "Only if a fee is actually raised. 'No move, no fee' is a commercial pricing promise, not a VAT rule. Where the promise applies and you raise no fee, there is no consideration and so no output VAT on the fee. You may still have disbursements to recover from the client and unbilled time (WIP) to write off. Where your retainer carves out an abortive-cost charge, that charge is standard-rated at 20%."
-  - question: "What happens to the unbilled time when a conveyancing deal falls through?"
-    answer: "Unbilled time is work in progress (WIP), recognised under FRS 102 Section 23 as the firm obtains the right to consideration. When a deal dies, recoverability changes. To the extent you will not bill or cannot recover the time, you reduce the WIP carrying value to its recoverable amount, writing off the unrecoverable part. That reduces recognised revenue and so reduces taxable profit for the period. It is a measurement question, not a loss you simply claim."
-  - question: "Can I recover searches I already paid for if the sale aborts?"
-    answer: "Usually yes, if your retainer allows you to recharge disbursements on an abortive matter. The collapse does not change whether a cost was a disbursement; it only changes whether you will recover it from the client. Apply the same eight-condition disbursement test as on a live file. A clean pass-through (court fee, registration fee) is recharged with no VAT; a search you interpreted in your advice is part of your standard-rated supply and carries 20% VAT."
-  - question: "Do I add VAT to searches recharged on an abortive bill?"
-    answer: "It depends on how you used the search, not on whether the deal completed. Under Brabners LLP v HMRC [2017] UKFTT 0666 (TC), a search you read and interpreted as part of your advice is a cost component of your own standard-rated supply, so you add 20% VAT when you recharge it. A search genuinely passed through to the client unused, meeting all eight disbursement conditions, can be recharged with no VAT. The Brabners principle does not flip because the matter aborted."
-  - question: "Is a CHAPS or bank transfer fee on an aborted matter a disbursement?"
-    answer: "No. A CHAPS or telegraphic-transfer fee your bank charges you is a supply from the bank to the firm, not to the client, so it fails the agency limb of the disbursement test. It is a standard-rated recharge: if you pass it on, you add 20% VAT. That treatment is the same whether the deal completes or aborts. Panel-manager fees charged to the firm are treated the same way."
-  - question: "When is the VAT tax point on an abortive charge?"
-    answer: "Under VATA 1994 s.6 the basic tax point is when the services are performed, which on an abortive matter is effectively when you close the file as aborted. An earlier actual tax point arises if you issue a VAT invoice or receive payment first (s.6(4)), and the 14-day rule (s.6(5)) can move it to the invoice date. A request for payment on account is not a VAT invoice and creates no tax point. Account for output VAT when you raise the bill or VAT invoice, or are paid, whichever is first."
-  - question: "Can I keep money on account if the deal falls through?"
-    answer: "No. Unused money on account held in client account remains the client's money under the SRA Accounts Rules and must be returned promptly. You may apply it to a sum you have properly billed, but only after you have delivered a bill or written notification of the costs (Rule 4.3) and only for that specific sum. You must not hold the balance as a convenience or use the client account to provide a banking facility."
-  - question: "Does writing off WIP reduce my tax?"
-    answer: "Indirectly, yes. WIP is carried as an asset and recognised as revenue under FRS 102. Writing the WIP down to its recoverable amount reduces the revenue recognised in the period, which reduces the firm's taxable profit for that period. It is not a separate deduction you claim; it is a consequence of measuring the asset at what you can actually recover. Most law firms are on the accruals basis, so these WIP movements flow through the tax computation."
-  - question: "Is an abortive fee treated differently for residential and commercial conveyancing?"
-    answer: "No. The VAT character is the same: a fee for legal services actually performed is standard-rated at 20% whether the matter was a residential purchase, a residential sale or a commercial transaction. The disbursement analysis (the eight conditions and the Brabners search-fee point) also applies identically. The differences between residential and commercial conveyancing are commercial and procedural, not a different VAT rule for abortive work."
-  - question: "What if I had already paid SDLT before the deal collapsed?"
-    answer: "SDLT (in England and Northern Ireland) normally falls at completion, so on a deal that aborts before completion it has usually not been paid. If SDLT had been paid early in error, recovering it is a refund or overpayment question with its own time limits, not an abortive-billing question. See our companion guide on SDLT refund and overpayment claims for conveyancers for the routes and deadlines."
-  - question: "Does the abortive fee count towards my VAT registration threshold?"
-    answer: "Yes. An abortive-cost charge is consideration for a standard-rated supply, so it forms part of your taxable turnover and counts towards the VAT registration threshold (£90,000 from 1 April 2024) in the normal way. The deregistration threshold is £88,000. Do not exclude abortive fees from your turnover monitoring on the mistaken basis that the deal did not complete."
-  - question: "Should the abortive charge be in my engagement letter?"
-    answer: "Yes. Your ability to bill for abortive work, and to recover disbursements already paid, depends on the terms of your retainer. A clear engagement letter that explains when an abortive-cost charge applies, how it is calculated and that disbursements are recoverable protects your recovery and avoids disputes. Without that term you may have no contractual basis to charge, which then drives the WIP write-off rather than a recoverable bill."
-  - question: "Can I claim the abortive loss as a bad debt?"
-    answer: "Distinguish two things. Unbilled time you will not recover is a WIP write-off (a measurement adjustment under FRS 102), not a bad debt. Bad-debt relief is for a VAT invoice you have raised and accounted for output VAT on, that the client has not paid after the qualifying period. On an abortive matter where you never billed, there is no debt and no output VAT to recover; you simply carry the WIP at its recoverable amount."
+- question: Do I charge VAT on an abortive conveyancing fee?
+  answer: Yes. Legal services are standard-rated for VAT at 20%, and an abortive-cost charge is consideration for work you actually performed (taking instructions, title work, raising enquiries, reviewing searches). The deal collapsing changes the commercial outcome, not the VAT character of the supply. If your engagement letter lets you charge for abortive work and you raise that charge, you add 20% VAT to the fee in exactly the same way as a completion fee.
+- question: Is a 'no completion, no fee' charge subject to VAT?
+  answer: Only if a fee is actually raised. 'No move, no fee' is a commercial pricing promise, not a VAT rule. Where the promise applies and you raise no fee, there is no consideration and so no output VAT on the fee. You may still have disbursements to recover from the client and unbilled time (WIP) to write off. Where your retainer carves out an abortive-cost charge, that charge is standard-rated at 20%.
+- question: What happens to the unbilled time when a conveyancing deal falls through?
+  answer: Unbilled time is work in progress (WIP), recognised under FRS 102 Section 23 as the firm obtains the right to consideration. When a deal dies, recoverability changes. To the extent you will not bill or cannot recover the time, you reduce the WIP carrying value to its recoverable amount, writing off the unrecoverable part. That reduces recognised revenue and so reduces taxable profit for the period. It is a measurement question, not a loss you simply claim.
+- question: Can I recover searches I already paid for if the sale aborts?
+  answer: Usually yes, if your retainer allows you to recharge disbursements on an abortive matter. The collapse does not change whether a cost was a disbursement; it only changes whether you will recover it from the client. Apply the same eight-condition disbursement test as on a live file. A clean pass-through (court fee, registration fee) is recharged with no VAT; a search you interpreted in your advice is part of your standard-rated supply and carries 20% VAT.
+- question: Do I add VAT to searches recharged on an abortive bill?
+  answer: It depends on how you used the search, not on whether the deal completed. Under Brabners LLP v HMRC [2017] UKFTT 0666 (TC), a search you read and interpreted as part of your advice is a cost component of your own standard-rated supply, so you add 20% VAT when you recharge it. A search genuinely passed through to the client unused, meeting all eight disbursement conditions, can be recharged with no VAT. The Brabners principle does not flip because the matter aborted.
+- question: Is a CHAPS or bank transfer fee on an aborted matter a disbursement?
+  answer: 'No. A CHAPS or telegraphic-transfer fee your bank charges you is a supply from the bank to the firm, not to the client, so it fails the agency limb of the disbursement test. It is a standard-rated recharge: if you pass it on, you add 20% VAT. That treatment is the same whether the deal completes or aborts. Panel-manager fees charged to the firm are treated the same way.'
+- question: When is the VAT tax point on an abortive charge?
+  answer: Under VATA 1994 s.6 the basic tax point is when the services are performed, which on an abortive matter is effectively when you close the file as aborted. An earlier actual tax point arises if you issue a VAT invoice or receive payment first (s.6(4)), and the 14-day rule (s.6(5)) can move it to the invoice date. A request for payment on account is not a VAT invoice and creates no tax point. Account for output VAT when you raise the bill or VAT invoice, or are paid, whichever is first.
+- question: Can I keep money on account if the deal falls through?
+  answer: No. Unused money on account held in client account remains the client's money under the SRA Accounts Rules and must be returned promptly. You may apply it to a sum you have properly billed, but only after you have delivered a bill or written notification of the costs (Rule 4.3) and only for that specific sum. You must not hold the balance as a convenience or use the client account to provide a banking facility.
+- question: Does writing off WIP reduce my tax?
+  answer: Indirectly, yes. WIP is carried as an asset and recognised as revenue under FRS 102. Writing the WIP down to its recoverable amount reduces the revenue recognised in the period, which reduces the firm's taxable profit for that period. It is not a separate deduction you claim; it is a consequence of measuring the asset at what you can actually recover. Most law firms are on the accruals basis, so these WIP movements flow through the tax computation.
+- question: Is an abortive fee treated differently for residential and commercial conveyancing?
+  answer: 'No. The VAT character is the same: a fee for legal services actually performed is standard-rated at 20% whether the matter was a residential purchase, a residential sale or a commercial transaction. The disbursement analysis (the eight conditions and the Brabners search-fee point) also applies identically. The differences between residential and commercial conveyancing are commercial and procedural, not a different VAT rule for abortive work.'
+- question: What if I had already paid SDLT before the deal collapsed?
+  answer: SDLT (in England and Northern Ireland) normally falls at completion, so on a deal that aborts before completion it has usually not been paid. If SDLT had been paid early in error, recovering it is a refund or overpayment question with its own time limits, not an abortive-billing question. See our companion guide on SDLT refund and overpayment claims for conveyancers for the routes and deadlines.
+- question: Does the abortive fee count towards my VAT registration threshold?
+  answer: Yes. An abortive-cost charge is consideration for a standard-rated supply, so it forms part of your taxable turnover and counts towards the VAT registration threshold (£90,000 from 1 April 2024) in the normal way. The deregistration threshold is £88,000. Do not exclude abortive fees from your turnover monitoring on the mistaken basis that the deal did not complete.
+- question: Should the abortive charge be in my engagement letter?
+  answer: Yes. Your ability to bill for abortive work, and to recover disbursements already paid, depends on the terms of your retainer. A clear engagement letter that explains when an abortive-cost charge applies, how it is calculated and that disbursements are recoverable protects your recovery and avoids disputes. Without that term you may have no contractual basis to charge, which then drives the WIP write-off rather than a recoverable bill.
+- question: Can I claim the abortive loss as a bad debt?
+  answer: Distinguish two things. Unbilled time you will not recover is a WIP write-off (a measurement adjustment under FRS 102), not a bad debt. Bad-debt relief is for a VAT invoice you have raised and accounted for output VAT on, that the client has not paid after the qualifying period. On an abortive matter where you never billed, there is no debt and no output VAT to recover; you simply carry the WIP at its recoverable amount.
+metaTitle_prev: 'Abortive Conveyancing: VAT and WIP Write-Off for Law Firms'
+metaDescription_prev: When a conveyancing deal falls through, is the abortive fee subject to VAT? How to treat unbilled WIP and disbursements on a collapsed file.
+dateModified: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>When a conveyancing deal falls through: the firm's own VAT and accounting position</h2>
 
 <p>Abortive transactions are a fact of life in conveyancing. A buyer pulls out after a survey, a chain breaks higher up, a mortgage offer is withdrawn, or a seller accepts a higher bid and gazumps. By the time the deal dies, the firm has often done a large part of the work: taken instructions, carried out identity and source-of-funds checks, ordered and reviewed searches, raised and chased enquiries, reported on title. The commercial outcome has changed, but the work was real.</p>

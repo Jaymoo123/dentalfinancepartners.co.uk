@@ -1,37 +1,40 @@
 ---
-title: "How Are LLP Members Taxed in the UK for 2025/26?"
-slug: "how-llp-members-are-taxed-uk-2025-26"
-canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-and-llp-structure/how-llp-members-are-taxed-uk-2025-26"
-date: "2026-05-18"
+title: How Are LLP Members Taxed in the UK for 2025/26?
+slug: how-llp-members-are-taxed-uk-2025-26
+canonical: https://www.accountsforlawyers.co.uk/blog/partnership-and-llp-structure/how-llp-members-are-taxed-uk-2025-26
+date: '2026-05-18'
 generator: opus-4.8/track2-rewrite
-author: "Accounts for Lawyers Editorial Team"
-category: "Partnership & LLP Structure"
-metaTitle: "How LLP Members Are Taxed UK 2025/26 | Solicitor Guide"
-metaDescription: "How UK solicitors in an LLP are taxed in 2025/26: self-employed on your profit share not drawings, Class 4 NIC, payments on account, and the salaried member exception."
-altText: "Solicitor and accountant reviewing LLP profit share and self-assessment tax figures in a modern law firm office."
-image: ""
-h1: "How Are LLP Members Taxed in the UK for 2025/26?"
-summary: "An LLP is tax-transparent, so each member is taxed as a self-employed partner on their allocated profit share, not on the cash they draw. This guide covers the income tax and Class 4 NIC charge, payments on account, qualifying loan interest relief on a capital buy-in, and the salaried member exception that can pull a fixed-share partner into PAYE."
+author: Accounts for Lawyers Editorial Team
+category: Partnership & LLP Structure
+metaTitle: 'How LLP Members Are Taxed: Solicitor Partner Guide'
+metaDescription: 'Taxed on profit share, not drawings: LLP members pay income tax plus Class 4 NIC at 6% between £12,570 and £50,270. Avoid the January shock.'
+altText: Solicitor and accountant reviewing LLP profit share and self-assessment tax figures in a modern law firm office.
+image: ''
+h1: How Are LLP Members Taxed in the UK for 2025/26?
+summary: An LLP is tax-transparent, so each member is taxed as a self-employed partner on their allocated profit share, not on the cash they draw. This guide covers the income tax and Class 4 NIC charge, payments on account, qualifying loan interest relief on a capital buy-in, and the salaried member exception that can pull a fixed-share partner into PAYE.
 keyTakeaways:
-  - "An LLP is tax-transparent, so each member is taxed on their allocated profit share under ITTOIA 2005 s.863, not on drawings."
-  - "Members pay Class 4 NIC at 6% between £12,570 and £50,270 and 2% above, with Class 2 no longer a separate charge since 6 April 2024."
-  - "All three salaried member conditions must be met to push a fixed-share partner into PAYE, so failing any one keeps them self-employed."
-  - "Interest on a loan to fund a genuine capital buy-in is deductible as qualifying loan interest relief under ITA 2007 ss.398 to 412."
-  - "Tax is paid via self-assessment in two payments on account, usually on 31 January and 31 July, plus a balancing payment."
-schema: ""
+- An LLP is tax-transparent, so each member is taxed on their allocated profit share under ITTOIA 2005 s.863, not on drawings.
+- Members pay Class 4 NIC at 6% between £12,570 and £50,270 and 2% above, with Class 2 no longer a separate charge since 6 April 2024.
+- All three salaried member conditions must be met to push a fixed-share partner into PAYE, so failing any one keeps them self-employed.
+- Interest on a loan to fund a genuine capital buy-in is deductible as qualifying loan interest relief under ITA 2007 ss.398 to 412.
+- Tax is paid via self-assessment in two payments on account, usually on 31 January and 31 July, plus a balancing payment.
+schema: ''
 faqs:
-  - question: "Am I taxed on my profit share or on my drawings as an LLP member?"
-    answer: "You are taxed on your allocated profit share, not on your drawings. Because an LLP is tax-transparent under ITTOIA 2005 s.863, each member is taxed as a self-employed partner on the profit allocated to them under the partnership agreement (s.850), regardless of how much cash they actually take. If your allocation is higher than your drawings, you still pay tax on the full allocation, and the balance retained in the firm is working capital. This is the single most common cash-flow trap for solicitor partners."
-  - question: "What National Insurance do LLP members pay in 2025/26?"
-    answer: "Members pay Class 4 NIC on their profit share: 6% on profits between £12,570 and £50,270 and 2% on profits above £50,270 for 2025/26, alongside income tax. Class 2 NIC is no longer a separate weekly charge. The liability to pay Class 2 was removed from 6 April 2024, and a member with profits at or above the small profits threshold is treated as having paid it, so they keep state pension entitlement without a Class 2 bill. There is no employer NIC on a genuine member's profit share, because a member is not an employee unless the salaried member rules apply."
-  - question: "Can a fixed-share partner in a law firm LLP be treated as an employee for tax?"
-    answer: "Yes, but only if all three salaried member conditions are met (ITTOIA 2005 ss.863A to 863G, inserted by Finance Act 2014). Condition A: at least 80% of the member's reward is disguised salary. Condition B: the member has no significant influence over the LLP. Condition C: the member's capital contribution is less than 25% of their disguised salary. If all three apply, the member is taxed as an employee, with PAYE and employer NIC on their reward. Fail any one and the member stays self-employed. The deep mechanics, and how firms structure around it, are covered in our dedicated salaried member rules guide."
-  - question: "Can I claim tax relief on a loan I took out to buy into my law firm LLP?"
-    answer: "Yes. Interest on a loan used to fund a genuine capital contribution to the LLP (or to buy into it) is deductible under ITA 2007 ss.398 to 412, qualifying loan interest relief. The interest reduces your income in your self-assessment return while you remain a member and the capital stays in the firm. The loan must be used solely for the partnership contribution, so a mixed-purpose personal loan complicates the relief, and the relief stops once the loan is repaid or you withdraw the capital on leaving."
-  - question: "How do I work out my tax bill as an LLP member for 2025/26?"
-    answer: "Start from your allocated profit share for the tax year, not your drawings. Deduct allowable items such as qualifying loan interest and personal pension contributions, then apply the 2025/26 income tax rates (20% basic, 40% higher, 45% additional) after the personal allowance of £12,570, which tapers away between £100,000 and £125,140. Add Class 4 NIC at 6% on profits from £12,570 to £50,270 and 2% above. The total is paid through self-assessment, usually in two payments on account (31 January and 31 July) plus a balancing payment. Our <a href=\"/calculators/llp-profit-share-allocation\">LLP profit share allocation calculator</a> gives a quick estimate."
+- question: Am I taxed on my profit share or on my drawings as an LLP member?
+  answer: You are taxed on your allocated profit share, not on your drawings. Because an LLP is tax-transparent under ITTOIA 2005 s.863, each member is taxed as a self-employed partner on the profit allocated to them under the partnership agreement (s.850), regardless of how much cash they actually take. If your allocation is higher than your drawings, you still pay tax on the full allocation, and the balance retained in the firm is working capital. This is the single most common cash-flow trap for solicitor partners.
+- question: What National Insurance do LLP members pay in 2025/26?
+  answer: 'Members pay Class 4 NIC on their profit share: 6% on profits between £12,570 and £50,270 and 2% on profits above £50,270 for 2025/26, alongside income tax. Class 2 NIC is no longer a separate weekly charge. The liability to pay Class 2 was removed from 6 April 2024, and a member with profits at or above the small profits threshold is treated as having paid it, so they keep state pension entitlement without a Class 2 bill. There is no employer NIC on a genuine member''s profit share, because a member is not an employee unless the salaried member rules apply.'
+- question: Can a fixed-share partner in a law firm LLP be treated as an employee for tax?
+  answer: 'Yes, but only if all three salaried member conditions are met (ITTOIA 2005 ss.863A to 863G, inserted by Finance Act 2014). Condition A: at least 80% of the member''s reward is disguised salary. Condition B: the member has no significant influence over the LLP. Condition C: the member''s capital contribution is less than 25% of their disguised salary. If all three apply, the member is taxed as an employee, with PAYE and employer NIC on their reward. Fail any one and the member stays self-employed. The deep mechanics, and how firms structure around it, are covered in our dedicated salaried member rules guide.'
+- question: Can I claim tax relief on a loan I took out to buy into my law firm LLP?
+  answer: Yes. Interest on a loan used to fund a genuine capital contribution to the LLP (or to buy into it) is deductible under ITA 2007 ss.398 to 412, qualifying loan interest relief. The interest reduces your income in your self-assessment return while you remain a member and the capital stays in the firm. The loan must be used solely for the partnership contribution, so a mixed-purpose personal loan complicates the relief, and the relief stops once the loan is repaid or you withdraw the capital on leaving.
+- question: How do I work out my tax bill as an LLP member for 2025/26?
+  answer: Start from your allocated profit share for the tax year, not your drawings. Deduct allowable items such as qualifying loan interest and personal pension contributions, then apply the 2025/26 income tax rates (20% basic, 40% higher, 45% additional) after the personal allowance of £12,570, which tapers away between £100,000 and £125,140. Add Class 4 NIC at 6% on profits from £12,570 to £50,270 and 2% above. The total is paid through self-assessment, usually in two payments on account (31 January and 31 July) plus a balancing payment. Our <a href="/calculators/llp-profit-share-allocation">LLP profit share allocation calculator</a> gives a quick estimate.
+metaTitle_prev: How LLP Members Are Taxed UK 2025/26 | Solicitor Guide
+metaDescription_prev: 'How UK solicitors in an LLP are taxed in 2025/26: self-employed on your profit share not drawings, Class 4 NIC, payments on account, and the salaried member exception.'
+dateModified: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>LLP Tax Transparency: The Core Principle for Solicitors</h2>
 
 <p>If you practise through a limited liability partnership (LLP), your tax treatment is fundamentally different from that of a company director. The LLP itself does not pay corporation tax on its trading profit. Instead the LLP is <strong>tax-transparent</strong>: under ITTOIA 2005 s.863, all the LLP's activities are treated as carried on in partnership by its members, so each member is taxed directly as a self-employed partner on their share of the firm's profits, regardless of how much cash they actually draw.</p>

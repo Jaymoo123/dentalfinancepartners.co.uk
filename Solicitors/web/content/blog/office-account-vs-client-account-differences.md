@@ -1,35 +1,38 @@
 ---
-title: "Office Account vs Client Account: What Every UK Solicitor Must Know About the SRA Split"
-slug: "office-account-vs-client-account-differences"
-canonical: "https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/office-account-vs-client-account-differences"
-date: "2026-05-18"
+title: 'Office Account vs Client Account: What Every UK Solicitor Must Know About the SRA Split'
+slug: office-account-vs-client-account-differences
+canonical: https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/office-account-vs-client-account-differences
+date: '2026-05-18'
 generator: deepseek-chat/legacy-bulk
-author: "Accounts for Lawyers Editorial Team"
-category: "SRA Accounts Rules"
-metaTitle: "Office Account vs Client Account: SRA Rules for Solicitors"
-metaDescription: "Understand the legal difference between office account and client account under SRA Accounts Rules. How to classify money, avoid breaches, and manage the split."
-altText: "Solicitor reviewing office account and client account bank statements for SRA compliance"
-image: ""
-h1: "Office Account vs Client Account: What Every UK Solicitor Must Know About the SRA Split"
-summary: "A clear comparison of office account and client account under the SRA Accounts Rules. Covers the legal basis for the split, common classification errors, and practical compliance steps for solicitors and COFAs."
+author: Accounts for Lawyers Editorial Team
+category: SRA Accounts Rules
+metaTitle: 'Client Money in a Business Account: The SRA Rule 2.1 Split'
+metaDescription: Keep client money out of your office account. Rule 2.1 demands separation from receipt, with SRA fines up to £25,000 for systemic failures to split.
+altText: Solicitor reviewing office account and client account bank statements for SRA compliance
+image: ''
+h1: 'Office Account vs Client Account: What Every UK Solicitor Must Know About the SRA Split'
+summary: A clear comparison of office account and client account under the SRA Accounts Rules. Covers the legal basis for the split, common classification errors, and practical compliance steps for solicitors and COFAs.
 keyTakeaways:
-  - "Rule 2.1 requires client money to be held in a designated client account from receipt, with no temporary holding in the office account."
-  - "Advance fees and deposits stay client money until the firm delivers a bill, after which the billed amount can move to office account."
-  - "You can pool all client money in one account but must keep a separate client ledger for each client or matter under Rule 8.1."
-  - "The client account must be reconciled at least every five weeks (Rule 8.3) and pay fair interest to clients where appropriate (Rule 7.1)."
-  - "Serious or systemic failures to separate client and office money can trigger SRA fines of up to £25,000 and conditions on the practising certificate."
-schema: ""
+- Rule 2.1 requires client money to be held in a designated client account from receipt, with no temporary holding in the office account.
+- Advance fees and deposits stay client money until the firm delivers a bill, after which the billed amount can move to office account.
+- You can pool all client money in one account but must keep a separate client ledger for each client or matter under Rule 8.1.
+- The client account must be reconciled at least every five weeks (Rule 8.3) and pay fair interest to clients where appropriate (Rule 7.1).
+- Serious or systemic failures to separate client and office money can trigger SRA fines of up to £25,000 and conditions on the practising certificate.
+schema: ''
 faqs:
-  - question: "Can a solicitor hold client money in an office account temporarily?"
-    answer: "No. The SRA Accounts Rules require client money to be held in a designated client account from the moment it is received. There is no \"temporary\" exception. Even if you plan to transfer it to the client account later that day, you must pay it into the client account first. Holding client money in an office account, even for a few hours, is a breach of Rule 2.1. The only exception is if the money is received by cheque and you pay it into the client account on the same day."
-  - question: "What is the difference between client money and office money in a conveyancing transaction?"
-    answer: "In a conveyancing transaction, client money includes the buyer's deposit, the purchase funds, and any advance payments for SDLT or disbursements. Office money includes the firm's fees once billed, disbursements already paid by the firm, and any profit from the transaction. The key distinction is timing: money is client money until the firm has done the work and delivered a bill. After billing, the billed amount becomes office money and can be transferred to the office account."
-  - question: "Do I need a separate bank account for each client?"
-    answer: "No. The SRA Accounts Rules allow you to hold all client money in one pooled client account. However, you must keep a separate client ledger for each client or matter (Rule 8.1). The pooled account is the most common structure for law firms. Some firms choose to use separate designated client accounts for large transactions (e.g., a high-value property purchase), but this is optional. The key requirement is that the account is clearly designated as a client account and that you can identify which money belongs to which client."
-  - question: "What happens if I accidentally pay client money into the office account?"
-    answer: "You must correct the error immediately. Transfer the money from the office account to the client account on the same day you discover the mistake. You should also document the error and the correction in your firm's compliance records. If the error is material or systemic, you may need to report it to the SRA. The SRA expects firms to have procedures in place to prevent such errors. A single accidental payment is unlikely to result in disciplinary action if corrected promptly, but repeated errors will attract scrutiny."
+- question: Can a solicitor hold client money in an office account temporarily?
+  answer: No. The SRA Accounts Rules require client money to be held in a designated client account from the moment it is received. There is no "temporary" exception. Even if you plan to transfer it to the client account later that day, you must pay it into the client account first. Holding client money in an office account, even for a few hours, is a breach of Rule 2.1. The only exception is if the money is received by cheque and you pay it into the client account on the same day.
+- question: What is the difference between client money and office money in a conveyancing transaction?
+  answer: 'In a conveyancing transaction, client money includes the buyer''s deposit, the purchase funds, and any advance payments for SDLT or disbursements. Office money includes the firm''s fees once billed, disbursements already paid by the firm, and any profit from the transaction. The key distinction is timing: money is client money until the firm has done the work and delivered a bill. After billing, the billed amount becomes office money and can be transferred to the office account.'
+- question: Do I need a separate bank account for each client?
+  answer: No. The SRA Accounts Rules allow you to hold all client money in one pooled client account. However, you must keep a separate client ledger for each client or matter (Rule 8.1). The pooled account is the most common structure for law firms. Some firms choose to use separate designated client accounts for large transactions (e.g., a high-value property purchase), but this is optional. The key requirement is that the account is clearly designated as a client account and that you can identify which money belongs to which client.
+- question: What happens if I accidentally pay client money into the office account?
+  answer: You must correct the error immediately. Transfer the money from the office account to the client account on the same day you discover the mistake. You should also document the error and the correction in your firm's compliance records. If the error is material or systemic, you may need to report it to the SRA. The SRA expects firms to have procedures in place to prevent such errors. A single accidental payment is unlikely to result in disciplinary action if corrected promptly, but repeated errors will attract scrutiny.
+metaTitle_prev: 'Office Account vs Client Account: SRA Rules for Solicitors'
+metaDescription_prev: Understand the legal difference between office account and client account under SRA Accounts Rules. How to classify money, avoid breaches, and manage the split.
+dateModified: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>Why the Office Account / Client Account Split Exists</h2>
 
 <p>The distinction between an office account and a client account is the single most important structural feature of the <strong>SRA Accounts Rules</strong>. Get it wrong, and you risk a breach report, a referral to the SRA, and potentially a fine or rebuke. Get it right, and your firm runs cleanly, your COFA sleeps better, and your accountant's report passes without drama.</p>

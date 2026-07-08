@@ -1,35 +1,38 @@
 ---
-title: "What Counts as Client Money for UK Solicitors? The SRA Definition Explained"
-slug: "what-counts-as-client-money-uk-solicitors"
-canonical: "https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/what-counts-as-client-money-uk-solicitors"
-date: "2026-05-18"
+title: What Counts as Client Money for UK Solicitors? The SRA Definition Explained
+slug: what-counts-as-client-money-uk-solicitors
+canonical: https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/what-counts-as-client-money-uk-solicitors
+date: '2026-05-18'
 generator: opus-4.8/track2-rewrite
-author: "Accounts for Lawyers Editorial Team"
-category: "SRA Accounts Rules"
-metaTitle: "What Counts as Client Money? The SRA Rule 2.1 Definition for Solicitors"
-metaDescription: "What counts as client money under SRA Rule 2.1? A practical guide for UK solicitors on client money vs office money, mixed receipts, and fees held before billing."
-altText: "UK solicitor reviewing client account ledger and SRA client money records in a law firm office"
-image: ""
-h1: "What Counts as Client Money for UK Solicitors? The SRA Definition Explained"
-summary: "A precise breakdown of what counts as client money under Rule 2.1 of the SRA Accounts Rules 2019: the four limbs of the definition, the line between client money and office money, mixed receipts, and the nuance around fees and unpaid disbursements held before a bill is delivered. Worked, anonymised examples from conveyancing, litigation, and probate."
+author: Accounts for Lawyers Editorial Team
+category: SRA Accounts Rules
+metaTitle: 'What Counts as Client Money for UK Solicitors: Rule 2.1'
+metaDescription: Classify every receipt correctly and avoid a breach report. Rule 2.1 sets four limbs defining client money, from lender advances to pre-bill fees.
+altText: UK solicitor reviewing client account ledger and SRA client money records in a law firm office
+image: ''
+h1: What Counts as Client Money for UK Solicitors? The SRA Definition Explained
+summary: 'A precise breakdown of what counts as client money under Rule 2.1 of the SRA Accounts Rules 2019: the four limbs of the definition, the line between client money and office money, mixed receipts, and the nuance around fees and unpaid disbursements held before a bill is delivered. Worked, anonymised examples from conveyancing, litigation, and probate.'
 keyTakeaways:
-  - "Rule 2.1 of the SRA Accounts Rules 2019 defines client money across four limbs covering regulated services, third parties, trustee or office-holder roles, and pre-bill fees."
-  - "Client money does not have to belong to your own client; lender advances and stakeholder deposits are client money under limb (b)."
-  - "A payment on account of costs is client money until you deliver a bill, when the billed portion becomes office money to transfer out promptly."
-  - "Mixed receipts should be paid wholly into the client account, then the office-money element transferred out once it can be substantiated."
-  - "The Rule 2.1 definition drives the Rule 12.2 report exemption, broadly an average of £10,000 and a maximum of £250,000 in client money held."
-schema: ""
+- Rule 2.1 of the SRA Accounts Rules 2019 defines client money across four limbs covering regulated services, third parties, trustee or office-holder roles, and pre-bill fees.
+- Client money does not have to belong to your own client; lender advances and stakeholder deposits are client money under limb (b).
+- A payment on account of costs is client money until you deliver a bill, when the billed portion becomes office money to transfer out promptly.
+- Mixed receipts should be paid wholly into the client account, then the office-money element transferred out once it can be substantiated.
+- The Rule 2.1 definition drives the Rule 12.2 report exemption, broadly an average of £10,000 and a maximum of £250,000 in client money held.
+schema: ''
 faqs:
-  - question: "What is the difference between client money and office money under the SRA Accounts Rules?"
-    answer: "Client money is defined in Rule 2.1 of the SRA Accounts Rules 2019. It is money you hold or receive relating to regulated services delivered to a client, money held or received on behalf of a third party in connection with your practice, money held or received as trustee or as the holder of a specified office or appointment, and money held or received in respect of your fees and any unpaid disbursements where it is held before you have delivered a bill. Office money is the firm's own money, for example fees you have properly billed and disbursements you have already paid out. Client money must be paid promptly into a client account; office money belongs in the business account. Treating client money as office money is a breach of the rules."
-  - question: "Does money held on behalf of a third party, such as a lender, count as client money?"
-    answer: "Yes. Rule 2.1 expressly covers money you hold or receive on behalf of a third party in connection with your practice, so lender funds advanced for a property purchase are client money even though the lender is not your own client. The definition turns on your relationship with the money and the regulated service it relates to, not on who beneficially owns it. The same applies to a deposit you hold as stakeholder and to money received for a specific purpose on behalf of someone other than your client."
-  - question: "Is a payment on account of costs client money or office money?"
-    answer: "Money received in respect of your fees and any unpaid disbursements is client money while it is held before you deliver a bill. A payment on account of costs therefore starts as client money and belongs in the client account. Once you deliver a bill for the work done, the billed amount becomes office money and should be transferred to the business account promptly. The trigger that converts it is the delivery of a bill (or written notification of the costs incurred), not simply receiving the funds."
-  - question: "How does the client money definition relate to the accountant's report exemption?"
-    answer: "The Rule 2.1 definition decides what counts toward the balances measured for the Rule 12 accountant's report and its exemption. A firm that holds client money must obtain an annual accountant's report unless it qualifies for the exemption in Rule 12.2, broadly where the client money held did not exceed an average of £10,000 and a maximum of £250,000 in the period (or all the client money was from the Legal Aid Agency). The threshold detail and how the averages are measured are set out in our dedicated guide on the SRA accountants report exemption thresholds."
+- question: What is the difference between client money and office money under the SRA Accounts Rules?
+  answer: Client money is defined in Rule 2.1 of the SRA Accounts Rules 2019. It is money you hold or receive relating to regulated services delivered to a client, money held or received on behalf of a third party in connection with your practice, money held or received as trustee or as the holder of a specified office or appointment, and money held or received in respect of your fees and any unpaid disbursements where it is held before you have delivered a bill. Office money is the firm's own money, for example fees you have properly billed and disbursements you have already paid out. Client money must be paid promptly into a client account; office money belongs in the business account. Treating client money as office money is a breach of the rules.
+- question: Does money held on behalf of a third party, such as a lender, count as client money?
+  answer: Yes. Rule 2.1 expressly covers money you hold or receive on behalf of a third party in connection with your practice, so lender funds advanced for a property purchase are client money even though the lender is not your own client. The definition turns on your relationship with the money and the regulated service it relates to, not on who beneficially owns it. The same applies to a deposit you hold as stakeholder and to money received for a specific purpose on behalf of someone other than your client.
+- question: Is a payment on account of costs client money or office money?
+  answer: Money received in respect of your fees and any unpaid disbursements is client money while it is held before you deliver a bill. A payment on account of costs therefore starts as client money and belongs in the client account. Once you deliver a bill for the work done, the billed amount becomes office money and should be transferred to the business account promptly. The trigger that converts it is the delivery of a bill (or written notification of the costs incurred), not simply receiving the funds.
+- question: How does the client money definition relate to the accountant's report exemption?
+  answer: The Rule 2.1 definition decides what counts toward the balances measured for the Rule 12 accountant's report and its exemption. A firm that holds client money must obtain an annual accountant's report unless it qualifies for the exemption in Rule 12.2, broadly where the client money held did not exceed an average of £10,000 and a maximum of £250,000 in the period (or all the client money was from the Legal Aid Agency). The threshold detail and how the averages are measured are set out in our dedicated guide on the SRA accountants report exemption thresholds.
+metaTitle_prev: What Counts as Client Money? The SRA Rule 2.1 Definition for Solicitors
+metaDescription_prev: What counts as client money under SRA Rule 2.1? A practical guide for UK solicitors on client money vs office money, mixed receipts, and fees held before billing.
+dateModified: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Every solicitor in England and Wales who handles money for clients has to answer one question correctly, every time a receipt arrives: is this client money or is it office money? Get the definition wrong and you risk paying client money into the wrong account, a breach report to the Solicitors Regulation Authority (SRA), and in serious cases a referral to the Solicitors Disciplinary Tribunal.</p>
 
 <p>This guide sets out exactly what counts as client money under the SRA Accounts Rules 2019 (in force 25 November 2019). It works through the four limbs of the Rule 2.1 definition, the boundary between client money and office money, how to handle mixed receipts, and the nuance that catches most firms out: money held in respect of your fees and unpaid disbursements before a bill is delivered. The examples are anonymised and drawn from conveyancing, litigation, and probate work.</p>

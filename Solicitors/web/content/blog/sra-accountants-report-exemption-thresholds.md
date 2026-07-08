@@ -1,35 +1,38 @@
 ---
-title: "When Does a Solicitor Firm Qualify for the SRA Accountant's Report Exemption?"
-slug: "sra-accountants-report-exemption-thresholds"
-canonical: "https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/sra-accountants-report-exemption-thresholds"
-date: "2026-05-18"
+title: When Does a Solicitor Firm Qualify for the SRA Accountant's Report Exemption?
+slug: sra-accountants-report-exemption-thresholds
+canonical: https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/sra-accountants-report-exemption-thresholds
+date: '2026-05-18'
 generator: opus-4.8/track2-rewrite
-author: "Accounts for Lawyers Editorial Team"
-category: "SRA Accounts Rules"
-metaTitle: "SRA Accountant's Report Exemption: The £10,000 Average and £250,000 Maximum Test"
-metaDescription: "When can a UK law firm skip the SRA accountant's report? The Rule 12.2 exemption applies if client money stays within an average of £10,000 and a maximum of £250,000. Worked examples and what your COFA must monitor."
-altText: "Solicitor reviewing client account records at a desk with a calculator and the SRA Accounts Rules handbook."
-image: ""
-h1: "When Does a Solicitor Firm Qualify for the SRA Accountant's Report Exemption?"
-summary: "Most SRA-regulated firms that hold client money must obtain an annual accountant's report, but Rule 12.2 exempts firms whose client money stays within an average of £10,000 and a maximum of £250,000 (or that hold only Legal Aid Agency money). This guide sets out the exact test, two worked examples, and what your COFA needs to monitor."
+author: Accounts for Lawyers Editorial Team
+category: SRA Accounts Rules
+metaTitle: 'SRA Accountant Report Exemption: The Rule 12.2 Balance Test'
+metaDescription: Can your firm skip the accountant's report? The Rule 12.2 exemption applies while client money stays within an average of £10,000 across the period.
+altText: Solicitor reviewing client account records at a desk with a calculator and the SRA Accounts Rules handbook.
+image: ''
+h1: When Does a Solicitor Firm Qualify for the SRA Accountant's Report Exemption?
+summary: Most SRA-regulated firms that hold client money must obtain an annual accountant's report, but Rule 12.2 exempts firms whose client money stays within an average of £10,000 and a maximum of £250,000 (or that hold only Legal Aid Agency money). This guide sets out the exact test, two worked examples, and what your COFA needs to monitor.
 keyTakeaways:
-  - "Rule 12.2's low-balance exemption applies only if client money stays within both an average of £10,000 and a maximum of £250,000 across the period."
-  - "Both limbs are cumulative; breaching either the £10,000 average or the £250,000 peak loses the exemption for the whole period."
-  - "The persistent £250 average figure is a myth; the correct average limit is £10,000."
-  - "The exemption is driven by balance size, not transaction frequency, so many small short-term holdings can still qualify."
-  - "The exemption removes only the report, not the duty to keep records, reconcile every five weeks, and comply with every other Accounts Rule."
-schema: ""
+- Rule 12.2's low-balance exemption applies only if client money stays within both an average of £10,000 and a maximum of £250,000 across the period.
+- Both limbs are cumulative; breaching either the £10,000 average or the £250,000 peak loses the exemption for the whole period.
+- The persistent £250 average figure is a myth; the correct average limit is £10,000.
+- The exemption is driven by balance size, not transaction frequency, so many small short-term holdings can still qualify.
+- The exemption removes only the report, not the duty to keep records, reconcile every five weeks, and comply with every other Accounts Rule.
+schema: ''
 faqs:
-  - question: "What are the exact client money thresholds for the SRA accountant's report exemption?"
-    answer: "Under Rule 12.2 of the SRA Accounts Rules, a firm is exempt from obtaining an accountant's report for a period if the statement or passbook balance of client money it held or received did not exceed an average of £10,000 AND a maximum of £250,000 across the accounting period. Both limbs must be satisfied: the average must stay at or below £10,000 and the peak balance must stay at or below £250,000. There is a separate exemption where all the client money held or received in the period was money received from the Legal Aid Agency. If a firm holds no client money at all during the period, no report is required in the first place."
-  - question: "Does holding client money for only a few days each month break the exemption?"
-    answer: "Not in itself. The test looks at the average balance and the peak balance across the whole accounting period, not at how frequently money moves. A firm that handles modest sums for short periods will usually have an average far below £10,000 even with a high volume of transactions. For example, ten separate matters each holding £2,000 for five days produces a total of £100,000 of balance-days, which divided by 365 days gives an average of about £274. That is comfortably under the £10,000 average limit, and the peak balance of a few thousand pounds is far below the £250,000 maximum, so the exemption is available. What breaks the exemption is sustained or large balances, such as a conveyancing firm routinely holding deposits and completion funds, not the number of short transactions."
-  - question: "Does the exemption apply if client money is held in a separate designated client account?"
-    answer: "Yes. The exemption applies whether the client money sits in a separate designated client account or in a general (pooled) client account. The rules look at the statement or passbook balance of client money the firm has held or received across the period, not the type of account. The firm must still comply with every other SRA Accounts Rule, including holding client money in a client account, the five-weekly reconciliation, and the prohibition on using a client account to provide banking facilities."
-  - question: "What happens if a firm exceeds the thresholds part-way through the year?"
-    answer: "The exemption is assessed over the whole accounting period. If the average balance ends the period above £10,000, or the peak balance at any point exceeds £250,000, the firm does not qualify and must obtain an accountant's report covering the full period, filed within six months of the period end. There is no partial exemption for the months before the threshold was crossed. The COFA should track the running average and the peak balance through the year so the position is known well before the period closes, rather than discovered at year end."
+- question: What are the exact client money thresholds for the SRA accountant's report exemption?
+  answer: 'Under Rule 12.2 of the SRA Accounts Rules, a firm is exempt from obtaining an accountant''s report for a period if the statement or passbook balance of client money it held or received did not exceed an average of £10,000 AND a maximum of £250,000 across the accounting period. Both limbs must be satisfied: the average must stay at or below £10,000 and the peak balance must stay at or below £250,000. There is a separate exemption where all the client money held or received in the period was money received from the Legal Aid Agency. If a firm holds no client money at all during the period, no report is required in the first place.'
+- question: Does holding client money for only a few days each month break the exemption?
+  answer: Not in itself. The test looks at the average balance and the peak balance across the whole accounting period, not at how frequently money moves. A firm that handles modest sums for short periods will usually have an average far below £10,000 even with a high volume of transactions. For example, ten separate matters each holding £2,000 for five days produces a total of £100,000 of balance-days, which divided by 365 days gives an average of about £274. That is comfortably under the £10,000 average limit, and the peak balance of a few thousand pounds is far below the £250,000 maximum, so the exemption is available. What breaks the exemption is sustained or large balances, such as a conveyancing firm routinely holding deposits and completion funds, not the number of short transactions.
+- question: Does the exemption apply if client money is held in a separate designated client account?
+  answer: Yes. The exemption applies whether the client money sits in a separate designated client account or in a general (pooled) client account. The rules look at the statement or passbook balance of client money the firm has held or received across the period, not the type of account. The firm must still comply with every other SRA Accounts Rule, including holding client money in a client account, the five-weekly reconciliation, and the prohibition on using a client account to provide banking facilities.
+- question: What happens if a firm exceeds the thresholds part-way through the year?
+  answer: The exemption is assessed over the whole accounting period. If the average balance ends the period above £10,000, or the peak balance at any point exceeds £250,000, the firm does not qualify and must obtain an accountant's report covering the full period, filed within six months of the period end. There is no partial exemption for the months before the threshold was crossed. The COFA should track the running average and the peak balance through the year so the position is known well before the period closes, rather than discovered at year end.
+metaTitle_prev: 'SRA Accountant''s Report Exemption: The £10,000 Average and £250,000 Maximum Test'
+metaDescription_prev: When can a UK law firm skip the SRA accountant's report? The Rule 12.2 exemption applies if client money stays within an average of £10,000 and a maximum of £250,000. Worked examples and what your COFA must monitor.
+dateModified: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Every SRA-regulated solicitor firm in England and Wales must comply with the SRA Accounts Rules 2019. A firm that has held client money during an accounting period must normally obtain an annual accountant's report. But not every firm has to. Rule 12.2 exempts firms whose client money stays within set limits, and firms that hold only Legal Aid Agency money. This guide sets out the exact test, two worked examples, and what your COFA needs to monitor to rely on the exemption safely.</p>
 
 <h2>What Is the SRA Accountant's Report?</h2>

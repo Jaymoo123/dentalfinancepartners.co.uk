@@ -1,35 +1,38 @@
 ---
-title: "Common SRA Accounts Rules Breaches and How Solicitors Can Fix Them"
-slug: "common-sra-accounts-rules-breaches-and-how-to-fix"
-canonical: "https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/common-sra-accounts-rules-breaches-and-how-to-fix"
-date: "2026-05-18"
+title: Common SRA Accounts Rules Breaches and How Solicitors Can Fix Them
+slug: common-sra-accounts-rules-breaches-and-how-to-fix
+canonical: https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/common-sra-accounts-rules-breaches-and-how-to-fix
+date: '2026-05-18'
 generator: opus-4.8/track2-rewrite
-author: "Accounts for Lawyers Editorial Team"
-category: "SRA Accounts Rules"
-metaTitle: "Common SRA Accounts Rules Breaches and How to Fix Them"
-metaDescription: "The most common SRA Accounts Rules breaches for UK solicitors, from late reconciliations to banking-facility misuse, with practical fixes and the breach-reporting steps COFAs need."
-altText: "Solicitor and COFA reviewing client account bank statements and a five-weekly reconciliation report in a law firm office"
-image: ""
-h1: "Common SRA Accounts Rules Breaches and How Solicitors Can Fix Them"
-summary: "A practical breach-by-breach guide to the SRA Accounts Rules 2019: late or missing five-weekly reconciliations, mixing client and office money, improper withdrawals, banking-facility misuse, residual balances, unpaid interest and late reports. For each, the rule it offends, how to remediate, and when to report to the SRA."
+author: Accounts for Lawyers Editorial Team
+category: SRA Accounts Rules
+metaTitle: 'SRA Accounts Rules Breaches: Common Ones and Fixes'
+metaDescription: Spot and fix the breaches that catch firms out. Late reconciliations top the list, and Rule 8.3 requires the client account reconciled every 5 weeks.
+altText: Solicitor and COFA reviewing client account bank statements and a five-weekly reconciliation report in a law firm office
+image: ''
+h1: Common SRA Accounts Rules Breaches and How Solicitors Can Fix Them
+summary: 'A practical breach-by-breach guide to the SRA Accounts Rules 2019: late or missing five-weekly reconciliations, mixing client and office money, improper withdrawals, banking-facility misuse, residual balances, unpaid interest and late reports. For each, the rule it offends, how to remediate, and when to report to the SRA.'
 keyTakeaways:
-  - "Late or missing five-weekly reconciliations under Rule 8.3 are the most common breach, and the reconciliation must agree ledgers, cash book and bank statement."
-  - "Mixing client and office money (Rule 4) and overdrawing a client ledger create a direct shortfall that must be made good from office funds immediately."
-  - "Rule 3.3 prohibits using the client account as a banking facility, so every receipt and payment must relate to regulated services you deliver."
-  - "The accountant's report exemption (Rule 12) turns on client money held, not turnover: an average of £10,000 and a maximum of £250,000."
-  - "For any breach: investigate, make client money good, record it on the COFA's central register, then fix the underlying cause."
-schema: ""
+- Late or missing five-weekly reconciliations under Rule 8.3 are the most common breach, and the reconciliation must agree ledgers, cash book and bank statement.
+- Mixing client and office money (Rule 4) and overdrawing a client ledger create a direct shortfall that must be made good from office funds immediately.
+- Rule 3.3 prohibits using the client account as a banking facility, so every receipt and payment must relate to regulated services you deliver.
+- 'The accountant''s report exemption (Rule 12) turns on client money held, not turnover: an average of £10,000 and a maximum of £250,000.'
+- 'For any breach: investigate, make client money good, record it on the COFA''s central register, then fix the underlying cause.'
+schema: ''
 faqs:
-  - question: "What is the most common SRA Accounts Rules breach?"
-    answer: "Late or missing reconciliations are the most common breach. Rule 8.3 of the SRA Accounts Rules 2019 requires the client account to be reconciled at least every five weeks, with ledger totals agreed to the cash book and to the bank statement, and the reconciliation signed off by the COFA or a manager. Many firms run it late, skip individual ledger checks, or carry unexplained differences. Other frequent breaches are mixing client and office money, improper or unauthorised withdrawals, using the client account as a banking facility (prohibited by Rule 3.3), leaving residual balances on closed matters, and failing to account for interest."
-  - question: "Can a small firm be exempt from the accountant's report requirement?"
-    answer: "Yes, under Rule 12 there are two routes. A firm is exempt if all the client money it held or received in the accounting period came from the Legal Aid Agency. Separately, a firm is exempt if its client money balances did not exceed an average of £10,000 and a maximum of £250,000 across the period (the foreign-currency equivalent counts toward the maximum). The test is about client money held, not turnover or fee income, so a firm can have low fees yet still need a report if completion monies push it over the maximum. If you handle any client money, check both limbs against your records each period."
-  - question: "What happens if I use the client account for business expenses?"
-    answer: "Paying office costs from the client account breaches the separation requirement in Rule 4 (client money must be kept separate from the firm's own money) and, depending on the facts, the withdrawal and banking-facility rules. If you discover it, replace the shortfall from the office account promptly, restore the affected client ledgers, investigate the root cause, and assess whether the breach is material and so reportable. The SRA can impose controls, financial penalties or refer serious cases to the Solicitors Disciplinary Tribunal. The client account must only ever hold and move client money in respect of the regulated services you deliver."
-  - question: "When do I have to report a breach to the SRA?"
-    answer: "Rule 12 of the SRA Codes of Conduct requires you to report promptly any serious breach of the regulatory arrangements, and the COFA must keep a central record of every Accounts Rules breach, material or not. There is no fixed seven-day deadline in the rules; the test is whether the breach is serious or material, judged by the sum involved, the risk to client money, whether it is systemic, and how quickly it was put right. A single small difference corrected at the next reconciliation may not be reportable but must still be recorded. The reporting mechanics, what counts as material, and how to file are covered in our guide to SRA breach notification."
+- question: What is the most common SRA Accounts Rules breach?
+  answer: Late or missing reconciliations are the most common breach. Rule 8.3 of the SRA Accounts Rules 2019 requires the client account to be reconciled at least every five weeks, with ledger totals agreed to the cash book and to the bank statement, and the reconciliation signed off by the COFA or a manager. Many firms run it late, skip individual ledger checks, or carry unexplained differences. Other frequent breaches are mixing client and office money, improper or unauthorised withdrawals, using the client account as a banking facility (prohibited by Rule 3.3), leaving residual balances on closed matters, and failing to account for interest.
+- question: Can a small firm be exempt from the accountant's report requirement?
+  answer: Yes, under Rule 12 there are two routes. A firm is exempt if all the client money it held or received in the accounting period came from the Legal Aid Agency. Separately, a firm is exempt if its client money balances did not exceed an average of £10,000 and a maximum of £250,000 across the period (the foreign-currency equivalent counts toward the maximum). The test is about client money held, not turnover or fee income, so a firm can have low fees yet still need a report if completion monies push it over the maximum. If you handle any client money, check both limbs against your records each period.
+- question: What happens if I use the client account for business expenses?
+  answer: Paying office costs from the client account breaches the separation requirement in Rule 4 (client money must be kept separate from the firm's own money) and, depending on the facts, the withdrawal and banking-facility rules. If you discover it, replace the shortfall from the office account promptly, restore the affected client ledgers, investigate the root cause, and assess whether the breach is material and so reportable. The SRA can impose controls, financial penalties or refer serious cases to the Solicitors Disciplinary Tribunal. The client account must only ever hold and move client money in respect of the regulated services you deliver.
+- question: When do I have to report a breach to the SRA?
+  answer: Rule 12 of the SRA Codes of Conduct requires you to report promptly any serious breach of the regulatory arrangements, and the COFA must keep a central record of every Accounts Rules breach, material or not. There is no fixed seven-day deadline in the rules; the test is whether the breach is serious or material, judged by the sum involved, the risk to client money, whether it is systemic, and how quickly it was put right. A single small difference corrected at the next reconciliation may not be reportable but must still be recorded. The reporting mechanics, what counts as material, and how to file are covered in our guide to SRA breach notification.
+metaTitle_prev: Common SRA Accounts Rules Breaches and How to Fix Them
+metaDescription_prev: The most common SRA Accounts Rules breaches for UK solicitors, from late reconciliations to banking-facility misuse, with practical fixes and the breach-reporting steps COFAs need.
+dateModified: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>Why these breaches keep happening</h2>
 
 <p>The SRA Accounts Rules 2019 came into force on 25 November 2019. They are short, principles-based rules, which is exactly why firms get caught out: the obligations are broad, the COFA carries primary responsibility, and a single weak control can produce a breach that sits undetected until a reconciliation, an accountant's report or an SRA visit surfaces it.</p>

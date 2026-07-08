@@ -1,37 +1,40 @@
 ---
-title: "SRA Accountants Report: Essential Guide for Law Firms"
-slug: "sra-accountants-report"
-canonical: "https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/sra-accountants-report"
-date: "2026-04-01"
+title: 'SRA Accountants Report: Essential Guide for Law Firms'
+slug: sra-accountants-report
+canonical: https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/sra-accountants-report
+date: '2026-04-01'
 generator: opus-4.8/track2-rewrite
-author: "Accounts for Lawyers Editorial Team"
-category: "SRA Compliance & Trust Accounting"
-metaTitle: "SRA Accountants Report: Requirements & Deadlines 2026"
-metaDescription: "The SRA accountants report explained: who needs one under Rule 12.1, the exemption test, the 6 month deadline, and what a qualified report means for your firm."
-altText: "UK solicitor reviewing SRA accountants report with calculator and legal documents on desk"
-image: ""
-h1: "SRA Accountants Report: What Every Law Firm Needs to Know"
-summary: "The SRA accountants report is the annual check on how an SRA-regulated firm handles client money. This hub explains what the report is, who needs one, what it covers, the six month deadline, and the difference between a qualified and an unqualified report, then points you to the detailed guides on exemption, triggers, and preparation."
+author: Accounts for Lawyers Editorial Team
+category: SRA Compliance & Trust Accounting
+metaTitle: 'SRA Accountant Report: Who Needs One and When It Is Due'
+metaDescription: Held client money this year? Under Rule 12.1 you must obtain an accountant's report within 6 months of your period end, unless exempt.
+altText: UK solicitor reviewing SRA accountants report with calculator and legal documents on desk
+image: ''
+h1: 'SRA Accountants Report: What Every Law Firm Needs to Know'
+summary: The SRA accountants report is the annual check on how an SRA-regulated firm handles client money. This hub explains what the report is, who needs one, what it covers, the six month deadline, and the difference between a qualified and an unqualified report, then points you to the detailed guides on exemption, triggers, and preparation.
 keyTakeaways:
-  - "Under Rule 12.1, any firm that held client money during its accounting period must obtain an accountant's report within six months of the period end."
-  - "A firm is exempt under Rule 12.2 if client money stayed within an average of £10,000 and a maximum of £250,000, or was Legal Aid Agency money only."
-  - "Both limbs of the balance test must be met; breaching either the £10,000 average or the £250,000 maximum requires a report."
-  - "An unqualified report is retained by the firm, but a qualified report flagging material breaches must be delivered to the SRA."
-  - "The report must be prepared by an independent accountant who is a registered auditor and member of an SRA-recognised body."
-schema: ""
+- Under Rule 12.1, any firm that held client money during its accounting period must obtain an accountant's report within six months of the period end.
+- A firm is exempt under Rule 12.2 if client money stayed within an average of £10,000 and a maximum of £250,000, or was Legal Aid Agency money only.
+- Both limbs of the balance test must be met; breaching either the £10,000 average or the £250,000 maximum requires a report.
+- An unqualified report is retained by the firm, but a qualified report flagging material breaches must be delivered to the SRA.
+- The report must be prepared by an independent accountant who is a registered auditor and member of an SRA-recognised body.
+schema: ''
 faqs:
-  - question: "What is the deadline for the SRA accountants report?"
-    answer: "The report must reach the SRA within six months of the end of your accounting period. If your period ends on 31 March, the report is due by 30 September. The deadline is fixed, with no routine extensions, so the work should be booked well before the period end."
-  - question: "Is my firm exempt from the SRA accountants report if client balances are small?"
-    answer: "You can be exempt under Rule 12.2 in two situations. First, if all the client money you held or received in the period came only from the Legal Aid Agency. Second, if the client money you held did not exceed an average of £10,000 and a maximum of £250,000 across the period. If either limb of the balance test is breached, or you held money from any other source above the Legal Aid Agency exemption, a report is required. The exemption thresholds guide works through the test in full."
-  - question: "What is the difference between a qualified and an unqualified SRA accountants report?"
-    answer: "An unqualified report means the reporting accountant found no breaches of the SRA Accounts Rules serious enough to put client money at risk. A qualified report flags breaches the accountant considers material. A qualified report must be delivered to the SRA, and it can trigger further questions, conditions on the practice, or investigation."
-  - question: "Who can prepare the SRA accountants report?"
-    answer: "The report must be prepared and signed by an independent accountant who is a member of a chartered accountancy body recognised by the SRA and who is, or works for, a registered auditor. A general accountant without specialist knowledge of the SRA Accounts Rules is often not the right fit for the engagement."
-  - question: "Does the firm have to send every report to the SRA?"
-    answer: "No. An unqualified report is obtained and retained by the firm rather than automatically filed. Only a qualified report, where the accountant identifies a breach that places client money at risk, has to be delivered to the SRA, within six months of the period end."
+- question: What is the deadline for the SRA accountants report?
+  answer: The report must reach the SRA within six months of the end of your accounting period. If your period ends on 31 March, the report is due by 30 September. The deadline is fixed, with no routine extensions, so the work should be booked well before the period end.
+- question: Is my firm exempt from the SRA accountants report if client balances are small?
+  answer: You can be exempt under Rule 12.2 in two situations. First, if all the client money you held or received in the period came only from the Legal Aid Agency. Second, if the client money you held did not exceed an average of £10,000 and a maximum of £250,000 across the period. If either limb of the balance test is breached, or you held money from any other source above the Legal Aid Agency exemption, a report is required. The exemption thresholds guide works through the test in full.
+- question: What is the difference between a qualified and an unqualified SRA accountants report?
+  answer: An unqualified report means the reporting accountant found no breaches of the SRA Accounts Rules serious enough to put client money at risk. A qualified report flags breaches the accountant considers material. A qualified report must be delivered to the SRA, and it can trigger further questions, conditions on the practice, or investigation.
+- question: Who can prepare the SRA accountants report?
+  answer: The report must be prepared and signed by an independent accountant who is a member of a chartered accountancy body recognised by the SRA and who is, or works for, a registered auditor. A general accountant without specialist knowledge of the SRA Accounts Rules is often not the right fit for the engagement.
+- question: Does the firm have to send every report to the SRA?
+  answer: No. An unqualified report is obtained and retained by the firm rather than automatically filed. Only a qualified report, where the accountant identifies a breach that places client money at risk, has to be delivered to the SRA, within six months of the period end.
+metaTitle_prev: 'SRA Accountants Report: Requirements & Deadlines 2026'
+metaDescription_prev: 'The SRA accountants report explained: who needs one under Rule 12.1, the exemption test, the 6 month deadline, and what a qualified report means for your firm.'
+dateModified: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>The <strong>SRA accountants report</strong> is the annual independent check on how a law firm in England and Wales handles client money. Any SRA-regulated firm that has held client money during its accounting period needs to engage with it, and getting it wrong can lead to regulatory scrutiny and, in serious cases, disciplinary action.</p>
 
 <p>This page is the overview. It sets out what the report is, who needs one, what it covers, when it is due, and what a qualified report means. For the detail on each point, follow the linked guides as you go.</p>

@@ -1,35 +1,39 @@
 ---
-title: "Do UK Solicitors Charge VAT in 2025/26?"
-slug: "do-uk-solicitors-charge-vat"
-canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/do-uk-solicitors-charge-vat"
-date: "2026-05-19"
+title: Do UK Solicitors Charge VAT in 2025/26?
+slug: do-uk-solicitors-charge-vat
+canonical: https://www.accountsforlawyers.co.uk/blog/vat-compliance/do-uk-solicitors-charge-vat
+date: '2026-05-19'
 generator: opus-4.8/track2-rewrite
-author: "Accounts for Lawyers Editorial Team"
-category: "VAT & Compliance"
-metaTitle: "Do UK Solicitors Charge VAT in 2025/26? Yes, at 20%"
-metaDescription: "UK solicitors charge VAT at 20% on legal services. The £90k registration threshold, disbursement rules, overseas client treatment. Plain-English guide."
-altText: "UK solicitor reviewing a client invoice with VAT line item"
-h1: "Do UK Solicitors Charge VAT in 2025/26?"
-summary: "Yes. UK solicitors charge VAT at the standard 20% rate on legal services. Legal services are not exempt from VAT. Registration becomes mandatory at £90,000 of taxable turnover. We cover the headline rule, the disbursement nuance, and overseas client treatment."
+author: Accounts for Lawyers Editorial Team
+category: VAT & Compliance
+metaTitle: Do UK Solicitors Charge VAT? Yes, at 20% | 2026/27
+metaDescription: Wondering if your solicitor bill carries VAT? UK legal services are standard-rated, and registration is mandatory once turnover passes £90,000.
+altText: UK solicitor reviewing a client invoice with VAT line item
+h1: Do UK Solicitors Charge VAT in 2025/26?
+summary: Yes. UK solicitors charge VAT at the standard 20% rate on legal services. Legal services are not exempt from VAT. Registration becomes mandatory at £90,000 of taxable turnover. We cover the headline rule, the disbursement nuance, and overseas client treatment.
 keyTakeaways:
-  - "UK legal services are standard-rated for VAT at 20%, with no general exemption for any practice area."
-  - "VAT registration is mandatory once rolling 12-month taxable turnover passes £90,000, with 30 days to notify HMRC."
-  - "Pure disbursements paid as agent sit outside VAT scope, but costs recharged as principal carry 20% VAT."
-  - "B2B supplies to overseas business clients are usually outside UK VAT, but UK property work always carries UK VAT."
-  - "All VAT-registered firms must keep digital records and file quarterly returns under Making Tax Digital."
+- UK legal services are standard-rated for VAT at 20%, with no general exemption for any practice area.
+- VAT registration is mandatory once rolling 12-month taxable turnover passes £90,000, with 30 days to notify HMRC.
+- Pure disbursements paid as agent sit outside VAT scope, but costs recharged as principal carry 20% VAT.
+- B2B supplies to overseas business clients are usually outside UK VAT, but UK property work always carries UK VAT.
+- All VAT-registered firms must keep digital records and file quarterly returns under Making Tax Digital.
 faqs:
-  - question: "Is VAT charged on solicitor fees in the UK?"
-    answer: "Yes. UK legal services including conveyancing, family law, commercial work, and litigation are standard-rated for VAT at 20 percent. The fee on a client's bill is shown net plus VAT separately. There is no general VAT exemption for legal services. Some specific types of work to overseas business clients can be zero-rated under place-of-supply rules, but for the vast majority of UK clients and UK-domiciled matters, full 20 percent VAT applies."
-  - question: "When does a solicitor need to register for VAT?"
-    answer: "When the firm's taxable turnover exceeds £90,000 on a rolling 12-month basis (the registration threshold from 1 April 2024). The threshold counts gross fee income across all VATable services. Once registered, the firm must charge VAT on all VATable services and submit quarterly VAT returns via Making Tax Digital (MTD). Many smaller firms register voluntarily below the threshold to reclaim input VAT on costs."
-  - question: "Are disbursements VATable?"
-    answer: "Depends on whether the solicitor is acting as agent or principal. Pure disbursements (where the solicitor pays a third party as agent for the client, the third party invoices the client, and the solicitor passes through the cost) are outside the scope of VAT. Expenses incurred by the solicitor as principal (search fees billed to the firm, then recharged to client) generally carry VAT in the recharge. The distinction is fact-specific and HMRC scrutinises common errors here."
-  - question: "Do I charge VAT to clients outside the UK?"
-    answer: "Depends on the client type and the nature of the work. For business clients outside the UK (B2B), place-of-supply rules typically make the supply outside UK VAT scope — no VAT charged but you can still reclaim input VAT on related costs. For private (consumer) clients outside the UK, UK VAT typically applies. For UK domestic matters involving overseas clients (e.g., conveyancing on a UK property for an overseas buyer), UK VAT applies because the property is in the UK."
-  - question: "Can I avoid charging VAT if I'm a small firm?"
-    answer: "Only by staying below the £90,000 turnover threshold. Below the threshold, VAT registration is voluntary, not required. If you don't register, you don't charge VAT on client fees — which makes you 20 percent cheaper to clients who can't reclaim VAT (private clients, exempt businesses). But you also can't reclaim input VAT on your own costs (office costs, PII, professional subscriptions). Most firms approaching the threshold consider voluntary registration earlier to capture input VAT recovery while still being competitive."
+- question: Is VAT charged on solicitor fees in the UK?
+  answer: Yes. UK legal services including conveyancing, family law, commercial work, and litigation are standard-rated for VAT at 20 percent. The fee on a client's bill is shown net plus VAT separately. There is no general VAT exemption for legal services. Some specific types of work to overseas business clients can be zero-rated under place-of-supply rules, but for the vast majority of UK clients and UK-domiciled matters, full 20 percent VAT applies.
+- question: When does a solicitor need to register for VAT?
+  answer: When the firm's taxable turnover exceeds £90,000 on a rolling 12-month basis (the registration threshold from 1 April 2024). The threshold counts gross fee income across all VATable services. Once registered, the firm must charge VAT on all VATable services and submit quarterly VAT returns via Making Tax Digital (MTD). Many smaller firms register voluntarily below the threshold to reclaim input VAT on costs.
+- question: Are disbursements VATable?
+  answer: Depends on whether the solicitor is acting as agent or principal. Pure disbursements (where the solicitor pays a third party as agent for the client, the third party invoices the client, and the solicitor passes through the cost) are outside the scope of VAT. Expenses incurred by the solicitor as principal (search fees billed to the firm, then recharged to client) generally carry VAT in the recharge. The distinction is fact-specific and HMRC scrutinises common errors here.
+- question: Do I charge VAT to clients outside the UK?
+  answer: Depends on the client type and the nature of the work. For business clients outside the UK (B2B), place-of-supply rules typically make the supply outside UK VAT scope — no VAT charged but you can still reclaim input VAT on related costs. For private (consumer) clients outside the UK, UK VAT typically applies. For UK domestic matters involving overseas clients (e.g., conveyancing on a UK property for an overseas buyer), UK VAT applies because the property is in the UK.
+- question: Can I avoid charging VAT if I'm a small firm?
+  answer: Only by staying below the £90,000 turnover threshold. Below the threshold, VAT registration is voluntary, not required. If you don't register, you don't charge VAT on client fees — which makes you 20 percent cheaper to clients who can't reclaim VAT (private clients, exempt businesses). But you also can't reclaim input VAT on your own costs (office costs, PII, professional subscriptions). Most firms approaching the threshold consider voluntary registration earlier to capture input VAT recovery while still being competitive.
+metaTitle_prev: Do UK Solicitors Charge VAT in 2025/26? Yes, at 20%
+metaDescription_prev: UK solicitors charge VAT at 20% on legal services. The £90k registration threshold, disbursement rules, overseas client treatment. Plain-English guide.
+dateModified: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+schema: ''
 ---
-
 <p><strong>Yes. UK solicitors charge VAT at the standard 20% rate on legal services in 2025/26.</strong> Legal services including conveyancing, family law, commercial work, and litigation are all standard-rated. There is no general VAT exemption for legal services — clients pay the headline fee plus 20% VAT on top. Registration becomes mandatory at £90,000 of taxable turnover; many smaller firms register voluntarily to reclaim input VAT.</p>
 
 <p>This guide covers the headline rule, when VAT registration applies, the disbursement nuance that trips up many firms, and the treatment of overseas clients and overseas matters.</p>

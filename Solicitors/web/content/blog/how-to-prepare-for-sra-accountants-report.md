@@ -1,37 +1,40 @@
 ---
-title: "How to Prepare for an SRA Accountant's Report: A Solicitor's Step-by-Step Guide"
-slug: "how-to-prepare-for-sra-accountants-report"
-canonical: "https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/how-to-prepare-for-sra-accountants-report"
-date: "2026-05-18"
+title: 'How to Prepare for an SRA Accountant''s Report: A Solicitor''s Step-by-Step Guide'
+slug: how-to-prepare-for-sra-accountants-report
+canonical: https://www.accountsforlawyers.co.uk/blog/sra-accounts-rules/how-to-prepare-for-sra-accountants-report
+date: '2026-05-18'
 generator: opus-4.8/track2-rewrite
-author: "Accounts for Lawyers Editorial Team"
-category: "SRA Accounts Rules"
-metaTitle: "How to Prepare for an SRA Accountant's Report: Solicitor Guide"
-metaDescription: "Step-by-step preparation guide for UK solicitors: the records to assemble, choosing and instructing a reporting accountant, the timeline, what gets tested, and how to secure an unqualified report."
-altText: "Solicitor reviewing SRA accountant's report documents in a UK law firm office"
-image: ""
-h1: "How to Prepare for an SRA Accountant's Report: A Solicitor's Step-by-Step Guide"
-summary: "A practical preparation guide for UK solicitors and law firm COFAs: the records to assemble, how to choose and instruct an independent reporting accountant, the year-round timeline, what the accountant tests, how to fix issues before the visit, and how to secure an unqualified report."
+author: Accounts for Lawyers Editorial Team
+category: SRA Accounts Rules
+metaTitle: How to Prepare for an SRA Accountant's Report Cleanly
+metaDescription: Get an unqualified report first time. Assemble your records, reconcile every 5 weeks under Rule 8.3, and fix issues before the accountant visits.
+altText: Solicitor reviewing SRA accountant's report documents in a UK law firm office
+image: ''
+h1: 'How to Prepare for an SRA Accountant''s Report: A Solicitor''s Step-by-Step Guide'
+summary: 'A practical preparation guide for UK solicitors and law firm COFAs: the records to assemble, how to choose and instruct an independent reporting accountant, the year-round timeline, what the accountant tests, how to fix issues before the visit, and how to secure an unqualified report.'
 keyTakeaways:
-  - "Firms holding client money must obtain and file the accountant's report within six months of the accounting reference date."
-  - "The report must be signed by an independent reporting accountant who is a member of a recognised body such as ICAEW, ACCA or ICAS."
-  - "Reconcile client accounts at least every five weeks under Rule 8.3, tying both individual ledgers and the total to the bank."
-  - "An unqualified report is earned through year-round controls, not tidy year-end paperwork: deliver a bill before every client-to-business transfer."
-  - "The accountant has a duty to report material breaches to the SRA regardless of what the firm says, so concealment never helps."
-schema: ""
+- Firms holding client money must obtain and file the accountant's report within six months of the accounting reference date.
+- The report must be signed by an independent reporting accountant who is a member of a recognised body such as ICAEW, ACCA or ICAS.
+- Reconcile client accounts at least every five weeks under Rule 8.3, tying both individual ledgers and the total to the bank.
+- 'An unqualified report is earned through year-round controls, not tidy year-end paperwork: deliver a bill before every client-to-business transfer.'
+- The accountant has a duty to report material breaches to the SRA regardless of what the firm says, so concealment never helps.
+schema: ''
 faqs:
-  - question: "What records should I assemble before the reporting accountant arrives?"
-    answer: "Have the full set ready as one evidence pack: client and business account bank statements for the whole accounting period, client ledger reports showing every transaction, your five-weekly reconciliations (signed and dated under Rule 8.3), a list of every client matter open at the period end with balances, evidence of bill delivery before each client-to-business transfer, a sample of matter files with bills and receipts, and the COFA's compliance record. Having this assembled in advance is the single biggest factor in a fast, clean report."
-  - question: "Who can act as my reporting accountant, and can I prepare the report myself?"
-    answer: "No, you cannot prepare it yourself. The report must be signed by an independent reporting accountant who is a member of a recognised supervisory body (the chartered accountancy bodies such as ICAEW, ACCA or ICAS) and who is independent of the firm. You can and should prepare the evidence pack and the reconciliations internally, but the accountant must form and sign the opinion. Choosing an accountant who works regularly with SRA-regulated firms makes the testing faster and the findings more useful."
-  - question: "When is the report due, and when should I start preparing?"
-    answer: "The report must be obtained and filed within six months of your accounting reference date (period end). Preparation should be year-round, not a year-end scramble: reconcile every five weeks, clear residual balances as matters close, and run a self-review in the final quarter. As a practical rule, start the formal preparation around three months before the period end so any issues surface while you still have time to fix them."
-  - question: "What does the reporting accountant actually test?"
-    answer: "The accountant checks that client money was kept separate from the firm's money, that reconciliations were performed at least every five weeks (Rule 8.3) and properly signed off, and that withdrawals from client account were authorised and properly due. They then test a sample of matters: client money paid in promptly, withdrawals only when due, a bill delivered before each client-to-business transfer, and residual balances dealt with. If the sample shows errors, they may extend testing."
-  - question: "How do I secure an unqualified report?"
-    answer: "An unqualified report means the accountant found no material breach of the SRA Accounts Rules. You secure it by getting the controls right during the year, not by presenting tidy paperwork at the end: reconcile on time, keep client money out of the business account, deliver a bill before every transfer, and clear residual balances promptly. If you find a breach before the visit, fix it, document the correction, and be transparent. The accountant has a duty to report material breaches regardless of what the firm says, so concealment never helps."
+- question: What records should I assemble before the reporting accountant arrives?
+  answer: 'Have the full set ready as one evidence pack: client and business account bank statements for the whole accounting period, client ledger reports showing every transaction, your five-weekly reconciliations (signed and dated under Rule 8.3), a list of every client matter open at the period end with balances, evidence of bill delivery before each client-to-business transfer, a sample of matter files with bills and receipts, and the COFA''s compliance record. Having this assembled in advance is the single biggest factor in a fast, clean report.'
+- question: Who can act as my reporting accountant, and can I prepare the report myself?
+  answer: No, you cannot prepare it yourself. The report must be signed by an independent reporting accountant who is a member of a recognised supervisory body (the chartered accountancy bodies such as ICAEW, ACCA or ICAS) and who is independent of the firm. You can and should prepare the evidence pack and the reconciliations internally, but the accountant must form and sign the opinion. Choosing an accountant who works regularly with SRA-regulated firms makes the testing faster and the findings more useful.
+- question: When is the report due, and when should I start preparing?
+  answer: 'The report must be obtained and filed within six months of your accounting reference date (period end). Preparation should be year-round, not a year-end scramble: reconcile every five weeks, clear residual balances as matters close, and run a self-review in the final quarter. As a practical rule, start the formal preparation around three months before the period end so any issues surface while you still have time to fix them.'
+- question: What does the reporting accountant actually test?
+  answer: 'The accountant checks that client money was kept separate from the firm''s money, that reconciliations were performed at least every five weeks (Rule 8.3) and properly signed off, and that withdrawals from client account were authorised and properly due. They then test a sample of matters: client money paid in promptly, withdrawals only when due, a bill delivered before each client-to-business transfer, and residual balances dealt with. If the sample shows errors, they may extend testing.'
+- question: How do I secure an unqualified report?
+  answer: 'An unqualified report means the accountant found no material breach of the SRA Accounts Rules. You secure it by getting the controls right during the year, not by presenting tidy paperwork at the end: reconcile on time, keep client money out of the business account, deliver a bill before every transfer, and clear residual balances promptly. If you find a breach before the visit, fix it, document the correction, and be transparent. The accountant has a duty to report material breaches regardless of what the firm says, so concealment never helps.'
+metaTitle_prev: 'How to Prepare for an SRA Accountant''s Report: Solicitor Guide'
+metaDescription_prev: 'Step-by-step preparation guide for UK solicitors: the records to assemble, choosing and instructing a reporting accountant, the timeline, what gets tested, and how to secure an unqualified report.'
+dateModified: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If your firm has held client money during the accounting period, you must obtain an accountant's report and file it with the SRA within six months of the period end. The report confirms whether the firm complied with the SRA Accounts Rules. This guide is about one thing: how to prepare for that report so it goes smoothly and comes back unqualified. It covers the records to assemble, how to choose and instruct the reporting accountant, the timeline to work to, exactly what the accountant tests, and how to fix problems before the visit rather than have them written up afterwards.</p>
 
 <p>Two related questions sit alongside preparation. Whether your firm needs a report at all (the trigger), and whether you qualify for the narrow exemption, are covered in detail on separate pages so this guide can stay focused on the workflow. If you are not yet sure a report applies to you, read <a href="/blog/sra-accounts-rules/when-is-an-sra-accountants-report-required">when an SRA accountant's report is required</a> and <a href="/blog/sra-accounts-rules/sra-accountants-report-exemption-thresholds">whether you qualify for the exemption</a> first. The short version: a firm that held client money in the period needs a report unless it held only Legal Aid Agency money, or its client money stayed within an average of £10,000 and a maximum of £250,000 across the period. Most conveyancing, litigation and private client firms will not qualify, so the rest of this guide assumes a report applies to you.</p>

@@ -1,35 +1,38 @@
 ---
-title: "How Should a Solicitor Treat Conveyancing Disbursements for VAT Purposes?"
-slug: "disbursements-vs-recharges-conveyancing-vat"
-canonical: "https://www.accountsforlawyers.co.uk/blog/vat-and-compliance/disbursements-vs-recharges-conveyancing-vat"
-date: "2026-05-18"
+title: How Should a Solicitor Treat Conveyancing Disbursements for VAT Purposes?
+slug: disbursements-vs-recharges-conveyancing-vat
+canonical: https://www.accountsforlawyers.co.uk/blog/vat-and-compliance/disbursements-vs-recharges-conveyancing-vat
+date: '2026-05-18'
 generator: deepseek-chat/legacy-bulk
-author: "Accounts for Lawyers Editorial Team"
-category: "VAT & Compliance"
-metaTitle: "Conveyancing Disbursements VAT: Solicitor's Guide 2025/26"
-metaDescription: "UK solicitor guide to VAT on conveyancing disbursements. Agency vs principal disbursements, correct VAT treatment, and common errors to avoid."
-altText: "Solicitor reviewing conveyancing file with VAT disbursement notes on desk"
-image: ""
-h1: "How Should a Solicitor Treat Conveyancing Disbursements for VAT Purposes?"
-summary: "A practical guide for UK solicitors on distinguishing agency disbursements from principal disbursements in conveyancing transactions, with worked examples and HMRC compliance requirements."
+author: Accounts for Lawyers Editorial Team
+category: VAT & Compliance
+metaTitle: VAT on Recharges and Conveyancing Disbursements Explained
+metaDescription: 'Get disbursement VAT right: agency disbursements carry no VAT, but principal recharges are standard-rated at 20%, and errors bring HMRC penalties.'
+altText: Solicitor reviewing conveyancing file with VAT disbursement notes on desk
+image: ''
+h1: How Should a Solicitor Treat Conveyancing Disbursements for VAT Purposes?
+summary: A practical guide for UK solicitors on distinguishing agency disbursements from principal disbursements in conveyancing transactions, with worked examples and HMRC compliance requirements.
 keyTakeaways:
-  - "An agency disbursement carries no VAT because the supply is to the client; a principal disbursement does, because the solicitor is the customer."
-  - "SDLT and Land Registry registration fees are agency disbursements with no VAT on the recharge. Search fees usually are NOT: after Brabners and R&C Brief 6 (2020), a search the firm uses in its own advice carries VAT."
-  - "Panel manager fees, indemnity insurance arranged in the firm's name, courier and photocopying costs are principal recharges that carry 20% VAT."
-  - "Itemise every agency disbursement separately on the invoice, or HMRC may treat the whole amount as a principal recharge subject to VAT."
-  - "Treating a principal disbursement as agency under-declares output VAT, which HMRC can assess with interest and penalties up to 30% for carelessness."
-schema: ""
+- An agency disbursement carries no VAT because the supply is to the client; a principal disbursement does, because the solicitor is the customer.
+- 'SDLT and Land Registry registration fees are agency disbursements with no VAT on the recharge. Search fees usually are NOT: after Brabners and R&C Brief 6 (2020), a search the firm uses in its own advice carries VAT.'
+- Panel manager fees, indemnity insurance arranged in the firm's name, courier and photocopying costs are principal recharges that carry 20% VAT.
+- Itemise every agency disbursement separately on the invoice, or HMRC may treat the whole amount as a principal recharge subject to VAT.
+- Treating a principal disbursement as agency under-declares output VAT, which HMRC can assess with interest and penalties up to 30% for carelessness.
+schema: ''
 faqs:
-  - question: "Is SDLT subject to VAT when recharged to the client?"
-    answer: "No. SDLT is a tax paid to HMRC, not a supply of goods or services. It is always an agency disbursement. The solicitor pays SDLT on the client's behalf and recharges the exact amount. No VAT is added. The same applies to Land Transaction Tax in Wales and LBTT in Scotland."
-  - question: "Can a solicitor add a handling fee to disbursements?"
-    answer: "A handling fee or administration charge is a separate supply of services by the solicitor to the client. It is not a disbursement. The handling fee must be subject to VAT at 20% and shown separately on the invoice. You cannot treat a handling fee as part of a disbursement to avoid VAT."
-  - question: "What happens if I incorrectly treat a principal disbursement as an agency disbursement?"
-    answer: "You under-declare output VAT on your VAT return. HMRC can assess the under-declared tax plus interest. Penalties apply depending on whether the error is careless or deliberate. If you discover the error yourself, you should correct it via your next VAT return or submit a voluntary disclosure. The client has not been overcharged, so no refund is due to them, but you owe HMRC the output tax."
-  - question: "Do I need to show disbursements separately on the client invoice?"
-    answer: "Yes. HMRC requires that agency disbursements be clearly identified as such on the invoice. If you bundle disbursements into a single line without itemisation, HMRC may treat the entire amount as a principal recharge subject to VAT. Best practice is to list each disbursement separately with the label \"disbursement\" and the amount. Principal recharges should be listed separately with VAT added."
+- question: Is SDLT subject to VAT when recharged to the client?
+  answer: No. SDLT is a tax paid to HMRC, not a supply of goods or services. It is always an agency disbursement. The solicitor pays SDLT on the client's behalf and recharges the exact amount. No VAT is added. The same applies to Land Transaction Tax in Wales and LBTT in Scotland.
+- question: Can a solicitor add a handling fee to disbursements?
+  answer: A handling fee or administration charge is a separate supply of services by the solicitor to the client. It is not a disbursement. The handling fee must be subject to VAT at 20% and shown separately on the invoice. You cannot treat a handling fee as part of a disbursement to avoid VAT.
+- question: What happens if I incorrectly treat a principal disbursement as an agency disbursement?
+  answer: You under-declare output VAT on your VAT return. HMRC can assess the under-declared tax plus interest. Penalties apply depending on whether the error is careless or deliberate. If you discover the error yourself, you should correct it via your next VAT return or submit a voluntary disclosure. The client has not been overcharged, so no refund is due to them, but you owe HMRC the output tax.
+- question: Do I need to show disbursements separately on the client invoice?
+  answer: Yes. HMRC requires that agency disbursements be clearly identified as such on the invoice. If you bundle disbursements into a single line without itemisation, HMRC may treat the entire amount as a principal recharge subject to VAT. Best practice is to list each disbursement separately with the label "disbursement" and the amount. Principal recharges should be listed separately with VAT added.
+metaTitle_prev: 'Conveyancing Disbursements VAT: Solicitor''s Guide 2025/26'
+metaDescription_prev: UK solicitor guide to VAT on conveyancing disbursements. Agency vs principal disbursements, correct VAT treatment, and common errors to avoid.
+dateModified: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Conveyancing generates a high volume of third-party costs: search fees, Land Registry fees, SDLT payments, and local authority charges. Getting the VAT treatment wrong on these disbursements is one of the most common errors in law firm VAT returns, and HMRC has shown increasing interest in this area during compliance checks.</p>
 
 <p>This article explains the distinction between agency disbursements and principal disbursements, sets out the correct VAT treatment for each category, and highlights the practical steps a solicitor should take to avoid penalties.</p>
