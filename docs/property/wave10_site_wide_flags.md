@@ -103,6 +103,26 @@ Flags never block. Sessions continue work after flagging.
 
 ---
 
+## F-61 — AUTHORITY_GAP — HMRC IHT manual (IHTM13000 series) not yet updated for FA 2025 LTR architecture
+
+**Raised by:** S2-NRL-MISC, 2026-07-08. Brief: non-resident-landlords-uk-inheritance-tax-exposure.
+**Issue:** IHTM13000 domicile series was written for the pre-FA-2025 domicile regime and still references "deemed domicile" (s.267) language, which was abolished from 6 April 2025. Writer must use legislation.gov.uk ss.6A-6C IHTA 1984 as primary authority for the LTR test; not cite IHTM13024 as current operative guidance.
+**Required action:** When HMRC updates IHTM13000 series to reflect FA 2025, update the NRL IHT page's authority references accordingly. Until then, cite statute directly.
+**Blocking:** No. HP §22.X is the operative lock.
+**Status:** open
+
+---
+
+## F-62 — AUTHORITY_GAP — HMRC BADR guidance page URL returning HTTP 404
+
+**Raised by:** S2-NRL-MISC, 2026-07-08. Brief: business-asset-disposal-relief-residential-property-qualification.
+**Issue:** https://www.gov.uk/guidance/business-asset-disposal-relief returned HTTP 404 at Stage 2. URL may have moved. Writer must WebFetch at write time to locate current HMRC BADR guidance and confirm 18% rate from 6 April 2026 matches HP §5.A (FA 2025 s.8).
+**Required action:** Writer locates current HMRC BADR guidance URL and verifies rate figure. If HMRC publishes a rate inconsistent with HP §5.A, raise a fresh HP drift flag immediately.
+**Blocking:** No. HP §5.A (manager-sourced from FA 2025 s.8 legislation.gov.uk) is the operative lock.
+**Status:** open
+
+---
+
 ## F-31 — HOUSE_POSITION_EXTENSION — VAT Sch 8 Grp 5 conversion-sale zero-rate + s.35 DIY Builders Scheme not in §29
 
 **CLOSED 2026-07-08 Stage 1b: locked as HP §29.13 (Grp 6 vs Grp 7 boundary fixed — 2-year-empty belongs to Grp 7; Sch 8 Grp 5 Item 1(b) verbatim; s.35 DIY).**
