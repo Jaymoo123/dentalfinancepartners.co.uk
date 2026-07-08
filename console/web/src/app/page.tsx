@@ -1,19 +1,23 @@
-"use client";
-
 /**
  * Estate overview -- the home page of the unified console.
  *
- * CSR: page shell loads instantly from CDN; data is fetched from console_cache
- * via /api/console/data (pre-computed by the /api/console/refresh cron every 2 min).
- * Auth is checked on mount via /api/console/session.
+ * Cookie-gated (OB-01). Never indexed (noindex meta + X-Robots-Tag header).
+ *
+ * Layout:
+ *   1. Per-site comparison strip: sessions, humans, leads, conversion, 7d sparkline
+ *   2. Estate funnel totals (28-day)
+ *   3. Channel comparison across sites (best channel per site)
+ *   4. Latest leads across all sites (site-tagged)
+ *   5. Error groups across sites
+ *
+ * RSC BOUNDARY: SnapshotCard and Sparkline are server-renderable; all
+ * interactive components (SiteSwitcher) are leaf-level client components
+ * that receive only serialisable props.
  */
-
+import { redirect } from "next/navigation";
 import Link from "next/link";
-import { useMemo } from "react";
-import { useConsoleAuth } from "@/hooks/useConsoleAuth";
-import { useConsoleData, cacheGet, type CacheMap } from "@/hooks/useConsoleData";
-import { DashboardSkeleton } from "@/components/Skeleton";
-import { StalenessBar } from "@/components/StalenessBar";
+import type { Metadata } from "next";
+import { CONSOLE_NOINDEX_META } from "@accounting-network/web-shared/console/consoleAuth";
 import { SnapshotCard } from "@accounting-network/web-shared/console/components/SnapshotCard";
 import KpiWindowCarousel, {
   type KpiPage,
@@ -23,49 +27,27 @@ import DeferredMount from "@accounting-network/web-shared/console/components/Def
 import { TrendChart } from "@/components/TrendChart";
 import { WeeklyOverlayChart } from "@/components/WeeklyOverlayChart";
 import { CategoryBarChart } from "@/components/CategoryBarChart";
+import {
+  getSitesRegistry,
+  getEstateOverview,
+  getEstateChannels,
+  getEstateErrors,
+  getEstateLatestLeads,
+  getEstateKpis,
+  getEstateTimeseries,
+  type SiteKpis,
+} from "@accounting-network/web-shared/console/estateData";
+import { getTimeseries, getFunnelDaily } from "@accounting-network/web-shared/console/adminData";
 import { MultiSiteTrendChart } from "@/components/MultiSiteTrendChart";
 import { buildMultiSiteSeries, buildWeeklyAvgVisitors } from "@/lib/multiSiteSeries";
+import { checkAuth } from "@/lib/checkAuth";
 import SiteSwitcher from "@/components/SiteSwitcher";
 import ConversionFunnel, { type FunnelTotals } from "@/components/ConversionFunnel";
 
-// ── Inline types (avoid importing server-only adminData / estateData) ────────
+export const dynamic = "force-dynamic";
+export const metadata: Metadata = CONSOLE_NOINDEX_META;
 
-type SiteEntry = {
-  site_key: string;
-  display_name: string;
-  domain: string;
-  niche: string | null;
-  active: boolean;
-};
-
-type SiteKpi = {
-  site_key: string;
-  sessions: number;
-  humans: number;
-  new_humans: number;
-  converted_humans: number;
-  leads_all: number;
-  leads_uk: number;
-};
-
-type TimePoint = { bucket: string; sessions: number; humans: number; events: number; leads: number };
-
-type FunnelDay = {
-  date: string;
-  sessions: number;
-  engaged_sessions: number;
-  calc_sessions: number;
-  form_cta_sessions: number;
-  form_start_sessions: number;
-  converted_sessions: number;
-};
-
-type ChannelRow = { site_key: string; channel: string; sessions: number; leads: number; conversion_rate: number | null };
-type ErrorRow = { site_key: string; total_errors: number; total_sessions: number; last_seen: string | null };
-type LeadRow = { id: string; site_key: string; full_name: string | null; email: string | null; created_at: string };
-type OverviewRow = { site_key: string; sessions_7d: number[] };
-
-// ── Helpers ──────────────────────────────────────────────────────────────────
+// ── Helpers ────────────────────────────────────────────────────────────────
 
 function pct(n: number | null | undefined): string {
   return n == null ? "-" : `${(n * 100).toFixed(1)}%`;
@@ -88,8 +70,6 @@ const CHANNEL_LABEL: Record<string, string> = {
   direct: "Direct",
 };
 
-// ── Sub-components ────────────────────────────────────────────────────────────
-
 type EstateTotals = {
   sessions: number;
   humans: number;
@@ -99,6 +79,7 @@ type EstateTotals = {
   leads_uk: number;
 };
 
+/** Estate-total KPIs for one window, each card tagged with the window label. */
 function EstateKpiGrid({ t, windowLabel }: { t: EstateTotals; windowLabel: string }) {
   return (
     <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
@@ -112,171 +93,153 @@ function EstateKpiGrid({ t, windowLabel }: { t: EstateTotals; windowLabel: strin
   );
 }
 
-// ── Estate keys (always fetched) ─────────────────────────────────────────────
+// ── Page ───────────────────────────────────────────────────────────────────
 
-const ESTATE_KEYS = [
-  "estate:sites_registry",
-  "estate:kpis:daily",
-  "estate:kpis:7d",
-  "estate:kpis:30d",
-  "estate:kpis:all",
-  "estate:overview:7d",
-  "estate:timeseries:30d",
-  "estate:timeseries:all",
-  "estate:channels:28d",
-  "estate:errors",
-  "estate:latest_leads:30",
-];
+export default async function EstatePage() {
+  const authed = await checkAuth();
+  if (!authed) redirect("/login");
 
-// ── Derived data (pure, runs from cache values) ───────────────────────────────
-
-function sumKpis(rows: SiteKpi[]): EstateTotals {
-  return rows.reduce(
-    (acc, r) => ({
-      sessions: acc.sessions + r.sessions,
-      humans: acc.humans + r.humans,
-      new_humans: acc.new_humans + r.new_humans,
-      converted_humans: acc.converted_humans + r.converted_humans,
-      leads_all: acc.leads_all + r.leads_all,
-      leads_uk: acc.leads_uk + r.leads_uk,
-    }),
-    { sessions: 0, humans: 0, new_humans: 0, converted_humans: 0, leads_all: 0, leads_uk: 0 },
+  const now = new Date();
+  const startOfTodayUTC = new Date(
+    Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()),
   );
-}
+  const [sites, overview, channels, errors, leads, kpi7, kpiAll, estate30d, kpiToday, kpi30, estateAllDaily] =
+    await Promise.all([
+      getSitesRegistry(),
+      getEstateOverview(7),
+      getEstateChannels(28),
+      getEstateErrors(),
+      getEstateLatestLeads(30),
+      getEstateKpis(new Date(now.getTime() - 7 * 86400_000).toISOString(), now.toISOString()),
+      getEstateKpis(new Date("2000-01-01").toISOString(), now.toISOString()),
+      getEstateTimeseries("1 day", new Date(now.getTime() - 30 * 86400_000).toISOString(), now.toISOString()),
+      getEstateKpis(startOfTodayUTC.toISOString(), now.toISOString()),
+      getEstateKpis(new Date(now.getTime() - 30 * 86400_000).toISOString(), now.toISOString()),
+      getEstateTimeseries("1 day", new Date("2000-01-01").toISOString(), now.toISOString()),
+    ]);
 
-function buildEstateFunnel(perSiteFunnel: FunnelDay[][], fromMs: number): FunnelTotals {
-  const since = new Date(fromMs).toISOString().slice(0, 10);
-  const byDate = new Map<string, FunnelTotals & { date: string }>();
-  for (const rows of perSiteFunnel) {
-    for (const d of rows) {
-      const e = byDate.get(d.date) ?? { date: d.date, sessions: 0, engaged: 0, calc: 0, formCta: 0, form: 0, converted: 0 };
+  // KPI reducer: sum SiteKpis[] into estate totals
+  function sumKpis(rows: SiteKpis[]) {
+    return rows.reduce(
+      (acc, r) => ({
+        sessions: acc.sessions + r.sessions,
+        humans: acc.humans + r.humans,
+        new_humans: acc.new_humans + r.new_humans,
+        converted_humans: acc.converted_humans + r.converted_humans,
+        leads_all: acc.leads_all + r.leads_all,
+        leads_uk: acc.leads_uk + r.leads_uk,
+      }),
+      { sessions: 0, humans: 0, new_humans: 0, converted_humans: 0, leads_all: 0, leads_uk: 0 },
+    );
+  }
+  const t7 = sumKpis(kpi7);
+  const tAll = sumKpis(kpiAll);
+  const tToday = sumKpis(kpiToday);
+  const t30 = sumKpis(kpi30);
+
+  // Estate KPI windows for the carousel (most granular -> widest).
+  const estateKpiPages: KpiPage[] = [
+    { key: "daily", label: "Daily", meta: "Today (since 00:00 UTC)", node: <EstateKpiGrid t={tToday} windowLabel="Daily" /> },
+    { key: "weekly", label: "Weekly", meta: "Last 7 days", node: <EstateKpiGrid t={t7} windowLabel="Weekly" /> },
+    { key: "monthly", label: "Monthly", meta: "Last 30 days", node: <EstateKpiGrid t={t30} windowLabel="Monthly" /> },
+    { key: "all", label: "All time", meta: "All time", node: <EstateKpiGrid t={tAll} windowLabel="All time" /> },
+  ];
+
+  // Build per-site channel index (best channel by sessions per site)
+  const bestChannelBySite = new Map<string, { channel: string; cr: number | null }>();
+  for (const ch of channels) {
+    const cur = bestChannelBySite.get(ch.site_key);
+    if (!cur || (ch.sessions > 0 && (cur.cr ?? 0) < (ch.conversion_rate ?? 0))) {
+      bestChannelBySite.set(ch.site_key, {
+        channel: ch.channel,
+        cr: ch.conversion_rate,
+      });
+    }
+  }
+
+  // JS error total for the (de-emphasised) errors card
+  const totalErrors = errors.reduce((a, e) => a + e.total_errors, 0);
+
+  // Per-site humans map (from 7d KPI data)
+  const kpiBySite = new Map(kpi7.map((r) => [r.site_key, r]));
+
+  // Leads by site (all time) for the estate bar chart.
+  const kpiAllBySite = new Map(kpiAll.map((r) => [r.site_key, r]));
+  const leadsBySite = sites
+    .filter((s) => s.active)
+    .map((s) => ({ name: s.display_name, value: kpiAllBySite.get(s.site_key)?.leads_all ?? 0 }))
+    .sort((a, b) => b.value - a.value);
+
+  // Per-site daily series (30 days) for the estate comparison overlay.
+  const cmpFrom = new Date(now.getTime() - 30 * 86400_000).toISOString();
+  const activeSites = sites.filter((s) => s.active);
+  const [perSiteSeries, perSiteFunnel] = await Promise.all([
+    Promise.all(activeSites.map((s) => getTimeseries(s.site_key, "1 day", cmpFrom, now.toISOString(), "GB"))),
+    Promise.all(activeSites.map((s) => getFunnelDaily(s.site_key, "GB"))),
+  ]);
+  const cmp = buildMultiSiteSeries(activeSites, perSiteSeries, perSiteFunnel);
+
+  // Estate conversion funnel, windowed: aggregate the per-site daily funnel rows
+  // (already fetched above for the comparison overlay, GB) across sites by date,
+  // then bucket into the same Daily/Weekly/Monthly/All-time windows as the KPIs.
+  const estFunnelByDate = new Map<string, FunnelTotals & { date: string }>();
+  for (const siteRows of perSiteFunnel) {
+    for (const d of siteRows) {
+      const e =
+        estFunnelByDate.get(d.date) ??
+        { date: d.date, sessions: 0, engaged: 0, calc: 0, formCta: 0, form: 0, converted: 0 };
       e.sessions += d.sessions;
       e.engaged += d.engaged_sessions;
       e.calc += d.calc_sessions;
       e.formCta += d.form_cta_sessions;
       e.form += d.form_start_sessions;
       e.converted += d.converted_sessions;
-      byDate.set(d.date, e);
+      estFunnelByDate.set(d.date, e);
     }
   }
-  return [...byDate.values()]
-    .filter(d => d.date >= since)
-    .reduce(
-      (a, d) => ({
-        sessions: a.sessions + d.sessions,
-        engaged: a.engaged + d.engaged,
-        calc: a.calc + d.calc,
-        formCta: a.formCta + d.formCta,
-        form: a.form + d.form,
-        converted: a.converted + d.converted,
-      }),
+  const estFunnelDaily = [...estFunnelByDate.values()];
+  const sumEstateFunnel = (fromMs: number): FunnelTotals => {
+    const since = new Date(fromMs).toISOString().slice(0, 10);
+    return estFunnelDaily.reduce(
+      (a, d) =>
+        d.date >= since
+          ? {
+              sessions: a.sessions + d.sessions,
+              engaged: a.engaged + d.engaged,
+              calc: a.calc + d.calc,
+              formCta: a.formCta + d.formCta,
+              form: a.form + d.form,
+              converted: a.converted + d.converted,
+            }
+          : a,
       { sessions: 0, engaged: 0, calc: 0, formCta: 0, form: 0, converted: 0 },
     );
-}
-
-// ── Page ──────────────────────────────────────────────────────────────────────
-
-export default function EstatePage() {
-  useConsoleAuth();
-
-  // Estate-level data (always known keys)
-  const { cache, refreshedAt, loading } = useConsoleData(ESTATE_KEYS);
-
-  // Resolve sites first so we can build per-site comparison keys
-  const allSites = cacheGet<SiteEntry[]>(cache, "estate:sites_registry", []);
-  const activeSites = allSites.filter((s) => s.active);
-
-  // Per-site comparison keys (empty until sites_registry loads → hook fires on change)
-  const perSiteKeys = useMemo(
-    () => activeSites.flatMap((s) => [
-      `site:${s.site_key}:timeseries:30d:GB`,
-      `site:${s.site_key}:funnel:GB`,
-    ]),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [activeSites.map((s) => s.site_key).join(",")],
-  );
-  const { cache: siteCache } = useConsoleData(perSiteKeys);
-
-  if (loading) return <DashboardSkeleton />;
-
-  // ── Data from cache ────────────────────────────────────────────────────────
-  const now = new Date();
-
-  const kpiToday  = cacheGet<SiteKpi[]>(cache, "estate:kpis:daily", []);
-  const kpi7      = cacheGet<SiteKpi[]>(cache, "estate:kpis:7d",    []);
-  const kpi30     = cacheGet<SiteKpi[]>(cache, "estate:kpis:30d",   []);
-  const kpiAll    = cacheGet<SiteKpi[]>(cache, "estate:kpis:all",   []);
-  const estate30d = cacheGet<TimePoint[]>(cache, "estate:timeseries:30d", []);
-  const estateAllDaily = cacheGet<TimePoint[]>(cache, "estate:timeseries:all", []);
-  const channels  = cacheGet<ChannelRow[]>(cache, "estate:channels:28d",    []);
-  const errors    = cacheGet<ErrorRow[]>(cache,   "estate:errors",          []);
-  const leads     = cacheGet<LeadRow[]>(cache,    "estate:latest_leads:30", []);
-  const overview  = cacheGet<OverviewRow[]>(cache, "estate:overview:7d",    []);
-
-  const perSiteFunnel = activeSites.map((s) =>
-    cacheGet<FunnelDay[]>(siteCache, `site:${s.site_key}:funnel:GB`, []),
-  );
-  const perSiteSeries = activeSites.map((s) =>
-    cacheGet<TimePoint[]>(siteCache, `site:${s.site_key}:timeseries:30d:GB`, []),
-  );
-
-  // ── Derived ────────────────────────────────────────────────────────────────
-  const tToday = sumKpis(kpiToday);
-  const t7     = sumKpis(kpi7);
-  const t30    = sumKpis(kpi30);
-  const tAll   = sumKpis(kpiAll);
-
-  const estateKpiPages: KpiPage[] = [
-    { key: "daily",   label: "Daily",    meta: "Today (since 00:00 UTC)",  node: <EstateKpiGrid t={tToday} windowLabel="Daily" /> },
-    { key: "weekly",  label: "Weekly",   meta: "Last 7 days",              node: <EstateKpiGrid t={t7}     windowLabel="Weekly" /> },
-    { key: "monthly", label: "Monthly",  meta: "Last 30 days",             node: <EstateKpiGrid t={t30}    windowLabel="Monthly" /> },
-    { key: "all",     label: "All time", meta: "All time",                 node: <EstateKpiGrid t={tAll}   windowLabel="All time" /> },
+  };
+  const estFrom7 = new Date(now.getTime() - 7 * 86400_000);
+  const estFrom30 = new Date(now.getTime() - 30 * 86400_000);
+  const estAllFrom = new Date("2000-01-01");
+  const estateFunnelPages: KpiPage[] = [
+    { key: "today", label: "Daily", meta: "Today (since 00:00 UTC)", node: <ConversionFunnel totals={sumEstateFunnel(startOfTodayUTC.getTime())} /> },
+    { key: "d7", label: "Weekly", meta: "Last 7 days", node: <ConversionFunnel totals={sumEstateFunnel(estFrom7.getTime())} /> },
+    { key: "d30", label: "Monthly", meta: "Last 30 days", node: <ConversionFunnel totals={sumEstateFunnel(estFrom30.getTime())} /> },
+    { key: "all", label: "All time", meta: "All time", node: <ConversionFunnel totals={sumEstateFunnel(estAllFrom.getTime())} /> },
   ];
 
-  const bestChannelBySite = new Map<string, { channel: string; cr: number | null }>();
-  for (const ch of channels) {
-    const cur = bestChannelBySite.get(ch.site_key);
-    if (!cur || (ch.sessions > 0 && (cur.cr ?? 0) < (ch.conversion_rate ?? 0))) {
-      bestChannelBySite.set(ch.site_key, { channel: ch.channel, cr: ch.conversion_rate });
-    }
-  }
-
-  const totalErrors = errors.reduce((a, e) => a + e.total_errors, 0);
-  const kpiBySite = new Map(kpi7.map((r) => [r.site_key, r]));
-  const kpiAllBySite = new Map(kpiAll.map((r) => [r.site_key, r]));
-  const leadsBySite = activeSites
-    .map((s) => ({ name: s.display_name, value: kpiAllBySite.get(s.site_key)?.leads_all ?? 0 }))
-    .sort((a, b) => b.value - a.value);
-
-  const cmp = buildMultiSiteSeries(activeSites, perSiteSeries, perSiteFunnel);
+  // Weekly average daily visitors, all-time (estate total).
   const estateWeekly = buildWeeklyAvgVisitors(estateAllDaily, "estate", "Estate", "#059669");
 
-  const startOfTodayMs = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
-  const estateFunnelPages: KpiPage[] = [
-    { key: "today", label: "Daily",    meta: "Today (since 00:00 UTC)", node: <ConversionFunnel totals={buildEstateFunnel(perSiteFunnel, startOfTodayMs)} /> },
-    { key: "d7",    label: "Weekly",   meta: "Last 7 days",             node: <ConversionFunnel totals={buildEstateFunnel(perSiteFunnel, now.getTime() - 7  * 86400_000)} /> },
-    { key: "d30",   label: "Monthly",  meta: "Last 30 days",            node: <ConversionFunnel totals={buildEstateFunnel(perSiteFunnel, now.getTime() - 30 * 86400_000)} /> },
-    { key: "all",   label: "All time", meta: "All time",                node: <ConversionFunnel totals={buildEstateFunnel(perSiteFunnel, new Date("2000-01-01").getTime())} /> },
-  ];
-
-  // ── Render ─────────────────────────────────────────────────────────────────
   return (
     <div className="min-h-screen bg-slate-50">
       {/* Chrome */}
       <header className="border-b border-slate-200 bg-white px-4 py-3">
-        <div className="mx-auto max-w-7xl">
-          <div className="flex items-center justify-between gap-3">
-            <div className="flex items-center gap-3">
-              <span className="text-sm font-bold text-slate-900">Estate console</span>
-              <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-semibold text-slate-500">
-                {activeSites.length} sites
-              </span>
-            </div>
-            <StalenessBar refreshedAt={refreshedAt} loading={loading} />
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <span className="text-sm font-bold text-slate-900">Estate console</span>
+            <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-semibold text-slate-500">
+              {sites.filter((s) => s.active).length} sites
+            </span>
           </div>
-          <div className="mt-2 -mx-4 overflow-x-auto px-4">
-            <SiteSwitcher sites={allSites} activeSiteKey={null} />
-          </div>
+          <SiteSwitcher sites={sites} activeSiteKey={null} />
         </div>
       </header>
 
@@ -380,49 +343,51 @@ export default function EstatePage() {
               </tr>
             </thead>
             <tbody>
-              {activeSites.map((site) => {
-                const row = overview.find((r) => r.site_key === site.site_key);
-                const k = kpiBySite.get(site.site_key);
-                const sparkValues = row?.sessions_7d ?? [0, 0, 0, 0, 0, 0, 0];
-                const convRate = k && k.humans > 0 ? k.converted_humans / k.humans : null;
-                const hasData = !!k && k.sessions > 0;
-                return (
-                  <tr
-                    key={site.site_key}
-                    className="border-t border-slate-100 hover:bg-slate-50/50"
-                  >
-                    <td className="min-w-[160px] px-2 py-3 sm:px-4">
-                      <Link
-                        href={`/site/${site.site_key}`}
-                        className="font-semibold text-slate-900 hover:underline whitespace-nowrap"
-                      >
-                        {site.display_name}
-                      </Link>
-                      <div className="text-[11px] text-slate-400">{site.site_key}</div>
-                    </td>
-                    <td className="px-2 py-3 text-right font-mono text-slate-700 sm:px-4">
-                      {k ? k.sessions.toLocaleString("en-GB") : "-"}
-                    </td>
-                    <td className="px-2 py-3 text-right font-mono text-slate-500 sm:px-4">
-                      {k ? k.humans.toLocaleString("en-GB") : "-"}
-                    </td>
-                    <td className="px-2 py-3 text-right font-mono text-emerald-700 sm:px-4">
-                      {k ? k.leads_all : "-"}
-                    </td>
-                    <td className="px-2 py-3 text-right sm:px-4">
-                      <span className={hasData && (convRate ?? 0) > 0.02 ? "font-semibold text-emerald-700" : "text-slate-500"}>
-                        {k ? pct(convRate) : "-"}
-                      </span>
-                    </td>
-                    <td className="hidden w-32 px-4 py-3 lg:table-cell">
-                      <div className="text-sky-500">
-                        <Sparkline values={sparkValues} height={24} />
-                      </div>
-                    </td>
-                  </tr>
-                );
-              })}
-              {activeSites.length === 0 && (
+              {sites
+                .filter((s) => s.active)
+                .map((site) => {
+                  const row = overview.find((r) => r.site_key === site.site_key);
+                  const k = kpiBySite.get(site.site_key);
+                  const sparkValues = row?.sessions_7d ?? [0, 0, 0, 0, 0, 0, 0];
+                  const convRate = k && k.humans > 0 ? k.converted_humans / k.humans : null;
+                  const hasData = !!k && k.sessions > 0;
+                  return (
+                    <tr
+                      key={site.site_key}
+                      className="border-t border-slate-100 hover:bg-slate-50/50"
+                    >
+                      <td className="min-w-[160px] px-2 py-3 sm:px-4">
+                        <Link
+                          href={`/site/${site.site_key}`}
+                          className="font-semibold text-slate-900 hover:underline whitespace-nowrap"
+                        >
+                          {site.display_name}
+                        </Link>
+                        <div className="text-[11px] text-slate-400">{site.site_key}</div>
+                      </td>
+                      <td className="px-2 py-3 text-right font-mono text-slate-700 sm:px-4">
+                        {k ? k.sessions.toLocaleString("en-GB") : "-"}
+                      </td>
+                      <td className="px-2 py-3 text-right font-mono text-slate-500 sm:px-4">
+                        {k ? k.humans.toLocaleString("en-GB") : "-"}
+                      </td>
+                      <td className="px-2 py-3 text-right font-mono text-emerald-700 sm:px-4">
+                        {k ? k.leads_all : "-"}
+                      </td>
+                      <td className="px-2 py-3 text-right sm:px-4">
+                        <span className={hasData && (convRate ?? 0) > 0.02 ? "font-semibold text-emerald-700" : "text-slate-500"}>
+                          {k ? pct(convRate) : "-"}
+                        </span>
+                      </td>
+                      <td className="hidden w-32 px-4 py-3 lg:table-cell">
+                        <div className="text-sky-500">
+                          <Sparkline values={sparkValues} height={24} />
+                        </div>
+                      </td>
+                    </tr>
+                  );
+                })}
+              {sites.filter((s) => s.active).length === 0 && (
                 <tr>
                   <td colSpan={6} className="px-4 py-6 text-center text-slate-400">
                     No active sites registered.
@@ -459,33 +424,35 @@ export default function EstatePage() {
               </tr>
             </thead>
             <tbody>
-              {activeSites.map((site) => {
-                const bestCh = bestChannelBySite.get(site.site_key);
-                const chData = channels.find(
-                  (c) => c.site_key === site.site_key && c.channel === bestCh?.channel,
-                );
-                return (
-                  <tr key={site.site_key} className="border-t border-slate-100">
-                    <td className="whitespace-nowrap min-w-[160px] px-4 py-2.5 font-medium text-slate-800">
-                      <Link href={`/site/${site.site_key}`} className="hover:underline">
-                        {site.display_name}
-                      </Link>
-                    </td>
-                    <td className="px-4 py-2.5 text-slate-600">
-                      {bestCh ? (CHANNEL_LABEL[bestCh.channel] ?? bestCh.channel) : "-"}
-                    </td>
-                    <td className="px-4 py-2.5 text-right font-mono">
-                      {chData ? chData.sessions : "-"}
-                    </td>
-                    <td className="px-4 py-2.5 text-right font-mono text-emerald-700">
-                      {chData ? chData.leads : "-"}
-                    </td>
-                    <td className="px-4 py-2.5 text-right">
-                      {chData ? pct(chData.conversion_rate) : "-"}
-                    </td>
-                  </tr>
-                );
-              })}
+              {sites
+                .filter((s) => s.active)
+                .map((site) => {
+                  const bestCh = bestChannelBySite.get(site.site_key);
+                  const chData = channels.find(
+                    (c) => c.site_key === site.site_key && c.channel === bestCh?.channel,
+                  );
+                  return (
+                    <tr key={site.site_key} className="border-t border-slate-100">
+                      <td className="whitespace-nowrap min-w-[160px] px-4 py-2.5 font-medium text-slate-800">
+                        <Link href={`/site/${site.site_key}`} className="hover:underline">
+                          {site.display_name}
+                        </Link>
+                      </td>
+                      <td className="px-4 py-2.5 text-slate-600">
+                        {bestCh ? (CHANNEL_LABEL[bestCh.channel] ?? bestCh.channel) : "-"}
+                      </td>
+                      <td className="px-4 py-2.5 text-right font-mono">
+                        {chData ? chData.sessions : "-"}
+                      </td>
+                      <td className="px-4 py-2.5 text-right font-mono text-emerald-700">
+                        {chData ? chData.leads : "-"}
+                      </td>
+                      <td className="px-4 py-2.5 text-right">
+                        {chData ? pct(chData.conversion_rate) : "-"}
+                      </td>
+                    </tr>
+                  );
+                })}
             </tbody>
           </table>
         </div>
@@ -566,7 +533,7 @@ export default function EstatePage() {
                       <tr key={e.site_key} className={`border-t border-slate-100 ${e.total_errors > 0 ? "bg-rose-50/30" : ""}`}>
                         <td className="px-3 py-2 font-medium text-slate-800">
                           <Link href={`/site/${e.site_key}`} className="hover:underline whitespace-nowrap">
-                            {allSites.find((s) => s.site_key === e.site_key)?.display_name ?? e.site_key}
+                            {sites.find((s) => s.site_key === e.site_key)?.display_name ?? e.site_key}
                           </Link>
                         </td>
                         <td className="px-3 py-2 text-right font-mono text-rose-700">
