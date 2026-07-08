@@ -22,7 +22,7 @@ faqs:
 - question: Can a share buyback be funded from future profits rather than current distributable reserves?
   answer: No. The buyback must be funded from distributable profits that exist at the date of the buyback. You cannot use future profits. If your agency does not have enough retained earnings, consider a personal purchase by the remaining founder or a reduction of capital (which requires a court order and is more expensive).
 - question: What happens if the departing co-founder wants to keep a small shareholding after the buyback?
-  answer: Capital treatment fails. HMRC requires the departing shareholder to dispose of their entire interest. If they keep even one share, the payment is treated as a dividend. They pay income tax on it. No BADR. No 10% rate. If they want to stay connected, the personal purchase route (remaining founders buy the shares) is better.
+  answer: Capital treatment fails. HMRC requires the departing shareholder to dispose of their entire interest. If they keep even one share, the payment is treated as a dividend. They pay income tax on it. No BADR. No 18% rate. If they want to stay connected, the personal purchase route (remaining founders buy the shares) is better.
 - question: Does the five-year holding period apply if the co-founder inherited the shares from another founder?
   answer: Yes, the five-year period applies to the current holder. If they inherited shares three years ago, they do not meet the condition. However, if the shares were transferred between spouses or civil partners, the holding period of the transferor can be added. This is a complex area. Get specific advice from your accountant.
 - question: Can the departing co-founder be paid in instalments over several tax years to spread the gain?
@@ -73,7 +73,7 @@ keyTakeaways:
 
 <p>For BADR to apply, the departing founder must have been an officer or employee of the agency for at least two years before the disposal. They must also have held at least 5% of the share capital and voting rights throughout that two-year period.</p>
 
-<p>If they meet those conditions, the gain on their shares is taxed at 18% instead of the normal 20% CGT rate. The lifetime limit is £1 million of gains. Most agency founders selling a minority stake will be well within that limit.</p>
+<p>If they meet those conditions, the gain on their shares is taxed at 18% instead of the normal 24% CGT rate. The lifetime limit is £1 million of gains. Most agency founders selling a minority stake will be well within that limit.</p>
 
 <p>Here is a real example. A co-founder of a 15-person digital agency in Manchester Northern Quarter holds 30% of the shares. They have been a director for four years. The agency is valued at £1.2 million. Their 30% stake is worth £360,000. They originally invested £20,000 for the shares. The gain is £340,000. Under capital treatment with BADR, they pay 18% CGT: £34,000. Under income treatment, they would pay 35.75% dividend tax: £114,750. The difference is £80,750.</p>
 

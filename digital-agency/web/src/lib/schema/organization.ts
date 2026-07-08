@@ -49,6 +49,13 @@ export function buildOrganization(): Organization {
       "Making Tax Digital",
     ],
     slogan: siteConfig.tagline,
+    // sameAs links the trading brand to its authoritative public record so AI
+    // answer engines and knowledge graphs resolve the firm to a real entity.
+    // Only verifiable records listed: Companies House for Ashfield Trading Ltd.
+    // No LinkedIn company page exists for this brand, so none is added.
+    sameAs: [
+      `https://find-and-update.company-information.service.gov.uk/company/${siteConfig.company.number}`,
+    ],
   };
 }
 

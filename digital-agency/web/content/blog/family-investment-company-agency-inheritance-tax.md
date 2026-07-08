@@ -26,7 +26,7 @@ faqs:
 - question: Can I still control my agency after putting shares into a family investment company?
   answer: Yes. You hold a separate class of voting shares (typically A shares) that give you control over dividends, board appointments, and any sale. Your children hold non-voting shares (B shares) that carry the economic value but no control. You run the agency exactly as before. Your children cannot force decisions or demand payouts.
 - question: What happens to capital gains tax if my children sell the agency later?
-  answer: Your children inherit your base cost in the FIC shares. If the agency is sold, they pay capital gains tax on the gain from your original cost. Business Asset Disposal Relief (BADR) may apply at 18% if they hold at least 5% of the shares and are employees or officers. If they are not involved in the agency, the rate is 20%. Your accountant should model this before you set up the FIC.
+  answer: Your children inherit your base cost in the FIC shares. If the agency is sold, they pay capital gains tax on the gain from your original cost. Business Asset Disposal Relief (BADR) may apply at 18% if they hold at least 5% of the shares and are employees or officers. If they are not involved in the agency, the rate is 24% for higher rate taxpayers. Your accountant should model this before you set up the FIC.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -108,7 +108,7 @@ keyTakeaways:
 
 <h3>Capital Gains Tax on Future Sale</h3>
 <p>Your children inherit your base cost in the FIC shares. If the agency is sold later, your children pay capital gains tax on the gain from your original cost. Business Asset Disposal Relief (BADR) may apply if the FIC is a trading company and your children hold at least 5% of the shares and are employees or officers.</p>
-<p>Plan for this. If your children are not involved in the agency, they may not qualify for BADR. The sale proceeds could be taxed at 20% rather than 10%.</p>
+<p>Plan for this. If your children are not involved in the agency, they may not qualify for BADR. The sale proceeds could be taxed at 24% rather than 18%.</p>
 <p>Our team at Agency Founder Finance models these scenarios before you commit. We look at the full lifecycle, not just the IHT saving.</p>
 
 <h2>Does a FIC Make Sense for Your Agency?</h2>

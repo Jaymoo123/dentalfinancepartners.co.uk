@@ -38,6 +38,13 @@ imageCredit:
 
 <p>This article covers exactly how <strong>capital allowances on second hand vans</strong> apply to agency founders. We will look at the Annual Investment Allowance (AIA), writing-down allowances, and the key distinction between vans and cars. We will also cover what happens if you use the van partly for private journeys.</p>
 
+<aside style="border-left:4px solid #4f46e5;background:#f8fafc;padding:1.25rem 1.5rem;margin:2rem 0;border-radius:0 0.5rem 0.5rem 0">
+<p style="margin:0 0 0.5rem;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#4338ca">Agency finance specialist</p>
+<p style="margin:0 0 0.75rem;font-size:1rem;font-weight:700;color:#0f172a">Bought a second-hand van through your agency? Make sure you claim the right allowance.</p>
+<p style="margin:0 0 0.75rem;font-size:0.9rem;color:#334155">AIA or writing-down allowances, private-use restrictions, cash-basis traps: the rules trip up agency owners regularly. Talk to an accountant who works with UK agency founders.</p>
+<a href="/contact" style="display:inline-block;background:#4f46e5;color:#fff;font-weight:600;font-size:0.875rem;padding:0.6rem 1.25rem;border-radius:0.5rem;text-decoration:none">Talk to an agency accountant</a>
+</aside>
+
 <h2>What Are Capital Allowances?</h2>
 
 <p>Capital allowances let you deduct the cost of certain business assets from your profits before you pay tax. They are not the same as depreciation in your accounts. Depreciation is an accounting adjustment. Capital allowances are a tax relief. You claim them on your tax return or company tax return (CT600).</p>

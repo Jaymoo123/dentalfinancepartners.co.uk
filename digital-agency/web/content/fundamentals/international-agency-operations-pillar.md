@@ -218,7 +218,7 @@ faqs:
 <h2>Exit Planning for International Agency Groups</h2>
 
 <h3>Business Asset Disposal Relief (BADR)</h3>
-<p>When you sell your agency, you want to pay 10% CGT, not 20%. BADR (formerly Entrepreneurs' Relief) gives you a 14% on the first £1m of lifetime gains. To qualify, you must have held at least 5% of the shares for 2 years, and been an officer or employee of the company.</p>
+<p>When you sell your agency, you want to pay 18% CGT, not 24%. BADR (formerly Entrepreneurs' Relief) gives you an 18% rate on the first £1m of lifetime gains. To qualify, you must have held at least 5% of the shares for 2 years, and been an officer or employee of the company.</p>
 
 <p>If you have a group structure with a UK parent and UAE subsidiary, the shares you sell are the UK parent shares. The UAE subsidiary's value is included in the UK parent's value. So BADR applies to the whole group, provided you meet the conditions.</p>
 
@@ -232,7 +232,7 @@ faqs:
 <li>A UAE trading company that services international clients.</li>
 <li>The holding company owns the shares of both trading companies.</li>
 </ul>
-<p>When you sell, you sell the holding company shares. The buyer gets the whole group. You pay 10% CGT on the gain (up to £1M) and 20% on the rest. If you are a non-dom, you might sell the UAE company separately and keep the proceeds offshore.</p>
+<p>When you sell, you sell the holding company shares. The buyer gets the whole group. You pay 18% CGT on the gain (up to £1M, with BADR) and 24% on the rest. If you are a non-dom, you might sell the UAE company separately and keep the proceeds offshore.</p>
 
 <p>We have seen agency founders sell their UAE company for £2M, pay 0% UAE CGT, and keep the entire £2M outside the UK. This is legal if structured correctly. But it requires planning years in advance.</p>
 

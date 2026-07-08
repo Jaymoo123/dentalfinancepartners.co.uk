@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description: "Specialist tax and accounting for AI agency founders.",
     url: `${siteConfig.url}/agencies/ai-agencies`,
     type: "website",
+    images: [{ url: siteConfig.publisherLogoUrl }],
   },
 };
 

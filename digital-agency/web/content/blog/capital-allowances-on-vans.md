@@ -38,6 +38,13 @@ imageCredit:
 
 <p>This article explains exactly how capital allowances on vans work for agency founders. We cover full expensing, the annual investment allowance (AIA), writing-down allowances, and the practical steps to claim. We also flag the traps that catch agency owners out, particularly around private use and the cash basis.</p>
 
+<aside style="border-left:4px solid #4f46e5;background:#f8fafc;padding:1.25rem 1.5rem;margin:2rem 0;border-radius:0 0.5rem 0.5rem 0">
+<p style="margin:0 0 0.5rem;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#4338ca">Agency finance specialist</p>
+<p style="margin:0 0 0.75rem;font-size:1rem;font-weight:700;color:#0f172a">Not sure which allowance applies to your agency's van purchase?</p>
+<p style="margin:0 0 0.75rem;font-size:0.9rem;color:#334155">The rules differ by company structure, whether the van is new or used, and how you use it. Get a quick, no-obligation answer from an accountant who works with UK agency founders every day.</p>
+<a href="/contact" style="display:inline-block;background:#4f46e5;color:#fff;font-weight:600;font-size:0.875rem;padding:0.6rem 1.25rem;border-radius:0.5rem;text-decoration:none">Talk to an agency accountant</a>
+</aside>
+
 <h2>What Are Capital Allowances on Vans?</h2>
 
 <p>Capital allowances let you deduct some or all of the value of a business asset from your profits before you pay tax <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. For agency founders, the most common asset is a van used to transport equipment, stock, or materials to client sites, events, or shoots.</p>

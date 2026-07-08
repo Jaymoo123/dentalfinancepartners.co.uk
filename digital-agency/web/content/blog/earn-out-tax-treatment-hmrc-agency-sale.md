@@ -113,12 +113,12 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Here are the rates that apply depending on classification.</p>
 
-<p><strong>Capital treatment (with BADR):</strong> 18% on gains up to £1 million lifetime limit. Above that, 20%.</p>
+<p><strong>Capital treatment (with BADR):</strong> 18% on gains up to £1 million lifetime limit. Above that, 24%.</p>
 <p><strong>Capital treatment (without BADR):</strong> 24% for higher rate taxpayers, 18% for basic rate taxpayers (if within the basic rate band).</p>
 <p><strong>Income treatment (self-employed):</strong> Income Tax at 20%, 40%, or 45% depending on total income. Class 4 NI at 2% on profits above £12,570.</p>
 <p><strong>Income treatment (employed):</strong> Income Tax at marginal rate. Employee NI at 2% on earnings above £12,570. Employer NI at 15% (borne by the buyer, but it reduces the amount they are willing to pay).</p>
 
-<p>The difference between 10% and 45% is enormous. On a £300,000 earn-out, you keep £270,000 at 18% CGT, or £165,000 at 45% Income Tax. That is £105,000 less in your pocket.</p>
+<p>The difference between 18% and 45% is enormous. On a £300,000 earn-out, you keep £270,000 at 18% CGT, or £165,000 at 45% Income Tax. That is £105,000 less in your pocket.</p>
 
 <h2>What Happens If HMRC Challenges the Earn-Out?</h2>
 

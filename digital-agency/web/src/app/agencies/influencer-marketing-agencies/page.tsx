@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description: "Specialist tax and accounting for influencer marketing agency founders.",
     url: `${siteConfig.url}/agencies/influencer-marketing-agencies`,
     type: "website",
+    images: [{ url: siteConfig.publisherLogoUrl }],
   },
 };
 

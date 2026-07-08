@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description: "Specialist tax and accounting for PPC agency founders.",
     url: `${siteConfig.url}/agencies/ppc-agencies`,
     type: "website",
+    images: [{ url: siteConfig.publisherLogoUrl }],
   },
 };
 

@@ -50,7 +50,7 @@ keyTakeaways:
 
 <p>For most agency founders, the shares were acquired at incorporation for a nominal value. Perhaps £100. If you sell for £1 million, your gain is £999,900.</p>
 
-<p>If you qualify for Business Asset Disposal Relief (BADR), formerly known as Entrepreneurs' Relief, you pay 18% on the first £1m of gains. That is a lifetime limit. Above £1 million, you pay 20% (or 24% from April 2025 if the rumoured changes materialise, but we are working with current rates for now).</p>
+<p>If you qualify for Business Asset Disposal Relief (BADR), formerly known as Entrepreneurs' Relief, you pay 18% on the first £1m of gains. That is a lifetime limit. Above £1 million, you pay 24% as a higher rate taxpayer.</p>
 
 <p>Let us run the numbers on a typical agency exit.</p>
 
@@ -223,7 +223,7 @@ keyTakeaways:
 
 <p>Earn-outs complicate the <strong>share sale vs asset sale agency exit</strong> decision.</p>
 
-<p>In a share sale, earn-out payments are treated as deferred consideration. They are capital in nature, so they qualify for BADR if the original shares qualified. You pay 10% on the earn-out too.</p>
+<p>In a share sale, earn-out payments are treated as deferred consideration. They are capital in nature, so they qualify for BADR if the original shares qualified. You pay the 18% BADR rate on the earn-out too.</p>
 
 <p>In an asset sale, earn-out payments are received by the company. They are trading receipts, subject to Corporation Tax. Then you extract them as capital distributions. The tax drag is significant.</p>
 

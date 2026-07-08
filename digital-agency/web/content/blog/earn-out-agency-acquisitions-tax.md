@@ -48,7 +48,7 @@ keyTakeaways:
 
 <p>HMRC looks at earn-out payments and asks one question: is this consideration for the shares you sold, or is it payment for ongoing services you provide after the sale?</p>
 
-<p>If it is consideration for shares, you pay Capital Gains Tax (CGT) on the gain. If you qualify for Business Asset Disposal Relief (BADR), that rate is 18% on the first £1m of lifetime gains. Above that, the standard CGT rate for residential property is 24% and for other assets including shares it is 20%.</p>
+<p>If it is consideration for shares, you pay Capital Gains Tax (CGT) on the gain. If you qualify for Business Asset Disposal Relief (BADR), that rate is 18% on the first £1m of lifetime gains. Above that, the standard CGT rate on shares is 24% for higher rate taxpayers (18% within the basic rate band).</p>
 
 <p>If HMRC recharacterises your earn-out as employment income, you pay income tax at your marginal rate, 40% or 45%, plus Class 1 National Insurance at 2% (employee) and 15% (employer). The total tax burden can exceed 50%.</p>
 
@@ -145,7 +145,7 @@ keyTakeaways:
 
 <p>On the surface, this looks attractive. Dividends are taxed at lower rates than employment income. You pay 35.75% at the higher rate, compared to 40% income tax plus NI.</p>
 
-<p>But there are problems. First, dividends do not qualify for BADR. You pay CGT on the share sale at 10% (if eligible) but the dividend earn-out is taxed as dividend income. Second, dividends can only be paid from distributable profits. If the agency has a bad year, there may be no profits to distribute, and you receive nothing, even if the underlying business is performing well on an EBITDA basis.</p>
+<p>But there are problems. First, dividends do not qualify for BADR. You pay CGT on the share sale at 18% with BADR (if eligible) but the dividend earn-out is taxed as dividend income. Second, dividends can only be paid from distributable profits. If the agency has a bad year, there may be no profits to distribute, and you receive nothing, even if the underlying business is performing well on an EBITDA basis.</p>
 
 <p>Third, HMRC can challenge dividend earn-outs under the settlements legislation (ITTOIA 2005, Part 5). If the dividend arrangement is designed to avoid tax, HMRC can recharacterise it as employment income anyway.</p>
 

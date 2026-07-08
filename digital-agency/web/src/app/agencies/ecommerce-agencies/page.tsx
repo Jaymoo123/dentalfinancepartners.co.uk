@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description: "Specialist tax and accounting for e-commerce agency founders.",
     url: `${siteConfig.url}/agencies/ecommerce-agencies`,
     type: "website",
+    images: [{ url: siteConfig.publisherLogoUrl }],
   },
 };
 

@@ -20,7 +20,7 @@ export const badrCgtTool: GenericTool = {
   metaDescription:
     "Free BADR CGT calculator for UK agency founders. Models 14% (2025/26) and 18% (2026/27) rates with £1m lifetime allowance. No sign-up.",
   intro:
-    "Calculate your capital gains tax on an agency sale using Business Asset Disposal Relief. Models both the current 2025/26 rate (14%) and the 2026/27 rate (18%), with a £1,000,000 lifetime BADR allowance.",
+    "Calculate your capital gains tax on an agency sale using Business Asset Disposal Relief. Models both the current 2026/27 rate (18%) and the 2025/26 rate (14%), with a £1,000,000 lifetime BADR allowance.",
   embedHeight: 400,
   fields: [
     {
@@ -56,7 +56,7 @@ export const badrCgtTool: GenericTool = {
       id: "year",
       label: "Tax year of disposal",
       type: "select",
-      default: "2025/26",
+      default: "2026/27",
       options: [
         { value: "2025/26", label: "2025/26 (14% BADR rate)" },
         { value: "2026/27", label: "2026/27 (18% BADR rate)" },
@@ -75,7 +75,7 @@ export const badrCgtTool: GenericTool = {
       saleProceeds: Number(values.saleProceeds) || 0,
       originalCost: Number(values.originalCost) || 0,
       previousBadrUsed: Number(values.previousBadrUsed) || 0,
-      year: (values.year as BadrYear) || "2025/26",
+      year: (values.year as BadrYear) || "2026/27",
       meetsEligibility: Boolean(values.meetsEligibility),
     });
     return {

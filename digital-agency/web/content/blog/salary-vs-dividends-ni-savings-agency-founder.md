@@ -185,11 +185,11 @@ keyTakeaways:
 
 <h2>What About Business Asset Disposal Relief (BADR)?</h2>
 
-<p>If you plan to sell your agency in the future, the way you pay yourself affects your exit. BADR gives you a 18% capital gains tax rate on the first £1 million of gains, provided you meet the conditions.</p>
+<p>If you plan to sell your agency in the future, the way you pay yourself affects your exit. BADR gives you an 18% capital gains tax rate on the first £1 million of gains, provided you meet the conditions.</p>
 
 <p>One condition: you must be an officer or employee of the company for the two years before disposal. Taking a salary (even £12,570) satisfies this condition. Taking only dividends does not, because dividends are paid to shareholders, not to employees. If you take zero salary for two years before selling, you may lose BADR eligibility.</p>
 
-<p>This is a critical point. The NI savings dividends vs salary agency founders achieve each year are real. But if those savings cost you BADR on a £1 million gain, the cost is £150,000 (20% CGT minus 18% BADR = 10% extra tax on £1 million). That dwarfs the annual NI saving.</p>
+<p>This is a critical point. The NI savings dividends vs salary agency founders achieve each year are real. But if those savings cost you BADR on a £1 million gain, the cost is £60,000 (24% CGT minus 18% BADR = 6% extra tax on £1 million). That dwarfs the annual NI saving.</p>
 
 <p>Always take at least the minimum salary to preserve BADR eligibility. For a full guide, see our article on <a href="/blog/growth-and-exit">growth and exit planning</a>.</p>
 

@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description: "Specialist tax and accounting for performance marketing agency founders.",
     url: `${siteConfig.url}/agencies/performance-marketing-agencies`,
     type: "website",
+    images: [{ url: siteConfig.publisherLogoUrl }],
   },
 };
 

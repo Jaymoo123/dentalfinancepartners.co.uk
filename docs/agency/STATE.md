@@ -9,6 +9,14 @@
 - Blog + fundamentals sections (`digital-agency/web/content/blog` + `content/fundamentals`; ~315 mapped slugs). UK + UAE/Dubai founder topics.
 - Nurture engine composed but DORMANT (collect-only). Legacy DeepSeek title pipeline (`digital-agency/pipeline/title_optimise.py`) is RETIRED — do not reuse its LLM calls (Opus-only rule).
 
+## Full diagnosis + fix wave (2026-07-08) — CURRENT, see `DIAGNOSIS_2026-07.md` RESUME HERE
+
+- Medical-playbook replay: 7-lane battery on FRESH data (GSC→07-06, Bing→07-08) + Opus synthesis + skeptics + F8 page-level review.
+- **Root cause: crawl-budget/authority starvation.** 18/433 indexed (4.2%); 214 discovered-not-indexed + 175 unknown; sitemap fetched daily by Google; no penalties/noindex/firewall; quality fork disproven (all 26 triaged pages read as genuinely strong); internal linking uncorrelated. Generalist same-age = 10x impressions and growing; agency flat.
+- Leads: 0 all-time; funnel reframed as "traffic mis-shaped, form invisible" (denominator too small for CRO conclusions).
+- Local fix wave DONE, build green, **awaiting owner deploy gate** (deploy + Vercel 308 + GSC sitemap resubmit/Request Indexing). Backlog + monitoring dates in DIAGNOSIS doc.
+- Supersedes below: BADR stale spots FIXED (14 corrections, 7 files); employer-NIC hit-list was stale — agency corpus verified CLEAN at 15%/£5,000; CIS glossary page removed (topic leakage).
+
 ## Search/optimisation state
 
 - **Data**: GSC live since 2026-04-15 (sc-domain) + Bing flowing. Young-site volumes: 90d at 2026-06-12 = 828 impressions, 0 clicks, 20 pages with any data.

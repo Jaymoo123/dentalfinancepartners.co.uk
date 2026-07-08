@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     description: `Specialist tax and accounting for web design and development agency founders across the UK and UAE.`,
     url: `${siteConfig.url}/agencies/web-design-agencies`,
     type: "website",
+    images: [{ url: siteConfig.publisherLogoUrl }],
   },
 };
 

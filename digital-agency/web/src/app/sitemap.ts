@@ -75,11 +75,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     languages: { "en-GB": url, "x-default": url },
   });
 
+  // ponytail: pinned date stops sitemap churn on every deploy; bump when site structure changes
+  const STATIC_LAST_MOD = new Date("2026-07-08");
+
   const entries: MetadataRoute.Sitemap = staticPaths.map((path) => {
     const url = `${base}${path}`;
     return {
       url,
-      lastModified: new Date(),
+      lastModified: STATIC_LAST_MOD,
       changeFrequency: path === "/blog" ? "weekly" : "monthly",
       priority: path === "" ? 1 : path.startsWith("/agencies/") ? 0.8 : 0.7,
       alternates: hreflang(url),
@@ -91,7 +94,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/calculators/${t.slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
+      lastModified: STATIC_LAST_MOD,
       changeFrequency: "monthly",
       priority: 0.75,
       alternates: hreflang(url),
@@ -103,7 +106,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/blog/${cat.slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
+      lastModified: STATIC_LAST_MOD,
       changeFrequency: "weekly",
       priority: 0.8,
       alternates: hreflang(url),
@@ -115,7 +118,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/blog/${categorySlug}/${post.slug}`;
     entries.push({
       url,
-      lastModified: post.date ? new Date(post.date) : new Date(),
+      lastModified: post.updatedDate ? new Date(post.updatedDate) : post.date ? new Date(post.date) : STATIC_LAST_MOD,
       changeFrequency: "monthly",
       priority: 0.8,
       alternates: hreflang(url),
@@ -126,7 +129,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/fundamentals/${guide.slug}`;
     entries.push({
       url,
-      lastModified: guide.date ? new Date(guide.date) : new Date(),
+      lastModified: guide.date ? new Date(guide.date) : STATIC_LAST_MOD,
       changeFrequency: "monthly",
       priority: 0.9,
       alternates: hreflang(url),
@@ -137,7 +140,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/locations/${slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
+      lastModified: STATIC_LAST_MOD,
       changeFrequency: "monthly",
       priority: 0.85,
       alternates: hreflang(url),
@@ -148,7 +151,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/glossary/${slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
+      lastModified: STATIC_LAST_MOD,
       changeFrequency: "yearly",
       priority: 0.6,
       alternates: hreflang(url),
@@ -159,7 +162,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/founder-stories/${slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
+      lastModified: STATIC_LAST_MOD,
       changeFrequency: "monthly",
       priority: 0.7,
       alternates: hreflang(url),
@@ -170,7 +173,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/guides/${slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
+      lastModified: STATIC_LAST_MOD,
       changeFrequency: "monthly",
       priority: 0.75,
       alternates: hreflang(url),
@@ -181,7 +184,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/team/${slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
+      lastModified: STATIC_LAST_MOD,
       changeFrequency: "yearly",
       priority: 0.5,
       alternates: hreflang(url),

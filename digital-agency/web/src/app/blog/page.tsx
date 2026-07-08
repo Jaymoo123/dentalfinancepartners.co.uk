@@ -120,6 +120,16 @@ export default function BlogIndexPage() {
           <div className={siteContainerLg}>
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold text-slate-900 mb-8">All articles</h2>
+              {/* SSR crawl links — Googlebot picks up all posts on first pass without JS.
+                  sr-only so sighted users see only the interactive BlogListWithSearch below.
+                  ponytail: hidden list, no visual duplication */}
+              <nav aria-label="All blog posts" className="sr-only">
+                {postsWithCategorySlug.map((post) => (
+                  <a key={post.slug} href={`/blog/${post.categorySlug}/${post.slug}`}>
+                    {post.title}
+                  </a>
+                ))}
+              </nav>
               <BlogListWithSearch posts={postsWithCategorySlug} categories={categories} readTimes={readTimes} />
             </div>
           </div>

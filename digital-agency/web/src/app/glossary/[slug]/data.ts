@@ -338,23 +338,6 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
 
 <p><strong>When this matters for agency founders</strong>: You must file a CT600 every year your limited company trades, even if you made no profit or were dormant. Missing the deadline costs you money and HMRC attention. Understanding what is CT600 and how it interacts with your dividend strategy, salary, and allowable expenses helps you minimise tax legally and avoid penalties.</p>`,
   },
-  "cis": {
-    slug: "cis",
-    term: "CIS (Construction Industry Scheme)",
-    category: "Compliance",
-    primary_kw: "what is CIS",
-    body: `<p>The Construction Industry Scheme (CIS) is a UK tax deduction system requiring contractors to deduct money from subcontractors' payments and pass it directly to HMRC, effectively acting as a withholding tax for construction work.</p>
-
-<p>For UK agency founders placing contractors or freelancers in construction roles, CIS fundamentally changes how you handle payroll and payments. If your agency engages subcontractors for construction work (including labour-only contracts, repairs, or site preparation), you are likely a deemed contractor under CIS rules. This means you must register with HMRC for CIS, verify every subcontractor before payment, deduct the correct tax rate, and submit monthly CIS returns.</p>
-
-<p>The deduction rates for 2026/27 are: 20% for registered subcontractors who can provide their Unique Taxpayer Reference (UTR) and National Insurance number, and 30% for unregistered subcontractors who cannot verify their status. Gross payment status (where no deduction is made) is available only to subcontractors meeting strict turnover and compliance tests. You must issue a CIS payment statement to each subcontractor within 14 days of the tax month end.</p>
-
-<p>Key compliance requirements for agency founders include: registering your agency for CIS online or by phone, verifying each subcontractor's status before their first payment (and annually thereafter), deducting the correct amount from each payment (excluding VAT), filing monthly CIS returns by the 14th of the following month, and paying the deducted amounts to HMRC by the 22nd (19th for electronic payments). Failure to register or submit returns on time triggers penalties starting at £100 per 50 subcontractors per month.</p>
-
-<p>CIS interacts directly with your payroll processes. If you operate an umbrella company or PAYE scheme for construction workers, CIS deductions do not apply to employees only to subcontractors. You must also account for apprenticeship levy (0.5% of pay bills over £3 million) and off-payroll working rules (IR35) for limited company contractors.</p>
-
-<p>When this matters for agency founders: If you place any construction workers, labourers, or tradespeople through your agency, you must register for CIS immediately or face penalties from HMRC for non-compliance. Getting CIS right protects your agency from tax liabilities, keeps subcontractors compliant, and avoids costly HMRC investigations.</p>`,
-  },
   "eis-seis": {
     slug: "eis-seis",
     term: "EIS and SEIS (Investment Tax Reliefs)",
