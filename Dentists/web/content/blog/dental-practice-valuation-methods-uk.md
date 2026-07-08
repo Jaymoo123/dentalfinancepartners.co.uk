@@ -1,42 +1,51 @@
 ---
-title: "Dental Practice Valuation Methods Explained for UK Dentists"
-slug: "dental-practice-valuation-methods-uk"
-date: "2026-03-28"
+title: Dental Practice Valuation Methods Explained for UK Dentists
+slug: dental-practice-valuation-methods-uk
+date: '2026-03-28'
 generator: claude/legacy-supabase
-updatedDate: "2026-06-03"
-sourcesVerifiedAt: "2026-06-03"
-author: "Dental Finance Partners Editorial Team"
-category: "Buying a practice"
-metaTitle: "Dental Practice Valuation Methods UK | 2026 Guide"
-metaDescription: "How UK dental practices are valued in 2025/26: normalised EBITDA multiples, what drives the multiple, the goodwill split, and why turnover rules mislead."
-altText: "UK dental practice valuation calculator and financial documents on desk"
-image: "https://images.pexels.com/photos/7433839/pexels-photo-7433839.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+updatedDate: '2026-06-03'
+sourcesVerifiedAt: '2026-06-03'
+author: Dental Finance Partners Editorial Team
+category: Buying a practice
+metaTitle: 'Dental Practice Valuation UK: Methods and EBITDA Multiples'
+metaDescription: Find out what your dental practice is worth. Established practices are valued on normalised EBITDA at 0.6 to 1.4 times, so learn what lifts your multiple.
+altText: UK dental practice valuation calculator and financial documents on desk
+image: https://images.pexels.com/photos/7433839/pexels-photo-7433839.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 imageCredit:
-  photographer: "Vlada Karpovich"
-  photographerUrl: "https://www.pexels.com/@vlada-karpovich"
-  source: "Pexels"
-  sourceUrl: "https://www.pexels.com/photo/woman-doing-paperwork-7433839/"
-h1: "Dental Practice Valuation Methods Explained for UK Dentists"
-summary: "Understanding how dental practices are valued is essential whether you are buying, selling, or simply want to know what your practice is worth. We explain the main valuation methods used in the UK market in 2025/26, why normalised EBITDA times a multiple is the primary method, and which rules of thumb to ignore."
+  photographer: Vlada Karpovich
+  photographerUrl: https://www.pexels.com/@vlada-karpovich
+  source: Pexels
+  sourceUrl: https://www.pexels.com/photo/woman-doing-paperwork-7433839/
+h1: Dental Practice Valuation Methods Explained for UK Dentists
+summary: Understanding how dental practices are valued is essential whether you are buying, selling, or simply want to know what your practice is worth. We explain the main valuation methods used in the UK market in 2025/26, why normalised EBITDA times a multiple is the primary method, and which rules of thumb to ignore.
 keyTakeaways:
-  - "Established UK dental practices are valued primarily on normalised EBITDA times a market multiple, typically 0.6 to 1.4 times in 2025/26."
-  - "Indicative multiples run about 0.6 to 0.9x for NHS-heavy single-handed practices and 1.1 to 1.4x for private-focused ones, with corporate buyers sometimes paying more."
-  - "Goodwill makes up roughly 60 to 80 percent of the total price, with tangible assets such as chairs, X-ray units and fittings making up the balance."
-  - "Turnover and price-per-UDA shortcuts measure activity not profit, so they flatter inefficient practices and should only be used as a rough sense-check."
-  - "Clean three-year accounts that reveal a defensible normalised EBITDA and a separated NHS and private income split support the upper end of the multiple range."
-schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-valuation-methods-uk"
+- Established UK dental practices are valued primarily on normalised EBITDA times a market multiple, typically 0.6 to 1.4 times in 2025/26.
+- Indicative multiples run about 0.6 to 0.9x for NHS-heavy single-handed practices and 1.1 to 1.4x for private-focused ones, with corporate buyers sometimes paying more.
+- Goodwill makes up roughly 60 to 80 percent of the total price, with tangible assets such as chairs, X-ray units and fittings making up the balance.
+- Turnover and price-per-UDA shortcuts measure activity not profit, so they flatter inefficient practices and should only be used as a rough sense-check.
+- Clean three-year accounts that reveal a defensible normalised EBITDA and a separated NHS and private income split support the upper end of the multiple range.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Dental Finance Partners","url":"https://www.dentalfinancepartners.co.uk","areaServed":"United Kingdom","knowsAbout":["Dental practice accounting","Associate dentist taxation","NHS contract finance","Dental practice acquisitions","NHS pension annual allowance","VAT for dental practices","Capital allowances for dental equipment"],"memberOf":{"@type":"Organization","name":"National Association of Specialist Dental Accountants and Lawyers","url":"https://www.nasdal.org.uk"}},{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Specialist dental accountant","knowsAbout":["NHS dental contracts","Associate dentist tax","Dental practice incorporation","Dental VAT","NHS pension scheme"],"worksFor":{"@type":"Organization","name":"Dental Finance Partners","url":"https://www.dentalfinancepartners.co.uk"}},{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["Dental practice finance","NHS contract accounting","Practice valuation"]},{"@type":"Article","headline":"Dental Practice Valuation Methods Explained for UK Dentists","description":"Find out what your dental practice is worth. Established practices are valued on normalised EBITDA at 0.6 to 1.4 times, so learn what lifts your multiple.","url":"https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-valuation-methods-uk","datePublished":"2026-03-28","dateModified":"2026-07-08","author":{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Specialist dental accountant","knowsAbout":["NHS dental contracts","Associate dentist tax","Dental practice incorporation","Dental VAT","NHS pension scheme"],"worksFor":{"@type":"Organization","name":"Dental Finance Partners","url":"https://www.dentalfinancepartners.co.uk"}},"reviewedBy":{"@type":"Person","name":"Dental Finance Partners Editorial
+  Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["Dental practice finance","NHS contract accounting","Practice valuation"]},"publisher":{"@type":"AccountingService","name":"Dental Finance Partners","url":"https://www.dentalfinancepartners.co.uk","areaServed":"United Kingdom","knowsAbout":["Dental practice accounting","Associate dentist taxation","NHS contract finance","Dental practice acquisitions","NHS pension annual allowance","VAT for dental practices","Capital allowances for dental equipment"],"memberOf":{"@type":"Organization","name":"National Association of Specialist Dental Accountants and Lawyers","url":"https://www.nasdal.org.uk"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-valuation-methods-uk"},"inLanguage":"en-GB","image":"https://images.pexels.com/photos/7433839/pexels-photo-7433839.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.dentalfinancepartners.co.uk"},{"@type":"ListItem","position":2,"name":"Buying a practice","item":"https://www.dentalfinancepartners.co.uk/blog/buying-a-practice"},{"@type":"ListItem","position":3,"name":"Dental Practice Valuation Methods Explained for UK Dentists","item":"https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-valuation-methods-uk"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the main dental practice valuation method used in the UK?","acceptedAnswer":{"@type":"Answer","text":"Established UK dental practices are valued primarily on normalised EBITDA multiplied by a market multiple. Normalised EBITDA is the practice''s sustainable operating profit after adjusting for the current owner''s remuneration, one-off costs, and personal expenses run through the books. The multiple reflects the practice''s NHS or private mix, location, list
+  stability, and risk profile. In 2025/26 multiples typically sit in a range from roughly 0.6 to 1.4 times normalised EBITDA, with corporate strategic buyers sometimes paying above that."}},{"@type":"Question","name":"How does the NHS or private mix affect the valuation multiple?","acceptedAnswer":{"@type":"Answer","text":"Private-focused practices in areas of strong demand tend to attract the higher end of the range because private fee income carries better margins and is not tied to a fixed government contract. NHS-heavy single-handed practices in lower-demand regions tend to sit at the lower end. A mixed multi-surgery practice in a normal-demand area usually falls between the two. The mix changes the multiple, but it is only one of several drivers, so two practices with the same mix can still be valued differently."}},{"@type":"Question","name":"Why is valuing a practice on turnover or UDA count misleading?","acceptedAnswer":{"@type":"Answer","text":"Turnover and UDA count measure activity, not profit. Two practices with identical fee income can have very different sustainable earnings once you account for staff costs, lab bills, materials, and premises. A turnover multiple or a price per UDA ignores the cost base entirely, so it can flatter an inefficient practice and undervalue a well-run one. These rules of thumb are at best a rough sense-check, never the primary method. A normalised EBITDA approach captures what a buyer actually takes home."}},{"@type":"Question","name":"What financial information is needed to value a dental practice?","acceptedAnswer":{"@type":"Answer","text":"You will typically need three years of accounts, recent management accounts, an active patient list summary with recall data, an equipment and asset list, the NHS contract details (UDA target and per-UDA value), the lease, and staff contracts. Clean records that let an adviser work out normalised EBITDA and split goodwill from tangible assets are what move a valuation along and support the
+  multiple at the upper end of its range."}}]}]}'
+canonical: https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-valuation-methods-uk
 faqs:
-  - question: "What is the main dental practice valuation method used in the UK?"
-    answer: "Established UK dental practices are valued primarily on normalised EBITDA multiplied by a market multiple. Normalised EBITDA is the practice's sustainable operating profit after adjusting for the current owner's remuneration, one-off costs, and personal expenses run through the books. The multiple reflects the practice's NHS or private mix, location, list stability, and risk profile. In 2025/26 multiples typically sit in a range from roughly 0.6 to 1.4 times normalised EBITDA, with corporate strategic buyers sometimes paying above that."
-  - question: "How does the NHS or private mix affect the valuation multiple?"
-    answer: "Private-focused practices in areas of strong demand tend to attract the higher end of the range because private fee income carries better margins and is not tied to a fixed government contract. NHS-heavy single-handed practices in lower-demand regions tend to sit at the lower end. A mixed multi-surgery practice in a normal-demand area usually falls between the two. The mix changes the multiple, but it is only one of several drivers, so two practices with the same mix can still be valued differently."
-  - question: "Why is valuing a practice on turnover or UDA count misleading?"
-    answer: "Turnover and UDA count measure activity, not profit. Two practices with identical fee income can have very different sustainable earnings once you account for staff costs, lab bills, materials, and premises. A turnover multiple or a price per UDA ignores the cost base entirely, so it can flatter an inefficient practice and undervalue a well-run one. These rules of thumb are at best a rough sense-check, never the primary method. A normalised EBITDA approach captures what a buyer actually takes home."
-  - question: "What financial information is needed to value a dental practice?"
-    answer: "You will typically need three years of accounts, recent management accounts, an active patient list summary with recall data, an equipment and asset list, the NHS contract details (UDA target and per-UDA value), the lease, and staff contracts. Clean records that let an adviser work out normalised EBITDA and split goodwill from tangible assets are what move a valuation along and support the multiple at the upper end of its range."
+- question: What is the main dental practice valuation method used in the UK?
+  answer: Established UK dental practices are valued primarily on normalised EBITDA multiplied by a market multiple. Normalised EBITDA is the practice's sustainable operating profit after adjusting for the current owner's remuneration, one-off costs, and personal expenses run through the books. The multiple reflects the practice's NHS or private mix, location, list stability, and risk profile. In 2025/26 multiples typically sit in a range from roughly 0.6 to 1.4 times normalised EBITDA, with corporate strategic buyers sometimes paying above that.
+- question: How does the NHS or private mix affect the valuation multiple?
+  answer: Private-focused practices in areas of strong demand tend to attract the higher end of the range because private fee income carries better margins and is not tied to a fixed government contract. NHS-heavy single-handed practices in lower-demand regions tend to sit at the lower end. A mixed multi-surgery practice in a normal-demand area usually falls between the two. The mix changes the multiple, but it is only one of several drivers, so two practices with the same mix can still be valued differently.
+- question: Why is valuing a practice on turnover or UDA count misleading?
+  answer: Turnover and UDA count measure activity, not profit. Two practices with identical fee income can have very different sustainable earnings once you account for staff costs, lab bills, materials, and premises. A turnover multiple or a price per UDA ignores the cost base entirely, so it can flatter an inefficient practice and undervalue a well-run one. These rules of thumb are at best a rough sense-check, never the primary method. A normalised EBITDA approach captures what a buyer actually takes home.
+- question: What financial information is needed to value a dental practice?
+  answer: You will typically need three years of accounts, recent management accounts, an active patient list summary with recall data, an equipment and asset list, the NHS contract details (UDA target and per-UDA value), the lease, and staff contracts. Clean records that let an adviser work out normalised EBITDA and split goodwill from tangible assets are what move a valuation along and support the multiple at the upper end of its range.
+metaTitle_prev: Dental Practice Valuation Methods UK | 2026 Guide
+metaDescription_prev: 'How UK dental practices are valued in 2025/26: normalised EBITDA multiples, what drives the multiple, the goodwill split, and why turnover rules mislead.'
+dateModified: '2026-07-08'
+reviewedBy: Dental Finance Partners Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
+reviewedAt: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Whether you are considering selling your practice, looking to buy one, or simply want to understand what your practice is worth, knowing how dental practice valuation works is essential. The methods used vary, and understanding them helps you make informed decisions and avoid being anchored to a misleading number.</p>
 
 <p>In this guide we walk through the approaches used to value UK dental practices in 2025/26, explain why one method dominates, show what actually moves the figure, and flag the rules of thumb that lead sellers and buyers astray.</p>

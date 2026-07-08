@@ -1,30 +1,36 @@
 ---
-title: "NHS Contract Essentials for Dentists"
-slug: "nhs-contract-essentials-for-dentists"
-metaTitle: "NHS Dental Contract Essentials UK: UDA, GDS, PDS, Clawback"
-metaDescription: "How NHS dental contracts actually work in 2025/26. UDA value variance, GDS vs PDS, regional differences, end-of-year reconciliation, contract reform."
-date: "2026-05-18"
-author: "Dental Finance Partners Editorial Team"
-eyebrow: "Pillar guide · NHS contracts"
-summary: "The complete reference on UK NHS dental contracts: the UDA system, GDS vs PDS vs ODS, why UDA value varies by individual contract and region, end-of-year reconciliation, and what the 2025/26 contract reform direction actually means for principals."
-hero: "If you run an NHS dental practice or you're considering buying one, the NHS contract is the single biggest variable in the deal. This guide is the working reference: how the UDA system actually works, why values differ between contracts, how end-of-year reconciliation hits the accounts, and what the current reform direction means for practice planning."
+title: NHS Contract Essentials for Dentists
+slug: nhs-contract-essentials-for-dentists
+metaTitle: GDS Contract, UDA and Clawback Basics for NHS Dentists
+metaDescription: Understand your NHS dental contract before you buy or sell. UDA values run from around £15 to over £45 per unit, so learn GDS, PDS and clawback rules.
+date: '2026-05-18'
+author: Dental Finance Partners Editorial Team
+eyebrow: Pillar guide · NHS contracts
+summary: 'The complete reference on UK NHS dental contracts: the UDA system, GDS vs PDS vs ODS, why UDA value varies by individual contract and region, end-of-year reconciliation, and what the 2025/26 contract reform direction actually means for principals.'
+hero: 'If you run an NHS dental practice or you''re considering buying one, the NHS contract is the single biggest variable in the deal. This guide is the working reference: how the UDA system actually works, why values differ between contracts, how end-of-year reconciliation hits the accounts, and what the current reform direction means for practice planning.'
 faqs:
-  - question: "What is a UDA worth in 2025/26?"
-    answer: "There is no single national UDA value. The value attached to an individual NHS dental contract was set when the contract was signed (often in 2006 when the GDS contract was introduced) and has been uplifted by annual contract uplifts since. In England, current individual contract UDA values typically range from around £15 to over £45 per UDA, with most clustering between £25 and £35. Wales operates a similar UDA-based system with its own values, and Northern Ireland uses different contract types. Scotland uses the Statement of Dental Remuneration item-of-service fee system, not UDAs."
-  - question: "What's the difference between a GDS contract and a PDS contract?"
-    answer: "GDS (General Dental Services) is the standard ongoing NHS contract type in England, designed to be continuing without an end date. PDS (Personal Dental Services) was a contract type offered as a time-limited alternative, often used for specialist services or specific local commissioning arrangements; many were converted to GDS or have expired. ODS (Out-of-hours / Operational Dental Services) is a separate contract type for out-of-hours dental services. Wales and Northern Ireland use their own contract structures rather than GDS/PDS."
-  - question: "What is end-of-year clawback?"
-    answer: "If a practice underperforms its annual UDA contract target (typically by failing to deliver a high enough percentage of contracted UDAs), the commissioner can recover the unearned portion of the contract value. The threshold for clawback varies but typically activates when UDA delivery falls below around 96% of target, with the unearned percentage recovered. This can flow into the practice P&L as a year-end adjustment that materially changes profitability if not anticipated and managed monthly."
-  - question: "Is the NHS dental contract being reformed?"
-    answer: "NHS England has been working on dental contract reform for several years; phased changes have been introduced and further reform is on the policy agenda for 2025-2027. Reform direction has included reduced banding emphasis, increased flexibility on how UDAs are met, and changes to how preventive treatment is funded. The detail is in flux; we recommend reading the current NHS England commissioning guidance directly or speaking to your local commissioner. For practice planning, the realistic assumption is that the UDA mechanism continues in some form through 2025/26 with incremental reform rather than wholesale replacement."
-  - question: "Can NHS contracts transfer when a practice is sold?"
-    answer: "Yes, but the mechanism varies. Most NHS dental contracts can be novated to the new practice owner with commissioner consent. Some commissioners use the sale as a trigger to renegotiate contract terms (which can change UDA value). Multi-site groups or corporate buyers sometimes acquire practices specifically to consolidate NHS contract value. The contract transfer is a critical part of any sale due diligence; we cover the practical mechanics in our practice purchase financial due diligence guide."
-  - question: "How does the NHS contract interact with private treatment?"
-    answer: "An NHS contract requires the practice to deliver a defined volume of NHS treatment within the contract year; everything else can be delivered as private treatment at the practice's chosen fees. Many practices operate a mixed NHS/private model where the NHS contract underwrites baseline revenue and the private side provides margin upside. Tax treatment differs: NHS clinical income and private clinical income are both exempt from VAT under VATA 1994 Schedule 9 Group 7, but purely cosmetic services without medical purpose can be standard-rated and need careful classification."
-ctaTitle: "Talk to a dentist-only specialist about your NHS contract"
-ctaBody: "30-minute scoping call. If you're reviewing your contract position, modelling a buy, or planning for likely reform, we can walk through your specific UDA contract economics."
+- question: What is a UDA worth in 2025/26?
+  answer: There is no single national UDA value. The value attached to an individual NHS dental contract was set when the contract was signed (often in 2006 when the GDS contract was introduced) and has been uplifted by annual contract uplifts since. In England, current individual contract UDA values typically range from around £15 to over £45 per UDA, with most clustering between £25 and £35. Wales operates a similar UDA-based system with its own values, and Northern Ireland uses different contract types. Scotland uses the Statement of Dental Remuneration item-of-service fee system, not UDAs.
+- question: What's the difference between a GDS contract and a PDS contract?
+  answer: GDS (General Dental Services) is the standard ongoing NHS contract type in England, designed to be continuing without an end date. PDS (Personal Dental Services) was a contract type offered as a time-limited alternative, often used for specialist services or specific local commissioning arrangements; many were converted to GDS or have expired. ODS (Out-of-hours / Operational Dental Services) is a separate contract type for out-of-hours dental services. Wales and Northern Ireland use their own contract structures rather than GDS/PDS.
+- question: What is end-of-year clawback?
+  answer: If a practice underperforms its annual UDA contract target (typically by failing to deliver a high enough percentage of contracted UDAs), the commissioner can recover the unearned portion of the contract value. The threshold for clawback varies but typically activates when UDA delivery falls below around 96% of target, with the unearned percentage recovered. This can flow into the practice P&L as a year-end adjustment that materially changes profitability if not anticipated and managed monthly.
+- question: Is the NHS dental contract being reformed?
+  answer: NHS England has been working on dental contract reform for several years; phased changes have been introduced and further reform is on the policy agenda for 2025-2027. Reform direction has included reduced banding emphasis, increased flexibility on how UDAs are met, and changes to how preventive treatment is funded. The detail is in flux; we recommend reading the current NHS England commissioning guidance directly or speaking to your local commissioner. For practice planning, the realistic assumption is that the UDA mechanism continues in some form through 2025/26 with incremental reform rather than wholesale replacement.
+- question: Can NHS contracts transfer when a practice is sold?
+  answer: Yes, but the mechanism varies. Most NHS dental contracts can be novated to the new practice owner with commissioner consent. Some commissioners use the sale as a trigger to renegotiate contract terms (which can change UDA value). Multi-site groups or corporate buyers sometimes acquire practices specifically to consolidate NHS contract value. The contract transfer is a critical part of any sale due diligence; we cover the practical mechanics in our practice purchase financial due diligence guide.
+- question: How does the NHS contract interact with private treatment?
+  answer: 'An NHS contract requires the practice to deliver a defined volume of NHS treatment within the contract year; everything else can be delivered as private treatment at the practice''s chosen fees. Many practices operate a mixed NHS/private model where the NHS contract underwrites baseline revenue and the private side provides margin upside. Tax treatment differs: NHS clinical income and private clinical income are both exempt from VAT under VATA 1994 Schedule 9 Group 7, but purely cosmetic services without medical purpose can be standard-rated and need careful classification.'
+ctaTitle: Talk to a dentist-only specialist about your NHS contract
+ctaBody: 30-minute scoping call. If you're reviewing your contract position, modelling a buy, or planning for likely reform, we can walk through your specific UDA contract economics.
+metaTitle_prev: 'NHS Dental Contract Essentials UK: UDA, GDS, PDS, Clawback'
+metaDescription_prev: How NHS dental contracts actually work in 2025/26. UDA value variance, GDS vs PDS, regional differences, end-of-year reconciliation, contract reform.
+dateModified: '2026-07-08'
+reviewedBy: Dental Finance Partners Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
+reviewedAt: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p><strong>Every NHS dental practice in the UK runs on a contract.</strong> The contract determines how much you get paid by the NHS, what you have to deliver to earn it, and what happens if you don't. For most NHS-funded practices, the contract is the single largest line of revenue and the single largest risk on the P&L. Get the mechanics wrong at acquisition or at year-end and the consequences flow through to profit, valuation and exit position.</p>
 
 <p>This guide is the working reference. We cover the UDA system, the differences between contract types (GDS, PDS, ODS), why the UDA value attached to your specific contract is not the national average, how end-of-year reconciliation actually works, what the current reform direction means for your planning, and how contracts transfer at practice sale.</p>

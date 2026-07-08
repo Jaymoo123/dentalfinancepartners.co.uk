@@ -1,40 +1,48 @@
 ---
-title: "Dental Practice VAT & Compliance: Complete Guide for UK Dentists"
-slug: "dental-practice-vat-compliance-guide-uk"
-canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/dental-practice-vat-compliance-guide-uk"
-date: "2026-04-01"
+title: 'Dental Practice VAT & Compliance: Complete Guide for UK Dentists'
+slug: dental-practice-vat-compliance-guide-uk
+canonical: https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/dental-practice-vat-compliance-guide-uk
+date: '2026-04-01'
 generator: claude/legacy-supabase
-updatedDate: "2026-06-03"
-sourcesVerifiedAt: "2026-06-03"
-author: "Dental Finance Partners Editorial Team"
-category: "VAT & compliance"
-metaTitle: "Dental Practice VAT Guide 2026/27: Exempt vs Standard-Rated"
-metaDescription: "Dental clinical care is VAT-exempt and does not count toward the £90,000 threshold. A 2026/27 guide to exempt vs standard-rated supplies and partial exemption."
-altText: "UK dental practice owner reviewing VAT compliance documents at desk"
-image: "https://images.pexels.com/photos/7680681/pexels-photo-7680681.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+updatedDate: '2026-06-03'
+sourcesVerifiedAt: '2026-06-03'
+author: Dental Finance Partners Editorial Team
+category: VAT & compliance
+metaTitle: 'Dental Practice VAT: Exempt Care and Standard-Rated Work'
+metaDescription: Know when your dental practice must register for VAT. Clinical care is exempt, only standard-rated work counts towards the £90,000 threshold.
+altText: UK dental practice owner reviewing VAT compliance documents at desk
+image: https://images.pexels.com/photos/7680681/pexels-photo-7680681.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 imageCredit:
-  photographer: "www.kaboompics.com"
-  photographerUrl: "https://www.pexels.com/@karola-g"
-  source: "Pexels"
-  sourceUrl: "https://www.pexels.com/photo/receipts-and-documents-on-top-of-a-desk-7680681/"
-h1: "Dental Practice VAT & Compliance: Complete Guide for UK Dentists"
-summary: "Everything UK practice owners need to know about VAT registration, rates and compliance requirements for dental practices."
+  photographer: www.kaboompics.com
+  photographerUrl: https://www.pexels.com/@karola-g
+  source: Pexels
+  sourceUrl: https://www.pexels.com/photo/receipts-and-documents-on-top-of-a-desk-7680681/
+h1: 'Dental Practice VAT & Compliance: Complete Guide for UK Dentists'
+summary: Everything UK practice owners need to know about VAT registration, rates and compliance requirements for dental practices.
 keyTakeaways:
-  - "Dental clinical care is VAT-exempt under Schedule 9 Group 7 of the VAT Act 1994, whether NHS-funded or private, so exempt income never counts toward the £90,000 registration threshold."
-  - "Only standard-rated supplies (cosmetic-only treatment, OTC retail products) count toward the £90,000 taxable-turnover threshold, with deregistration at £88,000."
-  - "Treatment is exempt where its principal purpose is therapeutic, but purely cosmetic work with no therapeutic benefit is standard-rated at 20%."
-  - "A registered mixed practice is partially exempt, and the de minimis test recovers all exempt input VAT only if it averages no more than £625 a month (£7,500 a year) and 50% of total input VAT."
-  - "The Capital Goods Scheme applies to land or buildings costing £250,000 or more (VAT-exclusive), spreading input-VAT recovery over a 10-year adjustment period."
-schema: ""
+- Dental clinical care is VAT-exempt under Schedule 9 Group 7 of the VAT Act 1994, whether NHS-funded or private, so exempt income never counts toward the £90,000 registration threshold.
+- Only standard-rated supplies (cosmetic-only treatment, OTC retail products) count toward the £90,000 taxable-turnover threshold, with deregistration at £88,000.
+- Treatment is exempt where its principal purpose is therapeutic, but purely cosmetic work with no therapeutic benefit is standard-rated at 20%.
+- A registered mixed practice is partially exempt, and the de minimis test recovers all exempt input VAT only if it averages no more than £625 a month (£7,500 a year) and 50% of total input VAT.
+- The Capital Goods Scheme applies to land or buildings costing £250,000 or more (VAT-exclusive), spreading input-VAT recovery over a 10-year adjustment period.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Dental Finance Partners","url":"https://www.dentalfinancepartners.co.uk","areaServed":"United Kingdom","knowsAbout":["Dental practice accounting","Associate dentist taxation","NHS contract finance","Dental practice acquisitions","NHS pension annual allowance","VAT for dental practices","Capital allowances for dental equipment"],"memberOf":{"@type":"Organization","name":"National Association of Specialist Dental Accountants and Lawyers","url":"https://www.nasdal.org.uk"}},{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Specialist dental accountant","knowsAbout":["NHS dental contracts","Associate dentist tax","Dental practice incorporation","Dental VAT","NHS pension scheme"],"worksFor":{"@type":"Organization","name":"Dental Finance Partners","url":"https://www.dentalfinancepartners.co.uk"}},{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["Dental practice finance","NHS contract accounting","Practice valuation"]},{"@type":"Article","headline":"Dental Practice VAT & Compliance: Complete Guide for UK Dentists","description":"Know when your dental practice must register for VAT. Clinical care is exempt, only standard-rated work counts towards the £90,000 threshold.","url":"https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/dental-practice-vat-compliance-guide-uk","datePublished":"2026-04-01","dateModified":"2026-07-08","author":{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Specialist dental accountant","knowsAbout":["NHS dental contracts","Associate dentist tax","Dental practice incorporation","Dental VAT","NHS pension scheme"],"worksFor":{"@type":"Organization","name":"Dental Finance Partners","url":"https://www.dentalfinancepartners.co.uk"}},"reviewedBy":{"@type":"Person","name":"Dental Finance Partners Editorial Team","jobTitle":"Reviewed
+  against legislation.gov.uk and HMRC guidance","knowsAbout":["Dental practice finance","NHS contract accounting","Practice valuation"]},"publisher":{"@type":"AccountingService","name":"Dental Finance Partners","url":"https://www.dentalfinancepartners.co.uk","areaServed":"United Kingdom","knowsAbout":["Dental practice accounting","Associate dentist taxation","NHS contract finance","Dental practice acquisitions","NHS pension annual allowance","VAT for dental practices","Capital allowances for dental equipment"],"memberOf":{"@type":"Organization","name":"National Association of Specialist Dental Accountants and Lawyers","url":"https://www.nasdal.org.uk"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/dental-practice-vat-compliance-guide-uk"},"inLanguage":"en-GB","image":"https://images.pexels.com/photos/7680681/pexels-photo-7680681.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.dentalfinancepartners.co.uk"},{"@type":"ListItem","position":2,"name":"VAT & compliance","item":"https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance"},{"@type":"ListItem","position":3,"name":"Dental Practice VAT & Compliance: Complete Guide for UK Dentists","item":"https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/dental-practice-vat-compliance-guide-uk"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need to register for VAT if my dental practice only does NHS work?","acceptedAnswer":{"@type":"Answer","text":"No. NHS dental treatment is exempt from VAT under Schedule 9 Group 7 of the VAT Act 1994, and exempt income does not count toward the £90,000 registration threshold. A practice whose income is entirely exempt clinical care has no obligation to register, however much it turns over. Registration is only triggered by standard-rated (taxable) supplies such as cosmetic-only
+  treatment or retail product sales exceeding £90,000."}},{"@type":"Question","name":"Can I reclaim VAT on dental equipment if I only provide exempt services?","acceptedAnswer":{"@type":"Answer","text":"No. Input VAT on costs attributable to exempt clinical care is irrecoverable. It forms part of the cost of the asset or expense and, for qualifying equipment, is relieved instead through capital allowances. Only a practice that is VAT-registered because it makes standard-rated supplies can reclaim input VAT, and only the portion attributable to those taxable supplies."}},{"@type":"Question","name":"How do I determine if dental treatment is exempt or standard-rated for VAT?","acceptedAnswer":{"@type":"Answer","text":"Apply the principal-purpose test. If the principal purpose of the treatment is to protect, maintain or restore the patient''s health, the supply is exempt medical care, whether delivered under the NHS or privately. If the principal purpose is purely cosmetic or aesthetic with no therapeutic benefit, it is standard-rated at 20%. Tooth whitening and facial aesthetics are the classic borderline cases, so keep clinical notes recording the purpose."}}]}]}'
 faqs:
-  - question: "Do I need to register for VAT if my dental practice only does NHS work?"
-    answer: "No. NHS dental treatment is exempt from VAT under Schedule 9 Group 7 of the VAT Act 1994, and exempt income does not count toward the £90,000 registration threshold. A practice whose income is entirely exempt clinical care has no obligation to register, however much it turns over. Registration is only triggered by standard-rated (taxable) supplies such as cosmetic-only treatment or retail product sales exceeding £90,000."
-  - question: "Can I reclaim VAT on dental equipment if I only provide exempt services?"
-    answer: "No. Input VAT on costs attributable to exempt clinical care is irrecoverable. It forms part of the cost of the asset or expense and, for qualifying equipment, is relieved instead through capital allowances. Only a practice that is VAT-registered because it makes standard-rated supplies can reclaim input VAT, and only the portion attributable to those taxable supplies."
-  - question: "How do I determine if dental treatment is exempt or standard-rated for VAT?"
-    answer: "Apply the principal-purpose test. If the principal purpose of the treatment is to protect, maintain or restore the patient's health, the supply is exempt medical care, whether delivered under the NHS or privately. If the principal purpose is purely cosmetic or aesthetic with no therapeutic benefit, it is standard-rated at 20%. Tooth whitening and facial aesthetics are the classic borderline cases, so keep clinical notes recording the purpose."
+- question: Do I need to register for VAT if my dental practice only does NHS work?
+  answer: No. NHS dental treatment is exempt from VAT under Schedule 9 Group 7 of the VAT Act 1994, and exempt income does not count toward the £90,000 registration threshold. A practice whose income is entirely exempt clinical care has no obligation to register, however much it turns over. Registration is only triggered by standard-rated (taxable) supplies such as cosmetic-only treatment or retail product sales exceeding £90,000.
+- question: Can I reclaim VAT on dental equipment if I only provide exempt services?
+  answer: No. Input VAT on costs attributable to exempt clinical care is irrecoverable. It forms part of the cost of the asset or expense and, for qualifying equipment, is relieved instead through capital allowances. Only a practice that is VAT-registered because it makes standard-rated supplies can reclaim input VAT, and only the portion attributable to those taxable supplies.
+- question: How do I determine if dental treatment is exempt or standard-rated for VAT?
+  answer: Apply the principal-purpose test. If the principal purpose of the treatment is to protect, maintain or restore the patient's health, the supply is exempt medical care, whether delivered under the NHS or privately. If the principal purpose is purely cosmetic or aesthetic with no therapeutic benefit, it is standard-rated at 20%. Tooth whitening and facial aesthetics are the classic borderline cases, so keep clinical notes recording the purpose.
+metaTitle_prev: 'Dental Practice VAT Guide 2026/27: Exempt vs Standard-Rated'
+metaDescription_prev: Dental clinical care is VAT-exempt and does not count toward the £90,000 threshold. A 2026/27 guide to exempt vs standard-rated supplies and partial exemption.
+dateModified: '2026-07-08'
+reviewedBy: Dental Finance Partners Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
+reviewedAt: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>The single most important fact about <strong>dental practice VAT</strong> is also the one most often stated wrongly: dental clinical care is <strong>VAT-exempt</strong>. The supply of dental care, and of dental prostheses, by a person on the dentists' register or the dental care professionals register is exempt under <strong>Schedule 9 Group 7 of the VAT Act 1994</strong>, whether that care is NHS-funded or paid for privately. Exempt income does not count toward the £90,000 VAT registration threshold, and a practice cannot reclaim the VAT it incurs on costs that relate to exempt care.</p>
 
 <p>That distinction drives every other decision in this guide: whether you must register, what you can reclaim, and how a mixed practice apportions its input VAT. Get the exempt-versus-standard-rated line right first, and the rest follows.</p>
