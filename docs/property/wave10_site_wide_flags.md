@@ -25,6 +25,8 @@ Flags never block. Sessions continue work after flagging.
 
 ## F-11 — HOUSE_POSITION_EXTENSION — SDLT on mortgage assumption in gifted-property transaction (NEW LOCK NEEDED)
 
+**CLOSED 2026-07-08 Stage 1b: locked as HP §1.P (Sch 4 para 8 verified verbatim; s.53 clarified as charging rule not relief).**
+
 **Raised by:** Stage 1 sub-agent Session A, 2026-07-08, during A11 seed brief (gifting-property-and-deed-of-gift-tax-implications).
 
 **Issue:** No existing house position explicitly covers the SDLT treatment where a gifted property carries an outstanding mortgage and the donee assumes that mortgage. Under FA 2003 Sch 4 para 8, the outstanding mortgage balance constitutes chargeable consideration for SDLT; SDLT is therefore payable at standard residential rates on the debt assumed (including the 5% SDLT surcharge on additional dwellings where applicable). A pure gift with zero mortgage = zero consideration = no SDLT. This mechanics point is a frequent reader misconception ("gifts are free of SDLT").
@@ -38,6 +40,8 @@ Flags never block. Sessions continue work after flagging.
 ---
 
 ## F-12 — HOUSE_POSITION_EXTENSION — TCGA 1992 s.62(1) probate base cost (CGT on inherited property) — no dedicated HP lock
+
+**CLOSED 2026-07-08 Stage 1b: locked as HP §39 (s.62(1)/(4) verified; PR 24% rate commencement flagged verify-at-write).**
 
 **Raised by:** Stage 1 sub-agent Session A, 2026-07-08, during A8 seed brief (cgt-on-inherited-property-uk-probate-base-cost).
 
@@ -53,6 +57,8 @@ Flags never block. Sessions continue work after flagging.
 
 ## F-13 — HOUSE_POSITION_EXTENSION — CGT FX base-cost conversion and 60-day non-application to overseas property (NEW LOCK NEEDED)
 
+**CLOSED 2026-07-08 Stage 1b: locked as HP §39. s.252 attribution was WRONG — corrected to Bentley v Pike / Capcount Trading per CG78310; 60-day return confirmed UK-land-only; A9 Stage 2 must strip s.252 from the brief.**
+
 **Raised by:** Stage 1 sub-agent Session A, 2026-07-08, during A9 seed brief (cgt-overseas-property-uk-residents-foreign-disposals).
 
 **Issue:** §10 covers the DTA framework and foreign tax credit at a general level; §16 covers DTA article map. Neither locks the operational mechanics for a UK resident computing CGT on an overseas property disposal: (a) TCGA 1992 s.252 foreign-currency conversion rule (acquisition cost converted at acquisition-date spot rate; disposal proceeds at disposal-date spot rate — creating an embedded FX component in the gain); (b) explicit confirmation that the 60-day UK property return does NOT apply to overseas disposals (overseas gains go on the annual SA return only); (c) SA108 + foreign supplementary pages as the correct reporting path.
@@ -66,6 +72,8 @@ Flags never block. Sessions continue work after flagging.
 ---
 
 ## F-21 — HOUSE_POSITION_EXTENSION — Serviced accommodation trading test for BADR (NEW LOCK NEEDED)
+
+**CLOSED 2026-07-08 Stage 1b: locked as HP §5.A (s.169S trade test, no post-FHL deeming, BPR analogy caveat, FA 2025 s.8 rate path verified verbatim).**
 
 **Raised by:** sub-agent S1-NRL-MISC, 2026-07-08, during A2 seed brief (business-asset-disposal-relief-residential-property-qualification).
 
@@ -81,6 +89,8 @@ Flags never block. Sessions continue work after flagging.
 
 ## F-22 — HOUSE_POSITION_EXTENSION — FA 2024 lump-sum allowance architecture for SIPP in-specie contributions (NEW LOCK NEEDED)
 
+**CLOSED 2026-07-08 Stage 1b: locked as HP §40 (LSA £268,275 s.637P / LSDBA £1,073,100 s.637R verified verbatim; s.182 borrowing formula; Sch 29A + ss.208-209 charges).**
+
 **Raised by:** sub-agent S1-NRL-MISC, 2026-07-08, during A12 seed brief (buying-commercial-property-through-a-sipp).
 
 **Issue:** House position §22.21 (SIPP/SSAS commercial property lock) references the lifetime allowance abolition and instructs sessions to use the FA 2024 lump-sum allowance (LSA) and lump-sum-and-death-benefit allowance (LSDBA) architecture. However, §22.21 does not itself lock the FA 2024 provision numbers, the quantum of LSA/LSDBA, or the interaction with in-specie commercial property contributions. This gap means Stage 2 writers lack a house-position anchor for the in-specie contribution mechanics at the allowance level.
@@ -94,6 +104,8 @@ Flags never block. Sessions continue work after flagging.
 ---
 
 ## F-31 — HOUSE_POSITION_EXTENSION — VAT Sch 8 Grp 5 conversion-sale zero-rate + s.35 DIY Builders Scheme not in §29
+
+**CLOSED 2026-07-08 Stage 1b: locked as HP §29.13 (Grp 6 vs Grp 7 boundary fixed — 2-year-empty belongs to Grp 7; Sch 8 Grp 5 Item 1(b) verbatim; s.35 DIY).**
 
 **Raised by:** Stage1-A (seed brief A4)
 **Date:** 2026-07-08
@@ -111,6 +123,8 @@ Stage 2 for A4 must WebFetch both provisions verbatim and should NOT write body 
 ---
 
 ## F-32 — HOUSE_POSITION_EXTENSION — ITTOIA 2005 Part 6A property allowance (ss.783B-783BQ) not in house_positions
+
+**CLOSED 2026-07-08 Stage 1b: locked as HP §41 (exclusions are ss.783BN/BO/BP, NOT s.783BM; A5 Stage 2 must use corrected sections).**
 
 **Raised by:** Stage1-A (seed brief A5)
 **Date:** 2026-07-08
