@@ -3963,3 +3963,27 @@ Verified by the manager at legislation.gov.uk + the GOV.UK measure page on 2026-
 **Pages anchored to this lock:** Track 2 batch 4 rewrites = annual-investment-allowance-uk, annual-investment-allowance-landlords-uk, writing-down-allowance-rates, writing-down-allowance-cars. `capital-allowances-on-property` was diagnosed as a collapse-into-pillar candidate but the collapse was DROPPED: the pillar currently has zero ranking equity (0 Google + 0 Bing impressions, live only days) and collapsing an established indexed page into an unproven brand-new one is the wrong direction. Parked for a data-informed revisit once the pillar accrues equity (and the collapse guard `scripts/track2_collapse_guard.py` was hardened with R6 to block collapses into unproven targets). The remaining ~15 capital-allowance cluster pages cite this lock as the authoritative floor.
 
 
+
+
+## 1.P SDLT on gifted property subject to mortgage — FA 2003 Sch 4 para 8 — Wave 10 mini-lock (added 2026-07-08, manager source-verified)
+
+- **Assumed debt is chargeable consideration.** FA 2003 Sch 4 para 8(1)(b): where a donee takes a gift of property and assumes the outstanding mortgage, the assumed debt is chargeable consideration; SDLT is charged on the amount assumed at applicable residential rates. Para 8(1A)/(1B): a change in the parties' rights/liabilities in relation to the debt is a deemed assumption; joint-ownership transfers apportion secured debt by share.
+- **Market-value cap:** para 8(2) limits chargeable consideration to the property's market value (relevant in negative equity).
+- **No statutory de minimis**; the ordinary nil-rate band gives practical shelter for small assumed debts.
+- **Connected company donee:** FA 2003 s.53 is a CHARGING rule, not a relief — it imposes a market-value floor and disapplies the Sch 3 para 1 zero-consideration exemption. The relief route for 75%+ intra-group transfers is Sch 7 group relief (3-year de-grouping clawback). Do NOT describe s.53 as an exemption.
+- Sources: FA 2003 Sch 4 para 8; s.53; SDLTM04040-04040a.
+
+## 39. CGT on death, probate base cost, and overseas-property FX conversion — Wave 10 lock (added 2026-07-08, manager source-verified)
+
+**Death and probate base cost (TCGA 1992 s.62):**
+- s.62(1): death is NOT a disposal; PRs are deemed to acquire estate assets at market value at the date of death.
+- s.62(4): transfer to a legatee triggers no gain for the PRs, and the legatee is treated as acquiring at the PRs' acquisition (i.e. the death-MV probate base cost).
+- PRs get the annual exempt amount (£3,000) for the year of death + two following tax years, then nil.
+- **PR residential CGT rate: verify at write time.** GOV.UK rates page states PRs pay 24% "from 6 April 2026"; the individual higher rate fell 28%→24% from 30 Oct 2024. Do NOT assert 24% for PRs "from Oct 2024" without checking FA 2025 commencement; if writing generally, say "24% (current)" and cite the GOV.UK rates page.
+- PRs (and beneficiaries) selling UK residential property file the 60-day return (Sch 2 FA 2019). Manual: CG30540.
+
+**FX conversion for overseas property disposals by UK residents (case law, NOT s.252):**
+- **TCGA 1992 s.252 is the WRONG citation** (it concerns foreign-currency bank-account debts). The authority is Bentley v Pike [1981] 53 TC 590 and Capcount Trading v Evans [1992] 65 TC 545, per HMRC CG78310: EACH amount (acquisition cost, enhancement, disposal proceeds) converts to sterling at the spot rate on the date it was incurred/received; never compute the gain in foreign currency and convert at disposal.
+- **60-day return does NOT apply to overseas property** — Sch 2 FA 2019 covers UK land only. A UK resident's foreign disposal is reported on SA108 + foreign pages at Self Assessment.
+- Foreign tax credit relief: TIOPA 2010 (treaty or unilateral), capped at the UK CGT attributable to the same gain.
+- Sources: CG78300-78310; Sch 2 FA 2019; TIOPA 2010 Part 2.
