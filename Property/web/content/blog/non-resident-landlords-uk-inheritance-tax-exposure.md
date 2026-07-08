@@ -227,5 +227,3 @@ faqs:
 </ul>
 
 <p>For LTR landlords with worldwide estates, the IHT400 must include all worldwide assets even where most of those assets are in another country and taxed there. The double-tax credit claim (where applicable under a treaty or unilateral relief under IHTA 1984 s.159) is made on the account. Executors should take specialist advice early: the combination of non-UK residence, LTR status, worldwide reporting, and an illiquid UK property portfolio creates a complex administration burden.</p>
-
-<h2>Frequently asked questions</h2>

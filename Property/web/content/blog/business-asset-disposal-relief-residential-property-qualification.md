@@ -228,5 +228,3 @@ faqs:
 </ul>
 
 <p>If any of these questions cannot be answered with confidence, take specialist CGT advice before the disposal completes. An overclaimed BADR position carries Schedule 24 penalty risk if HMRC investigates and the trading test is not met.</p>
-
-<h2>Frequently asked questions</h2>

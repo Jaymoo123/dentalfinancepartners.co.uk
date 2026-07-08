@@ -230,46 +230,6 @@ faqs:
 
 <p>The section 35 scheme is not available where the conversion is carried out as part of a business activity (even an unregistered business). If the individual intends to sell or let the converted property, the scheme does not apply and normal VAT registration and recovery rules govern.</p>
 
-<h2>Frequently asked questions</h2>
-
-<dl>
-  <dt>Does the 5% reduced rate apply to both labour and materials on a residential conversion?</dt>
-  <dd>Yes. Under Schedule 7A Group 6 Item 2, building materials supplied and incorporated by the contractor providing the conversion services also attract the 5% rate. Materials purchased separately by the developer and supplied to the contractor do not qualify because they are not supplied in the course of the qualifying conversion by the contractor. Architect and structural engineer fees are standard-rated at 20% as professional services, not qualifying conversion services.</dd>
-
-  <dt>My office block has been used for business for 15 years. Does the 10-year rule mean my sale of the converted flats is zero-rated?</dt>
-  <dd>It can. Note (7)(b) to Schedule 8 Group 5 provides that a building counts as non-residential (and therefore eligible for the zero-rated first grant under Item 1(b)) if it was constructed more than 10 years before the grant of the major interest AND has not been used as a dwelling or for a relevant residential purpose in the 10 years before the grant. An office block with 15 years of commercial use and no residential occupation in the preceding 10 years satisfies this. Verify the building's use history carefully; mixed-use periods can complicate the analysis.</dd>
-
-  <dt>I am converting a house into 3 self-contained flats. Does this qualify for the 5% reduced rate?</dt>
-  <dd>Yes. This is a changed-number-of-dwellings conversion under Schedule 7A Group 6. Converting a single dwelling into multiple separate dwellings falls within this sub-category. The conversion services and incorporated materials supplied by your building contractor qualify for the 5% rate. Note that this is Group 6, not Group 7. The 2-year-empty condition does not apply here; that condition belongs to Group 7 only.</dd>
-
-  <dt>What is the difference between Group 6 and Group 7 for VAT purposes?</dt>
-  <dd>Group 6 (residential conversions) covers: changing the number of dwellings in a residential building, converting a non-residential building into dwellings, and HMO conversions. Group 7 (residential renovations and alterations) covers renovating or altering existing residential premises that have been empty for at least 2 years. The 2-year-empty condition is exclusive to Group 7. Both attract the 5% reduced rate, but the qualifying conditions differ.</dd>
-
-  <dt>My developer client has an option to tax on a commercial property they are converting to flats. When should they act?</dt>
-  <dd>They should act before exchange of contracts on the first flat sale. The option to tax on the commercial building remains live until the Schedule 10 paragraph 5 automatic disapplication operates (the building becomes a dwelling on completion) or the buyer issues a VAT 1614D certificate to the developer disapplying the OTT on their purchase. If the developer sells before the building is fully converted, the OTT may still apply and the sale could be subject to 20% VAT instead of the expected zero rate. Alert clients at the outset of any conversion project.</dd>
-
-  <dt>How does this page differ from the option to tax mechanics page?</dt>
-  <dd>The companion page on option to tax commercial property covers the election, notification, revocation, and disapplication mechanics in the context of ongoing commercial use, including the VAT 1614A election process and the 20-year lock-in. This page focuses on the specific problem where an existing OTT on a commercial building survives into a residential conversion project and how to manage it, as well as the 5% reduced rate, the zero-rate on first sale, and the CGS clawback risk on retained flats.</dd>
-
-  <dt>Can a non-VAT-registered self-converter claim VAT back on a non-residential conversion?</dt>
-  <dd>Yes, via the DIY Builders Scheme under VATA 1994 section 35. The claimant does not need to be VAT registered. Post-May 2024 rules require the claim within 3 months of the building being ready for occupation. Evidence includes VAT invoices, planning permission, and a building regulations completion certificate. HMRC form VAT431C is used for conversion claims. Professional fees are excluded from the refund.</dd>
-
-  <dt>Our developer will let the converted flats rather than sell them. Does the 5% rate still apply to conversion services?</dt>
-  <dd>Yes. The 5% reduced rate on Group 6 conversion services applies regardless of whether the completed dwellings are sold or let. However, once the developer decides to let rather than sell, they are making exempt supplies (residential letting), which means they cannot recover most of the input VAT on conversion costs. If the CGS threshold (£250,000 of VAT on land and buildings) is breached, a 10-year adjustment applies. Specialist advice is essential before locking in a letting strategy on a significant conversion project.</dd>
-
-  <dt>Does the zero-rate on first grant require the developer to be the original converter?</dt>
-  <dd>Yes. The zero-rate under Schedule 8 Group 5 Item 1(b) is available to the person converting the building. It applies only to the first grant of a major interest (freehold sale or a lease of 21 years or more) by the converter. A second-hand sale of the converted flat by someone who bought it from the converter does not attract the zero-rate. That subsequent sale is exempt under Schedule 9 Group 1.</dd>
-
-  <dt>What happens to the CGS if I sell converted flats after holding them for letting?</dt>
-  <dd>The CGS adjustment period is 10 years from completion. At each annual interval, HMRC looks at the proportion of taxable versus exempt use. If you initially let flats (exempt) and then sell them (zero-rated), each sale in the 10-year period generates a positive CGS adjustment, allowing you to reclaim a proportion of the input VAT originally blocked. Conversely, if your use becomes more exempt over time, additional clawback amounts fall due to HMRC. Keep records of all CGS-eligible assets and use changes throughout the adjustment period.</dd>
-
-  <dt>Can I reclaim VAT on professional fees on a residential conversion?</dt>
-  <dd>Yes, if you are VAT registered and making taxable supplies such as the zero-rated first grant on sale. Professional fees are standard-rated at 20%, but they are attributable to your zero-rated sales so the input VAT on them is recoverable in full. If you are making a mix of taxable and exempt supplies (some flats sold, some retained for letting), partial exemption applies and the professional fee input VAT must be apportioned. Under the DIY scheme (section 35), professional fees are excluded from the refund entirely.</dd>
-
-  <dt>Is the 5% rate available on converting a pub into residential flats?</dt>
-  <dd>Yes. A pub is a non-residential building. Converting it into dwellings is a special residential conversion under Schedule 7A Group 6, qualifying for the 5% reduced rate on conversion services and incorporated materials. The pub's prior commercial use also makes it potentially eligible for the Schedule 8 Group 5 zero-rate on first grant of the completed flats, provided Note (7)(b)'s conditions are met: the building was constructed more than 10 years before the grant and has not been used as a dwelling or for a relevant residential purpose in the preceding 10 years.</dd>
-</dl>
-
 <h2>Key authority links</h2>
 
 <ul>
