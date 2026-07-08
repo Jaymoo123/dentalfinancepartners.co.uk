@@ -17,14 +17,14 @@ Tracker columns: status | pos | slug | category | body words | FAQ count | monit
 | [x] | A1 | portfolio-landlord-tax-planning-strategy-guide | portfolio-management | | | | S1 seed done |
 | [x] | A2 | business-asset-disposal-relief-residential-property-qualification | capital-gains-tax | | | | S1 seed done 2026-07-08 |
 | [x] | A3 | non-resident-landlords-uk-inheritance-tax-exposure | non-resident-landlord-tax | | | | S1 seed done 2026-07-08 |
-| [ ] | A4 | vat-property-conversions-residential-reduced-rate-opted-to-tax | | | | | |
-| [ ] | A5 | property-income-allowance-1000-exemption-vs-expenses | | | | | |
+| [x] | A4 | vat-property-conversions-residential-reduced-rate-opted-to-tax | property-types-and-specialist-tax | | | | S1 seed done; F-31 raised |
+| [x] | A5 | property-income-allowance-1000-exemption-vs-expenses | landlord-tax-essentials | | | | S1 seed done; F-32 raised |
 | [x] | A6 | profit-extraction-buy-to-let-limited-company-salary-dividends | incorporation-and-company-structures | | | | S1 seed done |
-| [ ] | A7 | starting-property-business-sole-trader-vs-ltd-vs-partnership | | | | | |
+| [x] | A7 | starting-property-business-sole-trader-vs-ltd-vs-partnership | incorporation-and-company-structures | | | | S1 seed done |
 | [x] | A8 | cgt-on-inherited-property-uk-probate-base-cost | capital-gains-tax | | | | S1 seed done |
 | [x] | A9 | cgt-overseas-property-uk-residents-foreign-disposals | capital-gains-tax | | | | S1 seed done |
-| [ ] | A10 | family-investment-company-mechanics-share-classes-property | | | | | |
-| [ ] | A11 | gifting-property-and-deed-of-gift-tax-implications | | | | | |
+| [x] | A10 | family-investment-company-mechanics-share-classes-property | incorporation-and-company-structures | | | | S1 seed done |
+| [x] | A11 | gifting-property-and-deed-of-gift-tax-implications | capital-gains-tax | | | | S1 seed done; NEW LOCK NEEDED F-11 |
 | [ ] | A12 | buying-commercial-property-through-a-sipp | | | | | |
 ---
 
