@@ -137,7 +137,7 @@ faqs:
 <p>The OTT continues until one of two things happens:</p>
 
 <ol>
-  <li><strong>Schedule 10 paragraph 5 automatic disapplication</strong>: the OTT is automatically disapplied in relation to a building or part of a building that is used or is to be used as a dwelling or for a relevant residential purpose. This disapplication operates at the point the building <em>becomes</em> a dwelling (broadly, on completion and occupation as residential). It does not operate at the start of conversion works, on planning consent, or on the decision to convert.</li>
+  <li><strong>Schedule 10 paragraph 5 automatic disapplication</strong>: the OTT is automatically disapplied in relation to a building or part of a building that is used or is to be used as a dwelling or for a relevant residential purpose. The statutory trigger is that the building is designed or adapted, and is intended, for use as a dwelling: the disapplication can therefore bite before completion, once the design-plus-intention test is met, not only when the finished dwelling is occupied. Buyers should still secure form VAT1614D before exchange rather than relying on the automatic rule alone.</li>
   <li><strong>VAT 1614D certification (Schedule 10 paragraph 6)</strong>: a buyer of the completed dwelling can issue a certificate (HMRC form VAT 1614D) to the developer, certifying that the buyer intends to use the property as a dwelling and disapplying the OTT on their specific purchase. This gives buyer-side certainty that the zero rate applies to their acquisition.</li>
 </ol>
 
