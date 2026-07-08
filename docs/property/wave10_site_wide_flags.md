@@ -23,6 +23,20 @@ Flags never block. Sessions continue work after flagging.
 
 ---
 
+## F-21 — HOUSE_POSITION_EXTENSION — Serviced accommodation trading test for BADR (NEW LOCK NEEDED)
+
+**Raised by:** sub-agent S1-NRL-MISC, 2026-07-08, during A2 seed brief (business-asset-disposal-relief-residential-property-qualification).
+
+**Issue:** House positions §5 and §6 lock BADR rates and FHL abolition but contain no locked position on whether serviced accommodation operations (non-FHL short-lets with substantial services) can meet the TCGA 1992 s.169S "trading company" / s.169I trading test for BADR purposes post-FHL abolition (6 April 2025). This is the primary edge-case readers of the A2 page will search for.
+
+**Required action (manager at Stage 1b):** Establish and lock the house position on the trading/investment distinction for short-let property operations post-FHL abolition. If the position cannot be cleanly locked (fact-dependent), lock the framing: "depends on level of services rendered; cite HMRC BIM22000+ indicators; advise specialist review."
+
+**Blocking:** Does not block A2 seed or Stage 2; Stage 2 writer should use cautious framing pending this lock.
+
+**Status:** OPEN
+
+---
+
 ## F-31 — HOUSE_POSITION_EXTENSION — VAT Sch 8 Grp 5 conversion-sale zero-rate + s.35 DIY Builders Scheme not in §29
 
 **Raised by:** Stage1-A (seed brief A4)

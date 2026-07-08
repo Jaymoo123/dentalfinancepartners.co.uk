@@ -15,14 +15,14 @@ Tracker columns: status | pos | slug | category | body words | FAQ count | monit
 | Status | Pos | Slug | Category | Body words | FAQs | MP ID | Notes |
 |---|---|---|---|---|---|---|---|
 | [x] | A1 | portfolio-landlord-tax-planning-strategy-guide | portfolio-management | | | | S1 seed done |
-| [ ] | A2 | business-asset-disposal-relief-residential-property-qualification | | | | | |
+| [x] | A2 | business-asset-disposal-relief-residential-property-qualification | capital-gains-tax | | | | S1 seed done 2026-07-08 |
 | [x] | A3 | non-resident-landlords-uk-inheritance-tax-exposure | non-resident-landlord-tax | | | | S1 seed done 2026-07-08 |
 | [ ] | A4 | vat-property-conversions-residential-reduced-rate-opted-to-tax | | | | | |
 | [ ] | A5 | property-income-allowance-1000-exemption-vs-expenses | | | | | |
-| [ ] | A6 | profit-extraction-buy-to-let-limited-company-salary-dividends | | | | | |
+| [x] | A6 | profit-extraction-buy-to-let-limited-company-salary-dividends | incorporation-and-company-structures | | | | S1 seed done |
 | [ ] | A7 | starting-property-business-sole-trader-vs-ltd-vs-partnership | | | | | |
 | [x] | A8 | cgt-on-inherited-property-uk-probate-base-cost | capital-gains-tax | | | | S1 seed done |
-| [ ] | A9 | cgt-overseas-property-uk-residents-foreign-disposals | | | | | |
+| [x] | A9 | cgt-overseas-property-uk-residents-foreign-disposals | capital-gains-tax | | | | S1 seed done |
 | [ ] | A10 | family-investment-company-mechanics-share-classes-property | | | | | |
 | [ ] | A11 | gifting-property-and-deed-of-gift-tax-implications | | | | | |
 | [ ] | A12 | buying-commercial-property-through-a-sipp | | | | | |
