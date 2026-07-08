@@ -184,3 +184,39 @@ No §-ref in house_positions covers the £1,000 property income allowance (ITTOI
 
 ---
 
+## F-51 — INTERNAL_LINK — non-resident CGT reverse-flow page returned 404
+
+**Raised by:** Stage 2 sub-agent S2-CGT-IHT (Session A), 2026-07-09, during A9 full-brief extension (cgt-overseas-property-uk-residents-foreign-disposals).
+
+**Issue:** The slug `non-resident-cgt-selling-uk-property-overseas-guide` returned HTTP 404 (checked 2026-07-08). This page is either unpublished, at a different URL, or deleted. The overseas-property brief references the reverse-flow page for the cannib guard (directional contrast between UK resident selling overseas vs. non-UK resident selling UK property). The brief cannot link to the reverse-flow page until a live URL is confirmed.
+
+**Required action (manager):** Confirm whether the non-resident CGT page is live at a different slug. If yes, update brief. If not yet published, flag as a future pick and note "coming soon" in the brief.
+
+**Blocking:** No.
+
+---
+
+## F-52 — INTERNAL_LINK — IHT 7-year clock gifting page returned 404
+
+**Raised by:** Stage 2 sub-agent S2-CGT-IHT (Session A), 2026-07-09, during A11 full-brief extension (gifting-property-and-deed-of-gift-tax-implications).
+
+**Issue:** The slug `iht-7-year-clock-property-gifting-mid-life-landlord-strategy` returned HTTP 404 (checked 2026-07-08). The gifting brief intended to cross-link to this page for the deeper IHT / taper maths. The IHT section in the gifting brief has been made self-contained as a result. If the 7-year clock page exists at a different URL, update the brief's internal link.
+
+**Required action (manager):** Confirm live slug or confirm page does not yet exist (future pick).
+
+**Blocking:** No.
+
+---
+
+## F-53 — CROSS_BUCKET — existing CGT gifting page should back-link to new gifting deed-of-gift page
+
+**Raised by:** Stage 2 sub-agent S2-CGT-IHT (Session A), 2026-07-09, during A11 full-brief extension.
+
+**Issue:** `cgt-gifting-property-family-members-uk` (verified live, HTTP 200) covers CGT mechanics on property gifts in depth. It does NOT link to the new `gifting-property-and-deed-of-gift-tax-implications` page, which is the companion multi-tax (CGT + IHT + SDLT + income) guide with the deed-of-gift as the lens. Once the new page is published, the existing CGT gifting page should back-link to it under a label such as "For the IHT, SDLT and GROB dimensions of gifting, see: Gifting Property and Deed of Gift: Tax Implications."
+
+**Required action (manager):** Back-patch `cgt-gifting-property-family-members-uk` at wave-close step 4.
+
+**Blocking:** No.
+
+---
+
