@@ -253,7 +253,7 @@ faqs:
 <p>These figures assume the spouse and adult children have no other income consuming their basic-rate band. The £500 dividend allowance applies per individual across all dividend sources. Real-world modelling requires each family member's full income position.</p>
 
 <aside>
-<p><strong>How this differs from our companion pages:</strong> this worked example shows the income-routing and CT-computation mechanics only. The "is this structure worth forming?" analysis, including entry CGT, SDLT on transfer, and double-layer tax, is covered in our <a href="/blog/incorporation-and-company-structures/family-investment-company-property-worth-it">FIC: is it worth it for property owners?</a> companion. The IHT value-freeze mechanics, preference share value-freezing, and growth-share PET clock are covered in our <a href="/blog/incorporation-and-company-structures/fic-estate-planning-landlord-portfolio-value-freezing-iht-mechanics">FIC estate planning and value-freezing</a> companion.</p>
+<p><strong>How this differs from our companion pages:</strong> this worked example shows the income-routing and CT-computation mechanics only. The "is this structure worth forming?" analysis, including entry CGT, SDLT on transfer, and double-layer tax, is covered in our <a href="/blog/incorporation-and-company-structures/family-investment-company-property-worth-it">FIC: is it worth it for property owners?</a> companion. The IHT value-freeze mechanics, preference share value-freezing, and growth-share PET clock are covered in our <a href="/blog/landlord-tax-essentials/fic-estate-planning-landlord-portfolio-value-freezing-iht-mechanics">FIC estate planning and value-freezing</a> companion.</p>
 </aside>
 
 <h2>Settlements legislation: spouse and children shares</h2>

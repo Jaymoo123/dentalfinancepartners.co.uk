@@ -124,7 +124,7 @@ faqs:
 
 <p><strong>FA 2003 s.116(7) six-dwellings rule.</strong> Where six or more dwellings are the subject of a single transaction, they are automatically treated as non-residential property for SDLT. Non-residential rates are lower for larger transactions and there is no 5% additional dwellings surcharge. This rule survived the abolition of Multiple Dwellings Relief (MDR, abolished 1 June 2024) and is now the principal portfolio-friendly route for genuine bulk acquisitions. It does not help with incremental transfer of an existing portfolio one property at a time.</p>
 
-<p>For a detailed walkthrough of incorporation SDLT mechanics, the transfer-cost calculation, and the phased-transfer strategy, see our <a href="/blog/portfolio-management/incorporating-property-portfolio-uk-2026">guide to incorporating a property portfolio</a>.</p>
+<p>For a detailed walkthrough of incorporation SDLT mechanics, the transfer-cost calculation, and the phased-transfer strategy, see our <a href="/blog/incorporation-and-company-structures/incorporating-property-portfolio-uk-2026">guide to incorporating a property portfolio</a>.</p>
 
 <h2>4. Profit extraction from a property SPV: the sequencing hierarchy</h2>
 
@@ -140,7 +140,7 @@ faqs:
 
 <p>The optimal blend of these four rungs shifts materially between 2026/27 and 2027/28. From 6 April 2027, the property income surcharge means that personal letting income received by the director (if they also hold properties personally) is taxed at 22/42/47%, not 20/40/45%. This raises the marginal rate on dividends pushing into the higher-rate band and makes the pension lever relatively more attractive. Extraction modelling for a portfolio landlord-director should always be run for both the current year and the 2027/28 position side by side.</p>
 
-<p>The extraction decision has significant depth: worked maths by profit band, s.455 CT on overdrawn DLAs, Employment Allowance eligibility, and optimal salary-dividend blends across different profit levels are all covered in detail in our companion page on <a href="/blog/portfolio-management/property-company-profit-extraction-salary-vs-dividends">profit extraction from a buy-to-let limited company</a>.</p>
+<p>The extraction decision has significant depth: worked maths by profit band, s.455 CT on overdrawn DLAs, Employment Allowance eligibility, and optimal salary-dividend blends across different profit levels are all covered in detail in our companion page on <a href="/blog/incorporation-and-company-structures/property-company-profit-extraction-salary-vs-dividends">profit extraction from a buy-to-let limited company</a>.</p>
 
 <h2>5. ATED governance: the compliance obligation most companies overlook</h2>
 
@@ -302,7 +302,7 @@ faqs:
 
 <p><strong>Direct gift.</strong> Gifting an investment property triggers a CGT disposal at market value immediately. If the property was purchased 20 years ago at £200,000 and is now worth £700,000, the gift crystallises a £500,000 gain (subject to the annual exempt amount of £3,000 per individual). At the higher rate of 24%, the CGT bill is approximately £119,280 on this example. For properties with large historic gains, the CGT on gift is often the reason the direct-gift route is not taken even where the IHT saving would justify it.</p>
 
-<p><strong>FIC value-freeze.</strong> The FIC growth-share structure addresses both the control and the CGT problem of direct gifting: the founder retains control via preference shares, children hold growth shares at a nominal initial value, and the estate-freeze happens incrementally as the portfolio appreciates into the children's growth-share allocation. The s.165 TCGA holdover relief that is available on gifts into certain companies is NOT available for investment-company FIC shares (holdover under s.165 requires the asset to be a business asset; a FIC holding rental property is an investment company, not a trading company). The mechanics of the FIC share-class design, the close-investment-holding-company (CIHC) determination, and the settlements legislation limits on alphabet shares are covered in depth in our companion page on <a href="/blog/portfolio-management/family-investment-company-mechanics-share-classes-property">FIC mechanics and share-class design</a>.</p>
+<p><strong>FIC value-freeze.</strong> The FIC growth-share structure addresses both the control and the CGT problem of direct gifting: the founder retains control via preference shares, children hold growth shares at a nominal initial value, and the estate-freeze happens incrementally as the portfolio appreciates into the children's growth-share allocation. The s.165 TCGA holdover relief that is available on gifts into certain companies is NOT available for investment-company FIC shares (holdover under s.165 requires the asset to be a business asset; a FIC holding rental property is an investment company, not a trading company). The mechanics of the FIC share-class design, the close-investment-holding-company (CIHC) determination, and the settlements legislation limits on alphabet shares are covered in depth in our companion page on <a href="/blog/incorporation-and-company-structures/family-investment-company-mechanics-share-classes-property">FIC mechanics and share-class design</a>.</p>
 
 <p><strong>Discretionary trust.</strong> A gift into a discretionary trust is a chargeable lifetime transfer (CLT) for IHT, not a PET. If the trust value exceeds the available nil-rate band (currently £325,000, frozen until April 2031), a 20% lifetime IHT charge applies at the time of settlement. The trust itself then faces 10-year periodic charges of up to 6% on the relevant trust property, and exit charges on distributions. The holdover relief under TCGA 1992 s.260 can defer the CGT on the gift into the trust, which is the primary practical advantage of the trust route over direct gifting for high-gain properties.</p>
 
@@ -370,10 +370,10 @@ faqs:
 
 <ul>
   <li><strong>Entity choice and incorporation mechanics:</strong> <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Buy-to-Let Limited Company: Complete Guide UK</a></li>
-  <li><strong>Profit extraction worked maths:</strong> <a href="/blog/portfolio-management/property-company-profit-extraction-salary-vs-dividends">Profit Extraction from a Buy-to-Let Limited Company</a></li>
-  <li><strong>FIC share-class mechanics and CIHC determination:</strong> <a href="/blog/portfolio-management/family-investment-company-mechanics-share-classes-property">FIC Mechanics and Share-Class Design</a></li>
+  <li><strong>Profit extraction worked maths:</strong> <a href="/blog/incorporation-and-company-structures/property-company-profit-extraction-salary-vs-dividends">Profit Extraction from a Buy-to-Let Limited Company</a></li>
+  <li><strong>FIC share-class mechanics and CIHC determination:</strong> <a href="/blog/incorporation-and-company-structures/family-investment-company-mechanics-share-classes-property">FIC Mechanics and Share-Class Design</a></li>
   <li><strong>FIC value-freeze and IHT mechanics:</strong> <a href="/blog/landlord-tax-essentials/fic-estate-planning-landlord-portfolio-value-freezing-iht-mechanics">FIC Value-Freeze for IHT: A Strategic Frame for Landlords</a></li>
-  <li><strong>Incorporation transfer cost and SDLT:</strong> <a href="/blog/portfolio-management/incorporating-property-portfolio-uk-2026">Incorporating a Property Portfolio</a></li>
+  <li><strong>Incorporation transfer cost and SDLT:</strong> <a href="/blog/incorporation-and-company-structures/incorporating-property-portfolio-uk-2026">Incorporating a Property Portfolio</a></li>
 </ul>
 
 <p>If your situation is complex (multiple properties, mixed personal and corporate ownership, a succession conversation that has not yet started, ATED compliance uncertainty, or the 2027/28 rate change prompting a strategy review), the form at the foot of the page is the fastest route to a structured assessment of your position.</p>
