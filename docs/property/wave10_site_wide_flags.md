@@ -40,4 +40,20 @@ Stage 2 for A4 must WebFetch both provisions verbatim and should NOT write body 
 
 ---
 
+## F-32 — HOUSE_POSITION_EXTENSION — ITTOIA 2005 Part 6A property allowance (ss.783B-783BQ) not in house_positions
+
+**Raised by:** Stage1-A (seed brief A5)
+**Date:** 2026-07-08
+**Status:** open
+
+No §-ref in house_positions covers the £1,000 property income allowance (ITTOIA 2005 Part 6A ss.783B-783BQ, inserted by FA 2017 s.17). Key points that need locking before Stage 2 body write:
+
+1. Whether the allowance applies to FHL income post-abolition of the FHL regime (April 2025). If former FHL income now falls under property business income, it may qualify.
+2. The s.24 / partial-relief interaction: under partial relief (s.783BE/BF), the landlord deducts £1,000 instead of actual expenses. Whether the s.24 basic-rate credit is still claimable on top of the partial-relief deduction is not obvious from the statute.
+3. The "blocked cases" employer/own-company payer condition (ss.783BJ-783BK) — exact scope.
+
+**Manager action needed:** add §29.X (or a new standalone §-ref, e.g. §30) covering the property allowance mechanics, or grant Stage 2 per-write-verify authority with a flag-back on the two ambiguous interaction points above.
+
+---
+
 
