@@ -140,7 +140,7 @@ faqs:
 
 <p>The optimal blend of these four rungs shifts materially between 2026/27 and 2027/28. From 6 April 2027, the property income surcharge means that personal letting income received by the director (if they also hold properties personally) is taxed at 22/42/47%, not 20/40/45%. This raises the marginal rate on dividends pushing into the higher-rate band and makes the pension lever relatively more attractive. Extraction modelling for a portfolio landlord-director should always be run for both the current year and the 2027/28 position side by side.</p>
 
-<p>The extraction decision has significant depth: worked maths by profit band, s.455 CT on overdrawn DLAs, Employment Allowance eligibility, and optimal salary-dividend blends across different profit levels are all covered in detail in our companion page on <a href="/blog/portfolio-management/profit-extraction-buy-to-let-limited-company-salary-dividends">profit extraction from a buy-to-let limited company</a>.</p>
+<p>The extraction decision has significant depth: worked maths by profit band, s.455 CT on overdrawn DLAs, Employment Allowance eligibility, and optimal salary-dividend blends across different profit levels are all covered in detail in our companion page on <a href="/blog/portfolio-management/property-company-profit-extraction-salary-vs-dividends">profit extraction from a buy-to-let limited company</a>.</p>
 
 <h2>5. ATED governance: the compliance obligation most companies overlook</h2>
 
@@ -370,7 +370,7 @@ faqs:
 
 <ul>
   <li><strong>Entity choice and incorporation mechanics:</strong> <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Buy-to-Let Limited Company: Complete Guide UK</a></li>
-  <li><strong>Profit extraction worked maths:</strong> <a href="/blog/portfolio-management/profit-extraction-buy-to-let-limited-company-salary-dividends">Profit Extraction from a Buy-to-Let Limited Company</a></li>
+  <li><strong>Profit extraction worked maths:</strong> <a href="/blog/portfolio-management/property-company-profit-extraction-salary-vs-dividends">Profit Extraction from a Buy-to-Let Limited Company</a></li>
   <li><strong>FIC share-class mechanics and CIHC determination:</strong> <a href="/blog/portfolio-management/family-investment-company-mechanics-share-classes-property">FIC Mechanics and Share-Class Design</a></li>
   <li><strong>FIC value-freeze and IHT mechanics:</strong> <a href="/blog/landlord-tax-essentials/fic-estate-planning-landlord-portfolio-value-freezing-iht-mechanics">FIC Value-Freeze for IHT: A Strategic Frame for Landlords</a></li>
   <li><strong>Incorporation transfer cost and SDLT:</strong> <a href="/blog/portfolio-management/incorporating-property-portfolio-uk-2026">Incorporating a Property Portfolio</a></li>
