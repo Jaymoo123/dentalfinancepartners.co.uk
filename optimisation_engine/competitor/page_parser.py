@@ -270,9 +270,17 @@ def _extract_faqs(soup: BeautifulSoup, zone: Tag) -> list[dict]:
             data = json.loads(script.string or "")
         except (json.JSONDecodeError, TypeError):
             continue
-        items = data if isinstance(data, list) else [data]
+        nodes = data if isinstance(data, list) else [data]
+        # ponytail: flatten @graph — same pattern as deep_extract._schema_types
+        items = []
+        for n in nodes:
+            if isinstance(n, dict) and "@graph" in n:
+                items.extend(n["@graph"])
+            else:
+                items.append(n)
         for item in items:
-            if item.get("@type") == "FAQPage":
+            _t = item.get("@type", "")
+            if _t == "FAQPage" or (isinstance(_t, list) and "FAQPage" in _t):
                 for qa in (item.get("mainEntity") or []):
                     q_text = qa.get("name") or ""
                     a_block = qa.get("acceptedAnswer") or {}
@@ -317,6 +325,21 @@ def _extract_faqs(soup: BeautifulSoup, zone: Tag) -> list[dict]:
                     "word_count": len(a_text.split()),
                 })
 
+    # dl/dt/dd — our own property template uses this pattern
+    for dl in zone.find_all("dl"):
+        dts = dl.find_all("dt")
+        dds = dl.find_all("dd")
+        for dt, dd in zip(dts, dds):
+            q_text = _text(dt)
+            a_text = _text(dd)
+            if q_text:
+                faqs.append({
+                    "source": "html",
+                    "question": q_text,
+                    "answer": a_text[:400],
+                    "word_count": len(a_text.split()),
+                })
+
     # Deduplicate by question text
     seen: set[str] = set()
     unique: list[dict] = []
@@ -343,7 +366,14 @@ def _extract_schema(soup: BeautifulSoup) -> dict:
             data = json.loads(script.string or "")
         except (json.JSONDecodeError, TypeError):
             continue
-        items = data if isinstance(data, list) else [data]
+        nodes = data if isinstance(data, list) else [data]
+        # ponytail: flatten @graph — same pattern as deep_extract._schema_types
+        items = []
+        for n in nodes:
+            if isinstance(n, dict) and "@graph" in n:
+                items.extend(n["@graph"])
+            else:
+                items.append(n)
         for item in items:
             t = item.get("@type") or ""
             if isinstance(t, list):
@@ -848,6 +878,8 @@ def parse_page(
         return result
 
     soup = BeautifulSoup(html, "lxml")
+    _pre_strip_h1 = soup.find("h1")  # ponytail: capture before _strip_noise() removes header elements
+    _pre_strip_schema = _extract_schema(soup)  # ponytail: capture before _strip_noise() removes <script> tags
     _strip_noise(soup)
     zone = _find_main_zone(soup)
 
@@ -860,6 +892,8 @@ def parse_page(
 
     # On-page SEO + metadata
     seo = _onpage_seo(soup, zone, primary_query)
+    if not seo.get("h1_text") and _pre_strip_h1:
+        seo["h1_text"] = _pre_strip_h1.get_text(" ", strip=True)
     result.update(seo)
 
     # Sections
@@ -867,9 +901,18 @@ def parse_page(
     result["sections"] = sections
     result["schema_types"] = []
 
-    # FAQs
-    faqs = _extract_faqs(soup, zone)
-    result["faqs"] = faqs
+    # FAQs — seed from pre-strip schema (JSON-LD scripts removed by _strip_noise)
+    _schema_faq_pairs = _pre_strip_schema.get("faq_pairs") or []
+    _schema_faqs = [
+        {"source": "schema", "question": p["question"], "answer": p["answer"][:400],
+         "word_count": len(p["answer"].split())}
+        for p in _schema_faq_pairs
+    ]
+    faqs = _extract_faqs(soup, zone)  # HTML patterns on post-strip zone
+    # Merge: schema FAQs first (authoritative), then HTML FAQs not already covered
+    seen_q = {f["question"].strip().lower()[:80] for f in _schema_faqs}
+    merged = _schema_faqs + [f for f in faqs if f["question"].strip().lower()[:80] not in seen_q]
+    result["faqs"] = merged
 
     # Query coverage
     if primary_query:
@@ -878,10 +921,9 @@ def parse_page(
     # E-E-A-T
     result["eeat"] = _extract_eeat(soup, url)
 
-    # Schema
-    schema = _extract_schema(soup)
-    result["schema_data"] = schema
-    result["schema_types"] = schema.get("types") or []
+    # Schema (pre-captured before _strip_noise removed <script> tags)
+    result["schema_data"] = _pre_strip_schema
+    result["schema_types"] = _pre_strip_schema.get("types") or []
 
     # Figures / legislation / deadlines across full page
     result["figures_mentioned"] = _extract_figures(body_text)

@@ -60,8 +60,9 @@ def call_deepseek(
 # ---------------------------------------------------------------------------
 
 ANTHROPIC_PRICES_PER_M_USD = {
+    "claude-sonnet-4-6":          {"input": 3.0,  "output": 15.0},
     "claude-sonnet-4-20250514":   {"input": 3.0,  "output": 15.0},
-    "claude-haiku-4-5-20251001":  {"input": 0.25, "output": 1.25},
+    "claude-haiku-4-5-20251001":  {"input": 1.00, "output": 5.00},
     "claude-3-5-haiku-latest":    {"input": 0.80, "output": 4.0},
 }
 
@@ -70,7 +71,7 @@ def call_anthropic(
     *,
     system_prompt: str,
     user_prompt: str,
-    model: str = "claude-sonnet-4-20250514",
+    model: str = "claude-sonnet-4-6",
     max_tokens: int = 4096,
     temperature: float = 0.3,
 ) -> LLMResult:

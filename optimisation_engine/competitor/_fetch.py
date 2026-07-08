@@ -82,12 +82,24 @@ def _get_robots(base_url: str) -> urllib.robotparser.RobotFileParser | None:
         return _robots_cache[base_url]
     rp = urllib.robotparser.RobotFileParser()
     robots_url = base_url.rstrip("/") + "/robots.txt"
-    rp.set_url(robots_url)
+    # Fetch robots.txt with our real bot UA. rp.read() uses urllib's default
+    # "Python-urllib" UA which WAFs 403, and robotparser treats any 4xx≠404
+    # as disallow-all — false-blocking sites whose robots.txt actually allows us.
     try:
-        rp.read()
-        _robots_cache[base_url] = rp
+        resp = httpx.get(
+            robots_url,
+            headers={"User-Agent": BOT_USER_AGENT},
+            follow_redirects=True,
+            timeout=REQUEST_TIMEOUT,
+        )
+        if resp.status_code == 200:
+            rp.parse(resp.text.splitlines())
+            _robots_cache[base_url] = rp
+        else:
+            # Missing/blocked robots.txt: standard convention is allow.
+            _robots_cache[base_url] = None
     except Exception:
-        _robots_cache[base_url] = None  # assume allowed if unreadable
+        _robots_cache[base_url] = None  # assume allowed if unreachable
     return _robots_cache[base_url]
 
 

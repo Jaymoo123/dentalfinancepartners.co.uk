@@ -245,9 +245,9 @@ SITE_CONFIG: dict = {
     "topic_order": "publish_priority.desc.nullslast,keyword_difficulty.asc.nullslast,created_at.asc",
 
     # --- LLM provider ---------------------------------------------------------
-    # Writing model decided by the 2026-06 bake-off (docs/contractors-ir35/BAKEOFF_2026-06.md); python llm path is not the estate writing pipeline.
-    "llm_provider": "deepseek",
-    "llm_model": "deepseek-chat",
+    # DeepSeek banned estate-wide (model tiering rule 2026-06); Sonnet is the locked writing tier.
+    "llm_provider": "anthropic",
+    "llm_model": "claude-sonnet-4-6",
     "max_tokens": 6500,
     "temperature": 0.3,
     "verify_with_haiku": True,

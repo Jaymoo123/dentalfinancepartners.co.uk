@@ -24,6 +24,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import datetime as _dt
 import os
 import sys
 from pathlib import Path
@@ -136,6 +137,149 @@ SITE_RULES = {
             ("HMRC off-payroll working (IR35) guidance", "https://www.gov.uk/guidance/understanding-off-payroll-working-ir35"),
             ("Companies House — file your annual accounts", "https://www.gov.uk/file-your-company-annual-accounts"),
             ("HMRC Business Asset Disposal Relief", "https://www.gov.uk/business-asset-disposal-relief"),
+        ],
+    },
+    "dentists": {
+        "content_dir": "Dentists/web/content/blog",
+        "web_root": "Dentists/web",
+        "domain": "https://www.dentalfinancepartners.co.uk",
+        "audience": "UK associate dentists, dental practice owners, and multi-site dental groups",
+        "lead_form_segments": [
+            "Associate dentist",
+            "Practice owner",
+            "Multi-practice group",
+        ],
+        "pillar_pages": {
+            "NHS contract essentials": "/dental-guides/nhs-contract-essentials-for-dentists",
+            "Associate tax survival guide": "/dental-guides/associate-tax-survival-guide",
+            "Practice purchase due diligence": "/dental-guides/practice-purchase-financial-due-diligence",
+            "Practice profit extraction (partnership vs Ltd)": "/dental-guides/practice-profit-extraction-partnership-vs-ltd",
+            "NHS pension scheme essentials": "/dental-guides/nhs-pension-scheme-essentials-for-dentists",
+            "Goodwill valuation and sale playbook": "/dental-guides/goodwill-valuation-and-sale-playbook",
+        },
+        "authority_links": [
+            ("HMRC Business Income Manual (BIM)", "https://www.gov.uk/hmrc-internal-manuals/business-income-manual"),
+            ("HMRC Capital Allowances Manual (CA)", "https://www.gov.uk/hmrc-internal-manuals/capital-allowances-manual"),
+            ("NHS Business Services Authority — NHS Pensions", "https://www.nhsbsa.nhs.uk/member-hub"),
+            ("CQC — dental practice registration", "https://www.cqc.org.uk/guidance-providers/dentists"),
+            ("gov.uk MTD for ITSA sign-up checker", "https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax"),
+            ("HMRC VAT notice 701/57 — Health", "https://www.gov.uk/guidance/health-institutions-and-welfare-services-vat-notice-70157"),
+        ],
+    },
+    "solicitors": {
+        "content_dir": "Solicitors/web/content/blog",
+        "web_root": "Solicitors/web",
+        "domain": "https://www.accountsforlawyers.co.uk",
+        "audience": "UK sole practitioners, law firm partners, practice managers/COFAs, and multi-partner firms",
+        "lead_form_segments": [
+            "Sole practitioner",
+            "Law firm partner",
+            "Practice manager/COFA",
+            "Multi-partner firm",
+        ],
+        "pillar_pages": {
+            "Partnership vs LLP for solicitors": "/solicitor-guides/partnership-vs-llp-for-solicitors",
+            "SRA Accounts Rules essentials": "/solicitor-guides/sra-accounts-rules-essentials",
+            "COFA fundamentals": "/solicitor-guides/cofa-fundamentals",
+            "Fee-share vs equity partner": "/solicitor-guides/fee-share-vs-equity-partner",
+            "Post-merger integration": "/solicitor-guides/post-merger-integration",
+            "Professional indemnity tax treatment": "/solicitor-guides/professional-indemnity-tax-treatment",
+        },
+        "authority_links": [
+            ("SRA Accounts Rules 2019", "https://www.sra.org.uk/solicitors/standards-regulations/accounts-rules/"),
+            ("SRA Standards and Regulations", "https://www.sra.org.uk/solicitors/standards-regulations/"),
+            ("HMRC Business Income Manual (BIM)", "https://www.gov.uk/hmrc-internal-manuals/business-income-manual"),
+            ("HMRC Partnership Tax Manual", "https://www.gov.uk/hmrc-internal-manuals/partnership-manual"),
+            ("gov.uk MTD for ITSA sign-up checker", "https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax"),
+            ("Solicitors Regulation Authority — compliance", "https://www.sra.org.uk/solicitors/guidance/"),
+        ],
+    },
+    "agency": {
+        "content_dir": "digital-agency/web/content/blog",
+        "web_root": "digital-agency/web",
+        "domain": "https://www.agencyfounderfinance.co.uk",
+        "audience": "UK and UAE agency founders across marketing, creative, digital, advertising, PR, web design, SEO, recruitment and all agency types",
+        "lead_form_segments": [
+            "Marketing or digital agency",
+            "Creative or branding agency",
+            "PR or communications agency",
+            "Web design or development agency",
+            "Recruitment or talent agency",
+            "Other agency type",
+        ],
+        "pillar_pages": {
+            "Agency finance fundamentals": "/fundamentals/agency-finance-fundamentals",
+            "Agency tax compliance (complete)": "/fundamentals/agency-tax-compliance-complete-guide",
+            "Choosing an agency accountant": "/fundamentals/choosing-agency-accountant-pillar",
+            "Incorporating your agency": "/fundamentals/incorporating-your-agency-pillar",
+            "IR35 for agencies": "/fundamentals/ir35-for-agencies-pillar",
+            "Paying yourself as an agency founder": "/fundamentals/paying-yourself-agency-founder-pillar",
+            "Selling your agency": "/fundamentals/selling-your-agency-pillar",
+            "International agency operations": "/fundamentals/international-agency-operations-pillar",
+        },
+        "authority_links": [
+            ("HMRC Company Taxation Manual (CTM)", "https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual"),
+            ("HMRC off-payroll working (IR35) guidance", "https://www.gov.uk/guidance/understanding-off-payroll-working-ir35"),
+            ("HMRC Business Asset Disposal Relief", "https://www.gov.uk/business-asset-disposal-relief"),
+            ("gov.uk MTD for ITSA sign-up checker", "https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax"),
+            ("HMRC R&D tax relief (CIRD manual)", "https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual"),
+            ("Companies House — file your annual accounts", "https://www.gov.uk/file-your-company-annual-accounts"),
+        ],
+    },
+    "contractors-ir35": {
+        "content_dir": "contractors-ir35/web/content/blog",
+        "web_root": "contractors-ir35/web",
+        "domain": "https://www.contractortaxaccountants.co.uk",
+        "audience": "UK contractors, PSC directors, IR35-affected workers and umbrella vs limited company researchers",
+        "lead_form_segments": [
+            "PSC contractor (outside IR35)",
+            "PSC contractor (inside IR35)",
+            "Umbrella company worker",
+            "Considering going limited",
+            "Director reviewing IR35 position",
+        ],
+        "pillar_pages": {
+            "IR35 explained": "/resources/ir35",
+            "Pay planning for contractors": "/resources/pay-planning",
+            "Structure (Ltd vs umbrella)": "/resources/structure",
+            "What is IR35": "/blog/what-is-ir35",
+            "Limited company vs umbrella": "/blog/limited-company-vs-umbrella-contractor",
+            "Inside IR35 explained": "/blog/inside-ir35",
+            "Outside IR35 explained": "/blog/outside-ir35",
+        },
+        "authority_links": [
+            ("HMRC off-payroll working (IR35) guidance", "https://www.gov.uk/guidance/understanding-off-payroll-working-ir35"),
+            ("HMRC Employment Status Manual (ESM)", "https://www.gov.uk/hmrc-internal-manuals/employment-status-manual"),
+            ("HMRC CEST tool", "https://www.gov.uk/guidance/check-employment-status-for-tax"),
+            ("gov.uk MTD for ITSA sign-up checker", "https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax"),
+            ("HMRC Company Taxation Manual (CTM)", "https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual"),
+        ],
+    },
+    "construction-cis": {
+        "content_dir": "construction-cis/web/content/blog",
+        "web_root": "construction-cis/web",
+        "domain": "https://www.tradetaxspecialists.co.uk",
+        "audience": "UK CIS subcontractors, sole traders and limited company directors in construction trades, and main contractors managing CIS returns",
+        "lead_form_segments": [
+            "Sole trader subcontractor (CIS)",
+            "Limited company subcontractor",
+            "Main contractor (I pay subcontractors)",
+            "Just going self-employed in construction",
+        ],
+        "pillar_pages": {
+            "CIS tax refund guide": "/resources/cis-refund",
+            "CIS vs PAYE explained": "/resources/cis-vs-paye",
+            "Gross payment status": "/resources/gross-payment-status",
+            "What is CIS": "/blog/what-is-cis",
+            "How to claim a CIS tax refund": "/blog/cis-tax-refund-how-to-claim",
+            "CIS gross payment status guide": "/blog/cis-gross-payment-status-guide",
+        },
+        "authority_links": [
+            ("HMRC CIS — register as a contractor or subcontractor", "https://www.gov.uk/what-is-the-construction-industry-scheme"),
+            ("HMRC CIS technical guidance", "https://www.gov.uk/government/collections/construction-industry-scheme-cis-detailed-information"),
+            ("HMRC CIS deduction rates", "https://www.gov.uk/what-is-the-construction-industry-scheme/deductions-from-payments"),
+            ("gov.uk MTD for ITSA sign-up checker", "https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax"),
+            ("HMRC Business Income Manual (BIM)", "https://www.gov.uk/hmrc-internal-manuals/business-income-manual"),
         ],
     },
 }
@@ -322,7 +466,9 @@ def build_brief(site_key: str, slug: str) -> str:
     if not data:
         return f"# No gap report found for slug `{slug}` on site `{site_key}`\n"
 
-    rules = SITE_RULES.get(site_key, {})
+    rules = SITE_RULES.get(site_key)
+    if rules is None:
+        sys.exit(f"[brief_for_opus] Unknown site_key '{site_key}' — add it to SITE_RULES first.")
     page_url = data["our_page_url"]
     src_file = _find_source_file(rules.get("content_dir", ""), slug) or "(not found - search manually)"
     gsc = _fetch_gsc_data(site_key, page_url)
@@ -351,7 +497,10 @@ def build_brief(site_key: str, slug: str) -> str:
             comp_lines.append(f"- {u} _(not in page_content_map, fetch fresh)_")
     competitors_md = "\n".join(comp_lines) or "_(none)_"
 
+    generated_at = _dt.datetime.now().strftime("%Y-%m-%d %H:%M")
     return f"""# Page improvement brief: {slug}
+
+<!-- generated: {generated_at} | parser: post-2026-07-08 fix (H1/FAQ/@graph) -->
 
 > You are Claude Opus 4.7. You have full filesystem and Bash access to the Accounting project at `C:/Users/user/Documents/Accounting`. Your job is to rewrite a single blog post to be the best version that could rank above the competitors. Follow the workflow at the bottom of this brief. Verify everything before writing.
 
@@ -368,8 +517,6 @@ def build_brief(site_key: str, slug: str) -> str:
 - **Competitor avg section count**: {data['competitor_avg_section_count']}
 - **Current FAQ count (parsed, may be wrong)**: {data['our_faq_count']}
 - **Competitor avg FAQ count (parsed, may be wrong)**: {data['competitor_avg_faq_count']}
-
-> ⚠️ The FAQ counts above come from a parser that does not recognise `<dl>/<dt>/<dd>` patterns or all JSON-LD schema variations. **Read the source file frontmatter to see actual FAQ count, then plan to expand to 10-14.**
 
 ## GSC query data (last 90 days)
 
@@ -407,8 +554,6 @@ print(f'FAQ schema present: {{\"FAQPage\" in html}}')
 ## DeepSeek structural gaps
 
 {chr(10).join('- ' + s for s in (data.get('structural_gaps') or [])) or '_(none)_'}
-
-> ⚠️ Many "missing FAQ" or "missing schema" structural gaps are wrong — the parser had bugs (didn't recognise `<dl>/<dt>/<dd>`, didn't always pick up JSON-LD). Always verify against the source file and the live HTML.
 
 ## DeepSeek E-E-A-T gaps
 

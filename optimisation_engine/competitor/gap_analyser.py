@@ -20,6 +20,7 @@ if ROOT not in sys.path:
 
 from optimisation_engine.competitor._db import _arr, _esc, _jsonb, _sql, parse_llm_json
 from optimisation_engine.blog_generator.llm_providers import call_anthropic, LLMError
+from optimisation_engine.config import SONNET_MODEL
 
 
 # ---------------------------------------------------------------------------
@@ -75,7 +76,11 @@ def _get_our_content_map(page_url: str, query: str) -> dict | None:
 def _get_competitor_content_maps(serp_id: str) -> list[dict]:
     """Fetch page_content_map rows for top competitors of this SERP."""
     return _sql(f"""
-        SELECT pcm.*
+        SELECT cp.position AS serp_position,
+               pcm.page_url, pcm.title_tag, pcm.meta_description, pcm.h1_text,
+               pcm.word_count, pcm.sections, pcm.faqs, pcm.query_coverage,
+               pcm.has_lead_form, pcm.has_calculator, pcm.has_video,
+               pcm.has_accordion, pcm.has_testimonials, pcm.first_paragraph_text
         FROM competitor_pages cp
         JOIN page_content_map pcm ON pcm.id = cp.content_map_id
         WHERE cp.serp_id = {_esc(serp_id)}
@@ -191,6 +196,8 @@ FAQs: {c1_faqs}
 
 {competitor2_block}
 
+{competitor3_block}
+
 Identify the specific content gaps. Return ONLY valid JSON:
 {{
   "topic_gaps": [
@@ -262,15 +269,24 @@ def _run_llm_gap_analysis(our: dict, comps: list[dict], query: str, our_position
     """Run DeepSeek gap analysis. Returns parsed JSON or None."""
     c1 = comps[0] if comps else {}
     c2 = comps[1] if len(comps) > 1 else {}
+    c3 = comps[2] if len(comps) > 2 else {}
 
     c2_block = ""
     if c2:
-        c2_block = f"""COMPETITOR 2 (position {c2.get('http_status', '?')}):
+        c2_block = f"""COMPETITOR 2 (position {c2.get('serp_position', '?')}):
 Title: {c2.get('title_tag') or ''}
 Word count: {c2.get('word_count') or 0}
 H2 headings: {_build_headings_list(c2.get('sections'))}
 Sections: {_build_sections_summary(c2.get('sections'))}
 FAQs: {_build_faqs_summary(c2.get('faqs'))}"""
+
+    c3_block = ""
+    if c3:
+        c3_block = f"""COMPETITOR 3 (position {c3.get('serp_position', '?')}):
+Title: {c3.get('title_tag') or ''}
+Word count: {c3.get('word_count') or 0}
+H2 headings: {_build_headings_list(c3.get('sections'))}
+FAQs: {_build_faqs_summary(c3.get('faqs'))}"""
 
     prompt = GAP_PROMPT_TEMPLATE.format(
         query=query,
@@ -281,20 +297,21 @@ FAQs: {_build_faqs_summary(c2.get('faqs'))}"""
         our_headings=_build_headings_list(our.get("sections")),
         our_faqs=_build_faqs_summary(our.get("faqs")),
         our_para=our.get("first_paragraph_text") or "",
-        c1_pos=c1.get("http_status", 1),
+        c1_pos=c1.get("serp_position", "?"),
         c1_title=c1.get("title_tag") or "",
         c1_words=c1.get("word_count") or 0,
         c1_headings=_build_headings_list(c1.get("sections")),
         c1_sections=_build_sections_summary(c1.get("sections")),
         c1_faqs=_build_faqs_summary(c1.get("faqs")),
         competitor2_block=c2_block,
+        competitor3_block=c3_block,
     )
 
     try:
         result = call_anthropic(
             system_prompt=GAP_SYSTEM,
             user_prompt=prompt,
-            model="claude-sonnet-4-20250514",
+            model=SONNET_MODEL,
             max_tokens=3000,
             temperature=0.2,
         )

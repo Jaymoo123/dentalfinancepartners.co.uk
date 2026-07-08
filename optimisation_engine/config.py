@@ -157,3 +157,9 @@ def get_site(site_key: str) -> dict:
 
 # Sites in priority order from the brief
 PRIORITY_ORDER = ["agency", "property", "dentists", "generalist"]
+
+# ---------------------------------------------------------------------------
+# Model IDs (single source of truth — update here when a model is promoted)
+# ---------------------------------------------------------------------------
+SONNET_MODEL = "claude-sonnet-4-6"
+HAIKU_MODEL = "claude-haiku-4-5-20251001"

@@ -37,7 +37,64 @@
       "PowerShell(Remove-Item -Recurse -Force ~*)"
     ]
   },
+  "statusLine": {
+    "type": "command",
+    "command": "ccusage statusline --visual-burn-rate emoji-text"
+  },
+  "fileCheckpointingEnabled": true,
+  "showTurnDuration": true,
+  "totalTokensReminder": "countdown",
+  "autoCompactEnabled": true,
+  "workflowKeywordTriggerEnabled": false,
+  "skillOverrides": {
+    "vercel:ai-gateway": "user-invocable-only",
+    "vercel:ai-sdk": "user-invocable-only",
+    "vercel:auth": "user-invocable-only",
+    "vercel:chat-sdk": "off",
+    "vercel:microfrontends": "off",
+    "vercel:next-forge": "off",
+    "vercel:next-upgrade": "user-invocable-only",
+    "vercel:react-best-practices": "user-invocable-only",
+    "vercel:routing-middleware": "user-invocable-only",
+    "vercel:runtime-cache": "user-invocable-only",
+    "vercel:shadcn": "user-invocable-only",
+    "vercel:turbopack": "user-invocable-only",
+    "vercel:vercel-agent": "user-invocable-only",
+    "vercel:vercel-firewall": "user-invocable-only",
+    "vercel:vercel-sandbox": "off",
+    "vercel:workflow": "user-invocable-only",
+    "keybindings-help": "user-invocable-only",
+    "init": "user-invocable-only",
+    "security-review": "user-invocable-only"
+  },
   "enabledPlugins": {
-    "vercel@claude-plugins-official": true
+    "vercel@claude-plugins-official": true,
+    "ponytail@ponytail": true
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Skill",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "$input = $null; $inputLines = @(); while (($line = [Console]::In.ReadLine()) -ne $null) { $inputLines += $line }; $json = $inputLines -join ''; try { $obj = $json | ConvertFrom-Json; $skill = $obj.tool_input.skill; $ts = Get-Date -Format 'yyyy-MM-dd'; Add-Content -Path 'C:\\Users\\user\\.claude\\projects\\C--Users-user-Documents-Accounting\\skill-usage.log' -Value \"$ts $skill\" } catch {}",
+            "async": true
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "$f='C:\\Users\\user\\.claude\\projects\\C--Users-user-Documents-Accounting\\memory\\MEMORY.md'; if (Test-Path $f) { $s=(Get-Item $f).Length; if ($s -gt 20000) { Write-Output \"{`\"systemMessage`\":`\"MEMORY.md is $s bytes — over 20KB limit. Archive completed entries before starting work.`\"}\" } }"
+          }
+        ]
+      }
+    ]
   }
 }

@@ -71,7 +71,7 @@ SITE_CONFIG: dict = {
     "topic_order": "priority.asc,keyword_difficulty.asc.nullslast,created_at.asc",  # was "difficulty"
 
     "llm_provider": "anthropic",
-    "llm_model": "claude-sonnet-4-20250514",
+    "llm_model": "claude-sonnet-4-6",
     "max_tokens": 6500,
     "temperature": 0.3,
     "verify_with_haiku": True,

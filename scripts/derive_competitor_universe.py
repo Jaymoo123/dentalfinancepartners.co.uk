@@ -83,6 +83,15 @@ EXCLUDE_DOMAINS = {
     "rcseng.ac.uk", "gdpuk.com", "dentalprotection.org", "the-dentist.co.uk",
     "quora.com", "reddit.com", "mumsnet.com", "moneyhelper.org.uk",
     "litrg.org.uk", "tax.org.uk", "icaew.com", "accaglobal.com",
+    # Own estate — must never appear as competitors
+    "propertytaxpartners.co.uk",
+    "hollowaydavies.co.uk",
+    "dentalfinancepartners.co.uk",
+    "medicalaccounts.co.uk",
+    "accountsforlawyers.co.uk",
+    "agencyfounderfinance.co.uk",
+    "contractortaxaccountants.co.uk",
+    "tradetaxspecialists.co.uk",
 }
 
 

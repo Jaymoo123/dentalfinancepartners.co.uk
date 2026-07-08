@@ -18,6 +18,7 @@ if ROOT not in sys.path:
 
 from optimisation_engine.competitor._db import _esc, _sql
 from optimisation_engine.blog_generator.llm_providers import call_anthropic, LLMError
+from optimisation_engine.config import SONNET_MODEL
 
 
 # ---------------------------------------------------------------------------
@@ -241,7 +242,7 @@ def _generate_brief(report: dict, our_map: dict | None) -> str | None:
         result = call_anthropic(
             system_prompt=BRIEF_SYSTEM,
             user_prompt=prompt,
-            model="claude-sonnet-4-20250514",
+            model=SONNET_MODEL,
             max_tokens=3000,
             temperature=0.3,
         )
