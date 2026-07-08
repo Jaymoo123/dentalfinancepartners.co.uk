@@ -3987,3 +3987,19 @@ Verified by the manager at legislation.gov.uk + the GOV.UK measure page on 2026-
 - **60-day return does NOT apply to overseas property** — Sch 2 FA 2019 covers UK land only. A UK resident's foreign disposal is reported on SA108 + foreign pages at Self Assessment.
 - Foreign tax credit relief: TIOPA 2010 (treaty or unilateral), capped at the UK CGT attributable to the same gain.
 - Sources: CG78300-78310; Sch 2 FA 2019; TIOPA 2010 Part 2.
+
+
+## 5.A BADR trading test post-FHL abolition (serviced accommodation edge) — Wave 10 mini-lock (added 2026-07-08, manager source-verified)
+
+- BADR requires disposal of a "business" = trade, profession or vocation conducted commercially with a view to profit (TCGA 1992 s.169S); company-share routes use the s.165A "trading company" definition via Sch 7ZA. Plain residential letting is NOT a trade.
+- **Post-FHL (abolished 6 Apr 2025, FA 2025 Sch 5) there is NO statutory deeming** treating holiday lets as trades for BADR. Serviced accommodation qualifies only if the services are extensive enough to constitute a genuine trade on first principles (badges of trade, BIM20050+); fact-specific, no HMRC bright-line post-abolition guidance exists — do not invent one.
+- IHT BPR cases (Pawson [2013] UKUT 050 (TCC), Ross) are ANALOGOUS ONLY — different statutory test (IHTA 1984 s.105(3) "mainly investments"); the BADR trade test is stricter. Never cite them as BADR authority without the distinction.
+- Rate path (confirms §5): 10%→14% (6 Apr 2025)→18% (6 Apr 2026), FA 2025 s.8 amending TCGA 1992 s.169N(3); £1m lifetime limit (s.169N(4)).
+
+## 40. Pension lump-sum allowances + SIPP/SSAS property rules — Wave 10 lock (added 2026-07-08, manager source-verified)
+
+- **Lifetime allowance abolished** from 6 April 2024 (F(No.2)A 2023 ss.18-19; consequential FA 2024 s.14 + Sch 9).
+- **Lump Sum Allowance: £268,275** (FA 2004 s.637P, inserted by FA 2024 Sch 9). **Lump Sum and Death Benefit Allowance: £1,073,100** (s.637R). Availability mechanics: ss.637Q/637S.
+- **SIPP borrowing cap:** FA 2004 s.182 formula (APB + PB) / VA ≤ 0.5 — total borrowing max 50% of net scheme assets.
+- **Residential property is "taxable property"** for investment-regulated schemes (FA 2004 Sch 29A); acquisition triggers unauthorised-payment charges under FA 2004 ss.208-209 (55% member charge + 15% scheme sanction surcharge — effective up to ~70%). Commercial property is permitted; connected-party purchases must be at market value; rent paid to the scheme must be arm's length.
+- Annual allowance £60,000 remains per §8.
