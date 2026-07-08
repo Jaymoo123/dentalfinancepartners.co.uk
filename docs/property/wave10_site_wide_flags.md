@@ -35,7 +35,7 @@ Flags never block. Sessions continue work after flagging.
 
 **Blocking:** Does not block A11 Stage 2; Stage 2 writer should reference "mortgage assumption = SDLT on debt assumed under FA 2003 Sch 4 para 8" with a note to verify verbatim wording at legislation.gov.uk.
 
-**Status:** OPEN
+**Status:** CLOSED (Stage 1b 2026-07-08)
 
 ---
 
@@ -51,7 +51,7 @@ Flags never block. Sessions continue work after flagging.
 
 **Blocking:** Does not block A8 Stage 2; Stage 2 writer to verify s.62(1) verbatim at legislation.gov.uk.
 
-**Status:** OPEN
+**Status:** CLOSED (Stage 1b 2026-07-08)
 
 ---
 
@@ -67,7 +67,7 @@ Flags never block. Sessions continue work after flagging.
 
 **Blocking:** Does not block A9 Stage 2; Stage 2 writer to WebFetch s.252 TCGA 1992 and TIOPA 2010 s.18 verbatim.
 
-**Status:** OPEN
+**Status:** CLOSED (Stage 1b 2026-07-08)
 
 ---
 
@@ -83,7 +83,7 @@ Flags never block. Sessions continue work after flagging.
 
 **Blocking:** Does not block A2 seed or Stage 2; Stage 2 writer should use cautious framing pending this lock.
 
-**Status:** OPEN
+**Status:** CLOSED (Stage 1b 2026-07-08)
 
 ---
 
@@ -99,7 +99,7 @@ Flags never block. Sessions continue work after flagging.
 
 **Blocking:** Does not block A12 Stage 2; Stage 2 writer should note "in-specie contributions are subject to the annual allowance of £60,000 (§8); the FA 2024 lump-sum allowances govern tax-free cash and death-benefit mechanics, not the contribution itself" and flag this for HP lock.
 
-**Status:** OPEN
+**Status:** CLOSED (Stage 1b 2026-07-08)
 
 ---
 
