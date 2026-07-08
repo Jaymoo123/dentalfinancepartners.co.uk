@@ -1,4 +1,4 @@
-# Wave 10 site-wide flags
+﻿# Wave 10 site-wide flags
 
 **Created:** 2026-07-08. **Status:** Pre-launch (no flags yet).
 
@@ -119,7 +119,7 @@ Flags never block. Sessions continue work after flagging.
 **Issue:** https://www.gov.uk/guidance/business-asset-disposal-relief returned HTTP 404 at Stage 2. URL may have moved. Writer must WebFetch at write time to locate current HMRC BADR guidance and confirm 18% rate from 6 April 2026 matches HP §5.A (FA 2025 s.8).
 **Required action:** Writer locates current HMRC BADR guidance URL and verifies rate figure. If HMRC publishes a rate inconsistent with HP §5.A, raise a fresh HP drift flag immediately.
 **Blocking:** No. HP §5.A (manager-sourced from FA 2025 s.8 legislation.gov.uk) is the operative lock.
-**Status:** open
+**Status:** open -- both gov.uk URLs confirmed 404 again at write time 2026-07-09; rate written as 18% from 6 April 2026 per HP §5.A
 
 ---
 
@@ -224,3 +224,108 @@ No §-ref in house_positions covers the £1,000 property income allowance (ITTOI
 
 ---
 
+
+---
+
+## F-111 — CROSS_BUCKET — portfolio-landlord-tax-planning-strategy-guide does not yet exist in worktree
+
+**Raised by:** RUN-phase writer, A7, 2026-07-09.
+
+**Issue:** A7 (`starting-property-business-sole-trader-vs-ltd-vs-partnership`) links into `/blog/portfolio-management/portfolio-landlord-tax-planning-strategy-guide` (wave-internal pillar, A1). The file is not present in the worktree branch. The link is included in the page body (scale decision table, 10+ properties row). If A1 is not deployed before A7, this link will 404.
+
+**Required action (manager):** Confirm A1 is committed in the same worktree branch before wave merge, or remove the link at WRAP if A1 is deferred. Back-patch once A1 is live.
+
+**Blocking:** No. Link included as forward-reference per brief instruction.
+
+**Status:** open
+
+---
+
+## F-112 — CROSS_BUCKET — profit-extraction slug mismatch: brief vs live page
+
+**Raised by:** RUN-phase writer, A7, 2026-07-09.
+
+**Issue:** The A7 brief references cross-link target `profit-extraction-buy-to-let-limited-company-salary-dividends`. The live page in the worktree is `property-company-profit-extraction-salary-vs-dividends` (a different slug). A7 does not link to the profit-extraction page directly in body (deferred to brief's optional cross-link). The link was omitted from A7 body to avoid a dead slug. If A6 (brief slug `profit-extraction-buy-to-let-limited-company-salary-dividends`) is published at that slug, back-patch the A7 body to add it.
+
+**Required action (manager):** Confirm the slug for the A6 profit-extraction page once committed. Back-patch A7 body at WRAP to add the cross-link once confirmed.
+
+**Blocking:** No. A7 page cross-links to BTL limited company complete guide instead, which is the higher-authority target.
+
+**Status:** open
+
+---
+
+## F-113 — BRIEF_NOTE — A7 body word count exceeds 3,500 target (5,478 words)
+
+**Raised by:** RUN-phase writer, A7, 2026-07-09.
+
+**Issue:** The brief's format spec requests 10 H2 sections, worked comparison tables at two rent levels, a partnership worked example, an SDLT incorporation worked example, 12-13 FAQ answers in frontmatter AND 13 inline FAQ H3s in body. Executing all elements produces approximately 5,478 words. The stated 2,800-3,500 target cannot be met while including all format-spec elements. All content is substantive and directly instructed by the brief; no padding present.
+
+**Required action (manager):** Accept current word count, or identify specific sections to trim at WRAP review.
+
+**Blocking:** No. Content is complete and accurate.
+
+**Status:** open
+
+
+## F-81 -- CROSS_BUCKET -- A6 and A10 internal link targets not yet written at A1 RUN time
+
+**Raised by:** RUN-phase writer A1, 2026-07-09.
+
+**Issue:** A1 (portfolio-landlord-tax-planning-strategy-guide) links out to profit-extraction-buy-to-let-limited-company-salary-dividends (A6) and amily-investment-company-mechanics-share-classes-property (A10) using nested canonical paths. At the time A1 was committed neither file existed in the worktree (both A6 and A10 are other parallel wave-10 agents). The links are pre-written correctly and will resolve once A6 and A10 are merged.
+
+**Required action:** Verify at WRAP merge that both A6 and A10 slugs match exactly: profit-extraction-buy-to-let-limited-company-salary-dividends and amily-investment-company-mechanics-share-classes-property. Correct A1 body links if slugs differ.
+
+**Blocking:** No. Links will resolve post-merge.
+
+---
+
+## F-82 -- BRIEF_DRIFT -- SDLT internal link target slug mismatch
+
+**Raised by:** RUN-phase writer A1, 2026-07-09.
+
+**Issue:** The A1 brief specified internal link to -complete-guide-to-stamp-duty-land-tax-uk for the SDLT-on-transfer section. That file does not exist in the blog corpus. A1 used incorporating-property-portfolio-uk-2026 (confirmed live) as the closest alternative covering SDLT on portfolio incorporation. The brief target slug should be corrected or a dedicated SDLT guide page added to the pipeline.
+
+**Required action (manager):** Confirm whether -complete-guide-to-stamp-duty-land-tax-uk is planned as a future pick or whether incorporating-property-portfolio-uk-2026 is the correct standing target.
+
+**Blocking:** No.
+
+---
+
+## F-83 -- BRIEF_DRIFT -- ATED 2026/27 indicative figures in brief were pre-uplift
+
+**Raised by:** RUN-phase writer A1, 2026-07-09.
+
+**Issue:** The Stage 2 brief for A1 provided indicative ATED 2026/27 figures in the worked-example table (e.g. £4,400 for the £500k-£1m band). Writer verified current-year figures at gov.uk per brief instruction. Verified 2026/27 figures (1 April 2026 to 31 March 2027) are higher across all bands: £4,600 / £9,450 / £32,200 / £75,450 / £151,450 / £303,450. Page uses verified figures throughout. Brief indicatives were approximately 3-5% lower than the enacted 2026/27 amounts (CPI uplift).
+
+**Required action:** No action needed. Page is correct. Brief indicative figures can be updated for reference at stage-2 refresh if needed.
+
+**Blocking:** No.
+
+---
+---
+
+## F-91 — AUTHORITY_GAP — HMRC IHT manual lag confirmed at write time (cross-ref F-61)
+
+**Raised by:** RUN-phase writer, A3, 2026-07-09.
+**Issue:** Confirmed at write time that IHTM13000 series still uses pre-FA-2025 domicile/deemed-domicile framing. Page cites legislation.gov.uk ss.6, 6A, 6B, Sch A1, s.18, s.48ZA, s.267ZC and FA 2025 s.44+Sch 13 directly. No IHTM pages cited as authority for LTR test. Cross-ref F-61 (open).
+**Blocking:** No.
+**Status:** open
+
+---
+
+## F-92 — INTERNAL_LINK — iht-non-resident-uk-property-april-2025-residence-test should back-link to A3
+
+**Raised by:** RUN-phase writer, A3, 2026-07-09.
+**Issue:** The existing page `iht-non-resident-uk-property-april-2025-residence-test` covers the LTR regime generally. It does not link to the new A3 page which is the property-investor-specific companion. A bi-directional link set is in place from A3's body to the existing page; the back-link from the existing page to A3 needs a back-patch at wave-close.
+**Required action:** Back-patch `iht-non-resident-uk-property-april-2025-residence-test` at wave-close step 4 with a link to A3.
+**Blocking:** No.
+**Status:** open
+
+---
+
+## F-141 — CANNIBAL — A6 profit-extraction page PULLED at WRAP cannib gate (conductor ruling 2026-07-09)
+
+A6 (profit-extraction-buy-to-let-limited-company-salary-dividends) h2 set = union of two LIVE siblings: property-company-profit-extraction-salary-vs-dividends (routes, DLA-vs-dividend, pension, spouse) + salary-vs-dividends-property-spv-2026-27-marginal-rate-analysis (worked examples by profit band £30k-£125k). No surviving distinct angle. Page held on branch worktree-agent-aadc976bff0a3d46e, NOT merged. Topic rejected in blog_topics. Root cause: discovery collision-verify compared only vs buy-to-let-limited-company-complete-guide-uk; add sibling-sweep to next-cycle verify. A1/A7 links to the A6 slug repointed at WRAP to the live extraction page.
+
+**Status:** CLOSED (pull executed)
