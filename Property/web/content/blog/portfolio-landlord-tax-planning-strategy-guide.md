@@ -5,6 +5,9 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/port
 date: "2026-07-09"
 generator: opus-4.8/netnew-wave
 author: "Property Tax Partners Editorial Team"
+reviewedBy: "Property Tax Partners Editorial Team"
+reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
+reviewedAt: "2026-07-09"
 category: "Portfolio Management"
 metaTitle: "Portfolio Landlord Tax Planning: The Strategy Guide"
 metaDescription: "Entity choice, S24 break-even, ATED, loss relief, profit extraction and succession planning for UK portfolio landlords in one strategic framework."
