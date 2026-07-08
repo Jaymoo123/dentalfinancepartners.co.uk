@@ -57,26 +57,26 @@ faqs:
 <tbody>
 <tr>
 <td>Gift to spouse or civil partner (living together)</td>
-<td>No gain / no loss (s.58) — gain deferred into donee's base cost</td>
+<td>No gain / no loss (s.58); gain deferred into donee's base cost</td>
 <td>Exempt between spouses</td>
 <td>Exempt if no chargeable consideration</td>
 </tr>
 <tr>
-<td>Gift to adult child or sibling — no mortgage</td>
+<td>Gift to adult child or sibling (no mortgage)</td>
 <td>CGT at 18% / 24% on MV gain (s.17)</td>
-<td>PET — 7-year clock starts</td>
+<td>PET; 7-year clock starts</td>
 <td>Nil (zero consideration)</td>
 </tr>
 <tr>
-<td>Gift to adult child — mortgage assumed by donee</td>
+<td>Gift to adult child (mortgage assumed by donee)</td>
 <td>CGT at 18% / 24% on MV gain</td>
-<td>PET — 7-year clock starts</td>
+<td>PET; 7-year clock starts</td>
 <td>SDLT on assumed mortgage (Sch 4 para 8)</td>
 </tr>
 <tr>
 <td>Gift to discretionary trust</td>
 <td>CGT at 18% / 24%, or s.260 hold-over if a CLT</td>
-<td>CLT — 20% entry charge on excess above NRB</td>
+<td>CLT; 20% entry charge on excess above NRB</td>
 <td>SDLT if mortgage assumed</td>
 </tr>
 </tbody>
