@@ -1,54 +1,62 @@
 ---
-title: "How Do You Correct a PAYE Overpayment From a Previous Tax Year?"
-slug: "correct-paye-overpayment-hmrc"
-canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/correct-paye-overpayment-hmrc"
-date: "2026-05-17"
+title: How Do You Correct a PAYE Overpayment From a Previous Tax Year?
+slug: correct-paye-overpayment-hmrc
+canonical: https://www.hollowaydavies.co.uk/blog/payroll-and-paye/correct-paye-overpayment-hmrc
+date: '2026-05-17'
 generator: unverified/claude-era
-author: "Holloway Davies Editorial Team"
-category: "Payroll and PAYE"
-metaTitle: "Correct PAYE Overpayment HMRC: Step by Step Guide"
-metaDescription: "Overpaid PAYE to HMRC? We explain the correction process for 2025/26. How to use EPS, RTI, or direct repayment claims to fix payroll errors."
-altText: "UK accountant reviewing payroll records and PAYE overpayment correction paperwork on a desk in a modern office"
-image: "/blog/correct-paye-overpayment-hmrc.jpg"
+author: Holloway Davies Editorial Team
+category: Payroll and PAYE
+metaTitle: Correct a PAYE Overpayment From a Previous Tax Year
+metaDescription: Get overpaid PAYE back from HMRC before the window shuts. File an EPS correction for closed years, and a direct repayment lands in 2 to 4 weeks.
+altText: UK accountant reviewing payroll records and PAYE overpayment correction paperwork on a desk in a modern office
+image: /blog/correct-paye-overpayment-hmrc.jpg
 imageCredit:
-  photographer: "Tara Winstead"
-  photographerUrl: "https://www.pexels.com/@tara-winstead"
-  sourceUrl: "https://www.pexels.com/photo/an-illustration-of-tax-7111522/"
-  source: "Pexels"
-h1: "How to Correct a PAYE Overpayment From a Previous Tax Year"
-summary: "A clear, practical guide for UK employers on correcting PAYE overpayments from previous tax years. Covers the EPS correction process, RTI reporting rules, and when to claim a direct repayment from HMRC."
-schema: ""
+  photographer: Tara Winstead
+  photographerUrl: https://www.pexels.com/@tara-winstead
+  sourceUrl: https://www.pexels.com/photo/an-illustration-of-tax-7111522/
+  source: Pexels
+h1: How to Correct a PAYE Overpayment From a Previous Tax Year
+summary: A clear, practical guide for UK employers on correcting PAYE overpayments from previous tax years. Covers the EPS correction process, RTI reporting rules, and when to claim a direct repayment from HMRC.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How Do You Correct a PAYE Overpayment From a Previous Tax Year?","description":"Get overpaid PAYE back from HMRC before the window shuts. File an EPS correction for closed years, and a direct repayment lands in 2 to 4 weeks.","url":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/correct-paye-overpayment-hmrc","datePublished":"2026-05-17","dateModified":"2026-07-08","author":{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited
+  company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/correct-paye-overpayment-hmrc"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/correct-paye-overpayment-hmrc.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Payroll and PAYE","item":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye"},{"@type":"ListItem","position":3,"name":"How Do You Correct a PAYE Overpayment From a Previous Tax Year?","item":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/correct-paye-overpayment-hmrc"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I correct a PAYE overpayment from 2020/21?","acceptedAnswer":{"@type":"Answer","text":"Yes, but only if you act before 5 April 2025. HMRC allows corrections up to 4 years from the end of the tax year the overpayment occurred in. For 2020/21, the deadline is 5 April 2025. After that date, the overpayment becomes permanent and you cannot reclaim it. Check your payroll records now if you suspect an error from that year."}},{"@type":"Question","name":"What if the employee has left the company?","acceptedAnswer":{"@type":"Answer","text":"You can still correct the overpayment. Submit an EPS with the earlier year adjustment for that employee. HMRC will adjust your account. You do not need the employee''s cooperation to reclaim the PAYE from HMRC. However, if you over-deducted PAYE from the employee, you should repay them directly if you can. If you cannot, HMRC will refund the employee through their tax code or self assessment, but it may take time."}},{"@type":"Question","name":"Do I need to correct employer National Insurance too?","acceptedAnswer":{"@type":"Answer","text":"Yes,
+  if you overpaid employer Class 1 National Insurance as a result of the error. Employer NI is calculated on the same earnings that PAYE is deducted from. If the earnings were wrong, both PAYE and NI are likely wrong. Include the overpaid NI in your EPS correction or direct repayment claim. Failing to claim back overpaid employer NI is a common mistake that costs businesses money."}},{"@type":"Question","name":"Will HMRC penalise me for correcting a PAYE overpayment?","acceptedAnswer":{"@type":"Answer","text":"No, not if the error was genuine and you correct it promptly. HMRC distinguishes between honest mistakes and deliberate underpayment. Correcting an overpayment shows you are managing your payroll properly. However, if the error was caused by gross negligence or you delayed correcting it for years, HMRC could ask questions. In practice, for small businesses, penalties for correcting overpayments are extremely rare."}}]}]}'
 faqs:
-  - question: "Can I correct a PAYE overpayment from 2020/21?"
-    answer: "Yes, but only if you act before 5 April 2025. HMRC allows corrections up to 4 years from the end of the tax year the overpayment occurred in. For 2020/21, the deadline is 5 April 2025. After that date, the overpayment becomes permanent and you cannot reclaim it. Check your payroll records now if you suspect an error from that year."
-  - question: "What if the employee has left the company?"
-    answer: "You can still correct the overpayment. Submit an EPS with the earlier year adjustment for that employee. HMRC will adjust your account. You do not need the employee's cooperation to reclaim the PAYE from HMRC. However, if you over-deducted PAYE from the employee, you should repay them directly if you can. If you cannot, HMRC will refund the employee through their tax code or self assessment, but it may take time."
-  - question: "Do I need to correct employer National Insurance too?"
-    answer: "Yes, if you overpaid employer Class 1 National Insurance as a result of the error. Employer NI is calculated on the same earnings that PAYE is deducted from. If the earnings were wrong, both PAYE and NI are likely wrong. Include the overpaid NI in your EPS correction or direct repayment claim. Failing to claim back overpaid employer NI is a common mistake that costs businesses money."
-  - question: "Will HMRC penalise me for correcting a PAYE overpayment?"
-    answer: "No, not if the error was genuine and you correct it promptly. HMRC distinguishes between honest mistakes and deliberate underpayment. Correcting an overpayment shows you are managing your payroll properly. However, if the error was caused by gross negligence or you delayed correcting it for years, HMRC could ask questions. In practice, for small businesses, penalties for correcting overpayments are extremely rare."
+- question: Can I correct a PAYE overpayment from 2020/21?
+  answer: Yes, but only if you act before 5 April 2025. HMRC allows corrections up to 4 years from the end of the tax year the overpayment occurred in. For 2020/21, the deadline is 5 April 2025. After that date, the overpayment becomes permanent and you cannot reclaim it. Check your payroll records now if you suspect an error from that year.
+- question: What if the employee has left the company?
+  answer: You can still correct the overpayment. Submit an EPS with the earlier year adjustment for that employee. HMRC will adjust your account. You do not need the employee's cooperation to reclaim the PAYE from HMRC. However, if you over-deducted PAYE from the employee, you should repay them directly if you can. If you cannot, HMRC will refund the employee through their tax code or self assessment, but it may take time.
+- question: Do I need to correct employer National Insurance too?
+  answer: Yes, if you overpaid employer Class 1 National Insurance as a result of the error. Employer NI is calculated on the same earnings that PAYE is deducted from. If the earnings were wrong, both PAYE and NI are likely wrong. Include the overpaid NI in your EPS correction or direct repayment claim. Failing to claim back overpaid employer NI is a common mistake that costs businesses money.
+- question: Will HMRC penalise me for correcting a PAYE overpayment?
+  answer: No, not if the error was genuine and you correct it promptly. HMRC distinguishes between honest mistakes and deliberate underpayment. Correcting an overpayment shows you are managing your payroll properly. However, if the error was caused by gross negligence or you delayed correcting it for years, HMRC could ask questions. In practice, for small businesses, penalties for correcting overpayments are extremely rare.
 keyTakeaways:
-  - "HMRC allows PAYE overpayments to be corrected up to 4 years from the end of the tax year in which the error occurred."
-  - "For a closed tax year, corrections must be submitted via an Employer Payment Summary (EPS); submitting a corrected FPS for a closed year will be rejected by HMRC."
-  - "Include overpaid employer NI in the correction: 15% above a £5,000 threshold for errors from 6 April 2025 onward, or 13.8% above £9,100 for years up to 2024/25."
-  - "Employers whose PAYE scheme is closed, or who need the cash back quickly, can claim a direct repayment from HMRC, which typically takes 2 to 4 weeks."
-  - "HMRC will not penalise a genuine payroll error corrected promptly, as it distinguishes honest mistakes from deliberate misreporting."
-  - "For 2024/25, the correction deadline is 5 April 2029; for 2023/24, it is 5 April 2028."
+- HMRC allows PAYE overpayments to be corrected up to 4 years from the end of the tax year in which the error occurred.
+- For a closed tax year, corrections must be submitted via an Employer Payment Summary (EPS); submitting a corrected FPS for a closed year will be rejected by HMRC.
+- 'Include overpaid employer NI in the correction: 15% above a £5,000 threshold for errors from 6 April 2025 onward, or 13.8% above £9,100 for years up to 2024/25.'
+- Employers whose PAYE scheme is closed, or who need the cash back quickly, can claim a direct repayment from HMRC, which typically takes 2 to 4 weeks.
+- HMRC will not penalise a genuine payroll error corrected promptly, as it distinguishes honest mistakes from deliberate misreporting.
+- For 2024/25, the correction deadline is 5 April 2029; for 2023/24, it is 5 April 2028.
 howToSteps:
-  - name: "Calculate the exact overpaid amount"
-    text: "Work out what you actually paid versus what you should have paid, and include overpaid employer National Insurance if the underlying earnings figure was wrong."
-  - name: "Identify the employee"
-    text: "Gather the employee's full name, National Insurance number, and the tax year in which the overpayment occurred."
-  - name: "Submit an EPS for the current tax year"
-    text: "Report the overpayment on the EPS as a recovery of amounts previously paid or an earlier year adjustment. Most payroll software, including Xero, FreeAgent, and Sage 50, handles this automatically."
-  - name: "HMRC adjusts your account"
-    text: "Once HMRC processes the EPS, they reduce your current year PAYE liability by the overpaid amount, so you effectively recover the overpayment against future PAYE bills."
-  - name: "Repay the employee if they also overpaid"
-    text: "If you over-deducted PAYE from the employee's wages, repay them directly within the current tax year, then reclaim the overpaid PAYE from HMRC via the EPS or a direct claim."
-  - name: "Keep copies of all records"
-    text: "Retain the original FPS, the EPS submission, and any correspondence, as HMRC can request evidence of both the error and the correction."
+- name: Calculate the exact overpaid amount
+  text: Work out what you actually paid versus what you should have paid, and include overpaid employer National Insurance if the underlying earnings figure was wrong.
+- name: Identify the employee
+  text: Gather the employee's full name, National Insurance number, and the tax year in which the overpayment occurred.
+- name: Submit an EPS for the current tax year
+  text: Report the overpayment on the EPS as a recovery of amounts previously paid or an earlier year adjustment. Most payroll software, including Xero, FreeAgent, and Sage 50, handles this automatically.
+- name: HMRC adjusts your account
+  text: Once HMRC processes the EPS, they reduce your current year PAYE liability by the overpaid amount, so you effectively recover the overpayment against future PAYE bills.
+- name: Repay the employee if they also overpaid
+  text: If you over-deducted PAYE from the employee's wages, repay them directly within the current tax year, then reclaim the overpaid PAYE from HMRC via the EPS or a direct claim.
+- name: Keep copies of all records
+  text: Retain the original FPS, the EPS submission, and any correspondence, as HMRC can request evidence of both the error and the correction.
+metaTitle_prev: 'Correct PAYE Overpayment HMRC: Step by Step Guide'
+metaDescription_prev: Overpaid PAYE to HMRC? We explain the correction process for 2025/26. How to use EPS, RTI, or direct repayment claims to fix payroll errors.
+dateModified: '2026-07-08'
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
+reviewedAt: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>You Discovered a PAYE Overpayment. Now What?</h2>
 
 <p>You processed payroll for the 2024/25 tax year. You submitted the Full Payment Submission (FPS) to HMRC. Then you spotted it: you overpaid PAYE on one of your employees. Maybe you applied the wrong tax code. Maybe you miscalculated their earnings. Maybe a new starter gave you the wrong starter declaration.</p>

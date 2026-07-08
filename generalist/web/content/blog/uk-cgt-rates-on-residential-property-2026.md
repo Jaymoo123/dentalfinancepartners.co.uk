@@ -1,41 +1,49 @@
 ---
-title: "What Are the UK CGT Rates on Residential Property in 2026?"
-slug: "uk-cgt-rates-on-residential-property-2026"
-canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-cgt-rates-on-residential-property-2026"
-date: "2026-05-17"
+title: What Are the UK CGT Rates on Residential Property in 2026?
+slug: uk-cgt-rates-on-residential-property-2026
+canonical: https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-cgt-rates-on-residential-property-2026
+date: '2026-05-17'
 generator: unverified/claude-era
-author: "Holloway Davies Editorial Team"
-category: "Exit and Capital Gains"
-metaTitle: "UK CGT Rates on Residential Property 2026: What You Pay Now"
-metaDescription: "UK CGT rates on residential property in 2026 are 18% (basic rate) and 24% (higher rate). Here is how they apply to your sale, the 60-day reporting rule"
-altText: "UK accountant reviewing CGT property sale documents with calculator on desk in Manchester office"
-image: "/blog/uk-cgt-rates-on-residential-property-2026.jpg"
+author: Holloway Davies Editorial Team
+category: Exit and Capital Gains
+metaTitle: UK CGT Rates on Residential Property 2026/27 Explained
+metaDescription: Know exactly what you owe before you sell a second home or buy-to-let. Report and pay within 60 days of completion, and get the rate right for 2026/27.
+altText: UK accountant reviewing CGT property sale documents with calculator on desk in Manchester office
+image: /blog/uk-cgt-rates-on-residential-property-2026.jpg
 imageCredit:
-  photographer: "Alaur Rahman"
-  photographerUrl: "https://www.pexels.com/@pabda"
-  sourceUrl: "https://www.pexels.com/photo/round-coins-on-paper-bills-5277952/"
-  source: "Pexels"
-h1: "UK CGT Rates on Residential Property 2026: The Full Picture"
-summary: "UK CGT rates on residential property in 2026 are 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply above your annual exempt amount (£3,000). You must report and pay within 60 days of completion. Principal Private Residence relief still exempts your main home."
-schema: ""
+  photographer: Alaur Rahman
+  photographerUrl: https://www.pexels.com/@pabda
+  sourceUrl: https://www.pexels.com/photo/round-coins-on-paper-bills-5277952/
+  source: Pexels
+h1: 'UK CGT Rates on Residential Property 2026: The Full Picture'
+summary: UK CGT rates on residential property in 2026 are 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply above your annual exempt amount (£3,000). You must report and pay within 60 days of completion. Principal Private Residence relief still exempts your main home.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"What Are the UK CGT Rates on Residential Property in 2026?","description":"Know exactly what you owe before you sell a second home or buy-to-let. Report and pay within 60 days of completion, and get the rate right for 2026/27.","url":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-cgt-rates-on-residential-property-2026","datePublished":"2026-05-17","dateModified":"2026-07-08","author":{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK
+  limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-cgt-rates-on-residential-property-2026"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/uk-cgt-rates-on-residential-property-2026.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Exit and Capital Gains","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains"},{"@type":"ListItem","position":3,"name":"What Are the UK CGT Rates on Residential Property in 2026?","item":"https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/uk-cgt-rates-on-residential-property-2026"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the CGT rate on residential property in 2026?","acceptedAnswer":{"@type":"Answer","text":"The UK CGT rates on residential property 2026 are 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply to disposals of UK residential property that are not your main home. The rates have been in place since 30 October 2024 and remain for the 2025/26 and 2026/27 tax years unless changed in a future Budget."}},{"@type":"Question","name":"Do I have to pay CGT within 60 days of selling a property?","acceptedAnswer":{"@type":"Answer","text":"Yes. For UK residential property disposals, you must report the gain and pay the tax within 60 calendar days of completion. You use the HMRC online service for the 60-day CGT property return. If you miss the deadline, HMRC charges interest and may issue penalties. You still include the gain on your annual self assessment, but the tax paid within 60 days is credited against your final liability."}},{"@type":"Question","name":"Does
+  Principal Private Residence relief exempt my main home from CGT?","acceptedAnswer":{"@type":"Answer","text":"Yes, if the property has been your only or main home for the entire period of ownership, the gain is fully exempt. If you lived in it for part of the ownership and rented it out for another part, you get partial relief. The final 9 months of ownership are always exempt regardless of where you live. Lettings relief may also apply if you rented out the property while living in it at the same time, capped at £40,000 per owner."}},{"@type":"Question","name":"Can I use the annual exempt amount against property gains?","acceptedAnswer":{"@type":"Answer","text":"Yes. The annual exempt amount for 2025/26 is £3,000. You deduct it from your total chargeable gains for the tax year, including property gains. If you are married or in a civil partnership, you each have your own £3,000 allowance. You can transfer assets between you without triggering CGT to use both allowances before a sale."}}]}]}'
 faqs:
-  - question: "What is the CGT rate on residential property in 2026?"
-    answer: "The UK CGT rates on residential property 2026 are 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply to disposals of UK residential property that are not your main home. The rates have been in place since 30 October 2024 and remain for the 2025/26 and 2026/27 tax years unless changed in a future Budget."
-  - question: "Do I have to pay CGT within 60 days of selling a property?"
-    answer: "Yes. For UK residential property disposals, you must report the gain and pay the tax within 60 calendar days of completion. You use the HMRC online service for the 60-day CGT property return. If you miss the deadline, HMRC charges interest and may issue penalties. You still include the gain on your annual self assessment, but the tax paid within 60 days is credited against your final liability."
-  - question: "Does Principal Private Residence relief exempt my main home from CGT?"
-    answer: "Yes, if the property has been your only or main home for the entire period of ownership, the gain is fully exempt. If you lived in it for part of the ownership and rented it out for another part, you get partial relief. The final 9 months of ownership are always exempt regardless of where you live. Lettings relief may also apply if you rented out the property while living in it at the same time, capped at £40,000 per owner."
-  - question: "Can I use the annual exempt amount against property gains?"
-    answer: "Yes. The annual exempt amount for 2025/26 is £3,000. You deduct it from your total chargeable gains for the tax year, including property gains. If you are married or in a civil partnership, you each have your own £3,000 allowance. You can transfer assets between you without triggering CGT to use both allowances before a sale."
+- question: What is the CGT rate on residential property in 2026?
+  answer: The UK CGT rates on residential property 2026 are 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply to disposals of UK residential property that are not your main home. The rates have been in place since 30 October 2024 and remain for the 2025/26 and 2026/27 tax years unless changed in a future Budget.
+- question: Do I have to pay CGT within 60 days of selling a property?
+  answer: Yes. For UK residential property disposals, you must report the gain and pay the tax within 60 calendar days of completion. You use the HMRC online service for the 60-day CGT property return. If you miss the deadline, HMRC charges interest and may issue penalties. You still include the gain on your annual self assessment, but the tax paid within 60 days is credited against your final liability.
+- question: Does Principal Private Residence relief exempt my main home from CGT?
+  answer: Yes, if the property has been your only or main home for the entire period of ownership, the gain is fully exempt. If you lived in it for part of the ownership and rented it out for another part, you get partial relief. The final 9 months of ownership are always exempt regardless of where you live. Lettings relief may also apply if you rented out the property while living in it at the same time, capped at £40,000 per owner.
+- question: Can I use the annual exempt amount against property gains?
+  answer: Yes. The annual exempt amount for 2025/26 is £3,000. You deduct it from your total chargeable gains for the tax year, including property gains. If you are married or in a civil partnership, you each have your own £3,000 allowance. You can transfer assets between you without triggering CGT to use both allowances before a sale.
 keyTakeaways:
-  - "UK CGT rates on residential property are 18% for basic rate taxpayers and 24% for higher rate taxpayers, applying to disposals made on or after 30 October 2024."
-  - "The basic rate band threshold for 2025/26 is £50,270; gains within this band are taxed at 18%, with gains above it taxed at 24%."
-  - "The annual exempt amount for 2025/26 is £3,000 and is deducted from total chargeable gains before the CGT rate is applied."
-  - "Sellers must report and pay CGT within 60 calendar days of completion using the HMRC online property return service, not the January self assessment deadline."
-  - "Principal Private Residence relief fully exempts your main home from CGT, and the final 9 months of ownership are always exempt regardless of where you live."
-  - "The furnished holiday let regime was abolished from 6 April 2025, so former FHL properties are now taxed as ordinary buy-to-let property with no access to Business Asset Disposal Relief."
+- UK CGT rates on residential property are 18% for basic rate taxpayers and 24% for higher rate taxpayers, applying to disposals made on or after 30 October 2024.
+- The basic rate band threshold for 2025/26 is £50,270; gains within this band are taxed at 18%, with gains above it taxed at 24%.
+- The annual exempt amount for 2025/26 is £3,000 and is deducted from total chargeable gains before the CGT rate is applied.
+- Sellers must report and pay CGT within 60 calendar days of completion using the HMRC online property return service, not the January self assessment deadline.
+- Principal Private Residence relief fully exempts your main home from CGT, and the final 9 months of ownership are always exempt regardless of where you live.
+- The furnished holiday let regime was abolished from 6 April 2025, so former FHL properties are now taxed as ordinary buy-to-let property with no access to Business Asset Disposal Relief.
+metaTitle_prev: 'UK CGT Rates on Residential Property 2026: What You Pay Now'
+metaDescription_prev: UK CGT rates on residential property in 2026 are 18% (basic rate) and 24% (higher rate). Here is how they apply to your sale, the 60-day reporting rule
+dateModified: '2026-07-08'
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
+reviewedAt: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you sell a residential property in the UK that is not your main home, you will pay Capital Gains Tax on the profit. The rates for 2025/26 and into 2026 are set. They are 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply to disposals of UK residential property made on or after 30 October 2024. They remain in place for the 2025/26 tax year and, at the time of writing, for 2026/27 unless the government changes them in a future Budget.</p>
 
 <p>This article covers the current UK CGT rates on residential property 2026, how they interact with your other income, the 60-day reporting rule, and the reliefs that can reduce your bill. If you are selling a second home, a buy-to-let, or an inherited property, you need to know the numbers before you exchange contracts.</p>

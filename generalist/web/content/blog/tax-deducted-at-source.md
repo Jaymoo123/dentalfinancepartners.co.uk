@@ -6,13 +6,15 @@ date: '2026-05-20'
 generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Payroll and PAYE
-metaTitle: 'Tax Deducted at Source: Complete UK Guide for Taxpayers'
-metaDescription: Understand tax deducted at source on interest, dividends, payroll, and rental income. How it works, who it affects, and when you can reclaim it.
+metaTitle: 'Tax Deducted at Source: UK Guide for UK Taxpayers 2025'
+metaDescription: Work out what tax is taken before your money arrives and when to claim it back. Banks have paid interest gross since 6 April 2016, so no TDS applies there.
 altText: UK accountant reviewing tax documents and P60 forms at a desk in a modern office
 image: https://images.pexels.com/photos/6863285/pexels-photo-6863285.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'Tax Deducted at Source: A Complete Guide for UK Taxpayers'
 summary: Tax deducted at source (TDS) means income tax is taken from certain payments before you receive them. This guide covers how TDS applies to interest, dividends, payroll, rental income, and gift aid, plus when you can reclaim overpaid tax.
-schema: ''
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Tax Deducted at Source: A Complete Guide for UK Taxpayers","description":"Work out what tax is taken before your money arrives and when to claim it back. Banks have paid interest gross since 6 April 2016, so no TDS applies there.","url":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/tax-deducted-at-source","datePublished":"2026-05-20","dateModified":"2026-07-08","author":{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited
+  company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/tax-deducted-at-source"},"inLanguage":"en-GB","image":"https://images.pexels.com/photos/6863285/pexels-photo-6863285.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Payroll and PAYE","item":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye"},{"@type":"ListItem","position":3,"name":"Tax Deducted at Source: A Complete Guide for UK Taxpayers","item":"https://www.hollowaydavies.co.uk/blog/payroll-and-paye/tax-deducted-at-source"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is tax deducted at source?","acceptedAnswer":{"@type":"Answer","text":"Tax deducted at source (TDS) is when income tax is removed from a payment before you receive it. The payer deducts the tax and sends it to HMRC. Common examples include PAYE on employment income and withholding tax on rental income paid to non-resident landlords. Banks and building societies have paid savings interest gross since 6 April 2016, so TDS no longer applies to standard savings accounts. You receive the net amount after tax where TDS applies."}},{"@type":"Question","name":"Can I reclaim tax deducted at source on savings interest?","acceptedAnswer":{"@type":"Answer","text":"Banks pay savings interest gross automatically since 6 April 2016, so there is no tax deduction at source to reclaim on standard savings accounts. If HMRC has collected tax on your savings income through a coding adjustment or self assessment in error, you can reclaim via form R40 or your self assessment return. For other income types where TDS applies (such as PAYE or NRL scheme
+  deductions), reclaim through self assessment or by contacting HMRC."}},{"@type":"Question","name":"Does tax deducted at source apply to dividends?","acceptedAnswer":{"@type":"Answer","text":"No. UK companies do not deduct tax at source on dividends. Since April 2016, the dividend tax credit was abolished. You report dividend income on your self assessment and pay tax at your applicable rate: 10.75% (basic), 35.75% (higher), or 39.35% (additional) from 6 April 2026 (2026/27 rates) on amounts above the £500 dividend allowance. The company pays the dividend gross."}},{"@type":"Question","name":"What happens if my employer deducts too much tax through PAYE?","acceptedAnswer":{"@type":"Answer","text":"If your employer deducts too much tax, HMRC will usually correct it by adjusting your tax code in a future pay period. If the overpayment is significant or occurs near the end of the tax year, you can claim a refund by contacting HMRC or filing a self assessment return. Keep your P60 and P45 as evidence of the amounts deducted."}}]}]}'
 faqs:
 - question: What is tax deducted at source?
   answer: Tax deducted at source (TDS) is when income tax is removed from a payment before you receive it. The payer deducts the tax and sends it to HMRC. Common examples include PAYE on employment income and withholding tax on rental income paid to non-resident landlords. Banks and building societies have paid savings interest gross since 6 April 2016, so TDS no longer applies to standard savings accounts. You receive the net amount after tax where TDS applies.
@@ -22,7 +24,7 @@ faqs:
   answer: 'No. UK companies do not deduct tax at source on dividends. Since April 2016, the dividend tax credit was abolished. You report dividend income on your self assessment and pay tax at your applicable rate: 10.75% (basic), 35.75% (higher), or 39.35% (additional) from 6 April 2026 (2026/27 rates) on amounts above the £500 dividend allowance. The company pays the dividend gross.'
 - question: What happens if my employer deducts too much tax through PAYE?
   answer: If your employer deducts too much tax, HMRC will usually correct it by adjusting your tax code in a future pay period. If the overpayment is significant or occurs near the end of the tax year, you can claim a refund by contacting HMRC or filing a self assessment return. Keep your P60 and P45 as evidence of the amounts deducted.
-dateModified: '2026-05-20'
+dateModified: '2026-07-08'
 sourcesVerifiedAt: '2026-05-20'
 sourceDomains:
 - acas.org.uk
@@ -34,12 +36,18 @@ imageCredit:
   source: Pexels
   source_url: https://www.pexels.com/photo/gold-round-coins-on-black-textile-6863285/
 keyTakeaways:
-  - "Banks and building societies have paid savings interest gross since 6 April 2016, so no tax is deducted at source on standard savings accounts."
-  - "The Personal Savings Allowance is £1,000 for basic-rate taxpayers, £500 for higher-rate, and nil for additional-rate; tax above it is settled via self assessment or PAYE coding."
-  - "UK companies do not deduct tax at source on dividends; dividends are paid gross, with a £500 allowance and rates of 10.75%, 35.75%, and 39.35% from 6 April 2026."
-  - "Non-resident landlords not registered under the NRL Scheme have basic rate income tax (currently 20%) deducted from their rental income by their letting agent or tenant before payment."
-  - "Any tax deducted at source counts as tax already paid and reduces the amount owed when you file a self assessment return."
-  - "To reclaim small amounts of overpaid tax on savings interest, use form R40; for larger overpayments or more complex situations, file a self assessment return (SA100) or contact HMRC directly."
+- Banks and building societies have paid savings interest gross since 6 April 2016, so no tax is deducted at source on standard savings accounts.
+- The Personal Savings Allowance is £1,000 for basic-rate taxpayers, £500 for higher-rate, and nil for additional-rate; tax above it is settled via self assessment or PAYE coding.
+- UK companies do not deduct tax at source on dividends; dividends are paid gross, with a £500 allowance and rates of 10.75%, 35.75%, and 39.35% from 6 April 2026.
+- Non-resident landlords not registered under the NRL Scheme have basic rate income tax (currently 20%) deducted from their rental income by their letting agent or tenant before payment.
+- Any tax deducted at source counts as tax already paid and reduces the amount owed when you file a self assessment return.
+- To reclaim small amounts of overpaid tax on savings interest, use form R40; for larger overpayments or more complex situations, file a self assessment return (SA100) or contact HMRC directly.
+metaTitle_prev: 'Tax Deducted at Source: Complete UK Guide for Taxpayers'
+metaDescription_prev: Understand tax deducted at source on interest, dividends, payroll, and rental income. How it works, who it affects, and when you can reclaim it.
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
+reviewedAt: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
 <p>Tax deducted at source (TDS) is a mechanism where income tax is removed from certain payments before they reach you. The payer handles the deduction and sends it directly to HMRC. You receive the net amount.</p>
 

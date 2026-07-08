@@ -1,41 +1,49 @@
 ---
-title: "What Is a Holding Company Structure and How Does It Affect UK Tax?"
-slug: "holding-company-structure-uk-tax"
-canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/holding-company-structure-uk-tax"
-date: "2026-05-17"
+title: What Is a Holding Company Structure and How Does It Affect UK Tax?
+slug: holding-company-structure-uk-tax
+canonical: https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/holding-company-structure-uk-tax
+date: '2026-05-17'
 generator: unverified/claude-era
-author: "Holloway Davies Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "Holding Company Structure UK Tax: A Practical Guide"
-metaDescription: "How a holding company structure affects UK tax for limited companies. Corporation tax, dividends, group relief and BADR explained with worked examples."
-altText: "Two UK business directors reviewing group structure documents with an accountant in a Manchester office meeting room"
-image: "/blog/holding-company-structure-uk-tax.jpg"
+author: Holloway Davies Editorial Team
+category: Incorporation and Structure
+metaTitle: 'Holding Company Structure and UK Tax: What to Know'
+metaDescription: See how a group structure cuts your tax before you set one up. Subsidiary dividends flow up tax-free, but associated companies split the £50,000 threshold.
+altText: Two UK business directors reviewing group structure documents with an accountant in a Manchester office meeting room
+image: /blog/holding-company-structure-uk-tax.jpg
 imageCredit:
-  photographer: "Erik Mclean"
-  photographerUrl: "https://www.pexels.com/@introspectivedsgn"
-  sourceUrl: "https://www.pexels.com/photo/modern-building-with-glass-walls-5463075/"
-  source: "Pexels"
-h1: "Holding Company Structure UK Tax: What Business Owners Need to Know"
-summary: "A holding company structure can save tax, protect assets and simplify group management. This guide covers how it works for UK limited companies, including corporation tax, group relief, dividend planning and BADR considerations."
-schema: ""
+  photographer: Erik Mclean
+  photographerUrl: https://www.pexels.com/@introspectivedsgn
+  sourceUrl: https://www.pexels.com/photo/modern-building-with-glass-walls-5463075/
+  source: Pexels
+h1: 'Holding Company Structure UK Tax: What Business Owners Need to Know'
+summary: A holding company structure can save tax, protect assets and simplify group management. This guide covers how it works for UK limited companies, including corporation tax, group relief, dividend planning and BADR considerations.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"What Is a Holding Company Structure and How Does It Affect UK Tax?","description":"See how a group structure cuts your tax before you set one up. Subsidiary dividends flow up tax-free, but associated companies split the £50,000 threshold.","url":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/holding-company-structure-uk-tax","datePublished":"2026-05-17","dateModified":"2026-07-08","author":{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK
+  limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/holding-company-structure-uk-tax"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/holding-company-structure-uk-tax.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Incorporation and Structure","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure"},{"@type":"ListItem","position":3,"name":"What Is a Holding Company Structure and How Does It Affect UK Tax?","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/holding-company-structure-uk-tax"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does a holding company pay corporation tax on dividends received from its subsidiaries?","acceptedAnswer":{"@type":"Answer","text":"No. Dividends paid from a UK subsidiary to its UK parent holding company are generally exempt from corporation tax under the exempt distribution regime. The subsidiary has already paid corporation tax on its profits. The holding company receives the dividend tax-free and can reinvest it without triggering a personal tax charge."}},{"@type":"Question","name":"How do associated company rules affect corporation tax in a group structure?","acceptedAnswer":{"@type":"Answer","text":"The £50,000 small profits rate threshold and the £250,000 upper limit are divided by the total number of associated companies in the group. A holding company plus two subsidiaries means three associated companies, so the thresholds become roughly £16,667 and £83,333. This can push trading subsidiaries into marginal relief or the 25% main rate sooner than if they stood alone."}},{"@type":"Question","name":"Can
+  I claim Business Asset Disposal Relief on shares in a holding company?","acceptedAnswer":{"@type":"Answer","text":"Yes, provided the holding company is a trading company or the holding company of a trading group. HMRC applies a strict test. If the holding company holds significant non-trading assets (large cash reserves, investment property), it may fail the test and BADR will not be available. Keep non-trading activities within limits if you plan to use BADR on exit."}},{"@type":"Question","name":"What is the Substantial Shareholding Exemption and how does it apply to holding companies?","acceptedAnswer":{"@type":"Answer","text":"The Substantial Shareholding Exemption (SSE) means that when a holding company sells shares in a trading subsidiary, any capital gain is exempt from corporation tax. The holding company must have held at least 10% of the subsidiary''s shares for a continuous 12-month period within the six years before disposal. SSE is a key reason business owners use a holding company structure when they plan to sell individual trading businesses over time."}}]}]}'
 faqs:
-  - question: "Does a holding company pay corporation tax on dividends received from its subsidiaries?"
-    answer: "No. Dividends paid from a UK subsidiary to its UK parent holding company are generally exempt from corporation tax under the exempt distribution regime. The subsidiary has already paid corporation tax on its profits. The holding company receives the dividend tax-free and can reinvest it without triggering a personal tax charge."
-  - question: "How do associated company rules affect corporation tax in a group structure?"
-    answer: "The £50,000 small profits rate threshold and the £250,000 upper limit are divided by the total number of associated companies in the group. A holding company plus two subsidiaries means three associated companies, so the thresholds become roughly £16,667 and £83,333. This can push trading subsidiaries into marginal relief or the 25% main rate sooner than if they stood alone."
-  - question: "Can I claim Business Asset Disposal Relief on shares in a holding company?"
-    answer: "Yes, provided the holding company is a trading company or the holding company of a trading group. HMRC applies a strict test. If the holding company holds significant non-trading assets (large cash reserves, investment property), it may fail the test and BADR will not be available. Keep non-trading activities within limits if you plan to use BADR on exit."
-  - question: "What is the Substantial Shareholding Exemption and how does it apply to holding companies?"
-    answer: "The Substantial Shareholding Exemption (SSE) means that when a holding company sells shares in a trading subsidiary, any capital gain is exempt from corporation tax. The holding company must have held at least 10% of the subsidiary's shares for a continuous 12-month period within the six years before disposal. SSE is a key reason business owners use a holding company structure when they plan to sell individual trading businesses over time."
+- question: Does a holding company pay corporation tax on dividends received from its subsidiaries?
+  answer: No. Dividends paid from a UK subsidiary to its UK parent holding company are generally exempt from corporation tax under the exempt distribution regime. The subsidiary has already paid corporation tax on its profits. The holding company receives the dividend tax-free and can reinvest it without triggering a personal tax charge.
+- question: How do associated company rules affect corporation tax in a group structure?
+  answer: The £50,000 small profits rate threshold and the £250,000 upper limit are divided by the total number of associated companies in the group. A holding company plus two subsidiaries means three associated companies, so the thresholds become roughly £16,667 and £83,333. This can push trading subsidiaries into marginal relief or the 25% main rate sooner than if they stood alone.
+- question: Can I claim Business Asset Disposal Relief on shares in a holding company?
+  answer: Yes, provided the holding company is a trading company or the holding company of a trading group. HMRC applies a strict test. If the holding company holds significant non-trading assets (large cash reserves, investment property), it may fail the test and BADR will not be available. Keep non-trading activities within limits if you plan to use BADR on exit.
+- question: What is the Substantial Shareholding Exemption and how does it apply to holding companies?
+  answer: The Substantial Shareholding Exemption (SSE) means that when a holding company sells shares in a trading subsidiary, any capital gain is exempt from corporation tax. The holding company must have held at least 10% of the subsidiary's shares for a continuous 12-month period within the six years before disposal. SSE is a key reason business owners use a holding company structure when they plan to sell individual trading businesses over time.
 keyTakeaways:
-  - "Dividends from a UK subsidiary to its UK holding company are generally exempt from corporation tax under the exempt distribution regime, so profits accumulate centrally without personal tax."
-  - "The £50,000 small-profits threshold and £250,000 upper limit are divided by the number of associated companies, so a group of three compresses them to roughly £16,667 and £83,333."
-  - "Group relief lets a loss-making 75% subsidiary surrender losses to a profit-making group company; offsetting a £30,000 loss against £100,000 profit saves about £5,700 at the 19% rate."
-  - "The Substantial Shareholding Exemption removes corporation tax on a holding company's gain from selling subsidiary shares, provided it held 10% continuously for 12 months within the prior six years."
-  - "BADR reduces CGT to 14% on qualifying disposals in 2025/26, rising to 18% from April 2026 rather than the standard 24% rate, with a £1 million lifetime limit."
-  - "Transferring trading company shares into a new holding company triggers a capital gains disposal, but share-for-share treatment under TCGA 1992 s.135 defers the gain until those holding shares are sold."
+- Dividends from a UK subsidiary to its UK holding company are generally exempt from corporation tax under the exempt distribution regime, so profits accumulate centrally without personal tax.
+- The £50,000 small-profits threshold and £250,000 upper limit are divided by the number of associated companies, so a group of three compresses them to roughly £16,667 and £83,333.
+- Group relief lets a loss-making 75% subsidiary surrender losses to a profit-making group company; offsetting a £30,000 loss against £100,000 profit saves about £5,700 at the 19% rate.
+- The Substantial Shareholding Exemption removes corporation tax on a holding company's gain from selling subsidiary shares, provided it held 10% continuously for 12 months within the prior six years.
+- BADR reduces CGT to 14% on qualifying disposals in 2025/26, rising to 18% from April 2026 rather than the standard 24% rate, with a £1 million lifetime limit.
+- Transferring trading company shares into a new holding company triggers a capital gains disposal, but share-for-share treatment under TCGA 1992 s.135 defers the gain until those holding shares are sold.
+metaTitle_prev: 'Holding Company Structure UK Tax: A Practical Guide'
+metaDescription_prev: How a holding company structure affects UK tax for limited companies. Corporation tax, dividends, group relief and BADR explained with worked examples.
+dateModified: '2026-07-08'
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
+reviewedAt: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If you own more than one limited company, or you are planning to expand your business by acquiring or starting additional trading companies, a holding company structure is worth serious consideration. It is not just about organisation charts. It changes how tax applies to your group.</p>
 
 <p>This guide explains how a holding company structure affects UK tax for limited companies. We cover corporation tax, dividend flows, group relief, Business Asset Disposal Relief (BADR) and the practical steps to set one up. We work with business owners across Manchester, Birmingham, London and beyond who are weighing up whether a group structure makes sense for them.</p>

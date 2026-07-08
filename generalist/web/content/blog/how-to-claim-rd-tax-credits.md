@@ -1,54 +1,62 @@
 ---
-title: "How to Claim R&D Tax Credits: A Step-by-Step Guide for UK Businesses"
-slug: "how-to-claim-rd-tax-credits"
-canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/how-to-claim-rd-tax-credits"
-date: "2026-05-17"
+title: 'How to Claim R&D Tax Credits: A Step-by-Step Guide for UK Businesses'
+slug: how-to-claim-rd-tax-credits
+canonical: https://www.hollowaydavies.co.uk/blog/randd-tax-credits/how-to-claim-rd-tax-credits
+date: '2026-05-17'
 generator: unverified/claude-era
-author: "Holloway Davies Editorial Team"
-category: "R&D Tax Credits"
-metaTitle: "How to Claim R&D Tax Credits: Step-by-Step Guide for UK"
-metaDescription: "Learn how to claim R&D tax credits for your UK business. Covers eligible costs, the claim process, common mistakes, and what HMRC looks for. Practical"
-altText: "UK accountant reviewing R&D tax credit claim documents on a desk with a laptop and calculator"
-image: "/blog/how-to-claim-rd-tax-credits.jpg"
+author: Holloway Davies Editorial Team
+category: R&D Tax Credits
+metaTitle: 'How to Claim R&D Tax Credits: Step-by-Step UK Guide'
+metaDescription: Turn your development spend into a corporation tax cut or cash payment. The merged scheme pays a 20% credit, but you must file the R&D AIF first.
+altText: UK accountant reviewing R&D tax credit claim documents on a desk with a laptop and calculator
+image: /blog/how-to-claim-rd-tax-credits.jpg
 imageCredit:
-  photographer: "Kindel Media"
-  photographerUrl: "https://www.pexels.com/@kindelmedia"
-  sourceUrl: "https://www.pexels.com/photo/income-tax-return-paper-7688995/"
-  source: "Pexels"
-h1: "How to Claim R&D Tax Credits: A Step-by-Step Guide for UK Businesses"
-summary: "R&D tax credits can reduce your corporation tax bill or generate a cash repayment. This guide walks through eligibility, qualifying costs, the claim process, and the common mistakes that delay or derail claims."
-schema: ""
+  photographer: Kindel Media
+  photographerUrl: https://www.pexels.com/@kindelmedia
+  sourceUrl: https://www.pexels.com/photo/income-tax-return-paper-7688995/
+  source: Pexels
+h1: 'How to Claim R&D Tax Credits: A Step-by-Step Guide for UK Businesses'
+summary: R&D tax credits can reduce your corporation tax bill or generate a cash repayment. This guide walks through eligibility, qualifying costs, the claim process, and the common mistakes that delay or derail claims.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How to Claim R&D Tax Credits: A Step-by-Step Guide for UK Businesses","description":"Turn your development spend into a corporation tax cut or cash payment. The merged scheme pays a 20% credit, but you must file the R&D AIF first.","url":"https://www.hollowaydavies.co.uk/blog/randd-tax-credits/how-to-claim-rd-tax-credits","datePublished":"2026-05-17","dateModified":"2026-07-08","author":{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK
+  limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/randd-tax-credits/how-to-claim-rd-tax-credits"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/how-to-claim-rd-tax-credits.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"R&D Tax Credits","item":"https://www.hollowaydavies.co.uk/blog/r&d-tax-credits"},{"@type":"ListItem","position":3,"name":"How to Claim R&D Tax Credits: A Step-by-Step Guide for UK Businesses","item":"https://www.hollowaydavies.co.uk/blog/randd-tax-credits/how-to-claim-rd-tax-credits"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I claim R&D tax credits as a sole trader or partnership?","acceptedAnswer":{"@type":"Answer","text":"No. R&D tax credits are only available to limited companies. Sole traders and partnerships cannot claim under the current rules. If you are a sole trader doing significant development work, you may want to consider incorporating. See our <a href=\"/incorporation\">incorporation guide</a> for more on whether that makes sense for you."}},{"@type":"Question","name":"What is the R&D Additional Information Form (R&D AIF)?","acceptedAnswer":{"@type":"Answer","text":"The R&D AIF is a mandatory form that must be submitted before you file your corporation tax return for accounting periods starting on or after 1 April 2024. It contains details of your qualifying R&D projects, costs, and the scheme you are claiming under. Without it, your claim is invalid. Submit it within 12 months of your year end."}},{"@type":"Question","name":"How far back can I claim R&D tax credits?","acceptedAnswer":{"@type":"Answer","text":"You can amend a corporation tax
+  return to claim R&D tax credits for up to 2 years after the end of the accounting period. For example, for a year ending 31 March 2024, you have until 31 March 2026 to submit or amend the claim. After that, the window closes. If you have never claimed before, check your last two years of accounts."}},{"@type":"Question","name":"What happens if HMRC rejects my R&D claim?","acceptedAnswer":{"@type":"Answer","text":"If HMRC rejects your claim, they will usually open an enquiry and ask for supporting evidence. You can respond with additional documentation. If they still reject it, you can appeal through HMRC''s internal review process or take the case to the First-tier Tribunal. Most rejections happen because of poor technical narratives or missing paperwork. A well-prepared claim with proper records rarely gets rejected outright."}}]}]}'
 faqs:
-  - question: "Can I claim R&D tax credits as a sole trader or partnership?"
-    answer: "No. R&D tax credits are only available to limited companies. Sole traders and partnerships cannot claim under the current rules. If you are a sole trader doing significant development work, you may want to consider incorporating. See our <a href=\"/incorporation\">incorporation guide</a> for more on whether that makes sense for you."
-  - question: "What is the R&D Additional Information Form (R&D AIF)?"
-    answer: "The R&D AIF is a mandatory form that must be submitted before you file your corporation tax return for accounting periods starting on or after 1 April 2024. It contains details of your qualifying R&D projects, costs, and the scheme you are claiming under. Without it, your claim is invalid. Submit it within 12 months of your year end."
-  - question: "How far back can I claim R&D tax credits?"
-    answer: "You can amend a corporation tax return to claim R&D tax credits for up to 2 years after the end of the accounting period. For example, for a year ending 31 March 2024, you have until 31 March 2026 to submit or amend the claim. After that, the window closes. If you have never claimed before, check your last two years of accounts."
-  - question: "What happens if HMRC rejects my R&D claim?"
-    answer: "If HMRC rejects your claim, they will usually open an enquiry and ask for supporting evidence. You can respond with additional documentation. If they still reject it, you can appeal through HMRC's internal review process or take the case to the First-tier Tribunal. Most rejections happen because of poor technical narratives or missing paperwork. A well-prepared claim with proper records rarely gets rejected outright."
+- question: Can I claim R&D tax credits as a sole trader or partnership?
+  answer: No. R&D tax credits are only available to limited companies. Sole traders and partnerships cannot claim under the current rules. If you are a sole trader doing significant development work, you may want to consider incorporating. See our <a href="/incorporation">incorporation guide</a> for more on whether that makes sense for you.
+- question: What is the R&D Additional Information Form (R&D AIF)?
+  answer: The R&D AIF is a mandatory form that must be submitted before you file your corporation tax return for accounting periods starting on or after 1 April 2024. It contains details of your qualifying R&D projects, costs, and the scheme you are claiming under. Without it, your claim is invalid. Submit it within 12 months of your year end.
+- question: How far back can I claim R&D tax credits?
+  answer: You can amend a corporation tax return to claim R&D tax credits for up to 2 years after the end of the accounting period. For example, for a year ending 31 March 2024, you have until 31 March 2026 to submit or amend the claim. After that, the window closes. If you have never claimed before, check your last two years of accounts.
+- question: What happens if HMRC rejects my R&D claim?
+  answer: If HMRC rejects your claim, they will usually open an enquiry and ask for supporting evidence. You can respond with additional documentation. If they still reject it, you can appeal through HMRC's internal review process or take the case to the First-tier Tribunal. Most rejections happen because of poor technical narratives or missing paperwork. A well-prepared claim with proper records rarely gets rejected outright.
 keyTakeaways:
-  - "R&D tax credits are a corporation tax relief available only to UK limited companies; sole traders and partnerships cannot claim, whatever the nature of their work."
-  - "From April 2024 most companies use the merged scheme at a 20% taxable credit; loss-making SMEs spending over 30% of costs on R&D get ERIS at 27%."
-  - "The R&D Additional Information Form is mandatory from April 2024 and must be submitted within 12 months of your accounting period end; missing this deadline makes the claim invalid."
-  - "Qualifying costs include staff salaries, employer National Insurance, consumables, externally provided workers (capped at 65%), and software and data licences, a category added from April 2023."
-  - "You can amend a corporation tax return to claim R&D tax credits for up to two years after the end of the accounting period."
-  - "HMRC paid out over £7 billion in R&D claims in 2022/23 and can open an enquiry up to 12 months after you file; keep records for at least six years."
+- R&D tax credits are a corporation tax relief available only to UK limited companies; sole traders and partnerships cannot claim, whatever the nature of their work.
+- From April 2024 most companies use the merged scheme at a 20% taxable credit; loss-making SMEs spending over 30% of costs on R&D get ERIS at 27%.
+- The R&D Additional Information Form is mandatory from April 2024 and must be submitted within 12 months of your accounting period end; missing this deadline makes the claim invalid.
+- Qualifying costs include staff salaries, employer National Insurance, consumables, externally provided workers (capped at 65%), and software and data licences, a category added from April 2023.
+- You can amend a corporation tax return to claim R&D tax credits for up to two years after the end of the accounting period.
+- HMRC paid out over £7 billion in R&D claims in 2022/23 and can open an enquiry up to 12 months after you file; keep records for at least six years.
 howToSteps:
-  - name: "Identify qualifying projects"
-    text: "Go through your financial year and document every project where you attempted to resolve a scientific or technological uncertainty, recording the problem, people involved, and costs for each project separately."
-  - name: "Calculate qualifying costs"
-    text: "Pull actual figures from payroll reports, purchase invoices, timesheets, and software subscription records, making documented reasonable apportionments where exact records are unavailable."
-  - name: "Prepare the technical report"
-    text: "Write a plain-English narrative covering the baseline before the project, the advance you were seeking, and why it was not readily deducible by a competent professional in your field."
-  - name: "Prepare the financial summary"
-    text: "Produce a cost breakdown by category linked to the technical report, ensuring staff costs, consumables, and other qualifying expenditure match the narrative for each project."
-  - name: "Submit the R&D AIF before filing your corporation tax return"
-    text: "File the mandatory Additional Information Form within 12 months of your accounting period end, then include qualifying costs in your CT600; filing the return without the AIF invalidates the claim."
-  - name: "Respond to HMRC enquiries promptly"
-    text: "If HMRC requests supporting evidence such as timesheets, project notes, or design documents, respond promptly and fully, as delays can trigger further scrutiny or rejection."
+- name: Identify qualifying projects
+  text: Go through your financial year and document every project where you attempted to resolve a scientific or technological uncertainty, recording the problem, people involved, and costs for each project separately.
+- name: Calculate qualifying costs
+  text: Pull actual figures from payroll reports, purchase invoices, timesheets, and software subscription records, making documented reasonable apportionments where exact records are unavailable.
+- name: Prepare the technical report
+  text: Write a plain-English narrative covering the baseline before the project, the advance you were seeking, and why it was not readily deducible by a competent professional in your field.
+- name: Prepare the financial summary
+  text: Produce a cost breakdown by category linked to the technical report, ensuring staff costs, consumables, and other qualifying expenditure match the narrative for each project.
+- name: Submit the R&D AIF before filing your corporation tax return
+  text: File the mandatory Additional Information Form within 12 months of your accounting period end, then include qualifying costs in your CT600; filing the return without the AIF invalidates the claim.
+- name: Respond to HMRC enquiries promptly
+  text: If HMRC requests supporting evidence such as timesheets, project notes, or design documents, respond promptly and fully, as delays can trigger further scrutiny or rejection.
+metaTitle_prev: 'How to Claim R&D Tax Credits: Step-by-Step Guide for UK'
+metaDescription_prev: Learn how to claim R&D tax credits for your UK business. Covers eligible costs, the claim process, common mistakes, and what HMRC looks for. Practical
+dateModified: '2026-07-08'
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
+reviewedAt: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>If your business has spent time and money developing a new product, process, or software, you might be sitting on a valuable tax relief without realising it. R&D tax credits are one of the most generous reliefs HMRC offers, yet thousands of eligible UK businesses never claim because the process feels complicated or they assume their work doesn't count.</p>
 
 <p>This guide covers exactly <strong>how to claim R&D tax credits</strong> for your UK business. We'll walk through what qualifies, what costs you can include, how the claim process works, and the mistakes that get claims rejected. If you are a limited company director or a contractor running your own Ltd doing genuine development work, this applies to you. (R&D tax credits are a corporation tax relief: sole traders and partnerships cannot claim, whatever the nature of their work.)</p>

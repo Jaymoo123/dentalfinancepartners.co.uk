@@ -1,41 +1,49 @@
 ---
-title: "Fixed Fee vs Hourly Accountant: Which Is Better Value for Your UK Business?"
-slug: "fixed-fee-vs-hourly-accountant"
-canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/fixed-fee-vs-hourly-accountant"
-date: "2026-05-17"
+title: 'Fixed Fee vs Hourly Accountant: Which Is Better Value for Your UK Business?'
+slug: fixed-fee-vs-hourly-accountant
+canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/fixed-fee-vs-hourly-accountant
+date: '2026-05-17'
 generator: unverified/claude-era
-author: "Holloway Davies Editorial Team"
-category: "Bookkeeping and Compliance"
-metaTitle: "Fixed Fee vs Hourly Accountant: Which Is Better Value?"
-metaDescription: "Fixed fee vs hourly accountant: which pricing model saves you money? We compare costs, predictability, and value for UK limited companies, sole traders"
-altText: "Two accountants in a Manchester city centre office reviewing financial documents and discussing fixed fee vs hourly billing options with a UK business owner"
-image: "/blog/fixed-fee-vs-hourly-accountant.jpg"
+author: Holloway Davies Editorial Team
+category: Bookkeeping and Compliance
+metaTitle: 'Fixed Fee vs Hourly Accountant: Which Is Lower Cost?'
+metaDescription: Stop guessing what your accountant will charge. Hourly rates run £100 to £250 an hour, while a fixed fee locks the cost. See which model saves you money.
+altText: Two accountants in a Manchester city centre office reviewing financial documents and discussing fixed fee vs hourly billing options with a UK business owner
+image: /blog/fixed-fee-vs-hourly-accountant.jpg
 imageCredit:
-  photographer: "Jakub Zerdzicki"
-  photographerUrl: "https://www.pexels.com/@jakubzerdzicki"
-  sourceUrl: "https://www.pexels.com/photo/euro-banknotes-with-calculator-and-laptop-keyboard-29262989/"
-  source: "Pexels"
-h1: "Fixed Fee vs Hourly Accountant: Which Is Better Value for Your UK Business?"
-summary: "Fixed fee accounting gives you predictable costs and unlimited support. Hourly billing charges for every call, email, and query. Which model actually saves you money? We break down the real costs for UK businesses."
-schema: ""
+  photographer: Jakub Zerdzicki
+  photographerUrl: https://www.pexels.com/@jakubzerdzicki
+  sourceUrl: https://www.pexels.com/photo/euro-banknotes-with-calculator-and-laptop-keyboard-29262989/
+  source: Pexels
+h1: 'Fixed Fee vs Hourly Accountant: Which Is Better Value for Your UK Business?'
+summary: Fixed fee accounting gives you predictable costs and unlimited support. Hourly billing charges for every call, email, and query. Which model actually saves you money? We break down the real costs for UK businesses.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Fixed Fee vs Hourly Accountant: Which Is Better Value for Your UK Business?","description":"Stop guessing what your accountant will charge. Hourly rates run £100 to £250 an hour, while a fixed fee locks the cost. See which model saves you money.","url":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/fixed-fee-vs-hourly-accountant","datePublished":"2026-05-17","dateModified":"2026-07-08","author":{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United
+  Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/fixed-fee-vs-hourly-accountant"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/fixed-fee-vs-hourly-accountant.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Bookkeeping and Compliance","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance"},{"@type":"ListItem","position":3,"name":"Fixed Fee vs Hourly Accountant: Which Is Better Value for Your UK Business?","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/fixed-fee-vs-hourly-accountant"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the average fixed fee for a limited company accountant?","acceptedAnswer":{"@type":"Answer","text":"For a single director limited company with no VAT and no payroll, expect £120 to £175 per month. Add VAT and payroll, and the fee rises to £200 to £350 per month. These figures include annual accounts, corporation tax return, confirmation statement, and personal tax return. Always check what is included in the scope before comparing quotes."}},{"@type":"Question","name":"Can I switch from hourly billing to fixed fee mid year?","acceptedAnswer":{"@type":"Answer","text":"Yes, but timing matters. The cleanest switch happens just after your year end or after your tax return is filed. That avoids splitting compliance work between two firms. Your new accountant handles the professional clearance and takes over your records. Most transfers complete within two to three weeks."}},{"@type":"Question","name":"What happens if my fixed fee accountant does more work
+  than expected?","acceptedAnswer":{"@type":"Answer","text":"A properly structured fixed fee agreement covers your annual compliance and a reasonable level of ongoing advice. If your circumstances change significantly, the fee is reviewed at the next renewal. Major one off projects, like a share valuation or tax investigation defence, are typically quoted separately. You should never be billed extra for routine queries within the agreed scope."}},{"@type":"Question","name":"Is hourly billing ever cheaper than fixed fee accounting?","acceptedAnswer":{"@type":"Answer","text":"Hourly billing can be cheaper for very simple affairs with no ongoing advice needs. A sole trader with one income source and no VAT might pay £360 for a three hour annual return. But that saving disappears with a single phone call, an HMRC query, or any complexity. For most businesses, the predictability and support of fixed fee accounting delivers better overall value."}}]}]}'
 faqs:
-  - question: "What is the average fixed fee for a limited company accountant?"
-    answer: "For a single director limited company with no VAT and no payroll, expect £120 to £175 per month. Add VAT and payroll, and the fee rises to £200 to £350 per month. These figures include annual accounts, corporation tax return, confirmation statement, and personal tax return. Always check what is included in the scope before comparing quotes."
-  - question: "Can I switch from hourly billing to fixed fee mid year?"
-    answer: "Yes, but timing matters. The cleanest switch happens just after your year end or after your tax return is filed. That avoids splitting compliance work between two firms. Your new accountant handles the professional clearance and takes over your records. Most transfers complete within two to three weeks."
-  - question: "What happens if my fixed fee accountant does more work than expected?"
-    answer: "A properly structured fixed fee agreement covers your annual compliance and a reasonable level of ongoing advice. If your circumstances change significantly, the fee is reviewed at the next renewal. Major one off projects, like a share valuation or tax investigation defence, are typically quoted separately. You should never be billed extra for routine queries within the agreed scope."
-  - question: "Is hourly billing ever cheaper than fixed fee accounting?"
-    answer: "Hourly billing can be cheaper for very simple affairs with no ongoing advice needs. A sole trader with one income source and no VAT might pay £360 for a three hour annual return. But that saving disappears with a single phone call, an HMRC query, or any complexity. For most businesses, the predictability and support of fixed fee accounting delivers better overall value."
+- question: What is the average fixed fee for a limited company accountant?
+  answer: For a single director limited company with no VAT and no payroll, expect £120 to £175 per month. Add VAT and payroll, and the fee rises to £200 to £350 per month. These figures include annual accounts, corporation tax return, confirmation statement, and personal tax return. Always check what is included in the scope before comparing quotes.
+- question: Can I switch from hourly billing to fixed fee mid year?
+  answer: Yes, but timing matters. The cleanest switch happens just after your year end or after your tax return is filed. That avoids splitting compliance work between two firms. Your new accountant handles the professional clearance and takes over your records. Most transfers complete within two to three weeks.
+- question: What happens if my fixed fee accountant does more work than expected?
+  answer: A properly structured fixed fee agreement covers your annual compliance and a reasonable level of ongoing advice. If your circumstances change significantly, the fee is reviewed at the next renewal. Major one off projects, like a share valuation or tax investigation defence, are typically quoted separately. You should never be billed extra for routine queries within the agreed scope.
+- question: Is hourly billing ever cheaper than fixed fee accounting?
+  answer: Hourly billing can be cheaper for very simple affairs with no ongoing advice needs. A sole trader with one income source and no VAT might pay £360 for a three hour annual return. But that saving disappears with a single phone call, an HMRC query, or any complexity. For most businesses, the predictability and support of fixed fee accounting delivers better overall value.
 keyTakeaways:
-  - "Hourly rates for qualified accountants typically range from £100 to £250 per hour, depending on location, specialism, and firm size."
-  - "In the worked example, a single-director limited company with no VAT or payroll pays £145 per month (£1,740 per year) on a fixed fee."
-  - "An HMRC compliance check can add £1,200 to £2,000 to an hourly bill, while fixed fee arrangements typically cover HMRC queries within the agreed scope."
-  - "For a sole trader whose annual return takes three hours, hourly billing at £120 per hour costs £360, which can undercut a fixed fee for the simplest affairs."
-  - "Many hourly firms bill in six-minute or fifteen-minute blocks, meaning a two-minute call still costs 0.1 or 0.25 hours of the stated rate."
-  - "Some fixed fee agreements bundle accounting software such as Xero or FreeAgent, saving a separate subscription cost of £20 to £50 per month."
+- Hourly rates for qualified accountants typically range from £100 to £250 per hour, depending on location, specialism, and firm size.
+- In the worked example, a single-director limited company with no VAT or payroll pays £145 per month (£1,740 per year) on a fixed fee.
+- An HMRC compliance check can add £1,200 to £2,000 to an hourly bill, while fixed fee arrangements typically cover HMRC queries within the agreed scope.
+- For a sole trader whose annual return takes three hours, hourly billing at £120 per hour costs £360, which can undercut a fixed fee for the simplest affairs.
+- Many hourly firms bill in six-minute or fifteen-minute blocks, meaning a two-minute call still costs 0.1 or 0.25 hours of the stated rate.
+- Some fixed fee agreements bundle accounting software such as Xero or FreeAgent, saving a separate subscription cost of £20 to £50 per month.
+metaTitle_prev: 'Fixed Fee vs Hourly Accountant: Which Is Better Value?'
+metaDescription_prev: 'Fixed fee vs hourly accountant: which pricing model saves you money? We compare costs, predictability, and value for UK limited companies, sole traders'
+dateModified: '2026-07-08'
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
+reviewedAt: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>You need an accountant. You have two pricing options: a fixed monthly fee or an hourly rate. Which one gives you better value?</p>
 
 <p>The answer depends on your business type, how much contact you need, and how predictable your finances are. But for most UK businesses, the fixed fee model wins on cost, clarity, and peace of mind. Let us show you why.</p>

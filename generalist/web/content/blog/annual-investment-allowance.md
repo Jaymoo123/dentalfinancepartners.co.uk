@@ -6,13 +6,15 @@ date: '2026-05-20'
 generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
-metaTitle: 'Annual Investment Allowance 2025/26: How It Works for UK'
-metaDescription: The annual investment allowance lets you claim 100% tax relief on qualifying plant and machinery. Learn the £1m limit, what qualifies, and how to claim.
+metaTitle: 'Annual Investment Allowance 2025/26: How It Works UK'
+metaDescription: Deduct the full cost of business equipment from your profits this year. The AIA gives 100% tax relief up to £1m on qualifying plant and machinery. See how.
 altText: Business owner reviewing capital expenditure plans with accountant in a modern UK office
 image: https://images.pexels.com/photos/7887850/pexels-photo-7887850.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'Annual Investment Allowance 2025/26: A Complete Guide for UK Businesses'
 summary: The Annual Investment Allowance (AIA) lets UK businesses claim 100% tax relief on qualifying plant and machinery costs up to £1 million per year. This guide covers the 2025/26 rates, what qualifies, what doesn't, and how to make a claim on your corporation tax return.
-schema: ''
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Annual Investment Allowance 2025/26: A Complete Guide for UK Businesses","description":"Deduct the full cost of business equipment from your profits this year. The AIA gives 100% tax relief up to £1m on qualifying plant and machinery. See how.","url":"https://www.hollowaydavies.co.uk/blog/corporation-tax/annual-investment-allowance","datePublished":"2026-05-20","dateModified":"2026-07-08","author":{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK
+  limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/corporation-tax/annual-investment-allowance"},"inLanguage":"en-GB","image":"https://images.pexels.com/photos/7887850/pexels-photo-7887850.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Corporation Tax","item":"https://www.hollowaydavies.co.uk/blog/corporation-tax"},{"@type":"ListItem","position":3,"name":"Annual Investment Allowance 2025/26: A Complete Guide for UK Businesses","item":"https://www.hollowaydavies.co.uk/blog/corporation-tax/annual-investment-allowance"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I claim AIA on a van I use for my business?","acceptedAnswer":{"@type":"Answer","text":"Yes, vans qualify for the Annual Investment Allowance as long as they are used wholly for business purposes. If you use the van partly for personal journeys, only the business proportion qualifies. A van used 80% for business and 20% for personal use means you claim AIA on 80% of the purchase price. Keep a mileage log to support your business use percentage."}},{"@type":"Question","name":"Does the AIA apply to second-hand equipment?","acceptedAnswer":{"@type":"Answer","text":"Yes, the AIA applies to both new and second-hand qualifying plant and machinery. There is no requirement that the asset be new. If you buy a used industrial oven for your bakery for £15,000, you can claim AIA on the full amount. The same exclusions apply: cars, land, and buildings do not qualify regardless of whether they are new or second-hand."}},{"@type":"Question","name":"What happens if my accounting period is less than 12 months?","acceptedAnswer":{"@type":"Answer","text":"The
+  AIA limit is proportionally reduced for accounting periods shorter than 12 months. A 6-month period gives a £500,000 limit. A 9-month period gives a £750,000 limit. This applies to the first accounting period of a new business or the final period when a business ceases trading. Plan your capital expenditure around the reduced limit to avoid losing relief."}},{"@type":"Question","name":"Can I claim AIA on computer software?","acceptedAnswer":{"@type":"Answer","text":"Yes, computer software qualifies as plant and machinery for AIA purposes if it is used in your trade. Off-the-shelf software and custom software both qualify. The cost of the software licence (if purchased outright) and any implementation costs can be included. Subscription-based software paid monthly does not qualify as capital expenditure and is treated as a revenue expense instead."}}]}]}'
 faqs:
 - question: Can I claim AIA on a van I use for my business?
   answer: Yes, vans qualify for the Annual Investment Allowance as long as they are used wholly for business purposes. If you use the van partly for personal journeys, only the business proportion qualifies. A van used 80% for business and 20% for personal use means you claim AIA on 80% of the purchase price. Keep a mileage log to support your business use percentage.
@@ -22,7 +24,7 @@ faqs:
   answer: The AIA limit is proportionally reduced for accounting periods shorter than 12 months. A 6-month period gives a £500,000 limit. A 9-month period gives a £750,000 limit. This applies to the first accounting period of a new business or the final period when a business ceases trading. Plan your capital expenditure around the reduced limit to avoid losing relief.
 - question: Can I claim AIA on computer software?
   answer: Yes, computer software qualifies as plant and machinery for AIA purposes if it is used in your trade. Off-the-shelf software and custom software both qualify. The cost of the software licence (if purchased outright) and any implementation costs can be included. Subscription-based software paid monthly does not qualify as capital expenditure and is treated as a revenue expense instead.
-dateModified: '2026-05-20'
+dateModified: '2026-07-08'
 sourcesVerifiedAt: '2026-05-20'
 sourceDomains: []
 imageCredit:
@@ -31,12 +33,18 @@ imageCredit:
   source: Pexels
   source_url: https://www.pexels.com/photo/smartphone-displaying-a-stock-market-chart-lying-on-documents-next-to-a-laptop-on-the-desk-7887850/
 keyTakeaways:
-  - "The Annual Investment Allowance gives UK businesses 100% tax relief on qualifying plant and machinery costs in the year of purchase, up to £1,000,000 per year."
-  - "The £1,000,000 AIA limit has been permanently set since 1 January 2019 and is proportionally reduced for accounting periods shorter than 12 months."
-  - "Cars, land, and buildings are excluded from AIA; passenger cars instead attract capital allowances through the main pool or special rate pool, depending on CO2 emissions."
-  - "Expenditure above the £1m AIA limit goes into the main-rate pool at 14% writing down allowance from April 2026 (FA 2026 s.28), or the special rate pool at 6%."
-  - "Where a business owner controls multiple associated companies, HMRC divides the £1m AIA limit equally between them, so three companies each receive a £333,333 limit."
-  - "Selling an asset on which AIA was claimed produces a balancing charge equal to the sale proceeds, which is added to taxable profits in the year of sale."
+- The Annual Investment Allowance gives UK businesses 100% tax relief on qualifying plant and machinery costs in the year of purchase, up to £1,000,000 per year.
+- The £1,000,000 AIA limit has been permanently set since 1 January 2019 and is proportionally reduced for accounting periods shorter than 12 months.
+- Cars, land, and buildings are excluded from AIA; passenger cars instead attract capital allowances through the main pool or special rate pool, depending on CO2 emissions.
+- Expenditure above the £1m AIA limit goes into the main-rate pool at 14% writing down allowance from April 2026 (FA 2026 s.28), or the special rate pool at 6%.
+- Where a business owner controls multiple associated companies, HMRC divides the £1m AIA limit equally between them, so three companies each receive a £333,333 limit.
+- Selling an asset on which AIA was claimed produces a balancing charge equal to the sale proceeds, which is added to taxable profits in the year of sale.
+metaTitle_prev: 'Annual Investment Allowance 2025/26: How It Works for UK'
+metaDescription_prev: The annual investment allowance lets you claim 100% tax relief on qualifying plant and machinery. Learn the £1m limit, what qualifies, and how to claim.
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
+reviewedAt: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
 <h2>What Is the Annual Investment Allowance?</h2>
 

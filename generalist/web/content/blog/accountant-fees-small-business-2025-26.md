@@ -1,39 +1,47 @@
 ---
-title: "How Much Do Accountant Fees Cost for a Small Business in 2025/26?"
-slug: "accountant-fees-small-business-2025-26"
-canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accountant-fees-small-business-2025-26"
-date: "2026-05-17"
+title: How Much Do Accountant Fees Cost for a Small Business in 2025/26?
+slug: accountant-fees-small-business-2025-26
+canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accountant-fees-small-business-2025-26
+date: '2026-05-17'
 generator: unverified/claude-era
-author: "Holloway Davies Editorial Team"
-category: "Bookkeeping and Compliance"
-metaTitle: "Accountant Fees Small Business UK 2025/26 | Cost Guide"
-metaDescription: "Accountant fees for a small UK business in 2025/26 range from £85 to £400+ per month. We break down costs by structure, turnover, and service level."
-altText: "UK accountant reviewing financial documents in a modern office with a laptop and calculator"
-image: "/blog/accountant-fees-small-business-2025-26.jpg"
+author: Holloway Davies Editorial Team
+category: Bookkeeping and Compliance
+metaTitle: Accountant Fees for a Small UK Business 2025/26 Guide
+metaDescription: Find out what you should pay, and whether you are overpaying. A basic sole trader self assessment runs £150 to £350 a year in 2025/26. Costs by structure.
+altText: UK accountant reviewing financial documents in a modern office with a laptop and calculator
+image: /blog/accountant-fees-small-business-2025-26.jpg
 imageCredit:
-  photographer: "www.kaboompics.com"
-  photographerUrl: "https://www.pexels.com/@karola-g"
-  sourceUrl: "https://www.pexels.com/photo/person-holding-oink-calculator-7680744/"
-  source: "Pexels"
-h1: "How Much Do Accountant Fees Cost for a Small Business in 2025/26?"
-summary: "A practical breakdown of what UK small businesses actually pay for an accountant in 2025/26. We cover limited company, sole trader, and partnership costs, what affects the price, and how to tell if you are paying the right amount."
-schema: ""
+  photographer: www.kaboompics.com
+  photographerUrl: https://www.pexels.com/@karola-g
+  sourceUrl: https://www.pexels.com/photo/person-holding-oink-calculator-7680744/
+  source: Pexels
+h1: How Much Do Accountant Fees Cost for a Small Business in 2025/26?
+summary: A practical breakdown of what UK small businesses actually pay for an accountant in 2025/26. We cover limited company, sole trader, and partnership costs, what affects the price, and how to tell if you are paying the right amount.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"How Much Do Accountant Fees Cost for a Small Business in 2025/26?","description":"Find out what you should pay, and whether you are overpaying. A basic sole trader self assessment runs £150 to £350 a year in 2025/26. Costs by structure.","url":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accountant-fees-small-business-2025-26","datePublished":"2026-05-17","dateModified":"2026-07-08","author":{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United
+  Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accountant-fees-small-business-2025-26"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/accountant-fees-small-business-2025-26.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Bookkeeping and Compliance","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance"},{"@type":"ListItem","position":3,"name":"How Much Do Accountant Fees Cost for a Small Business in 2025/26?","item":"https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accountant-fees-small-business-2025-26"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the average accountant cost for a small limited company in 2025/26?","acceptedAnswer":{"@type":"Answer","text":"The average cost for a standard limited company with one director, basic bookkeeping, annual accounts, corporation tax return, and a personal tax return is between £1,200 and £2,400 per year (£100 to £200 per month). This assumes you use cloud accounting software and keep reasonable records. Add VAT returns and payroll, and the cost rises to £150 to £350 per month."}},{"@type":"Question","name":"Do I need an accountant if I am a sole trader?","acceptedAnswer":{"@type":"Answer","text":"You are not legally required to use an accountant. You can file your self assessment return yourself through HMRC''s online system. But if your affairs are anything beyond the simplest (single income stream, no expenses, no capital gains), an accountant usually saves you more in tax than they cost in fees. The average sole trader pays £150 to £350
+  for a self assessment return, and the tax planning advice alone often covers that cost."}},{"@type":"Question","name":"Can I claim accountant fees as a business expense?","acceptedAnswer":{"@type":"Answer","text":"Yes. Accountant fees are a wholly and exclusively business expense for all business structures. Sole traders deduct them from trading profits before calculating their taxable income on their self assessment return. Limited companies deduct them as a company expense, reducing the corporation tax liability."}}]}]}'
 faqs:
-  - question: "What is the average accountant cost for a small limited company in 2025/26?"
-    answer: "The average cost for a standard limited company with one director, basic bookkeeping, annual accounts, corporation tax return, and a personal tax return is between £1,200 and £2,400 per year (£100 to £200 per month). This assumes you use cloud accounting software and keep reasonable records. Add VAT returns and payroll, and the cost rises to £150 to £350 per month."
-  - question: "Do I need an accountant if I am a sole trader?"
-    answer: "You are not legally required to use an accountant. You can file your self assessment return yourself through HMRC's online system. But if your affairs are anything beyond the simplest (single income stream, no expenses, no capital gains), an accountant usually saves you more in tax than they cost in fees. The average sole trader pays £150 to £350 for a self assessment return, and the tax planning advice alone often covers that cost."
-  - question: "Can I claim accountant fees as a business expense?"
-    answer: "Yes. Accountant fees are a wholly and exclusively business expense for all business structures. Sole traders deduct them from trading profits before calculating their taxable income on their self assessment return. Limited companies deduct them as a company expense, reducing the corporation tax liability."
+- question: What is the average accountant cost for a small limited company in 2025/26?
+  answer: The average cost for a standard limited company with one director, basic bookkeeping, annual accounts, corporation tax return, and a personal tax return is between £1,200 and £2,400 per year (£100 to £200 per month). This assumes you use cloud accounting software and keep reasonable records. Add VAT returns and payroll, and the cost rises to £150 to £350 per month.
+- question: Do I need an accountant if I am a sole trader?
+  answer: You are not legally required to use an accountant. You can file your self assessment return yourself through HMRC's online system. But if your affairs are anything beyond the simplest (single income stream, no expenses, no capital gains), an accountant usually saves you more in tax than they cost in fees. The average sole trader pays £150 to £350 for a self assessment return, and the tax planning advice alone often covers that cost.
+- question: Can I claim accountant fees as a business expense?
+  answer: Yes. Accountant fees are a wholly and exclusively business expense for all business structures. Sole traders deduct them from trading profits before calculating their taxable income on their self assessment return. Limited companies deduct them as a company expense, reducing the corporation tax liability.
 keyTakeaways:
-  - "Sole traders typically pay £150 to £350 per year for a basic self assessment return in 2025/26."
-  - "A standard limited company package covering annual accounts, corporation tax, and a director's personal return costs £1,200 to £2,400 per year in 2025/26."
-  - "Adding bookkeeping and VAT returns to a limited company package raises the annual cost to £1,800 to £4,200 (£150 to £350 per month)."
-  - "VAT returns add roughly £30 to £60 per quarter to a standard fee, and payroll for a single director adds £20 to £50 per month."
-  - "Companies House late filing penalties start at £150 for a private company one month late, rising to £1,500 for six months late."
-  - "Location affects fees materially: a limited company package costs £200 to £400 per month in London but £120 to £250 per month in Sheffield or Glasgow."
+- Sole traders typically pay £150 to £350 per year for a basic self assessment return in 2025/26.
+- A standard limited company package covering annual accounts, corporation tax, and a director's personal return costs £1,200 to £2,400 per year in 2025/26.
+- Adding bookkeeping and VAT returns to a limited company package raises the annual cost to £1,800 to £4,200 (£150 to £350 per month).
+- VAT returns add roughly £30 to £60 per quarter to a standard fee, and payroll for a single director adds £20 to £50 per month.
+- Companies House late filing penalties start at £150 for a private company one month late, rising to £1,500 for six months late.
+- 'Location affects fees materially: a limited company package costs £200 to £400 per month in London but £120 to £250 per month in Sheffield or Glasgow.'
+metaTitle_prev: Accountant Fees Small Business UK 2025/26 | Cost Guide
+metaDescription_prev: Accountant fees for a small UK business in 2025/26 range from £85 to £400+ per month. We break down costs by structure, turnover, and service level.
+dateModified: '2026-07-08'
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
+reviewedAt: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Accountant fees for a small business in the UK vary significantly depending on your structure, turnover, and the services you need. For 2025/26, a typical sole trader paying for a basic self assessment return will pay between £150 and £350 per year. A limited company director with a standard set of accounts, corporation tax return, and personal tax return will pay between £1,200 and £2,400 per year. A partnership with two partners and a basic bookkeeping package will fall somewhere in the middle.</p>
 
 <p>These are the headline numbers. But the real question is what you get for your money, and whether you are overpaying or underpaying for your specific situation. We work with UK businesses of every shape and see the full range of pricing. This guide explains what drives the cost and what you should expect to pay in 2025/26.</p>

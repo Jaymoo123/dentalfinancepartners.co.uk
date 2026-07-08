@@ -1,41 +1,49 @@
 ---
-title: "Can I Set Up a Limited Company as a Non-UK Resident Director Living Abroad?"
-slug: "non-uk-resident-director-limited-company"
-canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/non-uk-resident-director-limited-company"
-date: "2026-05-17"
+title: Can I Set Up a Limited Company as a Non-UK Resident Director Living Abroad?
+slug: non-uk-resident-director-limited-company
+canonical: https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/non-uk-resident-director-limited-company
+date: '2026-05-17'
 generator: unverified/claude-era
-author: "Holloway Davies Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "Non-UK Resident Director: Can You Set Up a UK Limited"
-metaDescription: "Yes, non-UK residents can set up a UK limited company. But the tax, bank account, and compliance rules are different. Here is exactly what you need"
-altText: "Non-UK resident director signing UK company formation documents at a desk in a London office with a laptop and Companies House paperwork visible"
-image: "/blog/non-uk-resident-director-limited-company.jpg"
+author: Holloway Davies Editorial Team
+category: Incorporation and Structure
+metaTitle: Non-UK Resident Director of a UK Limited Company Guide
+metaDescription: Set up a UK company from abroad with confidence. There is no residency rule for directors, but the £90,000 VAT threshold and residence rules still bite.
+altText: Non-UK resident director signing UK company formation documents at a desk in a London office with a laptop and Companies House paperwork visible
+image: /blog/non-uk-resident-director-limited-company.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/marker-note-on-craft-paper-near-laptop-7310136/"
-  source: "Pexels"
-h1: "Can I Set Up a Limited Company as a Non-UK Resident Director Living Abroad?"
-summary: "A non-UK resident director can set up a UK limited company. You will need a registered office address in England or Wales, a UK bank account (harder than it sounds), and you must follow UK filing rules. The tax treatment depends on where the company is controlled and managed."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/marker-note-on-craft-paper-near-laptop-7310136/
+  source: Pexels
+h1: Can I Set Up a Limited Company as a Non-UK Resident Director Living Abroad?
+summary: A non-UK resident director can set up a UK limited company. You will need a registered office address in England or Wales, a UK bank account (harder than it sounds), and you must follow UK filing rules. The tax treatment depends on where the company is controlled and managed.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Can I Set Up a Limited Company as a Non-UK Resident Director Living Abroad?","description":"Set up a UK company from abroad with confidence. There is no residency rule for directors, but the £90,000 VAT threshold and residence rules still bite.","url":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/non-uk-resident-director-limited-company","datePublished":"2026-05-17","dateModified":"2026-07-08","author":{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United
+  Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/non-uk-resident-director-limited-company"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/non-uk-resident-director-limited-company.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Incorporation and Structure","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure"},{"@type":"ListItem","position":3,"name":"Can I Set Up a Limited Company as a Non-UK Resident Director Living Abroad?","item":"https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/non-uk-resident-director-limited-company"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need a UK visa to be a director of a UK limited company?","acceptedAnswer":{"@type":"Answer","text":"No. You do not need a UK visa, settled status, or even a UK bank account to be a director. Companies House does not check immigration status. But if you plan to visit the UK for business, you may need a visa depending on your nationality. Being a director does not give you the right to work or live in the UK."}},{"@type":"Question","name":"Can I open a UK business bank account from overseas?","acceptedAnswer":{"@type":"Answer","text":"Yes, but it is harder than for UK residents. Digital banks like Tide and Revolut Business accept non-resident directors with additional documentation. High street banks like Barclays and HSBC typically require an in-person visit to a UK branch. You will need proof of address, identity, and business activity. Some non-resident directors use Wise or Mercury as alternatives."}},{"@type":"Question","name":"Will
+  my UK company pay UK corporation tax if I live overseas?","acceptedAnswer":{"@type":"Answer","text":"It depends on where the company is centrally managed and controlled. If you make all strategic decisions from overseas, the company may be tax resident in your country of residence, not the UK. If the company is UK tax resident, it pays UK corporation tax on worldwide profits. If it is non-UK resident, it only pays UK tax on UK-source profits. Double tax treaties determine the final position. Get professional advice on this before incorporating."}},{"@type":"Question","name":"Can I pay myself dividends as a non-UK resident director?","acceptedAnswer":{"@type":"Answer","text":"Yes. Dividends are paid from post-tax profits. As a non-UK resident, you pay UK dividend tax on dividends above the £500 annual allowance (10.75% basic rate, 35.75% higher rate, 39.35% additional rate from 6 April 2026, FA 2026 s.4). But double tax treaties may reduce or eliminate this. You do not pay National Insurance on dividends. You must file a Self Assessment tax return (SA100) to report the dividends if you have any UK tax to pay."}}]}]}'
 faqs:
-  - question: "Do I need a UK visa to be a director of a UK limited company?"
-    answer: "No. You do not need a UK visa, settled status, or even a UK bank account to be a director. Companies House does not check immigration status. But if you plan to visit the UK for business, you may need a visa depending on your nationality. Being a director does not give you the right to work or live in the UK."
-  - question: "Can I open a UK business bank account from overseas?"
-    answer: "Yes, but it is harder than for UK residents. Digital banks like Tide and Revolut Business accept non-resident directors with additional documentation. High street banks like Barclays and HSBC typically require an in-person visit to a UK branch. You will need proof of address, identity, and business activity. Some non-resident directors use Wise or Mercury as alternatives."
-  - question: "Will my UK company pay UK corporation tax if I live overseas?"
-    answer: "It depends on where the company is centrally managed and controlled. If you make all strategic decisions from overseas, the company may be tax resident in your country of residence, not the UK. If the company is UK tax resident, it pays UK corporation tax on worldwide profits. If it is non-UK resident, it only pays UK tax on UK-source profits. Double tax treaties determine the final position. Get professional advice on this before incorporating."
-  - question: "Can I pay myself dividends as a non-UK resident director?"
-    answer: "Yes. Dividends are paid from post-tax profits. As a non-UK resident, you pay UK dividend tax on dividends above the £500 annual allowance (10.75% basic rate, 35.75% higher rate, 39.35% additional rate from 6 April 2026, FA 2026 s.4). But double tax treaties may reduce or eliminate this. You do not pay National Insurance on dividends. You must file a Self Assessment tax return (SA100) to report the dividends if you have any UK tax to pay."
+- question: Do I need a UK visa to be a director of a UK limited company?
+  answer: No. You do not need a UK visa, settled status, or even a UK bank account to be a director. Companies House does not check immigration status. But if you plan to visit the UK for business, you may need a visa depending on your nationality. Being a director does not give you the right to work or live in the UK.
+- question: Can I open a UK business bank account from overseas?
+  answer: Yes, but it is harder than for UK residents. Digital banks like Tide and Revolut Business accept non-resident directors with additional documentation. High street banks like Barclays and HSBC typically require an in-person visit to a UK branch. You will need proof of address, identity, and business activity. Some non-resident directors use Wise or Mercury as alternatives.
+- question: Will my UK company pay UK corporation tax if I live overseas?
+  answer: It depends on where the company is centrally managed and controlled. If you make all strategic decisions from overseas, the company may be tax resident in your country of residence, not the UK. If the company is UK tax resident, it pays UK corporation tax on worldwide profits. If it is non-UK resident, it only pays UK tax on UK-source profits. Double tax treaties determine the final position. Get professional advice on this before incorporating.
+- question: Can I pay myself dividends as a non-UK resident director?
+  answer: Yes. Dividends are paid from post-tax profits. As a non-UK resident, you pay UK dividend tax on dividends above the £500 annual allowance (10.75% basic rate, 35.75% higher rate, 39.35% additional rate from 6 April 2026, FA 2026 s.4). But double tax treaties may reduce or eliminate this. You do not pay National Insurance on dividends. You must file a Self Assessment tax return (SA100) to report the dividends if you have any UK tax to pay.
 keyTakeaways:
-  - "Companies House imposes no UK residency or nationality requirement: any person aged 16 or over who is not disqualified or an undischarged bankrupt can direct a UK company."
-  - "A UK-incorporated company is tax resident where its central management and control is exercised, so a sole director deciding everything from overseas may make it resident abroad, not the UK."
-  - "For 2025/26, corporation tax is 19% on profits up to £50,000 and 25% above £250,000, with marginal relief between; tax is due 9 months and 1 day after year-end."
-  - "Non-UK resident directors pay UK dividend tax of 10.75% basic, 35.75% higher, or 39.35% additional rate from 6 April 2026 on dividends above the £500 allowance, before any treaty relief."
-  - "VAT registration is compulsory once UK taxable turnover exceeds £90,000 in any rolling 12-month period, even for non-resident directors with no physical UK presence."
-  - "Under the Statutory Residence Test, fewer than 16 days in the UK per tax year (or 46 days if not UK resident in the prior three years) means non-UK resident."
+- 'Companies House imposes no UK residency or nationality requirement: any person aged 16 or over who is not disqualified or an undischarged bankrupt can direct a UK company.'
+- A UK-incorporated company is tax resident where its central management and control is exercised, so a sole director deciding everything from overseas may make it resident abroad, not the UK.
+- For 2025/26, corporation tax is 19% on profits up to £50,000 and 25% above £250,000, with marginal relief between; tax is due 9 months and 1 day after year-end.
+- Non-UK resident directors pay UK dividend tax of 10.75% basic, 35.75% higher, or 39.35% additional rate from 6 April 2026 on dividends above the £500 allowance, before any treaty relief.
+- VAT registration is compulsory once UK taxable turnover exceeds £90,000 in any rolling 12-month period, even for non-resident directors with no physical UK presence.
+- Under the Statutory Residence Test, fewer than 16 days in the UK per tax year (or 46 days if not UK resident in the prior three years) means non-UK resident.
+metaTitle_prev: 'Non-UK Resident Director: Can You Set Up a UK Limited'
+metaDescription_prev: Yes, non-UK residents can set up a UK limited company. But the tax, bank account, and compliance rules are different. Here is exactly what you need
+dateModified: '2026-07-08'
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
+reviewedAt: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <p>Yes, you can set up a UK limited company as a non-UK resident director living abroad. Companies House does not require directors to be UK residents. There is no rule in the Companies Act 2006 that says you must live in the UK to incorporate a company here.</p>
 
 <p>But the practical reality is more complicated than the legal answer. You can incorporate from overseas, but you will face specific hurdles around banking, tax residence, and ongoing compliance. This article covers exactly what a <strong>non uk resident director limited company</strong> needs to know before incorporating.</p>

@@ -1,41 +1,49 @@
 ---
-title: "Accountant For Uber Drivers UK: Tax, VAT, and Expenses Explained"
-slug: "accountant-for-uber-drivers"
-canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-uber-drivers"
-date: "2026-05-17"
+title: 'Accountant For Uber Drivers UK: Tax, VAT, and Expenses Explained'
+slug: accountant-for-uber-drivers
+canonical: https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-uber-drivers
+date: '2026-05-17'
 generator: unverified/claude-era
-author: "Holloway Davies Editorial Team"
-category: "Sole Trader and Self Employment"
-metaTitle: "Accountant For Uber Drivers UK: Tax, VAT & Expenses Guide"
-metaDescription: "Need an accountant for Uber drivers? We explain tax returns, VAT, expenses, and IR35 for Uber drivers in the UK. Practical guidance for your"
-altText: "Uber driver checking smartphone in a parked car in Manchester city centre, with tax paperwork visible on the passenger seat."
-image: "/blog/accountant-for-uber-drivers.jpg"
+author: Holloway Davies Editorial Team
+category: Sole Trader and Self Employment
+metaTitle: 'Accountant for Uber Drivers: Tax, VAT and Expenses'
+metaDescription: Keep more of what you earn driving for Uber. Your VAT turnover is total fares, so the £90,000 threshold hits sooner than you think. See what to claim.
+altText: Uber driver checking smartphone in a parked car in Manchester city centre, with tax paperwork visible on the passenger seat.
+image: /blog/accountant-for-uber-drivers.jpg
 imageCredit:
-  photographer: "Leeloo The First"
-  photographerUrl: "https://www.pexels.com/@leeloothefirst"
-  sourceUrl: "https://www.pexels.com/photo/smartphone-with-opened-calculator-lying-on-a-document-with-an-income-statement-8962520/"
-  source: "Pexels"
-h1: "Accountant For Uber Drivers UK: Tax, VAT, and Expenses Explained"
-summary: "Practical tax guidance for Uber drivers in the UK. Covers self-assessment, VAT registration, allowable expenses, IR35, and when you need an accountant for Uber drivers."
-schema: ""
+  photographer: Leeloo The First
+  photographerUrl: https://www.pexels.com/@leeloothefirst
+  sourceUrl: https://www.pexels.com/photo/smartphone-with-opened-calculator-lying-on-a-document-with-an-income-statement-8962520/
+  source: Pexels
+h1: 'Accountant For Uber Drivers UK: Tax, VAT, and Expenses Explained'
+summary: Practical tax guidance for Uber drivers in the UK. Covers self-assessment, VAT registration, allowable expenses, IR35, and when you need an accountant for Uber drivers.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},{"@type":"Article","headline":"Accountant For Uber Drivers UK: Tax, VAT, and Expenses Explained","description":"Keep more of what you earn driving for Uber. Your VAT turnover is total fares, so the £90,000 threshold hits sooner than you think. See what to claim.","url":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-uber-drivers","datePublished":"2026-05-17","dateModified":"2026-07-08","author":{"@type":"Person","name":"James Holloway","jobTitle":"Senior accountant","knowsAbout":["UK corporation tax","Limited company structures","VAT registration","Director remuneration","R&D tax credits","MTD compliance"],"worksFor":{"@type":"Organization","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk"}},"reviewedBy":{"@type":"Person","name":"Holloway Davies Editorial Team","jobTitle":"Reviewed against legislation.gov.uk and HMRC guidance","knowsAbout":["UK SME taxation","Corporation tax","Personal taxation"]},"publisher":{"@type":"AccountingService","name":"Holloway Davies","url":"https://www.hollowaydavies.co.uk","areaServed":"United Kingdom","knowsAbout":["UK
+  limited company accounting","Sole trader tax","Partnership accounting","Corporation tax","VAT compliance","Payroll and PAYE","R&D tax credits","Making Tax Digital","Director dividends"]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-uber-drivers"},"inLanguage":"en-GB","image":"https://www.hollowaydavies.co.uk/blog/accountant-for-uber-drivers.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hollowaydavies.co.uk"},{"@type":"ListItem","position":2,"name":"Sole Trader and Self Employment","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment"},{"@type":"ListItem","position":3,"name":"Accountant For Uber Drivers UK: Tax, VAT, and Expenses Explained","item":"https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-uber-drivers"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I claim the cost of my car on my tax return as an Uber driver?","acceptedAnswer":{"@type":"Answer","text":"Yes, but only through the actual costs method or the simplified mileage rate. Under the mileage rate (55p per mile for the first 10,000 miles from 2026/27; 45p applied up to 2025/26), the vehicle cost is included in that rate. Under the actual costs method, you claim capital allowances on the purchase price and deduct the business proportion of running costs. You cannot claim both methods on the same vehicle in the same tax year."}},{"@type":"Question","name":"Do I need to register for VAT if my Uber earnings are below £90,000?","acceptedAnswer":{"@type":"Answer","text":"If your total passenger fares (not your net payments from Uber) exceed £90,000 in any rolling 12 months, you must register. Many Uber drivers hit the threshold on fares even though their banked income is lower. If you are below the threshold, you can register voluntarily. That lets you reclaim VAT on Uber''s
+  service fee and on vehicle costs, but you must then charge VAT on your fares. The maths depends on your specific numbers."}},{"@type":"Question","name":"Can I use the Flat Rate Scheme for VAT as an Uber driver?","acceptedAnswer":{"@type":"Answer","text":"Yes, the transport flat rate is 10%. But most Uber drivers are limited cost traders, meaning they must use the 16.5% rate instead. You are a limited cost trader if your spending on relevant goods (not services) is less than 2% of your VAT-inclusive turnover or less than £1,000 per year. Vehicle costs like fuel, repairs, and insurance are not classed as goods for flat rate purposes. You need to calculate your goods spend carefully to determine which rate applies."}},{"@type":"Question","name":"Should I operate as a sole trader or a limited company for Uber driving?","acceptedAnswer":{"@type":"Answer","text":"For the vast majority of Uber drivers, sole trader is the correct structure. If you operate through a limited company, IR35 almost certainly applies because Uber controls the work. That means you must pay yourself a salary through PAYE, losing the tax advantages of incorporation. The administrative burden of a limited company (annual accounts, confirmation statements, corporation tax returns) rarely justifies itself for Uber driving. Speak to an accountant before incorporating."}}]}]}'
 faqs:
-  - question: "Can I claim the cost of my car on my tax return as an Uber driver?"
-    answer: "Yes, but only through the actual costs method or the simplified mileage rate. Under the mileage rate (55p per mile for the first 10,000 miles from 2026/27; 45p applied up to 2025/26), the vehicle cost is included in that rate. Under the actual costs method, you claim capital allowances on the purchase price and deduct the business proportion of running costs. You cannot claim both methods on the same vehicle in the same tax year."
-  - question: "Do I need to register for VAT if my Uber earnings are below £90,000?"
-    answer: "If your total passenger fares (not your net payments from Uber) exceed £90,000 in any rolling 12 months, you must register. Many Uber drivers hit the threshold on fares even though their banked income is lower. If you are below the threshold, you can register voluntarily. That lets you reclaim VAT on Uber's service fee and on vehicle costs, but you must then charge VAT on your fares. The maths depends on your specific numbers."
-  - question: "Can I use the Flat Rate Scheme for VAT as an Uber driver?"
-    answer: "Yes, the transport flat rate is 10%. But most Uber drivers are limited cost traders, meaning they must use the 16.5% rate instead. You are a limited cost trader if your spending on relevant goods (not services) is less than 2% of your VAT-inclusive turnover or less than £1,000 per year. Vehicle costs like fuel, repairs, and insurance are not classed as goods for flat rate purposes. You need to calculate your goods spend carefully to determine which rate applies."
-  - question: "Should I operate as a sole trader or a limited company for Uber driving?"
-    answer: "For the vast majority of Uber drivers, sole trader is the correct structure. If you operate through a limited company, IR35 almost certainly applies because Uber controls the work. That means you must pay yourself a salary through PAYE, losing the tax advantages of incorporation. The administrative burden of a limited company (annual accounts, confirmation statements, corporation tax returns) rarely justifies itself for Uber driving. Speak to an accountant before incorporating."
+- question: Can I claim the cost of my car on my tax return as an Uber driver?
+  answer: Yes, but only through the actual costs method or the simplified mileage rate. Under the mileage rate (55p per mile for the first 10,000 miles from 2026/27; 45p applied up to 2025/26), the vehicle cost is included in that rate. Under the actual costs method, you claim capital allowances on the purchase price and deduct the business proportion of running costs. You cannot claim both methods on the same vehicle in the same tax year.
+- question: Do I need to register for VAT if my Uber earnings are below £90,000?
+  answer: If your total passenger fares (not your net payments from Uber) exceed £90,000 in any rolling 12 months, you must register. Many Uber drivers hit the threshold on fares even though their banked income is lower. If you are below the threshold, you can register voluntarily. That lets you reclaim VAT on Uber's service fee and on vehicle costs, but you must then charge VAT on your fares. The maths depends on your specific numbers.
+- question: Can I use the Flat Rate Scheme for VAT as an Uber driver?
+  answer: Yes, the transport flat rate is 10%. But most Uber drivers are limited cost traders, meaning they must use the 16.5% rate instead. You are a limited cost trader if your spending on relevant goods (not services) is less than 2% of your VAT-inclusive turnover or less than £1,000 per year. Vehicle costs like fuel, repairs, and insurance are not classed as goods for flat rate purposes. You need to calculate your goods spend carefully to determine which rate applies.
+- question: Should I operate as a sole trader or a limited company for Uber driving?
+  answer: For the vast majority of Uber drivers, sole trader is the correct structure. If you operate through a limited company, IR35 almost certainly applies because Uber controls the work. That means you must pay yourself a salary through PAYE, losing the tax advantages of incorporation. The administrative burden of a limited company (annual accounts, confirmation statements, corporation tax returns) rarely justifies itself for Uber driving. Speak to an accountant before incorporating.
 keyTakeaways:
-  - "HMRC measures Uber drivers' VAT turnover on total passenger fares, not net payments received, so the £90,000 registration threshold can be hit despite significantly lower banked income."
-  - "The HMRC approved mileage rate for 2026/27 is 55p per mile for the first 10,000 business miles, then 25p, covering all vehicle running costs including fuel and depreciation."
-  - "Most Uber drivers on the Flat Rate Scheme are limited cost traders (under £1,000 of relevant goods yearly) and must use 16.5%, not the 10% transport rate."
-  - "Class 2 National Insurance was abolished from April 2024; Class 4 NI for 2025/26 is 6% on profits between £12,570 and £50,270, and 2% above that level."
-  - "Making Tax Digital for Income Tax applies to qualifying income over £50,000 from April 2026, dropping to £30,000 in April 2027 and £20,000 in April 2028."
-  - "Uber has shared driver earnings data with HMRC since 2020, meaning declared income must reconcile with platform records or a compliance enquiry may follow."
+- HMRC measures Uber drivers' VAT turnover on total passenger fares, not net payments received, so the £90,000 registration threshold can be hit despite significantly lower banked income.
+- The HMRC approved mileage rate for 2026/27 is 55p per mile for the first 10,000 business miles, then 25p, covering all vehicle running costs including fuel and depreciation.
+- Most Uber drivers on the Flat Rate Scheme are limited cost traders (under £1,000 of relevant goods yearly) and must use 16.5%, not the 10% transport rate.
+- Class 2 National Insurance was abolished from April 2024; Class 4 NI for 2025/26 is 6% on profits between £12,570 and £50,270, and 2% above that level.
+- Making Tax Digital for Income Tax applies to qualifying income over £50,000 from April 2026, dropping to £30,000 in April 2027 and £20,000 in April 2028.
+- Uber has shared driver earnings data with HMRC since 2020, meaning declared income must reconcile with platform records or a compliance enquiry may follow.
+metaTitle_prev: 'Accountant For Uber Drivers UK: Tax, VAT & Expenses Guide'
+metaDescription_prev: Need an accountant for Uber drivers? We explain tax returns, VAT, expenses, and IR35 for Uber drivers in the UK. Practical guidance for your
+dateModified: '2026-07-08'
+reviewedBy: Holloway Davies Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
+reviewedAt: '2026-07-08'
+editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-
 <h2>What Makes Uber Driving Different for Tax Purposes?</h2>
 
 <p>Uber drivers in the UK are treated as self-employed for tax purposes by HMRC, despite ongoing legal debates about employment status. That means you file a self-assessment tax return each year, pay income tax and Class 4 National Insurance on your profits, and handle your own VAT if your turnover exceeds the threshold.</p>
