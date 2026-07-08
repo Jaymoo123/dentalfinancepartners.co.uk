@@ -1,6 +1,12 @@
 # Agency Site Diagnosis — 2026-07 (medical-playbook replay)
 
-## RESUME HERE — LOCAL FIX WAVE COMPLETE 2026-07-08, BUILD GREEN (466/466). AT OWNER DEPLOY GATE.
+## RESUME HERE — DEPLOYED TO PRODUCTION 2026-07-08 (owner-approved). Signal window OPEN.
+- Deploy `agency-founder-finance-ouioxld4h` live on www.agencyfounderfinance.co.uk; markers verified (299 SSR blog links, stable lastmods, sameAs, /glossary/cis 404, CTAs). Commit 25fc60c4. IndexNow: 14 changed URLs → HTTP 200.
+- **Owner doing now:** GSC UI sitemap resubmit + Request Indexing (~10 core pages) + Manual Actions glance + Vercel dashboard apex 308 (F4).
+- **Do not ship content changes into the signal window** (Batch B/C wait for the 14d read ~2026-07-22).
+- 2026-07-08 AI/GEO parity audit (`ai_geo_parity.md`): agency ABOVE medical / AT generalist / BELOW property. llms.txt year labels fixed to 2026/27 locally (committed, rides next deploy). **Post-window AI batch (~07-22):** dateModified parse fix in lib/blog.ts, wire HowTo schema, verify+add WebSite/SearchAction, Speakable; BLUF answer-boxes stay gated on the estate BLUF program.
+
+## (pre-deploy state below)
 - **Root cause (final, post-F8):** crawl-budget/authority starvation on a weak young domain. Quality fork DISPROVEN by direct review of all 26 crawled-not-indexed pages (0 need strengthening → `f8_cohort_assessment.md`). NOT discovery (sitemap fetched daily), NOT linking, NOT penalties/noindex/firewall (pre-gate PASS).
 - **Done locally (uncommitted, undeployed):** F1 blog-index SSR (306 links), F2 sitemap lastmod pin, F3 Organization sameAs (Companies House), F6 CIS glossary removed, F9 BADR/CGT 14 corrections (NIC was already clean), F10 van-post CTAs x2, F14 og:images (19 /agencies/* + calculators) + BADR calc default year 2026/27.
 - **OWNER GATE (all shipping actions):** (1) sign off deploy of the above; (2) F4: Vercel dashboard → Domains → set apex redirect Permanent 308; (3) F5: GSC UI sitemap resubmit + Request Indexing on ~10 core pages + glance at Security & Manual Actions (API can't see it); (4) after deploy: IndexNow submit.

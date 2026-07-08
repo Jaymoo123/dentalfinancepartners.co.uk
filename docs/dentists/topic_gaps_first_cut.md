@@ -1,716 +1,1731 @@
-# Dental Finance Partners — filtered competitor topic gaps
+# Dental Finance Partners — topic gaps from top competitor sitemaps
 
-Filtered from raw competitor sitemap scrape (`briefs/dentists/_competitor_urls.json`) using news-pattern exclusion + evergreen-pattern inclusion + loose-match exclusion against our 150 pages.
+Compared our 204 dentists pages against 15 competitor sitemaps.
 
-Primary competitors considered: samera.co.uk, pfmdental.co.uk, djh.co.uk, dentalaccountancy.co.uk, ac-accounts.co.uk, e-accounts.co.uk, hivebusiness.co.uk, onlyfordentists.com, sial-accountants.co.uk, healthcareaccountants.co.uk, dentalaccounting.co.uk, dentalaccountantsscotland.co.uk, engageadvisors.com, ross-brooke-dental.co.uk, a-wise.co.uk
+**What this is:** every competitor URL whose slug doesn't loose-match any slug in our content directory. Loose-match = at least 70% slug-token overlap.
 
-**How to read this:**
-- Topics are bucketed by theme.
-- Within each bucket, slugs are ordered by the number of competitor sites that cover them (higher = stronger demand signal).
-- A slug listed here means at least one direct competitor has an evergreen guide on it, and we don't (loose slug match).
-- The slug itself is a starting hypothesis for the gap topic, not a final spec — Opus should look at the underlying competitor URL to confirm scope before we commit to writing.
+**What this is NOT:** topic-clustered (the filter step plus an Opus pass do that). Many of these URLs will turn out to be the same topic written differently. Use this as the raw input.
 
 ---
 
-## Other / uncategorised (166 gap topics, 167 competitor pages)
+## samera.co.uk (242 gap candidates)
 
-- **[x2]** `champagne-winner`
-  - dentalaccountantsscotland.co.uk: https://dentalaccountantsscotland.co.uk/news/practice-news/champagne-winner/
-  - dentalaccountantsscotland.co.uk: https://dentalaccountantsscotland.co.uk/uncategorised/champagne-winner/
-- [x1] `4th-seiss-grant`
-  - pfmdental.co.uk: https://pfmdental.co.uk/4th-seiss-grant/
-- [x1] `a-step-closer-to-homeownership`
-  - pfmdental.co.uk: https://pfmdental.co.uk/a-step-closer-to-homeownership/
-- [x1] `additional-tax-resources`
-  - dentalaccountantsscotland.co.uk: https://dentalaccountantsscotland.co.uk/resources/additional-tax-resources/
-- [x1] `an-eight-step-strategy-to-combat-inflation`
-  - ross-brooke-dental.co.uk: https://www.ross-brooke-dental.co.uk/blog/business-blog/an-eight-step-strategy-to-combat-inflation/
-- [x1] `are-you-missing-the-right-financial-partner-for-your-practice`
-  - samera.co.uk: https://samera.co.uk/newsletter/are-you-missing-the-right-financial-partner-for-your-practice/
-- [x1] `are-you-running-your-practice-or-is-it-running-you`
-  - samera.co.uk: https://samera.co.uk/newsletter/are-you-running-your-practice-or-is-it-running-you/
-- [x1] `avn-practice-differentiation-award`
-  - sial-accountants.co.uk: https://sial-accountants.co.uk/healthcare-accountants/awards/avn-practice-differentiation-award/
-- [x1] `bank-of-england-base-rate-residential-mortgages`
-  - pfmdental.co.uk: https://pfmdental.co.uk/bank-of-england-base-rate-residential-mortgages/
-- [x1] `bank-of-england-cuts-base-rate`
-  - pfmdental.co.uk: https://pfmdental.co.uk/bank-of-england-cuts-base-rate/
-- [x1] `behind-every-successful-dentist`
-  - ross-brooke-dental.co.uk: https://www.ross-brooke-dental.co.uk/blog/news/behind-every-successful-dentist/
-- [x1] `benefits-of-using-a-mortgage-adviser`
-  - pfmdental.co.uk: https://pfmdental.co.uk/benefits-of-using-a-mortgage-adviser/
-- [x1] `breakeven-calculator`
-  - dentalaccountantsscotland.co.uk: https://dentalaccountantsscotland.co.uk/resources/business-calculators/breakeven-calculator/
-- [x1] `business-blog`
-  - ross-brooke-dental.co.uk: https://www.ross-brooke-dental.co.uk/blog/business-blog/
-- [x1] `business-calculators`
-  - dentalaccountantsscotland.co.uk: https://dentalaccountantsscotland.co.uk/resources/business-calculators/
-- [x1] `business-helpsheets`
-  - dentalaccountantsscotland.co.uk: https://dentalaccountantsscotland.co.uk/resources/business-helpsheets/
-- [x1] `buyers-assessment`
-  - pfmdental.co.uk: https://pfmdental.co.uk/practice-sales/buyers-assessment/
-- [x1] `buying-your-first-or-next-practice-here-s-what-most-dentists-get-wrong`
-  - samera.co.uk: https://samera.co.uk/newsletter/buying-your-first-or-next-practice-here-s-what-most-dentists-get-wrong/
-- [x1] `calling-all-dentists`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/calling-all-dentists/
-- [x1] `can-i-afford-to-retire`
-  - pfmdental.co.uk: https://pfmdental.co.uk/can-i-afford-to-retire/
-- [x1] `car-fuel-benefits-calculator`
-  - dentalaccountantsscotland.co.uk: https://dentalaccountantsscotland.co.uk/resources/tax-calculators/car-fuel-benefits-calculator/
-- [x1] `case-studies`
-  - ross-brooke-dental.co.uk: https://www.ross-brooke-dental.co.uk/blog/case-studies/
-- [x1] `casual-zero-hour-contracts-major-changes-ahead`
-  - pfmdental.co.uk: https://pfmdental.co.uk/casual-zero-hour-contracts-major-changes-ahead/
-- [x1] `changes-to-uk-company-law`
-  - pfmdental.co.uk: https://pfmdental.co.uk/changes-to-uk-company-law/
-- [x1] `check-employment-status-for-tax-cest-test`
-  - pfmdental.co.uk: https://pfmdental.co.uk/check-employment-status-for-tax-cest-test/
-- [x1] `check-your-state-pension-entitlement`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/check-your-state-pension-entitlement/
-- [x1] `choosing-a-specialism`
-  - dentalaccountantsscotland.co.uk: https://dentalaccountantsscotland.co.uk/uncategorised/choosing-a-specialism/
-- [x1] `choosing-an-accountant`
-  - pfmdental.co.uk: https://pfmdental.co.uk/choosing-an-accountant/
-- [x1] `choosing-the-right-practice-or-starting-one-up`
-  - samera.co.uk: https://samera.co.uk/learning-center/choosing-the-right-practice-or-starting-one-up/
-- [x1] `corporates-vs-individuals`
-  - pfmdental.co.uk: https://pfmdental.co.uk/corporates-vs-individuals/
-- [x1] `customer-lifetime-value-calculator`
-  - dentalaccountantsscotland.co.uk: https://dentalaccountantsscotland.co.uk/resources/business-calculators/customer-lifetime-value-calculator/
-- [x1] `das-accountant`
-  - dentalaccountantsscotland.co.uk: https://dentalaccountantsscotland.co.uk/das-accountant/
-- [x1] `dealing-with-debt-as-a-dentist`
-  - samera.co.uk: https://samera.co.uk/learning-center/dealing-with-debt-as-a-dentist/
-- [x1] `demand-more-from-your-dental-business`
-  - dentalaccountantsscotland.co.uk: https://dentalaccountantsscotland.co.uk/news/practice-news/demand-more-from-your-dental-business/
-- [x1] `dental-cfo-services`
-  - samera.co.uk: https://samera.co.uk/service/dental-cfo-services/
-- [x1] `dental-expert-witness`
-  - djh.co.uk: https://www.djh.co.uk/specialisms/dental/dental-expert-witness/
-- [x1] `dental-marketing`
-  - samera.co.uk: https://samera.co.uk/learning-center/dental-marketing/
-- [x1] `dentists-from-overseas`
-  - djh.co.uk: https://www.djh.co.uk/specialisms/dental/dentists-from-overseas/
-- [x1] `dentists-save-money-and-boost-profits-expert-tips`
-  - healthcareaccountants.co.uk: https://www.healthcareaccountants.co.uk/post/dentists-save-money-and-boost-profits-expert-tips
-- [x1] `expense-share-buy-out-care-case-study`
-  - pfmdental.co.uk: https://pfmdental.co.uk/expense-share-buy-out-care-case-study/
-- *(+126 more in this bucket)*
+- `about-samera` — https://samera.co.uk/about-samera/
+- `all-services` — https://samera.co.uk/all-services/
+- `arun-mehra-author` — https://samera.co.uk/arun-mehra-author/
+- `aruns-calendar` — https://samera.co.uk/aruns-calendar/
+- `buying-group-terms-conditions` — https://samera.co.uk/buying-group-terms-conditions/
+- `career-opportunities` — https://samera.co.uk/career-opportunities/
+- `charitable-activities` — https://samera.co.uk/charitable-activities/
+- `chris-oshea-author` — https://samera.co.uk/chris-oshea-author/
+- `complaints-policy` — https://samera.co.uk/complaints-policy/
+- `cookie-policy` — https://samera.co.uk/cookie-policy/
+- `dso-playbook` — https://samera.co.uk/dso-playbook/
+- `section-1the-clinical-case-for-growth` — https://samera.co.uk/dso-playbook/section-1the-clinical-case-for-growth/
+- `section-2-implementing-change-and-specialty-integration` — https://samera.co.uk/dso-playbook/section-2-implementing-change-and-specialty-integration/
+- `section-3-the-future-is-now-ai-automation-data` — https://samera.co.uk/dso-playbook/section-3-the-future-is-now-ai-automation-data/
+- `section-4-the-finance-engine` — https://samera.co.uk/dso-playbook/section-4-the-finance-engine/
+- `section-5-culture-leadership-alignment` — https://samera.co.uk/dso-playbook/section-5-culture-leadership-alignment/
+- `section-6-succession-leadership-continuity` — https://samera.co.uk/dso-playbook/section-6-succession-leadership-continuity/
+- `section-7-the-road-to-exit-2030` — https://samera.co.uk/dso-playbook/section-7-the-road-to-exit-2030/
+- `section-8-conclusion` — https://samera.co.uk/dso-playbook/section-8-conclusion/
+- `why-this-playbook-matters` — https://samera.co.uk/dso-playbook/why-this-playbook-matters/
+- `event-terms-and-conditions` — https://samera.co.uk/event-terms-and-conditions/
+- `summer-drinks-on-the-thames` — https://samera.co.uk/events/summer-drinks-on-the-thames/
+- `the-arun-and-chris-show` — https://samera.co.uk/events/the-arun-and-chris-show/
+- `learning-center` — https://samera.co.uk/learning-center/
+- `11-top-tips-to-manage-your-cash-flow-in-a-crisis` — https://samera.co.uk/learning-center/11-top-tips-to-manage-your-cash-flow-in-a-crisis/
+- `5-reasons-to-use-a-commercial-finance-broker` — https://samera.co.uk/learning-center/5-reasons-to-use-a-commercial-finance-broker/
+- `5-reasons-why-you-should-outsource-your-veterinary-practices-accounts` — https://samera.co.uk/learning-center/5-reasons-why-you-should-outsource-your-veterinary-practices-accounts/
+- `6-reasons-uk-pharmacies-should-outsource-their-accounts` — https://samera.co.uk/learning-center/6-reasons-uk-pharmacies-should-outsource-their-accounts/
+- `7-tips-nhs-tendering-process` — https://samera.co.uk/learning-center/7-tips-nhs-tendering-process/
+- `a-guide-to-invoice-financing-for-vets` — https://samera.co.uk/learning-center/a-guide-to-invoice-financing-for-vets/
+- `ai-in-accounting` — https://samera.co.uk/learning-center/ai-in-accounting/
+- `associated-costs-buyers-scrutinise` — https://samera.co.uk/learning-center/associated-costs-buyers-scrutinise/
+- `automating-dental-associate-pay-with-ai` — https://samera.co.uk/learning-center/automating-dental-associate-pay-with-ai/
+- `best-online-tools` — https://samera.co.uk/learning-center/best-online-tools/
+- `bridgepoint-acquires-mydentist` — https://samera.co.uk/learning-center/bridgepoint-acquires-mydentist/
+- `buying-a-car-limited-company` — https://samera.co.uk/learning-center/buying-a-car-limited-company/
+- `choosing-the-right-practice-or-starting-one-up` — https://samera.co.uk/learning-center/choosing-the-right-practice-or-starting-one-up/
+- `cosmetic-surgeon-commercial-finance` — https://samera.co.uk/learning-center/cosmetic-surgeon-commercial-finance/
+- `creating-a-business-plan` — https://samera.co.uk/learning-center/creating-a-business-plan/
+- `cyber-security` — https://samera.co.uk/learning-center/cyber-security/
+- `daycare-financing` — https://samera.co.uk/learning-center/daycare-financing/
+- `dealing-with-debt-as-a-dentist` — https://samera.co.uk/learning-center/dealing-with-debt-as-a-dentist/
+- `dental-marketing` — https://samera.co.uk/learning-center/dental-marketing/
+- `five-traits-of-failed-dental-start-ups` — https://samera.co.uk/learning-center/five-traits-of-failed-dental-start-ups/
+- `free-cash-flow-spreadsheet-template` — https://samera.co.uk/learning-center/free-cash-flow-spreadsheet-template/
+- `free-templates-for-financial-documents` — https://samera.co.uk/learning-center/free-templates-for-financial-documents/
+- `from-delivering-excellence-to-finding-fulfilment-in-conversation-with-pooja-bhutyani` — https://samera.co.uk/learning-center/from-delivering-excellence-to-finding-fulfilment-in-conversation-with-pooja-bhutyani/
+- `global-accountancy-firm` — https://samera.co.uk/learning-center/global-accountancy-firm/
+- `how-much-can-i-raise` — https://samera.co.uk/learning-center/how-much-can-i-raise/
+- `insights-updates` — https://samera.co.uk/learning-center/insights-updates/
+- `invest-in-india` — https://samera.co.uk/learning-center/invest-in-india/
+- `invoice-finance-for-pharmacists` — https://samera.co.uk/learning-center/invoice-finance-for-pharmacists/
+- `issues-in-the-selling-process` — https://samera.co.uk/learning-center/issues-in-the-selling-process/
+- `marketing-to-increase-profits` — https://samera.co.uk/learning-center/marketing-to-increase-profits/
+- `obtaining-loans-after-covid-19` — https://samera.co.uk/learning-center/obtaining-loans-after-covid-19/
+- `offshoring-and-outsourcing` — https://samera.co.uk/learning-center/offshoring-and-outsourcing/
+- `product-reviews` — https://samera.co.uk/learning-center/product-reviews/
+- `raising-finance-for-a-pharmacy` — https://samera.co.uk/learning-center/raising-finance-for-a-pharmacy/
+- `raising-finance-for-a-veterinary-clinic` — https://samera.co.uk/learning-center/raising-finance-for-a-veterinary-clinic/
+- `retaining-new-dental-patients` — https://samera.co.uk/learning-center/retaining-new-dental-patients/
+- `retirement-and-transition-planning` — https://samera.co.uk/learning-center/retirement-and-transition-planning/
+- `samera-refinancing-restructuring-boot-camp` — https://samera.co.uk/learning-center/samera-refinancing-restructuring-boot-camp/
+- `secondary-sources-of-finances` — https://samera.co.uk/learning-center/secondary-sources-of-finances/
+- `should-i-buy-leasehold-or-freehold` — https://samera.co.uk/learning-center/should-i-buy-leasehold-or-freehold/
+- `switching-your-payment-plan-provider` — https://samera.co.uk/learning-center/switching-your-payment-plan-provider/
+- `the-dso-market-over-the-next-3-years` — https://samera.co.uk/learning-center/the-dso-market-over-the-next-3-years/
+- `top-10-tips-to-help-you-cut-small-business-expenses` — https://samera.co.uk/learning-center/top-10-tips-to-help-you-cut-small-business-expenses/
+- `transforming-practices-inspiring-impact-what-went-down-at-the-samera-global-summit-2024` — https://samera.co.uk/learning-center/transforming-practices-inspiring-impact-what-went-down-at-the-samera-global-summit-2024/
+- `understanding-finance-to-increase-profits` — https://samera.co.uk/learning-center/understanding-finance-to-increase-profits/
+- `why-dentists-want-their-own-practice` — https://samera.co.uk/learning-center/why-dentists-want-their-own-practice/
+- `why-first-impressions-of-your-practice-matter` — https://samera.co.uk/learning-center/why-first-impressions-of-your-practice-matter/
+- `why-the-dso-party-is-over-in-the-uk-and-europe` — https://samera.co.uk/learning-center/why-the-dso-party-is-over-in-the-uk-and-europe/
+- `why-was-my-business-loan-denied` — https://samera.co.uk/learning-center/why-was-my-business-loan-denied/
+- `natashas-calendar` — https://samera.co.uk/natashas-calendar/
+- `neha-jain-author` — https://samera.co.uk/neha-jain-author/
+- `10-000-is-lost-each-year-from-unnoticed-leaks` — https://samera.co.uk/newsletter/10-000-is-lost-each-year-from-unnoticed-leaks/
+- `10x-ebitda-the-real-story-behind-the-mydentist-acquisition` — https://samera.co.uk/newsletter/10x-ebitda-the-real-story-behind-the-mydentist-acquisition/
+- `15-000-the-average-savings-when-you-finance-smartly` — https://samera.co.uk/newsletter/15-000-the-average-savings-when-you-finance-smartly/
+- `18th-june-summer-drinks` — https://samera.co.uk/newsletter/18th-june-summer-drinks/
+- `18th-june-the-thames-is-still-there-so-is-the-wine` — https://samera.co.uk/newsletter/18th-june-the-thames-is-still-there-so-is-the-wine/
+- `40-of-buyers-don-t-understand-their-loan-terms` — https://samera.co.uk/newsletter/40-of-buyers-don-t-understand-their-loan-terms/
+- `400-penalties-for-non-compliance-get-mtd-ready-now` — https://samera.co.uk/newsletter/400-penalties-for-non-compliance-get-mtd-ready-now/
+- `6-8-of-your-revenue-is-going-to-suppliers-want-some-of-it-back` — https://samera.co.uk/newsletter/6-8-of-your-revenue-is-going-to-suppliers-want-some-of-it-back/
+- `70-90-of-acquisitions-fail-to-deliver-expected-value-just-look-at-some-of-the-unprofitable-dental-gr` — https://samera.co.uk/newsletter/70-90-of-acquisitions-fail-to-deliver-expected-value-just-look-at-some-of-the-unprofitable-dental-gr/
+- `82-of-businesses-fail-due-to-cash-flow-issues-are-your-payments-under-control` — https://samera.co.uk/newsletter/82-of-businesses-fail-due-to-cash-flow-issues-are-your-payments-under-control/
+- `a-6-month-hmrc-enquiry-can-derail-your-practice-growth-unless-you-re-covered` — https://samera.co.uk/newsletter/a-6-month-hmrc-enquiry-can-derail-your-practice-growth-unless-you-re-covered/
+- `ai-enabled-accountant-now` — https://samera.co.uk/newsletter/ai-enabled-accountant-now/
+- `are-you-missing-the-right-financial-partner-for-your-practice` — https://samera.co.uk/newsletter/are-you-missing-the-right-financial-partner-for-your-practice/
+- `are-you-ready-for-a-capital-gains-tax-shakeup` — https://samera.co.uk/newsletter/are-you-ready-for-a-capital-gains-tax-shakeup/
+- `are-you-running-your-practice-or-is-it-running-you` — https://samera.co.uk/newsletter/are-you-running-your-practice-or-is-it-running-you/
+- `budget-changes-what-s-coming-for-your-business` — https://samera.co.uk/newsletter/budget-changes-what-s-coming-for-your-business/
+- `buying-your-first-or-next-practice-here-s-what-most-dentists-get-wrong` — https://samera.co.uk/newsletter/buying-your-first-or-next-practice-here-s-what-most-dentists-get-wrong/
+- `choosing-the-right-mtd-compatible-software` — https://samera.co.uk/newsletter/choosing-the-right-mtd-compatible-software/
+- `day-one-and-beyond-what-your-first-year-might-look-like` — https://samera.co.uk/newsletter/day-one-and-beyond-what-your-first-year-might-look-like/
+- `don-t-let-making-tax-digital-be-a-headache-let-us-handle-it` — https://samera.co.uk/newsletter/don-t-let-making-tax-digital-be-a-headache-let-us-handle-it/
+- `ebitda-is-strong-so-why-are-investors-hesitating` — https://samera.co.uk/newsletter/ebitda-is-strong-so-why-are-investors-hesitating/
+- `feeling-the-pressure-of-a-tax-bill-here-s-how-a-tax-loan-can-help` — https://samera.co.uk/newsletter/feeling-the-pressure-of-a-tax-bill-here-s-how-a-tax-loan-can-help/
+- `feeling-the-strain-of-loan-repayments-let-s-talk-solutions` — https://samera.co.uk/newsletter/feeling-the-strain-of-loan-repayments-let-s-talk-solutions/
+- `final-reminder-get-mtd-ready-before-the-deadline` — https://samera.co.uk/newsletter/final-reminder-get-mtd-ready-before-the-deadline/
+- `final-reminder-your-practice-begins-here` — https://samera.co.uk/newsletter/final-reminder-your-practice-begins-here/
+- `free-in-person-event-i-wish-someone-had-told-me-this` — https://samera.co.uk/newsletter/free-in-person-event-i-wish-someone-had-told-me-this/
+- `free-webinar-alert-the-labour-budget-the-impact-on-uk-dentists-91bd` — https://samera.co.uk/newsletter/free-webinar-alert-the-labour-budget-the-impact-on-uk-dentists-91bd/
+- `free-webinar-alert-the-labour-budget-the-impact-on-uk-dentists` — https://samera.co.uk/newsletter/free-webinar-alert-the-labour-budget-the-impact-on-uk-dentists/
+- `free-webinar-mtd-is-here-are-you-actually-ready` — https://samera.co.uk/newsletter/free-webinar-mtd-is-here-are-you-actually-ready/
+- `free-webinar-the-april-reset` — https://samera.co.uk/newsletter/free-webinar-the-april-reset/
+- `free-webinar-the-buying-selling-question` — https://samera.co.uk/newsletter/free-webinar-the-buying-selling-question/
+- `free-webinar-the-last-reminder` — https://samera.co.uk/newsletter/free-webinar-the-last-reminder/
+- `free-webinar-the-mtd-reality-check` — https://samera.co.uk/newsletter/free-webinar-the-mtd-reality-check/
+- `free-webinar-tonight-managing-finance-function-dental-group` — https://samera.co.uk/newsletter/free-webinar-tonight-managing-finance-function-dental-group/
+- `from-the-classroom-to-the-community` — https://samera.co.uk/newsletter/from-the-classroom-to-the-community/
+- `got-marketing-questions-join-samera-s-team-live` — https://samera.co.uk/newsletter/got-marketing-questions-join-samera-s-team-live/
+- `growth-is-not-progress-our-free-dso-exit-playbook-explains-why` — https://samera.co.uk/newsletter/growth-is-not-progress-our-free-dso-exit-playbook-explains-why/
+- `how-a-holding-company-can-save-you-tax-if-selling-your-practice` — https://samera.co.uk/newsletter/how-a-holding-company-can-save-you-tax-if-selling-your-practice/
+- `how-mtd-helps-reduce-errors-and-penalties` — https://samera.co.uk/newsletter/how-mtd-helps-reduce-errors-and-penalties/
+- `how-quarterly-submissions-actually-work` — https://samera.co.uk/newsletter/how-quarterly-submissions-actually-work/
+- `ideal-medical-premises-in-prime-location-now-available-with-ample-parking-d3a0` — https://samera.co.uk/newsletter/ideal-medical-premises-in-prime-location-now-available-with-ample-parking-d3a0/
+- `ideal-medical-premises-in-prime-location-now-available-with-ample-parking` — https://samera.co.uk/newsletter/ideal-medical-premises-in-prime-location-now-available-with-ample-parking/
+- `is-that-practice-really-worth-it-why-you-need-a-practice-valuation-before-buying` — https://samera.co.uk/newsletter/is-that-practice-really-worth-it-why-you-need-a-practice-valuation-before-buying/
+- `join-buying-group-free-save-money` — https://samera.co.uk/newsletter/join-buying-group-free-save-money/
+- `join-the-samera-buying-group-cut-your-equipment-costs` — https://samera.co.uk/newsletter/join-the-samera-buying-group-cut-your-equipment-costs/
+- `join-us-today-for-an-exclusive-webinar-optimising-your-practice-tax` — https://samera.co.uk/newsletter/join-us-today-for-an-exclusive-webinar-optimising-your-practice-tax/
+- `june-18th-clear-your-evening-trust-me` — https://samera.co.uk/newsletter/june-18th-clear-your-evening-trust-me/
+- `making-tax-digital-crucial-deadlines-what-dentists-need-to-know` — https://samera.co.uk/newsletter/making-tax-digital-crucial-deadlines-what-dentists-need-to-know/
+- `manage-accounts-finance-function-dental-group-maximum-value` — https://samera.co.uk/newsletter/manage-accounts-finance-function-dental-group-maximum-value/
+- `merry-christmas-from-samera-global` — https://samera.co.uk/newsletter/merry-christmas-from-samera-global/
+- `mtd-critical-changes-in-april-2026-act-now-to-avoid-penalties` — https://samera.co.uk/newsletter/mtd-critical-changes-in-april-2026-act-now-to-avoid-penalties/
+- `mtd-software-hacks-save-without-cutting-corners` — https://samera.co.uk/newsletter/mtd-software-hacks-save-without-cutting-corners/
+- `national-insurance-on-the-rise-are-you-prepared` — https://samera.co.uk/newsletter/national-insurance-on-the-rise-are-you-prepared/
+- `nhs-remedial-pension-savings-statements-rpss-correcting-tax-positions` — https://samera.co.uk/newsletter/nhs-remedial-pension-savings-statements-rpss-correcting-tax-positions/
+- `only-11-of-practices-have-optimal-fees-is-yours-one` — https://samera.co.uk/newsletter/only-11-of-practices-have-optimal-fees-is-yours-one/
+- `prepare-your-practice-for-2025-cost-efficient-accounting-solutions` — https://samera.co.uk/newsletter/prepare-your-practice-for-2025-cost-efficient-accounting-solutions/
+- `preparing-your-business-for-mtd-a-practical-action-plan` — https://samera.co.uk/newsletter/preparing-your-business-for-mtd-a-practical-action-plan/
+- `recording-of-last-nights-webinar` — https://samera.co.uk/newsletter/recording-of-last-nights-webinar/
+- `refinancing-business-loans-better-cash-flow` — https://samera.co.uk/newsletter/refinancing-business-loans-better-cash-flow/
+- `refinancing-existing-loans` — https://samera.co.uk/newsletter/refinancing-existing-loans/
+- `refinancing-explained-what-dentists-need-to-know` — https://samera.co.uk/newsletter/refinancing-explained-what-dentists-need-to-know/
+- `samera-ai-i-gave-our-engineers-24-years-of-dental-knowledge-here-s-what-they-built` — https://samera.co.uk/newsletter/samera-ai-i-gave-our-engineers-24-years-of-dental-knowledge-here-s-what-they-built/
+- `samera-ai-the-waitlist-won-t-be-open-forever-here-s-what-you-d-be-getting-into` — https://samera.co.uk/newsletter/samera-ai-the-waitlist-won-t-be-open-forever-here-s-what-you-d-be-getting-into/
+- `samera-ai-this-is-just-the-beginning-here-s-where-samera-ai-is-going` — https://samera.co.uk/newsletter/samera-ai-this-is-just-the-beginning-here-s-where-samera-ai-is-going/
+- `samera-ai-this-isn-t-for-everyone-is-it-for-you` — https://samera.co.uk/newsletter/samera-ai-this-isn-t-for-everyone-is-it-for-you/
+- `samera-ai-we-recorded-it-so-you-don-t-have-to-take-our-word-for-it` — https://samera.co.uk/newsletter/samera-ai-we-recorded-it-so-you-don-t-have-to-take-our-word-for-it/
+- `samera-ai-what-happens-when-samera-ai-runs-your-associate-pay` — https://samera.co.uk/newsletter/samera-ai-what-happens-when-samera-ai-runs-your-associate-pay/
+- `samera-ai-what-is-four-hours-a-month-actually-costing-you` — https://samera.co.uk/newsletter/samera-ai-what-is-four-hours-a-month-actually-costing-you/
+- `samera-ai-why-associate-pay-still-breaks-every-dental-group-and-what-we-re-doing-about-it` — https://samera.co.uk/newsletter/samera-ai-why-associate-pay-still-breaks-every-dental-group-and-what-we-re-doing-about-it/
+- `scaling-your-dental-group-the-reality-behind-the-challenges-and-what-you-can-do` — https://samera.co.uk/newsletter/scaling-your-dental-group-the-reality-behind-the-challenges-and-what-you-can-do/
+- `setting-practice-boot-camp-2024-1` — https://samera.co.uk/newsletter/setting-practice-boot-camp-2024-1/
+- `setting-practice-boot-camp-2024-27th-september-2024-88d4` — https://samera.co.uk/newsletter/setting-practice-boot-camp-2024-27th-september-2024-88d4/
+- `setting-practice-boot-camp-2024-27th-september-2024` — https://samera.co.uk/newsletter/setting-practice-boot-camp-2024-27th-september-2024/
+- `setting-practice-boot-camp-2024` — https://samera.co.uk/newsletter/setting-practice-boot-camp-2024/
+- `setting-up-in-practice-bootcamp-if-practice-ownership-is-on-your-mind-this-year` — https://samera.co.uk/newsletter/setting-up-in-practice-bootcamp-if-practice-ownership-is-on-your-mind-this-year/
+- `setting-up-in-practice-bootcamp-learn-from-real-industry-experts` — https://samera.co.uk/newsletter/setting-up-in-practice-bootcamp-learn-from-real-industry-experts/
+- `setting-up-in-practice-bootcamp-what-you-ll-learn-in-one-day` — https://samera.co.uk/newsletter/setting-up-in-practice-bootcamp-what-you-ll-learn-in-one-day/
+- `setting-up-in-practice-bootcamp-why-preparation-matters` — https://samera.co.uk/newsletter/setting-up-in-practice-bootcamp-why-preparation-matters/
+- `struggling-with-cash-flow-a-finance-director-can-help-your-practice-grow-5x-faster` — https://samera.co.uk/newsletter/struggling-with-cash-flow-a-finance-director-can-help-your-practice-grow-5x-faster/
+- `the-big-picture-what-making-tax-digital-really-means` — https://samera.co.uk/newsletter/the-big-picture-what-making-tax-digital-really-means/
+- `the-budget-in-short` — https://samera.co.uk/newsletter/the-budget-in-short/
+- `the-dso-exit-2030-playbook-how-your-valuation-is-really-decided` — https://samera.co.uk/newsletter/the-dso-exit-2030-playbook-how-your-valuation-is-really-decided/
+- `the-dso-exit-2030-playbook-the-hidden-cost-of-founder-dependency` — https://samera.co.uk/newsletter/the-dso-exit-2030-playbook-the-hidden-cost-of-founder-dependency/
+- `the-dso-exit-2030-playbook-why-growth-alone-does-not-protect-exit-value` — https://samera.co.uk/newsletter/the-dso-exit-2030-playbook-why-growth-alone-does-not-protect-exit-value/
+- `the-dso-exit-2030-playbook-why-most-dsos-are-not-exit-ready-yet` — https://samera.co.uk/newsletter/the-dso-exit-2030-playbook-why-most-dsos-are-not-exit-ready-yet/
+- `the-dso-market-over-the-next-3-years-what-every-dental-group-should-know` — https://samera.co.uk/newsletter/the-dso-market-over-the-next-3-years-what-every-dental-group-should-know/
+- `the-dso-party-is-over-here-is-what-that-means-for-you` — https://samera.co.uk/newsletter/the-dso-party-is-over-here-is-what-that-means-for-you/
+- `the-easiest-way-to-save-money-in-your-practice-and-it-s-free` — https://samera.co.uk/newsletter/the-easiest-way-to-save-money-in-your-practice-and-it-s-free/
+- `the-first-episode-drops-23-june-and-we-are-not-playing-it-safe` — https://samera.co.uk/newsletter/the-first-episode-drops-23-june-and-we-are-not-playing-it-safe/
+- `the-free-dso-exit-2030-playbook-on-what-actually-holds-up-dso-exits` — https://samera.co.uk/newsletter/the-free-dso-exit-2030-playbook-on-what-actually-holds-up-dso-exits/
+- `the-hidden-power-of-pricing` — https://samera.co.uk/newsletter/the-hidden-power-of-pricing/
+- `thinking-of-starting-or-buying-your-own-practice-let-s-make-it-happen` — https://samera.co.uk/newsletter/thinking-of-starting-or-buying-your-own-practice-let-s-make-it-happen/
+- `thinking-of-starting-your-own-practice-let-s-make-it-happen` — https://samera.co.uk/newsletter/thinking-of-starting-your-own-practice-let-s-make-it-happen/
+- `understanding-the-money-financing-your-practice-purchase` — https://samera.co.uk/newsletter/understanding-the-money-financing-your-practice-purchase/
+- `unlock-5-higher-profit-margins-with-automated-financial-solutions` — https://samera.co.uk/newsletter/unlock-5-higher-profit-margins-with-automated-financial-solutions/
+- `we-are-going-live-every-month-and-we-are-not-holding-back` — https://samera.co.uk/newsletter/we-are-going-live-every-month-and-we-are-not-holding-back/
+- `what-a-week` — https://samera.co.uk/newsletter/what-a-week/
+- `what-pe-firms-look-for-in-dso-back-office-discipline` — https://samera.co.uk/newsletter/what-pe-firms-look-for-in-dso-back-office-discipline/
+- `what-you-must-record-digitally-under-mtd` — https://samera.co.uk/newsletter/what-you-must-record-digitally-under-mtd/
+- `who-must-join-mtd-and-when` — https://samera.co.uk/newsletter/who-must-join-mtd-and-when/
+- `why-founder-driven-dsos-trade-at-lower-multiples-free-exit-2030-playbook` — https://samera.co.uk/newsletter/why-founder-driven-dsos-trade-at-lower-multiples-free-exit-2030-playbook/
+- `why-most-dental-groups-struggle-to-scale-efficiently` — https://samera.co.uk/newsletter/why-most-dental-groups-struggle-to-scale-efficiently/
+- `why-you-can-t-afford-to-get-payroll-wrong` — https://samera.co.uk/newsletter/why-you-can-t-afford-to-get-payroll-wrong/
+- `your-post-budget-action-plan-starts-here` — https://samera.co.uk/newsletter/your-post-budget-action-plan-starts-here/
+- `your-practice-s-value-is-more-than-you-think` — https://samera.co.uk/newsletter/your-practice-s-value-is-more-than-you-think/
+- `our-story` — https://samera.co.uk/our-story/
+- `prajus-calendar` — https://samera.co.uk/prajus-calendar/
+- `rajat-kumar-author` — https://samera.co.uk/rajat-kumar-author/
+- `rate-your-experience` — https://samera.co.uk/rate-your-experience/
+- `refer-a-friend` — https://samera.co.uk/refer-a-friend/
+- `samera-calculators` — https://samera.co.uk/samera-calculators/
+- `samera-finance-complaints-policy` — https://samera.co.uk/samera-finance-complaints-policy/
+- `samera-finance-privacy-policy` — https://samera.co.uk/samera-finance-privacy-policy/
+- `ai-agents-for-your-business` — https://samera.co.uk/service/ai-agents-for-your-business/
+- `apply-audiology-finance` — https://samera.co.uk/service/apply-audiology-finance/
+- `apply-care-home-finance` — https://samera.co.uk/service/apply-care-home-finance/
+- `apply-cosmetic-finance` — https://samera.co.uk/service/apply-cosmetic-finance/
+- `apply-dermatology-finance` — https://samera.co.uk/service/apply-dermatology-finance/
+- `apply-doctor-finance` — https://samera.co.uk/service/apply-doctor-finance/
+- `apply-gp-finance` — https://samera.co.uk/service/apply-gp-finance/
+- `apply-gynaecology-finance` — https://samera.co.uk/service/apply-gynaecology-finance/
+- `apply-implantology-finance` — https://samera.co.uk/service/apply-implantology-finance/
+- `apply-optician-finance` — https://samera.co.uk/service/apply-optician-finance/
+- `apply-orthodontist-finance` — https://samera.co.uk/service/apply-orthodontist-finance/
+- `apply-pharmacy-finance` — https://samera.co.uk/service/apply-pharmacy-finance/
+- *(+42 more)*
 
-## VAT & dental compliance (39 gap topics, 39 competitor pages)
+## ac-accounts.co.uk (420 gap candidates)
 
-- [x1] `a-guide-to-private-practice-conversion-getting-it-right-first-time`
-  - ross-brooke-dental.co.uk: https://www.ross-brooke-dental.co.uk/blog/making-headlines/a-guide-to-private-practice-conversion-getting-it-right-first-time/
-- [x1] `adjustments-for-private-use`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/adjustments-for-private-use/
-- [x1] `build-or-renovate-your-guide-to-maximising-capital-allowance-claims`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/build-or-renovate-your-guide-to-maximising-capital-allowance-claims/
-- [x1] `construction-and-building-industry-changes-vat-domestic-reverse-charges`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/construction-and-building-industry-changes-vat-domestic-reverse-charges/
-- [x1] `furnished-holiday-lets-vat-may-apply`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/specialisms/furnished-holiday-lets-vat-may-apply/
-- [x1] `further-details-regarding-vat-on-private-school-fees`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/autumn-budget/further-details-regarding-vat-on-private-school-fees/
-- [x1] `innovation-champion`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/innovation-champion/
-- [x1] `innovative-progressive`
-  - dentalaccountantsscotland.co.uk: https://dentalaccountantsscotland.co.uk/testimonials/innovative-progressive/
-- [x1] `interaction-with-vat-flat-rate-scheme`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/interaction-with-vat-flat-rate-scheme/
-- [x1] `joint-and-several-liability-for-unpaid-vat`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/joint-and-several-liability-for-unpaid-vat/
-- [x1] `laying-the-groundwork-for-a-conversion-to-private-practice`
-  - ross-brooke-dental.co.uk: https://www.ross-brooke-dental.co.uk/blog/business-blog/laying-the-groundwork-for-a-conversion-to-private-practice/
-- [x1] `mega-marshmallows-food-or-confectionery-why-it-matters-for-vat`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/mega-marshmallows-food-or-confectionery-why-it-matters-for-vat/
-- [x1] `more-details-on-hospitality-vat-reduction`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/more-details-on-hospitality-vat-reduction/
-- [x1] `mtd-for-vat-new-guidance-on-penalties-for-non-compliance`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/mtd-for-vat-new-guidance-on-penalties-for-non-compliance/
-- [x1] `private-fee-conversion-what-about-my-pension`
-  - pfmdental.co.uk: https://pfmdental.co.uk/private-fee-conversion-what-about-my-pension/
-- [x1] `rd-tax-reliefs-for-innovative-software-development-businesses`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/rd-tax-reliefs-for-innovative-software-development-businesses/
-- [x1] `reclaiming-foreign-vat-expenses`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/reclaiming-foreign-vat-expenses/
-- [x1] `reclaiming-input-vat-on-the-sale-of-shares`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/reclaiming-input-vat-on-the-sale-of-shares/
-- [x1] `reimburse-private-fuel-for-your-company-car`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/reimburse-private-fuel-for-your-company-car/
-- [x1] `super-deduction-and-partial-exemption`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/specialisms/super-deduction-and-partial-exemption/
-- [x1] `the-swinging-pendulum-nhs-v-private-general-practice-v-orthodontics`
-  - ross-brooke-dental.co.uk: https://www.ross-brooke-dental.co.uk/blog/business-blog/the-swinging-pendulum-nhs-v-private-general-practice-v-orthodontics/
-- [x1] `the-uk-vat-rate-explained`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/the-uk-vat-rate-explained/
-- [x1] `transitioning-from-an-nhs-to-private-dentistry-practice`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/specialisms/dental/transitioning-from-an-nhs-to-private-dentistry-practice/
-- [x1] `vat-advice-and-support-for-academy-trusts`
-  - djh.co.uk: https://www.djh.co.uk/specialisms/education/vat-advice-and-support-for-academy-trusts/
-- [x1] `vat-advice-for-opticians`
-  - djh.co.uk: https://www.djh.co.uk/specialisms/opticians/vat-advice-for-opticians/
-- [x1] `vat-and-private-tuition-what-counts-and-what-doesnt`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/vat-and-private-tuition-what-counts-and-what-doesnt/
-- [x1] `vat-definition-of-motor-car`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/vat-definition-of-motor-car/
-- [x1] `vat-disaggregation-business`
-  - a-wise.co.uk: https://a-wise.co.uk/vat-disaggregation-business/
-- [x1] `vat-error-correction`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/vat-error-correction/
-- [x1] `vat-on-the-costs-of-selling-a-subsidiary`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/vat-on-the-costs-of-selling-a-subsidiary/
-- [x1] `vat-rates`
-  - a-wise.co.uk: https://a-wise.co.uk/tax-rates-allowances/vat-rates/
-- [x1] `vat-returns`
-  - djh.co.uk: https://www.djh.co.uk/our-services/tax/business-tax/vat-returns/
-- [x1] `vat-reverse-charge-for-building-and-construction-services-2`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/vat-reverse-charge-for-building-and-construction-services-2/
-- [x1] `vat-risk-opportunities-register-for-academies`
-  - djh.co.uk: https://www.djh.co.uk/specialisms/education/vat-risk-opportunities-register-for-academies/
-- [x1] `vat-risks-for-retailers-using-third-party-contractors`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/vat-risks-for-retailers-using-third-party-contractors/
-- [x1] `vat-services-for-opticians`
-  - sial-accountants.co.uk: https://sial-accountants.co.uk/vat-services-for-opticians/
-- [x1] `vat-tips-for-the-festive-season`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/vat-tips-for-the-festive-season/
-- [x1] `vat-treatment-of-deposits`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/vat-treatment-of-deposits/
-- [x1] `what-is-the-vat-reverse-charge`
-  - a-wise.co.uk: https://a-wise.co.uk/what-is-the-vat-reverse-charge/
+- `about-us` — https://www.ac-accounts.co.uk/about-us/
+- `our-charities` — https://www.ac-accounts.co.uk/about-us/our-charities/
+- `our-social-commitment` — https://www.ac-accounts.co.uk/about-us/our-social-commitment/
+- `130-super-deduction-for-investing-in-new-plant-continues` — https://www.ac-accounts.co.uk/blog/130-super-deduction-for-investing-in-new-plant-continues/
+- `15-stamp-duty-land-tax-for-certain-purchases` — https://www.ac-accounts.co.uk/blog/15-stamp-duty-land-tax-for-certain-purchases/
+- `20000-press-ups-in-20-days-achieved-by-our-team` — https://www.ac-accounts.co.uk/blog/20000-press-ups-in-20-days-achieved-by-our-team/
+- `5-vat-rate-for-food-attractions-and-accommodation-extended` — https://www.ac-accounts.co.uk/blog/5-vat-rate-for-food-attractions-and-accommodation-extended/
+- `54-mile-charity-hike-for-abf-the-soldiers-charity` — https://www.ac-accounts.co.uk/blog/54-mile-charity-hike-for-abf-the-soldiers-charity/
+- `a-mini-u-turn-on-stamp-duty-land-tax` — https://www.ac-accounts.co.uk/blog/a-mini-u-turn-on-stamp-duty-land-tax/
+- `a-practical-tax-planning-guide-before-5-april-2026` — https://www.ac-accounts.co.uk/blog/a-practical-tax-planning-guide-before-5-april-2026/
+- `acs-top-5-xero-user-tips` — https://www.ac-accounts.co.uk/blog/acs-top-5-xero-user-tips/
+- `advantages-furnished-holiday-lettings` — https://www.ac-accounts.co.uk/blog/advantages-furnished-holiday-lettings/
+- `advisory-fuel-rates-electric-car-charging` — https://www.ac-accounts.co.uk/blog/advisory-fuel-rates-electric-car-charging/
+- `advisory-fuel-rates-for-company-cars-from-1-march-2026` — https://www.ac-accounts.co.uk/blog/advisory-fuel-rates-for-company-cars-from-1-march-2026/
+- `advisory-fuel-rates-for-company-cars` — https://www.ac-accounts.co.uk/blog/advisory-fuel-rates-for-company-cars/
+- `agricultural-and-business-property-relief-budget-update` — https://www.ac-accounts.co.uk/blog/agricultural-and-business-property-relief-budget-update/
+- `annual-tax-on-enveloped-dwellings-ated-what-you-need-to-know` — https://www.ac-accounts.co.uk/blog/annual-tax-on-enveloped-dwellings-ated-what-you-need-to-know/
+- `annual-tax-on-enveloped-dwellings` — https://www.ac-accounts.co.uk/blog/annual-tax-on-enveloped-dwellings/
+- `april-2026-cis-changes-what-construction-businesses-need-to-know` — https://www.ac-accounts.co.uk/blog/april-2026-cis-changes-what-construction-businesses-need-to-know/
+- `are-spouses-wages-fully-deductible` — https://www.ac-accounts.co.uk/blog/are-spouses-wages-fully-deductible/
+- `are-you-making-the-most-of-significant-tax-reliefs` — https://www.ac-accounts.co.uk/blog/are-you-making-the-most-of-significant-tax-reliefs/
+- `are-you-trading-what-you-need-to-know-about-hmrcs-new-rules` — https://www.ac-accounts.co.uk/blog/are-you-trading-what-you-need-to-know-about-hmrcs-new-rules/
+- `are-your-workers-employed-or-self-employed-what-the-pgmol-case-tells-uk-businesses` — https://www.ac-accounts.co.uk/blog/are-your-workers-employed-or-self-employed-what-the-pgmol-case-tells-uk-businesses/
+- `artificial-intelligence-friend-or-foe` — https://www.ac-accounts.co.uk/blog/artificial-intelligence-friend-or-foe/
+- `associated-companies-now-count-for-new-corporation-rates` — https://www.ac-accounts.co.uk/blog/associated-companies-now-count-for-new-corporation-rates/
+- `autumn-2024-budget-at-a-glance` — https://www.ac-accounts.co.uk/blog/autumn-2024-budget-at-a-glance/
+- `autumn-budget-2025-what-it-means-for-you-and-your-business` — https://www.ac-accounts.co.uk/blog/autumn-budget-2025-what-it-means-for-you-and-your-business/
+- `avoid-any-double-cab-hiccups` — https://www.ac-accounts.co.uk/blog/avoid-any-double-cab-hiccups/
+- `backing-british-business` — https://www.ac-accounts.co.uk/blog/backing-british-business/
+- `bbc-presenter-loses-landmark-ir35-case` — https://www.ac-accounts.co.uk/blog/bbc-presenter-loses-landmark-ir35-case/
+- `be-wary-of-self-assessment-scams` — https://www.ac-accounts.co.uk/blog/be-wary-of-self-assessment-scams/
+- `beware-mini-umbrella-company-fraud` — https://www.ac-accounts.co.uk/blog/beware-mini-umbrella-company-fraud/
+- `beware-of-bed-and-breakfast-anti-avoidance-rules-an-ethical-approach` — https://www.ac-accounts.co.uk/blog/beware-of-bed-and-breakfast-anti-avoidance-rules-an-ethical-approach/
+- `beware-of-rogue-research-development-consultants` — https://www.ac-accounts.co.uk/blog/beware-of-rogue-research-development-consultants/
+- `big-changes-to-employer-national-insurance-contributions-from-april-2025-what-small-businesses-need-to-know` — https://www.ac-accounts.co.uk/blog/big-changes-to-employer-national-insurance-contributions-from-april-2025-what-small-businesses-need-to-know/
+- `bring-your-tax-affairs-up-to-date` — https://www.ac-accounts.co.uk/blog/bring-your-tax-affairs-up-to-date/
+- `budget-sting-in-the-tail-for-research-and-development` — https://www.ac-accounts.co.uk/blog/budget-sting-in-the-tail-for-research-and-development/
+- `budgeting-for-an-uncertain-year-ahead` — https://www.ac-accounts.co.uk/blog/budgeting-for-an-uncertain-year-ahead/
+- `business-cash-flow-in-tough-times` — https://www.ac-accounts.co.uk/blog/business-cash-flow-in-tough-times/
+- `business-rates-relief-for-small-businesses-2` — https://www.ac-accounts.co.uk/blog/business-rates-relief-for-small-businesses-2/
+- `business-records` — https://www.ac-accounts.co.uk/blog/business-records/
+- `business-support-help-to-grow-digital-scheme` — https://www.ac-accounts.co.uk/blog/business-support-help-to-grow-digital-scheme/
+- `buy-new-equipment-before-6-april-2` — https://www.ac-accounts.co.uk/blog/buy-new-equipment-before-6-april-2/
+- `buy-to-let-the-basics-for-individuals-and-companies` — https://www.ac-accounts.co.uk/blog/buy-to-let-the-basics-for-individuals-and-companies/
+- `buying-a-second-hand-electric-car-for-your-business` — https://www.ac-accounts.co.uk/blog/buying-a-second-hand-electric-car-for-your-business/
+- `capital-gains-entrepreneurs-relief-changes` — https://www.ac-accounts.co.uk/blog/capital-gains-entrepreneurs-relief-changes/
+- `capital-gains-tax-allowance-use-it-or-lose-it` — https://www.ac-accounts.co.uk/blog/capital-gains-tax-allowance-use-it-or-lose-it/
+- `capital-gains-tax-annual-exemption-cut` — https://www.ac-accounts.co.uk/blog/capital-gains-tax-annual-exemption-cut/
+- `capital-gains-tax-changes-in-the-spring-budget-2024` — https://www.ac-accounts.co.uk/blog/capital-gains-tax-changes-in-the-spring-budget-2024/
+- `capital-gains-tax-proposed-divorce-changes` — https://www.ac-accounts.co.uk/blog/capital-gains-tax-proposed-divorce-changes/
+- `car-benefit-reduced-where-unavailable` — https://www.ac-accounts.co.uk/blog/car-benefit-reduced-where-unavailable/
+- `car-pool-policy` — https://www.ac-accounts.co.uk/blog/car-pool-policy/
+- `cars-vans-and-taxation` — https://www.ac-accounts.co.uk/blog/cars-vans-and-taxation/
+- `case-study-an-property-portfolio-clarity-and-confidence-during-property-expansion` — https://www.ac-accounts.co.uk/blog/case-study-an-property-portfolio-clarity-and-confidence-during-property-expansion/
+- `case-study-bubble-panda-from-start-up-to-success` — https://www.ac-accounts.co.uk/blog/case-study-bubble-panda-from-start-up-to-success/
+- `cash-planning-and-forecasting` — https://www.ac-accounts.co.uk/blog/cash-planning-and-forecasting/
+- `certain-gifts-can-have-capital-gains-tax-consequences` — https://www.ac-accounts.co.uk/blog/certain-gifts-can-have-capital-gains-tax-consequences/
+- `certain-property-business-owners-are-liable-to-class-2-national-insurance-contributions` — https://www.ac-accounts.co.uk/blog/certain-property-business-owners-are-liable-to-class-2-national-insurance-contributions/
+- `cgt-entrepreneurs-relief-applies-up-to-3-years-following-cessation` — https://www.ac-accounts.co.uk/blog/cgt-entrepreneurs-relief-applies-up-to-3-years-following-cessation/
+- `cgt-private-residence-relief-changes-go-ahead` — https://www.ac-accounts.co.uk/blog/cgt-private-residence-relief-changes-go-ahead/
+- `chancellor-pushes-for-e-invoicing` — https://www.ac-accounts.co.uk/blog/chancellor-pushes-for-e-invoicing/
+- `changes-to-disguised-remuneration-loan-charge` — https://www.ac-accounts.co.uk/blog/changes-to-disguised-remuneration-loan-charge/
+- `changes-to-furnished-holiday-lettings-from-6-april-2025` — https://www.ac-accounts.co.uk/blog/changes-to-furnished-holiday-lettings-from-6-april-2025/
+- `changes-to-paying-cgt-on-residential-property-from-6-april` — https://www.ac-accounts.co.uk/blog/changes-to-paying-cgt-on-residential-property-from-6-april/
+- `changes-to-the-basis-of-assessment` — https://www.ac-accounts.co.uk/blog/changes-to-the-basis-of-assessment/
+- `changes-to-the-high-income-child-benefit-charge-2024` — https://www.ac-accounts.co.uk/blog/changes-to-the-high-income-child-benefit-charge-2024/
+- `changes-to-the-high-income-child-benefit-charge` — https://www.ac-accounts.co.uk/blog/changes-to-the-high-income-child-benefit-charge/
+- `changing-company-car-hybrid-next` — https://www.ac-accounts.co.uk/blog/changing-company-car-hybrid-next/
+- `charging-electric-cars-at-home` — https://www.ac-accounts.co.uk/blog/charging-electric-cars-at-home/
+- `charities-gift-aid-small-donations-scheme` — https://www.ac-accounts.co.uk/blog/charities-gift-aid-small-donations-scheme/
+- `check-your-state-pension-entitlement-2` — https://www.ac-accounts.co.uk/blog/check-your-state-pension-entitlement-2/
+- `check-your-state-pension-entitlement` — https://www.ac-accounts.co.uk/blog/check-your-state-pension-entitlement/
+- `child-benefit-may-create-a-tax-charge-for-those-with-high-income` — https://www.ac-accounts.co.uk/blog/child-benefit-may-create-a-tax-charge-for-those-with-high-income/
+- `christmas-gifts-for-employees` — https://www.ac-accounts.co.uk/blog/christmas-gifts-for-employees/
+- `christmas-is-a-time-for-giving-the-iht-annual-exemption-use-it-or-lose-it` — https://www.ac-accounts.co.uk/blog/christmas-is-a-time-for-giving-the-iht-annual-exemption-use-it-or-lose-it/
+- `christmas-is-the-time-for-giving` — https://www.ac-accounts.co.uk/blog/christmas-is-the-time-for-giving/
+- `claim-for-deduction-for-mileage-payments` — https://www.ac-accounts.co.uk/blog/claim-for-deduction-for-mileage-payments/
+- `claiming-tax-relief-on-employment-expenses-what-you-need-to-know` — https://www.ac-accounts.co.uk/blog/claiming-tax-relief-on-employment-expenses-what-you-need-to-know/
+- `class-2-nics-2024-25-error-identified-by-hmrc` — https://www.ac-accounts.co.uk/blog/class-2-nics-2024-25-error-identified-by-hmrc/
+- `class-2-nics-to-continue-for-self-employed` — https://www.ac-accounts.co.uk/blog/class-2-nics-to-continue-for-self-employed/
+- `client-spotlight-a-confident-start-how-ac-helped-rebecca-johnston-hair-get-set-up-for-success` — https://www.ac-accounts.co.uk/blog/client-spotlight-a-confident-start-how-ac-helped-rebecca-johnston-hair-get-set-up-for-success/
+- `client-spotlight-supporting-after-the-bell-school-support-ltd-with-their-growing-educational-services` — https://www.ac-accounts.co.uk/blog/client-spotlight-supporting-after-the-bell-school-support-ltd-with-their-growing-educational-services/
+- `client-spotlight-supporting-searchmodes-growth-with-trusted-no-nonsense-accounting` — https://www.ac-accounts.co.uk/blog/client-spotlight-supporting-searchmodes-growth-with-trusted-no-nonsense-accounting/
+- `company-buy-back-of-shares-as-an-alternative-exit` — https://www.ac-accounts.co.uk/blog/company-buy-back-of-shares-as-an-alternative-exit/
+- `company-carrying-research-development` — https://www.ac-accounts.co.uk/blog/company-carrying-research-development/
+- `company-cars-the-choice-is-yours` — https://www.ac-accounts.co.uk/blog/company-cars-the-choice-is-yours/
+- `company-loss-relief-can-be-claimed-early` — https://www.ac-accounts.co.uk/blog/company-loss-relief-can-be-claimed-early/
+- `company-van-not-van` — https://www.ac-accounts.co.uk/blog/company-van-not-van/
+- `consider-buying-new-equipment-before-your-business-year-end` — https://www.ac-accounts.co.uk/blog/consider-buying-new-equipment-before-your-business-year-end/
+- `considering-an-electric-company-car` — https://www.ac-accounts.co.uk/blog/considering-an-electric-company-car/
+- `construction-and-building-industry-changes-vat-domestic-reverse-charges` — https://www.ac-accounts.co.uk/blog/construction-and-building-industry-changes-vat-domestic-reverse-charges/
+- `consultations-issued-on-tax-day-by-treasury` — https://www.ac-accounts.co.uk/blog/consultations-issued-on-tax-day-by-treasury/
+- `contractor-no-more-umbrella-benefits` — https://www.ac-accounts.co.uk/blog/contractor-no-more-umbrella-benefits/
+- `corporate-and-business-tax-outlined-in-the-spring-budget-2024` — https://www.ac-accounts.co.uk/blog/corporate-and-business-tax-outlined-in-the-spring-budget-2024/
+- `could-salary-sacrifice-boost-your-teams-pension-pot-and-save-you-money` — https://www.ac-accounts.co.uk/blog/could-salary-sacrifice-boost-your-teams-pension-pot-and-save-you-money/
+- `delivering-effective-training-to-your-team-remotely` — https://www.ac-accounts.co.uk/blog/delivering-effective-training-to-your-team-remotely/
+- `diary-of-main-tax-events-january-february-2026` — https://www.ac-accounts.co.uk/blog/diary-of-main-tax-events-january-february-2026/
+- `dividend-income-reduced-0-band` — https://www.ac-accounts.co.uk/blog/dividend-income-reduced-0-band/
+- `dividends-increased-scrutiny-and-new-reporting-requirements` — https://www.ac-accounts.co.uk/blog/dividends-increased-scrutiny-and-new-reporting-requirements/
+- `do-knee-jerk-lump-sum-pension-withdrawals-make-sense` — https://www.ac-accounts.co.uk/blog/do-knee-jerk-lump-sum-pension-withdrawals-make-sense/
+- `do-you-need-a-desk-for-everyone-in-your-office` — https://www.ac-accounts.co.uk/blog/do-you-need-a-desk-for-everyone-in-your-office/
+- `dont-be-late-in-paying-your-personal-tax-bill-2` — https://www.ac-accounts.co.uk/blog/dont-be-late-in-paying-your-personal-tax-bill-2/
+- `dont-be-late-in-paying-your-personal-tax-bill` — https://www.ac-accounts.co.uk/blog/dont-be-late-in-paying-your-personal-tax-bill/
+- `dont-lose-personal-allowance` — https://www.ac-accounts.co.uk/blog/dont-lose-personal-allowance/
+- `dont-lose-your-personal-allowance-2` — https://www.ac-accounts.co.uk/blog/dont-lose-your-personal-allowance-2/
+- `dont-lose-your-personal-allowance` — https://www.ac-accounts.co.uk/blog/dont-lose-your-personal-allowance/
+- `double-cab-shake-up-new-tax-rules-for-pick-ups-from-april-2025` — https://www.ac-accounts.co.uk/blog/double-cab-shake-up-new-tax-rules-for-pick-ups-from-april-2025/
+- `downsizing-smaller-property` — https://www.ac-accounts.co.uk/blog/downsizing-smaller-property/
+- `e-commerce-and-other-businesses-moving-goods-between-uk-and-eu` — https://www.ac-accounts.co.uk/blog/e-commerce-and-other-businesses-moving-goods-between-uk-and-eu/
+- `emi-share-option-scheme-receives-state-aid-approval` — https://www.ac-accounts.co.uk/blog/emi-share-option-scheme-receives-state-aid-approval/
+- `employees-working-from-home-expenses` — https://www.ac-accounts.co.uk/blog/employees-working-from-home-expenses/
+- `employer-provided-vehicles-and-taxable-benefits-in-kind` — https://www.ac-accounts.co.uk/blog/employer-provided-vehicles-and-taxable-benefits-in-kind/
+- `employment-allowance-do-you-qualify` — https://www.ac-accounts.co.uk/blog/employment-allowance-do-you-qualify/
+- `employment-expenses-important-change-to-working-from-home-relief` — https://www.ac-accounts.co.uk/blog/employment-expenses-important-change-to-working-from-home-relief/
+- `employment-related-securities-returns-deadline-6-july-2025` — https://www.ac-accounts.co.uk/blog/employment-related-securities-returns-deadline-6-july-2025/
+- `employment-status-supreme-court-ruling` — https://www.ac-accounts.co.uk/blog/employment-status-supreme-court-ruling/
+- `end-of-tax-year-payroll-procedures` — https://www.ac-accounts.co.uk/blog/end-of-tax-year-payroll-procedures/
+- `eu-vat-changes-from-1-july-2021-the-ioss-import-one-stop-shop-scheme` — https://www.ac-accounts.co.uk/blog/eu-vat-changes-from-1-july-2021-the-ioss-import-one-stop-shop-scheme/
+- `european-property-owners-face-higher-tax-bills` — https://www.ac-accounts.co.uk/blog/european-property-owners-face-higher-tax-bills/
+- `executing-your-strategy` — https://www.ac-accounts.co.uk/blog/executing-your-strategy/
+- `extension-of-first-year-allowances-for-zero-emission-cars-and-electric-vehicle-charging-points` — https://www.ac-accounts.co.uk/blog/extension-of-first-year-allowances-for-zero-emission-cars-and-electric-vehicle-charging-points/
+- `extracting-profit-from-the-family-company` — https://www.ac-accounts.co.uk/blog/extracting-profit-from-the-family-company/
+- `family-companies-and-auto-enrolment` — https://www.ac-accounts.co.uk/blog/family-companies-and-auto-enrolment/
+- `fraud-and-scam-protection-for-your-business` — https://www.ac-accounts.co.uk/blog/fraud-and-scam-protection-for-your-business/
+- `furnished-holiday-letting-business-not-business-iht-relief` — https://www.ac-accounts.co.uk/blog/furnished-holiday-letting-business-not-business-iht-relief/
+- `furnished-holiday-lettings-the-rules-have-now-changed` — https://www.ac-accounts.co.uk/blog/furnished-holiday-lettings-the-rules-have-now-changed/
+- `further-changes-to-entrepreneurs-relief` — https://www.ac-accounts.co.uk/blog/further-changes-to-entrepreneurs-relief/
+- `get-25-towards-your-summer-childcare-costs-heres-how` — https://www.ac-accounts.co.uk/blog/get-25-towards-your-summer-childcare-costs-heres-how/
+- `get-britain-working-white-paper-reforms-to-employment-support-announced` — https://www.ac-accounts.co.uk/blog/get-britain-working-white-paper-reforms-to-employment-support-announced/
+- `get-ready-for-more-rd-changes` — https://www.ac-accounts.co.uk/blog/get-ready-for-more-rd-changes/
+- `get-ready-for-more-research-and-development-changes` — https://www.ac-accounts.co.uk/blog/get-ready-for-more-research-and-development-changes/
+- `get-ready-for-the-new-off-payroll-working-rules` — https://www.ac-accounts.co.uk/blog/get-ready-for-the-new-off-payroll-working-rules/
+- `getting-ready-for-making-tax-digital` — https://www.ac-accounts.co.uk/blog/getting-ready-for-making-tax-digital/
+- `gift-aid-your-donations-to-help-ukraine` — https://www.ac-accounts.co.uk/blog/gift-aid-your-donations-to-help-ukraine/
+- `gifts-to-charity-and-gift-aid` — https://www.ac-accounts.co.uk/blog/gifts-to-charity-and-gift-aid/
+- `good-business-charter` — https://www.ac-accounts.co.uk/blog/good-business-charter/
+- `good-luck-to-everyone-running-the-manchester-marathon` — https://www.ac-accounts.co.uk/blog/good-luck-to-everyone-running-the-manchester-marathon/
+- `good-retirement-planning-is-about-more-than-your-pension-and-money` — https://www.ac-accounts.co.uk/blog/good-retirement-planning-is-about-more-than-your-pension-and-money/
+- `government-changes-to-the-company-share-option-plan-scheme` — https://www.ac-accounts.co.uk/blog/government-changes-to-the-company-share-option-plan-scheme/
+- `government-tax-free-childcare-accounts` — https://www.ac-accounts.co.uk/blog/government-tax-free-childcare-accounts/
+- `green-homes-grant-make-energy-improvements-to-your-home` — https://www.ac-accounts.co.uk/blog/green-homes-grant-make-energy-improvements-to-your-home/
+- `have-you-paid-your-personal-tax-bill` — https://www.ac-accounts.co.uk/blog/have-you-paid-your-personal-tax-bill/
+- `high-income-child-benefit-charge-and-state-pension` — https://www.ac-accounts.co.uk/blog/high-income-child-benefit-charge-and-state-pension/
+- `high-income-child-benefit-charges-not-valued` — https://www.ac-accounts.co.uk/blog/high-income-child-benefit-charges-not-valued/
+- `hmrc-is-changing-heres-what-you-need-to-know` — https://www.ac-accounts.co.uk/blog/hmrc-is-changing-heres-what-you-need-to-know/
+- `hmrc-may-allow-tax-refunds-for-anticipated-company-losses` — https://www.ac-accounts.co.uk/blog/hmrc-may-allow-tax-refunds-for-anticipated-company-losses/
+- `hmrc-mileage-rates-increase-for-2026-27` — https://www.ac-accounts.co.uk/blog/hmrc-mileage-rates-increase-for-2026-27/
+- `hmrc-official-rate-of-interest-only-2-25` — https://www.ac-accounts.co.uk/blog/hmrc-official-rate-of-interest-only-2-25/
+- `hmrc-official-rate-of-interest-remains-at-2-25` — https://www.ac-accounts.co.uk/blog/hmrc-official-rate-of-interest-remains-at-2-25/
+- `hmrc-penalties-for-careless-and-deliberate-errors` — https://www.ac-accounts.co.uk/blog/hmrc-penalties-for-careless-and-deliberate-errors/
+- `hmrc-publish-more-details-for-mtd-for-income-tax-reports` — https://www.ac-accounts.co.uk/blog/hmrc-publish-more-details-for-mtd-for-income-tax-reports/
+- `hmrc-publish-updated-guidance-on-work-travel` — https://www.ac-accounts.co.uk/blog/hmrc-publish-updated-guidance-on-work-travel/
+- `hmrc-spring-update-2025-key-tax-changes-for-employers-and-the-self-employed` — https://www.ac-accounts.co.uk/blog/hmrc-spring-update-2025-key-tax-changes-for-employers-and-the-self-employed/
+- `hmrc-support-with-childcare-costs` — https://www.ac-accounts.co.uk/blog/hmrc-support-with-childcare-costs/
+- `hmrc-targets-small-businesses-over-vat` — https://www.ac-accounts.co.uk/blog/hmrc-targets-small-businesses-over-vat/
+- `hmrcs-transformation-roadmap-the-shift-to-digital-by-2030` — https://www.ac-accounts.co.uk/blog/hmrcs-transformation-roadmap-the-shift-to-digital-by-2030/
+- `holiday-lettings-and-property-what-the-abolition-of-furnished-holiday-lettings-means-for-you` — https://www.ac-accounts.co.uk/blog/holiday-lettings-and-property-what-the-abolition-of-furnished-holiday-lettings-means-for-you/
+- `how-can-an-accountant-help-a-start-up-business` — https://www.ac-accounts.co.uk/blog/how-can-an-accountant-help-a-start-up-business/
+- `how-can-entrepreneurs-improve-their-financial-resilience` — https://www.ac-accounts.co.uk/blog/how-can-entrepreneurs-improve-their-financial-resilience/
+- `iht-relief-for-businesses-and-farms` — https://www.ac-accounts.co.uk/blog/iht-relief-for-businesses-and-farms/
+- `impact-on-the-high-income-child-benefit-charge` — https://www.ac-accounts.co.uk/blog/impact-on-the-high-income-child-benefit-charge/
+- `important-research-development-tax-changes-from-april-2023` — https://www.ac-accounts.co.uk/blog/important-research-development-tax-changes-from-april-2023/
+- `important-tax-deadlines-and-events` — https://www.ac-accounts.co.uk/blog/important-tax-deadlines-and-events/
+- `income-tax-changes-for-individuals` — https://www.ac-accounts.co.uk/blog/income-tax-changes-for-individuals/
+- `income-tax-on-inherited-pension-funds` — https://www.ac-accounts.co.uk/blog/income-tax-on-inherited-pension-funds/
+- `income-tax-self-assessment-penalties` — https://www.ac-accounts.co.uk/blog/income-tax-self-assessment-penalties/
+- `increase-in-working-tax-credits` — https://www.ac-accounts.co.uk/blog/increase-in-working-tax-credits/
+- `inflation-is-creating-more-entrepreneurs` — https://www.ac-accounts.co.uk/blog/inflation-is-creating-more-entrepreneurs/
+- `inheritance-tax-in-the-spotlight` — https://www.ac-accounts.co.uk/blog/inheritance-tax-in-the-spotlight/
+- `inheritance-tax-in-the-spring-2024-budget` — https://www.ac-accounts.co.uk/blog/inheritance-tax-in-the-spring-2024-budget/
+- `inheritance-tax-reliefs-a-welcome-u-turn-for-family-businesses-and-farms` — https://www.ac-accounts.co.uk/blog/inheritance-tax-reliefs-a-welcome-u-turn-for-family-businesses-and-farms/
+- `innovation-champion` — https://www.ac-accounts.co.uk/blog/innovation-champion/
+- `interaction-with-vat-flat-rate-scheme` — https://www.ac-accounts.co.uk/blog/interaction-with-vat-flat-rate-scheme/
+- `investing-an-unquoted-trading-company` — https://www.ac-accounts.co.uk/blog/investing-an-unquoted-trading-company/
+- `ir35-are-you-in-or-out` — https://www.ac-accounts.co.uk/blog/ir35-are-you-in-or-out/
+- `ir35-u-turn-announcement` — https://www.ac-accounts.co.uk/blog/ir35-u-turn-announcement/
+- `is-it-time-to-review-your-will-and-think-about-the-family-home` — https://www.ac-accounts.co.uk/blog/is-it-time-to-review-your-will-and-think-about-the-family-home/
+- `is-it-time-to-review-your-will-in-2022` — https://www.ac-accounts.co.uk/blog/is-it-time-to-review-your-will-in-2022/
+- `is-pension-tax-relief-under-the-spotlight` — https://www.ac-accounts.co.uk/blog/is-pension-tax-relief-under-the-spotlight/
+- `is-your-accountant-costing-you` — https://www.ac-accounts.co.uk/blog/is-your-accountant-costing-you/
+- `its-p11d-season-heres-what-employers-need-to-know-for-2024-25` — https://www.ac-accounts.co.uk/blog/its-p11d-season-heres-what-employers-need-to-know-for-2024-25/
+- `joint-and-several-liability-for-unpaid-vat` — https://www.ac-accounts.co.uk/blog/joint-and-several-liability-for-unpaid-vat/
+- `late-night-taxis-paid-by-employers` — https://www.ac-accounts.co.uk/blog/late-night-taxis-paid-by-employers/
+- `legislation-day-2025-what-it-means-for-small-businesses-and-start-ups` — https://www.ac-accounts.co.uk/blog/legislation-day-2025-what-it-means-for-small-businesses-and-start-ups/
+- `letters-from-hmrc-about-research-and-development-claims` — https://www.ac-accounts.co.uk/blog/letters-from-hmrc-about-research-and-development-claims/
+- `limited-company-or-self-employed-which-is-right-for-my-business` — https://www.ac-accounts.co.uk/blog/limited-company-or-self-employed-which-is-right-for-my-business/
+- `loans-to-participators-company-shareholders` — https://www.ac-accounts.co.uk/blog/loans-to-participators-company-shareholders/
+- `making-a-meal-of-it` — https://www.ac-accounts.co.uk/blog/making-a-meal-of-it/
+- `making-tax-digital-and-minimum-wage-changes` — https://www.ac-accounts.co.uk/blog/making-tax-digital-and-minimum-wage-changes/
+- `making-tax-digital-for-income-tax-coming-soon` — https://www.ac-accounts.co.uk/blog/making-tax-digital-for-income-tax-coming-soon/
+- `making-tax-digital-for-income-tax-delayed-again` — https://www.ac-accounts.co.uk/blog/making-tax-digital-for-income-tax-delayed-again/
+- `making-tax-digital-for-income-tax-is-now-live` — https://www.ac-accounts.co.uk/blog/making-tax-digital-for-income-tax-is-now-live/
+- `making-tax-digital-for-income-tax-key-updates-and-deadlines` — https://www.ac-accounts.co.uk/blog/making-tax-digital-for-income-tax-key-updates-and-deadlines/
+- `making-tax-digital-for-income-tax-key-updates` — https://www.ac-accounts.co.uk/blog/making-tax-digital-for-income-tax-key-updates/
+- `making-tax-digital-for-income-tax-postponed-to-2024-25` — https://www.ac-accounts.co.uk/blog/making-tax-digital-for-income-tax-postponed-to-2024-25/
+- `making-tax-digital-for-income-tax-time-is-ticking` — https://www.ac-accounts.co.uk/blog/making-tax-digital-for-income-tax-time-is-ticking/
+- `making-tax-digital-for-income-tax-what-you-need-to-know` — https://www.ac-accounts.co.uk/blog/making-tax-digital-for-income-tax-what-you-need-to-know/
+- `making-tax-digital-now-extended-to-more-businesses` — https://www.ac-accounts.co.uk/blog/making-tax-digital-now-extended-to-more-businesses/
+- `making-tax-digital-one-month-countdown-begins` — https://www.ac-accounts.co.uk/blog/making-tax-digital-one-month-countdown-begins/
+- `making-tax-digital-support-for-those-who-may-be-digitally-excluded` — https://www.ac-accounts.co.uk/blog/making-tax-digital-support-for-those-who-may-be-digitally-excluded/
+- *(+220 more)*
 
-## MTD & digital tax (31 gap topics, 31 competitor pages)
+## srjca.com (215 gap candidates)
 
-- [x1] `are-you-ready-for-mtd-for-income-tax`
-  - a-wise.co.uk: https://a-wise.co.uk/are-you-ready-for-mtd-for-income-tax/
-- [x1] `choosing-the-right-mtd-compatible-software`
-  - samera.co.uk: https://samera.co.uk/newsletter/choosing-the-right-mtd-compatible-software/
-- [x1] `getting-ready-for-making-tax-digital`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/getting-ready-for-making-tax-digital/
-- [x1] `how-accountants-can-help-with-making-tax-digital`
-  - a-wise.co.uk: https://a-wise.co.uk/making-tax-digital-hub/how-accountants-can-help-with-making-tax-digital/
-- [x1] `how-mtd-helps-reduce-errors-and-penalties`
-  - samera.co.uk: https://samera.co.uk/newsletter/how-mtd-helps-reduce-errors-and-penalties/
-- [x1] `how-quarterly-submissions-actually-work`
-  - samera.co.uk: https://samera.co.uk/newsletter/how-quarterly-submissions-actually-work/
-- [x1] `making-tax-digital-and-minimum-wage-changes`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/making-tax-digital-and-minimum-wage-changes/
-- [x1] `making-tax-digital-deadlines-and-key-dates`
-  - a-wise.co.uk: https://a-wise.co.uk/making-tax-digital-hub/making-tax-digital-deadlines-and-key-dates/
-- [x1] `making-tax-digital-for-income-tax-coming-soon`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/making-tax-digital-for-income-tax-coming-soon/
-- [x1] `making-tax-digital-for-income-tax-delayed-again`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/making-tax-digital-for-income-tax-delayed-again/
-- [x1] `making-tax-digital-for-limited-companies`
-  - a-wise.co.uk: https://a-wise.co.uk/making-tax-digital-hub/making-tax-digital-for-limited-companies/
-- [x1] `making-tax-digital-for-sole-traders`
-  - a-wise.co.uk: https://a-wise.co.uk/making-tax-digital-hub/making-tax-digital-for-sole-traders/
-- [x1] `making-tax-digital-itsa-software-and-training`
-  - samera.co.uk: https://samera.co.uk/service/making-tax-digital-itsa-software-and-training/
-- [x1] `making-tax-digital-now-extended-to-more-businesses`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/making-tax-digital-now-extended-to-more-businesses/
-- [x1] `making-tax-digital-one-month-countdown-begins`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/making-tax-digital-one-month-countdown-begins/
-- [x1] `making-tax-digital-timeline-and-rollout`
-  - a-wise.co.uk: https://a-wise.co.uk/making-tax-digital-hub/making-tax-digital-timeline-and-rollout/
-- [x1] `making-tax-digital-why-put-it-off`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/industry-news/making-tax-digital-why-put-it-off/
-- [x1] `mtd-and-jointly-owned-property-what-you-need-to-know`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/mtd-and-jointly-owned-property-what-you-need-to-know/
-- [x1] `mtd-exemptions-and-deferrals`
-  - a-wise.co.uk: https://a-wise.co.uk/making-tax-digital-hub/mtd-exemptions-and-deferrals/
-- [x1] `mtd-for-income-tax-faqs`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/mtd-for-income-tax-faqs/
-- [x1] `mtd-for-income-tax-nearly-there`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/mtd-for-income-tax-nearly-there/
-- [x1] `mtd-for-income-tax-quarterly-information-to-be-reported-by-businesses`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/mtd-for-income-tax-quarterly-information-to-be-reported-by-businesses/
-- [x1] `mtd-for-income-tax-reporting`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/mtd-for-income-tax-reporting/
-- [x1] `mtd-for-landlords`
-  - djh.co.uk: https://www.djh.co.uk/mtd-for-landlords/
-- [x1] `mtd-software-hacks-save-without-cutting-corners`
-  - samera.co.uk: https://samera.co.uk/newsletter/mtd-software-hacks-save-without-cutting-corners/
-- [x1] `mtd-webinars`
-  - djh.co.uk: https://www.djh.co.uk/mtd-webinars/
-- [x1] `preparing-your-business-for-mtd-a-practical-action-plan`
-  - samera.co.uk: https://samera.co.uk/newsletter/preparing-your-business-for-mtd-a-practical-action-plan/
-- [x1] `signing-up-for-making-tax-digital`
-  - a-wise.co.uk: https://a-wise.co.uk/making-tax-digital-hub/signing-up-for-making-tax-digital/
-- [x1] `what-is-mtd-bridging-software`
-  - a-wise.co.uk: https://a-wise.co.uk/making-tax-digital-hub/what-is-mtd-bridging-software/
-- [x1] `what-you-must-record-digitally-under-mtd`
-  - samera.co.uk: https://samera.co.uk/newsletter/what-you-must-record-digitally-under-mtd/
-- [x1] `who-must-join-mtd-and-when`
-  - samera.co.uk: https://samera.co.uk/newsletter/who-must-join-mtd-and-when/
+- `3-largest-expenses-doctors-physicians-surgeons-can-deduct-tax-returns` — https://www.srjca.com/blog/3-largest-expenses-doctors-physicians-surgeons-can-deduct-tax-returns/
+- `4-common-tax-write-offs-deductions-small-business` — https://www.srjca.com/blog/4-common-tax-write-offs-deductions-small-business/
+- `5-fantastic-tips-to-reduce-your-taxes-on-employment-income` — https://www.srjca.com/blog/5-fantastic-tips-to-reduce-your-taxes-on-employment-income/
+- `5-things-doctors-physicians-surgeons-look-accounting-firm` — https://www.srjca.com/blog/5-things-doctors-physicians-surgeons-look-accounting-firm/
+- `5-tips-for-financing-a-new-car` — https://www.srjca.com/blog/5-tips-for-financing-a-new-car/
+- `ai-for-accountanting-and-financial-reporting` — https://www.srjca.com/blog/ai-for-accountanting-and-financial-reporting/
+- `are-changes-coming-to-the-sred-program` — https://www.srjca.com/blog/are-changes-coming-to-the-sred-program/
+- `ask-srj-what-are-the-benefits-of-owning-life-insurance-through-a-medicine-professional-corporation-vs-personally-owning-it` — https://www.srjca.com/blog/ask-srj-what-are-the-benefits-of-owning-life-insurance-through-a-medicine-professional-corporation-vs-personally-owning-it/
+- `assurance-services-beyond-audits` — https://www.srjca.com/blog/assurance-services-beyond-audits/
+- `audit-procedures-explained` — https://www.srjca.com/blog/audit-procedures-explained/
+- `audit-vs-review-engagement-canada` — https://www.srjca.com/blog/audit-vs-review-engagement-canada/
+- `audit-vs-review-vs-compilation-canada` — https://www.srjca.com/blog/audit-vs-review-vs-compilation-canada/
+- `benefits-of-incorporation-for-realtors-in-ontario` — https://www.srjca.com/blog/benefits-of-incorporation-for-realtors-in-ontario/
+- `benefits-of-outsourcing-payroll-services` — https://www.srjca.com/blog/benefits-of-outsourcing-payroll-services/
+- `benefits-of-tax-free-investing` — https://www.srjca.com/blog/benefits-of-tax-free-investing/
+- `best-bookkeeping-software-for-small-businesses-in-canada` — https://www.srjca.com/blog/best-bookkeeping-software-for-small-businesses-in-canada/
+- `best-financial-management-tips-for-startup-in-mississauga` — https://www.srjca.com/blog/best-financial-management-tips-for-startup-in-mississauga/
+- `best-funding-choices-for-canadian-start-ups` — https://www.srjca.com/blog/best-funding-choices-for-canadian-start-ups/
+- `bill-145-trust-in-real-estate-services-act-2020` — https://www.srjca.com/blog/bill-145-trust-in-real-estate-services-act-2020/
+- `business-answered-what-is-orpp-ontario-retirement-pension-plan-and-how-does-it-affect-me` — https://www.srjca.com/blog/business-answered-what-is-orpp-ontario-retirement-pension-plan-and-how-does-it-affect-me/
+- `business-damages` — https://www.srjca.com/blog/business-damages/
+- `business-valuation-in-toronto-beyond-the-financial-statements` — https://www.srjca.com/blog/business-valuation-in-toronto-beyond-the-financial-statements/
+- `business-valuation-principles-rules-thumb` — https://www.srjca.com/blog/business-valuation-principles-rules-thumb/
+- `can-i-deduct-my-home-office-expenses` — https://www.srjca.com/blog/can-i-deduct-my-home-office-expenses/
+- `can-you-receive-a-tax-credit-for-political-donations` — https://www.srjca.com/blog/can-you-receive-a-tax-credit-for-political-donations/
+- `canada-emergency-business-account-ceba-loan` — https://www.srjca.com/blog/canada-emergency-business-account-ceba-loan/
+- `canadian-entrepreneurs-capital-gains-tax-incentives` — https://www.srjca.com/blog/canadian-entrepreneurs-capital-gains-tax-incentives/
+- `canadian-government-funding-for-software-development` — https://www.srjca.com/blog/canadian-government-funding-for-software-development/
+- `canadian-government-grants-for-small-businesses` — https://www.srjca.com/blog/canadian-government-grants-for-small-businesses/
+- `canadian-personal-tax-deadline` — https://www.srjca.com/blog/canadian-personal-tax-deadline/
+- `canadian-tax-obligations-for-non-residents` — https://www.srjca.com/blog/canadian-tax-obligations-for-non-residents/
+- `financial-freedom` — https://www.srjca.com/blog/category/financial-freedom/
+- `financial-statement-audit` — https://www.srjca.com/blog/category/financial-statement-audit/
+- `international-tax` — https://www.srjca.com/blog/category/international-tax/
+- `personal-accounting` — https://www.srjca.com/blog/category/personal-accounting/
+- `child-care-expenses-tax-benefits` — https://www.srjca.com/blog/child-care-expenses-tax-benefits/
+- `common-bookkeeping-mistakes-small-businesses-make` — https://www.srjca.com/blog/common-bookkeeping-mistakes-small-businesses-make/
+- `comprehensive-guide-to-canadian-tax-updates-and-key-dates` — https://www.srjca.com/blog/comprehensive-guide-to-canadian-tax-updates-and-key-dates/
+- `comprehensive-guide-to-structuring-compensation-for-canadian-business-owners` — https://www.srjca.com/blog/comprehensive-guide-to-structuring-compensation-for-canadian-business-owners/
+- `comprehensive-guide-to-the-canadian-sred-program` — https://www.srjca.com/blog/comprehensive-guide-to-the-canadian-sred-program/
+- `consultation-on-the-underused-housing-tax-uht-act-in-canada` — https://www.srjca.com/blog/consultation-on-the-underused-housing-tax-uht-act-in-canada/
+- `convert-sole-proprietorship-corporation` — https://www.srjca.com/blog/convert-sole-proprietorship-corporation/
+- `corporate-minute-book` — https://www.srjca.com/blog/corporate-minute-book/
+- `corporate-tax-deadline` — https://www.srjca.com/blog/corporate-tax-deadline/
+- `corporate-taxation-of-investment-income` — https://www.srjca.com/blog/corporate-taxation-of-investment-income/
+- `covid-19-and-tax-update` — https://www.srjca.com/blog/covid-19-and-tax-update/
+- `cpp-and-ei-considerations-for-the-self-employed-business-owners-and-owner-managers` — https://www.srjca.com/blog/cpp-and-ei-considerations-for-the-self-employed-business-owners-and-owner-managers/
+- `cra-audit-vs-financial-statement-audit` — https://www.srjca.com/blog/cra-audit-vs-financial-statement-audit/
+- `cra-gift-tax-rules-for-employers` — https://www.srjca.com/blog/cra-gift-tax-rules-for-employers/
+- `cra-voluntary-disclosures-program` — https://www.srjca.com/blog/cra-voluntary-disclosures-program/
+- `cross-border-tax-filing-essential-tips-for-non-residents-and-dual-citizens` — https://www.srjca.com/blog/cross-border-tax-filing-essential-tips-for-non-residents-and-dual-citizens/
+- `cryptocurrency-taxes-canada` — https://www.srjca.com/blog/cryptocurrency-taxes-canada/
+- `death-tax-canada-rrsp-rrif-final-return` — https://www.srjca.com/blog/death-tax-canada-rrsp-rrif-final-return/
+- `do-you-have-to-charge-the-contractor-with-gst-hst` — https://www.srjca.com/blog/do-you-have-to-charge-the-contractor-with-gst-hst/
+- `donating-shares-of-a-public-company` — https://www.srjca.com/blog/donating-shares-of-a-public-company/
+- `effective-payroll-management-for-canadian-small-businesses` — https://www.srjca.com/blog/effective-payroll-management-for-canadian-small-businesses/
+- `employee-or-not-an-employee-that-is-the-question` — https://www.srjca.com/blog/employee-or-not-an-employee-that-is-the-question/
+- `estate-planning-canada-checklist-for-families` — https://www.srjca.com/blog/estate-planning-canada-checklist-for-families/
+- `evaluating-an-offer-for-your-business` — https://www.srjca.com/blog/evaluating-an-offer-for-your-business/
+- `expert-tax-advice-from-oakvilles-leading-accounting-firm` — https://www.srjca.com/blog/expert-tax-advice-from-oakvilles-leading-accounting-firm/
+- `federal-budget-canada` — https://www.srjca.com/blog/federal-budget-canada/
+- `file-taxes-if-self-employed-in-ontario` — https://www.srjca.com/blog/file-taxes-if-self-employed-in-ontario/
+- `fun-halloween-costumes-for-the-accounting-geek-inside-you` — https://www.srjca.com/blog/fun-halloween-costumes-for-the-accounting-geek-inside-you/
+- `get-your-sred-tax-credits-and-benefits` — https://www.srjca.com/blog/get-your-sred-tax-credits-and-benefits/
+- `going-into-business-without-an-mba-the-benefits-of-consulting-with-a-chartered-accountant-in-toronto` — https://www.srjca.com/blog/going-into-business-without-an-mba-the-benefits-of-consulting-with-a-chartered-accountant-in-toronto/
+- `gst-hst-guide-for-digital-businesses` — https://www.srjca.com/blog/gst-hst-guide-for-digital-businesses/
+- `healthcare-finance-accounting-scotiabank-buy-build-practice` — https://www.srjca.com/blog/healthcare-finance-accounting-scotiabank-buy-build-practice/
+- `holiday-spending-tips` — https://www.srjca.com/blog/holiday-spending-tips/
+- `how-a-north-york-accounting-firm-can-help-your-startup-thrive` — https://www.srjca.com/blog/how-a-north-york-accounting-firm-can-help-your-startup-thrive/
+- `how-a-t5-slip-should-be-prepared` — https://www.srjca.com/blog/how-a-t5-slip-should-be-prepared/
+- `how-business-owners-can-maximize-tax-savings-with-rrsp-contributions` — https://www.srjca.com/blog/how-business-owners-can-maximize-tax-savings-with-rrsp-contributions/
+- `how-can-foreign-companies-take-advantage-of-sred` — https://www.srjca.com/blog/how-can-foreign-companies-take-advantage-of-sred/
+- `how-can-physicians-dentists-surgeons-and-other-dental-and-medical-specialists-benefit-from-sred` — https://www.srjca.com/blog/how-can-physicians-dentists-surgeons-and-other-dental-and-medical-specialists-benefit-from-sred/
+- `how-does-sred-affect-your-taxes` — https://www.srjca.com/blog/how-does-sred-affect-your-taxes/
+- `how-tech-firms-can-optimize-tax-planning` — https://www.srjca.com/blog/how-tech-firms-can-optimize-tax-planning/
+- `how-technology-is-revolutionizing-accounting-practices-in-mississaugas-top-firm` — https://www.srjca.com/blog/how-technology-is-revolutionizing-accounting-practices-in-mississaugas-top-firm/
+- `how-the-value-of-an-sred-claim-is-determined` — https://www.srjca.com/blog/how-the-value-of-an-sred-claim-is-determined/
+- `income-splitting-canada` — https://www.srjca.com/blog/income-splitting-canada/
+- `inheritance-tax-and-cross-border-rules` — https://www.srjca.com/blog/inheritance-tax-and-cross-border-rules/
+- `investment-tax-credits-boost-returns-reduce-taxes` — https://www.srjca.com/blog/investment-tax-credits-boost-returns-reduce-taxes/
+- `is-saas-software-as-a-service-taxable-in-canada` — https://www.srjca.com/blog/is-saas-software-as-a-service-taxable-in-canada/
+- `is-your-industry-eligible-for-tax-credits` — https://www.srjca.com/blog/is-your-industry-eligible-for-tax-credits/
+- `leasing-vs-financing-car-in-canada` — https://www.srjca.com/blog/leasing-vs-financing-car-in-canada/
+- `long-form-census-is-back-why-it-makes-an-experts-life-easier` — https://www.srjca.com/blog/long-form-census-is-back-why-it-makes-an-experts-life-easier/
+- `management-letters-after-an-audit` — https://www.srjca.com/blog/management-letters-after-an-audit/
+- `maximize-your-startups-profitability-essential-tax-strategies-to-keep-in-mind` — https://www.srjca.com/blog/maximize-your-startups-profitability-essential-tax-strategies-to-keep-in-mind/
+- `measures-announced-to-respond-to-covid-19-for-individuals` — https://www.srjca.com/blog/measures-announced-to-respond-to-covid-19-for-individuals/
+- `measures-announced-to-respond-to-post-covid-19-for-businesses` — https://www.srjca.com/blog/measures-announced-to-respond-to-post-covid-19-for-businesses/
+- `misconceptions-sred` — https://www.srjca.com/blog/misconceptions-sred/
+- `mistake-on-your-tax-return-in-canada` — https://www.srjca.com/blog/mistake-on-your-tax-return-in-canada/
+- `moving-expenses-tax-deductions-in-canada` — https://www.srjca.com/blog/moving-expenses-tax-deductions-in-canada/
+- `new-home-renovation-tax-credit-by-cra` — https://www.srjca.com/blog/new-home-renovation-tax-credit-by-cra/
+- `new-trust-reporting-requirement` — https://www.srjca.com/blog/new-trust-reporting-requirement/
+- `nrc-irap-funding-canada-sme-support-guide` — https://www.srjca.com/blog/nrc-irap-funding-canada-sme-support-guide/
+- `nrc-irap-grants-for-canadian-businesses` — https://www.srjca.com/blog/nrc-irap-grants-for-canadian-businesses/
+- `ontario-interactive-digital-media-tax-credit-oidmtc` — https://www.srjca.com/blog/ontario-interactive-digital-media-tax-credit-oidmtc/
+- `ottawas-initiative-proposing-sales-tax-exemption-for-counselling-and-psychotherapy-services` — https://www.srjca.com/blog/ottawas-initiative-proposing-sales-tax-exemption-for-counselling-and-psychotherapy-services/
+- `payroll-compliance-services` — https://www.srjca.com/blog/payroll-compliance-services/
+- `preparing-for-a-financial-statement-audit` — https://www.srjca.com/blog/preparing-for-a-financial-statement-audit/
+- `prioritize-paying-off-medical-school-loans` — https://www.srjca.com/blog/prioritize-paying-off-medical-school-loans/
+- `private-business-valuation-toronto-normalizing-cash-flow` — https://www.srjca.com/blog/private-business-valuation-toronto-normalizing-cash-flow/
+- `private-health-service-plans-how-your-familys-medical-bills-can-save-your-business-a-lot-of-money` — https://www.srjca.com/blog/private-health-service-plans-how-your-familys-medical-bills-can-save-your-business-a-lot-of-money/
+- `pros-and-cons-of-departing-from-canada-as-a-resident` — https://www.srjca.com/blog/pros-and-cons-of-departing-from-canada-as-a-resident/
+- `psychotherapy-is-now-tax-free` — https://www.srjca.com/blog/psychotherapy-is-now-tax-free/
+- `quantifying-damages-assessing-personal-income-of-employed-individuals` — https://www.srjca.com/blog/quantifying-damages-assessing-personal-income-of-employed-individuals/
+- `quickbooks-vs-xero` — https://www.srjca.com/blog/quickbooks-vs-xero/
+- `real-estate-investors-5-things-know-buying-property-canada` — https://www.srjca.com/blog/real-estate-investors-5-things-know-buying-property-canada/
+- `reasons-behind-employing-third-party-payroll-services` — https://www.srjca.com/blog/reasons-behind-employing-third-party-payroll-services/
+- `requirements-for-sales-tax-in-canada-when-selling-goods-or-services` — https://www.srjca.com/blog/requirements-for-sales-tax-in-canada-when-selling-goods-or-services/
+- `review-engagements-limited-assurance-canada` — https://www.srjca.com/blog/review-engagements-limited-assurance-canada/
+- `rrsp-contribution-deadline` — https://www.srjca.com/blog/rrsp-contribution-deadline/
+- `select-sred-consultant` — https://www.srjca.com/blog/select-sred-consultant/
+- `selling-business-importance-business-valuation-services-toronto` — https://www.srjca.com/blog/selling-business-importance-business-valuation-services-toronto/
+- `selling-shares-of-an-active-business-to-family-members-in-canada` — https://www.srjca.com/blog/selling-shares-of-an-active-business-to-family-members-in-canada/
+- `short-term-rental-tax-compliance-guide` — https://www.srjca.com/blog/short-term-rental-tax-compliance-guide/
+- `should-i-incorporate-my-business` — https://www.srjca.com/blog/should-i-incorporate-my-business/
+- `small-business-funding-basics-expert-guide-to-grants-and-tax-credits-in-canada` — https://www.srjca.com/blog/small-business-funding-basics-expert-guide-to-grants-and-tax-credits-in-canada/
+- `special-interest-purchasers` — https://www.srjca.com/blog/special-interest-purchasers/
+- `srj-chartered-accountants` — https://www.srjca.com/blog/srj-chartered-accountants/
+- `srjca-accounting-tax-firm-for-the-ontario-real-estate-industry` — https://www.srjca.com/blog/srjca-accounting-tax-firm-for-the-ontario-real-estate-industry/
+- `supporting-a-personal-injury-claim-for-a-child-or-young-adult` — https://www.srjca.com/blog/supporting-a-personal-injury-claim-for-a-child-or-young-adult/
+- `tax-deductions-for-small-businesses-in-canada` — https://www.srjca.com/blog/tax-deductions-for-small-businesses-in-canada/
+- `tax-deductions-on-rental-property-income-canada` — https://www.srjca.com/blog/tax-deductions-on-rental-property-income-canada/
+- `tax-efficient-ways-to-withdraw-money-from-your-business` — https://www.srjca.com/blog/tax-efficient-ways-to-withdraw-money-from-your-business/
+- `tax-planning-strategies-for-brampton-contractors-in-the-gig-economy` — https://www.srjca.com/blog/tax-planning-strategies-for-brampton-contractors-in-the-gig-economy/
+- `tax-planning-tips-for-canadian-doctors` — https://www.srjca.com/blog/tax-planning-tips-for-canadian-doctors/
+- `tax-tips-for-markham-residents-from-your-trusted-local-accounting-firm` — https://www.srjca.com/blog/tax-tips-for-markham-residents-from-your-trusted-local-accounting-firm/
+- `tax-tips-implications-of-owning-a-cottage-or-recreational-property` — https://www.srjca.com/blog/tax-tips-implications-of-owning-a-cottage-or-recreational-property/
+- `taxation-of-intangible-assets-in-canada` — https://www.srjca.com/blog/taxation-of-intangible-assets-in-canada/
+- `testimonial-alyza-raithatha-integra-health-centre` — https://www.srjca.com/blog/testimonial-alyza-raithatha-integra-health-centre/
+- `tfsas-empowering-business-owners-financial-growth` — https://www.srjca.com/blog/tfsas-empowering-business-owners-financial-growth/
+- `the-quick-method-of-accounting-for-gsthst` — https://www.srjca.com/blog/the-quick-method-of-accounting-for-gsthst/
+- `the-tax-benefits-of-shareholder-loans` — https://www.srjca.com/blog/the-tax-benefits-of-shareholder-loans/
+- `the-tax-impact-of-buying-back-gold-and-silver-jewellery` — https://www.srjca.com/blog/the-tax-impact-of-buying-back-gold-and-silver-jewellery/
+- `tips-to-pay-taxes-for-ecommerce-in-canada` — https://www.srjca.com/blog/tips-to-pay-taxes-for-ecommerce-in-canada/
+- `top-4-reasons-to-incorporate-your-business-with-a-chartered-accountant-in-toronto-number-3-is-something-every-business-owner-should-consider` — https://www.srjca.com/blog/top-4-reasons-to-incorporate-your-business-with-a-chartered-accountant-in-toronto-number-3-is-something-every-business-owner-should-consider/
+- `toronto-startups-guide-to-torontos-tech-scene` — https://www.srjca.com/blog/toronto-startups-guide-to-torontos-tech-scene/
+- `use-chartered-business-valuator-shareholder-buyout-transactions` — https://www.srjca.com/blog/use-chartered-business-valuator-shareholder-buyout-transactions/
+- `valuing-a-small-business` — https://www.srjca.com/blog/valuing-a-small-business/
+- `variable-or-fixed-rate-that-is-the-question` — https://www.srjca.com/blog/variable-or-fixed-rate-that-is-the-question/
+- `voluntary-disclosure-program` — https://www.srjca.com/blog/voluntary-disclosure-program/
+- `ways-to-choose-the-best-accounting-firm-for-your-business` — https://www.srjca.com/blog/ways-to-choose-the-best-accounting-firm-for-your-business/
+- `what-are-assurance-services-in-canada` — https://www.srjca.com/blog/what-are-assurance-services-in-canada/
+- `what-are-stock-options-and-how-are-they-taxed-in-canada` — https://www.srjca.com/blog/what-are-stock-options-and-how-are-they-taxed-in-canada/
+- `what-are-the-articles-of-incorporation` — https://www.srjca.com/blog/what-are-the-articles-of-incorporation/
+- `what-books-and-records-must-you-keep-for-your-business` — https://www.srjca.com/blog/what-books-and-records-must-you-keep-for-your-business/
+- `what-happens-inside-a-toronto-accounting-firm-all-year-round` — https://www.srjca.com/blog/what-happens-inside-a-toronto-accounting-firm-all-year-round/
+- `what-is-a-holding-company-and-when-should-i-set-one-up` — https://www.srjca.com/blog/what-is-a-holding-company-and-when-should-i-set-one-up/
+- `what-is-an-estate-freeze-and-how-can-it-benefit-your-familys-wealth` — https://www.srjca.com/blog/what-is-an-estate-freeze-and-how-can-it-benefit-your-familys-wealth/
+- `what-is-financial-statement-audit` — https://www.srjca.com/blog/what-is-financial-statement-audit/
+- `what-is-quickbooks-and-how-does-it-work` — https://www.srjca.com/blog/what-is-quickbooks-and-how-does-it-work/
+- `whats-name-michael-jordan-8-9-million` — https://www.srjca.com/blog/whats-name-michael-jordan-8-9-million/
+- `when-is-an-audit-required-in-canada` — https://www.srjca.com/blog/when-is-an-audit-required-in-canada/
+- `who-can-incorporate-in-canada-professional-corporations` — https://www.srjca.com/blog/who-can-incorporate-in-canada-professional-corporations/
+- `who-requires-audited-financial-statements` — https://www.srjca.com/blog/who-requires-audited-financial-statements/
+- `book-your-appointment` — https://www.srjca.com/book-your-appointment/
+- `bookkeeping-services` — https://www.srjca.com/bookkeeping-services/
+- `budgeting-and-business-forecasting-services-toronto` — https://www.srjca.com/budgeting-and-business-forecasting-services-toronto/
+- `burn-rate-and-cash-runway-calculator` — https://www.srjca.com/burn-rate-and-cash-runway-calculator/
+- `business-consulting-services-and-business-consulting-firm-toronto` — https://www.srjca.com/business-consulting-services-and-business-consulting-firm-toronto/
+- `business-financial-and-accounting-services-statements-toronto` — https://www.srjca.com/business-financial-and-accounting-services-statements-toronto/
+- `chartered-accountants-in-brampton` — https://www.srjca.com/chartered-accountants-in-brampton/
+- `chartered-accountants-toronto` — https://www.srjca.com/chartered-accountants-toronto/
+- `chemicals-industry` — https://www.srjca.com/chemicals-industry/
+- `chiropractic-professional-corporation-information-questionnaire` — https://www.srjca.com/chiropractic-professional-corporation-information-questionnaire/
+- `client-information-form` — https://www.srjca.com/client-information-form/
+- `cloud-accounting` — https://www.srjca.com/cloud-accounting/
+- `contact-us` — https://www.srjca.com/contact-us/
+- `corporate-and-business-valuation-services-toronto` — https://www.srjca.com/corporate-and-business-valuation-services-toronto/
+- `corporate-tax-accountant-and-tax-services-toronto` — https://www.srjca.com/corporate-tax-accountant-and-tax-services-toronto/
+- `covid-19-updates` — https://www.srjca.com/covid-19-updates/
+- `dentist-professional-corporation-information-questionnaire` — https://www.srjca.com/dentist-professional-corporation-information-questionnaire/
+- `dso-calculation-formula` — https://www.srjca.com/dso-calculation-formula/
+- `ebitda-calculator` — https://www.srjca.com/ebitda-calculator/
+- `estate-planning-services-toronto` — https://www.srjca.com/estate-planning-services-toronto/
+- `financial-statement-audit-toronto` — https://www.srjca.com/financial-statement-audit-toronto/
+- `financial-statement-review` — https://www.srjca.com/financial-statement-review/
+- `free-sred-consultation` — https://www.srjca.com/free-sred-consultation/
+- `general-manufacturing` — https://www.srjca.com/general-manufacturing/
+- `hst-and-gst-housing-rebate-ontario` — https://www.srjca.com/hst-and-gst-housing-rebate-ontario/
+- `incorporation-service-toronto-ontario` — https://www.srjca.com/incorporation-service-toronto-ontario/
+- `law-professional-corporation-information-questionnaire` — https://www.srjca.com/law-professional-corporation-information-questionnaire/
+- `life-sciences-biotech-industry` — https://www.srjca.com/life-sciences-biotech-industry/
+- `litigation-support-and-damage-quantification-services` — https://www.srjca.com/litigation-support-and-damage-quantification-services/
+- `medicine-professional-corporation-information-questionnaire` — https://www.srjca.com/medicine-professional-corporation-information-questionnaire/
+- `new-corporation-information-questionnaire` — https://www.srjca.com/new-corporation-information-questionnaire/
+- `notice-to-reader-financial-statements-canada` — https://www.srjca.com/notice-to-reader-financial-statements-canada/
+- `oil-gas-industry` — https://www.srjca.com/oil-gas-industry/
+- `outsource-bookkeeping` — https://www.srjca.com/outsource-bookkeeping/
+- `personal-engagement-letter` — https://www.srjca.com/personal-engagement-letter/
+- `personal-tax-accountant-toronto` — https://www.srjca.com/personal-tax-accountant-toronto/
+- `personal-tax-new-client-information-form` — https://www.srjca.com/personal-tax-new-client-information-form/
+- `psychology-professional-corporation-information-questionnaire` — https://www.srjca.com/psychology-professional-corporation-information-questionnaire/
+- `psycotherapist-professional-corporation-information-questionnaire` — https://www.srjca.com/psycotherapist-professional-corporation-information-questionnaire/
+- `self-employed-and-real-estate-tax-accountant-and-returns-toronto` — https://www.srjca.com/self-employed-and-real-estate-tax-accountant-and-returns-toronto/
+- `small-business-accounting-firm-toronto` — https://www.srjca.com/small-business-accounting-firm-toronto/
+- `small-business-tax-returns-and-accountant-toronto` — https://www.srjca.com/small-business-tax-returns-and-accountant-toronto/
+- `small-businesses` — https://www.srjca.com/small-businesses/
+- `software-it` — https://www.srjca.com/software-it/
+- `sred-calculator` — https://www.srjca.com/sred-calculator/
+- *(+15 more)*
 
-## Payroll, pensions & staff (26 gap topics, 26 competitor pages)
+## mccarthyaccountants.com (115 gap candidates)
 
-- [x1] `a-guide-to-payrolling-benefits-in-kind`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/a-guide-to-payrolling-benefits-in-kind/
-- [x1] `auto-enrolment`
-  - djh.co.uk: https://www.djh.co.uk/our-services/employment/auto-enrolment/
-- [x1] `cis-vs-paye-understanding-the-difference`
-  - a-wise.co.uk: https://a-wise.co.uk/cis-vs-paye-understanding-the-difference/
-- [x1] `employment-allowance-do-you-qualify`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/employment-allowance-do-you-qualify/
-- [x1] `end-of-tax-year-payroll-procedures`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/end-of-tax-year-payroll-procedures/
-- [x1] `family-companies-and-auto-enrolment`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/family-companies-and-auto-enrolment/
-- [x1] `get-ready-for-the-new-off-payroll-working-rules`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/get-ready-for-the-new-off-payroll-working-rules/
-- [x1] `important-changes-to-automatic-paye-refunds`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/important-changes-to-automatic-paye-refunds/
-- [x1] `national-insurance-contribution-bands-frozen`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/national-insurance-contribution-bands-frozen/
-- [x1] `national-insurance-increase`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/national-insurance-increase/
-- [x1] `national-insurance-rates`
-  - a-wise.co.uk: https://a-wise.co.uk/tax-rates-allowances/national-insurance-rates/
-- [x1] `off-payroll-working-check-employment-status-for-tax`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/off-payroll-working-check-employment-status-for-tax/
-- [x1] `off-payroll-working-lives-to-see-another-day`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/off-payroll-working-lives-to-see-another-day/
-- [x1] `partial-win-for-taxpayer-in-sdlt-ated-relief-case`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/partial-win-for-taxpayer-in-sdlt-ated-relief-case/
-- [x1] `paye-settlement-agreements-to-be-submitted-online`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/paye-settlement-agreements-to-be-submitted-online/
-- [x1] `payroll-and-pensions`
-  - samera.co.uk: https://samera.co.uk/service/payroll-and-pensions/
-- [x1] `payroll-calculator`
-  - dentalaccountantsscotland.co.uk: https://dentalaccountantsscotland.co.uk/resources/tax-calculators/payroll-calculator/
-- [x1] `payroll-for-acadamies`
-  - djh.co.uk: https://www.djh.co.uk/specialisms/education/payroll-for-acadamies/
-- [x1] `payroll-services`
-  - djh.co.uk: https://www.djh.co.uk/our-services/employment/payroll-services/
-- [x1] `payrolling-employees-benefits-in-kind`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/payrolling-employees-benefits-in-kind/
-- [x1] `review-of-off-payroll-working-rules`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/review-of-off-payroll-working-rules/
-- [x1] `the-employment-allowance-dont-forget-to-claim`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/the-employment-allowance-dont-forget-to-claim/
-- [x1] `the-employment-allowance-is-your-business-entitled`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/the-employment-allowance-is-your-business-entitled/
-- [x1] `understanding-auto-enrolment-for-your-small-business`
-  - a-wise.co.uk: https://a-wise.co.uk/understanding-auto-enrolment-for-your-small-business/
-- [x1] `what-is-a-unique-taxpayer-reference-utr`
-  - a-wise.co.uk: https://a-wise.co.uk/what-is-a-unique-taxpayer-reference-utr/
-- [x1] `what-is-voluntary-national-insurance`
-  - a-wise.co.uk: https://a-wise.co.uk/what-is-voluntary-national-insurance/
+- `12-5-corporation-tax-rate-provided-significant-boost-to-tax-and-jobs-esri` — https://www.mccarthyaccountants.com/12-5-corporation-tax-rate-provided-significant-boost-to-tax-and-jobs-esri/
+- `400-jobs-are-to-be-generated-in-24-start-up-companies` — https://www.mccarthyaccountants.com/400-jobs-are-to-be-generated-in-24-start-up-companies/
+- `audit-exemption` — https://www.mccarthyaccountants.com/audit-exemption/
+- `audit-services` — https://www.mccarthyaccountants.com/audit-services/
+- `banks-requested-to-give-homeowners-temporary-break` — https://www.mccarthyaccountants.com/banks-requested-to-give-homeowners-temporary-break/
+- `blanket-bank-guarantee-was-to-avoid-ecb-and-market-scrutiny` — https://www.mccarthyaccountants.com/blanket-bank-guarantee-was-to-avoid-ecb-and-market-scrutiny/
+- `budget-2012-day-1` — https://www.mccarthyaccountants.com/budget-2012-day-1/
+- `budget-2012-day-2` — https://www.mccarthyaccountants.com/budget-2012-day-2/
+- `budget-2013-summary` — https://www.mccarthyaccountants.com/budget-2013-summary/
+- `budget-2013` — https://www.mccarthyaccountants.com/budget-2013/
+- `budget-2014-summary` — https://www.mccarthyaccountants.com/budget-2014-summary/
+- `budget-2014` — https://www.mccarthyaccountants.com/budget-2014/
+- `budget-2015-summary` — https://www.mccarthyaccountants.com/budget-2015-summary/
+- `budget-2015` — https://www.mccarthyaccountants.com/budget-2015/
+- `budget-2021` — https://www.mccarthyaccountants.com/budget-2021/
+- `business-plan-guidelines` — https://www.mccarthyaccountants.com/business-plan-guidelines/
+- `businesses-learn-the-true-cost-of-being-irish` — https://www.mccarthyaccountants.com/businesses-learn-the-true-cost-of-being-irish/
+- `calculate-your-tax` — https://www.mccarthyaccountants.com/calculate-your-tax/
+- `capital-acquisitions-tax-cat-pay-file-deadline-reminder` — https://www.mccarthyaccountants.com/capital-acquisitions-tax-cat-pay-file-deadline-reminder/
+- `career-zoo` — https://www.mccarthyaccountants.com/career-zoo/
+- `claim-extra-tax-deductions` — https://www.mccarthyaccountants.com/claim-extra-tax-deductions/
+- `client-log-in` — https://www.mccarthyaccountants.com/client-log-in/
+- `company-formation-payment-declined` — https://www.mccarthyaccountants.com/company-formation-payment-declined/
+- `company-formation-payment-successful-2` — https://www.mccarthyaccountants.com/company-formation-payment-successful-2/
+- `company-formation` — https://www.mccarthyaccountants.com/company-formation/
+- `form-a-company` — https://www.mccarthyaccountants.com/company-formation/form-a-company/
+- `company-registration` — https://www.mccarthyaccountants.com/company-registration/
+- `company-secretary` — https://www.mccarthyaccountants.com/company-secretary/
+- `annual-return` — https://www.mccarthyaccountants.com/company-secretary/annual-return/
+- `strike-off-company` — https://www.mccarthyaccountants.com/company-secretary/strike-off-company/
+- `comptroller-and-auditor-general-says-overall-public-borrowing-has-increased-to-e148bn-at-the-end-of-2010` — https://www.mccarthyaccountants.com/comptroller-and-auditor-general-says-overall-public-borrowing-has-increased-to-e148bn-at-the-end-of-2010/
+- `find-us` — https://www.mccarthyaccountants.com/contact/find-us/
+- `debt-settlement-scheme` — https://www.mccarthyaccountants.com/debt-settlement-scheme/
+- `direct-debit` — https://www.mccarthyaccountants.com/direct-debit/
+- `do-you-need-to-file-a-tax-return` — https://www.mccarthyaccountants.com/do-you-need-to-file-a-tax-return/
+- `employee-prsi-to-apply-to-all-share-based-pay-received-in-2012` — https://www.mccarthyaccountants.com/employee-prsi-to-apply-to-all-share-based-pay-received-in-2012/
+- `employment-and-investment-incentiveeii` — https://www.mccarthyaccountants.com/employment-and-investment-incentiveeii/
+- `engagement-terms` — https://www.mccarthyaccountants.com/engagement-terms/
+- `esign-demo` — https://www.mccarthyaccountants.com/esign-demo/
+- `euro-leaders-seek-debt-crisis-solution-as-markets-tumble` — https://www.mccarthyaccountants.com/euro-leaders-seek-debt-crisis-solution-as-markets-tumble/
+- `european-markets-stage-rally` — https://www.mccarthyaccountants.com/european-markets-stage-rally/
+- `european-shares-rebound-as-ecb-begins-buying-bonds-2` — https://www.mccarthyaccountants.com/european-shares-rebound-as-ecb-begins-buying-bonds-2/
+- `evening-weekend-appointments` — https://www.mccarthyaccountants.com/evening-weekend-appointments/
+- `f35-deadline-15th-february-2012` — https://www.mccarthyaccountants.com/f35-deadline-15th-february-2012/
+- `form1-result` — https://www.mccarthyaccountants.com/form1-result/
+- `form10-result` — https://www.mccarthyaccountants.com/form10-result/
+- `form11-result` — https://www.mccarthyaccountants.com/form11-result/
+- `form2-result` — https://www.mccarthyaccountants.com/form2-result/
+- `form3-result` — https://www.mccarthyaccountants.com/form3-result/
+- `form4-result` — https://www.mccarthyaccountants.com/form4-result/
+- `form5-result` — https://www.mccarthyaccountants.com/form5-result/
+- `form6-result` — https://www.mccarthyaccountants.com/form6-result/
+- `form7-result` — https://www.mccarthyaccountants.com/form7-result/
+- `form8-result` — https://www.mccarthyaccountants.com/form8-result/
+- `form9-result` — https://www.mccarthyaccountants.com/form9-result/
+- `get-ireland-working-roadshow` — https://www.mccarthyaccountants.com/get-ireland-working-roadshow/
+- `global-stocks-slide-as-recession-fears-continue-to-hit-markets` — https://www.mccarthyaccountants.com/global-stocks-slide-as-recession-fears-continue-to-hit-markets/
+- `home-renovation-incentive-scheme` — https://www.mccarthyaccountants.com/home-renovation-incentive-scheme/
+- `homepage-slider-2` — https://www.mccarthyaccountants.com/homepage-slider-2/
+- `household-charge-exemptions` — https://www.mccarthyaccountants.com/household-charge-exemptions/
+- `household-charge-how-much-are-interest-penalties` — https://www.mccarthyaccountants.com/household-charge-how-much-are-interest-penalties/
+- `ireland-to-lead-recovery-from-sovereign-debt-turmoil` — https://www.mccarthyaccountants.com/ireland-to-lead-recovery-from-sovereign-debt-turmoil/
+- `irish-medical-organisation` — https://www.mccarthyaccountants.com/irish-medical-organisation/
+- `management-accountants` — https://www.mccarthyaccountants.com/management-accountants/
+- `mandatory-e-filing-next-phase-begins` — https://www.mccarthyaccountants.com/mandatory-e-filing-next-phase-begins/
+- `medical-accountant` — https://www.mccarthyaccountants.com/medical-accountant/
+- `minister-of-finance-to-reveal-three-year-plan-for-budget-cuts` — https://www.mccarthyaccountants.com/minister-of-finance-to-reveal-three-year-plan-for-budget-cuts/
+- `mortgage-interest-relief` — https://www.mccarthyaccountants.com/mortgage-interest-relief/
+- `new-frontiers-programme` — https://www.mccarthyaccountants.com/new-frontiers-programme/
+- `p35-deadline-15th-february-2013` — https://www.mccarthyaccountants.com/p35-deadline-15th-february-2013/
+- `p35-deadline` — https://www.mccarthyaccountants.com/p35-deadline/
+- `p35-extended-deadline-23rd-february-2012` — https://www.mccarthyaccountants.com/p35-extended-deadline-23rd-february-2012/
+- `pay-declined` — https://www.mccarthyaccountants.com/pay-declined/
+- `pay-successful` — https://www.mccarthyaccountants.com/pay-successful/
+- `payment-declined` — https://www.mccarthyaccountants.com/payment-declined/
+- `payment-successful` — https://www.mccarthyaccountants.com/payment-successful/
+- `payments-declined` — https://www.mccarthyaccountants.com/payments-declined/
+- `payments-successful` — https://www.mccarthyaccountants.com/payments-successful/
+- `payonline-declined` — https://www.mccarthyaccountants.com/payonline-declined/
+- `payonline-successful` — https://www.mccarthyaccountants.com/payonline-successful/
+- `personal-bankruptcy` — https://www.mccarthyaccountants.com/personal-bankruptcy/
+- `personal-insolvency` — https://www.mccarthyaccountants.com/personal-insolvency/
+- `property-tax` — https://www.mccarthyaccountants.com/property-tax/
+- `rct35-deadline-15th-february-2012` — https://www.mccarthyaccountants.com/rct35-deadline-15th-february-2012/
+- `revenue-audit` — https://www.mccarthyaccountants.com/revenue-audit/
+- `revenue-to-target-pensioners-on-higher-incomes` — https://www.mccarthyaccountants.com/revenue-to-target-pensioners-on-higher-incomes/
+- `revenues-annual-report-2011-highlights-key-areas-of-focus` — https://www.mccarthyaccountants.com/revenues-annual-report-2011-highlights-key-areas-of-focus/
+- `rte-local-heroes-campaign` — https://www.mccarthyaccountants.com/rte-local-heroes-campaign/
+- `sage-cloud` — https://www.mccarthyaccountants.com/sage-cloud/
+- `seed-capital-schemescs` — https://www.mccarthyaccountants.com/seed-capital-schemescs/
+- `small-firms-association` — https://www.mccarthyaccountants.com/small-firms-association/
+- `starting-a-business` — https://www.mccarthyaccountants.com/starting-a-business/
+- `business-name-registration` — https://www.mccarthyaccountants.com/starting-a-business/business-name-registration/
+- `financial-support-for-irish-business` — https://www.mccarthyaccountants.com/starting-a-business/financial-support-for-irish-business/
+- `stripe-checkout-result` — https://www.mccarthyaccountants.com/stripe-checkout-result/
+- `subscribe-to-our-newsletter` — https://www.mccarthyaccountants.com/subscribe-to-our-newsletter/
+- `tax-classification-of-dental-associates-dental-hygienists` — https://www.mccarthyaccountants.com/tax-classification-of-dental-associates-dental-hygienists/
+- `tax-office-dublin` — https://www.mccarthyaccountants.com/tax-office-dublin/
+- `tax-services` — https://www.mccarthyaccountants.com/tax-services/
+- `artists-tax-exemption` — https://www.mccarthyaccountants.com/tax-services/artists-tax-exemption/
+- `form-11` — https://www.mccarthyaccountants.com/tax-services/income-tax-return/form-11/
+- `form-12` — https://www.mccarthyaccountants.com/tax-services/income-tax-return/form-12/
+- `tax-deadline` — https://www.mccarthyaccountants.com/tax-services/income-tax-return/tax-deadline/
+- `paye-returns` — https://www.mccarthyaccountants.com/tax-services/paye-returns/
+- `relevant-contracts-tax` — https://www.mccarthyaccountants.com/tax-services/relevant-contracts-tax/
+- `rental-income-tax` — https://www.mccarthyaccountants.com/tax-services/rental-income-tax/
+- `stamp-duty` — https://www.mccarthyaccountants.com/tax-services/stamp-duty/
+- `tax-refund` — https://www.mccarthyaccountants.com/tax-services/tax-refund/
+- `vat-returns` — https://www.mccarthyaccountants.com/tax-services/vat-returns/
+- `withholding-tax` — https://www.mccarthyaccountants.com/tax-services/withholding-tax/
+- `temporary-partial-credit-guarantee-scheme` — https://www.mccarthyaccountants.com/temporary-partial-credit-guarantee-scheme/
+- `testimonials-2` — https://www.mccarthyaccountants.com/testimonials-2/
+- `tv3-boost-my-business` — https://www.mccarthyaccountants.com/tv3-boost-my-business/
+- `voluntary-strike-off-change-in-laws` — https://www.mccarthyaccountants.com/voluntary-strike-off-change-in-laws/
+- `worldirish-com` — https://www.mccarthyaccountants.com/worldirish-com/
 
-## Practice finance & lending (22 gap topics, 23 competitor pages)
+## pfmdental.co.uk (112 gap candidates)
 
-- **[x2]** `asset-finance`
-  - samera.co.uk: https://samera.co.uk/service/asset-finance/
-  - djh.co.uk: https://www.djh.co.uk/our-services/commercial-funding/asset-finance/
-- [x1] `business-cash-flow-in-tough-times`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/business-cash-flow-in-tough-times/
-- [x1] `can-you-switch-to-a-lower-interest-rate-for-your-practice-finance`
-  - pfmdental.co.uk: https://pfmdental.co.uk/can-you-switch-to-a-lower-interest-rate-for-your-practice-finance/
-- [x1] `cash-flow-forecasting`
-  - samera.co.uk: https://samera.co.uk/service/cash-flow-forecasting/
-- [x1] `commercial-funding`
-  - djh.co.uk: https://www.djh.co.uk/our-services/commercial-funding/
-- [x1] `commercial-funding-team`
-  - djh.co.uk: https://www.djh.co.uk/team-category/commercial-funding-team/
-- [x1] `commercial-mortgages`
-  - djh.co.uk: https://www.djh.co.uk/our-services/commercial-funding/commercial-mortgages/
-- [x1] `free-cash-flow-spreadsheet-template`
-  - samera.co.uk: https://samera.co.uk/learning-center/free-cash-flow-spreadsheet-template/
-- [x1] `funding-assurance-and-annex-g-certification`
-  - djh.co.uk: https://www.djh.co.uk/specialisms/education/funding-assurance-and-annex-g-certification/
-- [x1] `funding-available-for-schools`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/specialisms/funding-available-for-schools/
-- [x1] `funding-your-business-during-recession`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/funding-your-business-during-recession/
-- [x1] `innovation-grants-funding-and-support-for-innovative-businesses`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/innovation-grants-funding-and-support-for-innovative-businesses/
-- [x1] `keeping-cash-flowing`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/keeping-cash-flowing/
-- [x1] `multi-million-funding-for-rkw`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/client-stories/multi-million-funding-for-rkw/
-- [x1] `new-funding-support-available-smes`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/new-funding-support-available-smes/
-- [x1] `reduce-debtor-days-to-improve-cash-flow`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/reduce-debtor-days-to-improve-cash-flow/
-- [x1] `refinancing-business-loans-better-cash-flow`
-  - samera.co.uk: https://samera.co.uk/newsletter/refinancing-business-loans-better-cash-flow/
-- [x1] `refinancing-existing-loans`
-  - samera.co.uk: https://samera.co.uk/newsletter/refinancing-existing-loans/
-- [x1] `refinancing-explained-what-dentists-need-to-know`
-  - samera.co.uk: https://samera.co.uk/newsletter/refinancing-explained-what-dentists-need-to-know/
-- [x1] `samera-refinancing-restructuring-boot-camp`
-  - samera.co.uk: https://samera.co.uk/learning-center/samera-refinancing-restructuring-boot-camp/
-- [x1] `struggling-with-cash-flow-a-finance-director-can-help-your-practice-grow-5x-faster`
-  - samera.co.uk: https://samera.co.uk/newsletter/struggling-with-cash-flow-a-finance-director-can-help-your-practice-grow-5x-faster/
-- [x1] `weve-added-commercial-funding-expert-team`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/weve-added-commercial-funding-expert-team/
+- `2026-the-year-of-some-important-employment-law-changes` — https://pfmdental.co.uk/2026-the-year-of-some-important-employment-law-changes/
+- `4th-seiss-grant` — https://pfmdental.co.uk/4th-seiss-grant/
+- `a-step-closer-to-homeownership` — https://pfmdental.co.uk/a-step-closer-to-homeownership/
+- `associate-agreements-mistakes-to-avoid` — https://pfmdental.co.uk/associate-agreements-mistakes-to-avoid/
+- `autumn-statement-reaction` — https://pfmdental.co.uk/autumn-statement-reaction/
+- `bank-of-england-base-rate-increase-and-the-direct-impact-on-mortgages` — https://pfmdental.co.uk/bank-of-england-base-rate-increase-and-the-direct-impact-on-mortgages/
+- `bank-of-england-base-rate-residential-mortgages` — https://pfmdental.co.uk/bank-of-england-base-rate-residential-mortgages/
+- `bank-of-england-cuts-base-rate` — https://pfmdental.co.uk/bank-of-england-cuts-base-rate/
+- `bank-of-england-has-increased-the-base-rate-to-3-5` — https://pfmdental.co.uk/bank-of-england-has-increased-the-base-rate-to-3-5/
+- `benefits-of-using-a-mortgage-adviser` — https://pfmdental.co.uk/benefits-of-using-a-mortgage-adviser/
+- `budget-reaction` — https://pfmdental.co.uk/budget-reaction/
+- `can-i-afford-to-retire` — https://pfmdental.co.uk/can-i-afford-to-retire/
+- `can-you-switch-to-a-lower-interest-rate-for-your-practice-finance` — https://pfmdental.co.uk/can-you-switch-to-a-lower-interest-rate-for-your-practice-finance/
+- `casual-zero-hour-contracts-major-changes-ahead` — https://pfmdental.co.uk/casual-zero-hour-contracts-major-changes-ahead/
+- `changes-to-uk-company-law` — https://pfmdental.co.uk/changes-to-uk-company-law/
+- `check-employment-status-for-tax-cest-test` — https://pfmdental.co.uk/check-employment-status-for-tax-cest-test/
+- `choosing-an-accountant` — https://pfmdental.co.uk/choosing-an-accountant/
+- `cookie-policy` — https://pfmdental.co.uk/cookie-policy/
+- `corporates-vs-individuals` — https://pfmdental.co.uk/corporates-vs-individuals/
+- `could-you-retire-early` — https://pfmdental.co.uk/could-you-retire-early/
+- `dental-partnerships-expense-shares-limited-companies-departure-of-a-principal` — https://pfmdental.co.uk/dental-partnerships-expense-shares-limited-companies-departure-of-a-principal/
+- `dental-showcase-2020` — https://pfmdental.co.uk/dental-showcase-2020/
+- `dft-financial-planning-and-accountancy-for-new-associates` — https://pfmdental.co.uk/dft-financial-planning-and-accountancy-for-new-associates/
+- `does-your-lease-contain-everything-you-need` — https://pfmdental.co.uk/does-your-lease-contain-everything-you-need/
+- `employee-worker-or-self-employed` — https://pfmdental.co.uk/employee-worker-or-self-employed/
+- `expense-share-buy-out-care-case-study` — https://pfmdental.co.uk/expense-share-buy-out-care-case-study/
+- `sipp-and-income-drawdown` — https://pfmdental.co.uk/financial-planning/sipp-and-income-drawdown/
+- `wealth-management` — https://pfmdental.co.uk/financial-planning/wealth-management/
+- `focus-on-income-protection` — https://pfmdental.co.uk/focus-on-income-protection/
+- `get-ready-for-the-new-rules-on-flexible-working-requests-a-day-one-right` — https://pfmdental.co.uk/get-ready-for-the-new-rules-on-flexible-working-requests-a-day-one-right/
+- `help-interest-rates-are-rising` — https://pfmdental.co.uk/help-interest-rates-are-rising/
+- `heres-the-low-down-on-deposit-requirements` — https://pfmdental.co.uk/heres-the-low-down-on-deposit-requirements/
+- `hmrc-finally-breaks-its-silence-on-associates-self-employment-status` — https://pfmdental.co.uk/hmrc-finally-breaks-its-silence-on-associates-self-employment-status/
+- `hygienist-re-charge` — https://pfmdental.co.uk/hygienist-re-charge/
+- `investment-focus-update-january-2021` — https://pfmdental.co.uk/investment-focus-update-january-2021/
+- `is-the-annuity-dead` — https://pfmdental.co.uk/is-the-annuity-dead/
+- `is-the-rising-cost-of-borrowing-impacting-on-practice-sales` — https://pfmdental.co.uk/is-the-rising-cost-of-borrowing-impacting-on-practice-sales/
+- `isa-and-pensions-update` — https://pfmdental.co.uk/isa-and-pensions-update/
+- `know-your-red-tape-corporate-dentistry-and-the-gdc-a-reminder` — https://pfmdental.co.uk/know-your-red-tape-corporate-dentistry-and-the-gdc-a-reminder/
+- `lasting-powers-of-attorney-for-business-owners` — https://pfmdental.co.uk/lasting-powers-of-attorney-for-business-owners/
+- `24-hour-retirement` — https://pfmdental.co.uk/legal/24-hour-retirement/
+- `buying-a-practice-legal-support` — https://pfmdental.co.uk/legal/buying-a-practice-legal-support/
+- `properties-and-leases` — https://pfmdental.co.uk/legal/properties-and-leases/
+- `selling-a-practice-legal-support` — https://pfmdental.co.uk/legal/selling-a-practice-legal-support/
+- `locations.kml` — https://pfmdental.co.uk/locations.kml
+- `managing-your-investment-portfolio` — https://pfmdental.co.uk/managing-your-investment-portfolio/
+- `march-2021-budget-round-up` — https://pfmdental.co.uk/march-2021-budget-round-up/
+- `maximising-investments-before-selling-and-retirement` — https://pfmdental.co.uk/maximising-investments-before-selling-and-retirement/
+- `mitigating-the-threat-of-nhs-pension-changes` — https://pfmdental.co.uk/mitigating-the-threat-of-nhs-pension-changes/
+- `mortgage-calculator` — https://pfmdental.co.uk/mortgage-calculator/
+- `newly-qualified-dentists-need-to-take-immediate-action` — https://pfmdental.co.uk/newly-qualified-dentists-need-to-take-immediate-action/
+- `newly-qualified-dentists-to-register-with-hmrc` — https://pfmdental.co.uk/newly-qualified-dentists-to-register-with-hmrc/
+- `news-events` — https://pfmdental.co.uk/news-events/
+- `non-compete-or-binding-out-provisions-in-a-sale-agreement-what-can-a-buyer-reasonably-expect` — https://pfmdental.co.uk/non-compete-or-binding-out-provisions-in-a-sale-agreement-what-can-a-buyer-reasonably-expect/
+- `partially-amortising-loans` — https://pfmdental.co.uk/partially-amortising-loans/
+- `partnerships-selling-buying-or-creating-new-partnerships-what-should-you-consider` — https://pfmdental.co.uk/partnerships-selling-buying-or-creating-new-partnerships-what-should-you-consider/
+- `pensions-dragged-into-inheritance-tax-calculations` — https://pfmdental.co.uk/pensions-dragged-into-inheritance-tax-calculations/
+- `pfm-dental-legal-complaints-procedure` — https://pfmdental.co.uk/pfm-dental-legal-complaints-procedure/
+- `portfolio-disclosure-documents` — https://pfmdental.co.uk/portfolio-disclosure-documents/
+- `portfolio-review` — https://pfmdental.co.uk/portfolio-review/
+- `practice-sales-an-end-to-delays` — https://pfmdental.co.uk/practice-sales-an-end-to-delays/
+- `practice-sales-and-the-current-market-webinar` — https://pfmdental.co.uk/practice-sales-and-the-current-market-webinar/
+- `practice-sales` — https://pfmdental.co.uk/practice-sales/
+- `buyers-assessment` — https://pfmdental.co.uk/practice-sales/buyers-assessment/
+- `practice-search` — https://pfmdental.co.uk/practice-search/
+- `207-11` — https://pfmdental.co.uk/practice/207-11/
+- `209-27` — https://pfmdental.co.uk/practice/209-27/
+- `211-08` — https://pfmdental.co.uk/practice/211-08/
+- `211-10` — https://pfmdental.co.uk/practice/211-10/
+- `214-17` — https://pfmdental.co.uk/practice/214-17/
+- `214-18` — https://pfmdental.co.uk/practice/214-18/
+- `222-61` — https://pfmdental.co.uk/practice/222-61/
+- `222-62` — https://pfmdental.co.uk/practice/222-62/
+- `222-65` — https://pfmdental.co.uk/practice/222-65/
+- `222-66` — https://pfmdental.co.uk/practice/222-66/
+- `222-67` — https://pfmdental.co.uk/practice/222-67/
+- `224-12` — https://pfmdental.co.uk/practice/224-12/
+- `224-13` — https://pfmdental.co.uk/practice/224-13/
+- `224-15` — https://pfmdental.co.uk/practice/224-15/
+- `225-18` — https://pfmdental.co.uk/practice/225-18/
+- `228-50` — https://pfmdental.co.uk/practice/228-50/
+- `228-52` — https://pfmdental.co.uk/practice/228-52/
+- `228-53` — https://pfmdental.co.uk/practice/228-53/
+- `230-12` — https://pfmdental.co.uk/practice/230-12/
+- `230-13` — https://pfmdental.co.uk/practice/230-13/
+- `236-37` — https://pfmdental.co.uk/practice/236-37/
+- `242-07` — https://pfmdental.co.uk/practice/242-07/
+- `244-74` — https://pfmdental.co.uk/practice/244-74/
+- `247-15` — https://pfmdental.co.uk/practice/247-15/
+- `248-80` — https://pfmdental.co.uk/practice/248-80/
+- `248-85` — https://pfmdental.co.uk/practice/248-85/
+- `private-fee-conversion-what-about-my-pension` — https://pfmdental.co.uk/private-fee-conversion-what-about-my-pension/
+- `refer-a-friend` — https://pfmdental.co.uk/refer-a-friend/
+- `register-as-a-buyer` — https://pfmdental.co.uk/register-as-a-buyer/
+- `regulatory-information-and-financial-ombudsman-service` — https://pfmdental.co.uk/regulatory-information-and-financial-ombudsman-service/
+- `retirement-planning-focus` — https://pfmdental.co.uk/retirement-planning-focus/
+- `round-table-meeting` — https://pfmdental.co.uk/round-table-meeting/
+- `self-employed-income-support-scheme-seiss` — https://pfmdental.co.uk/self-employed-income-support-scheme-seiss/
+- `should-i-consider-incorporation-as-a-principal` — https://pfmdental.co.uk/should-i-consider-incorporation-as-a-principal/
+- `should-i-consider-incorporation` — https://pfmdental.co.uk/should-i-consider-incorporation/
+- `should-i-sell-to-a-body-corporate` — https://pfmdental.co.uk/should-i-sell-to-a-body-corporate/
+- `sign-up` — https://pfmdental.co.uk/sign-up/
+- `testimonails-overview` — https://pfmdental.co.uk/testimonails-overview/
+- `the-increasing-costs-of-purchasing-a-home` — https://pfmdental.co.uk/the-increasing-costs-of-purchasing-a-home/
+- `the-top-10-must-know-tips-before-you-hit-the-market` — https://pfmdental.co.uk/the-top-10-must-know-tips-before-you-hit-the-market/
+- `tupe-transfer-of-undertakings-protection-of-employees` — https://pfmdental.co.uk/tupe-transfer-of-undertakings-protection-of-employees/
+- `what-can-a-finance-broker-do-for-you` — https://pfmdental.co.uk/what-can-a-finance-broker-do-for-you/
+- `what-to-consider-before-getting-a-mortgage-dentist` — https://pfmdental.co.uk/what-to-consider-before-getting-a-mortgage-dentist/
+- `wills-and-lasting-powers-of-attorney` — https://pfmdental.co.uk/wills-and-lasting-powers-of-attorney/
+- `wills-probate` — https://pfmdental.co.uk/wills-probate/
+- `wills-things-to-consider` — https://pfmdental.co.uk/wills-things-to-consider/
+- `write-testimonial` — https://pfmdental.co.uk/write-testimonial/
 
-## Associate tax & self-employment (21 gap topics, 21 competitor pages)
+## djh.co.uk (588 gap candidates)
 
-- [x1] `associate-agreements-mistakes-to-avoid`
-  - pfmdental.co.uk: https://pfmdental.co.uk/associate-agreements-mistakes-to-avoid/
-- [x1] `associate-dentists-tax-status-what-you-need-to-know`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/specialisms/associate-dentists-tax-status-what-you-need-to-know/
-- [x1] `associated-companies-now-count-for-new-corporation-rates`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/associated-companies-now-count-for-new-corporation-rates/
-- [x1] `associated-costs-buyers-scrutinise`
-  - samera.co.uk: https://samera.co.uk/learning-center/associated-costs-buyers-scrutinise/
-- [x1] `automating-dental-associate-pay-with-ai`
-  - samera.co.uk: https://samera.co.uk/learning-center/automating-dental-associate-pay-with-ai/
-- [x1] `changes-to-associated-companies-rules`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/changes-to-associated-companies-rules/
-- [x1] `class-2-nic-for-the-self-employed-explained`
-  - a-wise.co.uk: https://a-wise.co.uk/class-2-nic-for-the-self-employed-explained/
-- [x1] `dft-financial-planning-and-accountancy-for-new-associates`
-  - pfmdental.co.uk: https://pfmdental.co.uk/dft-financial-planning-and-accountancy-for-new-associates/
-- [x1] `employee-worker-or-self-employed`
-  - pfmdental.co.uk: https://pfmdental.co.uk/employee-worker-or-self-employed/
-- [x1] `finding-work-as-a-self-employed-consultant`
-  - a-wise.co.uk: https://a-wise.co.uk/finding-work-as-a-self-employed-consultant/
-- [x1] `national-insurance-for-the-self-employed`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/national-insurance-for-the-self-employed/
-- [x1] `outcome-of-rbd-award-for-young-associates`
-  - ross-brooke-dental.co.uk: https://www.ross-brooke-dental.co.uk/blog/making-headlines/outcome-of-rbd-award-for-young-associates/
-- [x1] `quick-guide-to-pensions-for-the-self-employed`
-  - a-wise.co.uk: https://a-wise.co.uk/quick-guide-to-pensions-for-the-self-employed/
-- [x1] `reaching-out-to-new-associates`
-  - ross-brooke-dental.co.uk: https://www.ross-brooke-dental.co.uk/blog/making-headlines/reaching-out-to-new-associates/
-- [x1] `remember-not-all-llp-members-are-self-employed`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/remember-not-all-llp-members-are-self-employed/
-- [x1] `samera-ai-what-happens-when-samera-ai-runs-your-associate-pay`
-  - samera.co.uk: https://samera.co.uk/newsletter/samera-ai-what-happens-when-samera-ai-runs-your-associate-pay/
-- [x1] `samera-ai-why-associate-pay-still-breaks-every-dental-group-and-what-we-re-doing-about-it`
-  - samera.co.uk: https://samera.co.uk/newsletter/samera-ai-why-associate-pay-still-breaks-every-dental-group-and-what-we-re-doing-about-it/
-- [x1] `self-employed-income-support-scheme-seiss`
-  - pfmdental.co.uk: https://pfmdental.co.uk/self-employed-income-support-scheme-seiss/
-- [x1] `the-current-rules-around-associated-companies`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/the-current-rules-around-associated-companies/
-- [x1] `uber-drivers-are-workers-not-self-employed`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/uber-drivers-are-workers-not-self-employed/
-- [x1] `what-you-need-to-know-about-becoming-an-associate-dentist`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/specialisms/what-you-need-to-know-about-becoming-an-associate-dentist/
+- `6510-2` — https://www.djh.co.uk/6510-2/
+- `about-us` — https://www.djh.co.uk/about-us/
+- `our-people` — https://www.djh.co.uk/about-us/our-people/
+- `our-purpose-values` — https://www.djh.co.uk/about-us/our-purpose-values/
+- `partnership-with-tenzing` — https://www.djh.co.uk/about-us/partnership-with-tenzing/
+- `proven-process` — https://www.djh.co.uk/about-us/proven-process/
+- `academy-audit-services-for-yorkshire-schools` — https://www.djh.co.uk/academy-audit-services-for-yorkshire-schools/
+- `audit-services-2-2` — https://www.djh.co.uk/audit-services-2-2/
+- `audit-services-2` — https://www.djh.co.uk/audit-services-2/
+- `autumn-budget-2025` — https://www.djh.co.uk/autumn-budget-2025/
+- `budget-forecast-return-bfr-support` — https://www.djh.co.uk/budget-forecast-return-bfr-support/
+- `business-solutions` — https://www.djh.co.uk/business-solutions/
+- `early-careers` — https://www.djh.co.uk/careers/early-careers/
+- `join-our-team` — https://www.djh.co.uk/careers/join-our-team/
+- `case-studies` — https://www.djh.co.uk/case-studies/
+- `case-study-test` — https://www.djh.co.uk/case-studies/case-study-test/
+- `client-areas` — https://www.djh.co.uk/client-areas/
+- `company-information` — https://www.djh.co.uk/company-information/
+- `complaints-policy` — https://www.djh.co.uk/complaints-policy/
+- `contact-us-autumn-budget` — https://www.djh.co.uk/contact-us-autumn-budget/
+- `contact-us-djh-perspective-wealth-management` — https://www.djh.co.uk/contact-us-djh-perspective-wealth-management/
+- `contact-us` — https://www.djh.co.uk/contact-us/
+- `cookie-policy` — https://www.djh.co.uk/cookie-policy/
+- `corporate-finance-built-environment` — https://www.djh.co.uk/corporate-finance-built-environment/
+- `corporate-finance-power-testing` — https://www.djh.co.uk/corporate-finance-power-testing/
+- `djh-co-uk-academy-audit-yorkshire` — https://www.djh.co.uk/djh-co-uk-academy-audit-yorkshire/
+- `email-disclaimer` — https://www.djh.co.uk/email-disclaimer/
+- `environmental-social-and-governance` — https://www.djh.co.uk/environmental-social-and-governance/
+- `ifrs-services` — https://www.djh.co.uk/ifrs-services/
+- `independent-schools` — https://www.djh.co.uk/independent-schools/
+- `latest-news` — https://www.djh.co.uk/latest-news/
+- `autumn-budget-2024-our-summary-key-highlights` — https://www.djh.co.uk/latest-news/autumn-budget/autumn-budget-2024-our-summary-key-highlights/
+- `autumn-budget-2025-what-you-need-to-know` — https://www.djh.co.uk/latest-news/autumn-budget/autumn-budget-2025-what-you-need-to-know/
+- `autumn-budget-2025-why-no-big-tax-rises-could-still-cost-you-thousands` — https://www.djh.co.uk/latest-news/autumn-budget/autumn-budget-2025-why-no-big-tax-rises-could-still-cost-you-thousands/
+- `autumn-budget-unwrapped-2025` — https://www.djh.co.uk/latest-news/autumn-budget/autumn-budget-unwrapped-2025/
+- `further-details-regarding-vat-on-private-school-fees` — https://www.djh.co.uk/latest-news/autumn-budget/further-details-regarding-vat-on-private-school-fees/
+- `inheritance-tax-overhaul-potential-changes-explained` — https://www.djh.co.uk/latest-news/autumn-budget/inheritance-tax-overhaul-potential-changes-explained/
+- `our-experts-share-their-autumn-budget-predictions` — https://www.djh.co.uk/latest-news/autumn-budget/our-experts-share-their-autumn-budget-predictions/
+- `preparing-for-potential-business-rate-changes-cashflow-tips-for-smes` — https://www.djh.co.uk/latest-news/autumn-budget/preparing-for-potential-business-rate-changes-cashflow-tips-for-smes/
+- `rumour-has-it-what-the-upcoming-budget-might-have-in-store-for-iht` — https://www.djh.co.uk/latest-news/autumn-budget/rumour-has-it-what-the-upcoming-budget-might-have-in-store-for-iht/
+- `rumoured-changes-to-pensions-in-the-upcoming-autumn-budget-2024` — https://www.djh.co.uk/latest-news/autumn-budget/rumoured-changes-to-pensions-in-the-upcoming-autumn-budget-2024/
+- `what-tax-changes-could-be-on-the-horizon` — https://www.djh.co.uk/latest-news/autumn-budget/what-tax-changes-could-be-on-the-horizon/
+- `autumn-budget` — https://www.djh.co.uk/latest-news/category/autumn-budget/
+- `client-stories` — https://www.djh.co.uk/latest-news/category/client-stories/
+- `industry-news` — https://www.djh.co.uk/latest-news/category/industry-news/
+- `news-insights` — https://www.djh.co.uk/latest-news/category/news-insights/
+- `a-journey-of-growth-with-the-help-of-an-emi-scheme` — https://www.djh.co.uk/latest-news/client-stories/a-journey-of-growth-with-the-help-of-an-emi-scheme/
+- `accelerating-our-clients-purchase-of-directors-vehicle` — https://www.djh.co.uk/latest-news/client-stories/accelerating-our-clients-purchase-of-directors-vehicle/
+- `corporate-finance-success-helping-arcus-consulting-secure-acquisition-by-baily-garner` — https://www.djh.co.uk/latest-news/client-stories/corporate-finance-success-helping-arcus-consulting-secure-acquisition-by-baily-garner/
+- `djh-advises-ipec-on-sale-to-abb` — https://www.djh.co.uk/latest-news/client-stories/djh-advises-ipec-on-sale-to-abb/
+- `djh-advises-ss-steelstock-on-strategic-black-country-acquisition-to-double-revenues` — https://www.djh.co.uk/latest-news/client-stories/djh-advises-ss-steelstock-on-strategic-black-country-acquisition-to-double-revenues/
+- `djh-advises-stockport-technology-specialist-ipec-on-future-sale-to-abb` — https://www.djh.co.uk/latest-news/client-stories/djh-advises-stockport-technology-specialist-ipec-on-future-sale-to-abb/
+- `djh-corporate-finance-advises-on-management-buy-out-of-jk-ross` — https://www.djh.co.uk/latest-news/client-stories/djh-corporate-finance-advises-on-management-buy-out-of-jk-ross/
+- `djh-corporate-finance-advises-rj-urmson-group-on-the-sale-to-hsl-compliance` — https://www.djh.co.uk/latest-news/client-stories/djh-corporate-finance-advises-rj-urmson-group-on-the-sale-to-hsl-compliance/
+- `djh-corporate-finance-provides-advisory-services-to-ardenton-capital` — https://www.djh.co.uk/latest-news/client-stories/djh-corporate-finance-provides-advisory-services-to-ardenton-capital/
+- `electrical-contractor-loss-to-1m-exit` — https://www.djh.co.uk/latest-news/client-stories/electrical-contractor-loss-to-1m-exit/
+- `finding-469000-in-tax-relief-hidden-in-plain-sight` — https://www.djh.co.uk/latest-news/client-stories/finding-469000-in-tax-relief-hidden-in-plain-sight/
+- `getting-the-tax-right-on-a-complex-scottish-estate-purchase` — https://www.djh.co.uk/latest-news/client-stories/getting-the-tax-right-on-a-complex-scottish-estate-purchase/
+- `grape-tree-employee-ownership-case-study` — https://www.djh.co.uk/latest-news/client-stories/grape-tree-employee-ownership-case-study/
+- `helping-cheertravel-reach-the-top-of-its-market` — https://www.djh.co.uk/latest-news/client-stories/helping-cheertravel-reach-the-top-of-its-market/
+- `how-djh-helped-a-childrens-charity-regain-control-and-compliance` — https://www.djh.co.uk/latest-news/client-stories/how-djh-helped-a-childrens-charity-regain-control-and-compliance/
+- `how-djh-helped-brightland-step-into-the-market` — https://www.djh.co.uk/latest-news/client-stories/how-djh-helped-brightland-step-into-the-market/
+- `lyburn-acquiring-the-perfect-package` — https://www.djh.co.uk/latest-news/client-stories/lyburn-acquiring-the-perfect-package/
+- `major-growth-and-a-management-buyout-off-the-back-of-an-honest-opinion` — https://www.djh.co.uk/latest-news/client-stories/major-growth-and-a-management-buyout-off-the-back-of-an-honest-opinion/
+- `management-buy-outs-why-post-deal-aftercare-is-critical-to-success` — https://www.djh.co.uk/latest-news/client-stories/management-buy-outs-why-post-deal-aftercare-is-critical-to-success/
+- `multi-million-funding-for-rkw` — https://www.djh.co.uk/latest-news/client-stories/multi-million-funding-for-rkw/
+- `new-flavours-coming-to-snugburys` — https://www.djh.co.uk/latest-news/client-stories/new-flavours-coming-to-snugburys/
+- `noveum-business-sale-success-story` — https://www.djh.co.uk/latest-news/client-stories/noveum-business-sale-success-story/
+- `preserving-your-legacy-while-rewarding-loyalty-an-employee-ownership-trust-case-study` — https://www.djh.co.uk/latest-news/client-stories/preserving-your-legacy-while-rewarding-loyalty-an-employee-ownership-trust-case-study/
+- `putting-a-regional-groundworks-contractor-back-on-solid-ground` — https://www.djh.co.uk/latest-news/client-stories/putting-a-regional-groundworks-contractor-back-on-solid-ground/
+- `selling-a-business-its-all-about-housekeeping` — https://www.djh.co.uk/latest-news/client-stories/selling-a-business-its-all-about-housekeeping/
+- `strategic-acquisition-in-the-it-solutions-sector` — https://www.djh.co.uk/latest-news/client-stories/strategic-acquisition-in-the-it-solutions-sector/
+- `supporting-3bm-group-in-their-acquisition-by-rsk` — https://www.djh.co.uk/latest-news/client-stories/supporting-3bm-group-in-their-acquisition-by-rsk/
+- `supporting-our-client-through-an-eot` — https://www.djh.co.uk/latest-news/client-stories/supporting-our-client-through-an-eot/
+- `tax-savings-metal-recycling-centre` — https://www.djh.co.uk/latest-news/client-stories/tax-savings-metal-recycling-centre/
+- `unlocking-significant-tax-benefits-through-expert-capital-allowance-guidance` — https://www.djh.co.uk/latest-news/client-stories/unlocking-significant-tax-benefits-through-expert-capital-allowance-guidance/
+- `assisting-our-local-basketball-stars` — https://www.djh.co.uk/latest-news/community/assisting-our-local-basketball-stars/
+- `football-tournament-raises-much-needed-funds-alice-charity` — https://www.djh.co.uk/latest-news/community/football-tournament-raises-much-needed-funds-alice-charity/
+- `helping-make-easter-egg-stra-special` — https://www.djh.co.uk/latest-news/community/helping-make-easter-egg-stra-special/
+- `huddersfields-revell-ward-joins-our-group` — https://www.djh.co.uk/latest-news/community/huddersfields-revell-ward-joins-our-group/
+- `join-us-for-our-annual-charity-football-tournament` — https://www.djh.co.uk/latest-news/community/join-us-for-our-annual-charity-football-tournament/
+- `life-saving-defibrillator-funded-for-local-flyball-team` — https://www.djh.co.uk/latest-news/community/life-saving-defibrillator-funded-for-local-flyball-team/
+- `manchester-10k-for-maggies-cancer-centre` — https://www.djh.co.uk/latest-news/community/manchester-10k-for-maggies-cancer-centre/
+- `morris-and-co-donate-computers-to-south-wirral-high-school` — https://www.djh.co.uk/latest-news/community/morris-and-co-donate-computers-to-south-wirral-high-school/
+- `providing-festive-cheer-local-charities` — https://www.djh.co.uk/latest-news/community/providing-festive-cheer-local-charities/
+- `supporting-future-olympians-in-greater-manchester` — https://www.djh.co.uk/latest-news/community/supporting-future-olympians-in-greater-manchester/
+- `we-stand-ukraine` — https://www.djh.co.uk/latest-news/community/we-stand-ukraine/
+- `yorkshire-three-peaks-over-20k-raised-for-macmillan` — https://www.djh.co.uk/latest-news/community/yorkshire-three-peaks-over-20k-raised-for-macmillan/
+- `15-million-commercial-funding-already-secured-2022` — https://www.djh.co.uk/latest-news/company/15-million-commercial-funding-already-secured-2022/
+- `a-hat-trick-of-acquisitions` — https://www.djh.co.uk/latest-news/company/a-hat-trick-of-acquisitions/
+- `a-record-number-of-senior-promotions-for-our-team` — https://www.djh.co.uk/latest-news/company/a-record-number-of-senior-promotions-for-our-team/
+- `a-wealth-of-opportunities-as-we-agree-joint-venture-with-perspective-financial-group` — https://www.djh.co.uk/latest-news/company/a-wealth-of-opportunities-as-we-agree-joint-venture-with-perspective-financial-group/
+- `accelerating-our-north-west-expansion-with-the-acquisition-of-haines-watts-chester-liverpool-and-wirral-offices` — https://www.djh.co.uk/latest-news/company/accelerating-our-north-west-expansion-with-the-acquisition-of-haines-watts-chester-liverpool-and-wirral-offices/
+- `accelerating-our-south-east-expansion-as-loucas-join-our-group` — https://www.djh.co.uk/latest-news/company/accelerating-our-south-east-expansion-as-loucas-join-our-group/
+- `ambition-academy-launched-aspiring-managers` — https://www.djh.co.uk/latest-news/company/ambition-academy-launched-aspiring-managers/
+- `ashgates-are-now-djh` — https://www.djh.co.uk/latest-news/company/ashgates-are-now-djh/
+- `continued-growth-senovo-health-partnership` — https://www.djh.co.uk/latest-news/company/continued-growth-senovo-health-partnership/
+- `djh-mitten-clarke-tackle-potters-arf` — https://www.djh.co.uk/latest-news/company/djh-mitten-clarke-tackle-potters-arf/
+- `double-delight-as-kate-hughes-and-richard-askey-make-partner` — https://www.djh.co.uk/latest-news/company/double-delight-as-kate-hughes-and-richard-askey-make-partner/
+- `dte-business-advisers-is-now-djh` — https://www.djh.co.uk/latest-news/company/dte-business-advisers-is-now-djh/
+- `forbes-dawson-joins-our-group-with-big-four-level-tax-expertise` — https://www.djh.co.uk/latest-news/company/forbes-dawson-joins-our-group-with-big-four-level-tax-expertise/
+- `game-changing-mental-health-support-launched-our-team` — https://www.djh.co.uk/latest-news/company/game-changing-mental-health-support-launched-our-team/
+- `hat-trick-senior-appointments` — https://www.djh.co.uk/latest-news/company/hat-trick-senior-appointments/
+- `introducing-matt-orange` — https://www.djh.co.uk/latest-news/company/introducing-matt-orange/
+- `introducing-suzy-dawson-newbury` — https://www.djh.co.uk/latest-news/company/introducing-suzy-dawson-newbury/
+- `its-official-were-one-best-places-work-uk` — https://www.djh.co.uk/latest-news/company/its-official-were-one-best-places-work-uk/
+- `jon-else-promoted-to-partner-at-djh-corporate-finance` — https://www.djh.co.uk/latest-news/company/jon-else-promoted-to-partner-at-djh-corporate-finance/
+- `lewis-pearson-promoted-to-director-at-djh-corporate-finance` — https://www.djh.co.uk/latest-news/company/lewis-pearson-promoted-to-director-at-djh-corporate-finance/
+- `lyon-griffiths-becomes-djh-mitten-clarke-nantwich` — https://www.djh.co.uk/latest-news/company/lyon-griffiths-becomes-djh-mitten-clarke-nantwich/
+- `matt-lawton-joins-our-stoke-client-services-director-team` — https://www.djh.co.uk/latest-news/company/matt-lawton-joins-our-stoke-client-services-director-team/
+- `mcbrides-join-the-djh-group-in-our-first-southern-partnership` — https://www.djh.co.uk/latest-news/company/mcbrides-join-the-djh-group-in-our-first-southern-partnership/
+- `mcbrides-takes-on-the-djh-name-following-200000-office-refurbishment-and-rebrand` — https://www.djh.co.uk/latest-news/company/mcbrides-takes-on-the-djh-name-following-200000-office-refurbishment-and-rebrand/
+- `morris-and-co-announce-two-senior-promotions` — https://www.djh.co.uk/latest-news/company/morris-and-co-announce-two-senior-promotions/
+- `msd-are-now-djh-ireland` — https://www.djh.co.uk/latest-news/company/msd-are-now-djh-ireland/
+- `nantwichs-lyon-griffiths-joins-our-group` — https://www.djh.co.uk/latest-news/company/nantwichs-lyon-griffiths-joins-our-group/
+- `new-chief-technical-officer-joins-our-leadership-team` — https://www.djh.co.uk/latest-news/company/new-chief-technical-officer-joins-our-leadership-team/
+- `nicklin-are-now-djh` — https://www.djh.co.uk/latest-news/company/nicklin-are-now-djh/
+- `north-west-success-our-regional-growth-continues` — https://www.djh.co.uk/latest-news/company/north-west-success-our-regional-growth-continues/
+- `our-corporate-finance-team-marks-record-135m-year-with-latest-deal` — https://www.djh.co.uk/latest-news/company/our-corporate-finance-team-marks-record-135m-year-with-latest-deal/
+- `revell-ward-becomes-djh-huddersfield` — https://www.djh.co.uk/latest-news/company/revell-ward-becomes-djh-huddersfield/
+- `strengthening-our-presence-in-the-north-west-as-we-welcome-sbp-to-our-group` — https://www.djh.co.uk/latest-news/company/strengthening-our-presence-in-the-north-west-as-we-welcome-sbp-to-our-group/
+- `three-senior-promotion-dental-team` — https://www.djh.co.uk/latest-news/company/three-senior-promotion-dental-team/
+- `top-15-sme-apprenticeship-employer-for-2023` — https://www.djh.co.uk/latest-news/company/top-15-sme-apprenticeship-employer-for-2023/
+- `we-are-finalists-accounting-excellence-awards` — https://www.djh.co.uk/latest-news/company/we-are-finalists-accounting-excellence-awards/
+- `we-go-step-beyond-heart-health-month` — https://www.djh.co.uk/latest-news/company/we-go-step-beyond-heart-health-month/
+- `we-take-on-beswicks-legals-private-wealth-business-to-double-our-estate-planning-services` — https://www.djh.co.uk/latest-news/company/we-take-on-beswicks-legals-private-wealth-business-to-double-our-estate-planning-services/
+- `we-welcome-historic-midlands-practice-nicklin-to-our-group` — https://www.djh.co.uk/latest-news/company/we-welcome-historic-midlands-practice-nicklin-to-our-group/
+- `welcome-class-2021` — https://www.djh.co.uk/latest-news/company/welcome-class-2021/
+- `welcoming-matt-hustwit-our-great-team` — https://www.djh.co.uk/latest-news/company/welcoming-matt-hustwit-our-great-team/
+- `welcoming-msd-in-our-first-irish-partnership` — https://www.djh.co.uk/latest-news/company/welcoming-msd-in-our-first-irish-partnership/
+- `were-aiming-for-b-corp-certification` — https://www.djh.co.uk/latest-news/company/were-aiming-for-b-corp-certification/
+- `were-becoming-djh-mitten-clarke-chester` — https://www.djh.co.uk/latest-news/company/were-becoming-djh-mitten-clarke-chester/
+- `were-now-b-corp-certified` — https://www.djh.co.uk/latest-news/company/were-now-b-corp-certified/
+- `were-now-quite-simply-djh` — https://www.djh.co.uk/latest-news/company/were-now-quite-simply-djh/
+- `were-on-the-up-in-our-new-city-centre-manchester-office` — https://www.djh.co.uk/latest-news/company/were-on-the-up-in-our-new-city-centre-manchester-office/
+- `weve-been-rated-an-outstanding-employer` — https://www.djh.co.uk/latest-news/company/weve-been-rated-an-outstanding-employer/
+- `weve-joined-forces-with-haines-watts-altrincham` — https://www.djh.co.uk/latest-news/company/weve-joined-forces-with-haines-watts-altrincham/
+- `jonathan-jones-heads-up-the-latest-pan-professional-event` — https://www.djh.co.uk/latest-news/general/jonathan-jones-heads-up-the-latest-pan-professional-event/
+- `abolishment-of-multiple-dwellings-relief-mdr` — https://www.djh.co.uk/latest-news/industry-news/abolishment-of-multiple-dwellings-relief-mdr/
+- `autumn-statement-our-predictions` — https://www.djh.co.uk/latest-news/industry-news/autumn-statement-our-predictions/
+- `changes-to-the-self-assessment-threshold` — https://www.djh.co.uk/latest-news/industry-news/changes-to-the-self-assessment-threshold/
+- `company-restructures-everything-you-need-know` — https://www.djh.co.uk/latest-news/industry-news/company-restructures-everything-you-need-know/
+- `corporation-tax-will-rise-25-next-year` — https://www.djh.co.uk/latest-news/industry-news/corporation-tax-will-rise-25-next-year/
+- `covid-19-support-company-tax-returns` — https://www.djh.co.uk/latest-news/industry-news/covid-19-support-company-tax-returns/
+- `developing-culture-our-journey-so-far` — https://www.djh.co.uk/latest-news/industry-news/developing-culture-our-journey-so-far/
+- `dont-miss-the-31-july-deadline-for-payment-on-account` — https://www.djh.co.uk/latest-news/industry-news/dont-miss-the-31-july-deadline-for-payment-on-account/
+- `emi-schemes-key-retaining-your-top-talent` — https://www.djh.co.uk/latest-news/industry-news/emi-schemes-key-retaining-your-top-talent/
+- `everything-you-need-know-trs-deadline` — https://www.djh.co.uk/latest-news/industry-news/everything-you-need-know-trs-deadline/
+- `hitting-recession-head` — https://www.djh.co.uk/latest-news/industry-news/hitting-recession-head/
+- `hmrc-turns-up-the-heat-on-short-term-rentals` — https://www.djh.co.uk/latest-news/industry-news/hmrc-turns-up-the-heat-on-short-term-rentals/
+- `key-points-mini-budget-reversals` — https://www.djh.co.uk/latest-news/industry-news/key-points-mini-budget-reversals/
+- `making-tax-digital-are-you-prepared-phase-2` — https://www.djh.co.uk/latest-news/industry-news/making-tax-digital-are-you-prepared-phase-2/
+- `making-tax-digital-why-put-it-off` — https://www.djh.co.uk/latest-news/industry-news/making-tax-digital-why-put-it-off/
+- `our-guide-mini-budget` — https://www.djh.co.uk/latest-news/industry-news/our-guide-mini-budget/
+- `peffs-how-important-are-they-capital-allowance-claim` — https://www.djh.co.uk/latest-news/industry-news/peffs-how-important-are-they-capital-allowance-claim/
+- `potential-changes-to-eots` — https://www.djh.co.uk/latest-news/industry-news/potential-changes-to-eots/
+- `predictions-for-autumn-budget-our-tax-experts-weigh-in` — https://www.djh.co.uk/latest-news/industry-news/predictions-for-autumn-budget-our-tax-experts-weigh-in/
+- `rd-tax-reliefs-big-changes-ahead` — https://www.djh.co.uk/latest-news/industry-news/rd-tax-reliefs-big-changes-ahead/
+- `selling-your-business-put-plans-place` — https://www.djh.co.uk/latest-news/industry-news/selling-your-business-put-plans-place/
+- `spring-statement-2022-predictions-our-team` — https://www.djh.co.uk/latest-news/industry-news/spring-statement-2022-predictions-our-team/
+- `squeeze-national-insurance-rise` — https://www.djh.co.uk/latest-news/industry-news/squeeze-national-insurance-rise/
+- `statutory-rates-and-allowances-an-outline-of-the-recent-updates` — https://www.djh.co.uk/latest-news/industry-news/statutory-rates-and-allowances-an-outline-of-the-recent-updates/
+- `super-deduction-what-it-and-what-makes-it-so-super` — https://www.djh.co.uk/latest-news/industry-news/super-deduction-what-it-and-what-makes-it-so-super/
+- `the-autumn-statement-2023-explained` — https://www.djh.co.uk/latest-news/industry-news/the-autumn-statement-2023-explained/
+- `the-lifetime-allowance-has-been-abolished-but-is-there-a-catch` — https://www.djh.co.uk/latest-news/industry-news/the-lifetime-allowance-has-been-abolished-but-is-there-a-catch/
+- `understanding-p11ds-and-psas-for-tax-compliance` — https://www.djh.co.uk/latest-news/industry-news/understanding-p11ds-and-psas-for-tax-compliance/
+- `why-you-should-outsource-your-payroll` — https://www.djh.co.uk/latest-news/industry-news/why-you-should-outsource-your-payroll/
+- `workplace-culture-what-it-and-positive-impact-it-can-have` — https://www.djh.co.uk/latest-news/industry-news/workplace-culture-what-it-and-positive-impact-it-can-have/
+- `5-most-common-mistakes-made-when-writing-a-will` — https://www.djh.co.uk/latest-news/news-insights/5-most-common-mistakes-made-when-writing-a-will/
+- `5-vat-rate-on-residential-conversions-save-thousands-on-your-property-development` — https://www.djh.co.uk/latest-news/news-insights/5-vat-rate-on-residential-conversions-save-thousands-on-your-property-development/
+- `5-ways-an-audit-can-uncover-value-for-your-business` — https://www.djh.co.uk/latest-news/news-insights/5-ways-an-audit-can-uncover-value-for-your-business/
+- `a-guide-to-payrolling-benefits-in-kind` — https://www.djh.co.uk/latest-news/news-insights/a-guide-to-payrolling-benefits-in-kind/
+- `academies-accounts-direction-2023-24` — https://www.djh.co.uk/latest-news/news-insights/academies-accounts-direction-2023-24/
+- `academies-accounts-direction-2025-26-key-changes` — https://www.djh.co.uk/latest-news/news-insights/academies-accounts-direction-2025-26-key-changes/
+- `academy-trust-handbook-2024` — https://www.djh.co.uk/latest-news/news-insights/academy-trust-handbook-2024/
+- `accelerating-our-journey-support-tenzing` — https://www.djh.co.uk/latest-news/news-insights/accelerating-our-journey-support-tenzing/
+- `ashgates-joins-our-group` — https://www.djh.co.uk/latest-news/news-insights/ashgates-joins-our-group/
+- `autumn-budget-2021-explained` — https://www.djh.co.uk/latest-news/news-insights/autumn-budget-2021-explained/
+- `autumn-budget-2021-predictions` — https://www.djh.co.uk/latest-news/news-insights/autumn-budget-2021-predictions/
+- `autumn-budget-2024-livestream` — https://www.djh.co.uk/latest-news/news-insights/autumn-budget-2024-livestream/
+- `autumn-budget-2025-what-the-property-tax-changes-mean-for-landlords-and-property-owners` — https://www.djh.co.uk/latest-news/news-insights/autumn-budget-2025-what-the-property-tax-changes-mean-for-landlords-and-property-owners/
+- `autumn-statement-and-the-impact-on-dentists` — https://www.djh.co.uk/latest-news/news-insights/autumn-statement-and-the-impact-on-dentists/
+- `back-to-basics-employee-ownership-trusts` — https://www.djh.co.uk/latest-news/news-insights/back-to-basics-employee-ownership-trusts/
+- `benefits-growth-shares` — https://www.djh.co.uk/latest-news/news-insights/benefits-growth-shares/
+- `benefits-in-kind-navigate-the-new-payroll-requirements-before-2027` — https://www.djh.co.uk/latest-news/news-insights/benefits-in-kind-navigate-the-new-payroll-requirements-before-2027/
+- `budgeting-and-forecasting-face-recession` — https://www.djh.co.uk/latest-news/news-insights/budgeting-and-forecasting-face-recession/
+- `build-or-renovate-your-guide-to-maximising-capital-allowance-claims` — https://www.djh.co.uk/latest-news/news-insights/build-or-renovate-your-guide-to-maximising-capital-allowance-claims/
+- `business-exit-planning-choosing-the-right-path-for-you` — https://www.djh.co.uk/latest-news/news-insights/business-exit-planning-choosing-the-right-path-for-you/
+- `business-rates-relief-more-qualify` — https://www.djh.co.uk/latest-news/news-insights/business-rates-relief-more-qualify/
+- `bye-bye-to-the-great-resignation-and-hello-to-the-big-stay-era` — https://www.djh.co.uk/latest-news/news-insights/bye-bye-to-the-great-resignation-and-hello-to-the-big-stay-era/
+- `calling-all-dentists` — https://www.djh.co.uk/latest-news/news-insights/calling-all-dentists/
+- `candice-takes-on-mount-kilimanjaro-in-aid-of-alzheimers-society` — https://www.djh.co.uk/latest-news/news-insights/candice-takes-on-mount-kilimanjaro-in-aid-of-alzheimers-society/
+- `capital-allowance-claims-common-misconceptions` — https://www.djh.co.uk/latest-news/news-insights/capital-allowance-claims-common-misconceptions/
+- `changes-to-associated-companies-rules` — https://www.djh.co.uk/latest-news/news-insights/changes-to-associated-companies-rules/
+- `changes-to-national-insurance-contributions-and-minimum-wage-a-case-of-double-jeopardy` — https://www.djh.co.uk/latest-news/news-insights/changes-to-national-insurance-contributions-and-minimum-wage-a-case-of-double-jeopardy/
+- `changes-to-uk-law-what-you-need-to-know` — https://www.djh.co.uk/latest-news/news-insights/changes-to-uk-law-what-you-need-to-know/
+- `charity-reporting-in-2026-what-sorp-changes-mean-for-you` — https://www.djh.co.uk/latest-news/news-insights/charity-reporting-in-2026-what-sorp-changes-mean-for-you/
+- `child-benefit-changes` — https://www.djh.co.uk/latest-news/news-insights/child-benefit-changes/
+- `common-risks-of-acquiring-a-business` — https://www.djh.co.uk/latest-news/news-insights/common-risks-of-acquiring-a-business/
+- `companies-house-accounts-reforms-delayed-what-this-means-for-small-and-micro-businesses` — https://www.djh.co.uk/latest-news/news-insights/companies-house-accounts-reforms-delayed-what-this-means-for-small-and-micro-businesses/
+- *(+388 more)*
 
-## Incorporation & profit extraction (16 gap topics, 16 competitor pages)
+## dentalaccountancy.co.uk (8 gap candidates)
 
-- [x1] `benefits-of-incorporation-eroded`
-  - ross-brooke-dental.co.uk: https://www.ross-brooke-dental.co.uk/blog/benefits-of-incorporation-eroded/
-- [x1] `borrowing-money-from-your-limited-company`
-  - a-wise.co.uk: https://a-wise.co.uk/borrowing-money-from-your-limited-company/
-- [x1] `buying-a-car-limited-company`
-  - samera.co.uk: https://samera.co.uk/learning-center/buying-a-car-limited-company/
-- [x1] `changes-to-disguised-remuneration-loan-charge`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/changes-to-disguised-remuneration-loan-charge/
-- [x1] `dentist-incorporation.htm`
-  - onlyfordentists.com: http://www.onlyfordentists.com/dentist-incorporation.htm
-- [x1] `dividends-increased-scrutiny-and-new-reporting-requirements`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/dividends-increased-scrutiny-and-new-reporting-requirements/
-- [x1] `https-www-ross-brooke-dental-co-uk-blog-making-headlines-incorporation-caution`
-  - ross-brooke-dental.co.uk: https://www.ross-brooke-dental.co.uk/blog/making-headlines/https-www-ross-brooke-dental-co-uk-blog-making-headlines-incorporation-caution/
-- [x1] `incorporation`
-  - dentalaccountantsscotland.co.uk: https://dentalaccountantsscotland.co.uk/testimonials/incorporation/
-- [x1] `incorporation-calculator`
-  - dentalaccountantsscotland.co.uk: https://dentalaccountantsscotland.co.uk/resources/tax-calculators/incorporation-calculator/
-- [x1] `limited-company-tax-rates-discussed`
-  - pfmdental.co.uk: https://pfmdental.co.uk/limited-company-tax-rates-discussed/
-- [x1] `remuneration-planning-for-the-upcoming-tax-year`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/remuneration-planning-for-the-upcoming-tax-year/
-- [x1] `tax-on-your-dividends-january-payments`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/tax-on-your-dividends-january-payments/
-- [x1] `trivial-benefits-for-limited-company-directors`
-  - a-wise.co.uk: https://a-wise.co.uk/trivial-benefits-for-limited-company-directors/
-- [x1] `understanding-salary-and-dividends-a-guide-for-directors`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/understanding-salary-and-dividends-a-guide-for-directors/
-- [x1] `what-expenses-can-a-limited-company-claim`
-  - a-wise.co.uk: https://a-wise.co.uk/what-expenses-can-a-limited-company-claim/
-- [x1] `what-is-a-limited-company`
-  - a-wise.co.uk: https://a-wise.co.uk/what-is-a-limited-company/
+- `hmrc-tax-investigation-dentists-guide` — https://dentalaccountancy.co.uk/blog/hmrc-tax-investigation-dentists-guide
+- `incorporating-as-a-dentist-guide` — https://dentalaccountancy.co.uk/blog/incorporating-as-a-dentist-guide
+- `ir35-dentists-employment-status-guide` — https://dentalaccountancy.co.uk/blog/ir35-dentists-employment-status-guide
+- `dental-hygienists` — https://dentalaccountancy.co.uk/dental-hygienists
+- `dental-therapists` — https://dentalaccountancy.co.uk/dental-therapists
+- `learning-center` — https://dentalaccountancy.co.uk/learning-center
+- `pension-planning` — https://dentalaccountancy.co.uk/learning-center/pension-planning
+- `practice-owners` — https://dentalaccountancy.co.uk/practice-owners
 
-## Tax planning & efficiency (14 gap topics, 14 competitor pages)
+## onlyfordentists.com (13 gap candidates)
 
-- [x1] `family-tax`
-  - djh.co.uk: https://www.djh.co.uk/our-services/tax/family-tax/
-- [x1] `inheritance-tax-planning-for-uk-business-owners`
-  - a-wise.co.uk: https://a-wise.co.uk/inheritance-tax-planning-for-uk-business-owners/
-- [x1] `new-year-tax-planning-ideas`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/new-year-tax-planning-ideas/
-- [x1] `our-year-end-tax-planning-ideas`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/our-year-end-tax-planning-ideas/
-- [x1] `pre-year-end-income-tax-planning`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/pre-year-end-income-tax-planning/
-- [x1] `tax-efficient-finance-for-your-company`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/tax-efficient-finance-for-your-company/
-- [x1] `tax-efficient-gifts-to-your-children`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/tax-efficient-gifts-to-your-children/
-- [x1] `tax-efficient-ways-reward-your-team`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/tax-efficient-ways-reward-your-team/
-- [x1] `tax-saving-hacks`
-  - dentalaccounting.co.uk: https://dentalaccounting.co.uk/tax-saving-hacks/
-- [x1] `tax-savings`
-  - dentalaccountantsscotland.co.uk: https://dentalaccountantsscotland.co.uk/testimonials/tax-savings/
-- [x1] `tax-savings-metal-recycling-centre`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/client-stories/tax-savings-metal-recycling-centre/
-- [x1] `understanding-growth-shares-for-inheritance-tax-planning`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/understanding-growth-shares-for-inheritance-tax-planning/
-- [x1] `university-tax-planning-guide-for-parents`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/university-tax-planning-guide-for-parents/
-- [x1] `virtual-festive-fun-and-tax-planning`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/virtual-festive-fun-and-tax-planning/
+- `about.htm` — http://www.onlyfordentists.com/about.htm
+- `consultation.htm` — http://www.onlyfordentists.com/consultation.htm
+- `contact.htm` — http://www.onlyfordentists.com/contact.htm
+- `content_library.htm` — http://www.onlyfordentists.com/content_library.htm
+- `dentist-incorporation.htm` — http://www.onlyfordentists.com/dentist-incorporation.htm
+- `index.htm` — http://www.onlyfordentists.com/index.htm
+- `industry_report_form.htm` — http://www.onlyfordentists.com/industry_report_form.htm
+- `leave-a-review.htm` — http://www.onlyfordentists.com/leave-a-review.htm
+- `outsourced-cfo.htm` — http://www.onlyfordentists.com/outsourced-cfo.htm
+- `practice-valuations.htm` — http://www.onlyfordentists.com/practice-valuations.htm
+- `quickbooks-accounting.htm` — http://www.onlyfordentists.com/quickbooks-accounting.htm
+- `testimonials.htm` — http://www.onlyfordentists.com/testimonials.htm
+- `wealth-management.htm` — http://www.onlyfordentists.com/wealth-management.htm
 
-## Self-assessment & expenses (13 gap topics, 13 competitor pages)
+## nasdal.org.uk (286 gap candidates)
 
-- [x1] `be-wary-of-self-assessment-scams`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/be-wary-of-self-assessment-scams/
-- [x1] `changes-to-the-self-assessment-threshold`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/industry-news/changes-to-the-self-assessment-threshold/
-- [x1] `claim-for-deduction-for-mileage-payments`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/claim-for-deduction-for-mileage-payments/
-- [x1] `common-self-assessment-mistakes-to-avoid`
-  - a-wise.co.uk: https://a-wise.co.uk/common-self-assessment-mistakes-to-avoid/
-- [x1] `do-i-have-to-complete-a-self-assessment-tax-return`
-  - a-wise.co.uk: https://a-wise.co.uk/do-i-have-to-complete-a-self-assessment-tax-return/
-- [x1] `income-tax-self-assessment-penalties`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/income-tax-self-assessment-penalties/
-- [x1] `mileage-expenses-calculator`
-  - a-wise.co.uk: https://a-wise.co.uk/mileage-expenses-calculator/
-- [x1] `self-assessment-tax-returns-for-doctors`
-  - sial-accountants.co.uk: https://sial-accountants.co.uk/self-assessment-tax-returns-for-doctors/
-- [x1] `self-assessment-tax-returns-for-opticians`
-  - sial-accountants.co.uk: https://sial-accountants.co.uk/self-assessment-tax-returns-for-opticians/
-- [x1] `self-assessment-tax-returns-for-pharmacists`
-  - sial-accountants.co.uk: https://sial-accountants.co.uk/self-assessment-tax-returns-for-pharmacists/
-- [x1] `type-2-self-assessment-for-gps`
-  - sial-accountants.co.uk: https://sial-accountants.co.uk/type-2-self-assessment-for-gps/
-- [x1] `what-are-payments-on-account`
-  - a-wise.co.uk: https://a-wise.co.uk/what-are-payments-on-account/
-- [x1] `what-documents-do-you-need-for-self-assessment`
-  - a-wise.co.uk: https://a-wise.co.uk/what-documents-do-you-need-for-self-assessment/
+- `4988-2` — https://nasdal.org.uk/4988-2/
+- `845-increase-in-cost-of-compliance-is-staggering` — https://nasdal.org.uk/845-increase-in-cost-of-compliance-is-staggering/
+- `a-common-mistake` — https://nasdal.org.uk/a-common-mistake/
+- `a-divided-nation-nasdal-goodwill-survey` — https://nasdal.org.uk/a-divided-nation-nasdal-goodwill-survey/
+- `a-way-out-three-different-stages-of-a-dental-career` — https://nasdal.org.uk/a-way-out-three-different-stages-of-a-dental-career/
+- `about-us` — https://nasdal.org.uk/about-us/
+- `act-now-on-a-fixtures-review-to-avoid-repenting-later` — https://nasdal.org.uk/act-now-on-a-fixtures-review-to-avoid-repenting-later/
+- `an-avoidance-budget-from-fearful-phil` — https://nasdal.org.uk/an-avoidance-budget-from-fearful-phil/
+- `andrew-lockhart-mirams-elected-nasdal-lawyers-group-chairman` — https://nasdal.org.uk/andrew-lockhart-mirams-elected-nasdal-lawyers-group-chairman/
+- `andrew-lockhart-mirams-on-bda-roll-of-distinction` — https://nasdal.org.uk/andrew-lockhart-mirams-on-bda-roll-of-distinction/
+- `associate-earnings-at-a-standstill-or-moving-backwards` — https://nasdal.org.uk/associate-earnings-at-a-standstill-or-moving-backwards/
+- `associate-incorporation` — https://nasdal.org.uk/associate-incorporation/
+- `associate-profits-up-by-almost-7-benchmarking-report` — https://nasdal.org.uk/associate-profits-up-by-almost-7-benchmarking-report/
+- `associate-worker-status-its-complicated` — https://nasdal.org.uk/associate-worker-status-its-complicated/
+- `associates-lose-out-in-pension-confusion` — https://nasdal.org.uk/associates-lose-out-in-pension-confusion/
+- `author-public-2` — https://nasdal.org.uk/author-public-2/
+- `author-public` — https://nasdal.org.uk/author-public/
+- `auto-enrolment-what-you-need-to-know` — https://nasdal.org.uk/auto-enrolment-what-you-need-to-know/
+- `autumn-statement-122-billion-the-cost-of-brexit-2` — https://nasdal.org.uk/autumn-statement-122-billion-the-cost-of-brexit-2/
+- `autumn-statement-122-billion-the-cost-of-brexit` — https://nasdal.org.uk/autumn-statement-122-billion-the-cost-of-brexit/
+- `autumn-statement-property-bears-the-brunt` — https://nasdal.org.uk/autumn-statement-property-bears-the-brunt/
+- `baby-steps-three-different-stages-of-a-dental-career` — https://nasdal.org.uk/baby-steps-three-different-stages-of-a-dental-career/
+- `be-wary-advises-nasdal` — https://nasdal.org.uk/be-wary-advises-nasdal/
+- `beware-of-higher-than-expected-tax-bills-in-january-2025` — https://nasdal.org.uk/beware-of-higher-than-expected-tax-bills-in-january-2025/
+- `bigger-practices-with-nhs-contracts-still-command-higher-values` — https://nasdal.org.uk/bigger-practices-with-nhs-contracts-still-command-higher-values/
+- `brexit-bounce-practice-sales-benefit` — https://nasdal.org.uk/brexit-bounce-practice-sales-benefit/
+- `brexit-what-could-it-mean-for-you` — https://nasdal.org.uk/brexit-what-could-it-mean-for-you/
+- `budget-2014` — https://nasdal.org.uk/budget-2014/
+- `budget-analysis` — https://nasdal.org.uk/budget-analysis/
+- `budget-commentary-30-october-2024` — https://nasdal.org.uk/budget-commentary-30-october-2024/
+- `budget-commentary-deferral-of-pain` — https://nasdal.org.uk/budget-commentary-deferral-of-pain/
+- `budget-follow-up` — https://nasdal.org.uk/budget-follow-up/
+- `budget-reaction-chancellor-sugars-the-pill` — https://nasdal.org.uk/budget-reaction-chancellor-sugars-the-pill/
+- `business-directory` — https://nasdal.org.uk/business-directory/
+- `abrahams-dresden-llp` — https://nasdal.org.uk/business-directory/abrahams-dresden-llp/
+- `acuity-law` — https://nasdal.org.uk/business-directory/acuity-law/
+- `acuity-legal` — https://nasdal.org.uk/business-directory/acuity-legal/
+- `albert-goodman` — https://nasdal.org.uk/business-directory/albert-goodman/
+- `alexander-myerson-co-limited` — https://nasdal.org.uk/business-directory/alexander-myerson-co-limited/
+- `armstrong-watson` — https://nasdal.org.uk/business-directory/armstrong-watson/
+- `bhp-chartered-accountants-3` — https://nasdal.org.uk/business-directory/bhp-chartered-accountants-3/
+- `carr-jenkins-hood` — https://nasdal.org.uk/business-directory/carr-jenkins-hood/
+- `condie-co` — https://nasdal.org.uk/business-directory/condie-co/
+- `davidson-chalmers-stewart` — https://nasdal.org.uk/business-directory/davidson-chalmers-stewart/
+- `dodd-co` — https://nasdal.org.uk/business-directory/dodd-co/
+- `elantax-com` — https://nasdal.org.uk/business-directory/elantax-com/
+- `hazlewoods-llp` — https://nasdal.org.uk/business-directory/hazlewoods-llp/
+- `humphrey-co-2` — https://nasdal.org.uk/business-directory/humphrey-co-2/
+- `j-w-hinks-co` — https://nasdal.org.uk/business-directory/j-w-hinks-co/
+- `jcp-solicitors-2` — https://nasdal.org.uk/business-directory/jcp-solicitors-2/
+- `jcp-solicitors` — https://nasdal.org.uk/business-directory/jcp-solicitors/
+- `jmw-solicitors-llp` — https://nasdal.org.uk/business-directory/jmw-solicitors-llp/
+- `johnston-carmichael` — https://nasdal.org.uk/business-directory/johnston-carmichael/
+- `knights-plc-bristol` — https://nasdal.org.uk/business-directory/knights-plc-bristol/
+- `lovewell-blake` — https://nasdal.org.uk/business-directory/lovewell-blake/
+- `mccartan-turkington-breen-solicitors` — https://nasdal.org.uk/business-directory/mccartan-turkington-breen-solicitors/
+- `md-law` — https://nasdal.org.uk/business-directory/md-law/
+- `miller-samuel-hill-brown` — https://nasdal.org.uk/business-directory/miller-samuel-hill-brown/
+- `milsted-langdon` — https://nasdal.org.uk/business-directory/milsted-langdon/
+- `miscampbell-co-2` — https://nasdal.org.uk/business-directory/miscampbell-co-2/
+- `morr-co-llp` — https://nasdal.org.uk/business-directory/morr-co-llp/
+- `morris-crocker` — https://nasdal.org.uk/business-directory/morris-crocker/
+- `page-kirk-llp` — https://nasdal.org.uk/business-directory/page-kirk-llp/
+- `price-bailey` — https://nasdal.org.uk/business-directory/price-bailey/
+- `rees-wood-terry` — https://nasdal.org.uk/business-directory/rees-wood-terry/
+- `ross-brooke-dental` — https://nasdal.org.uk/business-directory/ross-brooke-dental/
+- `shakespeare-martineau-llp` — https://nasdal.org.uk/business-directory/shakespeare-martineau-llp/
+- `shaw-gibbs` — https://nasdal.org.uk/business-directory/shaw-gibbs/
+- `sintons-llp` — https://nasdal.org.uk/business-directory/sintons-llp/
+- `staffer-mayled-co-limited` — https://nasdal.org.uk/business-directory/staffer-mayled-co-limited/
+- `tg-associates` — https://nasdal.org.uk/business-directory/tg-associates/
+- `thorntons-law` — https://nasdal.org.uk/business-directory/thorntons-law/
+- `unw-llp` — https://nasdal.org.uk/business-directory/unw-llp/
+- `ward-hadaway` — https://nasdal.org.uk/business-directory/ward-hadaway/
+- `england-and-wales` — https://nasdal.org.uk/business-directory/wpbdp_tag/england-and-wales/
+- `yellow-cherry` — https://nasdal.org.uk/business-directory/yellow-cherry/
+- `cash-in-hand` — https://nasdal.org.uk/cash-in-hand/
+- `nasdal-news` — https://nasdal.org.uk/category/nasdal-news/
+- `scottish-news` — https://nasdal.org.uk/category/scottish-news/
+- `cdo-and-nhs-england-statement-more-details-still-needed` — https://nasdal.org.uk/cdo-and-nhs-england-statement-more-details-still-needed/
+- `cdo-presents-nasdal-dcby1-practice-of-the-year-award` — https://nasdal.org.uk/cdo-presents-nasdal-dcby1-practice-of-the-year-award/
+- `cdo-sara-hurley-announces-nasdal-dcby1-practice-of-the-year-award-2019` — https://nasdal.org.uk/cdo-sara-hurley-announces-nasdal-dcby1-practice-of-the-year-award-2019/
+- `chancellor-still-after-pensions` — https://nasdal.org.uk/chancellor-still-after-pensions/
+- `chancellor-will-attack-pensions` — https://nasdal.org.uk/chancellor-will-attack-pensions/
+- `changes-to-nic-alert-from-nasdals-bob-cummings` — https://nasdal.org.uk/changes-to-nic-alert-from-nasdals-bob-cummings/
+- `child-benefit-payback-warning` — https://nasdal.org.uk/child-benefit-payback-warning/
+- `choose-with-care` — https://nasdal.org.uk/choose-with-care/
+- `christmas-is-coming-hide-the-mistletoe` — https://nasdal.org.uk/christmas-is-coming-hide-the-mistletoe/
+- `common-defined-terms` — https://nasdal.org.uk/common-defined-terms/
+- `company-pitfalls-2` — https://nasdal.org.uk/company-pitfalls-2/
+- `company-pitfalls` — https://nasdal.org.uk/company-pitfalls/
+- `compliance-reviews` — https://nasdal.org.uk/compliance-reviews/
+- `concern-that-dentists-are-unaware-of-massive-changes` — https://nasdal.org.uk/concern-that-dentists-are-unaware-of-massive-changes/
+- `cost-of-compliance-rockets-1086-hike-in-just-10-years` — https://nasdal.org.uk/cost-of-compliance-rockets-1086-hike-in-just-10-years/
+- `could-you-be-nasdal-dcby1-practice-of-the-year-2026` — https://nasdal.org.uk/could-you-be-nasdal-dcby1-practice-of-the-year-2026/
+- `cqc-hurdle-at-the-point-of-sale-warning` — https://nasdal.org.uk/cqc-hurdle-at-the-point-of-sale-warning/
+- `cqc-regulations-cause-the-law-to-be-broken` — https://nasdal.org.uk/cqc-regulations-cause-the-law-to-be-broken/
+- `current-state-of-play-a-nasdal-guide` — https://nasdal.org.uk/current-state-of-play-a-nasdal-guide/
+- `cyber-criminals-and-dentistry` — https://nasdal.org.uk/cyber-criminals-and-dentistry/
+- `data-protection` — https://nasdal.org.uk/data-protection/
+- `decision-time-is-nigh-for-child-benefit-opt-out` — https://nasdal.org.uk/decision-time-is-nigh-for-child-benefit-opt-out/
+- `dental-guarantees` — https://nasdal.org.uk/dental-guarantees/
+- `dental-law` — https://nasdal.org.uk/dental-law/
+- `dental-profits-reduced-or-static-in-2009-10` — https://nasdal.org.uk/dental-profits-reduced-or-static-in-2009-10/
+- `dental-shows` — https://nasdal.org.uk/dental-shows/
+- `dip-in-values-in-latest-nasdal-survey-on-goodwill` — https://nasdal.org.uk/dip-in-values-in-latest-nasdal-survey-on-goodwill/
+- `dont-let-a-short-practice-lease-be-a-barrier-to-a-sale` — https://nasdal.org.uk/dont-let-a-short-practice-lease-be-a-barrier-to-a-sale/
+- `dont-throw-a-spanner-in-the-works-2` — https://nasdal.org.uk/dont-throw-a-spanner-in-the-works-2/
+- `dont-throw-a-spanner-in-the-works` — https://nasdal.org.uk/dont-throw-a-spanner-in-the-works/
+- `essential-tips-on-maximising-tax-relief` — https://nasdal.org.uk/essential-tips-on-maximising-tax-relief/
+- `exit-strategies` — https://nasdal.org.uk/exit-strategies/
+- `expansion-of-dental-teams-made-easier-by-2013-budget` — https://nasdal.org.uk/expansion-of-dental-teams-made-easier-by-2013-budget/
+- `expense-sharers-and-the-cqc` — https://nasdal.org.uk/expense-sharers-and-the-cqc/
+- `exploring-incorporation` — https://nasdal.org.uk/exploring-incorporation/
+- `financial-solvency-tests-fundamentally-flawed` — https://nasdal.org.uk/financial-solvency-tests-fundamentally-flawed/
+- `find-a-member` — https://nasdal.org.uk/find-a-member/
+- `five-ways-to-improve-practice-goodwill` — https://nasdal.org.uk/five-ways-to-improve-practice-goodwill/
+- `foundation-dentists-understanding-your-payslip-in-2022-23` — https://nasdal.org.uk/foundation-dentists-understanding-your-payslip-in-2022-23/
+- `get-ahead-of-the-game` — https://nasdal.org.uk/get-ahead-of-the-game/
+- `giving-more-to-employees` — https://nasdal.org.uk/giving-more-to-employees/
+- `golden-hellos` — https://nasdal.org.uk/golden-hellos/
+- `goodwill-survey` — https://nasdal.org.uk/goodwill-survey/
+- `goodwill-whats-the-story` — https://nasdal.org.uk/goodwill-whats-the-story/
+- `guidance-on-incorporation-2018-2` — https://nasdal.org.uk/guidance-on-incorporation-2018-2/
+- `guidance-on-incorporation-2018` — https://nasdal.org.uk/guidance-on-incorporation-2018/
+- `hmrc-announcement-re-associates-tax-status` — https://nasdal.org.uk/hmrc-announcement-re-associates-tax-status/
+- `huge-disappointment-for-nhs-dentistry` — https://nasdal.org.uk/huge-disappointment-for-nhs-dentistry/
+- `hurry-only-one-month-remains-to-enter-nasdal-dcby1-practice-of-the-year-award-2024` — https://nasdal.org.uk/hurry-only-one-month-remains-to-enter-nasdal-dcby1-practice-of-the-year-award-2024/
+- `illegal-and-legal-dental-partnerships` — https://nasdal.org.uk/illegal-and-legal-dental-partnerships/
+- `incorporation-guidance-from-nasdal` — https://nasdal.org.uk/incorporation-guidance-from-nasdal/
+- `incorporation-is-it-right-for-you` — https://nasdal.org.uk/incorporation-is-it-right-for-you/
+- `interest-rate-rise-will-dentistry-notice` — https://nasdal.org.uk/interest-rate-rise-will-dentistry-notice/
+- `introducing-pensions` — https://nasdal.org.uk/introducing-pensions/
+- `ir35-changes-a-handy-guide` — https://nasdal.org.uk/ir35-changes-a-handy-guide/
+- `ir35-nasdal-warns-against-misleading-and-inaccurate-advice` — https://nasdal.org.uk/ir35-nasdal-warns-against-misleading-and-inaccurate-advice/
+- `july-2013-goodwill-survey` — https://nasdal.org.uk/july-2013-goodwill-survey/
+- `keeping-a-close-eye` — https://nasdal.org.uk/keeping-a-close-eye/
+- `latest-goodwill-survey` — https://nasdal.org.uk/latest-goodwill-survey/
+- `latest-nasdal-survey-results-goodwill-on-the-slide` — https://nasdal.org.uk/latest-nasdal-survey-results-goodwill-on-the-slide/
+- `launch-of-scottish-nasdal-section` — https://nasdal.org.uk/launch-of-scottish-nasdal-section/
+- `leap-of-faith-three-different-stages-of-a-dental-career` — https://nasdal.org.uk/leap-of-faith-three-different-stages-of-a-dental-career/
+- `learning-the-lesson` — https://nasdal.org.uk/learning-the-lesson/
+- `less-than-a-month-to-enter-nasdal-dcby1-practice-of-the-year-2025-award` — https://nasdal.org.uk/less-than-a-month-to-enter-nasdal-dcby1-practice-of-the-year-2025-award/
+- `less-than-a-month-to-enter-nasdal-dcby1-practice-of-the-year-award` — https://nasdal.org.uk/less-than-a-month-to-enter-nasdal-dcby1-practice-of-the-year-award/
+- `lets-bake-a-cake` — https://nasdal.org.uk/lets-bake-a-cake/
+- `lifetime-isas-the-perfect-way-to-save-for-the-future` — https://nasdal.org.uk/lifetime-isas-the-perfect-way-to-save-for-the-future/
+- `making-tax-digital-delayed-until-2020` — https://nasdal.org.uk/making-tax-digital-delayed-until-2020/
+- `management-madness-at-cqc` — https://nasdal.org.uk/management-madness-at-cqc/
+- `mary-berry-rises-to-the-challenge` — https://nasdal.org.uk/mary-berry-rises-to-the-challenge/
+- `maximise-goodwill` — https://nasdal.org.uk/maximise-goodwill/
+- `measuring-success` — https://nasdal.org.uk/measuring-success/
+- `members-home` — https://nasdal.org.uk/members-home/
+- `mixed-and-nhs-practice-values-continue-to-soar` — https://nasdal.org.uk/mixed-and-nhs-practice-values-continue-to-soar/
+- `mixed-practices-have-most-allure` — https://nasdal.org.uk/mixed-practices-have-most-allure/
+- `money-for-nothing` — https://nasdal.org.uk/money-for-nothing/
+- `my-bank-manager` — https://nasdal.org.uk/my-bank-manager/
+- `nasda-lawyers-nasdal` — https://nasdal.org.uk/nasda-lawyers-nasdal/
+- `nasda-secretary-becomes-tax-specialist` — https://nasdal.org.uk/nasda-secretary-becomes-tax-specialist/
+- `nasdal-annual-benchmarking-statistics-a-year-like-no-other` — https://nasdal.org.uk/nasdal-annual-benchmarking-statistics-a-year-like-no-other/
+- `nasdal-annual-benchmarking-statistics-associate-remuneration-up-for-third-year-in-a-row` — https://nasdal.org.uk/nasdal-annual-benchmarking-statistics-associate-remuneration-up-for-third-year-in-a-row/
+- `nasdal-annual-benchmarking-statistics-better-remuneration-for-nhs-care` — https://nasdal.org.uk/nasdal-annual-benchmarking-statistics-better-remuneration-for-nhs-care/
+- `nasdal-annual-benchmarking-statistics-costs-up-and-profits-down` — https://nasdal.org.uk/nasdal-annual-benchmarking-statistics-costs-up-and-profits-down/
+- `nasdal-annual-benchmarking-statistics-increases-not-the-whole-story` — https://nasdal.org.uk/nasdal-annual-benchmarking-statistics-increases-not-the-whole-story/
+- `nasdal-annual-benchmarking-statistics-mixed-up` — https://nasdal.org.uk/nasdal-annual-benchmarking-statistics-mixed-up/
+- `nasdal-annual-benchmarking-statistics-nhs-private-practice-gap-widens` — https://nasdal.org.uk/nasdal-annual-benchmarking-statistics-nhs-private-practice-gap-widens/
+- `nasdal-appoints-new-chair` — https://nasdal.org.uk/nasdal-appoints-new-chair/
+- `nasdal-benchmarking-statistics-2024-johnnys-view` — https://nasdal.org.uk/nasdal-benchmarking-statistics-2024-johnnys-view/
+- `nasdal-benchmarking-statistics-private-practice-profits-leave-nhs-behind` — https://nasdal.org.uk/nasdal-benchmarking-statistics-private-practice-profits-leave-nhs-behind/
+- `nasdal-benchmarking-statistics-the-demise-of-the-single-handed-practitioner` — https://nasdal.org.uk/nasdal-benchmarking-statistics-the-demise-of-the-single-handed-practitioner/
+- `nasdal-benchmarking-stats-show-private-practices-in-recovery` — https://nasdal.org.uk/nasdal-benchmarking-stats-show-private-practices-in-recovery/
+- `nasdal-clarification-on-seiss` — https://nasdal.org.uk/nasdal-clarification-on-seiss/
+- `nasdal-congratulations-to-jason-wong` — https://nasdal.org.uk/nasdal-congratulations-to-jason-wong/
+- `nasdal-covid-19-resilience-of-mixed-nhs-private-practices-the-findings` — https://nasdal.org.uk/nasdal-covid-19-resilience-of-mixed-nhs-private-practices-the-findings/
+- `nasdal-dcby1-practice-of-the-year-2025-award-announced` — https://nasdal.org.uk/nasdal-dcby1-practice-of-the-year-2025-award-announced/
+- `nasdal-dcby1-practice-of-the-year-award-2023-is-announced-2` — https://nasdal.org.uk/nasdal-dcby1-practice-of-the-year-award-2023-is-announced-2/
+- `nasdal-forum-in-london-to-discuss-the-future-of-dentistry` — https://nasdal.org.uk/nasdal-forum-in-london-to-discuss-the-future-of-dentistry/
+- `nasdal-goodwill-results-big-rises-in-nhs-practice-values` — https://nasdal.org.uk/nasdal-goodwill-results-big-rises-in-nhs-practice-values/
+- `nasdal-goodwill-results-nhs-practice-values-bounce-back` — https://nasdal.org.uk/nasdal-goodwill-results-nhs-practice-values-bounce-back/
+- `nasdal-goodwill-survey-a-return-to-normality` — https://nasdal.org.uk/nasdal-goodwill-survey-a-return-to-normality/
+- `nasdal-goodwill-survey-big-fall-in-nhs-practice-values` — https://nasdal.org.uk/nasdal-goodwill-survey-big-fall-in-nhs-practice-values/
+- `nasdal-goodwill-survey-further-nhs-practice-woes` — https://nasdal.org.uk/nasdal-goodwill-survey-further-nhs-practice-woes/
+- `nasdal-goodwill-survey-greater-private-equity-interest` — https://nasdal.org.uk/nasdal-goodwill-survey-greater-private-equity-interest/
+- `nasdal-goodwill-survey-market-sees-big-drop` — https://nasdal.org.uk/nasdal-goodwill-survey-market-sees-big-drop/
+- `nasdal-goodwill-survey-nhs-practice-values-continue-to-drop` — https://nasdal.org.uk/nasdal-goodwill-survey-nhs-practice-values-continue-to-drop/
+- `nasdal-goodwill-survey-nhs-practice-values-see-big-drop` — https://nasdal.org.uk/nasdal-goodwill-survey-nhs-practice-values-see-big-drop/
+- `nasdal-goodwill-survey-results-a-buoyant-market` — https://nasdal.org.uk/nasdal-goodwill-survey-results-a-buoyant-market/
+- `nasdal-goodwill-survey-results-a-mixed-picture` — https://nasdal.org.uk/nasdal-goodwill-survey-results-a-mixed-picture/
+- `nasdal-goodwill-survey-results-a-realistic-valuation-level` — https://nasdal.org.uk/nasdal-goodwill-survey-results-a-realistic-valuation-level/
+- `nasdal-goodwill-survey-results-values-fall-back-but-market-still-strong` — https://nasdal.org.uk/nasdal-goodwill-survey-results-values-fall-back-but-market-still-strong/
+- `nasdal-goodwill-survey-valuations-drop-back` — https://nasdal.org.uk/nasdal-goodwill-survey-valuations-drop-back/
+- `nasdal-goodwill-survey-what-happens-next` — https://nasdal.org.uk/nasdal-goodwill-survey-what-happens-next/
+- `nasdal-lawyers-create-standard-contract` — https://nasdal.org.uk/nasdal-lawyers-create-standard-contract/
+- `nasdal-practice-goodwill-survey-corporate-competition` — https://nasdal.org.uk/nasdal-practice-goodwill-survey-corporate-competition/
+- `nasdal-press-conference-state-of-the-nation` — https://nasdal.org.uk/nasdal-press-conference-state-of-the-nation/
+- `nasdal-scotland-annual-benchmarking-statistics-increased-profitability-across-the-board` — https://nasdal.org.uk/nasdal-scotland-annual-benchmarking-statistics-increased-profitability-across-the-board/
+- `nasdal-scotland-benchmarking-statistics-margins-in-all-practices-under-pressure` — https://nasdal.org.uk/nasdal-scotland-benchmarking-statistics-margins-in-all-practices-under-pressure/
+- `nasdal-scotland-forum-2025-optimism-and-opportunity-in-glasgow` — https://nasdal.org.uk/nasdal-scotland-forum-2025-optimism-and-opportunity-in-glasgow/
+- `nasdal-statement-on-tax-avoidance` — https://nasdal.org.uk/nasdal-statement-on-tax-avoidance/
+- `nasdals-guide-to-the-budget-in-2015` — https://nasdal.org.uk/nasdals-guide-to-the-budget-in-2015/
+- `new-agreement-will-make-practice-sales-more-straightforward` — https://nasdal.org.uk/new-agreement-will-make-practice-sales-more-straightforward/
+- *(+86 more)*
 
-## BADR & capital gains on sale (12 gap topics, 12 competitor pages)
+## hazlewoods.co.uk (828 gap candidates)
 
-- [x1] `capital-gains-entrepreneurs-relief-changes`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/capital-gains-entrepreneurs-relief-changes/
-- [x1] `capital-gains-tax-allowance-use-it-or-lose-it`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/capital-gains-tax-allowance-use-it-or-lose-it/
-- [x1] `capital-gains-tax-annual-exemption-cut`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/capital-gains-tax-annual-exemption-cut/
-- [x1] `capital-gains-tax-proposed-divorce-changes`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/capital-gains-tax-proposed-divorce-changes/
-- [x1] `certain-gifts-can-have-capital-gains-tax-consequences`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/certain-gifts-can-have-capital-gains-tax-consequences/
-- [x1] `cgt-entrepreneurs-relief-applies-up-to-3-years-following-cessation`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/cgt-entrepreneurs-relief-applies-up-to-3-years-following-cessation/
-- [x1] `cgt-private-residence-relief-changes-go-ahead`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/cgt-private-residence-relief-changes-go-ahead/
-- [x1] `further-changes-to-entrepreneurs-relief`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/further-changes-to-entrepreneurs-relief/
-- [x1] `new-system-for-reporting-cgt-on-property-disposal`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/new-system-for-reporting-cgt-on-property-disposal/
-- [x1] `qualify-for-capital-gains-tax-relief`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/qualify-for-capital-gains-tax-relief/
-- [x1] `report-and-pay-your-capital-gains-tax`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/report-and-pay-your-capital-gains-tax/
-- [x1] `rumours-of-capital-gains-tax-increase`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/rumours-of-capital-gains-tax-increase/
+- `about-us` — https://www.hazlewoods.co.uk/about-us/
+- `our-story` — https://www.hazlewoods.co.uk/about-us/our-story/
+- `responsible-business` — https://www.hazlewoods.co.uk/about-us/responsible-business/
+- `supporting-our-community` — https://www.hazlewoods.co.uk/about-us/supporting-our-community/
+- `what-makes-us-different` — https://www.hazlewoods.co.uk/about-us/what-makes-us-different/
+- `what-our-clients-say` — https://www.hazlewoods.co.uk/about-us/what-our-clients-say/
+- `audit-senior-2` — https://www.hazlewoods.co.uk/career/audit-senior-2/
+- `audit-senior-manager` — https://www.hazlewoods.co.uk/career/audit-senior-manager/
+- `audit-senior` — https://www.hazlewoods.co.uk/career/audit-senior/
+- `client-lifecycle-manager` — https://www.hazlewoods.co.uk/career/client-lifecycle-manager/
+- `corporate-international-tax-associate-manager` — https://www.hazlewoods.co.uk/career/corporate-international-tax-associate-manager/
+- `corporate-ma-deals-tax-director` — https://www.hazlewoods.co.uk/career/corporate-ma-deals-tax-director/
+- `corporate-ma-deals-tax-manager` — https://www.hazlewoods.co.uk/career/corporate-ma-deals-tax-manager/
+- `hr-systems-administrator` — https://www.hazlewoods.co.uk/career/hr-systems-administrator/
+- `payroll-specialist-2` — https://www.hazlewoods.co.uk/career/payroll-specialist-2/
+- `school-college-leaver-ignite-apprenticeship` — https://www.hazlewoods.co.uk/career/school-college-leaver-ignite-apprenticeship/
+- `senior-associate-assistant-manager` — https://www.hazlewoods.co.uk/career/senior-associate-assistant-manager/
+- `senior-technical-paraplanner` — https://www.hazlewoods.co.uk/career/senior-technical-paraplanner/
+- `technical-director-audit-and-accounting` — https://www.hazlewoods.co.uk/career/technical-director-audit-and-accounting/
+- `trainee-financial-adviser` — https://www.hazlewoods.co.uk/career/trainee-financial-adviser/
+- `apprenticeships-and-early-careers` — https://www.hazlewoods.co.uk/careers/apprenticeships-and-early-careers/
+- `placements-and-work-experience` — https://www.hazlewoods.co.uk/careers/apprenticeships-and-early-careers/placements-and-work-experience/
+- `sixth-form-college-leavers` — https://www.hazlewoods.co.uk/careers/apprenticeships-and-early-careers/sixth-form-college-leavers/
+- `experienced-hires` — https://www.hazlewoods.co.uk/careers/experienced-hires/
+- `latest-vacancies` — https://www.hazlewoods.co.uk/careers/latest-vacancies/
+- `professional-support-roles` — https://www.hazlewoods.co.uk/careers/professional-support-roles/
+- `your-career-at-hazlewoods` — https://www.hazlewoods.co.uk/careers/your-career-at-hazlewoods/
+- `client-logins` — https://www.hazlewoods.co.uk/client-logins/
+- `client-portal` — https://www.hazlewoods.co.uk/client-portal/
+- `client-story-buying-horse-overseas` — https://www.hazlewoods.co.uk/client-story/client-story-buying-horse-overseas/
+- `client-story-competition-stud-and-livery-business-breaching-vat-registration-threshold` — https://www.hazlewoods.co.uk/client-story/client-story-competition-stud-and-livery-business-breaching-vat-registration-threshold/
+- `client-story-dressage-training-centre` — https://www.hazlewoods.co.uk/client-story/client-story-dressage-training-centre/
+- `client-story-eventing-livery-yard-looking-to-improve-profitability` — https://www.hazlewoods.co.uk/client-story/client-story-eventing-livery-yard-looking-to-improve-profitability/
+- `client-story-expert-witness-and-business-review-for-livery-yard` — https://www.hazlewoods.co.uk/client-story/client-story-expert-witness-and-business-review-for-livery-yard/
+- `client-story-farming-to-equine` — https://www.hazlewoods.co.uk/client-story/client-story-farming-to-equine/
+- `client-story-patent-box` — https://www.hazlewoods.co.uk/client-story/client-story-patent-box/
+- `client-story-peace-of-mind-for-a-growing-franchise-business` — https://www.hazlewoods.co.uk/client-story/client-story-peace-of-mind-for-a-growing-franchise-business/
+- `client-story-private-family` — https://www.hazlewoods.co.uk/client-story/client-story-private-family/
+- `client-story-rapid-ramp` — https://www.hazlewoods.co.uk/client-story/client-story-rapid-ramp/
+- `client-story-rootwave` — https://www.hazlewoods.co.uk/client-story/client-story-rootwave/
+- `client-story-succession-planning-for-a-family-farming-and-equestrian-business` — https://www.hazlewoods.co.uk/client-story/client-story-succession-planning-for-a-family-farming-and-equestrian-business/
+- `client-story-supporting-a-high-growth-business` — https://www.hazlewoods.co.uk/client-story/client-story-supporting-a-high-growth-business/
+- `client-story-tbs-engineering` — https://www.hazlewoods.co.uk/client-story/client-story-tbs-engineering/
+- `client-story-transitioning-to-xero` — https://www.hazlewoods.co.uk/client-story/client-story-transitioning-to-xero/
+- `client-story-ubiqutek-limited-trading-as-rootwave-continued` — https://www.hazlewoods.co.uk/client-story/client-story-ubiqutek-limited-trading-as-rootwave-continued/
+- `contact-us` — https://www.hazlewoods.co.uk/contact-us/
+- `cookie-policy` — https://www.hazlewoods.co.uk/cookie-policy/
+- `business-accountants` — https://www.hazlewoods.co.uk/expertise/business-accountants/
+- `audit-assurance` — https://www.hazlewoods.co.uk/expertise/business-accountants/audit-assurance/
+- `business-recovery-insolvency` — https://www.hazlewoods.co.uk/expertise/business-accountants/business-recovery-insolvency/
+- `technical-guides` — https://www.hazlewoods.co.uk/expertise/business-accountants/business-recovery-insolvency/technical-guides/
+- `corporate-finance-deals` — https://www.hazlewoods.co.uk/expertise/business-accountants/corporate-finance-deals/
+- `grow-strong-exit-smart` — https://www.hazlewoods.co.uk/expertise/business-accountants/corporate-finance-deals/grow-strong-exit-smart/
+- `financial-reporting` — https://www.hazlewoods.co.uk/expertise/business-accountants/financial-reporting/
+- `forensic-accounting` — https://www.hazlewoods.co.uk/expertise/business-accountants/forensic-accounting/
+- `commercial-disputes` — https://www.hazlewoods.co.uk/expertise/business-accountants/forensic-accounting/commercial-disputes/
+- `compulsory-purchase-orders` — https://www.hazlewoods.co.uk/expertise/business-accountants/forensic-accounting/compulsory-purchase-orders/
+- `expert-determination` — https://www.hazlewoods.co.uk/expertise/business-accountants/forensic-accounting/expert-determination/
+- `loss-of-profits-and-income-claims` — https://www.hazlewoods.co.uk/expertise/business-accountants/forensic-accounting/loss-of-profits-and-income-claims/
+- `matrimonial-disputes` — https://www.hazlewoods.co.uk/expertise/business-accountants/forensic-accounting/matrimonial-disputes/
+- `professional-negligence-claims` — https://www.hazlewoods.co.uk/expertise/business-accountants/forensic-accounting/professional-negligence-claims/
+- `spa-disputes` — https://www.hazlewoods.co.uk/expertise/business-accountants/forensic-accounting/spa-disputes/
+- `governance-compliance` — https://www.hazlewoods.co.uk/expertise/business-accountants/governance-compliance/
+- `company-secretarial-services` — https://www.hazlewoods.co.uk/expertise/business-accountants/governance-compliance/company-secretarial-services/
+- `international-support` — https://www.hazlewoods.co.uk/expertise/business-accountants/international-support/
+- `small-medium-enterprises` — https://www.hazlewoods.co.uk/expertise/business-accountants/small-medium-enterprises/
+- `cloud-accounting` — https://www.hazlewoods.co.uk/expertise/business-accountants/small-medium-enterprises/cloud-accounting/
+- `start-ups-micro-businesses` — https://www.hazlewoods.co.uk/expertise/business-accountants/start-ups-micro-businesses/
+- `statutory-accounts` — https://www.hazlewoods.co.uk/expertise/business-accountants/statutory-accounts/
+- `business-structuring` — https://www.hazlewoods.co.uk/expertise/business-accountants/tax/business-structuring/
+- `eis-seis` — https://www.hazlewoods.co.uk/expertise/business-accountants/tax/eis-seis/
+- `employee-ownership-trusts` — https://www.hazlewoods.co.uk/expertise/business-accountants/tax/employee-ownership-trusts/
+- `employee-share-schemes` — https://www.hazlewoods.co.uk/expertise/business-accountants/tax/employee-share-schemes/
+- `hmrc-enquiry-visits-and-investigations` — https://www.hazlewoods.co.uk/expertise/business-accountants/tax/hmrc-enquiry-visits-and-investigations/
+- `inheritance-tax-trusts-and-estate-planning` — https://www.hazlewoods.co.uk/expertise/business-accountants/tax/inheritance-tax-trusts-and-estate-planning/
+- `international-tax-services` — https://www.hazlewoods.co.uk/expertise/business-accountants/tax/international-tax-services/
+- `owner-managed-businesses` — https://www.hazlewoods.co.uk/expertise/business-accountants/tax/owner-managed-businesses/
+- `partnerships-and-llps` — https://www.hazlewoods.co.uk/expertise/business-accountants/tax/partnerships-and-llps/
+- `spring-budget-2024` — https://www.hazlewoods.co.uk/expertise/business-accountants/tax/spring-budget-2024/
+- `stamp-taxes-sdlt-ltt` — https://www.hazlewoods.co.uk/expertise/business-accountants/tax/stamp-taxes-sdlt-ltt/
+- `talking-tax-winter-2023` — https://www.hazlewoods.co.uk/expertise/business-accountants/tax/talking-tax-winter-2023/
+- `tax-facts` — https://www.hazlewoods.co.uk/expertise/business-accountants/tax/tax-facts/
+- `tax-investigation-service-tis` — https://www.hazlewoods.co.uk/expertise/business-accountants/tax/tax-investigation-service-tis/
+- `transaction-taxes` — https://www.hazlewoods.co.uk/expertise/business-accountants/tax/transaction-taxes/
+- `by-sector` — https://www.hazlewoods.co.uk/expertise/by-sector/
+- `day-nurseries` — https://www.hazlewoods.co.uk/expertise/by-sector/day-nurseries/
+- `effective-kpis-for-your-day-nursery-business` — https://www.hazlewoods.co.uk/expertise/by-sector/day-nurseries/effective-kpis-for-your-day-nursery-business/
+- `hazlewoods-early-years-business-insights` — https://www.hazlewoods.co.uk/expertise/by-sector/day-nurseries/hazlewoods-early-years-business-insights/
+- `supporting-stables-daycare-a-case-study` — https://www.hazlewoods.co.uk/expertise/by-sector/day-nurseries/supporting-stables-daycare-a-case-study/
+- `farms-estates` — https://www.hazlewoods.co.uk/expertise/by-sector/farms-estates/
+- `agricultural-rd-relief` — https://www.hazlewoods.co.uk/expertise/by-sector/farms-estates/agricultural-rd-relief/
+- `considering-the-benefits-of-incorporation` — https://www.hazlewoods.co.uk/expertise/by-sector/farms-estates/considering-the-benefits-of-incorporation/
+- `have-you-herd` — https://www.hazlewoods.co.uk/expertise/by-sector/farms-estates/have-you-herd/
+- `landed-estates` — https://www.hazlewoods.co.uk/expertise/by-sector/farms-estates/landed-estates/
+- `planning-for-succession-and-retirement` — https://www.hazlewoods.co.uk/expertise/by-sector/farms-estates/planning-for-succession-and-retirement/
+- `preparation-of-annual-accounts-tax-returns` — https://www.hazlewoods.co.uk/expertise/by-sector/farms-estates/preparation-of-annual-accounts-tax-returns/
+- `stamp-duty-land-tax-advice-for-farming-businesses` — https://www.hazlewoods.co.uk/expertise/by-sector/farms-estates/stamp-duty-land-tax-advice-for-farming-businesses/
+- `food-drink` — https://www.hazlewoods.co.uk/expertise/by-sector/food-drink/
+- `growing-your-healthcare-business` — https://www.hazlewoods.co.uk/expertise/by-sector/healthcare/growing-your-healthcare-business/
+- `operating-your-healthcare-business` — https://www.hazlewoods.co.uk/expertise/by-sector/healthcare/operating-your-healthcare-business/
+- `qcs-partnership` — https://www.hazlewoods.co.uk/expertise/by-sector/healthcare/qcs-partnership/
+- `selling-your-healthcare-business` — https://www.hazlewoods.co.uk/expertise/by-sector/healthcare/selling-your-healthcare-business/
+- `additional-information` — https://www.hazlewoods.co.uk/expertise/by-sector/innovation/additional-information/
+- `independent-accountants-report` — https://www.hazlewoods.co.uk/expertise/by-sector/innovation/independent-accountants-report/
+- `patent-box` — https://www.hazlewoods.co.uk/expertise/by-sector/innovation/patent-box/
+- `audit-assurance` — https://www.hazlewoods.co.uk/expertise/by-sector/legal/audit-assurance/
+- `buying-and-selling-a-law-firm` — https://www.hazlewoods.co.uk/expertise/by-sector/legal/buying-and-selling-a-law-firm/
+- `cofa-fee-earner-and-cashier-training-courses` — https://www.hazlewoods.co.uk/expertise/by-sector/legal/cofa-fee-earner-and-cashier-training-courses/
+- `practice-structure-and-incorporation-advice` — https://www.hazlewoods.co.uk/expertise/by-sector/legal/practice-structure-and-incorporation-advice/
+- `setting-up-a-law-firm` — https://www.hazlewoods.co.uk/expertise/by-sector/legal/setting-up-a-law-firm/
+- `sra-compliance-support` — https://www.hazlewoods.co.uk/expertise/by-sector/legal/sra-compliance-support/
+- `buying-and-selling-a-pharmacy` — https://www.hazlewoods.co.uk/expertise/by-sector/pharmacy/buying-and-selling-a-pharmacy/
+- `property-construction` — https://www.hazlewoods.co.uk/expertise/by-sector/property-construction/
+- `stamp-taxes` — https://www.hazlewoods.co.uk/expertise/by-sector/property-construction/stamp-taxes/
+- `benchmarking-and-profitability` — https://www.hazlewoods.co.uk/expertise/by-sector/veterinary/benchmarking-and-profitability/
+- `business-plans-financial-projections` — https://www.hazlewoods.co.uk/expertise/by-sector/veterinary/business-plans-financial-projections/
+- `forensic-accounting-and-litigation-support` — https://www.hazlewoods.co.uk/expertise/by-sector/veterinary/forensic-accounting-and-litigation-support/
+- `hazlewoods-breaking-mews` — https://www.hazlewoods.co.uk/expertise/by-sector/veterinary/hazlewoods-breaking-mews/
+- `practice-structure` — https://www.hazlewoods.co.uk/expertise/by-sector/veterinary/practice-structure/
+- `record-keeping-bookkeeping-and-vat` — https://www.hazlewoods.co.uk/expertise/by-sector/veterinary/record-keeping-bookkeeping-and-vat/
+- `supporting-independent-veterinary-practices` — https://www.hazlewoods.co.uk/expertise/by-sector/veterinary/supporting-independent-veterinary-practices/
+- `for-individuals` — https://www.hazlewoods.co.uk/expertise/for-individuals/
+- `financial-planning-iht-webinar-series` — https://www.hazlewoods.co.uk/expertise/for-individuals/financial-planning/financial-planning-iht-webinar-series/
+- `inheritance-tax-planning-and-succession-planning` — https://www.hazlewoods.co.uk/expertise/for-individuals/financial-planning/inheritance-tax-planning-and-succession-planning/
+- `professional-partners` — https://www.hazlewoods.co.uk/expertise/for-individuals/financial-planning/professional-partners/
+- `private-client` — https://www.hazlewoods.co.uk/expertise/for-individuals/private-client/
+- `autumn-budget-2025` — https://www.hazlewoods.co.uk/expertise/for-individuals/tax/autumn-budget-2025/
+- `gender-pay-reports` — https://www.hazlewoods.co.uk/gender-pay-reports/
+- `grow-strong-exit-smart-chapter-9-negotiating-the-best-deal-and-avoiding-pitfalls` — https://www.hazlewoods.co.uk/grow-strong-exit-smart-chapter-9-negotiating-the-best-deal-and-avoiding-pitfalls/
+- `hazlewoods-tax-investigation-service` — https://www.hazlewoods.co.uk/hazlewoods-tax-investigation-service/
+- `audit-and-assurance-update-a-pair-of-fresh-eyes-on-your-statutory-accounts` — https://www.hazlewoods.co.uk/insights/audit-and-assurance/audit-and-assurance-update-a-pair-of-fresh-eyes-on-your-statutory-accounts/
+- `audit-and-assurance-update-companies-house-reforms-how-will-this-affect-small-entity-accounts` — https://www.hazlewoods.co.uk/insights/audit-and-assurance/audit-and-assurance-update-companies-house-reforms-how-will-this-affect-small-entity-accounts/
+- `audit-and-assurance-update-delay-in-changes-to-uk-gaap` — https://www.hazlewoods.co.uk/insights/audit-and-assurance/audit-and-assurance-update-delay-in-changes-to-uk-gaap/
+- `audit-and-assurance-update-does-preparing-statutory-accounts-take-up-too-much-of-your-time` — https://www.hazlewoods.co.uk/insights/audit-and-assurance/audit-and-assurance-update-does-preparing-statutory-accounts-take-up-too-much-of-your-time/
+- `audit-and-assurance-update-increases-to-company-size-thresholds-2` — https://www.hazlewoods.co.uk/insights/audit-and-assurance/audit-and-assurance-update-increases-to-company-size-thresholds-2/
+- `audit-and-assurance-update-supplier-finance-arrangements` — https://www.hazlewoods.co.uk/insights/audit-and-assurance/audit-and-assurance-update-supplier-finance-arrangements/
+- `audit-and-assurance-update-what-do-statutory-accounts-provide-for-your-stakeholders` — https://www.hazlewoods.co.uk/insights/audit-and-assurance/audit-and-assurance-update-what-do-statutory-accounts-provide-for-your-stakeholders/
+- `audit-assurance-update-an-early-christmas-present-changes-to-company-and-llp-thresholds` — https://www.hazlewoods.co.uk/insights/audit-and-assurance/audit-assurance-update-an-early-christmas-present-changes-to-company-and-llp-thresholds/
+- `audit-assurance-update-are-you-prepared-for-frs-102-changes` — https://www.hazlewoods.co.uk/insights/audit-and-assurance/audit-assurance-update-are-you-prepared-for-frs-102-changes/
+- `audit-assurance-update-new-size-thresholds-for-companies-and-groups` — https://www.hazlewoods.co.uk/insights/audit-and-assurance/audit-assurance-update-new-size-thresholds-for-companies-and-groups/
+- `changes-in-frs102-for-lease-accounting` — https://www.hazlewoods.co.uk/insights/audit-and-assurance/changes-in-frs102-for-lease-accounting/
+- `could-your-subsidairy-benefit-from-audit-exemption-via-a-parent-guarantee` — https://www.hazlewoods.co.uk/insights/audit-and-assurance/could-your-subsidairy-benefit-from-audit-exemption-via-a-parent-guarantee/
+- `disclosure-and-companies-house-filing-changes-for-small-entities` — https://www.hazlewoods.co.uk/insights/audit-and-assurance/disclosure-and-companies-house-filing-changes-for-small-entities/
+- `statutory-accounts-update-changes-for-uk-gaap` — https://www.hazlewoods.co.uk/insights/audit-and-assurance/statutory-accounts-update-changes-for-uk-gaap/
+- `the-benefits-of-an-external-audit-of-your-financial-statements` — https://www.hazlewoods.co.uk/insights/audit-and-assurance/the-benefits-of-an-external-audit-of-your-financial-statements/
+- `why-do-i-need-an-audit` — https://www.hazlewoods.co.uk/insights/audit-and-assurance/why-do-i-need-an-audit/
+- `will-your-auditor-be-visiting-your-foreign-subsidiary-this-year` — https://www.hazlewoods.co.uk/insights/audit-and-assurance/will-your-auditor-be-visiting-your-foreign-subsidiary-this-year/
+- `business-solutions-update-growing-your-business` — https://www.hazlewoods.co.uk/insights/business-solutions/business-solutions-update-growing-your-business/
+- `business-solutions-update-how-dext-approvals-can-benefit-your-business` — https://www.hazlewoods.co.uk/insights/business-solutions/business-solutions-update-how-dext-approvals-can-benefit-your-business/
+- `business-solutions-update-kernon-countryside-consultants-a-case-study` — https://www.hazlewoods.co.uk/insights/business-solutions/business-solutions-update-kernon-countryside-consultants-a-case-study/
+- `business-solutions-update-navigating-the-path-to-investment-a-tech-start-ups-journey` — https://www.hazlewoods.co.uk/insights/business-solutions/business-solutions-update-navigating-the-path-to-investment-a-tech-start-ups-journey/
+- `business-solutions-update-supporting-a-high-growth-business-a-case-study` — https://www.hazlewoods.co.uk/insights/business-solutions/business-solutions-update-supporting-a-high-growth-business-a-case-study/
+- `business-solutions-update-the-ultimate-app-stack-dext-xero-and-fathom` — https://www.hazlewoods.co.uk/insights/business-solutions/business-solutions-update-the-ultimate-app-stack-dext-xero-and-fathom/
+- `business-solutions-update-transitioning-to-xero-a-client-case-study` — https://www.hazlewoods.co.uk/insights/business-solutions/business-solutions-update-transitioning-to-xero-a-client-case-study/
+- `business-solutions-update-unlocking-the-full-potential-of-your-e-commerce-business-with-xero` — https://www.hazlewoods.co.uk/insights/business-solutions/business-solutions-update-unlocking-the-full-potential-of-your-e-commerce-business-with-xero/
+- `hazlewoods-supports-infosec-people-with-mbo` — https://www.hazlewoods.co.uk/insights/business-solutions/hazlewoods-supports-infosec-people-with-mbo/
+- `a-day-in-the-life-audit` — https://www.hazlewoods.co.uk/insights/careers/a-day-in-the-life-audit/
+- `calling-all-year-11-12-13-and-gap-year-girls` — https://www.hazlewoods.co.uk/insights/careers/calling-all-year-11-12-13-and-gap-year-girls/
+- `cardiff-office-graduate-recruitment-triples` — https://www.hazlewoods.co.uk/insights/careers/cardiff-office-graduate-recruitment-triples/
+- `careers-at-hazlewoods-a-day-in-the-life-series-business-solutions` — https://www.hazlewoods.co.uk/insights/careers/careers-at-hazlewoods-a-day-in-the-life-series-business-solutions/
+- `careers-at-hazlewoods-a-day-in-the-life-series-corporate-finance` — https://www.hazlewoods.co.uk/insights/careers/careers-at-hazlewoods-a-day-in-the-life-series-corporate-finance/
+- `careers-at-hazlewoods-a-day-in-the-life-series-tax` — https://www.hazlewoods.co.uk/insights/careers/careers-at-hazlewoods-a-day-in-the-life-series-tax/
+- `careers-at-hazlewoods-meet-hannah-audit-manager` — https://www.hazlewoods.co.uk/insights/careers/careers-at-hazlewoods-meet-hannah-audit-manager/
+- `careers-at-hazlewoods-meet-khudeja-ahmad` — https://www.hazlewoods.co.uk/insights/careers/careers-at-hazlewoods-meet-khudeja-ahmad/
+- `careers-at-hazlewoods-meet-umang` — https://www.hazlewoods.co.uk/insights/careers/careers-at-hazlewoods-meet-umang/
+- `careers-update-welcome-brunch-for-2024-apprentices` — https://www.hazlewoods.co.uk/insights/careers/careers-update-welcome-brunch-for-2024-apprentices/
+- `careers-update-welcome-brunch-for-2026-apprentices` — https://www.hazlewoods.co.uk/insights/careers/careers-update-welcome-brunch-for-2026-apprentices/
+- `chosen-hill-school-celebration-evening` — https://www.hazlewoods.co.uk/insights/careers/chosen-hill-school-celebration-evening/
+- `healthy-workplaces-gloucestershire` — https://www.hazlewoods.co.uk/insights/careers/healthy-workplaces-gloucestershire/
+- `mental-health-first-aiders` — https://www.hazlewoods.co.uk/insights/careers/mental-health-first-aiders/
+- `our-hazlewoods-values-better-together` — https://www.hazlewoods.co.uk/insights/careers/our-hazlewoods-values-better-together/
+- `our-hazlewoods-values-everyone-counts` — https://www.hazlewoods.co.uk/insights/careers/our-hazlewoods-values-everyone-counts/
+- `our-hazlewoods-values-we-aim-high` — https://www.hazlewoods.co.uk/insights/careers/our-hazlewoods-values-we-aim-high/
+- `our-hazlewoods-values-we-never-stop-evolving` — https://www.hazlewoods.co.uk/insights/careers/our-hazlewoods-values-we-never-stop-evolving/
+- `our-hazlewoods-values-were-reassuringly-human` — https://www.hazlewoods.co.uk/insights/careers/our-hazlewoods-values-were-reassuringly-human/
+- `see-us-at-a-careers-fair-near-you` — https://www.hazlewoods.co.uk/insights/careers/see-us-at-a-careers-fair-near-you/
+- `tax-update-spotlight-on-megan-lewis-bourke` — https://www.hazlewoods.co.uk/insights/careers/tax-update-spotlight-on-megan-lewis-bourke/
+- `welcome-to-our-2025-apprentices` — https://www.hazlewoods.co.uk/insights/careers/welcome-to-our-2025-apprentices/
+- `welcoming-our-2024-apprentices` — https://www.hazlewoods.co.uk/insights/careers/welcoming-our-2024-apprentices/
+- `working-at-hazlewoods` — https://www.hazlewoods.co.uk/insights/careers/working-at-hazlewoods/
+- `charity-structures-finding-the-right-one-for-you` — https://www.hazlewoods.co.uk/insights/charities/charity-structures-finding-the-right-one-for-you/
+- `frs102-charity-sorp-2026` — https://www.hazlewoods.co.uk/insights/charities/frs102-charity-sorp-2026/
+- `icaew-charity-conference-2026` — https://www.hazlewoods.co.uk/insights/charities/icaew-charity-conference-2026/
+- `trustees-annual-report` — https://www.hazlewoods.co.uk/insights/charities/trustees-annual-report/
+- `understanding-the-different-types-of-charity-funds` — https://www.hazlewoods.co.uk/insights/charities/understanding-the-different-types-of-charity-funds/
+- `client-stories` — https://www.hazlewoods.co.uk/insights/client-stories/
+- `construction-conctracts-frs102-changes` — https://www.hazlewoods.co.uk/insights/construction/construction-conctracts-frs102-changes/
+- `csi-update-2025` — https://www.hazlewoods.co.uk/insights/construction/csi-update-2025/
+- `possible-cis-changes-from-april-2026` — https://www.hazlewoods.co.uk/insights/construction/possible-cis-changes-from-april-2026/
+- `a-billion-pound-year-hazlewoods-corporate-finance-teams-2024-ma-success` — https://www.hazlewoods.co.uk/insights/corporate-finance/a-billion-pound-year-hazlewoods-corporate-finance-teams-2024-ma-success/
+- `a-strong-year-of-ma-for-hazlewoods-corporate-finance-team` — https://www.hazlewoods.co.uk/insights/corporate-finance/a-strong-year-of-ma-for-hazlewoods-corporate-finance-team/
+- `are-you-starting-growing-or-looking-to-extract-value-from-a-business` — https://www.hazlewoods.co.uk/insights/corporate-finance/are-you-starting-growing-or-looking-to-extract-value-from-a-business/
+- `business-sale-completion-transition` — https://www.hazlewoods.co.uk/insights/corporate-finance/business-sale-completion-transition/
+- `business-value-drivers-hazlewoods-corporate-finance` — https://www.hazlewoods.co.uk/insights/corporate-finance/business-value-drivers-hazlewoods-corporate-finance/
+- `demystifying-growth-strategies` — https://www.hazlewoods.co.uk/insights/corporate-finance/demystifying-growth-strategies/
+- `gear-up-for-growth-accelerating-your-business-next-steps` — https://www.hazlewoods.co.uk/insights/corporate-finance/gear-up-for-growth-accelerating-your-business-next-steps/
+- `grow-strong-exit-smart-chapter-1-is-your-business-ready-for-growth-or-sale` — https://www.hazlewoods.co.uk/insights/corporate-finance/grow-strong-exit-smart-chapter-1-is-your-business-ready-for-growth-or-sale/
+- `grow-strong-exit-smart-chapter-2-growth-strategies` — https://www.hazlewoods.co.uk/insights/corporate-finance/grow-strong-exit-smart-chapter-2-growth-strategies/
+- `grow-strong-exit-smart-chapter-4-preparing-for-exit` — https://www.hazlewoods.co.uk/insights/corporate-finance/grow-strong-exit-smart-chapter-4-preparing-for-exit/
+- `grow-strong-exit-smart-chapter-5-choosing-the-right-exit-route` — https://www.hazlewoods.co.uk/insights/corporate-finance/grow-strong-exit-smart-chapter-5-choosing-the-right-exit-route/
+- *(+628 more)*
 
-## Buying a dental practice (10 gap topics, 10 competitor pages)
+## sial-accountants.co.uk (31 gap candidates)
 
-- [x1] `a-hat-trick-of-acquisitions`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/company/a-hat-trick-of-acquisitions/
-- [x1] `acquisition-finance`
-  - djh.co.uk: https://www.djh.co.uk/our-services/commercial-funding/acquisition-finance/
-- [x1] `buying-a-practice-legal-support`
-  - pfmdental.co.uk: https://pfmdental.co.uk/legal/buying-a-practice-legal-support/
-- [x1] `due-diligence-the-anatomy-of-a-typical-engagement`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/due-diligence-the-anatomy-of-a-typical-engagement/
-- [x1] `further-growth-walsall-acquisition`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/further-growth-walsall-acquisition/
-- [x1] `growth-acquisition-advantages`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/growth-acquisition-advantages/
-- [x1] `sourcing-labour-from-third-parties-due-diligence-required`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/sourcing-labour-from-third-parties-due-diligence-required/
-- [x1] `strategic-acquisition-in-the-it-solutions-sector`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/client-stories/strategic-acquisition-in-the-it-solutions-sector/
-- [x1] `supporting-3bm-group-in-their-acquisition-by-rsk`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/client-stories/supporting-3bm-group-in-their-acquisition-by-rsk/
-- [x1] `understanding-the-money-financing-your-practice-purchase`
-  - samera.co.uk: https://samera.co.uk/newsletter/understanding-the-money-financing-your-practice-purchase/
+- `2024-autumn-budget-for-healthcare-professionals` — https://sial-accountants.co.uk/2024-autumn-budget-for-healthcare-professionals/
+- `a-guide-to-the-autumn-statement-2023` — https://sial-accountants.co.uk/a-guide-to-the-autumn-statement-2023/
+- `companies-house-identity-verification-for-healthcare-professionals` — https://sial-accountants.co.uk/companies-house-identity-verification-for-healthcare-professionals/
+- `comprehensive-accounting-services-for-pharmacies` — https://sial-accountants.co.uk/comprehensive-accounting-services-for-pharmacies/
+- `finalist-for-accounting-excellence-award-2018` — https://sial-accountants.co.uk/finalist-for-accounting-excellence-award-2018/
+- `financial-wellbeing-for-doctors` — https://sial-accountants.co.uk/financial-wellbeing-for-doctors/
+- `get-a-quote` — https://sial-accountants.co.uk/get-a-quote/
+- `happy-new-year-2025` — https://sial-accountants.co.uk/happy-new-year-2025/
+- `healthcare-accounting` — https://sial-accountants.co.uk/healthcare-accounting/
+- `locations.kml` — https://sial-accountants.co.uk/locations.kml
+- `medical-accountants` — https://sial-accountants.co.uk/medical-accountants/
+- `avn-inspiring-accountants` — https://sial-accountants.co.uk/medical-accountants/awards/avn-inspiring-accountants/
+- `avn-practice-differentiation-award` — https://sial-accountants.co.uk/medical-accountants/awards/avn-practice-differentiation-award/
+- `core-values` — https://sial-accountants.co.uk/medical-accountants/core-values/
+- `self-assessment-tax-returns-for-doctors` — https://sial-accountants.co.uk/self-assessment-tax-returns-for-doctors/
+- `self-assessment-tax-returns-for-opticians` — https://sial-accountants.co.uk/self-assessment-tax-returns-for-opticians/
+- `self-assessment-tax-returns-for-pharmacists` — https://sial-accountants.co.uk/self-assessment-tax-returns-for-pharmacists/
+- `locum-optom` — https://sial-accountants.co.uk/services/locum-optom/
+- `locum-pharmacist` — https://sial-accountants.co.uk/services/locum-pharmacist/
+- `primary-care-networks` — https://sial-accountants.co.uk/services/primary-care-networks/
+- `property-business` — https://sial-accountants.co.uk/services/property-business/
+- `salaried-gps-and-locums` — https://sial-accountants.co.uk/services/salaried-gps-and-locums/
+- `small-and-growing-business` — https://sial-accountants.co.uk/services/small-and-growing-business/
+- `tax-returns-for-medical-doctors` — https://sial-accountants.co.uk/services/tax-returns-for-medical-doctors/
+- `vat-for-opticians` — https://sial-accountants.co.uk/services/vat-for-opticians/
+- `tax-and-accounting-services-for-opticians` — https://sial-accountants.co.uk/tax-and-accounting-services-for-opticians/
+- `type-1-pension-certificate` — https://sial-accountants.co.uk/type-1-pension-certificate/
+- `type-2-self-assessment-for-gps` — https://sial-accountants.co.uk/type-2-self-assessment-for-gps/
+- `type-2-self-assessment-nhs-pension-gps` — https://sial-accountants.co.uk/type-2-self-assessment-nhs-pension-gps/
+- `vat-locum-doctors-hmrc-update-2025` — https://sial-accountants.co.uk/vat-locum-doctors-hmrc-update-2025/
+- `vat-services-for-opticians` — https://sial-accountants.co.uk/vat-services-for-opticians/
 
-## Property, premises & SDLT for practices (9 gap topics, 9 competitor pages)
+## bryden-johnson.co.uk (688 gap candidates)
 
-- [x1] `does-your-lease-contain-everything-you-need`
-  - pfmdental.co.uk: https://pfmdental.co.uk/does-your-lease-contain-everything-you-need/
-- [x1] `properties-and-leases`
-  - pfmdental.co.uk: https://pfmdental.co.uk/legal/properties-and-leases/
-- [x1] `relief-additional-3-sdlt-charge`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/relief-additional-3-sdlt-charge/
-- [x1] `sdlt-and-mixed-use-property-why-classification-matters`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/sdlt-and-mixed-use-property-why-classification-matters/
-- [x1] `sipp-and-income-drawdown`
-  - pfmdental.co.uk: https://pfmdental.co.uk/financial-planning/sipp-and-income-drawdown/
-- [x1] `stamp-duty-cuts`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/stamp-duty-cuts/
-- [x1] `stamp-duty-land-tax-changes-go-ahead`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/stamp-duty-land-tax-changes-go-ahead/
-- [x1] `stamp-duty-land-tax-possible-changes`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/stamp-duty-land-tax-possible-changes/
-- [x1] `stamp-duty-land-taxes`
-  - a-wise.co.uk: https://a-wise.co.uk/tax-rates-allowances/stamp-duty-land-taxes/
-
-## Practice accounting & bookkeeping (8 gap topics, 8 competitor pages)
-
-- [x1] `a-guide-to-bookkeeping-for-shopify-store-owners`
-  - a-wise.co.uk: https://a-wise.co.uk/a-guide-to-bookkeeping-for-shopify-store-owners/
-- [x1] `common-bookkeeping-mistakes-for-small-business`
-  - a-wise.co.uk: https://a-wise.co.uk/common-bookkeeping-mistakes-for-small-business/
-- [x1] `dental-bookkeeping`
-  - dentalaccountancy.co.uk: https://dentalaccountancy.co.uk/dental-bookkeeping
-- [x1] `monthly-management-accounts-for-academies`
-  - djh.co.uk: https://www.djh.co.uk/specialisms/education/monthly-management-accounts-for-academies/
-- [x1] `reasons-for-bookkeeping-records`
-  - a-wise.co.uk: https://a-wise.co.uk/reasons-for-bookkeeping-records/
-- [x1] `the-difference-between-bookkeeping-and-accounting`
-  - a-wise.co.uk: https://a-wise.co.uk/the-difference-between-bookkeeping-and-accounting/
-- [x1] `what-are-bookkeeping-ledgers`
-  - a-wise.co.uk: https://a-wise.co.uk/what-are-bookkeeping-ledgers/
-- [x1] `what-is-double-entry-bookkeeping`
-  - a-wise.co.uk: https://a-wise.co.uk/what-is-double-entry-bookkeeping/
-
-## NHS pension scheme (7 gap topics, 7 competitor pages)
-
-- [x1] `mitigating-the-threat-of-nhs-pension-changes`
-  - pfmdental.co.uk: https://pfmdental.co.uk/mitigating-the-threat-of-nhs-pension-changes/
-- [x1] `my-nhs-pension-the-new-online-portal`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/specialisms/my-nhs-pension-the-new-online-portal/
-- [x1] `nhs-pensions-announcement`
-  - ross-brooke-dental.co.uk: https://www.ross-brooke-dental.co.uk/blog/making-headlines/nhs-pensions-announcement/
-- [x1] `superannuation`
-  - djh.co.uk: https://www.djh.co.uk/specialisms/medical/superannuation/
-- [x1] `taking-your-nhs-pension-early-opportunity-or-mistake`
-  - pfmdental.co.uk: https://pfmdental.co.uk/taking-your-nhs-pension-early-opportunity-or-mistake/
-- [x1] `type-2-self-assessment-nhs-pension-gps`
-  - sial-accountants.co.uk: https://sial-accountants.co.uk/type-2-self-assessment-nhs-pension-gps/
-- [x1] `we-welcome-new-announcement-from-nhs-pensions`
-  - ross-brooke-dental.co.uk: https://www.ross-brooke-dental.co.uk/blog/news/we-welcome-new-announcement-from-nhs-pensions/
-
-## Selling a practice & goodwill (7 gap topics, 7 competitor pages)
-
-- [x1] `ebitda-is-strong-so-why-are-investors-hesitating`
-  - samera.co.uk: https://samera.co.uk/newsletter/ebitda-is-strong-so-why-are-investors-hesitating/
-- [x1] `electrical-contractor-loss-to-1m-exit`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/client-stories/electrical-contractor-loss-to-1m-exit/
-- [x1] `is-the-rising-cost-of-borrowing-impacting-on-practice-sales`
-  - pfmdental.co.uk: https://pfmdental.co.uk/is-the-rising-cost-of-borrowing-impacting-on-practice-sales/
-- [x1] `practice-sales`
-  - pfmdental.co.uk: https://pfmdental.co.uk/practice-sales/
-- [x1] `practice-sales-an-end-to-delays`
-  - pfmdental.co.uk: https://pfmdental.co.uk/practice-sales-an-end-to-delays/
-- [x1] `selling-a-practice-legal-support`
-  - pfmdental.co.uk: https://pfmdental.co.uk/legal/selling-a-practice-legal-support/
-- [x1] `the-complexity-of-dental-incorporations`
-  - ross-brooke-dental.co.uk: https://www.ross-brooke-dental.co.uk/blog/business-blog/the-complexity-of-dental-incorporations/
-
-## Capital allowances & equipment (6 gap topics, 6 competitor pages)
-
-- [x1] `capital-allowance-claims-common-misconceptions`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/capital-allowance-claims-common-misconceptions/
-- [x1] `full-expensing-what-it-means-for-your-company`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/news-insights/full-expensing-what-it-means-for-your-company/
-- [x1] `peffs-how-important-are-they-capital-allowance-claim`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/industry-news/peffs-how-important-are-they-capital-allowance-claim/
-- [x1] `super-deduction-replaced-by-full-expensing`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/super-deduction-replaced-by-full-expensing/
-- [x1] `treasury-starts-conversation-to-reform-uk-capital-allowance-regime`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/treasury-starts-conversation-to-reform-uk-capital-allowance-regime/
-- [x1] `unlocking-significant-tax-benefits-through-expert-capital-allowance-guidance`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/client-stories/unlocking-significant-tax-benefits-through-expert-capital-allowance-guidance/
-
-## Partnership & expense sharing (6 gap topics, 6 competitor pages)
-
-- [x1] `continued-growth-senovo-health-partnership`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/company/continued-growth-senovo-health-partnership/
-- [x1] `dental-partnerships-expense-shares-limited-companies-departure-of-a-principal`
-  - pfmdental.co.uk: https://pfmdental.co.uk/dental-partnerships-expense-shares-limited-companies-departure-of-a-principal/
-- [x1] `limited-liability-partnership-accounting`
-  - a-wise.co.uk: https://a-wise.co.uk/who-we-help/limited-liability-partnership-accounting/
-- [x1] `mcbrides-join-the-djh-group-in-our-first-southern-partnership`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/company/mcbrides-join-the-djh-group-in-our-first-southern-partnership/
-- [x1] `partnership-accounting`
-  - a-wise.co.uk: https://a-wise.co.uk/who-we-help/partnership-accounting/
-- [x1] `welcoming-msd-in-our-first-irish-partnership`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/company/welcoming-msd-in-our-first-irish-partnership/
-
-## Specialist & orthodontic practices (6 gap topics, 6 competitor pages)
-
-- [x1] `an-orthodontic-business-transformed`
-  - ross-brooke-dental.co.uk: https://www.ross-brooke-dental.co.uk/blog/case-study/an-orthodontic-business-transformed/
-- [x1] `apply-cosmetic-finance`
-  - samera.co.uk: https://samera.co.uk/service/apply-cosmetic-finance/
-- [x1] `apply-implantology-finance`
-  - samera.co.uk: https://samera.co.uk/service/apply-implantology-finance/
-- [x1] `apply-orthodontist-finance`
-  - samera.co.uk: https://samera.co.uk/service/apply-orthodontist-finance/
-- [x1] `case-studies-of-two-orthodontists`
-  - ross-brooke-dental.co.uk: https://www.ross-brooke-dental.co.uk/blog/case-study/case-studies-of-two-orthodontists/
-- [x1] `cosmetic-surgeon-commercial-finance`
-  - samera.co.uk: https://samera.co.uk/learning-center/cosmetic-surgeon-commercial-finance/
-
-## Locum dentist tax (5 gap topics, 5 competitor pages)
-
-- [x1] `beware-mini-umbrella-company-fraud`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/beware-mini-umbrella-company-fraud/
-- [x1] `contractor-no-more-umbrella-benefits`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/contractor-no-more-umbrella-benefits/
-- [x1] `ir35-dentists-employment-status-guide`
-  - dentalaccountancy.co.uk: https://dentalaccountancy.co.uk/blog/ir35-dentists-employment-status-guide
-- [x1] `locum-gps`
-  - djh.co.uk: https://www.djh.co.uk/specialisms/medical/locum-gps/
-- [x1] `locum-optometrists`
-  - djh.co.uk: https://www.djh.co.uk/specialisms/opticians/locum-optometrists/
-
-## Pension annual & lifetime allowance (5 gap topics, 5 competitor pages)
-
-- [x1] `beware-of-rogue-research-development-consultants`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/beware-of-rogue-research-development-consultants/
-- [x1] `consultations-issued-on-tax-day-by-treasury`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/consultations-issued-on-tax-day-by-treasury/
-- [x1] `is-pension-tax-relief-under-the-spotlight`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/is-pension-tax-relief-under-the-spotlight/
-- [x1] `the-lifetime-allowance-has-been-abolished-but-is-there-a-catch`
-  - djh.co.uk: https://www.djh.co.uk/latest-news/industry-news/the-lifetime-allowance-has-been-abolished-but-is-there-a-catch/
-- [x1] `unleashed-certified-consultant`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/unleashed-certified-consultant/
-
-## Starting & squat practices (4 gap topics, 4 competitor pages)
-
-- [x1] `setting-up-in-practice-bootcamp-if-practice-ownership-is-on-your-mind-this-year`
-  - samera.co.uk: https://samera.co.uk/newsletter/setting-up-in-practice-bootcamp-if-practice-ownership-is-on-your-mind-this-year/
-- [x1] `setting-up-in-practice-bootcamp-learn-from-real-industry-experts`
-  - samera.co.uk: https://samera.co.uk/newsletter/setting-up-in-practice-bootcamp-learn-from-real-industry-experts/
-- [x1] `setting-up-in-practice-bootcamp-what-you-ll-learn-in-one-day`
-  - samera.co.uk: https://samera.co.uk/newsletter/setting-up-in-practice-bootcamp-what-you-ll-learn-in-one-day/
-- [x1] `setting-up-in-practice-bootcamp-why-preparation-matters`
-  - samera.co.uk: https://samera.co.uk/newsletter/setting-up-in-practice-bootcamp-why-preparation-matters/
-
-## CQC, GDC & regulatory (3 gap topics, 3 competitor pages)
-
-- [x1] `buyer-registration`
-  - samera.co.uk: https://samera.co.uk/service/buyer-registration/
-- [x1] `know-your-red-tape-corporate-dentistry-and-the-gdc-a-reminder`
-  - pfmdental.co.uk: https://pfmdental.co.uk/know-your-red-tape-corporate-dentistry-and-the-gdc-a-reminder/
-- [x1] `regulatory-information-and-financial-ombudsman-service`
-  - pfmdental.co.uk: https://pfmdental.co.uk/regulatory-information-and-financial-ombudsman-service/
-
-## Hygienists, therapists & DCPs (3 gap topics, 3 competitor pages)
-
-- [x1] `dental-hygienists`
-  - dentalaccountancy.co.uk: https://dentalaccountancy.co.uk/dental-hygienists
-- [x1] `dental-therapists`
-  - dentalaccountancy.co.uk: https://dentalaccountancy.co.uk/dental-therapists
-- [x1] `hygienist-re-charge`
-  - pfmdental.co.uk: https://pfmdental.co.uk/hygienist-re-charge/
-
-## NHS contracts (UDA/GDS/PDS) (1 gap topics, 1 competitor pages)
-
-- [x1] `winter-fuel-payment-clawback`
-  - ac-accounts.co.uk: https://www.ac-accounts.co.uk/blog/winter-fuel-payment-clawback/
+- `1-25-increase-in-nics-and-tax-on-dividends-to-fund-health-and-social-care` — https://bryden-johnson.co.uk/1-25-increase-in-nics-and-tax-on-dividends-to-fund-health-and-social-care/
+- `130-super-deduction-ends-31-march-2023` — https://bryden-johnson.co.uk/130-super-deduction-ends-31-march-2023/
+- `130-super-deduction-ends-soon` — https://bryden-johnson.co.uk/130-super-deduction-ends-soon/
+- `130-super-deduction-for-investing-in-new-plant-continues-2` — https://bryden-johnson.co.uk/130-super-deduction-for-investing-in-new-plant-continues-2/
+- `130-super-deduction-for-investing-in-new-plant-continues` — https://bryden-johnson.co.uk/130-super-deduction-for-investing-in-new-plant-continues/
+- `1315-2` — https://bryden-johnson.co.uk/1315-2/
+- `1401-2` — https://bryden-johnson.co.uk/1401-2/
+- `1482-2` — https://bryden-johnson.co.uk/1482-2/
+- `1511-2` — https://bryden-johnson.co.uk/1511-2/
+- `1638-2` — https://bryden-johnson.co.uk/1638-2/
+- `1844-2` — https://bryden-johnson.co.uk/1844-2/
+- `1941-2` — https://bryden-johnson.co.uk/1941-2/
+- `1948-2` — https://bryden-johnson.co.uk/1948-2/
+- `2002-2` — https://bryden-johnson.co.uk/2002-2/
+- `2021-22-national-insurance-bands` — https://bryden-johnson.co.uk/2021-22-national-insurance-bands/
+- `2022-23-national-insurance-bands` — https://bryden-johnson.co.uk/2022-23-national-insurance-bands/
+- `2022-23-p11d-forms-to-be-submitted-online` — https://bryden-johnson.co.uk/2022-23-p11d-forms-to-be-submitted-online/
+- `2311-2` — https://bryden-johnson.co.uk/2311-2/
+- `3270-2` — https://bryden-johnson.co.uk/3270-2/
+- `3561-2` — https://bryden-johnson.co.uk/3561-2/
+- `3658-2` — https://bryden-johnson.co.uk/3658-2/
+- `4185-2` — https://bryden-johnson.co.uk/4185-2/
+- `4336-2` — https://bryden-johnson.co.uk/4336-2/
+- `4647-2` — https://bryden-johnson.co.uk/4647-2/
+- `4654-2` — https://bryden-johnson.co.uk/4654-2/
+- `5-rate-on-tourism-and-hospitality-ends-30-september` — https://bryden-johnson.co.uk/5-rate-on-tourism-and-hospitality-ends-30-september/
+- `7982-2` — https://bryden-johnson.co.uk/7982-2/
+- `a-time-for-giving` — https://bryden-johnson.co.uk/a-time-for-giving/
+- `accelerate-succession-planning-to-mitigate-a-large-inheritance-tax-iht-bill` — https://bryden-johnson.co.uk/accelerate-succession-planning-to-mitigate-a-large-inheritance-tax-iht-bill/
+- `action-fraud-warns-of-remote-access-scams` — https://bryden-johnson.co.uk/action-fraud-warns-of-remote-access-scams/
+- `advisory-fuel-rate-for-company-cars-2` — https://bryden-johnson.co.uk/advisory-fuel-rate-for-company-cars-2/
+- `advisory-fuel-rate-for-company-cars-3` — https://bryden-johnson.co.uk/advisory-fuel-rate-for-company-cars-3/
+- `advisory-fuel-rate-for-company-cars-4` — https://bryden-johnson.co.uk/advisory-fuel-rate-for-company-cars-4/
+- `advisory-fuel-rate-for-company-cars-5` — https://bryden-johnson.co.uk/advisory-fuel-rate-for-company-cars-5/
+- `advisory-fuel-rate-for-company-cars-6` — https://bryden-johnson.co.uk/advisory-fuel-rate-for-company-cars-6/
+- `advisory-fuel-rate-for-company-cars-from-1-december-2023` — https://bryden-johnson.co.uk/advisory-fuel-rate-for-company-cars-from-1-december-2023/
+- `advisory-fuel-rate-for-company-cars-from-1-june` — https://bryden-johnson.co.uk/advisory-fuel-rate-for-company-cars-from-1-june/
+- `advisory-fuel-rate-for-company-cars-from-1-march-2022` — https://bryden-johnson.co.uk/advisory-fuel-rate-for-company-cars-from-1-march-2022/
+- `advisory-fuel-rate-for-company-cars-from-1-march-2024` — https://bryden-johnson.co.uk/advisory-fuel-rate-for-company-cars-from-1-march-2024/
+- `advisory-fuel-rate-for-company-cars` — https://bryden-johnson.co.uk/advisory-fuel-rate-for-company-cars/
+- `advisory-fuel-rates-for-company-cars` — https://bryden-johnson.co.uk/advisory-fuel-rates-for-company-cars/
+- `advisory-rates-for-company-cars` — https://bryden-johnson.co.uk/advisory-rates-for-company-cars/
+- `airbnb-reporting-property-rental-details-to-hmrc` — https://bryden-johnson.co.uk/airbnb-reporting-property-rental-details-to-hmrc/
+- `alcohol-duty-reform-changes-taking-effect-this-month` — https://bryden-johnson.co.uk/alcohol-duty-reform-changes-taking-effect-this-month/
+- `alcohol-duty-systems-changes-are-imminent` — https://bryden-johnson.co.uk/alcohol-duty-systems-changes-are-imminent/
+- `another-reason-to-sell-property-before-6-april-2020` — https://bryden-johnson.co.uk/another-reason-to-sell-property-before-6-april-2020/
+- `app-fraud` — https://bryden-johnson.co.uk/app-fraud/
+- `apply-for-more-time-for-mtd-digital-links` — https://bryden-johnson.co.uk/apply-for-more-time-for-mtd-digital-links/
+- `apprenticeships-and-traineeships-budget-2021-update` — https://bryden-johnson.co.uk/apprenticeships-and-traineeships-budget-2021-update/
+- `are-you-aware-of-tax-reliefs-for-individuals-2019-20-and-2018-19` — https://bryden-johnson.co.uk/are-you-aware-of-tax-reliefs-for-individuals-2019-20-and-2018-19/
+- `are-you-aware-of-the-kickstart-scheme-grant` — https://bryden-johnson.co.uk/are-you-aware-of-the-kickstart-scheme-grant/
+- `are-you-getting-minimum-wage-payments-right` — https://bryden-johnson.co.uk/are-you-getting-minimum-wage-payments-right/
+- `areas-covered` — https://bryden-johnson.co.uk/areas-covered/
+- `associated-companies-count-for-new-corporation-tax-rates` — https://bryden-johnson.co.uk/associated-companies-count-for-new-corporation-tax-rates/
+- `ated-returns-and-revaluations-due` — https://bryden-johnson.co.uk/ated-returns-and-revaluations-due/
+- `autumn-budget-2021-capital-gains-tax` — https://bryden-johnson.co.uk/autumn-budget-2021-capital-gains-tax/
+- `autumn-budget-2021-focus-on-business-rates` — https://bryden-johnson.co.uk/autumn-budget-2021-focus-on-business-rates/
+- `autumn-budget-2021-national-living-wage-nlw-and-national-minimum-wage-nmw` — https://bryden-johnson.co.uk/autumn-budget-2021-national-living-wage-nlw-and-national-minimum-wage-nmw/
+- `autumn-budget-2022-cars-vans-and-taxation` — https://bryden-johnson.co.uk/autumn-budget-2022-cars-vans-and-taxation/
+- `autumn-budget-2022-cgt-annual-exemption-cut` — https://bryden-johnson.co.uk/autumn-budget-2022-cgt-annual-exemption-cut/
+- `autumn-budget-2022-dividend-income-reduced-0-band` — https://bryden-johnson.co.uk/autumn-budget-2022-dividend-income-reduced-0-band/
+- `autumn-budget-2022-freezing-income-tax-bands` — https://bryden-johnson.co.uk/autumn-budget-2022-freezing-income-tax-bands/
+- `autumn-budget-2022-more-to-pay-45-income-tax` — https://bryden-johnson.co.uk/autumn-budget-2022-more-to-pay-45-income-tax/
+- `autumn-budget-2022-nic-bands-frozen` — https://bryden-johnson.co.uk/autumn-budget-2022-nic-bands-frozen/
+- `autumn-budget-2022-rd-rebalancing` — https://bryden-johnson.co.uk/autumn-budget-2022-rd-rebalancing/
+- `autumn-budget-2022-update-on-sdlt` — https://bryden-johnson.co.uk/autumn-budget-2022-update-on-sdlt/
+- `autumn-statement-2023-backing-british-business` — https://bryden-johnson.co.uk/autumn-statement-2023-backing-british-business/
+- `autumn-statement-2023-corporation-tax-rates` — https://bryden-johnson.co.uk/autumn-statement-2023-corporation-tax-rates/
+- `autumn-statement-2023-income-tax` — https://bryden-johnson.co.uk/autumn-statement-2023-income-tax/
+- `autumn-statement-2023-making-tax-digital` — https://bryden-johnson.co.uk/autumn-statement-2023-making-tax-digital/
+- `autumn-statement-2023-national-insurance-contributions` — https://bryden-johnson.co.uk/autumn-statement-2023-national-insurance-contributions/
+- `autumn-statement-2023-research-development` — https://bryden-johnson.co.uk/autumn-statement-2023-research-development/
+- `autumn-statement-date-set-for-22-november` — https://bryden-johnson.co.uk/autumn-statement-date-set-for-22-november/
+- `back-to-school-childcare-vouchers-or-tax-free-childcare-account` — https://bryden-johnson.co.uk/back-to-school-childcare-vouchers-or-tax-free-childcare-account/
+- `back-to-school-set-up-a-tax-free-childcare-account` — https://bryden-johnson.co.uk/back-to-school-set-up-a-tax-free-childcare-account/
+- `ban-on-single-use-plastics-announced` — https://bryden-johnson.co.uk/ban-on-single-use-plastics-announced/
+- `basis-period-reform-for-self-employed-individuals-and-all-partnerships-partners` — https://bryden-johnson.co.uk/basis-period-reform-for-self-employed-individuals-and-all-partnerships-partners/
+- `be-aware-of-continued-hmrc-scams` — https://bryden-johnson.co.uk/be-aware-of-continued-hmrc-scams/
+- `be-aware-of-hmrc-scams` — https://bryden-johnson.co.uk/be-aware-of-hmrc-scams/
+- `big-advice-for-small-business-13-july` — https://bryden-johnson.co.uk/big-advice-for-small-business-13-july/
+- `autumn-budget-2025` — https://bryden-johnson.co.uk/blog/autumn-budget-2025/
+- `changes-in-funding-to-apprenticeships` — https://bryden-johnson.co.uk/blog/changes-in-funding-to-apprenticeships/
+- `changes-to-national-minimum-wage` — https://bryden-johnson.co.uk/blog/changes-to-national-minimum-wage/
+- `changes-to-ssp-from-april-2026` — https://bryden-johnson.co.uk/blog/changes-to-ssp-from-april-2026/
+- `croydon-professional-women-event` — https://bryden-johnson.co.uk/blog/croydon-professional-women-event/
+- `making-tax-digital-for-income-tax-6-april-2026` — https://bryden-johnson.co.uk/blog/making-tax-digital-for-income-tax-6-april-2026/
+- `statutory-sick-pay-from-april-2026` — https://bryden-johnson.co.uk/blog/statutory-sick-pay-from-april-2026/
+- `what-the-new-companies-house-identity-verification-regime-means-for-you` — https://bryden-johnson.co.uk/blog/what-the-new-companies-house-identity-verification-regime-means-for-you/
+- `bounce-back-loans-flexibility-given-to-pay-back-amounts-borrowed` — https://bryden-johnson.co.uk/bounce-back-loans-flexibility-given-to-pay-back-amounts-borrowed/
+- `brexit-20-million-support-package-for-small-businesses-smes` — https://bryden-johnson.co.uk/brexit-20-million-support-package-for-small-businesses-smes/
+- `brexit-continued-uncertainty` — https://bryden-johnson.co.uk/brexit-continued-uncertainty/
+- `brexit-rules-from-1-january-2021` — https://bryden-johnson.co.uk/brexit-rules-from-1-january-2021/
+- `brexit-what-now-for-businesses-that-trade-with-the-eu` — https://bryden-johnson.co.uk/brexit-what-now-for-businesses-that-trade-with-the-eu/
+- `bryden-johnson-are-moving-for-mens-health` — https://bryden-johnson.co.uk/bryden-johnson-are-moving-for-mens-health/
+- `bryden-johnson-budget-summary` — https://bryden-johnson.co.uk/bryden-johnson-budget-summary/
+- `bryden-johnson-celebrates-125-years` — https://bryden-johnson.co.uk/bryden-johnson-celebrates-125-years/
+- `bryden-johnson-christmas-charities-2` — https://bryden-johnson.co.uk/bryden-johnson-christmas-charities-2/
+- `bryden-johnson-christmas-charities` — https://bryden-johnson.co.uk/bryden-johnson-christmas-charities/
+- `bryden-johnson-client-portal` — https://bryden-johnson.co.uk/bryden-johnson-client-portal/
+- `bryden-johnson-gold-champion-partners` — https://bryden-johnson.co.uk/bryden-johnson-gold-champion-partners/
+- `budget-day-3-march-2021` — https://bryden-johnson.co.uk/budget-day-3-march-2021/
+- `building-and-construction-industry-update-on-vat-changes-2` — https://bryden-johnson.co.uk/building-and-construction-industry-update-on-vat-changes-2/
+- `building-and-construction-industry-update-on-vat-changes` — https://bryden-johnson.co.uk/building-and-construction-industry-update-on-vat-changes/
+- `building-business-resiliance` — https://bryden-johnson.co.uk/building-business-resiliance/
+- `business-accountant-in-coulsdon` — https://bryden-johnson.co.uk/business-accountant-in-coulsdon/
+- `business-accountant-in-norbury` — https://bryden-johnson.co.uk/business-accountant-in-norbury/
+- `business-accountant-in-warlingham` — https://bryden-johnson.co.uk/business-accountant-in-warlingham/
+- `business-bounce-back-loan-scheme-opens-today` — https://bryden-johnson.co.uk/business-bounce-back-loan-scheme-opens-today/
+- `business-network-london` — https://bryden-johnson.co.uk/business-network-london/
+- `business-planning-as-uk-prices-increase-at-fastest-rate-for-almost-10-years-how-should-businesses-plan-ahead` — https://bryden-johnson.co.uk/business-planning-as-uk-prices-increase-at-fastest-rate-for-almost-10-years-how-should-businesses-plan-ahead/
+- `business-planning-for-2021` — https://bryden-johnson.co.uk/business-planning-for-2021/
+- `business-rate-holiday-for-nursuries` — https://bryden-johnson.co.uk/business-rate-holiday-for-nursuries/
+- `business-ratepayers-adversely-affected-by-covid-19-are-to-get-a-1-5-billion-discount-on-their-bills` — https://bryden-johnson.co.uk/business-ratepayers-adversely-affected-by-covid-19-are-to-get-a-1-5-billion-discount-on-their-bills/
+- `business-rates-holiday-for-retail-hospitality-and-leisure-businesses` — https://bryden-johnson.co.uk/business-rates-holiday-for-retail-hospitality-and-leisure-businesses/
+- `business-success-in-challenging-times` — https://bryden-johnson.co.uk/business-success-in-challenging-times/
+- `business-tax-budget-2020` — https://bryden-johnson.co.uk/business-tax-budget-2020/
+- `business-trends-2022` — https://bryden-johnson.co.uk/business-trends-2022/
+- `business-trends-to-watch-in-2019` — https://bryden-johnson.co.uk/business-trends-to-watch-in-2019/
+- `buy-new-equipment-before-6-april-2` — https://bryden-johnson.co.uk/buy-new-equipment-before-6-april-2/
+- `buy-new-equipment-before-6-april` — https://bryden-johnson.co.uk/buy-new-equipment-before-6-april/
+- `buying-an-electric-car-does-it-need-to-be-new` — https://bryden-johnson.co.uk/buying-an-electric-car-does-it-need-to-be-new/
+- `can-we-furlough-the-company-car` — https://bryden-johnson.co.uk/can-we-furlough-the-company-car/
+- `can-you-still-claim-tax-relief-for-working-from-home` — https://bryden-johnson.co.uk/can-you-still-claim-tax-relief-for-working-from-home/
+- `capital-taxes-budget-2020` — https://bryden-johnson.co.uk/capital-taxes-budget-2020/
+- `car-benefit-reduced-where-unavailable` — https://bryden-johnson.co.uk/car-benefit-reduced-where-unavailable/
+- `cash-grants-for-retail-hospitality-and-leisure-businesses` — https://bryden-johnson.co.uk/cash-grants-for-retail-hospitality-and-leisure-businesses/
+- `covid-19` — https://bryden-johnson.co.uk/category/covid-19/
+- `general-election` — https://bryden-johnson.co.uk/category/news/general-election/
+- `celebrating-international-womens-day` — https://bryden-johnson.co.uk/celebrating-international-womens-day/
+- `certain-property-business-owners-are-liable-to-class-2-nics-2` — https://bryden-johnson.co.uk/certain-property-business-owners-are-liable-to-class-2-nics-2/
+- `certain-property-business-owners-are-liable-to-class-2-nics` — https://bryden-johnson.co.uk/certain-property-business-owners-are-liable-to-class-2-nics/
+- `cgt-private-residence-relief-changes-go-ahead` — https://bryden-johnson.co.uk/cgt-private-residence-relief-changes-go-ahead/
+- `chancellor-announces-new-measures-in-governments-growth-plan` — https://bryden-johnson.co.uk/chancellor-announces-new-measures-in-governments-growth-plan/
+- `chancellor-extends-furlough-scheme-until-october` — https://bryden-johnson.co.uk/chancellor-extends-furlough-scheme-until-october/
+- `chancellor-extends-self-employment-support-scheme` — https://bryden-johnson.co.uk/chancellor-extends-self-employment-support-scheme/
+- `chancellor-strengthens-support-on-offer-for-business-as-first-government-backed-loans-reach-firms-in-need` — https://bryden-johnson.co.uk/chancellor-strengthens-support-on-offer-for-business-as-first-government-backed-loans-reach-firms-in-need/
+- `changes-to-disguised-remuneration-loan-charge` — https://bryden-johnson.co.uk/changes-to-disguised-remuneration-loan-charge/
+- `changes-to-nics-and-tax-on-dividends-planning-ahead` — https://bryden-johnson.co.uk/changes-to-nics-and-tax-on-dividends-planning-ahead/
+- `changes-to-paying-cgt-on-residential-property-from-6-april` — https://bryden-johnson.co.uk/changes-to-paying-cgt-on-residential-property-from-6-april/
+- `changes-to-the-cjrs-from-july` — https://bryden-johnson.co.uk/changes-to-the-cjrs-from-july/
+- `charging-electric-cars-at-home` — https://bryden-johnson.co.uk/charging-electric-cars-at-home/
+- `charging-the-correct-rate-of-vat` — https://bryden-johnson.co.uk/charging-the-correct-rate-of-vat/
+- `charity-accountants` — https://bryden-johnson.co.uk/charity-accountants/
+- `educational-institutions` — https://bryden-johnson.co.uk/charity-accountants/educational-institutions/
+- `charity-news-round-up` — https://bryden-johnson.co.uk/charity-news-round-up/
+- `check-if-you-can-claim-a-grant-through-the-self-employment-income-support-scheme` — https://bryden-johnson.co.uk/check-if-you-can-claim-a-grant-through-the-self-employment-income-support-scheme/
+- `check-if-you-can-claim-the-job-retention-bonus` — https://bryden-johnson.co.uk/check-if-you-can-claim-the-job-retention-bonus/
+- `check-what-your-tax-code-means` — https://bryden-johnson.co.uk/check-what-your-tax-code-means/
+- `child-benefit-may-create-a-tax-charge-for-those-with-high-income` — https://bryden-johnson.co.uk/child-benefit-may-create-a-tax-charge-for-those-with-high-income/
+- `childcare-accounts-can-subsidise-summer-camp-costs` — https://bryden-johnson.co.uk/childcare-accounts-can-subsidise-summer-camp-costs/
+- `christmas-charities` — https://bryden-johnson.co.uk/christmas-charities/
+- `christmas-gifts-of-up-to-50-per-employee-is-tax-free` — https://bryden-johnson.co.uk/christmas-gifts-of-up-to-50-per-employee-is-tax-free/
+- `christmas-gifts-to-employees` — https://bryden-johnson.co.uk/christmas-gifts-to-employees/
+- `christmas-party` — https://bryden-johnson.co.uk/christmas-party/
+- `cocooning-a-business` — https://bryden-johnson.co.uk/cocooning-a-business/
+- `collecting-unpaid-tax-for-2018-19-through-your-paye-coding` — https://bryden-johnson.co.uk/collecting-unpaid-tax-for-2018-19-through-your-paye-coding/
+- `companies-to-receive-3-month-extension-period-to-file-accounts-during-covid-19` — https://bryden-johnson.co.uk/companies-to-receive-3-month-extension-period-to-file-accounts-during-covid-19/
+- `company-loss-relief-can-be-claimed-early` — https://bryden-johnson.co.uk/company-loss-relief-can-be-claimed-early/
+- `company-officers-jointly-and-severally-liable-for-vat-penalty` — https://bryden-johnson.co.uk/company-officers-jointly-and-severally-liable-for-vat-penalty/
+- `company-vans-were-motor-cars` — https://bryden-johnson.co.uk/company-vans-were-motor-cars/
+- `construction-accountants-croydon` — https://bryden-johnson.co.uk/construction-accountants-croydon/
+- `consultation-into-possible-reform-of-construction-industry-scheme` — https://bryden-johnson.co.uk/consultation-into-possible-reform-of-construction-industry-scheme/
+- `consultations-issued-on-tax-day-by-treasury` — https://bryden-johnson.co.uk/consultations-issued-on-tax-day-by-treasury/
+- `contact-us` — https://bryden-johnson.co.uk/contact-us/
+- `coronavirus-job-retention-scheme-23-march-2020` — https://bryden-johnson.co.uk/coronavirus-job-retention-scheme-23-march-2020/
+- `coronavirus-job-retention-scheme-april-claims-and-may-eligibility` — https://bryden-johnson.co.uk/coronavirus-job-retention-scheme-april-claims-and-may-eligibility/
+- `coronavirus-job-retention-scheme-cjrs-update-2` — https://bryden-johnson.co.uk/coronavirus-job-retention-scheme-cjrs-update-2/
+- `coronavirus-job-retention-scheme-cjrs-update` — https://bryden-johnson.co.uk/coronavirus-job-retention-scheme-cjrs-update/
+- `coronavirus-job-retention-scheme-cjrs` — https://bryden-johnson.co.uk/coronavirus-job-retention-scheme-cjrs/
+- `coronavirus-job-retention-scheme-latest-update` — https://bryden-johnson.co.uk/coronavirus-job-retention-scheme-latest-update/
+- `coronavirus-job-retention-scheme` — https://bryden-johnson.co.uk/coronavirus-job-retention-scheme/
+- `coronavirus-recovery-plan` — https://bryden-johnson.co.uk/coronavirus-recovery-plan/
+- `coronavirus-statutory-sick-pay-rebate-scheme-set-to-launch` — https://bryden-johnson.co.uk/coronavirus-statutory-sick-pay-rebate-scheme-set-to-launch/
+- `corporation-tax-relief-back-for-acquired-goodwill` — https://bryden-johnson.co.uk/corporation-tax-relief-back-for-acquired-goodwill/
+- `correcting-errors-in-earlier-furlough-claims-2` — https://bryden-johnson.co.uk/correcting-errors-in-earlier-furlough-claims-2/
+- `correcting-errors-in-earlier-furlough-claims` — https://bryden-johnson.co.uk/correcting-errors-in-earlier-furlough-claims/
+- `cost-of-living-crisis-support-for-charities` — https://bryden-johnson.co.uk/cost-of-living-crisis-support-for-charities/
+- `could-the-uk-embrace-a-four-day-working-week` — https://bryden-johnson.co.uk/could-the-uk-embrace-a-four-day-working-week/
+- `could-the-vat-annual-accounting-scheme-be-good-for-your-business` — https://bryden-johnson.co.uk/could-the-vat-annual-accounting-scheme-be-good-for-your-business/
+- `covid-19-support-for-businesses` — https://bryden-johnson.co.uk/covid-19-support-for-businesses/
+- `croydon-business-webinar-financial-support` — https://bryden-johnson.co.uk/croydon-business-webinar-financial-support/
+- `croydon-commitment-career-talk-12-may` — https://bryden-johnson.co.uk/croydon-commitment-career-talk-12-may/
+- `croydon-food-festival-2023` — https://bryden-johnson.co.uk/croydon-food-festival-2023/
+- `croydon-launches-restart-grants` — https://bryden-johnson.co.uk/croydon-launches-restart-grants/
+- `customer-care-trends` — https://bryden-johnson.co.uk/customer-care-trends/
+- `cuts-to-national-insurance-reminders-about-changes` — https://bryden-johnson.co.uk/cuts-to-national-insurance-reminders-about-changes/
+- `cyber-security-please-be-extra-vigilant` — https://bryden-johnson.co.uk/cyber-security-please-be-extra-vigilant/
+- `deadline-for-topping-up-ni-contributions-extended-again-to-5-april-2025-2` — https://bryden-johnson.co.uk/deadline-for-topping-up-ni-contributions-extended-again-to-5-april-2025-2/
+- `deadline-for-topping-up-ni-contributions-extended-again-to-5-april-2025` — https://bryden-johnson.co.uk/deadline-for-topping-up-ni-contributions-extended-again-to-5-april-2025/
+- `deferral-of-vat-bills` — https://bryden-johnson.co.uk/deferral-of-vat-bills/
+- `deferral-of-vat-payments` — https://bryden-johnson.co.uk/deferral-of-vat-payments/
+- `delivering-effective-training-remotely` — https://bryden-johnson.co.uk/delivering-effective-training-remotely/
+- `details-of-fourth-self-employed-income-support-grant` — https://bryden-johnson.co.uk/details-of-fourth-self-employed-income-support-grant/
+- `diary-of-main-tax-events-2020-february-march` — https://bryden-johnson.co.uk/diary-of-main-tax-events-2020-february-march/
+- `diary-of-main-tax-events-february-march-2021` — https://bryden-johnson.co.uk/diary-of-main-tax-events-february-march-2021/
+- `diary-of-main-tax-events-june-july-2020` — https://bryden-johnson.co.uk/diary-of-main-tax-events-june-july-2020/
+- `diary-of-main-tax-events-may-june-2020` — https://bryden-johnson.co.uk/diary-of-main-tax-events-may-june-2020/
+- `did-you-know-you-could-set-up-a-tax-free-childcare-account` — https://bryden-johnson.co.uk/did-you-know-you-could-set-up-a-tax-free-childcare-account/
+- `disguised-remuneration-loan-charge-review` — https://bryden-johnson.co.uk/disguised-remuneration-loan-charge-review/
+- `disguised-remuneration-loan-charge-starts-april-2019` — https://bryden-johnson.co.uk/disguised-remuneration-loan-charge-starts-april-2019/
+- *(+488 more)*

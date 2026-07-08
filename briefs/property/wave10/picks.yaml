@@ -1,0 +1,51 @@
+wave: 10
+# Wave 10 - gap discovery 2026-07 batch (14 picks, collision-verified 2026-07-08).
+# Owner ruling: single bucket, batchSize 1 (one sub-agent per pick, parallel).
+# Pillar pick A1 gets its ruling at PREP before cluster briefs launch.
+
+buckets:
+  A:
+    label: "Wave 10 - discovery batch (single lane)"
+    picks:
+      - id: A1
+        slug: "portfolio-landlord-tax-planning-strategy-guide"
+        label: "Portfolio Landlord Tax Planning :: Framing: whole-portfolio strategy pillar (entity, extraction, succession, ATED, loss relief) [PILLAR]"
+      - id: A2
+        slug: "business-asset-disposal-relief-residential-property-qualification"
+        label: "Business Asset Disposal Relief on Residential Property :: Framing: substantive BADR qualification rules for property (existing page is nudge-letter response only)"
+      - id: A3
+        slug: "non-resident-landlords-uk-inheritance-tax-exposure"
+        label: "Non-Resident Landlords: UK Inheritance Tax :: Framing: IHT exposure of UK property held by overseas individuals (situs, non-dom changes, planning); IHT absent from NRL scheme guide"
+      - id: A4
+        slug: "sdlt-transfer-property-to-partnership-schedule-15"
+        label: "SDLT on Transfer of Property to a Partnership :: Framing: FA 2003 Sch 15 partnership mechanics (SLP/LLP, partner's-share relief), distinct from corporate incorporation route"
+      - id: A5
+        slug: "vat-property-conversions-residential-reduced-rate-opted-to-tax"
+        label: "VAT on Property Conversions and the Opted-to-Tax Election :: Framing: 5%/0% residential conversion VAT (VATA Sch 8 Grp 5) + CGS clawback; existing page is commercial OTT only"
+      - id: A6
+        slug: "property-income-allowance-1000-exemption-vs-expenses"
+        label: "Property Income Allowance: The £1,000 Landlord Exemption :: Framing: allowance-vs-actual-expenses decision guide (planning), not MTD compliance"
+      - id: A7
+        slug: "profit-extraction-buy-to-let-limited-company-salary-dividends"
+        label: "Profit Extraction from a Buy-to-Let Limited Company :: Framing: standalone decision tool with worked maths by profit level (salary/dividend/loan/pension); one h2 in existing Ltd Co guide"
+      - id: A8
+        slug: "pre-trading-expenditure-buy-to-let-landlords-s57-ittoia"
+        label: "Pre-Trading Expenditure for Buy-to-Let Landlords :: Framing: s.57 ITTOIA 7-year lookback, qualifying costs before first letting, claim mechanics"
+      - id: A9
+        slug: "starting-property-business-sole-trader-vs-ltd-vs-partnership"
+        label: "Starting a Property Business: Sole Trader vs Limited Company vs Partnership :: Framing: entry-level three-way entity-choice guide for new investors; existing page is two-way conversion mechanics"
+      - id: A10
+        slug: "cgt-on-inherited-property-uk-probate-base-cost"
+        label: "CGT on Inherited Property :: Framing: probate base cost, PPR eligibility, IHT interaction, 60-day return, multiple beneficiaries"
+      - id: A11
+        slug: "cgt-overseas-property-uk-residents-foreign-disposals"
+        label: "CGT on Overseas Property for UK Residents :: Framing: UK resident selling FOREIGN property (FX base cost, SA108, treaty credit) — reverse flow of existing page"
+      - id: A12
+        slug: "family-investment-company-mechanics-share-classes-property"
+        label: "Family Investment Companies for Property Owners :: Framing: MECHANICS-ONLY (share classes, income routing, director control, CT compliance) — must not re-cover 'worth it?' or IHT value-freeze pages"
+      - id: A13
+        slug: "gifting-property-and-deed-of-gift-tax-implications"
+        label: "Gifting Property and Deed of Gift Tax Implications"
+      - id: A14
+        slug: "buying-commercial-property-through-a-sipp"
+        label: "Buying Commercial Property Through a SIPP"

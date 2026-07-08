@@ -1,793 +1,1383 @@
-# Medical Accountants UK — filtered competitor topic gaps
+# Medical Accountants UK — topic gaps from top competitor sitemaps
 
-Filtered from raw competitor sitemap scrape (`briefs/medical/_competitor_urls.json`) using news-pattern exclusion + evergreen-pattern inclusion + loose-match exclusion against our 46 pages.
+Compared our 78 medical pages against 15 competitor sitemaps.
 
-Primary competitors considered: medicsmoney.co.uk, r-m-t.co.uk, nicholsmedical.co.uk, sial-accountants.co.uk, bw-medical.co.uk, sandisoneasson.co.uk, ramsaybrown.com, hawsons.co.uk, jcssutton.co.uk, azets.com, medicaccountants.co.uk, gpaccountant.com, dma-accountancyservices.co.uk, abaccountsandconsultancy.co.uk
+**What this is:** every competitor URL whose slug doesn't loose-match any slug in our content directory. Loose-match = at least 70% slug-token overlap.
 
-**How to read this:**
-- Topics are bucketed by theme.
-- Within each bucket, slugs are ordered by the number of competitor sites that cover them (higher = stronger demand signal).
-- A slug listed here means at least one direct competitor has an evergreen guide on it, and we don't (loose slug match).
-- The slug itself is a starting hypothesis for the gap topic, not a final spec — Opus should look at the underlying competitor URL to confirm scope before we commit to writing.
+**What this is NOT:** topic-clustered (the filter step plus an Opus pass do that). Many of these URLs will turn out to be the same topic written differently. Use this as the raw input.
 
 ---
 
-## Other / uncategorised (252 gap topics, 257 competitor pages)
+## nicholsmedical.co.uk (74 gap candidates)
 
-- **[x3]** `hospital-doctors`
-  - r-m-t.co.uk: https://r-m-t.co.uk/rmt-medical/hospital-doctors/
-  - nicholsmedical.co.uk: https://nicholsmedical.co.uk/news/service/hospital-doctors/
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/who-we-help/hospital-doctors
-- **[x2]** `gp-practices`
-  - r-m-t.co.uk: https://r-m-t.co.uk/rmt-medical/gp-practices/
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/gp-practices/
-- **[x2]** `partner-careers`
-  - azets.com: https://www.azets.com/en-ie/careers/partner-careers
-  - azets.com: https://www.azets.com/en-uk/careers/partner-careers
-- **[x2]** `submit-your-interest-in-joining-azets`
-  - azets.com: https://www.azets.com/en-ie/careers/partner-careers/submit-your-interest-in-joining-azets
-  - azets.com: https://www.azets.com/en-uk/careers/partner-careers/submit-your-interest-in-joining-azets
-- [x1] `a-home-from-home-tax-relief-for-accommodation-costs`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/a-home-from-home-tax-relief-for-accommodation-costs
-- [x1] `a-message-for-theresa-may`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/a-message-for-theresa-may
-- [x1] `a-night-with-our-very-own-elvis`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/events/a-night-with-our-very-own-elvis
-- [x1] `ab-test`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/ab-test
-- [x1] `act-now-says-hm-revenue-customs`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/act-now-says-hm-revenue-customs
-- [x1] `andrew-sebastian`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/doctor/andrew-sebastian/
-- [x1] `anya-stephenson`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/the-experts/anya-stephenson
-- [x1] `arbeta-efter-pensionsaldern`
-  - azets.com: https://www.azets.com/sv-se/resurser/blogg/arbeta-efter-pensionsaldern
-- [x1] `are-you-prepared-for-the-rapids`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/are-you-prepared-for-the-rapids
-- [x1] `austin-shaw`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/doctor/austin-shaw/
-- [x1] `avn-practice-differentiation-award`
-  - sial-accountants.co.uk: https://sial-accountants.co.uk/healthcare-accountants/awards/avn-practice-differentiation-award/
-- [x1] `avoid-the-100k-income-tax-trap`
-  - nicholsmedical.co.uk: https://nicholsmedical.co.uk/news/avoid-the-100k-income-tax-trap/
-- [x1] `award-success`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/award-success
-- [x1] `award-winning-accountancy-firm`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/award-winning-accountancy-firm
-- [x1] `azets-sikrer-investeringer-pai-partners`
-  - azets.com: https://www.azets.com/no-no/ressurser/pressemeldinger/azets-sikrer-investeringer-pai-partners
-- [x1] `azets-unimicro-inngar-partnerskap-nytt-lonnssystem`
-  - azets.com: https://www.azets.com/no-no/ressurser/pressemeldinger/azets-unimicro-inngar-partnerskap-nytt-lonnssystem
-- [x1] `basta-pensionen-for-dig`
-  - azets.com: https://www.azets.com/sv-se/resurser/blogg/basta-pensionen-for-dig
-- [x1] `be-careful-what-you-wish-for`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/be-careful-what-you-wish-for
-- [x1] `becky-todd`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/the-experts/becky-todd
-- [x1] `best-practice-birmingham-nec`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/events/best-practice-birmingham-nec
-- [x1] `better-late-than-never`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/better-late-than-never
-- [x1] `beware-of-exceeding-your-pension-pot-allowance`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/beware-of-exceeding-your-pension-pot-allowance/
-- [x1] `boosting-your-state-pension`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/boosting-your-state-pension/
-- [x1] `boris-plan-for-the-nhs`
-  - hawsons.co.uk: https://www.hawsons.co.uk/boris-plan-for-the-nhs/
-- [x1] `bringing-up-baby`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/bringing-up-baby
-- [x1] `business-central-partner`
-  - azets.com: https://www.azets.com/no-no/tjenester/teknologitjenester/systemlosninger/business-central-partner
-- [x1] `business-travel-samadian-v-rcc`
-  - nicholsmedical.co.uk: https://nicholsmedical.co.uk/news/business-travel-samadian-v-rcc/
-- [x1] `bw-medical-receives-medics-money-certificate-of-excellence`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/bw-medical-receives-medics-money-certificate-of-excellence
-- [x1] `bw-medical-supports-founders4schools`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/bw-medical-supports-founders4schools
-- [x1] `byta-partner`
-  - azets.com: https://www.azets.com/sv-se/tjanster/it-losningar/business-central/byta-partner
-- [x1] `calling-all-landlords`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/calling-all-landlords
-- [x1] `care-integration-awards`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/events/care-integration-awards
-- [x1] `carolyn-coxon`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/the-experts/carolyn-coxon
-- [x1] `carolyn-jackson`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/testimonials/carolyn-jackson
-- [x1] `ccgs-learn-from-what-works-and-take-action`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/ccgs-learn-from-what-works-and-take-action
-- [x1] `changing-your-accountants-couldnt-be-easier`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/changing-your-accountants-couldnt-be-easier
-- *(+212 more in this bucket)*
+- `contact-us` — https://nicholsmedical.co.uk/contact-us/
+- `2024-premises-costs-directions` — https://nicholsmedical.co.uk/news/2024-premises-costs-directions/
+- `avoid-the-100k-income-tax-trap` — https://nicholsmedical.co.uk/news/avoid-the-100k-income-tax-trap/
+- `business-travel-samadian-v-rcc` — https://nicholsmedical.co.uk/news/business-travel-samadian-v-rcc/
+- `checklist-for-someone-starting-as-a-self-employed-locum-doctor` — https://nicholsmedical.co.uk/news/checklist-for-someone-starting-as-a-self-employed-locum-doctor/
+- `doctors-moving-to-dubai` — https://nicholsmedical.co.uk/news/doctors-moving-to-dubai/
+- `dubai-medical-tax-rules` — https://nicholsmedical.co.uk/news/dubai-medical-tax-rules/
+- `early-year-expense-claim-download` — https://nicholsmedical.co.uk/news/early-year-expense-claim-download/
+- `gp-contract-changes-2024-25` — https://nicholsmedical.co.uk/news/gp-contract-changes-2024-25/
+- `gp-funding-2024-25` — https://nicholsmedical.co.uk/news/gp-funding-2024-25/
+- `have-you-insured-your-greatest-asset` — https://nicholsmedical.co.uk/news/have-you-insured-your-greatest-asset/
+- `hiring-locum-gps` — https://nicholsmedical.co.uk/news/hiring-locum-gps/
+- `how-tax-works-for-locum-doctors-in-the-uk` — https://nicholsmedical.co.uk/news/how-tax-works-for-locum-doctors-in-the-uk/
+- `inheritance-tax-for-healthcare-professionals` — https://nicholsmedical.co.uk/news/inheritance-tax-for-healthcare-professionals/
+- `limited-companies-in-2024` — https://nicholsmedical.co.uk/news/limited-companies-in-2024/
+- `medical-accountants-in-london` — https://nicholsmedical.co.uk/news/medical-accountants-in-london/
+- `nhs-pension-and-tax-in-2025` — https://nicholsmedical.co.uk/news/nhs-pension-and-tax-in-2025/
+- `personally-administered-items-boosting-medical-practice-income` — https://nicholsmedical.co.uk/news/personally-administered-items-boosting-medical-practice-income/
+- `gp-medical-practices` — https://nicholsmedical.co.uk/news/service/gp-medical-practices/
+- `hospital-doctors` — https://nicholsmedical.co.uk/news/service/hospital-doctors/
+- `salaried-gps` — https://nicholsmedical.co.uk/news/service/salaried-gps/
+- `set-up-a-medical-practice-in-dubai` — https://nicholsmedical.co.uk/news/set-up-a-medical-practice-in-dubai/
+- `simplify-your-clinics-payments-with-coherent-healthcare` — https://nicholsmedical.co.uk/news/simplify-your-clinics-payments-with-coherent-healthcare/
+- `specialist-medical-accountant` — https://nicholsmedical.co.uk/news/specialist-medical-accountant/
+- `spring-budget-2024` — https://nicholsmedical.co.uk/news/spring-budget-2024/
+- `surplus-funds-nhs-consultants-private-income` — https://nicholsmedical.co.uk/news/surplus-funds-nhs-consultants-private-income/
+- `tax-hacks-for-doctors-dubai-residency-directors-loans-and-family-tax-efficiencies` — https://nicholsmedical.co.uk/news/tax-hacks-for-doctors-dubai-residency-directors-loans-and-family-tax-efficiencies/
+- `tax-planning-for-doctors-using-ltd-companies` — https://nicholsmedical.co.uk/news/tax-planning-for-doctors-using-ltd-companies/
+- `training-costs-hmrc-vs-banerjee` — https://nicholsmedical.co.uk/news/training-costs-hmrc-vs-banerjee/
+- `uk-gps-moving-abroad` — https://nicholsmedical.co.uk/news/uk-gps-moving-abroad/
+- `uk-pension-fund-investments` — https://nicholsmedical.co.uk/news/uk-pension-fund-investments/
+- `vat-a-note-of-caution` — https://nicholsmedical.co.uk/news/vat-a-note-of-caution/
+- `vat-for-medical-professionals` — https://nicholsmedical.co.uk/news/vat-for-medical-professionals/
+- `why-you-should-beware-of-any-contractor-loan-scheme` — https://nicholsmedical.co.uk/news/why-you-should-beware-of-any-contractor-loan-scheme/
+- `business-expenses` — https://nicholsmedical.co.uk/services/consultants/business-expenses/
+- `motor-expenses` — https://nicholsmedical.co.uk/services/consultants/business-expenses/motor-expenses/
+- `national-insurance` — https://nicholsmedical.co.uk/services/consultants/national-insurance/
+- `should-i-be-a-limited-company` — https://nicholsmedical.co.uk/services/consultants/should-i-be-a-limited-company/
+- `tax-enquiry-protection` — https://nicholsmedical.co.uk/services/consultants/tax-enquiry-protection/
+- `paying-family-members` — https://nicholsmedical.co.uk/services/consultants/tax-planning-for-consultants/paying-family-members/
+- `gp-medical-practices` — https://nicholsmedical.co.uk/services/gp-medical-practices/
+- `claiming-business-expenses` — https://nicholsmedical.co.uk/services/gp-medical-practices/gp-accounting/claiming-business-expenses/
+- `motor-expenses` — https://nicholsmedical.co.uk/services/gp-medical-practices/gp-accounting/motor-expenses/
+- `gp-partnerships-mergers` — https://nicholsmedical.co.uk/services/gp-medical-practices/gp-partnerships-mergers/
+- `form-gp-solo` — https://nicholsmedical.co.uk/services/gp-medical-practices/nhs-pension-review-for-gps/form-gp-solo/
+- `scheme-pays-election-for-gps` — https://nicholsmedical.co.uk/services/gp-medical-practices/nhs-pension-review-for-gps/scheme-pays-election-for-gps/
+- `superannuation-and-pensions` — https://nicholsmedical.co.uk/services/gp-medical-practices/nhs-pension-review-for-gps/superannuation-and-pensions/
+- `taxation-for-gp-practices` — https://nicholsmedical.co.uk/services/gp-medical-practices/taxation-for-gp-practices/
+- `gp-national-insurance` — https://nicholsmedical.co.uk/services/gp-medical-practices/taxation-for-gp-practices/gp-national-insurance/
+- `paying-family-members` — https://nicholsmedical.co.uk/services/gp-medical-practices/taxation-for-gp-practices/paying-family-members/
+- `hospital-doctors` — https://nicholsmedical.co.uk/services/hospital-doctors/
+- `personal-expenses` — https://nicholsmedical.co.uk/services/hospital-doctors/personal-expenses/
+- `early-years-expenses` — https://nicholsmedical.co.uk/services/hospital-doctors/personal-expenses/early-years-expenses/
+- `tax-enquiry-protection` — https://nicholsmedical.co.uk/services/hospital-doctors/tax-enquiry-protection/
+- `tax-codes` — https://nicholsmedical.co.uk/services/hospital-doctors/taxation/tax-codes/
+- `tax-refunds` — https://nicholsmedical.co.uk/services/hospital-doctors/taxation/tax-refunds/
+- `best-way-to-be-paid` — https://nicholsmedical.co.uk/services/locums/best-way-to-be-paid/
+- `limited-companies` — https://nicholsmedical.co.uk/services/locums/best-way-to-be-paid/limited-companies/
+- `locum-agencies` — https://nicholsmedical.co.uk/services/locums/best-way-to-be-paid/locum-agencies/
+- `off-payroll-working` — https://nicholsmedical.co.uk/services/locums/best-way-to-be-paid/off-payroll-working/
+- `paye-salary` — https://nicholsmedical.co.uk/services/locums/best-way-to-be-paid/paye-salary/
+- `self-employment` — https://nicholsmedical.co.uk/services/locums/best-way-to-be-paid/self-employment/
+- `type-2-forms-for-locums` — https://nicholsmedical.co.uk/services/locums/locum-nhs-pension-review/type-2-forms-for-locums/
+- `early-years-expense-claims-for-locums` — https://nicholsmedical.co.uk/services/locums/tax-deductible-expenses/early-years-expense-claims-for-locums/
+- `motor-expenses-as-a-locum` — https://nicholsmedical.co.uk/services/locums/tax-deductible-expenses/motor-expenses-as-a-locum/
+- `paying-family-members` — https://nicholsmedical.co.uk/services/locums/tax-deductible-expenses/paying-family-members/
+- `tax-enquiry-protection-for-locums` — https://nicholsmedical.co.uk/services/locums/tax-enquiry-protection-for-locums/
+- `claiming-expenses-as-a-salaried-gp` — https://nicholsmedical.co.uk/services/salaried-gp-accounting/claiming-expenses-as-a-salaried-gp/
+- `salaried-gps-early-year-expenses-claims` — https://nicholsmedical.co.uk/services/salaried-gp-accounting/claiming-expenses-as-a-salaried-gp/salaried-gps-early-year-expenses-claims/
+- `help-when-you-become-a-gp-partner` — https://nicholsmedical.co.uk/services/salaried-gp-accounting/help-when-you-become-a-gp-partner/
+- `tax-enquiry-protection` — https://nicholsmedical.co.uk/services/salaried-gp-accounting/tax-enquiry-protection/
+- `debbie-matthews` — https://nicholsmedical.co.uk/team/debbie-matthews/
+- `sally-mao` — https://nicholsmedical.co.uk/team/sally-mao/
+- `zoe-nicholls` — https://nicholsmedical.co.uk/team/zoe-nicholls/
 
-## VAT & medical compliance (130 gap topics, 132 competitor pages)
+## r-m-t.co.uk (415 gap candidates)
 
-- **[x2]** `linvatec-conmed`
-  - azets.com: https://www.azets.com/en-se/resources/customers/linvatec-conmed
-  - azets.com: https://www.azets.com/sv-se/resurser/kunder/linvatec-conmed
-- **[x2]** `vat`
-  - hawsons.co.uk: https://www.hawsons.co.uk/factsheets/vat/
-  - jcssutton.co.uk: https://www.jcssutton.co.uk/how-we-help/business-services/vat/
-- [x1] `advantages-of-vat-flat-rate-scheme`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/advantages-of-vat-flat-rate-scheme/
-- [x1] `an-employees-emergency-contact-details-are-strictly-private`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/an-employees-emergency-contact-details-are-strictly-private/
-- [x1] `an-introduction-to-vat`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/an-introduction-to-vat/
-- [x1] `avoid-penalties-making-tax-digital-for-vat`
-  - hawsons.co.uk: https://www.hawsons.co.uk/avoid-penalties-making-tax-digital-for-vat/
-- [x1] `azets-a-visma-aquila-solmivat-kumppanuussopimuksen`
-  - azets.com: https://www.azets.com/fi-fi/ajankohtaista/uutishuone/azets-a-visma-aquila-solmivat-kumppanuussopimuksen
-- [x1] `azets-ja-nepton-yhdistavat-voimansa`
-  - azets.com: https://www.azets.com/fi-fi/ajankohtaista/uutishuone/azets-ja-nepton-yhdistavat-voimansa
-- [x1] `azets-ja-startax-aloittavat-yhteistyon`
-  - azets.com: https://www.azets.com/fi-fi/ajankohtaista/uutishuone/azets-ja-startax-aloittavat-yhteistyon
-- [x1] `benefits-of-private-medical-insurance`
-  - hawsons.co.uk: https://www.hawsons.co.uk/benefits-of-private-medical-insurance/
-- [x1] `benefits-of-the-vat-cash-accounting-scheme`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/benefits-of-the-vat-cash-accounting-scheme/
-- [x1] `building-the-foundations-for-private-equity-funding`
-  - azets.com: https://www.azets.com/en-uk/resources/building-the-foundations-for-private-equity-funding
-- [x1] `business-vat-responsibilities`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/business-vat-responsibilities/
-- [x1] `can-dentists-claim-back-vat-2`
-  - jcssutton.co.uk: https://www.jcssutton.co.uk/news/blog/can-dentists-claim-back-vat-2/
-- [x1] `cfo-2.0-strateg-innovator-och-forandringsledare`
-  - azets.com: https://www.azets.com/sv-se/resurser/blogg/cfo-2.0-strateg-innovator-och-forandringsledare
-- [x1] `cfo-2.0-strategist-innovator-and-change-leader`
-  - azets.com: https://www.azets.com/en-se/resources/blog/cfo-2.0-strategist-innovator-and-change-leader
-- [x1] `charity-finance-group-supports-simplifying-vat-rules-on-business-donations-to-charity`
-  - hawsons.co.uk: https://www.hawsons.co.uk/charity-finance-group-supports-simplifying-vat-rules-on-business-donations-to-charity/
-- [x1] `check-a-uk-vat-number-is-authentic`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/check-a-uk-vat-number-is-authentic/
-- [x1] `check-a-vat-number`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/check-a-vat-number/
-- [x1] `column-anthony-andreasen-economy-built-on-innovation`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/column-anthony-andreasen-economy-built-on-innovation/
-- [x1] `company-liquidations-and-insolvencies-are-still-elevated`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/company-liquidations-and-insolvencies-are-still-elevated/
-- [x1] `construction-industry-vat-reverse-charge`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/construction-industry-vat-reverse-charge/
-- [x1] `correcting-errors-in-vat-returns`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/correcting-errors-in-vat-returns/
-- [x1] `court-of-appeal-decision-sheds-light-on-vat-treatment-of-grants`
-  - azets.com: https://www.azets.com/en-uk/resources/court-of-appeal-decision-sheds-light-on-vat-treatment-of-grants
-- [x1] `deferred-vat-payments`
-  - hawsons.co.uk: https://www.hawsons.co.uk/deferred-vat-payments/
-- [x1] `driving-uk-innovation-azets-advocacy-for-rd-tax-relief-and-government-response`
-  - azets.com: https://www.azets.com/en-uk/resources/driving-uk-innovation-azets-advocacy-for-rd-tax-relief-and-government-response
-- [x1] `emergency-covid-19-vat-deferral`
-  - hawsons.co.uk: https://www.hawsons.co.uk/emergency-covid-19-vat-deferral/
-- [x1] `five-vat-compliance-considerations-to-support-business-growth`
-  - azets.com: https://www.azets.com/en-uk/resources/five-vat-compliance-considerations-to-support-business-growth
-- [x1] `gifts-with-reservation-of-benefit`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/gifts-with-reservation-of-benefit/
-- [x1] `health-services-exempt-from-vat`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/health-services-exempt-from-vat/
-- [x1] `helping-innovative-audio-tech-companies-navigate-rd-tax-relief`
-  - azets.com: https://www.azets.com/en-uk/resources/case-studies/helping-innovative-audio-tech-companies-navigate-rd-tax-relief
-- [x1] `hospitality-vat-rate-returning-to-20`
-  - hawsons.co.uk: https://www.hawsons.co.uk/hospitality-vat-rate-returning-to-20/
-- [x1] `how-to-check-a-uk-vat-number`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/how-to-check-a-uk-vat-number/
-- [x1] `how-to-maximise-vat-recovery-and-improve-cashflow`
-  - azets.com: https://www.azets.com/en-uk/resources/how-to-maximise-vat-recovery-and-improve-cashflow
-- [x1] `how-to-stay-vat-compliant-a-checklist-for-businesses`
-  - azets.com: https://www.azets.com/en-uk/resources/how-to-stay-vat-compliant-a-checklist-for-businesses
-- [x1] `how-vat-payments-on-account-work`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/how-vat-payments-on-account-work/
-- [x1] `iht-gifts-made-with-reservation-of-benefits`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/iht-gifts-made-with-reservation-of-benefits/
-- [x1] `importing-classic-cars-and-aircraft-5-vat-and-no-import-duty`
-  - hawsons.co.uk: https://www.hawsons.co.uk/importing-classic-cars-and-aircraft-5-vat-and-no-import-duty/
-- [x1] `is-private-equity-funding-right-for-your-business`
-  - azets.com: https://www.azets.com/en-uk/resources/is-private-equity-funding-right-for-your-business
-- [x1] `kunnat-valmistautuvat-suuriin-muutoksiin-talous-ja-henkilostohallinnon-palveluissa`
-  - azets.com: https://www.azets.com/fi-fi/ajankohtaista/uutishuone/kunnat-valmistautuvat-suuriin-muutoksiin-talous-ja-henkilostohallinnon-palveluissa
-- *(+90 more in this bucket)*
+- `about-us` — https://r-m-t.co.uk/about-us/
+- `access-accounting` — https://r-m-t.co.uk/access-accounting/
+- `agri-events` — https://r-m-t.co.uk/agri-events/
+- `12-million-funding-launched-to-boost-uk-tech-growth` — https://r-m-t.co.uk/blog/12-million-funding-launched-to-boost-uk-tech-growth/
+- `2m-upgrade-planned-after-apartment-group-acquires-historic-croft-hotel` — https://r-m-t.co.uk/blog/2m-upgrade-planned-after-apartment-group-acquires-historic-croft-hotel/
+- `alex-van-someren-advises-girl-geeks-on-success-rmt` — https://r-m-t.co.uk/blog/alex-van-someren-advises-girl-geeks-on-success-rmt/
+- `almost-two-fifths-of-small-businesses-are-looking-to-trade-overseas` — https://r-m-t.co.uk/blog/almost-two-fifths-of-small-businesses-are-looking-to-trade-overseas/
+- `an-introduction-to-vat` — https://r-m-t.co.uk/blog/an-introduction-to-vat/
+- `angel-investment-helps-realrider-rev-up-for-launch` — https://r-m-t.co.uk/blog/angel-investment-helps-realrider-rev-up-for-launch/
+- `angell-petco-acquisition-measures-up-for-surveyor-phil-after-return-from-australia` — https://r-m-t.co.uk/blog/angell-petco-acquisition-measures-up-for-surveyor-phil-after-return-from-australia/
+- `angels-offer-help-with-sme-funding` — https://r-m-t.co.uk/blog/angels-offer-help-with-sme-funding/
+- `applications-for-sme-brexit-support-fund-underway` — https://r-m-t.co.uk/blog/applications-for-sme-brexit-support-fund-underway/
+- `are-you-entitled-to-the-marriage-allowance` — https://r-m-t.co.uk/blog/are-you-entitled-to-the-marriage-allowance/
+- `are-you-making-full-use-of-the-governments-covid-19-financial-support-package` — https://r-m-t.co.uk/blog/are-you-making-full-use-of-the-governments-covid-19-financial-support-package/
+- `are-you-prepared-for-changes-to-the-income-tax-basis` — https://r-m-t.co.uk/blog/are-you-prepared-for-changes-to-the-income-tax-basis/
+- `associate-director-promotions-for-rmt-tax-experts-rachel-and-chris` — https://r-m-t.co.uk/blog/associate-director-promotions-for-rmt-tax-experts-rachel-and-chris/
+- `automatic-enrolment-new-rules-to-protect-savers-from-unfair-fees` — https://r-m-t.co.uk/blog/automatic-enrolment-new-rules-to-protect-savers-from-unfair-fees/
+- `autumn-budget-2024-at-a-glance` — https://r-m-t.co.uk/blog/autumn-budget-2024-at-a-glance/
+- `autumn-budget-2025-what-businesses-should-be-thinking-about-now` — https://r-m-t.co.uk/blog/autumn-budget-2025-what-businesses-should-be-thinking-about-now/
+- `autumn-budget-2025-what-it-means-for-you-and-your-business` — https://r-m-t.co.uk/blog/autumn-budget-2025-what-it-means-for-you-and-your-business/
+- `autumn-statement-overview` — https://r-m-t.co.uk/blog/autumn-statement-overview/
+- `avoiding-taxing-christmas` — https://r-m-t.co.uk/blog/avoiding-taxing-christmas/
+- `back-to-basics-job-expenses` — https://r-m-t.co.uk/blog/back-to-basics-job-expenses/
+- `back-to-basics-on-business-mileage` — https://r-m-t.co.uk/blog/back-to-basics-on-business-mileage/
+- `bank-of-england-raises-interest-rates-to-highest-level-in-14-years` — https://r-m-t.co.uk/blog/bank-of-england-raises-interest-rates-to-highest-level-in-14-years/
+- `bcc-warns-sme-exporters-under-tightening-pressure` — https://r-m-t.co.uk/blog/bcc-warns-sme-exporters-under-tightening-pressure/
+- `be-prepared-if-you-decide-to-adopt-a-working-from-home-policy` — https://r-m-t.co.uk/blog/be-prepared-if-you-decide-to-adopt-a-working-from-home-policy/
+- `beadnell-towers-hotel-owners-eye-next-north-east-projects-after-completing-refinancing-deal` — https://r-m-t.co.uk/blog/beadnell-towers-hotel-owners-eye-next-north-east-projects-after-completing-refinancing-deal/
+- `beware-of-exceeding-your-pension-pot-allowance` — https://r-m-t.co.uk/blog/beware-of-exceeding-your-pension-pot-allowance/
+- `bik-payrolling-changes-uk` — https://r-m-t.co.uk/blog/bik-payrolling-changes-uk/
+- `boost-for-bikers-safety-after-new-app-launches` — https://r-m-t.co.uk/blog/boost-for-bikers-safety-after-new-app-launches/
+- `branding-agency-surreal-creative-looks-to-help-others-expand` — https://r-m-t.co.uk/blog/branding-agency-surreal-creative-looks-to-help-others-expand/
+- `brexit-and-immigration-the-key-dates-you-need-to-know-about` — https://r-m-t.co.uk/blog/brexit-and-immigration-the-key-dates-you-need-to-know-about/
+- `brexit-deal-not-delivering-for-businesses` — https://r-m-t.co.uk/blog/brexit-deal-not-delivering-for-businesses/
+- `brexit-freedoms-bill-to-be-brought-forward` — https://r-m-t.co.uk/blog/brexit-freedoms-bill-to-be-brought-forward/
+- `brexit-leaves-shortfall-in-university-led-training-projects-funding` — https://r-m-t.co.uk/blog/brexit-leaves-shortfall-in-university-led-training-projects-funding/
+- `brexit-uk-exports-to-single-market-fall-amid-unstable-trading-environment` — https://r-m-t.co.uk/blog/brexit-uk-exports-to-single-market-fall-amid-unstable-trading-environment/
+- `brexit-uk-launches-world-leading-data-council-to-help-seize-global-data-sharing-opportunities` — https://r-m-t.co.uk/blog/brexit-uk-launches-world-leading-data-council-to-help-seize-global-data-sharing-opportunities/
+- `britons-lose-millions-in-penalty-charges-as-they-cash-in-lisas` — https://r-m-t.co.uk/blog/britons-lose-millions-in-penalty-charges-as-they-cash-in-lisas/
+- `business-exit-planning` — https://r-m-t.co.uk/blog/business-exit-planning/
+- `business-fading-with-retirement-accountancy-news` — https://r-m-t.co.uk/blog/business-fading-with-retirement-accountancy-news/
+- `business-rates-reform-how-will-it-affect-you` — https://r-m-t.co.uk/blog/business-rates-reform-how-will-it-affect-you/
+- `business-reliefs` — https://r-m-t.co.uk/blog/business-reliefs/
+- `business-support-covid-19` — https://r-m-t.co.uk/blog/business-support-covid-19/
+- `buying-a-business-top-tips-to-secure-the-best-deal` — https://r-m-t.co.uk/blog/buying-a-business-top-tips-to-secure-the-best-deal/
+- `can-you-avoid-the-p11d-process` — https://r-m-t.co.uk/blog/can-you-avoid-the-p11d-process/
+- `capital-allowances` — https://r-m-t.co.uk/blog/capital-allowances/
+- `capital-gains-tax-new-rules-for-disposal-of-uk-land-and-property` — https://r-m-t.co.uk/blog/capital-gains-tax-new-rules-for-disposal-of-uk-land-and-property/
+- `careful-planning-required-around-new-inheritance-tax-rules` — https://r-m-t.co.uk/blog/careful-planning-required-around-new-inheritance-tax-rules/
+- `cash-flow-forecasting` — https://r-m-t.co.uk/blog/cash-flow-forecasting/
+- `cash-flow-statements-how-to-avoid-errors-that-damage-your-business` — https://r-m-t.co.uk/blog/cash-flow-statements-how-to-avoid-errors-that-damage-your-business/
+- `caution-needed-in-crowdfunding-move` — https://r-m-t.co.uk/blog/caution-needed-in-crowdfunding-move/
+- `chancellor-delivers-spring-statement-amid-cloud-of-uncertainty` — https://r-m-t.co.uk/blog/chancellor-delivers-spring-statement-amid-cloud-of-uncertainty/
+- `chancellor-set-to-reveal-autumn-statement-measures` — https://r-m-t.co.uk/blog/chancellor-set-to-reveal-autumn-statement-measures/
+- `changes-to-entrepreneurs-relief` — https://r-m-t.co.uk/blog/changes-to-entrepreneurs-relief/
+- `changes-to-uk-company-law-in-effect-from-today` — https://r-m-t.co.uk/blog/changes-to-uk-company-law-in-effect-from-today/
+- `charity-funding-still-available-through-local-action-fund-how-to-apply` — https://r-m-t.co.uk/blog/charity-funding-still-available-through-local-action-fund-how-to-apply/
+- `chat-heroes-talking-up-growth-plans-after-investment-win` — https://r-m-t.co.uk/blog/chat-heroes-talking-up-growth-plans-after-investment-win/
+- `chemistry-right-for-rsk-groups-acquistion-of-newcastles-enviresearch` — https://r-m-t.co.uk/blog/chemistry-right-for-rsk-groups-acquistion-of-newcastles-enviresearch/
+- `chris-brown-promoted-to-director-at-rmt-accountants-business-advisors` — https://r-m-t.co.uk/blog/chris-brown-promoted-to-director-at-rmt-accountants-business-advisors/
+- `chris-ferguson-promoted-to-director` — https://r-m-t.co.uk/blog/chris-ferguson-promoted-to-director/
+- `column-anthony-andreasen-economy-built-on-innovation` — https://r-m-t.co.uk/blog/column-anthony-andreasen-economy-built-on-innovation/
+- `companies-are-warned-to-keep-data-safer` — https://r-m-t.co.uk/blog/companies-are-warned-to-keep-data-safer/
+- `companies-house-to-allow-coronavirus-related-filing-extensions` — https://r-m-t.co.uk/blog/companies-house-to-allow-coronavirus-related-filing-extensions/
+- `company-tax-returns-must-include-covid-19-grants-says-hmrc` — https://r-m-t.co.uk/blog/company-tax-returns-must-include-covid-19-grants-says-hmrc/
+- `considering-capital-allowances` — https://r-m-t.co.uk/blog/considering-capital-allowances/
+- `construction-self-supply-charge-hmrc-revises-meaning-of-entire-interest-following-defeat-in-supreme-court` — https://r-m-t.co.uk/blog/construction-self-supply-charge-hmrc-revises-meaning-of-entire-interest-following-defeat-in-supreme-court/
+- `construction-subcontractors-all-you-need-to-know-about-payments` — https://r-m-t.co.uk/blog/construction-subcontractors-all-you-need-to-know-about-payments/
+- `construction-work-starts-at-new-amble-residential-development` — https://r-m-t.co.uk/blog/construction-work-starts-at-new-amble-residential-development/
+- `coronavirus-how-to-set-up-an-affordable-payment-plan-if-you-cannot-pay-tax-on-time` — https://r-m-t.co.uk/blog/coronavirus-how-to-set-up-an-affordable-payment-plan-if-you-cannot-pay-tax-on-time/
+- `corporate-finance` — https://r-m-t.co.uk/blog/corporate-finance/
+- `couple-quadruple-size-of-their-pharmacy-business` — https://r-m-t.co.uk/blog/couple-quadruple-size-of-their-pharmacy-business/
+- `covid-19-business-bulletin` — https://r-m-t.co.uk/blog/covid-19-business-bulletin/
+- `covid-19-business-interruption-insurance-are-you-due-a-payout` — https://r-m-t.co.uk/blog/covid-19-business-interruption-insurance-are-you-due-a-payout/
+- `covid-19-response` — https://r-m-t.co.uk/blog/covid-19-response/
+- `covid-19-self-employment-income-support-scheme` — https://r-m-t.co.uk/blog/covid-19-self-employment-income-support-scheme/
+- `covid-19-time-to-pay-arrangement-for-outstanding-tax-liabilities` — https://r-m-t.co.uk/blog/covid-19-time-to-pay-arrangement-for-outstanding-tax-liabilities/
+- `covid-business-loans-scheme-extended-for-two-years` — https://r-m-t.co.uk/blog/covid-business-loans-scheme-extended-for-two-years/
+- `cyber-essentials-prepared` — https://r-m-t.co.uk/blog/cyber-essentials-prepared/
+- `david-and-claire-join-specialist-medical-accountants-teams` — https://r-m-t.co.uk/blog/david-and-claire-join-specialist-medical-accountants-teams/
+- `deal-secures-future-of-north-pennines-archaeology` — https://r-m-t.co.uk/blog/deal-secures-future-of-north-pennines-archaeology/
+- `deal-success-provides-boost-for-advisory-firm-rmt` — https://r-m-t.co.uk/blog/deal-success-provides-boost-for-advisory-firm-rmt/
+- `dealmaker-takes-skills-into-social-media-role` — https://r-m-t.co.uk/blog/dealmaker-takes-skills-into-social-media-role/
+- `dene-group-set-to-grow-thanks-to-support` — https://r-m-t.co.uk/blog/dene-group-set-to-grow-thanks-to-support/
+- `dispelling-myths-about-corporate-finance` — https://r-m-t.co.uk/blog/dispelling-myths-about-corporate-finance/
+- `disruption-travelling-rmt-accountants-business-advisors` — https://r-m-t.co.uk/blog/disruption-travelling-rmt-accountants-business-advisors/
+- `dividends-v-salary-making-profits-pay-for-your-salary` — https://r-m-t.co.uk/blog/dividends-v-salary-making-profits-pay-for-your-salary/
+- `dont-ignore-the-warning-signs-that-you-or-a-customers-business-is-in-trouble` — https://r-m-t.co.uk/blog/dont-ignore-the-warning-signs-that-you-or-a-customers-business-is-in-trouble/
+- `dont-miss-the-deadline-for-renewing-tax-credits` — https://r-m-t.co.uk/blog/dont-miss-the-deadline-for-renewing-tax-credits/
+- `dont-waste-your-money-on-cyber-security-measures` — https://r-m-t.co.uk/blog/dont-waste-your-money-on-cyber-security-measures/
+- `doxford-group-delivers-record-financial-performance-as-new-hotel-prepares-for-opening` — https://r-m-t.co.uk/blog/doxford-group-delivers-record-financial-performance-as-new-hotel-prepares-for-opening/
+- `dozens-of-north-east-jobs-saved-as-tinsley-special-projects-buys-tanfield-engineering-systems` — https://r-m-t.co.uk/blog/dozens-of-north-east-jobs-saved-as-tinsley-special-projects-buys-tanfield-engineering-systems/
+- `durham-cricket-selects-rmt-accountants-as-new-auditor` — https://r-m-t.co.uk/blog/durham-cricket-selects-rmt-accountants-as-new-auditor/
+- `emily-take-next-step-up-with-rmt-accountants` — https://r-m-t.co.uk/blog/emily-take-next-step-up-with-rmt-accountants/
+- `employment-law-whats-the-priority-for-employers` — https://r-m-t.co.uk/blog/employment-law-whats-the-priority-for-employers/
+- `ensuring-a-smooth-transition-into-new-gp-partnerships` — https://r-m-t.co.uk/blog/ensuring-a-smooth-transition-into-new-gp-partnerships/
+- `entrepreneur-raises-a-cup-of-tea-to-business-supporters` — https://r-m-t.co.uk/blog/entrepreneur-raises-a-cup-of-tea-to-business-supporters/
+- `eu-vat-one-stop-shop-to-launch-in-july-2021` — https://r-m-t.co.uk/blog/eu-vat-one-stop-shop-to-launch-in-july-2021/
+- `everything-you-need-to-know-about-the-new-wto-services-domestic-regulation` — https://r-m-t.co.uk/blog/everything-you-need-to-know-about-the-new-wto-services-domestic-regulation/
+- `exciting-opportunity-two-management-accountants` — https://r-m-t.co.uk/blog/exciting-opportunity-two-management-accountants/
+- `fat-hippo-groups-success-continues-with-rmts-ongoing-advice` — https://r-m-t.co.uk/blog/fat-hippo-groups-success-continues-with-rmts-ongoing-advice/
+- `fendor-banks-more-growth-cash-fund` — https://r-m-t.co.uk/blog/fendor-banks-more-growth-cash-fund/
+- `ferguson-takes-over-as-new-r3-north-east-chair` — https://r-m-t.co.uk/blog/ferguson-takes-over-as-new-r3-north-east-chair/
+- `forthcoming-changes-annual-investment-allowances-aia` — https://r-m-t.co.uk/blog/forthcoming-changes-annual-investment-allowances-aia/
+- `fraud-now-costs-uk-businesses-and-individuals-137-billion-a-year-research-reveals` — https://r-m-t.co.uk/blog/fraud-now-costs-uk-businesses-and-individuals-137-billion-a-year-research-reveals/
+- `frs-102-changes-what-uk-businesses-need-to-know-for-2026` — https://r-m-t.co.uk/blog/frs-102-changes-what-uk-businesses-need-to-know-for-2026/
+- `fsb-proposes-move-to-turn-covid-emergency-debt-into-shared-ownership-schemes` — https://r-m-t.co.uk/blog/fsb-proposes-move-to-turn-covid-emergency-debt-into-shared-ownership-schemes/
+- `funding-for-growth` — https://r-m-t.co.uk/blog/funding-for-growth/
+- `furnished-holiday-lets-what-tax-reliefs-are-available` — https://r-m-t.co.uk/blog/furnished-holiday-lets-what-tax-reliefs-are-available/
+- `get-the-records-straight-tax-expert-tells-landlords-as-hmrc-launches-north-east-taskforce` — https://r-m-t.co.uk/blog/get-the-records-straight-tax-expert-tells-landlords-as-hmrc-launches-north-east-taskforce/
+- `getting-business-investment-ready` — https://r-m-t.co.uk/blog/getting-business-investment-ready/
+- `getting-the-right-refinancing-result` — https://r-m-t.co.uk/blog/getting-the-right-refinancing-result/
+- `give-yourself-time-to-pay` — https://r-m-t.co.uk/blog/give-yourself-time-to-pay/
+- `go-grow-fully-funded-training` — https://r-m-t.co.uk/blog/go-grow-fully-funded-training/
+- `government-extends-mortgage-guarantee-scheme` — https://r-m-t.co.uk/blog/government-extends-mortgage-guarantee-scheme/
+- `gpc-pushes-for-pay-uplift-of-several-percent` — https://r-m-t.co.uk/blog/gpc-pushes-for-pay-uplift-of-several-percent/
+- `gps-face-biggest-pay-cut-yet-under-dh-contract-plans` — https://r-m-t.co.uk/blog/gps-face-biggest-pay-cut-yet-under-dh-contract-plans/
+- `greg-bolton-joins-award-winning-finance-team-at-rmt` — https://r-m-t.co.uk/blog/greg-bolton-joins-award-winning-finance-team-at-rmt/
+- `hamza-charlotte-add-to-our-growing-teams` — https://r-m-t.co.uk/blog/hamza-charlotte-add-to-our-growing-teams/
+- `hanover-dairies-agrees-natwest-finance-restructure-deal-to-support-investment-plans` — https://r-m-t.co.uk/blog/hanover-dairies-agrees-natwest-finance-restructure-deal-to-support-investment-plans/
+- `healthy-rise-for-gp-notional-rent` — https://r-m-t.co.uk/blog/healthy-rise-for-gp-notional-rent/
+- `hmrc-announce-new-vat-campaign` — https://r-m-t.co.uk/blog/hmrc-announce-new-vat-campaign/
+- `hmrc-extends-deadline-for-voluntary-nics` — https://r-m-t.co.uk/blog/hmrc-extends-deadline-for-voluntary-nics/
+- `hmrc-helpsheet-to-support-residential-property-sellers-with-new-cgt-rules` — https://r-m-t.co.uk/blog/hmrc-helpsheet-to-support-residential-property-sellers-with-new-cgt-rules/
+- `hmrc-issues-guidance-on-abolition-of-pensions-lifetime-allowance` — https://r-m-t.co.uk/blog/hmrc-issues-guidance-on-abolition-of-pensions-lifetime-allowance/
+- `hmrc-late-payment-interest-rate` — https://r-m-t.co.uk/blog/hmrc-late-payment-interest-rate/
+- `hmrc-mileage-rates-increase-2026` — https://r-m-t.co.uk/blog/hmrc-mileage-rates-increase-2026/
+- `hmrc-set-to-modernise-direct-debit-system-for-employer-paye` — https://r-m-t.co.uk/blog/hmrc-set-to-modernise-direct-debit-system-for-employer-paye/
+- `hmrc-statutory-residence-test-and-covid-19-important-changes` — https://r-m-t.co.uk/blog/hmrc-statutory-residence-test-and-covid-19-important-changes/
+- `hmrc-to-launch-new-mandatory-p87-expenses-form` — https://r-m-t.co.uk/blog/hmrc-to-launch-new-mandatory-p87-expenses-form/
+- `hmrc-updates-tax-rules-and-calculations-on-ultra-low-emission-vehicles` — https://r-m-t.co.uk/blog/hmrc-updates-tax-rules-and-calculations-on-ultra-low-emission-vehicles/
+- `hmrcs-guidance-on-reasonable-excuses-for-late-tax-payments-updated` — https://r-m-t.co.uk/blog/hmrcs-guidance-on-reasonable-excuses-for-late-tax-payments-updated/
+- `homes-price-boom-sparks-a-big-rise-in-inheritance-tax-receipts-what-can-you-do-to-save-tax` — https://r-m-t.co.uk/blog/homes-price-boom-sparks-a-big-rise-in-inheritance-tax-receipts-what-can-you-do-to-save-tax/
+- `hospitality-service-charge-rules` — https://r-m-t.co.uk/blog/hospitality-service-charge-rules/
+- `how-can-uk-export-finance-help-my-business-trade-overseas` — https://r-m-t.co.uk/blog/how-can-uk-export-finance-help-my-business-trade-overseas/
+- `how-can-you-finance-a-new-business` — https://r-m-t.co.uk/blog/how-can-you-finance-a-new-business/
+- `how-can-your-employees-recognise-scam-emails` — https://r-m-t.co.uk/blog/how-can-your-employees-recognise-scam-emails/
+- `how-hard-pressed-smes-can-obtain-business-support` — https://r-m-t.co.uk/blog/how-hard-pressed-smes-can-obtain-business-support/
+- `how-to-balance-your-bank-account-2` — https://r-m-t.co.uk/blog/how-to-balance-your-bank-account-2/
+- `how-to-refinance-your-medical-gp-practice` — https://r-m-t.co.uk/blog/how-to-refinance-your-medical-gp-practice/
+- `i-cant-pay-my-tax-bill-what-should-i-do` — https://r-m-t.co.uk/blog/i-cant-pay-my-tax-bill-what-should-i-do/
+- `in-house-data-networks` — https://r-m-t.co.uk/blog/in-house-data-networks/
+- `income-tax-basis-periods-what-unincorporated-businesses-need-to-know` — https://r-m-t.co.uk/blog/income-tax-basis-periods-what-unincorporated-businesses-need-to-know/
+- `industrial-strategy-required-to-focus-on-innovation-says-iod` — https://r-m-t.co.uk/blog/industrial-strategy-required-to-focus-on-innovation-says-iod/
+- `inflation-and-interest-rates-are-we-due-a-revitalisation-of-saving` — https://r-m-t.co.uk/blog/inflation-and-interest-rates-are-we-due-a-revitalisation-of-saving/
+- `international-trade-uk-moves-into-second-and-final-phase-of-accession-to-join-cptpp` — https://r-m-t.co.uk/blog/international-trade-uk-moves-into-second-and-final-phase-of-accession-to-join-cptpp/
+- `investment-in-uk-technology-startups-and-scaleups-almost-tripled-in-2021` — https://r-m-t.co.uk/blog/investment-in-uk-technology-startups-and-scaleups-almost-tripled-in-2021/
+- `investment-tax-breaks-on-agenda-at-event` — https://r-m-t.co.uk/blog/investment-tax-breaks-on-agenda-at-event/
+- `is-your-business-struggling-with-debt-regain-control-today` — https://r-m-t.co.uk/blog/is-your-business-struggling-with-debt-regain-control-today/
+- `james-and-monisa-join-growing-healthcare-team` — https://r-m-t.co.uk/blog/james-and-monisa-join-growing-healthcare-team/
+- `james-gets-his-teeth-into-new-rmt-healthcare-role` — https://r-m-t.co.uk/blog/james-gets-his-teeth-into-new-rmt-healthcare-role/
+- `jobs-lost-as-centurion-loses-fight-for-survival` — https://r-m-t.co.uk/blog/jobs-lost-as-centurion-loses-fight-for-survival/
+- `julie-joins-rmt-accountants-ambitious-corporate-finance-team` — https://r-m-t.co.uk/blog/julie-joins-rmt-accountants-ambitious-corporate-finance-team/
+- `keeping-a-lid-on-business-expenses` — https://r-m-t.co.uk/blog/keeping-a-lid-on-business-expenses/
+- `latest-deadline-for-making-tax-digital-for-vat-comes-into-force` — https://r-m-t.co.uk/blog/latest-deadline-for-making-tax-digital-for-vat-comes-into-force/
+- `limited-liability-partnerships` — https://r-m-t.co.uk/blog/limited-liability-partnerships/
+- `looking-ahead` — https://r-m-t.co.uk/blog/looking-ahead/
+- `looking-to-sell-your-business-here-are-some-things-to-think-about` — https://r-m-t.co.uk/blog/looking-to-sell-your-business-here-are-some-things-to-think-about/
+- `maintaining-good-financial-control` — https://r-m-t.co.uk/blog/maintaining-good-financial-control/
+- `making-a-voluntary-disclosure-to-hmrc` — https://r-m-t.co.uk/blog/making-a-voluntary-disclosure-to-hmrc/
+- `making-sure-your-paye-code-is-correct` — https://r-m-t.co.uk/blog/making-sure-your-paye-code-is-correct/
+- `making-tax-digital-for-vat` — https://r-m-t.co.uk/blog/making-tax-digital-for-vat/
+- `making-tax-digital-mtd` — https://r-m-t.co.uk/blog/making-tax-digital-mtd/
+- `making-vat-savings-when-buying-an-electric-car` — https://r-m-t.co.uk/blog/making-vat-savings-when-buying-an-electric-car/
+- `managing-the-management-buy-out-process` — https://r-m-t.co.uk/blog/managing-the-management-buy-out-process/
+- `maxine-pott-gains-new-endorsement-national-medical-finance-associatio` — https://r-m-t.co.uk/blog/maxine-pott-gains-new-endorsement-national-medical-finance-associatio/
+- `maxine-pott-joins-port-of-tyne-board` — https://r-m-t.co.uk/blog/maxine-pott-joins-port-of-tyne-board/
+- `measures-announced` — https://r-m-t.co.uk/blog/measures-announced/
+- `midlands-solicitors-firm-saved-by-cva-after-hmrc-winding-up-petition` — https://r-m-t.co.uk/blog/midlands-solicitors-firm-saved-by-cva-after-hmrc-winding-up-petition/
+- `mobilize-corporate-content-apps` — https://r-m-t.co.uk/blog/mobilize-corporate-content-apps/
+- `monument-foods-set-to-open-another-factory` — https://r-m-t.co.uk/blog/monument-foods-set-to-open-another-factory/
+- `more-families-claiming-for-overpaid-inheritance-tax` — https://r-m-t.co.uk/blog/more-families-claiming-for-overpaid-inheritance-tax/
+- `most-popular-options-available-when-setting-up-a-new-business` — https://r-m-t.co.uk/blog/most-popular-options-available-when-setting-up-a-new-business/
+- `mtd-expected-to-cost-1-billion-more-than-originally-forecast` — https://r-m-t.co.uk/blog/mtd-expected-to-cost-1-billion-more-than-originally-forecast/
+- `mtd-for-income-tax-delayed-until-april-2024-hmrc-confirms` — https://r-m-t.co.uk/blog/mtd-for-income-tax-delayed-until-april-2024-hmrc-confirms/
+- `national-apprenticeship-week-2024` — https://r-m-t.co.uk/blog/national-apprenticeship-week-2024/
+- `national-deal-will-give-boost-to-smes` — https://r-m-t.co.uk/blog/national-deal-will-give-boost-to-smes/
+- `national-insurance-thresholds-are-changing-are-you-ready` — https://r-m-t.co.uk/blog/national-insurance-thresholds-are-changing-are-you-ready/
+- `need-help-to-grow-learn-about-the-latest-government-backed-support-for-smes` — https://r-m-t.co.uk/blog/need-help-to-grow-learn-about-the-latest-government-backed-support-for-smes/
+- `new-era-for-drilling-supplies-as-established-group-rsk-acquires-business-from-long-term-owner-3` — https://r-m-t.co.uk/blog/new-era-for-drilling-supplies-as-established-group-rsk-acquires-business-from-long-term-owner-3/
+- `new-era-for-drilling-supplies-as-established-group-rsk-acquires-business-from-long-term-owner` — https://r-m-t.co.uk/blog/new-era-for-drilling-supplies-as-established-group-rsk-acquires-business-from-long-term-owner/
+- `new-guidance-to-help-businesses-navigate-vat-second-hand-margin-scheme` — https://r-m-t.co.uk/blog/new-guidance-to-help-businesses-navigate-vat-second-hand-margin-scheme/
+- `new-hmrc-campaign-on-second-homes` — https://r-m-t.co.uk/blog/new-hmrc-campaign-on-second-homes/
+- `new-mileage-rates-from-september-2021` — https://r-m-t.co.uk/blog/new-mileage-rates-from-september-2021/
+- `new-plans-to-support-hospitality-industry-in-wake-of-coronavirus-pandemic` — https://r-m-t.co.uk/blog/new-plans-to-support-hospitality-industry-in-wake-of-coronavirus-pandemic/
+- `new-recommendations-in-sweeping-cgt-review` — https://r-m-t.co.uk/blog/new-recommendations-in-sweeping-cgt-review/
+- `new-rules-to-end-second-home-tax-loophole` — https://r-m-t.co.uk/blog/new-rules-to-end-second-home-tax-loophole/
+- `new-specialists-join-the-team-at-rmt` — https://r-m-t.co.uk/blog/new-specialists-join-the-team-at-rmt/
+- `newcastle-dog-cat-shelter-fetches-rmt-accountants-advice-in-support-of-new-facilities-plans` — https://r-m-t.co.uk/blog/newcastle-dog-cat-shelter-fetches-rmt-accountants-advice-in-support-of-new-facilities-plans/
+- `north-east-cyclists-aiming-for-wheely-quick-charity-ride-from-lands-end-to-john-ogroats` — https://r-m-t.co.uk/blog/north-east-cyclists-aiming-for-wheely-quick-charity-ride-from-lands-end-to-john-ogroats/
+- `north-east-entrepreneurs-make-first-move-into-healthcare-sector-with-caremore-acquisition` — https://r-m-t.co.uk/blog/north-east-entrepreneurs-make-first-move-into-healthcare-sector-with-caremore-acquisition/
+- `other-key-changes-for-2019-20` — https://r-m-t.co.uk/blog/other-key-changes-for-2019-20/
+- `our-top-tips-for-hiring-your-first-employee` — https://r-m-t.co.uk/blog/our-top-tips-for-hiring-your-first-employee/
+- `overcoming-the-common-barriers-to-protection` — https://r-m-t.co.uk/blog/overcoming-the-common-barriers-to-protection/
+- `overdrive-north-east-profits-up-after-cold-snap` — https://r-m-t.co.uk/blog/overdrive-north-east-profits-up-after-cold-snap/
+- `paye-settlement-agreement-can-save-time-and-costs` — https://r-m-t.co.uk/blog/paye-settlement-agreement-can-save-time-and-costs/
+- `payroll-and-nhs-pension-changes` — https://r-m-t.co.uk/blog/payroll-and-nhs-pension-changes/
+- `payrolling-benefits-in-kind-get-ahead-of-the-changes` — https://r-m-t.co.uk/blog/payrolling-benefits-in-kind-get-ahead-of-the-changes/
+- `pensions-leave-gps-facing-fines` — https://r-m-t.co.uk/blog/pensions-leave-gps-facing-fines/
+- `personal-data-to-encrypt-or-not-encrypt-that-is-the-question` — https://r-m-t.co.uk/blog/personal-data-to-encrypt-or-not-encrypt-that-is-the-question/
+- *(+215 more)*
 
-## Payroll, pensions & staff (63 gap topics, 64 competitor pages)
+## sial-accountants.co.uk (35 gap candidates)
 
-- **[x2]** `auto-enrolment`
-  - r-m-t.co.uk: https://r-m-t.co.uk/outsourced-services/auto-enrolment/
-  - hawsons.co.uk: https://www.hawsons.co.uk/financial-planning/auto-enrolment/
-- [x1] `a-decade-with-payroll-passion-meet-andreas-fredvinge`
-  - azets.com: https://www.azets.com/en/resources/a-decade-with-payroll-passion-meet-andreas-fredvinge
-- [x1] `a-guide-to-payroll-outsourcing-for-businesses`
-  - azets.com: https://www.azets.com/en-uk/resources/a-guide-to-payroll-outsourcing-for-businesses
-- [x1] `annual-payroll-wheel`
-  - azets.com: https://www.azets.com/en-dk/welcome/azets-payroll/annual-payroll-wheel
-- [x1] `apply-for-or-locate-a-national-insurance-number`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/apply-for-or-locate-a-national-insurance-number/
-- [x1] `applying-for-a-national-insurance-number`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/applying-for-a-national-insurance-number/
-- [x1] `applying-for-national-insurance-credits-dont-miss-out`
-  - jcssutton.co.uk: https://www.jcssutton.co.uk/news/blog/applying-for-national-insurance-credits-dont-miss-out/
-- [x1] `avoid-payroll-fraud-this-summer`
-  - azets.com: https://www.azets.com/en-se/resources/blog/avoid-payroll-fraud-this-summer
-- [x1] `azets-payroll`
-  - azets.com: https://www.azets.com/en-dk/welcome/azets-payroll
-- [x1] `azets-uk-shortlisted-for-four-payroll-industry-awards`
-  - azets.com: https://www.azets.com/en-uk/resources/azets-uk-shortlisted-for-four-payroll-industry-awards
-- [x1] `bik-payrolling-changes-uk`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/bik-payrolling-changes-uk/
-- [x1] `check-your-national-insurance-record`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/check-your-national-insurance-record/
-- [x1] `checking-your-national-insurance-records`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/checking-your-national-insurance-records/
-- [x1] `congratulations-to-our-award-winning-payroll-team`
-  - azets.com: https://www.azets.com/en-ie/resources/congratulations-to-our-award-winning-payroll-team
-- [x1] `deferring-national-insurance-payments`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/deferring-national-insurance-payments/
-- [x1] `directors-and-national-insurance`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/directors-and-national-insurance/
-- [x1] `ep-national-insurance`
-  - ramsaybrown.com: https://ramsaybrown.com/podcast/ep-national-insurance/
-- [x1] `exploring-national-insurance-credits`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/exploring-national-insurance-credits/
-- [x1] `finding-your-national-insurance-number`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/finding-your-national-insurance-number/
-- [x1] `finland-holiday-year-cutover-payroll`
-  - azets.com: https://www.azets.com/en-fi/resources/blog/finland-holiday-year-cutover-payroll
-- [x1] `fixing-problems-with-running-payroll`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/fixing-problems-with-running-payroll/
-- [x1] `handling-the-giant-payrolls-meet-malin-curley`
-  - azets.com: https://www.azets.com/en/resources/handling-the-giant-payrolls-meet-malin-curley
-- [x1] `hmrcs-digital-roadmap-what-it-means-for-taxpayers`
-  - azets.com: https://www.azets.com/en-uk/resources/hmrcs-digital-roadmap-what-it-means-for-taxpayers
-- [x1] `how-to-avoid-common-payroll-mistakes-in-finland`
-  - azets.com: https://www.azets.com/en-fi/resources/blog/how-to-avoid-common-payroll-mistakes-in-finland
-- [x1] `hr-payroll-software`
-  - r-m-t.co.uk: https://r-m-t.co.uk/outsourced-services/payroll-services/hr-payroll-software/
-- [x1] `international-payroll`
-  - azets.com: https://www.azets.com/sv-se/resurser/guider/international-payroll
-- [x1] `international-payroll-guide`
-  - azets.com: https://www.azets.com/en/resources/international-payroll-guide
-- [x1] `is-your-business-claiming-the-employment-allowance`
-  - azets.com: https://www.azets.com/en-uk/resources/is-your-business-claiming-the-employment-allowance
-- [x1] `landlord-tax-and-national-insurance-considerations`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/landlord-tax-and-national-insurance-considerations/
-- [x1] `making-sure-your-paye-code-is-correct`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/making-sure-your-paye-code-is-correct/
-- [x1] `managing-payroll-across-multiple-care-homes`
-  - hawsons.co.uk: https://www.hawsons.co.uk/managing-payroll-across-multiple-care-homes/
-- [x1] `mtd-for-it-taxpayer-exemption`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/mtd-for-it-taxpayer-exemption/
-- [x1] `national-insurance-credits-and-child-benefit`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/national-insurance-credits-and-child-benefit/
-- [x1] `national-insurance-thresholds-are-changing-are-you-ready`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/national-insurance-thresholds-are-changing-are-you-ready/
-- [x1] `netvision-payroll`
-  - azets.com: https://www.azets.com/no-no/tjenester/teknologitjenester/systemlosninger/netvision-payroll
-- [x1] `nordic-payroll-for-basware`
-  - azets.com: https://www.azets.com/en-fi/resources/customer-stories/nordic-payroll-for-basware
-- [x1] `outsourcing-payroll`
-  - jcssutton.co.uk: https://www.jcssutton.co.uk/news/blog/outsourcing-payroll/
-- [x1] `paye-settlement-agreement-can-save-time-and-costs`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/paye-settlement-agreement-can-save-time-and-costs/
-- [x1] `payroll-annual-reporting-obligations`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/payroll-annual-reporting-obligations/
-- [x1] `payroll-hr-administration`
-  - azets.com: https://www.azets.com/fi-fi/ajankohtaista/videotallenteet/payroll-hr-administration
-- *(+23 more in this bucket)*
+- `2024-autumn-budget-for-healthcare-professionals` — https://sial-accountants.co.uk/2024-autumn-budget-for-healthcare-professionals/
+- `a-guide-to-the-autumn-statement-2023` — https://sial-accountants.co.uk/a-guide-to-the-autumn-statement-2023/
+- `companies-house-identity-verification-for-healthcare-professionals` — https://sial-accountants.co.uk/companies-house-identity-verification-for-healthcare-professionals/
+- `finalist-for-accounting-excellence-award-2018` — https://sial-accountants.co.uk/finalist-for-accounting-excellence-award-2018/
+- `financial-expertise-for-dentists` — https://sial-accountants.co.uk/financial-expertise-for-dentists/
+- `financial-wellbeing-for-doctors` — https://sial-accountants.co.uk/financial-wellbeing-for-doctors/
+- `get-a-quote` — https://sial-accountants.co.uk/get-a-quote/
+- `happy-new-year-2025` — https://sial-accountants.co.uk/happy-new-year-2025/
+- `healthcare-accounting` — https://sial-accountants.co.uk/healthcare-accounting/
+- `how-to-start-and-run-a-successful-optical-practice` — https://sial-accountants.co.uk/how-to-start-and-run-a-successful-optical-practice/
+- `locations.kml` — https://sial-accountants.co.uk/locations.kml
+- `medical-accountants` — https://sial-accountants.co.uk/medical-accountants/
+- `avn-inspiring-accountants` — https://sial-accountants.co.uk/medical-accountants/awards/avn-inspiring-accountants/
+- `avn-practice-differentiation-award` — https://sial-accountants.co.uk/medical-accountants/awards/avn-practice-differentiation-award/
+- `core-values` — https://sial-accountants.co.uk/medical-accountants/core-values/
+- `dental-accountants` — https://sial-accountants.co.uk/services/dental-accountants/
+- `dental-associates` — https://sial-accountants.co.uk/services/dental-associates/
+- `locum-optom` — https://sial-accountants.co.uk/services/locum-optom/
+- `locum-pharmacist` — https://sial-accountants.co.uk/services/locum-pharmacist/
+- `medical-accountants-for-doctors` — https://sial-accountants.co.uk/services/medical-accountants-for-doctors/
+- `primary-care-networks` — https://sial-accountants.co.uk/services/primary-care-networks/
+- `property-business` — https://sial-accountants.co.uk/services/property-business/
+- `salaried-gps-and-locums` — https://sial-accountants.co.uk/services/salaried-gps-and-locums/
+- `small-and-growing-business` — https://sial-accountants.co.uk/services/small-and-growing-business/
+- `tax-returns-for-medical-doctors` — https://sial-accountants.co.uk/services/tax-returns-for-medical-doctors/
+- `vat-for-opticians` — https://sial-accountants.co.uk/services/vat-for-opticians/
+- `sial-accountants-wins-prestigious-avn-award-for-practice-differentiation` — https://sial-accountants.co.uk/sial-accountants-wins-prestigious-avn-award-for-practice-differentiation/
+- `tax-solutions-for-locum-opticians` — https://sial-accountants.co.uk/tax-solutions-for-locum-opticians/
+- `tax-solutions-for-pharmacists` — https://sial-accountants.co.uk/tax-solutions-for-pharmacists/
+- `taxation-for-locum-doctors` — https://sial-accountants.co.uk/taxation-for-locum-doctors/
+- `taxation-services-for-dentists` — https://sial-accountants.co.uk/taxation-services-for-dentists/
+- `type-1-pension-certificate` — https://sial-accountants.co.uk/type-1-pension-certificate/
+- `vat-for-dentists` — https://sial-accountants.co.uk/vat-for-dentists/
+- `vat-locum-doctors-hmrc-update-2025` — https://sial-accountants.co.uk/vat-locum-doctors-hmrc-update-2025/
+- `vat-services-for-opticians` — https://sial-accountants.co.uk/vat-services-for-opticians/
 
-## BADR & capital gains (25 gap topics, 25 competitor pages)
+## practiceindex.co.uk (250 gap candidates)
 
-- [x1] `business-asset-disposal-relief`
-  - r-m-t.co.uk: https://r-m-t.co.uk/tax-advisory/business-asset-disposal-relief/
-- [x1] `business-asset-disposal-relief-changes`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/business-asset-disposal-relief-changes/
-- [x1] `business-asset-disposal-relief-forthcoming-changes`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/business-asset-disposal-relief-forthcoming-changes/
-- [x1] `business-asset-disposal-relief-the-present-rates`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/business-asset-disposal-relief-the-present-rates/
-- [x1] `can-you-claim-business-asset-disposal-relief`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/can-you-claim-business-asset-disposal-relief/
-- [x1] `capital-gains-tax-new-rules-for-disposal-of-uk-land-and-property`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/capital-gains-tax-new-rules-for-disposal-of-uk-land-and-property/
-- [x1] `capital-gains-tax-the-basics`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/capital-gains-tax-the-basics
-- [x1] `capital-gains-tax-the-new-rates`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/capital-gains-tax-the-new-rates/
-- [x1] `cgt-gift-hold-over-relief`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/cgt-gift-hold-over-relief/
-- [x1] `cgt-rollover-relief`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/cgt-rollover-relief/
-- [x1] `changes-to-cgt-investors-relief`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/changes-to-cgt-investors-relief/
-- [x1] `changes-to-entrepreneurs-relief`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/changes-to-entrepreneurs-relief/
-- [x1] `current-cgt-rates`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/current-cgt-rates/
-- [x1] `current-rates-for-capital-gains-tax-cgt`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/current-rates-for-capital-gains-tax-cgt/
-- [x1] `entitlement-to-business-asset-disposal-relief`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/entitlement-to-business-asset-disposal-relief/
-- [x1] `entrepreneurs-relief-rules-made-tougher`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/entrepreneurs-relief-rules-made-tougher
-- [x1] `entrepreneurs-relief-when-selling-your-business`
-  - hawsons.co.uk: https://www.hawsons.co.uk/entrepreneurs-relief-when-selling-your-business/
-- [x1] `file-and-paying-cgt-after-property-sales`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/file-and-paying-cgt-after-property-sales/
-- [x1] `found-objects-and-capital-gains-tax`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/found-objects-and-capital-gains-tax/
-- [x1] `inheritance-tax-and-cgt-relief-for-national-heritage-assets`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/inheritance-tax-and-cgt-relief-for-national-heritage-assets/
-- [x1] `new-recommendations-in-sweeping-cgt-review`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/new-recommendations-in-sweeping-cgt-review/
-- [x1] `qualifying-for-business-asset-disposal-relief`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/qualifying-for-business-asset-disposal-relief/
-- [x1] `report-and-pay-capital-gains-tax`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/report-and-pay-capital-gains-tax/
-- [x1] `rolling-over-capital-gains`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/rolling-over-capital-gains/
-- [x1] `what-is-business-asset-disposal-relief-and-how-does-it-work`
-  - azets.com: https://www.azets.com/en-uk/resources/what-is-business-asset-disposal-relief-and-how-does-it-work
+- `1st-class-mailing` — https://practiceindex.co.uk/gp/1st-class-mailing
+- `about-us` — https://practiceindex.co.uk/gp/about-us
+- `accuro-transcription-solutions-ltd` — https://practiceindex.co.uk/gp/accuro-transcription-solutions-ltd
+- `acronym-glossary-of-terms` — https://practiceindex.co.uk/gp/acronym-glossary-of-terms
+- `all-med-pro` — https://practiceindex.co.uk/gp/all-med-pro
+- `apm-healthcare` — https://practiceindex.co.uk/gp/apm-healthcare
+- `approachable-locum-finance` — https://practiceindex.co.uk/gp/approachable-locum-finance
+- `aqua-analyse` — https://practiceindex.co.uk/gp/aqua-analyse
+- `archive-management-systems-limited` — https://practiceindex.co.uk/gp/archive-management-systems-limited
+- `as-technology` — https://practiceindex.co.uk/gp/as-technology
+- `ash-lane-consulting` — https://practiceindex.co.uk/gp/ash-lane-consulting
+- `ashcroft-mailing-solutions` — https://practiceindex.co.uk/gp/ashcroft-mailing-solutions
+- `av-surgery-supplies-1146` — https://practiceindex.co.uk/gp/av-surgery-supplies-1146
+- `baywater-healthcare` — https://practiceindex.co.uk/gp/baywater-healthcare
+- `big-sky-web` — https://practiceindex.co.uk/gp/big-sky-web
+- `blue-stream-academy` — https://practiceindex.co.uk/gp/blue-stream-academy
+- `boc-lifeline-healthcare` — https://practiceindex.co.uk/gp/boc-lifeline-healthcare
+- `buy-a-battery` — https://practiceindex.co.uk/gp/buy-a-battery
+- `bw-medical-accountants` — https://practiceindex.co.uk/gp/bw-medical-accountants
+- `caradoc-medical-services` — https://practiceindex.co.uk/gp/caradoc-medical-services
+- `cardiac-services` — https://practiceindex.co.uk/gp/cardiac-services
+- `cfh-docmail-ltd` — https://practiceindex.co.uk/gp/cfh-docmail-ltd
+- `cherith-simmons` — https://practiceindex.co.uk/gp/cherith-simmons
+- `clinical-audit-support-centre` — https://practiceindex.co.uk/gp/clinical-audit-support-centre
+- `clinicall-cic` — https://practiceindex.co.uk/gp/clinicall-cic
+- `coben-medical` — https://practiceindex.co.uk/gp/coben-medical
+- `code-of-practice` — https://practiceindex.co.uk/gp/code-of-practice
+- `company-listing` — https://practiceindex.co.uk/gp/company-listing
+- `connaught-converged-solutions` — https://practiceindex.co.uk/gp/connaught-converged-solutions
+- `consultancy-services` — https://practiceindex.co.uk/gp/consultancy-services
+- `consultus-care-nursing` — https://practiceindex.co.uk/gp/consultus-care-nursing
+- `core-telecom-ltd` — https://practiceindex.co.uk/gp/core-telecom-ltd
+- `crescendo-systems` — https://practiceindex.co.uk/gp/crescendo-systems
+- `delivering-difference-ltd` — https://practiceindex.co.uk/gp/delivering-difference-ltd
+- `dene-healthcare` — https://practiceindex.co.uk/gp/dene-healthcare
+- `digital-telecom` — https://practiceindex.co.uk/gp/digital-telecom
+- `dispex-ltd` — https://practiceindex.co.uk/gp/dispex-ltd
+- `disposable-medical-instruments` — https://practiceindex.co.uk/gp/disposable-medical-instruments
+- `dispute-council` — https://practiceindex.co.uk/gp/dispute-council
+- `diva-telecom` — https://practiceindex.co.uk/gp/diva-telecom
+- `doctor-insurance-services` — https://practiceindex.co.uk/gp/doctor-insurance-services
+- `dorset-nursing-supplies` — https://practiceindex.co.uk/gp/dorset-nursing-supplies
+- `egton-1057` — https://practiceindex.co.uk/gp/egton-1057
+- `elearning-training-1` — https://practiceindex.co.uk/gp/elearning-training-1
+- `elephant-kiosks` — https://practiceindex.co.uk/gp/elephant-kiosks
+- `fairway-training` — https://practiceindex.co.uk/gp/fairway-training
+- `farla-medical-supplies` — https://practiceindex.co.uk/gp/farla-medical-supplies
+- `four-square-healthcare-ltd` — https://practiceindex.co.uk/gp/four-square-healthcare-ltd
+- `g2-speech` — https://practiceindex.co.uk/gp/g2-speech
+- `gp-surveyors` — https://practiceindex.co.uk/gp/gp-surveyors
+- `gpsurgery-net` — https://practiceindex.co.uk/gp/gpsurgery-net
+- `harold-sharp` — https://practiceindex.co.uk/gp/harold-sharp
+- `health-in-touch` — https://practiceindex.co.uk/gp/health-in-touch
+- `healthcare-monitors` — https://practiceindex.co.uk/gp/healthcare-monitors
+- `henry-schein` — https://practiceindex.co.uk/gp/henry-schein
+- `hillcroft-medical-supplies` — https://practiceindex.co.uk/gp/hillcroft-medical-supplies
+- `hillier-hopkins-llp` — https://practiceindex.co.uk/gp/hillier-hopkins-llp
+- `in-practice-systems-ltd` — https://practiceindex.co.uk/gp/in-practice-systems-ltd
+- `insight-solutions` — https://practiceindex.co.uk/gp/insight-solutions
+- `intradoc-247` — https://practiceindex.co.uk/gp/intradoc-247
+- `iplato-healthcare` — https://practiceindex.co.uk/gp/iplato-healthcare
+- `it-tech` — https://practiceindex.co.uk/gp/it-tech
+- `communication-and-mailing` — https://practiceindex.co.uk/gp/it-tech/communication-and-mailing
+- `sms-text-messaging-services` — https://practiceindex.co.uk/gp/it-tech/communication-and-mailing/sms-text-messaging-services
+- `cqc-compliance-systems` — https://practiceindex.co.uk/gp/it-tech/cqc/cqc-compliance-systems
+- `digital-dictation` — https://practiceindex.co.uk/gp/it-tech/digital-dictation
+- `digital-signage` — https://practiceindex.co.uk/gp/it-tech/digital-signage
+- `holiday-scheduler-software` — https://practiceindex.co.uk/gp/it-tech/holiday-scheduler-software
+- `intranet-services` — https://practiceindex.co.uk/gp/it-tech/intranet-services
+- `invoicing-billing-software` — https://practiceindex.co.uk/gp/it-tech/invoicing-billing-software
+- `it-support` — https://practiceindex.co.uk/gp/it-tech/it-support
+- `patient-call-recall-software` — https://practiceindex.co.uk/gp/it-tech/patient-call-recall-software
+- `recording-information-systems` — https://practiceindex.co.uk/gp/it-tech/recording-information-systems
+- `asset-management` — https://practiceindex.co.uk/gp/it-tech/recording-information-systems/asset-management
+- `call-recording` — https://practiceindex.co.uk/gp/it-tech/recording-information-systems/call-recording
+- `document-management` — https://practiceindex.co.uk/gp/it-tech/recording-information-systems/document-management
+- `document-scanning` — https://practiceindex.co.uk/gp/it-tech/recording-information-systems/document-scanning
+- `fft-friends-family-test` — https://practiceindex.co.uk/gp/it-tech/recording-information-systems/fft-friends-family-test
+- `patient-arrival-systems` — https://practiceindex.co.uk/gp/it-tech/recording-information-systems/patient-arrival-systems
+- `cctv-cameras-systems` — https://practiceindex.co.uk/gp/it-tech/security/cctv-cameras-systems
+- `hard-drive-media-destruction` — https://practiceindex.co.uk/gp/it-tech/security/hard-drive-media-destruction
+- `panic-alarm-services` — https://practiceindex.co.uk/gp/it-tech/security/panic-alarm-services
+- `sms-text-messaging-services` — https://practiceindex.co.uk/gp/it-tech/sms-text-messaging-services
+- `specimen-labelling-software` — https://practiceindex.co.uk/gp/it-tech/software/specimen-labelling-software
+- `speech-recognition-systems` — https://practiceindex.co.uk/gp/it-tech/speech-recognition-systems
+- `website-design-hosting` — https://practiceindex.co.uk/gp/it-tech/website-design-hosting
+- `jayex-technology` — https://practiceindex.co.uk/gp/jayex-technology
+- `jpen-medical` — https://practiceindex.co.uk/gp/jpen-medical
+- `locum-deck` — https://practiceindex.co.uk/gp/locum-deck
+- `medical-personnel-ltd` — https://practiceindex.co.uk/gp/medical-personnel-ltd
+- `advice-line` — https://practiceindex.co.uk/gp/members/advice-line
+- `cqc-help` — https://practiceindex.co.uk/gp/members/cqc-help
+- `forum-plus` — https://practiceindex.co.uk/gp/members/forum-plus
+- `forum-policies-library` — https://practiceindex.co.uk/gp/members/forum-policies-library
+- `miller-medical-supplies-ltd` — https://practiceindex.co.uk/gp/miller-medical-supplies-ltd
+- `minster-cleaning` — https://practiceindex.co.uk/gp/minster-cleaning
+- `bookkeeping-services` — https://practiceindex.co.uk/gp/money/bookkeeping-services
+- `financial-services` — https://practiceindex.co.uk/gp/money/financial-services
+- `financial-advice` — https://practiceindex.co.uk/gp/money/financial-services/financial-advice
+- `solicitors-for-general-practice` — https://practiceindex.co.uk/gp/money/legal/solicitors-for-general-practice
+- `pensions-advice` — https://practiceindex.co.uk/gp/money/pensions-advice
+- `morris-crocker` — https://practiceindex.co.uk/gp/morris-crocker
+- `mps-networks` — https://practiceindex.co.uk/gp/mps-networks
+- `nami-pharmaceuticals` — https://practiceindex.co.uk/gp/nami-pharmaceuticals
+- `new-suppliers` — https://practiceindex.co.uk/gp/new-suppliers
+- `northumbrian-medical-supplies` — https://practiceindex.co.uk/gp/northumbrian-medical-supplies
+- `numed-healthcare` — https://practiceindex.co.uk/gp/numed-healthcare
+- `our-services` — https://practiceindex.co.uk/gp/our-services
+- `patient-chase` — https://practiceindex.co.uk/gp/patient-chase
+- `care-home-providers` — https://practiceindex.co.uk/gp/patients/care-home-providers
+- `communication-and-mailing` — https://practiceindex.co.uk/gp/patients/communication-and-mailing
+- `sms-text-messaging-services` — https://practiceindex.co.uk/gp/patients/communication-and-mailing/sms-text-messaging-services
+- `friends-and-family-test-nhs-gp-practice` — https://practiceindex.co.uk/gp/patients/friends-and-family-test-nhs-gp-practice
+- `home-nursing` — https://practiceindex.co.uk/gp/patients/home-nursing
+- `patient-arrival-system` — https://practiceindex.co.uk/gp/patients/patient-arrival-system
+- `appointment-cards` — https://practiceindex.co.uk/gp/patients/practice-and-patient-information/appointment-cards
+- `patient-call-systems` — https://practiceindex.co.uk/gp/patients/practice-and-patient-information/patient-call-systems
+- `questionnaires-surveys` — https://practiceindex.co.uk/gp/patients/questionnaires-surveys
+- `general-questionnaires-and-surveys` — https://practiceindex.co.uk/gp/patients/questionnaires-surveys/general-questionnaires-and-surveys
+- `help-with-questionnaires-surveys` — https://practiceindex.co.uk/gp/patients/questionnaires-surveys/help-with-questionnaires-surveys
+- `cctv-cameras-systems` — https://practiceindex.co.uk/gp/patients/security/cctv-cameras-systems
+- `panic-alarm-services` — https://practiceindex.co.uk/gp/patients/security/panic-alarm-services
+- `storage-filing-systems` — https://practiceindex.co.uk/gp/patients/storage-filing-systems
+- `pearl-scan-solutions` — https://practiceindex.co.uk/gp/pearl-scan-solutions
+- `phs-data-solutions` — https://practiceindex.co.uk/gp/phs-data-solutions
+- `physiological-measurements-ltd` — https://practiceindex.co.uk/gp/physiological-measurements-ltd
+- `pm-forum` — https://practiceindex.co.uk/gp/pm-forum
+- `cqc-forum` — https://practiceindex.co.uk/gp/pm-forum/cqc-forum
+- `hr-policies` — https://practiceindex.co.uk/gp/pm-forum/hr-policies
+- `new-posts` — https://practiceindex.co.uk/gp/pm-forum/new-posts
+- `pm-jobs` — https://practiceindex.co.uk/gp/pm-jobs
+- `add-a-job` — https://practiceindex.co.uk/gp/pm-jobs/add-a-job
+- `feature-your-jobs` — https://practiceindex.co.uk/gp/pm-jobs/feature-your-jobs
+- `job-alerts` — https://practiceindex.co.uk/gp/pm-jobs/job-alerts
+- `locum-pm` — https://practiceindex.co.uk/gp/pm-jobs/locum-pm
+- `pm-jobs-board` — https://practiceindex.co.uk/gp/pm-jobs/pm-jobs-board
+- `recruitment-service` — https://practiceindex.co.uk/gp/pm-jobs/recruitment-service
+- `pms-instruments` — https://practiceindex.co.uk/gp/pms-instruments
+- `practice-cover` — https://practiceindex.co.uk/gp/practice-cover
+- `practice-index-reviews` — https://practiceindex.co.uk/gp/practice-index-reviews
+- `practice-management-magazine` — https://practiceindex.co.uk/gp/practice-management-magazine
+- `practice-manager-blog` — https://practiceindex.co.uk/gp/practice-manager-blog
+- `practice-manager-resources` — https://practiceindex.co.uk/gp/practice-manager-resources
+- `practice-managers-newsletter` — https://practiceindex.co.uk/gp/practice-managers-newsletter
+- `premier-patient-line` — https://practiceindex.co.uk/gp/premier-patient-line
+- `primary-care-management-solutions` — https://practiceindex.co.uk/gp/primary-care-management-solutions
+- `primary-care-pathways` — https://practiceindex.co.uk/gp/primary-care-pathways
+- `primary-care-training-centre` — https://practiceindex.co.uk/gp/primary-care-training-centre
+- `primary-locums` — https://practiceindex.co.uk/gp/primary-locums
+- `procare-cleaning` — https://practiceindex.co.uk/gp/procare-cleaning
+- `pure-cloud-solutions` — https://practiceindex.co.uk/gp/pure-cloud-solutions
+- `qr-info-pod` — https://practiceindex.co.uk/gp/qr-info-pod
+- `railey-projects` — https://practiceindex.co.uk/gp/railey-projects
+- `sandisons-accountants` — https://practiceindex.co.uk/gp/sandisons-accountants
+- `cqc-cleaning-services` — https://practiceindex.co.uk/gp/services/cqc/cqc-cleaning-services
+- `cqc-compliance-systems` — https://practiceindex.co.uk/gp/services/cqc/cqc-compliance-systems
+- `cqc-training` — https://practiceindex.co.uk/gp/services/cqc/cqc-training
+- `digital-health` — https://practiceindex.co.uk/gp/services/digital-health
+- `dispensing-practices-services` — https://practiceindex.co.uk/gp/services/dispensing-practices-services
+- `health-and-safety` — https://practiceindex.co.uk/gp/services/health-and-safety
+- `fire-extinguishers` — https://practiceindex.co.uk/gp/services/health-and-safety/fire-extinguishers
+- `infection-control` — https://practiceindex.co.uk/gp/services/infection-control
+- `insurance-reports` — https://practiceindex.co.uk/gp/services/insurance-reports
+- `building-insurance` — https://practiceindex.co.uk/gp/services/insurance/building-insurance
+- `locum-absence-insurance` — https://practiceindex.co.uk/gp/services/insurance/locum-absence-insurance
+- `internet-and-wifi-services` — https://practiceindex.co.uk/gp/services/internet-and-wifi-services
+- `intranet-services-software` — https://practiceindex.co.uk/gp/services/intranet-services-software
+- `solicitors-for-general-practice` — https://practiceindex.co.uk/gp/services/legal/solicitors-for-general-practice
+- `legionella-services` — https://practiceindex.co.uk/gp/services/legionella-services
+- `medical-equipment-testing-and-calibration` — https://practiceindex.co.uk/gp/services/medical-equipment-testing-and-calibration
+- `medical-record-digital-reproduction` — https://practiceindex.co.uk/gp/services/medical-record-digital-reproduction
+- `pat-testing` — https://practiceindex.co.uk/gp/services/pat-testing
+- `practice-management-magazines` — https://practiceindex.co.uk/gp/services/practice-management-magazines
+- `premises-maintenance-management` — https://practiceindex.co.uk/gp/services/premises-maintenance-management
+- `janitorial-supplies` — https://practiceindex.co.uk/gp/services/premises-maintenance-management/janitorial-supplies
+- `off-site-storage-solutions` — https://practiceindex.co.uk/gp/services/premises-maintenance-management/off-site-storage-solutions
+- `office-interiors` — https://practiceindex.co.uk/gp/services/premises-maintenance-management/office-interiors
+- `property-solutions` — https://practiceindex.co.uk/gp/services/premises-maintenance-management/property-solutions
+- `storage-filing-systems` — https://practiceindex.co.uk/gp/services/premises-maintenance-management/storage-filing-systems
+- `cctv-cameras-systems` — https://practiceindex.co.uk/gp/services/security/cctv-cameras-systems
+- `hard-drive-and-media-destruction` — https://practiceindex.co.uk/gp/services/security/hard-drive-and-media-destruction
+- `hard-drive-and-media-storage` — https://practiceindex.co.uk/gp/services/security/hard-drive-and-media-storage
+- `panic-alarm-services` — https://practiceindex.co.uk/gp/services/security/panic-alarm-services
+- `sms-text-messaging-services` — https://practiceindex.co.uk/gp/services/sms-text-messaging-services
+- `telecoms-systems-services` — https://practiceindex.co.uk/gp/services/telecoms/telecoms-systems-services
+- `telephone-answering-outsourcing` — https://practiceindex.co.uk/gp/services/telecoms/telephone-answering-outsourcing
+- `waste-collection` — https://practiceindex.co.uk/gp/services/waste/waste-collection
+- `weee-recycling` — https://practiceindex.co.uk/gp/services/waste/weee-recycling
+- `web-design-hosting` — https://practiceindex.co.uk/gp/services/web-design-hosting
+- `shred-it` — https://practiceindex.co.uk/gp/shred-it
+- `sirius-business-services-ltd` — https://practiceindex.co.uk/gp/sirius-business-services-ltd
+- `southend-pat-testing` — https://practiceindex.co.uk/gp/southend-pat-testing
+- `sovereign-payroll` — https://practiceindex.co.uk/gp/sovereign-payroll
+- `crb-dbs-checks` — https://practiceindex.co.uk/gp/staff/crb-dbs-checks
+- `health-and-safety` — https://practiceindex.co.uk/gp/staff/health-and-safety
+- `health-and-safety-training` — https://practiceindex.co.uk/gp/staff/health-and-safety/health-and-safety-training
+- `holiday-absence-planner` — https://practiceindex.co.uk/gp/staff/holidays/holiday-absence-planner
+- `holiday-scheduler-software` — https://practiceindex.co.uk/gp/staff/holidays/holiday-scheduler-software
+- `human-resources-hr-services` — https://practiceindex.co.uk/gp/staff/human-resources-hr-services
+- `management-consultancy` — https://practiceindex.co.uk/gp/staff/management-consultancy
+- *(+50 more)*
 
-## Practice accounting & bookkeeping (21 gap topics, 23 competitor pages)
+## bma.org.uk (3358 gap candidates)
 
-- **[x2]** `azets-acquires-medical-accounting-firm-sandisons-in-dorset`
-  - azets.com: https://www.azets.com/en-uk/resources/press-centre/azets-acquires-medical-accounting-firm-sandisons-in-dorset
-  - azets.com: https://www.azets.com/en/resources/press-centre/azets-acquires-medical-accounting-firm-sandisons-in-dorset
-- **[x2]** `azets-acquires-rsm-uks-specialist-medical-accounting-team`
-  - azets.com: https://www.azets.com/en-uk/resources/press-centre/azets-acquires-rsm-uks-specialist-medical-accounting-team
-  - azets.com: https://www.azets.com/en/resources/press-centre/azets-acquires-rsm-uks-specialist-medical-accounting-team
-- [x1] `azets-acquires-specialist-medical-accounting-team`
-  - azets.com: https://www.azets.com/en-uk/resources/azets-acquires-specialist-medical-accounting-team
-- [x1] `bookkeeping-and-taxation`
-  - azets.com: https://www.azets.com/fi-fi/ajankohtaista/videotallenteet/bookkeeping-and-taxation
-- [x1] `bw-medical-accountants-continues-to-raise-the-bar`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/bw-medical-accountants-continues-to-raise-the-bar
-- [x1] `bw-medical-accountants-continuity-business-plan`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/bw-medical-accountants-continuity-business-plan
-- [x1] `david-and-claire-join-specialist-medical-accountants-teams`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/david-and-claire-join-specialist-medical-accountants-teams/
-- [x1] `gp-introduction-to-medical-accounts`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/events/gp-introduction-to-medical-accounts
-- [x1] `gp-practice-accounts`
-  - sial-accountants.co.uk: https://sial-accountants.co.uk/gp-practice-accounts/
-- [x1] `gp-practice-accounts-a-basic-introduction`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/gp-practice-accounts-a-basic-introduction
-- [x1] `leading-medical-accountancy-firm-makes-board-level-appointment`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/leading-medical-accountancy-firm-makes-board-level-appointment
-- [x1] `management-accounts`
-  - jcssutton.co.uk: https://www.jcssutton.co.uk/how-we-help/business-services/management-accounts/
-- [x1] `medical-accountants-in-london`
-  - nicholsmedical.co.uk: https://nicholsmedical.co.uk/news/medical-accountants-in-london/
-- [x1] `mtd-for-income-tax-what-does-best-practice-digital-record-keeping-look-like`
-  - azets.com: https://www.azets.com/en-uk/resources/mtd-for-income-tax-what-does-best-practice-digital-record-keeping-look-like
-- [x1] `new-danish-bookkeeping-act`
-  - azets.com: https://www.azets.com/en-dk/resources/blog/new-danish-bookkeeping-act
-- [x1] `new-year-brings-new-office-for-medical-accountants`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/new-year-brings-new-office-for-medical-accountants
-- [x1] `niche-medical-accountants-continues-to-expand`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/niche-medical-accountants-continues-to-expand
-- [x1] `rugby-team-scores-backing-from-medical-accountants`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/rugby-team-scores-backing-from-medical-accountants
-- [x1] `simplified-chart-of-accounts-for-law-firms`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/simplified-chart-of-accounts-for-law-firms/
-- [x1] `specialist-medical-accountant`
-  - nicholsmedical.co.uk: https://nicholsmedical.co.uk/news/specialist-medical-accountant/
-- [x1] `vat-digital-record-keeping`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/vat-digital-record-keeping/
+- `about-us` — https://www.bma.org.uk/about-us
+- `about-the-bma` — https://www.bma.org.uk/about-us/about-the-bma
+- `how-we-work` — https://www.bma.org.uk/about-us/about-the-bma/how-we-work
+- `bma-as-a-professional-association-and-trade-union` — https://www.bma.org.uk/about-us/about-the-bma/how-we-work/bma-as-a-professional-association-and-trade-union
+- `bma-governance` — https://www.bma.org.uk/about-us/about-the-bma/how-we-work/bma-governance
+- `bma-mission` — https://www.bma.org.uk/about-us/about-the-bma/how-we-work/bma-mission
+- `leadership-at-the-bma` — https://www.bma.org.uk/about-us/about-the-bma/how-we-work/leadership-at-the-bma
+- `contact-us` — https://www.bma.org.uk/about-us/contact-us
+- `bma-advice-form` — https://www.bma.org.uk/about-us/contact-us/bma-advice-form
+- `bma-membership-query-form` — https://www.bma.org.uk/about-us/contact-us/bma-membership-query-form
+- `get-in-touch` — https://www.bma.org.uk/about-us/contact-us/get-in-touch
+- `bma-national-offices` — https://www.bma.org.uk/about-us/contact-us/get-in-touch/bma-national-offices
+- `bma-website-help` — https://www.bma.org.uk/about-us/contact-us/get-in-touch/bma-website-help
+- `contact-us` — https://www.bma.org.uk/about-us/contact-us/get-in-touch/contact-us
+- `find-your-local-representative` — https://www.bma.org.uk/about-us/contact-us/get-in-touch/find-your-local-representative
+- `support-faqs-for-bma-members-in-england` — https://www.bma.org.uk/about-us/contact-us/get-in-touch/support-faqs-for-bma-members-in-england
+- `support-faqs-for-bma-members-in-northern-ireland` — https://www.bma.org.uk/about-us/contact-us/get-in-touch/support-faqs-for-bma-members-in-northern-ireland
+- `support-faqs-for-bma-members-in-scotland` — https://www.bma.org.uk/about-us/contact-us/get-in-touch/support-faqs-for-bma-members-in-scotland
+- `support-faqs-for-bma-members-in-wales` — https://www.bma.org.uk/about-us/contact-us/get-in-touch/support-faqs-for-bma-members-in-wales
+- `corporate-social-environmental-responsibility` — https://www.bma.org.uk/about-us/corporate-social-environmental-responsibility
+- `bma-awards` — https://www.bma.org.uk/about-us/corporate-social-environmental-responsibility/bma-awards
+- `covid-19-memorial` — https://www.bma.org.uk/about-us/corporate-social-environmental-responsibility/cser/covid-19-memorial
+- `environmental-sustainability-and-health-at-the-bma` — https://www.bma.org.uk/about-us/corporate-social-environmental-responsibility/cser/environmental-sustainability-and-health-at-the-bma
+- `our-charitable-and-community-work` — https://www.bma.org.uk/about-us/corporate-social-environmental-responsibility/cser/our-charitable-and-community-work
+- `promoting-workplace-wellbeing-at-the-bma` — https://www.bma.org.uk/about-us/corporate-social-environmental-responsibility/cser/promoting-workplace-wellbeing-at-the-bma
+- `equality-diversity-and-inclusion` — https://www.bma.org.uk/about-us/equality-diversity-and-inclusion
+- `bma-anti-discrimination-statement-2024` — https://www.bma.org.uk/about-us/equality-diversity-and-inclusion/edi/bma-anti-discrimination-statement-2024
+- `bma-dln-network` — https://www.bma.org.uk/about-us/equality-diversity-and-inclusion/edi/bma-dln-network
+- `bma-free` — https://www.bma.org.uk/about-us/equality-diversity-and-inclusion/edi/bma-free
+- `bma-network-of-elected-women` — https://www.bma.org.uk/about-us/equality-diversity-and-inclusion/edi/bma-network-of-elected-women
+- `bma-review-employment-related-services` — https://www.bma.org.uk/about-us/equality-diversity-and-inclusion/edi/bma-review-employment-related-services
+- `bma-women` — https://www.bma.org.uk/about-us/equality-diversity-and-inclusion/edi/bma-women
+- `equality-diversity-and-inclusion-at-the-bma` — https://www.bma.org.uk/about-us/equality-diversity-and-inclusion/edi/equality-diversity-and-inclusion-at-the-bma
+- `proud-bma-network` — https://www.bma.org.uk/about-us/equality-diversity-and-inclusion/edi/proud-bma-network
+- `how-we-can-help` — https://www.bma.org.uk/about-us/how-we-can-help
+- `how-we-can-help` — https://www.bma.org.uk/about-us/how-we-can-help/how-we-can-help
+- `bma-charities-and-the-dain-fund` — https://www.bma.org.uk/about-us/how-we-can-help/how-we-can-help/bma-charities-and-the-dain-fund
+- `acceptable-use-terms` — https://www.bma.org.uk/acceptable-use-terms
+- `advice-and-support` — https://www.bma.org.uk/advice-and-support
+- `bma-law` — https://www.bma.org.uk/advice-and-support/bma-law
+- `career-progression` — https://www.bma.org.uk/advice-and-support/career-progression
+- `best-practice` — https://www.bma.org.uk/advice-and-support/career-progression/best-practice
+- `code-of-practice` — https://www.bma.org.uk/advice-and-support/career-progression/best-practice/code-of-practice
+- `gp-retention-scheme` — https://www.bma.org.uk/advice-and-support/career-progression/best-practice/gp-retention-scheme
+- `medical-appraisals` — https://www.bma.org.uk/advice-and-support/career-progression/best-practice/medical-appraisals
+- `revalidation-for-doctors` — https://www.bma.org.uk/advice-and-support/career-progression/best-practice/revalidation-for-doctors
+- `the-sas-charter` — https://www.bma.org.uk/advice-and-support/career-progression/best-practice/the-sas-charter
+- `valuing-consultants-the-consultant-charter` — https://www.bma.org.uk/advice-and-support/career-progression/best-practice/valuing-consultants-the-consultant-charter
+- `finding-the-right-role` — https://www.bma.org.uk/advice-and-support/career-progression/finding-the-right-role
+- `applying-for-a-specialty-training-post` — https://www.bma.org.uk/advice-and-support/career-progression/finding-the-right-role/applying-for-a-specialty-training-post
+- `applying-to-the-foundation-programme` — https://www.bma.org.uk/advice-and-support/career-progression/finding-the-right-role/applying-to-the-foundation-programme
+- `applying-to-the-specialised-foundation-programme` — https://www.bma.org.uk/advice-and-support/career-progression/finding-the-right-role/applying-to-the-specialised-foundation-programme
+- `doctors-working-as-expert-witnesses` — https://www.bma.org.uk/advice-and-support/career-progression/finding-the-right-role/doctors-working-as-expert-witnesses
+- `preparing-for-a-new-job-as-a-medical-academic` — https://www.bma.org.uk/advice-and-support/career-progression/finding-the-right-role/preparing-for-a-new-job-as-a-medical-academic
+- `returning-to-clinical-practice-after-absence` — https://www.bma.org.uk/advice-and-support/career-progression/finding-the-right-role/returning-to-clinical-practice-after-absence
+- `specialty-explorer` — https://www.bma.org.uk/advice-and-support/career-progression/finding-the-right-role/specialty-explorer
+- `transferring-between-the-nhs-and-university-employment-during-clinical-training` — https://www.bma.org.uk/advice-and-support/career-progression/finding-the-right-role/transferring-between-the-nhs-and-university-employment-during-clinical-training
+- `writing-your-medical-cv` — https://www.bma.org.uk/advice-and-support/career-progression/finding-the-right-role/writing-your-medical-cv
+- `sas-development` — https://www.bma.org.uk/advice-and-support/career-progression/sas-development
+- `sas-week` — https://www.bma.org.uk/advice-and-support/career-progression/sas-development/sas-week
+- `flexibility-in-postgraduate-training-and-changing-specialties` — https://www.bma.org.uk/advice-and-support/career-progression/training/flexibility-in-postgraduate-training-and-changing-specialties
+- `flexible-training` — https://www.bma.org.uk/advice-and-support/career-progression/training/flexible-training
+- `general-practice-workforce-initiatives` — https://www.bma.org.uk/advice-and-support/career-progression/training/general-practice-workforce-initiatives
+- `induction-for-resident-doctors` — https://www.bma.org.uk/advice-and-support/career-progression/training/induction-for-resident-doctors
+- `mentoring-for-doctors` — https://www.bma.org.uk/advice-and-support/career-progression/training/mentoring-for-doctors
+- `sas-professional-development-funding` — https://www.bma.org.uk/advice-and-support/career-progression/training/sas-professional-development-funding
+- `shadowing-for-resident-doctors` — https://www.bma.org.uk/advice-and-support/career-progression/training/shadowing-for-resident-doctors
+- `tips-for-a-successful-handover` — https://www.bma.org.uk/advice-and-support/career-progression/training/tips-for-a-successful-handover
+- `what-the-new-law-means-for-uk-graduate-prioritisation` — https://www.bma.org.uk/advice-and-support/career-progression/training/what-the-new-law-means-for-uk-graduate-prioritisation
+- `working-abroad` — https://www.bma.org.uk/advice-and-support/career-progression/working-abroad
+- `volunteering-abroad-as-a-doctor` — https://www.bma.org.uk/advice-and-support/career-progression/working-abroad/volunteering-abroad-as-a-doctor
+- `working-abroad-as-a-doctor-key-considerations` — https://www.bma.org.uk/advice-and-support/career-progression/working-abroad/working-abroad-as-a-doctor-key-considerations
+- `working-as-a-doctor-in-australia` — https://www.bma.org.uk/advice-and-support/career-progression/working-abroad/working-as-a-doctor-in-australia
+- `working-as-a-doctor-in-canada` — https://www.bma.org.uk/advice-and-support/career-progression/working-abroad/working-as-a-doctor-in-canada
+- `working-as-a-doctor-in-new-zealand` — https://www.bma.org.uk/advice-and-support/career-progression/working-abroad/working-as-a-doctor-in-new-zealand
+- `working-as-a-doctor-in-the-usa` — https://www.bma.org.uk/advice-and-support/career-progression/working-abroad/working-as-a-doctor-in-the-usa
+- `complaints-and-concerns` — https://www.bma.org.uk/advice-and-support/complaints-and-concerns
+- `dealing-with-complaints-made-against-you-personally` — https://www.bma.org.uk/advice-and-support/complaints-and-concerns/complaints/dealing-with-complaints-made-against-you-personally
+- `raising-concerns-and-whistleblowing` — https://www.bma.org.uk/advice-and-support/complaints-and-concerns/raising-concerns-and-whistleblowing
+- `data-and-gdpr-concerns-with-your-employer` — https://www.bma.org.uk/advice-and-support/complaints-and-concerns/raising-concerns-and-whistleblowing/data-and-gdpr-concerns-with-your-employer
+- `duty-of-candour` — https://www.bma.org.uk/advice-and-support/complaints-and-concerns/raising-concerns-and-whistleblowing/duty-of-candour
+- `legislative-reforms-and-whistleblowing` — https://www.bma.org.uk/advice-and-support/complaints-and-concerns/raising-concerns-and-whistleblowing/legislative-reforms-and-whistleblowing
+- `raising-a-concern-guide-for-doctors` — https://www.bma.org.uk/advice-and-support/complaints-and-concerns/raising-concerns-and-whistleblowing/raising-a-concern-guide-for-doctors
+- `raising-concerns-as-a-consultant-under-pressure` — https://www.bma.org.uk/advice-and-support/complaints-and-concerns/raising-concerns-and-whistleblowing/raising-concerns-as-a-consultant-under-pressure
+- `responding-to-concerns-a-guide-for-doctors-who-manage-staff` — https://www.bma.org.uk/advice-and-support/complaints-and-concerns/raising-concerns-and-whistleblowing/responding-to-concerns-a-guide-for-doctors-who-manage-staff
+- `service-complaint-guidance-for-armed-forces-doctors` — https://www.bma.org.uk/advice-and-support/complaints-and-concerns/raising-concerns-and-whistleblowing/service-complaint-guidance-for-armed-forces-doctors
+- `covid-19` — https://www.bma.org.uk/advice-and-support/covid-19
+- `adapting-to-covid` — https://www.bma.org.uk/advice-and-support/covid-19/adapting-to-covid
+- `covid-19-death-certification-and-cremation` — https://www.bma.org.uk/advice-and-support/covid-19/adapting-to-covid/covid-19-death-certification-and-cremation
+- `gp-practices` — https://www.bma.org.uk/advice-and-support/covid-19/gp-practices
+- `covid-19-toolkit-for-gps-and-gp-practices` — https://www.bma.org.uk/advice-and-support/covid-19/gp-practices/covid-19-toolkit-for-gps-and-gp-practices
+- `qof-quality-and-outcomes-framework` — https://www.bma.org.uk/advice-and-support/covid-19/gp-practices/covid-19-toolkit-for-gps-and-gp-practices/qof-quality-and-outcomes-framework
+- `risk-assessment-for-gp-practices-in-england` — https://www.bma.org.uk/advice-and-support/covid-19/gp-practices/covid-19-toolkit-for-gps-and-gp-practices/risk-assessment-for-gp-practices-in-england
+- `covid-19-mandatory-vaccine-guidance` — https://www.bma.org.uk/advice-and-support/covid-19/vaccines/covid-19-mandatory-vaccine-guidance
+- `covid-19-vaccination-programme` — https://www.bma.org.uk/advice-and-support/covid-19/vaccines/covid-19-vaccination-programme
+- `what-the-bma-is-doing` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing
+- `bma-briefing-living-with-covid-19-response` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/bma-briefing-living-with-covid-19-response
+- `bma-closing-oral-statement-to-the-uk-covid-19-inquiry-module-5` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/bma-closing-oral-statement-to-the-uk-covid-19-inquiry-module-5
+- `bma-closing-statement-to-the-uk-covid-19-inquiry-module-4` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/bma-closing-statement-to-the-uk-covid-19-inquiry-module-4
+- `bma-closing-statement-to-the-uk-covid-19-module-1` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/bma-closing-statement-to-the-uk-covid-19-module-1
+- `bma-closing-statement-to-the-uk-covid-19-module-2` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/bma-closing-statement-to-the-uk-covid-19-module-2
+- `bma-closing-statement-to-the-uk-covid-19-module-3` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/bma-closing-statement-to-the-uk-covid-19-module-3
+- `bma-covid-19-review` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/bma-covid-19-review
+- `bma-engagement-with-the-scottish-covid-19-inquiry` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/bma-engagement-with-the-scottish-covid-19-inquiry
+- `bma-engagement-with-the-uk-covid-19-inquiry` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/bma-engagement-with-the-uk-covid-19-inquiry
+- `bma-opening-oral-statement-to-the-uk-covid-19-inquiry-module-4` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/bma-opening-oral-statement-to-the-uk-covid-19-inquiry-module-4
+- `bma-opening-statement-to-the-uk-covid-19-inquiry-module-5` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/bma-opening-statement-to-the-uk-covid-19-inquiry-module-5
+- `bma-opening-statement-to-the-uk-covid-19-module-1` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/bma-opening-statement-to-the-uk-covid-19-module-1
+- `bma-opening-statement-to-the-uk-covid-19-module-2` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/bma-opening-statement-to-the-uk-covid-19-module-2
+- `bma-opening-statement-to-the-uk-covid-19-module-3` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/bma-opening-statement-to-the-uk-covid-19-module-3
+- `covid-19-analysing-the-impact-of-coronavirus-on-doctors` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/covid-19-analysing-the-impact-of-coronavirus-on-doctors
+- `covid-19-bma-actions-and-policy` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/covid-19-bma-actions-and-policy
+- `covid-19-changes-to-specialty-training-recruitment` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/covid-19-bma-actions-and-policy/covid-19-changes-to-specialty-training-recruitment
+- `covid-19-bma-priorities` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/covid-19-bma-priorities
+- `covid-19-how-well-protected-was-the-medical-profession` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/covid-19-how-well-protected-was-the-medical-profession
+- `covid-19-impact-of-the-pandemic-on-healthcare-delivery` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/covid-19-impact-of-the-pandemic-on-healthcare-delivery
+- `covid-19-the-impact-of-the-pandemic-on-the-medical-profession` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/covid-19-the-impact-of-the-pandemic-on-the-medical-profession
+- `the-impact-of-the-pandemic-on-population-health-and-health-inequalities` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/the-impact-of-the-pandemic-on-population-health-and-health-inequalities
+- `the-public-health-response-by-uk-governments-to-covid-19` — https://www.bma.org.uk/advice-and-support/covid-19/what-the-bma-is-doing/the-public-health-response-by-uk-governments-to-covid-19
+- `your-contract` — https://www.bma.org.uk/advice-and-support/covid-19/your-contract
+- `covid-19-terms-and-conditions-sessional-gps` — https://www.bma.org.uk/advice-and-support/covid-19/your-contract/covid-19-terms-and-conditions-sessional-gps
+- `your-health` — https://www.bma.org.uk/advice-and-support/covid-19/your-health
+- `covid-19-doctors-isolating-and-those-in-vulnerable-groups` — https://www.bma.org.uk/advice-and-support/covid-19/your-health/covid-19-doctors-isolating-and-those-in-vulnerable-groups
+- `covid-19-life-assurance-scheme` — https://www.bma.org.uk/advice-and-support/covid-19/your-health/covid-19-life-assurance-scheme
+- `covid-19-long-covid-support-for-doctors` — https://www.bma.org.uk/advice-and-support/covid-19/your-health/covid-19-long-covid-support-for-doctors
+- `equality-and-diversity-guidance` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance
+- `bullying-and-harassment-guidance` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/bullying-and-harassment-guidance
+- `bullying-and-harassment-report-policy-research-and-recommendations` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/bullying-and-harassment-guidance/bullying-and-harassment-report-policy-research-and-recommendations
+- `bullying-and-harassment-support-resources` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/bullying-and-harassment-guidance/bullying-and-harassment-support-resources
+- `impact-of-bullying-and-harassment` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/bullying-and-harassment-guidance/impact-of-bullying-and-harassment
+- `promoting-a-positive-working-environment` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/bullying-and-harassment-guidance/promoting-a-positive-working-environment
+- `disability-equality-in-medicine` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/disability-equality-in-medicine
+- `disability-and-neurodivergence-in-the-medical-profession` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/disability-equality-in-medicine/disability-and-neurodivergence-in-the-medical-profession
+- `disability-equality-in-medicine` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/disability-equality-in-medicine/disability-equality-in-medicine
+- `discussing-disability-in-the-workplace` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/disability-equality-in-medicine/discussing-disability-in-the-workplace
+- `discrimination-guidance` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/discrimination-guidance
+- `are-you-a-good-employer` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/discrimination-guidance/are-you-a-good-employer
+- `discrimination-advice-for-doctors` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/discrimination-guidance/discrimination-advice-for-doctors
+- `managing-discrimination-from-patients-and-their-guardians-and-relatives` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/discrimination-guidance/managing-discrimination-from-patients-and-their-guardians-and-relatives
+- `further-resources` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/discrimination-guidance/managing-discrimination-from-patients-and-their-guardians-and-relatives/further-resources
+- `steps-for-any-worker` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/discrimination-guidance/managing-discrimination-from-patients-and-their-guardians-and-relatives/steps-for-any-worker
+- `steps-for-employers` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/discrimination-guidance/managing-discrimination-from-patients-and-their-guardians-and-relatives/steps-for-employers
+- `steps-for-gps` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/discrimination-guidance/managing-discrimination-from-patients-and-their-guardians-and-relatives/steps-for-gps
+- `faith-equality-in-medicine` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/faith-equality-in-medicine
+- `faith-equality-in-medicine` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/faith-equality-in-medicine/faith-equality-in-medicine
+- `freedom-of-expression` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/freedom-of-expression
+- `freedom-of-expression-guidance` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/freedom-of-expression/freedom-of-expression-guidance
+- `gender-equality-in-medicine` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/gender-equality-in-medicine
+- `a-joint-pledge-to-end-sexism-in-medicine` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/gender-equality-in-medicine/a-joint-pledge-to-end-sexism-in-medicine
+- `challenging-the-culture-on-menopause-for-working-doctors-report` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/gender-equality-in-medicine/challenging-the-culture-on-menopause-for-working-doctors-report
+- `menopause-support-in-the-workplace` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/gender-equality-in-medicine/menopause-support-in-the-workplace
+- `sexism-and-sexual-violence-towards-medical-students` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/gender-equality-in-medicine/sexism-and-sexual-violence-towards-medical-students
+- `sexism-in-medicine-report` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/gender-equality-in-medicine/sexism-in-medicine-report
+- `sexual-misconduct-at-work` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/gender-equality-in-medicine/sexual-misconduct-at-work
+- `lgbtplus-equality-in-medicine` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/lgbtplus-equality-in-medicine
+- `inclusive-care-of-trans-and-non-binary-patients` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/lgbtplus-equality-in-medicine/inclusive-care-of-trans-and-non-binary-patients
+- `lgbtqplus-equality-in-medicine` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/lgbtplus-equality-in-medicine/lgbtqplus-equality-in-medicine
+- `policy-position-on-the-rights-of-transgender-and-non-binary-people-in-healthcare-settings` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/lgbtplus-equality-in-medicine/policy-position-on-the-rights-of-transgender-and-non-binary-people-in-healthcare-settings
+- `race-equality-in-medicine` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/race-equality-in-medicine
+- `delivering-racial-equality-in-medicine` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/race-equality-in-medicine/delivering-racial-equality-in-medicine
+- `race-inequalities-and-ethnic-disparities-in-healthcare` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/race-equality-in-medicine/race-inequalities-and-ethnic-disparities-in-healthcare
+- `racial-harassment-charter-for-medical-schools` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/race-equality-in-medicine/racial-harassment-charter-for-medical-schools
+- `racial-harassment-guidance-for-medical-students` — https://www.bma.org.uk/advice-and-support/equality-and-diversity-guidance/race-equality-in-medicine/racial-harassment-guidance-for-medical-students
+- `the-law-and-ethics-of-abortion` — https://www.bma.org.uk/advice-and-support/ethics/abortion/the-law-and-ethics-of-abortion
+- `adults-who-lack-capacity` — https://www.bma.org.uk/advice-and-support/ethics/adults-who-lack-capacity
+- `adults-with-incapacity-in-scotland` — https://www.bma.org.uk/advice-and-support/ethics/adults-who-lack-capacity/adults-with-incapacity-in-scotland
+- `best-interests-decision-making-for-adults-who-lack-capacity-toolkit` — https://www.bma.org.uk/advice-and-support/ethics/adults-who-lack-capacity/best-interests-decision-making-for-adults-who-lack-capacity-toolkit
+- `clinically-assisted-nutrition-and-hydration` — https://www.bma.org.uk/advice-and-support/ethics/adults-who-lack-capacity/clinically-assisted-nutrition-and-hydration
+- `clinically-assisted-nutrition-and-hydration-case-study-one` — https://www.bma.org.uk/advice-and-support/ethics/adults-who-lack-capacity/clinically-assisted-nutrition-and-hydration/clinically-assisted-nutrition-and-hydration-case-study-one
+- `clinically-assisted-nutrition-and-hydration-case-study-three` — https://www.bma.org.uk/advice-and-support/ethics/adults-who-lack-capacity/clinically-assisted-nutrition-and-hydration/clinically-assisted-nutrition-and-hydration-case-study-three
+- `clinically-assisted-nutrition-and-hydration-case-study-two` — https://www.bma.org.uk/advice-and-support/ethics/adults-who-lack-capacity/clinically-assisted-nutrition-and-hydration/clinically-assisted-nutrition-and-hydration-case-study-two
+- `deciding-best-interests` — https://www.bma.org.uk/advice-and-support/ethics/adults-who-lack-capacity/clinically-assisted-nutrition-and-hydration/deciding-best-interests
+- `information-for-healthcare-providers-funders-and-managers` — https://www.bma.org.uk/advice-and-support/ethics/adults-who-lack-capacity/clinically-assisted-nutrition-and-hydration/information-for-healthcare-providers-funders-and-managers
+- `information-leaflet-for-families` — https://www.bma.org.uk/advice-and-support/ethics/adults-who-lack-capacity/clinically-assisted-nutrition-and-hydration/information-leaflet-for-families
+- `the-decision-making-process` — https://www.bma.org.uk/advice-and-support/ethics/adults-who-lack-capacity/clinically-assisted-nutrition-and-hydration/the-decision-making-process
+- `training-materials` — https://www.bma.org.uk/advice-and-support/ethics/adults-who-lack-capacity/clinically-assisted-nutrition-and-hydration/training-materials
+- `mental-capacity-in-england-and-wales` — https://www.bma.org.uk/advice-and-support/ethics/adults-who-lack-capacity/mental-capacity-in-england-and-wales
+- `mental-capacity-in-northern-ireland` — https://www.bma.org.uk/advice-and-support/ethics/adults-who-lack-capacity/mental-capacity-in-northern-ireland
+- `needlestick-injuries-and-blood-borne-viruses` — https://www.bma.org.uk/advice-and-support/ethics/adults-who-lack-capacity/needlestick-injuries-and-blood-borne-viruses
+- `taking-blood-specimens-from-incapacitated-drivers` — https://www.bma.org.uk/advice-and-support/ethics/adults-who-lack-capacity/taking-blood-specimens-from-incapacitated-drivers
+- `approaching-an-ethical-question` — https://www.bma.org.uk/advice-and-support/ethics/approaching-an-ethical-question
+- `how-to-approach-an-ethical-question` — https://www.bma.org.uk/advice-and-support/ethics/approaching-an-ethical-question/how-to-approach-an-ethical-question
+- `children-and-young-people` — https://www.bma.org.uk/advice-and-support/ethics/children-and-young-people
+- `children-and-young-people-under-16` — https://www.bma.org.uk/advice-and-support/ethics/children-and-young-people/children-and-young-people-under-16
+- `treating-16-and-17-year-olds-in-england-wales-and-northern-ireland` — https://www.bma.org.uk/advice-and-support/ethics/children-and-young-people/treating-16-and-17-year-olds-in-england-wales-and-northern-ireland
+- `treating-16-and-17-year-olds-in-scotland` — https://www.bma.org.uk/advice-and-support/ethics/children-and-young-people/treating-16-and-17-year-olds-in-scotland
+- `confidentiality-and-health-records` — https://www.bma.org.uk/advice-and-support/ethics/confidentiality-and-health-records
+- `access-to-health-records` — https://www.bma.org.uk/advice-and-support/ethics/confidentiality-and-health-records/access-to-health-records
+- `confidentiality-and-crimes-related-to-abortion` — https://www.bma.org.uk/advice-and-support/ethics/confidentiality-and-health-records/confidentiality-and-crimes-related-to-abortion
+- `confidentiality-and-health-records-toolkit` — https://www.bma.org.uk/advice-and-support/ethics/confidentiality-and-health-records/confidentiality-and-health-records-toolkit
+- `doctors-responsibilities-with-anti-radicalisation-strategy` — https://www.bma.org.uk/advice-and-support/ethics/confidentiality-and-health-records/doctors-responsibilities-with-anti-radicalisation-strategy
+- `gdpr-privacy-notices-for-gp-practices` — https://www.bma.org.uk/advice-and-support/ethics/confidentiality-and-health-records/gdpr-privacy-notices-for-gp-practices
+- `giving-patients-access-to-medical-reports` — https://www.bma.org.uk/advice-and-support/ethics/confidentiality-and-health-records/giving-patients-access-to-medical-reports
+- `gps-as-data-controllers-under-uk-gdpr` — https://www.bma.org.uk/advice-and-support/ethics/confidentiality-and-health-records/gps-as-data-controllers-under-uk-gdpr
+- `nhsx-data-strategy-briefing` — https://www.bma.org.uk/advice-and-support/ethics/confidentiality-and-health-records/nhsx-data-strategy-briefing
+- `patients-recording-consultations` — https://www.bma.org.uk/advice-and-support/ethics/confidentiality-and-health-records/patients-recording-consultations
+- `requests-for-medical-information-from-insurers` — https://www.bma.org.uk/advice-and-support/ethics/confidentiality-and-health-records/requests-for-medical-information-from-insurers
+- `retention-of-health-records` — https://www.bma.org.uk/advice-and-support/ethics/confidentiality-and-health-records/retention-of-health-records
+- `sharing-electronic-patient-records-for-direct-patient-care` — https://www.bma.org.uk/advice-and-support/ethics/confidentiality-and-health-records/sharing-electronic-patient-records-for-direct-patient-care
+- `core-ethics` — https://www.bma.org.uk/advice-and-support/ethics/core-ethics
+- *(+3158 more)*
 
-## MTD & digital tax (17 gap topics, 19 competitor pages)
+## dma-accountancyservices.co.uk (553 gap candidates)
 
-- **[x3]** `making-tax-digital-for-income-tax`
-  - r-m-t.co.uk: https://r-m-t.co.uk/tax-compliance/making-tax-digital-for-income-tax/
-  - hawsons.co.uk: https://www.hawsons.co.uk/making-tax-digital-for-income-tax/
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/making-tax-digital-for-income-tax/
-- [x1] `from-paperwork-to-digital-records-navigating-the-transition-to-mtd-for-income-tax`
-  - azets.com: https://www.azets.com/en-uk/resources/from-paperwork-to-digital-records-navigating-the-transition-to-mtd-for-income-tax
-- [x1] `higher-penalties-for-mtd-filers`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/higher-penalties-for-mtd-filers/
-- [x1] `less-than-a-year-before-mtd-for-income-tax-starts`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/less-than-a-year-before-mtd-for-income-tax-starts/
-- [x1] `making-tax-digital`
-  - ramsaybrown.com: https://ramsaybrown.com/podcast/making-tax-digital/
-- [x1] `making-tax-digital-for-farmers-one-year-reprieve`
-  - hawsons.co.uk: https://www.hawsons.co.uk/making-tax-digital-for-farmers-one-year-reprieve/
-- [x1] `making-tax-digital-for-income-tax-volunteers`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/making-tax-digital-for-income-tax-volunteers/
-- [x1] `making-tax-digital-mtd`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/making-tax-digital-mtd/
-- [x1] `making-tax-digital-the-next-step`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/making-tax-digital-the-next-step/
-- [x1] `making-tax-digital-which-software-to-use`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/making-tax-digital-which-software-to-use/
-- [x1] `mtd-for-income-tax-draws-closer`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/mtd-for-income-tax-draws-closer/
-- [x1] `mtd-for-income-tax-guide`
-  - azets.com: https://www.azets.com/en-uk/resources/guides/mtd-for-income-tax-guide
-- [x1] `mtd-making-tax-digital-the-first-stage-commences`
-  - jcssutton.co.uk: https://www.jcssutton.co.uk/news/blog/mtd-making-tax-digital-the-first-stage-commences/
-- [x1] `mtd-qualifying-income`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/mtd-qualifying-income/
-- [x1] `qualifying-income-for-making-tax-digital`
-  - azets.com: https://www.azets.com/en-uk/resources/qualifying-income-for-making-tax-digital
-- [x1] `what-is-mtd-for-income-tax`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/what-is-mtd-for-income-tax/
-- [x1] `what-needs-to-be-reported-under-mtd-for-income-tax`
-  - azets.com: https://www.azets.com/en-uk/resources/what-needs-to-be-reported-under-mtd-for-income-tax
+- `abbots-morton` — https://dma-accountancyservices.co.uk/abbots-morton/
+- `abbots-ripton` — https://dma-accountancyservices.co.uk/abbots-ripton/
+- `abinger-hammer` — https://dma-accountancyservices.co.uk/abinger-hammer/
+- `abington-pigotts` — https://dma-accountancyservices.co.uk/abington-pigotts/
+- `ainderby-steeple` — https://dma-accountancyservices.co.uk/ainderby-steeple/
+- `all-saints-south-elmham` — https://dma-accountancyservices.co.uk/all-saints-south-elmham/
+- `all-stretton` — https://dma-accountancyservices.co.uk/all-stretton/
+- `amber-hill` — https://dma-accountancyservices.co.uk/amber-hill/
+- `ampney-st-mary` — https://dma-accountancyservices.co.uk/ampney-st-mary/
+- `appleton-le-moors` — https://dma-accountancyservices.co.uk/appleton-le-moors/
+- `appleton-le-street` — https://dma-accountancyservices.co.uk/appleton-le-street/
+- `ash-priors` — https://dma-accountancyservices.co.uk/ash-priors/
+- `ash-street` — https://dma-accountancyservices.co.uk/ash-street/
+- `ashby-cum-fenby` — https://dma-accountancyservices.co.uk/ashby-cum-fenby/
+- `ashby-parva` — https://dma-accountancyservices.co.uk/ashby-parva/
+- `ashby-st-ledgers` — https://dma-accountancyservices.co.uk/ashby-st-ledgers/
+- `ashby-st-mary` — https://dma-accountancyservices.co.uk/ashby-st-mary/
+- `ashfield-cum-thorpe` — https://dma-accountancyservices.co.uk/ashfield-cum-thorpe/
+- `aston-eyre` — https://dma-accountancyservices.co.uk/aston-eyre/
+- `aston-flamville` — https://dma-accountancyservices.co.uk/aston-flamville/
+- `aston-juxta-mondrum` — https://dma-accountancyservices.co.uk/aston-juxta-mondrum/
+- `aston-subedge` — https://dma-accountancyservices.co.uk/aston-subedge/
+- `aston-upthorpe` — https://dma-accountancyservices.co.uk/aston-upthorpe/
+- `avon-dassett` — https://dma-accountancyservices.co.uk/avon-dassett/
+- `ayot-st-peter` — https://dma-accountancyservices.co.uk/ayot-st-peter/
+- `aythorpe-roding` — https://dma-accountancyservices.co.uk/aythorpe-roding/
+- `back-street` — https://dma-accountancyservices.co.uk/back-street/
+- `bardfield-saling` — https://dma-accountancyservices.co.uk/bardfield-saling/
+- `barnby-in-the-willows` — https://dma-accountancyservices.co.uk/barnby-in-the-willows/
+- `barnby-moor` — https://dma-accountancyservices.co.uk/barnby-moor/
+- `barroway-drove` — https://dma-accountancyservices.co.uk/barroway-drove/
+- `barton-bendish` — https://dma-accountancyservices.co.uk/barton-bendish/
+- `barton-in-fabis` — https://dma-accountancyservices.co.uk/barton-in-fabis/
+- `barton-le-street` — https://dma-accountancyservices.co.uk/barton-le-street/
+- `barton-le-willows` — https://dma-accountancyservices.co.uk/barton-le-willows/
+- `bashall-eaves` — https://dma-accountancyservices.co.uk/bashall-eaves/
+- `beech-hill` — https://dma-accountancyservices.co.uk/beech-hill/
+- `belchamp-otten` — https://dma-accountancyservices.co.uk/belchamp-otten/
+- `belchamp-walter` — https://dma-accountancyservices.co.uk/belchamp-walter/
+- `berrick-salome` — https://dma-accountancyservices.co.uk/berrick-salome/
+- `berrys-green` — https://dma-accountancyservices.co.uk/berrys-green/
+- `berwick-st-james` — https://dma-accountancyservices.co.uk/berwick-st-james/
+- `bettws-y-crwyn` — https://dma-accountancyservices.co.uk/bettws-y-crwyn/
+- `betws-garmon` — https://dma-accountancyservices.co.uk/betws-garmon/
+- `bigbury-on-sea` — https://dma-accountancyservices.co.uk/bigbury-on-sea/
+- `bishop-norton` — https://dma-accountancyservices.co.uk/bishop-norton/
+- `black-bourton` — https://dma-accountancyservices.co.uk/black-bourton/
+- `blackborough-end` — https://dma-accountancyservices.co.uk/blackborough-end/
+- `bleasby-moor` — https://dma-accountancyservices.co.uk/bleasby-moor/
+- `blyth-bridge` — https://dma-accountancyservices.co.uk/blyth-bridge/
+- `bolton-percy` — https://dma-accountancyservices.co.uk/bolton-percy/
+- `boothby-graffoe` — https://dma-accountancyservices.co.uk/boothby-graffoe/
+- `boys-hill` — https://dma-accountancyservices.co.uk/boys-hill/
+- `bradfield-combust` — https://dma-accountancyservices.co.uk/bradfield-combust/
+- `bradfield-st-clare` — https://dma-accountancyservices.co.uk/bradfield-st-clare/
+- `brampton-abbotts` — https://dma-accountancyservices.co.uk/brampton-abbotts/
+- `bratton-seymour` — https://dma-accountancyservices.co.uk/bratton-seymour/
+- `brightwell-baldwin` — https://dma-accountancyservices.co.uk/brightwell-baldwin/
+- `britwell-salome` — https://dma-accountancyservices.co.uk/britwell-salome/
+- `broad-street` — https://dma-accountancyservices.co.uk/broad-street/
+- `brompton-ralph` — https://dma-accountancyservices.co.uk/brompton-ralph/
+- `broughton-hackett` — https://dma-accountancyservices.co.uk/broughton-hackett/
+- `brown-candover` — https://dma-accountancyservices.co.uk/brown-candover/
+- `burgh-on-bain` — https://dma-accountancyservices.co.uk/burgh-on-bain/
+- `burgh-st-peter` — https://dma-accountancyservices.co.uk/burgh-st-peter/
+- `burton-constable` — https://dma-accountancyservices.co.uk/burton-constable/
+- `burton-pedwardine` — https://dma-accountancyservices.co.uk/burton-pedwardine/
+- `caistor-st-edmund` — https://dma-accountancyservices.co.uk/caistor-st-edmund/
+- `capel-bangor` — https://dma-accountancyservices.co.uk/capel-bangor/
+- `capel-curig` — https://dma-accountancyservices.co.uk/capel-curig/
+- `carlton-husthwaite` — https://dma-accountancyservices.co.uk/carlton-husthwaite/
+- `carlton-on-trent` — https://dma-accountancyservices.co.uk/carlton-on-trent/
+- `carlton-scroop` — https://dma-accountancyservices.co.uk/carlton-scroop/
+- `cartmel-fell` — https://dma-accountancyservices.co.uk/cartmel-fell/
+- `castle-ashby` — https://dma-accountancyservices.co.uk/castle-ashby/
+- `castle-eaton` — https://dma-accountancyservices.co.uk/castle-eaton/
+- `castle-rising` — https://dma-accountancyservices.co.uk/castle-rising/
+- `charney-bassett` — https://dma-accountancyservices.co.uk/charney-bassett/
+- `chignall-smealy` — https://dma-accountancyservices.co.uk/chignall-smealy/
+- `chilton-trinity` — https://dma-accountancyservices.co.uk/chilton-trinity/
+- `church-brampton` — https://dma-accountancyservices.co.uk/church-brampton/
+- `church-knowle` — https://dma-accountancyservices.co.uk/church-knowle/
+- `church-lench` — https://dma-accountancyservices.co.uk/church-lench/
+- `chute-forest` — https://dma-accountancyservices.co.uk/chute-forest/
+- `clara-vale` — https://dma-accountancyservices.co.uk/clara-vale/
+- `clarbeston-road` — https://dma-accountancyservices.co.uk/clarbeston-road/
+- `clay-coton` — https://dma-accountancyservices.co.uk/clay-coton/
+- `clee-st-margaret` — https://dma-accountancyservices.co.uk/clee-st-margaret/
+- `close-house` — https://dma-accountancyservices.co.uk/close-house/
+- `clyffe-pypard` — https://dma-accountancyservices.co.uk/clyffe-pypard/
+- `clyst-honiton` — https://dma-accountancyservices.co.uk/clyst-honiton/
+- `coatham-mundeville` — https://dma-accountancyservices.co.uk/coatham-mundeville/
+- `cockley-cley` — https://dma-accountancyservices.co.uk/cockley-cley/
+- `colaton-raleigh` — https://dma-accountancyservices.co.uk/colaton-raleigh/
+- `cold-ashby` — https://dma-accountancyservices.co.uk/cold-ashby/
+- `cold-ashton` — https://dma-accountancyservices.co.uk/cold-ashton/
+- `cold-harbour` — https://dma-accountancyservices.co.uk/cold-harbour/
+- `cold-higham` — https://dma-accountancyservices.co.uk/cold-higham/
+- `coln-st-aldwyns` — https://dma-accountancyservices.co.uk/coln-st-aldwyns/
+- `combe-florey` — https://dma-accountancyservices.co.uk/combe-florey/
+- `combe-hay` — https://dma-accountancyservices.co.uk/combe-hay/
+- `compton-abbas` — https://dma-accountancyservices.co.uk/compton-abbas/
+- `compton-abdale` — https://dma-accountancyservices.co.uk/compton-abdale/
+- `compton-chamberlayne` — https://dma-accountancyservices.co.uk/compton-chamberlayne/
+- `compton-pauncefoot` — https://dma-accountancyservices.co.uk/compton-pauncefoot/
+- `coniston-cold` — https://dma-accountancyservices.co.uk/coniston-cold/
+- `constable-burton` — https://dma-accountancyservices.co.uk/constable-burton/
+- `cores-end` — https://dma-accountancyservices.co.uk/cores-end/
+- `corton-denham` — https://dma-accountancyservices.co.uk/corton-denham/
+- `covenham-st-bartholomew` — https://dma-accountancyservices.co.uk/covenham-st-bartholomew/
+- `creeting-st-peter` — https://dma-accountancyservices.co.uk/creeting-st-peter/
+- `crewe-green` — https://dma-accountancyservices.co.uk/crewe-green/
+- `crockham-hill` — https://dma-accountancyservices.co.uk/crockham-hill/
+- `crosby-garrett` — https://dma-accountancyservices.co.uk/crosby-garrett/
+- `cuddington-heath` — https://dma-accountancyservices.co.uk/cuddington-heath/
+- `curry-mallet` — https://dma-accountancyservices.co.uk/curry-mallet/
+- `daddry-shield` — https://dma-accountancyservices.co.uk/daddry-shield/
+- `dalton-on-tees` — https://dma-accountancyservices.co.uk/dalton-on-tees/
+- `donhead-st-mary` — https://dma-accountancyservices.co.uk/donhead-st-mary/
+- `dowlish-wake` — https://dma-accountancyservices.co.uk/dowlish-wake/
+- `down-st-mary` — https://dma-accountancyservices.co.uk/down-st-mary/
+- `drayton-beauchamp` — https://dma-accountancyservices.co.uk/drayton-beauchamp/
+- `drayton-st-leonard` — https://dma-accountancyservices.co.uk/drayton-st-leonard/
+- `dulnain-bridge` — https://dma-accountancyservices.co.uk/dulnain-bridge/
+- `duntisbourne-abbots` — https://dma-accountancyservices.co.uk/duntisbourne-abbots/
+- `eagland-hill` — https://dma-accountancyservices.co.uk/eagland-hill/
+- `east-carlton` — https://dma-accountancyservices.co.uk/east-carlton/
+- `east-challow` — https://dma-accountancyservices.co.uk/east-challow/
+- `east-clandon` — https://dma-accountancyservices.co.uk/east-clandon/
+- `east-compton` — https://dma-accountancyservices.co.uk/east-compton/
+- `east-dean` — https://dma-accountancyservices.co.uk/east-dean/
+- `east-drayton` — https://dma-accountancyservices.co.uk/east-drayton/
+- `east-end` — https://dma-accountancyservices.co.uk/east-end/
+- `east-farndon` — https://dma-accountancyservices.co.uk/east-farndon/
+- `east-ferry` — https://dma-accountancyservices.co.uk/east-ferry/
+- `east-grimstead` — https://dma-accountancyservices.co.uk/east-grimstead/
+- `east-guldeford` — https://dma-accountancyservices.co.uk/east-guldeford/
+- `east-harlsey` — https://dma-accountancyservices.co.uk/east-harlsey/
+- `east-hauxwell` — https://dma-accountancyservices.co.uk/east-hauxwell/
+- `east-lavington` — https://dma-accountancyservices.co.uk/east-lavington/
+- `east-layton` — https://dma-accountancyservices.co.uk/east-layton/
+- `east-lulworth` — https://dma-accountancyservices.co.uk/east-lulworth/
+- `east-mersea` — https://dma-accountancyservices.co.uk/east-mersea/
+- `east-morden` — https://dma-accountancyservices.co.uk/east-morden/
+- `east-quantoxhead` — https://dma-accountancyservices.co.uk/east-quantoxhead/
+- `east-ravendale` — https://dma-accountancyservices.co.uk/east-ravendale/
+- `east-raynham` — https://dma-accountancyservices.co.uk/east-raynham/
+- `east-somerton` — https://dma-accountancyservices.co.uk/east-somerton/
+- `east-stockwith` — https://dma-accountancyservices.co.uk/east-stockwith/
+- `east-stoke` — https://dma-accountancyservices.co.uk/east-stoke/
+- `east-stourmouth` — https://dma-accountancyservices.co.uk/east-stourmouth/
+- `east-stratton` — https://dma-accountancyservices.co.uk/east-stratton/
+- `east-tisted` — https://dma-accountancyservices.co.uk/east-tisted/
+- `east-torrington` — https://dma-accountancyservices.co.uk/east-torrington/
+- `east-witton` — https://dma-accountancyservices.co.uk/east-witton/
+- `easter-compton` — https://dma-accountancyservices.co.uk/easter-compton/
+- `eastleach-martin` — https://dma-accountancyservices.co.uk/eastleach-martin/
+- `ebbesbourne-wake` — https://dma-accountancyservices.co.uk/ebbesbourne-wake/
+- `ellerton-on-swale` — https://dma-accountancyservices.co.uk/ellerton-on-swale/
+- `enton-green` — https://dma-accountancyservices.co.uk/enton-green/
+- `fakenham-magna` — https://dma-accountancyservices.co.uk/fakenham-magna/
+- `fawkham-green` — https://dma-accountancyservices.co.uk/fawkham-green/
+- `fenny-bentley` — https://dma-accountancyservices.co.uk/fenny-bentley/
+- `fenstead-end` — https://dma-accountancyservices.co.uk/fenstead-end/
+- `field-dalling` — https://dma-accountancyservices.co.uk/field-dalling/
+- `fir-tree` — https://dma-accountancyservices.co.uk/fir-tree/
+- `foals-green` — https://dma-accountancyservices.co.uk/foals-green/
+- `fonthill-gifford` — https://dma-accountancyservices.co.uk/fonthill-gifford/
+- `fornham-st-genevieve` — https://dma-accountancyservices.co.uk/fornham-st-genevieve/
+- `foston-on-the-wolds` — https://dma-accountancyservices.co.uk/foston-on-the-wolds/
+- `four-lane-ends` — https://dma-accountancyservices.co.uk/four-lane-ends/
+- `framingham-pigot` — https://dma-accountancyservices.co.uk/framingham-pigot/
+- `freshwater-east` — https://dma-accountancyservices.co.uk/freshwater-east/
+- `frome-st-quintin` — https://dma-accountancyservices.co.uk/frome-st-quintin/
+- `garsdale-head` — https://dma-accountancyservices.co.uk/garsdale-head/
+- `gate-helmsley` — https://dma-accountancyservices.co.uk/gate-helmsley/
+- `gayton-le-marsh` — https://dma-accountancyservices.co.uk/gayton-le-marsh/
+- `gayton-le-wold` — https://dma-accountancyservices.co.uk/gayton-le-wold/
+- `gipsy-row` — https://dma-accountancyservices.co.uk/gipsy-row/
+- `glanvilles-wootton` — https://dma-accountancyservices.co.uk/glanvilles-wootton/
+- `gorcott-hill` — https://dma-accountancyservices.co.uk/gorcott-hill/
+- `grafton-regis` — https://dma-accountancyservices.co.uk/grafton-regis/
+- `grafton-underwood` — https://dma-accountancyservices.co.uk/grafton-underwood/
+- `great-addington` — https://dma-accountancyservices.co.uk/great-addington/
+- `great-altcar` — https://dma-accountancyservices.co.uk/great-altcar/
+- `great-barrington` — https://dma-accountancyservices.co.uk/great-barrington/
+- `great-bealings` — https://dma-accountancyservices.co.uk/great-bealings/
+- `great-bolas` — https://dma-accountancyservices.co.uk/great-bolas/
+- `great-burdon` — https://dma-accountancyservices.co.uk/great-burdon/
+- `great-carlton` — https://dma-accountancyservices.co.uk/great-carlton/
+- `great-comberton` — https://dma-accountancyservices.co.uk/great-comberton/
+- `great-coxwell` — https://dma-accountancyservices.co.uk/great-coxwell/
+- `great-dunham` — https://dma-accountancyservices.co.uk/great-dunham/
+- `great-elm` — https://dma-accountancyservices.co.uk/great-elm/
+- `great-eversden` — https://dma-accountancyservices.co.uk/great-eversden/
+- `great-harrowden` — https://dma-accountancyservices.co.uk/great-harrowden/
+- `great-henny` — https://dma-accountancyservices.co.uk/great-henny/
+- `great-hinton` — https://dma-accountancyservices.co.uk/great-hinton/
+- `great-langton` — https://dma-accountancyservices.co.uk/great-langton/
+- `great-limber` — https://dma-accountancyservices.co.uk/great-limber/
+- *(+353 more)*
 
-## PCN & primary care networks (19 gap topics, 19 competitor pages)
+## thomasbarrie.co.uk (138 gap candidates)
 
-- [x1] `azets-konserni-ilmoittaa-kahdesta-uudesta-johtajanimityksesta`
-  - azets.com: https://www.azets.com/fi-fi/ajankohtaista/uutishuone/azets-konserni-ilmoittaa-kahdesta-uudesta-johtajanimityksesta
-- [x1] `being-a-ux-designer-in-azets`
-  - azets.com: https://www.azets.com/en/resources/being-a-ux-designer-in-azets
-- [x1] `bma-the-primary-care-network-handbook`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/library/documents-checklists/bma-the-primary-care-network-handbook
-- [x1] `brochures-guides`
-  - hawsons.co.uk: https://www.hawsons.co.uk/brochures-guides/
-- [x1] `deal-success-provides-boost-for-advisory-firm-rmt`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/deal-success-provides-boost-for-advisory-firm-rmt/
-- [x1] `designating-a-property-as-your-main-residence`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/designating-a-property-as-your-main-residence/
-- [x1] `despre-noi`
-  - azets.com: https://www.azets.com/ro-ro/despre-noi
-- [x1] `divi-login-designer`
-  - hawsons.co.uk: https://www.hawsons.co.uk/divi-login-designer/
-- [x1] `erlend-moldestad`
-  - azets.com: https://www.azets.com/no-no/v%C3%A5re-folk/erlend-moldestad
-- [x1] `gp-contact-agreement-for-201920-are-these-widespread-changes-the-game-changer`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/gp-contact-agreement-for-201920-are-these-widespread-changes-the-game-changer
-- [x1] `guides-resources`
-  - ramsaybrown.com: https://ramsaybrown.com/guides-resources/
-- [x1] `more-about-emergency-tax-codes`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/more-about-emergency-tax-codes/
-- [x1] `pcns-roles-in-the-future-nhs`
-  - ramsaybrown.com: https://ramsaybrown.com/pcns-roles-in-the-future-nhs/
-- [x1] `primary-care-network-support`
-  - ramsaybrown.com: https://ramsaybrown.com/service/primary-care-network-support/
-- [x1] `skattestyrelsen-kadesvig`
-  - azets.com: https://www.azets.com/da-dk/ressourcer/blog/skattestyrelsen-kadesvig
-- [x1] `smaller-law-firms-hardest-hit-by-lockdown`
-  - hawsons.co.uk: https://www.hawsons.co.uk/smaller-law-firms-hardest-hit-by-lockdown/
-- [x1] `u-turn-excludes-gps`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/u-turn-excludes-gps/
-- [x1] `uk-manufacturers-positive-despite-challenges`
-  - hawsons.co.uk: https://www.hawsons.co.uk/uk-manufacturers-positive-despite-challenges/
-- [x1] `what-is-the-future-of-arrs-and-can-reform-ease-the-gp-jobs-crisis`
-  - ramsaybrown.com: https://ramsaybrown.com/what-is-the-future-of-arrs-and-can-reform-ease-the-gp-jobs-crisis/
+- `partner-profiles` — https://www.thomasbarrie.co.uk/about/partner-profiles/
+- `accessibility-statement` — https://www.thomasbarrie.co.uk/accessibility-statement/
+- `locations.kml` — https://www.thomasbarrie.co.uk/locations.kml
+- `news-blog` — https://www.thomasbarrie.co.uk/news-blog/
+- `dates-and-deadlines` — https://www.thomasbarrie.co.uk/news-blog/dates-and-deadlines/
+- `2027-pension-update` — https://www.thomasbarrie.co.uk/news/blog/2027-pension-update/
+- `30-day-rule` — https://www.thomasbarrie.co.uk/news/blog/30-day-rule/
+- `adding-a-director-to-a-company` — https://www.thomasbarrie.co.uk/news/blog/adding-a-director-to-a-company/
+- `associate-dentists-face-tax-position-challenge` — https://www.thomasbarrie.co.uk/news/blog/associate-dentists-face-tax-position-challenge/
+- `auto-enrolment-for-employers` — https://www.thomasbarrie.co.uk/news/blog/auto-enrolment-for-employers/
+- `autumn-budget-2021` — https://www.thomasbarrie.co.uk/news/blog/autumn-budget-2021/
+- `benefits-cloud-accounting` — https://www.thomasbarrie.co.uk/news/blog/benefits-cloud-accounting/
+- `capital-gains-tax-in-2020-21` — https://www.thomasbarrie.co.uk/news/blog/capital-gains-tax-in-2020-21/
+- `capital-gains-tax-in-scotland-bands-rates-and-allowances` — https://www.thomasbarrie.co.uk/news/blog/capital-gains-tax-in-scotland-bands-rates-and-allowances/
+- `cashflow-management-small-businesses` — https://www.thomasbarrie.co.uk/news/blog/cashflow-management-small-businesses/
+- `cgt-changes` — https://www.thomasbarrie.co.uk/news/blog/cgt-changes/
+- `changes-to-vat` — https://www.thomasbarrie.co.uk/news/blog/changes-to-vat/
+- `charity-accounting-reporting` — https://www.thomasbarrie.co.uk/news/blog/charity-accounting-reporting/
+- `charity-accounts-and-reports` — https://www.thomasbarrie.co.uk/news/blog/charity-accounts-and-reports/
+- `charity-trustees-in-scotland` — https://www.thomasbarrie.co.uk/news/blog/charity-trustees-in-scotland/
+- `choosing-the-right-business-structure` — https://www.thomasbarrie.co.uk/news/blog/choosing-the-right-business-structure/
+- `christmas-21-tax-returns` — https://www.thomasbarrie.co.uk/news/blog/christmas-21-tax-returns/
+- `cloud-accounting-benefits` — https://www.thomasbarrie.co.uk/news/blog/cloud-accounting-benefits/
+- `companies-house-identity-verification` — https://www.thomasbarrie.co.uk/news/blog/companies-house-identity-verification/
+- `companies-house-personal-code` — https://www.thomasbarrie.co.uk/news/blog/companies-house-personal-code/
+- `company-accounts-best-practices` — https://www.thomasbarrie.co.uk/news/blog/company-accounts-best-practices/
+- `company-accounts` — https://www.thomasbarrie.co.uk/news/blog/company-accounts/
+- `company-car-electric-vehicles` — https://www.thomasbarrie.co.uk/news/blog/company-car-electric-vehicles/
+- `company-size-thresholds` — https://www.thomasbarrie.co.uk/news/blog/company-size-thresholds/
+- `construction-industry-scheme` — https://www.thomasbarrie.co.uk/news/blog/construction-industry-scheme/
+- `coronavirus-support-schemes` — https://www.thomasbarrie.co.uk/news/blog/coronavirus-support-schemes/
+- `covid-support` — https://www.thomasbarrie.co.uk/news/blog/covid-support/
+- `debt-arrangement-scheme-scotland` — https://www.thomasbarrie.co.uk/news/blog/debt-arrangement-scheme-scotland/
+- `digital-accounting-technology` — https://www.thomasbarrie.co.uk/news/blog/digital-accounting-technology/
+- `draft-budget-how-will-it-affect-you` — https://www.thomasbarrie.co.uk/news/blog/draft-budget-how-will-it-affect-you/
+- `e-commerce-cross-border-vat` — https://www.thomasbarrie.co.uk/news/blog/e-commerce-cross-border-vat/
+- `early-20-21-tax-returns` — https://www.thomasbarrie.co.uk/news/blog/early-20-21-tax-returns/
+- `effective-payroll-management` — https://www.thomasbarrie.co.uk/news/blog/effective-payroll-management/
+- `employee-bik-2020-21` — https://www.thomasbarrie.co.uk/news/blog/employee-bik-2020-21/
+- `employee-expenses-and-benefits` — https://www.thomasbarrie.co.uk/news/blog/employee-expenses-and-benefits/
+- `environmental-taxes-and-reliefs` — https://www.thomasbarrie.co.uk/news/blog/environmental-taxes-and-reliefs/
+- `estate-planning-in-scotland` — https://www.thomasbarrie.co.uk/news/blog/estate-planning-in-scotland/
+- `estate-planning-in-the-uk` — https://www.thomasbarrie.co.uk/news/blog/estate-planning-in-the-uk/
+- `expanded-covid-support` — https://www.thomasbarrie.co.uk/news/blog/expanded-covid-support/
+- `farming-and-capital-gains-tax` — https://www.thomasbarrie.co.uk/news/blog/farming-and-capital-gains-tax/
+- `financial-compliance-in-2024-a-guide-for-scottish-enterprises` — https://www.thomasbarrie.co.uk/news/blog/financial-compliance-in-2024-a-guide-for-scottish-enterprises/
+- `first-businesses-poised-for-making-tax-digital` — https://www.thomasbarrie.co.uk/news/blog/first-businesses-poised-for-making-tax-digital/
+- `first-mtd-for-vat-deadline-goes-without-a-hitch` — https://www.thomasbarrie.co.uk/news/blog/first-mtd-for-vat-deadline-goes-without-a-hitch/
+- `five-finance-fixes` — https://www.thomasbarrie.co.uk/news/blog/five-finance-fixes/
+- `get-audit-ready` — https://www.thomasbarrie.co.uk/news/blog/get-audit-ready/
+- `getting-audit-ready` — https://www.thomasbarrie.co.uk/news/blog/getting-audit-ready/
+- `hmrc-compliance-checks` — https://www.thomasbarrie.co.uk/news/blog/hmrc-compliance-checks/
+- `hmrc-investigations-advice` — https://www.thomasbarrie.co.uk/news/blog/hmrc-investigations-advice/
+- `how-is-capital-gains-tax-calculated` — https://www.thomasbarrie.co.uk/news/blog/how-is-capital-gains-tax-calculated/
+- `how-to-account-for-rd-tax-credits` — https://www.thomasbarrie.co.uk/news/blog/how-to-account-for-rd-tax-credits/
+- `how-to-correct-common-vat-mistakes` — https://www.thomasbarrie.co.uk/news/blog/how-to-correct-common-vat-mistakes/
+- `how-to-get-ready-for-mtd` — https://www.thomasbarrie.co.uk/news/blog/how-to-get-ready-for-mtd/
+- `how-to-handle-hmrc-investigations` — https://www.thomasbarrie.co.uk/news/blog/how-to-handle-hmrc-investigations/
+- `how-to-prepare-for-an-hmrc-audit` — https://www.thomasbarrie.co.uk/news/blog/how-to-prepare-for-an-hmrc-audit/
+- `how-to-survive-a-hmrc-investigation` — https://www.thomasbarrie.co.uk/news/blog/how-to-survive-a-hmrc-investigation/
+- `hr-consultancy` — https://www.thomasbarrie.co.uk/news/blog/hr-consultancy/
+- `inheritance-tax-and-business-and-agricultural-relief` — https://www.thomasbarrie.co.uk/news/blog/inheritance-tax-and-business-and-agricultural-relief/
+- `inheritance-tax-reforms` — https://www.thomasbarrie.co.uk/news/blog/inheritance-tax-reforms/
+- `ir35-compliance-checklist` — https://www.thomasbarrie.co.uk/news/blog/ir35-compliance-checklist/
+- `ir35-private-sector` — https://www.thomasbarrie.co.uk/news/blog/ir35-private-sector/
+- `limited-company-accounts-best-practices-for-faster-sign-off` — https://www.thomasbarrie.co.uk/news/blog/limited-company-accounts-best-practices-for-faster-sign-off/
+- `making-tax-digital-for-income-tax-set-for-2023` — https://www.thomasbarrie.co.uk/news/blog/making-tax-digital-for-income-tax-set-for-2023/
+- `making-tax-digital-for-vat-registered-businesses` — https://www.thomasbarrie.co.uk/news/blog/making-tax-digital-for-vat-registered-businesses/
+- `making-tax-digital-scotland` — https://www.thomasbarrie.co.uk/news/blog/making-tax-digital-scotland/
+- `managing-personal-tax-obligations` — https://www.thomasbarrie.co.uk/news/blog/managing-personal-tax-obligations/
+- `maximising-dentist-tax-efficiency` — https://www.thomasbarrie.co.uk/news/blog/maximising-dentist-tax-efficiency/
+- `mortgage-interest-relief` — https://www.thomasbarrie.co.uk/news/blog/mortgage-interest-relief/
+- `mtd-changes` — https://www.thomasbarrie.co.uk/news/blog/mtd-changes/
+- `mtd-for-itsa` — https://www.thomasbarrie.co.uk/news/blog/mtd-for-itsa/
+- `navigating-medical-accounting` — https://www.thomasbarrie.co.uk/news/blog/navigating-medical-accounting/
+- `off-payroll-working-in-the-private-sector` — https://www.thomasbarrie.co.uk/news/blog/off-payroll-working-in-the-private-sector/
+- `outsourcing-company-payroll` — https://www.thomasbarrie.co.uk/news/blog/outsourcing-company-payroll/
+- `p11d-benefits-in-kind` — https://www.thomasbarrie.co.uk/news/blog/p11d-benefits-in-kind/
+- `payroll-year-end-in-scotland` — https://www.thomasbarrie.co.uk/news/blog/payroll-year-end-in-scotland/
+- `pension-re-enrolment` — https://www.thomasbarrie.co.uk/news/blog/pension-re-enrolment/
+- `pensions-and-iht` — https://www.thomasbarrie.co.uk/news/blog/pensions-and-iht/
+- `personal-tax-advisor` — https://www.thomasbarrie.co.uk/news/blog/personal-tax-advisor/
+- `personal-tax-planning-for-2020-21` — https://www.thomasbarrie.co.uk/news/blog/personal-tax-planning-for-2020-21/
+- `personal-tax-planning-tips-for-2024-25` — https://www.thomasbarrie.co.uk/news/blog/personal-tax-planning-tips-for-2024-25/
+- `personal-tax-strategies-scotland` — https://www.thomasbarrie.co.uk/news/blog/personal-tax-strategies-scotland/
+- `reasons-for-a-voluntary-audit` — https://www.thomasbarrie.co.uk/news/blog/reasons-for-a-voluntary-audit/
+- `reducing-inheritance-tax-by-a-deed-of-variation` — https://www.thomasbarrie.co.uk/news/blog/reducing-inheritance-tax-by-a-deed-of-variation/
+- `requirement-to-correct` — https://www.thomasbarrie.co.uk/news/blog/requirement-to-correct/
+- `residence-for-uk-tax-purposes` — https://www.thomasbarrie.co.uk/news/blog/residence-for-uk-tax-purposes/
+- `residence-nil-rate-band` — https://www.thomasbarrie.co.uk/news/blog/residence-nil-rate-band/
+- `retirement-planning-for-business-owners` — https://www.thomasbarrie.co.uk/news/blog/retirement-planning-for-business-owners/
+- `reverse-charge-construction` — https://www.thomasbarrie.co.uk/news/blog/reverse-charge-construction/
+- `salary-dividends-and-pensions` — https://www.thomasbarrie.co.uk/news/blog/salary-dividends-and-pensions/
+- `scottish-budget-2020` — https://www.thomasbarrie.co.uk/news/blog/scottish-budget-2020/
+- `scottish-budget-22-23` — https://www.thomasbarrie.co.uk/news/blog/scottish-budget-22-23/
+- `small-business-tax-uk` — https://www.thomasbarrie.co.uk/news/blog/small-business-tax-uk/
+- `statutory-reporting-for-companies` — https://www.thomasbarrie.co.uk/news/blog/statutory-reporting-for-companies/
+- `succession-planning` — https://www.thomasbarrie.co.uk/news/blog/succession-planning/
+- `summer-economic-update` — https://www.thomasbarrie.co.uk/news/blog/summer-economic-update/
+- `super-deduction` — https://www.thomasbarrie.co.uk/news/blog/super-deduction/
+- `tax-adviser-for-personal-taxes` — https://www.thomasbarrie.co.uk/news/blog/tax-adviser-for-personal-taxes/
+- `tax-changes-for-2019-20` — https://www.thomasbarrie.co.uk/news/blog/tax-changes-for-2019-20/
+- `tax-changes-for-2022-23` — https://www.thomasbarrie.co.uk/news/blog/tax-changes-for-2022-23/
+- `tax-efficient-investments` — https://www.thomasbarrie.co.uk/news/blog/tax-efficient-investments/
+- `tax-efficient-profit-extraction-tactics` — https://www.thomasbarrie.co.uk/news/blog/tax-efficient-profit-extraction-tactics/
+- `tax-efficient-remuneration` — https://www.thomasbarrie.co.uk/news/blog/tax-efficient-remuneration/
+- `tax-efficient-ways-to-reward-your-employees` — https://www.thomasbarrie.co.uk/news/blog/tax-efficient-ways-to-reward-your-employees/
+- `tax-investigation-advisers-advantages` — https://www.thomasbarrie.co.uk/news/blog/tax-investigation-advisers-advantages/
+- `tax-on-divorce-settlement` — https://www.thomasbarrie.co.uk/news/blog/tax-on-divorce-settlement/
+- `tax-relief-on-medical-exam-fees-during-training-contracts` — https://www.thomasbarrie.co.uk/news/blog/tax-relief-on-medical-exam-fees-during-training-contracts/
+- `tax-relief-on-rcgp-exam-fees` — https://www.thomasbarrie.co.uk/news/blog/tax-relief-on-rcgp-exam-fees/
+- `tax-returns-2020-21` — https://www.thomasbarrie.co.uk/news/blog/tax-returns-2020-21/
+- `the-impact-on-landlords-of-mortgage-interest-relief` — https://www.thomasbarrie.co.uk/news/blog/the-impact-on-landlords-of-mortgage-interest-relief/
+- `tips-for-managing-your-payroll` — https://www.thomasbarrie.co.uk/news/blog/tips-for-managing-your-payroll/
+- `uk-expat-advice` — https://www.thomasbarrie.co.uk/news/blog/uk-expat-advice/
+- `vat-basics` — https://www.thomasbarrie.co.uk/news/blog/vat-basics/
+- `vat-for-beginners` — https://www.thomasbarrie.co.uk/news/blog/vat-for-beginners/
+- `vat-imported-goods` — https://www.thomasbarrie.co.uk/news/blog/vat-imported-goods/
+- `vat-mistakes` — https://www.thomasbarrie.co.uk/news/blog/vat-mistakes/
+- `vat-payments-on-account` — https://www.thomasbarrie.co.uk/news/blog/vat-payments-on-account/
+- `vat-spring-budget` — https://www.thomasbarrie.co.uk/news/blog/vat-spring-budget/
+- `what-income-tax-might-you-pay-in-2021-22` — https://www.thomasbarrie.co.uk/news/blog/what-income-tax-might-you-pay-in-2021-22/
+- `what-is-the-flat-rate-vat-scheme` — https://www.thomasbarrie.co.uk/news/blog/what-is-the-flat-rate-vat-scheme/
+- `what-is-the-sa1-form` — https://www.thomasbarrie.co.uk/news/blog/what-is-the-sa1-form/
+- `what-personal-tax-changes-are-happening-in-2023` — https://www.thomasbarrie.co.uk/news/blog/what-personal-tax-changes-are-happening-in-2023/
+- `what-to-look-for-in-an-auditor` — https://www.thomasbarrie.co.uk/news/blog/what-to-look-for-in-an-auditor/
+- `year-end-tax-checklist` — https://www.thomasbarrie.co.uk/news/blog/year-end-tax-checklist/
+- `year-end-tax-planning-scotland` — https://www.thomasbarrie.co.uk/news/blog/year-end-tax-planning-scotland/
+- `added-value-services` — https://www.thomasbarrie.co.uk/sectors/added-value-services/
+- `dentists-and-orthodontists` — https://www.thomasbarrie.co.uk/sectors/dentists-and-orthodontists/
+- `medical-profession` — https://www.thomasbarrie.co.uk/sectors/medical-profession/
+- `business-services` — https://www.thomasbarrie.co.uk/services/business-services/
+- `business-startups-planning` — https://www.thomasbarrie.co.uk/services/business-services/business-startups-planning/
+- `company-secretarial` — https://www.thomasbarrie.co.uk/services/business-services/company-secretarial/
+- `human-resources` — https://www.thomasbarrie.co.uk/services/business-services/human-resources/
+- `personal-services` — https://www.thomasbarrie.co.uk/services/personal-services/
+- `retirement-strategies` — https://www.thomasbarrie.co.uk/services/personal-services/retirement-strategies/
+- `tax-investigations` — https://www.thomasbarrie.co.uk/services/personal-services/tax-investigations/
 
-## Buying into / selling a practice & goodwill (17 gap topics, 17 competitor pages)
+## larking-gowen.co.uk (835 gap candidates)
 
-- [x1] `applications-for-sme-brexit-support-fund-underway`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/applications-for-sme-brexit-support-fund-underway/
-- [x1] `brexit-care-homes-tips-increase-profitability`
-  - hawsons.co.uk: https://www.hawsons.co.uk/brexit-care-homes-tips-increase-profitability/
-- [x1] `brexit-causes-stand-off-in-housing-market`
-  - hawsons.co.uk: https://www.hawsons.co.uk/brexit-causes-stand-off-in-housing-market/
-- [x1] `brexit-deal-not-delivering-for-businesses`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/brexit-deal-not-delivering-for-businesses/
-- [x1] `brexit-freedoms-bill-to-be-brought-forward`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/brexit-freedoms-bill-to-be-brought-forward/
-- [x1] `brexit-impact-on-transport-and-logistics`
-  - hawsons.co.uk: https://www.hawsons.co.uk/brexit-impact-on-transport-and-logistics/
-- [x1] `brexit-new-eu-gdpr-rules`
-  - hawsons.co.uk: https://www.hawsons.co.uk/brexit-new-eu-gdpr-rules/
-- [x1] `brexit-tax-implications`
-  - hawsons.co.uk: https://www.hawsons.co.uk/brexit-tax-implications/
-- [x1] `brexit-training-or-professional-advice`
-  - hawsons.co.uk: https://www.hawsons.co.uk/brexit-training-or-professional-advice/
-- [x1] `brexit-transitional-period`
-  - hawsons.co.uk: https://www.hawsons.co.uk/brexit-transitional-period/
-- [x1] `business-exit-planning`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/business-exit-planning/
-- [x1] `capital-gains-valuations-of-goodwill`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/capital-gains-valuations-of-goodwill/
-- [x1] `exit-planning`
-  - hawsons.co.uk: https://www.hawsons.co.uk/corporate-finance/exit-planning/
-- [x1] `exit-plans`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/exit-plans/
-- [x1] `exit-succession-planning`
-  - jcssutton.co.uk: https://www.jcssutton.co.uk/how-we-help/business-services/exit-succession-planning/
-- [x1] `manufacturing-orders-increase-after-no-deal-brexit-avoided`
-  - hawsons.co.uk: https://www.hawsons.co.uk/manufacturing-orders-increase-after-no-deal-brexit-avoided/
-- [x1] `tax-relief-for-goodwill-purchases`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/tax-relief-for-goodwill-purchases/
+- `afc-brochure` — https://www.larking-gowen.co.uk/afc-brochure/
+- `annual-reports` — https://www.larking-gowen.co.uk/annual-reports/
+- `budget-updates` — https://www.larking-gowen.co.uk/budget-updates/
+- `current-vacancies` — https://www.larking-gowen.co.uk/careers/current-vacancies/
+- `hear-from-our-people` — https://www.larking-gowen.co.uk/careers/hear-from-our-people/
+- `meet-our-people` — https://www.larking-gowen.co.uk/careers/meet-our-people/
+- `our-benefits` — https://www.larking-gowen.co.uk/careers/our-benefits/
+- `our-training` — https://www.larking-gowen.co.uk/careers/our-training/
+- `school-leavers` — https://www.larking-gowen.co.uk/careers/our-training/school-leavers/
+- `work-experience` — https://www.larking-gowen.co.uk/careers/our-training/work-experience/
+- `case-studies` — https://www.larking-gowen.co.uk/case-studies/
+- `abc-power` — https://www.larking-gowen.co.uk/case-studies/abc-power/
+- `advising-a-business-owner-on-their-first-acquisition` — https://www.larking-gowen.co.uk/case-studies/advising-a-business-owner-on-their-first-acquisition/
+- `afa-fostering` — https://www.larking-gowen.co.uk/case-studies/afa-fostering/
+- `amber-home-improvements` — https://www.larking-gowen.co.uk/case-studies/amber-home-improvements/
+- `art-angels-publishing` — https://www.larking-gowen.co.uk/case-studies/art-angels-publishing/
+- `bb-skip-hire-business-sale` — https://www.larking-gowen.co.uk/case-studies/bb-skip-hire-business-sale/
+- `belmont-roofing` — https://www.larking-gowen.co.uk/case-studies/belmont-roofing/
+- `ben-burgess-co-business-purchase` — https://www.larking-gowen.co.uk/case-studies/ben-burgess-co-business-purchase/
+- `best-practice-training-development-business-sale` — https://www.larking-gowen.co.uk/case-studies/best-practice-training-development-business-sale/
+- `bircham-electrical-business-sale` — https://www.larking-gowen.co.uk/case-studies/bircham-electrical-business-sale/
+- `blayhall-marine-business-sale` — https://www.larking-gowen.co.uk/case-studies/blayhall-marine-business-sale/
+- `blue-knot-topco1-ltds-acquisition-of-mr-create-designs-ltd` — https://www.larking-gowen.co.uk/case-studies/blue-knot-topco1-ltds-acquisition-of-mr-create-designs-ltd/
+- `bluebird-care` — https://www.larking-gowen.co.uk/case-studies/bluebird-care/
+- `brown-may-marine` — https://www.larking-gowen.co.uk/case-studies/brown-may-marine/
+- `calgary-just-companies-limited` — https://www.larking-gowen.co.uk/case-studies/calgary-just-companies-limited/
+- `canham-consulting` — https://www.larking-gowen.co.uk/case-studies/canham-consulting/
+- `charles-barr-furniture` — https://www.larking-gowen.co.uk/case-studies/charles-barr-furniture/
+- `charmbeck-limited` — https://www.larking-gowen.co.uk/case-studies/charmbeck-limited/
+- `children-always-first-business-sale` — https://www.larking-gowen.co.uk/case-studies/children-always-first-business-sale/
+- `circuitlink-pty` — https://www.larking-gowen.co.uk/case-studies/circuitlink-pty/
+- `cobalt-aerospace-group-business-sale` — https://www.larking-gowen.co.uk/case-studies/cobalt-aerospace-group-business-sale/
+- `concertus-business-acquisition` — https://www.larking-gowen.co.uk/case-studies/concertus-business-acquisition/
+- `continental-product-engineering` — https://www.larking-gowen.co.uk/case-studies/continental-product-engineering/
+- `craft-leisure-business-acquisition` — https://www.larking-gowen.co.uk/case-studies/craft-leisure-business-acquisition/
+- `dol-limited` — https://www.larking-gowen.co.uk/case-studies/dol-limited/
+- `drayton-insurance` — https://www.larking-gowen.co.uk/case-studies/drayton-insurance/
+- `dynamic-fluid-solutions-limited` — https://www.larking-gowen.co.uk/case-studies/dynamic-fluid-solutions-limited/
+- `ecs-holdings` — https://www.larking-gowen.co.uk/case-studies/ecs-holdings/
+- `european-golf-machinery` — https://www.larking-gowen.co.uk/case-studies/european-golf-machinery/
+- `exheat-group-due-diligence` — https://www.larking-gowen.co.uk/case-studies/exheat-group-due-diligence/
+- `finelight-media-group` — https://www.larking-gowen.co.uk/case-studies/finelight-media-group/
+- `foulger-transport-business-sale` — https://www.larking-gowen.co.uk/case-studies/foulger-transport-business-sale/
+- `fourbay-structures-management-buyout` — https://www.larking-gowen.co.uk/case-studies/fourbay-structures-management-buyout/
+- `funeral-planning-services-business-sale` — https://www.larking-gowen.co.uk/case-studies/funeral-planning-services-business-sale/
+- `greenhaul-limited` — https://www.larking-gowen.co.uk/case-studies/greenhaul-limited/
+- `hobbies-business-sale` — https://www.larking-gowen.co.uk/case-studies/hobbies-business-sale/
+- `implementation-of-a-management-buy-out-mbo-in-succession-planning` — https://www.larking-gowen.co.uk/case-studies/implementation-of-a-management-buy-out-mbo-in-succession-planning/
+- `j-e-fuller-business-sale` — https://www.larking-gowen.co.uk/case-studies/j-e-fuller-business-sale/
+- `jones-financial-norwich-limited` — https://www.larking-gowen.co.uk/case-studies/jones-financial-norwich-limited/
+- `knowledge-point-print-services-limited-kppsl` — https://www.larking-gowen.co.uk/case-studies/knowledge-point-print-services-limited-kppsl/
+- `krystal-hosting-ltd-business-acquisition` — https://www.larking-gowen.co.uk/case-studies/krystal-hosting-ltd-business-acquisition/
+- `mainguard-associates` — https://www.larking-gowen.co.uk/case-studies/mainguard-associates/
+- `mayday-office-equipment-management-buyout` — https://www.larking-gowen.co.uk/case-studies/mayday-office-equipment-management-buyout/
+- `modernising-accounting-systems-to-xero-for-anglian-plant-limited` — https://www.larking-gowen.co.uk/case-studies/modernising-accounting-systems-to-xero-for-anglian-plant-limited/
+- `morrison-group-limited` — https://www.larking-gowen.co.uk/case-studies/morrison-group-limited/
+- `mp-eastern-limited-business-sale` — https://www.larking-gowen.co.uk/case-studies/mp-eastern-limited-business-sale/
+- `mpg-electrical` — https://www.larking-gowen.co.uk/case-studies/mpg-electrical/
+- `norfolk-pet-crematorium-shares-sale` — https://www.larking-gowen.co.uk/case-studies/norfolk-pet-crematorium-shares-sale/
+- `oilennium-business-sale` — https://www.larking-gowen.co.uk/case-studies/oilennium-business-sale/
+- `ortoo-technologies-business-sale` — https://www.larking-gowen.co.uk/case-studies/ortoo-technologies-business-sale/
+- `page-brothers-business-sale` — https://www.larking-gowen.co.uk/case-studies/page-brothers-business-sale/
+- `pauls-cycles-business-sale` — https://www.larking-gowen.co.uk/case-studies/pauls-cycles-business-sale/
+- `place-uk` — https://www.larking-gowen.co.uk/case-studies/place-uk/
+- `sale-of-a-majority-shareholding-manufacturing-business-to-a-private-equity-firm` — https://www.larking-gowen.co.uk/case-studies/sale-of-a-majority-shareholding-manufacturing-business-to-a-private-equity-firm/
+- `sale-of-lawtronic-holdings-limited-to-pac-group-limited` — https://www.larking-gowen.co.uk/case-studies/sale-of-lawtronic-holdings-limited-to-pac-group-limited/
+- `salix-river-and-wetland-services-business-sale` — https://www.larking-gowen.co.uk/case-studies/salix-river-and-wetland-services-business-sale/
+- `signs-express-management-buyout` — https://www.larking-gowen.co.uk/case-studies/signs-express-management-buyout/
+- `taurho-transcribes-limited` — https://www.larking-gowen.co.uk/case-studies/taurho-transcribes-limited/
+- `taxassist-direct-due-diligence` — https://www.larking-gowen.co.uk/case-studies/taxassist-direct-due-diligence/
+- `teach-digital-business-sale` — https://www.larking-gowen.co.uk/case-studies/teach-digital-business-sale/
+- `tech-safe-systems-business-sale` — https://www.larking-gowen.co.uk/case-studies/tech-safe-systems-business-sale/
+- `tiger-eye-consulting` — https://www.larking-gowen.co.uk/case-studies/tiger-eye-consulting/
+- `toffee-publishing` — https://www.larking-gowen.co.uk/case-studies/toffee-publishing/
+- `walsingham-college-business-sale` — https://www.larking-gowen.co.uk/case-studies/walsingham-college-business-sale/
+- `waveney-insurance-brokers-business-sale` — https://www.larking-gowen.co.uk/case-studies/waveney-insurance-brokers-business-sale/
+- `william-morfoot-ltd` — https://www.larking-gowen.co.uk/case-studies/william-morfoot-ltd/
+- `contact-us` — https://www.larking-gowen.co.uk/contact-us/
+- `download-app` — https://www.larking-gowen.co.uk/download-app/
+- `ashtons-legal-larking-gowen-summer-seminars` — https://www.larking-gowen.co.uk/events/ashtons-legal-larking-gowen-summer-seminars/
+- `business-breakfasts-2026` — https://www.larking-gowen.co.uk/events/business-breakfasts-2026/
+- `essex-business-breakfast-june-26` — https://www.larking-gowen.co.uk/events/essex-business-breakfast-june-26/
+- `future-professionals-open-evening` — https://www.larking-gowen.co.uk/events/future-professionals-open-evening/
+- `larking-gowen-gp-practice-seminar` — https://www.larking-gowen.co.uk/events/larking-gowen-gp-practice-seminar/
+- `medical-lunch-learns` — https://www.larking-gowen.co.uk/events/medical-lunch-learns/
+- `202526-tax-year-end-your-employer-checklist-for-a-smooth-finish` — https://www.larking-gowen.co.uk/insights/blog/202526-tax-year-end-your-employer-checklist-for-a-smooth-finish/
+- `5-tips-to-manage-covi-d-19-anxiety` — https://www.larking-gowen.co.uk/insights/blog/5-tips-to-manage-covi-d-19-anxiety/
+- `academies-accounts-direction-2024-to-2025-staff-briefing` — https://www.larking-gowen.co.uk/insights/blog/academies-accounts-direction-2024-to-2025-staff-briefing/
+- `all-change-for-agricultural-tenancies` — https://www.larking-gowen.co.uk/insights/blog/all-change-for-agricultural-tenancies/
+- `all-you-need-to-know-about-independent-business-reviews` — https://www.larking-gowen.co.uk/insights/blog/all-you-need-to-know-about-independent-business-reviews/
+- `annual-tax-on-enveloped-dwellings-ated-are-you-prepared` — https://www.larking-gowen.co.uk/insights/blog/annual-tax-on-enveloped-dwellings-ated-are-you-prepared/
+- `are-trivial-benefits-from-employers-exempt-from-tax-and-nic` — https://www.larking-gowen.co.uk/insights/blog/are-trivial-benefits-from-employers-exempt-from-tax-and-nic/
+- `are-you-considering-a-members-voluntary-liquidation` — https://www.larking-gowen.co.uk/insights/blog/are-you-considering-a-members-voluntary-liquidation/
+- `are-you-ready-for-the-new-employment-allocation-of-tips-act-2023` — https://www.larking-gowen.co.uk/insights/blog/are-you-ready-for-the-new-employment-allocation-of-tips-act-2023/
+- `audit-and-assurance` — https://www.larking-gowen.co.uk/insights/blog/audit-and-assurance/
+- `autumn-budget-2025-key-takeaways-for-landlords` — https://www.larking-gowen.co.uk/insights/blog/autumn-budget-2025-key-takeaways-for-landlords/
+- `autumn-budget-2025-what-employers-need-to-know` — https://www.larking-gowen.co.uk/insights/blog/autumn-budget-2025-what-employers-need-to-know/
+- `benefits-of-using-a-corporate-transactions-team` — https://www.larking-gowen.co.uk/insights/blog/benefits-of-using-a-corporate-transactions-team/
+- `beware-the-fraudsters-part-2` — https://www.larking-gowen.co.uk/insights/blog/beware-the-fraudsters-part-2/
+- `beware-the-fraudsters-part-3` — https://www.larking-gowen.co.uk/insights/blog/beware-the-fraudsters-part-3/
+- `boosting-farm-productivity-the-farming-equipment-and-technology-fund` — https://www.larking-gowen.co.uk/insights/blog/boosting-farm-productivity-the-farming-equipment-and-technology-fund/
+- `bounce-back-loans-what-are-the-options-when-a-company-enters-liquidation` — https://www.larking-gowen.co.uk/insights/blog/bounce-back-loans-what-are-the-options-when-a-company-enters-liquidation/
+- `budget-summary-for-26-november-2025-key-changes-explained` — https://www.larking-gowen.co.uk/insights/blog/budget-summary-for-26-november-2025-key-changes-explained/
+- `business-sale-readiness-factor-1-key-attractions` — https://www.larking-gowen.co.uk/insights/blog/business-sale-readiness-factor-1-key-attractions/
+- `business-sale-readiness-factor-2-profit-maximisation` — https://www.larking-gowen.co.uk/insights/blog/business-sale-readiness-factor-2-profit-maximisation/
+- `business-sale-readiness-factor-3-sale-process-preparation` — https://www.larking-gowen.co.uk/insights/blog/business-sale-readiness-factor-3-sale-process-preparation/
+- `business-sale-readiness-factor-4-aligned-business-strategy` — https://www.larking-gowen.co.uk/insights/blog/business-sale-readiness-factor-4-aligned-business-strategy/
+- `business-sale-readiness-factor-5-availability-of-financial-information` — https://www.larking-gowen.co.uk/insights/blog/business-sale-readiness-factor-5-availability-of-financial-information/
+- `business-sale-readiness-factor-6-systems-and-administrative-housekeeping` — https://www.larking-gowen.co.uk/insights/blog/business-sale-readiness-factor-6-systems-and-administrative-housekeeping/
+- `business-sale-readiness-factor-7-risk-management` — https://www.larking-gowen.co.uk/insights/blog/business-sale-readiness-factor-7-risk-management/
+- `business-sale-readiness-factor-8-people` — https://www.larking-gowen.co.uk/insights/blog/business-sale-readiness-factor-8-people/
+- `business-sale-readiness-factor-9-sales-and-marketing` — https://www.larking-gowen.co.uk/insights/blog/business-sale-readiness-factor-9-sales-and-marketing/
+- `businesses-are-thriving-in-north-essex-are-you-one-of-them` — https://www.larking-gowen.co.uk/insights/blog/businesses-are-thriving-in-north-essex-are-you-one-of-them/
+- `buying-selling-and-valuing-your-business` — https://www.larking-gowen.co.uk/insights/blog/buying-selling-and-valuing-your-business/
+- `capital-gains-tax-on-residential-property-where-are-we-now` — https://www.larking-gowen.co.uk/insights/blog/capital-gains-tax-on-residential-property-where-are-we-now/
+- `capital-grants-reopen-150-million-available-for-environmental-improvements` — https://www.larking-gowen.co.uk/insights/blog/capital-grants-reopen-150-million-available-for-environmental-improvements/
+- `car-or-van-don-t-let-hmrc-drive-your-tax-bill-off-course` — https://www.larking-gowen.co.uk/insights/blog/car-or-van-don-t-let-hmrc-drive-your-tax-bill-off-course/
+- `carillion-liquidation-could-trigger-further-insolvencies` — https://www.larking-gowen.co.uk/insights/blog/carillion-liquidation-could-trigger-further-insolvencies/
+- `cash-accounting-for-businesses-and-medical-practices` — https://www.larking-gowen.co.uk/insights/blog/cash-accounting-for-businesses-and-medical-practices/
+- `changes-affecting-online-sellers-and-platform-hosts` — https://www.larking-gowen.co.uk/insights/blog/changes-affecting-online-sellers-and-platform-hosts/
+- `changes-from-april-2025-for-business-owners-to-consider` — https://www.larking-gowen.co.uk/insights/blog/changes-from-april-2025-for-business-owners-to-consider/
+- `changes-to-inheritance-tax-direct-payment-scheme-for-probate` — https://www.larking-gowen.co.uk/insights/blog/changes-to-inheritance-tax-direct-payment-scheme-for-probate/
+- `changes-to-inheritance-tax-what-it-means-for-your-uk-farming-business` — https://www.larking-gowen.co.uk/insights/blog/changes-to-inheritance-tax-what-it-means-for-your-uk-farming-business/
+- `changes-to-residence-relief-and-letting-relief` — https://www.larking-gowen.co.uk/insights/blog/changes-to-residence-relief-and-letting-relief/
+- `changes-to-the-tax-treatment-of-pick-up-trucks-from-april-2025` — https://www.larking-gowen.co.uk/insights/blog/changes-to-the-tax-treatment-of-pick-up-trucks-from-april-2025/
+- `charities-don-t-pay-tax-do-they` — https://www.larking-gowen.co.uk/insights/blog/charities-don-t-pay-tax-do-they/
+- `charity-financial-threshold-changes-confirmed` — https://www.larking-gowen.co.uk/insights/blog/charity-financial-threshold-changes-confirmed/
+- `charity-reserves-can-they-be-too-high-and-does-that-matter` — https://www.larking-gowen.co.uk/insights/blog/charity-reserves-can-they-be-too-high-and-does-that-matter/
+- `cheers-for-tiers-charity-thresholds-on-the-move` — https://www.larking-gowen.co.uk/insights/blog/cheers-for-tiers-charity-thresholds-on-the-move/
+- `cio-vs-cic-picking-the-right-fit` — https://www.larking-gowen.co.uk/insights/blog/cio-vs-cic-picking-the-right-fit/
+- `clarified-guidance-for-museums-and-galleries-exhibition-tax-relief` — https://www.larking-gowen.co.uk/insights/blog/clarified-guidance-for-museums-and-galleries-exhibition-tax-relief/
+- `company-purchase-of-own-shares-a-tax-efficient-exit-strategy` — https://www.larking-gowen.co.uk/insights/blog/company-purchase-of-own-shares-a-tax-efficient-exit-strategy/
+- `company-size-thresholds-have-risen` — https://www.larking-gowen.co.uk/insights/blog/company-size-thresholds-have-risen/
+- `company-voluntary-arrangements-cva` — https://www.larking-gowen.co.uk/insights/blog/company-voluntary-arrangements-cva/
+- `complexities-of-accepting-donations-insights-for-charity-trustees` — https://www.larking-gowen.co.uk/insights/blog/complexities-of-accepting-donations-insights-for-charity-trustees/
+- `could-your-nhs-pension-be-worth-more-than-you-think` — https://www.larking-gowen.co.uk/insights/blog/could-your-nhs-pension-be-worth-more-than-you-think/
+- `countryside-productivity-small-grants-scheme-closes-3-september` — https://www.larking-gowen.co.uk/insights/blog/countryside-productivity-small-grants-scheme-closes-3-september/
+- `covid-repayment-window-opens-time-to-come-clean` — https://www.larking-gowen.co.uk/insights/blog/covid-repayment-window-opens-time-to-come-clean/
+- `disbursements-for-vat-purposes-in-the-law-profession` — https://www.larking-gowen.co.uk/insights/blog/disbursements-for-vat-purposes-in-the-law-profession/
+- `do-i-need-to-disclose-my-overseas-income-to-hmrc` — https://www.larking-gowen.co.uk/insights/blog/do-i-need-to-disclose-my-overseas-income-to-hmrc/
+- `do-you-have-offshore-assets` — https://www.larking-gowen.co.uk/insights/blog/do-you-have-offshore-assets/
+- `does-a-business-have-to-pay-back-the-vat-if-it-changes-its-intended-supply` — https://www.larking-gowen.co.uk/insights/blog/does-a-business-have-to-pay-back-the-vat-if-it-changes-its-intended-supply/
+- `does-your-farm-qualify-for-research-and-development-tax-relief` — https://www.larking-gowen.co.uk/insights/blog/does-your-farm-qualify-for-research-and-development-tax-relief/
+- `embracing-technology-in-farming-a-digital-revolution` — https://www.larking-gowen.co.uk/insights/blog/embracing-technology-in-farming-a-digital-revolution/
+- `employers-and-the-national-minimum-wage-rules-don-t-get-caught-out` — https://www.larking-gowen.co.uk/insights/blog/employers-and-the-national-minimum-wage-rules-don-t-get-caught-out/
+- `employment-related-securities-what-do-employers-need-to-report` — https://www.larking-gowen.co.uk/insights/blog/employment-related-securities-what-do-employers-need-to-report/
+- `englands-10-year-health-plan-neighbourhood-services-ai-and-health-equity` — https://www.larking-gowen.co.uk/insights/blog/englands-10-year-health-plan-neighbourhood-services-ai-and-health-equity/
+- `environmental-social-governance` — https://www.larking-gowen.co.uk/insights/blog/environmental-social-governance/
+- `exploring-the-financial-landscape-of-the-retail-sector` — https://www.larking-gowen.co.uk/insights/blog/exploring-the-financial-landscape-of-the-retail-sector/
+- `farmers-update-capital-grants-and-stewardship-schemes` — https://www.larking-gowen.co.uk/insights/blog/farmers-update-capital-grants-and-stewardship-schemes/
+- `farming-roadmap-2050-growing-england-s-future` — https://www.larking-gowen.co.uk/insights/blog/farming-roadmap-2050-growing-england-s-future/
+- `farms-and-rural-business` — https://www.larking-gowen.co.uk/insights/blog/farms-and-rural-business/
+- `fetf-2026-applications-now-open` — https://www.larking-gowen.co.uk/insights/blog/fetf-2026-applications-now-open/
+- `five-common-questions-from-charity-trustees-when-facing-financial-difficulties` — https://www.larking-gowen.co.uk/insights/blog/five-common-questions-from-charity-trustees-when-facing-financial-difficulties/
+- `flexible-furloughing` — https://www.larking-gowen.co.uk/insights/blog/flexible-furloughing/
+- `fresh-call-by-mps-to-delay-changes-to-inheritance-tax` — https://www.larking-gowen.co.uk/insights/blog/fresh-call-by-mps-to-delay-changes-to-inheritance-tax/
+- `fscs-deposit-protection-limit-rises-what-it-means-for-savers-and-businesses` — https://www.larking-gowen.co.uk/insights/blog/fscs-deposit-protection-limit-rises-what-it-means-for-savers-and-businesses/
+- `furnished-holiday-lets-abolition-of-special-tax-rules` — https://www.larking-gowen.co.uk/insights/blog/furnished-holiday-lets-abolition-of-special-tax-rules/
+- `future-financial-impact-for-farmers-and-landowners` — https://www.larking-gowen.co.uk/insights/blog/future-financial-impact-for-farmers-and-landowners/
+- `gift-aid-common-pitfalls` — https://www.larking-gowen.co.uk/insights/blog/gift-aid-common-pitfalls/
+- `gift-aid-what-it-is-and-how-to-claim` — https://www.larking-gowen.co.uk/insights/blog/gift-aid-what-it-is-and-how-to-claim/
+- `government-extends-temporary-insolvency-measures` — https://www.larking-gowen.co.uk/insights/blog/government-extends-temporary-insolvency-measures/
+- `grant-funding-and-vat-what-the-colchester-institute-ruling-means-for-colleges` — https://www.larking-gowen.co.uk/insights/blog/grant-funding-and-vat-what-the-colchester-institute-ruling-means-for-colleges/
+- `have-pre-pack-admins-just-been-outlawed` — https://www.larking-gowen.co.uk/insights/blog/have-pre-pack-admins-just-been-outlawed/
+- `have-you-checked-your-overseas-assets-income-or-gains-for-tax-purposes` — https://www.larking-gowen.co.uk/insights/blog/have-you-checked-your-overseas-assets-income-or-gains-for-tax-purposes/
+- `healthcare-professionals-are-you-missing-out-on-p87-tax-relief` — https://www.larking-gowen.co.uk/insights/blog/healthcare-professionals-are-you-missing-out-on-p87-tax-relief/
+- `hmrc-guidance-on-inheritance-tax-iht-on-pensions-from-april-2027` — https://www.larking-gowen.co.uk/insights/blog/hmrc-guidance-on-inheritance-tax-iht-on-pensions-from-april-2027/
+- `hmrc-preferential-status` — https://www.larking-gowen.co.uk/insights/blog/hmrc-preferential-status/
+- `hmrc-ramp-up-inheritance-tax-investigations` — https://www.larking-gowen.co.uk/insights/blog/hmrc-ramp-up-inheritance-tax-investigations/
+- `how-charities-can-prepare-for-an-audit-a-practical-guide` — https://www.larking-gowen.co.uk/insights/blog/how-charities-can-prepare-for-an-audit-a-practical-guide/
+- `how-does-my-residence-and-domicile-status-affect-my-tax-position` — https://www.larking-gowen.co.uk/insights/blog/how-does-my-residence-and-domicile-status-affect-my-tax-position/
+- `how-should-self-employed-people-and-landlords-prepare-for-mtd-and-what-s-changed` — https://www.larking-gowen.co.uk/insights/blog/how-should-self-employed-people-and-landlords-prepare-for-mtd-and-what-s-changed/
+- `how-to-pension-gp-locum-income` — https://www.larking-gowen.co.uk/insights/blog/how-to-pension-gp-locum-income/
+- `how-will-changes-to-gift-aid-affect-my-tax-relief` — https://www.larking-gowen.co.uk/insights/blog/how-will-changes-to-gift-aid-affect-my-tax-relief/
+- `if-anything-should-happen-to-me` — https://www.larking-gowen.co.uk/insights/blog/if-anything-should-happen-to-me/
+- `improvements-to-emergency-cbils-loan-scheme` — https://www.larking-gowen.co.uk/insights/blog/improvements-to-emergency-cbils-loan-scheme/
+- `income-tax-basis-period-reform-and-the-agriculture-sector` — https://www.larking-gowen.co.uk/insights/blog/income-tax-basis-period-reform-and-the-agriculture-sector/
+- `inheritance-tax-protecting-the-family-assets` — https://www.larking-gowen.co.uk/insights/blog/inheritance-tax-protecting-the-family-assets/
+- `insolvency-preference-payments-what-directors-should-be-aware-of` — https://www.larking-gowen.co.uk/insights/blog/insolvency-preference-payments-what-directors-should-be-aware-of/
+- `insolvency-qa-part-five-creditors` — https://www.larking-gowen.co.uk/insights/blog/insolvency-qa-part-five-creditors/
+- `insolvency-qa-part-four-employees` — https://www.larking-gowen.co.uk/insights/blog/insolvency-qa-part-four-employees/
+- `insolvency-qa-part-one-general-insolvency` — https://www.larking-gowen.co.uk/insights/blog/insolvency-qa-part-one-general-insolvency/
+- `insolvency-qa-part-three-individualssole-traders` — https://www.larking-gowen.co.uk/insights/blog/insolvency-qa-part-three-individualssole-traders/
+- `insolvency-qa-part-two-business-ownerscompany-directors` — https://www.larking-gowen.co.uk/insights/blog/insolvency-qa-part-two-business-ownerscompany-directors/
+- `insolvency-recovery` — https://www.larking-gowen.co.uk/insights/blog/insolvency-recovery/
+- `insolvency-statistics-news` — https://www.larking-gowen.co.uk/insights/blog/insolvency-statistics-news/
+- `international-tax` — https://www.larking-gowen.co.uk/insights/blog/international-tax/
+- `is-a-holding-company-right-for-your-business` — https://www.larking-gowen.co.uk/insights/blog/is-a-holding-company-right-for-your-business/
+- `is-a-partnership-the-right-option-for-medical-professionals` — https://www.larking-gowen.co.uk/insights/blog/is-a-partnership-the-right-option-for-medical-professionals/
+- `is-hmrc-about-to-shut-the-door-on-employer-provided-accommodation` — https://www.larking-gowen.co.uk/insights/blog/is-hmrc-about-to-shut-the-door-on-employer-provided-accommodation/
+- `is-it-time-to-panic-the-answer-is-not-yet` — https://www.larking-gowen.co.uk/insights/blog/is-it-time-to-panic-the-answer-is-not-yet/
+- `is-this-company-vehicle-a-car-or-a-van` — https://www.larking-gowen.co.uk/insights/blog/is-this-company-vehicle-a-car-or-a-van/
+- `is-your-farm-fit-for-the-future` — https://www.larking-gowen.co.uk/insights/blog/is-your-farm-fit-for-the-future/
+- `it-s-coming-are-you-ready-for-making-tax-digital-for-income-tax-mtdfit` — https://www.larking-gowen.co.uk/insights/blog/it-s-coming-are-you-ready-for-making-tax-digital-for-income-tax-mtdfit/
+- `keeping-track-of-inventory-to-avoid-overstock-or-shortages-for-retail-businesses` — https://www.larking-gowen.co.uk/insights/blog/keeping-track-of-inventory-to-avoid-overstock-or-shortages-for-retail-businesses/
+- `key-considerations-before-joining-a-partnership` — https://www.larking-gowen.co.uk/insights/blog/key-considerations-before-joining-a-partnership/
+- `key-performance-indicators-kpis-for-community-pharmacies` — https://www.larking-gowen.co.uk/insights/blog/key-performance-indicators-kpis-for-community-pharmacies/
+- `land-and-property-who-owns-what` — https://www.larking-gowen.co.uk/insights/blog/land-and-property-who-owns-what/
+- `landlords-don-t-get-caught-out-by-mtdfit-what-you-need-to-do-before-april-2026` — https://www.larking-gowen.co.uk/insights/blog/landlords-don-t-get-caught-out-by-mtdfit-what-you-need-to-do-before-april-2026/
+- `let-property-campaign-how-to-disclose-undeclared-rental-income` — https://www.larking-gowen.co.uk/insights/blog/let-property-campaign-how-to-disclose-undeclared-rental-income/
+- *(+635 more)*
 
-## NHS pension scheme (16 gap topics, 16 competitor pages)
+## kudosaccounting.co.uk (95 gap candidates)
 
-- [x1] `is-your-nhs-pension-record-accurate-are-you-sure`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/is-your-nhs-pension-record-accurate-are-you-sure
-- [x1] `is-your-nhs-pension-record-wrong-mccloud-remedy-contingent-decisions-and-what-to-do-next`
-  - ramsaybrown.com: https://ramsaybrown.com/podcast/is-your-nhs-pension-record-wrong-mccloud-remedy-contingent-decisions-and-what-to-do-next/
-- [x1] `key-dates-for-the-mccloud-remedy`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/library/documents-checklists/key-dates-for-the-mccloud-remedy
-- [x1] `mccloud-judgement-your-nhs-pension`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/mccloud-judgement-your-nhs-pension
-- [x1] `mccloud-remedy-exploring-the-common-questions`
-  - azets.com: https://www.azets.com/en-uk/resources/mccloud-remedy-exploring-the-common-questions
-- [x1] `nhs-pension-discrimination-test-cases`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/nhs-pension-discrimination-test-cases
-- [x1] `nhs-pension-scheme-proposed-amendment-to-scheme-regulations`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/nhs-pension-scheme-proposed-amendment-to-scheme-regulations
-- [x1] `nhs-superannuation-pensions`
-  - ramsaybrown.com: https://ramsaybrown.com/service/nhs-superannuation-pensions/
-- [x1] `payroll-and-nhs-pension-changes`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/payroll-and-nhs-pension-changes/
-- [x1] `pension-buy-back-opportunity-for-some-nhs-pension-scheme-members`
-  - azets.com: https://www.azets.com/en-uk/resources/pension-buy-back-opportunity-for-some-nhs-pension-scheme-members
-- [x1] `retirement-nhs-pension-workshop-make-informed-decisions`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/retirement-nhs-pension-workshop-make-informed-decisions
-- [x1] `the-mccloud-remedy--the-costs-claim-back-scheme`
-  - azets.com: https://www.azets.com/en-uk/resources/azets-explains-audio-explainers/the-mccloud-remedy--the-costs-claim-back-scheme
-- [x1] `the-mccloud-remedy-for-nhs-pension-members`
-  - azets.com: https://www.azets.com/en-uk/the-mccloud-remedy-for-nhs-pension-members
-- [x1] `the-nhs-pension-pot-gp-pensions`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/the-nhs-pension-pot-gp-pensions
-- [x1] `which-section-s-of-the-nhs-pension-scheme-are-you-in`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/which-section-s-of-the-nhs-pension-scheme-are-you-in
-- [x1] `your-nhs-pension-are-you-sleep-walking-into-oblivion`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/your-nhs-pension-are-you-sleep-walking-into-oblivion
-
-## Incorporation & profit extraction (15 gap topics, 15 competitor pages)
-
-- [x1] `cgt-incorporation-relief`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/cgt-incorporation-relief/
-- [x1] `closing-down-a-limited-company`
-  - r-m-t.co.uk: https://r-m-t.co.uk/recovery-insolvency/closing-down-a-limited-company/
-- [x1] `deferring-gains-using-incorporation-relief`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/deferring-gains-using-incorporation-relief/
-- [x1] `dividend-tax-changes-for-business-owners`
-  - hawsons.co.uk: https://www.hawsons.co.uk/dividend-tax-changes-for-business-owners/
-- [x1] `dividend-tax-is-rising-are-you-ready`
-  - azets.com: https://www.azets.com/en-uk/resources/dividend-tax-is-rising-are-you-ready
-- [x1] `employee-ownership-dividends`
-  - hawsons.co.uk: https://www.hawsons.co.uk/employee-ownership-dividends/
-- [x1] `ep-2-gp-incorporation`
-  - ramsaybrown.com: https://ramsaybrown.com/podcast/ep-2-gp-incorporation/
-- [x1] `extracting-profits-from-a-small-limited-company`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/extracting-profits-from-a-small-limited-company/
-- [x1] `landlords-considering-incorporating-risk-missing-out-on-lucrative-tax-relief`
-  - azets.com: https://www.azets.com/en-uk/resources/landlords-considering-incorporating-risk-missing-out-on-lucrative-tax-relief
-- [x1] `limited-company-branch-office-differences`
-  - azets.com: https://www.azets.com/en-se/resources/blog/limited-company-branch-office-differences
-- [x1] `new-shareholder-dividend-reporting-requirements-for-many-companies`
-  - azets.com: https://www.azets.com/en-uk/resources/new-shareholder-dividend-reporting-requirements-for-many-companies
-- [x1] `private-medical-income-incorporation-or-not`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/private-medical-income-incorporation-or-not
-- [x1] `salary-or-dividend`
-  - azets.com: https://www.azets.com/en-uk/resources/salary-or-dividend
-- [x1] `top-profit-extraction-strategies-for-owner-managed-businesses`
-  - hawsons.co.uk: https://www.hawsons.co.uk/top-profit-extraction-strategies-for-owner-managed-businesses/
-- [x1] `when-dividends-cannot-be-paid`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/when-dividends-cannot-be-paid/
-
-## Locum doctor tax (12 gap topics, 12 competitor pages)
-
-- [x1] `chancellor-spells-uncertainty-for-limited-company-locum-gps`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/chancellor-spells-uncertainty-for-limited-company-locum-gps
-- [x1] `checklist-for-someone-starting-as-a-self-employed-locum-doctor`
-  - nicholsmedical.co.uk: https://nicholsmedical.co.uk/news/checklist-for-someone-starting-as-a-self-employed-locum-doctor/
-- [x1] `guest-blog-locum-insurance-staying-on-a-financially-even-keel`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/guest-blog-locum-insurance-staying-on-a-financially-even-keel
-- [x1] `hiring-locum-gps`
-  - nicholsmedical.co.uk: https://nicholsmedical.co.uk/news/hiring-locum-gps/
-- [x1] `how-tax-works-for-locum-doctors-in-the-uk`
-  - nicholsmedical.co.uk: https://nicholsmedical.co.uk/news/how-tax-works-for-locum-doctors-in-the-uk/
-- [x1] `how-umbrella-companies-work`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/how-umbrella-companies-work/
-- [x1] `starting-your-career-as-a-locum-gp-what-next`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/starting-your-career-as-a-locum-gp-what-next
-- [x1] `tax-solutions-for-locum-opticians`
-  - sial-accountants.co.uk: https://sial-accountants.co.uk/tax-solutions-for-locum-opticians/
-- [x1] `taxation-for-locum-doctors`
-  - sial-accountants.co.uk: https://sial-accountants.co.uk/taxation-for-locum-doctors/
-- [x1] `the-financial-realities-of-being-a-locum-doctor`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/the-financial-realities-of-being-a-locum-doctor
-- [x1] `why-are-pharmacists-deciding-to-locum`
-  - hawsons.co.uk: https://www.hawsons.co.uk/why-are-pharmacists-deciding-to-locum/
-- [x1] `workforce-planning-vs-locum-costs`
-  - hawsons.co.uk: https://www.hawsons.co.uk/workforce-planning-vs-locum-costs/
-
-## Practice premises & property (11 gap topics, 11 competitor pages)
-
-- [x1] `changes-in-accounting-standards-for-leases`
-  - azets.com: https://www.azets.com/en-ie/resources/changes-in-accounting-standards-for-leases
-- [x1] `deadline-for-sdlt-extended-for-main-residence-disposals`
-  - hawsons.co.uk: https://www.hawsons.co.uk/deadline-for-sdlt-extended-for-main-residence-disposals/
-- [x1] `does-stamp-duty-affect-you`
-  - jcssutton.co.uk: https://www.jcssutton.co.uk/news/blog/does-stamp-duty-affect-you/
-- [x1] `equity-release-guide`
-  - hawsons.co.uk: https://www.hawsons.co.uk/equity-release-guide/
-- [x1] `gp-owned-premises-incoming-partners`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/gp-owned-premises-incoming-partners
-- [x1] `higher-rates-of-sdlt-on-residential-property`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/higher-rates-of-sdlt-on-residential-property/
-- [x1] `multiple-dwellings-relief-for-sdlt`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/multiple-dwellings-relief-for-sdlt/
-- [x1] `pubs-and-premises-insurance`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/pubs-and-premises-insurance/
-- [x1] `stamp-duty-land-tax-consultation-launched-to-reduce-perceived-abuse-of-the-rules`
-  - hawsons.co.uk: https://www.hawsons.co.uk/stamp-duty-land-tax-consultation-launched-to-reduce-perceived-abuse-of-the-rules/
-- [x1] `stamp-duty-land-tax-sdlt-changes`
-  - hawsons.co.uk: https://www.hawsons.co.uk/stamp-duty-land-tax-sdlt-changes/
-- [x1] `what-landlords-need-to-know-about-the-new-frs-102-accounting-rules-for-operating-leases`
-  - azets.com: https://www.azets.com/en-ie/resources/what-landlords-need-to-know-about-the-new-frs-102-accounting-rules-for-operating-leases
-
-## GP partner & partnership tax (10 gap topics, 10 competitor pages)
-
-- [x1] `dive-with-caution-partnership-income-or-employment-income`
-  - hawsons.co.uk: https://www.hawsons.co.uk/dive-with-caution-partnership-income-or-employment-income/
-- [x1] `ensuring-a-smooth-transition-into-new-gp-partnerships`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/ensuring-a-smooth-transition-into-new-gp-partnerships/
-- [x1] `is-there-a-partnership-in-place`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/is-there-a-partnership-in-place/
-- [x1] `jointly-owned-property-no-partnership`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/jointly-owned-property-no-partnership/
-- [x1] `limited-liability-partnerships`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/limited-liability-partnerships/
-- [x1] `partnership-mergers-incorporation`
-  - ramsaybrown.com: https://ramsaybrown.com/service/partnership-mergers-incorporation/
-- [x1] `partnerships-a-simpler-future`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/partnerships-a-simpler-future
-- [x1] `partnerships-and-awards`
-  - azets.com: https://www.azets.com/en-uk/careers/dei-at-azets/partnerships-and-awards
-- [x1] `pulses-take-on-the-10-year-plan-what-is-the-future-of-the-gp-partnership`
-  - ramsaybrown.com: https://ramsaybrown.com/pulses-take-on-the-10-year-plan-what-is-the-future-of-the-gp-partnership/
-- [x1] `setting-up-a-civil-partnership`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/setting-up-a-civil-partnership/
-
-## Self-assessment & expenses (10 gap topics, 10 competitor pages)
-
-- [x1] `back-to-basics-on-business-mileage`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/back-to-basics-on-business-mileage/
-- [x1] `business-mileage-with-your-own-vehicle`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/business-mileage-with-your-own-vehicle/
-- [x1] `claiming-to-reduce-payments-on-account`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/claiming-to-reduce-payments-on-account/
-- [x1] `claims-to-reduce-payments-on-account`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/claims-to-reduce-payments-on-account/
-- [x1] `gps-tax-returns-and-pension-statements`
-  - ramsaybrown.com: https://ramsaybrown.com/gps-tax-returns-and-pension-statements/
-- [x1] `increase-in-approved-mileage-rates`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/increase-in-approved-mileage-rates/
-- [x1] `mileage-rate-increase-to-55p-per-mile-announced`
-  - azets.com: https://www.azets.com/en-uk/resources/mileage-rate-increase-to-55p-per-mile-announced
-- [x1] `penalties-for-late-filing-of-tax-returns`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/penalties-for-late-filing-of-tax-returns/
-- [x1] `tax-returns`
-  - hawsons.co.uk: https://www.hawsons.co.uk/tax-advice/personal-tax-accountants/tax-returns/
-- [x1] `tax-returns-for-a-deceased-taxpayer`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/tax-returns-for-a-deceased-taxpayer/
-
-## CQC, GMC & regulatory (7 gap topics, 8 competitor pages)
-
-- **[x2]** `legal-regulatory-information`
-  - azets.com: https://www.azets.com/en-ie/legal-regulatory-information
-  - azets.com: https://www.azets.com/en-uk/legal-regulatory-information
-- [x1] `f-tax-registration`
-  - azets.com: https://www.azets.com/en-se/resources/blog/f-tax-registration
-- [x1] `general-practice-hr-masterclass-cqc-mission-statements-culture-and-values-4`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/events/general-practice-hr-masterclass-cqc-mission-statements-culture-and-values-4
-- [x1] `gps-face-significant-increase-in-cqc-fees`
-  - hawsons.co.uk: https://www.hawsons.co.uk/gps-face-significant-increase-in-cqc-fees/
-- [x1] `new-law-on-the-registration-of-working-hours`
-  - azets.com: https://www.azets.com/en-dk/resources/webinar-library/new-law-on-the-registration-of-working-hours
-- [x1] `sra-replaces-indemnity-fund`
-  - hawsons.co.uk: https://www.hawsons.co.uk/sra-replaces-indemnity-fund/
-- [x1] `trust-registration-service`
-  - hawsons.co.uk: https://www.hawsons.co.uk/trust-registration-service/
-
-## Private practice & consultant income (8 gap topics, 8 competitor pages)
-
-- [x1] `anna-pedersens-journey-from-payroll-assistant-to-senior-consultant`
-  - azets.com: https://www.azets.com/en/resources/anna-pedersens-journey-from-payroll-assistant-to-senior-consultant
-- [x1] `consultants-in-advisory`
-  - azets.com: https://www.azets.com/en-dk/welcome/consultants-in-advisory
-- [x1] `directors-loan-account-nhs-consultants`
-  - nicholsmedical.co.uk: https://nicholsmedical.co.uk/news/directors-loan-account-nhs-consultants/
-- [x1] `expert-witness-services`
-  - ramsaybrown.com: https://ramsaybrown.com/service/expert-witness-services/
-- [x1] `family-investment-company-nhs-consultants`
-  - nicholsmedical.co.uk: https://nicholsmedical.co.uk/news/family-investment-company-nhs-consultants/
-- [x1] `how-to-prepare-for-hiring-an-interim-consultant`
-  - azets.com: https://www.azets.com/en-se/resources/blog/how-to-prepare-for-hiring-an-interim-consultant
-- [x1] `surplus-funds-nhs-consultants-private-income`
-  - nicholsmedical.co.uk: https://nicholsmedical.co.uk/news/surplus-funds-nhs-consultants-private-income/
-- [x1] `vat-consultant-tony-nickson-successfully-settles-vat-case`
-  - hawsons.co.uk: https://www.hawsons.co.uk/vat-consultant-tony-nickson-successfully-settles-vat-case/
-
-## Indemnity, subscriptions & CPD (5 gap topics, 6 competitor pages)
-
-- **[x2]** `newsletter-subscription`
-  - azets.com: https://www.azets.com/en-dk/newsletter-subscription
-  - azets.com: https://www.azets.com/en-fi/resources/newsletter-subscription
-- [x1] `claiming-professional-fees-and-subscriptions`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/claiming-professional-fees-and-subscriptions/
-- [x1] `cpds-build-back-stronger-post-pandemic-with-azets`
-  - azets.com: https://www.azets.com/en-uk/resources/case-studies/cpds-build-back-stronger-post-pandemic-with-azets
-- [x1] `mark-dempsey-fca`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/the-experts/mark-dempsey-fca
-- [x1] `subscription-scams`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/subscription-scams/
-
-## Capital allowances & equipment (6 gap topics, 6 competitor pages)
-
-- [x1] `aia-reduce-tax-bills-or-keep-cash-reserves`
-  - hawsons.co.uk: https://www.hawsons.co.uk/aia-reduce-tax-bills-or-keep-cash-reserves/
-- [x1] `are-you-investing-in-business-property-check-capital-allowances-relief-opportunities`
-  - azets.com: https://www.azets.com/en-uk/resources/are-you-investing-in-business-property-check-capital-allowances-relief-opportunities
-- [x1] `capital-allowances`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/capital-allowances/
-- [x1] `considering-capital-allowances`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/considering-capital-allowances/
-- [x1] `forthcoming-changes-annual-investment-allowances-aia`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/forthcoming-changes-annual-investment-allowances-aia/
-- [x1] `supreme-court-decision-signals-need-to-review-capital-allowance-claims`
-  - azets.com: https://www.azets.com/en-uk/resources/supreme-court-decision-signals-need-to-review-capital-allowance-claims
-
-## Pension annual & lifetime allowance (6 gap topics, 6 competitor pages)
-
-- [x1] `doctors-pensions-does-the-tapered-annual-allowance-affect-you`
-  - jcssutton.co.uk: https://www.jcssutton.co.uk/news/blog/doctors-pensions-does-the-tapered-annual-allowance-affect-you/
-- [x1] `lifetime-allowance-lta-1million-wow-but-lets-look-at-the-detail`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/lifetime-allowance-lta-1million-wow-but-lets-look-at-the-detail
-- [x1] `pension-tax-free-lump-sums`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/pension-tax-free-lump-sums/
-- [x1] `tva-nya-tillsattningar-i-azets-koncernledning`
-  - azets.com: https://www.azets.com/sv-se/resurser/nyheter/tva-nya-tillsattningar-i-azets-koncernledning
-- [x1] `urgent-pension-tax-issues-for-doctors-to-address`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/urgent-pension-tax-issues-for-doctors-to-address/
-- [x1] `what-is-the-pensions-money-purchase-annual-allowance`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/what-is-the-pensions-money-purchase-annual-allowance/
-
-## Tax planning & efficiency (6 gap topics, 6 competitor pages)
-
-- [x1] `capital-care-group-unlocking-tax-savings`
-  - azets.com: https://www.azets.com/en-uk/resources/case-studies/capital-care-group-unlocking-tax-savings
-- [x1] `income-tax-planning-reliefs-and-allowances-to-consider`
-  - azets.com: https://www.azets.com/en-uk/resources/income-tax-planning-reliefs-and-allowances-to-consider
-- [x1] `tax-planning-for-doctors-using-ltd-companies`
-  - nicholsmedical.co.uk: https://nicholsmedical.co.uk/news/tax-planning-for-doctors-using-ltd-companies/
-- [x1] `tax-planning-for-yourself-and-your-family`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/tax-planning-for-yourself-and-your-family/
-- [x1] `tax-saving-strategies-for-landlords`
-  - r-m-t.co.uk: https://r-m-t.co.uk/blog/tax-saving-strategies-for-landlords/
-- [x1] `year-end-tax-planning-checklist-for-multinationals`
-  - azets.com: https://www.azets.com/en-uk/resources/guides/year-end-tax-planning-checklist-for-multinationals
-
-## Salaried & employed doctor tax (3 gap topics, 5 competitor pages)
-
-- **[x3]** `salaried-gps`
-  - nicholsmedical.co.uk: https://nicholsmedical.co.uk/news/service/salaried-gps/
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/who-we-help/salaried-gps
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/salaried-gps/
-- [x1] `exciting-opportunity-gp-partner-salaried-gp-vacancy-at-progressive-north-northumberland-practice`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/exciting-opportunity-gp-partner-salaried-gp-vacancy-at-progressive-north-northumberland-practice
-- [x1] `just-qualified-salaried-gp-a-locum-gp-or-accept-a-partnership-as-a-gp-principal`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/just-qualified-salaried-gp-a-locum-gp-or-accept-a-partnership-as-a-gp-principal
-
-## NHS contracts & practice income (5 gap topics, 5 competitor pages)
-
-- [x1] `developing-a-federated-model-of-general-practice-pms-reviews`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/developing-a-federated-model-of-general-practice-pms-reviews
-- [x1] `enhanced-services-under-threat`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/enhanced-services-under-threat
-- [x1] `pms-funding-changes-mean-for-your-practice`
-  - hawsons.co.uk: https://www.hawsons.co.uk/pms-funding-changes-mean-for-your-practice/
-- [x1] `qof-review-service-maximise-your-income`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/qof-review-service-maximise-your-income
-- [x1] `the-global-sum-an-outdated-calculation`
-  - bw-medical.co.uk: https://www.bw-medical.co.uk/blog/the-global-sum-an-outdated-calculation
-
-## IR35 & off-payroll (doctors) (2 gap topics, 2 competitor pages)
-
-- [x1] `digitale-handboker-i-appsco`
-  - azets.com: https://www.azets.com/no-no/tjenester/teknologitjenester/systemlosninger/digitale-handboker-i-appsco
-- [x1] `what-are-the-off-payroll-working-rules`
-  - medicaccountants.co.uk: https://medicaccountants.co.uk/what-are-the-off-payroll-working-rules/
-
-## GP pension certification (Type 1/2) (1 gap topics, 1 competitor pages)
-
-- [x1] `type-1-pension-certificate`
-  - sial-accountants.co.uk: https://sial-accountants.co.uk/type-1-pension-certificate/
-
-## Junior & training doctor tax (1 gap topics, 1 competitor pages)
-
-- [x1] `vacancy-trainee-chartered-accountant`
-  - jcssutton.co.uk: https://www.jcssutton.co.uk/news/blog/vacancy-trainee-chartered-accountant/
+- `10-key-tips-for-starting-out-as-a-locum-doctor` — https://kudosaccounting.co.uk/10-key-tips-for-starting-out-as-a-locum-doctor/
+- `5-accounting-mistakes-doctors-make` — https://kudosaccounting.co.uk/5-accounting-mistakes-doctors-make/
+- `about-us` — https://kudosaccounting.co.uk/about-us/
+- `ai-opportunities-for-doctor-founders` — https://kudosaccounting.co.uk/ai-opportunities-for-doctor-founders/
+- `april-2026-cost-increases-community-pharmacy` — https://kudosaccounting.co.uk/april-2026-cost-increases-community-pharmacy/
+- `bookkeeping-and-accounting-whats-the-difference-and-which-do-you-need` — https://kudosaccounting.co.uk/bookkeeping-and-accounting-whats-the-difference-and-which-do-you-need/
+- `bookkeeping-for-doctors-and-dentists` — https://kudosaccounting.co.uk/bookkeeping-for-doctors-and-dentists/
+- `bookkeeping-for-healthcare` — https://kudosaccounting.co.uk/bookkeeping-for-healthcare/
+- `capital-allowances-changes-april-2026` — https://kudosaccounting.co.uk/capital-allowances-changes-april-2026/
+- `capital-allowances-medical-equipment-healthcare-practices` — https://kudosaccounting.co.uk/capital-allowances-medical-equipment-healthcare-practices/
+- `care-home-financial-management-2026` — https://kudosaccounting.co.uk/care-home-financial-management-2026/
+- `dental-practice` — https://kudosaccounting.co.uk/category/dental-practice/
+- `healthcare-finance` — https://kudosaccounting.co.uk/category/healthcare-finance/
+- `internal-audit` — https://kudosaccounting.co.uk/category/internal-audit/
+- `medical-accounting` — https://kudosaccounting.co.uk/category/medical-accounting/
+- `nhs-finance` — https://kudosaccounting.co.uk/category/nhs-finance/
+- `personal-tax` — https://kudosaccounting.co.uk/category/personal-tax/
+- `tax-compliance` — https://kudosaccounting.co.uk/category/tax-compliance/
+- `christmas-business-planning-ending-the-year-well-and-starting-the-next-one-with-confidence` — https://kudosaccounting.co.uk/christmas-business-planning-ending-the-year-well-and-starting-the-next-one-with-confidence/
+- `community-pharmacy-cpcf-settlement-2026-27` — https://kudosaccounting.co.uk/community-pharmacy-cpcf-settlement-2026-27/
+- `companies-house-id-verification-what-healthcare-business-owners-need-to-know` — https://kudosaccounting.co.uk/companies-house-id-verification-what-healthcare-business-owners-need-to-know/
+- `contact-us` — https://kudosaccounting.co.uk/contact-us/
+- `cosmetic-dentistry-vat-guide-2026` — https://kudosaccounting.co.uk/cosmetic-dentistry-vat-guide-2026/
+- `ddrb-pay-award-2026-gp-dental-practice-finances` — https://kudosaccounting.co.uk/ddrb-pay-award-2026-gp-dental-practice-finances/
+- `dental-associate-allowable-expenses-hmrc` — https://kudosaccounting.co.uk/dental-associate-allowable-expenses-hmrc/
+- `dentist-tax-tips` — https://kudosaccounting.co.uk/dentist-tax-tips/
+- `dentists-accountants-london` — https://kudosaccounting.co.uk/dentists-accountants-london/
+- `dividend-tax-increase-2026-healthcare-practice-owners` — https://kudosaccounting.co.uk/dividend-tax-increase-2026-healthcare-practice-owners/
+- `driving-forward-why-electric-cars-make-sense-for-your-business` — https://kudosaccounting.co.uk/driving-forward-why-electric-cars-make-sense-for-your-business/
+- `employer-nic-changes-april-2026-healthcare` — https://kudosaccounting.co.uk/employer-nic-changes-april-2026-healthcare/
+- `essential-accounting-tips-for-medical-professionals-streamlining-your-practices-financial-health` — https://kudosaccounting.co.uk/essential-accounting-tips-for-medical-professionals-streamlining-your-practices-financial-health/
+- `government-confirms-tax-increases-to-cover-social-care-costs` — https://kudosaccounting.co.uk/government-confirms-tax-increases-to-cover-social-care-costs/
+- `gp-contract-2026-27-practice-finances` — https://kudosaccounting.co.uk/gp-contract-2026-27-practice-finances/
+- `gp-practice-annual-leave-bank-holiday-pay-2026` — https://kudosaccounting.co.uk/gp-practice-annual-leave-bank-holiday-pay-2026/
+- `gp-practice-internal-audit-2026` — https://kudosaccounting.co.uk/gp-practice-internal-audit-2026/
+- `healthcare-accountants` — https://kudosaccounting.co.uk/healthcare-accountants/
+- `healthcare-accounting-trends` — https://kudosaccounting.co.uk/healthcare-accounting-trends/
+- `healthcare-accounting-vs-general-accounting` — https://kudosaccounting.co.uk/healthcare-accounting-vs-general-accounting/
+- `healthcare-bookkeeping-in-2026-cloud-software-vs-traditional-methods` — https://kudosaccounting.co.uk/healthcare-bookkeeping-in-2026-cloud-software-vs-traditional-methods/
+- `healthcare-payroll-compliance-uk-for-locums-contractors-london` — https://kudosaccounting.co.uk/healthcare-payroll-compliance-uk-for-locums-contractors-london/
+- `healthcare-recruitment` — https://kudosaccounting.co.uk/healthcare-recruitment/
+- `hmrc-paye-tax-code-changes-doctors-2026` — https://kudosaccounting.co.uk/hmrc-paye-tax-code-changes-doctors-2026/
+- `hmrc-rules-for-medical-professionals` — https://kudosaccounting.co.uk/hmrc-rules-for-medical-professionals/
+- `how-can-physicians-lower-their-taxes` — https://kudosaccounting.co.uk/how-can-physicians-lower-their-taxes/
+- `how-current-nhs-and-policy-changes-could-impact-your-healthcare-business` — https://kudosaccounting.co.uk/how-current-nhs-and-policy-changes-could-impact-your-healthcare-business/
+- `how-e-invoicing-rules-will-impact-vat-for-healthcare-practices` — https://kudosaccounting.co.uk/how-e-invoicing-rules-will-impact-vat-for-healthcare-practices/
+- `how-to-prepare-for-an-hmrc-audit-as-a-healthcare-business` — https://kudosaccounting.co.uk/how-to-prepare-for-an-hmrc-audit-as-a-healthcare-business/
+- `how-to-switch-to-a-specialist-healthcare-accountant` — https://kudosaccounting.co.uk/how-to-switch-to-a-specialist-healthcare-accountant/
+- `internal-audit-consulting-services` — https://kudosaccounting.co.uk/internal-audit-consulting-services/
+- `ir35-healthcare-workers-2026-gp-practices-locums` — https://kudosaccounting.co.uk/ir35-healthcare-workers-2026-gp-practices-locums/
+- `is-it-worth-staying-in-the-nhs-pension-scheme` — https://kudosaccounting.co.uk/is-it-worth-staying-in-the-nhs-pension-scheme/
+- `key-takeaways-from-the-2024-autumn-budget-for-the-health-and-care-workforce` — https://kudosaccounting.co.uk/key-takeaways-from-the-2024-autumn-budget-for-the-health-and-care-workforce/
+- `london-tax-deadlines-for-doctors` — https://kudosaccounting.co.uk/london-tax-deadlines-for-doctors/
+- `making-tax-digital-april-2026` — https://kudosaccounting.co.uk/making-tax-digital-april-2026/
+- `managing-your-accounts-and-tax-as-a-self-employed-dentist-hygienist-or-dental-therapist` — https://kudosaccounting.co.uk/managing-your-accounts-and-tax-as-a-self-employed-dentist-hygienist-or-dental-therapist/
+- `mandatory-payrolling-benefits-in-kind-2027-healthcare` — https://kudosaccounting.co.uk/mandatory-payrolling-benefits-in-kind-2027-healthcare/
+- `medical-accountants-london` — https://kudosaccounting.co.uk/medical-accountants-london/
+- `monthly-bookkeeping-checklist` — https://kudosaccounting.co.uk/monthly-bookkeeping-checklist/
+- `navigating-financial-success-how-to-pick-the-right-accounting-firm-for-your-medical-practice` — https://kudosaccounting.co.uk/navigating-financial-success-how-to-pick-the-right-accounting-firm-for-your-medical-practice/
+- `navigating-pensions-essential-guide-for-medical-professionals` — https://kudosaccounting.co.uk/navigating-pensions-essential-guide-for-medical-professionals/
+- `navigating-vat-for-medical-professionals-key-insights-and-practical-tips` — https://kudosaccounting.co.uk/navigating-vat-for-medical-professionals-key-insights-and-practical-tips/
+- `nhs-dental-contract-reform-2026-practice-owners` — https://kudosaccounting.co.uk/nhs-dental-contract-reform-2026-practice-owners/
+- `nhs-doctor-going-private-2026` — https://kudosaccounting.co.uk/nhs-doctor-going-private-2026/
+- `nhs-funding-settlement-2026-2029` — https://kudosaccounting.co.uk/nhs-funding-settlement-2026-2029/
+- `over-declared-vat-after-locum-doctors-tribunal-decision` — https://kudosaccounting.co.uk/over-declared-vat-after-locum-doctors-tribunal-decision/
+- `payroll-for-healthcare-uk` — https://kudosaccounting.co.uk/payroll-for-healthcare-uk/
+- `payroll-for-healthcare` — https://kudosaccounting.co.uk/payroll-for-healthcare/
+- `pension-reforms-what-medical-professionals-should-know` — https://kudosaccounting.co.uk/pension-reforms-what-medical-professionals-should-know/
+- `personal-tax-healthcare` — https://kudosaccounting.co.uk/personal-tax-healthcare/
+- `pharmacy-accountants` — https://kudosaccounting.co.uk/pharmacy-accountants/
+- `pharmacy-business-expenses` — https://kudosaccounting.co.uk/pharmacy-business-expenses/
+- `pharmacy-financial-crisis-2026` — https://kudosaccounting.co.uk/pharmacy-financial-crisis-2026/
+- `pharmacy-first-expansion-2026` — https://kudosaccounting.co.uk/pharmacy-first-expansion-2026/
+- `pharmacy-funding-2026-27-uk-cpcf-update` — https://kudosaccounting.co.uk/pharmacy-funding-2026-27-uk-cpcf-update/
+- `pharmacy-independent-prescribing-income-2026` — https://kudosaccounting.co.uk/pharmacy-independent-prescribing-income-2026/
+- `pharmacy-nhs-dispensing-income-clawbacks-reconciliations` — https://kudosaccounting.co.uk/pharmacy-nhs-dispensing-income-clawbacks-reconciliations/
+- `poor-accounting-in-a-healthcare-practice` — https://kudosaccounting.co.uk/poor-accounting-in-a-healthcare-practice/
+- `preparing-for-mandatory-payrolling-of-benefits-what-employers-need-to-know` — https://kudosaccounting.co.uk/preparing-for-mandatory-payrolling-of-benefits-what-employers-need-to-know/
+- `professional-clearance-accountants` — https://kudosaccounting.co.uk/professional-clearance-accountants/
+- `qa-tax-liability-on-loan-to-shareholder` — https://kudosaccounting.co.uk/qa-tax-liability-on-loan-to-shareholder/
+- `recent-financial-and-compliance-changes-for-healthcare-providers` — https://kudosaccounting.co.uk/recent-financial-and-compliance-changes-for-healthcare-providers/
+- `selling-pharmacy-uk-2026-tax-cgt` — https://kudosaccounting.co.uk/selling-pharmacy-uk-2026-tax-cgt/
+- `setting-up-a-private-clinic-in-london` — https://kudosaccounting.co.uk/setting-up-a-private-clinic-in-london/
+- `spring-statement-2026-healthcare` — https://kudosaccounting.co.uk/spring-statement-2026-healthcare/
+- `starting-pharmacy-business-uk` — https://kudosaccounting.co.uk/starting-pharmacy-business-uk/
+- `tax-planning-for-healthcare-professionals-and-organisations-in-2025-26` — https://kudosaccounting.co.uk/tax-planning-for-healthcare-professionals-and-organisations-in-2025-26/
+- `tax-season-checklist-healthcare-professionals` — https://kudosaccounting.co.uk/tax-season-checklist-healthcare-professionals/
+- `timely-payroll-a-foundation-for-employee-trust-engagement-and-business-success` — https://kudosaccounting.co.uk/timely-payroll-a-foundation-for-employee-trust-engagement-and-business-success/
+- `understanding-hmrcs-60-day-capital-gains-tax-reporting-rule` — https://kudosaccounting.co.uk/understanding-hmrcs-60-day-capital-gains-tax-reporting-rule/
+- `vat-for-medical-professionals` — https://kudosaccounting.co.uk/vat-for-medical-professionals/
+- `vat-specialist` — https://kudosaccounting.co.uk/vat-specialist/
+- `why-doctors-dentists-lose-millions-on-investments` — https://kudosaccounting.co.uk/why-doctors-dentists-lose-millions-on-investments/
+- `why-healthcare-professionals-need-specialist-accountants` — https://kudosaccounting.co.uk/why-healthcare-professionals-need-specialist-accountants/
+- `why-healthcare-professionals-should-choose-a-specialist-medical-accountant-in-2026` — https://kudosaccounting.co.uk/why-healthcare-professionals-should-choose-a-specialist-medical-accountant-in-2026/
+- `writing-down-allowance-14-percent-2026-healthcare-practices` — https://kudosaccounting.co.uk/writing-down-allowance-14-percent-2026-healthcare-practices/
