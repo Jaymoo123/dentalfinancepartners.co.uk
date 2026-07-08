@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-07-09"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "Property Business Structure: Sole Trader vs Ltd vs Partnership"
+metaTitle: "Property Business Structure: Sole Trader vs Ltd vs LLP"
 metaDescription: "Personal name, limited company or partnership? Three-way tax comparison before your first property buy. S.24 wedge, CT advantage, SDLT restructuring cost."
 altText: "UK property investor reviewing structure options between sole trader personal name, limited company and partnership before buying rental property"
 image: ""
