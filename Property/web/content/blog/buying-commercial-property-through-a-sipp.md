@@ -176,7 +176,7 @@ faqs:
 
 <p>A member who already owns a commercial property personally (or through a partnership) may be able to contribute it to a SIPP or SSAS as an in-specie contribution rather than purchasing it separately. The mechanics:</p>
 
-<p><strong>Annual allowance.</strong> The market value of the property at the date of contribution counts as a pension contribution for annual allowance purposes. The annual allowance for 2026/27 is £60,000. Unused annual allowance from the prior three tax years can be carried forward, giving a potential combined contribution of up to £240,000 in a single year (subject to available carry-forward headroom and the requirement that relevant UK earnings equal or exceed the gross contribution in the year of contribution). Where the property value exceeds available headroom, a staggered contribution across multiple tax years may be possible in principle, though this requires legal and structural advice.</p>
+<p><strong>Annual allowance.</strong> The market value of the property at the date of contribution counts as a pension contribution for annual allowance purposes. The annual allowance for 2026/27 is £60,000. Unused annual allowance from the prior three tax years can be carried forward, giving a potential combined contribution of up to £240,000 in a single year (subject to available carry-forward headroom and the requirement that relevant UK earnings equal or exceed the gross contribution in the year of contribution). Where the property value exceeds available headroom, the transfer can be staggered. A £180,000 property against a £60,000 annual allowance takes a minimum of three tax years (three part-transfers of undivided shares), and each in-specie tranche is a disposal at market value for CGT in the year it moves, so the donor crystallises gains in stages. The conveyancing and valuation costs run three times over; take structural advice before choosing the stagger over a cash contribution.</p>
 
 <p><strong>Annual allowance vs lump-sum allowances.</strong> The annual allowance (£60,000) governs the contribution stage. The lump-sum allowances govern the benefit crystallisation stage. These are distinct limits:</p>
 
@@ -185,7 +185,7 @@ faqs:
 <tr><th>Allowance</th><th>Amount</th><th>Statutory anchor</th><th>What it governs</th></tr>
 </thead>
 <tbody>
-<tr><td>Annual Allowance</td><td>£60,000</td><td>HP §8 (per annum)</td><td>Annual contributions (including in-specie)</td></tr>
+<tr><td>Annual Allowance</td><td>£60,000</td><td>FA 2004 ss.227-228 (per annum)</td><td>Annual contributions (including in-specie)</td></tr>
 <tr><td>Lump Sum Allowance (LSA)</td><td>£268,275</td><td>ITEPA 2003 s.637P (inserted FA 2024 Sch 9)</td><td>Tax-free cash (PCLS) at retirement</td></tr>
 <tr><td>Lump Sum and Death Benefit Allowance (LSDBA)</td><td>£1,073,100</td><td>ITEPA 2003 s.637R (inserted FA 2024 Sch 9)</td><td>Death benefits (tax-free element)</td></tr>
 </tbody>

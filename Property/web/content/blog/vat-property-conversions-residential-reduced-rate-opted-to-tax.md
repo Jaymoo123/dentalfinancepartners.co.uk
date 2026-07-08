@@ -106,7 +106,7 @@ faqs:
   </tbody>
 </table>
 
-<h2>What counts as a qualifying conversion</h2>
+<h2>The qualifying conversion types under Group 6, and what falls outside them</h2>
 
 <p>The 5% rate is available to the contractor supplying the conversion services, not to the developer directly. The developer pays 5% VAT to the contractor and, if VAT-registered and making taxable supplies, recovers that 5% as input tax. The reduced rate is therefore most valuable to the developer at the recovery stage, not because it reduces net cost in isolation.</p>
 
@@ -228,7 +228,7 @@ faqs:
   <li>The claim is a one-time refund: a subsequent disposal of the converted property by the individual does not trigger further VAT obligations provided the building was genuinely for personal occupation.</li>
 </ul>
 
-<p>The section 35 scheme is not available where the conversion is carried out as part of a business activity (even an unregistered business). If the individual intends to sell or let the converted property, the scheme does not apply and normal VAT registration and recovery rules govern.</p>
+<p>The trap that catches most self-converters: intending to sell or let the finished property puts the project inside a business activity, and the section 35 scheme is only available for conversions done otherwise than in the course of business. Genuine personal occupation qualifies; a change of mind towards letting part-way through the project can retrospectively undermine the claim, and normal VAT registration and recovery rules take over.</p>
 
 <h2>Key authority links</h2>
 
