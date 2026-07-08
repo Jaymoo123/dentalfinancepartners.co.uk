@@ -3999,7 +3999,7 @@ Verified by the manager at legislation.gov.uk + the GOV.UK measure page on 2026-
 ## 40. Pension lump-sum allowances + SIPP/SSAS property rules — Wave 10 lock (added 2026-07-08, manager source-verified)
 
 - **Lifetime allowance abolished** from 6 April 2024 (F(No.2)A 2023 ss.18-19; consequential FA 2024 s.14 + Sch 9).
-- **Lump Sum Allowance: £268,275** (FA 2004 s.637P, inserted by FA 2024 Sch 9). **Lump Sum and Death Benefit Allowance: £1,073,100** (s.637R). Availability mechanics: ss.637Q/637S.
+- **Lump Sum Allowance: £268,275** (ITEPA 2003 s.637P, inserted by FA 2024 Sch 9). **Lump Sum and Death Benefit Allowance: £1,073,100** (ITEPA 2003 s.637R, same). Availability mechanics: ss.637Q/637S. **Correction 2026-07-09:** prior text cited "FA 2004 s.637P/637R" — verified at legislation.gov.uk these sections are in ITEPA 2003, not FA 2004; the inserting Act (FA 2024 Sch 9) was correct.
 - **SIPP borrowing cap:** FA 2004 s.182 formula (APB + PB) / VA ≤ 0.5 — total borrowing max 50% of net scheme assets.
 - **Residential property is "taxable property"** for investment-regulated schemes (FA 2004 Sch 29A); acquisition triggers unauthorised-payment charges under FA 2004 ss.208-209 (55% member charge + 15% scheme sanction surcharge — effective up to ~70%). Commercial property is permitted; connected-party purchases must be at market value; rent paid to the scheme must be arm's length.
 - Annual allowance £60,000 remains per §8.

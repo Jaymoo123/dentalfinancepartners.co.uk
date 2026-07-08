@@ -100,7 +100,7 @@ faqs:
 
 <h2>CIHC status: the CT rate determination</h2>
 
-<p>Before modelling any income routing through a property FIC, the corporation tax rate must be established. This depends on whether the company is a close investment-holding company (CIHC) under <a href="https://www.legislation.gov.uk/ukpga/2010/4/section/18N" rel="nofollow noopener" target="_blank">CTA 2010 s.18N</a>. A close company is not a CIHC "if it exists wholly or mainly for one or more of the permitted purposes," and the key permitted purpose for property FICs is "making investments in land" where the land is commercially let to persons who are not connected with the company within the meaning of CTA 2010 s.1122.</p>
+<p>Before modelling any income routing through a property FIC, the corporation tax rate must be established. This depends on whether the company is a close investment-holding company (CIHC) under <a href="https://www.legislation.gov.uk/ukpga/2010/4/section/18N" rel="nofollow noopener" target="_blank">CTA 2010 s.18N</a>. A close company is not a CIHC "if it exists wholly or mainly for one or more of the permitted purposes," and the key permitted purpose for property FICs is "making investments in land" where the land is commercially let to persons who are not connected with the company within the meaning of CTA 2010 s.1122. The connectedness condition extends beyond direct connected parties: a letting to the spouse or civil partner of a connected person, or to a relative (brother, sister, ancestor or lineal descendant) of a connected person, also falls outside the qualifying purpose and pushes the company into CIHC status.</p>
 
 <p>The distinction in practice turns on who the tenants are:</p>
 
@@ -186,7 +186,7 @@ faqs:
 
 <ol>
   <li>The director (or directors) confirm in writing that the company has sufficient distributable reserves to support the dividend. This is checked against current management accounts or draft year-end accounts.</li>
-  <li>A board resolution (or written resolution under CA 2006 s.288 where the company has only one director) is passed specifying: (a) the class of shares receiving the dividend; (b) the amount per share; and (c) the payment date.</li>
+  <li>A board resolution (or written resolution under CA 2006 s.288, available to all private companies) is passed specifying: (a) the class of shares receiving the dividend; (b) the amount per share; and (c) the payment date.</li>
   <li>The resolution is dated and minuted. The minute records the distributable-reserves check, the class, the amount per share, and the payment date. This minute is the legal record of the dividend and must be retained in the company's statutory books.</li>
   <li>The company transfers the dividend from its bank account to the relevant shareholder(s) on the payment date, or credits the amount to the shareholder's director's loan account if the shareholder is also a director.</li>
   <li>No shareholder in any other class receives a distribution on that date.</li>

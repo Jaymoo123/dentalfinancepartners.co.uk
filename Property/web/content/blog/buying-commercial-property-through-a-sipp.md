@@ -6,7 +6,7 @@ date: "2026-07-09"
 author: "Property Tax Partners Editorial Team"
 category: "Portfolio Management"
 metaTitle: "Buying Commercial Property Through a SIPP: Tax Guide 2026"
-metaDescription: "SIPP and SSAS commercial property: taxable property prohibition, 50% borrowing cap, rent-back mechanics, in-specie contributions and IHT planning. 2026 guide."
+metaDescription: "SIPP and SSAS commercial property: taxable property prohibition, 50% borrowing cap, rent-back mechanics, in-specie contributions and IHT planning."
 altText: "Commercial office building purchased through a SIPP pension scheme with tax-free rental income flowing back to the scheme"
 image: ""
 h1: "Buying Commercial Property Through a SIPP or SSAS: The Complete Tax Guide"
@@ -33,9 +33,9 @@ faqs:
   - question: "Can a SIPP or SSAS hold commercial property jointly with the member personally?"
     answer: "Yes. Fractional interests in commercial property (where the SIPP owns part and the member or another party owns the rest) are permitted. Each party's share must be clearly documented and the SIPP's interest must be managed for the benefit of the scheme beneficiaries. Rental income and costs are apportioned by ownership share. This is useful where the full property value exceeds the SIPP's buying power even with maximum borrowing."
   - question: "What happens to the commercial property when I retire?"
-    answer: "The commercial property remains inside the SIPP. You can take income from the rental income stream in drawdown, or take a pension commencement lump sum (PCLS) up to your Lump Sum Allowance (£268,275 per FA 2004 s.637P), with the rest remaining in drawdown. On eventual sale, the gain is CGT-exempt inside the scheme (TCGA 1992 s.271(1)). Liquidity planning is important: the SIPP may need cash reserves or a property sale to fund the PCLS if rental income is the only income source."
+    answer: "The commercial property remains inside the SIPP. You can take income from the rental income stream in drawdown, or take a pension commencement lump sum (PCLS) up to your Lump Sum Allowance (£268,275 per ITEPA 2003 s.637P), with the rest remaining in drawdown. On eventual sale, the gain is CGT-exempt inside the scheme (TCGA 1992 s.271(1)). Liquidity planning is important: the SIPP may need cash reserves or a property sale to fund the PCLS if rental income is the only income source."
   - question: "Is the annual allowance or the Lump Sum Allowance the relevant limit for contributions?"
-    answer: "The annual allowance (£60,000 for 2026/27) controls how much you can contribute tax-effectively in a given year. The Lump Sum Allowance (LSA, £268,275 per FA 2004 s.637P) controls how much tax-free cash you can take at retirement. The Lump Sum and Death Benefit Allowance (LSDBA, £1,073,100 per s.637R) controls death benefits. These are different limits operating at different stages. When contributing property in-specie, the annual allowance is the relevant cap."
+    answer: "The annual allowance (£60,000 for 2026/27) controls how much you can contribute tax-effectively in a given year. The Lump Sum Allowance (LSA, £268,275 per ITEPA 2003 s.637P) controls how much tax-free cash you can take at retirement. The Lump Sum and Death Benefit Allowance (LSDBA, £1,073,100 per ITEPA 2003 s.637R) controls death benefits. These are different limits operating at different stages. When contributing property in-specie, the annual allowance is the relevant cap."
   - question: "What is the ATED position for commercial property held in a SIPP?"
     answer: "ATED (Annual Tax on Enveloped Dwellings) applies to residential dwellings worth over £500,000 held by non-natural persons. Commercial property is not a dwelling for ATED purposes, so ATED does not apply to commercial property inside a SIPP. This is distinct from the taxable property rules: both ATED and the Schedule 29A taxable property rules separately prohibit residential property holding (from different angles), but neither creates any liability for commercial property."
 ---
@@ -183,8 +183,8 @@ faqs:
 </thead>
 <tbody>
 <tr><td>Annual Allowance</td><td>£60,000</td><td>HP §8 (per annum)</td><td>Annual contributions (including in-specie)</td></tr>
-<tr><td>Lump Sum Allowance (LSA)</td><td>£268,275</td><td>FA 2004 s.637P (inserted FA 2024 Sch 9)</td><td>Tax-free cash (PCLS) at retirement</td></tr>
-<tr><td>Lump Sum and Death Benefit Allowance (LSDBA)</td><td>£1,073,100</td><td>FA 2004 s.637R (inserted FA 2024 Sch 9)</td><td>Death benefits (tax-free element)</td></tr>
+<tr><td>Lump Sum Allowance (LSA)</td><td>£268,275</td><td>ITEPA 2003 s.637P (inserted FA 2024 Sch 9)</td><td>Tax-free cash (PCLS) at retirement</td></tr>
+<tr><td>Lump Sum and Death Benefit Allowance (LSDBA)</td><td>£1,073,100</td><td>ITEPA 2003 s.637R (inserted FA 2024 Sch 9)</td><td>Death benefits (tax-free element)</td></tr>
 </tbody>
 </table>
 
@@ -194,11 +194,11 @@ faqs:
 
 <h2>Lump-sum allowances and what happens at retirement</h2>
 
-<p>When Marcus eventually crystallises his pension benefits, the commercial property remains inside the SIPP. He can take income from the rental income stream through drawdown without selling the property. If he wants a tax-free cash sum, he can take a pension commencement lump sum (PCLS) up to his remaining Lump Sum Allowance (£268,275 under FA 2004 s.637P, inserted by FA 2024 Schedule 9). The PCLS is calculated against the total fund value, not specifically the property value.</p>
+<p>When Marcus eventually crystallises his pension benefits, the commercial property remains inside the SIPP. He can take income from the rental income stream through drawdown without selling the property. If he wants a tax-free cash sum, he can take a pension commencement lump sum (PCLS) up to his remaining Lump Sum Allowance (£268,275 under ITEPA 2003 s.637P, inserted by FA 2024 Schedule 9). The PCLS is calculated against the total fund value, not specifically the property value.</p>
 
 <p>The commercial property is part of the fund value for PCLS calculation purposes. Where the SIPP's primary asset is an illiquid commercial property, the SIPP trustee or provider may need to fund the PCLS from cash reserves built up from rental income, from borrowing against the property, or ultimately from a partial or full sale of the property. Liquidity planning is an important aspect of SIPP commercial property investment that is often underweighted at acquisition.</p>
 
-<p>On death before crystallisation, the pension fund passes to nominated beneficiaries outside the member's estate. The tax-free element is capped by the LSDBA (£1,073,100 per s.637R). The excess is taxed as income of the beneficiary. The commercial property inside the SIPP is part of the death benefit fund; beneficiaries may choose to retain it as a pension asset or have it sold and the proceeds distributed.</p>
+<p>On death before crystallisation, the pension fund passes to nominated beneficiaries outside the member's estate. The tax-free element is capped by the LSDBA (£1,073,100 per ITEPA 2003 s.637R). The excess is taxed as income of the beneficiary. The commercial property inside the SIPP is part of the death benefit fund; beneficiaries may choose to retain it as a pension asset or have it sold and the proceeds distributed.</p>
 
 <h2>IHT planning with SIPP commercial property</h2>
 
@@ -283,14 +283,14 @@ faqs:
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 <h3 itemprop="name">What happens to the commercial property when I retire?</h3>
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<p itemprop="text">The commercial property remains inside the SIPP. You can take income from the rental income stream in drawdown, or take a pension commencement lump sum (PCLS) up to your Lump Sum Allowance (£268,275 per FA 2004 s.637P), with the rest remaining in drawdown. On eventual sale, the gain is CGT-exempt inside the scheme (TCGA 1992 s.271(1)). Liquidity planning is important: the SIPP may need cash reserves or a property sale to fund the PCLS if rental income is the only income source.</p>
+<p itemprop="text">The commercial property remains inside the SIPP. You can take income from the rental income stream in drawdown, or take a pension commencement lump sum (PCLS) up to your Lump Sum Allowance (£268,275 per ITEPA 2003 s.637P), with the rest remaining in drawdown. On eventual sale, the gain is CGT-exempt inside the scheme (TCGA 1992 s.271(1)). Liquidity planning is important: the SIPP may need cash reserves or a property sale to fund the PCLS if rental income is the only income source.</p>
 </div>
 </div>
 
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 <h3 itemprop="name">Is the annual allowance or the Lump Sum Allowance the relevant limit for contributions?</h3>
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<p itemprop="text">The annual allowance (£60,000 for 2026/27) controls how much you can contribute tax-effectively in a given year. The Lump Sum Allowance (LSA, £268,275 per FA 2004 s.637P) controls how much tax-free cash you can take at retirement. The Lump Sum and Death Benefit Allowance (LSDBA, £1,073,100 per s.637R) controls death benefits. These are different limits operating at different stages. When contributing property in-specie, the annual allowance is the relevant cap.</p>
+<p itemprop="text">The annual allowance (£60,000 for 2026/27) controls how much you can contribute tax-effectively in a given year. The Lump Sum Allowance (LSA, £268,275 per ITEPA 2003 s.637P) controls how much tax-free cash you can take at retirement. The Lump Sum and Death Benefit Allowance (LSDBA, £1,073,100 per ITEPA 2003 s.637R) controls death benefits. These are different limits operating at different stages. When contributing property in-specie, the annual allowance is the relevant cap.</p>
 </div>
 </div>
 
