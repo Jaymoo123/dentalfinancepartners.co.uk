@@ -317,16 +317,27 @@ def step_review_outcomes() -> dict:
         rp = httpx.get(
             f"{SUPABASE_URL}/rest/v1/vw_change_performance",
             headers=h,
-            params={
-                "select": "perf_date,impressions,clicks,position",
-                "change_id": f"eq.{change['id']}",
-                "days_since_shipped": "gte.0",
-            },
+            params=[
+                ("select", "perf_date,impressions,clicks,position"),
+                ("change_id", f"eq.{change['id']}"),
+                # cap at the baseline window (28d) so pre/post compare like-for-like
+                ("days_since_shipped", "gte.0"),
+                ("days_since_shipped", "lte.28"),
+            ],
             timeout=20.0,
         )
         rows = rp.json() if rp.status_code < 300 else []
         if not rows:
-            verdicts.append({"change_id": change["id"], "verdict": "neutral", "reason": "no post-ship GSC rows"})
+            # distinguish "no data" from "no movement" — a page with zero GSC rows
+            # either never impressed (thin) or the target_url join is broken
+            verdicts.append({"change_id": change["id"], "verdict": "neutral", "reason": "no_signal: no post-ship GSC rows"})
+            httpx.patch(
+                f"{SUPABASE_URL}/rest/v1/optimisation_changes",
+                headers={**h, "Prefer": "return=minimal", "Content-Type": "application/json"},
+                params={"id": f"eq.{change['id']}"},
+                json={"outcome_verdict": "neutral", "outcome_notes": json.dumps({"reason": "no_signal_no_post_ship_rows"})},
+                timeout=15.0,
+            )
             continue
         post_imp = sum(int(x.get("impressions") or 0) for x in rows)
         post_clicks = sum(int(x.get("clicks") or 0) for x in rows)
@@ -337,7 +348,13 @@ def step_review_outcomes() -> dict:
         click_delta = post_clicks - baseline_clicks
         pos_delta = baseline_pos - avg_pos  # positive = improved (lower number)
 
+        # Maturation guard: a page with near-zero pre-change history can't get a
+        # clean verdict — its growth is discovery/maturation, not the meta change.
+        immature = baseline_imp < 30
         if click_delta > 0 and (imp_delta >= 0 or pos_delta >= 0):
+            verdict = "positive"
+        elif imp_delta > 0 and baseline_imp > 0 and imp_delta >= 0.25 * baseline_imp and click_delta >= 0:
+            # visibility win without click loss counts as positive movement
             verdict = "positive"
         elif click_delta < 0 and pos_delta < -2:
             verdict = "negative"
@@ -359,7 +376,7 @@ def step_review_outcomes() -> dict:
             params={"id": f"eq.{change['id']}"},
             json={
                 "outcome_verdict": verdict,
-                "outcome_notes": json.dumps({"imp_delta": imp_delta, "click_delta": click_delta, "pos_delta": pos_delta}),
+                "outcome_notes": json.dumps({"imp_delta": imp_delta, "click_delta": click_delta, "pos_delta": pos_delta, "immature_baseline": immature}),
             },
             timeout=15.0,
         )

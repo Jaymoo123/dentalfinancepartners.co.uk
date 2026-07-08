@@ -160,6 +160,8 @@ def page_url_for(slug: str) -> str:
         m = re.search(r"^category:\s*[\"']?(.+?)[\"']?\s*$", f.read_text(encoding="utf-8"), re.MULTILINE)
         if m:
             cat = slugify_category(m.group(1))
+    if SITE == "medical":
+        return f"/blog/{slug}"  # medical serves FLAT routes; categorised paths never match GSC
     return f"/blog/{cat}/{slug}"
 
 
@@ -212,6 +214,8 @@ def main():
     ap.add_argument("--slugs", nargs="+", help="explicit slugs (instead of --batch manifest)")
     ap.add_argument("--rewrite-date", default=datetime.date.today().isoformat(),
                     help="go-live date YYYY-MM-DD (default today)")
+    ap.add_argument("--rewrite-type", default="rewrite", choices=["rewrite", "redirect", "net_new"],
+                    help="what kind of change is being monitored (net_new = brand-new page, baseline ~0)")
     ap.add_argument("--commit", action="store_true")
     ap.add_argument("--print-urls", action="store_true",
                     help="print the full canonical URL for each batch slug and exit (no DB writes); for IndexNow")
@@ -234,7 +238,7 @@ def main():
     base_start = (go_live - datetime.timedelta(days=BASELINE_WINDOW_DAYS)).isoformat()
     base_end = (go_live - datetime.timedelta(days=1)).isoformat()
     pulled_at = datetime.datetime.now(datetime.timezone.utc).isoformat()
-    note = f"Track 2 {a.batch or 'manual'} REWRITE; registered {datetime.date.today().isoformat()} (G+Bing baseline)"
+    note = f"Track 2 {a.batch or 'manual'} {a.rewrite_type.upper()}; registered {datetime.date.today().isoformat()} (G+Bing baseline)"
 
     existing = {r["slug"] for r in sql(
         f"SELECT slug FROM monitored_pages WHERE site_key='{SITE}' AND slug IN ("
@@ -261,7 +265,7 @@ def main():
 
     values = ",\n".join(
         f"({esc(SITE)},{esc(r['slug'])},{esc(r['page_url'])},{esc(a.rewrite_date)},"
-        f"{esc(monitor_until)},'rewrite',NULL,"
+        f"{esc(monitor_until)},{esc(a.rewrite_type)},NULL,"
         f"{r['gc']},{r['gi']},{num(r['gp'])},{BASELINE_WINDOW_DAYS},{esc(pulled_at)},'active',{esc(note)},"
         f"{r['bc']},{r['bi']},{num(r['bp'])},{esc(pulled_at)})"
         for r in fresh)

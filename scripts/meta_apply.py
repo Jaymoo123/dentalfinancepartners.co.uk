@@ -140,6 +140,22 @@ def _validate_proposal(proposal: dict, abs_path: Path) -> list[str]:
 # Apply adapter (thin wrapper over run_apply_lifecycle)
 # ---------------------------------------------------------------------------
 
+_WORKLIST_URLS: dict[str, dict[str, str]] = {}
+
+
+def _worklist_page_url(site_key: str, slug: str) -> str:
+    """slug -> page_url from the site's cached worklist (so audit rows carry a
+    joinable target_url; empty target_url made batch-1 verdicts un-computable)."""
+    if site_key not in _WORKLIST_URLS:
+        wl_path = ROOT / ".cache" / "meta_program" / site_key / "worklist.json"
+        try:
+            items = json.loads(wl_path.read_text(encoding="utf-8"))
+            _WORKLIST_URLS[site_key] = {i["slug"]: i["page_url"] for i in items if i.get("page_url")}
+        except Exception:
+            _WORKLIST_URLS[site_key] = {}
+    return _WORKLIST_URLS[site_key].get(slug, "")
+
+
 def _apply_one(proposal: dict, abs_path: Path, site_key: str) -> dict:
     """Apply a single validated proposal via the meta_only lifecycle.
 
@@ -155,6 +171,7 @@ def _apply_one(proposal: dict, abs_path: Path, site_key: str) -> dict:
     new_title: str = proposal["metaTitle"].strip()
     new_desc: str = proposal["metaDescription"].strip()
     slug: str = (proposal.get("slug") or "").strip()
+    page_url: str = (proposal.get("page_url") or _worklist_page_url(site_key, slug) or "").strip()
     rel_path: str = str(abs_path.relative_to(ROOT)).replace("\\", "/")
     primary_query: str = (proposal.get("primary_query") or "").strip()
     rationale: str = (proposal.get("rationale") or "").strip()
@@ -168,7 +185,7 @@ def _apply_one(proposal: dict, abs_path: Path, site_key: str) -> dict:
     brief = ChangeBrief(
         apply_module="meta_only",
         site_key=site_key,
-        target_url="",  # no target_url for batch proposals
+        target_url=page_url,
         target_file_path=rel_path,
         opportunity_id=None,
         files_to_modify=[rel_path],
