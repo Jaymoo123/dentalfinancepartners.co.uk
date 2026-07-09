@@ -1,0 +1,17 @@
+# Keep the vercel upload set sane (2026-07-09: agent worktrees under .claude/
+# ballooned the upload to 2.8GB and broke deploys). Vercel auto-ignores
+# node_modules and .git; everything else scratch/non-site goes here.
+# NEVER exclude */web/** paths - blog content lives there.
+.claude/
+.cache/
+expense-reconciliation/
+invoicing/
+briefs/
+docs/
+legal/
+supabase/
+optimisation_engine/
+templates/
+_audit_digest.txt
+icaew_extract.txt
+icaew_lines.txt

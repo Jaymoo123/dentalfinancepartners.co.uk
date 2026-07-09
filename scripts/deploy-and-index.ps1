@@ -137,9 +137,9 @@ $deployedProdUrl = $null
 $deployFailed    = $false
 try {
     # 4. Deploy --prod
-    Write-Step "4/6 Running 'vercel deploy --prod --yes' from $accountingRoot"
+    Write-Step "4/6 Running 'vercel deploy --prod --yes --archive=tgz' from $accountingRoot"
     if ($DryRun) {
-        Write-Warn "Would: cd $accountingRoot; vercel deploy --prod --yes"
+        Write-Warn "Would: cd $accountingRoot; vercel deploy --prod --yes --archive=tgz"
     } else {
         Push-Location $accountingRoot
         try {
@@ -150,7 +150,8 @@ try {
             # result by $LASTEXITCODE instead.
             $prevEAP = $ErrorActionPreference
             $ErrorActionPreference = 'Continue'
-            $vercelOutput = & vercel deploy --prod --yes 2>&1 | Out-String
+            # --archive=tgz: single-tarball upload; avoids the 10MB multi-file request-body limit (hit 2026-07-09)
+            $vercelOutput = & vercel deploy --prod --yes --archive=tgz 2>&1 | Out-String
             $vercelExit = $LASTEXITCODE
             $ErrorActionPreference = $prevEAP
         } finally {
