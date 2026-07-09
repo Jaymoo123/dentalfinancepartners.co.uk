@@ -210,6 +210,29 @@ Action: conductor to lock the following as new **§4.C** in house_positions befo
 
 ---
 
+## F-115 | WRITE_TIME_BLOCKER | A2 | 2026-07-09
+
+**Raised by:** Stage 2 sub-agent, pick A2 (wealth-management-for-dentists-uk)
+
+**Issue:** LISA property price cap and withdrawal charge could not be confirmed
+at Stage 2. WebFetch of gov.uk/lifetime-isa/buying-property and
+gov.uk/lifetime-isa/withdrawal-charges did not return the specific figures in
+the fetched excerpt. The 25% withdrawal charge is widely cited but must be
+verified at primary source before it is stated in the FAQ. The property price
+cap (believed to be £450,000 but unconfirmed at Stage 2) must similarly be
+fetched before lock.
+
+**Action required (write-time agent):** Fetch both URLs above, extract the
+current figures, and lock them into FAQ Q5 before publishing. If the cap or
+charge has changed, update accordingly.
+
+**Severity:** LOW (LISA content is a minor angle; the page is not primarily
+about LISA. Does not block other sections.).
+
+**Status:** OPEN.
+
+---
+
 ## F-104 | HOUSE_POSITION_EXTENSION | A4 | 2026-07-09
 
 **Raised by:** Stage 1 sub-agent, pick A4 (buying-car-through-limited-company-dentist)
