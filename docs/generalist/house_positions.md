@@ -94,6 +94,10 @@ Count of primary-source URLs fetched: **18** (gov.uk + legislation.gov.uk), plus
 
 ---
 
+### 3.A Corporation tax payment timing: credit interest and quarterly instalments (locked, 2026-07-09, Wave 4 gate, verified gov.uk/CTM)
+
+**Position.** A company that pays its CT **early** earns HMRC **credit/repayment interest at 2.75% (base minus 1%, from 9 Jan 2026)** from the payment date to the normal due date; late payment costs **7.75% (base + 4%)**. **Quarterly instalment payments (QIPs)** apply to **large** companies (augmented profits > £1.5m, divided by associated companies + 1, prorated for short APs; SI 1998/3175) on the 6m13d/9m13d/12m13d/3m14d-after-end schedule, and **very large** companies (> £20m) on the 14th of months 3/6/9/12 of the AP; QIP-specific rates are **3.50% credit / 6.25% debit from 29 Dec 2025**. Growth relief: not large in the preceding 12 months and profits <= £10m; de minimis: CT liability <= £5,000. Rates float with base rate (3.75% as of Jan 2026) - date-tag on every use and fetch current figures at write time.
+
 ## 4. Profit extraction: salary, dividends and the employer-NIC position (locked figures, DRAFT 2026-06-12)
 
 **Position.** A director-shareholder of an owner-managed company extracts profit through a mix of **salary** (deductible for the company, taxable as employment income, subject to NIC), **dividends** (paid from post-tax profit, no NIC, taxed at dividend rates) and **employer pension contributions** (§10). The usual owner-manager pattern is a **modest salary plus dividends**, with the salary set either at the secondary threshold or at the personal allowance depending on whether the company can claim the Employment Allowance (see the employer-NIC block below).
@@ -151,6 +155,10 @@ Count of primary-source URLs fetched: **18** (gov.uk + legislation.gov.uk), plus
 - **Practical writing rule for sessions:** lead with "the partnership is tax-transparent; each partner is taxed on their profit share (s.850)". On a buy-in/buy-out separate the **three** strands (income-tax allocation, CGT on goodwill per SP D12, SDLT only if the firm holds land). Keep SDLT and BADR availability **hedged and fact-specific** (never a flat SDLT figure). Flag the **LLP salaried-member** trap for fixed-share members. Cross-ref §1 (structures), §5 (BADR), §8 (loss reliefs for a new venture).
 
 ---
+
+### 6.A Salaried-member rules: BlueCrest (locked, 2026-07-09, Wave 4 gate)
+
+**Position.** The LLP salaried-member rules (ITTOIA 2005 ss.863A-863G, FA 2014) treat a member as an employee where ALL THREE conditions are met: **Condition A** (>= 80% of remuneration is disguised salary), **Condition B** (no significant influence over the affairs of the LLP), **Condition C** (capital contribution < 25% of expected disguised salary). **BlueCrest [2026] UKSC 18 (1 July 2026)** tightened Condition B: "significant influence" must derive from a **legally enforceable governance right** (the members' agreement or statute), not informal/managerial influence in practice. Content should treat the salaried-member rules at AWARENESS level (flag the risk, name the three conditions, note BlueCrest, signpost advice); detailed structuring guidance is out of scope for this generalist site.
 
 ## 7. VAT (locked figures, DRAFT 2026-06-12)
 
