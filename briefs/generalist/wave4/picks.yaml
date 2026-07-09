@@ -73,8 +73,9 @@ buckets:
       slug: personal-tax-for-llp-members-uk
       label: 'Personal tax for LLP members :: ongoing compliance AFTER choosing LLP (profit allocation, drawings vs profit, self-assessment, Class 4 NIC, salaried-member awareness); existing limited-company-vs-llp-consultant is a decision page. GSC 26 impr.'
       competitors: []
-    - id: A13
-      slug: benefit-in-kind-company-car-tax-uk
-      label: 'Benefit-in-kind: company car tax employer guide :: EMPLOYER-side BIK calculation mechanics + PAYE/Class 1A implications (appropriate percentages, P11D vs payrolling, fuel benefit); p11d-benefits-in-kind-explained covers the form broadly. GSC 37 impr (who pays 45p tax, WRONG_PAGE).'
-      competitors:
-        - https://www.pulse-accountants.co.uk/benefit-in-kind-cars
+    # A13 STRUCK 2026-07-09 page-level collision verify: duplicate of limited-company-car-tax-relief-2025-26 (see wave4_collision_verify.md)
+    # id: A13
+    # slug: benefit-in-kind-company-car-tax-uk
+    # label: 'Benefit-in-kind: company car tax employer guide :: EMPLOYER-side BIK calculation mechanics + PAYE/Class 1A implications (appropriate percentages, P11D vs payrolling, fuel benefit); p11d-benefits-in-kind-explained covers the form broadly. GSC 37 impr (who pays 45p tax, WRONG_PAGE).'
+    # competitors:
+    #   - https://www.pulse-accountants.co.uk/benefit-in-kind-cars

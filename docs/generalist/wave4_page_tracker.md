@@ -26,7 +26,7 @@ Tracker columns: status | pos | slug | category | body words | FAQ count | monit
 | [ ] | A10 | high-income-child-benefit-charge-business-owners-uk | Director Pay and Dividends | | | | |
 | [ ] | A11 | late-payment-rules-small-business-uk | Bookkeeping and Compliance | | | | clusters with A1 |
 | [ ] | A12 | personal-tax-for-llp-members-uk | Sole Trader and Self Employment | | | | |
-| [ ] | A13 | benefit-in-kind-company-car-tax-uk | Payroll and PAYE | | | | employer-side |
+| [x] | A13 | ~~benefit-in-kind-company-car-tax-uk~~ | STRUCK | | | | DUPLICATE (limited-company-car-tax-relief-2025-26); route rewrite/refresh |
 
 ---
 
@@ -35,6 +35,6 @@ Tracker columns: status | pos | slug | category | body words | FAQ count | monit
 - [x] Topic batch committed + collision-verified (blog_topics, status='pending')
 - [x] picks.yaml written (briefs/generalist/wave4/picks.yaml, competitor URLs pre-selected)
 - [x] Jaccard cannib check GREEN (13 net-new, 0 partial)
-- [ ] Page-level corpus verify (UPGRADE 2)
+- [x] Page-level corpus verify (UPGRADE 2) — 12 DISTINCT / A13 STRUCK (wave4_collision_verify.md)
 - [ ] Stage 1 seeds + Stage 1b HP gate
 - [ ] Stage 2 briefs + Stage 2b drift gate
