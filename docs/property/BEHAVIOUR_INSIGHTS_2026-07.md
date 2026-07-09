@@ -10,8 +10,13 @@
 > verified (form_id / role_detail / visitor stitch / notify email) then deleted.
 > Console lead-analytics page live on estate-console. Commits `c5b2576c`..`8dcf7db6` on
 > `property-lead-quality`. Rollback: unset flag + redeploy; `git revert f8674565` for surfaces.
-> Subscribe backend endpoints + nurture-send cron remain as unreachable dead code (0 Property
-> subscribers ever existed, DB-verified); delete in a future cleanup.
+> Subscribe backend CLEANED UP same day (commit `c7cb8913`, deployed): `/api/subscribe` shim,
+> `/api/nurture/*` drip routes, SubscribeForm, config/nurture, nurture-provider and f3 tests
+> deleted; daily `/api/nurture/send` cron dropped from vercel.json. Justified by DB truth:
+> 0 Property subscribers ever, and the drip was double-parked (`SUBSCRIBER_NURTURE_ENABLED`
+> never set). Lead-nurture system (config/lead-nurture, `/api/cron/lead-nurture*`) untouched;
+> shared `web-shared/nurture` engine kept for other sites. Post-deploy verified: nurture route
+> 404, site 200s, `/api/track` 204, multi-step markers still live.
 > Deploy gotcha fixed en route: `.vercelignore` patterns must be root-anchored (unanchored
 > `supabase/` excluded `Property/web/src/lib/supabase/` and broke the Vercel build).
 >
