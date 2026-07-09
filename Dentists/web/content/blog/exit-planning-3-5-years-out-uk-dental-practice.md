@@ -84,6 +84,8 @@ faqs:
 
 <p>Consider whether you want to bring in a junior partner or associate with a view to them buying you out. This is a common succession plan in UK dentistry. It can take three to five years to transition from associate to partner to full owner. If that route appeals, start the conversation now.</p>
 
+<p>Owners who want to pass the practice to a family member rather than sell to a third party or incoming partner will find the tax structuring and NHS contract considerations covered in our guide to <a href="/blog/goodwill-and-practice-sale/dental-practice-succession-planning-family-transfer">dental practice succession planning for family transfers</a>.</p>
+
 <p>Our <a href="/for-principals">services for principals</a> include advice on partnership structures and succession planning.</p>
 
 <h2>Step 6: Optimise Your Tax Position Before the Sale</h2>

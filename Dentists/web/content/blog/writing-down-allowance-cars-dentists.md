@@ -137,7 +137,7 @@ imageCredit:
 <li><strong>6 April 2030</strong>: Employee car-ownership schemes brought within benefit in kind rules <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</li>
 </ul>
 
-<p>These dates affect your tax planning. If you are considering buying a new car for your practice, the timing of the purchase can make a material difference to your tax bill. Speak to a dental-specialist accountant to model the numbers for your specific situation.</p>
+<p>These dates affect your tax planning. If you are considering buying a new car for your practice, the timing of the purchase can make a material difference to your tax bill. Speak to a dental-specialist accountant to model the numbers for your specific situation. For the broader decision of whether to purchase a car through your limited company or use the mileage-rate method, including the benefit-in-kind versus capital-allowance trade-off, see our guide to <a href="/blog/practice-accounting/buying-car-through-limited-company-dentist">buying a car through a limited company as a dentist</a>.</p>
 
 <p>For more detailed guidance on capital allowances and other tax reliefs available to dentists, visit our <a href="/dental-guides">dental guides</a> section or contact our team for a free practice health check.</p>
 

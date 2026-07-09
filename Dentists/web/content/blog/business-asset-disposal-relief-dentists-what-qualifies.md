@@ -154,7 +154,7 @@ faqs:
 
 <ul>
 <li><strong>Annual exempt amount:</strong> £3,000 per person for 2024/25 and 2025/26, set against the gain before tax is calculated.</li>
-<li><strong>Gift holdover relief:</strong> where business assets are transferred to family rather than sold, which can defer the gain.</li>
+<li><strong>Gift holdover relief:</strong> where business assets are transferred to family rather than sold, which can defer the gain; in a family transfer the choice between claiming holdover relief and crystallising the gain to use BADR is a key planning decision, covered in our guide to <a href="/blog/goodwill-and-practice-sale/dental-practice-succession-planning-family-transfer">dental practice succession planning for family transfers</a>.</li>
 <li><strong>Incorporation relief:</strong> rolling an unincorporated practice into a company under section 162, which defers the gain and can position a later share sale to use BADR.</li>
 </ul>
 

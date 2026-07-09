@@ -89,7 +89,7 @@ faqs:
 <ol>
 <li><strong>Get a professional valuation of the practice goodwill and assets.</strong> This is critical for the relief calculation and for the company's future amortisation claims.</li>
 <li><strong>Decide whether to include the premises.</strong> If you own the freehold, weigh the SDLT cost of transferring it against the loss of section 162 relief if you retain it.</li>
-<li><strong>Agree the share structure.</strong> Will you be the sole shareholder? Will associates or partners take shares? The relief applies per transferor.</li>
+<li><strong>Agree the share structure.</strong> Will you be the sole shareholder? Will associates or partners take shares? The relief applies per transferor. Incorporation can also be the precursor to a subsequent share gift to a family member, which avoids the need for NHS contract novation that an asset transfer would require; the tax consequences of that step are covered in our guide to <a href="/blog/goodwill-and-practice-sale/dental-practice-succession-planning-family-transfer">dental practice succession planning for family transfers</a>.</li>
 <li><strong>Prepare a business transfer agreement.</strong> This should list all assets being transferred and the consideration split between shares and cash.</li>
 <li><strong>Complete the incorporation at Companies House.</strong> The company must be formed before the transfer takes place.</li>
 <li><strong>Notify HMRC of the transfer.</strong> The company will need to register for corporation tax. You will need to finalise your sole trader accounts up to the date of transfer.</li>

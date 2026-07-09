@@ -211,7 +211,7 @@ faqs:
 
 <h3>Example A: Mixed Income (2 days PAYE, 2 days Self-Employed), 2026/27</h3>
 
-<p><strong>Facts:</strong> a dental hygienist works two days per week as an employee at Practice A, earning a salary of £24,000 per year (PAYE, Class 1 NIC deducted at source). She also works two days per week as a self-employed hygienist at Practice B, with gross receipts of £28,000 and allowable expenses of £6,000 (GDC retention fee £200, indemnity £400, CPD £600, equipment £800, inter-practice mileage 3,000 miles at 55p = £1,650, professional subscriptions £200, accountancy £500, other £650). Net self-employed profit: £22,000.</p>
+<p><strong>Facts:</strong> a dental hygienist works two days per week as an employee at Practice A, earning a salary of £24,000 per year (PAYE, Class 1 NIC deducted at source). She also works two days per week as a self-employed hygienist at Practice B, with gross receipts of £28,000 and allowable expenses of £6,000 (GDC retention fee £200, indemnity £400, CPD £600, equipment £800, inter-practice mileage 3,000 miles at 55p = £1,650, professional subscriptions £200, accountancy £500, other £1,650). Net self-employed profit: £22,000.</p>
 
 <p><strong>Income tax (2026/27):</strong></p>
 <ul>
@@ -252,7 +252,7 @@ faqs:
 
 <p><strong>Class 2 NIC:</strong> profit of £5,400 is below the SPT of £7,105. Class 2 is not automatically credited. She can pay voluntarily at £3.65 per week (£189.80 per year) to protect her NI record. If her NI record is already complete from PAYE employment (35 qualifying years for a full State Pension), voluntary Class 2 is unnecessary.</p>
 
-<p><strong>Trading allowance:</strong> gross receipts of £5,800 exceed the £1,000 trading allowance. She can claim actual expenses of £400 (profit £5,400) or use partial relief under s.783AI (allowance covers first £1,000 of receipts, profit on excess £4,800, i.e. £4,800 minus £0 remaining expenses = £4,800). Actual expenses give a lower profit (£5,400 vs an effective £4,800 under partial relief). Wait: checking the arithmetic, partial relief gives taxable profit of £4,800 which is lower, so she would benefit from partial relief here. Where actual expenses are below £1,000, the partial-relief route under the trading allowance will usually produce a lower taxable profit.</p>
+<p><strong>Trading allowance:</strong> gross receipts of £5,800 exceed the £1,000 trading allowance. She can claim actual expenses of £400 (taxable profit £5,400) or elect partial relief under s.783AI, deducting the £1,000 allowance instead of expenses (taxable profit £4,800). Partial relief gives the lower taxable profit here, £4,800 against £5,400, so she should elect it. Where actual expenses are below £1,000, the partial-relief route under the trading allowance will usually produce the lower taxable profit.</p>
 
 <h2>If Your Practice Has Misclassified Your Status</h2>
 

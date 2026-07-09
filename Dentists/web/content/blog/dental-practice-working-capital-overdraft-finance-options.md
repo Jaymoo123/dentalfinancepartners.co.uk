@@ -55,7 +55,7 @@ faqs:
 <ul>
 <li>An <strong>overdraft</strong> lets you draw your business account below zero up to an agreed limit, with interest charged on the amount actually used. It is flexible and simple, well suited to <strong>small, short, unpredictable</strong> timing gaps.</li>
 <li>A <strong>revolving credit facility</strong> is a pre-agreed pool you can draw down and repay repeatedly up to a limit. It suits <strong>slightly larger or more structured</strong> working-capital needs and gives more certainty than an on-demand overdraft.</li>
-<li>A <strong>short-term loan</strong> provides a fixed sum repaid over a defined period, which can fit a <strong>known, one-off</strong> need rather than a recurring gap.</li>
+<li>A <strong>short-term loan</strong> provides a fixed sum repaid over a defined period, which can fit a <strong>known, one-off</strong> need rather than a recurring gap. For the specific case of funding a quarterly VAT bill or a Capital Goods Scheme adjustment, see our guide to <a href="/blog/practice-finance/vat-loan-dental-practices-uk">VAT loans for dental practices</a> for a comparison of short-term borrowing and HMRC Time to Pay.</li>
 </ul>
 
 <p>The right choice depends on how large, how frequent and how predictable your working-capital need is. The flexible facilities flex with you; the fixed loan suits a defined purpose. Matching the structure to the actual pattern of need keeps the cost down and the facility useful.</p>

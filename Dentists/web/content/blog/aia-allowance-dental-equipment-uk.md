@@ -21,7 +21,7 @@ faqs:
 - question: Does the AIA apply to second-hand dental equipment?
   answer: Yes, the AIA applies to both new and second-hand plant and machinery, provided it is unused in your business. The key condition is that you must bring the asset into use in your dental practice. Second-hand equipment from another practice qualifies, as does equipment bought from a dealer. However, if you buy a practice as a going concern, you need a Section 198 election to claim AIA on the fixtures already in place.
 - question: Can I claim AIA on a car used for my dental practice?
-  answer: No, cars are specifically excluded from the AIA. This includes both ordinary cars and specialised vehicles. If you use a car for business purposes, you must claim capital allowances through the main pool (18% per year) or special rate pool (6% per year), depending on the car's CO2 emissions. Alternatively, you can claim the simplified mileage rate of 45p per mile for the first 10,000 business miles.
+  answer: No, cars are specifically excluded from the AIA. This includes both ordinary cars and specialised vehicles. If you use a car for business purposes, you must claim capital allowances through the main pool (18% per year) or special rate pool (6% per year), depending on the car's CO2 emissions. Alternatively, you can claim the simplified mileage rate of 55p per mile for the first 10,000 business miles from 6 April 2026 (45p before that date).
 dateModified: '2026-05-20'
 sourcesVerifiedAt: '2026-05-20'
 sourceDomains:

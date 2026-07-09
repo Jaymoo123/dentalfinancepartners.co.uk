@@ -57,7 +57,7 @@ faqs:
 
 <p>A practice earning £600,000 in combined NHS and private dental fees, with no cosmetic or aesthetics revenue, owes nothing on a VAT return and has no VAT bill to fund. The overwhelming majority of single-surgery NHS and mixed NHS/private practices are in this position. A VAT loan is simply not relevant to them.</p>
 
-<p>This page is written for the minority of practices that do have a real VAT liability. If you are not certain whether your practice is VAT-registered, check with your accountant before reading on.</p>
+<p>This page is written for the minority of practices that do have a real VAT liability: those with standard-rated cosmetic or aesthetics turnover above the £90,000 registration threshold, and partially exempt practices facing a Capital Goods Scheme adjustment.</p>
 
 <h2>Which dental practices actually pay VAT?</h2>
 
