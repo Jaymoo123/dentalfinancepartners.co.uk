@@ -3,11 +3,13 @@ buckets:
   A:
     label: Wave 3 - gap discovery 2026-07 batch (single lane, 11 picks pre-verify, batchSize 1)
     picks:
-    - id: A1
-      slug: sra-rules-law-firm-mergers-acquisitions
-      label: 'SRA Rules for Law Firm Mergers and Acquisitions :: Framing: regulatory mechanics of SRA approval/notification in M&A (consent, COLP/COFA, ABS licensing), NOT valuation and NOT the tax angle (merging-two-uk-law-firms-tax-and-sra owns tax). GSC 24 impr/28d WRONG_PAGE.'
-      competitors:
-        - https://www.sra.org.uk/solicitors/guidance/mergers-acquisitions-sales-firms/
+    # A1 STRUCK 2026-07-09 page-level collision verify (see wave3_collision_verify.md)
+    # id: A1
+    # slug: sra-rules-law-firm-mergers-acquisitions
+    # label: 'SRA Rules for Law Firm Mergers and Acquisitions :: Framing: regulatory mechanics of SRA approval/notification in M&A (consent, COLP/COFA, ABS licensing), NOT valuation and NOT the tax angle (merging-two-uk-law-firms-tax-and-sra owns tax). GSC 24 impr/28d WRONG_PAGE.'
+    # competitors:
+    #   - https://www.sra.org.uk/solicitors/guidance/mergers-acquisitions-sales-firms/
+
     - id: A2
       slug: finance-training-fee-earners-law-firm-uk
       label: 'Finance Training for Fee Earners and Partner Financial Literacy :: Framing: what to teach fee earners about WIP, lock-up, billing discipline, profit attribution; audience = managing partners/COFA/COO. Distinct from fee-earner target-setting and billing-ops pages.'
@@ -38,10 +40,12 @@ buckets:
         - https://thecashroom.co.uk/outsource-legal-cashier/
         - https://thecashroom.co.uk/ultimate-guide-outsourced-legal-cashiering/
         - https://thecashroom.co.uk/common-questions-outsourcing-cashiering/
-    - id: A7
-      slug: abortive-conveyancing-fee-tax-treatment
-      label: 'Abortive Conveyancing Cost: Tax Treatment :: CONDITIONAL: verify vs abortive-conveyancing-transactions-vat-and-wip first - if that page already covers income/CT deductibility (ITTOIA s.57/CTA 2009 s.53 area), REJECT this pick and route to improve-existing meta. Framing: deductibility of abortive deal costs, not VAT on disbursements. GSC 13 impr.'
-      competitors: []
+    # A7 STRUCK 2026-07-09 page-level collision verify (see wave3_collision_verify.md)
+    # id: A7
+    # slug: abortive-conveyancing-fee-tax-treatment
+    # label: 'Abortive Conveyancing Cost: Tax Treatment :: CONDITIONAL: verify vs abortive-conveyancing-transactions-vat-and-wip first - if that page already covers income/CT deductibility (ITTOIA s.57/CTA 2009 s.53 area), REJECT this pick and route to improve-existing meta. Framing: deductibility of abortive deal costs, not VAT on disbursements. GSC 13 impr.'
+    # competitors: []
+
     - id: A8
       slug: business-valuation-for-family-lawyers-uk
       label: 'Business Valuation for Family Lawyers: Expert Witness and Divorce :: Framing: valuing a CLIENT''s business/shares in matrimonial proceedings (FDR, Form E, Part III MFPA), audience = family law solicitors; distinct from how-to-value-a-uk-law-firm (selling the firm) and law-firm-goodwill-valuation. GSC UNSERVED 15 impr.'
@@ -50,15 +54,19 @@ buckets:
       slug: accountant-for-barristers-chambers-uk
       label: 'Accountant for Barristers and Chambers: UK Tax Guide :: Framing: barrister-RECIPIENT side (self-employment, chambers expenses, pupillage/tenancy, VAT on brief fees incl. overseas) - complements counsel-fees-vat-guide (solicitor-payer side). GSC UNSERVED 18 impr.'
       competitors: []
-    - id: A10
-      slug: credit-control-law-firms-uk-guide
-      label: 'Credit Control for Law Firms: Guide :: Framing: COMMERCIAL credit control (billing cadence, debtor chasing, aged debt, bad debt VAT relief + s.74 wait - verify correct bad-debt deduction section at source), and how poor credit control distorts management accounts/WIP/lock-up; NOT COFA compliance.'
-      competitors:
-        - https://thecashroom.co.uk/credit-control/
-        - https://thecashroom.co.uk/the-importance-of-effective-credit-control-for-law-firms/
-    - id: A11
-      slug: law-firm-financial-metrics-kpis-uk
-      label: 'Law Firm Financial Metrics and KPIs to Track :: CONDITIONAL: verify vs law-firm-benchmarking-uk first - if it already defines individual KPIs at depth, REJECT and route to improve-existing meta. Framing: ongoing management KPIs (lock-up days, realisation/recovery, PEP, WIP days, debtor days, cash conversion), not buyer due diligence.'
-      competitors:
-        - https://thecashroom.co.uk/the-10-financial-metrics-every-law-firm-should-track/
-        - https://www.armstrongwatson.co.uk/sectors/legal-sector/financial-modelling-practice-benchmarking
+    # A10 STRUCK 2026-07-09 page-level collision verify (see wave3_collision_verify.md)
+    # id: A10
+    # slug: credit-control-law-firms-uk-guide
+    # label: 'Credit Control for Law Firms: Guide :: Framing: COMMERCIAL credit control (billing cadence, debtor chasing, aged debt, bad debt VAT relief + s.74 wait - verify correct bad-debt deduction section at source), and how poor credit control distorts management accounts/WIP/lock-up; NOT COFA compliance.'
+    # competitors:
+    #   - https://thecashroom.co.uk/credit-control/
+    #   - https://thecashroom.co.uk/the-importance-of-effective-credit-control-for-law-firms/
+
+    # A11 STRUCK 2026-07-09 page-level collision verify (see wave3_collision_verify.md)
+    # id: A11
+    # slug: law-firm-financial-metrics-kpis-uk
+    # label: 'Law Firm Financial Metrics and KPIs to Track :: CONDITIONAL: verify vs law-firm-benchmarking-uk first - if it already defines individual KPIs at depth, REJECT and route to improve-existing meta. Framing: ongoing management KPIs (lock-up days, realisation/recovery, PEP, WIP days, debtor days, cash conversion), not buyer due diligence.'
+    # competitors:
+    #   - https://thecashroom.co.uk/the-10-financial-metrics-every-law-firm-should-track/
+    #   - https://www.armstrongwatson.co.uk/sectors/legal-sector/financial-modelling-practice-benchmarking
+
