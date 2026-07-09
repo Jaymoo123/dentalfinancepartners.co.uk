@@ -119,7 +119,7 @@ faqs:
 
 <h2>Worked Example: £10,000 Invoice, 90 Days Overdue</h2>
 
-<p><strong>Scenario:</strong> Your VAT-registered business (standard-rated) raised a £10,000 invoice (excluding VAT) on 1 April 2026. Agreed payment terms: 30 days. The due date was 1 May 2026. The customer has not paid. Today is 30 July 2026 (90 days from invoice date, 60 days from the due date).</p>
+<p><strong>Scenario:</strong> Your VAT-registered business (standard-rated) raised a £10,000 invoice (excluding VAT) on 1 April 2026. Agreed payment terms: 30 days. The due date was 1 May 2026. The customer has not paid. Today is 30 July 2026 (120 days from the invoice date, 90 days past the due date).</p>
 
 <h3>Step 1: Confirm the trigger</h3>
 

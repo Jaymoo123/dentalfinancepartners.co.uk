@@ -48,7 +48,7 @@ faqs:
 
 <p>A balance sheet is a snapshot. It records everything your company owns, everything it owes and what is left over for shareholders, at a single point in time (usually your year end). Unlike the profit and loss account, which covers a period, the balance sheet is a freeze-frame.</p>
 
-<p>For most directors the balance sheet arrives as one page in a set of statutory accounts. This guide explains every section, walks through a worked illustrative example for a typical UK small company, and flags the three patterns that lenders and creditors look for when they pull your Companies House filing.</p>
+<p>For most directors the balance sheet arrives as one page in a set of statutory accounts. Every UK company must prepare one under the Companies Act 2006 (ss.394 and 396), and a small company (turnover up to £15 million, balance sheet total up to £7.5 million, under SI 2024/1303 from 6 April 2025) files it publicly at Companies House. This guide explains every section, walks through a worked example, and flags the three patterns lenders look for in that filing.</p>
 
 <h2>Why the balance sheet matters for a director</h2>
 

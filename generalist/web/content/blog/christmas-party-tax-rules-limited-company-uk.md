@@ -122,7 +122,7 @@ faqs:
 <li>There is no statutory form for the election. The employer simply treats the designated event as exempt in its payroll and P11D reporting, and treats the other event as a taxable benefit.</li>
 </ul>
 
-<h3>Example C: Summer BBQ and Christmas party -- the election in practice</h3>
+<h3>Example C: Summer BBQ and Christmas party: the election in practice</h3>
 
 <p>A company runs two annual events in the tax year: a summer BBQ at £60 per head and a Christmas party at £120 per head. Aggregate: £60 + £120 = £180. That exceeds £150. Both events cannot be exempt together.</p>
 
@@ -138,7 +138,7 @@ faqs:
 
 <p>When the cost per head exceeds £150, or when a second event tips the aggregate over the limit and you cannot elect around it, the full cost per head is a taxable benefit in kind for each employee who attended the event. The employer has two routes for dealing with this: the P11D route and the PSA route.</p>
 
-<h3>Example B: £160 per head -- the cliff in action</h3>
+<h3>Example B: £160 per head: the cliff in action</h3>
 
 <p>Same 10-employee company. The party costs £1,600 in total. Cost per head: £1,600 / 10 = <strong>£160 per head</strong>. The exemption fails. The full £160 per head is taxable for every attending employee.</p>
 

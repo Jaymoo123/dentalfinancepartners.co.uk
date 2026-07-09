@@ -29,7 +29,7 @@ faqs:
   - question: "What is the quarterly instalment payment (QIP) threshold for corporation tax?"
     answer: "A company must pay its corporation tax in quarterly instalments if its augmented profits for the accounting period exceed £1.5 million. That threshold is divided by the number of associated companies: if your company has two associated companies (three in total), the effective threshold per company drops to £500,000. Very large companies with augmented profits over £20 million (divided by associated companies in the same way) face an earlier, accelerated instalment schedule."
   - question: "What are the quarterly instalment payment due dates for a standard 12-month accounting period?"
-    answer: "For a large company (profits between £1.5m and £20m, divided by associated companies), the four instalments fall due relative to the accounting period: the first is 6 months and 13 days after the start; the second is 3 months after the first; the third is 3 months after the second; and the fourth is 3 months and 14 days after the end of the period. For a company with a 1 April to 31 March year, those dates fall in mid-October, mid-January, mid-April and mid-June. Each instalment is approximately one quarter of the estimated annual CT liability."
+    answer: "For a large company (profits between £1.5m and £20m, divided by associated companies), the four instalments fall due relative to the accounting period: the first is 6 months and 13 days after the start; the second is 3 months after the first; the third is 3 months after the second; and the fourth is 3 months and 14 days after the end of the period. For a company with a 1 April to 31 March year, those dates fall in mid-October, mid-January, mid-April and mid-July. Each instalment is approximately one quarter of the estimated annual CT liability."
   - question: "What happens if I overpay my quarterly corporation tax instalments?"
     answer: "HMRC pays you credit interest on the overpayment at 3.50% per year (from 29 December 2025). The interest runs from the date the overpayment arises until the earlier of when HMRC repays it or the normal payment date (9 months and 1 day after the accounting period end). You can also claim repayment of the excess at any time under Regulation 6 of SI 1998/3175."
   - question: "What interest does HMRC charge if I underpay quarterly instalments?"
@@ -43,7 +43,7 @@ faqs:
   - question: "When do very large companies (over £20m profits) have to pay corporation tax?"
     answer: "Companies with augmented profits exceeding £20 million (divided by the number of associated companies) must pay four quarterly instalments on the 14th day of months 3, 6, 9 and 12 of the accounting period. For a company with a 1 April year start, that means instalments in June, September and December of the current year and March, before the year even ends. This is substantially earlier than both the standard large-company schedule and the 9m1d standard payment date."
   - question: "Does paying corporation tax early affect my corporation tax return deadline?"
-    answer: "No. Payment and filing are separate obligations. Paying early (or in instalments) does not change the CT600 filing deadline, which remains 12 months after the end of the accounting period. You can pay first and file later, or file first and pay later, as long as both obligations are met by their respective deadlines."
+    answer: "No. Payment and filing are separate obligations. Paying early (or in instalments) does not change the CT600 filing deadline, which is unchanged. You can pay first and file later, or file first and pay later, as long as both obligations are met by their respective deadlines."
 ---
 
 <p>For most UK limited companies, paying corporation tax means a single payment <a href="/blog/corporation-tax/corporation-tax-deadline-31-march-2026">9 months and 1 day after the accounting period ends</a>. But that is not the whole picture.</p>
@@ -144,7 +144,7 @@ faqs:
     </tr>
     <tr>
       <td>4th</td>
-      <td>14 June 2026</td>
+      <td>14 July 2026</td>
       <td>~£112,500</td>
     </tr>
   </tbody>
@@ -185,7 +185,7 @@ faqs:
     <tr>
       <td>4th</td>
       <td>3 months and 14 days after AP end</td>
-      <td>14 June 2026</td>
+      <td>14 July 2026</td>
     </tr>
   </tbody>
 </table>

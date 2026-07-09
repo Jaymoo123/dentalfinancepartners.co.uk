@@ -55,7 +55,7 @@ faqs:
 
 <p>A sole trader has a personal UTR. A limited company has a separate corporation tax UTR that belongs to the company rather than to any director. A partnership has its own UTR alongside each individual partner's personal one. If you operate through more than one of these structures, you may hold multiple UTRs for different purposes.</p>
 
-<p>This guide covers all three types: what each one looks like, where to find it, what to do if you have lost it, and when HMRC actually requires it. The process of registering as self-employed and being issued a UTR as part of that registration is covered in detail on our <a href="../how-to-register-as-self-employed-uk">how to register as self-employed</a> page. This page focuses on the reference number itself.</p>
+<p>This guide covers all three types: what each one looks like, where to find it, what to do if you have lost it, and when HMRC actually requires it. The process of registering as self-employed and being issued a UTR as part of that registration is covered in detail on our <a href="/blog/sole-trader-and-self-employment/how-to-register-as-self-employed-uk">how to register as self-employed</a> page. This page focuses on the reference number itself.</p>
 
 <h2>What is a Unique Taxpayer Reference (UTR)?</h2>
 
@@ -161,7 +161,7 @@ faqs:
 
 <p>If you cannot find the original letter, use HMRC's online service to request the corporation tax UTR. HMRC will send it to the company's current registered address at Companies House. This means the registered address must be correct and accessible. If the company's registered address has changed and has not been updated at Companies House, update it there first before making the request.</p>
 
-<p>Do not use a personal UTR in a CT600 context and vice versa. They are administratively separate records at HMRC. For the full process of incorporating a company, see our guide on how to <a href="../how-to-register-a-limited-company-uk-with-a-protected-business-name">register a limited company</a>.</p>
+<p>Do not use a personal UTR in a CT600 context and vice versa. They are administratively separate records at HMRC. For the full process of incorporating a company, see our guide on how to <a href="/blog/incorporation-and-structure/how-to-register-a-limited-company-uk-with-a-protected-business-name">register a limited company</a>.</p>
 
 <h2>Where to find your partnership UTR</h2>
 
@@ -198,15 +198,15 @@ faqs:
 
 <h3>Self Assessment filing (SA100)</h3>
 
-<p>Every individual who files a Self Assessment return must quote their personal UTR on the return, whether submitting online via HMRC's own service or instructing an accountant to file on their behalf. Your accountant also needs it to set up agent authorisation with HMRC before they can access your tax record on your behalf. For help with the filing process, see our <a href="../self-assessment-accountant-2025-26">Self Assessment accountant</a> page.</p>
+<p>Every individual who files a Self Assessment return must quote their personal UTR on the return, whether submitting online via HMRC's own service or instructing an accountant to file on their behalf. Your accountant also needs it to set up agent authorisation with HMRC before they can access your tax record on your behalf. For help with the filing process, see our <a href="/blog/sole-trader-and-self-employment/self-assessment-accountant-2025-26">Self Assessment accountant</a> page.</p>
 
 <h3>CIS (Construction Industry Scheme)</h3>
 
-<p>Subcontractors in the Construction Industry Scheme must give their UTR to each contractor they work for. The contractor uses it to verify the subcontractor's deduction rate with HMRC: 20% is the standard rate, 0% applies if you have gross payment status, and 30% is applied to unverified subcontractors. Without a valid UTR, the contractor has no choice but to deduct at the 30% unverified rate. For CIS-specific accounting support, our <a href="../accountant-for-construction-subcontractors-cis">CIS accountant</a> page covers the scheme in detail.</p>
+<p>Subcontractors in the Construction Industry Scheme must give their UTR to each contractor they work for. The contractor uses it to verify the subcontractor's deduction rate with HMRC: 20% is the standard rate, 0% applies if you have gross payment status, and 30% is applied to unverified subcontractors. Without a valid UTR, the contractor has no choice but to deduct at the 30% unverified rate. For CIS-specific accounting support, our <a href="/blog/payroll-and-paye/accountant-for-construction-subcontractors-cis">CIS accountant</a> page covers the scheme in detail.</p>
 
 <h3>Mortgage applications</h3>
 
-<p>Lenders routinely ask self-employed applicants for SA302 forms (tax calculation) and tax year overviews from HMRC. Both documents carry the personal UTR, and some lenders request it directly as a verification reference. This applies most commonly to sole traders and partners applying for a residential or buy-to-let mortgage. Our pages on <a href="../accountant-for-landlords-uk-property-investors">accountants for landlords</a> and <a href="../btl-mortgage-accountants-uk">buy-to-let mortgage accountants</a> cover the broader documentation picture for self-employed applicants.</p>
+<p>Lenders routinely ask self-employed applicants for SA302 forms (tax calculation) and tax year overviews from HMRC. Both documents carry the personal UTR, and some lenders request it directly as a verification reference. This applies most commonly to sole traders and partners applying for a residential or buy-to-let mortgage. Our pages on <a href="/blog/limited-company-tax/accountant-for-landlords-uk-property-investors">accountants for landlords</a> and <a href="/blog/limited-company-tax/btl-mortgage-accountants-uk">buy-to-let mortgage accountants</a> cover the broader documentation picture for self-employed applicants.</p>
 
 <h3>Agent authorisation (64-8 or online authorisation)</h3>
 
