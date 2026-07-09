@@ -227,7 +227,7 @@ The brief uses **para 2.3**. Conductor must confirm at Stage 1b, verify the exac
 
 **Action at WRAP:** Confirm A6 `outsourced-legal-cashiering-guide-uk-law-firms` has been committed and the slug is live before deploying Wave 3. If A6 is deferred, the forward-link sentence in A5 §11 should be held as a plain-text reference (no `<a>` tag) until A6 ships.
 
-**Status:** OPEN
+**Status:** CLOSED 2026-07-09 WRAP: A6 merged; forward link live.
 
 ---
 
@@ -240,7 +240,7 @@ The brief uses **para 2.3**. Conductor must confirm at Stage 1b, verify the exac
 
 **Issue:** A6 contains a wave-internal link to A5 (what-does-a-legal-cashier-do-sra-requirements). The link is live in the published page body (companion guide introduction). At WRAP, confirm A5 is committed and the route /blog/sra-compliance-trust-accounting/what-does-a-legal-cashier-do-sra-requirements resolves before deploying A6.
 
-**Status:** OPEN
+**Status:** CLOSED 2026-07-09 WRAP: A5 merged; link live.
 
 ---
 
@@ -253,7 +253,7 @@ The brief uses **para 2.3**. Conductor must confirm at Stage 1b, verify the exac
 
 **Issue:** The A6 page links outward to cofa-responsibilities-uk-law-firms and sra-client-account-reconciliation-frequency. Confirm these pages exist in the Solicitors corpus at WRAP; if not, remove or flag for future back-patch.
 
-**Status:** OPEN
+**Status:** CLOSED 2026-07-09 WRAP: both targets confirmed existing; route-aware audit clean.
 
 ## F-325 -- CROSS_BUCKET
 
@@ -277,7 +277,7 @@ The brief uses **para 2.3**. Conductor must confirm at Stage 1b, verify the exac
 
 **Issue:** A8 links to `forensic-accounting-litigation-law-firms-uk` (A4) as a wave-internal pair link. A4 was committed in this wave (commit b4e52c70 per tracker). WRAP must verify that A4's live content includes a reciprocal link back to A8. If the A4 page predates this flag and does not reference A8, add a back-link sentence in the "related guides" or cross-link section of A4 at WRAP.
 
-**Status:** OPEN — WRAP existence check required.
+**Status:** CLOSED 2026-07-09 WRAP: reciprocal A4<->A8 links confirmed in both pages.
 
 
 ## F-315 — AUTHORITY_GAP
@@ -296,7 +296,7 @@ The published page describes SRA intervention mechanics from Solicitors Act 1974
 
 **Action at WRAP:** Conductor to attempt sra.org.uk/solicitors/firm-based-authorisation/interventions/ and sra.org.uk search for current intervention guidance. If accessible, compare the procedural layer against the page's hedged text and raise a back-patch if any statutory statement is contradicted.
 
-**Status:** OPEN
+**Status:** CLOSED 2026-07-09 WRAP: intervention section is statute-only with explicit sourcing note; acceptable to ship.
 
 
 ## F-365 — RESIDUAL_VERIFY (A9 accountant-for-barristers-chambers-uk)
@@ -304,7 +304,7 @@ The published page describes SRA intervention mechanics from Solicitors Act 1974
 **Page:** accountant-for-barristers-chambers-uk
 **Issue:** BMIF VAT status not confirmed at primary source. The BMIF premium is confirmed as income-tax deductible (ITTOIA 2005 s.34, wholly and exclusively). Whether the BMIF mutual premium carries VAT or is exempt as an insurance/financial supply was not verified at primary source during Stage 2. The page does not state the VAT status of the BMIF premium (only the income tax deductibility). No correction required unless a future VAT-specific barrister page needs to address this.
 **Action at WRAP:** Conductor may wish to verify BMIF VAT status at primary source (BMIF website or HMRC manual) if a dedicated VAT-of-BMIF question arises on any future page. Not a blocker for this page.
-**Status:** OPEN (low priority; no false statement made on page)
+**Status:** CLOSED 2026-07-09 WRAP: BMIF VAT not asserted on page (QA-verified); residual stays a note in the brief only.
 
 
 ## F-305 — INTERNAL_LINK
@@ -318,4 +318,11 @@ The published page describes SRA intervention mechanics from Solicitors Act 1974
 
 **Action at WRAP:** Confirm all 8 target slugs resolve in the deployed site before going live.
 
-**Status:** OPEN
+**Status:** CLOSED 2026-07-09 WRAP: all 8 internal targets verified by route-aware link audit (0 HARD 404).
+
+## F-ESTATE-1 | EXISTING_PAGE_STALE (estate-wide) | canonical-field vs route mismatch
+
+**Raised by:** conductor at Wave 3 QA adjudication, 2026-07-09.
+**Issue:** Several LEGACY solicitors pages carry frontmatter `canonical` URLs whose category segment does not match the actual route produced by slugifyCategory (e.g. cofa-responsibilities-uk-law-firms canonical says `compliance-and-risk-colp-cofa`, route is `compliance-risk-colp-cofa`; how-to-value-a-uk-law-firm-2026 canonical says `practice-sale-and-succession`, route is `practice-succession-sale`). Wrong canonicals point search engines at non-existent URLs. NOT introduced by this wave; wave links follow the true routes.
+**Action:** mechanical estate sweep (canonical = slugifyCategory(category)) as a separate maintenance batch; check dentists/other sites for the same pattern.
+**Status:** OPEN (backlog; not blocking Wave 3 deploy)

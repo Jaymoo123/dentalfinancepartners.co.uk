@@ -1,6 +1,6 @@
 ﻿# Wave 3 page tracker (solicitors)
 
-**Created:** 2026-07-09. **Status:** Pre-launch. Wave 3 = up to 11 net-new pages, SINGLE lane (owner ruling 2026-07-08: batchSize 1, one sub-agent per pick, parallel). Source: gap discovery 2026-07 curated batch; A7 + A11 CONDITIONAL pending page-level collision verify.
+**Created:** 2026-07-09. **Status:** WRAP COMPLETE 2026-07-09 - 7 pages written, QA clean, merged, build GREEN, monitored to 2026-10-07. AWAITING DEPLOY WORD. Wave 3 = up to 11 net-new pages, SINGLE lane (owner ruling 2026-07-08: batchSize 1, one sub-agent per pick, parallel). Source: gap discovery 2026-07 curated batch; A7 + A11 CONDITIONAL pending page-level collision verify.
 
 Tracker columns: status | pos | slug | category | body words | FAQ count | monitored_pages ID | session notes.
 
@@ -34,8 +34,8 @@ Tracker columns: status | pos | slug | category | body words | FAQ count | monit
 - [x] picks.yaml written (briefs/solicitors/wave3/picks.yaml, competitor URLs pre-selected)
 - [x] Jaccard cannib check GREEN (11 net-new, 0 partial)
 - [x] Page-level corpus verify (UPGRADE 2) — 7 DISTINCT / 4 STRUCK (wave3_collision_verify.md)
-- [ ] Stage 1 seeds + Stage 1b HP gate
-- [ ] Stage 2 briefs + Stage 2b drift gate
+- [x] Stage 1 seeds + Stage 1b HP gate (4 new HP sections, 10 flags closed)
+- [x] Stage 2 briefs + Stage 2b drift gate (chambers-VAT un-hedged)
 
 
 
