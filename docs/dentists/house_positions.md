@@ -360,6 +360,13 @@ The Sch 9 Group 7 exemption extends beyond a dentist's direct care: **Item 2A** 
 
 ---
 
+### 8.A Self-employed NIC figures 2026/27 (locked, 2026-07-09, HP-lock gate Wave 5, verified gov.uk)
+
+**Position.** For 2026/27 a self-employed dentist or DCP pays **Class 4 NIC at 6% on profits between the lower profits limit £12,570 and £50,270, and 2% above**. **Class 2 is treated as paid** (no payment, contributory record protected) where profits are at or above the **small profits threshold of £7,105**; below the SPT, **voluntary Class 2 at £3.65/week** protects the state-pension record. This matters for low-income/part-time DCPs and mixed PAYE+self-employed workers (whose Class 1 employments may already protect the record).
+
+- **Sources:** gov.uk self-employed National Insurance rates, verified 2026-07-09 (SPT £7,105, LPL £12,570, Class 4 6%/2%, voluntary Class 2 £3.65/wk); SSCBA 1992 ss.11/15.
+- **Practical writing rule for sessions:** date-tag all NIC figures 2026/27; for mixed PAYE+SE audiences note the record may already be protected by Class 1. Cross-ref §8, §1.C.
+
 ## 9. MTD for Income Tax Self Assessment (locked, 2026-06-03)
 
 **Position.** Making Tax Digital for Income Tax (MTD for ITSA) mandates digital records and quarterly updates for sole traders and landlords by **qualifying income** (gross trading + property income), phased: **£50,000 from 6 April 2026**; **£30,000 from 6 April 2027**; **£20,000 from 6 April 2028**. Most full-time dental associates and unincorporated principals exceed £50,000 and are therefore **in scope from 6 April 2026**. Qualifying income is tested on the relevant prior year's Self Assessment return. Limited companies are **not** in scope (MTD for ITSA applies to income tax, not corporation tax).
