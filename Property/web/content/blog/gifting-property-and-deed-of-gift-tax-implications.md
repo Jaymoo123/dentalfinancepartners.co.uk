@@ -211,11 +211,17 @@ faqs:
 <p><strong>The GROB trap is the most common reason lifetime property gifting fails to deliver IHT savings.</strong> Parents give a property to their children while continuing to live in it, assuming the 7-year clock is running. It is not. The property remains in the estate as if the gift had never been made. If you are considering a property gift where you may have any continued use of the property, speak to a specialist before executing the deed of gift. Use the form at the foot of this page.</p>
 </aside>
 
+<h2>Care home fees: deliberate deprivation of assets</h2>
+
+<p>Local authorities in England assess a person's assets when determining eligibility for means-tested care funding. A property gift made with the intention of reducing assets to qualify for council-funded care can be treated as a deliberate deprivation of assets under the Care Act 2014 and the Care and Support (Charging and Assessment of Resources) Regulations 2014. Where a local authority concludes that a gift was motivated by the desire to avoid care fees, it can treat the gifted property as if it were still owned by the donor when calculating the care cost contribution. There is no fixed look-back period (unlike the IHT 7-year rule): local authorities can look back as far as they consider appropriate. The deliberate deprivation test turns on the donor's intention at the date of the gift; a gift made primarily for family reasons (IHT planning, income splitting) at a time when care needs were not a foreseeable consideration is lower risk. This is a distinct regime from HMRC's tax rules and requires separate specialist advice if care needs are a realistic prospect.</p>
+
 <h2>Income tax: rental property gifted to a minor child</h2>
 
 <p>Gifting a rental property to an adult child shifts the rental income to the child, who is taxed on it in their own right. This can achieve income-splitting where the child is a lower-rate taxpayer.</p>
 
 <p>The same strategy does not work for minor children (under 18 and unmarried). Under <a href="https://www.legislation.gov.uk/ukpga/2005/5/section/620" rel="nofollow noopener" target="_blank">ITTOIA 2005 s.620</a> and s.624, where a parent makes an outright gift of income-generating property to their minor child, the income from that property is attributed back to the parent-donor and taxed as the parent's income. The settlement provisions are broad: the gift does not have to be a formal trust arrangement for the attribution to apply. An outright deed of gift to a minor child suffices to engage the rules.</p>
+
+<p>There is a narrow de minimis: under <a href="https://www.legislation.gov.uk/ukpga/2005/5/section/629" rel="nofollow noopener" target="_blank">ITTOIA 2005 s.629(3)</a>, the attribution rule does not apply in a tax year where the total income arising to the child under the settlement does not exceed £100. Where a minor child holds a small fractional interest in a property and the rental income attributable to that fraction is £100 or less for the year, the parent-settlor attribution does not engage. This is a narrow exception; most residential property gifts to a minor will generate income well above £100 annually.</p>
 
 <p>The attribution ceases when the child reaches 18. From that point, the rental income belongs to the child in their own right and is taxed on them. If income-splitting is the objective, the gift to an adult child (18 or over) achieves it; the gift to a minor does not, for so long as the child remains under 18.</p>
 
