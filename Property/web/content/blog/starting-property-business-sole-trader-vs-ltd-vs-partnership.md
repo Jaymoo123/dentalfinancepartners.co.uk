@@ -202,6 +202,7 @@ faqs:
 <li>Limited company BTL mortgage rate premium: typically 0.5 to 1 percentage point above equivalent personal-name products; fewer lenders offer them</li>
 <li>Director's salary PAYE setup if the director takes a salary (usually small: £9,100 or similar)</li>
 <li>Dividend extraction tax in 2026/27: 10.75% / 35.75% (FA 2026 s.4) / 39.35% (unchanged, FA 2022)</li>
+<li>Annual Tax on Enveloped Dwellings (ATED): applies to companies holding residential property valued above £500,000. The 2026/27 charge for a property in the £500,001 to £1m band is £4,600 per year. Most BTL companies let to unconnected tenants and can claim property rental business relief, reducing the charge to nil, but a Relief Declaration Return must still be filed annually via HMRC's ATED online service. For company properties above £500,000, budget for this compliance step regardless of whether tax is payable.</li>
 </ul>
 
 <p>The higher mortgage rate premium matters most for highly leveraged portfolios. At 0.5% on £200,000 of borrowing, this is £1,000 per year additional interest cost, which roughly offsets one year of CT saving on modest-profit properties. Run the full numbers before assuming the company wins automatically.</p>
