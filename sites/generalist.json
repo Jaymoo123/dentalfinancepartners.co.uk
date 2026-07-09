@@ -21,18 +21,18 @@
     "productionDomain": "www.hollowaydavies.co.uk"
   },
   "wave": {
+    "_doc": "Owner ruling 2026-07-08: no A/B/C lanes; batchSize 1 = one sub-agent per topic, parallel.",
     "buckets": [
-      "a",
-      "b",
-      "c"
+      "a"
     ],
     "bucketsUpper": [
-      "A",
-      "B",
-      "C"
+      "A"
     ],
     "megaWaveSize": 60,
-    "batchSize": 6,
+    "batchSize": 1,
+    "fRangePerBucket": {
+      "a": "F-1..F-149"
+    },
     "waveKind": "wave"
   },
   "naming": {

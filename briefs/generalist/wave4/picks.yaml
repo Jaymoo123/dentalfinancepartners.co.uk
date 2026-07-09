@@ -1,0 +1,80 @@
+wave: 4
+buckets:
+  A:
+    label: Wave 4 - gap discovery 2026-07 batch (single lane, 13 picks pre-verify, batchSize 1)
+    picks:
+    - id: A1
+      slug: cash-flow-management-small-business-uk
+      label: 'Business cash flow management guide for SMEs :: management-accounting angle (forecasting, lock-up, cash conversion), NOT the HMRC cash-basis accounting method (existing pages own that). Pairs with A11 late-payment as a cash-management cluster.'
+      competitors:
+        - https://www.crunch.co.uk/knowledge/improve-your-cash-flow
+        - https://informi.co.uk/finance/how-to-improve-cash-flow-with-an-effective-forecasting-strategy
+    - id: A2
+      slug: double-entry-bookkeeping-explained-uk
+      label: 'Double-entry bookkeeping explained for UK business owners :: foundational concepts page (debits/credits, ledgers, trial balance link); distinct from record-retention page.'
+      competitors:
+        - https://www.businessaccountingbasics.co.uk/double-entry-bookkeeping/
+        - https://countingup.com/resources/what-is-double-entry-bookkeeping/
+    - id: A3
+      slug: corporation-tax-paying-early-or-in-instalments-uk
+      label: 'Corporation tax: paying early and payment in instalments :: payment STRATEGY (credit interest on early payment, QIP regime for large companies), not the filing-deadline page.'
+      competitors:
+        - https://www.crunch.co.uk/knowledge/what-are-the-benefits-of-paying-corporation-tax-early
+        - https://informi.co.uk/finance/corporation-tax-deadlines-filing-and-paying
+    - id: A4
+      slug: do-i-need-a-separate-business-bank-account-uk
+      label: 'Do I need a separate business bank account? :: standalone banking-basics decision guide (sole trader vs ltd legal position, practical case); existing pages touch banking only in passing.'
+      competitors:
+        - https://www.businessaccountingbasics.co.uk/separate-business-bank-account/
+        - https://www.crunch.co.uk/knowledge/do-you-need-a-separate-bank-account-for-your-business
+    - id: A5
+      slug: how-to-set-up-a-business-partnership-uk
+      label: 'How to set up a business partnership in the UK :: formation guide for the third main structure (registration, nominated partner, partnership agreement, SA800); genuine structure-coverage gap.'
+      competitors:
+        - https://informi.co.uk/business-administration/setting-up-a-partnership
+        - https://countingup.com/resources/what-business-partnership/
+    - id: A6
+      slug: what-is-a-balance-sheet-uk-sme
+      label: 'What is a balance sheet? UK SME guide :: reading published accounts (assets/liabilities/equity, what a director should look at); trial-balance pages are distinct working documents.'
+      competitors:
+        - https://www.businessaccountingbasics.co.uk/balance-sheet/
+        - https://informi.co.uk/finance/what-is-a-balance-sheet-and-how-do-you-read-one
+    - id: A7
+      slug: unique-taxpayer-reference-utr-uk
+      label: 'Unique Taxpayer Reference (UTR): what it is and how to find it :: top-of-funnel evergreen (personal vs company UTR, where to find, lost-UTR recovery, when needed).'
+      competitors:
+        - https://www.crunch.co.uk/knowledge/what-is-a-unique-taxpayer-reference-utr
+        - https://countingup.com/resources/how-to-find-and-use-your-company-utr-number/
+    - id: A8
+      slug: christmas-party-tax-rules-limited-company-uk
+      label: 'Christmas party tax rules for limited companies :: the GBP150/head annual events exemption (ITEPA s.264) as a distinct sub-topic; p11d-benefits-in-kind-explained covers P11D broadly. Seasonal perennial.'
+      competitors:
+        - https://www.crunch.co.uk/knowledge/christmas-party-expense-exemption-for-limited-companies
+        - https://www.bytestart.co.uk/christmas-party-tax-rules
+    - id: A9
+      slug: how-to-complete-and-submit-vat-return-uk
+      label: 'How to complete and submit a VAT return (MTD guide) :: operational box-by-box completion + MTD submission; existing VAT pages cover registration/flat-rate/scheme choice only.'
+      competitors:
+        - https://www.crunch.co.uk/knowledge/vat-return-boxes-explained
+        - https://informi.co.uk/finance/what-is-a-vat-return-and-how-to-submit-yours-via-mtd
+    - id: A10
+      slug: high-income-child-benefit-charge-business-owners-uk
+      label: 'High income child benefit charge for business owners and directors :: HICBC through the salary+dividends lens (adjusted net income, threshold planning, pension contributions as the lever). High conversion intent.'
+      competitors:
+        - https://www.crunch.co.uk/knowledge/high-income-child-benefit-charge
+        - https://www.perrysaccountants.co.uk/news/high-income-child-benefit
+    - id: A11
+      slug: late-payment-rules-small-business-uk
+      label: 'Late payment rules and guidance for UK small businesses :: statutory interest (Late Payment of Commercial Debts Act 1998), compensation, chasing process, bad-debt tax/VAT relief; clusters with A1.'
+      competitors:
+        - https://countingup.com/resources/late-payment-reminder-templates/
+        - https://informi.co.uk/finance/late-payment-is-the-problem-getting-better-or-worse-for-uk-smes
+    - id: A12
+      slug: personal-tax-for-llp-members-uk
+      label: 'Personal tax for LLP members :: ongoing compliance AFTER choosing LLP (profit allocation, drawings vs profit, self-assessment, Class 4 NIC, salaried-member awareness); existing limited-company-vs-llp-consultant is a decision page. GSC 26 impr.'
+      competitors: []
+    - id: A13
+      slug: benefit-in-kind-company-car-tax-uk
+      label: 'Benefit-in-kind: company car tax employer guide :: EMPLOYER-side BIK calculation mechanics + PAYE/Class 1A implications (appropriate percentages, P11D vs payrolling, fuel benefit); p11d-benefits-in-kind-explained covers the form broadly. GSC 37 impr (who pays 45p tax, WRONG_PAGE).'
+      competitors:
+        - https://www.pulse-accountants.co.uk/benefit-in-kind-cars
