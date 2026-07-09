@@ -14,7 +14,7 @@ metaDescription: "Entity choice, S24 break-even, ATED, loss relief, profit extra
 altText: "UK portfolio landlord reviewing tax planning documents with adviser across a table with property files and financial spreadsheets"
 image: ""
 h1: "Portfolio Landlord Tax Planning: The Strategy Guide"
-summary: "UK portfolio landlords face six interlocking tax decisions: entity structure (personal, SPV or FIC), the Section 24 break-even point (Finance (No.2) Act 2015; credit rising from 20% to 22% under FA 2026 Schedule 1 from 6 April 2027), SDLT incorporation costs (FA 2003 Schedule 15 partnership relief; FA 2003 s.116(7) six-dwellings rule), profit extraction sequencing (DLA, salary, dividends, pension), ATED governance (FA 2013; annual returns due 30 April; 2026/27 charges from £4,600), and succession planning (PETs, FIC value-freeze, discretionary trusts, SIPP). From 2027/28, FA 2026 ss.6-7 raises personal property income rates to 22/42/47% in England, Wales and Northern Ireland."
+summary: "UK portfolio landlords face seven interlocking tax decisions: entity structure (personal, SPV or FIC), the Section 24 break-even point (Finance (No.2) Act 2015; credit rising from 20% to 22% under FA 2026 Schedule 1 from 6 April 2027), SDLT incorporation costs (FA 2003 Schedule 15 partnership relief; FA 2003 s.116(7) six-dwellings rule), profit extraction sequencing (DLA, salary, dividends, pension), ATED governance (FA 2013; annual returns due 30 April; 2026/27 charges from £4,600), succession planning (PETs, FIC value-freeze, discretionary trusts, SIPP), and Making Tax Digital compliance (mandatory from 6 April 2026 for rental income over £50,000). From 2027/28, FA 2026 ss.6-7 raises personal property income rates to 22/42/47% in England, Wales and Northern Ireland."
 schema: ""
 faqs:
   - question: "How many properties do I need before a limited company structure makes sense?"
@@ -368,6 +368,14 @@ faqs:
 </ul>
 
 <p>The practical discipline for 2026/27 is to model the 2027/28 position now, before the rate change takes effect, so that extraction and structuring decisions in 2026/27 are taken with full knowledge of where the rates are heading.</p>
+
+<h2>11. Making Tax Digital: the compliance obligation arriving in April 2026</h2>
+
+<p>Making Tax Digital for Income Tax (MTD for IT) applies to individual landlords whose total qualifying income (rental plus any self-employment) exceeds £50,000 in the 2024/25 tax year, making quarterly digital submissions to HMRC mandatory from 6 April 2026. The threshold drops to £30,000 (from 6 April 2027, based on 2025/26 income) and then to £20,000 (from 6 April 2028, based on 2026/27 income). Portfolio landlords with meaningful income are almost all in scope for the first wave.</p>
+
+<p>What MTD for IT requires in practice: HMRC-recognised software must be used to maintain digital property income records, and quarterly summaries must be submitted electronically. An end-of-period statement and final declaration replace the traditional Self Assessment return. The software market is now well-established, but the change in workflow (from an annual exercise to a quarterly one) catches many portfolio landlords who have historically managed tax on a once-a-year basis.</p>
+
+<p>MTD does not apply to companies: SPVs and FICs continue to file corporation tax returns annually. For mixed portfolios (some property personal, the remainder in a company), the personal element is subject to MTD while the company element is not. This is one more administrative reason why portfolio landlords approaching the MTD threshold may find the corporate route reduces personal compliance burden as well as income tax.</p>
 
 <h2>Where to go from here</h2>
 
