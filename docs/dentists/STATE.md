@@ -64,6 +64,17 @@ Dentists is indexed and earning impressions for its head family ("accountants fo
 - SERP META BATCH 1 (2026-06-12): 35 pages re-titled/re-described from fresh 90d GSC + Bing query data, deployed + IndexNow'd; 90-day regression watch in monitored_pages (to 2026-09-10); engine + methodology in docs/_engines/SERP_META_PROGRAM.md; content-gap follow-ups in docs/dentists/opportunity_register_meta_2026-06-12.md.
 - SERP META BATCH 2 (2026-07-08): 10 pages, Opus copy + Sonnet adversarial QA, DEPLOYED + IndexNow'd; monitored to 2026-10-06. how-to-value-a-uk-dental-practice-2026 re-angled to worth-intent to avoid title/query collision with dental-practice-valuation-methods-uk (the stronger page for 'dental practice valuation uk'). Estate readouts: docs/_engines/meta_batch1_verdicts_2026-07.md + OPPORTUNITY_READOUT_2026-07.md. Batch-1 26d pre-read: imp 186->658, clicks 2->4 (uda-value page = cleanest CTR win). Dominant untouched fact: homepage holds 4,825 imp / 1 click and head terms (accountants for dentists 1,081 imp) rank pos 44-70 = AUTHORITY/core-page problem, not meta.
 
+## Wave 5 (gap-discovery batch) — WRITTEN + QA CLEAN 2026-07-09, AWAITING DEPLOY WORD
+
+- Source: gap discovery 2026-07 curated batch (6 pending topics; A5 tax-planning hub STRUCK at page-level collision verify as duplicate of the two existing hub pages, rejected in blog_topics).
+- 5 pages written (single lane, batchSize 1, one Sonnet writer per pick in parallel worktrees): dental-practice-succession-planning-family-transfer, wealth-management-for-dentists-uk, dental-hygienist-dcp-tax-employment-status, buying-car-through-limited-company-dentist, vat-loan-dental-practices-uk.
+- HP locks added at Stage 1b (isolated commits): SS1.C DCP status, SS4.B BPR GBP2.5m allowance (FA 2026 Sch 12 s.124D verified at legislation.gov.uk; announcement-era GBP1m figure is WRONG), SS4.C s.165 holdover, SS6.D VAT late-payment+TTP, SS8.A NIC 2026/27 (SPT 7,105), SS14 company car, SS15 wealth wrappers + CIHC s.18N.
+- QA: independent per-page agents (arithmetic re-derivation + statute WebFetch) caught 2 HIGH on A3 (expense transcription + leaked draft reasoning) and 1 arithmetic parenthetical on A2 - all fixed manager-direct, verdicts recorded 5/5 all_clear (qa_verdict wave5), pending list clear, predeploy gate PASS.
+- Tone/GEO review vs 3 live baselines: 3 PASS as-is, A2 opener + A6 audience line polished. No cross-page templating drift.
+- Back-patches: 3 stale-45p AMAP pages corrected (55p from 6 Apr 2026); 13 back-link insertions across 12 existing pages; F-147 GBP85k flag was a false positive.
+- Link floor 0 HARD 404 / 0 SOFT; ONE green build x2 (post-merge, post-QA-fix). monitored_pages registered (net_new, monitor_until 2026-10-07). blog_topics rows flipped to written/used.
+- >> NEXT: deploy on explicit owner word: ./scripts/deploy-and-index.ps1 -Site dentists (purge stale wt dirs not needed - root .vercelignore handles), then IndexNow the 5 URLs.
+
 ## Blog audit + rewrite program (2026-06-12)
 
 - Provenance: 95 deepseek / 55 claude / 54 opus-wave (204 posts total).
