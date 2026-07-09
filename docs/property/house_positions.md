@@ -4003,6 +4003,7 @@ Verified by the manager at legislation.gov.uk + the GOV.UK measure page on 2026-
 - **SIPP borrowing cap:** FA 2004 s.182 formula (APB + PB) / VA ≤ 0.5 — total borrowing max 50% of net scheme assets.
 - **Residential property is "taxable property"** for investment-regulated schemes (FA 2004 Sch 29A); acquisition triggers unauthorised-payment charges under FA 2004 ss.208-209 (55% member charge + 15% scheme sanction surcharge — effective up to ~70%). Commercial property is permitted; connected-party purchases must be at market value; rent paid to the scheme must be arm's length.
 - Annual allowance £60,000 remains per §8.
+- **Pension IHT charge ENACTED (verified 2026-07-09): FA 2026 ss.66-71** bring unused pension funds/death benefits within IHT for deaths on or after 6 April 2027 (commencement s.71). Liability: deceased's PRs primarily (s.67); scheme administrator has a withholding/payment mechanism (s.68) and is liable only on breach; scheme trustees excluded. Do NOT write "announced but not enacted" or attribute to FA 2024; do NOT write that administrators have no role.
 
 
 ## 29.13 VAT residential conversions — Sch 7A Grp 6/7, Sch 8 Grp 5, s.35 DIY — Wave 10 sub-lock (added 2026-07-08, manager source-verified)
