@@ -8,7 +8,6 @@ import { niche } from "@/config/niche-loader";
 import { TableOfContents } from "@/components/blog/TableOfContents";
 import { ReadingProgress } from "@/components/blog/ReadingProgress";
 import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
-import { StickyCTA } from "@/components/ui/StickyCTA";
 import { MTDCountdown } from "@/components/property/MTDCountdown";
 import { extractHeadings } from "@/lib/markdown-utils";
 import { calculateReadTime } from "@/lib/blog";
@@ -18,7 +17,6 @@ import { hasPremiumTool } from "@/lib/calculators/premium/registry";
 import { gateCopy } from "@/lib/resources/copy";
 import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
 import { GateOrForm } from "@/components/resources/GateOrForm";
-import { SubscribeForm } from "@/components/forms/SubscribeForm";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -445,10 +443,8 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 </section>
               ) : null}
 
-              {/* Softer net for engaged readers who reached the end without
-                  enquiring: a low-commitment opt-in to the nurture drip. Its own
-                  marketing consent + one-click unsubscribe (separate from leads). */}
-              <SubscribeForm source="blog_footer" />
+              {/* Subscribe block removed 2026-07-09: 16,290 views / 0 submits all-time
+                  (behaviour readout §4). Nurture opt-in still exists on lead forms. */}
             </div>
 
             <aside className="hidden lg:block">
@@ -460,14 +456,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
         </div>
       </article>
 
-      <StickyCTA
-        href="#enquiry-form"
-        primary="Want this checked for your situation?"
-        secondary="Free 20-minute call with a property tax specialist"
-        buttonLabel="Talk to a specialist"
-      />
-      {/* ExitIntentModal is mounted globally (app/layout.tsx); it self-gates to
-          blog + calculator routes, so no per-page mount is needed here. */}
+      {/* StickyCTA removed 2026-07-09: 586 shown / 1 click current-era (readout §4). */}
     </>
   );
 }

@@ -107,16 +107,17 @@ export function SpecialistWidget() {
   // Show a tailored ping. Re-derives the journey each time; never repeats a line.
   const runPing = useCallback((trigger: Trigger) => {
     if (engagedRef.current || typeof window === "undefined") return;
+    // ONE proactive ping per session across ALL triggers (earliest wins).
+    // 2026-07-09: the escalating cadence was the site's biggest interrupter
+    // (1,882 shown / 6 clicked / 219 dismissed post-06-23) — behaviour readout §4.
+    if (pingCountRef.current > 0) return;
     const profile = getJourneyProfile();
     let line: string;
     let variant: string;
     if (bookingNudge) {
-      // Booking concierge: ONE ping per session (the earliest trigger wins),
-      // always the same job — get the callback slot booked.
-      if (pingCountRef.current > 0) return;
+      // Booking concierge: always the same job — get the callback slot booked.
       line = bookingConciergeOpener();
       variant = "booking";
-      pingCountRef.current += 1;
     } else if (trigger === "friction") {
       line = frictionOpener();
       variant = "friction";
@@ -124,11 +125,10 @@ export function SpecialistWidget() {
       line = exitOpener(profile);
       variant = "exit";
     } else {
-      const idx = pingCountRef.current;
-      line = openerFor(profile, idx);
-      variant = `ping_${idx + 1}`;
-      pingCountRef.current = idx + 1;
+      line = openerFor(profile, 0);
+      variant = "ping_1";
     }
+    pingCountRef.current += 1;
     if (line === lastLineRef.current) return; // never repeat verbatim
     lastLineRef.current = line;
 
