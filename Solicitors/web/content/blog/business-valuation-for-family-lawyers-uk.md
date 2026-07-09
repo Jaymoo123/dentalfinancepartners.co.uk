@@ -204,7 +204,7 @@ faqs:
 <p><strong>Option B: Transfer outside the s.58 window (or after a formal-order route is not used).</strong> The transfer is treated as a disposal at market value (£800,000) by the transferring spouse. CGT is immediately in point on the latent gain of £700,000:</p>
 <ul>
 <li>Chargeable gain: £697,000 (after the annual exempt amount of £3,000).</li>
-<li>CGT (worst case, no BADR): £697,000 x 24% = <strong>£167,280 CGT due on the settlement itself</strong>, before the receiving spouse has received anything.</li>
+<li>CGT (worst case, no BADR): £697,000 x 24% = <strong>£167,280 CGT due on the settlement itself</strong>, before the receiving spouse has received anything. The amount coincides with the future liability in Option A only because the gain is the same; the difference is timing and whose liability it is: under Option B the transferring spouse pays now, under Option A the cost is deferred to the receiving spouse’s later disposal.</li>
 </ul>
 
 <p>The advisory point is that the headline settlement value of £800,000 and the net-of-tax value diverge materially. Where the divorce order can be timed to fall within the s.58 window, the latent CGT is deferred to the receiving spouse's future disposal rather than crystallising on the settlement. But the receiving spouse should understand that the asset carries an embedded future tax liability: the net receipt on an immediate sale at current value would be approximately £632,720, not £800,000.</p>
@@ -251,7 +251,7 @@ faqs:
 
 <p>The 10-day window for written questions is tight. Prepare the questions in advance, with the client, as soon as the report is received. Questions must be for clarification only: they cannot seek a revised methodology or a different answer. If the expert's methodology appears fundamentally flawed, the appropriate route is submissions on weight at the FDR, not further questions.</p>
 
-<h2>Conclusion</h2>
+<h2>From valuation to settlement: the adviser's job</h2>
 
 <p>A business valuation in financial remedy proceedings requires accounting expertise alongside legal process management. The solicitor's role is to instruct the right expert for the type of business, ensure the letter of instruction captures all the relevant issues, scrutinise the methodology when the report arrives, translate the valuation range into settlement options and model the tax consequences of each option. The headline value and the net-of-tax, net-of-liquidity value are rarely the same figure.</p>
 

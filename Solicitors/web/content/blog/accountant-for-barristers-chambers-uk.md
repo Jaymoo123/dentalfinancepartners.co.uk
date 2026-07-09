@@ -50,7 +50,7 @@ faqs:
 
 <p>This guide sets out the income tax, NIC, VAT and MTD rules that apply to a practising barrister as the taxpayer. It is the barrister-side companion to the solicitor-side treatment of counsel's fees covered in our <a href="/blog/vat-compliance/counsel-fees-vat-guide-uk-law-firms">Counsel's Fees VAT Guide for UK Law Firms</a> and <a href="/blog/vat-compliance/vat-on-counsel-fees-uk-solicitors">VAT on Counsel Fees: UK Solicitors</a>. Those pages explain how the instructing solicitor accounts for your fee note; this page covers your obligations as the barrister.</p>
 
-<h2>The Self-Employment Baseline</h2>
+<h2>The self-employment baseline</h2>
 
 <p>The Bar Standards Board (BSB) governs a barrister's practice. HM Revenue and Customs governs their tax. The two regimes are independent. A barrister can be in good regulatory standing and still have complex tax obligations; being regulated by the BSB creates no tax exemption or simplification.</p>
 
@@ -58,7 +58,7 @@ faqs:
 
 <p>This page covers barristers practising as sole traders, which is the standard form at the English and Welsh Bar. Barristers considering a consultant-solicitor or PSC arrangement should read our guide to <a href="/blog/locum-solicitor-tax/consultant-solicitor-structures-uk">consultant solicitor structures</a> instead, as that route operates under a different framework. The self-assessment position for solicitor employees and equity partners is covered in our <a href="/blog/sole-practitioner-tax/solicitor-self-assessment-uk-tax-guide">solicitor self-assessment guide</a>.</p>
 
-<h2>Income Tax on Barrister Profits</h2>
+<h2>Income tax on barrister profits</h2>
 
 <p>A barrister's taxable profits are their professional receipts (brief fees, advisory fees, opinion fees) less allowable expenses incurred wholly and exclusively for the purposes of the trade (ITTOIA 2005 s.34). Profits are taxed at the standard income tax rates: 20% (basic rate), 40% (higher rate) and 45% (additional rate) for 2026/27. The personal allowance is £12,570, tapered at £1 for every £2 of income above £100,000 and lost entirely above £125,140.</p>
 
@@ -66,7 +66,7 @@ faqs:
 
 <p><strong>Class 4 NIC</strong> is charged at 6% on profits between £12,570 and £50,270 (2026/27) and at 2% on profits above that. <strong>Class 2 NIC</strong> is no longer separately payable from 6 April 2024 (National Insurance Contributions Act 2024): a barrister with profits at or above the Small Profits Threshold (£7,105 for 2026/27) is treated as having paid Class 2, preserving their state-pension record without any additional payment.</p>
 
-<h2>Cash Basis or Accruals: The 2024/25 Default Change</h2>
+<h2>Cash basis or accruals: the 2024/25 default change</h2>
 
 <p>Until Finance Act 2013, barristers in their early years of practice could use a barrister-specific cash basis under ITTOIA 2005 s.160. That provision was repealed by Finance Act 2013 Schedule 4 paragraph 51, effective from 2013/14. From 2013/14 to 2023/24, barristers used the accruals basis unless they qualified for the old small-trader cash basis (which had a £150,000 entry threshold that excluded many established practitioners).</p>
 
@@ -93,7 +93,7 @@ faqs:
 
 <p>The cash basis advantage disappears entirely if the aged debt is eventually paid, with 2025/26 profit correspondingly higher. The accruals basis offers the bad-debt deduction, loss carry-back, and cleaner matching of income and expense across multi-year cases. A specialist accountant can model both positions before the return deadline.</p>
 
-<h2>What Expenses Can a Barrister Deduct?</h2>
+<h2>What expenses can a barrister deduct?</h2>
 
 <p>The general rule is ITTOIA 2005 s.34: expenses incurred wholly and exclusively for the purposes of the barrister's trade are deductible. The following categories are all allowable in practice:</p>
 
@@ -117,7 +117,7 @@ faqs:
 
 <p>Not deductible: personal clothing, personal travel, fines, interest on a loan taken to pay a personal income-tax liability (the purpose is to meet a personal obligation, not a trade purpose, HMRC BIM45690), or the costs of a failed silk application (seeking a new status rather than advancing an existing trade).</p>
 
-<h2>Pupillage, Tenancy Transition and the First-Year Cash-Flow Trap</h2>
+<h2>Pupillage, tenancy transition and the first-year cash-flow trap</h2>
 
 <p>A pupil barrister receiving income in the second six of pupillage (from the minimum pupillage award or from return fees) is taxable from the first year in which income is received. The first self-assessment return is due online by 31 January following that tax year end.</p>
 
@@ -138,7 +138,7 @@ faqs:
 
 <p>Setting aside approximately 30% of receipts as they are received is the simplest safeguard against a January crisis. A specialist barrister accountant can model the payments-on-account schedule in advance and flag the precise amounts due at each date.</p>
 
-<h2>VAT on a Barrister's Fees</h2>
+<h2>VAT on a barrister's fees</h2>
 
 <p>A barrister whose taxable turnover exceeds £90,000 in any rolling 12-month period must register for VAT and charge 20% on professional fees (VATA 1994 Schedule 1, threshold from 1 April 2024). Brief fees and advisory fees are standard-rated taxable supplies. A busy junior barrister in tenancy can reach the £90,000 threshold within their first full year of practice.</p>
 
@@ -150,7 +150,7 @@ faqs:
 
 <p><strong>Overseas brief fees and place of supply.</strong> Where a barrister advises an overseas client (whether an overseas solicitor, overseas company, or overseas government), the place-of-supply rules determine whether UK VAT applies. Under VATA 1994 s.7A, legal services supplied to a <strong>business customer outside the UK</strong> are generally <strong>outside the scope of UK VAT</strong> under the B2B general rule: the place of supply is where the customer belongs. Where the overseas client is a private individual (B2C), the supply is made where the supplier belongs, making it UK-standard-rated at 20%. A barrister regularly advising overseas business clients should confirm each client's business status and retain supporting documentation (a VAT registration number, a business registration, or written confirmation of business status) for any HMRC enquiry.</p>
 
-<h2>Chambers VAT Accounting: Three Permitted Methods</h2>
+<h2>Chambers VAT accounting: three permitted methods</h2>
 
 <p>Chambers costs for shared premises, clerks and services are VAT supplies within the chambers arrangement. HMRC VAT Notice 700/44 ("VAT for barristers and advocates") confirms this and prescribes three permitted accounting methods for recovering input tax on shared chambers costs (HMRC internal manual VIT13850):</p>
 
@@ -172,7 +172,7 @@ faqs:
 
 <p>If the barrister is not yet VAT-registered (turnover below £90,000), no input tax is recoverable. The full £24,000 is the expense. At 40%, the after-tax cost is £14,400.</p>
 
-<h2>King's Counsel: Tax Planning Around Appointment</h2>
+<h2>King's Counsel: tax planning around appointment</h2>
 
 <p>Appointment as King's Counsel does not in itself create a tax event. There is no CGT disposal, no income-tax charge, and no PAYE trigger on the day of appointment. The tax consequences flow from the increased fee levels that follow.</p>
 
@@ -182,7 +182,7 @@ faqs:
 
 <p>KC application fees and the cost of silk ceremony robes are both allowable as professional costs advancing an existing practice rather than acquiring a new trade.</p>
 
-<h2>Pensions for Self-Employed Barristers</h2>
+<h2>Pensions for self-employed barristers</h2>
 
 <p>A self-employed barrister can contribute to a personal pension (a SIPP or similar registered scheme). The annual allowance is £60,000 (or 100% of relevant UK earnings if lower). Tax relief is available at the marginal rate, up to 45% for additional-rate taxpayers. Carry-forward of unused annual allowance from the three prior tax years is available where the barrister was a member of a registered pension scheme in those years.</p>
 
@@ -196,7 +196,7 @@ faqs:
 
 <p>There is a useful alignment for cash-basis barristers: the reg 92 VAT tax point (payment or invoice, whichever is first) means that the income recorded for VAT and the income recorded for MTD income-tax purposes will be broadly the same figure in the same period. An accruals-basis barrister, however, must distinguish income recognised for tax from income received for VAT, and accounting software must handle this split correctly from the outset. Getting the software configured with the right basis, the correct tax point rule, and the appropriate expense categories before April 2026 is considerably easier than retrospectively correcting a year of digital records during an HMRC compliance check.</p>
 
-<h2>Working with a Specialist Barrister Accountant</h2>
+<h2>Working with a specialist barrister accountant</h2>
 
 <p>The combination of the regulation 92 tax point, the three chambers VAT methods, the cash-basis election decision, the pupillage-to-tenancy cash-flow shock, the KC payments-on-account step-change, and the MTD ITSA obligations from 2026 means that a barrister's tax affairs require specialist handling at every stage of practice.</p>
 

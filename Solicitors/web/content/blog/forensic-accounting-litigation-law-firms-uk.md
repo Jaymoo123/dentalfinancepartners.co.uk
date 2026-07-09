@@ -209,8 +209,6 @@ faqs:
 
 <p>Costs cap risk: if the court capped recoverable expert fees at permission stage (for example, limiting total SJE fees to £6,000), each party recovers only their proportionate share of the cap regardless of the actual SJE charge. The instruction letter should reference any costs cap and require the SJE to notify the parties before exceeding the permitted amount.</p>
 
-<h2>How our firm works with litigation solicitors</h2>
+<h2>Getting the financial side of an instruction right</h2>
 
-<p>We act as instructed forensic accountant and expert in commercial, family, and personal-injury litigation. Our reports are drafted to PD 35 standards, addressing the overriding duty, the range of opinion, and the facts-versus-assumptions structure. We have experience of joint-statement meetings and of the full cycle from pre-action instruction through to trial.</p>
-
-<p>If you are considering a forensic instruction, use the form below to set out the matter type, the key issues, and any costs constraints. We will respond with confirmation of scope, availability, and a cost estimate for budget purposes.</p>
+<p>If you need help with the financial analysis that sits alongside a forensic instruction (quantum modelling, loss-of-profits work or a business valuation for use with the expert report), or with the VAT and costs-recovery treatment of expert fees on a matter, contact Accounts for Lawyers using the form on this page.</p>
