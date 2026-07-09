@@ -328,6 +328,20 @@ faqs:
 
 <p>PPR eliminates UK CGT on the qualifying period, and nothing more. The overseas country charges its own tax on the gain regardless, and FTCR cannot be claimed against a UK liability that PPR has already reduced to nil, so the two reliefs do not combine.</p>
 
+<h2>Temporary non-residence: the returning-resident trap</h2>
+
+<p>TCGA 1992 s.10A contains an anti-avoidance rule for individuals who leave the UK, sell an overseas asset while non-resident, and then return. If you are resident in the UK, become non-resident, sell an overseas property during the non-resident period, and then resume UK residence within five complete tax years, the gain is treated as accruing in the year you return to the UK. You pay UK CGT as a resident in the year of return, not in the year of sale.</p>
+
+<p>The practical effect: leaving the UK and selling your overseas property while non-resident does not guarantee freedom from UK CGT if you intend to return within five years. The rule catches the gain on return. Foreign tax paid during the non-resident period can still be credited under FTCR, but the UK CGT charge arises in the later year.</p>
+
+<p>This rule runs in one direction only: it catches someone who departs the UK and returns. It does not rebase overseas property to market value when you first become UK resident. If you owned overseas property before moving to the UK and have been continuously resident since, the base cost is the original acquisition cost (in sterling at the acquisition-date spot rate), not market value at the date of arrival.</p>
+
+<h2>HMRC's visibility of overseas disposals</h2>
+
+<p>Since 2017, HMRC has received automatic data on overseas financial accounts and assets under the Common Reporting Standard (CRS) and the automatic exchange of information (AEOI) framework. Over 100 countries, including Spain, France, Portugal, Italy, and the UAE, report UK-resident account holders' financial information to HMRC each year. Overseas property sale proceeds flowing through a local bank or notary are within the data HMRC receives.</p>
+
+<p>This matters in practice: HMRC can cross-reference CRS data against Self Assessment returns. An overseas property disposal that is not declared is detectable. The standard four-year assessment window applies for innocent errors; a six-year window applies where there has been a failure to take reasonable care; and there is no time limit where HMRC can establish deliberate non-disclosure. Declaring the disposal correctly on SA108 and SA106 is both the legal obligation and the practical protection.</p>
+
 <h2>Common scenarios</h2>
 
 <h3>Holiday homes</h3>
