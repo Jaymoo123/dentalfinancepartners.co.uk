@@ -102,3 +102,9 @@ optimisation_engine/.cache/
 
 # Admin documentation
 # Admin/*.md files are kept in repo for project documentation
+
+# session scratch (blew Vercel 10MB upload limit 2026-07-09)
+.cache/
+_audit_digest.txt
+icaew_extract.txt
+icaew_lines.txt
