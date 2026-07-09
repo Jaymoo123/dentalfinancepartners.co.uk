@@ -98,9 +98,9 @@ generator: "claude-sonnet-4-6/wave4-netnew"
 
 <p>The consequences do not stop there. An overdrawn DLA (where the director has drawn more from the company than they have put in or been paid in salary and dividends) triggers a <strong>CTA 2010 s.455 charge</strong>. The company must pay an amount equal to the dividend upper rate on the overdrawn balance, 9 months and 1 day after the accounting period end. That rate is 33.75% for loans made in 2025/26, rising to 35.75% for loans made on or after 6 April 2026. The charge is repayable when the loan is repaid, but it creates an immediate cash-flow obligation for the company at a point when the funds are already gone.</p>
 
-<p>For a deeper explanation of how director's loan accounts work and the full mechanics of the s.455 charge, see our guide to <a href="/blog/bookkeeping-and-compliance/directors-loan-account-explained">director's loan accounts explained</a>.</p>
+<p>For a deeper explanation of how director's loan accounts work and the full mechanics of the s.455 charge, see our guide to <a href="/blog/director-pay-and-dividends/directors-loan-account-explained">director's loan accounts explained</a>.</p>
 
-<p>If you are considering incorporating your sole trader business, this structural distinction is part of what you are taking on. Our guide to <a href="/blog/limited-company-tax/how-to-switch-from-sole-trader-to-limited-company">switching from sole trader to limited company</a> covers what changes when you incorporate and what the company-as-separate-person means in practice.</p>
+<p>If you are considering incorporating your sole trader business, this structural distinction is part of what you are taking on. Our guide to <a href="/blog/incorporation-and-structure/how-to-switch-from-sole-trader-to-limited-company">switching from sole trader to limited company</a> covers what changes when you incorporate and what the company-as-separate-person means in practice.</p>
 
 <h3>Personal-account terms and conditions</h3>
 
@@ -126,7 +126,7 @@ generator: "claude-sonnet-4-6/wave4-netnew"
 
 <p>A missed business expense means you pay more tax than you should. An incorrectly claimed personal expense means an error on your return. HMRC can challenge any computation that looks inconsistent, and a mixed-account record is a natural target. A dedicated account reduces both risks.</p>
 
-<p>If you are registering as self-employed and setting up your first account, our guide on <a href="/blog/business-structures/how-to-register-as-self-employed-uk-while-keeping-full-time-job">registering as self-employed while keeping a full-time job</a> covers the registration steps and timing.</p>
+<p>If you are registering as self-employed and setting up your first account, our guide on <a href="/blog/sole-trader-and-self-employment/how-to-register-as-self-employed-uk-while-keeping-full-time-job">registering as self-employed while keeping a full-time job</a> covers the registration steps and timing.</p>
 
 <h3>Personal-account terms</h3>
 

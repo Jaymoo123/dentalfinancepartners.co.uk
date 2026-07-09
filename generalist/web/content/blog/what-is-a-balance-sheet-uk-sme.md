@@ -101,7 +101,7 @@ faqs:
 <p>The following is an invented example for a fictional UK small limited company, Maple Precision Ltd, at its year end 31 March 2026. All figures are illustrative. The presentation follows the Format 1 layout described above, with reading notes on each line so you can map it to your own accounts.</p>
 
 <table>
-  <caption>Maple Precision Ltd — Balance sheet at 31 March 2026</caption>
+  <caption>Maple Precision Ltd: balance sheet at 31 March 2026</caption>
   <thead>
     <tr>
       <th scope="col">Line item</th>
@@ -255,7 +255,7 @@ faqs:
 
 <p>Two points directors often miss. First, if the DLA balance exceeds £10,000 at any point during the year, the loan is a <strong>benefit in kind</strong> under ITEPA 2003 ss.173 to 191, reportable on P11D with Class 1A NIC at 15%, unless the director pays interest at HMRC's official rate. Second, do not try to solve an overdrawn DLA by repaying it just before the year end and drawing the same amount out again shortly after. The <strong>30-day rule (CTA 2010 s.464ZA)</strong> blocks this for balances of £15,000 or more; the <strong>arrangements rule (ss.464C/464D)</strong> catches longer patterns.</p>
 
-<p>For the full mechanics of the directors loan account, including how to clear an overdrawn balance efficiently and how to structure drawings to avoid the problem in the first place, see our dedicated guide: <a href="/blog/bookkeeping-and-compliance/directors-loan-account-explained">Directors loan account explained</a>.</p>
+<p>For the full mechanics of the directors loan account, including how to clear an overdrawn balance efficiently and how to structure drawings to avoid the problem in the first place, see our dedicated guide: <a href="/blog/director-pay-and-dividends/directors-loan-account-explained">Directors loan account explained</a>.</p>
 
 <h3>Red flag 3: Creditor spike with declining working capital</h3>
 
@@ -326,7 +326,7 @@ faqs:
 
 <h2>Related articles in Bookkeeping and Compliance</h2>
 <ul>
-  <li><a href="/blog/bookkeeping-and-compliance/directors-loan-account-explained">Directors loan account explained</a></li>
+  <li><a href="/blog/director-pay-and-dividends/directors-loan-account-explained">Directors loan account explained</a></li>
   <li><a href="/blog/bookkeeping-and-compliance/director-sign-off-accounts-non-accountant">Signing off company accounts as a non-accountant director</a></li>
   <li><a href="/blog/bookkeeping-and-compliance/how-to-file-company-accounts-uk">How to file company accounts at Companies House</a></li>
   <li><a href="/blog/bookkeeping-and-compliance/trial-balance-abbreviated-accounts">Trial balance and abbreviated accounts explained</a></li>

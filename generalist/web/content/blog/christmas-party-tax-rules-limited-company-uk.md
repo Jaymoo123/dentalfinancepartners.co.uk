@@ -152,7 +152,7 @@ faqs:
 <li>Employees receive a tax bill via their self assessment return or a PAYE coding adjustment. This can be reputationally awkward: employees attend the party expecting it to be a perk, and then discover they owe HMRC money for it.</li>
 </ul>
 
-<p>For broader background on how P11D reporting works, see our guide on <a href="/blog/limited-company-tax/p11d-benefits-in-kind-explained">P11D benefits in kind explained</a>.</p>
+<p>For broader background on how P11D reporting works, see our guide on <a href="/blog/payroll-and-paye/p11d-benefits-in-kind-explained">P11D benefits in kind explained</a>.</p>
 
 <h2>The PSA Option: Paying the Tax for Your Employees</h2>
 
@@ -208,7 +208,7 @@ faqs:
 
 <p>The result is that the full cost of the dinner is a taxable benefit in kind for the director, reportable on the director's P11D, with employer Class 1A NIC at 15% also payable. If the director also employs staff and the event is genuinely open to them (even if they choose not to attend), the all-employees condition can be satisfied. The key is that the event must genuinely be available to all staff, not just available on paper.</p>
 
-<p>Small ad-hoc gifts to staff and directors (under £50 each, not cash, not a reward for a specific service) are separately exempt under the trivial benefits rules, which operate independently of s.264. See our page on <a href="/blog/limited-company-tax/trivial-benefits-rules-uk">trivial benefits rules for UK limited companies</a> for how those work alongside the annual events exemption.</p>
+<p>Small ad-hoc gifts to staff and directors (under £50 each, not cash, not a reward for a specific service) are separately exempt under the trivial benefits rules, which operate independently of s.264. See our page on <a href="/blog/director-pay-and-dividends/trivial-benefits-rules-uk">trivial benefits rules for UK limited companies</a> for how those work alongside the annual events exemption.</p>
 
 <h2>Virtual Events: Do They Qualify?</h2>
 
@@ -233,7 +233,7 @@ faqs:
 
 <h2>Related articles in Limited Company Tax</h2>
 <ul>
-    <li><a href="/blog/limited-company-tax/trivial-benefits-rules-uk">Trivial Benefits Rules for UK Limited Companies</a></li>
-    <li><a href="/blog/limited-company-tax/p11d-benefits-in-kind-explained">P11D Benefits in Kind Explained</a></li>
+    <li><a href="/blog/director-pay-and-dividends/trivial-benefits-rules-uk">Trivial Benefits Rules for UK Limited Companies</a></li>
+    <li><a href="/blog/payroll-and-paye/p11d-benefits-in-kind-explained">P11D Benefits in Kind Explained</a></li>
     <li><a href="/blog/sole-trader-and-self-employment/allowable-expenses-sole-trader-checklist">Allowable Expenses: Sole Trader Checklist</a></li>
 </ul>

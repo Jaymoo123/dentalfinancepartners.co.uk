@@ -6,7 +6,7 @@ date: "2026-07-09"
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "Double-Entry Bookkeeping Explained | UK Business Guide"
-metaDescription: "Learn how double-entry bookkeeping works — debits, credits, ledgers and a full 5-transaction trial balance walk-through for UK sole traders and limited companies."
+metaDescription: "How double-entry bookkeeping works: debits, credits, ledgers and a full 5-transaction trial balance walk-through for UK sole traders and companies."
 altText: "UK business owner reviewing bookkeeping ledger entries at a desk with a laptop showing accounting software"
 image: ""
 imageCredit:
@@ -298,16 +298,16 @@ faqs:
   </thead>
   <tbody>
     <tr>
-      <td>5,000 (T1 — capital)</td>
-      <td>800 (T2 — equipment)</td>
+      <td>5,000 (T1: capital)</td>
+      <td>800 (T2: equipment)</td>
     </tr>
     <tr>
-      <td>1,200 (T3 — sales)</td>
-      <td>400 (T4 — rent)</td>
+      <td>1,200 (T3: sales)</td>
+      <td>400 (T4: rent)</td>
     </tr>
     <tr>
       <td></td>
-      <td>60 (T5 — stationery)</td>
+      <td>60 (T5: stationery)</td>
     </tr>
     <tr>
       <td><strong>Balance: 4,940 DR</strong></td>
@@ -331,7 +331,7 @@ faqs:
   <tbody>
     <tr>
       <td></td>
-      <td>5,000 (T1 — capital introduced)</td>
+      <td>5,000 (T1: capital introduced)</td>
     </tr>
     <tr>
       <td></td>
@@ -352,7 +352,7 @@ faqs:
   </thead>
   <tbody>
     <tr>
-      <td>800 (T2 — laptop)</td>
+      <td>800 (T2: laptop)</td>
       <td></td>
     </tr>
     <tr>
@@ -375,7 +375,7 @@ faqs:
   <tbody>
     <tr>
       <td></td>
-      <td>1,200 (T3 — consulting fee)</td>
+      <td>1,200 (T3: consulting fee)</td>
     </tr>
     <tr>
       <td></td>
@@ -396,7 +396,7 @@ faqs:
   </thead>
   <tbody>
     <tr>
-      <td>400 (T4 — July rent)</td>
+      <td>400 (T4: July rent)</td>
       <td></td>
     </tr>
     <tr>
@@ -418,7 +418,7 @@ faqs:
   </thead>
   <tbody>
     <tr>
-      <td>60 (T5 — office supplies)</td>
+      <td>60 (T5: office supplies)</td>
       <td></td>
     </tr>
     <tr>

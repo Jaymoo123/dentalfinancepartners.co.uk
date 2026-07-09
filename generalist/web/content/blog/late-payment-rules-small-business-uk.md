@@ -264,7 +264,7 @@ faqs:
 
 <p>If the customer later pays (in full or in part), you must repay the relief, or the proportionate share of it, on the next VAT return. Keep records of the original invoice, the write-off entry in your accounts, and the VAT return period in which you claimed the relief: HMRC can request these on a VAT inspection.</p>
 
-<p>One operational note: if you use the <strong>VAT cash accounting scheme</strong> (available to businesses with taxable turnover of £1.35 million or less), you already account for VAT on payments received rather than invoices raised. That means you have not paid the output VAT on unpaid invoices, so the formal bad-debt relief claim is not required under that scheme. The VAT threshold and scheme details are covered separately at <a href="/blog/vat-threshold-2025-26">VAT registration: the £90,000 threshold explained</a>.</p>
+<p>One operational note: if you use the <strong>VAT cash accounting scheme</strong> (available to businesses with taxable turnover of £1.35 million or less), you already account for VAT on payments received rather than invoices raised. That means you have not paid the output VAT on unpaid invoices, so the formal bad-debt relief claim is not required under that scheme. The VAT threshold and scheme details are covered separately at <a href="/blog/vat-and-making-tax-digital/vat-threshold-2025-26">VAT registration: the £90,000 threshold explained</a>.</p>
 
 <h2>Income Tax and Corporation Tax: The Bad-Debt Deduction</h2>
 
@@ -277,7 +277,7 @@ faqs:
 
 <p>Two important boundaries. First, a <strong>specific provision</strong> (where you have identified a particular debtor and set aside an amount because it is doubtful) is deductible once the debt is formally written off. A <strong>general provision</strong> (for example, "5% of all debtors may go bad") is not deductible: HMRC requires a specific identification. Second, the deduction arises in the <strong>accounting period or tax year in which you make the write-off in your accounts</strong>. Delaying the write-off delays the tax relief; if the debt has genuinely become irrecoverable, the prudent course is to write it off promptly.</p>
 
-<p>Managing <a href="/blog/cash-flow-management-small-business-uk">cash flow</a> and staying on top of debtor days are the first line of defence. The deductions above are the fall-back when prevention has failed.</p>
+<p>Managing <a href="/blog/bookkeeping-and-compliance/cash-flow-management-small-business-uk">cash flow</a> and staying on top of debtor days are the first line of defence. The deductions above are the fall-back when prevention has failed.</p>
 
 <h2>What the Act Does Not Cover</h2>
 

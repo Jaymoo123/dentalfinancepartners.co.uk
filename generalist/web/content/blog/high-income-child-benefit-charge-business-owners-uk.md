@@ -96,7 +96,7 @@ faqs:
 
 <p>A director sitting on £55,000 of combined salary and dividends is much closer to the £60,000 threshold than a quick glance at their salary might suggest. Knowing this is the first step in planning.</p>
 
-<p>If you want to model your own adjusted net income position before planning, our <a href="/blog/taxable-income-calculator">taxable income calculator</a> lets you input salary, dividends and other income to see the combined figure.</p>
+<p>If you want to model your own adjusted net income position before planning, our <a href="/blog/sole-trader-and-self-employment/taxable-income-calculator">taxable income calculator</a> lets you input salary, dividends and other income to see the combined figure.</p>
 
 <h2>How the Charge Is Calculated: the Taper in Practice</h2>
 
@@ -162,7 +162,7 @@ faqs:
 
 <p>That is a highly efficient use of a pension contribution. The pension annual allowance for 2025/26, continuing into 2026/27, is £60,000. Most directors in the HICBC band will have substantial headroom available, especially if they have unused allowance from prior years.</p>
 
-<p>For more on director salary and dividend structures and how pension contributions interact with the wider tax picture, see our guide on the <a href="/blog/tax-efficient-salary-dividend-split-director-2025-26">tax-efficient salary and dividend split for directors</a>.</p>
+<p>For more on director salary and dividend structures and how pension contributions interact with the wider tax picture, see our guide on the <a href="/blog/director-pay-and-dividends/tax-efficient-salary-dividend-split-director-2025-26">tax-efficient salary and dividend split for directors</a>.</p>
 
 <h2>Gift Aid as an ANI Reducer</h2>
 
@@ -208,7 +208,7 @@ faqs:
 
 <p>Third, the arrangement must not fall within the settlements legislation (ITTOIA 2005 s.619). HMRC can challenge redirected income where the arrangement is designed purely to divert income to a lower-taxed family member with no independent economic substance. The House of Lords case of Jones v Garnett [2007] UKHL 35 (the Arctic Systems case) established that an ordinary shares arrangement in a family company is generally not within s.619, because the shares carry rights that are not wholly the bounty of the director-spouse. However, arrangements that look artificial, for example giving a spouse preference shares with high dividends and no voting rights in circumstances that look designed solely to redirect income, carry a higher challenge risk.</p>
 
-<p>Our guide on <a href="/blog/dividend-to-spouse-non-director">dividends to a spouse</a> covers the legal framework, the settlements legislation, and the Arctic Systems position in detail. Do not rely on a summary here for planning decisions on this point.</p>
+<p>Our guide on <a href="/blog/director-pay-and-dividends/dividend-to-spouse-non-director">dividends to a spouse</a> covers the legal framework, the settlements legislation, and the Arctic Systems position in detail. Do not rely on a summary here for planning decisions on this point.</p>
 
 <h2>Self Assessment, PAYE and Registration Requirements</h2>
 
@@ -218,7 +218,7 @@ faqs:
 
 <p>For an employed partner who is not a director and does not otherwise file Self Assessment, the position is different. If their ANI exceeds £60,000, they must either register for Self Assessment (register by 5 October after the end of the relevant tax year, file online by 31 January following the year end) or opt to have the charge collected through their PAYE tax code. HMRC's PAYE-adjustment option is available for employees with a PAYE code and straightforward circumstances; it adjusts the tax code for the following year to recover the charge. Most directors are better served by Self Assessment.</p>
 
-<p>If you are new to Self Assessment or want an accountant to handle the HICBC calculation alongside your director's return, our <a href="/blog/self-assessment-accountant-2025-26">Self Assessment accountant guide</a> explains what to expect.</p>
+<p>If you are new to Self Assessment or want an accountant to handle the HICBC calculation alongside your director's return, our <a href="/blog/sole-trader-and-self-employment/self-assessment-accountant-2025-26">Self Assessment accountant guide</a> explains what to expect.</p>
 
 <h2>Year-by-Year Planning and Fluctuating Income</h2>
 
@@ -265,4 +265,4 @@ faqs:
 
 <p>An accountant who understands director pay and dividends will model all of these steps together and identify which combination produces the best after-tax result in your specific year. The interaction between dividend tax rates (10.75% ordinary, 35.75% upper rate from 6 April 2026 under FA 2026 s.4), the HICBC taper, and pension tax relief is not always linear, and the best answer depends on your specific ANI, pension annual allowance position, and corporate profit available to declare.</p>
 
-<p>For the broader salary and dividend optimisation context, our <a href="/blog/tax-efficient-salary-dividend-split-director-2025-26">director salary and dividend split guide</a> covers the full picture including NIC thresholds and corporation tax interaction.</p>
+<p>For the broader salary and dividend optimisation context, our <a href="/blog/director-pay-and-dividends/tax-efficient-salary-dividend-split-director-2025-26">director salary and dividend split guide</a> covers the full picture including NIC thresholds and corporation tax interaction.</p>

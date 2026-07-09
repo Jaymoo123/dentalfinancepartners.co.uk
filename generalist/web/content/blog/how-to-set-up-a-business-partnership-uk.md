@@ -63,7 +63,7 @@ faqs:
 <li><strong>No formal constitution required.</strong> The PA 1890 supplies default rules (including equal profit splits and automatic dissolution on a partner's death) that apply in the absence of a written partnership agreement.</li>
 </ol>
 
-<p><strong>What it is not.</strong> An LLP (limited liability partnership) is a separate legal person registered at Companies House under the Limited Liability Partnerships Act 2000; members have limited liability. A limited company is also a separate legal person, subject to corporation tax, with limited liability for shareholders. For a full comparison of structures, see our guide on <a href="/blog/sole-trader-and-self-employment/limited-company-vs-llp-consultant">limited company versus LLP for consultants</a>.</p>
+<p><strong>What it is not.</strong> An LLP (limited liability partnership) is a separate legal person registered at Companies House under the Limited Liability Partnerships Act 2000; members have limited liability. A limited company is also a separate legal person, subject to corporation tax, with limited liability for shareholders. For a full comparison of structures, see our guide on <a href="/blog/incorporation-and-structure/limited-company-vs-llp-consultant">limited company versus LLP for consultants</a>.</p>
 
 <h2>Formation Checklist: Eight Steps to a Working Partnership</h2>
 
@@ -176,7 +176,7 @@ faqs:
 
 <h3>Making Tax Digital for Income Tax</h3>
 
-<p>MTD ITSA will apply to partners whose gross income from the partnership exceeds the relevant threshold: £50,000 from 6 April 2026, £30,000 from 6 April 2027, and £20,000 from 6 April 2028. Mixed-member partnerships have specific rules under the MTD framework. See our dedicated guide on <a href="/blog/sole-trader-and-self-employment/mtd-itsa-april-2026-deadline-mixed-member-partnerships">MTD for mixed-member partnerships</a> for the detail.</p>
+<p>MTD ITSA will apply to partners whose gross income from the partnership exceeds the relevant threshold: £50,000 from 6 April 2026, £30,000 from 6 April 2027, and £20,000 from 6 April 2028. Mixed-member partnerships have specific rules under the MTD framework. See our dedicated guide on <a href="/blog/vat-and-making-tax-digital/mtd-itsa-april-2026-deadline-mixed-member-partnerships">MTD for mixed-member partnerships</a> for the detail.</p>
 
 <h3>Tax-year basis</h3>
 
@@ -199,7 +199,7 @@ faqs:
 
 <p>The liability risk also extends to obligations that are not straightforwardly "debts". Under PA 1890 s.10, the firm is liable for the wrongful act or omission of any partner acting in the ordinary course of business. A negligent act by one partner in the course of the firm's work can give rise to a claim against all partners personally. This is particularly relevant in professional services partnerships (accounting, surveying, law, architecture) where the damage from a negligent act can be large. Professional indemnity insurance is not a legal requirement for a general partnership but in practice should be treated as one.</p>
 
-<p>If the liability exposure is a concern, an LLP (limited liability, registered at Companies House) or a limited company may be more appropriate. See our guide on <a href="/blog/sole-trader-and-self-employment/limited-company-vs-llp-consultant">limited company versus LLP</a> for the comparison. If you are considering incorporating an existing business, see our guide on <a href="/blog/sole-trader-and-self-employment/how-to-switch-from-sole-trader-to-limited-company">how to switch from sole trader to limited company</a> for the mechanics.</p>
+<p>If the liability exposure is a concern, an LLP (limited liability, registered at Companies House) or a limited company may be more appropriate. See our guide on <a href="/blog/incorporation-and-structure/limited-company-vs-llp-consultant">limited company versus LLP</a> for the comparison. If you are considering incorporating an existing business, see our guide on <a href="/blog/incorporation-and-structure/how-to-switch-from-sole-trader-to-limited-company">how to switch from sole trader to limited company</a> for the mechanics.</p>
 
 <h2>Worked Example: Alex and Beth, 60/40 Split</h2>
 

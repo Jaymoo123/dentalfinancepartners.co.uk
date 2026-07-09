@@ -114,9 +114,9 @@ faqs:
   </tbody>
 </table>
 
-<div class="callout">
+<aside>
   <p>If you are a sole trader who also owns a limited company, you have two separate UTRs: your personal one (for your Self Assessment return) and the company's corporation tax UTR (for the CT600 return). They are different numbers used in different contexts. When your accountant asks for your UTR, always clarify which entity they are asking about.</p>
-</div>
+</aside>
 
 <h2>Where to find your personal UTR</h2>
 

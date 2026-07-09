@@ -54,7 +54,7 @@ generator: "claude-sonnet-4-6/wave4-netnew"
 
 <p>Many new LLP members assume that tax follows the money they actually receive. It does not. From the moment profit is allocated to your name in the LLP's accounts, you have a tax liability on it, regardless of how much cash you have drawn. That mismatch between cash in hand and taxable income is the single biggest source of surprise tax bills for LLP members, and it is entirely avoidable once you understand how the system works.</p>
 
-<p>This guide covers the ongoing tax compliance picture for someone already inside a limited liability partnership: how profit allocation creates the tax charge, how to calculate income tax and Class 4 NIC for 2026/27, how self assessment works in a partnership context, and when the salaried-member rules might change your treatment from partner to employee. If you are still deciding between a limited company and an LLP, that question is covered separately in our guide to <a href="/blog/sole-trader-and-self-employment/limited-company-vs-llp-consultant">the choice between a limited company and an LLP</a>.</p>
+<p>This guide covers the ongoing tax compliance picture for someone already inside a limited liability partnership: how profit allocation creates the tax charge, how to calculate income tax and Class 4 NIC for 2026/27, how self assessment works in a partnership context, and when the salaried-member rules might change your treatment from partner to employee. If you are still deciding between a limited company and an LLP, that question is covered separately in our guide to <a href="/blog/incorporation-and-structure/limited-company-vs-llp-consultant">the choice between a limited company and an LLP</a>.</p>
 
 <h2>How LLP tax transparency works</h2>
 
