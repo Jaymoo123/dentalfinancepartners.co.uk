@@ -1507,7 +1507,18 @@ export default async function SitePage({
           <Kpi label="Rage clicks" value={String(uxTotals.rage)} />
           <Kpi label="Dead clicks" value={String(uxTotals.dead)} />
         </div>
-        <div className="mt-3"><ErrorsPanel errors={clientErrors} /></div>
+        <div className="mt-3 grid gap-3 lg:grid-cols-[1fr_16rem] lg:items-start">
+          <ErrorsPanel errors={clientErrors} />
+          <Link
+            href={`/site/${siteKey}/lead-analytics`}
+            className="block rounded-xl border border-slate-200 bg-white p-4 transition-colors hover:border-emerald-300"
+          >
+            <div className="text-sm font-bold text-slate-900">Lead analytics</div>
+            <p className="mt-1 text-xs text-slate-500">
+              Value, quality and intent scoring for every lead →
+            </p>
+          </Link>
+        </div>
       </div>
     </div>
   );

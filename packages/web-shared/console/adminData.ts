@@ -438,6 +438,37 @@ export function getLeadsForSite(siteKey: string, limit = 200) {
   });
 }
 
+export type LeadValueScore = {
+  lead_id: string;
+  tier: "very_high" | "high" | "medium" | "low";
+  est_value_gbp: number;
+  intent: string;
+  work_type: string;
+  channel: string;
+  confidence: string;
+  rationale: string;
+  scored_by: string;
+  scored_at: string;
+};
+
+const SCORE_COLS =
+  "lead_id,tier,est_value_gbp,intent,work_type,channel,confidence,rationale,scored_by,scored_at";
+
+export async function getLeadValueScores(leadIds: string[]) {
+  const out: LeadValueScore[] = [];
+  for (let i = 0; i < leadIds.length; i += 100) {
+    const chunk = leadIds.slice(i, i + 100);
+    out.push(
+      ...(await rest<LeadValueScore>("lead_value_scores", {
+        lead_id: `in.(${chunk.join(",")})`,
+        select: SCORE_COLS,
+        limit: "100",
+      })),
+    );
+  }
+  return out;
+}
+
 export function getLeadForVisitor(siteKey: string, visitorId: string) {
   return rest<LeadInfo>("leads", {
     source: `eq.${siteKey}`,

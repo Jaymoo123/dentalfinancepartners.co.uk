@@ -21,6 +21,7 @@ import crypto from "node:crypto";
 import { getResend, getFromAddress } from "@/lib/resend";
 import { resolveLeadCc, resolveLeadTo, ccExcludedSources } from "@/lib/lead-routing";
 import { roleLabel, surfaceLabel } from "@/lib/leads/role-labels";
+import { scoreLeadValue } from "@/lib/leads/value-score";
 
 export const runtime = "nodejs";
 export const maxDuration = 30;
@@ -320,6 +321,11 @@ export async function POST(req: NextRequest) {
   if (!r || !r.email) {
     return NextResponse.json({ ok: false, error: "No record" }, { status: 400 });
   }
+
+  // Value scoring for the console's Lead Analytics page. Fire-and-forget: it
+  // never throws, and the notification email must never fail or slow because
+  // scoring failed. ponytail: upgrade to waitUntil if Vercel kills it early.
+  void scoreLeadValue(r).catch(() => {});
 
   // Recipient is source-aware (this one route serves every site): Property's own
   // leads go to the Ashfield Trading inbox (junayd@ashfieldtrading.com); every
