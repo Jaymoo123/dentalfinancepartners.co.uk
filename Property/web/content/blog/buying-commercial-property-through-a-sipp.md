@@ -114,7 +114,7 @@ faqs:
 
 <p><strong>Step 2: Applying the borrowing cap.</strong> With £200,000 in the fund, the SIPP can borrow up to £100,000 (50% of £200,000). Total buying power: £300,000, which falls short of the £400,000 purchase price. Marcus also holds £200,000 in an existing pension arrangement. He transfers those savings into the SIPP. Total SIPP assets: £400,000. Borrowing cap: £200,000 (50% of £400,000). Total buying power: £600,000, sufficient for the £400,000 purchase with headroom.</p>
 
-<p><strong>Step 3: The purchase mechanics.</strong> The SIPP trustees, acting as buyer, contract to purchase the commercial office freehold for £400,000. Standard commercial conveyancing applies. SDLT is payable at non-residential rates: 0% on the first £150,000, 2% on £150,001 to £250,000, and 5% above £250,000. For a £400,000 commercial purchase: (£0) + (£100,000 x 2%) + (£150,000 x 5%) = £2,000 + £7,500 = £9,500 SDLT. If the seller has opted to tax the property for VAT purposes, the buyer (the SIPP) must also account for 20% VAT on the purchase price, recoverable if the SIPP is VAT-registered and makes taxable supplies from the property. The SIPP (not Marcus personally) holds the legal and beneficial title.</p>
+<p><strong>Step 3: The purchase mechanics.</strong> The SIPP trustees, acting as buyer, contract to purchase the commercial office freehold for £400,000. Standard commercial conveyancing applies. SDLT is payable at non-residential rates: 0% on the first £150,000, 2% on £150,001 to £250,000, and 5% above £250,000. For a £400,000 commercial purchase: (£0) + (£100,000 x 2%) + (£150,000 x 5%) = £2,000 + £7,500 = £9,500 SDLT. If the seller has opted to tax the property for VAT purposes, the buyer (the SIPP) must also account for 20% VAT on the purchase price, recoverable if the SIPP is VAT-registered and makes taxable supplies from the property. The SIPP (not Marcus personally) holds the legal and beneficial title. Not all SIPP providers permit direct commercial property holdings. Those that do charge property-specific fees on top of standard SIPP charges: typically a property acquisition fee (often £500 to £1,500 plus VAT), an ongoing annual property administration fee (often £200 to £600 plus VAT per property), and a disposal fee on eventual sale. These costs should be factored into the return calculation at the outset.</p>
 
 <p><strong>Step 4: The rent flow.</strong> Marcus's practice pays arm's-length market rent to the SIPP: £18,000 per year, established by an independent rental valuation. The rent payment is:</p>
 
@@ -156,6 +156,10 @@ faqs:
 </ul>
 
 <p>A properly documented rent-back arrangement at market value is a permitted, common, and tax-efficient use of a SIPP commercial property. The risk is purely one of documentation and periodic maintenance of the market-rent standard.</p>
+
+<p><strong>Valuation events beyond rent reviews.</strong> Independent valuations are required not only at rent-review dates but also at the point of purchase, on any sale of the property, at retirement when benefits are crystallised (for PCLS calculation purposes), and on the member's death (for scheme accounts and LSDBA reporting). SIPP providers typically instruct a RICS-registered valuer for each of these events. Budget for a valuation cost each time the scheme accounts are struck if the property is the scheme's main asset.</p>
+
+<p><strong>Insurance.</strong> The SIPP trustee or provider (as legal owner of the property) is responsible for maintaining buildings insurance and public liability insurance on the commercial property. On a full repairing and insuring (FRI) lease, the tenant typically reimburses the insurance premium as a lease obligation, but the policy must be in the name of the scheme trustees. Confirm the insurance arrangements with the SIPP provider before exchange; some providers have preferred insurers or require sign-off on the policy terms.</p>
 
 <h2>SSAS employer loans: a separate tool</h2>
 
