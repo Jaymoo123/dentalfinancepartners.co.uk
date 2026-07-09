@@ -1,0 +1,44 @@
+wave: 5
+buckets:
+  A:
+    label: Wave 5 - gap discovery 2026-07 batch (single lane, 6 picks, batchSize 1)
+    picks:
+    - id: A1
+      slug: dental-practice-succession-planning-family-transfer
+      label: 'Succession Planning for Dental Practice Owners :: Framing: INTERNAL succession (family transfer, associate buy-in, MBO, partnership transition) as alternative to open-market sale; gift holdover relief + IHT planning for practice assets. Distinct from arms-length practice-sale pages.'
+      competitors:
+        - https://www.djh.co.uk/our-services/tax/business-tax/succession-planning/
+        - https://www.hazlewoods.co.uk/expertise/business-accountants/tax/inheritance-tax-trusts-and-estate-planning/
+        - https://bryden-johnson.co.uk/pensions-and-estate-planning/
+    - id: A2
+      slug: wealth-management-for-dentists-uk
+      label: 'Wealth Management and Investment Planning for Dentists :: Framing: investing practice surplus beyond NHS pension (ISAs, SIPPs alongside NHS pension, family wealth structure). EDUCATION ONLY - FCA boundary: signpost FCA-regulated advisers, no specific investment recommendations.'
+      competitors:
+        - https://pfmdental.co.uk/financial-planning/wealth-management/
+        - https://www.djh.co.uk/our-services/wealth-management/
+        - http://www.onlyfordentists.com/wealth-management.htm
+    - id: A3
+      slug: dental-hygienist-dcp-tax-employment-status
+      label: 'Tax Classification of Dental Hygienists and DCPs :: Framing: employment status for hygienists/therapists/DCPs (commonly PAYE or mixed, no NHS performers list), distinct from associate BDA-model page.'
+      competitors:
+        - https://www.mccarthyaccountants.com/tax-classification-of-dental-associates-dental-hygienists/
+        - https://dentalaccountancy.co.uk/dental-associates
+        - https://sial-accountants.co.uk/services/dental-associates/
+    - id: A4
+      slug: buying-car-through-limited-company-dentist
+      label: 'Buying a Car Through a Limited Company (Dentist Guide) :: Framing: company-purchase route (BIK, EV vs petrol, P11D, VAT) vs personal mileage allowance for incorporated principals; WDA page covers allowances only.'
+      competitors:
+        - https://samera.co.uk/learning-center/buying-a-car-limited-company/
+        - https://www.ac-accounts.co.uk/blog/buying-a-second-hand-electric-car-for-your-business/
+        - https://bryden-johnson.co.uk/buying-an-electric-car-does-it-need-to-be-new/
+    - id: A5
+      slug: tax-planning-for-dentists
+      label: 'Tax Planning for Dentists :: Framing: structured HUB/gateway page anchoring cluster H (tax planning for dentists / dentist tax / tax for dentists, ~28 impr) - links every tax sub-topic; existing accountant-for-dentists is a service pitch, not a hub. [HUB]'
+      competitors:
+        - https://samera.co.uk/learning-center/
+        - https://www.djh.co.uk/latest-news/specialisms/dental/
+    - id: A6
+      slug: vat-loan-dental-practices-uk
+      label: 'VAT Loan for Dental Practices :: Framing: practice-finance informational angle (what a VAT loan is, when a practice needs one, cashflow timing, interest deductibility) - vatloansuk.co.uk owns the transactional SERP; do not compete transactionally.'
+      competitors:
+        - https://www.vatloansuk.co.uk/

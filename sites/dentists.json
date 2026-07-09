@@ -25,14 +25,13 @@
   },
 
   "wave": {
-    "buckets": ["a", "b", "c"],
-    "bucketsUpper": ["A", "B", "C"],
+    "_doc": "Owner ruling 2026-07-08: no A/B/C lanes; batchSize 1 = one sub-agent per topic, parallel. Single bucket retained for path/naming compatibility.",
+    "buckets": ["a"],
+    "bucketsUpper": ["A"],
     "megaWaveSize": 60,
-    "batchSize": 6,
+    "batchSize": 1,
     "fRangePerBucket": {
-      "a": "F-1..F-49",
-      "b": "F-50..F-99",
-      "c": "F-100..F-149"
+      "a": "F-1..F-149"
     },
     "waveKind": "wave"
   },
