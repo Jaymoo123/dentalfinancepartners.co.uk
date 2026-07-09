@@ -1,7 +1,6 @@
 {
   "site": "solicitors",
   "displayName": "Accounts for Lawyers",
-
   "paths": {
     "repoRoot": "C:/Users/user/Documents/Accounting",
     "worktreeBase": "C:/Users/user/Documents",
@@ -18,31 +17,30 @@
     "topicPool": "docs/solicitors/topic_gaps_final.md",
     "siteConfigJson": "Solicitors/niche.config.json"
   },
-
   "vercel": {
     "projectJson": "Solicitors/.vercel/project.json",
     "projectId": "prj_fCtGxawB5DvMonbUtgyOJRJZUzQ9",
     "orgId": "team_XF9WAygZX7SGk9Fo4tOAnihH",
     "productionDomain": "www.accountsforlawyers.co.uk"
   },
-
   "wave": {
-    "buckets": ["a", "b", "c"],
-    "bucketsUpper": ["A", "B", "C"],
+    "_doc": "Owner ruling 2026-07-08: no A/B/C lanes; batchSize 1 = one sub-agent per topic, parallel. Single bucket retained for path/naming compatibility.",
+    "buckets": [
+      "a"
+    ],
+    "bucketsUpper": [
+      "A"
+    ],
     "megaWaveSize": 60,
-    "batchSize": 6,
+    "batchSize": 1,
     "fRangePerBucket": {
-      "a": "F-1..F-49",
-      "b": "F-50..F-99",
-      "c": "F-100..F-149"
+      "a": "F-1..F-149"
     },
     "waveKind": "wave"
   },
-
   "indexnow": {
     "module": "optimisation_engine.indexing.submit_indexnow"
   },
-
   "naming": {
     "launchPromptsFile": "WAVE{wave}_LAUNCH_PROMPTS.md",
     "startHereFile": "WAVE{wave}_SESSION_{bucketUpper}_START_HERE.md",
