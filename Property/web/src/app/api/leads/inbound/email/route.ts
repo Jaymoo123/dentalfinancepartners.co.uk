@@ -213,12 +213,19 @@ export async function POST(req: NextRequest) {
           }
         }
       }
-      await recordResponseAndEvaluate(leadId, "replied", "email", {
-        body: strippedBody.slice(0, 300),
+      const promote = await recordResponseAndEvaluate(leadId, "replied", "email", {
+        body: strippedBody.slice(0, 2000),
       });
       // Always surface the reply to the operator so a human sees exactly what the
-      // prospect said (name, number, best time), whether or not it promoted.
-      await notifyOperatorOfReply({ leadId, channel: "email", replyBody: strippedBody });
+      // prospect said (name, number, best time), whether or not it promoted. If the
+      // lead was already handed off before this reply, this resends the full
+      // handoff pack ("Updated enquiry") so nothing said post-handoff is lost.
+      await notifyOperatorOfReply({
+        leadId,
+        channel: "email",
+        replyBody: strippedBody,
+        alreadyContactable: promote.alreadyPromoted === true,
+      });
       // Close the loop with the prospect: one short ack email confirming the
       // reply landed and a specialist will call. Idempotent per lead, dormancy
       // and test gated, fail-soft inside (never throws out of the webhook).

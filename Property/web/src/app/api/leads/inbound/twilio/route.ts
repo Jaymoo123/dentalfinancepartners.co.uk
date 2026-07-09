@@ -14,7 +14,7 @@ import crypto from "crypto";
 import { adminSelect } from "@/lib/supabase/admin";
 import { toE164UK } from "@/lib/leads/channels";
 import { recordResponseAndEvaluate, stopNurture } from "@/lib/leads/contactability";
-import { acknowledgeReply } from "@/lib/leads/reply-ack";
+import { acknowledgeReply, notifyOperatorOfReply } from "@/lib/leads/reply-ack";
 import { conciergeEnabled, handleInboundReply } from "@/lib/leads/concierge";
 import { classifyReplyIntent } from "@/lib/leads/reply-intent";
 import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
@@ -193,6 +193,18 @@ export async function POST(req: NextRequest) {
               source: fullLead.source,
             },
           }).catch((err) => console.error("[leads/inbound/twilio] concierge failed", err));
+          // Concierge handles the prospect-facing ack but not the operator side:
+          // a post-handoff reply must still refresh the handoff pack.
+          if (result.alreadyPromoted === true) {
+            await notifyOperatorOfReply({
+              leadId,
+              channel,
+              replyBody: body.slice(0, 300),
+              alreadyContactable: true,
+            }).catch((err) =>
+              console.error("[leads/inbound/twilio] operator notify failed", err),
+            );
+          }
         } else {
           // Lead fetch failed: fall back to static ack so the lead still hears from us.
           await acknowledgeReply({

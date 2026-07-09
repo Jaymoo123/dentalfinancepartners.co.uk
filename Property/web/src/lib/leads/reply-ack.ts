@@ -24,6 +24,7 @@ import type { NurtureLead } from "@accounting-network/web-shared/lead-nurture/co
 import { buildLeadMessageContext } from "@/config/lead-nurture";
 import { renderLeadServiceEmail } from "@/lib/emails/lead-service-template";
 import { buildLeadChannelSender } from "./channels";
+import { sendContactableHandoff } from "./handoff";
 import { getResend, getFromAddress } from "@/lib/resend";
 import { resolveLeadTo } from "@/lib/lead-routing";
 
@@ -122,38 +123,15 @@ export async function acknowledgeReply(opts: {
     console.error("[leads/reply-ack] ack send failed", err);
   }
 
-  // ── Post-handoff reply -> short operator update (capped) ──────────────────
+  // ── Post-handoff reply -> refreshed handoff / operator update (capped) ────
   try {
-    if (
-      opts.alreadyContactable &&
-      opts.replyBody.trim() &&
-      lead.source !== "test" &&
-      process.env.RESEND_API_KEY
-    ) {
-      const priorUpdates = await countEvents(opts.leadId, "operator_update");
-      if (priorUpdates < OPERATOR_UPDATE_CAP) {
-        const to = resolveLeadTo(lead.source);
-        const quoted = opts.replyBody.slice(0, 300);
-        const { error } = await getResend().emails.send({
-          from: getFromAddress(),
-          to,
-          subject: `Lead update: ${lead.full_name} replied`,
-          html: `<div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#0f172a;max-width:640px;">
-<p><strong>${lead.full_name}</strong> sent a follow-up ${opts.channel === "whatsapp" ? "WhatsApp" : "SMS"} message:</p>
-<div style="background:#f1f5f9;border-radius:6px;padding:10px 14px;font-style:italic;">&ldquo;${quoted
-            .replace(/&/g, "&amp;")
-            .replace(/</g, "&lt;")
-            .replace(/>/g, "&gt;")}&rdquo;</div>
-<p style="font-size:13px;color:#64748b;">This reply may include a preferred call time or portfolio detail.</p>
-</div>`,
-          text: `${lead.full_name} sent a follow-up ${opts.channel} message: "${quoted}"`,
-        });
-        if (error) throw new Error(`operator update send error: ${JSON.stringify(error)}`);
-        await recordLeadContactEvent(opts.leadId, "operator_update", opts.channel, {
-          body: quoted,
-        });
-        result.operatorUpdated = true;
-      }
+    if (opts.alreadyContactable) {
+      result.operatorUpdated = await notifyOperatorOfReply({
+        leadId: opts.leadId,
+        channel: opts.channel,
+        replyBody: opts.replyBody,
+        alreadyContactable: true,
+      });
     }
   } catch (err) {
     console.error("[leads/reply-ack] operator update failed", err);
@@ -248,6 +226,8 @@ export async function notifyOperatorOfReply(opts: {
   leadId: string;
   channel: "email" | "sms" | "whatsapp";
   replyBody: string;
+  /** True when the lead was ALREADY handed off before this reply arrived. */
+  alreadyContactable?: boolean;
 }): Promise<boolean> {
   try {
     if (!opts.replyBody.trim() || !process.env.RESEND_API_KEY) return false;
@@ -255,6 +235,27 @@ export async function notifyOperatorOfReply(opts: {
     if (!lead || lead.source === "test") return false;
     const priorUpdates = await countEvents(opts.leadId, "operator_update");
     if (priorUpdates >= OPERATOR_UPDATE_CAP) return false;
+
+    // A reply landing AFTER the handoff email went out means the operator may
+    // already have forwarded a pack that is now incomplete. Resend the FULL
+    // handoff (dossier timeline includes this reply, recorded upstream) with an
+    // "Updated" subject so the operator forwards the refreshed version instead
+    // of stitching a snippet onto the original. Fall through to the snippet
+    // email only if the refreshed handoff fails to send.
+    if (opts.alreadyContactable) {
+      const handoff = await sendContactableHandoff(
+        opts.leadId,
+        `sent more info by ${opts.channel === "whatsapp" ? "WhatsApp" : opts.channel === "sms" ? "SMS" : "email"}`,
+        { updated: true },
+      );
+      if (handoff.sent) {
+        await recordLeadContactEvent(opts.leadId, "operator_update", opts.channel, {
+          body: opts.replyBody.slice(0, 2000),
+          kind: "updated_handoff",
+        });
+        return true;
+      }
+    }
 
     const who = (lead.full_name || "").trim() || lead.email;
     const quoted = opts.replyBody.slice(0, 500);

@@ -83,8 +83,11 @@ export function buildHandoffEmail(
   lead: LeadRow,
   d: LeadDossier,
   reason: string,
+  updated = false,
 ): { subject: string; html: string; text: string } {
-  const subject = `New qualified enquiry: ${lead.full_name}`;
+  const subject = updated
+    ? `Updated enquiry: ${lead.full_name} (new reply since handoff)`
+    : `New qualified enquiry: ${lead.full_name}`;
 
   const ver = d.verification;
   const enr = d.enrichment;
@@ -160,7 +163,11 @@ export function buildHandoffEmail(
 
   const html = `<div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#0f172a;max-width:640px;">
 <p style="font-size:16px;">
-<strong style="color:#047857;">Contact details verified. Actively responded and ready for a call.</strong>
+${
+  updated
+    ? `<strong style="color:#b45309;">They sent more information after the original handoff. This is the full refreshed pack, forward this version.</strong>`
+    : `<strong style="color:#047857;">Contact details verified. Actively responded and ready for a call.</strong>`
+}
 </p>
 ${bookedLine ? `<p>${bookedLine}</p>` : ""}
 <table style="border-collapse:collapse;font-size:14px;margin:12px 0;">${detail}</table>
@@ -174,7 +181,7 @@ ${timelineHtml}
 
   const lastReply = d.replies.length ? d.replies[d.replies.length - 1] : null;
   const text =
-    `New qualified enquiry: ${lead.full_name}\n` +
+    `${subject}\n` +
     `Phone: ${ver.phone_e164 || lead.phone} (${ver.phone_status || "?"})\n` +
     `Email: ${lead.email} (${ver.email_status || "?"})\n` +
     (d.bookingStart ? `Booked callback: ${fmtTs(d.bookingStart)}\n` : "") +
@@ -192,6 +199,7 @@ ${timelineHtml}
 export async function sendContactableHandoff(
   leadId: string,
   reason: string,
+  opts?: { updated?: boolean },
 ): Promise<HandoffResult> {
   const leadRes = await adminSelect<LeadRow>("leads", {
     id: `eq.${leadId}`,
@@ -215,7 +223,7 @@ export async function sendContactableHandoff(
     message: lead.message,
   });
 
-  const { subject, html, text } = buildHandoffEmail(lead, d, reason);
+  const { subject, html, text } = buildHandoffEmail(lead, d, reason, opts?.updated === true);
 
   // Try up to 3 times with short backoffs before giving up gracefully.
   // Total worst-case wait is ~1.1 s, well inside any route budget.
