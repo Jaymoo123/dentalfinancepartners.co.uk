@@ -188,7 +188,7 @@ Action: conductor to lock the following as new **Â§4.C** in house_positions be
 
 **Priority:** MEDIUM (a FAQ answer; the main AIA content is unaffected).
 
-**Status:** OPEN
+**Status:** CLOSED 2026-07-09 WRAP back-patch: aia-allowance FAQ now dates the rate (55p from 6 Apr 2026, 45p before).
 
 ---
 
@@ -206,7 +206,7 @@ Action: conductor to lock the following as new **Â§4.C** in house_positions be
 
 **Priority:** HIGH (both pages give current-year tax advice; a reader preparing their 2026/27 return would use the wrong rate).
 
-**Status:** OPEN
+**Status:** CLOSED 2026-07-09 WRAP back-patch: locum 2025/26 page annotated (45p correct for its year, rising note added); self-assessment page updated to 55p-dated.
 
 ---
 
@@ -241,7 +241,7 @@ about LISA. Does not block other sections.).
 
 **Priority:** LOW (the page is correct without it; this is an enhancement back-patch at wave merge).
 
-**Status:** OPEN.
+**Status:** CLOSED 2026-07-09 WRAP: FAQ Q12 link to succession page added post-merge.
 
 ---
 
@@ -286,7 +286,7 @@ about LISA. Does not block other sections.).
 **Page:** employing-first-dental-nurse-practice-manager-cost-tax
 **Raised by:** A3 sub-agent (dental-hygienist-dcp-tax-employment-status)
 **Detail:** The A3 brief mandates a bidirectional cross-link. The new DCP page links out to the nurse/payroll page. The nurse/payroll page must add a reciprocal link back: "If you are a dental hygienist or therapist working out your own tax position, see [dental-hygienist-dcp-tax-employment-status]." This back-patch is needed at wave merge.
-**Status:** OPEN
+**Status:** CLOSED 2026-07-09 WRAP: reciprocal link added to employing-first-dental-nurse page.
 
 ---
 
@@ -296,7 +296,7 @@ about LISA. Does not block other sections.).
 **Page:** dental-hygienist-dcp-tax-employment-status (new)
 **Raised by:** A3 sub-agent
 **Detail:** GDC Direct Access guidance URL (gdc-uk.org) was not verified live at write time due to previous 404 on the direct sub-URL. The body cites the 2013 GDC direct-access decision but does not link to a GDC URL. If a stable GDC direct-access page URL is confirmed, add it to the body as an authority link.
-**Status:** OPEN (low priority; page is factually correct, link is supplementary)
+**Status:** CLOSED 2026-07-09: low-priority; GDC direct-access referenced without hard URL on page (no unverified URL shipped).
 
 ---
 
@@ -313,7 +313,7 @@ about LISA. Does not block other sections.).
 
 **Action:** back-patch at wave merge (no commit needed now).
 
-**Status:** OPEN
+**Status:** CLOSED 2026-07-09 WRAP: all 3 back-links inserted.
 
 ---
 
@@ -345,7 +345,7 @@ working-capital page who are VAT-registered will benefit from the specific cross
 **Suggested addition:** one sentence in the working-capital page under its short-term loan section:
 "For the specific case of funding a quarterly VAT bill or a CGS adjustment, see [vat-loan-dental-practices-uk]."
 
-**Status:** open
+**Status:** CLOSED 2026-07-09 WRAP: back-link inserted in working-capital page.
 
 ---
 
@@ -361,7 +361,7 @@ loan page covers what to do when the reserve is insufficient and a bill falls du
 "If the reserve is not enough to cover the quarterly bill, see [vat-loan-dental-practices-uk]
 for a comparison of short-term borrowing and HMRC Time to Pay."
 
-**Status:** open
+**Status:** CLOSED 2026-07-09 WRAP: back-link inserted in cash-flow page.
 
 ---
 
@@ -375,4 +375,4 @@ at the Wave 2 HP-lock gate (docs/dentists/house_positions.md verification log en
 passed to the rewrite hit-list at that time. Confirming it is still open as at 2026-07-09 and
 should be prioritised in the next dentists rewrite batch.
 
-**Status:** open (previously flagged at Wave 2 HP-lock gate; not yet actioned)
+**Status:** CLOSED 2026-07-09 WRAP: FALSE POSITIVE - facial-aesthetics page already states GBP90,000 (raised from GBP85,000 on 1 April 2024); no edit needed.

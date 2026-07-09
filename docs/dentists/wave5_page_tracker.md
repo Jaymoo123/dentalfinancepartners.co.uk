@@ -1,6 +1,6 @@
 ﻿# Wave 5 page tracker (dentists)
 
-**Created:** 2026-07-09. **Status:** Pre-launch. Wave 5 = up to 6 net-new pages, SINGLE lane (owner ruling 2026-07-08: no A/B/C buckets, batchSize 1, one sub-agent per pick in parallel). Source: gap discovery 2026-07 batch (5 already rejected at collision verify pre-wave), page-level cannib verify at compose.
+**Created:** 2026-07-09. **Status:** WRAP COMPLETE 2026-07-09 - 5 pages written, QA clean, merged, build GREEN, monitored to 2026-10-07. AWAITING DEPLOY WORD. Wave 5 = up to 6 net-new pages, SINGLE lane (owner ruling 2026-07-08: no A/B/C buckets, batchSize 1, one sub-agent per pick in parallel). Source: gap discovery 2026-07 batch (5 already rejected at collision verify pre-wave), page-level cannib verify at compose.
 
 Tracker columns: status | pos | slug | category | body words | FAQ count | monitored_pages ID | session notes.
 
@@ -35,8 +35,8 @@ Tracker columns: status | pos | slug | category | body words | FAQ count | monit
 - [x] picks.yaml written (briefs/dentists/wave5/picks.yaml, competitor URLs pre-selected per pick)
 - [x] Jaccard cannib check GREEN (docs/dentists/wave5_cannibalisation_check.md)
 - [x] Page-level corpus verify (UPGRADE 2) complete â€” 5 DISTINCT / A5 STRUCK (docs/dentists/wave5_collision_verify.md)
-- [ ] Stage 1 seeds + Stage 1b HP gate
-- [ ] Stage 2 briefs + Stage 2b drift gate
+- [x] Stage 1 seeds + Stage 1b HP gate (5 HP lock commits, 8 flags closed)
+- [x] Stage 2 briefs + Stage 2b drift gate (A3 45p drift caught + fixed)
 
 
 
