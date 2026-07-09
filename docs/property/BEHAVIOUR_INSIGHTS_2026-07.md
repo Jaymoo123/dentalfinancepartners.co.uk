@@ -1,5 +1,26 @@
 # Property Behaviour Insights Readout, July 2026
 
+> **SHIP RECORD (signed off 2026-07-09).** The CRO wave driven by this readout is LIVE in prod:
+> multi-step mini-forms ON (`NEXT_PUBLIC_MINIFORMS_MULTISTEP=1`), honeypot fix live, subscribe
+> block + blog StickyCTA + inert ExitIntentModal removed, assistant nudge capped at 1 ping/session,
+> `niche.company` guard shipped. DeepScrollModal + homepage StickyCTA deliberately KEPT after
+> time-segmented re-analysis (see §0). Migrations applied: `vw_form_step_funnel`,
+> `lead_value_scores`, `deploy_watch`. Watch ARMED from 2026-07-09: day 3/7/14/28 gates email
+> PASS/ACTION verdicts via the daily 07:30 `/api/cron/deploy-watch` cron. E2E synthetic lead
+> verified (form_id / role_detail / visitor stitch / notify email) then deleted.
+> Console lead-analytics page live on estate-console. Commits `c5b2576c`..`8dcf7db6` on
+> `property-lead-quality`. Rollback: unset flag + redeploy; `git revert f8674565` for surfaces.
+> Subscribe backend endpoints + nurture-send cron remain as unreachable dead code (0 Property
+> subscribers ever existed, DB-verified); delete in a future cleanup.
+> Deploy gotcha fixed en route: `.vercelignore` patterns must be root-anchored (unanchored
+> `supabase/` excluded `Property/web/src/lib/supabase/` and broke the Vercel build).
+>
+> **Open follow-ups (owner-acknowledged 2026-07-09):** July rage-click anomaly query (50/wk,
+> only 3 on calc inputs — new source unknown); bot reclassifier engagement floor; GB Safari
+> beacon-loss check; related-articles "next question" rework + inline calc links (post Day-7
+> gate); calc result-gate iteration (decision at Day-14 gate ~2026-07-23); AI-referral landing
+> treatment (when volume doubles); section-read signal into rewrite engine.
+
 **Scope:** First deep-mine of the first-party behaviour pipeline (live since 2026-06-05).
 **Data:** ~8,500 human sessions / ~6,800 visitors / ~200k events / 51 converted visitors, prod Supabase (`web_sessions`, `web_events`, human-only `is_bot=false`).
 **Method:** Read-only SQL via Management API. Re-runnable scripts: `scripts/_behaviour_deep_batch1.py` … `_batch4.py`, `scripts/_behaviour_data_survey.py`/`2.py`.

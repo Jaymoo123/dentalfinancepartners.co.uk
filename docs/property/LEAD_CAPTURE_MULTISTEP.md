@@ -2,6 +2,16 @@
 
 *Created 2026-07-07. Owner decision locked same date. Single source of truth for scope, redirect allowlist, watch runbook, baseline snapshot, and rollback recipe for the multi-step mini-form change on propertytaxpartners.co.uk.*
 
+> **STATUS: DEPLOYED TO PROD 2026-07-09, owner signed off.** Flag `NEXT_PUBLIC_MINIFORMS_MULTISTEP=1`
+> set in Vercel production + preview. Watch ARMED same day (`deploy_watch` rows day 3/7/14/28,
+> `watch_key=miniform_multistep`, started_at 2026-07-09T21:40Z); daily 07:30 cron emails verdicts.
+> Migrations `20260707000001` (step funnel view) + `20260707000002` (deploy_watch) applied to prod.
+> E2E synthetic lead verified end to end (multi-step extras, notify email, nurture enrol) and deleted.
+> Shipped alongside the CRO surface wave — see the ship record in
+> `docs/property/BEHAVIOUR_INSIGHTS_2026-07.md`. Note: ExitIntentModal (one of the six original
+> mini-surfaces) was REMOVED in the same deploy (inert since 2026-06-29); the watch covers the
+> five remaining surfaces.
+
 ---
 
 ## 1. Why this was built
