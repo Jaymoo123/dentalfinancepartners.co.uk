@@ -18,7 +18,7 @@ Tracker columns: status | pos | slug | category | body words | FAQ count | monit
 | [ ] | A2 | wealth-management-for-dentists-uk | NHS Pension | | | | FCA boundary: education only |
 | [ ] | A3 | dental-hygienist-dcp-tax-employment-status | Associate Tax | | | | |
 | [ ] | A4 | buying-car-through-limited-company-dentist | Practice Accounting | | | | |
-| [ ] | A5 | tax-planning-for-dentists | General | | | | HUB page for cluster H |
+| [x] | A5 | ~~tax-planning-for-dentists~~ | STRUCK | | | | DUPLICATE at page-level verify (two existing hubs); cluster-H → meta/improve track |
 | [ ] | A6 | vat-loan-dental-practices-uk | Practice Finance | | | | informational only; VAT-exemption context mandatory |
 
 ---
@@ -34,6 +34,6 @@ Tracker columns: status | pos | slug | category | body words | FAQ count | monit
 - [x] Topic batch committed + collision-verified (blog_topics, status='pending')
 - [x] picks.yaml written (briefs/dentists/wave5/picks.yaml, competitor URLs pre-selected per pick)
 - [x] Jaccard cannib check GREEN (docs/dentists/wave5_cannibalisation_check.md)
-- [ ] Page-level corpus verify (UPGRADE 2) complete
+- [x] Page-level corpus verify (UPGRADE 2) complete — 5 DISTINCT / A5 STRUCK (docs/dentists/wave5_collision_verify.md)
 - [ ] Stage 1 seeds + Stage 1b HP gate
 - [ ] Stage 2 briefs + Stage 2b drift gate

@@ -31,12 +31,9 @@ buckets:
         - https://samera.co.uk/learning-center/buying-a-car-limited-company/
         - https://www.ac-accounts.co.uk/blog/buying-a-second-hand-electric-car-for-your-business/
         - https://bryden-johnson.co.uk/buying-an-electric-car-does-it-need-to-be-new/
-    - id: A5
-      slug: tax-planning-for-dentists
-      label: 'Tax Planning for Dentists :: Framing: structured HUB/gateway page anchoring cluster H (tax planning for dentists / dentist tax / tax for dentists, ~28 impr) - links every tax sub-topic; existing accountant-for-dentists is a service pitch, not a hub. [HUB]'
-      competitors:
-        - https://samera.co.uk/learning-center/
-        - https://www.djh.co.uk/latest-news/specialisms/dental/
+    # A5 tax-planning-for-dentists STRUCK 2026-07-09 at page-level collision verify:
+    # duplicates private-dental-practice-tax-complete-financial-guide + associate-dentist-tax-guide-uk hubs.
+    # Cluster-H fix routes to meta/heading optimisation of existing hubs (see wave5_collision_verify.md).
     - id: A6
       slug: vat-loan-dental-practices-uk
       label: 'VAT Loan for Dental Practices :: Framing: practice-finance informational angle (what a VAT loan is, when a practice needs one, cashflow timing, interest deductibility) - vatloansuk.co.uk owns the transactional SERP; do not compete transactionally.'
