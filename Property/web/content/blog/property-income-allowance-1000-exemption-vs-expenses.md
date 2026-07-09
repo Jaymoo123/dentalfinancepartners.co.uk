@@ -13,7 +13,7 @@ metaDescription: "When does the £1,000 property income allowance beat actual ex
 altText: "UK landlord comparing property income allowance options against actual expenses with tax calculation worksheet"
 image: ""
 h1: "The £1,000 Property Income Allowance: When to Use It and When to Claim Actual Expenses Instead"
-summary: "The £1,000 property income allowance (ITTOIA 2005 Part 6A, inserted by Finance Act 2017, applying from 2017/18) gives individual landlords three routes: full relief where gross income does not exceed £1,000 (income excluded from tax entirely under s.783BE); partial relief by election under s.783BK (substitute a flat £1,000 deduction for actual expenses); or actual expenses where non-finance costs exceed £1,000. The allowance is per person, not per property, so jointly-owned property doubles the tax-free threshold. It is blocked in four statutory situations: employer-paid rent (s.783BN), partnership-paid rent (s.783BO), close-company-paid rent (s.783BP), and income already within rent-a-room (s.783BM)."
+summary: "The £1,000 property income allowance (ITTOIA 2005 Part 6A, inserted by Finance Act 2017, applying from 2017/18) gives individual landlords three routes: full relief where gross income does not exceed £1,000 (income excluded from tax entirely under s.783BE); partial relief by election under s.783BK (substitute a flat £1,000 deduction for actual expenses); or actual expenses where non-finance costs exceed £1,000. The allowance is per person, not per property, so jointly-owned property doubles the tax-free threshold. Critical: electing full or partial relief blocks the s.24 mortgage interest reducer for that year. Landlords with a BTL mortgage should almost always use actual expenses. The election covers the whole property portfolio, not individual properties. Blocked in four statutory situations: employer-paid rent (s.783BN), partnership-paid rent (s.783BO), close-company-paid rent (s.783BP), and income already within rent-a-room (s.783BM)."
 schema: ""
 generator: "opus-4.8/netnew-wave"
 faqs:
@@ -40,10 +40,10 @@ faqs:
   - question: "What happens if I do not elect partial relief and my income is over £1,000?"
     answer: "If your income exceeds £1,000 and you do not elect partial relief, full relief does not apply (income is above the threshold) and you are taxed on actual profit (income minus actual allowable expenses). Partial relief is optional. If you forget to elect and file on the actual expenses basis, HMRC will accept that; there is no penalty for not electing partial relief."
   - question: "Does the s.24 mortgage interest restriction still apply if I use partial relief?"
-    answer: "The s.24 basic-rate tax credit on finance costs is available under both the actual expenses route and the partial relief route. Under partial relief, you substitute the £1,000 deduction for actual expenses, but you do not lose the s.24 credit on finance costs. The key planning point: under partial relief, you cannot deduct finance costs as an expense (you deduct £1,000 instead), but the s.24 credit mechanism still reduces your tax bill by 20% of the finance costs. If your mortgage interest is large, run the numbers for both routes; actual expenses often wins when total non-finance expenses plus the effective s.24 credit exceeds the £1,000 partial relief deduction."
+    answer: "No. HMRC confirms that you cannot claim the property income allowance (full or partial relief) in the same year you claim the s.24 finance cost reducer on residential property mortgage interest. The two are mutually exclusive. If you elect partial relief, you forfeit the s.24 basic-rate credit on your finance costs for that year. For most landlords with a buy-to-let mortgage, the actual expenses route preserves the s.24 credit and will produce a lower overall tax bill. The only landlords for whom partial relief makes sense with a mortgage are those with very small mortgage interest where the property allowance deduction exceeds the value of the s.24 credit. Always run the numbers for both routes if you have a mortgage."
 ---
 
-<p>The £1,000 property income allowance (ITTOIA 2005 Part 6A, inserted by Finance Act 2017) gives individual landlords three routes to handling rental income below the threshold: full relief under s.783BE where gross property income does not exceed £1,000 (the income is excluded from tax entirely and no Self Assessment return is required for that source alone); partial relief by election under s.783BK where income exceeds £1,000 but actual non-finance expenses are below £1,000 (the landlord substitutes a flat £1,000 deduction for actual expenses); or the actual expenses route where non-finance costs exceed £1,000. Because the allowance is per person under s.783BD, a couple jointly owning a property generating £1,600 of rent each receive £800 and each qualifies for full relief, paying no tax on the combined £1,600. Four statutory exclusions block the allowance entirely: employer-paid rent (s.783BN), partnership-paid rent (s.783BO), close-company-paid rent (s.783BP), and income already within rent-a-room (s.783BM).</p>
+<p>The £1,000 property income allowance (ITTOIA 2005 Part 6A, inserted by Finance Act 2017) gives individual landlords three routes to handling rental income below the threshold: full relief under s.783BE where gross property income does not exceed £1,000 (the income is excluded from tax entirely and no Self Assessment return is required for that source alone); partial relief by election under s.783BK where income exceeds £1,000 but actual non-finance expenses are below £1,000 (the landlord substitutes a flat £1,000 deduction for actual expenses); or the actual expenses route where non-finance costs exceed £1,000. Because the allowance is per person under s.783BD, a couple jointly owning a property generating £1,600 of rent each receive £800 and each qualifies for full relief, paying no tax on the combined £1,600. Important: electing full or partial relief in a year blocks the s.24 finance cost reducer on residential mortgage interest (HMRC confirms you cannot claim both). Landlords with a buy-to-let mortgage should run the numbers carefully before electing the allowance. Four statutory exclusions block the allowance: employer-paid rent (s.783BN), partnership-paid rent (s.783BO), close-company-paid rent (s.783BP), and income already within rent-a-room (s.783BM).</p>
 
 <p>Most landlords know the £1,000 property income allowance exists. Far fewer know about the partial relief election, the joint ownership multiplier, or the blocked situations where the allowance is simply unavailable. Get the route wrong and you pay more tax than you need to. Get it right and some landlords eliminate their liability entirely.</p>
 
@@ -94,13 +94,13 @@ faqs:
       <td>£6,000</td>
       <td>£500</td>
       <td>£4,000</td>
-      <td>Partial relief: deduct £1,000 (expenses only £500); s.24 credit applies under both routes</td>
-      <td>£5,000 profit + s.24 credit on £4,000</td>
+      <td>Actual expenses: s.24 credit is lost if you elect partial relief (HMRC guidance); actual expenses wins once mortgage interest is significant</td>
+      <td>£5,500 profit, less s.24 credit (20% of £4,000 = £800). Net tax at 40%: £1,400. Partial relief route: £5,000 profit, no s.24 credit. Net tax at 40%: £2,000.</td>
     </tr>
   </tbody>
 </table>
 
-<p>The break-even rule for partial relief vs actual expenses: partial relief wins when your actual non-finance expenses are below £1,000. When actual non-finance expenses exceed £1,000, actual expenses wins. Finance costs (mortgage interest) are not part of this comparison because the s.24 basic-rate tax credit applies under both routes.</p>
+<p>The break-even rule for partial relief vs actual expenses: partial relief wins when your actual non-finance expenses are below £1,000 AND you have no (or negligible) mortgage interest. If you have significant mortgage interest, electing the property allowance (full or partial relief) means you lose the s.24 basic-rate finance cost reducer for that year (HMRC guidance: <a href="https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income" rel="noopener noreferrer">gov.uk/guidance/tax-free-allowances-on-property-and-trading-income</a>). For landlords with a buy-to-let mortgage, actual expenses almost always wins once finance costs are factored in.</p>
 
 <h2>Full relief: income at or below £1,000</h2>
 
@@ -122,22 +122,26 @@ faqs:
 
 <h2>When actual expenses beat the allowance</h2>
 
-<p>Once your actual deductible non-finance expenses exceed £1,000, actual expenses always wins on the non-finance comparison. Finance costs (mortgage interest) do not shift this comparison because the s.24 basic-rate tax credit is available under both actual expenses and partial relief.</p>
+<p>Once your actual deductible non-finance expenses exceed £1,000, actual expenses wins on the non-finance comparison alone. But there is a more important point: if you have mortgage interest on a residential letting, electing the property allowance (full or partial relief) causes you to forfeit the s.24 basic-rate finance cost reducer for that year. HMRC guidance confirms you cannot claim both.</p>
 
-<p>The s.24 position: under partial relief, you cannot deduct finance costs as an expense (you have already substituted the £1,000 flat deduction). However, you can still claim the s.24 20% basic-rate credit on the finance costs under both routes. The two routes differ only in how they handle non-finance expenses.</p>
+<p>The s.24 position: under the actual expenses route, finance costs cannot be deducted as an expense, but you can claim the s.24 20% basic-rate credit on finance costs paid, reducing your tax bill by 20% of the mortgage interest. Under partial relief (or full relief), you elect the property allowance and that election blocks the s.24 reducer. The two routes are mutually exclusive when finance costs are present.</p>
 
 <p><strong>Scenario D in practice:</strong> A higher-rate landlord has £6,000 gross income, £500 of non-finance expenses, and £4,000 of mortgage interest.</p>
 
 <ul>
-  <li>Under partial relief: profit = £6,000 - £1,000 = £5,000. Tax at 40% = £2,000. Less s.24 credit on £4,000 at 20% = £800. Net tax: £1,200.</li>
+  <li>Under partial relief: profit = £6,000 - £1,000 = £5,000. Tax at 40% = £2,000. No s.24 credit (forfeited by the election). Net tax: £2,000.</li>
   <li>Under actual expenses: profit = £6,000 - £500 = £5,500. Tax at 40% = £2,200. Less s.24 credit on £4,000 at 20% = £800. Net tax: £1,400.</li>
 </ul>
 
-<p>Partial relief wins here: £1,000 flat deduction is larger than £500 of actual expenses. Even at the higher rate, the comparison is purely about whether £1,000 exceeds your actual non-finance expenses. With only £500 of non-finance expenses, partial relief gives the better result.</p>
+<p>Actual expenses wins by £600 in this case, despite non-finance expenses being below £1,000. The s.24 credit of £800 more than offsets the extra £200 of taxable profit from the lower non-finance deduction. For most landlords with a buy-to-let mortgage, the actual expenses route will be correct.</p>
 
-<p>If the same landlord had £1,200 of non-finance expenses (Scenario C extended to higher rate): actual expenses gives a £200 lower profit, which at 40% saves £80 in tax. Actual expenses wins.</p>
+<p>The property allowance is most useful for landlords with: (a) no mortgage (or minimal finance costs), and (b) actual non-finance expenses below £1,000. For example, a landlord with a mortgage-free property generating £1,500 rent and £400 of expenses: partial relief gives profit of £500 vs actual expenses profit of £1,100. Partial relief wins clearly.</p>
 
-<p><strong>Break-even formula:</strong> elect partial relief if your actual non-finance deductible expenses are below £1,000. Switch to actual expenses if they exceed £1,000. Finance costs are neutral between routes because the s.24 credit applies regardless.</p>
+<p><strong>Break-even formula (no mortgage):</strong> elect partial relief if actual non-finance expenses are below £1,000. Switch to actual expenses if they exceed £1,000.</p>
+
+<p><strong>If you have mortgage interest:</strong> the actual expenses route is almost always better because you retain the s.24 credit. Run both scenarios against your specific figures before electing.</p>
+
+<p><strong>The allowance cannot create a loss.</strong> Even under actual expenses the normal rules on losses apply, but specifically under partial relief, the £1,000 deduction cannot reduce profits below zero. If your gross income is £800 and you elect partial relief, you get full relief to £0, not a -£200 loss. Losses can only be created under the actual expenses route.</p>
 
 <aside>
 <p>If your mortgage interest is large and your non-finance expenses are close to the £1,000 borderline, a detailed calculation for each route is worthwhile. Property Tax Partners can run both scenarios against your actual figures. <a href="/contact">Get in touch for a no-obligation review.</a></p>
@@ -152,6 +156,12 @@ faqs:
 <p>Compare: if one person owned the whole property, their £1,600 gross income exceeds the £1,000 allowance. Full relief is not available. They must elect partial relief (profit: £600) or use actual expenses. Joint ownership, in effect, doubles the tax-free threshold on the same income stream.</p>
 
 <p>The allowance does not stack within one person. If you own two properties jointly with different partners, you still only get one £1,000 allowance per tax year for all your property income combined. The allowance is per-person-per-year, not per-property-per-person.</p>
+
+<h2>One election covers your whole property portfolio</h2>
+
+<p>The partial relief election applies at the level of your total UK property business income, not property by property. You cannot elect partial relief for one property and claim actual expenses for another in the same tax year. The election is all-or-nothing across all properties in the same income pool. This matters most for landlords with multiple properties: if one property has high expenses that benefit from actual expenses treatment, the whole portfolio must use actual expenses for that year.</p>
+
+<p>The one exception is where income falls under different regimes entirely: rent-a-room income and buy-to-let income are separate sources. You can apply the property allowance to BTL income and claim actual expenses (or rent-a-room relief) on a different source, provided the sources are genuinely distinct under the legislation.</p>
 
 <h2>Blocked situations: when you cannot use the allowance</h2>
 
