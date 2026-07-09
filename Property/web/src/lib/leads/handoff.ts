@@ -70,6 +70,25 @@ function journeyStory(d: LeadDossier): string {
   return bits.join("; ");
 }
 
+/**
+ * "How they responded", derived from the actual reply history rather than the
+ * reason frozen at promotion time (a lead who texts YES then emails detail
+ * must show BOTH). Falls back to the passed reason when no replies exist
+ * (e.g. one-tap confirm or booking promotions record no replied events).
+ */
+function responseStory(d: LeadDossier, fallback: string): string {
+  const labels: string[] = [];
+  for (const r of d.replies) {
+    const label = r.channel === "whatsapp" ? "WhatsApp" : r.channel === "sms" ? "SMS" : "email";
+    if (labels[labels.length - 1] !== label) labels.push(label);
+  }
+  if (labels.length === 0) return fallback;
+  return `Replied by ${labels[0]}${labels
+    .slice(1)
+    .map((l) => `, then by ${l}`)
+    .join("")}`;
+}
+
 export interface HandoffResult {
   sent: boolean;
   to: string;
@@ -110,7 +129,7 @@ export function buildHandoffEmail(
     row("Role", esc(roleLabel(lead.role))),
     roleDetail ? row("In their words", esc(roleDetail)) : "",
     formId ? row("Came via", esc(surfaceLabel(formId) ?? formId)) : "",
-    row("How they responded", `<strong style="color:#047857;">${esc(reason)}</strong>`),
+    row("How they responded", `<strong style="color:#047857;">${esc(responseStory(d, reason))}</strong>`),
     d.responseLatencyMs !== null
       ? row("Response time", esc(`${formatLatency(d.responseLatencyMs)} after enquiring`))
       : "",

@@ -152,6 +152,28 @@ describe("buildHandoffEmail()", () => {
     expect(text).toContain("Updated enquiry: Jane Smith");
   });
 
+  it("'How they responded' is derived from replies, not the frozen reason", () => {
+    const { html } = buildHandoffEmail(LEAD, DOSSIER, "manual re-send");
+    expect(html).toContain("Replied by SMS");
+    expect(html).not.toContain("manual re-send");
+
+    const multi = {
+      ...DOSSIER,
+      replies: [
+        ...DOSSIER.replies,
+        { ts: "2026-07-01T10:35:00Z", channel: "email", body: "Afternoon next week please." },
+      ],
+    };
+    expect(buildHandoffEmail(LEAD, multi, "manual re-send").html).toContain(
+      "Replied by SMS, then by email",
+    );
+
+    const noReplies = { ...DOSSIER, replies: [] };
+    expect(buildHandoffEmail(LEAD, noReplies, "booked a callback").html).toContain(
+      "booked a callback",
+    );
+  });
+
   it("contains name, verified phone and email, and the enquiry", () => {
     const { html, text } = buildHandoffEmail(LEAD, DOSSIER, "replied by SMS");
     expect(html).toContain("Jane Smith");
