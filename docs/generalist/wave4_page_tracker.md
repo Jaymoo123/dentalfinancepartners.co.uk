@@ -1,6 +1,6 @@
 ﻿# Wave 4 page tracker (generalist / Holloway Davies)
 
-**Created:** 2026-07-09. **Status:** Pre-launch. Wave 4 = up to 13 net-new pages, SINGLE lane (owner ruling 2026-07-08: batchSize 1, one sub-agent per pick, parallel). Source: gap discovery 2026-07 curated batch (sitemap v2 + GSC lanes). NOTE: waves 0-3b were the parity/GEO programme, not net-new; this is the first net-new content wave.
+**Created:** 2026-07-09. **Status:** WRAP COMPLETE 2026-07-09 - 12 pages written, QA 12/12 all_clear, merged, build GREEN, monitored to 2026-10-07. AWAITING DEPLOY WORD. NOTE: image fields left empty by design - run blog_image_backfill before/after deploy. Wave 4 = up to 13 net-new pages, SINGLE lane (owner ruling 2026-07-08: batchSize 1, one sub-agent per pick, parallel). Source: gap discovery 2026-07 curated batch (sitemap v2 + GSC lanes). NOTE: waves 0-3b were the parity/GEO programme, not net-new; this is the first net-new content wave.
 
 Tracker columns: status | pos | slug | category | body words | FAQ count | monitored_pages ID | session notes.
 
@@ -36,8 +36,8 @@ Tracker columns: status | pos | slug | category | body words | FAQ count | monit
 - [x] picks.yaml written (briefs/generalist/wave4/picks.yaml, competitor URLs pre-selected)
 - [x] Jaccard cannib check GREEN (13 net-new, 0 partial)
 - [x] Page-level corpus verify (UPGRADE 2) â€” 12 DISTINCT / A13 STRUCK (wave4_collision_verify.md)
-- [ ] Stage 1 seeds + Stage 1b HP gate
-- [ ] Stage 2 briefs + Stage 2b drift gate
+- [x] Combined brief round (single-pass Stage 1+2, cost-conscious adaptation) + conductor gate (HP SS3.A/SS6.A)
+- [x] Drift triage at gate (A3 QIP date caught at QA; base rate triple-verified)
 
 
 

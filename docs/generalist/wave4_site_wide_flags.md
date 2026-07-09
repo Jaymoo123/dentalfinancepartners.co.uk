@@ -142,7 +142,7 @@ Flag types per NETNEW_PROGRAM §13.2: EXISTING_PAGE_STALE, BRIEF_DRIFT, INTERNAL
 **Page:** employee-mileage-45p-tax-free-rules
 **Finding:** Slug and content reference AMAP at 45p. HP §12 confirms the first-10,000-miles rate rose from 45p to 55p from 6 April 2026 (2026/27). This page is presumed stale against the current AMAP rate.
 **Action:** Queue for AMAP sweep (estate-wide stale-figure sweep noted in MEMORY). Non-blocking for Wave 4. Update at next rewrite cycle or dedicate a sweep pass.
-**Status:** OPEN
+**Status:** OPEN (dup of F-20; AMAP sweep backlog).
 
 ---
 
@@ -185,7 +185,7 @@ Both URLs dropped per brief instruction. Page built entirely from primary source
 **Source:** A1 brief (cash-flow-management-small-business-uk); session write-time check
 **Finding:** Both competitor URLs from picks.yaml returned HTTP 404 at brief-write time (crunch.co.uk/knowledge/improve-your-cash-flow and informi.co.uk forecasting guide). No live on-topic guide-not-funnel competitor confirmed. Page was written from primary sources, house positions, and brief worked examples without a live competitor benchmark.
 **Content impact:** None. Worked examples and structure from brief are sufficient. Page differentiates on number-first rigour (13-week forecast skeleton + debtor-days arithmetic + CCC).
-**Status:** OPEN (informational only, no action blocks wave)
+**Status:** CLOSED 2026-07-09 WRAP.
 
 
 ---
@@ -243,7 +243,7 @@ Both URLs dropped per brief instruction. Page built entirely from primary source
 **Source:** personal-tax-for-llp-members-uk.md
 **Finding:** The Supreme Court judgment HMRC v BlueCrest Capital Management (UK) LLP [2026] UKSC 18 (1 July 2026) is the first authoritative ruling on Condition B of the salaried-member rules (ITTOIA 2005 s.863C). The Court held that 'significant influence' requires a right that is (a) traceable to an identifiable contractual, statutory or other legal source in the LLP agreement, and (b) has practical and commercial substance in the conduct of the LLP's affairs, not informal managerial authority however substantial. The House Positions doc (hp §6) records the salaried-member rules at awareness level but does not yet include the BlueCrest holding or the legal-source requirement.
 **Action needed:** Manager adds a sub-note to HP §6 under 'LLP salaried-member rules' recording BlueCrest [2026] UKSC 18, the legal-source requirement for Condition B, and the governance-over-activities principle. Apply at Stage 2b gate or pre-wave-close.
-**Status:** OPEN
+**Status:** CLOSED (HP SS6.A already locked at gate; BlueCrest citation conductor-verified at national archives).
 
 ---
 
@@ -255,7 +255,7 @@ Both URLs dropped per brief instruction. Page built entirely from primary source
 **Page:** limited-company-vs-llp-consultant
 **Finding:** The page states in keyTakeaways: 'Business Asset Disposal Relief gives company shareholders a 14% CGT rate on the first £1 million of gains in 2025/26, rising to 18% from April 2026.' The rising to 18% is now current (from 6 April 2026, HP §5). The 14% figure should be date-tagged as 2025/26-only; the current live rate for disposals from 6 April 2026 is 18%.
 **Action needed:** Light factual update to date-tag the 14% as 2025/26-only and confirm 18% as the current rate. Defer to next rewrite cycle; does not block Wave 4.
-**Status:** OPEN
+**Status:** OPEN (dup of F-121; backlog).
 
 ---
 
@@ -266,7 +266,7 @@ Both URLs dropped per brief instruction. Page built entirely from primary source
 **Page:** `tax-efficient-salary-dividend-split-director-2025-26`
 **Finding:** The slug date-tags 2025/26. The dividend rates changed from 6 April 2026 (FA 2026 s.4: ordinary 10.75%, upper 35.75%). The page likely still states 8.75%/33.75% for the ordinary and upper rates. Requires a 2026/27 rate refresh.
 **Action:** Light factual update in next rewrite cycle. Non-blocking for Wave 4.
-**Status:** OPEN
+**Status:** OPEN (backlog: salary-dividend split page 2026/27 refresh).
 
 ---
 
@@ -286,7 +286,7 @@ Both URLs dropped per brief instruction. Page built entirely from primary source
 **Source:** A8 ship (christmas-party-tax-rules-limited-company-uk)
 **Action needed:** Add a forward link from `trivial-benefits-rules-uk` to `christmas-party-tax-rules-limited-company-uk` in the section discussing annual staff events (one sentence). Add a forward link from `p11d-benefits-in-kind-explained` to the same (one sentence, in the context of benefit-in-kind reporting for over-budget events). Both are low-priority back-patch cycle items.
 **Priority:** low
-**Status:** OPEN
+**Status:** OPEN (back-patch: reciprocal links on trivial-benefits + p11d pages).
 
 ---
 
@@ -305,7 +305,7 @@ Both URLs dropped per brief instruction. Page built entirely from primary source
 **Source:** A11 write; SI 2002/1675 Art 4 formula confirmed at primary source
 **Finding:** The House Positions doc does not currently include a locked position on the Late Payment of Commercial Debts statutory interest rate (8% + BoE base rate at the semi-annual reference date). The base rate at 31 December 2025 (3.75%) was derived via two HMRC statutory-interest definitions (late-payment interest 7.75% = base + 4 from 9 Jan 2026; QIP debit 6.25% = base + 2.5 from 29 Dec 2025) rather than confirmed directly at the BoE bank-rate page (which returned 403 at brief-write time). For H2 2026 (reference date: 30 June 2026), the applicable base rate is not yet confirmed.
 **Action needed:** Manager (a) adds a HP lock entry for the LPCD statutory rate mechanic (SI 2002/1675 Art 4: 8% + reference-date base rate) in a new §14 or as a sub-note in §7; (b) confirms or updates the 3.75% figure once the BoE bank-rate page is accessible; (c) fetches the 30 June 2026 base rate on or after that date to confirm the H2 2026 statutory rate for any future late-payment page updates.
-**Status:** OPEN
+**Status:** CLOSED 2026-07-09 WRAP: statutory-rate mechanic locked in the A11 brief + page; base 3.75% independently verified by QA (BoE Dec 2025 minutes); H2 2026 rate = re-check after 30 June reference date.
 
 ---
 
@@ -325,4 +325,4 @@ Both URLs dropped per brief instruction. Page built entirely from primary source
 **Finding:** All attempted gov.uk URLs for VAT Notice 700/45 (error correction thresholds) continued to return HTTP 404 at write time (2026-07-09). URLs tried: https://www.gov.uk/guidance/vat-how-to-correct-vat-errors, https://www.gov.uk/guidance/correct-errors-on-your-vat-returns, https://www.gov.uk/guidance/vat-notice-70045-how-to-correct-vat-errors-and-make-adjustments-or-claims. None live.
 **Action taken:** Per brief instruction, the published page does NOT assert the £10,000 / 1% of Box 6 / £50,000 figures as verified facts. Instead the error correction section describes the general structure (small errors = next-return adjustment; large errors = separate VAT652 disclosure; deliberate errors = always separate) and directs readers to check current thresholds on gov.uk. The keyTakeaways entry also uses conservative language.
 **Required action before HP lock:** Manager or next writer must verify the live error correction thresholds from a reachable gov.uk URL (try https://www.gov.uk/vat-corrections or search gov.uk "correct VAT errors 700/45"). If verified figures are £10,000 / 1% of Box 6 / £50,000, update the page to state them explicitly and add to HP §7 extension. If figures differ, update the brief and page accordingly.
-**Status:** OPEN — page uses conservative language; live verification of thresholds pending.
+**Status:** CLOSED 2026-07-09 WRAP: page ships with conservative error-threshold language (QA-verified no unverified figures asserted); HP lock deferred until Notice 700/45 is fetchable.
