@@ -290,7 +290,7 @@ export async function gatherLeadDossier(lead: DossierLead): Promise<LeadDossier>
     if (e.event_type === "replied") {
       timeline.push({
         ts: e.ts,
-        label: `They replied by ${e.channel === "whatsapp" ? "WhatsApp" : "SMS"}`,
+        label: `They replied by ${e.channel === "whatsapp" ? "WhatsApp" : e.channel === "email" ? "email" : "SMS"}`,
         detail: typeof e.meta?.body === "string" ? String(e.meta.body) : null,
       });
     } else if (e.event_type === "booked") {
