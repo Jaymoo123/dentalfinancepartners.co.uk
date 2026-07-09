@@ -169,3 +169,48 @@ The brief uses **para 2.3**. Conductor must confirm at Stage 1b, verify the exac
 **Action required at Stage 1b:** Conductor to add a new HP sub-section (suggested 9.A "CGT on matrimonial asset transfers" or new section 11) covering: (a) TCGA 1992 s.58 as amended by Finance (No. 2) Act 2023, effective 6 April 2023; (b) three-year post-separation window and divorce-order cut-off; (c) no-gain no-loss mechanism and base-cost carry-over for the transferee; (d) latent CGT risk for the transferee on a later disposal; (e) cross-reference to section 9 (standard CGT rates 18%/24% from 30 Oct 2024; BADR 18% from 6 Apr 2026). Commit as isolated HP commit before Stage 2 runs.
 
 **Status:** CLOSED 2026-07-09 Stage 1b: locked as HP SS9.A (s.58(1A)-(1D) FA 2023 window).
+
+---
+
+## F-265 — HOUSE_POSITION_EXTENSION
+
+**Pick:** A9 `accountant-for-barristers-chambers-uk`
+**Raised:** 2026-07-09 Stage 2
+**Type:** HOUSE_POSITION_EXTENSION
+**Priority:** HIGH (un-hedge §12 of house_positions.md; correct the seed-brief no-supply framing)
+
+**Issue:** The seed brief hedged the chambers-VAT position as potentially "no-supply" and directed Stage 2 to verify. Stage 2 WebFetch of HMRC VAT Notice 700/44 (gov.uk/guidance/vat-for-barristers-and-advocates-notice-70044) and VIT13850 (gov.uk/hmrc-internal-manuals/vat-input-tax/vit13850) resolves this definitively: chambers contributions ARE VAT supplies within the chambers arrangement. HMRC prescribes three accounting methods (Methods 1, 2, 3) for recovering input tax on shared chambers costs. There is no "no-supply" treatment.
+
+**Conductor action:** Un-hedge house_positions §12 and add (or lock) the following position: "Chambers cost-sharing contributions are VAT supplies; HMRC VAT Notice 700/44 prescribes three input-tax accounting methods (Methods 1, 2, 3); the choice of method is chambers' own; all members' records must be available on HMRC visit to any one of them; Flat Rate Scheme barristers cannot claim input tax in the normal way. Primary source: VAT Notice 700/44 (gov.uk/guidance/vat-for-barristers-and-advocates-notice-70044) and VIT13850."
+
+**Status:** CLOSED 2026-07-09 Stage 2b: conductor re-verified Notice 700/44 three methods at gov.uk; HP SS12 un-hedged.
+
+---
+
+## F-A5-1 — AUTHORITY_GAP
+
+**Pick:** A5 `what-does-a-legal-cashier-do-sra-requirements`
+**Raised:** 2026-07-09 Stage 2
+**Type:** AUTHORITY_GAP
+**Priority:** LOW (does not block the page; FAQ answer carries a write-time-fetch instruction)
+
+**Issue:** The seed brief (§10) named "Diploma in Legal Practice Management" and "Certificate in Legal Cashiering" as ILFM qualifications. WebFetch of ilfm.org.uk at Stage 2 confirmed the site resolves and the ILFM Diploma is described as "the gold standard" credential, along with Legal Finance Compliance and Accounts Rules courses. The specific course names in the brief were not confirmed: the /qualifications/ path returned 404; only the homepage was accessible.
+
+**Action at Stage 2 write time:** Fetch ilfm.org.uk/site/qualifications/ and confirm current qualification names before writing the §10 and FAQ Q9 ILFM paragraphs. If the page remains inaccessible, use "ILFM Diploma" as the confirmed credential and describe training generically.
+
+**Status:** CLOSED 2026-07-09 Stage 2b: ILFM course names stay write-time-fetch for the writer (brief carries the instruction); no HP change needed.
+
+---
+
+## F-A4-2 — AUTHORITY_GAP
+
+**Pick:** A4 `forensic-accounting-litigation-law-firms-uk`
+**Raised:** 2026-07-09 Stage 2
+**Type:** AUTHORITY_GAP
+**Priority:** LOW (does not block the page; privilege point is stated without the case name)
+
+**Issue:** Three Rivers District Council v Bank of England (No.6) [2004] UKHL 48 — the seed brief cited this as authority for litigation privilege protecting draft expert reports. BAILII (bailii.org/uk/cases/UKHL/2004/48.html) returned HTTP 403 Forbidden at Stage 2. The case cannot be cited in the published page without primary-source verification.
+
+**Resolution applied:** The litigation-privilege principle is retained in the brief body (privilege protects draft reports prepared for the dominant purpose of litigation) but the case is not cited by name. Writers must not add [2004] UKHL 48 to the published page without first verifying it at Lexis, Westlaw, or another accessible source.
+
+**Status:** CLOSED 2026-07-09 Stage 2b: Three Rivers dropped from brief (unverifiable at BAILII); page ships without it.
