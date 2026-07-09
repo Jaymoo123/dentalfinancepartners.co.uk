@@ -130,7 +130,7 @@ faqs:
 <li>The expert's services are clearly additional to the firm's own legal supply.</li>
 </ol>
 
-<p>All eight must be met. If any condition fails, the fee becomes a component of the firm's standard-rated supply and output VAT is charged on the recharge. See our full guide to <a href="/blog/practice-accounting/disbursements-vat-treatment-uk-law-firms">disbursements VAT treatment</a> for the eight conditions applied across the range of third-party professional costs.</p>
+<p>All eight must be met. If any condition fails, the fee becomes a component of the firm's standard-rated supply and output VAT is charged on the recharge. See our full guide to <a href="/blog/vat-compliance/disbursements-vat-treatment-uk-law-firms">disbursements VAT treatment</a> for the eight conditions applied across the range of third-party professional costs.</p>
 
 <h3>Party-appointed expert: the supply-to-firm default</h3>
 
@@ -138,7 +138,7 @@ faqs:
 
 <p>In this route: the expert's VAT-bearing fee note is received by the firm; the firm recovers the expert's VAT as input tax (assuming the firm makes standard-rated supplies); on recharging to the client the firm adds output VAT to the full amount including the expert's fee.</p>
 
-<p>For example, a forensic accountant invoices the firm at £10,000 plus £2,000 VAT (total £12,000). The firm recovers the £2,000 as input tax. On recharging to the client, the firm charges output VAT of £2,400 on the £12,000 recharge (total to client £14,400). The firm's net VAT position is the £400 difference. The parallel analysis for counsel's fees is at our <a href="/blog/practice-accounting/counsel-fees-vat-guide-uk-law-firms">counsel fees VAT guide</a>.</p>
+<p>For example, a forensic accountant invoices the firm at £10,000 plus £2,000 VAT (total £12,000). The firm recovers the £2,000 as input tax. On recharging to the client, the firm charges output VAT of £2,400 on the £12,000 recharge (total to client £14,400). The firm's net VAT position is the £400 difference. The parallel analysis for counsel's fees is at our <a href="/blog/vat-compliance/counsel-fees-vat-guide-uk-law-firms">counsel fees VAT guide</a>.</p>
 
 <h3>Single joint expert: disbursement treatment a stronger case</h3>
 
@@ -183,7 +183,7 @@ faqs:
 
 <p><strong>Joint meetings.</strong> Agree the agenda with the opposing solicitors in advance. Under PD 35 the expert must not be given instructions that restrict what they can agree with the opposing expert. Brief the expert on the key disputed assumptions but do not attempt to control what is agreed at the meeting.</p>
 
-<p><strong>SRA investigations.</strong> Forensic accountants are also instructed where a firm is under SRA investigation and a financial reconstruction is required. See our guide to <a href="/blog/compliance-and-risk-colp-cofa/handling-sra-investigation-uk-law-firms">handling an SRA investigation</a> for the broader regulatory context.</p>
+<p><strong>SRA investigations.</strong> Forensic accountants are also instructed where a firm is under SRA investigation and a financial reconstruction is required. See our guide to <a href="/blog/compliance-risk-colp-cofa/handling-sra-investigation-uk-law-firms">handling an SRA investigation</a> for the broader regulatory context.</p>
 
 <h2>VAT walk-throughs: worked examples</h2>
 

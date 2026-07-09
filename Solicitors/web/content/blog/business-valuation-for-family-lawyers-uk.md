@@ -7,7 +7,7 @@ generator: claude-sonnet-4-6/wave3-netnew
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Accounting"
 metaTitle: "Business Valuation for Family Lawyers | Expert Guide UK"
-metaDescription: "Guide for family solicitors on instructing business valuation experts in financial remedy proceedings: s.25 MCA 1973, single joint experts, minority discounts and latent CGT."
+metaDescription: "Family solicitors' guide to business valuations in financial remedy cases: s.25 MCA 1973, single joint experts, minority discounts and latent CGT."
 altText: "Family law solicitor reviewing business valuation report with financial documents in a UK law firm meeting room"
 image: ""
 h1: "Business Valuation for Family Lawyers: A Guide to Instructing Experts and Using Valuations in Financial Remedy Proceedings"
@@ -56,7 +56,7 @@ faqs:
 
 <p>On the second question, the clean-break obligation under section 25A MCA 1973 pushes the court to consider whether a capital settlement can replace periodical payments. Where the business is the main asset, the respondent must either transfer other assets of equivalent value, fund a lump sum without selling the business, or negotiate a structured or deferred payment. The illiquidity of privately-held shares is not a theoretical concern: it is central to every business-asset case.</p>
 
-<p>Note that valuing a law firm for sale is a different exercise with its own methodology: see our guide to <a href="/blog/practice-accounting/how-to-value-a-uk-law-firm-2026">how to value a UK law firm in 2026</a>. The principles in that guide (goodwill multiples, WIP, debtors and regulatory transfer) apply where the firm itself is the subject of a transaction, not where a client's trading business is being valued for the purposes of a financial remedy order.</p>
+<p>Note that valuing a law firm for sale is a different exercise with its own methodology: see our guide to <a href="/blog/practice-succession-sale/how-to-value-a-uk-law-firm-2026">how to value a UK law firm in 2026</a>. The principles in that guide (goodwill multiples, WIP, debtors and regulatory transfer) apply where the firm itself is the subject of a transaction, not where a client's trading business is being valued for the purposes of a financial remedy order.</p>
 
 <h2>The single joint expert: appointment and instructions (FPR Part 25)</h2>
 
@@ -255,4 +255,4 @@ faqs:
 
 <p>A business valuation in financial remedy proceedings requires accounting expertise alongside legal process management. The solicitor's role is to instruct the right expert for the type of business, ensure the letter of instruction captures all the relevant issues, scrutinise the methodology when the report arrives, translate the valuation range into settlement options and model the tax consequences of each option. The headline value and the net-of-tax, net-of-liquidity value are rarely the same figure.</p>
 
-<p>For guidance on goodwill in a law firm sale context, including how goodwill is treated on a partner's disposal for CGT purposes and how a buyer can claim relief on acquired goodwill, see our guide to <a href="/blog/practice-accounting/law-firm-goodwill-valuation">law firm goodwill valuation</a>.</p>
+<p>For guidance on goodwill in a law firm sale context, including how goodwill is treated on a partner's disposal for CGT purposes and how a buyer can claim relief on acquired goodwill, see our guide to <a href="/blog/practice-succession-sale/law-firm-goodwill-valuation">law firm goodwill valuation</a>.</p>

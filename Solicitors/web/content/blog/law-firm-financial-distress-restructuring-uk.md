@@ -6,7 +6,7 @@ date: "2026-07-09"
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Law Firm Financial Distress and Restructuring UK | 2026"
-metaDescription: "Insolvency options by structure, SRA intervention triggers, run-off PII costs and partner capital calls for law firms in financial distress. England and Wales."
+metaDescription: "Insolvency options by structure, SRA intervention triggers, run-off PII costs and partner capital calls for law firms in financial distress."
 altText: "Law firm partners reviewing financial restructuring documents and balance sheets in a UK solicitors office"
 image: ""
 h1: "Law Firm Financial Distress and Restructuring: UK Guide"
@@ -127,7 +127,7 @@ faqs:
   <li><strong>Other grounds</strong> including dishonesty suspected (para 1(1)(a)), name removed or struck off (para 1(1)(g)), unlicensed practice (para 1(1)(k)), and condition breaches (para 1(1)(l)).</li>
 </ul>
 
-<p>For regulatory investigation after an intervention or conduct concern, see our guide to <a href="/blog/compliance-and-risk-colp-cofa/handling-sra-investigation-uk-law-firms">handling an SRA investigation</a>. Intervention (the involuntary takeover of a practice) is distinct from a disciplinary investigation, though the two can run concurrently.</p>
+<p>For regulatory investigation after an intervention or conduct concern, see our guide to <a href="/blog/compliance-risk-colp-cofa/handling-sra-investigation-uk-law-firms">handling an SRA investigation</a>. Intervention (the involuntary takeover of a practice) is distinct from a disciplinary investigation, though the two can run concurrently.</p>
 
 <h3>What happens during an SRA intervention?</h3>
 
@@ -154,7 +154,7 @@ faqs:
 
 <p>Client money cannot form part of the firm's insolvency estate. It must be returned to clients or passed to the SRA intervention agent. This ring-fencing is statutory, not contractual, and applies regardless of any claims a creditor might make against the firm.</p>
 
-<p>For a full treatment of the SRA Accounts Rules, including the Rule 3.3 banking-facility prohibition and the Rule 8.3 reconciliation requirement, see our <a href="/blog/sra-accounts-rules/sra-accounts-rules-explained-for-uk-solicitors">SRA Accounts Rules guide</a>. For the COFA's full range of duties, including what the COFA must report to the SRA and when, see our <a href="/blog/compliance-and-risk-colp-cofa/cofa-responsibilities-uk-law-firms">guide to COFA responsibilities</a>.</p>
+<p>For a full treatment of the SRA Accounts Rules, including the Rule 3.3 banking-facility prohibition and the Rule 8.3 reconciliation requirement, see our <a href="/blog/sra-accounts-rules/sra-accounts-rules-explained-for-uk-solicitors">SRA Accounts Rules guide</a>. For the COFA's full range of duties, including what the COFA must report to the SRA and when, see our <a href="/blog/compliance-risk-colp-cofa/cofa-responsibilities-uk-law-firms">guide to COFA responsibilities</a>.</p>
 
 <h2>Run-off PII: the unavoidable cost of cessation</h2>
 
@@ -213,7 +213,7 @@ faqs:
 
 <p><strong>Pre-pack administration.</strong> A sale agreed before the administrator is appointed and completed on day one. It can preserve client continuity and WIP value. In legal services it attracts scrutiny from two angles: the SRA must independently authorise the successor, and where the buyer is connected to the existing partners the sale must comply with SIP 16 and be reported to the Pre-Pack Pool under the Administration (Restrictions on Disposal etc. to Connected Persons) Regulations 2021.</p>
 
-<p><strong>Orderly wind-down (solvent).</strong> Where the firm is solvent but distressed, partners can resolve to wind down: run off open matters, return client balances, pay creditors, obtain run-off PII and cease authorisation. This is the cleanest outcome but requires adequate cash headroom. WIP at cessation is treated as a trading receipt at cessation value under ITTOIA 2005 ss.182 to 185, taxed as income in the cessation period. This route is the succession-planning scenario: for the full framework see our guides on <a href="/blog/practice-succession-sale/law-firm-succession-planning-guide-uk">law firm succession planning</a> and <a href="/blog/practice-sale-and-succession/asset-sale-vs-share-sale-uk-law-firm">asset sale versus share sale</a>.</p>
+<p><strong>Orderly wind-down (solvent).</strong> Where the firm is solvent but distressed, partners can resolve to wind down: run off open matters, return client balances, pay creditors, obtain run-off PII and cease authorisation. This is the cleanest outcome but requires adequate cash headroom. WIP at cessation is treated as a trading receipt at cessation value under ITTOIA 2005 ss.182 to 185, taxed as income in the cessation period. This route is the succession-planning scenario: for the full framework see our guides on <a href="/blog/practice-succession-sale/law-firm-succession-planning-guide-uk">law firm succession planning</a> and <a href="/blog/practice-succession-sale/asset-sale-vs-share-sale-uk-law-firm">asset sale versus share sale</a>.</p>
 
 <p>The table below summarises the key differences between the three main formal routes:</p>
 

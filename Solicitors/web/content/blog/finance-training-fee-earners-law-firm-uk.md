@@ -7,7 +7,7 @@ generator: claude-sonnet-4-6/wave3-netnew
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Finance Training for Fee Earners in UK Law Firms"
-metaDescription: "Curriculum, cadence and behaviour-change measurement for managing partners designing fee-earner finance training. Covers role by role, from trainee to equity partner."
+metaDescription: "Curriculum, cadence and behaviour-change measurement for managing partners designing fee-earner finance training, role by role from trainee to partner."
 altText: "Managing partner and COFA reviewing fee-earner finance training materials at a UK law firm"
 image: ""
 h1: "Finance Training for Fee Earners in UK Law Firms: Curriculum, Delivery and Measuring Behaviour Change"
@@ -48,7 +48,7 @@ faqs:
 
 <p>Fee-earner financial literacy is one of the most reliable levers for improving law firm profitability, yet most firms either skip training entirely or run a single annual session that produces no measurable behaviour change. The reason is not a shortage of content: the reason is that most finance training for lawyers is designed around accounting concepts rather than around what fee earners at each grade actually need to do differently on Monday morning.</p>
 
-<p>This guide is for the person who has to build or commission the programme: the managing partner, <a href="/blog/compliance-and-risk-colp-cofa/cofa-responsibilities-uk-law-firms">COFA</a>, COO or head of learning and development. It provides a curriculum skeleton by role, a cadence model tied to the operational calendar, and a method for measuring whether behaviour actually changed. The metric definitions (what utilisation means, how realisation is calculated, what constitutes a lock-up day) are not re-explained here; they live on the pages they belong to, and this guide links to them at the appropriate point.</p>
+<p>This guide is for the person who has to build or commission the programme: the managing partner, <a href="/blog/compliance-risk-colp-cofa/cofa-responsibilities-uk-law-firms">COFA</a>, COO or head of learning and development. It provides a curriculum skeleton by role, a cadence model tied to the operational calendar, and a method for measuring whether behaviour actually changed. The metric definitions (what utilisation means, how realisation is calculated, what constitutes a lock-up day) are not re-explained here; they live on the pages they belong to, and this guide links to them at the appropriate point.</p>
 
 <h2>Why fee earners resist finance training</h2>
 
@@ -62,7 +62,7 @@ faqs:
 
 <p>Before designing the curriculum, the managing partner and COFA need to resolve the delivery model. Three options exist, and the right answer depends on the firm's size and what it is trying to achieve.</p>
 
-<p><strong>Internal COFA-led delivery.</strong> The <a href="/blog/compliance-and-risk-colp-cofa/cofa-responsibilities-uk-law-firms">COFA</a> delivers all sessions using the firm's own management accounts data. This is the lowest cash-cost model and the highest specificity model: the COFA knows the firm's actual time-recording completion rates, lock-up position and write-down patterns. The limitation is credibility with equity partners, who may discount internal messaging, and capacity (the COFA cannot run monthly sessions across all teams without that becoming a material part of their role).</p>
+<p><strong>Internal COFA-led delivery.</strong> The <a href="/blog/compliance-risk-colp-cofa/cofa-responsibilities-uk-law-firms">COFA</a> delivers all sessions using the firm's own management accounts data. This is the lowest cash-cost model and the highest specificity model: the COFA knows the firm's actual time-recording completion rates, lock-up position and write-down patterns. The limitation is credibility with equity partners, who may discount internal messaging, and capacity (the COFA cannot run monthly sessions across all teams without that becoming a material part of their role).</p>
 
 <p><strong>External specialist delivery.</strong> A law-firm accountancy firm or specialist training provider (the Law Management Section, the Institute of Legal Finance and Management, or a Big 4 advisory arm) delivers structured modules. This brings cross-firm <a href="/blog/practice-finance-cash-flow/law-firm-benchmarking-uk">benchmarking</a> data and independence. The limitation is cost and the fact that generic content without the firm's own data tends not to land with partners who have seen many such sessions.</p>
 
@@ -168,7 +168,7 @@ faqs:
       <td>7</td>
       <td>Mid-year measurement review</td>
       <td>45 minutes (cross-team)</td>
-      <td><a href="/blog/compliance-and-risk-colp-cofa/cofa-responsibilities-uk-law-firms">COFA</a> and team leads</td>
+      <td><a href="/blog/compliance-risk-colp-cofa/cofa-responsibilities-uk-law-firms">COFA</a> and team leads</td>
       <td>6-month post-baseline data pull</td>
     </tr>
     <tr>
@@ -189,7 +189,7 @@ faqs:
       <td>11</td>
       <td>Build-vs-buy review: is the programme working?</td>
       <td>60 minutes (management)</td>
-      <td>Managing partner, <a href="/blog/compliance-and-risk-colp-cofa/cofa-responsibilities-uk-law-firms">COFA</a>, COO</td>
+      <td>Managing partner, <a href="/blog/compliance-risk-colp-cofa/cofa-responsibilities-uk-law-firms">COFA</a>, COO</td>
       <td>Year-end measurement data</td>
     </tr>
     <tr>
@@ -204,13 +204,13 @@ faqs:
 
 <p>Two practical notes on running this skeleton. First, months 4 to 6 are intentionally left open for the firm to populate with the topics most relevant to its current position. If the aged-debt report for month 3 shows a problem with a specific practice area, that is the month 4 topic. The skeleton provides structure; the management accounts provide content. Second, month 7 is the most important session in the programme because it is where you decide whether to continue. If the baseline-to-six-months data shows no movement in time-recording completion rates or average days from entry to bill, the programme design is wrong and needs to change before you continue. Running another six months of sessions that are not working is a waste of everyone's time.</p>
 
-<p>The <a href="/blog/compliance-and-risk-colp-cofa/cofa-monthly-checklist-uk-law-firms">COFA monthly checklist</a> provides the operational rhythm this cadence plugs into: the billing and WIP review that the COFA runs each month is the natural anchor for the fee-earner session that same week.</p>
+<p>The <a href="/blog/compliance-risk-colp-cofa/cofa-monthly-checklist-uk-law-firms">COFA monthly checklist</a> provides the operational rhythm this cadence plugs into: the billing and WIP review that the COFA runs each month is the natural anchor for the fee-earner session that same week.</p>
 
 <h2>Session formats: what works for lawyers</h2>
 
 <p>Lawyers respond to case-based problem-solving and specific data. They do not respond well to didactic lectures on accounting principles delivered without reference to the firm's own numbers. The following session formats are ranked by effectiveness based on what firms report.</p>
 
-<p><strong>Data review with one question.</strong> The most effective format for monthly micro-sessions. The <a href="/blog/compliance-and-risk-colp-cofa/cofa-responsibilities-uk-law-firms">COFA</a> (or team lead) opens with one data point from last month's figures: time-recording completion rate, WIP age, or average days from entry to bill. The session addresses one question: what specifically is preventing improvement? This format produces engagement because the data is the firm's own and the question is operationally live.</p>
+<p><strong>Data review with one question.</strong> The most effective format for monthly micro-sessions. The <a href="/blog/compliance-risk-colp-cofa/cofa-responsibilities-uk-law-firms">COFA</a> (or team lead) opens with one data point from last month's figures: time-recording completion rate, WIP age, or average days from entry to bill. The session addresses one question: what specifically is preventing improvement? This format produces engagement because the data is the firm's own and the question is operationally live.</p>
 
 <p><strong>Matter-level budget review.</strong> For associate-level sessions, take three matters from the current WIP that illustrate different billing-narrative problems (thin entries, long gaps between time recorded and time billed, entries that do not map to the matter budget). Walk through each one. Ask the associates what they would do differently. This format most reliably changes narrative-quality behaviour because it makes the cost of poor recording visible at the matter level rather than as an abstract principle.</p>
 
@@ -279,7 +279,7 @@ faqs:
 
 <p>This means the programme design must be aligned with the management accounts production cycle. If the management accounts are produced by the 15th of each month, the fee-earner sessions should run in the last week of each month (using the previous month's accounts as the data anchor). If the accounts run quarterly, the programme has a harder design problem: there is not enough data frequency to anchor monthly sessions. This is one of the strongest arguments for moving to monthly management accounts if the firm is not already there.</p>
 
-<p>The <a href="/blog/compliance-and-risk-colp-cofa/cofa-monthly-checklist-uk-law-firms">COFA monthly checklist</a> includes the billing and WIP review that produces the data the training programme needs. Coordinating the training session calendar with the COFA's operational calendar is the simplest way to ensure the data is always available when the session runs.</p>
+<p>The <a href="/blog/compliance-risk-colp-cofa/cofa-monthly-checklist-uk-law-firms">COFA monthly checklist</a> includes the billing and WIP review that produces the data the training programme needs. Coordinating the training session calendar with the COFA's operational calendar is the simplest way to ensure the data is always available when the session runs.</p>
 
 <h2>The statutory framework: training costs and tax</h2>
 

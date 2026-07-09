@@ -1,4 +1,4 @@
-# Wave 3 site-wide flags (solicitors)
+﻿# Wave 3 site-wide flags (solicitors)
 
 **Created:** 2026-07-09. **Status:** Pre-launch (no flags yet).
 
@@ -214,3 +214,108 @@ The brief uses **para 2.3**. Conductor must confirm at Stage 1b, verify the exac
 **Resolution applied:** The litigation-privilege principle is retained in the brief body (privilege protects draft reports prepared for the dominant purpose of litigation) but the case is not cited by name. Writers must not add [2004] UKHL 48 to the published page without first verifying it at Lexis, Westlaw, or another accessible source.
 
 **Status:** CLOSED 2026-07-09 Stage 2b: Three Rivers dropped from brief (unverifiable at BAILII); page ships without it.
+
+
+## F-335 — CROSS_BUCKET
+
+**Pick:** A5 `what-does-a-legal-cashier-do-sra-requirements`
+**Raised:** 2026-07-09 Stage 2 (write)
+**Type:** CROSS_BUCKET
+**Priority:** LOW (forward-link exists in the published page; existence of target page must be confirmed at WRAP)
+
+**Issue:** The page (§ outsourced cashiering) contains a forward internal link to `outsourced-legal-cashiering-guide-uk-law-firms` (A6), which is a Wave 3 page not yet written. The link is correct per the collision-verify mandate and the brief; it will be a dead link until A6 is published.
+
+**Action at WRAP:** Confirm A6 `outsourced-legal-cashiering-guide-uk-law-firms` has been committed and the slug is live before deploying Wave 3. If A6 is deferred, the forward-link sentence in A5 §11 should be held as a plain-text reference (no `<a>` tag) until A6 ships.
+
+**Status:** OPEN
+
+---
+
+## F-345 -- CROSS_BUCKET
+
+**Pick:** A6 outsourced-legal-cashiering-guide-uk-law-firms
+**Raised:** 2026-07-09 RUN write
+**Type:** CROSS_BUCKET
+**Priority:** LOW (wave-internal link in place; target page A5 must exist at deploy)
+
+**Issue:** A6 contains a wave-internal link to A5 (what-does-a-legal-cashier-do-sra-requirements). The link is live in the published page body (companion guide introduction). At WRAP, confirm A5 is committed and the route /blog/sra-compliance-trust-accounting/what-does-a-legal-cashier-do-sra-requirements resolves before deploying A6.
+
+**Status:** OPEN
+
+---
+
+## F-346 -- INTERNAL_LINK
+
+**Pick:** A6 outsourced-legal-cashiering-guide-uk-law-firms
+**Raised:** 2026-07-09 RUN write
+**Type:** INTERNAL_LINK
+**Priority:** LOW (back-link opportunity; add at WRAP if target page is live)
+
+**Issue:** The A6 page links outward to cofa-responsibilities-uk-law-firms and sra-client-account-reconciliation-frequency. Confirm these pages exist in the Solicitors corpus at WRAP; if not, remove or flag for future back-patch.
+
+**Status:** OPEN
+
+## F-325 -- CROSS_BUCKET
+
+**Pick:** A4 forensic-accounting-litigation-law-firms-uk
+**Raised:** 2026-07-09 RUN phase
+**Type:** CROSS_BUCKET
+**Priority:** MEDIUM (blocks deploy of internal link, not content)
+
+**Issue:** The body links to usiness-valuation-for-family-lawyers-uk (A8, wave-internal forward-link). A8 had not been written at time of A4 commit. The link is present in the page at the correct relative path /blog/practice-accounting/business-valuation-for-family-lawyers-uk.
+
+**Action at WRAP:** Verify A8 exists and is deployed before deploying A4. If A8 is delayed, temporarily remove or nofollow the forward-link and restore at A8 deploy.
+
+---
+
+## F-355 — CROSS_BUCKET
+
+**Pick:** A8 `business-valuation-for-family-lawyers-uk`
+**Raised:** 2026-07-09 Wave 3 RUN
+**Type:** CROSS_BUCKET
+**Priority:** LOW (back-link only; A4 already live)
+
+**Issue:** A8 links to `forensic-accounting-litigation-law-firms-uk` (A4) as a wave-internal pair link. A4 was committed in this wave (commit b4e52c70 per tracker). WRAP must verify that A4's live content includes a reciprocal link back to A8. If the A4 page predates this flag and does not reference A8, add a back-link sentence in the "related guides" or cross-link section of A4 at WRAP.
+
+**Status:** OPEN — WRAP existence check required.
+
+
+## F-315 — AUTHORITY_GAP
+
+**Pick:** A3 `law-firm-financial-distress-restructuring-uk`
+**Raised:** 2026-07-09 Stage 2 (write)
+**Type:** AUTHORITY_GAP
+**Priority:** LOW (does not block page; intervention mechanics section is clearly hedged as statutory-only)
+
+**Issue:** All SRA consumer-facing intervention guidance URLs returned HTTP 404 at write time (2026-07-09):
+- sra.org.uk/consumers/firms/firm-closed/ — 404
+- sra.org.uk/consumers/get-help/firm-closed/ — 404
+(plus four additional URLs tested at brief Stage 1b and Stage 2)
+
+The published page describes SRA intervention mechanics from Solicitors Act 1974 Schedule 1 Part II (paras 5 to 7, 6A, 9, 10) only, with a clear source statement. Procedural detail (agent appointment, client notification timelines, costs-recovery mechanism) is not stated beyond the statutory text.
+
+**Action at WRAP:** Conductor to attempt sra.org.uk/solicitors/firm-based-authorisation/interventions/ and sra.org.uk search for current intervention guidance. If accessible, compare the procedural layer against the page's hedged text and raise a back-patch if any statutory statement is contradicted.
+
+**Status:** OPEN
+
+
+## F-365 — RESIDUAL_VERIFY (A9 accountant-for-barristers-chambers-uk)
+
+**Page:** accountant-for-barristers-chambers-uk
+**Issue:** BMIF VAT status not confirmed at primary source. The BMIF premium is confirmed as income-tax deductible (ITTOIA 2005 s.34, wholly and exclusively). Whether the BMIF mutual premium carries VAT or is exempt as an insurance/financial supply was not verified at primary source during Stage 2. The page does not state the VAT status of the BMIF premium (only the income tax deductibility). No correction required unless a future VAT-specific barrister page needs to address this.
+**Action at WRAP:** Conductor may wish to verify BMIF VAT status at primary source (BMIF website or HMRC manual) if a dedicated VAT-of-BMIF question arises on any future page. Not a blocker for this page.
+**Status:** OPEN (low priority; no false statement made on page)
+
+
+## F-305 — INTERNAL_LINK
+
+**Pick:** A2 `finance-training-fee-earners-law-firm-uk`
+**Raised:** 2026-07-09 RUN write
+**Type:** INTERNAL_LINK
+**Priority:** LOW (all target pages confirmed in corpus; verify category-slug routing at deploy)
+
+**Issue:** Page links to eight sibling pages. Category slugs verified from canonical URLs at write time: how-to-set-fee-earner-targets (practice-accounting), billing-discipline-end-of-quarter (practice-accounting), uk-law-firm-management-accounts-monthly (practice-accounting), law-firm-lock-up-reduction (practice-finance-cash-flow), cofa-responsibilities-uk-law-firms (compliance-and-risk-colp-cofa), cofa-monthly-checklist-uk-law-firms (compliance-and-risk-colp-cofa), partner-profit-allocation-uk-law-firms (partnership-llp-accounting), law-firm-benchmarking-uk (practice-finance-cash-flow). All confirmed present in Solicitors/web/content/blog/ at commit time.
+
+**Action at WRAP:** Confirm all 8 target slugs resolve in the deployed site before going live.
+
+**Status:** OPEN

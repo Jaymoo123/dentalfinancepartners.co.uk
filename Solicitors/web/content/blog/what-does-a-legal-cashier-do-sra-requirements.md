@@ -7,7 +7,7 @@ generator: claude-sonnet-4-6/wave3-netnew
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Compliance & Trust Accounting"
 metaTitle: "Legal Cashier Duties: SRA Accounts Rules Requirements"
-metaDescription: "Understand what a legal cashier does under the SRA Accounts Rules 2019: client ledgers, five-weekly reconciliations, authorised withdrawals, and breach spotting."
+metaDescription: "What a legal cashier does under the SRA Accounts Rules 2019: client ledgers, five-weekly reconciliations, authorised withdrawals and breach spotting."
 altText: "Legal cashier reviewing client account ledgers and reconciliation records at a UK law firm"
 image: ""
 h1: "What Does a Legal Cashier Do (and What Does the SRA Require)?"
@@ -92,7 +92,7 @@ faqs:
 
 <p>The cashier does not sign off a reconciliation with an unresolved difference. The COFA cannot sign off a reconciliation the cashier has not resolved. Both positions apply simultaneously.</p>
 
-<p>Signed reconciliation statements and supporting workings must be retained for at least six years (Rule 8). A cashier who allows reconciliations to slip past the five-week deadline, or who presents a reconciliation with unresolved differences, is the most common single trigger for SRA compliance concerns at a regulated firm. See <a href="/blog/sra-compliance-trust-accounting/sra-client-account-reconciliation-frequency">SRA client account reconciliation frequency</a> and <a href="/blog/sra-compliance-trust-accounting/solicitor-client-account-reconciliation">client account reconciliation mechanics</a> for further detail on the Rule 8 framework.</p>
+<p>Signed reconciliation statements and supporting workings must be retained for at least six years (Rule 8). A cashier who allows reconciliations to slip past the five-week deadline, or who presents a reconciliation with unresolved differences, is the most common single trigger for SRA compliance concerns at a regulated firm. See <a href="/blog/sra-accounts-rules/sra-client-account-reconciliation-frequency">SRA client account reconciliation frequency</a> and <a href="/blog/sra-compliance-trust-accounting/solicitor-client-account-reconciliation">client account reconciliation mechanics</a> for further detail on the Rule 8 framework.</p>
 
 <h2>Authorised withdrawals: what the cashier can and cannot do (Rule 5)</h2>
 
@@ -168,7 +168,7 @@ faqs:
 
 <p><strong>Accountant's report:</strong> the cashier's ledger accuracy is the input. The COFA commissions and delivers the report to the SRA under Rule 12.</p>
 
-<p>Two important consequences follow from this architecture. First, a cashier cannot substitute for a properly appointed COFA: the compliance accountability layer does not exist if the firm has no COFA. Second, a COFA who countersigns reconciliations and disposals without reviewing the cashier's work has not discharged their Rule 8 and regulatory duty. For a detailed look at what the COFA is accountable for at each stage, see <a href="/blog/sra-compliance-trust-accounting/cofa-responsibilities-uk-law-firms">COFA responsibilities for UK law firms</a> and the <a href="/blog/sra-compliance-trust-accounting/cofa-monthly-checklist-uk-law-firms">COFA monthly compliance checklist</a>.</p>
+<p>Two important consequences follow from this architecture. First, a cashier cannot substitute for a properly appointed COFA: the compliance accountability layer does not exist if the firm has no COFA. Second, a COFA who countersigns reconciliations and disposals without reviewing the cashier's work has not discharged their Rule 8 and regulatory duty. For a detailed look at what the COFA is accountable for at each stage, see <a href="/blog/compliance-risk-colp-cofa/cofa-responsibilities-uk-law-firms">COFA responsibilities for UK law firms</a> and the <a href="/blog/compliance-risk-colp-cofa/cofa-monthly-checklist-uk-law-firms">COFA monthly compliance checklist</a>.</p>
 
 <h2>What to look for when hiring a legal cashier</h2>
 
