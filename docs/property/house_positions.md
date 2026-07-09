@@ -4018,6 +4018,7 @@ Verified by the manager at legislation.gov.uk + the GOV.UK measure page on 2026-
 - **Exclusions (correct section numbers):** income from one's employer (s.783BN), from a partnership where the individual is a partner/connected (s.783BO), from a close company where the individual is a participator/associate (s.783BP). The commonly-cited "s.783BM" for exclusions is WRONG.
 - Rent-a-room: **s.783BM is the explicit Part 6A exclusion gate** (Stage 2 catch, 2026-07-09): it blocks property-allowance relief on income within the rent-a-room regime. Different income sources can use each regime separately (rent-a-room on lodger income, property allowance on separate BTL income); never stack both on the same income.
 - Per person (each joint owner has their own £1,000 against their share).
+- **s.24 finance-cost reducer interaction (PIM4460, verified 2026-07-09):** the property allowance (full OR partial) is NOT available in a tax year where the s.24 basic-rate finance-cost reducer is applied; they are mutually exclusive. Narrow exception: where the reducer computes to NIL (income within personal allowance), the election remains open. Never write "the s.24 credit is claimable alongside the allowance".
 
 ## 21.9 Dividend rates 2026-27 numeric lock + CIHC letting carve-out — Wave 10 mini-lock (added 2026-07-08, manager source-verified)
 
