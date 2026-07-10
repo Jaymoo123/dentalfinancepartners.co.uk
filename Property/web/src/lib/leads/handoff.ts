@@ -105,7 +105,7 @@ export function buildHandoffEmail(
   updated = false,
 ): { subject: string; html: string; text: string } {
   const subject = updated
-    ? `Updated enquiry: ${lead.full_name} (new reply since handoff)`
+    ? `Updated enquiry: ${lead.full_name} (includes their latest reply)`
     : `New qualified enquiry: ${lead.full_name}`;
 
   const ver = d.verification;
@@ -184,7 +184,7 @@ export function buildHandoffEmail(
 <p style="font-size:16px;">
 ${
   updated
-    ? `<strong style="color:#b45309;">They sent more information after the original handoff. This is the full refreshed pack, forward this version.</strong>`
+    ? `<strong style="color:#b45309;">Includes further information they sent after their initial enquiry. Full details below.</strong>`
     : `<strong style="color:#047857;">Contact details verified. Actively responded and ready for a call.</strong>`
 }
 </p>

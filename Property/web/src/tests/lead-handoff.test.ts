@@ -147,8 +147,8 @@ describe("buildHandoffEmail()", () => {
 
   it("updated=true -> 'Updated enquiry' subject + refreshed-pack headline", () => {
     const { subject, html, text } = buildHandoffEmail(LEAD, DOSSIER, "sent more info by email", true);
-    expect(subject).toBe("Updated enquiry: Jane Smith (new reply since handoff)");
-    expect(html).toContain("forward this version");
+    expect(subject).toBe("Updated enquiry: Jane Smith (includes their latest reply)");
+    expect(html).toContain("further information they sent after their initial enquiry");
     expect(text).toContain("Updated enquiry: Jane Smith");
   });
 
