@@ -239,7 +239,12 @@ export default async function EstatePage() {
               {sites.filter((s) => s.active).length} sites
             </span>
           </div>
-          <SiteSwitcher sites={sites} activeSiteKey={null} />
+          <div className="flex items-center gap-4">
+            <Link href="/leads" className="text-xs font-semibold text-emerald-700 underline">
+              Leads
+            </Link>
+            <SiteSwitcher sites={sites} activeSiteKey={null} />
+          </div>
         </div>
       </header>
 
@@ -460,7 +465,12 @@ export default async function EstatePage() {
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
           {/* Latest leads */}
           <div>
-            <h2 className="text-lg font-bold text-slate-900">Latest leads (all sites)</h2>
+            <div className="flex items-baseline justify-between gap-3">
+              <h2 className="text-lg font-bold text-slate-900">Latest leads (all sites)</h2>
+              <Link href="/leads" className="text-xs text-emerald-700 underline">
+                View all →
+              </Link>
+            </div>
             <p className="mt-1 text-xs text-slate-500">Most recent 30 across the estate.</p>
             <div className="mt-3 overflow-hidden rounded-xl border border-slate-200 bg-white">
               <table className="w-full text-sm">

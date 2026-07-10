@@ -1510,12 +1510,12 @@ export default async function SitePage({
         <div className="mt-3 grid gap-3 lg:grid-cols-[1fr_16rem] lg:items-start">
           <ErrorsPanel errors={clientErrors} />
           <Link
-            href={`/site/${siteKey}/lead-analytics`}
+            href="/leads"
             className="block rounded-xl border border-slate-200 bg-white p-4 transition-colors hover:border-emerald-300"
           >
             <div className="text-sm font-bold text-slate-900">Lead analytics</div>
             <p className="mt-1 text-xs text-slate-500">
-              Value, quality and intent scoring for every lead →
+              Flow, groupings and size mix for every lead, all sites →
             </p>
           </Link>
         </div>
@@ -1618,8 +1618,8 @@ export default async function SitePage({
       <CtaPanel rows={ctaPerformance} />
       <FormDropoffPanel rows={formDropoff} />
       <div>
-        <Link href={`/site/${siteKey}/leads`} className="inline-block text-xs text-emerald-700 underline">
-          View all leads for this site
+        <Link href="/leads" className="inline-block text-xs text-emerald-700 underline">
+          View all leads
         </Link>
       </div>
     </div>
@@ -1638,7 +1638,7 @@ export default async function SitePage({
           <div className="flex flex-wrap items-center gap-3 text-xs">
             <CountrySelect value={country} options={countryOptions} basePath={`/site/${siteKey}`} />
             <Link href={`/site/${siteKey}/trends`} className="text-emerald-700 underline">Trends</Link>
-            <Link href={`/site/${siteKey}/leads`} className="text-emerald-700 underline">Leads</Link>
+            <Link href="/leads" className="text-emerald-700 underline">Leads</Link>
             <span className="text-slate-400">Human-only</span>
           </div>
         </div>

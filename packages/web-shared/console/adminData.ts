@@ -438,6 +438,14 @@ export function getLeadsForSite(siteKey: string, limit = 200) {
   });
 }
 
+export function getAllLeads(limit = 2000) {
+  return rest<LeadInfo>("leads", {
+    select: LEAD_COLS,
+    order: "created_at.desc",
+    limit: String(limit),
+  });
+}
+
 export type LeadValueScore = {
   lead_id: string;
   tier: "very_high" | "high" | "medium" | "low";

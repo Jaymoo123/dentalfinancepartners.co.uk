@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * Sortable per-lead table for the lead-analytics page. Receives a flat
+ * Sortable per-lead table for the estate leads page. Receives a flat
  * serialisable row array; sorting is client-side (a few hundred rows max).
  */
 import * as React from "react";
@@ -11,9 +11,9 @@ export type LeadRow = {
   id: string;
   name: string;
   date: string; // ISO
+  site: string; // site display name
   role: string;
-  tier: string | null; // null = unscored
-  value: number | null;
+  tier: string | null; // null = unscored; used as a size bucket, not £
   intent: string | null;
   channel: string | null;
   confidence: string | null;
@@ -30,7 +30,7 @@ const TIER_BADGE: Record<string, string> = {
 
 const TIER_RANK: Record<string, number> = { very_high: 4, high: 3, medium: 2, low: 1 };
 
-type SortKey = "date" | "value" | "tier" | "name";
+type SortKey = "date" | "site" | "tier" | "name";
 
 export default function LeadAnalyticsTable({ rows }: { rows: LeadRow[] }) {
   const [sortKey, setSortKey] = useState<SortKey>("date");
@@ -39,7 +39,7 @@ export default function LeadAnalyticsTable({ rows }: { rows: LeadRow[] }) {
   const sorted = [...rows].sort((a, b) => {
     let d = 0;
     if (sortKey === "date") d = a.date.localeCompare(b.date);
-    else if (sortKey === "value") d = (a.value ?? -1) - (b.value ?? -1);
+    else if (sortKey === "site") d = a.site.localeCompare(b.site);
     else if (sortKey === "tier") d = (a.tier ? TIER_RANK[a.tier] ?? 0 : -1) - (b.tier ? TIER_RANK[b.tier] ?? 0 : -1);
     else d = a.name.localeCompare(b.name);
     return desc ? -d : d;
@@ -71,9 +71,9 @@ export default function LeadAnalyticsTable({ rows }: { rows: LeadRow[] }) {
           <tr>
             {header("name", "Lead")}
             {header("date", "When")}
+            {header("site", "Site")}
             <th className="hidden px-3 py-2 md:table-cell">Role</th>
-            {header("tier", "Tier")}
-            {header("value", "Est. £", "text-right")}
+            {header("tier", "Size")}
             <th className="hidden px-3 py-2 lg:table-cell">Intent</th>
             <th className="hidden px-3 py-2 lg:table-cell">Channel</th>
             <th className="hidden px-3 py-2 xl:table-cell">Message</th>
@@ -91,6 +91,7 @@ export default function LeadAnalyticsTable({ rows }: { rows: LeadRow[] }) {
               <tr key={r.id} className="border-t border-slate-100" title={r.rationale ?? undefined}>
                 <td className="px-3 py-2 font-medium text-slate-800">{r.name || "-"}</td>
                 <td className="whitespace-nowrap px-3 py-2 text-xs text-slate-400">{r.date.slice(0, 10)}</td>
+                <td className="whitespace-nowrap px-3 py-2 text-xs text-slate-500">{r.site}</td>
                 <td className="hidden px-3 py-2 text-xs text-slate-500 md:table-cell">{r.role || "-"}</td>
                 <td className="px-3 py-2">
                   {r.tier ? (
@@ -103,9 +104,6 @@ export default function LeadAnalyticsTable({ rows }: { rows: LeadRow[] }) {
                       unscored
                     </span>
                   )}
-                </td>
-                <td className="px-3 py-2 text-right font-mono tabular-nums">
-                  {r.value != null ? `£${r.value.toLocaleString("en-GB")}` : "-"}
                 </td>
                 <td className="hidden px-3 py-2 text-xs text-slate-500 lg:table-cell">{r.intent?.replace("_", " ") ?? "-"}</td>
                 <td className="hidden px-3 py-2 text-xs text-slate-500 lg:table-cell">{r.channel ?? "-"}</td>
