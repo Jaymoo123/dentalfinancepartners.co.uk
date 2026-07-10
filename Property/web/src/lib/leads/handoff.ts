@@ -246,19 +246,25 @@ export async function sendContactableHandoff(
 
   // Try up to 3 times with short backoffs before giving up gracefully.
   // Total worst-case wait is ~1.1 s, well inside any route budget.
+  // One idempotency key across all attempts: if Resend accepted the email but
+  // the response was lost, the retry must not deliver a duplicate.
+  const idempotencyKey = `handoff/${leadId}/${crypto.randomUUID()}`;
   const backoffs = [300, 800];
   let lastError: unknown;
   for (let attempt = 0; attempt < 3; attempt++) {
     if (attempt > 0) {
       await new Promise<void>((resolve) => setTimeout(resolve, backoffs[attempt - 1]));
     }
-    const { data, error } = await getResend().emails.send({
-      from: getFromAddress(),
-      to,
-      subject,
-      html,
-      text,
-    });
+    const { data, error } = await getResend().emails.send(
+      {
+        from: getFromAddress(),
+        to,
+        subject,
+        html,
+        text,
+      },
+      { idempotencyKey },
+    );
     if (!error) return { sent: true, to, messageId: data?.id };
     lastError = error;
   }
