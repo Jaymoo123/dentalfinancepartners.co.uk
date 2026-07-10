@@ -239,8 +239,8 @@ export default async function EstatePage() {
               {sites.filter((s) => s.active).length} sites
             </span>
           </div>
-          <div className="flex items-center gap-4">
-            <Link href="/leads" className="text-xs font-semibold text-emerald-700 underline">
+          <div className="flex min-w-0 items-center gap-4">
+            <Link href="/leads" className="shrink-0 text-xs font-semibold text-emerald-700 underline">
               Leads
             </Link>
             <SiteSwitcher sites={sites} activeSiteKey={null} />
