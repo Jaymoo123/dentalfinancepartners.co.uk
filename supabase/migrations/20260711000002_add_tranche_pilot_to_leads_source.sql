@@ -27,6 +27,7 @@ ALTER TABLE leads ADD CONSTRAINT leads_source_valid
       'agency-founder-finance',
       'contractors-ir35',
       'construction-cis',
+      'test', -- present in the LIVE constraint (drift vs repo-known def); preserved on re-read 2026-07-11
       'charities'
     )
     OR source IS NULL

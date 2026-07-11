@@ -37,7 +37,7 @@ Last updated: 2026-07-11
 
 | Site | Niche | Tranche | Stage | G1 brand | G2 research | G3 auto | G4 preview | Blockers | Owner action needed |
 |---|---|---|---|---|---|---|---|---|---|
-| charities (PILOT) | Charities & non-profits (+CICs) | pilot | **S5 DONE** (scaffold+machinery+calculators+asset+house positions built, 33 tests green, BRAND_TBD placeholders gate-blocked) | **G1 DEFERRED by owner** (shortlist ready; re-verify availability before buying) | R3 dossier done | brand gate correctly FAIL | - | content + preview deploy gated on G1 | pick brand + BUY domain (G1) |
+| charities (PILOT) | Charities & non-profits (+CICs) | pilot | **S5 DONE + Supabase seeded** (33 tests green; pilot migration pair APPLIED 2026-07-11, live 'test' source preserved; 1,660 blog_topics rows seeded from R3 pool, 293 with DFS volume) | **G1 DEFERRED by owner** (shortlist ready; re-verify availability before buying) | R3 dossier done | brand gate correctly FAIL | - | content + preview deploy gated on G1 | pick brand + BUY domain (G1) |
 | hospitality | Restaurants/pubs/takeaways/hotels | 1 | queued | | | | | | |
 | care | Care homes + domiciliary | 1 | queued (after medical watch ~08-03) | | | | | | |
 | startups-tech | Startups & tech/SaaS | 1 | queued | | | | | | |
