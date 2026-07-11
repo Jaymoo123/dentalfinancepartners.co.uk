@@ -420,7 +420,7 @@ export function LeadForm({
       {status === "success" && !redirectOnSuccess && (
         <div role="status" className="rounded-lg border-2 border-emerald-200 bg-emerald-50 p-4">
           <p className="text-sm font-semibold text-emerald-900">
-            Thanks! We&apos;ll be in touch within 24 hours.
+            Thanks! Check your phone and email now. Reply to our message to confirm your callback.
           </p>
         </div>
       )}
@@ -434,7 +434,7 @@ export function LeadForm({
       </button>
 
       <p className="text-xs leading-relaxed text-slate-500">
-        We respond within 24 hours and store your details securely.
+        We respond within 24 hours and store your details securely. You&apos;ll get a text and email from us straight away. A quick reply confirms your callback.
       </p>
     </form>
   );

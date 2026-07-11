@@ -60,7 +60,7 @@ export function MiniCapture({
   heading,
   blurb,
   submitLabel = "Request a callback",
-  successText = "Thanks. We'll be in touch within 24 hours.",
+  successText = "Thanks. Check your phone and email now. Reply to our message to confirm your callback.",
   className = "my-8 rounded-2xl border-l-4 border-emerald-600 bg-slate-50 p-6 sm:p-8",
   messagePlaceholder,
   messageMinLength,
@@ -646,6 +646,10 @@ export function MiniCapture({
                     {status === "loading" ? "Verifying your details..." : submitLabel}
                   </button>
                 </div>
+
+                <p className="text-xs leading-relaxed text-slate-500">
+                  You&apos;ll get a text and email from us right away. A quick reply locks in your callback.
+                </p>
               </div>
             </div>
           </div>
@@ -736,6 +740,10 @@ export function MiniCapture({
           <button type="submit" disabled={status === "loading"} className={`${btnPrimary} w-full sm:w-auto`}>
             {status === "loading" ? "Verifying your details..." : submitLabel}
           </button>
+
+          <p className="text-xs leading-relaxed text-slate-500">
+            You&apos;ll get a text and email from us right away. A quick reply locks in your callback.
+          </p>
         </form>
       )}
     </section>
