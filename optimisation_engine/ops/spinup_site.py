@@ -110,7 +110,7 @@ NICHE_CONFIG_JSON = """{{
   "brand": {{
     "primary_color": "{brand_primary}",
     "logo_path": "/brand/logo.png",
-    "publisher_logo_url": "/og-placeholder.svg"
+    "publisher_logo_url": "/api/og"
   }},
   "contact": {{
     "email": "hello@{root_domain}",
@@ -171,6 +171,19 @@ const nextConfig: NextConfig = {{
       {{ protocol: "https", hostname: "images.unsplash.com" }},
       {{ protocol: "https", hostname: "images.pexels.com" }},
     ],
+  }},
+  async redirects() {{
+    // Estate audit 2026-07: 4 live sites emit 307 on apex->www. Permanent 308
+    // in code as a fallback; ALSO set the Vercel dashboard domain redirect to
+    // 308 (permanent) when attaching the apex domain.
+    return [
+      {{
+        source: "/:path*",
+        has: [{{ type: "host", value: "{root_domain}" }}],
+        destination: "https://{domain}/:path*",
+        permanent: true,
+      }},
+    ];
   }},
 }};
 
@@ -243,9 +256,43 @@ body {{
 LAYOUT_TSX = """import type {{ Metadata }} from "next";
 import "./globals.css";
 
+const siteUrl = "https://{domain}";
+
+// Estate audit 2026-07 fixes baked in at scaffold time:
+// - description trimmed to <=155 chars by spinup (meta-length defect)
+// - og:image is the dynamic 1200x630 PNG route /api/og (never an SVG)
+// - Organization JSON-LD present from day one (lawyers/agency schema defect)
+const organizationJsonLd = {{
+  "@context": "https://schema.org",
+  "@type": ["ProfessionalService", "AccountingService"],
+  "@id": `${{siteUrl}}#organization`,
+  name: "{display_name}",
+  url: siteUrl,
+  description: "{description}",
+  logo: `${{siteUrl}}/api/og`,
+  areaServed: "GB",
+}};
+
 export const metadata: Metadata = {{
+  metadataBase: new URL(siteUrl),
   title: "{display_name}",
   description: "{description}",
+  alternates: {{ canonical: siteUrl }},
+  openGraph: {{
+    type: "website",
+    locale: "en_GB",
+    url: siteUrl,
+    siteName: "{display_name}",
+    title: "{display_name}",
+    description: "{description}",
+    images: [{{ url: "/api/og", width: 1200, height: 630, alt: "{display_name}" }}],
+  }},
+  twitter: {{
+    card: "summary_large_image",
+    title: "{display_name}",
+    description: "{description}",
+    images: ["/api/og"],
+  }},
 }};
 
 export default function RootLayout({{
@@ -255,8 +302,62 @@ export default function RootLayout({{
 }}) {{
   return (
     <html lang="en-GB">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{{{ __html: JSON.stringify(organizationJsonLd) }}}}
+        />
+      </head>
       <body>{{children}}</body>
     </html>
+  );
+}}
+"""
+
+# src/app/icon.svg is auto-wired by Next as the favicon (audit defect: one
+# live site shipped with no favicon link at all). Replaced by real brand
+# assets at the design pass.
+ICON_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="{brand_primary}"/>
+  <text x="32" y="42" font-family="ui-sans-serif, system-ui, sans-serif" font-size="32" font-weight="700" fill="{brand_on_primary}" text-anchor="middle">{initial}</text>
+</svg>
+"""
+
+# Dynamic 1200x630 PNG og:image (audit defect: live sites shipped a
+# non-rendering SVG placeholder). Pattern lifted from construction-cis
+# /api/og; brand values are baked in at scaffold time, swap to the
+# niche-loader once the site grows one.
+OG_ROUTE_TSX = """import {{ ImageResponse }} from "next/og";
+import type {{ NextRequest }} from "next/server";
+
+export const runtime = "edge";
+
+export async function GET(req: NextRequest) {{
+  const title = req.nextUrl.searchParams.get("title") ?? "{display_name}";
+  return new ImageResponse(
+    (
+      <div
+        style={{{{
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          background: "white",
+          padding: "60px",
+        }}}}
+      >
+        <div style={{{{ display: "flex", fontSize: 56, fontWeight: 700, color: "#0f172a", lineHeight: 1.2 }}}}>
+          {{title}}
+        </div>
+        <div style={{{{ display: "flex", alignItems: "center", gap: "16px" }}}}>
+          <div style={{{{ width: 24, height: 24, borderRadius: 6, background: "{brand_primary}", display: "flex" }}}} />
+          <span style={{{{ fontSize: 28, fontWeight: 600, color: "#334155" }}}}>{display_name}</span>
+          <span style={{{{ fontSize: 24, color: "#64748b", marginLeft: "auto" }}}}>{root_domain}</span>
+        </div>
+      </div>
+    ),
+    {{ width: 1200, height: 630 }}
   );
 }}
 """
@@ -331,6 +432,292 @@ SITE_CONFIG: dict = {{
 
 
 # ---------------------------------------------------------------------------
+# Phase-0 factory additions (expansion program, 2026-07): STATE.md, tranche
+# Supabase migrations, CI matrix entry, sites/<site>.json wave stub,
+# storagePrefix collision check.
+# ---------------------------------------------------------------------------
+
+# Known key lists as of 2026-07-11. The emitted migration header instructs the
+# applier to re-read the LIVE constraint defs before applying (constraint
+# contents have drifted from repo files before; construction-cis migration is
+# still pending sign-off).
+EXISTING_SITE_KEYS = [
+    "property", "dentists", "medical", "solicitors", "agency", "generalist",
+    "contractors-ir35", "construction-cis",
+]
+EXISTING_LEAD_SOURCES = [
+    "dentists", "property", "medical", "solicitors", "generalist", "general",
+    "agency", "agency-founder-finance", "contractors-ir35", "construction-cis",
+]
+
+STATE_MD = """# {niche} ({display_name}) site state
+
+Last updated {date} (SCAFFOLDED, pre-launch). Generated by
+`optimisation_engine.ops.spinup_site`. Tranche: **{tranche}**.
+
+brand_locked: false
+
+## Identity
+
+- site_key `{niche}` | display **"{display_name}"** | intended domain `{domain}`
+- Storage prefix **`{storage_prefix}` FROZEN** (added to the SITE_SPINUP.md registry at scaffold time; never change after first deploy)
+- Tranche id: `{tranche}`
+- Vercel project id: `PLACEHOLDER_VERCEL_PROJECT_ID` (filled by scripts/vercel_create_site.py)
+- Brand: NOT LOCKED. No content generation until this flag reads `brand_locked: true` (owner gate G1).
+
+## Launch state
+
+- [ ] S1 brand lock (owner gate G1): flip `brand_locked: true` above, record brand spec
+- [ ] S2 scaffold: spinup_site run (this file exists = done), spinup_site_check 1+8 pass, npm build green
+- [ ] S3 research pack finalised + blog_topics seeded (owner gate G2)
+- [ ] S4 machinery composition per SITE_SPINUP.md Step 2 (vitest, tsc, headers)
+- [ ] S5 niche build: calculators (golden-figure vitest), data asset, house_positions.md, rates ledger
+- [ ] S6 launch-core content generated + predeploy_gate green (brand lint precondition)
+- [ ] S7 Vercel project + preview an01 pass + live battery (gates G3/G4)
+- [ ] S8 domain-ready close-out: `sites.active=true`, tracker updated
+
+## Data layer
+
+- Tranche migration pair emitted at scaffold time (see supabase/migrations/); rows insert `active=false`
+- Lead notify allowlist: add `{niche}` to Property /api/leads/notify allowlist in the per-tranche Property deploy (the sole sanctioned live-site touch)
+
+## External steps (HUMAN ONLY, gate the site going live)
+
+- [ ] Buy the domain `{root_domain}` and point DNS at Vercel (A/CNAME per Vercel domain UI)
+- [ ] **Pre-attach refresh (same day the domain is bought):** run the rates-ledger lint + dated-reference sweep (tax-year mentions) over the corpus and patch stale figures BEFORE DNS attach
+- [ ] Google Search Console: add property `sc-domain:{root_domain}`, verify (DNS TXT), submit `/sitemap.xml`, Request Indexing on key pages (discovery failure is the number 1 new-site risk)
+- [ ] Bing Webmaster Tools: import the site from GSC, add Bing verification code to niche.config.json
+- [ ] GA4: create property, copy measurement id into `{niche}/niche.config.json` -> seo.google_analytics_id, add to `optimisation_engine/clients/ga4_config.py`, redeploy
+- [ ] Real phone number into `{niche}/niche.config.json` -> contact.phone (placeholder ships as +44 20 0000 0000)
+- [ ] Brand assets: `public/brand/primary-logo.png` + `public/brand/icon-alt.png` (OG image route depends on them)
+- [ ] Resend routing ONLY if a partner firm is signed (partner CC only on partnered sites; otherwise leads route to owner inbox)
+"""
+
+
+def load_frozen_prefixes() -> dict[str, str]:
+    """All storagePrefix values in use: layout.tsx literals + the frozen
+    registry table in docs/_engines/SITE_SPINUP.md."""
+    import re
+    found: dict[str, str] = {}
+    for layout in ROOT.glob("*/web/src/app/layout.tsx"):
+        for m in re.finditer(r'storagePrefix="([a-z0-9]+)"', layout.read_text(encoding="utf-8")):
+            found[m.group(1)] = str(layout.relative_to(ROOT))
+    spinup_doc = ROOT / "docs" / "_engines" / "SITE_SPINUP.md"
+    if spinup_doc.exists():
+        for m in re.finditer(r"\|\s*`[a-z0-9-]+`\s*\|\s*`([a-z0-9]+)`\s*\|", spinup_doc.read_text(encoding="utf-8")):
+            found.setdefault(m.group(1), "docs/_engines/SITE_SPINUP.md frozen-prefix table")
+    return found
+
+
+def check_storage_prefix(prefix: str) -> None:
+    import re
+    if not re.match(r"^[a-z][a-z0-9]{1,3}$", prefix):
+        fail(f"--storage-prefix must be 2-4 lowercase alphanumeric chars (got {prefix!r})")
+    taken = load_frozen_prefixes()
+    if prefix in taken:
+        fail(f"storagePrefix {prefix!r} already in use ({taken[prefix]}). Pick another; prefixes are frozen forever.")
+
+
+SITES_INSERT_SQL = """INSERT INTO sites (
+  site_key, display_name, domain, gsc_property_url, bing_property_url,
+  niche, target_buyer_persona, brand_voice_notes,
+  content_dir, git_repo_path, blog_topics_table, active
+) VALUES (
+  '{site_key}',
+  '{display_name}',
+  '{domain}',
+  'sc-domain:{root_domain}',
+  NULL,
+  '{audience}',
+  '{audience}',
+  'plain-English specialist authority; UK English; no em-dashes',
+  '{site_key}/web/content/blog',
+  '{site_key}/web',
+  'blog_topics',
+  false
+)
+ON CONFLICT (site_key) DO NOTHING;"""
+
+SITES_MIGRATION_SQL = """-- Migration: {date_compact}000001_add_tranche_{tranche}_to_sites.sql
+-- Tranche: {tranche} | new site keys: {new_keys_csv}
+-- Generated by optimisation_engine.ops.spinup_site.
+--
+-- ROLLBACK / previous constraint definition (repo-known as of generation;
+-- RE-READ THE LIVE DEF before applying, constraint names/contents have
+-- drifted from repo files before):
+--   SELECT conname, pg_get_constraintdef(oid)
+--   FROM pg_constraint WHERE conname LIKE '%site_key%';
+--   sites_site_key_check: CHECK ((site_key = ANY (ARRAY[{prev_keys_csv}])))
+--
+-- Rows insert active=false (site stays out of the console until domain-ready).
+-- Strictly additive. Run manually via Supabase SQL (Management API).
+
+BEGIN;
+
+ALTER TABLE sites DROP CONSTRAINT IF EXISTS sites_site_key_check;
+
+ALTER TABLE sites ADD CONSTRAINT sites_site_key_check
+  CHECK (
+    site_key = ANY (ARRAY[
+{array_lines}
+    ])
+  );
+
+{inserts}
+
+COMMIT;
+
+-- Verify after applying:
+--   SELECT conname, pg_get_constraintdef(oid)
+--   FROM pg_constraint WHERE conname = 'sites_site_key_check';
+"""
+
+LEADS_MIGRATION_SQL = """-- Migration: {date_compact}000002_add_tranche_{tranche}_to_leads_source.sql
+-- Tranche: {tranche} | new source keys: {new_keys_csv}
+-- Generated by optimisation_engine.ops.spinup_site.
+--
+-- ROLLBACK / previous constraint definition (repo-known as of generation;
+-- RE-READ THE LIVE DEF before applying):
+--   SELECT conname, pg_get_constraintdef(oid)
+--   FROM pg_constraint WHERE conname LIKE '%source%' AND conrelid = 'leads'::regclass;
+--   leads_source_valid: CHECK ((source = ANY (ARRAY[{prev_sources_csv}])) OR source IS NULL)
+--
+-- Strictly additive. Run manually via Supabase SQL (Management API).
+
+BEGIN;
+
+ALTER TABLE leads DROP CONSTRAINT IF EXISTS leads_source_valid;
+
+ALTER TABLE leads ADD CONSTRAINT leads_source_valid
+  CHECK (
+    source IN (
+{source_lines}
+    )
+    OR source IS NULL
+  );
+
+COMMIT;
+
+-- Verify after applying:
+--   SELECT conname, pg_get_constraintdef(oid)
+--   FROM pg_constraint WHERE conname = 'leads_source_valid';
+"""
+
+
+def build_sites_migration(site_rows: list[dict], date_compact: str, tranche: str) -> str:
+    """One tranche migration extending sites_site_key_check + inserting rows (active=false)."""
+    new_keys = [r["site_key"] for r in site_rows]
+    all_keys = EXISTING_SITE_KEYS + [k for k in new_keys if k not in EXISTING_SITE_KEYS]
+    return SITES_MIGRATION_SQL.format(
+        date_compact=date_compact,
+        tranche=tranche,
+        new_keys_csv=", ".join(new_keys),
+        prev_keys_csv=", ".join(f"'{k}'" for k in EXISTING_SITE_KEYS),
+        array_lines=",\n".join(f"      '{k}'::text" for k in all_keys),
+        inserts="\n\n".join(SITES_INSERT_SQL.format(**r) for r in site_rows),
+    )
+
+
+def build_leads_migration(new_keys: list[str], date_compact: str, tranche: str) -> str:
+    all_sources = EXISTING_LEAD_SOURCES + [k for k in new_keys if k not in EXISTING_LEAD_SOURCES]
+    return LEADS_MIGRATION_SQL.format(
+        date_compact=date_compact,
+        tranche=tranche,
+        new_keys_csv=", ".join(new_keys),
+        prev_sources_csv=", ".join(f"'{s}'" for s in EXISTING_LEAD_SOURCES),
+        source_lines=",\n".join(f"      '{s}'" for s in all_sources),
+    )
+
+
+def insert_ci_matrix_entry(niche: str, domain: str) -> None:
+    """Append the site to the CI matrix in ci-build-test.yml, preserving
+    formatting. Handles both layouts: the P0-4 path-filtered `SITES='dir|url'`
+    single-source block, and the older static `matrix.include:` list."""
+    ci_path = ROOT / ".github" / "workflows" / "ci-build-test.yml"
+    src = ci_path.read_text(encoding="utf-8")
+    if f"{niche}|" in src or f"- site: {niche}\n" in src:
+        print(f"[SKIP] {niche} already in CI matrix")
+        return
+    lines = src.splitlines(keepends=True)
+
+    # New layout: SITES='...multiline dir|url list...' inside the changes job.
+    sites_i = next((i for i, l in enumerate(lines) if l.strip() == "SITES='"), None)
+    if sites_i is not None:
+        end_i = sites_i + 1
+        while end_i < len(lines) and lines[end_i].strip() != "'":
+            end_i += 1
+        if end_i >= len(lines):
+            fail("SITES block in ci-build-test.yml has no closing quote")
+        indent = lines[end_i - 1][:len(lines[end_i - 1]) - len(lines[end_i - 1].lstrip())]
+        lines.insert(end_i, f"{indent}{niche}|https://{domain}\n")
+        ci_path.write_text("".join(lines), encoding="utf-8")
+        print(f"[OK] Added {niche} to CI SITES matrix block")
+        return
+
+    # Old layout: static include: list.
+    include_i = next((i for i, l in enumerate(lines) if l.strip() == "include:"), None)
+    if include_i is None:
+        fail("Could not find SITES block or matrix include: list in ci-build-test.yml")
+    end_i = include_i + 1
+    while end_i < len(lines) and lines[end_i].strip():
+        end_i += 1
+    lines.insert(end_i, f"          - site: {niche}\n            url: https://{domain}\n")
+    ci_path.write_text("".join(lines), encoding="utf-8")
+    print(f"[OK] Added {niche} to CI build matrix")
+
+
+def write_sites_wave_config(niche: str, display_name: str, domain: str) -> Path:
+    """sites/<niche>.json wave-config stub. batchSize 1, single bucket 'a'
+    (owner ruling 2026-07-08: no A/B/C lanes)."""
+    cfg = {
+        "site": niche,
+        "displayName": display_name,
+        "paths": {
+            "repoRoot": str(ROOT).replace("\\", "/"),
+            "worktreeBase": str(ROOT.parent).replace("\\", "/"),
+            "worktreePattern": "Accounting-wt-{site}-{wavekind}{wave}-{bucket}",
+            "branchPattern": "{site}-{wavekind}{wave}-{bucket}",
+            "docsDir": f"docs/{niche}",
+            "briefsDir": f"briefs/{niche}",
+            "sessionsDir": f"docs/sessions/{niche}",
+            "blogContentDir": f"{niche}/web/content/blog",
+            "blogRoutesDir": f"{niche}/web/src/app/blog",
+            "buildDir": f"{niche}/web",
+            "housePositions": f"docs/{niche}/house_positions.md",
+            "netnewProgram": "docs/_engines/NETNEW_PROGRAM.md",
+            "siteConfigJson": f"{niche}/niche.config.json",
+        },
+        "vercel": {
+            "projectJson": f"{niche}/web/.vercel/project.json",
+            "productionDomain": domain,
+        },
+        "indexnow": {"module": "optimisation_engine.indexing.submit_indexnow"},
+        "wave": {
+            "_doc": "Owner ruling 2026-07-08: no A/B/C lanes; batchSize 1 = one sub-agent per topic, parallel. Single bucket retained for path/naming compatibility.",
+            "buckets": ["a"],
+            "bucketsUpper": ["A"],
+            "megaWaveSize": 60,
+            "batchSize": 1,
+            "waveKind": "wave",
+        },
+        "naming": {
+            "launchPromptsFile": "WAVE{wave}_LAUNCH_PROMPTS.md",
+            "startHereFile": "WAVE{wave}_SESSION_{bucketUpper}_START_HERE.md",
+            "trackerFile": "wave{wave}_page_tracker.md",
+            "flagsFile": "wave{wave}_site_wide_flags.md",
+            "qaFile": "wave{wave}_questions_session_{bucketUpper}.md",
+            "discoveryFile": "wave{wave}_discovery_log_session_{bucketUpper}.md",
+            "promptExtractDir": "wave{wave}_prompts",
+            "briefSubdir": "wave{wave}",
+            "cannibCheckFile": "wave{wave}_cannibalisation_check.md",
+        },
+    }
+    path = ROOT / "sites" / f"{niche}.json"
+    write_file(path, json.dumps(cfg, indent=2) + "\n")
+    return path
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -342,11 +729,22 @@ def main() -> None:
     p.add_argument("--brand-primary", default="#1d4ed8", help="Primary brand colour hex")
     p.add_argument("--brand-on-primary", default="#ffffff", help="Text colour on brand-primary backgrounds")
     p.add_argument("--niche-summary", default="UK specialist accountants", help="One-line audience description")
+    p.add_argument("--tranche", required=True, help="Expansion tranche id (e.g. 1, pilot); recorded in STATE.md + migration names")
+    p.add_argument("--storage-prefix", required=True, help="Frozen analytics storagePrefix (2-4 lowercase chars); collision-checked")
+    p.add_argument("--sites", default=None, help="Comma-separated site keys the tranche migration pair should cover (default: just --niche)")
+    p.add_argument("--skip-db", action="store_true", help="Skip the live Supabase sites insert (tranche migrations cover registration)")
     p.add_argument("--dry-run", action="store_true", help="Print plan without writing files / DB rows")
     args = p.parse_args()
 
     if not slug_safe(args.niche):
         fail(f"--niche must be lowercase-hyphen (got {args.niche!r})")
+    check_storage_prefix(args.storage_prefix)
+    migration_keys = [s.strip() for s in (args.sites or args.niche).split(",") if s.strip()]
+    if args.niche not in migration_keys:
+        migration_keys.insert(0, args.niche)
+    for k in migration_keys:
+        if not slug_safe(k):
+            fail(f"--sites entry must be lowercase-hyphen (got {k!r})")
 
     niche = args.niche
     display_name = args.display_name
@@ -355,6 +753,9 @@ def main() -> None:
     brand_primary = args.brand_primary
     brand_on_primary = args.brand_on_primary
     audience = args.niche_summary
+    # Meta-length audit defect: live homepages shipped descriptions up to 185ch.
+    # SERP truncation limit ~155-160; qa_verdict.py lints at 155.
+    meta_description = audience if len(audience) <= 155 else audience[:152].rstrip() + "..."
 
     site_dir = ROOT / niche
     if site_dir.exists() and not args.dry_run:
@@ -368,8 +769,13 @@ def main() -> None:
     print(f"  Brand primary:   {brand_primary}")
     print(f"  IndexNow key:    {indexnow_key}")
     print(f"  Target dir:      {site_dir.relative_to(ROOT)}")
+    print(f"  Storage prefix:  {args.storage_prefix} (collision check passed)")
+    print(f"  Tranche:         {args.tranche}")
+    print(f"  Migration keys:  {', '.join(migration_keys)}")
     if args.dry_run:
-        print("\n[DRY RUN] Aborting before any writes.")
+        print("\n[DRY RUN] Would also emit: docs/{n}/STATE.md, supabase tranche migration pair, "
+              "CI matrix entry, sites/{n}.json wave stub.".format(n=niche))
+        print("[DRY RUN] Aborting before any writes.")
         return
 
     # ----- Write filesystem scaffold -----
@@ -382,7 +788,9 @@ def main() -> None:
     ))
     write_file(site_dir / "pipeline" / "__init__.py", "")
     write_file(site_dir / "web" / "package.json", PACKAGE_JSON.format(niche=niche))
-    write_file(site_dir / "web" / "next.config.ts", NEXT_CONFIG_TS.format(niche=niche))
+    write_file(site_dir / "web" / "next.config.ts", NEXT_CONFIG_TS.format(
+        niche=niche, domain=domain, root_domain=root_domain,
+    ))
     write_file(site_dir / "web" / "tsconfig.json", TSCONFIG_JSON)
     write_file(site_dir / "web" / "postcss.config.mjs", POSTCSS_CONFIG)
     write_file(site_dir / "web" / "vercel.json", VERCEL_JSON)
@@ -390,7 +798,14 @@ def main() -> None:
         brand_primary=brand_primary, brand_on_primary=brand_on_primary,
     ))
     write_file(site_dir / "web" / "src" / "app" / "layout.tsx", LAYOUT_TSX.format(
-        display_name=display_name, description=audience,
+        display_name=display_name, description=meta_description, domain=domain,
+    ))
+    write_file(site_dir / "web" / "src" / "app" / "icon.svg", ICON_SVG.format(
+        brand_primary=brand_primary, brand_on_primary=brand_on_primary,
+        initial=display_name[:1].upper(),
+    ))
+    write_file(site_dir / "web" / "src" / "app" / "api" / "og" / "route.tsx", OG_ROUTE_TSX.format(
+        display_name=display_name, brand_primary=brand_primary, root_domain=root_domain,
     ))
     write_file(site_dir / "web" / "src" / "app" / "page.tsx", PAGE_TSX.format(
         display_name=display_name, tagline=audience,
@@ -416,11 +831,17 @@ def main() -> None:
     indexing_cfg_path = ROOT / "optimisation_engine" / "indexing" / "config.py"
     cfg_src = indexing_cfg_path.read_text(encoding="utf-8")
     new_entry = f'    "{niche}": {{\n        "host": "{domain}",\n        "key": "{indexnow_key}",\n    }},\n'
-    marker = "    # Medical + Solicitors:"
-    if niche not in cfg_src:
-        cfg_src = cfg_src.replace(marker, new_entry + marker, 1)
-        indexing_cfg_path.write_text(cfg_src, encoding="utf-8")
-        print(f"[OK] Added IndexNow key for {niche!r} to indexing/config.py")
+    # Insert as the first entry of the SITE_INDEXNOW_CONFIG dict (the old
+    # "# Medical + Solicitors:" comment marker no longer exists in the file).
+    import re
+    marker_re = re.compile(r"(SITE_INDEXNOW_CONFIG[^\n]*=\s*\{\n)")
+    if f'"{niche}"' not in cfg_src:
+        if not marker_re.search(cfg_src):
+            print(f"[WARN] SITE_INDEXNOW_CONFIG dict not found in indexing/config.py; add {niche!r} entry manually")
+        else:
+            cfg_src = marker_re.sub(lambda m: m.group(1) + new_entry, cfg_src, count=1)
+            indexing_cfg_path.write_text(cfg_src, encoding="utf-8")
+            print(f"[OK] Added IndexNow key for {niche!r} to indexing/config.py")
 
     # ----- Write blog_generator site_config -----
     # Python identifiers can't contain hyphens; the filename uses underscores
@@ -434,14 +855,6 @@ def main() -> None:
     ))
     print(f"[OK] Wrote blog_generator site_config: {site_cfg_path.relative_to(ROOT)}")
 
-    # ----- Update site_configs/__init__.py registry -----
-    site_configs_init = ROOT / "optimisation_engine" / "blog_generator" / "site_configs" / "__init__.py"
-    init_src = site_configs_init.read_text(encoding="utf-8")
-    if f'"{niche}"' not in init_src:
-        # Best-effort insertion: append a registration line at the end of the SITE_CONFIGS dict.
-        # If the file uses a different pattern, the user will need to add manually.
-        print(f"[WARN] Manual step: register {niche!r} in optimisation_engine/blog_generator/site_configs/__init__.py")
-
     # ----- Update routing_safety.py EXPECTED_SITE_PREFIXES -----
     rs_path = ROOT / "optimisation_engine" / "blog_generator" / "routing_safety.py"
     rs_src = rs_path.read_text(encoding="utf-8")
@@ -453,7 +866,55 @@ def main() -> None:
             rs_path.write_text(rs_src, encoding="utf-8")
             print(f"[OK] Added {niche!r} to EXPECTED_SITE_PREFIXES")
 
+    # ----- Verify site_config auto-registration -----
+    # site_configs/__init__.py auto-discovers per-site modules; no manual
+    # registry edit needed. Import the generated module directly (not the
+    # package, which would re-validate every site) and confirm the site_key.
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(f"_spinup_check_{niche.replace('-', '_')}", site_cfg_path)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    if mod.SITE_CONFIG.get("site_key") != niche:
+        fail(f"Generated site_config {site_cfg_path.name} has wrong site_key {mod.SITE_CONFIG.get('site_key')!r}")
+    print(f"[OK] site_config auto-registers via site_configs/__init__.py discovery (site_key={niche!r} verified)")
+
+    # ----- Emit docs/<niche>/STATE.md -----
+    state_path = ROOT / "docs" / niche / "STATE.md"
+    write_file(state_path, STATE_MD.format(
+        niche=niche, display_name=display_name, domain=domain, root_domain=root_domain,
+        date=date_str, tranche=args.tranche, storage_prefix=args.storage_prefix,
+    ))
+    print(f"[OK] Wrote {state_path.relative_to(ROOT)} (brand_locked: false)")
+
+    # ----- Emit tranche Supabase migration pair -----
+    date_compact = date_str.replace("-", "")
+    site_rows = []
+    for k in migration_keys:
+        if k == niche:
+            site_rows.append({"site_key": k, "display_name": display_name, "domain": domain,
+                              "root_domain": root_domain, "audience": audience})
+        else:
+            # Batch sibling scaffolded separately; placeholders flagged for the applier.
+            site_rows.append({"site_key": k, "display_name": f"TODO_{k}", "domain": f"TODO.{k}.co.uk",
+                              "root_domain": f"TODO.{k}.co.uk", "audience": "TODO"})
+    mig1 = ROOT / "supabase" / "migrations" / f"{date_compact}000001_add_tranche_{args.tranche}_to_sites.sql"
+    mig2 = ROOT / "supabase" / "migrations" / f"{date_compact}000002_add_tranche_{args.tranche}_to_leads_source.sql"
+    write_file(mig1, build_sites_migration(site_rows, date_compact, args.tranche))
+    write_file(mig2, build_leads_migration(migration_keys, date_compact, args.tranche))
+    print(f"[OK] Emitted tranche migrations: {mig1.name}, {mig2.name} (NOT applied; run via Management API)")
+
+    # ----- CI matrix entry -----
+    insert_ci_matrix_entry(niche, domain)
+
+    # ----- sites/<niche>.json wave-config stub -----
+    wave_path = write_sites_wave_config(niche, display_name, domain)
+    print(f"[OK] Wrote {wave_path.relative_to(ROOT)} (batchSize 1, single bucket 'a')")
+
     # ----- Insert row in Supabase `sites` -----
+    if args.skip_db:
+        print("[SKIP] Live Supabase sites insert (--skip-db; apply the tranche migrations instead)")
+        _print_manual_gates(niche, domain, root_domain)
+        return
     sites_payload = {
         "site_key": niche,
         "display_name": display_name,
@@ -483,7 +944,10 @@ def main() -> None:
     else:
         print(f"[WARN] Sites insert: {r.status_code} {r.text[:200]}")
 
-    # ----- Manual gates checklist -----
+    _print_manual_gates(niche, domain, root_domain)
+
+
+def _print_manual_gates(niche: str, domain: str, root_domain: str) -> None:
     print()
     print("=" * 70)
     print(f"MANUAL GATES — complete these to bring {niche} live:")
@@ -501,6 +965,8 @@ def main() -> None:
 
 3. Configure DNS for {domain} to point at Vercel
    (Vercel will show the required A/CNAME records when you add the domain)
+   - When adding the apex domain {domain.removeprefix('www.')}, set its redirect to
+     {domain} as PERMANENT (308), not temporary (estate audit: 4 live sites emit 307)
 
 4. Google Search Console:
    - Add property: sc-domain:{root_domain}

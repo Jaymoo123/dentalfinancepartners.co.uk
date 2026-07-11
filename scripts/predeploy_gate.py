@@ -36,6 +36,12 @@ Checks:
      edited after coverage cannot ride out on a stale pass); falls back to
      running the per-slug coverage script under --coverage-run.
 
+  6. Brand consistency     - HARD GATE (the "medical trap" fix). Own brand +
+     domain from niche.config.json wired into the web app; NO other estate
+     site's brand/domain literal anywhere in the corpus; no template
+     placeholders in content. --brand-only runs just this check for --site;
+     --brand-sweep-all runs it estate-wide.
+
 Exit 0 = no HARD failures (safe to deploy). Exit 1 = a HARD gate failed.
 Pass --strict to also hard-fail on em-dashes and pricing (use once swept).
 Pass --qa-batch <name> to enforce strict QA coverage for a deploy batch.
@@ -109,6 +115,11 @@ COVERAGE_BATCH = _coverage_batch_arg()
 # Word-count gate is OPT-IN (--word-count flag).  Without it the gate is a
 # silent no-op so existing per-site gates are completely unaffected.
 WORD_COUNT = "--word-count" in sys.argv
+
+# Brand-consistency modes. --brand-only = run ONLY the brand check for --site;
+# --brand-sweep-all = run the cross-brand deny-list check for EVERY site.
+BRAND_ONLY = "--brand-only" in sys.argv
+BRAND_SWEEP_ALL = "--brand-sweep-all" in sys.argv
 
 failures = []   # HARD - block deploy
 warnings = []   # surfaced, non-blocking unless --strict
@@ -446,6 +457,184 @@ def check_query_coverage():
               "slug(s) covered with matching hashes")
 
 
+# --- Brand-consistency lint (the "medical trap" fix) -----------------------
+# Medical's brand changed after content generation, leaving a mixed-brand
+# corpus. This gate makes cross-brand contamination a HARD deploy blocker.
+
+# Strings that legitimately appear on EVERY site (single operating company),
+# so they must never enter the deny-list.
+BRAND_ALLOWLIST = {
+    "ashfield trading ltd",
+    "ashfield trading limited",
+    "16358723",
+    "20 ashfield avenue",
+    "shipley",
+    "bradford",
+    "bd18 3al",
+}
+
+# File extensions worth grepping for brand strings.
+_BRAND_EXTS = {".md", ".mdx", ".ts", ".tsx", ".js", ".jsx", ".json", ".html", ".txt", ".yml", ".yaml"}
+
+PLACEHOLDER_PATTERNS = [
+    re.compile(r"\+44 20 0000 0000"),
+    re.compile(r"\b0000 000 0000\b"),
+    re.compile(r"\bPLACEHOLDER\b"),
+    re.compile(r"\bTODO\b"),
+    re.compile(r"\{\{"),
+    re.compile(r"\bLorem\b", re.I),
+]
+
+
+def _site_keys() -> list[str]:
+    """All site keys with a sites/<key>.json (skip *.discovery.json etc.)."""
+    keys = []
+    for p in sorted((ROOT / "sites").glob("*.json")):
+        if "." in p.stem:  # e.g. property.discovery, property.megawave-affinity
+            continue
+        keys.append(p.stem)
+    return keys
+
+
+def _niche_config(site: str) -> tuple[pathlib.Path, dict] | None:
+    """Resolve a site's niche.config.json via sites/<site>.json paths.siteConfigJson."""
+    sp = ROOT / "sites" / f"{site}.json"
+    if not sp.exists():
+        return None
+    try:
+        rel = json.loads(sp.read_text(encoding="utf-8"))["paths"]["siteConfigJson"]
+    except (KeyError, json.JSONDecodeError):
+        return None
+    cp = ROOT / rel
+    if not cp.exists():
+        return None
+    return cp, json.loads(cp.read_text(encoding="utf-8"))
+
+
+def _brand_terms(cfg: dict) -> set[str]:
+    """Deny-list-able brand terms from one niche.config.json (lowercased)."""
+    terms = set()
+    for key in ("display_name", "legal_name"):
+        v = (cfg.get(key) or "").strip().lower()
+        if v:
+            terms.add(v)
+    dom = (cfg.get("domain") or "").strip().lower()
+    if dom:
+        terms.add(dom)
+        if dom.startswith("www."):
+            terms.add(dom[4:])
+    return {t for t in terms if t not in BRAND_ALLOWLIST}
+
+
+def _corpus_files(site_dir: pathlib.Path):
+    for sub in ("web/content", "web/src/app"):
+        base = site_dir / sub
+        if not base.exists():
+            continue
+        for f in base.rglob("*"):
+            if f.is_file() and f.suffix.lower() in _BRAND_EXTS:
+                yield f
+
+
+def check_brand_consistency(site: str | None = None):
+    """Brand-consistency lint. HARD GATE.
+
+    (a) the site's own display_name + domain from niche.config.json are wired
+        into the web app (niche-loader / config source references them or the
+        config file itself);
+    (b) NO other estate site's brand/domain literal appears anywhere in this
+        site's content corpus (web/content/** + web/src/app/**) - the medical
+        trap. Shared operating-company strings are allowlisted;
+    (c) no template placeholders in content files.
+    """
+    site = site or SITE
+    resolved = _niche_config(site)
+    if resolved is None:
+        failures.append(f"Brand: cannot resolve niche.config.json for site '{site}' "
+                        "(sites/<site>.json missing paths.siteConfigJson?).")
+        print(f"[FAIL] brand ({site}): niche.config.json unresolvable")
+        return
+    cfg_path, cfg = resolved
+    site_dir = cfg_path.parent
+    own_name = (cfg.get("display_name") or "").strip()
+    own_domain = (cfg.get("domain") or "").strip()
+
+    # (a) config wired: display_name/domain present in config AND the web app
+    # imports niche.config (niche-loader convention).
+    problems_a = []
+    if not own_name or not own_domain:
+        problems_a.append("display_name/domain missing from niche.config.json")
+    loader_hits = [f for f in (site_dir / "web/src").rglob("*.ts*")
+                   if f.is_file() and "niche.config" in f.read_text(encoding="utf-8", errors="ignore")] \
+        if (site_dir / "web/src").exists() else []
+    if not loader_hits:
+        problems_a.append("no web/src file references niche.config.json (config not wired)")
+    if problems_a:
+        failures.append(f"Brand ({site}): own-brand wiring - " + "; ".join(problems_a))
+        print(f"[FAIL] brand ({site}): own-brand wiring")
+        for p in problems_a:
+            print("         " + p)
+    else:
+        print(f"[ok]   brand ({site}): '{own_name}' / {own_domain} wired via niche.config")
+
+    # (b) CRITICAL: deny-list of every OTHER site's brand terms.
+    deny = {}
+    for other in _site_keys():
+        if other == site:
+            continue
+        r = _niche_config(other)
+        if r is None:
+            continue
+        for term in _brand_terms(r[1]) - _brand_terms(cfg):
+            deny[term] = other
+    hits = []
+    for f in _corpus_files(site_dir):
+        try:
+            lines = f.read_text(encoding="utf-8", errors="ignore").splitlines()
+        except OSError:
+            continue
+        for i, line in enumerate(lines, 1):
+            low = line.lower()
+            for term, owner in deny.items():
+                if term in low:
+                    hits.append((f.relative_to(ROOT), i, owner, term))
+    if hits:
+        failures.append(f"Brand ({site}): {len(hits)} cross-brand literal(s) from "
+                        "other estate sites in the corpus - the medical trap. "
+                        "Every hit must be rewritten to this site's brand.")
+        print(f"[FAIL] brand ({site}): {len(hits)} cross-brand hit(s)")
+        for path, ln, owner, term in hits[:20]:
+            print(f"         [{path}:{ln}] {term!r} (belongs to '{owner}')")
+    else:
+        print(f"[ok]   brand ({site}): no cross-brand literals ({len(deny)} deny-list terms)")
+
+    # (c) placeholders in content files.
+    ph = []
+    content_dir = site_dir / "web/content"
+    if content_dir.exists():
+        for f in content_dir.rglob("*"):
+            if not (f.is_file() and f.suffix.lower() in _BRAND_EXTS):
+                continue
+            for i, line in enumerate(f.read_text(encoding="utf-8", errors="ignore").splitlines(), 1):
+                for rx in PLACEHOLDER_PATTERNS:
+                    m = rx.search(line)
+                    if m:
+                        ph.append((f.relative_to(ROOT), i, m.group(0)))
+    if ph:
+        failures.append(f"Brand ({site}): {len(ph)} template placeholder(s) in content files.")
+        print(f"[FAIL] brand ({site}): {len(ph)} placeholder(s)")
+        for path, ln, tok in ph[:20]:
+            print(f"         [{path}:{ln}] {tok!r}")
+    else:
+        print(f"[ok]   brand ({site}): no template placeholders in content")
+
+
+def brand_sweep_all():
+    """Estate-wide cross-brand sweep: run check_brand_consistency for every site."""
+    for site in _site_keys():
+        check_brand_consistency(site)
+
+
 def main():
     print("=" * 60)
     print(f"PRE-DEPLOY GATE ({SITE})" + ("  [--strict]" if STRICT else "")
@@ -453,15 +642,23 @@ def main():
           + ("  [--coverage]" if COVERAGE and not COVERAGE_STRICT else "")
           + ("  [--coverage-strict]" if COVERAGE_STRICT else "")
           + (f"  [--coverage-batch {COVERAGE_BATCH}]" if COVERAGE_BATCH else "")
-          + ("  [--word-count]" if WORD_COUNT else ""))
+          + ("  [--word-count]" if WORD_COUNT else "")
+          + ("  [--brand-only]" if BRAND_ONLY else "")
+          + ("  [--brand-sweep-all]" if BRAND_SWEEP_ALL else ""))
     print("=" * 60)
-    check_links()
-    check_frontmatter()
-    check_word_count()
-    check_em_dashes()
-    check_pricing()
-    check_qa()
-    check_query_coverage()
+    if BRAND_SWEEP_ALL:
+        brand_sweep_all()
+    elif BRAND_ONLY:
+        check_brand_consistency()
+    else:
+        check_links()
+        check_frontmatter()
+        check_word_count()
+        check_em_dashes()
+        check_pricing()
+        check_brand_consistency()
+        check_qa()
+        check_query_coverage()
     print("-" * 60)
     if warnings and not STRICT:
         print("WARNINGS (non-blocking; pass --strict to enforce once swept):")

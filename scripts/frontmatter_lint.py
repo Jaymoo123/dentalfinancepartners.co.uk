@@ -99,7 +99,15 @@ def check_file(p: pathlib.Path) -> str | None:
 def resolve(args) -> list[pathlib.Path]:
     files: list[pathlib.Path] = [pathlib.Path(f) for f in (args.files or [])]
     if args.site:
-        d = pathlib.Path(SITE_BLOG[args.site])
+        blog_dir = SITE_BLOG.get(args.site)
+        if blog_dir is None:
+            # New expansion sites are not in SITE_BLOG; resolve from sites/<site>.json.
+            cfg = pathlib.Path("sites") / f"{args.site}.json"
+            if not cfg.exists():
+                sys.exit(f"unknown site '{args.site}': not in SITE_BLOG and no {cfg}")
+            import json
+            blog_dir = json.loads(cfg.read_text(encoding="utf-8"))["paths"]["blogContentDir"]
+        d = pathlib.Path(blog_dir)
         files += sorted(d.glob("*.md"))
     return files
 
@@ -110,7 +118,7 @@ def main() -> int:
     mode.add_argument("--check", action="store_true")
     mode.add_argument("--fix", action="store_true")
     ap.add_argument("files", nargs="*")
-    ap.add_argument("--site", choices=list(SITE_BLOG))
+    ap.add_argument("--site")  # known keys in SITE_BLOG; new sites resolve via sites/<site>.json
     args = ap.parse_args()
 
     files = resolve(args)

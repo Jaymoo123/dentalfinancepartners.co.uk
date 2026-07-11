@@ -1,4 +1,4 @@
-﻿name: CI - Build & Lint
+name: CI - Build & Lint
 
 # Workspace-correct CI (Phase A / W4a rewrite, 2026-06-10).
 # This repo is an npm-workspaces monorepo with ONE root package-lock.json.
@@ -8,8 +8,12 @@
 # Each job now installs the whole workspace from the root lockfile, then
 # lints / type-checks / tests / builds one site in its own directory.
 #
-# PF-04 net: every site job runs on every push/PR, so a breaking change to
-# packages/web-shared fails the consumer builds here.
+# P0-4 scaling: a `changes` job git-diffs the PR against its base and emits a
+# dynamic matrix (fromJSON) of only the sites whose own directory changed.
+# Any change to shared infra (packages/**, root package.json / lockfile, this
+# workflow, root ts/lint config) — or any push to main — runs the FULL matrix,
+# so a breaking change to packages/web-shared still fails every consumer build.
+# To add a site: append one "site|url" line to SITES in the changes job.
 # `npm run test --if-present` is a green no-op until W4b lands suites.
 
 on:
@@ -19,31 +23,74 @@ on:
     branches: [main]
 
 jobs:
+  changes:
+    name: Detect changed sites
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.detect.outputs.matrix }}
+      any: ${{ steps.detect.outputs.any }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0   # need base-branch history for git diff
+
+      - name: Compute site matrix
+        id: detect
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          set -euo pipefail
+          # Single source of truth for the site matrix: "dir|url" per line.
+          SITES='
+          Dentists|https://dentalfinancepartners.co.uk
+          Property|https://propertytaxpartners.co.uk
+          Medical|https://www.medicalaccounts.co.uk
+          Solicitors|https://www.accountsforlawyers.co.uk
+          generalist|https://www.hollowaydavies.co.uk
+          digital-agency|https://www.agencyfounderfinance.co.uk
+          console|https://console.internal
+          contractors-ir35|https://www.contractortaxaccountants.co.uk
+          construction-cis|https://www.tradetaxspecialists.co.uk
+          '
+
+          FULL=false
+          CHANGED=""
+          if [ "${{ github.event_name }}" != "pull_request" ]; then
+            FULL=true   # push to main: always run everything
+          else
+            git fetch --no-tags --depth=1 origin "$BASE_REF" || true
+            CHANGED=$(git diff --name-only "origin/$BASE_REF"...HEAD)
+            # Shared infra the site builds depend on -> full matrix.
+            if echo "$CHANGED" | grep -qE '^(packages/|package\.json|package-lock\.json|tsconfig|\.github/workflows/ci-build-test\.yml)'; then
+              FULL=true
+            fi
+          fi
+
+          include="["
+          sep=""
+          while IFS='|' read -r site url; do
+            [ -z "$site" ] && continue
+            if [ "$FULL" = true ] || echo "$CHANGED" | grep -q "^$site/"; then
+              include="$include$sep{\"site\":\"$site\",\"url\":\"$url\"}"
+              sep=","
+            fi
+          done <<< "$(echo "$SITES" | sed 's/^ *//')"
+          include="$include]"
+
+          echo "matrix=$include" >> "$GITHUB_OUTPUT"
+          if [ "$include" = "[]" ]; then echo "any=false" >> "$GITHUB_OUTPUT"; else echo "any=true" >> "$GITHUB_OUTPUT"; fi
+          echo "Selected matrix: $include"
+
   test-sites:
     name: Build ${{ matrix.site }}
     runs-on: ubuntu-latest
+    needs: changes
+    if: needs.changes.outputs.any == 'true'
     strategy:
       fail-fast: false
       matrix:
-        include:
-          - site: Dentists
-            url: https://dentalfinancepartners.co.uk
-          - site: Property
-            url: https://propertytaxpartners.co.uk
-          - site: Medical
-            url: https://www.medicalaccounts.co.uk
-          - site: Solicitors
-            url: https://www.accountsforlawyers.co.uk
-          - site: generalist
-            url: https://www.hollowaydavies.co.uk
-          - site: digital-agency
-            url: https://www.agencyfounderfinance.co.uk
-          - site: console
-            url: https://console.internal
-          - site: contractors-ir35
-            url: https://www.contractortaxaccountants.co.uk
-          - site: construction-cis
-            url: https://www.tradetaxspecialists.co.uk
+        include: ${{ fromJSON(needs.changes.outputs.matrix) }}
 
     steps:
       - name: Checkout code
@@ -136,14 +183,19 @@ jobs:
   status-check:
     name: All Tests Passed
     runs-on: ubuntu-latest
-    needs: [test-sites, test-web-shared, test-python]
+    needs: [changes, test-sites, test-web-shared, test-python]
     if: always()
 
     steps:
       - name: Check test results
         run: |
-          if [ "${{ needs.test-sites.result }}" != "success" ] || \
-             [ "${{ needs.test-web-shared.result }}" != "success" ] || \
+          # test-sites is skipped when no site dirs changed on a PR; skipped is OK.
+          if [ "${{ needs.test-sites.result }}" != "success" ] && \
+             [ "${{ needs.test-sites.result }}" != "skipped" ]; then
+            echo "test-sites failed"
+            exit 1
+          fi
+          if [ "${{ needs.test-web-shared.result }}" != "success" ] || \
              [ "${{ needs.test-python.result }}" != "success" ]; then
             echo "One or more test jobs failed"
             exit 1

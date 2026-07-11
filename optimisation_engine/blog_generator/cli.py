@@ -12,6 +12,7 @@ import json
 import sys
 
 from optimisation_engine.blog_generator.generate import generate_blog_for
+from optimisation_engine.blog_generator.site_configs import SITE_CONFIGS
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -19,7 +20,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument(
         "--site",
         required=True,
-        choices=["dentists", "property", "medical", "solicitors", "agency", "generalist", "contractors-ir35", "construction-cis"],
+        choices=sorted(SITE_CONFIGS),  # auto-discovered from site_configs/, new sites need no CLI edit
         help="Which niche site to generate for.",
     )
     p.add_argument(

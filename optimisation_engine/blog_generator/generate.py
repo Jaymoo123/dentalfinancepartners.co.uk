@@ -27,6 +27,37 @@ from optimisation_engine.blog_generator.topic_repository import (
 )
 
 
+# Brand-lock guard (expansion program, medical-trap fix): a NEW site must have
+# `brand_locked: true` in docs/<site>/STATE.md before any content generation,
+# so a post-generation rebrand can never leave a mixed-brand corpus.
+# The 8 sites below were live before the rule existed and are EXEMPT so
+# existing pipelines are not disrupted.
+BRAND_LOCK_EXEMPT = {
+    "property", "dentists", "medical", "solicitors",
+    "generalist", "agency", "contractors-ir35", "construction-cis",
+}
+
+
+def assert_brand_locked(site_key: str) -> None:
+    """Refuse generation for a non-exempt site without brand_locked: true."""
+    if site_key in BRAND_LOCK_EXEMPT:
+        return
+    import re
+    state = ROOT / "docs" / site_key / "STATE.md"
+    if not state.exists():
+        raise RuntimeError(
+            f"Brand-lock guard: {state} does not exist. Create the site's "
+            "STATE.md with 'brand_locked: true' (owner-confirmed brand + "
+            "domain) before generating any content for this site."
+        )
+    if not re.search(r"^\s*brand_locked:\s*true\s*$", state.read_text(encoding="utf-8"), re.M):
+        raise RuntimeError(
+            f"Brand-lock guard: {state} lacks 'brand_locked: true'. Lock the "
+            "brand and domain (owner sign-off) and record it in STATE.md "
+            "before generating content for this site."
+        )
+
+
 def get_site_config(site_key: str) -> dict:
     """Load and validate a site's config dict."""
     from optimisation_engine.blog_generator.site_configs import SITE_CONFIGS
@@ -61,6 +92,7 @@ def generate_blog_for(
 
     Returns a summary dict.
     """
+    assert_brand_locked(site_key)
     config = get_site_config(site_key)
 
     if topic is not None:
