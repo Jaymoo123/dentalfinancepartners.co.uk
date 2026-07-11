@@ -1,8 +1,8 @@
 # Launch core — Pharmacies (R3)
 
-Date: 2026-07-11. Volumes = R2D pulls (2026-07, `../r2d_volumes.json`) — this run made ZERO
-DataForSEO calls (daily guard exhausted); per-page volume enrichment is in DOSSIER
-TODO-paid-pulls. Competitive read = COMPETITORS.md. Positioning per R2 FINAL caveat:
+Date: 2026-07-11. Volumes = R2D pulls (2026-07, `../r2d_volumes.json`) + same-day paid
+enrichment (`raw/dfs_head_volumes.json`, `raw/dfs_keyword_suggestions.json`, DataForSEO
+gl=GB, 2026-07-11 late evening). Competitive read = COMPETITORS.md. Positioning per R2 FINAL caveat:
 **pharmacy BUSINESS owners + NHS contract accounting; locum pharmacists are content only.**
 
 ## Intent split: owner vs locum (the structural decision)
@@ -13,8 +13,10 @@ TODO-paid-pulls. Competitive read = COMPETITORS.md. Positioning per R2 FINAL cav
   recurring compliance + the purchase/sale event. All lead forms, all money pages, all
   segment-specific optional form fields (stores count, items/month, buying or selling) are
   owner-side.
-- **LOCUM (content audience, NO lead funnel at launch).** Measured demand tiny ("locum
-  pharmacist tax" 10/mo R2D) but autocomplete shows a real question cluster ("are locum
+- **LOCUM (content audience, NO lead funnel at launch).** Paid pull CONFIRMS content-only:
+  "accountants for locum pharmacists" 30/mo (CPC £7.79, KD 5) is the whole hire signal; the
+  "locum pharmacist tax ..." family is 10/mo per variant and locum terms are absent from all
+  three rivals' ranked sets. Autocomplete still shows a real question cluster ("are locum
   pharmacists self employed", "locum pharmacist ir35", "locum pharmacist limited company",
   "locum pharmacist how to pay tax"). Serves three jobs: topical authority breadth, the
   take-home comparator tool, and internal links into owner pages (today's locum is tomorrow's
@@ -27,10 +29,14 @@ TODO-paid-pulls. Competitive read = COMPETITORS.md. Positioning per R2 FINAL cav
 ```
 /                          Pharmacy accountants (head 210+210/mo, CPC ~£11.50)
 /for/pharmacy-owners       community pharmacy owners hub (NHS contract economics frame)
-/for/buying-a-pharmacy     THE high-value moment; first-time buyers + locum-to-owner
-/for/selling-a-pharmacy    exit side: BADR/CGT, goodwill, deal structure
+/for/buying-a-pharmacy     THE high-value moment ("buying a pharmacy" 140/mo KD 59,
+                           "buying a pharmacy uk" 70/mo KD 0, CPC £0.84-1.69)
+/for/selling-a-pharmacy    exit side: BADR/CGT, goodwill ("selling a pharmacy" 30/mo
+                           CPC £9.32 KD 7; "pharmacy valuation" 10-20/mo CPC £7.90-15.33;
+                           "pharmacy goodwill" no measured volume)
 /for/pharmacy-groups       multiple-store owners (associated companies, consolidation)
 /for/locum-pharmacists     content hub only — status/IR35/MTD; tool link; no lead form v1
+                           ("accountants for locum pharmacists" 30/mo CPC £7.79 KD 5)
 /calculators/*             fleet per CALCULATORS.md (purchase affordability, FP34 cash-flow,
                            locum take-home first)
 /research/pharmacy-index   UK Community Pharmacy Openings & Closures Index (DATA_ASSET.md)
@@ -51,16 +57,22 @@ of the pool.
    listing side but not the tax/accounting side.
 3. **OPERATOR-PROBLEM** (assist + capture): FP34/NHSBSA payment timing, Drug Tariff/Category M
    margin, pharmacy VAT mix, payroll, fit-out allowances. The "only a specialist writes this"
-   layer; feeds calculators.
+   layer; feeds calculators. Measured heads (2026-07-11): "fp34" 140/mo KD 0, "drug tariff"
+   14,800/mo KD 37 (mostly professional look-up intent — treat as citation/GEO surface, not a
+   money page); "category m clawback" and "pharmacy first payment" return no measured volume
+   (long-tail, autocomplete-real).
 4. **DIY-INFORMATIONAL** (authority + citations + GEO): "do pharmacies pay vat", "are
    pharmacies vat exempt", "do you pay vat on prescriptions", drug tariff month pages,
-   pharmacy first payment. Never the success metric.
+   pharmacy first payment. Never the success metric. Paid pull: both VAT question heads
+   return no measured volume (below Google Ads reporting floor) — value is GEO/answer-box,
+   not tracked-volume traffic.
 
 ## Launch core (26 pages + 3 tools + 1 asset)
 
-**Hubs (6):** homepage + the five /for/* pages above. Heads from R2D; buying/selling volumes
-unmeasured this run (TODO paid pull) but SERP evidence shows dedicated rival pages + broker
-field = demand is real.
+**Hubs (6):** homepage + the five /for/* pages above. Heads from R2D + the 2026-07-11 paid
+pull (volume lines in the architecture block). Note the intent trap in the sell cluster:
+"pharmacy for sale" is 2,400/mo (CPC £0.75, MEDIUM) but that is buyer/broker-listing intent —
+target it only as a supporting angle on /for/buying-a-pharmacy, never as a money head.
 
 **Money/service pages (8):**
 - Pharmacy purchase accounting & due diligence (deal support, finance-ready accounts)

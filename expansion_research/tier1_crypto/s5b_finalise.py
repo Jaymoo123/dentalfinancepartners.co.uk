@@ -13,8 +13,8 @@ Applies Claude's judgment on s5_pool_build.py output:
 Then greedy-cluster keywords into page-level topics (difflib >=0.85 on
 sorted-token norm) and write topic_pool_final.json.
 
-TODO-paid-pulls: after tomorrow's DFS calls land dfs_*.json in raw/, re-run
-s5_pool_build.py then this script; volumes/KD merge automatically.
+Paid pulls landed 2026-07-11: dfs_*.json in raw/ merged via s5_pool_build.py
+re-run then this script; volumes/KD/CPC now populated.
 """
 from __future__ import annotations
 
@@ -64,7 +64,8 @@ def main() -> None:
                 break
         if not placed:
             clusters.append({"head": term, "volume": meta.get("volume"),
-                             "kd": meta.get("kd"), "sources": meta["sources"], "members": [term]})
+                             "kd": meta.get("kd"), "cpc": meta.get("cpc"),
+                             "sources": meta["sources"], "members": [term]})
             norms.append(n)
 
     vol = [c for c in clusters if c["volume"]]
@@ -73,7 +74,7 @@ def main() -> None:
            "junk_removed": len(junk), "junk_terms": junk,
            "clusters_total": len(clusters),
            "clusters_with_volume": len(vol),
-           "note": "no DFS volumes in this run (zero-paid-call constraint); volume fields populate on re-run after tomorrow's paid pulls",
+           "note": "DFS volumes/KD/CPC merged 2026-07-11 (paid pulls: suggestions x8 seeds, ranked x4 rivals, head volumes x26)",
            "clusters": clusters}
     (HERE / "topic_pool_final.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
     print(f"final_keywords={len(pool)} junk={len(junk)} clusters={len(clusters)} with_volume={len(vol)}")

@@ -26,9 +26,11 @@ Last updated: 2026-07-11
 | R2 scoring | **SIGNED OFF 2026-07-11** | Owner approved all 8 Tier-1 sites + charities pilot. Final list `expansion_research/R2_NICHE_SCORES_FINAL.md` (recruitment + creative killed by red-team on intent evidence) |
 | R3 pilot deep research (charities) | done | dossier under `expansion_research/pilot_charities/`; 29 wave1 briefs VERIFIED + committed (figures vs house_positions, all 19 citation URLs live-fetched) |
 | R4 pilot brand shortlist | done, awaiting G1 | RDAP-verified shortlist → owner picks + registers (G1) |
-| R3 crypto | dossier written 2026-07-11, verifier pending | 53 rivals (22 dedicated), 1,219 clusters, 0.05% estate dupes; software (Koinly/Recap) owns DIY head SERPs; paid pulls TODO (~$0.60) |
-| R3 pharmacies | dossier written 2026-07-11, verifier pending | 43 rivals (7 dedicated), 1,214 clusters; medical-adjacency gate documented (medicalaccounts.co.uk ranks in-niche); paid pulls TODO |
-| R3 care | dossier written 2026-07-11, verifier pending | 41 rivals (12 dedicated), 659 clusters, 0.0% estate dupes; 34/34 citations pass; DDG-only SERPs (Serper OUT OF CREDITS); paid pulls TODO (~$0.42) |
+| R3 crypto | **DONE + volume-enriched 2026-07-12** (paid pulls $0.42, folded back) | 53 rivals (22 dedicated); 1,418 clusters (272 with volume); no launch pick falsified; HMRC disclosure = top measured money surface (590/mo KD 0) |
+| R3 pharmacies | **DONE + volume-enriched 2026-07-12** (paid pulls $0.32, folded back, second-agent verified) | 43 rivals (7 dedicated); 1,227 clusters (37 with volume); buying-a-pharmacy 140/mo confirms purchase wedge; lanop cleared as non-threat; locum content-only confirmed |
+| R3 care | **DONE + volume-enriched 2026-07-12** (paid pulls $0.25, folded back) | 41 rivals (12 dedicated); 652 clusters (53 with volume); cqc registration hub 2,900/mo KD 26; FNC calculator promoted to launch tier; dedicated tier nearly invisible in Google — gap thesis strengthened |
+| R3 manufacturing | **DONE, checker VERIFIED-WITH-CORRECTIONS; PARK RECOMMENDED — owner to ratify** | 1 dedicated + 37 institutional SECTION rivals; hire family measured 360/mo (re-check $0.37); skynet earns zero hire-intent traffic; CBAM-cluster home needs a ruling if parked |
+| R3 ecommerce | dossier written 2026-07-12, checker running | 82 rivals (14 dedicated + 21 adjacent incl. tool/SaaS content arms); 2,331 clusters; verdict: hardest field, narrower-deeper wedge (14 pages + 3 tools), build LAST; **collides with generalist's 6 live "Accountant For [ecommerce]" pages — owner migrate-vs-fence ruling needed** |
 
 ## Owner actions needed now
 
@@ -36,7 +38,9 @@ Last updated: 2026-07-11
 2. Add a `VERCEL_TOKEN` to `.env` (needed at first preview deploy, not blocking yet).
 3. ~~G2 niche-list sign-off~~ DONE 2026-07-11 (8 Tier-1 sites).
 4. **Pick the charities brand (G1)** — shortlist `expansion_research/pilot_charities/BRAND_SHORTLIST.md`; re-verify RDAP availability before buying. Blocks pilot content + preview.
-5. **Top up Serper credits** — exhausted 2026-07-11 (all calls 400); blocks estate-wide SERP sweeps and the remaining Tier-1 dossiers' Google legs.
+5. **Top up Serper credits** — exhausted 2026-07-11 (all calls 400); blocks estate-wide SERP sweeps and the dossiers' Google re-sweep TODOs (manufacturing/ecommerce R3 ran DDG-only).
+
+Resolved 2026-07-11 late: stray commit 3a165133 confirmed by owner as his own (other session) — no merge blocker. DataForSEO daily guard ruled automated-only; interactive runs may lift via `DATAFORSEO_ABORT_AT` env (owner ruling; sub-agent ban unchanged).
 
 ## Sites
 

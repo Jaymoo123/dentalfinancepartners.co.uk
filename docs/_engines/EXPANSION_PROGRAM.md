@@ -23,7 +23,7 @@ S1 brand lock (G1, owner) → S2 scaffold → S3 research pack seeded (G2, owner
 6. Nurture ships configured but DISABLED on new sites.
 7. Preview hygiene: canonicals point at the future production domain, never *.vercel.app; GSC/IndexNow strictly post-domain-attach.
 8. Pre-attach refresh: on domain-purchase day, run the rates-ledger lint + dated-reference sweep before DNS attach.
-9. Cost guards are manager-owned: sub-agents must NEVER raise DATAFORSEO_ABORT_AT or any spend ceiling themselves, even process-locally. If a guard blocks a planned call, stop and report. (Rule added 2026-07-11 after two dossier agents raised the daily guard in-process; spend was small and documented, but the precedent is banned.)
+9. Cost guards are manager-owned: sub-agents must NEVER raise DATAFORSEO_ABORT_AT or any spend ceiling themselves, even process-locally. If a guard blocks a planned call, stop and report. (Rule added 2026-07-11 after two dossier agents raised the daily guard in-process; spend was small and documented, but the precedent is banned.) Owner ruling 2026-07-11 (late): the $0.85/day default exists for AUTOMATED runs only; for interactive manager-driven research the manager may lift it via the `DATAFORSEO_ABORT_AT` env var (now env-overridable in `optimisation_engine/config.py`), spending thoughtfully what the research needs. The sub-agent ban stands.
 
 ## Git + tranches
 

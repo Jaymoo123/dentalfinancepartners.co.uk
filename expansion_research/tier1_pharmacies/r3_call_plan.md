@@ -14,8 +14,10 @@ exhausted by earlier sessions; ceiling is manager-owned and was NOT raised).
 | Direct fetches (rivals, citations, sitemaps) | free | $0 |
 | Live web search (finish session: verify lanop, 3esaccountants, accountant4pharmacists) | 3 | $0 |
 | Finish session (2026-07-11 late): DataForSEO / Serper | **0 / 0** | $0 |
+| Enrichment batch (2026-07-11 late evening, manager-direct, owner-authorised; guard lifted by owner ruling for interactive runs, DATAFORSEO_ABORT_AT untouched): keyword_suggestions ×8 seeds + ranked_keywords ×3 rivals + search_volume ×11 heads | 12 tasks | **$0.3169** |
 
-## Planned paid pulls for tomorrow (run when the daily guard resets)
+## Paid pulls — DONE 2026-07-11
 
-See DOSSIER.md "TODO — paid pulls" for the exact task list (same content, kept there so the
-next session finds it with the dossier).
+The planned pulls ran and landed in `raw/` (dfs_keyword_suggestions.json, dfs_ranked_*.json,
+dfs_head_volumes*.json); s5/s5b rerun and DOSSIER/LAUNCH_CORE/CALCULATORS/TOPICS enriched
+same evening. See DOSSIER.md "Paid pulls — DONE".

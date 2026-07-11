@@ -1,12 +1,10 @@
-"""R3 tier1 crypto — Stage 5: union topic pool + estate dedup gate.
+"""R3 tier1 manufacturing — Stage 5: union topic pool + estate dedup gate (HARD).
 
-Sources: autocomplete_raw.json, rival_sitemaps.json (slug-derived topics),
-plus DataForSEO raw files (dfs_ranked_keywords / dfs_keyword_suggestions /
-dfs_head_volumes, landed 2026-07-11) which carry volume/KD/CPC.
-Dedup: exact-normalised + fuzzy (difflib, token-overlap prefilter) vs
-(a) estate sitemap slugs (own_estate_exclusion.json), (b) estate_blog_topics.json.
-Property-CGT adjacency is the known collision surface — borderline pairs kept for judgment.
-Outputs: topic_pool.json.
+Adapted from tier1_care/s5_pool_build.py. FREE SOURCES ONLY: autocomplete +
+rival sitemaps (no DFS files — TODO-paid-pulls will add them later).
+Dedup vs ENTIRE estate. Borderline pairs left for Claude judgment.
+Flags contractors-ir35 / construction-cis adjacency terms (R&D-generic, IR35, CIS)
+for exclusion review — the adjacency walls this niche must police.
 """
 from __future__ import annotations
 
@@ -24,17 +22,33 @@ STOP = {"the", "a", "an", "for", "of", "to", "in", "on", "and", "or", "is", "are
         "can", "do", "does", "how", "what", "when", "uk", "your", "you", "my", "we"}
 
 JUNK_RE = re.compile(
-    r"canada|\bnz\b|australia|ireland(?!.*northern)|\busa\b|american|india|germany|"
-    r"\birs\b|form 8949|jobs?\b|vacanc|course|degree|internship|login|sign in|near me|"
-    r"price prediction|should i buy|best crypto to|how to buy|coinbase fees|binance fees|"
-    r"instagram|facebook|reddit|meaning|definition|wikipedia|movie|film|lyrics", re.I)
+    r"canada|\bnz\b|australia|ireland(?!.*northern)|\busa\b|american|india|dubai|pakistan|"
+    r"jobs?\b|salary|salaries|vacanc|career|course|degree|diploma|qualification|apprentice|"
+    r"login|near me|quickbooks|freshbooks|netsuite|\bsap\b|\berp\b|odoo|katana|mrpeasy|"
+    r"instagram|facebook|tiktok|recruitment agency|cv\b|interview|"
+    # definition/homework intent (student accounting-theory queries, not hire intent)
+    r"journal entr|double entry|t account|quizlet|exam|acca paper|aat level|"
+    r"formula sheet|questions and answers", re.I)
 
+# manufacturing/engineering-provider-scope relevance gate
 SCOPE_RE = re.compile(
-    r"crypto|bitcoin|\bbtc\b|ethereum|\beth\b|defi|\bnft\b|staking|mining|airdrop|"
-    r"altcoin|token|blockchain|web3|stablecoin|binance|coinbase|kraken|koinly|"
-    r"day trad|forex|spread bet|\bcfd\b|trader tax|trading tax|"
-    r"section 104|share pool|bed and breakfast|nudge letter|disclosure|"
-    r"digital asset|wallet", re.I)
+    r"manufactur|engineering|engineers?\b|factory|factories|fabricat|\bcnc\b|machin(?:e|ing|ery)|"
+    r"tooling|plant and machinery|plant & machinery|patent box|capital allowance|"
+    r"full expensing|annual investment allowance|first.?year allowance|writing down|"
+    r"r ?& ?d|r and d|research and development|work.?in.?progress|\bwip\b|stock valuation|"
+    r"inventory|standard cost|absorption cost|job costing|process costing|overhead|"
+    r"\bcbam\b|carbon border|export|customs|tariff|aerospace|automotive|food and drink|"
+    r"industrial|production|made in (?:uk|britain)|steel|foundry|injection mould|"
+    r"asset finance|hire purchase machinery|energy intensive", re.I)
+
+# adjacency watch: terms that would erode the contractors-ir35 / construction-cis /
+# generalist walls (generic R&D with no manufacturing qualifier, IR35, CIS)
+ADJACENCY_RE = re.compile(
+    r"\bir35\b|personal service compan|umbrella compan|\bcis\b|construction industry scheme|"
+    r"subcontractor|contractor\b", re.I)
+MFG_QUALIFIER_RE = re.compile(
+    r"manufactur|engineering|factory|fabricat|cnc|machin|tooling|aerospace|automotive|"
+    r"industrial|food|steel|foundry|production", re.I)
 
 
 def norm(s: str) -> str:
@@ -69,34 +83,21 @@ def load_estate_titles() -> list[str]:
 def collect_pool() -> dict[str, dict]:
     pool: dict[str, dict] = {}
 
-    def add(term: str, src: str, meta: dict | None = None) -> None:
+    def add(term: str, src: str) -> None:
         term = re.sub(r"\s+", " ", term.strip().lower())
         if len(term) < 6 or JUNK_RE.search(term):
             return
         if not SCOPE_RE.search(term):
             return
-        row = pool.setdefault(term, {"sources": [], "volume": None, "kd": None, "cpc": None})
-        row.setdefault("cpc", None)
+        adjacent = bool(ADJACENCY_RE.search(term)) or (
+            bool(re.search(r"r ?& ?d|r and d|research and development", term))
+            and not MFG_QUALIFIER_RE.search(term))
+        row = pool.setdefault(term, {"sources": [], "adjacency_flag": adjacent})
         row["sources"].append(src)
-        if meta:
-            for f in ("volume", "kd", "cpc"):
-                if meta.get(f) is not None:
-                    row[f] = meta[f]
 
     ac = json.loads((RAW / "autocomplete_raw.json").read_text(encoding="utf-8"))
     for s in ac["unique_suggestions"]:
         add(s, "autocomplete")
-
-    # Paid pulls landed 2026-07-11: ranked/suggestions/head volumes merge here.
-    for fname, src in (("dfs_ranked_keywords.json", "ranked_keywords"),
-                       ("dfs_keyword_suggestions.json", "keyword_suggestions"),
-                       ("dfs_head_volumes.json", "head_volumes")):
-        p = RAW / fname
-        if not p.exists():
-            continue
-        for kw in json.loads(p.read_text(encoding="utf-8")):
-            add(kw["keyword"], src, {"volume": kw.get("volume"), "kd": kw.get("kd"),
-                                     "cpc": kw.get("cpc")})
 
     sm = RAW / "rival_sitemaps.json"
     if sm.exists():
@@ -112,7 +113,7 @@ def main() -> None:
     pool = collect_pool()
     estate_titles = load_estate_titles()
     estate_norm = {norm(t) for t in estate_titles if t}
-    estate_list = [(t, norm(t), set(norm(t).split())) for t in estate_titles if t]
+    estate_list = [(t, norm(t)) for t in estate_titles if t]
 
     kept, dropped_exact, dropped_fuzzy, borderline = {}, [], [], []
     for term, meta in pool.items():
@@ -121,15 +122,8 @@ def main() -> None:
             dropped_exact.append(term)
             continue
         best_ratio, best_match = 0.0, None
-        ntoks = set(n.split())
-        sm = difflib.SequenceMatcher(None, "", n)
-        for orig, en, etoks in estate_list:
-            if not (ntoks & etoks):
-                continue
-            sm.set_seq1(en)
-            if sm.real_quick_ratio() < 0.78 or sm.quick_ratio() < 0.78:
-                continue
-            r = sm.ratio()
+        for orig, en in estate_list:
+            r = difflib.SequenceMatcher(None, n, en).ratio()
             if r > best_ratio:
                 best_ratio, best_match = r, orig
         if best_ratio >= 0.90:
@@ -149,12 +143,14 @@ def main() -> None:
             seen[n] = term
             final[term] = meta
 
+    adj = [t for t, m in final.items() if m.get("adjacency_flag")]
     out = {"raw_pool_size": len(pool), "estate_titles_checked": len(estate_titles),
            "kept": final, "dropped_exact": dropped_exact,
-           "dropped_fuzzy": dropped_fuzzy, "borderline_for_judgment": borderline}
+           "dropped_fuzzy": dropped_fuzzy, "borderline_for_judgment": borderline,
+           "adjacency_flagged": adj}
     (HERE / "topic_pool.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
     print(f"raw={len(pool)} kept={len(final)} exact_dropped={len(dropped_exact)} "
-          f"fuzzy_dropped={len(dropped_fuzzy)} borderline={len(borderline)}")
+          f"fuzzy_dropped={len(dropped_fuzzy)} borderline={len(borderline)} adj={len(adj)}")
 
 
 if __name__ == "__main__":

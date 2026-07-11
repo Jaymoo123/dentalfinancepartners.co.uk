@@ -45,8 +45,11 @@ if not SUPABASE_URL or not SUPABASE_KEY:
 
 # Hard stops. The cost tracker refuses to make a paid call that would push the
 # running total over DATAFORSEO_ABORT_AT.
+# Owner ruling 2026-07-11: the $0.85/day default exists for AUTOMATED runs;
+# interactive/manager-driven research may override via the env var. Sub-agents
+# still must never set it themselves.
 DATAFORSEO_CEILING_USD: float = 1.00
-DATAFORSEO_ABORT_AT: float = 0.85
+DATAFORSEO_ABORT_AT: float = float(os.environ.get("DATAFORSEO_ABORT_AT", "0.85"))
 
 # Per-site allocations for the first run (priority order from the brief).
 # These are SOFT ceilings used by the planner; the abort-at value above is the
