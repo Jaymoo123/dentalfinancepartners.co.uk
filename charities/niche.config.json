@@ -1,7 +1,20 @@
 {
   "niche_id": "charities",
   "display_name": "BRAND_TBD Charity Accountancy",
-  "legal_name": "BRAND_TBD Charity Accountancy Ltd",
+  "legal_name": "Ashfield Trading Ltd",
+  "partner": null,
+  "company": {
+    "number": "16358723",
+    "place_of_registration": "England and Wales",
+    "registered_office": {
+      "line1": "20 Ashfield Avenue",
+      "line2": "Shipley",
+      "city": "Bradford",
+      "postcode": "BD18 3AL"
+    },
+    "vat_number": null,
+    "enquiry_retention_months": 24
+  },
   "domain": "www.brand-tbd-charities.invalid",
   "tagline": "UK charities, CICs and social enterprises: accounts, independent examination, Gift Aid, VAT and trustee compliance",
   "description": "UK charities, CICs and social enterprises: accounts, independent examination, Gift Aid, VAT and trustee compliance",
@@ -15,8 +28,121 @@
     "phone": "+44 20 0000 0000"
   },
   "navigation": [
-    {"label": "Services", "href": "/services"},
-    {"label": "About", "href": "/about"},
-    {"label": "Contact", "href": "/contact"}
-  ]
+    {
+      "label": "Services",
+      "href": "/services"
+    },
+    {
+      "label": "Calculators",
+      "href": "/calculators"
+    },
+    {
+      "label": "Research",
+      "href": "/research/uk-small-charity-finance-index"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "footer_links": [
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Privacy Policy",
+      "href": "/privacy-policy"
+    }
+  ],
+  "locations": [],
+  "content_strategy": {
+    "audience": "UK charity trustees, finance officers, charity CEOs, CIC directors and treasurers",
+    "categories": [
+      "Charity Accounts and SORP",
+      "Independent Examination and Audit",
+      "Gift Aid",
+      "Charity VAT",
+      "Trustee Compliance",
+      "CICs and Social Enterprises"
+    ],
+    "supabase_table": "blog_topics",
+    "site_key": "charities",
+    "source_identifier": "charities"
+  },
+  "seo": {
+    "locale": "en_GB",
+    "organization_type": "AccountingService",
+    "service_areas": [
+      "United Kingdom"
+    ],
+    "google_analytics_id": "",
+    "theme_color": "#1a5c4a",
+    "search_console_verification": {
+      "google": "",
+      "bing": "",
+      "yandex": "",
+      "naver": "",
+      "pinterest": ""
+    }
+  },
+  "lead_form": {
+    "role_label": "I am a...",
+    "role_options": [
+      {
+        "value": "Trustee",
+        "label": "Trustee"
+      },
+      {
+        "value": "Finance officer/manager",
+        "label": "Finance officer or finance manager"
+      },
+      {
+        "value": "Charity CEO",
+        "label": "Charity CEO"
+      },
+      {
+        "value": "CIC director",
+        "label": "CIC director"
+      },
+      {
+        "value": "Treasurer",
+        "label": "Treasurer"
+      },
+      {
+        "value": "Other",
+        "label": "Other"
+      }
+    ],
+    "placeholders": {
+      "name": "Alex Smith",
+      "email": "alex@yourcharity.org.uk",
+      "phone": "07700 000000",
+      "message": "e.g. We need an independent examination for our year end, or help with a Gift Aid claim..."
+    }
+  },
+  "cta": {
+    "sticky_primary": "Speak to a charity accounts specialist",
+    "sticky_secondary": "Free, no-obligation reply within 24 hours",
+    "sticky_button": "Get in touch"
+  },
+  "blog": {
+    "cta_heading": "Need help with your charity's accounts?",
+    "cta_body": "Tell us about your charity, CIC or social enterprise and we will come back within 24 hours.",
+    "cta_button": "Get in touch"
+  },
+  "shared_components_version": "1.0.0",
+  "last_sync": null
 }

@@ -483,6 +483,8 @@ PLACEHOLDER_PATTERNS = [
     re.compile(r"\bTODO\b"),
     re.compile(r"\{\{"),
     re.compile(r"\bLorem\b", re.I),
+    re.compile(r"\bBRAND_TBD\b"),      # pre-G1 brand placeholder (expansion program)
+    re.compile(r"\.invalid\b"),        # pre-G1 placeholder domain TLD
 ]
 
 
@@ -608,11 +610,15 @@ def check_brand_consistency(site: str | None = None):
     else:
         print(f"[ok]   brand ({site}): no cross-brand literals ({len(deny)} deny-list terms)")
 
-    # (c) placeholders in content files.
+    # (c) placeholders in content files + the site's niche.config.json
+    # (config is where pre-G1 BRAND_TBD/.invalid placeholders live).
     ph = []
-    content_dir = site_dir / "web/content"
-    if content_dir.exists():
-        for f in content_dir.rglob("*"):
+    scan_targets = [site_dir / "web/content"]
+    cfg_file = site_dir / "niche.config.json"
+    for target in scan_targets:
+        if not target.exists():
+            continue
+        for f in target.rglob("*"):
             if not (f.is_file() and f.suffix.lower() in _BRAND_EXTS):
                 continue
             for i, line in enumerate(f.read_text(encoding="utf-8", errors="ignore").splitlines(), 1):
@@ -620,6 +626,16 @@ def check_brand_consistency(site: str | None = None):
                     m = rx.search(line)
                     if m:
                         ph.append((f.relative_to(ROOT), i, m.group(0)))
+    # Config scan: only the pre-G1 brand placeholders. Phone placeholders in
+    # config are a known, tracked owner step on live sites (e.g. contractors-ir35)
+    # and must not retroactively block their deploys.
+    _CFG_PATTERNS = [re.compile(r"\bBRAND_TBD\b"), re.compile(r"\.invalid\b")]
+    if cfg_file.exists():
+        for i, line in enumerate(cfg_file.read_text(encoding="utf-8", errors="ignore").splitlines(), 1):
+            for rx in _CFG_PATTERNS:
+                m = rx.search(line)
+                if m:
+                    ph.append((cfg_file.relative_to(ROOT), i, m.group(0)))
     if ph:
         failures.append(f"Brand ({site}): {len(ph)} template placeholder(s) in content files.")
         print(f"[FAIL] brand ({site}): {len(ph)} placeholder(s)")

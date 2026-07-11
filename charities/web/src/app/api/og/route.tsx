@@ -1,10 +1,14 @@
 import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";
+import { niche } from "@/config/niche-loader";
 
 export const runtime = "edge";
 
+// Brand name + domain flow from niche.config.json (BRAND_TBD swaps at G1 in one place).
+const bareDomain = niche.domain.replace(/^www\./, "");
+
 export async function GET(req: NextRequest) {
-  const title = req.nextUrl.searchParams.get("title") ?? "BRAND_TBD Charity Accountancy";
+  const title = req.nextUrl.searchParams.get("title") ?? niche.display_name;
   return new ImageResponse(
     (
       <div
@@ -22,9 +26,9 @@ export async function GET(req: NextRequest) {
           {title}
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-          <div style={{ width: 24, height: 24, borderRadius: 6, background: "#1a5c4a", display: "flex" }} />
-          <span style={{ fontSize: 28, fontWeight: 600, color: "#334155" }}>BRAND_TBD Charity Accountancy</span>
-          <span style={{ fontSize: 24, color: "#64748b", marginLeft: "auto" }}>brand-tbd-charities.invalid</span>
+          <div style={{ width: 24, height: 24, borderRadius: 6, background: niche.brand.primary_color, display: "flex" }} />
+          <span style={{ fontSize: 28, fontWeight: 600, color: "#334155" }}>{niche.display_name}</span>
+          <span style={{ fontSize: 24, color: "#64748b", marginLeft: "auto" }}>{bareDomain}</span>
         </div>
       </div>
     ),

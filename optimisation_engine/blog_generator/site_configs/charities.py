@@ -38,7 +38,80 @@ SITE_CONFIG: dict = {
     "post_categories": [],
     "internal_link_slugs": [],
     "anchor_terms": [],
-    "hallucination_zones": [],
+    # Charity-law danger zones. Every figure below is anchored in
+    # docs/charities/house_positions.md (citation + verification date there).
+    # Writers must verify against house positions, never from memory.
+    "hallucination_zones": [
+        (
+            "External scrutiny thresholds (England & Wales, verify against house positions 3-5):"
+            " independent examination required once gross income exceeds £25,000."
+            " Statutory audit required when gross income exceeds £1m, OR income exceeds £250,000"
+            " AND gross assets exceed £3.26m. Where income exceeds £250,000 the independent"
+            " examiner must belong to a listed body (ICAEW, ICAS, ACCA, AAT, CIPFA, ACIE etc.)"
+            " and accruals accounts are required. Governing-document/funder clauses can force an"
+            " audit below the thresholds. SCOTLAND DIFFERS: OSCR requires external scrutiny for"
+            " ALL Scottish charities regardless of size; never present E&W thresholds as UK-wide."
+        ),
+        (
+            "Gift Aid rates (verify against house positions 14, 19): the charity claims 25p per £1"
+            " donated (basic-rate tax on the gross: £100 gift -> £125 gross -> £25 claim)."
+            " Higher-rate (40%) donors personally reclaim 20% of the gross (£25 on a £100 gift);"
+            " additional-rate (45%) donors reclaim 25% of the gross (£31.25). Donor must have paid"
+            " at least the reclaimed amount in UK income/capital gains tax. Never invent other"
+            " percentages, and never say the DONOR gets the 25p."
+        ),
+        (
+            "GASDS caps (verify against house position 17): small donations of £30 or less each,"
+            " cash or contactless only; claim on up to £8,000 of donations per tax year (max top-up"
+            " £2,000 at 25%); matching rule limits GASDS donations to 10x the donations Gift Aid is"
+            " claimed on the same year; claims within 2 YEARS (not Gift Aid's 4). Community-buildings"
+            " and connected-charity rules: describe and link to HMRC guidance, never compute."
+        ),
+        (
+            "Small trading exemption (verify against house position 12): three tiers by charity"
+            " gross income: under £32,000 -> £8,000 max non-primary trading turnover;"
+            " £32,000-£320,000 -> 25% of income; over £320,000 -> £80,000 cap. Exceeding the limit"
+            " taxes ALL profits of that trade, not just the excess. Primary-purpose trading is"
+            " exempt without limit."
+        ),
+        (
+            "Charity VAT reliefs (verify against house position 20): there is NO blanket VAT"
+            " exemption for charities. Specific reliefs only: zero-rated advertising supplied to a"
+            " charity, 5% reduced rate on fuel and power for non-business use, exempt one-off"
+            " fundraising events (max 15 of the same kind per year, Notice 701/1). Normal £90,000"
+            " registration threshold applies. Never write 'charities don't pay VAT'."
+        ),
+        (
+            "CIC boundary (verify against house positions 22-24): a CIC is NOT a charity, gets no"
+            " Gift Aid and no charitable rate relief, and pays corporation tax normally. Regulated"
+            " by the CIC Regulator, not the Charity Commission. Do NOT state the CIC34 filing fee"
+            " (open flag in house positions until re-verified)."
+        ),
+        (
+            "Registration/reporting gates (verify against house positions 1-2): Commission"
+            " registration once income exceeds £5,000 (CIOs always register); ALL registered"
+            " charities file an annual return within 10 months of year end, with content tiered at"
+            " £10,000 and £25,000. SORP 2026 applies to accounting periods beginning on or after"
+            " 1 January 2026: date every SORP statement to the accounting period, never 'the new"
+            " rules', and do not state SORP tier thresholds (open flag)."
+        ),
+        (
+            "Charity payroll (verify against house position 27): employer NIC 15% above the £5,000"
+            " secondary threshold (2026/27); Employment Allowance up to £10,500, charities eligible."
+            " The old 13.8%/£9,100 figures are STALE."
+        ),
+    ],
+    "banned_phrases": [
+        "charities don't pay VAT",
+        "charities do not pay VAT",
+        "charities are exempt from VAT",
+        "VAT exempt as a charity",
+        "CICs can claim Gift Aid",
+        "audit threshold of £500,000",
+        "the new SORP rules",
+        "13.8%",
+        "£9,100",
+    ],
     "blog_system_prompt": """You are an expert UK accountant writing for UK charities, CICs and social enterprises: accounts, independent examination, Gift Aid, VAT and trustee compliance.""".strip(),
 
     "seo_persona": {
