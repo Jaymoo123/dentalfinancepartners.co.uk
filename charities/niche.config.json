@@ -1,0 +1,22 @@
+{
+  "niche_id": "charities",
+  "display_name": "BRAND_TBD Charity Accountancy",
+  "legal_name": "BRAND_TBD Charity Accountancy Ltd",
+  "domain": "www.brand-tbd-charities.invalid",
+  "tagline": "UK charities, CICs and social enterprises: accounts, independent examination, Gift Aid, VAT and trustee compliance",
+  "description": "UK charities, CICs and social enterprises: accounts, independent examination, Gift Aid, VAT and trustee compliance",
+  "brand": {
+    "primary_color": "#1a5c4a",
+    "logo_path": "/brand/logo.png",
+    "publisher_logo_url": "/api/og"
+  },
+  "contact": {
+    "email": "hello@brand-tbd-charities.invalid",
+    "phone": "+44 20 0000 0000"
+  },
+  "navigation": [
+    {"label": "Services", "href": "/services"},
+    {"label": "About", "href": "/about"},
+    {"label": "Contact", "href": "/contact"}
+  ]
+}

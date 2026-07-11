@@ -16,7 +16,8 @@
     "digital-agency/web",
     "contractors-ir35/web",
     "construction-cis/web",
-    "console/web"
+    "console/web",
+    "charities/web"
   ],
   "engines": {
     "node": ">=20"

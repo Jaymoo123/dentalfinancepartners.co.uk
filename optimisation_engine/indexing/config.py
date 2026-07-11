@@ -14,6 +14,10 @@ To add a new site:
 from __future__ import annotations
 
 SITE_INDEXNOW_CONFIG: dict[str, dict[str, str]] = {
+    "charities": {
+        "host": "www.brand-tbd-charities.invalid",
+        "key": "e2d3a266cb49bd2ff8761a6db2a4d7a4",
+    },
     "dentists": {
         "host": "www.dentalfinancepartners.co.uk",
         "key": "0d90ff23794225ef49bd56fdaad369f1",

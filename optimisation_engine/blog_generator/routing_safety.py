@@ -31,6 +31,7 @@ EXPECTED_SITE_PREFIXES: dict[str, str] = {
     "solicitors": "Solicitors",
     "agency": "digital-agency",
     "generalist": "generalist",
+    "charities": "charities",
     "contractors-ir35": "contractors-ir35",
     "construction-cis": "construction-cis",
 }
