@@ -1,9 +1,25 @@
 # Calculator candidates — Ecommerce / Amazon sellers (R3)
 
 Date: 2026-07-12. Pattern: property calculator fleet (config-driven, 1 file + 1 import per
-tool). **No volumes/KD this run (zero DataForSEO by rule)** — ranking below is
-gap/precedent-based; re-score with the paid pulls in DOSSIER.md "TODO — paid pulls".
-All cited rates verified live via `s6_citation_check.py` (32/32 pass).
+tool). **RE-SCORED WITH MEASURED VOLUMES/KD/CPC 2026-07-12** (paid pulls, $0.3677) —
+launch-tier membership unchanged, evidence and ordering updated below. All cited rates
+verified live via `s6_citation_check.py` (32/32 pass).
+
+## Measured calculator demand (DFS 2026-07-12)
+
+52 calculator keywords returned. The measured surface: "ebay price calculator" 5,400
+KD 19 CPC £4.19; "ebay uk fee(s) calculator" 2,900 + 2,900 + 720 + "ebay calculator uk"
+1,600; "ltd company tax calculator" / "calculate limited company tax" 1,600 KD 0 CPC £4.53;
+"etsy fee calculator" 720 KD 0; "amazon fee calculator" 390 KD 21. marginwise.co.uk's
+entire ranked surface is 78 UK keywords (13 top-10, 4 top-3: etsy fee calculator uk
+320/260-vol variants at #3, "ebay price calculator" 5,400 at #10, plus vinted/depop fee
+calcs at 110/70) — a single-tool standalone reaches top-3 on mid-volume fee-calc terms,
+which both (a) confirms fee-calc SERPs are winnable by small sites and (b) shows the fee-only
+layer's ceiling: 78 keywords total. The joined fee+tax wedge inherits the winnability
+without the ceiling. Ordering consequence: eBay/Etsy variants of the take-home calculator
+carry more measured demand (5,400/2,900-vol fee families) than the Amazon variant (390) —
+build tool 1 platform-parameterised, Amazon-first for lead value (CPC £37.56 on
+"amazon fba accountant") but eBay/Etsy skins in the same config file.
 
 ## Rival tool precedent (verified this run — and it is heavy, unlike care)
 
@@ -26,7 +42,15 @@ This niche is the OPPOSITE of care's tool vacuum. Verified live this run:
 marketplace fees to UK TAX — which none of the tool sites do (they stop at fees) and the
 firms don't do interactively (they stop at prose).
 
-## Launch tier (build with the site) — gap-scored, pending volume re-score
+## Launch tier (build with the site) — gap-scored + volume re-scored 2026-07-12
+
+Per-tool measured lines: (1) take-home/true-margin — no direct "take home"/"margin"
+calculator queries returned; demand proxied by the fee-calc families above (eBay 5,400 head)
++ HIRE CPCs; gap-play, not query-play. (2) VAT threshold tracker — "i didn't realise i went
+over the vat threshold" 210 KD 0 CPC £3.36 + "ltd company vat threshold" 210-vol variants ×3;
+exact-error-intent confirmed. (3) ST-vs-Ltd for sellers — "ltd company tax calculator" 1,600
+KD 0 CPC £4.53: the strongest measured tool term in the set; generic term though, so the
+adjacency wall with the generalist site applies at metadata level too.
 
 1. **Seller take-home / true-margin calculator (Amazon UK)** — revenue → referral fee +
    FBA fee inputs → VAT treatment (registered vs not; reverse-charge on fees per Notice

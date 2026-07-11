@@ -15,7 +15,11 @@ Applies Claude's judgment to s5_pool_build.py output (2026-07-12):
    (best-software/alternatives/QuickBooks-how-tos), programmatic numbered-slug and
    hash-slug artefacts from rival sitemaps.
 Then greedy-cluster into page-level topics (difflib >=0.85 on sorted-token norm).
-No volumes/KD this run (zero DataForSEO) — fields left null for the paid pull.
+
+Paid pulls landed 2026-07-12 (manager-direct): raw/dfs_keyword_suggestions.json (9 seeds)
++ raw/dfs_ranked_keywords.json (4 rival domains) joined here on exact lowercase keyword
+(ponytail: exact-match join, s5 re-run avoided — its difflib pass takes ~40 min);
+clusters now seeded volume-desc like the crypto/care s5b.
 """
 from __future__ import annotations
 
@@ -73,6 +77,20 @@ def main() -> None:
     for t in junk:
         pool.pop(t)
 
+    # join DFS volumes/KD/CPC (exact lowercase keyword match across both flat files)
+    dfs: dict[str, dict] = {}
+    for fn in ("dfs_keyword_suggestions.json", "dfs_ranked_keywords.json"):
+        for row in json.loads((HERE / "raw" / fn).read_text(encoding="utf-8")):
+            k = row["keyword"].strip().lower()
+            if k not in dfs or (row.get("volume") or 0) > (dfs[k].get("volume") or 0):
+                dfs[k] = row
+    matched = 0
+    for term, meta in pool.items():
+        row = dfs.get(term.strip().lower())
+        if row:
+            meta["volume"], meta["kd"], meta["cpc"] = row.get("volume"), row.get("kd"), row.get("cpc")
+            matched += 1
+
     # flag (keep) terms colliding with the generalist ecommerce pages
     gnorms = [norm(g) for g in GENERALIST_TITLES]
     conflicts = []
@@ -84,34 +102,41 @@ def main() -> None:
                 pool[term]["estate_conflict"] = g
                 break
 
-    # greedy clustering into page-level topics (no volume ordering this run)
+    # greedy clustering into page-level topics, seeded volume-desc (crypto/care pattern)
     clusters: list[dict] = []
     norms: list[str] = []
-    for term, meta in sorted(pool.items()):
+    for term, meta in sorted(pool.items(), key=lambda kv: (-(kv[1].get("volume") or 0), kv[0])):
         n = norm(term)
         placed = False
         for i, cn in enumerate(norms):
             if difflib.SequenceMatcher(None, n, cn).ratio() >= 0.85:
                 clusters[i]["members"].append(term)
+                clusters[i]["volume"] = max(clusters[i]["volume"] or 0, meta.get("volume") or 0) or None
                 placed = True
                 break
         if not placed:
-            clusters.append({"head": term, "volume": None, "kd": None,
+            clusters.append({"head": term, "volume": meta.get("volume"),
+                             "kd": meta.get("kd"), "cpc": meta.get("cpc"),
                              "sources": meta["sources"], "members": [term],
                              "estate_conflict": meta.get("estate_conflict")})
             norms.append(n)
 
+    vol = [c for c in clusters if c["volume"]]
     out = {"generated": "2026-07-12",
            "keyword_pool_final": len(pool),
            "junk_removed": len(junk), "junk_terms": sorted(junk),
            "estate_conflict_flagged": conflicts,
            "restored": [], "confirmed_estate_dupes":
                d["dropped_exact"] + [x["term"] for x in d["dropped_fuzzy"]],
+           "dfs_keywords_matched": matched,
            "topic_cluster_count": len(clusters),
+           "clusters_with_volume": len(vol),
+           "note": "DFS volumes/KD/CPC joined 2026-07-12 (paid pulls: suggestions x9 seeds, ranked x4 rivals); volume-desc cluster seeding",
            "clusters": clusters}
     (HERE / "topic_pool_final.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
-    print(f"keywords={len(pool)} junk_removed={len(junk)} "
-          f"estate_conflicts={len(conflicts)} topics={len(clusters)}")
+    print(f"keywords={len(pool)} junk_removed={len(junk)} dfs_matched={matched} "
+          f"estate_conflicts={len(conflicts)} topics={len(clusters)} with_volume={len(vol)}")
+    assert len(pool) + len(junk) == len(d["kept"])  # ponytail: self-check
 
 
 if __name__ == "__main__":

@@ -56,6 +56,19 @@ PLANS = {
             "day trading tax calculator uk", "forex trading tax calculator uk",
         ],
     },
+    "ecommerce": {
+        "dir": "tier1_ecommerce",
+        "seeds": [
+            "ecommerce accountant", "amazon seller accountant", "amazon fba accountant",
+            "shopify accountant", "amazon seller vat", "side hustle tax",
+            "ioss registration", "amazon settlement report", "tiktok shop tax",
+        ],
+        "ranked": [
+            "yourecommerceaccountant.co.uk", "ecommerceaccountants.co.uk",
+            "linkmybooks.com", "marginwise.co.uk",
+        ],
+        "heads": [],
+    },
     "manufacturing": {
         "dir": "tier1_manufacturing",
         "seeds": [
