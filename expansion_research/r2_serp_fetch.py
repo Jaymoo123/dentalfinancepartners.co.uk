@@ -124,23 +124,11 @@ def save_raw(data: dict) -> None:
     RAW.write_text(json.dumps(data, indent=1, ensure_ascii=False), encoding="utf-8")
 
 
-# ponytail: direct Serper call — CostTracker guard 409s on api_cost_log idempotency
-# (prior run today already logged these keys); one-off research script, cost ~$0.27 total.
+# ponytail: DDG only — Serper "Not enough credits" and DataForSEO negative balance
+# on 2026-07-11; CostTracker Supabase guard also 409s. DDG client is keyless.
 def fetch_query(client, q: str) -> list[dict]:
-    r = httpx.post(SERPER_URL, headers={"X-API-KEY": SERPER_API_KEY, "Content-Type": "application/json"},
-                   json={"q": q, "gl": "gb", "hl": "en", "num": 10}, timeout=20.0)
-    r.raise_for_status()
-    resp = r.json()
-    out = []
-    for item in (resp.get("organic") or [])[:10]:
-        out.append({
-            "position": item.get("position"),
-            "title": item.get("title"),
-            "link": item.get("link"),
-            "snippet": item.get("snippet"),
-            "domain": _domain_of(item.get("link") or ""),
-        })
-    return out
+    from optimisation_engine.clients.ddg_serp_client import fetch_organic_results
+    return fetch_organic_results(q, num=10, region="uk-en", site_key="expansion-r2", sleep=3.0)
 
 
 def main() -> None:
@@ -163,7 +151,6 @@ def main() -> None:
                 print(f"[{num}] {q!r} -> {len(results)} results")
             n_calls += 1
             save_raw(data)
-            time.sleep(1.2)  # polite
     print(f"Done. {n_calls} calls this run.")
 
 
