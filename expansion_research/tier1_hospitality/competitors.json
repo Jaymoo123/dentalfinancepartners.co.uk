@@ -1,0 +1,644 @@
+{
+ "generated": "2026-07-11",
+ "dedicated": 15,
+ "section": 33,
+ "rivals": [
+  {
+   "domain": "paperchase.ac",
+   "tier": "DEDICATED",
+   "verified_via": "search",
+   "serp_hits": 2,
+   "queries": [
+    "accountants for hospitality",
+    "restaurant bookkeeping services uk"
+   ],
+   "evidence": "Hospitality-only global firm, 35+ yrs, 450+ brands (Zuma, The Fat Duck). Own fetch 403; verified via live web search 2026-07-11 (title: 'Paperchase | Hospitality Accounting for Restaurants & Hotels').",
+   "homepage_title": null,
+   "service_page": null
+  },
+  {
+   "domain": "hlwa.co.uk",
+   "tier": "DEDICATED",
+   "verified_via": "fetch",
+   "serp_hits": 4,
+   "queries": [
+    "accountants for pubs",
+    "pub accountant",
+    "pub accountants uk"
+   ],
+   "evidence": "Homepage H1: 'Chartered Hospitality Accountants Bristol'. Red-team-named.",
+   "homepage_title": "HLWA Accountants Bristol - Herbert Lewis Williams & Associates",
+   "service_page": null
+  },
+  {
+   "domain": "innspiredaccountancy.co.uk",
+   "tier": "DEDICATED",
+   "verified_via": "fetch",
+   "serp_hits": 1,
+   "queries": [
+    "pub accountants uk"
+   ],
+   "evidence": "Title: 'Innspired Accountancy - Pub Accountants for Licensed Trade'. Red-team-named.",
+   "homepage_title": "Home - Innspired Accountancy - Pub Accountants for Licensed Trade",
+   "service_page": null
+  },
+  {
+   "domain": "inn-control.co.uk",
+   "tier": "DEDICATED",
+   "verified_via": "fetch",
+   "serp_hits": 2,
+   "queries": [
+    "accountants for pubs",
+    "pub accountant"
+   ],
+   "evidence": "H1: 'Specialist Restaurant & Pub Accountants to the Licensed Trade'. 159-URL sitemap incl. pub/restaurant blog.",
+   "homepage_title": "Pub Accountants | Inn Control | Licensed Trade Accountants",
+   "service_page": "https://inn-control.co.uk/blog/blog-archive/how-do-you-write-a-restaurant-business-plan-in-the-uk-"
+  },
+  {
+   "domain": "innscribeuk.com",
+   "tier": "DEDICATED",
+   "verified_via": "fetch",
+   "serp_hits": 1,
+   "queries": [
+    "pub accountant"
+   ],
+   "evidence": "Title: 'Licensed Trade Accountancy Services | UK, Nationwide'. Claims 'over 800' clients.",
+   "homepage_title": "Licensed Trade Accountancy Services | UK, Nationwide | Innscribe",
+   "service_page": "https://innscribeuk.com/contact-pub-accountants.html"
+  },
+  {
+   "domain": "roslyns.co.uk",
+   "tier": "DEDICATED",
+   "verified_via": "fetch",
+   "serp_hits": 1,
+   "queries": [
+    "pub accountant"
+   ],
+   "evidence": "H1: 'We are the leading provider of business services to the hospitality sector'. Pub webinars, stocktaking, payroll.",
+   "homepage_title": "Hospitality Business Services | Roslyns | United Kingdom",
+   "service_page": "https://www.roslyns.co.uk/pub-business-webinars"
+  },
+  {
+   "domain": "solutions4caterers.co.uk",
+   "tier": "DEDICATED",
+   "verified_via": "fetch",
+   "serp_hits": 1,
+   "queries": [
+    "accountants for caterers uk"
+   ],
+   "evidence": "Title: 'Hospitality Accountants | Solutions 4 Caterers'; 'Serving hospitality since 2003'. Part of Hospitality Solutions Group.",
+   "homepage_title": "Hospitality Accountants | Solutions 4 Caterers",
+   "service_page": null
+  },
+  {
+   "domain": "accountingchefs.com",
+   "tier": "DEDICATED",
+   "verified_via": "fetch",
+   "serp_hits": 1,
+   "queries": [
+    "restaurant bookkeeping services uk"
+   ],
+   "evidence": "'Your Trusted Partner for Comprehensive Restaurant Accounting and Finance Management'. Restaurant cash-flow service pages.",
+   "homepage_title": "Home - Accounting Chefs",
+   "service_page": "https://www.accountingchefs.com/services/restaurant-cash-flow-management/"
+  },
+  {
+   "domain": "accurise.net",
+   "tier": "DEDICATED",
+   "verified_via": "fetch",
+   "serp_hits": 1,
+   "queries": [
+    "hospitality payroll services uk"
+   ],
+   "evidence": "Title: 'Hospitality Accounting, Payroll & Multi-Entity Software Specialists'. Multi-site operators ('Run 20 sites like you only have 2').",
+   "homepage_title": "Hospitality Accounting, Payroll & Multi-Entity Software Specialists | Accurise",
+   "service_page": "https://accurise.net/services/hospitality-software"
+  },
+  {
+   "domain": "savure.co.uk",
+   "tier": "DEDICATED",
+   "verified_via": "fetch",
+   "serp_hits": 1,
+   "queries": [
+    "restaurant bookkeeping services uk"
+   ],
+   "evidence": "Title: 'UK Bookkeeping Services For Restaurants, Pubs & Hospitality'. 2,000-URL programmatic sitemap (location pages) - SEO-aggressive.",
+   "homepage_title": "UK Bookkeeping Services For Restaurants, Pubs & Hospitality",
+   "service_page": null
+  },
+  {
+   "domain": "thehospitalityaccountants.com",
+   "tier": "DEDICATED",
+   "verified_via": "search",
+   "serp_hits": 1,
+   "queries": [
+    "hospitality accounting services uk"
+   ],
+   "evidence": "Exact-match brand; North Wales, UK-wide; hotels/restaurants/cafes/pubs/holiday lets. Own fetch failed (status 0); verified via live web search 2026-07-11.",
+   "homepage_title": null,
+   "service_page": null
+  },
+  {
+   "domain": "merrantiaccounting.com",
+   "tier": "DEDICATED",
+   "verified_via": "search",
+   "serp_hits": 1,
+   "queries": [
+    "takeaway accountant (redteam-named; added manually 2026-07-11, found via web search)"
+   ],
+   "evidence": "Red-team-named. Dedicated 'Accountants for Takeaways' + 'Accountants for Restaurants' pages, from GBP25/mo. Own fetch 202 (bot-blocked); verified via live web search 2026-07-11.",
+   "homepage_title": null,
+   "service_page": null
+  },
+  {
+   "domain": "hayhursts.net",
+   "tier": "DEDICATED",
+   "verified_via": "fetch",
+   "serp_hits": 1,
+   "queries": [
+    "accountants for pubs"
+   ],
+   "evidence": "Southampton firm with dedicated 'Pubs & Licensed Trades' practice ('Hayhursts are Specialists').",
+   "homepage_title": "Hayhursts Accountants in Southampton | Outsourced Accounting",
+   "service_page": "https://hayhursts.net/services/pub-accounting/"
+  },
+  {
+   "domain": "tipsandtroncs.co.uk",
+   "tier": "DEDICATED",
+   "verified_via": "fetch",
+   "serp_hits": 1,
+   "queries": [
+    "troncmaster services"
+   ],
+   "evidence": "Tronc-only specialist: 'Troncs Explained', 'Tronc Scheme Savings', a tronc calculator, managed tronc service.",
+   "homepage_title": "Home - Tips and Troncs",
+   "service_page": "https://tipsandtroncs.co.uk/about/"
+  },
+  {
+   "domain": "troncbox.com",
+   "tier": "DEDICATED",
+   "verified_via": "fetch",
+   "serp_hits": 1,
+   "queries": [
+    "troncmaster services"
+   ],
+   "evidence": "'The UK's number one Troncmaster by WMT Troncmaster Services' - WMT's tronc product; owns troncmaster SERPs.",
+   "homepage_title": "Troncbox - The UK's number one Troncmaster by WMT Troncmaster Services",
+   "service_page": null
+  },
+  {
+   "domain": "perrysaccountants.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 3,
+   "queries": [
+    "VAT on food takeaway advice",
+    "accountants for hospitality",
+    "accountants for takeaways"
+   ],
+   "evidence": "Red-team-named. Chartered firm (London & Kent) with 'Hotel and Hospitality Accountants' sector page.",
+   "homepage_title": "Chartered Accountants in London & Kent | Perrys Accountants",
+   "service_page": "https://perrysaccountants.co.uk/hotel-accountants"
+  },
+  {
+   "domain": "tajaccountants.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 3,
+   "queries": [
+    "accountants for caterers uk",
+    "accountants for takeaways",
+    "takeaway accountant"
+   ],
+   "evidence": "Red-team-named. London firm; dedicated 'Restaurant & Takeaway Accountants' page ('daily takings' language).",
+   "homepage_title": "Accountants in London - Tax & Business Accountants",
+   "service_page": "https://www.tajaccountants.co.uk/restaurant-and-takeaway-accountants/"
+  },
+  {
+   "domain": "xeinadin.com",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 4,
+   "queries": [
+    "accountants for hospitality",
+    "accountants for pubs",
+    "bar accountant uk",
+    "pub accountant"
+   ],
+   "evidence": "National consolidator; dedicated 'Accountants for Bars, Pubs & Clubs' industry page + hospitality page.",
+   "homepage_title": "Xeinadin | Accountants and Business Advisors",
+   "service_page": "https://www.xeinadin.com/industries/bars/"
+  },
+  {
+   "domain": "alexander.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 3,
+   "queries": [
+    "hospitality accountants",
+    "hospitality accountants uk",
+    "restaurant accountants uk"
+   ],
+   "evidence": "Manchester chartered firm; /sectors/hospitality/ 'Hospitality Accounting & Tax Advice'.",
+   "homepage_title": "Chartered Accountants & Expert Tax Advisers | Alexander & Co",
+   "service_page": "https://alexander.co.uk/sectors/hospitality/"
+  },
+  {
+   "domain": "rousepartners.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 3,
+   "queries": [
+    "accountants for hospitality",
+    "hospitality accountants",
+    "hospitality accountants uk"
+   ],
+   "evidence": "Award-winning firm; /hospitality-accountants/ page; hospitality-and-food specialism listed.",
+   "homepage_title": "Rouse | Award-winning Accountants and Business Advisors",
+   "service_page": "https://rousepartners.co.uk/hospitality-accountants/"
+  },
+  {
+   "domain": "hawsons.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 2,
+   "queries": [
+    "accountants for pubs",
+    "pub accountants uk"
+   ],
+   "evidence": "Sheffield chartered firm; 'Leisure & Hospitality Accountants' sector page.",
+   "homepage_title": "Independent Chartered Accountants | Business and Tax Advisory",
+   "service_page": "https://www.hawsons.co.uk/sectors/leisure-hospitality-accountants/"
+  },
+  {
+   "domain": "mooreks.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 2,
+   "queries": [
+    "accountants for hospitality",
+    "tronc scheme advice"
+   ],
+   "evidence": "Moore Kingston Smith; hospitality & leisure sector; homepage led with 'Tipping changes you can't ignore' (July 2026).",
+   "homepage_title": "Moore Kingston Smith \u2013 Accountants and business advisers",
+   "service_page": "https://mooreks.co.uk/sectors/entrepreneurial-businesses/hospitality-and-leisure/"
+  },
+  {
+   "domain": "buzzacott.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 2,
+   "queries": [
+    "tronc scheme advice",
+    "troncmaster services"
+   ],
+   "evidence": "Large London firm; dedicated Troncmaster Services page ('Fair & Compliant Tip Management') - owns tronc advice SERPs.",
+   "homepage_title": "Buzzacott | Accountancy and Advisory Services for Businesses, Individuals & Not-for-Profits | Buzzacott",
+   "service_page": "https://buzzacott.co.uk/troncmaster"
+  },
+  {
+   "domain": "haysmac.com",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 1,
+   "queries": [
+    "tour operators margin scheme accountant"
+   ],
+   "evidence": "Top-30 firm; hospitality sector team; ranks for TOMS accountant queries.",
+   "homepage_title": "HaysMac - Award-winning Chartered Accountancy Firm",
+   "service_page": "https://haysmac.com/sectors/hospitality/"
+  },
+  {
+   "domain": "aab.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 1,
+   "queries": [
+    "hospitality accounting services uk"
+   ],
+   "evidence": "AAB group; dedicated 'Hotel Accounting Services' page.",
+   "homepage_title": "Expert Accountants & Business Advisors | AAB Audit, Tax, Recovery Services",
+   "service_page": "https://aab.uk/services/hotel-accounting/"
+  },
+  {
+   "domain": "bishopfleming.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 1,
+   "queries": [
+    "accountants for takeaways"
+   ],
+   "evidence": "Top-30 firm; 'Food and Drink' + 'Hospitality and Leisure' sector pages.",
+   "homepage_title": "Bishop Fleming | Chartered Accountants | Audit Advisory & Tax Services",
+   "service_page": "https://www.bishopfleming.co.uk/sectors/food-and-drink"
+  },
+  {
+   "domain": "e2eaccounting.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 9,
+   "queries": [
+    "accountants for restaurants",
+    "hospitality accountants",
+    "hospitality accountants uk",
+    "hospitality accounting services uk",
+    "hospitality vat advice uk",
+    "pub accountants uk",
+    "restaurant accountant",
+    "restaurant accountants uk"
+   ],
+   "evidence": "Multi-sector online firm; 'Hospitality Accountants' expertise page; 8 queries hit across our sweep - heavy SEO player.",
+   "homepage_title": "Home - E2E Accounting",
+   "service_page": "https://e2eaccounting.co.uk/expertise/hospitality-accountants/"
+  },
+  {
+   "domain": "fusionaccountants.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 4,
+   "queries": [
+    "accountants for hospitality",
+    "hospitality accountants",
+    "hospitality accountants uk",
+    "tour operators margin scheme accountant"
+   ],
+   "evidence": "London online firm; 'Restaurant and Hospitality Accountants' page.",
+   "homepage_title": "Chartered Accountants in London - Fusion Accountants",
+   "service_page": "https://www.fusionaccountants.co.uk/hospitality-accountants/"
+  },
+  {
+   "domain": "prysm.financial",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 1,
+   "queries": [
+    "troncmaster services"
+   ],
+   "evidence": "London firm; 'Specialist Restaurant & Hospitality Accountants' key sector page.",
+   "homepage_title": "Accountants based in London - Prysm Financial",
+   "service_page": "https://www.prysm.financial/services/restaurant-hospitality-accountants/"
+  },
+  {
+   "domain": "auditox-accountancy.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 4,
+   "queries": [
+    "accountants for pubs",
+    "accountants for restaurants",
+    "bar accountant uk",
+    "pub accountants uk"
+   ],
+   "evidence": "SEO-led online firm; 'Tax Accountants For Restaurants & Takeaways' + pubs/bars pages.",
+   "homepage_title": "Auditox Accountancy #1 UK Accountants & Tax Advisors | VAT",
+   "service_page": "https://www.auditox-accountancy.uk/accountants-for-restaurants/"
+  },
+  {
+   "domain": "loyals.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 2,
+   "queries": [
+    "bar accountant uk",
+    "takeaway accountant"
+   ],
+   "evidence": "London firm; hospitality page pitched 'Tronc-ready, multi-site, EPOS-integrated'.",
+   "homepage_title": "Chartered Accountants London Open Until 7pm | LOYALS King's Cross",
+   "service_page": "https://loyals.uk/industries/hospitality-accountants"
+  },
+  {
+   "domain": "ltaccounting.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 3,
+   "queries": [
+    "hospitality accountants",
+    "hospitality accountants uk",
+    "pub accountants uk"
+   ],
+   "evidence": "Online firm; 'Hospitality Accountants | Pub | Restaurant | Hotel' page.",
+   "homepage_title": "Online Accountants UK | Expert Advice | LT Accounting",
+   "service_page": "https://ltaccounting.uk/hospitality-accountants/"
+  },
+  {
+   "domain": "yourtaxhelp.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 5,
+   "queries": [
+    "bed and breakfast accountant uk",
+    "guest house accountant",
+    "restaurant accountant",
+    "takeaway accountant"
+   ],
+   "evidence": "Online fixed-fee firm; 'Accountant for Restaurants, Cafes & Takeaways' page; ranked across guesthouse/B&B queries.",
+   "homepage_title": "Online Accountants UK | Fixed-Fee Tax Returns, CIS & Landlord Tax | Your Tax Help",
+   "service_page": "https://yourtaxhelp.co.uk/accountant-for-restaurants/"
+  },
+  {
+   "domain": "dsburge.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 2,
+   "queries": [
+    "VAT on food takeaway advice",
+    "cafe accountant uk"
+   ],
+   "evidence": "Surrey/London chartered firm; 'Accountants for Restaurants' page (restaurants & cafes sector).",
+   "homepage_title": "Accountants in Surbiton and Wimbledon | Tax Advice and Returns | DS Burge & Co",
+   "service_page": "https://www.dsburge.co.uk/accountants-for-restaurants/"
+  },
+  {
+   "domain": "jkaccountants.com",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 2,
+   "queries": [
+    "accountants for takeaways",
+    "restaurant accountants uk"
+   ],
+   "evidence": "TaxAssist franchise (Wanstead); 'Accountants for Restaurants in London' + restaurant & takeaway industry page.",
+   "homepage_title": "Wanstead Accountants | Tax Assist Accountants | JK Accountants",
+   "service_page": "https://www.jkaccountants.com/restaurant-accountants"
+  },
+  {
+   "domain": "btbaccountants.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 2,
+   "queries": [
+    "bed and breakfast accountant uk",
+    "guest house accountant"
+   ],
+   "evidence": "Middlesbrough firm; 'Accountants for Restaurants | Accountancy for Chefs' page.",
+   "homepage_title": "Accountants Middlesbrough & Teesside | LDF Accountancy Services",
+   "service_page": "https://www.btbaccountants.co.uk/accountants-for-restaurants/"
+  },
+  {
+   "domain": "swift-accountants.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 4,
+   "queries": [
+    "accountants for hotels uk",
+    "guest house accountant",
+    "hospitality accounting services uk",
+    "restaurant accountant"
+   ],
+   "evidence": "Online fixed-fee firm; 'Hospitality Accountants' page; ranked for hotel/guesthouse queries.",
+   "homepage_title": "Accountants UK | Fixed-Fee Accountants for Businesses",
+   "service_page": "https://www.swift-accountants.co.uk/hospitality-accountants/"
+  },
+  {
+   "domain": "aceaccountax.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 3,
+   "queries": [
+    "hospitality accountants",
+    "hospitality accountants uk",
+    "restaurant tax advisor uk"
+   ],
+   "evidence": "Milton Keynes firm; 'Hospitality Accountants UK' page.",
+   "homepage_title": "Accountants In Milton Keynes | Save Tax & Grow Faster",
+   "service_page": "https://www.aceaccountax.co.uk/hospitality-accountants-uk/"
+  },
+  {
+   "domain": "ac-accounts.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 3,
+   "queries": [
+    "hospitality accountants",
+    "hospitality accountants uk",
+    "hospitality accounting services uk"
+   ],
+   "evidence": "Manchester chartered firm; 'Accountants For Hospitality Businesses' sector page.",
+   "homepage_title": "Chartered Accountants Manchester - Book A Free Consultation",
+   "service_page": "https://www.ac-accounts.co.uk/sectors/hospitality-accountants/"
+  },
+  {
+   "domain": "coxhinkins.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 2,
+   "queries": [
+    "restaurant accountant",
+    "restaurant accountants uk"
+   ],
+   "evidence": "Oxford firm; 'Specialist Hospitality Accountants in UK' page.",
+   "homepage_title": "Accounting And Bookkeeping Services in Oxford, UK | CoxHinkins",
+   "service_page": "https://coxhinkins.co.uk/hospitality-accountants-in-uk/"
+  },
+  {
+   "domain": "abmcharteredaccountants.com",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 3,
+   "queries": [
+    "accountants for hotels uk",
+    "takeaway accountant"
+   ],
+   "evidence": "Canary Wharf firm; 'Accountants for Hospitality Businesses UK | Hotels Accounting London' page.",
+   "homepage_title": "Canary Wharf Accountants | Best Accounting Firm in UK",
+   "service_page": "https://abmcharteredaccountants.com/sectors/hospitality/"
+  },
+  {
+   "domain": "a2zaccounting.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 1,
+   "queries": [
+    "VAT on food takeaway advice"
+   ],
+   "evidence": "Online chartered firm; /industries/hospitality/ 'Improve Profit & Save Tax'.",
+   "homepage_title": "Chartered Accountants In UK Built for Growing Businesses",
+   "service_page": "https://a2zaccounting.co.uk/industries/hospitality/"
+  },
+  {
+   "domain": "mhaccounting.org.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 2,
+   "queries": [
+    "accountants for cafes",
+    "hospitality accountants"
+   ],
+   "evidence": "Online firm; 'Hospitality Accountant | Cafe, Bar, Hotel, Restaurant' sector page.",
+   "homepage_title": "Affordable Online Accountants | Experienced Accounting Firm",
+   "service_page": "https://www.mhaccounting.org.uk/sector/accountants-for-hospitality/"
+  },
+  {
+   "domain": "apexaccountants.tax",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 2,
+   "queries": [
+    "accountants for pubs",
+    "cafe accountant uk"
+   ],
+   "evidence": "Online tax firm; 'Accountants for Food and Beverages' sector page.",
+   "homepage_title": "APEX Accountants | Chartered Online Tax Accountants Firm UK",
+   "service_page": "https://apexaccountants.tax/food-and-beverage"
+  },
+  {
+   "domain": "goringsaccountants.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 2,
+   "queries": [
+    "accountants for restaurants",
+    "pub accountant"
+   ],
+   "evidence": "London firm; 'Accountant Restaurant Pub' page.",
+   "homepage_title": "# The GoRings Accountants Ltd | Accountants in GoRings",
+   "service_page": "https://goringsaccountants.co.uk/accountant-restaurant-pub/"
+  },
+  {
+   "domain": "companies999.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 2,
+   "queries": [
+    "restaurant accountant",
+    "restaurant accountants uk"
+   ],
+   "evidence": "Online firm; 'Restaurant & Hospitality Accountant UK' page.",
+   "homepage_title": "UK Accountants & Business Address Services | Companies999",
+   "service_page": "https://companies999.co.uk/accountancy/hospitality"
+  },
+  {
+   "domain": "livingstonesaccountants.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 13,
+   "queries": [
+    "accountants for cafes",
+    "accountants for caterers uk",
+    "accountants for restaurants",
+    "bed and breakfast accountant uk",
+    "cafe accountant uk",
+    "guest house accountant",
+    "pub accountant",
+    "pub accountants uk",
+    "takeaway accountant"
+   ],
+   "evidence": "Highest SERP hit-count in our sweep (13 hits, 9 queries); food/hospitality/leisure product category incl. leisure accountants.",
+   "homepage_title": "Expert UK Accountants for Business Owners | Livingstones",
+   "service_page": "https://www.livingstonesaccountants.co.uk/product-category/food-hospitality-and-leisure/leisure-accountants/"
+  },
+  {
+   "domain": "pulse-accountants.co.uk",
+   "tier": "SECTION",
+   "verified_via": "fetch",
+   "serp_hits": 1,
+   "queries": [
+    "hospitality vat advice uk"
+   ],
+   "evidence": "Tech-led firm; hospitality sector page; ranked for hospitality VAT advice.",
+   "homepage_title": "Pulse Accountants",
+   "service_page": "https://pulse-accountants.co.uk/sectors/hospitality"
+  }
+ ]
+}

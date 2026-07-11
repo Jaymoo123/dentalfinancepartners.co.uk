@@ -1,0 +1,4000 @@
+{
+ "generated": "2026-07-11",
+ "n_queries": 36,
+ "survivors": {
+  "livingstonesaccountants.co.uk": {
+   "hit_count": 13,
+   "queries": [
+    "accountants for cafes",
+    "accountants for caterers uk",
+    "accountants for restaurants",
+    "bed and breakfast accountant uk",
+    "cafe accountant uk",
+    "guest house accountant",
+    "pub accountant",
+    "pub accountants uk",
+    "takeaway accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for restaurants",
+     "pos": 6,
+     "title": "Restaurant Accountants - Livingstones Accountants",
+     "snippet": "At Livingstones Chartered Accountants, we specialise in bespoke accounting solutions for UK-based restaurants."
+    },
+    {
+     "src": "ddg",
+     "q": "pub accountant",
+     "pos": 4,
+     "title": "Opening a Pub in the UK: Tax, Licensing, and Accounting Guide",
+     "snippet": "31 Aug 2025 ... Opening a pub UK made simple. Learn about licensing, tax, and accounting essentials to run a successful pub with Livingstones Accountants."
+    },
+    {
+     "src": "ddg",
+     "q": "pub accountants uk",
+     "pos": 5,
+     "title": "Top UK Bar Accountants - Expert Financial Services for Pubs",
+     "snippet": "Expert UK Bar Accountants for precise financial management. Tailored services to boost your...Expertise in financial compliance for bars and pubs ensures your business adheres to UK regulationsTailore"
+    }
+   ]
+  },
+  "e2eaccounting.co.uk": {
+   "hit_count": 9,
+   "queries": [
+    "accountants for restaurants",
+    "hospitality accountants",
+    "hospitality accountants uk",
+    "hospitality accounting services uk",
+    "hospitality vat advice uk",
+    "pub accountants uk",
+    "restaurant accountant",
+    "restaurant accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accountants",
+     "pos": 6,
+     "title": "Expert Hospitality Accountants in UK | E2E Accounting",
+     "snippet": "We are specialist hospitality accountants experienced in supporting hotels, restaurant chains and bars with their finance and accounting."
+    },
+    {
+     "src": "ddg",
+     "q": "hospitality accountants uk",
+     "pos": 2,
+     "title": "Expert Hospitality Accountants in UK | E2E Accounting",
+     "snippet": "We are specialist hospitality accountants experienced in supporting hotels, restaurant chains and bars with their finance and accounting.Our hospitality accountants ensure full compliance with the lat"
+    },
+    {
+     "src": "ddg",
+     "q": "hospitality accounting services uk",
+     "pos": 10,
+     "title": "Expert Hospitality Accountants in UK | E2E Accounting",
+     "snippet": "Why Hospitality Accounting Matters. Thriving in the fast-paced UK hospitality sector requires precise financial clarity and expert advice to navigate challenges, identify opportunities, and grow with "
+    }
+   ]
+  },
+  "riseaccounting.co.uk": {
+   "hit_count": 5,
+   "queries": [
+    "hospitality accountants",
+    "hospitality accountants uk",
+    "tronc scheme accountant",
+    "tronc scheme advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accountants",
+     "pos": 1,
+     "title": "Accounting for Hospitality | Rise Accounting",
+     "snippet": "HOSPITALITY. Specialist accounting for restaurants, coffee shops, bars, hotels and more.Get confident on your numbers with dedicated hospitality accountants."
+    },
+    {
+     "src": "ddg",
+     "q": "hospitality accountants uk",
+     "pos": 1,
+     "title": "Accounting for Hospitality | Rise Accounting",
+     "snippet": "Get confident on your numbers with dedicated hospitality accountants. Improve profitability and cashflow management for faster and more sustainable growth.Cross-border financial and tax planning suppo"
+    },
+    {
+     "src": "ddg",
+     "q": "tronc scheme advice",
+     "pos": 9,
+     "title": "Tronc Schemes: How to Manage Tips Fairly | Rise Accounting",
+     "snippet": "Learn what a tronc scheme is, how it works, its benefits and how to set one up to manage tips fairly and compliantly."
+    }
+   ]
+  },
+  "yourtaxhelp.co.uk": {
+   "hit_count": 5,
+   "queries": [
+    "bed and breakfast accountant uk",
+    "guest house accountant",
+    "restaurant accountant",
+    "takeaway accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant accountant",
+     "pos": 6,
+     "title": "Accountant for Restaurants, Cafes & Takeaways UK | Your Tax Help",
+     "snippet": "\ud83c\udf7d\ufe0f For Restaurants, Cafes & Takeaways \u00b7 UK-Wide Accountant for Restaurants, Cafes & Takeaways HMRC-registered hospitality accountants who know your trade: daily takings, the VAT maze on food and drink"
+    },
+    {
+     "src": "ddg",
+     "q": "takeaway accountant",
+     "pos": 2,
+     "title": "Accountant for Takeaways & Fast Food UK | Your Tax Help",
+     "snippet": "Your Tax Help Accountants works with takeaway and fast-food owners across the UK. Takeaways run on cash, card and delivery-platform income, with hot food standard-rated for VAT and payroll for staff. "
+    },
+    {
+     "src": "ddg",
+     "q": "takeaway accountant",
+     "pos": 5,
+     "title": "Accountant for Restaurants, Cafes & Takeaways UK | Your Tax Help",
+     "snippet": "\ud83c\udf7d\ufe0f For Restaurants, Cafes & Takeaways \u00b7 UK-Wide Accountant for Restaurants, Cafes & Takeaways HMRC-registered hospitality accountants who know your trade: daily takings, the VAT maze on food and drink"
+    }
+   ]
+  },
+  "rsbc.uk": {
+   "hit_count": 5,
+   "queries": [
+    "accountants for caterers uk",
+    "bar accountant uk",
+    "cafe accountant uk",
+    "restaurant bookkeeping services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant bookkeeping services uk",
+     "pos": 5,
+     "title": "Accountants for Hotels, Restaurants & Bars | RSBC UK",
+     "snippet": "RSBC\u2019s experienced hospitality accountants UK offer a full suite of services including restaurant bookkeeping, bar tax compliance, and financial forecasting."
+    },
+    {
+     "src": "ddg",
+     "q": "bar accountant uk",
+     "pos": 3,
+     "title": "Accountants for Hotels, Restaurants & Bars | RSBC UK",
+     "snippet": "August 23, 2025 - Whether you operate a boutique hotel, a high-street restaurant, or a lively bar, having a reliable financial partner is key to staying profitable and compliant. RSBC\u2019s experienced ho"
+    },
+    {
+     "src": "ddg",
+     "q": "cafe accountant uk",
+     "pos": 9,
+     "title": "Accountants for Hotels, Restaurants & Bars | RSBC UK",
+     "snippet": "August 23, 2025 - RSBC provides full support with hospitality tax returns, including Self Assessment, VAT, and Corporation Tax. Whether you run a hotel, caf\u00e9, or cocktail bar, our accountants help you"
+    }
+   ]
+  },
+  "bing.com": {
+   "hit_count": 5,
+   "queries": [
+    "accountants for hotels uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for hotels uk",
+     "pos": 1,
+     "title": "The UKs #1 Online Accountants - The Accountancy Partnership UK",
+     "snippet": "Get Quote Forget 'Account Managers', We Provide Your Business With Its Very Own Dedicated Accountant. Save Time And Money Spent Communicating With Accountants And Use Our Online Services My designated"
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for hotels uk",
+     "pos": 2,
+     "title": "Accountants Uk - TaxAssist Accountants",
+     "snippet": "4.5 (4480 reviews) Accounting, tax & VAT services perfectly suited to you. Contact today. Expert accountants to take care of your business' accounting, tax, VAT and payroll needs. Services: Annual Acc"
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for hotels uk",
+     "pos": 3,
+     "title": "Find Accountants - Accountingquotes.co.uk",
+     "snippet": "Post Your Job - Compare Quotes - Read Reviews - Free. Price Comparison Website For Accountants Types: Accounts, Bookkeeping, Tax, Audits"
+    }
+   ]
+  },
+  "fusionaccountants.co.uk": {
+   "hit_count": 4,
+   "queries": [
+    "accountants for hospitality",
+    "hospitality accountants",
+    "hospitality accountants uk",
+    "tour operators margin scheme accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accountants",
+     "pos": 5,
+     "title": "Restaurant and Hospitality Accountants - Fusion Accountants",
+     "snippet": "Specialist hospitality accountants in London. Running a hospitality business is rewarding, but it also comes with complex financial demands \u2014 from multi-rate VAT on food and alcohol, to..."
+    },
+    {
+     "src": "ddg",
+     "q": "hospitality accountants uk",
+     "pos": 8,
+     "title": "Restaurant and Hospitality Accountants - Fusion Accountants",
+     "snippet": "Specialist hospitality accountants in London. Running a hospitality business is rewarding, but it also comes with complex financial demands \u2014 from multi-rate VAT on food and alcohol, to payroll for se"
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for hospitality",
+     "pos": 4,
+     "title": "Restaurant and Hospitality Accountants - Fusion Accountants",
+     "snippet": "May 7, 2026 - Specialist Accountants for Restaurants, Bars and Hotels providing accountancy and tax services for the hospitality sector across London."
+    }
+   ]
+  },
+  "xeinadin.com": {
+   "hit_count": 4,
+   "queries": [
+    "accountants for hospitality",
+    "accountants for pubs",
+    "bar accountant uk",
+    "pub accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for hospitality",
+     "pos": 5,
+     "title": "Hospitality Accountants | Hospitality Tax Advisor | Xeinadin",
+     "snippet": "January 27, 2026 - Trusted hospitality sector accounting: We're one of the largest accountancy firms in the UK and Ireland, with over 3,000 experts supporting more than 100,000 clients. Partner & Head"
+    },
+    {
+     "src": "ddg",
+     "q": "pub accountant",
+     "pos": 9,
+     "title": "Accountants for Bars, Pubs & Clubs | Tax Advisors for Bars | Xeinadin",
+     "snippet": "Regional knowledge: With offices across the UK and Ireland, we deliver local support underpinned by in-depth knowledge of bar accounting. Whether you require ..."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for pubs",
+     "pos": 8,
+     "title": "Accountants for Bars, Pubs & Clubs | Tax Advisors for Bars | Xeinadin",
+     "snippet": "April 24, 2025 - Discover expert accounting services tailored for bars and nightlife businesses. Xeinadin provides financial guidance, tax planning, and bookkeeping solutions to help your bar thrive."
+    }
+   ]
+  },
+  "swift-accountants.co.uk": {
+   "hit_count": 4,
+   "queries": [
+    "accountants for hotels uk",
+    "guest house accountant",
+    "hospitality accounting services uk",
+    "restaurant accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accounting services uk",
+     "pos": 3,
+     "title": "Hospitality Accountants - swift-accountants.co.uk",
+     "snippet": "Swift Accountants Hospitality Accountants Listening, Understanding, Advising Fixed-fee accounting for UK hospitality businesses \u2014 bookkeeping (including EPOS), VAT (MTD), payroll, tips/service charge "
+    },
+    {
+     "src": "ddg",
+     "q": "restaurant accountant",
+     "pos": 4,
+     "title": "Hospitality Accountants",
+     "snippet": "Swift Accountants Hospitality Accountants Listening, Understanding, Advising Fixed-fee accounting for UK hospitality businesses \u2014 bookkeeping (including EPOS), VAT (MTD), payroll, tips/service charge "
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for hotels uk",
+     "pos": 8,
+     "title": "Hospitality Accountants - swift-accountants.co.uk",
+     "snippet": "Swift Accountants Hospitality Accountants Listening, Understanding, Advising Fixed-fee accounting for UK hospitality businesses \u2014 bookkeeping (including EPOS), VAT (MTD), payroll, tips/service charge "
+    }
+   ]
+  },
+  "auditox-accountancy.uk": {
+   "hit_count": 4,
+   "queries": [
+    "accountants for pubs",
+    "accountants for restaurants",
+    "bar accountant uk",
+    "pub accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for restaurants",
+     "pos": 2,
+     "title": "Tax Accountants For Restaurants & Takeaways",
+     "snippet": "Auditox Accountancy provide affordable tax planning, end of year accounts, VAT returns and accounting for restaurants and takeaways throughout the UK."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for pubs",
+     "pos": 7,
+     "title": "Accountants For Pubs | Accountants For Bars",
+     "snippet": "August 18, 2023 - Auditox Accountancy have a very clear focus of being the best accountants for pubs and bars and catering for the tax needs of pub owners or anyone in the licensed trade."
+    },
+    {
+     "src": "ddg",
+     "q": "pub accountants uk",
+     "pos": 2,
+     "title": "Accountants For Pubs | Accountants For Bars",
+     "snippet": "Pub accounting services you can rely on. Managing the financial side of the pub trade is time consuming, which is why a good pub accountant offers: Monthly account management services. Bookkeeping ass"
+    }
+   ]
+  },
+  "hlwa.co.uk": {
+   "hit_count": 4,
+   "queries": [
+    "accountants for pubs",
+    "pub accountant",
+    "pub accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub accountant",
+     "pos": 3,
+     "title": "The Best Specialist Pub Accountant for Your Hospitality Business",
+     "snippet": "17 Aug 2025 ... At HLWA, we are a specialist pub accountant who work with pubs, bars, and hospitality businesses across the UK. Our clients benefit from ..."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for pubs",
+     "pos": 2,
+     "title": "The Best Specialist Pub Accountant for Your Hospitality Business",
+     "snippet": "January 28, 2026 - Solid business planning is more important than ever in the pub trade due to rising costs, staffing challenges, and increased competition. At HLWA, we are a specialist pub accountant"
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for pubs",
+     "pos": 3,
+     "title": "Expert Accountants for Pubs: Boost Your Business Efficiency Today",
+     "snippet": "May 11, 2026 - As a publican, you are managing a fast-paced business with tight margins, seasonal peaks, and strict regulatory requirements. That\u2019s where we come in. We\u2019re experienced accountants for "
+    }
+   ]
+  },
+  "business-accounting.co.uk": {
+   "hit_count": 4,
+   "queries": [
+    "bar accountant uk",
+    "takeaway accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "bar accountant uk",
+     "pos": 6,
+     "title": "Do Bars Need an Accountant? | UK Hospitality Accounting",
+     "snippet": "August 19, 2025 - Wondering if your bar needs an accountant? UK qualified accountants explain why professional accounting support is crucial for pubs and bars to stay..."
+    },
+    {
+     "src": "ddg",
+     "q": "bar accountant uk",
+     "pos": 8,
+     "title": "Choosing the Right Accountant for Your Bar | UK Guide",
+     "snippet": "August 26, 2025 - Selecting the right accountant is crucial for bar owners navigating complex UK hospitality regulations. Specialist accountants understand alcohol licensing, VAT schemes, and late-nig"
+    },
+    {
+     "src": "ddg",
+     "q": "takeaway accountant",
+     "pos": 6,
+     "title": "Accountant Cost for Takeaways | UK Pricing Guide 2025",
+     "snippet": "How much does an accountant cost for takeaways? Get expert UK pricing for small business accounting, tax returns, VAT, and payroll services for your takeaway."
+    }
+   ]
+  },
+  "accotax.co.uk": {
+   "hit_count": 4,
+   "queries": [
+    "TOMS accountant",
+    "accountants for cafes",
+    "accountants for hotels uk",
+    "tour operators margin scheme accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for hotels uk",
+     "pos": 7,
+     "title": "Accountants For Hotels | Specialist Hotel Accounting & Tax ...",
+     "snippet": "Looking for expert accountants for hotels in UK? Accotax helps hotel owners with VAT, payroll, and tax planning."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for cafes",
+     "pos": 1,
+     "title": "Accountants for Cafes | Accountants for Coffee Shops London",
+     "snippet": "Our cafe accountants and accountants for coffee shops provide the following services: Coffee Shop Bookkeeping: We track all income, expenses, and profit margins tailored to caf\u00e9 enterprises. QuickBook"
+    },
+    {
+     "src": "ddg",
+     "q": "TOMS accountant",
+     "pos": 1,
+     "title": "How To Find TOMS Accountants Near You? - ACCOTAX",
+     "snippet": "October 31, 2024 - TOMS Accountants offers personalized accounting services to help your business succeed. Experience financial clarity and expert guidance."
+    }
+   ]
+  },
+  "ac-accounts.co.uk": {
+   "hit_count": 3,
+   "queries": [
+    "hospitality accountants",
+    "hospitality accountants uk",
+    "hospitality accounting services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accountants",
+     "pos": 2,
+     "title": "Accountants For Hospitality - A&C Chartered Accountants",
+     "snippet": "For 30 years, our chartered accountants have supported the hospitality sector with everything from annual accounts to tax advice. Book a free consultation."
+    },
+    {
+     "src": "ddg",
+     "q": "hospitality accountants uk",
+     "pos": 4,
+     "title": "Accountants For Hospitality - A&C Chartered Accountants",
+     "snippet": "For 30 years, our chartered accountants have supported the hospitality sector with everything from annual accounts to tax advice. Book a free consultation."
+    },
+    {
+     "src": "ddg",
+     "q": "hospitality accounting services uk",
+     "pos": 5,
+     "title": "Accountants For Hospitality",
+     "snippet": "Hospitality Accountants Our dedicated team of accountants for hospitality businesses offers extensive experience and specialised accounting services. We have a deep understanding of the hospitality se"
+    }
+   ]
+  },
+  "ltaccounting.uk": {
+   "hit_count": 3,
+   "queries": [
+    "hospitality accountants",
+    "hospitality accountants uk",
+    "pub accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accountants",
+     "pos": 4,
+     "title": "Hospitality Accountants | Pub | Restaurant | Hotel",
+     "snippet": "Professional Hospitality Accountants who specialise in accountancy services for Pub, Restaurant & Hotels."
+    },
+    {
+     "src": "ddg",
+     "q": "hospitality accountants uk",
+     "pos": 3,
+     "title": "Hospitality Accountants | Pub | Restaurant | Hotel",
+     "snippet": "Professional Hospitality Accountants who specialise in accountancy services for Pub, Restaurant & Hotels."
+    },
+    {
+     "src": "ddg",
+     "q": "pub accountants uk",
+     "pos": 1,
+     "title": "Hospitality Accountants | Pub | Restaurant | Hotel",
+     "snippet": "Our pub accountants can assist with managing your pub\u2019s finances, including handling payroll, tax returns, and cash flow management. We also provide financial forecasting and budgeting services to hel"
+    }
+   ]
+  },
+  "aceaccountax.co.uk": {
+   "hit_count": 3,
+   "queries": [
+    "hospitality accountants",
+    "hospitality accountants uk",
+    "restaurant tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accountants",
+     "pos": 7,
+     "title": "Hospitality Accountants UK | 100% Expert Support For Better Growth",
+     "snippet": "Hospitality accountants UK services are crucial for cafes, hotels, and restaurants seeking support in VAT, payroll, and tax compliance. At ACE Account, you will find accounting solutions..."
+    },
+    {
+     "src": "ddg",
+     "q": "hospitality accountants uk",
+     "pos": 6,
+     "title": "Hospitality Accountants UK | 100% Expert Support For Better Growth",
+     "snippet": "Hospitality accountants UK services are crucial for cafes, hotels, and restaurants seeking support in VAT, payroll, and tax compliance. At ACE Account, you will find accounting solutions tailored for "
+    },
+    {
+     "src": "ddg",
+     "q": "restaurant tax advisor uk",
+     "pos": 5,
+     "title": "Tax Advisor UK | 100% Expert Support For Startups & Firms",
+     "snippet": "Tax Advisor UK. Stop Guessing Your Taxes. Start Getting Them Right. Tax is likely to be one of those things you will tackle later when you\u2019re running a start-up business or scaling up, in the UK. Dead"
+    }
+   ]
+  },
+  "alexander.co.uk": {
+   "hit_count": 3,
+   "queries": [
+    "hospitality accountants",
+    "hospitality accountants uk",
+    "restaurant accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accountants",
+     "pos": 8,
+     "title": "Hospitality Accountants | Alexander & Co.",
+     "snippet": "How Our Team of Hospitality Accountants Can Help. We have considerable experience in the hospitality sector, working with a wide range of clients across the UK, from independent..."
+    },
+    {
+     "src": "ddg",
+     "q": "hospitality accountants uk",
+     "pos": 10,
+     "title": "Hospitality Accountants | Alexander & Co.",
+     "snippet": "How Our Team of Hospitality Accountants Can Help. We have considerable experience in the hospitality sector, working with a wide range of clients across the UK, from independent operators to national "
+    },
+    {
+     "src": "ddg",
+     "q": "restaurant accountants uk",
+     "pos": 8,
+     "title": "Restaurant Accounting Services | Alexander & Co",
+     "snippet": "Our restaurant accountants are based in Manchester and London but are able to advise restaurants and hospitality clients all over the UK."
+    }
+   ]
+  },
+  "rousepartners.co.uk": {
+   "hit_count": 3,
+   "queries": [
+    "accountants for hospitality",
+    "hospitality accountants",
+    "hospitality accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accountants",
+     "pos": 9,
+     "title": "Hospitality accountants | Rouse Accountants",
+     "snippet": "Award-winning accountants and advisors to hospitality and food service businesses. We can handle all your accountancy needs and offer expert advice and guidance."
+    },
+    {
+     "src": "ddg",
+     "q": "hospitality accountants uk",
+     "pos": 9,
+     "title": "Hospitality accountants | Rouse Accountants",
+     "snippet": "As hospitality accountants who have a strong understanding of the sector, we can become a trusted partner and advisor to your business, in these areas and more. Our award-winning team act on behalf of"
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for hospitality",
+     "pos": 3,
+     "title": "Hospitality accountants in London - Rouse Partners",
+     "snippet": "February 3, 2026 - From independent local caf\u00e9s to multi-location franchises, our London hospitality accountants provide specialist services to a wide range of businesses in the industry. Your busines"
+    }
+   ]
+  },
+  "perrysaccountants.co.uk": {
+   "hit_count": 3,
+   "queries": [
+    "VAT on food takeaway advice",
+    "accountants for hospitality",
+    "accountants for takeaways"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for hospitality",
+     "pos": 1,
+     "title": "Hotel and Hospitality Accountants in London and Kent | Perry",
+     "snippet": "November 2, 2023 - Perrys Chartered Accountants are specialist hotel accountants, with seven branches across London and Kent. We offer expert advice and services designed to maximise profitability and"
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for takeaways",
+     "pos": 1,
+     "title": "Expert Restaurant & Takeaway Accountants in London and Kent",
+     "snippet": "Expert accountants to restaurants, pubs and bars, Perrys Accountants successfully guide hospitality professionals with a range of services. Find out more."
+    },
+    {
+     "src": "ddg",
+     "q": "VAT on food takeaway advice",
+     "pos": 6,
+     "title": "A Guide To VAT on Food for Your Business - Perrys Accountants",
+     "snippet": "VAT is typically applied at a standard rate of 20% to most food items, including restaurant meals and takeaway food. However, certain essential food items such ..."
+    }
+   ]
+  },
+  "abmcharteredaccountants.com": {
+   "hit_count": 3,
+   "queries": [
+    "accountants for hotels uk",
+    "takeaway accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "takeaway accountant",
+     "pos": 4,
+     "title": "Accountants for Takeaways UK | Restaurant Accounting London",
+     "snippet": "Looking for accountants for takeaway businesses? ABM Chartered Accountants offers tax, VAT, payroll, and bookkeeping services for UK takeaways. Get in touch today."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for hotels uk",
+     "pos": 6,
+     "title": "Accountants for Hotels UK | Air B&Bs Accounting London",
+     "snippet": "Need accountants for hotels and B&Bs? ABM Chartered Accountants provides VAT, payroll, and accounting services for UK hospitality businesses."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for hotels uk",
+     "pos": 10,
+     "title": "Accountants for Hospitality Businesses UK | Hotels Accounting ...",
+     "snippet": "ABM Chartered Accountants provides expert accounting for hospitality businesses across the UK, from independent restaurants to multi-site hotel groups. Our ICAEW and ACCA qualified team handles tronc "
+    }
+   ]
+  },
+  "tajaccountants.co.uk": {
+   "hit_count": 3,
+   "queries": [
+    "accountants for caterers uk",
+    "accountants for takeaways",
+    "takeaway accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "takeaway accountant",
+     "pos": 10,
+     "title": "Restaurant & Takeaway Accountants - Accountants in London",
+     "snippet": "April 28, 2026 - Our award-winning team specialises in providing professional accounting and tax services for restaurants and takeaways in London. From accounts and tax planning to financial advice, w"
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for takeaways",
+     "pos": 3,
+     "title": "Restaurant & Takeaway Accountants",
+     "snippet": "Expert Restaurant and Takeaway Accountants for Personal Hospitality ... TAJ Accountants specialises in providing expert accounting services to restaurants, pubs, ..."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for caterers uk",
+     "pos": 7,
+     "title": "Restaurant & Takeaway Accountants - Accountants in London",
+     "snippet": "April 28, 2026 - TAJ Accountants specialises in providing expert accounting services to restaurants, pubs, and bars in London. Our services are designed for all sizes of catering businesses, from inde"
+    }
+   ]
+  },
+  "gmprofessionalaccountants.co.uk": {
+   "hit_count": 3,
+   "queries": [
+    "accountants for takeaways",
+    "fish and chip shop accountant",
+    "tour operators margin scheme accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for takeaways",
+     "pos": 7,
+     "title": "Takeaway and Restaurant Accountants | GMPA | London",
+     "snippet": "If you run a takeaway, restaurant, caf\u00e9, or food delivery business in London, specialist accountancy is not optional \u2014 it is essential. The UK food and ..."
+    },
+    {
+     "src": "ddg",
+     "q": "fish and chip shop accountant",
+     "pos": 6,
+     "title": "Takeaway and Restaurant Accountants | GMPA | London",
+     "snippet": "Whether you are a sole trader running a single fish and chip shop or a limited company operating a chain of restaurants, this guide covers everything you ..."
+    },
+    {
+     "src": "ddg",
+     "q": "tour operators margin scheme accountant",
+     "pos": 8,
+     "title": "Accountants for Travel Agent London | Specialist Tax Support",
+     "snippet": "Tour Operators Margin Scheme (TOMS) VAT calculations and annual adjustments. ATOL Reporting Accountant scheme awareness and documentation support. ABTA financial criteria and bonding paperwork. CAA, I"
+    }
+   ]
+  },
+  "accountingweb.co.uk": {
+   "hit_count": 3,
+   "queries": [
+    "fish and chip shop accountant",
+    "tronc scheme accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "fish and chip shop accountant",
+     "pos": 1,
+     "title": "Investigation - fish & chip shop - AccountingWEB",
+     "snippet": "14 May 2003 ... A fish & chip shop client is under investigation. The Inspector contends that the GP% should be 60% whereas the accounts show a consistent ..."
+    },
+    {
+     "src": "ddg",
+     "q": "tronc scheme accountant",
+     "pos": 1,
+     "title": "Operating a Tronc Scheme | AccountingWEB",
+     "snippet": "January 5, 2024 - There is no need for a separate PAYE scheme. The tronc payments can be processed on the same payslip\u2019s as the house pay and still be exempt from NIC and pensions. If you need advice "
+    },
+    {
+     "src": "ddg",
+     "q": "tronc scheme accountant",
+     "pos": 10,
+     "title": "TRONC SET UP | AccountingWEB",
+     "snippet": "August 12, 2021 - Would HMRC then link the Tronc PAYE Scheme with the company's main PAYE scheme. ... Is there anyway where we can apply online? It has been so difficult trying to reach HMRC helpline."
+    }
+   ]
+  },
+  "ukpropertyaccountants.co.uk": {
+   "hit_count": 3,
+   "queries": [
+    "accountants for hotels uk",
+    "bed and breakfast accountant uk",
+    "tour operators margin scheme accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for hotels uk",
+     "pos": 9,
+     "title": "Hotel Accountants | UK Tax Specialists",
+     "snippet": "Running a hotel requires more than just hospitality. It demands financial expertise to manage tax obligations, expenses and regulatory compliance. At UK Property Accountants, we specialise in tax and "
+    },
+    {
+     "src": "ddg",
+     "q": "bed and breakfast accountant uk",
+     "pos": 4,
+     "title": "Accountants for Bed & Breakfast | UK Tax Specialists",
+     "snippet": "We are UK tax specialists providing services like accountants for bed and breakfast with tailored solutions to meet the specific needs of B&B owners."
+    },
+    {
+     "src": "ddg",
+     "q": "tour operators margin scheme accountant",
+     "pos": 9,
+     "title": "Tour Operators Margin Scheme: TOMS VAT | UK Property...",
+     "snippet": "Our specialist Tour Operators Margin Scheme VAT services help accommodation providers streamline their tax obligations and reduce VAT burdens while ensuring full compliance with HMRC regulations.Why U"
+    }
+   ]
+  },
+  "mhaccounting.org.uk": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for cafes",
+    "hospitality accountants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accountants",
+     "pos": 10,
+     "title": "Hospitality Accountant | Cafe, Bar, Hotel, Restaurant",
+     "snippet": "Specialist Hospitality Accountants for Restaurant, Cafe, Bar and Hotel.Review Our Hospitality Accountants. Mike has been our dedicated accountant in Manchester for 10 years."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for cafes",
+     "pos": 8,
+     "title": "Hospitality Accountant | Cafe, Bar, Hotel, Restaurant",
+     "snippet": "Specialist Hospitality Accountants for Restaurant, Cafe, Bar and Hotel. In the hospitality and leisure industry, managing finances can be challenging and complex. Seasonal fluctuations, inventory cost"
+    }
+   ]
+  },
+  "mooreks.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for hospitality",
+    "tronc scheme advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for hospitality",
+     "pos": 2,
+     "title": "Accounting for the hospitality industry \u2013 Moore Kingston Smith",
+     "snippet": "December 10, 2025 - Our hospitality accounting services are designed to help your business thrive, from audits to expert tax advice and financial management."
+    },
+    {
+     "src": "ddg",
+     "q": "tronc scheme advice",
+     "pos": 2,
+     "title": "Tronc schemes and Troncmaster services \u2013 Moore Kingston Smith",
+     "snippet": "What is a tronc scheme? Tronc schemes, sometimes referred to as troncs or tronc arrangements, are designed to distribute service charges, tips and gratuities to employees within the hospitality and le"
+    }
+   ]
+  },
+  "paperchase.ac": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for hospitality",
+    "restaurant bookkeeping services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for hospitality",
+     "pos": 6,
+     "title": "Hospitality Accountants London for Hotels and Restaurants | Paperchase Hospitality Accountancy",
+     "snippet": "May 23, 2025 - Nish Patel is the global CEO of Paperchase Accountancy, a leading outsourced accounting solutions provider that specializes in serving the hospitality industry. The company, founded in "
+    },
+    {
+     "src": "ddg",
+     "q": "restaurant bookkeeping services uk",
+     "pos": 3,
+     "title": "Restaurant Bookkeeping Service London | Paperchase Hospitality...",
+     "snippet": "UK. Restaurant Bookkeeping Service London: Streamline Your Finances With Local Experts.Investing in a dedicated London bookkeeping service can boost profitability significantly. 2. Exploring the Benef"
+    }
+   ]
+  },
+  "eternityaccountants.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for restaurants",
+    "restaurant accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant accountant",
+     "pos": 1,
+     "title": "Accountants for Restaurants - Eternity Accountants",
+     "snippet": "How Much Do Accountants for Restaurants Cost in the UK? Pricing varies by service level\u2014ranging from basic bookkeeping to full outsourced accounting with advisory."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for restaurants",
+     "pos": 10,
+     "title": "Accountants for Restaurants - Eternity Accountants",
+     "snippet": "UK Compliance Cheat-Sheet for Restaurants. Restaurants in the UK must stay compliant with several HMRC and local regulations. Specialist accountants for restaurants help ensure that VAT, PAYE, tips, p"
+    }
+   ]
+  },
+  "coxhinkins.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "restaurant accountant",
+    "restaurant accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant accountant",
+     "pos": 5,
+     "title": "Top Restaurant Accounting Firms UK 2026 | Best 7 Picks",
+     "snippet": "Explore the top 7 restaurant accounting firms in the UK for 2026. Expert services in VAT, payroll, and cash flow to help restaurants grow and stay compliant."
+    },
+    {
+     "src": "ddg",
+     "q": "restaurant accountants uk",
+     "pos": 5,
+     "title": "Restaurant Accounting for Financial Management in UK",
+     "snippet": "Our restaurant accountants will make sure that the accounts are taken care of, so that you can focus on satisfying your customers and expanding your ..."
+    }
+   ]
+  },
+  "companies999.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "restaurant accountant",
+    "restaurant accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant accountant",
+     "pos": 8,
+     "title": "Restaurant & Hospitality Accountant UK | Companies999",
+     "snippet": "Companies999 provides specialist accountancy for the hospitality industry across the UK. Restaurants, cafes, pubs, bars, and hotels \u2014 we understand the unique financial challenges: complicated VAT rul"
+    },
+    {
+     "src": "ddg",
+     "q": "restaurant accountants uk",
+     "pos": 2,
+     "title": "Restaurant & Hospitality Accountant UK | Companies999",
+     "snippet": "Companies999 provides specialist accountancy for the hospitality industry across the UK. ... accountants and business address services based in ..."
+    }
+   ]
+  },
+  "jkaccountants.com": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for takeaways",
+    "restaurant accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant accountants uk",
+     "pos": 4,
+     "title": "Accountants for Restaurants in London | JK Accountants",
+     "snippet": "... accounting and other financial services to ... We provide a wide range of accounting services for restaurants as experts in restaurant accounting."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for takeaways",
+     "pos": 2,
+     "title": "Accountants for Restaurants in London",
+     "snippet": "Our services cater to Restaurants and Takeaway businesses based in London. We offer professional accounting and other financial services to anyone looking for a ..."
+    }
+   ]
+  },
+  "goringsaccountants.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for restaurants",
+    "pub accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for restaurants",
+     "pos": 9,
+     "title": "Accountant Restaurant Pub - GoRings Accountants",
+     "snippet": "Accountant for restaurants and hospitality professionals (sole trader or self employed) in London, UK.As a restaurant owner you manage your business and as an accountant for restaurants and pubs in UK"
+    },
+    {
+     "src": "ddg",
+     "q": "pub accountant",
+     "pos": 6,
+     "title": "Accountant Restaurant Pub - GoRings Accountants",
+     "snippet": "Accountant for restaurants and hospitality professionals (sole trader or self employed) in London, UK. GoRings accountants support 100s of restaurants ..."
+    }
+   ]
+  },
+  "netsuite.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for takeaways",
+    "restaurant bookkeeping services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant bookkeeping services uk",
+     "pos": 6,
+     "title": "The Essential UK Restaurant Bookkeeping Guide | NetSuite",
+     "snippet": "Restaurant Bookkeeping Explained. The challenge for restaurant bookkeepers is complexity. A single restaurant might have four or five revenue channels operating at once, including dine-in, direct take"
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for takeaways",
+     "pos": 9,
+     "title": "All You Need to Know About Restaurant Accounting | NetSuite",
+     "snippet": "20 Apr 2026 ... Restaurant accounting helps UK owners track food costs, manage cash flow and stay compliant with HMRC ... Key Takeaways. Restaurant ..."
+    }
+   ]
+  },
+  "yorkshireaccountancy.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "pub accountant",
+    "pub accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub accountant",
+     "pos": 1,
+     "title": "Pub Accountants | Yorkshire Accountancy",
+     "snippet": "Professional Pub Accountant Services ... Yorkshire Accountancy is a leading provider of pub accountants to public houses across the country. We know just how ..."
+    },
+    {
+     "src": "ddg",
+     "q": "pub accountants uk",
+     "pos": 4,
+     "title": "Pub Accountants | Yorkshire Accountancy",
+     "snippet": "Hire A Reputable Pub Accountant. Our pub accountants know just how many hours are involved in successfully running a pub, and can do all of the hard work for you when it comes to your accounts, payrol"
+    }
+   ]
+  },
+  "inn-control.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for pubs",
+    "pub accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub accountant",
+     "pos": 2,
+     "title": "Pub Accountants | Inn Control | Licensed Trade Accountants",
+     "snippet": "A passion for hospitality, just hospitality - that's what makes us the best choice for you\u2026Licensed Trade Pub Accountants in the UK."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for pubs",
+     "pos": 1,
+     "title": "Pub Accountants | Inn Control | Licensed Trade Accountants",
+     "snippet": "A passion for hospitality, just hospitality - that\u2019s what makes us the best choice for you\u2026Licensed Trade Pub Accountants in the UK."
+    }
+   ]
+  },
+  "mccaccountants.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "bar accountant uk",
+    "pub accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub accountant",
+     "pos": 7,
+     "title": "Accountants for Restaurants | Caf\u00e9s | Bars | Pubs | Hotels | Manchester",
+     "snippet": "We are accoutantants for many Restaurants, Caf\u00e9s, Bars, Pubs and Hotels in Manchester, Salford and the whole of the UK."
+    },
+    {
+     "src": "ddg",
+     "q": "bar accountant uk",
+     "pos": 10,
+     "title": "Accountants for Restaurants | Caf\u00e9s | Bars | Pubs | Hotels | Manchester | Salford",
+     "snippet": "May 15, 2023 - We are accoutantants for many Restaurants, Caf\u00e9s, Bars, Pubs and Hotels in Manchester, Salford and the whole of the UK."
+    }
+   ]
+  },
+  "hawsons.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for pubs",
+    "pub accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for pubs",
+     "pos": 9,
+     "title": "Pub and restaurant accountants | Hawsons Chartered Accountants",
+     "snippet": "November 3, 2025 - Our friendly team of pub and restaurant accountants provide specialist accountancy and tax services to pubs & restaurants. Our experts provide a unique client focused service to ens"
+    },
+    {
+     "src": "ddg",
+     "q": "pub accountants uk",
+     "pos": 9,
+     "title": "Pub and restaurant accountants | Hawsons Chartered Accountants",
+     "snippet": "Hawsons are specialist pub and restaurant accountants. A wealth of accountancy, tax, acquisition & disposal and personal financial planning experience.Pub and restaurant accountants Sheffield Doncaste"
+    }
+   ]
+  },
+  "apexaccountants.tax": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for pubs",
+    "cafe accountant uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for pubs",
+     "pos": 10,
+     "title": "Trusted Accountants for Bars and Pubs Since 2006",
+     "snippet": "August 5, 2025 - With years of experience in the hospitality sector, Apex Accountants supports UK pubs and bars with trusted advice, clear reporting, and practical financial solutions tailored to the "
+    },
+    {
+     "src": "ddg",
+     "q": "cafe accountant uk",
+     "pos": 3,
+     "title": "Expert Accountants for Cafes and Coffee Shops UK",
+     "snippet": "August 5, 2025 - We\u2019ve been supporting UK cafes and coffee shops since 2006, with around 20 years of hospitality accounting experience."
+    }
+   ]
+  },
+  "loyals.uk": {
+   "hit_count": 2,
+   "queries": [
+    "bar accountant uk",
+    "takeaway accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "bar accountant uk",
+     "pos": 7,
+     "title": "Bar & Pub Accountant London / Industries We Serve / \ud83d\udccb Services | LOYALS Accountants & Business Consultants",
+     "snippet": "kris.nick@loyals.uk \u00b7 London's Bar & Pub Accounting Specialists \u00b7 From VAT on alcohol and late-night levy accounting to staff tip compliance and HMRC defence \u2014 specialist accounting for London's bar a"
+    },
+    {
+     "src": "ddg",
+     "q": "takeaway accountant",
+     "pos": 3,
+     "title": "Accountant Cost Takeaway UK 2026-27 / Blog - loyals.uk",
+     "snippet": "A takeaway in the UK typically pays an accountant between about \u00a360 and \u00a3500 a month in 2026/27. A sole trader filing one Self Assessment return sits near \u00a360. A VAT-registered limited company with st"
+    }
+   ]
+  },
+  "accountantpal.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "catering business accountant",
+    "hotel accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hotel accountant",
+     "pos": 3,
+     "title": "Best Accountant in Burnley | Accountant Pal",
+     "snippet": "Accountant pal\u00ae ltd. Accounting & Tax Made Simple for UK Business. Clear financial support for small businesses by ACCA-qualified experts."
+    },
+    {
+     "src": "ddg",
+     "q": "catering business accountant",
+     "pos": 2,
+     "title": "Best Accountant in Burnley | Accountant Pal",
+     "snippet": "Accountant pal\u00ae ltd. Accounting & Tax Made Simple for UK Business. Clear financial support for small businesses by ACCA-qualified experts. We handle the compliance so you can focus on growth. PROACTIV"
+    }
+   ]
+  },
+  "uk.linkedin.com": {
+   "hit_count": 2,
+   "queries": [
+    "catering business accountant",
+    "hotel accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hotel accountant",
+     "pos": 10,
+     "title": "579 Hotel Accountant jobs in London - LinkedIn",
+     "snippet": "Accountant \u00b7 Accountant \u00b7 Accountant \u00b7 Accountant - Fully Remote (Must be UK-Based) \u00b7 Accountants - AI Training - London, UK \u00b7 Rent and receivables accountant \u00a3 ..."
+    },
+    {
+     "src": "ddg",
+     "q": "catering business accountant",
+     "pos": 1,
+     "title": "5,000+ Accountant jobs in United Kingdom",
+     "snippet": "Accountant. J&T Business Consulting. Belfast, Northern Ireland, United Kingdom. Be an early applicant.Accountants - AI Training - Coventry, UK. Prolific. Coventry, England, United Kingdom."
+    }
+   ]
+  },
+  "aims.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "bed and breakfast accountant uk",
+    "guest house accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "guest house accountant",
+     "pos": 3,
+     "title": "Accountants for Bed and Breakfast and Guest Houses - aims.co.uk",
+     "snippet": "Accountants for Bed and Breakfast and Guest Houses We do what you expect an accountant to do and we do it well As the owner of a guest house or bed and breakfast you will already have the headache of "
+    },
+    {
+     "src": "ddg",
+     "q": "bed and breakfast accountant uk",
+     "pos": 3,
+     "title": "Accountants for Bed and Breakfast and Guest Houses",
+     "snippet": "Accountants for Bed and Breakfast and Guest Houses We do what you expect an accountant to do and we do it well As the owner of a guest house or bed and breakfast you will already have the headache of "
+    }
+   ]
+  },
+  "btbaccountants.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "bed and breakfast accountant uk",
+    "guest house accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "guest house accountant",
+     "pos": 4,
+     "title": "Accountants for Hotels | Accountancy for Guest Houses",
+     "snippet": "We are specialist accountants for hotels, guest houses, bed and breakfast and AirBnb's. Get a free hotel accountancy quote today."
+    },
+    {
+     "src": "ddg",
+     "q": "bed and breakfast accountant uk",
+     "pos": 5,
+     "title": "Accountants for Hotels | Accountancy for Guest Houses",
+     "snippet": "We are specialist accountants for hotels, guest houses, bed and breakfast and AirBnb's. Get a free hotel accountancy quote today."
+    }
+   ]
+  },
+  "thetaxguys.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for cafes",
+    "cafe accountant uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "cafe accountant uk",
+     "pos": 1,
+     "title": "Coffee Shops and Cafes - The Tax Guys",
+     "snippet": "December 5, 2025 - As specialist cafe accountants, we help UK coffee shop owners streamline their finances, reduce tax liabilities, and grow their business."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for cafes",
+     "pos": 3,
+     "title": "Coffee Shops and Cafes - The Tax Guys",
+     "snippet": "At The Tax Guys, our specialist cafe accountant services are designed specifically for the UK hospitality sector, ensuring your business stays compliant while optimizing financial performance."
+    }
+   ]
+  },
+  "dsburge.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "VAT on food takeaway advice",
+    "cafe accountant uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "cafe accountant uk",
+     "pos": 7,
+     "title": "Accountants for Restaurants | DS Burge & Co Accountants",
+     "snippet": "October 13, 2025 - At DS Burge & Co, we offer specialised accounting services for restaurants and cafes. We provide strategic business tax advice to help you optimise your tax position, manage cash fl"
+    },
+    {
+     "src": "ddg",
+     "q": "VAT on food takeaway advice",
+     "pos": 4,
+     "title": "VAT on Food and Drink at Cafes - How Does it Work? - DS Burge & Co",
+     "snippet": "4 Jun 2026 ... Takeaway food that requires further preparation by the customer, such as reheating or assembling, is usually eligible for zero-rated VAT. It is ..."
+    }
+   ]
+  },
+  "cruseburke.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for cafes",
+    "cafe accountant uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "cafe accountant uk",
+     "pos": 8,
+     "title": "Accountants For Cafes and Coffee Shops | CruseBurke",
+     "snippet": "December 29, 2025 - We have a team of qualified and experienced accountants for cafes, helping cafes and coffee shops with accountancy and tax matters."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for cafes",
+     "pos": 9,
+     "title": "Industries We Cover | CruseBurke",
+     "snippet": "Accountants for Pharmacists in London. Opticians.Common accounting mistakes for healthcare professionals in the UK. Choosing an Accountant."
+    }
+   ]
+  },
+  "xero.com": {
+   "hit_count": 2,
+   "queries": [
+    "cafe accountant uk",
+    "catering business accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "cafe accountant uk",
+     "pos": 10,
+     "title": "Accounting Software Built for Cafes | Xero UK",
+     "snippet": "See and organise all your financial records in Xero, ready for your UK tax reportingLearn more about ERP software for your small business \u00b7 The Xero App Store has hundreds of apps to help you run your"
+    },
+    {
+     "src": "ddg",
+     "q": "catering business accountant",
+     "pos": 4,
+     "title": "Accounting Software for Small Businesses | Xero",
+     "snippet": "Xero software for small businesses connects you to your bank, accountant, bookkeeper, and other business apps. Start a free trial today.Explore Xero accounting software and its tools for small busines"
+    }
+   ]
+  },
+  "croner.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "tronc scheme accountant",
+    "tronc scheme advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tronc scheme advice",
+     "pos": 6,
+     "title": "Tronc Scheme: Employment (Allocation of Tips) Act 2023 - Croner",
+     "snippet": "16 Jan 2026 ... A tronc scheme is a specific arrangement used to equally distribute tips, gratuities, and/or service charges."
+    },
+    {
+     "src": "ddg",
+     "q": "tronc scheme accountant",
+     "pos": 5,
+     "title": "Tronc Scheme: Employment (Allocation of Tips) Act 2023",
+     "snippet": "A troncmaster is the person responsible for ensuring tips, gratuities, and service charges are shared equally via tronc payments through the scheme and additionally responsible for ensuring correct fi"
+    }
+   ]
+  },
+  "buzzacott.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "tronc scheme advice",
+    "troncmaster services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tronc scheme advice",
+     "pos": 7,
+     "title": "Troncmaster Services | Fair & Compliant Tip Management - Buzzacott",
+     "snippet": "Our independent troncmaster service ensures your business is fully compliant with HMRC regulations and the Employment (Allocation of Tips) Act (\u201cTipping Act\u201d) - ..."
+    },
+    {
+     "src": "ddg",
+     "q": "troncmaster services",
+     "pos": 2,
+     "title": "Troncmaster Services | Fair & Compliant Tip Management | Buzzacott",
+     "snippet": "Independent Troncmaster support for hospitality businesses. Ensure compliant tip distribution, maximize National Insurance savings, and simplify administration."
+    }
+   ]
+  },
+  "3esaccountants.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "tronc scheme accountant",
+    "troncmaster services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tronc scheme accountant",
+     "pos": 3,
+     "title": "Tronc schemes and troncmaster services: What you need to know - 3E'S Accountants",
+     "snippet": "October 29, 2025 - Learn how tronc schemes and troncmaster services work, their tax benefits, and how to ensure fair tip distribution in hospitality."
+    },
+    {
+     "src": "ddg",
+     "q": "troncmaster services",
+     "pos": 5,
+     "title": "Tronc schemes and troncmaster services: What you need to know...",
+     "snippet": "Who is a troncmaster and why do you need one? A troncmaster is the person in charge of the tronc. They make sure tips are collected and shared properly."
+    }
+   ]
+  },
+  "crunch.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "VAT on food takeaway advice",
+    "vat on hot food takeaway accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "VAT on food takeaway advice",
+     "pos": 2,
+     "title": "VAT on food and drink explained: UK VAT rates for caf\u00e9s ...",
+     "snippet": "11 Jun 2025 ... Most cold takeaway food is zero-rated for VAT, but only if it's not an \u201cexcepted item\u201d such as confectionery, crisps, or sweetened baked goods."
+    },
+    {
+     "src": "ddg",
+     "q": "vat on hot food takeaway accountant",
+     "pos": 2,
+     "title": "VAT on food and drink explained: UK VAT rates for caf\u00e9s ...",
+     "snippet": "Jun 11, 2025 \u00b7 We break down VAT on food and drink in the UK for all caf\u00e9 owners, restauranters, and takeaway businesses. The ultimate guide on UK VAT rates for food and drink."
+    }
+   ]
+  },
+  "reflexaccounting.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "hospitality vat advice uk",
+    "vat on hot food takeaway accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "vat on hot food takeaway accountant",
+     "pos": 1,
+     "title": "VAT on Food and Drink: Complete Guide for UK Caf\u00e9s and ...",
+     "snippet": "Jan 8, 2026 \u00b7 Confused about VAT on food? Our complete guide covers zero-rated items, standard-rated meals, takeaways, and delivery. Avoid HMRC penalties with expert advice."
+    },
+    {
+     "src": "ddg",
+     "q": "hospitality vat advice uk",
+     "pos": 6,
+     "title": "VAT on Food and Drink: Complete Guide for UK Caf\u00e9s & Restaurants",
+     "snippet": "The core VAT rules for the hospitality sector remain largely unchanged, with the standard UK VAT rate continuing at 20% for applicable goods and services. This guide provides a simple explanation of a"
+    }
+   ]
+  },
+  "pooley.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "TOMS accountant",
+    "tour operators margin scheme accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "TOMS accountant",
+     "pos": 2,
+     "title": "Tour Operator Margin Scheme (TOMS) VAT Consultant | Martin Pooley",
+     "snippet": "If you think that you are paying too much under the Tour Operators' Margin Scheme (TOMS VAT), then you've come to the right person! I am an independent accountant specialising in the Tour Operators\u2019 M"
+    },
+    {
+     "src": "ddg",
+     "q": "tour operators margin scheme accountant",
+     "pos": 4,
+     "title": "Tour Operator Margin Scheme (TOMS) VAT Consultant | Martin Pooley",
+     "snippet": "Welcome to Pooley.co.uk.I am an independent accountant specialising in the Tour Operators\u2019 Margin Scheme for VAT and am well known in the travel industry and HMRC."
+    }
+   ]
+  },
+  "las-accounting.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "TOMS accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "TOMS accountant",
+     "pos": 5,
+     "title": "TOMS VAT for Travel Agents | Specialist Support | LAS Accounting",
+     "snippet": "October 6, 2024 - VAT and TOMS compliance in the travel industry requires specialist travel VAT knowledge. Generalist accountants often apply standard VAT logic to travel businesses, where margin sche"
+    },
+    {
+     "src": "ddg",
+     "q": "TOMS accountant",
+     "pos": 6,
+     "title": "Accountants for Tour Operators | VAT & TOMS Specialists",
+     "snippet": "February 22, 2026 - Specialist accountants for UK tour operators. VAT, TOMS, margin calculations and ongoing compliance handled correctly from day one."
+    }
+   ]
+  },
+  "bnwaccountants.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "TOMS accountant",
+    "tour operators margin scheme accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "TOMS accountant",
+     "pos": 10,
+     "title": "Tour Operators Margin Scheme (TOMS) - BNW Accountants",
+     "snippet": "August 2, 2023 - Under TOMS you cannot reclaim any VAT charged on the travel services or goods you buy in and resupply, the tax on such goods or services is accounted for in the relevant Member State "
+    },
+    {
+     "src": "ddg",
+     "q": "tour operators margin scheme accountant",
+     "pos": 6,
+     "title": "Tour Operators Margin Scheme (TOMS) - BNW Accountants",
+     "snippet": "Margin Scheme: This means it is a supply of goods or services which are: bought in from another person and re-supplied without material alteration or further processing, andsupplied by a tour operator"
+    }
+   ]
+  },
+  "dhpayroll.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "hospitality payroll services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality payroll services uk",
+     "pos": 4,
+     "title": "Hospitality Payroll Services for Hotels, Pubs & Restaurants",
+     "snippet": "September 12, 2025 - Outsourced hospitality payroll services for UK restaurants, hotels and pubs. HMRC compliant, accurate pay, pensions and tips handled with ease."
+    },
+    {
+     "src": "ddg",
+     "q": "hospitality payroll services uk",
+     "pos": 10,
+     "title": "Hospitality Payroll Services | Payroll Solutions for Restaurants, Hotels & Bars",
+     "snippet": "At dhpayroll we specialise in outsourced payroll services for hospitality businesses, ensuring your employees are paid accurately, on time, and in compliance with all tax and labour laws."
+    }
+   ]
+  },
+  "sas-accounts.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality accountants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accountants",
+     "pos": 3,
+     "title": "Hospitality Accountants for Hotels & Restaurants",
+     "snippet": "Specialist hospitality accountants supporting hotels, pubs and restaurants with tax, bookkeeping and growth-focused financial advice."
+    }
+   ]
+  },
+  "phs-uk.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accountants uk",
+     "pos": 5,
+     "title": "Hospitality Accountants for Hotels and Restaurants",
+     "snippet": "Hospitality accountants for hotels, restaurants, and cafes. Get help with taxes, payroll, and accounts from experts. Contact PHS Associates to get started today."
+    }
+   ]
+  },
+  "quilliammarr.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accountants uk",
+     "pos": 7,
+     "title": "Accountants for Hospitality in the UK \u2013 Hotels, Restaurants, and...",
+     "snippet": "Accountants for Bars UK. Dedicated bar accountants providing clear financial management, tax efficiency, and business insights.Accountants for Catering Companies UK. Tailored accounting solutions for "
+    }
+   ]
+  },
+  "chandlerandpartners.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for hospitality"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for hospitality",
+     "pos": 7,
+     "title": "Hospitality Accountants | Hospitality Accounting Services",
+     "snippet": "With decades of experience supporting hospitality businesses across the UK, Chandler & Partners is your trusted partner for financial success. Our team of skilled accountants is dedicated to helping y"
+    }
+   ]
+  },
+  "passmanleonard.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for hospitality"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for hospitality",
+     "pos": 8,
+     "title": "Accountants For Hospitality Businesses \u2013 Passman Leonard",
+     "snippet": "January 26, 2026 - Struggling to keep your hospitality finances under control? As accountants for hospitality business, we help pubs, restaurants, hotels, and other hospitality businesses streamline b"
+    }
+   ]
+  },
+  "tca.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for hospitality"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for hospitality",
+     "pos": 9,
+     "title": "Accountants for the Hospitality Industry | Wellden Turnbull Accountants",
+     "snippet": "June 27, 2025 - At Wellden Turnbull, we have years of experience working within the hospitality industry. Whether you are a restaurant, hotel, pub or caf\u00e9, we know how fast paced your business is, and"
+    }
+   ]
+  },
+  "streets.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for hospitality"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for hospitality",
+     "pos": 10,
+     "title": "Accountants & Advisers for Hospitality & Leisure",
+     "snippet": "April 24, 2026 - Specialist accountancy, tax and business advice for hospitality, tourism, leisure and food and drink businesses. Expert support including ViFi, our virtual finance office. The hospita"
+    }
+   ]
+  },
+  "hizconsulting.net": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality accounting services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accounting services uk",
+     "pos": 1,
+     "title": "Accounting & Bookkeeping For UK Hospitality Industry",
+     "snippet": "Hospitality Accounting Services for UK Firms: Precise Finances Since 2015, we have been providing tailored finance and accounting solutions to UK firms. Our hospitality accounting services cater to th"
+    }
+   ]
+  },
+  "qxglobalgroup.com": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality accounting services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accounting services uk",
+     "pos": 2,
+     "title": "Hospitality Accounting Services UK - QX Global Group",
+     "snippet": "QX Global Group provides hospitality accounting services for UK hotels, resorts, and restaurants with USALI compliance, automated reporting, and streamlined finance."
+    }
+   ]
+  },
+  "auditconsultinggroup.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality accounting services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accounting services uk",
+     "pos": 4,
+     "title": "Hospitality Industry Accounting & Tax Services UK | ACG",
+     "snippet": "Audit Consulting Group provides expert accounting, bookkeeping, payroll, VAT, tax planning and advisory services for hotels, restaurants, caf\u00e9s, pubs, catering companies and hospitality groups across "
+    }
+   ]
+  },
+  "illiamsstanley.co": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality accounting services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accounting services uk",
+     "pos": 6,
+     "title": "Hospitality Accounting Services for Restaurants, Bars & Hotels",
+     "snippet": "Specialist hospitality accountants for restaurants, bars & hotels. Clear reporting, better decisions, and support as you grow."
+    }
+   ]
+  },
+  "thehospitalityaccountants.com": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality accounting services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accounting services uk",
+     "pos": 7,
+     "title": "EOG Accounting - The Hospitality Accountants",
+     "snippet": "Rooted in North Wales. Trusted by Hospitality Businesses Across the UK. Founded in North Wales and trusted by hospitality businesses UK-wide, we combine real industry experience with specialist accoun"
+    }
+   ]
+  },
+  "accucloud.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality accounting services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accounting services uk",
+     "pos": 8,
+     "title": "Hospitality Accounting Services for Leisure & Tourism Sectors",
+     "snippet": "The tourism, leisure, hospitality and food & drink industries are crucial to the UK economy in terms of driving employment, increasing visitor spend, and stimulating growth and development across the "
+    }
+   ]
+  },
+  "aab.uk": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality accounting services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality accounting services uk",
+     "pos": 9,
+     "title": "Hotel Accounting Services | AAB",
+     "snippet": "Hotel Accounting Services Our hotel and hospitality accounting services, managed by professionals who know the industry, bring all your financial and operational data together. With live dashboards, y"
+    }
+   ]
+  },
+  "uk.jooble.org": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant accountant",
+     "pos": 7,
+     "title": "Urgent! Restaurant accountant jobs - July 2026 - Jooble",
+     "snippet": "Apply for Restaurant accountant jobs. Explore all 439.000+ current Jobs in United Kingdom and abroad. Full-time, temporary, and part-time jobs. Competitive salary. Job email alerts. Fast & Free. Top e"
+    }
+   ]
+  },
+  "azlaccounting.solutions": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant accountant",
+     "pos": 9,
+     "title": "Accountants for UK Restaurants & Hotels - AZL Accounting Solutions",
+     "snippet": "Specialist accountants for UK restaurants & cafes. We integrate with your EPOS, manage VAT compliance & Tronc systems, and control COGS to boost your profitability."
+    }
+   ]
+  },
+  "oodvilleaccountancy.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant accountant",
+     "pos": 10,
+     "title": "Hospitality Accountants | Woodville Accountancy",
+     "snippet": "Forward thinking restaurant & hospitality trade accountants.Restaurant Accountants you won\u2019t take with a pinch of salt. Helping you cut through the numbers with the best Tsuki."
+    }
+   ]
+  },
+  "hayes-accountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant accountants uk",
+     "pos": 1,
+     "title": "Accountants For Restaurants And Tax Consultants In London UK",
+     "snippet": "So if you need dedicated restaurant accountants in London UK as well as expert tax consultants, choose Hayes Chartered Certified Accountants as your ..."
+    }
+   ]
+  },
+  "abmdigitalaccountants.com": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant accountants uk",
+     "pos": 3,
+     "title": "Restaurant Accountants UK | Accounting Services for Restaurants",
+     "snippet": "At ABM Chartered Accountants our restaurant accounting services help you manage complex revenue and cost structures, deliver accurate monthly ..."
+    }
+   ]
+  },
+  "account-ease.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant accountants uk",
+     "pos": 7,
+     "title": "Accountants for Restaurant in London \u2013 Restaurant Accounting",
+     "snippet": "Our team of accountants for restaurant businesses in London provides end-to-end support including bookkeeping, VAT returns, payroll management, and ..."
+    }
+   ]
+  },
+  "dauman.co": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant accountants uk",
+     "pos": 9,
+     "title": "Restaurant Accountants in London",
+     "snippet": "With 75 years of experience, our chartered restaurant accountants understand the nuances of the hospitality industry."
+    }
+   ]
+  },
+  "uk.jobted.com": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant accountants uk",
+     "pos": 10,
+     "title": "Restaurant Accounting Jobs in Leicester (10 Vacancies) | Jobted",
+     "snippet": "Birmingham Airport circa \u00a340,000 Ref: 10214 The Company Lord Accounting and Finance are recruiting on behalf of Chaiiwala who are one of the UK's ..."
+    }
+   ]
+  },
+  "pearllemonaccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for restaurants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for restaurants",
+     "pos": 1,
+     "title": "Accountants for Restaurants",
+     "snippet": "Expert accounting for UK restaurants.Accountants for Restaurants \u2013 Turning Tables into Profits. Restaurants thrive on a delicate balance between serving exceptional food and managing tight financial m"
+    }
+   ]
+  },
+  "sbxaccountants.com": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for restaurants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for restaurants",
+     "pos": 3,
+     "title": "Accountants for Restaurants Across the UK | SBX Accountants",
+     "snippet": "We provide clear, professional support tailored specifically for self-employed restaurant owners and restaurant businesses across the UK. From bookkeeping and tax returns to payroll, VAT and HMRC comp"
+    }
+   ]
+  },
+  "coreadviz.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for restaurants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for restaurants",
+     "pos": 5,
+     "title": "Expert Accountant for Restaurant Hotels Bars Hospitality Sector UK",
+     "snippet": "Looking for an accountant specializing in restaurant businesses in the UK? Get financial services & tax advice tailored for restaurants.Why Restaurants Need. Specialized Accountants in the UK. We know"
+    }
+   ]
+  },
+  "rawligion.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for restaurants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for restaurants",
+     "pos": 7,
+     "title": "Accountants For Restaurants UK - Best Prices",
+     "snippet": "Finding the Perfect Accountant for Your Restaurant: Navigating the UK SceneWhy should I choose a specialised accountant for my restaurant in UK?How do I find a reliable accountant for my UK restaurant"
+    }
+   ]
+  },
+  "octaaccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for restaurants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for restaurants",
+     "pos": 8,
+     "title": "Accounting for Restaurants \u2013 Octa Accountants",
+     "snippet": "Managing a restaurant\u2019s finances requires specialized expertise. Here\u2019s why Octa Accountants is your best choice for accounting and tax services in the UK hospitality sector"
+    }
+   ]
+  },
+  "savure.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant bookkeeping services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant bookkeeping services uk",
+     "pos": 1,
+     "title": "UK Bookkeeping Services For Restaurants, Pubs & Hospitality",
+     "snippet": "That\u2019s why the bookkeeping service you choose in UK should live and breathe restaurant life.In UK, restaurants and pubs are often hampered by legacy tills, mangled receipts, or gnarly supplier stateme"
+    }
+   ]
+  },
+  "accountingchefs.com": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant bookkeeping services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant bookkeeping services uk",
+     "pos": 2,
+     "title": "Restaurant Bookkeeping - Accounting Chefs",
+     "snippet": "Restaurant Bookkeeping Services in UK.Our specialized Restaurant Bookkeeping Services in UK are designed to streamline your financial processes, ensure compliance, and provide you with the insights yo"
+    }
+   ]
+  },
+  "ibntech.com": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant bookkeeping services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant bookkeeping services uk",
+     "pos": 4,
+     "title": "Restaurants Bookkeeping Services | Restaurant Bookkeeper | IBN",
+     "snippet": "IBN is Leading Restaurants Bookkeeping Service Provider. Streamline financial management for your restaurant business with expert bookkeeping solutions.UK: +44-800-041-8618. US:+1-844-644-8440. [email"
+    }
+   ]
+  },
+  "velan-bookkeeping.com": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant bookkeeping services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant bookkeeping services uk",
+     "pos": 7,
+     "title": "Bookkeeping for Restaurants and Food Businesses",
+     "snippet": "Velan offers outsourced restaurant bookkeeping and accounting for bars, caf\u00e9s, and food businesses. Get expert support for POS, payroll, and tax accuracy."
+    }
+   ]
+  },
+  "ukclassifieds.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant bookkeeping services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant bookkeeping services uk",
+     "pos": 8,
+     "title": "Partner with Solutions 4 Caterers for Precision Restaurant...",
+     "snippet": "Ensure your restaurant's financial health with Hospitality Solutions Group's specialized restaurant bookkeeping services. We go beyond basic record-keeping, offering detailed financial analysis and re"
+    }
+   ]
+  },
+  "sterlingandwells.com": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant bookkeeping services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant bookkeeping services uk",
+     "pos": 9,
+     "title": "Restaurant Bookkeeping in the UK: VAT, Payroll & Profit Tips for...",
+     "snippet": "Running a successful restaurant in the UK is no small feat. Beyond mouth-watering menus and memorable service, maintaining healthy profits hinges on a rigorous approach to restaurant bookkeeping. Why?"
+    }
+   ]
+  },
+  "accountingoutsourcehub.com": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant bookkeeping services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant bookkeeping services uk",
+     "pos": 10,
+     "title": "Restaurant Bookkeeping Outsourcing - Accounting Outsource Hub",
+     "snippet": "Restaurant Bookkeeping and Accounting Services. Are you a restaurant owner looking to stay in the business by reducing overhead accounting charges?BackOffice Outsource Bookkeeping and Accounting Servi"
+    }
+   ]
+  },
+  "brebners.com": {
+   "hit_count": 1,
+   "queries": [
+    "pub accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub accountant",
+     "pos": 5,
+     "title": "Pubs, Clubs and Restaurant Accountants London - Brebners",
+     "snippet": "We're members of the Institute of Chartered Accountants in England and Wales and uphold the highest standards. ... If you're looking for accountants for your ..."
+    }
+   ]
+  },
+  "innscribeuk.com": {
+   "hit_count": 1,
+   "queries": [
+    "pub accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub accountant",
+     "pos": 8,
+     "title": "Innscribe Licensed Trade Accountants | Pub Accountancy Specialists",
+     "snippet": "Contact Us. Innscribe UK. 14 Mill Street, Bradford, West Yorkshire, BD1 4AB. Tel 01274 393131. Fax 01274 727272. Email info ..."
+    }
+   ]
+  },
+  "roslyns.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "pub accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub accountant",
+     "pos": 10,
+     "title": "Hospitality Business Services | Roslyns | United Kingdom",
+     "snippet": "Since our creation in 1992 as pub accountants, Roslyns have grown to cover all aspects of business services across the hospitality sector. We provide market ..."
+    }
+   ]
+  },
+  "fairmileaccounting.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for pubs"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for pubs",
+     "pos": 4,
+     "title": "Specialist Accountants for Pubs and the Hospitality Industry",
+     "snippet": "Accounting, bookkeeping and payroll services for your restaurant \u2013 All for a fixed monthly fee. ... We are specialist accountants serving the pub and hospitality industry."
+    }
+   ]
+  },
+  "hayhursts.net": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for pubs"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for pubs",
+     "pos": 5,
+     "title": "Accountants for Pubs & Licensed Trades",
+     "snippet": "February 12, 2020 - Specialising in accounting for pubs, breweries, clubs, hotels or restaurants, we\u2019ve years of experience and knowhow in accounting for licensed trades."
+    }
+   ]
+  },
+  "blue-shore.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for pubs"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for pubs",
+     "pos": 6,
+     "title": "Pub accountants near London | Blue Shore accountants",
+     "snippet": "November 10, 2023 - Are you looking for pub accountants near London? We specialise in accounting for pubs, restaurants, takeaways, bars and hotels. Call us today."
+    }
+   ]
+  },
+  "innspiredaccountancy.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "pub accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub accountants uk",
+     "pos": 6,
+     "title": "Home - Innspired Accountancy - Pub Accountants for Licensed Trade",
+     "snippet": "With years of experience working with pubs, bars, hotels, restaurants, and other hospitality businesses, we offer tailored accounting and bookkeeping services that ensure your financial operations run"
+    }
+   ]
+  },
+  "ackeer.com": {
+   "hit_count": 1,
+   "queries": [
+    "pub accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub accountants uk",
+     "pos": 7,
+     "title": "Allenby Accountants",
+     "snippet": "Pub Accountants Allenby Accountants are specialist licensed trade Accountants in London. Trust Allenby Accountants in London for Accounting Specialists, Ensuring Fiscal Clarity and Growth."
+    }
+   ]
+  },
+  "cigmaaccounting.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "pub accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub accountants uk",
+     "pos": 10,
+     "title": "Pub Accountants | Cigma Accounting",
+     "snippet": "Accountants for pubs understand these demands and provide tailored solutions that streamline financial management and compliance. Cigma Accounting's specialized pub accountants understand the unique f"
+    }
+   ]
+  },
+  "mindspaceoutsourcing.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "bar accountant uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "bar accountant uk",
+     "pos": 5,
+     "title": "Behind the Bar: Accounting for Profitable Bars and Restaurants",
+     "snippet": "January 19, 2026 - C. Compliance confidence UK bars and restaurants face a range of tax and legal obligations, including: VAT on food, drink, and alcohol. PAYE and National Insurance for staff. Tronc "
+    }
+   ]
+  },
+  "taxtuneaccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "takeaway accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "takeaway accountant",
+     "pos": 9,
+     "title": "Accountants for Restaurants & Takeaways | TaxTune Accountants",
+     "snippet": "Accountants for restaurants, cafes and takeaways across the UK. VAT, payroll, tips, bookkeeping and accounts, on a fixed fee. Supporting hospitality across the UK, fully online."
+    }
+   ]
+  },
+  "4foldaccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for takeaways"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for takeaways",
+     "pos": 4,
+     "title": "accounting services for restaurants & take aways - 4Fold Accountants",
+     "snippet": "At 4Fold Accountants, we understand the unique challenges faced by restaurant and takeaway owners. Our specialist accounting services provide expert tax ..."
+    }
+   ]
+  },
+  "nsaccounting.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for takeaways"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for takeaways",
+     "pos": 5,
+     "title": "Specialist Accountants for Restaurants & Hospitality Businesses",
+     "snippet": "We Work With: Restaurants, cafes & takeaways. Pubs, bars & hotels. Catering & hospitality businesses across the UK."
+    }
+   ]
+  },
+  "fredmichael.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for takeaways"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for takeaways",
+     "pos": 6,
+     "title": "Tax Accountant London for Restaurants",
+     "snippet": "3 Jul 2026 ... Get expert tax advice for your London restaurant. From VAT returns to payroll, our expert tax accountants protect your profits & ensure HMRC ..."
+    }
+   ]
+  },
+  "aceaccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for takeaways"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for takeaways",
+     "pos": 8,
+     "title": "Accountants for Restaurants and Takeaways",
+     "snippet": "Over many years, we have garnered a wide range of expertise working within the hospitality and catering industry. We have been advising restaurants, ..."
+    }
+   ]
+  },
+  "bishopfleming.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for takeaways"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for takeaways",
+     "pos": 10,
+     "title": "Food and Drink | Sectors - Bishop Fleming",
+     "snippet": "Bishop Fleming offers specialised accounting and advisory services for the dynamic Food & Drink sector, supporting growth and innovation across the UK."
+    }
+   ]
+  },
+  "goldenvat.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "fish and chip shop accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "fish and chip shop accountant",
+     "pos": 2,
+     "title": "Tax Advice for Fish and Chip Shop Owners in the UK - GoldenVAT",
+     "snippet": "23 Jun 2025 ... Tax is an essential, if often overlooked, aspect of running a successful fish and chip shop in the UK. While mastering the perfect batter ..."
+    }
+   ]
+  },
+  "justanswer.com": {
+   "hit_count": 1,
+   "queries": [
+    "fish and chip shop accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "fish and chip shop accountant",
+     "pos": 4,
+     "title": "I own a fish and chip shop. i was advised at start up by my ...",
+     "snippet": "23 Feb 2010 ... i was advised at start up by my accountant that it made no difference to me when i ... UK VAT Registration: Claiming VAT Returns After Early ..."
+    }
+   ]
+  },
+  "taxadvisermagazine.com": {
+   "hit_count": 1,
+   "queries": [
+    "fish and chip shop accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "fish and chip shop accountant",
+     "pos": 5,
+     "title": "Fish and chip shops: a flawed HMRC investigation to cash-only ...",
+     "snippet": "24 Mar 2023 ... Georgiou & Co Ltd operated cash-only fish and chip shops. Following an investigation by HMRC, the First-tier Tribunal found that HMRC had based VAT assessments ..."
+    }
+   ]
+  },
+  "kinsellatax.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "fish and chip shop accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "fish and chip shop accountant",
+     "pos": 7,
+     "title": "Tax warning for fish and chip shops - Kinsella Tax Investigation",
+     "snippet": "12 Dec 2014 ... Tax Evasion Penalties (UK) \u00b7 Tax Fraud \u00b7 Tax Investigation \u00b7 VAT ... Carry out a stock-take at the end of your accounting period and record it ..."
+    }
+   ]
+  },
+  "crickmay.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "fish and chip shop accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "fish and chip shop accountant",
+     "pos": 8,
+     "title": "Fish & Chip Shop Valuations - Crickmay Chartered Surveyors",
+     "snippet": "Crickmay were approached by a London firm of accountants to undertake a valuation of a portfolio of fish and chip shops across the South-East."
+    }
+   ]
+  },
+  "myrealex.com": {
+   "hit_count": 1,
+   "queries": [
+    "hotel accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hotel accountant",
+     "pos": 1,
+     "title": "Allenby Accountants",
+     "snippet": "Allenby Accountants has a specialist team of hospitality accountants who provide accountancy and tax services for London's hospitality and leisure sector."
+    }
+   ]
+  },
+  "allenbyaccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "hotel accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hotel accountant",
+     "pos": 2,
+     "title": "Allenby's Dedicated Hotel Accountants",
+     "snippet": "Request a callback here or call 0208 914 8887 to arrange a complimentary, no-obligation consultation with our hotel accountants."
+    }
+   ]
+  },
+  "adzuna.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "hotel accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hotel accountant",
+     "pos": 5,
+     "title": "24 hotel Jobs in Hounslow | February 2026 | Adzuna.co.uk",
+     "snippet": "Junior Accountant \u2013 UK Location: Moxy London Heathrow / Courtyard Glasgow SEC Start date: ASAP Hotel Co 51 is a hotel management and development Company."
+    }
+   ]
+  },
+  "hotelco51.com": {
+   "hit_count": 1,
+   "queries": [
+    "hotel accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hotel accountant",
+     "pos": 6,
+     "title": "Accountant - Hotel Co 51",
+     "snippet": "Accountant. Accountant \u2013 Hotel Co 51 UK. Location: Moxy London Heathrow / Courtyard Glasgow SEC. Start date: ASAP."
+    }
+   ]
+  },
+  "myjobmag.com": {
+   "hit_count": 1,
+   "queries": [
+    "hotel accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hotel accountant",
+     "pos": 7,
+     "title": "Hotel Accountant at Golden Alpine Hotel and Resort... | MyJobMag",
+     "snippet": "Hotel Accountant. Job Type Full Time.Requirements. Minimum of 5 years experience as hotel accountant in a reputable hotel. Candidate must reside in Yola and its environs."
+    }
+   ]
+  },
+  "ocallaghan.recruitgenie.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "hotel accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hotel accountant",
+     "pos": 8,
+     "title": "Accountant - Hotels, Hospitality House, Dublin | O'Callaghan Collection",
+     "snippet": "O'Callaghan Collection is a thoughtfully curated and design led collection of 5 Irish family-owned and managed luxury boutique hotels located in the heart of Dublin and Gibraltar city centres."
+    }
+   ]
+  },
+  "astonhughes.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "guest house accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "guest house accountant",
+     "pos": 7,
+     "title": "Hotels Guest Houses and B&B\u2019s | Aston Hughes | Chartered ...",
+     "snippet": "Hotels Guest Houses and B&B\u2019s Hotels Guest Houses and B&B\u2019s If you are currently running a hotel, bed and breakfast or guest house we can provide all the services you may expect from an accountant and"
+    }
+   ]
+  },
+  "ross-brooke.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "guest house accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "guest house accountant",
+     "pos": 8,
+     "title": "Specialist accountants for holiday home owners - UHY Ross Brooke ...",
+     "snippet": "Holiday Lets Specialist Accountants for Holiday Lets Owners of guest houses and B&Bs, VRBO and Airbnb hosts, caravan and mobile home owners, and those who rent out a room or other accommodation for ho"
+    }
+   ]
+  },
+  "agileaccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "guest house accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "guest house accountant",
+     "pos": 9,
+     "title": "Accountants for Hotels & Airbnbs | Agile Accountants",
+     "snippet": "Accountants for Hotels & Airbnbs Running a hospitality business is exciting, but it\u2019s also complex. Whether you operate a hotel, guesthouse, serviced apartment, or a portfolio of short-term holiday re"
+    }
+   ]
+  },
+  "/clev?event=startpageresultclick&sc=8vpxmxskdggklbj6tvuciedn1wgyswjgmhvg4nuadftpzlz0dnap9hsd9szrlvux9h6macriofhbqjygwn5psj4zapqrn&payload={\"bdssessionid\":\"0b2089e8942f4513b621767f24391e3d\",\"cheqid\":\"\",\"countrycode\":\"gb\",\"devicetype\":\"mobile\",\"endpoint\":\"search.serp\",\"hasgoogleads\":false,\"page_id\":\"too9aqcdqojwytbx\",\"querycategory\":\"web\",\"segment\":\"startpage.udog\",\"session_id\":\"1llxmpdv9a2iwq0a\",\"surface\":\"serp-web\",\"transport\":\"href-request\"}": {
+   "hit_count": 1,
+   "queries": [
+    "guest house accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "guest house accountant",
+     "pos": 10,
+     "title": "",
+     "snippet": ""
+    }
+   ]
+  },
+  "dominichill.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "bed and breakfast accountant uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "bed and breakfast accountant uk",
+     "pos": 6,
+     "title": "Accountants for bed and breakfasts - Dominic Hill",
+     "snippet": "If you are looking for Accountants for Bed and Breakfast establishments then look no further. Dominic Hill are experienced Accountants in the hotel field who can help you with all the accountancy matt"
+    }
+   ]
+  },
+  "makesworth.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "bed and breakfast accountant uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "bed and breakfast accountant uk",
+     "pos": 10,
+     "title": "Directors\u2019 loans \u2013 Beware of \u2018bed and breakfasting\u2019 - Makesworth...",
+     "snippet": "Have you heard of \u2018bed and breakfasting\u2019 in director\u2019s loans?We are an Award Winning Accountancy Practice of Chartered Accountant. Our professional team provides Accounting, Taxation and Advisory serv"
+    }
+   ]
+  },
+  "onpointaccounting.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "cafe accountant uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "cafe accountant uk",
+     "pos": 5,
+     "title": "Cafes - Accounting and Bookkeeping Services | OnPoint Accounting UK",
+     "snippet": "February 20, 2023 - OnPoint Accounting UK offers expert accounting and bookkeeping services for cafes in the UK. Our team of professionals can help you manage your finances and grow your business"
+    }
+   ]
+  },
+  "onlineaccountingservices.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "cafe accountant uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "cafe accountant uk",
+     "pos": 6,
+     "title": "Accountant for Caf\u00e9 | Online accountant",
+     "snippet": "February 3, 2025 - We are members of the Institute of Chartered Accountants in England and Wales and provide accounting services to caf\u00e9s across UK."
+    }
+   ]
+  },
+  "drjaccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for cafes"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for cafes",
+     "pos": 2,
+     "title": "Caf\u00e9s & Bars - Accountants, Payroll & More | DRJ Accountants",
+     "snippet": "DRJ Accountants Provide Accountancy & Payroll Services To Many Caf\u00e9s & Bars in West Yorkshire.For thorough, reliable accountancy for caf\u00e9s and bars from a company you can trust, choose DRJ Accountants"
+    }
+   ]
+  },
+  "mmaas.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for cafes"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for cafes",
+     "pos": 4,
+     "title": "Accountants for Cafes - Miranda Management and Accountancy...",
+     "snippet": "Accountants for Cafes. Being in the cafe business is tricky and difficult.Why we are the best Accountants for Cafes. Miranda Management and Accountancy Services Ltd are completely aware of what cafes "
+    }
+   ]
+  },
+  "optimaaccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for cafes"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for cafes",
+     "pos": 6,
+     "title": "SERVICES - Optima Accountants Limited",
+     "snippet": "Accountants For Media EntertainmentAccountants For Restaurants CafeAccountants for Professional services"
+    }
+   ]
+  },
+  "qcaccountants.com.au": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for cafes"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for cafes",
+     "pos": 7,
+     "title": "Hospitality Accountant | Cafes & Restaurants | QC Accountants",
+     "snippet": "QC Accountants have worked with countless hospitality businesses, acting as a restaurant and cafe accountant as well as many other accounting services."
+    }
+   ]
+  },
+  "accountingpeople.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "catering business accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "catering business accountant",
+     "pos": 3,
+     "title": "Bookkeeping Services in London | Small Business Accountants",
+     "snippet": "Professional bookkeeping services in London for small businesses, startups and limited companies. VAT, payroll, invoices and monthly accounts support."
+    }
+   ]
+  },
+  "accountingfirms.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "catering business accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "catering business accountant",
+     "pos": 5,
+     "title": "ICAEW Accountants in | Compare Verified UK Firms",
+     "snippet": "Find and connect with qualified accountants, tax advisers, bookkeepers, and business advisers using advanced search filters, verified profiles, and genuine reviews aggregated from Google, Trustpilot, "
+    }
+   ]
+  },
+  "ukbusinessaccounting.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "catering business accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "catering business accountant",
+     "pos": 6,
+     "title": "UK Business Accountant",
+     "snippet": "Expert UK accounting and tax services. Bookkeeping, VAT, payroll, self-assessment, corporation tax, and more. Professional service across London, Manchester, Birmingham."
+    }
+   ]
+  },
+  "epiclectic.com": {
+   "hit_count": 1,
+   "queries": [
+    "catering business accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "catering business accountant",
+     "pos": 7,
+     "title": "Home - Epiclectic",
+     "snippet": "Accountant for Small Business Cost: Essential UK Guide 2026 The average accountant for small business cost in the UK typically ranges from \u00a350 to \u00a3250+ per month, depending on your business size, comp"
+    }
+   ]
+  },
+  "beyondbookkeeping.app": {
+   "hit_count": 1,
+   "queries": [
+    "catering business accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "catering business accountant",
+     "pos": 9,
+     "title": "Beyond Bookkeeping \u2013 Accounting, Tax & Bookkeeping Services in...",
+     "snippet": "Accountants and bookkeepers for UK small businesses.UK small business specialists. Support for sole traders, limited companies, landlords and growing businesses. bookkeeping, tax, payroll, accounts an"
+    }
+   ]
+  },
+  "fiverr.com": {
+   "hit_count": 1,
+   "queries": [
+    "catering business accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "catering business accountant",
+     "pos": 10,
+     "title": "Fiverr | Freelance services marketplace | Find top global talent",
+     "snippet": "Music & Audio Consultation. Business.Find bookkeepers, lawyers, accountants, project managers and more."
+    }
+   ]
+  },
+  "solutions4caterers.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for caterers uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for caterers uk",
+     "pos": 2,
+     "title": "Expert Hospitality Accountants & Bookkeepers in the UK | Solutions 4 Caterers",
+     "snippet": "Outsourced accountants and bookkeepers for the UK hospitality industry. Streamline your restaurant or catering finances with us."
+    }
+   ]
+  },
+  "sandbaccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for caterers uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for caterers uk",
+     "pos": 5,
+     "title": "Accountants for Caterers & Restaurants in London",
+     "snippet": "End-to-end accounting & VAT for retail businesses. Efficient bookkeeping for catering & hospitality."
+    }
+   ]
+  },
+  "deadsimpleaccounting.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for caterers uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for caterers uk",
+     "pos": 6,
+     "title": "Accountant for Caterers & Bakers | Dead Simple Accounting",
+     "snippet": "February 13, 2025 - At Dead Simple Accounting we charge just \u00a3300 including VAT for self-assessment tax returns, and can take you through the entire process."
+    }
+   ]
+  },
+  "catercharteredaccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for caterers uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for caterers uk",
+     "pos": 8,
+     "title": "Cater Chartered Accountants | Finances | Middlesex",
+     "snippet": "Cater Chartered Accountants has over 25 years\u2019 experience in accountancy, dealing with everything from sole traders to limited company accounts. Call us today, for free, and put your finances in safe "
+    }
+   ]
+  },
+  "thestanlee.com": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for caterers uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for caterers uk",
+     "pos": 9,
+     "title": "Restaurant Accountants in London: Expert Support | The Stan Lee",
+     "snippet": "October 19, 2025 - It may be beneficial to consult with expert Restaurant Accountants who can efficiently and confidently assist with your restaurant and catering accountancy needs. We are London base"
+    }
+   ]
+  },
+  "onyx.accountants": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for caterers uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for caterers uk",
+     "pos": 10,
+     "title": "Catering and Food Industry - Accountants and Business Advisors",
+     "snippet": "February 3, 2023 - Onyx Accountants specialise in accounting services for Catering and Food Industry. Contact us on 0121 753 5522 to find out more."
+    }
+   ]
+  },
+  "theaccessgroup.com": {
+   "hit_count": 1,
+   "queries": [
+    "tronc scheme advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tronc scheme advice",
+     "pos": 3,
+     "title": "Everything You Need to Know About Tips and Tronc in 2025",
+     "snippet": "21 Aug 2025 ... In the UK, a tronc refers to the system used to pool and distribute tips among employees. \u00b7 Tronc systems are usually adopted by restaurants, ..."
+    }
+   ]
+  },
+  "justanswer.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "tronc scheme advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tronc scheme advice",
+     "pos": 4,
+     "title": "I work in a restaurant in the UK with a tronc scheme for - JustAnswer",
+     "snippet": "25 Oct 2025 ... UK law requires tronc funds to be distributed fairly and usually prohibits pooling across branches unless explicitly allowed. Raise your ..."
+    }
+   ]
+  },
+  "help.staffology.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "tronc scheme advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tronc scheme advice",
+     "pos": 5,
+     "title": "Tronc pitfalls, misconceptions and non-compliance - Help - Staffology",
+     "snippet": "She now heads up the Troncmasters. co.uk service, helping businesses to set up and run ethical and compliant troncs schemes, where her insight into payroll."
+    }
+   ]
+  },
+  "joinstored.com": {
+   "hit_count": 1,
+   "queries": [
+    "tronc scheme advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tronc scheme advice",
+     "pos": 8,
+     "title": "Restaurant Tronc & Tips Guide 2026: Fair & Compliant - Joinstored",
+     "snippet": "15 Jul 2025 ... Setting up a proper tronc system involves understanding the roles of troncmasters, tax implications, and operational requirements. Restaurant ..."
+    }
+   ]
+  },
+  "mercerhole.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "tronc scheme advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tronc scheme advice",
+     "pos": 10,
+     "title": "What Is The Tronc System & How Does It Work? | Mercer & Hole",
+     "snippet": "What does tronc mean? The word \u2018tronc\u2019 is believed to be from the French words \u2018tronc des pauvres\u2019 meaning poor box.The troncmaster may also be required to operate a PAYE scheme and deduct income tax "
+    }
+   ]
+  },
+  "targetaccounting.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "tronc scheme accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tronc scheme accountant",
+     "pos": 7,
+     "title": "Register Tronc Scheme | Tronc Payroll",
+     "snippet": "March 29, 2024 - As expert business accountants, we possess the experience necessary to help clients set up and assess their tronc systems to ensure that the system is fully compliant with HMRC, while"
+    }
+   ]
+  },
+  "payrollservices.accountants": {
+   "hit_count": 1,
+   "queries": [
+    "tronc scheme accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tronc scheme accountant",
+     "pos": 8,
+     "title": "What is a Tronc Scheme in the UK? Understand The Basics",
+     "snippet": "August 6, 2025 - This guide explains what is a tronc scheme in the UK, including how it works, and how businesses can stay compliant with HMRC laws for the ongoing tax year."
+    }
+   ]
+  },
+  "acctek.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "tronc scheme accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tronc scheme accountant",
+     "pos": 9,
+     "title": "What Is a Tronc? UK Tips & Tronc Scheme Guide 2026 | AccTek",
+     "snippet": "5 days ago - Most venues run the tronc alongside ... is protected and the Tips Act obligations are met. AccTek sets up and runs compliant troncs for hospitality businesses, and links the tronc to the "
+    }
+   ]
+  },
+  "troncmasterservices.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "troncmaster services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "troncmaster services",
+     "pos": 1,
+     "title": "Troncmaster Services in UK - Expert Payroll & Tax Support",
+     "snippet": "At Troncmaster Services, we have over 15 years of experience helping businesses across the UK manage tips and gratuities efficiently."
+    }
+   ]
+  },
+  "troncbox.com": {
+   "hit_count": 1,
+   "queries": [
+    "troncmaster services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "troncmaster services",
+     "pos": 3,
+     "title": "The UK's number one Troncmaster by WMT Troncmaster Services",
+     "snippet": "The UK's leading Troncmaster Service provider brings you. FairTips delivered by Troncbox.Trusted by 60,000+ hospitality staff around the UK. One payslip, one payment."
+    }
+   ]
+  },
+  "tipsandtroncs.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "troncmaster services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "troncmaster services",
+     "pos": 4,
+     "title": "Troncmaster Service - Tips and Troncs",
+     "snippet": "At Tips and Troncs, we can tailor our Troncmaster service to implement the best solution for your business and workforce. Find out more or request a quote."
+    }
+   ]
+  },
+  "taxbite.uk": {
+   "hit_count": 1,
+   "queries": [
+    "troncmaster services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "troncmaster services",
+     "pos": 6,
+     "title": "Tronc Services - TaxBite UK Accountants",
+     "snippet": "Companies can hire an internal troncmaster or hire the help of external troncmaster services. The benefit of hiring externally is that admin relating to managing tips for employees will be..."
+    }
+   ]
+  },
+  "prysm.financial": {
+   "hit_count": 1,
+   "queries": [
+    "troncmaster services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "troncmaster services",
+     "pos": 7,
+     "title": "Tronc advice and Troncmaster services > Prysm Financial UK",
+     "snippet": "Troncmaster rules. Is service charge subject to VAT?Who can be a troncmaster? Employment (Allocation of Tips) Bill. Tronc meaning UK. How does tronc work."
+    }
+   ]
+  },
+  "goodfirms.co": {
+   "hit_count": 1,
+   "queries": [
+    "troncmaster services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "troncmaster services",
+     "pos": 8,
+     "title": "Troncmaster Services Reviews & Ratings | GoodFirms",
+     "snippet": "Find trusted Troncmaster Services reviews & rankings on GoodFirms. Explore the company profile, top-notch services, and client testimonials to evaluate for your next project."
+    }
+   ]
+  },
+  "troncmaster.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "troncmaster services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "troncmaster services",
+     "pos": 9,
+     "title": "troncmaster.co.uk",
+     "snippet": ""
+    }
+   ]
+  },
+  "supy.io": {
+   "hit_count": 1,
+   "queries": [
+    "troncmaster services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "troncmaster services",
+     "pos": 10,
+     "title": "What Is Tronc? The Clear Guide to Tronc, Tip Distribution & Service...",
+     "snippet": "A fully managed tronc service acting as troncmaster and handling compliance. UK Tronc Distribution: What \u201cNormal\u201d Looks Like in 2026."
+    }
+   ]
+  },
+  "citizensadvice.org.uk": {
+   "hit_count": 1,
+   "queries": [
+    "tips and service charge payroll advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tips and service charge payroll advice",
+     "pos": 2,
+     "title": "Check what tips and service charges you're entitled to - Citizens Advice",
+     "snippet": "Employers must pass on all tips to their workers. This is because of a law known as the \u2018Tipping Act\u2019. Tips include money given to employees by customers, as well as service charges that are added to "
+    }
+   ]
+  },
+  "acas.org.uk": {
+   "hit_count": 1,
+   "queries": [
+    "tips and service charge payroll advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tips and service charge payroll advice",
+     "pos": 3,
+     "title": "What the law says - Tips and service charges - Acas",
+     "snippet": "Employers must pay tips to workers no later than the end of the month after the month the tips were received. For example, a restaurant receives \u00a31,000 from service charges in July."
+    }
+   ]
+  },
+  "simplybusiness.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "tips and service charge payroll advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tips and service charge payroll advice",
+     "pos": 4,
+     "title": "Staff tips \u2013 rules for small businesses in 2026",
+     "snippet": "February 17, 2026 - tips distributed through payroll are subject to both income tax and NICs, just like regular wages \u00b7 tips shared via a tronc system (managed independently by a troncmaster, not the "
+    }
+   ]
+  },
+  "kpmg.com": {
+   "hit_count": 1,
+   "queries": [
+    "tips and service charge payroll advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tips and service charge payroll advice",
+     "pos": 5,
+     "title": "Tips, service charges and troncs \u2013 the new year ahead | KPMG UK",
+     "snippet": "March 31, 2025 - It doesn\u2019t matter whether it be a bar, restaurant, or hotel, operators in the leisure sector need to deal with complex tax and National Insurance rules in relation to service charges "
+    }
+   ]
+  },
+  "scholesca.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "tips and service charge payroll advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tips and service charge payroll advice",
+     "pos": 6,
+     "title": "Tips and service charges: income tax and VAT considerations | Scholes Chartered Accountants",
+     "snippet": "April 28, 2023 - If the employer passes some or all of the service charge onto the employee, this will be treated like extra wages, with any income tax and National Insurance sorted through the payrol"
+    }
+   ]
+  },
+  "countertalk.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "tips and service charge payroll advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tips and service charge payroll advice",
+     "pos": 7,
+     "title": "NEW SERVICE CHARGE LEGISLATION - COMMUNITY FAQs | Countertalk",
+     "snippet": "September 30, 2024 - Agency, temp and occasional staff must now be included in the distribution of tips, just like the regular team (with the exception of people who are self-employed, or invoicing th"
+    }
+   ]
+  },
+  "davidsonmorris.com": {
+   "hit_count": 1,
+   "queries": [
+    "tips and service charge payroll advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tips and service charge payroll advice",
+     "pos": 8,
+     "title": "Tips & Service Charges: UK Employer Duties | DavidsonMorris",
+     "snippet": "December 4, 2025 - A UK employment law guide for employers on tips, service charges and gratuities under the Employment (Allocation of Tips) Act 2023 and the statutory Code."
+    }
+   ]
+  },
+  "rocketlawyer.com": {
+   "hit_count": 1,
+   "queries": [
+    "tips and service charge payroll advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tips and service charge payroll advice",
+     "pos": 9,
+     "title": "Tips, Troncs & Service Charges | Free Guide",
+     "snippet": "October 4, 2024 - A tronc will often have its own tip distribution rules that are independent of the employer. Using a tronc system allows tips and service charges to be allocated efficiently to staff"
+    }
+   ]
+  },
+  "pkf-francisclark.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "tips and service charge payroll advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tips and service charge payroll advice",
+     "pos": 10,
+     "title": "Taxing tips: The tax treatments of tips, service charges and troncs | PKF Francis Clark",
+     "snippet": "November 17, 2025 - National insurance: National insurance contributions depend on whether the tips and voluntary service charges were given directly to the employee in the form of cash, in which case"
+    }
+   ]
+  },
+  "blog.shorts.uk.com": {
+   "hit_count": 1,
+   "queries": [
+    "VAT on food takeaway advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "VAT on food takeaway advice",
+     "pos": 3,
+     "title": "VAT on Food, Confectionery & Catering - Shorts Accountants",
+     "snippet": "17 Dec 2025 ... HMRC defines takeaway food and drinks as food and drink sold for consumption off the premises. Food or drink is considered to be 'hot' if it is ..."
+    }
+   ]
+  },
+  "aabgroup.com": {
+   "hit_count": 1,
+   "queries": [
+    "VAT on food takeaway advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "VAT on food takeaway advice",
+     "pos": 5,
+     "title": "Eat-in or Take-Away? Hot or cold? VAT's the Difference in the Food ...",
+     "snippet": "If you serve food and drink on the premises (not to take away) then you have to charge VAT on everything. Examples of premises are: a whole restaurant area; an ..."
+    }
+   ]
+  },
+  "a2zaccounting.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "VAT on food takeaway advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "VAT on food takeaway advice",
+     "pos": 7,
+     "title": "Minimise VAT for Takeaway & Restaurant Businesses",
+     "snippet": "25 Nov 2022 ... Your restaurant or takeaway food business doesn't have to register for VAT unless the annual taxable turnover exceeds the VAT threshold."
+    }
+   ]
+  },
+  "gofile.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "VAT on food takeaway advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "VAT on food takeaway advice",
+     "pos": 8,
+     "title": "VAT on Food & Catering - GoFile",
+     "snippet": "2 Mar 2026 ... Most basic food and drink for home consumption is zero-rated. \u00b7 Hot takeaway food and all catering is standard-rated at 20%. \u00b7 Confectionery, ..."
+    }
+   ]
+  },
+  "dnsassociates.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "VAT on food takeaway advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "VAT on food takeaway advice",
+     "pos": 9,
+     "title": "A guide to VAT on food for your business - dns accountants",
+     "snippet": "25 Sept 2025 ... Cold takeaway food does not have VAT charged on it, unless it's eaten in the takeaway premises. Hot food. Any hot food that is either consumed ..."
+    }
+   ]
+  },
+  "theaccountancy.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "VAT on food takeaway advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "VAT on food takeaway advice",
+     "pos": 10,
+     "title": "How Does VAT Work for Cafes, Restaurants, and Takeaways?",
+     "snippet": "10 Sept 2025 ... In most cases, cold food and drink to take away falls into the zero-rated category. Think popular takeaway items like sandwiches, cold pastries ..."
+    }
+   ]
+  },
+  "zmartly.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "vat on hot food takeaway accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "vat on hot food takeaway accountant",
+     "pos": 5,
+     "title": "VAT on Food UK: Zero-Rated vs 20% (2026 Guide) | Zmartly",
+     "snippet": "Mar 9, 2026 \u00b7 VAT on food in the UK for 2026/27: which items are zero-rated, which are 20%, the eat-in and hot takeaway rules, plus a worked cafe example for your till."
+    }
+   ]
+  },
+  "microentityaccounts.com": {
+   "hit_count": 1,
+   "queries": [
+    "vat on hot food takeaway accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "vat on hot food takeaway accountant",
+     "pos": 6,
+     "title": "VAT on Food & Drink Items | VAT Rates for Cafes, Restaurants ...",
+     "snippet": "Mar 4, 2026 \u00b7 Do you charge 0% or 20% VAT on food? Learn VAT rules for hot food, cold food, dine-in & takeaway sales in the UK. Avoid costly HMRC mistakes."
+    }
+   ]
+  },
+  "swiftvatpro.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "vat on hot food takeaway accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "vat on hot food takeaway accountant",
+     "pos": 7,
+     "title": "VAT on food & catering in the UK \u2013 Rules, rates & compliance",
+     "snippet": "Sep 25, 2025 \u00b7 For UK businesses, the concept of food VAT can be confusing. Whether an item is sold hot or cold, whether it is for takeaway or catering, or whether it is classified as confectionery, a"
+    }
+   ]
+  },
+  "constablevat.com": {
+   "hit_count": 1,
+   "queries": [
+    "vat on hot food takeaway accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "vat on hot food takeaway accountant",
+     "pos": 8,
+     "title": "Court of Appeal confirms that hot takeaway food is subject to",
+     "snippet": "VAT International Services Making supplies overseas? Make sure that you are accounting for VAT properly on international transactions."
+    }
+   ]
+  },
+  "icashlimited.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "vat on hot food takeaway accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "vat on hot food takeaway accountant",
+     "pos": 9,
+     "title": "HMRC reminds restaurants and takeaways of VAT obligations on",
+     "snippet": "... recently issued letters to restaurant and takeaway businesses across the country, emphasising the importance of correctly applying VAT on hot food."
+    }
+   ]
+  },
+  "alkerbegley.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "vat on hot food takeaway accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "vat on hot food takeaway accountant",
+     "pos": 10,
+     "title": "HMRC reminds restaurants and takeaways of VAT obligations on",
+     "snippet": "... recently issued letters to restaurant and takeaway businesses across the country, emphasising the importance of correctly applying VAT on hot food."
+    }
+   ]
+  },
+  "pulse-accountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality vat advice uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality vat advice uk",
+     "pos": 3,
+     "title": "How Does VAT Work in Hospitality? A Guide for UK Restaurants, Cafes ...",
+     "snippet": "How can Pulse Accountants help hospitality businesses with VAT? At Pulse Accountants, we support hospitality limited companies with every part of their financial operations, from VAT and bookkeeping t"
+    }
+   ]
+  },
+  "theguardian.com": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality vat advice uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality vat advice uk",
+     "pos": 4,
+     "title": "Hospitality VAT cut: can it help the sector and at what cost to UK ...",
+     "snippet": "What does the sector want? The \u201cVAT\u2019s the problem\u201d campaign, spearheaded by the celebrity chef Tom Kerridge, is calling for hospitality VAT to be cut from 20% to 10%."
+    }
+   ]
+  },
+  "taxcare.org.uk": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality vat advice uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality vat advice uk",
+     "pos": 5,
+     "title": "5% Summer VAT Cut 2026: What Hospitality Must Do - Taxcare Accountant",
+     "snippet": "The 2026 summer VAT cut drops to 5% from 25 June. A UK accountant explains exactly what qualifies, the September reversion trap, and how to stay compliant."
+    }
+   ]
+  },
+  "commonslibrary.parliament.uk": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality vat advice uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality vat advice uk",
+     "pos": 8,
+     "title": "VAT on tourism and hospitality services - House of Commons Library",
+     "snippet": "The campaign for VAT relief to support tourism There has been a long-running campaign by the tourism and hospitality sector for a lower rate of VAT to be set on services supplied to tourists. Proponen"
+    }
+   ]
+  },
+  "/clev?event=startpageresultclick&sc=2sbbv9indwzigpajilwkveci54kgicte4olofpett7ce06veafeqi52e6pwxxagynp7sfp5nj4flybmcvz4ck0wl4ekfuofh&payload={\"bdssessionid\":\"ffcd9bca699d4e93b822a809ab61230e\",\"cheqid\":\"\",\"countrycode\":\"gb\",\"devicetype\":\"mobile\",\"endpoint\":\"search.serp\",\"hasgoogleads\":false,\"page_id\":\"1dybx15qnwwxeg5pl\",\"querycategory\":\"web\",\"segment\":\"startpage.udog\",\"session_id\":\"2cubghq6mnuqsvkl\",\"surface\":\"serp-web\",\"transport\":\"href-request\"}": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality vat advice uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality vat advice uk",
+     "pos": 10,
+     "title": "",
+     "snippet": ""
+    }
+   ]
+  },
+  "findanaccountant.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "TOMS accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "TOMS accountant",
+     "pos": 4,
+     "title": "Toms Accounting",
+     "snippet": "Accountant profile for Toms Accounting based in Leeds. Offering accounting and bookkeeping services."
+    }
+   ]
+  },
+  "twotoms.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "TOMS accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "TOMS accountant",
+     "pos": 7,
+     "title": "TWO TOMS LOGO",
+     "snippet": "Two Toms is a small, friendly team of chartered accountants based in Wanstead, East London, working with sole traders and businesses of all sizes across the UK. We bring a more human, down-to-earth ap"
+    }
+   ]
+  },
+  "bookkeeperscentral.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "TOMS accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "TOMS accountant",
+     "pos": 9,
+     "title": "TOMS & TAHIR ACCOUNTANTS in London, Greater London SE18 7BZ",
+     "snippet": "TOMS & TAHIR ACCOUNTANTS is located in the London area of Greater London."
+    }
+   ]
+  },
+  "a-wise.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "tour operators margin scheme accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tour operators margin scheme accountant",
+     "pos": 1,
+     "title": "Tour Operator Margin Scheme (TOMS) UK Guide 2026 | Accounting...",
+     "snippet": "The Tour Operator Margin Scheme, commonly referred to as TOMS, is a specialist VAT accounting scheme within UK VAT legislation. It was originally derived from EU VAT rules but continues to apply under"
+    }
+   ]
+  },
+  "clarkwell.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "tour operators margin scheme accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tour operators margin scheme accountant",
+     "pos": 2,
+     "title": "Accounting Services for Travel Agencies and Tour Operators",
+     "snippet": "The Tour Operators\u2019 Margin Scheme (TOMS) can be complex and confusing. As experienced TOMS VAT scheme accountants, we calculate your VAT obligations accurately and help you plan ahead to reduce risk."
+    }
+   ]
+  },
+  "haysmac.com": {
+   "hit_count": 1,
+   "queries": [
+    "tour operators margin scheme accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tour operators margin scheme accountant",
+     "pos": 3,
+     "title": "The Tour Operators Margin Scheme - HaysMac - Award-winning...",
+     "snippet": "Supplies covered by TOMS. A margin scheme supply is seen as a supply that is bought in by a business, and supplied without material alteration or further processing for the benefit of a traveller, by "
+    }
+   ]
+  },
+  "cangafltd.com": {
+   "hit_count": 1,
+   "queries": [
+    "tour operators margin scheme accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "tour operators margin scheme accountant",
+     "pos": 10,
+     "title": "Ultimate Guide to the Tour Operators Margin Scheme...",
+     "snippet": "Tour Operators Margin Scheme is a special VAT system for businesses in the travel industry. It helps simplify VAT accounting by focusing on the profit margin instead of the full selling price."
+    }
+   ]
+  },
+  "uk.adp.com": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality payroll services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality payroll services uk",
+     "pos": 1,
+     "title": "Restaurant & Hotel Payroll Services | HR For Hospitality | ADP UK",
+     "snippet": "People management solutions that help meet the needs of the restaurant and hospitality industry, including: Making it easy to create employee work schedules and track attendance \u00b7 Connecting seamlessl"
+    }
+   ]
+  },
+  "bpayroll.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality payroll services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality payroll services uk",
+     "pos": 2,
+     "title": "Payroll Services for Hospitality",
+     "snippet": "March 13, 2026 - Specialist payroll services for hospitality businesses. Accurate wages, tips, tronc, pensions and HMRC compliance handled for you."
+    }
+   ]
+  },
+  "paycheck.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality payroll services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality payroll services uk",
+     "pos": 3,
+     "title": "Payroll Services for Hospitality & Restaurants UK | Restaurant Payroll ...",
+     "snippet": "Payroll Services for Hospitality Businesses Managing payroll in the hospitality sector can be complex, with rotating shifts, seasonal staff, tips, and strict compliance requirements. Whether you run a"
+    }
+   ]
+  },
+  "payescape.com": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality payroll services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality payroll services uk",
+     "pos": 5,
+     "title": "Payroll Services For Hospitality & Restaurants UK - PayEscape",
+     "snippet": "November 18, 2024 - Running a successful hospitality business requires managing numerous tasks, with payroll being one of the most critical. PayEscape\u2019s payroll software is specifically designed to ad"
+    }
+   ]
+  },
+  "accurise.net": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality payroll services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality payroll services uk",
+     "pos": 6,
+     "title": "Hospitality Payroll Services for Multi\u2011Site Operators | Accurise",
+     "snippet": "Hospitality payroll services delivered by BACS-approved UK experts with 25+ years of experience."
+    }
+   ]
+  },
+  "paycaptain.com": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality payroll services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality payroll services uk",
+     "pos": 7,
+     "title": "Hospitality Payroll Software UK, Hotel & Restaurant Payroll | PayCaptain",
+     "snippet": "Simplify hospitality payroll, save time and stay compliant with PayCaptain. Built for restaurants, hotels, leisure and tourism. See how it works today."
+    }
+   ]
+  },
+  "orkforce.com": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality payroll services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality payroll services uk",
+     "pos": 8,
+     "title": "Best Hospitality Payroll Software UK (2026) | Top Payroll Platforms ...",
+     "snippet": "Compare the best hospitality payroll software in the UK for 2026. See top payroll platforms for restaurants, pubs, hotels, and bars with HMRC compliance, tips handling, and rota-to-payroll integration"
+    }
+   ]
+  },
+  "payrollserviceuk.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality payroll services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality payroll services uk",
+     "pos": 9,
+     "title": "Outsourced Payroll Services UK | From \u00a32.50 Per Payslip | Payroll ...",
+     "snippet": "UK outsourced payroll services for businesses of all sizes. HMRC-compliant payroll, pensions, CIS payroll and expert support from Payroll Service (UK) Ltd."
+    }
+   ]
+  },
+  "taxaccountant.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant tax advisor uk",
+     "pos": 1,
+     "title": "Tax Advisor | Trusted UK Tax Experts for Individuals & Businesses",
+     "snippet": "Trusted UK tax advisor for individuals, landlords and businesses. Tax advice, tax planning...Qualified UK tax advisersOnline and in-person appointments"
+    }
+   ]
+  },
+  "taxnatives.com": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant tax advisor uk",
+     "pos": 2,
+     "title": "Tax Advisors UK | Get Tax Advice In The UK | Tax Natives",
+     "snippet": "Tax services in the UK. A UK tax advisor can help with a wide range of personal tax matters, from income management to international residency.A UK tax advisor can help with permanent establishment ri"
+    }
+   ]
+  },
+  "taax.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant tax advisor uk",
+     "pos": 3,
+     "title": "Tax Advisor UK - TAAX | Tax Advisory and Tax Filling Service",
+     "snippet": "Tax Advisor UK for Indviduals and Small Business Tax. Our Tax Advisor services offer customised solutions to simplify complex tax issues and boost your financial success nationwide. Our experienced te"
+    }
+   ]
+  },
+  "charteredaccountantlondon.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant tax advisor uk",
+     "pos": 4,
+     "title": "Best Chartered Accountants UK - Tax Advisor Services",
+     "snippet": "In UK, tax advisor services often extend to inheritance planning and forensic accounting. Some firms even help you claim R&D credits or handle HMRC investigations. Fancy a cup of tea as they explain c"
+    }
+   ]
+  },
+  "proplaybooks.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant tax advisor uk",
+     "pos": 6,
+     "title": "Tax Advisor UK 2026: Cost, Qualifications, When You Actually Need...",
+     "snippet": "UK tax advisor guide for 2026. Real fee ranges, qualifications (CTA, ATT, STEP), how to find one, and a practical when-to-hire-or-DIY table."
+    }
+   ]
+  },
+  "uk.meruaccounting.com": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant tax advisor uk",
+     "pos": 7,
+     "title": "Cost Of Tax Advisor In The UK: What To Expect In Fees?",
+     "snippet": "UK tax advisor cost depends on the following factorsEngaging a tax advisor for straightforward tax return preparation is less expensive than seeking comprehensive tax planning and compliance services."
+    }
+   ]
+  },
+  "globaltaxconsulting.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant tax advisor uk",
+     "pos": 8,
+     "title": "UK Tax Advisor & International Tax Advice | Global Tax Consulting",
+     "snippet": "Your UK Tax Advisor For International Tax Advice. Navigate UK Tax Rules for Expats with Confidence.UK tax expert advising a digital nomad on statutory residence test compliance."
+    }
+   ]
+  },
+  "xerxesllp.com": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant tax advisor uk",
+     "pos": 9,
+     "title": "US & UK Tax Accountants | US & UK Tax Advisers in London",
+     "snippet": "As UK & US Tax Accountants, Xerxes Associates LLP offer more than just the basic advisory and tax return preparation services. We also offer all of the required key services to expats in both the Unit"
+    }
+   ]
+  },
+  "tripadvisor.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "restaurant tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "restaurant tax advisor uk",
+     "pos": 10,
+     "title": "Best Restaurants Near Me - Tripadvisor",
+     "snippet": "Find restaurants near you from 5 million restaurants worldwide with 760 million reviews and opinions from Tripadvisor travelers.This is the version of our website addressed to speakers of English in U"
+    }
+   ]
+  },
+  "asmataccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality business rates relief advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality business rates relief advice",
+     "pos": 4,
+     "title": "Business Rates Relief for Retail and Hospitality: Are You ...",
+     "snippet": "Jun 5, 2026 \u00b7 The temporary Retail, Hospitality and Leisure Business Rates Relief scheme ended on 31 March 2026, but it has been replaced by permanently lower business rates multipliers for qualifying"
+    }
+   ]
+  },
+  "hayhills.com": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality business rates relief advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality business rates relief advice",
+     "pos": 5,
+     "title": "Retail, Hospitality & Leisure Business Rates 2026/27",
+     "snippet": "Jun 7, 2026 \u00b7 The 40% RHL relief ended in 2026, replaced by lower business-rates multipliers. The 2026/27 rates, who qualifies, how much you save and other reliefs explained."
+    }
+   ]
+  },
+  "swgroup.com": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality business rates relief advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality business rates relief advice",
+     "pos": 7,
+     "title": "Business rates relief: Key schemes for UK businesses | S&W Group",
+     "snippet": "Aug 18, 2025 \u00b7 Explore UK business rates relief schemes to cut costs and boost cashflow. Find out which businesses qualify and how to apply."
+    }
+   ]
+  },
+  "365finance.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality business rates relief advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality business rates relief advice",
+     "pos": 8,
+     "title": "Business Rates and the \u00a3300m Pub Relief: The Reality of Hospitality...",
+     "snippet": "Understanding Business Rates in Hospitality. Business rates are essentially a tax on non-domestic properties used for commercial activities. The tax is calculated by multiplying a property\u2019s \u201crateable"
+    }
+   ]
+  },
+  "omega-re.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "hospitality business rates relief advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "hospitality business rates relief advice",
+     "pos": 10,
+     "title": "Are you missing out on business rates relief? - Omega RE",
+     "snippet": "The current Retail, Hospitality and Leisure relief scheme ends on 31 March 2026, with new lower business rates multipliers for qualifying retail, hospitality and leisure properties due from 1 April 20"
+    }
+   ]
+  },
+  "findmypub.com": {
+   "hit_count": 1,
+   "queries": [
+    "pub tenancy accounts service"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub tenancy accounts service",
+     "pos": 1,
+     "title": "findmypub.com/lease-tenancy-pubs",
+     "snippet": "Pubs for Tenancy & Lease | Pubs to Let - FindMyPub.com."
+    }
+   ]
+  },
+  "myhospitalitysolutions.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "pub tenancy accounts service"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub tenancy accounts service",
+     "pos": 2,
+     "title": "Find Tenancy, Lease and Hospitality Job Opportunities - My Hospitality...",
+     "snippet": "Find Tenancy, Lease and Job Opportunities in the Hospitality Industry Across the UK with My Hospitality Solutions.What are the differences between a Leased pub, Tenancy pub or Freehold? It\u2019s really im"
+    }
+   ]
+  },
+  "cylex-uk.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "pub tenancy accounts service"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub tenancy accounts service",
+     "pos": 3,
+     "title": "Pub Tenancies near your location - Cylex Local Search",
+     "snippet": "Find the best pub tenancies near you by sharing your location or by entering an address, city, state or zip code.Many of our pubs also offer b&b pub accommodation. 51.5246744,0.5975107. Mopits Commerc"
+    }
+   ]
+  },
+  "sunnyaccs.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "pub tenancy accounts service"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub tenancy accounts service",
+     "pos": 4,
+     "title": "Licensed and pub trade - Sunny Accountants",
+     "snippet": "Pub tenancies are recognised as a cost-effective route into the pub sector, and one of the more convenient ways to own a pub business. It is also regarded as an ideal way for newcomers to dip their to"
+    }
+   ]
+  },
+  "stonegatepubpartners.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "pub tenancy accounts service"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub tenancy accounts service",
+     "pos": 5,
+     "title": "stonegatepubpartners.co.uk/turnover-tenancy-agreements",
+     "snippet": "Benefits of Running a Pub with a Turnover Tenancy Agreement. A Turnover Tenancy Agreement (TTA) is one of the most flexible and rewarding ways to run your own pub business."
+    }
+   ]
+  },
+  "hooky.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "pub tenancy accounts service"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub tenancy accounts service",
+     "pos": 7,
+     "title": "TENANCY FAQS - Hook Norton Brewery",
+     "snippet": "If the tenancy is on the market because it was unsuccessful, try to find out what they were doing wrong. Were they serving expensive food when the demand was really for a good local drinking pub? Ther"
+    }
+   ]
+  },
+  "howtorunapub.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "pub tenancy accounts service"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub tenancy accounts service",
+     "pos": 8,
+     "title": "How To Apply For A Pub Tenancy (page 3) | How To Run A Pub",
+     "snippet": "A guide to applying for a pub tenancy or lease from a brewery or a pubco for potential pub tenants and lessees."
+    }
+   ]
+  },
+  "bateman-group.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "pub tenancy accounts service"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub tenancy accounts service",
+     "pos": 9,
+     "title": "The difference between pub tenancies | The Bateman Group",
+     "snippet": "The Pub Code states that the POB must highlight the tenant\u2019s rights in regards to insurance. This includes the right to price match any insurance policy provided by the POB. The Bateman Group provides"
+    }
+   ]
+  },
+  "nfs-hospitality.com": {
+   "hit_count": 1,
+   "queries": [
+    "pub tenancy accounts service"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "pub tenancy accounts service",
+     "pos": 10,
+     "title": "Pub Management Software: Everything You Need to... - NFS Hospitality",
+     "snippet": "This blog will explore how modern EPOS systems for pubs can drive success, with a special focus on essential features, and benefits for tenancy pubs, and how to choose the best solution for your busin"
+    }
+   ]
+  },
+  "merrantiaccounting.com": {
+   "hit_count": 1,
+   "queries": [
+    "takeaway accountant (redteam-named; added manually 2026-07-11, found via web search)"
+   ],
+   "sample": [
+    {
+     "src": "manual",
+     "q": "takeaway accountant",
+     "title": "Accountants for Takeaways: Merranti Accounting"
+    }
+   ]
+  }
+ },
+ "dropped": {
+  "estate": [],
+  "directory_or_info": [
+   "gov.uk",
+   "find-and-update.company-information.service.gov.uk",
+   "ukhospitality.org.uk",
+   "facebook.com",
+   "uk.indeed.com",
+   "reddit.com",
+   "linkedin.com",
+   "accaglobal.com",
+   "assets.publishing.service.gov.uk"
+  ]
+ }
+}

@@ -1,0 +1,383 @@
+{
+ "https://www.gov.uk/guidance/catering-takeaway-food-and-vat-notice-7091": {
+  "phrases_expected": [
+   "hot",
+   "takeaway",
+   "standard-rated"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/catering-takeaway-food-and-vat-notice-7091",
+  "title": "Catering, takeaway food (VAT Notice 709/1) - GOV.UK",
+  "phrases_found": [
+   "hot",
+   "takeaway",
+   "standard-rated"
+  ]
+ },
+ "https://www.gov.uk/guidance/food-products-and-vat-notice-70114": {
+  "phrases_expected": [
+   "zero-rated",
+   "confectionery"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/food-products-and-vat-notice-70114",
+  "title": "Food products (VAT Notice 701/14) - GOV.UK",
+  "phrases_found": [
+   "zero-rated",
+   "confectionery"
+  ]
+ },
+ "https://www.gov.uk/vat-registration": {
+  "phrases_expected": [
+   "90,000",
+   "register"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/register-for-vat",
+  "title": "Register for VAT: When to register for VAT - GOV.UK",
+  "phrases_found": [
+   "90,000",
+   "register"
+  ]
+ },
+ "https://www.gov.uk/vat-flat-rate-scheme": {
+  "phrases_expected": [
+   "flat rate"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/vat-flat-rate-scheme",
+  "title": "VAT Flat Rate Scheme : Overview - GOV.UK",
+  "phrases_found": [
+   "flat rate"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/vat-flat-rate-scheme/frs7300": {
+  "phrases_expected": [
+   "catering",
+   "12.5"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/vat-flat-rate-scheme/frs7300",
+  "title": "FRS7300 - Trade Sectors: A to Z of flat rate percentages by sector - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "catering",
+   "12.5"
+  ]
+ },
+ "https://www.gov.uk/government/publications/e24-tips-gratuities-service-charges-and-troncs": {
+  "phrases_expected": [
+   "tronc",
+   "National Insurance"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/government/publications/e24-tips-gratuities-service-charges-and-troncs",
+  "title": "When National Insurance and PAYE is due on tips, gratuities and service charges (E24) - GOV.UK",
+  "phrases_found": [
+   "tronc",
+   "National Insurance"
+  ]
+ },
+ "https://www.gov.uk/government/publications/distributing-tips-fairly-statutory-code-of-practice": {
+  "phrases_expected": [
+   "tips",
+   "code of practice"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/government/publications/distributing-tips-fairly-statutory-code-of-practice",
+  "title": "Distributing tips fairly: statutory code of practice - GOV.UK",
+  "phrases_found": [
+   "tips",
+   "code of practice"
+  ]
+ },
+ "https://www.gov.uk/tips-at-work": {
+  "phrases_expected": [
+   "tips",
+   "tax"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/tips-at-work",
+  "title": "Tips at work: Overview - GOV.UK",
+  "phrases_found": [
+   "tips",
+   "tax"
+  ]
+ },
+ "https://www.gov.uk/guidance/tour-operators-margin-scheme-for-vat-notice-7095": {
+  "phrases_expected": [
+   "margin scheme",
+   "tour operator"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/tour-operators-margin-scheme-for-vat-notice-7095",
+  "title": "Tour Operators&#39; Margin Scheme (VAT Notice 709/5) - GOV.UK",
+  "phrases_found": [
+   "margin scheme",
+   "tour operator"
+  ]
+ },
+ "https://www.gov.uk/guidance/the-alcohol-wholesaler-registration-scheme-awrs": {
+  "phrases_expected": [
+   "AWRS",
+   "wholesaler"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/the-alcohol-wholesaler-registration-scheme-awrs",
+  "title": "Check if you need approval to sell alcoholic products to another business - GOV.UK",
+  "phrases_found": [
+   "AWRS",
+   "wholesaler"
+  ]
+ },
+ "https://www.gov.uk/guidance/alcohol-duty-rates": {
+  "phrases_expected": [
+   "Draught",
+   "duty"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/alcohol-duty-rates",
+  "title": "Alcohol Duty rates - GOV.UK",
+  "phrases_found": [
+   "Draught",
+   "duty"
+  ]
+ },
+ "https://www.gov.uk/guidance/alcohol-licensing": {
+  "phrases_expected": [
+   "premises licence",
+   "personal licence"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/alcohol-licensing",
+  "title": "Alcohol licensing - GOV.UK",
+  "phrases_found": [
+   "premises licence",
+   "personal licence"
+  ]
+ },
+ "https://www.gov.uk/guidance/machine-games-duty": {
+  "phrases_expected": [
+   "Machine Games Duty"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/machine-game-duty",
+  "title": "Machine Games Duty: Overview - GOV.UK",
+  "phrases_found": [
+   "Machine Games Duty"
+  ]
+ },
+ "https://www.gov.uk/apply-for-business-rate-relief/retail-hospitality-and-leisure-relief": {
+  "phrases_expected": [
+   "hospitality",
+   "relief"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/business-rates-relief",
+  "title": "Business rates relief: Types of business rates relief - GOV.UK",
+  "phrases_found": [
+   "hospitality",
+   "relief"
+  ]
+ },
+ "https://www.gov.uk/apply-for-business-rate-relief/small-business-rate-relief": {
+  "phrases_expected": [
+   "12,000",
+   "small business rate relief"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/business-rates-relief/small-business-rate-relief",
+  "title": "Business rates relief: Small business rate relief - GOV.UK",
+  "phrases_found": [
+   "12,000",
+   "small business rate relief"
+  ]
+ },
+ "https://www.gov.uk/national-minimum-wage-rates": {
+  "phrases_expected": [
+   "National Living Wage",
+   "21"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/national-minimum-wage-rates",
+  "title": "National Minimum Wage and National Living Wage rates - GOV.UK",
+  "phrases_found": [
+   "National Living Wage",
+   "21"
+  ]
+ },
+ "https://www.gov.uk/claim-employment-allowance": {
+  "phrases_expected": [
+   "Employment Allowance",
+   "10,500"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/claim-employment-allowance",
+  "title": "Employment Allowance: What you&#39;ll get - GOV.UK",
+  "phrases_found": [
+   "Employment Allowance",
+   "10,500"
+  ]
+ },
+ "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027": {
+  "phrases_expected": [
+   "15%",
+   "5,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+  "title": "Rates and thresholds for employers 2026 to 2027 - GOV.UK",
+  "phrases_found": [
+   "15%",
+   "5,000"
+  ]
+ },
+ "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026": {
+  "phrases_expected": [
+   "15%",
+   "5,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026",
+  "title": "Rates and thresholds for employers 2025 to 2026 - GOV.UK",
+  "phrases_found": [
+   "15%",
+   "5,000"
+  ]
+ },
+ "https://www.gov.uk/employment-status/employee": {
+  "phrases_expected": [
+   "employee"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/employment-status/employee",
+  "title": "Employment status: Employee - GOV.UK",
+  "phrases_found": [
+   "employee"
+  ]
+ },
+ "https://www.gov.uk/capital-allowances/annual-investment-allowance": {
+  "phrases_expected": [
+   "1 million",
+   "Annual Investment Allowance"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/capital-allowances/annual-investment-allowance",
+  "title": "Claim capital allowances: Annual investment allowance - GOV.UK",
+  "phrases_found": [
+   "1 million",
+   "Annual Investment Allowance"
+  ]
+ },
+ "https://www.gov.uk/corporation-tax-rates": {
+  "phrases_expected": [
+   "25%",
+   "small profits rate"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/corporation-tax-rates",
+  "title": "Corporation Tax rates, expenses and reliefs: Rates - GOV.UK",
+  "phrases_found": [
+   "25%",
+   "small profits rate"
+  ]
+ },
+ "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax": {
+  "phrases_expected": [
+   "Making Tax Digital",
+   "50,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax",
+  "title": "Use Making Tax Digital for Income Tax - Guidance - GOV.UK",
+  "phrases_found": [
+   "Making Tax Digital"
+  ]
+ },
+ "https://www.gov.uk/simpler-income-tax-cash-basis": {
+  "phrases_expected": [
+   "cash basis"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/simpler-income-tax-cash-basis",
+  "title": "Cash basis: Overview - GOV.UK",
+  "phrases_found": [
+   "cash basis"
+  ]
+ },
+ "https://www.gov.uk/rent-room-in-your-home/the-rent-a-room-scheme": {
+  "phrases_expected": [
+   "7,500",
+   "Rent a Room"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/rent-room-in-your-home/the-rent-a-room-scheme",
+  "title": "Rent a room in your home: The Rent a Room Scheme - GOV.UK",
+  "phrases_found": [
+   "7,500",
+   "Rent a Room"
+  ]
+ },
+ "https://www.gov.uk/food-business-registration": {
+  "phrases_expected": [
+   "register",
+   "food business"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/food-business-registration",
+  "title": "Food business registration - GOV.UK",
+  "phrases_found": [
+   "register",
+   "food business"
+  ]
+ },
+ "https://download.companieshouse.gov.uk/en_output.html": {
+  "phrases_expected": [
+   "download",
+   "company"
+  ],
+  "status": 200,
+  "final_url": "https://download.companieshouse.gov.uk/en_output.html",
+  "title": "Companies House",
+  "phrases_found": [
+   "download",
+   "company"
+  ]
+ },
+ "https://developer-specs.company-information.service.gov.uk/companies-house-public-data-api/reference/search/advanced-company-search": {
+  "phrases_expected": [
+   "advanced",
+   "sic"
+  ],
+  "status": 200,
+  "final_url": "https://developer-specs.company-information.service.gov.uk/companies-house-public-data-api/reference/search/advanced-company-search",
+  "title": "Companies House Public Data API: Advanced search for a company",
+  "phrases_found": [
+   "advanced",
+   "sic"
+  ]
+ },
+ "https://resources.companieshouse.gov.uk/sic/": {
+  "phrases_expected": [
+   "56",
+   "Standard industrial classification"
+  ],
+  "status": 200,
+  "final_url": "https://resources.companieshouse.gov.uk/sic/",
+  "title": "Nature of business: Standard Industrial Classification (SIC) codes",
+  "phrases_found": [
+   "56",
+   "Standard industrial classification"
+  ]
+ },
+ "https://www.gov.uk/government/collections/monthly-insolvency-statistics": {
+  "phrases_expected": [
+   "insolvency"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/government/collections/monthly-insolvency-statistics",
+  "title": "Monthly Insolvency Statistics - GOV.UK",
+  "phrases_found": [
+   "insolvency"
+  ]
+ }
+}
