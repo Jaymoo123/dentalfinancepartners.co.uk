@@ -1,0 +1,34 @@
+{
+ "https://www.pharmacyaccountants.co.uk/": {
+  "status": 200,
+  "final_url": "https://www.pharmacyaccountants.co.uk/",
+  "title": "Pharmacy Accountants | Guiding pharmacies towards financial wellness",
+  "pharm_mentions": 166
+ },
+ "https://www.silverlevene.co.uk/pharmacy": {
+  "status": 200,
+  "final_url": "https://www.xeinadin.com/office/london/",
+  "title": "London Accountant | Business Audit in London | Xeinadin",
+  "pharm_mentions": 14
+ },
+ "https://www.silverlevene.co.uk/sectors/pharmacy/": {
+  "status": 200,
+  "final_url": "https://www.xeinadin.com/office/london/",
+  "title": "London Accountant | Business Audit in London | Xeinadin",
+  "pharm_mentions": 14
+ },
+ "https://www.silverlevene.co.uk/pharmacists/": {
+  "status": 200,
+  "final_url": "https://www.xeinadin.com/office/london/",
+  "title": "London Accountant | Business Audit in London | Xeinadin",
+  "pharm_mentions": 14
+ },
+ "https://www.silverlevene.co.uk/sitemap.xml": {
+  "status": 200,
+  "final_url": "https://www.silverlevene.co.uk/sitemap_index.xml",
+  "title": "",
+  "pharm_mentions": 0,
+  "pharm_urls": [],
+  "n_locs": 7
+ }
+}

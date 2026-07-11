@@ -1,0 +1,348 @@
+{
+ "https://www.gov.uk/guidance/check-if-you-need-to-pay-tax-when-you-sell-cryptoassets": {
+  "phrases_expected": [
+   "Capital Gains Tax",
+   "cryptoassets"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/check-if-you-need-to-pay-tax-when-you-sell-cryptoassets",
+  "title": "Check if you need to pay tax when you sell cryptoassets - GOV.UK",
+  "phrases_found": [
+   "Capital Gains Tax",
+   "cryptoassets"
+  ]
+ },
+ "https://www.gov.uk/guidance/check-if-you-need-to-pay-tax-when-you-receive-cryptoassets": {
+  "phrases_expected": [
+   "Income Tax",
+   "mining"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/check-if-you-need-to-pay-tax-when-you-receive-cryptoassets",
+  "title": "Check if you need to pay tax when you receive cryptoassets - GOV.UK",
+  "phrases_found": [
+   "Income Tax",
+   "mining"
+  ]
+ },
+ "https://www.gov.uk/capital-gains-tax/rates": {
+  "phrases_expected": [
+   "24%",
+   "18%"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/capital-gains-tax/rates",
+  "title": "Capital Gains Tax: what you pay it on, rates and allowances: Capital Gains Tax rates - GOV.UK",
+  "phrases_found": [
+   "24%",
+   "18%"
+  ]
+ },
+ "https://www.gov.uk/capital-gains-tax/allowances": {
+  "phrases_expected": [
+   "3,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/capital-gains-tax/allowances",
+  "title": "Capital Gains Tax: what you pay it on, rates and allowances: Capital Gains Tax allowances - GOV.UK",
+  "phrases_found": [
+   "3,000"
+  ]
+ },
+ "https://www.gov.uk/capital-gains-tax/reporting-and-paying-capital-gains-tax": {
+  "phrases_expected": [
+   "Self Assessment"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/capital-gains-tax/reporting-and-paying-capital-gains-tax",
+  "title": "Capital Gains Tax: what you pay it on, rates and allowances: Reporting and paying Capital Gains Tax - GOV.UK",
+  "phrases_found": [
+   "Self Assessment"
+  ]
+ },
+ "https://www.gov.uk/capital-gains-tax/losses": {
+  "phrases_expected": [
+   "losses"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/capital-gains-tax/losses",
+  "title": "Capital Gains Tax: what you pay it on, rates and allowances: If you make a loss - GOV.UK",
+  "phrases_found": [
+   "losses"
+  ]
+ },
+ "https://www.gov.uk/capital-gains-tax/gifts": {
+  "phrases_expected": [
+   "spouse"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/capital-gains-tax/gifts",
+  "title": "Capital Gains Tax: what you pay it on, rates and allowances: Gifts to your spouse or charity - GOV.UK",
+  "phrases_found": [
+   "spouse"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual": {
+  "phrases_expected": [
+   "Cryptoassets Manual"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual",
+  "title": "Cryptoassets Manual - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "Cryptoassets Manual"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22200": {
+  "phrases_expected": [
+   "pool"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22200",
+  "title": "CRYPTO22200 - Cryptoassets for individuals: Capital Gains Tax: pooling - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "pool"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22250": {
+  "phrases_expected": [
+   "same day"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22250",
+  "title": "CRYPTO22250 - Cryptoassets for individuals: Capital Gains Tax: pooling examples: contents - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "same day"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22300": {
+  "phrases_expected": [
+   "fork"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22300",
+  "title": "CRYPTO22300 - Cryptoassets for individuals: Capital Gains Tax: blockchain forks - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "fork"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto20250": {
+  "phrases_expected": [
+   "trade"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto20250",
+  "title": "CRYPTO20250 - Cryptoassets for individuals: what is trading - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "trade"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto21150": {
+  "phrases_expected": [
+   "mining"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto21150",
+  "title": "CRYPTO21150 - Cryptoassets for individuals: Income Tax: mining transactions - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "mining"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto21200": {
+  "phrases_expected": [
+   "staking"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto21200",
+  "title": "CRYPTO21200 - Cryptoassets for individuals: Income Tax: staking - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "staking"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto21250": {
+  "phrases_expected": [
+   "airdrop"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto21250",
+  "title": "CRYPTO21250 - Cryptoassets for individuals: Income Tax: airdrops - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "airdrop"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto61000": {
+  "phrases_expected": [
+   "DeFi",
+   "lending"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto61000",
+  "title": "CRYPTO61000 - Decentralised Finance: Lending and staking: contents - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "DeFi",
+   "lending"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22400": {
+  "phrases_expected": [
+   "private keys"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22400",
+  "title": "CRYPTO22400 - Cryptoassets for individuals: Capital Gains Tax: losing private keys - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "private keys"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22500": {
+  "phrases_expected": [
+   "negligible value"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22500",
+  "title": "CRYPTO22500 - Cryptoassets for individuals: Capital Gains Tax: S24 and negligible value - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "negligible value"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto25000": {
+  "phrases_expected": [
+   "Inheritance Tax"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto25000",
+  "title": "CRYPTO25000 - Cryptoassets for individuals: Inheritance Tax - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "Inheritance Tax"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto45000": {
+  "phrases_expected": [
+   "VAT"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto45000",
+  "title": "CRYPTO45000 - Cryptoassets for businesses: Value Added Tax (VAT) - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "VAT"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto42000": {
+  "phrases_expected": [
+   "employment"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto42000",
+  "title": "CRYPTO42000 - Cryptoassets for businesses: Income Tax: contents - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "employment"
+  ]
+ },
+ "https://www.gov.uk/guidance/tell-hmrc-about-unpaid-tax-on-cryptoassets": {
+  "phrases_expected": [
+   "disclosure",
+   "cryptoasset"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/tell-hmrc-about-unpaid-tax-on-cryptoassets",
+  "title": "Tell HMRC about unpaid tax on cryptoassets - GOV.UK",
+  "phrases_found": [
+   "disclosure",
+   "cryptoasset"
+  ]
+ },
+ "https://www.gov.uk/guidance/collecting-cryptoasset-user-and-transaction-data": {
+  "phrases_expected": [
+   "2026",
+   "cryptoasset"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/collecting-cryptoasset-user-and-transaction-data",
+  "title": "Collecting cryptoasset user and transaction data - GOV.UK",
+  "phrases_found": [
+   "2026",
+   "cryptoasset"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim20205": {
+  "phrases_expected": [
+   "badges of trade"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim20205",
+  "title": "BIM20205 - Meaning of trade: badges of trade: summary - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "badges of trade"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim22015": {
+  "phrases_expected": [
+   "betting"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim22015",
+  "title": "BIM22015 - Meaning of trade: exceptions and alternatives: betting and gambling - introduction - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "betting"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg78300": {
+  "phrases_expected": [
+   "currency"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg78300",
+  "title": "CG78300 - Foreign currency: introduction - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "currency"
+  ]
+ },
+ "https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income": {
+  "phrases_expected": [
+   "1,000",
+   "trading"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income",
+  "title": "Tax-free allowances on property and trading income - GOV.UK",
+  "phrases_found": [
+   "1,000",
+   "trading"
+  ]
+ },
+ "https://www.gov.uk/income-tax-rates": {
+  "phrases_expected": [
+   "45%",
+   "40%"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/income-tax-rates",
+  "title": "Income Tax rates and Personal Allowances : Current rates and allowances - GOV.UK",
+  "phrases_found": [
+   "45%",
+   "40%"
+  ]
+ },
+ "https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return": {
+  "phrases_expected": [
+   "tax return"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return",
+  "title": "Self Assessment tax returns: Who must send a tax return - GOV.UK",
+  "phrases_found": [
+   "tax return"
+  ]
+ },
+ "https://www.gov.uk/register-for-self-assessment": {
+  "phrases_expected": [
+   "5 October"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/register-for-self-assessment",
+  "title": "Check how to register for Self Assessment - GOV.UK",
+  "phrases_found": [
+   "5 October"
+  ]
+ }
+}

@@ -1,0 +1,407 @@
+{
+ "https://www.gov.uk/guidance/vat-welfare-services-and-goods-notice-7012": {
+  "phrases_expected": [
+   "welfare",
+   "exempt",
+   "state-regulated"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/guidance/vat-welfare-services-and-goods-notice-7012",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/government/publications/revenue-and-customs-brief-2-2025-the-use-of-vat-grouping-structures-by-state-regulated-care-providers": {
+  "phrases_expected": [
+   "VAT grouping",
+   "care"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/government/publications/revenue-and-customs-brief-2-2025-the-use-of-vat-grouping-structures-by-state-regulated-care-providers",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": [
+   "care"
+  ]
+ },
+ "https://www.gov.uk/vat-registration": {
+  "phrases_expected": [
+   "90,000",
+   "register"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/register-for-vat",
+  "title": "Register for VAT: When to register for VAT - GOV.UK",
+  "phrases_found": [
+   "90,000",
+   "register"
+  ]
+ },
+ "https://www.gov.uk/guidance/vat-partial-exemption-and-input-tax-recovery-notice-706": {
+  "phrases_expected": [
+   "partial exemption"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/guidance/vat-partial-exemption-and-input-tax-recovery-notice-706",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/national-minimum-wage-rates": {
+  "phrases_expected": [
+   "National Living Wage",
+   "21"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/national-minimum-wage-rates",
+  "title": "National Minimum Wage and National Living Wage rates - GOV.UK",
+  "phrases_found": [
+   "National Living Wage",
+   "21"
+  ]
+ },
+ "https://www.gov.uk/guidance/calculating-the-minimum-wage/working-hours-for-which-the-minimum-wage-must-be-paid": {
+  "phrases_expected": [
+   "sleep-in",
+   "travelling"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/calculating-the-minimum-wage/working-hours-for-which-the-minimum-wage-must-be-paid",
+  "title": "Calculating the minimum wage - Working hours for which the minimum wage must be paid - Guidance - GOV.UK",
+  "phrases_found": [
+   "sleep-in",
+   "travelling"
+  ]
+ },
+ "https://www.supremecourt.uk/cases/uksc-2018-0160": {
+  "phrases_expected": [
+   "Mencap",
+   "Tomlinson-Blake"
+  ],
+  "status": 200,
+  "final_url": "https://www.supremecourt.uk/cases/uksc-2018-0160",
+  "title": "Royal Mencap Society (Respondent) v Tomlinson-Blake (Appellant) - UK Supreme Court",
+  "phrases_found": [
+   "Mencap",
+   "Tomlinson-Blake"
+  ]
+ },
+ "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027": {
+  "phrases_expected": [
+   "15%",
+   "5,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+  "title": "Rates and thresholds for employers 2026 to 2027 - GOV.UK",
+  "phrases_found": [
+   "15%",
+   "5,000"
+  ]
+ },
+ "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026": {
+  "phrases_expected": [
+   "15%",
+   "5,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026",
+  "title": "Rates and thresholds for employers 2025 to 2026 - GOV.UK",
+  "phrases_found": [
+   "15%",
+   "5,000"
+  ]
+ },
+ "https://www.gov.uk/claim-employment-allowance": {
+  "phrases_expected": [
+   "Employment Allowance",
+   "10,500"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/claim-employment-allowance",
+  "title": "Employment Allowance: What you&#39;ll get - GOV.UK",
+  "phrases_found": [
+   "Employment Allowance",
+   "10,500"
+  ]
+ },
+ "https://www.gov.uk/expenses-and-benefits-business-travel-mileage": {
+  "phrases_expected": [
+   "mileage",
+   "approved"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/expenses-and-benefits-business-travel-mileage",
+  "title": "Expenses and benefits: business travel mileage for employees&#39; own vehicles: Overview - GOV.UK",
+  "phrases_found": [
+   "mileage",
+   "approved"
+  ]
+ },
+ "https://www.gov.uk/government/news/care-worker-visa-route-closed-to-new-applications-from-abroad": {
+  "phrases_expected": [
+   "care worker",
+   "visa"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/government/news/care-worker-visa-route-closed-to-new-applications-from-abroad",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": [
+   "visa"
+  ]
+ },
+ "https://www.gov.uk/uk-visa-sponsorship-employers": {
+  "phrases_expected": [
+   "sponsor licence"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/uk-visa-sponsorship-employers",
+  "title": "UK visa sponsorship for employers: Overview - GOV.UK",
+  "phrases_found": [
+   "sponsor licence"
+  ]
+ },
+ "https://www.gov.uk/capital-allowances/annual-investment-allowance": {
+  "phrases_expected": [
+   "1 million",
+   "Annual Investment Allowance"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/capital-allowances/annual-investment-allowance",
+  "title": "Claim capital allowances: Annual investment allowance - GOV.UK",
+  "phrases_found": [
+   "1 million",
+   "Annual Investment Allowance"
+  ]
+ },
+ "https://www.gov.uk/work-out-capital-allowances/rates-and-pools": {
+  "phrases_expected": [
+   "writing down",
+   "main rate"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/work-out-capital-allowances/rates-and-pools",
+  "title": "Work out your writing down allowances: Rates and pools - GOV.UK",
+  "phrases_found": [
+   "writing down",
+   "main rate"
+  ]
+ },
+ "https://www.gov.uk/guidance/structures-and-buildings-allowance": {
+  "phrases_expected": [
+   "Structures and Buildings",
+   "3%"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/guidance/structures-and-buildings-allowance",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/corporation-tax-rates": {
+  "phrases_expected": [
+   "25%",
+   "small profits rate"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/corporation-tax-rates",
+  "title": "Corporation Tax rates, expenses and reliefs: Rates - GOV.UK",
+  "phrases_found": [
+   "25%",
+   "small profits rate"
+  ]
+ },
+ "https://www.gov.uk/business-asset-disposal-relief": {
+  "phrases_expected": [
+   "Business Asset Disposal Relief",
+   "1 million"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/business-asset-disposal-relief",
+  "title": "Business Asset Disposal Relief: Eligibility - GOV.UK",
+  "phrases_found": [
+   "Business Asset Disposal Relief",
+   "1 million"
+  ]
+ },
+ "https://www.gov.uk/capital-gains-tax/rates": {
+  "phrases_expected": [
+   "Capital Gains Tax",
+   "24%"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/capital-gains-tax/rates",
+  "title": "Capital Gains Tax: what you pay it on, rates and allowances: Capital Gains Tax rates - GOV.UK",
+  "phrases_found": [
+   "Capital Gains Tax",
+   "24%"
+  ]
+ },
+ "https://www.gov.uk/apply-for-business-rate-relief/small-business-rate-relief": {
+  "phrases_expected": [
+   "12,000",
+   "small business rate relief"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/business-rates-relief/small-business-rate-relief",
+  "title": "Business rates relief: Small business rate relief - GOV.UK",
+  "phrases_found": [
+   "12,000",
+   "small business rate relief"
+  ]
+ },
+ "https://www.gov.uk/introduction-to-business-rates": {
+  "phrases_expected": [
+   "rateable value"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/introduction-to-business-rates",
+  "title": "Business rates: Overview - GOV.UK",
+  "phrases_found": [
+   "rateable value"
+  ]
+ },
+ "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax": {
+  "phrases_expected": [
+   "Making Tax Digital",
+   "50,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax",
+  "title": "Use Making Tax Digital for Income Tax - Guidance - GOV.UK",
+  "phrases_found": [
+   "Making Tax Digital"
+  ]
+ },
+ "https://www.cqc.org.uk/guidance-providers/registration/how-register-cqc": {
+  "phrases_expected": [
+   "register",
+   "provider"
+  ],
+  "status": 404,
+  "final_url": "https://www.cqc.org.uk/guidance-providers/registration/how-register-cqc",
+  "title": "Sorry, we couldn&#039;t find that page - Care Quality Commission",
+  "phrases_found": [
+   "register",
+   "provider"
+  ]
+ },
+ "https://www.cqc.org.uk/guidance-regulation/providers/registration/financial-viability-statements": {
+  "phrases_expected": [
+   "financial viability"
+  ],
+  "status": 404,
+  "final_url": "https://www.cqc.org.uk/guidance-regulation/providers/registration/financial-viability-statements",
+  "title": "Sorry, we couldn&#039;t find that page - Care Quality Commission",
+  "phrases_found": []
+ },
+ "https://www.cqc.org.uk/about-us/transparency/using-cqc-data": {
+  "phrases_expected": [
+   "data",
+   "download"
+  ],
+  "status": 200,
+  "final_url": "https://www.cqc.org.uk/about-us/transparency/using-cqc-data",
+  "title": "Using CQC data - Care Quality Commission",
+  "phrases_found": [
+   "data",
+   "download"
+  ]
+ },
+ "https://www.cqc.org.uk/guidance-providers/market-oversight-adult-social-care": {
+  "phrases_expected": [
+   "market oversight"
+  ],
+  "status": 404,
+  "final_url": "https://www.cqc.org.uk/guidance-providers/market-oversight-adult-social-care",
+  "title": "Sorry, we couldn&#039;t find that page - Care Quality Commission",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/government/publications/nhs-funded-nursing-care-rate-2025-to-2026": {
+  "phrases_expected": [
+   "funded nursing care",
+   "rate"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/government/publications/nhs-funded-nursing-care-rate-2025-to-2026",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": [
+   "rate"
+  ]
+ },
+ "https://www.gov.uk/government/publications/national-framework-for-nhs-continuing-healthcare-and-nhs-funded-nursing-care": {
+  "phrases_expected": [
+   "continuing healthcare"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/government/publications/national-framework-for-nhs-continuing-healthcare-and-nhs-funded-nursing-care",
+  "title": "National framework for NHS continuing healthcare and NHS-funded nursing care - GOV.UK",
+  "phrases_found": [
+   "continuing healthcare"
+  ]
+ },
+ "https://www.gov.uk/government/publications/market-sustainability-and-improvement-fund-2024-to-2025": {
+  "phrases_expected": [
+   "market sustainability"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/government/publications/market-sustainability-and-improvement-fund-2024-to-2025",
+  "title": "Market Sustainability and Improvement Fund 2024 to 2025 - GOV.UK",
+  "phrases_found": [
+   "market sustainability"
+  ]
+ },
+ "https://www.gov.uk/care-act-statutory-guidance/care-and-support-statutory-guidance": {
+  "phrases_expected": [
+   "care and support"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/care-act-statutory-guidance/care-and-support-statutory-guidance",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://download.companieshouse.gov.uk/en_output.html": {
+  "phrases_expected": [
+   "download",
+   "company"
+  ],
+  "status": 200,
+  "final_url": "https://download.companieshouse.gov.uk/en_output.html",
+  "title": "Companies House",
+  "phrases_found": [
+   "download",
+   "company"
+  ]
+ },
+ "https://resources.companieshouse.gov.uk/sic/": {
+  "phrases_expected": [
+   "87",
+   "Standard industrial classification"
+  ],
+  "status": 200,
+  "final_url": "https://resources.companieshouse.gov.uk/sic/",
+  "title": "Nature of business: Standard Industrial Classification (SIC) codes",
+  "phrases_found": [
+   "87",
+   "Standard industrial classification"
+  ]
+ },
+ "https://www.gov.uk/government/collections/monthly-insolvency-statistics": {
+  "phrases_expected": [
+   "insolvency"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/government/collections/monthly-insolvency-statistics",
+  "title": "Monthly Insolvency Statistics - GOV.UK",
+  "phrases_found": [
+   "insolvency"
+  ]
+ },
+ "https://www.skillsforcare.org.uk/Adult-Social-Care-Workforce-Data/Workforce-intelligence/publications/national-information/The-state-of-the-adult-social-care-sector-and-workforce-in-England.aspx": {
+  "phrases_expected": [
+   "workforce"
+  ],
+  "status": 200,
+  "final_url": "https://www.skillsforcare.org.uk/Adult-Social-Care-Workforce-Data/workforceintelligence/Reports-and-visualisations/National-information/The-State-of-report.aspx",
+  "title": "The 'State of' report",
+  "phrases_found": [
+   "workforce"
+  ]
+ }
+}

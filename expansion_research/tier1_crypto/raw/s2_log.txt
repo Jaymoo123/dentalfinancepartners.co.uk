@@ -1,0 +1,163 @@
+koinly.io: FAIL 403
+mycryptotax.co.uk: FAIL 403
+recap.io: OK mentions=50 svc=True
+uk.andersen.com: FAIL 202
+mmba.co.uk: OK mentions=10 svc=True
+charltonbaker.co.uk: OK mentions=7 svc=True
+alexander.co.uk: OK mentions=2 svc=True
+lanop.co.uk: FAIL 403
+mycryptotax.io: OK mentions=134 svc=True
+mjkane.co.uk: OK mentions=10 svc=True
+cryptoaccountants.live: FAIL 202
+7accountants.com: FAIL 403
+hodgebakshi.com: OK mentions=11 svc=True
+coinledger.io: OK mentions=119 svc=True
+ross-brooke.co.uk: OK mentions=6 svc=True
+ukcryptocurrencyaccountant.co.uk: OK mentions=39 svc=True
+123financials.com: OK mentions=3 svc=True
+yourcryptoaccountant.co.uk: FAIL 202
+hashtax.io: OK mentions=89 svc=True
+mindyourownbusiness.uk: OK mentions=49 svc=True
+rppaccounts.co.uk: OK mentions=7 svc=True
+taxdisputes.co.uk: OK mentions=1 svc=True
+accountingweb.co.uk: FAIL 403
+cryptax.uk: OK mentions=49 svc=False
+crypto-tax-accountant.co.uk: OK mentions=66 svc=True
+cryptotaxation.co.uk: FAIL 202
+dsburge.co.uk: OK mentions=5 svc=True
+sataxaccountants.co.uk: OK mentions=3 svc=True
+cryptotaxaccountant.uk: FAIL 403
+theaccountancy.co.uk: FAIL 403
+a-wise.co.uk: OK mentions=5 svc=True
+gmprofessionalaccountants.co.uk: FAIL 202
+mytaxaccountant.co.uk: OK mentions=4 svc=True
+crypto-consultants.co.uk: FAIL 202
+drpaccountants.co.uk: OK mentions=127 svc=True
+menzies.co.uk: FAIL 403
+maxproaccountants.co.uk: OK mentions=6 svc=True
+patrickcannon.net: OK mentions=3 svc=True
+crunch.co.uk: OK mentions=0 svc=True
+countdefi.com: OK mentions=85 svc=True
+blockpit.io: OK mentions=43 svc=True
+streets.uk: FAIL 403
+bdo.co.uk: OK mentions=0 svc=False
+binance.com: FAIL 202
+tiktok.com: OK mentions=0 svc=False
+protos.com: OK mentions=22 svc=True
+ecommerceaccountants.co.uk: OK mentions=0 svc=False
+protaxaccountant.co.uk: OK mentions=0 svc=True
+brokerxplorer.com: OK mentions=190 svc=True
+heon.com: OK mentions=1 svc=False
+taxfix.com: OK mentions=2 svc=True
+goforma.com: OK mentions=3 svc=True
+bkl.co.uk: OK mentions=1 svc=True
+mycryptotaxadvisor.co.uk: OK mentions=12 svc=True
+/clev?event=startpageresultclick&sc=a8mbue7dqk9tmcetpz8fp2ecrwzs6sdgfuu819johlnu3yzus3qcqfc1isawlomnn7ojgcu4rttb7f0aecp6h977ilctiuvnb&payload={"bdssessionid":"674adb28bb9d430e9b6754ec04ad5907","cheqid":"","countrycode":"gb","devicetype":"mobile","endpoint":"search.serp","hasgoogleads":false,"page_id":"1ub5vyacaaqh9o9e1","querycategory":"web","segment":"startpage.udog","session_id":"1akrltxldaqfjk3gi","surface":"serp-web","transport":"href-request"}: EXC No host in URL: 'https:///clev?event=startpageresultclick&sc=a8mbue7dqk9tmcetpz8fp2ecrwzs6sdgfuu819johlnu3yzus3qcqfc1isawlomnn7ojgcu4rttb7f0aecp6h977ilctiuvnb&payload={"bdssessionid":"674adb28bb9d430e9b6754ec04ad5907","cheqid":"","countrycode":"gb","devicetype":"mobile","endpoint":"search.serp","hasgoogleads":false,"page_id":"1ub5vyacaaqh9o9e1","querycategory":"web","segment":"startpage.udog","session_id":"1akrltxldaqfjk3gi","surface":"serp-web","transport":"href-request"}/'
+techbuzzireland.com: OK mentions=1 svc=True
+ukmapguide.co.uk: OK mentions=0 svc=False
+uk.trustpilot.com: FAIL -1
+knightbridgetax.com: OK mentions=25 svc=True
+mynal2.co.uk: OK mentions=1 svc=False
+cryptotaxdegens.com: OK mentions=132 svc=True
+bitcoinaccountant.co.uk: OK mentions=30 svc=True
+coinpanda.io: OK mentions=65 svc=True
+taxdisclosures.co.uk: OK mentions=4 svc=True
+cannonchambers.co.uk: OK mentions=1 svc=True
+towerstone.co.uk: OK mentions=3 svc=True
+cryptocountancy.co.uk: OK mentions=66 svc=True
+larking-gowen.co.uk: OK mentions=0 svc=False
+learnsignal.com: FAIL 429
+yourtaxhelp.co.uk: OK mentions=1 svc=True
+taxyz.co.uk: OK mentions=1 svc=True
+moneyguide.org.uk: OK mentions=5 svc=True
+msn.com: OK mentions=0 svc=False
+earegolding.com: EXC SSRF blocked: earegolding.com resolves to private IP
+christian-co.co.uk: OK mentions=2 svc=True
+newtax.co.uk: OK mentions=2 svc=True
+goldwins.co.uk: FAIL 0
+gmsworld.co.uk: OK mentions=2 svc=True
+scannelltax.com: FAIL 0
+tlpaccountants.co.uk: OK mentions=2 svc=True
+zanepartnership.co.uk: OK mentions=3 svc=True
+bda-associates.co.uk: FAIL 0
+branstonadams.co.uk: OK mentions=2 svc=True
+cryptoaccountantsuk.co.uk: OK mentions=30 svc=True
+richardsonlissack.co.uk: FAIL 202
+jermyn.co.uk: OK mentions=1 svc=True
+icas.com: OK mentions=0 svc=True
+taxscape.deloitte.com: OK mentions=0 svc=True
+taxnatives.com: OK mentions=0 svc=False
+midgard.co.uk: OK mentions=0 svc=False
+rg-cs.co.uk: OK mentions=1 svc=False
+natpoint.com: FAIL 202
+surftechit.co.uk: OK mentions=1 svc=False
+mklink.co.uk: OK mentions=0 svc=False
+meartechnology.co.uk: OK mentions=0 svc=False
+cryptotaxsolution.co.uk: OK mentions=65 svc=True
+incometax.gov.in: EXC SSRF blocked: incometax.gov.in resolves to private IP
+batutatech.com: OK mentions=0 svc=False
+income-tax.co.uk: FAIL 403
+ato.gov.au: FAIL 403
+block3finance.com: OK mentions=24 svc=True
+3commas.io: OK mentions=30 svc=True
+soletax.io: OK mentions=0 svc=False
+gemini.com: OK mentions=9 svc=True
+news.bitcoin.com: OK mentions=200 svc=True
+magnusaccounting.co.uk: OK mentions=0 svc=True
+pro-blockchain.com: OK mentions=3 svc=False
+numerallp.com: OK mentions=2 svc=True
+investing.com: OK mentions=27 svc=False
+docs.recap.io: OK mentions=32 svc=True
+kraken.com: OK mentions=77 svc=True
+kucoin.com: OK mentions=23 svc=True
+photon-sol.tinyastro.io: FAIL 403
+nexo.com: OK mentions=43 svc=True
+adamaccountancy.co.uk: OK mentions=1 svc=False
+taxaccountant.co.uk: OK mentions=1 svc=True
+taax.co.uk: OK mentions=0 svc=True
+xactaccountants.co.uk: OK mentions=0 svc=True
+taxreturnaccountants.uk: OK mentions=0 svc=False
+accountingfirms.co.uk: OK mentions=0 svc=True
+taxback.co.uk: OK mentions=2 svc=False
+veteranstoday.com: FAIL 403
+theindustryspread.com: OK mentions=22 svc=True
+citytaxdirect.co.uk: EXC SSRF blocked: citytaxdirect.co.uk resolves to private IP
+eliteforextrading.com: OK mentions=14 svc=True
+savingtool.co.uk: OK mentions=0 svc=False
+litfxacademy.com: FAIL 0
+forex-cmc.co.uk: OK mentions=78 svc=True
+accountantsfortraders.co.uk: OK mentions=1 svc=False
+dnsassociates.co.uk: OK mentions=0 svc=True
+pearllemonaccountants.com: OK mentions=7 svc=True
+auditox-accountancy.uk: OK mentions=7 svc=True
+experlu.co.uk: OK mentions=0 svc=False
+uk.linkedin.com: FAIL -1
+advanta-ca.com: OK mentions=0 svc=False
+simmons-simmons.com: OK mentions=0 svc=False
+kryptomoney.com: OK mentions=35 svc=True
+crowdfundinsider.com: FAIL 403
+kryptos.io: OK mentions=69 svc=True
+debitam.com: OK mentions=0 svc=True
+staxsimple.com: OK mentions=0 svc=False
+bitrue.com: OK mentions=21 svc=True
+bitget.com: OK mentions=22 svc=True
+summ.com: FAIL 403
+bitbo.io: OK mentions=23 svc=False
+bitcourier.co.uk: OK mentions=25 svc=True
+support.koinly.io: FAIL 403
+internationalfintech.com: OK mentions=0 svc=False
+dynamicbusiness.com: OK mentions=0 svc=False
+sourceforge.net: OK mentions=2 svc=True
+certifiedcryptoaccountant.com: OK mentions=144 svc=True
+seperaaccounting.co.uk: OK mentions=14 svc=True
+capitalgainstaxexpert.co.uk: FAIL 403
+isetax.co.uk: EXC SSRF blocked: isetax.co.uk resolves to private IP
+johnsonsuk.com: OK mentions=0 svc=False
+paytoolkit.co.uk: OK mentions=11 svc=True
+birminghamwealthmanagement.co.uk: FAIL 403
+etctax.co.uk: OK mentions=9 svc=True
+tax.crypto.com: OK mentions=3 svc=False
+thisismoney.co.uk: OK mentions=0 svc=True
+bing.com: OK mentions=0 svc=False
+cointracking.info: OK mentions=58 svc=True
+done: 162 domains

@@ -1,0 +1,383 @@
+{
+ "https://www.gov.uk/guidance/health-professionals-pharmaceutical-products-and-vat-notice-70157": {
+  "phrases_expected": [
+   "zero-rated",
+   "prescription",
+   "pharmacist"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/health-professionals-pharmaceutical-products-and-vat-notice-70157",
+  "title": "Health professionals and pharmaceutical products (VAT Notice 701/57) - GOV.UK",
+  "phrases_found": [
+   "zero-rated",
+   "prescription",
+   "pharmacist"
+  ]
+ },
+ "https://www.gov.uk/guidance/partial-exemption-vat-notice-706": {
+  "phrases_expected": [
+   "partial exemption",
+   "de minimis"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/partial-exemption-vat-notice-706",
+  "title": "Partial exemption (VAT Notice 706) - GOV.UK",
+  "phrases_found": [
+   "partial exemption",
+   "de minimis"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/vat-retail-schemes": {
+  "phrases_expected": [
+   "retail scheme"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/vat-retail-schemes",
+  "title": "VAT Retail schemes guidance - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "retail scheme"
+  ]
+ },
+ "https://www.gov.uk/vat-registration": {
+  "phrases_expected": [
+   "90,000",
+   "register"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/register-for-vat",
+  "title": "Register for VAT: When to register for VAT - GOV.UK",
+  "phrases_found": [
+   "90,000",
+   "register"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/employment-status-manual/esm4270": {
+  "phrases_expected": [
+   "pharmacist",
+   "locum"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/employment-status-manual/esm4270",
+  "title": "ESM4270 - Particular occupations: locum pharmacists - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "pharmacist",
+   "locum"
+  ]
+ },
+ "https://www.gov.uk/guidance/understanding-off-payroll-working-ir35": {
+  "phrases_expected": [
+   "off-payroll",
+   "intermediary"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/understanding-off-payroll-working-ir35",
+  "title": "Understanding off-payroll working (IR35) - GOV.UK",
+  "phrases_found": [
+   "off-payroll",
+   "intermediary"
+  ]
+ },
+ "https://www.gov.uk/guidance/check-employment-status-for-tax": {
+  "phrases_expected": [
+   "employment status"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/check-employment-status-for-tax",
+  "title": "Check employment status for tax (CEST) - GOV.UK",
+  "phrases_found": [
+   "employment status"
+  ]
+ },
+ "https://www.gov.uk/employment-status/selfemployed-contractor": {
+  "phrases_expected": [
+   "self-employed"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/employment-status/selfemployed-contractor",
+  "title": "Employment status: Self-employed and contractor - GOV.UK",
+  "phrases_found": [
+   "self-employed"
+  ]
+ },
+ "https://www.gov.uk/business-asset-disposal-relief": {
+  "phrases_expected": [
+   "Business Asset Disposal Relief",
+   "14%"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/business-asset-disposal-relief",
+  "title": "Business Asset Disposal Relief: Eligibility - GOV.UK",
+  "phrases_found": [
+   "Business Asset Disposal Relief",
+   "14%"
+  ]
+ },
+ "https://www.gov.uk/guidance/corporation-tax-relief-on-goodwill-and-relevant-assets": {
+  "phrases_expected": [
+   "goodwill",
+   "relief"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/corporation-tax-relief-on-goodwill-and-relevant-assets",
+  "title": "Corporation Tax relief on goodwill and relevant assets - GOV.UK",
+  "phrases_found": [
+   "goodwill",
+   "relief"
+  ]
+ },
+ "https://www.gov.uk/capital-gains-tax/rates": {
+  "phrases_expected": [
+   "Capital Gains Tax",
+   "24%"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/capital-gains-tax/rates",
+  "title": "Capital Gains Tax: what you pay it on, rates and allowances: Capital Gains Tax rates - GOV.UK",
+  "phrases_found": [
+   "Capital Gains Tax",
+   "24%"
+  ]
+ },
+ "https://www.gov.uk/stamp-duty-land-tax/nonresidential-and-mixed-use-rates": {
+  "phrases_expected": [
+   "non-residential",
+   "5%"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/stamp-duty-land-tax",
+  "title": "Stamp Duty Land Tax: Overview - GOV.UK",
+  "phrases_found": [
+   "non-residential",
+   "5%"
+  ]
+ },
+ "https://www.gov.uk/guidance/stamp-duty-on-shares": {
+  "phrases_expected": [
+   "0.5%",
+   "shares"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/stamp-duty-on-shares",
+  "title": "Completing a stock transfer form - GOV.UK",
+  "phrases_found": [
+   "shares"
+  ]
+ },
+ "https://www.gov.uk/capital-allowances/annual-investment-allowance": {
+  "phrases_expected": [
+   "1 million",
+   "Annual Investment Allowance"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/capital-allowances/annual-investment-allowance",
+  "title": "Claim capital allowances: Annual investment allowance - GOV.UK",
+  "phrases_found": [
+   "1 million",
+   "Annual Investment Allowance"
+  ]
+ },
+ "https://www.gov.uk/guidance/claiming-capital-allowances-for-structures-and-buildings": {
+  "phrases_expected": [
+   "structures and buildings",
+   "3%"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/claiming-capital-allowances-for-structures-and-buildings",
+  "title": "Claiming capital allowances for structures and buildings - GOV.UK",
+  "phrases_found": [
+   "structures and buildings",
+   "3%"
+  ]
+ },
+ "https://www.gov.uk/work-out-capital-allowances/rates-and-pools": {
+  "phrases_expected": [
+   "writing down",
+   "main rate"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/work-out-capital-allowances/rates-and-pools",
+  "title": "Work out your writing down allowances: Rates and pools - GOV.UK",
+  "phrases_found": [
+   "writing down",
+   "main rate"
+  ]
+ },
+ "https://www.gov.uk/corporation-tax-rates": {
+  "phrases_expected": [
+   "25%",
+   "small profits rate"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/corporation-tax-rates",
+  "title": "Corporation Tax rates, expenses and reliefs: Rates - GOV.UK",
+  "phrases_found": [
+   "25%",
+   "small profits rate"
+  ]
+ },
+ "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027": {
+  "phrases_expected": [
+   "15%",
+   "5,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+  "title": "Rates and thresholds for employers 2026 to 2027 - GOV.UK",
+  "phrases_found": [
+   "15%",
+   "5,000"
+  ]
+ },
+ "https://www.gov.uk/claim-employment-allowance": {
+  "phrases_expected": [
+   "Employment Allowance"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/claim-employment-allowance",
+  "title": "Employment Allowance: What you&#39;ll get - GOV.UK",
+  "phrases_found": [
+   "Employment Allowance"
+  ]
+ },
+ "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax": {
+  "phrases_expected": [
+   "Making Tax Digital",
+   "50,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax",
+  "title": "Use Making Tax Digital for Income Tax - Guidance - GOV.UK",
+  "phrases_found": [
+   "Making Tax Digital"
+  ]
+ },
+ "https://www.gov.uk/simpler-income-tax-cash-basis": {
+  "phrases_expected": [
+   "cash basis"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/simpler-income-tax-cash-basis",
+  "title": "Cash basis: Overview - GOV.UK",
+  "phrases_found": [
+   "cash basis"
+  ]
+ },
+ "https://www.nhsbsa.nhs.uk/pharmacies-gp-practices-and-appliance-contractors/drug-tariff": {
+  "phrases_expected": [
+   "Drug Tariff"
+  ],
+  "status": 200,
+  "final_url": "https://www.nhsbsa.nhs.uk/pharmacies-gp-practices-and-appliance-contractors/drug-tariff",
+  "title": "Drug Tariff | NHSBSA",
+  "phrases_found": [
+   "Drug Tariff"
+  ]
+ },
+ "https://www.nhsbsa.nhs.uk/pharmacies-gp-practices-and-appliance-contractors/submitting-prescriptions": {
+  "phrases_expected": [
+   "FP34"
+  ],
+  "status": 200,
+  "final_url": "https://www.nhsbsa.nhs.uk/pharmacies-gp-practices-and-appliance-contractors/submitting-prescriptions",
+  "title": "Submitting prescriptions | NHSBSA",
+  "phrases_found": [
+   "FP34"
+  ]
+ },
+ "https://www.england.nhs.uk/community-pharmacy-contractual-framework/": {
+  "phrases_expected": [
+   "Community Pharmacy Contractual Framework"
+  ],
+  "status": 200,
+  "final_url": "https://www.england.nhs.uk/primary-care/pharmacy/community-pharmacy-contractual-framework/",
+  "title": "NHS England &raquo; Community Pharmacy Contractual Framework 2019-2024",
+  "phrases_found": [
+   "Community Pharmacy Contractual Framework"
+  ]
+ },
+ "https://www.england.nhs.uk/primary-care/pharmacy/pharmacy-services/pharmacy-first/": {
+  "phrases_expected": [
+   "Pharmacy First"
+  ],
+  "status": 200,
+  "final_url": "https://www.england.nhs.uk/primary-care/pharmacy/pharmacy-services/pharmacy-first/",
+  "title": "NHS England &raquo; Pharmacy First",
+  "phrases_found": [
+   "Pharmacy First"
+  ]
+ },
+ "https://www.legislation.gov.uk/uksi/2013/349/contents": {
+  "phrases_expected": [
+   "Pharmaceutical Services",
+   "2013"
+  ],
+  "status": 200,
+  "final_url": "https://www.legislation.gov.uk/uksi/2013/349/contents",
+  "title": "The National Health Service (Pharmaceutical and Local Pharmaceutical Services) Regulations 2013",
+  "phrases_found": [
+   "Pharmaceutical Services",
+   "2013"
+  ]
+ },
+ "https://www.pharmacyregulation.org/pharmacies": {
+  "phrases_expected": [
+   "pharmac"
+  ],
+  "status": 200,
+  "final_url": "https://www.pharmacyregulation.org/pharmacies",
+  "title": "Pharmacies | General Pharmaceutical Council",
+  "phrases_found": [
+   "pharmac"
+  ]
+ },
+ "https://opendata.nhsbsa.net/": {
+  "phrases_expected": [
+   "Open Data",
+   "NHSBSA"
+  ],
+  "status": 200,
+  "final_url": "https://opendata.nhsbsa.net/",
+  "title": "Welcome - Open Data Portal",
+  "phrases_found": [
+   "Open Data",
+   "NHSBSA"
+  ]
+ },
+ "https://www.nhsbsa.nhs.uk/prescription-data/dispensing-data/dispensing-contractors-data": {
+  "phrases_expected": [
+   "dispensing contractors"
+  ],
+  "status": 200,
+  "final_url": "https://www.nhsbsa.nhs.uk/prescription-data/dispensing-data/dispensing-contractors-data",
+  "title": "Dispensing contractors&#039; data | NHSBSA",
+  "phrases_found": [
+   "dispensing contractors"
+  ]
+ },
+ "https://download.companieshouse.gov.uk/en_output.html": {
+  "phrases_expected": [
+   "download",
+   "company"
+  ],
+  "status": 200,
+  "final_url": "https://download.companieshouse.gov.uk/en_output.html",
+  "title": "Companies House",
+  "phrases_found": [
+   "download",
+   "company"
+  ]
+ },
+ "https://resources.companieshouse.gov.uk/sic/": {
+  "phrases_expected": [
+   "47730",
+   "Standard industrial classification"
+  ],
+  "status": 200,
+  "final_url": "https://resources.companieshouse.gov.uk/sic/",
+  "title": "Nature of business: Standard Industrial Classification (SIC) codes",
+  "phrases_found": [
+   "47730",
+   "Standard industrial classification"
+  ]
+ }
+}

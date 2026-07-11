@@ -1,0 +1,68 @@
+{
+ "silverlevene.co.uk": {
+  "status": 200,
+  "final_url": "https://www.silverlevene.co.uk/",
+  "title": "Silver Levene | Accounting, Taxation and Business Advice | London",
+  "meta": "Silver Levene are London based accountants providing professional accounting, taxation &amp; business advice to businesses and individuals.",
+  "pharm_mentions": 0
+ },
+ "lanop.co.uk": {
+  "status": 403,
+  "final_url": "https://lanop.co.uk/",
+  "title": "Checking your browser before accessing. Just a moment...",
+  "meta": "",
+  "pharm_mentions": 0
+ },
+ "3esaccountants.co.uk": {
+  "status": 403,
+  "final_url": "https://3esaccountants.co.uk/",
+  "title": "Just a moment...",
+  "meta": "",
+  "pharm_mentions": 0
+ },
+ "accountingpeople.co.uk": {
+  "status": 200,
+  "final_url": "https://accountingpeople.co.uk/",
+  "title": "Award-Winning Accountants in London | Accounting People",
+  "meta": "Trusted London accountants for tax, bookkeeping and payroll. Supporting businesses in Stanmore, Harrow, Watford and across the UK.",
+  "pharm_mentions": 4
+ },
+ "pharmacyaccountants.co.uk": {
+  "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pharmacyaccountants.co.uk'. (_ssl.c:1032)"
+ },
+ "gmprofessionalaccountants.co.uk": {
+  "status": 202,
+  "final_url": "https://gmprofessionalaccountants.co.uk/",
+  "title": "",
+  "meta": "",
+  "pharm_mentions": 0
+ },
+ "quilliammarr.co.uk": {
+  "status": 403,
+  "final_url": "https://quilliammarr.co.uk/",
+  "title": "Checking your browser before accessing. Just a moment...",
+  "meta": "",
+  "pharm_mentions": 0
+ },
+ "scotpharm.com": {
+  "status": 202,
+  "final_url": "https://scotpharm.com/",
+  "title": "",
+  "meta": "",
+  "pharm_mentions": 0
+ },
+ "audtax.co.uk": {
+  "status": 202,
+  "final_url": "https://audtax.co.uk/",
+  "title": "",
+  "meta": "",
+  "pharm_mentions": 0
+ },
+ "fvtax.co.uk": {
+  "status": 403,
+  "final_url": "https://fvtax.co.uk/",
+  "title": "Just a moment...",
+  "meta": "",
+  "pharm_mentions": 0
+ }
+}
