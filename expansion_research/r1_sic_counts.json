@@ -1,0 +1,493 @@
+{
+ "generated": "2026-07-11",
+ "caveat": "CH counts incorporated companies only; sole-trader-heavy niches understated",
+ "sectors": [
+  {
+   "sector": "dentists",
+   "sic_codes": [
+    "86230"
+   ],
+   "active_companies": 20457,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "gps / private doctors",
+   "sic_codes": [
+    "86210",
+    "86220"
+   ],
+   "active_companies": 62880,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "other human health (physio, psychology, clinics)",
+   "sic_codes": [
+    "86900"
+   ],
+   "active_companies": 108288,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "opticians",
+   "sic_codes": [
+    "47782"
+   ],
+   "active_companies": 4031,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "pharmacies",
+   "sic_codes": [
+    "47730"
+   ],
+   "active_companies": 7992,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "vets",
+   "sic_codes": [
+    "75000"
+   ],
+   "active_companies": 5819,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "care homes",
+   "sic_codes": [
+    "87100",
+    "87300"
+   ],
+   "active_companies": 22353,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "domiciliary care agencies",
+   "sic_codes": [
+    "88100"
+   ],
+   "active_companies": 11574,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "nurseries / childcare",
+   "sic_codes": [
+    "88910"
+   ],
+   "active_companies": 11189,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "solicitors / legal",
+   "sic_codes": [
+    "69102",
+    "69109"
+   ],
+   "active_companies": 22922,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "barristers",
+   "sic_codes": [
+    "69101"
+   ],
+   "active_companies": 912,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "property landlords (letting own property)",
+   "sic_codes": [
+    "68209",
+    "68100"
+   ],
+   "active_companies": 746450,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "property management",
+   "sic_codes": [
+    "68320"
+   ],
+   "active_companies": 129777,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "estate / letting agents",
+   "sic_codes": [
+    "68310"
+   ],
+   "active_companies": 40502,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "construction of buildings",
+   "sic_codes": [
+    "41202",
+    "41100"
+   ],
+   "active_companies": 221143,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "plumbers / HVAC",
+   "sic_codes": [
+    "43220"
+   ],
+   "active_companies": 53467,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "electricians",
+   "sic_codes": [
+    "43210"
+   ],
+   "active_companies": 60549,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "painters / decorators",
+   "sic_codes": [
+    "43341"
+   ],
+   "active_companies": 18369,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "roofers",
+   "sic_codes": [
+    "43910"
+   ],
+   "active_companies": 18998,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "joiners / carpenters",
+   "sic_codes": [
+    "43320"
+   ],
+   "active_companies": 24277,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "landscapers / gardeners",
+   "sic_codes": [
+    "81300"
+   ],
+   "active_companies": 24664,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "cleaning businesses",
+   "sic_codes": [
+    "81210",
+    "81229"
+   ],
+   "active_companies": 33263,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "IT contractors / software dev",
+   "sic_codes": [
+    "62012",
+    "62020",
+    "62090"
+   ],
+   "active_companies": 384752,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "management consultants",
+   "sic_codes": [
+    "70229"
+   ],
+   "active_companies": 285395,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "marketing / advertising agencies",
+   "sic_codes": [
+    "73110"
+   ],
+   "active_companies": 55504,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "architects",
+   "sic_codes": [
+    "71111"
+   ],
+   "active_companies": 21405,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "engineering consultants",
+   "sic_codes": [
+    "71121",
+    "71129"
+   ],
+   "active_companies": 53506,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "recruitment agencies",
+   "sic_codes": [
+    "78109",
+    "78200",
+    "78300"
+   ],
+   "active_companies": 73060,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "ecommerce / online retail",
+   "sic_codes": [
+    "47910"
+   ],
+   "active_companies": 215227,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "restaurants",
+   "sic_codes": [
+    "56101"
+   ],
+   "active_companies": 54852,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "takeaways",
+   "sic_codes": [
+    "56103"
+   ],
+   "active_companies": 87323,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "pubs / bars",
+   "sic_codes": [
+    "56302"
+   ],
+   "active_companies": 39463,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "hotels",
+   "sic_codes": [
+    "55100"
+   ],
+   "active_companies": 20171,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "holiday lets / self catering",
+   "sic_codes": [
+    "55209",
+    "55202"
+   ],
+   "active_companies": 16140,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "cafes",
+   "sic_codes": [
+    "56102"
+   ],
+   "active_companies": 49885,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "event catering",
+   "sic_codes": [
+    "56210"
+   ],
+   "active_companies": 31327,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "travel agents / tour operators",
+   "sic_codes": [
+    "79110",
+    "79120"
+   ],
+   "active_companies": 25275,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "taxi / private hire",
+   "sic_codes": [
+    "49320"
+   ],
+   "active_companies": 21202,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "couriers",
+   "sic_codes": [
+    "53202"
+   ],
+   "active_companies": 12328,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "haulage / road freight",
+   "sic_codes": [
+    "49410"
+   ],
+   "active_companies": 75933,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "farmers / agriculture",
+   "sic_codes": [
+    "01110",
+    "01410",
+    "01500"
+   ],
+   "active_companies": 15600,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "hairdressers / beauty salons",
+   "sic_codes": [
+    "96020"
+   ],
+   "active_companies": 77877,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "gyms / fitness",
+   "sic_codes": [
+    "93130"
+   ],
+   "active_companies": 17381,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "sports clubs",
+   "sic_codes": [
+    "93120"
+   ],
+   "active_companies": 12135,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "personal trainers / sports activities",
+   "sic_codes": [
+    "93199",
+    "85510"
+   ],
+   "active_companies": 48500,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "film / tv production",
+   "sic_codes": [
+    "59111",
+    "59112"
+   ],
+   "active_companies": 50392,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "performing artists / musicians",
+   "sic_codes": [
+    "90010",
+    "90020",
+    "90030"
+   ],
+   "active_companies": 92215,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "photographers",
+   "sic_codes": [
+    "74202",
+    "74201",
+    "74209"
+   ],
+   "active_companies": 21161,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "tutors / private education",
+   "sic_codes": [
+    "85590",
+    "85600"
+   ],
+   "active_companies": 112081,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "driving instructors",
+   "sic_codes": [
+    "85530"
+   ],
+   "active_companies": 4501,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "charities / membership orgs (proxy)",
+   "sic_codes": [
+    "94990"
+   ],
+   "active_companies": 14507,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "religious organisations",
+   "sic_codes": [
+    "94910"
+   ],
+   "active_companies": 6786,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "security firms",
+   "sic_codes": [
+    "80100"
+   ],
+   "active_companies": 16570,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "dental / medical labs",
+   "sic_codes": [
+    "32500"
+   ],
+   "active_companies": 3345,
+   "method": "CH advanced-search hits, active only (86901 invalid, dropped)"
+  },
+  {
+   "sector": "financial advisers / intermediaries",
+   "sic_codes": [
+    "66190",
+    "66220"
+   ],
+   "active_companies": 18783,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "amazon-style wholesale (non-specialised)",
+   "sic_codes": [
+    "46900"
+   ],
+   "active_companies": 46754,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "freelance designers",
+   "sic_codes": [
+    "74100"
+   ],
+   "active_companies": 52014,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  },
+  {
+   "sector": "translators",
+   "sic_codes": [
+    "74300"
+   ],
+   "active_companies": 4096,
+   "method": "CH advanced-search hits, active only, per-SIC summed"
+  }
+ ]
+}

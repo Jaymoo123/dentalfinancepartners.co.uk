@@ -1,0 +1,42 @@
+{
+ "1": {
+  "niche": "Landlords (buy-to-let)",
+  "queries": {}
+ },
+ "2": {
+  "niche": "Property investors",
+  "queries": {}
+ },
+ "3": {
+  "niche": "Airbnb / holiday-let hosts",
+  "queries": {}
+ },
+ "4": {
+  "niche": "Property developers",
+  "queries": {}
+ },
+ "5": {
+  "niche": "Property management companies",
+  "queries": {}
+ },
+ "6": {
+  "niche": "Estate & letting agents",
+  "queries": {}
+ },
+ "7": {
+  "niche": "Landed estates / rural estates",
+  "queries": {}
+ },
+ "8": {
+  "niche": "Construction / CIS subcontractors",
+  "queries": {}
+ },
+ "9": {
+  "niche": "Builders",
+  "queries": {}
+ },
+ "10": {
+  "niche": "Plumbers / heating engineers",
+  "queries": {}
+ }
+}
