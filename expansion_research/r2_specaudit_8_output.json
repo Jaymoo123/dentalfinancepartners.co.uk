@@ -1,0 +1,220 @@
+{
+  "taxtuneaccountants.co.uk": {
+    "Taxi & private-hire drivers": "GENERALIST"
+  },
+  "tech-accountant.com": {
+    "Tech / SaaS companies": "INFO"
+  },
+  "tech-cpas.com": {
+    "Tech / SaaS companies": "INFO"
+  },
+  "techaccounting.co.uk": {
+    "Tech / SaaS companies": "UNVERIFIABLE"
+  },
+  "theaccountingstudio.co.uk": {
+    "Therapists & allied health": "UNVERIFIABLE"
+  },
+  "theataccounts.co.uk": {
+    "Actors / entertainment industry": "SPECIALIST"
+  },
+  "thebeautyaccountant.co.uk": {
+    "Hairdressers / barbers / beauty": "SPECIALIST"
+  },
+  "thechurchaccountant.com": {
+    "Churches / religious organisations": "INFO"
+  },
+  "thedoctorscpa.com": {
+    "Locum doctors": "INFO"
+  },
+  "theecommerceaccountants.com": {
+    "Ecommerce sellers": "INFO"
+  },
+  "thefitnesscpa.com": {
+    "Gyms / fitness / personal trainers": "INFO"
+  },
+  "thefranchiseaccountant.com.au": {
+    "Franchisees": "INFO"
+  },
+  "thehospitalityaccountants.com": {
+    "Hospitality (family)": "SPECIALIST",
+    "Restaurants": "SPECIALIST"
+  },
+  "themusiccpa.com": {
+    "Musicians": "UNVERIFIABLE"
+  },
+  "thenumbersmith.co.uk": {
+    "Ecommerce sellers": "GENERALIST"
+  },
+  "theonlineaccountants.uk": {
+    "Barristers": "GENERALIST"
+  },
+  "theperformersaccountant.com": {
+    "Actors / entertainment industry": "SPECIALIST"
+  },
+  "thepropertyaccountant.co.uk": {
+    "Property investors": "SPECIALIST",
+    "Property management companies": "SPECIALIST"
+  },
+  "thepropertyca.co.uk": {
+    "Property investors": "SPECIALIST"
+  },
+  "therealthiel.com": {
+    "Artists / creatives": "INFO"
+  },
+  "therecruitersaccountant.co.uk": {
+    "Recruitment agencies": "SPECIALIST"
+  },
+  "therestaurantcpas.com": {
+    "Restaurants": "INFO"
+  },
+  "thesmartaccountants.co.uk": {
+    "Life sciences / pharma": "SPECIALIST"
+  },
+  "thestanlee.com": {
+    "Event caterers": "GENERALIST"
+  },
+  "thetaxguys.co.uk": {
+    "Builders": "GENERALIST",
+    "Property investors": "GENERALIST"
+  },
+  "thexln.com": {
+    "Security firms": "UNVERIFIABLE"
+  },
+  "thomsoncooper.com": {
+    "Farmers / agriculture": "GENERALIST"
+  },
+  "titanwealthinternational.com": {
+    "Expats / non-residents": "INFO"
+  },
+  "tldraccounting.com": {
+    "Therapists & allied health": "INFO"
+  },
+  "togetherwecount.co.uk": {
+    "Plumbers / heating engineers": "GENERALIST"
+  },
+  "totalbooks.co.uk": {
+    "Marketing agencies": "GENERALIST",
+    "Pharmacies": "GENERALIST"
+  },
+  "tradeaccountant.co.uk": {
+    "Tradespeople (family)": "GENERALIST"
+  },
+  "tradersaccounting.com": {
+    "Day / forex traders": "INFO"
+  },
+  "traktionaccounting.com": {
+    "Therapists & allied health": "INFO"
+  },
+  "tridenttax.com": {
+    "Expats / non-residents": "GENERALIST"
+  },
+  "trinitygroup.com.au": {
+    "Couriers / delivery drivers": "INFO"
+  },
+  "u-deliver.co.uk": {
+    "Couriers / delivery drivers": "SPECIALIST"
+  },
+  "uata.co.uk": {
+    "Foster carers": "GENERALIST"
+  },
+  "uhy-uk.com": {
+    "Sports clubs": "GENERALIST"
+  },
+  "uk-ccm.com": {
+    "Driving instructors": "UNVERIFIABLE"
+  },
+  "ukaccountingfirms.co.uk": {
+    "Crypto traders / investors": "INFO"
+  },
+  "uklandlordtax.co.uk": {
+    "Landlords (buy-to-let)": "SPECIALIST"
+  },
+  "ukpropertyaccountants.co.uk": {
+    "Airbnb / holiday-let hosts": "UNVERIFIABLE",
+    "Property developers": "UNVERIFIABLE",
+    "Property investors": "UNVERIFIABLE",
+    "Property management companies": "UNVERIFIABLE"
+  },
+  "unicornaccountants.co.uk": {
+    "Amazon FBA sellers": "GENERALIST"
+  },
+  "unicornaccounting.co.uk": {
+    "Ecommerce sellers": "SPECIALIST"
+  },
+  "vanilla-accounting.co.uk": {
+    "Artists / creatives": "GENERALIST",
+    "Management consultants": "GENERALIST"
+  },
+  "vanillaonlineaccountancy.co.uk": {
+    "Driving instructors": "UNVERIFIABLE"
+  },
+  "vatnav.com": {
+    "Travel agents / tour operators": "SPECIALIST"
+  },
+  "vennaccounts.com": {
+    "Tech / SaaS companies": "GENERALIST"
+  },
+  "vetcpa.org": {
+    "Vets": "INFO"
+  },
+  "vetcpaco.com": {
+    "Vets": "INFO"
+  },
+  "veterinarianaccountant.com": {
+    "Vets": "INFO"
+  },
+  "veterinariancpa.com": {
+    "Vets": "INFO"
+  },
+  "veterinaryaccountants.com": {
+    "Vets": "INFO"
+  },
+  "vnfaccounting.com": {
+    "Couriers / delivery drivers": "GENERALIST"
+  },
+  "vpmp.net": {
+    "Vets": "INFO"
+  },
+  "xitax.co.uk": {
+    "Pharmacies": "GENERALIST"
+  },
+  "xperttaxaccountants.co.uk": {
+    "Ecommerce sellers": "GENERALIST",
+    "Property investors": "GENERALIST"
+  },
+  "yattandco.net": {
+    "Churches / religious organisations": "UNVERIFIABLE"
+  },
+  "yorkshireaccountancy.co.uk": {
+    "Builders": "UNVERIFIABLE",
+    "Electricians": "UNVERIFIABLE",
+    "Hauliers / trucking": "UNVERIFIABLE",
+    "Painters & decorators": "UNVERIFIABLE"
+  },
+  "yorkshirecompanyaccountants.co.uk": {
+    "Farmers / agriculture": "GENERALIST"
+  },
+  "yourcryptoaccountant.co.uk": {
+    "Crypto traders / investors": "UNVERIFIABLE"
+  },
+  "yourecommerceaccountant.co.uk": {
+    "Amazon FBA sellers": "UNVERIFIABLE",
+    "Ecommerce sellers": "UNVERIFIABLE"
+  },
+  "yourinfluenceraccountant.co.uk": {
+    "Content creators / influencers": "UNVERIFIABLE"
+  },
+  "yourtaxhelp.co.uk": {
+    "Airbnb / holiday-let hosts": "GENERALIST",
+    "Builders": "GENERALIST",
+    "Electricians": "GENERALIST",
+    "Gyms / fitness / personal trainers": "GENERALIST",
+    "Taxi & private-hire drivers": "GENERALIST"
+  },
+  "zelahsolutions.com": {
+    "Driving instructors": "SPECIALIST"
+  },
+  "zmartly.co.uk": {
+    "Jewellers": "GENERALIST"
+  }
+}

@@ -1,0 +1,1716 @@
+{
+ "1": {
+  "niche": "Landlords (buy-to-let)",
+  "variants": [
+   "accountant for landlords",
+   "landlord tax accountant",
+   "buy to let accountant"
+  ],
+  "specialist_avg_top10": 3.0,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "uklandlordtax.co.uk",
+   "gorillaaccounting.com"
+  ],
+  "top_specialist_domains": [
+   "uklandlordtax.co.uk",
+   "gorillaaccounting.com",
+   "iwnaccountancy.co.uk",
+   "buytolettaxaccountants.co.uk"
+  ],
+  "own_estate_hits": [
+   {
+    "query": "buy to let accountant",
+    "domain": "propertytaxpartners.co.uk",
+    "position": 9
+   }
+  ],
+  "verdict": "STRONG_SPECIALISTS"
+ },
+ "2": {
+  "niche": "Property investors",
+  "variants": [
+   "accountant for property investors",
+   "property investment accountant",
+   "property investor tax advisor"
+  ],
+  "specialist_avg_top10": 4.3,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "ukpropertyaccountants.co.uk"
+  ],
+  "top_specialist_domains": [
+   "ukpropertyaccountants.co.uk",
+   "thepropertyaccountant.co.uk",
+   "gnsassociates.co.uk",
+   "goldhouseaccounting.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "STRONG_SPECIALISTS"
+ },
+ "3": {
+  "niche": "Airbnb / holiday-let hosts",
+  "variants": [
+   "airbnb accountant uk",
+   "holiday let accountant",
+   "accountant for serviced accommodation"
+  ],
+  "specialist_avg_top10": 1.0,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "provestor.co.uk",
+   "ukpropertyaccountants.co.uk",
+   "goldhouseaccounting.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "4": {
+  "niche": "Property developers",
+  "variants": [
+   "accountant for property developers",
+   "property developer accountant",
+   "property development tax advisor"
+  ],
+  "specialist_avg_top10": 1.0,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "goldhouseaccounting.co.uk",
+   "ukpropertyaccountants.co.uk",
+   "optimiseaccountants.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "5": {
+  "niche": "Property management companies",
+  "variants": [
+   "accountant for property management companies",
+   "block management accountant",
+   "property management company accountant"
+  ],
+  "specialist_avg_top10": 1.7,
+  "directory_avg_top10": 0.7,
+  "dominant_specialists": [
+   "ukpropertyaccountants.co.uk"
+  ],
+  "top_specialist_domains": [
+   "ukpropertyaccountants.co.uk",
+   "thepropertyaccountant.co.uk",
+   "qubeaccountants.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "6": {
+  "niche": "Estate & letting agents",
+  "variants": [
+   "accountant for estate agents",
+   "letting agent accountant",
+   "estate agency accountant"
+  ],
+  "specialist_avg_top10": 2.0,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "homeaccountants.co.uk"
+  ],
+  "top_specialist_domains": [
+   "homeaccountants.co.uk",
+   "axtpropertyaccountants.co.uk",
+   "infinity-accounting.co.uk",
+   "ellersaccountants.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "7": {
+  "niche": "Landed estates / rural estates",
+  "variants": [
+   "landed estate accountant",
+   "rural estate accountants",
+   "accountants for rural businesses"
+  ],
+  "specialist_avg_top10": 1.7,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "beavismorgan.com"
+  ],
+  "top_specialist_domains": [
+   "beavismorgan.com",
+   "brightshire.co.uk",
+   "streets.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "8": {
+  "niche": "Construction / CIS subcontractors",
+  "variants": [
+   "CIS accountant",
+   "accountant for construction industry",
+   "CIS subcontractor tax return"
+  ],
+  "specialist_avg_top10": 0.7,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "constructionaccountants.co.uk",
+   "rsbc.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "9": {
+  "niche": "Builders",
+  "variants": [
+   "accountant for builders",
+   "builders accountant",
+   "tax advisor for builders"
+  ],
+  "specialist_avg_top10": 2.7,
+  "directory_avg_top10": 1.0,
+  "dominant_specialists": [
+   "accountantforbuilders.co.uk",
+   "grahambarnesaccountant.co.uk"
+  ],
+  "top_specialist_domains": [
+   "accountantforbuilders.co.uk",
+   "grahambarnesaccountant.co.uk",
+   "yorkshireaccountancy.co.uk",
+   "rsbc.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "10": {
+  "niche": "Plumbers / heating engineers",
+  "variants": [
+   "accountant for plumbers",
+   "plumber accountant",
+   "accountant for heating engineers"
+  ],
+  "specialist_avg_top10": 0.0,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [],
+  "own_estate_hits": [],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "11": {
+  "niche": "Electricians",
+  "variants": [
+   "accountant for electricians",
+   "electrician accountant",
+   "self employed electrician tax"
+  ],
+  "specialist_avg_top10": 1.0,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "yorkshireaccountancy.co.uk",
+   "accountantsforelectricians.co.uk",
+   "sparkyaccounting.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "12": {
+  "niche": "Painters & decorators",
+  "variants": [
+   "accountant for painters and decorators",
+   "decorator accountant",
+   "self employed decorator tax"
+  ],
+  "specialist_avg_top10": 2.0,
+  "directory_avg_top10": 1.7,
+  "dominant_specialists": [
+   "yorkshireaccountancy.co.uk",
+   "decoratoraccountants.com"
+  ],
+  "top_specialist_domains": [
+   "decoratoraccountants.com",
+   "yorkshireaccountancy.co.uk",
+   "accountantsfordecorators.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "13": {
+  "niche": "Landscapers / gardeners",
+  "variants": [
+   "accountant for landscapers",
+   "accountant for gardeners",
+   "landscaping business accountant"
+  ],
+  "specialist_avg_top10": 0.0,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [],
+  "top_specialist_domains": [],
+  "own_estate_hits": [],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "14": {
+  "niche": "Tradespeople (family)",
+  "variants": [
+   "accountant for tradesmen",
+   "trades accountant",
+   "accountant for tradespeople"
+  ],
+  "specialist_avg_top10": 0.7,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "ascott-blake.com",
+   "grahambarnesaccountant.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "15": {
+  "niche": "Dentists",
+  "variants": [
+   "dental accountant",
+   "accountant for dentists",
+   "dental practice accountant"
+  ],
+  "specialist_avg_top10": 4.7,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "pfmdental.co.uk",
+   "dentalaccounting.co.uk"
+  ],
+  "top_specialist_domains": [
+   "pfmdental.co.uk",
+   "dentalaccountant.com",
+   "dentalaccounting.co.uk",
+   "samera.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "STRONG_SPECIALISTS"
+ },
+ "16": {
+  "niche": "Doctors / GPs",
+  "variants": [
+   "medical accountant",
+   "accountant for doctors",
+   "GP practice accountant"
+  ],
+  "specialist_avg_top10": 3.0,
+  "directory_avg_top10": 1.7,
+  "dominant_specialists": [
+   "bw-medical.co.uk"
+  ],
+  "top_specialist_domains": [
+   "bw-medical.co.uk",
+   "draccountant.org",
+   "medicaccountants.co.uk",
+   "accountants4nhsdoctors.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "STRONG_SPECIALISTS"
+ },
+ "17": {
+  "niche": "Locum doctors",
+  "variants": [
+   "locum doctor accountant",
+   "accountant for locum doctors",
+   "locum GP limited company accountant"
+  ],
+  "specialist_avg_top10": 1.0,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [
+   "bw-medical.co.uk"
+  ],
+  "top_specialist_domains": [
+   "bw-medical.co.uk",
+   "oxygenaccounting.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "18": {
+  "niche": "Locum pharmacists",
+  "variants": [
+   "locum pharmacist accountant",
+   "accountant for locum pharmacists"
+  ],
+  "specialist_avg_top10": 4.0,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "pharmacistaccountants.co.uk"
+  ],
+  "top_specialist_domains": [
+   "pharmacistaccountants.co.uk",
+   "gorillaaccounting.com",
+   "stetsonaccountants.co.uk",
+   "arr.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "STRONG_SPECIALISTS"
+ },
+ "19": {
+  "niche": "Pharmacies",
+  "variants": [
+   "pharmacy accountant",
+   "accountant for pharmacists",
+   "community pharmacy accountant"
+  ],
+  "specialist_avg_top10": 3.0,
+  "directory_avg_top10": 0.7,
+  "dominant_specialists": [
+   "pharmatax.co.uk"
+  ],
+  "top_specialist_domains": [
+   "pharmatax.co.uk",
+   "sykes-cpa.com",
+   "pharmacyaccountants.co.uk",
+   "pharmacistaccountants.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "STRONG_SPECIALISTS"
+ },
+ "20": {
+  "niche": "Opticians / optometrists",
+  "variants": [
+   "optician accountant",
+   "accountant for opticians",
+   "optometrist accountant uk"
+  ],
+  "specialist_avg_top10": 2.3,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "rsbc.uk"
+  ],
+  "top_specialist_domains": [
+   "rsbc.uk",
+   "emaccountancy.co.uk",
+   "ibgconsulting.co.uk",
+   "accurus.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "21": {
+  "niche": "Vets",
+  "variants": [
+   "veterinary accountant",
+   "accountant for vets",
+   "vet practice accountant"
+  ],
+  "specialist_avg_top10": 0.3,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "gorillaaccounting.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "22": {
+  "niche": "Therapists & allied health",
+  "variants": [
+   "accountant for therapists",
+   "accountant for physiotherapists",
+   "accountant for private practice therapists"
+  ],
+  "specialist_avg_top10": 1.7,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "redtulips.co.uk",
+   "theaccountingstudio.co.uk",
+   "shirleysmithaccountancy.co.uk",
+   "leonandcompany.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "23": {
+  "niche": "Nurses / healthcare professionals",
+  "variants": [
+   "accountant for nurses",
+   "agency nurse tax return",
+   "accountant for healthcare professionals"
+  ],
+  "specialist_avg_top10": 0.3,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "medicalhealthaccountants.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "24": {
+  "niche": "Care homes",
+  "variants": [
+   "care home accountant",
+   "accountant for care homes",
+   "care sector accountants"
+  ],
+  "specialist_avg_top10": 1.3,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "franksaccountants.co.uk"
+  ],
+  "top_specialist_domains": [
+   "franksaccountants.co.uk",
+   "careaccounts.co.uk",
+   "carehomeaccounts.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "25": {
+  "niche": "Domiciliary care agencies",
+  "variants": [
+   "accountant for domiciliary care",
+   "home care agency accountant",
+   "accountants for care agencies"
+  ],
+  "specialist_avg_top10": 1.0,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "careaccounts.co.uk",
+   "carehome-accountants.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "26": {
+  "niche": "Childminders / nurseries",
+  "variants": [
+   "accountant for childminders",
+   "nursery accountant",
+   "childcare business accountant"
+  ],
+  "specialist_avg_top10": 2.7,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "caservices.org.uk",
+   "samera.co.uk"
+  ],
+  "top_specialist_domains": [
+   "samera.co.uk",
+   "caservices.org.uk",
+   "accountancykids.co.uk",
+   "bradleysaccountants.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "27": {
+  "niche": "Foster carers",
+  "variants": [
+   "accountant for foster carers",
+   "foster carer tax return",
+   "foster carer tax advisor"
+  ],
+  "specialist_avg_top10": 1.0,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "bkplus.co.uk",
+   "octopusfostering.co.uk",
+   "caservices.org.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "28": {
+  "niche": "Solicitors / law firms",
+  "variants": [
+   "accountant for solicitors",
+   "law firm accountant",
+   "solicitors accountants SRA"
+  ],
+  "specialist_avg_top10": 0.3,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "taxlawresearch.com"
+  ],
+  "own_estate_hits": [
+   {
+    "query": "accountant for solicitors",
+    "domain": "accountsforlawyers.co.uk",
+    "position": 2
+   }
+  ],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "29": {
+  "niche": "Barristers",
+  "variants": [
+   "accountant for barristers",
+   "barrister accountant",
+   "barristers tax advisor"
+  ],
+  "specialist_avg_top10": 2.3,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "chambersaccountants.co.uk",
+   "barrister.expert"
+  ],
+  "top_specialist_domains": [
+   "barrister.expert",
+   "chambersaccountants.co.uk",
+   "barristeraccountantuk.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "30": {
+  "niche": "IT contractors",
+  "variants": [
+   "contractor accountant",
+   "accountant for IT contractors",
+   "limited company contractor accountant"
+  ],
+  "specialist_avg_top10": 3.3,
+  "directory_avg_top10": 2.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "no-worries.co.uk",
+   "contractor-accountants.org.uk",
+   "gorillaaccounting.com",
+   "freestyleaccounting.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "31": {
+  "niche": "Freelancers",
+  "variants": [
+   "accountant for freelancers",
+   "freelancer accountant",
+   "freelance tax advisor uk"
+  ],
+  "specialist_avg_top10": 0.7,
+  "directory_avg_top10": 1.0,
+  "dominant_specialists": [
+   "gorillaaccounting.com"
+  ],
+  "top_specialist_domains": [
+   "gorillaaccounting.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "32": {
+  "niche": "Management consultants",
+  "variants": [
+   "accountant for consultants",
+   "management consultant accountant",
+   "accountant for consultancy business"
+  ],
+  "specialist_avg_top10": 0.0,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [],
+  "own_estate_hits": [],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "33": {
+  "niche": "Startups",
+  "variants": [
+   "startup accountant",
+   "accountant for startups",
+   "accountants for new businesses"
+  ],
+  "specialist_avg_top10": 0.7,
+  "directory_avg_top10": 0.7,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "startupaccountancy.com",
+   "barnesandscott.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "34": {
+  "niche": "Tech / SaaS companies",
+  "variants": [
+   "accountant for tech companies",
+   "SaaS accountant uk",
+   "accountants for technology businesses"
+  ],
+  "specialist_avg_top10": 1.0,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "chartaccountancy.com",
+   "buttmiller.co.uk",
+   "techaccounting.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "35": {
+  "niche": "Ecommerce sellers",
+  "variants": [
+   "ecommerce accountant",
+   "accountant for online sellers",
+   "accountant for shopify sellers"
+  ],
+  "specialist_avg_top10": 2.7,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "ecommerceaccountants.co.uk",
+   "yourecommerceaccountant.co.uk",
+   "fullyaccountable.com",
+   "myecommerceaccountant.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "36": {
+  "niche": "Amazon FBA sellers",
+  "variants": [
+   "amazon fba accountant",
+   "accountant for amazon sellers",
+   "amazon seller accountant uk"
+  ],
+  "specialist_avg_top10": 2.7,
+  "directory_avg_top10": 1.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "yourecommerceaccountant.co.uk",
+   "ibissandco.com",
+   "beanninjas.com",
+   "audtax.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "37": {
+  "niche": "Content creators / influencers",
+  "variants": [
+   "accountant for content creators",
+   "influencer accountant",
+   "accountant for youtubers"
+  ],
+  "specialist_avg_top10": 4.0,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "influencers.accountants"
+  ],
+  "top_specialist_domains": [
+   "influencers.accountants",
+   "jccastleaccounting.com",
+   "earegolding.com",
+   "smoothaccounting.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "STRONG_SPECIALISTS"
+ },
+ "38": {
+  "niche": "OnlyFans creators",
+  "variants": [
+   "onlyfans accountant",
+   "accountant for onlyfans creators",
+   "onlyfans tax uk accountant"
+  ],
+  "specialist_avg_top10": 1.7,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "oneandonlyaccounts.com",
+   "onlytax.co.uk",
+   "accounting4creators.com"
+  ],
+  "own_estate_hits": [
+   {
+    "query": "onlyfans accountant",
+    "domain": "hollowaydavies.co.uk",
+    "position": 1
+   },
+   {
+    "query": "accountant for onlyfans creators",
+    "domain": "hollowaydavies.co.uk",
+    "position": 2
+   },
+   {
+    "query": "onlyfans tax uk accountant",
+    "domain": "hollowaydavies.co.uk",
+    "position": 2
+   }
+  ],
+  "verdict": "WEAK_FIELD"
+ },
+ "39": {
+  "niche": "Crypto traders / investors",
+  "variants": [
+   "crypto accountant uk",
+   "cryptocurrency tax accountant",
+   "accountant for crypto investors"
+  ],
+  "specialist_avg_top10": 3.0,
+  "directory_avg_top10": 1.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "yourcryptoaccountant.co.uk",
+   "cryptoaccountants.live",
+   "cryptoaccountants.org.uk",
+   "cryptotaxation.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "40": {
+  "niche": "Day / forex traders",
+  "variants": [
+   "accountant for day traders uk",
+   "forex trader tax accountant",
+   "accountant for traders"
+  ],
+  "specialist_avg_top10": 1.0,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [
+   "accountantsfortraders.co.uk"
+  ],
+  "top_specialist_domains": [
+   "accountantsfortraders.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "41": {
+  "niche": "Musicians",
+  "variants": [
+   "accountant for musicians",
+   "musician accountant",
+   "music industry accountant"
+  ],
+  "specialist_avg_top10": 5.7,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "gorillaaccounting.com",
+   "performanceaccountancy.co.uk",
+   "streetsmedia.co.uk"
+  ],
+  "top_specialist_domains": [
+   "performanceaccountancy.co.uk",
+   "gorillaaccounting.com",
+   "streetsmedia.co.uk",
+   "eareband.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "STRONG_SPECIALISTS"
+ },
+ "42": {
+  "niche": "Actors / entertainment industry",
+  "variants": [
+   "accountant for actors",
+   "entertainment industry accountant",
+   "accountant for performers"
+  ],
+  "specialist_avg_top10": 4.7,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "creativeandnumbers.co.uk",
+   "accounting4actors.co.uk",
+   "theataccounts.co.uk"
+  ],
+  "top_specialist_domains": [
+   "theataccounts.co.uk",
+   "streetsmedia.co.uk",
+   "creativeandnumbers.co.uk",
+   "accounting4actors.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "STRONG_SPECIALISTS"
+ },
+ "43": {
+  "niche": "Film & TV production",
+  "variants": [
+   "film production accountant",
+   "accountant for film industry",
+   "TV production accountancy"
+  ],
+  "specialist_avg_top10": 1.7,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "creativeandnumbers.co.uk",
+   "abbeystevens.co.uk",
+   "artisan-accounts.co.uk",
+   "eam.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "44": {
+  "niche": "Artists / creatives",
+  "variants": [
+   "accountant for artists",
+   "accountant for creatives",
+   "creative industry accountant"
+  ],
+  "specialist_avg_top10": 2.0,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [
+   "creative.accountants"
+  ],
+  "top_specialist_domains": [
+   "creative.accountants",
+   "creativeandnumbers.co.uk",
+   "accountsstudio.co.uk",
+   "alfredwallis.org.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "45": {
+  "niche": "Authors / writers",
+  "variants": [
+   "accountant for authors",
+   "accountant for writers",
+   "freelance writer tax accountant"
+  ],
+  "specialist_avg_top10": 3.7,
+  "directory_avg_top10": 1.3,
+  "dominant_specialists": [
+   "riters.tax",
+   "creativeandnumbers.co.uk"
+  ],
+  "top_specialist_domains": [
+   "creative.accountants",
+   "creativeandnumbers.co.uk",
+   "riters.tax",
+   "authortax.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "STRONG_SPECIALISTS"
+ },
+ "46": {
+  "niche": "Photographers",
+  "variants": [
+   "accountant for photographers",
+   "photographer accountant",
+   "self employed photographer tax"
+  ],
+  "specialist_avg_top10": 2.0,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "orendacollective.co.uk",
+   "creativeandnumbers.co.uk"
+  ],
+  "top_specialist_domains": [
+   "creativeandnumbers.co.uk",
+   "orendacollective.co.uk",
+   "creative.accountants",
+   "alchemyaccountancy.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "47": {
+  "niche": "Interior designers",
+  "variants": [
+   "accountant for interior designers",
+   "interior design accountant",
+   "accountant for designers"
+  ],
+  "specialist_avg_top10": 1.3,
+  "directory_avg_top10": 1.0,
+  "dominant_specialists": [
+   "creativeandnumbers.co.uk",
+   "creative.accountants"
+  ],
+  "top_specialist_domains": [
+   "creativeandnumbers.co.uk",
+   "creative.accountants"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "48": {
+  "niche": "Marketing agencies",
+  "variants": [
+   "accountant for marketing agencies",
+   "digital agency accountant",
+   "accountant for creative agencies"
+  ],
+  "specialist_avg_top10": 2.7,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "sidekickaccounting.co.uk"
+  ],
+  "top_specialist_domains": [
+   "sidekickaccounting.co.uk",
+   "riseaccounting.co.uk",
+   "streetsmedia.co.uk",
+   "creativeandnumbers.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "49": {
+  "niche": "Recruitment agencies",
+  "variants": [
+   "accountant for recruitment agencies",
+   "recruitment agency accountant",
+   "recruiter accountant"
+  ],
+  "specialist_avg_top10": 1.7,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [
+   "recruitmentaccountants.com"
+  ],
+  "top_specialist_domains": [
+   "recruitmentaccountants.com",
+   "therecruitersaccountant.co.uk",
+   "searchaccountancy.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "50": {
+  "niche": "Architects",
+  "variants": [
+   "accountant for architects",
+   "architect accountant",
+   "accountants for architecture practices"
+  ],
+  "specialist_avg_top10": 0.3,
+  "directory_avg_top10": 0.7,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "creative.accountants"
+  ],
+  "own_estate_hits": [],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "51": {
+  "niche": "Engineers / engineering consultants",
+  "variants": [
+   "accountant for engineers",
+   "engineering consultant accountant",
+   "accountant for engineering companies"
+  ],
+  "specialist_avg_top10": 1.0,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [
+   "gorillaaccounting.com"
+  ],
+  "top_specialist_domains": [
+   "gorillaaccounting.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "52": {
+  "niche": "Financial advisers / FCA-regulated firms",
+  "variants": [
+   "accountant for financial advisers",
+   "accountant for FCA regulated firms",
+   "IFA accountant"
+  ],
+  "specialist_avg_top10": 0.0,
+  "directory_avg_top10": 0.7,
+  "dominant_specialists": [],
+  "top_specialist_domains": [],
+  "own_estate_hits": [],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "53": {
+  "niche": "Restaurants",
+  "variants": [
+   "restaurant accountant",
+   "accountant for restaurants",
+   "hospitality accountant restaurant"
+  ],
+  "specialist_avg_top10": 2.0,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [
+   "paperchase.ac"
+  ],
+  "top_specialist_domains": [
+   "paperchase.ac",
+   "pie-accountants-brighton.co.uk",
+   "illiamsstanley.co",
+   "thehospitalityaccountants.com"
+  ],
+  "own_estate_hits": [
+   {
+    "query": "hospitality accountant restaurant",
+    "domain": "hollowaydavies.co.uk",
+    "position": 4
+   }
+  ],
+  "verdict": "CONTESTED"
+ },
+ "54": {
+  "niche": "Takeaways",
+  "variants": [
+   "accountant for takeaways",
+   "takeaway accountant",
+   "fast food business accountant"
+  ],
+  "specialist_avg_top10": 0.3,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "aydansmith.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "55": {
+  "niche": "Pubs & bars",
+  "variants": [
+   "accountant for pubs",
+   "pub accountant",
+   "accountant for bars"
+  ],
+  "specialist_avg_top10": 0.7,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "paperchase.ac",
+   "roslyns.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "56": {
+  "niche": "Hotels & guesthouses",
+  "variants": [
+   "hotel accountant",
+   "accountant for hotels",
+   "accountant for bed and breakfast"
+  ],
+  "specialist_avg_top10": 0.3,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "paperchase.ac"
+  ],
+  "own_estate_hits": [],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "57": {
+  "niche": "Hospitality (family)",
+  "variants": [
+   "hospitality accountant",
+   "accountant for hospitality business",
+   "hospitality and leisure accountants"
+  ],
+  "specialist_avg_top10": 0.7,
+  "directory_avg_top10": 0.7,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "thehospitalityaccountants.com",
+   "paperchase.ac"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "58": {
+  "niche": "Event caterers",
+  "variants": [
+   "accountant for caterers",
+   "catering business accountant",
+   "accountant for events business"
+  ],
+  "specialist_avg_top10": 0.3,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "solutions4caterers.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "59": {
+  "niche": "Travel agents / tour operators",
+  "variants": [
+   "accountant for travel agents",
+   "travel agency accountant",
+   "TOMS VAT accountant"
+  ],
+  "specialist_avg_top10": 1.7,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [
+   "las-accounting.co.uk"
+  ],
+  "top_specialist_domains": [
+   "las-accounting.co.uk",
+   "vatnav.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "60": {
+  "niche": "Hairdressers / barbers / beauty",
+  "variants": [
+   "accountant for hairdressers",
+   "salon accountant",
+   "accountant for beauty salons"
+  ],
+  "specialist_avg_top10": 4.0,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "salonexpertaccountants.co.uk"
+  ],
+  "top_specialist_domains": [
+   "salonexpertaccountants.co.uk",
+   "pinkbutterflyaccounting.co.uk",
+   "thebeautyaccountant.co.uk",
+   "abundanceaccountancy.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "STRONG_SPECIALISTS"
+ },
+ "61": {
+  "niche": "Gyms / fitness / personal trainers",
+  "variants": [
+   "accountant for personal trainers",
+   "gym accountant",
+   "accountant for fitness professionals"
+  ],
+  "specialist_avg_top10": 3.0,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [
+   "orendacollective.co.uk",
+   "fitnessindustryaccountants.com"
+  ],
+  "top_specialist_domains": [
+   "fitnessindustryaccountants.com",
+   "orendacollective.co.uk",
+   "fitprofinancial.co.uk",
+   "strengthinnumbers.co.uk"
+  ],
+  "own_estate_hits": [
+   {
+    "query": "accountant for personal trainers",
+    "domain": "hollowaydavies.co.uk",
+    "position": 2
+   }
+  ],
+  "verdict": "STRONG_SPECIALISTS"
+ },
+ "62": {
+  "niche": "Sports clubs",
+  "variants": [
+   "accountant for sports clubs",
+   "sports club accountant",
+   "football club accountants"
+  ],
+  "specialist_avg_top10": 1.3,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [
+   "sportsclubaccounting.co.uk"
+  ],
+  "top_specialist_domains": [
+   "sportsclubaccounting.co.uk",
+   "auria.accountants",
+   "cubedconsultancy.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "63": {
+  "niche": "Footballers / sports professionals",
+  "variants": [
+   "accountant for footballers",
+   "accountant for professional athletes",
+   "sports professional tax advisor"
+  ],
+  "specialist_avg_top10": 2.3,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "pricebailey.co.uk",
+   "supremesportstax.com",
+   "footballaccountant.com",
+   "gtn.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "64": {
+  "niche": "Taxi & private-hire drivers",
+  "variants": [
+   "accountant for taxi drivers",
+   "taxi driver accountant",
+   "uber driver tax return uk"
+  ],
+  "specialist_avg_top10": 0.3,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "rbstaxiaccountingservices.com"
+  ],
+  "own_estate_hits": [
+   {
+    "query": "uber driver tax return uk",
+    "domain": "hollowaydavies.co.uk",
+    "position": 8
+   }
+  ],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "65": {
+  "niche": "Couriers / delivery drivers",
+  "variants": [
+   "accountant for couriers",
+   "delivery driver accountant",
+   "self employed courier tax return"
+  ],
+  "specialist_avg_top10": 1.3,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "earegolding.com",
+   "rsbc.uk",
+   "moveoncourier.com",
+   "u-deliver.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "66": {
+  "niche": "Hauliers / trucking",
+  "variants": [
+   "accountant for hauliers",
+   "haulage accountant",
+   "accountant for transport business"
+  ],
+  "specialist_avg_top10": 2.7,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "yorkshireaccountancy.co.uk"
+  ],
+  "top_specialist_domains": [
+   "yorkshireaccountancy.co.uk",
+   "hawsons.co.uk",
+   "rsbc.uk",
+   "hitingsllp.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "67": {
+  "niche": "Pilots / aviation",
+  "variants": [
+   "accountant for pilots",
+   "pilot tax advisor uk",
+   "aviation accountant"
+  ],
+  "specialist_avg_top10": 0.3,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "brooksonone.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "68": {
+  "niche": "Farmers / agriculture",
+  "variants": [
+   "accountant for farmers",
+   "farm accountant",
+   "agricultural accountants"
+  ],
+  "specialist_avg_top10": 1.0,
+  "directory_avg_top10": 0.7,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "mitchells-accountants.co.uk",
+   "albertgoodman.co.uk",
+   "accucloud.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "69": {
+  "niche": "Retail / independent shops",
+  "variants": [
+   "accountant for retail business",
+   "retail accountant",
+   "accountant for shops"
+  ],
+  "specialist_avg_top10": 0.0,
+  "directory_avg_top10": 1.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [],
+  "own_estate_hits": [],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "70": {
+  "niche": "Used car dealers / automotive",
+  "variants": [
+   "accountant for car dealers",
+   "motor trade accountant",
+   "used car dealer accountant"
+  ],
+  "specialist_avg_top10": 0.7,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "maynardjohns.com",
+   "clayshawbutler.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "71": {
+  "niche": "Jewellers",
+  "variants": [
+   "accountant for jewellers",
+   "jewellery business accountant"
+  ],
+  "specialist_avg_top10": 0.0,
+  "directory_avg_top10": 0.5,
+  "dominant_specialists": [],
+  "top_specialist_domains": [],
+  "own_estate_hits": [],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "72": {
+  "niche": "Cake makers / food producers",
+  "variants": [
+   "accountant for food producers",
+   "food and drink accountant",
+   "accountant for food business"
+  ],
+  "specialist_avg_top10": 0.7,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "nsiaccounting.com",
+   "pie-accountants-brighton.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "73": {
+  "niche": "Manufacturing",
+  "variants": [
+   "accountant for manufacturers",
+   "manufacturing accountant",
+   "accountants for manufacturing companies"
+  ],
+  "specialist_avg_top10": 0.7,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "skynetaccounting.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "74": {
+  "niche": "Charities / non-profits",
+  "variants": [
+   "charity accountant",
+   "accountant for charities",
+   "not for profit accountants"
+  ],
+  "specialist_avg_top10": 2.3,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "accountantsforcharities.org.uk"
+  ],
+  "top_specialist_domains": [
+   "accountantsforcharities.org.uk",
+   "accountantsforcharities.uk",
+   "nfpaccountants.co.uk",
+   "charityaccountants.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "75": {
+  "niche": "CICs / social enterprises",
+  "variants": [
+   "CIC accountant",
+   "accountant for community interest companies",
+   "social enterprise accountant"
+  ],
+  "specialist_avg_top10": 3.0,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "cicaccountants.co.uk"
+  ],
+  "top_specialist_domains": [
+   "cicaccountants.co.uk",
+   "harrisaccountancy.co.uk",
+   "accountingforgood.co.uk",
+   "socialenterpriseaccountscic.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "STRONG_SPECIALISTS"
+ },
+ "76": {
+  "niche": "Churches / religious organisations",
+  "variants": [
+   "accountant for churches",
+   "church accountant uk",
+   "accountants for religious organisations"
+  ],
+  "specialist_avg_top10": 2.0,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "pryceaccountants.co.uk"
+  ],
+  "top_specialist_domains": [
+   "pryceaccountants.co.uk",
+   "yattandco.net",
+   "faithstar.co.uk",
+   "church-accountant.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "77": {
+  "niche": "Schools & academies",
+  "variants": [
+   "academy accountant",
+   "accountant for schools",
+   "academy trust auditors"
+  ],
+  "specialist_avg_top10": 1.3,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "academyadvisory.com"
+  ],
+  "top_specialist_domains": [
+   "academyadvisory.com",
+   "academyaudit.com"
+  ],
+  "own_estate_hits": [
+   {
+    "query": "accountant for schools",
+    "domain": "hollowaydavies.co.uk",
+    "position": 1
+   }
+  ],
+  "verdict": "CONTESTED"
+ },
+ "78": {
+  "niche": "Tutors / private teachers",
+  "variants": [
+   "accountant for tutors",
+   "private tutor tax return",
+   "self employed tutor accountant"
+  ],
+  "specialist_avg_top10": 0.0,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [],
+  "own_estate_hits": [],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "79": {
+  "niche": "Driving instructors",
+  "variants": [
+   "accountant for driving instructors",
+   "driving instructor accountant",
+   "driving instructor tax return"
+  ],
+  "specialist_avg_top10": 2.0,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "vanillaonlineaccountancy.co.uk",
+   "uk-ccm.com"
+  ],
+  "top_specialist_domains": [
+   "vanillaonlineaccountancy.co.uk",
+   "uk-ccm.com",
+   "my-driving-instructor-accountant.co.uk",
+   "zelahsolutions.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "80": {
+  "niche": "Expats / non-residents",
+  "variants": [
+   "accountant for expats uk",
+   "expat tax accountant",
+   "non resident tax advisor uk"
+  ],
+  "specialist_avg_top10": 3.7,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "globaltaxconsulting.co.uk"
+  ],
+  "top_specialist_domains": [
+   "globaltaxconsulting.co.uk",
+   "cangafltd.com",
+   "baktax.com",
+   "lsrpartners.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "STRONG_SPECIALISTS"
+ },
+ "81": {
+  "niche": "High-net-worth individuals",
+  "variants": [
+   "accountant for high net worth individuals",
+   "private client tax advisor",
+   "HNW tax accountant"
+  ],
+  "specialist_avg_top10": 1.0,
+  "directory_avg_top10": 0.3,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "iwnaccountancy.co.uk",
+   "hnwtax.com",
+   "buttmiller.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "82": {
+  "niche": "Franchisees",
+  "variants": [
+   "accountant for franchisees",
+   "franchise accountant",
+   "accountant for franchise business"
+  ],
+  "specialist_avg_top10": 0.3,
+  "directory_avg_top10": 2.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "danbrobusiness.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "83": {
+  "niche": "Virtual assistants",
+  "variants": [
+   "accountant for virtual assistants",
+   "virtual assistant accountant",
+   "VA business accountant"
+  ],
+  "specialist_avg_top10": 0.0,
+  "directory_avg_top10": 1.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [],
+  "own_estate_hits": [],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "84": {
+  "niche": "Neurodivergent business owners",
+  "variants": [
+   "accountant for neurodivergent business owners",
+   "adhd friendly accountant",
+   "accountant for adhd entrepreneurs"
+  ],
+  "specialist_avg_top10": 2.7,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "balloonaccounting.co.uk"
+  ],
+  "top_specialist_domains": [
+   "balloonaccounting.co.uk",
+   "heywoodmacdonald.co.uk",
+   "atmoreandco.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "85": {
+  "niche": "Energy & renewables",
+  "variants": [
+   "accountant for renewable energy companies",
+   "energy sector accountant",
+   "oil and gas contractor accountant"
+  ],
+  "specialist_avg_top10": 0.3,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "brooksonone.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "NO_SPECIALISTS"
+ },
+ "86": {
+  "niche": "Life sciences / pharma",
+  "variants": [
+   "accountant for life sciences",
+   "pharmaceutical company accountant",
+   "biotech accountant uk"
+  ],
+  "specialist_avg_top10": 0.7,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "ilson-partners.co.uk",
+   "thesmartaccountants.co.uk"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ },
+ "87": {
+  "niche": "Maritime",
+  "variants": [
+   "seafarer tax accountant",
+   "accountant for seafarers",
+   "seafarers earnings deduction accountant"
+  ],
+  "specialist_avg_top10": 4.3,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "marineaccounts.com",
+   "seatax.ltd.uk",
+   "sktax.co.uk"
+  ],
+  "top_specialist_domains": [
+   "marineaccounts.com",
+   "seatax.ltd.uk",
+   "sktax.co.uk",
+   "marinetax.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "STRONG_SPECIALISTS"
+ },
+ "88": {
+  "niche": "Security firms",
+  "variants": [
+   "accountant for security companies",
+   "security firm accountant",
+   "accountant for security guards"
+  ],
+  "specialist_avg_top10": 1.7,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [
+   "thexln.com",
+   "hittakerandco.com"
+  ],
+  "top_specialist_domains": [
+   "hittakerandco.com",
+   "thexln.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "CONTESTED"
+ },
+ "89": {
+  "niche": "Cleaning businesses",
+  "variants": [
+   "accountant for cleaning business",
+   "cleaner accountant",
+   "accountant for cleaning companies"
+  ],
+  "specialist_avg_top10": 0.7,
+  "directory_avg_top10": 0.0,
+  "dominant_specialists": [],
+  "top_specialist_domains": [
+   "accountants4less.com",
+   "shmsltd.com"
+  ],
+  "own_estate_hits": [],
+  "verdict": "WEAK_FIELD"
+ }
+}

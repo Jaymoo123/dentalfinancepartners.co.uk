@@ -1,0 +1,235 @@
+{
+  "cookiefinance.co": {
+    "Content creators / influencers": "INFO"
+  },
+  "coreadviz.co.uk": {
+    "Couriers / delivery drivers": "GENERALIST",
+    "IT contractors": "GENERALIST",
+    "Locum doctors": "GENERALIST",
+    "Marketing agencies": "GENERALIST"
+  },
+  "cpa4subs.com": {
+    "Landscapers / gardeners": "INFO"
+  },
+  "cpaentertainment.com": {
+    "Photographers": "INFO"
+  },
+  "cpafirm-tech.com": {
+    "Tech / SaaS companies": "INFO"
+  },
+  "cpaforcontractor.com": {
+    "Landscapers / gardeners": "INFO"
+  },
+  "cpaforrp.ca": {
+    "Therapists & allied health": "INFO"
+  },
+  "cpastechnology.com": {
+    "Tech / SaaS companies": "INFO"
+  },
+  "cpaveterinarians.com": {
+    "Vets": "INFO"
+  },
+  "creative.accountants": {
+    "Architects": "SPECIALIST",
+    "Artists / creatives": "SPECIALIST",
+    "Authors / writers": "SPECIALIST",
+    "Interior designers": "SPECIALIST",
+    "Musicians": "SPECIALIST",
+    "Photographers": "SPECIALIST"
+  },
+  "creativeandnumbers.co.uk": {
+    "Actors / entertainment industry": "SPECIALIST",
+    "Artists / creatives": "SPECIALIST",
+    "Authors / writers": "SPECIALIST",
+    "Film & TV production": "SPECIALIST",
+    "Interior designers": "SPECIALIST",
+    "Marketing agencies": "SPECIALIST",
+    "Photographers": "SPECIALIST"
+  },
+  "creativesaccountant.com": {
+    "Artists / creatives": "INFO",
+    "Marketing agencies": "INFO"
+  },
+  "crmoxford.co.uk": {
+    "Musicians": "GENERALIST"
+  },
+  "crspconnect.com": {
+    "Franchisees": "INFO"
+  },
+  "crunch.co.uk": {
+    "Ecommerce sellers": "GENERALIST",
+    "Management consultants": "GENERALIST"
+  },
+  "cryptax.uk": {
+    "Crypto traders / investors": "SPECIALIST"
+  },
+  "cryptoaccountant.org.uk": {
+    "Crypto traders / investors": "SPECIALIST"
+  },
+  "cryptoaccountants.live": {
+    "Crypto traders / investors": "UNVERIFIABLE"
+  },
+  "cryptoaccountants.org.uk": {
+    "Crypto traders / investors": "SPECIALIST"
+  },
+  "cryptotaxation.co.uk": {
+    "Crypto traders / investors": "UNVERIFIABLE"
+  },
+  "ctmp.co.uk": {
+    "Life sciences / pharma": "GENERALIST",
+    "Pharmacies": "GENERALIST"
+  },
+  "cubedconsultancy.com": {
+    "Sports clubs": "UNVERIFIABLE"
+  },
+  "cuttsandco.co.uk": {
+    "Energy & renewables": "GENERALIST",
+    "Used car dealers / automotive": "GENERALIST"
+  },
+  "dains.com": {
+    "Farmers / agriculture": "GENERALIST"
+  },
+  "danbro.co.uk": {
+    "IT contractors": "UNVERIFIABLE"
+  },
+  "danbrobusiness.co.uk": {
+    "Franchisees": "UNVERIFIABLE"
+  },
+  "daytraderstaxes.com": {
+    "Day / forex traders": "INFO"
+  },
+  "deadsimpleaccounting.co.uk": {
+    "Couriers / delivery drivers": "GENERALIST"
+  },
+  "decoratoraccountants.com": {
+    "Painters & decorators": "SPECIALIST"
+  },
+  "dentalaccountant.com": {
+    "Dentists": "SPECIALIST"
+  },
+  "dentalaccountantsscotland.co.uk": {
+    "Dentists": "SPECIALIST"
+  },
+  "dentalaccounting.co.uk": {
+    "Dentists": "SPECIALIST"
+  },
+  "dentists-cpafirm.com": {
+    "Dentists": "INFO"
+  },
+  "dentledger.co.uk": {
+    "Dentists": "SPECIALIST"
+  },
+  "designerscpa.com": {
+    "Landscapers / gardeners": "INFO"
+  },
+  "digitallyaccountants.co.uk": {
+    "Artists / creatives": "GENERALIST"
+  },
+  "digitalmktgcpa.com": {
+    "Content creators / influencers": "INFO"
+  },
+  "dillonadvisors.com": {
+    "Opticians / optometrists": "INFO"
+  },
+  "dixonwilson.com": {
+    "Landed estates / rural estates": "GENERALIST"
+  },
+  "djh.co.uk": {
+    "Dentists": "GENERALIST",
+    "Opticians / optometrists": "GENERALIST"
+  },
+  "dolanaccountancy.com": {
+    "Energy & renewables": "GENERALIST",
+    "IT contractors": "SPECIALIST"
+  },
+  "draccountant.org": {
+    "Doctors / GPs": "SPECIALIST"
+  },
+  "dua.co.uk": {
+    "Property investors": "GENERALIST"
+  },
+  "duftonkellner.co.uk": {
+    "Footballers / sports professionals": "GENERALIST"
+  },
+  "duncantoplis.co.uk": {
+    "Farmers / agriculture": "GENERALIST"
+  },
+  "durranico.co.uk": {
+    "Used car dealers / automotive": "GENERALIST"
+  },
+  "e-accounts.co.uk": {
+    "Amazon FBA sellers": "GENERALIST",
+    "Couriers / delivery drivers": "GENERALIST",
+    "Ecommerce sellers": "GENERALIST"
+  },
+  "e2eaccounting.co.uk": {
+    "Amazon FBA sellers": "GENERALIST",
+    "Ecommerce sellers": "GENERALIST"
+  },
+  "eam.co.uk": {
+    "Film & TV production": "SPECIALIST"
+  },
+  "eareband.co.uk": {
+    "Marketing agencies": "UNVERIFIABLE",
+    "Musicians": "UNVERIFIABLE"
+  },
+  "earegolding.com": {
+    "Content creators / influencers": "UNVERIFIABLE",
+    "Couriers / delivery drivers": "UNVERIFIABLE"
+  },
+  "ecomaccountants.uk": {
+    "Ecommerce sellers": "INFO"
+  },
+  "ecommaccountant.co.uk": {
+    "Amazon FBA sellers": "UNVERIFIABLE"
+  },
+  "ecommerceaccountants.co.uk": {
+    "Amazon FBA sellers": "SPECIALIST",
+    "Ecommerce sellers": "SPECIALIST"
+  },
+  "edgeaccountants.co.uk": {
+    "Property investors": "SPECIALIST"
+  },
+  "edwardsaccountants.co.uk": {
+    "Tech / SaaS companies": "GENERALIST"
+  },
+  "egaccountancy.com": {
+    "Gyms / fitness / personal trainers": "UNVERIFIABLE"
+  },
+  "ehuntcpa.com": {
+    "Content creators / influencers": "INFO"
+  },
+  "elancpa.com": {
+    "Artists / creatives": "INFO"
+  },
+  "elevateaccountancy.co.uk": {
+    "Domiciliary care agencies": "GENERALIST"
+  },
+  "ellersaccountants.co.uk": {
+    "Estate & letting agents": "UNVERIFIABLE"
+  },
+  "elverecommerceaccountants.co.uk": {
+    "Ecommerce sellers": "SPECIALIST"
+  },
+  "emaccountancy.co.uk": {
+    "Opticians / optometrists": "UNVERIFIABLE"
+  },
+  "ensors.co.uk": {
+    "Hauliers / trucking": "GENERALIST"
+  },
+  "entertainment-accountant.com": {
+    "Film & TV production": "INFO",
+    "Photographers": "INFO"
+  },
+  "entertainment-tax.com": {
+    "Film & TV production": "INFO",
+    "Photographers": "INFO"
+  },
+  "eptax.co.uk": {
+    "Childminders / nurseries": "GENERALIST"
+  },
+  "esdgaccountancy.com": {
+    "OnlyFans creators": "GENERALIST",
+    "Pilots / aviation": "GENERALIST"
+  }
+}

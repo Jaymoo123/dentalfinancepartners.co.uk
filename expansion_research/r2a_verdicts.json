@@ -2,1035 +2,906 @@
  {
   "id": 1,
   "niche": "Landlords (buy-to-let)",
-  "n_queries": 3,
-  "avg_specialists_top10": 5.33,
+  "avg_specialists_top10": 3.0,
   "dominant_specialists": [
-   "gorillaaccounting.com",
-   "taxaccountant.co.uk",
-   "uklandlordtax.co.uk"
+   "uklandlordtax.co.uk",
+   "gorillaaccounting.com"
   ],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 2,
   "niche": "Property investors",
-  "n_queries": 3,
-  "avg_specialists_top10": 6.67,
+  "avg_specialists_top10": 4.3,
   "dominant_specialists": [
-   "thepropertyaccountant.co.uk",
    "ukpropertyaccountants.co.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "STRONG_SPECIALISTS",
+  "n_queries": 3
  },
  {
   "id": 3,
   "niche": "Airbnb / holiday-let hosts",
-  "n_queries": 3,
-  "avg_specialists_top10": 1.67,
+  "avg_specialists_top10": 1.0,
   "dominant_specialists": [],
-  "directory_saturation": 0.03,
-  "verdict": "CONTESTED"
+  "directory_saturation": 0.3,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 4,
   "niche": "Property developers",
-  "n_queries": 3,
-  "avg_specialists_top10": 2.33,
-  "dominant_specialists": [
-   "fhpaccounting.co.uk",
-   "reedaccountants.co.uk"
-  ],
+  "avg_specialists_top10": 1.0,
+  "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "CONTESTED"
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 5,
   "niche": "Property management companies",
-  "n_queries": 3,
-  "avg_specialists_top10": 2.67,
+  "avg_specialists_top10": 1.7,
   "dominant_specialists": [
-   "fhpaccounting.co.uk",
    "ukpropertyaccountants.co.uk"
   ],
-  "directory_saturation": 0.07,
-  "verdict": "CONTESTED"
+  "directory_saturation": 0.7,
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 6,
   "niche": "Estate & letting agents",
-  "n_queries": 3,
-  "avg_specialists_top10": 2.33,
+  "avg_specialists_top10": 2.0,
   "dominant_specialists": [
-   "axtpropertyaccountants.co.uk",
    "homeaccountants.co.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "CONTESTED"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 7,
   "niche": "Landed estates / rural estates",
-  "n_queries": 3,
-  "avg_specialists_top10": 9.0,
+  "avg_specialists_top10": 1.7,
   "dominant_specialists": [
-   "beavismorgan.com",
-   "brightshire.co.uk",
-   "johnstoncarmichael.com",
-   "pkf-francisclark.co.uk"
+   "beavismorgan.com"
   ],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 8,
   "niche": "Construction / CIS subcontractors",
-  "n_queries": 3,
-  "avg_specialists_top10": 2.0,
-  "dominant_specialists": [
-   "icsuk.com"
-  ],
-  "directory_saturation": 0.03,
-  "verdict": "CONTESTED"
+  "avg_specialists_top10": 0.7,
+  "dominant_specialists": [],
+  "directory_saturation": 0.3,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 9,
   "niche": "Builders",
-  "n_queries": 3,
-  "avg_specialists_top10": 4.33,
+  "avg_specialists_top10": 2.7,
   "dominant_specialists": [
    "accountantforbuilders.co.uk",
    "grahambarnesaccountant.co.uk"
   ],
-  "directory_saturation": 0.1,
-  "verdict": "STRONG_SPECIALISTS"
+  "directory_saturation": 1.0,
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 10,
   "niche": "Plumbers / heating engineers",
-  "n_queries": 3,
-  "avg_specialists_top10": 2.0,
-  "dominant_specialists": [
-   "cobiaaccounting.co.uk",
-   "togetherwecount.co.uk"
-  ],
+  "avg_specialists_top10": 0.0,
+  "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "CONTESTED"
+  "verdict": "NO_SPECIALISTS",
+  "n_queries": 3
  },
  {
   "id": 11,
   "niche": "Electricians",
-  "n_queries": 3,
-  "avg_specialists_top10": 2.0,
-  "dominant_specialists": [
-   "qaccounting.com"
-  ],
+  "avg_specialists_top10": 1.0,
+  "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "CONTESTED"
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 12,
   "niche": "Painters & decorators",
-  "n_queries": 3,
   "avg_specialists_top10": 2.0,
   "dominant_specialists": [
-   "decoratoraccountants.com",
-   "yorkshireaccountancy.co.uk"
+   "yorkshireaccountancy.co.uk",
+   "decoratoraccountants.com"
   ],
-  "directory_saturation": 0.17,
-  "verdict": "CONTESTED"
+  "directory_saturation": 1.7,
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 13,
   "niche": "Landscapers / gardeners",
-  "n_queries": 3,
-  "avg_specialists_top10": 3.33,
-  "dominant_specialists": [
-   "accountingforsubs.com",
-   "prestigebm.co.uk"
-  ],
-  "directory_saturation": 0.03,
-  "verdict": "CONTESTED"
+  "avg_specialists_top10": 0.0,
+  "dominant_specialists": [],
+  "directory_saturation": 0.3,
+  "verdict": "NO_SPECIALISTS",
+  "n_queries": 3
  },
  {
   "id": 14,
   "niche": "Tradespeople (family)",
-  "n_queries": 3,
-  "avg_specialists_top10": 5.33,
-  "dominant_specialists": [
-   "manvic.com.au",
-   "pulse-accountants.co.uk",
-   "taxrelax.co.uk",
-   "tradeaccountant.co.uk"
-  ],
-  "directory_saturation": 0.03,
-  "verdict": "STRONG_SPECIALISTS"
+  "avg_specialists_top10": 0.7,
+  "dominant_specialists": [],
+  "directory_saturation": 0.3,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 15,
   "niche": "Dentists",
-  "n_queries": 3,
-  "avg_specialists_top10": 6.33,
+  "avg_specialists_top10": 4.7,
   "dominant_specialists": [
-   "dentalaccountant.com",
-   "dentalaccounting.co.uk",
-   "djh.co.uk",
-   "pfmdental.co.uk"
+   "pfmdental.co.uk",
+   "dentalaccounting.co.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "STRONG_SPECIALISTS",
+  "n_queries": 3
  },
  {
   "id": 16,
   "niche": "Doctors / GPs",
-  "n_queries": 3,
-  "avg_specialists_top10": 4.67,
+  "avg_specialists_top10": 3.0,
   "dominant_specialists": [
-   "bw-medical.co.uk",
-   "draccountant.org"
+   "bw-medical.co.uk"
   ],
-  "directory_saturation": 0.17,
-  "verdict": "STRONG_SPECIALISTS"
+  "directory_saturation": 1.7,
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 17,
   "niche": "Locum doctors",
-  "n_queries": 3,
-  "avg_specialists_top10": 3.33,
+  "avg_specialists_top10": 1.0,
   "dominant_specialists": [
-   "bw-medical.co.uk",
-   "thedoctorscpa.com"
+   "bw-medical.co.uk"
   ],
-  "directory_saturation": 0.03,
-  "verdict": "CONTESTED"
+  "directory_saturation": 0.3,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 18,
   "niche": "Locum pharmacists",
-  "n_queries": 2,
-  "avg_specialists_top10": 5.0,
+  "avg_specialists_top10": 4.0,
   "dominant_specialists": [
-   "goforma.com",
-   "gorillaaccounting.com",
    "pharmacistaccountants.co.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "STRONG_SPECIALISTS",
+  "n_queries": 2
  },
  {
   "id": 19,
   "niche": "Pharmacies",
-  "n_queries": 3,
-  "avg_specialists_top10": 4.67,
+  "avg_specialists_top10": 3.0,
   "dominant_specialists": [
-   "pharmatax.co.uk",
-   "sykes-cpa.com"
+   "pharmatax.co.uk"
   ],
-  "directory_saturation": 0.07,
-  "verdict": "STRONG_SPECIALISTS"
+  "directory_saturation": 0.7,
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 20,
   "niche": "Opticians / optometrists",
-  "n_queries": 3,
-  "avg_specialists_top10": 5.33,
+  "avg_specialists_top10": 2.3,
   "dominant_specialists": [
-   "emaccountancy.co.uk",
    "rsbc.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 21,
   "niche": "Vets",
-  "n_queries": 3,
-  "avg_specialists_top10": 6.0,
-  "dominant_specialists": [
-   "onlyforveterinarians.com",
-   "vetcpaco.com",
-   "veterinarianaccountant.com"
-  ],
+  "avg_specialists_top10": 0.3,
+  "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 22,
   "niche": "Therapists & allied health",
-  "n_queries": 3,
-  "avg_specialists_top10": 3.67,
-  "dominant_specialists": [
-   "tldraccounting.com"
-  ],
+  "avg_specialists_top10": 1.7,
+  "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 23,
   "niche": "Nurses / healthcare professionals",
-  "n_queries": 3,
-  "avg_specialists_top10": 2.0,
+  "avg_specialists_top10": 0.3,
   "dominant_specialists": [],
-  "directory_saturation": 0.03,
-  "verdict": "CONTESTED"
+  "directory_saturation": 0.3,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 24,
   "niche": "Care homes",
-  "n_queries": 3,
-  "avg_specialists_top10": 3.67,
+  "avg_specialists_top10": 1.3,
   "dominant_specialists": [
-   "accountaxzone.com",
-   "franksaccountants.co.uk",
-   "morriscrocker.co.uk"
+   "franksaccountants.co.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 25,
   "niche": "Domiciliary care agencies",
-  "n_queries": 3,
-  "avg_specialists_top10": 3.0,
-  "dominant_specialists": [
-   "careaccounts.co.uk",
-   "elevateaccountancy.co.uk",
-   "loyals.uk"
-  ],
+  "avg_specialists_top10": 1.0,
+  "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "CONTESTED"
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 26,
   "niche": "Childminders / nurseries",
-  "n_queries": 3,
-  "avg_specialists_top10": 4.0,
+  "avg_specialists_top10": 2.7,
   "dominant_specialists": [
-   "accountancykids.co.uk",
    "caservices.org.uk",
    "samera.co.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 27,
   "niche": "Foster carers",
-  "n_queries": 3,
-  "avg_specialists_top10": 1.67,
+  "avg_specialists_top10": 1.0,
   "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "CONTESTED"
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 28,
   "niche": "Solicitors / law firms",
-  "n_queries": 3,
-  "avg_specialists_top10": 1.33,
-  "dominant_specialists": [
-   "nichols.co.uk"
-  ],
-  "directory_saturation": 0.03,
-  "verdict": "WEAK_FIELD"
+  "avg_specialists_top10": 0.3,
+  "dominant_specialists": [],
+  "directory_saturation": 0.3,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 29,
   "niche": "Barristers",
-  "n_queries": 3,
-  "avg_specialists_top10": 3.33,
+  "avg_specialists_top10": 2.3,
   "dominant_specialists": [
-   "barrister.expert",
    "chambersaccountants.co.uk",
-   "theonlineaccountants.uk"
+   "barrister.expert"
   ],
   "directory_saturation": 0.0,
-  "verdict": "CONTESTED"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 30,
   "niche": "IT contractors",
-  "n_queries": 3,
-  "avg_specialists_top10": 6.0,
-  "dominant_specialists": [
-   "icsuk.com",
-   "no-worries.co.uk"
-  ],
-  "directory_saturation": 0.2,
-  "verdict": "STRONG_SPECIALISTS"
+  "avg_specialists_top10": 3.3,
+  "dominant_specialists": [],
+  "directory_saturation": 2.0,
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 31,
   "niche": "Freelancers",
-  "n_queries": 3,
-  "avg_specialists_top10": 0.67,
+  "avg_specialists_top10": 0.7,
   "dominant_specialists": [
    "gorillaaccounting.com"
   ],
-  "directory_saturation": 0.1,
-  "verdict": "WEAK_FIELD"
+  "directory_saturation": 1.0,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 32,
   "niche": "Management consultants",
-  "n_queries": 3,
-  "avg_specialists_top10": 1.67,
+  "avg_specialists_top10": 0.0,
   "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "CONTESTED"
+  "verdict": "NO_SPECIALISTS",
+  "n_queries": 3
  },
  {
   "id": 33,
   "niche": "Startups",
-  "n_queries": 3,
-  "avg_specialists_top10": 2.0,
+  "avg_specialists_top10": 0.7,
   "dominant_specialists": [],
-  "directory_saturation": 0.07,
-  "verdict": "CONTESTED"
+  "directory_saturation": 0.7,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 34,
   "niche": "Tech / SaaS companies",
-  "n_queries": 3,
-  "avg_specialists_top10": 6.0,
-  "dominant_specialists": [
-   "approved-accounting.co.uk"
-  ],
-  "directory_saturation": 0.03,
-  "verdict": "STRONG_SPECIALISTS"
+  "avg_specialists_top10": 1.0,
+  "dominant_specialists": [],
+  "directory_saturation": 0.3,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 35,
   "niche": "Ecommerce sellers",
-  "n_queries": 3,
-  "avg_specialists_top10": 6.67,
-  "dominant_specialists": [
-   "e-accounts.co.uk",
-   "ecommerceaccountants.co.uk"
-  ],
-  "directory_saturation": 0.03,
-  "verdict": "STRONG_SPECIALISTS"
+  "avg_specialists_top10": 2.7,
+  "dominant_specialists": [],
+  "directory_saturation": 0.3,
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 36,
   "niche": "Amazon FBA sellers",
-  "n_queries": 3,
-  "avg_specialists_top10": 6.67,
-  "dominant_specialists": [
-   "a2zaccounting.co.uk",
-   "archimediaaccounts.co.uk",
-   "e-accounts.co.uk",
-   "jpaccountant.info"
-  ],
-  "directory_saturation": 0.1,
-  "verdict": "STRONG_SPECIALISTS"
+  "avg_specialists_top10": 2.7,
+  "dominant_specialists": [],
+  "directory_saturation": 1.0,
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 37,
   "niche": "Content creators / influencers",
-  "n_queries": 3,
-  "avg_specialists_top10": 5.67,
+  "avg_specialists_top10": 4.0,
   "dominant_specialists": [
-   "influencers.accountants",
-   "jccastleaccounting.com"
+   "influencers.accountants"
   ],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "STRONG_SPECIALISTS",
+  "n_queries": 3
  },
  {
   "id": 38,
   "niche": "OnlyFans creators",
-  "n_queries": 3,
-  "avg_specialists_top10": 4.0,
-  "dominant_specialists": [
-   "finsightaccountants.co.uk",
-   "hawkinsaccounting.co.uk",
-   "oneandonlyaccounts.com",
-   "onlytax.co.uk"
-  ],
+  "avg_specialists_top10": 1.7,
+  "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 39,
   "niche": "Crypto traders / investors",
-  "n_queries": 3,
-  "avg_specialists_top10": 4.33,
-  "dominant_specialists": [
-   "mmba.co.uk"
-  ],
-  "directory_saturation": 0.1,
-  "verdict": "STRONG_SPECIALISTS"
+  "avg_specialists_top10": 3.0,
+  "dominant_specialists": [],
+  "directory_saturation": 1.0,
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 40,
   "niche": "Day / forex traders",
-  "n_queries": 3,
-  "avg_specialists_top10": 2.0,
+  "avg_specialists_top10": 1.0,
   "dominant_specialists": [
    "accountantsfortraders.co.uk"
   ],
-  "directory_saturation": 0.03,
-  "verdict": "CONTESTED"
+  "directory_saturation": 0.3,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 41,
   "niche": "Musicians",
-  "n_queries": 3,
-  "avg_specialists_top10": 7.67,
+  "avg_specialists_top10": 5.7,
   "dominant_specialists": [
-   "creative.accountants",
-   "eareband.co.uk",
    "gorillaaccounting.com",
-   "performanceaccountancy.co.uk"
+   "performanceaccountancy.co.uk",
+   "streetsmedia.co.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "STRONG_SPECIALISTS",
+  "n_queries": 3
  },
  {
   "id": 42,
   "niche": "Actors / entertainment industry",
-  "n_queries": 3,
-  "avg_specialists_top10": 5.67,
+  "avg_specialists_top10": 4.7,
   "dominant_specialists": [
-   "accounting4actors.co.uk",
    "creativeandnumbers.co.uk",
-   "srlv.co.uk",
-   "streetsmedia.co.uk"
+   "accounting4actors.co.uk",
+   "theataccounts.co.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "STRONG_SPECIALISTS",
+  "n_queries": 3
  },
  {
   "id": 43,
   "niche": "Film & TV production",
-  "n_queries": 3,
-  "avg_specialists_top10": 5.33,
-  "dominant_specialists": [
-   "creativeandnumbers.co.uk",
-   "mooreks.co.uk"
-  ],
+  "avg_specialists_top10": 1.7,
+  "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 44,
   "niche": "Artists / creatives",
-  "n_queries": 3,
-  "avg_specialists_top10": 4.0,
+  "avg_specialists_top10": 2.0,
   "dominant_specialists": [
-   "creative.accountants",
-   "creativeandnumbers.co.uk"
+   "creative.accountants"
   ],
-  "directory_saturation": 0.03,
-  "verdict": "STRONG_SPECIALISTS"
+  "directory_saturation": 0.3,
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 45,
   "niche": "Authors / writers",
-  "n_queries": 3,
-  "avg_specialists_top10": 5.0,
+  "avg_specialists_top10": 3.7,
   "dominant_specialists": [
-   "authortax.co.uk",
-   "creative.accountants",
-   "creativeandnumbers.co.uk",
-   "hwfisher.co.uk"
+   "riters.tax",
+   "creativeandnumbers.co.uk"
   ],
-  "directory_saturation": 0.13,
-  "verdict": "STRONG_SPECIALISTS"
+  "directory_saturation": 1.3,
+  "verdict": "STRONG_SPECIALISTS",
+  "n_queries": 3
  },
  {
   "id": 46,
   "niche": "Photographers",
-  "n_queries": 3,
-  "avg_specialists_top10": 3.67,
+  "avg_specialists_top10": 2.0,
   "dominant_specialists": [
-   "creativeandnumbers.co.uk",
-   "orendacollective.co.uk"
+   "orendacollective.co.uk",
+   "creativeandnumbers.co.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 47,
   "niche": "Interior designers",
-  "n_queries": 3,
-  "avg_specialists_top10": 1.67,
+  "avg_specialists_top10": 1.3,
   "dominant_specialists": [
-   "creative.accountants",
-   "creativeandnumbers.co.uk"
+   "creativeandnumbers.co.uk",
+   "creative.accountants"
   ],
-  "directory_saturation": 0.1,
-  "verdict": "CONTESTED"
+  "directory_saturation": 1.0,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 48,
   "niche": "Marketing agencies",
-  "n_queries": 3,
-  "avg_specialists_top10": 5.0,
+  "avg_specialists_top10": 2.7,
   "dominant_specialists": [
    "sidekickaccounting.co.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 49,
   "niche": "Recruitment agencies",
-  "n_queries": 3,
-  "avg_specialists_top10": 2.0,
+  "avg_specialists_top10": 1.7,
   "dominant_specialists": [
-   "recruitmentaccountants.com",
-   "therecruitersaccountant.co.uk"
+   "recruitmentaccountants.com"
   ],
-  "directory_saturation": 0.03,
-  "verdict": "CONTESTED"
+  "directory_saturation": 0.3,
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 50,
   "niche": "Architects",
-  "n_queries": 3,
-  "avg_specialists_top10": 0.67,
+  "avg_specialists_top10": 0.3,
   "dominant_specialists": [],
-  "directory_saturation": 0.07,
-  "verdict": "WEAK_FIELD"
+  "directory_saturation": 0.7,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 51,
   "niche": "Engineers / engineering consultants",
-  "n_queries": 3,
-  "avg_specialists_top10": 3.33,
+  "avg_specialists_top10": 1.0,
   "dominant_specialists": [
-   "gorillaaccounting.com",
-   "icsuk.com",
-   "qaccounting.com",
-   "strivex.co.uk"
+   "gorillaaccounting.com"
   ],
-  "directory_saturation": 0.03,
-  "verdict": "CONTESTED"
+  "directory_saturation": 0.3,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 52,
   "niche": "Financial advisers / FCA-regulated firms",
-  "n_queries": 3,
-  "avg_specialists_top10": 0.33,
+  "avg_specialists_top10": 0.0,
   "dominant_specialists": [],
-  "directory_saturation": 0.07,
-  "verdict": "WEAK_FIELD"
+  "directory_saturation": 0.7,
+  "verdict": "NO_SPECIALISTS",
+  "n_queries": 3
  },
  {
   "id": 53,
   "niche": "Restaurants",
-  "n_queries": 3,
-  "avg_specialists_top10": 3.0,
+  "avg_specialists_top10": 2.0,
   "dominant_specialists": [
    "paperchase.ac"
   ],
-  "directory_saturation": 0.03,
-  "verdict": "CONTESTED"
+  "directory_saturation": 0.3,
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 54,
   "niche": "Takeaways",
-  "n_queries": 3,
-  "avg_specialists_top10": 0.67,
+  "avg_specialists_top10": 0.3,
   "dominant_specialists": [],
-  "directory_saturation": 0.03,
-  "verdict": "WEAK_FIELD"
+  "directory_saturation": 0.3,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 55,
   "niche": "Pubs & bars",
-  "n_queries": 3,
-  "avg_specialists_top10": 1.33,
+  "avg_specialists_top10": 0.7,
   "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "WEAK_FIELD"
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 56,
   "niche": "Hotels & guesthouses",
-  "n_queries": 3,
-  "avg_specialists_top10": 1.0,
+  "avg_specialists_top10": 0.3,
   "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "WEAK_FIELD"
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 57,
   "niche": "Hospitality (family)",
-  "n_queries": 3,
-  "avg_specialists_top10": 1.67,
+  "avg_specialists_top10": 0.7,
   "dominant_specialists": [],
-  "directory_saturation": 0.07,
-  "verdict": "CONTESTED"
+  "directory_saturation": 0.7,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 58,
   "niche": "Event caterers",
-  "n_queries": 3,
-  "avg_specialists_top10": 1.0,
+  "avg_specialists_top10": 0.3,
   "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "WEAK_FIELD"
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 59,
   "niche": "Travel agents / tour operators",
-  "n_queries": 3,
-  "avg_specialists_top10": 2.0,
+  "avg_specialists_top10": 1.7,
   "dominant_specialists": [
    "las-accounting.co.uk"
   ],
-  "directory_saturation": 0.03,
-  "verdict": "CONTESTED"
+  "directory_saturation": 0.3,
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 60,
   "niche": "Hairdressers / barbers / beauty",
-  "n_queries": 3,
   "avg_specialists_top10": 4.0,
   "dominant_specialists": [
-   "pinkbutterflyaccounting.co.uk",
-   "salonexpertaccountants.co.uk",
-   "thebeautyaccountant.co.uk"
+   "salonexpertaccountants.co.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "STRONG_SPECIALISTS",
+  "n_queries": 3
  },
  {
   "id": 61,
   "niche": "Gyms / fitness / personal trainers",
-  "n_queries": 3,
-  "avg_specialists_top10": 4.67,
+  "avg_specialists_top10": 3.0,
   "dominant_specialists": [
-   "account-ease.co.uk",
-   "fitnessindustryaccountants.com",
-   "orendacollective.co.uk"
+   "orendacollective.co.uk",
+   "fitnessindustryaccountants.com"
   ],
-  "directory_saturation": 0.03,
-  "verdict": "STRONG_SPECIALISTS"
+  "directory_saturation": 0.3,
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 62,
   "niche": "Sports clubs",
-  "n_queries": 3,
-  "avg_specialists_top10": 3.67,
+  "avg_specialists_top10": 1.3,
   "dominant_specialists": [
-   "livingstonesaccountants.co.uk",
    "sportsclubaccounting.co.uk"
   ],
-  "directory_saturation": 0.03,
-  "verdict": "STRONG_SPECIALISTS"
+  "directory_saturation": 0.3,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 63,
   "niche": "Footballers / sports professionals",
-  "n_queries": 3,
-  "avg_specialists_top10": 7.33,
-  "dominant_specialists": [
-   "odiritaxconsultants.com",
-   "ross-brooke.co.uk",
-   "srlv.co.uk"
-  ],
+  "avg_specialists_top10": 2.3,
+  "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 64,
   "niche": "Taxi & private-hire drivers",
-  "n_queries": 3,
-  "avg_specialists_top10": 4.67,
-  "dominant_specialists": [
-   "gondalaccountancy.co.uk"
-  ],
+  "avg_specialists_top10": 0.3,
+  "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 65,
   "niche": "Couriers / delivery drivers",
-  "n_queries": 3,
-  "avg_specialists_top10": 4.33,
-  "dominant_specialists": [
-   "gondalaccountancy.co.uk"
-  ],
+  "avg_specialists_top10": 1.3,
+  "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 66,
   "niche": "Hauliers / trucking",
-  "n_queries": 3,
-  "avg_specialists_top10": 6.67,
+  "avg_specialists_top10": 2.7,
   "dominant_specialists": [
-   "clarandaccountants.co.uk",
-   "hawsons.co.uk",
-   "ross-brooke.co.uk",
    "yorkshireaccountancy.co.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 67,
   "niche": "Pilots / aviation",
-  "n_queries": 3,
-  "avg_specialists_top10": 2.0,
+  "avg_specialists_top10": 0.3,
   "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "CONTESTED"
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 68,
   "niche": "Farmers / agriculture",
-  "n_queries": 3,
-  "avg_specialists_top10": 7.33,
-  "dominant_specialists": [
-   "azets.com",
-   "hazlewoods.co.uk",
-   "lovewell-blake.co.uk",
-   "yorkshirecompanyaccountants.co.uk"
-  ],
-  "directory_saturation": 0.07,
-  "verdict": "STRONG_SPECIALISTS"
+  "avg_specialists_top10": 1.0,
+  "dominant_specialists": [],
+  "directory_saturation": 0.7,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 69,
   "niche": "Retail / independent shops",
-  "n_queries": 3,
-  "avg_specialists_top10": 0.33,
+  "avg_specialists_top10": 0.0,
   "dominant_specialists": [],
-  "directory_saturation": 0.1,
-  "verdict": "WEAK_FIELD"
+  "directory_saturation": 1.0,
+  "verdict": "NO_SPECIALISTS",
+  "n_queries": 3
  },
  {
   "id": 70,
   "niche": "Used car dealers / automotive",
-  "n_queries": 3,
-  "avg_specialists_top10": 5.33,
-  "dominant_specialists": [
-   "sunnyaccs.co.uk"
-  ],
-  "directory_saturation": 0.03,
-  "verdict": "STRONG_SPECIALISTS"
+  "avg_specialists_top10": 0.7,
+  "dominant_specialists": [],
+  "directory_saturation": 0.3,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 71,
   "niche": "Jewellers",
-  "n_queries": 2,
-  "avg_specialists_top10": 1.5,
+  "avg_specialists_top10": 0.0,
   "dominant_specialists": [],
-  "directory_saturation": 0.05,
-  "verdict": "CONTESTED"
+  "directory_saturation": 0.5,
+  "verdict": "NO_SPECIALISTS",
+  "n_queries": 2
  },
  {
   "id": 72,
   "niche": "Cake makers / food producers",
-  "n_queries": 3,
-  "avg_specialists_top10": 5.33,
+  "avg_specialists_top10": 0.7,
   "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 73,
   "niche": "Manufacturing",
-  "n_queries": 3,
-  "avg_specialists_top10": 0.67,
-  "dominant_specialists": [
-   "skynetaccounting.co.uk"
-  ],
+  "avg_specialists_top10": 0.7,
+  "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "WEAK_FIELD"
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 74,
   "niche": "Charities / non-profits",
-  "n_queries": 3,
-  "avg_specialists_top10": 2.67,
+  "avg_specialists_top10": 2.3,
   "dominant_specialists": [
    "accountantsforcharities.org.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "CONTESTED"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 75,
   "niche": "CICs / social enterprises",
-  "n_queries": 3,
-  "avg_specialists_top10": 3.33,
+  "avg_specialists_top10": 3.0,
   "dominant_specialists": [
-   "accountingforgood.co.uk",
-   "cicaccountants.co.uk",
-   "harrisaccountancy.co.uk"
+   "cicaccountants.co.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "CONTESTED"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 76,
   "niche": "Churches / religious organisations",
-  "n_queries": 3,
-  "avg_specialists_top10": 3.0,
+  "avg_specialists_top10": 2.0,
   "dominant_specialists": [
-   "pryceaccountants.co.uk",
-   "yattandco.net"
+   "pryceaccountants.co.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "CONTESTED"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 77,
   "niche": "Schools & academies",
-  "n_queries": 3,
-  "avg_specialists_top10": 2.0,
+  "avg_specialists_top10": 1.3,
   "dominant_specialists": [
    "academyadvisory.com"
   ],
   "directory_saturation": 0.0,
-  "verdict": "CONTESTED"
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 78,
   "niche": "Tutors / private teachers",
-  "n_queries": 3,
-  "avg_specialists_top10": 1.0,
-  "dominant_specialists": [
-   "btbaccountants.co.uk"
-  ],
+  "avg_specialists_top10": 0.0,
+  "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "WEAK_FIELD"
+  "verdict": "NO_SPECIALISTS",
+  "n_queries": 3
  },
  {
   "id": 79,
   "niche": "Driving instructors",
-  "n_queries": 3,
-  "avg_specialists_top10": 3.33,
+  "avg_specialists_top10": 2.0,
   "dominant_specialists": [
-   "uk-ccm.com",
-   "vanillaonlineaccountancy.co.uk"
+   "vanillaonlineaccountancy.co.uk",
+   "uk-ccm.com"
   ],
   "directory_saturation": 0.0,
-  "verdict": "CONTESTED"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 80,
   "niche": "Expats / non-residents",
-  "n_queries": 3,
-  "avg_specialists_top10": 7.67,
+  "avg_specialists_top10": 3.7,
   "dominant_specialists": [
-   "accusolveaccountants.com",
-   "globaltaxconsulting.co.uk",
-   "petersonsims.com",
-   "titanwealthinternational.com"
+   "globaltaxconsulting.co.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "STRONG_SPECIALISTS",
+  "n_queries": 3
  },
  {
   "id": 81,
   "niche": "High-net-worth individuals",
-  "n_queries": 3,
-  "avg_specialists_top10": 3.33,
+  "avg_specialists_top10": 1.0,
   "dominant_specialists": [],
-  "directory_saturation": 0.03,
-  "verdict": "CONTESTED"
+  "directory_saturation": 0.3,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 82,
   "niche": "Franchisees",
-  "n_queries": 3,
-  "avg_specialists_top10": 3.0,
-  "dominant_specialists": [
-   "mneaccounting.co.uk"
-  ],
-  "directory_saturation": 0.2,
-  "verdict": "CONTESTED"
+  "avg_specialists_top10": 0.3,
+  "dominant_specialists": [],
+  "directory_saturation": 2.0,
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 83,
   "niche": "Virtual assistants",
-  "n_queries": 3,
-  "avg_specialists_top10": 0.33,
+  "avg_specialists_top10": 0.0,
   "dominant_specialists": [],
-  "directory_saturation": 0.1,
-  "verdict": "WEAK_FIELD"
+  "directory_saturation": 1.0,
+  "verdict": "NO_SPECIALISTS",
+  "n_queries": 3
  },
  {
   "id": 84,
   "niche": "Neurodivergent business owners",
-  "n_queries": 3,
-  "avg_specialists_top10": 4.33,
+  "avg_specialists_top10": 2.7,
   "dominant_specialists": [
-   "atmoreandco.com",
-   "balloonaccounting.co.uk",
-   "heywoodmacdonald.co.uk",
-   "macleodaccounting.co.uk"
+   "balloonaccounting.co.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 85,
   "niche": "Energy & renewables",
-  "n_queries": 3,
-  "avg_specialists_top10": 4.33,
-  "dominant_specialists": [
-   "cuttsandco.co.uk",
-   "parsons.co.uk"
-  ],
+  "avg_specialists_top10": 0.3,
+  "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 86,
   "niche": "Life sciences / pharma",
-  "n_queries": 3,
-  "avg_specialists_top10": 2.67,
-  "dominant_specialists": [
-   "plusaccounting.co.uk",
-   "richardsons-group.co.uk"
-  ],
+  "avg_specialists_top10": 0.7,
+  "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "CONTESTED"
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  },
  {
   "id": 87,
   "niche": "Maritime",
-  "n_queries": 3,
-  "avg_specialists_top10": 4.67,
+  "avg_specialists_top10": 4.3,
   "dominant_specialists": [
    "marineaccounts.com",
-   "marinetax.com",
    "seatax.ltd.uk",
    "sktax.co.uk"
   ],
   "directory_saturation": 0.0,
-  "verdict": "STRONG_SPECIALISTS"
+  "verdict": "STRONG_SPECIALISTS",
+  "n_queries": 3
  },
  {
   "id": 88,
   "niche": "Security firms",
-  "n_queries": 3,
-  "avg_specialists_top10": 3.0,
+  "avg_specialists_top10": 1.7,
   "dominant_specialists": [
-   "apexaccountants.tax",
-   "hittakerandco.com",
-   "thexln.com"
+   "thexln.com",
+   "hittakerandco.com"
   ],
   "directory_saturation": 0.0,
-  "verdict": "CONTESTED"
+  "verdict": "CONTESTED",
+  "n_queries": 3
  },
  {
   "id": 89,
   "niche": "Cleaning businesses",
-  "n_queries": 3,
-  "avg_specialists_top10": 2.0,
-  "dominant_specialists": [
-   "sbxaccountants.com"
-  ],
+  "avg_specialists_top10": 0.7,
+  "dominant_specialists": [],
   "directory_saturation": 0.0,
-  "verdict": "CONTESTED"
+  "verdict": "WEAK_FIELD",
+  "n_queries": 3
  }
 ]

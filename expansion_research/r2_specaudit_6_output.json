@@ -1,0 +1,231 @@
+{
+  "nichols.co.uk": {
+    "Solicitors / law firms": "GENERALIST"
+  },
+  "nicholsmedical.co.uk": {
+    "Doctors / GPs": "SPECIALIST"
+  },
+  "no-worries.co.uk": {
+    "IT contractors": "SPECIALIST"
+  },
+  "nopalaver.co.uk": {
+    "IT contractors": "UNVERIFIABLE"
+  },
+  "nopalavergroup.com": {
+    "IT contractors": "UNVERIFIABLE"
+  },
+  "nrsaccounts.co.uk": {
+    "Hauliers / trucking": "SPECIALIST"
+  },
+  "nsiaccounting.com": {
+    "Cake makers / food producers": "UNVERIFIABLE"
+  },
+  "numericaccounting.co.uk": {
+    "Builders": "GENERALIST"
+  },
+  "nuvo.co.uk": {
+    "Startups": "GENERALIST"
+  },
+  "obk.ie": {
+    "Cake makers / food producers": "INFO"
+  },
+  "octopusfostering.co.uk": {
+    "Foster carers": "SPECIALIST"
+  },
+  "odiritaxconsultants.com": {
+    "Cake makers / food producers": "GENERALIST",
+    "Footballers / sports professionals": "GENERALIST"
+  },
+  "ofcpa.pro": {
+    "OnlyFans creators": "INFO"
+  },
+  "om.uk": {
+    "Landed estates / rural estates": "GENERALIST"
+  },
+  "oneandonlyaccounts.com": {
+    "Content creators / influencers": "SPECIALIST",
+    "OnlyFans creators": "SPECIALIST"
+  },
+  "onlyforveterinarians.com": {
+    "Vets": "INFO"
+  },
+  "onlytax.co.uk": {
+    "OnlyFans creators": "SPECIALIST"
+  },
+  "ontheballtax.co.uk": {
+    "Footballers / sports professionals": "SPECIALIST"
+  },
+  "optimaaccountants.co.uk": {
+    "Used car dealers / automotive": "GENERALIST"
+  },
+  "optimiseaccountants.co.uk": {
+    "Property developers": "SPECIALIST"
+  },
+  "orendacollective.co.uk": {
+    "Gyms / fitness / personal trainers": "UNVERIFIABLE",
+    "Photographers": "UNVERIFIABLE"
+  },
+  "osk.ie": {
+    "Sports clubs": "INFO"
+  },
+  "osome.com": {
+    "Ecommerce sellers": "GENERALIST"
+  },
+  "oxygenaccounting.co.uk": {
+    "Locum doctors": "SPECIALIST"
+  },
+  "paperchase.ac": {
+    "Hospitality (family)": "UNVERIFIABLE",
+    "Hotels & guesthouses": "UNVERIFIABLE",
+    "Pubs & bars": "UNVERIFIABLE",
+    "Restaurants": "UNVERIFIABLE"
+  },
+  "parsons.co.uk": {
+    "Energy & renewables": "GENERALIST",
+    "Tech / SaaS companies": "GENERALIST"
+  },
+  "pasquesipartners.com": {
+    "High-net-worth individuals": "INFO"
+  },
+  "performanceaccountancy.co.uk": {
+    "Actors / entertainment industry": "SPECIALIST",
+    "Musicians": "SPECIALIST"
+  },
+  "pet-cpa.com": {
+    "Vets": "INFO"
+  },
+  "petersonsims.com": {
+    "Expats / non-residents": "GENERALIST"
+  },
+  "pfmdental.co.uk": {
+    "Dentists": "SPECIALIST"
+  },
+  "pharmacistaccountants.co.uk": {
+    "Locum pharmacists": "SPECIALIST",
+    "Pharmacies": "SPECIALIST"
+  },
+  "pharmacyaccountants.co.uk": {
+    "Pharmacies": "SPECIALIST"
+  },
+  "pharmatax.co.uk": {
+    "Pharmacies": "SPECIALIST"
+  },
+  "phs-uk.co.uk": {
+    "Hospitality (family)": "GENERALIST",
+    "Hotels & guesthouses": "GENERALIST",
+    "Restaurants": "GENERALIST"
+  },
+  "pie-accountants-brighton.co.uk": {
+    "Cake makers / food producers": "SPECIALIST"
+  },
+  "pilot.com": {
+    "Startups": "INFO"
+  },
+  "pinionglobal.com": {
+    "Cake makers / food producers": "INFO"
+  },
+  "pinkbutterflyaccounting.co.uk": {
+    "Hairdressers / barbers / beauty": "SPECIALIST"
+  },
+  "pkf-francisclark.co.uk": {
+    "Cake makers / food producers": "GENERALIST",
+    "Farmers / agriculture": "GENERALIST",
+    "Landed estates / rural estates": "GENERALIST"
+  },
+  "pkfsmithcooper.com": {
+    "Landed estates / rural estates": "GENERALIST"
+  },
+  "plusaccounting.co.uk": {
+    "Film & TV production": "GENERALIST",
+    "Life sciences / pharma": "GENERALIST"
+  },
+  "prestigebm.co.uk": {
+    "Landscapers / gardeners": "GENERALIST"
+  },
+  "pricebailey.co.uk": {
+    "Footballers / sports professionals": "UNVERIFIABLE"
+  },
+  "profitwiseaccounting.biz": {
+    "Landscapers / gardeners": "INFO"
+  },
+  "property-tax-advice.co.uk": {
+    "Property investors": "SPECIALIST"
+  },
+  "propertyincomeaccountants.co.uk": {
+    "Property investors": "SPECIALIST"
+  },
+  "propertytaxadvisor.co.uk": {
+    "Property investors": "SPECIALIST"
+  },
+  "provestor.co.uk": {
+    "Airbnb / holiday-let hosts": "SPECIALIST"
+  },
+  "prssmart.com": {
+    "Therapists & allied health": "UNVERIFIABLE"
+  },
+  "pryceaccountants.co.uk": {
+    "Churches / religious organisations": "UNVERIFIABLE"
+  },
+  "psaccountant.co.uk": {
+    "Hauliers / trucking": "GENERALIST"
+  },
+  "pulse-accountants.co.uk": {
+    "Plumbers / heating engineers": "GENERALIST",
+    "Tradespeople (family)": "GENERALIST"
+  },
+  "q.tax": {
+    "Nurses / healthcare professionals": "GENERALIST"
+  },
+  "qaccounting.com": {
+    "Childminders / nurseries": "GENERALIST",
+    "Driving instructors": "GENERALIST",
+    "Electricians": "GENERALIST",
+    "Engineers / engineering consultants": "GENERALIST",
+    "IT contractors": "GENERALIST",
+    "Tradespeople (family)": "GENERALIST"
+  },
+  "qubeaccountants.co.uk": {
+    "Property management companies": "SPECIALIST"
+  },
+  "r-m-t.co.uk": {
+    "Franchisees": "GENERALIST"
+  },
+  "raaccountants.com": {
+    "Childminders / nurseries": "GENERALIST",
+    "Domiciliary care agencies": "GENERALIST"
+  },
+  "rawligion.co.uk": {
+    "Restaurants": "SPECIALIST"
+  },
+  "rbstaxiaccountingservices.com": {
+    "Taxi & private-hire drivers": "SPECIALIST"
+  },
+  "reactaccountancy.co.uk": {
+    "Foster carers": "GENERALIST",
+    "Tradespeople (family)": "GENERALIST"
+  },
+  "recruitmentaccountants.com": {
+    "Recruitment agencies": "SPECIALIST"
+  },
+  "redtulips.co.uk": {
+    "Therapists & allied health": "SPECIALIST"
+  },
+  "reedaccountants.co.uk": {
+    "Property developers": "GENERALIST"
+  },
+  "reflexaccounting.co.uk": {
+    "Doctors / GPs": "GENERALIST",
+    "High-net-worth individuals": "GENERALIST",
+    "Property investors": "GENERALIST",
+    "Tech / SaaS companies": "GENERALIST"
+  },
+  "relo.tax": {
+    "Expats / non-residents": "SPECIALIST"
+  },
+  "rethinktax.co.uk": {
+    "Property investors": "SPECIALIST"
+  },
+  "richardsons-group.co.uk": {
+    "Life sciences / pharma": "GENERALIST"
+  }
+}
