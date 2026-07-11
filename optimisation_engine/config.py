@@ -71,6 +71,9 @@ DATAFORSEO_COSTS: dict[str, dict[str, Any]] = {
     "competitors_domain/live":  {"base": 0.05, "per_row": 0.0},
     "ranked_keywords/live":     {"base": 0.01, "per_row": 0.0001},
     "domain_intersection/live": {"base": 0.05, "per_row": 0.0},
+    # Google Ads keyword data (NOT Labs): flat per task, up to 1000 keywords.
+    # Verified 2026-07-11 probe: $0.075 base + $0.0015 per keyword (10 kw cost $0.09).
+    "keywords_data/google_ads/search_volume/live": {"base": 0.075, "per_row": 0.0015},
     # Free endpoints (used for credential check + balance read)
     "appendix/user_data":       {"base": 0.0,  "per_row": 0.0},
 }

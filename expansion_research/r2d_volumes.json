@@ -1,0 +1,2783 @@
+[
+  {
+    "keyword": "accountants for property developers",
+    "niche_id": 4,
+    "niche": "Property developers",
+    "volume": 50,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "property developer accountant",
+    "niche_id": 4,
+    "niche": "Property developers",
+    "volume": 50,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "property development accountant",
+    "niche_id": 4,
+    "niche": "Property developers",
+    "volume": 90,
+    "cpc": null,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "property development tax",
+    "niche_id": 4,
+    "niche": "Property developers",
+    "volume": 20,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for property management companies",
+    "niche_id": 5,
+    "niche": "Property management companies",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "property management accountant",
+    "niche_id": 5,
+    "niche": "Property management companies",
+    "volume": 20,
+    "cpc": null,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "block management accountant",
+    "niche_id": 5,
+    "niche": "Property management companies",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for estate agents",
+    "niche_id": 6,
+    "niche": "Estate & letting agents",
+    "volume": 70,
+    "cpc": 13.55,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "estate agent accountant",
+    "niche_id": 6,
+    "niche": "Estate & letting agents",
+    "volume": 70,
+    "cpc": 13.55,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "letting agent accountant",
+    "niche_id": 6,
+    "niche": "Estate & letting agents",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for letting agents",
+    "niche_id": 6,
+    "niche": "Estate & letting agents",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "rural accountant",
+    "niche_id": 7,
+    "niche": "Landed estates / rural estates",
+    "volume": 30,
+    "cpc": 2.78,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "landed estate accountant",
+    "niche_id": 7,
+    "niche": "Landed estates / rural estates",
+    "volume": 10,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for rural businesses",
+    "niche_id": 7,
+    "niche": "Landed estates / rural estates",
+    "volume": 10,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "rural estate accountant",
+    "niche_id": 7,
+    "niche": "Landed estates / rural estates",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for plumbers",
+    "niche_id": 10,
+    "niche": "Plumbers / heating engineers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for plumbers",
+    "niche_id": 10,
+    "niche": "Plumbers / heating engineers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "plumber accountant",
+    "niche_id": 10,
+    "niche": "Plumbers / heating engineers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "plumbing business accountant",
+    "niche_id": 10,
+    "niche": "Plumbers / heating engineers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "plumber tax",
+    "niche_id": 10,
+    "niche": "Plumbers / heating engineers",
+    "volume": 10,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for electricians",
+    "niche_id": 11,
+    "niche": "Electricians",
+    "volume": 70,
+    "cpc": 19.9,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for electricians",
+    "niche_id": 11,
+    "niche": "Electricians",
+    "volume": 70,
+    "cpc": 19.9,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "electrician accountant",
+    "niche_id": 11,
+    "niche": "Electricians",
+    "volume": 70,
+    "cpc": 19.9,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "electrician tax",
+    "niche_id": 11,
+    "niche": "Electricians",
+    "volume": 10,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for painters and decorators",
+    "niche_id": 12,
+    "niche": "Painters & decorators",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for decorators",
+    "niche_id": 12,
+    "niche": "Painters & decorators",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "decorator accountant",
+    "niche_id": 12,
+    "niche": "Painters & decorators",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "painter and decorator tax",
+    "niche_id": 12,
+    "niche": "Painters & decorators",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for landscapers",
+    "niche_id": 13,
+    "niche": "Landscapers / gardeners",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "landscaper accountant",
+    "niche_id": 13,
+    "niche": "Landscapers / gardeners",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for gardeners",
+    "niche_id": 13,
+    "niche": "Landscapers / gardeners",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "landscaping business accountant",
+    "niche_id": 13,
+    "niche": "Landscapers / gardeners",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for tradesmen",
+    "niche_id": 14,
+    "niche": "Tradespeople (family)",
+    "volume": 40,
+    "cpc": null,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for tradespeople",
+    "niche_id": 14,
+    "niche": "Tradespeople (family)",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "tradesman accountant",
+    "niche_id": 14,
+    "niche": "Tradespeople (family)",
+    "volume": 40,
+    "cpc": null,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "trade accountant",
+    "niche_id": 14,
+    "niche": "Tradespeople (family)",
+    "volume": 50,
+    "cpc": 19.97,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "tradesman tax",
+    "niche_id": 14,
+    "niche": "Tradespeople (family)",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for locum pharmacists",
+    "niche_id": 18,
+    "niche": "Locum pharmacists",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "locum pharmacist accountant",
+    "niche_id": 18,
+    "niche": "Locum pharmacists",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "locum pharmacist tax",
+    "niche_id": 18,
+    "niche": "Locum pharmacists",
+    "volume": 10,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for pharmacists",
+    "niche_id": 19,
+    "niche": "Pharmacies",
+    "volume": 90,
+    "cpc": 11.6,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for pharmacies",
+    "niche_id": 19,
+    "niche": "Pharmacies",
+    "volume": 90,
+    "cpc": 11.6,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "pharmacy accountant",
+    "niche_id": 19,
+    "niche": "Pharmacies",
+    "volume": 210,
+    "cpc": 11.49,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "pharmacist accountant",
+    "niche_id": 19,
+    "niche": "Pharmacies",
+    "volume": 210,
+    "cpc": 11.49,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for opticians",
+    "niche_id": 20,
+    "niche": "Opticians / optometrists",
+    "volume": 20,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for opticians",
+    "niche_id": 20,
+    "niche": "Opticians / optometrists",
+    "volume": 20,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "optician accountant",
+    "niche_id": 20,
+    "niche": "Opticians / optometrists",
+    "volume": 20,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "optometrist accountant",
+    "niche_id": 20,
+    "niche": "Opticians / optometrists",
+    "volume": 30,
+    "cpc": null,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for vets",
+    "niche_id": 21,
+    "niche": "Vets",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for veterinary practices",
+    "niche_id": 21,
+    "niche": "Vets",
+    "volume": 10,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "vet accountant",
+    "niche_id": 21,
+    "niche": "Vets",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "veterinary accountant",
+    "niche_id": 21,
+    "niche": "Vets",
+    "volume": 110,
+    "cpc": 19.38,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for therapists",
+    "niche_id": 22,
+    "niche": "Therapists & allied health",
+    "volume": 20,
+    "cpc": 17.91,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "therapist accountant",
+    "niche_id": 22,
+    "niche": "Therapists & allied health",
+    "volume": 10,
+    "cpc": 22.32,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "physiotherapist accountant",
+    "niche_id": 22,
+    "niche": "Therapists & allied health",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for psychologists",
+    "niche_id": 22,
+    "niche": "Therapists & allied health",
+    "volume": 10,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for counsellors",
+    "niche_id": 22,
+    "niche": "Therapists & allied health",
+    "volume": 10,
+    "cpc": 15.09,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for nurses",
+    "niche_id": 23,
+    "niche": "Nurses / healthcare professionals",
+    "volume": 10,
+    "cpc": 8.27,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for nurses",
+    "niche_id": 23,
+    "niche": "Nurses / healthcare professionals",
+    "volume": 10,
+    "cpc": 8.27,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "nurse accountant",
+    "niche_id": 23,
+    "niche": "Nurses / healthcare professionals",
+    "volume": 10,
+    "cpc": 8.27,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for healthcare professionals",
+    "niche_id": 23,
+    "niche": "Nurses / healthcare professionals",
+    "volume": 30,
+    "cpc": 14.87,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for care homes",
+    "niche_id": 24,
+    "niche": "Care homes",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for care homes",
+    "niche_id": 24,
+    "niche": "Care homes",
+    "volume": 90,
+    "cpc": 19.51,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "care home accountant",
+    "niche_id": 24,
+    "niche": "Care homes",
+    "volume": 90,
+    "cpc": 19.51,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "care home tax",
+    "niche_id": 24,
+    "niche": "Care homes",
+    "volume": 10,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for care agencies",
+    "niche_id": 25,
+    "niche": "Domiciliary care agencies",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "domiciliary care accountant",
+    "niche_id": 25,
+    "niche": "Domiciliary care agencies",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "home care agency accountant",
+    "niche_id": 25,
+    "niche": "Domiciliary care agencies",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for childminders",
+    "niche_id": 26,
+    "niche": "Childminders / nurseries",
+    "volume": 90,
+    "cpc": 16.39,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "childminder accountant",
+    "niche_id": 26,
+    "niche": "Childminders / nurseries",
+    "volume": 90,
+    "cpc": 16.39,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "childminder tax",
+    "niche_id": 26,
+    "niche": "Childminders / nurseries",
+    "volume": 20,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "nursery accountant",
+    "niche_id": 26,
+    "niche": "Childminders / nurseries",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for nurseries",
+    "niche_id": 26,
+    "niche": "Childminders / nurseries",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for foster carers",
+    "niche_id": 27,
+    "niche": "Foster carers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "foster carer accountant",
+    "niche_id": 27,
+    "niche": "Foster carers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "foster carer tax",
+    "niche_id": 27,
+    "niche": "Foster carers",
+    "volume": 70,
+    "cpc": 4.25,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "foster care tax",
+    "niche_id": 27,
+    "niche": "Foster carers",
+    "volume": 70,
+    "cpc": 4.25,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for consultants",
+    "niche_id": 32,
+    "niche": "Management consultants",
+    "volume": 30,
+    "cpc": 24.01,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for management consultants",
+    "niche_id": 32,
+    "niche": "Management consultants",
+    "volume": 10,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "consultant accountant",
+    "niche_id": 32,
+    "niche": "Management consultants",
+    "volume": 320,
+    "cpc": 19.51,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "consultancy accountant",
+    "niche_id": 32,
+    "niche": "Management consultants",
+    "volume": 320,
+    "cpc": 19.51,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for startups",
+    "niche_id": 33,
+    "niche": "Startups",
+    "volume": 720,
+    "cpc": 39.81,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for startups",
+    "niche_id": 33,
+    "niche": "Startups",
+    "volume": 720,
+    "cpc": 39.81,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "startup accountant",
+    "niche_id": 33,
+    "niche": "Startups",
+    "volume": 720,
+    "cpc": 39.81,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "start up accountant",
+    "niche_id": 33,
+    "niche": "Startups",
+    "volume": 170,
+    "cpc": 23.55,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for tech companies",
+    "niche_id": 34,
+    "niche": "Tech / SaaS companies",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "saas accountant",
+    "niche_id": 34,
+    "niche": "Tech / SaaS companies",
+    "volume": 210,
+    "cpc": 17.73,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "tech accountant",
+    "niche_id": 34,
+    "niche": "Tech / SaaS companies",
+    "volume": 320,
+    "cpc": 25.09,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for saas companies",
+    "niche_id": 34,
+    "niche": "Tech / SaaS companies",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "software company accountant",
+    "niche_id": 34,
+    "niche": "Tech / SaaS companies",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for ecommerce",
+    "niche_id": 35,
+    "niche": "Ecommerce sellers",
+    "volume": 720,
+    "cpc": 35.53,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "ecommerce accountant",
+    "niche_id": 35,
+    "niche": "Ecommerce sellers",
+    "volume": 720,
+    "cpc": 35.53,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for online sellers",
+    "niche_id": 35,
+    "niche": "Ecommerce sellers",
+    "volume": 10,
+    "cpc": null,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "shopify accountant",
+    "niche_id": 35,
+    "niche": "Ecommerce sellers",
+    "volume": 210,
+    "cpc": 17.46,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "ecommerce tax",
+    "niche_id": 35,
+    "niche": "Ecommerce sellers",
+    "volume": 40,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for amazon sellers",
+    "niche_id": 36,
+    "niche": "Amazon FBA sellers",
+    "volume": 90,
+    "cpc": 44.48,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "amazon seller accountant",
+    "niche_id": 36,
+    "niche": "Amazon FBA sellers",
+    "volume": 110,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "amazon fba accountant",
+    "niche_id": 36,
+    "niche": "Amazon FBA sellers",
+    "volume": 90,
+    "cpc": 34.53,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "fba accountant",
+    "niche_id": 36,
+    "niche": "Amazon FBA sellers",
+    "volume": 10,
+    "cpc": 34.1,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for content creators",
+    "niche_id": 37,
+    "niche": "Content creators / influencers",
+    "volume": 70,
+    "cpc": 21.1,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for influencers",
+    "niche_id": 37,
+    "niche": "Content creators / influencers",
+    "volume": 170,
+    "cpc": 9.45,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "influencer accountant",
+    "niche_id": 37,
+    "niche": "Content creators / influencers",
+    "volume": 40,
+    "cpc": 4.46,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "youtuber accountant",
+    "niche_id": 37,
+    "niche": "Content creators / influencers",
+    "volume": 10,
+    "cpc": 14.15,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "influencer tax",
+    "niche_id": 37,
+    "niche": "Content creators / influencers",
+    "volume": 20,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for onlyfans",
+    "niche_id": 38,
+    "niche": "OnlyFans creators",
+    "volume": 10,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "onlyfans accountant",
+    "niche_id": 38,
+    "niche": "OnlyFans creators",
+    "volume": 70,
+    "cpc": 15.08,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "onlyfans tax",
+    "niche_id": 38,
+    "niche": "OnlyFans creators",
+    "volume": 70,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "onlyfans tax accountant",
+    "niche_id": 38,
+    "niche": "OnlyFans creators",
+    "volume": 10,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "crypto accountant",
+    "niche_id": 39,
+    "niche": "Crypto traders / investors",
+    "volume": 320,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "crypto tax accountant",
+    "niche_id": 39,
+    "niche": "Crypto traders / investors",
+    "volume": 110,
+    "cpc": 10.47,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for crypto",
+    "niche_id": 39,
+    "niche": "Crypto traders / investors",
+    "volume": 10,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "cryptocurrency accountant",
+    "niche_id": 39,
+    "niche": "Crypto traders / investors",
+    "volume": 40,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "crypto tax uk",
+    "niche_id": 39,
+    "niche": "Crypto traders / investors",
+    "volume": 880,
+    "cpc": 5.06,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for day traders",
+    "niche_id": 40,
+    "niche": "Day / forex traders",
+    "volume": 20,
+    "cpc": 6.54,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "day trader accountant",
+    "niche_id": 40,
+    "niche": "Day / forex traders",
+    "volume": 10,
+    "cpc": 7.06,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "forex trader accountant",
+    "niche_id": 40,
+    "niche": "Day / forex traders",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for traders",
+    "niche_id": 40,
+    "niche": "Day / forex traders",
+    "volume": 90,
+    "cpc": 6.07,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "trader tax",
+    "niche_id": 40,
+    "niche": "Day / forex traders",
+    "volume": 10,
+    "cpc": 2.96,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for musicians",
+    "niche_id": 41,
+    "niche": "Musicians",
+    "volume": 50,
+    "cpc": null,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for musicians",
+    "niche_id": 41,
+    "niche": "Musicians",
+    "volume": 50,
+    "cpc": null,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "musician accountant",
+    "niche_id": 41,
+    "niche": "Musicians",
+    "volume": 50,
+    "cpc": null,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "music accountant",
+    "niche_id": 41,
+    "niche": "Musicians",
+    "volume": 50,
+    "cpc": null,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for actors",
+    "niche_id": 42,
+    "niche": "Actors / entertainment industry",
+    "volume": 90,
+    "cpc": 8.75,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for actors",
+    "niche_id": 42,
+    "niche": "Actors / entertainment industry",
+    "volume": 90,
+    "cpc": 8.75,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "actor accountant",
+    "niche_id": 42,
+    "niche": "Actors / entertainment industry",
+    "volume": 90,
+    "cpc": 8.75,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "entertainment accountant",
+    "niche_id": 42,
+    "niche": "Actors / entertainment industry",
+    "volume": 110,
+    "cpc": 43.31,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "film accountant",
+    "niche_id": 43,
+    "niche": "Film & TV production",
+    "volume": 1600,
+    "cpc": 8.84,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for film industry",
+    "niche_id": 43,
+    "niche": "Film & TV production",
+    "volume": 30,
+    "cpc": 6.52,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "tv production accountant",
+    "niche_id": 43,
+    "niche": "Film & TV production",
+    "volume": 10,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "media accountant",
+    "niche_id": 43,
+    "niche": "Film & TV production",
+    "volume": 70,
+    "cpc": 4.69,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for artists",
+    "niche_id": 44,
+    "niche": "Artists / creatives",
+    "volume": 40,
+    "cpc": 8.06,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "artist accountant",
+    "niche_id": 44,
+    "niche": "Artists / creatives",
+    "volume": 40,
+    "cpc": 8.06,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for creatives",
+    "niche_id": 44,
+    "niche": "Artists / creatives",
+    "volume": 140,
+    "cpc": 17.06,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "creative industry accountant",
+    "niche_id": 44,
+    "niche": "Artists / creatives",
+    "volume": 40,
+    "cpc": 18.23,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for authors",
+    "niche_id": 45,
+    "niche": "Authors / writers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "author accountant",
+    "niche_id": 45,
+    "niche": "Authors / writers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for writers",
+    "niche_id": 45,
+    "niche": "Authors / writers",
+    "volume": 20,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "writer accountant",
+    "niche_id": 45,
+    "niche": "Authors / writers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for photographers",
+    "niche_id": 46,
+    "niche": "Photographers",
+    "volume": 40,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for photographers",
+    "niche_id": 46,
+    "niche": "Photographers",
+    "volume": 40,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "photographer accountant",
+    "niche_id": 46,
+    "niche": "Photographers",
+    "volume": 40,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "photographer tax",
+    "niche_id": 46,
+    "niche": "Photographers",
+    "volume": 10,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for interior designers",
+    "niche_id": 47,
+    "niche": "Interior designers",
+    "volume": 30,
+    "cpc": 11.81,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "interior designer accountant",
+    "niche_id": 47,
+    "niche": "Interior designers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for designers",
+    "niche_id": 47,
+    "niche": "Interior designers",
+    "volume": 10,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for recruitment agencies",
+    "niche_id": 49,
+    "niche": "Recruitment agencies",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "recruitment agency accountant",
+    "niche_id": 49,
+    "niche": "Recruitment agencies",
+    "volume": 880,
+    "cpc": 9.54,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "recruitment accountant",
+    "niche_id": 49,
+    "niche": "Recruitment agencies",
+    "volume": 260,
+    "cpc": 5.23,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for recruiters",
+    "niche_id": 49,
+    "niche": "Recruitment agencies",
+    "volume": 10,
+    "cpc": null,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for architects",
+    "niche_id": 50,
+    "niche": "Architects",
+    "volume": 40,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for architects",
+    "niche_id": 50,
+    "niche": "Architects",
+    "volume": 40,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "architect accountant",
+    "niche_id": 50,
+    "niche": "Architects",
+    "volume": 40,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "architect tax",
+    "niche_id": 50,
+    "niche": "Architects",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for engineers",
+    "niche_id": 51,
+    "niche": "Engineers / engineering consultants",
+    "volume": 30,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for engineering companies",
+    "niche_id": 51,
+    "niche": "Engineers / engineering consultants",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "engineer accountant",
+    "niche_id": 51,
+    "niche": "Engineers / engineering consultants",
+    "volume": 50,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "engineering accountant",
+    "niche_id": 51,
+    "niche": "Engineers / engineering consultants",
+    "volume": 50,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for financial advisers",
+    "niche_id": 52,
+    "niche": "Financial advisers / FCA firms",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for financial advisors",
+    "niche_id": 52,
+    "niche": "Financial advisers / FCA firms",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "ifa accountant",
+    "niche_id": 52,
+    "niche": "Financial advisers / FCA firms",
+    "volume": 170,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "financial adviser accountant",
+    "niche_id": 52,
+    "niche": "Financial advisers / FCA firms",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for restaurants",
+    "niche_id": 53,
+    "niche": "Restaurants",
+    "volume": 90,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for restaurants",
+    "niche_id": 53,
+    "niche": "Restaurants",
+    "volume": 90,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "restaurant accountant",
+    "niche_id": 53,
+    "niche": "Restaurants",
+    "volume": 90,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "restaurant accountants",
+    "niche_id": 53,
+    "niche": "Restaurants",
+    "volume": 90,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "restaurant tax",
+    "niche_id": 53,
+    "niche": "Restaurants",
+    "volume": 110,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for takeaways",
+    "niche_id": 54,
+    "niche": "Takeaways",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for takeaways",
+    "niche_id": 54,
+    "niche": "Takeaways",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "takeaway accountant",
+    "niche_id": 54,
+    "niche": "Takeaways",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "takeaway tax",
+    "niche_id": 54,
+    "niche": "Takeaways",
+    "volume": 10,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for pubs",
+    "niche_id": 55,
+    "niche": "Pubs & bars",
+    "volume": 140,
+    "cpc": 12.28,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for pubs",
+    "niche_id": 55,
+    "niche": "Pubs & bars",
+    "volume": 140,
+    "cpc": 12.28,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "pub accountant",
+    "niche_id": 55,
+    "niche": "Pubs & bars",
+    "volume": 140,
+    "cpc": 12.28,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "bar accountant",
+    "niche_id": 55,
+    "niche": "Pubs & bars",
+    "volume": 30,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for hotels",
+    "niche_id": 56,
+    "niche": "Hotels & guesthouses",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for hotels",
+    "niche_id": 56,
+    "niche": "Hotels & guesthouses",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "hotel accountant",
+    "niche_id": 56,
+    "niche": "Hotels & guesthouses",
+    "volume": 110,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "bed and breakfast accountant",
+    "niche_id": 56,
+    "niche": "Hotels & guesthouses",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "hospitality accountant",
+    "niche_id": 57,
+    "niche": "Hospitality (family)",
+    "volume": 390,
+    "cpc": 24.02,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for hospitality",
+    "niche_id": 57,
+    "niche": "Hospitality (family)",
+    "volume": 390,
+    "cpc": 24.02,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "hospitality accounting",
+    "niche_id": 57,
+    "niche": "Hospitality (family)",
+    "volume": 390,
+    "cpc": 24.02,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "hospitality tax",
+    "niche_id": 57,
+    "niche": "Hospitality (family)",
+    "volume": 70,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for caterers",
+    "niche_id": 58,
+    "niche": "Event caterers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "catering accountant",
+    "niche_id": 58,
+    "niche": "Event caterers",
+    "volume": 10,
+    "cpc": null,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "caterer accountant",
+    "niche_id": 58,
+    "niche": "Event caterers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for travel agents",
+    "niche_id": 59,
+    "niche": "Travel agents / tour operators",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "travel agent accountant",
+    "niche_id": 59,
+    "niche": "Travel agents / tour operators",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "tour operator accountant",
+    "niche_id": 59,
+    "niche": "Travel agents / tour operators",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "toms vat accountant",
+    "niche_id": 59,
+    "niche": "Travel agents / tour operators",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for hairdressers",
+    "niche_id": 60,
+    "niche": "Hairdressers / barbers / beauty",
+    "volume": 20,
+    "cpc": 9.72,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "hairdresser accountant",
+    "niche_id": 60,
+    "niche": "Hairdressers / barbers / beauty",
+    "volume": 20,
+    "cpc": 9.72,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for beauty salons",
+    "niche_id": 60,
+    "niche": "Hairdressers / barbers / beauty",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "salon accountant",
+    "niche_id": 60,
+    "niche": "Hairdressers / barbers / beauty",
+    "volume": 10,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "barber accountant",
+    "niche_id": 60,
+    "niche": "Hairdressers / barbers / beauty",
+    "volume": 10,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for personal trainers",
+    "niche_id": 61,
+    "niche": "Gyms / fitness / personal trainers",
+    "volume": 10,
+    "cpc": 26.51,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "personal trainer accountant",
+    "niche_id": 61,
+    "niche": "Gyms / fitness / personal trainers",
+    "volume": 10,
+    "cpc": 26.51,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "gym accountant",
+    "niche_id": 61,
+    "niche": "Gyms / fitness / personal trainers",
+    "volume": 10,
+    "cpc": null,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for gyms",
+    "niche_id": 61,
+    "niche": "Gyms / fitness / personal trainers",
+    "volume": 10,
+    "cpc": null,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for sports clubs",
+    "niche_id": 62,
+    "niche": "Sports clubs",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "sports club accountant",
+    "niche_id": 62,
+    "niche": "Sports clubs",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "football club accountant",
+    "niche_id": 62,
+    "niche": "Sports clubs",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for footballers",
+    "niche_id": 63,
+    "niche": "Footballers / sports professionals",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "footballer accountant",
+    "niche_id": 63,
+    "niche": "Footballers / sports professionals",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for athletes",
+    "niche_id": 63,
+    "niche": "Footballers / sports professionals",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "sports accountant",
+    "niche_id": 63,
+    "niche": "Footballers / sports professionals",
+    "volume": 50,
+    "cpc": 12.59,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for taxi drivers",
+    "niche_id": 64,
+    "niche": "Taxi & private-hire drivers",
+    "volume": 110,
+    "cpc": 13.17,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "taxi driver accountant",
+    "niche_id": 64,
+    "niche": "Taxi & private-hire drivers",
+    "volume": 110,
+    "cpc": 13.17,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "taxi accountant",
+    "niche_id": 64,
+    "niche": "Taxi & private-hire drivers",
+    "volume": 140,
+    "cpc": 9.41,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "uber driver accountant",
+    "niche_id": 64,
+    "niche": "Taxi & private-hire drivers",
+    "volume": 10,
+    "cpc": 18.66,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for uber drivers",
+    "niche_id": 64,
+    "niche": "Taxi & private-hire drivers",
+    "volume": 50,
+    "cpc": 11.13,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for couriers",
+    "niche_id": 65,
+    "niche": "Couriers / delivery drivers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "courier accountant",
+    "niche_id": 65,
+    "niche": "Couriers / delivery drivers",
+    "volume": 10,
+    "cpc": 16.9,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for delivery drivers",
+    "niche_id": 65,
+    "niche": "Couriers / delivery drivers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "delivery driver tax",
+    "niche_id": 65,
+    "niche": "Couriers / delivery drivers",
+    "volume": 10,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for hauliers",
+    "niche_id": 66,
+    "niche": "Hauliers / trucking",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "haulage accountant",
+    "niche_id": 66,
+    "niche": "Hauliers / trucking",
+    "volume": 40,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for haulage companies",
+    "niche_id": 66,
+    "niche": "Hauliers / trucking",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "truck driver accountant",
+    "niche_id": 66,
+    "niche": "Hauliers / trucking",
+    "volume": 10,
+    "cpc": null,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "transport accountant",
+    "niche_id": 66,
+    "niche": "Hauliers / trucking",
+    "volume": 90,
+    "cpc": 14.17,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for pilots",
+    "niche_id": 67,
+    "niche": "Pilots / aviation",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for pilots",
+    "niche_id": 67,
+    "niche": "Pilots / aviation",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "pilot accountant",
+    "niche_id": 67,
+    "niche": "Pilots / aviation",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "aviation accountant",
+    "niche_id": 67,
+    "niche": "Pilots / aviation",
+    "volume": 10,
+    "cpc": 7.84,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for farmers",
+    "niche_id": 68,
+    "niche": "Farmers / agriculture",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for farmers",
+    "niche_id": 68,
+    "niche": "Farmers / agriculture",
+    "volume": 30,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "farm accountant",
+    "niche_id": 68,
+    "niche": "Farmers / agriculture",
+    "volume": 30,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "farm accountants",
+    "niche_id": 68,
+    "niche": "Farmers / agriculture",
+    "volume": 30,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "agricultural accountant",
+    "niche_id": 68,
+    "niche": "Farmers / agriculture",
+    "volume": 320,
+    "cpc": 15.19,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for retail business",
+    "niche_id": 69,
+    "niche": "Retail / independent shops",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "retail accountant",
+    "niche_id": 69,
+    "niche": "Retail / independent shops",
+    "volume": 210,
+    "cpc": 25.22,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for retailers",
+    "niche_id": 69,
+    "niche": "Retail / independent shops",
+    "volume": 30,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "shop accountant",
+    "niche_id": 69,
+    "niche": "Retail / independent shops",
+    "volume": 10,
+    "cpc": 6.91,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for car dealers",
+    "niche_id": 70,
+    "niche": "Used car dealers / automotive",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "car dealer accountant",
+    "niche_id": 70,
+    "niche": "Used car dealers / automotive",
+    "volume": 40,
+    "cpc": 4.77,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "motor trade accountant",
+    "niche_id": 70,
+    "niche": "Used car dealers / automotive",
+    "volume": 40,
+    "cpc": 8.28,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for car dealerships",
+    "niche_id": 70,
+    "niche": "Used car dealers / automotive",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for jewellers",
+    "niche_id": 71,
+    "niche": "Jewellers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "jeweller accountant",
+    "niche_id": 71,
+    "niche": "Jewellers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "jewellery business accountant",
+    "niche_id": 71,
+    "niche": "Jewellers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for food business",
+    "niche_id": 72,
+    "niche": "Cake makers / food producers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "food and drink accountant",
+    "niche_id": 72,
+    "niche": "Cake makers / food producers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "food manufacturer accountant",
+    "niche_id": 72,
+    "niche": "Cake makers / food producers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for food producers",
+    "niche_id": 72,
+    "niche": "Cake makers / food producers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for manufacturers",
+    "niche_id": 73,
+    "niche": "Manufacturing",
+    "volume": 90,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "manufacturing accountant",
+    "niche_id": 73,
+    "niche": "Manufacturing",
+    "volume": 170,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for manufacturing companies",
+    "niche_id": 73,
+    "niche": "Manufacturing",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for charities",
+    "niche_id": 74,
+    "niche": "Charities / non-profits",
+    "volume": 590,
+    "cpc": 11.56,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for charities",
+    "niche_id": 74,
+    "niche": "Charities / non-profits",
+    "volume": 590,
+    "cpc": 11.56,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "charity accountant",
+    "niche_id": 74,
+    "niche": "Charities / non-profits",
+    "volume": 590,
+    "cpc": 11.56,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "charity accountants",
+    "niche_id": 74,
+    "niche": "Charities / non-profits",
+    "volume": 590,
+    "cpc": 11.56,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "charity accounting",
+    "niche_id": 74,
+    "niche": "Charities / non-profits",
+    "volume": 210,
+    "cpc": 8.01,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for cic",
+    "niche_id": 75,
+    "niche": "CICs / social enterprises",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "cic accountant",
+    "niche_id": 75,
+    "niche": "CICs / social enterprises",
+    "volume": 90,
+    "cpc": 14.51,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "community interest company accountant",
+    "niche_id": 75,
+    "niche": "CICs / social enterprises",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "social enterprise accountant",
+    "niche_id": 75,
+    "niche": "CICs / social enterprises",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for churches",
+    "niche_id": 76,
+    "niche": "Churches / religious organisations",
+    "volume": 10,
+    "cpc": 7.62,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for churches",
+    "niche_id": 76,
+    "niche": "Churches / religious organisations",
+    "volume": 10,
+    "cpc": 7.62,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "church accountant",
+    "niche_id": 76,
+    "niche": "Churches / religious organisations",
+    "volume": 10,
+    "cpc": 7.62,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for schools",
+    "niche_id": 77,
+    "niche": "Schools & academies",
+    "volume": 10,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "school accountant",
+    "niche_id": 77,
+    "niche": "Schools & academies",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "academy accountant",
+    "niche_id": 77,
+    "niche": "Schools & academies",
+    "volume": 20,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for academies",
+    "niche_id": 77,
+    "niche": "Schools & academies",
+    "volume": 20,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for tutors",
+    "niche_id": 78,
+    "niche": "Tutors / private teachers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "tutor accountant",
+    "niche_id": 78,
+    "niche": "Tutors / private teachers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "private tutor tax",
+    "niche_id": 78,
+    "niche": "Tutors / private teachers",
+    "volume": 10,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for driving instructors",
+    "niche_id": 79,
+    "niche": "Driving instructors",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "driving instructor accountant",
+    "niche_id": 79,
+    "niche": "Driving instructors",
+    "volume": 50,
+    "cpc": 21.03,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "driving instructor tax",
+    "niche_id": 79,
+    "niche": "Driving instructors",
+    "volume": 10,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for expats",
+    "niche_id": 80,
+    "niche": "Expats / non-residents",
+    "volume": 20,
+    "cpc": 13.5,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "expat accountant",
+    "niche_id": 80,
+    "niche": "Expats / non-residents",
+    "volume": 20,
+    "cpc": 13.5,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "expat tax accountant",
+    "niche_id": 80,
+    "niche": "Expats / non-residents",
+    "volume": 20,
+    "cpc": 4.74,
+    "competition": "HIGH",
+    "returned": true
+  },
+  {
+    "keyword": "uk expat tax",
+    "niche_id": 80,
+    "niche": "Expats / non-residents",
+    "volume": 170,
+    "cpc": 16.47,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "non resident accountant",
+    "niche_id": 80,
+    "niche": "Expats / non-residents",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for high net worth individuals",
+    "niche_id": 81,
+    "niche": "High-net-worth individuals",
+    "volume": 50,
+    "cpc": 12.36,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "high net worth accountant",
+    "niche_id": 81,
+    "niche": "High-net-worth individuals",
+    "volume": 50,
+    "cpc": 12.36,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "private client accountant",
+    "niche_id": 81,
+    "niche": "High-net-worth individuals",
+    "volume": 30,
+    "cpc": null,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "wealth accountant",
+    "niche_id": 81,
+    "niche": "High-net-worth individuals",
+    "volume": 10,
+    "cpc": null,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for franchisees",
+    "niche_id": 82,
+    "niche": "Franchisees",
+    "volume": 20,
+    "cpc": null,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "franchise accountant",
+    "niche_id": 82,
+    "niche": "Franchisees",
+    "volume": 140,
+    "cpc": 6.67,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for franchises",
+    "niche_id": 82,
+    "niche": "Franchisees",
+    "volume": 140,
+    "cpc": 6.67,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for virtual assistants",
+    "niche_id": 83,
+    "niche": "Virtual assistants",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "virtual assistant accountant",
+    "niche_id": 83,
+    "niche": "Virtual assistants",
+    "volume": 10,
+    "cpc": 35.51,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "virtual assistant tax",
+    "niche_id": 83,
+    "niche": "Virtual assistants",
+    "volume": 10,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for neurodivergent",
+    "niche_id": 84,
+    "niche": "Neurodivergent business owners",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "neurodivergent accountant",
+    "niche_id": 84,
+    "niche": "Neurodivergent business owners",
+    "volume": 10,
+    "cpc": null,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "adhd accountant",
+    "niche_id": 84,
+    "niche": "Neurodivergent business owners",
+    "volume": 30,
+    "cpc": 1.14,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountants for neurodivergent business owners",
+    "niche_id": 84,
+    "niche": "Neurodivergent business owners",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for oil and gas contractors",
+    "niche_id": 85,
+    "niche": "Energy & renewables",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "oil and gas accountant",
+    "niche_id": 85,
+    "niche": "Energy & renewables",
+    "volume": 30,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "renewable energy accountant",
+    "niche_id": 85,
+    "niche": "Energy & renewables",
+    "volume": 20,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "energy accountant",
+    "niche_id": 85,
+    "niche": "Energy & renewables",
+    "volume": 390,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for pharma",
+    "niche_id": 86,
+    "niche": "Life sciences / pharma",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "life sciences accountant",
+    "niche_id": 86,
+    "niche": "Life sciences / pharma",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "pharmaceutical accountant",
+    "niche_id": 86,
+    "niche": "Life sciences / pharma",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "biotech accountant",
+    "niche_id": 86,
+    "niche": "Life sciences / pharma",
+    "volume": 10,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for seafarers",
+    "niche_id": 87,
+    "niche": "Maritime / seafarers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "seafarer accountant",
+    "niche_id": 87,
+    "niche": "Maritime / seafarers",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "seafarers earnings deduction",
+    "niche_id": 87,
+    "niche": "Maritime / seafarers",
+    "volume": 260,
+    "cpc": 2.2,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "seafarer tax",
+    "niche_id": 87,
+    "niche": "Maritime / seafarers",
+    "volume": 170,
+    "cpc": 3.18,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "maritime accountant",
+    "niche_id": 87,
+    "niche": "Maritime / seafarers",
+    "volume": 10,
+    "cpc": 2.83,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for security companies",
+    "niche_id": 88,
+    "niche": "Security firms",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "security company accountant",
+    "niche_id": 88,
+    "niche": "Security firms",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "security business accountant",
+    "niche_id": 88,
+    "niche": "Security firms",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountant for cleaners",
+    "niche_id": 89,
+    "niche": "Cleaning businesses",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "cleaning business accountant",
+    "niche_id": 89,
+    "niche": "Cleaning businesses",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "accountants for cleaning companies",
+    "niche_id": 89,
+    "niche": "Cleaning businesses",
+    "volume": null,
+    "cpc": null,
+    "competition": null,
+    "returned": true
+  },
+  {
+    "keyword": "cleaner tax",
+    "niche_id": 89,
+    "niche": "Cleaning businesses",
+    "volume": 10,
+    "cpc": null,
+    "competition": "LOW",
+    "returned": true
+  },
+  {
+    "keyword": "accountant for landlords",
+    "niche_id": 0,
+    "niche": "CANARY (landlords, excluded niche)",
+    "volume": 260,
+    "cpc": 8.63,
+    "competition": "MEDIUM",
+    "returned": true
+  },
+  {
+    "keyword": "landlord accountant",
+    "niche_id": 0,
+    "niche": "CANARY (landlords, excluded niche)",
+    "volume": 390,
+    "cpc": 11.87,
+    "competition": "MEDIUM",
+    "returned": true
+  }
+]
