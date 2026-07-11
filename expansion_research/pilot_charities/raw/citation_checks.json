@@ -1,0 +1,568 @@
+{
+ "https://www.gov.uk/guidance/charity-reporting-and-accounting-the-essentials-november-2016-cc15d": {
+  "phrases_expected": [
+   "independent examination",
+   "audit",
+   "1 million"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/guidance/charity-reporting-and-accounting-the-essentials-november-2016-cc15d",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31": {
+  "phrases_expected": [
+   "independent examination",
+   "25,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31",
+  "title": "Independent examination of charity accounts: guidance for trustees (CC31) - GOV.UK",
+  "phrases_found": [
+   "independent examination",
+   "25,000"
+  ]
+ },
+ "https://www.gov.uk/guidance/prepare-a-charity-annual-return": {
+  "phrases_expected": [
+   "annual return",
+   "10,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/prepare-a-charity-annual-return",
+  "title": "Prepare a charity annual return - GOV.UK",
+  "phrases_found": [
+   "annual return",
+   "10,000"
+  ]
+ },
+ "https://www.gov.uk/guidance/how-to-register-your-charity-cc21b": {
+  "phrases_expected": [
+   "5,000",
+   "register"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/how-to-register-your-charity-cc21b",
+  "title": "How to register a charity (CC21b) - GOV.UK",
+  "phrases_found": [
+   "5,000",
+   "register"
+  ]
+ },
+ "https://www.gov.uk/government/publications/charity-commission-guidance-charities-act-2022": {
+  "phrases_expected": [
+   "Charities Act 2022"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/government/publications/charity-commission-guidance-charities-act-2022",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/guidance/charities-act-2022-implementation-plan": {
+  "phrases_expected": [
+   "Charities Act 2022",
+   "permanent endowment"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/charities-act-2022-implementation-plan",
+  "title": "Charities Act 2022: implementation plan - GOV.UK",
+  "phrases_found": [
+   "Charities Act 2022",
+   "permanent endowment"
+  ]
+ },
+ "https://www.gov.uk/charities-and-tax": {
+  "phrases_expected": [
+   "tax relief",
+   "charit"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/charities-and-tax",
+  "title": "Charities and tax: Overview - GOV.UK",
+  "phrases_found": [
+   "tax relief",
+   "charit"
+  ]
+ },
+ "https://www.gov.uk/claim-gift-aid": {
+  "phrases_expected": [
+   "Gift Aid",
+   "25p"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/claim-gift-aid",
+  "title": "Claiming Gift Aid as a charity or CASC: Overview - GOV.UK",
+  "phrases_found": [
+   "Gift Aid",
+   "25p"
+  ]
+ },
+ "https://www.gov.uk/claim-gift-aid/small-donations-scheme": {
+  "phrases_expected": [
+   "small donations",
+   "8,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/claim-gift-aid/small-donations-scheme",
+  "title": "Claiming Gift Aid as a charity or CASC: Small donations scheme - GOV.UK",
+  "phrases_found": [
+   "small donations",
+   "8,000"
+  ]
+ },
+ "https://www.gov.uk/guidance/claiming-a-top-up-payment-on-small-charitable-donations": {
+  "phrases_expected": [
+   "GASDS",
+   "30"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/claiming-a-top-up-payment-on-small-charitable-donations",
+  "title": "Claim top-up payments for the Gift Aid Small Donations Scheme - GOV.UK",
+  "phrases_found": [
+   "GASDS",
+   "30"
+  ]
+ },
+ "https://www.gov.uk/guidance/charities-and-trading": {
+  "phrases_expected": [
+   "trading",
+   "80,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/charities-and-trading",
+  "title": "Charities and trading - GOV.UK",
+  "phrases_found": [
+   "trading",
+   "80,000"
+  ]
+ },
+ "https://www.gov.uk/vat-charities": {
+  "phrases_expected": [
+   "VAT",
+   "charit"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/vat-charities",
+  "title": "VAT for charities: Overview - GOV.UK",
+  "phrases_found": [
+   "VAT",
+   "charit"
+  ]
+ },
+ "https://www.gov.uk/guidance/vat-reliefs-for-charities-notice-7011": {
+  "phrases_expected": [
+   "relief",
+   "advertis"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/guidance/vat-reliefs-for-charities-notice-7011",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/apply-for-business-rate-relief/charitable-rate-relief": {
+  "phrases_expected": [
+   "80%",
+   "relief"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/business-rates-relief/charitable-rate-relief",
+  "title": "Business rates relief: Charitable rate relief - GOV.UK",
+  "phrases_found": [
+   "80%",
+   "relief"
+  ]
+ },
+ "https://www.gov.uk/guidance/gift-aid-what-donations-charities-and-cascs-can-claim-on": {
+  "phrases_expected": [
+   "Gift Aid",
+   "benefit"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/gift-aid-what-donations-charities-and-cascs-can-claim-on",
+  "title": "Gift Aid donation claims for charities and CASCs - GOV.UK",
+  "phrases_found": [
+   "Gift Aid",
+   "benefit"
+  ]
+ },
+ "https://www.gov.uk/tax-relief-charity-donations": {
+  "phrases_expected": [
+   "higher rate",
+   "Gift Aid"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/tax-relief-charity-donations",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/government/publications/charities-detailed-guidance-notes/chapter-3-gift-aid": {
+  "phrases_expected": [
+   "Gift Aid",
+   "declaration"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/government/publications/charities-detailed-guidance-notes/chapter-3-gift-aid",
+  "title": "Chapter 3: Gift Aid - GOV.UK",
+  "phrases_found": [
+   "Gift Aid",
+   "declaration"
+  ]
+ },
+ "https://www.gov.uk/government/organisations/office-of-the-regulator-of-community-interest-companies": {
+  "phrases_expected": [
+   "community interest compan"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/government/organisations/office-of-the-regulator-of-community-interest-companies",
+  "title": "Office of the Regulator of Community Interest Companies - GOV.UK",
+  "phrases_found": [
+   "community interest compan"
+  ]
+ },
+ "https://www.gov.uk/government/publications/community-interest-companies-annual-reports": {
+  "phrases_expected": [
+   "CIC34",
+   "annual"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/government/publications/community-interest-companies-annual-reports",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/government/publications/community-interest-companies-chapter-6-the-asset-lock": {
+  "phrases_expected": [
+   "asset lock"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/government/publications/community-interest-companies-chapter-6-the-asset-lock",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/guidance/charity-types-how-to-choose-a-structure": {
+  "phrases_expected": [
+   "charitable incorporated organisation",
+   "structure"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/charity-types-how-to-choose-a-structure-cc22a",
+  "title": "Charity types: how to choose a structure (CC22a) - GOV.UK",
+  "phrases_found": [
+   "charitable incorporated organisation",
+   "structure"
+  ]
+ },
+ "https://www.charitysorp.org/": {
+  "phrases_expected": [
+   "SORP"
+  ],
+  "status": 200,
+  "final_url": "https://www.charitysorp.org/",
+  "title": "Home - SORP",
+  "phrases_found": [
+   "SORP"
+  ]
+ },
+ "https://www.gov.uk/government/news/critical-updates-to-charity-accounting-rules-published": {
+  "phrases_expected": [
+   "SORP"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/government/news/critical-updates-to-charity-accounting-rules-published",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.oscr.org.uk/guidance-and-forms/independent-examination-guidance/": {
+  "phrases_expected": [
+   "independent examination"
+  ],
+  "status": 404,
+  "final_url": "https://www.oscr.org.uk/guidance-and-forms/independent-examination-guidance/",
+  "title": "Page Not Found",
+  "phrases_found": []
+ },
+ "https://register-of-charities.charitycommission.gov.uk/en/register/full-register-download": {
+  "phrases_expected": [
+   "zip"
+  ],
+  "status": 200,
+  "final_url": "https://register-of-charities.charitycommission.gov.uk/en/register/full-register-download",
+  "title": "Full register download",
+  "phrases_found": [
+   "zip"
+  ]
+ },
+ "https://download.companieshouse.gov.uk/en_output.html": {
+  "phrases_expected": [
+   "download",
+   "company"
+  ],
+  "status": 200,
+  "final_url": "https://download.companieshouse.gov.uk/en_output.html",
+  "title": "Companies House",
+  "phrases_found": [
+   "download",
+   "company"
+  ]
+ },
+ "https://www.gov.uk/guidance/charity-fundraising-events-exemptions": {
+  "phrases_expected": [
+   "fundraising",
+   "exempt"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/guidance/charity-fundraising-events-exemptions",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/claim-employment-allowance": {
+  "phrases_expected": [
+   "Employment Allowance",
+   "10,500"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/claim-employment-allowance",
+  "title": "Employment Allowance: What you&#39;ll get - GOV.UK",
+  "phrases_found": [
+   "Employment Allowance",
+   "10,500"
+  ]
+ },
+ "https://www.gov.uk/government/publications/charities-detailed-guidance-notes/chapter-3-gift-aid#chapter-342-standard-method-of-operating-the-retail-gift-aid-process": {
+  "phrases_expected": [
+   "retail gift aid"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/government/publications/charities-detailed-guidance-notes/chapter-3-gift-aid#chapter-342-standard-method-of-operating-the-retail-gift-aid-process",
+  "title": "Chapter 3: Gift Aid - GOV.UK",
+  "phrases_found": [
+   "retail gift aid"
+  ]
+ },
+ "https://www.gov.uk/guidance/gift-aid-declarations-claiming-tax-back-on-donations": {
+  "phrases_expected": [
+   "declaration"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/gift-aid-declarations-claiming-tax-back-on-donations",
+  "title": "Gift Aid declarations: claiming tax back on donations - GOV.UK",
+  "phrases_found": [
+   "declaration"
+  ]
+ },
+ "https://www.gov.uk/guidance/charity-reporting-and-accounting-the-essentials-cc15": {
+  "phrases_expected": [
+   "independent examination",
+   "audit"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/guidance/charity-reporting-and-accounting-the-essentials-cc15",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/government/publications/charity-reporting-and-accounting-the-essentials-cc15b": {
+  "phrases_expected": [
+   "independent examination",
+   "audit"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/government/publications/charity-reporting-and-accounting-the-essentials-cc15b",
+  "title": "[Withdrawn] Charity reporting and accounting: the essentials (CC15b) - GOV.UK",
+  "phrases_found": [
+   "independent examination",
+   "audit"
+  ]
+ },
+ "https://www.gov.uk/government/collections/charity-reporting-and-accounting-guidance": {
+  "phrases_expected": [
+   "accounts"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/government/collections/charity-reporting-and-accounting-guidance",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/guidance/how-vat-affects-charities-notice-7011": {
+  "phrases_expected": [
+   "VAT",
+   "relief"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/how-vat-affects-charities-notice-7011",
+  "title": "How VAT affects charities (VAT Notice 701/1) - GOV.UK",
+  "phrases_found": [
+   "VAT",
+   "relief"
+  ]
+ },
+ "https://www.gov.uk/donating-to-charity/gift-aid": {
+  "phrases_expected": [
+   "Gift Aid",
+   "higher rate"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/donating-to-charity/gift-aid",
+  "title": "Tax relief when you donate to a charity: Gift Aid - GOV.UK",
+  "phrases_found": [
+   "Gift Aid",
+   "higher rate"
+  ]
+ },
+ "https://www.gov.uk/government/collections/community-interest-companies-guidance-chapters": {
+  "phrases_expected": [
+   "community interest"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/government/collections/community-interest-companies-guidance-chapters",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/government/publications/community-interest-companies-how-to-form-a-cic": {
+  "phrases_expected": [
+   "asset lock",
+   "community interest"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/government/publications/community-interest-companies-how-to-form-a-cic",
+  "title": "Community Interest Companies Guidance - GOV.UK",
+  "phrases_found": [
+   "asset lock",
+   "community interest"
+  ]
+ },
+ "https://www.oscr.org.uk/": {
+  "phrases_expected": [
+   "Scottish Charity Regulator"
+  ],
+  "status": 200,
+  "final_url": "https://www.oscr.org.uk/",
+  "title": "OSCR | Home",
+  "phrases_found": [
+   "Scottish Charity Regulator"
+  ]
+ },
+ "https://www.gov.uk/government/publications/charities-detailed-guidance-notes/annex-i-fundraising-events-exemption-for-charities-and-other-qualifying-bodies": {
+  "phrases_expected": [
+   "fundraising",
+   "exempt"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/government/publications/charities-detailed-guidance-notes/annex-i-fundraising-events-exemption-for-charities-and-other-qualifying-bodies",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/guidance/prepare-a-charity-independent-examiners-report": {
+  "phrases_expected": [
+   "independent examiner"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/guidance/prepare-a-charity-independent-examiners-report",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/guidance/audit-thresholds-for-charities-cc32": {
+  "phrases_expected": [
+   "audit"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/guidance/audit-thresholds-for-charities-cc32",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/guidance/charity-reporting-and-accounting-the-essentials": {
+  "phrases_expected": [
+   "independent examination",
+   "audit",
+   "1 million"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/guidance/charity-reporting-and-accounting-the-essentials",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/guidance/charity-reporting-and-accounting-the-essentials-cc15e": {
+  "phrases_expected": [
+   "independent examination",
+   "audit"
+  ],
+  "status": 404,
+  "final_url": "https://www.gov.uk/guidance/charity-reporting-and-accounting-the-essentials-cc15e",
+  "title": "Page not found - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-examiners-cc32": {
+  "phrases_expected": [
+   "independent examination",
+   "audit"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-examiners-cc32",
+  "title": "Independent examination of charity accounts: examiners (CC32) - GOV.UK",
+  "phrases_found": [
+   "independent examination"
+  ]
+ },
+ "https://www.gov.uk/government/publications/charities-detailed-guidance-notes": {
+  "phrases_expected": [
+   "fundraising",
+   "Gift Aid"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/government/publications/charities-detailed-guidance-notes",
+  "title": "Detailed tax guidance for charities - GOV.UK",
+  "phrases_found": [
+   "Gift Aid"
+  ]
+ },
+ "https://www.gov.uk/government/publications/charity-reporting-and-accounting-the-essentials-november-2016-cc15d": {
+  "phrases_expected": [
+   "independent examination",
+   "audit",
+   "1 million",
+   "25,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/government/publications/charity-reporting-and-accounting-the-essentials-november-2016-cc15d",
+  "title": "Charity reporting and accounting: the essentials November 2016 (CC15d) - GOV.UK",
+  "phrases_found": [
+   "independent examination",
+   "audit"
+  ]
+ },
+ "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027": {
+  "phrases_expected": [
+   "15%",
+   "5,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+  "title": "Rates and thresholds for employers 2026 to 2027 - GOV.UK",
+  "phrases_found": [
+   "15%",
+   "5,000"
+  ]
+ },
+ "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026": {
+  "phrases_expected": [
+   "15%",
+   "5,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026",
+  "title": "Rates and thresholds for employers 2025 to 2026 - GOV.UK",
+  "phrases_found": [
+   "15%",
+   "5,000"
+  ]
+ },
+ "https://www.gov.uk/find-charity-information": {
+  "phrases_expected": [
+   "charity"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/find-charity-information",
+  "title": "Search the charity register - GOV.UK",
+  "phrases_found": [
+   "charity"
+  ]
+ }
+}

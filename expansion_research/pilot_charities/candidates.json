@@ -1,0 +1,3105 @@
+{
+ "generated": "2026-07-11",
+ "n_queries": 32,
+ "survivors": {
+  "charityaccountants.co.uk": {
+   "hit_count": 14,
+   "queries": [
+    "CIC accountant",
+    "accountants for CIC",
+    "accountants for charities",
+    "charity accountant",
+    "charity accountants uk",
+    "charity accounts preparation service",
+    "charity annual return help",
+    "charity audit threshold",
+    "charity bookkeeping services uk",
+    "charity independent examination",
+    "independent examination of charity accounts cost",
+    "small charity accountant fees"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountant",
+     "pos": 4,
+     "title": "charityaccountants.co.uk/about-us",
+     "snippet": "Helping Small Charities Since 2009. We are specialist charity accountants dedicated to supporting small charities with expert financial management and compliance services."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for charities",
+     "pos": 7,
+     "title": "Charities We Support | Expert Accounting for UK Charitable...",
+     "snippet": "Qualified Accountants. ACCA, IFA & AAT Members. Charity Specialists. 100% Charity Focused. UK-Wide Service. Supporting Charities Nationwide. Expert accountants providing professional financial managem"
+    },
+    {
+     "src": "ddg",
+     "q": "charity accountants uk",
+     "pos": 1,
+     "title": "Charity Accountants - Expert Accountants for Small Charities | UK",
+     "snippet": "Professional accounting services for small charities across the UK. Expert support with annual accounts, independent examination, payroll, pensions, Gift Aid and Charity Commission compliance."
+    }
+   ]
+  },
+  "kgaccountantsblog.com": {
+   "hit_count": 11,
+   "queries": [
+    "CIC annual accounts service",
+    "CIC34 report help",
+    "CIO accounts preparation",
+    "gift aid advice for charities",
+    "gift aid claim accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "gift aid advice for charities",
+     "pos": 8,
+     "title": "How to Maximise Gift Aid and Donations for Your Charity (UK",
+     "snippet": "Gift Aid is a government scheme that allows charities to claim an extra 25p for every \u00a31 donated by eligible UK taxpayers."
+    },
+    {
+     "src": "ddg",
+     "q": "gift aid claim accountant",
+     "pos": 4,
+     "title": "How to Claim Gift Aid as a Charity \u2013 KG Accountants Blog",
+     "snippet": "August 18, 2024 - To claim GASDS, you will need to include details of your small donations in your Gift Aid claim. HMRC requires that you keep records of the small donations and ensure they are proper"
+    },
+    {
+     "src": "ddg",
+     "q": "CIC annual accounts service",
+     "pos": 3,
+     "title": "CIC Annual Report \u2013 KG Accountants Blog",
+     "snippet": "... reports, you need to: Once you\u2019ve got everything lined up , you can go to https://find-and-update.company-information.service.gov.uk/accounts/cic ..."
+    }
+   ]
+  },
+  "charityaccountant.co.uk": {
+   "hit_count": 8,
+   "queries": [
+    "accountants for churches uk",
+    "accountants for nonprofits uk",
+    "charity accounts preparation service",
+    "gift aid claim accountant",
+    "independent examination of charity accounts cost",
+    "small charity accountant fees",
+    "social enterprise accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for nonprofits uk",
+     "pos": 4,
+     "title": "Specialist accountants for charities | Charity Accountant",
+     "snippet": "As specialist accountants, we provide services to all types of charities, community interest companies and social enterprises. Our services include bookkeeping, independent examination, accounting and"
+    },
+    {
+     "src": "ddg",
+     "q": "social enterprise accountants uk",
+     "pos": 8,
+     "title": "Specialist accountants for charities | Charity Accountant",
+     "snippet": "As specialist accountants, we provide services to all types of charities, community interest companies and social enterprises. Our services include bookkeeping, independent examination, accounting and"
+    },
+    {
+     "src": "ddg",
+     "q": "independent examination of charity accounts cost",
+     "pos": 7,
+     "title": "Approved independent examiner | Charity Accountant",
+     "snippet": "Independent examinations and audit are important services we offer to small charities here at Charity Accountant. Audits are more thorough than Independent examinations. The level of assurance and scr"
+    }
+   ]
+  },
+  "charityaccountingpartners.co.uk": {
+   "hit_count": 8,
+   "queries": [
+    "SORP compliant accounts preparation",
+    "accountants for churches uk",
+    "accountants for nonprofits uk",
+    "charity SORP accountants",
+    "charity VAT advice",
+    "charity accounts preparation service",
+    "charity bookkeeping services uk",
+    "small charity accountant fees"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for nonprofits uk",
+     "pos": 7,
+     "title": "Charity Accountants UK | SORP-Compliant Specialists | CAP",
+     "snippet": "Specialist UK charity accountants, SORP-compliant bookkeeping, grant management, audit prep and virtual CFO support for charities of every size."
+    },
+    {
+     "src": "ddg",
+     "q": "charity bookkeeping services uk",
+     "pos": 6,
+     "title": "Charity Accountants UK | SORP-Compliant Specialists | CAP",
+     "snippet": "Specialist UK charity accountants, SORP-compliant bookkeeping, grant management, audit prep and virtual CFO support for charities of every size."
+    },
+    {
+     "src": "ddg",
+     "q": "charity SORP accountants",
+     "pos": 7,
+     "title": "Charity Accountants UK | SORP-Compliant Specialists | CAP",
+     "snippet": "Specialist UK charity accountants. ICAEW Chartered, KPMG-trained. SORP-compliant bookkeeping, grant management, audit preparation, virtual CFO and strategic ..."
+    }
+   ]
+  },
+  "oscr.org.uk": {
+   "hit_count": 5,
+   "queries": [
+    "charity accounts preparation service",
+    "charity trading subsidiary tax advice",
+    "independent examiner for charity"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "independent examiner for charity",
+     "pos": 1,
+     "title": "OSCR | 4. Who can act as an independent examiner",
+     "snippet": "The independent examination of receipts and payments accounts must be carried out by someone independent of the management and administration of the charity and whom the charity trustees believe has t"
+    },
+    {
+     "src": "ddg",
+     "q": "independent examiner for charity",
+     "pos": 5,
+     "title": "OSCR | 5. How to select and appoint an independent examiner",
+     "snippet": "Charities can now submit charity trustee information through OSCR Online. Click here for full instructions. ... Selecting the right independent examiner for your charity is an important part of your r"
+    },
+    {
+     "src": "ddg",
+     "q": "charity trading subsidiary tax advice",
+     "pos": 4,
+     "title": "OSCR | 1. Types of charity trading",
+     "snippet": "Trading usually involves the sale of goods or services for the purpose of making a profit. Trading can be carried out directly by the charity, if it has the power in its governing document. In some ca"
+    }
+   ]
+  },
+  "charityexcellence.co.uk": {
+   "hit_count": 5,
+   "queries": [
+    "CIO accounts preparation",
+    "charity annual return help",
+    "gift aid claim accountant",
+    "independent examination of charity accounts cost",
+    "independent examiner for charity"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "independent examiner for charity",
+     "pos": 10,
+     "title": "UK Charity Audit Thresholds & Requirements",
+     "snippet": "The Association of Charity Independent Examiners also have a list and here's a list of charity auditors. I have no commercial relationship with any of these organisations and, presumably, companies pa"
+    },
+    {
+     "src": "ddg",
+     "q": "independent examination of charity accounts cost",
+     "pos": 2,
+     "title": "UK Charity Audit Thresholds & Requirements",
+     "snippet": "The purpose of an independent examination is to provide some independent assurance that the charity\u2019s money has been properly accounted for and accounting records kept. What is an independent examinat"
+    },
+    {
+     "src": "ddg",
+     "q": "gift aid claim accountant",
+     "pos": 8,
+     "title": "HMRC Guidance and Gift Aid Rules for Charities",
+     "snippet": "The time limits for keeping Gift ... of the accounting period they relate to. However, for ongoing donations you'll need to keep the enduring Gift Aid declarations, no matter how old it is. HMRC recom"
+    }
+   ]
+  },
+  "treggenaltd.co.uk": {
+   "hit_count": 4,
+   "queries": [
+    "accountants for charities",
+    "accountants for nonprofits uk",
+    "charity accountant",
+    "charity accountants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountant",
+     "pos": 3,
+     "title": "Charity Accountants UK | Treggena Ltd",
+     "snippet": "Accountants For Charities: Accounting Services For Charities. At Treggena Ltd, we are dedicated to providing exceptional accounting services for charities across the UK."
+    },
+    {
+     "src": "ddg",
+     "q": "charity accountants",
+     "pos": 6,
+     "title": "Charity Accountants UK | Treggena Ltd",
+     "snippet": "Specialist accountants for UK charities & nonprofits. Treggena Ltd handles accounts, audits & compliance so you can focus on your mission."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for charities",
+     "pos": 8,
+     "title": "Charity Accountants UK | Treggena Ltd",
+     "snippet": "Specialist accountants for UK charities & nonprofits.Compliance with Charity Commission regulations is essential for maintaining the trust and integrity of your charity. Treggena Ltd ensures that your"
+    }
+   ]
+  },
+  "accountingpeople.co.uk": {
+   "hit_count": 4,
+   "queries": [
+    "accountants for nonprofits uk",
+    "charity accountant",
+    "charity accountants uk",
+    "social enterprise accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountant",
+     "pos": 6,
+     "title": "Specialist Accountants for Charities & Non-Profit Organisations UK",
+     "snippet": "Specialist charity accountants helping UK charities, CICs & non-profits stay compliant with HMRC rules. Fixed fees. Free consultation."
+    },
+    {
+     "src": "ddg",
+     "q": "charity accountants uk",
+     "pos": 9,
+     "title": "Specialist Accountants for Charities & Non-Profit",
+     "snippet": "... accountants and Xero-certified advisors with extensive experience supporting charities, social enterprises, and not-for-profit organisations across ..."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for nonprofits uk",
+     "pos": 6,
+     "title": "Specialist Accountants for Charities & Non-Profit Organisations UK",
+     "snippet": "We're a team of ACCA- qualified accountants and Xero-certified advisors with extensive experience supporting charities, social enterprises, and not-for-profit organisations across the UK. From small c"
+    }
+   ]
+  },
+  "financebox.co.uk": {
+   "hit_count": 4,
+   "queries": [
+    "accountants for churches uk",
+    "accountants for nonprofits uk",
+    "charity accounts preparation service",
+    "charity bookkeeping services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for nonprofits uk",
+     "pos": 3,
+     "title": "Accountants for Charities & Not-For-Profit | Finance Box",
+     "snippet": "Our charity accounting services Comprehensive accounting services designed specifically for charities and non-profit organisations. From day-to-day bookkeeping to annual compliance, we handle it all."
+    },
+    {
+     "src": "ddg",
+     "q": "charity bookkeeping services uk",
+     "pos": 5,
+     "title": "Bookkeeping for Charities - Finance Box",
+     "snippet": "At Finance Box, we understand that effective bookkeeping is essential for the success and sustainability of charitable organisations. Our specialised bookkeeping services for charities are designed to"
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for churches uk",
+     "pos": 1,
+     "title": "Church Accounting Services | Expert Accountants for Churches",
+     "snippet": "Specialist accountants for churches and faith-based organisations. Finance Box offers expert accounting, payroll, and compliance services tailored to your mission."
+    }
+   ]
+  },
+  "cicaccountants.co.uk": {
+   "hit_count": 4,
+   "queries": [
+    "CIC accountant",
+    "accountants for CIC",
+    "community interest company accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "CIC accountant",
+     "pos": 1,
+     "title": "CIC Accountants - Complete Accountancy Services",
+     "snippet": "Why choose CIC accountants? We help Community Interest Companies across the UK to thrive. Accountants for CICs Our accountants are more than just number crunchers. You'll get your own dedicated CIC ch"
+    },
+    {
+     "src": "ddg",
+     "q": "CIC accountant",
+     "pos": 4,
+     "title": "Welcom - CIC Accountants",
+     "snippet": "Why Choose CIC Accountants? We help Community Interest Companies across the UK to thrive. Dedicated CIC Accountants Our accountants are more than just number crunchers. You'll get your own dedicated C"
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for CIC",
+     "pos": 7,
+     "title": "CIC Accountants \u2013 Complete Accountancy Services",
+     "snippet": "CIC Accountants\u2122 is a web presence of Deridon Accountants. Our registered office is 7 Bell Yard, London, WC2A 2JR. We are registered to carry out a range of ..."
+    }
+   ]
+  },
+  "abmdigitalaccountants.com": {
+   "hit_count": 3,
+   "queries": [
+    "charity accountant",
+    "charity accountants",
+    "charity accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountant",
+     "pos": 7,
+     "title": "Charity Accountants London | Non-Profit Accounting Services UK",
+     "snippet": "ABM Chartered Accountants offers professional charity accounting and financial support, ensuring compliance, reporting, and growth for UK non\u2011profits."
+    },
+    {
+     "src": "ddg",
+     "q": "charity accountants",
+     "pos": 10,
+     "title": "Charity Accountants London | Non-Profit Accounting Services UK",
+     "snippet": "ABM Chartered Accountants offers professional charity accounting and financial support, ensuring compliance, reporting, and growth for UK non\u2011profits."
+    },
+    {
+     "src": "ddg",
+     "q": "charity accountants uk",
+     "pos": 4,
+     "title": "Charity Accountants London | Non-Profit Accounting Services UK",
+     "snippet": "... Charity\u2011Sector Experience: Look for charity accountants in London or across the UK who regularly work with charities or non\u2011profits, and ..."
+    }
+   ]
+  },
+  "livingstonesaccountants.co.uk": {
+   "hit_count": 3,
+   "queries": [
+    "accountants for churches uk",
+    "charity accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountant",
+     "pos": 9,
+     "title": "Charity Accountants - Livingstones Accountants",
+     "snippet": "At Livingstones Chartered Accountants, we specialise in providing bespoke accounting solutions for charities across the UK."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for churches uk",
+     "pos": 4,
+     "title": "Expert Church Accountants in the UK | Livingstones",
+     "snippet": "At Livingstones Accountants, we specialise in providing tailored accounting solutions for churches, ensuring compliance with UK financial regulations. Our expert team understands the unique needs of r"
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for churches uk",
+     "pos": 8,
+     "title": "Expert UK Accountants for Churches & Worship Places",
+     "snippet": "Why choose Livingstones Chartered Certified Accountants for your Churches/Places of Worship business Optimise your sacred finances with Livingstones Accountants, UK's trusted specialists in church acc"
+    }
+   ]
+  },
+  "accountantsforcharities.uk": {
+   "hit_count": 3,
+   "queries": [
+    "accountants for charities",
+    "accountants for nonprofits uk",
+    "charity accountants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountants",
+     "pos": 3,
+     "title": "Home - Accountants For Charities",
+     "snippet": "As leading UK-based accountants dedicated to the non-profit sector, we help charities navigate complex finances, ensure regulatory compliance, and maximise impact."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for charities",
+     "pos": 1,
+     "title": "Home - Accountants For Charities",
+     "snippet": "Specialist Accounting Services Tailored for UK Charities. As leading UK-based accountants dedicated to the non-profit sector, we help charities navigate complex finances, ensure regulatory compliance,"
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for nonprofits uk",
+     "pos": 1,
+     "title": "Home - Accountants For Charities",
+     "snippet": "As leading UK-based accountants dedicated to the non-profit sector, we help charities navigate complex finances, ensure regulatory compliance, and maximise impact. From grant management to tax-efficie"
+    }
+   ]
+  },
+  "uhy-uk.com": {
+   "hit_count": 3,
+   "queries": [
+    "accountants for nonprofits uk",
+    "charity audit services uk",
+    "gift aid claim accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for nonprofits uk",
+     "pos": 5,
+     "title": "Charity and Not for Profit Auditors & Accountants | UHY",
+     "snippet": "Comprehensive Charity and Not-for-Profit Sector Accountants and Auditors. Tailored services to help your charity or not-for-profit organisation."
+    },
+    {
+     "src": "ddg",
+     "q": "charity audit services uk",
+     "pos": 5,
+     "title": "Charity and Not for Profit Auditors & Accountants | UHY",
+     "snippet": "Our national charity and not-for-profit specialists are committed to providing a comprehensive range of audit and accounting services specifically tailored to meet the needs of charities and not-for-p"
+    },
+    {
+     "src": "ddg",
+     "q": "gift aid claim accountant",
+     "pos": 2,
+     "title": "Gift Aid Tax Relief | Charity & Not-for-profit Accountants | UHY",
+     "snippet": "Explore Tax Relief on Gift Aid Donations with the specialists at UHY chartered accountants. Find out how we can help you."
+    }
+   ]
+  },
+  "hallidaystyan.co.uk": {
+   "hit_count": 3,
+   "queries": [
+    "CIC accountant",
+    "accountants for nonprofits uk",
+    "charity independent examination"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for nonprofits uk",
+     "pos": 9,
+     "title": "Charity Accountants UK | Specialist Charity, CIC, and Not-for-profit ...",
+     "snippet": "Expert UK charity accountants providing SORP\u2011compliant accounts, independent examinations, CIC accounting, fund reporting, VAT support and outsourced finance services for charities, CICs and not\u2011for\u2011p"
+    },
+    {
+     "src": "ddg",
+     "q": "CIC accountant",
+     "pos": 10,
+     "title": "Charity Accountants UK | Specialist Charity, CIC, and Not-for-profit ...",
+     "snippet": "Expert UK charity accountants providing SORP\u2011compliant accounts, independent examinations, CIC accounting, fund reporting, VAT support and outsourced finance services for charities, CICs and not\u2011for\u2011p"
+    },
+    {
+     "src": "ddg",
+     "q": "charity independent examination",
+     "pos": 6,
+     "title": "Independent Examination vs Audit for Charities (2026 Update)",
+     "snippet": "Understand the difference between independent examination and audit for charities. This 2026 update explains Charity Commission rules, new audit and independent examination thresholds, Charities SORP "
+    }
+   ]
+  },
+  "accountingforgood.co.uk": {
+   "hit_count": 3,
+   "queries": [
+    "CIC accountant",
+    "accountants for CIC",
+    "community interest company accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "CIC accountant",
+     "pos": 3,
+     "title": "Accounting for Good CIC | Community interest company offers accountancy ...",
+     "snippet": "At Accounting for Good CIC, we help charities, CICs, social enterprises and community organisations build the financial confidence and resilience needed to thrive."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for CIC",
+     "pos": 1,
+     "title": "Accounting for Good CIC | Community interest company offers ...",
+     "snippet": "Accountancy, advisory, learning and wellbeing support for charities, Community Interest Companies (CICs), social enterprises and other mission-led ..."
+    },
+    {
+     "src": "ddg",
+     "q": "community interest company accountant",
+     "pos": 1,
+     "title": "Accounting for Good CIC | Community interest company offers ...",
+     "snippet": "Accountancy, advisory, learning and wellbeing support for charities, Community Interest Companies (CICs), social enterprises and other mission-led ..."
+    }
+   ]
+  },
+  "kgaccountants.co.uk": {
+   "hit_count": 3,
+   "queries": [
+    "CIC34 report help",
+    "accountants for CIC",
+    "community interest company accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for CIC",
+     "pos": 3,
+     "title": "community interest companies CIC | KG Accountants",
+     "snippet": "KG Accountants are one of the leading Community interest accountants in the uk and have excellent in-depth knowledge and expertise in dealing with CIC accounts."
+    },
+    {
+     "src": "ddg",
+     "q": "community interest company accountant",
+     "pos": 2,
+     "title": "CIC South East London - KG Accountants",
+     "snippet": "Limited by Guarantee Formations; Charity by Guarantee Formations; Confirmation Statements and Accounts and Other Formation types. Community interest Company ..."
+    },
+    {
+     "src": "ddg",
+     "q": "CIC34 report help",
+     "pos": 2,
+     "title": "CIC34: Community Interest Company Report",
+     "snippet": "Not sure how to handle the CIC34, or where to look for help? This is your guide to the CIC34: community interest company report."
+    }
+   ]
+  },
+  "iel.org.uk": {
+   "hit_count": 3,
+   "queries": [
+    "charity independent examination",
+    "independent examiner for charity"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity independent examination",
+     "pos": 8,
+     "title": "Independent Examination for Charities | Independent Examiners Ltd",
+     "snippet": "Independent Examiners Ltd have provided independent examination of charity accounts since 1996. UK specialists, fixed fees, all charity types. Find out if you need an independent examination."
+    },
+    {
+     "src": "ddg",
+     "q": "charity independent examination",
+     "pos": 9,
+     "title": "Independent Examination & Charity Accounts | Independent Examiners Ltd",
+     "snippet": "The UK's longest serving independent examiners & charity accountants. We work exclusively with charities, providing year-end accounts preparation and independent examination with genuine sector expert"
+    },
+    {
+     "src": "ddg",
+     "q": "independent examiner for charity",
+     "pos": 8,
+     "title": "Independent Examiners Ltd | Charity Specialist Accountants",
+     "snippet": "\u271330 years as independent examiners, longest-serving in the UK \u00b7 \u2713We work exclusively with charities, at every income level \u00b7 \u2713Based in Chichester, working nationally online, phone and email \u00b7 \u2713Transpa"
+    }
+   ]
+  },
+  "parishresources.org.uk": {
+   "hit_count": 3,
+   "queries": [
+    "charity annual return help",
+    "church accounts independent examination"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity annual return help",
+     "pos": 6,
+     "title": "Submitting-Annual-Accounts-and-Returns.pdf",
+     "snippet": "Annual Return by telephoning the Commission on 0845 300 0218. You\u2019ll need to \u00b7 complete it by hand and send it with a copy of your Annual Report and Accounts \u00b7 to: Charity Commission Direct, PO Box 12"
+    },
+    {
+     "src": "ddg",
+     "q": "church accounts independent examination",
+     "pos": 1,
+     "title": "Independent Examination - Parish ResourcesParish Resources",
+     "snippet": "Links to guidance and templates for the annual independent examination or audit of PCC accounts as per The Church Representation Rules."
+    },
+    {
+     "src": "ddg",
+     "q": "church accounts independent examination",
+     "pos": 10,
+     "title": "PDF Microsoft Word - Final IE.doc - Parish Resources",
+     "snippet": "This is your independent examination. The person who checks your accounts in this way is the Independent Examiner (IE) and is appointed by the Annual Parochial Church meeting (APCM). However the appoi"
+    }
+   ]
+  },
+  "dsburge.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "charity accountant",
+    "charity accountants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountant",
+     "pos": 1,
+     "title": "Charity Accountants | DS Burge & Co",
+     "snippet": "Our team of charity accountants help charities of all sizes to remain compliant and financially secure whilst confidently navigating legislative changes."
+    },
+    {
+     "src": "ddg",
+     "q": "charity accountants",
+     "pos": 8,
+     "title": "Charity Accountants | DS Burge & Co",
+     "snippet": "Our team of charity accountants help charities of all sizes to remain compliant and financially secure whilst confidently navigating legislative changes."
+    }
+   ]
+  },
+  "accountantsforgood.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "charity accountant",
+    "charity accountants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountant",
+     "pos": 2,
+     "title": "Charity \u2013 Accountants For Good",
+     "snippet": "Specialist Charity Accountants Who Understand Your Mission. Book a call. Schedule a Meeting. Why Accountants for Good Stands Out. We Live and Breathe Charity Accounting."
+    },
+    {
+     "src": "ddg",
+     "q": "charity accountants",
+     "pos": 1,
+     "title": "Charity \u2013 Accountants For Good",
+     "snippet": "Specialist Charity Accountants Who Understand Your Mission. Book a call. Schedule a Meeting. Why Accountants for Good Stands Out. We Live and Breathe Charity Accounting."
+    }
+   ]
+  },
+  "towerstone.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "charity accountant",
+    "charity trading subsidiary tax advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountant",
+     "pos": 5,
+     "title": "Charity Accountants | Towerstone",
+     "snippet": "Accountants for Charities. Looking for accountants in Sunderland? Towerstone Accountants offers tax, bookkeeping and business support with zero jargon and real results."
+    },
+    {
+     "src": "ddg",
+     "q": "charity trading subsidiary tax advice",
+     "pos": 6,
+     "title": "Do Charities Pay Corporation Tax? | UK Guide",
+     "snippet": "Seek advice when setting up a trading subsidiary. Maintain proper records and submit returns when requested. Final Thoughts. Most charities do not pay Corporation Tax but this is only true when their "
+    }
+   ]
+  },
+  "naseems.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "charity accountants",
+    "not for profit accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountants",
+     "pos": 2,
+     "title": "Accountants for Charities UK | Charity & Non-Profit Accountants",
+     "snippet": "Expert accountants for charities in the UK.Why Choose Naseems Accountants. Specialist experience in charity and non-profit accounting. Clear, practical advice with no jargon."
+    },
+    {
+     "src": "ddg",
+     "q": "not for profit accountants uk",
+     "pos": 5,
+     "title": "Accountants for Charities UK | Charity & Non-Profit Accountants",
+     "snippet": "Expert accountants for charities in the UK. We provide specialist accounting services for non-profit organisations. Free consultation available."
+    }
+   ]
+  },
+  "tax-wise.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for charities",
+    "charity accountants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountants",
+     "pos": 4,
+     "title": "Charity Accountants | Independent Examination & Accounts",
+     "snippet": "Specialist Charity Accountants. We help CIOs, trusts & small charities with independent examinations, annual returns, accounts and compliance advice."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for charities",
+     "pos": 4,
+     "title": "Charity Accountants | Independent Examination & Accounts",
+     "snippet": "Specialist Charity Accountants. We help CIOs, trusts & small charities with independent examinations, annual returns, accounts and compliance advice."
+    }
+   ]
+  },
+  "hawsons.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "charity accountants",
+    "not for profit accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountants",
+     "pos": 5,
+     "title": "Experienced Charity & Not-for-profit Accountants & Auditors",
+     "snippet": "Hawsons charity accountants are a specialist team with a wealth of charity and not for profit organisation SORP experience.In the UK, HLB participant firms have a strong..."
+    },
+    {
+     "src": "ddg",
+     "q": "not for profit accountants uk",
+     "pos": 4,
+     "title": "Experienced Charity & Not-for-profit Accountants & Auditors",
+     "snippet": "Hawsons charity accountants are a specialist team with a wealth of charity and not for profit organisation SORP experience."
+    }
+   ]
+  },
+  "rousepartners.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for charities",
+    "charity accountants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountants",
+     "pos": 7,
+     "title": "Charity accountants | Rouse Accountants",
+     "snippet": "Looking for charity accountants? We offer specialist advice, tax, audit and accountancy services for charities in London and the South East.We\u2019re accountants for charities."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for charities",
+     "pos": 3,
+     "title": "Charity accountants | Rouse Accountants",
+     "snippet": "Looking for charity accountants?We\u2019re accountants for charities. We\u2019re a forward thinking team, large enough to offer a wealth of experience and specialisms, yet small enough to retain an approachable"
+    }
+   ]
+  },
+  "streets.uk": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for charities",
+    "charity accountants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountants",
+     "pos": 9,
+     "title": "Charity Accountants; Audit & Tax for Charities and Not-for-Profits",
+     "snippet": "Specialist charity accountants and advisers for charities, CICs and social enterprises. Trusted audit, tax, and governance services."
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for charities",
+     "pos": 6,
+     "title": "Charity Accountants; Audit & Tax for Charities and Not-for-Profits",
+     "snippet": "Charities & Third Sector. Specialist charity accountants and advisers for charities, CICs and social enterprises.How much does it cost to hire an accountant in the UK? Fees vary depending on the size "
+    }
+   ]
+  },
+  "accountspro.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for charities",
+    "not for profit accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for charities",
+     "pos": 2,
+     "title": "Accountants for Charities in London : Charity Accountants in...",
+     "snippet": "Whether you are a small local charity or a larger nonprofit operating nationwide, our specialist charity accountants in London can help streamline your finances and ensure full compliance with UK regu"
+    },
+    {
+     "src": "ddg",
+     "q": "not for profit accountants uk",
+     "pos": 6,
+     "title": "Accountants for Charities in London : Charity Accountants in London...",
+     "snippet": "AccountsPro - Charity Accountants, supporting charities, foundations and not-for-profit organisations AccountsPro.AccountsPro - Not-for-profit accountants. Frequently Asked Questions. 1. What services"
+    }
+   ]
+  },
+  "fundraising.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "charity accountants uk",
+    "gift aid advice for charities"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountants uk",
+     "pos": 5,
+     "title": "Charity Accountants - UK Fundraising",
+     "snippet": "Choosing the right accountant for your charity is not always a straightforward process. ... In any respect there are many charity accountants around ..."
+    },
+    {
+     "src": "ddg",
+     "q": "gift aid advice for charities",
+     "pos": 10,
+     "title": "Charities call on Government to temporarily increase Gift Aid -",
+     "snippet": "This would mean that a \u00a3100 donation from a UK taxpayer would increase to \u00a3133.33 for the charity once Gift Aid had been claimed."
+    }
+   ]
+  },
+  "jacksonandjackson.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "charity accountants uk",
+    "charity payroll services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountants uk",
+     "pos": 8,
+     "title": "Accountants for Charities in London : Charity Accountants in",
+     "snippet": "Would you like an accountant who specialises in Charities and the Voluntary and Community Sector? ... is a firm of Chartered Certified Accountants ..."
+    },
+    {
+     "src": "ddg",
+     "q": "charity payroll services",
+     "pos": 5,
+     "title": "Charity Payroll in London : NFP Payroll in London : Jackson &",
+     "snippet": "... payroll can be complicated and ... Confidentiality as regards staff pay levels means that charities and NFPs are asking us to run their payroll."
+    }
+   ]
+  },
+  "odiritaxconsultants.com": {
+   "hit_count": 2,
+   "queries": [
+    "SORP compliant accounts preparation",
+    "not for profit accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "not for profit accountants uk",
+     "pos": 7,
+     "title": "Charity Accountants UK | SORP-Compliant & Gift Aid Experts \u2013 Odiri",
+     "snippet": "Charity & Not-for -profit Accountant. A person holding onto some paper with charity written on it. Specialist Accountancy Services for Charities, Not-for-Profits & Social Enterprises. Helping You Stay"
+    },
+    {
+     "src": "ddg",
+     "q": "SORP compliant accounts preparation",
+     "pos": 9,
+     "title": "Charity Accountants UK | SORP-Compliant & Gift Aid Experts \u2013 Odiri",
+     "snippet": "Charity Accounts Preparation & SORP Compliance. We prepare fully compliant annual accounts tailored to your organisation\u2019s size and structure \u2014 including detailed fund accounting in line with the Char"
+    }
+   ]
+  },
+  "yorkshireaccountancy.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for CIC",
+    "community interest company accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for CIC",
+     "pos": 2,
+     "title": "CIC Accounting Services | Yorkshire Accountancy",
+     "snippet": "Yorkshire Accountancy offers expert CIC accounting services, taxation advice, and formation support for Community Interest Companies."
+    },
+    {
+     "src": "ddg",
+     "q": "community interest company accountant",
+     "pos": 8,
+     "title": "CIC Accounting Services | Yorkshire Accountancy",
+     "snippet": "A Community Interest Company (CIC) is a type of social enterprise in the UK, designed to provide benefits to the community while still operating as a business."
+    }
+   ]
+  },
+  "misss.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for CIC",
+    "community interest company accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for CIC",
+     "pos": 4,
+     "title": "Miss S Accounting for Purpose CIC | CICs, Charities, Creatives",
+     "snippet": "Miss S - Accountants for Charities and Not for Profit Organisations in Hampshire - Accounting for Purpose Community Interest Company - Helping People Help ..."
+    },
+    {
+     "src": "ddg",
+     "q": "community interest company accountant",
+     "pos": 9,
+     "title": "Miss S Accounting for Purpose CIC | CICs, Charities, Creatives",
+     "snippet": "Miss S - Accountants for Charities and Not for Profit Organisations in Hampshire - Accounting for Purpose Community Interest Company - Helping People Help ..."
+    }
+   ]
+  },
+  "socialenterpriseaccountscic.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for CIC",
+    "social enterprise accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for CIC",
+     "pos": 5,
+     "title": "social enterprise accounts cic",
+     "snippet": "Social Enterprise Accounts CIC is a small Plymouth based firm specialising in providing accountancy services and advice to small Community Interest ..."
+    },
+    {
+     "src": "ddg",
+     "q": "social enterprise accountants uk",
+     "pos": 10,
+     "title": "social enterprise accounts cic",
+     "snippet": "Social Enterprise Accounts CIC is a small Plymouth based firm specialising in providing accountancy services and advice to small Community Interest ..."
+    }
+   ]
+  },
+  "ourgateshead.org": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for CIC",
+    "community interest company accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for CIC",
+     "pos": 8,
+     "title": "Accounting for Good CIC | OurGateshead",
+     "snippet": "Accounting for Good CIC is a pioneering community interest company and social enterprise dedicated to empowering entrepreneurs."
+    },
+    {
+     "src": "ddg",
+     "q": "community interest company accountant",
+     "pos": 10,
+     "title": "Accounting for Good CIC | OurGateshead",
+     "snippet": "Accounting for Good CIC is a pioneering community interest company and social enterprise dedicated to empowering entrepreneurs."
+    }
+   ]
+  },
+  "harrisaccountancy.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "CIC annual accounts service",
+    "social enterprise accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "social enterprise accountants uk",
+     "pos": 2,
+     "title": "Social Enterprise - Harris Accountancy Ltd",
+     "snippet": "As CIC accountants we now work with social enterprises across the UK with all types of legal structures, including companies limited by guarantee, charitable companies, charities, Charitable Incorpora"
+    },
+    {
+     "src": "ddg",
+     "q": "CIC annual accounts service",
+     "pos": 10,
+     "title": "Community Interest Companies \u2013 Harris Accountancy Ltd",
+     "snippet": "Annual accounts preparation and support to complete your CIC34 Report for Companies House. ... Harris Accountancy Services Limited are CIC ..."
+    }
+   ]
+  },
+  "uanuk.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "charity bookkeeping services uk",
+    "charity payroll services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity bookkeeping services uk",
+     "pos": 10,
+     "title": "Charity Registration - Charity Bookkeeping - Charity payroll",
+     "snippet": "... individual or an organization, our 24-hour service ensures a smooth charity registration and helps you obtain your official charity number in the UK ..."
+    },
+    {
+     "src": "ddg",
+     "q": "charity payroll services",
+     "pos": 3,
+     "title": "Why Charity Payroll Services Are Essential for Nonprofits in",
+     "snippet": "In this blog, we \u2019 ll explore why Charity Payroll Services are not just useful, but essential for nonprofits in the UK."
+    }
+   ]
+  },
+  "acie.org.uk": {
+   "hit_count": 2,
+   "queries": [
+    "charity independent examination",
+    "independent examiner for charity"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity independent examination",
+     "pos": 5,
+     "title": "Association of Charity Independent Examiners",
+     "snippet": "The Association of Charity Independent Examiners is focused on raising the standards of Independent Examination through training and advice. ACIE supports Independent Examiners and small charities by "
+    },
+    {
+     "src": "ddg",
+     "q": "independent examiner for charity",
+     "pos": 3,
+     "title": "Association of Charity Independent Examiners",
+     "snippet": "\u00a9 Association of Charity Independent Examiners \u00b7 (A Charitable Incorporated Organisation) Registered in England at 1st Floor, Block C, The Wharf, Manchester Road Burnley BB11 1JG \u00b7 Registered Charity "
+    }
+   ]
+  },
+  "accountingweb.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "CIO accounts preparation",
+    "independent examination of charity accounts cost"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "independent examination of charity accounts cost",
+     "pos": 3,
+     "title": "Fee for Independent Examiner work | AccountingWEB",
+     "snippet": "March 17, 2023 - Do they require preparation of the SORP format accounts as part of the work? Thanks (0) ... I do a number of independent examinations. For the small receipts and payments ones fees va"
+    },
+    {
+     "src": "ddg",
+     "q": "CIO accounts preparation",
+     "pos": 8,
+     "title": "CIOs for accountants: What you need to know | AccountingWEB",
+     "snippet": "April 29, 2016 - The regime for electronic communications with members is also less rigid than the regime that applies to charitable companies. And smaller CIOs can prepare receipts and payments accou"
+    }
+   ]
+  },
+  "auditgroup.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "charity audit services uk",
+    "charity audit threshold"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity audit threshold",
+     "pos": 1,
+     "title": "Charity Audit Thresholds in England and Wales (2026)",
+     "snippet": "What is the audit threshold for a charity? In England and Wales, gross income above \u00a31m, or income above \u00a3250,000 combined with assets above \u00a33.26m, triggers a statutory audit. Below those figures the"
+    },
+    {
+     "src": "ddg",
+     "q": "charity audit services uk",
+     "pos": 4,
+     "title": "Charity Audit Services | ICAEW Registered Auditors",
+     "snippet": "Specialist charity audit and independent examination services from ICAEW-regulated auditors. We work with charities of all sizes across the UK."
+    }
+   ]
+  },
+  "aab.uk": {
+   "hit_count": 2,
+   "queries": [
+    "charity audit services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity audit services uk",
+     "pos": 3,
+     "title": "Charity Audits | AAB",
+     "snippet": "Charity Audits Charities are under growing pressure - with reduced funding and increased community demand forcing many non-profit organisations to rethink their approach. Our expert charity audits are"
+    },
+    {
+     "src": "ddg",
+     "q": "charity audit services uk",
+     "pos": 9,
+     "title": "Audit, Advisory, Accounting & Tax for Not-For-Profit | AAB",
+     "snippet": "Specialised audit, advisory, tax & charity accounting services for not-for-profit organisations. Partner with AAB for tailored solutions. Our charity auditors are based in London and beyond, with offi"
+    }
+   ]
+  },
+  "saffery.com": {
+   "hit_count": 2,
+   "queries": [
+    "charity audit services uk",
+    "charity trading subsidiary tax advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity audit services uk",
+     "pos": 10,
+     "title": "Charities and not-for-profits - Saffery",
+     "snippet": "Charities and not-for-profits Our not-for-profit group, led by Cara Turtington, advises over 400 charities and other not-for-profit entities in the UK on tax, VAT and accounting issues, and provides a"
+    },
+    {
+     "src": "ddg",
+     "q": "charity trading subsidiary tax advice",
+     "pos": 2,
+     "title": "Charity Trading Subsidiary - Top Tips for Charities | Saffery",
+     "snippet": "Routing commercial activities through trading subsidiaries can help charities to generate extra money more tax efficiently. We highlight some top tips to help you use trading subsidiaries more effecti"
+    }
+   ]
+  },
+  "charitycommissionni.org.uk": {
+   "hit_count": 2,
+   "queries": [
+    "charity SORP accountants",
+    "charity annual return help"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity SORP accountants",
+     "pos": 3,
+     "title": "Charities SORP update | CCNI",
+     "snippet": "In finalising the new accounting framework, the charity regulators across England and Wales, Scotland and Northern Ireland (who together make up the SORP ..."
+    },
+    {
+     "src": "ddg",
+     "q": "charity annual return help",
+     "pos": 8,
+     "title": "Help completing your charity\u2019s annual return | The Charity Commission for Northern Ireland",
+     "snippet": "You can submit your charity\u2019s ... reports, or understanding your annual reporting requirements, please contact us on 028 3832 0220 or by email to monitoring@charitycommissionni.org.uk and we will prov"
+    }
+   ]
+  },
+  "frc.org.uk": {
+   "hit_count": 2,
+   "queries": [
+    "SORP compliant accounts preparation",
+    "charity SORP accountants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity SORP accountants",
+     "pos": 8,
+     "title": "Statements of Recommended Practice (SORPs)",
+     "snippet": "28 Nov 2024 ... SORPs are sector-driven recommendations on financial reporting, auditing practices and actuarial practices for specialised industries, ..."
+    },
+    {
+     "src": "ddg",
+     "q": "SORP compliant accounts preparation",
+     "pos": 5,
+     "title": "Statements of Recommended Practice (SORPs)The Charities Statement of Recommended Practice (SORP) - GOV.UKCHARITIES SORP (FRS 102) - charitysorp.orgCharity Accounting in the UK: A Complete Guide to SORP ...Changes to charity accounting and reporting - GOV.UK",
+     "snippet": "Charity Commission for Northern Ireland SORP Charities SORP 2026 (October 2025) Accounting and Reporting by Charities: Statement of Recommended Practice applicable to charities preparing their account"
+    }
+   ]
+  },
+  "bing.com": {
+   "hit_count": 2,
+   "queries": [
+    "SORP compliant accounts preparation",
+    "charity VAT advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "SORP compliant accounts preparation",
+     "pos": 2,
+     "title": "SORP compliant accounting - Charity accounting made easy",
+     "snippet": "Manage charity finances with ease using proven, trusted solutions. Enquire today. Deploy quickly, simplify SORP and gift aid reports. Better accounting for non-profits. Subscribe To Newsletter \u00b7 One C"
+    },
+    {
+     "src": "ddg",
+     "q": "charity VAT advice",
+     "pos": 7,
+     "title": "TaxAssist Accountants - Tax Advice - Choose TaxAssist",
+     "snippet": "Specialist tax advice for landlords & second property owners. Book a free consultation. Expert accountants to take care of your business' accounting, tax, VAT and payroll needs. Supporting Small Busin"
+    }
+   ]
+  },
+  "charitysorp.org": {
+   "hit_count": 2,
+   "queries": [
+    "SORP compliant accounts preparation"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "SORP compliant accounts preparation",
+     "pos": 3,
+     "title": "CHARITIES SORP 2026",
+     "snippet": "Jan 1, 2026 \u00b7 This SORP provides guidance for charities on how to apply FRS 102 The Financial Reporting Standard applicable in the UK and Republic of Ireland (\u2018FRS 102\u2019). It is important for preparers"
+    },
+    {
+     "src": "ddg",
+     "q": "SORP compliant accounts preparation",
+     "pos": 7,
+     "title": "CHARITIES SORP (FRS 102) - charitysorp.org",
+     "snippet": "This SORP provides guidance for charities on how to apply the Financial Reporting Standard applicable in the UK and Republic of Ireland (referred to as FRS 102 in this SORP). It is important for prepa"
+    }
+   ]
+  },
+  "vatadvice.org": {
+   "hit_count": 2,
+   "queries": [
+    "charity VAT advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity VAT advice",
+     "pos": 4,
+     "title": "VAT Advice | Consultants for Charities, NFPs & Small Businesses",
+     "snippet": "Specialist VAT consultants & advisors here to help Not For Profits, Charities, Religious Group & Businesses. Contact vatadvice.org for expert tax & VAT support today."
+    },
+    {
+     "src": "ddg",
+     "q": "charity VAT advice",
+     "pos": 8,
+     "title": "Charity & NFP Advice & Support | Our Sectors | VAT Advice",
+     "snippet": "For Not For Profits & charities, it is important to ensure that costly tax mistakes don\u2019t hinder your objectives. Navigate VAT rules & exemption with expert support."
+    }
+   ]
+  },
+  "bcacic.uk": {
+   "hit_count": 2,
+   "queries": [
+    "CIC annual accounts service"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "CIC annual accounts service",
+     "pos": 1,
+     "title": "Accounts - Bristol Community Accountants CIC",
+     "snippet": "We offer an affordable accounts service that includes preparation of annual accounts, Independent Examination of accounts for charities as required ..."
+    },
+    {
+     "src": "ddg",
+     "q": "CIC annual accounts service",
+     "pos": 2,
+     "title": "Bristol Community Accountants CIC",
+     "snippet": "We offer an affordable accounts service that includes preparation of annual accounts, Independent Examination of accounts as required by the ..."
+    }
+   ]
+  },
+  "finspireaccounting.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "accountants for churches uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for churches uk",
+     "pos": 2,
+     "title": "Shipley Accountants For Churches & Places Of Worship",
+     "snippet": "What makes an accountant experienced with churches and places of worship in Shipley so valuable? An accountant who understands churches and faith organisations will spot the tiny details - Gift Aid cl"
+    },
+    {
+     "src": "ddg",
+     "q": "accountants for churches uk",
+     "pos": 5,
+     "title": "Achurch Accountants For Churches & Places Of Worship",
+     "snippet": "What makes an accountant experienced with churches and places of worship in Achurch so valuable? An accountant who understands churches and faith organisations will spot the tiny details - Gift Aid cl"
+    }
+   ]
+  },
+  "baptist.org.uk": {
+   "hit_count": 2,
+   "queries": [
+    "church accounts independent examination"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "church accounts independent examination",
+     "pos": 5,
+     "title": "Leaflet F04: Independent Examination of Church Accounts",
+     "snippet": "Guidance regarding independent Examination of Church Accounts, including Recommended Terms of Appointment for Independent Examiner"
+    },
+    {
+     "src": "ddg",
+     "q": "church accounts independent examination",
+     "pos": 7,
+     "title": "Leaflet F04: Independent Examination of Church Accounts",
+     "snippet": "An independent examination is an external review of a charity's accounts and is carried out by an independent person with the requisite ability and practical experience to carry out a competent examin"
+    }
+   ]
+  },
+  "business-accounting.co.uk": {
+   "hit_count": 2,
+   "queries": [
+    "small charity accountant fees"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "small charity accountant fees",
+     "pos": 1,
+     "title": "Accountant Cost for Charities | UK Pricing Guide 2025",
+     "snippet": "Accountant cost for charities in the UK. Expert guide to charity accounting fees, from annual returns to SORP compliance. Get transparent pricing for 2025."
+    },
+    {
+     "src": "ddg",
+     "q": "small charity accountant fees",
+     "pos": 2,
+     "title": "Non-Profit Accountant Cost | UK Pricing Guide 2025",
+     "snippet": "How much does an accountant cost for non-profits? Expert guide to UK accounting fees for charities and non-profit organisations. Get transparent pricing."
+    }
+   ]
+  },
+  "ckaccountant.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountant",
+     "pos": 10,
+     "title": "Charity Accountants \u2013 C&K Accountant",
+     "snippet": "With seven branches across London and Enfield, C & K Accountant LTD in the UK has extensive experience and expertise in accounting for non-profit organisations and charities."
+    }
+   ]
+  },
+  "evirtualaccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for charities"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for charities",
+     "pos": 5,
+     "title": "Expert Accounting for Charities in the UK | Excel Accounting",
+     "snippet": "Excel Accounting and Taxation\u2019s bespoke solutions for charity accounts in the UK.Our dedicated team of charity accountants is equipped with the expertise to navigate the complexities of charity accoun"
+    }
+   ]
+  },
+  "cheap-accountants-in-london.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for charities"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for charities",
+     "pos": 9,
+     "title": "Cheap Accountants for Charities - CAIL",
+     "snippet": "Cheap Accountants for Charities. Managing the finances of a charity can be overwhelming, particularly if you\u2019re not fully familiar with UK tax regulations and compliance requirements."
+    }
+   ]
+  },
+  "rwbca.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for charities"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for charities",
+     "pos": 10,
+     "title": "Charities Accountants | Boost Your Impact \u2014 RWB",
+     "snippet": "Get in touch. Specialist Accountants for Charities.What are the key accounting requirements for UK charities? Charities in the UK must comply with the Charities Act 2011 and adhere to the Charities St"
+    }
+   ]
+  },
+  "deansca.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountants uk",
+     "pos": 6,
+     "title": "Expert Charities Accountants in the UK | Unlock Your",
+     "snippet": "We also undertake trustee responsibilities in some instances, and advise trustees in others, ensuring charity accounts are properly prepared."
+    }
+   ]
+  },
+  "danielwolfson.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountants uk",
+     "pos": 7,
+     "title": "Accountants for Charity | Accountants for Non Profits in UK",
+     "snippet": "... team understands the unique requirements of not-for-profit accounting in the UK and supports commercial businesses seeking meaningful charity ..."
+    }
+   ]
+  },
+  "pricebailey.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accountants uk",
+     "pos": 10,
+     "title": "Specialist Charity and Not for profit auditors and advisors",
+     "snippet": "Our sector specialist charity auditors & advisors provide personalised advice & services helping not for profit charities, trade and membership organisations."
+    }
+   ]
+  },
+  "hitingsllp.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "not for profit accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "not for profit accountants uk",
+     "pos": 1,
+     "title": "Not for profit accountants > Whitings LLP : Whitings LLP",
+     "snippet": "Road Haulage. Technology. UK Subsidiaries.Not for Profits require specialist advisors who understand how they are governed, how they operate, and the unique aspects of various Not for Profit (NFP) acc"
+    }
+   ]
+  },
+  "nfpaccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "not for profit accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "not for profit accountants uk",
+     "pos": 2,
+     "title": "Charity Accountants in London | London Not for Profit Accountants",
+     "snippet": "NfP Accountants Ltd is a firm of charity accountants in London. The firm specialises in integrated financial management for small charities and social enterprises in the Greater London area."
+    }
+   ]
+  },
+  "mha.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "not for profit accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "not for profit accountants uk",
+     "pos": 3,
+     "title": "MHA | Charity Auditors | Not For Profit Accountants",
+     "snippet": "Get in touch with our Not for Profit team. We specialise in serving as charity accountants and auditors, guiding organisations through complex accounting challenges in the non-profit sector."
+    }
+   ]
+  },
+  "allenbyaccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "not for profit accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "not for profit accountants uk",
+     "pos": 8,
+     "title": "Not for Profit Accountants London | Accountants For Charities...",
+     "snippet": "Support your Not-for-profit organisation with bookkeeping, accounting, payroll, and other services by Allenby Accountants."
+    }
+   ]
+  },
+  "arnerwilde.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "not for profit accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "not for profit accountants uk",
+     "pos": 9,
+     "title": "Warner Wilde Limited - charity and not for profit accountancy and...",
+     "snippet": "...the UK to be awarded the Chartered Accountants\u2019 Post Graduate Diploma in Charity Accounting and has also completed a Masters in Business Administration and Post Graduate Diploma in Civil Society Fi"
+    }
+   ]
+  },
+  "baxterco.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "not for profit accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "not for profit accountants uk",
+     "pos": 10,
+     "title": "Accountants for academies, schools and charities | Baxter & Co.",
+     "snippet": "Contact us at Baxter & Co for accounting services bespoked for non profit organisations including Academies, Schools and Charities."
+    }
+   ]
+  },
+  "accountantsforcharities.org.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for nonprofits uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for nonprofits uk",
+     "pos": 2,
+     "title": "Accountants for Charities - Charity Accountants for Charities Non ...",
+     "snippet": "Reliable charity accountants helping charities and non profit organisations manage accounts, tax, and reporting with expert accountants for charities."
+    }
+   ]
+  },
+  "krestonreeves.com": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for nonprofits uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for nonprofits uk",
+     "pos": 10,
+     "title": "Charities and not for profit accountants - Kreston Reeves",
+     "snippet": "As expert accountants, discover how Kreston Reeves supports charities and not-for-profits with specialist accountancy advice and services."
+    }
+   ]
+  },
+  "tapeuk.com": {
+   "hit_count": 1,
+   "queries": [
+    "CIC accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "CIC accountant",
+     "pos": 5,
+     "title": "Tape UK - Cic Year-End Accounts, Charity Accounting Uk, Cic Accounting ...",
+     "snippet": "Affordable CIC year-end accounts and charity accounting UK. Expert CIC accounting services with full compliance, support, and fixed monthly pricing."
+    }
+   ]
+  },
+  "cicaccountingservices.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "CIC accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "CIC accountant",
+     "pos": 7,
+     "title": "CIC Accounting Services",
+     "snippet": "CIC Accounting Services Whether you are in the first stages of setting up a CIC or are well-established and need advice on improving your bookkeeping and accounting processes, I can help."
+    }
+   ]
+  },
+  "aceaccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "CIC accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "CIC accountant",
+     "pos": 8,
+     "title": "Accountants for Charities and Community Interest Companies (CIC)",
+     "snippet": "Accountants for Charities and Community Interest Companies (CIC) We are a specialist provider of accounting services to charities and CICs, and we have vast experience in acting for a wide range of no"
+    }
+   ]
+  },
+  "a2zaccounting.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "CIC accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "CIC accountant",
+     "pos": 9,
+     "title": "CIC Accounting & Compliance Specialists UK",
+     "snippet": "Community Interest Company (CIC) Accounting & Compliance Specialists A2Z Accounting Solutions Limited \u2022 Aberdeen, Scotland At A2Z Accounting Solutions Limited, we are recognised specialists in Communi"
+    }
+   ]
+  },
+  "auditconsultinggroup.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for CIC"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for CIC",
+     "pos": 9,
+     "title": "CIC & Charity Accounting Services UK - Audit Consulting Group",
+     "snippet": "19 Jun 2026 ... Our CIC & Charity Accounting Services provide specialist financial management for Community Interest Companies (CICs) and UK charities."
+    }
+   ]
+  },
+  "championgroup.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for CIC"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for CIC",
+     "pos": 10,
+     "title": "Charity and not-for-profit | Our sectors - Champion Accountants",
+     "snippet": "As a leading charity accountant, our team has extensive experience of charity accounts, as well as a deep understanding of the legal and accounting framework."
+    }
+   ]
+  },
+  "theaccountancy.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "community interest company accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "community interest company accountant",
+     "pos": 5,
+     "title": "Accounting for Not-For-Profits and Community Interest Companies",
+     "snippet": "What is a Community Interest Company? ... A Community Interest Company (CIC) is a limited company which has additional features (and reporting requirements!)."
+    }
+   ]
+  },
+  "dominichill.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "community interest company accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "community interest company accountant",
+     "pos": 6,
+     "title": "Charity and community interest companies (CICs) - Dominic Hill",
+     "snippet": "We can support your charity with auditing, independent examination and accounting processes. Always ensuring your charity accounts are accurate and compliant."
+    }
+   ]
+  },
+  "qaccounting.com": {
+   "hit_count": 1,
+   "queries": [
+    "social enterprise accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "social enterprise accountants uk",
+     "pos": 1,
+     "title": "Enterprise Accounting, Enterprise Accounting Services - QAccounting",
+     "snippet": "Charities and Social Enterprise Accounting Thinking about setting up your own charity or social enterprise? As one of the UK's premier online accountants we specialise in accounting for charities and "
+    }
+   ]
+  },
+  "socialenterprise.org.uk": {
+   "hit_count": 1,
+   "queries": [
+    "social enterprise accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "social enterprise accountants uk",
+     "pos": 3,
+     "title": "Finance and Accounts Shared Services from Social Enterprise UK",
+     "snippet": "Social Enterprise UK can help your social enterprise with bookkeeping, management Accounting, finance director services and more. Get in touch!"
+    }
+   ]
+  },
+  "socialpractice.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "social enterprise accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "social enterprise accountants uk",
+     "pos": 4,
+     "title": "Social Practice | Not for Profit Accountant",
+     "snippet": "We are a specialist accountancy firm with a deep commitment to supporting small charities, social enterprises, and impact-driven businesses."
+    }
+   ]
+  },
+  "bluefoxaccounting.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "social enterprise accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "social enterprise accountants uk",
+     "pos": 5,
+     "title": "Social enterprise | BlueFox Accounting",
+     "snippet": "Supporting social enterprise At Blue Fox Accounting, we are dedicated to supporting social enterprises, not-for-profits, Community Interest Companies (CICs), and charities. We provide expert guidance,"
+    }
+   ]
+  },
+  "friendlyfinances.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "social enterprise accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "social enterprise accountants uk",
+     "pos": 7,
+     "title": "Your Finance Specialists for Social Enterprise & Charity",
+     "snippet": "Accountant & Founder MA CA Neil trained as an accountant with Ernst & Young before spending 15 years working in banking in London, leaving in late 2019 to find more meaningful work. During COVID lockd"
+    }
+   ]
+  },
+  "sabaccountancy.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "social enterprise accountants uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "social enterprise accountants uk",
+     "pos": 9,
+     "title": "SAB ACCOUNTANCY - Charity Accountants",
+     "snippet": "We are an independent accountancy practice focused exclusively on charities, social enterprises, and Community Interest Companies (CICs). Supporting CICs and charities isn't a sideline for us \u2014 it's o"
+    }
+   ]
+  },
+  "fintechaccountancy.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity bookkeeping services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity bookkeeping services uk",
+     "pos": 1,
+     "title": "Charity Bookkeeping Services | Expert Charity Accounting ...",
+     "snippet": "A charity is a nonprofit organization whose financial management calls for accuracy, openness, and compliance with certain rules. We at Fintech BPO are aware of the particular bookkeeping challenges t"
+    }
+   ]
+  },
+  "charitybookkeepingandaccounts.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity bookkeeping services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity bookkeeping services uk",
+     "pos": 3,
+     "title": "Charity Bookkeeping | Charitybookkeepingandaccounts",
+     "snippet": "Expert charity bookkeeping and accounts services by Charitybookkeepingandaccounts. Simplify your UK charity's finances today. Charity bookkeeping, CIO bookkeeping, not for profit bookkeeping"
+    }
+   ]
+  },
+  "pearllemonaccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity bookkeeping services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity bookkeeping services uk",
+     "pos": 4,
+     "title": "Bookkeeping for Charities and Accounting Services UK",
+     "snippet": "Struggling with charity finances? We handle bookkeeping, payroll, tax compliance and reporting so UK charities stay compliant, organised and stress free."
+    }
+   ]
+  },
+  "findmeabookkeeper.com": {
+   "hit_count": 1,
+   "queries": [
+    "charity bookkeeping services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity bookkeeping services uk",
+     "pos": 8,
+     "title": "Services : Local bookkeeper, Bookkeeping services Milton Keynes",
+     "snippet": "Bookkeeping is a one-to-one service and it is therefore important that you are happy and feel comfortable with your Bookkeeper (and that the ..."
+    }
+   ]
+  },
+  "adoos.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity bookkeeping services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity bookkeeping services uk",
+     "pos": 9,
+     "title": "Bookkeeping london Uk Classifieds, Buy and Sell, Free",
+     "snippet": "Looking for expert bookkeeping services in London? At Dynamic Project Advisory Ltd, we offer comprehensive bookkeeping solutions tailored for ..."
+    }
+   ]
+  },
+  "taxadvisoruk.com": {
+   "hit_count": 1,
+   "queries": [
+    "charity tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity tax advisor uk",
+     "pos": 1,
+     "title": "Specialist Charity Accounting Services | TaxAdvisor UK",
+     "snippet": "TaxAdvisor UK offers Specialist Charity Accounting Services.Advising on mergers, joint ventures, and partnering structures. Advising on tax-efficient fundraising and trading issues. VAT advice. Strate"
+    }
+   ]
+  },
+  "persona.tax": {
+   "hit_count": 1,
+   "queries": [
+    "charity tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity tax advisor uk",
+     "pos": 2,
+     "title": "International Tax Advisor UK | UK, UAE & Ireland Tax Advice",
+     "snippet": "International Tax Advisor UK for Founders and Business OwnersAAT certified tax advisorUK, Ireland & UAE expertise"
+    }
+   ]
+  },
+  "taxnatives.com": {
+   "hit_count": 1,
+   "queries": [
+    "charity tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity tax advisor uk",
+     "pos": 3,
+     "title": "Tax Advisors UK | Get Tax Advice In The UK | Tax Natives",
+     "snippet": "Tax services in the UK. A UK tax advisor can help with a wide range of personal tax matters, from income management to international residency.A UK tax advisor can help with permanent establishment ri"
+    }
+   ]
+  },
+  "sandbaccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity tax advisor uk",
+     "pos": 4,
+     "title": "Tax advisor in London UK - S&B Accountants",
+     "snippet": "Personal and business Tax advisor in London, UK.S&B Proving following Tax Advisory Services. Capital Gain Tax. A tax on the profit when you sell an asset that\u2019s increased in value, the tax also applie"
+    }
+   ]
+  },
+  "globaltaxconsulting.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity tax advisor uk",
+     "pos": 5,
+     "title": "UK Tax Advisor & International Tax Advice | Global Tax Consulting",
+     "snippet": "Your UK Tax Advisor For International Tax Advice. Navigate UK Tax Rules for Expats with Confidence.UK tax expert advising a digital nomad on statutory residence test compliance."
+    }
+   ]
+  },
+  "fiverr.com": {
+   "hit_count": 1,
+   "queries": [
+    "charity tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity tax advisor uk",
+     "pos": 6,
+     "title": "Uk Tax Advisor | Profile | Fiverr",
+     "snippet": "UK Tax Advisor. Pakistan. Hindi, Punjabi, Urdu, English. About me. I am a qualified ACCA Chartered Certified Accountant Member with over 8 years of hands-on experience in UK-based accountancy and taxa"
+    }
+   ]
+  },
+  "taax.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity tax advisor uk",
+     "pos": 7,
+     "title": "Tax Advisor UK - TAAX | Tax Advisory and Tax Filling Service",
+     "snippet": "A UK tax advisor offers expert guidance to individuals and businesses on tax compliance and minimising tax liabilities. Their services include tax planning, preparing and filing tax returns, advising "
+    }
+   ]
+  },
+  "aceaccountax.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity tax advisor uk",
+     "pos": 9,
+     "title": "Tax Advisor UK | 100% Expert Support For Startups & Firms",
+     "snippet": "Tax Advisor UK. Stop Guessing Your Taxes. Start Getting Them Right. Tax is likely to be one of those things you will tackle later when you\u2019re running a start-up business or scaling up, in the UK. Dead"
+    }
+   ]
+  },
+  "advisors.biz": {
+   "hit_count": 1,
+   "queries": [
+    "charity tax advisor uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity tax advisor uk",
+     "pos": 10,
+     "title": "Our Accountants | Advisors.Biz",
+     "snippet": "Accountant, Tax Advisor, Compliance/regulation,\u2026 United Kingdom. 0. Aki Chencinski."
+    }
+   ]
+  },
+  "charityexaminers.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity independent examination"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity independent examination",
+     "pos": 4,
+     "title": "Charity Independent Examination",
+     "snippet": "Expert Charity Independent Examination for UK charities under \u00a3100k income. Fixed-fee, remote-friendly, and tailored for small organisations."
+    }
+   ]
+  },
+  "/clev?event=startpageresultclick&sc=2sbbv9ind9tkuv2zhyl0zhffd46l4kt4ym7hvjv9mfpjseec5bofdp6k0r381sapnx1afhxzevc0pefk5hv07fmxw5t5sibl&payload={\"bdssessionid\":\"e292f707059d44adb2eb49c89c8998f3\",\"cheqid\":\"\",\"countrycode\":\"gb\",\"devicetype\":\"mobile\",\"endpoint\":\"search.serp\",\"hasgoogleads\":false,\"page_id\":\"aq5obvqrslqloxos\",\"querycategory\":\"web\",\"segment\":\"startpage.udog\",\"session_id\":\"11rquw2lvkr4roiav\",\"surface\":\"serp-web\",\"transport\":\"href-request\"}": {
+   "hit_count": 1,
+   "queries": [
+    "charity independent examination"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity independent examination",
+     "pos": 10,
+     "title": "",
+     "snippet": ""
+    }
+   ]
+  },
+  "stevecollings.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "independent examiner for charity"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "independent examiner for charity",
+     "pos": 7,
+     "title": "Charity Commission Guidance for Independent Examiners : Steve Collings",
+     "snippet": "1 month ago - The Charity Commission for England and Wales has issued guidance in the form of Independent examination of charity accounts: Directions and guidance for examiners (CC32) which applies ma"
+    }
+   ]
+  },
+  "blog.davidhoward.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "independent examination of charity accounts cost"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "independent examination of charity accounts cost",
+     "pos": 8,
+     "title": "Independent Examination of Charity Accounts | Independent Examinations",
+     "snippet": "independent examination services for UK charities with income between \u00a325,000 and \u00a31 million. Our ICAEW chartered charity examiners make sure you meet Charity Commission requirements. ... Charities wi"
+    }
+   ]
+  },
+  "beyondprofituk.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "independent examination of charity accounts cost"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "independent examination of charity accounts cost",
+     "pos": 10,
+     "title": "Does My Charity Need an Independent Examination? - Beyond Profit",
+     "snippet": "April 1, 2022 - Due to the light-touch approach, an independent examination will cost less than an audit, with the examiner ultimately reviewing: ... Accounting records and systems, if there have been"
+    }
+   ]
+  },
+  "azets.com": {
+   "hit_count": 1,
+   "queries": [
+    "charity audit threshold"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity audit threshold",
+     "pos": 2,
+     "title": "Changes to charity audit thresholds in England and Wales",
+     "snippet": "The income threshold for a statutory audit will rise from \u00a31 million to \u00a31.5 million. This means charities with income below \u00a31.5 million will no longer be legally required to undertake a full audit, "
+    }
+   ]
+  },
+  "milstedlangdon.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity audit threshold"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity audit threshold",
+     "pos": 4,
+     "title": "Changes to the Charities SORP and Charity Audit Thresholds...",
+     "snippet": "In addition to that, proposals to amend the audit thresholds for charities are expected to come into force later this year. The revised Charities SORP came into effect for periods beginning on or afte"
+    }
+   ]
+  },
+  "formuspro.com": {
+   "hit_count": 1,
+   "queries": [
+    "charity audit threshold"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity audit threshold",
+     "pos": 5,
+     "title": "Charity Audit Threshold To Rise By 50% In England... | FormusPro",
+     "snippet": "As well as raising the audit threshold, ministers will increase the level at which charities must be independently examined from \u00a325,000 to \u00a340,000."
+    }
+   ]
+  },
+  "icas.com": {
+   "hit_count": 1,
+   "queries": [
+    "charity audit threshold"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity audit threshold",
+     "pos": 6,
+     "title": "Timing of charity financial threshold changes in England and... - ICAS",
+     "snippet": "For charities in England and Wales, new financial thresholds will apply to periods ending on or after 30 September 2026. About the threshold increases. The higher thresholds are meant to reduce the re"
+    }
+   ]
+  },
+  "larking-gowen.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity audit threshold"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity audit threshold",
+     "pos": 7,
+     "title": "Charity financial threshold changes confirmed | Blog | Larking Gowen...",
+     "snippet": "Key threshold increases: Independent examination threshold: Raised from \u00a325,000 to \u00a340,000 income. Receipts and Payments accounts option (non-company charities): Increased from \u00a3250,000 to \u00a3500,000 in"
+    }
+   ]
+  },
+  "armstrongwatson.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity audit threshold"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity audit threshold",
+     "pos": 8,
+     "title": "Will my charity require an audit? | Armstrong Watson",
+     "snippet": "Alongside this, the second \u2018asset test\u2019 threshold for charity audits is also increasing. It is proposed that charities with income over \u00a3500,000 (previously \u00a3250,000) will only require an audit if the"
+    }
+   ]
+  },
+  "stopfords.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity audit threshold"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity audit threshold",
+     "pos": 9,
+     "title": "Scottish Charity Audit Threshold Changing | Blog | Stopfords",
+     "snippet": "Scottish Charity Audit Threshold Is Changing. Date:December 19, 2025. Category:General. What\u2019s New? From 1 January 2026, the audit threshold for Scottish charities (including UK Charities with dual re"
+    }
+   ]
+  },
+  "hitefieldtax.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity audit threshold"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity audit threshold",
+     "pos": 10,
+     "title": "When audit thresholds can be confusing - Whitefield Tax - Isle of...",
+     "snippet": "Charity thresholds. The audit threshold for all charities is different from non-charitable entities. There are different thresholds for Scottish charities and other UK charities for periods ending on "
+    }
+   ]
+  },
+  "arr.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity audit services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity audit services uk",
+     "pos": 1,
+     "title": "Charity Audit Accountants - Warr & Co Chartered Accountants",
+     "snippet": "We specialise in providing tailored audit and assurance services for charities, not-for-profits, and charitable trusts across the UK. With a thorough understanding of the charity sector and its regula"
+    }
+   ]
+  },
+  "abmcharteredaccountants.com": {
+   "hit_count": 1,
+   "queries": [
+    "charity audit services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity audit services uk",
+     "pos": 2,
+     "title": "Charity Audit Services UK | Charity Auditors London",
+     "snippet": "Looking for specialist charity auditors? ABM Chartered Accountants provides charity audit and assurance services for UK non-profit organisations. Get in touch today."
+    }
+   ]
+  },
+  "mooresouth.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity audit services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity audit services uk",
+     "pos": 6,
+     "title": "Audit Services for Charity Sector | NFP Auditors | Auditors",
+     "snippet": "Charity audit services providing not-for-profit audit, statutory audit and external audit services for charities across the UK. Trusted audit and assurance."
+    }
+   ]
+  },
+  "randall-payne.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity audit services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity audit services uk",
+     "pos": 7,
+     "title": "Charity Audit | Professional Accountants | Randall & Payne",
+     "snippet": "About We provide audit and assurance services for a wide variety of charities, from independent examinations for smaller entities, to full audits for regional and national charities. We present our au"
+    }
+   ]
+  },
+  "menzies.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity audit services uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity audit services uk",
+     "pos": 8,
+     "title": "Not for Profit Audit & Assurance Services | Menzies LLP",
+     "snippet": "For charities, social enterprises, and educational institutions, an effective audit is about more than compliance, it is about trust, accountability, and impact. Our specialist not for profit sector t"
+    }
+   ]
+  },
+  "bishopfleming.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity SORP accountants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity SORP accountants",
+     "pos": 4,
+     "title": "Preparing for Charities SORP 2026: What you need to know",
+     "snippet": "17 Dec 2025 ... Charities SORP 2026 introduces major changes to charity accounting, reporting and governance for periods starting on or after 1 January 2026."
+    }
+   ]
+  },
+  "cafonline.org": {
+   "hit_count": 1,
+   "queries": [
+    "charity SORP accountants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity SORP accountants",
+     "pos": 5,
+     "title": "Charities SORP- Navigating the changes | CAF Bank",
+     "snippet": "19 Jan 2026 ... The SORP applies to all registered charities in the UK, regardless of which regulator(s) the charity is responsible to. Accounting ..."
+    }
+   ]
+  },
+  "charitiessorp.org": {
+   "hit_count": 1,
+   "queries": [
+    "charity SORP accountants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity SORP accountants",
+     "pos": 6,
+     "title": "Smaller charities, SORP and issues of financial accounting and ...",
+     "snippet": "The Charity Commission for England and Wales, the Office of the Scottish Charity Regulator and the Charity Commission for Northern Ireland are jointly ..."
+    }
+   ]
+  },
+  "edmund-carr.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity SORP accountants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity SORP accountants",
+     "pos": 9,
+     "title": "Charity Accountants in Essex : SORP Accountants in Essex :",
+     "snippet": "Registered to carry on audit work in the UK and regulated for a range of investment business activities by the Institute of Chartered Accountants in ..."
+    }
+   ]
+  },
+  "accountantforums.com": {
+   "hit_count": 1,
+   "queries": [
+    "charity SORP accountants"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity SORP accountants",
+     "pos": 10,
+     "title": "Charity SORP (FRS 102) - Use by non-charities | Accountant",
+     "snippet": "... reason why a non-for-profit Company Limited by Guarantee is unable to use Charity SORP (FRS 102) to prepare the financial statements for the accounts ..."
+    }
+   ]
+  },
+  "elberraconsulting.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "SORP compliant accounts preparation"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "SORP compliant accounts preparation",
+     "pos": 1,
+     "title": "Charity Accounting in the UK: A Complete Guide to SORP Compliance",
+     "snippet": "Elberra Consulting provides specialist charity accounting services to registered charities, CICs, and not-for-profit organisations across the UK. Our services cover SORP-compliant annual accounts prep"
+    }
+   ]
+  },
+  "taxcalc.com": {
+   "hit_count": 1,
+   "queries": [
+    "SORP compliant accounts preparation"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "SORP compliant accounts preparation",
+     "pos": 8,
+     "title": "Accounts Production - TaxCalc",
+     "snippet": "Prepare SORP-compliant accruals accounts for Charitable companies (limited by guarantee), Charitable Incorporated Organisations, and Charitable Unincorporated Associations. Note that Charity Accounts "
+    }
+   ]
+  },
+  "meer-co.com": {
+   "hit_count": 1,
+   "queries": [
+    "SORP compliant accounts preparation"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "SORP compliant accounts preparation",
+     "pos": 10,
+     "title": "Charity & SORP Compliance - Meer & Co \u2013 Chartered Accountants",
+     "snippet": "100%. SORP Compliant. 5. UK Office Locations.Accounts prepared in full accordance with the Charities Statement of Recommended Practice (SORP), ensuring accuracy, transparency and compliance."
+    }
+   ]
+  },
+  "ethicalmarketingnews.com": {
+   "hit_count": 1,
+   "queries": [
+    "gift aid advice for charities"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "gift aid advice for charities",
+     "pos": 3,
+     "title": "New research finds public recognise importance of Gift Aid for",
+     "snippet": "Gift Aid is a tax relief for charities in the UK which effectively increases the value of donations. ... Gift Aid would be a vital step forward at a ..."
+    }
+   ]
+  },
+  "independent.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "gift aid advice for charities"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "gift aid advice for charities",
+     "pos": 4,
+     "title": "Gift Aid doesn\u2019t just help charities - it might boost your",
+     "snippet": "Another useful feature of Gift Aid is that you can claim relief for a donation made in the current tax year when you submit your tax return for the ..."
+    }
+   ]
+  },
+  "asb.org.uk": {
+   "hit_count": 1,
+   "queries": [
+    "gift aid advice for charities"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "gift aid advice for charities",
+     "pos": 7,
+     "title": "Important Tax Tips for Charities | asb.org.uk",
+     "snippet": "Gift Aid, whereby tax can be reclaimed on donations, is ... It is important, therefore, to seek advice about Gift Aid before you start to ask for it."
+    }
+   ]
+  },
+  "reminduk.org": {
+   "hit_count": 1,
+   "queries": [
+    "gift aid advice for charities"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "gift aid advice for charities",
+     "pos": 9,
+     "title": "Gift Aid - ReMind UK",
+     "snippet": "Gift Aid is a valuable source of income for ... When donating cash or a cheque in person to ReMind UK, you must complete a Gift Aid declaration form."
+    }
+   ]
+  },
+  "att.org.uk": {
+   "hit_count": 1,
+   "queries": [
+    "gift aid claim accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "gift aid claim accountant",
+     "pos": 3,
+     "title": "How to claim Gift Aid: a guide for charities | The Association of Taxation Technicians",
+     "snippet": "There are deadlines which apply for claiming Gift Aid. Broadly these are: Gift Aid - four years from the end of the financial period (tax year for trusts, accounting period for CASCs or incorporated c"
+    }
+   ]
+  },
+  "adamaccountancy.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "gift aid claim accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "gift aid claim accountant",
+     "pos": 5,
+     "title": "HMRC Gift Aid Form | Guide for UK Charities and Donors",
+     "snippet": "October 8, 2025 - ... To discuss how Accountants in Slough can assist you with your Accounts Preparation, please contact us for a free, no obligation consultation on: 0333 772 1616 or complete our Con"
+    }
+   ]
+  },
+  "rayneressex.com": {
+   "hit_count": 1,
+   "queries": [
+    "gift aid claim accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "gift aid claim accountant",
+     "pos": 6,
+     "title": "How to claim Gift Aid correctly: UK rules, pitfalls and guidance 2025",
+     "snippet": "September 19, 2025 - The declaration must name the charity, record the donor\u2019s full name and home address, identify the gift or gifts covered, and confirm that the donor has paid enough UK Income Tax "
+    }
+   ]
+  },
+  "composureaccounting.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "gift aid claim accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "gift aid claim accountant",
+     "pos": 7,
+     "title": "Gift Aid Tax Relief | How it Works and Your Obligations",
+     "snippet": "April 22, 2026 - Here is how we handle charitable giving claims at Composure, and why. When our accountancy team prepares a Self Assessment tax return, we do not ask clients to provide an estimate of "
+    }
+   ]
+  },
+  "litrg.org.uk": {
+   "hit_count": 1,
+   "queries": [
+    "gift aid claim accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "gift aid claim accountant",
+     "pos": 9,
+     "title": "Gift aid | Low Incomes Tax Reform Group",
+     "snippet": "June 1, 2026 - But if you feel passionately about supporting a charity, you will of course be pleased that the charity gets a bit extra on top of what you can afford to give. If you pay tax at more th"
+    }
+   ]
+  },
+  "moneysavingexpert.com": {
+   "hit_count": 1,
+   "queries": [
+    "gift aid claim accountant"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "gift aid claim accountant",
+     "pos": 10,
+     "title": "How does Gift Aid work? - MoneySavingExpert",
+     "snippet": "To claim Gift Aid on your donation, the charity will need: ... You to declare that you pay tax in the UK of an amount at least equal to the amount the charity will claim in Gift Aid on your donation ("
+    }
+   ]
+  },
+  "uk-vat-advice.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity VAT advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity VAT advice",
+     "pos": 3,
+     "title": "VAT for Charities | Expert Advice For Not-For-Profits & Charities",
+     "snippet": "Need VAT advice for your charity? Our expert team provides tailored solutions to help charities navigate VAT regulations and optimise their strategy."
+    }
+   ]
+  },
+  "constablevat.com": {
+   "hit_count": 1,
+   "queries": [
+    "charity VAT advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity VAT advice",
+     "pos": 5,
+     "title": "Charity VAT Advice - UK VAT Specialists - Constable VAT Consultants",
+     "snippet": "How can this service help you? Delivering certainty on the VAT liability of supplies made and income generated Reviewing methods of recovering VAT incurred Grant funding or a contract to supply servic"
+    }
+   ]
+  },
+  "thevatconsultancy.com": {
+   "hit_count": 1,
+   "queries": [
+    "charity VAT advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity VAT advice",
+     "pos": 10,
+     "title": "Not for Profit and Charity VAT Consultancy UK",
+     "snippet": "Whether it's reclaiming VAT on shared costs, advising on zero-rating, or managing mixed-use scenarios, our tailored advice helps you remain compliant, reduce liabilities, and focus on your mission - n"
+    }
+   ]
+  },
+  "uk.adp.com": {
+   "hit_count": 1,
+   "queries": [
+    "charity payroll services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity payroll services",
+     "pos": 1,
+     "title": "Charity Payroll Services | HR Solutions for NonProfits | ADP UK",
+     "snippet": "Our payroll outsourcing services combine both your payroll and human resource information systems (HRIS), with thousands of experts available to ..."
+    }
+   ]
+  },
+  "payrollprices.com": {
+   "hit_count": 1,
+   "queries": [
+    "charity payroll services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity payroll services",
+     "pos": 2,
+     "title": "Best Payroll Services For Charities? Top 6 Charity Payroll",
+     "snippet": "Here, we explore the top six payroll services for UK charity and non-profit organisations, offering insights into their features and benefits."
+    }
+   ]
+  },
+  "placedobson.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity payroll services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity payroll services",
+     "pos": 4,
+     "title": "Payroll for charities | Richard Place Dobson | West Sussex",
+     "snippet": "As one might expect, there is a great deal of complexity surrounding payroll for charities, that only specialists can understand and deliver."
+    }
+   ]
+  },
+  "charitytaxgroup.org.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity payroll services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity payroll services",
+     "pos": 6,
+     "title": "Payroll Services provided by Charities - Charity Tax Group",
+     "snippet": "Charities sometimes provide payroll services to persons with disabilities, to allow these people to employ, and remunerate, a carer. The provision ..."
+    }
+   ]
+  },
+  "bpayroll.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity payroll services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity payroll services",
+     "pos": 7,
+     "title": "Payroll Services for Charities",
+     "snippet": "Payroll Services for Charities bepayrolladmin 2026-03-13T12:06 ... UK Outsourced Payroll Services Be Payroll Ltd is registered in England and Wales."
+    }
+   ]
+  },
+  "tiapayroll.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity payroll services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity payroll services",
+     "pos": 8,
+     "title": "Charity Payroll Services | TIA Payroll",
+     "snippet": "TIA Payroll Services \u2014 UK Outsourced Payroll ... Our specialist charities & non-profits payroll service is built around your industry's needs."
+    }
+   ]
+  },
+  "expenseplus.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity payroll services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity payroll services",
+     "pos": 9,
+     "title": "UK Charity Payroll and Employment | Fund Accounting Blog",
+     "snippet": "... get started with charity employment and payroll ... We highly recommend Stewardship who offer a brilliant payroll service for churches and charities."
+    }
+   ]
+  },
+  "payrollgiving.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity payroll services"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity payroll services",
+     "pos": 10,
+     "title": "NHS Charities Together \u2013 Payroll Giving",
+     "snippet": "... UK employers. We raise more money through Payroll Giving than any of our competitors (\u00a348.07M in 2024). All our services are free to employers ..."
+    }
+   ]
+  },
+  "ildercoe.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity annual return help"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity annual return help",
+     "pos": 5,
+     "title": "Preparing a Charity Annual Return -",
+     "snippet": "January 7, 2025 - You must ensure that all information ... the annual return process. This includes trustee details and contact details. This can be updated through the My Charity Commission account. "
+    }
+   ]
+  },
+  "business-accountant.com": {
+   "hit_count": 1,
+   "queries": [
+    "CIC annual accounts service"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "CIC annual accounts service",
+     "pos": 5,
+     "title": "FILING CIC (COMMUNITY INTEREST COMPANY) ANNUAL ACCOUNTS \u00ab",
+     "snippet": "If you have not yet filed Annual Accounts for a CIC (Community Interest Company), then please be aware that the process and procedures for filing the ..."
+    }
+   ]
+  },
+  "yorktogether.org": {
+   "hit_count": 1,
+   "queries": [
+    "CIC annual accounts service"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "CIC annual accounts service",
+     "pos": 9,
+     "title": "Changes to CIC annual account filing",
+     "snippet": "Community Interest Companies (CICs) have to file annual accounts and Corporate Tax returns annually. ... CICs with simple tax affairs have been able ..."
+    }
+   ]
+  },
+  "vgwoodhouse.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "CIC34 report help"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "CIC34 report help",
+     "pos": 3,
+     "title": "CIC 34 Community Interest Company Report",
+     "snippet": "|The original report| | | | | |must be signed by a| | | | | |director or | | | | | |secretary of the | | | | | |company | | | | | | |Signed | |Date | | | | | | | | | | | | |Office held (tick as approp"
+    }
+   ]
+  },
+  "s3.amazonaws.com": {
+   "hit_count": 1,
+   "queries": [
+    "CIC34 report help"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "CIC34 report help",
+     "pos": 4,
+     "title": "CIC34: community interest company report - GOV.UK",
+     "snippet": "The Office of the Regulator of Community Interest Companies (CIC Regulator)'s forms for submitting a simplified or detailed CIC report, with examples. Published 1 January 2013 Last updated 24 January "
+    }
+   ]
+  },
+  "help-iris.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "CIC34 report help"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "CIC34 report help",
+     "pos": 6,
+     "title": "Submit accounts for Community Interest Companies - Help topic",
+     "snippet": "August 27, 2025 - CIC businesses use the same chart of accounts as other businesses and have the same reporting standards available in IRIS Elements Accounts Production. When creating the accounts, ch"
+    }
+   ]
+  },
+  "rocketlawyer.com": {
+   "hit_count": 1,
+   "queries": [
+    "charity trading subsidiary tax advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity trading subsidiary tax advice",
+     "pos": 3,
+     "title": "Charities And Trading | Free Guide - Rocket Lawyer UK",
+     "snippet": "How to charities trade? Do charities pay tax? What charity tax relief is available?What is the small trading tax exemption? How can a subsidiary trading company be used? Charities that sell goods or s"
+    }
+   ]
+  },
+  "icnl.org": {
+   "hit_count": 1,
+   "queries": [
+    "charity trading subsidiary tax advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity trading subsidiary tax advice",
+     "pos": 7,
+     "title": "Trading - A Survivor's Guide: Guidance Notes on Charity... - ICNL",
+     "snippet": "Parent charities and their trading subsidiaries contemplating such a course of action should take professional advice, and take into account the investment propriety and insolvency issues."
+    }
+   ]
+  },
+  "scvo.scot": {
+   "hit_count": 1,
+   "queries": [
+    "charity trading subsidiary tax advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity trading subsidiary tax advice",
+     "pos": 8,
+     "title": "Trading - SCVO",
+     "snippet": "A trading subsidiary is a non-charitable trading company that can offer a solution to potential tax and charity law problems."
+    }
+   ]
+  },
+  "diycommitteeguide.org": {
+   "hit_count": 1,
+   "queries": [
+    "charity trading subsidiary tax advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity trading subsidiary tax advice",
+     "pos": 9,
+     "title": "Charities Trading, Tax and Subsidiaries - DIY Committee Guide",
+     "snippet": "A trading subsidiary is a company owned and controlled by one or more charities, and is usually set up to generate income for the charity. The advantage of using subsidiary companies is that they don\u2019"
+    }
+   ]
+  },
+  "ct.me": {
+   "hit_count": 1,
+   "queries": [
+    "charity trading subsidiary tax advice"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity trading subsidiary tax advice",
+     "pos": 10,
+     "title": "Do charities have to submit a tax return? | CT",
+     "snippet": "Charities can undertake a small amount of non-charitable trading, which must be covered by the charity\u2019s small trade exemption in order to be exempt from tax.Generally, loans to a charity\u2019s trading su"
+    }
+   ]
+  },
+  "lladds.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for churches uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for churches uk",
+     "pos": 6,
+     "title": "Accountancy For Churches & Charities - lladds.co.uk",
+     "snippet": "Accountancy For Churches & Charities As well as our bookkeeping and payroll services being open to churches and charities, we are also licensed and qualified to offer Accounts Preparation services and"
+    }
+   ]
+  },
+  "acat.uk.com": {
+   "hit_count": 1,
+   "queries": [
+    "accountants for churches uk"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "accountants for churches uk",
+     "pos": 10,
+     "title": "Home - ACAT",
+     "snippet": "ACAT is the charity for treasurers of Christian churches We aim to advance the Christian faith across all denominations by providing members with the most appropriate advice, training and information "
+    }
+   ]
+  },
+  "churchofengland.org": {
+   "hit_count": 1,
+   "queries": [
+    "church accounts independent examination"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "church accounts independent examination",
+     "pos": 3,
+     "title": "Chapter 11 | The Church of England",
+     "snippet": "Chapter 11 of the PCC Accountability Guide. Chapter 11 Independent Examination 11. Introduction The flowchart in Chapter 1, paragraph 1.2 sets out the thresholds for the independent examination or aud"
+    }
+   ]
+  },
+  "stewardship.org.uk": {
+   "hit_count": 1,
+   "queries": [
+    "church accounts independent examination"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "church accounts independent examination",
+     "pos": 6,
+     "title": "Accounts Examination - Stewardship",
+     "snippet": "Our Accounts Examination service is for churches and Christian charities with an annual income of up to \u00a31 million (and if your income is over \u00a3250,000, you have assets of up to \u00a33.26m)."
+    }
+   ]
+  },
+  "london.anglican.org": {
+   "hit_count": 1,
+   "queries": [
+    "church accounts independent examination"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "church accounts independent examination",
+     "pos": 9,
+     "title": "Who can be an independent examiner | Diocese of London",
+     "snippet": "An independent examination can be carried out by any person who: Is Independent - which means that the examiner is not influenced, or perceived to be influenced, by close personal relationships with P"
+    }
+   ]
+  },
+  "resourcecentre.org.uk": {
+   "hit_count": 1,
+   "queries": [
+    "CIO accounts preparation"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "CIO accounts preparation",
+     "pos": 3,
+     "title": "Charity reporting and accounts | Resource Centre",
+     "snippet": "All charitable companies must prepare accruals accounts. Unincorporated charities and CIOs must prepare accruals accounts if their annual income is over \u00a3250,000."
+    }
+   ]
+  },
+  "slsgb.org.uk": {
+   "hit_count": 1,
+   "queries": [
+    "CIO accounts preparation"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "CIO accounts preparation",
+     "pos": 4,
+     "title": "CIO Accounting an Annual Return Notes",
+     "snippet": "Basis of preparation: CIOs may opt to prepare receipts and \u00b7 payments accounts if their gross income is less than \u00a3250,000. Otherwise accruals accounts must be prepared which comply \u00b7 with the 2008 Re"
+    }
+   ]
+  },
+  "ifa.org.uk": {
+   "hit_count": 1,
+   "queries": [
+    "CIO accounts preparation"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "CIO accounts preparation",
+     "pos": 7,
+     "title": "\u00a9 Institute of Financial Accountant 2020 Guidance on Accounts Preparation",
+     "snippet": "Society of Trust and Estate Practitioners (STEP), STEP Accounting Guidelines for the Preparation of \u00b7 Trust and Estate Accounts in England & Wales. 5.5 Charities (unincorporated, charitable companies "
+    }
+   ]
+  },
+  "fcls.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "CIO accounts preparation"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "CIO accounts preparation",
+     "pos": 10,
+     "title": "A guide to forming a charitable incorporated organisation (CIO) \u2013 First Corporate Law Services",
+     "snippet": "If the income is over certain prescribed limits, there may need to be an independent examiner\u2019s report, or an audit of the accounts. Questions the CIO will be asked in an annual return depend on incom"
+    }
+   ]
+  },
+  "1stcloudaccountants.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "small charity accountant fees"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "small charity accountant fees",
+     "pos": 4,
+     "title": "PDF 2025/2026 FULL PRICE LIST - 1stcloudaccountants.co.uk",
+     "snippet": "Charities and Independent examinations (Accounts) Fees - minimum \u00a3925 plus vat. \u00a31025 plus vat. \u00a31425 plus vat. \u00a31525 plus vat. (From fully reconciled computerised books - otherwise bookkeeping charge"
+    }
+   ]
+  },
+  "ukcostguide.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "small charity accountant fees"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "small charity accountant fees",
+     "pos": 7,
+     "title": "Accountant Fees UK 2026 | Typical Costs, What You Get",
+     "snippet": "Accountant fees UK 2026: find out cost ranges for sole traders, small businesses, limited companies, VAT returns, year-end accounts and tips"
+    }
+   ]
+  },
+  "microaccounts.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "small charity accountant fees"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "small charity accountant fees",
+     "pos": 10,
+     "title": "Home - Microaccounts",
+     "snippet": "Fixed-Fee Accounting for Small Businesses and Charities Modern accounting services for organisations that value clarity, compliance, and control. Support for businesses and charities, designed to meet"
+    }
+   ]
+  },
+  "hartleyfowler.com": {
+   "hit_count": 1,
+   "queries": [
+    "charity accounts preparation service"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accounts preparation service",
+     "pos": 1,
+     "title": "Charity Accounts Preparation | Preparing Accounts | Hartley Fowler",
+     "snippet": "May 21, 2024 - As an experienced accountant, at Hartley Fowler, we understand the complexities that come with managing the finances of a charity. From statutory reporting to accounts preparation servi"
+    }
+   ]
+  },
+  "burton-sweet.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity accounts preparation service"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accounts preparation service",
+     "pos": 8,
+     "title": "Charity Accounts Preparation - Burton Sweet",
+     "snippet": "April 8, 2025 - We believe that every charity is unique. Consequently, we don\u2019t try to squeeze every set of accounts into a one-size-fits- all template. We prepare charity accounts on a bespoke basis "
+    }
+   ]
+  },
+  "albertgoodman.co.uk": {
+   "hit_count": 1,
+   "queries": [
+    "charity accounts preparation service"
+   ],
+   "sample": [
+    {
+     "src": "ddg",
+     "q": "charity accounts preparation service",
+     "pos": 9,
+     "title": "Specialist Charity Accountants | Albert Goodman",
+     "snippet": "April 17, 2025 - Our specialist charity accountancy services include: Statutory accounts preparation compliant with Charities Act, Charities SORP and other applicable legislation."
+    }
+   ]
+  }
+ },
+ "dropped": {
+  "estate": [
+   "hollowaydavies.co.uk"
+  ],
+  "directory_or_info": [
+   "gov.uk",
+   "charityconnect.co.uk",
+   "icaew.com",
+   "assets.publishing.service.gov.uk",
+   "ncvo.org.uk",
+   "charityjob.co.uk",
+   "civilsociety.co.uk",
+   "cfg.org.uk",
+   "democracy.north-herts.gov.uk",
+   "communityinterestcompanies.blog.gov.uk",
+   "ogs.charitycommission.gov.uk",
+   "unbiased.co.uk"
+  ]
+ }
+}

@@ -17,5 +17,12 @@ which already carries $0.18 from R2d today → projected daily total ~$0.60).
 
 Gates: balance check before first paid call; abort if any single response cost >5× estimate.
 
-## Actuals (filled after runs)
-- (pending)
+## Actuals (2026-07-11, from api_cost_log)
+- keyword_suggestions × 8 (16:29-16:30): $0.17184
+- ranked_keywords × 4 (16:39-16:40): $0.11580 (charityaccountants.co.uk $0.02856, kgaccountantsblog.com $0.05304, charityaccountant.co.uk $0.02148, iel.org.uk $0.01272)
+- **R3-charities DataForSEO total: $0.28764** (plan estimate $0.42; under budget $3-8)
+- Serper: 32 queries × $0.001 ≈ $0.032 (own quota). DDG/autocomplete/fetches/citations: $0.
+- NOTE: api_cost_log for 2026-07-11 also shows ~$0.60 of hospitality + startups/SaaS Labs calls
+  (16:40-16:53) from a CONCURRENT session (not this task); today's combined dataforseo total
+  crossed the $0.85 daily code guard (~$0.89 at 16:53) — any further paid calls today would abort.
+  This task needs none.
