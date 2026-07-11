@@ -1,0 +1,4905 @@
+{
+ "generated": "2026-07-11",
+ "thresholds": {
+  "containment_exclude": 0.45,
+  "containment_caution": 0.2,
+  "jaccard_role": "secondary/confirmatory only"
+ },
+ "candidates": [
+  {
+   "id": 1,
+   "name": "Landlords (buy-to-let)",
+   "pool_size": 33,
+   "overlap_suspect": "property (direct)",
+   "max_overlap_site": "property",
+   "jaccard": 0.002,
+   "containment": 0.9394,
+   "support": 522,
+   "per_site": {
+    "property": {
+     "jaccard": 0.002,
+     "containment": 0.9394,
+     "support": 522
+    },
+    "dentists": {
+     "jaccard": 0.0076,
+     "containment": 0.1818,
+     "support": 1
+    },
+    "solicitors": {
+     "jaccard": 0.0033,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0026,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0036,
+     "containment": 0.2727,
+     "support": 2
+    },
+    "agency": {
+     "jaccard": 0.0055,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0094,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "EXCLUDE",
+   "flag": null,
+   "rationale": "94% of its term pool already lives in the property corpus; this is property-site expansion, not a new niche"
+  },
+  {
+   "id": 2,
+   "name": "Property investors",
+   "pool_size": 21,
+   "overlap_suspect": "property (direct)",
+   "max_overlap_site": "property",
+   "jaccard": 0.0017,
+   "containment": 0.5714,
+   "support": 12,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0017,
+     "containment": 0.5714,
+     "support": 12
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0022,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0031,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0055,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "EXCLUDE",
+   "flag": null,
+   "rationale": "57% of its term pool already lives in the property corpus; this is property-site expansion, not a new niche"
+  },
+  {
+   "id": 3,
+   "name": "Airbnb / holiday-let hosts",
+   "pool_size": 32,
+   "overlap_suspect": "property (strong)",
+   "max_overlap_site": "property",
+   "jaccard": 0.0025,
+   "containment": 0.5938,
+   "support": 46,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0025,
+     "containment": 0.5938,
+     "support": 46
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0016,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0026,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0026,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0092,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "EXCLUDE",
+   "flag": null,
+   "rationale": "59% of its term pool already lives in the property corpus; this is property-site expansion, not a new niche"
+  },
+  {
+   "id": 4,
+   "name": "Property developers",
+   "pool_size": 18,
+   "overlap_suspect": "property + construction-cis",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0026,
+   "containment": 0.3333,
+   "support": 1,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0014,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0017,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0026,
+     "containment": 0.3333,
+     "support": 1
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0061,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with generalist (33% containment); viable only with positioning distinct from generalist"
+  },
+  {
+   "id": 5,
+   "name": "Property management companies",
+   "pool_size": 12,
+   "overlap_suspect": "property (adjacent)",
+   "max_overlap_site": "property",
+   "jaccard": 0.0011,
+   "containment": 0.5,
+   "support": 1,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0011,
+     "containment": 0.5,
+     "support": 1
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0017,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0016,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0196,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0062,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "downgraded: only 1 distinct matching site query/queries; partial overlap with property (50% containment); viable only with positioning distinct from property"
+  },
+  {
+   "id": 6,
+   "name": "Estate & letting agents",
+   "pool_size": 20,
+   "overlap_suspect": "property (adjacent)",
+   "max_overlap_site": "property",
+   "jaccard": 0.0014,
+   "containment": 0.35,
+   "support": 1,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0014,
+     "containment": 0.35,
+     "support": 1
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0017,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0021,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with property (35% containment); viable only with positioning distinct from property"
+  },
+  {
+   "id": 7,
+   "name": "Landed estates / rural estates",
+   "pool_size": 18,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "construction-cis",
+   "jaccard": 0.0062,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0016,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0062,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (construction-cis); no material own-estate overlap"
+  },
+  {
+   "id": 8,
+   "name": "Construction / CIS subcontractors",
+   "pool_size": 20,
+   "overlap_suspect": "construction-cis (direct)",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0031,
+   "containment": 1.0,
+   "support": 50,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0014,
+     "containment": 0.3,
+     "support": 2
+    },
+    "dentists": {
+     "jaccard": 0.0046,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0011,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0039,
+     "containment": 0.35,
+     "support": 1
+    },
+    "generalist": {
+     "jaccard": 0.0031,
+     "containment": 1.0,
+     "support": 50
+    },
+    "agency": {
+     "jaccard": 0.0055,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0192,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0248,
+     "containment": 0.6,
+     "support": 5
+    }
+   },
+   "verdict": "EXCLUDE",
+   "flag": null,
+   "rationale": "JUDGMENT: this is construction-cis's exact audience (corpus: 'accountants for roofers', CIS queries); generalist cap masked it"
+  },
+  {
+   "id": 9,
+   "name": "Builders",
+   "pool_size": 19,
+   "overlap_suspect": "construction-cis (direct)",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0021,
+   "containment": 0.6842,
+   "support": 11,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0011,
+     "containment": 0.3158,
+     "support": 7
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0039,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0021,
+     "containment": 0.6842,
+     "support": 11
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0097,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0124,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "EXCLUDE",
+   "flag": null,
+   "rationale": "JUDGMENT: builders = construction-cis's core audience; same-site expansion"
+  },
+  {
+   "id": 10,
+   "name": "Plumbers / heating engineers",
+   "pool_size": 26,
+   "overlap_suspect": "construction-cis (adjacent)",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0026,
+   "containment": 0.2308,
+   "support": 1,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0014,
+     "containment": 0.2308,
+     "support": 1
+    },
+    "dentists": {
+     "jaccard": 0.003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0011,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0026,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0026,
+     "containment": 0.2308,
+     "support": 1
+    },
+    "agency": {
+     "jaccard": 0.0055,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.019,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with generalist (23% containment); viable only with positioning distinct from generalist"
+  },
+  {
+   "id": 11,
+   "name": "Electricians",
+   "pool_size": 6,
+   "overlap_suspect": "construction-cis (adjacent)",
+   "max_overlap_site": "property",
+   "jaccard": 0.0,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (property); no material own-estate overlap"
+  },
+  {
+   "id": 12,
+   "name": "Painters & decorators",
+   "pool_size": 6,
+   "overlap_suspect": "construction-cis (adjacent)",
+   "max_overlap_site": "property",
+   "jaccard": 0.0003,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (property); no material own-estate overlap"
+  },
+  {
+   "id": 13,
+   "name": "Landscapers / gardeners",
+   "pool_size": 27,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "contractors-ir35",
+   "jaccard": 0.0095,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0095,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (contractors-ir35); no material own-estate overlap"
+  },
+  {
+   "id": 14,
+   "name": "Tradespeople (family)",
+   "pool_size": 31,
+   "overlap_suspect": "construction-cis",
+   "max_overlap_site": "construction-cis",
+   "jaccard": 0.0186,
+   "containment": 0.3871,
+   "support": 4,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.2258,
+     "support": 2
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.2258,
+     "support": 1
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.2258,
+     "support": 2
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0186,
+     "containment": 0.3871,
+     "support": 4
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with construction-cis (39% containment); viable only with positioning distinct from construction-cis"
+  },
+  {
+   "id": 15,
+   "name": "Dentists",
+   "pool_size": 21,
+   "overlap_suspect": "dentists (direct)",
+   "max_overlap_site": "dentists",
+   "jaccard": 0.0061,
+   "containment": 0.6667,
+   "support": 70,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0061,
+     "containment": 0.6667,
+     "support": 70
+    },
+    "solicitors": {
+     "jaccard": 0.0011,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0026,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0021,
+     "containment": 0.6667,
+     "support": 4
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0097,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "EXCLUDE",
+   "flag": null,
+   "rationale": "67% of its term pool already lives in the dentists corpus; this is dentists-site expansion, not a new niche"
+  },
+  {
+   "id": 16,
+   "name": "Doctors / GPs",
+   "pool_size": 36,
+   "overlap_suspect": "medical (direct)",
+   "max_overlap_site": "medical",
+   "jaccard": 0.0091,
+   "containment": 0.6111,
+   "support": 35,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0061,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0016,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0091,
+     "containment": 0.6111,
+     "support": 35
+    },
+    "generalist": {
+     "jaccard": 0.0031,
+     "containment": 0.2778,
+     "support": 1
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0288,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "EXCLUDE",
+   "flag": null,
+   "rationale": "61% of its term pool already lives in the medical corpus; this is medical-site expansion, not a new niche"
+  },
+  {
+   "id": 17,
+   "name": "Locum doctors",
+   "pool_size": 12,
+   "overlap_suspect": "medical (direct)",
+   "max_overlap_site": "medical",
+   "jaccard": 0.0026,
+   "containment": 1.0,
+   "support": 25,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.5,
+     "support": 1
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 0.5,
+     "support": 1
+    },
+    "medical": {
+     "jaccard": 0.0026,
+     "containment": 1.0,
+     "support": 25
+    },
+    "generalist": {
+     "jaccard": 0.001,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "EXCLUDE",
+   "flag": null,
+   "rationale": "100% of its term pool already lives in the medical corpus; this is medical-site expansion, not a new niche"
+  },
+  {
+   "id": 18,
+   "name": "Locum pharmacists",
+   "pool_size": 6,
+   "overlap_suspect": "medical (adjacent)",
+   "max_overlap_site": "dentists",
+   "jaccard": 0.0015,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (dentists); no material own-estate overlap"
+  },
+  {
+   "id": 19,
+   "name": "Pharmacies",
+   "pool_size": 6,
+   "overlap_suspect": "medical (adjacent)",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0005,
+   "containment": 1.0,
+   "support": 2,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 1.0,
+     "support": 2
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "downgraded: only 2 distinct matching site query/queries; partial overlap with generalist (100% containment); viable only with positioning distinct from generalist"
+  },
+  {
+   "id": 20,
+   "name": "Opticians / optometrists",
+   "pool_size": 19,
+   "overlap_suspect": "medical (adjacent)",
+   "max_overlap_site": "medical",
+   "jaccard": 0.0013,
+   "containment": 0.3158,
+   "support": 1,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.3158,
+     "support": 1
+    },
+    "generalist": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with medical (32% containment); viable only with positioning distinct from medical"
+  },
+  {
+   "id": 21,
+   "name": "Vets",
+   "pool_size": 19,
+   "overlap_suspect": "medical (weak)",
+   "max_overlap_site": "dentists",
+   "jaccard": 0.0015,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (dentists); no material own-estate overlap"
+  },
+  {
+   "id": 22,
+   "name": "Therapists & allied health",
+   "pool_size": 46,
+   "overlap_suspect": "medical (partial)",
+   "max_overlap_site": "medical",
+   "jaccard": 0.0039,
+   "containment": 0.1304,
+   "support": 1,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0039,
+     "containment": 0.1304,
+     "support": 1
+    },
+    "generalist": {
+     "jaccard": 0.0016,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0092,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 13% (medical); no material own-estate overlap"
+  },
+  {
+   "id": 23,
+   "name": "Nurses / healthcare professionals",
+   "pool_size": 20,
+   "overlap_suspect": "medical (partial)",
+   "max_overlap_site": "medical",
+   "jaccard": 0.0026,
+   "containment": 0.35,
+   "support": 2,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0026,
+     "containment": 0.35,
+     "support": 2
+    },
+    "generalist": {
+     "jaccard": 0.001,
+     "containment": 0.35,
+     "support": 5
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with medical (35% containment); viable only with positioning distinct from medical"
+  },
+  {
+   "id": 24,
+   "name": "Care homes",
+   "pool_size": 17,
+   "overlap_suspect": "medical (weak)",
+   "max_overlap_site": "medical",
+   "jaccard": 0.0052,
+   "containment": 0.5294,
+   "support": 2,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0031,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0011,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0052,
+     "containment": 0.5294,
+     "support": 2
+    },
+    "generalist": {
+     "jaccard": 0.0021,
+     "containment": 0.5294,
+     "support": 5
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0097,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "downgraded: only 2 distinct matching site query/queries; partial overlap with medical (53% containment); viable only with positioning distinct from medical"
+  },
+  {
+   "id": 25,
+   "name": "Domiciliary care agencies",
+   "pool_size": 12,
+   "overlap_suspect": "medical (weak)",
+   "max_overlap_site": "contractors-ir35",
+   "jaccard": 0.0097,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0008,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0046,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0039,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0016,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0097,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0062,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (contractors-ir35); no material own-estate overlap"
+  },
+  {
+   "id": 26,
+   "name": "Childminders / nurseries",
+   "pool_size": 19,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "agency",
+   "jaccard": 0.0027,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (agency); no material own-estate overlap"
+  },
+  {
+   "id": 27,
+   "name": "Foster carers",
+   "pool_size": 6,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "property",
+   "jaccard": 0.0003,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (property); no material own-estate overlap"
+  },
+  {
+   "id": 28,
+   "name": "Solicitors / law firms",
+   "pool_size": 37,
+   "overlap_suspect": "solicitors (direct)",
+   "max_overlap_site": "solicitors",
+   "jaccard": 0.0033,
+   "containment": 0.8108,
+   "support": 257,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0011,
+     "containment": 0.2703,
+     "support": 6
+    },
+    "dentists": {
+     "jaccard": 0.003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0033,
+     "containment": 0.8108,
+     "support": 257
+    },
+    "medical": {
+     "jaccard": 0.0039,
+     "containment": 0.1622,
+     "support": 1
+    },
+    "generalist": {
+     "jaccard": 0.0021,
+     "containment": 0.2703,
+     "support": 2
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0192,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0061,
+     "containment": 0.2703,
+     "support": 1
+    }
+   },
+   "verdict": "EXCLUDE",
+   "flag": null,
+   "rationale": "81% of its term pool already lives in the solicitors corpus; this is solicitors-site expansion, not a new niche"
+  },
+  {
+   "id": 29,
+   "name": "Barristers",
+   "pool_size": 6,
+   "overlap_suspect": "solicitors (strong)",
+   "max_overlap_site": "solicitors",
+   "jaccard": 0.0006,
+   "containment": 1.0,
+   "support": 9,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 1.0,
+     "support": 9
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 1.0,
+     "support": 1
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "EXCLUDE",
+   "flag": null,
+   "rationale": "100% of its term pool already lives in the solicitors corpus; this is solicitors-site expansion, not a new niche"
+  },
+  {
+   "id": 30,
+   "name": "IT contractors",
+   "pool_size": 27,
+   "overlap_suspect": "contractors-ir35 (direct)",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0026,
+   "containment": 0.5556,
+   "support": 4,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0011,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0017,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0065,
+     "containment": 0.2222,
+     "support": 4
+    },
+    "generalist": {
+     "jaccard": 0.0026,
+     "containment": 0.5556,
+     "support": 4
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0392,
+     "containment": 0.4815,
+     "support": 5
+    },
+    "construction-cis": {
+     "jaccard": 0.0123,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "EXCLUDE",
+   "flag": null,
+   "rationale": "JUDGMENT: contractors-ir35 direct (containment 0.48/support 5 on its own small 115-query corpus); generalist cap masked it"
+  },
+  {
+   "id": 31,
+   "name": "Freelancers",
+   "pool_size": 7,
+   "overlap_suspect": "contractors-ir35 + generalist",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0005,
+   "containment": 1.0,
+   "support": 4,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 1.0,
+     "support": 4
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "EXCLUDE",
+   "flag": null,
+   "rationale": "JUDGMENT: 'accountants for freelancers' collides head-on with the contractors-ir35 brand (Contractor Tax Accountants) + generalist; a standalone freelancer site is same-audience expansion"
+  },
+  {
+   "id": 32,
+   "name": "Management consultants",
+   "pool_size": 28,
+   "overlap_suspect": "contractors-ir35 (partial)",
+   "max_overlap_site": "contractors-ir35",
+   "jaccard": 0.0268,
+   "containment": 0.4643,
+   "support": 1,
+   "per_site": {
+    "property": {
+     "jaccard": 0.002,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0045,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0038,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0051,
+     "containment": 0.25,
+     "support": 3
+    },
+    "generalist": {
+     "jaccard": 0.0031,
+     "containment": 0.25,
+     "support": 3
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0268,
+     "containment": 0.4643,
+     "support": 1
+    },
+    "construction-cis": {
+     "jaccard": 0.0116,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "downgraded: only 1 distinct matching site query/queries; partial overlap with contractors-ir35 (46% containment); viable only with positioning distinct from contractors-ir35"
+  },
+  {
+   "id": 33,
+   "name": "Startups",
+   "pool_size": 22,
+   "overlap_suspect": "generalist (partial)",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0031,
+   "containment": 0.3636,
+   "support": 2,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0017,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0076,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0033,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0026,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0031,
+     "containment": 0.3636,
+     "support": 2
+    },
+    "agency": {
+     "jaccard": 0.0054,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0093,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.006,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with generalist (36% containment); viable only with positioning distinct from generalist"
+  },
+  {
+   "id": 34,
+   "name": "Tech / SaaS companies",
+   "pool_size": 38,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0036,
+   "containment": 0.1579,
+   "support": 1,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0014,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0045,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0022,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0026,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0036,
+     "containment": 0.1579,
+     "support": 1
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0183,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.018,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 16% (generalist); no material own-estate overlap"
+  },
+  {
+   "id": 35,
+   "name": "Ecommerce sellers",
+   "pool_size": 124,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0154,
+   "containment": 0.4194,
+   "support": 75,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0081,
+     "containment": 0.3226,
+     "support": 34
+    },
+    "dentists": {
+     "jaccard": 0.0218,
+     "containment": 0.1452,
+     "support": 2
+    },
+    "solicitors": {
+     "jaccard": 0.013,
+     "containment": 0.1532,
+     "support": 6
+    },
+    "medical": {
+     "jaccard": 0.0185,
+     "containment": 0.1452,
+     "support": 1
+    },
+    "generalist": {
+     "jaccard": 0.0154,
+     "containment": 0.4194,
+     "support": 75
+    },
+    "agency": {
+     "jaccard": 0.0299,
+     "containment": 0.1452,
+     "support": 2
+    },
+    "contractors-ir35": {
+     "jaccard": 0.027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0243,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with generalist (42% containment); viable only with positioning distinct from generalist"
+  },
+  {
+   "id": 36,
+   "name": "Amazon FBA sellers",
+   "pool_size": 12,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.001,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.001,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (generalist); no material own-estate overlap"
+  },
+  {
+   "id": 37,
+   "name": "Content creators / influencers",
+   "pool_size": 33,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "construction-cis",
+   "jaccard": 0.0061,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0008,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.001,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0061,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (construction-cis); no material own-estate overlap"
+  },
+  {
+   "id": 38,
+   "name": "OnlyFans creators",
+   "pool_size": 12,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "dentists",
+   "jaccard": 0.0015,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (dentists); no material own-estate overlap"
+  },
+  {
+   "id": 39,
+   "name": "Crypto traders / investors",
+   "pool_size": 27,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "property",
+   "jaccard": 0.0017,
+   "containment": 0.2963,
+   "support": 2,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0017,
+     "containment": 0.2963,
+     "support": 2
+    },
+    "dentists": {
+     "jaccard": 0.003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0022,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0026,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0036,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0054,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0093,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with property (30% containment); viable only with positioning distinct from property"
+  },
+  {
+   "id": 40,
+   "name": "Day / forex traders",
+   "pool_size": 23,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0016,
+   "containment": 0.4348,
+   "support": 19,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0008,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0046,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0017,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0026,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0016,
+     "containment": 0.4348,
+     "support": 19
+    },
+    "agency": {
+     "jaccard": 0.0083,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0097,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with generalist (43% containment); viable only with positioning distinct from generalist"
+  },
+  {
+   "id": 41,
+   "name": "Musicians",
+   "pool_size": 12,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "property",
+   "jaccard": 0.0,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (property); no material own-estate overlap"
+  },
+  {
+   "id": 42,
+   "name": "Actors / entertainment industry",
+   "pool_size": 27,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "agency",
+   "jaccard": 0.0027,
+   "containment": 0.2222,
+   "support": 12,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0008,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0011,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0021,
+     "containment": 0.2222,
+     "support": 1
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.2222,
+     "support": 12
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0185,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with agency (22% containment); viable only with positioning distinct from agency"
+  },
+  {
+   "id": 43,
+   "name": "Film & TV production",
+   "pool_size": 18,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "construction-cis",
+   "jaccard": 0.0061,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0016,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0061,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (construction-cis); no material own-estate overlap"
+  },
+  {
+   "id": 44,
+   "name": "Artists / creatives",
+   "pool_size": 25,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0016,
+   "containment": 0.48,
+   "support": 1,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0016,
+     "containment": 0.48,
+     "support": 1
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0062,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "downgraded: only 1 distinct matching site query/queries; partial overlap with generalist (48% containment); viable only with positioning distinct from generalist"
+  },
+  {
+   "id": 45,
+   "name": "Authors / writers",
+   "pool_size": 18,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "solicitors",
+   "jaccard": 0.0006,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (solicitors); no material own-estate overlap"
+  },
+  {
+   "id": 46,
+   "name": "Photographers",
+   "pool_size": 7,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "property",
+   "jaccard": 0.0,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (property); no material own-estate overlap"
+  },
+  {
+   "id": 47,
+   "name": "Interior designers",
+   "pool_size": 13,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "solicitors",
+   "jaccard": 0.0006,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (solicitors); no material own-estate overlap"
+  },
+  {
+   "id": 48,
+   "name": "Marketing agencies",
+   "pool_size": 19,
+   "overlap_suspect": "agency (direct)",
+   "max_overlap_site": "construction-cis",
+   "jaccard": 0.0062,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0055,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0062,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "EXCLUDE",
+   "flag": null,
+   "rationale": "JUDGMENT: agency site's scope is accountants-for-agencies incl. marketing/advertising; corpus just has no impressions for that phrasing yet"
+  },
+  {
+   "id": 49,
+   "name": "Recruitment agencies",
+   "pool_size": 13,
+   "overlap_suspect": "agency (adjacent)",
+   "max_overlap_site": "construction-cis",
+   "jaccard": 0.0062,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0055,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0062,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (construction-cis); no material own-estate overlap"
+  },
+  {
+   "id": 50,
+   "name": "Architects",
+   "pool_size": 12,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.001,
+   "containment": 1.0,
+   "support": 3,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.001,
+     "containment": 1.0,
+     "support": 3
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "capped: overlap is with the generalist site (cannibalisation risk, not niche-site expansion); partial overlap with generalist (100% containment); viable only with positioning distinct from generalist"
+  },
+  {
+   "id": 51,
+   "name": "Engineers / engineering consultants",
+   "pool_size": 12,
+   "overlap_suspect": "contractors-ir35 (partial)",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0016,
+   "containment": 0.5,
+   "support": 1,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0016,
+     "containment": 0.5,
+     "support": 1
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0198,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "downgraded: only 1 distinct matching site query/queries; partial overlap with generalist (50% containment); viable only with positioning distinct from generalist"
+  },
+  {
+   "id": 52,
+   "name": "Financial advisers / FCA-regulated firms",
+   "pool_size": 52,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "property",
+   "jaccard": 0.0028,
+   "containment": 0.2308,
+   "support": 8,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0028,
+     "containment": 0.2308,
+     "support": 8
+    },
+    "dentists": {
+     "jaccard": 0.006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0055,
+     "containment": 0.1154,
+     "support": 2
+    },
+    "medical": {
+     "jaccard": 0.0064,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0041,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0108,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0177,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0175,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with property (23% containment); viable only with positioning distinct from property"
+  },
+  {
+   "id": 53,
+   "name": "Restaurants",
+   "pool_size": 22,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.001,
+   "containment": 0.4091,
+   "support": 2,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.001,
+     "containment": 0.4091,
+     "support": 2
+    },
+    "agency": {
+     "jaccard": 0.0028,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0098,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with generalist (41% containment); viable only with positioning distinct from generalist"
+  },
+  {
+   "id": 54,
+   "name": "Takeaways",
+   "pool_size": 12,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0005,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (generalist); no material own-estate overlap"
+  },
+  {
+   "id": 55,
+   "name": "Pubs & bars",
+   "pool_size": 12,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "medical",
+   "jaccard": 0.0013,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.001,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (medical); no material own-estate overlap"
+  },
+  {
+   "id": 56,
+   "name": "Hotels & guesthouses",
+   "pool_size": 12,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "medical",
+   "jaccard": 0.0026,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0008,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0011,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0026,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (medical); no material own-estate overlap"
+  },
+  {
+   "id": 57,
+   "name": "Hospitality (family)",
+   "pool_size": 26,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0005,
+   "containment": 0.3077,
+   "support": 1,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.3077,
+     "support": 1
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with generalist (31% containment); viable only with positioning distinct from generalist"
+  },
+  {
+   "id": 58,
+   "name": "Event caterers",
+   "pool_size": 13,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "agency",
+   "jaccard": 0.0028,
+   "containment": 0.5385,
+   "support": 1,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0028,
+     "containment": 0.5385,
+     "support": 1
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "JUDGMENT: sole match is one stray Bing VAT query on the agency corpus ('mix of clients and staff at an event...'); no real overlap"
+  },
+  {
+   "id": 59,
+   "name": "Travel agents / tour operators",
+   "pool_size": 18,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "agency",
+   "jaccard": 0.0027,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.001,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (agency); no material own-estate overlap"
+  },
+  {
+   "id": 60,
+   "name": "Hairdressers / barbers / beauty",
+   "pool_size": 46,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.001,
+   "containment": 0.1304,
+   "support": 3,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.001,
+     "containment": 0.1304,
+     "support": 3
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 13% (generalist); no material own-estate overlap"
+  },
+  {
+   "id": 61,
+   "name": "Gyms / fitness / personal trainers",
+   "pool_size": 25,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.001,
+   "containment": 0.24,
+   "support": 1,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.001,
+     "containment": 0.24,
+     "support": 1
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0096,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with generalist (24% containment); viable only with positioning distinct from generalist"
+  },
+  {
+   "id": 62,
+   "name": "Sports clubs",
+   "pool_size": 12,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "property",
+   "jaccard": 0.0,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (property); no material own-estate overlap"
+  },
+  {
+   "id": 63,
+   "name": "Footballers / sports professionals",
+   "pool_size": 18,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "medical",
+   "jaccard": 0.0013,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (medical); no material own-estate overlap"
+  },
+  {
+   "id": 64,
+   "name": "Taxi & private-hire drivers",
+   "pool_size": 16,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0021,
+   "containment": 0.625,
+   "support": 14,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0021,
+     "containment": 0.625,
+     "support": 14
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0096,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "capped: overlap is with the generalist site (cannibalisation risk, not niche-site expansion); partial overlap with generalist (62% containment); viable only with positioning distinct from generalist"
+  },
+  {
+   "id": 65,
+   "name": "Couriers / delivery drivers",
+   "pool_size": 27,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0026,
+   "containment": 0.4074,
+   "support": 14,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0026,
+     "containment": 0.4074,
+     "support": 14
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with generalist (41% containment); viable only with positioning distinct from generalist"
+  },
+  {
+   "id": 66,
+   "name": "Hauliers / trucking",
+   "pool_size": 41,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "contractors-ir35",
+   "jaccard": 0.0185,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0011,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0011,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0026,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0026,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0054,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0185,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (contractors-ir35); no material own-estate overlap"
+  },
+  {
+   "id": 67,
+   "name": "Pilots / aviation",
+   "pool_size": 19,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "contractors-ir35",
+   "jaccard": 0.0095,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0011,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0026,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.001,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0095,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (contractors-ir35); no material own-estate overlap"
+  },
+  {
+   "id": 68,
+   "name": "Farmers / agriculture",
+   "pool_size": 34,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0016,
+   "containment": 0.3529,
+   "support": 3,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0016,
+     "containment": 0.3529,
+     "support": 3
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with generalist (35% containment); viable only with positioning distinct from generalist"
+  },
+  {
+   "id": 69,
+   "name": "Retail / independent shops",
+   "pool_size": 47,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0026,
+   "containment": 0.1277,
+   "support": 3,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0008,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0011,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0026,
+     "containment": 0.1277,
+     "support": 3
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0092,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 13% (generalist); no material own-estate overlap"
+  },
+  {
+   "id": 70,
+   "name": "Used car dealers / automotive",
+   "pool_size": 19,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "agency",
+   "jaccard": 0.0027,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0008,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0026,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0016,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (agency); no material own-estate overlap"
+  },
+  {
+   "id": 71,
+   "name": "Jewellers",
+   "pool_size": 6,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "property",
+   "jaccard": 0.0,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (property); no material own-estate overlap"
+  },
+  {
+   "id": 72,
+   "name": "Cake makers / food producers",
+   "pool_size": 18,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0005,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (generalist); no material own-estate overlap"
+  },
+  {
+   "id": 73,
+   "name": "Manufacturing",
+   "pool_size": 19,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0021,
+   "containment": 0.3158,
+   "support": 2,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0017,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0021,
+     "containment": 0.3158,
+     "support": 2
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0196,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with generalist (32% containment); viable only with positioning distinct from generalist"
+  },
+  {
+   "id": 74,
+   "name": "Charities / non-profits",
+   "pool_size": 36,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "agency",
+   "jaccard": 0.0081,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0008,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0045,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0033,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0051,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0021,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0081,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0059,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (agency); no material own-estate overlap"
+  },
+  {
+   "id": 75,
+   "name": "CICs / social enterprises",
+   "pool_size": 20,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "contractors-ir35",
+   "jaccard": 0.0095,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0014,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0011,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0026,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0016,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0095,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (contractors-ir35); no material own-estate overlap"
+  },
+  {
+   "id": 76,
+   "name": "Churches / religious organisations",
+   "pool_size": 13,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "medical",
+   "jaccard": 0.0013,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (medical); no material own-estate overlap"
+  },
+  {
+   "id": 77,
+   "name": "Schools & academies",
+   "pool_size": 19,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0021,
+   "containment": 0.9474,
+   "support": 4,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0011,
+     "containment": 0.3158,
+     "support": 1
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0021,
+     "containment": 0.9474,
+     "support": 4
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "capped: overlap is with the generalist site (cannibalisation risk, not niche-site expansion); partial overlap with generalist (95% containment); viable only with positioning distinct from generalist"
+  },
+  {
+   "id": 78,
+   "name": "Tutors / private teachers",
+   "pool_size": 18,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "contractors-ir35",
+   "jaccard": 0.0097,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0031,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0011,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0026,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.001,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0097,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (contractors-ir35); no material own-estate overlap"
+  },
+  {
+   "id": 79,
+   "name": "Driving instructors",
+   "pool_size": 6,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0005,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (generalist); no material own-estate overlap"
+  },
+  {
+   "id": 80,
+   "name": "Expats / non-residents",
+   "pool_size": 48,
+   "overlap_suspect": "property (partial: NRL)",
+   "max_overlap_site": "property",
+   "jaccard": 0.0034,
+   "containment": 0.25,
+   "support": 100,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0034,
+     "containment": 0.25,
+     "support": 100
+    },
+    "dentists": {
+     "jaccard": 0.006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0071,
+     "containment": 0.125,
+     "support": 4
+    },
+    "medical": {
+     "jaccard": 0.009,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0047,
+     "containment": 0.125,
+     "support": 1
+    },
+    "agency": {
+     "jaccard": 0.0134,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0174,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0057,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with property (25% containment); viable only with positioning distinct from property"
+  },
+  {
+   "id": 81,
+   "name": "High-net-worth individuals",
+   "pool_size": 16,
+   "overlap_suspect": "generalist (partial)",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0036,
+   "containment": 0.375,
+   "support": 1,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0023,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0092,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.009,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0036,
+     "containment": 0.375,
+     "support": 1
+    },
+    "agency": {
+     "jaccard": 0.0082,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0093,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CAUTION",
+   "flag": null,
+   "rationale": "partial overlap with generalist (38% containment); viable only with positioning distinct from generalist"
+  },
+  {
+   "id": 82,
+   "name": "Franchisees",
+   "pool_size": 20,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "agency",
+   "jaccard": 0.0027,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.001,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0027,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (agency); no material own-estate overlap"
+  },
+  {
+   "id": 83,
+   "name": "Virtual assistants",
+   "pool_size": 7,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "property",
+   "jaccard": 0.0,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (property); no material own-estate overlap"
+  },
+  {
+   "id": 84,
+   "name": "Neurodivergent business owners",
+   "pool_size": 6,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "contractors-ir35",
+   "jaccard": 0.0098,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0031,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0011,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.001,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0028,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0098,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (contractors-ir35); no material own-estate overlap"
+  },
+  {
+   "id": 85,
+   "name": "Energy & renewables",
+   "pool_size": 24,
+   "overlap_suspect": "contractors-ir35 (O&G contractors)",
+   "max_overlap_site": "contractors-ir35",
+   "jaccard": 0.0095,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0011,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0095,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0061,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (contractors-ir35); no material own-estate overlap"
+  },
+  {
+   "id": 86,
+   "name": "Life sciences / pharma",
+   "pool_size": 18,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "generalist",
+   "jaccard": 0.0005,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (generalist); no material own-estate overlap"
+  },
+  {
+   "id": 87,
+   "name": "Maritime",
+   "pool_size": 12,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "property",
+   "jaccard": 0.0,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (property); no material own-estate overlap"
+  },
+  {
+   "id": 88,
+   "name": "Security firms",
+   "pool_size": 6,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "solicitors",
+   "jaccard": 0.0006,
+   "containment": 0.0,
+   "support": 0,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0003,
+     "containment": 0.0,
+     "support": 0
+    },
+    "dentists": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0006,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "max containment 0% (solicitors); no material own-estate overlap"
+  },
+  {
+   "id": 89,
+   "name": "Cleaning businesses",
+   "pool_size": 12,
+   "overlap_suspect": "\u2014",
+   "max_overlap_site": "property",
+   "jaccard": 0.0008,
+   "containment": 0.5,
+   "support": 1,
+   "per_site": {
+    "property": {
+     "jaccard": 0.0008,
+     "containment": 0.5,
+     "support": 1
+    },
+    "dentists": {
+     "jaccard": 0.0015,
+     "containment": 0.0,
+     "support": 0
+    },
+    "solicitors": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "medical": {
+     "jaccard": 0.0013,
+     "containment": 0.0,
+     "support": 0
+    },
+    "generalist": {
+     "jaccard": 0.0005,
+     "containment": 0.0,
+     "support": 0
+    },
+    "agency": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "contractors-ir35": {
+     "jaccard": 0.0,
+     "containment": 0.0,
+     "support": 0
+    },
+    "construction-cis": {
+     "jaccard": 0.0062,
+     "containment": 0.0,
+     "support": 0
+    }
+   },
+   "verdict": "CLEAR",
+   "flag": null,
+   "rationale": "JUDGMENT: sole match is one stray property query ('how to calculate vat for a cleaners business'); no real overlap"
+  }
+ ]
+}
