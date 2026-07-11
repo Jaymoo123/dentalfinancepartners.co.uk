@@ -1,0 +1,6062 @@
+[
+ {
+  "keyword": "hmrc login vat",
+  "volume": 14800,
+  "cpc": 7.699999809265137,
+  "kd": 46
+ },
+ {
+  "keyword": "hmrc vat login",
+  "volume": 14800,
+  "cpc": 7.699999809265137,
+  "kd": 23
+ },
+ {
+  "keyword": "hmrc vat return login",
+  "volume": 14800,
+  "cpc": 7.699999809265137,
+  "kd": 13
+ },
+ {
+  "keyword": "vat login hmrc",
+  "volume": 14800,
+  "cpc": 7.699999809265137,
+  "kd": 23
+ },
+ {
+  "keyword": "hmrc paye login",
+  "volume": 12100,
+  "cpc": 1.25,
+  "kd": 27
+ },
+ {
+  "keyword": "login paye",
+  "volume": 9900,
+  "cpc": 1.25,
+  "kd": 21
+ },
+ {
+  "keyword": "paye log in",
+  "volume": 9900,
+  "cpc": 1.25,
+  "kd": 22
+ },
+ {
+  "keyword": "paye login",
+  "volume": 9900,
+  "cpc": 1.25,
+  "kd": 30
+ },
+ {
+  "keyword": "paye tax login",
+  "volume": 9900,
+  "cpc": 1.25,
+  "kd": 26
+ },
+ {
+  "keyword": "vat log in",
+  "volume": 9900,
+  "cpc": 56.189998626708984,
+  "kd": 11
+ },
+ {
+  "keyword": "enterprise management incentives",
+  "volume": 8100,
+  "cpc": 8.65999984741211,
+  "kd": 4
+ },
+ {
+  "keyword": "r&d",
+  "volume": 3600,
+  "cpc": 12.65999984741211,
+  "kd": 35
+ },
+ {
+  "keyword": "seis",
+  "volume": 3600,
+  "cpc": 12.619999885559082,
+  "kd": 11
+ },
+ {
+  "keyword": "w-8ben-e",
+  "volume": 2400,
+  "cpc": 3.180000066757202,
+  "kd": 8
+ },
+ {
+  "keyword": "w8 ben e",
+  "volume": 2400,
+  "cpc": 3.180000066757202,
+  "kd": 25
+ },
+ {
+  "keyword": "w8-ben-e",
+  "volume": 2400,
+  "cpc": 3.180000066757202,
+  "kd": 10
+ },
+ {
+  "keyword": "w8ben-e",
+  "volume": 2400,
+  "cpc": 3.180000066757202,
+  "kd": 12
+ },
+ {
+  "keyword": "emi share scheme",
+  "volume": 1900,
+  "cpc": 7.610000133514404,
+  "kd": 0
+ },
+ {
+  "keyword": "enterprise management incentive schemes",
+  "volume": 1900,
+  "cpc": 7.610000133514404,
+  "kd": 0
+ },
+ {
+  "keyword": "enterprise management incentives scheme",
+  "volume": 1900,
+  "cpc": 7.610000133514404,
+  "kd": 0
+ },
+ {
+  "keyword": "seed investment enterprise scheme",
+  "volume": 1900,
+  "cpc": 9.0600004196167,
+  "kd": 23
+ },
+ {
+  "keyword": "seis investment",
+  "volume": 1900,
+  "cpc": 9.0600004196167,
+  "kd": 22
+ },
+ {
+  "keyword": "login to vat",
+  "volume": 1600,
+  "cpc": 61.5,
+  "kd": 11
+ },
+ {
+  "keyword": "barnes roffe",
+  "volume": 1000,
+  "cpc": 2.440000057220459,
+  "kd": 0
+ },
+ {
+  "keyword": "hmrc vat account",
+  "volume": 1000,
+  "cpc": 81.41000366210938,
+  "kd": 21
+ },
+ {
+  "keyword": "paye hmrc login",
+  "volume": 1000,
+  "cpc": 6.800000190734863,
+  "kd": 28
+ },
+ {
+  "keyword": "paye settlement agreement",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "paye settlement agreements",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "payroll benefit",
+  "volume": 1000,
+  "cpc": 6.519999980926514,
+  "kd": 0
+ },
+ {
+  "keyword": "payrolling benefits",
+  "volume": 1000,
+  "cpc": 6.519999980926514,
+  "kd": 0
+ },
+ {
+  "keyword": "vat government gateway",
+  "volume": 1000,
+  "cpc": 61.130001068115234,
+  "kd": 11
+ },
+ {
+  "keyword": "w 8ben e form",
+  "volume": 1000,
+  "cpc": 2.4800000190734863,
+  "kd": 19
+ },
+ {
+  "keyword": "w-8ben-e form",
+  "volume": 1000,
+  "cpc": 2.4800000190734863,
+  "kd": 17
+ },
+ {
+  "keyword": "w8 ben e form",
+  "volume": 1000,
+  "cpc": 2.4800000190734863,
+  "kd": 25
+ },
+ {
+  "keyword": "w8 ben-e form",
+  "volume": 1000,
+  "cpc": 2.4800000190734863,
+  "kd": 25
+ },
+ {
+  "keyword": "w8 form ben e",
+  "volume": 1000,
+  "cpc": 2.4800000190734863,
+  "kd": 12
+ },
+ {
+  "keyword": "w8ben e form",
+  "volume": 1000,
+  "cpc": 2.4800000190734863,
+  "kd": 9
+ },
+ {
+  "keyword": "online vat account",
+  "volume": 880,
+  "cpc": 54.91999816894531,
+  "kd": 30
+ },
+ {
+  "keyword": "what allowances are tax free",
+  "volume": 880,
+  "cpc": 1.0700000524520874,
+  "kd": 14
+ },
+ {
+  "keyword": "what is r&d",
+  "volume": 880,
+  "cpc": 40.16999816894531,
+  "kd": 28
+ },
+ {
+  "keyword": "accountant for startups",
+  "volume": 720,
+  "cpc": 39.779998779296875,
+  "kd": 0
+ },
+ {
+  "keyword": "accountants for startups",
+  "volume": 720,
+  "cpc": 39.779998779296875,
+  "kd": 0
+ },
+ {
+  "keyword": "accounting for startup companies",
+  "volume": 720,
+  "cpc": 39.779998779296875,
+  "kd": 0
+ },
+ {
+  "keyword": "accounting startup company",
+  "volume": 720,
+  "cpc": 39.779998779296875,
+  "kd": 0
+ },
+ {
+  "keyword": "gov gateway paye",
+  "volume": 720,
+  "cpc": null,
+  "kd": 12
+ },
+ {
+  "keyword": "government gateway paye",
+  "volume": 720,
+  "cpc": null,
+  "kd": 12
+ },
+ {
+  "keyword": "paye account",
+  "volume": 720,
+  "cpc": 24.950000762939453,
+  "kd": 16
+ },
+ {
+  "keyword": "paye government gateway",
+  "volume": 720,
+  "cpc": null,
+  "kd": 19
+ },
+ {
+  "keyword": "paye login hmrc",
+  "volume": 720,
+  "cpc": null,
+  "kd": 18
+ },
+ {
+  "keyword": "startup business accounting",
+  "volume": 720,
+  "cpc": 39.779998779296875,
+  "kd": 0
+ },
+ {
+  "keyword": "vat gateway login",
+  "volume": 720,
+  "cpc": null,
+  "kd": 12
+ },
+ {
+  "keyword": "embargo app",
+  "volume": 590,
+  "cpc": 1.940000057220459,
+  "kd": 38
+ },
+ {
+  "keyword": "expense policy",
+  "volume": 590,
+  "cpc": 34.91999816894531,
+  "kd": 0
+ },
+ {
+  "keyword": "gov paye login",
+  "volume": 590,
+  "cpc": null,
+  "kd": 45
+ },
+ {
+  "keyword": "gov uk paye login",
+  "volume": 590,
+  "cpc": null,
+  "kd": 44
+ },
+ {
+  "keyword": "gov uk vat login",
+  "volume": 590,
+  "cpc": null,
+  "kd": 21
+ },
+ {
+  "keyword": "gov vat login",
+  "volume": 590,
+  "cpc": null,
+  "kd": 22
+ },
+ {
+  "keyword": "gov.uk paye login",
+  "volume": 590,
+  "cpc": null,
+  "kd": 44
+ },
+ {
+  "keyword": "gov.uk vat login",
+  "volume": 590,
+  "cpc": null,
+  "kd": 60
+ },
+ {
+  "keyword": "government paye login",
+  "volume": 590,
+  "cpc": null,
+  "kd": 40
+ },
+ {
+  "keyword": "government vat login",
+  "volume": 590,
+  "cpc": null,
+  "kd": 13
+ },
+ {
+  "keyword": "subsistence expenses",
+  "volume": 590,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vat return log in",
+  "volume": 590,
+  "cpc": 7.659999847412109,
+  "kd": 30
+ },
+ {
+  "keyword": "vat return login",
+  "volume": 590,
+  "cpc": 7.659999847412109,
+  "kd": 15
+ },
+ {
+  "keyword": "vat returns login",
+  "volume": 590,
+  "cpc": 7.659999847412109,
+  "kd": 15
+ },
+ {
+  "keyword": "eis and seis",
+  "volume": 480,
+  "cpc": 21.979999542236328,
+  "kd": 2
+ },
+ {
+  "keyword": "emi shares",
+  "volume": 480,
+  "cpc": 5.619999885559082,
+  "kd": 1
+ },
+ {
+  "keyword": "er contribution",
+  "volume": 480,
+  "cpc": null,
+  "kd": 5
+ },
+ {
+  "keyword": "hmrc paye employee login",
+  "volume": 480,
+  "cpc": 0.9399999976158142,
+  "kd": 40
+ },
+ {
+  "keyword": "login vat online",
+  "volume": 480,
+  "cpc": null,
+  "kd": 46
+ },
+ {
+  "keyword": "pension contribution definition",
+  "volume": 480,
+  "cpc": 2.430000066757202,
+  "kd": 3
+ },
+ {
+  "keyword": "psa hmrc",
+  "volume": 480,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "psa tax",
+  "volume": 480,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "r&d what is",
+  "volume": 480,
+  "cpc": null,
+  "kd": 28
+ },
+ {
+  "keyword": "seis and eis",
+  "volume": 480,
+  "cpc": 21.979999542236328,
+  "kd": 5
+ },
+ {
+  "keyword": "seis eis investment",
+  "volume": 480,
+  "cpc": 21.979999542236328,
+  "kd": 6
+ },
+ {
+  "keyword": "subsistence travel",
+  "volume": 480,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "travel and subsistence",
+  "volume": 480,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "travel subsistence",
+  "volume": 480,
+  "cpc": null,
+  "kd": 1
+ },
+ {
+  "keyword": "travelling and subsistence",
+  "volume": 480,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vat hmrc login",
+  "volume": 480,
+  "cpc": null,
+  "kd": 23
+ },
+ {
+  "keyword": "vat login online",
+  "volume": 480,
+  "cpc": null,
+  "kd": 46
+ },
+ {
+  "keyword": "vat login uk",
+  "volume": 480,
+  "cpc": null,
+  "kd": 17
+ },
+ {
+  "keyword": "vat online login",
+  "volume": 480,
+  "cpc": null,
+  "kd": 46
+ },
+ {
+  "keyword": "vat uk login",
+  "volume": 480,
+  "cpc": null,
+  "kd": 22
+ },
+ {
+  "keyword": "vested shares",
+  "volume": 480,
+  "cpc": 18.739999771118164,
+  "kd": 0
+ },
+ {
+  "keyword": "additional information form r&d",
+  "volume": 390,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "gateway vat",
+  "volume": 390,
+  "cpc": null,
+  "kd": 13
+ },
+ {
+  "keyword": "gift to client",
+  "volume": 390,
+  "cpc": 5.230000019073486,
+  "kd": 0
+ },
+ {
+  "keyword": "gov gateway login vat",
+  "volume": 390,
+  "cpc": null,
+  "kd": 21
+ },
+ {
+  "keyword": "government gateway login vat",
+  "volume": 390,
+  "cpc": null,
+  "kd": 14
+ },
+ {
+  "keyword": "government gateway vat login",
+  "volume": 390,
+  "cpc": null,
+  "kd": 13
+ },
+ {
+  "keyword": "my vat account",
+  "volume": 390,
+  "cpc": null,
+  "kd": 17
+ },
+ {
+  "keyword": "paye sign in",
+  "volume": 390,
+  "cpc": null,
+  "kd": 30
+ },
+ {
+  "keyword": "r&d additional information form",
+  "volume": 390,
+  "cpc": 7.139999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "seis funding",
+  "volume": 390,
+  "cpc": 7.980000019073486,
+  "kd": 22
+ },
+ {
+  "keyword": "seis funds",
+  "volume": 390,
+  "cpc": 7.980000019073486,
+  "kd": 4
+ },
+ {
+  "keyword": "small business accountants in london",
+  "volume": 390,
+  "cpc": 14.029999732971191,
+  "kd": 16
+ },
+ {
+  "keyword": "vat gateway",
+  "volume": 390,
+  "cpc": null,
+  "kd": 11
+ },
+ {
+  "keyword": "vat government gateway login",
+  "volume": 390,
+  "cpc": null,
+  "kd": 22
+ },
+ {
+  "keyword": "what does r&d stand for",
+  "volume": 390,
+  "cpc": 4.090000152587891,
+  "kd": 28
+ },
+ {
+  "keyword": "additional pension contributions",
+  "volume": 320,
+  "cpc": 6.980000019073486,
+  "kd": 6
+ },
+ {
+  "keyword": "armalytix login",
+  "volume": 320,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "claim r&d tax credits",
+  "volume": 320,
+  "cpc": 59.130001068115234,
+  "kd": 20
+ },
+ {
+  "keyword": "client accounting",
+  "volume": 320,
+  "cpc": 25.799999237060547,
+  "kd": 0
+ },
+ {
+  "keyword": "hmrc psa",
+  "volume": 320,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "login to vat account",
+  "volume": 320,
+  "cpc": null,
+  "kd": 20
+ },
+ {
+  "keyword": "pension extra contributions",
+  "volume": 320,
+  "cpc": 6.980000019073486,
+  "kd": 0
+ },
+ {
+  "keyword": "r&d tax credit claims",
+  "volume": 320,
+  "cpc": 59.130001068115234,
+  "kd": 17
+ },
+ {
+  "keyword": "seed enterprise investment scheme uk",
+  "volume": 320,
+  "cpc": 7.980000019073486,
+  "kd": 17
+ },
+ {
+  "keyword": "seed investment scheme uk",
+  "volume": 320,
+  "cpc": 7.980000019073486,
+  "kd": 10
+ },
+ {
+  "keyword": "shares vesting meaning",
+  "volume": 320,
+  "cpc": 7.230000019073486,
+  "kd": 0
+ },
+ {
+  "keyword": "stock count",
+  "volume": 320,
+  "cpc": 23.809999465942383,
+  "kd": 2
+ },
+ {
+  "keyword": "stock counts",
+  "volume": 320,
+  "cpc": 23.809999465942383,
+  "kd": 5
+ },
+ {
+  "keyword": "tech accountant",
+  "volume": 320,
+  "cpc": 11.65999984741211,
+  "kd": 0
+ },
+ {
+  "keyword": "tech accountants",
+  "volume": 320,
+  "cpc": 11.65999984741211,
+  "kd": 2
+ },
+ {
+  "keyword": "technology accountants",
+  "volume": 320,
+  "cpc": 11.65999984741211,
+  "kd": 0
+ },
+ {
+  "keyword": "unapproved",
+  "volume": 320,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vat on client entertainment",
+  "volume": 320,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vest shares meaning",
+  "volume": 320,
+  "cpc": 7.230000019073486,
+  "kd": 0
+ },
+ {
+  "keyword": "vested shares meaning",
+  "volume": 320,
+  "cpc": 7.230000019073486,
+  "kd": 0
+ },
+ {
+  "keyword": "vesting of shares meaning",
+  "volume": 320,
+  "cpc": 7.230000019073486,
+  "kd": 0
+ },
+ {
+  "keyword": "vesting shares meaning",
+  "volume": 320,
+  "cpc": 7.230000019073486,
+  "kd": 0
+ },
+ {
+  "keyword": "working at home expenses",
+  "volume": 320,
+  "cpc": null,
+  "kd": 5
+ },
+ {
+  "keyword": "working from home expenses",
+  "volume": 320,
+  "cpc": null,
+  "kd": 10
+ },
+ {
+  "keyword": "eis advance assurance",
+  "volume": 260,
+  "cpc": 37.119998931884766,
+  "kd": 2
+ },
+ {
+  "keyword": "log in vat account",
+  "volume": 260,
+  "cpc": null,
+  "kd": 17
+ },
+ {
+  "keyword": "log into vat account",
+  "volume": 260,
+  "cpc": null,
+  "kd": 20
+ },
+ {
+  "keyword": "login vat account",
+  "volume": 260,
+  "cpc": null,
+  "kd": 16
+ },
+ {
+  "keyword": "pre registration expenses vat",
+  "volume": 260,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "pre registration vat expenses",
+  "volume": 260,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "pre vat registration expenses",
+  "volume": 260,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "r&d definition",
+  "volume": 260,
+  "cpc": null,
+  "kd": 28
+ },
+ {
+  "keyword": "seis eis",
+  "volume": 260,
+  "cpc": 15.470000267028809,
+  "kd": 7
+ },
+ {
+  "keyword": "seis/eis",
+  "volume": 260,
+  "cpc": 15.470000267028809,
+  "kd": 16
+ },
+ {
+  "keyword": "small business accountants london",
+  "volume": 260,
+  "cpc": 44.029998779296875,
+  "kd": 16
+ },
+ {
+  "keyword": "staff entertaining allowance",
+  "volume": 260,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "staff entertainment allowance",
+  "volume": 260,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "startup accountant",
+  "volume": 260,
+  "cpc": 78.08000183105469,
+  "kd": 0
+ },
+ {
+  "keyword": "startup accountants",
+  "volume": 260,
+  "cpc": 78.08000183105469,
+  "kd": 4
+ },
+ {
+  "keyword": "startup business accountant",
+  "volume": 260,
+  "cpc": 78.08000183105469,
+  "kd": 0
+ },
+ {
+  "keyword": "startup business accountants",
+  "volume": 260,
+  "cpc": 78.08000183105469,
+  "kd": 0
+ },
+ {
+  "keyword": "what is oss",
+  "volume": 260,
+  "cpc": null,
+  "kd": 9
+ },
+ {
+  "keyword": "accountants for sme",
+  "volume": 210,
+  "cpc": 35.7599983215332,
+  "kd": 0
+ },
+ {
+  "keyword": "burgis and bullock",
+  "volume": 210,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "business startup accountant",
+  "volume": 210,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "ers rules",
+  "volume": 210,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "hmrc submit vat return online",
+  "volume": 210,
+  "cpc": 26.90999984741211,
+  "kd": 20
+ },
+ {
+  "keyword": "hmrc vat sign in",
+  "volume": 210,
+  "cpc": null,
+  "kd": 22
+ },
+ {
+  "keyword": "itinerant worker",
+  "volume": 210,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "paye account hmrc",
+  "volume": 210,
+  "cpc": 0.949999988079071,
+  "kd": 17
+ },
+ {
+  "keyword": "paye online login",
+  "volume": 210,
+  "cpc": null,
+  "kd": 9
+ },
+ {
+  "keyword": "psa agreement",
+  "volume": 210,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vat portal",
+  "volume": 210,
+  "cpc": null,
+  "kd": 46
+ },
+ {
+  "keyword": "what are vested shares",
+  "volume": 210,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "what is vesting shares",
+  "volume": 210,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "aventus partners",
+  "volume": 170,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "can you charge vat if not vat registered",
+  "volume": 170,
+  "cpc": null,
+  "kd": 1
+ },
+ {
+  "keyword": "company report",
+  "volume": 170,
+  "cpc": 6.300000190734863,
+  "kd": 27
+ },
+ {
+  "keyword": "form eis 1",
+  "volume": 170,
+  "cpc": 12.699999809265137,
+  "kd": 0
+ },
+ {
+  "keyword": "hmrc paye login employer",
+  "volume": 170,
+  "cpc": null,
+  "kd": 5
+ },
+ {
+  "keyword": "hmrc payroll login",
+  "volume": 170,
+  "cpc": 0.7900000214576721,
+  "kd": 40
+ },
+ {
+  "keyword": "hmrc vat portal",
+  "volume": 170,
+  "cpc": null,
+  "kd": 19
+ },
+ {
+  "keyword": "home work allowance",
+  "volume": 170,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "paye gov login",
+  "volume": 170,
+  "cpc": null,
+  "kd": 45
+ },
+ {
+  "keyword": "seis meaning",
+  "volume": 170,
+  "cpc": 12.710000038146973,
+  "kd": 11
+ },
+ {
+  "keyword": "start up accountants",
+  "volume": 170,
+  "cpc": 33.31999969482422,
+  "kd": 0
+ },
+ {
+  "keyword": "strategic report",
+  "volume": 170,
+  "cpc": 5.949999809265137,
+  "kd": 0
+ },
+ {
+  "keyword": "strategic reporting",
+  "volume": 170,
+  "cpc": 5.949999809265137,
+  "kd": 0
+ },
+ {
+  "keyword": "strategic reports",
+  "volume": 170,
+  "cpc": 5.949999809265137,
+  "kd": 0
+ },
+ {
+  "keyword": "strategy report",
+  "volume": 170,
+  "cpc": 5.949999809265137,
+  "kd": 0
+ },
+ {
+  "keyword": "the forge photographic services ltd",
+  "volume": 170,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vat account hmrc",
+  "volume": 170,
+  "cpc": 137.8300018310547,
+  "kd": 19
+ },
+ {
+  "keyword": "video game tax relief",
+  "volume": 170,
+  "cpc": null,
+  "kd": 6
+ },
+ {
+  "keyword": "video games tax relief",
+  "volume": 170,
+  "cpc": null,
+  "kd": 6
+ },
+ {
+  "keyword": "wfh allowance",
+  "volume": 170,
+  "cpc": null,
+  "kd": 8
+ },
+ {
+  "keyword": "accountants for tech companies",
+  "volume": 140,
+  "cpc": 6.949999809265137,
+  "kd": 0
+ },
+ {
+  "keyword": "accountants for tech startups",
+  "volume": 140,
+  "cpc": null,
+  "kd": 2
+ },
+ {
+  "keyword": "accountants for technology companies",
+  "volume": 140,
+  "cpc": 6.949999809265137,
+  "kd": 0
+ },
+ {
+  "keyword": "accountants sidcup",
+  "volume": 140,
+  "cpc": 6.150000095367432,
+  "kd": 0
+ },
+ {
+  "keyword": "accounting for tech companies",
+  "volume": 140,
+  "cpc": 6.949999809265137,
+  "kd": 0
+ },
+ {
+  "keyword": "accounting for tech startups",
+  "volume": 140,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "accounting for technology companies",
+  "volume": 140,
+  "cpc": 6.949999809265137,
+  "kd": 0
+ },
+ {
+  "keyword": "accounting tech companies",
+  "volume": 140,
+  "cpc": 6.949999809265137,
+  "kd": 0
+ },
+ {
+  "keyword": "additional information form",
+  "volume": 140,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "barnes roffe llp",
+  "volume": 140,
+  "cpc": 3.240000009536743,
+  "kd": 1
+ },
+ {
+  "keyword": "benefits gifts",
+  "volume": 140,
+  "cpc": 0.6299999952316284,
+  "kd": 0
+ },
+ {
+  "keyword": "business start up accountant",
+  "volume": 140,
+  "cpc": 90.06999969482422,
+  "kd": 0
+ },
+ {
+  "keyword": "business start up accountants",
+  "volume": 140,
+  "cpc": 90.06999969482422,
+  "kd": 0
+ },
+ {
+  "keyword": "business vat account",
+  "volume": 140,
+  "cpc": null,
+  "kd": 9
+ },
+ {
+  "keyword": "eis 3 certificate",
+  "volume": 140,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "eis3 certificate",
+  "volume": 140,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "employee benefits tax free",
+  "volume": 140,
+  "cpc": 16.1299991607666,
+  "kd": 2
+ },
+ {
+  "keyword": "exercisable options",
+  "volume": 140,
+  "cpc": null,
+  "kd": 9
+ },
+ {
+  "keyword": "exercise options",
+  "volume": 140,
+  "cpc": null,
+  "kd": 17
+ },
+ {
+  "keyword": "exercised option",
+  "volume": 140,
+  "cpc": null,
+  "kd": 8
+ },
+ {
+  "keyword": "exercised options",
+  "volume": 140,
+  "cpc": null,
+  "kd": 21
+ },
+ {
+  "keyword": "exercising options",
+  "volume": 140,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "gift shares to spouse",
+  "volume": 140,
+  "cpc": 4.570000171661377,
+  "kd": 0
+ },
+ {
+  "keyword": "gifting shares to spouse",
+  "volume": 140,
+  "cpc": 4.570000171661377,
+  "kd": 0
+ },
+ {
+  "keyword": "government gateway paye login",
+  "volume": 140,
+  "cpc": null,
+  "kd": 19
+ },
+ {
+  "keyword": "hmrc gateway vat",
+  "volume": 140,
+  "cpc": 7.329999923706055,
+  "kd": 12
+ },
+ {
+  "keyword": "hmrc payroll benefits",
+  "volume": 140,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "hmrc payrolling benefits",
+  "volume": 140,
+  "cpc": null,
+  "kd": 3
+ },
+ {
+  "keyword": "hmrc vat account login",
+  "volume": 140,
+  "cpc": null,
+  "kd": 27
+ },
+ {
+  "keyword": "hmrc vat gateway",
+  "volume": 140,
+  "cpc": 7.329999923706055,
+  "kd": 18
+ },
+ {
+  "keyword": "hmrc vat login uk",
+  "volume": 140,
+  "cpc": null,
+  "kd": 24
+ },
+ {
+  "keyword": "login hmrc vat",
+  "volume": 140,
+  "cpc": null,
+  "kd": 14
+ },
+ {
+  "keyword": "mandatory payrolling of benefits",
+  "volume": 140,
+  "cpc": 1.6600000858306885,
+  "kd": 0
+ },
+ {
+  "keyword": "option exercise",
+  "volume": 140,
+  "cpc": null,
+  "kd": 8
+ },
+ {
+  "keyword": "paye gateway",
+  "volume": 140,
+  "cpc": null,
+  "kd": 12
+ },
+ {
+  "keyword": "payroll reporting",
+  "volume": 140,
+  "cpc": null,
+  "kd": 3
+ },
+ {
+  "keyword": "payrolling benefits hmrc",
+  "volume": 140,
+  "cpc": null,
+  "kd": 4
+ },
+ {
+  "keyword": "psa payment",
+  "volume": 140,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "psa1 form",
+  "volume": 140,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "sidcup accountants",
+  "volume": 140,
+  "cpc": 6.150000095367432,
+  "kd": 0
+ },
+ {
+  "keyword": "staff entertaining limit",
+  "volume": 140,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "staff parties",
+  "volume": 140,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "staff party",
+  "volume": 140,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "start up business accountant",
+  "volume": 140,
+  "cpc": 90.06999969482422,
+  "kd": 0
+ },
+ {
+  "keyword": "start up business accountants",
+  "volume": 140,
+  "cpc": 90.06999969482422,
+  "kd": 0
+ },
+ {
+  "keyword": "stock vesting",
+  "volume": 140,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "tax free benefit",
+  "volume": 140,
+  "cpc": 16.1299991607666,
+  "kd": 7
+ },
+ {
+  "keyword": "tax free benefits",
+  "volume": 140,
+  "cpc": 16.1299991607666,
+  "kd": 0
+ },
+ {
+  "keyword": "tax free benefits for employees",
+  "volume": 140,
+  "cpc": 16.1299991607666,
+  "kd": 0
+ },
+ {
+  "keyword": "tax free benefits to employees",
+  "volume": 140,
+  "cpc": 16.1299991607666,
+  "kd": 0
+ },
+ {
+  "keyword": "tax free company benefits",
+  "volume": 140,
+  "cpc": 16.1299991607666,
+  "kd": 2
+ },
+ {
+  "keyword": "tax free employee benefits",
+  "volume": 140,
+  "cpc": 16.1299991607666,
+  "kd": 0
+ },
+ {
+  "keyword": "tax free employment benefits",
+  "volume": 140,
+  "cpc": 16.1299991607666,
+  "kd": 0
+ },
+ {
+  "keyword": "tax-free benefits for employees",
+  "volume": 140,
+  "cpc": 16.1299991607666,
+  "kd": 0
+ },
+ {
+  "keyword": "tax-free company benefits",
+  "volume": 140,
+  "cpc": 16.1299991607666,
+  "kd": 0
+ },
+ {
+  "keyword": "tax-free employee benefits",
+  "volume": 140,
+  "cpc": 16.1299991607666,
+  "kd": 0
+ },
+ {
+  "keyword": "tech company accountants",
+  "volume": 140,
+  "cpc": 6.949999809265137,
+  "kd": 0
+ },
+ {
+  "keyword": "vat gateway hmrc",
+  "volume": 140,
+  "cpc": 7.329999923706055,
+  "kd": 11
+ },
+ {
+  "keyword": "vesting stock",
+  "volume": 140,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vesting stocks",
+  "volume": 140,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vgtr",
+  "volume": 140,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "accountants barnet",
+  "volume": 110,
+  "cpc": 11.329999923706055,
+  "kd": 12
+ },
+ {
+  "keyword": "advance assurance",
+  "volume": 110,
+  "cpc": 58.63999938964844,
+  "kd": 0
+ },
+ {
+  "keyword": "appendix 4",
+  "volume": 110,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "appendix 4 hmrc",
+  "volume": 110,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "business pension contributions",
+  "volume": 110,
+  "cpc": 5.130000114440918,
+  "kd": 9
+ },
+ {
+  "keyword": "exercise price",
+  "volume": 110,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "hmrc appendix 4",
+  "volume": 110,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "hmrc r&d additional information form",
+  "volume": 110,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "login to paye",
+  "volume": 110,
+  "cpc": null,
+  "kd": 16
+ },
+ {
+  "keyword": "moss vat",
+  "volume": 110,
+  "cpc": null,
+  "kd": 7
+ },
+ {
+  "keyword": "payroll psa",
+  "volume": 110,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "pre registration vat",
+  "volume": 110,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "pre-registration vat",
+  "volume": 110,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "psa costs",
+  "volume": 110,
+  "cpc": 6.559999942779541,
+  "kd": 0
+ },
+ {
+  "keyword": "psa payroll",
+  "volume": 110,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "psa reporting",
+  "volume": 110,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "psa return",
+  "volume": 110,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "psa returns",
+  "volume": 110,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "r&d tax credit sme",
+  "volume": 110,
+  "cpc": 23.829999923706055,
+  "kd": 2
+ },
+ {
+  "keyword": "r&d tax credits sme",
+  "volume": 110,
+  "cpc": 23.829999923706055,
+  "kd": 0
+ },
+ {
+  "keyword": "seis advance assurance application",
+  "volume": 110,
+  "cpc": 42.22999954223633,
+  "kd": 2
+ },
+ {
+  "keyword": "seis1",
+  "volume": 110,
+  "cpc": 7.360000133514404,
+  "kd": 0
+ },
+ {
+  "keyword": "short term business visitors",
+  "volume": 110,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "short-term business visitors",
+  "volume": 110,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "small accountancy firms",
+  "volume": 110,
+  "cpc": 30.3700008392334,
+  "kd": 24
+ },
+ {
+  "keyword": "small accounting firm",
+  "volume": 110,
+  "cpc": 30.3700008392334,
+  "kd": 9
+ },
+ {
+  "keyword": "small accounting firms",
+  "volume": 110,
+  "cpc": 30.3700008392334,
+  "kd": 2
+ },
+ {
+  "keyword": "small firm accounting",
+  "volume": 110,
+  "cpc": 30.3700008392334,
+  "kd": 3
+ },
+ {
+  "keyword": "stbv",
+  "volume": 110,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "ttr barnes",
+  "volume": 110,
+  "cpc": null,
+  "kd": 3
+ },
+ {
+  "keyword": "vat moss",
+  "volume": 110,
+  "cpc": null,
+  "kd": 15
+ },
+ {
+  "keyword": "vat one stop shop",
+  "volume": 110,
+  "cpc": 8.930000305175781,
+  "kd": 14
+ },
+ {
+  "keyword": "vat pre registration",
+  "volume": 110,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "what is a paye settlement agreement",
+  "volume": 110,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "what is paye settlement agreement",
+  "volume": 110,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "abacus bean",
+  "volume": 90,
+  "cpc": null,
+  "kd": 3
+ },
+ {
+  "keyword": "accounting firm online",
+  "volume": 90,
+  "cpc": 23.799999237060547,
+  "kd": 46
+ },
+ {
+  "keyword": "accounting for startup",
+  "volume": 90,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "accounting for startups",
+  "volume": 90,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "advance form",
+  "volume": 90,
+  "cpc": null,
+  "kd": 1
+ },
+ {
+  "keyword": "armalytix report",
+  "volume": 90,
+  "cpc": 4.920000076293945,
+  "kd": 0
+ },
+ {
+  "keyword": "bookkeeping startups",
+  "volume": 90,
+  "cpc": 2.5899999141693115,
+  "kd": 4
+ },
+ {
+  "keyword": "briefcase accounting",
+  "volume": 90,
+  "cpc": 14.729999542236328,
+  "kd": 0
+ },
+ {
+  "keyword": "dc pension contributions",
+  "volume": 90,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "de minimis state aid",
+  "volume": 90,
+  "cpc": null,
+  "kd": 3
+ },
+ {
+  "keyword": "eis form 3",
+  "volume": 90,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "eis3",
+  "volume": 90,
+  "cpc": 1.9300000667572021,
+  "kd": 0
+ },
+ {
+  "keyword": "eis3 form",
+  "volume": 90,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "emi annual return",
+  "volume": 90,
+  "cpc": 32.349998474121094,
+  "kd": 0
+ },
+ {
+  "keyword": "emi valuation",
+  "volume": 90,
+  "cpc": 66.37000274658203,
+  "kd": 0
+ },
+ {
+  "keyword": "employee stock options vesting",
+  "volume": 90,
+  "cpc": 13.079999923706055,
+  "kd": 3
+ },
+ {
+  "keyword": "game tax",
+  "volume": 90,
+  "cpc": null,
+  "kd": 15
+ },
+ {
+  "keyword": "how to claim eis tax relief",
+  "volume": 90,
+  "cpc": null,
+  "kd": 2
+ },
+ {
+  "keyword": "my paye account",
+  "volume": 90,
+  "cpc": null,
+  "kd": 35
+ },
+ {
+  "keyword": "office at home expenses",
+  "volume": 90,
+  "cpc": null,
+  "kd": 10
+ },
+ {
+  "keyword": "p11d examples",
+  "volume": 90,
+  "cpc": null,
+  "kd": 4
+ },
+ {
+  "keyword": "paye account login",
+  "volume": 90,
+  "cpc": null,
+  "kd": 16
+ },
+ {
+  "keyword": "paye activation code",
+  "volume": 90,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "paye government gateway login",
+  "volume": 90,
+  "cpc": null,
+  "kd": 27
+ },
+ {
+  "keyword": "payment settlement agreement",
+  "volume": 90,
+  "cpc": 34.189998626708984,
+  "kd": 0
+ },
+ {
+  "keyword": "psa calculation",
+  "volume": 90,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "psa calculations",
+  "volume": 90,
+  "cpc": null,
+  "kd": 2
+ },
+ {
+  "keyword": "r and d projects",
+  "volume": 90,
+  "cpc": null,
+  "kd": 16
+ },
+ {
+  "keyword": "r and d tax incentives",
+  "volume": 90,
+  "cpc": null,
+  "kd": 23
+ },
+ {
+  "keyword": "r&d project",
+  "volume": 90,
+  "cpc": null,
+  "kd": 8
+ },
+ {
+  "keyword": "r&d projects",
+  "volume": 90,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "r&d tax incentives",
+  "volume": 90,
+  "cpc": null,
+  "kd": 12
+ },
+ {
+  "keyword": "richmond barnes",
+  "volume": 90,
+  "cpc": 0.10000000149011612,
+  "kd": 1
+ },
+ {
+  "keyword": "share option vesting",
+  "volume": 90,
+  "cpc": 13.079999923706055,
+  "kd": 0
+ },
+ {
+  "keyword": "share options vesting",
+  "volume": 90,
+  "cpc": 13.079999923706055,
+  "kd": 2
+ },
+ {
+  "keyword": "small accounting firms london",
+  "volume": 90,
+  "cpc": 12.369999885559082,
+  "kd": 4
+ },
+ {
+  "keyword": "startup accounts",
+  "volume": 90,
+  "cpc": 94.4800033569336,
+  "kd": 28
+ },
+ {
+  "keyword": "startup bookkeeper",
+  "volume": 90,
+  "cpc": 2.5899999141693115,
+  "kd": 9
+ },
+ {
+  "keyword": "startup bookkeeping",
+  "volume": 90,
+  "cpc": 2.5899999141693115,
+  "kd": 3
+ },
+ {
+  "keyword": "stock option vesting",
+  "volume": 90,
+  "cpc": 13.079999923706055,
+  "kd": 0
+ },
+ {
+  "keyword": "stock options vested",
+  "volume": 90,
+  "cpc": 13.079999923706055,
+  "kd": 0
+ },
+ {
+  "keyword": "stock options vesting",
+  "volume": 90,
+  "cpc": 13.079999923706055,
+  "kd": 0
+ },
+ {
+  "keyword": "tax benefits for employees",
+  "volume": 90,
+  "cpc": null,
+  "kd": 4
+ },
+ {
+  "keyword": "tax incentives for r&d",
+  "volume": 90,
+  "cpc": null,
+  "kd": 9
+ },
+ {
+  "keyword": "trivial benefits gift cards",
+  "volume": 90,
+  "cpc": 11.100000381469727,
+  "kd": 0
+ },
+ {
+  "keyword": "use of home flat rate",
+  "volume": 90,
+  "cpc": null,
+  "kd": 4
+ },
+ {
+  "keyword": "vested share options",
+  "volume": 90,
+  "cpc": 13.079999923706055,
+  "kd": 0
+ },
+ {
+  "keyword": "vested stock options",
+  "volume": 90,
+  "cpc": 13.079999923706055,
+  "kd": 4
+ },
+ {
+  "keyword": "vesting share options",
+  "volume": 90,
+  "cpc": 13.079999923706055,
+  "kd": 1
+ },
+ {
+  "keyword": "vesting stock options",
+  "volume": 90,
+  "cpc": 13.079999923706055,
+  "kd": 0
+ },
+ {
+  "keyword": "what is an er contribution",
+  "volume": 90,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "what is psa tax",
+  "volume": 90,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "work retreat",
+  "volume": 90,
+  "cpc": 17.799999237060547,
+  "kd": 0
+ },
+ {
+  "keyword": "working from home expenses hmrc",
+  "volume": 90,
+  "cpc": null,
+  "kd": 10
+ },
+ {
+  "keyword": "working from home flat rate",
+  "volume": 90,
+  "cpc": null,
+  "kd": 3
+ },
+ {
+  "keyword": "accounting firm for startups",
+  "volume": 70,
+  "cpc": 40.220001220703125,
+  "kd": 0
+ },
+ {
+  "keyword": "accounting firms for startups",
+  "volume": 70,
+  "cpc": 40.220001220703125,
+  "kd": 0
+ },
+ {
+  "keyword": "add vat to government gateway",
+  "volume": 70,
+  "cpc": null,
+  "kd": 7
+ },
+ {
+  "keyword": "advance assurance application",
+  "volume": 70,
+  "cpc": 62.47999954223633,
+  "kd": 1
+ },
+ {
+  "keyword": "are client gifts tax deductible",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "are customer gifts tax deductible",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "are gifts for clients tax deductible",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "badr criteria",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "bank charges vat rate",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "barnes roffe accountants",
+  "volume": 70,
+  "cpc": 2.7100000381469727,
+  "kd": 0
+ },
+ {
+  "keyword": "bik payroll",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "bik payrolled",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "buzz accounting",
+  "volume": 70,
+  "cpc": null,
+  "kd": 8
+ },
+ {
+  "keyword": "can you claim vat on gifts for customers",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "claiming pre registration vat",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "client gift cards",
+  "volume": 70,
+  "cpc": 1.5499999523162842,
+  "kd": 0
+ },
+ {
+  "keyword": "client gifts tax deductible",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "dext expense claims",
+  "volume": 70,
+  "cpc": 1.25,
+  "kd": 0
+ },
+ {
+  "keyword": "difference between seis and eis",
+  "volume": 70,
+  "cpc": 5.900000095367432,
+  "kd": 0
+ },
+ {
+  "keyword": "embargo loyalty",
+  "volume": 70,
+  "cpc": 0.7699999809265137,
+  "kd": 14
+ },
+ {
+  "keyword": "emi scheme hmrc",
+  "volume": 70,
+  "cpc": 4.039999961853027,
+  "kd": 13
+ },
+ {
+  "keyword": "emi shares meaning",
+  "volume": 70,
+  "cpc": 4.489999771118164,
+  "kd": 3
+ },
+ {
+  "keyword": "enterprise investment scheme compliance statement",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "expenses policy template",
+  "volume": 70,
+  "cpc": 8.380000114440918,
+  "kd": 0
+ },
+ {
+  "keyword": "gift for client tax deduction",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "gift to customer tax deductible",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "gift to staff tax deductible",
+  "volume": 70,
+  "cpc": 0.2199999988079071,
+  "kd": 0
+ },
+ {
+  "keyword": "gifts for clients tax deductible",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "gifts for clients tax deduction",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "gifts to customers tax deductible",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "gifts vat",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "government gateway for vat",
+  "volume": 70,
+  "cpc": null,
+  "kd": 11
+ },
+ {
+  "keyword": "hmrc additional information form r&d",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "hmrc advance assurance",
+  "volume": 70,
+  "cpc": 67.0199966430664,
+  "kd": 8
+ },
+ {
+  "keyword": "hmrc emi scheme",
+  "volume": 70,
+  "cpc": 4.039999961853027,
+  "kd": 11
+ },
+ {
+  "keyword": "hmrc pay as you earn login",
+  "volume": 70,
+  "cpc": 0.9100000262260437,
+  "kd": 40
+ },
+ {
+  "keyword": "hmrc paye settlement agreement",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "hmrc vat online account",
+  "volume": 70,
+  "cpc": null,
+  "kd": 45
+ },
+ {
+  "keyword": "how to claim r&d tax credit",
+  "volume": 70,
+  "cpc": 15.520000457763672,
+  "kd": 21
+ },
+ {
+  "keyword": "initial investing",
+  "volume": 70,
+  "cpc": null,
+  "kd": 10
+ },
+ {
+  "keyword": "initial investment",
+  "volume": 70,
+  "cpc": null,
+  "kd": 13
+ },
+ {
+  "keyword": "knowledge intensive company",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "log in to hmrc vat",
+  "volume": 70,
+  "cpc": null,
+  "kd": 4
+ },
+ {
+  "keyword": "login to hmrc vat",
+  "volume": 70,
+  "cpc": null,
+  "kd": 10
+ },
+ {
+  "keyword": "manage client vat",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "network rail pension contributions",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "non taxable benefit",
+  "volume": 70,
+  "cpc": 20.479999542236328,
+  "kd": 0
+ },
+ {
+  "keyword": "non taxable benefits for employees",
+  "volume": 70,
+  "cpc": 20.479999542236328,
+  "kd": 0
+ },
+ {
+  "keyword": "non taxable benefits to employees",
+  "volume": 70,
+  "cpc": 20.479999542236328,
+  "kd": 0
+ },
+ {
+  "keyword": "non taxable employee benefits",
+  "volume": 70,
+  "cpc": 20.479999542236328,
+  "kd": 0
+ },
+ {
+  "keyword": "options vested",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "options vesting",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "oss vat",
+  "volume": 70,
+  "cpc": 5.019999980926514,
+  "kd": 10
+ },
+ {
+  "keyword": "p11d expenses and benefits",
+  "volume": 70,
+  "cpc": 17.579999923706055,
+  "kd": 0
+ },
+ {
+  "keyword": "paye employee login",
+  "volume": 70,
+  "cpc": null,
+  "kd": 25
+ },
+ {
+  "keyword": "paye gateway login",
+  "volume": 70,
+  "cpc": null,
+  "kd": 9
+ },
+ {
+  "keyword": "paye settlement agreement hmrc",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "payroll bik",
+  "volume": 70,
+  "cpc": null,
+  "kd": 2
+ },
+ {
+  "keyword": "payroll vat",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "payrolling bik",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "r&d aif",
+  "volume": 70,
+  "cpc": 49.15999984741211,
+  "kd": 0
+ },
+ {
+  "keyword": "r&d aif form",
+  "volume": 70,
+  "cpc": 5.730000019073486,
+  "kd": 0
+ },
+ {
+  "keyword": "r&d product",
+  "volume": 70,
+  "cpc": null,
+  "kd": 26
+ },
+ {
+  "keyword": "register for payrolling benefits",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "s1308",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "seis for investors",
+  "volume": 70,
+  "cpc": 3.430000066757202,
+  "kd": 17
+ },
+ {
+  "keyword": "sign in vat account",
+  "volume": 70,
+  "cpc": null,
+  "kd": 14
+ },
+ {
+  "keyword": "staff events",
+  "volume": 70,
+  "cpc": 5,
+  "kd": 8
+ },
+ {
+  "keyword": "startup accounting firm",
+  "volume": 70,
+  "cpc": 40.220001220703125,
+  "kd": 0
+ },
+ {
+  "keyword": "startup accounting firms",
+  "volume": 70,
+  "cpc": 40.220001220703125,
+  "kd": 0
+ },
+ {
+  "keyword": "strategic business report",
+  "volume": 70,
+  "cpc": 8.149999618530273,
+  "kd": 0
+ },
+ {
+  "keyword": "strategic report requirements",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "tax deductible client gifts",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "taxable non taxable benefits",
+  "volume": 70,
+  "cpc": 20.479999542236328,
+  "kd": 0
+ },
+ {
+  "keyword": "travel and subsistence allowance",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vat business login",
+  "volume": 70,
+  "cpc": null,
+  "kd": 2
+ },
+ {
+  "keyword": "vat gift",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vat on customer gifts",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vat on gifts",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vat on gifts for clients",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vat on gifts to customers",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vat oss",
+  "volume": 70,
+  "cpc": 6.039999961853027,
+  "kd": 14
+ },
+ {
+  "keyword": "vest options",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vested options",
+  "volume": 70,
+  "cpc": null,
+  "kd": 5
+ },
+ {
+  "keyword": "vesting options",
+  "volume": 70,
+  "cpc": null,
+  "kd": 3
+ },
+ {
+  "keyword": "w8ben e form download",
+  "volume": 70,
+  "cpc": 2.130000114440918,
+  "kd": 9
+ },
+ {
+  "keyword": "wfh allowance hmrc",
+  "volume": 70,
+  "cpc": null,
+  "kd": 1
+ },
+ {
+  "keyword": "what is seis and eis",
+  "volume": 70,
+  "cpc": 7.710000038146973,
+  "kd": 7
+ },
+ {
+  "keyword": "working from home and business rates",
+  "volume": 70,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "accountant for entrepreneurs",
+  "volume": 50,
+  "cpc": 23.690000534057617,
+  "kd": 0
+ },
+ {
+  "keyword": "accountants for entrepreneurs",
+  "volume": 50,
+  "cpc": 23.690000534057617,
+  "kd": 0
+ },
+ {
+  "keyword": "accountants in shoreditch",
+  "volume": 50,
+  "cpc": 2.259999990463257,
+  "kd": 0
+ },
+ {
+  "keyword": "accounting software startups",
+  "volume": 50,
+  "cpc": null,
+  "kd": 8
+ },
+ {
+  "keyword": "business accountants london",
+  "volume": 50,
+  "cpc": null,
+  "kd": 29
+ },
+ {
+  "keyword": "business visitors",
+  "volume": 50,
+  "cpc": 13.140000343322754,
+  "kd": 0
+ },
+ {
+  "keyword": "calculating paye settlement agreements",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "capitalise development costs",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "capitalised development costs",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "capitalising development costs",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "capitalizing development costs",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "company expense policy",
+  "volume": 50,
+  "cpc": 41.630001068115234,
+  "kd": 0
+ },
+ {
+  "keyword": "company expenses policy",
+  "volume": 50,
+  "cpc": 41.630001068115234,
+  "kd": 0
+ },
+ {
+  "keyword": "emi return",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "employee working from home",
+  "volume": 50,
+  "cpc": 0.6000000238418579,
+  "kd": 11
+ },
+ {
+  "keyword": "entrepreneurial accounting",
+  "volume": 50,
+  "cpc": 23.690000534057617,
+  "kd": 0
+ },
+ {
+  "keyword": "exercisable stock options",
+  "volume": 50,
+  "cpc": null,
+  "kd": 9
+ },
+ {
+  "keyword": "exercise of options",
+  "volume": 50,
+  "cpc": null,
+  "kd": 8
+ },
+ {
+  "keyword": "exercising stock options",
+  "volume": 50,
+  "cpc": null,
+  "kd": 7
+ },
+ {
+  "keyword": "gifts to employees \u00a350",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "hmrc seis",
+  "volume": 50,
+  "cpc": 20.030000686645508,
+  "kd": 3
+ },
+ {
+  "keyword": "hmrc short term business visitors",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "intercompany recharges vat",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "investment ready",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "open accounting firm",
+  "volume": 50,
+  "cpc": 14.890000343322754,
+  "kd": 0
+ },
+ {
+  "keyword": "paye settlement agreement calculation",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "psa accounting",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "r&d intensive",
+  "volume": 50,
+  "cpc": 12.180000305175781,
+  "kd": 4
+ },
+ {
+  "keyword": "r&d intensive sme",
+  "volume": 50,
+  "cpc": 2.9100000858306885,
+  "kd": 1
+ },
+ {
+  "keyword": "r&d intensive smes",
+  "volume": 50,
+  "cpc": 2.9100000858306885,
+  "kd": 0
+ },
+ {
+  "keyword": "r&d sme",
+  "volume": 50,
+  "cpc": 20.950000762939453,
+  "kd": 0
+ },
+ {
+  "keyword": "seis companies",
+  "volume": 50,
+  "cpc": 12.5,
+  "kd": 18
+ },
+ {
+  "keyword": "seis3 certificate",
+  "volume": 50,
+  "cpc": 6.380000114440918,
+  "kd": 0
+ },
+ {
+  "keyword": "share options exercised",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "short term business visitors hmrc",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "short-term business visitors hmrc",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "sme accounting firms",
+  "volume": 50,
+  "cpc": 8.289999961853027,
+  "kd": 0
+ },
+ {
+  "keyword": "startup accountants uk",
+  "volume": 50,
+  "cpc": 19.719999313354492,
+  "kd": 1
+ },
+ {
+  "keyword": "stock option exercise",
+  "volume": 50,
+  "cpc": null,
+  "kd": 7
+ },
+ {
+  "keyword": "stock options exercise",
+  "volume": 50,
+  "cpc": null,
+  "kd": 1
+ },
+ {
+  "keyword": "strategic report example",
+  "volume": 50,
+  "cpc": 7.059999942779541,
+  "kd": 0
+ },
+ {
+  "keyword": "strategic reports examples",
+  "volume": 50,
+  "cpc": 7.059999942779541,
+  "kd": 0
+ },
+ {
+  "keyword": "submit r&d additional information form",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "tax free employee benefits uk",
+  "volume": 50,
+  "cpc": 41.22999954223633,
+  "kd": 0
+ },
+ {
+  "keyword": "tax-free employee benefits uk",
+  "volume": 50,
+  "cpc": 41.22999954223633,
+  "kd": 0
+ },
+ {
+  "keyword": "taxable expenses benefit",
+  "volume": 50,
+  "cpc": null,
+  "kd": 12
+ },
+ {
+  "keyword": "trivial gifts",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "unapproved share options",
+  "volume": 50,
+  "cpc": 8.760000228881836,
+  "kd": 0
+ },
+ {
+  "keyword": "vat account sign in",
+  "volume": 50,
+  "cpc": null,
+  "kd": 17
+ },
+ {
+  "keyword": "vat intercompany recharges",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vat mtd login",
+  "volume": 50,
+  "cpc": null,
+  "kd": 9
+ },
+ {
+  "keyword": "vat on employee gifts",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vat on gifts to employees",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vat on intercompany recharges",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vat on staff gifts",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vat payment login",
+  "volume": 50,
+  "cpc": null,
+  "kd": 27
+ },
+ {
+  "keyword": "vat registration log in",
+  "volume": 50,
+  "cpc": null,
+  "kd": 27
+ },
+ {
+  "keyword": "vat registration login",
+  "volume": 50,
+  "cpc": null,
+  "kd": 7
+ },
+ {
+  "keyword": "vat return government gateway",
+  "volume": 50,
+  "cpc": null,
+  "kd": 16
+ },
+ {
+  "keyword": "vat tax account",
+  "volume": 50,
+  "cpc": 73.0999984741211,
+  "kd": 12
+ },
+ {
+  "keyword": "w 8 ben e form",
+  "volume": 50,
+  "cpc": 2.0799999237060547,
+  "kd": 15
+ },
+ {
+  "keyword": "w-8 ben e form",
+  "volume": 50,
+  "cpc": 2.0799999237060547,
+  "kd": 16
+ },
+ {
+  "keyword": "w-8 ben-e",
+  "volume": 50,
+  "cpc": 1.6800000667572021,
+  "kd": 14
+ },
+ {
+  "keyword": "w-8ben-e form uk",
+  "volume": 50,
+  "cpc": 3.059999942779541,
+  "kd": 1
+ },
+ {
+  "keyword": "w8 ben e form uk",
+  "volume": 50,
+  "cpc": 3.059999942779541,
+  "kd": 12
+ },
+ {
+  "keyword": "what are emi shares",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "what does vested mean in shares",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "what is state aid uk",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "when is payrolling benefits mandatory",
+  "volume": 50,
+  "cpc": 1.0399999618530273,
+  "kd": 0
+ },
+ {
+  "keyword": "accountants for startups london",
+  "volume": 40,
+  "cpc": 100.5999984741211,
+  "kd": 0
+ },
+ {
+  "keyword": "investment scheme uk",
+  "volume": 40,
+  "cpc": 7.480000019073486,
+  "kd": 22
+ },
+ {
+  "keyword": "r&d enhanced expenditure",
+  "volume": 40,
+  "cpc": 1.340000033378601,
+  "kd": 2
+ },
+ {
+  "keyword": "r&d tax credit for software development",
+  "volume": 40,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "r&d tax credits software development",
+  "volume": 40,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "s1308 r&d",
+  "volume": 40,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "seis explained",
+  "volume": 40,
+  "cpc": 15.539999961853027,
+  "kd": 1
+ },
+ {
+  "keyword": "seis requirements",
+  "volume": 40,
+  "cpc": 16.989999771118164,
+  "kd": 0
+ },
+ {
+  "keyword": "staff expenses vat",
+  "volume": 40,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "startup accountant london",
+  "volume": 40,
+  "cpc": 100.5999984741211,
+  "kd": 0
+ },
+ {
+  "keyword": "startup accountants london",
+  "volume": 40,
+  "cpc": 100.5999984741211,
+  "kd": 0
+ },
+ {
+  "keyword": "submit additional information form",
+  "volume": 40,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "accounting firm for small business",
+  "volume": 30,
+  "cpc": 63.470001220703125,
+  "kd": 0
+ },
+ {
+  "keyword": "small accounting firms in uk",
+  "volume": 30,
+  "cpc": 7.659999847412109,
+  "kd": 0
+ },
+ {
+  "keyword": "small accounting firms uk",
+  "volume": 30,
+  "cpc": 7.659999847412109,
+  "kd": 1
+ },
+ {
+  "keyword": "saas contacts",
+  "volume": 1600,
+  "cpc": null,
+  "kd": 7
+ },
+ {
+  "keyword": "saas accounting",
+  "volume": 210,
+  "cpc": 7.610000133514404,
+  "kd": 5
+ },
+ {
+  "keyword": "sas accountant",
+  "volume": 210,
+  "cpc": 4.059999942779541,
+  "kd": 10
+ },
+ {
+  "keyword": "sas accountants",
+  "volume": 210,
+  "cpc": 4.059999942779541,
+  "kd": 11
+ },
+ {
+  "keyword": "sas accounting",
+  "volume": 210,
+  "cpc": 4.059999942779541,
+  "kd": 4
+ },
+ {
+  "keyword": "sam accountants ltd",
+  "volume": 90,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "sa accountant",
+  "volume": 50,
+  "cpc": 5.460000038146973,
+  "kd": 0
+ },
+ {
+  "keyword": "sa accountants",
+  "volume": 50,
+  "cpc": 5.460000038146973,
+  "kd": 0
+ },
+ {
+  "keyword": "saas company accounting",
+  "volume": 50,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "ebitda",
+  "volume": 27100,
+  "cpc": 4.720000267028809,
+  "kd": 22
+ },
+ {
+  "keyword": "value-added tax",
+  "volume": 27100,
+  "cpc": 6.380000114440918,
+  "kd": 45
+ },
+ {
+  "keyword": "vat",
+  "volume": 27100,
+  "cpc": 6.380000114440918,
+  "kd": 52
+ },
+ {
+  "keyword": "ebitda definition",
+  "volume": 14800,
+  "cpc": 1.6399999856948853,
+  "kd": 20
+ },
+ {
+  "keyword": "ebitda meaning",
+  "volume": 14800,
+  "cpc": 1.6399999856948853,
+  "kd": 19
+ },
+ {
+  "keyword": "how much is vat in uk",
+  "volume": 14800,
+  "cpc": 1.8899999856948853,
+  "kd": 19
+ },
+ {
+  "keyword": "how much is vat uk",
+  "volume": 14800,
+  "cpc": 1.8899999856948853,
+  "kd": 28
+ },
+ {
+  "keyword": "how much vat in uk",
+  "volume": 14800,
+  "cpc": 1.8899999856948853,
+  "kd": 15
+ },
+ {
+  "keyword": "uk vat rate",
+  "volume": 14800,
+  "cpc": 2.2699999809265137,
+  "kd": 22
+ },
+ {
+  "keyword": "uk vat tax rate",
+  "volume": 14800,
+  "cpc": 2.2699999809265137,
+  "kd": 23
+ },
+ {
+  "keyword": "uk vat tax rates",
+  "volume": 14800,
+  "cpc": 2.2699999809265137,
+  "kd": 21
+ },
+ {
+  "keyword": "vat charge uk",
+  "volume": 14800,
+  "cpc": 2.2699999809265137,
+  "kd": 17
+ },
+ {
+  "keyword": "vat how much uk",
+  "volume": 14800,
+  "cpc": 1.8899999856948853,
+  "kd": 14
+ },
+ {
+  "keyword": "vat in uk rate",
+  "volume": 14800,
+  "cpc": 2.2699999809265137,
+  "kd": 22
+ },
+ {
+  "keyword": "vat percentage in uk",
+  "volume": 14800,
+  "cpc": 2.2699999809265137,
+  "kd": 15
+ },
+ {
+  "keyword": "vat percentage uk",
+  "volume": 14800,
+  "cpc": 2.2699999809265137,
+  "kd": 19
+ },
+ {
+  "keyword": "vat rate uk",
+  "volume": 14800,
+  "cpc": 2.2699999809265137,
+  "kd": 20
+ },
+ {
+  "keyword": "vat tax rate uk",
+  "volume": 14800,
+  "cpc": 2.2699999809265137,
+  "kd": 27
+ },
+ {
+  "keyword": "how much is v a t",
+  "volume": 12100,
+  "cpc": 1.7899999618530273,
+  "kd": 19
+ },
+ {
+  "keyword": "how much is vat",
+  "volume": 12100,
+  "cpc": 1.7899999618530273,
+  "kd": 20
+ },
+ {
+  "keyword": "united kingdom vat",
+  "volume": 12100,
+  "cpc": 3.8600001335144043,
+  "kd": 34
+ },
+ {
+  "keyword": "value added tax uk",
+  "volume": 12100,
+  "cpc": 3.8600001335144043,
+  "kd": 27
+ },
+ {
+  "keyword": "vat and uk",
+  "volume": 12100,
+  "cpc": 3.8600001335144043,
+  "kd": 26
+ },
+ {
+  "keyword": "vat how much",
+  "volume": 12100,
+  "cpc": 1.7899999618530273,
+  "kd": 12
+ },
+ {
+  "keyword": "vat in england",
+  "volume": 12100,
+  "cpc": 3.8600001335144043,
+  "kd": 22
+ },
+ {
+  "keyword": "vat in the uk",
+  "volume": 12100,
+  "cpc": 3.8600001335144043,
+  "kd": 22
+ },
+ {
+  "keyword": "vat in uk",
+  "volume": 12100,
+  "cpc": 3.8600001335144043,
+  "kd": 29
+ },
+ {
+  "keyword": "vat tax in uk",
+  "volume": 12100,
+  "cpc": 3.8600001335144043,
+  "kd": 23
+ },
+ {
+  "keyword": "vat uk",
+  "volume": 12100,
+  "cpc": 3.8600001335144043,
+  "kd": 21
+ },
+ {
+  "keyword": "what is paye tax",
+  "volume": 9900,
+  "cpc": 5.349999904632568,
+  "kd": 13
+ },
+ {
+  "keyword": "company tax uk",
+  "volume": 8100,
+  "cpc": 4.179999828338623,
+  "kd": 28
+ },
+ {
+  "keyword": "company taxation uk",
+  "volume": 8100,
+  "cpc": 4.179999828338623,
+  "kd": 37
+ },
+ {
+  "keyword": "corporate tax england",
+  "volume": 8100,
+  "cpc": 4.179999828338623,
+  "kd": 28
+ },
+ {
+  "keyword": "corporate taxation uk",
+  "volume": 8100,
+  "cpc": 4.179999828338623,
+  "kd": 28
+ },
+ {
+  "keyword": "corporation tax in the uk",
+  "volume": 8100,
+  "cpc": 4.179999828338623,
+  "kd": 27
+ },
+ {
+  "keyword": "corporation tax in uk",
+  "volume": 8100,
+  "cpc": 4.179999828338623,
+  "kd": 28
+ },
+ {
+  "keyword": "corporation tax uk",
+  "volume": 8100,
+  "cpc": 4.179999828338623,
+  "kd": 17
+ },
+ {
+  "keyword": "enterprise management incentive",
+  "volume": 8100,
+  "cpc": 8.65999984741211,
+  "kd": 4
+ },
+ {
+  "keyword": "enterprise management incentives",
+  "volume": 8100,
+  "cpc": 8.65999984741211,
+  "kd": 4
+ },
+ {
+  "keyword": "united kingdom corporation tax",
+  "volume": 8100,
+  "cpc": 4.179999828338623,
+  "kd": 28
+ },
+ {
+  "keyword": "dividend tax calculator",
+  "volume": 6600,
+  "cpc": 3.1500000953674316,
+  "kd": 7
+ },
+ {
+  "keyword": "taxes on dividends calculator",
+  "volume": 6600,
+  "cpc": 3.1500000953674316,
+  "kd": 4
+ },
+ {
+  "keyword": "hmrc paye number",
+  "volume": 5400,
+  "cpc": 7.880000114440918,
+  "kd": 9
+ },
+ {
+  "keyword": "paye tax",
+  "volume": 5400,
+  "cpc": 3.509999990463257,
+  "kd": 38
+ },
+ {
+  "keyword": "sage intacct",
+  "volume": 5400,
+  "cpc": 36.11000061035156,
+  "kd": 31
+ },
+ {
+  "keyword": "what are corporate taxes",
+  "volume": 5400,
+  "cpc": 3.5,
+  "kd": 49
+ },
+ {
+  "keyword": "what corporation tax",
+  "volume": 5400,
+  "cpc": 3.5,
+  "kd": 22
+ },
+ {
+  "keyword": "what is a company tax",
+  "volume": 5400,
+  "cpc": 3.5,
+  "kd": 26
+ },
+ {
+  "keyword": "what is corporation tax",
+  "volume": 5400,
+  "cpc": 3.5,
+  "kd": 28
+ },
+ {
+  "keyword": "the accountancy partnership",
+  "volume": 4400,
+  "cpc": 5.670000076293945,
+  "kd": 8
+ },
+ {
+  "keyword": "what is ebitda",
+  "volume": 4400,
+  "cpc": 2.9200000762939453,
+  "kd": 19
+ },
+ {
+  "keyword": "what is vat in uk",
+  "volume": 4400,
+  "cpc": 2.7200000286102295,
+  "kd": 25
+ },
+ {
+  "keyword": "business start up grants",
+  "volume": 3600,
+  "cpc": 5.829999923706055,
+  "kd": 26
+ },
+ {
+  "keyword": "capital allowances",
+  "volume": 3600,
+  "cpc": 5.710000038146973,
+  "kd": 3
+ },
+ {
+  "keyword": "capital gains allowance",
+  "volume": 3600,
+  "cpc": 5.980000019073486,
+  "kd": 15
+ },
+ {
+  "keyword": "company start up grants",
+  "volume": 3600,
+  "cpc": 5.829999923706055,
+  "kd": 29
+ },
+ {
+  "keyword": "grant for start up business",
+  "volume": 3600,
+  "cpc": 5.829999923706055,
+  "kd": 26
+ },
+ {
+  "keyword": "grants for start up business",
+  "volume": 3600,
+  "cpc": 5.829999923706055,
+  "kd": 26
+ },
+ {
+  "keyword": "grants to open a business",
+  "volume": 3600,
+  "cpc": 5.829999923706055,
+  "kd": 26
+ },
+ {
+  "keyword": "startup business grants",
+  "volume": 3600,
+  "cpc": 5.829999923706055,
+  "kd": 26
+ },
+ {
+  "keyword": "startups series",
+  "volume": 3600,
+  "cpc": null,
+  "kd": 36
+ },
+ {
+  "keyword": "telleroo",
+  "volume": 3600,
+  "cpc": 0.9300000071525574,
+  "kd": 12
+ },
+ {
+  "keyword": "value added tax rates",
+  "volume": 3600,
+  "cpc": 1.5,
+  "kd": 74
+ },
+ {
+  "keyword": "vat on rates",
+  "volume": 3600,
+  "cpc": 1.5,
+  "kd": 33
+ },
+ {
+  "keyword": "vat rate",
+  "volume": 3600,
+  "cpc": 1.5,
+  "kd": 32
+ },
+ {
+  "keyword": "vat ratings",
+  "volume": 3600,
+  "cpc": 1.5,
+  "kd": 43
+ },
+ {
+  "keyword": "vat tax rate",
+  "volume": 3600,
+  "cpc": 1.5,
+  "kd": 35
+ },
+ {
+  "keyword": "vat tax rates",
+  "volume": 3600,
+  "cpc": 1.5,
+  "kd": 61
+ },
+ {
+  "keyword": "corporation tax how much",
+  "volume": 2900,
+  "cpc": 3.0299999713897705,
+  "kd": 14
+ },
+ {
+  "keyword": "how is vat calculated",
+  "volume": 2900,
+  "cpc": 3.369999885559082,
+  "kd": 7
+ },
+ {
+  "keyword": "how much are corporations taxed",
+  "volume": 2900,
+  "cpc": 3.0299999713897705,
+  "kd": 41
+ },
+ {
+  "keyword": "how much is corporation tax",
+  "volume": 2900,
+  "cpc": 3.0299999713897705,
+  "kd": 13
+ },
+ {
+  "keyword": "how vat is calculated",
+  "volume": 2900,
+  "cpc": 3.369999885559082,
+  "kd": 9
+ },
+ {
+  "keyword": "accounting and taxes",
+  "volume": 2400,
+  "cpc": 12.050000190734863,
+  "kd": 38
+ },
+ {
+  "keyword": "accounting programs for small business",
+  "volume": 2400,
+  "cpc": 49.65999984741211,
+  "kd": 54
+ },
+ {
+  "keyword": "accounting software for small business",
+  "volume": 2400,
+  "cpc": 49.65999984741211,
+  "kd": 63
+ },
+ {
+  "keyword": "accounting software for small companies",
+  "volume": 2400,
+  "cpc": 49.65999984741211,
+  "kd": 59
+ },
+ {
+  "keyword": "accounting software programs for small business",
+  "volume": 2400,
+  "cpc": 49.65999984741211,
+  "kd": 63
+ },
+ {
+  "keyword": "accounting with tax",
+  "volume": 2400,
+  "cpc": 12.050000190734863,
+  "kd": 2
+ },
+ {
+  "keyword": "bookkeeping software for small business",
+  "volume": 2400,
+  "cpc": 49.65999984741211,
+  "kd": 59
+ },
+ {
+  "keyword": "calculate operating profit",
+  "volume": 2400,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "calculating operating profit",
+  "volume": 2400,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "formula for operating profit",
+  "volume": 2400,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "formula of operating profit",
+  "volume": 2400,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "gross margin",
+  "volume": 2400,
+  "cpc": 1.3899999856948853,
+  "kd": 11
+ },
+ {
+  "keyword": "operating at a profit",
+  "volume": 2400,
+  "cpc": 3.9800000190734863,
+  "kd": 0
+ },
+ {
+  "keyword": "operating profit calculation",
+  "volume": 2400,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "operating profit calculation formula",
+  "volume": 2400,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "operating profit equation",
+  "volume": 2400,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "operating profit formula",
+  "volume": 2400,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "profit from operations formula",
+  "volume": 2400,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "variable cost",
+  "volume": 2400,
+  "cpc": 0.9200000166893005,
+  "kd": 8
+ },
+ {
+  "keyword": "variable costing",
+  "volume": 2400,
+  "cpc": 0.9200000166893005,
+  "kd": 7
+ },
+ {
+  "keyword": "variable costs",
+  "volume": 2400,
+  "cpc": 0.9200000166893005,
+  "kd": 0
+ },
+ {
+  "keyword": "what are ico",
+  "volume": 2400,
+  "cpc": 0.33000001311302185,
+  "kd": 47
+ },
+ {
+  "keyword": "accounting services",
+  "volume": 1900,
+  "cpc": 36.68000030517578,
+  "kd": 31
+ },
+ {
+  "keyword": "bulb energy",
+  "volume": 1900,
+  "cpc": 3.049999952316284,
+  "kd": 15
+ },
+ {
+  "keyword": "bulb energy energy",
+  "volume": 1900,
+  "cpc": 3.049999952316284,
+  "kd": 15
+ },
+ {
+  "keyword": "bulb energy uk",
+  "volume": 1900,
+  "cpc": 3.049999952316284,
+  "kd": 15
+ },
+ {
+  "keyword": "cost of sales calculation",
+  "volume": 1900,
+  "cpc": 8.170000076293945,
+  "kd": 0
+ },
+ {
+  "keyword": "cost of sales formula",
+  "volume": 1900,
+  "cpc": 8.170000076293945,
+  "kd": 6
+ },
+ {
+  "keyword": "current uk vat rate",
+  "volume": 1900,
+  "cpc": 0.5299999713897705,
+  "kd": 23
+ },
+ {
+  "keyword": "current vat rate uk",
+  "volume": 1900,
+  "cpc": 0.5299999713897705,
+  "kd": 28
+ },
+ {
+  "keyword": "current vat rates in uk",
+  "volume": 1900,
+  "cpc": 0.5299999713897705,
+  "kd": 33
+ },
+ {
+  "keyword": "emi scheme",
+  "volume": 1900,
+  "cpc": 7.610000133514404,
+  "kd": 1
+ },
+ {
+  "keyword": "emi share scheme",
+  "volume": 1900,
+  "cpc": 7.610000133514404,
+  "kd": 0
+ },
+ {
+  "keyword": "enterprise management incentive schemes",
+  "volume": 1900,
+  "cpc": 7.610000133514404,
+  "kd": 0
+ },
+ {
+  "keyword": "enterprise management incentives scheme",
+  "volume": 1900,
+  "cpc": 7.610000133514404,
+  "kd": 0
+ },
+ {
+  "keyword": "grants for new business owners",
+  "volume": 1900,
+  "cpc": 4.769999980926514,
+  "kd": 29
+ },
+ {
+  "keyword": "management accounts",
+  "volume": 1900,
+  "cpc": 31.260000228881836,
+  "kd": 0
+ },
+ {
+  "keyword": "reference numbers",
+  "volume": 1900,
+  "cpc": 4.489999771118164,
+  "kd": 0
+ },
+ {
+  "keyword": "references number",
+  "volume": 1900,
+  "cpc": 4.489999771118164,
+  "kd": 0
+ },
+ {
+  "keyword": "tax office reference number",
+  "volume": 1900,
+  "cpc": 1.8600000143051147,
+  "kd": 0
+ },
+ {
+  "keyword": "what are vat rates",
+  "volume": 1900,
+  "cpc": 2.4200000762939453,
+  "kd": 35
+ },
+ {
+  "keyword": "when does a financial year end",
+  "volume": 1900,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "advantages of private limited companies",
+  "volume": 1600,
+  "cpc": 2.9800000190734863,
+  "kd": 0
+ },
+ {
+  "keyword": "corporation tax rates 2025",
+  "volume": 1600,
+  "cpc": null,
+  "kd": 14
+ },
+ {
+  "keyword": "cost of sales",
+  "volume": 1600,
+  "cpc": 2.6700000762939453,
+  "kd": 8
+ },
+ {
+  "keyword": "example of variable cost",
+  "volume": 1600,
+  "cpc": null,
+  "kd": 8
+ },
+ {
+  "keyword": "example of variable costs",
+  "volume": 1600,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "examples of variable cost",
+  "volume": 1600,
+  "cpc": null,
+  "kd": 11
+ },
+ {
+  "keyword": "examples of variable costs",
+  "volume": 1600,
+  "cpc": null,
+  "kd": 5
+ },
+ {
+  "keyword": "extend filing deadline",
+  "volume": 1600,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "extended filing deadline",
+  "volume": 1600,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "how much corporate tax in uk",
+  "volume": 1600,
+  "cpc": 4.800000190734863,
+  "kd": 20
+ },
+ {
+  "keyword": "how much corporation tax in uk",
+  "volume": 1600,
+  "cpc": 4.800000190734863,
+  "kd": 28
+ },
+ {
+  "keyword": "how much is corporation tax in uk",
+  "volume": 1600,
+  "cpc": 4.800000190734863,
+  "kd": 20
+ },
+ {
+  "keyword": "how to compute profits",
+  "volume": 1600,
+  "cpc": 3.0899999141693115,
+  "kd": 2
+ },
+ {
+  "keyword": "paye reference number",
+  "volume": 1600,
+  "cpc": 38.189998626708984,
+  "kd": 3
+ },
+ {
+  "keyword": "private limited company advantages",
+  "volume": 1600,
+  "cpc": 2.9800000190734863,
+  "kd": 0
+ },
+ {
+  "keyword": "statement of accounts",
+  "volume": 1600,
+  "cpc": 4.519999980926514,
+  "kd": 25
+ },
+ {
+  "keyword": "variable cost example",
+  "volume": 1600,
+  "cpc": null,
+  "kd": 4
+ },
+ {
+  "keyword": "variable cost examples",
+  "volume": 1600,
+  "cpc": null,
+  "kd": 7
+ },
+ {
+  "keyword": "variable costing example",
+  "volume": 1600,
+  "cpc": null,
+  "kd": 9
+ },
+ {
+  "keyword": "variable costs examples",
+  "volume": 1600,
+  "cpc": null,
+  "kd": 6
+ },
+ {
+  "keyword": "what is the vat percentage in uk",
+  "volume": 1600,
+  "cpc": 1.2599999904632568,
+  "kd": 19
+ },
+ {
+  "keyword": "what is uk vat rate",
+  "volume": 1600,
+  "cpc": 1.2599999904632568,
+  "kd": 20
+ },
+ {
+  "keyword": "what percentage is vat in uk",
+  "volume": 1600,
+  "cpc": 1.2599999904632568,
+  "kd": 21
+ },
+ {
+  "keyword": "accounting business",
+  "volume": 1300,
+  "cpc": 39.810001373291016,
+  "kd": 56
+ },
+ {
+  "keyword": "best accounting packages for small business",
+  "volume": 1300,
+  "cpc": 49.150001525878906,
+  "kd": 55
+ },
+ {
+  "keyword": "best accounting programs for small business",
+  "volume": 1300,
+  "cpc": 49.150001525878906,
+  "kd": 54
+ },
+ {
+  "keyword": "best accounting softwares for small businesses",
+  "volume": 1300,
+  "cpc": 49.150001525878906,
+  "kd": 55
+ },
+ {
+  "keyword": "best accounting systems for small businesses",
+  "volume": 1300,
+  "cpc": 49.150001525878906,
+  "kd": 58
+ },
+ {
+  "keyword": "best small business accounting apps",
+  "volume": 1300,
+  "cpc": 49.150001525878906,
+  "kd": 32
+ },
+ {
+  "keyword": "best small business accounting software",
+  "volume": 1300,
+  "cpc": 49.150001525878906,
+  "kd": 33
+ },
+ {
+  "keyword": "best small business accounting system",
+  "volume": 1300,
+  "cpc": 49.150001525878906,
+  "kd": 34
+ },
+ {
+  "keyword": "corporate tax",
+  "volume": 1300,
+  "cpc": 11.640000343322754,
+  "kd": 28
+ },
+ {
+  "keyword": "financing sources",
+  "volume": 1300,
+  "cpc": 39.43000030517578,
+  "kd": 8
+ },
+ {
+  "keyword": "limited company tax",
+  "volume": 1300,
+  "cpc": 6.739999771118164,
+  "kd": 11
+ },
+ {
+  "keyword": "ltd company tax",
+  "volume": 1300,
+  "cpc": 6.739999771118164,
+  "kd": 10
+ },
+ {
+  "keyword": "tax and limited company",
+  "volume": 1300,
+  "cpc": 6.739999771118164,
+  "kd": 10
+ },
+ {
+  "keyword": "tax limited company",
+  "volume": 1300,
+  "cpc": 6.739999771118164,
+  "kd": 7
+ },
+ {
+  "keyword": "what are management accounts",
+  "volume": 1300,
+  "cpc": 6.5,
+  "kd": 0
+ },
+ {
+  "keyword": "what are the variable cost",
+  "volume": 1300,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "what is a variable cost",
+  "volume": 1300,
+  "cpc": null,
+  "kd": 2
+ },
+ {
+  "keyword": "what is operating profit in accounting",
+  "volume": 1300,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "what is the capital gains tax allowance",
+  "volume": 1300,
+  "cpc": 0.07000000029802322,
+  "kd": 14
+ },
+ {
+  "keyword": "what is variable cost",
+  "volume": 1300,
+  "cpc": null,
+  "kd": 2
+ },
+ {
+  "keyword": "what is variable costing",
+  "volume": 1300,
+  "cpc": null,
+  "kd": 8
+ },
+ {
+  "keyword": "who owns monzo",
+  "volume": 1300,
+  "cpc": null,
+  "kd": 11
+ },
+ {
+  "keyword": "accountant for business taxes",
+  "volume": 1000,
+  "cpc": 15.069999694824219,
+  "kd": 44
+ },
+ {
+  "keyword": "accountant tax return",
+  "volume": 1000,
+  "cpc": 11.979999542236328,
+  "kd": 48
+ },
+ {
+  "keyword": "advantages and disadvantages private limited company",
+  "volume": 1000,
+  "cpc": 1.2300000190734863,
+  "kd": 0
+ },
+ {
+  "keyword": "advantages disadvantages of private limited company",
+  "volume": 1000,
+  "cpc": 1.2300000190734863,
+  "kd": 0
+ },
+ {
+  "keyword": "break even analysis",
+  "volume": 1000,
+  "cpc": 1.440000057220459,
+  "kd": 21
+ },
+ {
+  "keyword": "business tax accounting",
+  "volume": 1000,
+  "cpc": 15.069999694824219,
+  "kd": 7
+ },
+ {
+  "keyword": "business taxes accountant",
+  "volume": 1000,
+  "cpc": 15.069999694824219,
+  "kd": 16
+ },
+ {
+  "keyword": "calculate variable cost",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 2
+ },
+ {
+  "keyword": "cfo pay",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "cfo salaries",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 5
+ },
+ {
+  "keyword": "corporate tax uk",
+  "volume": 1000,
+  "cpc": 8.619999885559082,
+  "kd": 38
+ },
+ {
+  "keyword": "disadvantage of private limited company",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "disadvantages for private limited company",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "disadvantages of a private limited company",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 1
+ },
+ {
+  "keyword": "disadvantages of private limited companies",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "disadvantages of private limited company",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 11
+ },
+ {
+  "keyword": "disadvantages of pvt ltd company",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "disadvantages private limited company",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "employers paye reference",
+  "volume": 1000,
+  "cpc": 9.199999809265137,
+  "kd": 4
+ },
+ {
+  "keyword": "food vat",
+  "volume": 1000,
+  "cpc": 0.9200000166893005,
+  "kd": 0
+ },
+ {
+  "keyword": "formula for variable cost",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "gymshark founded",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 13
+ },
+ {
+  "keyword": "how do i find my payroll number",
+  "volume": 1000,
+  "cpc": 4.190000057220459,
+  "kd": 0
+ },
+ {
+  "keyword": "how do you calculate corporate tax",
+  "volume": 1000,
+  "cpc": 3.7699999809265137,
+  "kd": 7
+ },
+ {
+  "keyword": "how do you calculate corporation tax",
+  "volume": 1000,
+  "cpc": 3.7699999809265137,
+  "kd": 0
+ },
+ {
+  "keyword": "how does the vat tax work",
+  "volume": 1000,
+  "cpc": 3.430000066757202,
+  "kd": 40
+ },
+ {
+  "keyword": "how does vat tax work",
+  "volume": 1000,
+  "cpc": 3.430000066757202,
+  "kd": 39
+ },
+ {
+  "keyword": "how is corporation tax calculated",
+  "volume": 1000,
+  "cpc": 3.7699999809265137,
+  "kd": 2
+ },
+ {
+  "keyword": "how much do accountant charge",
+  "volume": 1000,
+  "cpc": 5.650000095367432,
+  "kd": 0
+ },
+ {
+  "keyword": "how much do accountants charge",
+  "volume": 1000,
+  "cpc": 5.650000095367432,
+  "kd": 0
+ },
+ {
+  "keyword": "how much does accountant cost",
+  "volume": 1000,
+  "cpc": 5.650000095367432,
+  "kd": 0
+ },
+ {
+  "keyword": "how to find payroll number",
+  "volume": 1000,
+  "cpc": 4.190000057220459,
+  "kd": 0
+ },
+ {
+  "keyword": "how to find your payroll number",
+  "volume": 1000,
+  "cpc": 4.190000057220459,
+  "kd": 0
+ },
+ {
+  "keyword": "online accountant",
+  "volume": 1000,
+  "cpc": 47.220001220703125,
+  "kd": 39
+ },
+ {
+  "keyword": "paye reference",
+  "volume": 1000,
+  "cpc": 9.199999809265137,
+  "kd": 1
+ },
+ {
+  "keyword": "paye tax reference",
+  "volume": 1000,
+  "cpc": 9.199999809265137,
+  "kd": 2
+ },
+ {
+  "keyword": "private limited companies advantages and disadvantages",
+  "volume": 1000,
+  "cpc": 1.2300000190734863,
+  "kd": 0
+ },
+ {
+  "keyword": "private limited companies advantages disadvantages",
+  "volume": 1000,
+  "cpc": 1.2300000190734863,
+  "kd": 0
+ },
+ {
+  "keyword": "private limited company advantages and disadvantages",
+  "volume": 1000,
+  "cpc": 1.2300000190734863,
+  "kd": 0
+ },
+ {
+  "keyword": "salary for chief financial officer",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 5
+ },
+ {
+  "keyword": "salary of a cfo",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 5
+ },
+ {
+  "keyword": "salary of a chief financial officer",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "salary of cfo",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 5
+ },
+ {
+  "keyword": "salary of chief financial officer",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "tax accountant for business",
+  "volume": 1000,
+  "cpc": 15.069999694824219,
+  "kd": 64
+ },
+ {
+  "keyword": "tax accounting business",
+  "volume": 1000,
+  "cpc": 15.069999694824219,
+  "kd": 2
+ },
+ {
+  "keyword": "tax accounting for business",
+  "volume": 1000,
+  "cpc": 15.069999694824219,
+  "kd": 3
+ },
+ {
+  "keyword": "variable cost formula",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 5
+ },
+ {
+  "keyword": "variable costs formula",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 3
+ },
+ {
+  "keyword": "variable expense formula",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "variable expenses formula",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "what are capital allowances",
+  "volume": 1000,
+  "cpc": 10.989999771118164,
+  "kd": 5
+ },
+ {
+  "keyword": "what does ebitda stand for",
+  "volume": 1000,
+  "cpc": 3.2799999713897705,
+  "kd": 22
+ },
+ {
+  "keyword": "what does paye mean",
+  "volume": 1000,
+  "cpc": null,
+  "kd": 17
+ },
+ {
+  "keyword": "what is capital allowance",
+  "volume": 1000,
+  "cpc": 10.989999771118164,
+  "kd": 17
+ },
+ {
+  "keyword": "what is the vat rate",
+  "volume": 1000,
+  "cpc": 1.5899999141693115,
+  "kd": 25
+ },
+ {
+  "keyword": "what is value added tax uk",
+  "volume": 1000,
+  "cpc": 0.9200000166893005,
+  "kd": 12
+ },
+ {
+  "keyword": "what is vat tax uk",
+  "volume": 1000,
+  "cpc": 0.9200000166893005,
+  "kd": 23
+ },
+ {
+  "keyword": "what percentage is vat",
+  "volume": 1000,
+  "cpc": 2.4000000953674316,
+  "kd": 29
+ },
+ {
+  "keyword": "what vat rate",
+  "volume": 1000,
+  "cpc": 1.5899999141693115,
+  "kd": 20
+ },
+ {
+  "keyword": "accountancy services",
+  "volume": 880,
+  "cpc": 28.489999771118164,
+  "kd": 35
+ },
+ {
+  "keyword": "accountants for e commerce",
+  "volume": 880,
+  "cpc": 29.579999923706055,
+  "kd": 6
+ },
+ {
+  "keyword": "accounting bookkeeping",
+  "volume": 880,
+  "cpc": 11.779999732971191,
+  "kd": 14
+ },
+ {
+  "keyword": "accounting software cloud",
+  "volume": 880,
+  "cpc": 39.119998931884766,
+  "kd": 63
+ },
+ {
+  "keyword": "book keeping & accountancy",
+  "volume": 880,
+  "cpc": 11.779999732971191,
+  "kd": 15
+ },
+ {
+  "keyword": "bookkeeping accounting software",
+  "volume": 880,
+  "cpc": 45,
+  "kd": 59
+ },
+ {
+  "keyword": "bookkeeping and accounting",
+  "volume": 880,
+  "cpc": 11.779999732971191,
+  "kd": 2
+ },
+ {
+  "keyword": "bookkeeping or accounting",
+  "volume": 880,
+  "cpc": 11.779999732971191,
+  "kd": 1
+ },
+ {
+  "keyword": "bookkeeping software",
+  "volume": 880,
+  "cpc": 45,
+  "kd": 63
+ },
+ {
+  "keyword": "calculate ebitda",
+  "volume": 880,
+  "cpc": 2.8600001335144043,
+  "kd": 22
+ },
+ {
+  "keyword": "cloud accounting systems",
+  "volume": 880,
+  "cpc": 39.119998931884766,
+  "kd": 23
+ },
+ {
+  "keyword": "companies house filing extension",
+  "volume": 880,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "company directors salary",
+  "volume": 880,
+  "cpc": null,
+  "kd": 1
+ },
+ {
+  "keyword": "current vat rate",
+  "volume": 880,
+  "cpc": 0.5799999833106995,
+  "kd": 9
+ },
+ {
+  "keyword": "define variable cost",
+  "volume": 880,
+  "cpc": null,
+  "kd": 4
+ },
+ {
+  "keyword": "directors income",
+  "volume": 880,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "ebitda formula",
+  "volume": 880,
+  "cpc": 2.8600001335144043,
+  "kd": 22
+ },
+ {
+  "keyword": "ecommerce accountants",
+  "volume": 880,
+  "cpc": 29.579999923706055,
+  "kd": 15
+ },
+ {
+  "keyword": "emi meaning",
+  "volume": 880,
+  "cpc": null,
+  "kd": 7
+ },
+ {
+  "keyword": "employer paye reference",
+  "volume": 880,
+  "cpc": 30,
+  "kd": 9
+ },
+ {
+  "keyword": "employer's paye reference",
+  "volume": 880,
+  "cpc": 30,
+  "kd": 4
+ },
+ {
+  "keyword": "filing corporate income tax",
+  "volume": 880,
+  "cpc": 32.68000030517578,
+  "kd": 13
+ },
+ {
+  "keyword": "formula of cost of goods sold",
+  "volume": 880,
+  "cpc": 0.5400000214576721,
+  "kd": 14
+ },
+ {
+  "keyword": "grant funding for small business",
+  "volume": 880,
+  "cpc": 5.139999866485596,
+  "kd": 26
+ },
+ {
+  "keyword": "grants for small business",
+  "volume": 880,
+  "cpc": 5.139999866485596,
+  "kd": 18
+ },
+ {
+  "keyword": "how do you calculate operating profit",
+  "volume": 880,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "how ebitda is calculated",
+  "volume": 880,
+  "cpc": 3.430000066757202,
+  "kd": 25
+ },
+ {
+  "keyword": "how is ebitda calculated",
+  "volume": 880,
+  "cpc": 3.430000066757202,
+  "kd": 25
+ },
+ {
+  "keyword": "how to calculate operating profit",
+  "volume": 880,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "how to calculate the operating profit",
+  "volume": 880,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "how to work out operating profit",
+  "volume": 880,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "paye contact no",
+  "volume": 880,
+  "cpc": 5.599999904632568,
+  "kd": 17
+ },
+ {
+  "keyword": "paye contact numbers",
+  "volume": 880,
+  "cpc": 5.599999904632568,
+  "kd": 18
+ },
+ {
+  "keyword": "paye phone number",
+  "volume": 880,
+  "cpc": 5.599999904632568,
+  "kd": 17
+ },
+ {
+  "keyword": "penalty point system",
+  "volume": 880,
+  "cpc": 4.860000133514404,
+  "kd": 11
+ },
+ {
+  "keyword": "salaried director",
+  "volume": 880,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "seed money fund",
+  "volume": 880,
+  "cpc": 7.760000228881836,
+  "kd": 21
+ },
+ {
+  "keyword": "seeding fund",
+  "volume": 880,
+  "cpc": 7.760000228881836,
+  "kd": 24
+ },
+ {
+  "keyword": "tax and vat",
+  "volume": 880,
+  "cpc": 7.380000114440918,
+  "kd": 17
+ },
+ {
+  "keyword": "tax on value added",
+  "volume": 880,
+  "cpc": 7.380000114440918,
+  "kd": 62
+ },
+ {
+  "keyword": "variable cost definition",
+  "volume": 880,
+  "cpc": null,
+  "kd": 3
+ },
+ {
+  "keyword": "variable cost meaning",
+  "volume": 880,
+  "cpc": null,
+  "kd": 10
+ },
+ {
+  "keyword": "variable costing definition",
+  "volume": 880,
+  "cpc": null,
+  "kd": 1
+ },
+ {
+  "keyword": "variable costs definition",
+  "volume": 880,
+  "cpc": null,
+  "kd": 2
+ },
+ {
+  "keyword": "vat tax",
+  "volume": 880,
+  "cpc": 7.380000114440918,
+  "kd": 34
+ },
+ {
+  "keyword": "vat taxation",
+  "volume": 880,
+  "cpc": 7.380000114440918,
+  "kd": 68
+ },
+ {
+  "keyword": "vat value added tax",
+  "volume": 880,
+  "cpc": 7.380000114440918,
+  "kd": 30
+ },
+ {
+  "keyword": "what are cost of sales",
+  "volume": 880,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "what is cost of sales",
+  "volume": 880,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "what is the current vat rate",
+  "volume": 880,
+  "cpc": 0.5400000214576721,
+  "kd": 43
+ },
+ {
+  "keyword": "what is the current vat rate in the uk",
+  "volume": 880,
+  "cpc": 1.3899999856948853,
+  "kd": 20
+ },
+ {
+  "keyword": "what vat tax",
+  "volume": 880,
+  "cpc": 16.110000610351562,
+  "kd": 23
+ },
+ {
+  "keyword": "who owns monzo bank",
+  "volume": 880,
+  "cpc": 0.9100000262260437,
+  "kd": 11
+ },
+ {
+  "keyword": "xeinadin accountants",
+  "volume": 880,
+  "cpc": 1.7699999809265137,
+  "kd": 0
+ },
+ {
+  "keyword": "accountant for startups",
+  "volume": 720,
+  "cpc": 39.779998779296875,
+  "kd": 0
+ },
+ {
+  "keyword": "accountants for startups",
+  "volume": 720,
+  "cpc": 39.779998779296875,
+  "kd": 0
+ },
+ {
+  "keyword": "accounting for startup companies",
+  "volume": 720,
+  "cpc": 39.779998779296875,
+  "kd": 0
+ },
+ {
+  "keyword": "accounting services for business",
+  "volume": 720,
+  "cpc": 22.610000610351562,
+  "kd": 41
+ },
+ {
+  "keyword": "accounting startup company",
+  "volume": 720,
+  "cpc": 39.779998779296875,
+  "kd": 0
+ },
+ {
+  "keyword": "business accounting services",
+  "volume": 720,
+  "cpc": 22.610000610351562,
+  "kd": 29
+ },
+ {
+  "keyword": "cloud accountant",
+  "volume": 720,
+  "cpc": 24.93000030517578,
+  "kd": 11
+ },
+ {
+  "keyword": "cloud accounting",
+  "volume": 720,
+  "cpc": 24.93000030517578,
+  "kd": 23
+ },
+ {
+  "keyword": "company accounts preparation",
+  "volume": 720,
+  "cpc": 24.610000610351562,
+  "kd": 5
+ },
+ {
+  "keyword": "creating an online shop",
+  "volume": 720,
+  "cpc": 24.6200008392334,
+  "kd": 29
+ },
+ {
+  "keyword": "difference between accounting and financial management",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "difference between finance and management accounting",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "difference between financial and management accountant",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "difference between financial and management accounting",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "difference between financial management and accounting",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "difference between financial management and financial accounting",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "difference between management accounting and financial accounting",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "difference between management accounts and financial accounts",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "difference of financial accounting and management accounting",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "differences between management accounting and financial accounting",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "distinguish between financial accounting and management accounting",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "employers helpline paye",
+  "volume": 720,
+  "cpc": 17.190000534057617,
+  "kd": 0
+ },
+ {
+  "keyword": "finance and accounting management",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 27
+ },
+ {
+  "keyword": "financial accounting and management",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "financial accounting and management accounting",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "financial accounting and management accounting difference",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "financial accounting management accounting",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "financial and management accounting difference",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "financial management in accounting",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 2
+ },
+ {
+  "keyword": "formula for cost of goods",
+  "volume": 720,
+  "cpc": 0.7900000214576721,
+  "kd": 8
+ },
+ {
+  "keyword": "how much is vat in uk 2025",
+  "volume": 720,
+  "cpc": null,
+  "kd": 33
+ },
+ {
+  "keyword": "how to calculate cost of sales",
+  "volume": 720,
+  "cpc": 0.3100000023841858,
+  "kd": 2
+ },
+ {
+  "keyword": "how to calculate variable cost",
+  "volume": 720,
+  "cpc": null,
+  "kd": 5
+ },
+ {
+  "keyword": "how to calculate variable costs",
+  "volume": 720,
+  "cpc": null,
+  "kd": 2
+ },
+ {
+  "keyword": "how to calculate variable expenses",
+  "volume": 720,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "how to find variable cost",
+  "volume": 720,
+  "cpc": null,
+  "kd": 6
+ },
+ {
+  "keyword": "how to work out variable costs",
+  "volume": 720,
+  "cpc": null,
+  "kd": 1
+ },
+ {
+  "keyword": "investors for startups",
+  "volume": 720,
+  "cpc": 7.159999847412109,
+  "kd": 63
+ },
+ {
+  "keyword": "is vat 20",
+  "volume": 720,
+  "cpc": null,
+  "kd": 19
+ },
+ {
+  "keyword": "management accounting and financial accounting difference",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "management accounting financial accounting",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "management accounting financial accounting difference",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "management accounting or financial accounting",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "management accounting vs financial accounting",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "management and financial accounting",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "management or financial accounting",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "management vs financial accounting",
+  "volume": 720,
+  "cpc": 4.639999866485596,
+  "kd": 0
+ },
+ {
+  "keyword": "online accountants",
+  "volume": 720,
+  "cpc": 35.97999954223633,
+  "kd": 36
+ },
+ {
+  "keyword": "online accounting services",
+  "volume": 720,
+  "cpc": 29.549999237060547,
+  "kd": 41
+ },
+ {
+  "keyword": "output vat tax",
+  "volume": 720,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "paye hmrc address",
+  "volume": 720,
+  "cpc": null,
+  "kd": 16
+ },
+ {
+  "keyword": "paye in payslip",
+  "volume": 720,
+  "cpc": 19.06999969482422,
+  "kd": 5
+ },
+ {
+  "keyword": "paye on payslip",
+  "volume": 720,
+  "cpc": 19.06999969482422,
+  "kd": 5
+ },
+ {
+  "keyword": "preparation of company accounts",
+  "volume": 720,
+  "cpc": 24.610000610351562,
+  "kd": 1
+ },
+ {
+  "keyword": "preparing company accounts",
+  "volume": 720,
+  "cpc": 24.610000610351562,
+  "kd": 0
+ },
+ {
+  "keyword": "series a funding",
+  "volume": 720,
+  "cpc": 7.949999809265137,
+  "kd": 14
+ },
+ {
+  "keyword": "small business start up grants",
+  "volume": 720,
+  "cpc": 5.849999904632568,
+  "kd": 29
+ },
+ {
+  "keyword": "start up grants for small businesses",
+  "volume": 720,
+  "cpc": 5.849999904632568,
+  "kd": 28
+ },
+ {
+  "keyword": "start-up grants for small business",
+  "volume": 720,
+  "cpc": 5.849999904632568,
+  "kd": 28
+ },
+ {
+  "keyword": "startup business accounting",
+  "volume": 720,
+  "cpc": 39.779998779296875,
+  "kd": 0
+ },
+ {
+  "keyword": "taxes cost",
+  "volume": 720,
+  "cpc": 0.14000000059604645,
+  "kd": 41
+ },
+ {
+  "keyword": "vat percentage",
+  "volume": 720,
+  "cpc": 0.9100000262260437,
+  "kd": 33
+ },
+ {
+  "keyword": "what cash flow forecast",
+  "volume": 720,
+  "cpc": 2.369999885559082,
+  "kd": 3
+ },
+ {
+  "keyword": "what depreciation means",
+  "volume": 720,
+  "cpc": null,
+  "kd": 25
+ },
+ {
+  "keyword": "what is a payroll number",
+  "volume": 720,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "what is corporation tax rate uk",
+  "volume": 720,
+  "cpc": 1.25,
+  "kd": 28
+ },
+ {
+  "keyword": "what is depreciation",
+  "volume": 720,
+  "cpc": null,
+  "kd": 15
+ },
+ {
+  "keyword": "what is depreciation meaning",
+  "volume": 720,
+  "cpc": null,
+  "kd": 18
+ },
+ {
+  "keyword": "what is emi",
+  "volume": 720,
+  "cpc": 1.149999976158142,
+  "kd": 9
+ },
+ {
+  "keyword": "what is the payroll number",
+  "volume": 720,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "what is the vat rate in the uk",
+  "volume": 720,
+  "cpc": 1.8899999856948853,
+  "kd": 22
+ },
+ {
+  "keyword": "where can i find my payroll number",
+  "volume": 720,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "where do i find my payroll number",
+  "volume": 720,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "where is my payroll number",
+  "volume": 720,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "where is your payroll number",
+  "volume": 720,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "where to find my payroll number",
+  "volume": 720,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "where will i find my payroll number",
+  "volume": 720,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "accountancy co uk",
+  "volume": 590,
+  "cpc": 14.75,
+  "kd": 55
+ },
+ {
+  "keyword": "business startup grants",
+  "volume": 590,
+  "cpc": 8.09000015258789,
+  "kd": 24
+ },
+ {
+  "keyword": "calculate tax on dividend income",
+  "volume": 590,
+  "cpc": null,
+  "kd": 9
+ },
+ {
+  "keyword": "companies house extend filing deadline",
+  "volume": 590,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "companies house extending filing deadlines",
+  "volume": 590,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "company startup grants",
+  "volume": 590,
+  "cpc": 8.09000015258789,
+  "kd": 32
+ },
+ {
+  "keyword": "company taxation",
+  "volume": 590,
+  "cpc": 11.5600004196167,
+  "kd": 37
+ },
+ {
+  "keyword": "corporation tax definition",
+  "volume": 590,
+  "cpc": null,
+  "kd": 13
+ },
+ {
+  "keyword": "corporation tax meaning",
+  "volume": 590,
+  "cpc": null,
+  "kd": 25
+ },
+ {
+  "keyword": "crowdfunding businesses",
+  "volume": 590,
+  "cpc": 9.34000015258789,
+  "kd": 27
+ },
+ {
+  "keyword": "crowdfunding platform",
+  "volume": 590,
+  "cpc": 5.349999904632568,
+  "kd": 48
+ },
+ {
+  "keyword": "crowdfunding platforms",
+  "volume": 590,
+  "cpc": 5.349999904632568,
+  "kd": 68
+ },
+ {
+  "keyword": "dividends tax calculator",
+  "volume": 590,
+  "cpc": null,
+  "kd": 2
+ },
+ {
+  "keyword": "e commerce accounting",
+  "volume": 590,
+  "cpc": 30.299999237060547,
+  "kd": 3
+ },
+ {
+  "keyword": "ecommerce accounting",
+  "volume": 590,
+  "cpc": 30.299999237060547,
+  "kd": 3
+ },
+ {
+  "keyword": "emi option",
+  "volume": 590,
+  "cpc": 5.779999732971191,
+  "kd": 2
+ },
+ {
+  "keyword": "emi options",
+  "volume": 590,
+  "cpc": 5.779999732971191,
+  "kd": 1
+ },
+ {
+  "keyword": "employer paye login",
+  "volume": 590,
+  "cpc": null,
+  "kd": 7
+ },
+ {
+  "keyword": "ern number",
+  "volume": 590,
+  "cpc": 4.199999809265137,
+  "kd": 0
+ },
+ {
+  "keyword": "extend companies house deadline",
+  "volume": 590,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "extend companies house filing deadline",
+  "volume": 590,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "funding for startup companies",
+  "volume": 590,
+  "cpc": 15.859999656677246,
+  "kd": 40
+ },
+ {
+  "keyword": "grant for startup business",
+  "volume": 590,
+  "cpc": 8.09000015258789,
+  "kd": 28
+ },
+ {
+  "keyword": "grants for start-ups",
+  "volume": 590,
+  "cpc": 6.820000171661377,
+  "kd": 24
+ },
+ {
+  "keyword": "help for startup business",
+  "volume": 590,
+  "cpc": 4.710000038146973,
+  "kd": 55
+ },
+ {
+  "keyword": "hmrc paye employer helpline",
+  "volume": 590,
+  "cpc": 7.809999942779541,
+  "kd": 0
+ },
+ {
+  "keyword": "how much for accountant",
+  "volume": 590,
+  "cpc": 7.630000114440918,
+  "kd": 0
+ },
+ {
+  "keyword": "how much for an accountant",
+  "volume": 590,
+  "cpc": 7.630000114440918,
+  "kd": 0
+ },
+ {
+  "keyword": "how much is an accountant",
+  "volume": 590,
+  "cpc": 7.630000114440918,
+  "kd": 0
+ },
+ {
+  "keyword": "huel founded",
+  "volume": 590,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "huel ownership",
+  "volume": 590,
+  "cpc": null,
+  "kd": 6
+ },
+ {
+  "keyword": "limited company accounts",
+  "volume": 590,
+  "cpc": 37.439998626708984,
+  "kd": 1
+ },
+ {
+  "keyword": "paye deduction",
+  "volume": 590,
+  "cpc": 9.84000015258789,
+  "kd": 17
+ },
+ {
+  "keyword": "paye deductions",
+  "volume": 590,
+  "cpc": 9.84000015258789,
+  "kd": 5
+ },
+ {
+  "keyword": "paye for employers login",
+  "volume": 590,
+  "cpc": null,
+  "kd": 12
+ },
+ {
+  "keyword": "paye tax deduction",
+  "volume": 590,
+  "cpc": 9.84000015258789,
+  "kd": 56
+ },
+ {
+  "keyword": "paye tax uk",
+  "volume": 590,
+  "cpc": 1.9200000762939453,
+  "kd": 56
+ },
+ {
+  "keyword": "psa1",
+  "volume": 590,
+  "cpc": 0.11999999731779099,
+  "kd": 0
+ },
+ {
+  "keyword": "start up grants",
+  "volume": 590,
+  "cpc": 6.820000171661377,
+  "kd": 28
+ },
+ {
+  "keyword": "startup company grants",
+  "volume": 590,
+  "cpc": 8.09000015258789,
+  "kd": 20
+ },
+ {
+  "keyword": "startup funding",
+  "volume": 590,
+  "cpc": 15.859999656677246,
+  "kd": 36
+ },
+ {
+  "keyword": "startup grants",
+  "volume": 590,
+  "cpc": 8.09000015258789,
+  "kd": 28
+ },
+ {
+  "keyword": "startups grants",
+  "volume": 590,
+  "cpc": 8.09000015258789,
+  "kd": 29
+ },
+ {
+  "keyword": "statutory accounts",
+  "volume": 590,
+  "cpc": 7.230000019073486,
+  "kd": 1
+ },
+ {
+  "keyword": "venture capital in uk",
+  "volume": 590,
+  "cpc": 10.670000076293945,
+  "kd": 14
+ },
+ {
+  "keyword": "what are paye deductions",
+  "volume": 590,
+  "cpc": null,
+  "kd": 7
+ },
+ {
+  "keyword": "what does paye mean on a payslip",
+  "volume": 590,
+  "cpc": null,
+  "kd": 1
+ },
+ {
+  "keyword": "what does paye mean on payslip",
+  "volume": 590,
+  "cpc": null,
+  "kd": 5
+ },
+ {
+  "keyword": "what does paye tax mean on a payslip",
+  "volume": 590,
+  "cpc": null,
+  "kd": 12
+ },
+ {
+  "keyword": "what is a tax office reference number",
+  "volume": 590,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "what is paye deduction",
+  "volume": 590,
+  "cpc": null,
+  "kd": 10
+ },
+ {
+  "keyword": "what is tax office reference number",
+  "volume": 590,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "what is the tax office reference number",
+  "volume": 590,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "who owned topshop",
+  "volume": 590,
+  "cpc": null,
+  "kd": 16
+ },
+ {
+  "keyword": "accountant fees",
+  "volume": 480,
+  "cpc": 12.710000038146973,
+  "kd": 0
+ },
+ {
+  "keyword": "accounting bookkeeping difference",
+  "volume": 480,
+  "cpc": 3.4600000381469727,
+  "kd": 7
+ },
+ {
+  "keyword": "crowd fund sites",
+  "volume": 480,
+  "cpc": 4.260000228881836,
+  "kd": 63
+ },
+ {
+  "keyword": "crowd source funding sites",
+  "volume": 480,
+  "cpc": 4.260000228881836,
+  "kd": 83
+ },
+ {
+  "keyword": "crowdfunding website",
+  "volume": 480,
+  "cpc": 4.260000228881836,
+  "kd": 83
+ },
+ {
+  "keyword": "crowdfunding websites",
+  "volume": 480,
+  "cpc": 4.260000228881836,
+  "kd": 68
+ },
+ {
+  "keyword": "difference between bookkeeping accounting and accountancy",
+  "volume": 480,
+  "cpc": 3.4600000381469727,
+  "kd": 0
+ },
+ {
+  "keyword": "eis and seis",
+  "volume": 480,
+  "cpc": 21.979999542236328,
+  "kd": 2
+ },
+ {
+  "keyword": "emi shares",
+  "volume": 480,
+  "cpc": 5.619999885559082,
+  "kd": 1
+ },
+ {
+  "keyword": "employee number",
+  "volume": 480,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "employer reference number",
+  "volume": 480,
+  "cpc": null,
+  "kd": 7
+ },
+ {
+  "keyword": "file dormant accounts companies house",
+  "volume": 480,
+  "cpc": 4.440000057220459,
+  "kd": 4
+ },
+ {
+  "keyword": "hmrc employers paye",
+  "volume": 480,
+  "cpc": null,
+  "kd": 10
+ },
+ {
+  "keyword": "hmrc paye employer",
+  "volume": 480,
+  "cpc": null,
+  "kd": 19
+ },
+ {
+  "keyword": "hmrc paye for employers",
+  "volume": 480,
+  "cpc": null,
+  "kd": 18
+ },
+ {
+  "keyword": "how is paye calculated",
+  "volume": 480,
+  "cpc": 0.9900000095367432,
+  "kd": 12
+ },
+ {
+  "keyword": "how much corporation tax do i pay",
+  "volume": 480,
+  "cpc": 4.800000190734863,
+  "kd": 10
+ },
+ {
+  "keyword": "increase in vat",
+  "volume": 480,
+  "cpc": null,
+  "kd": 9
+ },
+ {
+  "keyword": "increasing vat",
+  "volume": 480,
+  "cpc": null,
+  "kd": 5
+ },
+ {
+  "keyword": "intacct",
+  "volume": 480,
+  "cpc": 18.760000228881836,
+  "kd": 33
+ },
+ {
+  "keyword": "managed services accounting",
+  "volume": 480,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "management cash flow",
+  "volume": 480,
+  "cpc": 12.039999961853027,
+  "kd": 28
+ },
+ {
+  "keyword": "managing cash flow",
+  "volume": 480,
+  "cpc": 12.039999961853027,
+  "kd": 27
+ },
+ {
+  "keyword": "money manage apps",
+  "volume": 480,
+  "cpc": 5.489999771118164,
+  "kd": 59
+ },
+ {
+  "keyword": "money management apps",
+  "volume": 480,
+  "cpc": 5.489999771118164,
+  "kd": 56
+ },
+ {
+  "keyword": "monzo founder",
+  "volume": 480,
+  "cpc": null,
+  "kd": 35
+ },
+ {
+  "keyword": "monzo founders",
+  "volume": 480,
+  "cpc": null,
+  "kd": 24
+ },
+ {
+  "keyword": "online accounting software",
+  "volume": 480,
+  "cpc": 77.19000244140625,
+  "kd": 65
+ },
+ {
+  "keyword": "paye and income tax",
+  "volume": 480,
+  "cpc": null,
+  "kd": 23
+ },
+ {
+  "keyword": "paye income tax",
+  "volume": 480,
+  "cpc": null,
+  "kd": 33
+ },
+ {
+  "keyword": "paye number",
+  "volume": 480,
+  "cpc": 9.579999923706055,
+  "kd": 9
+ },
+ {
+  "keyword": "paye numbers",
+  "volume": 480,
+  "cpc": 9.579999923706055,
+  "kd": 0
+ },
+ {
+  "keyword": "payroll number on payslip",
+  "volume": 480,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "payroll number payslip",
+  "volume": 480,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "psa hmrc",
+  "volume": 480,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "psa tax",
+  "volume": 480,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "salary dividend tax calculator",
+  "volume": 480,
+  "cpc": 1.559999942779541,
+  "kd": 0
+ },
+ {
+  "keyword": "seis and eis",
+  "volume": 480,
+  "cpc": 21.979999542236328,
+  "kd": 5
+ },
+ {
+  "keyword": "seis eis investment",
+  "volume": 480,
+  "cpc": 21.979999542236328,
+  "kd": 6
+ },
+ {
+  "keyword": "seis/eis scheme",
+  "volume": 480,
+  "cpc": 21.979999542236328,
+  "kd": 20
+ },
+ {
+  "keyword": "tax office reference number on payslip",
+  "volume": 480,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "vat increase",
+  "volume": 480,
+  "cpc": null,
+  "kd": 12
+ },
+ {
+  "keyword": "vat increases",
+  "volume": 480,
+  "cpc": null,
+  "kd": 11
+ },
+ {
+  "keyword": "vat to increase",
+  "volume": 480,
+  "cpc": null,
+  "kd": 11
+ },
+ {
+  "keyword": "vat uk 2025",
+  "volume": 480,
+  "cpc": 3.7300000190734863,
+  "kd": 5
+ },
+ {
+  "keyword": "what are variable costs",
+  "volume": 480,
+  "cpc": 26.709999084472656,
+  "kd": 8
+ },
+ {
+  "keyword": "what does depreciation mean",
+  "volume": 480,
+  "cpc": null,
+  "kd": 23
+ },
+ {
+  "keyword": "what is the percentage of vat in uk",
+  "volume": 480,
+  "cpc": 0.4699999988079071,
+  "kd": 20
+ },
+ {
+  "keyword": "what is vat tax",
+  "volume": 480,
+  "cpc": 1.3899999856948853,
+  "kd": 37
+ },
+ {
+  "keyword": "what percent is vat in the uk",
+  "volume": 480,
+  "cpc": 0.4699999988079071,
+  "kd": 18
+ },
+ {
+  "keyword": "when do you pay corporation tax",
+  "volume": 480,
+  "cpc": 3.700000047683716,
+  "kd": 17
+ },
+ {
+  "keyword": "where can i find payroll number",
+  "volume": 480,
+  "cpc": 4.5,
+  "kd": 0
+ },
+ {
+  "keyword": "where to find a payroll number",
+  "volume": 480,
+  "cpc": 4.5,
+  "kd": 0
+ },
+ {
+  "keyword": "where to find payroll number",
+  "volume": 480,
+  "cpc": 4.5,
+  "kd": 0
+ },
+ {
+  "keyword": "accountant cost for small business",
+  "volume": 390,
+  "cpc": 16.540000915527344,
+  "kd": 0
+ },
+ {
+  "keyword": "accountant cost limited company",
+  "volume": 390,
+  "cpc": 25.190000534057617,
+  "kd": 0
+ },
+ {
+  "keyword": "accountant fees for small business",
+  "volume": 390,
+  "cpc": 16.540000915527344,
+  "kd": 0
+ },
+ {
+  "keyword": "accountant online uk",
+  "volume": 390,
+  "cpc": 27.739999771118164,
+  "kd": 37
+ },
+ {
+  "keyword": "accountant payroll",
+  "volume": 390,
+  "cpc": 38.849998474121094,
+  "kd": 0
+ },
+ {
+  "keyword": "accountant prices for small business",
+  "volume": 390,
+  "cpc": 16.540000915527344,
+  "kd": 0
+ },
+ {
+  "keyword": "accountant rates small business",
+  "volume": 390,
+  "cpc": 16.540000915527344,
+  "kd": 0
+ },
+ {
+  "keyword": "accounting and payroll",
+  "volume": 390,
+  "cpc": 38.849998474121094,
+  "kd": 14
+ },
+ {
+  "keyword": "accounting consultants",
+  "volume": 390,
+  "cpc": 38.54999923706055,
+  "kd": 30
+ },
+ {
+  "keyword": "accounts office reference number",
+  "volume": 390,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "annual accounts",
+  "volume": 390,
+  "cpc": 17.950000762939453,
+  "kd": 5
+ },
+ {
+  "keyword": "best app to manage finances",
+  "volume": 390,
+  "cpc": 6.260000228881836,
+  "kd": 68
+ },
+ {
+  "keyword": "best bookkeeping software for self employed",
+  "volume": 390,
+  "cpc": 22.59000015258789,
+  "kd": 24
+ },
+ {
+  "keyword": "best bookkeeping software for self-employed",
+  "volume": 390,
+  "cpc": 22.59000015258789,
+  "kd": 28
+ },
+ {
+  "keyword": "best money management app",
+  "volume": 390,
+  "cpc": 6.260000228881836,
+  "kd": 29
+ },
+ {
+  "keyword": "best money manager apps",
+  "volume": 390,
+  "cpc": 6.260000228881836,
+  "kd": 56
+ },
+ {
+  "keyword": "bookkeeping software business",
+  "volume": 390,
+  "cpc": 55.95000076293945,
+  "kd": 63
+ },
+ {
+  "keyword": "british sales tax",
+  "volume": 390,
+  "cpc": 2.240000009536743,
+  "kd": 19
+ },
+ {
+  "keyword": "business software bookkeeping",
+  "volume": 390,
+  "cpc": 55.95000076293945,
+  "kd": 74
+ },
+ {
+  "keyword": "coffee vat",
+  "volume": 390,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "cool co working spaces",
+  "volume": 390,
+  "cpc": 3.7899999618530273,
+  "kd": 4
+ },
+ {
+  "keyword": "corporation tax for ltd company",
+  "volume": 390,
+  "cpc": 11.170000076293945,
+  "kd": 28
+ },
+ {
+  "keyword": "corporation tax limited company",
+  "volume": 390,
+  "cpc": 11.170000076293945,
+  "kd": 21
+ },
+ {
+  "keyword": "definition of management accounts",
+  "volume": 390,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "depreciating assets",
+  "volume": 390,
+  "cpc": 1.1200000047683716,
+  "kd": 0
+ },
+ {
+  "keyword": "emi share options",
+  "volume": 390,
+  "cpc": 8.800000190734863,
+  "kd": 7
+ },
+ {
+  "keyword": "employer paye reference number",
+  "volume": 390,
+  "cpc": null,
+  "kd": 3
+ },
+ {
+  "keyword": "employer's paye reference number",
+  "volume": 390,
+  "cpc": null,
+  "kd": 2
+ },
+ {
+  "keyword": "employers paye tax reference number",
+  "volume": 390,
+  "cpc": null,
+  "kd": 3
+ },
+ {
+  "keyword": "england sales tax",
+  "volume": 390,
+  "cpc": 2.240000009536743,
+  "kd": 21
+ },
+ {
+  "keyword": "good app to manage money",
+  "volume": 390,
+  "cpc": 6.260000228881836,
+  "kd": 67
+ },
+ {
+  "keyword": "historic uk vat rates",
+  "volume": 390,
+  "cpc": null,
+  "kd": 16
+ },
+ {
+  "keyword": "historic vat rates uk",
+  "volume": 390,
+  "cpc": null,
+  "kd": 15
+ },
+ {
+  "keyword": "historical vat rates uk",
+  "volume": 390,
+  "cpc": null,
+  "kd": 17
+ },
+ {
+  "keyword": "hmrc penalty points",
+  "volume": 390,
+  "cpc": null,
+  "kd": 0
+ },
+ {
+  "keyword": "how can i start an online store",
+  "volume": 390,
+  "cpc": 6.25,
+  "kd": 14
+ },
+ {
+  "keyword": "how to find investors",
+  "volume": 390,
+  "cpc": 7.449999809265137,
+  "kd": 15
+ },
+ {
+  "keyword": "how to open an online shop",
+  "volume": 390,
+  "cpc": 6.25,
+  "kd": 21
+ },
+ {
+  "keyword": "how to open online shop",
+  "volume": 390,
+  "cpc": 6.25,
+  "kd": 19
+ },
+ {
+  "keyword": "how to open store online",
+  "volume": 390,
+  "cpc": 6.25,
+  "kd": 9
+ },
+ {
+  "keyword": "how to start an online shop",
+  "volume": 390,
+  "cpc": 6.25,
+  "kd": 14
+ },
+ {
+  "keyword": "how to start an online store",
+  "volume": 390,
+  "cpc": 6.25,
+  "kd": 16
+ }
+]

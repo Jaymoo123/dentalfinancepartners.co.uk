@@ -1,0 +1,196 @@
+chacc.co.uk: FAIL -1
+sleek.com: OK mentions=30 svc=True
+startupaccountancy.com: OK mentions=39 svc=True
+startupaccountants.uk: OK mentions=173 svc=True
+unicornaccountants.co.uk: OK mentions=8 svc=True
+eternityaccountants.co.uk: OK mentions=8 svc=True
+quilliammarr.co.uk: FAIL 403
+vestd.com: OK mentions=67 svc=True
+acctek.co.uk: OK mentions=33 svc=True
+onthegoaccountants.co.uk: OK mentions=46 svc=True
+riseaccounting.co.uk: FAIL 202
+accotax.co.uk: OK mentions=20 svc=True
+pearllemonaccountants.co.uk: FAIL 403
+goforma.com: OK mentions=5 svc=True
+barnesandscott.com: OK mentions=38 svc=True
+saasaccountants.co.uk: OK mentions=6 svc=True
+business-accounting.co.uk: OK mentions=1 svc=True
+standardledger.co: OK mentions=63 svc=True
+library.croneri.co.uk: FAIL 403
+fusionaccountants.co.uk: OK mentions=10 svc=True
+rraccountants.uk: OK mentions=1 svc=False
+mmba.co.uk: OK mentions=8 svc=True
+123financials.com: OK mentions=19 svc=True
+octaaccountants.co.uk: OK mentions=3 svc=True
+softwarestrategiesblog.com: OK mentions=55 svc=True
+chartaccountancy.com: FAIL 403
+reflexaccounting.co.uk: OK mentions=9 svc=True
+rsbc.uk: OK mentions=3 svc=True
+randduk.com: OK mentions=72 svc=True
+ross-brooke.co.uk: OK mentions=14 svc=True
+forrestbrown.co.uk: OK mentions=18 svc=True
+bdo.co.uk: OK mentions=0 svc=False
+accountingweb.co.uk: FAIL 403
+protaxaccountant.co.uk: OK mentions=0 svc=False
+bing.com: OK mentions=0 svc=False
+aiaccounts.co.uk: OK mentions=51 svc=True
+tax-wise.co.uk: OK mentions=5 svc=True
+zatrsaccounting.com: OK mentions=6 svc=True
+adenaaccountancy.co.uk: OK mentions=4 svc=True
+coxhinkins.co.uk: OK mentions=2 svc=True
+ventsmagazine.co.uk: OK mentions=0 svc=True
+accountaxzone.com: FAIL 403
+dynamitejobs.com: OK mentions=3 svc=True
+priceandaccountants.com: OK mentions=20 svc=True
+finerva.com: OK mentions=28 svc=True
+pro-accx.co.uk: OK mentions=10 svc=True
+abmcharteredaccountants.com: OK mentions=20 svc=True
+apexaccountants.tax: OK mentions=24 svc=True
+agileaccountants.co.uk: OK mentions=7 svc=True
+clarkwell.co.uk: OK mentions=8 svc=True
+auditconsultinggroup.co.uk: OK mentions=5 svc=True
+alexanderclifford.co.uk: FAIL 403
+sourceadvisors.co.uk: FAIL 403
+randdtax.co.uk: OK mentions=26 svc=True
+plusaccounting.co.uk: OK mentions=14 svc=True
+advanceassured.co.uk: OK mentions=67 svc=True
+sprintlaw.co.uk: OK mentions=9 svc=True
+jumpaccounting.co.uk: FAIL 202
+a-wise.co.uk: OK mentions=10 svc=True
+xactaccountants.co.uk: OK mentions=7 svc=False
+macalvins.com: OK mentions=3 svc=True
+bhp.co.uk: OK mentions=5 svc=True
+alto-accounting.com: OK mentions=8 svc=True
+zelt.app: OK mentions=6 svc=True
+pearllemonaccountants.com: OK mentions=10 svc=True
+startup-cfo.co.uk: OK mentions=65 svc=True
+leadership-services.co.uk: OK mentions=4 svc=True
+thrivegrowth.co.uk: OK mentions=53 svc=True
+fdcapital.co.uk: OK mentions=64 svc=True
+sage.com: FAIL 403
+rockstaraccountants.co.uk: OK mentions=1 svc=False
+startupaccountants.co.uk: FAIL 404
+dnsaccountantsfranchise.co.uk: OK mentions=1 svc=False
+taxkings.co.uk: FAIL 403
+coreadviz.co.uk: OK mentions=12 svc=True
+seacrestaccountancy.co.uk: FAIL 404
+earepolaris.co.uk: EXC SSRF blocked: earepolaris.co.uk resolves to private IP
+rus.co.uk: OK mentions=2 svc=True
+5ra.co.uk: FAIL 202
+arnhoxton.co.uk: OK mentions=0 svc=True
+acconomy.co.uk: OK mentions=4 svc=True
+pro-taxman.co.uk: OK mentions=8 svc=True
+uk.recruit.net: FAIL 403
+directivefinance.co.uk: OK mentions=1 svc=True
+uk.jooble.org: FAIL 403
+dnsassociates.co.uk: OK mentions=12 svc=True
+/clev?event=startpageresultclick&sc=a8mbue7dqj3ta99fma3ag0ujegwkkhzt8nzmznptbcz26yzx1rzcqzvvfg5jfkusw2ijcto9farkmhalntyyyrtagv5ti3s6h&payload={"bdssessionid":"9c4a2f08450d45cda13bdeeb0a8d36d7","cheqid":"","countrycode":"gb","devicetype":"mobile","endpoint":"search.serp","hasgoogleads":false,"page_id":"13h0pn8y3onkgzsme","querycategory":"web","segment":"startpage.udog","session_id":"1vzowpzbvo2dflqyc","surface":"serp-web","transport":"href-request"}: EXC No host in URL: 'https:///clev?event=startpageresultclick&sc=a8mbue7dqj3ta99fma3ag0ujegwkkhzt8nzmznptbcz26yzx1rzcqzvvfg5jfkusw2ijcto9farkmhalntyyyrtagv5ti3s6h&payload={"bdssessionid":"9c4a2f08450d45cda13bdeeb0a8d36d7","cheqid":"","countrycode":"gb","devicetype":"mobile","endpoint":"search.serp","hasgoogleads":false,"page_id":"13h0pn8y3onkgzsme","querycategory":"web","segment":"startpage.udog","session_id":"1vzowpzbvo2dflqyc","surface":"serp-web","transport":"href-request"}/'
+nuvem9.co.uk: OK mentions=17 svc=True
+lanop.co.uk: FAIL 403
+approved-accounting.co.uk: OK mentions=2 svc=True
+rousepartners.co.uk: OK mentions=2 svc=True
+xeinadin.com: OK mentions=4 svc=True
+parsons.co.uk: OK mentions=1 svc=True
+mooreks.co.uk: OK mentions=0 svc=True
+trtaxadvisers.com: OK mentions=23 svc=True
+nayloraccountancy.com: OK mentions=3 svc=True
+leraccountancy.co.uk: OK mentions=2 svc=True
+mtatarandassociates.co.uk: OK mentions=64 svc=True
+pwc.co.uk: FAIL 403
+gorillaaccounting.com: FAIL 202
+granttree.co.uk: FAIL 403
+bex.co.uk: OK mentions=0 svc=True
+insider.co.uk: OK mentions=7 svc=True
+hymagazine.org: EXC SSRF blocked: hymagazine.org resolves to private IP
+legendfusions.com: OK mentions=0 svc=False
+australiachamber.co.uk: FAIL 0
+grantthornton.com.au: OK mentions=0 svc=True
+businesseye.co.uk: OK mentions=0 svc=True
+randdtaxspecialists.co.uk: OK mentions=8 svc=True
+randdtaxcreditspecialists.co.uk: OK mentions=35 svc=True
+metricaccountants.co.uk: OK mentions=13 svc=True
+lexmore.co.uk: OK mentions=1 svc=False
+qaccountants.com: OK mentions=9 svc=True
+championgroup.co.uk: OK mentions=6 svc=True
+deloitte.com: OK mentions=1 svc=True
+saffery.com: OK mentions=0 svc=False
+ctmp.co.uk: OK mentions=0 svc=False
+swansonreed.co.uk: OK mentions=39 svc=True
+rdrelief.co.uk: OK mentions=16 svc=True
+cartwheelinternational.com: OK mentions=0 svc=False
+taxcloud.co.uk: OK mentions=21 svc=True
+somethingfinancial.co.uk: OK mentions=11 svc=True
+inplus.co.uk: OK mentions=13 svc=True
+mondaq.com: OK mentions=2 svc=True
+crowe.com: FAIL 403
+legalfoundations.org.uk: OK mentions=56 svc=True
+etaandassociates.com: OK mentions=9 svc=True
+seisadvanceassurance.co.uk: OK mentions=47 svc=True
+seedlegals.com: FAIL 403
+swoopfunding.com: OK mentions=16 svc=True
+jonathanlea.net: OK mentions=10 svc=True
+legalvision.co.uk: OK mentions=5 svc=True
+carta.com: FAIL 403
+perrysaccountants.co.uk: OK mentions=4 svc=True
+gohawkstone.co.uk: FAIL 202
+reaveley-cooper.co.uk: OK mentions=4 svc=False
+pennybooks.io: FAIL 403
+start.novabook.com: OK mentions=14 svc=True
+vennaccounts.com: FAIL 403
+info.sapphirecapitalpartners.co.uk: OK mentions=36 svc=False
+buckworths.com: OK mentions=20 svc=True
+mytaxaccountant.co.uk: OK mentions=0 svc=True
+accounts-os.com: OK mentions=3 svc=False
+pie.tax: OK mentions=0 svc=False
+joinfurther.com: OK mentions=0 svc=False
+harperjames.co.uk: OK mentions=31 svc=True
+loyals.uk: OK mentions=3 svc=True
+equidam.com: OK mentions=25 svc=True
+smebusinessvaluation.com: OK mentions=33 svc=True
+millconsultancy.co.uk: OK mentions=21 svc=True
+gofile.co.uk: FAIL 403
+scholesca.co.uk: OK mentions=0 svc=False
+bishopfleming.co.uk: OK mentions=0 svc=True
+fwca.co.uk: OK mentions=5 svc=True
+pricebailey.co.uk: FAIL 403
+jondaviesaccountants.co.uk: FAIL 202
+rpgcrouchchapman.co.uk: OK mentions=13 svc=True
+growth.accountants: OK mentions=0 svc=False
+growthaccountants.uk: FAIL -1
+hawsons.co.uk: OK mentions=1 svc=True
+hazlewoods.co.uk: OK mentions=4 svc=True
+hurst.co.uk: OK mentions=10 svc=True
+cigmaaccounting.co.uk: OK mentions=30 svc=True
+jackross.com: OK mentions=1 svc=False
+haslers.com: OK mentions=6 svc=True
+armstrongwatson.co.uk: OK mentions=2 svc=True
+ellacotts.co.uk: OK mentions=4 svc=True
+naailandco.com: FAIL 202
+heightenaccountants.co.uk: FAIL 403
+future-cloud.co.uk: FAIL 403
+earesquaremile.com: EXC SSRF blocked: earesquaremile.com resolves to private IP
+accountancycloud.com: OK mentions=48 svc=True
+singletreeaccountants.com: OK mentions=5 svc=True
+rightcfo.co.uk: EXC SSRF blocked: rightcfo.co.uk resolves to private IP
+growthcfo.co.uk: OK mentions=34 svc=True
+emergeone.co.uk: OK mentions=23 svc=True
+gocfo.co.uk: OK mentions=32 svc=True
+fin-house.co.uk: FAIL 202
+/clev?event=startpageresultclick&sc=ar5csbellm1iq6eopvsy7tmlwtqifoz10g8gzx9t0wc1hb2x3mcoayuncv7fipm9m9oplzem9fshzoinge0hlzuxlbq1mr&payload={"bdssessionid":"4a7610e5b1234309bbc201d72903cecd","cheqid":"","countrycode":"gb","devicetype":"mobile","endpoint":"search.serp","hasgoogleads":false,"page_id":"kas3xtaxtqlv4flo","querycategory":"web","segment":"startpage.udog","session_id":"xfa1dd30cynr0zmj","surface":"serp-web","transport":"href-request"}: EXC No host in URL: 'https:///clev?event=startpageresultclick&sc=ar5csbellm1iq6eopvsy7tmlwtqifoz10g8gzx9t0wc1hb2x3mcoayuncv7fipm9m9oplzem9fshzoinge0hlzuxlbq1mr&payload={"bdssessionid":"4a7610e5b1234309bbc201d72903cecd","cheqid":"","countrycode":"gb","devicetype":"mobile","endpoint":"search.serp","hasgoogleads":false,"page_id":"kas3xtaxtqlv4flo","querycategory":"web","segment":"startpage.udog","session_id":"xfa1dd30cynr0zmj","surface":"serp-web","transport":"href-request"}/'
+account-ease.co.uk: OK mentions=8 svc=True
+blue-shore.co.uk: OK mentions=3 svc=True
+ukcostguide.co.uk: OK mentions=0 svc=True
+accountingfirms.co.uk: OK mentions=3 svc=True
+theaccountancy.co.uk: FAIL 403
+heightsaccountancy.co.uk: OK mentions=0 svc=True
+1stcloudaccountants.co.uk: OK mentions=5 svc=True
+capitalaccountancy.co.uk: OK mentions=1 svc=False
+scalewithcfo.com: OK mentions=39 svc=True
+jujur.uk: OK mentions=0 svc=True
+azlaccounting.solutions: OK mentions=8 svc=True
+reai.uk: OK mentions=1 svc=True
+startupbusinessaccountant.co.uk: FAIL 202
+rawaccounting.co.uk: OK mentions=2 svc=False
+braant.co.uk: OK mentions=9 svc=True
+taxace.co.uk: FAIL 202
+done: 195 domains

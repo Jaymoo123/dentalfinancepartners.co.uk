@@ -1,0 +1,2631 @@
+{
+ "serper": {
+  "startup accountant": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "startup accountants uk": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "accountants for startups": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "accountant for tech company": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "tech startup accountants london": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "saas accountant uk": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "saas accountants": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "accountants for saas companies": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "accountants for software companies uk": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "tech accountants uk": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "accountants for tech startups": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "fintech startup accountant": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "r&d tax credit accountant": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "r&d tax credits advisor uk": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "r&d tax relief specialist accountant": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "merged scheme r&d accountant": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "software r&d tax claim help": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "seis advance assurance help": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "eis advance assurance accountant": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "seis eis accountant": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "seis compliance statement help": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "eis3 form accountant": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "emi scheme setup accountant": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "emi valuation accountant": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "emi share options accountant": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "growth shares accountant": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "employee share scheme accountant uk": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "accountant for pre revenue startup": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "accountant for vc backed startup": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "startup cfo services uk": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "fractional cfo for startups uk": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "accountant for funded startup": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "startup accounting fees uk": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "revenue recognition saas accountant": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "startup payroll and share options accountant": {
+   "error": "Client error '400 Bad Request' for url 'https://google.serper.dev/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  }
+ },
+ "ddg": {
+  "startup accountant": [
+   {
+    "position": 1,
+    "title": "Accountants for Startups | Startup Accountants UK | Taxwise Accountancy",
+    "link": "https://www.tax-wise.co.uk/accountants-for-startups",
+    "snippet": "Accountants for startups helping UK businesses with company formation, payroll, bookkeeping, cloud accounting, annual accounts and tax planning. Get expert startup accounting services from Taxwise Accountancy.",
+    "domain": "tax-wise.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "Startup Accountant UK | Proactive Accounting for founders",
+    "link": "https://www.acctek.co.uk/who-we-help/startup-accountant-uk/",
+    "snippet": "What Is a Startup Accountant? A startup accountant is an accountant who specialises in working with early-stage and high-growth UK businesses \u2014 from company formation through to scaling, fundraising and beyond. Unlike traditional accountants who focus primarily on year-end compliance, a startup accountant provides proactive tax planning, real-time financial reporting, cloud accounting setup ...",
+    "domain": "acctek.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "Startup Accountants UK | Accounting Services for New Businesses",
+    "link": "https://www.rockstaraccountants.co.uk/startup-accountants/",
+    "snippet": "Startup accountants providing expert support with company formation, tax planning, bookkeeping, and compliance for new businesses in the UK.",
+    "domain": "rockstaraccountants.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "Startup Accountants UK | Fixed Monthly Pricing | Startup Accountancy",
+    "link": "https://www.startupaccountancy.com/",
+    "snippet": "UK startup accountants built by founders, for founders. Fixed plans from \u00a3345, including bookkeeping, payroll, and VAT. No jargon, no surprises. Book a call.",
+    "domain": "startupaccountancy.com"
+   },
+   {
+    "position": 5,
+    "title": "Startup Accountants UK | Free Matching Service for UK Startup Accountants",
+    "link": "https://www.startupaccountants.uk/",
+    "snippet": "Free matching service \u00b7 No obligation Startup Accountants UK - Expert Accounting for New Businesses Connect with specialist startup accountants who understand HMRC reliefs, SEIS/EIS schemes, and R&D tax credits. We match UK founders with experienced accountants for startups: qualified professionals who work with early-stage businesses every day.",
+    "domain": "startupaccountants.uk"
+   },
+   {
+    "position": 6,
+    "title": "Startup accountant",
+    "link": "https://sleek.com/uk/startup-accountant/",
+    "snippet": "Specialist accountants for startups in the UK. Get clear, scalable support to manage cash flow, stay compliant and grow your business with confidence.",
+    "domain": "sleek.com"
+   },
+   {
+    "position": 7,
+    "title": "Accountants for Startups Businesses | Fusion Accountants",
+    "link": "https://www.fusionaccountants.co.uk/start-ups-accounting/",
+    "snippet": "Specialist accountants for Startups helping new businesses with all their accounting, tax and advisory requirements. Free Company Formation & consultation.",
+    "domain": "fusionaccountants.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "Tech Startup & High Growth Accountants | Your Finance Partner",
+    "link": "https://www.onthegoaccountants.co.uk/",
+    "snippet": "Outsource your finance function or expand your in-house finance team. Our Startup specialists can support you with R&D, CFO services and S/EIS.",
+    "domain": "onthegoaccountants.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "Startup Accountants",
+    "link": "https://chacc.co.uk/startup-accountants-3/",
+    "snippet": "Expert Startup Accountants in the UK. Holistic Startup Accounting Services Starting from \u00a349 + VAT.Startup Accountants. Services for Startups That Add Real Value.",
+    "domain": "chacc.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "Accountants for Startups UK \u2014 From Formation... | RR Accountants",
+    "link": "https://rraccountants.uk/accountants-for-startups-uk",
+    "snippet": "UK startup accountants. Company formation, first-year compliance, VAT registration, payroll for first hire, R&D, and the right structure from day one. Named accountant.",
+    "domain": "rraccountants.uk"
+   }
+  ],
+  "startup accountants uk": [
+   {
+    "position": 1,
+    "title": "startupaccountants.co.uk",
+    "link": "https://startupaccountants.co.uk/",
+    "snippet": "Comments for Startup Accountants.",
+    "domain": "startupaccountants.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "Award Winning Startup Accountants In The UK",
+    "link": "https://chacc.co.uk/startup-accountants/",
+    "snippet": "Free Consultation. Startup Accountants Trusted By Founders Across The UK.We understand the immense pressures on UK founders: limited capital, relentless deadlines, and zero tolerance for error. Entrepreneurs partner with us for absolute control over their compliance and finances.",
+    "domain": "chacc.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "Startup Accountants | Rise Accounting",
+    "link": "https://riseaccounting.co.uk/startup-accountant/",
+    "snippet": "Startup accountants working with fast-growth businesses from Pre-Seed to Series B. Book a call with our experts now.",
+    "domain": "riseaccounting.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "Accountants for Startups UK \u2014 From Formation... | RR Accountants",
+    "link": "https://rraccountants.uk/accountants-for-startups-uk",
+    "snippet": "Accountants for startups UK. Right structure from day one.What a startup accountant does in year one. Year one decisions are disproportionately important \u2014 structure, VAT timing, payroll setup, and R&D eligibility are all harder to fix retroactively than to get right initially.",
+    "domain": "rraccountants.uk"
+   },
+   {
+    "position": 5,
+    "title": "Expert accountants for startups in UK | dns accountants",
+    "link": "https://www.dnsaccountantsfranchise.co.uk/find-an-accountants/accountants-for-startups/",
+    "snippet": "We are an award-winning team of accountants who offer accounting services for startups in the UK. From bookkeeping, company formation, payroll, etc.",
+    "domain": "dnsaccountantsfranchise.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "Expert Startup Accountants in London | Get an Instant Quote in 2 Mins",
+    "link": "https://accotax.co.uk/startup-accountants/",
+    "snippet": "FAQs about Accountants for Startups in London. What services do startup accountants provide?We assess whether you need to register immediately and ensure you\u2019re fully compliant with UK tax regulations. Can I switch to Accotax from another startup accountants?",
+    "domain": "accotax.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "Online Accountants for Startups | TaxKings",
+    "link": "https://taxkings.co.uk/who-we-help/start-up-accountants/",
+    "snippet": "Tax Accountants for Startups. Running a startup can be an exciting and daunting experience.Talk to TaxKings Today. Running a startup and need help navigating accountancy? Get in touch with TaxKings\u2019 accountants who specialise in helping startups throughout the UK and abroad.",
+    "domain": "taxkings.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "MMBA Startup Accountants for UK Businesses",
+    "link": "https://www.mmba.co.uk/services/advisory/startup-accountants/",
+    "snippet": "Specialised startup accountant services for new businesses and small businesses.In the UK, the cost of employing a startup accountant can vary depending on the complexity of your financial affairs, the accountant\u2019s experience, and their location.",
+    "domain": "mmba.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "Tech Startup & High Growth Accountants | Your Finance Partner",
+    "link": "https://www.onthegoaccountants.co.uk/",
+    "snippet": "US & EU Startups. UK Payroll Services.Tech & eCommerce specialists. Your dedicated advisor will always be on hand to answer your queries, supported by a compliance accountant to ensure you meet all deadlines.",
+    "domain": "onthegoaccountants.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "Startup Accounting Services in the UK",
+    "link": "https://pearllemonaccountants.co.uk/services/accounting/startup-accountant/",
+    "snippet": "As a startup in the UK, handling finances can be a complex task. From keeping track of taxes to managing cash flow, it can quickly become overwhelming without the right expertise. At Pearl Lemon Accountants...",
+    "domain": "pearllemonaccountants.co.uk"
+   }
+  ],
+  "accountants for startups": [
+   {
+    "position": 1,
+    "title": "Accountants For Startups In The UK | Free Specialist Advice",
+    "link": "https://www.zatrsaccounting.com/services/accountants-for-startups-uk/",
+    "snippet": "At ZATRS Accounting, we specialise in providing tailored accounting services for startups in the UK, helping you navigate the complexities of ...",
+    "domain": "zatrsaccounting.com"
+   },
+   {
+    "position": 2,
+    "title": "GoForma | UK Startup Accountants | Premium Support | Free",
+    "link": "https://www.goforma.com/accountant-for-startups",
+    "snippet": "At GoForma, we specialise in startup accounting for UK-based businesses. ... UK Crypto Tax Accountants Accountants for Creatives Accountants for ...",
+    "domain": "goforma.com"
+   },
+   {
+    "position": 3,
+    "title": "Accountants for Startups & Entrepreneur in UK | Startup",
+    "link": "https://www.123financials.com/startups-accounting",
+    "snippet": "Find out about compliance for a startup in the UK, and gain real-time insights and consultations on all accounting and tax matters whenever you need.",
+    "domain": "123financials.com"
+   },
+   {
+    "position": 4,
+    "title": "Award Winning Startup Accountants In The UK",
+    "link": "https://chacc.co.uk/startup-accountants/",
+    "snippet": "... Accountants in Harrow specialise in ... Strategic US accounting and tax advisory services designed specifically for UK companies expanding overseas.",
+    "domain": "chacc.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "Accountants for Startups in Manchester, UK",
+    "link": "https://adenaaccountancy.co.uk/startups/",
+    "snippet": "From choosing the right structure to managing tax and cash flow, working with an experienced accountant for start-ups in the UK ensures your business ...",
+    "domain": "adenaaccountancy.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "Startup Accountants | Expert Accounting Services in UK",
+    "link": "https://coxhinkins.co.uk/startup-accountants/",
+    "snippet": "Hence, it is essential for you first to set your requirements and accordingly partner with a startup accountant. ... startup accountants are also ...",
+    "domain": "coxhinkins.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "Accountants for Startups \u2013 Industry Page \u2013 Octa",
+    "link": "https://octaaccountants.co.uk/accountants-for-startups/",
+    "snippet": "With accounting for startups UK, the financial foundations are fortified for sustained growth. ... Accounting Service Plan for UK-based growing ...",
+    "domain": "octaaccountants.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "Who We Help | Accountants for Contractors, Startups & SMEs",
+    "link": "https://www.coreadviz.co.uk/who-we-help",
+    "snippet": "Specialist Accountants for Contractors, Startups & Small Businesses in the UKP ... As experienced startup accountants in the UK, we help founders ...",
+    "domain": "coreadviz.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "Accountants for Startups in the UK: Getting It Right from Day",
+    "link": "https://ventsmagazine.co.uk/accountants-for-startups-in-the-uk/",
+    "snippet": "Accountants for Startups in the UK: Getting ... For UK founders, solid accounting can be the difference between staying in business and closing shop.",
+    "domain": "ventsmagazine.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "Startup Accountants UK | Fixed Monthly Pricing | Startup ...",
+    "link": "https://www.startupaccountancy.com/",
+    "snippet": "UK startup accountants built by founders, for founders. Fixed plans from \u00a3345, including bookkeeping, payroll, and VAT. No jargon, no surprises. Book a call.",
+    "domain": "startupaccountancy.com"
+   }
+  ],
+  "accountant for tech company": [
+   {
+    "position": 1,
+    "title": "Leading Technology Accountants In The UK",
+    "link": "https://chacc.co.uk/technology-accountants/",
+    "snippet": "Let the leading tech accountancy in the UK, Clear House Accountants, take care of putting together your Statutory Accounts according to the requirements set by the Companies House, ensuring that your accounts reflect your financial position clearly...",
+    "domain": "chacc.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "Startup Accountants for Tech Companies | Contact Us",
+    "link": "https://www.unicornaccountants.co.uk/sectors/technology",
+    "snippet": "At Unicorn Accountants, we specialise in accounting for tech startups in London and the UK. We work closely with newly established and rapidly growing tech companies, offering support with company formation, reducing tax liabilities, and everyday accounting needs.",
+    "domain": "unicornaccountants.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "Tech Accountants London | Accountants For Tech - Accotax",
+    "link": "https://accotax.co.uk/tech-accountants/",
+    "snippet": "Tech Accountants London. Running a tech company isn\u2019t like running any other business. Things move quite fast.Our accountants for tech companies understand that no two businesses are the same. You might be a SaaS founder, an app developer, or a tech consultant.",
+    "domain": "accotax.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "IT Accountancy | Acountant for Tech Companies",
+    "link": "https://www.seacrestaccountancy.co.uk/tech-accountant",
+    "snippet": "Accounting Services for Technology Companies. Growth Metrics Tracking & Analysis. Tech-Specific Tax Planning.Ready for an accountant who understands technology and IT companies? Contact Seacrest Accountancy today for a free consultation.",
+    "domain": "seacrestaccountancy.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "Tech Accountant | Specialist Accountants for UK Tech & SaaS",
+    "link": "https://accountaxzone.com/specialist-tech-accountant-uk-tech-businesses/",
+    "snippet": "Specialist Tech Accountants in London & Across the UK \u2013 SSaS, R&D, SEIS/EIS, Digital VAT & Scaling Experts. The tech sector is one of the most exciting yet financially demanding industries in the UK.",
+    "domain": "accountaxzone.com"
+   },
+   {
+    "position": 6,
+    "title": "Accountants Tech Companies - Eternity Accountants",
+    "link": "https://eternityaccountants.co.uk/accountants-tech-companies/",
+    "snippet": "Accountants for tech companies provide tailored financial support to technology-driven businesses, ensuring compliance, efficiency, and growth.For UK tech companies, having a specialist accountant is not a luxury \u2014 it\u2019s a strategic growth decision.",
+    "domain": "eternityaccountants.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "Top Tech Accountants: Polaris - Global Accounting & Tax Experts...",
+    "link": "https://www.wearepolaris.co.uk/technology/",
+    "snippet": "Tech-driven excellence. Polaris - Your dedicated technology accountants.Our accounting services for technology companies include financial statement preparation, tax planning, payroll processing, and audit support to meet your specific business needs.",
+    "domain": "earepolaris.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "Barnes & Scott: chartered accountants for Tech, Fintech & Start-ups",
+    "link": "https://www.barnesandscott.com/",
+    "snippet": "The top accountants for London\u2019s tech scene. If the next OpenAI, Notion or DeepMind launched today, we\u2019d be their first choice for finance and tax support. We were the first Chartered Accountancy firm to specialise solely in tech, digital and fintech start-ups.",
+    "domain": "barnesandscott.com"
+   },
+   {
+    "position": 9,
+    "title": "IT & Tech Accountants Birmingham | Software, SaaS & Startups",
+    "link": "https://www.rus.co.uk/sectors/information-technology",
+    "snippet": "Expert accountants for tech startups, SaaS businesses and IT professionals.info@rus.co.uk. 1190A-1192 Stratford Road, Hall Green, Birmingham, B28 8AB. Technology Sector FAQs. Common questions about our IT and tech business accountancy services.",
+    "domain": "rus.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "Tech Startup Accountant: What Fast-Growing Founders Need in 2026",
+    "link": "https://riseaccounting.co.uk/blog/tech-startup-accountant-guide/",
+    "snippet": "Learn when a tech startup needs a specialist accountant, what support should include and how investor-ready finance helps fast-growing founders scale.",
+    "domain": "riseaccounting.co.uk"
+   }
+  ],
+  "tech startup accountants london": [
+   {
+    "position": 1,
+    "title": "Tech StartUp Accountants London For Start Ups | 5 Rivers Accountancy",
+    "link": "https://5ra.co.uk/industries/tech-startup-accountants/",
+    "snippet": "Looking for London accountants who specialise in tech startups? Our firm provides tailored accounting services for technology companies in London. Welcome!",
+    "domain": "5ra.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "Tech Accountants in London | Accounting for Tech Startups - MMBA",
+    "link": "https://www.mmba.co.uk/sectors/tech-accountants/",
+    "snippet": "MMBA specialises in accounting for tech startups in London & UK. Get in touch with expert tech accountants today. Request a free quote or book a meeting!",
+    "domain": "mmba.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "Startup Accountants for Tech Companies | Contact Us",
+    "link": "https://www.unicornaccountants.co.uk/sectors/technology",
+    "snippet": "At Unicorn Accountants, we specialise in accounting for tech startups in London and the UK. ... Our startup accounting services for technology ...",
+    "domain": "unicornaccountants.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "Best UK Tech Entrepreneurs and Tech Startup Accountants",
+    "link": "https://www.arnhoxton.co.uk/tech-entrepreneurs-tech-startup-accountants/",
+    "snippet": "Accountants for tech startups and tech entrepreneurs possess the expertise needed to navigate the unique challenges and opportunities that arise in ...",
+    "domain": "arnhoxton.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "Accountants for Startups \u2013 Industry Page \u2013 Octa",
+    "link": "https://octaaccountants.co.uk/accountants-for-startups/",
+    "snippet": "With startup accountants UK, they navigate the ... With accounting for startups UK, the financial foundations are fortified for sustained growth.",
+    "domain": "octaaccountants.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "Award Winning Startup Accountants In The UK",
+    "link": "https://chacc.co.uk/startup-accountants/",
+    "snippet": "... and startups by expert accountants ... Stepping into the tech niche with tailored accounting solutions designed to drive innovation and scalability.",
+    "domain": "chacc.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "GoForma | UK Startup Accountants | Premium Support | Free",
+    "link": "https://www.goforma.com/accountant-for-startups",
+    "snippet": "Tech & SaaS Startups Accounting for investment rounds, R&D claims, and more ... 20 minute consultation with one of our startup accountants ...",
+    "domain": "goforma.com"
+   },
+   {
+    "position": 8,
+    "title": "Acconomy Accountants",
+    "link": "https://www.acconomy.co.uk/insights/why-london-tech-startups-need-specialist-accounting-support-and-how-to-find-it",
+    "snippet": "Why London Tech Startups Need Specialist Accounting Support (And How to Find It) ... The UK\u2019s tech scene is booming, with London leading the way as ...",
+    "domain": "acconomy.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "Business Startups - Pro - Taxman",
+    "link": "https://pro-taxman.co.uk/business-startups/",
+    "snippet": "... a London based accountants, we specialise in providing accounting, finance, and company formation services for start-ups and entrepreneurs in the UK ...",
+    "domain": "pro-taxman.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "Startup Jobs In London (Hiring near me) | Recruit.net",
+    "link": "https://uk.recruit.net/search-startup-jobs-london",
+    "snippet": "Premium Full-time Technical Skillset Account Planning Amazon Web Services Startup New Business Opportunities ... startup . At Jumpstart, we help ...",
+    "domain": "uk.recruit.net"
+   }
+  ],
+  "saas accountant uk": [
+   {
+    "position": 1,
+    "title": "SaaS UK Accounting Market: Opportunities and Challenges -",
+    "link": "https://softwarestrategiesblog.com/2010/10/02/saas-uk-accounting-market-opportunities-and-challenges/",
+    "snippet": "... SaaS UK accounting market only a seasoned veteran could convey. What I found most interesting in this presentation is how large the vendor overhang ...",
+    "domain": "softwarestrategiesblog.com"
+   },
+   {
+    "position": 2,
+    "title": "UK SaaS Accounting Market Archives - Software Strategies Blog",
+    "link": "https://softwarestrategiesblog.com/tag/uk-saas-accounting-market/",
+    "snippet": "Posts tagged \u2018 UK SaaS Accounting Market \u2019 ... SaaS UK Accounting Market: Opportunities and Challenges",
+    "domain": "softwarestrategiesblog.com"
+   },
+   {
+    "position": 3,
+    "title": "Accountants for SaaS Companies UK You Can Trust - Quiliammarr",
+    "link": "https://quilliammarr.co.uk/accountants-for-saas-companies/",
+    "snippet": "Accountants for SaaS companies in the UK specialize in managing subscriptions, revenue recognition, tax compliance, and growth-focused financial ...",
+    "domain": "quilliammarr.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "SaaS Accountants UK | Accounting for Tech Startups",
+    "link": "https://chartaccountancy.com/who-we-help/saas-businesses/",
+    "snippet": "At Chart Accountancy, we work with SaaS founders and tech startups who want more than just compliance out of accountancy services.",
+    "domain": "chartaccountancy.com"
+   },
+   {
+    "position": 5,
+    "title": "SAAS ACCOUNTANTS \u2013 YOUR TAX ADVISOR",
+    "link": "http://saasaccountants.co.uk/",
+    "snippet": "SAAS ACCOUNTANTS is a partner-led firm of Chartered Management Accountants operating from London/Harrow, serving clients across UK.",
+    "domain": "saasaccountants.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "\ud83e\udde8 Finance Accountant (SaaS), Remote Job, May 2026",
+    "link": "https://dynamitejobs.com/company/zeroheight/remote-job/finance-accountant-saas",
+    "snippet": "... Finance Director and take real ownership of the day-to-day accounting work that keeps zeroheight running accurately - from month-end close and SaaS ...",
+    "domain": "dynamitejobs.com"
+   },
+   {
+    "position": 7,
+    "title": "SaaS Accounting 101: What Every UK Founder Needs to Know",
+    "link": "https://www.directivefinance.co.uk/post/saas-accounting-101-what-every-uk-founder-needs-to-know",
+    "snippet": "For UK SaaS founders, getting your ... Learn more about how we support growing software businesses at directivefinance.co.uk/who/it-tech-saas .",
+    "domain": "directivefinance.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "What is SaaS accounting? A UK tech startup guide 2026 - Price",
+    "link": "https://www.priceandaccountants.com/blog/what-is-saas-accounting-uk-tech-startup-guide-2026-en",
+    "snippet": "Our expert company accounting services are designed specifically for SaaS businesses, ensuring your revenue recognition aligns with UK standards ...",
+    "domain": "priceandaccountants.com"
+   },
+   {
+    "position": 9,
+    "title": "Urgent! Company accountant jobs in South East London - January",
+    "link": "https://uk.jooble.org/jobs-company-accountant/South-East-London",
+    "snippet": "SaaS Account Manager Starting salary \u00a335,000-\u00a345,000 per annum + \u00a320,000-\u00a325,000 OTE Hiring in Manchester and London offices (Global Organisation ...",
+    "domain": "uk.jooble.org"
+   },
+   {
+    "position": 10,
+    "title": "reflexaccounting.co.uk/who-we-serve/saas-accountants",
+    "link": "https://reflexaccounting.co.uk/who-we-serve/saas-accountants/",
+    "snippet": "",
+    "domain": "reflexaccounting.co.uk"
+   }
+  ],
+  "saas accountants": [
+   {
+    "position": 1,
+    "title": "SAAS ACCOUNTANTS \u2013 YOUR TAX ADVISOR",
+    "link": "https://saasaccountants.co.uk/",
+    "snippet": "SAAS ACCOUNTANTS HAS BEEN ESTABLISHED SINCE 2010, WITH A VISION OF REACHING ACCOUNTING & TAX SERVICES TO THE INDIVIDUALS & COMPANIES IN UK. SAAS ACCOUNTANTS is a partner-led firm of Chartered Management Accountants operating from London/Harrow, serving clients across UK. At SAAS ACCOUNTANTS our main focus is working with small to medium businesses. Whether you are a sole trader, limited ...\u00b7\u00b7\u00b7\u00b7\u00b7",
+    "domain": "saasaccountants.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "SaaS Accounting Experts UK | RSBC Tax & Financial Solutions",
+    "link": "https://www.rsbc.uk/who-we-work-with/it-and-digital/accountants-for-saas-business",
+    "snippet": "RSBC provides expert accounting for SaaS businesses in the UK. Get tailored tax advice, cash flow support, and scalable financial solutions for growth.",
+    "domain": "rsbc.uk"
+   },
+   {
+    "position": 3,
+    "title": "Accountants for SaaS | SaaS accountants | dns accountants",
+    "link": "https://www.dnsassociates.co.uk/accountants-for-saas",
+    "snippet": "Our specialist SaaS accountants take the time to understand your needs and come up with result-oriented accounting solutions for your SaaS-based business. Our accountants for SaaS businesses will work with you to estimate the financial opportunities and bring actionable solutions.",
+    "domain": "dnsassociates.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "Specialist SaaS Accountants - Reflex Accounting",
+    "link": "https://reflexaccounting.co.uk/who-we-serve/saas-accountants/",
+    "snippet": "Specialist SaaS Accountants Expert Financial Management for Subscription & Cloud-Based Companies Generic accountants often miss the nuances of SaaS metrics, deferred income, and funding rounds leading to distorted numbers, unclear management reporting, poor cash flow visibility, and inaccurate runway forecasting. Our accountants for SaaS businesses provide focused, proactive support with real ...",
+    "domain": "reflexaccounting.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "SaaS Accountants UK | Accounting for Tech Startups",
+    "link": "https://chartaccountancy.com/who-we-help/saas-businesses/",
+    "snippet": "A scalable finance function for SaaS businesses At Chart Accountancy, we believe that high quality accountancy services should be available to everyone \u2013 whatever their location or business type. That\u2019s why we offer online accounting services clients across the UK, making our high quality and professional advice more accessible for everyone.",
+    "domain": "chartaccountancy.com"
+   },
+   {
+    "position": 6,
+    "title": "SaaS Accountant UK - AccTek",
+    "link": "https://www.acctek.co.uk/saas-accountant-uk/",
+    "snippet": "What Is a SaaS Accountant? A SaaS accountant is a qualified accountant who specialises in working with software-as-a-service businesses \u2014 companies that sell subscription-based software products. Unlike general accountants, a SaaS accountant understands subscription revenue recognition, deferred revenue, MRR/ARR tracking, R&D tax relief for software development, and the financial metrics ...",
+    "domain": "acctek.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "SaaS Accountants London | Specialist Software Accounting",
+    "link": "https://finerva.com/software-saas-specialist-accountants-london/",
+    "snippet": "Looking for expert SaaS accountants? Finerva helps UK software founders scale, track MRR/ARR, maximise R&D, and prepare for exit. Book a free discovery call.",
+    "domain": "finerva.com"
+   },
+   {
+    "position": 8,
+    "title": "SAAS ACCOUNTANTS LTD overview - Find and update company information ...",
+    "link": "https://find-and-update.company-information.service.gov.uk/company/09162167",
+    "snippet": "SAAS ACCOUNTANTS LTD - Free company information from Companies House including registered office address, filing history, accounts, annual return, officers, charges, business activity",
+    "domain": "find-and-update.company-information.service.gov.uk"
+   },
+   {
+    "position": 9,
+    "title": "Company overview \u2013 SAAS ACCOUNTANTS",
+    "link": "https://saasaccountants.co.uk/company-overview",
+    "snippet": "These days our service is much more than just accountancy. We can support you with business insurance, financial planning advice, self-employed mortgages and much more.",
+    "domain": "saasaccountants.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "",
+    "link": "/clev?event=StartpageResultClick&sc=a8mbuE7dQj3ta99fma3Ag0UjEGwKkhZt8nzmZnptbCZ26yzx1RZCqzvvFg5JFkUsw2ijcto9FaRkmHAlntyYyRtaGV5TI3s6h&payload={\"bdsSessionId\":\"9c4a2f08450d45cda13bdeeb0a8d36d7\",\"cheqId\":\"\",\"countryCode\":\"GB\",\"deviceType\":\"mobile\",\"endpoint\":\"search.serp\",\"hasGoogleAds\":false,\"page_id\":\"13h0pn8y3OnKGzsME\",\"queryCategory\":\"web\",\"segment\":\"startpage.udog\",\"session_id\":\"1vZOWPZbVo2dFLqYC\",\"surface\":\"serp-web\",\"transport\":\"href-request\"}",
+    "snippet": "",
+    "domain": ""
+   }
+  ],
+  "accountants for saas companies": [
+   {
+    "position": 1,
+    "title": "Accountants for SaaS Companies UK You Can Trust - Quiliammarr",
+    "link": "https://quilliammarr.co.uk/accountants-for-saas-companies/",
+    "snippet": "Accountants for SaaS companies in the UK specialize in managing subscriptions, revenue recognition, tax compliance, and growth-focused financial ...",
+    "domain": "quilliammarr.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "SAAS ACCOUNTANTS \u2013 YOUR TAX ADVISOR",
+    "link": "http://saasaccountants.co.uk/",
+    "snippet": "SAAS ACCOUNTANTS HAS BEEN ESTABLISHED SINCE 2010, WITH A VISION OF REACHING ACCOUNTING & TAX SERVICES TO THE INDIVIDUALS & COMPANIES IN UK.",
+    "domain": "saasaccountants.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "SaaS Company Accounting Services | Expert Financial Solutions",
+    "link": "https://www.unicornaccountants.co.uk/sectors/sass-accountants",
+    "snippet": "Unicorn Accounting's specialist services for SaaS companies allow you to focus on what you do best - developing amazing software and sourcing new ...",
+    "domain": "unicornaccountants.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "SaaS Accountants UK | Accounting for Tech Startups",
+    "link": "https://chartaccountancy.com/who-we-help/saas-businesses/",
+    "snippet": "Chart Accountancy - specialist accounting and financial strategy for SaaS companies ... accounting services clients across the UK, making our high ...",
+    "domain": "chartaccountancy.com"
+   },
+   {
+    "position": 5,
+    "title": "Accounting for SaaS companies - Chartered accountants online",
+    "link": "https://nuvem9.co.uk/accounting-for-tech-companies/",
+    "snippet": "In our accountancy packages, we\u2019re proactive at providing the right solutions for SaaS companies so they enhance their tech stack and seamlessly ...",
+    "domain": "nuvem9.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "\ud83e\udde8 Finance Accountant (SaaS), Remote Job, May 2026",
+    "link": "https://dynamitejobs.com/company/zeroheight/remote-job/finance-accountant-saas",
+    "snippet": "You\u2019ll be responsible for running the core accounting operations day to day: delivering a reliable monthly close, ensuring billing runs smoothly ...",
+    "domain": "dynamitejobs.com"
+   },
+   {
+    "position": 7,
+    "title": "Accountants for SaaS & Cloud Businesses | Pro-AccX",
+    "link": "https://pro-accx.co.uk/accountants-for-saas-it-tech-businesses/accountants-for-saas-cloud-based-businesses",
+    "snippet": "We ensure your accounts meet UK GAAP and HMRC standards, giving you confidence when raising funds or preparing for acquisition.",
+    "domain": "pro-accx.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "Accountants for SaaS, IT & Tech Businesses | Pro-AccX",
+    "link": "https://pro-accx.co.uk/accountants-for-saas-it-tech-businesses",
+    "snippet": "... supports SaaS companies, IT contractors, software developers, cybersecurity firms, web developers, and managed service providers (MSPs) across the UK ...",
+    "domain": "pro-accx.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "SaaS UK Accounting Market: Opportunities and Challenges -",
+    "link": "https://softwarestrategiesblog.com/2010/10/02/saas-uk-accounting-market-opportunities-and-challenges/",
+    "snippet": "His presentation below is insightful and interesting, and communicates a vantage point of the SaaS UK accounting market only a seasoned veteran could ...",
+    "domain": "softwarestrategiesblog.com"
+   },
+   {
+    "position": 10,
+    "title": "reflexaccounting.co.uk/who-we-serve/saas-accountants",
+    "link": "https://reflexaccounting.co.uk/who-we-serve/saas-accountants/",
+    "snippet": "",
+    "domain": "reflexaccounting.co.uk"
+   }
+  ],
+  "accountants for software companies uk": [
+   {
+    "position": 1,
+    "title": "Accountants for Software Developers UK | R&D & IR35 Experts",
+    "link": "https://lanop.co.uk/accountants-for-software-developers/",
+    "snippet": "Expert accountants for software developers in the UK. Lanop offers tax advice, IR35 support, R&D claims & accounting for freelancers, contractors & tech firms.",
+    "domain": "lanop.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "Accountants for Software Companies UK | SaaS Accounting London",
+    "link": "https://abmcharteredaccountants.com/sectors/software-companies/",
+    "snippet": "Our Accounting Services for Software Companies We offer a full range of accounting, tax and advisory services for software companies, designed around the demands of development capitalisation, SaaS revenue and software businesses operating across the UK.",
+    "domain": "abmcharteredaccountants.com"
+   },
+   {
+    "position": 3,
+    "title": "Accountants for Software Development Companies | UK Experts",
+    "link": "https://apexaccountants.tax/software-development-companies/",
+    "snippet": "Accountants for software development companies offering R&D tax relief, VAT support, cash flow advice, and tailored financial planning.",
+    "domain": "apexaccountants.tax"
+   },
+   {
+    "position": 4,
+    "title": "Accountants for Software Developers - Eternity Accountants",
+    "link": "https://eternityaccountants.co.uk/accountants-for-software-developers/",
+    "snippet": "Accountants for software developers UK: maximise tax relief, R&D credits & simplify finances with expert accounting support for developers.",
+    "domain": "eternityaccountants.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "Accountants for IT and Software Development Companies",
+    "link": "https://agileaccountants.co.uk/accountants-for-it-software-development-companies/",
+    "snippet": "Accountants for IT and software development companies offering expert support for growth, tax relief and tech sector compliance.",
+    "domain": "agileaccountants.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "Accountants for technology companies - Eternity Accountants",
+    "link": "https://eternityaccountants.co.uk/accountants-for-technology-companies/",
+    "snippet": "Accountants for technology companies play a crucial role in helping tech businesses manage complex finances, optimise tax savings, and support growth. Whether you are a startup launching your first software product or a scaleup expanding internationally, having a specialist accountant ensures compliance with HMRC regulations while maximising financial efficiency.",
+    "domain": "eternityaccountants.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "Accounting Services for Software and Technology Businesses",
+    "link": "https://approved-accounting.co.uk/specialist/software-tech-businesses/",
+    "snippet": "Specialist Accountants for Software & Tech Companies At Approved Accounting we specialise in supporting software and technology businesses, after all in some ways we are one ourselves! Our team has a wealth of industry experience and a keen interest in technology and the new opportunities it can offer, so we are ideally placed to provide the advice and services you need to structure and ...",
+    "domain": "approved-accounting.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "Technology accountants | Rouse Accountants",
+    "link": "https://www.rousepartners.co.uk/technology-accountants/",
+    "snippet": "Looking for accountants who specialise in the technology and IT sector? Find out about our range of tax advice and accountancy services for technology and IT companies.",
+    "domain": "rousepartners.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "Accountants for IT & Software | Xeinadin",
+    "link": "https://www.xeinadin.com/industries/it-software/",
+    "snippet": "Our experts specialise in accounting services and business advice to IT & software companies, supporting clients at every stage of their financial journey.",
+    "domain": "xeinadin.com"
+   },
+   {
+    "position": 10,
+    "title": "Tech & Startup Accountants | Parsons Chartered Accountants",
+    "link": "https://parsons.co.uk/sectors/tech-accountants/",
+    "snippet": "Specialist accounting services for tech companies and startups, including SaaS finance, R&D relief, forecasting, reporting and growth advisory. Clear, proactive support from Parsons Chartered Accountants.",
+    "domain": "parsons.co.uk"
+   }
+  ],
+  "tech accountants uk": [
+   {
+    "position": 1,
+    "title": "Leading Technology Accountants In The UK",
+    "link": "https://chacc.co.uk/technology-accountants/",
+    "snippet": "November 14, 2025 - We at Clear House Accountants help our clients owning tech businesses contribute to the knowledge economy by translating their intellectual property into tangible assets. Your financial statements and accurate statutory accounts are critical ...",
+    "domain": "chacc.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "Technology accountants in UK \u2013 Moore Kingston Smith",
+    "link": "https://mooreks.co.uk/sectors/entrepreneurial-businesses/technology/",
+    "snippet": "October 28, 2014 - Our team of technology accountants supports dynamic businesses across the UK, including fast-growing tech companies in London, and globally.",
+    "domain": "mooreks.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "Accounting for Tech Companies in London | Business Accounting | Unicorn Accountants",
+    "link": "https://www.unicornaccountants.co.uk/sectors/technology",
+    "snippet": "Accounting services for Technology companies, start-ups and entrepreneurs in London and surrounds. Chartered Accountants with specialist experience in working with tech companies.",
+    "domain": "unicornaccountants.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "Startup Accountants For Tech Companies, London | Tech Relief",
+    "link": "https://www.trtaxadvisers.com/",
+    "snippet": "You have created a new technology product or service and have started to sell to customers. Our team specialise in accounting for tech start-ups in London and the UK.",
+    "domain": "trtaxadvisers.com"
+   },
+   {
+    "position": 5,
+    "title": "Tech Accountants London | Accountants For Tech - Accotax",
+    "link": "https://accotax.co.uk/tech-accountants/",
+    "snippet": "February 23, 2026 - A specialist tech accountants understands sector specificities, such as R&D tax credits, share-scheme valuations, SaaS recurring revenue models and scaling operations. This expertise ensures more accurate advice and better strategic decisions. We cover a wide range of tech-related industries including SaaS companies, fintech, medtech, app development, e-commerce platforms and seed-stage or growth-stage tech start-ups across the UK",
+    "domain": "accotax.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "Tech Accountants in London | Accounting for Tech Startups",
+    "link": "https://www.mmba.co.uk/sectors/tech-accountants/",
+    "snippet": "August 26, 2025 - MMBA team offers specialised Tech and IT accounting Services in the UK.",
+    "domain": "mmba.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "Tech Accountant | Specialist Accountants for UK Tech & SaaS",
+    "link": "https://accountaxzone.com/specialist-tech-accountant-uk-tech-businesses/",
+    "snippet": "December 17, 2025 - Sector focus: We actively work with tech and tech-enabled businesses \u2013 we understand your language. Strategic mindset: We\u2019re not just \u201caccountants\u201d; we think like finance partners. Tax and structure expertise: R&D, SEIS/EIS, IP, groups, exits \u2013 done properly. Clear communication: No jargon. You\u2019ll always know what\u2019s happening and why. Fixed, transparent fees: Agreed in advance, so no surprises. UK-wide support: Based in London, working with clients across the UK.",
+    "domain": "accountaxzone.com"
+   },
+   {
+    "position": 8,
+    "title": "Accountants for tech and digital companies | London Southampton Kent",
+    "link": "https://www.nayloraccountancy.com/sectors/accountants-for-digital-tech-companies",
+    "snippet": "Most MDs and CEOs want to be seen as a leading tech entrepreneur. We help you to achieve this by giving you the business growth and free time you need to make an impact. In addition to doing your accounts, VAT returns and payroll, we free up your time allowing you to focus on the things that matter and give you a clear way forward by focusing on 3 areas:",
+    "domain": "nayloraccountancy.com"
+   },
+   {
+    "position": 9,
+    "title": "Accountants for technology businesses - Lera Accountancy",
+    "link": "https://www.leraccountancy.co.uk/sectors/technology/",
+    "snippet": "March 30, 2026 - The UK technology sector is one of the most vibrant and innovative in Europe, With London, Cambridge, Manchester and Edinburgh all recognised as tech hubs, the sector continues to attract significant investment and talent. We provide the essential financial expertise needed for tech start-ups and established technology businesses to thrive in this dynamic sector. Our team of specialist tech accountants understand the changes tech businesses face such as recurring revenue models, rapid scaling, R&D expenditures, equity financing, and intellectual property valuation.",
+    "domain": "leraccountancy.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "Barnes & Scott: chartered accountants for Tech, Fintech & Start-ups",
+    "link": "https://www.barnesandscott.com/",
+    "snippet": "September 15, 2025 - Chartered accountants for Tech, Fintech and Digital Start-ups. We provide accounting services, tax advice and help to scale your business.",
+    "domain": "barnesandscott.com"
+   }
+  ],
+  "accountants for tech startups": [
+   {
+    "position": 1,
+    "title": "Accountants for Tech Startups | Rise Accounting",
+    "link": "https://riseaccounting.co.uk/accountants-tech-startups/",
+    "snippet": "Accounting partners for tech startups and scaleups. Get one-to-one guidance from growth focused tech accountants who back you at every stage from bookkeeping to navigating the fundraising landscape.",
+    "domain": "riseaccounting.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "Accountants for Tech Startups: UK Entrepreneurs' Preferred Choice",
+    "link": "https://sleek.com/uk/startup-accountant/",
+    "snippet": "Accountants for Tech Startups in the UK. Our accountants work with UK businesses to help you scale smarter, manage cashflow and build systems that grow with you; all from \u00a360/m*. Built for UK startups and small businesses.",
+    "domain": "sleek.com"
+   },
+   {
+    "position": 3,
+    "title": "Accountants for Tech Startups in the UK You Can Trust - Quiliammarr",
+    "link": "https://quilliammarr.co.uk/accountants-for-tech-startups/",
+    "snippet": "Specialised accountants supporting UK tech startups with tailored tax, compliance, and growth-focused financial strategies. The Accountants for Tech Startups Process. From startup to scale-up we handle your finances so you can focus on innovation. 1.",
+    "domain": "quilliammarr.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "Leading Technology Accountants In The UK",
+    "link": "https://chacc.co.uk/technology-accountants/",
+    "snippet": "UK tech startups find R&D tax credits complex due to nuanced criteria, documentation, and compliance. Clear House Accountants, with extensive experience, go beyond just filing claims.",
+    "domain": "chacc.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "Accountants for Tech Startups Services - AGILE Accountants",
+    "link": "https://agileaccountants.co.uk/accountants-for-tech-startups-and-fast-growth-companies/",
+    "snippet": "At Agile Accountants, we support tech startups and fast-growth companies across the UK with proactive accounting, tax, compliance and advisory services designed to help founders make confident financial decisions.",
+    "domain": "agileaccountants.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "Startup Accountants for Tech Companies | Contact Us",
+    "link": "https://www.unicornaccountants.co.uk/sectors/technology",
+    "snippet": "At Unicorn Accountants, we specialise in accounting for tech startups in London and the UK. We work closely with newly established and rapidly growing tech companies, offering support with company formation, reducing tax liabilities, and everyday accounting needs.",
+    "domain": "unicornaccountants.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "Barnes & Scott: chartered accountants for Tech, Fintech & Start-ups",
+    "link": "https://www.barnesandscott.com/",
+    "snippet": "The top accountants for London\u2019s tech scene. If the next OpenAI, Notion or DeepMind launched today, we\u2019d be their first choice for finance and tax support. We were the first Chartered Accountancy firm to specialise solely in tech, digital and fintech start-ups.",
+    "domain": "barnesandscott.com"
+   },
+   {
+    "position": 8,
+    "title": "Tech Accountants in London | Accountant for Startups - Munir Tatar...",
+    "link": "https://mtatarandassociates.co.uk/",
+    "snippet": "UK Accountants For. High-Growth Tech Start-Ups. Supporting UK Tech And Innovative Startups to pay less tax, maintain a healthy cashflow and access real-time data-driven financial insights to help scale your venture.",
+    "domain": "mtatarandassociates.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "Accountants for Tech Startups and SaaS Companies in the UK",
+    "link": "https://clarkwell.co.uk/accountants-for-tech-startups-and-saas-companies-uk/",
+    "snippet": "Tech Start-Up Accountant UK. We help new ventures structure their business, manage expenses, and optimise tax strategies. Whether you're pre-revenue or scaling fast, we guide you through every stage. SaaS Company Accounting.",
+    "domain": "clarkwell.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "Tech Accountants London | Accountants For Tech - Accotax",
+    "link": "https://accotax.co.uk/tech-accountants/",
+    "snippet": "Specialist tech accountants in London supporting startups & scale-ups with tax efficiency, compliance, R&D relief & financial strategy.We\u2019ve been working with tech startups in London and the UK for years. Some are just getting started. Others are scaling fast.",
+    "domain": "accotax.co.uk"
+   }
+  ],
+  "fintech startup accountant": [
+   {
+    "position": 1,
+    "title": "Barnes & Scott: chartered accountants for Tech, Fintech & Start-ups",
+    "link": "https://www.barnesandscott.com/",
+    "snippet": "September 15, 2025 - Chartered accountants for Tech, Fintech and Digital Start-ups. We provide accounting services, tax advice and help to scale your business.",
+    "domain": "barnesandscott.com"
+   },
+   {
+    "position": 2,
+    "title": "Expert Accountants for Fintech Startups UK - Quiliammarr",
+    "link": "https://quilliammarr.co.uk/accountants-for-fintech-startups/",
+    "snippet": "November 1, 2025 - Our expert accountants for fintech startups in the UK provide tailored financial management, tax planning, and compliance services to help you grow efficiently and stay investor-ready.",
+    "domain": "quilliammarr.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "Accountants for Fintech Companies UK | Fintech Accounting London",
+    "link": "https://abmcharteredaccountants.com/sectors/fintech-companies/",
+    "snippet": "ABM Chartered Accountants provides expert accounting for fintech companies across the UK, from early-stage startups to scaling payment businesses. Our ICAEW and ACCA qualified team handles FCA regulatory reporting, client fund safeguarding, R&D tax credits and tax planning for fintech businesses and individual founders.",
+    "domain": "abmcharteredaccountants.com"
+   },
+   {
+    "position": 4,
+    "title": "Tech Startup & High Growth Accountants | Your Finance Partner",
+    "link": "https://www.onthegoaccountants.co.uk/",
+    "snippet": "Outsource your finance function or expand your in-house finance team. Our Startup specialists can support you with R&D, CFO services and S/EIS.",
+    "domain": "onthegoaccountants.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "Fintech Startups Accountants UK | Specialist Matching Service | Startup ...",
+    "link": "https://www.startupaccountants.uk/industries/fintech-startups/",
+    "snippet": "Specialist accounting for FCA-regulated UK fintech startups: safeguarding reconciliation, capital adequacy, regulatory reporting, R&D claim defence, and the statutory plus safeguarding plus CASS audit stack.",
+    "domain": "startupaccountants.uk"
+   },
+   {
+    "position": 6,
+    "title": "Tech Startups Accountants | Startup Accountants UK",
+    "link": "https://www.startupaccountants.uk/industries/tech-startups/",
+    "snippet": "Specialist accounting for UK tech startups beyond pure SaaS: marketplaces, AI and ML, dev tools, platforms, agencies pivoting to product. IFRS 15 revenue treatment, R&D claim methodology, and exit-ready cap tables.",
+    "domain": "startupaccountants.uk"
+   },
+   {
+    "position": 7,
+    "title": "Tech Startup Accountant UK for Funding and Tax",
+    "link": "https://pearllemonaccountants.co.uk/services/accounting/tech-startup/",
+    "snippet": "Early-stage companies need more than standard bookkeeping. They need tech startup accountant UK services that align with venture growth, product development cycles, and investor reporting. At Pearl Lemon Accountants, we work with founders building SaaS platforms, fintech applications, AI products, and high-growth software companies across the UK.",
+    "domain": "pearllemonaccountants.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "Startup Accountants UK | Fixed Monthly Pricing | Startup Accountancy",
+    "link": "https://www.startupaccountancy.com/",
+    "snippet": "UK startup accountants built by founders, for founders. Fixed plans from \u00a3345, including bookkeeping, payroll, and VAT. No jargon, no surprises. Book a call.",
+    "domain": "startupaccountancy.com"
+   },
+   {
+    "position": 9,
+    "title": "Accountants for Tech Startups in the UK",
+    "link": "https://sleek.com/uk/startup-accountant/",
+    "snippet": "Specialist accountants for startups in the UK. Get clear, scalable support to manage cash flow, stay compliant and grow your business with confidence.",
+    "domain": "sleek.com"
+   },
+   {
+    "position": 10,
+    "title": "Startup Accountants UK for Founders, SaaS & Growing Businesses",
+    "link": "https://auditconsultinggroup.co.uk/services/industries/startups/",
+    "snippet": "Specialist startup accountants in the UK helping founders with bookkeeping, VAT, R&D claims, payroll, SEIS/EIS, forecasting and investor-ready reporting for growing businesses.",
+    "domain": "auditconsultinggroup.co.uk"
+   }
+  ],
+  "r&d tax credit accountant": [
+   {
+    "position": 1,
+    "title": "Research and development (R&D) tax credits - PwC UK",
+    "link": "https://www.pwc.co.uk/services/tax/getting-the-most-out-of-innovation/research-and-development-tax-credits.html",
+    "snippet": "The UK Government recognises that encouraging innovation is a vital component in a strategy for improving the UK's productivity, performance and competitiveness. Research and development (R&D) tax credits are awarded to businesses to increase innovation.",
+    "domain": "pwc.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "Accounting Treatment for R&D Tax Credits | Expert Guide",
+    "link": "https://alexanderclifford.co.uk/blog/accounting-treatment-for-r-and-d-tax-credits/",
+    "snippet": "2 Mar 2026 ... If you're claiming under RDEC, the accounting treatment is quite simple, as the tax relief is considered to be profit before tax. This means ...",
+    "domain": "alexanderclifford.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "R&D Tax Credits UK | Claiming R&D Tax Relief - Source Advisors",
+    "link": "https://sourceadvisors.co.uk/services/rd-tax-credits/",
+    "snippet": "In the UK companies are able to claim tax relief for their R&D activity. This government incentive is designed to boost innovation by supporting businesses.",
+    "domain": "sourceadvisors.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "R&D Tax Specialists for Accountants - randd UK",
+    "link": "https://randduk.com/accountants/",
+    "snippet": "We provide R&D services for accountants to help them with claims. Speak to our experienced R&D tax credit specialists and consultants for expert support.",
+    "domain": "randduk.com"
+   },
+   {
+    "position": 5,
+    "title": "Research & Development Tax Credit - Gorilla Accountants",
+    "link": "https://gorillaaccounting.com/research-and-development-tax-credit/",
+    "snippet": "To help businesses in the UK grow and develop, and to encourage continued innovation, the government has created an incentive scheme \u2013 R&D tax credits. It ...",
+    "domain": "gorillaaccounting.com"
+   },
+   {
+    "position": 6,
+    "title": "Research and Development tax relief for small and medium-sized ...",
+    "link": "https://www.gov.uk/guidance/corporation-tax-research-and-development-tax-relief-for-small-and-medium-sized-enterprises",
+    "snippet": "Research and Development (R&D) tax relief is available for small and medium-sized enterprises (SMEs) with an accounting period that starts before 1 April 2024.",
+    "domain": "gov.uk"
+   },
+   {
+    "position": 7,
+    "title": "Should I use an accountant for R&D Tax Credits? - GrantTree",
+    "link": "https://granttree.co.uk/blog/r-d-tax-credits/accountant-fees-for-rd-tax-credits/",
+    "snippet": "17 Sept 2012 ... Apples and pears in using an accountant for R&D Tax Credits \u00b7 Discussing your technology in detail to figure out if it does indeed qualify ...",
+    "domain": "granttree.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "R&D tax relief: what you need to know - ICAEW.com",
+    "link": "https://www.icaew.com/technical/economy/resilience-and-renewal/r-and-d-tax-relief-what-you-need-to-know",
+    "snippet": "27 Mar 2024 ... If a company is subject to UK corporation tax and is undertaking research and development (R&D), it can potentially claim R&D tax relief. The ...",
+    "domain": "icaew.com"
+   },
+   {
+    "position": 9,
+    "title": "Research and Development Tax Claims - R&D Tax credits",
+    "link": "https://www.ross-brooke.co.uk/what-we-do/research-and-development-tax-claims-credits/",
+    "snippet": "Large companies undertaking qualifying R&D activity are entitled to a research and development expenditure credit (RDEC) of 13% from 1 April 2020.",
+    "domain": "ross-brooke.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "randd UK | R&D Tax Credit Specialists | Consultants",
+    "link": "https://randduk.com/",
+    "snippet": "Trusted by accountants Unlocking unclaimed R&D Established for 17 years R&D tax advisers, accountants, and industry specialists providing a robust, personal and technical 5-star service We are trusted R&D Tax Credit specialists, supporting businesses and accountants across the UK.",
+    "domain": "randduk.com"
+   }
+  ],
+  "r&d tax credits advisor uk": [
+   {
+    "position": 1,
+    "title": "R&D Tax Relief to Come Under Increased Scrutiny from HMRC",
+    "link": "https://www.wbex.co.uk/rd-tax-relief-come-under-increased-scrutiny-hmrc",
+    "snippet": "What is R&D Tax Relief? The R&D Tax Scheme was designed by the government in 2010 as an incentive to encourage companies to invest into the research and development of their field, in addition to rewarding innovative thinking from UK SME\u2019s exploring new products and niche markets.",
+    "domain": "bex.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "Green Jellyfish accused of tax fraud | Rufus Meakin posted... | LinkedIn",
+    "link": "https://www.linkedin.com/posts/rufusmeakin_tax-randdtaxcredits-randdadvisor-activity-7231349103178190850-D07X",
+    "snippet": "The report, available on the Tax Policy Associates website states that: \u201cR&D tax relief costs the UK about \u00a38bn each year, of which more than \u00a31bn has been identified by HMRC as fraudulent.",
+    "domain": "linkedin.com"
+   },
+   {
+    "position": 3,
+    "title": "Move is aimed at boosting the group's R&D Tax Credit advisory service",
+    "link": "https://www.insider.co.uk/news/aab-growth-continues-acquisition-tax-28352079",
+    "snippet": "The advisory firm was established in 2013 by Julia May and Dr Mark Graves and has grown across the UK, delivering more than 3,500 successful R&D Tax Credit claims, worth more than \u00a312m, to date.",
+    "domain": "insider.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "Alistair Thorne - UK SME Financial Strategy & Tax Expert",
+    "link": "https://www.whymagazine.org/author/alistair-thorne/",
+    "snippet": "How to Leverage UK R&D Tax Credits to Fund Innovation and Competitiveness?",
+    "domain": "hymagazine.org"
+   },
+   {
+    "position": 5,
+    "title": "Advisory - Legend Fusions UK",
+    "link": "https://legendfusions.com/uk/advisory/",
+    "snippet": "End-to-End UK Tax Support. Business performance and growth assessment.08.Does Legend Fusions provide business advisory services in the UK? Yes, Legend Fusions provides professional advisory support for UK businesses across multiple areas.",
+    "domain": "legendfusions.com"
+   },
+   {
+    "position": 6,
+    "title": "Webinar: Maximizing R&D Tax Credits in the UK \u2014 Australia - United...",
+    "link": "https://www.australiachamber.co.uk/maximizing-rd-tax-credits-in-the-uk",
+    "snippet": "Australia - United Kingdom Chamber of Commerce.In partnership with Alliotts LLP we\u2019ll delve into the world of R&D tax credits in the UK, breaking down everything you need to know to maximise the benefits. We\u2019ll start with an overview of the R&D tax credits system, followed by an...",
+    "domain": "australiachamber.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "Innovation, incentivised: How key R&D Tax regimes compare around...",
+    "link": "https://www.grantthornton.com.au/insights/blogs/innovation-incentivised-how-key-rd-tax-regimes-compare-around-the-world/",
+    "snippet": "08 United Kingdom: R&D tax relief schemes. The United Kingdom provides R&D tax relief through a self-assessed, statutory regime supporting companies undertaking qualifying R&D activities that seek to achieve an advance in science or technology.",
+    "domain": "grantthornton.com.au"
+   },
+   {
+    "position": 8,
+    "title": "Northern Ireland Lagging Behind UK In R&D Tax Credits - Business Eye",
+    "link": "https://www.businesseye.co.uk/news/northern-ireland-lagging-behind-uk-in-rd-tax-credits/",
+    "snippet": "Its Innovation Taxes Team has a wealth of technical knowledge in fields such as aerospace, biomedical science and chemical engineering and is leading on R&D services for the wider Sumer Group across the UK.",
+    "domain": "businesseye.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "R&D Tax Credit Specialist Consultants | Source Advisors",
+    "link": "https://sourceadvisors.co.uk/",
+    "snippet": "UK's leading R&D tax credit consultants. Claim your tax relief with expert guidance in R&D and IP. Speak to our team of specialists today.",
+    "domain": "sourceadvisors.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "RAndDTax: Award winning R&D Tax Consultants",
+    "link": "https://www.randdtax.co.uk/",
+    "snippet": "March 2, 2026 - As a result our more innovative clients have made successful R&D claims, which has helped to fund their investment in R&D. We have found Linda Eziquiel, our lead advisor from RandDTax, to be knowledgeable, efficient and pleasant to work with.",
+    "domain": "randdtax.co.uk"
+   }
+  ],
+  "r&d tax relief specialist accountant": [
+   {
+    "position": 1,
+    "title": "randd UK | R&D Tax Credit Specialists | Consultants",
+    "link": "https://randduk.com/",
+    "snippet": "R&D tax advisers, accountants, and industry specialists providing a robust, personal and technical 5-star service We are trusted R&D Tax Credit specialists, supporting businesses and accountants across the UK.",
+    "domain": "randduk.com"
+   },
+   {
+    "position": 2,
+    "title": "R&D Tax Relief Claims UK | Innovation Tax Credits | Expert Service",
+    "link": "https://www.business-accounting.co.uk/services/rd-tax-relief",
+    "snippet": "Maximise your R&D tax relief claims. Expert qualification assessment, full claim preparation, HMRC compliance. Specialist R&D accountants.",
+    "domain": "business-accounting.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "RAndDTax: Award winning R&D Tax Consultants",
+    "link": "https://www.randdtax.co.uk/",
+    "snippet": "We originally started claiming R&D Tax Relief though our Accountants and were referred by them to Jaime Lumsden of RandDTax once it became clear that our claim could be much more comprehensive and required specialist support.",
+    "domain": "randdtax.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "R&D Tax Specialists",
+    "link": "https://randdtaxspecialists.co.uk/",
+    "snippet": "We specialise in helping businesses of all sizes claim tax relief under the HMRC Research and Development (R&D) Tax relief scheme. Successive UK governments have maintained their commitment to supporting R&D undertaken by UK companies and, in the Autumn 2025 Budget, the Chancellor provided confirmation of stability in the R&D Tax relief scheme ...",
+    "domain": "randdtaxspecialists.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "R&D Tax Credit Specialists - Expert Consultants In RandD Tax",
+    "link": "https://randdtaxcreditspecialists.co.uk/",
+    "snippet": "Our Credentials R&D Tax Credit Specialists is a consultancy established in 2015, led by chartered tax advisors with combined 40 years' experience in R&D tax relief and HMRC compliance. Our team includes three former HMRC inspectors who reviewed R&D claims, two chartered accountants specialising in corporate tax, and sector-specific technical writers with engineering and software development ...",
+    "domain": "randdtaxcreditspecialists.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "Specialist R&D Tax Accountants - Metric Accountants",
+    "link": "https://www.metricaccountants.co.uk/specialist-rd-tax-accountants/",
+    "snippet": "Specialist R&D Tax Accountants Metric Accountants is a specialist accountancy firm that only works with tech and high-growth companies. We believe in maximising tax relief opportunities for our clients and their businesses. R&D credits have the power to transform your business, and our professional and specialist R&D accountants can help.",
+    "domain": "metricaccountants.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "Lexmore Tax Advisory - UK Tax Relief Specialists",
+    "link": "https://lexmore.co.uk/",
+    "snippet": "Expert tax relief consultancy services across the UK. Specialising in R&D Tax Relief, Employee Ownership Trusts, Capital Allowances, and Patent Box Tax Relief. Clarity. Compliance. Confidence.",
+    "domain": "lexmore.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "ForrestBrown: R&D Tax Specialist & Innovation Incentives",
+    "link": "https://forrestbrown.co.uk/",
+    "snippet": "UK's leading R&D tax relief specialists & innovation incentives consultancy. Unmatched specialist expertise, on your terms. Transform your business today.",
+    "domain": "forrestbrown.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "R&D Tax Relief UK Specialists for Robust Post-2024 Claims",
+    "link": "https://qaccountants.com/lp/rd-tax-credit-specialists-near-me",
+    "snippet": "Specialist R&D tax relief support for UK limited companies claiming under the merged scheme or ERIS. We assess eligibility, identify qualifying costs, prepare robust documentation, and support AIF, claim notification, and CT600 filing.",
+    "domain": "qaccountants.com"
+   },
+   {
+    "position": 10,
+    "title": "Research & development (R&D) tax relief | Our services | Champion ...",
+    "link": "https://www.championgroup.co.uk/services/rd-tax-relief/",
+    "snippet": "Our qualified accountants, chartered tax advisors and R&D specialists have helped clients identify \u00a371m+ in R&D Tax Relief, with a 100% success rate.",
+    "domain": "championgroup.co.uk"
+   }
+  ],
+  "merged scheme r&d accountant": [
+   {
+    "position": 1,
+    "title": "Research and Development (R&D) tax relief: the merged R&D expenditure ...",
+    "link": "https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support",
+    "snippet": "Find out if you can claim under the merged R&D expenditure credit (RDEC) scheme or enhanced R&D intensive support (ERIS) for accounting periods beginning on or after 1 April 2024.",
+    "domain": "gov.uk"
+   },
+   {
+    "position": 2,
+    "title": "Accounting Treatment For R&D Tax Credits: Merged & ERIS",
+    "link": "https://forrestbrown.co.uk/knowledge-bank/what-is-the-accounting-treatment-for-r-and-d-credits/",
+    "snippet": "We take a look at the accounting treatment for R&D tax relief under the merged scheme & ERIS, providing example calculations. Discover more.",
+    "domain": "forrestbrown.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "Merged R&D scheme - everything you need to know - ForrestBrown",
+    "link": "https://forrestbrown.co.uk/knowledge-bank/merged-r-and-d-scheme/",
+    "snippet": "Merged R&D scheme - everything you need to know The merged R&D tax relief scheme is the principal R&D incentive for accounting periods beginning on or after 1 April 2024.",
+    "domain": "forrestbrown.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "The UK's merged R&D regime - what do you need to know? - Deloitte",
+    "link": "https://www.deloitte.com/uk/en/services/tax/perspectives/the-uk-merged-r-and-d-regime.html",
+    "snippet": "Following extensive consultation, the UK's new merged R&D tax relief regime is now in operation for accounting periods beginning on or after 1 April 2024.",
+    "domain": "deloitte.com"
+   },
+   {
+    "position": 5,
+    "title": "R&D merged scheme: Complete UK guide - Alexander Clifford",
+    "link": "https://alexanderclifford.co.uk/blog/rd-merged-scheme-eligibility-claims-guide/",
+    "snippet": "The new R&D merged scheme runs alongside the Enhanced R&D Intensive Scheme (ERIS), rewarding research and development-intensive businesses for contributions towards technological advancement and innovation. Important: The R&D Merged Scheme applies to accounting periods starting on or after 1 April 2024.",
+    "domain": "alexanderclifford.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "R&D tax credits 2026/27: the merged scheme, ERIS, and how to claim what ...",
+    "link": "https://rraccountants.uk/resources/year-end-accounts-corporation-tax/rd-tax-credits-2026-27",
+    "snippet": "In one sentence UK R&D tax credits in 2026/27 sit under two reformed schemes (for accounting periods beginning on or after 1 April 2024): the merged R&D expenditure credit (RDEC) at 20% for most claimants, and Enhanced R&D Intensive Support (ERIS) for loss-making SMEs whose qualifying R&D expenditure is at least 30% of total expenditure, giving an 86% additional deduction and a 14.5% payable ...",
+    "domain": "rraccountants.uk"
+   },
+   {
+    "position": 7,
+    "title": "R&D Expenditure Credit (RDEC) and merged scheme - BDO",
+    "link": "https://www.bdo.co.uk/en-gb/insights/tax/innovation-and-research-and-development-tax-incentives/r-d-expenditure-credit-rdec-and-merged-scheme",
+    "snippet": "The merged scheme runs alongside the SME R&D intensive scheme, known as the Enhanced R&D Intensive Scheme (ERIS). The merged scheme applies to accounting periods beginning on or after 1 April 2024. The latest rates of relief are set out here. Why is it important for your business? Most claimant companies will be subject to RDEC rules going forward.",
+    "domain": "bdo.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "R&D merged scheme - Saffery",
+    "link": "https://www.saffery.com/insights/articles/rd-merged-scheme/",
+    "snippet": "A further significant change introduced by the merged scheme and for accounting periods beginning on or after 1 April 2024, the intensive SME scheme, is a restriction on claiming payments for contracted out R&D performed overseas, and externally provided workers provided to the claimant from overseas.",
+    "domain": "saffery.com"
+   },
+   {
+    "position": 9,
+    "title": "Research and Development Tax Relief - The Merged Scheme: R&D ... - GOV.UK",
+    "link": "https://www.gov.uk/government/publications/research-and-development-rd-tax-relief-reform/research-and-development-tax-relief-the-merged-scheme-rd-expenditure-credit-rdec",
+    "snippet": "When customers need to do this Merger of the Research and Development (R&D) reliefs applies to companies with accounting periods beginning on or after 1 April 2024. Assessing the impact",
+    "domain": "gov.uk"
+   },
+   {
+    "position": 10,
+    "title": "Accounting for R&D Tax Credit | Plus Accounting",
+    "link": "https://www.plusaccounting.co.uk/services/research-development/",
+    "snippet": "R&D (Research & Development) Tax Explained The UK's R&D tax relief rules changed significantly with the introduction of the merged R&D scheme for company accounting periods starting on or after 1 April 2024. Suppose your company innovates in software, AI, life sciences, engineering, manufacturing, games or other technical areas.",
+    "domain": "plusaccounting.co.uk"
+   }
+  ],
+  "software r&d tax claim help": [
+   {
+    "position": 1,
+    "title": "How UK IT and software firms can claim R&D tax relief",
+    "link": "https://ctmp.co.uk/blog/how-uk-it-and-software-firms-can-claim-rd-tax-relief",
+    "snippet": "In this guide, we explain how UK IT and software firms can claim R&D tax relief, avoid common pitfalls, and maximise the value of their claim.",
+    "domain": "ctmp.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "R&D Tax Claim Software | Request a Free Trial | TaxTrex",
+    "link": "https://www.swansonreed.co.uk/taxtrexsoftware/",
+    "snippet": "To learn more about the TaxTrex Tax Claim Software and how it can help facilitate an accurately prepared R&D Tax Credit Claim, please contact us ...",
+    "domain": "swansonreed.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "R&D Tax Credits Online Claim Platform | RD Relief",
+    "link": "https://www.rdrelief.co.uk/",
+    "snippet": "Otherwise, please feel free to continue to browse this website for useful information regarding claiming R&D Tax Credits in the UK.",
+    "domain": "rdrelief.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "A Complete Guide to Successfully Claiming R&D Tax Relief in",
+    "link": "https://cartwheelinternational.com/blog/claim-rd-tax-relief-uk/",
+    "snippet": "In this case, spending \u00a3100,000 on R&D activities would directly reduce your tax liability by \u00a315,000, helping you reinvest more into ...",
+    "domain": "cartwheelinternational.com"
+   },
+   {
+    "position": 5,
+    "title": "R&D Tax Credit Claim Process | How Tax Cloud Works",
+    "link": "https://www.taxcloud.co.uk/our-service/the-claim-process/",
+    "snippet": "Tax Cloud creates your claim ... Join the ranks of forward-thinking UK businesses that have streamlined their R&D tax claims with Tax Cloud.",
+    "domain": "taxcloud.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "Reliable R&D Tax Credit Claim Services For UK Businesses",
+    "link": "https://chacc.co.uk/ch-services/tax-services/rd-tax-credits/",
+    "snippet": "UK tax accountants provide tailored services to help you stay compliant and reduce liabilities. ... tax advisory services designed specifically for UK ...",
+    "domain": "chacc.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "R&D Tax Credit Claims for Software Companies | Something",
+    "link": "https://www.somethingfinancial.co.uk/software-research-development",
+    "snippet": "... help businesses of all sizes, in all business sectors claim tax relief under the HMRC\u2019s Research and Development Tax Credit scheme, it is fair to ...",
+    "domain": "somethingfinancial.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "R&D Tax Relief Blog | Advice, News & Best Practices |",
+    "link": "https://inplus.co.uk/blog",
+    "snippet": "How HMRC assesses UK software R&D tax credit claims in 2025: what counts as technological uncertainty, which software activities typically ...",
+    "domain": "inplus.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "R&D Tax Credits Explained - Tax Authorities - United Kingdom",
+    "link": "https://www.mondaq.com/uk/tax-authorities/1234378/rd-tax-credits-explained",
+    "snippet": "If you believe your business might qualify for R& tax credits please do get in touch and we can help you evaluate and made a claim.",
+    "domain": "mondaq.com"
+   },
+   {
+    "position": 10,
+    "title": "Claimer raises seed backing to make it easier for UK startups",
+    "link": "https://techcrunch.com/2020/03/20/claimer/",
+    "snippet": "After you upload a claim to the platform, which includes the ability to pull numbers from your accounting software, Claimer \u2019 s in-house tax ...",
+    "domain": "techcrunch.com"
+   }
+  ],
+  "seis advance assurance help": [
+   {
+    "position": 1,
+    "title": "Apply for advance assurance on a venture capital scheme",
+    "link": "https://www.gov.uk/guidance/venture-capital-schemes-apply-for-advance-assurance",
+    "snippet": "Find out if your proposal to raise investments could qualify for a venture capital scheme and what you need to apply for advance assurance.",
+    "domain": "gov.uk"
+   },
+   {
+    "position": 2,
+    "title": "SEIS and EIS advance assurance guide | Crowe UK",
+    "link": "https://www.crowe.com/uk/insights/seis-and-eis-the-importance-of-advanced-assurance",
+    "snippet": "Learn how SEIS and EIS advance assurance helps businesses secure investment faster with HMRC approval, key requirements, and practical steps to attract investors.",
+    "domain": "crowe.com"
+   },
+   {
+    "position": 3,
+    "title": "SEIS Advance Assurance: How to Apply - Legal Foundations",
+    "link": "https://legalfoundations.org.uk/guide/seis-advance-assurance-application-guide/",
+    "snippet": "Advance assurance is HMRC's pre-confirmation that your company looks eligible for SEIS. It doesn't guarantee anything, but it gives investors the confidence to proceed. This guide explains what it is, how to apply, what to include, and where to get help if the standard application doesn't cover your situation.",
+    "domain": "legalfoundations.org.uk"
+   },
+   {
+    "position": 4,
+    "title": "SEIS Advance Assurance: Complete 2026 Guide for UK Founders",
+    "link": "https://www.advanceassured.co.uk/seis-eis-basics/seis-advance-assurance-guide",
+    "snippet": "How to apply for SEIS advance assurance from HMRC. Step-by-step process, common rejection reasons, timelines, and what investors expect. Updated April 2026.",
+    "domain": "advanceassured.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "A Guide to SEIS, EIS and Advance Assurance | ETA & Associates",
+    "link": "https://etaandassociates.com/our-thinking/step-by-step-guide-seis-eis-advance-assurance/",
+    "snippet": "What is the difference between SEIS and EIS, and how do you go about applying for Advance Assurance? Here we give you the answers, step-by-step.",
+    "domain": "etaandassociates.com"
+   },
+   {
+    "position": 6,
+    "title": "Support - SEIS Advance Assurance",
+    "link": "https://seisadvanceassurance.co.uk/support/",
+    "snippet": "We get your company SEIS and EIS advance assurance from HMRC, guaranteed results (that is, if you don't get it, all your money back). Simple as that.",
+    "domain": "seisadvanceassurance.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "SEIS Advance Assurance: How to Apply and What HMRC Checks",
+    "link": "https://sleek.com/uk/resources/seis-advance-assurance-how-to-apply/",
+    "snippet": "How to apply for SEIS advance assurance, HMRC eligibility rules, timelines, and what to submit. Expert help from Sleek.",
+    "domain": "sleek.com"
+   },
+   {
+    "position": 8,
+    "title": "SEIS & EIS Advance Assurance Application: HMRC Approved",
+    "link": "https://sleek.com/uk/seis-eis-advance-assurance/",
+    "snippet": "Get SEIS and EIS advance assurance with Sleek. We guide UK startups through HMRC applications to stay compliant and investor-ready.",
+    "domain": "sleek.com"
+   },
+   {
+    "position": 9,
+    "title": "SEIS Advance Assurance: A Legal Guide | Sprintlaw UK",
+    "link": "https://sprintlaw.co.uk/articles/understanding-seis-advance-assurance-a-legal-guide-for-uk-businesses/",
+    "snippet": "See how SEIS Advance Assurance boosts investor confidence, eligibility tips, and avoid common pitfalls when raising capital for your UK startup.",
+    "domain": "sprintlaw.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "SEIS & EIS Guides \u2014 AdvanceAssured",
+    "link": "https://www.advanceassured.co.uk/guides/",
+    "snippet": "Home / Guides SEIS & EIS Guides Free guides, explainers, and practical advice to help UK founders and investors navigate advance assurance, tax relief, and startup funding. Every number sourced from HMRC data.",
+    "domain": "advanceassured.co.uk"
+   }
+  ],
+  "eis advance assurance accountant": [
+   {
+    "position": 1,
+    "title": "SEIS & EIS Advance Assurance | Jump Accounting",
+    "link": "https://www.jumpaccounting.co.uk/seis-eis-advance-assurance/",
+    "snippet": "Securing SEIS/EIS Advance Assurance opens your business up to a wider, more motivated pool of investors. Under these schemes, if an investor injects capital into your business, the government will mitigate their financial risk by rewarding them with a substantial tax break.",
+    "domain": "jumpaccounting.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "SEIS and EIS Advance Assurance: what is it? | SeedLegals",
+    "link": "https://seedlegals.com/resources/what-is-advance-assurance/",
+    "snippet": "SEIS/EIS Advance Assurance is approval from HMRC that an investment in your company is likely to qualify for tax relief. Advance Assurance does not guarantee that your investment will meet the conditions...",
+    "domain": "seedlegals.com"
+   },
+   {
+    "position": 3,
+    "title": "EIS Advance Assurance | Finerva",
+    "link": "https://finerva.com/services/eis-advance-assurance/",
+    "snippet": "EIS Compliance Phase One \u2013 Advance Assurance (Pre-Investment). The preparation and submission of the (S)EIS advance assurance application to HMRC and answer queries. \u2013 fee from \u00a3400 excl VAT. Timing 5-7 days from engagement and information provision.",
+    "domain": "finerva.com"
+   },
+   {
+    "position": 4,
+    "title": "SEIS/EIS Advance Assurance (AA) explained | Swoop UK",
+    "link": "https://swoopfunding.com/uk/equity-financing/seis-eis-advance-assurance/",
+    "snippet": "SEIS/EIS Advance Assurance is an indication from HMRC that investors of a business under these schemes is eligible for tax relief. Find out all about AA here.",
+    "domain": "swoopfunding.com"
+   },
+   {
+    "position": 5,
+    "title": "How To Apply For SEIS Advance Assurance | Jonathan Lea",
+    "link": "https://www.jonathanlea.net/blog/how-to-apply-for-seis-and-eis-advance-assurance/",
+    "snippet": "For an advance assurance form for SEIS, EIS or VCT search for \u201cventure capital advance assurance\u201d and select the first result.",
+    "domain": "jonathanlea.net"
+   },
+   {
+    "position": 6,
+    "title": "EIS Advance Assurance for UK Startups & Investors | Sprintlaw UK",
+    "link": "https://sprintlaw.co.uk/articles/eis-advance-assurance-winning-investor-confidence/",
+    "snippet": "What Is EIS and EIS Advance Assurance? The Enterprise Investment Scheme (EIS) is a UK government initiative designed to help small, high-growth businesses raise capital. It offers generous tax reliefs to individual investors who purchase new shares in eligible companies.",
+    "domain": "sprintlaw.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "Getting EIS Advance Assurance: A Guide for Startups | LegalVision UK",
+    "link": "https://legalvision.co.uk/startups/getting-eis-advance-assurance/",
+    "snippet": "How to Get EIS Advance Assurance. Key Takeaways. Frequently Asked Questions. In Short. EIS advance assurance helps secure investor confidence by confirming eligibility for tax relief under the Enterprise Investment Scheme.",
+    "domain": "legalvision.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "What is SEIS/EIS advance assurance?",
+    "link": "https://www.vestd.com/help/what-is-seis/eis-advance-assurance",
+    "snippet": "Advance assurance is HMRC\u2019s way of determining whether a company meets the conditions of SEIS/EIS, and whether an investment will qualify for the tax benefits associated with the schemes.",
+    "domain": "vestd.com"
+   },
+   {
+    "position": 9,
+    "title": "SEIS & EIS Advance Assurance Application: HMRC Approved",
+    "link": "https://sleek.com/uk/seis-eis-advance-assurance/",
+    "snippet": "Get SEIS and EIS advance assurance with Sleek. We guide UK startups through HMRC applications to stay compliant and investor-ready.",
+    "domain": "sleek.com"
+   },
+   {
+    "position": 10,
+    "title": "Advance Assurance for SEIS and EIS",
+    "link": "https://carta.com/uk/en/learn/startups/fundraising/seis-eis-advance-assurance/",
+    "snippet": "Advance Assurance is an indication from HMRC that an investment is likely to qualify for tax relief under one of the UK\u2019s venture capital schemes \u2013 such as the Seed Enterprise Investment Scheme (SEIS) or the Enterprise Investment Scheme (EIS).",
+    "domain": "carta.com"
+   }
+  ],
+  "seis eis accountant": [
+   {
+    "position": 1,
+    "title": "SEIS & EIS Tax Relief - Accounting Services for UK Businesses",
+    "link": "https://a-wise.co.uk/accountancy-services/seis-scheme-and-eis-tax-relief/",
+    "snippet": "Tax relief with accounting services for SEIS and EIS schemes. Our UK accountants help optimise financial strategies and ensure compliance.",
+    "domain": "a-wise.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "SEIS/EIS Compliance Statement: Filing Guide for Startups",
+    "link": "https://www.onthegoaccountants.co.uk/the-seis-eis-compliance-statement-how-and-when-to-file",
+    "snippet": "Learn how to file SEIS/EIS compliance statements correctly. Deadlines, requirements, FAQs, and a founder-friendly checklist to secure investor relief.",
+    "domain": "onthegoaccountants.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "SEIS and EIS complete accounting service - Fusion Accountants",
+    "link": "https://www.fusionaccountants.co.uk/services/seis-eis-accountants/",
+    "snippet": "Raising investment through SEIS or EIS? We support startups in Brentford, East London, Kingston, Hounslow, Harrow, and beyond with end-to-end SEIS/EIS accounting and compliance.",
+    "domain": "fusionaccountants.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "EIS Tax Relief & SEIS Scheme Advisors & Accountant",
+    "link": "https://perrysaccountants.co.uk/eis-accountants",
+    "snippet": "Our accountants provide you with advice and assistance on what EIS is and how to make the most of EIS tax relief, investments and SEIS schemes. Find out more.",
+    "domain": "perrysaccountants.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "SEIS and EIS for Startups \u2014 AccTek Accountants",
+    "link": "https://www.acctek.co.uk/who-we-help/startups/seis-eis-tax-relief/",
+    "snippet": "SEIS and EIS for UK startups. 50% and 30% investor tax relief, advance assurance, April 2026 changes. Specialist startup accountants.",
+    "domain": "acctek.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "SEIS & EIS Accountant & Advisory for UK Startups | Hawkstone",
+    "link": "https://gohawkstone.co.uk/services/seis-eis/",
+    "snippet": "Expert SEIS/EIS advisory for UK startup founders. Advance assurance applications, compliance monitoring, and investor documentation.",
+    "domain": "gohawkstone.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "SEIS/EIS | Reaveley Cooper Accountants",
+    "link": "https://www.reaveley-cooper.co.uk/business-accounts/seis-eis",
+    "snippet": "SEIS/EIS Services at Reaveley Cooper Accountants Seed Enterprise Investment Scheme (SEIS) and the Enterprise Investment Scheme (EIS) provide essential routes for UK businesses to secure growth funding while offering significant tax advantages to investors. At Reaveley Cooper Accountants, we specialise in guiding both companies and investors through every stage of EIS and SEIS, ensuring ...",
+    "domain": "reaveley-cooper.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "Mastering SEIS & EIS UK 2026 | Advance Assurance & Relief",
+    "link": "https://www.startupaccountants.uk/guides/mastering-seis-eis-investment-tax-relief/",
+    "snippet": "How UK startups secure SEIS and EIS. Advance assurance, the 30% rule, pitfalls that void relief, S1 certificates, and turning relief into a fundraising edge.",
+    "domain": "startupaccountants.uk"
+   },
+   {
+    "position": 9,
+    "title": "SEIS and EIS tax relief - UHY Ross Brooke Chartered Accountants",
+    "link": "https://www.ross-brooke.co.uk/what-we-do/personal-tax-accountants/seis-eis-tax-relief-for-investors/",
+    "snippet": "EIS and SEIS encourage investment in startups by offering investors generous tax relief. Talk to our experts in personal tax for clear, coherant advice.",
+    "domain": "ross-brooke.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "SEIS/EIS Advice | Startup Accountants UK",
+    "link": "https://www.startupaccountants.uk/services/seis-eis-advice/",
+    "snippet": "Strategic SEIS and EIS planning for UK startups seeking investment. Complete guidance on qualifying criteria, advance assurance applications, and investor documentation to maximise funding attractiveness.",
+    "domain": "startupaccountants.uk"
+   }
+  ],
+  "seis compliance statement help": [
+   {
+    "position": 1,
+    "title": "Form SEIS1:SEIS Tax Relief & Investor Benefits in UK",
+    "link": "https://xactaccountants.co.uk/form-seis1seis-tax-relief-investor-benefits/",
+    "snippet": "A SEIS compliance statement attesting to the fulfillment of investment requirements is required. ... SEIS1 form PDF, and submitting a SEIS compliance ...",
+    "domain": "xactaccountants.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "What is SEIS? - PennyBooks",
+    "link": "https://pennybooks.io/what-is-seis/",
+    "snippet": "Which companies would qualify for SEIS? You must be established in the UK, under two years old, not listed on any major stock exchange, must be ...",
+    "domain": "pennybooks.io"
+   },
+   {
+    "position": 3,
+    "title": "How to Apply for SEIS: UK Eligibility and Process",
+    "link": "https://www.goforma.com/limited-company/how-do-i-file-for-seis-investment",
+    "snippet": "After receiving the investment, submit a compliance statement (form SEIS2) to HMRC within the time limit to allow investors to claim their tax relief.",
+    "domain": "goforma.com"
+   },
+   {
+    "position": 4,
+    "title": "Step 3: Submit compliance statement",
+    "link": "https://start.novabook.com/submit-compliance-statement",
+    "snippet": "By following these steps and meeting the necessary criteria, you can efficiently submit your SEIS1 Compliance Statement and enable your investors to ...",
+    "domain": "start.novabook.com"
+   },
+   {
+    "position": 5,
+    "title": "SEIS/EIS | AccountingWEB",
+    "link": "https://www.accountingweb.co.uk/any-answers/seiseis-0",
+    "snippet": "The initial investment included investments from people seeking SEIS relief totalling \u00a3100k, a compliance statement etc.",
+    "domain": "accountingweb.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "Increases to SEIS are now live (sort of)",
+    "link": "https://www.vestd.com/blog/increases-to-seis-are-now-live-sort-of",
+    "snippet": "... compliance statement \u2013 that is if they have exceeded the previous investor limit of \u00a3100,000, or you have raised more than \u00a3150,000 under SEIS.",
+    "domain": "vestd.com"
+   },
+   {
+    "position": 7,
+    "title": "SEIS/EIS In 2026 - a practical guide",
+    "link": "https://vennaccounts.com/seis-eis-in-2026-a-practical-guide/",
+    "snippet": "... has traded for four months, or spent 70% of the funds, you can apply for the compliance statement and issue the eis certificate to each investor.",
+    "domain": "vennaccounts.com"
+   },
+   {
+    "position": 8,
+    "title": "SEIS and EIS Rule Pitfalls",
+    "link": "https://info.sapphirecapitalpartners.co.uk/blog/seis-and-eis-rule-pitfalls",
+    "snippet": "However, a SEIS and EIS compliance statement can only be submitted to HMRC when the company has been trading for four months or has spent 70% of the ...",
+    "domain": "info.sapphirecapitalpartners.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "SEIS and EIS Tax Relief Services in London",
+    "link": "https://clarkwell.co.uk/seis-and-eis-tax-relief-services-in-london/",
+    "snippet": "The Seed Enterprise Investment Scheme (SEIS) helps new businesses in the UK get funding. ... We have helped many London startups secure SEIS and EIS ...",
+    "domain": "clarkwell.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "What is SEIS/EIS Advance Assurance, and why is it important? |",
+    "link": "https://www.buckworths.com/what-is-seis-eis-advance-assurance-and-why-is-it-important/",
+    "snippet": "Once shares have been issued, you will need to submit a compliance statement (SEIS1/EIS1) to HMRC, wherein HMRC will confirm that the company ...",
+    "domain": "buckworths.com"
+   }
+  ],
+  "eis3 form accountant": [
+   {
+    "position": 1,
+    "title": "EIS3 Form for Enterprise Investment Scheme (EIS) - Pro Tax Accountant",
+    "link": "https://www.protaxaccountant.co.uk/post/eis3-form",
+    "snippet": "The EIS3 form is essential for investors who want to claim tax relief on their EIS investment. The EIS3 form is a critical document in the Enterprise Investment Scheme (EIS) process in the UK, used by investors to claim tax reliefs on their EIS investments. It's issued to investors by companies that have successfully raised capital through the EIS.",
+    "domain": "protaxaccountant.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "EIS3 Form: Claim EIS Tax Relief Benefits & Submit to HMRC",
+    "link": "https://xactaccountants.co.uk/eis3-form-claim-eis-tax-relief-benefits/",
+    "snippet": "The EIS3 form is important to claim 30% income tax relief, capital profit tax exemption, and loss relief where applicable. Once obtained, investors have to complete the relevant sections and submit them with their self-assessment and returns to claim tax benefits.",
+    "domain": "xactaccountants.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "What are EIS3 Certificate and EIS5 Certificate /Form?",
+    "link": "https://www.mytaxaccountant.co.uk/post/eis3-and-eis5-certificate",
+    "snippet": "Gain insight into the UK's EIS3 and EIS5 forms, crucial for investors and funds seeking tax reliefs on eligible ventures.",
+    "domain": "mytaxaccountant.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "HMRC postal address for EIS3 claim form? - AccountingWEB",
+    "link": "https://www.accountingweb.co.uk/any-answers/hmrc-postal-address-for-eis3-claim-form",
+    "snippet": "Hi, Can any practitioners confirm if it is the usual self assessment postal address the EIS3 claim form is sent to please? Thank you Self Assessment",
+    "domain": "accountingweb.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "How to Claim EIS Tax Relief: EIS3 Forms, Self Assessment and Carry-Back",
+    "link": "https://accounts-os.com/blog/eis-tax-relief-claim",
+    "snippet": "Claim 30% income tax relief via Self Assessment or form EIS1. You need an EIS3 certificate from the company you invested in. Can carry back to the previous tax year. Step-by-step guide.",
+    "domain": "accounts-os.com"
+   },
+   {
+    "position": 6,
+    "title": "Where to Send Your EIS Claim Form for Tax Relief",
+    "link": "https://www.pie.tax/tax-pible/where-to-send-eis-claim-form",
+    "snippet": "For PAYE taxpayers not filing Self Assessment, send your EIS3 certificate to your usual HMRC tax office, and make sure to include the claim form attached with your submission. Check your latest PAYE coding notice if you're unsure which office handles your affairs. HMRC may adjust your tax code or PAYE tax code to reflect the relief.",
+    "domain": "pie.tax"
+   },
+   {
+    "position": 7,
+    "title": "How to Claim EIS Tax Relief in the UK - Pro Tax Accountant",
+    "link": "https://www.protaxaccountant.co.uk/post/claim-eis-tax-relief",
+    "snippet": "The EIS3 form is a critical document in the process of claiming EIS tax relief. It not only serves as a proof of the investment and eligibility but also facilitates the actual claim process by providing necessary details to HMRC.",
+    "domain": "protaxaccountant.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "HS341 Enterprise Investment Scheme \u2014 Income Tax relief (2025) - GOV.UK",
+    "link": "https://www.gov.uk/government/publications/enterprise-investment-scheme-income-tax-relief-hs341-self-assessment-helpsheet/hs341-enterprise-investment-scheme-income-tax-relief-2025",
+    "snippet": "There are several references below to form EIS3, 'Enterprise Investment Scheme Certificate and claim to relief'. This form is used by the company invested in to certify that certain conditions ...",
+    "domain": "gov.uk"
+   },
+   {
+    "position": 9,
+    "title": "PDF Enterprise Investment Scheme - Certificate and claim to relief",
+    "link": "https://www.joinfurther.com/assets/images/EIS3_Certificate_v1_0.pdf",
+    "snippet": "Keep a copy of your claim form for your deferral relief claim if it's to be sent at a later date in accordance with the notes on deferral relief. For detailed information, go to www.gov.uk and search for 'Enterprise Investment Scheme'. Page 2",
+    "domain": "joinfurther.com"
+   },
+   {
+    "position": 10,
+    "title": "Enterprise Investment Scheme - Income Tax relief (Self Assessment ...",
+    "link": "https://www.gov.uk/government/publications/enterprise-investment-scheme-income-tax-relief-hs341-self-assessment-helpsheet",
+    "snippet": "Find out how to claim Income Tax relief under the Enterprise Investment Scheme.",
+    "domain": "gov.uk"
+   }
+  ],
+  "emi scheme setup accountant": [
+   {
+    "position": 1,
+    "title": "Enterprise Management Incentives (EMI) - GOV.UK",
+    "link": "https://www.gov.uk/tax-employee-share-schemes/enterprise-management-incentives-emis",
+    "snippet": "Tax and Employee Share Schemes \u00b7 Enterprise Management Incentives (EMI).",
+    "domain": "gov.uk"
+   },
+   {
+    "position": 2,
+    "title": "FAQs: setting up an EMI scheme - Harper James Solicitors",
+    "link": "https://harperjames.co.uk/article/faqs-emi-share-option-schemes/",
+    "snippet": "12 Sept 2025 ... What are the tax benefits of EMI schemes for a company? How to set up an EMI scheme; What are the set-up costs of an EMI scheme? Do the shares ...",
+    "domain": "harperjames.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "EMI Option Scheme - Jump Accounting",
+    "link": "https://www.jumpaccounting.co.uk/emi-option-scheme/",
+    "snippet": "EMI Options Set-up ... Build the most tax-efficient scheme for your employees. Create bespoke vesting schedules for share releases. Create documentation for ...",
+    "domain": "jumpaccounting.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "Cost to set up EMI Scheme? - AccountingWEB",
+    "link": "https://www.accountingweb.co.uk/any-answers/cost-to-set-up-emi-scheme",
+    "snippet": "18 Mar 2014 ... Goringe Accountants do a full setup of an EMI scheme including valuations, shareholders agreements etc usually starts from \u00a35k+VAT - which ...",
+    "domain": "accountingweb.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "EMI share incentives - Macalvins",
+    "link": "https://www.macalvins.com/services-2/emi-share-incentives/",
+    "snippet": "Registering, setting up and administrating the scheme \u00b7 Maintaining compliance and reporting changes to HMRC \u00b7 Advising employers and employees on the benefits of ...",
+    "domain": "macalvins.com"
+   },
+   {
+    "position": 6,
+    "title": "EMI Schemes | Enterprise management incentives - BDO",
+    "link": "https://www.bdo.co.uk/en-gb/insights/tax/global-employer-services/enterprise-management-incentives-emi",
+    "snippet": "16 Mar 2026 ... In the 2025 Budget, the Government announced positive reforms to Enterprise Management Incentive (EMI) share option schemes, ...",
+    "domain": "bdo.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "How to set up an EMI options scheme - Vestd",
+    "link": "https://www.vestd.com/blog/how-to-set-up-an-emi-options-scheme",
+    "snippet": "The six steps to creating an EMI scheme \u00b7 Establish your eligibility \u00b7 Create the scheme \u00b7 File for valuation with HMRC \u00b7 Authorise your option pool and receive ...",
+    "domain": "vestd.com"
+   },
+   {
+    "position": 8,
+    "title": "EMI Options Explained: A UK Founder's Guide to Equity",
+    "link": "https://www.loyals.uk/blog/emi-options-uk-founders-guide",
+    "snippet": "Each employee can hold up to \u00a3250,000 worth of unexercised EMI options, measured at the AMV (Actual Market Value) on each grant date. If an employee already ...",
+    "domain": "loyals.uk"
+   },
+   {
+    "position": 9,
+    "title": "Enterprise Management Incentives (EMI)",
+    "link": "https://bhp.co.uk/service/business-taxes/enterprise-management-incentives-emi/",
+    "snippet": "An EMI is a HMRC-approved, tax-efficient share scheme designed to help smaller companies recruit and retain key employees.",
+    "domain": "bhp.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "EMI Share Option Scheme for UK Agencies: The 2026 Guide",
+    "link": "https://www.alto-accounting.com/insights/emi-share-options-agency-uk",
+    "snippet": "4 Jun 2026 ... Enterprise Management Incentives (EMI) are the most tax-efficient way for UK agencies to offer equity to key employees.",
+    "domain": "alto-accounting.com"
+   }
+  ],
+  "emi valuation accountant": [
+   {
+    "position": 1,
+    "title": "EMI UK Companies | Equidam",
+    "link": "https://www.equidam.com/emi-uk-companies/",
+    "snippet": "Our EMI valuations are conducted in partnership with Standard Ledger, a UK-based financial services firm with deep expertise in startup accounting, compliance, and tax valuation.",
+    "domain": "equidam.com"
+   },
+   {
+    "position": 2,
+    "title": "EMI Valuation",
+    "link": "https://smebusinessvaluation.com/emi-valuation-uk-sme/",
+    "snippet": "We produce ICAEW-grade EMI valuations, both AMV and UMV, and submit directly to HMRC\u2019s Shares and Assets Valuation team on your behalf. Our reports are accepted by HMRC SAV without challenge.",
+    "domain": "smebusinessvaluation.com"
+   },
+   {
+    "position": 3,
+    "title": "Emi Valuations - The Mill Consultancy",
+    "link": "https://www.millconsultancy.co.uk/services/emi-valuations",
+    "snippet": "Our fee for a new valuation is \u00a31,895, and as well as preparing the valuation and obtaining approval from HMRC, this would also include board minutes and notification of the new option grants to HMRC. Any subsequent valuations after this for future grants would be discounted to \u00a31,395.",
+    "domain": "millconsultancy.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "EMI valuations for startups & scale-ups | Standard Ledger",
+    "link": "https://www.standardledger.co/uk/emi-valuations/",
+    "snippet": "EMI Valuation Services for Startups & Scale-Ups Where expert help is invaluable Get an HMRC-approved EMI valuation for your UK startup. We handle the paperwork, the filing, and the expertise - so you can focus on rewarding your team.",
+    "domain": "standardledger.co"
+   },
+   {
+    "position": 5,
+    "title": "Fast & Compliant EMI Valuations with Vestd",
+    "link": "https://www.vestd.com/emi-valuation",
+    "snippet": "Obtain HMRC-approved EMI valuations for your UK startup, scaleup, or SME. Vestd facilitates Enterprise Management Incentive scheme setup and valuations.",
+    "domain": "vestd.com"
+   },
+   {
+    "position": 6,
+    "title": "How to handle EMI Valuations | Rise Accounting",
+    "link": "https://riseaccounting.co.uk/emi-valuation/",
+    "snippet": "Feb 13, 2025 \u00b7 Get clear, expert EMI valuation advice designed to scale with your business. Talk to Rise Accounting and gain confidence in your growth strategy today.",
+    "domain": "riseaccounting.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "The valuation process for EMI option shares - Vestd",
+    "link": "https://www.vestd.com/emi-share-options-scheme/company-valuation",
+    "snippet": "The valuation process for EMI option shares One of the benefits of an EMI options scheme is that your business will receive an agreed-upon valuation of its shares from HMRC ahead of granting options to its employees. Company valuations for EMI schemes are included when you join Vestd.",
+    "domain": "vestd.com"
+   },
+   {
+    "position": 8,
+    "title": "The Accountancy Partnership UK - The UKs #1 Online Accountants",
+    "link": "https://www.bing.com/aclick?ld=e8TEmsv5I77RV9byAebva-JjVUCUzvBXHZULF2s6vyUAomhXOqxMkdHy1v3fvIFEvtxsFYYznDsdLHSz9kL5Howdm_xzE6v7anFWF6K28pzXQRGP5vZR_63-TIL31w_xPGLKUTTD4VcylaOJ0XNJefv_0uLbmDdBAkwNX_KtSsxdSLZFdbmOh8LktFd1ZfCKGbUZqlp54BgcgrS1l53XmZ1-H3CNo&u=aHR0cHMlM2ElMmYlMmZ3d3cudGhlYWNjb3VudGFuY3kuY28udWslMmZsYW5kaW5nJTJmbGltaXRlZC1jb21wYW55LWFjY291bnRhbmN5JTNmbXNjbGtpZCUzZDNjYmJjYTIyZDdiOTFiODlhYmFjYTA3MGE2ZTg1MzAyJTI2Z2Nsc3JjJTNkM3AuZHMlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RDb21wYW55JTI1MjBUeXBlJTI1MjAlMjU3QyUyNTIwQ2xpY2slMjUyMENvbnN1bHQlMjZ1dG1fdGVybSUzZGx0ZCUyNTIwY29tcGFueSUyNTIwYWNjb3VudGFudCUyNnV0bV9jb250ZW50JTNkTGltaXRlZCUyNTIwQ29tcGFueQ&rlid=3cbbca22d7b91b89abaca070a6e85302",
+    "snippet": "Expert Accountants For Limited Companies. Professional & Personal Service. Contact Us. Save Time And Money Spent Communicating With Accountants And Use Our Online Services Service catalog: Ltd Companies, Sole Traders, Free Online Estimates. Types:",
+    "domain": "bing.com"
+   },
+   {
+    "position": 9,
+    "title": "UK Business Accountant - Small UK Business Accountants",
+    "link": "https://www.bing.com/aclick?ld=e8gfPei33pJcX4d9i8JHJfETVUCUxfSP5Q19sYKdEx6z5eS9fSqG-yzB5gl7T_3zoYulEvXLW0yUgLB5M1UaFb-BESYD-Xd4n_JqGQ9mzfZ-XQ1yON5PocjdyNddZQKIgOrLwk4uq2Fp0tz7Yuyc7LIQASjffLEJ6kxRUrEEO4WOjyyyvG7twSuQFuhkfWYB9fH_Kopsfl5zaG6wjIxPLov_k0deY&u=aHR0cHMlM2ElMmYlMmZ3d3cudW5iaWFzZWQuY28udWslMmZwYWdlcyUyZmJ1c2luZXNzLWFjY291bnRhbnQlM2Ztc2Nsa2lkJTNkYzRkNmI1NDJmNmRlMWNmNzYyYzZkZjEwODc4ZjAxM2UlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RBY2NvdW50YW50JTI1MjAtJTI1MjBCdXNpbmVzcyUyNTIwLSUyNTIwTVMlMjZ1dG1fdGVybSUzZGJ1c2luZXNzJTI1MjBhY2NvdW50YW50JTI2dXRtX2NvbnRlbnQlM2RCdXNpbmVzcyUyNTIwQWNjb3VudGFudCUyNTIwLSUyNTIwUGhyYXNl&rlid=c4d6b542f6de1cf762c6df10878f013e",
+    "snippet": "unbiased.co.uk has been visited by 10K+ users in the past month Need Help Finding a Business Accountant? We'll Match You With an Accountant, for Free. Join the Millions Who Have Used Unbiased. Find a Business Accountant Near You Now. Services: Business & Personal, Self Assessment, Capital Gains Tax, Income Tax",
+    "domain": "bing.com"
+   },
+   {
+    "position": 10,
+    "title": "TaxAssist Accountants - Local & Trusted Accountants",
+    "link": "https://www.bing.com/aclick?ld=e8dIT2qKTJIf6zbovZW_HMgjVUCUyv5QyAiR6-95PKA_EB8HEiiCAjjwnHdx1d7bnhnDpkqE1Zxw3-8TVcBHZgd4srK6Z48i6p2J7pEGlCRjdx22NsVToeu85gWd8ukn_wRTLXNKTsEnWmUhZugBJ31uuagvalZrWnYWteIwTUZdn1y-Kq8QlY3tVfCpeXC4h0NZhTSiNRksbTlw6yUUbfsRSmg5M&u=aHR0cHMlM2ElMmYlMmZ3d3cudGF4YXNzaXN0LmNvLnVrJTJmZmluZC15b3VyLWxvY2FsLWFjY291bnRhbnQlM2Zoc2Ffc3JjJTNkbyUyNmhzYV9tdCUzZHAlMjZoc2FfYWQlM2QlMjZoc2FfdmVyJTNkMyUyNmhzYV9rdyUzZGFjY291bnRhbmN5JTI1MjBzZXJ2aWNlcyUyNmhzYV9ncnAlM2QxMjQ5MDQ2NTIyODM1NTc0JTI2aHNhX2NhbSUzZDcxMDQwNDU1MiUyNmhzYV9hY2MlM2Q5OTg2MTUzNzAyJTI2aHNhX3RndCUzZGt3ZC03ODA2NTc2MDA1NDU2MyUzYWxvYy00MDc2JTI2aHNhX25ldCUzZGFkd29yZHMlMjZtc2Nsa2lkJTNkY2JiNTc0NjY4OTkwMTU2YjViMGUxZTM0ZjhjMWYxY2IlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RVSyUyNTIwLSUyNTIwTmF0aW9uYWwlMjZ1dG1fdGVybSUzZGFjY291bnRhbmN5JTI1MjBzZXJ2aWNlcyUyNnV0bV9jb250ZW50JTNkQWNjb3VudGFudCUyNTIwR2VuZXJpYw&rlid=cbb574668990156b5b0e1e34f8c1f1cb",
+    "snippet": "Expert accountants to take care of your business' accounting, tax, VAT and payroll needs. Accounting, tax & VAT services perfectly suited to you. Contact today. Services: Annual Accounts, Tax Returns, Payroll, Bookkeeping Service Catalog:",
+    "domain": "bing.com"
+   }
+  ],
+  "emi share options accountant": [
+   {
+    "position": 1,
+    "title": "Enterprise Management Incentives (EMI) - GOV.UK",
+    "link": "https://www.gov.uk/tax-employee-share-schemes/enterprise-management-incentives-emis",
+    "snippet": "EMI give you share options up to the value of \u00a3250,000 in a 3-year period. You must work at least 25 hours a week or 75% of your total working time for the ...",
+    "domain": "gov.uk"
+   },
+   {
+    "position": 2,
+    "title": "EMI/Share Options - Plus Accounting",
+    "link": "https://www.plusaccounting.co.uk/emi-share-options/",
+    "snippet": "EMI Share Option Scheme Support ... Setting up an EMI scheme requires specialised accounting expertise. Our accountants will help you determine if your company is ...",
+    "domain": "plusaccounting.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "EMI Schemes | Enterprise management incentives - BDO",
+    "link": "https://www.bdo.co.uk/en-gb/insights/tax/global-employer-services/enterprise-management-incentives-emi",
+    "snippet": "16 Mar 2026 ... EMI options are very attractive from a tax perspective. Generally, no income tax or national insurance contributions (NIC) liabilities arise on ...",
+    "domain": "bdo.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "10100 Enterprise Management Incentives (EMI) | Croner Navigate",
+    "link": "https://library.croneri.co.uk/cch_uk/etc/10100",
+    "snippet": "Employees can acquire shares free of tax and NICs through an Enterprise Management Incentives scheme (EMI). The tax advantages conferred are very valuable ...",
+    "domain": "library.croneri.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "EMI Share Option Scheme for UK Agencies: The 2026 Guide",
+    "link": "https://www.alto-accounting.com/insights/emi-share-options-agency-uk",
+    "snippet": "4 Jun 2026 ... Enterprise Management Incentives (EMI) are the most tax-efficient way for UK agencies to offer equity to key employees. Options granted at ...",
+    "domain": "alto-accounting.com"
+   },
+   {
+    "position": 6,
+    "title": "Enterprise Management Incentives (EMI)",
+    "link": "https://bhp.co.uk/service/business-taxes/enterprise-management-incentives-emi/",
+    "snippet": "An EMI is a HMRC-approved, tax-efficient share scheme designed to help smaller companies recruit and retain key employees.",
+    "domain": "bhp.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "EMI Share Options | Corporation Tax | #GoFile Knowledgebase",
+    "link": "https://gofile.co.uk/knowledgebase/corporation-tax/emi-share-options/",
+    "snippet": "2 Mar 2026 ... Enterprise Management Incentives (EMI) are the most generous tax-advantaged share option scheme available in the UK. They are designed to ...",
+    "domain": "gofile.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "What is an EMI share scheme? - Scholes Chartered Accountants",
+    "link": "https://www.scholesca.co.uk/blog/what-is-an-emi-share-scheme",
+    "snippet": "30 Jan 2024 ... An EMI share scheme is a tax-efficient programme where employees are granted the right to purchase company shares at an agreed price.",
+    "domain": "scholesca.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "The Top 5 reasons why EMI share option schemes go wrong",
+    "link": "https://www.bishopfleming.co.uk/insights/top-5-reasons-why-emi-share-option-schemes-go-wrong",
+    "snippet": "15 Dec 2022 ... An Enterprise Management Incentive (\u201cEMI\u201d) scheme is a tax-advantaged HMRC-approved share option scheme. It works by granting an option to ...",
+    "domain": "bishopfleming.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "EMI share incentives - Macalvins",
+    "link": "https://www.macalvins.com/services-2/emi-share-incentives/",
+    "snippet": "Registering, setting up and administrating the scheme \u00b7 Maintaining compliance and reporting changes to HMRC \u00b7 Advising employers and employees on the benefits of ...",
+    "domain": "macalvins.com"
+   }
+  ],
+  "growth shares accountant": [
+   {
+    "position": 1,
+    "title": "Growth Shares - Folkes Worton",
+    "link": "https://www.fwca.co.uk/growth-shares/",
+    "snippet": "May 23, 2023 - Our experts will provide valuable insights and strategies to optimise the allocation and vesting of growth shares. Implementation and Compliance: Our accountants will guide you through the entire process of implementing growth share schemes, ensuring that all legal and regulatory requirements are met.",
+    "domain": "fwca.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "Growth Shares - Design & structure your scheme | Price Bailey",
+    "link": "https://www.pricebailey.co.uk/services/valuations/growth-shares/",
+    "snippet": "We combined Strategy, Corporate Finance and Tax experts to ensure that the scheme\u2019s structure does not interfere with existing qualifying tax reliefs, preference shares or other relevant mechanisms, whilst still creating the right commercial outcomes for all. We can work with you to ensure that any growth share issues interact with other tax beneficial mechanisms, without invalidating your EIS or VCT status.",
+    "domain": "pricebailey.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "How Do Growth Shares Work \u2014 and Could They Benefit My Company? - Jon Davies Accountants",
+    "link": "https://www.jondaviesaccountants.co.uk/how-do-growth-shares-work-and-could-they-benefit-my-company/",
+    "snippet": "November 15, 2025 - They must have held at least 5% of the share capital and voting rights for two years before the sale. They must be entitled to at least 5% of profits or sale proceeds. ... HMRC takes a cautious stance when valuing growth shares.",
+    "domain": "jondaviesaccountants.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "Growth Shares | RPGCC | London",
+    "link": "https://www.rpgcrouchchapman.co.uk/services/share-schemes/growth-shares/",
+    "snippet": "November 24, 2023 - What are Growth Shares? RPGCC Tax advisers in London take a look - Growth shares are a flexible way of providing employees with shares",
+    "domain": "rpgcrouchchapman.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "Growth shares: What are they and how do they work? | Croner Navigate",
+    "link": "https://library.croneri.co.uk/cch_uk/taxweekly/wkid-202405090846380657-04080280",
+    "snippet": "Navigate UK GAAP Accounting \u00b7 ... Audit & Accounting Archives \u00b7 Business \u00b7 Contributed by Helen Wood \u00b7 Growth shares are commonly used as a way of structuring an equity incentive, typically when HMRC tax-advantaged employee share schemes such as Enterprise Management Incentives ...",
+    "domain": "library.croneri.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "11.3 Growth shares | Croner-i Tax and Accounting",
+    "link": "https://library.croneri.co.uk/cch_uk/dess/11-3",
+    "snippet": "The term \u2018growth shares\u2019 refers to a special class of shares that has no right to participate in the current equity value of a company (i.e. the proportion of the company\u02bcs value that would be returned to shareholders after debt has been repaid), but only have an interest in the company\u02bcs ...",
+    "domain": "library.croneri.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "Growth Accountants | Accountants for Growing UK Businesses",
+    "link": "https://www.growth.accountants/",
+    "snippet": "Growth Accountants - Accountants who think like business owners. Compliance, tax planning & advisory for ambitious UK businesses.",
+    "domain": "growth.accountants"
+   },
+   {
+    "position": 8,
+    "title": "472-125 Growth shares | Croner Navigate",
+    "link": "https://library.croneri.co.uk/cch_uk/btr/472-125",
+    "snippet": "\u2018Growth shares\u2019 can be a useful mechanism for unquoted companies to deliver shares to key employees in a tax-efficient manner, while also minimising dilution of existing shareholders. They are a separate class of shares which have a low market value at the time of issue, because they do ...",
+    "domain": "library.croneri.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "Growth Accountants",
+    "link": "https://growthaccountants.uk/",
+    "snippet": "The Growth Accountant package provides you with your own dedicated growth accountant to work alongside your business.",
+    "domain": "growthaccountants.uk"
+   },
+   {
+    "position": 10,
+    "title": "What are Growth Shares? - Hawsons Chartered Accountants",
+    "link": "https://www.hawsons.co.uk/what-are-growth-shares/",
+    "snippet": "November 29, 2024 - Help to preserve the existing value of the company for current shareholders and prevent this value from being diluted. The growth in the share value is subject to Capital Gains Tax, which is typically more attractive than the income tax treatment ...",
+    "domain": "hawsons.co.uk"
+   }
+  ],
+  "employee share scheme accountant uk": [
+   {
+    "position": 1,
+    "title": "Employee share schemes - UHY Ross Brooke Chartered Accountants",
+    "link": "https://www.ross-brooke.co.uk/what-we-do/employee-share-schemes/",
+    "snippet": "November 21, 2023 - The taxable amount is calculated as the difference between the market value of the company\u2019s shares and the price (if any) paid for them and this will be subject to both PAYE and NIC if the shares are tradable. This can mean that the employee has received shares on which he has to pay tax, but if he doesn\u2019t have the cash to settle the tax liability he might have to sell some of his shares to do so.",
+    "domain": "ross-brooke.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "Employee share schemes | Hazlewoods: Business Advisers and Accountants",
+    "link": "https://www.hazlewoods.co.uk/expertise/business-accountants/tax/employee-share-schemes/",
+    "snippet": "November 4, 2025 - There are many different types of employee share schemes including share options, share awards, HMRC approved and unapproved. Within these categories many different scheme approaches are possible. It is a complex area and the appropriate scheme will depend on the objectives of the business as well as the needs of your employees.",
+    "domain": "hazlewoods.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "Employee Share Schemes Services in UK",
+    "link": "https://apexaccountants.tax/comprehensive-overview-employee-share-schemes/",
+    "snippet": "September 17, 2024 - Employee share schemes align staff interests with company performance, reduce tax liabilities for both employer and employee, and create the kind of loyalty that genuinely reduces recruitment and retention costs. At Apex Accountants, we have ...",
+    "domain": "apexaccountants.tax"
+   },
+   {
+    "position": 4,
+    "title": "Employee Share Schemes | Hurst Accountants",
+    "link": "https://www.hurst.co.uk/services/tax-advisory/employee-share-schemes",
+    "snippet": "HURST \u2013 Expert Employee Share Schemes Advisory Implement effective employee share schemes with HURST's tailored solutions. Enhance retention, boost performance, and align employee interests with your business goals.",
+    "domain": "hurst.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "Tax Benefits of Employee Share Schemes: Incentivising Staff and Reducing Tax Liabilities - CIGMA Accounting",
+    "link": "https://cigmaaccounting.co.uk/tax-benefits-of-employee-share-schemes/",
+    "snippet": "August 29, 2024 - Tax Benefits of Employee Share Schemes: Incentivising Staff and Reducing Tax Liabilities Employee share schemes offer a unique opportunity for businesses to motivate their staff while also enjoying significant tax benefits.",
+    "domain": "cigmaaccounting.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "What Is Employee Share Scheme? | CSOP | EMI | SAYE | SIPs",
+    "link": "https://www.protaxaccountant.co.uk/post/employee-share-scheme",
+    "snippet": "January 15, 2024 - Employee Share Schemes (ESS) in ... Management Incentives (EMIs). Each has unique tax implications, making the role of a tax accountant essential for proper management....",
+    "domain": "protaxaccountant.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "Employee Share Schemes: UK Tax Implications - Manchester Accountants - Expert Chartered Accountancy Services",
+    "link": "https://www.jackross.com/employee-share-schemes/",
+    "snippet": "April 12, 2024 - If you need an experienced Chartered Accountant, please use the contact form on the right to organise a free 15-minute consultation with one of our Senior Partners. Employee Related Securities (ERS) pertain to shares or options offered to employees ...",
+    "domain": "jackross.com"
+   },
+   {
+    "position": 8,
+    "title": "Employee Share Schemes | Tax Specialists London & South East",
+    "link": "https://www.haslers.com/services/tax-advice-essex/employee-share-schemes",
+    "snippet": "October 6, 2025 - Employee Share Scheme Experts | Tax Support For Businesses - Speak to Our Team Today | Haslers Chartered Accountants",
+    "domain": "haslers.com"
+   },
+   {
+    "position": 9,
+    "title": "Employee Share Scheme | Armstrong Watson",
+    "link": "https://www.armstrongwatson.co.uk/services/tax-consultancy/tax-consultancy-and-strategic-tax-advice/corporate-tax/employee-share",
+    "snippet": "Outsourced Financial ServicesPayroll Services Outsourced Accountancy Services Outsourced Virtual Finance Department ... Energy & Renewables Family Business Food & Drink Hospitality, Leisure & Tourism Hotels & Guesthouses Independent Retail Legal Sector \u00b7 Manufacturing Property & Construction Science and Technology Transport and Haulage Automotive ... Providing employees with shares or share options can often be a way to motivate, retain and reward key employees of your business.",
+    "domain": "armstrongwatson.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "Employee share schemes UK | Ellacotts | Banbury, Birmingham, Kettering, London, Stratford-upon-Avon",
+    "link": "https://www.ellacotts.co.uk/services/business-services/share-schemes-employee-benefits/",
+    "snippet": "June 23, 2025 - The share price was agreed with HMRC and the scheme was kept within the EMI conditions so that no tax charges arose for the company or the CEO. Even better, when the company is sold the CEO will only pay tax on the capital gain at 10%. Contact us about your employee benefits and share schemes.",
+    "domain": "ellacotts.co.uk"
+   }
+  ],
+  "accountant for pre revenue startup": [
+   {
+    "position": 1,
+    "title": "Accountants for Startups Businesses | Fusion Accountants London",
+    "link": "https://www.fusionaccountants.co.uk/start-ups-accounting/",
+    "snippet": "Specialist accountants for Startups helping new businesses with all their accounting, tax and advisory requirements. Free Company Formation & consultation. Published March 26, 2020",
+    "domain": "fusionaccountants.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "Accounting for Startups from \u00a310pm | Expert Startup Accountants",
+    "link": "https://a-wise.co.uk/who-we-help/accounting-for-startups/",
+    "snippet": "June 11, 2025 - Pick the start up accounting services that you would like from either our pre-built packages or build your own to find out exactly how much you will be paying each month. ... Once you have picked your level of service you\u2019ll simply need to send over a few extra details to register with us via our sign up form or over the phone ... That is it, we will begin to set your startup company accounting services up for you, contact your previous accountant if required, and begin the authorisation process with the HMRC",
+    "domain": "a-wise.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "Accountants for Tech Startups: UK Entrepreneurs' Preferred Choice",
+    "link": "https://sleek.com/uk/startup-accountant/",
+    "snippet": "March 24, 2026 - Specialist accountants for startups in the UK. Get clear, scalable support to manage cash flow, stay compliant and grow your business with confidence.",
+    "domain": "sleek.com"
+   },
+   {
+    "position": 4,
+    "title": "The top startup accountants according to founders - Zelt",
+    "link": "https://zelt.app/blog/the-top-startup-accountants-in-the-uk-according-to-founders/",
+    "snippet": "16 Nov 2022 ... ... UK's top accountants for startups & SMBs. If you are in the market for an accountant \u2013 look no further. ... income, revenue, assets ...",
+    "domain": "zelt.app"
+   },
+   {
+    "position": 5,
+    "title": "Accountants for Startups UK: Support for New Ventures - naailandco",
+    "link": "https://naailandco.com/who-we-help/accountants-for-startups/",
+    "snippet": "April 28, 2026 - The right time is before your first meaningful financial \u201ctrigger\u201d (first sale, VAT threshold risk, first hire, or fundraising), because early systems reduce costly rework\u2014and only 38.4% of UK businesses born in 2019 were still active five years later. Start startup accounting with a clean bookkeeping stack, a basic monthly close, and a documented \u201csource of truth\u201d for revenue and expenses.",
+    "domain": "naailandco.com"
+   },
+   {
+    "position": 6,
+    "title": "Accounting Services for Start-ups",
+    "link": "https://heightenaccountants.co.uk/accounting-for-startups/",
+    "snippet": "For these reasons, at Heighten Accountants, we have developed our Startup business support programme called 'WiseStart'. WiseStart is designed to help your ...",
+    "domain": "heightenaccountants.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "Top 10 Accountants for Startups in London",
+    "link": "https://pearllemonaccountants.com/top-accountants-startups-london/",
+    "snippet": "1 Jan 2025 ... At Pearl Lemon Accountants, we work with startups daily, handling everything from complex tax structures to payroll for growing teams. You need ...",
+    "domain": "pearllemonaccountants.com"
+   },
+   {
+    "position": 8,
+    "title": "When should a startup hire an accountant? - Future Cloud Accounting",
+    "link": "https://future-cloud.co.uk/blog/when-should-a-startup-hire-an-accountant/",
+    "snippet": "If your revenue hits the VAT threshold (currently \u00a390,000), you must register. ... At Future Cloud, we work with startups across the UK. Whether you're still ...",
+    "domain": "future-cloud.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "Accountants for Entrepreneurs UK - RSBC Accountants for Contractors",
+    "link": "https://www.rsbc.uk/who-we-work-with/business-and-small-business/accountants-for-entrepeneurs",
+    "snippet": "RSBC Accountants help UK entrepreneurs with expert startup accounting, tax advice, and business support. Trusted business accountants for growth-focused ...",
+    "domain": "rsbc.uk"
+   },
+   {
+    "position": 10,
+    "title": "Accounting For UK Startups | Tax Consulting & Services | Square Mile",
+    "link": "https://wearesquaremile.com/who-we-help/startups/",
+    "snippet": "May 23, 2023 - Take a look at some examples of what startups would pay at Square Mile. As we offer no fixed accounting packages, we create bespoke packages based on the requirements of the startup, and are able to add and take away features as needed. Transparency will allow you to be comfortable with the ...",
+    "domain": "earesquaremile.com"
+   }
+  ],
+  "accountant for vc backed startup": [
+   {
+    "position": 1,
+    "title": "Venture Capital Accountants UK for Funds",
+    "link": "https://pearllemonaccountants.com/venture-capital-accountant-services-uk/",
+    "snippet": "Generic accounting breaks when investor money, LP expectations, management fees, carried interest, tax exposure, and fast fundraising timelines enter the picture. Our UK venture capital accounting services give fund managers, SPV operators, and VC-backed companies the financial structure needed to report clearly, raise with confidence, and answer investor questions without panic.",
+    "domain": "pearllemonaccountants.com"
+   },
+   {
+    "position": 2,
+    "title": "Best Startup Accountant | Accountancy Cloud",
+    "link": "https://accountancycloud.com/best-startup-accountant",
+    "snippet": "Looking for the best startup accountant in the UK? We're the first accountants and Fractional CFO's to specialise in tech & VC backed startups.",
+    "domain": "accountancycloud.com"
+   },
+   {
+    "position": 3,
+    "title": "Startup Accountants UK | Fixed Monthly Pricing | Startup ...",
+    "link": "https://www.startupaccountancy.com/",
+    "snippet": "UK startup accountants built by founders, for founders. Fixed plans from \u00a3345, including bookkeeping, payroll, and VAT. No jargon, no surprises. Book a call.",
+    "domain": "startupaccountancy.com"
+   },
+   {
+    "position": 4,
+    "title": "Startup Accountants UK | Free Matching Service for UK Startup ...",
+    "link": "https://www.startupaccountants.uk/",
+    "snippet": "Free matching service \u00b7 No obligation Startup Accountants UK - Expert Accounting for New Businesses Connect with specialist startup accountants who understand HMRC reliefs, SEIS/EIS schemes, and R&D tax credits. We match UK founders with experienced accountants for startups: qualified professionals who work with early-stage businesses every day.",
+    "domain": "startupaccountants.uk"
+   },
+   {
+    "position": 5,
+    "title": "Top 4 Best Accountant for Startups London Agencies 2026",
+    "link": "https://www.priceandaccountants.com/blog/best-accountant-for-startups-london-4-agencies-en",
+    "snippet": "Jun 3, 2026 \u00b7 For tech startups prioritising funding readiness, Price & Accountants combines structured plans and advisory with modern tools, suitable for London-based companies at varying funding stages. If seeking embedded and highly responsive finance functions, Onside Accounting provides relationship-focused services tailored to VC-backed growth.",
+    "domain": "priceandaccountants.com"
+   },
+   {
+    "position": 6,
+    "title": "Accountants for Startups | Startup Accountants UK | Taxwise ...",
+    "link": "https://www.tax-wise.co.uk/accountants-for-startups",
+    "snippet": "Accountants for startups helping UK businesses with company formation, payroll, bookkeeping, cloud accounting, annual accounts and tax planning. Get expert startup accounting services from Taxwise Accountancy.",
+    "domain": "tax-wise.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "Startup Accountants UK \u2014 Investor-Ready Finance | Singletree ...",
+    "link": "https://singletreeaccountants.com/industries/startup-accountants",
+    "snippet": "UK startup accountants. Investor-ready accounts, R&D tax credits, EIS/SEIS, runway modelling and fractional CFO support for venture-backed founders.",
+    "domain": "singletreeaccountants.com"
+   },
+   {
+    "position": 8,
+    "title": "Tech Startup Accountant UK for Funding and Tax",
+    "link": "https://pearllemonaccountants.co.uk/services/accounting/tech-startup/",
+    "snippet": "Recurring revenue models, venture capital expectations, and product development spending create accounting complexity that generic firms often misunderstand.Our tech startup accountant UK services focus on high-growth companies building technology products across the United Kingdom.",
+    "domain": "pearllemonaccountants.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "Startup Accountants UK for Founders, SaaS & Growing Businesses",
+    "link": "https://auditconsultinggroup.co.uk/services/industries/startups/",
+    "snippet": "Specialist startup accountants in the UK helping founders with bookkeeping, VAT, R&D claims, payroll, SEIS/EIS, forecasting and investor-ready reporting for growing businesses.",
+    "domain": "auditconsultinggroup.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "Accountant for Startups | GoForma",
+    "link": "https://www.goforma.com/accountant-for-startups",
+    "snippet": "Startup Accountants UK GoForma provides full-service accounting for UK startups, tech businesses, and early-stage limited companies. Our ACCA and AAT qualified startup accountants help you stay compliant, tax-efficient, and ready for growth or investment from day one.",
+    "domain": "goforma.com"
+   }
+  ],
+  "startup cfo services uk": [
+   {
+    "position": 1,
+    "title": "Startup CFO | Accounting and fractional CFO services for startups",
+    "link": "https://www.startup-cfo.co.uk/",
+    "snippet": "Startup CFO offers tailored accounting and fractional CFO services for early-stage startups, alongside strategic advisory services like financial modelling, R&D tax credits, SEIS compliance, and more.",
+    "domain": "startup-cfo.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "Fractional CFO for Startups UK: 2026 Guide",
+    "link": "https://leadership-services.co.uk/insights/fractional-cfo-for-startups-uk-guide/",
+    "snippet": "Fractional CFO for UK startups: when to hire, what they cost, and how senior finance leadership accelerates fundraising and scale.",
+    "domain": "leadership-services.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "Fractional CFO services for UK startups - Standard Ledger",
+    "link": "https://www.standardledger.co/uk/services/fractional-cfo/",
+    "snippet": "Expert financial leadership for UK startups without the full-time hire. From cash flow and investor reporting to hands-on CFO support - pre-seed to Series B.",
+    "domain": "standardledger.co"
+   },
+   {
+    "position": 4,
+    "title": "About Us | Accounting & CFO Services for Early-Stage Startups",
+    "link": "https://www.startup-cfo.co.uk/about",
+    "snippet": "Startup CFO works exclusively with early-stage startups, providing practical finance support that evolves with the business. From accounting foundations to broader strategic finance support, we help founders stay in control of the numbers and make decisions with confidence.",
+    "domain": "startup-cfo.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "Fractional CFO for Startups & Scaleups | ThriveGrowth UK",
+    "link": "https://www.thrivegrowth.co.uk/",
+    "snippet": "Services Advisory How It Works Case Studies FAQ enquiries@thrivegrowth.co.uk Book a Free Call Fractional CFO support for founders Extend runway. Raise with confidence. Scale with control. ThriveGrowth helps startup and scaleup founders move from finance noise to confident decisions with practical CFO support and investor-ready modelling.",
+    "domain": "thrivegrowth.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "Startup Accounting & CFO Services | Standard Ledger UK",
+    "link": "https://www.standardledger.co/uk/",
+    "snippet": "Startup and scale-up accounting built for UK founders. From bookkeeping and VAT returns through to fractional CFO - tech-driven, set-price, no lock-ins.",
+    "domain": "standardledger.co"
+   },
+   {
+    "position": 7,
+    "title": "Home (original) - WrightCFO",
+    "link": "https://wrightcfo.co.uk/",
+    "snippet": "Fractional CFO Services Strategic Financial Leadership. Delivered as a Service. A practice of Chartered Accountants delivering scoped CFO engagements to UK scale-ups. When you engage the practice, the collective experience of the whole team comes with the work. Awards & Recognition 2026Top 5 Fractional CFO Services in the UKDigital Reference 2025Top 5 Fractional CFO Services...",
+    "domain": "rightcfo.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "Fractional CFO Services UK | Senior Finance, Part Time",
+    "link": "https://aiaccounts.co.uk/fractional-cfo/",
+    "snippet": "Fractional CFO \u2022 UK startups, scaleups & bootstrapped founders Fractional CFO services for founders who carry real financial risk. Senior finance leadership without a full-time hire. Whether you are raising or running on your own cash, a fractional CFO helps you plan runway, model the big decisions and report with numbers you can stand behind.",
+    "domain": "aiaccounts.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "Home | Growth CFO",
+    "link": "https://www.growthcfo.co.uk/",
+    "snippet": "We get your startup started and help scale your scaleup | Cost-effective & flexible service Services provided by Growth CFO STATUTORY Boring but necessary. We will help to design and implement fit-for-purpose systems and the finance team to get the distractions off your desk, leaving you to focus on what builds your business.",
+    "domain": "growthcfo.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "Home - EmergeOneEmergeOne",
+    "link": "https://emergeone.co.uk/",
+    "snippet": "Our team of CFOs specialise in VC-backed startups. We help you prepare for fundraising, allocate capital strategically, manage investor relations, and build",
+    "domain": "emergeone.co.uk"
+   }
+  ],
+  "fractional cfo for startups uk": [
+   {
+    "position": 1,
+    "title": "Fractional CFO for Startups UK: 2026 Guide",
+    "link": "https://leadership-services.co.uk/insights/fractional-cfo-for-startups-uk-guide/",
+    "snippet": "Fractional CFO for UK startups: when to hire, what they cost, and how senior finance leadership accelerates fundraising and scale.",
+    "domain": "leadership-services.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "Fractional CFO UK | FD Capital",
+    "link": "https://www.fdcapital.co.uk/fractional-cfo/",
+    "snippet": "FD Capital is a specialist provider of fractional CFO services to UK SMEs, scale-ups, and investor-backed businesses. Our CFOs are proven operators \u2014 many with backgrounds in PE-backed businesses, listed companies, and high-growth ventures \u2014 available quickly and tailored to your specific needs.",
+    "domain": "fdcapital.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "Fractional CFO for UK Startups | Pre-seed to Series B | GoCFO",
+    "link": "https://gocfo.co.uk/for-startups",
+    "snippet": "Fractional and outsourced CFO services for UK startups from pre-seed to Series B. Fundraise prep, runway management, board reporting, R&D tax credits.",
+    "domain": "gocfo.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "Fractional CFO for UK Startups - FD Capital",
+    "link": "https://www.fdcapital.co.uk/fractional-cfo-startups/",
+    "snippet": "FD Capital \u2014 Fractional CFO Placement for UK Startups Fellow of the ICAEW | Placing fractional CFOs into UK startups from pre-seed through Series A since 2018 \u2014 SaaS, consumer, marketplace, fintech, hardware and deep tech Our team places fractional CFOs with direct UK startup experience \u2014 founders raising first institutional rounds, seed-stage businesses building investor-grade reporting ...",
+    "domain": "fdcapital.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "Fractional CFO for Startups \u2014 Finance Leadership Without the Full-Time ...",
+    "link": "https://www.acctek.co.uk/fractional-cfo-startups/",
+    "snippet": "The Gap in Your Startup's Finance Function A fractional CFO is a senior finance leader who works with your startup part-time \u2014 typically one to three days per month \u2014 delivering strategic financial leadership at a fraction of the cost of a full-time hire. For UK startups, this means runway forecasting, board packs, SEIS/EIS structuring, and investor-ready reporting.",
+    "domain": "acctek.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "Fractional CFO Services for UK Startups | Standard Ledger",
+    "link": "https://www.standardledger.co/uk/services/fractional-cfo/",
+    "snippet": "Fractional CFO Services for UK Startups & Scale-Ups Hands-On Financial Leadership Make smarter financial decisions with a CFO who understands startups. From managing cash flow to preparing for investment, we provide the strategic support you need to scale.",
+    "domain": "standardledger.co"
+   },
+   {
+    "position": 7,
+    "title": "Fractional CFO for Startups & Scaleups | ThriveGrowth UK",
+    "link": "https://www.thrivegrowth.co.uk/",
+    "snippet": "ThriveGrowth supports startup and scaleup teams with practical finance leadership across fundraising, reporting, runway control, and team capability. If you need done-with-you execution, we embed as a fractional CFO partner. If you need guidance on live leadership decisions, we provide coaching, mentoring, and advisory support.",
+    "domain": "thrivegrowth.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "Fractional CFO Services - fin-house.co.uk",
+    "link": "https://fin-house.co.uk/fractional-cfo/",
+    "snippet": "A fractional CFO can also be useful at any stage of a business\u2019s journey. For instance, your startup may be ready to hire a fractional CFO if you lack the skills within your business and aren\u2019t ready for full-time support.",
+    "domain": "fin-house.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "Fractional CFO Services UK | Senior Finance, Part Time",
+    "link": "https://aiaccounts.co.uk/fractional-cfo/",
+    "snippet": "A fractional CFO does the same strategic work, forecasting, board reporting, fundraising and scenario planning, on a part-time basis for a fixed monthly fee. For most startups and scaleups the fractional model fits the workload and the budget better until a full-time role is justified.",
+    "domain": "aiaccounts.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "",
+    "link": "/clev?event=StartpageResultClick&sc=AR5cSbellM1iq6EOpvSy7tmlwTqIfoz10g8Gzx9T0wc1hb2x3mcoaYUnCV7fIPM9M9OPLzem9fsHZoiNGE0hlzUXLbQ1mR&payload={\"bdsSessionId\":\"4a7610e5b1234309bbc201d72903cecd\",\"cheqId\":\"\",\"countryCode\":\"GB\",\"deviceType\":\"mobile\",\"endpoint\":\"search.serp\",\"hasGoogleAds\":false,\"page_id\":\"kAS3XtaxTqLV4flo\",\"queryCategory\":\"web\",\"segment\":\"startpage.udog\",\"session_id\":\"Xfa1dd30CyNR0zmj\",\"surface\":\"serp-web\",\"transport\":\"href-request\"}",
+    "snippet": "",
+    "domain": ""
+   }
+  ],
+  "accountant for funded startup": [
+   {
+    "position": 1,
+    "title": "Accountants For Startups In The UK | Free Specialist Advice",
+    "link": "https://www.zatrsaccounting.com/services/accountants-for-startups-uk/",
+    "snippet": "At ZATRS Accounting, we specialise in providing tailored accounting services for startups in the UK, helping you navigate the complexities of ...",
+    "domain": "zatrsaccounting.com"
+   },
+   {
+    "position": 2,
+    "title": "Accountants for Startups in the UK: Getting It Right from Day",
+    "link": "https://ventsmagazine.co.uk/accountants-for-startups-in-the-uk/",
+    "snippet": "Accountants for Startups in the UK: Getting ... For UK founders, solid accounting can be the difference between staying in business and closing shop.",
+    "domain": "ventsmagazine.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "Accountants for Startups in Manchester, UK",
+    "link": "https://adenaaccountancy.co.uk/startups/",
+    "snippet": "From choosing the right structure to managing tax and cash flow, working with an experienced accountant for start-ups in the UK ensures your business ...",
+    "domain": "adenaaccountancy.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "Accountants for Startups \u2013 Industry Page \u2013 Octa",
+    "link": "https://octaaccountants.co.uk/accountants-for-startups/",
+    "snippet": "With accounting for startups UK, the financial foundations are fortified for sustained growth. ... Accounting Service Plan for UK-based growing ...",
+    "domain": "octaaccountants.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "Award Winning Startup Accountants In The UK",
+    "link": "https://chacc.co.uk/startup-accountants/",
+    "snippet": "... Accountants in Harrow specialise in ... Strategic US accounting and tax advisory services designed specifically for UK companies expanding overseas.",
+    "domain": "chacc.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "Accountants for Startups & Entrepreneur in UK | Startup",
+    "link": "https://www.123financials.com/startups-accounting",
+    "snippet": "Find out about compliance for a startup in the UK, and gain real-time insights and consultations on all accounting and tax matters whenever you need.",
+    "domain": "123financials.com"
+   },
+   {
+    "position": 7,
+    "title": "Startup Accountants | Expert Accounting Services in UK",
+    "link": "https://coxhinkins.co.uk/startup-accountants/",
+    "snippet": "Hence, it is essential for you first to set your requirements and accordingly partner with a startup accountant. ... startup accountants are also ...",
+    "domain": "coxhinkins.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "Accounting Services for Startups in the UK | Account Ease",
+    "link": "https://account-ease.co.uk/start-ups/",
+    "snippet": "We offer the best accounting services for startups in the UK and handle tax filings, VAT returns, and corporate tax obligations so your business fits ...",
+    "domain": "account-ease.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "Top 10 UK Accounting Firms for Startups | Pearl Lemon",
+    "link": "https://pearllemonaccountants.co.uk/top-accounting-firms-for-startups-uk/",
+    "snippet": "Top 10 Best Accounting Companies for Startups in the UK: Your Financial Growth Partners ... Accountancy has built a solid reputation as a go-to ...",
+    "domain": "pearllemonaccountants.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "Accountants for Startups | London",
+    "link": "https://www.blue-shore.co.uk/who-we-help/accountants-for-startups/",
+    "snippet": "... account management is crucial ... Partnering with specialised accountants for startups can be the difference between merely surviving and thriving.",
+    "domain": "blue-shore.co.uk"
+   }
+  ],
+  "startup accounting fees uk": [
+   {
+    "position": 1,
+    "title": "Accountant Fees for Small Business Start Up - Eternity Accountants",
+    "link": "https://eternityaccountants.co.uk/accountant-fees-for-small-business-start-up/",
+    "snippet": "Discover real accountant fees for small business start ups in the UK, what services you need, and how to cut costs. Get expert guidance and a transparent quote.",
+    "domain": "eternityaccountants.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "How Much Does a Startup Accountant Cost? | UK Pricing | Startup Accountancy",
+    "link": "https://www.startupaccountancy.com/pricing/",
+    "snippet": "How much does an accountant cost for my startup? In the UK, startup accountants typically charge \u00a3300-\u00a31,500 per month for a full-service package covering bookkeeping, VAT, payroll, accounts, and corporation tax.",
+    "domain": "startupaccountancy.com"
+   },
+   {
+    "position": 3,
+    "title": "Startup Accountants UK | Fixed Monthly Pricing | Startup Accountancy",
+    "link": "https://www.startupaccountancy.com/",
+    "snippet": "UK startup accountants built by founders, for founders. Fixed plans from \u00a3345, including bookkeeping, payroll, and VAT. No jargon, no surprises. Book a call.",
+    "domain": "startupaccountancy.com"
+   },
+   {
+    "position": 4,
+    "title": "Accountant Fees UK 2026 | Typical Costs, What You Get",
+    "link": "https://ukcostguide.co.uk/accountant-fees-uk/",
+    "snippet": "Whether you're a sole trader, freelancer, contractor, or limited company director in the UK, hiring an accountant in 2026 is one of the most valuable business decisions you can make \u2014 but it comes with real costs. This guide explains the typical UK accountant fee ranges, what services are included, how fees are calculated, and how to choose the right accountant for your business ...",
+    "domain": "ukcostguide.co.uk"
+   },
+   {
+    "position": 5,
+    "title": "Accountants Fees (2026): UK Pricing Guide + How to Avoid Overpaying",
+    "link": "https://eternityaccountants.co.uk/accountants-fees/",
+    "snippet": "Discover accountants fees in the UK, what you should pay, and how to save money. Clear pricing, expert tips & no hidden costs. Get expert help today.Transparent accountants fees UK with Eternity Accountants.",
+    "domain": "eternityaccountants.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "Average Accountant Fees for Startups vs Established Businesses UK",
+    "link": "https://www.accountingfirms.co.uk/blog/accountant-fees-for-startups-vs-established-businesses/",
+    "snippet": "Compare accountant fees for startups and established businesses. Learn what affects pricing and how to choose the right service.",
+    "domain": "accountingfirms.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "Accountants for Startups - Affordable support from \u00a323.70 a month",
+    "link": "https://www.theaccountancy.co.uk/who-we-help/startup-business-accountants",
+    "snippet": "All the accounting services you need for starting a business, at an affordable price. Launch your start up with confidence. Get an instant online quote.",
+    "domain": "theaccountancy.co.uk"
+   },
+   {
+    "position": 8,
+    "title": "Accountant Fees for Small Businesses UK | 2026 Guide",
+    "link": "https://www.business-accounting.co.uk/blog/how-much-does-an-accountant-cost",
+    "snippet": "UK accountant fees for small businesses range widely. See typical costs for tax returns, payroll and bookkeeping \u2014 then speak to a UK accountant.",
+    "domain": "business-accounting.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "How Much Does an Accountant Cost in the UK (2025)?",
+    "link": "https://heightsaccountancy.co.uk/2025/10/13/how-much-does-an-accountant-cost-uk-2025/",
+    "snippet": "Discover average accountant fees in the UK for limited companies, sole traders, partnerships, and property investors. Understand what drives costs \u2014 and how to save without cutting corners.",
+    "domain": "heightsaccountancy.co.uk"
+   },
+   {
+    "position": 10,
+    "title": "PDF 2025/2026 FULL PRICE LIST - 1stcloudaccountants.co.uk",
+    "link": "https://www.1stcloudaccountants.co.uk/wp-content/uploads/2024/04/CurrentPriceList.pdf",
+    "snippet": "2025/2026 FULL PRICE LIST We try to be as transparent as possible about our pricing and full details of how we charge our fees can be found in your letter of engagement. We have produced this price list so everyone knows the costs of each service. It is split into fixed, expected, and minimum. Fixed means that it's a fixed price service, expected means it's what you will expect to pay if ...",
+    "domain": "1stcloudaccountants.co.uk"
+   }
+  ],
+  "revenue recognition saas accountant": [
+   {
+    "position": 1,
+    "title": "A guide to SaaS revenue recognition with examples",
+    "link": "https://capitalaccountancy.co.uk/a-guide-to-saas-revenue-recognition-with-examples/",
+    "snippet": "In this guide, you'll learn what revenue recognition means for SaaS companies, and how to apply UK accounting standards and IFRS 15. You'll also explore common challenges, best practices, examples, and the tools that can help you automate the process.",
+    "domain": "capitalaccountancy.co.uk"
+   },
+   {
+    "position": 2,
+    "title": "Revenue Recognition for SaaS Subscriptions UK | Expert Guide",
+    "link": "https://www.business-accounting.co.uk/blog/revenue-recognition-saas-subscriptions-uk",
+    "snippet": "Revenue recognition for SaaS subscriptions UK refers to the accounting rules that determine when you can record subscription income as earned. Unlike a one-off product sale, SaaS involves ongoing service delivery.",
+    "domain": "business-accounting.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "Revenue Recognition for UK SaaS Companies: FRS 102 & IFRS 15 Explained",
+    "link": "https://www.scalewithcfo.com/post/revenue-recognition-saas-companies-guide",
+    "snippet": "UK SaaS revenue recognition under FRS 102 and IFRS 15: deferred revenue, multi-year contracts, implementation fees, and how to get it right for HMRC.",
+    "domain": "scalewithcfo.com"
+   },
+   {
+    "position": 4,
+    "title": "SaaS Revenue Recognition: A Guide with Examples - jujur.uk",
+    "link": "https://jujur.uk/saas-revenue-recognition-a-guide-with-examples/",
+    "snippet": "UK revenue recognition standards for SaaS UK accounting standards, including FRS 102 and IFRS 15, set the framework for how businesses must handle their accounting. When you earn revenue over time, like in the SaaS model, these standards require that you recognise it gradually\u2014only as the service is delivered.",
+    "domain": "jujur.uk"
+   },
+   {
+    "position": 5,
+    "title": "SaaS Revenue Recognition: A Guide with Examples - Sage",
+    "link": "https://www.sage.com/en-gb/blog/saas-revenue-recognition/",
+    "snippet": "Struggling with SaaS revenue recognition? Learn how to apply accounting standards, avoid compliance risks, and automate the process with practical examples.",
+    "domain": "sage.com"
+   },
+   {
+    "position": 6,
+    "title": "Accounting for SaaS Companies UK | Expert Guide 2026/27",
+    "link": "https://www.business-accounting.co.uk/blog/accounting-for-saas-companies-uk",
+    "snippet": "Accounting for SaaS companies UK requires specialist knowledge. Our guide covers revenue recognition, R&D tax relief, and compliance for software businesses.",
+    "domain": "business-accounting.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "UK SaaS Revenue Recognition: IFRS 15 & Deferred Revenue Expertise",
+    "link": "https://azlaccounting.solutions/uk-saas-revenue-recognition-ifrs-15-deferred-revenue-expertise/",
+    "snippet": "Revenue recognition is a foundational accounting principle that defines when and how revenue should be recorded in your financial statements. For UK SaaS companies, its application holds unique importance due to the subscription-based business model.",
+    "domain": "azlaccounting.solutions"
+   },
+   {
+    "position": 8,
+    "title": "Accounting for UK SaaS companies: MRR, ARR and recurring revenue",
+    "link": "https://reai.uk/accounting/industry-accounting-guides/accounting-for-uk-saas-companies/",
+    "snippet": "A UK guide to SaaS accounting covering deferred revenue, MRR, ARR, customer acquisition costs, R&D capitalisation and FRS 102 revenue recognition.",
+    "domain": "reai.uk"
+   },
+   {
+    "position": 9,
+    "title": "SaaS accounting guide | Sage Advice UK",
+    "link": "https://www.sage.com/en-gb/blog/guide-to-saas-accounting/",
+    "snippet": "Streamline your finances with this comprehensive SaaS accounting guide. Learn essential revenue recognition, metrics, and best practices for sustainable growth.",
+    "domain": "sage.com"
+   },
+   {
+    "position": 10,
+    "title": "Accountants for SaaS Companies UK You Can Trust - Quiliammarr",
+    "link": "https://quilliammarr.co.uk/accountants-for-saas-companies/",
+    "snippet": "Accountants for SaaS companies in the UK specialize in managing subscriptions, revenue recognition, tax compliance, and growth-focused financial ...",
+    "domain": "quilliammarr.co.uk"
+   }
+  ],
+  "startup payroll and share options accountant": [
+   {
+    "position": 1,
+    "title": "Accountants for Startups & Entrepreneur in UK | Startup Accounting Firm",
+    "link": "https://www.123financials.com/startups-accounting",
+    "snippet": "We offer a range of services that most startups need. These include: task_altRecording business transactions, updating books, preparing financial statements, and assisting in sound decision making \u00b7 task_altMeeting all compliance requirements- annual accounts, tax returns, confirmation statements, payroll, VAT returns, pension filings,updating Companies House with share returns of allotments and other filings etc.",
+    "domain": "123financials.com"
+   },
+   {
+    "position": 2,
+    "title": "Startup Business Accountant - Expert Startup accountant London",
+    "link": "https://www.startupbusinessaccountant.co.uk/",
+    "snippet": "March 31, 2026 - Setting up your startup correctly from day one is critical. Whether you\u2019re choosing between sole trader and limited company structure, registering with Companies House, or setting up payroll and PAYE \u2013 our accounting services for startups handle it all, avoiding costly restructuring later.",
+    "domain": "startupbusinessaccountant.co.uk"
+   },
+   {
+    "position": 3,
+    "title": "How to Choose an Accountant for Your UK Startup (2026 Guide)",
+    "link": "https://aiaccounts.co.uk/how-to-choose-a-startup-accountant/",
+    "snippet": "June 8, 2026 - Get clear on the level of support you need now and in 12 months: compliance only (bookkeeping, payroll, VAT, year-end); operational finance (plus management accounts, cash flow, KPIs); or strategic finance (plus fractional CFO support). Choose an accountant who can grow with you, so you\u2019re not switching again in a year. ... Startups have needs a generalist often gets wrong: SEIS/EIS advance assurance, R&D tax relief, EMI share options, investor and board reporting, and cash runway management.",
+    "domain": "aiaccounts.co.uk"
+   },
+   {
+    "position": 4,
+    "title": "Accountants for Startups | RSBC Accountants UK Experts",
+    "link": "https://www.rsbc.uk/who-we-work-with/ltd-companies/accountants-for-startups",
+    "snippet": "August 23, 2025 - RSBC Accountants specialise in accounting for startups across the UK, providing tailored financial solutions that support growth from day one. With expert knowledge in startup accounting services UK, we guide new businesses through company ...",
+    "domain": "rsbc.uk"
+   },
+   {
+    "position": 5,
+    "title": "Award Winning Startup Accountants In The UK",
+    "link": "https://chacc.co.uk/startup-accountants/",
+    "snippet": "February 5, 2026 - We handle the personal and ownership aspects for company directors, founders with shareholdings, and individuals receiving dividends and option-based rewards. Our specialised accountants for startups ensure founder compliance and efficient value extraction. This stack focuses on you, not just the company: clear, compliant, and tax-efficient personal planning aligned with your business objectives.",
+    "domain": "chacc.co.uk"
+   },
+   {
+    "position": 6,
+    "title": "Accountants for Startups \u2013 Raw Accounting",
+    "link": "https://www.rawaccounting.co.uk/who-we-help/accountants-for-startups/",
+    "snippet": "April 21, 2023 - That\u2019s why our payroll and pension service is comprehensive and able to be tailored to your startup businesses needs. We\u2019ll send payslips directly to your employees by email, make sure that your company and its staff are paying a balanced amount into the employee\u2019s pension every month, and provide expert advice and guidance if necessary on a wide range of payroll and pension issues should they arise. Our accounting for startups is a full service designed to handle all of your accounting, bookkeeping and tax efficiency needs.",
+    "domain": "rawaccounting.co.uk"
+   },
+   {
+    "position": 7,
+    "title": "The top startup accountants according to founders",
+    "link": "https://zelt.app/blog/the-top-startup-accountants-in-the-uk-according-to-founders/",
+    "snippet": "February 2, 2026 - Based on feedback from dozens of startups we have put together the definitive list of the UK\u2019s top accountants for startups & SMBs.",
+    "domain": "zelt.app"
+   },
+   {
+    "position": 8,
+    "title": "Accountants for Startups, Startup Accountants - Braant",
+    "link": "https://www.braant.co.uk/who-we-support/startups/",
+    "snippet": "February 10, 2026 - Ongoing bookkeeping, payroll, VAT returns, and annual filings to keep records organised and ensure nothing important is missed. Cash flow forecasts and reporting to help identify potential pressure early and understand where money is being spent. Advice on choosing the right accounting system early, based on how your business actually operates day to day, to avoid costly changes later. Support with funding and investment options where relevant, including SEIS, EIS, and Venture Capital Trusts.",
+    "domain": "braant.co.uk"
+   },
+   {
+    "position": 9,
+    "title": "Accountants for Tech Startups: UK Entrepreneurs' Preferred Choice",
+    "link": "https://sleek.com/uk/startup-accountant/",
+    "snippet": "March 24, 2026 - If you need help with a company registration, our startup accountants can help you get started. ... From payroll and VAT returns to R&D tax claims and strategic advice, our accounting for startups scales with your business needs.",
+    "domain": "sleek.com"
+   },
+   {
+    "position": 10,
+    "title": "Accountants for Startups | TaxAce LTD",
+    "link": "https://www.taxace.co.uk/accountants-for-startups/",
+    "snippet": "October 17, 2025 - \u2022 Dedicated Bookkeeper - to process receipts & invoices, reconcile bank accounts and do credit control. \u2022 Payroll - monthly payroll preparation and submission, P11D / CIS submission, and auto enrolment. For when you want to scale your business \u2022 SEIS & EIS Advance Assurance - Helping your investors get up to 30% (under EIS) and up to 50% (under SEIS) of their investment back in the form of income tax relief \u2022 EMI Share Valuation - Help with getting an optimal share valuation from HMRC ahead of granting options to employees \u2022 R&D Tax Credit - Claiming relief on qualifying R&D expenditure at 230%",
+    "domain": "taxace.co.uk"
+   }
+  ]
+ }
+}

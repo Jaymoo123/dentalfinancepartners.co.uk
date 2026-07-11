@@ -1,0 +1,404 @@
+{
+ "https://www.gov.uk/guidance/corporation-tax-research-and-development-rd-relief": {
+  "phrases_expected": [
+   "merged scheme",
+   "research and development"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/corporation-tax-research-and-development-rd-relief",
+  "title": "Check if you can claim Research &amp; Development (R&amp;D) tax relief - GOV.UK",
+  "phrases_found": [
+   "research and development"
+  ]
+ },
+ "https://www.gov.uk/guidance/corporation-tax-research-and-development-tax-relief-for-large-companies": {
+  "phrases_expected": [
+   "merged scheme",
+   "20%",
+   "1 April 2024"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/corporation-tax-research-and-development-tax-relief-for-large-companies",
+  "title": "R&amp;D expenditure credit for large companies and small and medium-sized enterprises - GOV.UK",
+  "phrases_found": [
+   "merged scheme",
+   "20%",
+   "1 April 2024"
+  ]
+ },
+ "https://www.gov.uk/guidance/corporation-tax-research-and-development-tax-relief-for-small-and-medium-sized-enterprises": {
+  "phrases_expected": [
+   "merged scheme",
+   "intensive",
+   "14.5"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/corporation-tax-research-and-development-tax-relief-for-small-and-medium-sized-enterprises",
+  "title": "Research and Development tax relief for small and medium-sized enterprises - GOV.UK",
+  "phrases_found": [
+   "merged scheme",
+   "intensive",
+   "14.5"
+  ]
+ },
+ "https://www.gov.uk/guidance/research-and-development-tax-relief-advance-assurance": {
+  "phrases_expected": [
+   "advance assurance"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/research-and-development-tax-relief-advance-assurance",
+  "title": "Check if you can apply for advance assurance for your Research and Development (R&amp;D) tax relief claim - GOV.UK",
+  "phrases_found": [
+   "advance assurance"
+  ]
+ },
+ "https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief": {
+  "phrases_expected": [
+   "additional information",
+   "R&D"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief",
+  "title": "Additional information you must submit before you claim Research and Development tax relief - GOV.UK",
+  "phrases_found": [
+   "additional information"
+  ]
+ },
+ "https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief": {
+  "phrases_expected": [
+   "claim notification",
+   "6 months"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief",
+  "title": "Tell HMRC you want to claim Research and Development (R&amp;D) tax relief - GOV.UK",
+  "phrases_found": [
+   "claim notification",
+   "6 months"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird100000": {
+  "phrases_expected": [
+   "R&D"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird100000",
+  "title": "CIRD100000 - R&amp;D Tax Reliefs: reformed reliefs: contents - HMRC internal manual - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/guidance/venture-capital-schemes-apply-to-use-the-seed-enterprise-investment-scheme": {
+  "phrases_expected": [
+   "250,000",
+   "advance assurance"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-to-use-the-seed-enterprise-investment-scheme",
+  "title": "Apply to use the Seed Enterprise Investment Scheme to raise money for your company - GOV.UK",
+  "phrases_found": [
+   "250,000",
+   "advance assurance"
+  ]
+ },
+ "https://www.gov.uk/guidance/seed-enterprise-investment-scheme-background": {
+  "phrases_expected": [
+   "50%",
+   "200,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-to-use-the-seed-enterprise-investment-scheme",
+  "title": "Apply to use the Seed Enterprise Investment Scheme to raise money for your company - GOV.UK",
+  "phrases_found": []
+ },
+ "https://www.gov.uk/guidance/venture-capital-schemes-apply-for-the-enterprise-investment-scheme": {
+  "phrases_expected": [
+   "5 million",
+   "12 million"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-for-the-enterprise-investment-scheme",
+  "title": "Apply to use the Enterprise Investment Scheme to raise money for your company - GOV.UK",
+  "phrases_found": [
+   "5 million",
+   "12 million"
+  ]
+ },
+ "https://www.gov.uk/guidance/venture-capital-schemes-tax-relief-for-investors": {
+  "phrases_expected": [
+   "30%",
+   "Enterprise Investment Scheme"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/venture-capital-schemes-tax-relief-for-investors",
+  "title": "Tax relief for investors using venture capital schemes - GOV.UK",
+  "phrases_found": [
+   "30%",
+   "Enterprise Investment Scheme"
+  ]
+ },
+ "https://www.gov.uk/guidance/venture-capital-schemes-apply-for-advance-assurance": {
+  "phrases_expected": [
+   "advance assurance"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-for-advance-assurance",
+  "title": "Apply for advance assurance on a venture capital scheme - GOV.UK",
+  "phrases_found": [
+   "advance assurance"
+  ]
+ },
+ "https://www.gov.uk/tax-employee-share-schemes/enterprise-management-incentives-emis": {
+  "phrases_expected": [
+   "250,000",
+   "Enterprise Management Incentive"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/tax-employee-share-schemes/enterprise-management-incentives-emis",
+  "title": "Tax and Employee Share Schemes: Enterprise Management Incentives (EMI) - GOV.UK",
+  "phrases_found": [
+   "250,000",
+   "Enterprise Management Incentive"
+  ]
+ },
+ "https://www.gov.uk/guidance/submit-your-employment-related-securities-ers-return": {
+  "phrases_expected": [
+   "6 July",
+   "employment related securities"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/employment-related-securities-files",
+  "title": "Employment related securities: submit returns - GOV.UK",
+  "phrases_found": [
+   "6 July",
+   "employment related securities"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/employee-tax-advantaged-share-scheme-user-manual/etassum52030": {
+  "phrases_expected": [
+   "30",
+   "gross assets"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/employee-tax-advantaged-share-scheme-user-manual/etassum52030",
+  "title": "ETASSUM52030 - Enterprise Management Incentives (EMI): Qualifying companies: Independence requirement - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "30"
+  ]
+ },
+ "https://www.gov.uk/tax-employee-share-schemes/company-share-option-plan": {
+  "phrases_expected": [
+   "60,000",
+   "Company Share Option Plan"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/tax-employee-share-schemes/company-share-option-plan",
+  "title": "Tax and Employee Share Schemes: Company Share Option Plan - GOV.UK",
+  "phrases_found": [
+   "60,000",
+   "Company Share Option Plan"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/employment-related-securities/ersm30450": {
+  "phrases_expected": [
+   "431",
+   "election"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/employment-related-securities/ersm30450",
+  "title": "ERSM30450 - Restricted securities: elections to exclude outstanding restrictions - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "431",
+   "election"
+  ]
+ },
+ "https://www.gov.uk/business-asset-disposal-relief": {
+  "phrases_expected": [
+   "Business Asset Disposal Relief",
+   "14%"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/business-asset-disposal-relief",
+  "title": "Business Asset Disposal Relief: Eligibility - GOV.UK",
+  "phrases_found": [
+   "Business Asset Disposal Relief",
+   "14%"
+  ]
+ },
+ "https://www.gov.uk/capital-gains-tax/rates": {
+  "phrases_expected": [
+   "Capital Gains Tax",
+   "24%"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/capital-gains-tax/rates",
+  "title": "Capital Gains Tax: what you pay it on, rates and allowances: Capital Gains Tax rates - GOV.UK",
+  "phrases_found": [
+   "Capital Gains Tax",
+   "24%"
+  ]
+ },
+ "https://www.gov.uk/corporation-tax-rates": {
+  "phrases_expected": [
+   "25%",
+   "19%",
+   "Marginal Relief"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/corporation-tax-rates",
+  "title": "Corporation Tax rates, expenses and reliefs: Rates - GOV.UK",
+  "phrases_found": [
+   "25%",
+   "19%",
+   "Marginal Relief"
+  ]
+ },
+ "https://www.gov.uk/guidance/corporation-tax-marginal-relief": {
+  "phrases_expected": [
+   "Marginal Relief",
+   "250,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/corporation-tax-marginal-relief",
+  "title": "Marginal Relief for Corporation Tax - GOV.UK",
+  "phrases_found": [
+   "Marginal Relief",
+   "250,000"
+  ]
+ },
+ "https://www.gov.uk/tax-on-dividends": {
+  "phrases_expected": [
+   "dividend",
+   "500"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/tax-on-dividends",
+  "title": "Tax on dividends: Check if you have to pay tax on dividends - GOV.UK",
+  "phrases_found": [
+   "dividend",
+   "500"
+  ]
+ },
+ "https://www.gov.uk/national-insurance-rates-letters": {
+  "phrases_expected": [
+   "15%"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/national-insurance-rates-letters",
+  "title": "National Insurance rates and categories: Contribution rates - GOV.UK",
+  "phrases_found": [
+   "15%"
+  ]
+ },
+ "https://www.gov.uk/claim-employment-allowance": {
+  "phrases_expected": [
+   "Employment Allowance",
+   "10,500"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/claim-employment-allowance",
+  "title": "Employment Allowance: What you&#39;ll get - GOV.UK",
+  "phrases_found": [
+   "Employment Allowance",
+   "10,500"
+  ]
+ },
+ "https://www.gov.uk/register-for-vat": {
+  "phrases_expected": [
+   "90,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/register-for-vat",
+  "title": "Register for VAT: When to register for VAT - GOV.UK",
+  "phrases_found": [
+   "90,000"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg52521": {
+  "phrases_expected": [
+   "135",
+   "exchange"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg52521",
+  "title": "CG52521 - Share exchange: scope of TCGA92/S135 - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "135",
+   "exchange"
+  ]
+ },
+ "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim46351": {
+  "phrases_expected": [
+   "seven years",
+   "pre-trading"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim46351",
+  "title": "BIM46351 - Specific deductions: pre-trading expenditure: scope - HMRC internal manual - GOV.UK",
+  "phrases_found": [
+   "seven years",
+   "pre-trading"
+  ]
+ },
+ "https://www.gov.uk/guidance/understanding-off-payroll-working-ir35": {
+  "phrases_expected": [
+   "off-payroll",
+   "IR35"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/understanding-off-payroll-working-ir35",
+  "title": "Understanding off-payroll working (IR35) - GOV.UK",
+  "phrases_found": [
+   "off-payroll",
+   "IR35"
+  ]
+ },
+ "https://www.gov.uk/guidance/corporation-tax-calculating-and-claiming-a-loss": {
+  "phrases_expected": [
+   "loss",
+   "carry forward"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/corporation-tax-calculating-and-claiming-a-loss",
+  "title": "Work out and claim relief from Corporation Tax trading losses - GOV.UK",
+  "phrases_found": [
+   "loss",
+   "carry forward"
+  ]
+ },
+ "https://download.companieshouse.gov.uk/en_output.html": {
+  "phrases_expected": [
+   "download",
+   "company"
+  ],
+  "status": 200,
+  "final_url": "https://download.companieshouse.gov.uk/en_output.html",
+  "title": "Companies House",
+  "phrases_found": [
+   "download",
+   "company"
+  ]
+ },
+ "https://developer.company-information.service.gov.uk/": {
+  "phrases_expected": [
+   "API"
+  ],
+  "status": 200,
+  "final_url": "https://developer.company-information.service.gov.uk/",
+  "title": "Developer Hub Home",
+  "phrases_found": [
+   "API"
+  ]
+ },
+ "https://resources.companieshouse.gov.uk/sic/": {
+  "phrases_expected": [
+   "SIC",
+   "62"
+  ],
+  "status": 200,
+  "final_url": "https://resources.companieshouse.gov.uk/sic/",
+  "title": "Nature of business: Standard Industrial Classification (SIC) codes",
+  "phrases_found": [
+   "SIC",
+   "62"
+  ]
+ }
+}
