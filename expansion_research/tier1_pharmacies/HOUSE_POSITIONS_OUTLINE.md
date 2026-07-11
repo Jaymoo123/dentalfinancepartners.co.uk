@@ -53,7 +53,8 @@ only; nothing clinical, nothing patient-facing (medical-site adjacency guard).
 12. **Share purchase vs asset purchase is the first structuring decision**: asset deals attract
     SDLT on any property at non-residential rates (up to 5%); share deals attract 0.5% stamp
     duty on shares — but inherit history. Cite:
-    gov.uk/stamp-duty-land-tax/nonresidential-and-mixed-use-rates; gov.uk/guidance/stamp-duty-on-shares.
+    gov.uk/stamp-duty-land-tax/nonresidential-and-mixed-use-rates; gov.uk/tax-buy-shares (states
+    the 0.5% rate).
 13. **Goodwill dominates pharmacy pricing** (driven by the NHS contract/item volume); on a
     company purchase, corporation tax relief on goodwill is restricted and only available in
     limited cases at fixed rates. Cite:
@@ -91,7 +92,8 @@ only; nothing clinical, nothing patient-facing (medical-site adjacency guard).
 22. **Self-employed status tests** (control, substitution, financial risk) decide the
     sole-trader locum question. Cite: gov.uk/employment-status/selfemployed-contractor.
 23. **MTD for Income Tax hits sole-trader locums from April 2026 at £50,000+ income**
-    (then £30k). Cite: gov.uk/guidance/use-making-tax-digital-for-income-tax.
+    (then £30k). Cite: gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax
+    (states the £50,000 threshold).
 24. **Cash basis is the default for unincorporated businesses** — relevant to locums and small
     owner books. Cite: gov.uk/simpler-income-tax-cash-basis.
 

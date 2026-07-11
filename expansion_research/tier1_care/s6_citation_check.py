@@ -63,16 +63,16 @@ CITATIONS: dict[str, list[str]] = {
     "https://www.gov.uk/introduction-to-business-rates":
         ["rateable value"],
     # MTD / cash basis
-    "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax":
+    "https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax":
         ["Making Tax Digital", "50,000"],
     # CQC — registration, oversight, data downloads (data-asset feasibility)
     "https://www.cqc.org.uk/guidance-providers/registration":
         ["register", "provider"],
-    "https://www.cqc.org.uk/guidance-providers/registration/financial-viability-statements":
+    "https://www.cqc.org.uk/guidance-regulation/registration/supporting-documents-provider/document/financial-viability-template":
         ["financial viability"],
     "https://www.cqc.org.uk/about-us/transparency/using-cqc-data":
         ["data", "download"],
-    "https://www.cqc.org.uk/guidance-providers/market-oversight":
+    "https://www.cqc.org.uk/guidance-providers/market-oversight-corporate-providers/market-oversight-adult-social-care":
         ["market oversight"],
     # Funding mix — FNC / CHC / LA
     "https://www.gov.uk/government/news/better-community-care-thanks-to-nursing-funding-boost":

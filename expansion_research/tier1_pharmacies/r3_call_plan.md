@@ -12,6 +12,8 @@ exhausted by earlier sessions; ceiling is manager-owned and was NOT raised).
 | DDG (free) | 35 queries | $0 |
 | Google Autocomplete (free) | 945 requests | $0 |
 | Direct fetches (rivals, citations, sitemaps) | free | $0 |
+| Live web search (finish session: verify lanop, 3esaccountants, accountant4pharmacists) | 3 | $0 |
+| Finish session (2026-07-11 late): DataForSEO / Serper | **0 / 0** | $0 |
 
 ## Planned paid pulls for tomorrow (run when the daily guard resets)
 

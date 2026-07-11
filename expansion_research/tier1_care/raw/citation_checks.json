@@ -268,16 +268,17 @@
    "rateable value"
   ]
  },
- "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax": {
+ "https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax": {
   "phrases_expected": [
    "Making Tax Digital",
    "50,000"
   ],
   "status": 200,
-  "final_url": "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax",
-  "title": "Use Making Tax Digital for Income Tax - Guidance - GOV.UK",
+  "final_url": "https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax",
+  "title": "Find out if and when you need to use Making Tax Digital for Income Tax - GOV.UK",
   "phrases_found": [
-   "Making Tax Digital"
+   "Making Tax Digital",
+   "50,000"
   ]
  },
  "https://www.cqc.org.uk/guidance-providers/registration": {
@@ -293,14 +294,16 @@
    "provider"
   ]
  },
- "https://www.cqc.org.uk/guidance-providers/registration/financial-viability-statements": {
+ "https://www.cqc.org.uk/guidance-regulation/registration/supporting-documents-provider/document/financial-viability-template": {
   "phrases_expected": [
    "financial viability"
   ],
-  "status": 404,
-  "final_url": "https://www.cqc.org.uk/guidance-providers/registration/financial-viability-statements",
-  "title": "Sorry, we couldn&#039;t find that page - Care Quality Commission",
-  "phrases_found": []
+  "status": 200,
+  "final_url": "https://www.cqc.org.uk/guidance-regulation/registration/supporting-documents-provider/document/financial-viability-template",
+  "title": "Financial viability statement - Care Quality Commission",
+  "phrases_found": [
+   "financial viability"
+  ]
  },
  "https://www.cqc.org.uk/about-us/transparency/using-cqc-data": {
   "phrases_expected": [
@@ -315,14 +318,16 @@
    "download"
   ]
  },
- "https://www.cqc.org.uk/guidance-providers/market-oversight": {
+ "https://www.cqc.org.uk/guidance-providers/market-oversight-corporate-providers/market-oversight-adult-social-care": {
   "phrases_expected": [
    "market oversight"
   ],
-  "status": 404,
-  "final_url": "https://www.cqc.org.uk/guidance-providers/market-oversight",
-  "title": "Sorry, we couldn&#039;t find that page - Care Quality Commission",
-  "phrases_found": []
+  "status": 200,
+  "final_url": "https://www.cqc.org.uk/guidance-regulation/adult-social-care/market-oversight-adult-social-care",
+  "title": "Market Oversight of adult social care - Care Quality Commission",
+  "phrases_found": [
+   "market oversight"
+  ]
  },
  "https://www.gov.uk/government/news/better-community-care-thanks-to-nursing-funding-boost": {
   "phrases_expected": [

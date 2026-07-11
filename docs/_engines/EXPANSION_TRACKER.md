@@ -24,14 +24,19 @@ Last updated: 2026-07-11
 | R0 preconditions | done | creds valid, **balance -$0.03 → OWNER: top up DataForSEO**; corpora + exclusion list committed |
 | R1 enumeration | done | 89 candidates, `expansion_research/R1_NICHE_CANDIDATES.md`; DataForSEO leg deferred |
 | R2 scoring | **SIGNED OFF 2026-07-11** | Owner approved all 8 Tier-1 sites + charities pilot. Final list `expansion_research/R2_NICHE_SCORES_FINAL.md` (recruitment + creative killed by red-team on intent evidence) |
-| R3 pilot deep research (charities) | in progress | dossier under `expansion_research/pilot_charities/` |
-| R4 pilot brand shortlist | in progress | RDAP-verified shortlist → owner picks + registers (G1) |
+| R3 pilot deep research (charities) | done | dossier under `expansion_research/pilot_charities/`; 29 wave1 briefs VERIFIED + committed (figures vs house_positions, all 19 citation URLs live-fetched) |
+| R4 pilot brand shortlist | done, awaiting G1 | RDAP-verified shortlist → owner picks + registers (G1) |
+| R3 crypto | dossier written 2026-07-11, verifier pending | 53 rivals (22 dedicated), 1,219 clusters, 0.05% estate dupes; software (Koinly/Recap) owns DIY head SERPs; paid pulls TODO (~$0.60) |
+| R3 pharmacies | dossier written 2026-07-11, verifier pending | 43 rivals (7 dedicated), 1,214 clusters; medical-adjacency gate documented (medicalaccounts.co.uk ranks in-niche); paid pulls TODO |
+| R3 care | dossier written 2026-07-11, verifier pending | 41 rivals (12 dedicated), 659 clusters, 0.0% estate dupes; 34/34 citations pass; DDG-only SERPs (Serper OUT OF CREDITS); paid pulls TODO (~$0.42) |
 
 ## Owner actions needed now
 
 1. ~~Top up DataForSEO~~ DONE 2026-07-11 ($49.79 remaining after R2d's $0.18).
 2. Add a `VERCEL_TOKEN` to `.env` (needed at first preview deploy, not blocking yet).
-3. UPCOMING: G2 niche-list sign-off once the red-team pass completes.
+3. ~~G2 niche-list sign-off~~ DONE 2026-07-11 (8 Tier-1 sites).
+4. **Pick the charities brand (G1)** — shortlist `expansion_research/pilot_charities/BRAND_SHORTLIST.md`; re-verify RDAP availability before buying. Blocks pilot content + preview.
+5. **Top up Serper credits** — exhausted 2026-07-11 (all calls 400); blocks estate-wide SERP sweeps and the remaining Tier-1 dossiers' Google legs.
 
 ## Sites
 

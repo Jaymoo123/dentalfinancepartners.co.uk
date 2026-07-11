@@ -87,7 +87,8 @@ Rates quoted are 2026/27 unless stated. FA 2026 ground-truth memory entries were
 24. **From 1 January 2026 UK crypto platforms must collect user data under CARF and report to
     HMRC (first reports due 31 May 2027)** — the "HMRC can't see my exchange" era is formally
     over; this is the site's central urgency narrative and it is TRUE, not scare copy.
-    — [gov.uk: collecting cryptoasset user and transaction data](https://www.gov.uk/guidance/collecting-cryptoasset-user-and-transaction-data)
+    — [gov.uk: collecting cryptoasset user and transaction data](https://www.gov.uk/guidance/collecting-cryptoasset-user-and-transaction-data) (1 Jan 2026 collection start);
+    [gov.uk: reporting cryptoasset user and transaction data](https://www.gov.uk/guidance/reporting-cryptoasset-user-and-transaction-data) ("submit your first report between 1 January 2027 and 31 May 2027"; fetch-verified 2026-07-11)
 25. **HMRC runs a dedicated cryptoasset disclosure service** for unpaid tax on crypto; number
     of years assessed depends on behaviour (careless vs deliberate). Nudge-letter recipients
     should respond, not ignore. — [gov.uk: tell HMRC about unpaid tax on cryptoassets](https://www.gov.uk/guidance/tell-hmrc-about-unpaid-tax-on-cryptoassets)

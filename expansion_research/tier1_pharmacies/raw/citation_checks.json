@@ -151,18 +151,6 @@
    "5%"
   ]
  },
- "https://www.gov.uk/guidance/stamp-duty-on-shares": {
-  "phrases_expected": [
-   "0.5%",
-   "shares"
-  ],
-  "status": 200,
-  "final_url": "https://www.gov.uk/guidance/stamp-duty-on-shares",
-  "title": "Completing a stock transfer form - GOV.UK",
-  "phrases_found": [
-   "shares"
-  ]
- },
  "https://www.gov.uk/capital-allowances/annual-investment-allowance": {
   "phrases_expected": [
    "1 million",
@@ -237,18 +225,6 @@
   "title": "Employment Allowance: What you&#39;ll get - GOV.UK",
   "phrases_found": [
    "Employment Allowance"
-  ]
- },
- "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax": {
-  "phrases_expected": [
-   "Making Tax Digital",
-   "50,000"
-  ],
-  "status": 200,
-  "final_url": "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax",
-  "title": "Use Making Tax Digital for Income Tax - Guidance - GOV.UK",
-  "phrases_found": [
-   "Making Tax Digital"
   ]
  },
  "https://www.gov.uk/simpler-income-tax-cash-basis": {
@@ -379,5 +355,33 @@
    "47730",
    "Standard industrial classification"
   ]
+ },
+ "https://www.gov.uk/tax-buy-shares": {
+  "phrases_expected": [
+   "0.5%",
+   "shares"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/tax-buy-shares",
+  "title": "GOV.UK",
+  "phrases_found": [
+   "0.5%",
+   "shares"
+  ],
+  "note": "replaced weaker cite https://www.gov.uk/guidance/stamp-duty-on-shares at verify pass 2026-07-11"
+ },
+ "https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax": {
+  "phrases_expected": [
+   "Making Tax Digital",
+   "50,000"
+  ],
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax",
+  "title": "GOV.UK",
+  "phrases_found": [
+   "Making Tax Digital",
+   "50,000"
+  ],
+  "note": "replaced weaker cite https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax at verify pass 2026-07-11"
  }
 }
