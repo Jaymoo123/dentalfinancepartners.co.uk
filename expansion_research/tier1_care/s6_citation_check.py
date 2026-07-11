@@ -14,13 +14,13 @@ HERE = Path(__file__).parent
 
 CITATIONS: dict[str, list[str]] = {
     # VAT — welfare exemption + grouping litigation state
-    "https://www.gov.uk/guidance/vat-welfare-services-and-goods-notice-7012":
+    "https://www.gov.uk/guidance/welfare-services-and-goods-notice-7012":
         ["welfare", "exempt", "state-regulated"],
-    "https://www.gov.uk/government/publications/revenue-and-customs-brief-2-2025-the-use-of-vat-grouping-structures-by-state-regulated-care-providers":
+    "https://www.gov.uk/government/publications/revenue-and-customs-brief-2-2025-the-use-of-vat-grouping-within-the-care-industry/use-of-vat-grouping-within-the-care-industry":
         ["VAT grouping", "care"],
     "https://www.gov.uk/vat-registration":
         ["90,000", "register"],
-    "https://www.gov.uk/guidance/vat-partial-exemption-and-input-tax-recovery-notice-706":
+    "https://www.gov.uk/guidance/partial-exemption-vat-notice-706":
         ["partial exemption"],
     # NMW / sleep-ins / travel time
     "https://www.gov.uk/national-minimum-wage-rates":
@@ -39,8 +39,8 @@ CITATIONS: dict[str, list[str]] = {
     "https://www.gov.uk/expenses-and-benefits-business-travel-mileage":
         ["mileage", "approved"],
     # Immigration / care workforce
-    "https://www.gov.uk/government/news/care-worker-visa-route-closed-to-new-applications-from-abroad":
-        ["care worker", "visa"],
+    "https://www.gov.uk/health-care-worker-visa/eligibility":
+        ["care", "visa"],
     "https://www.gov.uk/uk-visa-sponsorship-employers":
         ["sponsor licence"],
     # Capital allowances / CT
@@ -48,7 +48,7 @@ CITATIONS: dict[str, list[str]] = {
         ["1 million", "Annual Investment Allowance"],
     "https://www.gov.uk/work-out-capital-allowances/rates-and-pools":
         ["writing down", "main rate"],
-    "https://www.gov.uk/guidance/structures-and-buildings-allowance":
+    "https://www.gov.uk/guidance/claiming-capital-allowances-for-structures-and-buildings":
         ["Structures and Buildings", "3%"],
     "https://www.gov.uk/corporation-tax-rates":
         ["25%", "small profits rate"],
@@ -66,22 +66,22 @@ CITATIONS: dict[str, list[str]] = {
     "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax":
         ["Making Tax Digital", "50,000"],
     # CQC — registration, oversight, data downloads (data-asset feasibility)
-    "https://www.cqc.org.uk/guidance-providers/registration/how-register-cqc":
+    "https://www.cqc.org.uk/guidance-providers/registration":
         ["register", "provider"],
-    "https://www.cqc.org.uk/guidance-regulation/providers/registration/financial-viability-statements":
+    "https://www.cqc.org.uk/guidance-providers/registration/financial-viability-statements":
         ["financial viability"],
     "https://www.cqc.org.uk/about-us/transparency/using-cqc-data":
         ["data", "download"],
-    "https://www.cqc.org.uk/guidance-providers/market-oversight-adult-social-care":
+    "https://www.cqc.org.uk/guidance-providers/market-oversight":
         ["market oversight"],
     # Funding mix — FNC / CHC / LA
-    "https://www.gov.uk/government/publications/nhs-funded-nursing-care-rate-2025-to-2026":
-        ["funded nursing care", "rate"],
+    "https://www.gov.uk/government/news/better-community-care-thanks-to-nursing-funding-boost":
+        ["nursing", "267.68"],
     "https://www.gov.uk/government/publications/national-framework-for-nhs-continuing-healthcare-and-nhs-funded-nursing-care":
         ["continuing healthcare"],
     "https://www.gov.uk/government/publications/market-sustainability-and-improvement-fund-2024-to-2025":
         ["market sustainability"],
-    "https://www.gov.uk/care-act-statutory-guidance/care-and-support-statutory-guidance":
+    "https://www.gov.uk/government/publications/care-act-statutory-guidance/care-and-support-statutory-guidance":
         ["care and support"],
     # Data-asset backup sources
     "https://download.companieshouse.gov.uk/en_output.html":

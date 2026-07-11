@@ -1,24 +1,29 @@
 {
- "https://www.gov.uk/guidance/vat-welfare-services-and-goods-notice-7012": {
+ "https://www.gov.uk/guidance/welfare-services-and-goods-notice-7012": {
   "phrases_expected": [
    "welfare",
    "exempt",
    "state-regulated"
   ],
-  "status": 404,
-  "final_url": "https://www.gov.uk/guidance/vat-welfare-services-and-goods-notice-7012",
-  "title": "Page not found - GOV.UK",
-  "phrases_found": []
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/welfare-services-and-goods-notice-7012",
+  "title": "Welfare services and goods (VAT Notice 701/2) - GOV.UK",
+  "phrases_found": [
+   "welfare",
+   "exempt",
+   "state-regulated"
+  ]
  },
- "https://www.gov.uk/government/publications/revenue-and-customs-brief-2-2025-the-use-of-vat-grouping-structures-by-state-regulated-care-providers": {
+ "https://www.gov.uk/government/publications/revenue-and-customs-brief-2-2025-the-use-of-vat-grouping-within-the-care-industry/use-of-vat-grouping-within-the-care-industry": {
   "phrases_expected": [
    "VAT grouping",
    "care"
   ],
-  "status": 404,
-  "final_url": "https://www.gov.uk/government/publications/revenue-and-customs-brief-2-2025-the-use-of-vat-grouping-structures-by-state-regulated-care-providers",
-  "title": "Page not found - GOV.UK",
+  "status": 200,
+  "final_url": "https://www.gov.uk/government/publications/revenue-and-customs-brief-2-2025-the-use-of-vat-grouping-within-the-care-industry/use-of-vat-grouping-within-the-care-industry",
+  "title": "Use of VAT grouping within the care industry - GOV.UK",
   "phrases_found": [
+   "VAT grouping",
    "care"
   ]
  },
@@ -35,14 +40,16 @@
    "register"
   ]
  },
- "https://www.gov.uk/guidance/vat-partial-exemption-and-input-tax-recovery-notice-706": {
+ "https://www.gov.uk/guidance/partial-exemption-vat-notice-706": {
   "phrases_expected": [
    "partial exemption"
   ],
-  "status": 404,
-  "final_url": "https://www.gov.uk/guidance/vat-partial-exemption-and-input-tax-recovery-notice-706",
-  "title": "Page not found - GOV.UK",
-  "phrases_found": []
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/partial-exemption-vat-notice-706",
+  "title": "Partial exemption (VAT Notice 706) - GOV.UK",
+  "phrases_found": [
+   "partial exemption"
+  ]
  },
  "https://www.gov.uk/national-minimum-wage-rates": {
   "phrases_expected": [
@@ -135,15 +142,16 @@
    "approved"
   ]
  },
- "https://www.gov.uk/government/news/care-worker-visa-route-closed-to-new-applications-from-abroad": {
+ "https://www.gov.uk/health-care-worker-visa/eligibility": {
   "phrases_expected": [
-   "care worker",
+   "care",
    "visa"
   ],
-  "status": 404,
-  "final_url": "https://www.gov.uk/government/news/care-worker-visa-route-closed-to-new-applications-from-abroad",
-  "title": "Page not found - GOV.UK",
+  "status": 200,
+  "final_url": "https://www.gov.uk/health-care-worker-visa",
+  "title": "Health and Care Worker visa: Overview - GOV.UK",
   "phrases_found": [
+   "care",
    "visa"
   ]
  },
@@ -184,15 +192,18 @@
    "main rate"
   ]
  },
- "https://www.gov.uk/guidance/structures-and-buildings-allowance": {
+ "https://www.gov.uk/guidance/claiming-capital-allowances-for-structures-and-buildings": {
   "phrases_expected": [
    "Structures and Buildings",
    "3%"
   ],
-  "status": 404,
-  "final_url": "https://www.gov.uk/guidance/structures-and-buildings-allowance",
-  "title": "Page not found - GOV.UK",
-  "phrases_found": []
+  "status": 200,
+  "final_url": "https://www.gov.uk/guidance/claiming-capital-allowances-for-structures-and-buildings",
+  "title": "Claiming capital allowances for structures and buildings - GOV.UK",
+  "phrases_found": [
+   "Structures and Buildings",
+   "3%"
+  ]
  },
  "https://www.gov.uk/corporation-tax-rates": {
   "phrases_expected": [
@@ -269,25 +280,25 @@
    "Making Tax Digital"
   ]
  },
- "https://www.cqc.org.uk/guidance-providers/registration/how-register-cqc": {
+ "https://www.cqc.org.uk/guidance-providers/registration": {
   "phrases_expected": [
    "register",
    "provider"
   ],
-  "status": 404,
-  "final_url": "https://www.cqc.org.uk/guidance-providers/registration/how-register-cqc",
-  "title": "Sorry, we couldn&#039;t find that page - Care Quality Commission",
+  "status": 200,
+  "final_url": "https://www.cqc.org.uk/guidance-regulation/registration",
+  "title": "Registration - Care Quality Commission",
   "phrases_found": [
    "register",
    "provider"
   ]
  },
- "https://www.cqc.org.uk/guidance-regulation/providers/registration/financial-viability-statements": {
+ "https://www.cqc.org.uk/guidance-providers/registration/financial-viability-statements": {
   "phrases_expected": [
    "financial viability"
   ],
   "status": 404,
-  "final_url": "https://www.cqc.org.uk/guidance-regulation/providers/registration/financial-viability-statements",
+  "final_url": "https://www.cqc.org.uk/guidance-providers/registration/financial-viability-statements",
   "title": "Sorry, we couldn&#039;t find that page - Care Quality Commission",
   "phrases_found": []
  },
@@ -304,25 +315,26 @@
    "download"
   ]
  },
- "https://www.cqc.org.uk/guidance-providers/market-oversight-adult-social-care": {
+ "https://www.cqc.org.uk/guidance-providers/market-oversight": {
   "phrases_expected": [
    "market oversight"
   ],
   "status": 404,
-  "final_url": "https://www.cqc.org.uk/guidance-providers/market-oversight-adult-social-care",
+  "final_url": "https://www.cqc.org.uk/guidance-providers/market-oversight",
   "title": "Sorry, we couldn&#039;t find that page - Care Quality Commission",
   "phrases_found": []
  },
- "https://www.gov.uk/government/publications/nhs-funded-nursing-care-rate-2025-to-2026": {
+ "https://www.gov.uk/government/news/better-community-care-thanks-to-nursing-funding-boost": {
   "phrases_expected": [
-   "funded nursing care",
-   "rate"
+   "nursing",
+   "267.68"
   ],
-  "status": 404,
-  "final_url": "https://www.gov.uk/government/publications/nhs-funded-nursing-care-rate-2025-to-2026",
-  "title": "Page not found - GOV.UK",
+  "status": 200,
+  "final_url": "https://www.gov.uk/government/news/better-community-care-thanks-to-nursing-funding-boost",
+  "title": "Better community care thanks to nursing funding boost - GOV.UK",
   "phrases_found": [
-   "rate"
+   "nursing",
+   "267.68"
   ]
  },
  "https://www.gov.uk/government/publications/national-framework-for-nhs-continuing-healthcare-and-nhs-funded-nursing-care": {
@@ -347,14 +359,16 @@
    "market sustainability"
   ]
  },
- "https://www.gov.uk/care-act-statutory-guidance/care-and-support-statutory-guidance": {
+ "https://www.gov.uk/government/publications/care-act-statutory-guidance/care-and-support-statutory-guidance": {
   "phrases_expected": [
    "care and support"
   ],
-  "status": 404,
-  "final_url": "https://www.gov.uk/care-act-statutory-guidance/care-and-support-statutory-guidance",
-  "title": "Page not found - GOV.UK",
-  "phrases_found": []
+  "status": 200,
+  "final_url": "https://www.gov.uk/government/publications/care-act-statutory-guidance/care-and-support-statutory-guidance",
+  "title": "Care and support statutory guidance - GOV.UK",
+  "phrases_found": [
+   "care and support"
+  ]
  },
  "https://download.companieshouse.gov.uk/en_output.html": {
   "phrases_expected": [
