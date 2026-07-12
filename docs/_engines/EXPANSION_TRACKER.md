@@ -47,10 +47,12 @@ Resolved 2026-07-11 late: stray commit 3a165133 confirmed by owner as his own (o
 | Site | Niche | Tranche | Stage | G1 brand | G2 research | G3 auto | G4 preview | Blockers | Owner action needed |
 |---|---|---|---|---|---|---|---|---|---|
 | charities (PILOT) | Charities & non-profits (+CICs) | pilot | **S5 DONE + Supabase seeded** (33 tests green; pilot migration pair APPLIED 2026-07-11, live 'test' source preserved; 1,660 blog_topics rows seeded from R3 pool, 293 with DFS volume) | **G1 DEFERRED by owner** (shortlist ready; re-verify availability before buying) | R3 dossier done | brand gate correctly FAIL | - | content + preview deploy gated on G1 | pick brand + BUY domain (G1) |
-| hospitality | Restaurants/pubs/takeaways/hotels | 1 | queued | | | | | | |
-| care | Care homes + domiciliary | 1 | queued (after medical watch ~08-03) | | | | | | |
-| startups-tech | Startups & tech/SaaS | 1 | queued | | | | | | |
-| pharmacies | Pharmacy owners (+locums content) | 2 | queued | | | | | | |
-| manufacturing | Manufacturing & engineering | 2 | queued (needs live-SERP confirm in R3) | | | | | | |
-| crypto | Crypto traders & investors | 2 | queued | | | | | | |
-| ecommerce | Ecommerce/Amazon sellers | 3 | queued (hardest field, most ambitious asset plan) | | | | | | |
+| hospitality | Restaurants/pubs/takeaways/hotels | 1 | **R4 done 2026-07-12** (checker re-verified RDAP); next S2 | shortlist ready (rec: Hospitality Finance Partners, prefix hfp) | R3 done | | | | pick brand (can batch with others) |
+| care | Care homes + domiciliary | 1 | **R4 done 2026-07-12**; next S2 (deploy-only hold ~08-03) | shortlist ready (rec: Care Finance Partners, prefix carf) | R3 done | | | | pick brand |
+| startups-tech | Startups & tech/SaaS | 1 | **R4 done 2026-07-12**; next S2 | shortlist ready (rec: Founder Finance Partners, prefix ffp) | R3 done | | | Reflex conflict must be ruled before briefs | pick brand + rule Reflex conflict |
+| pharmacies | Pharmacy owners (+locums content) | 2 | **R4 done 2026-07-12**; next S2 | shortlist ready (rec: Pharmacy Finance Partners, prefix phfp) | R3 done | | | | pick brand |
+| manufacturing | Manufacturing & engineering | 2 | PARK RECOMMENDED — frozen pending owner ratification (no R4 run) | | R3 done | | | owner ratification | ratify/override PARK |
+| crypto | Crypto traders & investors | 2 | **R4 done 2026-07-12**; next S2 | shortlist ready (rec: Digital Asset Tax Partners, prefix datp) | R3 done | | | | pick brand |
+| ecommerce | Ecommerce/Amazon sellers | 3 | **R4 done 2026-07-12**; next S2 (build LAST) | shortlist ready (rec: Ecommerce Tax Partners, prefix ectp) | R3 done | | | generalist-overlap ruling before briefs | pick brand + rule overlap |
+
+All six R4 shortlists produced 2026-07-12 in one batch (`expansion_research/tier1_*/BRAND_SHORTLIST.md` + `r4_results.json`); every recommended + fallback name independently re-verified RDAP 404 on .co.uk AND .com same day. Owner can pick all brands in bulk.
