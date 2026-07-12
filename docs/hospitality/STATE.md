@@ -17,7 +17,7 @@ brand_locked: false
 
 - [ ] S1 brand lock (owner gate G1): flip `brand_locked: true` above, record brand spec
 - [x] S2 scaffold DONE 2026-07-12: spinup_site run, spinup_site_check 1+8 PASS (content_strategy filled; checker's CI-matrix parse updated for the SITES list format), npm build green. R4 shortlist: `expansion_research/tier1_hospitality/BRAND_SHORTLIST.md` (rec: Hospitality Finance Partners). Tranche-1 migration pair emitted (covers hospitality+care+startups-tech; 'charities' added to both constraint arrays after the generator omitted it — NOT YET APPLIED, apply once per tranche after re-reading live defs)
-- [ ] S3 research pack finalised + blog_topics seeded (owner gate G2)
+- [x] S3 DONE 2026-07-12: t1 migration pair APPLIED live (live constraints re-read first — generator had omitted 'charities' AND live 'test' source, both fixed pre-apply; sites rows for hospitality/care/startups-tech inserted active=false). Pool finalised via s5b_finalise.py (judged borderline restores: B&B tax, TOMS VAT, tronc; generalist-overlap dupes stay fenced) → 1,257 blog_topics seeded (111 with volume, priority deciles) via scripts/_seed_expansion_topics.py (generic, reusable for the other 5 sites)
 - [ ] S4 machinery composition per SITE_SPINUP.md Step 2 (vitest, tsc, headers)
 - [ ] S5 niche build: calculators (golden-figure vitest), data asset, house_positions.md, rates ledger
 - [ ] S6 launch-core content generated + predeploy_gate green (brand lint precondition)

@@ -449,7 +449,7 @@ EXISTING_SITE_KEYS = [
 EXISTING_LEAD_SOURCES = [
     "dentists", "property", "medical", "solicitors", "generalist", "general",
     "agency", "agency-founder-finance", "contractors-ir35", "construction-cis",
-    "charities",
+    "test", "charities",
 ]
 
 STATE_MD = """# {niche} ({display_name}) site state

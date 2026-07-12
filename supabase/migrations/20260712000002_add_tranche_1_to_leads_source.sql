@@ -27,6 +27,7 @@ ALTER TABLE leads ADD CONSTRAINT leads_source_valid
       'agency-founder-finance',
       'contractors-ir35',
       'construction-cis',
+      'test',
       'charities',
       'hospitality',
       'care',
