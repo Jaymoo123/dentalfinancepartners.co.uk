@@ -1,5 +1,5 @@
 /**
- * Charities-site analytics console — main dashboard.
+ * Hospitality-site analytics console — main dashboard.
  *
  * Cookie-gated (OB-01): credential travels in an HttpOnly session cookie, never
  * the URL. Every console route checks the cookie via checkAuth(). noindex on all
