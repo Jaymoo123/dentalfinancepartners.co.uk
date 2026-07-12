@@ -1,0 +1,58 @@
+{
+  "niche_id": "hospitality",
+  "display_name": "BRAND_TBD Hospitality Accountancy",
+  "legal_name": "BRAND_TBD Hospitality Accountancy Ltd",
+  "partner": null,
+  "company": {
+    "number": "16358723",
+    "place_of_registration": "England and Wales",
+    "registered_office": {
+      "line1": "20 Ashfield Avenue",
+      "line2": "Shipley",
+      "city": "Bradford",
+      "postcode": "BD18 3AL"
+    },
+    "vat_number": null,
+    "enquiry_retention_months": 24
+  },
+  "domain": "www.brand-tbd-hospitality.invalid",
+  "tagline": "UK hospitality businesses (pubs, restaurants, hotels, cafes, takeaways): accounts, tronc and tips compliance, VAT and payroll",
+  "description": "UK hospitality businesses (pubs, restaurants, hotels, cafes, takeaways): accounts, tronc and tips compliance, VAT and payroll",
+  "brand": {
+    "primary_color": "#b0532f",
+    "logo_path": "/brand/logo.png",
+    "publisher_logo_url": "/api/og"
+  },
+  "contact": {
+    "email": "hello@brand-tbd-hospitality.invalid",
+    "phone": "+44 20 0000 0000"
+  },
+  "navigation": [
+    {
+      "label": "Services",
+      "href": "/services"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "content_strategy": {
+    "audience": "UK hospitality owner-operators: publicans, restaurateurs, hoteliers, cafe and takeaway owners, caterers",
+    "categories": [
+      "Accounts and Bookkeeping",
+      "Food and Drink VAT",
+      "Tronc, Tips and Payroll",
+      "Licensed Trade and Duty",
+      "Business Structure and Incorporation",
+      "Margins and Cost Control"
+    ],
+    "supabase_table": "blog_topics",
+    "site_key": "hospitality",
+    "source_identifier": "hospitality"
+  }
+}

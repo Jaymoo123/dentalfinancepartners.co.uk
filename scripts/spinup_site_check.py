@@ -470,11 +470,17 @@ def check_8_ci_matrix(site_key: str) -> None:
     found = False
     for line in text.splitlines():
         stripped = line.strip()
+        # Legacy YAML matrix format: "- site: Dentists"
         if stripped.startswith("- site:"):
             entry_name = stripped.split(":", 1)[1].strip()
-            if entry_name in variants or entry_name == site_key:
-                found = True
-                break
+        # Current format: SITES='...' list of "dir|url" lines
+        elif "|http" in stripped:
+            entry_name = stripped.split("|", 1)[0].strip()
+        else:
+            continue
+        if entry_name in variants or entry_name == site_key:
+            found = True
+            break
 
     if not found:
         gap(cid, f"Site not found in CI matrix — add matrix entry for {site_key!r} (SITE_SPINUP.md Step 5)")

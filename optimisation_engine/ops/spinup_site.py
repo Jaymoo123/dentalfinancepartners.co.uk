@@ -437,17 +437,19 @@ SITE_CONFIG: dict = {{
 # storagePrefix collision check.
 # ---------------------------------------------------------------------------
 
-# Known key lists as of 2026-07-11. The emitted migration header instructs the
-# applier to re-read the LIVE constraint defs before applying (constraint
-# contents have drifted from repo files before; construction-cis migration is
-# still pending sign-off).
+# Known key lists as of 2026-07-12 (charities pilot migration APPLIED live
+# 2026-07-11 — both constraints now include 'charities'). The emitted migration
+# header instructs the applier to re-read the LIVE constraint defs before
+# applying (constraint contents have drifted from repo files before;
+# construction-cis migration is still pending sign-off).
 EXISTING_SITE_KEYS = [
     "property", "dentists", "medical", "solicitors", "agency", "generalist",
-    "contractors-ir35", "construction-cis",
+    "contractors-ir35", "construction-cis", "charities",
 ]
 EXISTING_LEAD_SOURCES = [
     "dentists", "property", "medical", "solicitors", "generalist", "general",
     "agency", "agency-founder-finance", "contractors-ir35", "construction-cis",
+    "charities",
 ]
 
 STATE_MD = """# {niche} ({display_name}) site state
