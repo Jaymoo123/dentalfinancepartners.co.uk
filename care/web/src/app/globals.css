@@ -1,0 +1,23 @@
+/* Tailwind source("..") scans from src/ relative to this file. */
+@import "tailwindcss" source("..");
+
+:root {
+  --background: #ffffff;
+  --surface: #f8fafc;
+  --surface-elevated: #ffffff;
+  --ink: #0f172a;
+  --ink-soft: #334155;
+  --muted: #475569;
+  --border: #e2e8f0;
+
+  /* Canonical brand tokens for @accounting-network/web-shared components. */
+  --brand-primary: #7d6b9e;
+  --brand-primary-strong: #7d6b9e;
+  --brand-on-primary: #ffffff;
+}
+
+body {
+  background: var(--background);
+  color: var(--ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+}

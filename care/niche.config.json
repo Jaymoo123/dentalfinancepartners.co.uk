@@ -1,0 +1,58 @@
+{
+  "niche_id": "care",
+  "display_name": "BRAND_TBD Care Accountancy",
+  "legal_name": "BRAND_TBD Care Accountancy Ltd",
+  "partner": null,
+  "company": {
+    "number": "16358723",
+    "place_of_registration": "England and Wales",
+    "registered_office": {
+      "line1": "20 Ashfield Avenue",
+      "line2": "Shipley",
+      "city": "Bradford",
+      "postcode": "BD18 3AL"
+    },
+    "vat_number": null,
+    "enquiry_retention_months": 24
+  },
+  "domain": "www.brand-tbd-care.invalid",
+  "tagline": "UK care providers (care homes, domiciliary care, supported living): accounts, payroll, VAT and CQC-linked financial compliance",
+  "description": "UK care providers (care homes, domiciliary care, supported living): accounts, payroll, VAT and CQC-linked financial compliance",
+  "brand": {
+    "primary_color": "#7d6b9e",
+    "logo_path": "/brand/logo.png",
+    "publisher_logo_url": "/api/og"
+  },
+  "contact": {
+    "email": "hello@brand-tbd-care.invalid",
+    "phone": "+44 20 0000 0000"
+  },
+  "navigation": [
+    {
+      "label": "Services",
+      "href": "/services"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "content_strategy": {
+    "audience": "UK care providers: care home owners and directors, domiciliary care agency owners, supported living operators",
+    "categories": [
+      "Care Home Accounts and Funding",
+      "Payroll and Workforce Costs",
+      "VAT and Welfare Exemption",
+      "CQC and Financial Compliance",
+      "Business Structure and Acquisition",
+      "Fees, FNC and Local Authority Rates"
+    ],
+    "supabase_table": "blog_topics",
+    "site_key": "care",
+    "source_identifier": "care"
+  }
+}

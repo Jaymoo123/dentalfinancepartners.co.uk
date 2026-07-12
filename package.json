@@ -18,7 +18,8 @@
     "construction-cis/web",
     "console/web",
     "charities/web",
-    "hospitality/web"
+    "hospitality/web",
+    "care/web"
   ],
   "engines": {
     "node": ">=20"
