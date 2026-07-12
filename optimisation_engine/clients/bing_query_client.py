@@ -79,6 +79,7 @@ DEFAULT_SITE_URL = {
     "construction-cis": "https://www.tradetaxspecialists.co.uk",
     "charities":        "https://www.brand-tbd-charities.invalid",
     "hospitality":      "https://www.brand-tbd-hospitality.invalid",
+    "care":             "https://www.brand-tbd-care.invalid",
 }
 
 

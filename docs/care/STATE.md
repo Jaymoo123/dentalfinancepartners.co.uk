@@ -18,7 +18,7 @@ brand_locked: false
 - [ ] S1 brand lock (owner gate G1): flip `brand_locked: true` above, record brand spec
 - [x] S2 scaffold DONE 2026-07-12: spinup_site run (storage prefix carf), checks 1+2+8 PASS, npm build green. R4 shortlist: expansion_research/tier1_care/BRAND_SHORTLIST.md (rec: Care Finance Partners). NOTE: deploy hold until medical watch ~2026-08-03 applies to DEPLOY only, not build
 - [x] S3 DONE 2026-07-12: sites row was already live via the t1 migration pair (applied during hospitality S3); 652 blog_topics seeded from tier1_care/topic_pool_final.json (54 with volume, priority deciles) via scripts/_seed_expansion_topics.py
-- [ ] S4 machinery composition per SITE_SPINUP.md Step 2 (vitest, tsc, headers)
+- [x] S4 DONE 2026-07-12: analytics SDK (prefix carf), API/admin routes, security headers, blog apparatus, vitest harness, engine maps, seo_persona in site_configs/care.py; niche.config extended to validator-required shape (BRAND_TBD placeholders). spinup_site_check 11 PASS (09/11 expected pre-launch); build + 3/3 tests green, manager-verified
 - [ ] S5 niche build: calculators (golden-figure vitest), data asset, house_positions.md, rates ledger
 - [ ] S6 launch-core content generated + predeploy_gate green (brand lint precondition)
 - [ ] S7 Vercel project + preview an01 pass + live battery (gates G3/G4)

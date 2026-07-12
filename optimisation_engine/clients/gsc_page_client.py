@@ -45,6 +45,7 @@ _SITE_URL_MAP = {
     "construction-cis":  "sc-domain:tradetaxspecialists.co.uk",
     "charities":         "sc-domain:brand-tbd-charities.invalid",
     "hospitality":       "sc-domain:brand-tbd-hospitality.invalid",
+    "care":              "sc-domain:brand-tbd-care.invalid",
 }
 
 

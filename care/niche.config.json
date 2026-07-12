@@ -28,18 +28,9 @@
     "phone": "+44 20 0000 0000"
   },
   "navigation": [
-    {
-      "label": "Services",
-      "href": "/services"
-    },
-    {
-      "label": "About",
-      "href": "/about"
-    },
-    {
-      "label": "Contact",
-      "href": "/contact"
-    }
+    { "label": "Services", "href": "/services" },
+    { "label": "About", "href": "/about" },
+    { "label": "Contact", "href": "/contact" }
   ],
   "content_strategy": {
     "audience": "UK care providers: care home owners and directors, domiciliary care agency owners, supported living operators",
@@ -54,5 +45,53 @@
     "supabase_table": "blog_topics",
     "site_key": "care",
     "source_identifier": "care"
-  }
+  },
+  "footer_links": [
+    { "label": "Contact", "href": "/contact" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Privacy Policy", "href": "/privacy-policy" }
+  ],
+  "locations": [],
+  "seo": {
+    "locale": "en_GB",
+    "organization_type": "AccountingService",
+    "service_areas": ["United Kingdom"],
+    "google_analytics_id": "",
+    "theme_color": "#7d6b9e",
+    "search_console_verification": {
+      "google": "",
+      "bing": "",
+      "yandex": "",
+      "naver": "",
+      "pinterest": ""
+    }
+  },
+  "lead_form": {
+    "role_label": "I am a...",
+    "role_options": [
+      { "value": "Care home owner or director", "label": "Care home owner or director" },
+      { "value": "Domiciliary care agency owner", "label": "Domiciliary care agency owner" },
+      { "value": "Supported living operator", "label": "Supported living operator" },
+      { "value": "Care home manager", "label": "Care home manager" },
+      { "value": "Other care provider", "label": "Other care provider" }
+    ],
+    "placeholders": {
+      "name": "Alex Smith",
+      "email": "alex@yourcarehome.co.uk",
+      "phone": "07700 000000",
+      "message": "e.g. Help with welfare VAT, CQC financial compliance, payroll or annual accounts for our care home..."
+    }
+  },
+  "cta": {
+    "sticky_primary": "Speak to a care sector accounts specialist",
+    "sticky_secondary": "Free, no-obligation reply within 24 hours",
+    "sticky_button": "Get in touch"
+  },
+  "blog": {
+    "cta_heading": "Need help with your care business accounts?",
+    "cta_body": "Tell us about your care service and we will come back within 24 hours.",
+    "cta_button": "Get in touch"
+  },
+  "shared_components_version": "1.0.0",
+  "last_sync": null
 }

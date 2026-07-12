@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildSecurityHeaders } from "@accounting-network/web-shared/lib/security-headers";
+import niche from "../niche.config.json" with { type: "json" };
 
 const appDir = path.dirname(fileURLToPath(import.meta.url));
 // Repo root is two levels up: care/web -> care -> Accounting (repo root).
@@ -15,15 +17,18 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "images.pexels.com" },
     ],
   },
+  async headers() {
+    // ga: false until a GA measurement id exists; no /embed routes on this site.
+    return buildSecurityHeaders({ ga: false, supabase: true });
+  },
   async redirects() {
-    // Estate audit 2026-07: 4 live sites emit 307 on apex->www. Permanent 308
-    // in code as a fallback; ALSO set the Vercel dashboard domain redirect to
-    // 308 (permanent) when attaching the apex domain.
+    // Estate audit 2026-07: permanent 308 redirect apex->www.
+    const apex = niche.domain.replace(/^www\./, "");
     return [
       {
         source: "/:path*",
-        has: [{ type: "host", value: "brand-tbd-care.invalid" }],
-        destination: "https://www.brand-tbd-care.invalid/:path*",
+        has: [{ type: "host", value: apex }],
+        destination: `https://${niche.domain}/:path*`,
         permanent: true,
       },
     ];

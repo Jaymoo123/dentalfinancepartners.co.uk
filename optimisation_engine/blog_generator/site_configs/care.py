@@ -38,16 +38,95 @@ SITE_CONFIG: dict = {
     "post_categories": [],
     "internal_link_slugs": [],
     "anchor_terms": [],
-    "hallucination_zones": [],
-    "blog_system_prompt": """You are an expert UK accountant writing for UK care providers (care homes, domiciliary care, supported living): accounts, payroll, VAT and CQC-linked financial compliance.""".strip(),
+    # Care-specific danger zones. Verify all figures against house positions
+    # (docs/care/house_positions.md) before publishing.
+    "hallucination_zones": [
+        (
+            "Welfare VAT exemption (VATA 1994 Schedule 9, Group 7):"
+            " care services that are directly supervised by a registered health professional"
+            " and qualify as welfare services are VAT-exempt. Exemption covers domiciliary"
+            " care, supported living and residential care supplied by a registered provider."
+            " Fee income from local authority contracts typically qualifies; self-funded"
+            " resident fees also qualify. Never state a blanket rule; always verify the"
+            " specific supply against HMRC Notice 701/2 and CQC registration status."
+        ),
+        (
+            "Funded Nursing Care (FNC) rates 2026/27:"
+            " NHS England sets the FNC flat rate annually. The rate changes each April;"
+            " never state a specific pound figure without citing NHS England guidance and"
+            " the applicable financial year. FNC is paid directly to the care home from"
+            " the NHS; it does not form part of the resident's local authority fee package."
+        ),
+        (
+            "National Living Wage and National Minimum Wage:"
+            " NLW applies to workers aged 21 and over. From April 2026 the rate increased;"
+            " always cite the current rate from gov.uk rather than a hardcoded figure."
+            " Care employers face particular risk because 24-hour on-call arrangements,"
+            " sleep-in shifts and travel between clients can all create NMW underpayment"
+            " if pay is averaged incorrectly. Never assert a specific hourly figure without"
+            " citing the applicable rate year."
+        ),
+        (
+            "CQC registration and financial viability:"
+            " CQC requires registered providers to be financially viable. From April 2025"
+            " CQC's Single Assessment Framework includes a financial sustainability question."
+            " Never assert CQC registration grants any tax benefit or exemption."
+            " CQC fee scales change annually; never state a specific fee without citing"
+            " the current CQC fee schedule."
+        ),
+        (
+            "Care home acquisitions and Stamp Duty Land Tax:"
+            " Residential SDLT rates do not apply to care home acquisitions; these are"
+            " commercial property transactions attracting non-residential SDLT rates."
+            " Mixed-use and furnished holiday let rules do not apply to care homes."
+            " Structures and Buildings Allowance (SBA) at 3% per annum applies to"
+            " qualifying care home construction or renovation expenditure."
+        ),
+        (
+            "Employer NIC 2026/27: 15% above the £5,000 secondary threshold."
+            " The old 13.8%/£9,100 figures are STALE. Employment Allowance up to £10,500."
+            " Care employers with large low-wage workforces face disproportionate NIC"
+            " cost increases; Employment Allowance eligibility should always be verified"
+            " (connected companies share a single allowance)."
+        ),
+    ],
+    "banned_phrases": [
+        "care is VAT-free",
+        "all care is exempt",
+        "13.8%",
+        "£9,100",
+        "CQC approval means tax-exempt",
+        "sleep-in shifts are excluded from NMW",
+    ],
+    "blog_system_prompt": (
+        "You are an expert UK accountant writing for UK care providers:"
+        " care home owners and directors, domiciliary care agency owners,"
+        " and supported living operators."
+        " Topics include welfare VAT exemption and VAT recovery structures,"
+        " workforce costs and NLW pressure, Funded Nursing Care (FNC) rates,"
+        " local authority fee negotiations, CQC registration linked financial"
+        " compliance, and care home acquisitions including SBA."
+        " Write in plain English. UK English only. Never use em-dashes."
+    ).strip(),
 
     "seo_persona": {
-        "audience": "UK care providers (care homes, domiciliary care, supported living): accounts, payroll, VAT and CQC-linked financial compliance",
-        "language_cues": [],
-        "preferred_hooks": [],
+        "audience": (
+            "UK care providers: care home owners and directors,"
+            " domiciliary care agency owners, supported living operators"
+        ),
+        "language_cues": [
+            "care home", "domiciliary care", "supported living", "CQC",
+            "local authority", "funded nursing care", "FNC", "NLW", "sleep-in",
+        ],
+        "preferred_hooks": [
+            "what care home owners need to know about",
+            "how UK care providers handle",
+            "the tax rules for",
+            "VAT for care providers",
+        ],
         "banned_openers_extra": [],
         "brand_authority": "mid",
-        "geo_qualifiers": ["UK"],
-        "voice_signature": "specialist, evidence-driven, plain English",
+        "geo_qualifiers": ["UK", "England", "England and Wales"],
+        "voice_signature": "plain-English specialist authority, no em-dashes, UK English",
     },
 }
