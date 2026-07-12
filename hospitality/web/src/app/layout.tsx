@@ -1,50 +1,68 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
+import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
+import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
+import { niche } from "@/config/niche-loader";
 
-const siteUrl = "https://www.brand-tbd-hospitality.invalid";
+const siteUrl = `https://${niche.domain}`;
 
-// Estate audit 2026-07 fixes baked in at scaffold time:
-// - description trimmed to <=155 chars by spinup (meta-length defect)
-// - og:image is the dynamic 1200x630 PNG route /api/og (never an SVG)
-// - Organization JSON-LD present from day one (lawyers/agency schema defect)
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": ["ProfessionalService", "AccountingService"],
   "@id": `${siteUrl}#organization`,
-  name: "BRAND_TBD Hospitality Accountancy",
+  name: niche.display_name,
   url: siteUrl,
-  description: "UK hospitality businesses (pubs, restaurants, hotels, cafes, takeaways): accounts, tronc and tips compliance, VAT and payroll",
+  description: niche.description,
   logo: `${siteUrl}/api/og`,
   areaServed: "GB",
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: niche.seo.theme_color,
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "BRAND_TBD Hospitality Accountancy",
-  description: "UK hospitality businesses (pubs, restaurants, hotels, cafes, takeaways): accounts, tronc and tips compliance, VAT and payroll",
-  alternates: { canonical: siteUrl },
+  title: {
+    default: `${niche.display_name} | ${niche.tagline}`,
+    template: `%s | ${niche.display_name}`,
+  },
+  description: niche.description,
+  alternates: {
+    canonical: siteUrl,
+    languages: { "en-GB": siteUrl, "x-default": siteUrl },
+  },
+  verification: {
+    google: niche.seo.search_console_verification?.google || undefined,
+    yandex: niche.seo.search_console_verification?.yandex || undefined,
+    other: {
+      ...(niche.seo.search_console_verification?.bing
+        ? { "msvalidate.01": niche.seo.search_console_verification.bing }
+        : {}),
+    },
+  },
   openGraph: {
     type: "website",
-    locale: "en_GB",
+    locale: niche.seo.locale,
     url: siteUrl,
-    siteName: "BRAND_TBD Hospitality Accountancy",
-    title: "BRAND_TBD Hospitality Accountancy",
-    description: "UK hospitality businesses (pubs, restaurants, hotels, cafes, takeaways): accounts, tronc and tips compliance, VAT and payroll",
-    images: [{ url: "/api/og", width: 1200, height: 630, alt: "BRAND_TBD Hospitality Accountancy" }],
+    siteName: niche.display_name,
+    title: niche.display_name,
+    description: niche.description,
+    images: [{ url: "/api/og", width: 1200, height: 630, alt: niche.display_name }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "BRAND_TBD Hospitality Accountancy",
-    description: "UK hospitality businesses (pubs, restaurants, hotels, cafes, takeaways): accounts, tronc and tips compliance, VAT and payroll",
+    title: niche.display_name,
+    description: niche.description,
     images: ["/api/og"],
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en-GB">
       <head>
@@ -53,7 +71,27 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
       </head>
-      <body>{children}</body>
+      <body className="antialiased">
+        {/*
+         * AN-01 (opt-out posture): track by default under legitimate interest.
+         * storagePrefix "hfp" FROZEN (spinup 2026-07-12) — a hardcoded literal by
+         * design, NEVER from config or env (changing it orphans visitor identities).
+         * PF-07: siteKey sourced from niche config, never a literal.
+         * GA id is currently empty — ConsentedScripts renders nothing when empty.
+         */}
+        <ConsentProvider>
+          <AnalyticsProvider
+            siteKey={niche.content_strategy.site_key}
+            siteName={niche.display_name}
+            storagePrefix="hfp"
+            posture="opt-out"
+            noTrackPrefixes={["/admin"]}
+          >
+            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
+            {children}
+          </AnalyticsProvider>
+        </ConsentProvider>
+      </body>
     </html>
   );
 }

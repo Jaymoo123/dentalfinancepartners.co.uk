@@ -38,16 +38,76 @@ SITE_CONFIG: dict = {
     "post_categories": [],
     "internal_link_slugs": [],
     "anchor_terms": [],
-    "hallucination_zones": [],
-    "blog_system_prompt": """You are an expert UK accountant writing for UK hospitality businesses (pubs, restaurants, hotels, cafes, takeaways): accounts, tronc and tips compliance, VAT and payroll.""".strip(),
+    # Hospitality-specific danger zones. Verify all figures against house positions
+    # (docs/hospitality/house_positions.md) before publishing.
+    "hallucination_zones": [
+        (
+            "Employment (Allocation of Tips) Act 2023 (in force 1 October 2024):"
+            " employers must pass 100% of tips, gratuities and service charges to workers;"
+            " no deduction permitted except for processing fees (card tips only, HMRC-approved)."
+            " Written tronc policy required. Tips paid via a tronc scheme administered by an"
+            " independent troncmaster are NIC-free for employer and worker; employer-administered"
+            " tips attract employer and employee NIC. Never state the Act came into force before"
+            " October 2024, and never say employers can retain any tip amount."
+        ),
+        (
+            "Food VAT edge cases (verify against house positions):"
+            " cold takeaway food is zero-rated; hot takeaway food is standard-rated (20%)."
+            " Food consumed on-premises is always standard-rated. Alcohol is always standard-rated."
+            " Cakes are zero-rated (not confectionery). Crisps and snack foods are standard-rated."
+            " Mixed supplies (e.g. meal deals) require apportionment. Never state a blanket rule;"
+            " always flag the specific edge case."
+        ),
+        (
+            "Draught Relief (Beer Duty):"
+            " From 1 August 2023 draught products (beer/cider below 8.5% ABV sold in containers"
+            " of >= 20 litres) attract a reduced duty rate. The rate changes with each fiscal event;"
+            " never state a specific pence-per-litre figure without citing gov.uk and the date."
+            " Applies to on-trade licensed premises only."
+        ),
+        (
+            "Hospitality employer NIC (2026/27): 15% above the £5,000 secondary threshold."
+            " The old 13.8%/£9,100 figures are STALE. Employment Allowance up to £10,500 applies."
+            " High staff turnover and seasonal workers create NIC complexity; tronc structuring"
+            " can reduce NIC exposure only where a genuine independent troncmaster is in place."
+        ),
+        (
+            "VAT registration: normal £90,000 threshold applies. Seasonal hospitality businesses"
+            " must monitor rolling 12-month turnover carefully as peaks can trigger registration."
+            " Never state hospitality businesses get any sector-specific VAT threshold."
+        ),
+    ],
+    "banned_phrases": [
+        "employers can keep tips",
+        "retain service charges",
+        "tips are optional",
+        "13.8%",
+        "£9,100",
+        "food is VAT-free",
+        "restaurants don't pay VAT",
+    ],
+    "blog_system_prompt": (
+        "You are an expert UK accountant writing for UK hospitality owner-operators:"
+        " publicans, restaurateurs, hoteliers, cafe and takeaway owners and caterers."
+        " Topics include tronc and tips compliance (Employment (Allocation of Tips) Act 2023),"
+        " food and drink VAT edge cases, draught relief, payroll, accounts and cost control."
+        " Write in plain English. UK English only. Never use em-dashes."
+    ).strip(),
 
     "seo_persona": {
-        "audience": "UK hospitality businesses (pubs, restaurants, hotels, cafes, takeaways): accounts, tronc and tips compliance, VAT and payroll",
-        "language_cues": [],
-        "preferred_hooks": [],
+        "audience": (
+            "UK hospitality owner-operators: publicans, restaurateurs, hoteliers,"
+            " cafe and takeaway owners, caterers"
+        ),
+        "language_cues": ["pub", "restaurant", "hotel", "cafe", "takeaway", "venue", "licence"],
+        "preferred_hooks": [
+            "what hospitality businesses need to know about",
+            "how UK pubs and restaurants handle",
+            "the tax rules for",
+        ],
         "banned_openers_extra": [],
         "brand_authority": "mid",
-        "geo_qualifiers": ["UK"],
-        "voice_signature": "specialist, evidence-driven, plain English",
+        "geo_qualifiers": ["UK", "England and Wales"],
+        "voice_signature": "plain-English specialist authority, no em-dashes, UK English",
     },
 }

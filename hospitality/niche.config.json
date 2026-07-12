@@ -54,5 +54,54 @@
     "supabase_table": "blog_topics",
     "site_key": "hospitality",
     "source_identifier": "hospitality"
-  }
+  },
+  "footer_links": [
+    { "label": "Contact", "href": "/contact" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Privacy Policy", "href": "/privacy-policy" }
+  ],
+  "locations": [],
+  "seo": {
+    "locale": "en_GB",
+    "organization_type": "AccountingService",
+    "service_areas": ["United Kingdom"],
+    "google_analytics_id": "",
+    "theme_color": "#b0532f",
+    "search_console_verification": {
+      "google": "",
+      "bing": "",
+      "yandex": "",
+      "naver": "",
+      "pinterest": ""
+    }
+  },
+  "lead_form": {
+    "role_label": "I am a...",
+    "role_options": [
+      { "value": "Pub or bar owner", "label": "Pub or bar owner" },
+      { "value": "Restaurant or cafe owner", "label": "Restaurant or cafe owner" },
+      { "value": "Hotel owner or manager", "label": "Hotel owner or manager" },
+      { "value": "Takeaway owner", "label": "Takeaway owner" },
+      { "value": "Caterer", "label": "Caterer" },
+      { "value": "Other hospitality business", "label": "Other hospitality business" }
+    ],
+    "placeholders": {
+      "name": "Alex Smith",
+      "email": "alex@yourvenue.co.uk",
+      "phone": "07700 000000",
+      "message": "e.g. Help with tronc setup, food VAT, or annual accounts for our restaurant..."
+    }
+  },
+  "cta": {
+    "sticky_primary": "Speak to a hospitality accounts specialist",
+    "sticky_secondary": "Free, no-obligation reply within 24 hours",
+    "sticky_button": "Get in touch"
+  },
+  "blog": {
+    "cta_heading": "Need help with your hospitality business accounts?",
+    "cta_body": "Tell us about your venue and we will come back within 24 hours.",
+    "cta_button": "Get in touch"
+  },
+  "shared_components_version": "1.0.0",
+  "last_sync": null
 }

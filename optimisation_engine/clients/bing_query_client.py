@@ -77,6 +77,8 @@ DEFAULT_SITE_URL = {
     "agency":           "https://agencyfounderfinance.co.uk",
     "contractors-ir35": "https://www.contractortaxaccountants.co.uk",
     "construction-cis": "https://www.tradetaxspecialists.co.uk",
+    "charities":        "https://www.brand-tbd-charities.invalid",
+    "hospitality":      "https://www.brand-tbd-hospitality.invalid",
 }
 
 

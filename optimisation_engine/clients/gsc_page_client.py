@@ -43,6 +43,8 @@ _SITE_URL_MAP = {
     "generalist":        "sc-domain:hollowaydavies.co.uk",
     "contractors-ir35":  "sc-domain:contractortaxaccountants.co.uk",
     "construction-cis":  "sc-domain:tradetaxspecialists.co.uk",
+    "charities":         "sc-domain:brand-tbd-charities.invalid",
+    "hospitality":       "sc-domain:brand-tbd-hospitality.invalid",
 }
 
 
