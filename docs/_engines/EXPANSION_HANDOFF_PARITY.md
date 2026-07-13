@@ -1,6 +1,8 @@
 # Expansion handoff — bring every Tier-1 site to the charities standard
 
-Written 2026-07-12 (session close, branch `expansion/phase-0`). Owner directive: advance
+Updated 2026-07-13 after the parity session of 2026-07-12 (see "Progress log" below):
+all six R4 shortlists are done, and hospitality + care are at FULL parity minus wave-1
+briefs. Originally written 2026-07-12 (branch `expansion/phase-0`). Owner directive: advance
 every approved Tier-1 site to the same state as the charities pilot, so each sits
 **G1-gated only** (owner picks brand + buys domain → content + preview flow immediately).
 Methodology: [EXPANSION_PROGRAM.md](EXPANSION_PROGRAM.md). Live state:
@@ -34,16 +36,45 @@ What "done to charities standard" means — charities has ALL of these, committe
 ## Per-site work queue (order = tranche order; ONE site at a time through S2-S5, then
 brief-prep agents can overlap the next site's S2)
 
-| # | Site | Has | Needs |
+All six R4 brand shortlists were batch-produced + independently RDAP re-verified 2026-07-12
+(`expansion_research/tier1_*/BRAND_SHORTLIST.md`); owner can pick brands in bulk.
+
+| # | Site | Has (as of 2026-07-13) | Needs |
 |---|---|---|---|
-| 1 | hospitality | R3 dossier (volume-enriched in its own run) | R4 shortlist → S2-S5 → briefs. NOTE: 4 Holloway Davies overlap posts — fence at brief level unless owner rules otherwise |
-| 2 | care | R3 enriched 2026-07-12 | R4 → S2-S5 → briefs. Tracker note "after medical watch ~08-03" applies to DEPLOY, not build. Launch core: 22 pages + 3 tools (FNC calc promoted to 4th) + Care Provider Business Index |
-| 3 | startups-tech | R3 dossier | R4 → S2-S5 → briefs. **Reflex SaaS conflict is an open owner question — flag before brief-writing, not after** |
-| 4 | pharmacies | R3 enriched 2026-07-12 | R4 → S2-S5 → briefs. 26 pages + 3 tools + Openings & Closures Index (NHSBSA schema check is a build step). Medical-adjacency wall enforced at page level |
-| 5 | crypto | R3 enriched 2026-07-12 | R4 → S2-S5 → briefs. Route around Koinly/Recap DIY heads per LAUNCH_CORE; HMRC-disclosure service page is the top money surface |
-| 6 | ecommerce | R3 enriched 2026-07-12 | R4 → S2-S5 → briefs, BUILD LAST. 14-page core; side-hustle/platform-reporting block first. **Blocked-ish: generalist overlap ruling (6 live "Accountant For [ecommerce]" pages) should precede brief-writing** |
-| — | manufacturing | R3 complete, PARK RECOMMENDED | Nothing until owner ratifies or overrides. If overridden: volumes already pulled, run s5b enrichment then the normal line |
+| 1 | hospitality | R4 + **S2-S5 DONE 2026-07-12** (3 calculators 30/30 tests; Openings & Closures Index run for real, pub headline 42,280; house_positions 28 positions checker-verified; 1,257 topics seeded) | Wave-1 briefs ONLY (Opus-heavy; owner budget-gated it 2026-07-12). Fence the 4 Holloway Davies overlap posts at brief level unless owner rules otherwise |
+| 2 | care | R4 + **S2-S5 DONE 2026-07-12** (4 calculators incl. FNC & fee-mix, 18/18 tests; Care Provider Business Index run for real, 67,261 companies / 57,725 CQC locations; house_positions 30 positions checker-verified; 652 topics seeded) | Wave-1 briefs ONLY. "after medical watch ~08-03" applies to DEPLOY, not briefs |
+| 3 | startups-tech | R4 shortlist (rec: Founder Finance Partners, prefix ffp); Supabase sites row + leads source already LIVE via t1 migration pair | S2-S5 → briefs. **Reflex SaaS conflict is an open owner question — flag before brief-writing, not after** |
+| 4 | pharmacies | R4 shortlist (rec: Pharmacy Finance Partners, phfp); R3 enriched | S2-S5 → briefs (t2 migration pair with crypto — ONE pair). 26 pages + 3 tools + Openings & Closures Index (NHSBSA schema check is a build step). Medical-adjacency wall at page level |
+| 5 | crypto | R4 shortlist (rec: Digital Asset Tax Partners, datp); R3 enriched | S2-S5 → briefs (t2 pair with pharmacies). Route around Koinly/Recap DIY heads; HMRC-disclosure service page is the top money surface |
+| 6 | ecommerce | R4 shortlist (rec: Ecommerce Tax Partners, ectp); R3 enriched | S2-S5 → briefs, BUILD LAST (t3 pair). 14-page core; side-hustle/platform-reporting block first. **Generalist overlap ruling should precede brief-writing** |
+| — | manufacturing | R3 complete, PARK RECOMMENDED (no R4 run, deliberately) | Nothing until owner ratifies or overrides |
 | — | charities (pilot) | EVERYTHING | G1 only. On the pick: swap niche.config brand/domain → `predeploy_gate.py --site charities --brand-only` PASS → 29-page launch core from briefs → `scripts/vercel_create_site.py` + live battery |
+
+## Progress log + operational learnings (2026-07-12 session)
+
+- **Commits** (all on `expansion/phase-0`): R4 batch → hospitality S2 / S3 / S4 / S5 →
+  care S2+S3 / S4 / S5. Working pattern that held: Sonnet workers build (S4 machinery port,
+  calculators, data-asset pipeline, house_positions producer), Haiku checker verifies
+  house_positions, manager independently re-runs checker/build/tests + brand/em-dash lint
+  before every commit, and reconciles figures ACROSS agents (caught FNC year-label mismatch).
+- **t1 Supabase migration pair APPLIED live 2026-07-12** (hospitality+care+startups-tech rows,
+  active=false). The mandatory live-constraint re-read caught TWO would-be regressions:
+  generator omitted 'charities' and the live 'test' lead source. Generator lists fixed in
+  `optimisation_engine/ops/spinup_site.py`. **Gotcha: re-running spinup for a same-tranche
+  site on the same day OVERWRITES the applied migration files — `git checkout` them back
+  after the run** (done for care; will recur for startups-tech, pharmacies/crypto t2).
+- `scripts/spinup_site_check.py` check 08 now parses the current `SITES='dir|url'` CI format.
+- **Generic seeder**: `scripts/_seed_expansion_topics.py <site_key> <pool_final.json> <tag>`
+  (idempotence-guarded) replaces per-site seed scripts.
+- **s5b finalise**: hospitality lacked one; pattern = copy `pilot_charities/s5b_finalise.py`,
+  apply manager judgment to `borderline_for_judgment` (restore false positives, keep
+  estate-overlap dupes fenced), junk-sweep, cluster. Care/pharmacies/crypto/ecommerce already
+  have `topic_pool_final.json` — check before writing a new s5b.
+- **New ground truths found during S5 verification** (memory + `docs/care/rates_ledger.json`):
+  FNC £267.68/week is the **2026-27** England rate (2025-26 was £254.06); **BADR 18% from
+  6 Apr 2026** (spec docs assumed 10% — estate-wide stale-figure sweep pending); tronc NIC
+  exemption anchors to **NIM02922**, not NIM02935 (outline was wrong).
+- S4/S5 reference implementations, freshest first: care → hospitality → charities.
 
 ## Standing rules that bind this work (do not re-derive)
 
@@ -64,10 +95,13 @@ brief-prep agents can overlap the next site's S2)
 
 1. Read this file + EXPANSION_TRACKER.md; update tracker at every stage transition.
 2. Check owner-decision queue (below) — anything answered unblocks its site immediately.
-3. Take the topmost unblocked site in the queue and run its next stage. R4 shortlists for
-   ALL queued sites can be produced in one early batch ($0, parallel agents) so the owner
-   can pick brands in bulk.
+3. Take the topmost unblocked site in the queue and run its next stage. As of 2026-07-13
+   that is: **startups-tech S2** (its DB rows are already live; flag Reflex before briefs),
+   OR hospitality/care wave-1 briefs if the owner has released the Opus budget for them.
 4. Commit per completed stage; never leave verified work uncommitted at handoff.
+5. Budget note (owner, 2026-07-12): weekly token allocation is tight — S2-S4 are cheap
+   (scripts + one Sonnet worker), S5 costs ~3 Sonnet workers + 1 Haiku checker, briefs are
+   the expensive Opus stage. Ask before starting a briefs batch unless already released.
 
 ## Owner decision queue (current)
 
