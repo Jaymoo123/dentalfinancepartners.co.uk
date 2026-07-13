@@ -76,6 +76,37 @@ All six R4 brand shortlists were batch-produced + independently RDAP re-verified
   exemption anchors to **NIM02922**, not NIM02935 (outline was wrong).
 - S4/S5 reference implementations, freshest first: care → hospitality → charities.
 
+## Demand-vs-coverage parse (run 2026-07-13; re-runnable, works on ANY site)
+
+One query + one ratio per site: `SELECT site_key, count(*), count(search_volume),
+sum(search_volume), count(*) FILTER (WHERE used) FROM blog_topics GROUP BY site_key`
+(via `scripts/_expansion_sql.py`), read against live md counts in `<Site>/web/content`.
+"Measured volume" counts only clusters with a DataForSEO figure; null-volume topics are
+uncounted long-tail, so these are FLOORS.
+
+**New niches (pre-launch), measured monthly volume in pool:**
+charities 116,600 · crypto 114,690 (heads are DIY/brand noise — koinly 6,600, blockchain
+explorer 6,600; usable money volume is far lower, per the dossier's route-around ruling) ·
+hospitality 34,300 · pharmacies 18,080 (dominated by one informational head, drug tariff
+14,800) · ecommerce 16,400 · care 6,750 · manufacturing 0 measured (supports PARK).
+
+**Existing sites — the actionable findings:**
+1. **medical: 62 topics, ALL volume-measured (32,926/mo), 0 used.** The whole enriched pool
+   sits untouched. Content is deploy-held by the discovery watch (~08-03), but briefs/writing
+   are not.
+2. **solicitors: 65 of 78 topics unused, 27,980/mo measured.** Biggest ready-to-write
+   backlog with known demand.
+3. **property: pool 85% exhausted (423/495 used).** The next constraint is pool REFILL
+   (R3-style sweep), not writing.
+4. **dentists (139), generalist (303), agency (314), contractors-ir35 (644 topics, only 225
+   used): ZERO volume data.** Their pools predate volume enrichment. The R3 paid-pull step
+   (`scripts/_r3_paid_pulls.py`, ~$0.25-0.42/site) would rank these backlogs by measured
+   demand — contractors-ir35 alone has 419 unused topics currently ordered blind.
+
+Recipe to onboard an existing site to this parse: run the DataForSEO enrichment against its
+blog_topics primary keywords → backfill search_volume/keyword_difficulty → re-decile
+priority. Same spend guard rules as R3 (manager-only lift via DATAFORSEO_ABORT_AT).
+
 ## Standing rules that bind this work (do not re-derive)
 
 - Brand+domain locked before ANY content; briefs are brand-agnostic; predeploy brand lint.
