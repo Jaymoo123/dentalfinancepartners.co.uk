@@ -93,6 +93,13 @@ export async function GET(req: NextRequest) {
         />
       </div>
     ),
-    { width: 1200, height: 630 },
+    {
+      width: 1200,
+      height: 630,
+      // ponytail: these OG-image URLs leak into GSC via og:image tags. noindex
+      // de-lists them without robots-blocking (which would freeze junk already
+      // in the index). Social scrapers ignore X-Robots-Tag, so previews still work.
+      headers: { "X-Robots-Tag": "noindex" },
+    },
   );
 }
