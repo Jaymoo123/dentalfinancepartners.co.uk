@@ -34,7 +34,7 @@ faqs:
 - question: "What is SafeRec and how does it verify compliance?"
   answer: "SafeRec is an independent auditing technology that checks every individual payslip an umbrella issues against the umbrella's own Real Time Information (RTI) submission to HMRC and its reconciliation of the assignment rate. Where an FCSA or Professional Passport accreditation is a point-in-time audit renewed annually, SafeRec runs continuously on each pay run, which makes it a stronger real-time signal that the payroll is actually compliant on the payslip in front of you. Some agencies now require SafeRec-certified umbrellas on their preferred-supplier lists. If your umbrella is SafeRec certified you can typically receive an audit report confirming your specific payslip reconciles."
 - question: "Where does HMRC publish its list of tax-avoidance schemes?"
-  answer: "HMRC maintains a published list of named tax-avoidance schemes, their promoters, and connected suppliers and individuals, on gov.uk under its 'Tax avoidance schemes currently in the spotlight' and named-scheme disclosure pages. It is searchable by scheme and promoter name. HMRC also publishes Spotlight briefings on specific arrangements, including umbrella and disguised-remuneration schemes. Before signing with any umbrella, search the umbrella's name and the names of any connected companies on that list. Being named is not the only way an umbrella can be non-compliant, but if an umbrella or a linked party is named, that is a definitive reason not to use it."
+  answer: "HMRC maintains a published list of named tax-avoidance schemes, their promoters, and enablers and suppliers, on gov.uk under its 'Current list of named tax avoidance schemes, promoters, enablers and suppliers' page, alongside its Spotlight briefings. It is searchable by scheme and promoter name. HMRC also publishes Spotlight briefings on specific arrangements, including umbrella and disguised-remuneration schemes. Before signing with any umbrella, search the umbrella's name and the names of any connected companies on that list. Being named is not the only way an umbrella can be non-compliant, but if an umbrella or a linked party is named, that is a definitive reason not to use it."
 - question: "How can I check my umbrella is actually paying my PAYE to HMRC?"
   answer: "Log into your Personal Tax Account at gov.uk and review the pay and income tax record for the current tax year. It should reflect the gross pay and income tax shown on your payslips, because a compliant umbrella reports each pay run to HMRC under Real Time Information. If your payslips show tax being deducted but your HMRC record shows little or no pay and tax, that gap suggests the deductions on your payslip may not be reaching HMRC, which is a serious warning sign. Raise it with the umbrella in writing first, then with HMRC if it is not resolved."
 - question: "What take-home percentage should make me suspicious of an umbrella?"
@@ -87,7 +87,7 @@ faqs:
 
 <h3>Professional Passport</h3>
 
-<p>Professional Passport operates a comparable independent assessment and publishes its own register at <strong>professionalpassport.org</strong>. Some agencies specify one mark, some accept either; in verification terms the process is identical. Search the exact company name, confirm current assessed status, check on the day.</p>
+<p>Professional Passport operates a comparable independent assessment and publishes its own register at <strong>professionalpassport.com</strong>. Some agencies specify one mark, some accept either; in verification terms the process is identical. Search the exact company name, confirm current assessed status, check on the day.</p>
 
 <p>What accreditation covers and what it does not is worth being honest about. Accreditation confirms the umbrella passed an audit against a recognised standard at a point in time. It is a strong signal, but it is a snapshot renewed annually, not a guarantee that this week's payroll is correct. That limitation is exactly why the next two checks exist.</p>
 
@@ -107,7 +107,7 @@ faqs:
 
 <h2>Check three: HMRC's named tax-avoidance scheme list</h2>
 
-<p>HMRC publishes, on gov.uk, a <strong>named list of tax-avoidance schemes, their promoters, and connected suppliers and individuals</strong>. It sits alongside the HMRC <strong>Spotlight</strong> briefings, which describe specific arrangements HMRC considers to be avoidance, including several aimed squarely at the umbrella and disguised-remuneration market.</p>
+<p>HMRC publishes, on gov.uk, a <strong>named list of tax-avoidance schemes, their promoters, and enablers and suppliers</strong>. It sits alongside the HMRC <strong>Spotlight</strong> briefings, which describe specific arrangements HMRC considers to be avoidance, including several aimed squarely at the umbrella and disguised-remuneration market.</p>
 
 <p>To verify against it:</p>
 

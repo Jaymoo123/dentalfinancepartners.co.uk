@@ -15,15 +15,15 @@ summary: "Dentist earnings vary enormously by role, from around £35,000 for a f
 schema: ""
 faqs:
   - question: "What is the average dentist salary in the UK after tax?"
-    answer: "It depends heavily on role. A foundation dentist takes home around £29,000 after PAYE tax and NIC on a £35,765 salary. A mid-career NHS associate earning £60,000 takes home around £45,900 after self-employed tax and NIC. A private associate at £90,000 takes home around £63,300. Principal/practice owner take-home varies widely and is often improved by incorporating."
+    answer: "It depends heavily on role. A foundation dentist takes home around £29,000 after PAYE tax and NIC on a £35,765 salary. A mid-career NHS associate earning £60,000 takes home around £46,100 after self-employed tax and NIC. A private associate at £90,000 takes home around £63,500. Principal/practice owner take-home varies widely and depends heavily on how profit is structured and retained."
   - question: "How much tax does an NHS associate dentist pay?"
-    answer: "An NHS associate earning £60,000 as a self-employed individual pays roughly £11,400 in income tax plus £2,600 in Class 4 National Insurance, leaving a take-home of around £45,900 in 2026/27 before expenses are claimed. Allowable expenses (indemnity, GDC fees, CPD, mileage) reduce the taxable profit and improve take-home."
+    answer: "An NHS associate earning £60,000 as a self-employed individual pays roughly £11,430 in income tax plus £2,460 in Class 4 National Insurance, leaving a take-home of around £46,100 in 2026/27 before expenses are claimed. Allowable expenses (indemnity, GDC fees, CPD, mileage) reduce the taxable profit and improve take-home."
   - question: "Is it worth incorporating as a dentist in 2026/27?"
-    answer: "At £100,000 of profit, incorporating and paying a £12,570 salary with the remainder as dividends saves roughly £5,000 to £6,000 compared with operating as a sole trader, depending on whether employer NIC can be relieved. The saving narrows compared with earlier years because dividend rates rose to 10.75% and 35.75% from April 2026. The NHS pension interaction must also be considered before incorporating."
+    answer: "Not automatically. At £100,000 of profit, fully extracting via a £12,570 salary plus dividends now leaves around £4,000 less in hand than operating as a sole trader, because dividend rates rose to 10.75% and 35.75% from April 2026 and corporation tax applies first. Incorporation can still win where profit is retained in the company, the company makes pension contributions, or dividends are shared with a spouse, but it is no longer an automatic saving on a full-extraction basis. The NHS pension interaction must also be considered before incorporating."
   - question: "What is a foundation dentist salary after tax in 2026/27?"
     answer: "Foundation dentists receive a salary of £35,765 under NHS England's 2024/25 rates. After income tax (20% on income above the £12,570 personal allowance) and Class 1 employee NIC (8%), take-home pay is approximately £29,270 per year, or around £2,440 per month."
   - question: "How much do hospital dentists earn after tax?"
-    answer: "Specialty registrars on NHS England pay scales earn £36,616 to £70,425 gross. At £50,000 gross a hospital dentist pays roughly £10,200 in income tax and £3,000 in NIC, taking home around £36,800. Consultants earning £99,532 to £131,964 face 40% or 45% income tax on the upper portion of that range."
+    answer: "Specialty registrars on NHS England pay scales earn roughly £53,432 to £70,425 gross basic pay. At £55,000 gross a hospital dentist pays around £9,432 in income tax and £3,111 in NIC, taking home approximately £42,457. Consultants earning £99,532 to £131,964 face 40% or 45% income tax on the upper portion of that range."
   - question: "What is the UDA rate for NHS associates and how does it affect salary?"
     answer: "UDA rates paid to NHS associates typically range from £10 to £14 per UDA, depending on the practice contract and negotiated split. An associate completing 5,000 UDAs per year at £12 per UDA earns £60,000 gross. UDA volume and the per-UDA rate together set the income level; neither is guaranteed, which is why many associates build private work alongside NHS lists."
 ---
@@ -88,7 +88,7 @@ faqs:
 <ul>
 <li>Employees (Class 1): 8% on earnings from £12,570 to £50,270; 2% above</li>
 <li>Self-employed (Class 4): 6% on profits from £12,570 to £50,270; 2% above</li>
-<li>Self-employed (Class 2): £3.45 per week (£179 per year)</li>
+<li>Self-employed: no compulsory Class 2 NIC since 6 April 2024; NI credits are given automatically where profits exceed the small profits threshold, and Class 2 is now voluntary only</li>
 </ul>
 
 <p>The lower Class 4 rate compared with Class 1 is one reason self-employed associate income is taxed differently from a salaried position at the same gross figure.</p>
@@ -121,9 +121,8 @@ faqs:
 <tr><td>Income tax: 40% on £9,730 (£50,271 to £60,000)</td><td>£3,892</td></tr>
 <tr><td>Class 4 NIC: 6% on £37,700</td><td>£2,262</td></tr>
 <tr><td>Class 4 NIC: 2% on £9,730</td><td>£195</td></tr>
-<tr><td>Class 2 NIC</td><td>£179</td></tr>
-<tr><td>Total tax and NIC</td><td>£14,068</td></tr>
-<tr><td><strong>Estimated take-home</strong></td><td><strong>£45,932</strong></td></tr>
+<tr><td>Total tax and NIC</td><td>£13,889</td></tr>
+<tr><td><strong>Estimated take-home</strong></td><td><strong>£46,111</strong></td></tr>
 </table>
 
 <p>Associates can reduce the taxable figure materially by claiming allowable expenses: professional indemnity insurance, GDC registration, CPD courses, business mileage, professional subscriptions, and protective clothing are all deductible where incurred wholly for the business. Our <a href="/blog/associate-tax/associate-dentist-tax-calculator-uk">associate dentist tax calculator</a> lets you input your expenses alongside your UDA income to see the net position.</p>
@@ -139,9 +138,8 @@ faqs:
 <tr><td>Income tax: 40% on £39,730 (£50,271 to £90,000)</td><td>£15,892</td></tr>
 <tr><td>Class 4 NIC: 6% on £37,700</td><td>£2,262</td></tr>
 <tr><td>Class 4 NIC: 2% on £39,730</td><td>£795</td></tr>
-<tr><td>Class 2 NIC</td><td>£179</td></tr>
-<tr><td>Total tax and NIC</td><td>£26,668</td></tr>
-<tr><td><strong>Estimated take-home</strong></td><td><strong>£63,332</strong></td></tr>
+<tr><td>Total tax and NIC</td><td>£26,489</td></tr>
+<tr><td><strong>Estimated take-home</strong></td><td><strong>£63,511</strong></td></tr>
 </table>
 
 <p>At £90,000, a meaningful share of income sits in the 40% band. This is the level at which pension contributions (a SIPP or additional NHS voluntary contributions), allowable expenses, and the timing of income all start to make a tangible difference. Each additional £1,000 of allowable expenses saves £400 in tax plus £20 in NIC at this income level.</p>
@@ -175,8 +173,8 @@ faqs:
 <tr><td>Director salary</td><td>(£12,570)</td></tr>
 <tr><td>Employer NIC on salary (at 15% above £5,000 secondary threshold)</td><td>(£1,136)</td></tr>
 <tr><td>Profit subject to corporation tax</td><td>£86,294</td></tr>
-<tr><td>Corporation tax at 25% (main rate)</td><td>£21,574</td></tr>
-<tr><td>Post-tax profit available as dividends</td><td>£64,720</td></tr>
+<tr><td>Corporation tax (25% less marginal relief on profits between £50,000 and £250,000)</td><td>£19,118</td></tr>
+<tr><td>Post-tax profit available as dividends</td><td>£67,176</td></tr>
 </table>
 
 <p>The director's salary of £12,570 uses the personal allowance in full, so no income tax arises on salary. On the dividends:</p>
@@ -185,20 +183,20 @@ faqs:
 <tr><th>Dividend tax item</th><th>Amount</th></tr>
 <tr><td>Dividend allowance (at 0%)</td><td>£500</td></tr>
 <tr><td>Dividends in basic-rate band: £37,200 at 10.75%</td><td>£3,999</td></tr>
-<tr><td>Dividends in higher-rate band: £27,020 at 35.75%</td><td>£9,662</td></tr>
-<tr><td>Total dividend tax</td><td>£13,661</td></tr>
+<tr><td>Dividends in higher-rate band: £29,476 at 35.75%</td><td>£10,538</td></tr>
+<tr><td>Total dividend tax</td><td>£14,537</td></tr>
 </table>
 
 <table>
 <tr><th>Total burden summary</th><th>Amount</th></tr>
 <tr><td>Employer NIC</td><td>£1,136</td></tr>
-<tr><td>Corporation tax</td><td>£21,574</td></tr>
-<tr><td>Dividend income tax</td><td>£13,661</td></tr>
-<tr><td><strong>Total tax and NIC cost</strong></td><td><strong>£36,371</strong></td></tr>
-<tr><td><strong>Cash extracted (salary + dividends)</strong></td><td><strong>£77,290</strong></td></tr>
+<tr><td>Corporation tax</td><td>£19,118</td></tr>
+<tr><td>Dividend income tax</td><td>£14,537</td></tr>
+<tr><td><strong>Total tax and NIC cost</strong></td><td><strong>£34,791</strong></td></tr>
+<tr><td><strong>Net cash extracted (salary + dividends less dividend tax)</strong></td><td><strong>£65,209</strong></td></tr>
 </table>
 
-<p>For comparison, the same £100,000 drawn as self-employed sole trader income would carry approximately £30,868 in tax and NIC, leaving take-home of £69,132. The incorporated structure extracts £77,290 against the sole trader's £69,132, a difference of around £8,158 in this illustration. The dividend rate rise from April 2026 (rates moved to 10.75% and 35.75%) narrowed the incorporation saving compared with prior years, but incorporation remains worth modelling at this profit level.</p>
+<p>For comparison, the same £100,000 as sole trader income carries approximately £30,689 in tax and NIC, leaving £69,311. On these figures the simple salary-plus-dividends route extracts £65,209, around £4,100 less than the sole trader, because the dividend rate rises from April 2026 (10.75% and 35.75%) have eroded the traditional incorporation saving on a full-extraction basis. Incorporation can still win where profit is retained in the company for future years, the company makes employer pension contributions, or dividends are shared with a spouse, but it is no longer an automatic saving at this level and needs modelling against your specific plans.</p>
 
 <p>Note that the NHS pension interaction is a critical consideration before incorporating: dividends are not pensionable, so a sole-director dentist relying entirely on a £12,570 salary for NHS pension accrual builds a much lower benefit than one on a full associate income. This can outweigh the tax saving over a career.</p>
 
@@ -243,10 +241,10 @@ faqs:
 <table>
 <tr><th>Role</th><th>Gross (illustrative)</th><th>Approx take-home</th><th>Structure</th></tr>
 <tr><td>Foundation dentist</td><td>£35,765</td><td>£29,270</td><td>PAYE employed</td></tr>
-<tr><td>NHS associate</td><td>£60,000</td><td>£45,932</td><td>Self-employed</td></tr>
-<tr><td>Private associate</td><td>£90,000</td><td>£63,332</td><td>Self-employed</td></tr>
+<tr><td>NHS associate</td><td>£60,000</td><td>£46,111</td><td>Self-employed</td></tr>
+<tr><td>Private associate</td><td>£90,000</td><td>£63,511</td><td>Self-employed</td></tr>
 <tr><td>Hospital dentist (StR)</td><td>£55,000</td><td>£42,457</td><td>PAYE employed</td></tr>
-<tr><td>Incorporated principal</td><td>£100,000 profit</td><td>£77,290 extracted</td><td>Ltd company</td></tr>
+<tr><td>Incorporated principal</td><td>£100,000 profit</td><td>£65,209 extracted (full extraction)</td><td>Ltd company</td></tr>
 </table>
 
 <p>All figures use 2026/27 income tax and NIC rates and exclude student loan repayments, NHS pension contributions, and practice expenses beyond the associate allowables discussion above. Actual take-home will vary.</p>

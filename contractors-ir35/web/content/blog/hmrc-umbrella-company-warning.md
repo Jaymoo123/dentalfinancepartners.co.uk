@@ -106,7 +106,7 @@ faqs:
 
 <h3>Step 3: Check FCSA and Professional Passport accreditation</h3>
 
-<p>Both FCSA (fcsa.org.uk) and Professional Passport (professional-passport.co.uk) publish live lists of their accredited members. Accreditation is not a guarantee of compliance in every respect, but an umbrella that is a current, good-standing member of either body is committed to compliant PAYE-only payment structures and compliant Key Information Documents. An umbrella that was never accredited, or that has been suspended or removed from the list, warrants greater scrutiny.</p>
+<p>Both FCSA (fcsa.org.uk) and Professional Passport (professionalpassport.com) publish live lists of their accredited members. Accreditation is not a guarantee of compliance in every respect, but an umbrella that is a current, good-standing member of either body is committed to compliant PAYE-only payment structures and compliant Key Information Documents. An umbrella that was never accredited, or that has been suspended or removed from the list, warrants greater scrutiny.</p>
 
 <h3>Step 4: Review your Key Information Document</h3>
 

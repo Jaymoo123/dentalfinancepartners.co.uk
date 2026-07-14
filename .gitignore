@@ -11,6 +11,7 @@ build/
 develop-eggs/
 dist/
 downloads/
+!**/public/downloads/
 eggs/
 .eggs/
 # Only ignore Python lib directories at root, not src/lib in web projects

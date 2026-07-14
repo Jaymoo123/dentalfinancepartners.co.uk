@@ -12,7 +12,7 @@ faqs:
 - question: What is the difference between civil and criminal legal aid billing?
   answer: 'They run on different systems and different fee schemes. Civil legal aid (including family) is claimed through the Client and Cost Management System (CCMS), the LAA online portal, under civil fee schemes such as controlled work fixed fees and, for certificated work, the assessment of a detailed bill. Criminal legal aid is claimed under the Litigators Graduated Fee Scheme (LGFS) for litigators and the Advocates Graduated Fee Scheme (AGFS) for advocates in the Crown Court, and under the magistrates court fee scheme for lower-court work. The core mechanics differ: civil leans on CCMS workflow and detailed assessment, crime leans on graduated fee calculations driven by case type, offence class and pages of prosecution evidence.'
 - question: What is CCMS and do I have to use it?
-  answer: 'CCMS (the Client and Cost Management System) is the LAA online portal for civil and family legal aid. It handles applications, case management, and billing for certificated civil work, and it is mandatory for that work rather than optional. You submit the bill through CCMS, attach the required supporting documents, and the claim is either paid, assessed, or returned for correction inside the system. Controlled work (legal help and controlled legal representation) is generally reported and claimed through the contracted-work reporting route rather than CCMS, so which system you use depends on whether the matter is controlled work or certificated.'
+  answer: 'CCMS (the Client and Cost Management System) is the LAA online portal for civil and family legal aid. It handles applications, case management, and billing for certificated civil work, and it is mandatory for that work rather than optional. You submit the bill through CCMS, attach the required supporting documents, and the claim is either paid, assessed, or returned for correction inside the system. Controlled work (legal help and controlled legal representation) is generally reported and claimed through CWA (Contracted Work and Administration), the contracted-work reporting system, rather than CCMS, so which system you use depends on whether the matter is controlled work or certificated.'
 - question: What are fixed fees, hourly rates and escape-fee cases in legal aid?
   answer: 'Most controlled civil work is paid as a standard fixed fee for the matter regardless of the exact hours, which keeps billing simple but caps the fee. An escape-fee (or exceptional) case arises when the actual work, valued at prescribed hourly rates, exceeds a threshold (commonly around three times the fixed fee). At that point the matter escapes the fixed fee and you claim the assessed hourly-rate value instead, so recording time accurately matters even on fixed-fee files because it is what unlocks an escape claim. Criminal graduated fees work differently again: the fee is calculated from case characteristics rather than a simple fixed sum or open hourly rate.'
 - question: What are LGFS and AGFS?
@@ -43,7 +43,7 @@ ctaBody: 30-minute scoping call. Whether you want to cut rejection rates, tighte
 <p>Civil legal aid, which includes family, splits into two broad billing routes:</p>
 
 <ul>
-<li><strong>Controlled work</strong> (legal help and controlled legal representation): lower-level advice and representation the firm authorises itself under its contract. Paid mainly by standard fixed fees, reported through the contracted-work reporting cycle.</li>
+<li><strong>Controlled work</strong> (legal help and controlled legal representation): lower-level advice and representation the firm authorises itself under its contract. Paid mainly by standard fixed fees, reported through CWA (Contracted Work and Administration) on the contracted-work reporting cycle.</li>
 <li><strong>Certificated (licensed) work</strong>: higher-cost civil matters where the LAA grants a certificate. Managed and billed through CCMS, with the final bill assessed rather than paid as a flat fee.</li>
 </ul>
 
@@ -71,7 +71,7 @@ ctaBody: 30-minute scoping call. Whether you want to cut rejection rates, tighte
 <li><strong>Handle assessment queries.</strong> Respond to any reductions or requests promptly; unanswered queries stall payment.</li>
 </ol>
 
-<p>Controlled work does not run through CCMS in the same way; it is reported and claimed through the contracted-work reporting route on the monthly and contract-year cycle. Knowing which route a matter takes is the first billing decision, and getting it wrong wastes a submission cycle.</p>
+<p>Controlled work does not run through CCMS in the same way; it is reported and claimed through CWA (Contracted Work and Administration) via the LAA Online portal, on the monthly and contract-year cycle. Knowing which route a matter takes is the first billing decision, and getting it wrong wastes a submission cycle.</p>
 
 <h2>Fee Schemes: Fixed Fees, Hourly Rates and Escape Cases</h2>
 
@@ -89,9 +89,9 @@ ctaBody: 30-minute scoping call. Whether you want to cut rejection rates, tighte
 
 <p>Where hourly-rate billing applies (assessed certificated bills, escape cases), the rates are prescribed by the LAA, not set by the firm. You bill the allowable rate for the fee-earner grade and category, so the discipline is applying the correct rate to correctly recorded and evidenced time.</p>
 
-<h2>Criminal Billing Codes: LGFS and AGFS Concepts</h2>
+<h2>Criminal Billing: LGFS and AGFS Concepts</h2>
 
-<p>Crown Court criminal fees are graduated, meaning the fee is built from the characteristics of the case rather than a flat sum or open time. The two schemes are separate claims for separate work.</p>
+<p>Crown Court criminal fees are graduated, meaning the fee is built from the characteristics of the case rather than a flat sum or open time. The two schemes are separate claims for separate work, and Crown Court claims are submitted through the LAA's Claim for Crown Court Defence (CCD) online service.</p>
 
 <h3>LGFS (litigator)</h3>
 

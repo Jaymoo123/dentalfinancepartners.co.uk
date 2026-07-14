@@ -20,7 +20,7 @@ keyTakeaways:
 - You are entitled to ask your solicitor for their written interest policy and to request a designated account where appropriate.
 faqs:
 - question: Can a solicitor keep all the interest on my money?
-  answer: No. SRA Rule 7 requires a solicitor to account to you for a fair sum of interest on money held in your client account. They may retain a small amount where the interest falls below a threshold set in their written policy, but they cannot simply keep everything. If you believe interest was due and was not paid, you can ask for a written explanation of the firm's interest policy.
+  answer: Not without your agreement. SRA Rule 7 requires a solicitor to account to you for a fair sum of interest on money held in your client account. They may retain small amounts falling below a threshold set in their written policy, and under Rule 7.2 you can agree in writing to a different arrangement, but they cannot silently keep everything. If you believe interest was due and was not paid, ask for a written explanation of the firm's interest policy and check what your client care letter says about interest.
 - question: How much interest should I expect from my solicitor?
   answer: It depends on the balance held and how long it was held. Your solicitor's interest policy will state a de minimis threshold below which they retain the interest. Above that threshold they must pay you a fair sum, calculated by reference to the balance, the number of days held and a reference rate linked to what the client account earns. For completion monies held briefly you may receive nothing; for a large probate estate held for many months the sum can be material.
 - question: What is a designated deposit account?
@@ -54,6 +54,8 @@ schema: ''
 
 <p>Where the interest accrued on your money exceeds the firm's de minimis, they must pay you that fair sum. Where it falls below, they may retain it and treat it as the firm's income.</p>
 
+<p>One important caveat: Rule 7.2 allows you and your solicitor to agree in writing to a different arrangement, including that interest will be dealt with in another way. Firms sometimes include such terms in their standard terms of business, so it is worth checking your client care letter. Any such agreement should have been explained to you clearly enough for you to give informed consent.</p>
+
 <h2>When Will I Actually Receive Interest?</h2>
 
 <p>It depends on the size of the sum held and the duration. A few practical examples illustrate how this plays out:</p>
@@ -79,7 +81,7 @@ schema: ''
 
 <p>Probate matters routinely hold the largest sums of any everyday legal transaction. A typical estate administration brings together bank and savings accounts, investment redemptions and property sale proceeds, all held in client account while the grant of probate is obtained, assets are gathered, inheritance tax is settled and the administration concludes. It is common for six-figure sums to sit in a client account for six months or more.</p>
 
-<p>At that scale, the interest obligation is real and material. The SRA's own guidance identifies probate as the highest-risk area for client money handling, partly because of the size and duration of the balances involved.</p>
+<p>At that scale, the interest obligation is real and material. The SRA has identified probate and estate administration as a high-risk area for client money handling, partly because of the size and duration of the balances involved.</p>
 
 <p>As an executor or as a beneficiary of an estate being administered by a solicitor, you are entitled to expect that the solicitor will account for a fair sum of interest on estate funds. If the estate holds a large sum for many months, a designated deposit account is often the most straightforward way to ensure all interest goes to the estate rather than being absorbed by the firm.</p>
 
@@ -87,7 +89,7 @@ schema: ''
 
 <h2>What Your Solicitor Is Required to Tell You</h2>
 
-<p>SRA rules require a solicitor to disclose their interest policy to clients. This should appear in your client care letter or terms of business at the start of the retainer. The disclosure should cover:</p>
+<p>The SRA expects firms to have a written interest policy, and SRA guidance makes clear clients should be informed of it, normally in your client care letter or terms of business at the start of the retainer. If the firm asks you to agree to a different interest arrangement under Rule 7.2, that agreement must be in writing and made with your informed consent. The information you receive should cover:</p>
 
 <ul>
 <li>That interest will be calculated on your money</li>

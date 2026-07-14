@@ -31,7 +31,7 @@ faqs:
 - question: "Does employer NIC come out of my rate under both routes?"
   answer: "Yes. Under both agency PAYE and an umbrella arrangement, the employer must pay Class 1 employer NIC at 15% on your earnings above the secondary threshold of £5,000 for 2026/27. Because the assignment rate is the total budget for engaging you, that employer NIC is funded from the rate in both cases, reducing the gross pay that can be set. The difference is that an umbrella also deducts its own margin before setting your gross salary."
 - question: "What is rolled-up holiday pay and is it legal?"
-  answer: "Rolled-up holiday pay means the agency or employer folds a percentage representing holiday entitlement into your hourly or daily rate, rather than paying you separately when you take leave. Following case law (including the Supreme Court's decision in Brazel v Harpur Trust) and HMRC guidance, rolled-up holiday pay is not the preferred approach for ongoing workers with regular hours. A compliant umbrella accrues and pays holiday pay when you take leave. Many agencies still use rolled-up arrangements for temporary workers; the legal picture for genuinely irregular-hours workers has been clarified by the Employment Rights (Amendment, Consolidation and Progression) Regulations 2023, which introduced an accrual method and allowed rolled-up pay for irregular-hours and part-year workers from April 2024 under strict conditions."
+  answer: "Rolled-up holiday pay means the agency or employer folds a percentage representing holiday entitlement into your hourly or daily rate, rather than paying you separately when you take leave. Following the Supreme Court's decision in Harpur Trust v Brazel on part-year workers' holiday and the government's legislative response, rolled-up holiday pay is not the approach for ongoing workers with regular hours. A compliant umbrella accrues and pays holiday pay when you take leave. Many agencies still use rolled-up arrangements for temporary workers; the legal picture has been clarified by the Employment Rights (Amendment, Revocation and Transitional Provision) Regulations 2023 (SI 2023/1426), which introduced an accrual method and allowed rolled-up pay for irregular-hours and part-year workers from April 2024 under strict conditions."
 - question: "Does continuity of employment matter for a contractor?"
   answer: "It matters more than many contractors realise. Statutory rights such as the right to claim unfair dismissal (requiring two years' continuous service), statutory redundancy pay, and enhanced statutory sick pay all depend on continuous employment. An umbrella's overarching contract provides continuous employment across sequential assignments; agency PAYE typically does not, unless the same agency places you continuously with no break. If you anticipate working through multiple clients over a period of years, the umbrella route accumulates statutory qualifying periods in a way agency PAYE usually cannot match."
 - question: "Which route is better: umbrella or agency PAYE?"
@@ -74,7 +74,7 @@ faqs:
 
 <h3>What only an umbrella deducts: the margin</h3>
 
-<p>An umbrella also deducts its <strong>margin</strong>, the fee it charges for providing the employment and payroll service. A typical margin from an FCSA or Professional Passport accredited umbrella is expressed as a fixed weekly or monthly amount, commonly in the range of £15 to £25 per week for a straightforward single engagement. It must be disclosed in the Key Information Document (KID) the umbrella is required to provide before you start.</p>
+<p>An umbrella also deducts its <strong>margin</strong>, the fee it charges for providing the employment and payroll service. A typical margin from an FCSA or Professional Passport accredited umbrella is expressed as a fixed weekly or monthly amount, commonly in the range of £15 to £25 per week for a straightforward single engagement. It must be disclosed in the Key Information Document (KID) the agency is legally required to give you before you agree terms, based on figures the umbrella supplies.</p>
 
 <p>Agency PAYE has no equivalent deduction. The agency's cost of running payroll is absorbed into its commercial margin on the placement fee, not deducted from your gross pay.</p>
 
@@ -86,7 +86,7 @@ faqs:
 
 <p>Under an umbrella, you are employed under an overarching contract and entitled to <strong>statutory paid holiday of at least 5.6 weeks per year</strong> under the Working Time Regulations 1998. A compliant umbrella accrues holiday pay as you work and pays it to you as genuine paid leave when you take time off, or pays it out on request. The holiday pay is funded within the assignment rate, but a compliant umbrella structures it as a genuine employment right, not as a daily-rate addition that disappears if you do not take leave. Our <a href="/blog/umbrella-vs-limited-company/umbrella-company-holiday-pay">umbrella holiday pay guide</a> covers the mechanics in detail.</p>
 
-<p>Under agency PAYE, temporary workers have historically received <strong>rolled-up holiday pay</strong>: a percentage uplift on the day rate (commonly 12.07%, representing 5.6 weeks as a fraction of 46.4 working weeks) paid with each invoice rather than as separate holiday pay when leave is taken. Following the Employment Rights (Amendment, Consolidation and Progression) Regulations 2023, rolled-up holiday pay became lawful from April 2024 for <strong>irregular-hours workers and part-year workers</strong>, provided it is clearly identified on payslips and calculated on the correct basis. Most agency PAYE arrangements for contractors now fall into this category.</p>
+<p>Under agency PAYE, temporary workers have historically received <strong>rolled-up holiday pay</strong>: a percentage uplift on the day rate (commonly 12.07%, representing 5.6 weeks as a fraction of 46.4 working weeks) paid with each invoice rather than as separate holiday pay when leave is taken. Following the Employment Rights (Amendment, Revocation and Transitional Provision) Regulations 2023 (SI 2023/1426), rolled-up holiday pay became lawful from April 2024 for <strong>irregular-hours workers and part-year workers</strong>, provided it is clearly identified on payslips and calculated on the correct basis. Most agency PAYE arrangements for contractors now fall into this category.</p>
 
 <p>Practically: a contractor on agency PAYE receives a slightly higher day rate that includes the holiday component, but that premium effectively compensates for leave the worker must fund themselves when not working. Whether this is preferable to an umbrella's genuine holiday-pay arrangement depends on how you actually take leave. A contractor who never takes time off and treats every non-working day as unpaid would be indifferent. A contractor who genuinely takes several weeks' holiday per year, expecting to be paid for it, is better served by an umbrella's accrual-and-payment model.</p>
 
@@ -124,47 +124,47 @@ faqs:
     <td>£92,000</td>
   </tr>
   <tr>
-    <td>Less employer NIC at 15% on pay above £5,000</td>
-    <td>approx. £11,550</td>
-    <td>approx. £11,550</td>
-  </tr>
-  <tr>
-    <td>Less Apprenticeship Levy (0.5% above £15,000 allowance)</td>
-    <td>approx. £385</td>
-    <td>approx. £385</td>
-  </tr>
-  <tr>
     <td>Less umbrella margin (£20/week x 46 weeks)</td>
     <td>nil</td>
     <td>approx. £920</td>
   </tr>
   <tr>
+    <td>Less employer NIC at 15% on pay above £5,000</td>
+    <td>approx. £11,295</td>
+    <td>approx. £11,175</td>
+  </tr>
+  <tr>
+    <td>Less Apprenticeship Levy (0.5%)</td>
+    <td>approx. £400</td>
+    <td>approx. £400</td>
+  </tr>
+  <tr>
     <td><strong>Gross salary (before employee deductions)</strong></td>
-    <td>approx. £80,065</td>
-    <td>approx. £79,145</td>
+    <td>approx. £80,305</td>
+    <td>approx. £79,505</td>
   </tr>
   <tr>
     <td>Less income tax (20% and 40% on rUK bands)</td>
-    <td>approx. £19,326</td>
-    <td>approx. £19,158</td>
+    <td>approx. £19,554</td>
+    <td>approx. £19,234</td>
   </tr>
   <tr>
     <td>Less employee NIC (8% to £50,270, then 2%)</td>
-    <td>approx. £3,633</td>
-    <td>approx. £3,615</td>
+    <td>approx. £3,617</td>
+    <td>approx. £3,601</td>
   </tr>
   <tr>
     <td><strong>Net take-home (annual)</strong></td>
-    <td>approx. £57,106</td>
-    <td>approx. £56,372</td>
+    <td>approx. £57,134</td>
+    <td>approx. £56,670</td>
   </tr>
   <tr>
     <td><strong>Difference</strong></td>
-    <td colspan="2">approx. £734 per year (£14 per week) in favour of agency PAYE on this rate</td>
+    <td colspan="2">approx. £465 per year (roughly £10 per week) in favour of agency PAYE on this rate</td>
   </tr>
 </table>
 
-<p>The £734 annual difference (roughly £14 per week) is the cost of the umbrella margin after tax relief on the deduction. This is a real but modest sum. Against it, the umbrella provides genuine accrued holiday pay rather than rolled-up pay, and continuous employment that accumulates statutory qualifying periods. A contractor who takes four weeks' paid leave per year receives holiday pay of approximately £8,000 from the umbrella (4 weeks x £400/day x 5 days); the agency PAYE rolled-up element is already baked into the £92,000 rate on the assumption all days are worked. In practice, the two routes are closely matched in net cost, and the decision turns on the non-financial factors.</p>
+<p>The £465 annual difference (roughly £10 per week) is the cost of the umbrella margin after the tax and NIC effects of the deduction. This is a real but modest sum. Against it, the umbrella provides genuine accrued holiday pay rather than rolled-up pay, and continuous employment that accumulates statutory qualifying periods. A contractor taking four weeks' leave through the umbrella is paid for that leave from holiday pay accrued within the rate; under rolled-up agency PAYE the equivalent value is spread across worked days, and unworked leave is unpaid. In practice, the two routes are closely matched in net cost, and the decision turns on the non-financial factors.</p>
 
 <h2>Which route wins and when</h2>
 

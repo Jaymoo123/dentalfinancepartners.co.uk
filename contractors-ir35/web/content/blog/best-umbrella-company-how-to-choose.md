@@ -41,7 +41,7 @@ faqs:
 - question: "What is Professional Passport and how does it differ from FCSA?"
   answer: "Professional Passport is an independent compliance review body that assesses umbrella companies, CIS schemes and other contractor-sector intermediaries. Like the FCSA, it carries out audits and publishes a register of assessed firms. Both are credible, independently verified marks; neither is a regulator with statutory powers, but both carry meaningful compliance weight. Some agencies specify one mark or the other; in practice an umbrella holding either (or both) is in a far stronger compliance position than one holding neither."
 - question: "How do I verify that an umbrella is genuinely on the FCSA or Professional Passport register?"
-  answer: "Go directly to fcsa.org.uk or professionalpassport.org and use their respective online member registers. Do not rely on logos on the umbrella's own website, as these are sometimes outdated or used without current membership. Check the register on the day you are considering signing up, because membership can lapse. If the umbrella is not on the register, treat that as a material due-diligence failure regardless of any other reassurances."
+  answer: "Go directly to fcsa.org.uk or professionalpassport.com and use their respective online member registers. Do not rely on logos on the umbrella's own website, as these are sometimes outdated or used without current membership. Check the register on the day you are considering signing up, because membership can lapse. If the umbrella is not on the register, treat that as a material due-diligence failure regardless of any other reassurances."
 - question: "Should I choose a compliant umbrella or keep my limited company for an inside-IR35 role?"
   answer: "For a genuinely inside-IR35 engagement, a compliant umbrella is usually the simpler and often comparably economic route: there are no PSC running costs, no double layer of PAYE administration and no risk of the Chapter 8 deemed-payment calculation. Keeping a limited company makes most sense where you also have outside-IR35 work in the same period, want to retain profits for later extraction, or value the pension and structure a PSC provides. The decisive factor is your overall engagement mix, not a single role. See our guide to <a href='/blog/umbrella-vs-limited-company/limited-company-vs-umbrella-contractor'>umbrella versus limited company</a> for the full decision framework."
 - question: "What happens if HMRC later finds my umbrella was running a tax-avoidance scheme?"
@@ -69,7 +69,7 @@ faqs:
 
 <p><strong>Professional Passport</strong> is an independent compliance review body that assesses umbrella companies, CIS scheme operators and other contractor-sector intermediaries. Its audited assessments and published register carry comparable weight to the FCSA mark. Some agencies specify one mark or the other; in practice either is a meaningful indicator of a baseline compliance standard.</p>
 
-<p>The critical step is <strong>verifying current membership yourself</strong>. Go directly to <strong>fcsa.org.uk</strong> or <strong>professionalpassport.org</strong> and check the live register on the day you are making your decision. Do not rely on logos on the umbrella's own website: membership can lapse, logos are sometimes used after accreditation has ended, and a credible firm will have no objection to you checking. If the umbrella is not on the register, treat that as a red flag that outweighs any other reassurances.</p>
+<p>The critical step is <strong>verifying current membership yourself</strong>. Go directly to <strong>fcsa.org.uk</strong> or <strong>professionalpassport.com</strong> and check the live register on the day you are making your decision. Do not rely on logos on the umbrella's own website: membership can lapse, logos are sometimes used after accreditation has ended, and a credible firm will have no objection to you checking. If the umbrella is not on the register, treat that as a red flag that outweighs any other reassurances.</p>
 
 <h3>Test 2: A complete, reconcilable Key Information Document</h3>
 
@@ -175,7 +175,7 @@ faqs:
 <p>Before committing to any umbrella company, run through the following:</p>
 
 <ol>
-  <li>Confirm current FCSA or Professional Passport membership directly on the relevant register at fcsa.org.uk or professionalpassport.org.</li>
+  <li>Confirm current FCSA or Professional Passport membership directly on the relevant register at fcsa.org.uk or professionalpassport.com.</li>
   <li>Request and receive a KID before signing any contract or starting work.</li>
   <li>Reconcile the KID arithmetic: assignment rate minus employer NIC minus margin minus employee NIC minus income tax should produce the stated take-home to within a few pounds.</li>
   <li>Reject any arrangement that promises 90% or more take-home on a standard rate.</li>

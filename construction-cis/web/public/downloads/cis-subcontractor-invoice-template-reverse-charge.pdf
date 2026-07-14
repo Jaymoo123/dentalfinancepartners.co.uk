@@ -1,0 +1,241 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [ 4 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font 6 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 5631
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+.117647 .160784 .231373 rg
+n 0 756.8504 595.2756 85.03937 re f*
+1 1 1 rg
+BT /F2 22 Tf 26.4 TL ET
+BT 1 0 0 1 51.02362 796.5354 Tm (INVOICE) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 51.02362 776.6929 Tm (CIS subcontractor invoice \267 Domestic reverse charge invoice) Tj T* ET
+BT /F2 10 Tf 12 TL ET
+0 0 0 rg
+BT 1 0 0 1 51.02362 734.1732 Tm (From \(subcontractor\)) Tj T* ET
+0 0 0 rg
+BT /F2 10 Tf 12 TL ET
+BT 1 0 0 1 297.6378 734.1732 Tm (Invoice details) Tj T* ET
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 51.02362 716.1732 Tm (Business name:) Tj T* ET
+.6 .6 .6 RG
+n 119.0496 715.1732 m 320.315 715.1732 l S
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 297.6378 716.1732 Tm (Invoice number:) Tj T* ET
+.6 .6 .6 RG
+n 365.6638 715.1732 m 841.8898 715.1732 l S
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 51.02362 698.1732 Tm (Address:) Tj T* ET
+.6 .6 .6 RG
+n 90.53762 697.1732 m 320.315 697.1732 l S
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 297.6378 698.1732 Tm (Invoice date:) Tj T* ET
+.6 .6 .6 RG
+n 352.6678 697.1732 m 841.8898 697.1732 l S
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 51.02362 680.1732 Tm (UTR number:) Tj T* ET
+.6 .6 .6 RG
+n 109.0326 679.1732 m 320.315 679.1732 l S
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 297.6378 680.1732 Tm (Payment due:) Tj T* ET
+.6 .6 .6 RG
+n 357.1678 679.1732 m 841.8898 679.1732 l S
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 51.02362 662.1732 Tm (VAT number:) Tj T* ET
+.6 .6 .6 RG
+n 108.0426 661.1732 m 320.315 661.1732 l S
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 297.6378 662.1732 Tm (Contract / site ref:) Tj T* ET
+.6 .6 .6 RG
+n 372.6658 661.1732 m 841.8898 661.1732 l S
+BT /F2 10 Tf 12 TL ET
+0 0 0 rg
+BT 1 0 0 1 51.02362 636.1732 Tm (To \(contractor / customer\)) Tj T* ET
+0 0 0 rg
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 51.02362 618.1732 Tm (Business name:) Tj T* ET
+.6 .6 .6 RG
+n 119.0496 617.1732 m 320.315 617.1732 l S
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 51.02362 600.1732 Tm (Address:) Tj T* ET
+.6 .6 .6 RG
+n 90.53762 599.1732 m 320.315 599.1732 l S
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 51.02362 582.1732 Tm (Customer VAT number:) Tj T* ET
+.6 .6 .6 RG
+n 149.5506 581.1732 m 320.315 581.1732 l S
+.117647 .160784 .231373 rg
+n 51.02362 548.1732 493.2283 18 re f*
+1 1 1 rg
+BT /F2 9 Tf 10.8 TL ET
+BT 1 0 0 1 53.02362 552.1732 Tm (Description) Tj T* ET
+BT 1 0 0 1 274.126 552.1732 Tm (Type) Tj T* ET
+BT 1 0 0 1 359.1654 552.1732 Tm (Qty) Tj T* ET
+BT 1 0 0 1 398.8504 552.1732 Tm (Unit price) Tj T* ET
+BT 1 0 0 1 466.8819 552.1732 Tm (Amount) Tj T* ET
+0 0 0 rg
+.8 .8 .8 RG
+BT /F1 9 Tf 10.8 TL ET
+n 51.02362 530.1732 493.2283 18 re S
+BT 1 0 0 1 274.126 534.1732 Tm (Labour) Tj T* ET
+n 51.02362 512.1732 493.2283 18 re S
+BT 1 0 0 1 274.126 516.1732 Tm (Labour) Tj T* ET
+n 51.02362 494.1732 493.2283 18 re S
+BT 1 0 0 1 274.126 498.1732 Tm (Labour) Tj T* ET
+n 51.02362 476.1732 493.2283 18 re S
+BT 1 0 0 1 274.126 480.1732 Tm (Labour) Tj T* ET
+n 51.02362 458.1732 493.2283 18 re S
+BT 1 0 0 1 274.126 462.1732 Tm (Materials) Tj T* ET
+n 51.02362 440.1732 493.2283 18 re S
+BT 1 0 0 1 274.126 444.1732 Tm (Materials) Tj T* ET
+n 51.02362 422.1732 493.2283 18 re S
+BT 1 0 0 1 274.126 426.1732 Tm (Materials) Tj T* ET
+n 51.02362 404.1732 493.2283 18 re S
+BT 1 0 0 1 274.126 408.1732 Tm (Materials) Tj T* ET
+n 272.126 566.1732 m 272.126 404.1732 l S
+n 357.1654 566.1732 m 357.1654 404.1732 l S
+n 396.8504 566.1732 m 396.8504 404.1732 l S
+n 464.8819 566.1732 m 464.8819 404.1732 l S
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 398.8449 366.1732 Tm (Labour subtotal) Tj T* ET
+.6 .6 .6 RG
+n 464.8819 365.1732 m 544.252 365.1732 l S
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 390.3579 348.1732 Tm (Materials subtotal) Tj T* ET
+.6 .6 .6 RG
+n 464.8819 347.1732 m 544.252 347.1732 l S
+BT /F2 9 Tf 10.8 TL ET
+BT 1 0 0 1 385.8759 330.1732 Tm (Subtotal \(ex VAT\)) Tj T* ET
+.6 .6 .6 RG
+n 464.8819 329.1732 m 544.252 329.1732 l S
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 293.3019 312.1732 Tm (CIS deduction \(labour only, at 20% / 30%\)) Tj T* ET
+.6 .6 .6 RG
+n 464.8819 311.1732 m 544.252 311.1732 l S
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 293.3289 294.1732 Tm (VAT \(reverse charge, for information only\)) Tj T* ET
+.6 .6 .6 RG
+n 464.8819 293.1732 m 544.252 293.1732 l S
+BT /F2 9 Tf 10.8 TL ET
+BT 1 0 0 1 390.8709 276.1732 Tm (Amount payable) Tj T* ET
+.6 .6 .6 RG
+n 464.8819 275.1732 m 544.252 275.1732 l S
+BT /F1 9 Tf 10.8 TL ET
+0 0 0 rg
+BT 1 0 0 1 51.02362 246.1732 Tm (Reverse charge: customer to account for VAT to HMRC. VAT rate applicable: 20%. No VAT is added to the amount payable.) Tj T* ET
+0 0 0 rg
+BT /F1 9 Tf 10.8 TL ET
+0 0 0 rg
+BT 1 0 0 1 51.02362 232.1732 Tm (The CIS deduction applies to the labour element only, excluding VAT. Materials you personally) Tj T* ET
+0 0 0 rg
+BT /F1 9 Tf 10.8 TL ET
+0 0 0 rg
+BT 1 0 0 1 51.02362 220.1732 Tm (purchased for the job are excluded from the deduction base. Show your UTR on every CIS invoice.) Tj T* ET
+0 0 0 rg
+BT /F2 10 Tf 12 TL ET
+0 0 0 rg
+BT 1 0 0 1 51.02362 196.1732 Tm (Payment details) Tj T* ET
+0 0 0 rg
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 51.02362 176.1732 Tm (Account name:) Tj T* ET
+.6 .6 .6 RG
+n 115.0536 175.1732 m 320.315 175.1732 l S
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 51.02362 160.1732 Tm (Sort code:) Tj T* ET
+.6 .6 .6 RG
+n 96.04562 159.1732 m 320.315 159.1732 l S
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 51.02362 144.1732 Tm (Account number:) Tj T* ET
+.6 .6 .6 RG
+n 123.0546 143.1732 m 320.315 143.1732 l S
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 51.02362 128.1732 Tm (Payment reference:) Tj T* ET
+.6 .6 .6 RG
+n 133.5576 127.1732 m 320.315 127.1732 l S
+BT /F1 7.5 Tf 9 TL ET
+.45 .45 .45 rg
+BT 1 0 0 1 51.02362 34.01575 Tm (Template by Trade Tax Specialists \267 tradetaxspecialists.co.uk/cis-invoice-template) Tj T* ET
+ 
+
+endstream
+endobj
+6 0 obj
+<<
+/F1 7 0 R
+/F2 8 0 R
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000113 00000 n 
+0000000162 00000 n 
+0000000361 00000 n 
+0000006044 00000 n 
+0000006085 00000 n 
+0000006192 00000 n 
+trailer
+<<
+/Size 9
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+6304
+%%EOF
