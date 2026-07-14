@@ -1,10 +1,13 @@
 import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";
+import { niche } from "@/config/niche-loader";
 
 export const runtime = "edge";
 
+// Brand name + domain flow from niche.config.json (working brand swaps in one place).
 export async function GET(req: NextRequest) {
-  const title = req.nextUrl.searchParams.get("title") ?? "BRAND_TBD Hospitality Accountancy";
+  const bareDomain = niche.domain.replace(/^www\./, "");
+  const title = req.nextUrl.searchParams.get("title") ?? niche.display_name;
   return new ImageResponse(
     (
       <div
@@ -23,8 +26,8 @@ export async function GET(req: NextRequest) {
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
           <div style={{ width: 24, height: 24, borderRadius: 6, background: "#b0532f", display: "flex" }} />
-          <span style={{ fontSize: 28, fontWeight: 600, color: "#334155" }}>BRAND_TBD Hospitality Accountancy</span>
-          <span style={{ fontSize: 24, color: "#64748b", marginLeft: "auto" }}>brand-tbd-hospitality.invalid</span>
+          <span style={{ fontSize: 28, fontWeight: 600, color: "#334155" }}>{niche.display_name}</span>
+          <span style={{ fontSize: 24, color: "#64748b", marginLeft: "auto" }}>{bareDomain}</span>
         </div>
       </div>
     ),

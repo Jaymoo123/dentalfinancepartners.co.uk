@@ -1,6 +1,6 @@
 {
   "site": "hospitality",
-  "displayName": "BRAND_TBD Hospitality Accountancy",
+  "displayName": "Hospitality Finance Partners",
   "paths": {
     "repoRoot": "C:/Users/user/Documents/Accounting",
     "worktreeBase": "C:/Users/user/Documents",
@@ -18,7 +18,7 @@
   },
   "vercel": {
     "projectJson": "hospitality/web/.vercel/project.json",
-    "productionDomain": "www.brand-tbd-hospitality.invalid"
+    "productionDomain": "www.hospitalityfinancepartners.co.uk"
   },
   "indexnow": {
     "module": "optimisation_engine.indexing.submit_indexnow"
