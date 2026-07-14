@@ -10,7 +10,7 @@
 ## Where we are (2026-07-14)
 
 Depth-first build under WORKING-BRAND placeholders, deploy held (owner registers domains + deploys
-in batches). Three sites DONE + committed on `expansion/phase-0`:
+in batches). Four sites DONE + committed on `expansion/phase-0`:
 
 - **Site 1 — Charities** (commit `2a501b52`): working brand **Trustee Finance Partners**
   (www.trusteefinancepartners.co.uk). 29 assets: home + 5 services + 2 sector + 6 pillar guides +
@@ -23,11 +23,27 @@ in batches). Three sites DONE + committed on `expansion/phase-0`:
   5 services + 12 blogs + 4 calculators + Crypto Tax Compliance Index. Build green (35 pages,
   12 tests). Crypto was only at R4, so this build ALSO ran the S2 scaffold + house_positions +
   rates_ledger first (see the note under step 0 below).
+- **Site 4 — Pharmacies** (commit THIS): working brand **Pharmacy Finance Partners**
+  (www.pharmacyfinancepartners.co.uk, prefix phfp, tranche 2). 27 assets: home + 5 /for hubs +
+  8 services + 13 blogs + 3 calculators (purchase affordability, FP34 cash-flow, locum take-home) +
+  UK Community Pharmacy Openings & Closures Index (REAL NHSBSA + Companies House SIC 47730 data,
+  zero fabricated figures). Build green (53 pages, vitest 21/21). Pharmacies was R4-only, so this
+  build ALSO ran the S2 scaffold + house_positions (28) + rates_ledger (26) first. Locum audience =
+  content-only (no lead form). Medical-adjacency wall honoured. **Same-tranche-2 spinup re-run
+  overwrote the migration pair to drop crypto** (banked lesson) — restored + hand-edited so both
+  crypto AND pharmacies sit in the tranche-2 migrations.
 
 All: brand-agnostic body corpus (render via `getSiteUrl()`/siteConfig), adversarial fact-review
-passed, zero live-site touch. **NEXT = pharmacies (site 4).**
+passed, zero live-site touch. **NEXT = startups-tech (site 5)** — R4 done, working brand Founder
+Finance Partners (prefix ffp, tranche 1); Reflex SaaS-partner conflict ruled IRRELEVANT by owner
+(build it); ONLY remaining gate = run a dedup audit (0 exact + acceptable fuzzy) BEFORE writing
+briefs (47% estate-dedup risk). Startups is R4-done / next-S2, so it STILL needs the R4-only
+scaffold prelude (spinup_site prefix ffp, then promote HOUSE_POSITIONS_OUTLINE + rates_ledger)
+BEFORE the standard build; but its Supabase sites row + leads source are ALREADY live via the t1
+migration, so pass `--skip-db` and do NOT emit a new tranche migration (verify the row exists first).
+Then care (BUILD ok but DEPLOY-hold to ~2026-08-03), then ecommerce LAST.
 
-> **Sites still at R4 only (pharmacies, startups, ecommerce) need the FULL S2-S5 pipeline first;
+> **Sites still at R4 only (startups, ecommerce) need the FULL S2-S5 pipeline first;
 > care already has S2-S5.** For an R4-only site, before the playbook below run
 > `python -m optimisation_engine.ops.spinup_site --niche <n> --display-name "<working brand>"
 > --domain www.<recbrand>.co.uk --brand-primary <hex> --brand-on-primary "#ffffff"

@@ -56,6 +56,7 @@ jobs:
           hospitality|https://www.brand-tbd-hospitality.invalid
           care|https://www.brand-tbd-care.invalid
           crypto|https://www.digitalassettaxpartners.co.uk
+          pharmacies|https://www.pharmacyfinancepartners.co.uk
           '
 
           FULL=false

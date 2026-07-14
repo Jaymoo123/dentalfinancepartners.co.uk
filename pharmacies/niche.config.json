@@ -1,0 +1,102 @@
+{
+  "niche_id": "pharmacies",
+  "display_name": "Pharmacy Finance Partners",
+  "legal_name": "Ashfield Trading Ltd",
+  "partner": null,
+  "company": {
+    "number": "16358723",
+    "place_of_registration": "England and Wales",
+    "registered_office": {
+      "line1": "20 Ashfield Avenue",
+      "line2": "Shipley",
+      "city": "Bradford",
+      "postcode": "BD18 3AL"
+    },
+    "vat_number": null,
+    "enquiry_retention_months": 24
+  },
+  "domain": "www.pharmacyfinancepartners.co.uk",
+  "tagline": "Specialist accountants for UK community pharmacy owners: NHS contract economics, VAT, buying and selling a pharmacy",
+  "description": "Specialist accountants for UK community pharmacy owners: NHS contract economics, VAT, buying and selling a pharmacy",
+  "brand": {
+    "primary_color": "#0f3a4a",
+    "logo_path": "/brand/logo.png",
+    "publisher_logo_url": "/api/og"
+  },
+  "contact": {
+    "email": "hello@pharmacyfinancepartners.co.uk",
+    "phone": "+44 20 0000 0000"
+  },
+  "navigation": [
+    { "label": "Services", "href": "/services" },
+    { "label": "For", "href": "/for" },
+    { "label": "Research", "href": "/research/pharmacy-openings-closures-index" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "About", "href": "/about" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "footer_links": [
+    { "label": "Contact", "href": "/contact" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Privacy Policy", "href": "/privacy-policy" }
+  ],
+  "locations": [],
+  "content_strategy": {
+    "audience": "UK community pharmacy owners, buyers, sellers, pharmacy groups, and locum pharmacists",
+    "categories": [
+      "Buying a Pharmacy",
+      "Selling a Pharmacy",
+      "NHS Contract and Income",
+      "VAT and Retail Schemes",
+      "Pharmacy Payroll",
+      "Business Structure and Incorporation",
+      "Locum Pharmacists"
+    ],
+    "supabase_table": "blog_topics",
+    "site_key": "pharmacies",
+    "source_identifier": "pharmacies"
+  },
+  "seo": {
+    "locale": "en_GB",
+    "organization_type": "AccountingService",
+    "service_areas": ["United Kingdom"],
+    "google_analytics_id": "",
+    "theme_color": "#0f3a4a",
+    "search_console_verification": {
+      "google": "",
+      "bing": "",
+      "yandex": "",
+      "naver": "",
+      "pinterest": ""
+    }
+  },
+  "lead_form": {
+    "role_label": "I am a...",
+    "role_options": [
+      { "value": "Pharmacy owner (independent)", "label": "Pharmacy owner (independent)" },
+      { "value": "Pharmacy owner (group)", "label": "Pharmacy owner (group)" },
+      { "value": "Buying a pharmacy", "label": "Buying a pharmacy" },
+      { "value": "Selling a pharmacy", "label": "Selling a pharmacy" },
+      { "value": "Locum pharmacist", "label": "Locum pharmacist" },
+      { "value": "Investor or broker", "label": "Investor or broker" }
+    ],
+    "placeholders": {
+      "name": "Alex Smith",
+      "email": "alex@example.co.uk",
+      "phone": "07700 000000",
+      "message": "e.g. Buying a pharmacy and need purchase accounting advice, or need help with VAT retail scheme or NHS payment reconciliation..."
+    }
+  },
+  "cta": {
+    "sticky_primary": "Speak to a pharmacy finance specialist",
+    "sticky_secondary": "Free, no-obligation reply within 24 hours",
+    "sticky_button": "Get in touch"
+  },
+  "blog": {
+    "cta_heading": "Need help with your pharmacy finances?",
+    "cta_body": "Tell us about your situation and we will come back within 24 hours.",
+    "cta_button": "Get in touch"
+  },
+  "shared_components_version": "1.0.0",
+  "last_sync": null
+}
