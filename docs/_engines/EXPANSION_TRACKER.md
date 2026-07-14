@@ -13,6 +13,17 @@ unwritten topics with demand; trade (construction-cis) pool built from scratch �
 208 live pages; agency 5/314 terms have volume; generalist fully written (optimise signal);
 dentists 58% duplicate rows. Tools: `scripts/enrich_blog_topics.py`, `scripts/_trade_pool_pull.py`.
 
+Coverage reconciliation DONE 2026-07-14 (see CONTENT_GAP_ENRICHMENT.md): the "unwritten
+backlogs" were mostly phantom (stale `used` flags). ir35 + dentists pools EXHAUSTED — need
+fresh pool builds; trade has a small verified backlog (~14 topics + a CIS template asset).
+Next: medical + solicitors enrichment (in progress), then fresh pool builds.
+
+**2026-07-14 later same day — full pipeline executed:**
+- Medical + solicitors enriched/reconciled: solicitors "27,980/mo unused" was phantom (all 65 mapped to live pages, pool exhausted); medical 16 verified-unwritten but 14/16 are transactional gp-accountant head terms → core-page work, not blogs.
+- Fresh pool builds DONE (construction pattern, ~$0.79 total): ir35 139 net-new/54 w-vol (hot: hmrc umbrella company warning 880), dentists 14 net-new (tiny market confirmed), solicitors 244 net-new/94 w-vol (sra principles 2,400 = biggest estate gap). Artifacts `expansion_research/tier1_{ir35,dentists,solicitors}/`.
+- Format/wave typing: [GAP_FILL_WAVE_PLAN_2026-07.md](GAP_FILL_WAVE_PLAN_2026-07.md).
+- **WAVE 1 WRITTEN/BUILT 2026-07-14 (14/14, local, UNCOMMITTED/UNDEPLOYED):** solicitors SRA Principles pillar + legal-aid billing pillar + client-interest post; ir35 umbrella take-home calculator + FCSA verification pillar + 4 umbrella blogs; construction-cis 2 downloadable template assets (deduction statement + invoice, XLSX/PDF + landing pages, builds green) + unallocated-credit post; dentists salary benchmark; medical incorporation pillar (DEPLOY-HELD to ~08-03 watch verdict). All blog_topics rows flipped with ' wave1-2026-07-14'. Wave 2/3 queued in the wave plan.
+
 ## Phase 0 (factory hardening) — CODE DONE, committed 939933fa on `expansion/phase-0`
 
 | Item | Status | Notes |

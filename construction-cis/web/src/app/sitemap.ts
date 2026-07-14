@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/services`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/cis-refund`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/gross-payment-status`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/cis-invoice-template`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/for`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/blog`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
     { url: `${base}/calculators`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },

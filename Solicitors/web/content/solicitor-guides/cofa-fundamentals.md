@@ -22,7 +22,7 @@ faqs:
 - question: What's the consequence of failing as a COFA?
   answer: The SRA can take action against the named individual. Outcomes range from informal reprimand for minor failures, through formal rebuke and conditions on practice for moderate failures, to strike-off and/or substantial fines for serious or repeated failures. The role is real. Most COFA failures arise from inadequate handover at appointment, not deliberate misconduct.
 ctaTitle: Get your COFA role onto solid ground
-ctaBody: 30-minute scoping call. Whether you're newly appointed, inheriting from a departing colleague, or feeling that the function has drifted, we help you bed in the controls.
+ctaBody: "30-minute scoping call. Whether you're newly appointed, inheriting from a departing colleague, or feeling that the function has drifted, we help you bed in the controls."
 metaTitle_prev: 'COFA Role UK Law Firms 2025/26: SRA Compliance Officer Duties'
 metaDescription_prev: The COFA role explained for UK law firms. SRA Accounts Rules oversight, reconciliation cycle, breach decision log, materiality calls, new-COFA onboarding.
 dateModified: '2026-06-12'

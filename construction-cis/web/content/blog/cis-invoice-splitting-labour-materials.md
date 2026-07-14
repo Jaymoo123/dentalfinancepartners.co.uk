@@ -101,6 +101,8 @@ faqs:
 
 <p>You can use our <a href="/calculators/cis-invoice-splitter">CIS invoice splitter calculator</a> to work out the correct deduction before you send, which also double-checks the split across labour and materials.</p>
 
+<p>If you would rather start from a ready-made format, our free <a href="/cis-invoice-template">CIS subcontractor invoice template</a> (Excel and PDF) has the labour and materials split, the CIS deduction line and standard VAT, domestic reverse charge and non-VAT versions built in.</p>
+
 <h2>Worked example 1: a single job</h2>
 
 <p>A self-employed plasterer completes a job and invoices £2,000. The breakdown is £700 for labour and £1,300 for materials (plaster and plasterboard) that the plasterer personally bought and supplied. The plasterer is a registered subcontractor, so the applicable rate is 20%.</p>

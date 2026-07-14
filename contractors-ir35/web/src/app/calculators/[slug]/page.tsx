@@ -95,6 +95,21 @@ export default async function CalculatorToolPage({ params }: Props) {
               ))}
             </div>
 
+            {tool.related && tool.related.length > 0 && (
+              <div className="mt-8">
+                <h3 className="text-lg font-bold text-neutral-900">Related reading and tools</h3>
+                <ul className="mt-3 list-disc space-y-2 pl-5 text-base text-neutral-700">
+                  {tool.related.map((r) => (
+                    <li key={r.href}>
+                      <a href={r.href} className="font-semibold text-cyan-700 underline underline-offset-2 hover:text-cyan-800">
+                        {r.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             {tool.faqs && tool.faqs.length > 0 && (
               <div className="mt-12">
                 <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">

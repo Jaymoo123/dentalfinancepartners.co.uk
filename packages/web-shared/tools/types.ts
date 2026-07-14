@@ -76,6 +76,8 @@ export interface GenericTool extends ToolMetaBase {
   compute: ComputeFn;
   explainer: { heading: string; paragraphs: string[] };
   faqs?: { question: string; answer: string }[];
+  /** internal links rendered under the explainer (blog posts, sibling tools) */
+  related?: { label: string; href: string }[];
 }
 
 export type Tool = BespokeTool | GenericTool;
