@@ -89,7 +89,7 @@ ctaBody: "30-minute scoping call. We work with the SRA Accounts Rules where they
 <p>Consider the mapping:</p>
 
 <ul>
-<li><strong>Keeping client money in a separate designated client account</strong> is Principle 2 (public trust) and Principle 7 (client best interests) in operation. The client's money is safe and identifiable, which is exactly what public trust in solicitors depends on.</li>
+<li><strong>Keeping client money in a separate client account</strong> is Principle 2 (public trust) and Principle 7 (client best interests) in operation. The client's money is safe and identifiable, which is exactly what public trust in solicitors depends on.</li>
 <li><strong>Reconciling every client account at least every five weeks</strong> under Rule 8.3 is Principle 5 (integrity) expressed as a control. A firm that reconciles on time can demonstrate that client money is where it should be; a firm that lets reconciliations slide is quietly eroding the integrity of its client-money position.</li>
 <li><strong>Returning residual balances to clients</strong> promptly is Principle 7. Money left to gather dust on a completed matter is money not being returned to the person it belongs to.</li>
 <li><strong>Not using the client account as a banking facility</strong> protects Principle 2, because a client account misused as a general holding facility invites exactly the loss of public confidence the Principles exist to prevent.</li>
@@ -103,7 +103,7 @@ ctaBody: "30-minute scoping call. We work with the SRA Accounts Rules where they
 
 <p>Two named individuals in every SRA-regulated firm carry direct responsibility for keeping the firm inside the Principles: the Compliance Officer for Legal Practice (COLP) and the Compliance Officer for Finance and Administration (COFA).</p>
 
-<p>The COLP owns the firm's overall regulatory compliance and is accountable to the SRA for it. That explicitly includes compliance with the seven Principles and the two Codes of Conduct, alongside anti-money laundering supervision, conflicts, client care and professional conduct generally. The COLP must be a solicitor.</p>
+<p>The COLP owns the firm's overall regulatory compliance and is accountable to the SRA for it. That explicitly includes compliance with the seven Principles and the two Codes of Conduct, alongside anti-money laundering supervision, conflicts, client care and professional conduct generally. The COLP must be a lawyer (a solicitor or other authorised lawyer of England and Wales).</p>
 
 <p>The COFA owns compliance with the Accounts Rules specifically, which, as the mapping above shows, is where several of the Principles land in the client-money context. The COFA does not have to be a solicitor. When a client-money issue arises that also engages the Principles (and most serious ones do), the COFA and COLP are expected to coordinate: the COFA identifies the financial breach, the COLP weighs the wider Principles and conduct dimension, and both consider whether the SRA must be notified.</p>
 
