@@ -19,7 +19,8 @@
     "console/web",
     "charities/web",
     "hospitality/web",
-    "care/web"
+    "care/web",
+    "crypto/web"
   ],
   "engines": {
     "node": ">=20"

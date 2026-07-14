@@ -2,7 +2,7 @@
 
 Single source of program state. Update at every stage transition. Stages S1-S8 and gates G1-G4 defined in [EXPANSION_PROGRAM.md](EXPANSION_PROGRAM.md).
 
-Last updated: 2026-07-14
+Last updated: 2026-07-14 (crypto = site 3 launch core built; build order now pharmacies next)
 
 ## Thread B — existing-site content-gap enrichment (2026-07-14, commit 2aa8794c)
 
@@ -72,7 +72,7 @@ Resolved 2026-07-11 late: stray commit 3a165133 confirmed by owner as his own (o
 | startups-tech | Startups & tech/SaaS | 1 | **R4 done 2026-07-12**; next S2 | shortlist ready (rec: Founder Finance Partners, prefix ffp) | R3 done | | | Reflex conflict must be ruled before briefs | pick brand + rule Reflex conflict |
 | pharmacies | Pharmacy owners (+locums content) | 2 | **R4 done 2026-07-12**; next S2 | shortlist ready (rec: Pharmacy Finance Partners, prefix phfp) | R3 done | | | | pick brand |
 | manufacturing | Manufacturing & engineering | 2 | PARK RECOMMENDED — frozen pending owner ratification (no R4 run) | | R3 done | | | owner ratification | ratify/override PARK |
-| crypto | Crypto traders & investors | 2 | **R4 done 2026-07-12**; next S2 | shortlist ready (rec: Digital Asset Tax Partners, prefix datp) | R3 done | | | | pick brand |
+| crypto | Crypto traders & investors | 2 | **S6 LAUNCH CORE BUILT 2026-07-14** under WORKING brand Digital Asset Tax Partners (www.digitalassettaxpartners.co.uk); full S2 (spinup_site, prefix datp, tranche-2 migration pair) + house_positions (33 positions, load-bearing figures re-verified at source) + hospitality-parity infra + 24-asset core (home + 6 /for + 5 /services + 12 blogs) + 4 golden-tested calculators + Crypto Tax Compliance Index asset; `brand_locked: true`; build green (35 static pages, vitest 12/12, tsc clean); brand-agnostic corpus; internal-link audit + Opus adversarial fact-review done (0 HP-contradictions/0 fabrication/0 em-dash, 4 minor fixes). DEPLOY HELD. | **G1 = final brand + domain only** (working brand swap = 3-file config edit) | R3 done | brand gate now PASS (working brand) | HELD (needs VERCEL_TOKEN + domain) | pick FINAL brand + BUY domain (G1) |
 | ecommerce | Ecommerce/Amazon sellers | 3 | **R4 done 2026-07-12**; next S2 (build LAST) | shortlist ready (rec: Ecommerce Tax Partners, prefix ectp) | R3 done | | | generalist-overlap ruling before briefs | pick brand + rule overlap |
 
 All six R4 shortlists produced 2026-07-12 in one batch (`expansion_research/tier1_*/BRAND_SHORTLIST.md` + `r4_results.json`); every recommended + fallback name independently re-verified RDAP 404 on .co.uk AND .com same day. Owner can pick all brands in bulk.

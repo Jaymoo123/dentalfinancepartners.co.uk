@@ -1,0 +1,102 @@
+{
+  "niche_id": "crypto",
+  "display_name": "Digital Asset Tax Partners",
+  "legal_name": "Ashfield Trading Ltd",
+  "partner": null,
+  "company": {
+    "number": "16358723",
+    "place_of_registration": "England and Wales",
+    "registered_office": {
+      "line1": "20 Ashfield Avenue",
+      "line2": "Shipley",
+      "city": "Bradford",
+      "postcode": "BD18 3AL"
+    },
+    "vat_number": null,
+    "enquiry_retention_months": 24
+  },
+  "domain": "www.digitalassettaxpartners.co.uk",
+  "tagline": "UK cryptoasset tax specialists: CGT on disposals, staking and mining income, DeFi, HMRC nudge letters and disclosure, and Self Assessment",
+  "description": "Specialist UK tax accountants for crypto investors, traders and businesses. CGT and s104 pooling, staking and mining income, DeFi, HMRC disclosure and nudge letters, and Self Assessment filing.",
+  "brand": {
+    "primary_color": "#0e1a3a",
+    "logo_path": "/brand/logo.png",
+    "publisher_logo_url": "/api/og"
+  },
+  "contact": {
+    "email": "hello@digitalassettaxpartners.co.uk",
+    "phone": "+44 20 0000 0000"
+  },
+  "navigation": [
+    { "label": "Services", "href": "/services" },
+    { "label": "For", "href": "/for" },
+    { "label": "Calculators", "href": "/calculators" },
+    { "label": "Research", "href": "/research/crypto-tax-gap-index" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "About", "href": "/about" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "content_strategy": {
+    "audience": "UK cryptoasset holders: investors, day traders, DeFi and staking participants, NFT creators, miners, and businesses holding or accepting crypto",
+    "categories": [
+      "Crypto CGT & Disposals",
+      "Staking Mining & Airdrops",
+      "DeFi & Complex Transactions",
+      "HMRC Disclosure & Compliance",
+      "Trader Status & Day Trading",
+      "Crypto for Business"
+    ],
+    "supabase_table": "blog_topics",
+    "site_key": "crypto",
+    "source_identifier": "crypto"
+  },
+  "footer_links": [
+    { "label": "Contact", "href": "/contact" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Privacy Policy", "href": "/privacy-policy" }
+  ],
+  "locations": [],
+  "seo": {
+    "locale": "en_GB",
+    "organization_type": "AccountingService",
+    "service_areas": ["United Kingdom"],
+    "google_analytics_id": "",
+    "theme_color": "#0e1a3a",
+    "search_console_verification": {
+      "google": "",
+      "bing": "",
+      "yandex": "",
+      "naver": "",
+      "pinterest": ""
+    }
+  },
+  "lead_form": {
+    "role_label": "I am a...",
+    "role_options": [
+      { "value": "Investor (buy, hold, swap)", "label": "Investor (buy, hold, swap)" },
+      { "value": "Day trader / high volume", "label": "Day trader / high volume" },
+      { "value": "DeFi / staking participant", "label": "DeFi / staking participant" },
+      { "value": "NFT creator or trader", "label": "NFT creator or trader" },
+      { "value": "Miner", "label": "Miner" },
+      { "value": "Business holding or accepting crypto", "label": "Business holding or accepting crypto" }
+    ],
+    "placeholders": {
+      "name": "Alex Smith",
+      "email": "alex@example.co.uk",
+      "phone": "07700 000000",
+      "message": "e.g. Received an HMRC nudge letter, need help reconciling a Koinly report, or unsure whether my DeFi activity is a disposal..."
+    }
+  },
+  "cta": {
+    "sticky_primary": "Speak to a crypto tax specialist",
+    "sticky_secondary": "Free, no-obligation reply within 24 hours",
+    "sticky_button": "Get in touch"
+  },
+  "blog": {
+    "cta_heading": "Need help with your crypto tax position?",
+    "cta_body": "Tell us about your situation and we will come back within 24 hours.",
+    "cta_button": "Get in touch"
+  },
+  "shared_components_version": "1.0.0",
+  "last_sync": null
+}
