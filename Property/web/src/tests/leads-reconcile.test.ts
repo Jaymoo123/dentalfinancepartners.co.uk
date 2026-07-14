@@ -215,16 +215,10 @@ describe("lead-reconcile eligibility", () => {
     expect(mockEnrollLead).not.toHaveBeenCalled();
   });
 
-  it("excludes honeypot leads", async () => {
+  it("includes honeypot-tagged leads (tag is monitoring-only, every hit was a real human)", async () => {
     stubSelects([lead("h1", { extras: { honeypot: true } })]);
     await GET(cronReq({ auth: `Bearer ${CRON_SECRET}` }));
-    expect(mockEnrollLead).not.toHaveBeenCalled();
-  });
-
-  it("excludes suspected_spam leads", async () => {
-    stubSelects([lead("s1", { extras: { suspected_spam: true } })]);
-    await GET(cronReq({ auth: `Bearer ${CRON_SECRET}` }));
-    expect(mockEnrollLead).not.toHaveBeenCalled();
+    expect(mockEnrollLead).toHaveBeenCalled();
   });
 
   it.each(["closed", "unreachable", "forwarded", "converted", "archived", "contactable", "contacted", "qualified"])(

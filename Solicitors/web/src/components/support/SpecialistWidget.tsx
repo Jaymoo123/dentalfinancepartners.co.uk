@@ -303,7 +303,7 @@ export function SpecialistWidget() {
     // Value-free diagnostic only. Do NOT early-return: the server chokepoint stores
     // the row flagged and returns success, so a real human caught by autofill is never dropped.
     const honeypot = String(data.get("enquiry_ref") || "").trim();
-    if (honeypot) ft.onError("enquiry_ref", "honeypot");
+    // Honeypot is tag-only (autofill hits real humans); no friction ping.
     const email = String(data.get("email") || "").trim();
     const question = String(data.get("question") || "").trim();
     if (!emailRe.test(email)) {

@@ -308,7 +308,7 @@ export function SpecialistWidget() {
     // Honeypot: non-semantic name so autofill/password managers do not target it.
     // Do NOT early-return: the server chokepoint stores the row flagged.
     const honeypot = String(data.get("enquiry_ref") || "").trim();
-    if (honeypot) ft.onError("enquiry_ref", "honeypot");
+    // Honeypot is tag-only (autofill hits real humans); no friction ping.
     const email = String(data.get("email") || "").trim();
     const question = String(data.get("question") || "").trim();
     if (!emailRe.test(email)) {

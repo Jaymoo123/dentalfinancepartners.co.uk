@@ -186,18 +186,10 @@ describe("token handling", () => {
 
 // ── 2. Honeypot ────────────────────────────────────────────────────────────────
 
-describe("honeypot (enquiry_ref non-empty)", () => {
-  it("returns success:true and performs no writes / no token check", async () => {
-    const res = await POST(
-      makeReq({ token: GOOD_TOKEN, phone: "07700900000", enquiry_ref: "bot" }),
-    );
-    expect(res.status).toBe(200);
-    const body = (await res.json()) as { success: boolean };
-    expect(body.success).toBe(true);
-    expect(mockVerifyLeadToken).not.toHaveBeenCalled();
-    expect(mockAdminSelect).not.toHaveBeenCalled();
-    expect(mockAdminUpdate).not.toHaveBeenCalled();
-    expect(mockAdminInsert).not.toHaveBeenCalled();
+describe("honeypot (enquiry_ref non-empty) — ignored, request processed normally", () => {
+  it("still verifies the token (honeypot no longer gates this route)", async () => {
+    await POST(makeReq({ token: GOOD_TOKEN, phone: "07700900000", enquiry_ref: "bot" }));
+    expect(mockVerifyLeadToken).toHaveBeenCalled();
   });
 });
 

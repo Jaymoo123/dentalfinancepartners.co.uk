@@ -64,12 +64,9 @@ export async function POST(req: Request) {
     return NextResponse.json({ success: false, error: "bad-request" }, { status: 400 });
   }
 
-  // 1. Honeypot: a filled enquiry_ref is a bot (or an autofill we choose not to
-  //    trust here). Silent accept with no writes, matching the submit route's
-  //    de-fang posture, so a bot gets no signal and nothing is mutated.
-  if (String(body.enquiry_ref ?? "").trim()) {
-    return NextResponse.json({ success: true });
-  }
+  // 1. Honeypot removed as a gate (every historical hit was a real human via
+  //    browser autofill; 0 bots as of 2026-07-13). The token check below is the
+  //    real protection on this route, so a filled enquiry_ref is ignored.
 
   // 2. Verify the profile token. Mirror book/route.ts: 410 for an expired link
   //    (so the UI can offer a friendly "link expired" path), 401 otherwise.

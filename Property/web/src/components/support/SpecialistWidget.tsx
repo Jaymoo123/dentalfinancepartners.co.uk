@@ -357,13 +357,10 @@ export function SpecialistWidget() {
     e.preventDefault();
     setError(null);
     const data = new FormData(e.currentTarget);
-    // Honeypot named `enquiry_ref` (non-semantic) so autofill/password managers don't target
-    // it — old name `company_url` silently dropped real humans. [[property_leadform_honeypot_silent_drop]]
-    // Value-free diagnostic only; do NOT early-return. The server chokepoint stores a
-    // honeypot hit flagged and returns success, so a real human caught by autofill is
-    // never silently dropped.
+    // Honeypot is tag-only (every historical hit was a real human via autofill,
+    // 0 bots). Passed to the server, which tags extras.honeypot and processes
+    // the lead normally. Never block or ping friction on it.
     const honeypot = String(data.get("enquiry_ref") || "").trim();
-    if (honeypot) ft.onError("enquiry_ref", "honeypot");
     const email = String(data.get("email") || "").trim();
     const question = String(data.get("question") || "").trim();
     if (!emailRe.test(email)) {
@@ -448,7 +445,6 @@ export function SpecialistWidget() {
     const data = new FormData(e.currentTarget);
     // Honeypot handled exactly as the single flow: value-free diagnostic, never an early return.
     const honeypot = String(data.get("enquiry_ref") || "").trim();
-    if (honeypot) ft.onError("enquiry_ref", "honeypot");
     const trimmedEmail = email.trim();
     if (!emailRe.test(trimmedEmail)) {
       setFieldErrors({ email: "Enter a valid email address." });

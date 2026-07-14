@@ -95,19 +95,13 @@ export async function POST(req: Request) {
     );
   }
 
-  // 1. Honeypot: suspected bot. Store it flagged (so a real lead caught by
-  //    browser autofill is NEVER lost) but do not verify / nurture, and return a
-  //    success shape so a bot gets no signal. This de-fangs the old silent-drop.
+  // 1. Honeypot: tag-only. Every hit in history was a real human caught by
+  //    browser autofill (2 hits, 0 bots, 2026-07-13), so the lead proceeds
+  //    through the normal pipeline (verify + nurture + notify); the tag is kept
+  //    purely for monitoring. Upgrade path if real bot spam ever appears:
+  //    Vercel BotID.
   if (honeypot) {
-    try {
-      await adminInsert("leads", {
-        ...baseRow,
-        extras: { ...(baseRow.extras ?? {}), honeypot: true, suspected_spam: true },
-      });
-    } catch (e) {
-      console.error("[leads/submit] honeypot store failed", e);
-    }
-    return NextResponse.json({ success: true });
+    baseRow.extras = { ...(baseRow.extras ?? {}), honeypot: true };
   }
 
   // 2. Validate. email_only requires just a valid email + a short message (name

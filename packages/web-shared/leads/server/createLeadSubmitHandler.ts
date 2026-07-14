@@ -212,20 +212,12 @@ export function createLeadSubmitHandler(opts: LeadSubmitOptions) {
       extras: probe ? { ...(extrasIn ?? {}), probe: true } : extrasIn,
     };
 
-    // 1. Honeypot: store flagged, return success (no bot signal, no lost human).
+    // 1. Honeypot: tag-only. Every hit in history was a real human caught by
+    //    browser autofill (2 hits, 0 bots, 2026-07-13), so the lead proceeds
+    //    through the normal pipeline; the tag is kept purely for monitoring.
+    //    Upgrade path if real bot spam ever appears: Vercel BotID.
     if (honeypot) {
-      try {
-        await postgrest(env.supabaseUrl, env.serviceKey, "leads", {
-          method: "POST",
-          body: JSON.stringify({
-            ...baseRow,
-            extras: { ...(baseRow.extras ?? {}), honeypot: true, suspected_spam: true },
-          }),
-        });
-      } catch (e) {
-        console.error("[leads/submit] honeypot store failed", e);
-      }
-      return NextResponse.json({ success: true });
+      baseRow.extras = { ...(baseRow.extras ?? {}), honeypot: true };
     }
 
     // 2. Validate. Full form: name + email + phone mandatory, message optional

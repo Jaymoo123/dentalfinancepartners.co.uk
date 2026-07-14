@@ -87,28 +87,17 @@ describe("environment isolation", () => {
   });
 });
 
-describe("honeypot store-flag (the de-fanged silent drop)", () => {
-  it("stores the row flagged and returns success without deduping", async () => {
+describe("honeypot tag-only (real humans hit it via autofill)", () => {
+  it("processes the lead through the normal pipeline with extras.honeypot tagged", async () => {
     const POST = createLeadSubmitHandler({ source: "generalist" });
     const res = await POST(makeReq({ ...VALID, enquiry_ref: "autofilled co ltd" }));
     expect(res.status).toBe(200);
-    expect(await res.json()).toEqual({ success: true });
-    const gets = fetchCalls.filter((c) => (c.init.method ?? "GET") === "GET");
-    expect(gets).toHaveLength(0);
+    const body = await res.json();
+    expect(body.success).toBe(true);
     const [row] = insertBodies();
     expect(row.source).toBe("generalist");
     expect((row.extras as Record<string, unknown>).honeypot).toBe(true);
-    expect((row.extras as Record<string, unknown>).suspected_spam).toBe(true);
-  });
-
-  it("still returns success if the flagged store fails (no bot signal)", async () => {
-    fetchImpl = () => {
-      throw new Error("db down");
-    };
-    const POST = createLeadSubmitHandler({ source: "generalist" });
-    const res = await POST(makeReq({ ...VALID, enquiry_ref: "x" }));
-    expect(res.status).toBe(200);
-    expect(await res.json()).toEqual({ success: true });
+    expect((row.extras as Record<string, unknown>).suspected_spam).toBeUndefined();
   });
 });
 

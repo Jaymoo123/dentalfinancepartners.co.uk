@@ -205,41 +205,32 @@ beforeEach(() => {
 
 // ── 1. Honeypot ───────────────────────────────────────────────────────────────
 
-describe("honeypot (enquiry_ref non-empty)", () => {
+describe("honeypot (enquiry_ref non-empty) — tag-only, lead processed normally", () => {
   it("returns 200 with success:true when honeypot field is set", async () => {
-    mockAdminInsert.mockResolvedValue({ ok: true, status: 201, data: [] });
     const res = await POST(makeReq({ ...VALID_BODY, enquiry_ref: "bot-value" }));
     expect(res.status).toBe(200);
     const body = await res.json() as { success: boolean };
     expect(body.success).toBe(true);
   });
 
-  it("stores a lead row with extras.honeypot=true and extras.suspected_spam=true", async () => {
-    mockAdminInsert.mockResolvedValue({ ok: true, status: 201, data: [] });
+  it("stores the lead with extras.honeypot=true and NO suspected_spam flag", async () => {
     await POST(makeReq({ ...VALID_BODY, enquiry_ref: "autofill-noise" }));
-    expect(mockAdminInsert).toHaveBeenCalledTimes(1);
-    const [table, row] = mockAdminInsert.mock.calls[0] as [string, Record<string, unknown>];
-    expect(table).toBe("leads");
+    const leadInsert = mockAdminInsert.mock.calls.find(([t]) => t === "leads");
+    expect(leadInsert).toBeTruthy();
+    const [, row] = leadInsert as [string, Record<string, unknown>];
     expect((row.extras as Record<string, unknown>).honeypot).toBe(true);
-    expect((row.extras as Record<string, unknown>).suspected_spam).toBe(true);
+    expect((row.extras as Record<string, unknown>).suspected_spam).toBeUndefined();
   });
 
-  it("does NOT call verifyLead when honeypot fires", async () => {
-    mockAdminInsert.mockResolvedValue({ ok: true, status: 201, data: [] });
+  it("still calls verifyLead (normal pipeline, not quarantined)", async () => {
     await POST(makeReq({ ...VALID_BODY, enquiry_ref: "x" }));
-    expect(mockVerifyLead).not.toHaveBeenCalled();
+    expect(mockVerifyLead).toHaveBeenCalled();
   });
 
-  it("does NOT call processLeadStep when honeypot fires", async () => {
-    mockAdminInsert.mockResolvedValue({ ok: true, status: 201, data: [] });
-    await POST(makeReq({ ...VALID_BODY, enquiry_ref: "x" }));
-    expect(mockProcessLeadStep).not.toHaveBeenCalled();
-  });
-
-  it("stores extras from request body merged with honeypot flags", async () => {
-    mockAdminInsert.mockResolvedValue({ ok: true, status: 201, data: [] });
+  it("stores extras from request body merged with the honeypot tag", async () => {
     await POST(makeReq({ ...VALID_BODY, enquiry_ref: "x", extras: { foo: "bar" } }));
-    const [, row] = mockAdminInsert.mock.calls[0] as [string, Record<string, unknown>];
+    const leadInsert = mockAdminInsert.mock.calls.find(([t]) => t === "leads");
+    const [, row] = leadInsert as [string, Record<string, unknown>];
     const extras = row.extras as Record<string, unknown>;
     expect(extras.foo).toBe("bar");
     expect(extras.honeypot).toBe(true);

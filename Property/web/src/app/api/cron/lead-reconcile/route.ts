@@ -116,15 +116,14 @@ function authorized(req: NextRequest): boolean {
  *   - source is not 'test' (synthetic probes are never nurtured), AND
  *   - role is not 'resource' (Annex B.2 resource downloads, in-house consent,
  *     intentionally not nurtured), AND
- *   - it is not honeypot / suspected spam (extras flags), AND
  *   - its status is still 'new' or 'nurturing' (any terminal / handled status
  *     is deliberately excluded).
+ * extras.honeypot is a monitoring tag only (every historical hit was a real
+ * human via browser autofill), so tagged leads stay eligible.
  */
 function isReconcileEligible(lead: ReconcileLeadRow): boolean {
   if ((lead.source ?? "") === "test") return false;
   if ((lead.role ?? "") === "resource") return false;
-  const extras = lead.extras ?? {};
-  if (extras.honeypot === true || extras.suspected_spam === true) return false;
   if (!RECONCILE_STATUSES.has(lead.status ?? "")) return false;
   return true;
 }

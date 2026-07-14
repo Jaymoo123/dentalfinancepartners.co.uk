@@ -102,10 +102,9 @@ export function ResourceGate({
     const data = new FormData(form);
 
     // Honeypot: enquiry_ref (non-semantic so autofill/password managers don't fire it).
+    // Tag-only: every historical hit was a real human via autofill, so never
+    // block — pass the value through and let the server tag extras.honeypot.
     const honeypot = String(data.get("enquiry_ref") || "").trim();
-    // Pass through (stored flagged) rather than silently dropping.
-    // We still bail from the UI so the bot gets no feedback.
-    if (honeypot !== "") return;
 
     const errs = validate(data);
     setFieldErrors(errs);

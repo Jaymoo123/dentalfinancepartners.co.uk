@@ -101,9 +101,9 @@ export function ResourceGate({
     setErrorMessage(null);
     const form = e.currentTarget;
     const data = new FormData(form);
-    // Honeypot named `enquiry_ref` (non-semantic) so autofill/password managers don't target
-    // it — old name `company_url` silently dropped real humans. [[property_leadform_honeypot_silent_drop]]
-    if (String(data.get("enquiry_ref") || "").trim() !== "") return; // honeypot
+    // Honeypot is tag-only: browser autofill fills it on real humans (every
+    // historical hit was real, 0 bots), so never block — record the tag in extras.
+    const honeypotHit = String(data.get("enquiry_ref") || "").trim() !== "";
     const errs = validate(data);
     setFieldErrors(errs);
     if (Object.keys(errs).length > 0) return;
@@ -131,6 +131,7 @@ export function ResourceGate({
       consent_at: new Date().toISOString(),
       visitor_id: getVisitorId() || undefined,
       session_id: getSessionId() || undefined,
+      ...(honeypotHit ? { extras: { honeypot: true } } : {}),
     };
 
     const result = await submitLead(payload, supabaseUrl, supabaseKey);

@@ -1,7 +1,7 @@
 /**
- * Smoke test: a honeypot-filled submit is "silently dropped" from the lead
- * pipeline — the caller sees success, no dedupe runs, and the row is stored
- * FLAGGED (extras.honeypot=true) rather than as a real lead.
+ * Smoke test: a honeypot-filled submit is tag-only — the lead is processed
+ * through the normal pipeline with extras.honeypot=true recorded for
+ * monitoring (every historical hit was a real human via browser autofill).
  */
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { POST } from "./route";
@@ -51,19 +51,17 @@ const VALID = {
 };
 
 describe("lead submit honeypot", () => {
-  it("stores the row flagged with source=charities and returns success", async () => {
+  it("stores the row tagged with source=charities and processes it normally", async () => {
     const res = await POST(makeReq({ ...VALID, enquiry_ref: "autofilled value" }));
     expect(res.status).toBe(200);
-    expect(await res.json()).toEqual({ success: true });
+    expect(((await res.json()) as { success: boolean }).success).toBe(true);
 
-    // No dedupe GET ran; a single flagged insert happened.
-    expect(fetchCalls.filter((c) => (c.init.method ?? "GET") === "GET")).toHaveLength(0);
     const inserts = fetchCalls.filter((c) => c.init.method === "POST");
     expect(inserts).toHaveLength(1);
     const row = JSON.parse(String(inserts[0].init.body)) as Record<string, unknown>;
     expect(row.source).toBe("charities");
     expect((row.extras as Record<string, unknown>).honeypot).toBe(true);
-    expect((row.extras as Record<string, unknown>).suspected_spam).toBe(true);
+    expect((row.extras as Record<string, unknown>).suspected_spam).toBeUndefined();
   });
 
   it("a clean submit inserts a real lead with source=charities", async () => {
