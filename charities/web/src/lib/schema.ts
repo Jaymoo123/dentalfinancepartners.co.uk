@@ -49,3 +49,53 @@ export function buildWebsiteJsonLd() {
     inLanguage: "en-GB",
   });
 }
+
+/** FAQPage JSON-LD */
+export function buildFaqJsonLd(faqs: { question: string; answer: string }[]) {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  });
+}
+
+/** BreadcrumbList JSON-LD */
+export function buildBreadcrumbJsonLd(items: { label: string; href?: string }[]) {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.label,
+      ...(item.href && { item: `${siteConfig.url}${item.href}` }),
+    })),
+  });
+}
+
+/** Article JSON-LD for guide pages */
+export function buildArticleJsonLd(opts: {
+  title: string;
+  description: string;
+  url: string;
+  dateModified?: string;
+}) {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: opts.title,
+    description: opts.description,
+    url: `${siteConfig.url}${opts.url}`,
+    dateModified: opts.dateModified,
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${siteConfig.url}${opts.url}` },
+  });
+}
