@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/for-junior-solicitors",
     "/for-locum-solicitors",
     "/free-firm-health-check",
+    "/law-firm-chart-of-accounts-template",
     "/uk-solicitor-tax-rates",
     "/specialist-vs-generalist-accountant",
     "/privacy-policy",
