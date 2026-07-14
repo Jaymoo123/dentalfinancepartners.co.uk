@@ -20,7 +20,9 @@
     "charities/web",
     "hospitality/web",
     "care/web",
-    "crypto/web"
+    "crypto/web",
+    "pharmacies/web",
+    "startups-tech/web"
   ],
   "engines": {
     "node": ">=20"

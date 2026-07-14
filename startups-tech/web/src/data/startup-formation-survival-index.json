@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "title": "UK Startup Formation and Survival Index",
+    "description": "Real-data index of UK tech and software company formation and status derived from the Companies House Advanced Search API. Covers SIC codes 62011, 62012, 62020, 62090, 63110, 63120, 58210 and 58290 (software development, IT consultancy, data processing, web portals, and software publishing). UK-wide. Updated quarterly.",
+    "pullDate": "2026-07-15",
+    "lastUpdated": "2026-07-15",
+    "licence": "Open Government Licence v3.0 (OGL3). Derived from Companies House public register. Reuse with attribution.",
+    "citeAs": "UK Startup Formation and Survival Index, derived from Companies House Advanced Search API (SIC codes 62011/62012/62020/62090/63110/63120/58210/58290). Published under OGL3. Data pulled 2026-07-15.",
+    "methodology": "Active and dissolved company counts: live hit counts from the CH Advanced Search API filtered by sic_codes and company_status (active / dissolved). A single query across all 8 SIC codes is used for the combined totals; CH deduplicates companies that list multiple SIC codes, so the combined figure is lower than the sum of per-SIC counts. Quarterly incorporations: CH incorporated_from / incorporated_to date filters, no company_status restriction (counts all companies ever incorporated in that quarter). Quarterly dissolutions: CH dissolved_from / dissolved_to date filters. Annual formation counts use the same incorporated_from / incorporated_to method. SIC codes are self-reported by company directors at incorporation and may be updated later; some miscoding is expected.",
+    "caveats": [
+      "Active/dissolved counts are a snapshot, not a cohort survival curve. A company incorporated in 2019 and dissolved by 2024 contributes to dissolved, not active, but the snapshot does not tell us the distribution of dissolution dates by cohort.",
+      "SIC codes are self-reported. Miscoding is common in this sector: many IT-services companies register under 62020 (IT consultancy) regardless of their actual activity.",
+      "Dissolved count is cumulative (all-time), not a rate. It includes companies dissolved before 2015 and those wound up deliberately (e.g. MVL, members' voluntary liquidation) which is common and tax-efficient for profitable tech companies.",
+      "2020-Q2 dissolutions are anomalously low (892 vs typical 8,000 to 14,000 per quarter): Companies House suspended compulsory strike-off actions from April to September 2020 under the Corporate Insolvency and Governance Act 2020. This is a CH administrative suspension, not a genuine drop in failures.",
+      "UK-wide: England, Scotland, Wales and Northern Ireland included. No devolved split in v1.",
+      "SIC codes 58210 (computer games publishing) and 58290 (other software publishing) are included because they overlap with the SaaS/product software audience. Remove them for a pure-IT-services cut."
+    ],
+    "sources": {
+      "companies_house": {
+        "name": "Companies House Advanced Search API",
+        "url": "https://developer.company-information.service.gov.uk/api/docs/",
+        "licence": "Open Government Licence v3.0",
+        "publisher": "Companies House",
+        "pullDate": "2026-07-15"
+      },
+      "sic_reference": {
+        "name": "Companies House SIC code list",
+        "url": "https://resources.companieshouse.gov.uk/sic/",
+        "licence": "Open Government Licence v3.0",
+        "publisher": "Companies House"
+      }
+    }
+  },
+  "combinedTechSector": {
+    "sicCodes": ["62011", "62012", "62020", "62090", "63110", "63120", "58210", "58290"],
+    "sicCodeLabels": {
+      "62011": "Ready-made interactive leisure and entertainment software development",
+      "62012": "Business and domestic software development",
+      "62020": "Information technology consultancy activities",
+      "62090": "Other information technology service activities",
+      "63110": "Data processing, hosting and related activities",
+      "63120": "Web portals",
+      "58210": "Publishing of computer games",
+      "58290": "Other software publishing"
+    },
+    "note": "Combined query across all 8 SIC codes. CH deduplicates companies that hold multiple codes, so the combined total is lower than the sum of per-SIC counts.",
+    "activeCompanies": {
+      "count": 359507,
+      "asOf": "2026-07-15",
+      "label": "359,507"
+    },
+    "dissolvedCompanies": {
+      "count": 458213,
+      "asOf": "2026-07-15",
+      "label": "458,213"
+    },
+    "totalEverRegistered": {
+      "count": 817720,
+      "label": "817,720",
+      "note": "Active + dissolved. Excludes companies in administration or voluntary strike-off that CH has not yet formally dissolved."
+    },
+    "snapshotSurvivalRate": {
+      "pct": 43.96,
+      "label": "44.0%",
+      "caveat": "Snapshot survival rate: active / (active + dissolved) as at pull date. This is NOT a cohort survival rate. It mixes companies of all ages and is inflated by recently formed companies that have not yet had time to fail."
+    },
+    "sourceUrl": "https://developer.company-information.service.gov.uk/api/docs/"
+  },
+  "perSicBreakdown": [
+    {
+      "sicCode": "62011",
+      "label": "Ready-made interactive leisure and entertainment software development",
+      "active": 10954,
+      "dissolved": 14840,
+      "activeLabel": "10,954",
+      "dissolvedLabel": "14,840"
+    },
+    {
+      "sicCode": "62012",
+      "label": "Business and domestic software development",
+      "active": 115021,
+      "dissolved": 94781,
+      "activeLabel": "115,021",
+      "dissolvedLabel": "94,781"
+    },
+    {
+      "sicCode": "62020",
+      "label": "Information technology consultancy activities",
+      "active": 172998,
+      "dissolved": 235308,
+      "activeLabel": "172,998",
+      "dissolvedLabel": "235,308"
+    },
+    {
+      "sicCode": "62090",
+      "label": "Other information technology service activities",
+      "active": 97664,
+      "dissolved": 119387,
+      "activeLabel": "97,664",
+      "dissolvedLabel": "119,387"
+    },
+    {
+      "sicCode": "63110",
+      "label": "Data processing, hosting and related activities",
+      "active": 22507,
+      "dissolved": 25000,
+      "activeLabel": "22,507",
+      "dissolvedLabel": "25,000"
+    },
+    {
+      "sicCode": "63120",
+      "label": "Web portals",
+      "active": 22968,
+      "dissolved": 29511,
+      "activeLabel": "22,968",
+      "dissolvedLabel": "29,511"
+    },
+    {
+      "sicCode": "58210",
+      "label": "Publishing of computer games",
+      "active": 4856,
+      "dissolved": 5743,
+      "activeLabel": "4,856",
+      "dissolvedLabel": "5,743"
+    },
+    {
+      "sicCode": "58290",
+      "label": "Other software publishing",
+      "active": 18529,
+      "dissolved": 17954,
+      "activeLabel": "18,529",
+      "dissolvedLabel": "17,954"
+    }
+  ],
+  "annualFormations": {
+    "description": "Annual formation count: all companies incorporating under any of the 8 SIC codes in that calendar year (any final status). Source: CH Advanced Search incorporated_from / incorporated_to filter. UK-wide.",
+    "years": [
+      { "year": "2015", "formations": 35547 },
+      { "year": "2016", "formations": 36439 },
+      { "year": "2017", "formations": 40099 },
+      { "year": "2018", "formations": 45348 },
+      { "year": "2019", "formations": 44136 },
+      { "year": "2020", "formations": 45104 },
+      { "year": "2021", "formations": 45189 },
+      { "year": "2022", "formations": 47931 },
+      { "year": "2023", "formations": 59401 },
+      { "year": "2024", "formations": 58012 },
+      { "year": "2025", "formations": 67529 }
+    ],
+    "note": "2026 is not shown here (year in progress). 2025 is the most recent full year. Use quarterlyChurn for the most up-to-date 2026 formation signal."
+  },
+  "quarterlyChurn": {
+    "description": "Quarterly incorporations and dissolutions across all 8 SIC codes, 2020-Q1 to 2026-Q2. Source: CH Advanced Search incorporated_from/to and dissolved_from/to filters. UK-wide.",
+    "quarters": [
+      { "quarter": "2020-Q1", "incorporations": 9745, "dissolutions": 8640, "net": 1105 },
+      { "quarter": "2020-Q2", "incorporations": 10957, "dissolutions": 892, "net": 10065 },
+      { "quarter": "2020-Q3", "incorporations": 12090, "dissolutions": 5556, "net": 6534 },
+      { "quarter": "2020-Q4", "incorporations": 12312, "dissolutions": 14469, "net": -2157 },
+      { "quarter": "2021-Q1", "incorporations": 11327, "dissolutions": 12069, "net": -742 },
+      { "quarter": "2021-Q2", "incorporations": 10169, "dissolutions": 9352, "net": 817 },
+      { "quarter": "2021-Q3", "incorporations": 10394, "dissolutions": 11932, "net": -1538 },
+      { "quarter": "2021-Q4", "incorporations": 13299, "dissolutions": 11094, "net": 2205 },
+      { "quarter": "2022-Q1", "incorporations": 11831, "dissolutions": 11409, "net": 422 },
+      { "quarter": "2022-Q2", "incorporations": 12105, "dissolutions": 11389, "net": 716 },
+      { "quarter": "2022-Q3", "incorporations": 11925, "dissolutions": 10428, "net": 1497 },
+      { "quarter": "2022-Q4", "incorporations": 12070, "dissolutions": 8280, "net": 3790 },
+      { "quarter": "2023-Q1", "incorporations": 14349, "dissolutions": 12528, "net": 1821 },
+      { "quarter": "2023-Q2", "incorporations": 14408, "dissolutions": 13900, "net": 508 },
+      { "quarter": "2023-Q3", "incorporations": 15248, "dissolutions": 10915, "net": 4333 },
+      { "quarter": "2023-Q4", "incorporations": 15396, "dissolutions": 11079, "net": 4317 },
+      { "quarter": "2024-Q1", "incorporations": 17152, "dissolutions": 10796, "net": 6356 },
+      { "quarter": "2024-Q2", "incorporations": 14599, "dissolutions": 11409, "net": 3190 },
+      { "quarter": "2024-Q3", "incorporations": 13350, "dissolutions": 12036, "net": 1314 },
+      { "quarter": "2024-Q4", "incorporations": 12911, "dissolutions": 14138, "net": -1227 },
+      { "quarter": "2025-Q1", "incorporations": 15211, "dissolutions": 13026, "net": 2185 },
+      { "quarter": "2025-Q2", "incorporations": 16866, "dissolutions": 13615, "net": 3251 },
+      { "quarter": "2025-Q3", "incorporations": 18533, "dissolutions": 17072, "net": 1461 },
+      { "quarter": "2025-Q4", "incorporations": 16919, "dissolutions": 13293, "net": 3626 },
+      { "quarter": "2026-Q1", "incorporations": 19288, "dissolutions": 14952, "net": 6336 },
+      { "quarter": "2026-Q2", "incorporations": 21364, "dissolutions": 12317, "net": 9047 }
+    ],
+    "caveat": "2020-Q2 dissolutions (892) are anomalously low because Companies House suspended compulsory strike-off under the Corporate Insolvency and Governance Act 2020 (April to September 2020). The backlog processed in subsequent quarters: 2020-Q4 (14,469) and 2021-Q1 (12,069) are correspondingly elevated. Do not cite 2020-Q2 dissolutions or the 2020-Q3/Q4 pair as trend signals."
+  }
+}

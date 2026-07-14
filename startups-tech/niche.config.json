@@ -1,0 +1,119 @@
+{
+  "niche_id": "startups-tech",
+  "display_name": "Founder Finance Partners",
+  "legal_name": "Ashfield Trading Ltd",
+  "company": {
+    "number": "16358723",
+    "place_of_registration": "England and Wales",
+    "registered_office": {
+      "line1": "20 Ashfield Avenue",
+      "line2": "Shipley",
+      "city": "Bradford",
+      "postcode": "BD18 3AL"
+    },
+    "vat_number": null,
+    "enquiry_retention_months": 24
+  },
+  "partner": { "name": "Reflex Accounting", "privacy_policy_url": null },
+  "domain": "www.founderfinancepartners.co.uk",
+  "tagline": "Specialist accountants for funded and scaling UK startups: R&D relief, SEIS/EIS, EMI and share schemes, investor-ready accounts",
+  "description": "Specialist accountants for funded and scaling UK startups: R&D relief, SEIS/EIS, EMI and share schemes, investor-ready accounts",
+  "brand": {
+    "primary_color": "#4f46e5",
+    "logo_path": "/brand/logo.png",
+    "publisher_logo_url": "/api/og"
+  },
+  "contact": {
+    "email": "hello@founderfinancepartners.co.uk",
+    "phone": "+44 20 0000 0000"
+  },
+  "navigation": [
+    { "label": "Services", "href": "/services" },
+    { "label": "Who we help", "href": "/for" },
+    { "label": "Calculators", "href": "/calculators" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Research", "href": "/research/startup-formation-survival-index" },
+    { "label": "About", "href": "/about" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "footer_links": [
+    { "label": "Services", "href": "/services" },
+    { "label": "Who we help", "href": "/for" },
+    { "label": "Calculators", "href": "/calculators" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "About", "href": "/about" },
+    { "label": "Contact", "href": "/contact" },
+    { "label": "Privacy policy", "href": "/privacy-policy" },
+    { "label": "Terms", "href": "/terms" },
+    { "label": "Cookie policy", "href": "/cookie-policy" }
+  ],
+  "locations": [],
+  "content_strategy": {
+    "audience": "UK funded startups, SaaS founders, pre-seed companies and scaling tech businesses",
+    "categories": [
+      "R&D Tax Relief",
+      "SEIS and EIS",
+      "Share Schemes and EMI",
+      "Founder Tax and Extraction",
+      "SaaS and Tech Finance",
+      "Startup Compliance"
+    ],
+    "supabase_table": "blog_topics",
+    "site_key": "startups-tech",
+    "source_identifier": "startups-tech"
+  },
+  "seo": {
+    "locale": "en-GB",
+    "organization_type": "AccountingService",
+    "service_areas": [
+      "London",
+      "Manchester",
+      "Birmingham",
+      "Leeds",
+      "Bristol",
+      "Glasgow",
+      "Edinburgh",
+      "Cambridge",
+      "Oxford",
+      "Reading"
+    ],
+    "google_analytics_id": "",
+    "search_console_verification": {
+      "google": "",
+      "bing": "",
+      "yandex": "",
+      "naver": "",
+      "pinterest": ""
+    },
+    "theme_color": "#4f46e5"
+  },
+  "lead_form": {
+    "role_label": "I am a...",
+    "role_options": [
+      { "value": "Pre-seed founder", "label": "Pre-seed founder" },
+      { "value": "Funded startup founder", "label": "Funded startup founder" },
+      { "value": "SaaS company", "label": "SaaS company" },
+      { "value": "Software development company", "label": "Software development company" },
+      { "value": "Fintech startup", "label": "Fintech startup" },
+      { "value": "Other", "label": "Other" }
+    ],
+    "placeholders": {
+      "name": "Alex Smith",
+      "email": "alex@yourstartup.co.uk",
+      "phone": "07700 000000",
+      "message": "e.g. We are raising a seed round and want to check our SEIS eligibility, or we need to set up an EMI scheme..."
+    }
+  },
+  "cta": {
+    "sticky_primary": "Speak to a startup accountant",
+    "sticky_secondary": "Specialist advice on R&D, SEIS/EIS, EMI and share schemes. No obligation.",
+    "sticky_button": "Get in touch"
+  },
+  "blog": {
+    "cta_heading": "Need specialist startup tax advice?",
+    "cta_body": "Speak to an accountant who works with funded and scaling UK startups. R&D relief, SEIS/EIS, EMI, founder salary and dividend planning.",
+    "cta_button": "Get in touch"
+  },
+  "shared_components_version": "1.0.0",
+  "last_sync": null
+}
