@@ -2,7 +2,16 @@
 
 Single source of program state. Update at every stage transition. Stages S1-S8 and gates G1-G4 defined in [EXPANSION_PROGRAM.md](EXPANSION_PROGRAM.md).
 
-Last updated: 2026-07-11
+Last updated: 2026-07-14
+
+## Thread B — existing-site content-gap enrichment (2026-07-14, commit 2aa8794c)
+
+Parallel track: rank existing sites' `blog_topics` by real DataForSEO demand; build a pool for
+a live site that has none. Full methodology + per-site results:
+[CONTENT_GAP_ENRICHMENT.md](CONTENT_GAP_ENRICHMENT.md). Headlines: contractors-ir35 = 242
+unwritten topics with demand; trade (construction-cis) pool built from scratch → 221 net-new vs
+208 live pages; agency 5/314 terms have volume; generalist fully written (optimise signal);
+dentists 58% duplicate rows. Tools: `scripts/enrich_blog_topics.py`, `scripts/_trade_pool_pull.py`.
 
 ## Phase 0 (factory hardening) — CODE DONE, committed 939933fa on `expansion/phase-0`
 

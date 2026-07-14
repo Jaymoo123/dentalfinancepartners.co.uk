@@ -78,6 +78,11 @@ All six R4 brand shortlists were batch-produced + independently RDAP re-verified
 
 ## Demand-vs-coverage parse (run 2026-07-13; re-runnable, works on ANY site)
 
+> **EXECUTED 2026-07-14** for contractors-ir35 / dentists / agency / generalist (enriched in
+> place) and construction-cis (pool built from scratch). Full results + tooling:
+> [CONTENT_GAP_ENRICHMENT.md](CONTENT_GAP_ENRICHMENT.md).
+
+
 One query + one ratio per site: `SELECT site_key, count(*), count(search_volume),
 sum(search_volume), count(*) FILTER (WHERE used) FROM blog_topics GROUP BY site_key`
 (via `scripts/_expansion_sql.py`), read against live md counts in `<Site>/web/content`.
