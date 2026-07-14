@@ -10,7 +10,7 @@
 ## Where we are (2026-07-14)
 
 Depth-first build under WORKING-BRAND placeholders, deploy held (owner registers domains + deploys
-in batches). Two sites DONE + committed on `expansion/phase-0`:
+in batches). Three sites DONE + committed on `expansion/phase-0`:
 
 - **Site 1 — Charities** (commit `2a501b52`): working brand **Trustee Finance Partners**
   (www.trusteefinancepartners.co.uk). 29 assets: home + 5 services + 2 sector + 6 pillar guides +
@@ -18,9 +18,24 @@ in batches). Two sites DONE + committed on `expansion/phase-0`:
 - **Site 2 — Hospitality** (commit `39202375`): working brand **Hospitality Finance Partners**
   (www.hospitalityfinancepartners.co.uk). 24 pages: home + 6 /for sub-trade hubs + 5 services +
   12 blogs + 3 tools + Openings/Closures Index. Build green (54 pages, 30 tests).
+- **Site 3 — Crypto** (commit `a516e497`): working brand **Digital Asset Tax Partners**
+  (www.digitalassettaxpartners.co.uk, prefix datp, tranche 2). 24 assets: home + 6 /for hubs +
+  5 services + 12 blogs + 4 calculators + Crypto Tax Compliance Index. Build green (35 pages,
+  12 tests). Crypto was only at R4, so this build ALSO ran the S2 scaffold + house_positions +
+  rates_ledger first (see the note under step 0 below).
 
-Both: brand-agnostic corpus (render via `getSiteUrl()`/siteConfig, zero brand literals), adversarial
-fact-review passed, zero live-site touch. **NEXT = crypto (site 3).**
+All: brand-agnostic body corpus (render via `getSiteUrl()`/siteConfig), adversarial fact-review
+passed, zero live-site touch. **NEXT = pharmacies (site 4).**
+
+> **Sites still at R4 only (pharmacies, startups, ecommerce) need the FULL S2-S5 pipeline first;
+> care already has S2-S5.** For an R4-only site, before the playbook below run
+> `python -m optimisation_engine.ops.spinup_site --niche <n> --display-name "<working brand>"
+> --domain www.<recbrand>.co.uk --brand-primary <hex> --brand-on-primary "#ffffff"
+> --niche-summary "<=155ch" --tranche <N> --storage-prefix <r4 prefix> --skip-db`, then promote
+> `expansion_research/tier1_<n>/HOUSE_POSITIONS_OUTLINE.md` to `docs/<n>/house_positions.md`
+> (re-verify load-bearing figures at source) + write `docs/<n>/rates_ledger.json`. Do NOT use
+> `scripts/scaffold_new_site.py` (older Dentists-copy tool, wrong base). Then infra-mirror the
+> freshest sibling (now `crypto/web` or `hospitality/web`).
 
 ## The proven per-site playbook (run this for each remaining site)
 
