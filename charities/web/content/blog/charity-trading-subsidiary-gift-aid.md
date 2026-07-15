@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "Gift Aid"
 metaTitle: "Charity Trading Subsidiary & Gift Aid: Profits Back Tax-Free"
-metaDescription: "When UK charities need a trading subsidiary, how the small trading exemption works, and how corporate Gift Aid returns profits to the parent with no corporation tax."
+metaDescription: "When UK charities need a trading subsidiary, how the small trading exemption works, and how corporate Gift Aid returns profits to the parent tax-free."
 h1: "Charity Trading Subsidiaries and Gift Aid: When You Need One and How Profits Flow Back Tax-Free"
 summary: "A trading subsidiary lets a charity run taxable commercial activity and return all profits to the parent via corporate Gift Aid, paying no corporation tax in the process."
 keyTakeaways:
@@ -139,4 +139,4 @@ faqs:
 
 <p>For guidance on the charity's own accounts once a subsidiary is in place, including group consolidation and the scrutiny requirements for the charity, see our <a href="/services/charity-accounts">charity accounts service</a>. For a broader picture of how Gift Aid rules interact with the subsidiary's donations to the parent, the <a href="/guides/gift-aid-complete-guide">Gift Aid complete guide</a> covers the full framework. If the trading involves a social enterprise structure, the <a href="/for/social-enterprises">social enterprises section</a> covers the interaction between different legal forms.</p>
 
-<p>Scotland note: charity regulation in Scotland is the responsibility of OSCR, with different scrutiny thresholds from England and Wales. The trading tax rules (HP 12 and HP 13) are HMRC rules that apply UK-wide, but the charity governance and accounts framework differs. Scottish charities should confirm their reporting obligations with OSCR guidance alongside this page.</p>
+<p>Scotland note: charity regulation in Scotland is the responsibility of OSCR, with different scrutiny thresholds from England and Wales. The trading tax rules are HMRC rules that apply UK-wide, but the charity governance and accounts framework differs. Scottish charities should confirm their reporting obligations with OSCR guidance alongside this page.</p>

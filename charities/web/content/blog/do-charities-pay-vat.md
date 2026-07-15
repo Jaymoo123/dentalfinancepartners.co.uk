@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "Charity VAT"
 metaTitle: "Do Charities Pay VAT? Rules, Reliefs and Traps Explained"
-metaDescription: "Yes, charities can pay VAT. This guide covers registration rules, reduced-rate reliefs, fundraising exemptions, and the business/non-business split trustees need to know."
+metaDescription: "Charities can pay VAT. Covers registration, reduced-rate reliefs, fundraising exemptions, and the business/non-business split trustees need to know."
 h1: "Do Charities Pay VAT? The Real Rules, Reliefs and Traps"
 summary: "Charities are not exempt from VAT as a matter of status. Specific reliefs exist, but whether a charity registers, charges and recovers VAT depends on the nature of its activities."
 keyTakeaways:
@@ -87,7 +87,7 @@ faqs:
 
 <p>The 5% reduced rate on fuel and power applies where the fuel or power is for a qualifying use (broadly, non-business or residential use). The charity must provide a written eligibility declaration to the supplier before the first supply or as soon as the qualifying use begins. Without the declaration, the supplier charges the standard 20% rate.</p>
 
-<p>The brief note on other reliefs (for items such as construction services or medical equipment) is that they exist in specific circumstances, but this post covers only the reliefs in HP 20. Before claiming a relief not listed here, verify the conditions in Notice 701/1 or take advice.</p>
+<p>The brief note on other reliefs (for items such as construction services or medical equipment) is that they exist in specific circumstances, but this post covers only the reliefs listed above. Before claiming a relief not listed here, verify the conditions in Notice 701/1 or take advice.</p>
 
 <h2>Fundraising events: the exemption and the 15-event limit</h2>
 

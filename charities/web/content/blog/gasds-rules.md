@@ -54,7 +54,7 @@ faqs:
 
 <h2>The annual limit and what the top-up is worth</h2>
 <p>Your charity can claim GASDS on up to <strong>£8,000 of qualifying donations per tax year</strong>. At the 25% top-up rate, that produces a <strong>maximum top-up of £2,000</strong> per year. These figures are set by HMRC and apply per charity (or per community building where the community buildings rules apply).</p>
-<p>Use the <a href="/calculators/gasds-calculator">GASDS calculator</a> to work out your claim quickly.</p>
+<p>Use the <a href="/calculators/gasds-small-donations-calculator">GASDS calculator</a> to work out your claim quickly.</p>
 <p>A worked example:</p>
 <table>
   <thead>

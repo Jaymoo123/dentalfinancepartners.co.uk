@@ -195,8 +195,8 @@ const guideLinks = [
 
 const calculatorLinks = [
   { title: "Gift Aid calculator", href: "/calculators/calc-gift-aid-calculator" },
-  { title: "IE vs audit threshold checker", href: "/calculators/calc-ie-vs-audit-threshold-checker" },
-  { title: "GASDS calculator", href: "/calculators/calc-gasds-calculator" },
+  { title: "IE vs audit threshold checker", href: "/calculators/independent-examination-vs-audit-checker" },
+  { title: "GASDS calculator", href: "/calculators/gasds-small-donations-calculator" },
 ];
 
 const faqs = [

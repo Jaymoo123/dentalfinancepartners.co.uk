@@ -33,6 +33,17 @@ export function buildOrganizationJsonLd() {
     },
     areaServed: niche.seo.service_areas,
     priceRange: "££",
+    knowsAbout: [
+      "charity accounts",
+      "Gift Aid",
+      "GASDS",
+      "SORP",
+      "independent examination",
+      "CIC",
+    ],
+    sameAs: [
+      "https://find-and-update.company-information.service.gov.uk/company/16358723",
+    ],
   });
 }
 
@@ -77,11 +88,12 @@ export function buildBreadcrumbJsonLd(items: { label: string; href?: string }[])
   });
 }
 
-/** Article JSON-LD for guide pages */
+/** Article JSON-LD for blog and guide pages */
 export function buildArticleJsonLd(opts: {
   title: string;
   description: string;
   url: string;
+  datePublished?: string;
   dateModified?: string;
 }) {
   return JSON.stringify({
@@ -90,12 +102,33 @@ export function buildArticleJsonLd(opts: {
     headline: opts.title,
     description: opts.description,
     url: `${siteConfig.url}${opts.url}`,
-    dateModified: opts.dateModified,
+    datePublished: opts.datePublished,
+    dateModified: opts.dateModified ?? opts.datePublished,
     publisher: {
       "@type": "Organization",
       name: siteConfig.name,
       url: siteConfig.url,
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${siteConfig.url}${opts.url}` },
+  });
+}
+
+/** HowTo JSON-LD for step-by-step pages (only emit when howToSteps is present). */
+export function buildHowToJsonLd(opts: {
+  name: string;
+  description?: string;
+  steps: { name: string; text: string }[];
+}) {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: opts.name,
+    ...(opts.description && { description: opts.description }),
+    step: opts.steps.map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+    })),
   });
 }

@@ -173,7 +173,7 @@ lastReviewed: "2026-07-14"
 
 <p>Charitable rate relief cannot be combined with small business rate relief. It applies to property used for charitable purposes, which includes charity shops. You apply to the local billing authority (your council). The qualifying test is use of the property, not ownership.</p>
 
-<p>Note: this relief is available to registered charities in England and Wales. <strong>A community interest company (CIC) is not a charity</strong> and does not qualify for charitable rate relief or any other charity-specific VAT relief. If your organisation is a CIC, see <a href="/for/cics">our CIC guidance</a> for the reliefs that do apply. See HP 22: <a href="https://www.gov.uk/government/organisations/office-of-the-regulator-of-community-interest-companies">CICs are not charities and receive no charity tax reliefs</a>.</p>
+<p>Note: this relief is available to registered charities in England and Wales. <strong>A community interest company (CIC) is not a charity</strong> and does not qualify for charitable rate relief or any other charity-specific VAT relief. If your organisation is a CIC, see <a href="/for/cics">our CIC guidance</a> for the reliefs that do apply. For reference: <a href="https://www.gov.uk/government/organisations/office-of-the-regulator-of-community-interest-companies">CICs are not charities and receive no charity tax reliefs</a>.</p>
 
 <h2>Trading subsidiaries and VAT</h2>
 

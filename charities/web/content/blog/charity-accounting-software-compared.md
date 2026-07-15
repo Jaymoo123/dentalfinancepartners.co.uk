@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "Charity Accounts and SORP"
 metaTitle: "Charity Accounting Software Compared: Which Package Fits Your Organisation?"
-metaDescription: "An objective comparison of UK charity accounting software (Xero, QuickBooks, Sage, FreeAgent, Access Financials and dedicated charity platforms), covering SORP compliance, fund accounting and trustee reporting."
+metaDescription: "Comparing UK charity accounting software: Xero, QuickBooks, Sage, FreeAgent and charity platforms on SORP compliance and fund accounting."
 h1: "Charity accounting software compared: which package fits your organisation?"
 summary: "Most general accounting software was not designed for fund accounting, SORP-compliant reporting or the Charity Commission filing format. This guide compares the realistic options for UK charities and CICs, from dedicated nonprofit platforms to adapted general-purpose tools, and explains what each one does and does not handle natively."
 faqs:

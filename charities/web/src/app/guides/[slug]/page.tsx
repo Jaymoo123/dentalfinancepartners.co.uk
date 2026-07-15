@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getGuideBySlug, getAllGuideSlugs } from "@/lib/guides/content";
 import { siteConfig } from "@/config/site";
-import { buildBreadcrumbJsonLd, buildArticleJsonLd } from "@/lib/schema";
+import { buildBreadcrumbJsonLd, buildArticleJsonLd, buildHowToJsonLd } from "@/lib/schema";
 
 // Guides are prose-only today. Add buildFaqJsonLd + a faqs frontmatter field when
 // a guide needs an accordion FAQ block (buildFaqJsonLd already exists in lib/schema).
@@ -44,10 +44,15 @@ export default async function GuidePage({ params }: Props) {
     { label: guide.title },
   ];
 
+  const howToSchema = guide.howToSteps?.length
+    ? buildHowToJsonLd({ name: guide.title, description: guide.summary, steps: guide.howToSteps })
+    : null;
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildBreadcrumbJsonLd(breadcrumbItems) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildArticleJsonLd({ title: guide.title, description: guide.summary, url: `/guides/${slug}`, dateModified: guide.lastReviewed }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildArticleJsonLd({ title: guide.title, description: guide.summary, url: `/guides/${slug}`, datePublished: guide.lastReviewed, dateModified: guide.lastReviewed }) }} />
+      {howToSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: howToSchema }} />}
 
       <main className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
         <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-sm text-neutral-500">

@@ -11,6 +11,7 @@ export interface GuideFrontmatter {
   summary?: string;
   version?: string;
   lastReviewed?: string;
+  howToSteps?: { name: string; text: string }[];
 }
 
 export interface GuideHeading {
@@ -27,6 +28,7 @@ export interface Guide {
   html: string;
   headings: GuideHeading[];
   lastReviewed?: string;
+  howToSteps?: { name: string; text: string }[];
 }
 
 export function getGuideBySlug(slug: string): Guide | null {
@@ -55,6 +57,7 @@ export function getGuideBySlug(slug: string): Guide | null {
     html,
     headings: extractHeadings(html),
     lastReviewed: fm.lastReviewed == null ? undefined : String(fm.lastReviewed),
+    howToSteps: fm.howToSteps,
   };
 }
 

@@ -125,7 +125,7 @@ faqs:
 <p>Up to 15 events of the same kind per financial year can be exempt from VAT under <a href="https://www.gov.uk/guidance/how-vat-affects-charities-notice-7011">Notice 701/1</a>. Exemption means the charity charges no output VAT but also cannot recover input VAT on costs directly related to those events.</p>
 
 <h3>Trading subsidiaries</h3>
-<p>Where a charity routes taxable trading through a separate trading subsidiary, the subsidiary can register for VAT independently (or join a VAT group with the charity). The subsidiary then follows normal business VAT recovery rules on its own costs. See our guide on <a href="/blog/charity-vat/charity-trading-subsidiary-gift-aid">charity trading subsidiaries and Gift Aid</a> for how profits flow back to the parent.</p>
+<p>Where a charity routes taxable trading through a separate trading subsidiary, the subsidiary can register for VAT independently (or join a VAT group with the charity). The subsidiary then follows normal business VAT recovery rules on its own costs. See our guide on <a href="/blog/gift-aid/charity-trading-subsidiary-gift-aid">charity trading subsidiaries and Gift Aid</a> for how profits flow back to the parent.</p>
 
 <h3>CICs</h3>
 <p>A CIC is not a charity and does not benefit from charity-specific VAT reliefs. It registers and recovers VAT exactly as any other business would, based on its registration status and the nature of its supplies. For a fuller comparison of the two structures, see our guide on <a href="/for/cics">setting up as a CIC</a>.</p>

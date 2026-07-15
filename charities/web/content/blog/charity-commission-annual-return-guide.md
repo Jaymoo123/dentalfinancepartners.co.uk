@@ -15,6 +15,17 @@ keyTakeaways:
   - "Filing is done through the My Charity Commission portal using your charity's login."
   - "Scottish charities report to OSCR; Northern Ireland charities report to CCNI, each with separate portals and rules."
 sourcesVerifiedAt: "2026-07-14"
+howToSteps:
+  - name: "Log in to the My Charity Commission portal"
+    text: "Go to gov.uk and log in using your charity's registered email address and password. If no one holds the login credentials, use the portal's account recovery route before the deadline."
+  - name: "Select the annual return for your financial year"
+    text: "From your charity's dashboard, select 'Annual return'. The portal shows the return for the financial year that has just ended."
+  - name: "Complete the questionnaire sections"
+    text: "Work through the income and expenditure totals, charity activities description, serious incidents question, trustee and contact details, and financial controls declaration. Save progress as you go."
+  - name: "Upload accounts and trustees' annual report (if income exceeds £25,000)"
+    text: "Upload your signed accounts and trustees' annual report as PDFs. Accounts must be finalised, examined or audited, and signed before uploading. Do not upload draft accounts."
+  - name: "Review and submit"
+    text: "Once submitted you receive a confirmation email. The Commission publishes the return and documents on your charity's public register entry, usually within a few working days."
 faqs:
   - question: "What is the deadline for filing the Charity Commission annual return?"
     answer: "10 months after the end of your charity's financial year. For a year ending 31 March 2026, the deadline is 31 January 2027."

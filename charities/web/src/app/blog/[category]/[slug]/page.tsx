@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { buildOgImageUrl } from "@/lib/schema";
+import { buildOgImageUrl, buildArticleJsonLd, buildFaqJsonLd, buildHowToJsonLd } from "@/lib/schema";
 import {
   getAllPosts,
   getPostByCategoryAndSlug,
@@ -60,8 +60,23 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPostByCategoryAndSlug(category, slug);
   if (!post) notFound();
 
+  const articleSchema = buildArticleJsonLd({
+    title: post.h1,
+    description: post.metaDescription,
+    url: `/blog/${category}/${post.slug}`,
+    datePublished: post.date,
+    dateModified: post.updatedDate ?? post.date,
+  });
+  const faqSchema = post.faqs?.length ? buildFaqJsonLd(post.faqs) : null;
+  const howToSchema = post.howToSteps?.length
+    ? buildHowToJsonLd({ name: post.h1, description: post.metaDescription, steps: post.howToSteps })
+    : null;
+
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: articleSchema }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqSchema }} />}
+      {howToSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: howToSchema }} />}
       {post.schema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: post.schema }} />
       )}

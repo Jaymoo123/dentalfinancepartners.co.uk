@@ -97,7 +97,7 @@ faqs:
 </table>
 
 <p>For charities preparing accruals accounts, the <a href="https://www.charitysorp.org/">Charities SORP (FRS 102)</a> sets out additional disclosure requirements for the annual report that go beyond the statutory minimum. The current SORP 2026 applies to accounting periods starting on or after 1 January 2026. Because the site launches during the transition, date every SORP-related statement in your report to the accounting period it covers rather than describing it as "new" or "old" rules.</p>
-<p>Once your charity's gross income exceeds £25,000, an independent examination or audit of the accounts is required. The level of external scrutiny accompanies the report when you file. Our <a href="/calculators/ie-vs-audit-threshold-checker">IE vs audit threshold checker</a> will tell you which level applies to your charity.</p>
+<p>Once your charity's gross income exceeds £25,000, an independent examination or audit of the accounts is required. The level of external scrutiny accompanies the report when you file. Our <a href="/calculators/independent-examination-vs-audit-checker">IE vs audit threshold checker</a> will tell you which level applies to your charity.</p>
 
 <h2>Small charity vs larger charity reporting expectations</h2>
 <p>The Charity Commission applies a proportionality principle: the level of detail expected in the report scales with the charity's size, complexity and resources. A very small charity operating from volunteers is not expected to produce a report structured like a large national charity's document. The statutory requirements are the same regardless of size, but the depth of treatment differs.</p>

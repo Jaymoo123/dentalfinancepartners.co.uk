@@ -5,9 +5,20 @@ date: "2026-07-14"
 author: ""
 category: "Gift Aid"
 metaTitle: "Gift Aid Declaration Wording: Model Templates and Required Content"
-metaDescription: "Model Gift Aid declaration wording for charities, covering all required elements: charity name, donor details, scope, statement and tax explanation. Includes a required-content checklist."
+metaDescription: "Model Gift Aid declaration wording covering all required elements: charity name, donor details, scope, statement and tax explanation, with a checklist."
 h1: "Gift Aid declaration wording: model templates and required content"
 summary: "A Gift Aid declaration must include five mandatory elements. Miss one and HMRC can require repayment of every pound claimed on donations covered by that declaration."
+howToSteps:
+  - name: "Include the charity's name"
+    text: "The declaration must identify the charity by name. Trading names or project names are not sufficient unless they match the name on the HMRC recognition letter exactly, or the full registered charity name also appears."
+  - name: "Record the donor's full name"
+    text: "First name and surname are required. Initials are not acceptable. The name must be the donor's own name; companies and unincorporated associations cannot make Gift Aid declarations."
+  - name: "Record the donor's home address"
+    text: "Home address, not a work address or PO box. HMRC uses this to match the declaration to a UK taxpayer's record if queried. At minimum, include the first line and postcode."
+  - name: "State what donations the declaration covers"
+    text: "The scope must be clear: does it apply to the donation being made right now, all past donations since a specified date, all future donations, or all of the above? An open-ended declaration that sweeps in past gifts is an enduring declaration and must be worded accordingly."
+  - name: "Include the opt-in statement and the tax explanation"
+    text: "The declaration must both state that the donor wants Gift Aid to apply and explain that the donor must pay at least as much UK income tax or capital gains tax in the tax year as all the charities they donate to will reclaim. HMRC requires this explanation to appear on the declaration itself, not in separate small print."
 ---
 <p>A Gift Aid declaration is not a formality. If a declaration is missing any of the five elements HMRC requires, the charity cannot validly claim Gift Aid on the donations it covers, and a claim already made becomes repayable. This page sets out what the law requires, provides model wording you can adapt, and explains the rules that determine how long a declaration stays valid.</p>
 

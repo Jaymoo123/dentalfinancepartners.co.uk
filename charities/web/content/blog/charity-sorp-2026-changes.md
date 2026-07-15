@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "Charity Accounts and SORP"
 metaTitle: "Charity SORP 2026: What Changed and What to Do"
-metaDescription: "The SORP 2026 applies to UK charity accounting periods starting on or after 1 January 2026. Here is what changed, which year-ends are caught first, and the trustee action checklist."
+metaDescription: "SORP 2026 applies to charity periods starting 1 January 2026. What changed, which year-ends are affected first, and the trustee action checklist."
 h1: "Charity SORP 2026: What Changed and What Trustees Must Do"
 summary: "The Charities SORP (FRS 102) was updated for accounting periods starting on or after 1 January 2026. This article explains the transition timing, which year-ends are caught first, and what trustees need to do before they prepare the first set of SORP 2026 accounts."
 keyTakeaways:

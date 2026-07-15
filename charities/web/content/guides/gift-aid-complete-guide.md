@@ -198,7 +198,7 @@ lastReviewed: "2026-07-14"
 
 <p>The Gift Aid Small Donations Scheme (GASDS) allows charities to claim a top-up payment equivalent to Gift Aid (25%) on small cash and contactless donations of <strong>£30 or less</strong>, without needing a Gift Aid declaration from each donor. This is particularly useful for collection boxes, street fundraising, and event buckets.</p>
 
-<p>Use the <a href="/calculators/gasds-calculator">GASDS calculator</a> to work out the top-up on your eligible donations.</p>
+<p>Use the <a href="/calculators/gasds-small-donations-calculator">GASDS calculator</a> to work out the top-up on your eligible donations.</p>
 
 <p>Key rules from <a href="https://www.gov.uk/claim-gift-aid/small-donations-scheme">HMRC's GASDS guidance</a>:</p>
 
@@ -273,7 +273,7 @@ lastReviewed: "2026-07-14"
 <p>The HMRC guidance does not specify a definitive time limit on charity-side Gift Aid claims (as distinct from the GASDS 2-year deadline). If you are catching up on prior-year unclaimed Gift Aid, confirm the applicable position with HMRC or a specialist adviser before submitting. Do not rely on figures circulating in sector commentary without checking their source.</p>
 
 <h3>What is GASDS and do we need declarations for it?</h3>
-<p>GASDS (Gift Aid Small Donations Scheme) allows a 25% top-up on small cash and contactless donations of £30 or less, up to £8,000 of donations per year, without requiring a Gift Aid declaration. A matching rule applies: GASDS claims cannot exceed 10 times the same year's Gift Aid-claimed donations. Claims must be made within 2 years of the end of the relevant tax year. Use the <a href="/calculators/gasds-calculator">GASDS calculator</a> and see <a href="/blog/gift-aid/gasds-rules">the GASDS rules blog post</a> for detail.</p>
+<p>GASDS (Gift Aid Small Donations Scheme) allows a 25% top-up on small cash and contactless donations of £30 or less, up to £8,000 of donations per year, without requiring a Gift Aid declaration. A matching rule applies: GASDS claims cannot exceed 10 times the same year's Gift Aid-claimed donations. Claims must be made within 2 years of the end of the relevant tax year. Use the <a href="/calculators/gasds-small-donations-calculator">GASDS calculator</a> and see <a href="/blog/gift-aid/gasds-rules">the GASDS rules blog post</a> for detail.</p>
 
 <h3>Do charity shop sales qualify for Gift Aid?</h3>
 <p>Yes, through the retail Gift Aid scheme. The shop acts as the donor's agent; the sale proceeds of donated goods become a Gift Aid donation from the original donor. A valid retail Gift Aid declaration from the donor is still required, but the scheme avoids the need for a separate Gift Aid form at the time of each donation. Full details are in <a href="https://www.gov.uk/government/publications/charities-detailed-guidance-notes/chapter-3-gift-aid">HMRC chapter 3 guidance (section 3.42)</a>.</p>

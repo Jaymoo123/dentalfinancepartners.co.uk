@@ -3,6 +3,21 @@ title: "Setting Up a Charity or CIO: Registration, Structures and First-Year Dut
 slug: "set-up-a-charity-cio"
 summary: "A complete guide to registering a charity or CIO in England and Wales: choosing the right structure, the £5,000 income threshold, the Charity Commission registration process, HMRC recognition, and your first-year compliance duties."
 lastReviewed: "2026-07-14"
+howToSteps:
+  - name: "Choose a legal structure"
+    text: "Decide between a CIO, charitable company limited by guarantee, unincorporated association or CIC. A CIO registers only with the Charity Commission and gives trustees limited liability; a charitable company must also register at Companies House. A CIC is not a charity and cannot claim Gift Aid or rate relief."
+  - name: "Draft a governing document"
+    text: "For a CIO, use one of the Charity Commission's model constitutions. For an unincorporated association, draft the rules; for a charitable company, the articles of association. The Commission's model constitutions significantly reduce assessment delays."
+  - name: "Confirm your charitable purposes"
+    text: "Purposes must fall within the list in the Charities Act 2011 and satisfy the public benefit test. Review the Commission's published public benefit guidance before submitting."
+  - name: "Appoint at least three trustees"
+    text: "Trustees must be aged 16 or over for a CIO (18 or over for most other structures) and must not be disqualified under the automatic disqualification rules."
+  - name: "Submit the online application to the Charity Commission"
+    text: "Apply through the Charity Commission's online registration portal (CC21b route). Provide your governing document, trustee details and evidence of income or plans to exceed the £5,000 threshold, or confirmation you are forming a CIO."
+  - name: "Apply to HMRC for charity recognition"
+    text: "Commission registration does not give Gift Aid or tax reliefs. Apply separately to HMRC once you have your charity registration number. HMRC recognition is required before collecting Gift Aid declarations or claiming tax exemptions."
+  - name: "File your first annual return and accounts"
+    text: "All registered charities must submit an annual return to the Commission within 10 months of the financial year end. Above £25,000 income you must also attach the trustee annual report and accounts; above £25,000 an independent examination or audit is required."
 ---
 
 <p>Setting up a charity or charitable incorporated organisation (CIO) in England and Wales means registering with the Charity Commission, not Companies House. This guide covers structure choice, the registration process, the separate HMRC recognition step that founders most commonly miss, and your first-year compliance calendar.</p>
