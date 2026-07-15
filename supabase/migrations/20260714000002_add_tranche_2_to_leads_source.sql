@@ -29,6 +29,12 @@ ALTER TABLE leads ADD CONSTRAINT leads_source_valid
       'construction-cis',
       'test',
       'charities',
+      -- HAND-EDITED 2026-07-15: generator omitted the sibling tranche-1 keys
+      -- (hospitality, startups-tech, care are LIVE in the constraint); the
+      -- union below preserves them. RE-READ THE LIVE DEF before applying.
+      'hospitality',
+      'startups-tech',
+      'care',
       'crypto',
       'pharmacies'
     )

@@ -28,6 +28,12 @@ ALTER TABLE sites ADD CONSTRAINT sites_site_key_check
       'contractors-ir35'::text,
       'construction-cis'::text,
       'charities'::text,
+      -- HAND-EDITED 2026-07-15: generator omitted the sibling tranche-1 keys
+      -- (hospitality, startups-tech, care are LIVE in the constraint); the
+      -- union below preserves them. RE-READ THE LIVE DEF before applying.
+      'hospitality'::text,
+      'startups-tech'::text,
+      'care'::text,
       'crypto'::text,
       'pharmacies'::text
     ])

@@ -580,6 +580,13 @@ def check_brand_consistency(site: str | None = None):
         print(f"[ok]   brand ({site}): '{own_name}' / {own_domain} wired via niche.config")
 
     # (b) CRITICAL: deny-list of every OTHER site's brand terms.
+    # Owner-sanctioned cross-site FENCE citations (DEDUP_AUDIT rulings): these
+    # sites deliberately link OUT to a sibling for fenced generic topics, so the
+    # sibling's brand terms are allowed in their corpus. Per-term, per-site only.
+    SANCTIONED_FENCE_TERMS = {
+        "ecommerce": {"holloway davies", "hollowaydavies.co.uk", "www.hollowaydavies.co.uk"},
+    }
+    sanctioned = SANCTIONED_FENCE_TERMS.get(site, set())
     deny = {}
     for other in _site_keys():
         if other == site:
@@ -588,6 +595,8 @@ def check_brand_consistency(site: str | None = None):
         if r is None:
             continue
         for term in _brand_terms(r[1]) - _brand_terms(cfg):
+            if term.lower() in sanctioned:
+                continue
             deny[term] = other
     hits = []
     for f in _corpus_files(site_dir):
