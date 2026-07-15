@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "Staking Mining & Airdrops"
 metaTitle: "Crypto Mining Tax UK: £1,000 Allowance Explained"
-metaDescription: "UK crypto miners: mining rewards are taxable income on receipt. The £1,000 allowance only covers income tax. There is a second CGT charge when you sell. Find out how."
+metaDescription: "UK crypto miners: mining rewards are taxable income on receipt. The £1,000 allowance only covers income tax. A second CGT charge applies when you sell."
 h1: "Crypto Mining Tax in the UK: When Rewards Are Taxed, the £1,000 Allowance, and the Second Tax You Did Not See Coming"
 summary: "Mining rewards are taxable income the moment they land. The £1,000 trading and miscellaneous income allowance can shelter small receipts from income tax, but it does not remove Capital Gains Tax when you later sell those coins."
 keyTakeaways:

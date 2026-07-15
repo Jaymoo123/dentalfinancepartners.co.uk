@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "Trader Status & Day Trading"
 metaTitle: "Day Trader Tax UK: CGT, Income or Spread Betting?"
-metaDescription: "Three ways day trading is taxed in the UK: CGT (the usual route), trading income (rare and usually worse), or spread-bet winnings (outside tax but losses unrelievable). Plain English with gov.uk citations."
+metaDescription: "Day trading tax UK: most traders pay CGT, not income tax. Spread-bet winnings sit outside tax but losses are unrelievable. Three routes explained."
 h1: "Day Trader Tax UK: CGT vs Trading Income vs Spread Betting"
 summary: "Most active day traders are taxed under CGT, not as traders. Here is how the three routes work and why chasing trader status is usually a bad idea."
 keyTakeaways:

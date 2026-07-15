@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "HMRC Disclosure & Compliance"
 metaTitle: "CARF 2026: HMRC Crypto Reporting Explained"
-metaDescription: "UK cryptoasset platforms must collect your data from 1 Jan 2026. First HMRC report due by 31 May 2027. What CARF means for your tax position, explained precisely."
+metaDescription: "UK cryptoasset platforms must collect your data from 1 Jan 2026. First HMRC report due 31 May 2027. What CARF means for your tax position."
 h1: "CARF Explained: What HMRC's New Crypto Reporting Rules Mean for You"
 summary: "The Cryptoasset Reporting Framework requires UK platforms to collect user and transaction data from 1 January 2026, with the first report to HMRC due between 1 January and 31 May 2027."
 keyTakeaways:
@@ -29,6 +29,15 @@ faqs:
     answer: "CARF collection starts from 1 January 2026. It does not require platforms to report data from years before 2026 under this framework. However, HMRC can still investigate earlier years using existing powers, particularly where behaviour was deliberate."
   - question: "What should I do before the first CARF report?"
     answer: "Review your crypto tax position for all open years, not just 2026. If you have unreported gains or income, a voluntary disclosure via HMRC's cryptoasset disclosure service (gov.uk/guidance/tell-hmrc-about-unpaid-tax-on-cryptoassets) typically secures lower penalties than a prompted investigation."
+howToSteps:
+  - name: "Step 1: Gather your transaction history across all platforms"
+    text: "Collect transaction exports from every exchange, wallet, DeFi protocol, and NFT platform you have used. Exports from tools such as Koinly or Recap are a starting point, not a finished answer, particularly for DeFi activity and cross-chain bridges."
+  - name: "Step 2: Identify the tax years with open exposure"
+    text: "Determine which tax years from 2018-19 onwards involved disposals, including crypto-to-crypto swaps, that were not reported. These years may carry unpaid Capital Gains Tax or income tax on staking and mining receipts."
+  - name: "Step 3: Quantify gains and losses including unclaimed capital losses"
+    text: "Calculate your position for each affected year, including unreported losses as well as gains. Capital losses must be actively claimed to be usable and are time-limited to four years after the end of the tax year in which they arose."
+  - name: "Step 4: Make a voluntary disclosure before any HMRC contact"
+    text: "If there is unpaid tax, use HMRC's cryptoasset disclosure service at gov.uk/guidance/tell-hmrc-about-unpaid-tax-on-cryptoassets. An unprompted voluntary disclosure, made before HMRC contacts you, secures the lowest penalty percentage available for your behaviour band."
 ---
 <p>The Cryptoasset Reporting Framework (CARF) is the most significant change to UK crypto tax enforcement in years. This page sets out exactly what it is, the precise dates that matter, and what it means in practice for anyone who holds or has held cryptoassets. The dates below are sourced directly from HMRC guidance and are stated precisely, not exaggerated.</p>
 
@@ -92,11 +101,11 @@ faqs:
 
 <p>From 2027 onwards, HMRC will receive systematic exchange data as a matter of routine. That data will cover the identities of UK users and the transactions they carried out during 2026 and every subsequent calendar year. The practical consequence is that the risk profile of undisclosed crypto gains and income increases meaningfully once that data flow begins.</p>
 
-<p>This does not mean that prior years are invisible forever. HMRC retains its existing information-gathering powers for earlier years, and the number of years it can assess depends on the nature of the non-compliance: <a href="https://www.gov.uk/guidance/tell-hmrc-about-unpaid-tax-on-cryptoassets">four years for reasonable care, six years for careless, up to twenty years for deliberate behaviour</a> (HP 31). CARF adds a new data source going forward; it does not close the door on earlier years.</p>
+<p>This does not mean that prior years are invisible forever. HMRC retains its existing information-gathering powers for earlier years, and the number of years it can assess depends on the nature of the non-compliance: <a href="https://www.gov.uk/guidance/tell-hmrc-about-unpaid-tax-on-cryptoassets">four years for reasonable care, six years for careless, up to twenty years for deliberate behaviour</a>. CARF adds a new data source going forward; it does not close the door on earlier years.</p>
 
 <h2>If your past crypto history is untidy: understanding the window</h2>
 
-<p>HMRC operates a dedicated <a href="https://www.gov.uk/guidance/tell-hmrc-about-unpaid-tax-on-cryptoassets">cryptoasset disclosure service</a> (HP 25). The service allows individuals to come forward voluntarily to declare unpaid tax on cryptoassets covering prior years.</p>
+<p>HMRC operates a dedicated <a href="https://www.gov.uk/guidance/tell-hmrc-about-unpaid-tax-on-cryptoassets">cryptoasset disclosure service</a>. The service allows individuals to come forward voluntarily to declare unpaid tax on cryptoassets covering prior years.</p>
 
 <p>The distinction between a voluntary (unprompted) disclosure and a disclosure made after HMRC opens an enquiry matters significantly for penalties. An unprompted disclosure, made before HMRC has indicated it is looking at your tax affairs, typically attracts lower penalties than a prompted disclosure made in response to a nudge letter or enquiry. The principle is the same as it is across all HMRC compliance work: coming forward first is better than being found.</p>
 
@@ -113,7 +122,7 @@ faqs:
 <ol>
   <li><strong>Gather your transaction history.</strong> Every exchange, wallet, DeFi protocol and NFT platform you have used. Exports from Koinly, Recap or similar tools are a starting point, not a finished answer, particularly for DeFi activity and cross-chain bridges.</li>
   <li><strong>Identify the tax years with open exposure.</strong> If you disposed of cryptoassets (including crypto-to-crypto swaps, which are taxable disposals under HMRC's rules) in any year from 2018-19 onwards and did not report them, those years may carry unpaid tax.</li>
-  <li><strong>Quantify the position, including losses.</strong> Unreported losses are as much a part of the picture as unreported gains. Capital losses must be <a href="https://www.gov.uk/capital-gains-tax/losses">claimed to be usable</a> (HP 19) and are time-limited to four years after the end of the tax year in which they arose.</li>
+  <li><strong>Quantify the position, including losses.</strong> Unreported losses are as much a part of the picture as unreported gains. Capital losses must be <a href="https://www.gov.uk/capital-gains-tax/losses">claimed to be usable</a> and are time-limited to four years after the end of the tax year in which they arose.</li>
   <li><strong>Consider voluntary disclosure before any HMRC contact.</strong> If there is unpaid tax, the question is not whether to disclose but when. An unprompted disclosure gives you the most control over the process and the most favourable penalty position.</li>
 </ol>
 

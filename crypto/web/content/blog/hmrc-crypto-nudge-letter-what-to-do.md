@@ -29,6 +29,15 @@ faqs:
     answer: "For recent, straightforward underpayments within the normal amendment window, correcting via Self Assessment may be appropriate. For multiple years, older underpayments, or anything involving deliberate behaviour, the dedicated cryptoasset disclosure service is the correct route. If you are unsure, take advice before choosing."
   - question: "Will I get a penalty if I disclose voluntarily?"
     answer: "A penalty will generally apply where there is an underpayment, but an unprompted voluntary disclosure secures the lowest penalty percentage available for your behaviour band. The longer you wait, or the more HMRC already knows, the higher the penalty rate becomes."
+howToSteps:
+  - name: "Stage 1: Notify HMRC of your intention to disclose"
+    text: "Register your intention to disclose using HMRC's cryptoasset disclosure service at gov.uk/guidance/tell-hmrc-about-unpaid-tax-on-cryptoassets. This establishes that you are acting voluntarily, securing the lower unprompted-disclosure penalty range. Do this before HMRC contacts you again."
+  - name: "Stage 2: Calculate your liability across all affected years"
+    text: "Work out your taxable gain or income for each affected year. Every disposal counts, including crypto-to-crypto swaps, spending crypto, and gifts other than to a spouse. Cost basis must be calculated using section 104 pooling with same-day and 30-day matching rules, not FIFO. Include staking, mining, and airdrop income at sterling receipt value."
+  - name: "Stage 3: Submit the disclosure to HMRC"
+    text: "Submit your calculated figures to HMRC via the online disclosure service, covering all affected tax years. The submission must be accurate: an inaccurate disclosure can be treated as a further failure and increase your exposure."
+  - name: "Stage 4: Settle the tax, interest, and penalty"
+    text: "Pay the tax, interest, and any applicable penalty by the agreed deadline. If the liability is large relative to your current resources, HMRC can agree a payment arrangement, but this must be formally agreed in advance, not assumed."
 ---
 <h2>HMRC crypto nudge letter: the short answer</h2>
 

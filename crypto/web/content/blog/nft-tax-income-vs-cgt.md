@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "Crypto CGT & Disposals"
 metaTitle: "NFT Tax UK: Creator Income vs Flipper CGT Explained"
-metaDescription: "UK NFT tax explained: creators pay income tax on sales of work they made, flippers pay CGT on disposals. Royalties, two-event swaps and the badges-of-trade risk covered."
+metaDescription: "UK NFT tax: creators pay income tax on sales of work they made, flippers pay CGT on disposals. Royalties, two-event swaps and badges-of-trade covered."
 h1: "NFT Tax in the UK: Creator (Income Tax) or Flipper (Capital Gains)?"
 summary: "The tax you pay on NFTs depends on your role: creators owe income tax on proceeds from work they made, while flippers owe Capital Gains Tax on disposals, and the same person can be both."
 keyTakeaways:

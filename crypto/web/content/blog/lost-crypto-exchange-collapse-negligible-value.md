@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "Crypto CGT & Disposals"
 metaTitle: "Lost Crypto Tax Loss UK: Keys, Rug Pulls & Exchange Collapse"
-metaDescription: "Losing private keys is not a disposal. Negligible value claims work only for worthless tokens. Exchange collapse is fact-specific. Know what you can and cannot claim."
+metaDescription: "Losing private keys is not a disposal. Negligible value claims need worthless tokens. Exchange collapse is fact-specific. Know what you can claim."
 h1: "Lost Crypto, Rug Pulls and Exchange Collapse: When You Can Claim a Tax Loss"
 summary: "Losing access to crypto is not the same as a tax loss. This guide separates the three scenarios, explains what HMRC actually allows, and tells you what most DIY guides get wrong."
 keyTakeaways:
@@ -29,6 +29,15 @@ faqs:
     answer: "Capital losses must normally be claimed within four years of the end of the tax year in which they arose. For example, a loss that arose in the 2021/22 tax year (ending 5 April 2022) must normally be claimed by 5 April 2026. The deadline is not automatic; you must actively report the loss. Late claims may be refused."
   - question: "Can I carry a crypto loss forward?"
     answer: "Yes. Once a capital loss is properly claimed, it can be carried forward indefinitely and offset against future capital gains. There is no time limit on using a loss once it has been validly reported. The key requirement is that the loss must first be claimed in the correct tax year's Self Assessment return."
+howToSteps:
+  - name: "Step 1: Identify whether the asset itself is worthless or merely inaccessible"
+    text: "Determine whether the token has become genuinely worthless (for example, a rug pull or dead chain) or whether you have simply lost access. Losing private keys does not create a tax loss under HMRC CRYPTO22400. Only a genuinely worthless asset can support a negligible value claim."
+  - name: "Step 2: Establish and evidence the date the asset became worthless"
+    text: "Identify the date the token reached negligible value. Gather evidence: trading history, blockchain explorer data showing abandoned activity, and project communications. A negligible value claim can be backdated to an earlier date if the asset was already worthless then, within the four-year claim window."
+  - name: "Step 3: Make a formal negligible value claim in your Self Assessment return"
+    text: "Submit the negligible value claim in your Self Assessment return for the tax year in which the asset became worthless, or backdated within the four-year window. The claim treats the asset as if disposed of and immediately reacquired at negligible value, crystallising an allowable capital loss equal to your original acquisition cost. See HMRC CRYPTO22500."
+  - name: "Step 4: Carry the loss forward and offset against future gains"
+    text: "Once the loss is properly claimed and accepted, it carries forward indefinitely against future capital gains. Report the brought-forward loss in each subsequent Self Assessment return until it is fully offset. Same-year gains must be offset before carrying forward; this cannot be deferred."
 ---
 <p>You lost crypto. A project collapsed. An exchange froze withdrawals. You read somewhere that you can write off the loss against your tax bill. Before you file anything, there are three distinctions that almost every DIY guide blurs, and getting them wrong can mean a rejected claim, an enquiry, or a loss that disappears because the window to claim it closed.</p>
 

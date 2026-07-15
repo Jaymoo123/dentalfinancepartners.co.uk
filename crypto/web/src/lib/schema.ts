@@ -28,6 +28,21 @@ export function buildOrganizationJsonLd() {
     },
     areaServed: niche.seo.service_areas,
     priceRange: "££",
+    knowsAbout: [
+      "Crypto Capital Gains Tax UK",
+      "HMRC cryptoasset disclosure",
+      "Cryptoasset Reporting Framework (CARF)",
+      "s104 pooling and same-day matching rules",
+      "Staking and mining income tax",
+      "DeFi tax UK",
+      "NFT tax UK",
+      "HMRC nudge letters for crypto",
+      "Self Assessment for crypto investors",
+      "Investor vs trader status for crypto",
+    ],
+    sameAs: [
+      "https://find-and-update.company-information.service.gov.uk/company/16358723",
+    ],
   });
 }
 
@@ -73,6 +88,7 @@ export function buildArticleJsonLd(opts: {
   title: string;
   description: string;
   url: string;
+  datePublished?: string;
   dateModified?: string;
 }) {
   return JSON.stringify({
@@ -81,12 +97,62 @@ export function buildArticleJsonLd(opts: {
     headline: opts.title,
     description: opts.description,
     url: `${siteConfig.url}${opts.url}`,
-    dateModified: opts.dateModified,
+    datePublished: opts.datePublished,
+    dateModified: opts.dateModified ?? opts.datePublished,
     publisher: {
       "@type": "Organization",
+      "@id": `${siteConfig.url}#organization`,
       name: siteConfig.name,
       url: siteConfig.url,
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${siteConfig.url}${opts.url}` },
+  });
+}
+
+export function buildHowToJsonLd(post: {
+  h1: string;
+  metaDescription: string;
+  howToSteps?: { name: string; text: string }[];
+}) {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: post.h1,
+    description: post.metaDescription,
+    step: (post.howToSteps ?? []).map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+    })),
+  });
+}
+
+export function buildDatasetJsonLd(opts: {
+  name: string;
+  description: string;
+  url: string;
+  dateModified: string;
+  sourceOrganizations: { name: string; url: string }[];
+}) {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: opts.name,
+    description: opts.description,
+    url: opts.url,
+    dateModified: opts.dateModified,
+    creator: {
+      "@type": "Organization",
+      "@id": `${siteConfig.url}#organization`,
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    isBasedOn: opts.sourceOrganizations.map((s) => ({
+      "@type": "DataCatalog",
+      name: s.name,
+      url: s.url,
+    })),
+    inLanguage: "en-GB",
   });
 }

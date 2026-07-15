@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { siteContainerLg } from "@/components/ui/layout-utils";
+import { buildDatasetJsonLd } from "@/lib/schema";
 import data from "@/data/uk-crypto-tax-gap-index.json";
 
 export const metadata: Metadata = {
@@ -32,16 +33,31 @@ function CarfCountdown() {
   );
 }
 
+const datasetJsonLd = buildDatasetJsonLd({
+  name: "UK Crypto Tax Compliance Index",
+  description: "Verified figures on UK cryptoasset ownership rates, the CARF exchange-reporting timeline, and current CGT parameters for cryptoassets. Primary sources: FCA Cryptoassets Consumer Research and HMRC guidance.",
+  url: `${siteConfig.url}/research/crypto-tax-gap-index`,
+  dateModified: data.meta.lastUpdated,
+  sourceOrganizations: [
+    { name: "FCA Cryptoassets Consumer Research 2024 (Wave 5)", url: data.ownership.sourceUrl },
+    { name: "HMRC: collecting cryptoasset user and transaction data", url: data.carfTimeline.sourcesCollection },
+    { name: "HMRC: reporting cryptoasset user and transaction data", url: data.carfTimeline.sourcesReporting },
+    { name: "HMRC: CGT rates", url: data.cgtParameters.sourceUrl },
+    { name: "HMRC: cryptoasset disclosure service", url: data.disclosureWindows.sourceUrl },
+  ],
+});
+
 export default function CryptoTaxComplianceIndexPage() {
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: datasetJsonLd }} />
       <section className="border-b border-neutral-200 bg-[#0e1a3a] py-16 sm:py-20">
         <div className={siteContainerLg}>
           <Link
-            href="/research"
+            href="/"
             className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/60 uppercase tracking-wider hover:text-white transition-colors mb-6"
           >
-            Research
+            Home
           </Link>
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
             UK Crypto Tax Compliance Index.
