@@ -49,7 +49,9 @@
   "footer_links": [
     { "label": "Contact", "href": "/contact" },
     { "label": "Blog", "href": "/blog" },
-    { "label": "Privacy Policy", "href": "/privacy-policy" }
+    { "label": "Privacy Policy", "href": "/privacy-policy" },
+    { "label": "Cookie Policy", "href": "/cookie-policy" },
+    { "label": "Terms", "href": "/terms" }
   ],
   "locations": [],
   "seo": {

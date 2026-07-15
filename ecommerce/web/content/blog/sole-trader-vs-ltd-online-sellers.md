@@ -5,7 +5,7 @@ date: "2026-07-15"
 author: ""
 category: "Business Structure and Tax"
 metaTitle: "Sole Trader vs Ltd for Online Sellers: 2026/27 Tax"
-metaDescription: "When does incorporating your Amazon, eBay or Shopify business actually pay off? The 2026/27 dividend rates, worked example, and the seller-specific cash-reinvestment factor."
+metaDescription: "When does incorporating your Amazon, eBay or Shopify business pay off? The 2026/27 dividend rates, a worked example, and the reinvestment factor."
 h1: "Sole Trader or Limited Company for Online Sellers? The 2026/27 Numbers That Decide It"
 summary: "The sole-trader-versus-limited-company decision for online sellers turns on profit level, how much you extract, and how much cash you reinvest into stock. Here are the 2026/27 numbers."
 keyTakeaways:
@@ -134,7 +134,7 @@ faqs:
 
 <h2>Generic incorporation mechanics: how to actually set up a limited company</h2>
 
-<p>This page covers the decision. The mechanics of incorporating (Companies House registration, share structure, articles of association, and the process of moving from sole trader to limited company) are covered in depth elsewhere. See the <a href="https://www.hollowaydavies.co.uk/blog/limited-company-vs-sole-trader-side-hustle">sole trader vs limited company guide</a> for the step-by-step process.</p>
+<p>This page covers the decision. The mechanics of incorporating (Companies House registration, share structure, articles of association, and the process of moving from sole trader to limited company) are covered in depth elsewhere. See the <a href="https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/limited-company-vs-sole-trader-side-hustle">sole trader vs limited company guide</a> for the step-by-step process.</p>
 
 <h2>Common failure modes</h2>
 

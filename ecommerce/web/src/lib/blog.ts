@@ -33,6 +33,7 @@ function parsePostFile(filePath: string): BlogPost {
     schema: fm.schema,
     canonical: fm.canonical,
     faqs: fm.faqs,
+    howToSteps: fm.howToSteps,
     contentHtml: contentWithIds,
   };
 }

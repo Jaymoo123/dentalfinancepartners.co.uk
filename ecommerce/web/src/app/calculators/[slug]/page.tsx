@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { genericTools, getGenericTool } from "@/lib/calculators/registry";
 import { site } from "@/lib/calculators/site";
 import { CalculatorClient } from "@/components/calculators/CalculatorClient";
+import { buildCalculatorJsonLd } from "@/lib/calculator-schema";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -29,6 +30,16 @@ export default async function CalculatorPage({ params }: Props) {
   if (!tool) notFound();
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: buildCalculatorJsonLd({
+            name: tool.name,
+            description: tool.metaDescription,
+            path: `/calculators/${tool.slug}`,
+          }),
+        }}
+      />
       <CalculatorClient slug={tool.slug} variant="page" />
     </main>
   );

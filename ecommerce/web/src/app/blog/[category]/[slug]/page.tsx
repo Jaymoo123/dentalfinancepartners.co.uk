@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getAllPosts, getPostByCategoryAndSlug, getCategorySlug, calculateReadTime } from "@/lib/blog";
 import { siteConfig } from "@/config/site";
-import { buildArticleJsonLd, buildFaqJsonLd } from "@/lib/schema";
+import { buildArticleJsonLd, buildFaqJsonLd, buildHowToJsonLd } from "@/lib/schema";
 
 type Props = { params: Promise<{ category: string; slug: string }> };
 
@@ -33,6 +33,7 @@ export default async function BlogPostPage({ params }: Props) {
     <main className="mx-auto max-w-3xl px-6 py-16">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildArticleJsonLd({ title: post.title, description: post.metaDescription, url: `/blog/${category}/${slug}`, dateModified: post.updatedDate || post.date }) }} />
       {post.faqs && post.faqs.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(post.faqs) }} />}
+      {post.howToSteps && post.howToSteps.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildHowToJsonLd(post)) }} />}
       <p className="text-xs font-semibold uppercase tracking-wider text-neutral-500">
         <Link href="/blog" className="hover:underline">Blog</Link> / <Link href={`/blog/${category}`} className="hover:underline">{post.category}</Link>
       </p>

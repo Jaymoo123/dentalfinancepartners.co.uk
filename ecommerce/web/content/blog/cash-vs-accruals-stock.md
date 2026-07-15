@@ -5,7 +5,7 @@ date: "2026-07-15"
 author: ""
 category: "Bookkeeping and Inventory"
 metaTitle: "Cash Basis vs Accruals for Ecommerce Sellers"
-metaDescription: "Cash basis is the default for sole traders but it distorts a stock business. Why most online sellers get better data from accruals accounting, explained with examples."
+metaDescription: "Cash basis is the default for sole traders but distorts a stock business. Why most online sellers get better data from accruals accounting."
 h1: "Cash Basis or Accruals for a Stock Business? What Online Sellers Should Choose"
 summary: "Cash basis is the legal default for unincorporated sellers, but stock-heavy ecommerce businesses almost always get cleaner profit data and fewer surprises from accruals accounting."
 keyTakeaways:

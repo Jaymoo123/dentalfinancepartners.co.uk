@@ -36,20 +36,20 @@
     "label": "SIC 47910 -- Retail sale via mail order houses or via internet",
     "note": "Primary series. Headline figures for the UK Online Seller Business Index.",
     "activeCompanies": {
-      "count": 214751,
-      "label": "214,751",
+      "count": 214765,
+      "label": "214,765",
       "asOf": "2026-07-15",
       "caveat": "Currently-active-on-register snapshot. NOT a survival rate."
     },
     "dissolvedCompanies": {
-      "count": 319823,
-      "label": "319,823",
+      "count": 319825,
+      "label": "319,825",
       "asOf": "2026-07-15",
       "caveat": "All-time cumulative dissolved count, not a rate."
     },
     "totalEverRegistered": {
-      "count": 534574,
-      "label": "534,574",
+      "count": 534590,
+      "label": "534,590",
       "note": "Active + dissolved. Excludes companies in administration or voluntary strike-off not yet formally dissolved."
     },
     "snapshotActiveRate": {
@@ -62,18 +62,18 @@
     {
       "sicCode": "47990",
       "label": "Other retail not in stores",
-      "active": 54562,
+      "active": 54567,
       "dissolved": 117942,
-      "activeLabel": "54,562",
+      "activeLabel": "54,567",
       "dissolvedLabel": "117,942",
       "note": "Labelled secondary series. Not blended into SIC 47910 headline."
     },
     {
       "sicCode": "46900",
       "label": "Non-specialised wholesale (common FBA-wholesaler filing code)",
-      "active": 46672,
+      "active": 46673,
       "dissolved": 63323,
-      "activeLabel": "46,672",
+      "activeLabel": "46,673",
       "dissolvedLabel": "63,323",
       "note": "Labelled secondary series. Not blended into SIC 47910 headline."
     }
@@ -219,7 +219,98 @@
   "cohortNote": {
     "lockdownCohort2021Incorporations": 50768,
     "lockdownCohort2021IncorporationsLabel": "50,768",
-    "note": "Companies incorporating under SIC 47910 across all four quarters of 2021 (the lockdown e-commerce boom year). True cohort survival rates require cross-referencing incorporation date against dissolution date at the company level, which requires the Companies House bulk snapshot, not the Advanced Search API. The quarterly dissolution counts above show aggregate SIC 47910 deaths by quarter but cannot be attributed to specific cohorts via the API. Cohort survival curves are planned for a future update using the bulk snapshot."
+    "note": "Companies incorporating under SIC 47910 across all four quarters of 2021 (the lockdown e-commerce boom year). See cohortSurvival for the formation-year survival series."
+  },
+  "cohortSurvival47910": {
+    "description": "Formation-year cohorts for SIC 47910: companies incorporated in each calendar year, split by current register status (active vs dissolved), with dissolved-by cut-offs 1/2/3 years after the formation year for time-resolved survival. Source: CH Advanced Search company_status + incorporated_from/to + dissolved_to filters.",
+    "cohorts": [
+      {
+        "year": 2018,
+        "everRegistered": 18685,
+        "stillActive": 5190,
+        "dissolved": 13495,
+        "stillActivePct": 27.8,
+        "survivalByYear": {
+          "1": 78.8,
+          "2": 57.9,
+          "3": 47.1
+        }
+      },
+      {
+        "year": 2019,
+        "everRegistered": 22420,
+        "stillActive": 6783,
+        "dissolved": 15637,
+        "stillActivePct": 30.3,
+        "survivalByYear": {
+          "1": 86.9,
+          "2": 55.3,
+          "3": 46.6
+        }
+      },
+      {
+        "year": 2020,
+        "everRegistered": 44685,
+        "stillActive": 10397,
+        "dissolved": 34288,
+        "stillActivePct": 23.3,
+        "survivalByYear": {
+          "1": 78.7,
+          "2": 49.6,
+          "3": 38.0
+        }
+      },
+      {
+        "year": 2021,
+        "everRegistered": 50699,
+        "stillActive": 11198,
+        "dissolved": 39501,
+        "stillActivePct": 22.1,
+        "survivalByYear": {
+          "1": 71.2,
+          "2": 40.8,
+          "3": 31.6
+        }
+      },
+      {
+        "year": 2022,
+        "everRegistered": 53633,
+        "stillActive": 10721,
+        "dissolved": 42912,
+        "stillActivePct": 20.0,
+        "survivalByYear": {
+          "1": 68.5,
+          "2": 32.0,
+          "3": 23.4
+        }
+      },
+      {
+        "year": 2023,
+        "everRegistered": 84085,
+        "stillActive": 17797,
+        "dissolved": 66288,
+        "stillActivePct": 21.2,
+        "survivalByYear": {
+          "1": 65.4,
+          "2": 26.6
+        }
+      },
+      {
+        "year": 2024,
+        "everRegistered": 74558,
+        "stillActive": 25865,
+        "dissolved": 48693,
+        "stillActivePct": 34.7,
+        "survivalByYear": {
+          "1": 56.6
+        }
+      }
+    ],
+    "caveats": [
+      "Denominator is active + dissolved only; companies in liquidation, administration or live strike-off proceedings are in neither bucket, so ever-registered slightly undercounts and recent-cohort survival is slightly overstated.",
+      "survivalByYear[k] = share of the cohort NOT formally dissolved by 31 December of formation year + k. Formal dissolution lags trading closure, so real attrition runs earlier than these curves show.",
+      "stillActivePct for recent cohorts is high simply because those companies have not had time to fail; compare cohorts at the same age (survivalByYear), not the raw snapshot."
+    ]
   },
   "onsJ4mc": {
     "description": "Internet retail as a proportion of all retail sales (%), seasonally adjusted. ONS series J4MC, dataset DRSI (Retail Sales Index). Annual figures. Used as a demand-side external anchor against SIC 47910 company-birth rates.",

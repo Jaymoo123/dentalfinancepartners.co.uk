@@ -14,10 +14,26 @@ const organizationJsonLd = {
   "@type": ["ProfessionalService", niche.seo.organization_type],
   "@id": `${siteUrl}#organization`,
   name: niche.display_name,
+  legalName: niche.legal_name,
   url: siteUrl,
   description: niche.description,
   logo: `${siteUrl}/api/og`,
   areaServed: "GB",
+  knowsAbout: [
+    "VAT registration for online sellers",
+    "Ecommerce VAT compliance",
+    "Marketplace deemed-supplier rules",
+    "Settlement and payout reconciliation",
+    "Platform reporting obligations (DAC7)",
+    "Making Tax Digital for Income Tax",
+    "Cross-border selling IOSS and OSS",
+    "Sole trader vs limited company for online sellers",
+    "Amazon FBA and FBM tax",
+    "Shopify seller accounts",
+  ],
+  sameAs: [
+    "https://find-and-update.company-information.service.gov.uk/company/16358723",
+  ],
 };
 
 export const viewport: Viewport = {

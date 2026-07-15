@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { siteContainerLg } from "@/components/ui/layout-utils";
+import { buildDatasetJsonLd } from "@/lib/schema";
 import data from "@/data/online-seller-index.json";
 
 export const metadata: Metadata = {
@@ -39,6 +40,18 @@ export default function OnlineSellerIndexPage() {
 
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: buildDatasetJsonLd({
+            name: "UK Online Seller Business Index (SIC 47910)",
+            description:
+              "Quarterly index of UK incorporated online-retail companies: births, deaths and net change derived from Companies House SIC 47910 data and ONS internet-retail sales series J4MC. Reproducible methodology, open-government-licensed sources.",
+            url: "/research/online-seller-index",
+            dateModified: pullDate,
+          }),
+        }}
+      />
       {/* Hero */}
       <section className="border-b border-neutral-200 bg-[#1a3a5c] py-16 sm:py-20">
         <div className={siteContainerLg}>

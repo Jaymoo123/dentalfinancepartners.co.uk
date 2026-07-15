@@ -12,7 +12,7 @@ export const vatPages: VatPage[] = [
     title: "Deemed Supplier and Establishment",
     headline: "Deemed supplier rules and UK establishment status: the VAT question every marketplace seller must answer first",
     metaTitle: "Deemed Supplier VAT Rules UK | Marketplace Establishment",
-    metaDescription: "Who accounts for UK VAT on your marketplace sales depends entirely on your establishment status. Understand deemed supplier rules, the UK-shell trap, and the £135 interaction.",
+    metaDescription: "Who accounts for UK VAT on marketplace sales depends on establishment status. Deemed supplier rules, the UK-shell trap, and the £135 interaction.",
     intro: "Whether the marketplace accounts for UK VAT on your sales, or whether you remain liable yourself, turns on a single fact: are you UK-established or overseas-established? <a href=\"https://www.gov.uk/guidance/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces\">HMRC's deemed supplier rules</a> transfer the VAT obligation for overseas-established sellers to the platform. UK-established sellers on the same marketplace are entirely outside that mechanism and must account for their own VAT. Getting the answer wrong in either direction creates either a missed registration or an unnecessary compliance burden.",
     stats: [
       {
@@ -92,7 +92,7 @@ export const vatPages: VatPage[] = [
     title: "VAT on Marketplace Fees",
     headline: "VAT on Amazon, eBay and platform fees: reverse charge, the sub-threshold trap, and what goes on your return",
     metaTitle: "VAT on Amazon and Marketplace Fees UK | Reverse Charge",
-    metaDescription: "UK VAT on Amazon, eBay and platform fees explained. Reverse charge treatment, the 2024 Amazon billing change, and why overseas fee value counts toward your £90,000 threshold.",
+    metaDescription: "UK VAT on Amazon, eBay and platform fees. Reverse charge, the 2024 Amazon billing change, and why overseas fee value counts toward your £90,000 threshold.",
     intro: "Marketplace commissions, advertising spend and software subscriptions billed by overseas suppliers are <a href=\"https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a\">reverse-charge services</a>: the UK business receiving them self-accounts for UK VAT. VAT-registered sellers declare the VAT and recover it on the same return, netting to nil on the fees. Sellers not yet registered for VAT face a harder problem: the value of those reverse-charge services counts toward the £90,000 registration threshold. A seller buying significant overseas platform and advertising services can cross the threshold without ever receiving the threshold equivalent in gross sales.",
     stats: [
       {
@@ -172,7 +172,7 @@ export const vatPages: VatPage[] = [
     title: "The £135 Import Rule",
     headline: "The £135 consignment rule: who accounts for UK VAT, and when the obligation falls on the seller",
     metaTitle: "£135 Import Rule UK VAT | Dropshipping VAT Explained",
-    metaDescription: "The UK £135 import rule explained for online sellers and dropshippers. Supply VAT at point of sale for direct fulfilment, marketplace obligations, and what happens above £135.",
+    metaDescription: "The UK £135 import rule for online sellers and dropshippers. Supply VAT at point of sale, marketplace rules, and treatment of goods above £135.",
     intro: "For consignments of goods valued at <a href=\"https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk\">£135 or less sold directly to UK consumers from outside the UK</a>, UK VAT is due at the point of sale, not as import VAT at the border. This rule catches dropshippers shipping low-value goods direct from overseas: they must register for UK VAT and account for supply VAT on each eligible sale from the first pound, with no registration threshold. The fork that changes the answer is whether the sale goes through a marketplace: <a href=\"https://www.gov.uk/guidance/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces\">where it does, the marketplace accounts for the VAT</a> instead. Getting the direct-vs-marketplace fork wrong is the source of most non-compliance in the dropshipping cohort.",
     stats: [
       {
@@ -248,7 +248,7 @@ export const vatPages: VatPage[] = [
     title: "IOSS vs OSS",
     headline: "IOSS and OSS for UK sellers: which scheme applies, and the GB vs NI split that rival content gets wrong",
     metaTitle: "IOSS vs OSS for UK Sellers | EU VAT After Brexit",
-    metaDescription: "IOSS and OSS explained for UK ecommerce sellers. GB sellers cannot use OSS. IOSS needs an EU intermediary. Northern Ireland has its own route. Get the split right.",
+    metaDescription: "IOSS and OSS explained for UK ecommerce sellers. GB sellers cannot use OSS. IOSS needs an EU intermediary. Northern Ireland has its own route.",
     intro: "The EU introduced IOSS and OSS in July 2021 to simplify VAT compliance for cross-border e-commerce into and within the EU. The two schemes are frequently confused in seller content, and the GB-vs-NI split is the most common error: <a href=\"https://www.gov.uk/guidance/register-to-report-and-pay-vat-on-distance-sales-of-goods-from-northern-ireland-to-the-eu\">OSS</a> is a Northern Ireland mechanism for NI-to-EU distance sales; GB sellers do not distance-sell under OSS. <a href=\"https://www.gov.uk/guidance/check-if-you-can-register-for-the-vat-import-one-stop-shop-scheme\">IOSS</a> is the relevant scheme for GB sellers shipping low-value consignments to EU consumers, and GB sellers must use an EU-established fiscal intermediary to register. Getting the wrong scheme, or assuming the other party handles it, creates unaccounted EU VAT obligations.",
     stats: [
       {
@@ -328,7 +328,7 @@ export const vatPages: VatPage[] = [
     title: "Postponed VAT and Margin Scheme",
     headline: "Postponed import VAT accounting for stock importers and the VAT margin scheme for second-hand resellers",
     metaTitle: "Postponed VAT Accounting UK | VAT Margin Scheme Resellers",
-    metaDescription: "Postponed VAT accounting for ecommerce importers: declare and recover import VAT on the same return. VAT margin scheme for second-hand resellers: VAT on the margin, not the full price.",
+    metaDescription: "Postponed VAT accounting for importers: declare and recover import VAT on the same return. Margin scheme for resellers: VAT on margin, not full price.",
     intro: "<a href=\"https://www.gov.uk/guidance/check-when-you-can-account-for-import-vat-on-your-vat-return\">Postponed VAT accounting (PVA)</a> lets VAT-registered importers declare and recover import VAT on their VAT return instead of paying cash at the border and waiting to reclaim it. For an FBA seller importing stock into the UK, PVA is the cash-flow default: it removes a border VAT cash outflow that can run to tens of thousands of pounds per shipment. Separately, sellers of eligible second-hand goods can use the <a href=\"https://www.gov.uk/vat-margin-schemes\">VAT margin scheme</a>, which charges VAT on the margin between purchase price and sale price rather than the full selling price. Both require VAT registration and specific record-keeping; neither is automatic.",
     stats: [
       {
@@ -347,7 +347,7 @@ export const vatPages: VatPage[] = [
     challenges: [
       {
         title: "Postponed VAT accounting: the cash-flow default for FBA and stock importers",
-        body: "<p><a href=\"https://www.gov.uk/guidance/check-when-you-can-account-for-import-vat-on-your-vat-return\">PVA</a> works by moving the import VAT obligation from the border to your next VAT return. Instead of paying 20% of the customs value in cash at the port or airport and then waiting for the next return cycle to reclaim it, you declare the same amount in box 1 (output tax) and box 4 (input tax) of your VAT return. The cash difference is significant for a seller shipping large consignments: a £50,000 shipment of goods carries £10,000 of import VAT that PVA keeps in your business rather than in a HMRC float.</p><p>HMRC issues a monthly <strong>postponed import VAT statement</strong> for each UK importer using PVA. This statement must reconcile to the boxes 1 and 4 entries on your return. If the statements are not being downloaded and reconciled each period, the return is unreconciled and a compliance risk. For generic importer PVA mechanics (customs declarations, commodity codes), see the generalist importing guide at <a href=\"https://hollowaydavies.co.uk/vat-accountant-importing-goods-outside-uk\">Holloway Davies</a>.</p>",
+        body: "<p><a href=\"https://www.gov.uk/guidance/check-when-you-can-account-for-import-vat-on-your-vat-return\">PVA</a> works by moving the import VAT obligation from the border to your next VAT return. Instead of paying 20% of the customs value in cash at the port or airport and then waiting for the next return cycle to reclaim it, you declare the same amount in box 1 (output tax) and box 4 (input tax) of your VAT return. The cash difference is significant for a seller shipping large consignments: a £50,000 shipment of goods carries £10,000 of import VAT that PVA keeps in your business rather than in a HMRC float.</p><p>HMRC issues a monthly <strong>postponed import VAT statement</strong> for each UK importer using PVA. This statement must reconcile to the boxes 1 and 4 entries on your return. If the statements are not being downloaded and reconciled each period, the return is unreconciled and a compliance risk. For generic importer PVA mechanics (customs declarations, commodity codes), see the generalist importing guide at <a href=\"https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/vat-accountant-importing-goods-outside-uk\">Holloway Davies</a>.</p>",
       },
       {
         title: "When the £135 rule applies instead of PVA (and why the two do not overlap)",

@@ -1,9 +1,9 @@
 {
-  "active_47910": 214751,
-  "dissolved_47910": 319823,
-  "active_47990": 54562,
+  "active_47910": 214765,
+  "dissolved_47910": 319825,
+  "active_47990": 54567,
   "dissolved_47990": 117942,
-  "active_46900": 46672,
+  "active_46900": 46673,
   "dissolved_46900": 63323,
   "quarters_47910": [
     {
@@ -137,6 +137,77 @@
       "incorporations": 17683,
       "dissolutions": 12585,
       "net": 5098
+    }
+  ],
+  "cohorts_47910": [
+    {
+      "year": 2018,
+      "active": 5190,
+      "dissolved": 13495,
+      "dissolved_by_years": {
+        "1": 3957,
+        "2": 7871,
+        "3": 9876
+      }
+    },
+    {
+      "year": 2019,
+      "active": 6783,
+      "dissolved": 15637,
+      "dissolved_by_years": {
+        "1": 2947,
+        "2": 10017,
+        "3": 11968
+      }
+    },
+    {
+      "year": 2020,
+      "active": 10397,
+      "dissolved": 34288,
+      "dissolved_by_years": {
+        "1": 9538,
+        "2": 22507,
+        "3": 27717
+      }
+    },
+    {
+      "year": 2021,
+      "active": 11198,
+      "dissolved": 39501,
+      "dissolved_by_years": {
+        "1": 14579,
+        "2": 30004,
+        "3": 34668
+      }
+    },
+    {
+      "year": 2022,
+      "active": 10721,
+      "dissolved": 42912,
+      "dissolved_by_years": {
+        "1": 16883,
+        "2": 36465,
+        "3": 41071
+      }
+    },
+    {
+      "year": 2023,
+      "active": 17797,
+      "dissolved": 66288,
+      "dissolved_by_years": {
+        "1": 29123,
+        "2": 61744,
+        "3": 66288
+      }
+    },
+    {
+      "year": 2024,
+      "active": 25865,
+      "dissolved": 48693,
+      "dissolved_by_years": {
+        "1": 32362,
+        "2": 48693
+      }
     }
   ],
   "ons_j4mc_annual": [

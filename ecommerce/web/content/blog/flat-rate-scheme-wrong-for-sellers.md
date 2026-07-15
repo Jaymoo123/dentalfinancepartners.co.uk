@@ -5,7 +5,7 @@ date: "2026-07-15"
 author: ""
 category: "VAT and Cross-Border Selling"
 metaTitle: "VAT Flat Rate Scheme: Why It Fails Ecommerce Sellers"
-metaDescription: "The Flat Rate Scheme sounds simpler but costs most goods sellers money. The 16.5% limited cost rate plus lost input VAT recovery on stock make it a false economy."
+metaDescription: "The Flat Rate Scheme sounds simpler but costs most goods sellers money. The 16.5% limited cost rate and lost input VAT make it a false economy."
 h1: "Why the VAT Flat Rate Scheme Is Usually the Wrong Choice for Goods Sellers"
 summary: "The Flat Rate Scheme sounds like an admin shortcut, but the 16.5% limited cost business rate and the loss of input VAT recovery on stock make it a false economy for most ecommerce and marketplace sellers."
 keyTakeaways:

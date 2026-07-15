@@ -5,7 +5,7 @@ date: "2026-07-15"
 author: ""
 category: "Making Tax Digital and Self Assessment"
 metaTitle: "£1,000 Trading Allowance for Online Sellers 2026"
-metaDescription: "No new tax-free limit was created. The £1,000 trading allowance is the real figure. When reselling becomes taxable, the badges of trade, and Self Assessment deadlines."
+metaDescription: "No new tax-free limit was created. The £1,000 trading allowance is the real figure: when reselling becomes taxable and the deadlines that follow."
 h1: "The £1,000 Trading Allowance for Online Sellers, and When a Side Hustle Becomes a Taxable Trade"
 summary: "The 2024 platform-reporting headlines announced no new tax-free limit. The £1,000 trading allowance is the actual threshold, it is not new, and whether your activity is taxable at all turns on HMRC's badges of trade, not a sales count."
 keyTakeaways:

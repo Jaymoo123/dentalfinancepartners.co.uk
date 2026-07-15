@@ -27,6 +27,17 @@ faqs:
     answer: "A digital record of every transaction: income received, expenses incurred and, if you hold stock, your inventory position. For a marketplace seller this means records built from platform settlement reports, not bank-statement summaries alone."
   - question: "Is MTD the same as the platform reporting rules?"
     answer: "No. Platform reporting is HMRC receiving data about your sales from platforms such as Amazon, eBay and Etsy. MTD ITSA is you keeping your own digital records and filing quarterly updates to HMRC from your accounting software. They run in parallel and cover overlapping data, but they are separate obligations."
+howToSteps:
+  - name: "Download settlement reports from every platform at least quarterly"
+    text: "Amazon, eBay, Etsy and Shopify all provide downloadable transaction-level reports. These are your source records for MTD-compliant digital record-keeping, not the net bank deposit."
+  - name: "Reconcile settlement reports to payouts"
+    text: "Tie the net figure transferred to your bank back to individual gross sales, returns, platform fees and adjustments. Unexplained differences will create problems at quarterly update time."
+  - name: "Record income at the point of sale, not receipt"
+    text: "MTD-compliant software uses the transaction date, not the bank date. For a seller with stock, this also affects how cost of goods sold is matched to sales periods."
+  - name: "Keep a platform-by-platform breakdown"
+    text: "Even if your software aggregates the total, maintain platform-level granularity so you can reconcile against HMRC cross-references from platform reports under the DAC7 rules."
+  - name: "Connect accounting software to your platforms where integrations exist"
+    text: "Automated feeds from Amazon, eBay, Etsy and Shopify reduce manual reconciliation errors. Where no integration exists, import settlement CSVs at least quarterly."
 ---
 <p>Making Tax Digital for Income Tax (MTD ITSA) is not a new tax. It changes how sole-trader sellers keep records and report income. For most sellers the practical question is the same: does it apply to me, and if so, what do I actually need to change? This page answers the seller-specific version of that question. For the generic mechanics (how quarterly updates work, which software qualifies, how to sign up) see the <a href="https://hollowaydavies.co.uk/fundamentals/making-tax-digital-for-income-tax-guide">full MTD ITSA guide on Holloway Davies</a>.</p>
 
@@ -134,7 +145,7 @@ faqs:
 
 <h2>The generic MTD mechanics: go here for those</h2>
 
-<p>This page covers the seller-specific slice of MTD ITSA. The standard mechanics, including how quarterly updates work, which software is on the HMRC-compatible list, how to sign up and what an End of Period Statement looks like, are covered in full in the <a href="https://hollowaydavies.co.uk/fundamentals/making-tax-digital-for-income-tax-guide">MTD ITSA guide on Holloway Davies</a>. For deadline specifics see the <a href="https://hollowaydavies.co.uk/mtd-itsa-april-2026-deadline">April 2026 deadline guide</a>.</p>
+<p>This page covers the seller-specific slice of MTD ITSA. The standard mechanics, including how quarterly updates work, which software is on the HMRC-compatible list, how to sign up and what an End of Period Statement looks like, are covered in full in the <a href="https://hollowaydavies.co.uk/fundamentals/making-tax-digital-for-income-tax-guide">MTD ITSA guide on Holloway Davies</a>. For deadline specifics see the <a href="https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/mtd-itsa-april-2026-deadline">April 2026 deadline guide</a>.</p>
 
 <h2>Common failure modes for sellers</h2>
 

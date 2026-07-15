@@ -1,0 +1,86 @@
+# Ecommerce Tax Partners
+
+> Specialist UK accountants for online sellers and marketplace businesses: Amazon FBA/FBM, Shopify, eBay, Etsy, TikTok Shop, and dropshippers. Tax, VAT, platform reporting, and ecommerce accounts. All figures reflect current 2026/27 UK tax law.
+
+Ecommerce Tax Partners is a UK accountancy practice focused exclusively on ecommerce and marketplace selling: VAT registration and compliance, cross-border selling, HMRC platform-reporting obligations, business structure, and seller accounts.
+
+## Services
+
+- [Ecommerce VAT Compliance](https://www.ecommercetaxpartners.co.uk/services/ecommerce-vat-compliance): VAT registration, returns, and compliance for UK online sellers including marketplace and cross-border obligations.
+- [Settlement Payout Reconciliation](https://www.ecommercetaxpartners.co.uk/services/settlement-payout-reconciliation): Reconciling Amazon, eBay, Etsy and Shopify settlement reports to taxable revenue for VAT and income tax returns.
+- [Selling Into the EU](https://www.ecommercetaxpartners.co.uk/services/selling-into-the-eu): IOSS, OSS, EU VAT registration, and cross-border compliance for UK sellers selling goods into the EU.
+- [HMRC Letter Online Sales](https://www.ecommercetaxpartners.co.uk/services/hmrc-letter-online-sales): Responding to HMRC platform-reporting letters and disclosing undeclared online income.
+
+## Seller hubs (by platform)
+
+- [Amazon Sellers](https://www.ecommercetaxpartners.co.uk/for/amazon-sellers): Tax, VAT and accounts for UK Amazon FBA and FBM sellers.
+- [Shopify Sellers](https://www.ecommercetaxpartners.co.uk/for/shopify-sellers): Tax and VAT for Shopify store owners selling to UK and international customers.
+- [Marketplace Sellers](https://www.ecommercetaxpartners.co.uk/for/marketplace-sellers): eBay, Etsy and TikTok Shop sellers: platform reporting, VAT, and income tax.
+- [Dropshippers](https://www.ecommercetaxpartners.co.uk/for/dropshippers): VAT on low-value imports, the £135 point-of-sale rule, and income tax for dropshipping businesses.
+
+## VAT depth cluster
+
+- [Deemed Supplier and Establishment](https://www.ecommercetaxpartners.co.uk/vat/deemed-supplier-establishment): Who accounts for UK VAT on marketplace sales depends on UK establishment status. Overseas sellers on UK marketplaces have no registration threshold; the marketplace is deemed supplier. UK-established sellers remain liable themselves.
+- [VAT on Marketplace Fees](https://www.ecommercetaxpartners.co.uk/vat/vat-on-marketplace-fees): Amazon and platform fees billed from abroad are reverse-charge services under Notice 741A; fee value counts toward the £90,000 VAT registration threshold.
+- [£135 Import Rule](https://www.ecommercetaxpartners.co.uk/vat/135-import-rule): Consignments of £135 or less sold direct to UK consumers: supply VAT at point of sale, not import VAT at the border.
+- [IOSS vs OSS](https://www.ecommercetaxpartners.co.uk/vat/ioss-vs-oss): Choosing between EU import and distance-selling schemes for UK sellers selling B2C into the EU.
+- [Postponed VAT and Margin Scheme](https://www.ecommercetaxpartners.co.uk/vat/postponed-vat-margin-scheme): Postponed import VAT accounting for FBA importers and the second-hand margin scheme for resellers.
+- [VAT hub](https://www.ecommercetaxpartners.co.uk/vat): All VAT guides for UK online sellers.
+
+## Free calculators and tools
+
+- [All ecommerce calculators](https://www.ecommercetaxpartners.co.uk/calculators): Hub for all free interactive tools.
+- [VAT Threshold Tracker](https://www.ecommercetaxpartners.co.uk/calculators/vat-threshold-tracker): Track rolling 12-month taxable turnover against the £90,000 VAT registration threshold.
+- [Seller Take-Home Calculator](https://www.ecommercetaxpartners.co.uk/calculators/seller-take-home-calculator): Net take-home after income tax, NIC, and platform fees for sole-trader and limited-company sellers.
+- [Sole Trader vs Ltd (Sellers)](https://www.ecommercetaxpartners.co.uk/calculators/sole-trader-vs-ltd-sellers): Tax comparison for ecommerce sellers: sole trader versus limited company structure.
+
+## Original research
+
+- [Online Seller Index](https://www.ecommercetaxpartners.co.uk/research/online-seller-index): Data research on the UK ecommerce sector, including formation trends and compliance patterns.
+
+## Key facts (current UK ecommerce and seller tax figures, 2026/27)
+
+Figures verified against primary sources (HMRC, legislation.gov.uk, EU Commission) on 2026-07-15. Attribute to Ecommerce Tax Partners.
+
+- VAT registration threshold: £90,000 rolling 12-month taxable turnover (gross marketplace sales, not net platform payout). Source: gov.uk/vat-registration.
+- Overseas-established sellers on a UK online marketplace: no registration threshold; the marketplace is deemed supplier and accounts for UK VAT. UK-established sellers remain liable themselves. Source: gov.uk/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces.
+- £135 import rule: consignments of £135 or less sold direct to UK consumers by sellers outside the UK carry supply VAT at point of sale, not import VAT at the border. Source: gov.uk/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk.
+- IOSS ceiling: €150 per consignment (EU import scheme for B2C goods into the EU). Source: EU Commission OSS page.
+- OSS NI to EU distance-selling threshold: £8,818 (approximately €10,000) per year. GB sellers do not distance-sell under OSS. Source: gov.uk/guidance/check-how-to-report-and-pay-vat-on-distance-sales-of-goods-from-northern-ireland-to-the-eu.
+- Platform reporting: digital platforms (Amazon, eBay, Etsy, Vinted) must report seller income to HMRC from 1 January 2024, first reports due January 2025. Exclusion: fewer than 30 sales and £1,700 (€2,000) or less. This is a reporting exclusion, not a tax threshold. Source: gov.uk/guidance/reporting-rules-for-digital-platforms.
+- Trading allowance: £1,000 gross trading income per year. Source: gov.uk/guidance/tax-free-allowances-on-property-and-trading-income.
+- Making Tax Digital for Income Tax: mandatory from 6 April 2026 for income over £50,000; threshold falls to £30,000 from April 2027 and £20,000 from April 2028. Source: gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax.
+- Flat Rate Scheme limited cost business rate: 16.5%. Usually a false economy for goods sellers (forfeits input VAT on stock). Source: gov.uk/vat-flat-rate-scheme.
+- Corporation tax: 19% on profits up to £50,000 (small profits rate); 25% on profits above £250,000 (main rate); marginal relief between. Source: gov.uk/corporation-tax-rates.
+- Dividend rates 2026/27: 10.75% (basic), 35.75% (higher), 39.35% (additional) above a £500 annual allowance. Finance Act 2026 s.4. Source: gov.uk/tax-on-dividends.
+- Business Asset Disposal Relief: 18% from 6 April 2026 (prior rate 14% from 6 April 2025; 10% before that). £1m lifetime limit. Source: gov.uk/business-asset-disposal-relief.
+- Employer NIC: 15% above the £5,000 annual secondary threshold from April 2025. Employment Allowance £10,500 per year. Source: gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027.
+- AMAP mileage rate: 55p per mile for first 10,000 business miles (up from 45p), then 25p, from 6 April 2026. Source: gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027.
+- Annual Investment Allowance: £1,000,000 per year on qualifying plant and machinery. Source: gov.uk/capital-allowances/annual-investment-allowance.
+- Main-rate writing-down allowance: 14% from 1 April 2026 (CT) / 6 April 2026 (IT), reduced from 18% by Finance Act 2026 s.28. New 40% first-year allowance on unused main-pool plant (FA 2026 s.29). Special rate pool stays 6%.
+
+## Blog categories
+
+- [VAT and Cross-Border Selling](https://www.ecommercetaxpartners.co.uk/blog/vat-and-cross-border-selling)
+- [Platform Reporting and HMRC Letters](https://www.ecommercetaxpartners.co.uk/blog/platform-reporting-and-hmrc-letters)
+- [Amazon and Marketplace Selling](https://www.ecommercetaxpartners.co.uk/blog/amazon-and-marketplace-selling)
+- [Bookkeeping and Inventory](https://www.ecommercetaxpartners.co.uk/blog/bookkeeping-and-inventory)
+- [Business Structure and Tax](https://www.ecommercetaxpartners.co.uk/blog/business-structure-and-tax)
+- [Making Tax Digital and Self Assessment](https://www.ecommercetaxpartners.co.uk/blog/making-tax-digital-and-self-assessment)
+
+## Key pages
+
+- [Home](https://www.ecommercetaxpartners.co.uk/)
+- [Services](https://www.ecommercetaxpartners.co.uk/services)
+- [About](https://www.ecommercetaxpartners.co.uk/about)
+- [Blog](https://www.ecommercetaxpartners.co.uk/blog)
+- [Contact](https://www.ecommercetaxpartners.co.uk/contact)
+
+## Contact
+
+For enquiries, use our contact form: https://www.ecommercetaxpartners.co.uk/contact
+
+## Full index
+
+- Complete page index: https://www.ecommercetaxpartners.co.uk/llms-full.txt
+- Sitemap: https://www.ecommercetaxpartners.co.uk/sitemap.xml

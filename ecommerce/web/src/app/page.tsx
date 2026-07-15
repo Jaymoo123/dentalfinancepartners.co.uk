@@ -5,6 +5,7 @@ import { btnPrimary, focusRing, siteContainerLg } from "@/components/ui/layout-u
 import { LeadForm } from "@/components/forms/LeadForm";
 import { ecommerceServices } from "@/data/services";
 import { sellerHubs } from "@/data/for";
+import { buildFaqJsonLd } from "@/lib/schema";
 
 // ponytail: inline SVGs, no icon dep in this workspace
 function ArrowRight({ className }: { className?: string }) {
@@ -208,6 +209,12 @@ const faqs = [
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: buildFaqJsonLd(faqs.map((f) => ({ question: f.q, answer: f.a }))),
+        }}
+      />
       {/* Hero */}
       <section className="relative flex items-center min-h-[440px] sm:min-h-[560px] overflow-hidden bg-[#1a2942]">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1a2942] via-[#243550]/80 to-[#0f1c30]" />

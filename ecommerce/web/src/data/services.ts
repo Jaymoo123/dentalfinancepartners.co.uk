@@ -12,7 +12,7 @@ export const ecommerceServices: EcommerceService[] = [
     title: "Ecommerce VAT Compliance",
     headline: "VAT compliance for UK online sellers: registration, schemes and marketplace obligations",
     metaTitle: "Ecommerce VAT Compliance UK | Online Seller VAT",
-    metaDescription: "VAT compliance for UK ecommerce and marketplace sellers. Registration, the £90,000 threshold on gross sales, flat-rate scheme pitfalls and cross-border obligations.",
+    metaDescription: "VAT compliance for UK ecommerce sellers. Registration, the £90,000 gross-sales threshold, flat-rate scheme pitfalls and cross-border obligations.",
     intro: "VAT for online sellers has specific rules that differ from standard retail VAT. The registration threshold applies to taxable turnover, which for most sellers means gross selling price before platform fees, not net payout. Platform-collected VAT on overseas seller sales changes the analysis for marketplaces. The flat-rate scheme is typically disadvantageous for goods sellers. We handle VAT registration, returns and compliance for UK online sellers.",
     stats: [
       { value: "£90,000", label: "UK VAT registration threshold on taxable turnover (gross sales, not net payout) in any rolling 12-month period" },
@@ -181,7 +181,7 @@ export const ecommerceServices: EcommerceService[] = [
     title: "HMRC Letter About Online Sales",
     headline: "Help responding to an HMRC letter about your online selling income",
     metaTitle: "HMRC Letter About Online Sales UK | Platform Reporting Response",
-    metaDescription: "Specialist help responding to HMRC letters about eBay, Vinted, Amazon and Etsy sales. Platform reporting rules, trading status assessment and voluntary disclosure.",
+    metaDescription: "Help responding to HMRC letters about eBay, Vinted, Amazon and Etsy sales. Platform reporting rules, trading status assessment and voluntary disclosure.",
     intro: "<a href=\"https://www.gov.uk/guidance/reporting-rules-for-digital-platforms\">From 1 January 2024, digital platforms are required to report seller data directly to HMRC</a> under the OECD model reporting rules, with first reports submitted in January 2025. HMRC uses this data to check against self-assessment records and issue nudge letters or formal compliance checks to sellers whose reported income does not match the platform data. If you have received a letter, we can help you understand what it means, assess your actual tax position and respond in a way that resolves the matter.",
     stats: [
       { value: "From Jan 2024", label: "Platform reporting rules took effect; platforms report seller data to HMRC covering the 2024 period, with annual reports due each 31 January" },
