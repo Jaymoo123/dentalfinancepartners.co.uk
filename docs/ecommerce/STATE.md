@@ -22,12 +22,12 @@ brand_locked: true
 - [x] S2 scaffold: spinup_site run, npm build green (2026-07-15)
 - [x] S3 research pack finalised (R3/R4 + DEDUP_AUDIT 7 UNIQUE / 6 DIFFERENTIATE / 5 FENCE / 0 DROP); blog_topics seeding pending (owner gate G2)
 - [x] S4 machinery composition: full care/web infra mirror, vitest 11/11, tsc clean, /vat route type added (2026-07-15)
-- [x] S5 niche build: 3 calculators (golden-figure vitest, marginal relief + £5,000 salary model), house_positions.md (27, IOSS/OSS flags CLEARED 2026-07-15), rates_ledger.json (42 entries); Online Seller Index page built structure-only, DATA RUN PENDING (CH SIC 47910 + ONS pulls)
+- [x] S5 niche build: 3 calculators (golden-figure vitest, marginal relief + £5,000 salary model), house_positions.md (27, IOSS/OSS flags CLEARED 2026-07-15), rates_ledger.json (42 entries); Online Seller Index populated with REAL data 2026-07-15 (CH SIC 47910: 214,751 active / 319,823 dissolved + 22 quarters churn; ONS J4MC 27.4% 2025; zero fabricated figures; re-run via scripts/_ecommerce_index_pull.py)
 - [x] S6 launch-core content: 26 assets written (home + 4 /for + 4 services + 5 /vat + 8 blogs + 3 calc copy + index) via wave-batch-1 Sonnet workers from Opus briefs; 2-track QA passed (adversarial fact-check + editorial vs helpful-content rubric), findings fixed manager-direct; build + vitest green (2026-07-15)
 - [ ] S7 Vercel project + preview an01 pass + live battery (gates G3/G4) — DEPLOY HELD
 - [ ] S8 domain-ready close-out: `sites.active=true`, tracker updated
 
-Open before deploy: Online Seller Index data run; owner migrate-vs-fence ruling on the 5 HIRE hubs vs generalist's 6 live ecommerce pages (fresh GSC, at G1).
+Open before deploy: owner migrate-vs-fence ruling on the 5 HIRE hubs vs generalist's 6 live ecommerce pages (fresh GSC, at G1). Index data run DONE 2026-07-15 (commit 73d25cc4); cohort survival curves deferred (need CH bulk snapshot, not the aggregate API).
 
 ## Data layer
 
