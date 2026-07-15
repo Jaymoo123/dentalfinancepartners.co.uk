@@ -4,6 +4,7 @@ import { trueCostCareHourTool } from "./tools/true-cost-care-hour";
 import { sleepInNmwTool } from "./tools/sleep-in-nmw";
 import { careStaffingMarginTool } from "./tools/care-staffing-margin";
 import { fncFeeMixTool } from "./tools/fnc-fee-mix";
+import { cqcFeeCalculatorTool } from "./tools/cqc-fee-calculator";
 
 const BESPOKE: Tool[] = [];
 
@@ -12,6 +13,7 @@ const GENERIC: GenericTool[] = [
   sleepInNmwTool,
   careStaffingMarginTool,
   fncFeeMixTool,
+  cqcFeeCalculatorTool,
 ];
 
 export const TOOLS: Tool[] = [...BESPOKE, ...GENERIC];

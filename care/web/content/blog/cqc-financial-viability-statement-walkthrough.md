@@ -25,6 +25,21 @@ faqs:
     answer: "CQC can refuse or delay registration if the financial submission does not demonstrate viable resources. This blocks you from trading legally. You would need to resubmit with a strengthened financial case, causing further delay."
   - question: "Is a business plan the same as a financial viability statement?"
     answer: "No. The FVS is a specific financial document on CQC's template, focused on capital, runway and cost modelling. A business plan covers strategy, market context and operations alongside the numbers. Both may be required as part of the registration pack, but they are separate documents."
+howToSteps:
+  - name: "Download the current CQC financial viability template"
+    text: "Obtain the latest version of the financial viability template from CQC's registration guidance page. Do not use a saved copy from a previous application; CQC revises the form and expects the current version to be completed in full."
+  - name: "Confirm opening capital and funding sources"
+    text: "Identify and evidence the money available to launch and sustain the care service: cash reserves, committed loan facilities or investor contributions. Only confirmed funding counts. Indicative terms and letters of intent are not sufficient."
+  - name: "Build a month-by-month cash-flow runway"
+    text: "Model projected income and expenditure from opening through to break-even, showing the cumulative cash position at each month end. A care home typically fills beds over weeks and months; the model must show the business survives to that point on the confirmed opening capital."
+  - name: "Set a cost base using current statutory rates"
+    text: "Staff costs must reflect the National Living Wage of £12.71 per hour for workers aged 21 and over from 1 April 2026, employer NIC at 15% on earnings above £5,000 per year, and for domiciliary providers, the cost of inter-call travel time paid at NMW. A cost base below these rates is wrong."
+  - name: "Calculate break-even occupancy or hours"
+    text: "Express the point at which fee income covers the full cost base: for a care home this is a minimum occupancy rate; for a domiciliary agency it is a minimum weekly care-hours figure. Both must be stated and defended with reference to your fee rate and cost model."
+  - name: "Apply the Employment Allowance where eligible"
+    text: "Check whether the business qualifies for the Employment Allowance of up to £10,500 per tax year, which reduces the employer NIC liability. For a small provider whose total employer NIC bill is at or below that figure, the allowance eliminates it entirely in the early period."
+  - name: "Have an accountant prepare or review and sign the statement"
+    text: "The CQC financial viability statement is normally prepared or signed by an accountant. Complete the template in full using the cost model and cash-flow runway built in the previous steps. The output is a submission-ready document attached to the registration application before trading begins."
 ---
 <p>A financial viability statement (FVS) is a document new care providers must submit as part of their CQC registration application. It is prepared on <a href="https://www.cqc.org.uk/guidance-regulation/providers/registration/supporting-documents-provider/document/financial-viability-template">CQC's own template</a> and is normally prepared or signed by an accountant. Its purpose is to demonstrate that the proposed service has sufficient financial resources to operate safely and sustainably from day one, before a single resident or client is taken on.</p>
 

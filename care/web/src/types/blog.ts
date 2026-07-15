@@ -43,6 +43,8 @@ export type BlogFrontmatter = {
   schema?: string;
   canonical?: string;
   faqs?: BlogFaq[];
+  /** Step-by-step instructions for procedural posts; emits HowTo JSON-LD when present. */
+  howToSteps?: { name: string; text: string }[];
 };
 
 export type BlogPost = BlogFrontmatter & {

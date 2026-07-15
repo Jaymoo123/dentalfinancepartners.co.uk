@@ -1,5 +1,6 @@
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
+import type { BlogFrontmatter } from "@/types/blog";
 
 export function buildOgImageUrl(title: string, category?: string) {
   const params = new URLSearchParams({ title });
@@ -28,6 +29,39 @@ export function buildOrganizationJsonLd() {
     },
     areaServed: niche.seo.service_areas,
     priceRange: "££",
+    knowsAbout: [
+      "Care home accountancy",
+      "Domiciliary care agency accounts",
+      "Supported living provider finance",
+      "CQC financial viability statement",
+      "Care VAT exemption and partial exemption",
+      "Sleep-in shift NMW compliance",
+      "NHS funded nursing care fee accounting",
+      "NHS continuing healthcare accounting",
+      "Local authority fee negotiation",
+      "Care worker payroll and employment status",
+      "Sponsored care worker cost modelling",
+      "Making Tax Digital for care operators",
+    ],
+    sameAs: [
+      "https://find-and-update.company-information.service.gov.uk/company/16358723",
+    ],
+  });
+}
+
+/** Build HowTo JSON-LD for step-by-step procedural posts (only when howToSteps present). */
+export function buildHowToJsonLd(post: Pick<BlogFrontmatter, "h1" | "metaDescription" | "howToSteps">) {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: post.h1,
+    ...(post.metaDescription && { description: post.metaDescription }),
+    step: (post.howToSteps ?? []).map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+    })),
   });
 }
 

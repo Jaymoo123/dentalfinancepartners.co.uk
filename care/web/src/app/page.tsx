@@ -28,7 +28,7 @@ function ShieldCheck({ className }: { className?: string }) {
 export const metadata: Metadata = {
   title: { absolute: `Care home accountants | UK care sector specialists` },
   description:
-    "Specialist accountants for UK care providers: care homes, domiciliary agencies, supported living and children's homes. VAT welfare exemption, sleep-in NMW, CQC financial viability and LA fee negotiation.",
+    "Care sector accountants for UK care homes, domiciliary agencies and supported living. VAT exemption, sleep-in NMW, CQC viability and LA fee negotiation.",
   alternates: { canonical: siteConfig.url },
 };
 

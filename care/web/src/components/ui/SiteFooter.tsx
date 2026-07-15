@@ -10,6 +10,8 @@ const footerLinks = [
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
   { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Cookie Policy", href: "/cookie-policy" },
+  { label: "Terms", href: "/terms" },
 ];
 
 export function SiteFooter() {

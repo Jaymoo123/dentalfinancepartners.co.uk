@@ -25,6 +25,17 @@ faqs:
     answer: "Combined self-employment income and property income are added together. An owner-run domiciliary agency earning trading income plus rental income from a personally held property must add both figures when assessing whether they exceed £50,000."
   - question: "What software do I need for MTD?"
     answer: "HMRC-recognised MTD-compatible software that can store digital records and submit quarterly updates directly to HMRC. HMRC maintains a list of compatible software on gov.uk. Your accountant can advise on the right package for a care operator's records."
+howToSteps:
+  - name: "Determine whether MTD for Income Tax applies to you"
+    text: "MTD for Income Tax applies to sole traders and partners, not limited companies. Add your combined self-employment income from the care business and any property income you hold personally. If the combined figure exceeds £50,000 you are in scope from 6 April 2026; £30,000 from 6 April 2027; £20,000 from 6 April 2028."
+  - name: "Choose HMRC-recognised MTD-compatible software"
+    text: "Select software from HMRC's published list of compatible products that explicitly supports MTD for Income Tax, not only MTD for VAT. The software must be able to store digital records and submit quarterly updates directly to HMRC."
+  - name: "Migrate your records into the software before your start date"
+    text: "Move all income and expense records into the MTD-compatible software before the first quarter of your MTD period begins. Starting with complete digital records avoids a catch-up exercise after the first quarterly update deadline."
+  - name: "Submit quarterly updates each period"
+    text: "Four times per tax year, use the software to submit a summary of income and expenses for each three-month period to HMRC. These replace the annual Self Assessment return for the quarters covered and give HMRC a running picture of your tax position."
+  - name: "File the year-end final declaration"
+    text: "After all four quarterly updates, submit the year-end final declaration through the software. This is the equivalent of your current Self Assessment return and is where claims, adjustments and reliefs are confirmed and the tax position is finalised."
 ---
 <p>Making Tax Digital for Income Tax (MTD-IT) is a change to how sole-trader and partnership care operators report their income to HMRC. It is not a new tax and it does not alter what you owe. What it changes is the mechanics: paper and spreadsheet records give way to MTD-compatible software, and annual Self Assessment gives way to quarterly updates plus a year-end declaration. The first threshold is live from <strong>6 April 2026</strong>.</p>
 

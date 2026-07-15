@@ -31,6 +31,19 @@ faqs:
     answer: "Employer NIC runs at 15% on earnings above the secondary threshold of £5,000 per year (£96 per week, £417 per month) per worker. At the National Living Wage of £12.71 per hour for workers aged 21 and over, a full-time sponsored worker will generate a meaningful per-head NIC cost that must appear in your fee modelling."
   - question: "How long is the Health and Care Worker visa valid?"
     answer: "Up to five years, with the option to extend. The length of stay granted depends on the role and the certificate of sponsorship. For fee-model purposes, the immigration skills charge applies for each year of sponsorship."
+howToSteps:
+  - name: "Obtain a Home Office sponsor licence"
+    text: "Apply for a sponsor licence before assigning any certificates of sponsorship. The fee varies by organisation size; current amounts are on gov.uk. The licence also creates ongoing compliance duties including maintaining worker records and reporting changes to the Home Office within defined timeframes."
+  - name: "Assign a certificate of sponsorship for each worker"
+    text: "For each overseas care worker, assign a government-issued certificate of sponsorship. There is a fee per certificate. The worker uses it to apply for the Health and Care Worker visa. The certificate must describe the role the worker will actually perform under your direction."
+  - name: "Budget the immigration skills charge per worker per year"
+    text: "The immigration skills charge (ISC) is an annual levy on the employer for each sponsored worker for each year of their visa. Verify the current rate on gov.uk at the point of planning. The ISC is the most commonly underestimated sponsorship cost because it recurs annually and must appear in your fee model at full rate for every sponsored worker."
+  - name: "Build all sponsorship costs into the fee model on a per-head basis"
+    text: "Annualise the certificate fee and amortise the licence fee across the cohort and visa years. Add the ISC at full rate per worker per year. Add employer NIC at 15% on earnings above £5,000 per year and base pay at the National Living Wage of £12.71 per hour for workers aged 21 and over. The result is the hourly floor cost before margin."
+  - name: "Model the cash-flow gap before the first invoice is paid"
+    text: "The sponsor licence fee, certificate fee and often the ISC must be paid before the worker arrives. Add a ramp-up period of two to four weeks before the worker generates billable hours, and local authority payment lag of 30 to 60 days on LA-funded placements. Confirm the opening working capital covers the cumulative gap."
+  - name: "Verify employment status and apply NMW to all working time"
+    text: "Sponsored workers on the Health and Care Worker visa are employees without exception. Apply NMW to all working time including inter-call travel for domiciliary workers. Misclassification as self-employed is both an employment tax risk and a licence compliance failure."
 ---
 <p>Since 2022, overseas recruitment has become a structural feature of the UK adult social care workforce rather than a short-term gap-fill. For many care home operators and domiciliary agencies, sponsored workers now make up a significant share of the rota. The problem accountants see repeatedly is that the fees involved in sponsorship are treated as a one-off admin cost, absorbed into overhead and forgotten, rather than as a recurring payroll on-cost that belongs in the fee rate for every sponsored worker.</p>
 
