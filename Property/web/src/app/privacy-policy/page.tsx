@@ -140,7 +140,7 @@ export default function PrivacyPolicyPage() {
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">5. Who we share your information with</h2>
         {partner ? (
           <p>
-            When you submit an enquiry, we share information about you and your enquiry with our specialist partner firm,{" "}
+            When you submit an enquiry, we share information about you and your enquiry with{" "}
             <strong>{partner.name}</strong>, so that they can contact you and provide the advice you asked for. As well as the
             details you give us (your name, contact details and your enquiry), this includes the result of our checks to
             confirm your contact details are valid, a short summary and priority rating we prepare to help route your enquiry,
