@@ -189,6 +189,36 @@ def pull(api_key: str) -> dict:
         })
         print(f"  {label}: inc={inc:,}  dis={dis:,}  net={inc - dis:+,}")
 
+    # --- Cohort survival for SIC 47910 ---
+    # The Advanced Search API DOES support company_status combined with
+    # incorporated_from/to and dissolved_from/to (verified 2026-07-15), so true
+    # cohort survival is derivable without the bulk snapshot: for each formation
+    # year, count companies still active vs dissolved, plus dissolved-by-year
+    # cut-offs for time-resolved survival at 1/2/3 years.
+    print("\nCohort survival for SIC 47910 (formation years 2018-2024)...")
+    cohorts_47910 = []
+    for year in range(2018, 2025):
+        inc_range = f"incorporated_from={year}-01-01&incorporated_to={year}-12-31"
+        active = _ch_get(f"sic_codes=47910&company_status=active&{inc_range}", api_key)
+        dissolved = _ch_get(f"sic_codes=47910&company_status=dissolved&{inc_range}", api_key)
+        dissolved_by = {}
+        for k in (1, 2, 3):
+            cutoff = year + k
+            if cutoff > 2026:
+                break
+            dissolved_by[k] = _ch_get(
+                f"sic_codes=47910&company_status=dissolved&{inc_range}"
+                f"&dissolved_to={cutoff}-12-31",
+                api_key,
+            )
+        cohorts_47910.append({
+            "year": year,
+            "active": active,
+            "dissolved": dissolved,
+            "dissolved_by_years": dissolved_by,
+        })
+        print(f"  {year}: active={active:,}  dissolved={dissolved:,}  by-year={dissolved_by}")
+
     # --- ONS J4MC demand overlay ---
     print("\nFetching ONS J4MC annual series...")
     try:
@@ -207,6 +237,7 @@ def pull(api_key: str) -> dict:
         "active_46900": active_46900,
         "dissolved_46900": dissolved_46900,
         "quarters_47910": quarters_47910,
+        "cohorts_47910": cohorts_47910,
         "ons_j4mc_annual": ons_annual,
     }
 
@@ -374,14 +405,51 @@ def build_json(raw: dict) -> dict:
             "lockdownCohort2021IncorporationsLabel": f"{cohort_2021_inc:,}",
             "note": (
                 "Companies incorporating under SIC 47910 across all four quarters of 2021 "
-                "(the lockdown e-commerce boom year). True cohort survival rates require "
-                "cross-referencing incorporation date against dissolution date at the "
-                "company level, which requires the Companies House bulk snapshot, not the "
-                "Advanced Search API. The quarterly dissolution counts above show aggregate "
-                "SIC 47910 deaths by quarter but cannot be attributed to specific cohorts "
-                "via the API. Cohort survival curves are planned for a future update using "
-                "the bulk snapshot."
+                "(the lockdown e-commerce boom year). See cohortSurvival for the "
+                "formation-year survival series."
             ),
+        },
+        "cohortSurvival47910": {
+            "description": (
+                "Formation-year cohorts for SIC 47910: companies incorporated in each "
+                "calendar year, split by current register status (active vs dissolved), "
+                "with dissolved-by cut-offs 1/2/3 years after the formation year for "
+                "time-resolved survival. Source: CH Advanced Search company_status + "
+                "incorporated_from/to + dissolved_to filters."
+            ),
+            "cohorts": [
+                {
+                    "year": c["year"],
+                    "everRegistered": c["active"] + c["dissolved"],
+                    "stillActive": c["active"],
+                    "dissolved": c["dissolved"],
+                    "stillActivePct": round(
+                        c["active"] / (c["active"] + c["dissolved"]) * 100, 1
+                    ) if (c["active"] + c["dissolved"]) else None,
+                    "survivalByYear": {
+                        str(k): round(
+                            (1 - d / (c["active"] + c["dissolved"])) * 100, 1
+                        )
+                        for k, d in c["dissolved_by_years"].items()
+                        if (c["active"] + c["dissolved"])
+                        # only windows that have fully elapsed (31 Dec of year+k past)
+                        and c["year"] + int(k) < int(PULL_DATE[:4])
+                    },
+                }
+                for c in raw.get("cohorts_47910", [])
+            ],
+            "caveats": [
+                "Denominator is active + dissolved only; companies in liquidation, "
+                "administration or live strike-off proceedings are in neither bucket, so "
+                "ever-registered slightly undercounts and recent-cohort survival is "
+                "slightly overstated.",
+                "survivalByYear[k] = share of the cohort NOT formally dissolved by 31 "
+                "December of formation year + k. Formal dissolution lags trading "
+                "closure, so real attrition runs earlier than these curves show.",
+                "stillActivePct for recent cohorts is high simply because those companies "
+                "have not had time to fail; compare cohorts at the same age (survivalByYear), "
+                "not the raw snapshot.",
+            ],
         },
         "onsJ4mc": (
             {

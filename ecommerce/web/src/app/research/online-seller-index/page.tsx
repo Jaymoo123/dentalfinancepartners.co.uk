@@ -27,6 +27,7 @@ export default function OnlineSellerIndexPage() {
 
   // 2021 lockdown cohort
   const cohort2021 = data.cohortNote.lockdownCohort2021IncorporationsLabel;
+  const cohorts = data.cohortSurvival47910.cohorts;
 
   // ONS J4MC latest annual figure
   const onsAnnual = data.onsJ4mc.annual ?? [];
@@ -246,8 +247,88 @@ export default function OnlineSellerIndexPage() {
         </div>
       </section>
 
-      {/* ONS demand overlay */}
+      {/* Cohort survival */}
       <section className="bg-neutral-50 border-t border-b border-neutral-200 py-12 sm:py-16">
+        <div className={siteContainerLg}>
+          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
+            Formation-year cohort survival: SIC 47910
+          </h2>
+          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+            Companies incorporated in each calendar year, tracked to their current register
+            status. Survival at 1, 2 and 3 years = the share of that cohort not formally
+            dissolved by 31 December of the formation year plus 1, 2 or 3. Source: Companies
+            House Advanced Search API (company_status, incorporated_from/to and dissolved_to
+            filters). Retrieved {pullDate}.
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-neutral-100">
+                  <th className="text-left px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                    Formed in
+                  </th>
+                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                    Ever registered
+                  </th>
+                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                    Still active
+                  </th>
+                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                    Still active (%)
+                  </th>
+                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                    Survival at 1yr
+                  </th>
+                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                    at 2yr
+                  </th>
+                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                    at 3yr
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {cohorts.map((c, i) => (
+                  <tr key={c.year} className={i % 2 === 0 ? "bg-white" : "bg-neutral-50"}>
+                    <td className="px-3 py-2 font-mono text-neutral-800 border border-neutral-200">
+                      {c.year}
+                    </td>
+                    <td className="px-3 py-2 text-right font-mono text-neutral-800 border border-neutral-200">
+                      {c.everRegistered.toLocaleString("en-GB")}
+                    </td>
+                    <td className="px-3 py-2 text-right font-mono text-neutral-800 border border-neutral-200">
+                      {c.stillActive.toLocaleString("en-GB")}
+                    </td>
+                    <td className="px-3 py-2 text-right font-mono font-semibold text-[#1a3a5c] border border-neutral-200">
+                      {c.stillActivePct}%
+                    </td>
+                    {(["1", "2", "3"] as const).map((k) => (
+                      <td
+                        key={k}
+                        className="px-3 py-2 text-right font-mono text-neutral-800 border border-neutral-200"
+                      >
+                        {(c.survivalByYear as Record<string, number>)[k] !== undefined
+                          ? `${(c.survivalByYear as Record<string, number>)[k]}%`
+                          : "·"}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-3 text-xs text-neutral-400 max-w-2xl">
+            The denominator is active plus dissolved companies only; companies in liquidation,
+            administration or live strike-off proceedings sit in neither bucket, so recent-cohort
+            figures are slightly overstated. Formal dissolution also lags actual trading closure,
+            typically by months. Compare cohorts at the same age (the survival columns), not on
+            the raw still-active percentage, which is inflated for young cohorts.
+          </p>
+        </div>
+      </section>
+
+      {/* ONS demand overlay */}
+      <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
             ONS demand-side overlay: internet sales as a proportion of all retail
