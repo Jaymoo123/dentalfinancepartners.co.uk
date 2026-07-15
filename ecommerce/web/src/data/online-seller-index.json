@@ -1,0 +1,307 @@
+{
+  "meta": {
+    "title": "UK Online Seller Business Index",
+    "pullDate": "2026-07-15",
+    "lastUpdated": "2026-07-15",
+    "nextRefresh": "Q4 2026 (quarterly cadence)",
+    "licence": "Open Government Licence v3.0. Derived from Companies House public register and ONS Retail Sales Index. Reuse with attribution.",
+    "citeAs": "UK Online Seller Business Index, derived from Companies House Advanced Search API (SIC 47910) and ONS J4MC/DRSI series. Published under OGL v3.0. Data pulled 2026-07-15.",
+    "methodology": "Active and dissolved company counts: live hit counts from the CH Advanced Search API filtered by sic_codes and company_status (active / dissolved). Quarterly incorporations: CH incorporated_from / incorporated_to date filters with no company_status restriction (counts all companies ever incorporated in that quarter). Quarterly dissolutions: CH dissolved_from / dissolved_to date filters. SIC codes are self-reported at incorporation and may be updated later; some miscoding is expected. ONS demand overlay: series J4MC (internet retail as proportion of all retail sales, seasonally adjusted) from the ONS Retail Sales Index, fetched via the ONS generator CSV endpoint.",
+    "caveats": [
+      "Active count is a Companies House register snapshot, NOT a survival rate. It is currently-active-on-register as at the pull date and mixes companies of all ages.",
+      "SIC 47910 captures some legacy catalogue and mail-order companies that pre-date internet retail. Flows (quarterly births and deaths) are more reliable than absolute counts.",
+      "Marketplace-only sole traders (the Vinted/eBay side-hustle layer) never appear in Companies House. This index measures the incorporated layer only.",
+      "Formal dissolution typically lags actual trading closure by weeks to months for voluntary strikes-off.",
+      "The secondary SIC series (47990, 46900) are tracked and reported separately and are never blended silently into the SIC 47910 headline.",
+      "2020-Q2 dissolutions are not shown as a series start point because Companies House suspended compulsory strike-off under the Corporate Insolvency and Governance Act 2020 (April to September 2020), making that period anomalously low."
+    ],
+    "sources": {
+      "companies_house": {
+        "name": "Companies House Advanced Search API",
+        "url": "https://developer.company-information.service.gov.uk/api/docs/",
+        "licence": "Open Government Licence v3.0",
+        "publisher": "Companies House",
+        "pullDate": "2026-07-15"
+      },
+      "ons_j4mc": {
+        "name": "ONS Retail Sales Index, series J4MC (internet retail proportion)",
+        "url": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/timeseries/j4mc/drsi",
+        "licence": "Open Government Licence v3.0",
+        "publisher": "Office for National Statistics",
+        "pullDate": "2026-07-15"
+      }
+    }
+  },
+  "sic47910": {
+    "label": "SIC 47910 -- Retail sale via mail order houses or via internet",
+    "note": "Primary series. Headline figures for the UK Online Seller Business Index.",
+    "activeCompanies": {
+      "count": 214751,
+      "label": "214,751",
+      "asOf": "2026-07-15",
+      "caveat": "Currently-active-on-register snapshot. NOT a survival rate."
+    },
+    "dissolvedCompanies": {
+      "count": 319823,
+      "label": "319,823",
+      "asOf": "2026-07-15",
+      "caveat": "All-time cumulative dissolved count, not a rate."
+    },
+    "totalEverRegistered": {
+      "count": 534574,
+      "label": "534,574",
+      "note": "Active + dissolved. Excludes companies in administration or voluntary strike-off not yet formally dissolved."
+    },
+    "snapshotActiveRate": {
+      "pct": 40.2,
+      "label": "40.2%",
+      "caveat": "Snapshot active rate: active / (active + dissolved) as at pull date. This is NOT a cohort survival rate. It mixes companies of all ages and is inflated by recently formed companies that have not yet had time to fail or dissolve."
+    }
+  },
+  "secondarySics": [
+    {
+      "sicCode": "47990",
+      "label": "Other retail not in stores",
+      "active": 54562,
+      "dissolved": 117942,
+      "activeLabel": "54,562",
+      "dissolvedLabel": "117,942",
+      "note": "Labelled secondary series. Not blended into SIC 47910 headline."
+    },
+    {
+      "sicCode": "46900",
+      "label": "Non-specialised wholesale (common FBA-wholesaler filing code)",
+      "active": 46672,
+      "dissolved": 63323,
+      "activeLabel": "46,672",
+      "dissolvedLabel": "63,323",
+      "note": "Labelled secondary series. Not blended into SIC 47910 headline."
+    }
+  ],
+  "quarterlyChurn47910": {
+    "description": "Quarterly incorporations and dissolutions for SIC 47910, 2021-Q1 to 2026-Q2. Source: CH Advanced Search incorporated_from/to and dissolved_from/to filters. UK-wide.",
+    "quarters": [
+      {
+        "quarter": "2021-Q1",
+        "incorporations": 15475,
+        "dissolutions": 5427,
+        "net": 10048
+      },
+      {
+        "quarter": "2021-Q2",
+        "incorporations": 14301,
+        "dissolutions": 3875,
+        "net": 10426
+      },
+      {
+        "quarter": "2021-Q3",
+        "incorporations": 10776,
+        "dissolutions": 6124,
+        "net": 4652
+      },
+      {
+        "quarter": "2021-Q4",
+        "incorporations": 10216,
+        "dissolutions": 6530,
+        "net": 3686
+      },
+      {
+        "quarter": "2022-Q1",
+        "incorporations": 12152,
+        "dissolutions": 7670,
+        "net": 4482
+      },
+      {
+        "quarter": "2022-Q2",
+        "incorporations": 12903,
+        "dissolutions": 8028,
+        "net": 4875
+      },
+      {
+        "quarter": "2022-Q3",
+        "incorporations": 14198,
+        "dissolutions": 8636,
+        "net": 5562
+      },
+      {
+        "quarter": "2022-Q4",
+        "incorporations": 14430,
+        "dissolutions": 8212,
+        "net": 6218
+      },
+      {
+        "quarter": "2023-Q1",
+        "incorporations": 18091,
+        "dissolutions": 9681,
+        "net": 8410
+      },
+      {
+        "quarter": "2023-Q2",
+        "incorporations": 19378,
+        "dissolutions": 10955,
+        "net": 8423
+      },
+      {
+        "quarter": "2023-Q3",
+        "incorporations": 22767,
+        "dissolutions": 10940,
+        "net": 11827
+      },
+      {
+        "quarter": "2023-Q4",
+        "incorporations": 23880,
+        "dissolutions": 10972,
+        "net": 12908
+      },
+      {
+        "quarter": "2024-Q1",
+        "incorporations": 22883,
+        "dissolutions": 12959,
+        "net": 9924
+      },
+      {
+        "quarter": "2024-Q2",
+        "incorporations": 19937,
+        "dissolutions": 12955,
+        "net": 6982
+      },
+      {
+        "quarter": "2024-Q3",
+        "incorporations": 16599,
+        "dissolutions": 14963,
+        "net": 1636
+      },
+      {
+        "quarter": "2024-Q4",
+        "incorporations": 15154,
+        "dissolutions": 20238,
+        "net": -5084
+      },
+      {
+        "quarter": "2025-Q1",
+        "incorporations": 17762,
+        "dissolutions": 21681,
+        "net": -3919
+      },
+      {
+        "quarter": "2025-Q2",
+        "incorporations": 20162,
+        "dissolutions": 19677,
+        "net": 485
+      },
+      {
+        "quarter": "2025-Q3",
+        "incorporations": 22346,
+        "dissolutions": 21780,
+        "net": 566
+      },
+      {
+        "quarter": "2025-Q4",
+        "incorporations": 17778,
+        "dissolutions": 15965,
+        "net": 1813
+      },
+      {
+        "quarter": "2026-Q1",
+        "incorporations": 17505,
+        "dissolutions": 17441,
+        "net": 64
+      },
+      {
+        "quarter": "2026-Q2",
+        "incorporations": 17683,
+        "dissolutions": 12585,
+        "net": 5098
+      }
+    ],
+    "caveat": "Incorporations count all companies ever incorporated in that quarter regardless of current status. Dissolutions count companies whose dissolution date falls within that quarter."
+  },
+  "cohortNote": {
+    "lockdownCohort2021Incorporations": 50768,
+    "lockdownCohort2021IncorporationsLabel": "50,768",
+    "note": "Companies incorporating under SIC 47910 across all four quarters of 2021 (the lockdown e-commerce boom year). True cohort survival rates require cross-referencing incorporation date against dissolution date at the company level, which requires the Companies House bulk snapshot, not the Advanced Search API. The quarterly dissolution counts above show aggregate SIC 47910 deaths by quarter but cannot be attributed to specific cohorts via the API. Cohort survival curves are planned for a future update using the bulk snapshot."
+  },
+  "onsJ4mc": {
+    "description": "Internet retail as a proportion of all retail sales (%), seasonally adjusted. ONS series J4MC, dataset DRSI (Retail Sales Index). Annual figures. Used as a demand-side external anchor against SIC 47910 company-birth rates.",
+    "sourceUrl": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/timeseries/j4mc/drsi",
+    "unit": "%",
+    "annual": [
+      {
+        "year": "2007",
+        "pct": 3.4
+      },
+      {
+        "year": "2008",
+        "pct": 4.9
+      },
+      {
+        "year": "2009",
+        "pct": 6.2
+      },
+      {
+        "year": "2010",
+        "pct": 7.3
+      },
+      {
+        "year": "2011",
+        "pct": 8.3
+      },
+      {
+        "year": "2012",
+        "pct": 9.3
+      },
+      {
+        "year": "2013",
+        "pct": 10.4
+      },
+      {
+        "year": "2014",
+        "pct": 11.3
+      },
+      {
+        "year": "2015",
+        "pct": 12.5
+      },
+      {
+        "year": "2016",
+        "pct": 14.7
+      },
+      {
+        "year": "2017",
+        "pct": 16.3
+      },
+      {
+        "year": "2018",
+        "pct": 18.0
+      },
+      {
+        "year": "2019",
+        "pct": 19.2
+      },
+      {
+        "year": "2020",
+        "pct": 28.1
+      },
+      {
+        "year": "2021",
+        "pct": 30.7
+      },
+      {
+        "year": "2022",
+        "pct": 26.6
+      },
+      {
+        "year": "2023",
+        "pct": 26.7
+      },
+      {
+        "year": "2024",
+        "pct": 27.1
+      },
+      {
+        "year": "2025",
+        "pct": 27.4
+      }
+    ]
+  }
+}

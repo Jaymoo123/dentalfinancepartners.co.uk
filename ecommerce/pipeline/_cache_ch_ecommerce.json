@@ -1,0 +1,220 @@
+{
+  "active_47910": 214751,
+  "dissolved_47910": 319823,
+  "active_47990": 54562,
+  "dissolved_47990": 117942,
+  "active_46900": 46672,
+  "dissolved_46900": 63323,
+  "quarters_47910": [
+    {
+      "quarter": "2021-Q1",
+      "incorporations": 15475,
+      "dissolutions": 5427,
+      "net": 10048
+    },
+    {
+      "quarter": "2021-Q2",
+      "incorporations": 14301,
+      "dissolutions": 3875,
+      "net": 10426
+    },
+    {
+      "quarter": "2021-Q3",
+      "incorporations": 10776,
+      "dissolutions": 6124,
+      "net": 4652
+    },
+    {
+      "quarter": "2021-Q4",
+      "incorporations": 10216,
+      "dissolutions": 6530,
+      "net": 3686
+    },
+    {
+      "quarter": "2022-Q1",
+      "incorporations": 12152,
+      "dissolutions": 7670,
+      "net": 4482
+    },
+    {
+      "quarter": "2022-Q2",
+      "incorporations": 12903,
+      "dissolutions": 8028,
+      "net": 4875
+    },
+    {
+      "quarter": "2022-Q3",
+      "incorporations": 14198,
+      "dissolutions": 8636,
+      "net": 5562
+    },
+    {
+      "quarter": "2022-Q4",
+      "incorporations": 14430,
+      "dissolutions": 8212,
+      "net": 6218
+    },
+    {
+      "quarter": "2023-Q1",
+      "incorporations": 18091,
+      "dissolutions": 9681,
+      "net": 8410
+    },
+    {
+      "quarter": "2023-Q2",
+      "incorporations": 19378,
+      "dissolutions": 10955,
+      "net": 8423
+    },
+    {
+      "quarter": "2023-Q3",
+      "incorporations": 22767,
+      "dissolutions": 10940,
+      "net": 11827
+    },
+    {
+      "quarter": "2023-Q4",
+      "incorporations": 23880,
+      "dissolutions": 10972,
+      "net": 12908
+    },
+    {
+      "quarter": "2024-Q1",
+      "incorporations": 22883,
+      "dissolutions": 12959,
+      "net": 9924
+    },
+    {
+      "quarter": "2024-Q2",
+      "incorporations": 19937,
+      "dissolutions": 12955,
+      "net": 6982
+    },
+    {
+      "quarter": "2024-Q3",
+      "incorporations": 16599,
+      "dissolutions": 14963,
+      "net": 1636
+    },
+    {
+      "quarter": "2024-Q4",
+      "incorporations": 15154,
+      "dissolutions": 20238,
+      "net": -5084
+    },
+    {
+      "quarter": "2025-Q1",
+      "incorporations": 17762,
+      "dissolutions": 21681,
+      "net": -3919
+    },
+    {
+      "quarter": "2025-Q2",
+      "incorporations": 20162,
+      "dissolutions": 19677,
+      "net": 485
+    },
+    {
+      "quarter": "2025-Q3",
+      "incorporations": 22346,
+      "dissolutions": 21780,
+      "net": 566
+    },
+    {
+      "quarter": "2025-Q4",
+      "incorporations": 17778,
+      "dissolutions": 15965,
+      "net": 1813
+    },
+    {
+      "quarter": "2026-Q1",
+      "incorporations": 17505,
+      "dissolutions": 17441,
+      "net": 64
+    },
+    {
+      "quarter": "2026-Q2",
+      "incorporations": 17683,
+      "dissolutions": 12585,
+      "net": 5098
+    }
+  ],
+  "ons_j4mc_annual": [
+    {
+      "year": "2007",
+      "pct": 3.4
+    },
+    {
+      "year": "2008",
+      "pct": 4.9
+    },
+    {
+      "year": "2009",
+      "pct": 6.2
+    },
+    {
+      "year": "2010",
+      "pct": 7.3
+    },
+    {
+      "year": "2011",
+      "pct": 8.3
+    },
+    {
+      "year": "2012",
+      "pct": 9.3
+    },
+    {
+      "year": "2013",
+      "pct": 10.4
+    },
+    {
+      "year": "2014",
+      "pct": 11.3
+    },
+    {
+      "year": "2015",
+      "pct": 12.5
+    },
+    {
+      "year": "2016",
+      "pct": 14.7
+    },
+    {
+      "year": "2017",
+      "pct": 16.3
+    },
+    {
+      "year": "2018",
+      "pct": 18.0
+    },
+    {
+      "year": "2019",
+      "pct": 19.2
+    },
+    {
+      "year": "2020",
+      "pct": 28.1
+    },
+    {
+      "year": "2021",
+      "pct": 30.7
+    },
+    {
+      "year": "2022",
+      "pct": 26.6
+    },
+    {
+      "year": "2023",
+      "pct": 26.7
+    },
+    {
+      "year": "2024",
+      "pct": 27.1
+    },
+    {
+      "year": "2025",
+      "pct": 27.4
+    }
+  ]
+}
