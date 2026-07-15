@@ -7,7 +7,59 @@
 > (methodology), [EXPANSION_HANDOFF_PARITY.md](EXPANSION_HANDOFF_PARITY.md) (parity checklist).
 > Locked decisions live in the `estate-expansion-program` memory.
 
-## Where we are (2026-07-15, ecommerce session close — BUILD PROGRAM COMPLETE)
+## Where we are (2026-07-15 PM, hardening session close — EVERYTHING DONE EXCEPT BRAND + DOMAIN)
+
+**The full-audit hardening plan (`~/.claude/plans/i-think-make-a-gentle-stream.md`) was EXECUTED
+IN FULL** this session (commits 9f08836c..fa031756 on `expansion/phase-0`, one commit per site +
+one shared). All 7 Tier-1 sites are now G1-gated ONLY:
+
+- **Lead capture end-to-end**: `/api/leads/submit` on all 7 (shared factory + niche-loader source
+  key); `.env.local.example` all 7; **tranche-2 + tranche-3 Supabase migrations APPLIED to prod**
+  (the generator-emitted t2 pair had dropped sibling keys a THIRD time — hand-fixed to the 15-site
+  union first; live constraints re-read and verified: 15 site keys in both checks + `test`; rows
+  `active=false`); blog_topics seeded crypto 1,418 / pharmacies 1,227 / ecommerce 2,329; all 7
+  source keys smoke-tested (insert+ROLLBACK).
+- **Legal/crawl parity (Property-grade)**: privacy-policy / cookie-policy / terms on all 7 (only
+  processors actually used are listed per site); robots.ts 40-bot AI allowlist; static
+  `public/llms.txt` with ledger-sourced 2026/27 figures; not-found/error pages; footer legal links
+  (hospitality, crypto, charities, pharmacies had NO footer component — created); sitemap entries;
+  embed backlinks verified present.
+- **AI/GEO parity-or-greater**: HowTo schema via `howToSteps` frontmatter on procedural posts;
+  WebApplication schema on every calculator; **Dataset schema on all research indexes (exceeds
+  Property)**; Article `dateModified`; Organization enrichment (legalName Ashfield Trading Ltd,
+  `knowsAbout`, `sameAs` = Companies House 16358723 only); BLUF/FAQ audits patched; llms figures
+  verified current.
+- **Wave-2 content: 49 assets** (Opus briefs in `briefs/<site>/wave2/` + Sonnet workers + 2-track
+  Opus QA, all findings fixed manager-direct): care 6 blogs + **CQC fee calculator** (official
+  scheme pinned 2026-07-15 — NOTE: cqc.org.uk WAF-403s plain fetchers, use a browser-UA curl);
+  ecommerce 4 blogs + **side-hustle tax checker** (24/24 golden tests); startups-tech 9 (EMI pillar
+  family); charities 2 guides + 7 blogs; crypto 7; hospitality 5 + a REAL restaurant-count section
+  on the openings/closures index (CH SIC 56101/56102/56103, 191,895 active,
+  `scripts/_hospitality_restaurant_count_pull.py`); pharmacies 7.
+- **QA lessons banked**: workers STILL leak HP-code artefacts (incl. as visible anchor text) and
+  wrong `/blog/<category>/<slug>` category segments — the category segment must match the TARGET
+  post's frontmatter category, and calculator hrefs must match registry slugs (`-calculator`
+  suffixes). One genuine factual error caught (locum Class 2 NIC stated as still payable), one
+  wrong date (cETN Oct 2024 vs 8 Oct 2025), one YAML corruption (howToSteps inserted mid-faqs
+  list in machine-games-duty, silently dropping 2 FAQs).
+- **Full admin analytics suite** (leads/trends/login/visitor) ported from charities to all 6
+  siblings; dashboards' previously dead links now resolve.
+- **predeploy_gate change**: sanctioned-fence term allowlist added (ecommerce → hollowaydavies
+  terms, per the DEDUP_AUDIT FENCE ruling); startups-tech homepage was naming its sibling brand
+  ("Contractor Tax Accountants") in scope copy — rewritten out. Gate now PASSES all 7.
+- **Final gates all green**: build + vitest GREEN ×7, `rates_ledger_lint` CLEAN ×7,
+  `dated_reference_sweep` hits all acceptable-class, em-dash/HP/meta/brand scans clean.
+
+**Open items for the NEXT session:**
+1. **Mark wave-2 head keywords `used=true` in blog_topics BEFORE the next blog-generator run**
+   (this session's broad prod UPDATE was permission-denied and ILIKE matching was too fuzzy —
+   do it per-row with explicit ids; the 4-layer dedup protection covers the interim).
+2. **G1 deploy support per site** (unchanged, see next section): brand+domain swap, Vercel
+   spin-up, GSC/Bing, apply-time re-checks, **add each site to the Property /api/leads/notify
+   allowlist at its tranche deploy** (sole sanctioned live-site touch).
+3. Care deploy additionally held ~2026-08-03; ecommerce migrate-vs-fence at ITS G1 with fresh GSC.
+
+## Where we were (2026-07-15, ecommerce session close — BUILD PROGRAM COMPLETE)
 
 **ALL SEVEN buildable Tier-1 sites are BUILT** (charities, hospitality, crypto, pharmacies,
 startups-tech, care, ecommerce); manufacturing stays PARKED. Ecommerce (site 7, LAST) closed
