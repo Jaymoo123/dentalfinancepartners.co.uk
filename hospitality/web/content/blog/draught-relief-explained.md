@@ -167,17 +167,17 @@ faqs:
 
 <h2>Duty is not VAT: keep the two separate</h2>
 
-<p>Draught relief is an <strong>alcohol duty</strong> relief. It has no effect on VAT. All supplies of alcoholic drinks are standard-rated for VAT at 20%, regardless of the container size, ABV or whether the product is draught or packaged (HP 3).</p>
+<p>Draught relief is an <strong>alcohol duty</strong> relief. It has no effect on VAT. All supplies of alcoholic drinks are standard-rated for VAT at 20%, regardless of the container size, ABV or whether the product is draught or packaged.</p>
 
 <p>Duty and VAT are two separate tax obligations, calculated differently and reported to HMRC through different processes. Duty is payable by the producer or registered duty-suspense operator before the product leaves bond; by the time you buy stock from an approved wholesaler, duty is already included in the price you pay. VAT is your obligation at the point of sale to the end customer.</p>
 
-<p>If you are on the VAT Flat Rate Scheme, note that the pub sector rate is 6.5% (HP 5), but this is the FRS percentage applied to your VAT-inclusive turnover, not a change to the VAT rate on individual drinks. For more on VAT for licensed premises, see <a href="/services/hospitality-vat">the hospitality VAT service page</a>.</p>
+<p>If you are on the VAT Flat Rate Scheme, note that the pub sector rate is 6.5%, but this is the FRS percentage applied to your VAT-inclusive turnover, not a change to the VAT rate on individual drinks. For more on VAT for licensed premises, see <a href="/services/hospitality-vat">the hospitality VAT service page</a>.</p>
 
 <p>On the duty side, buying stock from an approved wholesaler also carries AWRS (Alcohol Wholesaler Registration Scheme) due-diligence obligations. Before purchasing, check that your supplier holds a valid HMRC approval and keep records of the check. See the <a href="/blog/licensed-trade/awrs-checks">AWRS checks guide</a> for more detail.</p>
 
 <h2>Getting your licensed-trade numbers right</h2>
 
-<p>Applying the correct duty rate in your pricing model is one piece of getting your numbers right as a licensed operator. The others include VAT treatment across your product mix, tronc and payroll compliance if you run service charges, and understanding your current-year business rates position now that <a href="https://www.gov.uk/business-rates-relief/retail-discount">Retail, Hospitality and Leisure relief has ended for new claims from 1 April 2026</a> (HP 19).</p>
+<p>Applying the correct duty rate in your pricing model is one piece of getting your numbers right as a licensed operator. The others include VAT treatment across your product mix, tronc and payroll compliance if you run service charges, and understanding your current-year business rates position now that <a href="https://www.gov.uk/business-rates-relief/retail-discount">Retail, Hospitality and Leisure relief has ended for new claims from 1 April 2026</a>.</p>
 
 <p>A common pattern is to use a general-purpose spreadsheet that does not distinguish draught from packaged duty or does not update when rates change at Budget. Modelling with stale rates creates invisible margin errors that only surface when cash does not match the projections.</p>
 

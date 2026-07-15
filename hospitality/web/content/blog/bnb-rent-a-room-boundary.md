@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "Hospitality VAT"
 metaTitle: "B&B vs Rent-a-Room: The Boundary Explained for Operators"
-metaDescription: "Rent-a-Room gives B&B owners up to £7,500 tax-free, but only if you live there. Full guest houses are a trade. Here is how to tell which side of the line you are on."
+metaDescription: "Rent-a-Room gives up to £7,500 tax-free, but only if you live there. Full guest houses are a trade. How to tell which side of the line you are on."
 h1: "B&B and Guest House vs the Rent-a-Room Scheme: Which Applies to You?"
 summary: "Rent-a-Room applies only where the property is genuinely your home. A full guest house run as a business is a trade, and the £7,500 allowance does not apply."
 keyTakeaways:

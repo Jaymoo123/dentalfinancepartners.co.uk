@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { buildOgImageUrl } from "@/lib/schema";
+import { buildOgImageUrl, buildArticleJsonLd, buildFaqJsonLd, buildHowToJsonLd } from "@/lib/schema";
 import {
   getAllPosts,
   getPostByCategoryAndSlug,
@@ -57,8 +57,34 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPostByCategoryAndSlug(category, slug);
   if (!post) notFound();
 
+  const postUrl = `/blog/${category}/${post.slug}`;
+
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: buildArticleJsonLd({
+            title: post.metaTitle,
+            description: post.metaDescription,
+            url: postUrl,
+            datePublished: post.date,
+            dateModified: post.updatedDate ?? post.date,
+          }),
+        }}
+      />
+      {post.faqs && post.faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(post.faqs) }}
+        />
+      )}
+      {post.howToSteps && post.howToSteps.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: buildHowToJsonLd(post) }}
+        />
+      )}
       {post.schema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: post.schema }} />
       )}

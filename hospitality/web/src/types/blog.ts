@@ -43,6 +43,7 @@ export type BlogFrontmatter = {
   schema?: string;
   canonical?: string;
   faqs?: BlogFaq[];
+  howToSteps?: Array<{ name: string; text: string }>;
 };
 
 export type BlogPost = BlogFrontmatter & {

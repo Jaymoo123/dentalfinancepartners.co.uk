@@ -29,6 +29,17 @@ faqs:
     answer: "Buying from an unapproved wholesaler breaches AWRS due-diligence requirements and can result in penalties and risk of stock seizure. HMRC does not publish a fixed penalty table; the consequences depend on the circumstances of the breach."
   - question: "Does AWRS apply to buying wine for a restaurant?"
     answer: "Yes. AWRS applies to any business buying alcohol for resale in the UK, including wine, beer and spirits purchased by restaurants and cafes for their wine list or licensed bar."
+howToSteps:
+  - name: "Request the wholesaler's AWRS Unique Reference Number"
+    text: "Before placing any order, ask the wholesaler for their HMRC AWRS Unique Reference Number (URN). Any approved wholesaler should provide it immediately. Reluctance to supply a URN is a warning sign."
+  - name: "Verify the URN using HMRC's online AWRS lookup"
+    text: "Use HMRC's online AWRS service (linked from gov.uk/guidance/the-alcohol-wholesaler-registration-scheme-awrs) to search for the wholesaler by name or URN. Confirm the name matches and the status shows as approved."
+  - name: "Record the check result before the order goes in"
+    text: "Note the wholesaler's name, URN, the date of the check, and the result. File this record with the purchase order or first invoice from that supplier. The written record is the due-diligence evidence."
+  - name: "Set a schedule for re-checks"
+    text: "Tie re-checks to your ordering cadence with each supplier. Status can change; an approved wholesaler can have approval revoked. Do not rely on a check made months earlier."
+  - name: "File AWRS records with your purchase ledger"
+    text: "Keep URN verification records alongside the purchase invoices for each alcohol order so your bookkeeper or accountant can evidence compliance during an HMRC review."
 ---
 <p>If your business buys alcohol from a UK wholesaler and sells it on to customers, you are legally required to check that the wholesaler is approved under the Alcohol Wholesaler Registration Scheme (AWRS) before purchase. That duty sits with the buyer, not just the seller. Failing to check, or buying from an unapproved source, breaches AWRS due-diligence requirements and puts the business at risk of penalties and stock action by HMRC.</p>
 

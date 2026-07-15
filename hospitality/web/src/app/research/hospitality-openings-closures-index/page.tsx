@@ -44,6 +44,7 @@ const datasetSchema = {
     "Net openings per quarter per sub-trade",
     "Rolling 4-quarter average net openings",
     "Live pub and bar company count",
+    "Live restaurant and cafe company count",
   ],
 };
 
@@ -125,6 +126,18 @@ export default function HospitalityIndexPage() {
               incorporated-business count: sole-trader and partnership pubs are not captured
               in Companies House data, so the true pub count across all business types is higher.
               The figure updates each quarter as new incorporations and dissolutions are filed.
+            </p>
+          </Section>
+
+          <Section id="restaurants-count" title="How many restaurants are in the UK?">
+            <p>
+              As at {headline.restaurant_count_proxy.as_of}, the Companies House register shows{" "}
+              <strong>{fmt(headline.restaurant_count_proxy.count)}</strong> active companies with
+              SIC code 56101 (licensed restaurants), 56102 (unlicensed restaurants and cafes) or
+              56103 (takeaway food shops and mobile food stands). This is the incorporated-business
+              count: sole-trader and partnership restaurants and cafes are not captured in Companies
+              House data, so the true count across all business types is higher. The figure updates
+              each quarter as new incorporations and dissolutions are filed.
             </p>
           </Section>
 

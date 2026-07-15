@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "Business Rates"
 metaTitle: "Small Business Rates Relief for Cafes: Thresholds and How to Claim"
-metaDescription: "SBRR gives cafes and small operators 100% business rates relief up to £12,000 rateable value, tapering to zero at £15,000. Many qualifying businesses never claim. England."
+metaDescription: "Small Business Rates Relief gives cafes 100% off up to £12,000 rateable value, tapering to zero at £15,000. Many who qualify never claim. England."
 h1: "Small Business Rates Relief for Cafes and Small Operators: Do You Qualify, and How Much?"
 summary: "Many cafes and small hospitality businesses qualify for 100% relief on their business rates bill but never claim it. Here is what the thresholds are, how the taper works, and what to do."
 keyTakeaways:
@@ -27,6 +27,17 @@ faqs:
     answer: "They are two entirely separate schemes. SBRR is based on rateable value and is ongoing. Retail, Hospitality and Leisure relief was a discretionary annual discount that has ended for new claims from 1 April 2026. Do not confuse them."
   - question: "What happens if my rateable value goes over £15,000?"
     answer: "SBRR falls to zero. Your full rates bill applies at the prevailing multiplier. There is no gradual phase-out above £15,000, so a small increase in rateable value at or near the cliff can materially increase your bill."
+howToSteps:
+  - name: "Look up your rateable value"
+    text: "Use the Find a business rates valuation service at gov.uk/find-business-rates to find your current rateable value. Search by your premises address. The result shows your rateable value and the date it was last assessed."
+  - name: "Check the one-property condition"
+    text: "Confirm the property is the only business premises your operation uses. If you have a second premises, check whether the limited multiple-property exception applies before claiming."
+  - name: "Apply to your local council"
+    text: "Contact your local council's business rates team to apply for Small Business Rate Relief. Most councils have an online form; some require a written application. SBRR is not applied automatically."
+  - name: "Provide your property address and confirm occupancy"
+    text: "Supply your premises address and confirm the number of business properties you occupy. The council uses this to assess your eligibility and apply the correct relief percentage."
+  - name: "Notify the council if your circumstances change"
+    text: "If you take on a second property or your rateable value changes, inform the council promptly. Continuing to claim relief you are no longer entitled to can result in a back-dated rates bill."
 ---
 <p>Many cafes, coffee shops and small takeaways are paying business rates they do not legally owe. Small Business Rate Relief (SBRR) can eliminate the bill entirely for qualifying premises, yet large numbers of eligible operators never apply for it. This guide explains the thresholds, the taper, the one-property condition, and what to do next.</p>
 

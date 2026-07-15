@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "Licensed Trade"
 metaTitle: "Machine Games Duty for Pubs: Register Before Play"
-metaDescription: "Pubs and clubs with cash-prize gaming machines must register for Machine Games Duty before those machines go live. Who is liable, how returns work, and the prizes-below-cost exemption."
+metaDescription: "Cash-prize gaming machines need Machine Games Duty registration before play. Who is liable, how returns work, and the prizes-below-cost exemption."
 h1: "Machine Games Duty for Pubs: What Every Licence Holder Must Know"
 summary: "Any pub or licensed club whose gaming machines pay cash prizes must register for Machine Games Duty before those machines are made available to play, and the duty falls on the operator holding the qualifying licence."
 keyTakeaways:
@@ -31,6 +31,17 @@ faqs:
     answer: "HMRC sets the return frequency. Current return periods are published at gov.uk/guidance/machine-games-duty. Treat MGD returns as a standing diary commitment alongside VAT and payroll filings."
   - question: "Does a fruit machine with only token prizes count?"
     answer: "If the tokens have no cash value and cannot be exchanged for cash, the machine may fall within the prizes-below-cost exemption. However, the exemption test is narrow; if any cash route exists, MGD registration is likely required. Seek specific advice before assuming exemption applies."
+howToSteps:
+  - name: "Confirm your qualifying licence"
+    text: "Check that you hold the qualifying gambling or alcohol licence for the premises. Machine Games Duty falls on the licence holder, not the machine supplier or engineer."
+  - name: "Check whether the machines require registration"
+    text: "Confirm that the gaming machines offer cash prizes. Machines where the maximum prize is worth less than the cost of a single play are exempt from MGD registration."
+  - name: "Register with HMRC before machines go live"
+    text: "Complete MGD registration through HMRC's online services using your business details and qualifying licence reference. Registration must be completed before the machines are made available to play."
+  - name: "Set up machine-level takings records"
+    text: "Arrange with your machine supplier or till system to receive gross takings data (cash in and cash out) for each machine for every return period."
+  - name: "File MGD returns and pay duty on schedule"
+    text: "Submit MGD returns to HMRC at the frequency they require, reporting net takings and paying duty at the applicable rate. Treat this as a standing diary commitment alongside VAT and payroll filings."
 ---
 <article>
 

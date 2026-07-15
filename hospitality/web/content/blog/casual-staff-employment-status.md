@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "Payroll and Employment"
 metaTitle: "Casual Staff Employment Status: NMW & Holiday Pay Guide"
-metaDescription: "Are your casual and zero-hours staff employees? NMW rates from April 2026, holiday pay for irregular hours, and the HMRC audit risk explained for hospitality operators."
+metaDescription: "Casual and zero-hours staff are almost always employees for PAYE. NMW rates from April 2026, holiday pay for irregular hours, and the HMRC audit risk."
 h1: "Casual and Zero-Hours Staff: Employment Status, Minimum Wage and Holiday Pay"
 summary: "Casual and zero-hours workers are almost always employees for PAYE, carrying full NMW and holiday-pay obligations, and misclassifying them is one of the most common HMRC audit triggers in hospitality."
 keyTakeaways:
