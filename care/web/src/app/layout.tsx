@@ -4,6 +4,8 @@ import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/
 import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
 import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
 import { niche } from "@/config/niche-loader";
+import { SiteNav } from "@/components/ui/SiteNav";
+import { SiteFooter } from "@/components/ui/SiteFooter";
 
 const siteUrl = `https://${niche.domain}`;
 
@@ -88,7 +90,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             noTrackPrefixes={["/admin"]}
           >
             <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
+            <SiteNav />
             {children}
+            <SiteFooter />
           </AnalyticsProvider>
         </ConsentProvider>
       </body>

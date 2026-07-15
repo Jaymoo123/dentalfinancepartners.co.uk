@@ -1,7 +1,7 @@
 {
   "niche_id": "care",
-  "display_name": "BRAND_TBD Care Accountancy",
-  "legal_name": "BRAND_TBD Care Accountancy Ltd",
+  "display_name": "Care Finance Partners",
+  "legal_name": "Ashfield Trading Ltd",
   "partner": null,
   "company": {
     "number": "16358723",
@@ -15,7 +15,7 @@
     "vat_number": null,
     "enquiry_retention_months": 24
   },
-  "domain": "www.brand-tbd-care.invalid",
+  "domain": "www.carefinancepartners.co.uk",
   "tagline": "UK care providers (care homes, domiciliary care, supported living): accounts, payroll, VAT and CQC-linked financial compliance",
   "description": "UK care providers (care homes, domiciliary care, supported living): accounts, payroll, VAT and CQC-linked financial compliance",
   "brand": {
@@ -24,7 +24,7 @@
     "publisher_logo_url": "/api/og"
   },
   "contact": {
-    "email": "hello@brand-tbd-care.invalid",
+    "email": "hello@carefinancepartners.co.uk",
     "phone": "+44 20 0000 0000"
   },
   "navigation": [
