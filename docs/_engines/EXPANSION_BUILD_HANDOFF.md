@@ -7,10 +7,71 @@
 > (methodology), [EXPANSION_HANDOFF_PARITY.md](EXPANSION_HANDOFF_PARITY.md) (parity checklist).
 > Locked decisions live in the `estate-expansion-program` memory.
 
-## Where we are (2026-07-14)
+## Where we are (2026-07-15, ecommerce session close — BUILD PROGRAM COMPLETE)
+
+**ALL SEVEN buildable Tier-1 sites are BUILT** (charities, hospitality, crypto, pharmacies,
+startups-tech, care, ecommerce); manufacturing stays PARKED. Ecommerce (site 7, LAST) closed
+2026-07-15: brand-lock + full niche.config schema fix (scaffold config was missing footer_links
+etc. and failed the shared validator), care-parity infra with a NEW /vat/[slug] depth-cluster
+route, 26 Opus briefs, 26-asset core, 3 golden-tested calculators, Online Seller Index page
+(structure only, DATA RUN PENDING: CH SIC 47910 + Advanced Search births/deaths + ONS J4MC/DRSI),
+2-track QA passed. Notable session lessons: (a) adversarial QA caught the ST-vs-Ltd calculator
+using a CT cliff (no marginal relief) + £12,570 salary (ignoring employer NIC) AND the blog's
+worked example claiming incorporation saves £6,100 at £70k full extraction when FA 2026 dividend
+rates make it ~£1,600 WORSE — under 2026/27 rates the full-extraction crossover has flipped,
+retention is where the company wins; (b) the IOSS €150 / OSS £8,818 HP flags were CLEARED at
+source mid-session (EU Commission OSS page + gov.uk NI distance-sales page, citations pinned in
+house_positions) after editorial QA found workers narrating the omission into reader prose;
+(c) infra builder again over-reached into stub content (€150 figures) exactly per the banked
+lesson — content workers purged it. Remaining ecommerce work pre-deploy: index data run; owner
+G1 = final brand + domain + migrate-vs-fence ruling on the 5 fenced HIRE hubs (fresh GSC).
+
+Program state from here: all deploys held on owner G1 inputs (per-site final brand + domain
+purchase); care additionally held to ~2026-08-03. Next session default = deploy support when the
+owner starts G1, or the ecommerce index data run.
+
+## Where we were (2026-07-15, care session close)
+
+**Six sites DONE + committed on `expansion/phase-0`** (charities, hospitality, crypto, pharmacies,
+startups-tech, care). Care = commit `847d97dd`, working brand **Care Finance Partners**
+(www.carefinancepartners.co.uk, prefix carf, tranche 1): 22 briefs, home + 5 /for hubs + 6 services
++ 10 blogs + 4 calculators + Care Provider Business Index; build green, vitest 18/18; 2-track Opus
+QA passed. DEPLOY twice-gated: G1 + medical-watch ~2026-08-03. Care gotchas banked: (a)
+`slugifyCategory` did not strip commas ("Fees, FNC..." URLs would 404) — care's copy patched, CHECK
+ECOMMERCE'S COPY; (b) Sonnet leaked em-dashes/HP-codes/fabricated testimonials + a fabricated
+search-volume stat tile + gov.uk URL typos — Opus-for-briefs/infra/QA + Sonnet-only-for-content
+tiering worked, keep it.
+
+**ECOMMERCE (site 7, LAST) IN PROGRESS — next session resumes here:**
+- S2 scaffold DONE 2026-07-15: `spinup_site --niche ecommerce --skip-db`, working brand **Ecommerce
+  Tax Partners** (www.ecommercetaxpartners.co.uk, prefix ectp, tranche 3); npm build smoke green.
+  UNCOMMITTED.
+- **Tranche-3 migration pair HAND-EDITED**: the generator emitted constraints missing ALL tranche-1/2
+  site keys (would strip hospitality/crypto/pharmacies/startups-tech/care if applied). Fixed to the
+  15-site union; re-read the LIVE def before applying regardless. Do NOT re-run spinup (it would
+  overwrite the fix).
+- **Both R4-prelude Opus agents COMPLETED 2026-07-15 (spot-check per doctrine anyway):**
+  (1) `docs/ecommerce/house_positions.md` (27 positions, 24 source-verified 2026-07-15, 3 flagged
+  inline: IOSS €150 needs an EU-side citation [the outline's gov.uk cite actually carries £135],
+  OSS NI £8,818/€10,000 unpinned, badges-of-trade cite HMRC BIM at build) +
+  `docs/ecommerce/rates_ledger.json` (31 entries, care schema). (2)
+  `expansion_research/tier1_ecommerce/DEDUP_AUDIT.md`: 18 assets → 7 UNIQUE / 6 DIFFERENTIATE /
+  5 FENCE / 0 DROP. The only collision surface = the 5 HIRE hubs vs 6 live generalist blog posts
+  (accountant-for-ecommerce-business/-sellers, amazon-fba, shopify, etsy, dropshippers); FENCE
+  wedges now, owner migrate-vs-fence at deploy gate. The VAT/cross-border depth cluster +
+  Online Seller Index are net-new to the estate. Briefs must carry the audit's wedge per
+  DIFFERENTIATE/FENCE asset, and link OUT to generalist for generic topics (£90k registration
+  mechanics, MTD ITSA mechanics, generic incorporation) rather than re-explaining.
+- Then the standard playbook below: brand-lock 3 files (display_name/legal_name=Ashfield Trading
+  Ltd/domain/email in ecommerce/niche.config.json, sites/ecommerce.json, docs/ecommerce/STATE.md
+  brand_locked:true) → de-hardcode og/route.tsx + page.tsx BRAND_TBD leaks → ~14-page core briefs
+  (narrower-deeper per LAUNCH_CORE; every DIFFERENTIATE asset carries its DEDUP_AUDIT wedge) →
+  infra mirror care/web (freshest sibling; hub-centric) → content workers → QA → commit.
+- Also uncommitted from the care session: docs/CONTENT_GAP_ENRICHMENT.md + _seed_expansion_topics.py
+  edits (pre-existing), and ecommerce/ + sites/ecommerce.json + the tranche-3 migrations.
 
 Depth-first build under WORKING-BRAND placeholders, deploy held (owner registers domains + deploys
-in batches). Four sites DONE + committed on `expansion/phase-0`:
+in batches). Earlier sites:
 
 - **Site 1 — Charities** (commit `2a501b52`): working brand **Trustee Finance Partners**
   (www.trusteefinancepartners.co.uk). 29 assets: home + 5 services + 2 sector + 6 pillar guides +

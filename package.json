@@ -22,7 +22,8 @@
     "care/web",
     "crypto/web",
     "pharmacies/web",
-    "startups-tech/web"
+    "startups-tech/web",
+    "ecommerce/web"
   ],
   "engines": {
     "node": ">=20"

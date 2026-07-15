@@ -1,0 +1,97 @@
+{
+  "niche_id": "ecommerce",
+  "display_name": "Ecommerce Tax Partners",
+  "legal_name": "Ashfield Trading Ltd",
+  "partner": null,
+  "company": {
+    "number": "16358723",
+    "place_of_registration": "England and Wales",
+    "registered_office": {
+      "line1": "20 Ashfield Avenue",
+      "line2": "Shipley",
+      "city": "Bradford",
+      "postcode": "BD18 3AL"
+    },
+    "vat_number": null,
+    "enquiry_retention_months": 24
+  },
+  "domain": "www.ecommercetaxpartners.co.uk",
+  "tagline": "UK ecommerce and marketplace sellers (Amazon, eBay, Etsy, Shopify): tax, VAT, platform reporting and seller accounts",
+  "description": "UK ecommerce and marketplace sellers (Amazon, eBay, Etsy, Shopify): tax, VAT, platform reporting and seller accounts",
+  "brand": {
+    "primary_color": "#c9861b",
+    "logo_path": "/brand/logo.png",
+    "publisher_logo_url": "/api/og"
+  },
+  "contact": {
+    "email": "hello@ecommercetaxpartners.co.uk",
+    "phone": "+44 20 0000 0000"
+  },
+  "navigation": [
+    { "label": "Services", "href": "/services" },
+    { "label": "About", "href": "/about" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "content_strategy": {
+    "audience": "UK online sellers: Amazon FBA/FBM sellers, Shopify store owners, eBay/Etsy/TikTok Shop marketplace sellers, dropshippers",
+    "categories": [
+      "VAT and Cross-Border Selling",
+      "Platform Reporting and HMRC Letters",
+      "Amazon and Marketplace Selling",
+      "Bookkeeping and Inventory",
+      "Business Structure and Tax",
+      "Making Tax Digital and Self Assessment"
+    ],
+    "supabase_table": "blog_topics",
+    "site_key": "ecommerce",
+    "source_identifier": "ecommerce"
+  },
+  "footer_links": [
+    { "label": "Contact", "href": "/contact" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Privacy Policy", "href": "/privacy-policy" }
+  ],
+  "locations": [],
+  "seo": {
+    "locale": "en_GB",
+    "organization_type": "AccountingService",
+    "service_areas": ["United Kingdom"],
+    "google_analytics_id": "",
+    "theme_color": "#c9861b",
+    "search_console_verification": {
+      "google": "",
+      "bing": "",
+      "yandex": "",
+      "naver": "",
+      "pinterest": ""
+    }
+  },
+  "lead_form": {
+    "role_label": "I sell on...",
+    "role_options": [
+      { "value": "Amazon (FBA or FBM)", "label": "Amazon (FBA or FBM)" },
+      { "value": "Shopify or my own website", "label": "Shopify or my own website" },
+      { "value": "eBay, Etsy, Vinted or TikTok Shop", "label": "eBay, Etsy, Vinted or TikTok Shop" },
+      { "value": "Multiple platforms", "label": "Multiple platforms" },
+      { "value": "Other online seller", "label": "Other online seller" }
+    ],
+    "placeholders": {
+      "name": "Alex Smith",
+      "email": "alex@yourstore.co.uk",
+      "phone": "07700 000000",
+      "message": "e.g. Help with seller VAT, an HMRC letter about online sales, settlement reconciliation or annual accounts for my store..."
+    }
+  },
+  "cta": {
+    "sticky_primary": "Speak to an ecommerce tax specialist",
+    "sticky_secondary": "Free, no-obligation reply within 24 hours",
+    "sticky_button": "Get in touch"
+  },
+  "blog": {
+    "cta_heading": "Need help with your online selling taxes?",
+    "cta_body": "Tell us about your store or marketplace accounts and we will come back within 24 hours.",
+    "cta_button": "Get in touch"
+  },
+  "shared_components_version": "1.0.0",
+  "last_sync": null
+}

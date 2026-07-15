@@ -58,6 +58,7 @@ jobs:
           crypto|https://www.digitalassettaxpartners.co.uk
           pharmacies|https://www.pharmacyfinancepartners.co.uk
           startups-tech|https://www.founderfinancepartners.co.uk
+          ecommerce|https://www.ecommercetaxpartners.co.uk
           '
 
           FULL=false
