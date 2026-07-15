@@ -23,12 +23,37 @@ retention is where the company wins; (b) the IOSS €150 / OSS £8,818 HP flags 
 source mid-session (EU Commission OSS page + gov.uk NI distance-sales page, citations pinned in
 house_positions) after editorial QA found workers narrating the omission into reader prose;
 (c) infra builder again over-reached into stub content (€150 figures) exactly per the banked
-lesson — content workers purged it. Remaining ecommerce work pre-deploy: index data run; owner
-G1 = final brand + domain + migrate-vs-fence ruling on the 5 fenced HIRE hubs (fresh GSC).
+lesson — content workers purged it. The Online Seller Index DATA RUN is DONE (commit 73d25cc4:
+CH SIC 47910 214,751 active / 319,823 dissolved + 22 quarters churn via Advanced Search API,
+ONS J4MC 27.4% 2025; re-runnable `scripts/_ecommerce_index_pull.py`; zero fabricated figures;
+cohort survival curves deferred, they need the CH bulk snapshot, not the aggregate API).
+Session commits: 61be441d (launch core) + 73d25cc4 (index data) + 097071d5 (STATE close-out).
 
-Program state from here: all deploys held on owner G1 inputs (per-site final brand + domain
-purchase); care additionally held to ~2026-08-03. Next session default = deploy support when the
-owner starts G1, or the ecommerce index data run.
+## What the NEXT session does (build phase is OVER)
+
+Nothing is buildable without owner input. The per-site playbook below stays as reference for
+future niches (Tier-2) but the 7 Tier-1 builds are DONE. The next agent's work is gated:
+
+1. **G1 deploy support (per site, owner-initiated):** owner picks FINAL brand + registers the
+   domain (RDAP re-verify first) → 3-file config swap (niche.config.json, sites/<n>.json,
+   STATE.md) → `VERCEL_TOKEN` in .env → `scripts/vercel_create_site.py` spin-up + preview an01 +
+   live battery → GSC property + sitemap submit + Request Indexing (the number 1 new-site risk)
+   + Bing import + IndexNow → apply the tranche migration (re-read the LIVE constraint first;
+   generator-emitted pairs have TWICE dropped sibling site keys) → add the site to the Property
+   `/api/leads/notify` allowlist (the sole sanctioned live-site touch, per-tranche Property
+   deploy). Run the pre-attach rates-ledger lint + dated-reference sweep same day DNS attaches.
+2. **Ecommerce G1 extra:** owner rules migrate-vs-fence on the 5 fenced HIRE hubs vs
+   generalist's 6 live ecommerce pages, WITH FRESH GSC (data-gated-consolidation rule; never
+   301 without it). Until ruled, both sites keep their differentiated pages.
+3. **Care extra gate:** deploy additionally held to ~2026-08-03 (medical indexing watch).
+4. **Deliberately NOT committed** (pre-existing, not ecommerce's): docs/_engines/
+   CONTENT_GAP_ENRICHMENT.md edits, scripts/_seed_expansion_topics.py edits,
+   optimisation_engine/blog_generator/site_configs/startups_tech.py, assorted scripts/_*.py
+   scratch files, expansion_research/tier1_{dentists,solicitors}/ pulls, legal/*.bak. Leave
+   unless their own programs claim them.
+5. **Optional backlog:** blog_topics seeding for the 6 new sites (G2), Serper top-up, ecommerce
+   cohort-survival upgrade via CH bulk snapshot, Tier-2 research track (farmers/expats/retail/
+   FCA/travel).
 
 ## Where we were (2026-07-15, care session close)
 
