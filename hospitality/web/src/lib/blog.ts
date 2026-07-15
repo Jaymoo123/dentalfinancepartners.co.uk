@@ -96,7 +96,7 @@ export function getRelatedPosts(
 export function slugifyCategory(category: string): string {
   return category
     .toLowerCase()
-    .replace(/[()]/g, "")
+    .replace(/[(),]/g, "")
     .replace(/&/g, "and")
     .replace(/\s+/g, "-")
     .replace(/--+/g, "-")

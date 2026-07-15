@@ -55,6 +55,26 @@ future niches (Tier-2) but the 7 Tier-1 builds are DONE. The next agent's work i
    cohort-survival upgrade via CH bulk snapshot, Tier-2 research track (farmers/expats/retail/
    FCA/travel).
 
+## Interim hardening pass (2026-07-15, post-build session)
+
+- **Pre-attach tools now EXIST** (they were referenced but unbuilt): `scripts/rates_ledger_lint.py`
+  and `scripts/dated_reference_sweep.py` (both take `--site`, default all 7). Lint runs CLEAN on
+  all 7 as of 2026-07-15 (charities' missing `docs/charities/rates_ledger.json` was built from its
+  house_positions, all figures verified 2026-07-11; `applies_from: "historic"` is an accepted
+  convention). Sweep is report-only: its 2026-07-15 hits were ALL correct-current-figure lines with
+  explicit historical comparisons ("increased from 13.8%", "up from 45p") — acceptable class.
+  Deploy-day G1 re-run is now a delta check, not a first run.
+- **slugifyCategory comma-strip CLOSED estate-wide**: care's `/[(),]/g` pattern applied to the 5
+  remaining copies (charities, hospitality, crypto, pharmacies, startups-tech). No live category
+  contains a comma, so zero URLs changed; fix is defensive.
+- Full re-verify 2026-07-15: all 7 sites `npm run build` + `vitest` GREEN; BRAND_TBD/.invalid/
+  em-dash scans clean on user-facing surfaces; internal-link audit 0 suspect links.
+- **blog_topics seeding state**: charities 1,660 / hospitality 1,257 / care 652 rows seeded;
+  startups-tech pool finalised + seeded this session (retro-fit `s5b_finalise.py`); **crypto,
+  pharmacies, ecommerce CANNOT seed until their tranche-2/3 migrations apply at G1** (no `sites`
+  row yet, FK blocks). Seed them at G1 with
+  `python scripts/_seed_expansion_topics.py <site> expansion_research/tier1_<site>/topic_pool_final.json dataforseo`.
+
 ## Where we were (2026-07-15, care session close)
 
 **Six sites DONE + committed on `expansion/phase-0`** (charities, hospitality, crypto, pharmacies,
