@@ -74,6 +74,15 @@ future niches (Tier-2) but the 7 Tier-1 builds are DONE. The next agent's work i
   pharmacies, ecommerce CANNOT seed until their tranche-2/3 migrations apply at G1** (no `sites`
   row yet, FK blocks). Seed them at G1 with
   `python scripts/_seed_expansion_topics.py <site> expansion_research/tier1_<site>/topic_pool_final.json dataforseo`.
+- **Tier-2 research track CLOSED 2026-07-15** (commit 96618bda): farmers/expats/retail/FCA/travel
+  all NO-GO after R3 evidence + paid head pulls ($0.52; DataForSEO balance was topped up to
+  ~$44, the "-$0.03" above is stale). Zero new sites. Actionable survivors (owner word before
+  build): generalist retail cluster, property NRL/expat waves, TOMS blog cluster. Summary
+  `expansion_research/TIER2_VERDICTS.md`. Next niches need a fresh R1 enumeration, the
+  89-candidate list is exhausted.
+- **Ecommerce cohort-survival DONE 2026-07-15** (commit 858a17f0): CH Advanced Search supports
+  status+incorporation-date+dissolved_to combined, so the bulk-snapshot backlog item is
+  unnecessary; true 2018-2024 cohort curves are live on the Online Seller Index.
 
 ## Where we were (2026-07-15, care session close)
 
