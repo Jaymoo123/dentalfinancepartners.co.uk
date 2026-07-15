@@ -34,6 +34,7 @@ function parsePostFile(filePath: string): BlogPost {
     keyTakeaways: fm.keyTakeaways,
     sourcesVerifiedAt: fm.sourcesVerifiedAt,
     schema: fm.schema,
+    howToSteps: fm.howToSteps,
     canonical: fm.canonical,
     faqs: fm.faqs,
     contentHtml: contentWithIds,

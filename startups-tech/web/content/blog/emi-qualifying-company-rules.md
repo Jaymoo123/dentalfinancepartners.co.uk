@@ -5,7 +5,7 @@ date: "2026-07-15"
 author: ""
 category: "Share Schemes and EMI"
 metaTitle: "EMI Qualifying Company Rules: The Six Tests Explained"
-metaDescription: "EMI requires gross assets ≤£30m, under 250 FTE, a qualifying trade and a working-time commitment. Check all six tests, plus the CSOP £60k fallback if you breach one."
+metaDescription: "EMI requires gross assets under £30m, fewer than 250 FTE and a qualifying trade. All six tests explained, plus the CSOP £60k fallback if you breach one."
 h1: "EMI Qualifying Company Rules: Does Your Company Pass All Six Tests?"
 summary: "To run an EMI scheme a company must have gross assets of £30m or less, fewer than 250 full-time-equivalent employees, carry on a qualifying trade with no excluded activities, and stay within the £250,000 per-employee and £3m per-company value limits."
 keyTakeaways:

@@ -5,7 +5,7 @@ date: "2026-07-15"
 author: ""
 category: "SEIS and EIS"
 metaTitle: "SEIS1 EIS1 Compliance Statements: Company Filing Guide"
-metaDescription: "After closing an SEIS or EIS round the company must file a compliance statement before investors can claim relief. How the SEIS1/EIS1 to SEIS3/EIS3 process works."
+metaDescription: "After an SEIS or EIS round, the company must file a compliance statement before investors can claim relief. The SEIS1/EIS1 to SEIS3/EIS3 process."
 h1: "SEIS1 and EIS1 Compliance Statements: What the Company Must File After the Round"
 summary: "Once an SEIS or EIS round closes, the company must file a compliance statement so HMRC can authorise it to issue relief certificates to investors. Without this step, no investor can claim the income tax relief the round was structured to deliver."
 keyTakeaways:
@@ -31,6 +31,15 @@ faqs:
     answer: "A breach of the qualifying conditions after the round can result in HMRC withdrawing authorisation or clawing back relief already claimed by investors. This is one of the reasons the company's obligations do not end at the point of filing."
   - question: "Do we need to file even if we got advance assurance?"
     answer: "Yes. Advance assurance is a separate, earlier step: HMRC's pre-clearance before the round. The compliance statement is a distinct, later obligation the company must fulfil after the round closes. Advance assurance does not replace it."
+howToSteps:
+  - name: "Wait until the filing gate is met"
+    text: "For SEIS, the company must have been trading for at least 4 months or have spent at least 70% of the money raised on the qualifying activity. For EIS, the company must have carried on the qualifying activity for at least 4 months. Do not file early."
+  - name: "File the compliance statement with HMRC (SEIS1 or EIS1)"
+    text: "Submit the SEIS1 (SEIS round) or EIS1 (EIS round) compliance statement to HMRC confirming that the company and the share issue met the relevant qualifying conditions. This is a company obligation; investors cannot file it."
+  - name: "Wait for HMRC to authorise"
+    text: "HMRC reviews the compliance statement and checks that qualifying conditions were met. If satisfied, HMRC authorises the company to issue relief certificates. HMRC may correspond with the company if questions arise."
+  - name: "Issue SEIS3 or EIS3 certificates to each investor"
+    text: "Once HMRC authorises, the company issues a SEIS3 (SEIS investors) or EIS3 (EIS investors) certificate to each individual investor. Investors use these certificates to claim income tax relief on their Self Assessment returns."
 ---
 <p>When an SEIS or EIS funding round closes, most founders assume the hard work is done. The advance assurance is in, the shares are issued, the money is in the bank. But there is a critical post-round step the company must complete before any investor can actually claim the tax relief the round was structured around: filing the compliance statement with HMRC.</p>
 

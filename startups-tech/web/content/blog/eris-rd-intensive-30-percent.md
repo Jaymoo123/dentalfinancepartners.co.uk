@@ -5,7 +5,7 @@ date: "2026-07-15"
 author: ""
 category: "Research and Development"
 metaTitle: "ERIS R&D Intensity Test: 30% Threshold Explained"
-metaDescription: "Loss-making SMEs with R&D spend of at least 30% of total expenditure keep the generous SME route under ERIS. Worked example, intensity ratio, and 14.5% payable credit explained."
+metaDescription: "Loss-making SMEs with R&D spend of at least 30% of total expenditure qualify under ERIS. Worked example, intensity ratio, and 14.5% payable credit explained."
 h1: "ERIS and the 30% R&D Intensity Test for Loss-Making Startups"
 summary: "A loss-making SME whose qualifying R&D spend is at least 30% of total expenditure can claim under ERIS rather than the merged scheme, accessing an 86% additional deduction and a 14.5% payable credit."
 keyTakeaways:

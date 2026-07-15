@@ -357,7 +357,7 @@ export const startupsServices: StartupsService[] = [
       },
       {
         title: "Scaling ARR past the VAT threshold without a plan",
-        body: "VAT registration is mandatory once rolling 12-month UK taxable turnover reaches <a href=\"https://www.gov.uk/register-for-vat\">£90,000</a>. For SaaS companies, the <a href=\"/blog/startup-compliance/vat-for-saas-place-of-supply\">B2B reverse charge and place-of-supply rules</a> mean overseas revenue may not count toward the threshold; the position depends on the specific supplies and should be verified against HMRC's Notice 741A. Missing the registration point and failing to charge VAT retrospectively is a material liability.",
+        body: "VAT registration is mandatory once rolling 12-month UK taxable turnover reaches <a href=\"https://www.gov.uk/register-for-vat\">£90,000</a>. For SaaS companies, the <a href=\"/blog/saas-and-tech-finance/vat-for-saas-place-of-supply\">B2B reverse charge and place-of-supply rules</a> mean overseas revenue may not count toward the threshold; the position depends on the specific supplies and should be verified against HMRC's Notice 741A. Missing the registration point and failing to charge VAT retrospectively is a material liability.",
       },
     ],
     howWeHelp: [
@@ -371,7 +371,7 @@ export const startupsServices: StartupsService[] = [
       },
       {
         title: "VAT registration timing and SaaS place-of-supply management",
-        body: "We monitor the <a href=\"https://www.gov.uk/register-for-vat\">£90,000 registration threshold</a> as ARR scales and plan the registration timing. For SaaS supplies, we assess the B2B reverse-charge and <a href=\"/blog/startup-compliance/vat-for-saas-place-of-supply\">place-of-supply position</a> against the specific supplies, verifying against Notice 741A before advising on whether overseas B2B revenue counts toward the threshold. IR35 and off-payroll working is a boundary note for this site: for contractor-side depth, the <a href=\"https://www.gov.uk/guidance/understanding-off-payroll-working-ir35\">Contractor Tax Accountants sibling site</a> covers it in full.",
+        body: "We monitor the <a href=\"https://www.gov.uk/register-for-vat\">£90,000 registration threshold</a> as ARR scales and plan the registration timing. For SaaS supplies, we assess the B2B reverse-charge and <a href=\"/blog/saas-and-tech-finance/vat-for-saas-place-of-supply\">place-of-supply position</a> against the specific supplies, verifying against Notice 741A before advising on whether overseas B2B revenue counts toward the threshold. IR35 and off-payroll working is a boundary note for this site: for contractor-side depth, the <a href=\"https://www.gov.uk/guidance/understanding-off-payroll-working-ir35\">Contractor Tax Accountants sibling site</a> covers it in full.",
       },
     ],
     faqs: [
@@ -385,7 +385,7 @@ export const startupsServices: StartupsService[] = [
       },
       {
         question: "When does our startup have to register for VAT?",
-        answer: "VAT registration is mandatory once rolling 12-month UK taxable turnover reaches <a href=\"https://www.gov.uk/register-for-vat\">£90,000</a>, or when there is a 30-day forward expectation that it will. For SaaS companies, overseas B2B supplies may not count toward the threshold under the B2B reverse-charge and <a href=\"/blog/startup-compliance/vat-for-saas-place-of-supply\">place-of-supply rules</a>. The position depends on the specific supplies and should be verified against Notice 741A, not assumed. Missing the registration point and failing to account for VAT retrospectively is a material liability.",
+        answer: "VAT registration is mandatory once rolling 12-month UK taxable turnover reaches <a href=\"https://www.gov.uk/register-for-vat\">£90,000</a>, or when there is a 30-day forward expectation that it will. For SaaS companies, overseas B2B supplies may not count toward the threshold under the B2B reverse-charge and <a href=\"/blog/saas-and-tech-finance/vat-for-saas-place-of-supply\">place-of-supply rules</a>. The position depends on the specific supplies and should be verified against Notice 741A, not assumed. Missing the registration point and failing to account for VAT retrospectively is a material liability.",
       },
       {
         question: "Can we claim costs incurred before we started trading?",

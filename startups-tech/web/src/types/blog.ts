@@ -41,6 +41,8 @@ export type BlogFrontmatter = {
   reviewerCredentials?: string;
   /** Raw JSON-LD string from the schema builder when present */
   schema?: string;
+  /** Step-by-step instructions for HowTo JSON-LD (only on procedural posts) */
+  howToSteps?: { name: string; text: string }[];
   canonical?: string;
   faqs?: BlogFaq[];
 };

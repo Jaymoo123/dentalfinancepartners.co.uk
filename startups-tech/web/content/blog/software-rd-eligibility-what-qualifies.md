@@ -5,7 +5,7 @@ date: "2026-07-15"
 author: ""
 category: "Research and Development"
 metaTitle: "Software R&D Tax Relief: What Qualifies (and What Does Not)"
-metaDescription: "Plain-English guide to software R&D eligibility. The advance-in-science test, technological uncertainty, and an honest negative list of what HMRC does not accept."
+metaDescription: "Plain-English guide to software R&D eligibility. The advance-in-science test, technological uncertainty, and what HMRC does not accept."
 h1: "Does Your Software Development Qualify for R&D Tax Relief? An Honest Eligibility Guide"
 summary: "Software R&D relief is available where work seeks a genuine advance in science or technology and resolves technological uncertainty. Routine development, however hard or costly, does not qualify."
 keyTakeaways:

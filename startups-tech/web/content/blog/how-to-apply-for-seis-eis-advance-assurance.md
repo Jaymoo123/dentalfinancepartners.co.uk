@@ -31,6 +31,17 @@ faqs:
     answer: "After assurance is granted you can proceed to raise the round. Once investors have subscribed, you must submit a compliance statement (SEIS1 or EIS1) to HMRC so that compliance certificates can be issued. Investors cannot claim tax relief until they hold a valid compliance certificate."
   - question: "Do I still need to file a compliance statement after advance assurance?"
     answer: "Yes. Advance assurance does not replace the compliance statement. After the shares are issued you must file SEIS1 (for SEIS) or EIS1 (for EIS) with HMRC. Only once HMRC issues the compliance certificates (SEIS3 or EIS3 for investors) can investors claim their relief."
+howToSteps:
+  - name: "Confirm your company meets the qualifying tests"
+    text: "For SEIS: gross assets no more than £350,000, fewer than 25 FTE employees, within 3 years of starting to trade, raising no more than £250,000 in total. For EIS: up to £5m per year and £12m lifetime across the venture-capital schemes. Do not apply before the company meets the relevant tests."
+  - name: "Prepare the application pack"
+    text: "Assemble a business plan, financial forecasts showing position at the point of investment, proposed share structure, a specific use-of-funds breakdown, and details of prospective investors as required by the HMRC advance assurance guidance."
+  - name: "Submit the application to HMRC"
+    text: "Send the pack to HMRC via the route described in the advance assurance guidance at gov.uk/guidance/venture-capital-schemes-apply-for-advance-assurance. An incomplete application will delay the response; HMRC will correspond to request missing information."
+  - name: "Wait for HMRC's response and proceed to raise"
+    text: "HMRC responds with confirmation that the proposed issue is likely to qualify, or with questions. Once assurance is granted, proceed to issue shares to investors. Advance assurance is a likelihood indication, not a guarantee."
+  - name: "File the compliance statement (SEIS1 or EIS1) after the round closes"
+    text: "After shares are issued and the qualifying period gate is met, file SEIS1 (SEIS) or EIS1 (EIS) with HMRC. This is a separate, post-round obligation. Advance assurance does not replace it. Only after HMRC authorises can you issue SEIS3 or EIS3 certificates to investors."
 ---
 <p><a href="https://www.gov.uk/guidance/venture-capital-schemes-apply-for-advance-assurance">Advance assurance</a> is HMRC's pre-round clearance for an SEIS or EIS raise. For most founders preparing a seed or Series A round, it is the first formal contact with HMRC about the scheme, and investors will almost always ask for it before committing. This walkthrough covers how to confirm you qualify, what to put in the application pack, and what happens after HMRC responds.</p>
 

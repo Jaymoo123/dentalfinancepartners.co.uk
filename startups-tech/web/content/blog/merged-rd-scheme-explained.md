@@ -5,7 +5,7 @@ date: "2026-07-15"
 author: ""
 category: "Research and Development"
 metaTitle: "Merged R&D Scheme Explained: 20% Credit from 2024"
-metaDescription: "From April 2024 one 20% above-the-line R&D expenditure credit replaced the old SME and RDEC schemes. How it works, who qualifies, and what software companies need to do."
+metaDescription: "From April 2024 a single 20% R&D expenditure credit replaced the old SME and RDEC schemes. How it works, who qualifies, and what software companies must do."
 h1: "The Merged R&D Scheme Explained for Software and SaaS Founders"
 summary: "For accounting periods beginning on or after 1 April 2024, one R&D expenditure credit at 20% replaced both the old SME super-deduction and the separate RDEC. Here is how the mechanics work, what it means for a software company's claim, and where the SME route still survives."
 keyTakeaways:

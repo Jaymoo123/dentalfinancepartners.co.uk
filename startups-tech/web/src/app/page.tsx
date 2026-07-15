@@ -296,7 +296,7 @@ const whySpecialist = [
         >
           off-payroll working depth
         </a>{" "}
-        sits with the sibling Contractor Tax Accountants site.
+        is out of scope for this firm; a specialist contractor tax adviser is the right home for it.
       </>
     ),
   },
@@ -375,7 +375,7 @@ const faqs: { question: string; answer: string }[] = [
   {
     question: "Do you cover IR35 or contractor work?",
     answer:
-      "We state the IR35 and off-payroll boundary where it is relevant to a funded company's working arrangements. Contractor-side IR35 depth (personal service companies, inside-IR35 deductions, umbrella payroll) sits with our sibling Contractor Tax Accountants site and is out of scope for this firm.",
+      "We state the IR35 and off-payroll boundary where it is relevant to a funded company's working arrangements. Contractor-side IR35 depth (personal service companies, inside-IR35 deductions, umbrella payroll) is out of scope for this firm and belongs with a specialist contractor tax adviser.",
   },
   {
     question: "How much does it cost?",
@@ -482,8 +482,8 @@ export default function HomePage() {
             Funded and scaling product companies. Not contractors, not agencies.
           </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-600 sm:text-lg">
-            Solo contractors and personal service companies belong at the sibling Contractor Tax Accountants
-            site. Creative and marketing agencies are out of scope. This site works with tech, SaaS, software
+            Solo contractors and personal service companies are out of scope, as are creative and
+            marketing agencies. This site works with tech, SaaS, software
             and fintech companies that have passed formation and are growing.
           </p>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

@@ -5,7 +5,7 @@ date: "2026-07-15"
 author: ""
 category: "Research and Development"
 metaTitle: "R&D Claim Notification: The 6-Month Deadline Explained"
-metaDescription: "First-time R&D claimants must notify HMRC within 6 months of their accounting period end. Miss it and the claim is invalid. Full timeline, table and worked example."
+metaDescription: "First-time R&D claimants must notify HMRC within 6 months of their accounting period end. Miss it and the claim is void. Timeline, table and worked example."
 h1: "The R&D Claim Notification Deadline: 6 Months from Period End, Not Filing"
 summary: "First-time R&D claimants and anyone who has not claimed in the past three years must send HMRC a claim notification within 6 months of their accounting period end. Miss the window and the R&D claim is invalid for that period."
 keyTakeaways:
@@ -27,6 +27,15 @@ faqs:
     answer: "From the accounting period end. For a 31 March year-end, the deadline is 30 September, not 31 March of the following year. The CT600 filing deadline (12 months from year end) is later and is not the relevant clock."
   - question: "Do I need to notify every year?"
     answer: "Not if you have claimed in each of the prior three years. The notification requirement applies to first-time claimants and to any company whose last R&D claim was more than three years ago. Continuous claimants are not required to re-notify."
+howToSteps:
+  - name: "Confirm you are in scope for the notification"
+    text: "Check whether your company is a first-time R&D claimant or has not made a valid R&D claim in any of the three prior accounting periods. Either condition triggers the notification requirement."
+  - name: "Submit the claim notification to HMRC within 6 months of the period end"
+    text: "File the claim notification via HMRC's online service before the 6-month deadline from your accounting period end date. For a 31 March year-end, this is 30 September of the same year. The notification does not commit you to a final claim value."
+  - name: "Prepare and submit the Additional Information Form (AIF) before the CT600"
+    text: "After notifying, prepare the AIF with a breakdown of your R&D projects, qualifying costs and activities. The AIF must reach HMRC before the CT600 claim is filed, not at the same time."
+  - name: "Include the R&D claim in your CT600 corporation tax return"
+    text: "File the CT600 within 12 months of the accounting period end, with the R&D relief or expenditure credit claim included. All three steps (notification, AIF, CT600) are required in sequence."
 ---
 <p>A hard procedural rule introduced as part of HMRC's R&D compliance overhaul catches first-time claimants by surprise every year. Miss it and the entire R&D claim for that period is void. No appeal, no late submission, no partial credit. The rule is the <a href="https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief">claim notification requirement</a>, and the clock is shorter than most founders expect.</p>
 

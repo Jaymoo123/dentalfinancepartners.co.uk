@@ -5,7 +5,7 @@ date: "2026-07-15"
 author: ""
 category: "Research and Development"
 metaTitle: "Grant Funding and R&D Tax Relief: How They Interact"
-metaDescription: "Does a grant reduce your R&D tax relief? Under the merged scheme (periods from 1 April 2024) the subsidised-expenditure restriction was removed, so grant funding no longer cuts your claim."
+metaDescription: "Does a grant cut your R&D tax relief? Under the merged scheme from April 2024 the subsidised-expenditure restriction was removed. What that means."
 h1: "Startup Grants and R&D Tax Relief: How They Interact"
 summary: "Under the merged R&D scheme, for accounting periods beginning on or after 1 April 2024, the subsidised-expenditure restriction was removed. Grant funding no longer reduces the qualifying R&D expenditure you can claim on that spend, and a grant-heavy loss-making R&D-intensive SME can now reach ERIS."
 keyTakeaways:

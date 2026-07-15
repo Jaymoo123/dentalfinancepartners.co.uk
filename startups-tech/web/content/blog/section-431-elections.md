@@ -5,7 +5,7 @@ date: "2026-07-15"
 author: ""
 category: "Share Schemes and EMI"
 metaTitle: "Section 431 Election: 14-Day Deadline Explained"
-metaDescription: "A section 431 election must be made within 14 days of acquiring restricted securities. Miss it and future growth can be taxed as employment income, not CGT. Explained with worked example."
+metaDescription: "A section 431 election must be made within 14 days of acquiring restricted securities. Miss it and future growth is taxed as income, not CGT. Worked example."
 h1: "Section 431 Elections: What They Are, the 14-Day Deadline, and the Funded-Startup Trap"
 summary: "A section 431 joint election, made within 14 days of acquiring restricted securities, locks in a tax-on-UMV-now approach so that all future share growth is taxed as capital gains rather than employment income on exit."
 keyTakeaways:
@@ -29,6 +29,15 @@ faqs:
     answer: "At a typical seed-stage valuation, the upfront charge on the difference between what was paid and the unrestricted market value of the shares is usually very small. The election itself carries no filing fee."
   - question: "Do EMI option holders need a section 431 election?"
     answer: "EMI options are a separate regime with their own tax treatment. However, where an employee acquires shares on exercise of unapproved options or growth shares that carry restrictions, the section 431 election is relevant. The election does not interact directly with an EMI grant before exercise."
+howToSteps:
+  - name: "Confirm the shares are restricted securities"
+    text: "Check whether the shares carry any restrictions that affect their value, including leaver provisions, vesting schedules or transfer restrictions under a shareholders' agreement. If yes, the section 431 election is relevant."
+  - name: "Prepare the joint election within 14 days of acquisition"
+    text: "Both the company and the individual acquiring the shares must sign the election within 14 days of the date of acquisition. The 14-day window is fixed and cannot be extended. Prepare the election document at or before the point of share issuance."
+  - name: "Sign and retain the election"
+    text: "Both parties sign the joint election. Retain a copy. The election is not filed with HMRC but must be available to produce if HMRC requests it."
+  - name: "Report on the annual ERS return by 6 July"
+    text: "The share acquisition must be reported on the annual Employment-Related Securities return, due by 6 July following the end of the tax year in which the acquisition occurred."
 ---
 <p>A section 431 election is one of the most time-critical actions a founder or employee can take when acquiring shares in a startup. The window is 14 days from acquisition. It cannot be extended. Missing it can mean the difference between paying capital gains tax on your exit and paying income tax on the same growth. This guide explains what the election does, why the funded-startup context makes it dangerous to miss, and how the exit numbers play out with and without it.</p>
 

@@ -5,7 +5,7 @@ date: "2026-07-15"
 author: ""
 category: "Share Schemes and EMI"
 metaTitle: "EMI Disqualifying Events: Tax Consequences Explained"
-metaDescription: "A disqualifying event can strip EMI tax advantages from future option gains. Here is the complete categorised event map, the tax-consequence window, and the BADR/CGT interaction."
+metaDescription: "A disqualifying event strips EMI tax advantages from future gains. Complete event map, tax-consequence window, and the BADR/CGT interaction explained."
 h1: "EMI Disqualifying Events: Tax Consequences and What to Do Next"
 summary: "A disqualifying event ends an option's EMI-qualifying status; gains accruing after the event can lose their favourable tax treatment unless the option is exercised inside the statutory window."
 keyTakeaways:

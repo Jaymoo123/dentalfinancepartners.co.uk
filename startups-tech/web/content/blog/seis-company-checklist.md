@@ -5,7 +5,7 @@ date: "2026-07-15"
 author: ""
 category: "SEIS and EIS"
 metaTitle: "SEIS Company Qualifying Checklist for Founders"
-metaDescription: "A pass/fail checklist covering every SEIS company test: £250k raise cap, £350k gross assets, fewer than 25 FTE, 3 years of trade. Worked examples for edge cases."
+metaDescription: "Pass/fail checklist for every SEIS company test: £250k raise cap, £350k gross assets, fewer than 25 FTE, 3 years of trade. Worked examples for edge cases."
 h1: "Does Your Company Qualify for SEIS? The Founder Checklist"
 summary: "A pass/fail checklist of every SEIS company qualifying test, with worked examples on the gross-assets timing trap, the FTE count, and the trade-start-date confusion."
 keyTakeaways:

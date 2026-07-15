@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { siteContainerLg } from "@/components/ui/layout-utils";
+import { buildDatasetJsonLd } from "@/lib/schema";
 import data from "@/data/startup-formation-survival-index.json";
 
 export const metadata: Metadata = {
@@ -53,9 +54,31 @@ const formationChange = (
   100
 ).toFixed(1);
 
+const datasetJsonLd = buildDatasetJsonLd({
+  name: "UK Startup Formation and Survival Index",
+  description: data.meta.description,
+  url: `${siteConfig.url}/research/startup-formation-survival-index`,
+  dateModified: data.meta.lastUpdated,
+  sources: [
+    {
+      name: "Companies House Advanced Search API",
+      url: "https://developer.company-information.service.gov.uk/api/docs/",
+      licence: "Open Government Licence v3.0",
+      publisher: "Companies House",
+    },
+    {
+      name: "Companies House SIC code list",
+      url: "https://resources.companieshouse.gov.uk/sic/",
+      licence: "Open Government Licence v3.0",
+      publisher: "Companies House",
+    },
+  ],
+});
+
 export default function StartupFormationSurvivalIndexPage() {
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: datasetJsonLd }} />
       {/* Hero */}
       <section className="border-b border-neutral-200 bg-[#1e1b4b] py-16 sm:py-20">
         <div className={siteContainerLg}>

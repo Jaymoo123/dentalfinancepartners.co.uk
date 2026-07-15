@@ -28,6 +28,24 @@ export function buildOrganizationJsonLd() {
     },
     areaServed: niche.seo.service_areas,
     priceRange: "££",
+    knowsAbout: [
+      "Enterprise Management Incentives (EMI)",
+      "Seed Enterprise Investment Scheme (SEIS)",
+      "Enterprise Investment Scheme (EIS)",
+      "R&D tax relief merged scheme",
+      "Enhanced R&D Intensive Support (ERIS)",
+      "Section 431 elections on restricted securities",
+      "EIS/SEIS investor relief",
+      "R&D claim notification",
+      "SaaS accounting and VAT place-of-supply",
+      "Startup tax planning",
+      "Business Asset Disposal Relief",
+      "EMI option pool setup and ERS returns",
+      "Fractional CFO for funded startups",
+    ],
+    sameAs: [
+      "https://find-and-update.company-information.service.gov.uk/company/16358723",
+    ],
   });
 }
 
@@ -65,6 +83,48 @@ export function buildBreadcrumbJsonLd(items: { label: string; href?: string }[])
       position: index + 1,
       name: item.label,
       ...(item.href && { item: `${siteConfig.url}${item.href}` }),
+    })),
+  });
+}
+
+export function buildHowToJsonLd(post: { h1: string; metaDescription?: string; howToSteps?: { name: string; text: string }[] }) {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: post.h1,
+    ...(post.metaDescription && { description: post.metaDescription }),
+    step: (post.howToSteps ?? []).map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+    })),
+  });
+}
+
+export function buildDatasetJsonLd(opts: {
+  name: string;
+  description: string;
+  url: string;
+  dateModified: string;
+  sources: { name: string; url: string; licence: string; publisher: string }[];
+}) {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: opts.name,
+    description: opts.description,
+    url: opts.url,
+    dateModified: opts.dateModified,
+    creator: { "@type": "Organization", "@id": `${siteConfig.url}#organization`, name: siteConfig.name },
+    license: "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    isAccessibleForFree: true,
+    inLanguage: "en-GB",
+    sourceOrganization: opts.sources.map((s) => ({
+      "@type": "Organization",
+      name: s.publisher,
+      url: s.url,
+      description: `${s.name}. Licence: ${s.licence}`,
     })),
   });
 }
