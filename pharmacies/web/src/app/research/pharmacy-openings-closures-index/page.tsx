@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
+import { buildDatasetJsonLd } from "@/lib/schema";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import data from "@/data/pharmacy-openings-closures-index.json";
 
@@ -9,6 +10,13 @@ export const metadata: Metadata = {
   description: "Verified data on England's community pharmacy network: NHS dispensing-contractor counts from NHSBSA open data and Companies House SIC 47730 churn figures. Updated quarterly.",
   alternates: { canonical: `${siteConfig.url}/research/pharmacy-openings-closures-index` },
 };
+
+const datasetLd = buildDatasetJsonLd({
+  name: "UK Community Pharmacy Openings and Closures Index",
+  description:
+    "Verified data on England's community pharmacy network: NHS dispensing-contractor counts from NHSBSA open data and Companies House SIC 47730 corporate-churn figures. Updated quarterly.",
+  url: "/research/pharmacy-openings-closures-index",
+});
 
 export default function PharmacyOpeningsClosuresIndexPage() {
   const latestContractors = data.nhsbsaContractors.latestCount.toLocaleString("en-GB");
@@ -23,11 +31,12 @@ export default function PharmacyOpeningsClosuresIndexPage() {
 
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: datasetLd }} />
       {/* Hero */}
       <section className="border-b border-neutral-200 bg-[#0f3a4a] py-16 sm:py-20">
         <div className={siteContainerLg}>
           <Link
-            href="/research"
+            href="/research/pharmacy-openings-closures-index"
             className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/60 uppercase tracking-wider hover:text-white transition-colors mb-6"
           >
             Research

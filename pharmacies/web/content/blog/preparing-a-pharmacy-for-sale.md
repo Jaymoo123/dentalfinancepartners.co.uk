@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "Selling a Pharmacy"
 metaTitle: "Preparing a Pharmacy for Sale: Tax and Accounts"
-metaDescription: "How to ready your pharmacy for sale: clean NHS accounts, a defensible margin story, Business Asset Disposal Relief at 18% for 2026/27, and CGT rate planning."
+metaDescription: "How to ready your pharmacy for sale: clean NHS accounts, a defensible margin story, BADR at 18% for 2026/27 and CGT rate planning."
 h1: "Preparing a Pharmacy for Sale: Accounts, Margin Story and Tax"
 summary: "A practical guide to the two levers that determine sale price and tax: a clean, buyer-ready margin story and Business Asset Disposal Relief timing around the 2026/27 rate."
 keyTakeaways:

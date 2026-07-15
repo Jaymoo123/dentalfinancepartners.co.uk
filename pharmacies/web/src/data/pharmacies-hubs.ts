@@ -13,7 +13,7 @@ export const pharmacyHubs: PharmacyHub[] = [
     title: "Pharmacy Owners",
     headline: "Specialist accountants for community pharmacy owners who understand how NHS contract economics actually work",
     metaTitle: "Accountants for Pharmacy Owners | NHS Contract Specialists",
-    metaDescription: "Specialist accounting for community pharmacy owners: FP34 cash cycle, Category M margin analysis, Pharmacy First income, VAT retail schemes, and payroll. England.",
+    metaDescription: "Specialist accounting for pharmacy owners: FP34 cash cycle, Category M margin, Pharmacy First income, VAT retail schemes and payroll. England.",
     intro: "A community pharmacy is not a retail shop with a dispensary bolted on. Your income flows from the NHS under the Community Pharmacy Contractual Framework as reimbursement and remuneration, not till takings, and three things a generalist accountant routinely gets wrong (the FP34 cash lag, retrospective Category M margin adjustment, and your VAT-mixed status) compound into material errors month after month. We work exclusively with pharmacy owners because the contract literacy cannot be faked.",
     stats: [
       { value: "2 months", label: "Typical lag between FP34 prescription submission and NHSBSA payment receipt, driving working-capital planning" },
@@ -84,7 +84,7 @@ export const pharmacyHubs: PharmacyHub[] = [
     title: "Buying a Pharmacy",
     headline: "Accountants for pharmacy buyers: due diligence, deal structure, and the tax decisions no broker will make for you",
     metaTitle: "Buying a Pharmacy Accountant UK | Deal Structure & Due Diligence",
-    metaDescription: "Specialist accounting for buying a UK pharmacy. Share vs asset purchase, goodwill, NHS contract due diligence, capital allowances, and lender-ready accounts.",
+    metaDescription: "Specialist accounting for buying a UK pharmacy. Share vs asset, goodwill, NHS contract due diligence, capital allowances and lender-ready accounts.",
     intro: "When you buy a community pharmacy you are not buying a shop. You are buying an NHS contract, and market entry is regulated under the NHS (Pharmaceutical and Local Pharmaceutical Services) Regulations 2013. The broker finds the deal; we do the work the broker cannot: financial due diligence on the contract income, the share-versus-asset structuring decision, goodwill tax treatment, and a set of accounts your lender will actually accept. Whether you are an existing owner adding a second store or a first-time buyer, the NHS-contract layer is where most acquirers get caught out.",
     stats: [
       { value: "0.5% vs up to 5%", label: "Stamp duty on a share purchase (0.5% on share value) against SDLT at non-residential rates up to 5% on property in an asset purchase: the structuring decision is a real-money choice" },
@@ -293,7 +293,7 @@ export const pharmacyHubs: PharmacyHub[] = [
     title: "Locum Pharmacists",
     headline: "Tax, employment status, and self-assessment guidance for locum pharmacists: what HMRC's own manual says about you",
     metaTitle: "Locum Pharmacist Tax UK | Self-Employment Status & MTD Guide",
-    metaDescription: "Tax and status guidance for locum pharmacists. HMRC ESM4270, IR35, Making Tax Digital from April 2026, cash basis, and the route from locum to pharmacy owner.",
+    metaDescription: "Tax and status guidance for locum pharmacists. HMRC ESM4270, IR35, Making Tax Digital from April 2026, cash basis and the locum-to-owner route.",
     intro: "HMRC publishes a locum-pharmacist-specific page in its Employment Status Manual, reference ESM4270, and its position is more restrictive than many locum pharmacists realise. Employment status for a locum pharmacist is decided by the facts of each engagement, not by what the contract says or what everyone else in the sector does. This page covers the tax and status questions that are specific to pharmacist locums, deduplicated from the generic locum guidance on medical and contractor sites. The only conversion on this page is the take-home comparator tool and, for locums thinking about ownership, the route into our buying-a-pharmacy guidance.",
     stats: [
       { value: "ESM4270", label: "HMRC's Employment Status Manual contains a page specific to locum pharmacists: status is fact-based and HMRC's stated position is restrictive, not permissive" },

@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "Selling a Pharmacy"
 metaTitle: "Pharmacy Goodwill: What It Is Worth (UK)"
-metaDescription: "Understand how pharmacy goodwill is valued in the UK: the two method families, what drives the price up or down, and the corporation tax trap on a company purchase."
+metaDescription: "How pharmacy goodwill is valued in the UK: the two method families, what drives the price up or down and the corporation tax trap on a company purchase."
 h1: "Pharmacy Goodwill: What It Is and What It Is Worth"
 summary: "Goodwill is most of the price in a pharmacy sale, driven by NHS contract strength and item volume, and valued by one of two method families: adjusted EBITDA multiple or pence-per-item benchmark."
 keyTakeaways:

@@ -3,6 +3,7 @@ import "./globals.css";
 import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
 import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
 import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
+import { SiteFooter } from "@/components/layout/SiteFooter";
 import { niche } from "@/config/niche-loader";
 const siteUrl = `https://${niche.domain}`;
 const organizationJsonLd = { "@context": "https://schema.org", "@type": ["ProfessionalService","AccountingService"], "@id": `${siteUrl}#organization`, name: niche.display_name, url: siteUrl, description: niche.description, logo: `${siteUrl}/api/og`, areaServed: "GB" };
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <AnalyticsProvider siteKey={niche.content_strategy.site_key} siteName={niche.display_name} storagePrefix="pfp" posture="opt-out" noTrackPrefixes={["/admin"]}>
             <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
             {children}
+            <SiteFooter />
           </AnalyticsProvider>
         </ConsentProvider>
       </body>

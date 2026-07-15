@@ -57,17 +57,17 @@ faqs:
   <tbody>
     <tr>
       <td>NHS prescription dispensing</td>
-      <td>Zero-rated (<a href="https://www.gov.uk/guidance/health-professionals-pharmaceutical-products-and-vat-notice-70157">VAT Notice 701/57</a>, HP 1)</td>
+      <td>Zero-rated (<a href="https://www.gov.uk/guidance/health-professionals-pharmaceutical-products-and-vat-notice-70157">VAT Notice 701/57</a>)</td>
       <td>Input VAT on related costs is fully recoverable. Zero-rated supplies are taxable supplies for VAT purposes.</td>
     </tr>
     <tr>
       <td>OTC retail sales (most products)</td>
-      <td>Standard-rated at 20% (<a href="https://www.gov.uk/guidance/health-professionals-pharmaceutical-products-and-vat-notice-70157">VAT Notice 701/57</a>, HP 1)</td>
+      <td>Standard-rated at 20% (<a href="https://www.gov.uk/guidance/health-professionals-pharmaceutical-products-and-vat-notice-70157">VAT Notice 701/57</a>)</td>
       <td>VAT is charged on output; input VAT on related costs is recoverable. Also taxable supplies.</td>
     </tr>
     <tr>
       <td>Qualifying pharmacist private services (medical care by a registered health professional)</td>
-      <td>Exempt from VAT (<a href="https://www.gov.uk/guidance/health-professionals-pharmaceutical-products-and-vat-notice-70157">VAT Notice 701/57</a>, HP 2)</td>
+      <td>Exempt from VAT (<a href="https://www.gov.uk/guidance/health-professionals-pharmaceutical-products-and-vat-notice-70157">VAT Notice 701/57</a>)</td>
       <td>No VAT is charged on output, but input VAT on costs used to make these supplies is not automatically recoverable. Partial exemption applies.</td>
     </tr>
   </tbody>
@@ -91,20 +91,20 @@ faqs:
 
 <p>Pharmacy First is an NHS England service under which pharmacies are paid to provide defined clinical pathways for certain conditions without a GP referral. From a tax and accounting perspective, the payments are NHS remuneration income for services delivered under contract. The clinical detail is irrelevant to this analysis; what matters is the income classification and its VAT treatment.</p>
 
-<p>As a <a href="https://www.england.nhs.uk/primary-care/pharmacy/pharmacy-services/pharmacy-first/">Pharmacy First</a> provider (HP 9), a pharmacy receives service fees under the NHS contract. The VAT liability of the service being funded depends on whether the underlying service meets the medical care exemption under <a href="https://www.gov.uk/guidance/health-professionals-pharmaceutical-products-and-vat-notice-70157">VAT Notice 701/57</a>. NHS payment does not itself determine VAT liability, but many Pharmacy First pathways will involve services that qualify as medical care under that notice. The assessment still needs to be made, however, and it should be documented.</p>
+<p>As a <a href="https://www.england.nhs.uk/primary-care/pharmacy/pharmacy-services/pharmacy-first/">Pharmacy First</a> provider, a pharmacy receives service fees under the NHS contract. The VAT liability of the service being funded depends on whether the underlying service meets the medical care exemption under <a href="https://www.gov.uk/guidance/health-professionals-pharmaceutical-products-and-vat-notice-70157">VAT Notice 701/57</a>. NHS payment does not itself determine VAT liability, but many Pharmacy First pathways will involve services that qualify as medical care under that notice. The assessment still needs to be made, however, and it should be documented.</p>
 
 <p>The separate bookkeeping point is equally important and is covered in the next section.</p>
 
 <h2>Service income as a separate line in the books</h2>
 
-<p>Pharmacy First payments and private service income are not part of dispensing income. They have their own fee structures, their own thresholds, and their own payment mechanisms under the NHS contract. <a href="https://www.england.nhs.uk/primary-care/pharmacy/pharmacy-services/pharmacy-first/">NHS England</a> treats these as a distinct and growing payment stream (HP 9).</p>
+<p>Pharmacy First payments and private service income are not part of dispensing income. They have their own fee structures, their own thresholds, and their own payment mechanisms under the NHS contract. <a href="https://www.england.nhs.uk/primary-care/pharmacy/pharmacy-services/pharmacy-first/">NHS England</a> treats these as a distinct and growing payment stream.</p>
 
 <p>For bookkeeping purposes, that means a separate nominal code (or set of codes) for service income. This matters for three reasons specific to pharmacy VAT:</p>
 
 <ul>
   <li>If service income attracts a different VAT treatment from dispensing income, mixing them makes it impossible to produce an accurate VAT return or to apply a retail scheme correctly.</li>
   <li>Partial exemption calculations (described below) require you to know the value of your exempt supplies with reasonable precision. You cannot calculate that from undifferentiated income.</li>
-  <li>The margin profile of dispensing income (driven by Drug Tariff reimbursement, HP 8) and service income are structurally different. Mixing them obscures both.</li>
+  <li>The margin profile of dispensing income (driven by Drug Tariff reimbursement) and service income are structurally different. Mixing them obscures both.</li>
 </ul>
 
 <p>This is not simply a bookkeeping preference. It is a prerequisite for filing a correct VAT return when your pharmacy has a mixed income profile.</p>
@@ -113,7 +113,7 @@ faqs:
 
 <p>A pharmacy that dispensed NHS prescriptions and sold OTC products had, in most cases, no partial-exemption exposure. NHS dispensing is zero-rated, which is a taxable supply; OTC retail is standard-rated, also a taxable supply. All input VAT on costs directly attributable to either stream was recoverable (subject to any non-business use adjustments).</p>
 
-<p>Add exempt supplies and that changes. Under the partial-exemption rules in <a href="https://www.gov.uk/guidance/partial-exemption-vat-notice-706">VAT Notice 706</a> (HP 3), input VAT must be split between:</p>
+<p>Add exempt supplies and that changes. Under the partial-exemption rules in <a href="https://www.gov.uk/guidance/partial-exemption-vat-notice-706">VAT Notice 706</a>, input VAT must be split between:</p>
 
 <ul>
   <li>Input VAT directly attributable to taxable supplies (fully recoverable)</li>
@@ -131,7 +131,7 @@ faqs:
 
 <p>The partial-exemption rules include a de minimis test. Where the total exempt input VAT (the input VAT attributable to exempt supplies, both directly attributed and residual share) falls below HMRC's de minimis limits, a business can treat all input VAT as recoverable as if it had no exempt supplies.</p>
 
-<p>The precise de minimis limits are set out in <a href="https://www.gov.uk/guidance/partial-exemption-vat-notice-706">VAT Notice 706</a> (HP 3). This post does not restate them as a substitute for reading the notice, because the limits apply to your actual figures and the test must be run against those figures, not estimated in the abstract.</p>
+<p>The precise de minimis limits are set out in <a href="https://www.gov.uk/guidance/partial-exemption-vat-notice-706">VAT Notice 706</a>. This post does not restate them as a substitute for reading the notice, because the limits apply to your actual figures and the test must be run against those figures, not estimated in the abstract.</p>
 
 <p>What the de minimis test means in practice for a pharmacy is this: if your private services or NHS service income generates only a modest amount of exempt-related input VAT relative to your total input VAT, the restriction may not affect your recovery at all. But you will not know that without doing the calculation. Assuming you are within the limits without checking is a common and avoidable error.</p>
 

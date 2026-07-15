@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "NHS Contract and Income"
 metaTitle: "Category M Clawbacks Explained | Pharmacy Margin"
-metaDescription: "Category M sets generic drug reimbursement prices centrally and adjusts them retrospectively. Here is why your pharmacy gross margin moves without anything changing at the counter."
+metaDescription: "Category M sets reimbursement prices centrally and adjusts them retrospectively. Why your pharmacy gross margin moves without anything at the counter."
 h1: "Category M and Clawbacks Explained: Why Your Pharmacy Margin Moves on Its Own"
 summary: "Category M sets generic drug reimbursement prices centrally to deliver a target margin across the sector, then adjusts them retrospectively when the sector earns above or below that target. That mechanism, not your counter activity, is why your gross margin moves."
 keyTakeaways:
@@ -106,7 +106,7 @@ faqs:
   <li>Your reimbursement income changes in the next period without anything changing at your counter.</li>
 </ol>
 
-<p>Source: <a href="https://www.nhsbsa.nhs.uk/pharmacies-gp-practices-and-appliance-contractors/drug-tariff">NHSBSA Drug Tariff</a> (HP 8).</p>
+<p>Source: <a href="https://www.nhsbsa.nhs.uk/pharmacies-gp-practices-and-appliance-contractors/drug-tariff">NHSBSA Drug Tariff</a>.</p>
 
 <p>Adjustments are periodic and can be volatile. There is no fixed schedule that owners can plan around, which is one reason reactive monthly tracking matters more than an annual accounts review.</p>
 

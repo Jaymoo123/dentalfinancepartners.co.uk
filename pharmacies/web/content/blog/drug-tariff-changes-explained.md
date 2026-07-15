@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "NHS Contract and Income"
 metaTitle: "Drug Tariff Explained: Reimbursement, Categories & Changes"
-metaDescription: "Plain-English guide to the NHS Drug Tariff: what it is, how reimbursement and remuneration work, the main categories, and how to track monthly changes via NHSBSA."
+metaDescription: "Plain-English guide to the NHS Drug Tariff: what it is, how reimbursement and remuneration work, the main categories and how to track monthly changes."
 h1: "The Drug Tariff Explained: Reimbursement Mechanics, Categories, and Monthly Changes"
 summary: "A complete evergreen guide to how the NHS Drug Tariff sets pharmacy reimbursement, the difference between reimbursement and remuneration, the main tariff categories, and where to check current prices and monthly updates."
 keyTakeaways:

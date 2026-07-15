@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "NHS Contract and Income"
 metaTitle: "Pharmacy First Income Accounting | NHS Service Revenue Line"
-metaDescription: "Pharmacy First income is a separate, growing revenue line with its own fee structure. Learn how it books differently from dispensing reimbursement and why it matters."
+metaDescription: "Pharmacy First income is a separate, growing revenue line. How it books differently from dispensing reimbursement and why it matters for your accounts."
 h1: "Accounting for Pharmacy First and NHS Service Income: The Separate Revenue Line You Should Be Tracking"
 summary: "Pharmacy First income is a growing, separately accounted revenue line with its own fee structure and thresholds that must be booked distinctly from dispensing reimbursement."
 keyTakeaways:

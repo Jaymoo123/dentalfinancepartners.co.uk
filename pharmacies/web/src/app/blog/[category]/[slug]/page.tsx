@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { buildOgImageUrl } from "@/lib/schema";
+import { buildOgImageUrl, buildHowToJsonLd, buildFaqJsonLd } from "@/lib/schema";
 import {
   getAllPosts,
   getPostByCategoryAndSlug,
@@ -61,6 +61,24 @@ export default async function BlogPostPage({ params }: Props) {
     <main className="mx-auto max-w-3xl px-6 py-16">
       {post.schema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: post.schema }} />
+      )}
+      {post.howToSteps && post.howToSteps.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: buildHowToJsonLd({
+              name: post.h1,
+              description: post.metaDescription,
+              steps: post.howToSteps,
+            }),
+          }}
+        />
+      )}
+      {post.faqs && post.faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(post.faqs) }}
+        />
       )}
       <p className="text-xs font-semibold uppercase tracking-wider text-neutral-500">
         <Link href="/blog" className="hover:underline">Blog</Link>{" "}

@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "Buying a Pharmacy"
 metaTitle: "Share vs Asset Purchase for a Pharmacy (2026)"
-metaDescription: "Share purchase means 0.5% stamp duty but you inherit the company's history. Asset purchase means SDLT up to 5% on property but a cleaner slate. Pharmacy-specific comparison with worked example."
+metaDescription: "Share purchase: 0.5% stamp duty, inherit company history. Asset purchase: SDLT up to 5% on property, cleaner slate. Pharmacy-specific comparison."
 h1: "Share Purchase vs Asset Purchase for a Pharmacy: the Tax and Structuring Trade-Off"
 summary: "The first structuring decision on any pharmacy acquisition: share deal or asset deal? This post compares entry tax, history, NHS contract continuity, GPhC steps, and the goodwill CT-relief restriction."
 keyTakeaways:

@@ -12,7 +12,7 @@ export const pharmacyServices: PharmacyService[] = [
     title: "Pharmacy Purchase Accounting",
     headline: "Buying a pharmacy means buying an NHS contract, not a shop",
     metaTitle: "Pharmacy Purchase Accounting UK | Deal Support",
-    metaDescription: "Accounting and tax support for pharmacy buyers. Share vs asset structure, goodwill treatment, NHS due diligence, and finance-ready accounts for your lender.",
+    metaDescription: "Accounting and tax support for pharmacy buyers. Share vs asset structure, goodwill treatment, NHS due diligence and finance-ready accounts for your lender.",
     intro: "The two decisions worth real money on a pharmacy acquisition are made before you sign heads of terms, not after: share purchase versus asset purchase, and how goodwill is treated. Market entry is regulated under the NHS (Pharmaceutical and Local Pharmaceutical Services) Regulations 2013, which means the NHS contract, not the shop, is what you are actually buying. We provide deal-support accounting, financial due diligence, and finance-ready accounts for lenders, from first look through to post-completion setup.",
     stats: [
       { value: "0.5% vs up to 5%", label: "Stamp duty on shares versus SDLT on property at non-residential rates: the structuring decision that sets your upfront cost" },
@@ -72,7 +72,7 @@ export const pharmacyServices: PharmacyService[] = [
     title: "Pharmacy Valuation and Goodwill",
     headline: "How community pharmacies are actually priced, and what drives the goodwill",
     metaTitle: "Pharmacy Valuation and Goodwill UK | Method-Level Guide",
-    metaDescription: "Understand how UK community pharmacies are valued. Adjusted EBITDA and pence-per-item methods explained. Goodwill, NHS contract, and tax consequences for buyers and sellers.",
+    metaDescription: "How UK community pharmacies are valued. Adjusted EBITDA and pence-per-item methods. Goodwill, NHS contract and tax consequences for buyers and sellers.",
     intro: "Community pharmacies are valued on a multiple of adjusted EBITDA and on pence-per-item benchmarks. Goodwill dominates the price because the value is driven by the NHS contract and prescription volume, not the shop fittings or the retail stock. We explain the method transparently, help buyers and sellers understand what the numbers mean, and provide valuation support for transactions, disputes, and planning purposes. We stay strictly method-level: we do not assert a specific multiple without a cited market source, because an invented number here is the most damaging thing we could give a buyer or seller.",
     stats: [
       { value: "Goodwill", label: "Dominates the pharmacy purchase price, driven by NHS contract income and prescription item volume rather than physical assets" },
@@ -102,7 +102,7 @@ export const pharmacyServices: PharmacyService[] = [
     title: "NHS Payment Reconciliation (FP34)",
     headline: "Your pharmacy income is a contract, not a till. Reconcile it accordingly.",
     metaTitle: "NHS FP34 Payment Reconciliation | Pharmacy Accountants",
-    metaDescription: "Specialist NHS FP34 reconciliation for community pharmacies. Contract-driven income, NHSBSA payment lag, Drug Tariff margin variance, and Pharmacy First accounting.",
+    metaDescription: "FP34 reconciliation for community pharmacies. Contract-driven income, NHSBSA payment lag, Drug Tariff margin variance and Pharmacy First accounting.",
     intro: "Community pharmacy income is reimbursement (Drug Tariff prices) plus remuneration (fees and service payments) under the Community Pharmacy Contractual Framework. It is not shop takings, and a generalist accountant who treats it as retail income will misstate your profit, your working capital, and your tax position. The FP34 payment cycle means prescriptions submitted one month are paid roughly two months later, with an advance on account, and Drug Tariff and Category M clawback means your gross margin is set centrally and adjusted retrospectively. We reconcile the NHSBSA schedules to your ledger monthly, track margin variance against the Tariff, and model the working-capital gap the payment lag creates.",
     stats: [
       { value: "~2-month lag", label: "FP34 prescriptions submitted monthly; NHSBSA payment arrives roughly two months later with an advance on account" },
@@ -132,7 +132,7 @@ export const pharmacyServices: PharmacyService[] = [
     title: "Pharmacy VAT and Retail Schemes",
     headline: "Pharmacies are VAT-mixed businesses. The mix is the whole point.",
     metaTitle: "Pharmacy VAT Retail Schemes UK | Zero-Rated vs Standard",
-    metaDescription: "VAT advice for UK community pharmacies. NHS dispensing is zero-rated, not exempt. Retail scheme selection, input VAT recovery, partial exemption, and the £90,000 threshold.",
+    metaDescription: "VAT advice for UK community pharmacies. NHS dispensing is zero-rated, not exempt. Retail scheme selection, input VAT recovery and partial exemption.",
     intro: "Community pharmacies are registered for VAT and structurally VAT-mixed: NHS-dispensed prescription drugs are zero-rated, most over-the-counter retail sales are standard-rated, and certain pharmacist services can be exempt or standard-rated depending on what is supplied and how. This mix means a pharmacy almost always reclaims more input VAT than a pure retailer expects, because zero-rated outputs let you recover input VAT on costs attributable to that dispensing activity. Getting the retail scheme wrong, or failing to map the supply lines correctly, systematically overpays VAT. Getting it right is the strongest differentiation point in pharmacy accounting, and no generalist accountant can fake the literacy it requires.",
     stats: [
       { value: "Zero-rated", label: "NHS-dispensed prescription drugs: zero-rated for VAT, allowing input VAT recovery on related costs (not exempt, which would block recovery)" },
@@ -162,7 +162,7 @@ export const pharmacyServices: PharmacyService[] = [
     title: "Pharmacy Payroll and Workforce Costs",
     headline: "What your pharmacy team actually costs: employer NIC at 15%, offset by up to £10,500",
     metaTitle: "Pharmacy Payroll UK | Employer NIC 15% | Staff Costs",
-    metaDescription: "Payroll and workforce cost planning for UK community pharmacies. Employer NIC 15% above £5,000 from April 2025, Employment Allowance £10,500, and current-rate compliance.",
+    metaDescription: "Payroll for UK community pharmacies. Employer NIC 15% above £5,000 from April 2025, Employment Allowance £10,500 and current-rate compliance.",
     intro: "A community pharmacy carries a real payroll: dispensers, counter staff, and often a second pharmacist or locum cover. Employer (Class 1 secondary) NIC is 15% above a £5,000 secondary threshold from 6 April 2025, and the Employment Allowance is £10,500 from the same date for eligible employers. A lot of live accounting content and payroll software documentation still quotes the old 13.8% rate above a £9,100 threshold with a £5,000 allowance, all of which are stale. Running payroll on stale figures either overpays HMRC or creates a compliance liability. We run your pharmacy payroll on current rates, model the true cost of your workforce, and apply the Employment Allowance correctly where you are eligible.",
     stats: [
       { value: "15% / £5,000", label: "Employer Class 1 secondary NIC rate and secondary threshold from 6 April 2025. Not 13.8% above £9,100, which is stale." },
@@ -192,7 +192,7 @@ export const pharmacyServices: PharmacyService[] = [
     title: "Pharmacy Incorporation and Structure",
     headline: "Should your pharmacy be a limited company? It depends on profit, extraction, and group structure.",
     metaTitle: "Pharmacy Incorporation and Structure UK | CT and Dividends",
-    metaDescription: "Incorporation and profit-extraction advice for UK pharmacy owners. CT 25%/19% marginal, dividends 10.75/35.75/39.35% with £500 allowance, associated companies, and superintendent requirement.",
+    metaDescription: "Incorporation advice for UK pharmacy owners. CT 25%/19%, dividends 10.75/35.75/39.35%, associated companies trap and superintendent requirement.",
     intro: "Incorporating a pharmacy is not automatically the right decision, and it is not always the wrong one. Corporation tax is 25% on profits over £250,000 and 19% on profits up to £50,000, with Marginal Relief between the two thresholds, but both limits are divided by the number of associated companies. A multi-store owner with separate companies loses lower-rate headroom faster than they expect. Profit extraction from a company is a two-layer calculation: the company pays corporation tax first, and dividends are paid from post-tax profit and taxed at 10.75%, 35.75%, or 39.35% in 2026/27 with a £500 dividend allowance. There is also a pharmacy-specific regulatory mechanic generalists miss: a company that owns a pharmacy requires a superintendent pharmacist. We model the structure decision honestly and set it up correctly.",
     stats: [
       { value: "25% / 19%", label: "Corporation tax main rate above £250,000 and small-profits rate up to £50,000, with Marginal Relief between. Both limits divide by associated companies." },
@@ -222,7 +222,7 @@ export const pharmacyServices: PharmacyService[] = [
     title: "Pharmacy Benchmarking and Margin Analysis",
     headline: "Where pharmacy margin actually comes from, and where it quietly leaks",
     metaTitle: "Pharmacy Benchmarking and Margin Analysis UK",
-    metaDescription: "Financial benchmarking and margin analysis for UK community pharmacies. Category M clawback, Drug Tariff variance, Pharmacy First income, and monthly management accounts.",
+    metaDescription: "Financial benchmarking and margin analysis for UK community pharmacies. Category M clawback, Drug Tariff variance and Pharmacy First income tracking.",
     intro: "Community pharmacy gross margin is set centrally by the Drug Tariff and retrospectively adjusted via Category M clawback. That means your margin is not a number you control at the point of dispensing; it is a number that emerges from the Tariff movement in subsequent months. Margin variance analysis against the Tariff, not year-end bookkeeping, is the core monthly job. Service income under Pharmacy First and similar schemes is a separately accounted, growing revenue line that must be tracked apart from dispensing to see the true picture. Pharmacy income is contract-driven, not till-driven, which is why benchmarking a pharmacy against generic retail metrics is meaningless. We bring the literacy a generalist accountant structurally cannot.",
     stats: [
       { value: "Drug Tariff", label: "Sets reimbursement prices centrally. Category M clawback adjusts those prices retrospectively, meaning gross margin on NHS dispensing is not fixed at the point of dispensing." },

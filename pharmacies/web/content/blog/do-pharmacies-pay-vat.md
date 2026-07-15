@@ -5,7 +5,7 @@ date: "2026-07-14"
 author: ""
 category: "VAT and Retail Schemes"
 metaTitle: "Do Pharmacies Pay VAT? The Mixed-Supply Answer"
-metaDescription: "NHS dispensing is zero-rated; most OTC retail is standard-rated. A pharmacy is a VAT-mixed business that usually reclaims more than a plain retailer expects."
+metaDescription: "NHS dispensing is zero-rated; most OTC retail is standard-rated. A pharmacy is a VAT-mixed business that reclaims more than a plain retailer expects."
 h1: "Do Pharmacies Pay VAT? Zero-Rated Dispensing, Standard-Rated Shelf, and Why Registration Usually Helps"
 summary: "A pharmacy is almost always VAT-registered, but its supplies are mixed: NHS dispensing is zero-rated while most OTC retail is standard-rated, giving it a different VAT profile from any other type of shop."
 keyTakeaways:

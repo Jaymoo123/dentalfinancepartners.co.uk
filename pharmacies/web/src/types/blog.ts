@@ -1,5 +1,7 @@
 export type BlogFaq = { question: string; answer: string };
 
+export type HowToStep = { name: string; text: string };
+
 export type ImageCredit = {
   photographer?: string;
   photographerUrl?: string;
@@ -29,6 +31,7 @@ export type BlogFrontmatter = {
   schema?: string;
   canonical?: string;
   faqs?: BlogFaq[];
+  howToSteps?: HowToStep[];
 };
 
 export type BlogPost = BlogFrontmatter & {
