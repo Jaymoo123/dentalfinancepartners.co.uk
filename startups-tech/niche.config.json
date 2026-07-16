@@ -1,6 +1,6 @@
 {
   "niche_id": "startups-tech",
-  "display_name": "Founder Finance Partners",
+  "display_name": "Founder Tax Partners",
   "legal_name": "Ashfield Trading Ltd",
   "company": {
     "number": "16358723",
@@ -15,7 +15,7 @@
     "enquiry_retention_months": 24
   },
   "partner": { "name": "Reflex Accounting", "privacy_policy_url": null },
-  "domain": "www.founderfinancepartners.co.uk",
+  "domain": "www.foundertaxpartners.co.uk",
   "tagline": "Specialist accountants for funded and scaling UK startups: R&D relief, SEIS/EIS, EMI and share schemes, investor-ready accounts",
   "description": "Specialist accountants for funded and scaling UK startups: R&D relief, SEIS/EIS, EMI and share schemes, investor-ready accounts",
   "brand": {
@@ -24,7 +24,7 @@
     "publisher_logo_url": "/api/og"
   },
   "contact": {
-    "email": "hello@founderfinancepartners.co.uk",
+    "email": "hello@foundertaxpartners.co.uk",
     "phone": "+44 20 0000 0000"
   },
   "navigation": [

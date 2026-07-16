@@ -1,6 +1,6 @@
 {
   "site": "ecommerce",
-  "displayName": "Ecommerce Tax Partners",
+  "displayName": "Ecommerce Finance",
   "paths": {
     "repoRoot": "C:/Users/user/Documents/Accounting",
     "worktreeBase": "C:/Users/user/Documents",
@@ -18,7 +18,7 @@
   },
   "vercel": {
     "projectJson": "ecommerce/web/.vercel/project.json",
-    "productionDomain": "www.ecommercetaxpartners.co.uk"
+    "productionDomain": "www.ecommercefinance.co.uk"
   },
   "indexnow": {
     "module": "optimisation_engine.indexing.submit_indexnow"

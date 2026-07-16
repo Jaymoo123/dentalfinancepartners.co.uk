@@ -11,7 +11,7 @@ export const cryptoHubs: CryptoHub[] = [
     slug: "investors",
     title: "Investors",
     headline: "CGT and Self Assessment for UK crypto investors",
-    metaTitle: "Crypto Investor Tax UK | Digital Asset Tax Partners",
+    metaTitle: "Crypto Investor Tax UK | Crypto Tax Partners",
     metaDescription: "Specialist UK tax accountants for crypto investors. CGT, s104 pooling, AEA offset and Self Assessment for UK cryptoasset holders.",
     intro: "For most UK crypto holders, every sale, swap and spend is a Capital Gains Tax event. HMRC treats the great majority of individual holders as investors, not financial traders, so gains fall under CGT rather than income tax. Getting it right means applying the correct s104 pooling method, the correct band-split rate, and counting every crypto-to-crypto swap as a disposal, not just the times you cashed out to pounds.",
     stats: [
@@ -83,7 +83,7 @@ export const cryptoHubs: CryptoHub[] = [
     slug: "day-traders",
     title: "Day Traders",
     headline: "Investor vs trader status and high-volume CGT for UK day traders",
-    metaTitle: "Day Trader Tax UK | Investor vs Trader Status | Digital Asset Tax Partners",
+    metaTitle: "Day Trader Tax UK | Investor vs Trader Status | Crypto Tax Partners",
     metaDescription: "UK tax for day traders in crypto, forex and CFDs. Investor vs trader status, badges of trade, high-volume CGT reconciliation.",
     intro: "Trading crypto at high frequency does not make you a financial trader for UK tax purposes. HMRC expects trading treatment only in exceptional circumstances; high volume alone is not enough. The honest position is the counter-intuitive one: trader status is usually a worse outcome than investor status, because trading profits are subject to income tax at up to 45% plus Class 4 NIC, whereas CGT tops out at 24%. Scottish taxpayers have devolved income tax bands, which can shift this comparison. The real jobs here are a defensible investor-vs-trader status opinion and high-volume reconciliation that DIY software cannot finish.",
     stats: [
@@ -151,7 +151,7 @@ export const cryptoHubs: CryptoHub[] = [
     slug: "defi-and-staking",
     title: "DeFi and Staking",
     headline: "DeFi and staking tax for UK cryptoasset participants",
-    metaTitle: "DeFi and Staking Tax UK | Digital Asset Tax Partners",
+    metaTitle: "DeFi and Staking Tax UK | Crypto Tax Partners",
     metaDescription: "UK tax for DeFi and staking participants. Disposal events, staking income, LP entries and HMRC guidance on DeFi transactions.",
     intro: "DeFi tax has no clean, settled rule. Whether a return is income or capital, and whether depositing tokens into a protocol is itself a disposal, depends on the protocol mechanics and whether beneficial ownership transfers. HMRC's published analysis covers many DeFi structures, but the legislative fix consulted on in 2023 has not been enacted. The honest position, the one that protects you, is to read each protocol correctly rather than apply a generic classification. Every DeFi position on this page is stated as HMRC's current view, not settled law.",
     stats: [
@@ -223,7 +223,7 @@ export const cryptoHubs: CryptoHub[] = [
     slug: "nft-creators-and-flippers",
     title: "NFT Creators and Flippers",
     headline: "NFT tax for UK creators and flippers",
-    metaTitle: "NFT Tax UK | CGT and Income Tax for NFT Creators | Digital Asset Tax Partners",
+    metaTitle: "NFT Tax UK | CGT and Income Tax for NFT Creators | Crypto Tax Partners",
     metaDescription: "UK tax for NFT creators and traders. CGT on disposals, income tax on royalties, trader vs investor status for NFT flippers.",
     intro: "NFT tax in the UK turns on one question: are you creating or flipping? Creating and selling your own NFTs, and earning ongoing royalties, is likely to be income from a trade or profession. Buying and reselling NFTs you did not create is usually CGT on each disposal. These are two different tax pictures, and getting the split wrong, treating creator income as a capital gain or ignoring flip-on-flip CGT, is the most common error. Both sides carry their own reporting obligations.",
     stats: [
@@ -291,7 +291,7 @@ export const cryptoHubs: CryptoHub[] = [
     slug: "miners",
     title: "Miners",
     headline: "Crypto mining tax for UK miners: income, CGT and the two-step",
-    metaTitle: "Crypto Mining Tax UK | Income and CGT for Miners | Digital Asset Tax Partners",
+    metaTitle: "Crypto Mining Tax UK | Income and CGT for Miners | Crypto Tax Partners",
     metaDescription: "UK tax for crypto miners. Mining rewards taxable as miscellaneous or trading income on receipt; CGT on later disposal. Two-step calculation explained.",
     intro: "Mining rewards are taxable in the UK on receipt, valued in sterling at the date you receive them, and again when you dispose of the mined tokens. These are two separate tax events. The receipt triggers income tax (as miscellaneous income, or as trading income if the activity amounts to a trade). The disposal triggers CGT on any gain above the receipt-date value, which is your base cost. Missing either leg, or double-counting, are the two errors that make DIY mining returns wrong.",
     stats: [
@@ -363,7 +363,7 @@ export const cryptoHubs: CryptoHub[] = [
     slug: "businesses",
     title: "Businesses",
     headline: "Crypto tax for UK businesses: Corporation Tax, VAT and PAYE",
-    metaTitle: "Business Crypto Tax UK | Companies Holding or Accepting Crypto | Digital Asset Tax Partners",
+    metaTitle: "Business Crypto Tax UK | Companies Holding or Accepting Crypto | Crypto Tax Partners",
     metaDescription: "UK corporation tax for businesses holding, accepting or paying in cryptoassets. CT on gains, VAT on goods and services, PAYE on token salaries.",
     intro: "A company that holds, accepts or pays in cryptoassets is a different taxpayer to an individual. Crypto gains in a company sit in Corporation Tax, not Capital Gains Tax, and a company has no annual exempt amount. The accounting treatment of crypto on the balance sheet, the VAT position when accepting crypto for goods or services, and the PAYE and NIC obligations when paying staff in tokens each need the correct analysis. And from 1 January 2026, platforms must collect transaction data under CARF, so the company's exchange accounts are visible to HMRC from the start of 2027.",
     stats: [

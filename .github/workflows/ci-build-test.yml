@@ -55,10 +55,10 @@ jobs:
           charities|https://www.brand-tbd-charities.invalid
           hospitality|https://www.brand-tbd-hospitality.invalid
           care|https://www.brand-tbd-care.invalid
-          crypto|https://www.digitalassettaxpartners.co.uk
-          pharmacies|https://www.pharmacyfinancepartners.co.uk
-          startups-tech|https://www.founderfinancepartners.co.uk
-          ecommerce|https://www.ecommercetaxpartners.co.uk
+          crypto|https://www.cryptotaxpartners.co.uk
+          pharmacies|https://www.pharmacytax.co.uk
+          startups-tech|https://www.foundertaxpartners.co.uk
+          ecommerce|https://www.ecommercefinance.co.uk
           '
 
           FULL=false

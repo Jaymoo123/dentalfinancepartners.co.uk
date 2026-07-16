@@ -16,7 +16,7 @@ export const hospitalityHubs: HospitalityHub[] = [
     slug: "restaurants",
     title: "Restaurants",
     headline: "Specialist accounts, VAT and payroll for restaurant operators",
-    metaTitle: "Accountants for Restaurants | Hospitality Finance Partners",
+    metaTitle: "Accountants for Restaurants | Hospitality Tax",
     metaDescription:
       "Specialist accountants for restaurant owners and operators. Food VAT, tronc schemes, EPOS reconciliation, payroll and annual accounts for UK restaurants.",
     intro:
@@ -93,7 +93,7 @@ export const hospitalityHubs: HospitalityHub[] = [
     slug: "pubs-and-bars",
     title: "Pubs and Bars",
     headline: "Specialist accounts, duty and payroll for pub and bar operators",
-    metaTitle: "Accountants for Pubs and Bars | Hospitality Finance Partners",
+    metaTitle: "Accountants for Pubs and Bars | Hospitality Tax",
     metaDescription:
       "Specialist accountants for pub and bar operators. Alcohol duty, draught relief, wet and dry GP splits, Machine Games Duty, tronc and payroll for UK licensed premises.",
     intro:
@@ -170,7 +170,7 @@ export const hospitalityHubs: HospitalityHub[] = [
     slug: "takeaways",
     title: "Takeaways",
     headline: "Accounts, food VAT and compliance for takeaway operators",
-    metaTitle: "Accountants for Takeaways | Hospitality Finance Partners",
+    metaTitle: "Accountants for Takeaways | Hospitality Tax",
     metaDescription:
       "Specialist accountants for takeaway owners. Hot food VAT, delivery platform reconciliation, cash takings, MTD and annual accounts for UK takeaways and fast food.",
     intro:
@@ -247,7 +247,7 @@ export const hospitalityHubs: HospitalityHub[] = [
     slug: "hotels-and-guesthouses",
     title: "Hotels and Guesthouses",
     headline: "Specialist accounts, TOMS and payroll for hotels, B&Bs and guesthouses",
-    metaTitle: "Accountants for Hotels and Guesthouses | Hospitality Finance Partners",
+    metaTitle: "Accountants for Hotels and Guesthouses | Hospitality Tax",
     metaDescription:
       "Specialist accountants for hotel, guesthouse and B&B operators. TOMS, accommodation VAT, occupancy accounting, capital allowances and payroll for UK hotels.",
     intro:
@@ -324,7 +324,7 @@ export const hospitalityHubs: HospitalityHub[] = [
     slug: "cafes-and-coffee-shops",
     title: "Cafes and Coffee Shops",
     headline: "Accounts, VAT and payroll for cafe and coffee shop operators",
-    metaTitle: "Accountants for Cafes and Coffee Shops | Hospitality Finance Partners",
+    metaTitle: "Accountants for Cafes and Coffee Shops | Hospitality Tax",
     metaDescription:
       "Specialist accountants for cafe and coffee shop owners. Food and drink VAT, Small Business Rate Relief, payroll, MTD and annual accounts for UK cafes.",
     intro:
@@ -401,7 +401,7 @@ export const hospitalityHubs: HospitalityHub[] = [
     slug: "caterers-and-street-food",
     title: "Caterers and Street Food",
     headline: "Accounts, VAT and payroll for event caterers and street food operators",
-    metaTitle: "Accountants for Caterers and Street Food | Hospitality Finance Partners",
+    metaTitle: "Accountants for Caterers and Street Food | Hospitality Tax",
     metaDescription:
       "Specialist accountants for event caterers and street food operators. Catering VAT, mobile unit capital allowances, employment status, cash basis and payroll for UK caterers.",
     intro:

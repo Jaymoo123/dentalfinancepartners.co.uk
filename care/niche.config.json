@@ -1,6 +1,6 @@
 {
   "niche_id": "care",
-  "display_name": "Care Finance Partners",
+  "display_name": "Care Home Tax",
   "legal_name": "Ashfield Trading Ltd",
   "partner": null,
   "company": {
@@ -15,7 +15,7 @@
     "vat_number": null,
     "enquiry_retention_months": 24
   },
-  "domain": "www.carefinancepartners.co.uk",
+  "domain": "www.carehometax.co.uk",
   "tagline": "UK care providers (care homes, domiciliary care, supported living): accounts, payroll, VAT and CQC-linked financial compliance",
   "description": "UK care providers (care homes, domiciliary care, supported living): accounts, payroll, VAT and CQC-linked financial compliance",
   "brand": {
@@ -24,7 +24,7 @@
     "publisher_logo_url": "/api/og"
   },
   "contact": {
-    "email": "hello@carefinancepartners.co.uk",
+    "email": "hello@carehometax.co.uk",
     "phone": "+44 20 0000 0000"
   },
   "navigation": [

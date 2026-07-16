@@ -6,7 +6,7 @@ export const investorVsTraderChecker: GenericTool = {
   name: "Investor vs Trader Status Checker",
   category: "Status and Classification",
   oneLiner: "See how HMRC badges of trade apply to your crypto activity. Almost all individuals are investors (CGT), not traders.",
-  metaTitle: "Crypto Investor vs Trader Status Checker | Digital Asset Tax Partners",
+  metaTitle: "Crypto Investor vs Trader Status Checker | Crypto Tax Partners",
   metaDescription: "Check whether your UK crypto activity is likely investment (CGT at 18%/24%) or trading (income tax up to 45%). Badges-of-trade analysis. Trader status is rare and usually worse.",
   intro: "Answer three questions about your activity. The tool applies the HMRC badges of trade and shows whether your position looks like investment (CGT) or trading (income tax). Almost all individuals are investors.",
   embedHeight: 520,

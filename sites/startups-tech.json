@@ -1,6 +1,6 @@
 {
   "site": "startups-tech",
-  "displayName": "Founder Finance Partners",
+  "displayName": "Founder Tax Partners",
   "paths": {
     "repoRoot": "C:/Users/user/Documents/Accounting",
     "worktreeBase": "C:/Users/user/Documents",
@@ -18,7 +18,7 @@
   },
   "vercel": {
     "projectJson": "startups-tech/web/.vercel/project.json",
-    "productionDomain": "www.founderfinancepartners.co.uk"
+    "productionDomain": "www.foundertaxpartners.co.uk"
   },
   "indexnow": {
     "module": "optimisation_engine.indexing.submit_indexnow"

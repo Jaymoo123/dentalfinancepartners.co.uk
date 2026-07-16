@@ -2,7 +2,7 @@
 
 You are writing ONE launch-core asset for a new UK charity-accountancy site at `charities/web`
 (repo root `C:\Users\user\Documents\Accounting`). Read this file + your assigned brief + the
-facts source before writing. Site working brand = **Trustee Finance Partners** (do NOT hardcode
+facts source before writing. Site working brand = **Trustee Tax** (do NOT hardcode
 the brand name in body copy; write about "the charity", "trustees", "your charity". CTA/brand is
 injected by the page template and site config, not by your content file).
 
@@ -85,7 +85,7 @@ raw-HTML style of `charities/web/content/guides/example-guide.md` and the blog p
 ## MONEY pages (services / for) → TypeScript data entries
 These live in shared data files. Edit ONLY the entries your dispatch assigns; keep the existing
 `interface` and the `getCharityService`/`getCharityType` helper unchanged. Each entry fields:
-`slug` (do not change), `title`, `headline`, `metaTitle` (may include " | Trustee Finance Partners"),
+`slug` (do not change), `title`, `headline`, `metaTitle` (may include " | Trustee Tax"),
 `metaDescription` (<=155 chars), `intro`, `stats` (exactly 3 × {value,label}), `challenges`
 (exactly 4 × {title,body}), `howWeHelp` (exactly 3 × {title,body}), `faqs` (2+ × {question,answer}).
 Every figure in an entry must match `docs/charities/house_positions.md` and be safe to state (no

@@ -2,7 +2,7 @@
 
 Same site, brand and facts as wave 1. You are writing ONE wave-2 asset for the UK ecommerce/
 marketplace-seller accountancy site at `ecommerce/web` (repo root `C:\Users\user\Documents\Accounting`).
-Working brand **Ecommerce Tax Partners** — do NOT hardcode the brand in body copy; write about "the
+Working brand **Ecommerce Finance** — do NOT hardcode the brand in body copy; write about "the
 site", "we", "your business", "online sellers". Brand + CTA are injected by the template/site config.
 
 ## Inputs (read first, in order)

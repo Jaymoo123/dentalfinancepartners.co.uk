@@ -11,7 +11,7 @@ export const cryptoServices: CryptoService[] = [
     slug: "hmrc-disclosure",
     title: "HMRC Disclosure",
     headline: "HMRC crypto disclosure for unpaid cryptoasset tax",
-    metaTitle: "HMRC Crypto Disclosure Service | Digital Asset Tax Partners",
+    metaTitle: "HMRC Crypto Disclosure Service | Crypto Tax Partners",
     metaDescription: "Specialist help with HMRC crypto disclosure. Nudge letter response, years assessable by behaviour band, penalty range and voluntary disclosure route.",
     intro: "If you have received a nudge letter about cryptoassets, or you know you have undeclared gains before HMRC's Cryptoasset Reporting Framework begins flowing exchange data from January 2027, the right move is a managed, voluntary disclosure, not silence. HMRC operates a dedicated <a href=\"https://www.gov.uk/guidance/tell-hmrc-about-unpaid-tax-on-cryptoassets\">cryptoasset disclosure service</a> separate from the general Worldwide Disclosure Facility. Coming forward voluntarily, with a correctly reconstructed position including <a href=\"https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22200\">s104 pooling</a> at average cost, puts you in the best possible position on the number of years assessed and the penalty outcome. The firm handles the full process: reconstruct your transaction history, compute the correct liability, prepare and submit the disclosure, and manage HMRC correspondence through to settlement.",
     stats: [
@@ -90,7 +90,7 @@ export const cryptoServices: CryptoService[] = [
     slug: "crypto-self-assessment",
     title: "Crypto Self Assessment",
     headline: "Self Assessment filing for UK cryptoasset holders",
-    metaTitle: "Crypto Self Assessment UK | SA108 Filing | Digital Asset Tax Partners",
+    metaTitle: "Crypto Self Assessment UK | SA108 Filing | Crypto Tax Partners",
     metaDescription: "Self Assessment preparation and filing for crypto investors and traders. SA108 cryptoasset pages, CGT computation, staking income and HMRC deadlines.",
     intro: "If you disposed of cryptoassets, received staking or mining rewards, or held DeFi positions in a tax year, Self Assessment is almost certainly required. The SA108 capital gains supplementary pages carry dedicated cryptoasset entries. Two points catch holders by surprise: gains must be reported even when no tax is due once disposal proceeds exceed the reporting threshold, and <a href=\"https://www.gov.uk/guidance/check-if-you-need-to-pay-tax-when-you-sell-cryptoassets\">every crypto-to-crypto swap is a disposal</a> at sterling market value, not just withdrawals to a bank account. The firm handles the full Self Assessment: reconstruct disposals under <a href=\"https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22200\">s104 pooling</a>, compute gains and income-side receipts, complete the SA108 entries, and submit before the 31 January deadline.",
     stats: [
@@ -169,7 +169,7 @@ export const cryptoServices: CryptoService[] = [
     slug: "koinly-recap-reconciliation",
     title: "Koinly and Recap Reconciliation",
     headline: "Review and reconciliation of Koinly and Recap tax reports",
-    metaTitle: "Koinly Recap Tax Report Review UK | Digital Asset Tax Partners",
+    metaTitle: "Koinly Recap Tax Report Review UK | Crypto Tax Partners",
     metaDescription: "Specialist review of Koinly and Recap CGT reports for UK tax. s104 pooling errors, same-day and 30-day matching, DeFi classification and HMRC filing.",
     intro: "You have a Koinly, Recap or CoinTracking report but you are not sure it is UK-correct. The most common reason it might not be is the pooling method: UK individuals must use <a href=\"https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22200\">section 104 pooling at average cost</a> per token, not FIFO, LIFO or specific identification, which are the defaults in US-originated software and in many account setups. A report using the wrong method produces a plausible-looking number that is still wrong. The firm reviews your export, verifies the method settings, applies <a href=\"https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22250\">same-day and 30-day matching</a> where the tool has not, checks swap and transfer classifications, and produces a reconciled position you can file on or disclose from.",
     stats: [
@@ -244,7 +244,7 @@ export const cryptoServices: CryptoService[] = [
     slug: "crypto-cgt-planning",
     title: "Crypto CGT Planning",
     headline: "CGT planning for UK cryptoasset holders",
-    metaTitle: "Crypto CGT Planning UK | AEA, Band and Spouse Planning | Digital Asset Tax Partners",
+    metaTitle: "Crypto CGT Planning UK | AEA, Band and Spouse Planning | Crypto Tax Partners",
     metaDescription: "CGT planning for crypto investors. Annual exempt amount use, basic-rate band planning, spouse transfers and loss harvesting for UK cryptoasset holders.",
     intro: "You can reduce a crypto CGT bill legitimately and recover value from past losses you did not know were claimable. The planning levers available to UK cryptoasset holders are precise and documented: spouse and civil-partner no-gain/no-loss transfers, capital loss harvesting within the four-year claim window, and negligible-value claims on genuinely worthless tokens from rug pulls or dead chains. The rate you are planning against matters: <a href=\"https://www.gov.uk/capital-gains-tax/rates\">18% within your remaining basic-rate band and 24% above</a>, against a <a href=\"https://www.gov.uk/capital-gains-tax/allowances\">£3,000 annual exempt amount</a> per person. The firm reviews your pooled position, models the available levers, prepares any spouse transfers and loss claims correctly, and files the outcome.",
     stats: [
@@ -323,7 +323,7 @@ export const cryptoServices: CryptoService[] = [
     slug: "investor-vs-trader-status",
     title: "Investor vs Trader Status",
     headline: "Investor vs trader status advice for UK crypto and day traders",
-    metaTitle: "Crypto Investor vs Trader Status UK | Digital Asset Tax Partners",
+    metaTitle: "Crypto Investor vs Trader Status UK | Crypto Tax Partners",
     metaDescription: "Badges-of-trade analysis for UK crypto and day traders. Almost all individuals are investors (CGT); trading status is rare and usually worse. Specialist advice.",
     intro: "The common assumption on trading forums is that HMRC \"trader status\" is a prize to claim. The opposite is usually true. <a href=\"https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto20250\">HMRC expects trading treatment only in exceptional circumstances</a>; almost all individuals holding and exchanging cryptoassets are investors for tax, with gains taxed under CGT at <a href=\"https://www.gov.uk/capital-gains-tax/rates\">18% within the remaining basic-rate band and 24% above</a>. Trading profits are income taxed at up to 45% plus <a href=\"https://www.gov.uk/self-employed-national-insurance-rates\">Class 4 National Insurance at 6% on profits between £12,570 and £50,270, and 2% above</a>. Trader status is usually a worse outcome, not a better one. Scottish taxpayers have devolved income tax bands, which can widen this gap further. The firm reviews your activity against the badges of trade, provides a reasoned written position, and tells you how to report consistently with it.",
     stats: [

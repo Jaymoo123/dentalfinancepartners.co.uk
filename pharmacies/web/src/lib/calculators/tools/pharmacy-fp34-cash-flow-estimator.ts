@@ -16,7 +16,7 @@ export const pharmacyFp34CashFlowEstimator: GenericTool = {
   category: "NHS Contract and Income",
   oneLiner:
     "Model the NHSBSA FP34 payment timeline for your pharmacy: see when advances and full settlements arrive each month and estimate the working-capital gap you need to bridge.",
-  metaTitle: "NHS FP34 Cash Flow Calculator for Pharmacies | Pharmacy Finance Partners",
+  metaTitle: "NHS FP34 Cash Flow Calculator for Pharmacies | Pharmacy Tax",
   metaDescription:
     "Estimate the working-capital gap from the NHSBSA FP34 payment lag. Month-by-month receipt timeline based on items dispensed and advance-on-account percentage. Scenario tool.",
   intro:

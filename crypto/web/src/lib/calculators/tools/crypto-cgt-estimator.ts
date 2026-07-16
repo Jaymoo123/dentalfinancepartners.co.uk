@@ -13,7 +13,7 @@ export const cryptoCgtEstimator: GenericTool = {
   name: "Crypto CGT Estimator 2026/27",
   category: "Capital Gains Tax",
   oneLiner: "Estimate your CGT liability on cryptoasset disposals using 2026/27 rates (18%/24%) and the £3,000 annual exempt amount.",
-  metaTitle: "Crypto CGT Calculator 2026/27 | Digital Asset Tax Partners",
+  metaTitle: "Crypto CGT Calculator 2026/27 | Crypto Tax Partners",
   metaDescription: "Estimate UK Capital Gains Tax on cryptoasset disposals. 2026/27 rates: 18% basic rate, 24% higher rate, £3,000 annual exempt amount. Scenario tool.",
   intro: "Enter your total gain from crypto disposals and your other taxable income. The tool applies the £3,000 annual exempt amount and splits any remaining gain across the 18% and 24% rate bands.",
   embedHeight: 480,

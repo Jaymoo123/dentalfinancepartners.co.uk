@@ -2,7 +2,7 @@
 
 You are writing ONE wave-2 content asset for the live UK hospitality-accountancy site at
 `hospitality/web` (repo root `C:\Users\user\Documents\Accounting`). Working brand =
-**Hospitality Finance Partners** (do NOT hardcode the brand in body copy; write about "the
+**Hospitality Tax** (do NOT hardcode the brand in body copy; write about "the
 business", "operators", "your restaurant/pub/hotel". CTA/brand is injected by the page template
 and site config, not by your content file).
 

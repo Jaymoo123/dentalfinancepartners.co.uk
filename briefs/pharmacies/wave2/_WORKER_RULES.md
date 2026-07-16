@@ -2,7 +2,7 @@
 
 You are writing ONE wave-2 BLOG asset for the live pharmacy-accountancy site at `pharmacies/web`
 (repo root `C:\Users\user\Documents\Accounting`). Read this file + your assigned brief + the facts
-source before writing. Working brand = **Pharmacy Finance Partners** (do NOT hardcode the brand
+source before writing. Working brand = **Pharmacy Tax** (do NOT hardcode the brand
 in body copy; write "the firm", "we", "your pharmacy", "pharmacy owners/buyers/sellers/locums").
 Brand + CTA are injected by the template + site config, not by your content file.
 

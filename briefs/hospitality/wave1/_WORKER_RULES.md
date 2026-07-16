@@ -2,7 +2,7 @@
 
 You are writing ONE launch-core asset for a new UK hospitality-accountancy site at `hospitality/web`
 (repo root `C:\Users\user\Documents\Accounting`). Read this file + your assigned brief + the facts
-source before writing. Working brand = **Hospitality Finance Partners** (do NOT hardcode the brand
+source before writing. Working brand = **Hospitality Tax** (do NOT hardcode the brand
 name in body copy; write about "the business", "operators", "your restaurant/pub/hotel". CTA/brand
 is injected by the page template + site config, not by your content file).
 
@@ -85,7 +85,7 @@ Blog categories in use (match your brief exactly): `Hospitality VAT` · `Tips an
 ## MONEY pages (services / for hubs) → TypeScript data entries
 Shared data files. Edit ONLY the entry your dispatch assigns; keep the `interface` and the
 `getHospitalityService`/`getHospitalityHub` helper unchanged. Fields per entry: `slug` (do not
-change), `title`, `headline`, `metaTitle` (may include " | Hospitality Finance Partners"),
+change), `title`, `headline`, `metaTitle` (may include " | Hospitality Tax"),
 `metaDescription` (<=155), `intro`, `stats` (exactly 3 × {value,label}), `challenges` (exactly
 4 × {title,body}), `howWeHelp` (exactly 3 × {title,body}), `faqs` (2+ × {question,answer}). Every
 figure matches house_positions and is safe to state (no HP-gap figures). Operator frame throughout.

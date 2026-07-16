@@ -16,7 +16,7 @@ export const charityTypes: CharityType[] = [
     slug: "cics",
     title: "Community Interest Companies",
     headline: "Accounts and compliance for community interest companies",
-    metaTitle: "Accountants for CICs | Community Interest Company Accounts | Trustee Finance Partners",
+    metaTitle: "Accountants for CICs | Community Interest Company Accounts | Trustee Tax",
     metaDescription:
       "Specialist accountants for community interest companies. CIC34 filing, annual accounts, Corporation Tax and asset lock compliance for CIC directors.",
     intro:
@@ -81,7 +81,7 @@ export const charityTypes: CharityType[] = [
     slug: "social-enterprises",
     title: "Social Enterprises",
     headline: "Accounts and tax advice for social enterprises, whatever your legal form",
-    metaTitle: "Accountants for Social Enterprises | Trustee Finance Partners",
+    metaTitle: "Accountants for Social Enterprises | Trustee Tax",
     metaDescription:
       "Accounts, Corporation Tax and structure advice for social enterprises: CICs, charitable companies, CIOs and mission-led trading organisations across England and Wales.",
     intro:

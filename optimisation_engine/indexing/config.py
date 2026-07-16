@@ -15,19 +15,19 @@ from __future__ import annotations
 
 SITE_INDEXNOW_CONFIG: dict[str, dict[str, str]] = {
     "ecommerce": {
-        "host": "www.ecommercetaxpartners.co.uk",
+        "host": "www.ecommercefinance.co.uk",
         "key": "9432a4ec3fe74d94b73d4d3cb7b5040f",
     },
     "startups-tech": {
-        "host": "www.founderfinancepartners.co.uk",
+        "host": "www.foundertaxpartners.co.uk",
         "key": "3b75b8134bcf8a912ebcacc7fe0b82a5",
     },
     "pharmacies": {
-        "host": "www.pharmacyfinancepartners.co.uk",
+        "host": "www.pharmacytax.co.uk",
         "key": "6e73b9e0cc071b9eef46196d463c98a2",
     },
     "crypto": {
-        "host": "www.digitalassettaxpartners.co.uk",
+        "host": "www.cryptotaxpartners.co.uk",
         "key": "b6631db9fdc7b6422f88a5d2166fe528",
     },
     "care": {

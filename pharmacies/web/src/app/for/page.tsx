@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 import { pharmacyHubs } from "@/data/pharmacies-hubs";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 export const metadata: Metadata = {
-  title: "Who We Help | Pharmacy Finance Partners",
+  title: "Who We Help | Pharmacy Tax",
   description: "Specialist accounting for pharmacy owners, buyers, sellers, pharmacy groups, and locum pharmacists.",
   alternates: { canonical: `${siteConfig.url}/for` },
 };

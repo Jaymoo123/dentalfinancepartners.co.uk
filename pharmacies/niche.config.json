@@ -1,6 +1,6 @@
 {
   "niche_id": "pharmacies",
-  "display_name": "Pharmacy Finance Partners",
+  "display_name": "Pharmacy Tax",
   "legal_name": "Ashfield Trading Ltd",
   "partner": null,
   "company": {
@@ -15,7 +15,7 @@
     "vat_number": null,
     "enquiry_retention_months": 24
   },
-  "domain": "www.pharmacyfinancepartners.co.uk",
+  "domain": "www.pharmacytax.co.uk",
   "tagline": "Specialist accountants for UK community pharmacy owners: NHS contract economics, VAT, buying and selling a pharmacy",
   "description": "Specialist accountants for UK community pharmacy owners: NHS contract economics, VAT, buying and selling a pharmacy",
   "brand": {
@@ -24,7 +24,7 @@
     "publisher_logo_url": "/api/og"
   },
   "contact": {
-    "email": "hello@pharmacyfinancepartners.co.uk",
+    "email": "hello@pharmacytax.co.uk",
     "phone": "+44 20 0000 0000"
   },
   "navigation": [

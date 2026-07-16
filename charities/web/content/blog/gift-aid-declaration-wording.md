@@ -132,4 +132,4 @@ howToSteps:
 
 <p>If your charity processes a high volume of donations and you are not certain your declaration collection meets all the requirements above, a review of your donor database against the checklist in this article is a low-cost way to identify gaps before HMRC does.</p>
 
-<p>For help with Gift Aid compliance, declaration record-keeping or submitting a Charities Online claim, <a href="/contact">get in touch with the team at Trustee Finance Partners</a>.</p>
+<p>For help with Gift Aid compliance, declaration record-keeping or submitting a Charities Online claim, <a href="/contact">get in touch with the team at Trustee Tax</a>.</p>

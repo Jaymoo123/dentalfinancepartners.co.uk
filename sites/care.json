@@ -1,6 +1,6 @@
 {
   "site": "care",
-  "displayName": "Care Finance Partners",
+  "displayName": "Care Home Tax",
   "paths": {
     "repoRoot": "C:/Users/user/Documents/Accounting",
     "worktreeBase": "C:/Users/user/Documents",
@@ -18,7 +18,7 @@
   },
   "vercel": {
     "projectJson": "care/web/.vercel/project.json",
-    "productionDomain": "www.carefinancepartners.co.uk"
+    "productionDomain": "www.carehometax.co.uk"
   },
   "indexnow": {
     "module": "optimisation_engine.indexing.submit_indexnow"

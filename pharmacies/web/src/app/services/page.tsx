@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 import { pharmacyServices } from "@/data/pharmacies-services";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 export const metadata: Metadata = {
-  title: "Services | Pharmacy Finance Partners",
+  title: "Services | Pharmacy Tax",
   description: "Specialist pharmacy accounting services: purchase accounting, sale and CGT, valuation, NHS reconciliation, VAT retail schemes, payroll, incorporation, and benchmarking.",
   alternates: { canonical: `${siteConfig.url}/services` },
 };

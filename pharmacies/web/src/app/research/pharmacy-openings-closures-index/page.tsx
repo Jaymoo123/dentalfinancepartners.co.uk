@@ -6,7 +6,7 @@ import { siteContainerLg } from "@/components/ui/layout-utils";
 import data from "@/data/pharmacy-openings-closures-index.json";
 
 export const metadata: Metadata = {
-  title: "UK Community Pharmacy Openings and Closures Index | Pharmacy Finance Partners",
+  title: "UK Community Pharmacy Openings and Closures Index | Pharmacy Tax",
   description: "Verified data on England's community pharmacy network: NHS dispensing-contractor counts from NHSBSA open data and Companies House SIC 47730 churn figures. Updated quarterly.",
   alternates: { canonical: `${siteConfig.url}/research/pharmacy-openings-closures-index` },
 };

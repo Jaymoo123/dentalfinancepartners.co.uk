@@ -4,7 +4,7 @@ import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { hospitalityServices } from "@/data/hospitality-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Hospitality Accounting Services | Hospitality Finance Partners" },
+  title: { absolute: "Hospitality Accounting Services | Hospitality Tax" },
   description:
     "Hospitality accounting services: tronc scheme setup, payroll, VAT, TOMS and business rates relief. Specialist support for UK restaurants, pubs, hotels, cafes and takeaways.",
 };

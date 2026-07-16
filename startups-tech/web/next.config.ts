@@ -22,8 +22,8 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/:path*",
-        has: [{ type: "host", value: "founderfinancepartners.co.uk" }],
-        destination: "https://www.founderfinancepartners.co.uk/:path*",
+        has: [{ type: "host", value: "foundertaxpartners.co.uk" }],
+        destination: "https://www.foundertaxpartners.co.uk/:path*",
         permanent: true,
       },
     ];

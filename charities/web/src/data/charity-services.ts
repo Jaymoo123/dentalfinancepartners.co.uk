@@ -16,7 +16,7 @@ export const charityServices: CharityService[] = [
     slug: "independent-examination",
     title: "Independent Examination",
     headline: "Independent examination for charities below the audit threshold",
-    metaTitle: "Independent Examination for Charities | Trustee Finance Partners",
+    metaTitle: "Independent Examination for Charities | Trustee Tax",
     metaDescription:
       "Independent examination of charity accounts required by the Charities Act. Fixed fee, Charity Commission compliant, completed within agreed timescales.",
     intro:
@@ -73,7 +73,7 @@ export const charityServices: CharityService[] = [
     slug: "charity-accounts",
     title: "Charity Accounts",
     headline: "Annual charity accounts prepared to the Charities SORP",
-    metaTitle: "Charity Accounts Preparation | Trustee Finance Partners",
+    metaTitle: "Charity Accounts Preparation | Trustee Tax",
     metaDescription:
       "Charity annual accounts prepared under the Charities SORP. Fund accounting, restricted funds, trustees annual report. Filed with the Charity Commission.",
     intro:
@@ -130,7 +130,7 @@ export const charityServices: CharityService[] = [
     slug: "charity-bookkeeping",
     title: "Charity Bookkeeping",
     headline: "Monthly bookkeeping designed for charity fund accounting",
-    metaTitle: "Charity Bookkeeping Services | Trustee Finance Partners",
+    metaTitle: "Charity Bookkeeping Services | Trustee Tax",
     metaDescription:
       "Monthly charity bookkeeping with fund tracking, restricted grant reconciliation and management accounts for trustees. Compliant with the Charities SORP.",
     intro:
@@ -187,7 +187,7 @@ export const charityServices: CharityService[] = [
     slug: "gift-aid",
     title: "Gift Aid",
     headline: "Gift Aid registration, claims and GASDS management",
-    metaTitle: "Gift Aid Claims and GASDS for Charities | Trustee Finance Partners",
+    metaTitle: "Gift Aid Claims and GASDS for Charities | Trustee Tax",
     metaDescription:
       "Gift Aid registration, optimised claims and GASDS (Gift Aid Small Donations Scheme) for UK charities. Maximise the 25% tax reclaim on eligible donations.",
     intro:
@@ -244,7 +244,7 @@ export const charityServices: CharityService[] = [
     slug: "charity-vat",
     title: "Charity VAT",
     headline: "VAT compliance and reliefs specific to charities",
-    metaTitle: "Charity VAT Advice and Compliance | Trustee Finance Partners",
+    metaTitle: "Charity VAT Advice and Compliance | Trustee Tax",
     metaDescription:
       "VAT advice for UK charities: zero-rating reliefs, partial exemption, VAT registration threshold and VAT treatment of trading subsidiaries.",
     intro:

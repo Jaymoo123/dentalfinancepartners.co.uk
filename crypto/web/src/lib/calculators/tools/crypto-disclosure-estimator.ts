@@ -13,7 +13,7 @@ export const cryptoDisclosureEstimator: GenericTool = {
   name: "Crypto Disclosure Scope Estimator",
   category: "HMRC Disclosure",
   oneLiner: "Illustrate the scope of an HMRC crypto disclosure: years assessable and indicative penalty range, by behaviour band.",
-  metaTitle: "Crypto HMRC Disclosure Estimator | Digital Asset Tax Partners",
+  metaTitle: "Crypto HMRC Disclosure Estimator | Crypto Tax Partners",
   metaDescription: "Estimate the scope of an HMRC cryptoasset disclosure: assessable years (4, 6 or 20), unpaid tax total and indicative penalty range by behaviour band.",
   intro: "Select your HMRC behaviour band and enter an estimate of annual unpaid tax. The tool shows how many years can be assessed and the indicative penalty range. Voluntary disclosure reduces penalties significantly.",
   embedHeight: 460,

@@ -22,8 +22,8 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/:path*",
-        has: [{ type: "host", value: "digitalassettaxpartners.co.uk" }],
-        destination: "https://www.digitalassettaxpartners.co.uk/:path*",
+        has: [{ type: "host", value: "cryptotaxpartners.co.uk" }],
+        destination: "https://www.cryptotaxpartners.co.uk/:path*",
         permanent: true,
       },
     ];

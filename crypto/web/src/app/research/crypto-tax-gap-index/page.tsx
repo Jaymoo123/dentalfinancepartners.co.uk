@@ -6,7 +6,7 @@ import { buildDatasetJsonLd } from "@/lib/schema";
 import data from "@/data/uk-crypto-tax-gap-index.json";
 
 export const metadata: Metadata = {
-  title: "UK Crypto Tax Compliance Index | Digital Asset Tax Partners",
+  title: "UK Crypto Tax Compliance Index | Crypto Tax Partners",
   description: "Verified data on UK cryptoasset ownership and the CARF reporting timeline. FCA-sourced ownership figures. HMRC CARF first-report deadline: 31 May 2027.",
   alternates: { canonical: `${siteConfig.url}/research/crypto-tax-gap-index` },
 };

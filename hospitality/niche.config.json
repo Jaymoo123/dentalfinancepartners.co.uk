@@ -1,6 +1,6 @@
 {
   "niche_id": "hospitality",
-  "display_name": "Hospitality Finance Partners",
+  "display_name": "Hospitality Tax",
   "legal_name": "Ashfield Trading Ltd",
   "partner": null,
   "company": {
@@ -15,7 +15,7 @@
     "vat_number": null,
     "enquiry_retention_months": 24
   },
-  "domain": "www.hospitalityfinancepartners.co.uk",
+  "domain": "www.hospitalitytax.co.uk",
   "tagline": "UK hospitality businesses (pubs, restaurants, hotels, cafes, takeaways): accounts, tronc and tips compliance, VAT and payroll",
   "description": "UK hospitality businesses (pubs, restaurants, hotels, cafes, takeaways): accounts, tronc and tips compliance, VAT and payroll",
   "brand": {
@@ -24,7 +24,7 @@
     "publisher_logo_url": "/api/og"
   },
   "contact": {
-    "email": "hello@hospitalityfinancepartners.co.uk",
+    "email": "hello@hospitalitytax.co.uk",
     "phone": "+44 20 0000 0000"
   },
   "navigation": [

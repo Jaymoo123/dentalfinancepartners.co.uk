@@ -94,3 +94,27 @@ Covered clusters are seeded `used=true`, so the net-new backlog query stays hone
    cheap SQL backfill, no spend.
 4. Re-run cadence: existing pools enriched here are FLOORS; re-enrich after new topics land.
    GSC/Bing for trade is 28 days old (site launched 2026-06-16) — re-pull as it matures.
+
+## Coverage reconciliation 2026-07-14 (post-enrichment verification)
+
+Verified the "unwritten backlogs" above against actual local content + live sitemaps. Headline
+lesson: they were mostly phantom — `used` flags were stale. All rows flipped in this pass carry
+notes tag ` coverage-reconcile-2026-07-14`.
+
+**contractors-ir35** — 644 rows; 401 newly flipped `used=true` (incl ~40 junk rows: non-UK /
+off-topic noise). 626/644 covered; 18 genuine gaps remain, all volume ≤10. **POOL EXHAUSTED** —
+needs a fresh pool build (construction pattern: GSC+Bing+DFS) before any writing.
+Script: `scripts/_ir35_coverage_reconcile.py` (re-runnable).
+
+**dentists** — deduped 139→95 rows (44 dupe rows deleted; keep used > volume > lowest-id).
+18 flipped covered (9 via local content, 9 via live sitemap www.dentalfinancepartners.co.uk
+different-slug matches). Final: 94 used / 1 unwritten (dental-practice-cash-flow-forecasting,
+vol 0). **POOL 99% WRITTEN** — phantom backlog; needs pool top-up.
+Script: `scripts/_dentists_dedup_reconcile.py`.
+
+**construction-cis** — 299 rows; 153 newly flipped (tag coverage-reconcile-2026-07-14).
+231 used / 68 unwritten / 26 with volume. Writable: cis reverse charge vat return example,
+cis end of year return, unallocated credit cis deduction reclaimed, paying cis subcontractor
+tax hmrc + template cluster (8 topics, ~130 combined vol — needs a downloadable CIS
+deduction-statement/invoice template ASSET, not a blog post). Skip: HMRC nav intent (4),
+branded competitors (7).

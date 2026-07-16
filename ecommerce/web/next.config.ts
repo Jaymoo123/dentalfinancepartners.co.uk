@@ -22,8 +22,8 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/:path*",
-        has: [{ type: "host", value: "ecommercetaxpartners.co.uk" }],
-        destination: "https://www.ecommercetaxpartners.co.uk/:path*",
+        has: [{ type: "host", value: "ecommercefinance.co.uk" }],
+        destination: "https://www.ecommercefinance.co.uk/:path*",
         permanent: true,
       },
     ];

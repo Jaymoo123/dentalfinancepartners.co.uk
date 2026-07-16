@@ -125,4 +125,4 @@ faqs:
 
 <p>Filing on time and accurately is the baseline. Beyond that, the annual return cycle is a useful prompt to review your reserves policy, check that your governing document still reflects how you operate, and confirm that all trustee appointments and retirements have been notified to the Commission during the year rather than left to the return.</p>
 
-<p>If your charity needs support preparing accounts, completing an independent examination or navigating the annual return, the <a href="/services">charity accounts and compliance services</a> at Trustee Finance Partners cover the full cycle from accounts preparation through to examiner sign-off and return filing.</p>
+<p>If your charity needs support preparing accounts, completing an independent examination or navigating the annual return, the <a href="/services">charity accounts and compliance services</a> at Trustee Tax cover the full cycle from accounts preparation through to examiner sign-off and return filing.</p>

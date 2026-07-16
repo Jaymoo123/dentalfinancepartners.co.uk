@@ -1,6 +1,6 @@
 {
   "niche_id": "ecommerce",
-  "display_name": "Ecommerce Tax Partners",
+  "display_name": "Ecommerce Finance",
   "legal_name": "Ashfield Trading Ltd",
   "partner": null,
   "company": {
@@ -15,7 +15,7 @@
     "vat_number": null,
     "enquiry_retention_months": 24
   },
-  "domain": "www.ecommercetaxpartners.co.uk",
+  "domain": "www.ecommercefinance.co.uk",
   "tagline": "UK ecommerce and marketplace sellers (Amazon, eBay, Etsy, Shopify): tax, VAT, platform reporting and seller accounts",
   "description": "UK ecommerce and marketplace sellers (Amazon, eBay, Etsy, Shopify): tax, VAT, platform reporting and seller accounts",
   "brand": {
@@ -24,7 +24,7 @@
     "publisher_logo_url": "/api/og"
   },
   "contact": {
-    "email": "hello@ecommercetaxpartners.co.uk",
+    "email": "hello@ecommercefinance.co.uk",
     "phone": "+44 20 0000 0000"
   },
   "navigation": [

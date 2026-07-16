@@ -2,7 +2,7 @@
 
 You are writing ONE launch-core asset for a new UK crypto-tax accountancy site at `crypto/web`
 (repo root `C:\Users\user\Documents\Accounting`). Read this file + your assigned brief + the facts
-source before writing. Working brand = **Digital Asset Tax Partners** (do NOT hardcode the brand
+source before writing. Working brand = **Crypto Tax Partners** (do NOT hardcode the brand
 name in body copy; write about "the firm", "we", "your position", "investors/traders/businesses".
 Brand + CTA are injected by the page template + site config, not by your content file).
 

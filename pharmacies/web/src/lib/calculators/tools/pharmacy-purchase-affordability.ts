@@ -40,7 +40,7 @@ export const pharmacyPurchaseAffordability: GenericTool = {
   category: "Buying a Pharmacy",
   oneLiner:
     "Estimate monthly loan repayments, post-tax cash cover, and the stamp duty or SDLT cost of buying a pharmacy on a share or asset deal for 2026/27.",
-  metaTitle: "Pharmacy Purchase Affordability Calculator | Pharmacy Finance Partners",
+  metaTitle: "Pharmacy Purchase Affordability Calculator | Pharmacy Tax",
   metaDescription:
     "Estimate loan repayments and post-tax cash cover for buying a pharmacy. Compare share vs asset deal stamp duty and SDLT costs. 2026/27 scenario tool.",
   intro:

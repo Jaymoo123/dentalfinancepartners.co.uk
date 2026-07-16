@@ -3,7 +3,7 @@ import Link from "next/link";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { cryptoServices } from "@/data/crypto-services";
 export const metadata: Metadata = {
-  title: { absolute: "Crypto Tax Services | Digital Asset Tax Partners" },
+  title: { absolute: "Crypto Tax Services | Crypto Tax Partners" },
   description: "Crypto tax services: HMRC disclosure, Self Assessment, Koinly reconciliation, CGT planning and investor vs trader status advice.",
 };
 export default function ServicesPage() {

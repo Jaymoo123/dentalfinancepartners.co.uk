@@ -2,7 +2,7 @@
 
 You are writing ONE launch-core asset for a new UK pharmacy-accountancy site at `pharmacies/web`
 (repo root `C:\Users\user\Documents\Accounting`). Read this file + your assigned brief + the facts
-source before writing. Working brand = **Pharmacy Finance Partners** (do NOT hardcode the brand
+source before writing. Working brand = **Pharmacy Tax** (do NOT hardcode the brand
 name in body copy; write about "the firm", "we", "your pharmacy", "pharmacy owners/buyers/sellers".
 Brand + CTA are injected by the page template + site config, not by your content file).
 

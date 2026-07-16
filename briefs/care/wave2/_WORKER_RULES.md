@@ -1,7 +1,7 @@
 # Care wave-2 shared CONTENT-worker rules (CQC registration economics family)
 
 You are writing ONE wave-2 asset for the UK care-sector accountancy site at `care/web`
-(repo root `C:\Users\user\Documents\Accounting`). Working brand **Care Finance Partners**.
+(repo root `C:\Users\user\Documents\Accounting`). Working brand **Care Home Tax**.
 do NOT hardcode the brand in body copy; write about "the site", "we", "your service",
 "care providers". Brand and CTA are injected by the page template and site config, never by
 content. This file is the wave-1 `_WORKER_RULES.md` updated for wave-2 danger zones; where it

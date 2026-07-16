@@ -4,7 +4,7 @@ import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { charityServices } from "@/data/charity-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Charity Accounting Services | Trustee Finance Partners" },
+  title: { absolute: "Charity Accounting Services | Trustee Tax" },
   description:
     "Charity accounting services: independent examination, annual accounts, bookkeeping, Gift Aid claims and charity VAT. Specialist support for charities, CICs and social enterprises.",
 };

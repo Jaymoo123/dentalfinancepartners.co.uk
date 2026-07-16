@@ -1,6 +1,6 @@
 {
   "niche_id": "crypto",
-  "display_name": "Digital Asset Tax Partners",
+  "display_name": "Crypto Tax Partners",
   "legal_name": "Ashfield Trading Ltd",
   "partner": null,
   "company": {
@@ -15,7 +15,7 @@
     "vat_number": null,
     "enquiry_retention_months": 24
   },
-  "domain": "www.digitalassettaxpartners.co.uk",
+  "domain": "www.cryptotaxpartners.co.uk",
   "tagline": "UK cryptoasset tax specialists: CGT on disposals, staking and mining income, DeFi, HMRC nudge letters and disclosure, and Self Assessment",
   "description": "Specialist UK tax accountants for crypto investors, traders and businesses. CGT and s104 pooling, staking and mining income, DeFi, HMRC disclosure and nudge letters, and Self Assessment filing.",
   "brand": {
@@ -24,7 +24,7 @@
     "publisher_logo_url": "/api/og"
   },
   "contact": {
-    "email": "hello@digitalassettaxpartners.co.uk",
+    "email": "hello@cryptotaxpartners.co.uk",
     "phone": "+44 20 0000 0000"
   },
   "navigation": [

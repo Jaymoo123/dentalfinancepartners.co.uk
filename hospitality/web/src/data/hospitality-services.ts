@@ -16,7 +16,7 @@ export const hospitalityServices: HospitalityService[] = [
     slug: "tronc-scheme-setup",
     title: "Tronc Scheme Setup",
     headline: "HMRC-compliant tronc schemes for hospitality operators",
-    metaTitle: "Tronc Scheme Setup for Restaurants and Hotels | Hospitality Finance Partners",
+    metaTitle: "Tronc Scheme Setup for Restaurants and Hotels | Hospitality Tax",
     metaDescription:
       "Set up a compliant tronc scheme for your restaurant, hotel or pub. Correct NIC treatment, independent troncmaster structure and Tips Act 2023 compliance handled for you.",
     intro:
@@ -97,7 +97,7 @@ export const hospitalityServices: HospitalityService[] = [
     slug: "hospitality-payroll",
     title: "Hospitality Payroll",
     headline: "Payroll for hospitality businesses with tips, minimum wage compliance and variable rotas",
-    metaTitle: "Hospitality Payroll Service | Tips, NLW and Casual Staff | Hospitality Finance Partners",
+    metaTitle: "Hospitality Payroll Service | Tips, NLW and Casual Staff | Hospitality Tax",
     metaDescription:
       "Payroll for restaurants, pubs, hotels and cafes. NLW £12.71 from April 2026, tronc integration, zero-hours staff, RTI submissions and employer NIC handled correctly.",
     intro:
@@ -178,7 +178,7 @@ export const hospitalityServices: HospitalityService[] = [
     slug: "hospitality-vat",
     title: "Hospitality VAT",
     headline: "VAT returns, registration and scheme advice for hospitality operators",
-    metaTitle: "Hospitality VAT Returns and Schemes | Restaurants, Pubs, Cafes | Hospitality Finance Partners",
+    metaTitle: "Hospitality VAT Returns and Schemes | Restaurants, Pubs, Cafes | Hospitality Tax",
     metaDescription:
       "VAT for restaurants, pubs, hotels and cafes. £90,000 threshold, hot vs cold food rules, Flat Rate Scheme category traps and Making Tax Digital compliance handled correctly.",
     intro:
@@ -259,7 +259,7 @@ export const hospitalityServices: HospitalityService[] = [
     slug: "toms-advice",
     title: "Tour Operators Margin Scheme",
     headline: "TOMS advice for hotels and operators packaging bought-in travel services",
-    metaTitle: "Tour Operators Margin Scheme (TOMS) for Hotels and Hospitality | Hospitality Finance Partners",
+    metaTitle: "Tour Operators Margin Scheme (TOMS) for Hotels and Hospitality | Hospitality Tax",
     metaDescription:
       "TOMS VAT advice for hotels, guest houses and hospitality operators that package bought-in accommodation, transport or travel services. Margin-only VAT, no input VAT recovery.",
     intro:
@@ -340,7 +340,7 @@ export const hospitalityServices: HospitalityService[] = [
     slug: "business-rates-relief",
     title: "Business Rates Relief",
     headline: "Business rates review for hospitality operators after the April 2026 changes",
-    metaTitle: "Business Rates for Hospitality: 2026 Multipliers and SBRR | Hospitality Finance Partners",
+    metaTitle: "Business Rates for Hospitality: 2026 Multipliers and SBRR | Hospitality Tax",
     metaDescription:
       "Business rates advice for pubs, restaurants, hotels and cafes. RHL relief ended for new claims from April 2026. Revised multipliers, Small Business Rate Relief and rateable value reviews.",
     intro:

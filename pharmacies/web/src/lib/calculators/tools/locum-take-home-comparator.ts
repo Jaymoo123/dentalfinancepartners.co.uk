@@ -167,7 +167,7 @@ export const locumTakeHomeComparator: GenericTool = {
   category: "Locum Pharmacists",
   oneLiner:
     "Compare 2026/27 net take-home for a locum pharmacist under sole trader, limited company and umbrella/PAYE, with HMRC employment-status warnings (ESM4270) baked in.",
-  metaTitle: "Locum Pharmacist Take-Home Calculator 2026/27 | Pharmacy Finance Partners",
+  metaTitle: "Locum Pharmacist Take-Home Calculator 2026/27 | Pharmacy Tax",
   metaDescription:
     "Compare sole trader vs limited company vs umbrella take-home for locum pharmacists in 2026/27. Includes HMRC ESM4270 employment-status warnings. Scenario tool only.",
   intro:

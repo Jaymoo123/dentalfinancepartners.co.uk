@@ -4,7 +4,7 @@ import type { NextRequest } from "next/server";
 export const runtime = "edge";
 
 export async function GET(req: NextRequest) {
-  const title = req.nextUrl.searchParams.get("title") ?? "Founder Finance Partners";
+  const title = req.nextUrl.searchParams.get("title") ?? "Founder Tax Partners";
   return new ImageResponse(
     (
       <div
@@ -23,8 +23,8 @@ export async function GET(req: NextRequest) {
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
           <div style={{ width: 24, height: 24, borderRadius: 6, background: "#4f46e5", display: "flex" }} />
-          <span style={{ fontSize: 28, fontWeight: 600, color: "#334155" }}>Founder Finance Partners</span>
-          <span style={{ fontSize: 24, color: "#64748b", marginLeft: "auto" }}>founderfinancepartners.co.uk</span>
+          <span style={{ fontSize: 28, fontWeight: 600, color: "#334155" }}>Founder Tax Partners</span>
+          <span style={{ fontSize: 24, color: "#64748b", marginLeft: "auto" }}>foundertaxpartners.co.uk</span>
         </div>
       </div>
     ),

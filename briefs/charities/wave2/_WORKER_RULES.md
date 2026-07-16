@@ -2,7 +2,7 @@
 
 You are writing ONE wave-2 asset for the live UK charity-accountancy site at `charities/web`
 (repo root `C:\Users\user\Documents\Accounting`). Read this file + your assigned brief +
-`docs/charities/house_positions.md` before writing. Working brand = **Trustee Finance Partners**
+`docs/charities/house_positions.md` before writing. Working brand = **Trustee Tax**
 (do NOT hardcode the brand in body copy; write about "the charity", "trustees", "your charity",
 "CIC directors". CTA/brand is injected by the page template + site config, never by your content).
 
@@ -104,7 +104,7 @@ guide, e.g. `charities/web/content/guides/set-up-a-charity-cio.md`.
 Money pages live in `charities/web/src/data/charity-types.ts` (the `charityTypes` array,
 `CharityType` interface). Add ONLY the entry your dispatch assigns; keep the interface and
 `getCharityType` helper unchanged. Fields: `slug`, `title`, `headline`, `metaTitle`
-(may append " | Trustee Finance Partners"), `metaDescription` (<=155), `intro`, `stats`
+(may append " | Trustee Tax"), `metaDescription` (<=155), `intro`, `stats`
 (exactly 3 × {value,label}), `challenges` (exactly 4 × {title,body}), `howWeHelp`
 (exactly 3 × {title,body}), `faqs` (2+ × {question,answer}). Every figure must match a house
 position with an inline gov.uk `<a href>`; no open-flag figures. Model the live `cics` entry.

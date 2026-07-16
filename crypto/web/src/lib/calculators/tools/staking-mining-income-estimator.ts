@@ -21,7 +21,7 @@ export const stakingMiningIncomeEstimator: GenericTool = {
   name: "Staking and Mining Income Estimator",
   category: "Staking and Mining",
   oneLiner: "Estimate UK income tax on staking and mining receipts, including the £1,000 miscellaneous income allowance.",
-  metaTitle: "Crypto Staking Mining Income Tax Calculator | Digital Asset Tax Partners",
+  metaTitle: "Crypto Staking Mining Income Tax Calculator | Crypto Tax Partners",
   metaDescription: "Estimate UK income tax on staking rewards and mining income. Includes the £1,000 miscellaneous income allowance. 2026/27 rates. Scenario tool.",
   intro: "Staking rewards and mining income are taxed as miscellaneous income. The £1,000 miscellaneous income allowance can reduce the taxable amount. Enter your receipts and other income to see the estimated tax.",
   embedHeight: 460,

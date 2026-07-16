@@ -1,6 +1,6 @@
 {
   "site": "charities",
-  "displayName": "Trustee Finance Partners",
+  "displayName": "Trustee Tax",
   "paths": {
     "repoRoot": "C:/Users/user/Documents/Accounting",
     "worktreeBase": "C:/Users/user/Documents",
@@ -18,7 +18,7 @@
   },
   "vercel": {
     "projectJson": "charities/web/.vercel/project.json",
-    "productionDomain": "www.trusteefinancepartners.co.uk"
+    "productionDomain": "www.trusteetax.co.uk"
   },
   "indexnow": {
     "module": "optimisation_engine.indexing.submit_indexnow"

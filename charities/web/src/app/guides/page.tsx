@@ -4,9 +4,9 @@ import { getAllGuides } from "@/lib/guides/content";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 
 export const metadata: Metadata = {
-  title: "Charity Finance Guides | Trustee Finance Partners",
+  title: "Charity Finance Guides | Trustee Tax",
   description:
-    "Free guides on charity accounts, independent examination, Gift Aid, charity VAT and trustee compliance from Trustee Finance Partners.",
+    "Free guides on charity accounts, independent examination, Gift Aid, charity VAT and trustee compliance from Trustee Tax.",
 };
 
 export default function GuidesIndexPage() {
