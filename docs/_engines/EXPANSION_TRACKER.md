@@ -18,6 +18,22 @@ Executed across all 7 buildable Tier-1 sites in one session:
 8. **predeploy_gate:** sanctioned-fence term allowlist added (ecommerce → hollowaydavies per DEDUP_AUDIT fence ruling); startups-tech homepage sibling-brand naming ("Contractor Tax Accountants") rewritten out.
 9. **CLOSED 2026-07-16:** blog_topics wave-2 head keywords marked used=true (52 rows, explicit ids via scripts/_wave2_mark_used.py; 7 non-pool-sourced briefs skipped, no force-match). Ecommerce migrate-vs-fence RULED: FENCE (see docs/ecommerce/STATE.md). Deploy held on owner G1 (care additionally ~2026-08-03 medical watch); all 7 domains + fallbacks RDAP re-verified available 2026-07-16, owner purchasing.
 
+## ALL 7 SITES DEPLOYED TO PRODUCTION 2026-07-16
+
+Owner bought final domains (differ from shortlist picks) and lifted the care medical-watch hold same day.
+Final brands/domains: Trustee Tax (trusteetax.co.uk), Hospitality Tax (hospitalitytax.co.uk), Care Home Tax
+(carehometax.co.uk), Founder Tax Partners (foundertaxpartners.co.uk), Crypto Tax Partners
+(cryptotaxpartners.co.uk), Pharmacy Tax (pharmacytax.co.uk), Ecommerce Finance (ecommercefinance.co.uk).
+Executed: repo-wide brand swap (74 files, commit 5adc3be4) -> gate PASS x7 / builds GREEN x7 / rates lint
+CLEAN x7 -> Vercel projects created via vercel_create_site.py (IDs in STATE.md, admin keys .cache/) ->
+owner attached domains (www primary, apex 308) -> prod deploys x7 via CLI -> live battery PASS x7 ->
+Supabase sites rows updated to final brands + active=true x7 -> IndexNow sitemap submits x7 (HTTP 202).
+Lead routing: LEADS_NOTIFY_CC_EXCLUDE_SOURCES set on Property project (new sites NOT CC'd to Reflex,
+owner ruling); **PENDING: Property redeploy to arm it** (owner doing via dashboard).
+REMAINING EXTERNAL (owner, per site): GSC property + sitemap + Request Indexing; Bing WMT import +
+verification code into niche.config; GA4 property -> measurement id; real phone number; brand logo assets
+(public/brand/). Watch: care launched mid-medical-watch by owner override.
+
 ## Thread B — existing-site content-gap enrichment (2026-07-14, commit 2aa8794c)
 
 Parallel track: rank existing sites' `blog_topics` by real DataForSEO demand; build a pool for

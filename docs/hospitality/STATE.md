@@ -5,6 +5,8 @@ Last updated 2026-07-15 (HARDENED + PARITY + WAVE-2 BUILT, deploy held). Generat
 
 brand_locked: true
 
+> **DEPLOYED TO PRODUCTION 2026-07-16** at https://www.hospitalitytax.co.uk (Vercel CLI, prod). Live battery passed (all key routes 200, apex 308 to www, brand clean). sites.active=true; sitemap submitted to IndexNow. Remaining external: GSC property + Request Indexing, Bing import, GA4 id, real phone, brand logo assets.
+
 > **FINAL BRAND LOCKED 2026-07-16: "Hospitality Tax" @ hospitalitytax.co.uk** (owner-purchased domain; built under working brand "Hospitality Finance Partners", all references swapped repo-wide 2026-07-16).
 
 > **Working brand, not final.** Per the owner decision of 2026-07-14 (depth-first build under

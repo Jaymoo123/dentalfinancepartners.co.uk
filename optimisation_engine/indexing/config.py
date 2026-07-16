@@ -31,15 +31,15 @@ SITE_INDEXNOW_CONFIG: dict[str, dict[str, str]] = {
         "key": "b6631db9fdc7b6422f88a5d2166fe528",
     },
     "care": {
-        "host": "www.brand-tbd-care.invalid",
+        "host": "www.carehometax.co.uk",
         "key": "2fa3aab768ad8a36a3a8d9d410fc58a1",
     },
     "hospitality": {
-        "host": "www.brand-tbd-hospitality.invalid",
+        "host": "www.hospitalitytax.co.uk",
         "key": "8a4e41b245878dc7f01421815bfda448",
     },
     "charities": {
-        "host": "www.brand-tbd-charities.invalid",
+        "host": "www.trusteetax.co.uk",
         "key": "e2d3a266cb49bd2ff8761a6db2a4d7a4",
     },
     "dentists": {

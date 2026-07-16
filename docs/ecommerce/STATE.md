@@ -5,6 +5,8 @@ Last updated 2026-07-15 (HARDENED + PARITY + WAVE-2 BUILT, deploy held). Generat
 
 brand_locked: true
 
+> **DEPLOYED TO PRODUCTION 2026-07-16** at https://www.ecommercefinance.co.uk (Vercel CLI, prod). Live battery passed (all key routes 200, apex 308 to www, brand clean). sites.active=true; sitemap submitted to IndexNow. Remaining external: GSC property + Request Indexing, Bing import, GA4 id, real phone, brand logo assets.
+
 > **FINAL BRAND LOCKED 2026-07-16: "Ecommerce Finance" @ ecommercefinance.co.uk** (owner-purchased domain; built under working brand "Ecommerce Tax Partners", all references swapped repo-wide 2026-07-16).
 
 > **Working brand, not final.** "Ecommerce Finance" is a build-time placeholder; owner picks

@@ -5,6 +5,8 @@ Last updated 2026-07-15 (HARDENED + PARITY + WAVE-2 BUILT, deploy held ~2026-08-
 
 brand_locked: true
 
+> **DEPLOYED TO PRODUCTION 2026-07-16** at https://www.carehometax.co.uk (Vercel CLI, prod) (owner LIFTED the ~08-03 medical-watch hold same day). Live battery passed (all key routes 200, apex 308 to www, brand clean). sites.active=true; sitemap submitted to IndexNow. Remaining external: GSC property + Request Indexing, Bing import, GA4 id, real phone, brand logo assets.
+
 > **FINAL BRAND LOCKED 2026-07-16: "Care Home Tax" @ carehometax.co.uk** (owner-purchased domain; built under working brand "Care Finance Partners", all references swapped repo-wide 2026-07-16).
 
 > WORKING BRAND, not final. **Care Home Tax** (www.carehometax.co.uk) is the
