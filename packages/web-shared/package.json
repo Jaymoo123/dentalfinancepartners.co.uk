@@ -96,7 +96,14 @@
     "./lead-nurture/send": "./lead-nurture/send.ts",
     "./lead-nurture/cron": "./lead-nurture/cron.ts",
     "./lead-nurture/t0": "./lead-nurture/t0.ts",
-    "./lead-nurture/lead-nurture-shared": "./lead-nurture/lead-nurture-shared.ts"
+    "./lead-nurture/lead-nurture-shared": "./lead-nurture/lead-nurture-shared.ts",
+    "./leads": "./leads/index.ts",
+    "./leads/capture-steps": "./leads/capture-steps.ts",
+    "./leads/MiniCapture": "./leads/MiniCapture.tsx",
+    "./leads/ResultGateModal": "./leads/ResultGateModal.tsx",
+    "./leads/CalcResultCta": "./leads/CalcResultCta.tsx",
+    "./leads/MobileToolSlot": "./leads/MobileToolSlot.tsx",
+    "./content/blog-splits": "./content/blog-splits.ts"
   },
   "optionalPeerDependencies": {
     "@microsoft/clarity": ">=1",

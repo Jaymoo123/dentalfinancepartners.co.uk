@@ -1,36 +1,40 @@
 "use client";
 
-/**
- * Calculator result CTA. Shipped default (was the calc_result_capture treatment):
- * the qualified capture at the moment of highest intent (the calculator result),
- * instead of the old trailing CTA link that dead-ended at ~0 leads.
- */
-import { MiniCapture } from "@/components/forms/MiniCapture";
+import { CalcResultCta as SharedCalcResultCta } from "@accounting-network/web-shared/leads/CalcResultCta";
+import { niche } from "@/config/niche-loader";
+import { siteConfig } from "@/config/site";
+import { submitPropertyLead, type PropertyLeadPayload } from "@/lib/leads/submit-client";
+import { trackExperimentView, trackExperimentAction } from "@/lib/experiments/exposure";
+import type { MiniCaptureConfig, MiniCaptureSubmitFn } from "@accounting-network/web-shared/leads/MiniCapture";
 
-export function CalcResultCta({
-  campaign,
-  experimentKey,
-  exposeOnView,
-}: {
+const propertyMiniConfig: MiniCaptureConfig = {
+  sourceIdentifier: niche.content_strategy.source_identifier,
+  consentText: siteConfig.leadConsentText,
+  nicheId: niche.niche_id,
+  leadForm: {
+    roleLabel: niche.lead_form.role_label,
+    roleOptions: niche.lead_form.role_options,
+    placeholders: niche.lead_form.placeholders,
+  },
+};
+
+const propertySubmitLead: MiniCaptureSubmitFn = async (payload, honeypot) => {
+  return submitPropertyLead(payload as PropertyLeadPayload, honeypot);
+};
+
+export function CalcResultCta(props: {
   campaign: string;
   label?: string;
-  /** When set, this control-arm capture is measured under that experiment. */
   experimentKey?: string;
   exposeOnView?: boolean;
 }) {
   return (
-    <div className="mt-6 border-t border-slate-200 pt-5">
-      <MiniCapture
-        formId="calc_result"
-        experimentKey={experimentKey}
-        exposeOnView={exposeOnView}
-        messagePrefix={`[Calculator result: ${campaign}]`}
-        heading="Confirm your figure with a specialist"
-        blurb="A calculator gives the shape of the answer. We confirm your exact figure and the legitimate ways to reduce it, with no obligation. Leave your details and we'll be in touch."
-        submitLabel="Get my figure confirmed"
-        className="rounded-2xl border-l-4 border-emerald-600 bg-slate-50 p-5 sm:p-6"
-        postSubmit="redirect"
-      />
-    </div>
+    <SharedCalcResultCta
+      {...props}
+      siteConfig={propertyMiniConfig}
+      submitLead={propertySubmitLead}
+      onExperimentView={trackExperimentView}
+      onExperimentAction={trackExperimentAction}
+    />
   );
 }

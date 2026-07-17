@@ -17,6 +17,7 @@ import { hasPremiumTool } from "@/lib/calculators/premium/registry";
 import { gateCopy } from "@/lib/resources/copy";
 import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
 import { GateOrForm } from "@/components/resources/GateOrForm";
+import { splitContentEarly, splitRemainderForGate, splitContentAtMidScroll } from "@accounting-network/web-shared/content/blog-splits";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -87,71 +88,6 @@ function decorateAsides(html: string): string {
   );
 }
 
-function splitContentAtMidScroll(html: string): { before: string; after: string | null } {
-  const headings = [...html.matchAll(/<h2[^>]*>/g)];
-  if (headings.length < 4) {
-    return { before: html, after: null };
-  }
-  const targetIdx = Math.floor(headings.length * 0.6);
-  const target = headings[targetIdx];
-  if (target?.index === undefined) {
-    return { before: html, after: null };
-  }
-  return { before: html.slice(0, target.index), after: html.slice(target.index) };
-}
-
-/**
- * EARLY split for the premium-tool / resource islands. Splits at the FIRST h2
- * (~20-25% into most articles) so the value-add tool lifts dwell time before the
- * 57%-of-visitors-bounce-at-25%-scroll wall. Falls back to after the first ~2
- * paragraphs when there is no h2, and to the whole article (append at end) when
- * there is no usable break at all — so EVERY post can be injected into.
- */
-function splitContentEarly(html: string): { before: string; after: string } {
-  const firstH2 = html.search(/<h2[^>]*>/);
-  if (firstH2 > 0) {
-    return { before: html.slice(0, firstH2), after: html.slice(firstH2) };
-  }
-  // No h2: break after the 2nd closing </p> so the tool still lands early.
-  const paragraphRe = /<\/p>/g;
-  let m: RegExpExecArray | null;
-  let count = 0;
-  let cut = -1;
-  while ((m = paragraphRe.exec(html)) !== null) {
-    count += 1;
-    if (count === 2) {
-      cut = m.index + m[0].length;
-      break;
-    }
-  }
-  if (cut > 0 && cut < html.length) {
-    return { before: html.slice(0, cut), after: html.slice(cut) };
-  }
-  // No usable break: render the whole article first, append the island at the end.
-  return { before: html, after: "" };
-}
-
-/**
- * Find a SECOND, later split point in the post-early-tool remainder for the email
- * gate, so the tool (value) lands first and the gate (ask) lands a step later.
- * Targets a heading roughly half-way through the remainder. Returns after=null
- * when the remainder has no further heading, in which case the caller drops the
- * gate directly under the tool instead.
- */
-function splitRemainderForGate(html: string): { before: string; after: string | null } {
-  const headings = [...html.matchAll(/<h2[^>]*>/g)];
-  // Need at least 2 headings in the remainder to place the gate at a natural
-  // break that is clearly below the tool.
-  if (headings.length < 2) {
-    return { before: html, after: null };
-  }
-  const targetIdx = Math.max(1, Math.floor(headings.length * 0.5));
-  const target = headings[targetIdx];
-  if (target?.index === undefined) {
-    return { before: html, after: null };
-  }
-  return { before: html.slice(0, target.index), after: html.slice(target.index) };
-}
 
 export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostRendererProps) {
   const headings = extractHeadings(post.contentHtml);

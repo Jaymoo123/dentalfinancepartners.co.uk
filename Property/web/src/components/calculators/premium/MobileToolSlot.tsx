@@ -1,26 +1,36 @@
 "use client";
 
-/**
- * Mobile tool slot. The premium tools are desktop-only; on mobile this slot used
- * to be a dead-end "open on desktop" prompt. Shipped default (was the
- * mobile_tool_capture treatment): a topic-aware qualified capture so mobile intent
- * converts instead of bouncing. Rendered inside PremiumUpgrade's mobile-only
- * (`sm:hidden`) block.
- */
-import { MiniCapture } from "@/components/forms/MiniCapture";
+import { MobileToolSlot as SharedMobileToolSlot } from "@accounting-network/web-shared/leads/MobileToolSlot";
 import { getTopic, type TopicKey } from "@/lib/intent/taxonomy";
+import { niche } from "@/config/niche-loader";
+import { siteConfig } from "@/config/site";
+import { submitPropertyLead, type PropertyLeadPayload } from "@/lib/leads/submit-client";
+import type { MiniCaptureConfig, MiniCaptureSubmitFn } from "@accounting-network/web-shared/leads/MiniCapture";
+
+const propertyMiniConfig: MiniCaptureConfig = {
+  sourceIdentifier: niche.content_strategy.source_identifier,
+  consentText: siteConfig.leadConsentText,
+  nicheId: niche.niche_id,
+  leadForm: {
+    roleLabel: niche.lead_form.role_label,
+    roleOptions: niche.lead_form.role_options,
+    placeholders: niche.lead_form.placeholders,
+  },
+};
+
+const propertySubmitLead: MiniCaptureSubmitFn = async (payload, honeypot) => {
+  return submitPropertyLead(payload as PropertyLeadPayload, honeypot);
+};
 
 export function MobileToolSlot({ topic, label }: { topic: TopicKey; label: string }) {
   const t = getTopic(topic);
   return (
-    <MiniCapture
-      formId="mobile_tool"
-      messagePrefix={`[Mobile tool: ${topic}]`}
-      heading={t?.ctaCopy || `Get your ${label} figure`}
-      blurb="Our interactive tool is built for a larger screen. Tell us your numbers and a specialist will send your figure and the next sensible step, with no obligation."
-      submitLabel="Send me my figure"
-      className="rounded-2xl border-l-4 border-emerald-600 bg-slate-50 p-5 sm:p-6"
-      postSubmit="redirect"
+    <SharedMobileToolSlot
+      topicKey={topic}
+      label={label}
+      topicCtaCopy={t?.ctaCopy}
+      siteConfig={propertyMiniConfig}
+      submitLead={propertySubmitLead}
     />
   );
 }

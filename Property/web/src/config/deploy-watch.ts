@@ -18,7 +18,7 @@
 // ── Result shape ────────────────────────────────────────────────────────────
 
 export interface GateResult {
-  verdict: "PASS" | "ACTION";
+  verdict: "PASS" | "ACTION" | "LOW_VOLUME";
   headline: string;
   lines: string[];
   /** What the operator should do. Present only when verdict is ACTION. */
@@ -37,8 +37,21 @@ function pct(share: number): number {
  * the next step hit a validation or server error, which points at a bug in the
  * new multi-step flow. No advances means no data, so PASS.
  */
+const ERROR_SHARE_VOLUME_FLOOR = 10; // ponytail: named constant so the floor is obvious in tests
+
 export function errorShareVerdict(errorCount: number, continueAttempts: number): GateResult {
-  const share = continueAttempts > 0 ? errorCount / continueAttempts : 0;
+  if (continueAttempts < ERROR_SHARE_VOLUME_FLOOR) {
+    return {
+      verdict: "LOW_VOLUME",
+      headline: `Error-share check skipped: only ${continueAttempts} step completions (floor is ${ERROR_SHARE_VOLUME_FLOOR}).`,
+      lines: [
+        `Form errors: ${errorCount}`,
+        `Step advances: ${continueAttempts}`,
+        `Volume floor: ${ERROR_SHARE_VOLUME_FLOOR} completions required before verdict fires.`,
+      ],
+    };
+  }
+  const share = errorCount / continueAttempts;
   const action = share > 0.4;
   return {
     verdict: action ? "ACTION" : "PASS",

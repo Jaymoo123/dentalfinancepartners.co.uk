@@ -1,153 +1,19 @@
 /**
- * Pure-logic contracts for the multi-step mini lead capture flow.
- * No React, no browser globals (except process.env for the feature flag).
- * Import validators from field-floors so char/digit floors stay in one place.
+ * Re-exports the shared capture-steps module.
+ * Property-local constants are now the shared defaults (20 chars / 4 words).
+ * Internal Property imports of this module continue to work unchanged.
  */
-import { isNameOk, isEmailOk, isPhoneOk } from "./field-floors";
+export {
+  MINI_MESSAGE_MIN_CHARS,
+  MINI_MESSAGE_MIN_WORDS,
+  OTHER_ROLE_VALUE,
+  ROLE_DETAIL_MAX_CHARS,
+  validateStep1,
+  validateStep2,
+  buildRoleExtras,
+  buildThankYouUrl,
+  isSafeReturnPath,
+  miniformsMultistepEnabled,
+} from "@accounting-network/web-shared/leads/capture-steps";
 
-// ---------------------------------------------------------------------------
-// Constants
-// ---------------------------------------------------------------------------
-
-export const MINI_MESSAGE_MIN_CHARS = 40;
-export const MINI_MESSAGE_MIN_WORDS = 8;
-export const OTHER_ROLE_VALUE = "Other";
-export const ROLE_DETAIL_MAX_CHARS = 200;
-
-// ---------------------------------------------------------------------------
-// Types
-// ---------------------------------------------------------------------------
-
-export type StepDirection = "forward" | "back";
-
-export interface Step1Values {
-  role: string;
-  roleDetail: string;
-  message: string;
-}
-
-export interface Step2Values {
-  fullName: string;
-  email: string;
-  phone: string;
-}
-
-// ---------------------------------------------------------------------------
-// Step validators
-// ---------------------------------------------------------------------------
-
-/**
- * Validate the role-and-message step.
- * Error keys: "role" | "roleDetail" | "message".
- * opts lets a surface raise the message floor above the shared defaults.
- */
-export function validateStep1(
-  v: Step1Values,
-  opts?: { minChars?: number; minWords?: number },
-): Record<string, string> {
-  const errs: Record<string, string> = {};
-  const minChars = opts?.minChars ?? MINI_MESSAGE_MIN_CHARS;
-  const minWords = opts?.minWords ?? MINI_MESSAGE_MIN_WORDS;
-
-  if (!v.role.trim()) {
-    errs.role = "Select what best describes you.";
-  } else if (v.role === OTHER_ROLE_VALUE && !v.roleDetail.trim()) {
-    errs.roleDetail = "Tell us what best describes you.";
-  }
-
-  const msg = v.message.trim();
-  const wordCount = msg ? msg.split(/\s+/).filter(Boolean).length : 0;
-  if (msg.length < minChars || wordCount < minWords) {
-    errs.message =
-      "Please give a little more detail (a sentence or two) so the right specialist can help.";
-  }
-
-  return errs;
-}
-
-/**
- * Validate the contact-details step.
- * Error keys: "fullName" | "email" | "phone".
- * Delegates floor logic to field-floors so thresholds stay in one place.
- */
-export function validateStep2(v: Step2Values): Record<string, string> {
-  const errs: Record<string, string> = {};
-  if (!isNameOk(v.fullName)) {
-    errs.fullName = "Enter your name.";
-  }
-  if (!isEmailOk(v.email)) {
-    errs.email = "Enter a valid email address.";
-  }
-  if (!isPhoneOk(v.phone)) {
-    errs.phone = "Enter a phone number we can call you on.";
-  }
-  return errs;
-}
-
-// ---------------------------------------------------------------------------
-// Role extras builder
-// ---------------------------------------------------------------------------
-
-/**
- * Build the role_detail payload fragment when the user selected "Other" and
- * supplied a free-text description. Returns undefined for all other roles so
- * callers can spread the result safely.
- */
-export function buildRoleExtras(
-  role: string,
-  roleDetail: string,
-): { role_detail: string } | undefined {
-  if (role !== OTHER_ROLE_VALUE) return undefined;
-  const trimmed = roleDetail.trim();
-  if (!trimmed) return undefined;
-  return { role_detail: trimmed.slice(0, ROLE_DETAIL_MAX_CHARS) };
-}
-
-// ---------------------------------------------------------------------------
-// Return-path guard
-// ---------------------------------------------------------------------------
-
-/**
- * Type guard: a safe return path is a string that starts with a single "/"
- * and contains no backslashes, whitespace, or control characters.
- * Rejects protocol-relative paths (//), absolute URLs, and any value that
- * could be used for open-redirect or header-injection.
- */
-export function isSafeReturnPath(p: unknown): p is string {
-  if (typeof p !== "string") return false;
-  if (!p.startsWith("/")) return false;
-  if (p.startsWith("//")) return false;
-  if (p.includes("\\")) return false;
-  // Reject whitespace (space, tab, newline, CR, etc.) and control chars
-  if (/[\s\x00-\x1F\x7F]/.test(p)) return false;
-  return true;
-}
-
-// ---------------------------------------------------------------------------
-// Thank-you URL builder
-// ---------------------------------------------------------------------------
-
-/**
- * Build the post-submission redirect URL.
- * bt (booking token) and rt (return path) are added as encodeURIComponent values.
- * rt is silently dropped when isSafeReturnPath fails.
- */
-export function buildThankYouUrl(bookingToken?: string, returnPath?: string): string {
-  const parts: string[] = [];
-  if (bookingToken) {
-    parts.push(`bt=${encodeURIComponent(bookingToken)}`);
-  }
-  if (returnPath !== undefined && isSafeReturnPath(returnPath)) {
-    parts.push(`rt=${encodeURIComponent(returnPath)}`);
-  }
-  return parts.length ? `/thank-you?${parts.join("&")}` : "/thank-you";
-}
-
-// ---------------------------------------------------------------------------
-// Feature flag
-// ---------------------------------------------------------------------------
-
-/** True when the multi-step mini capture flow is enabled via env var. */
-export function miniformsMultistepEnabled(): boolean {
-  return process.env.NEXT_PUBLIC_MINIFORMS_MULTISTEP === "1";
-}
+export type { StepDirection, Step1Values, Step2Values } from "@accounting-network/web-shared/leads/capture-steps";

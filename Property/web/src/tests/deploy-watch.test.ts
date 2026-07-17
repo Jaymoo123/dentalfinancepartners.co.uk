@@ -28,9 +28,14 @@ describe("errorShareVerdict (ACTION when error share > 40%)", () => {
     expect(r.action).toBeTruthy();
   });
 
-  it("PASS when there are no step advances (no data, no divide by zero)", () => {
-    expect(errorShareVerdict(0, 0).verdict).toBe("PASS");
-    expect(errorShareVerdict(5, 0).verdict).toBe("PASS");
+  it("LOW_VOLUME when step advances are below the floor of 10 (no false ACTION on thin data)", () => {
+    expect(errorShareVerdict(0, 0).verdict).toBe("LOW_VOLUME");
+    expect(errorShareVerdict(14, 2).verdict).toBe("LOW_VOLUME"); // the false-alarm case: 700% share, but n=2
+    expect(errorShareVerdict(5, 9).verdict).toBe("LOW_VOLUME");
+  });
+
+  it("PASS at exactly the floor (10 advances, below 40% share)", () => {
+    expect(errorShareVerdict(4, 10).verdict).toBe("PASS");
   });
 });
 

@@ -15,13 +15,12 @@ import {
 // Shared fixtures
 // ---------------------------------------------------------------------------
 
-// Exactly 40 chars, 8 words: both floors met at the minimum boundary.
-// Count: One(3) (1) two(3) (1) three(5) (1) four(4) (1) five(4) (1) six(3) (1) seven(5) (1) enough(6) = 40
-const MSG_VALID = "One two three four five six seven enough";
+// Exactly 20 chars, 4 words: both floors met at the minimum boundary.
+// O-n-e(3) + sp(1) + t-w-o(3) + sp(1) + t-h-r-e-e(5) + sp(1) + e-n-o-u-g-h(6) = 20
+const MSG_VALID = "One two three enough";
 
-// Exactly 40 chars, 7 words: char floor met, word floor NOT met.
-// Count: One(3) (1) two(3) (1) three(5) (1) four(4) (1) five(4) (1) six(3) (1) sevenaaaaaaa(12) = 40
-const MSG_40C_7W = "One two three four five six sevenaaaaaaa";
+// 20+ chars but only 3 words: char floor met, word floor NOT met (needs 4).
+const MSG_20C_3W = "One two threeaaaaaaaaaaaaaaaaaaaaaaaaaaa";
 
 const VALID_S1 = { role: "Landlord", roleDetail: "", message: MSG_VALID };
 const VALID_S2 = { fullName: "Jane Smith", email: "jane@example.com", phone: "07700900123" };
@@ -60,10 +59,10 @@ describe("validateStep1", () => {
     );
   });
 
-  it("fails when message is 40+ chars but only 7 words (below word floor)", () => {
-    expect(MSG_40C_7W.length).toBe(40);
-    expect(MSG_40C_7W.trim().split(/\s+/).filter(Boolean).length).toBe(7);
-    const errs = validateStep1({ ...VALID_S1, message: MSG_40C_7W });
+  it("fails when message is 20+ chars but only 3 words (below word floor of 4)", () => {
+    expect(MSG_20C_3W.length).toBeGreaterThanOrEqual(20);
+    expect(MSG_20C_3W.trim().split(/\s+/).filter(Boolean).length).toBe(3);
+    const errs = validateStep1({ ...VALID_S1, message: MSG_20C_3W });
     expect(errs.message).toBeDefined();
   });
 
@@ -85,7 +84,7 @@ describe("validateStep1", () => {
   });
 
   it("opts.minWords override at a higher threshold rejects a valid-char message", () => {
-    // MSG_VALID has 8 words; require 20 words
+    // MSG_VALID has 4 words; require 20 words
     const errs = validateStep1({ ...VALID_S1, message: MSG_VALID }, { minWords: 20 });
     expect(errs.message).toBeDefined();
   });
