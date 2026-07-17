@@ -7,6 +7,9 @@ import { dividendTaxCalculator } from "./tools/dividend-tax-calculator";
 import { corporationTaxCalculator } from "./tools/corporation-tax-calculator";
 import { contractorSalaryDividendCalculator } from "./tools/contractor-salary-dividend-calculator";
 import { umbrellaTakeHomeCalculator } from "./tools/umbrella-take-home-calculator";
+import { contractorDayRateCalculator } from "./tools/contractor-day-rate-calculator";
+import { managedServiceCompanyRiskChecker } from "./tools/managed-service-company-risk-checker";
+import { ir35StatusIndicator } from "./tools/ir35-status-indicator";
 
 /**
  * The contractor / IR35 calculator fleet. "bespoke" tools have their own
@@ -33,6 +36,9 @@ const GENERIC: GenericTool[] = [
   corporationTaxCalculator,
   contractorSalaryDividendCalculator,
   umbrellaTakeHomeCalculator,
+  contractorDayRateCalculator,
+  managedServiceCompanyRiskChecker,
+  ir35StatusIndicator,
 ];
 
 export const TOOLS: Tool[] = [...BESPOKE, ...GENERIC];

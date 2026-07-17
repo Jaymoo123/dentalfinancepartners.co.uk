@@ -5,6 +5,9 @@ import { umbrellaVsLimitedCalculator } from "./tools/umbrella-vs-limited-calcula
 import { dividendTaxCalculator } from "./tools/dividend-tax-calculator";
 import { corporationTaxCalculator } from "./tools/corporation-tax-calculator";
 import { contractorSalaryDividendCalculator } from "./tools/contractor-salary-dividend-calculator";
+import { contractorDayRateCalculator } from "./tools/contractor-day-rate-calculator";
+import { managedServiceCompanyRiskChecker } from "./tools/managed-service-company-risk-checker";
+import { ir35StatusIndicator } from "./tools/ir35-status-indicator";
 import { limitedTakeHome, umbrellaTakeHome } from "./tax2026";
 
 /** Parse a gbp()-formatted string like "£71,821" back to a number. */
@@ -98,5 +101,118 @@ describe("contractorSalaryDividendCalculator", () => {
     const best = Math.max(high.netTakeHome, low.netTakeHome);
     const r = contractorSalaryDividendCalculator.compute(v);
     expect(parseGbp(r.headline.value)).toBeCloseTo(Math.round(best), 2);
+  });
+});
+
+// --- Golden tests for the three newly-wired tools ---
+
+describe("contractorDayRateCalculator (golden)", () => {
+  // Defaults: £500/day, 220 days, salary £12,570, expenses £6,000, margin £1,200
+  // Engine-computed values (verified 2026-07-17 against tax2026 primitives):
+  //   income = 110,000; ltd.netTakeHome = 67,099; umb.netTakeHome = 65,570
+  //   gap = 1,529; eqDayRate = 514 (ceiling of bisection result)
+  const v = {
+    dayRate: 500,
+    billableDays: 220,
+    salary: "12570",
+    annualExpenses: 6000,
+    umbrellaMargin: 1200,
+  };
+
+  it("outside IR35 headline matches limitedTakeHome (£67,099)", () => {
+    const r = contractorDayRateCalculator.compute(v);
+    const primitive = limitedTakeHome({ turnover: 110000, salary: 12570, expenses: 6000 });
+    expect(parseGbp(r.headline.value)).toBeCloseTo(Math.round(primitive.netTakeHome), 0);
+    expect(parseGbp(r.headline.value)).toBe(67099);
+  });
+
+  it("inside IR35 (umbrella) net matches umbrellaTakeHome (£65,570)", () => {
+    const r = contractorDayRateCalculator.compute(v);
+    const primitive = umbrellaTakeHome({ assignmentIncome: 110000, umbrellaMargin: 1200 });
+    // find umbrella row
+    const umbRow = r.rows?.find((row) => row.label === "Inside IR35 net (umbrella)");
+    expect(umbRow).toBeDefined();
+    expect(parseGbp(umbRow!.value)).toBeCloseTo(Math.round(primitive.netTakeHome), 0);
+    expect(parseGbp(umbRow!.value)).toBe(65570);
+  });
+
+  it("equalising inside day rate is £514/day (ceiling of bisection)", () => {
+    const r = contractorDayRateCalculator.compute(v);
+    const eqRow = r.rows?.find((row) => row.label === "Equalising inside day rate");
+    expect(eqRow).toBeDefined();
+    expect(eqRow!.value).toBe("£514/day");
+  });
+});
+
+describe("managedServiceCompanyRiskChecker (golden)", () => {
+  // HIGH case: mscBusiness=true + providerBenefits=true (one s.61B(1) factor is sufficient)
+  const highInputs = {
+    mscBusiness: true,
+    providerBenefits: true,
+    providerInfluencesFinances: false,
+    providerControlsCompany: false,
+    providerFacilitates: false,
+    youControl: true,
+  };
+
+  it("returns HIGH band when mscBusiness and at least one s.61B(1) factor", () => {
+    const r = managedServiceCompanyRiskChecker.compute(highInputs);
+    expect(r.headline.value).toBe("HIGH");
+    expect(r.headline.tone).toBe("warn");
+    expect(r.verdict?.positive).toBe(false);
+  });
+
+  it("LOW band when no involvement factors and provider not an MSC business", () => {
+    const lowInputs = {
+      mscBusiness: false,
+      providerBenefits: false,
+      providerInfluencesFinances: false,
+      providerControlsCompany: false,
+      providerFacilitates: false,
+      youControl: true,
+    };
+    const r = managedServiceCompanyRiskChecker.compute(lowInputs);
+    expect(r.headline.value).toBe("LOW");
+    expect(r.headline.tone).toBe("good");
+  });
+});
+
+describe("ir35StatusIndicator (golden)", () => {
+  // GP locum profile: substitution=approval, mutuality=project, control=you,
+  // sdc=no, equipment=yes, financialRisk=yes, partAndParcel=no
+  // Score: 1+3+2+1+1+1+1 = 10/12 = 83% => outside
+  const gpLocumInputs = {
+    substitutionRight: "approval",
+    mutuality: "project",
+    controlOver: "you",
+    sdc: "no",
+    ownEquipment: "yes",
+    financialRisk: "yes",
+    partAndParcel: "no",
+  };
+
+  it("GP locum scores 83% and lands outside IR35", () => {
+    const r = ir35StatusIndicator.compute(gpLocumInputs);
+    expect(r.headline.value).toBe("Likely outside IR35");
+    expect(r.headline.tone).toBe("good");
+    const scoreRow = r.rows?.find((row) => row.label === "Weighted score (outside factors)");
+    expect(scoreRow).toBeDefined();
+    expect(scoreRow!.value).toContain("10 / 12");
+    expect(scoreRow!.value).toContain("83%");
+  });
+
+  it("inside profile (no sub, ongoing MOO, client control) scores inside", () => {
+    const insideInputs = {
+      substitutionRight: "none",
+      mutuality: "expected",
+      controlOver: "client",
+      sdc: "yes",
+      ownEquipment: "no",
+      financialRisk: "no",
+      partAndParcel: "yes",
+    };
+    const r = ir35StatusIndicator.compute(insideInputs);
+    expect(r.headline.value).toBe("Likely inside IR35");
+    expect(r.headline.tone).toBe("warn");
   });
 });
