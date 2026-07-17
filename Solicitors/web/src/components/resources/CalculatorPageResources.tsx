@@ -10,9 +10,7 @@
  * static pages), so this is wired once inside the [slug] page after the
  * calculator, NOT per static page.
  *
- * Ships ResourceGate (inline download reveal), NOT GateOrForm, because the
- * deliverable is the downloadable resource itself. GateOrForm (fallback to
- * MiniCapture) can be swapped in later if the gate sees 0-unlock patterns.
+ * Ships ResourceGate (qualified MiniCapture form) after the premium tool island.
  *
  * Renders nothing when neither a premium config nor an enabled asset exists.
  */
@@ -21,7 +19,6 @@ import {
   hasEnabledResource,
   resourceForTopic,
 } from "@/lib/resources/registry";
-import { gateCopy } from "@/lib/resources/copy";
 import { PremiumUpgrade } from "@/components/tools/premium/PremiumUpgrade";
 import { ResourceGate } from "@/components/resources/ResourceGate";
 
@@ -58,8 +55,6 @@ export function CalculatorPageResources({
       {hasGate ? (
         <ResourceGate
           topic={topic}
-          copy={gateCopy(topic, pageTitle)}
-          split
           placement="calculator"
         />
       ) : null}

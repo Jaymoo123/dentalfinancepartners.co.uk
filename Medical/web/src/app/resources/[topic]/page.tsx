@@ -1,10 +1,9 @@
 /**
- * NOINDEX guide route -- /resources/[topic]
+ * Open research resource route -- /resources/[topic]
  *
- * Serves the gated written guides for Medical Accountants UK premium categories.
- * NOINDEX by design: the guide is the value behind the resource gate and must
- * not rank independently. The ResourceGate links here after a successful lead
- * capture (on-page reveal mode; email delivery is not wired in R3).
+ * Serves written research guides for Medical Accountants UK premium categories.
+ * Fully public: no email gate, no NOINDEX. Guide content is repurposed as a
+ * free, open research piece with a qualified lead CTA at the end.
  *
  * generateStaticParams: driven by publishedGuideTopicsWithFile() so only guides
  * that are both enabled in the registry AND have a file on disk are pre-rendered;
@@ -40,8 +39,6 @@ export async function generateMetadata({
   return {
     title: guide.title,
     description: guide.summary,
-    // NOINDEX: this page is the value behind the gate, not a ranking page.
-    robots: { index: false, follow: false },
   };
 }
 
@@ -61,7 +58,7 @@ export default async function ResourceGuidePage({
           {/* Guide header */}
           <div className="mb-8 border-b border-[var(--border)] pb-8">
             <p className="text-xs font-bold uppercase tracking-wider text-[var(--copper)]">
-              Medical Accountants UK guide
+              Free research resource
             </p>
             <h1 className="mt-2 text-3xl font-bold text-[var(--navy)] sm:text-4xl">
               {guide.title}

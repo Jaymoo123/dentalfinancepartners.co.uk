@@ -17,7 +17,6 @@ import { PremiumUpgrade } from "@/components/tools/premium/PremiumUpgrade";
 import { topicForBlogSlug } from "@/lib/intent/taxonomy";
 import { hasEnabledResource } from "@/lib/resources/registry";
 import { ResourceGate } from "@/components/resources/ResourceGate";
-import { gateCopy } from "@/lib/resources/copy";
 import { hasPremiumTool } from "@/lib/tools/premium/registry";
 import { resourceForTopic } from "@/lib/tools/premium/resources";
 import { splitContentEarly, splitRemainderForGate, splitContentAtMidScroll } from "@accounting-network/web-shared/content/blog-splits";
@@ -55,7 +54,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
 
   // 3-moment capture architecture (mirrors Property/web BlogPostRenderer):
   //   Moment 1 (early): premium tool island after first h2 (~20-25% in)
-  //   Moment 2 (gate):  email-gated resource at a later heading split
+  //   Moment 2 (mid):   qualified lead-capture form at a later heading split
   //   Moment 3 (fallback): InlineMiniLeadForm at mid-scroll when no tool/gate
   const blogTopic = topicForBlogSlug(categorySlug);
   const hasPremium = blogTopic ? hasPremiumTool(resourceForTopic(blogTopic)?.toolId ?? "") : false;
@@ -212,11 +211,10 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                     ) : null}
                     {gateSplit && gateSplit.after ? (
                       <>
-                        {/* Moment 2: more content, then email gate. */}
+                        {/* Moment 2: more content, then qualified capture form. */}
                         <div dangerouslySetInnerHTML={{ __html: gateSplit.before }} />
                         <ResourceGate
                           topic={blogTopic!}
-                          copy={gateCopy(blogTopic, post.title)}
                           placement="blog"
                           category={categorySlug}
                         />
@@ -224,11 +222,10 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       </>
                     ) : (
                       <>
-                        {/* No later break: gate goes directly under the tool. */}
+                        {/* No later break: capture form goes directly under the tool. */}
                         {hasGate && blogTopic ? (
                           <ResourceGate
                             topic={blogTopic}
-                            copy={gateCopy(blogTopic, post.title)}
                             placement="blog"
                             category={categorySlug}
                           />

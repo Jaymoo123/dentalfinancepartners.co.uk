@@ -1,20 +1,21 @@
 /**
- * NOINDEX guide route — /resources/[topic]
+ * Free resource guide route — /resources/[topic]
  *
- * Serves the gated written guides (one per premium category). These pages are
- * NOINDEX by design: they are the value behind the resource gate and should not
- * rank independently. The ResourceGate links to them after a successful email
- * capture. generateStaticParams is driven by publishedGuideTopicsWithFile() so
- * only files that exist on disk are pre-rendered.
+ * Open (indexable) research guides. Email gate retired 2026-07-17: content is
+ * fully visible, xlsx is a direct download, MiniCapture CTA at the end captures
+ * qualified leads. generateStaticParams is driven by publishedGuideTopicsWithFile()
+ * so only files that exist on disk are pre-rendered.
  *
  * Topic-key deduplication in the registry means sole-trader and limited-company
- * map to existing slugs (incorporation, director-pay respectively) — those pages
- * are rendered via those canonical slugs, not as separate routes.
+ * map to existing slugs (incorporation, director-pay respectively).
  */
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { getGuideByTopic, publishedGuideTopicsWithFile } from "@/lib/resources/content";
+import { resourceForTopic, isXlsxEnabled } from "@/lib/resources/registry";
+import type { TopicKey } from "@/lib/intent/taxonomy";
+import { GateOrForm } from "@/components/resources/GateOrForm";
 
 export const dynamicParams = false;
 
@@ -33,8 +34,6 @@ export async function generateMetadata({
   return {
     title: guide.title,
     description: guide.summary,
-    // NOINDEX: this page is the value behind the gate, not a ranking page.
-    robots: { index: false, follow: false },
   };
 }
 
@@ -47,6 +46,11 @@ export default async function ResourceGuidePage({
   const guide = getGuideByTopic(topic);
   if (!guide) notFound();
 
+  // topic slug == TopicKey (guide slugs are TopicKeys by registry design).
+  const topicKey = topic as TopicKey;
+  const resource = resourceForTopic(topicKey);
+  const xlsxReady = isXlsxEnabled(resource);
+
   return (
     <article className="bg-white py-12 sm:py-16">
       <div className={siteContainerLg}>
@@ -54,7 +58,7 @@ export default async function ResourceGuidePage({
           {/* Guide header */}
           <div className="mb-8 border-b border-slate-200 pb-8">
             <p className="text-xs font-bold uppercase tracking-wider text-orange-600">
-              Holloway Davies guide
+              Free Holloway Davies research guide
             </p>
             <h1 className="mt-2 text-3xl font-bold text-slate-900 sm:text-4xl">
               {guide.title}
@@ -69,6 +73,18 @@ export default async function ResourceGuidePage({
                   <> Last reviewed: {guide.frontmatter.lastReviewed}.</>
                 )}
               </p>
+            )}
+            {xlsxReady && resource?.xlsx && (
+              <a
+                href={resource.xlsx.file}
+                download
+                className="mt-4 inline-flex items-center gap-2 rounded-lg border border-orange-300 bg-orange-50 px-4 py-2.5 text-sm font-semibold text-orange-700 transition-colors hover:bg-orange-100"
+              >
+                <svg className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                {resource.xlsx.label}
+              </a>
             )}
           </div>
 
@@ -105,22 +121,9 @@ export default async function ResourceGuidePage({
             dangerouslySetInnerHTML={{ __html: guide.html }}
           />
 
-          {/* CTA at the bottom of the guide */}
-          <div className="mt-12 border-l-4 border-orange-600 bg-slate-50 p-6 sm:p-8">
-            <p className="text-sm font-bold uppercase tracking-wider text-orange-700">
-              Ready to apply this to your situation?
-            </p>
-            <p className="mt-2 text-base text-slate-700 leading-relaxed">
-              The guide gives you the framework. A specialist can confirm the numbers for your
-              specific business, check any reliefs that might apply, and advise on the best
-              timing. The first call is free and with no obligation.
-            </p>
-            <a
-              href="/contact"
-              className="mt-4 inline-block bg-orange-600 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-orange-700"
-            >
-              Book a free call
-            </a>
+          {/* Lead CTA: qualified review request */}
+          <div className="mt-12">
+            <GateOrForm topic={topicKey} />
           </div>
         </div>
       </div>

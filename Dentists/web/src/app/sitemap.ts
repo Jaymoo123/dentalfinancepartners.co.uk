@@ -3,6 +3,7 @@ import { siteConfig } from "@/config/site";
 import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
 import { allTools } from "@/lib/tools/registry";
 import { getAllGuides } from "@/lib/dental-guides";
+import { publishedGuideTopicsWithFile } from "@/lib/resources/content";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
@@ -97,6 +98,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: guide.date ? new Date(guide.date) : new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
+      alternates: hreflang(url),
+    });
+  }
+
+  // Open resource guides (/resources/[topic]) — indexable since 2026-07-17
+  for (const topic of publishedGuideTopicsWithFile()) {
+    const url = `${base}/resources/${topic}`;
+    entries.push({
+      url,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
       alternates: hreflang(url),
     });
   }

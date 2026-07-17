@@ -26,7 +26,7 @@ Repo: `C:\Users\user\Documents\Accounting` — monorepo of lead-gen accountancy 
 2. **Email/SMS nurture pipeline** — Property only. Others have zero follow-up after the first notification email.
 3. **Tool-first blog architecture** — Property injects THREE capture moments per article via HTML split functions in `Property/web/src/components/blog/BlogPostRenderer.tsx` (~lines 90-190):
    - `splitContentEarly()`: cut at first `<h2>` (~20-25% scroll), inject premium calculator (value before the 25%-scroll bounce wall); fallback after 2nd `</p>`; final fallback append at end — every post gets it.
-   - `splitRemainderForGate()`: second lower cut (heading ~50% of remainder), inject email-gated resource. Tool first, ask later.
+   - `splitRemainderForGate()`: second lower cut (heading ~50% of remainder), inject the qualified lead form (GateOrForm; email-gate retired 2026-06-16). Tool first, ask later.
    - `splitContentAtMidScroll()`: fallback for unmapped categories — inline mini form at ~60% of h2s.
    Other sites: one inline form mid-scroll only.
 4. **Calculator breadth** — Property 16 tools (11 generic + 5 bespoke premium); dentists 5, solicitors 6, medical 3, generalist 7, construction-cis 8, contractors-ir35 7, agency 7 bespoke **with no lead capture at all**.
@@ -123,9 +123,9 @@ Execution architecture: Fable architects the port once (shared diff plan per lay
 
 ### A2. Tool-first blog architecture (3 capture moments)
 - Port the three split functions + island rendering from Property's `BlogPostRenderer.tsx` into each site's blog renderer.
-- Build per-site **topic→tool→resource registry** (Property pattern: `lib/intent/taxonomy.ts` + `lib/resources/registry.ts`): map every blog category to its best calculator + one email-gated resource. Depends on Track C rosters — sequence A2 per site AFTER that site's C1 tool build so mapping is comprehensive, with `splitContentAtMidScroll` fallback covering any unmapped category from day one.
+- Build per-site **topic→tool→resource registry** (Property pattern: `lib/intent/taxonomy.ts` + `lib/resources/registry.ts`): map every blog category to its best calculator + one free resource. Depends on Track C rosters — sequence A2 per site AFTER that site's C1 tool build so mapping is comprehensive, with `splitContentAtMidScroll` fallback covering any unmapped category from day one.
 - Port `ResultGateModal` where missing; port premium chart/grid components where a site gains premium tools.
-- Email-gated resources per site: 1-2 downloadables per major category (checklists, worked-example spreadsheets), Sonnet-built, Opus-QA'd, A* quality bar.
+- **CORRECTED 2026-07-18 (owner): NO email-gated resources.** Property retired the blog email-gate 2026-06-16 (f90f6cca, "the qualified capture replaces the dead CTA link and the dead email-gate") — it wasn't converting. The mid-article slot renders the QUALIFIED lead form (GateOrForm/MiniCapture "free review" pattern). Downloadables/guides (checklists, worked-example spreadsheets — Sonnet-built, Opus-QA'd, A* bar) ship as OPEN research/resource pages with direct downloads + lead CTA, never behind an email unlock.
 
 ### A3. Nurture pipeline — FULL email + SMS parity
 - Port all `nurture-*.ts` modules + 4 API routes + cron wiring per site. Resend already live everywhere (lead notifications).

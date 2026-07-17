@@ -1,4 +1,3 @@
-import { calcSolicitorTakeHome } from "../tools/compute/solicitor-take-home";
 /**
  * Golden tests for the Solicitors resource workbooks.
  *

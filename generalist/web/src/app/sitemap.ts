@@ -7,6 +7,7 @@ import { GLOSSARY } from "@/app/glossary/[slug]/data";
 import { GUIDES } from "@/app/guides/[slug]/data";
 import { TEAM } from "@/app/team/[slug]/data";
 import { allTools } from "@/lib/tools/registry";
+import { publishedGuideTopicsWithFile } from "@/lib/resources/content";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
@@ -125,6 +126,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.5,
+      alternates: hreflang(url),
+    });
+  }
+
+  for (const slug of publishedGuideTopicsWithFile()) {
+    const url = `${base}/resources/${slug}`;
+    entries.push({
+      url,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.75,
       alternates: hreflang(url),
     });
   }

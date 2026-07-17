@@ -3,6 +3,7 @@ import { siteConfig } from "@/config/site";
 import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
 import { allTools } from "@/lib/tools/registry";
 import { MEDICAL_GUIDES } from "@/lib/medical-guides-data";
+import { publishedGuideTopics } from "@/lib/resources/registry";
 
 // Stable last-modified dates: no new Date() churn on every build.
 // Google documents that churning lastmod degrades sitemap crawl-scheduling trust.
@@ -12,6 +13,8 @@ const CRO_WAVE = new Date("2026-07-05");
 const STATIC = new Date("2026-06-03");
 // Research asset shipped 2026-07-06; stable lastmod independent of CRO wave.
 const RESEARCH_DATE = new Date("2026-07-06");
+// Resource guides opened as public research pages 2026-07-17.
+const RESOURCES_DATE = new Date("2026-07-17");
 
 // Paths that received content changes in the 2026-07-05 CRO-parity wave.
 // Everything else in staticPaths defaults to STATIC.
@@ -144,6 +147,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: STATIC,
       changeFrequency: "monthly",
       priority: 0.75,
+      alternates: hreflang(url),
+    });
+  }
+
+  // Resource guide pages: now open research resources (no email gate).
+  for (const slug of publishedGuideTopics()) {
+    const url = `${base}/resources/${slug}`;
+    entries.push({
+      url,
+      lastModified: RESOURCES_DATE,
+      changeFrequency: "monthly",
+      priority: 0.7,
       alternates: hreflang(url),
     });
   }

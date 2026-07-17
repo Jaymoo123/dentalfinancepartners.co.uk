@@ -14,8 +14,7 @@ import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
 import { topicForBlogSlug } from "@/lib/intent/taxonomy";
 import { PremiumUpgrade } from "@/components/tools/premium/PremiumUpgrade";
-import { ResourceGate } from "@/components/resources/ResourceGate";
-import { gateCopy } from "@/lib/resources/copy";
+import { GateOrForm } from "@/components/resources/GateOrForm";
 import { hasEnabledResource } from "@/lib/resources/registry";
 import { resourceForTopic } from "@/lib/tools/premium/resources";
 import { AssociateIncorporationWorkedExamples } from "@/components/tools/premium/AssociateIncorporationWorkedExamples";
@@ -246,10 +245,9 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                         {/* Content between the tool island and the gate. */}
                         <div dangerouslySetInnerHTML={{ __html: gateSplit.before }} />
 
-                        {/* Moment 2: email-gated resource (lower break, ~50% in). */}
-                        <ResourceGate
+                        {/* Moment 2: qualified lead-capture form (lower break, ~50% in). */}
+                        <GateOrForm
                           topic={premiumTopic!}
-                          copy={gateCopy(premiumTopic, post.title)}
                           placement="blog"
                           category={categorySlug}
                         />
@@ -259,12 +257,10 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       </>
                     ) : (
                       <>
-                        {/* No lower break: gate goes directly under the tool, then
-                            the rest of the article. */}
+                        {/* No lower break: qualified form goes directly under the tool. */}
                         {hasGate ? (
-                          <ResourceGate
+                          <GateOrForm
                             topic={premiumTopic!}
-                            copy={gateCopy(premiumTopic, post.title)}
                             placement="blog"
                             category={categorySlug}
                           />

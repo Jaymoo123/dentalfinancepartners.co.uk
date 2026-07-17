@@ -3,6 +3,7 @@ import { siteConfig } from "@/config/site";
 import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
 import { allTools } from "@/lib/tools/registry";
 import { getGuideSlugs } from "@/lib/solicitor-guides";
+import { enabledGuideTopics } from "@/lib/resources/registry";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
@@ -101,6 +102,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
+      alternates: hreflang(url),
+    });
+  }
+
+  // Resource guide pages (open, indexable from 2026-07-17)
+  for (const topic of enabledGuideTopics()) {
+    const url = `${base}/resources/${topic}`;
+    entries.push({
+      url,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
       alternates: hreflang(url),
     });
   }

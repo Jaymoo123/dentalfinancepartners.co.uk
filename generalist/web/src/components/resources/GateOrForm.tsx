@@ -1,46 +1,26 @@
 "use client";
 
 /**
- * Blog slot: renders the ResourceGate when a topic has an enabled asset,
- * otherwise falls back to MiniCapture (the "free review" behaviour from R2).
+ * Blog/calculator slot: qualified "free review" lead capture.
  *
- * In R3, with all 6 flagship assets enabled, the blog slot shows the real gate
- * (single stacked column, split=false), so visitors see the model before giving
- * their email.
+ * ponytail: email-gate (ResourceGate) retired 2026-07-17 — Property pattern
+ * mirrored. Guide/xlsx content is now open; this slot captures qualified leads
+ * instead. ResourceGate.tsx kept on disk but no longer used by this path.
  */
 import { MiniCapture } from "@/components/forms/MiniCapture";
-import { ResourceGate } from "@/components/resources/ResourceGate";
-import { hasEnabledResource } from "@/lib/resources/registry";
-import { gateCopy } from "@/lib/resources/copy";
 import { getTopic, type TopicKey } from "@/lib/intent/taxonomy";
+import type { GateCopy } from "@/lib/resources/copy";
 
 export function GateOrForm({
   topic,
-  split = false,
-  placement = "blog",
-  category,
 }: {
   topic: TopicKey;
-  /** Passed through to ResourceGate for the wide layout (calculator page). */
+  /** Accepted but ignored — kept for call-site compatibility. */
+  copy?: GateCopy;
   split?: boolean;
-  /** Placement hint for analytics events. */
   placement?: string;
-  /** Blog category slug. */
   category?: string;
 }) {
-  if (hasEnabledResource(topic)) {
-    return (
-      <ResourceGate
-        topic={topic}
-        copy={gateCopy(topic)}
-        split={split}
-        placement={placement}
-        category={category}
-      />
-    );
-  }
-
-  // Fallback: the plain "free review" MiniCapture from R2.
   const t = getTopic(topic);
   return (
     <MiniCapture

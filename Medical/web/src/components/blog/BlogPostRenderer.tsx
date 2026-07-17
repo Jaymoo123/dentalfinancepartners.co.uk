@@ -16,9 +16,7 @@ import { topicFromCategory } from "@/lib/intent/deriveTopic";
 import { TopicOverrideProvider } from "@/components/intent/IntentProvider";
 import { topicForBlogSlug } from "@/lib/intent/taxonomy";
 import { PremiumUpgrade } from "@/components/tools/premium/PremiumUpgrade";
-import { ResourceGate } from "@/components/resources/ResourceGate";
-import { hasEnabledResource, resourceForTopic } from "@/lib/resources/registry";
-import { gateCopy } from "@/lib/resources/copy";
+import { MiniCapture } from "@/components/forms/MiniCapture";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -88,13 +86,6 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
   const verified = post.sourcesVerifiedAt ? formatUkDate(post.sourcesVerifiedAt) : "";
 
   const midSplit = splitContentAtMidScroll(post.contentHtml);
-
-  // Resource gate: resolved from the categorySlug-derived premiumTopic (FLAT routing).
-  // hasEnabledResource returns false for gp-practice (no resource) and null topics.
-  const resourceTopic = premiumTopic;
-  const resourceEnabled = resourceTopic ? hasEnabledResource(resourceTopic) : false;
-  const resourceEntry = resourceEnabled && resourceTopic ? resourceForTopic(resourceTopic) : null;
-  const resourceGateCopy = resourceEnabled && resourceTopic ? gateCopy(resourceTopic, post.title) : null;
 
   return (
     // TopicOverrideProvider injects the category-resolved topic into IntentProvider.
@@ -224,19 +215,16 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       placement="blog"
                       category={categorySlug}
                     />
-                    {/* ResourceGate: gated Excel download, appended after PremiumUpgrade.
-                        Renders only when a resource is enabled for the resolved topic.
-                        captureMode "email_only" and extras {resource_gate:true} are set
-                        inside ResourceGate. On-page delivery only (RESOURCE_EMAIL_DELIVERY_ENABLED=false). */}
-                    {resourceEnabled && resourceGateCopy && resourceEntry?.xlsx && resourceTopic ? (
-                      <ResourceGate
-                        topic={resourceTopic}
-                        copy={resourceGateCopy}
-                        placement="blog"
-                        category={categorySlug}
-                      />
-                    ) : null}
-                    {/* InlineMiniLeadForm follows after the premium tool and resource gate. */}
+                    {/* Mid-article qualified lead capture (free review, medical voice). */}
+                    <MiniCapture
+                      formId="blog_mid_resource"
+                      messagePrefix={`[Blog mid: ${categorySlug}] `}
+                      heading="Get a free specialist review"
+                      blurb="Tell us about your situation and a medical accountant will review your position and confirm the next sensible step, with no obligation."
+                      submitLabel="Request my free review"
+                      className="my-10 rounded-2xl border-l-4 border-[var(--copper)] bg-[var(--surface)] p-6 sm:p-8"
+                    />
+                    {/* InlineMiniLeadForm follows after the qualified capture. */}
                     <InlineMiniLeadForm topic={post.category} />
                     <div dangerouslySetInnerHTML={{ __html: midSplit.after }} />
                   </>
@@ -250,14 +238,14 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       placement="blog"
                       category={categorySlug}
                     />
-                    {resourceEnabled && resourceGateCopy && resourceEntry?.xlsx && resourceTopic ? (
-                      <ResourceGate
-                        topic={resourceTopic}
-                        copy={resourceGateCopy}
-                        placement="blog"
-                        category={categorySlug}
-                      />
-                    ) : null}
+                    <MiniCapture
+                      formId="blog_short_resource"
+                      messagePrefix={`[Blog short: ${categorySlug}] `}
+                      heading="Get a free specialist review"
+                      blurb="Tell us about your situation and a medical accountant will review your position and confirm the next sensible step, with no obligation."
+                      submitLabel="Request my free review"
+                      className="my-10 rounded-2xl border-l-4 border-[var(--copper)] bg-[var(--surface)] p-6 sm:p-8"
+                    />
                   </>
                 )}
               </div>

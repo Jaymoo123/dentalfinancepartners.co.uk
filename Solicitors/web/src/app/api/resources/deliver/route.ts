@@ -1,12 +1,9 @@
 /**
- * Resource delivery API stub.
+ * Resource delivery API stub (dead path as of 2026-07-17).
  *
- * R3 ships on-page delivery only (RESOURCE_EMAIL_ENABLED = false in registry.ts).
- * This route exists so that a future email-delivery path has a home without
- * a 404. It always returns a documented no-op response and never sends email.
- *
- * To activate: set RESOURCE_EMAIL_ENABLED = true in registry.ts and wire the
- * actual email provider here (must be a verified from-domain).
+ * Email-gated delivery was retired; resources are now open and the mid-slot
+ * renders a qualified lead-capture form instead. This route is a no-op kept
+ * so any stale client references get a 200 rather than a 404.
  */
 import { NextResponse } from "next/server";
 

@@ -10,13 +10,11 @@
  * linked for an asset whose `enabled` is false. Onboarding a category = author
  * the asset, drop the file in public/resources, then flip the single flag.
  *
- * EMAIL PATH: RESOURCE_EMAIL_ENABLED is false; on-page delivery only.
- * Re-enabling email is a one-line flip once a verified Resend from-domain exists.
+ * OPEN RESOURCES: guides and xlsx are free and ungateed (2026-07-17). The
+ * mid-slot ResourceGate now renders a qualified lead-capture form, not an
+ * email-unlock.
  */
 import type { TopicKey } from "@/lib/intent/taxonomy";
-
-/** Set to true once a verified Resend from-domain is configured. */
-export const RESOURCE_EMAIL_ENABLED = false;
 
 /** A downloadable spreadsheet model for a category. */
 export interface XlsxAsset {
@@ -28,7 +26,7 @@ export interface XlsxAsset {
   enabled: boolean;
 }
 
-/** A gated written guide (a noindex web page) for a category. */
+/** A written guide (open, indexable resource page) for a category. */
 export interface GuideAsset {
   /** the resources/[topic] route slug (equals the TopicKey today) */
   slug: string;
@@ -79,7 +77,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     },
     magnetTitle: "The SRA client account toolkit",
     magnetBlurbTemplate:
-      "A working reconciliation and reserve model with live formulas, plus a plain-English guide to the SRA Accounts Rules. Enter your email to unlock both.",
+      "A working reconciliation and reserve model with live formulas, plus a plain-English guide to the SRA Accounts Rules. Free to download.",
   },
   "partnership-llp": {
     topic: "partnership-llp",
@@ -96,7 +94,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     },
     magnetTitle: "The partner profit and tax toolkit",
     magnetBlurbTemplate:
-      "A working Excel model that splits distributable profit across the partners and shows what each keeps after income tax and Class 4 National Insurance, plus a plain-English guide. Enter your email to unlock both.",
+      "A working Excel model that splits distributable profit across the partners and shows what each keeps after income tax and Class 4 National Insurance, plus a plain-English guide. Free to download.",
   },
   "succession-sale": {
     topic: "succession-sale",
@@ -113,7 +111,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     },
     magnetTitle: "The practice sale toolkit",
     magnetBlurbTemplate:
-      "A working valuation and net-of-tax model (goodwill range, WIP, and what you keep after Capital Gains Tax and Business Asset Disposal Relief), plus a sale-readiness guide. Enter your email to unlock both.",
+      "A working valuation and net-of-tax model (goodwill range, WIP, and what you keep after Capital Gains Tax and Business Asset Disposal Relief), plus a sale-readiness guide. Free to download.",
   },
   "sole-practitioner": {
     topic: "sole-practitioner",
@@ -130,7 +128,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     },
     magnetTitle: "The solicitor take-home toolkit",
     magnetBlurbTemplate:
-      "A working Excel model comparing your take-home as a sole practitioner or partner versus through a limited company, after income tax, National Insurance, corporation tax and dividend tax, plus a guide. Enter your email to unlock both.",
+      "A working Excel model comparing your take-home as a sole practitioner or partner versus through a limited company, after income tax, National Insurance, corporation tax and dividend tax, plus a guide. Free to download.",
   },
   "practice-finance": {
     topic: "practice-finance",
@@ -147,7 +145,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     },
     magnetTitle: "The practice finance toolkit",
     magnetBlurbTemplate:
-      "A working Excel model covering lock-up days, cash-flow forecasting and working capital, plus a plain-English guide. Enter your email to unlock both.",
+      "A working Excel model covering lock-up days, cash-flow forecasting and working capital, plus a plain-English guide. Free to download.",
   },
   vat: {
     topic: "vat",
@@ -160,7 +158,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     },
     magnetTitle: "The VAT position toolkit",
     magnetBlurbTemplate:
-      "A plain-English guide to VAT for law firms: disbursements vs rechargeable costs, counsel fees, search fees and partial exemption. Enter your email to unlock it.",
+      "A plain-English guide to VAT for law firms: disbursements vs rechargeable costs, counsel fees, search fees and partial exemption. Free to read.",
   },
   incorporation: {
     topic: "incorporation",
@@ -177,7 +175,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     },
     magnetTitle: "The incorporation decision toolkit",
     magnetBlurbTemplate:
-      "A working Excel model comparing your after-tax position under LLP versus limited company, plus a guide covering SRA authorisation, salaried-member rules and conversion mechanics. Enter your email to unlock both.",
+      "A working Excel model comparing your after-tax position under LLP versus limited company, plus a guide covering SRA authorisation, salaried-member rules and conversion mechanics. Free to download.",
   },
   "professional-indemnity": {
     topic: "professional-indemnity",
@@ -190,7 +188,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     },
     magnetTitle: "The PII benchmarks guide",
     magnetBlurbTemplate:
-      "A plain-English guide to SRA minimum terms, qualifying insurer requirements and premium benchmarks by practice area. Enter your email to unlock it.",
+      "A plain-English guide to SRA minimum terms, qualifying insurer requirements and premium benchmarks by practice area. Free to read.",
   },
 };
 

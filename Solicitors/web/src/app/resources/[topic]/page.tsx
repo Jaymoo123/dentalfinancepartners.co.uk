@@ -1,9 +1,8 @@
 /**
- * Noindex guide route for gated written resources.
+ * Open guide route for written resources.
  *
- * Each guide is behind the ResourceGate email capture and is intentionally
- * kept out of the search index so it never competes with the ranking blog pages.
- * Served at /resources/<topic> after the visitor unlocks the download.
+ * Guides are free and fully visible (email gate retired 2026-07-17). Pages are
+ * indexable. A qualified lead-capture CTA sits at the foot of each guide.
  */
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -30,8 +29,6 @@ export async function generateMetadata({
     title: guide.title,
     description: guide.summary || undefined,
     alternates: { canonical: `${siteConfig.url}/resources/${topic}` },
-    // Noindex: the guide is the value behind the gate; we do not want it ranking.
-    robots: { index: false, follow: false },
   };
 }
 
@@ -46,19 +43,16 @@ export default async function ResourceGuidePage({
 
   return (
     <>
-      {/* Noindex meta tag as belt-and-braces (Metadata robots above handles the header) */}
-      <meta name="robots" content="noindex,nofollow" />
-
       <section className="bg-[var(--primary)] text-white">
         <div className={`${siteContainerLg} py-12 sm:py-16`}>
           <Link
-            href="/calculators"
+            href="/resources"
             className="inline-flex items-center gap-1 text-sm text-white/80 hover:text-white mb-6"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
-            Back to tools
+            Back to resources
           </Link>
           <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/80">
             Specialist guide · Accounts for Lawyers
