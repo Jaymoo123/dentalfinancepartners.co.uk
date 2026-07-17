@@ -3,18 +3,16 @@
  *
  * Tax year: 2026/27. All rate constants dated below.
  *
- * VERIFY BEFORE DEPLOY (flagged per spec):
- * - EV appropriate percentage 2026/27: 4% used here (3% was 2025/26; +1ppt/yr
- *   trajectory per Autumn Statement). Task brief said 3% — that is the 2025/26 figure.
- * - Car fuel multiplier, van benefit, van fuel: 2025/26 figures used pending
- *   confirmed 2026/27 uprating (usually CPI-uprated by SI each autumn).
- * - Official rate of interest: 3.75% (from April 2025; reviewed quarterly since
- *   6 April 2025 — check current quarter's rate).
+ * VERIFIED against gov.uk 2026-07:
+ * - EV appropriate percentage 2026/27: 4% (gov.uk 480 Appendix 2). Confirmed.
+ * - Car fuel multiplier £29,200, van benefit £4,170, van fuel £798: 2026/27
+ *   uprated figures (gov.uk van/fuel benefit charges 2026-27). Confirmed.
+ * - Official rate of interest: 3.75% (from 6 April 2025, unchanged into 2026/27).
  */
 
 // --- Company car appropriate percentages, 2026/27 ---
 // 0 g/km (pure electric)
-const EV_PCT_2026_27 = 0.04; // VERIFY: 4% assumed (3% in 2025/26, +1ppt/yr)
+const EV_PCT_2026_27 = 0.04; // 2026/27, gov.uk 480 Appendix 2
 // 1-50 g/km hybrids, banded by electric-only range (miles)
 const HYBRID_BANDS_2026_27: { minRange: number; pct: number }[] = [
   { minRange: 130, pct: 0.04 },
@@ -30,13 +28,13 @@ const DIESEL_SUPPLEMENT = 0.04; // non-RDE2 diesels only, still capped at 37%
 const CAPITAL_CONTRIBUTION_CAP = 5000;
 
 // --- Fuel / van flat rates ---
-const CAR_FUEL_MULTIPLIER = 28200; // VERIFY: 2025/26 figure, 2026/27 uprating unconfirmed
-const VAN_BENEFIT = 4020; // VERIFY: 2025/26 figure
-const VAN_FUEL_BENEFIT = 769; // VERIFY: 2025/26 figure
+const CAR_FUEL_MULTIPLIER = 29200; // 2026/27 (uprated by Sept 2025 CPI); gov.uk van/fuel benefit charges 2026-27
+const VAN_BENEFIT = 4170; // 2026/27; same gov.uk page
+const VAN_FUEL_BENEFIT = 798; // 2026/27; same gov.uk page
 // Zero-emission vans: nil benefit since 2021/22
 
 // --- Beneficial loans ---
-const OFFICIAL_RATE = 0.0375; // VERIFY: 3.75% from April 2025, reviewed quarterly
+const OFFICIAL_RATE = 0.0375; // 3.75% from 6 April 2025, unchanged into 2026/27
 const LOAN_DE_MINIMIS = 10000; // benefit only arises if balance exceeds £10,000
 
 // --- Employer NIC ---

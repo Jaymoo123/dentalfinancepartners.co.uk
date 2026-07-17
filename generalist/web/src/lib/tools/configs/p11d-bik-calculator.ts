@@ -165,9 +165,9 @@ export const p11dBikTool: GenericTool = {
   explainer: {
     heading: "How benefit in kind tax is calculated in 2026/27",
     paragraphs: [
-      "Each benefit has its own valuation rule. A company car is the list price multiplied by an appropriate percentage set by its CO2 emissions (and electric range for plug-in hybrids), from 4% for a pure electric car up to a 37% cap. Car fuel uses the same percentage applied to a fixed multiplier (£28,200). Vans use flat rates: £4,020 for the van and £769 for private fuel, with electric vans at nil. A loan over £10,000 is taxed on the interest saved against HMRC's official rate (3.75%), and private medical insurance is taxed on what it costs the employer. The employee pays income tax on the total at their marginal rate; the employer pays Class 1A NIC at 15% on the same total.",
+      "Each benefit has its own valuation rule. A company car is the list price multiplied by an appropriate percentage set by its CO2 emissions (and electric range for plug-in hybrids), from 4% for a pure electric car up to a 37% cap. Car fuel uses the same percentage applied to a fixed multiplier (£29,200). Vans use flat rates: £4,170 for the van and £798 for private fuel, with electric vans at nil. A loan over £10,000 is taxed on the interest saved against HMRC's official rate (3.75%), and private medical insurance is taxed on what it costs the employer. The employee pays income tax on the total at their marginal rate; the employer pays Class 1A NIC at 15% on the same total.",
       "Worked example 1: an employee has a £48,000 electric company car (0 g/km). The appropriate percentage is 4%, so the taxable benefit is £1,920. A higher-rate taxpayer pays 40% of that, £768 a year (£64 a month), and the employer pays Class 1A of £288. This is why salary-sacrifice electric cars remain one of the most tax-efficient benefits available.",
-      "Worked example 2: a £32,000 petrol car emitting 128 g/km sits in the 32% band, a taxable benefit of £10,240. If the employer also pays for private fuel, the fuel benefit is 32% of £28,200, another £9,024, taking total taxable benefits to £19,264. A higher-rate taxpayer pays £7,706 a year in tax and the employer pays £2,890 in Class 1A. Unless private mileage is very high, paying for your own fuel and claiming business mileage back is usually cheaper than the fuel benefit.",
+      "Worked example 2: a £32,000 petrol car emitting 128 g/km sits in the 32% band, a taxable benefit of £10,240. If the employer also pays for private fuel, the fuel benefit is 32% of £29,200, another £9,344, taking total taxable benefits to £19,584. A higher-rate taxpayer pays £7,834 a year in tax and the employer pays £2,938 in Class 1A. Unless private mileage is very high, paying for your own fuel and claiming business mileage back is usually cheaper than the fuel benefit.",
     ],
   },
   faqs: [
@@ -194,7 +194,7 @@ export const p11dBikTool: GenericTool = {
     {
       question: "Do I pay tax on a company van?",
       answer:
-        "Only if you use it privately beyond ordinary commuting and insignificant private use. If you do, a flat-rate benefit of £4,020 applies regardless of the van's value, plus £769 if the employer also pays for private fuel. Fully electric vans have a nil benefit, so an electric company van with unrestricted private use currently costs the employee nothing in tax.",
+        "Only if you use it privately beyond ordinary commuting and insignificant private use. If you do, a flat-rate benefit of £4,170 applies regardless of the van's value, plus £798 if the employer also pays for private fuel. Fully electric vans have a nil benefit, so an electric company van with unrestricted private use currently costs the employee nothing in tax.",
     },
     {
       question: "When does a director's loan become a taxable benefit?",
