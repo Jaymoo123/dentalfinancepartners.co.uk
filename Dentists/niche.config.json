@@ -21,7 +21,7 @@
   "brand": {
     "primary_color": "#2563eb",
     "logo_path": "/brand/logo.png",
-    "publisher_logo_url": "/og-placeholder.svg"
+    "publisher_logo_url": "/brand/logo.png"
   },
   "contact": {
     "email": "hello@dentalfinancepartners.co.uk",

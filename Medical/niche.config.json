@@ -21,7 +21,7 @@
   "brand": {
     "primary_color": "#0891b2",
     "logo_path": "/brand/logo.png",
-    "publisher_logo_url": "/og-placeholder.svg"
+    "publisher_logo_url": "/brand/og-card.png"
   },
   "contact": {
     "email": "hello@medicalaccounts.co.uk",

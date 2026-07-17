@@ -22,7 +22,7 @@
     "primary_color": "#c41e3a",
     "accent_color": "#475569",
     "logo_path": "/brand/logo.png",
-    "publisher_logo_url": "/og-placeholder.svg"
+    "publisher_logo_url": "/brand/og-card.png"
   },
   "contact": {
     "email": "hello@accountsforlawyers.co.uk",

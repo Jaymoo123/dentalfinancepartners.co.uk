@@ -15,7 +15,7 @@ import { ArrowRight, BookOpen, Calculator, LineChart, Building2, FileCheck, Quot
 export const metadata: Metadata = {
   title: "Accountants for Marketing Agencies | Agency Founder Finance",
   description:
-    "Specialist accountants for UK and UAE agency founders. Tax planning, management accounts, IR35, salary structures and exit planning for marketing, creative, digital and all agency types.",
+    "Specialist accountants for agency founders. Tax planning, management accounts, IR35 and exit strategy for marketing, creative and digital agencies.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
     title: "Agency Founder Finance | The Accountant Built for Agency Founders",

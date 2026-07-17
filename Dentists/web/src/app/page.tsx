@@ -13,7 +13,7 @@ const btnMailOutline =
 
 export const metadata: Metadata = {
   title: "Specialist Dental Accountants | Accountants for Dentists UK",
-  description: "Specialist dental accountants for practice owners, associates and groups. NHS contract accounting, tax planning, VAT and acquisitions. London and Manchester. Free consultation.",
+  description: "Specialist dental accountants for UK practice owners, associates and groups. NHS contracts, tax planning, VAT and acquisitions. London and Manchester.",
   alternates: {
     canonical: siteConfig.url,
     languages: {

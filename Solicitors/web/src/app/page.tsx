@@ -5,6 +5,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
+import { buildWebSite } from "@/lib/schema/index";
 import { TestimonialSlider } from "@/components/solicitors/TestimonialSlider";
 import { getAllPosts, getCategorySlug, calculateReadTime } from "@/lib/blog";
 
@@ -13,11 +14,11 @@ const btnMailOutline =
 
 export const metadata: Metadata = {
   title: "Accountants for Solicitors UK 2025/26 | SRA + LLP + Partner Tax",
-  description: "Specialist accountants for UK law firms. SRA Accountant's Report, LLP and partnership tax, FA 2014 Salaried Member audit, BADR pre-sale planning. Fixed monthly fees.",
+  description: "Specialist accountants for UK solicitors and law firms. SRA Accountant's Report, LLP and partnership tax, BADR pre-sale planning. Fixed monthly fees.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
     title: "Accountants for Solicitors UK 2025/26 | SRA + LLP + Partner Tax",
-    description: "Specialist accountants for UK law firms. SRA Accountant's Report, LLP and partnership tax, FA 2014 Salaried Member audit, BADR pre-sale planning. Fixed monthly fees.",
+    description: "Specialist accountants for UK solicitors and law firms. SRA Accountant's Report, LLP and partnership tax, BADR pre-sale planning. Fixed monthly fees.",
     url: siteConfig.url,
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
@@ -138,6 +139,7 @@ const specialistRows = [
 
 export default function HomePage() {
   const orgSchema = buildOrganizationJsonLd();
+  const webSiteSchema = buildWebSite();
   const allPosts = getAllPosts();
   const recentPosts = allPosts.slice(0, 3);
 
@@ -145,7 +147,7 @@ export default function HomePage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([orgSchema, webSiteSchema]) }}
       />
 
       <section

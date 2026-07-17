@@ -28,11 +28,11 @@ const btnMailOutline =
 
 export const metadata: Metadata = {
   title: "GP Accountants UK | Tax Specialists for Doctors",
-  description: "Medical accounting specialists for UK doctors. NHS pension optimization, locum tax returns, practice incorporation, and medical expense claims. Free consultation for GPs and consultants.",
+  description: "Medical accounting specialists for UK doctors and GPs. NHS pension advice, locum tax returns, practice incorporation and medical expense claims.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
     title: "GP Accountants UK | Tax Specialists for Doctors",
-    description: "Medical accounting specialists for UK doctors. NHS pension optimization, locum tax returns, practice incorporation, and medical expense claims. Free consultation for GPs and consultants.",
+    description: "Medical accounting specialists for UK doctors and GPs. NHS pension advice, locum tax returns, practice incorporation and medical expense claims.",
     url: siteConfig.url,
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "GP Accountants UK | Tax Specialists for Doctors",
-    description: "Medical accounting specialists for UK doctors. NHS pension optimization, locum tax returns, practice incorporation, and medical expense claims. Free consultation for GPs and consultants.",
+    description: "Medical accounting specialists for UK doctors and GPs. NHS pension advice, locum tax returns, practice incorporation and medical expense claims.",
   },
 };
 
