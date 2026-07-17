@@ -15,6 +15,8 @@ import { build as buildSraCompliance } from "./sra-compliance.js";
 import { build as buildPartnershipLlp } from "./partnership-llp.js";
 import { build as buildSuccessionSale } from "./succession-sale.js";
 import { build as buildSolePractitioner } from "./sole-practitioner.js";
+import { build as buildPracticeFinance } from "./practice-finance.js";
+import { build as buildIncorporation } from "./incorporation.js";
 
 /** A builder function that produces one ExcelJS workbook. */
 export type WorkbookBuilder = () => ExcelJS.Workbook | Promise<ExcelJS.Workbook>;
@@ -48,5 +50,15 @@ export const BUILDERS: BuilderEntry[] = [
     topic: "sole-practitioner",
     fileName: "sole-practitioner-model.xlsx",
     build: buildSolePractitioner,
+  },
+  {
+    topic: "practice-finance",
+    fileName: "practice-finance-model.xlsx",
+    build: buildPracticeFinance,
+  },
+  {
+    topic: "incorporation",
+    fileName: "incorporation-model.xlsx",
+    build: buildIncorporation,
   },
 ];

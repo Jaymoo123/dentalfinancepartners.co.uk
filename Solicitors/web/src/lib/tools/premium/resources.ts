@@ -29,8 +29,9 @@ export const TOPIC_RESOURCES: Record<TopicKey, TopicResource> = {
   "succession-sale":    { toolId: "practice-sale-premium" },
   "sra-compliance":     { toolId: "sra-client-account-premium" },
   "incorporation":      { toolId: "sole-practitioner-premium" },
-  "practice-finance":   { toolId: "" },
-  "vat":                { toolId: "" },
+  "practice-finance":          { toolId: "" },
+  "vat":                       { toolId: "" },
+  "professional-indemnity":    { toolId: "" },
 };
 
 /** Returns the TopicResource for a topic, or null when the topic is not in the map. */

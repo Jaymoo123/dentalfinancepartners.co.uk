@@ -132,34 +132,65 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     magnetBlurbTemplate:
       "A working Excel model comparing your take-home as a sole practitioner or partner versus through a limited company, after income tax, National Insurance, corporation tax and dividend tax, plus a guide. Enter your email to unlock both.",
   },
-  // Non-flagship topics: registered for completeness so resourceForTopic() is
-  // total over TopicKey, but with no assets and all flags off.
   "practice-finance": {
     topic: "practice-finance",
     toolId: "practice-finance-premium",
-    xlsx: null,
-    guide: null,
+    xlsx: {
+      file: "/resources/practice-finance/practice-finance-model.xlsx",
+      label: "Practice cash-flow model (Excel)",
+      enabled: true,
+    },
+    guide: {
+      slug: "practice-finance",
+      label: "Practice finance and cash-flow guide",
+      enabled: true,
+    },
     magnetTitle: "The practice finance toolkit",
     magnetBlurbTemplate:
-      "A working model and guide covering lock-up, cash flow and working capital for law firms. Enter your email to unlock both.",
+      "A working Excel model covering lock-up days, cash-flow forecasting and working capital, plus a plain-English guide. Enter your email to unlock both.",
   },
   vat: {
     topic: "vat",
     toolId: "vat-premium",
     xlsx: null,
-    guide: null,
+    guide: {
+      slug: "vat",
+      label: "VAT and disbursements guide",
+      enabled: true,
+    },
     magnetTitle: "The VAT position toolkit",
     magnetBlurbTemplate:
-      "A plain-English guide to VAT for law firms. Enter your email to unlock it.",
+      "A plain-English guide to VAT for law firms: disbursements vs rechargeable costs, counsel fees, search fees and partial exemption. Enter your email to unlock it.",
   },
   incorporation: {
     topic: "incorporation",
     toolId: "incorporation-premium",
-    xlsx: null,
-    guide: null,
+    xlsx: {
+      file: "/resources/incorporation/incorporation-model.xlsx",
+      label: "Structure comparison model (Excel)",
+      enabled: true,
+    },
+    guide: {
+      slug: "incorporation",
+      label: "Structure and incorporation guide",
+      enabled: true,
+    },
     magnetTitle: "The incorporation decision toolkit",
     magnetBlurbTemplate:
-      "A working model and guide covering firm structure and incorporation. Enter your email to unlock both.",
+      "A working Excel model comparing your after-tax position under LLP versus limited company, plus a guide covering SRA authorisation, salaried-member rules and conversion mechanics. Enter your email to unlock both.",
+  },
+  "professional-indemnity": {
+    topic: "professional-indemnity",
+    toolId: "indemnity-premium-estimator",
+    xlsx: null,
+    guide: {
+      slug: "professional-indemnity",
+      label: "PII premium benchmarks guide",
+      enabled: true,
+    },
+    magnetTitle: "The PII benchmarks guide",
+    magnetBlurbTemplate:
+      "A plain-English guide to SRA minimum terms, qualifying insurer requirements and premium benchmarks by practice area. Enter your email to unlock it.",
   },
 };
 

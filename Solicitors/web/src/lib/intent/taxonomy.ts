@@ -42,7 +42,8 @@ export type TopicKey =
   | "succession-sale"
   | "practice-finance"
   | "vat"
-  | "incorporation";
+  | "incorporation"
+  | "professional-indemnity";
 
 export type Topic = {
   key: TopicKey;
@@ -88,6 +89,7 @@ export const TOPICS: Topic[] = [
     label: "Partnership and LLP accounting",
     blogCategorySlugs: [
       "partnership-llp-accounting",
+      "partnership-llp-structure",
       "practice-accounting",
     ],
     primaryCalculator: "llp-profit-share-allocation",
@@ -112,9 +114,9 @@ export const TOPICS: Topic[] = [
     blogCategorySlugs: [
       "practice-finance-cash-flow",
     ],
-    primaryCalculator: "indemnity-premium-estimator",
-    ctaCopy: "Estimate your indemnity premium",
-    resourceId: null,
+    primaryCalculator: "practice-cashflow-runway",
+    ctaCopy: "Model your firm's cash flow runway",
+    resourceId: "practice-finance",
   },
   {
     key: "vat",
@@ -124,7 +126,7 @@ export const TOPICS: Topic[] = [
     ],
     primaryCalculator: null,
     ctaCopy: "Get your VAT position checked by a specialist",
-    resourceId: null,
+    resourceId: "vat",
   },
   {
     key: "incorporation",
@@ -134,7 +136,17 @@ export const TOPICS: Topic[] = [
     ],
     primaryCalculator: "solicitor-take-home",
     ctaCopy: "Compare your take-home under different structures",
-    resourceId: null,
+    resourceId: "incorporation",
+  },
+  {
+    key: "professional-indemnity",
+    label: "Professional indemnity insurance",
+    blogCategorySlugs: [
+      "professional-indemnity",
+    ],
+    primaryCalculator: "indemnity-premium-estimator",
+    ctaCopy: "Estimate your PII premium",
+    resourceId: "professional-indemnity",
   },
 ];
 
@@ -157,7 +169,7 @@ export const CALC_SLUG_TO_TOPIC: Record<string, TopicKey> = {
   "llp-profit-share-allocation": "partnership-llp",
   "law-firm-valuation": "succession-sale",
   "sra-client-account-reserve": "sra-compliance",
-  "indemnity-premium-estimator": "practice-finance",
+  "indemnity-premium-estimator": "professional-indemnity",
   "colp-cofa-checker": "sra-compliance",
   "solicitor-hourly-rate-benchmark": "sole-practitioner",
   "law-firm-sale-cgt": "succession-sale",

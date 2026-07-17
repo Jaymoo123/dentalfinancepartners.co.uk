@@ -22,6 +22,7 @@ const TOPIC_NOUN: Record<TopicKey, string> = {
   "practice-finance": "your firm's cash flow",
   vat: "your VAT position",
   incorporation: "going limited",
+  "professional-indemnity": "your PII premium",
 };
 
 /** Bespoke, human, [curious, helpful, direct] lines for the four traffic topics. */

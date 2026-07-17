@@ -184,7 +184,7 @@ describe("deriveTopic", () => {
     expect(deriveTopic("/calculators/llp-profit-share-allocation")).toBe("partnership-llp");
     expect(deriveTopic("/calculators/law-firm-valuation")).toBe("succession-sale");
     expect(deriveTopic("/calculators/sra-client-account-reserve")).toBe("sra-compliance");
-    expect(deriveTopic("/calculators/indemnity-premium-estimator")).toBe("practice-finance");
+    expect(deriveTopic("/calculators/indemnity-premium-estimator")).toBe("professional-indemnity");
   });
 
   it("derives topic from /embed/<slug>", () => {

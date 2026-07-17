@@ -4,12 +4,8 @@
  * Keys are slugifyCategory() outputs (see lib/blog.ts).
  * Priority: premiumSlug > toolSlug > resourceId (MiniCapture fallback).
  *
- * TODO items flag email-gated resources that don't exist yet — the content
- * wave builds them. Until then the gate renders nothing (hasEnabledResource
- * guards all renders) and MiniCapture fires instead.
- *
- * NOTE: partnership-llp-structure is NOT in taxonomy.ts blogCategorySlugs.
- * Add it to the partnership-llp entry there when taxonomy is next touched.
+ * All four email-gated resources are now built and enabled in registry.ts.
+ * partnership-llp-structure is mapped in taxonomy.ts blogCategorySlugs.
  */
 
 export type CaptureConfig = {
@@ -109,34 +105,28 @@ export const CATEGORY_CAPTURE_MAP: Record<string, CaptureConfig> = {
   "practice-finance-cash-flow": {
     premiumSlug: null,
     toolSlug: "practice-cashflow-runway",
-    resourceId: "practice-finance-guide",
-    resourceTodo:
-      "TODO: build practice-finance cash-flow guide + Excel model; flip hasEnabledResource when ready",
+    resourceId: "practice-finance",
   },
 
   // ── VAT & compliance ────────────────────────────────────────────────────
   "vat-compliance": {
     premiumSlug: null,
     toolSlug: "vat-disbursements-classifier",
-    resourceId: "vat-guide",
-    resourceTodo: "TODO: build VAT & disbursements written guide for law firms",
+    resourceId: "vat",
   },
 
   // ── Structure & incorporation ───────────────────────────────────────────
   "structure-incorporation": {
     premiumSlug: "sole-practitioner-premium",
     toolSlug: "solicitor-hourly-rate-benchmark",
-    resourceId: "incorporation-guide",
-    resourceTodo:
-      "TODO: build structure & incorporation decision guide + comparison model",
+    resourceId: "incorporation",
   },
 
-  // ── Professional indemnity (no taxonomy topic; public tool only) ────────
+  // ── Professional indemnity ──────────────────────────────────────────────
   "professional-indemnity": {
     premiumSlug: null,
     toolSlug: "indemnity-premium-estimator",
-    resourceId: "professional-indemnity-guide",
-    resourceTodo: "TODO: build PII premium benchmarks guide for law firms",
+    resourceId: "professional-indemnity",
   },
 };
 
