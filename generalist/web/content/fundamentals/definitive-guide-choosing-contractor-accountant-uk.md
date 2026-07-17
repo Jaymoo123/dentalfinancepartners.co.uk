@@ -88,7 +88,7 @@ faqs:
 
 <h3>The Optimal Salary Level</h3>
 
-<p>Most contractors set their salary at the NI primary threshold of £12,570. This is the point at which you stop paying employee NI, but you still build qualifying years for your state pension. Some contractors take the secondary threshold (£9,100) to avoid employer NI entirely, but that sacrifices pension credits.</p>
+<p>Most contractors set their salary at the NI primary threshold of £12,570. This is the point at which you stop paying employee NI, but you still build qualifying years for your state pension. Since 6 April 2025 the employer NI secondary threshold is £5,000 (rate 15%), so avoiding employer NI entirely means a salary of £5,000 or less, which falls below the Lower Earnings Limit and sacrifices state pension credits.</p>
 
 <table>
 <thead>
@@ -104,23 +104,23 @@ faqs:
 <tr>
 <td>£12,570</td>
 <td>£0</td>
-<td>£478</td>
+<td>£1,135.50</td>
 <td>Yes</td>
-<td>£13,048</td>
+<td>£13,705.50</td>
 </tr>
 <tr>
 <td>£9,100</td>
 <td>£0</td>
-<td>£0</td>
-<td>No</td>
-<td>£9,100</td>
+<td>£615</td>
+<td>Yes</td>
+<td>£9,715</td>
 </tr>
 <tr>
-<td>£8,000</td>
+<td>£5,000</td>
 <td>£0</td>
 <td>£0</td>
 <td>No</td>
-<td>£8,000</td>
+<td>£5,000</td>
 </tr>
 </tbody>
 </table>

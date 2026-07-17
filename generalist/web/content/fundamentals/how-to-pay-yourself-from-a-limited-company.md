@@ -19,9 +19,9 @@ summary: "Deciding how to pay yourself from a limited company is one of the most
 schema: ""
 faqs:
   - question: "What is the most tax-efficient way to pay myself from my limited company in 2025/26?"
-    answer: "For most directors, the most tax-efficient strategy is a combination of a small salary (around £9,100) and dividends taken from post-tax profits. The salary avoids both employee and employer National Insurance, while dividends are taxed at lower rates than salary. However, the right approach depends on your total income, your company's profitability, and whether you're inside or outside IR35."
+    answer: "For most directors, the most tax-efficient strategy is a combination of a small salary (usually £12,570, matching the personal allowance) and dividends taken from post-tax profits. The salary attracts no income tax or employee National Insurance, though the company pays employer NI of about £1,135 (15% on the amount above the £5,000 secondary threshold), which is itself deductible for corporation tax. Dividends are taxed at lower rates than salary. The right approach depends on your total income, your company's profitability, and whether you're inside or outside IR35."
   - question: "Can I pay myself only in dividends and no salary?"
-    answer: "Technically yes, but it's not recommended. Without a salary, you won't build qualifying years for the state pension. Some mortgage lenders also prefer to see salary income. And if HMRC challenges your IR35 status, having no salary can work against you. Most directors take at least £9,100 in salary to protect their state pension entitlement."
+    answer: "Technically yes, but it's not recommended. Without a salary, you won't build qualifying years for the state pension. Some mortgage lenders also prefer to see salary income. And if HMRC challenges your IR35 status, having no salary can work against you. Most directors take a salary of at least the Lower Earnings Limit (£6,500 for 2025/26) to protect their state pension entitlement, and usually £12,570 to use the full personal allowance."
   - question: "What happens if I take money from my company without declaring it as salary or dividends?"
     answer: "That money goes into your director's loan account. If the loan exceeds £10,000, your company must pay S455 tax at 33.75% on the overdrawn balance. You may also face a benefit-in-kind charge if the loan is interest-free. HMRC can impose penalties for failing to report the loan correctly. Always record withdrawals properly."
   - question: "How much dividend can I take without paying tax in 2025/26?"
@@ -61,47 +61,47 @@ faqs:
 <ul>
 <li><strong>Income tax</strong> through PAYE (if you earn above your Personal Allowance of £12,570)</li>
 <li><strong>Employee National Insurance</strong> at 8% on earnings between £12,570 and £50,270, then 2% above that</li>
-<li><strong>Employer National Insurance</strong> at 13.8% on earnings above the secondary threshold (£9,100 for 2025/26)</li>
+<li><strong>Employer National Insurance</strong> at 15% on earnings above the secondary threshold (£5,000 from 6 April 2025; before that it was 13.8% above £9,100)</li>
 </ul>
 
-<p>Many directors take a salary equal to the employer NI secondary threshold, currently £9,100 per year. This keeps the salary below the employee NI threshold, so you pay no employee NI. The company pays no employer NI because the salary is below the secondary threshold. But the salary still counts as qualifying earnings for state pension and benefits.</p>
+<p>Since the secondary threshold fell to £5,000, there is no salary level that both uses a meaningful chunk of your personal allowance and avoids employer NI. A salary of £5,000 avoids employer NI entirely, but it sits below the Lower Earnings Limit (£6,500 for 2025/26), so it does not build a qualifying year for your state pension. That is why most directors now take £12,570 and accept a modest employer NI cost.</p>
 
 <h3>The "optimum" salary strategy</h3>
 
 <p>For 2025/26, the most common approach is:</p>
 
 <ul>
-<li><strong>Salary: £9,100 per year</strong> (£758 per month)</li>
-<li>No employee NI</li>
-<li>No employer NI (because it's below the secondary threshold)</li>
-<li>Company gets corporation tax relief at 19% or 25%</li>
+<li><strong>Salary: £12,570 per year</strong> (£1,047.50 per month)</li>
+<li>No income tax (within the personal allowance) and no employee NI (at the primary threshold)</li>
+<li>Employer NI of £1,135.50 (15% on the £7,570 above the £5,000 secondary threshold), which is itself deductible for corporation tax</li>
+<li>Company gets corporation tax relief on the salary and the employer NI</li>
 <li>You build qualifying years for state pension</li>
 </ul>
 
-<p>Some directors take a salary of £12,570 to use their full Personal Allowance. That's fine, but you'll pay employee NI on the amount above £9,100. And the company pays employer NI on the amount above £9,100 too. The extra tax often outweighs the benefit unless you need the higher salary for mortgage applications or other reasons.</p>
+<p>A lower salary of £5,000 avoids employer NI entirely, but it wastes most of your personal allowance and falls below the Lower Earnings Limit, so you lose the state pension qualifying year. For most directors the £12,570 salary comes out ahead overall, unless the company cannot fund the employer NI.</p>
 
 <p><strong>Worked example: Sarah's salary decision</strong></p>
 <p>Sarah runs a marketing agency from her home office in Stokes Croft, Bristol. Her company makes £80,000 profit before tax in 2025/26.</p>
 
-<p><strong>Option A: Salary of £9,100</strong></p>
+<p><strong>Option A: Salary of £5,000</strong></p>
 <ul>
-<li>Company profit after salary: £70,900</li>
-<li>Corporation tax (19% up to £50k, then 25% marginal relief): approximately £14,720</li>
-<li>Sarah's personal tax: none on the salary (below PA and NI thresholds)</li>
-<li>Net retained in company: £56,180</li>
+<li>No income tax, no employee NI, no employer NI (at the secondary threshold)</li>
+<li>Company profit after salary: £75,000</li>
+<li>Corporation tax (19% up to £50k, then marginal relief): approximately £16,125</li>
+<li>Net retained in company: £58,875</li>
+<li>No state pension qualifying year (salary is below the Lower Earnings Limit)</li>
 </ul>
 
 <p><strong>Option B: Salary of £12,570</strong></p>
 <ul>
-<li>Company profit after salary: £67,430</li>
-<li>Corporation tax: approximately £13,720</li>
-<li>Sarah's personal tax: none on salary (within PA)</li>
-<li>Employee NI: 8% on (£12,570 - £9,100) = £277.60</li>
-<li>Employer NI: 13.8% on (£12,570 - £9,100) = £478.86</li>
-<li>Net retained in company: £52,953</li>
+<li>Sarah's personal tax: none on salary (within PA); no employee NI (at the primary threshold)</li>
+<li>Employer NI: 15% on (£12,570 - £5,000) = £1,135.50</li>
+<li>Company profit after salary and employer NI: £66,294.50</li>
+<li>Corporation tax: approximately £13,818</li>
+<li>Net retained in company: £52,477</li>
 </ul>
 
-<p>By taking the lower salary, Sarah saves £756 in combined NI and keeps more money in the company for growth. She can extract the remaining profit as dividends later.</p>
+<p>Adding what Sarah receives personally to what stays in the company, Option B comes out roughly £540 ahead (£65,047 vs £64,509), and she keeps her state pension qualifying year. The higher salary wins for most directors. She can extract the remaining profit as dividends later.</p>
 
 <h2>Dividends: the tax-efficient way to extract profit</h2>
 
@@ -164,7 +164,7 @@ faqs:
 <p>The most common approach for a director-shareholder is:</p>
 
 <ul>
-<li>Take a salary of £9,100 (no NI for either party)</li>
+<li>Take a salary of £12,570 (no income tax or employee NI; the company pays £1,135.50 employer NI, which is deductible)</li>
 <li>Pay corporation tax on remaining profits</li>
 <li>Extract the rest as dividends, up to the basic rate band</li>
 </ul>
@@ -174,10 +174,10 @@ faqs:
 
 <p><strong>Step 1: Salary</strong></p>
 <ul>
-<li>Salary: £9,100</li>
-<li>Company profit after salary: £90,900</li>
-<li>Corporation tax: approximately £20,720</li>
-<li>Profit after tax: £70,180</li>
+<li>Salary: £12,570 (employer NI: £1,135.50)</li>
+<li>Company profit after salary and employer NI: £86,294.50</li>
+<li>Corporation tax: approximately £19,118</li>
+<li>Profit after tax: £67,177</li>
 </ul>
 
 <p><strong>Step 2: Dividends</strong></p>
@@ -185,26 +185,26 @@ faqs:
 
 <p>His total income for the year:</p>
 <ul>
-<li>Salary: £9,100</li>
-<li>Dividends: up to £41,170 (to reach £50,270 total income)</li>
+<li>Salary: £12,570</li>
+<li>Dividends: up to £37,700 (to reach £50,270 total income)</li>
 </ul>
 
 <p>Dividend tax calculation:</p>
 <ul>
-<li>Total dividends: £41,170</li>
+<li>Total dividends: £37,700</li>
 <li>Dividend allowance: £500 (tax-free)</li>
-<li>Taxable dividends: £40,670</li>
-<li>Dividend tax at 8.75%: £3,558.63</li>
+<li>Taxable dividends: £37,200</li>
+<li>Dividend tax at 8.75%: £3,255</li>
 </ul>
 
-<p>James takes home £50,270 in total, pays £3,559 in dividend tax, and leaves £29,010 in the company for future growth or pension contributions.</p>
+<p>James takes home £50,270 in total, pays £3,255 in dividend tax, and leaves £29,477 in the company for future growth or pension contributions.</p>
 
 <p>If James took the same £50,270 as salary instead:</p>
 <ul>
 <li>Income tax: £7,540 (20% on £37,700 above PA)</li>
-<li>Employee NI: £3,253.60</li>
-<li>Employer NI: £5,677.26</li>
-<li>Total tax: £16,470.86</li>
+<li>Employee NI: £3,016 (8% on £37,700)</li>
+<li>Employer NI: £6,790.50 (15% on £45,270 above the £5,000 threshold)</li>
+<li>Total tax: £17,346.50</li>
 </ul>
 
 <p>The dividend strategy saves James nearly £13,000 in tax. That's the power of understanding how to pay yourself from a limited company.</p>
@@ -264,11 +264,11 @@ faqs:
 <p><strong>Option 1: Take as a dividend</strong></p>
 <ul>
 <li>Dividend: £50,000</li>
-<li>Priya's other income: £9,100 salary</li>
-<li>Total income: £59,100</li>
-<li>Dividend tax: £500 allowance, then £40,670 at 8.75% = £3,559, then £8,830 at 33.75% = £2,980</li>
-<li>Total dividend tax: £6,539</li>
-<li>Net in Priya's pocket: £43,461</li>
+<li>Priya's other income: £12,570 salary</li>
+<li>Total income: £62,570</li>
+<li>Dividend tax: £500 allowance, then £37,200 at 8.75% = £3,255, then £12,300 at 33.75% = £4,151</li>
+<li>Total dividend tax: £7,406</li>
+<li>Net in Priya's pocket: £42,594</li>
 </ul>
 
 <p><strong>Option 2: Company pension contribution</strong></p>
@@ -364,7 +364,7 @@ faqs:
 <p>Here's a step-by-step plan for the current tax year.</p>
 
 <ol>
-<li><strong>Set up payroll</strong>. Register for PAYE if you haven't already. Use software like BrightPay, Xero, or FreeAgent. Process a salary of £9,100 for the year (£758 per month).</li>
+<li><strong>Set up payroll</strong>. Register for PAYE if you haven't already. Use software like BrightPay, Xero, or FreeAgent. Process a salary of £12,570 for the year (£1,047.50 per month) for most directors.</li>
 <li><strong>Check retained profits</strong>. Before paying any dividend, confirm the company has enough retained earnings. Your accountant or software can tell you this.</li>
 <li><strong>Decide your total income target</strong>. How much do you need personally? Factor in your salary, dividend income from other sources, and any rental or investment income.</li>
 <li><strong>Calculate the optimal dividend</strong>. Aim to stay within the basic rate band (£50,270 total income) to pay only 8.75% dividend tax. If you need more, understand the higher rate implications.</li>

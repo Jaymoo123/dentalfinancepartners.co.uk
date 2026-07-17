@@ -38,7 +38,7 @@ export const GUIDES: Record<string, Guide> = {
 <h3>1.3 Inspect the director's loan account (DLA) immediately</h3>
 <ul>
 <li>Request a current DLA balance from your bookkeeper or accountant. Do not rely on memory.</li>
-<li>If you owe the company more than £10,000 at any point during the year, the loan is a benefit in kind. You must report it on form P11D, and the company must pay Class 1A NIC at 13.8% on the notional interest.</li>
+<li>If you owe the company more than £10,000 at any point during the year, the loan is a benefit in kind. You must report it on form P11D, and the company must pay Class 1A NIC at 15% on the notional interest.</li>
 <li>If the loan remains outstanding nine months after the year-end (by 1 January 2027 for a 31 March 2026 year-end), the company must pay S455 tax at 33.75% on the outstanding amount. This is a cash flow drain, even though the tax is reclaimable when the loan is repaid.</li>
 <li>Plan to clear the loan before 5 April 2026 if possible. If not, ensure it is repaid before the nine-month deadline.</li>
 </ul>
@@ -48,8 +48,8 @@ export const GUIDES: Record<string, Guide> = {
 
 <h3>2.1 Set your director's salary for the year</h3>
 <ul>
-<li>The most efficient salary for a director-shareholder is usually the secondary threshold for NI: £9,100 per year for 2025/26. At this level, you pay no employee NI and no employer NI, and you still receive a qualifying year for state pension purposes.</li>
-<li>An alternative is to pay £12,570 (the personal allowance). You pay no income tax, but you incur employer NI on the amount above £9,100. For most owner-managed businesses, the £9,100 figure is optimal.</li>
+<li>The most efficient salary for a director-shareholder is usually £12,570 (the personal allowance) for 2025/26. You pay no income tax and no employee NI, and you receive a qualifying year for state pension purposes. The company pays employer NI of £1,135.50 (15% on the amount above the £5,000 secondary threshold), which is deductible for corporation tax.</li>
+<li>To avoid employer NI entirely, the salary must be £5,000 or less (the secondary threshold from 6 April 2025), but that falls below the Lower Earnings Limit, so it does not earn a state pension qualifying year. For most owner-managed businesses, £12,570 is optimal.</li>
 <li>Process the salary through your payroll software before 5 April 2026. Xero, FreeAgent, QuickBooks, and BrightPay all handle this correctly if the settings are right.</li>
 </ul>
 
@@ -95,7 +95,7 @@ export const GUIDES: Record<string, Guide> = {
 <p>Remember: the first £500 of dividends is tax-free. Every pound above that is taxed at the rates above. For a higher-rate taxpayer, an extra £10,000 of dividends costs £3,375 in tax.</p>
 
 <h3>2.4 Worked example: a manufacturing company director</h3>
-<p>James runs a manufacturing business with his wife Sarah. The company's profit for 2025/26 is £120,000. James takes a salary of £9,100. Sarah is a co-director and takes the same. They have two children and no other income. Their combined personal allowances total £25,140. After salaries, the company has distributable reserves of £101,800. They decide to pay themselves dividends of £41,170 each, bringing each of them to a total income of £50,270 (the higher rate threshold). The first £500 of each dividend is tax-free. The remaining £40,670 is taxed at 8.75%, costing £3,558.63 each. Total personal tax on dividends: £7,117.26. The company pays corporation tax at 19% on £101,800, which is £19,342. Total tax: £26,459. If they had taken the full profit as salary, the tax and NI cost would have been significantly higher.</p>
+<p>James runs a manufacturing business with his wife Sarah. The company's profit for 2025/26 is £120,000. James takes a salary of £9,100. Sarah is a co-director and takes the same. As a two-director company they claim the Employment Allowance, which covers the £1,230 of employer NI on these salaries (15% on the amount above the £5,000 secondary threshold). They have two children and no other income. Their combined personal allowances total £25,140. After salaries, the company has distributable reserves of £101,800. They decide to pay themselves dividends of £41,170 each, bringing each of them to a total income of £50,270 (the higher rate threshold). The first £500 of each dividend is tax-free. The remaining £40,670 is taxed at 8.75%, costing £3,558.63 each. Total personal tax on dividends: £7,117.26. The company pays corporation tax at 19% on £101,800, which is £19,342. Total tax: £26,459. If they had taken the full profit as salary, the tax and NI cost would have been significantly higher.</p>
 
 <h2>3. Pension contributions: the most powerful tax shelter available</h2>
 <p>Pension contributions remain one of the few ways to extract money from your company without triggering an immediate tax charge. The rules for 2025/26 are generous, but only if you act before the deadline.</p>
@@ -200,7 +200,7 @@ export const GUIDES: Record<string, Guide> = {
 </ul>
 
 <h3>6.3 Worked example: a construction subcontractor</h3>
-<p>Raj runs a construction subcontracting business through his limited company. He took a director's loan of £25,000 in October 2025 to cover personal expenses. His company's year-end is 31 March 2026. He has two options. Option one: repay the full £25,000 before 5 April 2026. He does this by selling some personal investments. The DLA is cleared, no benefit in kind arises, and no S455 tax is due. Option two: he does nothing. The company must report the loan on form P11D, pay Class 1A NIC at 13.8% on the notional interest, and if the loan is not repaid by 1 January 2027, pay S455 tax of £8,437.50 (33.75% of £25,000). That tax is reclaimable when the loan is repaid, but it is a significant cash flow hit.</p>
+<p>Raj runs a construction subcontracting business through his limited company. He took a director's loan of £25,000 in October 2025 to cover personal expenses. His company's year-end is 31 March 2026. He has two options. Option one: repay the full £25,000 before 5 April 2026. He does this by selling some personal investments. The DLA is cleared, no benefit in kind arises, and no S455 tax is due. Option two: he does nothing. The company must report the loan on form P11D, pay Class 1A NIC at 15% on the notional interest, and if the loan is not repaid by 1 January 2027, pay S455 tax of £8,437.50 (33.75% of £25,000). That tax is reclaimable when the loan is repaid, but it is a significant cash flow hit.</p>
 
 <h2>7. Business Asset Disposal Relief: plan now if an exit is on the horizon</h2>
 <p>If you are considering selling your business in the next few years, the decisions you make now can significantly affect your tax bill on exit.</p>

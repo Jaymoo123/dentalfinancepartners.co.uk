@@ -107,7 +107,7 @@ faqs:
 <li><strong>Claiming personal development courses.</strong> A course on mindfulness or personal finance is not deductible unless directly linked to the solicitor's role.</li>
 <li><strong>Double claiming.</strong> If your employer or partnership pays for the CPD, you cannot also claim a personal deduction.</li>
 <li><strong>Claiming on the wrong tax return section.</strong> Employed solicitors must use the employment expenses section, not the self-employment section.</li>
-<li><strong>Forgetting travel and subsistence.</strong> If you travel to a CPD event, you can claim mileage (45p per mile for the first 10,000 business miles) and reasonable subsistence costs.</li>
+<li><strong>Forgetting travel and subsistence.</strong> If you travel to a CPD event, you can claim mileage (55p per mile for the first 10,000 business miles, from 6 April 2026) and reasonable subsistence costs.</li>
 </ul>
 
 <h2>How to Claim CPD Costs on Your Tax Return</h2>

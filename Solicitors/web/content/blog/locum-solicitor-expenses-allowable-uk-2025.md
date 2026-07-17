@@ -15,7 +15,7 @@ summary: "A practical guide for locum solicitors working in the UK on which expe
 keyTakeaways:
   - "Expenses must be incurred wholly and exclusively for the trade, and mixed-use items must be apportioned."
   - "The SRA practising certificate fee (around £430 for 2025/26), Law Society membership and PII excess are all allowable."
-  - "Travel to a temporary workplace is claimable at HMRC mileage rates of 45p per mile (first 10,000) then 25p."
+  - "Travel to a temporary workplace is claimable at HMRC mileage rates of 55p per mile (first 10,000, from 6 April 2026) then 25p."
   - "Home office costs use either £26 to £52 per month simplified rates or an apportioned actual-costs calculation."
   - "From 6 April 2026 Making Tax Digital applies to locum income over £50,000, dropping to £30,000 from April 2027."
 schema: ""
@@ -85,11 +85,11 @@ faqs:
 <li><strong>Permanent workplace:</strong> A location you attend regularly and for an indefinite period. Travel to a permanent workplace is not allowable.</li>
 </ul>
 
-<p>As a locum solicitor, each assignment is usually a temporary workplace. You can claim the cost of travel from your home to the firm's office and back. This includes mileage at HMRC's approved rates (45p per mile for the first 10,000 business miles in a tax year, then 25p per mile).</p>
+<p>As a locum solicitor, each assignment is usually a temporary workplace. You can claim the cost of travel from your home to the firm's office and back. This includes mileage at HMRC's approved rates (55p per mile for the first 10,000 business miles in a tax year from 6 April 2026, then 25p per mile; the first-10,000 rate was 45p up to 2025/26).</p>
 
 <p>You cannot claim travel from your home to a permanent workplace, even if you work from home some days. If you have a regular office base, the rules change.</p>
 
-<p><strong>Example:</strong> Tom, a locum solicitor, takes a six-month assignment at a firm 30 miles from his home. He drives there and back each day. He can claim 45p per mile for the first 10,000 miles, then 25p per mile. For a 60-mile round trip, 220 days worked: 60 x 220 = 13,200 miles. First 10,000 miles at 45p = £4,500. Remaining 3,200 miles at 25p = £800. Total claim: £5,300.</p>
+<p><strong>Example:</strong> Tom, a locum solicitor, takes a six-month assignment at a firm 30 miles from his home. He drives there and back each day. He can claim 55p per mile for the first 10,000 miles, then 25p per mile. For a 60-mile round trip, 220 days worked: 60 x 220 = 13,200 miles. First 10,000 miles at 55p = £5,500. Remaining 3,200 miles at 25p = £800. Total claim: £6,300.</p>
 
 <h2>Home Office Expenses</h2>
 

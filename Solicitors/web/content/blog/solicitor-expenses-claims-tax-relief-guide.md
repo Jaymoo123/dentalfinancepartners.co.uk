@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: Accounts for Lawyers Editorial Team
 category: Sole Practitioner Tax
 metaTitle: 'Solicitor Expenses: Allowable Claims and Tax Relief'
-metaDescription: 'Which solicitor costs are allowable: SRA fees, PII, CPD and travel, with mileage at 45p per mile for the first 10,000 miles. Claim your full relief.'
+metaDescription: 'Which solicitor costs are allowable: SRA fees, PII, CPD and travel, with mileage at 55p per mile for the first 10,000 miles. Claim your full relief.'
 metaTitle_prev: 'Solicitor Expenses: Allowable Claims & Tax Relief 2025/26'
 metaDescription_prev: SRA fees, PII, CPD, travel and office costs qualify. See a clear breakdown of allowable claims and record-keeping rules to maximise your relief.
 altText: UK solicitor reviewing business expense receipts and tax documents at desk with calculator and legal files
@@ -17,7 +17,7 @@ summary: UK solicitors can claim significant tax relief on legitimate business e
 keyTakeaways:
 - An expense is allowable only where it is incurred wholly and exclusively for business, with mixed-use items claimed at the business proportion.
 - SRA fees, professional indemnity insurance, CPD, business travel and office costs are core allowable claims for solicitors.
-- Business mileage is claimable at 45p per mile for the first 10,000 miles and 25p thereafter for 2025/26, supported by a detailed log.
+- Business mileage is claimable at 55p per mile for the first 10,000 miles and 25p thereafter from 6 April 2026, supported by a detailed log.
 - Client entertainment is not allowable, and the Annual Investment Allowance lets most practices expense up to £1 million of equipment.
 - Keep records for at least six years, and prepare for Making Tax Digital for Income Tax from April 2026 with digital record-keeping.
 schema: ''
@@ -33,11 +33,11 @@ faqs:
 - question: What documentation do I need to support solicitor expense claims?
   answer: Keep receipts, invoices, bank statements, and records showing the business purpose for each expense. For travel, maintain mileage logs with dates, destinations and purposes. With Making Tax Digital extending to Income Tax from April 2026, digital record-keeping is becoming essential for most practices.
 - question: Can solicitors claim mileage for court visits and client meetings?
-  answer: Yes, business mileage for court appearances, client meetings, and travel between offices qualifies for tax relief at HMRC's approved rates (45p per mile for first 10,000 miles, then 25p per mile in 2025/26). Keep detailed mileage logs showing date, destination, purpose and distance travelled.
+  answer: Yes, business mileage for court appearances, client meetings, and travel between offices qualifies for tax relief at HMRC's approved rates (55p per mile for first 10,000 miles from 6 April 2026, then 25p per mile). Keep detailed mileage logs showing date, destination, purpose and distance travelled.
 - question: Are client entertainment expenses allowable for solicitors?
   answer: No, client entertainment expenses are generally not allowable for tax relief. This includes meals, drinks, and hospitality provided to clients. However, reasonable meal costs during business travel or overnight stays for court hearings are typically allowable as travel subsistence expenses.
 - question: What's the difference between claiming actual car costs versus mileage rates?
-  answer: You can either claim actual costs (fuel, insurance, repairs, depreciation) and apportion for business use, or use HMRC's approved mileage rates (45p per mile for first 10,000 business miles, then 25p). The mileage method is usually simpler and often more generous for lower annual mileages.
+  answer: You can either claim actual costs (fuel, insurance, repairs, depreciation) and apportion for business use, or use HMRC's approved mileage rates (55p per mile for first 10,000 business miles from 6 April 2026, then 25p). The mileage method is usually simpler and often more generous for lower annual mileages.
 dateModified: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
@@ -82,7 +82,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <ul>
 <li>Travel between office and court hearings</li>
 <li>Client meeting travel costs</li>
-<li>Business mileage (45p per mile for first 10,000 miles, 25p thereafter)</li>
+<li>Business mileage (55p per mile for first 10,000 miles, 25p thereafter)</li>
 <li>Parking fees for business visits</li>
 <li>Overnight accommodation for business trips</li>
 <li>Reasonable meal costs during business travel</li>
@@ -184,7 +184,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>IT equipment, furniture, and legal software qualify for capital allowances or immediate expensing under the Annual Investment Allowance (currently £1 million for most practices).</p>
 
 <h3>Travel and Subsistence</h3>
-<p>Business travel between offices, court appearances, and client meetings qualifies for solicitor expenses claims. This includes mileage at HMRC's approved rates (45p per mile for the first 10,000 miles, 25p thereafter for 2025/26), public transport costs, and parking fees.</p>
+<p>Business travel between offices, court appearances, and client meetings qualifies for solicitor expenses claims. This includes mileage at HMRC's approved rates (55p per mile for the first 10,000 miles from 6 April 2026, 25p thereafter), public transport costs, and parking fees.</p>
 
 <p>Overnight accommodation and reasonable meal costs during business travel are allowable, but be careful with entertainment expenses which have stricter rules.</p>
 
@@ -276,7 +276,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>For motor expenses, you have two options. You can claim the actual costs (fuel, insurance, repairs, MOT, road tax, depreciation) and claim the business proportion, or use HMRC's approved mileage rates.</p>
 
-<p>The current approved mileage rates are 45p per mile for the first 10,000 business miles and 25p per mile thereafter. Most solicitors find the mileage rate method simpler for record-keeping.</p>
+<p>The current approved mileage rates are 55p per mile for the first 10,000 business miles (from 6 April 2026; previously 45p) and 25p per mile thereafter. Most solicitors find the mileage rate method simpler for record-keeping.</p>
 
 <p>Public transport costs for business travel are fully allowable, including rail fares, buses, and taxis for business purposes.</p>
 

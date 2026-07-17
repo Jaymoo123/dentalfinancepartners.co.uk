@@ -141,7 +141,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 </ul>
 
 <h3>Motor and Travel Expenses</h3>
-<p>Where you use your car for client meetings, court attendance or other business travel, you can claim either the actual running costs (fuel, insurance, repairs) in proportion to business use, or HMRC's approved mileage rates of 45p per mile for the first 10,000 business miles and 25p per mile thereafter. The distinction that catches people out is that ordinary commuting from home to a regular place of work is not allowable, while travel to court, to a client, or to a conference is.</p>
+<p>Where you use your car for client meetings, court attendance or other business travel, you can claim either the actual running costs (fuel, insurance, repairs) in proportion to business use, or HMRC's approved mileage rates of 55p per mile for the first 10,000 business miles (from 6 April 2026) and 25p per mile thereafter. The distinction that catches people out is that ordinary commuting from home to a regular place of work is not allowable, while travel to court, to a client, or to a conference is.</p>
 
 <h3>Home Office Costs</h3>
 <p>Many sole practitioners work from home, either entirely or part of the week. You can use HMRC's simplified flat rate based on the hours worked at home each month, or calculate the actual proportion of household costs (heating, lighting, council tax, and mortgage interest or rent) attributable to the part of your home used for the practice. The actual-cost method often produces a larger deduction but requires you to keep the underlying records.</p>

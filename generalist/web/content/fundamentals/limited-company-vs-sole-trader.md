@@ -164,18 +164,18 @@ faqs:
 
 <p><strong>Tom's limited company with salary:</strong></p>
 <ul>
-<li>Company profit before salary: £80,000. Salary: £12,570. Employer's NI on salary: 13.8% on (£12,570 - £9,100) = £479. Total cost to company: £13,049</li>
-<li>Company profit after salary and NI: £80,000 - £13,049 = £66,951</li>
-<li>Corporation Tax: £66,951 × 19% = £12,721 (assuming marginal relief still applies, but let us keep it simple at 19% for this level)</li>
-<li>Profit after CT: £54,230</li>
-<li>Tom's personal tax: salary £12,570 (no tax, no NI). Dividends: £54,230. £500 allowance. Taxable: £53,730. Basic rate band remaining: £50,270 - £12,570 = £37,700. First £37,700 at 8.75% = £3,299. Remaining £16,030 at 33.75% = £5,410. Total dividend tax: £8,709</li>
-<li>Total tax: £12,721 (CT) + £479 (Employer's NI) + £8,709 (dividend tax) = <strong>£21,909</strong></li>
-<li>Effective rate: 27.4%</li>
+<li>Company profit before salary: £80,000. Salary: £12,570. Employer's NI on salary: 15% on (£12,570 - £5,000) = £1,135.50. Total cost to company: £13,705.50</li>
+<li>Company profit after salary and NI: £80,000 - £13,705.50 = £66,294.50</li>
+<li>Corporation Tax: £66,294.50 × 19% = £12,596 (assuming marginal relief still applies, but let us keep it simple at 19% for this level)</li>
+<li>Profit after CT: £53,698.50</li>
+<li>Tom's personal tax: salary £12,570 (no tax, no NI). Dividends: £53,698.50. £500 allowance. Taxable: £53,198.50. Basic rate band remaining: £50,270 - £12,570 = £37,700. First £37,700 at 8.75% = £3,299. Remaining £15,498.50 at 33.75% = £5,231. Total dividend tax: £8,530</li>
+<li>Total tax: £12,596 (CT) + £1,135.50 (Employer's NI) + £8,530 (dividend tax) = <strong>£22,262</strong></li>
+<li>Effective rate: 27.8%</li>
 </ul>
 
-<p>Now the limited company saves £1,690 compared to the sole trader. The salary strategy makes a significant difference.</p>
+<p>Now the limited company saves £1,337 compared to the sole trader. The salary strategy makes a significant difference.</p>
 
-<p>The real benefit of a limited company appears when you retain profits in the business rather than extracting them all. If Tom only needs £40,000 to live on and leaves £26,951 in the company, he defers the dividend tax on that amount entirely. The retained profits are only taxed at 19% (or 25% depending on the level) until he takes them out. This is the core of the tax planning opportunity.</p>
+<p>The real benefit of a limited company appears when you retain profits in the business rather than extracting them all. If Tom only needs £40,000 to live on and leaves £26,294.50 in the company, he defers the dividend tax on that amount entirely. The retained profits are only taxed at 19% (or 25% depending on the level) until he takes them out. This is the core of the tax planning opportunity.</p>
 
 <h2>Non-Tax Factors: Liability, Perception, and Flexibility</h2>
 
