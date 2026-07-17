@@ -364,12 +364,25 @@ describe("calcEquipmentCapitalAllowance — AIA-exhausted company", () => {
   it("fourYearTaxSaving", () => expect(res.fourYearTaxSaving).toBeCloseTo(311836.64, 1));
 });
 
-describe("calcEquipmentCapitalAllowance — sole trader, no FYA", () => {
-  // main 100,000, special 0, AIA only 50,000 available, higher rate 40%
-  // AIA 50,000; mainExcess 50,000 → no FYA → y1 WDA 7,000; y1 = 57,000; saving 22,800
+describe("calcEquipmentCapitalAllowance — sole trader, new assets get FYA", () => {
+  // FA 2026 40% FYA is available to unincorporated businesses too (new assets only).
+  // main 100,000, special 0, AIA only 50,000 available, higher rate 40%, new.
+  // AIA 50,000; mainExcess 50,000 → FYA 40% = 20,000; pool 30,000, no y1 WDA on FYA balance.
+  // y1 allowances = 70,000; saving 28,000.
   const res = calcEquipmentCapitalAllowance(100000, 0, "st40", true, 50000);
 
-  it("no FYA for unincorporated", () => expect(res.fyaClaim).toBe(0));
+  it("FYA available to unincorporated on new assets", () => expect(res.fyaClaim).toBe(20000));
+  it("no year1 WDA on the FYA balance", () => expect(res.year1Wda).toBe(0));
+  it("year1Allowances", () => expect(res.year1Allowances).toBe(70000));
+  it("year1TaxSaving", () => expect(res.year1TaxSaving).toBeCloseTo(28000, 2));
+});
+
+describe("calcEquipmentCapitalAllowance — second-hand gets no FYA", () => {
+  // main 100,000, special 0, AIA 50,000, st40, second-hand → no FYA.
+  // AIA 50,000; mainExcess 50,000 → WDA 14% = 7,000; y1 = 57,000; saving 22,800.
+  const res = calcEquipmentCapitalAllowance(100000, 0, "st40", false, 50000);
+
+  it("no FYA for second-hand", () => expect(res.fyaClaim).toBe(0));
   it("year1Wda at 14%", () => expect(res.year1Wda).toBeCloseTo(7000, 2));
   it("year1TaxSaving", () => expect(res.year1TaxSaving).toBeCloseTo(22800, 2));
 });

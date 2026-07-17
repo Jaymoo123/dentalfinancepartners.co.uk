@@ -5,9 +5,12 @@
  *
  * FA 2026 rules applied:
  *   - AIA £1,000,000 (100% year-1 relief, main-rate AND special-rate expenditure).
- *   - New 40% first-year allowance (FA 2026 s.29): main-rate assets bought NEW,
- *     companies only (excluded for sole traders/partnerships). The unrelieved
- *     60% enters the main pool and attracts WDA from year 2.
+ *   - New 40% first-year allowance (FA 2026 s.29): main-rate assets bought NEW
+ *     and unused. Unlike full expensing, this FYA is available to ALL
+ *     businesses, including sole traders and partnerships (gov.uk: "available
+ *     to all businesses, not just incorporated businesses"). Second-hand
+ *     assets and cars are excluded. The unrelieved 60% enters the main pool
+ *     and attracts WDA from year 2.
  *   - Main-rate WDA reduced 18% -> 14% (FA 2026 s.28), reducing balance.
  *   - Special-rate WDA unchanged at 6% (integral features: electrical systems,
  *     plumbing/water, air conditioning in a surgery fit-out).
@@ -15,8 +18,9 @@
  * Allocation logic:
  *   1. AIA against special-rate expenditure first (otherwise stuck at 6%).
  *   2. Remaining AIA against main-rate expenditure.
- *   3. Main-rate excess: 40% FYA if company + assets new; balance pooled at 14%
- *      from year 2. Otherwise straight into main pool, WDA 14% from year 1.
+ *   3. Main-rate excess: 40% FYA if assets bought new; 60% balance pooled at
+ *      14% from year 2. Otherwise (second-hand) straight into main pool, WDA
+ *      14% from year 1.
  *   4. Special-rate excess: special pool, WDA 6% from year 1.
  *
  * Limitations:
@@ -39,10 +43,6 @@ export const BUYER_RATE_VALUES: Record<BuyerRate, number> = {
   st40: 0.4,
   st45: 0.45,
 };
-
-export function isCompanyRate(rate: BuyerRate): boolean {
-  return rate === "ltd19" || rate === "ltd25";
-}
 
 export type EquipmentCapitalAllowanceResult = {
   taxRate: number;
@@ -69,7 +69,9 @@ export function calcEquipmentCapitalAllowance(
   aiaAvailable: number,
 ): EquipmentCapitalAllowanceResult {
   const taxRate = BUYER_RATE_VALUES[buyerRate];
-  const fyaEligible = isCompanyRate(buyerRate) && boughtNew;
+  // FA 2026 s.29 40% FYA: available to ALL businesses (incl. sole traders and
+  // partnerships), new/unused assets only. Company status is NOT a condition.
+  const fyaEligible = boughtNew;
 
   // 1-2. AIA: special-rate first, then main-rate.
   const aiaOnSpecial = Math.min(specialCost, Math.max(0, aiaAvailable));

@@ -10,32 +10,36 @@ import { gbp } from "@accounting-network/web-shared/tools/format";
  * and annual gross NHS Scotland fees from a treatment mix and registered list,
  * and compares against an England UDA-equivalent gross.
  *
- * FEE DATA — dated config constants. SDR item fees are amended several times
- * a year via SDR amendment numbers published by NHS National Services
- * Scotland. Values below are REPRESENTATIVE of the simplified post-November
- * 2023 SDR item list and MUST be verified against the current Determination I
- * before any fee is relied on. All figures flagged for verification in the
- * build report.
+ * FEE DATA — dated config constants. Item fees below are the actual SDR
+ * Determination I fees effective 1 November 2025 (Amendment No. 167). The SDR
+ * is amended several times a year, so re-verify against the current
+ * Determination I published by NHS National Services Scotland before any fee
+ * is relied on for budgeting.
  */
 
-// ponytail: flat representative fees, not the full ~45-item Determination I schedule.
-// Upgrade path: replace with a generated table from the current SDR PDF if item-level accuracy is requested.
-export const SDR_FEES_AS_AT = "November 2025 SDR (representative values)";
+// ponytail: eight representative item codes, not the full Determination I schedule.
+// Upgrade path: generate the full table from the current SDR PDF if item-level accuracy is requested.
+export const SDR_FEES_AS_AT = "SDR Determination I, 1 November 2025 (Amendment 167)";
 
+// Verified against SDR Determination I, scale of fees effective 1 November 2025
+// (Amendment No. 167, 25 August 2025). Item codes noted for traceability.
 const SDR_ITEM_FEES = {
-  exam: 18.2, // comprehensive oral health assessment — VERIFY
-  xray: 5.2, // intraoral radiograph, per film — VERIFY
-  fillingSmall: 16.6, // permanent filling, one surface — VERIFY
-  fillingLarge: 26.9, // permanent filling, two+ surfaces — VERIFY
-  extraction: 15.4, // routine extraction, per tooth — VERIFY
-  endo: 92.0, // molar root canal treatment — VERIFY
-  crown: 132.0, // full crown, excluding lab element — VERIFY
-  perio: 14.9, // scale/polish + periodontal maintenance — VERIFY
+  exam: 21.65, // 1-(a) extensive clinical examination, code A001
+  xray: 7.6, // 1-(d) limited clinical examination incl. radiograph reporting, code A004
+  fillingSmall: 17.5, // 3-(a) single-surface permanent filling, code C001
+  fillingLarge: 24.55, // 3-(b) two-surface permanent filling, code C002
+  extraction: 39.75, // 5-(a) extraction of one tooth, code E001
+  endo: 211.5, // 3-(h) root filling, molar (3+ canals), code C008
+  crown: 205.65, // 4-(b) full crown, code D002 (excludes lab element)
+  perio: 21.65, // 2-(a) PMPR / scale and periodontal treatment, code B001
 } as const;
 
-// Continuing care (adults) and capitation (children) — per registered patient per month
-const ADULT_CONTINUING_CARE_MONTHLY = 1.35; // VERIFY
-const CHILD_CAPITATION_MONTHLY = 5.3; // VERIFY (varies by age band; blended value used)
+// Capitation — per registered patient per month, SDR item 10-(a).
+// Scotland's post-2023 model uses a single capitation payment for all ages
+// (there is no separate England-style "continuing care" fee); we split it into
+// an adult and a blended-child rate to mirror the England contract for comparison.
+const ADULT_CONTINUING_CARE_MONTHLY = 1.55; // 10-(a) capitation, 18-64 (65+ is £1.85)
+const CHILD_CAPITATION_MONTHLY = 5.05; // 10-(a) blended child capitation, ages 0-17
 
 export type SdrScotlandInput = {
   exam: number;
@@ -199,8 +203,8 @@ export const sdrScotlandTool: GenericTool = {
     paragraphs: [
       "Scotland never adopted the 2006 English UDA contract. NHS general dental services in Scotland are still paid per item of service under the Statement of Dental Remuneration (SDR). Every treatment has an item code and a fee set out in Determination I of the SDR, published and amended by NHS National Services Scotland. From November 2023 the item list was simplified to around 45 items with enhanced fees, but the item-of-service principle is unchanged: the more clinically necessary treatment you deliver, the more you gross.",
       "On top of item fees, practices receive monthly continuing care payments for every registered adult and capitation payments for every registered child (rates vary by the child's age). A practice with a large, stable registered list earns a meaningful baseline before any treatment is delivered. This calculator adds your item-of-service month to that registration income to estimate total gross NHS fees.",
-      "Worked example 1, an established mixed-list associate. 120 exams, 60 radiographs, 50 one-surface fillings, 30 larger fillings, 12 extractions, 4 molar root canals, 5 crowns and 90 periodontal visits generates roughly £6,700 of item-of-service fees in the month at representative fee levels. A registered list of 1,400 adults and 400 children adds roughly £4,000 of continuing care and capitation, giving a monthly NHS gross of around £10,700 and an annual gross of around £128,000.",
-      "Worked example 2, the England comparison. The same clinician delivering 250 UDAs a month at a £30 UDA rate would gross £7,500 a month, £90,000 a year, under the English contract. Against the Scottish figure above, the item-of-service model is roughly £38,000 a year ahead for this treatment mix, which is why high-activity, high-registration Scottish practices often compare favourably with mid-range English UDA contracts. Change the mix and the comparison can easily flip: a low-registration list doing mostly examinations narrows the gap quickly.",
+      "Worked example 1, an established mixed-list associate. 120 exams, 60 supplementary radiograph examinations, 50 one-surface fillings, 30 larger fillings, 12 extractions, 4 molar root canals, 5 crowns and 90 periodontal visits generates roughly £8,965 of item-of-service fees in the month at the 1 November 2025 SDR fee levels. A registered list of 1,400 adults and 400 children adds roughly £4,190 of capitation, giving a monthly NHS gross of around £13,155 and an annual gross of around £158,000.",
+      "Worked example 2, the England comparison. The same clinician delivering 250 UDAs a month at a £30 UDA rate would gross £7,500 a month, £90,000 a year, under the English contract. Against the Scottish figure above, the item-of-service model is roughly £68,000 a year ahead for this treatment mix, which is why high-activity, high-registration Scottish practices often compare favourably with mid-range English UDA contracts. Change the mix and the comparison can easily flip: a low-registration list doing mostly examinations narrows the gap quickly.",
       `Fees shown are representative values as at the ${SDR_FEES_AS_AT}. The SDR is a live document: amendment numbers are issued through the year and fee uplifts are negotiated annually. Use this tool for planning and comparison, then verify individual item fees against the current Determination I before quoting or budgeting on them.`,
     ],
   },

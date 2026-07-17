@@ -5,14 +5,18 @@
  *
  * Figures sourced:
  *   - NHS Digital / NHS England "Dental Earnings and Expenses Estimates"
- *     series (self-employed Providing-Performer dentists). Latest published
- *     estimates put average Providing-Performer taxable income in the
- *     £140k-£160k territory, with expenses-to-earnings ratios around 66-72%
- *     depending on NHS/private mix.
+ *     series (self-employed Providing-Performer dentists). The 2023/24 release
+ *     puts average taxable income for all self-employed dentists (Providing-
+ *     Performer and Associate combined) in England at £78,200, on average gross
+ *     earnings of ~£158,700 and average expenses of ~£81,600 (an expenses-to-
+ *     earnings ratio around 51%). Providing-Performers (practice owners) sit
+ *     above the combined average, historically in the roughly £110k-£130k
+ *     taxable-income range, with expense ratios around 55-70% depending on
+ *     NHS/private mix (private-weighted practices run higher).
  *   - FLAG FOR VERIFICATION: the band values below are indicative constants
  *     structured from the published series, not a verbatim table lift.
  *     Verify against the latest Dental Earnings and Expenses Estimates
- *     release before citing exact figures in copy.
+ *     release (nhs digital) before citing exact figures in copy.
  *
  * Limitations:
  *   - Bands are per practice-owner (Providing-Performer), pre-tax taxable
@@ -24,18 +28,18 @@
 export type PracticeMix = "mainly-nhs" | "mixed" | "mainly-private";
 export type OwnerRegion = "england" | "wales" | "scotland" | "ni";
 
-/** Per-owner taxable income benchmark bands, £/year. Dated: 2022/23-series basis. */
+/** Per-owner taxable income benchmark bands, £/year. Dated: 2023/24-series basis. */
 const MIX_INCOME_BAND: Record<PracticeMix, [number, number]> = {
-  "mainly-nhs": [125000, 155000],
-  mixed: [145000, 180000],
-  "mainly-private": [140000, 185000],
+  "mainly-nhs": [95000, 120000],
+  mixed: [110000, 140000],
+  "mainly-private": [110000, 155000],
 };
 
-/** Benchmark expenses-to-earnings ratio by mix. Dated: 2022/23-series basis. */
+/** Benchmark expenses-to-earnings ratio by mix. Dated: 2023/24-series basis. */
 const MIX_EXPENSE_RATIO: Record<PracticeMix, number> = {
-  "mainly-nhs": 0.66,
-  mixed: 0.69,
-  "mainly-private": 0.72,
+  "mainly-nhs": 0.55,
+  mixed: 0.62,
+  "mainly-private": 0.68,
 };
 
 /** Indicative regional adjustment vs England-basis bands. */

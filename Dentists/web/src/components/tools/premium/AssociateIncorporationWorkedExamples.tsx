@@ -57,7 +57,7 @@ export function AssociateIncorporationWorkedExamples() {
                   ["Limited company net cash", gbp(r.ltd.net)],
                   ["Ltd tax saving before pension", gbp(r.taxSavingBeforePension)],
                   ["Estimated pensionable earnings", gbp(r.pensionableEarnings)],
-                  ["NHS Pension employer value forgone (26.9%)", gbp(r.pensionEmployerValue)],
+                  ["NHS Pension employer value forgone (20.68%)", gbp(r.pensionEmployerValue)],
                 ].map(([label, value]) => (
                   <div key={label} className="flex justify-between gap-4">
                     <dt className="text-[var(--muted)]">{label}</dt>
@@ -80,8 +80,8 @@ export function AssociateIncorporationWorkedExamples() {
       </div>
       <p className="mt-4 text-xs text-[var(--muted)]">
         Both examples assume full dividend extraction, a £12,570 director salary and complete
-        loss of NHS Pension accrual on incorporation. The 26.9% employer-equivalent rate
-        (20.6% employer contribution plus 6.3% administration levy) is an estimate; scheme
+        loss of NHS Pension accrual on incorporation. The 20.68% employer-equivalent rate
+        (20.6% employer contribution plus 0.08% administration levy) is an estimate; scheme
         rates and access rules depend on your arrangement. Estimates, not advice.
       </p>
     </section>

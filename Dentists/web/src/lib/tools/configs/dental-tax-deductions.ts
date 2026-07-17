@@ -58,11 +58,11 @@ export const dentalTaxDeductionsTool: GenericTool = {
       id: "gdc",
       label: "GDC annual retention fee (£)",
       type: "currency",
-      default: 690,
+      default: 698,
       min: 0,
       max: 2000,
       step: 10,
-      help: "Wholly and exclusively deductible. The dentist ARF is £690.",
+      help: "Wholly and exclusively deductible. The dentist ARF is £698 for 2026.",
     },
     {
       id: "indemnity",
@@ -190,8 +190,8 @@ export const dentalTaxDeductionsTool: GenericTool = {
     paragraphs: [
       "Every field is an expense category HMRC accepts for self-employed dentists, provided the cost is incurred wholly and exclusively for the trade. The planner adds your cash expenses to a mileage claim at 2026/27 approved rates (55p for the first 10,000 business miles, 25p thereafter), then multiplies the total by your combined marginal income tax and Class 4 NI rate.",
       "The contested areas are travel and training. Miles between two practices you work at, or out to a domiciliary visit, are business miles. The daily journey from home to the practice you routinely work at is ordinary commuting and is not claimable, even if you carry equipment. CPD that maintains or updates your existing skills is deductible; a course that gives you a new qualification (an implant diploma, for instance) can be challenged as capital expenditure, so keep that distinction in mind before claiming.",
-      "Worked example 1, associate: taxable profit £75,000 before expenses. GDC £690, indemnity £3,500, CPD £1,200, small equipment £400, BDA £550, use of home £312, and 2,000 miles between two practices (£1,100 at 55p). Total deductions £7,752. At the higher-rate margin (40% tax plus 2% Class 4 NI) that saves £3,255.84, cutting the tax bill by roughly 42p in every pound spent.",
-      "Worked example 2, principal: taxable profit £140,000 before expenses. GDC £690, indemnity £5,000, CPD £2,500, equipment £1,500, new loupes £1,500 (fully deductible via Annual Investment Allowance), BDA £550, use of home £312, 1,000 business miles (£550), and £30,000 of staff costs. Total deductions £42,602. Profit sits in the additional-rate band, so at 45% plus 2% NI the saving is £20,022.94. Note that the deductions bring profit back below £125,140, so the true blended saving is slightly lower; the planner flags this in the result.",
+      "Worked example 1, associate: taxable profit £75,000 before expenses. GDC £698, indemnity £3,500, CPD £1,200, small equipment £400, BDA £550, use of home £312, and 2,000 miles between two practices (£1,100 at 55p). Total deductions £7,760. At the higher-rate margin (40% tax plus 2% Class 4 NI) that saves £3,259.20, cutting the tax bill by roughly 42p in every pound spent.",
+      "Worked example 2, principal: taxable profit £140,000 before expenses. GDC £698, indemnity £5,000, CPD £2,500, equipment £1,500, new loupes £1,500 (fully deductible via Annual Investment Allowance), BDA £550, use of home £312, 1,000 business miles (£550), and £30,000 of staff costs. Total deductions £42,610. Profit sits in the additional-rate band, so at 45% plus 2% NI the saving is £20,026.70. Note that the deductions bring profit back below £125,140, so the true blended saving is slightly lower; the planner flags this in the result.",
     ],
   },
   faqs: [

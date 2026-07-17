@@ -12,9 +12,9 @@
  *        = 63,294.50; CT = 9,500 + 13,294.50*0.265 = 13,023.04; div 50,271.46
  *        divTax: taxable 49,771.46; basic band left 37,700 @10.75% = 4,052.75;
  *        12,071.46 @35.75% = 4,315.55; total 8,368.30; ltdNet = 54,473.16.
- *   pensionable = 63,040; pensionValue = 16,957.76.
+ *   pensionable = 63,040; pensionValue = 63,040 * 0.2068 = 13,036.67.
  *   taxSavingBeforePension = -2,362.84 → Ltd behind even pre-pension here;
- *   afterPension = -19,320.60 → sole trader wins.
+ *   afterPension = -15,399.51 → sole trader wins.
  */
 import { describe, it, expect } from "vitest";
 import { calcAssociateIncorporation } from "./associate-incorporation";
@@ -35,14 +35,14 @@ describe("calcAssociateIncorporation", () => {
     expect(r2(r.ltd.dividendTax)).toBe(8368.3);
     expect(r2(r.ltd.net)).toBe(54473.16);
     expect(r2(r.pensionableEarnings)).toBe(63040);
-    expect(r2(r.pensionEmployerValue)).toBe(16957.76);
+    expect(r2(r.pensionEmployerValue)).toBe(13036.67);
     expect(r.ltdWins).toBe(false);
   });
 
   it("pensionable override replaces the NHS-share heuristic", () => {
     const r = calcAssociateIncorporation(200000, 45, 8, 4000, 80, 70000);
     expect(r.pensionableEarnings).toBe(70000);
-    expect(r2(r.pensionEmployerValue)).toBe(18830);
+    expect(r2(r.pensionEmployerValue)).toBe(14476);
   });
 
   it("zero NHS share removes the pension layer from the verdict", () => {

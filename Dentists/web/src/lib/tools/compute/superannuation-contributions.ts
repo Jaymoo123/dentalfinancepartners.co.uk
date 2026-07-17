@@ -14,9 +14,10 @@
  * ⚠ VERIFY before publishing: confirm current-year threshold uprating (2026/27) at
  *   https://www.nhsbsa.nhs.uk/member-hub/your-membership/contribution-rates
  *
- * Employer contribution: 20.6% plus 0.08% administration levy is the rate charged to
- * contractors; centrally funded top-up takes the total scheme rate to 23.7% from
- * April 2024 (context only, not charged to practices).
+ * Employer contribution: 23.7% of pensionable pay from 1 April 2024 (up from
+ * 20.6%), plus a 0.08% administration levy, so 23.78% in total. The increase
+ * above the old 20.6% is centrally funded for most NHS employers, but 23.7% is
+ * the headline employer rate and is what this tool shows as the employer cost.
  *
  * CARE pension growth: 1/54th of pensionable pay accrues as guaranteed pension
  * per year of contributions. No lump-sum accrual in the 2015 scheme.
@@ -38,7 +39,7 @@ const TIERS_ENGLAND_WALES = [
 /** Effective date of the tier table above (for display / audit trail) */
 export const TIER_EFFECTIVE_DATE = "1 April 2024";
 
-const EMPLOYER_RATE = 0.206;
+const EMPLOYER_RATE = 0.237;
 const CARE_ACCRUAL_DENOMINATOR = 54;
 
 /** Associate convention: net pensionable earnings as % of gross NHS fee income */

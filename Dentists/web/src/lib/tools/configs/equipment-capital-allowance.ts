@@ -56,7 +56,7 @@ export const equipmentCapitalAllowanceTool: GenericTool = {
         value,
         label,
       })),
-      help: "The marginal rate the allowances save tax at. The 40% first-year allowance is only available to companies.",
+      help: "The marginal rate the allowances save tax at. The 40% first-year allowance is available to companies and unincorporated businesses alike.",
     },
     {
       id: "boughtNew",
@@ -107,7 +107,7 @@ export const equipmentCapitalAllowanceTool: GenericTool = {
         "Equipment above the AIA gets the 40% first-year allowance; the remaining 60% joins the main pool at 14% reducing balance from year 2. ";
     } else if (!r.fyaEligible && mainCost + specialCost > aiaAvailable) {
       note +=
-        "The 40% first-year allowance is not available here (companies buying new assets only), so the excess gets 14% writing-down allowance instead. ";
+        "The 40% first-year allowance is not available here (it needs new, unused assets; second-hand kit does not qualify), so the excess gets 14% writing-down allowance instead. ";
     }
     note +=
       "Assumes a 12-month period, no other pool movements, and sufficient profits to absorb the relief. Companies with profits between £50,000 and £250,000 save at an effective marginal rate of 26.5%, more than either option shown.";
@@ -128,7 +128,7 @@ export const equipmentCapitalAllowanceTool: GenericTool = {
       "Finance Act 2026 made two changes that matter when a practice buys equipment. The main-rate writing-down allowance fell from 18% to 14% a year (section 28), so anything that misses year-1 relief is now relieved noticeably more slowly. In exchange, section 29 introduced a 40% first-year allowance for companies buying new main-rate assets. The £1,000,000 Annual Investment Allowance and the 6% special rate for integral features are unchanged.",
       "Worked example 1: a limited company practice spends £120,000 on a new chair, CBCT unit and decontamination room kit, plus £30,000 on integral features (electrics, plumbing, air conditioning) in the fit-out. Total spend £150,000 is comfortably within the £1,000,000 AIA, so the whole amount is deducted in year 1. At the 25% main rate of corporation tax that is a £37,500 tax saving in the year of purchase. For most single-practice purchases, AIA does all the work.",
       "Worked example 2: a company doing a multi-surgery refit spends £1,100,000 on equipment and £300,000 on integral features. The AIA is allocated to the £300,000 of integral features first (they would otherwise crawl out at 6% a year), leaving £700,000 of AIA for equipment. The £400,000 of equipment above the AIA qualifies for the new 40% first-year allowance: £160,000 in year 1, with the remaining £240,000 entering the main pool at 14% reducing balance from year 2. Year-1 allowances are £1,160,000, saving £290,000 at 25%. Over 4 years the allowances reach roughly £1,247,000, saving about £311,800.",
-      "Sole traders and partnerships cannot claim the 40% first-year allowance, but the AIA still gives 100% year-1 relief at income tax rates of up to 45%, which for spend inside the AIA is worth more per pound than corporation tax relief. The ordering rule is the same for every structure: use AIA against special-rate expenditure first.",
+      "Unlike full expensing, the 40% first-year allowance is open to sole traders and partnerships as well as companies, provided the assets are new and unused. It only bites once spend exceeds the available AIA, because AIA already gives 100% year-1 relief and is claimed first, worth more per pound (up to 45% at income tax rates) than the 40% FYA. The ordering rule is the same for every structure: use AIA against special-rate expenditure first.",
     ],
   },
   faqs: [
@@ -140,7 +140,7 @@ export const equipmentCapitalAllowanceTool: GenericTool = {
     {
       question: "Who can claim the new 40% first-year allowance?",
       answer:
-        "Only companies, and only on new, unused main-rate assets. FA 2026 section 29 introduced it alongside the cut in the main writing-down allowance from 18% to 14% (section 28). Sole traders and partnerships are excluded, and second-hand equipment does not qualify. In practice it only matters once your qualifying spend exceeds the available Annual Investment Allowance, because AIA already gives 100% relief and is claimed first.",
+        "All businesses, on new, unused main-rate assets. FA 2026 section 29 introduced it alongside the cut in the main writing-down allowance from 18% to 14% (section 28). Unlike full expensing, it is not restricted to companies: sole traders and partnerships can claim it too. Second-hand equipment and cars do not qualify. In practice it only matters once your qualifying spend exceeds the available Annual Investment Allowance, because AIA already gives 100% relief and is claimed first.",
     },
     {
       question: "Is it better to lease or buy dental equipment for tax?",
