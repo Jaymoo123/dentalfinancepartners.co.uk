@@ -136,6 +136,8 @@ export const CALC_SLUG_TO_TOPIC: Record<string, TopicKey> = {
   "nhs-pension-annual-allowance": "nhs-pension",
   "locum-tax-calculator": "locum",
   "private-practice-incorporation": "incorporation-private",
+  "salaried-doctor-take-home": "gp-tax",
+  "doctor-expenses-tax-relief": "gp-tax",
 };
 
 const BLOG_SLUG_TO_TOPIC: Record<string, TopicKey> = {};

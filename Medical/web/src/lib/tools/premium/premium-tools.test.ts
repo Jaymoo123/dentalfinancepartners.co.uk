@@ -34,6 +34,11 @@ import { calcIncorporation } from "../compute/incorporation";
 import { nhsPensionPremiumConfig } from "./configs/nhs-pension-premium";
 import { locumTakeHomePremiumConfig } from "./configs/locum-take-home-premium";
 import { incorporationPremiumConfig } from "./configs/incorporation-premium";
+import { nhsSuperannuationTieredContributionConfig } from "./configs/nhs-superannuation-tiered-contribution";
+import { nhsPensionSchemePaysConfig } from "./configs/nhs-pension-scheme-pays-premium";
+import { gpPartnerDrawingsPlannerConfig } from "./configs/gp-partner-drawings-planner";
+import { salariedGpVsPartnerConfig } from "./configs/salaried-gp-vs-partner";
+import { consultantPrivateVsNhsConfig } from "./configs/consultant-private-vs-nhs";
 
 // ── Tool 1: nhs-pension-premium ──────────────────────────────────────────────
 
@@ -339,11 +344,16 @@ describe("Tool 3 · incorporation-premium (calcIncorporation, corrected 6% Class
 // ── Registry: hasPremiumTool and getPremiumTool ──────────────────────────────
 
 describe("Premium registry", () => {
-  it("hasPremiumTool returns true for all 3 registered toolIds", async () => {
+  it("hasPremiumTool returns true for all 8 registered toolIds", async () => {
     const { hasPremiumTool } = await import("./registry");
     expect(hasPremiumTool("nhs-pension-premium")).toBe(true);
     expect(hasPremiumTool("locum-take-home-premium")).toBe(true);
     expect(hasPremiumTool("incorporation-premium")).toBe(true);
+    expect(hasPremiumTool("nhs-superannuation-tiered-contribution")).toBe(true);
+    expect(hasPremiumTool("nhs-pension-scheme-pays-premium")).toBe(true);
+    expect(hasPremiumTool("gp-partner-drawings-planner")).toBe(true);
+    expect(hasPremiumTool("salaried-gp-vs-partner")).toBe(true);
+    expect(hasPremiumTool("consultant-private-vs-nhs")).toBe(true);
     expect(hasPremiumTool("unknown-tool")).toBe(false);
   });
 
@@ -352,6 +362,11 @@ describe("Premium registry", () => {
     expect(getPremiumTool("nhs-pension-premium")?.id).toBe("nhs-pension-premium");
     expect(getPremiumTool("locum-take-home-premium")?.id).toBe("locum-take-home-premium");
     expect(getPremiumTool("incorporation-premium")?.id).toBe("incorporation-premium");
+    expect(getPremiumTool("nhs-superannuation-tiered-contribution")?.id).toBe("nhs-superannuation-tiered-contribution");
+    expect(getPremiumTool("nhs-pension-scheme-pays-premium")?.id).toBe("nhs-pension-scheme-pays-premium");
+    expect(getPremiumTool("gp-partner-drawings-planner")?.id).toBe("gp-partner-drawings-planner");
+    expect(getPremiumTool("salaried-gp-vs-partner")?.id).toBe("salaried-gp-vs-partner");
+    expect(getPremiumTool("consultant-private-vs-nhs")?.id).toBe("consultant-private-vs-nhs");
     expect(getPremiumTool("nonexistent")).toBeUndefined();
   });
 });
@@ -378,6 +393,11 @@ describe("Copy compliance: no em-dashes in any tool string", () => {
     nhsPensionPremiumConfig,
     locumTakeHomePremiumConfig,
     incorporationPremiumConfig,
+    nhsSuperannuationTieredContributionConfig,
+    nhsPensionSchemePaysConfig,
+    gpPartnerDrawingsPlannerConfig,
+    salariedGpVsPartnerConfig,
+    consultantPrivateVsNhsConfig,
   ];
 
   for (const cfg of configs) {
@@ -443,6 +463,89 @@ describe("Conservation invariants: compute() at default inputs", () => {
     expect(result.scenarioResults).toHaveLength(2);
     const pensionRow = result.breakdown?.find((r) => r.label === "NHS Pension impact");
     expect(pensionRow).toBeDefined();
+    for (const row of result.breakdown ?? []) {
+      expect(row.value).not.toContain("NaN");
+    }
+  });
+
+  it("Tool 4 default (nhs-superannuation-tiered-contribution): GP partner £120k -> top tier 12.5%, employee £15,000", () => {
+    // GP partner £120,000: 2026/27 top tier (£67,669 and above) at 12.5%
+    // employee = 120000 * 0.125 = £15,000
+    // deemed employer = 120000 * 0.237 = £28,440
+    // combined = £43,440; net of 40% = £9,000
+    const result = nhsSuperannuationTieredContributionConfig.compute({
+      values: { role: "gp-partner", pensionablePay: 120000, taxYear: "2026-27", incomeTaxBand: "higher" },
+      rows: [],
+    });
+    expect(result.headline.value).toBe("£15,000");
+    const empRow = result.breakdown?.find((r) => r.label?.startsWith("Employee contribution"));
+    expect(empRow?.value).toBe("£15,000");
+    const deemedRow = result.breakdown?.find((r) => r.label?.startsWith("Deemed employer"));
+    expect(deemedRow?.value).toBe("£28,440");
+    const combinedRow = result.breakdown?.find((r) => r.label?.startsWith("Combined"));
+    expect(combinedRow?.value).toBe("£43,440");
+    const netRow = result.breakdown?.find((r) => r.label?.startsWith("Net cost"));
+    expect(netRow?.value).toBe("£9,000");
+  });
+
+  it("Tool 5 default (nhs-pension-scheme-pays-premium): charge £8k, age 45, higher -> mandatory eligible, AA charge to settle £8,000", () => {
+    const result = nhsPensionSchemePaysConfig.compute({
+      values: { annualAllowanceCharge: 8000, schemeGrowth: 70000, age: 45, marginalRate: "higher" },
+      rows: [],
+    });
+    expect(result.headline.value).toBe("£8,000");
+    expect(result.headline.tone).toBe("warn");
+    expect(result.headline.sub).toContain("Mandatory Scheme Pays available");
+    for (const row of result.breakdown ?? []) {
+      expect(row.value).not.toContain("NaN");
+    }
+  });
+
+  it("Tool 6 default (gp-partner-drawings-planner): profit £120k, super £120k, no loan -> monthly £5,159", () => {
+    // From TOOL_ROSTER.md §4.6 worked example:
+    // IT £39,432 + Class 4 NI £3,657 + super £15,000 = £58,089 total deductions
+    // net = £120,000 - £58,089 = £61,911; monthly = £5,159
+    const result = gpPartnerDrawingsPlannerConfig.compute({
+      values: { profitShare: 120000, superannuablePay: 120000, studentLoanPlan: "none", taxReservePct: 0 },
+      rows: [],
+    });
+    expect(result.headline.value).toBe("£5,159");
+    expect(result.headline.tone).toBe("good"); // PA not fully withdrawn at £120k (tapers to £2,570)
+    for (const row of result.breakdown ?? []) {
+      expect(row.value).not.toContain("NaN");
+    }
+  });
+
+  it("Tool 7 default (salaried-gp-vs-partner): salaried £90k vs partner £110k -> partner nets more", () => {
+    // From spec: salaried net ~£51,507; partner net ~£59,361; gap ~£7,854
+    const result = salariedGpVsPartnerConfig.compute({
+      values: { salariedPay: 90000, partnerProfitShare: 110000, studentLoanPlan: "none" },
+      rows: [],
+    });
+    expect(result.headline.tone).toBe("good"); // partner nets more
+    expect(result.scenarioResults).toHaveLength(2);
+    const salScenario = result.scenarioResults?.find((s) => s.id === "salaried");
+    const parScenario = result.scenarioResults?.find((s) => s.id === "partner");
+    expect(salScenario?.headline.value).toContain("51,");
+    expect(parScenario?.headline.value).toContain("59,");
+    expect(parScenario?.best).toBe(true);
+    for (const row of result.breakdown ?? []) {
+      expect(row.value).not.toContain("NaN");
+    }
+  });
+
+  it("Tool 10 default (consultant-private-vs-nhs): NHS £150k, existing private £70k, extra session £15k -> taper fires, effective rate >60%", () => {
+    // Worked example from spec: effective marginal rate 62.8%
+    const result = consultantPrivateVsNhsConfig.compute({
+      values: { nhsPensionablePay: 150000, existingPrivateIncome: 70000, extraSessionValue: 15000, otherIncome: 0 },
+      rows: [],
+    });
+    expect(result.headline.tone).toBe("warn");
+    const effRow = result.breakdown?.find((r) => r.label === "Effective marginal rate");
+    expect(effRow).toBeDefined();
+    // Should be > 60%
+    const effPct = parseFloat(effRow?.value ?? "0");
+    expect(effPct).toBeGreaterThan(60);
     for (const row of result.breakdown ?? []) {
       expect(row.value).not.toContain("NaN");
     }

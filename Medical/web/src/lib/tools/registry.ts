@@ -10,11 +10,15 @@ import { makeRegistryHelpers } from "@accounting-network/web-shared/tools/regist
 import { nhsPensionTool } from "./configs/nhs-pension-calculator";
 import { locumTaxTool } from "./configs/locum-tax-calculator";
 import { incorporationTool } from "./configs/incorporation-calculator";
+import { salariedDoctorTakeHomeTool } from "./configs/salaried-doctor-take-home";
+import { doctorExpensesTaxReliefTool } from "./configs/doctor-expenses-tax-relief";
 
 const tools = [
   nhsPensionTool,
   locumTaxTool,
   incorporationTool,
+  salariedDoctorTakeHomeTool,
+  doctorExpensesTaxReliefTool,
 ] as const;
 
 export const { allTools, genericTools, getGenericTool, toolPath } = makeRegistryHelpers([...tools]);
