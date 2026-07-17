@@ -345,4 +345,61 @@ All deploys owner-G1. Each step commits locally when green; execution log update
   7. Conversion-support islands: ServiceTiers DIY→Assisted→Full ladder, StatsBar, urgency counters.
   → Gaps 1-3 = a Track-A parity-completion sub-wave (booking + progressive-completion + nurture-handshake stack). Gaps 4-5 quick wins in flight. Gaps 6-7 deliberate Property choices, lower priority.
 
-**NEXT ACTION:** (1) land income-tax bug fix + commit C2 (llms.txt ×3 + 22 worked examples + bug fix + stale rates page + SpecialistWidget mounts). (2) Stage IndexNow enqueue. (3) A3 nurture dry-run port (Property shared Resend domain; fix consent text + lead_nurture_control site-scoping + 5 property literals). (4) Track-A parity-completion sub-wave: booking/scheduling + progressive-completion stack (gaps 1-2). (5) Wave 2.
+**COMMITTED this session:** bd562dbd (C2 + SpecialistWidget mounts + income-tax bug fix across 5 compute libs + stale rates page) → e3113527 (A3 nurture dry-run port ×3).
+
+**A3 DONE (e3113527, dry-run Phase 1):** nurture-control/health/digest + 2 cron routes + config chain ported to all 3 wave-1 sites; enrollment wired into each submit (shared handler gained optional onLeadInserted hook, backward-compat verified Property+all sites tsc clean); nurture-control keyed on site_key; migration `supabase/migrations/20260718000001_lead_nurture_control_site_scope.sql` (additive, go-live prereq); digest queries site-filtered; 8+4 vertical sequences Opus-QA'd (faceless, PECR service-only, no em-dash, no bleed; solicitors cadence corrected to 0/0/4/24/48/96/168/264h); consent-with-followup staged commented; env in .env.example. Phase 2 (inbound-reply + AI sequence-gen) DEFERRED (deep chain, inert while dormant). Nothing armed.
+  - **A3 GO-LIVE CHECKLIST (owner-gated):** apply the migration to Supabase; set per-site env (CRON_SECRET, RESEND_FROM_NAME, LEAD_SERVICE_* on shared Property domain); owner approve + swap in `leadConsentTextWithFollowUp`; deploy; review ≥1wk would-send logs; then set LEAD_NURTURE_ENABLED + channel flags per site. Note: generalist channels.ts default reply-to is hollowaydavies (harmless, env overrides to shared inbound.propertytaxpartners.co.uk).
+  - **IndexNow (C2 tail, run at deploy):** `python -m optimisation_engine.indexing.submit_indexnow --site <s> --enqueue <url>` for each new/now-open tool + /resources/* URL, then `--from-queue` post-deploy. All 3 sites keyed.
+
+**BOOKING STACK DONE (a1265023) — WAVE-1 AT FULL PROPERTY CONVERSION PARITY.** Ported to generalist/dentists/solicitors: signed `book` token on submit → thank-you 3-step endowed-progress + inline BookingPicker (10 weekdays × 3 windows); slim token-gated `/api/leads/book` (record `booked` event + promote lead's own nurture_state + leads.status, NO Property verify/handoff tree); DetailsForm + `/complete` + `/api/leads/complete` progressive completion (email-only leads, patch missing-and-valid only); aux-cron un-stubbed (T-24/T-2 reminders + abandoned-booking nudge, gated by LEAD_NURTURE_ENABLED); nurture reminder links repointed /contact→/book,/complete. No DB migration (bookings = lead_contact_events rows). Reuses shared LEAD_NURTURE_TOKEN_SECRET (degrades gracefully if unset). Opus security QA PASS: token binds lead, promote scoped to token leadId (no estate-wide flip), intent enforced, no mass-assignment, slot validation, open-redirect guard, expiry. Fixed in QA: solicitors over-scoped+unawaited promote. Builds green. **GO-LIVE:** set LEAD_NURTURE_TOKEN_SECRET per site (picker works without it, just no token → fallback CTA).
+
+**Wave-1 conversion stack now COMPLETE:** A1 multistep + C1 tools + A2 blog architecture + open research resources (de-gated) + C2 citability + A3 nurture (dry-run) + booking/progressive-completion + SpecialistWidget mounted. Only owner-gated go-live actions remain (deploys, migration apply, secrets, consent swap, nurture arming).
+
+**NEXT ACTION:** Wave 2 — see the CLOSE handoff below for the scoped gap table + fan-out plan.
+
+### 2026-07-18 — session 5 CLOSE (handoff to fresh agent; context rotated on owner instruction)
+
+**Session-5 commit chain (branch `expansion/phase-0`, in order):** e921ae00 (de-gate 4 sites) → bd562dbd (C2 citability: llms.txt ×3 + 22 worked examples + income-tax bug fix ×5 libs + SpecialistWidget mounts on generalist/dentists + stale rates page) → e3113527 (A3 nurture dry-run ×3 + migration file) → a1265023 (booking + progressive-completion stack ×3). All builds+tests green, NOTHING deployed.
+
+**STATE: wave-1 (generalist/dentists/solicitors) at FULL Property conversion parity.** Full stack done: A1 multistep, C1 tools (25 built earlier), A2 3-moment blog, open research resources, C2 citability, A3 nurture (dry-run/dormant), booking+progressive-completion, SpecialistWidget mounted. Everything local; only owner-gated go-live actions remain.
+
+**KEY THINGS A FRESH AGENT MUST KNOW (session-5 additions):**
+- **Email gate is DEAD estate-wide** (owner decision). Never port email-gated blog resources. Blog mid-slot = qualified MiniCapture "free review" (GateOrForm). Guides = OPEN `/resources/[topic]` research pages (full content + direct xlsx download + lead CTA, indexed). Property retired its gate 2026-06-16 (f90f6cca).
+- **Income-tax band bug pattern** (fixed in 5 libs this session): `calcIncomeTax`/dividend mismeasured higher-rate band once PA tapers (used `HIGHER_RATE_LIMIT - BASIC_RATE_LIMIT` = 74,870 fixed, wrong when PA<12,570). Correct: higher band width = `HIGHER_RATE_LIMIT - pa - 37700` (basic band is fixed £37,700). £150k profit → £53,703 IT (not £54,332). WATCH for this same pattern in wave-2 tool compute (contractors-ir35 + cis have take-home/extraction tools) and Property.
+- **A3 nurture is DRY-RUN + DORMANT** (LEAD_NURTURE_ENABLED unset = all sends skipped). Shared Property Resend domain (owner decision). GO-LIVE checklist: apply `supabase/migrations/20260718000001_lead_nurture_control_site_scope.sql`; set per-site env (CRON_SECRET, RESEND_FROM_NAME, LEAD_SERVICE_* on Property domain, LEAD_NURTURE_TOKEN_SECRET); owner approve + swap in `leadConsentTextWithFollowUp` (staged commented in each site.ts); deploy; review ≥1wk would-send logs; then set LEAD_NURTURE_ENABLED + channel flags. Phase 2 (inbound-reply + AI sequence-gen) still DEFERRED per site.
+- **Booking stack**: bookings are `lead_contact_events` rows (no bookings table). Reuses shared `LEAD_NURTURE_TOKEN_SECRET` (picker degrades gracefully to fallback CTA if unset). Book/complete routes SLIMMED (no Property verify/handoff tree). Opus-security-QA'd. aux-cron un-stubbed (reminders gated by LEAD_NURTURE_ENABLED, dormant).
+- **IndexNow (C2 tail, run AT deploy):** `python -m optimisation_engine.indexing.submit_indexnow --site <s> --enqueue <url>` per new tool + /resources/* URL, then `--from-queue` post-deploy. All 3 wave-1 sites keyed.
+
+**WAVE-2 SCOPE — gap table (verified 2026-07-18, closest→furthest = medical, construction-cis, contractors-ir35):**
+
+| Capability | Medical | construction-cis | contractors-ir35 |
+|---|---|---|---|
+| SpecialistWidget mounted | ✅ (PageShell) | ✅ (PageShell) | ✅ (PageShell) |
+| Old ExitIntentModal running | ❌ uses DeepScrollModal (correct) | ⚠️ YES (layout.tsx:106) — swap to DeepScrollModal | ⚠️ YES (layout.tsx:106) — swap |
+| Resources open vs gated | ✅ OPEN (de-gated this session) | ⚠️ GATED+NOINDEX — de-gate | ⚠️ GATED+NOINDEX — de-gate |
+| Blog 3-moment capture | ✅ present | ⚠️ partial (InlineMiniLeadForm mid; add early-tool + verify fallback) | ⚠️ partial |
+| MiniCapture: shared+multistep | ❌ local copy, no multistep/role dropdown | ❌ local copy | ❌ local copy (most diverged) |
+| Static llms.txt (Property depth) | ⚠️ present, no cornerstone section | ❌ ABSENT (only dynamic llms-full) — add | ✅ present, good depth |
+| First Bing pull | ✅ (in query ledger) | ⚠️ sparse (~1mo old site) | ❌ NO BWT data — verify BWT first |
+| C1 tool roster | 3 (+3 premium) → grow ~10 | 8 (+3 premium) → ~12 | 7 (+4 premium) → ~10 |
+| A3 nurture | ❌ absent | ❌ absent | ❌ absent |
+| Booking + progressive-completion | ❌ absent | ❌ absent | ❌ absent |
+| Lead source key (leads.source) | `medical` | `construction-cis` | `contractors-ir35` |
+| Palette | navy #001b3d + copper #b87333 | orange #f97316 + slate-900 | petrol-cyan #0e7490 + amber |
+
+Medical routing = FLAT (TopicOverrideProvider); NEVER run slug_resolver --fix. Medical is LIVE in prod (code changes only, no deploy without word).
+
+**WAVE-2 FAN-OUT PLAN (for the fresh agent — Opus/Fable architects, Sonnet builders, batch size 1, parallel; verify-before-edit; A* bar; no em-dashes; Opus factual+editorial QA after content):**
+
+Recommended order (quick wins → deep builds), each phase = one Sonnet builder per site in parallel, manager commits per green phase:
+1. **Quick-win parity pass (all 3):** swap ExitIntentModal→DeepScrollModal on cis + ir35 (mirror medical/wave-1 layout; medical already correct); add static `public/llms.txt` to construction-cis (contractors-ir35 is the depth template); add cornerstone section to medical llms.txt. Low effort, high safety.
+2. **De-gate resources (cis + ir35):** mirror the session-5 de-gate (blog mid-slot → qualified MiniCapture; `/resources/[topic]` → open, remove NOINDEX + email gate, add to sitemap, lead CTA at foot). Medical already open.
+3. **MiniCapture → shared + multistep (all 3):** swap local `@/components/forms/MiniCapture` to `@accounting-network/web-shared/leads/MiniCapture`, wire MiniCaptureConfig + submitLead + roleOptions from each niche.config, add `NEXT_PUBLIC_MINIFORMS_MULTISTEP` to env (OFF until deploy). Reference: how Dentists/Solicitors wrap the shared component. Mind that cis/ir35 local copies are diverged (ir35 most).
+4. **C1 tool rosters (all 3):** measurement first — verify BWT for contractors-ir35 then first Bing pull (`python -m optimisation_engine.clients.bing_query_client contractors-ir35`); fresh GSC/Bing for cis+medical. Then Fable/Opus roster design per site (`docs/<site>/TOOL_ROSTER.md`; seeds in §C1 of this doc — medical NHS pension AA suite, cis trade-specific + VAT reverse-charge, ir35 rate-negotiation/umbrella/MSC), then one Sonnet builder per tool (GenericTool config + registry), Opus factual QA (WATCH the income-tax band bug pattern). Add SSR worked-example blocks + WebApplication JSON-LD (already the shared page pattern) as you build.
+5. **A2 blog architecture polish (all 3):** ensure early-tool island + mid qualified form + fallback; topic→tool→resource registry per site (after C1 tools exist).
+6. **A3 nurture dry-run (all 3):** replicate the session-5 port exactly (nurture-control/health/digest keyed on site_key + 2 cron routes + config chain + enrollment via onLeadInserted hook + vertical sequences Opus-QA'd + consent staged commented; Phase 2 deferred). The migration already seeds only generalist/dentists/solicitors rows — ADD medical/construction-cis/contractors-ir35 rows to a NEW migration (or extend) before their nurture-control reads by site_key.
+7. **Booking + progressive-completion (all 3):** replicate session-5 booking stack exactly (booking.ts + field-floors.ts pure copies; submit mints book token; thank-you rework; slim /api/leads/book + /complete + booking-viewed; DetailsForm; un-stub aux-cron; re-skin to each palette). Opus security-QA the slim routes (promote scoped to token leadId, intent enforced, no mass-assignment, open-redirect guard).
+
+Then **agency** (after 07-22 window; cloud reminder trig_019Eamo9dnSB8KRJuoHUVzFH fires 07-22 08:00): A4 calculator retrofit to GenericTool + CalcResultCta (currently ZERO lead capture) THEN the full wave stack.
+
+**OWNER-GATED / waiting on word (surface at session start):** (a) 308 redirects `python scripts/_redirect_308_prep.py --apply` (4 apex domains, prod); (b) Property deploy (carries Reflex CC removal + multistep fixes live); (c) wave-1 deploys (A1 flags flip via NEXT_PUBLIC_MINIFORMS_MULTISTEP=1 per site; ships open resources + booking + citability); (d) A3 go-live checklist (migration + env + secret + consent swap + arm); (e) B2 IndexNow drain post-deploy; (f) 39-page deploy backlog; (g) sameAs/GBP exposure decision. Owner enforces manual Vercel CLI deploy (GitHub auto-deploy OFF).
