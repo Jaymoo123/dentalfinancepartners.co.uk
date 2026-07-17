@@ -43,6 +43,7 @@ VALID_SCHEMA_TYPES = {
     "Service", "ProfessionalService", "LocalBusiness", "AccountingService",
     "BreadcrumbList", "WebPage", "Organization",
     "HowTo", "Review", "AggregateRating",
+    "WebApplication", "SoftwareApplication", "Dataset",
 }
 
 
