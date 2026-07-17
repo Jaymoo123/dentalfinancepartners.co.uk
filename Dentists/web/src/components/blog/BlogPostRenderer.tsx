@@ -17,30 +17,19 @@ import { PremiumUpgrade } from "@/components/tools/premium/PremiumUpgrade";
 import { ResourceGate } from "@/components/resources/ResourceGate";
 import { gateCopy } from "@/lib/resources/copy";
 import { hasEnabledResource } from "@/lib/resources/registry";
+import { resourceForTopic } from "@/lib/tools/premium/resources";
+import { AssociateIncorporationWorkedExamples } from "@/components/tools/premium/AssociateIncorporationWorkedExamples";
+import {
+  splitContentEarly,
+  splitRemainderForGate,
+  splitContentAtMidScroll,
+} from "@accounting-network/web-shared/content/blog-splits";
 
 type BlogPostRendererProps = {
   post: BlogPost;
   categorySlug: string;
   related?: { slug: string; title: string; summary: string; category: string; categorySlug: string }[];
 };
-
-/**
- * Split HTML content at roughly the 60% scroll point (after the 3rd or 4th h2)
- * so InlineMiniLeadForm lands mid-article. Falls back to the full article with
- * no split when there are fewer than 4 headings (short posts).
- */
-function splitContentAtMidScroll(html: string): { before: string; after: string | null } {
-  const headings = [...html.matchAll(/<h2[^>]*>/g)];
-  if (headings.length < 4) {
-    return { before: html, after: null };
-  }
-  const targetIdx = Math.floor(headings.length * 0.6);
-  const target = headings[targetIdx];
-  if (target?.index === undefined) {
-    return { before: html, after: null };
-  }
-  return { before: html.slice(0, target.index), after: html.slice(target.index) };
-}
 
 function formatUkDate(isoDate: string): string {
   const d = new Date(isoDate);
@@ -49,11 +38,15 @@ function formatUkDate(isoDate: string): string {
 }
 
 /**
- * Renders a blog post with a full-bleed hero (image with a navy-scrim, or a
- * navy gradient fallback when no image is set), a published/updated date line,
- * an optional "Key takeaways" block (falls back to the summary), the HTML body,
- * FAQs, author aside, lead CTA and related articles. Brand tokens only — no
- * hardcoded colours — so it stays on-brand with the rest of the site.
+ * Renders a blog post with a full-bleed hero, 3-moment capture architecture:
+ *   1. EARLY: PremiumUpgrade island after first h2 (~20-25% in)
+ *   2. GATE: ResourceGate at a second, lower break (~50% in)
+ *   3. FALLBACK: InlineMiniLeadForm at mid-scroll for unmapped/compliance topics
+ *
+ * For topic "associate-incorporation-premium" the SSR AssociateIncorporationWorkedExamples
+ * block is rendered immediately after the PremiumUpgrade island.
+ *
+ * Routing: renderer only. No route changes. FLAT routing untouched.
  */
 export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostRendererProps) {
   const headings = extractHeadings(post.contentHtml);
@@ -67,11 +60,24 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
   const showUpdated = post.updatedDate && post.updatedDate !== post.date;
   const verified = post.sourcesVerifiedAt ? formatUkDate(post.sourcesVerifiedAt) : "";
 
-  const midSplit = splitContentAtMidScroll(post.contentHtml);
-
   // Resolve the premium topic from the category slug (slug-derived, never the
-  // human post.category label, per the brief's hardening invariant).
+  // human post.category label).
   const premiumTopic = topicForBlogSlug(categorySlug);
+  const hasGate = hasEnabledResource(premiumTopic);
+
+  // Which toolId does this topic resolve to? Used to conditionally mount the
+  // AssociateIncorporationWorkedExamples SSR block.
+  const topicResource = resourceForTopic(premiumTopic);
+  const showWorkedExamples = topicResource?.toolId === "associate-incorporation-premium";
+
+  // 3-moment split. When a topic has a premium tool/gate, inject early (after
+  // first h2) then gate at the lower break. Otherwise, fall back to the
+  // mid-scroll InlineMiniLeadForm (unchanged behaviour for compliance/unmapped).
+  const showPremiumIslands = !!premiumTopic;
+  const earlySplit = showPremiumIslands ? splitContentEarly(post.contentHtml) : null;
+  const gateSplit =
+    earlySplit && hasGate ? splitRemainderForGate(earlySplit.after) : null;
+  const fallbackSplit = showPremiumIslands ? null : splitContentAtMidScroll(post.contentHtml);
 
   return (
     <>
@@ -219,49 +225,66 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
               </div>
 
               <div className="article-body prose-blog mt-10">
-                <div dangerouslySetInnerHTML={{ __html: midSplit.before }} />
-                {midSplit.after ? (
+                {showPremiumIslands && earlySplit ? (
                   <>
-                    {/* R2 premium island: injected in the early split, BEFORE the
-                        R1 mid-scroll InlineMiniLeadForm. Topic resolved from the
-                        category slug (slug-derived, not the human label).
-                        PremiumUpgrade renders nothing for non-mapped categories. */}
+                    {/* Moment 1: content before the first h2 (~20-25% in). */}
+                    <div dangerouslySetInnerHTML={{ __html: earlySplit.before }} />
+
+                    {/* Moment 1: premium tool island (early, lifts dwell). */}
                     <PremiumUpgrade
                       topic={premiumTopic}
                       placement="blog"
                       category={categorySlug}
                     />
-                    {/* R3 resource gate: appended after PremiumUpgrade. Renders nothing
-                        when no enabled resource exists for this topic. */}
-                    {hasEnabledResource(premiumTopic) && (
-                      <ResourceGate
-                        topic={premiumTopic!}
-                        copy={gateCopy(premiumTopic, post.title)}
-                        placement="blog"
-                      />
+
+                    {/* SSR worked-examples for the associate-incorporation tool,
+                        mounted immediately after the interactive island. */}
+                    {showWorkedExamples ? <AssociateIncorporationWorkedExamples /> : null}
+
+                    {gateSplit && gateSplit.after ? (
+                      <>
+                        {/* Content between the tool island and the gate. */}
+                        <div dangerouslySetInnerHTML={{ __html: gateSplit.before }} />
+
+                        {/* Moment 2: email-gated resource (lower break, ~50% in). */}
+                        <ResourceGate
+                          topic={premiumTopic!}
+                          copy={gateCopy(premiumTopic, post.title)}
+                          placement="blog"
+                          category={categorySlug}
+                        />
+
+                        {/* Rest of article after the gate. */}
+                        <div dangerouslySetInnerHTML={{ __html: gateSplit.after }} />
+                      </>
+                    ) : (
+                      <>
+                        {/* No lower break: gate goes directly under the tool, then
+                            the rest of the article. */}
+                        {hasGate ? (
+                          <ResourceGate
+                            topic={premiumTopic!}
+                            copy={gateCopy(premiumTopic, post.title)}
+                            placement="blog"
+                            category={categorySlug}
+                          />
+                        ) : null}
+                        <div dangerouslySetInnerHTML={{ __html: earlySplit.after }} />
+                      </>
                     )}
-                    {/* Mid-scroll injection: InlineMiniLeadForm before the second
-                        half. Topic is the human display label from the post (used
-                        as a readable tag in the lead message prefix). */}
-                    <InlineMiniLeadForm topic={post.category} />
-                    <div dangerouslySetInnerHTML={{ __html: midSplit.after }} />
                   </>
                 ) : (
-                  /* Short-post fallback: fewer than 4 h2s, no mid-split.
-                     Inject both the premium island and the resource gate. */
                   <>
-                    <PremiumUpgrade
-                      topic={premiumTopic}
-                      placement="blog"
-                      category={categorySlug}
-                    />
-                    {hasEnabledResource(premiumTopic) && (
-                      <ResourceGate
-                        topic={premiumTopic!}
-                        copy={gateCopy(premiumTopic, post.title)}
-                        placement="blog"
-                      />
-                    )}
+                    {/* No enabled tool/gate for this topic (compliance/unmapped):
+                        original behaviour — InlineMiniLeadForm at mid-scroll. */}
+                    <div dangerouslySetInnerHTML={{ __html: fallbackSplit?.before ?? post.contentHtml }} />
+                    {fallbackSplit?.after ? (
+                      <>
+                        {/* Moment 3: fallback inline mini form for unmapped categories. */}
+                        <InlineMiniLeadForm topic={post.category} />
+                        <div dangerouslySetInnerHTML={{ __html: fallbackSplit.after }} />
+                      </>
+                    ) : null}
                   </>
                 )}
               </div>
