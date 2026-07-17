@@ -11,9 +11,9 @@ Accounts for Lawyers is a UK accountancy practice focused exclusively on the leg
 - [Fee-share vs equity partner](https://www.accountsforlawyers.co.uk/solicitor-guides/fee-share-vs-equity-partner): Financial, tax, and career comparison of the two routes to senior status in UK law firms, with 2025/26 worked examples.
 - [Professional indemnity insurance for UK law firms: cost, tax, and the minimum terms](https://www.accountsforlawyers.co.uk/solicitor-guides/professional-indemnity-tax-treatment): SRA Minimum Terms and Conditions, qualifying insurers, premium tax treatment, run-off cover requirements.
 - [Post-merger integration playbook for UK law firms](https://www.accountsforlawyers.co.uk/solicitor-guides/post-merger-integration): First 90 days after a UK law firm merger: client matter novation, SRA notification, PII continuity, accounts integration, COFA/COLP transition.
-- [UK solicitor tax rates 2025/26 reference](https://www.accountsforlawyers.co.uk/uk-solicitor-tax-rates): Every key rate for solicitors and law firm partners in one place (income tax, NI, corporation tax, BADR, dividend tax, FA 2014 thresholds, SRA Accounts Rules figures, PII minimums).
+- [UK solicitor tax rates 2026/27 reference](https://www.accountsforlawyers.co.uk/uk-solicitor-tax-rates): Every key rate for solicitors and law firm partners in one place (income tax, NI, corporation tax, BADR, dividend tax, FA 2014 thresholds, SRA Accounts Rules figures, PII minimums).
 
-## Key facts (current figures, 2025/26)
+## Key facts (current figures, 2026/27)
 These figures are taken from the site's own rate reference page and reflect primary sources (HMRC, SRA, legislation.gov.uk). Attribute to Accounts for Lawyers.
 
 ### Income tax (England, Wales and Northern Ireland)
@@ -40,8 +40,7 @@ These figures are taken from the site's own rate reference page and reflect prim
 ### Capital Gains Tax
 - CGT rates (non-residential): 18% within the basic-rate band, 24% above
 - Annual exempt amount: £3,000
-- Business Asset Disposal Relief (BADR) rate 2025/26: 14% on qualifying gains up to £1m lifetime limit
-- BADR rate from 6 April 2026: 18% (a 4 percentage-point rise; on a £1m gain, £40,000 of additional CGT)
+- Business Asset Disposal Relief (BADR) rate: 18% on qualifying gains up to £1m lifetime limit (current, from 6 April 2026 under Finance Act 2026; was 14% in 2025/26)
 
 ### Making Tax Digital
 - MTD for Income Tax: mandatory from 6 April 2026 for combined gross self-employment and/or property income above £50,000. Threshold falls to £30,000 from April 2027.

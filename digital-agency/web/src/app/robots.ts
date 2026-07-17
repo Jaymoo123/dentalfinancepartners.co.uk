@@ -85,14 +85,16 @@ export default function robots(): MetadataRoute.Robots {
     "TelegramBot",
   ];
 
-  const disallow = ["/thank-you", "/api/og", "/api/health-check/submit", "/api/nurture/"];
+  // /api/ blanket-disallowed except the public tax-rates JSON advertised in llms.txt
+  const disallow = ["/api/", "/thank-you"];
+  const allow = ["/", "/api/uk-tax-rates.json"];
 
   return {
     rules: [
-      { userAgent: "*", allow: "/", disallow },
+      { userAgent: "*", allow, disallow },
       ...aiAndSearchBots.map((userAgent) => ({
         userAgent,
-        allow: "/",
+        allow,
         disallow,
       })),
     ],

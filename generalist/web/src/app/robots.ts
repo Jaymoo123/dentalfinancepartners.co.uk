@@ -85,7 +85,7 @@ export default function robots(): MetadataRoute.Robots {
     "TelegramBot",
   ];
 
-  const disallow = ["/thank-you", "/api/og", "/api/nurture/", "/blog/stage"];
+  const disallow = ["/api/", "/thank-you", "/blog/stage"];
 
   return {
     rules: [
