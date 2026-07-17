@@ -20,6 +20,7 @@ import { buildCisLeadNurtureConfigs, buildLeadMessageContext } from "@/config/le
 import { buildLeadChannelSender, leadNurtureArmed } from "@/lib/leads/channels";
 import { isNurturePaused, recordCronHeartbeat } from "@/lib/leads/nurture-control";
 import { runNurtureGuardrails } from "@/lib/leads/nurture-health";
+import { runLeadAuxScans } from "@/lib/leads/aux-cron";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -76,9 +77,14 @@ async function run(req: NextRequest): Promise<NextResponse> {
     dispatched += r.dispatched;
   }
 
-  // ponytail: aux-cron (booking reminders/abandoned nudges) deferred until
-  // a booking flow exists on this site. Add runLeadAuxScans() here when ready.
-  const aux = { reminders: 0, nudges: 0 };
+  let aux = { reminders: 0, nudges: 0 };
+  if (effectiveArmed) {
+    try {
+      aux = await runLeadAuxScans();
+    } catch (err) {
+      console.error("[lead-nurture-cron/cis] aux-cron failed (non-fatal)", err);
+    }
+  }
 
   let guard: Awaited<ReturnType<typeof runNurtureGuardrails>> | null = null;
   if (cronArmed) {

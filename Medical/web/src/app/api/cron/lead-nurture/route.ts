@@ -17,6 +17,7 @@ import { runLeadNurtureCron, type LeadCronResult } from "@accounting-network/web
 import type { NurtureLead } from "@accounting-network/web-shared/lead-nurture/config";
 import { buildMedicalLeadNurtureConfigs, buildLeadMessageContext } from "@/config/lead-nurture";
 import { buildLeadChannelSender, leadNurtureArmed } from "@/lib/leads/channels";
+import { runLeadAuxScans } from "@/lib/leads/aux-cron";
 import { isNurturePaused, recordCronHeartbeat } from "@/lib/leads/nurture-control";
 import { runNurtureGuardrails } from "@/lib/leads/nurture-health";
 
@@ -74,6 +75,7 @@ async function run(req: NextRequest): Promise<NextResponse> {
     processed += r.processed;
     dispatched += r.dispatched;
   }
+  const aux = effectiveArmed ? await runLeadAuxScans() : { reminders: 0, nudges: 0 };
 
   let guard: Awaited<ReturnType<typeof runNurtureGuardrails>> | null = null;
   if (cronArmed) {
@@ -88,7 +90,7 @@ async function run(req: NextRequest): Promise<NextResponse> {
     }
   }
 
-  return NextResponse.json({ ok: true, armed: cronArmed, dbPaused, processed, dispatched, perSequence, guard });
+  return NextResponse.json({ ok: true, armed: cronArmed, dbPaused, processed, dispatched, perSequence, aux, guard });
 }
 
 export async function GET(req: NextRequest) {

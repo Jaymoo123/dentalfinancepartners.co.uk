@@ -19,6 +19,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { createLeadSubmitHandler } from "@accounting-network/web-shared/leads/server";
 import { enrollLead } from "@/lib/leads/enroll";
+import { mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 
 export const runtime = "nodejs";
 export const maxDuration = 10;
@@ -36,5 +37,27 @@ const _handler = createLeadSubmitHandler({
 });
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
-  return _handler(req);
+  const res = await _handler(req);
+
+  let body: Record<string, unknown>;
+  try {
+    body = (await res.json()) as Record<string, unknown>;
+  } catch {
+    return res;
+  }
+
+  // Mint a booking token only on success with a real leadId.
+  let bookingToken: string | undefined;
+  if (body.success && typeof body.leadId === "string" && body.leadId) {
+    try {
+      bookingToken = mintLeadToken(body.leadId, "book");
+    } catch {
+      // LEAD_NURTURE_TOKEN_SECRET unset: thank-you page just omits the picker.
+    }
+  }
+
+  return NextResponse.json(
+    { ...body, ...(bookingToken !== undefined ? { bookingToken } : {}) },
+    { status: res.status },
+  );
 }

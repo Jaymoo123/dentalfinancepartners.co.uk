@@ -173,9 +173,12 @@ export async function buildLeadMessageContext(
   const b = base();
   const confirmUrl = buildConfirmUrl(lead, b);
   const optOutUrl = buildOptOutUrl(lead, b);
-  // Medical has no /book flow: confirmUrl serves as the booking URL placeholder.
-  // ponytail: phase-2, wire a proper booking page if one is added.
-  const bookingUrl = confirmUrl;
+  let bookingUrl: string;
+  try {
+    bookingUrl = `${b}/book?t=${encodeURIComponent(mintLeadToken(lead.id, "book"))}`;
+  } catch {
+    bookingUrl = confirmUrl;
+  }
   const detailsUrl = buildDetailsUrl(lead, b);
 
   const missingFields = computeMissingContact(lead);

@@ -14,6 +14,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import { timingSafeEqual } from "crypto";
 import { adminConfigured } from "@/lib/supabase/admin";
 import { runLeadNurtureCron, type LeadCronResult } from "@accounting-network/web-shared/lead-nurture/cron";
+import { runLeadAuxScans } from "@/lib/leads/aux-cron";
 import type { NurtureLead } from "@accounting-network/web-shared/lead-nurture/config";
 import { buildIr35LeadNurtureConfigs, buildLeadMessageContext } from "@/config/lead-nurture";
 import { buildLeadChannelSender, leadNurtureArmed } from "@/lib/leads/channels";
@@ -75,8 +76,16 @@ async function run(req: NextRequest): Promise<NextResponse> {
     dispatched += r.dispatched;
   }
 
-  // ponytail: no aux-cron for ir35 yet (no booking picker); add when wired
-  const aux = { reminders: 0, nudges: 0 };
+  // Aux scans: booked-slot reminders (T-24 email + T-2 SMS) and abandoned-booking nudge.
+  // Gated by LEAD_NURTURE_ENABLED -- dormant until the env var is set.
+  let aux = { reminders: 0, nudges: 0 };
+  if (effectiveArmed) {
+    try {
+      aux = await runLeadAuxScans();
+    } catch (err) {
+      console.error("[lead-nurture-cron] aux scan error", err);
+    }
+  }
 
   let guard: Awaited<ReturnType<typeof runNurtureGuardrails>> | null = null;
   if (cronArmed) {

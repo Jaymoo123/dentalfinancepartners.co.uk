@@ -146,7 +146,8 @@ export function LeadForm({
     form.reset();
     setConsent(false);
     if (redirectOnSuccess) {
-      router.push("/thank-you");
+      const bt = result.bookingToken;
+      router.push(bt ? `/thank-you?bt=${encodeURIComponent(bt)}` : "/thank-you");
     }
   }
 

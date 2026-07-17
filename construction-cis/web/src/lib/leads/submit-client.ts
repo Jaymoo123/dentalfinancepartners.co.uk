@@ -43,6 +43,7 @@ export interface CisLeadResult {
   success: boolean;
   error?: string;
   leadId?: string;
+  bookingToken?: string;
 }
 
 export async function submitCisLead(
@@ -77,7 +78,7 @@ export async function submitCisLead(
       if (!res.ok) {
         return { success: false, error: json.error || `Request failed (${res.status})` };
       }
-      return { success: true, leadId: json.leadId };
+      return { success: true, leadId: json.leadId, bookingToken: json.bookingToken };
     }
     // 5xx: route is broken; fall through to direct-insert fallback.
     try {
