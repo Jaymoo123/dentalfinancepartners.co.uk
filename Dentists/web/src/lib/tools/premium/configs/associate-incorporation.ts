@@ -9,16 +9,16 @@
  * associate is normally a type-1 practitioner member; associate work billed
  * through a limited company generally falls out of the practitioner route.
  * The tool quantifies the forgone employer-equivalent pension value
- * (20.6% employer rate + 0.08% administration levy = 20.68% of pensionable pay)
+ * (23.7% employer rate from 1 Apr 2024 + 0.08% administration levy = 23.78% of pensionable pay)
  * against the headline incorporation tax saving and gives a verdict on the
- * pension-adjusted position. Employer-equivalent value = 20.6% employer rate
- * + 0.08% administration levy = 20.68% of pensionable pay.
+ * pension-adjusted position. Employer-equivalent value = 23.7% employer rate
+ * (from 1 Apr 2024) + 0.08% administration levy = 23.78% of pensionable pay.
  *
  * FIGURES TRACED (all in compute/associate-incorporation.ts):
  * - 2026/27 income tax, Class 4 6%/2%, Class 2 £3.45/week.
  * - Employer NIC 15% above £5,000 (from 6 Apr 2025); £12,570 optimal salary.
  * - CT 19%/26.5% marginal/25%; dividends 10.75%/35.75%/39.35% (FA 2026 s.4).
- * - NHS employer-equivalent 20.68%: an ESTIMATE, scheme-rule caveats in copy.
+ * - NHS employer-equivalent 23.78%: an ESTIMATE, scheme-rule caveats in copy.
  *
  * NOT registered anywhere: registry.ts / resources.ts wiring is a separate,
  * deliberate integration step.
@@ -174,7 +174,7 @@ export const associateIncorporationConfig: PremiumToolConfig = {
         { label: "Net fee income (both routes)", value: gbp(r.netFees), strong: true },
         { label: "Estimated pensionable earnings", value: gbp(r.pensionableEarnings) },
         { label: "Ltd tax saving before pension", value: gbp(r.taxSavingBeforePension) },
-        { label: "NHS Pension employer value at stake (20.68%)", value: gbp(r.pensionEmployerValue) },
+        { label: "NHS Pension employer value at stake (23.78%)", value: gbp(r.pensionEmployerValue) },
         {
           label: "Net position of incorporating, after pension",
           value: gbp(r.netPositionAfterPension),
@@ -196,7 +196,7 @@ export const associateIncorporationConfig: PremiumToolConfig = {
           },
         ],
       },
-      note: "2026/27 rates throughout (employer NIC 15% above £5,000; dividend rates 10.75%/35.75%/39.35% under FA 2026 s.4; CT 19%/26.5% marginal/25%). The Ltd route assumes a £12,570 director salary, full dividend extraction, £1,800 admin and no Employment Allowance. NHS Pension: modelled as fully lost on incorporation, which is the usual outcome where associate income is billed through a company rather than earned personally as a performer. The 20.68% employer-equivalent figure (20.6% employer rate plus 0.08% administration levy) is an estimate; the exact employer-side rate depends on the scheme year and your arrangement, and limited routes back into the scheme can exist in specific circumstances. Member contributions are excluded from both routes. IR35 on NHS engagements can remove the Ltd advantage entirely. Estimates, not advice; take scheme-specific advice before incorporating.",
+      note: "2026/27 rates throughout (employer NIC 15% above £5,000; dividend rates 10.75%/35.75%/39.35% under FA 2026 s.4; CT 19%/26.5% marginal/25%). The Ltd route assumes a £12,570 director salary, full dividend extraction, £1,800 admin and no Employment Allowance. NHS Pension: modelled as fully lost on incorporation, which is the usual outcome where associate income is billed through a company rather than earned personally as a performer. The 23.78% employer-equivalent figure (23.7% employer rate, in force from 1 April 2024, plus 0.08% administration levy) is an estimate; the exact employer-side rate depends on the scheme year and your arrangement, and limited routes back into the scheme can exist in specific circumstances. Member contributions are excluded from both routes. IR35 on NHS engagements can remove the Ltd advantage entirely. Estimates, not advice; take scheme-specific advice before incorporating.",
     };
   },
   chart: {
@@ -211,7 +211,7 @@ export const associateIncorporationConfig: PremiumToolConfig = {
     heading: "How this comparison works",
     paragraphs: [
       "Both routes start from the same net fee income: your fee split of gross fees, less lab fees and other deductible expenses. As a sole trader that figure is your taxable profit, charged to income tax at 20%, 40% or 45%, Class 4 National Insurance at 6% up to £50,270 and 2% above, and Class 2 at £3.45 a week. Through a limited company the same income becomes company turnover: a £12,570 director salary (which uses your personal allowance and attracts £1,135.50 of employer NIC at 15% above the £5,000 threshold, with no Employment Allowance for a single-director company), corporation tax at 19% to 25% on the balance, then dividend tax at the 2026/27 rates of 10.75%, 35.75% and 39.35% on full extraction.",
-      "The pension layer is what makes this comparison honest. A self-employed associate performing NHS dental services is normally a type-1 practitioner member of the NHS Pension Scheme, and the employer side of that benefit, a 20.6% contribution plus a 0.08% administration levy on pensionable pay, is funded for you. Bill the same work through a limited company and you generally fall out of the practitioner route: the company is not an Employing Authority, so no NHS Pension accrues on that income. The tool prices that forgone employer value at 20.68% of your estimated pensionable earnings and sets it against the headline tax saving.",
+      "The pension layer is what makes this comparison honest. A self-employed associate performing NHS dental services is normally a type-1 practitioner member of the NHS Pension Scheme, and the employer side of that benefit, a 23.7% contribution plus a 0.08% administration levy on pensionable pay, is funded for you. Bill the same work through a limited company and you generally fall out of the practitioner route: the company is not an Employing Authority, so no NHS Pension accrues on that income. The tool prices that forgone employer value at 23.78% of your estimated pensionable earnings and sets it against the headline tax saving.",
       "The verdict compares total annual value: net cash plus pension employer value for the sole trader, against net cash alone for the company. For a typical NHS-weighted associate the pension value swamps the incorporation tax saving. The gap narrows as the private share of your income rises, because private fees were never pensionable in the first place.",
     ],
   },
@@ -230,7 +230,7 @@ export const associateIncorporationPageCopy = {
     "Step 1, common base. Gross fees × your fee split, less lab fees on your share and other deductible expenses, gives net fee income. Both routes start here, so the comparison isolates structure, not workload.",
     "Step 2, sole trader. Net fee income is taxed as trading profit: income tax (personal allowance £12,570, 20%/40%/45%, allowance tapered above £100,000), Class 4 NIC at 6% between £12,570 and £50,270 and 2% above, and Class 2 NIC at £3.45 a week.",
     "Step 3, limited company. The company pays you a £12,570 salary (no income tax or employee NIC at that level; £1,135.50 employer NIC), deducts £1,800 of admin and accountancy, pays corporation tax at 19% up to £50,000 profit, an effective 26.5% in the marginal band to £250,000, and 25% above, then distributes the balance as dividends taxed at 10.75%, 35.75% and 39.35% (FA 2026 rates, £500 allowance).",
-    "Step 4, the pension layer. Pensionable earnings are estimated as the NHS share of your net fees (or your own override). As a sole-trader practitioner member, the employer side of your NHS Pension, a 20.6% contribution plus the 0.08% administration levy, 20.68% in total, is funded on that pay. Incorporating generally forfeits it, so the tool counts 20.68% of pensionable pay as an annual cost of the Ltd route.",
+    "Step 4, the pension layer. Pensionable earnings are estimated as the NHS share of your net fees (or your own override). As a sole-trader practitioner member, the employer side of your NHS Pension, a 23.7% contribution plus the 0.08% administration levy, 23.78% in total, is funded on that pay. Incorporating generally forfeits it, so the tool counts 23.78% of pensionable pay as an annual cost of the Ltd route.",
     "Step 5, verdict. Sole-trader total value (net cash plus pension employer value) against Ltd net cash. The tool reports which route is ahead and by how much a year.",
   ],
   faqs: [
@@ -242,7 +242,7 @@ export const associateIncorporationPageCopy = {
     {
       question: "How much NHS Pension value does incorporation actually give up?",
       answer:
-        "The employer side of the scheme is worth roughly 20.68% of your pensionable pay each year: a 20.6% employer contribution plus a 0.08% administration levy. An associate with £70,000 of pensionable NHS earnings is therefore receiving around £14,500 a year of employer-funded pension value on top of fee income. That is the benchmark any incorporation tax saving has to beat, and on typical NHS-weighted figures it does not come close.",
+        "The employer side of the scheme is worth roughly 23.78% of your pensionable pay each year: a 23.7% employer contribution (in force from 1 April 2024, up from 20.6%) plus a 0.08% administration levy. An associate with £70,000 of pensionable NHS earnings is therefore receiving around £16,650 a year of employer-funded pension value on top of fee income. That is the benchmark any incorporation tax saving has to beat, and on typical NHS-weighted figures it does not come close.",
     },
     {
       question: "When does a limited company still make sense for an associate?",
@@ -255,9 +255,9 @@ export const associateIncorporationPageCopy = {
         "It can, and it is a separate risk on top of the pension cost. If an engagement would look like employment without the company in the way, the off-payroll rules can apply, PAYE is due on the fee, and the dividend planning that produces the tax saving disappears while the pension is still lost. Associate agreements drafted on standard BDA terms usually support self-employment, but status depends on working practices, not paperwork.",
     },
     {
-      question: "Are the 20.6% and 0.08% figures fixed?",
+      question: "Are the 23.7% and 0.08% figures fixed?",
       answer:
-        "No. Employer-side NHS Pension rates are set by the Department of Health and Social Care and move between scheme years, and how the employer cost is met for dental practitioners depends on the commissioning arrangements. The tool uses the 20.6% employer contribution plus the 0.08% administration levy as a reasonable current estimate of the employer-equivalent value; the strategic conclusion is not sensitive to a point or two either way, but check the current NHSBSA rates before making a final decision.",
+        "No. Employer-side NHS Pension rates are set by the Department of Health and Social Care and move between scheme years, and how the employer cost is met for dental practitioners depends on the commissioning arrangements. The employer contribution rate rose from 20.6% to 23.7% on 1 April 2024. The tool uses the 23.7% employer contribution plus the 0.08% administration levy as a reasonable current estimate of the employer-equivalent value; the strategic conclusion is not sensitive to a point or two either way, but check the current NHSBSA rates before making a final decision.",
     },
     {
       question: "Should I use my Compass or ARR figure for pensionable earnings?",

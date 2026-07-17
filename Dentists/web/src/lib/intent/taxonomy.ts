@@ -44,6 +44,7 @@
 
 export type TopicKey =
   | "associate"
+  | "associate-incorporation"
   | "principal"
   | "buying"
   | "selling"
@@ -72,6 +73,14 @@ export const TOPICS: Topic[] = [
     primaryCalculator: "associate-take-home",
     ctaCopy: "Calculate your take-home pay as a dental associate or locum",
     resourceId: "associate",
+  },
+  {
+    key: "associate-incorporation",
+    label: "Associate incorporation: sole trader vs limited company",
+    blogCategorySlugs: ["associate-incorporation"],
+    primaryCalculator: null,
+    ctaCopy: "Model the NHS Pension cost of incorporating as a dental associate",
+    resourceId: "associate-incorporation",
   },
   {
     key: "principal",

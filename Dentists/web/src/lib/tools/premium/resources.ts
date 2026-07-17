@@ -23,13 +23,14 @@ export interface TopicResource {
 }
 
 export const TOPIC_RESOURCES: Record<TopicKey, TopicResource> = {
-  "associate":   { toolId: "associate-take-home-premium" },
-  "principal":   { toolId: "principal-extraction-premium" },
-  "buying":      { toolId: "practice-purchase-premium" },
-  "selling":     { toolId: "practice-sale-premium" },
-  "nhs":         { toolId: "uda-nhs-premium" },
-  "uda-calc":    { toolId: "uda-nhs-premium" },
-  "compliance":  { toolId: "" },
+  "associate":               { toolId: "associate-take-home-premium" },
+  "associate-incorporation": { toolId: "associate-incorporation-premium" },
+  "principal":               { toolId: "principal-extraction-premium" },
+  "buying":                  { toolId: "practice-purchase-premium" },
+  "selling":                 { toolId: "practice-sale-premium" },
+  "nhs":                     { toolId: "uda-nhs-premium" },
+  "uda-calc":                { toolId: "uda-nhs-premium" },
+  "compliance":              { toolId: "" },
 };
 
 /** Returns the TopicResource for a topic, or null when the topic is not in the map. */

@@ -59,6 +59,19 @@ export interface CategoryResource {
 }
 
 export const RESOURCES: Record<TopicKey, CategoryResource> = {
+  "associate-incorporation": {
+    topic: "associate-incorporation",
+    toolId: "associate-incorporation-premium",
+    xlsx: null,
+    guide: {
+      slug: "associate-incorporation",
+      label: "Associate incorporation decision guide: sole trader vs Ltd with the NHS Pension cost",
+      enabled: true,
+    },
+    magnetTitle: "Get the associate incorporation decision guide",
+    magnetBlurbTemplate:
+      "Sole trader vs limited company for dental associates at 2026/27 rates, with the NHS Pension employer value priced in. The figure generic incorporation calculators leave out.",
+  },
   associate: {
     topic: "associate",
     toolId: "associate-take-home-premium",

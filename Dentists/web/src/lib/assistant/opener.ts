@@ -25,6 +25,7 @@ export const OPENER_LLM_ENRICHMENT_ENABLED = false;
 /** One short noun for each topic, slotted into fallback templates. */
 export const TOPIC_NOUN: Record<TopicKey, string> = {
   associate: "your take-home",
+  "associate-incorporation": "incorporation vs sole trader",
   principal: "your profit extraction",
   buying: "buying a practice",
   selling: "selling your practice",
@@ -42,6 +43,11 @@ export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
     "Working out what you keep as an associate? I can pull up the calculator that does the fiddly part.",
     "Want a hand comparing your take-home as a sole trader, or as a locum through a company? Happy to point you to it.",
     "A free call with a specialist will confirm the most tax-efficient way to work as an associate, want me to set one up?",
+  ],
+  "associate-incorporation": [
+    "Weighing up incorporation? The NHS Pension side is the part most calculators skip. I can point you to the tool that includes it.",
+    "Want to see whether a limited company actually saves you money once the NHS Pension cost is counted? The calculator does both sides.",
+    "A specialist can run the sole trader vs limited company numbers for your specific book of fees, free first call, want me to set one up?",
   ],
   principal: [
     "Sorting how to take your practice profit? I can point you to the planner in a second.",

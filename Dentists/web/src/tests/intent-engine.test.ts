@@ -61,6 +61,7 @@ const ALL_CONTENT_CATEGORY_SLUGS = [
   // associate-related
   "associate-tax",
   "locum-tax",
+  "associate-incorporation",
   // principal-related
   "practice-accounting",
   "practice-finance",

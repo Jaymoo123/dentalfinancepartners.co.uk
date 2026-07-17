@@ -16,8 +16,9 @@
  *   - CT 19% small profits (≤£50,000), 26.5% marginal relief band, 25% main (≥£250,000)
  *   - Optimal director salary £12,570 (uses PA; no income tax or employee NI;
  *     employer NI £1,135.50, no Employment Allowance for single-director companies)
- *   - NHS Pension employer-equivalent value: 20.6% employer contribution rate
- *     plus 0.08% administration levy = 20.68% of pensionable earnings. This is the
+ *   - NHS Pension employer-equivalent value: 23.7% employer contribution rate
+ *     (from 1 April 2024, up from 20.6%) plus 0.08% administration levy
+ *     = 23.78% of pensionable earnings. This is the
  *     employer-side benefit a type-1 practitioner member receives that a
  *     Ltd-company associate generally forgoes. Rate vintages vary by scheme
  *     year and arrangement — treated as an estimate and flagged in tool copy.
@@ -57,8 +58,8 @@ const CT_MAIN_RATE = 0.25;
 const CT_MARGINAL_RATE = 0.265;
 const LTD_ADMIN_COST = 1800;
 const DIRECTOR_SALARY = 12570;
-/** 20.6% employer contribution + 0.08% administration levy on pensionable pay. */
-export const NHS_EMPLOYER_EQUIV_RATE = 0.2068;
+/** 23.7% employer contribution (from 1 Apr 2024) + 0.08% administration levy on pensionable pay. */
+export const NHS_EMPLOYER_EQUIV_RATE = 0.2378;
 
 function calcIncomeTax(taxable: number): number {
   let pa = PERSONAL_ALLOWANCE;
