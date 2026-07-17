@@ -29,6 +29,10 @@
  *   dividend-tax-calculator
  *   corporation-tax-calculator
  *   contractor-salary-dividend-calculator
+ *   umbrella-take-home-calculator
+ *   contractor-day-rate-calculator
+ *   managed-service-company-risk-checker
+ *   ir35-status-indicator
  *
  * /for/[slug] types from src/data/contractor-types.ts (10 types):
  *   it-contractors, engineering-contractors, finance-contractors,
@@ -125,18 +129,26 @@ export const TOPICS: Topic[] = [
  * calculator is added (registry.ts). Unmapped calculators resolve to null and
  * fall back to the generic experience.
  *
- * All 6 slugs from registry.ts are mapped:
- *   outside-ir35-take-home-calculator  -> ir35
- *   inside-ir35-take-home-calculator   -> ir35  (same intent: IR35 financial impact)
- *   umbrella-vs-limited-calculator     -> structure
- *   dividend-tax-calculator            -> pay-planning
- *   corporation-tax-calculator         -> company-tax
+ * All 10 slugs from registry.ts are mapped:
+ *   outside-ir35-take-home-calculator     -> ir35
+ *   inside-ir35-take-home-calculator      -> ir35  (same intent: IR35 financial impact)
+ *   ir35-status-indicator                 -> ir35  (status check drives take-home curiosity)
+ *   umbrella-vs-limited-calculator        -> structure
+ *   umbrella-take-home-calculator         -> structure  (umbrella-specific take-home)
+ *   managed-service-company-risk-checker  -> structure  (MSC risk is a structure decision)
+ *   contractor-day-rate-calculator        -> structure  (day-rate → net underpins the choice)
+ *   dividend-tax-calculator               -> pay-planning
+ *   corporation-tax-calculator            -> company-tax
  *   contractor-salary-dividend-calculator -> pay-planning
  */
 export const CALC_SLUG_TO_TOPIC: Record<string, TopicKey> = {
   "outside-ir35-take-home-calculator": "ir35",
   "inside-ir35-take-home-calculator": "ir35",
+  "ir35-status-indicator": "ir35",
   "umbrella-vs-limited-calculator": "structure",
+  "umbrella-take-home-calculator": "structure",
+  "managed-service-company-risk-checker": "structure",
+  "contractor-day-rate-calculator": "structure",
   "dividend-tax-calculator": "pay-planning",
   "corporation-tax-calculator": "company-tax",
   "contractor-salary-dividend-calculator": "pay-planning",
@@ -163,6 +175,52 @@ export const FOR_SLUG_TO_TOPIC: Record<string, TopicKey> = {
   "marketing-contractors": "ir35",
   "construction-contractors": "basics-expenses",
 };
+
+/**
+ * Blog category slug -> early tool island (calculator registry slug).
+ * Consumed by BlogPostRenderer via earlyToolForBlogSlug().
+ *
+ * Category -> tool rationale:
+ *   ir35-status              -> ir35-status-indicator
+ *     The reader is trying to understand their IR35 position; the status
+ *     indicator gives an immediate directional answer before they read on.
+ *   umbrella-vs-limited-company -> contractor-day-rate-calculator
+ *     Day-rate-to-net is the first number readers need before they can
+ *     evaluate umbrella vs limited; umbrella-vs-limited-calculator lands
+ *     mid-article via PremiumUpgrade (avoids duplicate tool card).
+ *   limited-company-tax      -> contractor-salary-dividend-calculator
+ *     Ltd company posts are about optimising pay; the salary/dividend
+ *     tool is the natural first step.
+ *   pension-and-dividends    -> dividend-tax-calculator
+ *     Dividend-tax is the entry-level number for pay-planning readers.
+ *   mtd-and-compliance       -> corporation-tax-calculator
+ *     Compliance posts cover CT filing; the corp-tax estimator gives the
+ *     number they are filing around.
+ *   contractor-accounting-basics -> contractor-day-rate-calculator
+ *     Basics readers are early-stage; day-rate-to-net is the most
+ *     universally relevant starting calculation.
+ *   expenses-and-deductions  -> contractor-day-rate-calculator
+ *     Expense readers want to know how deductions move their net; day-rate
+ *     calc is the closest available proxy.
+ *
+ * MSC posts do not form a standalone category; managed-service-company-risk-checker
+ * is linked from ir35-status-indicator's related tools list.
+ * umbrella-take-home-calculator: no matching blog category; accessible from
+ * umbrella-vs-limited posts via PremiumUpgrade + related links.
+ */
+export const EARLY_TOOL_BY_CATEGORY: Record<string, string> = {
+  "ir35-status": "ir35-status-indicator",
+  "umbrella-vs-limited-company": "contractor-day-rate-calculator",
+  "limited-company-tax": "contractor-salary-dividend-calculator",
+  "pension-and-dividends": "dividend-tax-calculator",
+  "mtd-and-compliance": "corporation-tax-calculator",
+  "contractor-accounting-basics": "contractor-day-rate-calculator",
+  "expenses-and-deductions": "contractor-day-rate-calculator",
+};
+
+export function earlyToolForBlogSlug(slug: string): string | null {
+  return EARLY_TOOL_BY_CATEGORY[slug] ?? null;
+}
 
 const BLOG_SLUG_TO_TOPIC: Record<string, TopicKey> = {};
 const BY_KEY: Record<string, Topic> = {};

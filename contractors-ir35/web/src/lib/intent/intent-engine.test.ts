@@ -2,7 +2,7 @@
  * Intent engine tests for contractors-ir35 (cfp).
  *
  * Covers:
- *  1. Taxonomy completeness: all 7 category slugs + 6 calc slugs + 10 /for types
+ *  1. Taxonomy completeness: all 7 category slugs + 10 calc slugs + 10 /for types
  *     resolve to valid topic keys (no null / undefined gaps).
  *  2. deriveTopic routing: blog / calculators / embed / for routes resolve correctly.
  *  3. Engine ladder: the escalation behaviour (light -> tool, engaged -> review,
@@ -48,7 +48,7 @@ describe("taxonomy completeness", () => {
     }
   });
 
-  // All 6 calculator slugs verified against lib/calculators/registry.ts
+  // All 10 calculator slugs verified against lib/calculators/registry.ts
   const EXPECTED_CALC_SLUGS = [
     "outside-ir35-take-home-calculator",
     "inside-ir35-take-home-calculator",
@@ -56,9 +56,13 @@ describe("taxonomy completeness", () => {
     "dividend-tax-calculator",
     "corporation-tax-calculator",
     "contractor-salary-dividend-calculator",
+    "umbrella-take-home-calculator",
+    "contractor-day-rate-calculator",
+    "managed-service-company-risk-checker",
+    "ir35-status-indicator",
   ];
 
-  it("all 6 calculator slugs resolve to a topic", () => {
+  it("all 10 calculator slugs resolve to a topic", () => {
     for (const slug of EXPECTED_CALC_SLUGS) {
       const key = topicForCalcSlug(slug);
       expect(key, `calc slug "${slug}" should resolve to a topic`).not.toBeNull();
@@ -66,8 +70,8 @@ describe("taxonomy completeness", () => {
     }
   });
 
-  it("CALC_SLUG_TO_TOPIC has exactly 6 entries", () => {
-    expect(Object.keys(CALC_SLUG_TO_TOPIC)).toHaveLength(6);
+  it("CALC_SLUG_TO_TOPIC has exactly 10 entries", () => {
+    expect(Object.keys(CALC_SLUG_TO_TOPIC)).toHaveLength(10);
   });
 
   // All /for/[slug] contractor types from src/data/contractor-types.ts

@@ -374,13 +374,16 @@ describe("Premium registry", () => {
 // ── resources.ts spine ───────────────────────────────────────────────────────
 
 describe("resources.ts topic spine", () => {
-  it("all 5 TopicKeys are present, gp-practice has empty toolId", async () => {
+  it("all 5 TopicKeys are present with Phase 4 tool mapping", async () => {
     const { TOPIC_RESOURCES, resourceForTopic } = await import("./resources");
-    expect(TOPIC_RESOURCES["nhs-pension"].toolId).toBe("nhs-pension-premium");
+    // Phase 4: nhs-superannuation-tiered-contribution is broadest-reach for NHS pension posts
+    expect(TOPIC_RESOURCES["nhs-pension"].toolId).toBe("nhs-superannuation-tiered-contribution");
     expect(TOPIC_RESOURCES["locum"].toolId).toBe("locum-take-home-premium");
-    expect(TOPIC_RESOURCES["gp-tax"].toolId).toBe("locum-take-home-premium");
+    // Phase 4: salaried-gp-vs-partner replaces locum-take-home-premium for gp-tax
+    expect(TOPIC_RESOURCES["gp-tax"].toolId).toBe("salaried-gp-vs-partner");
     expect(TOPIC_RESOURCES["incorporation-private"].toolId).toBe("incorporation-premium");
-    expect(TOPIC_RESOURCES["gp-practice"].toolId).toBe("");
+    // Phase 4: gp-partner-drawings-planner wired for gp-practice (was empty)
+    expect(TOPIC_RESOURCES["gp-practice"].toolId).toBe("gp-partner-drawings-planner");
     expect(resourceForTopic(null)).toBeNull();
     expect(resourceForTopic(undefined)).toBeNull();
   });

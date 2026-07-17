@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { BlogPost } from "@/types/blog";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
+import { ToolIsland } from "@/components/blog/ToolIsland";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
 import { buildBlogPostingJsonLd, buildFaqJsonLd } from "@/lib/schema";
 import { siteContainerLg } from "@/components/ui/layout-utils";
@@ -12,8 +13,14 @@ import { TableOfContents } from "@accounting-network/web-shared/content/TableOfC
 import { ReadingProgress } from "@accounting-network/web-shared/content/ReadingProgress";
 import { extractHeadings } from "@/lib/markdown-utils";
 import { calculateReadTime } from "@/lib/blog";
-import { topicForBlogSlug } from "@/lib/intent/taxonomy";
+import { topicForBlogSlug, earlyToolForBlogSlug } from "@/lib/intent/taxonomy";
+import { getGenericTool } from "@/lib/calculators/registry";
 import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
+import {
+  splitContentEarly,
+  splitRemainderForGate,
+  splitContentAtMidScroll,
+} from "@accounting-network/web-shared/content/blog-splits";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -27,31 +34,25 @@ function formatUkDate(isoDate: string): string {
   return d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 }
 
-/**
- * Split HTML content at roughly the 60% scroll point (after the 3rd or 4th h2)
- * so InlineMiniLeadForm lands mid-article. Falls back to the full article with
- * no split when there are fewer than 4 headings (short posts).
- */
-function splitContentAtMidScroll(html: string): { before: string; after: string | null } {
-  const headings = [...html.matchAll(/<h2[^>]*>/g)];
-  if (headings.length < 4) {
-    return { before: html, after: null };
-  }
-  const targetIdx = Math.floor(headings.length * 0.6);
-  const target = headings[targetIdx];
-  if (target?.index === undefined) {
-    return { before: html, after: null };
-  }
-  return { before: html.slice(0, target.index), after: html.slice(target.index) };
-}
-
 export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostRendererProps) {
   const headings = extractHeadings(post.contentHtml);
   const readTime = calculateReadTime(post.contentHtml);
-  const midSplit = splitContentAtMidScroll(post.contentHtml);
+
   // Resolve the topic using the SLUG (not the human label post.category).
   // Used for R2 premium island injection (PremiumUpgrade below).
   const premiumTopic = topicForBlogSlug(categorySlug);
+
+  // 3-moment capture architecture:
+  //   Moment 1: early tool island after the first h2 (earlyToolForBlogSlug -> ToolIsland)
+  //   Moment 2: InlineMiniLeadForm (mid qualified form) + PremiumUpgrade at ~60%
+  //   Moment 3: LeadForm at end of article (unchanged)
+  // Unmapped categories fall back to the mid-scroll InlineMiniLeadForm only (moments 2+3).
+  const earlyToolSlug = earlyToolForBlogSlug(categorySlug);
+  const earlyTool = earlyToolSlug ? getGenericTool(earlyToolSlug) : undefined;
+  const earlySplit = earlyTool ? splitContentEarly(post.contentHtml) : null;
+  const gateSplit = earlySplit ? splitRemainderForGate(earlySplit.after) : null;
+  // ponytail: fallback only computed when earlySplit is null (unmapped category)
+  const fallbackSplit = earlySplit ? null : splitContentAtMidScroll(post.contentHtml);
   const jsonLd =
     post.schema?.trim() ||
     buildBlogPostingJsonLd(post, `/blog/${categorySlug}/${post.slug}`);
@@ -214,31 +215,61 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 <TableOfContents headings={headings} />
               </div>
 
-              <div className="article-body prose-blog mt-10"
-                dangerouslySetInnerHTML={{ __html: midSplit.before }}
-              />
-              {midSplit.after !== null ? (
-                <>
-                  {/* Mid-scroll: qualified capture (MiniCapture) + PremiumUpgrade at ~60%.
-                      Email-unlock ResourceGate retired 2026-07-18 (estate-wide de-gate). */}
-                  <InlineMiniLeadForm topic={post.category} />
-                  <PremiumUpgrade
-                    topic={premiumTopic}
-                    placement="blog"
-                    category={categorySlug}
-                  />
-                  <div className="article-body prose-blog"
-                    dangerouslySetInnerHTML={{ __html: midSplit.after }}
-                  />
-                </>
-              ) : (
-                /* Short post fallback: inject PremiumUpgrade at end of body */
-                <PremiumUpgrade
-                  topic={premiumTopic}
-                  placement="blog"
-                  category={categorySlug}
-                />
-              )}
+              <div className="article-body prose-blog mt-10">
+                {earlyTool && earlySplit ? (
+                  <>
+                    {/* Moment 1: early tool island after the first h2. */}
+                    <div dangerouslySetInnerHTML={{ __html: earlySplit.before }} />
+                    <ToolIsland tool={earlyTool} />
+                    {gateSplit?.after ? (
+                      <>
+                        {/* Moment 2: mid qualified form + PremiumUpgrade at ~60% of remainder. */}
+                        <div dangerouslySetInnerHTML={{ __html: gateSplit.before }} />
+                        <InlineMiniLeadForm topic={post.category} />
+                        <PremiumUpgrade
+                          topic={premiumTopic}
+                          placement="blog"
+                          category={categorySlug}
+                        />
+                        <div dangerouslySetInnerHTML={{ __html: gateSplit.after }} />
+                      </>
+                    ) : (
+                      /* Short remainder: qualified form + PremiumUpgrade directly under tool. */
+                      <>
+                        <InlineMiniLeadForm topic={post.category} />
+                        <PremiumUpgrade
+                          topic={premiumTopic}
+                          placement="blog"
+                          category={categorySlug}
+                        />
+                        <div dangerouslySetInnerHTML={{ __html: earlySplit.after }} />
+                      </>
+                    )}
+                  </>
+                ) : (
+                  /* Unmapped category fallback: mid-scroll InlineMiniLeadForm + PremiumUpgrade. */
+                  <>
+                    <div dangerouslySetInnerHTML={{ __html: fallbackSplit!.before }} />
+                    {fallbackSplit!.after !== null ? (
+                      <>
+                        <InlineMiniLeadForm topic={post.category} />
+                        <PremiumUpgrade
+                          topic={premiumTopic}
+                          placement="blog"
+                          category={categorySlug}
+                        />
+                        <div dangerouslySetInnerHTML={{ __html: fallbackSplit!.after }} />
+                      </>
+                    ) : (
+                      <PremiumUpgrade
+                        topic={premiumTopic}
+                        placement="blog"
+                        category={categorySlug}
+                      />
+                    )}
+                  </>
+                )}
+              </div>
 
               {post.faqs && post.faqs.length > 0 ? (
                 <section className="mt-16" aria-labelledby="faq-heading">

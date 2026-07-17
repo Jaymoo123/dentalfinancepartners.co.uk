@@ -123,7 +123,48 @@ export const CALC_SLUG_TO_TOPIC: Record<string, TopicKey> = {
   "cis-self-assessment-calculator": "self-assessment",
   "cis-take-home-calculator": "limited-company",
   "cis-vs-paye-comparison": "limited-company",
+  // Phase 4 tools
+  "cis-penalty-calculator": "gross-payment-status",
+  "cis-reverse-charge-checker": "vat-reverse-charge",
+  "trade-take-home-calculator": "cis-refund",
+  "cis-sole-trader-vs-limited": "limited-company",
 };
+
+/**
+ * Blog category slug -> early tool island (calculator slug).
+ * Moment 1 of the 3-moment blog capture architecture: a free calculator card
+ * injected after the first h2 in the article body.
+ *
+ * Category slugs are slugifyCategory() outputs (see lib/blog.ts):
+ *   "CIS Compliance"  -> "cis-compliance"
+ *   "CIS Refunds"     -> "cis-refunds"
+ *   "CIS Basics"      -> "cis-basics"
+ *   "CIS Advanced"    -> "cis-advanced"
+ *   "VAT and MTD"     -> "vat-and-mtd"
+ *   "Expenses"        -> "expenses"
+ *   "Limited Company" -> "limited-company"
+ *
+ * Mapping rationale:
+ *   cis-compliance / cis-advanced -> cis-penalty-calculator (GPS + compliance posts)
+ *   cis-refunds / cis-basics      -> cis-refund-estimator   (refund-intent posts)
+ *   vat-and-mtd                   -> cis-reverse-charge-checker
+ *   expenses                      -> trade-take-home-calculator (take-home is the payoff of expense control)
+ *   limited-company               -> cis-sole-trader-vs-limited
+ *   software-and-tools            -> null (unmapped; fallback fires)
+ */
+export const EARLY_TOOL_BY_CATEGORY: Record<string, string> = {
+  "cis-compliance": "cis-penalty-calculator",
+  "cis-advanced": "cis-penalty-calculator",
+  "cis-refunds": "cis-refund-estimator",
+  "cis-basics": "cis-refund-estimator",
+  "vat-and-mtd": "cis-reverse-charge-checker",
+  "expenses": "trade-take-home-calculator",
+  "limited-company": "cis-sole-trader-vs-limited",
+};
+
+export function earlyToolForBlogSlug(slug: string): string | null {
+  return EARLY_TOOL_BY_CATEGORY[slug] ?? null;
+}
 
 const BLOG_SLUG_TO_TOPIC: Record<string, TopicKey> = {};
 const BY_KEY: Record<string, Topic> = {};
