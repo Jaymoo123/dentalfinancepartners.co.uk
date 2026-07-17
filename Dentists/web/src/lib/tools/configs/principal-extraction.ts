@@ -7,11 +7,11 @@ export const principalExtractionTool: GenericTool = {
   slug: "principal-extraction",
   name: "Principal Extraction Calculator",
   category: "Practice accounting",
-  oneLiner: "Partnership vs limited company on principal profit. Pension contribution input and NHS Pension impact flag. 2025/26 rates.",
+  oneLiner: "Partnership vs limited company on principal profit. Pension contribution input and NHS Pension impact flag. 2026/27 rates.",
   embedHeight: 500,
-  metaTitle: "Dental Principal Extraction Calculator UK 2025/26 | Partnership vs Ltd",
+  metaTitle: "Dental Principal Extraction Calculator UK 2026/27 | Partnership vs Ltd",
   metaDescription:
-    "Compare partnership and limited company profit extraction for UK dental principals at 2025/26 rates. NHS Pension impact included.",
+    "Compare partnership and limited company profit extraction for UK dental principals at 2026/27 rates. NHS Pension impact included.",
   intro:
     "Compare partnership (sole trader) versus limited company profit extraction as a dental principal. Enter your practice profit, any pension contribution, and whether you are an active NHS Pension Scheme member. The calculator highlights which structure comes out ahead on tax alone and flags the NHS Pension consideration.",
   fields: [
@@ -62,13 +62,13 @@ export const principalExtractionTool: GenericTool = {
         { label: "Limited company total tax and admin", value: gbp(r.ltd.tax) },
         { label: "Difference", value: gbp(diff), strong: true },
       ],
-      note: "Indicative UK 2025/26 model. Partnership = sole trader for tax purposes for a single principal. Ltd-co assumes £12,570 director salary plus balance as dividend, £2,500 admin cost, no Employment Allowance. Does NOT cost the NHS Pension accrual loss from incorporation.",
+      note: "Indicative UK 2026/27 model. Partnership = sole trader for tax purposes for a single principal. Ltd-co assumes £12,570 director salary plus balance as dividend, £2,500 admin cost, no Employment Allowance. Does NOT cost the NHS Pension accrual loss from incorporation.",
     };
   },
   explainer: {
     heading: "How this works",
     paragraphs: [
-      "The partnership model treats the principal as a sole trader: profit after any pension contribution is subject to income tax (standard 2025/26 bands) and Class 2/4 NI.",
+      "The partnership model treats the principal as a sole trader: profit after any pension contribution is subject to income tax (standard 2026/27 bands) and Class 2/4 NI.",
       "The limited company model pays a £12,570 director salary (at the NI primary threshold), deducts employer NI, runs the remaining profit through corporation tax (19% small profits rate, 25% main rate, marginal relief between £50,000 and £250,000), then extracts the net-of-CT amount as dividends.",
       "Critical: this model does NOT value the NHS Pension accrual loss for incorporated principals. For an NHS-active principal with 10 or more years of service ahead, the lost pension accrual on the dividend portion can outweigh the headline tax saving. The actuarial pension position needs separate modelling.",
     ],

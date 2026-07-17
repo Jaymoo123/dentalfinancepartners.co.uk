@@ -14,6 +14,7 @@
 
 import { describe, it, expect } from "vitest";
 import { calcAssociateTakeHome } from "./associate-take-home";
+import { calcEquipmentCapitalAllowance } from "./equipment-capital-allowance";
 import { calcLocumStructure } from "./locum-structure";
 import { calcPracticeValuation } from "./practice-valuation";
 import { calcPrincipalExtraction } from "./principal-extraction";
@@ -342,3 +343,42 @@ describe("calcUdaValue — zero UDAs edge case", () => {
 // Verified by: grep the compute/ directory for these strings (grep returns no hits).
 // Captured here as a documentation note; actual enforcement is the TL-03 grep
 // verify line at acceptance.
+
+// ── EquipmentCapitalAllowance (new tool, FA 2026) ────────────────────────
+// Example 2 from the explainer: Ltd 25%, main 1,100,000, special 300,000, new, AIA 1,000,000
+// AIA: special 300,000 then main 700,000 → AIA 1,000,000
+// mainExcess 400,000 → FYA 40% = 160,000; pool 240,000 (no y1 WDA on FYA balance)
+// year1 = 1,160,000; saving = 290,000
+// y2 = 240,000*0.14 = 33,600; y3 = 206,400*0.14 = 28,896; y4 = 177,504*0.14 = 24,850.56
+// 4yr allowances = 1,247,346.56; saving = 311,836.64
+
+describe("calcEquipmentCapitalAllowance — AIA-exhausted company", () => {
+  const res = calcEquipmentCapitalAllowance(1100000, 300000, "ltd25", true, 1000000);
+
+  it("aiaOnSpecial", () => expect(res.aiaOnSpecial).toBe(300000));
+  it("aiaOnMain", () => expect(res.aiaOnMain).toBe(700000));
+  it("fyaClaim", () => expect(res.fyaClaim).toBe(160000));
+  it("year1Allowances", () => expect(res.year1Allowances).toBe(1160000));
+  it("year1TaxSaving", () => expect(res.year1TaxSaving).toBe(290000));
+  it("fourYearAllowances", () => expect(res.fourYearAllowances).toBeCloseTo(1247346.56, 1));
+  it("fourYearTaxSaving", () => expect(res.fourYearTaxSaving).toBeCloseTo(311836.64, 1));
+});
+
+describe("calcEquipmentCapitalAllowance — sole trader, no FYA", () => {
+  // main 100,000, special 0, AIA only 50,000 available, higher rate 40%
+  // AIA 50,000; mainExcess 50,000 → no FYA → y1 WDA 7,000; y1 = 57,000; saving 22,800
+  const res = calcEquipmentCapitalAllowance(100000, 0, "st40", true, 50000);
+
+  it("no FYA for unincorporated", () => expect(res.fyaClaim).toBe(0));
+  it("year1Wda at 14%", () => expect(res.year1Wda).toBeCloseTo(7000, 2));
+  it("year1TaxSaving", () => expect(res.year1TaxSaving).toBeCloseTo(22800, 2));
+});
+
+describe("calcEquipmentCapitalAllowance — default within AIA", () => {
+  // main 80,000 + special 20,000, Ltd 25%, all inside AIA → year1 = 100,000, saving 25,000
+  const res = calcEquipmentCapitalAllowance(80000, 20000, "ltd25", true, 1000000);
+
+  it("all AIA", () => expect(res.aiaTotal).toBe(100000));
+  it("year1TaxSaving", () => expect(res.year1TaxSaving).toBe(25000));
+  it("nothing unrelieved", () => expect(res.unrelievedAfterFourYears).toBe(0));
+});

@@ -11,6 +11,7 @@
  * Storage prefix: dfp (FROZEN). Grid keys: dfp:grid:<toolId>.
  */
 import type { PremiumToolConfig } from "./types";
+import { associateIncorporationConfig } from "./configs/associate-incorporation";
 import { associateTakeHomeConfig } from "./configs/associate-take-home";
 import { principalExtractionConfig } from "./configs/principal-extraction";
 import { practicePurchaseConfig } from "./configs/practice-purchase";
@@ -23,6 +24,7 @@ import { udaNhsConfig } from "./configs/uda-nhs";
  */
 export const PREMIUM_TOOLS: Record<string, PremiumToolConfig> = {
   "associate-take-home-premium": associateTakeHomeConfig,
+  "associate-incorporation-premium": associateIncorporationConfig,
   "principal-extraction-premium": principalExtractionConfig,
   "practice-purchase-premium": practicePurchaseConfig,
   "practice-sale-premium": practiceSaleConfig,

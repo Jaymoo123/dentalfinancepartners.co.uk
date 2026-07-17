@@ -1,11 +1,11 @@
 /**
- * UDA Value compute lib — UK NHS dental 2025/26
+ * UDA Value compute lib — UK NHS dental 2026/27
  *
  * Pure functions only: no React, no window, no document, no fetch.
  * Extracted from UdaValueCalculator.tsx — golden tests pin the output.
  *
  * Figures sourced:
- *   - UDA benchmark ranges: indicative 2025/26 NHS dental contract data.
+ *   - UDA benchmark ranges: indicative 2026/27 NHS dental contract data.
  *     England: £25–£35 (GDS contract), Wales: £25–£38 (revised contract),
  *     NI: £21–£32 (HS dental).
  *   - CPI proxy: 2.5% per year (simplified; actual CPI has been higher).

@@ -7,13 +7,13 @@ export const associateTakeHomeTool: GenericTool = {
   slug: "associate-take-home",
   name: "Associate Take-Home Calculator",
   category: "Associate tax",
-  oneLiner: "Net annual take-home for a sole-trader associate. Fee split, lab fees, NHS Pension and expenses at 2025/26 rates.",
+  oneLiner: "Net annual take-home for a sole-trader associate. Fee split, lab fees, NHS Pension and expenses at 2026/27 rates.",
   embedHeight: 540,
-  metaTitle: "Associate Dentist Take-Home Calculator UK 2025/26",
+  metaTitle: "Associate Dentist Take-Home Calculator UK 2026/27",
   metaDescription:
-    "Net annual take-home for UK associate dentists. Fee split, lab fees, NHS Pension contribution and deductible expenses modelled at 2025/26 rates.",
+    "Net annual take-home for UK associate dentists. Fee split, lab fees, NHS Pension contribution and deductible expenses modelled at 2026/27 rates.",
   intro:
-    "Enter your gross fees, split percentage, lab fee deduction, expenses and NHS Pension contribution. The calculator applies 2025/26 income tax and NI to give your estimated net take-home as a sole-trader associate.",
+    "Enter your gross fees, split percentage, lab fee deduction, expenses and NHS Pension contribution. The calculator applies 2026/27 income tax and NI to give your estimated net take-home as a sole-trader associate.",
   fields: [
     {
       id: "grossFees",
@@ -86,14 +86,14 @@ export const associateTakeHomeTool: GenericTool = {
         { label: "Class 2 NI", value: gbp(r.class2Ni) },
         { label: "Total tax and NI", value: gbp(r.totalTax), strong: true },
       ],
-      note: "Estimate uses UK 2025/26 income tax and NI rates for sole-trader associates. Excludes student loan repayments, Marriage Allowance, and other personal reliefs.",
+      note: "Estimate uses UK 2026/27 income tax and NI rates for sole-trader associates. Excludes student loan repayments, Marriage Allowance, and other personal reliefs.",
     };
   },
   explainer: {
     heading: "How this works",
     paragraphs: [
       "The calculator starts with your gross fees and applies your split percentage to get your associate share. Lab fees (as a percentage of your gross, pro-rated to your split) are then deducted, followed by your other deductible expenses and NHS Pension contribution.",
-      "The resulting taxable profit is run through 2025/26 income tax (20% up to £50,270, 40% up to £125,140, 45% above; personal allowance £12,570 tapering above £100,000), Class 4 NI (6% on profits between £12,570 and £50,270, 2% above), and Class 2 NI at £3.45/week where profits exceed £6,725.",
+      "The resulting taxable profit is run through 2026/27 income tax (20% up to £50,270, 40% up to £125,140, 45% above; personal allowance £12,570 tapering above £100,000), Class 4 NI (6% on profits between £12,570 and £50,270, 2% above), and Class 2 NI at £3.45/week where profits exceed £6,725.",
       "NHS Pension contributions are treated as deductible from taxable profit. This is the practitioner pensions arrangement available to NHS-contract associates.",
     ],
   },

@@ -1,16 +1,16 @@
 /**
- * Associate Take-Home Pay compute lib — UK 2025/26
+ * Associate Take-Home Pay compute lib — UK 2026/27
  *
  * Pure functions only: no React, no window, no document, no fetch.
  * Extracted from AssociateTakeHomeCalculator.tsx — golden tests pin the output.
  *
  * Figures sourced:
- *   - PA £12,570 — HMRC Personal Allowance 2025/26
- *   - Basic rate 20% up to £50,270 — HMRC income tax bands 2025/26
- *   - Higher rate 40% up to £125,140 — HMRC income tax bands 2025/26
- *   - Additional rate 45% above £125,140 — HMRC income tax bands 2025/26
- *   - Class 4 NI 6% (£12,570–£50,270), 2% above — HMRC NI 2025/26
- *   - Class 2 NI £3.45/week (52 weeks) where profit > £6,725 — HMRC NI 2025/26
+ *   - PA £12,570 — HMRC Personal Allowance 2026/27 (unchanged from 2025/26)
+ *   - Basic rate 20% up to £50,270 — HMRC income tax bands 2026/27 (unchanged)
+ *   - Higher rate 40% up to £125,140 — HMRC income tax bands 2026/27 (unchanged)
+ *   - Additional rate 45% above £125,140 — HMRC income tax bands 2026/27 (unchanged)
+ *   - Class 4 NI 6% (£12,570–£50,270), 2% above — HMRC NI 2026/27 (unchanged)
+ *   - Class 2 NI £3.45/week (52 weeks) where profit > £6,725 — HMRC NI 2026/27
  *
  * Limitations:
  *   - Excludes student loan repayments.

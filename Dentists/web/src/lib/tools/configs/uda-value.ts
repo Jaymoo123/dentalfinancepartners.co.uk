@@ -14,11 +14,11 @@ export const udaValueTool: GenericTool = {
   slug: "uda-value",
   name: "UDA Value Calculator",
   category: "Practice accounting",
-  oneLiner: "Your effective UDA value, benchmarked against regional 2025/26 ranges, with cumulative inflation since signing.",
+  oneLiner: "Your effective UDA value, benchmarked against regional 2026/27 ranges, with cumulative inflation since signing.",
   embedHeight: 480,
-  metaTitle: "NHS UDA Value Calculator UK 2025/26 | Effective UDA Rate Benchmark",
+  metaTitle: "NHS UDA Value Calculator UK 2026/27 | Effective UDA Rate Benchmark",
   metaDescription:
-    "Calculate your effective NHS UDA value and benchmark it against 2025/26 UK regional ranges. Real value adjusted for CPI since your contract was signed.",
+    "Calculate your effective NHS UDA value and benchmark it against 2026/27 UK regional ranges. Real value adjusted for CPI since your contract was signed.",
   intro:
     "Enter your annual UDA volume, contract value, the year your contract was last signed or restructured, and your region. The calculator shows your effective UDA rate, how it compares to current benchmarks, and the real value after adjusting for inflation since signing.",
   fields: [
@@ -87,7 +87,7 @@ export const udaValueTool: GenericTool = {
         { label: "Cumulative CPI proxy since signing", value: pct(r.cumulativeCpi * 100) },
         { label: "Years since signed", value: String(r.yearsSinceSigned) },
       ],
-      note: "Effective UDA value = contract value divided by UDA volume. Benchmark ranges are 2025/26 indicative; actual rates vary by commissioner and individual contract. Real value uses a 2.5% annual CPI proxy — actual UK CPI has been higher in some years.",
+      note: "Effective UDA value = contract value divided by UDA volume. Benchmark ranges are 2026/27 indicative; actual rates vary by commissioner and individual contract. Real value uses a 2.5% annual CPI proxy — actual UK CPI has been higher in some years.",
     };
   },
   explainer: {
@@ -95,7 +95,7 @@ export const udaValueTool: GenericTool = {
     paragraphs: [
       "Your effective UDA value is simply your annual contract value divided by your annual UDA volume. This is the most useful number for comparing across practices and contract years, because the headline UDA numbers vary widely by region and year of signing.",
       "The real value calculation adjusts your effective UDA rate back to current prices using a 2.5% annual CPI proxy. If your contract was signed in 2010, the real purchasing power of each UDA pound has fallen by roughly 48 percent by 2026 at 2.5% annually.",
-      "The benchmark ranges show the typical 2025/26 NHS dental UDA rates in your region. Being below the benchmark indicates your contract may be undervalued relative to current new contracts in your area.",
+      "The benchmark ranges show the typical 2026/27 NHS dental UDA rates in your region. Being below the benchmark indicates your contract may be undervalued relative to current new contracts in your area.",
     ],
   },
   faqs: [

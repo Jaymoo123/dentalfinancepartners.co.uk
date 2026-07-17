@@ -7,11 +7,11 @@ export const locumStructureTool: GenericTool = {
   slug: "locum-structure",
   name: "Locum Structure Comparison",
   category: "Associate tax",
-  oneLiner: "Sole trader vs limited company vs umbrella on your day rate. Annual net comparison with the winning structure highlighted. 2025/26 rates.",
+  oneLiner: "Sole trader vs limited company vs umbrella on your day rate. Annual net comparison with the winning structure highlighted. 2026/27 rates.",
   embedHeight: 520,
-  metaTitle: "Dental Locum Structure Calculator UK 2025/26 | Sole Trader vs Ltd vs Umbrella",
+  metaTitle: "Dental Locum Structure Calculator UK 2026/27 | Sole Trader vs Ltd vs Umbrella",
   metaDescription:
-    "Compare sole trader, limited company and umbrella net take-home for UK dental locums at 2025/26 tax rates. Day rate, days per year and expenses.",
+    "Compare sole trader, limited company and umbrella net take-home for UK dental locums at 2026/27 tax rates. Day rate, days per year and expenses.",
   intro:
     "Enter your day rate, days worked per year and annual deductible expenses. The calculator compares sole-trader, limited company and umbrella structures side by side and highlights the winning option on current-year net take-home.",
   fields: [
@@ -72,7 +72,7 @@ export const locumStructureTool: GenericTool = {
         { label: "Umbrella net", value: gbp(r.umbrella.net), strong: winner.name === "Umbrella" },
         { label: "Umbrella total deductions", value: gbp(r.umbrella.tax) },
       ],
-      note: "Indicative UK 2025/26 model. Ltd-co assumes £12,570 salary plus remainder as dividend, £1,800 admin cost, no Employment Allowance. Umbrella assumes 5% margin. NHS Pension and IR35 implications not modelled.",
+      note: "Indicative UK 2026/27 model. Ltd-co assumes £12,570 salary plus remainder as dividend, £1,800 admin cost, no Employment Allowance. Umbrella assumes 5% margin. NHS Pension and IR35 implications not modelled.",
     };
   },
   explainer: {
