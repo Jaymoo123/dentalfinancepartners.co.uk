@@ -168,6 +168,12 @@ export function MiniCapture({
     if (typeof window !== "undefined") setSourceUrl(window.location.href);
   }, []);
 
+  function isQaMode(): boolean {
+    if (typeof window === "undefined") return false;
+    return new URLSearchParams(window.location.search).get("qa") === "1" ||
+      localStorage.getItem("qa_mode") !== null;
+  }
+
   useEffect(() => {
     if (!multi) return;
     if (step === 1 && !step2ViewFiredRef.current) {
@@ -307,6 +313,7 @@ export function MiniCapture({
     ft.onSubmit(5);
 
     setStatus("loading");
+    const consentAt = new Date().toISOString();
     const payload = {
       full_name: s2.fullName,
       email: s2.email,
@@ -318,10 +325,10 @@ export function MiniCapture({
       submitted_at: new Date().toISOString(),
       consent_given: true,
       consent_text: consentText,
-      consent_at: new Date().toISOString(),
+      consent_at: consentAt,
       visitor_id: getVisitorId() || undefined,
       session_id: getSessionId() || undefined,
-      extras: { ...(buildRoleExtras(s1.role, s1.roleDetail) ?? {}), form_id: formId },
+      extras: { ...(buildRoleExtras(s1.role, s1.roleDetail) ?? {}), form_id: formId, ...(isQaMode() ? { qa: true } : {}) },
     };
 
     const result = await submitLead(payload, honeypotValue);
@@ -376,6 +383,7 @@ export function MiniCapture({
 
     setStatus("loading");
     const userMessage = String(data.get("message") || "").trim();
+    const consentAt = new Date().toISOString();
     const payload = {
       full_name: String(data.get("full_name") || "").trim(),
       email: String(data.get("email") || "").trim(),
@@ -387,9 +395,10 @@ export function MiniCapture({
       submitted_at: new Date().toISOString(),
       consent_given: true,
       consent_text: consentText,
-      consent_at: new Date().toISOString(),
+      consent_at: consentAt,
       visitor_id: getVisitorId() || undefined,
       session_id: getSessionId() || undefined,
+      ...(isQaMode() ? { extras: { qa: true } } : {}),
     };
 
     const result = await submitLead(payload, honeypotValue);
@@ -418,6 +427,7 @@ export function MiniCapture({
     onSuccess?.();
   }
 
+  // Consent is acknowledgement-by-submission (owner decision 2026-07-17): notice text only, no checkbox.
   const consentNotice = (
     <p className="text-xs leading-relaxed text-slate-500">
       {siteConfig.consentText} See our{" "}

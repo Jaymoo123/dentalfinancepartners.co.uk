@@ -106,15 +106,27 @@ All 4 sites emit `web_events` instrumentation. No `miniform_*` prefix events obs
 
 Query against all leads in last 60 days matching `email LIKE '%test%'`, `email LIKE '%example.com%'`, `email LIKE '%mailinator%'`, `full_name LIKE '%test%'`, `message LIKE '%test%'` returned **0 rows**.
 
-**Conclusion**: No test-lead pollution detected in the 60-day window under the current heuristics. However:
-- The leads table has no `is_test` flag or dedicated test marker column.
-- Future-proofing recommendation: add a boolean `is_test` column (default false) populated either by a pattern-match trigger or by manual flag. The email/name/message heuristic above is the current best available filter.
-- Markers to formalise for estate-wide test-lead flagging design:
-  - `email` contains: `test`, `example.com`, `mailinator`, `yopmail`, `tempmail`, `guerrillamail`, `sharklasers`
-  - `full_name` contains: `test`, `Test User`, `asdf`, `abc`
-  - `message` contains: `test`, `testing`, `ignore`
-  - `phone` patterns: `07000000000`, `07777777777`, `+447000`
-  - `source_url` contains: `localhost`, `vercel.app` preview URLs (non-prod)
+**Conclusion**: No test-lead pollution detected in the 60-day window under the current heuristics.
+
+### is_test flagging — IMPLEMENTED 2026-07-17
+
+`is_test boolean NOT NULL DEFAULT false` column added to `leads`. All conversion stats must **exclude `is_test = true` rows**:
+
+```sql
+-- Example: leads per site (QA-clean)
+SELECT source, COUNT(*) FROM leads WHERE is_test = false GROUP BY source;
+```
+
+Detection rules applied server-side at insert (both `createLeadSubmitHandler` and Property's bespoke route):
+- `email` matches `/@(test|example)\./i`
+- `email` contains `+test@`
+- `full_name` matches `/^test\b/i`
+- payload carries `qa: true` (set by client when `?qa=1` or `localStorage.qa_mode` is present)
+- `source = 'test'` (probe_secret path, already existed)
+
+QA testers: append `?qa=1` to any form URL to mark submissions as test. No notification email is sent for `is_test = true` rows.
+
+**Caveats**: rules do not catch disposable email domains (mailinator, yopmail etc.) or obviously fake names beyond the `^test` prefix. Extend `isTestLead()` in `packages/web-shared/leads/server/createLeadSubmitHandler.ts` if abuse is observed.
 
 ---
 

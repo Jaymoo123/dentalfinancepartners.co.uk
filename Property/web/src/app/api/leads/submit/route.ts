@@ -67,11 +67,19 @@ export async function POST(req: Request) {
   const message = String(body.message ?? "").trim();
   const source = (String(body.source ?? "property").trim() || "property").toLowerCase();
   const isTest = source === "test";
+  const qaFlag = body.qa === true || (body.extras as Record<string, unknown> | null)?.qa === true;
+  const isTestLead =
+    isTest ||
+    qaFlag ||
+    /@(test|example)\./i.test(email) ||
+    /\+test@/i.test(email) ||
+    /^test\b/i.test(full_name);
   // Capture mode: "email_only" relaxes validation to email + message (name/phone
   // optional) for the "Ask a specialist" widget; anything else is the full form.
   const emailOnly = String(body.captureMode ?? "full").trim() === "email_only";
 
   const baseRow = {
+    is_test: isTestLead,
     full_name,
     email,
     phone,

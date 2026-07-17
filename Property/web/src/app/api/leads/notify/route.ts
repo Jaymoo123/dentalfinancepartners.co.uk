@@ -43,6 +43,7 @@ type LeadRecord = {
   consent_text?: string;
   consent_at?: string;
   extras?: Record<string, unknown> | null;
+  is_test?: boolean;
 };
 
 type WebhookPayload = {
@@ -317,6 +318,10 @@ export async function POST(req: NextRequest) {
   const r = payload.record;
   if (!r || !r.email) {
     return NextResponse.json({ ok: false, error: "No record" }, { status: 400 });
+  }
+
+  if (r.is_test) {
+    return NextResponse.json({ ok: true, skipped: "test-lead" });
   }
 
   // Value scoring for the console's Lead Analytics page. Fire-and-forget: it

@@ -51,6 +51,15 @@ import { NextResponse } from "next/server";
 import { timingSafeEqual } from "node:crypto";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+/** Returns true when the submission looks like a QA/test lead. */
+export function isTestLead(params: { email: string; full_name: string; qa?: boolean }): boolean {
+  if (params.qa) return true;
+  if (/@(test|example)\./i.test(params.email)) return true;
+  if (/\+test@/i.test(params.email)) return true;
+  if (/^test\b/i.test(params.full_name)) return true;
+  return false;
+}
 // Field floors mirror Property/web/src/lib/leads/field-floors.ts.
 const MIN_NAME = 2;
 const MIN_PHONE_DIGITS = 10;
@@ -194,8 +203,10 @@ export function createLeadSubmitHandler(opts: LeadSubmitOptions) {
       body.extras && typeof body.extras === "object"
         ? (body.extras as Record<string, unknown>)
         : null;
+    const qaFlag = body.qa === true || extrasIn?.qa === true;
 
     const baseRow = {
+      is_test: isTestLead({ email, full_name, qa: qaFlag }),
       full_name,
       email,
       phone,
