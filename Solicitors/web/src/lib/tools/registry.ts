@@ -13,6 +13,13 @@ import { llpProfitShareTool } from "./configs/llp-profit-share";
 import { lawFirmValuationTool } from "./configs/law-firm-valuation";
 import { sraClientAccountReserveTool } from "./configs/sra-client-account-reserve";
 import { indemnityPremiumTool } from "./configs/indemnity-premium";
+import { colpCofaCheckerTool } from "./configs/colp-cofa-checker";
+import { solicitorHourlyRateBenchmarkTool } from "./configs/solicitor-hourly-rate-benchmark";
+import { lawFirmSaleCgtTool } from "./configs/law-firm-sale-cgt";
+import { vatDisbursementsClassifierTool } from "./configs/vat-disbursements-classifier";
+import { clientAccountInterestTool } from "./configs/client-account-interest";
+import { partnerTaxReserveTool } from "./configs/partner-tax-reserve";
+import { practiceCashflowRunwayTool } from "./configs/practice-cashflow-runway";
 
 const tools = [
   solicitorTakeHomeTool,
@@ -21,6 +28,13 @@ const tools = [
   lawFirmValuationTool,
   sraClientAccountReserveTool,
   indemnityPremiumTool,
+  colpCofaCheckerTool,
+  solicitorHourlyRateBenchmarkTool,
+  lawFirmSaleCgtTool,
+  vatDisbursementsClassifierTool,
+  clientAccountInterestTool,
+  partnerTaxReserveTool,
+  practiceCashflowRunwayTool,
 ] as const;
 
 export const { allTools, genericTools, getGenericTool, toolPath } = makeRegistryHelpers([...tools]);

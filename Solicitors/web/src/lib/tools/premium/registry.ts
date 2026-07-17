@@ -13,16 +13,17 @@ import { llpProfitTaxConfig } from "./configs/llp-profit-tax";
 import { solePractitionerConfig } from "./configs/sole-practitioner";
 import { practiceSaleConfig } from "./configs/practice-sale";
 import { sraClientAccountConfig } from "./configs/sra-client-account";
+import { equityPartnerBuyInConfig } from "./configs/equity-partner-buyin";
 
 /**
  * Map of toolId -> PremiumToolConfig.
- * All four R2 tools: golden tests pass before these entries were added.
  */
 export const PREMIUM_TOOLS: Record<string, PremiumToolConfig> = {
   "llp-profit-tax-premium": llpProfitTaxConfig,
   "sole-practitioner-premium": solePractitionerConfig,
   "practice-sale-premium": practiceSaleConfig,
   "sra-client-account-premium": sraClientAccountConfig,
+  "equity-partner-buyin-premium": equityPartnerBuyInConfig,
 };
 
 /** Returns the config for a tool, or undefined when not registered. */

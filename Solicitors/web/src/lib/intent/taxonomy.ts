@@ -158,6 +158,13 @@ export const CALC_SLUG_TO_TOPIC: Record<string, TopicKey> = {
   "law-firm-valuation": "succession-sale",
   "sra-client-account-reserve": "sra-compliance",
   "indemnity-premium-estimator": "practice-finance",
+  "colp-cofa-checker": "sra-compliance",
+  "solicitor-hourly-rate-benchmark": "sole-practitioner",
+  "law-firm-sale-cgt": "succession-sale",
+  "vat-disbursements-classifier": "vat",
+  "client-account-interest": "sra-compliance",
+  "partner-tax-reserve": "partnership-llp",
+  "practice-cashflow-runway": "practice-finance",
 };
 
 const BLOG_SLUG_TO_TOPIC: Record<string, TopicKey> = {};
