@@ -403,3 +403,24 @@ Recommended order (quick wins → deep builds), each phase = one Sonnet builder 
 Then **agency** (after 07-22 window; cloud reminder trig_019Eamo9dnSB8KRJuoHUVzFH fires 07-22 08:00): A4 calculator retrofit to GenericTool + CalcResultCta (currently ZERO lead capture) THEN the full wave stack.
 
 **OWNER-GATED / waiting on word (surface at session start):** (a) 308 redirects `python scripts/_redirect_308_prep.py --apply` (4 apex domains, prod); (b) Property deploy (carries Reflex CC removal + multistep fixes live); (c) wave-1 deploys (A1 flags flip via NEXT_PUBLIC_MINIFORMS_MULTISTEP=1 per site; ships open resources + booking + citability); (d) A3 go-live checklist (migration + env + secret + consent swap + arm); (e) B2 IndexNow drain post-deploy; (f) 39-page deploy backlog; (g) sameAs/GBP exposure decision. Owner enforces manual Vercel CLI deploy (GitHub auto-deploy OFF).
+
+### 2026-07-18 — session 6 (Opus; wave-1 parity RE-AUDIT then wave-2 start)
+
+**Owner asked to triple-check wave-1 is genuinely at Property parity BEFORE wave-2. Ran 3 read-only auditors (CRO / GEO-bot / tool-roster+bug). "Full parity" claim was NOT fully true — real gaps found + fixed. Verify-before-edit earned its keep again.**
+
+**WAVE-1 REMEDIATION — committed 5be346b0:**
+- **Estate-wide income-tax band bug (money path).** Higher-rate band width was derived as fixed `HIGHER_RATE_LIMIT-BASIC_RATE_LIMIT` (74,870), wrong once PA tapers >£100k. Correct additional-rate cap = `max(37,700, 125,140-pa)` taxable. The session-5 "5 libs fixed" commit had MISSED generalist entirely + never touched sites outside wave-1. Fixed root compute fns on: generalist (7 fns), contractors-ir35, pharmacies, digital-agency (3), Medical (2), + tapered-PA defects on same path. Pinning check estate-wide: £150k→£53,703 IT (was £54,332); low cases unchanged; goldens re-derived for >£100k cases. Green: generalist 243 / ir35 373 / pharmacies 11 / agency 529 / medical 336.
+  - **PROPERTY CARRIES THE SAME BUG** (`Property/web/src/lib/landlordTax.ts:162`, high-income landlords only) BUT PROPERTY IS FROZEN by owner instruction (2026-07-18) — do NOT edit Property. Flagged to owner, left untouched. (An agent had edited it; reverted immediately.)
+  - digital-agency has 3 DEAD-DUPLICATE calculator components (`components/calculators/*.tsx`) with the same bug but nothing renders them — flagged for deletion, not fixed.
+- **Solicitors CRO breaks** (the "at parity" claim missed): ExitIntentModal still LIVE in PageShell (confirmed loser; removed, mirrors siblings); `/resources/[topic]` gained per-topic xlsx download (6/8 topics) + inline free-review form (was plain /contact).
+- **Stale year strings**: dentists + solicitors calculator pages 2025/26 → 2026/27.
+
+**WAVE-2 PHASE 1 — committed a7d756f7 (quick-win parity):**
+- construction-cis: retired ExitIntentModal from PageShell; added static `public/llms.txt` at ir35/Property depth (verified slugs + 2026/27 facts); fixed a PRE-EXISTING build blocker (unescaped apostrophe in single-quoted `schema:` YAML scalar in `cis-end-of-year-return.md`) — cis build now green (348 tests).
+- contractors-ir35: removed dead ExitIntentModal import (DeepScrollModal already mounted).
+- Medical: added cornerstone-guides section to llms.txt (6 verified pillar guides, NHS-pension featured); retired ExitIntentModal from PageShell. **GAP-TABLE CORRECTION: the wave-2 gap table said medical modal was "correct" but it only checked layout.tsx — ExitIntentModal was live in PageShell.** Now clean vs ir35/Property.
+
+**WAVE-2 PHASE 2 — committed 649486cc (de-gate cis + ir35 resources):**
+- Both were genuinely gated (noindex + email-unlock ResourceGate). Rewrote ResourceGate to qualified MiniCapture free-review form (one edit de-gates blog+calc+resource surfaces via kept prop signature); removed noindex; added xlsx downloads (cis 3, ir35 3) + sitemap entries; dropped redundant mid-slot email gate (InlineMiniLeadForm already qualified); deleted dead RESOURCE_EMAIL_DELIVERY_ENABLED config. Medical already open. Green both.
+
+**NEXT (wave-2, resume here):** phase 3 MiniCapture→shared+multistep (all 3; cis/ir35 local copies diverged, ir35 most) → phase 4 C1 tool rosters (measurement first: verify BWT for ir35 then Bing pull; fresh GSC/Bing cis+medical; then Fable roster design + Sonnet build fan-out + Opus QA WATCHING the band bug pattern) → phase 5 A2 blog → phase 6 A3 nurture dry-run (NEW migration adds medical/cis/ir35 nurture-control rows) → phase 7 booking+progressive-completion. Then agency after 07-22. All builds+tests green, NOTHING deployed. Branch `expansion/phase-0`.
