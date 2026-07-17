@@ -8,11 +8,10 @@
  * (LEADS_NOTIFY_TO_PROPERTY); every other site goes to the shared internal inbox
  * (LEADS_NOTIFY_TO). See resolveLeadTo.
  *
- * CC: the partner firm (Reflex Accounting, LEADS_NOTIFY_CC) is copied on leads
- * from every site EXCEPT those in LEADS_NOTIFY_CC_EXCLUDE_SOURCES (defaults to
- * "property,test"), so Property's own leads (and synthetic test leads) stay
- * internal-only while dentists, medical, solicitors, generalist, agency and
- * contractors-ir35 still copy the partner. See resolveLeadCc.
+ * CC: no one is copied by default (partner auto-CC removed 2026-07-17). If
+ * LEADS_NOTIFY_CC is set in env, those addresses are copied on leads from every
+ * site EXCEPT those in LEADS_NOTIFY_CC_EXCLUDE_SOURCES (defaults to
+ * "property,test"). See resolveLeadCc.
  *
  * source='test' is the reserved synthetic-lead value used by the post-deploy
  * smoke check: it is never copied to any vendor (CC-excluded) and is routed only
@@ -21,7 +20,9 @@
  * Kept as pure functions (env injected) so the routing rules are unit-testable
  * without standing up the route or mocking Resend.
  */
-export const DEFAULT_PARTNER_CC = "ahmadtirmizey@reflexaccounting.co.uk";
+// Partner CC removed 2026-07-17 (owner instruction): no default CC. Leads are
+// only copied externally if LEADS_NOTIFY_CC is explicitly set in env.
+export const DEFAULT_PARTNER_CC = "";
 export const DEFAULT_CC_EXCLUDED_SOURCES = "property,test";
 
 // Lead-notification recipient (the "to"). Property's own leads go to the
