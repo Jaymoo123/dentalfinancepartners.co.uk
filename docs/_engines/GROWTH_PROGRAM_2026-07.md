@@ -205,4 +205,19 @@ All deploys owner-G1. Each step commits locally when green; execution log update
 
 ## Execution log
 
-(empty — program not started)
+### 2026-07-17 — session 1 (program start)
+
+**DONE:**
+- Plan committed as this doc (ce1632fd).
+- **Track D COMPLETE in code (946f1623), NOT YET LIVE.** Root cause was NOT env: `DEFAULT_PARTNER_CC` was hardcoded to the Reflex address in `Property/web/src/lib/lead-routing.ts` as the fallback when `LEADS_NOTIFY_CC` unset (and it IS unset in Vercel — verified via API; only `LEADS_NOTIFY_CC_EXCLUDE_SOURCES` + `LEADS_NOTIFY_SECRET` exist on the project). Fix: `DEFAULT_PARTNER_CC = ""` → no external CC unless env explicitly set. Tests rewritten (13 pass), tsc clean. **⚠ Live site still CCs Reflex until Property is next deployed — include in next Property deploy and verify with a test lead (no CC).**
+- Vercel API access works: `VERCEL_TOKEN` in root `.env`; Property project = `prj_Di0U5vYZVPlkm7xcA3p9il9gyDzU` (`property-tax-partners`).
+
+**B0 findings so far — VERIFY EVERY EXPLORER CLAIM BEFORE EDITING (2 of 3 checked were stale):**
+- B0.1 generalist llms.txt domain bug: **DOES NOT EXIST** — file correct locally AND live (checked https://www.hollowaydavies.co.uk/llms.txt, rates all current 2026/27). Skip.
+- B0.2a solicitors llms.txt dividends: **ALREADY FIXED** (10.75/35.75/39.35 present, correctly framed). STILL TO DO in `Solicitors/web/public/llms.txt`: header "Key facts (current figures, 2025/26)" → 2026/27; cornerstone line "UK solicitor tax rates 2025/26 reference"; BADR block presents 14% as current and 18% as future — 18% IS current since 6 Apr 2026. Reframe those three spots.
+- B0.2b solicitors `buildService` "UK dentists" audience: **DOES NOT EXIST** — `Solicitors/web/src/lib/schema/service.ts` default audience is solicitors. Skip.
+- B0 items 3-8 NOT yet verified/started: agency llms.txt broken refs, robots 40-bot rollout (template = `Dentists/web/src/app/robots.ts`), embed backlinks, DeepSeek purge, Property llms-full sync, 6 presence defects, B0.8 stale-figure sweeps.
+
+**Session task list at handoff:** #1 B0 in_progress, #2 B0.8 pending, #3 B1 pending, #4 shared-extraction (step 2.5) pending.
+
+**NEXT ACTION:** finish B0 starting with the solicitors llms.txt year-framing edits above; then B0.8; then B1. Branch: `expansion/phase-0`. All deploys owner-G1.
