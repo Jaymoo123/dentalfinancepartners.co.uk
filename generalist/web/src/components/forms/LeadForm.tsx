@@ -6,6 +6,7 @@ import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
 import { submitGeneralistLead } from "@/lib/leads/submit-client";
+import { buildThankYouUrl, isSafeReturnPath } from "@accounting-network/web-shared/leads/capture-steps";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
@@ -158,8 +159,14 @@ export function LeadForm({
     setConsent(false);
 
     if (redirectOnSuccess) {
+      const returnPath = isSafeReturnPath(window.location.pathname + window.location.search + window.location.hash)
+        ? window.location.pathname + window.location.search + window.location.hash
+        : null;
+      const dest = result.bookingToken
+        ? buildThankYouUrl(result.bookingToken, returnPath ?? undefined)
+        : successRedirect;
       setTimeout(() => {
-        router.push(successRedirect);
+        router.push(dest);
       }, 800);
     }
   }

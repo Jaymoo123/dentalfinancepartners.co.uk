@@ -41,6 +41,8 @@ export interface DentistLeadResult {
   success: boolean;
   error?: string;
   leadId?: string | null;
+  /** Signed token for the native /book slot picker (thank-you page embed). */
+  bookingToken?: string;
 }
 
 /**
@@ -61,9 +63,9 @@ export async function submitDentistLead(
       body: JSON.stringify({ ...payload, enquiry_ref: enquiryRef }),
     });
 
-    let json: DentistLeadResult = { success: false };
+    let json: DentistLeadResult & { bookingToken?: string } = { success: false };
     try {
-      json = (await res.json()) as DentistLeadResult;
+      json = (await res.json()) as typeof json;
     } catch {
       /* non-JSON body */
     }
@@ -103,7 +105,7 @@ export async function submitDentistLead(
       return { success: false, error: json.error || `Request failed (${res.status})` };
     }
 
-    return { success: true, leadId: json.leadId };
+    return { success: true, leadId: json.leadId, bookingToken: json.bookingToken };
   } catch {
     // Network-level failure: attempt shared direct insert as fallback.
     const { supabaseUrl, supabaseKey } = getSupabaseConfig();

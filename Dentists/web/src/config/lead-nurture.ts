@@ -210,7 +210,7 @@ export async function buildLeadMessageContext(
 
 function buildBookingUrl(lead: NurtureLead, b: string): string {
   try {
-    return `${b}/contact?t=${encodeURIComponent(mintLeadToken(lead.id, "book"))}`;
+    return `${b}/book?t=${encodeURIComponent(mintLeadToken(lead.id, "book"))}`;
   } catch {
     return `${b}/contact`;
   }

@@ -41,6 +41,7 @@ export interface SolicitorLeadResult {
   success: boolean;
   error?: string;
   leadId?: string | null;
+  bookingToken?: string;
 }
 
 /**
@@ -61,9 +62,9 @@ export async function submitSolicitorLead(
       body: JSON.stringify({ ...payload, enquiry_ref: enquiryRef }),
     });
 
-    let json: SolicitorLeadResult = { success: false };
+    let json: SolicitorLeadResult & { bookingToken?: string } = { success: false };
     try {
-      json = (await res.json()) as SolicitorLeadResult;
+      json = (await res.json()) as typeof json;
     } catch {
       /* non-JSON body */
     }
@@ -103,7 +104,7 @@ export async function submitSolicitorLead(
       return { success: false, error: json.error || `Request failed (${res.status})` };
     }
 
-    return { success: true, leadId: json.leadId };
+    return { success: true, leadId: json.leadId, bookingToken: json.bookingToken };
   } catch {
     // Network-level failure: attempt shared direct insert as fallback.
     const { supabaseUrl, supabaseKey } = getSupabaseConfig();

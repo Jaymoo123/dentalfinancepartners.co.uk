@@ -1,17 +1,10 @@
 /**
  * Server chokepoint for Solicitors (Accounts for Lawyers) lead submission.
  *
- * Replaces the old client-side direct PostgREST insert (which bypassed all
- * shared contract checks and had a client-side honeypot that silently dropped
- * real leads when browser autofill populated the hidden field).
- *
- * Delegates all logic to the shared factory which handles:
- *   1. Honeypot (enquiry_ref) -- stores flagged, never silently loses a lead.
- *   2. Server-side validation.
- *   3. 24-hour same-source+email dedupe with adopt-and-merge semantics.
- *
- * After a successful insert, enrolls the lead into the Solicitors nurture
- * sequence (best-effort: enrolment failure never loses the lead).
+ * Delegates validation, dedup, and insert to the shared factory, then:
+ *   - enrolls the lead into the Solicitors nurture sequence (best-effort);
+ *   - mints a signed booking token so the thank-you page can show the native
+ *     slot picker at the highest-intent moment straight after the form.
  *
  * Environment isolation: returns a success-shaped no-op outside production so
  * preview browsing never creates real leads. Set LEADS_ALLOW_NONPROD_SUBMIT=1
@@ -19,14 +12,16 @@
  *
  * Dormancy: enrollLead is a no-op while LEAD_NURTURE_ENABLED is unset.
  */
+import { NextResponse, type NextRequest } from "next/server";
 import { createLeadSubmitHandler } from "@accounting-network/web-shared/leads/server";
 import { enrollLead } from "@/lib/leads/enroll";
+import { mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 
 export const runtime = "nodejs";
 export const maxDuration = 10;
 export const dynamic = "force-dynamic";
 
-export const POST = createLeadSubmitHandler({
+const _handler = createLeadSubmitHandler({
   source: "solicitors",
   onLeadInserted: async (lead) => {
     // Best-effort: enrolment must never lose or block the lead submission.
@@ -36,3 +31,30 @@ export const POST = createLeadSubmitHandler({
     });
   },
 });
+
+export async function POST(req: NextRequest): Promise<NextResponse> {
+  const res = await _handler(req);
+
+  // Parse the factory response so we can append bookingToken.
+  let body: Record<string, unknown>;
+  try {
+    body = (await res.json()) as Record<string, unknown>;
+  } catch {
+    return res;
+  }
+
+  // Mint a booking token only on success with a real leadId.
+  let bookingToken: string | undefined;
+  if (body.success && typeof body.leadId === "string" && body.leadId) {
+    try {
+      bookingToken = mintLeadToken(body.leadId, "book");
+    } catch {
+      // LEAD_NURTURE_TOKEN_SECRET unset: thank-you page just omits the picker.
+    }
+  }
+
+  return NextResponse.json(
+    { ...body, ...(bookingToken !== undefined ? { bookingToken } : {}) },
+    { status: res.status },
+  );
+}

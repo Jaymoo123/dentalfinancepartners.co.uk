@@ -20,6 +20,7 @@ import { adminConfigured } from "@/lib/supabase/admin";
 import { enrollLead } from "@/lib/leads/enroll";
 import { routePrimarySequence } from "@/config/lead-nurture";
 import type { NurtureLead } from "@accounting-network/web-shared/lead-nurture/config";
+import { mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 
 export const runtime = "nodejs";
 export const maxDuration = 10;
@@ -94,5 +95,14 @@ export async function POST(req: NextRequest) {
     console.error("[leads/submit/dentists] enrol/instant-touch failed", e);
   }
 
-  return NextResponse.json(json, { status: sharedRes.status });
+  // Mint a signed booking token so the thank-you page can offer the inline slot
+  // picker at the highest-intent moment. Best-effort: never blocks the lead.
+  let bookingToken: string | undefined;
+  try {
+    bookingToken = mintLeadToken(json.leadId, "book");
+  } catch {
+    /* LEAD_NURTURE_TOKEN_SECRET unset -> thank-you page just omits the picker */
+  }
+
+  return NextResponse.json({ ...json, bookingToken }, { status: sharedRes.status });
 }

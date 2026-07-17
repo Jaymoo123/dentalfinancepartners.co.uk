@@ -186,8 +186,7 @@ export async function buildLeadMessageContext(
 
 function buildBookingUrl(lead: NurtureLead, b: string): string {
   try {
-    // ponytail: no /book route yet, falls back to /contact
-    return `${b}/contact?t=${encodeURIComponent(mintLeadToken(lead.id, "book"))}`;
+    return `${b}/book?t=${encodeURIComponent(mintLeadToken(lead.id, "book"))}`;
   } catch {
     return `${b}/contact`;
   }
@@ -195,7 +194,7 @@ function buildBookingUrl(lead: NurtureLead, b: string): string {
 
 function buildDetailsUrl(lead: NurtureLead, b: string): string {
   try {
-    return `${b}/contact?t=${encodeURIComponent(mintLeadToken(lead.id, "profile"))}`;
+    return `${b}/complete?t=${encodeURIComponent(mintLeadToken(lead.id, "profile"))}`;
   } catch {
     return `${b}/contact`;
   }

@@ -39,6 +39,7 @@ export interface GeneralistLeadResult {
   success: boolean;
   error?: string;
   leadId?: string;
+  bookingToken?: string;
 }
 
 export async function submitGeneralistLead(
@@ -72,7 +73,7 @@ export async function submitGeneralistLead(
       if (!res.ok) {
         return { success: false, error: json.error || `Request failed (${res.status})` };
       }
-      return { success: true, leadId: json.leadId };
+      return { success: true, leadId: json.leadId, bookingToken: json.bookingToken };
     }
     // 5xx: route is broken; fall through to direct-insert fallback.
     try {

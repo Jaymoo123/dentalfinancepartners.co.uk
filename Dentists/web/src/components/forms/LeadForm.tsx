@@ -8,6 +8,7 @@ import { siteConfig } from "@/config/site";
 import { submitDentistLead } from "@/lib/leads/submit-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
+import { buildThankYouUrl } from "@accounting-network/web-shared/leads/capture-steps";
 
 const fieldClass =
   "mt-1 w-full min-h-12 touch-manipulation rounded-lg border border-[var(--border)] bg-[var(--surface)] px-3.5 py-3 text-base text-[var(--ink)] shadow-sm focus:border-[var(--accent)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/25";
@@ -160,8 +161,11 @@ export function LeadForm({
     setConsent(false);
 
     if (redirectOnSuccess) {
+      const dest = result.bookingToken
+        ? buildThankYouUrl(result.bookingToken, window.location.pathname + window.location.search + window.location.hash)
+        : successRedirect;
       setTimeout(() => {
-        router.push(successRedirect);
+        router.push(dest);
       }, 800);
     }
   }

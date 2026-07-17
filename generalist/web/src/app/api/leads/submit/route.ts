@@ -21,6 +21,7 @@ import { NextResponse } from "next/server";
 import { enrollLead } from "@/lib/leads/enroll";
 import { routePrimarySequence } from "@/config/lead-nurture";
 import type { NurtureLead } from "@accounting-network/web-shared/lead-nurture/config";
+import { mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 
 export const runtime = "nodejs";
 export const maxDuration = 10;
@@ -52,6 +53,14 @@ export async function POST(req: Request): Promise<NextResponse> {
   }
 
   if (result.success && result.leadId) {
+    // Mint a booking token for the thank-you picker (best-effort; silent on failure).
+    let bookingToken: string | undefined;
+    try {
+      bookingToken = mintLeadToken(result.leadId, "book");
+    } catch {
+      // LEAD_NURTURE_TOKEN_SECRET unset or other error: picker just won't render
+    }
+
     try {
       const full_name = String(body.full_name ?? "").trim();
       const email = String(body.email ?? "").trim();
@@ -77,6 +86,16 @@ export async function POST(req: Request): Promise<NextResponse> {
       });
     } catch (err) {
       console.error("[leads/submit] enrol failed (non-fatal)", err);
+    }
+
+    // Re-serialise the base response JSON with bookingToken appended.
+    if (bookingToken) {
+      try {
+        const base = (await response.clone().json()) as Record<string, unknown>;
+        return NextResponse.json({ ...base, bookingToken }, { status: response.status });
+      } catch {
+        // If re-parse fails, fall through to original response (bookingToken lost, non-fatal)
+      }
     }
   }
 

@@ -6,6 +6,7 @@ import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
 import { submitSolicitorLead } from "@/lib/leads/submit-client";
+import { buildThankYouUrl } from "@accounting-network/web-shared/leads/capture-steps";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
@@ -153,7 +154,12 @@ export function LeadForm({
     setConsent(false);
     setEnquiryRef("");
     if (redirectOnSuccess) {
-      router.push("/thank-you");
+      router.push(
+        buildThankYouUrl(
+          result.bookingToken,
+          window.location.pathname + window.location.search + window.location.hash,
+        ),
+      );
     }
   }
 
