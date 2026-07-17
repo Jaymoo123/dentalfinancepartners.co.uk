@@ -2,11 +2,8 @@ import type { ReactNode } from "react";
 import { SiteFooter } from "./SiteFooter";
 import { SiteHeader } from "./SiteHeader";
 import { StickyCTA } from "@/components/ui/StickyCTA";
-// Newsletter ExitIntentModal unmounted (owner decision: newsletter surfaces
-// dropped across the estate). The component file is kept on disk untouched.
-// The blog ExitIntentModal (qualified lead capture) is mounted here instead.
-import { ExitIntentModal } from "@/components/blog/ExitIntentModal";
-import { SpecialistWidget } from "@/components/support/SpecialistWidget";
+// ExitIntentModal unmounted: SpecialistWidget (mounted in layout.tsx) subsumes
+// exit-intent and handles the stand-down. Component file kept on disk for revert.
 
 type PageShellProps = {
   children: ReactNode;
@@ -27,8 +24,6 @@ export function PageShell({ children }: PageShellProps) {
       </main>
       <SiteFooter />
       <StickyCTA />
-      <ExitIntentModal />
-      <SpecialistWidget />
     </div>
   );
 }

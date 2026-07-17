@@ -99,6 +99,7 @@ export const rdCreditTool: GenericTool = {
     paragraphs: [
       "Since 1 April 2024 most UK companies use the merged scheme, which replaced both the old RDEC and the SME scheme. You claim a 20% above-the-line credit on qualifying expenditure. Because it's above-the-line, it reduces your taxable profit first — the net cash benefit after 25% corporation tax is typically around 15p per qualifying pound.",
       "Loss-making R&D-intensive companies (where qualifying R&D spend is 30% or more of total expenditure) can instead use enhanced R&D intensive support (ERIS): an 86% enhanced deduction surrendered for a 14.5% payable credit, worth roughly 27p per qualifying pound — and because the credit is payable rather than taxable, there is no corporation tax haircut. The calculator tests the intensity ratio automatically.",
+      "Worked example: a software company spends £120,000 on staff time allocated to qualifying R&D, £40,000 on UK subcontractors (65% claimable = £26,000), £15,000 on consumables, and £25,000 on cloud compute, against total business expenditure of £800,000. Qualifying expenditure is £186,000. The R&D intensity ratio is 23.3% (£186,000 divided by £800,000), which is below the 30% ERIS threshold, so the standard merged-scheme rate of 20% applies. The gross above-the-line credit is £37,200. After the 25% corporation tax charge on the credit, the net benefit is £27,900, equivalent to approximately 15p for every qualifying pound spent.",
     ],
   },
   faqs: [

@@ -101,6 +101,7 @@ export const practiceValuationTool: GenericTool = {
       "The normalised EBITDA figure matters more than the multiple. Add-backs (adjusting the principal's salary to a market rate, removing personal expenses and one-off items) typically swing the EBITDA by 10 to 20 percent, which moves the total valuation significantly.",
       "Practice mix affects the multiple because NHS-contract income is contracted but lower-margin and subject to commissioner risk; private practices attract higher multiples because of the income quality and growth optionality.",
       "Tangible assets (dental chairs, radiography equipment, and fit-out) are valued separately, usually at depreciated replacement cost.",
+      "Worked example: a mixed NHS and private practice in the Midlands reports a normalised EBITDA of £180,000 after adjusting the principal's salary to market rate and removing personal expenses. Applying the mixed-practice EBITDA multiple range of 0.85x to 1.15x with no regional or demand adjustment gives a goodwill range of £153,000 to £207,000. Adding £180,000 of tangible assets produces a total indicative value of £333,000 to £387,000 (roughly 1.85x to 2.15x the normalised EBITDA including tangibles).",
     ],
   },
   faqs: [

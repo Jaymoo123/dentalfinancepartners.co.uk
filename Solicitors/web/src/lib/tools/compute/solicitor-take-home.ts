@@ -69,8 +69,12 @@ function calcIncomeTax(taxable: number): number {
   let pa = PERSONAL_ALLOWANCE;
   if (taxable > 100000) pa = Math.max(0, PERSONAL_ALLOWANCE - (taxable - 100000) / 2);
   const t = Math.max(0, taxable - pa);
-  const basic = Math.min(t, BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE);
-  const higher = Math.max(0, Math.min(t - basic, HIGHER_RATE_LIMIT - BASIC_RATE_LIMIT));
+  // Bands measured on TAXABLE income (after PA): basic 0-37,700; higher up to
+  // (125,140 - pa); additional above. The higher-band WIDTH grows as the PA
+  // tapers, so it must be derived from the tapered pa, not a fixed 50,270 start.
+  const basicBandWidth = BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE; // fixed £37,700
+  const basic = Math.min(t, basicBandWidth);
+  const higher = Math.max(0, Math.min(t - basic, HIGHER_RATE_LIMIT - pa - basicBandWidth));
   const additional = Math.max(0, t - basic - higher);
   return basic * INCOME_BASIC + higher * INCOME_HIGHER + additional * INCOME_ADDITIONAL;
 }
@@ -112,7 +116,8 @@ function calcDividendTax(salary: number, dividend: number): number {
   const taxableDividend = Math.max(0, dividend - paLeftForDividend - DIVIDEND_ALLOWANCE);
   if (taxableDividend === 0) return 0;
   const basicBand = BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE;
-  const higherBand = HIGHER_RATE_LIMIT - BASIC_RATE_LIMIT;
+  // Higher-band width on taxable income widens as the tapered pa shrinks.
+  const higherBand = Math.max(0, HIGHER_RATE_LIMIT - pa - basicBand);
   const salaryInBasic = Math.min(Math.max(0, salary - pa), basicBand);
   const salaryInHigher = Math.min(Math.max(0, salary - pa - salaryInBasic), higherBand);
   const remBasic = basicBand - salaryInBasic;

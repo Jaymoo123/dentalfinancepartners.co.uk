@@ -87,6 +87,7 @@ export const pensionTool: GenericTool = {
     paragraphs: [
       "An employer pension contribution reduces your company's taxable profit, saving corporation tax at your marginal rate. That saving offsets the cost of the contribution, so the real cost to the company is always less than the face value.",
       "If you took the same amount as dividend instead, you would first pay corporation tax on it, then dividend tax on what is left. The pension route skips both layers and lands the full gross amount in your pension.",
+      "Worked example: a director with company profit of £150,000 (already taking a £12,570 salary) makes a £30,000 employer pension contribution. Without the pension, profit subject to corporation tax is £137,430, producing a CT bill of £32,669 at the marginal rate (19% on the first £50,000, 26.5% on the remainder). With the pension, taxable profit falls to £107,430 and CT drops to £24,719, saving £7,950. The real cost of putting £30,000 into the pension is only £22,050 (£30,000 minus the £7,950 CT saving). If the same £30,000 had been taken as dividend instead, corporation tax would have consumed £7,950 first (at the 26.5% marginal rate), leaving £22,050 to distribute, then dividend tax at 10.75% basic rate on the taxable portion would have cost roughly £2,317, leaving net dividend cash of £19,733. The pension advantage over dividend extraction is approximately £10,267 on a £30,000 contribution.",
     ],
   },
   faqs: [

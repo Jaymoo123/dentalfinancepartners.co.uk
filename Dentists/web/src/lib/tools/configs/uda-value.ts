@@ -96,6 +96,7 @@ export const udaValueTool: GenericTool = {
       "Your effective UDA value is simply your annual contract value divided by your annual UDA volume. This is the most useful number for comparing across practices and contract years, because the headline UDA numbers vary widely by region and year of signing.",
       "The real value calculation adjusts your effective UDA rate back to current prices using a 2.5% annual CPI proxy. If your contract was signed in 2010, the real purchasing power of each UDA pound has fallen by roughly 48 percent by 2026 at 2.5% annually.",
       "The benchmark ranges show the typical 2026/27 NHS dental UDA rates in your region. Being below the benchmark indicates your contract may be undervalued relative to current new contracts in your area.",
+      "Worked example: a practice in England holds a GDS contract for 3,000 UDAs signed in 2010 with an annual contract value of £90,000. The effective UDA rate is £90,000 divided by 3,000, giving £30.00 per UDA, which sits within the 2026/27 England benchmark range of £25 to £35. Adjusting for 16 years of 2.5% CPI proxy gives a cumulative inflation factor of 48.5%, so the real purchasing power of that £30.00 is only £20.21 in 2010 money, a reminder that even a within-range contract has lost significant real value since signing.",
     ],
   },
   faqs: [

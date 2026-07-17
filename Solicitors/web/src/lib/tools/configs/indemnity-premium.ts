@@ -102,6 +102,7 @@ export const indemnityPremiumTool: GenericTool = {
       "Solicitor PII premiums are expressed as a percentage of gross fee income ('premium rate'). The rate varies by practice area — conveyancing-heavy firms pay the highest rates because of fraud risk and high-value fund movements; commercial and private-client firms pay lower rates.",
       "Claims history is the single biggest rating factor after practice area. A single moderate claim (£25k-£250k) typically adds a 75% premium increase; a major claim can triple the base rate and remain on your claims record for seven or more years.",
       "The MTC (Minimum Terms and Conditions) set by the SRA require cover of at least £2m per claim for unincorporated firms and £3m for incorporated practices (solicitor companies and LLPs). Firms with larger client transactions should carry higher limits.",
+      "Worked example: Beacon Law LLP is a mixed-practice firm with £2,000,000 gross fees, 10 fee-earners, a clean five-year claims record and £5m cover. The base rate for a mixed practice is 1.5% of gross fees. No claims multiplier applies (1.0x). Cover at £5m attracts a 1.2x multiplier, and the firm is below the 20-fee-earner threshold so no size penalty applies. Indicative mid-point premium = £2,000,000 x 0.015 x 1.0 x 1.2 = £36,000 per year. The market range runs from £28,800 (low, 0.8x) to £50,400 (high, 1.4x). If the firm had a moderate claim on its record (£25,000 to £250,000) the claims multiplier would rise to 1.75x, pushing the mid-point to £63,000.",
     ],
   },
   faqs: [

@@ -64,17 +64,18 @@ describe("calcAssociateTakeHome — higher-rate scenario", () => {
   // pa = max(0, 12570 - (128000-100000)/2) = max(0, 12570 - 14000) = 0
   // t = 128000 - 0 = 128000
   // basic = min(128000, 50270-12570) = min(128000, 37700) = 37700
-  // higher = max(0, min(128000-37700, 125140-50270)) = max(0, min(90300, 74870)) = 74870
-  // additional = max(0, 128000-37700-74870) = max(0, 15430) = 15430
-  // IT = 37700*0.20 + 74870*0.40 + 15430*0.45 = 7540 + 29948 + 6943.5 = 44431.5
+  // higher band top (taxable) = 125140-pa = 125140; width = 125140-37700 = 87440
+  // higher = max(0, min(128000-37700, 87440)) = max(0, min(90300, 87440)) = 87440
+  // additional = max(0, 128000-37700-87440) = max(0, 2860) = 2860
+  // IT = 37700*0.20 + 87440*0.40 + 2860*0.45 = 7540 + 34976 + 1287 = 43803
   // class4: taxable=128000; in lower = min(128000,50270)-12570=37700; upper=max(0,128000-50270)=77730
   //         = 37700*0.06 + 77730*0.02 = 2262 + 1554.6 = 3816.6
   // class2: profit=134500 > 6725 → 179.4
-  // totalTax = 44431.5 + 3816.6 + 179.4 = 48427.5
-  // netCash = 128000 - 48427.5 = 79572.5
+  // totalTax = 43803 + 3816.6 + 179.4 = 47799
+  // netCash = 128000 - 47799 = 80201
   const res = calcAssociateTakeHome(300000, 50, 5, 8000, 6500);
 
-  it("incomeTax higher-rate scenario", () => expect(res.incomeTax).toBeCloseTo(44431.5, 0));
+  it("incomeTax higher-rate scenario", () => expect(res.incomeTax).toBeCloseTo(43803, 0));
   it("class4Ni higher-rate scenario", () => expect(res.class4Ni).toBeCloseTo(3816.6, 0));
   it("netCash positive", () => expect(res.netCash).toBeGreaterThan(0));
 });
@@ -213,11 +214,12 @@ describe("calcPracticeValuation — floor enforcement", () => {
 //
 // Rates updated to 2026/27: employer NI 15% above £5,000; dividends 10.75%/35.75%.
 //
-// Partnership (sole trader — no employer NI, no dividends — UNCHANGED):
-//   partnerIncomeTax=calcIncomeTax(150000): pa=0 (taper), IT=54331.5
+// Partnership (sole trader — no employer NI, no dividends):
+//   partnerIncomeTax=calcIncomeTax(150000): pa=0 (taper); bands on taxable income
+//     20%×37700=7540; 40%×(125140-37700=87440)=34976; 45%×(150000-125140=24860)=11187 → 53703
 //   partnerClass4: lower=37700*0.06=2262; upper=(150000-50270)*0.02=1994.6 → 4256.6
 //   class2: 179.4
-//   partnershipNet=150000-54331.5-4256.6-179.4=91232.5
+//   partnershipNet=150000-53703-4256.6-179.4=91861.0
 //
 // Ltd (employer NI now 15%/£5k threshold; dividends now 10.75%/35.75%):
 //   ltdSalary=12570
@@ -230,7 +232,7 @@ describe("calcPracticeValuation — floor enforcement", () => {
 //     total=116496.46>100000: pa=max(0,12570-(116496.46-100000)/2)=max(0,12570-8248.23)=4321.77
 //     paUsed=4321.77; paLeft=0; taxableDividend=103926.46-0-500=103426.46
 //     salaryInBasic=min(8248.23,37700)=8248.23
-//     remBasic=37700-8248.23=29451.77; remHigher=74870
+//     remBasic=37700-8248.23=29451.77; remHigher=max(0,125140-4321.77-37700)=83118.23
 //     inBasic=29451.77; tax=29451.77*0.1075=3166.06 (was *0.0875=2555.89)
 //     div=73974.69; inHigher=73974.69; tax+=73974.69*0.3575=26445.45 (was *0.3375=25211.05)
 //     divTax=3166.06+26445.45=29611.51 (was 27766.94)
@@ -239,15 +241,16 @@ describe("calcPracticeValuation — floor enforcement", () => {
 // Delta table:
 // | case                  | old net   | new net   | driver                           |
 // |-----------------------|-----------|-----------|----------------------------------|
-// | principal partnership | 91232.5   | 91232.5   | no change (no emp-NI, no div)    |
+// | principal partnership | 91232.5   | 91861.0   | PA-taper higher-band fix (IT ↓)  |
 // | principal Ltd         | 86712.65  | ~84384    | NI_SECONDARY↓+EMPLOYER_NI↑+div↑ |
 
 describe("calcPrincipalExtraction — default inputs (profit=150000, NHS active, pension=0)", () => {
   const res = calcPrincipalExtraction(150000, true, 0);
 
-  // Partnership: no employer NI and no dividends — unchanged from 2025/26
-  it("partnership net", () => expect(res.partnership.net).toBeCloseTo(91232.5, 0));
-  it("partnership tax", () => expect(res.partnership.tax).toBeCloseTo(54331.5 + 4256.6 + 179.4, 0));
+  // Partnership: no employer NI and no dividends. IT reflects the PA-taper
+  // higher-band fix (higher band widens to £87,440 when PA is fully tapered).
+  it("partnership net", () => expect(res.partnership.net).toBeCloseTo(91861.0, 0));
+  it("partnership tax", () => expect(res.partnership.tax).toBeCloseTo(53703 + 4256.6 + 179.4, 0));
 
   // Ltd: employer NI 15%/£5k threshold + dividend rates 10.75%/35.75%
   // Exact computed value: 84384.44 (PA taper at >100k makes this sensitive to

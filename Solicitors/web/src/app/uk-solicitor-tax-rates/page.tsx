@@ -5,11 +5,11 @@ import { focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/component
 import { siteConfig } from "@/config/site";
 import { buildBreadcrumbJsonLd, buildFaqPage, JsonLd } from "@/lib/schema/index";
 
-const TITLE = "UK Solicitor Tax Rates 2025/26 (Partners, LLP Members, Locums)";
-const DESCRIPTION = "Quick reference for UK 2025/26 tax rates relevant to solicitors and law firm partners. Income tax bands, NI, corporation tax, BADR, dividend tax, FA 2014, PII allowability.";
+const TITLE = "UK Solicitor Tax Rates 2026/27 (Partners, LLP Members, Locums)";
+const DESCRIPTION = "Quick reference for UK 2026/27 tax rates relevant to solicitors and law firm partners. Income tax bands, NI, corporation tax, BADR, dividend tax, FA 2014, PII allowability.";
 
 const FAQS = [
-  { question: "What's the BADR rate change in April 2026?", answer: "Business Asset Disposal Relief is 14% on qualifying gains in 2025/26 (up to £1m lifetime limit). From 6 April 2026 the rate rises to 18%. On the full £1m limit that's £40,000 of additional CGT. For partners planning sale or retirement, the rate change is a real timing variable." },
+  { question: "What is the BADR rate for 2026/27?", answer: "Business Asset Disposal Relief rose to 18% on qualifying gains from 6 April 2026 (up to the £1m lifetime limit), up from 14% in 2025/26 and 10% before that. On the full £1m limit the move from 14% to 18% is £40,000 of additional CGT. For partners who planned a sale or retirement around the change, the timing mattered." },
   { question: "Are LLPs subject to corporation tax?", answer: "No. LLPs are tax-transparent for income tax — members are taxed personally on their share of profit. The LLP itself doesn't file a corporation tax return. Same treatment as a general partnership; the LLP's separate legal personality gives liability protection but doesn't create a separate tax person." },
   { question: "What's the current VAT threshold for legal services?", answer: "£90,000 of taxable turnover on a rolling 12-month basis (raised from £85,000 on 1 April 2024). Legal services including conveyancing are standard-rated at 20% — NOT exempt. Many consultant solicitors register voluntarily below the threshold to reclaim input VAT on costs." },
 ];
@@ -27,16 +27,16 @@ const BANDS = [
   { label: "Corporation tax (main)", value: "25%", note: "Profits above £250,000" },
   { label: "Corporation tax (marginal band)", value: "Up to 26.5%", note: "Effective marginal rate on profit £50,000–£250,000" },
   { label: "Dividend allowance", value: "£500", note: "First £500 of dividends tax-free" },
-  { label: "Dividend tax basic / higher / additional", value: "8.75% / 33.75% / 39.35%", note: "Above £500 allowance" },
+  { label: "Dividend tax basic / higher / additional", value: "10.75% / 35.75% / 39.35%", note: "Above £500 allowance. Basic and higher rates rose 2 points from 6 April 2026" },
   { label: "CGT (basic / higher)", value: "18% / 24%", note: "Aligned to residential property rate from 30 Oct 2024" },
   { label: "CGT annual exempt amount", value: "£3,000", note: "" },
-  { label: "BADR rate (2025/26)", value: "14%", note: "On qualifying gains up to £1m lifetime limit" },
-  { label: "BADR rate (from 6 April 2026)", value: "18%", note: "+4 percentage points" },
+  { label: "BADR rate (2026/27)", value: "18%", note: "On qualifying gains up to £1m lifetime limit. Rose from 14% on 6 April 2026" },
+  { label: "BADR rate (2025/26, historical)", value: "14%", note: "Previous year rate; 10% before 6 April 2025" },
   { label: "AIA (Annual Investment Allowance)", value: "£1,000,000", note: "Excludes cars, land, buildings" },
   { label: "SBA (Structures and Buildings)", value: "3% / year", note: "On post-29 October 2018 commercial premises spend" },
   { label: "VAT registration threshold", value: "£90,000", note: "Rolling 12-month basis from 1 April 2024" },
   { label: "Self-Assessment online deadline", value: "31 January", note: "Following the end of the tax year" },
-  { label: "MTD ITSA threshold", value: "£50,000", note: "From 6 April 2026 (sole-trader income above £50k). Drops to £30k in 2027" },
+  { label: "MTD ITSA threshold", value: "£50,000", note: "From 6 April 2026 (sole-trader income above £50k). Drops to £30k from April 2027, £20k from April 2028" },
 ];
 
 const LEGAL_SECTOR = [
@@ -74,8 +74,8 @@ export default function UkSolicitorTaxRatesPage() {
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <Breadcrumb items={breadcrumbItems} variant="light" />
           <div className="mt-8 max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/90">Reference · UK 2025/26</p>
-            <h1 className="mt-3 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">UK Solicitor Tax Rates 2025/26</h1>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/90">Reference · UK 2026/27</p>
+            <h1 className="mt-3 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">UK Solicitor Tax Rates 2026/27</h1>
             <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">Quick reference for the rates and thresholds that matter most to UK solicitors and law firm partners. Income tax bands, NI, corporation tax, BADR, dividend tax, FA 2014 Salaried Member rules, SRA Accounts Rules thresholds, PII minimums.</p>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function UkSolicitorTaxRatesPage() {
       <section className="bg-[var(--surface)]">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">UK 2025/26 general rates</h2>
+            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">UK 2026/27 general rates</h2>
             <div className="mt-8 overflow-hidden rounded-2xl border border-[var(--border)]">
               <table className="w-full text-sm">
                 <thead className="bg-[var(--primary)] text-white">

@@ -37,15 +37,16 @@ describe("calcSolicitorTakeHome — golden tests (2026/27 rates, R2 updated)", (
   it("default inputs: profit=150000 pension=0", () => {
     // Sole trader / partnership (unchanged from 2025/26 — no dividends):
     //   income tax: PA taper not triggered (150000 > 100000, so PA = max(0, 12570 - 25000) = 0)
-    //   t = 150000; basic = 37700 => 7540; higher = (125140-50270)=74870 => 29948;
-    //   additional = 150000 - 37700 - 74870 = 37430 => 37430 * 0.45 = 16843.5
-    //   incomeTax = 7540 + 29948 + 16843.5 = 54331.5
+    //   t = 150000; basic = 37700 => 7540; higher band top (taxable) = 125140-PA = 125140,
+    //     width = 125140-37700 = 87440; higher = min(150000-37700, 87440) = 87440 => 34976;
+    //   additional = 150000 - 37700 - 87440 = 24860 => 24860 * 0.45 = 11187
+    //   incomeTax = 7540 + 34976 + 11187 = 53703
     //   class4: lower = (50270-12570)=37700 * 0.06=2262; upper = (150000-50270)=99730*0.02=1994.6
     //   class4 = 2262 + 1994.6 = 4256.6
-    //   partnershipNet = 150000 - 54331.5 - 4256.6 = 91411.9
+    //   partnershipNet = 150000 - 53703 - 4256.6 = 92040.4
     const r = calcSolicitorTakeHome({ profit: 150000, pensionContrib: 0 });
-    expect(r.partnership.net).toBeCloseTo(91411.9, 0);
-    expect(r.soleTrader.net).toBeCloseTo(91411.9, 0);
+    expect(r.partnership.net).toBeCloseTo(92040.4, 0);
+    expect(r.soleTrader.net).toBeCloseTo(92040.4, 0);
     expect(r.partnership.net).toBe(r.soleTrader.net);
     expect(typeof r.ltd.net).toBe("number");
   });

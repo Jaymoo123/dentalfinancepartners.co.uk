@@ -78,6 +78,7 @@ export const takeHomePayTool: GenericTool = {
     paragraphs: [
       "The calculator applies the standard 2026/27 personal allowance of £12,570 (tapering above £100,000), the three income tax bands, and employee NI at 8% on earnings between £12,570 and £50,270 plus 2% above. Salary-sacrifice pension contributions are deducted before tax and NI are calculated, so they save you both.",
       "Student loan deductions are added if you select a plan. The model assumes a standard tax code (1257L), no taxable benefits in kind, no other income, and that you are paid through PAYE.",
+      "Worked example: on a gross salary of £45,000 with no pension or student loan, the personal allowance covers the first £12,570, leaving taxable income of £32,430. Income tax at 20% basic rate is £6,486. Employee NI at 8% on £32,430 (the band from £12,570 to £45,000) is £2,594. Total deductions are £9,080, leaving annual take-home pay of £35,920 (£2,993 per month, £691 per week). The combined income tax and NI effective rate is 20.2% of gross.",
     ],
   },
   faqs: [

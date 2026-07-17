@@ -78,6 +78,7 @@ export const vatTool: GenericTool = {
     paragraphs: [
       "Under the Standard scheme you charge 20% VAT, reclaim the VAT on your costs, and pay HMRC the difference. Under the Flat Rate scheme you still charge 20% but pay HMRC a fixed percentage of your VAT-inclusive turnover instead, with no input VAT reclaim.",
       "The Limited Cost Trader test catches most service businesses: if your goods spend is below 2% of VAT-inclusive turnover or £1,000, HMRC applies a 16.5% flat rate instead of your sector rate. At 16.5%, the Flat Rate scheme almost never wins against Standard.",
+      "Worked example: a marketing consultant with VAT-exclusive turnover of £180,000 collects £36,000 in VAT (20%), making VAT-inclusive turnover £216,000. They spend £8,000 on reclaimable input VAT and only £500 on physical goods. Under Standard VAT they pay HMRC £36,000 minus £8,000 input reclaim = £28,000. The goods spend of £500 is below both £1,000 and 2% of £216,000 (£4,320), so the Limited Cost Trader rate of 16.5% applies to the Flat Rate scheme. Flat Rate payment would be £216,000 times 16.5% = £35,640. Standard VAT saves £7,640 per year in this case. A consultant with the same turnover but higher input VAT (say £20,000 on premises and equipment) would pay only £16,000 under Standard, widening the advantage further.",
     ],
   },
   faqs: [

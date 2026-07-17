@@ -95,6 +95,7 @@ export const associateTakeHomeTool: GenericTool = {
       "The calculator starts with your gross fees and applies your split percentage to get your associate share. Lab fees (as a percentage of your gross, pro-rated to your split) are then deducted, followed by your other deductible expenses and NHS Pension contribution.",
       "The resulting taxable profit is run through 2026/27 income tax (20% up to £50,270, 40% up to £125,140, 45% above; personal allowance £12,570 tapering above £100,000), Class 4 NI (6% on profits between £12,570 and £50,270, 2% above), and Class 2 NI at £3.45/week where profits exceed £6,725.",
       "NHS Pension contributions are treated as deductible from taxable profit. This is the practitioner pensions arrangement available to NHS-contract associates.",
+      "Worked example: Sarah generates £120,000 in gross fees on a 50% associate split, with a 5% lab fee deduction, £8,000 in other deductible expenses (indemnity, GDC, CPD, motor), and a £6,500 NHS Pension contribution. Her associate share is £60,000; lab fees deducted are £3,000 (5% of gross pro-rated to her split); after expenses her taxable profit is £42,500. Income tax at 2026/27 rates on £42,500 is £5,986; Class 4 NI is £1,796; Class 2 NI is £179. Total tax and NI of £7,961 leaves an estimated annual take-home of approximately £34,539, an effective rate of around 16.3% on trading profit.",
     ],
   },
   faqs: [

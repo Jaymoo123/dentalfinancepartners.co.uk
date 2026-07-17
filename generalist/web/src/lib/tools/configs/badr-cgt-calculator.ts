@@ -98,6 +98,7 @@ export const badrTool: GenericTool = {
     paragraphs: [
       "Business Asset Disposal Relief reduces CGT to 18% (2026/27, from 6 April 2026) on qualifying gains up to £1 million over your lifetime. The rate was 14% in 2025/26. Any gain above the lifetime limit is taxed at the standard higher rate of 24%.",
       "The BADR rate increased to 18% from 6 April 2026 (up from 14% in 2025/26). On a £1 million eligible gain, this rate change increases CGT by £40,000 compared with a 2025/26 disposal.",
+      "Worked example: a founder sells their company in 2026/27 for £500,000, having incorporated it for £100 in nominal share capital. The capital gain is £499,900. The founder holds more than 5% of the shares, has been a director for over two years, and has not used any prior BADR lifetime allowance. The entire £499,900 gain qualifies for BADR at the 2026/27 rate of 18%, giving a CGT bill of £89,982. Net proceeds after tax are £410,018. Had the disposal taken place in 2025/26 at the then-rate of 14%, the CGT bill would have been £69,986, so the rate increase from 14% to 18% costs this founder an additional £19,996 on the same sale.",
     ],
   },
   faqs: [

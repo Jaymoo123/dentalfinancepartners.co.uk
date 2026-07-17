@@ -319,3 +319,30 @@ All deploys owner-G1. Each step commits locally when green; execution log update
 **OWNER-GATED, still waiting on word:** (a) 308 redirects `python scripts/_redirect_308_prep.py --apply`; (b) Property deploy (Reflex CC removal + multistep fixes go live); (c) wave-1 site deploys (A1 flag flips + now also ships all gated resources); (d) 39-page deploy backlog; (e) sameAs/GBP exposure decision.
 
 **Facts a fresh agent needs:** verify-before-edit rule (multiple stale-claim incidents); consent = acknowledgement-by-submission on mini forms, NO checkbox (owner decision, memory `lead_form_consent`); Serper credits EXHAUSTED, use DataForSEO (root .env, cheap); test leads = `?qa=1` (leads.is_test live in Supabase); Bing `--ai-performance` client calls a nonexistent API method (known limitation); contractors-ir35 has no BWT data (needs Bing Webmaster verification before its wave-2 pulls); expected CRO impact estimate: ~3x wave-1 lead volume at full parity (solicitors ~6x headroom), caveated small samples.
+
+### 2026-07-18 — session 5 (Opus, after Fable credits ran out mid-session)
+
+**EMAIL-GATE CORRECTION (e921ae00) — owner-flagged.** The gated-resource waves (cro-parity R3 + growth session-4) were WRONG: Property retired its blog email-gate 2026-06-16 (f90f6cca) because it wasn't converting. Gates had shipped on generalist/dentists/solicitors AND medical (medical LIVE in prod via cro-parity a28b11c8). Fixed (4 parallel Sonnet workers): blog mid-slot now renders qualified MiniCapture "free review" form (GateOrForm pattern), NOT email-unlock; `/resources/[topic]` pages reframed as OPEN research pieces (guide fully visible, xlsx direct download, noindex removed, added to sitemaps, lead CTA at foot); RESOURCE_EMAIL_* flags dead. Builds+tests green (generalist 242/dentists 410/solicitors 158/medical 334). Plan doc §A2 corrected. NOT deployed.
+
+**A3 nurture prereq audit + OWNER DECISION:** owner said use the EXISTING Property Resend domain (`leads@propertytaxpartners.co.uk` send, `inbound.propertytaxpartners.co.uk` reply — both already verified) shared across all sites; NO per-site Resend domain setup needed. Remaining A3 port work (from audit): consent text omits email/SMS on all sites incl Property (update before enabling channels); `lead_nurture_control` is a single estate-wide row id=1 (needs site_key or per-site row else pause = estate-wide); 5 hardcoded "property" literals in nurture-health/digest + per-site RESEND_FROM_EMAIL override; dry-run works via master arm `LEAD_NURTURE_ENABLED` off (all sends skipped, state machine advances).
+
+**C2 citability IN PROGRESS (this session):**
+- llms.txt ×3 brought to full Property parity (intro, dated Key Facts block, cornerstone guides, tools + open-resources sections, audience/"for" pages where they exist, contact). All slugs verified. NOT committed yet.
+- SSR worked-example blocks added to 22 tools missing them (generalist 7, dentists 7, solicitors 8), derived from each tool's own compute fn, Opus 2-track factual QA. QA found + fixed real bugs (see below).
+- Tool-page WebApplication JSON-LD: ALREADY LIVE on every calculator (buildWebApplication in [slug]/page.tsx) — no C2 action needed.
+- IndexNow: manual `python -m optimisation_engine.indexing.submit_indexnow --site <s> --enqueue <url>` then `--from-queue` post-deploy; all 3 sites keyed. Stage at deploy.
+- Solicitors `uk-solicitor-tax-rates` stale page FIXED manager-direct (was 2025/26 framing + 8.75/33.75 dividends → reframed 2026/27, 10.75/35.75, BADR 18% current).
+
+**REAL BUG FOUND via worked-example QA (fix in flight):** UK income-tax compute mismeasures the higher-rate band once PA tapers — outputs £54,332 on £150k profit where correct is £53,703 (basic band is fixed £37,700; buggy code derived it as £50,270−PA). Affects at least solicitors `partnership-vs-llp-take-home` + dentists `principal-extraction`; a fixer agent is grepping BOTH sites for the same pattern, fixing compute, re-deriving worked examples, updating goldens.
+
+**CONVERSION-PARITY COMPLETENESS AUDIT (answered owner "is the 4-pillar list everything Property does?" — NO).** Full Property CRO surface mapped (56 mechanisms) vs wave-1 sites. Personalization spine IS at parity (intent engine, sticky CTA, deep-scroll modal, returning bar, result gate, mobile-tool slot, journey model). TRUE GAPS ranked:
+  1. **Booking/scheduling layer** (highest impact): thank-you-page inline BookingPicker + `/book` route + `/api/leads/book` + 3-step endowed-progress bar + booking-token on submit. Wave-1 sites dead-end at plain thank-you page. NET-NEW BUILD.
+  2. **Progressive lead completion**: DetailsForm + `/complete` route + email-only capture + server phone-plausibility (`needsCheck`). NET-NEW.
+  3. **Immediate SMS/email + reply-to-confirm handshake + cross-session booking re-nudge.** Ties into A3.
+  4. **SpecialistWidget** (proactive assistant; subsumes exit-intent/dwell/friction/booking-concierge) — BUILT but UNMOUNTED on generalist+dentists, which instead run the ExitIntentModal Property RETIRED as a loser (162 shows→0 leads). Solicitors mounts it. → QUICK WIN (mount + retire ExitIntentModal) — IN FLIGHT this session.
+  5. Dentists multistep flag not wired (generalist+solicitors have it) — quick win, in flight.
+  6. Richer qualifying LeadForm (situation/prompted/callGoal free-text) + notice-only consent vs checkbox.
+  7. Conversion-support islands: ServiceTiers DIY→Assisted→Full ladder, StatsBar, urgency counters.
+  → Gaps 1-3 = a Track-A parity-completion sub-wave (booking + progressive-completion + nurture-handshake stack). Gaps 4-5 quick wins in flight. Gaps 6-7 deliberate Property choices, lower priority.
+
+**NEXT ACTION:** (1) land income-tax bug fix + commit C2 (llms.txt ×3 + 22 worked examples + bug fix + stale rates page + SpecialistWidget mounts). (2) Stage IndexNow enqueue. (3) A3 nurture dry-run port (Property shared Resend domain; fix consent text + lead_nurture_control site-scoping + 5 property literals). (4) Track-A parity-completion sub-wave: booking/scheduling + progressive-completion stack (gaps 1-2). (5) Wave 2.

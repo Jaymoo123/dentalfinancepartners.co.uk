@@ -36,10 +36,10 @@ describe("Tool 1 · llp-profit-tax-premium (compose LLPProfitShare + SolicitorTa
     // Trace: llp-profit-share equal golden -> 5 partners at £160,000 each
     // Trace: solicitor-take-home 2026/27 at £160,000
     //   PA taper: 160000 > 100000 -> PA = max(0, 12570 - 30000) = 0
-    //   t=160000; basic=37700->7540; higher=74870->29948; additional=(160000-112570)*0.45=21343.5
-    //   Wait: additional = 160000 - 37700 - 74870 = 47430; 47430*0.45=21343.5
-    //   incomeTax=58831.5; class4=37700*0.06+109730*0.02=2262+2194.6=4456.6
-    //   tax=63288.1; net=160000-63288.1=96711.9
+    //   t=160000; basic=37700->7540; higher band width=125140-0-37700=87440->34976;
+    //   additional = 160000 - 37700 - 87440 = 34860; 34860*0.45=15687
+    //   incomeTax=7540+34976+15687=58203; class4=37700*0.06+109730*0.02=2262+2194.6=4456.6
+    //   tax=62659.6; net=160000-62659.6=97340.4
     const allocation = calcLLPProfitShare({
       totalProfit: 800000,
       method: "equal",
@@ -69,7 +69,7 @@ describe("Tool 1 · llp-profit-tax-premium (compose LLPProfitShare + SolicitorTa
 
     // Headline: top partner keeps = partnership net at £160,000
     const headlineValue = th.partnership.net;
-    expect(headlineValue).toBeCloseTo(96711.9, 0);
+    expect(headlineValue).toBeCloseTo(97340.4, 0);
 
     // The result.breakdown should show 5 partners.
     const partnerRow = result.breakdown?.find((r) => r.label === "Number of partners");
@@ -85,11 +85,11 @@ describe("Tool 1 · llp-profit-tax-premium (compose LLPProfitShare + SolicitorTa
     // Trace: llp-profit-share two-tier golden -> senior £184,615, junior £123,077
     // Trace: solicitor-take-home at £184,615 (approx)
     //   PA taper: 184615>100000 -> PA = max(0, 12570-(184615-100000)/2) = max(0, 12570-42307.5) = 0
-    //   t=184615; basic=37700->7540; higher=74870->29948; add=(184615-112570)*0.45
-    //   Wait: additional = 184615 - 37700 - 74870 = 72045; 72045*0.45=32420.25
-    //   incomeTax=7540+29948+32420.25=69908.25
+    //   t=184615; basic=37700->7540; higher band width=125140-0-37700=87440->34976;
+    //   additional = 184615 - 37700 - 87440 = 59475; 59475*0.45=26763.75
+    //   incomeTax=7540+34976+26763.75=69279.75
     //   class4=2262+(184615-50270)*0.02=2262+134345*0.02=2262+2686.9=4948.9
-    //   tax=74857.15; net=184615-74857.15=109757.85
+    //   tax=74228.65; net=184615-74228.65=110386.35 (~110386.55 at exact share)
     const allocation = calcLLPProfitShare({
       totalProfit: 800000,
       method: "two-tier",
@@ -104,7 +104,7 @@ describe("Tool 1 · llp-profit-tax-premium (compose LLPProfitShare + SolicitorTa
 
     const thSenior = calcSolicitorTakeHome({ profit: allocation.partners[0].share, pensionContrib: 0 });
     // Top partner net should equal take-home lib result for the senior share.
-    expect(thSenior.partnership.net).toBeCloseTo(109758, 0);
+    expect(thSenior.partnership.net).toBeCloseTo(110386.55, 0);
 
     const result = llpProfitTaxConfig.compute({
       values: {
@@ -193,11 +193,12 @@ describe("Tool 1 · llp-profit-tax-premium (compose LLPProfitShare + SolicitorTa
 // ── Tool 2: sole-practitioner-premium ───────────────────────────────────────
 
 describe("Tool 2 · sole-practitioner-premium (direct reuse of calcSolicitorTakeHome)", () => {
-  it("TC1: profit=150000, pensionContrib=0 - partnership net = 91411.9 (traced verbatim)", () => {
+  it("TC1: profit=150000, pensionContrib=0 - partnership net = 92040.4 (traced verbatim)", () => {
     // Trace: solicitor-take-home 2026/27 golden for profit=150000, pension=0.
-    // Partnership result unchanged from 2025/26 (no dividends involved).
+    // IT reflects the PA-taper higher-band fix (higher band widens to £87,440
+    // when PA is fully tapered): IT £53,703, net £92,040.4.
     const r = calcSolicitorTakeHome({ profit: 150000, pensionContrib: 0 });
-    expect(r.partnership.net).toBeCloseTo(91411.9, 0);
+    expect(r.partnership.net).toBeCloseTo(92040.4, 0);
 
     const result = solePractitionerConfig.compute({
       values: { profit: 150000, pensionContrib: 0 },

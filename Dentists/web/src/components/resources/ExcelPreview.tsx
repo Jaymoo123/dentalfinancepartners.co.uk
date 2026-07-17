@@ -167,7 +167,7 @@ const SPECS: Partial<Record<TopicKey, PreviewSpec>> = {
 
   // Asset 2: Principal profit extraction model (topic principal)
   // calcPrincipalExtraction(120000, true, 0)
-  // partnership.net 76489, partnership.tax 43511, ltd.net 72279
+  // partnership.net 76732, partnership.tax 43268, ltd.net 72279
   principal: {
     layout: "paired",
     file: "principal-extraction-model.xlsx",
@@ -178,12 +178,12 @@ const SPECS: Partial<Record<TopicKey, PreviewSpec>> = {
       {
         kind: "data",
         left: { label: "Practice profit", value: { text: "£120,000", v: "blue" } },
-        right: { label: "Net cash (partnership)", value: { text: "£76,489", v: "numStrong" } },
+        right: { label: "Net cash (partnership)", value: { text: "£76,732", v: "numStrong" } },
       },
       {
         kind: "data",
         left: { label: "Active NHS Pension member", value: { text: "Yes", v: "blueText" } },
-        right: { label: "Total tax (partnership)", value: { text: "£43,511", v: "num" } },
+        right: { label: "Total tax (partnership)", value: { text: "£43,268", v: "num" } },
       },
       {
         kind: "data",

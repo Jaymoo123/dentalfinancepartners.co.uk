@@ -181,13 +181,14 @@ describe("R4 solicitor take-home golden values (corrected 2026-07-06)", () => {
   //   PA = min(12570, max(0, 12570-(120000-100000)/2)) = max(0, 12570-10000) = 2570
   //   above PA = 120000-2570 = 117430
   //   basic = min(117430, 37700) = 37700
-  //   higher = min(117430-37700, 125140-50270) = min(79730, 74870) = 74870
-  //   additional = 117430-37700-74870 = 4860
-  //   IT = 37700*0.20 + 74870*0.40 + 4860*0.45 = 7540+29948+2187 = 39675
+  //   higher band top (taxable) = 125140-PA = 125140-2570 = 122570; width = 122570-37700 = 84870
+  //   higher = min(117430-37700, 84870) = min(79730, 84870) = 79730
+  //   additional = max(0, 117430-37700-79730) = 0
+  //   IT = 37700*0.20 + 79730*0.40 = 7540+31892 = 39432
   //   Class4: lower band = (50270-12570)*0.06 = 37700*0.06 = 2262
   //           upper = (120000-50270)*0.02 = 69730*0.02 = 1394.6
   //           total C4 = 3656.6
-  //   Net = 120000 - 39675 - 3656.6 = 76668.4 ✓
+  //   Net = 120000 - 39432 - 3656.6 = 76911.4 ✓
   //
   // Ltd:
   //   salary = 12570
@@ -208,7 +209,7 @@ describe("R4 solicitor take-home golden values (corrected 2026-07-06)", () => {
   const result = calcSolicitorTakeHome({ profit: 120_000, pensionContrib: 0 });
 
   it("partnership take-home", () => {
-    expect(result.partnership.net).toBeCloseTo(76_668.4, 0);
+    expect(result.partnership.net).toBeCloseTo(76_911.4, 0);
   });
 
   it("soleTrader take-home (equals partnership)", () => {
@@ -227,6 +228,6 @@ describe("R4 solicitor take-home golden values (corrected 2026-07-06)", () => {
 describe("preview-figure drift guards", () => {
   it("junior partner preview figure matches the corrected take-home lib", () => {
     const r = calcSolicitorTakeHome({ profit: 800000 / 6.5, pensionContrib: 0 });
-    expect(r.partnership.net).toBeCloseTo(77606.86, 0);
+    expect(r.partnership.net).toBeCloseTo(78080.63, 0);
   });
 });

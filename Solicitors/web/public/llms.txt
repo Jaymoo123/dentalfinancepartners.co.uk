@@ -43,7 +43,7 @@ These figures are taken from the site's own rate reference page and reflect prim
 - Business Asset Disposal Relief (BADR) rate: 18% on qualifying gains up to £1m lifetime limit (current, from 6 April 2026 under Finance Act 2026; was 14% in 2025/26)
 
 ### Making Tax Digital
-- MTD for Income Tax: mandatory from 6 April 2026 for combined gross self-employment and/or property income above £50,000. Threshold falls to £30,000 from April 2027.
+- MTD for Income Tax: mandatory from 6 April 2026 for combined gross self-employment and/or property income above £50,000. Threshold falls to £30,000 from April 2027 and £20,000 from April 2028.
 
 ### VAT
 - Registration threshold: £90,000 on a rolling 12-month basis (raised from £85,000 on 1 April 2024)
@@ -65,12 +65,29 @@ These figures are taken from the site's own rate reference page and reflect prim
 
 ## Free calculators and tools
 - [All solicitor calculators](https://www.accountsforlawyers.co.uk/calculators): Hub for the interactive tools below.
-- [Solicitor take-home calculator](https://www.accountsforlawyers.co.uk/calculators/solicitor-take-home): Net take-home after income tax and NI for employed and self-employed solicitors.
-- [FA 2014 salaried member test](https://www.accountsforlawyers.co.uk/calculators/fa2014-salaried-member): Check whether an LLP member meets Conditions A, B and C and would be reclassified as an employee.
+- [Solicitor take-home calculator](https://www.accountsforlawyers.co.uk/calculators/partnership-vs-llp-take-home): Net take-home after income tax and NI for employed and self-employed solicitors.
+- [FA 2014 salaried member test](https://www.accountsforlawyers.co.uk/calculators/fa-2014-salaried-member): Check whether an LLP member meets Conditions A, B and C and would be reclassified as an employee.
 - [LLP profit share allocation](https://www.accountsforlawyers.co.uk/calculators/llp-profit-share-allocation): Model profit distribution across equity and fixed-share members.
 - [Law firm valuation](https://www.accountsforlawyers.co.uk/calculators/law-firm-valuation): EBITDA-multiple valuation with WIP and tangible-asset add-backs.
 - [SRA client account reserve](https://www.accountsforlawyers.co.uk/calculators/sra-client-account-reserve): Estimate the minimum reserve to hold in the client account for upcoming disbursements.
-- [Indemnity premium estimator](https://www.accountsforlawyers.co.uk/calculators/indemnity-premium): Approximate PII premium range based on fee income, area of practice, and claims history.
+- [Solicitors PII premium estimator](https://www.accountsforlawyers.co.uk/calculators/indemnity-premium-estimator): Approximate PII premium range based on fee income, area of practice, and claims history.
+- [COLP and COFA compliance checker](https://www.accountsforlawyers.co.uk/calculators/colp-cofa-checker): Check COLP and COFA appointment duties and SRA compliance gaps for your firm type.
+- [Solicitor hourly rate benchmark](https://www.accountsforlawyers.co.uk/calculators/solicitor-hourly-rate-benchmark): Compare your charge rate and salary against guideline hourly rates and grade benchmarks.
+- [Law firm sale CGT calculator](https://www.accountsforlawyers.co.uk/calculators/law-firm-sale-cgt): Model net sale proceeds after Capital Gains Tax and Business Asset Disposal Relief on a practice sale.
+- [VAT on disbursements classifier](https://www.accountsforlawyers.co.uk/calculators/vat-disbursements-classifier): Determine whether a cost is a true VAT disbursement or a rechargeable expense under HMRC guidance.
+- [Client account interest calculator](https://www.accountsforlawyers.co.uk/calculators/client-account-interest): Estimate the fair sum of interest due to clients under SRA Rule 7.1 across your matter book.
+- [Partner tax reserve calculator](https://www.accountsforlawyers.co.uk/calculators/partner-tax-reserve): Work out how much an equity partner should reserve monthly to meet self-assessment liabilities.
+- [Law firm cashflow runway calculator](https://www.accountsforlawyers.co.uk/calculators/practice-cashflow-runway): Model lock-up days, WIP, and how long cash reserves will last given monthly overheads.
+
+## Free guides and resources
+- [SRA Accounts Rules compliance guide](https://www.accountsforlawyers.co.uk/resources/sra-compliance): Client money discipline, five-weekly reconciliation requirements, Accountant's Report obligations, and de minimis exemption conditions.
+- [Partnership vs LLP guide](https://www.accountsforlawyers.co.uk/resources/partnership-llp): When partnership wins, when LLP wins, FA 2014 Salaried Member Rules, and profit allocation mechanics.
+- [Practice succession and sale guide](https://www.accountsforlawyers.co.uk/resources/succession-sale): Goodwill valuation, WIP normalisation, net-of-CGT proceeds, Business Asset Disposal Relief, and 18-24 month pre-sale timeline.
+- [Sole practitioner guide](https://www.accountsforlawyers.co.uk/resources/sole-practitioner): Take-home comparison across sole trader, partnership, and limited company structures after income tax, NI, and dividend tax.
+- [Practice finance and cash-flow guide](https://www.accountsforlawyers.co.uk/resources/practice-finance): Lock-up days, WIP management, debtor days, working capital planning, and cash-flow forecasting for law firms.
+- [VAT and disbursements guide](https://www.accountsforlawyers.co.uk/resources/vat): Disbursements vs rechargeable costs, counsel fees, search fees, partial exemption, and the VAT registration threshold for legal practices.
+- [Structure and incorporation guide](https://www.accountsforlawyers.co.uk/resources/incorporation): LLP versus limited company comparison, SRA authorisation requirements, salaried-member rules, and conversion mechanics.
+- [Professional indemnity insurance guide](https://www.accountsforlawyers.co.uk/resources/professional-indemnity): SRA Minimum Terms and Conditions, qualifying insurer requirements, premium benchmarks by practice area, and run-off cover obligations.
 
 ## Specialist services
 - [Solicitor accountants (overview)](https://www.accountsforlawyers.co.uk/services/solicitor-accountants): Why a specialist beats a generalist for law firms; what we do across a year.
@@ -97,10 +114,15 @@ These figures are taken from the site's own rate reference page and reflect prim
 ## Key pages
 - [Home](https://www.accountsforlawyers.co.uk/)
 - [Services](https://www.accountsforlawyers.co.uk/services)
-- [About](https://www.accountsforlawyers.co.uk/about)
-- [Blog](https://www.accountsforlawyers.co.uk/blog)
+- [SRA Accounts Rules compliance](https://www.accountsforlawyers.co.uk/sra-compliance)
+- [UK solicitor tax rates 2026/27](https://www.accountsforlawyers.co.uk/uk-solicitor-tax-rates)
+- [Specialist vs generalist accountant for law firms](https://www.accountsforlawyers.co.uk/specialist-vs-generalist-accountant)
+- [Law firm chart of accounts template](https://www.accountsforlawyers.co.uk/law-firm-chart-of-accounts-template)
+- [Equity partner buy-in tool](https://www.accountsforlawyers.co.uk/tools/equity-partner-buy-in)
 - [Solicitor guides](https://www.accountsforlawyers.co.uk/solicitor-guides)
 - [Free firm health check](https://www.accountsforlawyers.co.uk/free-firm-health-check)
+- [About](https://www.accountsforlawyers.co.uk/about)
+- [Blog](https://www.accountsforlawyers.co.uk/blog)
 - [Contact](https://www.accountsforlawyers.co.uk/contact)
 - [Locations](https://www.accountsforlawyers.co.uk/locations)
 

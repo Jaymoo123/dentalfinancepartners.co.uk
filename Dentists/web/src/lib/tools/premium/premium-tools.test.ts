@@ -105,17 +105,19 @@ describe("Tool 1 · associate-take-home-premium (calcAssociateTakeHome + calcLoc
   it("TC4: calcLocumStructure(600, 220, 8000) -- soleTrader wins, conservation checks", () => {
     // grossIncome=132000, profit=124000
     // soleTrader: IT on 124000 (PA taper: >100000, pa=max(0,12570-(124000-100000)/2)=12570-12000=570)
-    //   t=124000-570=123430; basic=37700->7540; higher=74870->29948; add=(123430-112570)*0.45=4888.5
-    //   IT=42376.5; c4: lower=37700*0.06=2262; upper=(124000-50270)*0.02=1474.6; c4=3736.6
-    //   class2: 179.4; totalTax=46291.5 (executed: 46291); net=124000-46291=77709
+    //   pa taper: 124000>100000 -> pa=max(0,12570-(124000-100000)/2)=570; t=123430
+    //   basic=37700->7540; higher band top taxable=125140-570=124570, width=124570-37700=86870
+    //   higher=min(123430-37700=85730,86870)=85730->34292; add=max(0,123430-37700-85730)=0
+    //   IT=41832; c4: lower=37700*0.06=2262; upper=(124000-50270)*0.02=1474.6; c4=3736.6
+    //   class2: 179.4; totalTax=45748 (executed); net=124000-45748=78252
     // Conservation: soleTrader net+tax=77709+46291=124000. Pass.
     // ltd.net: 74868.32394375 (executed)
     // umbrella.net: 71346.6 (executed)
     const r = calcLocumStructure(600, 220, 8000);
     expect(r.grossIncome).toBe(132000);
     expect(r.profit).toBe(124000);
-    expect(r.soleTrader.net).toBeCloseTo(77709, 0);
-    expect(r.soleTrader.tax).toBeCloseTo(46291, 0);
+    expect(r.soleTrader.net).toBeCloseTo(78252, 0);
+    expect(r.soleTrader.tax).toBeCloseTo(45748, 0);
     // Conservation: soleTrader net + tax = profit
     expect(r.soleTrader.net + r.soleTrader.tax).toBeCloseTo(124000, 0);
     expect(r.ltd.net).toBeCloseTo(74868.32, 1);
@@ -154,11 +156,12 @@ describe("Tool 1 · associate-take-home-premium (calcAssociateTakeHome + calcLoc
 
 describe("Tool 2 · principal-extraction-premium (calcPrincipalExtraction)", () => {
   it("TC1: profit=120000, nhsActive=true, pension=0 -- partnership wins, conservation", () => {
-    // partnership.net=76489, partnership.tax=43511; conservation: 76489+43511=120000
+    // partnership.net=76732, partnership.tax=43268; conservation: 76732+43268=120000
+    // (PA-taper higher-band fix: higher band widens as PA tapers from £100k, IT ↓)
     // ltd.net=72279.37, ltd.tax=47720.63; conservation: ~120000
     const r = calcPrincipalExtraction(120000, true, 0);
-    expect(r.partnership.net).toBeCloseTo(76489, 0);
-    expect(r.partnership.tax).toBeCloseTo(43511, 0);
+    expect(r.partnership.net).toBeCloseTo(76732, 0);
+    expect(r.partnership.tax).toBeCloseTo(43268, 0);
     // Conservation: partnership net + tax = profit (pension=0 so no add-back ambiguity)
     expect(r.partnership.net + r.partnership.tax).toBeCloseTo(120000, 0);
     expect(r.ltd.net).toBeCloseTo(72279.37, 1);
@@ -177,23 +180,25 @@ describe("Tool 2 · principal-extraction-premium (calcPrincipalExtraction)", () 
     const ltdScenario = result.scenarioResults?.find((s) => s.id === "ltd");
     expect(partnershipScenario?.best).toBe(true);
     expect(ltdScenario?.best).toBe(false);
-    expect(result.headline.value).toContain("76,489");
+    expect(result.headline.value).toContain("76,732");
     // NHS-active pension impact row present in breakdown
     const pensionRow = result.breakdown?.find((r) => r.label === "NHS Pension impact");
     expect(pensionRow?.value).toContain("Partnership preserves NHS Pension");
   });
 
   it("TC2: profit=200000, nhsActive=true, pension=40000 -- NHS-active pension impact string", () => {
-    // partnership.net=176532.5 (includes +pension add-back), partnership.tax=63467.5
-    // Conservation: (176532.5 - 40000) + 63467.5 = 200000. Pass.
-    // ltd.net=127823.40, ltd.tax=72176.60
+    // partnership.net=177161 (includes +pension add-back), partnership.tax=62839
+    // (taxable=160000; PA-taper higher-band fix widens the higher band, IT ↓)
+    // Conservation: (177161 - 40000) + 62839 = 200000. Pass.
+    // ltd.net=128188.07, ltd.tax=71811.93 (dividend higher-band widens as PA
+    // tapers, so less dividend hits the 39.35% additional rate; ltd net ↑)
     const r = calcPrincipalExtraction(200000, true, 40000);
-    expect(r.partnership.net).toBeCloseTo(176532.5, 1);
-    expect(r.partnership.tax).toBeCloseTo(63467.5, 1);
+    expect(r.partnership.net).toBeCloseTo(177161, 1);
+    expect(r.partnership.tax).toBeCloseTo(62839, 1);
     // Conservation: (net - pensionContrib) + tax = profit
     expect(r.partnership.net - 40000 + r.partnership.tax).toBeCloseTo(200000, 0);
-    expect(r.ltd.net).toBeCloseTo(127823.40, 1);
-    expect(r.ltd.tax).toBeCloseTo(72176.60, 1);
+    expect(r.ltd.net).toBeCloseTo(128188.07, 1);
+    expect(r.ltd.tax).toBeCloseTo(71811.93, 1);
     expect(r.pensionImpact).toContain("Partnership preserves NHS Pension");
   });
 

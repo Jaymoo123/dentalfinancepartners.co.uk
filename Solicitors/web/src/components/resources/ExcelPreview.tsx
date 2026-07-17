@@ -160,7 +160,7 @@ const SPECS: Partial<Record<TopicKey, PreviewSpec>> = {
   },
 
   // R-2 partner model: default 800,000 two-tier 3 senior / 2 junior
-  // senior share = 800000/6.5*1.5 = 184,615; senior partnership.net = 109,758
+  // senior share = 800000/6.5*1.5 = 184,615; senior partnership.net = 110,386
   "partnership-llp": {
     layout: "paired",
     file: "partnership-llp-model.xlsx",
@@ -180,8 +180,8 @@ const SPECS: Partial<Record<TopicKey, PreviewSpec>> = {
       },
       {
         kind: "data",
-        left: { label: "Take-home (after IT + NI)", value: { text: "£109,758", v: "numStrong" } },
-        right: { label: "Take-home (after IT + NI)", value: { text: "£77,607", v: "num" } },
+        left: { label: "Take-home (after IT + NI)", value: { text: "£110,386", v: "numStrong" } },
+        right: { label: "Take-home (after IT + NI)", value: { text: "£78,081", v: "num" } },
       },
       { kind: "headline", text: "2026/27 basis: income tax + Class 4 NI on your profit share" },
       { kind: "blank" },
@@ -227,7 +227,7 @@ const SPECS: Partial<Record<TopicKey, PreviewSpec>> = {
   },
 
   // R-4 take-home: default profit=120000 pension=0
-  // partnership.net=76,668; ltd.net=72,279
+  // partnership.net=76,911; ltd.net=72,279
   "sole-practitioner": {
     layout: "paired",
     file: "sole-practitioner-model.xlsx",
@@ -241,12 +241,12 @@ const SPECS: Partial<Record<TopicKey, PreviewSpec>> = {
       { kind: "head", left: "Sole practitioner / partner", right: "Limited company" },
       {
         kind: "data",
-        left: { label: "Income tax + Class 4 NI", value: { text: "£43,332", v: "num" } },
+        left: { label: "Income tax + Class 4 NI", value: { text: "£43,089", v: "num" } },
         right: { label: "Corp tax + dividend tax", value: { text: "£47,721", v: "num" } },
       },
       {
         kind: "data",
-        left: { label: "Take-home", value: { text: "£76,668", v: "numStrong" } },
+        left: { label: "Take-home", value: { text: "£76,911", v: "numStrong" } },
         right: { label: "Take-home", value: { text: "£72,279", v: "numStrong" } },
       },
       { kind: "headline", text: "2026/27: sole practitioner / partner ahead on these figures" },

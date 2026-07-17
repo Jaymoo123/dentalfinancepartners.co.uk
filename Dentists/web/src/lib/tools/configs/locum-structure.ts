@@ -81,6 +81,7 @@ export const locumStructureTool: GenericTool = {
       "The sole-trader model applies income tax and Class 2/4 NI directly to trading profit (gross income minus expenses).",
       "The limited company model pays a £12,570 director salary (at the NI threshold), then extracts remaining post-CT profit as dividends. A fixed £1,800 admin cost covers accountancy and filing. Employment Allowance is excluded as most single-director locum companies do not qualify.",
       "The umbrella model assumes the umbrella company retains 5% of gross income and processes the remainder through PAYE, deducting employer NI, income tax and employee NI.",
+      "Worked example: James locums at £450 per day for 180 days per year (£81,000 gross) and has £6,000 of deductible expenses, giving trading profit of £75,000. As a sole trader he pays income tax of £17,432 and Class 4 NI of £2,757 plus Class 2 of £179, leaving a net take-home of approximately £54,632. Through a limited company with a £12,570 salary and dividends on the remaining post-CT profit, his net is approximately £51,729 after the £1,800 admin cost. Via an umbrella (5% margin, 15% employer NI on the balance) his net falls to approximately £48,929. Sole trader wins by around £2,900 over limited company at this income level.",
     ],
   },
   faqs: [

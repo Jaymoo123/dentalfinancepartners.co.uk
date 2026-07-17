@@ -38,8 +38,12 @@ function calcIncomeTax(taxable: number): number {
     pa = Math.max(0, PERSONAL_ALLOWANCE - (taxable - 100000) / 2);
   }
   const t = Math.max(0, taxable - pa);
-  const basic = Math.min(t, BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE);
-  const higher = Math.max(0, Math.min(t - basic, HIGHER_RATE_LIMIT - BASIC_RATE_LIMIT));
+  // Bands measured on TAXABLE income (after PA): basic 0-37,700; higher up to
+  // (125,140 - pa); additional above. The higher-band WIDTH grows as the PA
+  // tapers, so it must be derived from the tapered pa, not a fixed 50,270 start.
+  const basicBandWidth = BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE; // fixed £37,700
+  const basic = Math.min(t, basicBandWidth);
+  const higher = Math.max(0, Math.min(t - basic, HIGHER_RATE_LIMIT - pa - basicBandWidth));
   const additional = Math.max(0, t - basic - higher);
   return basic * INCOME_BASIC + higher * INCOME_HIGHER + additional * INCOME_ADDITIONAL;
 }

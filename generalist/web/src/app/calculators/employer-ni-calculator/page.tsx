@@ -94,6 +94,9 @@ export default function EmployerNICalculatorPage() {
               <p className="mt-3 text-base text-slate-700 leading-relaxed">
                 The figures are statutory floors. Real all-in cost per hire is typically 10-20% higher once you factor in software, equipment, training, recruitment and any bonus or commission structure.
               </p>
+              <p className="mt-3 text-base text-slate-700 leading-relaxed">
+                Worked example: an employee on a £40,000 salary generates employer NI of £5,250 (15% on the £35,000 above the £5,000 secondary threshold) plus minimum auto-enrolment pension of £1,013 (3% on qualifying earnings between £6,240 and £40,000). The total annual employment cost is £46,263, or £3,855 per month. If the employer has at least one other employee and qualifies for the Employment Allowance, up to £10,500 of that £5,250 NI bill can be offset, reducing the NI cost to nil and the monthly employment cost to £3,418.
+              </p>
             </div>
 
             <section className="mt-12">

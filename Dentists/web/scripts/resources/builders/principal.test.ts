@@ -55,14 +55,15 @@ describe("principal builder: profit=120000, nhsActive=true, pension=0", () => {
     expect(res.ltd.net).toBeGreaterThan(0);
   });
 
-  it("partnership net pinned (brief golden 76489)", () => {
-    // Brief §4.1 golden: partnership.net=76489 at profit=120000, nhsActive=true, pension=0.
-    expect(res.partnership.net).toBeCloseTo(76489, 0);
+  it("partnership net pinned (brief golden 76732)", () => {
+    // Brief §4.1 golden: partnership.net=76732 at profit=120000, nhsActive=true, pension=0.
+    // (PA-taper higher-band fix: higher band widens as PA tapers above £100k, IT ↓.)
+    expect(res.partnership.net).toBeCloseTo(76732, 0);
   });
 
-  it("partnership tax pinned (brief golden 43511)", () => {
-    // Brief §4.1 golden: partnership.tax=43511.
-    expect(res.partnership.tax).toBeCloseTo(43511, 0);
+  it("partnership tax pinned (brief golden 43268)", () => {
+    // Brief §4.1 golden: partnership.tax=43268.
+    expect(res.partnership.tax).toBeCloseTo(43268, 0);
   });
 
   it("conservation: partnership net + tax = profit", () => {

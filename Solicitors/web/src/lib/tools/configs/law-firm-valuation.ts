@@ -113,6 +113,7 @@ export const lawFirmValuationTool: GenericTool = {
       "The most common UK method values a law firm as goodwill (a multiple of normalised profit) plus separable assets (recoverable WIP and tangible assets such as IT and fit-out).",
       "Normalised profit is the key driver. Add-backs that move the profit number 10-20% — removing personal expenses, adjusting partner drawings to market salary, stripping one-off items — typically move the valuation by more than moving the multiple.",
       "Multiples vary widely: specialist firms with high-margin recurring instruction streams command premium multiples; high-volume conveyancing factories and sole practitioners trade at lower multiples because goodwill is less transferable. London adds a premium; northern markets trade at a modest discount to Midlands.",
+      "Worked example: Thornfield Solicitors LLP is a Midlands-based mid-market partnership with £600,000 normalised profit, £180,000 of recoverable WIP and £40,000 of tangible assets. Buyer demand is normal. The partnership/LLP multiple range of 1.0x to 2.0x applies with no regional or demand adjustment (Midlands = 0%, normal = 0%). Goodwill range: £600,000 x 1.0x = £600,000 to £600,000 x 2.0x = £1,200,000. Adding WIP (£180,000) and tangibles (£40,000) gives a total indicative value of £820,000 to £1,420,000. The mid-point of approximately £1,120,000 is a useful starting point for partner discussions and succession planning.",
     ],
   },
   faqs: [

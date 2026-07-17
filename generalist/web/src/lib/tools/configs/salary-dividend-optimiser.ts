@@ -61,6 +61,7 @@ export const salaryDividendTool: GenericTool = {
     paragraphs: [
       "For a UK limited company director, the most tax-efficient extraction typically combines a small salary with dividends drawn from post-tax profit. The model applies corporation tax, employer NI, employee NI, income tax, and dividend tax together so you see the true net position rather than each tax in isolation.",
       "The 2026/27 secondary threshold is £5,000, so any salary above £5,000 attracts 15% employer NI (unless the Employment Allowance of £10,500 is available to offset it). The calculator models both scenarios.",
+      "Worked example: on company profits of £60,000, the optimiser selects a salary of £12,570 (equal to the personal allowance). Employer NI on £7,570 above the £5,000 secondary threshold is £1,135. After deducting salary and employer NI the company profit falls to £46,295, which sits entirely within the 19% small profits rate, producing corporation tax of £8,796. The remaining £37,499 is paid as dividends. Income tax and employee NI on the salary are both nil because it does not exceed the personal allowance or primary threshold. Dividend tax on £37,499 (£500 allowance used first, remainder taxed at 10.75% basic rate) is £3,977. Total tax across all heads is £13,908 and the director keeps £46,091 in cash, an effective take rate of around 77% of pre-tax company profit.",
     ],
   },
   faqs: [

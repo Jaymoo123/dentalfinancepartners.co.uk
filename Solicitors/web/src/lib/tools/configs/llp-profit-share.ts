@@ -130,6 +130,7 @@ export const llpProfitShareTool: GenericTool = {
       "Two-tier gives senior partners 1.5x the points of junior partners, creating a predictable seniority premium without full lock-step complexity.",
       "Points-based allows you to set a custom senior multiplier (e.g. 2x), reflecting steeper differentials common in specialist or high-revenue firms.",
       "Fixed-share plus equity pays fixed-share partners a defined annual amount first, then distributes the remainder to equity partners on a points basis. This method is used where a firm wants to acknowledge contributions below full equity without granting profit-sharing rights.",
+      "Worked example: Meridian Law LLP has £800,000 of profit available for allocation. The firm uses a two-tier method with 3 senior equity partners (1.5 points each) and 2 junior equity partners (1 point each). Total points = (3 x 1.5) + (2 x 1) = 6.5. Value per point = £800,000 / 6.5 = £123,077. Each senior partner receives £123,077 x 1.5 = £184,615 (23.1% of total profit). Each junior partner receives £123,077 x 1.0 = £123,077 (15.4% of total profit). The three senior partners together take £553,846 and the two junior partners take £246,154, exhausting the full £800,000.",
     ],
   },
   faqs: [
