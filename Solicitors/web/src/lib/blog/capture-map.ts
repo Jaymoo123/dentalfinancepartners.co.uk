@@ -4,7 +4,9 @@
  * Keys are slugifyCategory() outputs (see lib/blog.ts).
  * Priority: premiumSlug > toolSlug > resourceId (MiniCapture fallback).
  *
- * All four email-gated resources are now built and enabled in registry.ts.
+ * All four resources are built and enabled in registry.ts. The resource slot
+ * renders MiniCapture (a qualified free-review form) via ResourceGate; the email
+ * gate was retired 2026-07-17, so resourceId now selects the free-review CTA.
  * partnership-llp-structure is mapped in taxonomy.ts blogCategorySlugs.
  */
 
@@ -13,7 +15,8 @@ export type CaptureConfig = {
   toolSlug: string | null;
   /** Premium tool id for the early island (renders PremiumUpgrade). Takes precedence over toolSlug. */
   premiumSlug: string | null;
-  /** Email-gated resource id (renders ResourceGate). null = asset not yet built. */
+  /** Resource id: renders ResourceGate (a MiniCapture free-review form; the email
+   * gate was retired 2026-07-17). null = asset not yet built. */
   resourceId: string | null;
   /** Describes the asset to build when resourceId is a placeholder. */
   resourceTodo?: string;

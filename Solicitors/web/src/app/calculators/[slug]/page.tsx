@@ -74,7 +74,7 @@ export default async function CalculatorPage({
           />
           <div className="mt-6 max-w-3xl">
             <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/90">
-              Free calculator · UK 2025/26
+              Free calculator · UK 2026/27
             </p>
             <h1 className="mt-3 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
               {tool.name}

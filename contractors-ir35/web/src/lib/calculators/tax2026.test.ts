@@ -62,6 +62,16 @@ describe("personalTax dividend stacking (HP §5)", () => {
   });
 });
 
+describe("income tax under the PA taper (pinning: 45%-band split above £100k)", () => {
+  it("£150k salary -> £53,703 income tax (PA fully tapered)", () => {
+    // pa=0; basic 37,700@20% + higher (125,140-37,700)@40% + additional (150,000-125,140)@45%
+    expect(personalTax(150000, 0).incomeTaxOnSalary).toBeCloseTo(53703, 0);
+  });
+  it("£45k salary unchanged by the fix -> £6,486 income tax (PA full)", () => {
+    expect(personalTax(45000, 0).incomeTaxOnSalary).toBeCloseTo(6486, 0);
+  });
+});
+
 describe("limitedTakeHome outside IR35 (signature golden)", () => {
   it("£120k turnover, £12,570 salary, £6k expenses, single director", () => {
     const r = limitedTakeHome({ turnover: 120000, salary: 12570, expenses: 6000 });

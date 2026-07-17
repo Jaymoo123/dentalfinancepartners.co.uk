@@ -35,8 +35,11 @@ function calcIncomeTax(salary: number): { tax: number; pa: number } {
   let pa = PERSONAL_ALLOWANCE;
   if (salary > 100000) pa = Math.max(0, PERSONAL_ALLOWANCE - (salary - 100000) / 2);
   const taxable = Math.max(0, salary - pa);
+  // Additional-rate 45% starts at £125,140 gross, i.e. (HIGHER_RATE_LIMIT - pa) in
+  // taxable terms; using the fixed £74,870 higher band is only right at the full PA.
+  const higherBand = Math.max(0, HIGHER_RATE_LIMIT - pa - (BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE));
   const basic = Math.min(taxable, BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE);
-  const higher = Math.max(0, Math.min(taxable - basic, HIGHER_RATE_LIMIT - BASIC_RATE_LIMIT));
+  const higher = Math.max(0, Math.min(taxable - basic, higherBand));
   const additional = Math.max(0, taxable - basic - higher);
   return { tax: basic * INCOME_BASIC + higher * INCOME_HIGHER + additional * INCOME_ADDITIONAL, pa };
 }

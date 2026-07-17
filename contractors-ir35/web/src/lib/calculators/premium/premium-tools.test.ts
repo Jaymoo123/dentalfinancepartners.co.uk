@@ -17,7 +17,7 @@
  *   personalTax(12570, 50000).dividendTax              = 8396.25
  *
  * FIGURES TRACED (tax2026.ts constants):
- *   PERSONAL_ALLOWANCE=12570, BASIC_RATE_LIMIT=37700, HIGHER_RATE_LIMIT=112570
+ *   PERSONAL_ALLOWANCE=12570, BASIC_RATE_LIMIT=37700, ADDITIONAL_RATE_GROSS_THRESHOLD=125140
  *   INCOME_TAX={basic:0.20,higher:0.40,additional:0.45}
  *   DIVIDEND_ALLOWANCE=500, DIVIDEND_RATES={ordinary:0.1075,upper:0.3575,additional:0.3935}
  *   NI={primaryThreshold:12570,upperEarningsLimit:50270,employeeMain:0.08,employeeUpper:0.02,

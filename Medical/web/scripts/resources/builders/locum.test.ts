@@ -51,17 +51,19 @@ describe("locum tax compute lib (golden)", () => {
       pensionContributions: 0,
       studentLoanPlan: "plan2",
     });
-    // netIncome = 110000
-    // taxableIncome = 110000-12570 = 97430
+    // netIncome = 110000 (> £100k so PA tapers: 12570 - (110000-100000)/2 = 7570)
+    // taxableIncome = 110000-7570 = 102430
     // basic = 37700*0.2 = 7540
-    // higher = (97430-37700)=59730 < 74870 -> 59730*0.4 = 23892; incomeTax = 31432
+    // additionalTaxable = 125140-7570 = 117570
+    // higher = min(102430-37700, 117570-37700)=64730*0.4 = 25892; incomeTax = 33432
     // NI: band1 = 37700*0.06=2262; above = (110000-50270)*0.02=59730*0.02=1194.6; NI=3456.6
     // student loan plan2 threshold=28470: (110000-28470)*0.09=81530*0.09=7337.7
+    // (pre-fix asserted incomeTax £31,432, using untapered PA + fixed £74,870 band)
     expect(result.netIncome).toBe(110000);
-    expect(result.incomeTax).toBeCloseTo(31432, 2);
+    expect(result.incomeTax).toBeCloseTo(33432, 2);
     expect(result.nationalInsurance).toBeCloseTo(3456.6, 2);
     expect(result.studentLoanRepayment).toBeCloseTo(7337.7, 1);
-    expect(result.totalDeductions).toBeCloseTo(42226.3, 1);
+    expect(result.totalDeductions).toBeCloseTo(44226.3, 1);
   });
 
   it("LOC-C: 180k income, 20k expenses, 20k pension, Plan 1 student loan (additional rate)", () => {
@@ -71,15 +73,15 @@ describe("locum tax compute lib (golden)", () => {
       pensionContributions: 20000,
       studentLoanPlan: "plan1",
     });
-    // netIncome = 140000
-    // taxableIncome = 140000-12570 = 127430
+    // netIncome = 140000 (> £125,140 so PA fully tapered to £0); taxableIncome = 140000
     // basic = 37700*0.2 = 7540
-    // higher = 74870*0.4 = 29948
-    // additional: 127430-112570=14860 -> 14860*0.45=6687; incomeTax=44175
+    // higher = (125140-37700)=87440*0.4 = 34976
+    // additional: 140000-125140=14860 -> 14860*0.45=6687; incomeTax=49203
     // NI: band1=37700*0.06=2262; above=(140000-50270)*0.02=89730*0.02=1794.6; NI=4056.6
     // student loan plan1 threshold=26065: (140000-26065)*0.09=113935*0.09=10254.15
+    // (pre-fix asserted incomeTax £44,175, using untapered PA + fixed £74,870 band)
     expect(result.netIncome).toBe(140000);
-    expect(result.incomeTax).toBeCloseTo(44175, 1);
+    expect(result.incomeTax).toBeCloseTo(49203, 1);
     expect(result.nationalInsurance).toBeCloseTo(4056.6, 1);
     expect(result.studentLoanRepayment).toBeCloseTo(10254.15, 1);
   });

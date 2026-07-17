@@ -52,23 +52,25 @@ export function calcLocumTax(input: LocumTaxInput): LocumTaxResult {
   const { grossIncome, expenses, pensionContributions, studentLoanPlan } = input;
 
   const netIncome = grossIncome - expenses - pensionContributions;
-  const taxableIncome = Math.max(0, netIncome - PERSONAL_ALLOWANCE);
+  // Personal allowance tapers £1 per £2 above £100k, nil at £125,140.
+  const pa = netIncome <= 100000 ? PERSONAL_ALLOWANCE : Math.max(0, PERSONAL_ALLOWANCE - (netIncome - 100000) / 2);
+  const taxableIncome = Math.max(0, netIncome - pa);
 
-  // Income tax
+  // Income tax. The 45% band starts at £125,140 gross, i.e. (HIGHER_RATE_LIMIT - pa)
+  // taxable; the fixed £74,870 higher band is only correct at the full PA.
+  const basicBand = BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE; // 37,700, fixed
+  const additionalTaxable = Math.max(basicBand, HIGHER_RATE_LIMIT - pa);
   let incomeTax = 0;
   if (taxableIncome > 0) {
-    const basicBandIncome = Math.min(taxableIncome, BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE);
+    const basicBandIncome = Math.min(taxableIncome, basicBand);
     incomeTax += basicBandIncome * 0.2;
 
-    if (taxableIncome > BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE) {
-      const higherBandIncome = Math.min(
-        taxableIncome - (BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE),
-        HIGHER_RATE_LIMIT - BASIC_RATE_LIMIT,
-      );
+    if (taxableIncome > basicBand) {
+      const higherBandIncome = Math.min(taxableIncome - basicBand, additionalTaxable - basicBand);
       incomeTax += higherBandIncome * 0.4;
 
-      if (taxableIncome > HIGHER_RATE_LIMIT - PERSONAL_ALLOWANCE) {
-        const additionalBandIncome = taxableIncome - (HIGHER_RATE_LIMIT - PERSONAL_ALLOWANCE);
+      if (taxableIncome > additionalTaxable) {
+        const additionalBandIncome = taxableIncome - additionalTaxable;
         incomeTax += additionalBandIncome * 0.45;
       }
     }

@@ -53,10 +53,11 @@ export function calcDividendTax(otherIncome: number, dividends: number): Dividen
   const divAfterPA = dividends - paUsedByDividends;
   const taxableOther = otherIncome - paUsedByOther;
 
-  // Band capacities are defined on TAXABLE income, so they are fixed even
-  // when the personal allowance tapers above £100k.
+  // Band capacities are defined on TAXABLE income (after PA). Basic is fixed at
+  // £37,700; the higher band runs up to (125,140 - pa), so its width GROWS as
+  // the personal allowance tapers above £100k and must track the tapered pa.
   const basicCap = BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE;
-  const higherCap = HIGHER_RATE_LIMIT - BASIC_RATE_LIMIT;
+  const higherCap = Math.max(0, HIGHER_RATE_LIMIT - pa - basicCap);
 
   const otherInBasic = Math.min(taxableOther, basicCap);
   const otherInHigher = Math.min(taxableOther - otherInBasic, higherCap);

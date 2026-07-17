@@ -73,13 +73,26 @@ describe("calcLocumTax — golden tests (pinned to OLD component outputs)", () =
   });
 
   it("additional rate income: gross=200000 expenses=10000 pension=0", () => {
-    // netIncome = 190000; taxableIncome = 190000 - 12570 = 177430
+    // netIncome = 190000; PA fully tapered to £0 above £125,140, so taxable = 190000
     // basic: 37700 * 0.2 = 7540
-    // higher: 74870 * 0.4 = 29948
-    // additional: (177430 - 112570) * 0.45 = 64860 * 0.45 = 29187
-    // incomeTax = 7540 + 29948 + 29187 = 66675
+    // higher: (125140 - 37700) * 0.4 = 87440 * 0.4 = 34976
+    // additional: (190000 - 125140) * 0.45 = 64860 * 0.45 = 29187
+    // incomeTax = 7540 + 34976 + 29187 = 71703
+    // (pre-fix this asserted £66,675, using the fixed £74,870 higher band and an
+    // untapered PA — both wrong above £100k)
     const r = calcLocumTax({ grossIncome: 200000, expenses: 10000, pensionContributions: 0, studentLoanPlan: "none" });
-    expect(r.incomeTax).toBeCloseTo(66675, 0);
+    expect(r.incomeTax).toBeCloseTo(71703, 0);
+  });
+
+  it("pinning: £150k net income -> £53,703 income tax (PA fully tapered, 45%-band split)", () => {
+    // netIncome = 150000, PA tapered to £0; 37,700@20% + 87,440@40% + 24,860@45%
+    const r = calcLocumTax({ grossIncome: 150000, expenses: 0, pensionContributions: 0, studentLoanPlan: "none" });
+    expect(r.incomeTax).toBeCloseTo(53703, 0); // buggy = £54,332
+  });
+
+  it("pinning: £45k unchanged by the fix -> £6,486 income tax (PA full)", () => {
+    const r = calcLocumTax({ grossIncome: 45000, expenses: 0, pensionContributions: 0, studentLoanPlan: "none" });
+    expect(r.incomeTax).toBeCloseTo(6486, 0);
   });
 
   it("ED-01: break a constant — this test detects the change (guard test)", () => {
@@ -160,17 +173,17 @@ describe("calcNHSPension — golden tests (pinned to OLD component outputs)", ()
 
 describe("calcIncorporation — golden tests (pinned to OLD component outputs)", () => {
   it("default inputs: private=100000 expenses=15000 salary=12570 nhs=50000", () => {
-    // Sole trader:
-    //   soleTraderProfit = 85000; total = 135000; taxableAfterPA = 122430
+    // Sole trader (total £135,000 > £125,140 so PA fully tapers to £0):
+    //   soleTraderProfit = 85000; total = 135000; PA=0; taxableAfterPA = 135000
     //   basicBand = 37700 * 0.2 = 7540
-    //   higherBand = 74870 * 0.4 = 29948
-    //   additional = (122430-112570) * 0.45 = 9860 * 0.45 = 4437
-    //   incomeTax = 41925
+    //   higherBand = (125140-37700) * 0.4 = 87440 * 0.4 = 34976
+    //   additional = (135000-125140) * 0.45 = 9860 * 0.45 = 4437
+    //   incomeTax = 46953
     //   NI: niable1 = min(85000-12570, 37700) = 37700 * 0.06 = 2262
     //       niable2 = (85000-50270) * 0.02 = 34730 * 0.02 = 694.6
-    //   NI = 4087.6
-    //   totalTax = 41925 + 4087.6 = 44881.6
-    // Ltd:
+    //   NI = 2956.6
+    //   totalTax = 46953 + 2956.6 = 49909.6
+    // Ltd (unchanged by the PA-taper fix; dividends stay below £125,140 gross):
     //   companyProfit = 85000; CT = 21250; profitAfterCT = 63750
     //   dividendAmount = 63750 - 12570 = 51180
     //   taxableDividends = max(0, 51180-500) = 50680
@@ -179,21 +192,18 @@ describe("calcIncorporation — golden tests (pinned to OLD component outputs)",
     //   higherRateRemaining = max(0, 125140 - 62570) = 62570
     //   higherRateDividends = min(50680, 62570) = 50680 * 0.3575 = 18118.1
     //   dividendTax = 18118.1
-    //   nhsIncomeTaxableAfterPA = 50000 - 12570 = 37430
-    //   nhsIncomeTax = 37430 * 0.2 = 7486
+    //   nhsIncomeTaxableAfterPA = 50000 - 12570 = 37430; nhsIncomeTax = 7486
     //   ltdTotalTax = 21250 + 18118.1 + 7486 = 46854.1
-    //   Class 4 corrected to 6% (2026-07-06; 9% abolished Apr 2024): soleTraderTotalTax
-    //   = 44881.60, taxSavings = 44881.60 - 46854.10 = -1972.50 (incorporation costs more here)
+    //   taxSavings = 49909.60 - 46854.10 = 3055.50 (incorporation now saves tax here)
+    //   (pre-fix asserted soleTraderTotalTax £44,881.60 / taxSavings -£1,972.50,
+    //   using the fixed £74,870 higher band and an untapered PA — both wrong above £100k)
     const r = calcIncorporation({ privateIncome: 100000, expenses: 15000, desiredSalary: 12570, nhsIncome: 50000 });
     expect(r.soleTraderTaxableIncome).toBe(135000);
     expect(r.companyProfit).toBe(85000);
     expect(r.corporationTax).toBe(21250);
-    // PINNED 2026-07-06 after the Class 4 rate correction (9% -> 6%): these
-    // exact figures exist because typeof-only assertions let the abolished 9%
-    // rate survive undetected. Delta vs old = 3% x 37,700 = 1,131.00 exactly.
-    expect(r.soleTraderTotalTax).toBeCloseTo(44881.6, 1);
+    expect(r.soleTraderTotalTax).toBeCloseTo(49909.6, 1);
     expect(r.limitedCompanyTotalTax).toBeCloseTo(46854.1, 1);
-    expect(r.taxSavings).toBeCloseTo(-1972.5, 1);
+    expect(r.taxSavings).toBeCloseTo(3055.5, 1);
     expect(r.savingsPerMonth).toBeCloseTo(r.taxSavings / 12, 5);
   });
 

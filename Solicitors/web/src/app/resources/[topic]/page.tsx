@@ -8,6 +8,9 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { getGuideByTopic, publishedGuideTopics } from "@/lib/resources/content";
+import { resourceForTopic, isXlsxEnabled } from "@/lib/resources/registry";
+import type { TopicKey } from "@/lib/intent/taxonomy";
+import { ResourceGate } from "@/components/resources/ResourceGate";
 import { siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import Link from "next/link";
 
@@ -41,6 +44,10 @@ export default async function ResourceGuidePage({
   const guide = getGuideByTopic(topic);
   if (!guide) notFound();
 
+  const topicKey = topic as TopicKey;
+  const resource = resourceForTopic(topicKey);
+  const xlsxReady = isXlsxEnabled(resource);
+
   return (
     <>
       <section className="bg-[var(--primary)] text-white">
@@ -65,6 +72,18 @@ export default async function ResourceGuidePage({
               {guide.summary}
             </p>
           )}
+          {xlsxReady && resource?.xlsx && (
+            <a
+              href={resource.xlsx.file}
+              download
+              className="mt-6 inline-flex items-center gap-2 rounded-full border-2 border-white bg-white px-5 py-2.5 text-sm font-semibold text-[var(--primary)] transition-all hover:bg-transparent hover:text-white"
+            >
+              <svg className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              {resource.xlsx.label}
+            </a>
+          )}
         </div>
       </section>
 
@@ -82,22 +101,10 @@ export default async function ResourceGuidePage({
               dangerouslySetInnerHTML={{ __html: guide.html }}
             />
 
-            <aside className="mt-16 rounded-2xl bg-[var(--primary)] p-8 text-white sm:p-10">
-              <h2 className="font-serif text-2xl font-semibold text-white">
-                Get a specialist view for your firm
-              </h2>
-              <p className="mt-3 text-base leading-relaxed text-white/80">
-                This guide gives you the framework. Your firm's position depends on its structure,
-                the client money it holds, its fee profile and your specific circumstances.
-                A free first call with a specialist will point you in the right direction.
-              </p>
-              <Link
-                href="/contact"
-                className="mt-6 inline-flex min-h-11 items-center justify-center rounded-full border-2 border-white px-6 py-2.5 text-sm font-semibold text-white transition-all hover:bg-white hover:text-[var(--primary)]"
-              >
-                Book a free call
-              </Link>
-            </aside>
+            {/* Lead CTA: qualified free-review request (replaces plain /contact link) */}
+            <div className="mt-16">
+              <ResourceGate topic={topicKey} />
+            </div>
           </div>
         </div>
       </article>

@@ -288,6 +288,19 @@ describe("calcVatScheme", () => {
   });
 });
 
+// ── Income tax band split under the PA taper (pinning) ────────────────────
+describe("calcTakeHomePay income tax above £100k (45%-band split)", () => {
+  it("£150k salary -> £53,703 income tax (PA fully tapered)", () => {
+    const out = calcTakeHomePay({ salary: 150000, pensionPercent: 0, plan: "none" });
+    // 37,700@20% + (125,140-37,700)@40% + (150,000-125,140)@45% = £53,703 (buggy = £54,332)
+    expect(out.incomeTax).toBeCloseTo(53703, 0);
+  });
+  it("£45k salary unchanged by the fix -> £6,486 income tax (PA full)", () => {
+    const out = calcTakeHomePay({ salary: 45000, pensionPercent: 0, plan: "none" });
+    expect(out.incomeTax).toBeCloseTo(6486, 0);
+  });
+});
+
 // ── Pension optimiser ─────────────────────────────────────────────────────
 describe("calcPensionOptimiser", () => {
   it("standard inputs: CT saved is positive", () => {

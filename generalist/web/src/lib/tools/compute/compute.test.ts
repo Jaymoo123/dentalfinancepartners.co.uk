@@ -83,6 +83,16 @@ describe("take-home-pay compute", () => {
     // net = 45000 - 6486 - 2994.40 = 35519.60
     expect(r2(r.net)).toBe(35519.60);
   });
+
+  it("salary=150000 (PA fully tapered) → income tax 53703 (PA-taper band-split fix)", () => {
+    // PA fully tapered to 0 at income >= 125,140. Taxable = 150000.
+    // basic 37700*0.20 = 7540; higher runs to (125140-0) so width 87440:
+    //   87440*0.40 = 34976; additional (150000-125140)=24860*0.45 = 11187.
+    // IT = 7540 + 34976 + 11187 = 53703. (Buggy fixed-width band gave 54332.)
+    const r = calcTakeHomePay(150000, 0, "none");
+    expect(r2(r.incomeTax)).toBe(53703);
+    expect(r.personalAllowance).toBe(0);
+  });
 });
 
 // ---------------------------------------------------------------------------

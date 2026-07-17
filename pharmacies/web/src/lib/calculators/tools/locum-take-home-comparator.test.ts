@@ -81,6 +81,19 @@ describe("locumTakeHomeComparator", () => {
     expect(umbRow?.value).toBe("£47,291");
   });
 
+  it("sole trader above £100k: PA taper + 45%-band split (pinning £150k -> £53,703)", () => {
+    // profit = 625*6*40 = 150,000, no expenses; PA fully tapered to £0.
+    // taxable 150,000: 37,700@20% + 87,440@40% + 24,860@45% = £53,703 (buggy = £54,332)
+    const result = locumTakeHomeComparator.compute({
+      dayRate: 625,
+      daysPerWeek: 6,
+      weeksPerYear: 40,
+      annualExpenses: 0,
+    });
+    const taxRow = result.rows?.find((r) => r.label === "Income tax");
+    expect(taxRow?.value).toBe("−£53,703");
+  });
+
   it("zero income: sole trader take-home is clamped to zero", () => {
     // profit=0, tax=0, class2=£179 → without clamp would be negative; tool clamps to £0
     const result = locumTakeHomeComparator.compute({

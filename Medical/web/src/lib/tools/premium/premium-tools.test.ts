@@ -165,15 +165,16 @@ describe("Tool 2 · locum-take-home-premium (calcLocumTax)", () => {
   });
 
   it("LOC-C: gross=200000, exp=10000, pen=0, none", () => {
-    // netIncome = 190000; taxableIncome = 177430
-    // basic = 37700 * 0.2 = 7540; higher = 74870 * 0.4 = 29948; add = 64860 * 0.45 = 29187
-    // IT = 66675; NI: niable1 = 37700 * 0.06 = 2262; niable2 = (190000-50270)*0.02 = 2794.6
-    // NI = 5056.6; netTakeHome = 190000 - 66675 - 5056.6 = 118268.4
+    // netIncome = 190000; PA fully tapered to £0, so taxableIncome = 190000
+    // basic = 37700 * 0.2 = 7540; higher = 87440 * 0.4 = 34976; add = (190000-125140)*0.45 = 29187
+    // IT = 71703; NI: niable1 = 37700 * 0.06 = 2262; niable2 = (190000-50270)*0.02 = 2794.6
+    // NI = 5056.6; netTakeHome = 190000 - 71703 - 5056.6 = 113240.4
+    // (pre-fix IT asserted £66,675, using the fixed £74,870 higher band + untapered PA)
     const r = calcLocumTax({ grossIncome: 200000, expenses: 10000, pensionContributions: 0, studentLoanPlan: "none" });
     expect(r.netIncome).toBe(190000);
-    expect(r.incomeTax).toBeCloseTo(66675, 2);
+    expect(r.incomeTax).toBeCloseTo(71703, 2);
     expect(r.nationalInsurance).toBeCloseTo(5056.6, 1);
-    expect(r.netTakeHome).toBeCloseTo(118268.4, 1);
+    expect(r.netTakeHome).toBeCloseTo(113240.4, 1);
   });
 
   it("LOC-A via config compute: headline contains 49,011, tone good", () => {
@@ -209,28 +210,29 @@ describe("Tool 2 · locum-take-home-premium (calcLocumTax)", () => {
 
 describe("Tool 3 · incorporation-premium (calcIncorporation, corrected 6% Class 4)", () => {
   it("INC-A (reference case, pinned by brief CRITICAL UPDATE): private=100000, exp=15000, salary=12570, nhs=50000", () => {
-    // Sole trader: soleTraderProfit = 85000; total = 135000; taxableAfterPA = 122430
-    //   basicBand = 37700 * 0.2 = 7540; higherBand = 74870 * 0.4 = 29948
-    //   additional = (122430 - 112570) * 0.45 = 9860 * 0.45 = 4437; IT = 41925
+    // Sole trader (total £135,000 > £125,140 so PA fully tapers to £0): taxable = 135000
+    //   basicBand = 37700 * 0.2 = 7540; higherBand = 87440 * 0.4 = 34976
+    //   additional = (135000 - 125140) * 0.45 = 9860 * 0.45 = 4437; IT = 46953
     //   NI (6%): niable1 = min(85000-12570, 37700) = 37700 * 0.06 = 2262
     //            niable2 = (85000 - 50270) * 0.02 = 34730 * 0.02 = 694.6; NI = 2956.6
-    //   soleTraderTotalTax = 41925 + 2956.6 = 44881.6
-    // Ltd: companyProfit = 85000; CT = 21250; profitAfterCT = 63750
-    //   dividendAmount = 63750 - 12570 = 51180; taxableDividends = 50680
+    //   soleTraderTotalTax = 46953 + 2956.6 = 49909.6
+    // Ltd (unchanged; dividends stay below £125,140 gross): companyProfit = 85000; CT = 21250
+    //   dividendAmount = 51180; taxableDividends = 50680
     //   totalIncomeBeforeDividends = 62570 (>= 50270); basicRateRemaining = 0
     //   higherRateRemaining = 125140 - 62570 = 62570
     //   higherRateDividends = min(50680, 62570) = 50680 * 0.3575 = 18118.1
     //   nhsIncomeTax = (50000 - 12570) * 0.2 = 37430 * 0.2 = 7486
     //   ltdTotalTax = 21250 + 18118.1 + 7486 = 46854.1
-    // taxSavings = 44881.6 - 46854.1 = -1972.5 (incorporation costs more)
-    // Conservation: taxSavings = soleTraderTotalTax - ltdTotalTax. Pass.
+    // taxSavings = 49909.6 - 46854.1 = 3055.5 (incorporation now saves tax here)
+    // (pre-fix asserted soleTraderTotalTax £44,881.60 / taxSavings -£1,972.50 — the
+    //  fixed £74,870 higher band + untapered PA understated the sole-trader tax above £100k)
     const r = calcIncorporation({ privateIncome: 100000, expenses: 15000, desiredSalary: 12570, nhsIncome: 50000 });
-    expect(r.soleTraderTotalTax).toBeCloseTo(44881.6, 1);
+    expect(r.soleTraderTotalTax).toBeCloseTo(49909.6, 1);
     expect(r.corporationTax).toBe(21250);
     expect(r.dividendTax).toBeCloseTo(18118.1, 1);
     expect(r.limitedCompanyTotalTax).toBeCloseTo(46854.1, 1);
-    expect(r.taxSavings).toBeCloseTo(-1972.5, 1);
-    expect(r.savingsPerMonth).toBeCloseTo(-1972.5 / 12, 3);
+    expect(r.taxSavings).toBeCloseTo(3055.5, 1);
+    expect(r.savingsPerMonth).toBeCloseTo(3055.5 / 12, 3);
     // Conservation: taxSavings = soleTraderTotalTax - ltdTotalTax
     expect(r.taxSavings).toBeCloseTo(r.soleTraderTotalTax - r.limitedCompanyTotalTax, 3);
   });
@@ -240,16 +242,21 @@ describe("Tool 3 · incorporation-premium (calcIncorporation, corrected 6% Class
     // dividendAmount = 210000 - 12570 = 197430; taxableDividends = 196930
     // totalIncomeBeforeDividends = 12570; basicRateRemaining = 37700
     // basicRate = 37700 * 0.1075 = 4052.75; remaining = 159230
-    // higherRateRemaining = 112570; higherRateDividends = min(159230, 74870) = 74870 * 0.3575 = 26766.025
+    // higherRateRemaining (gross-space, taper-independent) = 125140 - 12570 = 112570
+    // higherRateDividends = min(159230, 112570 - 37700 = 74870) = 74870 * 0.3575 = 26766.025
     // additional = (159230 - 74870) * 0.3935 = 84360 * 0.3935 = 33195.66; dividendTax = 64014.435
-    // soleTraderTotalTax = 114031.6; ltdTotalTax = 70000 + 64014.435 + 0 = 134014.435
-    // taxSavings = 114031.6 - 134014.435 = -19982.835
+    // Sole trader (profit £280,000, PA fully tapered to £0, taxable = 280000):
+    //   IT = 7540 + 87440*0.4 + (280000-125140)*0.45 = 7540 + 34976 + 69687 = 112203
+    //   NI = 2262 + (280000-50270)*0.02 = 2262 + 4594.6 = 6856.6; total = 119059.6
+    // ltdTotalTax = 70000 + 64014.435 + 0 = 134014.435
+    // taxSavings = 119059.6 - 134014.435 = -14954.835
+    // (pre-fix asserted soleTraderTotalTax £114,031.60 — untapered PA + fixed £74,870 band)
     const r = calcIncorporation({ privateIncome: 300000, expenses: 20000, desiredSalary: 12570, nhsIncome: 0 });
-    expect(r.soleTraderTotalTax).toBeCloseTo(114031.6, 1);
+    expect(r.soleTraderTotalTax).toBeCloseTo(119059.6, 1);
     expect(r.corporationTax).toBe(70000);
     expect(r.dividendTax).toBeCloseTo(64014.435, 2);
     expect(r.limitedCompanyTotalTax).toBeCloseTo(134014.435, 2);
-    expect(r.taxSavings).toBeCloseTo(-19982.835, 2);
+    expect(r.taxSavings).toBeCloseTo(-14954.835, 2);
     // Conservation
     expect(r.taxSavings).toBeCloseTo(r.soleTraderTotalTax - r.limitedCompanyTotalTax, 2);
   });
@@ -261,38 +268,43 @@ describe("Tool 3 · incorporation-premium (calcIncorporation, corrected 6% Class
     // basicRate = 37700 * 0.1075 = 4052.75; remaining = 46730
     // higherRateRemaining = 112570; higherRateDividends = min(46730, 74870) = 46730 * 0.3575 = 16706.975
     // dividendTax = 4052.75 + 16706.975 = 20759.725... (executed: 20758.725)
-    // soleTraderTotalTax = 43531.6; ltdTotalTax = 32500 + 20758.725 = 53258.725
-    // taxSavings = 43531.6 - 53258.725 = -9727.125
+    // Sole trader (profit £130,000 > £125,140, PA fully tapered to £0, taxable = 130000):
+    //   IT = 7540 + 87440*0.4 + (130000-125140)*0.45 = 7540 + 34976 + 2187 = 44703
+    //   NI = 2262 + (130000-50270)*0.02 = 2262 + 1594.6 = 3856.6; total = 48559.6
+    // ltdTotalTax = 32500 + 20758.725 = 53258.725
+    // taxSavings = 48559.6 - 53258.725 = -4699.125
+    // (pre-fix asserted soleTraderTotalTax £43,531.60 — untapered PA + fixed £74,870 band)
     const r = calcIncorporation({ privateIncome: 150000, expenses: 20000, desiredSalary: 12570, nhsIncome: 0 });
-    expect(r.soleTraderTotalTax).toBeCloseTo(43531.6, 1);
+    expect(r.soleTraderTotalTax).toBeCloseTo(48559.6, 1);
     expect(r.corporationTax).toBe(32500);
     expect(r.dividendTax).toBeCloseTo(20758.725, 2);
     expect(r.limitedCompanyTotalTax).toBeCloseTo(53258.725, 2);
-    expect(r.taxSavings).toBeCloseTo(-9727.125, 2);
+    expect(r.taxSavings).toBeCloseTo(-4699.125, 2);
     // Conservation
     expect(r.taxSavings).toBeCloseTo(r.soleTraderTotalTax - r.limitedCompanyTotalTax, 2);
   });
 
-  it("INC-A via config compute: headline reads 'Incorporating costs more here', tone warn", () => {
-    // taxSavings = -1972.5; Math.abs = 1972.5; Math.round = 1973 (standard rounding)
+  it("INC-A via config compute: headline reads 'Estimated tax saving from incorporating', tone good", () => {
+    // taxSavings = +3055.5 (post PA-taper fix); Math.round(3055.5) = 3056
+    // (pre-fix taxSavings was -1972.5 -> "Incorporating costs more here", £1,973)
     const result = incorporationPremiumConfig.compute({
       values: { privateIncome: 100000, expenses: 15000, nhsIncome: 50000, desiredSalary: 12570 },
       rows: [],
     });
-    expect(result.headline.label).toBe("Incorporating costs more here");
-    expect(result.headline.tone).toBe("warn");
-    expect(result.headline.value).toBe("£1,973");
+    expect(result.headline.label).toBe("Estimated tax saving from incorporating");
+    expect(result.headline.tone).toBe("good");
+    expect(result.headline.value).toBe("£3,056");
   });
 
-  it("INC-A: sole trader marked as best (taxSavings < 0)", () => {
+  it("INC-A: limited company marked as best (taxSavings > 0 after the PA-taper fix)", () => {
     const result = incorporationPremiumConfig.compute({
       values: { privateIncome: 100000, expenses: 15000, nhsIncome: 50000, desiredSalary: 12570 },
       rows: [],
     });
     const stScenario = result.scenarioResults?.find((s) => s.id === "sole-trader");
     const ltdScenario = result.scenarioResults?.find((s) => s.id === "ltd");
-    expect(stScenario?.best).toBe(true);
-    expect(ltdScenario?.best).toBe(false);
+    expect(stScenario?.best).toBe(false);
+    expect(ltdScenario?.best).toBe(true);
   });
 
   it("INC-A: NHS Pension impact row ALWAYS present (compliance non-negotiable)", () => {

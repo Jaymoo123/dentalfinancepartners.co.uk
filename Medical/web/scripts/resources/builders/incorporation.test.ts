@@ -37,23 +37,24 @@ describe("incorporation compute lib (golden)", () => {
       desiredSalary: 12570,
       nhsIncome: 50000,
     });
-    // Sole trader: profit=85000, taxableIncome=135000
-    // Income tax on (135000-12570=122430): 7540+29948+4437 = 41925
+    // Sole trader: profit=85000, taxableIncome=135000 (> £125,140 so PA tapers to £0)
+    // Income tax on 135000: 7540 + 87440*0.4 + (135000-125140)*0.45 = 7540+34976+4437 = 46953
     // NI on 85000: 37700*0.06+34730*0.02 = 2262+694.6 = 2956.6
-    // soleTraderTotalTax = 44881.6
+    // soleTraderTotalTax = 49909.6
     expect(result.soleTraderTaxableIncome).toBe(135000);
-    expect(result.soleTraderTotalTax).toBeCloseTo(44881.6, 1);
+    expect(result.soleTraderTotalTax).toBeCloseTo(49909.6, 1);
 
-    // Limited company: CT=21250, div=51180, divTax=18118.1, nhsTax=7486
+    // Limited company (unchanged): CT=21250, div=51180, divTax=18118.1, nhsTax=7486
     expect(result.companyProfit).toBe(85000);
     expect(result.corporationTax).toBeCloseTo(21250, 2);
     expect(result.dividendAmount).toBeCloseTo(51180, 2);
     expect(result.dividendTax).toBeCloseTo(18118.1, 1);
     expect(result.limitedCompanyTotalTax).toBeCloseTo(46854.1, 1);
 
-    // taxSavings is negative (incorporating costs more)
-    expect(result.taxSavings).toBeCloseTo(-1972.5, 1);
-    expect(result.savingsPerMonth).toBeCloseTo(-164.375, 1);
+    // taxSavings now positive (incorporating saves tax once the sole trader is
+    // taxed correctly above £100k). Pre-fix asserted -£1,972.50.
+    expect(result.taxSavings).toBeCloseTo(3055.5, 1);
+    expect(result.savingsPerMonth).toBeCloseTo(254.625, 1);
   });
 
   it("INC-B: high income stress test (300k private, 20k expenses, 12570 salary, no NHS)", () => {
@@ -63,13 +64,12 @@ describe("incorporation compute lib (golden)", () => {
       desiredSalary: 12570,
       nhsIncome: 0,
     });
-    // soleTraderProfit = 280000
-    // taxableIncome = 280000; taxableAfterPA = 267430
-    // basic=37700*0.2=7540; higher=74870*0.4=29948; additional=(267430-112570)*0.45=154860*0.45=69687
-    // incomeTax = 107175
+    // soleTraderProfit = 280000 (> £125,140 so PA fully tapered to £0); taxable = 280000
+    // basic=37700*0.2=7540; higher=(125140-37700)=87440*0.4=34976; additional=(280000-125140)*0.45=154860*0.45=69687
+    // incomeTax = 112203
     // NI: band1=37700*0.06=2262; above=(280000-50270)*0.02=229730*0.02=4594.6; NI=6856.6
-    // soleTraderTotalTax = 114031.6
-    expect(result.soleTraderTotalTax).toBeCloseTo(114031.6, 1);
+    // soleTraderTotalTax = 119059.6 (pre-fix asserted £114,031.60, untapered PA + fixed £74,870 band)
+    expect(result.soleTraderTotalTax).toBeCloseTo(119059.6, 1);
 
     // CT = 280000*0.25 = 70000
     expect(result.corporationTax).toBeCloseTo(70000, 2);

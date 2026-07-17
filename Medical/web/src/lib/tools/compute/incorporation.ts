@@ -43,26 +43,38 @@ const DIVIDEND_BASIC_RATE = 0.1075;
 const DIVIDEND_HIGHER_RATE = 0.3575;
 const DIVIDEND_ADDITIONAL_RATE = 0.3935;
 
-function calcIncomeTax(taxableAfterPA: number): number {
+/**
+ * Income tax on taxable income (already net of the personal allowance). `pa` is
+ * the PA actually applied so the 45% band starts at £125,140 gross even when the
+ * PA has tapered: additional threshold in taxable terms = (HIGHER_RATE_LIMIT - pa),
+ * never below the basic limit. The fixed £74,870 higher band only holds at full PA.
+ */
+function calcIncomeTax(taxableAfterPA: number, pa: number = PERSONAL_ALLOWANCE): number {
   let tax = 0;
   if (taxableAfterPA <= 0) return 0;
 
-  const basicBandIncome = Math.min(taxableAfterPA, BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE);
+  const basicBand = BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE; // 37,700, fixed
+  const additionalTaxable = Math.max(basicBand, HIGHER_RATE_LIMIT - pa);
+
+  const basicBandIncome = Math.min(taxableAfterPA, basicBand);
   tax += basicBandIncome * 0.2;
 
-  if (taxableAfterPA > BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE) {
-    const higherBandIncome = Math.min(
-      taxableAfterPA - (BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE),
-      HIGHER_RATE_LIMIT - BASIC_RATE_LIMIT,
-    );
+  if (taxableAfterPA > basicBand) {
+    const higherBandIncome = Math.min(taxableAfterPA - basicBand, additionalTaxable - basicBand);
     tax += higherBandIncome * 0.4;
 
-    if (taxableAfterPA > HIGHER_RATE_LIMIT - PERSONAL_ALLOWANCE) {
-      const additionalBandIncome = taxableAfterPA - (HIGHER_RATE_LIMIT - PERSONAL_ALLOWANCE);
+    if (taxableAfterPA > additionalTaxable) {
+      const additionalBandIncome = taxableAfterPA - additionalTaxable;
       tax += additionalBandIncome * 0.45;
     }
   }
   return tax;
+}
+
+/** Personal allowance after the £100k taper (£1 lost per £2 over £100k, nil at £125,140). */
+function paFor(grossIncome: number): number {
+  if (grossIncome <= 100000) return PERSONAL_ALLOWANCE;
+  return Math.max(0, PERSONAL_ALLOWANCE - (grossIncome - 100000) / 2);
 }
 
 export function calcIncorporation(input: IncorporationInput): IncorporationResult {
@@ -71,8 +83,9 @@ export function calcIncorporation(input: IncorporationInput): IncorporationResul
   // --- Sole trader ---
   const soleTraderProfit = privateIncome - expenses;
   const soleTraderTaxableIncome = soleTraderProfit + nhsIncome;
-  const taxableAfterPA = Math.max(0, soleTraderTaxableIncome - PERSONAL_ALLOWANCE);
-  const soleTraderIncomeTax = calcIncomeTax(taxableAfterPA);
+  const soleTraderPA = paFor(soleTraderTaxableIncome);
+  const taxableAfterPA = Math.max(0, soleTraderTaxableIncome - soleTraderPA);
+  const soleTraderIncomeTax = calcIncomeTax(taxableAfterPA, soleTraderPA);
 
   // Class 4 NI on private practice profit only. Main rate 6% (the 9% rate was
   // abolished from 6 April 2024; HP section 5/section 8 lock 6%/2%, matching
@@ -135,8 +148,9 @@ export function calcIncorporation(input: IncorporationInput): IncorporationResul
   }
 
   // NHS income tax (PAYE side)
-  const nhsIncomeTaxableAfterPA = Math.max(0, nhsIncome - PERSONAL_ALLOWANCE);
-  const nhsIncomeTax = calcIncomeTax(nhsIncomeTaxableAfterPA);
+  const nhsPA = paFor(nhsIncome);
+  const nhsIncomeTaxableAfterPA = Math.max(0, nhsIncome - nhsPA);
+  const nhsIncomeTax = calcIncomeTax(nhsIncomeTaxableAfterPA, nhsPA);
 
   const limitedCompanyTotalTax = corporationTax + dividendTax + nhsIncomeTax;
   const limitedCompanyNetIncome = nhsIncome + desiredSalary + dividendAmount - dividendTax;

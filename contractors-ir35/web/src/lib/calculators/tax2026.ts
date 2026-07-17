@@ -15,7 +15,7 @@ export const TAX_YEAR = "2026/27";
 export const PERSONAL_ALLOWANCE = 12570; // HP §5; tapered above £100k, nil at £125,140
 export const PA_TAPER_THRESHOLD = 100000;
 export const BASIC_RATE_LIMIT = 37700; // taxable income in the 20% band (HRT £50,270 - PA £12,570)
-export const HIGHER_RATE_LIMIT = 112570; // taxable income up to the 45% threshold (£125,140 - £12,570)
+export const ADDITIONAL_RATE_GROSS_THRESHOLD = 125140; // gross income at which the 45% band starts
 
 export const INCOME_TAX = { basic: 0.2, higher: 0.4, additional: 0.45 } as const;
 
@@ -104,11 +104,15 @@ export function personalTax(salary: number, dividends: number): PersonalTaxResul
   const paToSalary = Math.min(salary, pa);
   const paToDividends = Math.min(Math.max(pa - salary, 0), dividends);
 
+  // Additional-rate threshold in taxable-income terms. Fixed £125,140 gross minus
+  // whatever PA survives the taper (nil above £125,140), never below the basic limit.
+  const additionalTaxable = Math.max(BASIC_RATE_LIMIT, ADDITIONAL_RATE_GROSS_THRESHOLD - pa);
+
   // Income tax on salary (non-dividend), in taxable-income bands.
   const salaryTaxable = salary - paToSalary;
   const sBasic = Math.min(salaryTaxable, BASIC_RATE_LIMIT);
-  const sHigher = Math.min(Math.max(salaryTaxable - BASIC_RATE_LIMIT, 0), HIGHER_RATE_LIMIT - BASIC_RATE_LIMIT);
-  const sAdditional = Math.max(salaryTaxable - HIGHER_RATE_LIMIT, 0);
+  const sHigher = Math.min(Math.max(salaryTaxable - BASIC_RATE_LIMIT, 0), additionalTaxable - BASIC_RATE_LIMIT);
+  const sAdditional = Math.max(salaryTaxable - additionalTaxable, 0);
   const incomeTaxOnSalary =
     sBasic * INCOME_TAX.basic + sHigher * INCOME_TAX.higher + sAdditional * INCOME_TAX.additional;
 
@@ -116,7 +120,7 @@ export function personalTax(salary: number, dividends: number): PersonalTaxResul
   const divTaxable = dividends - paToDividends;
   const pos = salaryTaxable;
   const basicRoom = Math.max(0, BASIC_RATE_LIMIT - pos);
-  const higherRoom = Math.max(0, HIGHER_RATE_LIMIT - Math.max(pos, BASIC_RATE_LIMIT));
+  const higherRoom = Math.max(0, additionalTaxable - Math.max(pos, BASIC_RATE_LIMIT));
   let dBasic = Math.min(divTaxable, basicRoom);
   let dHigher = Math.min(divTaxable - dBasic, higherRoom);
   let dAdditional = divTaxable - dBasic - dHigher;

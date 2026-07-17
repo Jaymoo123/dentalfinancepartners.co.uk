@@ -10,7 +10,7 @@ import { gbp, pct } from "@accounting-network/web-shared/tools/format";
 // Income tax bands (2026/27)
 const PERSONAL_ALLOWANCE = 12_570; // gov.uk/income-tax-rates
 const BASIC_RATE_LIMIT = 37_700;   // taxable income width of 20% band
-const HIGHER_RATE_LIMIT = 112_570; // taxable income up to 45% threshold (£125,140 - PA)
+const ADDITIONAL_RATE_GROSS_THRESHOLD = 125_140; // gross income at which the 45% band starts
 const INCOME_TAX = { basic: 0.20, higher: 0.40, additional: 0.45 } as const;
 
 // Dividend rates 2026/27 (HP 28; FA 2026 s.4)
@@ -39,14 +39,28 @@ const CLASS2_WEEKLY = 3.45;
 
 // ---- Tax primitives (mirrors tax2026.ts, no cross-package import) ----
 
-function incomeTaxOnSalary(taxableIncome: number): number {
+/**
+ * Income tax on taxable income (income already net of the personal allowance).
+ * `pa` is the personal allowance actually applied, so the 45% band starts at the
+ * right place once the PA taper above £100k has eaten into it. Additional-rate
+ * threshold in taxable terms = £125,140 gross minus the surviving PA, never below
+ * the basic limit. HIGHER_RATE_LIMIT (112,570) is only correct at the full PA.
+ */
+function incomeTaxOnSalary(taxableIncome: number, pa: number = PERSONAL_ALLOWANCE): number {
   if (taxableIncome <= 0) return 0;
+  const additionalTaxable = Math.max(BASIC_RATE_LIMIT, ADDITIONAL_RATE_GROSS_THRESHOLD - pa);
   const basic = Math.min(taxableIncome, BASIC_RATE_LIMIT) * INCOME_TAX.basic;
   const higher =
-    Math.min(Math.max(taxableIncome - BASIC_RATE_LIMIT, 0), HIGHER_RATE_LIMIT - BASIC_RATE_LIMIT) *
+    Math.min(Math.max(taxableIncome - BASIC_RATE_LIMIT, 0), additionalTaxable - BASIC_RATE_LIMIT) *
     INCOME_TAX.higher;
-  const additional = Math.max(taxableIncome - HIGHER_RATE_LIMIT, 0) * INCOME_TAX.additional;
+  const additional = Math.max(taxableIncome - additionalTaxable, 0) * INCOME_TAX.additional;
   return basic + higher + additional;
+}
+
+/** Personal allowance after the £100k taper (£1 lost per £2 over £100k, nil at £125,140). */
+function personalAllowanceFor(grossIncome: number): number {
+  if (grossIncome <= 100_000) return PERSONAL_ALLOWANCE;
+  return Math.max(0, PERSONAL_ALLOWANCE - (grossIncome - 100_000) / 2);
 }
 
 function employeeNI(salary: number): number {
@@ -77,8 +91,9 @@ function soleTraderTakeHome(annualIncome: number, expenses: number): {
   netTakeHome: number;
 } {
   const profit = Math.max(0, annualIncome - expenses);
-  const taxable = Math.max(0, profit - PERSONAL_ALLOWANCE);
-  const tax = incomeTaxOnSalary(taxable);
+  const pa = personalAllowanceFor(profit);
+  const taxable = Math.max(0, profit - pa);
+  const tax = incomeTaxOnSalary(taxable, pa);
   // Class 2 NIC: £3.45/week × 52 (if profit above Small Profits Threshold £6,845 2026/27)
   // ponytail: Class 2 SPT check omitted — at locum day rates profit is always above threshold
   const class2 = CLASS2_WEEKLY * 52;
@@ -108,17 +123,20 @@ function limitedTakeHome(annualIncome: number, expenses: number): {
   const ct = corporationTax(profitBeforeTax);
   const dividends = Math.max(0, profitBeforeTax - ct);
 
-  // Personal tax on salary + dividends
-  const pa = PERSONAL_ALLOWANCE;
-  // Salary is fully within PA → no income tax on salary
-  const salaryTaxable = Math.max(0, salary - pa);
-  const salaryTax = incomeTaxOnSalary(salaryTaxable);
+  // Personal tax on salary + dividends. PA tapers on total income above £100k,
+  // which can leave part of the £12,570 salary taxable once dividends are large.
+  const pa = personalAllowanceFor(salary + dividends);
+  const paToSalary = Math.min(salary, pa);
+  const salaryTaxable = Math.max(0, salary - paToSalary);
+  const salaryTax = incomeTaxOnSalary(salaryTaxable, pa);
 
   // Dividend tax: dividends stack on top of salary in the bands
-  const divTaxable = dividends; // no PA left (all used by salary at £12,570)
-  const pos = salaryTaxable; // 0 (salary = PA)
+  const paToDividends = Math.min(Math.max(pa - salary, 0), dividends);
+  const divTaxable = dividends - paToDividends;
+  const pos = salaryTaxable;
+  const additionalTaxable = Math.max(BASIC_RATE_LIMIT, ADDITIONAL_RATE_GROSS_THRESHOLD - pa);
   const basicRoom = Math.max(0, BASIC_RATE_LIMIT - pos);
-  const higherRoom = Math.max(0, HIGHER_RATE_LIMIT - Math.max(pos, BASIC_RATE_LIMIT));
+  const higherRoom = Math.max(0, additionalTaxable - Math.max(pos, BASIC_RATE_LIMIT));
   let dBasic = Math.min(divTaxable, basicRoom);
   let dHigher = Math.min(divTaxable - dBasic, higherRoom);
   let dAdditional = divTaxable - dBasic - dHigher;
@@ -148,8 +166,9 @@ function umbrellaTakeHome(annualIncome: number, umbrellaMargin: number): {
   const grossSalary =
     (pot + NI_EMPLOYER_RATE * NI_SECONDARY_THRESHOLD) / (1 + NI_EMPLOYER_RATE + APPRENTICESHIP_LEVY);
   const eni = employerNI(grossSalary);
-  const taxable = Math.max(0, grossSalary - PERSONAL_ALLOWANCE);
-  const tax = incomeTaxOnSalary(taxable);
+  const pa = personalAllowanceFor(grossSalary);
+  const taxable = Math.max(0, grossSalary - pa);
+  const tax = incomeTaxOnSalary(taxable, pa);
   const nic = employeeNI(grossSalary);
   return {
     grossSalary,

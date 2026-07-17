@@ -48,7 +48,8 @@ export function dividendTaxOnAmount(salary: number, dividend: number): number {
   if (taxableDividend === 0) return 0;
 
   const basicBandCapacity = BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE;
-  const higherBandCapacity = HIGHER_RATE_LIMIT - BASIC_RATE_LIMIT;
+  // Higher band runs up to (125,140 - pa) in taxable terms; it widens as PA tapers.
+  const higherBandCapacity = Math.max(0, HIGHER_RATE_LIMIT - pa - basicBandCapacity);
   const salaryInBasic = Math.min(Math.max(0, salary - pa), basicBandCapacity);
   const salaryInHigher = Math.min(Math.max(0, salary - pa - salaryInBasic), higherBandCapacity);
   const remainingBasic = basicBandCapacity - salaryInBasic;

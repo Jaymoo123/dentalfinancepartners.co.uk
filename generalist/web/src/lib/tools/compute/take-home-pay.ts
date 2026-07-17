@@ -36,8 +36,12 @@ export function calcIncomeTaxTHP(salary: number): { tax: number; pa: number } {
   let pa = PERSONAL_ALLOWANCE;
   if (salary > 100000) pa = Math.max(0, PERSONAL_ALLOWANCE - (salary - 100000) / 2);
   const taxable = Math.max(0, salary - pa);
-  const basic = Math.min(taxable, BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE);
-  const higher = Math.max(0, Math.min(taxable - basic, HIGHER_RATE_LIMIT - BASIC_RATE_LIMIT));
+  // Bands are on TAXABLE income (after PA): basic is a fixed £37,700; higher runs
+  // up to (125,140 - pa). As PA tapers above £100k the higher band WIDENS, so it
+  // must be derived from the tapered pa, not a fixed 74,870.
+  const basicBandWidth = BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE;
+  const basic = Math.min(taxable, basicBandWidth);
+  const higher = Math.max(0, Math.min(taxable - basic, HIGHER_RATE_LIMIT - pa - basicBandWidth));
   const additional = Math.max(0, taxable - basic - higher);
   return { tax: basic * INCOME_BASIC + higher * INCOME_HIGHER + additional * INCOME_ADDITIONAL, pa };
 }

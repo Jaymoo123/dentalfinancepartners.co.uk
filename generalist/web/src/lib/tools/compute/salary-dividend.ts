@@ -58,8 +58,11 @@ export function calcIncomeTaxOnSalary(salary: number): number {
   let pa = PERSONAL_ALLOWANCE;
   if (salary > 100000) pa = Math.max(0, PERSONAL_ALLOWANCE - (salary - 100000) / 2);
   const taxable = Math.max(0, salary - pa);
-  const basic = Math.min(taxable, BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE);
-  const higher = Math.max(0, Math.min(taxable - basic, HIGHER_RATE_LIMIT - BASIC_RATE_LIMIT));
+  // Bands on TAXABLE income: basic fixed £37,700; higher up to (125,140 - pa).
+  // The higher band widens as PA tapers above £100k, so derive it from pa.
+  const basicBandWidth = BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE;
+  const basic = Math.min(taxable, basicBandWidth);
+  const higher = Math.max(0, Math.min(taxable - basic, HIGHER_RATE_LIMIT - pa - basicBandWidth));
   const additional = Math.max(0, taxable - basic - higher);
   return basic * INCOME_BASIC + higher * INCOME_HIGHER + additional * INCOME_ADDITIONAL;
 }
@@ -75,7 +78,8 @@ export function calcDividendTaxSD(salary: number, dividend: number): number {
   if (taxableDividend === 0) return 0;
 
   const basicBandCapacity = BASIC_RATE_LIMIT - PERSONAL_ALLOWANCE;
-  const higherBandCapacity = HIGHER_RATE_LIMIT - BASIC_RATE_LIMIT;
+  // Higher band runs up to (125,140 - pa) in taxable terms; it widens as PA tapers.
+  const higherBandCapacity = Math.max(0, HIGHER_RATE_LIMIT - pa - basicBandCapacity);
   const salaryInBasic = Math.min(Math.max(0, salary - pa), basicBandCapacity);
   const salaryInHigher = Math.min(Math.max(0, salary - pa - salaryInBasic), higherBandCapacity);
   const remainingBasic = basicBandCapacity - salaryInBasic;

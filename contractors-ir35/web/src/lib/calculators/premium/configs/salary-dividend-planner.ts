@@ -37,7 +37,7 @@ import {
   DIVIDEND_ALLOWANCE,
   DIVIDEND_RATES,
   BASIC_RATE_LIMIT,
-  HIGHER_RATE_LIMIT,
+  ADDITIONAL_RATE_GROSS_THRESHOLD,
   personalAllowance as calcPA,
 } from "@/lib/calculators/tax2026";
 
@@ -85,8 +85,9 @@ export const salaryDividendPlannerConfig: PremiumToolConfig = {
     const paToDividends = Math.min(Math.max(pa - salary, 0), dividends);
     const divTaxable    = dividends - paToDividends;
     const pos           = salary - paToSalary;
+    const additionalTaxable = Math.max(BASIC_RATE_LIMIT, ADDITIONAL_RATE_GROSS_THRESHOLD - pa);
     const basicRoom     = Math.max(0, BASIC_RATE_LIMIT - pos);
-    const higherRoom    = Math.max(0, HIGHER_RATE_LIMIT - Math.max(pos, BASIC_RATE_LIMIT));
+    const higherRoom    = Math.max(0, additionalTaxable - Math.max(pos, BASIC_RATE_LIMIT));
     let dBasic          = Math.min(divTaxable, basicRoom);
     let dHigher         = Math.min(divTaxable - dBasic, higherRoom);
     let dAdditional     = divTaxable - dBasic - dHigher;

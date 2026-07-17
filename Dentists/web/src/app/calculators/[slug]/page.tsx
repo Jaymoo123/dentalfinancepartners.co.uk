@@ -151,7 +151,7 @@ export default async function CalculatorPage({
               Get the full picture
             </h2>
             <p className="mt-4 text-base leading-relaxed text-white/85 sm:text-lg">
-              Every figure here is modelled on standard 2025/26 thresholds. Your actual position
+              Every figure here is modelled on standard 2026/27 thresholds. Your actual position
               depends on your NHS Pension status, prior-year usage, other income, and how decisions
               interact. Take the free practice health check to get a personalised view.
             </p>
