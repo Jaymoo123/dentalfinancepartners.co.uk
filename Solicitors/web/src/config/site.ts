@@ -61,6 +61,16 @@ export const siteConfig = {
     : null,
   // Canonical lead-form consent text (see derivation above). Forms append the link.
   leadConsentText,
+  // ponytail: phase-2, replies inert while dormant. Stage only; not live.
+  // leadConsentTextWithFollowUp:
+  //   "I agree to Accounts for Lawyers using my details to respond to my enquiry and provide " +
+  //   "the advice I have requested, including contacting me about it by email, phone and text " +
+  //   "message. I can ask them to stop at any time by replying STOP or clicking unsubscribe." +
+  //   // Partner-firm variant (when siteConfig.partner is non-null):
+  //   // "I agree to my details being shared by Accounts for Lawyers with our specialist partner " +
+  //   // "firm [partner.name], and to both Accounts for Lawyers and [partner.name] contacting me " +
+  //   // "about my enquiry by email, phone and text message. I can ask them to stop at any time " +
+  //   // "by replying STOP or clicking unsubscribe."
   // In-house-only consent text for resource-gate downloads. Never names a partner;
   // used only when the visitor is consenting to receive a resource from this site.
   // Forms append "See our Privacy Policy." separately.

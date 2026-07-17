@@ -62,6 +62,13 @@ export const siteConfig = {
     : null,
   // Canonical lead-form consent text (see derivation above). Forms append the link.
   leadConsentText,
+  // STAGED (do NOT make live): consent wording for the lead-nurture follow-up
+  // sequence. Switch the live form to use this text once LEAD_NURTURE_ENABLED
+  // is set and the sequence is ready to go live.
+  // No em-dashes; British English; faceless; PECR solicited-comms posture.
+  // leadConsentTextWithFollowUp: partner
+  //   ? `I agree to my details being shared by ${niche.display_name} with our specialist partner firm ${partner.name}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice, including contacting me about it by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`
+  //   : `I agree to Holloway Davies using my details to respond to my enquiry and provide the advice I have requested, including contacting me about it by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`,
   // In-house resource consent text — used by the resource gate ONLY (never the
   // partner-shared lead form). Resources are delivered on-page; the email path
   // is stubbed behind RESOURCE_EMAIL_DELIVERY_ENABLED until a verified from-domain

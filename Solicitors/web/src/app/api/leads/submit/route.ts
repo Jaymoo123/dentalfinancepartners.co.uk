@@ -10,14 +10,29 @@
  *   2. Server-side validation.
  *   3. 24-hour same-source+email dedupe with adopt-and-merge semantics.
  *
+ * After a successful insert, enrolls the lead into the Solicitors nurture
+ * sequence (best-effort: enrolment failure never loses the lead).
+ *
  * Environment isolation: returns a success-shaped no-op outside production so
  * preview browsing never creates real leads. Set LEADS_ALLOW_NONPROD_SUBMIT=1
  * to override during testing.
+ *
+ * Dormancy: enrollLead is a no-op while LEAD_NURTURE_ENABLED is unset.
  */
 import { createLeadSubmitHandler } from "@accounting-network/web-shared/leads/server";
+import { enrollLead } from "@/lib/leads/enroll";
 
 export const runtime = "nodejs";
 export const maxDuration = 10;
 export const dynamic = "force-dynamic";
 
-export const POST = createLeadSubmitHandler({ source: "solicitors" });
+export const POST = createLeadSubmitHandler({
+  source: "solicitors",
+  onLeadInserted: async (lead) => {
+    // Best-effort: enrolment must never lose or block the lead submission.
+    // Dormant while LEAD_NURTURE_ENABLED is unset.
+    await enrollLead(lead).catch((err) => {
+      console.error("[leads/submit] enrollLead failed (non-fatal)", err);
+    });
+  },
+});

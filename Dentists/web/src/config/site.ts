@@ -61,6 +61,14 @@ export const siteConfig = {
     : null,
   // Canonical lead-form consent text (see derivation above). Forms append the link.
   leadConsentText,
+  // leadConsentTextWithFollowUp (staged, not live): adds email/phone/text follow-up
+  // permission for the nurture sequence. Swap leadConsentText for this when
+  // LEAD_NURTURE_ENABLED is set and the consent banner is ready to go live.
+  // Partner-sharing clause preserved from leadConsentText where a partner is set.
+  //
+  // leadConsentTextWithFollowUp: partner
+  //   ? `I agree to my details being shared by ${niche.display_name} with our specialist partner firm ${partner.name}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice, including contacting me about it by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`
+  //   : `I agree to Dental Finance Partners using my details to respond to my enquiry and provide the advice I have requested, including contacting me about it by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`,
   /**
    * Consent text for the resource gate (in-house only).
    * ResourceGate is a first-party data capture by Dental Finance Partners.

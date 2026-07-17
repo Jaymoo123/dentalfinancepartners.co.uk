@@ -15,7 +15,6 @@
  *   - NI_SECONDARY = 5000 (employer NIC threshold from April 2025)
  *   - Dividend rates: 10.75% / 35.75% / 39.35% (FA 2026 s.4 from 6 April 2026)
  */
-import { calcSolicitorTakeHome } from "../tools/compute/solicitor-take-home";
 import { describe, it, expect } from "vitest";
 import { calcSraReserve } from "@/lib/tools/compute/sra-client-account-reserve";
 import { calcLLPProfitShare } from "@/lib/tools/compute/llp-profit-share";

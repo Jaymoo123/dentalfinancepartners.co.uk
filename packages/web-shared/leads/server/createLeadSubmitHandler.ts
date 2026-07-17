@@ -144,6 +144,21 @@ export interface LeadSubmitOptions {
   dedupeWindowMs?: number;
   /** Message floor for email_only captures (full-form messages are optional). */
   minMessage?: number;
+  /**
+   * Called after a brand-new lead row is inserted (not on dedupe merges). Used
+   * by sites that run lead-nurture enrolment from the submit route. Best-effort:
+   * any error is caught and logged by the caller; it must never block or lose the
+   * lead. The lead shape is a minimal NurtureLead-compatible object.
+   */
+  onLeadInserted?: (lead: {
+    id: string;
+    full_name: string;
+    email: string;
+    phone: string;
+    role: string;
+    message: string;
+    source: string;
+  }) => Promise<void>;
 }
 
 export function createLeadSubmitHandler(opts: LeadSubmitOptions) {
@@ -321,6 +336,16 @@ export function createLeadSubmitHandler(opts: LeadSubmitOptions) {
         { success: false, error: "Could not save your enquiry. Please try again." },
         { status: 500 },
       );
+    }
+
+    // Post-insert hook (e.g. nurture enrolment). Best-effort: never blocks or
+    // loses the lead. Only fires on brand-new inserts, not dedupe merges.
+    if (leadId && opts.onLeadInserted) {
+      try {
+        await opts.onLeadInserted({ id: leadId, full_name, email, phone, role, message, source });
+      } catch (e) {
+        console.error("[leads/submit] onLeadInserted hook failed (non-fatal)", e);
+      }
     }
 
     return NextResponse.json({ success: true, leadId });
