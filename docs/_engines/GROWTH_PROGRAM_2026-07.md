@@ -244,3 +244,23 @@ All deploys owner-G1. Each step commits locally when green; execution log update
 6. sameAs empty ×4: GATED on owner exposure decision, skip.
 
 **NEXT ACTION:** delegate B0 presence defects (verify-then-fix, one subagent per site) per the process correction above; then B1 measurement wiring; then step 2.5 shared extraction. Branch: `expansion/phase-0`. All deploys owner-G1.
+
+### 2026-07-17 — session 3 (B0 presence defects CLOSED, B1 DONE)
+
+**B0.6 presence defects — DONE (e3e54196), 4 parallel Sonnet workers + manager consolidation:**
+- Meta descriptions to 140-155ch: dentists 176→150, solicitors 165→149, medical 186→144, agency 186→147 (agency file-only, held to 07-22).
+- og:image SVG placeholder killed: dentists → existing `/brand/logo.png`; solicitors + medical had ZERO raster assets → generated 1200x630 brand cards (`scripts/_gen_og_cards.py` → `/brand/og-card.png`, `publisher_logo_url` updated). Agency already PNG (skip).
+- Solicitors: `app/icon.svg` favicon created; `buildWebSite()` wired on homepage alongside org schema.
+- Verified fine, skipped: agency Organization schema (wired at `page.tsx:129`; `organization-schema.ts` is an unused dupe), all title lengths.
+- 307→308: CONFIRMED missing on 4 apex domains (solicitors/medical/generalist/agency; property+dentists already 308). Prep script `scripts/_redirect_308_prep.py` — dry-run inspects, `--apply` PATCHes all 4. **PROD CHANGE, owner word.** sameAs still gated on exposure decision.
+- B0 is now fully closed except the two owner-gated items above.
+
+**B1 measurement — DONE (delegated):**
+- First Bing pulls landed in `bing_query_data` (2026-07-17): dentists 750, medical 737, solicitors 2,438, generalist 2,910, agency 180. contractors-ir35 = 0 (no BWT data — needs BWT verification). Per-page query stats rate-limited after ~10-14 pages; re-run idempotent.
+- `--ai-performance` FAILED all sites: client's `GetAiPerformance` method doesn't exist in the BWT API (client source itself flags it as assumed). KNOWN LIMITATION — needs client fix against real BWT docs, not a retry. 0 rows in `bing_ai_performance`.
+- Fresh GSC: generalist 4,236 / dentists 1,126 / solicitors 893 rows upserted.
+- Weekly Optimisation Engine workflow (ID 279817608) re-enabled — ONLY that one; other 5 stay disabled.
+- No `gsc_config.py` exists; medical+solicitors already `active: true` in Supabase `sites`. Skip.
+- deploy_watch rows NOT inserted: cron (`Property .../api/cron/deploy-watch`) is hardcoded to `watch_key='miniform_multistep'` + Property web_events; rows for medical/agency would be inert. DEFERRED: generalize cron when A1 ports need per-site watches anyway. Instead: medical needs no row (owner call 2026-07-17: no hard windows); agency 07-22 covered by one-time cloud reminder routine `trig_019Eamo9dnSB8KRJuoHUVzFH` (fires 07-22 08:00 London).
+
+**NEXT ACTION (session 3 cont / session 4):** step 2.5 — (a) root-cause Property multistep day-3 "343% error-rate ACTION" (pre-port gate), (b) shared extraction of MiniCapture/multistep/CalcResultCta/ResultGateModal/MobileToolSlot/blog-split into `packages/web-shared`, (c) baselines + estate-wide test-lead flagging. Then step 3 A1 ports. Branch `expansion/phase-0`.
