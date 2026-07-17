@@ -9,7 +9,6 @@ import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react
 import { IntentProvider } from "@/components/intent/IntentProvider";
 import { ReturningBar } from "@/components/intent/ReturningBar";
 import { DeepScrollModal } from "@/components/intent/DeepScrollModal";
-import { ExitIntentModal } from "@/components/blog/ExitIntentModal";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
 import { buildOrganizationJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
@@ -103,7 +102,6 @@ export default function RootLayout({
               <PageShell>{children}</PageShell>
               <ReturningBar />
               <DeepScrollModal />
-              <ExitIntentModal />
             </IntentProvider>
           </AnalyticsProvider>
         </ConsentProvider>
