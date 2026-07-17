@@ -66,6 +66,25 @@ export interface BespokeTool extends ToolMetaBase {
   kind: "bespoke";
 }
 
+/**
+ * A worked example entry. Two shapes are in use across the fleet:
+ *  - penalty / audit tools: { title, description, inputs, result }
+ *  - comparison tools:      { heading, inputs, steps }
+ * Both are rendered server-side on the [slug] page for GEO citability.
+ */
+export type WorkedExample =
+  | {
+      title: string;
+      description?: string;
+      inputs?: Record<string, unknown>;
+      result?: Record<string, unknown>;
+    }
+  | {
+      heading: string;
+      inputs?: string;
+      steps?: string[];
+    };
+
 export interface GenericTool extends ToolMetaBase {
   kind: "generic";
   metaTitle: string;
@@ -78,6 +97,8 @@ export interface GenericTool extends ToolMetaBase {
   faqs?: { question: string; answer: string }[];
   /** internal links rendered under the explainer (blog posts, sibling tools) */
   related?: { label: string; href: string }[];
+  /** structured worked examples — rendered as an SSR block for GEO citability */
+  workedExamples?: WorkedExample[];
 }
 
 export type Tool = BespokeTool | GenericTool;

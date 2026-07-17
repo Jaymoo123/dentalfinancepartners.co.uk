@@ -94,6 +94,42 @@ export default async function CalculatorToolPage({ params }: Props) {
               ))}
             </div>
 
+            {tool.workedExamples && tool.workedExamples.length > 0 && (
+              <div className="mt-12">
+                <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
+                  Worked examples
+                </h2>
+                <div className="mt-6 space-y-8">
+                  {tool.workedExamples.map((ex, i) => {
+                    const heading = "title" in ex ? ex.title : "heading" in ex ? ex.heading : "";
+                    const description = "description" in ex ? ex.description : undefined;
+                    const steps = "steps" in ex ? ex.steps : undefined;
+                    const result = "result" in ex ? ex.result : undefined;
+                    return (
+                      <div key={i}>
+                        <h3 className="text-lg font-bold text-slate-900">{heading}</h3>
+                        {description && (
+                          <p className="mt-2 text-base leading-relaxed text-slate-700">{description}</p>
+                        )}
+                        {steps && steps.length > 0 && (
+                          <ol className="mt-2 list-decimal list-inside space-y-1 text-base leading-relaxed text-slate-700">
+                            {steps.map((s, j) => <li key={j}>{s}</li>)}
+                          </ol>
+                        )}
+                        {result && (
+                          <ul className="mt-2 list-disc list-inside space-y-1 text-base leading-relaxed text-slate-700">
+                            {Object.entries(result).map(([k, val]) => (
+                              <li key={k}><span className="font-medium">{k}:</span> {String(val)}</li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
             {tool.faqs && tool.faqs.length > 0 && (
               <div className="mt-12">
                 <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">

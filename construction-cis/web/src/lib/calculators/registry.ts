@@ -8,6 +8,10 @@ import { cisTakeHomeCalculator } from "./tools/cis-take-home-calculator";
 import { cisInvoiceSplitter } from "./tools/cis-invoice-splitter";
 import { cisVsPayeComparison } from "./tools/cis-vs-paye-comparison";
 import { cisBackYearsCalculator } from "./tools/cis-back-years-calculator";
+import { cisPenaltyCalculator } from "./tools/cis-penalty-calculator";
+import { cisReverseChargeChecker } from "./tools/cis-reverse-charge-checker";
+import { tradeTakeHomeCalculator } from "./tools/trade-take-home-calculator";
+import { cisSoleTraderVsLimited } from "./tools/cis-sole-trader-vs-limited";
 
 /**
  * The CIS calculator fleet. "bespoke" tools have their own hand-built component
@@ -34,6 +38,10 @@ const GENERIC: GenericTool[] = [
   cisInvoiceSplitter,
   cisVsPayeComparison,
   cisBackYearsCalculator,
+  cisPenaltyCalculator,
+  cisReverseChargeChecker,
+  tradeTakeHomeCalculator,
+  cisSoleTraderVsLimited,
 ];
 
 export const TOOLS: Tool[] = [...BESPOKE, ...GENERIC];
