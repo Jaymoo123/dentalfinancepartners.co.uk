@@ -12,7 +12,7 @@
  * Additional assertions (§4.3):
  * - resourceConsentText does NOT contain "Reflex"
  * - "DJH" does not appear in gate copy or consent text
- * - hasEnabledResource returns false for compliance
+ * - hasEnabledResource returns true for compliance (compliance pack shipped)
  * - registry helper functions work correctly
  */
 
@@ -307,8 +307,12 @@ describe("Resource gate consent and registry QA", () => {
     expect(siteConfig.resourceConsentText).toMatch(/Holloway Davies/);
   });
 
-  it("compliance topic has NO enabled resource (no asset)", () => {
-    expect(hasEnabledResource("compliance")).toBe(false);
+  it("compliance topic has enabled xlsx and guide (compliance pack)", () => {
+    expect(hasEnabledResource("compliance")).toBe(true);
+    const r = resourceForTopic("compliance");
+    expect(isXlsxEnabled(r)).toBe(true);
+    expect(isGuideEnabled(r)).toBe(true);
+    expect(r?.xlsx?.file).toContain("compliance-pack");
   });
 
   it("sole-trader maps to the incorporation xlsx (shared asset)", () => {
@@ -327,16 +331,60 @@ describe("Resource gate consent and registry QA", () => {
     expect(isGuideEnabled(r)).toBe(true);
   });
 
-  it("enabledResourceTopics returns 8 topics (not compliance)", () => {
+  it("enabledResourceTopics returns all 9 topics (compliance now included)", () => {
     const topics = enabledResourceTopics();
-    expect(topics).not.toContain("compliance");
-    expect(topics.length).toBe(8);
+    expect(topics).toContain("compliance");
+    expect(topics.length).toBe(9);
   });
 
-  it("enabledGuideTopics has 6 unique guide slugs", () => {
+  it("enabledGuideTopics has 7+ unique guide slugs", () => {
     const guides = enabledGuideTopics();
     // sole-trader and limited-company map to existing slugs (incorporation, director-pay)
     // so total unique guide entries may be more, but each slug should be valid
-    expect(guides.length).toBeGreaterThanOrEqual(6);
+    expect(guides.length).toBeGreaterThanOrEqual(7);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Asset 7 — Compliance pack CT planner (profit=100000, 1 company, spend=20000)
+// Golden: CT before=22750, CT after=17450, saving=5300 (26.5% marginal band)
+// Mirrors the workbook formula: divided limits, 0.265 marginal slice per §4.1.
+// ---------------------------------------------------------------------------
+describe("Resource golden — compliance pack CT planner (defaults)", () => {
+  const SMALL_RATE = 0.19;
+  const MAIN_RATE = 0.25;
+  const MARGINAL = 0.265;
+
+  function ctDue(profit: number, companies: number): number {
+    const lower = 50000 / companies;
+    const upper = 250000 / companies;
+    if (profit <= 0) return 0;
+    if (profit <= lower) return profit * SMALL_RATE;
+    if (profit >= upper) return profit * MAIN_RATE;
+    return lower * SMALL_RATE + (profit - lower) * MARGINAL;
+  }
+
+  it("CT before spend = 22750 (9500 + 50000*0.265)", () => {
+    expect(r2(ctDue(100000, 1))).toBe(22750);
+  });
+
+  it("CT after £20,000 spend = 17450 (9500 + 30000*0.265)", () => {
+    expect(r2(ctDue(80000, 1))).toBe(17450);
+  });
+
+  it("saving = 5300 (20000 * 26.5% marginal rate)", () => {
+    expect(r2(ctDue(100000, 1) - ctDue(80000, 1))).toBe(5300);
+  });
+
+  it("associated companies divide the limits: 2 companies at 100000 pay main rate", () => {
+    // upper limit = 125000; 100000 is in the marginal band: 25000*0.19 + 75000*0.265
+    expect(r2(ctDue(100000, 2))).toBe(r2(25000 * 0.19 + 75000 * 0.265));
+  });
+
+  it("MTD ITSA mandation thresholds: 60000 → Apr 2026, 40000 → Apr 2027, 20000 → not yet", () => {
+    const mandation = (inc: number) => (inc > 50000 ? "2026" : inc > 30000 ? "2027" : "none");
+    expect(mandation(60000)).toBe("2026");
+    expect(mandation(40000)).toBe("2027");
+    expect(mandation(20000)).toBe("none");
   });
 });

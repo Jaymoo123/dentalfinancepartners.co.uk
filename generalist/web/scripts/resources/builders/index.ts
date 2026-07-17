@@ -15,6 +15,7 @@ import { build as buildVatScheme } from "./vat-scheme";
 import { build as buildPayroll } from "./payroll";
 import { build as buildRdRelief } from "./rd-relief";
 import { build as buildBadrExit } from "./badr-exit";
+import { build as buildCompliance } from "./compliance";
 
 /** A builder produces one workbook for one category. */
 export type WorkbookBuilder = () => ExcelJS.Workbook | Promise<ExcelJS.Workbook>;
@@ -58,5 +59,10 @@ export const BUILDERS: BuilderEntry[] = [
     topic: "exit-cgt",
     fileName: "badr-exit-model.xlsx",
     build: buildBadrExit,
+  },
+  {
+    topic: "compliance",
+    fileName: "compliance-pack.xlsx",
+    build: buildCompliance,
   },
 ];

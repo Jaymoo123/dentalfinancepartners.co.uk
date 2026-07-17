@@ -195,13 +195,20 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
   compliance: {
     topic: "compliance",
     toolId: null,
-    // TODO(resources): no gated asset yet for compliance / corporation-tax
-    // posts (covers "Bookkeeping and Compliance" + "Corporation Tax"
-    // categories, ~104 posts). Candidate: MTD ITSA readiness checklist xlsx
-    // + guide. Until enabled, GateOrForm falls back to MiniCapture.
-    xlsx: null,
-    guide: null,
-    magnetTitle: "Get a specialist review",
+    // Covers "Bookkeeping and Compliance" + "Corporation Tax" categories
+    // (~104 posts). One workbook, two tools: MTD ITSA readiness checklist
+    // + Corporation Tax planner.
+    xlsx: {
+      file: "/resources/compliance/compliance-pack.xlsx",
+      label: "MTD checklist and CT planner (Excel)",
+      enabled: true,
+    },
+    guide: {
+      slug: "compliance",
+      label: "Bookkeeping, MTD ITSA and Corporation Tax guide",
+      enabled: true,
+    },
+    magnetTitle: "Get the MTD checklist and Corporation Tax planner",
     magnetBlurbTemplate:
       "A working Excel model with live formulas, plus the plain-English written guide. Enter your email and get instant access.",
   },
