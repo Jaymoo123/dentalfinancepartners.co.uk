@@ -31,6 +31,10 @@ Faceless, sourced data built from official open sources. Free to cite with attri
 - [CIS vs PAYE Comparison](https://www.tradetaxspecialists.co.uk/calculators/cis-vs-paye-comparison): Take-home pay as a CIS subcontractor versus PAYE employment at the same gross earnings.
 - [CIS Invoice Splitter](https://www.tradetaxspecialists.co.uk/calculators/cis-invoice-splitter): Split a CIS invoice correctly between labour and materials so you are not over-deducted.
 - [CIS Back Years Calculator](https://www.tradetaxspecialists.co.uk/calculators/cis-back-years-calculator): Estimate your cumulative CIS refund across up to four previous tax years.
+- [CIS Late Filing Penalty and Appeal Estimator](https://www.tradetaxspecialists.co.uk/calculators/cis-penalty-calculator): Find out your CIS300 late-filing penalty exposure and whether you have grounds to appeal, including the £3,000 new-contractor cap and nil-return treatment.
+- [CIS VAT Domestic Reverse Charge Checker](https://www.tradetaxspecialists.co.uk/calculators/cis-reverse-charge-checker): Instantly check whether the VAT domestic reverse charge applies to your construction invoice, and get the exact wording to put on it.
+- [Trade Take-Home and Expenses Estimator](https://www.tradetaxspecialists.co.uk/calculators/trade-take-home-calculator): Estimate your annual take-home pay as a CIS subcontractor. Choose your trade to pre-load typical allowable expenses, then see your tax, NI, CIS position and estimated refund.
+- [Sole Trader vs Limited Company Calculator for CIS Subcontractors](https://www.tradetaxspecialists.co.uk/calculators/cis-sole-trader-vs-limited): Compare your net take-home as a sole trader versus a limited company, including the CIS-specific cash flow difference between monthly EPS reclaims and an annual Self Assessment wait.
 - [Embed these calculators](https://www.tradetaxspecialists.co.uk/embed): Free iframe embeds for partner and adjacent sites.
 
 ## Free templates and downloads (open, no email required)

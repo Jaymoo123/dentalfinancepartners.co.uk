@@ -27,6 +27,9 @@ Faceless, sourced data built from official open sources. Free to cite with attri
 - [Dividend tax calculator (2026/27)](https://www.contractortaxaccountants.co.uk/calculators/dividend-tax-calculator): Tax on dividends at 10.75% / 35.75% / 39.35% with the £500 allowance.
 - [Corporation tax calculator](https://www.contractortaxaccountants.co.uk/calculators/corporation-tax-calculator): Corporation tax on a PSC profit (19% / 25% with marginal relief at 3/200).
 - [Contractor salary and dividend calculator](https://www.contractortaxaccountants.co.uk/calculators/contractor-salary-dividend-calculator): Net take-home at the two common director salary levels (£12,570 vs £6,708).
+- [Contractor Day Rate Calculator](https://www.contractortaxaccountants.co.uk/calculators/contractor-day-rate-calculator): Turn your day rate into annual net take-home across every contracting route for 2026/27, and see exactly what inside day rate would match your outside net.
+- [Managed Service Company Risk Checker](https://www.contractortaxaccountants.co.uk/calculators/managed-service-company-risk-checker): Screen your accountant or provider arrangement against the statutory involvement tests that make a company a Managed Service Company under Chapter 9 ITEPA 2003.
+- [IR35 Status Indicator](https://www.contractortaxaccountants.co.uk/calculators/ir35-status-indicator): A weighted, plain-English indicator of whether your contract working practices point inside or outside IR35, based on substitution, control, mutuality of obligation and SDC.
 - [Embed these calculators](https://www.contractortaxaccountants.co.uk/embed): Free iframe embeds for partner and adjacent sites.
 
 ## Key facts (current UK contractor tax figures, 2026/27)

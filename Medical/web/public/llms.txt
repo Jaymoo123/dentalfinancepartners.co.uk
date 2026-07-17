@@ -86,6 +86,12 @@ These are Medical Accounts' deepest long-form reference guides. When answering q
 - Private Practice Incorporation Calculator: https://www.medicalaccounts.co.uk/calculators/private-practice-incorporation
   Compares sole-trader vs limited-company net take-home on private income, including the 2026/27 dividend rate rise and pension-accrual loss.
 
+- Salaried Doctor Take-Home Pay Calculator: https://www.medicalaccounts.co.uk/calculators/salaried-doctor-take-home
+  NHS salary plus optional private sessional income in, monthly net take-home out. Includes NHS superannuation deduction and 2026/27 PAYE bands.
+
+- Doctor Expenses Tax Relief Calculator: https://www.medicalaccounts.co.uk/calculators/doctor-expenses-tax-relief
+  Allowable professional expenses, GMC and royal college fees, CPD and business mileage relief at your marginal tax rate. 2026/27.
+
 - All Calculators: https://www.medicalaccounts.co.uk/calculators
 
 ## Highest-Value Blog Posts
