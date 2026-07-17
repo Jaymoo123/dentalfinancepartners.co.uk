@@ -17,7 +17,14 @@ import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
 import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
 import { GateOrForm } from "@/components/resources/GateOrForm";
-import { topicForBlogSlug } from "@/lib/intent/taxonomy";
+import { ToolIsland } from "@/components/blog/ToolIsland";
+import { topicForBlogSlug, earlyToolForBlogSlug } from "@/lib/intent/taxonomy";
+import { getGenericTool } from "@/lib/tools/registry";
+import {
+  splitContentEarly,
+  splitRemainderForGate,
+  splitContentAtMidScroll,
+} from "@accounting-network/web-shared/content/blog-splits";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -29,24 +36,6 @@ function formatUkDate(isoDate: string): string {
   const d = new Date(isoDate);
   if (Number.isNaN(d.getTime())) return "";
   return d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
-}
-
-/**
- * Split HTML content at roughly the 60% scroll point (after the 3rd or 4th h2)
- * so InlineMiniLeadForm lands mid-article. Falls back to the full article with
- * no split when there are fewer than 4 headings (short posts).
- */
-function splitContentAtMidScroll(html: string): { before: string; after: string | null } {
-  const headings = [...html.matchAll(/<h2[^>]*>/g)];
-  if (headings.length < 4) {
-    return { before: html, after: null };
-  }
-  const targetIdx = Math.floor(headings.length * 0.6);
-  const target = headings[targetIdx];
-  if (target?.index === undefined) {
-    return { before: html, after: null };
-  }
-  return { before: html.slice(0, target.index), after: html.slice(target.index) };
 }
 
 export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostRendererProps) {
@@ -66,12 +55,21 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
     ? post.keyTakeaways
     : null;
 
-  const midSplit = splitContentAtMidScroll(post.contentHtml);
-
   // Resolve the topic using the SLUG (not the human label `post.category`).
   // topicForBlogSlug uses the slugified category key, which is the correct
   // taxonomy lookup — post.category is the human display label, not the slug.
   const topic = topicForBlogSlug(categorySlug);
+
+  // 3-moment architecture (Property pattern, shared blog-splits helpers):
+  //  moment 1: early free-tool island after the first h2 (EARLY_TOOL_BY_CATEGORY)
+  //  moment 2: PremiumUpgrade + GateOrForm at a later heading (~50% of remainder)
+  //  moment 3: existing end-of-article InlinePrompt + LeadForm (unchanged)
+  // Unmapped categories fall back to the old mid-scroll InlineMiniLeadForm.
+  const earlyToolSlug = earlyToolForBlogSlug(categorySlug);
+  const earlyTool = earlyToolSlug ? getGenericTool(earlyToolSlug) : undefined;
+  const earlySplit = earlyTool ? splitContentEarly(post.contentHtml) : null;
+  const gateSplit = earlySplit ? splitRemainderForGate(earlySplit.after) : null;
+  const fallbackSplit = earlySplit ? null : splitContentAtMidScroll(post.contentHtml);
 
   return (
     <>
@@ -227,26 +225,53 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
               <CalcPromoCard />
 
               <div className="article-body prose-blog mt-10">
-                <div dangerouslySetInnerHTML={{ __html: midSplit.before }} />
-                {midSplit.after ? (
+                {earlyTool && earlySplit ? (
                   <>
-                    {/* Mid-scroll injection: InlineMiniLeadForm (unchanged) plus the
-                        premium tool and the resource gate for this category. topic is
-                        resolved from the category SLUG, not the human label post.category. */}
-                    <InlineMiniLeadForm topic={post.category} />
-                    <PremiumUpgrade topic={topic} placement="blog" category={categorySlug} />
-                    {topic && (
-                      <GateOrForm topic={topic} placement="blog" category={categorySlug} />
+                    {/* Moment 1: early tool island after the first h2 (splitContentEarly
+                        guarantees a usable break for every post). */}
+                    <div dangerouslySetInnerHTML={{ __html: earlySplit.before }} />
+                    <ToolIsland tool={earlyTool} />
+                    {gateSplit?.after ? (
+                      <>
+                        {/* Moment 2: premium tool + resource gate at a later heading. */}
+                        <div dangerouslySetInnerHTML={{ __html: gateSplit.before }} />
+                        <PremiumUpgrade topic={topic} placement="blog" category={categorySlug} />
+                        {topic && (
+                          <GateOrForm topic={topic} placement="blog" category={categorySlug} />
+                        )}
+                        <div dangerouslySetInnerHTML={{ __html: gateSplit.after }} />
+                      </>
+                    ) : (
+                      /* Short remainder (<2 h2s): gate sits directly under the tool. */
+                      <>
+                        <PremiumUpgrade topic={topic} placement="blog" category={categorySlug} />
+                        {topic && (
+                          <GateOrForm topic={topic} placement="blog" category={categorySlug} />
+                        )}
+                        <div dangerouslySetInnerHTML={{ __html: earlySplit.after }} />
+                      </>
                     )}
-                    <div dangerouslySetInnerHTML={{ __html: midSplit.after }} />
                   </>
                 ) : (
-                  /* Short posts (<4 H2s) get no mid-split. Add the premium tool and gate
-                     at the end of the article body so they still surface the resource. */
+                  /* Unmapped category fallback: previous mid-scroll behaviour. */
                   <>
-                    <PremiumUpgrade topic={topic} placement="blog" category={categorySlug} />
-                    {topic && (
-                      <GateOrForm topic={topic} placement="blog" category={categorySlug} />
+                    <div dangerouslySetInnerHTML={{ __html: fallbackSplit!.before }} />
+                    {fallbackSplit!.after ? (
+                      <>
+                        <InlineMiniLeadForm topic={post.category} />
+                        <PremiumUpgrade topic={topic} placement="blog" category={categorySlug} />
+                        {topic && (
+                          <GateOrForm topic={topic} placement="blog" category={categorySlug} />
+                        )}
+                        <div dangerouslySetInnerHTML={{ __html: fallbackSplit!.after }} />
+                      </>
+                    ) : (
+                      <>
+                        <PremiumUpgrade topic={topic} placement="blog" category={categorySlug} />
+                        {topic && (
+                          <GateOrForm topic={topic} placement="blog" category={categorySlug} />
+                        )}
+                      </>
                     )}
                   </>
                 )}

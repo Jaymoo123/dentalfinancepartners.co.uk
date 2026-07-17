@@ -195,7 +195,10 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
   compliance: {
     topic: "compliance",
     toolId: null,
-    // No asset for compliance — the topic has no flagship calculator.
+    // TODO(resources): no gated asset yet for compliance / corporation-tax
+    // posts (covers "Bookkeeping and Compliance" + "Corporation Tax"
+    // categories, ~104 posts). Candidate: MTD ITSA readiness checklist xlsx
+    // + guide. Until enabled, GateOrForm falls back to MiniCapture.
     xlsx: null,
     guide: null,
     magnetTitle: "Get a specialist review",

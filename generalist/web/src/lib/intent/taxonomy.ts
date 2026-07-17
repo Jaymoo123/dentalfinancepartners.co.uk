@@ -158,6 +158,33 @@ export const CALC_SLUG_TO_TOPIC: Record<string, TopicKey> = {
   "pension-contribution-optimiser": "director-pay",
 };
 
+/**
+ * Blog category slug -> early tool island (tool registry slug).
+ * Keyed by CATEGORY slug (not TopicKey) so corporation-tax and
+ * bookkeeping-and-compliance get different tools without splitting the
+ * "compliance" topic (which would ripple into assistant TOPIC_NOUN/TOPIC_HOOKS).
+ * Consumed by BlogPostRenderer via earlyToolForBlogSlug().
+ *
+ * Tools with no matching blog category (no posts to host them):
+ *   mileage-claim, capital-allowances-vehicle, cis-subcontractor-deduction
+ */
+export const EARLY_TOOL_BY_CATEGORY: Record<string, string> = {
+  "limited-company-tax": "dividend-tax-2026-27",
+  "sole-trader-and-self-employment": "sole-trader-vs-ltd",
+  "vat-and-making-tax-digital": "vat-threshold-checker",
+  "payroll-and-paye": "p11d-bik-calculator",
+  "randd-tax-credits": "rd-tax-credit-estimator",
+  "incorporation-and-structure": "sole-trader-vs-ltd",
+  "exit-and-capital-gains": "cgt-60-day-reporter",
+  "director-pay-and-dividends": "dividend-tax-2026-27",
+  "bookkeeping-and-compliance": "mtd-itsa-readiness",
+  "corporation-tax": "associated-companies-ct",
+};
+
+export function earlyToolForBlogSlug(slug: string): string | null {
+  return EARLY_TOOL_BY_CATEGORY[slug] ?? null;
+}
+
 const BLOG_SLUG_TO_TOPIC: Record<string, TopicKey> = {};
 const BY_KEY: Record<string, Topic> = {};
 for (const t of TOPICS) {
