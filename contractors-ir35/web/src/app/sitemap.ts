@@ -5,6 +5,7 @@ import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
 import { allTools } from "@/lib/calculators/registry";
 import { GLOSSARY } from "@/app/glossary/[slug]/data";
 import { CITIES } from "@/app/locations/[slug]/data";
+import { publishedGuideTopicsWithFile } from "@/lib/resources/content";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
@@ -74,6 +75,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  // Open resource guides (email gate retired 2026-07-18, now indexable).
+  const resourceRoutes: MetadataRoute.Sitemap = publishedGuideTopicsWithFile().map((topic) => ({
+    url: `${base}/resources/${topic}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   return [
     ...staticRoutes,
     ...contractorTypeRoutes,
@@ -82,5 +91,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...calculatorRoutes,
     ...glossaryRoutes,
     ...cityRoutes,
+    ...resourceRoutes,
   ];
 }

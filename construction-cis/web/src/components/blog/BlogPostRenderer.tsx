@@ -14,8 +14,6 @@ import { calculateReadTime } from "@/lib/blog";
 import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 import { topicForBlogSlug } from "@/lib/intent/taxonomy";
 import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
-import { ResourceGate } from "@/components/resources/ResourceGate";
-import { hasEnabledResource } from "@/lib/resources/registry";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -229,9 +227,6 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                         tag in the lead message prefix). */}
                     <InlineMiniLeadForm topic={post.category} />
                     <PremiumUpgrade topic={premiumTopic} placement="blog" category={categorySlug} />
-                    {premiumTopic && hasEnabledResource(premiumTopic) && (
-                      <ResourceGate topic={premiumTopic} placement="blog" />
-                    )}
                     <div dangerouslySetInnerHTML={{ __html: midSplit.after }} />
                   </>
                 ) : (
@@ -239,9 +234,6 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   <>
                     <InlineMiniLeadForm topic={post.category} />
                     <PremiumUpgrade topic={premiumTopic} placement="blog" category={categorySlug} />
-                    {premiumTopic && hasEnabledResource(premiumTopic) && (
-                      <ResourceGate topic={premiumTopic} placement="blog" />
-                    )}
                   </>
                 )}
               </div>

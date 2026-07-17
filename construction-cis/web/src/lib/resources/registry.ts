@@ -195,6 +195,16 @@ export function enabledGuideTopics(): TopicKey[] {
   );
 }
 
+/** The topic key that owns a given guide slug (or null). Guide slugs differ from
+ *  topic keys (e.g. slug "cis-vs-paye" is owned by topic "limited-company"). */
+export function topicForGuideSlug(slug: string): TopicKey | null {
+  for (const t of Object.keys(RESOURCES) as TopicKey[]) {
+    const r = RESOURCES[t];
+    if (isGuideEnabled(r) && r.guide?.slug === slug) return t;
+  }
+  return null;
+}
+
 /** Every unique guide slug (deduplicates cis-deductions -> cis-refund alias). */
 export function publishedGuideTopics(): string[] {
   const seen = new Set<string>();

@@ -1,17 +1,20 @@
 /**
- * NOINDEX gated resource guide route.
+ * Open resource guide route.
  *
  * Serves the written guide for each enabled topic at /resources/<topic>.
- * Excluded from search-engine indexing (robots: noindex,follow).
+ * Guides are free and fully visible (email gate retired 2026-07-18, estate-wide);
+ * pages are indexable and listed in the sitemap. Where a model xlsx exists for the
+ * topic it is a direct download; a qualified free-review MiniCapture sits at the foot.
  * Only pre-renders guides that are enabled AND have a Markdown file on disk.
  * dynamicParams=false: any non-pre-rendered slug returns 404 automatically.
  *
  * Design: single-column prose, slate header bar with orange accent, print-safe.
- * No personal nav link to this route from any public page (gate gated by ResourceGate).
  */
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getGuideByTopic, publishedGuideTopicsWithFile } from "@/lib/resources/content";
+import { resourceForTopic, isXlsxEnabled, topicForGuideSlug } from "@/lib/resources/registry";
+import { ResourceGate } from "@/components/resources/ResourceGate";
 import { siteConfig } from "@/config/site";
 
 type Props = { params: Promise<{ topic: string }> };
@@ -29,10 +32,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${guide.title} | Trade Tax Specialists`,
     description: guide.summary || guide.title,
-    robots: {
-      index: false,
-      follow: false,
-    },
     alternates: {
       canonical: `${siteConfig.url}/resources/${topic}`,
     },
@@ -43,6 +42,10 @@ export default async function ResourceGuidePage({ params }: Props) {
   const { topic } = await params;
   const guide = getGuideByTopic(topic);
   if (!guide) notFound();
+
+  const topicKey = topicForGuideSlug(topic);
+  const resource = resourceForTopic(topicKey);
+  const xlsxReady = isXlsxEnabled(resource);
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
@@ -59,6 +62,19 @@ export default async function ResourceGuidePage({ params }: Props) {
         </h1>
         {guide.summary && (
           <p className="mt-2 text-sm text-white/80">{guide.summary}</p>
+        )}
+        {xlsxReady && resource?.xlsx && (
+          <a
+            href={resource.xlsx.file}
+            download
+            className="mt-4 inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
+            style={{ background: "#f97316" }}
+          >
+            <svg className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            {resource.xlsx.label}
+          </a>
         )}
       </div>
 
@@ -93,22 +109,12 @@ export default async function ResourceGuidePage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: guide.html }}
       />
 
-      {/* Footer CTA */}
-      <div className="mt-12 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5">
-        <p className="text-sm font-semibold" style={{ color: "#1e293b" }}>
-          Need specialist advice on your specific position?
-        </p>
-        <p className="mt-1 text-sm text-gray-600">
-          Use the contact form and a CIS specialist will get back to you within one working day. No automated responses.
-        </p>
-        <a
-          href="/contact"
-          className="mt-3 inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
-          style={{ background: "#1e293b" }}
-        >
-          Get in touch
-        </a>
-      </div>
+      {/* Foot CTA: qualified free-review MiniCapture (email gate retired) */}
+      {topicKey && (
+        <div className="mt-12">
+          <ResourceGate topic={topicKey} />
+        </div>
+      )}
     </main>
   );
 }
