@@ -220,4 +220,27 @@ All deploys owner-G1. Each step commits locally when green; execution log update
 
 **Session task list at handoff:** #1 B0 in_progress, #2 B0.8 pending, #3 B1 pending, #4 shared-extraction (step 2.5) pending.
 
-**NEXT ACTION:** finish B0 starting with the solicitors llms.txt year-framing edits above; then B0.8; then B1. Branch: `expansion/phase-0`. All deploys owner-G1.
+### 2026-07-17 — session 2 (B0 near-complete)
+
+**PROCESS CORRECTION (owner instruction, applies to all future sessions):** the executing agent is ARCHITECT/PM/full-stack lead, NOT the implementor. Fan work out to Sonnet subagents (per §2 fan-out rule) to keep main context clean. Only the B0.8-style per-citation stale sweeps stay manager-direct (locked memory rule); verification greps, presence-defect fixes, and all build slices get delegated.
+
+**DONE (all committed on `expansion/phase-0`):**
+- **8e177ff1** — B0.2 solicitors `web/public/llms.txt` reframed to 2026/27 (header, cornerstone line, BADR block now 18% current / 14% historical). B0.4 robots: medical + solicitors ALREADY had the dentists 40-bot template verbatim; generalist + agency have identical bot coverage, only functional gap was `/api/` disallow — patched minimally (agency keeps `allow: /api/uk-tax-rates.json`, it's advertised in its llms.txt).
+- **d8e1b850** — B0.8 sweeps (manager-direct per locked rule):
+  - generalist NIC 15%/£5,000: `how-to-pay-yourself-from-a-limited-company.md` (FAQs, optimum-salary section, Sarah/James/Priya examples all recomputed; optimum advice now £12,570 with LEL/state-pension nuance), `definitive-guide-choosing-contractor-accountant-uk.md` (salary table recomputed), `limited-company-vs-sole-trader.md` (Tom example recomputed), `guides/[slug]/data.ts` (Class 1A 15% ×2, salary advice, two-director EA note). All other generalist NIC grep hits verified correctly framed (historical context) — left alone. Tests green (71 pass).
+  - dentists: `practice-profit-extraction-partnership-vs-ltd.md` salary-stacking FAQ fixed (was presenting £9,100 threshold as current). **This was the gate on the dentists deploy backlog — now clear.** Compute .ts files verified already correct.
+  - solicitors AMAP 45p→55p: 4 blog files (locum worked example recomputed to £6,300). Two other 45p hits are "45p of tax per £1" phrasing, not AMAP — left.
+  - generalist BADR: verified ALREADY CLEAN estate-wide (18% current everywhere incl. calculators/tests). No edits needed.
+- **B0 claims verified stale/already-done, SKIP:** B0.1 (generalist llms.txt fine), B0.2b (solicitors schema audience fine), B0.3 (agency llms-full.txt/feed.xml/uk-tax-rates.json all live 200), B0.5 (shared `EmbedAttribution` renders Powered-by backlink + CTA on all sites' /embed pages), B0.6 (DeepSeek already a banned stub in blog_generator; only a comment mentions it), B0.7 (Property llms-full.txt current 2026/27, correct domain).
+- **HELD pages excluded from sweep (active watch windows, revisit ~2026-08-05):** generalist `correct-paye-overpayment-hmrc` + `ir35-explained`, solicitors `accountant-for-barristers-chambers-uk`. Intersection method: `monitored_pages` (Supabase, `scripts/_q.py`) status=active rewrite_date≥2026-06-25 vs sweep hit-list.
+- **New stale-figure finding (out of B0.8 scope, add to hit-list):** generalist `glossary/[slug]/data.ts` BADR entries compare against "standard 20%" CGT — higher rate is 24% since Oct 2024; savings arithmetic in those paragraphs needs redoing.
+
+**B0 REMAINING — presence defects (item 6), partially verified this session:**
+1. og:image placeholder: `og-placeholder` NOT referenced in any site's `src/` anymore — verify LIVE og:image per site before treating as open; may already be fixed or referenced via public path.
+2. 307→308 apex→www on lawyers/medical/holloway/agency: Vercel domain config, NOT code — prod change, needs owner word; prepare API calls only (VERCEL_TOKEN in root .env works).
+3. Solicitors favicon: CONFIRMED missing (no icon file in `Solicitors/web/src/app` or `public/`) + thin schema (no WebSite/FAQ/Service).
+4. Agency Organization schema: `digital-agency/web/src/lib/organization-schema.ts` EXISTS — verify it's wired into layout/page before writing anything.
+5. Homepage meta descriptions >160ch: dental 175 / lawyers 169 / medical 185 / agency 185 — unverified.
+6. sameAs empty ×4: GATED on owner exposure decision, skip.
+
+**NEXT ACTION:** delegate B0 presence defects (verify-then-fix, one subagent per site) per the process correction above; then B1 measurement wiring; then step 2.5 shared extraction. Branch: `expansion/phase-0`. All deploys owner-G1.
