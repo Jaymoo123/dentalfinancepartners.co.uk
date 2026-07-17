@@ -402,3 +402,134 @@ describe("employer-ni compute", () => {
     expect(r.niTotal).toBe(0);
   });
 });
+
+// ---------------------------------------------------------------------------
+// 8. Associated Companies CT (added with the associated-companies-ct tool)
+// ---------------------------------------------------------------------------
+import { calcAssociatedCT } from "./associated-companies-ct";
+
+describe("associated-companies-ct compute", () => {
+  it("worked example 1: 1 associate, £80k, 12 months → £19,325 marginal relief band", () => {
+    const r = calcAssociatedCT(80000, 0, 1, 12);
+    expect(r.divisor).toBe(2);
+    expect(r.lowerLimit).toBe(25000);
+    expect(r.upperLimit).toBe(125000);
+    expect(r.band).toBe("marginal");
+    expect(r2(r.marginalRelief)).toBe(675);
+    expect(r2(r.ctPayable)).toBe(19325);
+    expect(r.qipTriggered).toBe(false);
+  });
+
+  it("worked example 2: 3 associates, 9-month AP, £60k → flat 25%", () => {
+    const r = calcAssociatedCT(60000, 0, 3, 9);
+    expect(r.lowerLimit).toBe(9375);
+    expect(r.upperLimit).toBe(46875);
+    expect(r.band).toBe("main");
+    expect(r2(r.ctPayable)).toBe(15000);
+    expect(r2(r.qipLimit)).toBe(281250);
+    expect(r.qipTriggered).toBe(false);
+  });
+
+  it("small profits band and exempt dividends push into marginal", () => {
+    expect(calcAssociatedCT(40000, 0, 0, 12).ctPayable).toBe(40000 * 0.19);
+    const r = calcAssociatedCT(40000, 20000, 0, 12); // augmented 60k > 50k
+    expect(r.band).toBe("marginal");
+    // relief = 3/200 * (250000-60000) * (40000/60000) = 1900
+    expect(r2(r.marginalRelief)).toBe(1900);
+    expect(r2(r.ctPayable)).toBe(8100);
+  });
+
+  it("QIP trigger uses divided threshold", () => {
+    expect(calcAssociatedCT(800000, 0, 1, 12).qipTriggered).toBe(true); // > 750k
+    expect(calcAssociatedCT(700000, 0, 1, 12).qipTriggered).toBe(false);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// VAT Registration Threshold Checker (added with the tool, fixed `now` dates)
+// ---------------------------------------------------------------------------
+import { checkVatThreshold } from "./vat-threshold";
+
+describe("vat-threshold compute", () => {
+  const july2026 = new Date(2026, 6, 15);
+
+  it("rolling breach: 91,200 in month of July → notify 30 Aug, effective 1 Sept", () => {
+    const r = checkVatThreshold(91200, 7600, 0, 7600, 0, july2026);
+    expect(r.breached).toBe(true);
+    expect(r.breachMonthsAhead).toBe(0);
+    expect(r.breachMonthLabel).toBe("July 2026");
+    expect(r.registerByLabel).toBe("30 August 2026");
+    expect(r.effectiveFromLabel).toBe("1 September 2026");
+    expect(r.headroom).toBe(-1200);
+  });
+
+  it("30-day forward test: 95k contract on 4 May → register by 3 June, effective 4 May", () => {
+    const r = checkVatThreshold(48000, 4000, 0, 95000, 0, new Date(2026, 4, 4));
+    expect(r.forwardBreached).toBe(true);
+    expect(r.registerByLabel).toBe("3 June 2026");
+    expect(r.effectiveFromLabel).toBe("4 May 2026");
+  });
+
+  it("flat trading under threshold never projects a breach", () => {
+    const r = checkVatThreshold(84000, 7000, 0, 7000, 0, july2026);
+    expect(r.breachMonthsAhead).toBe(null);
+    expect(r.registerByLabel).toBe(null);
+    expect(r.belowDereg).toBe(true);
+  });
+
+  it("growth projects a future breach month with correct dates", () => {
+    // 84k rolling, 7k latest month, 3%/month growth → breaches within horizon
+    const r = checkVatThreshold(84000, 7000, 3, 7000, 0, july2026);
+    expect(r.breachMonthsAhead).not.toBe(null);
+    expect(r.breachMonthsAhead!).toBeGreaterThan(0);
+    // register-by = 30 days after breach month end; effective = 1st of 2nd month after
+    expect(r.registerByLabel).toMatch(/\d/);
+    expect(r.effectiveFromLabel).toMatch(/^1 /);
+  });
+
+  it("exempt income is stripped before the test", () => {
+    const r = checkVatThreshold(95000, 5000, 0, 5000, 20000, july2026);
+    expect(r.taxableRolling).toBe(75000);
+    expect(r.breached).toBe(false);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Capital allowances vehicle (FA 2026: AIA 100%, 40% FYA, WDA 14%/6%)
+// ---------------------------------------------------------------------------
+import { calcCapitalAllowances } from "./capital-allowances-vehicle";
+
+describe("capital-allowances-vehicle compute", () => {
+  it("ltd new van 40000 @26.5% → AIA full relief, saving 10600, FYA alt 16000 yr1", () => {
+    const r = calcCapitalAllowances("van", 40000, true, "zero", "ltd", 100, 0.265);
+    expect(r.primary.year1Allowance).toBe(40000);
+    expect(r2(r.year1Saving)).toBe(10600);
+    expect(r2(r.cumulative4Saving)).toBe(10600);
+    expect(r.unrelievedAfter4).toBe(0);
+    expect(r.alternatives[0].year1Allowance).toBe(16000); // 40% FYA
+    // FYA cumulative: 16000 + 24000×(1−0.86^3) = 16000 + 8734.66
+    expect(r2(r.alternatives[0].cumulative4Allowance)).toBe(24734.66);
+    expect(r2(r.alternatives[1].year1Allowance)).toBe(5600); // WDA 14%
+  });
+
+  it("sole trader 120g car 30000, 80% use @42% → special 6%, yr1 604.80, 4yr 2210.05", () => {
+    const r = calcCapitalAllowances("car", 30000, true, "over50", "soleTrader", 80, 0.42);
+    expect(r.primary.year1Allowance).toBe(1800);
+    expect(r2(r.year1Saving)).toBe(604.80);
+    // 30000×(1−0.94^4)=6577.53 → ×0.8×0.42
+    expect(r2(r.cumulative4Saving)).toBe(2210.05);
+    expect(r2(r.unrelievedAfter4)).toBe(23422.47);
+  });
+
+  it("new zero-emission car → 100% FYA; used EV → main pool 14%", () => {
+    const nw = calcCapitalAllowances("car", 30000, true, "zero", "ltd", 100, 0.25);
+    expect(nw.primary.year1Allowance).toBe(30000);
+    const used = calcCapitalAllowances("car", 30000, false, "zero", "ltd", 100, 0.25);
+    expect(used.primary.year1Allowance).toBe(4200);
+  });
+
+  it("equipment above £1m AIA limit → excess into main pool", () => {
+    const r = calcCapitalAllowances("equipment", 1200000, true, "zero", "ltd", 100, 0.25);
+    expect(r.primary.year1Allowance).toBe(1000000 + 200000 * 0.14);
+  });
+});
