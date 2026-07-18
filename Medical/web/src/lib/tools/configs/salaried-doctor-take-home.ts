@@ -182,11 +182,11 @@ export const salariedDoctorTakeHomeTool: GenericTool = {
   related: [
     {
       label: "Locum Doctor Tax Calculator",
-      href: "/tools/locum-tax-calculator",
+      href: "/calculators/locum-tax-calculator",
     },
     {
       label: "NHS Pension Annual Allowance Calculator",
-      href: "/tools/nhs-pension-annual-allowance",
+      href: "/calculators/nhs-pension-annual-allowance",
     },
   ],
 };

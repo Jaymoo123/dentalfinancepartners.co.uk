@@ -1,6 +1,6 @@
 import type { GenericTool } from "@accounting-network/web-shared/tools";
 import { gbp } from "../format";
-import { PERSONAL_ALLOWANCE, BASIC_RATE_LIMIT, CLASS4_NI, CLASS1_NI, INCOME_TAX_RATES } from "../cis-tax";
+import { CLASS4_NI, CLASS1_NI, incomeTaxOn } from "../cis-tax";
 
 export const cisVsPayeComparison: GenericTool = {
   kind: "generic",
@@ -51,10 +51,7 @@ export const cisVsPayeComparison: GenericTool = {
     const cisRate = Number(v.cisRate) / 100;
     // --- CIS PATH (HP §11a) ---
     const cisProfit = Math.max(0, gross - expenses);
-    const cisTaxable = Math.max(0, cisProfit - PERSONAL_ALLOWANCE);
-    const cisIncomeTax =
-      Math.min(cisTaxable, BASIC_RATE_LIMIT) * INCOME_TAX_RATES.basic +
-      Math.max(0, cisTaxable - BASIC_RATE_LIMIT) * INCOME_TAX_RATES.higher;
+    const cisIncomeTax = incomeTaxOn(cisProfit);
     // Class 4 NI (HP §11a)
     const class4Lower =
       Math.min(Math.max(0, cisProfit - CLASS4_NI.lowerLimit), CLASS4_NI.upperLimit - CLASS4_NI.lowerLimit) * CLASS4_NI.main;
@@ -66,10 +63,7 @@ export const cisVsPayeComparison: GenericTool = {
     const cisAdvanceDeducted = gross * cisRate;
 
     // --- PAYE PATH (HP §11a) ---
-    const payeTaxable = Math.max(0, gross - PERSONAL_ALLOWANCE);
-    const payeIncomeTax =
-      Math.min(payeTaxable, BASIC_RATE_LIMIT) * INCOME_TAX_RATES.basic +
-      Math.max(0, payeTaxable - BASIC_RATE_LIMIT) * INCOME_TAX_RATES.higher;
+    const payeIncomeTax = incomeTaxOn(gross);
     // Employee Class 1 NI: 8% on £12,570-£50,270, 2% above (HP §11a)
     const payeNiLower =
       Math.min(Math.max(0, gross - CLASS4_NI.lowerLimit), CLASS4_NI.upperLimit - CLASS4_NI.lowerLimit) * CLASS1_NI.main;

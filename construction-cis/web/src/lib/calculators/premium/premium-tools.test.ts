@@ -32,6 +32,7 @@ import {
   GPS_PER_HEAD,
   GPS_WHOLE_BUSINESS_CAP,
 } from "../cis-tax";
+import { incomeTaxOn, taperedPersonalAllowance } from "../cis-tax";
 import { cisRefundPlannerConfig } from "./configs/cis-refund-planner";
 import { cisVsPayeConfig } from "./configs/cis-vs-paye";
 import { cisGpsReadinessConfig } from "./configs/cis-gps-readiness";
@@ -510,5 +511,35 @@ describe("Conservation invariants: default inputs, no NaN", () => {
     for (const row of result.breakdown ?? []) {
       expect(row.value).not.toContain("NaN");
     }
+  });
+});
+
+// ---------------------------------------------------------------------------
+// incomeTaxOn: PA taper + additional rate (2026-07-18 band-bug fix)
+// ---------------------------------------------------------------------------
+
+describe("incomeTaxOn - PA taper and additional rate", () => {
+  it("below taper: 60,000 -> basic 7,540 + higher (9,730 x 40%) = 11,432", () => {
+    expect(taperedPersonalAllowance(60000)).toBe(12570);
+    expect(incomeTaxOn(60000)).toBeCloseTo(7540 + 9730 * 0.4, 2);
+  });
+
+  it("taper zone: 120,000 -> PA 2,570, tax 39,432", () => {
+    // PA = 12,570 - (120,000-100,000)/2 = 2,570; taxable = 117,430
+    // basic 37,700 @ 20% = 7,540; higher = 79,730 @ 40% = 31,892; total 39,432
+    expect(taperedPersonalAllowance(120000)).toBe(2570);
+    expect(incomeTaxOn(120000)).toBeCloseTo(39432, 2);
+  });
+
+  it("additional rate: 150,000 -> PA 0, tax 53,703", () => {
+    // taxable 150,000; basic 7,540; higher band width 125,140-37,700 = 87,440 @ 40% = 34,976
+    // additional (150,000-125,140) = 24,860 @ 45% = 11,187; total 53,703
+    expect(taperedPersonalAllowance(150000)).toBe(0);
+    expect(incomeTaxOn(150000)).toBeCloseTo(53703, 2);
+  });
+
+  it("saLiability routes through incomeTaxOn (130,000 profit)", () => {
+    const { incomeTax } = saLiability({ profit: 130000 });
+    expect(incomeTax).toBeCloseTo(incomeTaxOn(130000), 6);
   });
 });

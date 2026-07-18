@@ -1,6 +1,6 @@
 import type { GenericTool } from "@accounting-network/web-shared/tools";
 import { gbp } from "../format";
-import { PERSONAL_ALLOWANCE, BASIC_RATE_LIMIT, CLASS4_NI, INCOME_TAX_RATES } from "../cis-tax";
+import { PERSONAL_ALLOWANCE, CLASS4_NI, incomeTaxOn, taperedPersonalAllowance } from "../cis-tax";
 
 export const cisSelfAssessmentCalculator: GenericTool = {
   kind: "generic",
@@ -70,13 +70,10 @@ export const cisSelfAssessmentCalculator: GenericTool = {
     // Total income
     const totalIncome = cisProfit + otherIncome;
 
-    // Personal allowance (HP §11a)
-    const taxable = Math.max(0, totalIncome - PERSONAL_ALLOWANCE);
-
-    // Income tax: 20% on first BASIC_RATE_LIMIT, 40% above (HP §11a)
-    const basicTax = Math.min(taxable, BASIC_RATE_LIMIT) * INCOME_TAX_RATES.basic;
-    const higherTax = Math.max(0, taxable - BASIC_RATE_LIMIT) * INCOME_TAX_RATES.higher;
-    const incomeTax = basicTax + higherTax;
+    // Income tax with PA taper and additional rate (HP §11a)
+    const pa = taperedPersonalAllowance(totalIncome);
+    const taxable = Math.max(0, totalIncome - pa);
+    const incomeTax = incomeTaxOn(totalIncome);
 
     // Class 4 NI on CIS profit: 6% on £12,570-£50,270, 2% above (HP §11a)
     const niBase = cisProfit;
@@ -108,8 +105,8 @@ export const cisSelfAssessmentCalculator: GenericTool = {
         { label: "Other income", value: gbp(otherIncome) },
         { label: "Total income", value: gbp(totalIncome) },
         {
-          label: "Less personal allowance (£12,570)",
-          value: `−${gbp(Math.min(PERSONAL_ALLOWANCE, totalIncome))}`,
+          label: pa < PERSONAL_ALLOWANCE ? "Less personal allowance (tapered)" : "Less personal allowance (£12,570)",
+          value: `−${gbp(Math.min(pa, totalIncome))}`,
         },
         { label: "Taxable income", value: gbp(taxable) },
         { label: "Income tax", value: gbp(incomeTax) },
@@ -125,7 +122,7 @@ export const cisSelfAssessmentCalculator: GenericTool = {
           strong: true,
         },
       ],
-      note: "2026/27 rates: PA £12,570, basic rate 20%, higher rate 40%, Class 4 NI 6% (£12,570–£50,270) and 2% above. Excludes Class 2 NI (£0 for profits above £7,105). For limited companies the EPS reclaim route applies instead of Self Assessment. This is an estimate only.",
+      note: "2026/27 rates: PA £12,570 (tapering above £100,000), basic rate 20%, higher rate 40%, additional rate 45% above £125,140, Class 4 NI 6% (£12,570–£50,270) and 2% above. Excludes Class 2 NI (£0 for profits above £7,105). For limited companies the EPS reclaim route applies instead of Self Assessment. This is an estimate only.",
     };
   },
   explainer: {

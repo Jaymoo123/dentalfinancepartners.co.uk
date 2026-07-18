@@ -179,6 +179,33 @@ export function cisDeduction({
   return { deductionBase, cisDeducted };
 }
 
+export const ADDITIONAL_RATE_THRESHOLD = 125140;
+
+/** Personal allowance after taper: £1 lost per £2 of income over £100,000, £0 at £125,140. */
+export function taperedPersonalAllowance(totalIncome: number): number {
+  if (totalIncome <= 100000) return PERSONAL_ALLOWANCE;
+  return Math.max(0, PERSONAL_ALLOWANCE - (totalIncome - 100000) / 2);
+}
+
+/**
+ * Income tax on total income, 2026/27 bands with PA taper (HP §11a).
+ * Basic band fixed £37,700; higher band width = (125,140 - PA) - 37,700;
+ * additional 45% above £125,140.
+ */
+export function incomeTaxOn(totalIncome: number): number {
+  const income = Math.max(0, totalIncome);
+  const pa = taperedPersonalAllowance(income);
+  const taxable = Math.max(0, income - pa);
+  const higherBandWidth = Math.max(0, ADDITIONAL_RATE_THRESHOLD - pa - BASIC_RATE_LIMIT);
+
+  const basicTax = Math.min(taxable, BASIC_RATE_LIMIT) * INCOME_TAX_RATES.basic;
+  const higherTax =
+    Math.min(Math.max(0, taxable - BASIC_RATE_LIMIT), higherBandWidth) * INCOME_TAX_RATES.higher;
+  const additionalTax =
+    Math.max(0, taxable - BASIC_RATE_LIMIT - higherBandWidth) * INCOME_TAX_RATES.additional;
+  return basicTax + higherTax + additionalTax;
+}
+
 /**
  * Self Assessment liability for a sole-trader CIS subcontractor.
  * Returns income tax and Class 4 NI as separate numbers.
@@ -196,13 +223,7 @@ export function saLiability({
   const cisProfit = Math.max(0, profit);
   const totalIncome = cisProfit + (Number.isFinite(otherIncome) ? otherIncome : 0);
 
-  // Personal allowance and taxable income
-  const taxable = Math.max(0, totalIncome - PERSONAL_ALLOWANCE);
-
-  // Income tax: 20% on first BASIC_RATE_LIMIT, 40% above
-  const basicTax = Math.min(taxable, BASIC_RATE_LIMIT) * INCOME_TAX_RATES.basic;
-  const higherTax = Math.max(0, taxable - BASIC_RATE_LIMIT) * INCOME_TAX_RATES.higher;
-  const incomeTax = basicTax + higherTax;
+  const incomeTax = incomeTaxOn(totalIncome);
 
   // Class 4 NI on CIS profit: 6% on (12570-50270), 2% above
   const c4Lower =

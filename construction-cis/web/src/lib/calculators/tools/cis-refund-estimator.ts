@@ -1,6 +1,6 @@
 import type { GenericTool } from "@accounting-network/web-shared/tools/types";
 import { gbp } from "../format";
-import { PERSONAL_ALLOWANCE, BASIC_RATE_LIMIT, CLASS4_NI, INCOME_TAX_RATES } from "../cis-tax";
+import { CLASS4_NI, incomeTaxOn } from "../cis-tax";
 
 export const cisRefundEstimator: GenericTool = {
   kind: "generic",
@@ -77,13 +77,8 @@ export const cisRefundEstimator: GenericTool = {
     // Total income including other sources
     const totalIncome = cisProfit + otherIncome;
 
-    // Personal allowance and taxable income (HP §11a)
-    const taxable = Math.max(0, totalIncome - PERSONAL_ALLOWANCE);
-
-    // Income tax: 20% on first BASIC_RATE_LIMIT, 40% above (HP §11a)
-    const basicTax = Math.min(taxable, BASIC_RATE_LIMIT) * INCOME_TAX_RATES.basic;
-    const higherTax = Math.max(0, taxable - BASIC_RATE_LIMIT) * INCOME_TAX_RATES.higher;
-    const incomeTax = basicTax + higherTax;
+    // Income tax with PA taper and additional rate (HP §11a)
+    const incomeTax = incomeTaxOn(totalIncome);
 
     // Class 4 NI on CIS profit: 6% on £12,570-£50,270, 2% above (HP §11a)
     const class4Lower =
@@ -125,7 +120,7 @@ export const cisRefundEstimator: GenericTool = {
           strong: true,
         },
       ],
-      note: "This is an estimate based on 2026/27 rates (PA £12,570, basic rate 20%, Class 4 NI 6%/2%). It assumes no other credits or adjustments. A specialist CIS accountant will identify all allowable deductions and file your Self Assessment correctly.",
+      note: "This is an estimate based on 2026/27 rates (PA £12,570, tapering above £100,000; basic 20%, higher 40%, additional 45%; Class 4 NI 6%/2%). It assumes no other credits or adjustments. A specialist CIS accountant will identify all allowable deductions and file your Self Assessment correctly.",
     };
   },
   explainer: {

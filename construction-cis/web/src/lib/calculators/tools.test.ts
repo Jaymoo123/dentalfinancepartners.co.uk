@@ -278,12 +278,13 @@ describe("Tool 3 - cis-refund-estimator", () => {
     // refund=2400-0=2400 (refund! not owe)
     // For an owe case: grossIncome=80000, materials=0, rate=20, expenses=0, otherIncome=30000
     // deductionBase=80000; cisDeducted=16000; cisProfit=80000
-    // totalIncome=80000+30000=110000; taxable=110000-12570=97430
-    // basicTax=37700*0.2=7540; higherTax=(97430-37700)*0.4=59730*0.4=23892
-    // incomeTax=31432
+    // totalIncome=80000+30000=110000; PA tapers: 12570-(110000-100000)/2=7570
+    // taxable=110000-7570=102430
+    // basicTax=37700*0.2=7540; higherTax=(102430-37700)*0.4=64730*0.4=25892
+    // incomeTax=33432
     // class4Lower=37700*0.06=2262; class4Upper=(80000-50270)*0.02=595.4; class4Ni=2857.4
-    // totalLiability=31432+2857.4=34289.4
-    // refund=16000-34289.4=-18289.4 -> owe case -> "£18,289"
+    // totalLiability=33432+2857.4=36289.4
+    // refund=16000-36289.4=-20289.4 -> owe case -> "£20,289"
     const r = cisRefundEstimator.compute({
       grossIncome: 80000,
       materialsInvoiced: 0,
@@ -292,8 +293,8 @@ describe("Tool 3 - cis-refund-estimator", () => {
       otherIncome: 30000,
     });
     expect(r.headline.label).toBe("Estimated tax to pay");
-    // value = gbp(abs(-18289.4)) = gbp(18289.4) = "£18,289"
-    expect(r.headline.value).toBe("£18,289");
+    // value = gbp(abs(-20289.4)) = gbp(20289.4) = "£20,289"
+    expect(r.headline.value).toBe("£20,289");
   });
 });
 

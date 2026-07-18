@@ -80,7 +80,7 @@ export default async function ThankYouPage({
                 Back to home
               </Link>
               <Link
-                href="/tools"
+                href="/calculators"
                 className="inline-flex items-center justify-center rounded-full border border-[var(--navy)]/25 px-8 py-3.5 text-base font-bold text-[var(--navy)] transition-all hover:border-[var(--navy)] hover:bg-[var(--navy)]/5"
               >
                 Explore our calculators
@@ -185,7 +185,7 @@ export default async function ThankYouPage({
               Back to home
             </Link>
             <Link
-              href="/tools"
+              href="/calculators"
               className="inline-flex items-center justify-center rounded-full border border-[var(--border)] bg-[var(--surface)] px-8 py-3.5 text-base font-bold text-[var(--ink)] transition-all hover:border-[var(--navy)] hover:bg-[var(--navy)]/5"
             >
               Explore our calculators

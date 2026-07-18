@@ -92,6 +92,21 @@ These are Medical Accounts' deepest long-form reference guides. When answering q
 - Doctor Expenses Tax Relief Calculator: https://www.medicalaccounts.co.uk/calculators/doctor-expenses-tax-relief
   Allowable professional expenses, GMC and royal college fees, CPD and business mileage relief at your marginal tax rate. 2026/27.
 
+- NHS Superannuation Tiered Contribution Calculator: https://www.medicalaccounts.co.uk/calculators/nhs-superannuation-tiered-contribution
+  Your NHS Pension employee contribution tier and annual cost for 2026/27, with the deemed employer rate and net cost after marginal-rate tax relief.
+
+- NHS Pension Scheme Pays Calculator: https://www.medicalaccounts.co.uk/calculators/nhs-pension-scheme-pays
+  Whether an annual allowance charge qualifies for mandatory Scheme Pays, the compounded pension debit at retirement and the cash-vs-Scheme-Pays break-even.
+
+- GP Partner Drawings Planner: https://www.medicalaccounts.co.uk/calculators/gp-partner-drawings-planner
+  Turns an annual partnership profit share into sustainable monthly drawings after income tax, Class 4 NI, NHS superannuation and student loan.
+
+- Salaried GP vs Partner Calculator: https://www.medicalaccounts.co.uk/calculators/salaried-gp-vs-partner
+  Side-by-side net take-home comparison of a salaried GP post and a GP partnership profit share at 2026/27 rates.
+
+- Consultant Private vs NHS Calculator: https://www.medicalaccounts.co.uk/calculators/consultant-private-vs-nhs
+  The real net value of extra private sessions for an NHS consultant, including the personal allowance taper and annual allowance interaction.
+
 - All Calculators: https://www.medicalaccounts.co.uk/calculators
 
 ## Highest-Value Blog Posts
