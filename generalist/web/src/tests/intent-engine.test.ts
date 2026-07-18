@@ -80,11 +80,10 @@ describe("sticky_cta", () => {
     expect(a!.topic).toBe("rnd");
   });
 
-  it("compliance topic (no calculator) -> specialist offer as fallback", () => {
+  it("compliance topic offers the MTD readiness tool (wired 2026-07-18)", () => {
     const a = evaluate("sticky_cta", ctx({ pageTopic: "compliance" }));
     expect(a).not.toBeNull();
-    expect(a!.calculatorSlug).toBeNull();
-    expect(a!.offer.kind).toBe("specialist");
+    expect(a!.calculatorSlug).toBe("mtd-itsa-readiness");
   });
 });
 
@@ -219,6 +218,16 @@ const ALL_REGISTRY_CALC_SLUGS: string[] = [
   "rd-tax-credit-estimator",
   "badr-cgt-calculator",
   "vat-scheme-comparator",
+  "associated-companies-ct",
+  "dividend-tax-2026-27",
+  "cgt-60-day-reporter",
+  "capital-allowances-vehicle",
+  "sole-trader-vs-ltd",
+  "vat-threshold-checker",
+  "p11d-bik-calculator",
+  "mileage-claim",
+  "mtd-itsa-readiness",
+  "cis-subcontractor-deduction",
 ];
 
 /** Slugs intentionally absent from CALC_SLUG_TO_TOPIC. Empty for this site. */

@@ -81,7 +81,7 @@ export const TOPICS: Topic[] = [
     key: "gp-practice",
     label: "GP practice accounting and services",
     blogCategorySlugs: ["gp-practice-management", "gp-accountant-services"],
-    primaryCalculator: null,
+    primaryCalculator: "gp-partner-drawings-planner",
     ctaCopy: "Speak to a specialist medical accountant about your practice",
     resourceId: null,
   },
@@ -138,6 +138,11 @@ export const CALC_SLUG_TO_TOPIC: Record<string, TopicKey> = {
   "private-practice-incorporation": "incorporation-private",
   "salaried-doctor-take-home": "gp-tax",
   "doctor-expenses-tax-relief": "gp-tax",
+  "nhs-superannuation-tiered-contribution": "nhs-pension",
+  "nhs-pension-scheme-pays": "nhs-pension",
+  "gp-partner-drawings-planner": "gp-practice",
+  "salaried-gp-vs-partner": "gp-practice",
+  "consultant-private-vs-nhs": "gp-tax",
 };
 
 const BLOG_SLUG_TO_TOPIC: Record<string, TopicKey> = {};

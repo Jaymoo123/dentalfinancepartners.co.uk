@@ -132,8 +132,9 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
   },
   "gp-practice": {
     topic: "gp-practice",
-    toolId: null,
-    // No asset for gp-practice: specialist-contact topic only.
+    // Wired 2026-07-18 QA pass: partner drawings premium island now exists,
+    // so gp-practice-management / gp-accountant-services posts get a tool.
+    toolId: "gp-partner-drawings-planner",
     xlsx: null,
     guide: null,
     magnetTitle: "Speak to a specialist medical accountant",

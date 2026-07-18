@@ -470,8 +470,8 @@ describe("evaluate: next_step", () => {
     expect(action).not.toBeNull();
     expect(action!.surface).toBe("next_step");
     expect(action!.topic).toBe("compliance");
-    // compliance has no primary calculator, so offer falls back to specialist/review
-    expect(["specialist", "guide"]).toContain(action!.offer.kind);
+    // compliance now has dental-tax-deductions as its primary calculator (2026-07-18 QA wiring)
+    expect(["tool", "specialist", "guide"]).toContain(action!.offer.kind);
   });
 });
 
@@ -483,12 +483,11 @@ describe("evaluate: offer escalation ladder", () => {
     expect(action!.offer.href).toContain("/calculators/");
   });
 
-  it("compliance topic (no calculator) falls back to specialist even for light browser", () => {
+  it("compliance topic light browser gets the deductions tool (wired 2026-07-18)", () => {
     const ctx = { ...baseCtx, pageTopic: "compliance" as const, scrollPct: 10, engagedMs: 1000 };
     const action = evaluate("sticky_cta", ctx);
-    // compliance has no primaryCalculator so tool offer is null -> falls to specialist/review
     expect(action).not.toBeNull();
-    expect(action!.offer.href).toBe("/contact");
+    expect(action!.offer.href).toBe("/calculators/dental-tax-deductions");
   });
 
   it("engaged reader gets review offer", () => {

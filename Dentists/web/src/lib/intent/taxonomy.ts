@@ -106,8 +106,8 @@ export const TOPICS: Topic[] = [
     key: "selling",
     label: "Selling a dental practice",
     blogCategorySlugs: ["goodwill-and-practice-sale"],
-    primaryCalculator: "practice-valuation",
-    ctaCopy: "Get a valuation estimate before you sell",
+    primaryCalculator: "practice-sale-cgt",
+    ctaCopy: "Estimate the CGT on your practice sale",
     resourceId: "selling",
   },
   {
@@ -122,8 +122,8 @@ export const TOPICS: Topic[] = [
     key: "compliance",
     label: "VAT, compliance and specialist services",
     blogCategorySlugs: ["vat-and-compliance", "general", "specialist-services"],
-    primaryCalculator: null,
-    ctaCopy: "Speak to a specialist dental accountant",
+    primaryCalculator: "dental-tax-deductions",
+    ctaCopy: "Check which expenses you can claim as a dentist",
     resourceId: null,
   },
 ];
@@ -146,6 +146,14 @@ export const CALC_SLUG_TO_TOPIC: Record<string, TopicKey> = {
   "practice-valuation": "buying",
   "locum-structure": "associate",
   "principal-extraction": "principal",
+  "practice-purchase": "buying",
+  "practice-sale-cgt": "selling",
+  "sdr-scotland": "nhs",
+  "superannuation-contributions": "nhs",
+  "nhs-pension-aa-taper": "nhs",
+  "equipment-capital-allowance": "principal",
+  "practice-owner-income-benchmark": "principal",
+  "dental-tax-deductions": "compliance",
 };
 
 const BLOG_SLUG_TO_TOPIC: Record<string, TopicKey> = {};

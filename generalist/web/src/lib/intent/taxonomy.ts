@@ -128,8 +128,8 @@ export const TOPICS: Topic[] = [
     key: "compliance",
     label: "Bookkeeping and compliance",
     blogCategorySlugs: ["bookkeeping-and-compliance", "corporation-tax"],
-    primaryCalculator: null,
-    ctaCopy: "Speak to a specialist about your compliance",
+    primaryCalculator: "mtd-itsa-readiness",
+    ctaCopy: "Check if and when MTD applies to you",
     resourceId: null,
   },
 ];
@@ -156,6 +156,16 @@ export const CALC_SLUG_TO_TOPIC: Record<string, TopicKey> = {
   "rd-tax-credit-estimator": "rnd",
   "badr-cgt-calculator": "exit-cgt",
   "pension-contribution-optimiser": "director-pay",
+  "associated-companies-ct": "limited-company",
+  "dividend-tax-2026-27": "director-pay",
+  "cgt-60-day-reporter": "exit-cgt",
+  "capital-allowances-vehicle": "limited-company",
+  "sole-trader-vs-ltd": "incorporation",
+  "vat-threshold-checker": "vat-mtd",
+  "p11d-bik-calculator": "payroll",
+  "mileage-claim": "sole-trader",
+  "mtd-itsa-readiness": "compliance",
+  "cis-subcontractor-deduction": "sole-trader",
 };
 
 /**

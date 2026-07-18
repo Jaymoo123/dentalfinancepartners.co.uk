@@ -440,12 +440,11 @@ describe("evaluate: sticky_cta", () => {
     expect(action!.topic).toBe("incorporation-private");
   });
 
-  it("gp-practice (no calculator) falls back to specialist offer", () => {
+  it("gp-practice offers the partner drawings planner (wired 2026-07-18)", () => {
     const ctx = { ...baseCtx, pageTopic: "gp-practice" as const, scrollPct: 10, engagedMs: 1000 };
     const action = evaluate("sticky_cta", ctx);
     expect(action).not.toBeNull();
-    // gp-practice has no primaryCalculator, so offer falls back to specialist/review
-    expect(action!.offer.href).toBe("/contact");
+    expect(action!.offer.href).toBe("/calculators/gp-partner-drawings-planner");
   });
 });
 
@@ -604,14 +603,14 @@ describe("evaluate: next_step", () => {
     expect(action!.offer.href).toContain("locum-tax-calculator");
   });
 
-  it("returns action with pageTopic (gp-practice, no calc -> specialist)", () => {
+  it("returns action with pageTopic (gp-practice)", () => {
     const ctx = { ...baseCtx, pageTopic: "gp-practice" as const };
     const action = evaluate("next_step", ctx);
     expect(action).not.toBeNull();
     expect(action!.surface).toBe("next_step");
     expect(action!.topic).toBe("gp-practice");
-    // gp-practice has no primaryCalculator, so offer falls back to specialist/review
-    expect(["specialist", "guide"]).toContain(action!.offer.kind);
+    // gp-practice primaryCalculator = gp-partner-drawings-planner (wired 2026-07-18)
+    expect(["tool", "specialist", "guide"]).toContain(action!.offer.kind);
   });
 
   it("returns tool offer for locum (has calculator)", () => {
@@ -631,11 +630,11 @@ describe("evaluate: offer escalation ladder", () => {
     expect(action!.offer.href).toContain("/calculators/");
   });
 
-  it("gp-practice topic (no calculator) falls back to specialist even for light browser", () => {
+  it("gp-practice light browser gets the drawings planner tool (wired 2026-07-18)", () => {
     const ctx = { ...baseCtx, pageTopic: "gp-practice" as const, scrollPct: 10, engagedMs: 1000 };
     const action = evaluate("sticky_cta", ctx);
     expect(action).not.toBeNull();
-    expect(action!.offer.href).toBe("/contact");
+    expect(action!.offer.href).toBe("/calculators/gp-partner-drawings-planner");
   });
 
   it("engaged reader gets review offer", () => {

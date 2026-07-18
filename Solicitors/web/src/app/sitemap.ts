@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/for-locum-solicitors",
     "/free-firm-health-check",
     "/law-firm-chart-of-accounts-template",
+    "/tools/equity-partner-buy-in",
     "/uk-solicitor-tax-rates",
     "/specialist-vs-generalist-accountant",
     "/privacy-policy",
