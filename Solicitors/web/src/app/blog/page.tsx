@@ -7,12 +7,12 @@ import { siteConfig } from "@/config/site";
 import { BlogListWithSearch } from "@/components/blog/BlogListWithSearch";
 
 export const metadata: Metadata = {
-  title: "Legal Sector Accounting Blog | Solicitor Tax & SRA Compliance Advice",
+  title: "Legal Sector Accounting Insights & Guides | Accounts for Lawyers",
   description:
-    "Expert articles on SRA compliance, partnership tax, LLP conversion, and practice succession. Written by solicitor accounting specialists for UK law firms.",
+    "In-depth guides on SRA Accounts Rules, partnership and LLP tax, VAT, and practice succession for UK law firms. Written by legal-sector accounting specialists.",
   alternates: { canonical: `${siteConfig.url}/blog` },
   openGraph: {
-    title: "Legal Sector Accounting Blog | Solicitor Tax & SRA Compliance Advice",
+    title: "Legal Sector Accounting Insights & Guides | Accounts for Lawyers",
     description:
       "Expert articles on SRA compliance, partnership tax, LLP conversion, and practice succession for UK solicitors and law firms.",
     url: `${siteConfig.url}/blog`,
@@ -41,7 +41,11 @@ export default function BlogIndexPage() {
         Legal sector accounting insights for UK solicitors
       </h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-        In-depth guidance on SRA Accounts Rules compliance, partnership tax planning, LLP conversion, and practice succession. Written specifically for solicitors and law firms navigating UK tax regulations and legal sector accounting.
+        In-depth guidance on SRA Accounts Rules compliance, partnership tax planning, LLP conversion, and practice succession. Written specifically for solicitors and law firms navigating UK tax regulations and legal sector accounting. Looking for the firm behind these guides? See our{" "}
+        <Link className={`text-[var(--primary)] underline ${focusRing} rounded`} href="/services">
+          accountants for solicitors and lawyers
+        </Link>{" "}
+        service overview.
       </p>
 
       {/* Featured Category Guides */}

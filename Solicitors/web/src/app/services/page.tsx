@@ -3,11 +3,11 @@ import Link from "next/link";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { btnPrimary, focusRing, siteContainerLg, sectionY, sectionYLoose } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
-import { buildService, buildBreadcrumbJsonLd, buildFaqPage, JsonLd } from "@/lib/schema/index";
+import { buildService, buildBreadcrumbJsonLd, buildFaqPage, buildOrganizationJsonLd, JsonLd } from "@/lib/schema/index";
 
-const TITLE = `Specialist Accountants for UK Solicitors and Law Firms | ${siteConfig.name}`;
+const TITLE = "Accountants for Solicitors and Lawyers UK | SRA, LLP + Partner Tax";
 const DESCRIPTION =
-  "Specialist accountants for UK law firms. SRA accounts rules + accountant's reports, LLP and partnership accounting, professional indemnity, partner tax, practice valuation. Fixed fees.";
+  "Specialist accountants for solicitors and law firms across the UK. SRA Accounts Rules + accountant's reports, LLP and partnership accounting, professional indemnity, partner tax, practice valuation. Fixed monthly fees.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -181,20 +181,52 @@ const FAQS = [
     answer:
       "Yes. The conversion preserves the tax-transparent treatment but adds limited liability for members and a Companies House filing obligation. Most firms benefit; a minority don't (typically very small practices where the admin overhead outweighs the liability protection). We model the conversion economics, draft the partnership agreement updates required, and co-ordinate the Companies House process.",
   },
+  {
+    question: "Are you accountants for solicitors across the whole UK?",
+    answer:
+      "Yes. We are accountants for solicitors and law firms nationally, working remotely with practices from Cornwall to Scotland. Legal-sector accounting is location-independent (SRA Accounts Rules, LLP and partnership tax, and the annual Accountant's Report are the same wherever the firm sits), so we serve clients across England, Wales, Scotland and Northern Ireland rather than by postcode. Meetings run by video call, with the senior accountant on your file directly reachable.",
+  },
+  {
+    question: "Do you act as accountants for lawyers and barristers?",
+    answer:
+      "Yes. Solicitors and law firm partners are the core of the book, and we also act for barristers, legal-sector consultants and conveyancers. The regulatory frame differs (barristers are BSB-regulated and do not hold client money the way solicitors do under the SRA Accounts Rules), so we scope the engagement to the specific practice type rather than applying a single legal-sector template.",
+  },
+  {
+    question: "How are your fees structured?",
+    answer:
+      "Fixed monthly fees agreed up front, based on firm size and complexity rather than hourly billing on routine work. Sole practitioners and small firms typically start on our Essentials tier, scaling LLPs on Growth, and practice-sale or acquisition work is quoted bespoke under Specialist. You know the fee before you commit, and there is no hourly meter running on day-to-day questions.",
+  },
 ];
 
 export default function ServicesPage() {
   const breadcrumbItems = [{ label: "Home", href: "/" }, { label: "Services" }];
-  const serviceSchema = buildService({
-    name: "Specialist Accountancy for UK Solicitors and Law Firms",
+  const serviceSchema = {
+    ...buildService({
+      name: "Accountants for Solicitors and Lawyers",
+      description: DESCRIPTION,
+      path: "/services",
+      serviceType: "Legal Sector Accountancy",
+      category: "Professional Services Accountancy",
+    }),
+    // Point provider at the site-wide Organization node instead of a duplicate inline entity.
+    provider: { "@id": `${siteConfig.url}#organization` },
+  };
+  // National LocalBusiness: we serve solicitors UK-wide, no single trading storefront.
+  const orgSchema = buildOrganizationJsonLd();
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "@id": `${siteConfig.url}/services#localbusiness`,
+    name: siteConfig.name,
     description: DESCRIPTION,
-    path: "/services",
-    serviceType: "Legal Sector Accountancy",
-    category: "Professional Services Accountancy",
-  });
+    url: `${siteConfig.url}/services`,
+    image: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
+    areaServed: { "@type": "Country", name: "GB" },
+    parentOrganization: { "@id": `${siteConfig.url}#organization` },
+  };
   const breadcrumbSchema = JSON.parse(buildBreadcrumbJsonLd(breadcrumbItems));
   const faqSchema = buildFaqPage(FAQS);
-  const schemaPayload = faqSchema ? [serviceSchema, breadcrumbSchema, faqSchema] : [serviceSchema, breadcrumbSchema];
+  const schemaPayload = [orgSchema, serviceSchema, localBusinessSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
 
   return (
     <>
@@ -212,7 +244,7 @@ export default function ServicesPage() {
               Accountants for UK solicitors and law firms
             </h1>
             <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
-              SRA Accounts Rules + accountant&apos;s report, LLP and partnership accounting, professional indemnity, partner tax, practice valuation. We work with solicitors only, on fixed monthly fees, with the senior accountant on your account answering your emails.
+              Specialist accountants for solicitors and lawyers across the whole of the UK. SRA Accounts Rules + accountant&apos;s report, LLP and partnership accounting, professional indemnity, partner tax, practice valuation. We work with law firms only, on fixed monthly fees, with the senior accountant on your account answering your emails.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/contact" className={btnPrimary} style={{background: "white", color: "var(--primary)"}}>

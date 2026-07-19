@@ -7,12 +7,12 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 
 export const metadata: Metadata = {
-  title: "Contact Accounts for Lawyers | Book Free Consultation",
-  description: `Contact ${siteConfig.name} for solicitor accounting and law firm tax enquiries. SRA compliance, partnership tax, LLP conversion advice. 24-hour response.`,
+  title: `Contact ${siteConfig.name} | Book a Free Consultation`,
+  description: `Get in touch with ${siteConfig.name} to discuss SRA compliance, partnership tax or LLP conversion for your firm. Fixed-fee quotes, 24-hour response.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
-    title: "Contact Accounts for Lawyers",
-    description: "Book free consultation for solicitor accounting and law firm tax advice. 24-hour response time.",
+    title: `Contact ${siteConfig.name}`,
+    description: "Book a free consultation to discuss SRA compliance, partnership tax and LLP advice. 24-hour response time.",
     url: `${siteConfig.url}/contact`,
     type: "website",
   },
@@ -37,6 +37,13 @@ export default function ContactPage() {
       <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Contact us</h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
         Whether you're a sole practitioner managing SRA compliance, a law firm partner navigating LLP conversion, or a COFA ensuring client money rules are met, we're here to help. Fill in the form below or contact us directly.
+      </p>
+      <p className="mt-3 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+        New here? Start with our{" "}
+        <Link className={`text-[var(--accent-strong)] underline ${focusRing} rounded`} href="/services">
+          accountants for solicitors and lawyers
+        </Link>{" "}
+        service overview to see how we work and what fixed-fee engagement fits your firm.
       </p>
       
       <div className="mt-10 grid gap-8 sm:mt-12 lg:grid-cols-[1fr_1.5fr] lg:gap-10 xl:gap-12">
