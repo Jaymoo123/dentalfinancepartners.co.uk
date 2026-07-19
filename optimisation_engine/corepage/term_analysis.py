@@ -39,8 +39,17 @@ out up down off only own same s t re ve ll d m o re per via etc eg ie
 """.split())
 
 # Roots worth tracking individually (single tokens), beyond the head phrases.
-ROOT_TOKENS = ["accountant", "accountants", "property", "landlord", "landlords",
-               "tax", "buy-to-let", "investor", "investors"]
+# Per-site fallbacks used when the CORE_PAGES entry has no root_tokens; the
+# config entry always wins.
+SITE_ROOT_TOKENS = {
+    "property": ["accountant", "accountants", "property", "landlord",
+                 "landlords", "tax", "buy-to-let", "investor", "investors"],
+    "solicitors": ["accountant", "accountants", "solicitor", "solicitors",
+                   "law", "firm", "sra", "legal", "tax"],
+    "dentists": ["accountant", "accountants", "dentist", "dentists", "dental",
+                 "practice", "associate", "nhs", "tax"],
+}
+ROOT_TOKENS = SITE_ROOT_TOKENS["property"]
 
 
 def _fetch_any(url: str) -> tuple[int, str]:
@@ -181,7 +190,7 @@ def run_term_analysis(site_key: str, page_key: str, *, our_url: str | None = Non
     cfg = get_core_page(site_key, page_key)
     head_terms = cfg["head_terms"]
     main_terms = cfg.get("main_keyword_terms")
-    root_tokens = cfg.get("root_tokens")
+    root_tokens = cfg.get("root_tokens") or SITE_ROOT_TOKENS.get(site_key)
     out_dir = ROOT / "briefs" / site_key / page_key
     pack_path = out_dir / "_analysis_pack.json"
     if not pack_path.exists():

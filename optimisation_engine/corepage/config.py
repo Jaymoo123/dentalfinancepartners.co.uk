@@ -97,6 +97,68 @@ CORE_PAGES: dict[str, dict[str, dict]] = {
                                    "accountant for small business"],
         },
     },
+    "solicitors": {
+        "services": {
+            "site_key": "solicitors",
+            "page_key": "services",
+            "page_type": "services",
+            "domain": "accountsforlawyers.co.uk",
+            "page_url": "https://www.accountsforlawyers.co.uk/services",
+            "canonical_path": "/services",
+            "source_tsx": "Solicitors/web/src/app/services/page.tsx",
+            "web_root": "Solicitors/web",
+            # National head family /services should OWN. NOTE: /contact holds
+            # pos 18-22 on "accountant for lawyers" — migrating that query
+            # needs explicit owner OK (approved W1 per plan 2026-07-19).
+            "head_terms": [
+                "accounting for solicitors",
+                "accountants for solicitors",
+                "solicitor accountants",
+                "accountant for lawyers",
+                "accounting services for law firms",
+                "law firm accounting services",
+            ],
+            "geo_modifiers": [
+                "london", "manchester", "birmingham", "leeds", "liverpool",
+                "bristol", "glasgow", "edinburgh", "near me",
+            ],
+            "head_match_like": ["%accountant%", "%accountancy%", "%accounting%"],
+            "root_tokens": ["accountant", "accountants", "accounting",
+                            "solicitor", "solicitors", "law", "firm", "firms",
+                            "sra", "legal", "tax"],
+            "main_keyword_terms": ["accounting for solicitors",
+                                   "accountants for solicitors"],
+        },
+    },
+    "dentists": {
+        "homepage": {
+            "site_key": "dentists",
+            "page_key": "homepage",
+            "page_type": "homepage",
+            "domain": "dentalfinancepartners.co.uk",
+            "page_url": "https://www.dentalfinancepartners.co.uk/",
+            "canonical_path": "/",
+            "source_tsx": "Dentists/web/src/app/page.tsx",
+            "web_root": "Dentists/web",
+            "head_terms": [
+                "dental accountants",
+                "accountants for dentists",
+                "dental accountant",
+                "specialist dental accountants",
+                "dental practice accountants",
+            ],
+            "geo_modifiers": [
+                "london", "manchester", "birmingham", "leeds", "liverpool",
+                "bristol", "glasgow", "edinburgh", "wales", "near me",
+            ],
+            "head_match_like": ["%accountant%", "%accountancy%", "%accounting%"],
+            "root_tokens": ["accountant", "accountants", "accounting",
+                            "dentist", "dentists", "dental", "practice",
+                            "associate", "nhs", "tax"],
+            "main_keyword_terms": ["dental accountants",
+                                   "accountants for dentists"],
+        },
+    },
 }
 
 

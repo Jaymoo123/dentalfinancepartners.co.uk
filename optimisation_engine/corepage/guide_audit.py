@@ -36,7 +36,17 @@ if str(ROOT) not in sys.path:
 # so the pack and the binding gate can never disagree.
 from scripts.track2_collapse_guard import enrich, evaluate  # noqa: E402
 
-BLOG = ROOT / "Property" / "web" / "content" / "blog"
+# Per-site blog content dirs; --site switches which corpus read_md() reads.
+# NOTE: CLUSTERS/GAP_TOPICS below are still Property knowledge — add per-site
+# cluster config before running this audit against another site's corpus.
+SITE_BLOG_DIRS = {
+    "property": ROOT / "Property" / "web" / "content" / "blog",
+    "generalist": ROOT / "generalist" / "web" / "content" / "blog",
+    "solicitors": ROOT / "Solicitors" / "web" / "content" / "blog",
+    "dentists": ROOT / "Dentists" / "web" / "content" / "blog",
+    "medical": ROOT / "Medical" / "web" / "content" / "blog",
+}
+BLOG = SITE_BLOG_DIRS["property"]
 BING_PAGE1 = 10  # Bing position <= this in a satellite's loss set vetoes auto-collapse
 
 
@@ -378,7 +388,12 @@ def main() -> None:
     ap.add_argument("--gap", help="single gap-topic key")
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--days", type=int, default=90)
+    ap.add_argument("--site", default="property", choices=sorted(SITE_BLOG_DIRS),
+                    help="which site's blog corpus read_md() reads (default: property)")
     args = ap.parse_args()
+
+    global BLOG
+    BLOG = SITE_BLOG_DIRS[args.site]
 
     results = []
     if args.cluster:
