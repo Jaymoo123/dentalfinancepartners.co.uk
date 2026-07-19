@@ -33,8 +33,8 @@ Sitemap: https://www.trusteetax.co.uk/sitemap.xml
 
 - [All calculators](https://www.trusteetax.co.uk/calculators): Hub for the three free interactive tools below.
 - [Gift Aid calculator](https://www.trusteetax.co.uk/calculators/gift-aid-calculator): How much a charity can reclaim from HMRC on a donation (25p per £1).
-- [Independent examination and audit checker](https://www.trusteetax.co.uk/calculators/independent-examination-audit-checker): Whether a charity needs an independent examination or a full audit, based on income and assets (England and Wales).
-- [GASDS calculator](https://www.trusteetax.co.uk/calculators/gasds-calculator): Maximum GASDS top-up claimable given Gift Aid donations in the same tax year.
+- [Independent examination and audit checker](https://www.trusteetax.co.uk/calculators/independent-examination-vs-audit-checker): Whether a charity needs an independent examination or a full audit, based on income and assets (England and Wales).
+- [GASDS calculator](https://www.trusteetax.co.uk/calculators/gasds-small-donations-calculator): Maximum GASDS top-up claimable given Gift Aid donations in the same tax year.
 
 ## Original research
 

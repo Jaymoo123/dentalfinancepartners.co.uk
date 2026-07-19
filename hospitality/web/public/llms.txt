@@ -40,12 +40,14 @@ These figures are drawn from docs/hospitality/rates_ledger.json and docs/hospita
 - Food business registration with the local authority required at least 28 days before trading (England, Wales and Northern Ireland).
 
 ## Blog categories
-- [Accounts and Bookkeeping](https://www.hospitalitytax.co.uk/blog/accounts-and-bookkeeping)
-- [Food and Drink VAT](https://www.hospitalitytax.co.uk/blog/food-and-drink-vat)
-- [Tronc, Tips and Payroll](https://www.hospitalitytax.co.uk/blog/tronc-tips-and-payroll)
-- [Licensed Trade and Duty](https://www.hospitalitytax.co.uk/blog/licensed-trade-and-duty)
-- [Business Structure and Incorporation](https://www.hospitalitytax.co.uk/blog/business-structure-and-incorporation)
-- [Margins and Cost Control](https://www.hospitalitytax.co.uk/blog/margins-and-cost-control)
+- [Hospitality Accounts](https://www.hospitalitytax.co.uk/blog/hospitality-accounts)
+- [Hospitality VAT](https://www.hospitalitytax.co.uk/blog/hospitality-vat)
+- [Tips and Tronc](https://www.hospitalitytax.co.uk/blog/tips-and-tronc)
+- [Payroll and Employment](https://www.hospitalitytax.co.uk/blog/payroll-and-employment)
+- [Licensed Trade](https://www.hospitalitytax.co.uk/blog/licensed-trade)
+- [Business Rates](https://www.hospitalitytax.co.uk/blog/business-rates)
+- [Capital Allowances](https://www.hospitalitytax.co.uk/blog/capital-allowances)
+- [Making Tax Digital](https://www.hospitalitytax.co.uk/blog/making-tax-digital)
 
 ## Key pages
 - [Home](https://www.hospitalitytax.co.uk/)

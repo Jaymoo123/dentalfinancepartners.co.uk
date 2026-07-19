@@ -28,7 +28,6 @@ Founder Tax Partners is a UK accountancy practice focused exclusively on funded 
 - [Founder dividend vs salary calculator](https://www.foundertaxpartners.co.uk/calculators/founder-dividend-vs-salary-calculator): After-tax income comparison between salary and dividend extraction, including employer NIC at 15% above the £5,000 secondary threshold.
 - [EMI vs unapproved options calculator](https://www.foundertaxpartners.co.uk/calculators/emi-vs-unapproved-calculator): Tax cost at exercise and disposal: EMI (BADR at 18%, no NIC) versus unapproved options (income tax and NIC on the spread).
 - [R&D relief estimator](https://www.foundertaxpartners.co.uk/calculators/rd-relief-estimator): Estimated merged-scheme credit (20%) or ERIS benefit (86% deduction plus 14.5% payable credit) on qualifying R&D expenditure.
-- [Embed these calculators](https://www.foundertaxpartners.co.uk/embed): Free iframe embeds of the calculator tools for partner and adjacent sites.
 
 ## Original research
 
@@ -59,12 +58,11 @@ These figures are verified against primary sources (HMRC, legislation.gov.uk) as
 
 ## Blog categories
 
-- [R&D Tax Relief](https://www.foundertaxpartners.co.uk/blog/rd-tax-relief)
+- [R&D Tax Relief](https://www.foundertaxpartners.co.uk/blog/research-and-development)
 - [SEIS and EIS](https://www.foundertaxpartners.co.uk/blog/seis-and-eis)
 - [Share Schemes and EMI](https://www.foundertaxpartners.co.uk/blog/share-schemes-and-emi)
-- [Founder Tax and Extraction](https://www.foundertaxpartners.co.uk/blog/founder-tax-and-extraction)
-- [SaaS and Tech Finance](https://www.foundertaxpartners.co.uk/blog/saas-and-tech-finance)
 - [Startup Compliance](https://www.foundertaxpartners.co.uk/blog/startup-compliance)
+- [SaaS and Tech Finance](https://www.foundertaxpartners.co.uk/blog/saas-and-tech-finance)
 
 ## Key pages
 

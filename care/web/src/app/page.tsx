@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { btnPrimary, focusRing, siteContainerLg } from "@/components/ui/layout-utils";
-import { buildOrganizationJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
+import { buildFaqJsonLd, buildOrganizationJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { careHubs } from "@/data/care-hubs";
 import { careServices } from "@/data/care-services";
@@ -24,6 +24,33 @@ function ShieldCheck({ className }: { className?: string }) {
     </svg>
   );
 }
+
+const homeFaqs = [
+  {
+    q: "Do care homes need a specialist accountant?",
+    a: "Not legally, but practically the finance work is specialist. VAT welfare exemption, sleep-in NMW, CQC financial viability statements and funding-mix accounting are all sector-specific. A generalist firm will handle standard accounts and tax; they are unlikely to handle these without additional research.",
+  },
+  {
+    q: "Why is VAT a cost for a care provider rather than something we reclaim?",
+    a: "Because CQC-registered providers make VAT-exempt supplies under Group 7 of Schedule 9 VATA 1994. Exempt means no VAT is charged on your fees, but it also means you cannot recover the input VAT you pay on purchases. That input tax becomes a permanent overhead. See the full position at gov.uk.",
+  },
+  {
+    q: "Do you work with domiciliary agencies as well as care homes?",
+    a: "Yes. Domiciliary care agencies have specific NMW issues (inter-call travel, zero-hours holiday accrual), employer cost modelling requirements, and the same CQC registration financial paperwork if they are seeking registration. We have a dedicated section for domiciliary agencies.",
+  },
+  {
+    q: "Can you prepare a CQC financial viability statement?",
+    a: "Yes. CQC requires new providers to submit a financial viability statement using its own template as part of the registration process. This is a productised engagement. See our CQC financial viability service page for the scope.",
+  },
+  {
+    q: "Do you handle care payroll including sleep-ins and travel time?",
+    a: "Yes. Sleep-in NMW (the Mencap ruling means only time awake for work counts) and inter-call travel-time NMW are the two most common payroll compliance issues in care. Both require payroll design that reflects the regulatory position, not just a standard payroll run.",
+  },
+  {
+    q: "Do you cover Scotland, Wales and Northern Ireland?",
+    a: "Our default jurisdiction is England, where CQC registration, NHS funding rates and business rates apply. Scotland, Wales and Northern Ireland operate different regulatory and funding regimes. We flag devolved-nation differences where relevant; we do not mix them silently.",
+  },
+];
 
 export const metadata: Metadata = {
   title: { absolute: `Care home accountants | UK care sector specialists` },
@@ -343,33 +370,12 @@ export default function HomePage() {
           <h2 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">
             Common questions from care operators.
           </h2>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(homeFaqs.map((f) => ({ question: f.q, answer: f.a }))) }}
+          />
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
-            {[
-              {
-                q: "Do care homes need a specialist accountant?",
-                a: "Not legally, but practically the finance work is specialist. VAT welfare exemption, sleep-in NMW, CQC financial viability statements and funding-mix accounting are all sector-specific. A generalist firm will handle standard accounts and tax; they are unlikely to handle these without additional research.",
-              },
-              {
-                q: "Why is VAT a cost for a care provider rather than something we reclaim?",
-                a: "Because CQC-registered providers make VAT-exempt supplies under Group 7 of Schedule 9 VATA 1994. Exempt means no VAT is charged on your fees, but it also means you cannot recover the input VAT you pay on purchases. That input tax becomes a permanent overhead. See the full position at gov.uk.",
-              },
-              {
-                q: "Do you work with domiciliary agencies as well as care homes?",
-                a: "Yes. Domiciliary care agencies have specific NMW issues (inter-call travel, zero-hours holiday accrual), employer cost modelling requirements, and the same CQC registration financial paperwork if they are seeking registration. We have a dedicated section for domiciliary agencies.",
-              },
-              {
-                q: "Can you prepare a CQC financial viability statement?",
-                a: "Yes. CQC requires new providers to submit a financial viability statement using its own template as part of the registration process. This is a productised engagement. See our CQC financial viability service page for the scope.",
-              },
-              {
-                q: "Do you handle care payroll including sleep-ins and travel time?",
-                a: "Yes. Sleep-in NMW (the Mencap ruling means only time awake for work counts) and inter-call travel-time NMW are the two most common payroll compliance issues in care. Both require payroll design that reflects the regulatory position, not just a standard payroll run.",
-              },
-              {
-                q: "Do you cover Scotland, Wales and Northern Ireland?",
-                a: "Our default jurisdiction is England, where CQC registration, NHS funding rates and business rates apply. Scotland, Wales and Northern Ireland operate different regulatory and funding regimes. We flag devolved-nation differences where relevant; we do not mix them silently.",
-              },
-            ].map((faq, i) => (
+            {homeFaqs.map((faq, i) => (
               <div key={i} className="border border-neutral-200 bg-neutral-50 p-6">
                 <h3 className="text-sm font-bold text-neutral-900">{faq.q}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-neutral-600">{faq.a}</p>
