@@ -55,6 +55,64 @@ Scope per run is **meta-only**. Content gaps and intent mismatches surfaced by t
 - Read the 28d outcome verdicts from ~2026-07-10 via weekly_run step 5.
 - **2026-07-08 batch 2**: solicitors 19, generalist 12 (13th pulled: BADR page body cites stale 14% rate, needs factual fix first), dentists 10 = **41 meta pairs**, deployed + IndexNow same day; monitored to 2026-10-06. 26d batch-1 pre-read: impressions up strongly (dentists +254%, solicitors +331%, Bing 3-7x) but clicks ~0 — position, not snippet copy, is now the binding constraint (see `meta_batch1_verdicts_2026-07.md`). Tracking defects found+fixed this cycle: empty `target_url` in all batch-1 audit rows (meta_apply now populates it; 179 backfilled), medical monitored paths were categorised vs live FLAT routes (corrected), weekly_run verdict window capped at 28d + no-signal/immature-baseline tagging, `net_new` rewrite_type added and 203 ranking-but-unmonitored pages registered.
 
+## Analysis methodology v2 — change-aware, isolated (2026-07-19)
+
+All verdicts and new proposals now run through the v2 analysis layer (Property is
+the reference implementation: `scripts/meta_property_ledger.py` +
+`scripts/meta_property_analysis.py`). Rules are hard requirements, not guidance:
+
+1. **Intervention ledger first.** Per canonical page, union of `optimisation_changes`,
+   `monitored_pages`, and git frontmatter history of metaTitle/metaDescription edits
+   (catches unaudited/manual passes; the file-creation commit is birth, not an edit).
+   Birth = min(first git commit, first GSC impression). URL canonicalisation must
+   merge www/non-www, path-only, flat-vs-categorised and miscategorised slug variants
+   (all four occur in real data).
+2. **Cohort decomposition.** Fixed 28d PRE/POST windows at the data edge; every page is
+   NEW (born after PRE start) / CHANGED (intervention in window) / CONTROL (untouched,
+   >=90d old). Site deltas are always reported as the three-term sum - new-page growth
+   is never optimisation credit (the batch-1 confound, made structural).
+3. **Difference-in-differences.** Control drift r = exp(median per-page log(post/pre)),
+   per position band (1-10/11-20/21+); changed-page deltas are adjusted by r_band
+   before any verdict. Control <20 pages or <500 pre-impressions -> `control_weak`;
+   |log r| > 0.2 -> `window_volatile` (check the manually maintained ALGO_UPDATES list
+   in the analysis script against Google's Search Status Dashboard).
+4. **Per-intervention windows.** post=[ship+4, ship+31], pre=[ship-29, ship-2].
+   Neighbouring interventions truncate windows; truncated <14d -> `confounded`
+   (attribution is never split). Page <90d old at ship -> capped `immature`.
+   Unequal windows normalise to per-28d rates.
+5. **CTR conditional on position.** Raw CTR pre/post is banned. Primary = expected-CTR
+   residual per query vs the pooled curve (`build_expected_ctr_curve`), so position
+   movement nets out. A CTR delta is real only with >=5 expected clicks in BOTH
+   windows and non-overlapping Wilson 95% CIs. Per-page CTR verdicts are therefore
+   rare at current volumes - the pooled changed-vs-control residual is the batch-level
+   click test, and readouts must say per-page clicks/CTR are unmeasurable.
+6. **Bing is directional only** - trailing-window aggregates, no date dimension, never
+   used for pre/post.
+7. **Query intent.** retained/gained/lost sets at >=5 impressions; lost queries checked
+   for cannibalisation before being called regressions; gained-query credit requires
+   >2x the control cohort's natural churn. Proposal targeting uses recency-weighted
+   queries (half-life 28d), never all-time aggregates.
+8. **Verdicts** (first match): insufficient-data -> immature -> confounded -> clean-loss
+   (adjusted delta <= -25% at pre>=100 impr, or weighted position worse by >3) ->
+   clean-win (adjusted delta >= +25%, no position/click loss) -> neutral.
+   **Routing**: frozen page -> hold always (per-site frozen-pages file, e.g.
+   `docs/_engines/property_frozen_pages.md`; analysis hard-fails if missing/empty;
+   un-freezing needs a per-page owner sign-off line); weighted position >15 ->
+   needs-position-not-meta (route to content/authority backlog); clean-loss ->
+   revert-candidate via `metaTitle_prev` after a 14d persistence re-check; clean-win ->
+   hold; propose-meta only with clean evidence + intent mismatch + position <=15.
+9. **Placebo self-check every run**: >=40 control pages through the same pipeline with
+   a fake ship date must come out overwhelmingly neutral/insufficient, else thresholds
+   are miscalibrated - fix before trusting verdicts.
+10. **Serialisation**: no meta batch while any other wave for the same site is in
+    flight - otherwise verdicts are confounded by construction.
+11. **Careful-mode apply (Property)**: `meta_apply.py --execute` also stamps
+    dateModified/reviewedBy/EEAT schema via `stamp_trust_signals` and churns
+    frontmatter ordering. For Property add/use a stamp-skip path so the diff is
+    title/desc/_prev only; review the first file's diff before batch. Re-rewrites
+    overwrite `metaTitle_prev` (prior generation survives only in git).
+12. Re-run analysis no sooner than 32d post-ship (28d window + grace).
+
 ## Per-site onboarding
 
 A site joins the program when: it has a `sites` row (active), GSC + Bing data flowing (ingestion commands above), its content dir resolves in `scripts/meta_worklist.py` (`_resolve_content_dir`), and `register_monitored_batch.py` knows its blog dir + prod domain (sites/<site>.json or the `_SITE_FALLBACK` map). Contractors-ir35: add once it has impressions.
