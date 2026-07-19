@@ -11,6 +11,12 @@
 -- GO-LIVE PREREQUISITE: apply this before deploying any site whose nurture code
 -- reads/writes lead_nurture_control by site_key.
 
+-- 0. Drop the legacy single-row guard (CHECK (id = 1)) so per-site rows can exist.
+--    Integrity is preserved by the pkey and the site_key unique index below.
+--    (Added 2026-07-19: first apply attempt failed on this constraint.)
+alter table public.lead_nurture_control
+  drop constraint if exists lead_nurture_control_id_check;
+
 -- 1. Add site_key (nullable first so the add never fails on the existing row).
 alter table public.lead_nurture_control
   add column if not exists site_key text;
