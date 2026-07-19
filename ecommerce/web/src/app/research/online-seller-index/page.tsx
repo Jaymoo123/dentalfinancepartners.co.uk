@@ -580,9 +580,8 @@ export default function OnlineSellerIndexPage() {
               </div>
               <p className="mt-1.5 text-sm text-neutral-600">
                 Customs, import VAT under the{" "}
-                <a href="/vat/135-import-rule" className="underline">
-                  £135 consignment rule
-                </a>
+                {/* ponytail: plain span — a nested <a> inside the card <Link> is invalid HTML and fails next/no-html-link-for-pages */}
+                <span className="underline">£135 consignment rule</span>
                 , COGS treatment, and the structural risks specific to high-volume low-margin
                 models.
               </p>
@@ -599,9 +598,7 @@ export default function OnlineSellerIndexPage() {
               </div>
               <p className="mt-1.5 text-sm text-neutral-600">
                 VAT registration on gross marketplace revenue, the{" "}
-                <a href="/vat/deemed-supplier-establishment" className="underline">
-                  deemed-supplier mechanism
-                </a>
+                <span className="underline">deemed-supplier mechanism</span>
                 , and quarterly returns for multi-platform sellers.
               </p>
             </Link>

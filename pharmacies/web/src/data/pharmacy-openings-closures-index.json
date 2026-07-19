@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "title": "UK Community Pharmacy Openings and Closures Index",
+    "description": "Verified data on England's community pharmacy network: NHS dispensing-contractor counts from NHSBSA open data and Companies House SIC 47730 corporate-churn data. Two independent official spines. Updated quarterly on NHSBSA publication.",
+    "lastUpdated": "2026-07-14",
+    "pullDate": "2026-07-14",
+    "licence": "Open Government Licence v3.0 (OGL3). Derived from NHSBSA open data and Companies House public register. Reuse with attribution.",
+    "citeAs": "UK Community Pharmacy Openings and Closures Index, derived from NHSBSA Pharmacy and Appliance Contractor Dispensing Data and Companies House Advanced Search API. Published under OGL3. Verified 2026-07-14.",
+    "methodology": "NHS dispensing-contractor counts: unique CONTRACTOR_CODE values with PHARMACY_ACCOUNT_TYPE='Pharmacy' in each monthly NHSBSA dispensing-contractors CSV (March snapshots used as the annual benchmark month to avoid seasonal noise). Appliance contractors are counted separately and excluded from the pharmacy total. Source: NHSBSA Pharmacy and Appliance Contractor Dispensing Data, opendata.nhsbsa.net. Companies House SIC 47730 corporate counts: live active-company and dissolved-company hit counts from the CH Advanced Search API (sic_codes=47730), pulled 2026-07-14. CH counts include incorporated companies only; sole traders and partnership pharmacies are not visible in CH data. Dissolution date is the formal strike-off date, which typically lags trading closure by several months.",
+    "caveats": [
+      "NHSBSA dispensing-contractor counts cover England only. Scotland uses PSD (Public Services Scotland) data; Wales uses NWSSP; Scotland and Wales v2 are queued.",
+      "NHSBSA counts include only pharmacies with active NHS dispensing contracts. Wholly private pharmacies without an NHS contract are not included.",
+      "Companies House SIC 47730 figures are UK-wide (not England-only) and include companies that may not hold NHS contracts or may be holding companies for pharmacy groups.",
+      "SIC codes are self-reported; occasional miscoding means SIC 47730 may exclude some pharmacy companies or include non-pharmacy retail health businesses.",
+      "March snapshots are used as the annual reference point. Intra-year data may show seasonal variation.",
+      "A contractor that submits no prescriptions in a given month does not appear in that month's NHSBSA CSV; the March count therefore reflects pharmacies that dispensed at least one prescription in March."
+    ],
+    "sources": {
+      "nhsbsa_dispensing": {
+        "name": "NHSBSA Pharmacy and Appliance Contractor Dispensing Data",
+        "url": "https://opendata.nhsbsa.net/dataset/pharmacy-and-appliance-contractor-dispensing-data",
+        "licence": "Open Government Licence v3.0",
+        "publisher": "NHS Business Services Authority",
+        "lastPublished": "2026-06-26"
+      },
+      "companies_house": {
+        "name": "Companies House Advanced Search API",
+        "url": "https://developer.company-information.service.gov.uk/api/docs/",
+        "licence": "Open Government Licence v3.0",
+        "publisher": "Companies House",
+        "pullDate": "2026-07-14"
+      }
+    }
+  },
+  "nhsbsaContractors": {
+    "description": "England NHS dispensing-pharmacy contractor counts (March snapshots, NHSBSA open data). Appliance contractors excluded.",
+    "note": "Counts unique CONTRACTOR_CODE values with PHARMACY_ACCOUNT_TYPE='Pharmacy' in each March monthly file.",
+    "years": [
+      { "period": "March 2019", "isoMonth": "2019-03", "count": 11764, "source": "NHSBSA DISPENSING_DATA_201903" },
+      { "period": "March 2020", "isoMonth": "2020-03", "count": 11434, "source": "NHSBSA DISPENSING_DATA_202003" },
+      { "period": "March 2022", "isoMonth": "2022-03", "count": 11116, "source": "NHSBSA DISPENSING_DATA_202203" },
+      { "period": "March 2024", "isoMonth": "2024-03", "count": 10551, "source": "NHSBSA DISPENSING_DATA_202403" },
+      { "period": "March 2025", "isoMonth": "2025-03", "count": 10423, "source": "NHSBSA DISPENSING_DATA_202503" },
+      { "period": "March 2026", "isoMonth": "2026-03", "count": 10382, "source": "NHSBSA DISPENSING_DATA_202603" }
+    ],
+    "latestCount": 10382,
+    "latestCountLabel": "10,382",
+    "latestPeriod": "March 2026",
+    "latestIsoMonth": "2026-03",
+    "yoyChange": -41,
+    "yoyChangeLabel": "-41",
+    "yoyPeriod": "March 2025 to March 2026",
+    "fiveYearChange": -1382,
+    "fiveYearChangeLabel": "-1,382",
+    "fiveYearPeriod": "March 2019 to March 2026 (seven-year change)",
+    "sourceUrl": "https://opendata.nhsbsa.net/dataset/pharmacy-and-appliance-contractor-dispensing-data"
+  },
+  "companiesHouseSIC47730": {
+    "description": "Companies House SIC 47730 ('Dispensing chemist in specialised stores'), UK-wide incorporated companies. Active and dissolved counts from CH Advanced Search API, pulled 2026-07-14.",
+    "sicCode": 47730,
+    "sicLabel": "Dispensing chemist in specialised stores",
+    "activeCompanies": {
+      "count": 7997,
+      "asOf": "2026-07-14",
+      "label": "7,997"
+    },
+    "dissolvedCompanies": {
+      "count": 2615,
+      "asOf": "2026-07-14",
+      "label": "2,615"
+    },
+    "sourceUrl": "https://developer.company-information.service.gov.uk/api/docs/",
+    "note": "Active count includes all company statuses returned as 'active' by CH. Dissolved count uses company_status=dissolved filter. Both are UK-wide, not England-only.",
+    "quarterlyChurn": {
+      "description": "Quarterly incorporations and dissolutions for SIC 47730 by CH incorporated_from/dissolved_from date ranges. Pulled 2026-07-14.",
+      "quarters": [
+        {
+          "quarter": "2024-Q1",
+          "incorporations": 225,
+          "dissolutions": 60,
+          "net": 165
+        },
+        {
+          "quarter": "2024-Q2",
+          "incorporations": 156,
+          "dissolutions": 83,
+          "net": 73
+        },
+        {
+          "quarter": "2024-Q3",
+          "incorporations": 204,
+          "dissolutions": 85,
+          "net": 119
+        },
+        {
+          "quarter": "2024-Q4",
+          "incorporations": 136,
+          "dissolutions": 112,
+          "net": 24
+        },
+        {
+          "quarter": "2025-Q1",
+          "incorporations": 282,
+          "dissolutions": 109,
+          "net": 173
+        },
+        {
+          "quarter": "2025-Q2",
+          "incorporations": 232,
+          "dissolutions": 64,
+          "net": 168
+        },
+        {
+          "quarter": "2025-Q3",
+          "incorporations": 204,
+          "dissolutions": 102,
+          "net": 102
+        },
+        {
+          "quarter": "2025-Q4",
+          "incorporations": 223,
+          "dissolutions": 89,
+          "net": 134
+        },
+        {
+          "quarter": "2026-Q1",
+          "incorporations": 156,
+          "dissolutions": 94,
+          "net": 62
+        },
+        {
+          "quarter": "2026-Q2",
+          "incorporations": 163,
+          "dissolutions": 100,
+          "net": 63
+        }
+      ],
+      "caveat": "CH incorporations/dissolutions measure corporate-entity churn. A new incorporation may be a group restrucuring, a new entrant, or a change of legal form; it does not always correspond to a new pharmacy opening. Similarly, dissolution may lag trading closure by many months. CH data is complementary to NHSBSA contractor counts, not a substitute."
+    }
+  },
+  "networkContext": {
+    "englandFocus": true,
+    "scotlandWalesNote": "Scotland dispensing data is published by Public Services Scotland (PSD); Wales by NHS Wales Shared Services Partnership (NWSSP). These devolved datasets are not included in v1 of this index. UK-wide comparison will be added in v2.",
+    "fundingContext": "England's community pharmacy network is funded primarily under the Community Pharmacy Contractual Framework (CPCF). The NHSBSA contractor count is the most granular public signal of network size: a contractor that disappears from the monthly dispensing register has either closed, surrendered its NHS contract, or merged into another pharmacy. The 1,382-contractor decline since March 2019 reflects the sustained funding and margin pressure that has driven trade press coverage of the 'pharmacy closures crisis'.",
+    "ownershipNote": "NHSBSA dispensing data does not distinguish independent pharmacies from multiples. The Companies House data, filtered to SIC 47730, captures the corporate layer but cannot cleanly separate independent single-site operators from holding companies and subsidiaries of multiples. Ownership-split analysis requires cross-referencing NHSBSA contractor names against CH group structures, which is the planned v2 enhancement."
+  }
+}

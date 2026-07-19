@@ -48,8 +48,9 @@ secrets/
 !components.json
 !sites/*.json
 !vercel.json
-# Committed data snapshot the Landlord Tax Index page imports at build time
-!Property/web/src/data/landlord-tax-index.json
+# Committed data snapshots the research-index pages import at build time
+# (all sites; small non-secret JSONs, required for CI typecheck + Vercel builds)
+!*/web/src/data/*.json
 
 # Logs
 *.log

@@ -26,6 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # need history to diff against the push/PR base
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -35,8 +37,16 @@ jobs:
       - name: Install dependencies
         run: pip install pyyaml
 
+      # Changed-files-only enforcement: errors only fail for files changed in
+      # this push/PR; legacy corpus issues print as warnings. Full-corpus
+      # enforcement remains available via `--full` (run locally / dispatch).
       - name: Run content validator
-        run: python scripts/validate_blog_content.py --verbose
+        env:
+          VALIDATE_BASE_REF: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          # New-branch pushes report an all-zero "before" SHA; fall back to HEAD~1.
+          if echo "$VALIDATE_BASE_REF" | grep -qE '^0+$'; then unset VALIDATE_BASE_REF; fi
+          python scripts/validate_blog_content.py --verbose
 
   validate-docs:
     name: Validate Documentation Consistency

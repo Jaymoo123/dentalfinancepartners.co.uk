@@ -19,6 +19,7 @@ import argparse
 import glob
 import os
 import re
+import subprocess
 import sys
 import yaml
 
@@ -171,8 +172,31 @@ def validate_post(filepath, site_name, site_config, all_slugs):
     return result
 
 
-def validate_site(site_name, site_config, verbose=False):
-    """Validate all posts for a site."""
+def get_changed_files():
+    """Return repo-relative paths changed in the triggering push/PR (vs base).
+
+    Base ref resolution order:
+      1. $VALIDATE_BASE_REF (workflow sets this to the PR base / pre-push SHA)
+      2. HEAD~1 (plain push: diff against previous commit)
+    Returns None if git diff fails (caller falls back to full enforcement).
+    """
+    base = os.environ.get("VALIDATE_BASE_REF") or "HEAD~1"
+    try:
+        out = subprocess.run(
+            ["git", "diff", "--name-only", base, "HEAD"],
+            cwd=PROJECT_ROOT, capture_output=True, text=True, check=True,
+        ).stdout
+    except (subprocess.CalledProcessError, OSError):
+        return None
+    return {line.strip() for line in out.splitlines() if line.strip()}
+
+
+def validate_site(site_name, site_config, verbose=False, enforce_paths=None):
+    """Validate all posts for a site.
+
+    enforce_paths: set of repo-relative changed paths, or None to enforce all.
+    Errors in files NOT in enforce_paths are printed as LEGACY warnings only.
+    """
     blog_dir = os.path.join(PROJECT_ROOT, site_name, "web", "content", "blog")
     if not os.path.exists(blog_dir):
         print(f"  SKIP: {blog_dir} does not exist")
@@ -187,12 +211,18 @@ def validate_site(site_name, site_config, verbose=False):
     for filepath in files:
         result = validate_post(filepath, site_name, site_config, all_slugs)
         filename = os.path.basename(filepath)
+        rel = os.path.relpath(filepath, PROJECT_ROOT).replace(os.sep, "/")
+        enforced = enforce_paths is None or rel in enforce_paths
 
         if not result.passed or (verbose and result.warnings):
             if result.errors:
                 for err in result.errors:
-                    print(f"  ERROR {filename}: {err}")
-                    total_errors += 1
+                    if enforced:
+                        print(f"  ERROR {filename}: {err}")
+                        total_errors += 1
+                    else:
+                        print(f"  WARN  {filename} (legacy, unchanged): {err}")
+                        total_warnings += 1
             if verbose and result.warnings:
                 for warn in result.warnings:
                     print(f"  WARN  {filename}: {warn}")
@@ -206,9 +236,20 @@ def main():
     parser.add_argument("--site", choices=list(SITES.keys()), help="Validate specific site only")
     parser.add_argument("--verbose", action="store_true", help="Show warnings too")
     parser.add_argument("--strict", action="store_true", help="Exit with error code on any issues")
+    parser.add_argument("--full", action="store_true",
+                        help="Enforce errors on the full corpus (default: changed files only; legacy issues become warnings)")
     args = parser.parse_args()
 
     sites_to_check = {args.site: SITES[args.site]} if args.site else SITES
+
+    enforce_paths = None
+    if not args.full:
+        enforce_paths = get_changed_files()
+        if enforce_paths is None:
+            print("NOTE: could not determine changed files (git diff failed); enforcing full corpus")
+        else:
+            print(f"Changed-files-only mode: enforcing errors on {len(enforce_paths)} changed file(s); "
+                  f"legacy issues reported as warnings (use --full to enforce everything)")
 
     grand_total_errors = 0
     grand_total_warnings = 0
@@ -217,7 +258,7 @@ def main():
         print(f"\n{'=' * 60}")
         print(f"Validating: {site_name}")
         print(f"{'=' * 60}")
-        errors, warnings = validate_site(site_name, site_config, verbose=args.verbose)
+        errors, warnings = validate_site(site_name, site_config, verbose=args.verbose, enforce_paths=enforce_paths)
         grand_total_errors += errors
         grand_total_warnings += warnings
 

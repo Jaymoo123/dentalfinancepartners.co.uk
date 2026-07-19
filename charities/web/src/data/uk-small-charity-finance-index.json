@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "name": "UK Small Charity Finance Index",
+    "generated_at": "2026-07-11T18:05:54Z",
+    "jurisdiction": "England and Wales (Charity Commission register); CIC layer is UK-wide",
+    "sources": [
+      {
+        "name": "Charity Commission full register extract (charity table, daily)",
+        "publisher": "Charity Commission for England and Wales",
+        "url": "https://register-of-charities.charitycommission.gov.uk/en/register/full-register-download",
+        "licence": "Open Government Licence v3.0"
+      },
+      {
+        "name": "Companies House free company data product (monthly)",
+        "publisher": "Companies House",
+        "url": "https://download.companieshouse.gov.uk/en_output.html",
+        "licence": "Open Government Licence v3.0"
+      }
+    ],
+    "thresholds": {
+      "registration": 5000,
+      "independent_examination": 25000,
+      "accruals_qualified_examiner": 250000,
+      "audit": 1000000
+    },
+    "notes": "Income figures are each charity's latest reported gross income (latest_income). Main charities only (linked charities excluded). The 'audit' band is income-only: charities over \u00a3250,000 income with gross assets over \u00a33.26m also require an audit, but asset data is not in the headline extract, so the audit share shown is a floor. Registrations/removals use date_of_registration and date_of_removal across the full extract including removed charities; the Commission notes removed-charity history is complete only for recent decades. Current partial year excluded."
+  },
+  "charities": {
+    "registered_charities": 171602,
+    "removed_charities_on_register": 185672,
+    "with_reported_income": 162611,
+    "income": {
+      "median": 21050,
+      "mean": 662961,
+      "p25": 4410,
+      "p75": 112602,
+      "p90": 458523
+    },
+    "scrutiny_bands": [
+      {
+        "key": "under_5k",
+        "label": "Under \u00a35,000 (below the registration threshold)",
+        "count": 42908,
+        "pct": 26.4
+      },
+      {
+        "key": "5k_25k",
+        "label": "\u00a35,000 to \u00a325,000 (no external scrutiny required)",
+        "count": 43860,
+        "pct": 27.0
+      },
+      {
+        "key": "25k_100k",
+        "label": "\u00a325,001 to \u00a3100,000 (independent examination)",
+        "count": 32616,
+        "pct": 20.1
+      },
+      {
+        "key": "100k_250k",
+        "label": "\u00a3100,001 to \u00a3250,000 (independent examination)",
+        "count": 18693,
+        "pct": 11.5
+      },
+      {
+        "key": "250k_1m",
+        "label": "\u00a3250,001 to \u00a31m (independent examination by a qualified examiner, accruals accounts)",
+        "count": 15224,
+        "pct": 9.4
+      },
+      {
+        "key": "over_1m",
+        "label": "Over \u00a31m (statutory audit)",
+        "count": 9308,
+        "pct": 5.7
+      }
+    ],
+    "headline_shares": {
+      "under_25k_pct": 53.4,
+      "ie_band_pct": 40.9,
+      "audit_band_pct": 5.7
+    },
+    "flows": [
+      {
+        "year": 2016,
+        "registrations": 5963,
+        "removals": 4053,
+        "net": 1910
+      },
+      {
+        "year": 2017,
+        "registrations": 5564,
+        "removals": 4212,
+        "net": 1352
+      },
+      {
+        "year": 2018,
+        "registrations": 4930,
+        "removals": 4957,
+        "net": -27
+      },
+      {
+        "year": 2019,
+        "registrations": 5743,
+        "removals": 5774,
+        "net": -31
+      },
+      {
+        "year": 2020,
+        "registrations": 5712,
+        "removals": 3810,
+        "net": 1902
+      },
+      {
+        "year": 2021,
+        "registrations": 4302,
+        "removals": 3591,
+        "net": 711
+      },
+      {
+        "year": 2022,
+        "registrations": 4015,
+        "removals": 5534,
+        "net": -1519
+      },
+      {
+        "year": 2023,
+        "registrations": 4809,
+        "removals": 4220,
+        "net": 589
+      },
+      {
+        "year": 2024,
+        "registrations": 5149,
+        "removals": 4082,
+        "net": 1067
+      },
+      {
+        "year": 2025,
+        "registrations": 4767,
+        "removals": 4272,
+        "net": 495
+      }
+    ]
+  },
+  "cics": {
+    "source_file": "https://download.companieshouse.gov.uk/BasicCompanyDataAsOneFile-2026-07-01.zip",
+    "total_cics_on_register": 44258,
+    "active_cics": 42095,
+    "incorporations_by_year": [
+      {
+        "year": 2016,
+        "count": 991
+      },
+      {
+        "year": 2017,
+        "count": 1172
+      },
+      {
+        "year": 2018,
+        "count": 1363
+      },
+      {
+        "year": 2019,
+        "count": 2124
+      },
+      {
+        "year": 2020,
+        "count": 2553
+      },
+      {
+        "year": 2021,
+        "count": 2687
+      },
+      {
+        "year": 2022,
+        "count": 3105
+      },
+      {
+        "year": 2023,
+        "count": 4246
+      },
+      {
+        "year": 2024,
+        "count": 6079
+      },
+      {
+        "year": 2025,
+        "count": 9500
+      }
+    ]
+  }
+}

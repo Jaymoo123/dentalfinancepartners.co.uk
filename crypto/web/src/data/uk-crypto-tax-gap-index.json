@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "UK Crypto Tax Compliance Index",
+    "description": "Verified data on UK cryptoasset ownership levels and the CARF reporting timeline. All figures cited to primary sources. Updated annually on FCA wave publication.",
+    "lastUpdated": "2026-07-14",
+    "methodology": "Ownership figures from FCA Cryptoassets Consumer Research (annual YouGov omnibus, nationally representative). CARF dates from HMRC guidance. CGT parameters from gov.uk capital-gains-tax pages. No modelled tax gap figures are published here: HMRC does not publish a crypto-specific tax gap, so no estimate is stated."
+  },
+  "ownership": {
+    "shareOfUKAdults": 0.12,
+    "shareOfUKAdultsLabel": "12%",
+    "approximateHolderCount": "~7 million",
+    "surveyDate": "August 2024",
+    "source": "FCA Cryptoassets Consumer Research 2024 (Wave 5)",
+    "sourceUrl": "https://www.fca.org.uk/publications/fca-research/research-note-cryptoassets-consumer-research-2024",
+    "note": "Wave 5, YouGov survey of 2,199 UK adults, nationally representative. Published November 2024, corrected March 2025. Wave 6 (2025) published; see source for latest figure.",
+    "awarenessOfUKAdults": 0.93,
+    "awarenessLabel": "93% of UK adults have heard of cryptoassets"
+  },
+  "carfTimeline": {
+    "collectionStartDate": "2026-01-01",
+    "collectionEndDate": "2026-12-31",
+    "coversCalendarYear": 2026,
+    "firstReportWindowStart": "2027-01-01",
+    "firstReportWindowEnd": "2027-05-31",
+    "annualDeadlineThereafter": "31 May each year covering prior calendar year",
+    "description": "UK cryptoasset reporting entities must collect user and transaction data from 1 January 2026. The first report covering the 2026 calendar year must be submitted to HMRC between 1 January 2027 and 31 May 2027. Annual reports are due by 31 May each year thereafter.",
+    "sourcesCollection": "https://www.gov.uk/guidance/collecting-cryptoasset-user-and-transaction-data",
+    "sourcesReporting": "https://www.gov.uk/guidance/reporting-cryptoasset-user-and-transaction-data"
+  },
+  "cgtParameters": {
+    "annualExemptAmount": 3000,
+    "annualExemptAmountLabel": "£3,000",
+    "basicRateBand": 37700,
+    "basicRateBandLabel": "£37,700",
+    "basicRateWithinBand": 0.18,
+    "higherRate": 0.24,
+    "taxYear": "2026/27",
+    "sourceUrl": "https://www.gov.uk/capital-gains-tax/rates",
+    "allowancesUrl": "https://www.gov.uk/capital-gains-tax/allowances",
+    "note": "18% applies only on the portion of the gain within the taxpayer's remaining basic-rate income tax band; 24% applies above that threshold and for higher/additional-rate taxpayers on the full gain."
+  },
+  "disclosureWindows": {
+    "reasonableCareYears": 4,
+    "carelessYears": 6,
+    "deliberateYears": 20,
+    "sourceUrl": "https://www.gov.uk/guidance/tell-hmrc-about-unpaid-tax-on-cryptoassets",
+    "note": "Number of past tax years HMRC may assess depends on taxpayer behaviour. Voluntary unprompted disclosure secures the lowest applicable penalty percentage."
+  }
+}
