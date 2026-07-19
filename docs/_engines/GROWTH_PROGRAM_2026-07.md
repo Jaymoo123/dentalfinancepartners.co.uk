@@ -456,3 +456,37 @@ Then **agency** (after 07-22 window; cloud reminder trig_019Eamo9dnSB8KRJuoHUVzF
 - **Medical is LIVE in prod** — all its wave-2 changes are code-only, no deploy without owner word; routing FLAT, never slug_resolver --fix.
 
 **NEXT ACTION:** AGENCY (`digital-agency/web`) after the 07-22 watch window closes (cloud reminder trig_019Eamo9dnSB8KRJuoHUVzFH fires 07-22 08:00 London): A4 retrofit (7 bespoke calcs → GenericTool + CalcResultCta/MiniCapture, currently ZERO lead capture) THEN the full wave stack (quick-win → de-gate → shared MiniCapture → C1 tools → A2 → A3 nurture → booking), same fan-out + per-phase Opus QA. Agency code commits are fine anytime; only DEPLOY is gated. Then: owner-gated deploys across the estate.
+
+---
+
+## SESSION 8 (2026-07-19) — ESTATE GO-LIVE (everything except Property + agency)
+
+Owner word: "do everything but the property stuff". Executed:
+
+- **Deploys ×6 (Vercel CLI, prod, READY + smoke-checked 200s):** Dentists, Solicitors,
+  generalist, Medical, construction-cis, contractors-ir35. Ships: full conversion stacks
+  (multistep MiniCapture ON, open resources, all C1 tools incl. QA-pass additions, 3-moment
+  blog wiring, booking + progressive completion, nurture code DORMANT), the QA-pass fixes
+  (medical 10-tool public fleet, cis band fix, taxonomy wiring), the 39-page content backlog,
+  and the consent-with-follow-up swap.
+- **Env per site (all 6 projects, production):** NEXT_PUBLIC_MINIFORMS_MULTISTEP=1,
+  CRON_SECRET (fresh per site), LEAD_NURTURE_TOKEN_SECRET (fresh per site — NOT shared with
+  Property; tokens are minted+verified by the same site so sharing was unnecessary),
+  RESEND_API_KEY, LEAD_SERVICE_FROM_EMAIL/FROM_NAME/REPLY_TO + RESEND_FROM_EMAIL/FROM_NAME
+  on the shared Property Resend domain (leads@ / inbound.propertytaxpartners.co.uk).
+- **Consent swap (8de3cb8e):** leadConsentTextWithFollowUp live on all 6 sites.
+- **308 redirects:** 4 remaining apexes (solicitors/medical/generalist/agency) PATCHed
+  307→308; all 6 estate apexes now 308. Presence defect 2 CLOSED.
+- **IndexNow:** full sitemap submits ×6 = 1,705 URLs (dentists 266, solicitors 266,
+  generalist 673, medical 130, cis 219, ir35 151), all HTTP 200.
+
+**BLOCKED — Supabase migrations 20260718000001 + 20260718000002 NOT applied:**
+`SUPABASE_ACCESS_TOKEN` in .env returns 403 (revoked/expired). Owner: mint a new token at
+supabase.com/dashboard/account/tokens → replace in .env → apply both via Management API
+(runbook in memory supabase_cli_access). SAFE meanwhile: nurture is dormant
+(LEAD_NURTURE_ENABLED unset) so no code path reads lead_nurture_control in anger.
+
+**NOT touched:** Property (deploy + landlordTax band bug FROZEN), digital-agency deploy
+(gated 07-22), GBP/sameAs (owner exposure decision), nurture ARMING (checklist: review ≥1wk
+would-send logs from ~2026-07-26, then set LEAD_NURTURE_ENABLED + channel flags per site —
+also requires the migrations above first).
