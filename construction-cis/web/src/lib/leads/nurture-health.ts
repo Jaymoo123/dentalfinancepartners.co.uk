@@ -283,11 +283,9 @@ export async function runNurtureGuardrails(opts: {
 
   let alerted = false;
 
-  const TWENTY_FOUR_H = 24 * 60 * 60 * 1000;
-  const alreadyAlerted =
-    control.lastAlertKey === stableKey &&
-    control.lastAlertAt !== null &&
-    Date.now() - new Date(control.lastAlertAt).getTime() < TWENTY_FOUR_H;
+  // Alert only when the breach set CHANGES (owner request 2026-07-19):
+  // a persisting identical breach never re-emails, regardless of age.
+  const alreadyAlerted = control.lastAlertKey === stableKey && control.lastAlertAt !== null;
 
   if (!alreadyAlerted && process.env.RESEND_API_KEY) {
     const count = verdict.breaches.length;
