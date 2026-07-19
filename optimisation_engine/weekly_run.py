@@ -46,7 +46,15 @@ from optimisation_engine.analysis.behaviour_detectors import run_behaviour_detec
 from optimisation_engine.analysis.bot_reclassifier import reclassify_bots  # noqa: E402
 from optimisation_engine.analysis.bot_scorer import reclassify_bots_scored  # noqa: E402
 from optimisation_engine.config import PRIORITY_ORDER, get_sites  # noqa: E402
-from optimisation_engine.snapshot import run_snapshot  # noqa: E402
+# gspread is an optional dep (not installed in CI); don't let a missing
+# snapshot dependency kill the whole pipeline at import time.
+try:
+    from optimisation_engine.snapshot import run_snapshot  # noqa: E402
+except ImportError as _snap_exc:  # pragma: no cover
+    _SNAPSHOT_IMPORT_ERROR = _snap_exc
+
+    def run_snapshot(site: str) -> str:  # type: ignore[misc]
+        raise RuntimeError(f"snapshot unavailable: {_SNAPSHOT_IMPORT_ERROR}")
 from optimisation_engine.cost_tracker import CostTracker  # noqa: E402
 from optimisation_engine.ingestion.ingest_dataforseo import (  # noqa: E402
     SITE_PLANS as DFS_SITE_PLANS,
@@ -119,7 +127,14 @@ def step_ingest_bing(sites: list[str]) -> dict[str, int]:
             print(f"  Skipping {s}: no BWT site mapping")
             continue
         try:
-            out[s] = BingQueryFetcher(s).fetch_and_store()
+            fetcher = BingQueryFetcher(s)
+            out[s] = fetcher.fetch_and_store()
+            # A0.5: site-level GetQueryStats (Bing-only demand discovery),
+            # sentinel page_url '__site__' in bing_query_data.
+            try:
+                fetcher.fetch_site_queries_and_store()
+            except Exception as exc:
+                print(f"  [bing-sq] {s} failed: {type(exc).__name__}: {exc}")
         except Exception as exc:
             print(f"  [bing] {s} failed: {type(exc).__name__}: {exc}")
             out[s] = -1

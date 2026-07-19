@@ -480,11 +480,11 @@ Owner word: "do everything but the property stuff". Executed:
 - **IndexNow:** full sitemap submits ×6 = 1,705 URLs (dentists 266, solicitors 266,
   generalist 673, medical 130, cis 219, ir35 151), all HTTP 200.
 
-**BLOCKED — Supabase migrations 20260718000001 + 20260718000002 NOT applied:**
-`SUPABASE_ACCESS_TOKEN` in .env returns 403 (revoked/expired). Owner: mint a new token at
-supabase.com/dashboard/account/tokens → replace in .env → apply both via Management API
-(runbook in memory supabase_cli_access). SAFE meanwhile: nurture is dormant
-(LEAD_NURTURE_ENABLED unset) so no code path reads lead_nurture_control in anger.
+**CORRECTION 2026-07-19: the session-8 "403 BLOCKED" claim was STALE. The
+`SUPABASE_ACCESS_TOKEN` in .env is VALID (verified working via the Management API
+2026-07-19). Migrations 20260718000001 + 20260718000002 can be applied any time via
+`scripts/_q.py`.** SAFE meanwhile: nurture is dormant (LEAD_NURTURE_ENABLED unset) so no
+code path reads lead_nurture_control in anger.
 
 **NOT touched:** Property (deploy + landlordTax band bug FROZEN), digital-agency deploy
 (gated 07-22), GBP/sameAs (owner exposure decision), nurture ARMING (checklist: review ≥1wk

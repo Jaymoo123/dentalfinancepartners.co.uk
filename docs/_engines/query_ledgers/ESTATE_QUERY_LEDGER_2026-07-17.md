@@ -2,6 +2,10 @@
 
 Per-query, per-page, per-site position across the 7 older sites. Built by `optimisation_engine/analysis/query_ledger.py` from fresh GSC page×query×date pulls (through 2026-07-15) + Bing snapshots (pulled today), verified against independent date-dimension totals, then LLM-reviewed page by page (per-site ledgers in this directory). All actions are prescriptions awaiting approval; nothing has been applied.
 
+> Note (2026-07-19): the Supabase `gsc_query_data` table is PARTIAL (API pulls only,
+> privacy-thresholded) — never use it as a traffic-totals source; totals here came from
+> fresh GSC API date-dimension pulls.
+
 ## Method notes that matter when reading the ledgers
 
 - **Sampling loss is large and now quantified**: the query dimension hides 24-83% of impressions per site (GSC privacy thresholding). Ledger numbers are floors, not totals; each ledger header carries its site's figure. Page-dimension totals were merged in so query-invisible pages still appear.

@@ -75,11 +75,16 @@ DEFAULT_SITE_URL = {
     "solicitors":       "https://accountsforlawyers.co.uk",
     "generalist":       "https://hollowaydavies.co.uk",
     "agency":           "https://agencyfounderfinance.co.uk",
-    "contractors-ir35": "https://www.contractortaxaccountants.co.uk",
+    "contractors-ir35": "https://contractortaxaccountants.co.uk",
     "construction-cis": "https://tradetaxspecialists.co.uk",
-    "charities":        "https://www.brand-tbd-charities.invalid",
-    "hospitality":      "https://www.brand-tbd-hospitality.invalid",
-    "care":             "https://www.brand-tbd-care.invalid",
+    # Exact BWT-registered strings confirmed via GetUserSites 2026-07-19
+    "charities":        "https://trusteetax.co.uk",
+    "hospitality":      "https://hospitalitytax.co.uk",
+    "care":             "https://carehometax.co.uk",
+    "pharmacies":       "https://pharmacytax.co.uk",
+    "crypto":           "https://cryptotaxpartners.co.uk",
+    "ecommerce":        "https://ecommercefinance.co.uk",
+    "startups-tech":    "https://foundertaxpartners.co.uk",
 }
 
 
@@ -217,6 +222,29 @@ class BingQueryFetcher:
         if not records:
             print(f"[BING-Q] {self.site_key} no (page, query) rows collected")
             return 0
+        return self._upsert(records)
+
+    def fetch_site_queries_and_store(self) -> int:
+        """GetQueryStats: site-level top queries (Bing-only demand discovery, A0.5).
+        Stored in bing_query_data with sentinel page_url '__site__' so page-level
+        analyses can exclude them with page_url != '__site__'."""
+        snap = date.today().strftime("%Y-%m-%d")
+        site = self._resolve_site_url()
+        qs = self.client.get_query_stats(site)
+        records = []
+        for q in qs:
+            impr = int(q.get("Impressions", 0) or 0)
+            clk = int(q.get("Clicks", 0) or 0)
+            pos = float(q.get("AvgImpressionPosition", 0) or 0)
+            query = q.get("Query", "")
+            if not query:
+                continue
+            records.append(("__site__", query, snap, impr, clk,
+                            round(clk / impr, 4) if impr else 0.0, pos))
+        if not records:
+            print(f"[BING-SQ] {self.site_key} GetQueryStats returned no queries")
+            return 0
+        print(f"[BING-SQ] {self.site_key} GetQueryStats -> {len(records)} site-level queries")
         return self._upsert(records)
 
     def _upsert(self, records: Iterable[tuple]) -> int:
@@ -470,6 +498,8 @@ def main() -> None:
                         help="Fetch Copilot AI Performance report and upsert to bing_ai_performance")
     parser.add_argument("--ai-inspect", action="store_true",
                         help="Probe GetAiPerformance API shape, no DB writes")
+    parser.add_argument("--site-queries", action="store_true",
+                        help="Fetch site-level GetQueryStats and upsert with page_url='__site__'")
     parser.add_argument("--sleep", type=float, default=0.4)
     args = parser.parse_args()
 
@@ -479,6 +509,10 @@ def main() -> None:
 
     if args.ai_inspect:
         _inspect_ai(args.site_key, args.site_url)
+        return
+
+    if args.site_queries:
+        BingQueryFetcher(args.site_key, site_url=args.site_url).fetch_site_queries_and_store()
         return
 
     if args.ai_performance:
