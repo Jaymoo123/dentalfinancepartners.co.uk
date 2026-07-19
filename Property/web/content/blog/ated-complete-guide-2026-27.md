@@ -1,56 +1,57 @@
 ---
-title: "ATED 2026/27: Complete Guide to Annual Tax on Enveloped Dwellings"
-slug: "ated-complete-guide-2026-27"
-canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/ated-complete-guide-2026-27"
-date: "2026-05-22"
-author: "Property Tax Partners Editorial Team"
-category: "Incorporation & Company Structures"
-metaTitle: "ATED 2026/27: Complete Guide for Property Companies"
-metaDescription: "Annual Tax on Enveloped Dwellings 2026/27: who pays, the six bands and charges, reliefs for rental and developer property, 30 April return deadline."
-altText: "Classic London apartment building under dramatic sky, representing enveloped UK residential property held by a company"
-image: "https://images.pexels.com/photos/561086/pexels-photo-561086.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+title: 'ATED 2026/27: Complete Guide to Annual Tax on Enveloped Dwellings'
+slug: ated-complete-guide-2026-27
+canonical: https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/ated-complete-guide-2026-27
+date: '2026-05-22'
+author: Property Tax Partners Editorial Team
+category: Incorporation & Company Structures
+metaTitle: 'ATED Rates 2026/27: Charges, Bands and Reliefs Explained'
+metaDescription: 'Check the ATED rates for 2026/27: six bands from £4,600 to £303,450, who pays, reliefs that cut the charge to nil and the 30 April return date.'
+altText: Classic London apartment building under dramatic sky, representing enveloped UK residential property held by a company
+image: https://images.pexels.com/photos/561086/pexels-photo-561086.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 imageCredit:
   photographer: SevenStorm JUHASZIMRUS
   photographer_url: https://www.pexels.com/@sevenstormphotography
   source: Pexels
   source_url: https://www.pexels.com/photo/grayscale-photography-of-house-561086/
-h1: "ATED 2026/27: The Complete Guide to Annual Tax on Enveloped Dwellings"
-summary: "ATED is the annual charge that applies when a company, partnership with a corporate member, or collective investment scheme holds a single UK residential dwelling worth more than £500,000. This pillar guide covers the 2026/27 bands, all reliefs, the 30 April return deadline and the penalty cascade."
-schema: ""
+h1: 'ATED 2026/27: The Complete Guide to Annual Tax on Enveloped Dwellings'
+summary: ATED is the annual charge that applies when a company, partnership with a corporate member, or collective investment scheme holds a single UK residential dwelling worth more than £500,000. This pillar guide covers the 2026/27 bands, all reliefs, the 30 April return deadline and the penalty cascade.
+schema: ''
 faqs:
-  - question: "Who actually has to pay ATED in 2026/27?"
-    answer: "ATED is charged on non-natural persons that hold a single UK residential dwelling worth more than £500,000 on 1 April 2026 (or on the date of acquisition during the year). Non-natural persons are limited companies, partnerships with at least one corporate member, and collective investment schemes. Individuals, sole-traders, and ordinary partnerships of individuals are outside ATED entirely."
-  - question: "What are the ATED chargeable amounts for the 2026/27 year?"
-    answer: "For the chargeable period from 1 April 2026 to 31 March 2027, HMRC has set the annual charges as: £4,600 (£500,001 to £1m), £9,450 (£1m to £2m), £32,200 (£2m to £5m), £75,450 (£5m to £10m), £151,450 (£10m to £20m), and £303,450 (over £20m). Bands are indexed each April by reference to the September CPI."
-  - question: "If my company-owned property is let out, do I still pay ATED?"
-    answer: "You still have to file an ATED return, but if the property is let to a third party on a commercial basis and is not occupied by anyone connected with the company, you can claim Property Rental Business Relief. The relief reduces the charge to nil. The relief is not automatic, you must claim it on the ATED return (or a Relief Declaration Return covering multiple properties)."
-  - question: "When is the ATED return due and what happens if I miss it?"
-    answer: "The standard ATED return for the chargeable period 1 April to 31 March is due by 30 April at the start of that period (so the 2026/27 return is due by 30 April 2026). Late filing triggers an immediate £100 penalty, a further £300 (or 5% of the tax due if greater) at six months, another £300 (or 5%) at twelve months, plus daily £10 penalties from day 91 for some return types. Late payment carries separate interest and percentage-based penalties."
-  - question: "Does ATED apply to commercial property or only residential?"
-    answer: "ATED applies only to dwellings, meaning property that is used or suitable for use as a single residence (and its garden and grounds). Pure commercial property, mixed-use properties where the residential element is incidental, and properties that have been irreversibly altered so they cannot be used as a dwelling are outside the scope."
-  - question: "How is the property value for ATED determined?"
-    answer: "Value is set at the most recent ATED revaluation date or the date of acquisition if later. The current revaluation date is 1 April 2022, used for the five chargeable periods from 2023/24 to 2027/28. The next revaluation date is 1 April 2027, which will be used from 2028/29 onwards. You can request a Pre-Return Banding Check from HMRC if your value is within 10% of a band boundary."
-  - question: "Can a property developer or trader avoid ATED?"
-    answer: "Yes. Property Developer Relief is available where the dwelling is held as trading stock by a property development trade, and Property Trader Relief covers dwellings acquired in the course of a property trading business with a view to resale. Both reliefs reduce the charge to nil but must be claimed on the return. Any non-qualifying use during the period (for example, personal occupation by a director) clawbacks the relief."
-  - question: "How does ATED interact with the 15% flat-rate SDLT on company purchases?"
-    answer: "When a non-natural person buys a single dwelling worth more than £500,000, Schedule 4A FA 2003 imposes a flat 15% SDLT rate unless a qualifying relief (broadly the same ones available for ATED) is claimed. The ATED reliefs and the SDLT 15% reliefs are aligned, so a property let commercially typically escapes both. The interaction is covered in more detail in our guide to the 15% flat-rate SDLT and ATED."
-  - question: "Has ATED-related CGT been abolished?"
-    answer: "Yes. ATED-related CGT, which previously applied to gains on the disposal of ATED-charged property, was abolished from 6 April 2019. Gains on UK residential property held by non-resident companies are now within the standard non-resident company corporation tax on chargeable gains regime, and gains held by UK-resident companies fall within ordinary corporation tax."
-  - question: "What if the company only acquires the property part-way through the year?"
-    answer: "If you acquire a chargeable interest part-way through the ATED period, the return is due within 30 days of acquisition (or 90 days for a newly-built dwelling). The charge is apportioned by reference to the number of days in the period for which the property is held. The same time-apportionment applies to reliefs, so a property that was let commercially for part of the year and used personally for the rest will see a charge for the non-relieved days only."
-  - question: "Can I file a single return covering multiple properties?"
-    answer: "Where every dwelling in your portfolio qualifies for the same relief (for example, all are let commercially under Property Rental Business Relief), you can file a single Relief Declaration Return naming the relief and the properties. If one property loses relief during the year, you must file a separate ATED return for that property covering the non-relieved days."
-  - question: "Is it still worth holding UK residential property through a company in 2026/27?"
-    answer: "For high-value family homes occupied by connected individuals, ATED of up to £303,450 a year usually outweighs any benefit from corporate ownership and dis-enveloping is the standard recommendation. For commercially-let portfolios, Property Rental Business Relief removes the ATED charge entirely and the corporate structure may still make sense for income tax and incorporation reasons. The right answer turns on use, value, and the wider tax position."
-  - question: "How do I appeal an ATED penalty?"
-    answer: "You have 30 days from the date of the penalty notice to appeal. The grounds are reasonable excuse (an unforeseen event that prevented compliance, that ended as soon as the excuse ended) or, for daily penalties, special circumstances. HMRC's published guidance treats ignorance of the obligation as a weak ground; first-time filing by a newly-incorporated holding company has had mixed results at tribunal."
-dateModified: "2026-05-22"
-reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
-reviewedAt: "2026-05-22"
-editorialNote: "Pillar reference for the ATED bucket. Daughter pages on rental relief mechanics, the 15% SDLT interaction, and the penalty cascade link back here."
+- question: Who actually has to pay ATED in 2026/27?
+  answer: ATED is charged on non-natural persons that hold a single UK residential dwelling worth more than £500,000 on 1 April 2026 (or on the date of acquisition during the year). Non-natural persons are limited companies, partnerships with at least one corporate member, and collective investment schemes. Individuals, sole-traders, and ordinary partnerships of individuals are outside ATED entirely.
+- question: What are the ATED chargeable amounts for the 2026/27 year?
+  answer: 'For the chargeable period from 1 April 2026 to 31 March 2027, HMRC has set the annual charges as: £4,600 (£500,001 to £1m), £9,450 (£1m to £2m), £32,200 (£2m to £5m), £75,450 (£5m to £10m), £151,450 (£10m to £20m), and £303,450 (over £20m). Bands are indexed each April by reference to the September CPI.'
+- question: If my company-owned property is let out, do I still pay ATED?
+  answer: You still have to file an ATED return, but if the property is let to a third party on a commercial basis and is not occupied by anyone connected with the company, you can claim Property Rental Business Relief. The relief reduces the charge to nil. The relief is not automatic, you must claim it on the ATED return (or a Relief Declaration Return covering multiple properties).
+- question: When is the ATED return due and what happens if I miss it?
+  answer: The standard ATED return for the chargeable period 1 April to 31 March is due by 30 April at the start of that period (so the 2026/27 return is due by 30 April 2026). Late filing triggers an immediate £100 penalty, a further £300 (or 5% of the tax due if greater) at six months, another £300 (or 5%) at twelve months, plus daily £10 penalties from day 91 for some return types. Late payment carries separate interest and percentage-based penalties.
+- question: Does ATED apply to commercial property or only residential?
+  answer: ATED applies only to dwellings, meaning property that is used or suitable for use as a single residence (and its garden and grounds). Pure commercial property, mixed-use properties where the residential element is incidental, and properties that have been irreversibly altered so they cannot be used as a dwelling are outside the scope.
+- question: How is the property value for ATED determined?
+  answer: Value is set at the most recent ATED revaluation date or the date of acquisition if later. The current revaluation date is 1 April 2022, used for the five chargeable periods from 2023/24 to 2027/28. The next revaluation date is 1 April 2027, which will be used from 2028/29 onwards. You can request a Pre-Return Banding Check from HMRC if your value is within 10% of a band boundary.
+- question: Can a property developer or trader avoid ATED?
+  answer: Yes. Property Developer Relief is available where the dwelling is held as trading stock by a property development trade, and Property Trader Relief covers dwellings acquired in the course of a property trading business with a view to resale. Both reliefs reduce the charge to nil but must be claimed on the return. Any non-qualifying use during the period (for example, personal occupation by a director) clawbacks the relief.
+- question: How does ATED interact with the 15% flat-rate SDLT on company purchases?
+  answer: When a non-natural person buys a single dwelling worth more than £500,000, Schedule 4A FA 2003 imposes a flat 15% SDLT rate unless a qualifying relief (broadly the same ones available for ATED) is claimed. The ATED reliefs and the SDLT 15% reliefs are aligned, so a property let commercially typically escapes both. The interaction is covered in more detail in our guide to the 15% flat-rate SDLT and ATED.
+- question: Has ATED-related CGT been abolished?
+  answer: Yes. ATED-related CGT, which previously applied to gains on the disposal of ATED-charged property, was abolished from 6 April 2019. Gains on UK residential property held by non-resident companies are now within the standard non-resident company corporation tax on chargeable gains regime, and gains held by UK-resident companies fall within ordinary corporation tax.
+- question: What if the company only acquires the property part-way through the year?
+  answer: If you acquire a chargeable interest part-way through the ATED period, the return is due within 30 days of acquisition (or 90 days for a newly-built dwelling). The charge is apportioned by reference to the number of days in the period for which the property is held. The same time-apportionment applies to reliefs, so a property that was let commercially for part of the year and used personally for the rest will see a charge for the non-relieved days only.
+- question: Can I file a single return covering multiple properties?
+  answer: Where every dwelling in your portfolio qualifies for the same relief (for example, all are let commercially under Property Rental Business Relief), you can file a single Relief Declaration Return naming the relief and the properties. If one property loses relief during the year, you must file a separate ATED return for that property covering the non-relieved days.
+- question: Is it still worth holding UK residential property through a company in 2026/27?
+  answer: For high-value family homes occupied by connected individuals, ATED of up to £303,450 a year usually outweighs any benefit from corporate ownership and dis-enveloping is the standard recommendation. For commercially-let portfolios, Property Rental Business Relief removes the ATED charge entirely and the corporate structure may still make sense for income tax and incorporation reasons. The right answer turns on use, value, and the wider tax position.
+- question: How do I appeal an ATED penalty?
+  answer: You have 30 days from the date of the penalty notice to appeal. The grounds are reasonable excuse (an unforeseen event that prevented compliance, that ended as soon as the excuse ended) or, for daily penalties, special circumstances. HMRC's published guidance treats ignorance of the obligation as a weak ground; first-time filing by a newly-incorporated holding company has had mixed results at tribunal.
+dateModified: '2026-05-22'
+reviewedBy: Property Tax Partners Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
+reviewedAt: '2026-05-22'
+editorialNote: Pillar reference for the ATED bucket. Daughter pages on rental relief mechanics, the 15% SDLT interaction, and the penalty cascade link back here.
+metaTitle_prev: 'ATED 2026/27: Complete Guide for Property Companies'
+metaDescription_prev: 'Annual Tax on Enveloped Dwellings 2026/27: who pays, the six bands and charges, reliefs for rental and developer property, 30 April return deadline.'
 ---
-
 <p>The Annual Tax on Enveloped Dwellings (ATED) is the yearly charge that catches limited companies, partnerships with corporate members, and collective investment schemes when they hold a UK residential dwelling worth more than £500,000. It was introduced in 2013 to deter the use of corporate "envelopes" to escape stamp duty on high-value London homes, and the regime has expanded steadily since: the entry threshold dropped from £2 million to £500,000 over its first three years, the annual charges have risen with inflation, and the linked 15% flat-rate SDLT on corporate purchases has stayed in place.</p>
 
 <p>For 2026/27, the headline figures matter to anyone holding a single dwelling above the threshold in a non-natural person: the smallest band pays £4,600 a year and the largest pays £303,450. Both numbers can be reduced to nil by claiming the right relief on the return, but the return itself is not optional. Missing the 30 April filing deadline produces an immediate £100 penalty even where no tax is owed, and the cascade gets sharply worse from there.</p>

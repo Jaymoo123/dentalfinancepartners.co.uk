@@ -238,14 +238,15 @@ def _apply_one(proposal: dict, abs_path: Path, site_key: str) -> dict:
         new_fm["metaTitle"] = new_title
         new_fm["metaDescription"] = new_desc
 
-        stamp_trust_signals(
-            fm=new_fm,
-            site_key=b.site_key,
-            editorial_note=(
-                "metaTitle and metaDescription rewritten via meta_apply.py "
-                "(SERP meta-optimisation program) after GSC+Bing CTR analysis."
-            ),
-        )
+        if os.environ.get("META_APPLY_SKIP_STAMP") != "1":
+            stamp_trust_signals(
+                fm=new_fm,
+                site_key=b.site_key,
+                editorial_note=(
+                    "metaTitle and metaDescription rewritten via meta_apply.py "
+                    "(SERP meta-optimisation program) after GSC+Bing CTR analysis."
+                ),
+            )
 
         fm_write(abs_path, new_fm, before_body)
 

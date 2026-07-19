@@ -515,6 +515,11 @@ export function middleware(request: NextRequest) {
     if (target) {
       return NextResponse.redirect(new URL(target, request.url), 301);
     }
+    // Recategorised posts: old /blog/<old-category>/<slug> URLs 404 without this
+    const correctCategory = SLUG_TO_CATEGORY_MAP[slug];
+    if (correctCategory && pathname !== `/blog/${correctCategory}/${slug}`) {
+      return NextResponse.redirect(new URL(`/blog/${correctCategory}/${slug}`, request.url), 301);
+    }
   }
 
   return NextResponse.next();

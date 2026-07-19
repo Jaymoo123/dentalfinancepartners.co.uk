@@ -76,6 +76,22 @@ low-value duplicate-coverage impressions.
 - No new near-duplicate publishing into already-covered intents (this is what
   triggered the prune). Future waves must pass the dupe gates hard.
 
+## Shipped 2026-07-19 (owner approved "ship all of it")
+
+- 4 meta pairs applied via `meta_apply.py --execute` with new `META_APPLY_SKIP_STAMP=1`
+  flag (title/desc/_prev only, no dateModified/EEAT churn): ated-guide, welsh-ltt-rates,
+  directors-loan s.455, sdlt-transfer-company. Audit rows written; pages already in
+  monitored_pages. Re-analyse ≥2026-08-20.
+- Generic recategorisation redirect added to `Property/web/src/middleware.ts`
+  (wrong-category nested URLs 301 to the correct category; map verified 0 mismatches
+  vs frontmatter). Fixes the landlord-tax-return 404 and the whole pattern.
+- **Owner manual step — GSC Request Indexing (API cannot do this), 5 URLs:**
+  1. /blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances
+  2. /blog/capital-gains-tax/principal-private-residence-relief-landlords
+  3. /blog/incorporation-and-company-structures/incorporation-existing-portfolios-phased-approach
+  4. /blog/incorporation-and-company-structures/limited-company-vs-personal-ownership-tax-comparison-2026
+  5. /blog/property-accountant-services/birmingham-property-accountant
+
 ## Monitoring
 
 Weekly: clicks (primary), pages-with-impressions count, and the collapse

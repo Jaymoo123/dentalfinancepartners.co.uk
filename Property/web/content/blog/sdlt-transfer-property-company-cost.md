@@ -1,48 +1,49 @@
 ---
-title: "SDLT on Transferring Property to a Limited Company (Connected Party)"
-slug: "sdlt-transfer-property-company-cost"
-canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost"
-date: "2026-04-10"
-author: "Property Tax Partners Editorial Team"
-category: "Incorporation & Company Structures"
-metaTitle: "SDLT on Property Transfer to a Limited Company (2026)"
-metaDescription: "How SDLT works when you transfer property to your own company: the connected-party market-value rule, the 5% surcharge, 2026/27 bands and reliefs."
-altText: "UK property accountant calculating SDLT on a connected-party transfer of buy-to-let property into a limited company"
-image: ""
-h1: "SDLT When You Transfer Property to Your Own Limited Company"
-summary: "Move a rental property into your own company and HMRC charges SDLT on the open-market value, not the price you paid, because you and the company are connected. Here are the 2026/27 bands, the 5% surcharge, the connected-party valuation rule, and which reliefs still work after MDR was abolished."
-reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
-reviewedAt: "2026-05-31"
-dateModified: "2026-05-31"
-schema: ""
+title: SDLT on Transferring Property to a Limited Company (Connected Party)
+slug: sdlt-transfer-property-company-cost
+canonical: https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost
+date: '2026-04-10'
+author: Property Tax Partners Editorial Team
+category: Incorporation & Company Structures
+metaTitle: SDLT on Transferring Property to a Limited Company 2026/27
+metaDescription: 'Work out SDLT when you move property to your own company: market value applies under the connected-party rule, plus the 5% surcharge on 2026/27 bands.'
+altText: UK property accountant calculating SDLT on a connected-party transfer of buy-to-let property into a limited company
+image: ''
+h1: SDLT When You Transfer Property to Your Own Limited Company
+summary: Move a rental property into your own company and HMRC charges SDLT on the open-market value, not the price you paid, because you and the company are connected. Here are the 2026/27 bands, the 5% surcharge, the connected-party valuation rule, and which reliefs still work after MDR was abolished.
+reviewedBy: Property Tax Partners Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
+reviewedAt: '2026-05-31'
+dateModified: '2026-05-31'
+schema: ''
 faqs:
-  - question: "How is SDLT charged when I transfer property to my limited company in 2026 (connected party)?"
-    answer: "You and your own company are connected persons, so SDLT is charged on the open market value of the property at the date of transfer, not on the price you paid for it and not on any nominal figure you put on the transfer. This connected-party market-value rule sits in section 53 of the Finance Act 2003. The company is the buyer for SDLT, so the company pays, and because the property is an additional residential dwelling for the company the 5% surcharge applies on top of the standard bands."
-  - question: "Is SDLT calculated on the price I paid or current market value?"
-    answer: "Current market value at the date of the transfer. The price you originally paid is irrelevant. Because you control the company, the connected-party rule in section 53 FA 2003 substitutes market value for the actual consideration, which stops landlords from transferring at an artificially low figure to cut the SDLT. For higher-value or unusual properties, get an RICS valuation to support the figure you report."
-  - question: "How much SDLT will my company pay on a property transfer?"
-    answer: "It depends on the property's market value and the band split. A company buying an additional residential dwelling pays 5% on the first £125,000, 7% from £125,001 to £250,000, 10% from £250,001 to £925,000, 15% from £925,001 to £1.5m and 17% above £1.5m. On a £400,000 property that is £30,000. The bands are marginal, so each slice of value is taxed at its own rate."
-  - question: "Does the 5% SDLT surcharge apply when a company buys property?"
-    answer: "Yes. A company acquiring a residential dwelling is treated as buying an additional property, so the 5% additional dwellings surcharge (raised from 3% to 5% for transactions on or after 31 October 2024) applies on top of the standard residential bands. Where a single dwelling is worth more than £500,000 and is bought by a company, the flat 17% rate under Schedule 4A FA 2003 can apply instead unless a relief such as the let-property relief applies."
-  - question: "Can I avoid SDLT when incorporating my property business?"
-    answer: "There is no general exemption. Multiple Dwellings Relief, which older guides still recommend, was abolished for transactions completing on or after 1 June 2024 and is gone. The one mainstream route to nil SDLT on an existing portfolio is genuine partnership incorporation under Schedule 15 FA 2003, where the chargeable consideration is reduced by the sum of the lower proportions. That needs a real, pre-existing letting partnership, not a paper one set up days before the transfer."
-  - question: "Do I pay both SDLT and Capital Gains Tax when I transfer property to my company?"
-    answer: "Usually yes. The company pays SDLT on market value and you, personally, make a disposal at market value for CGT at 18% or 24% on residential property. Section 162 incorporation relief can defer the CGT where a genuine business transfers as a going concern, but it does not touch the SDLT. So a transfer can be CGT-deferred and still carry a full SDLT bill."
-  - question: "What is the connected-party rule for SDLT and why does it matter?"
-    answer: "Section 53 FA 2003 treats a transfer to a company you are connected with as taking place at not less than market value. You are connected with a company you control under the section 1122 CTA 2010 definition. The rule blocks the obvious planning of selling to your own company for £1, and it is the reason a debt-free transfer to your company still produces an SDLT charge based on the full value of the property."
-  - question: "Is the six-dwellings rule still available after MDR was abolished?"
-    answer: "Yes. Where six or more separate dwellings are acquired in a single transaction, section 116(7) FA 2003 automatically treats them as non-residential property. The non-residential rates apply (0% to £150,000, 2% to £250,000, 5% above) with no additional dwellings surcharge. It is an automatic statutory deeming, not a relief you claim, and it survived the MDR abolition. It only helps genuine bulk transfers of six or more dwellings in one go."
-  - question: "Does Stamp Duty apply if my properties are in Scotland or Wales?"
-    answer: "No. Scotland charges LBTT through Revenue Scotland, with the Additional Dwelling Supplement at 8% for company and second-property purchases. Wales charges LTT through the Welsh Revenue Authority, with a separate higher-rates table for additional properties. The bands, thresholds and reliefs all differ from SDLT, and MDR still exists in both Scotland and Wales even though it was abolished in England and Northern Ireland."
-  - question: "When must the SDLT return be filed and the tax paid?"
-    answer: "The company must file the SDLT return and pay the tax within 14 days of the effective date of the transaction, which is normally completion. Filing or paying late triggers fixed penalties and interest on the unpaid tax at HMRC's prevailing rate. The SDLT cost should be budgeted as cash up front, because it cannot be funded out of future rent in the way ongoing running costs can."
-  - question: "Is it cheaper to buy new property through the company instead of transferring existing ones?"
-    answer: "Often, yes, for the existing stock. New purchases made directly by the company still attract SDLT and the 5% surcharge, but they avoid the personal CGT disposal and the double valuation exercise that a transfer of existing property triggers. Many landlords keep mortgaged personal property where it is and use the company for new acquisitions, a hybrid approach that sidesteps the transfer SDLT and CGT on the legacy portfolio."
-  - question: "Does the company pay SDLT if I transfer a mortgaged property and the company takes over the debt?"
-    answer: "Yes, and the debt does not reduce the charge here because the connected-party rule already substitutes market value as the chargeable consideration. For an unconnected sale, assumed debt would be the consideration. On a connected transfer to your own company, SDLT is the higher of the assumed debt and market value, and market value is almost always the operative figure. Lender consent to the transfer is a separate practical hurdle to plan for."
+- question: How is SDLT charged when I transfer property to my limited company in 2026 (connected party)?
+  answer: You and your own company are connected persons, so SDLT is charged on the open market value of the property at the date of transfer, not on the price you paid for it and not on any nominal figure you put on the transfer. This connected-party market-value rule sits in section 53 of the Finance Act 2003. The company is the buyer for SDLT, so the company pays, and because the property is an additional residential dwelling for the company the 5% surcharge applies on top of the standard bands.
+- question: Is SDLT calculated on the price I paid or current market value?
+  answer: Current market value at the date of the transfer. The price you originally paid is irrelevant. Because you control the company, the connected-party rule in section 53 FA 2003 substitutes market value for the actual consideration, which stops landlords from transferring at an artificially low figure to cut the SDLT. For higher-value or unusual properties, get an RICS valuation to support the figure you report.
+- question: How much SDLT will my company pay on a property transfer?
+  answer: It depends on the property's market value and the band split. A company buying an additional residential dwelling pays 5% on the first £125,000, 7% from £125,001 to £250,000, 10% from £250,001 to £925,000, 15% from £925,001 to £1.5m and 17% above £1.5m. On a £400,000 property that is £30,000. The bands are marginal, so each slice of value is taxed at its own rate.
+- question: Does the 5% SDLT surcharge apply when a company buys property?
+  answer: Yes. A company acquiring a residential dwelling is treated as buying an additional property, so the 5% additional dwellings surcharge (raised from 3% to 5% for transactions on or after 31 October 2024) applies on top of the standard residential bands. Where a single dwelling is worth more than £500,000 and is bought by a company, the flat 17% rate under Schedule 4A FA 2003 can apply instead unless a relief such as the let-property relief applies.
+- question: Can I avoid SDLT when incorporating my property business?
+  answer: There is no general exemption. Multiple Dwellings Relief, which older guides still recommend, was abolished for transactions completing on or after 1 June 2024 and is gone. The one mainstream route to nil SDLT on an existing portfolio is genuine partnership incorporation under Schedule 15 FA 2003, where the chargeable consideration is reduced by the sum of the lower proportions. That needs a real, pre-existing letting partnership, not a paper one set up days before the transfer.
+- question: Do I pay both SDLT and Capital Gains Tax when I transfer property to my company?
+  answer: Usually yes. The company pays SDLT on market value and you, personally, make a disposal at market value for CGT at 18% or 24% on residential property. Section 162 incorporation relief can defer the CGT where a genuine business transfers as a going concern, but it does not touch the SDLT. So a transfer can be CGT-deferred and still carry a full SDLT bill.
+- question: What is the connected-party rule for SDLT and why does it matter?
+  answer: Section 53 FA 2003 treats a transfer to a company you are connected with as taking place at not less than market value. You are connected with a company you control under the section 1122 CTA 2010 definition. The rule blocks the obvious planning of selling to your own company for £1, and it is the reason a debt-free transfer to your company still produces an SDLT charge based on the full value of the property.
+- question: Is the six-dwellings rule still available after MDR was abolished?
+  answer: Yes. Where six or more separate dwellings are acquired in a single transaction, section 116(7) FA 2003 automatically treats them as non-residential property. The non-residential rates apply (0% to £150,000, 2% to £250,000, 5% above) with no additional dwellings surcharge. It is an automatic statutory deeming, not a relief you claim, and it survived the MDR abolition. It only helps genuine bulk transfers of six or more dwellings in one go.
+- question: Does Stamp Duty apply if my properties are in Scotland or Wales?
+  answer: No. Scotland charges LBTT through Revenue Scotland, with the Additional Dwelling Supplement at 8% for company and second-property purchases. Wales charges LTT through the Welsh Revenue Authority, with a separate higher-rates table for additional properties. The bands, thresholds and reliefs all differ from SDLT, and MDR still exists in both Scotland and Wales even though it was abolished in England and Northern Ireland.
+- question: When must the SDLT return be filed and the tax paid?
+  answer: The company must file the SDLT return and pay the tax within 14 days of the effective date of the transaction, which is normally completion. Filing or paying late triggers fixed penalties and interest on the unpaid tax at HMRC's prevailing rate. The SDLT cost should be budgeted as cash up front, because it cannot be funded out of future rent in the way ongoing running costs can.
+- question: Is it cheaper to buy new property through the company instead of transferring existing ones?
+  answer: Often, yes, for the existing stock. New purchases made directly by the company still attract SDLT and the 5% surcharge, but they avoid the personal CGT disposal and the double valuation exercise that a transfer of existing property triggers. Many landlords keep mortgaged personal property where it is and use the company for new acquisitions, a hybrid approach that sidesteps the transfer SDLT and CGT on the legacy portfolio.
+- question: Does the company pay SDLT if I transfer a mortgaged property and the company takes over the debt?
+  answer: Yes, and the debt does not reduce the charge here because the connected-party rule already substitutes market value as the chargeable consideration. For an unconnected sale, assumed debt would be the consideration. On a connected transfer to your own company, SDLT is the higher of the assumed debt and market value, and market value is almost always the operative figure. Lender consent to the transfer is a separate practical hurdle to plan for.
+metaTitle_prev: SDLT on Property Transfer to a Limited Company (2026)
+metaDescription_prev: 'How SDLT works when you transfer property to your own company: the connected-party market-value rule, the 5% surcharge, 2026/27 bands and reliefs.'
 ---
-
 <p>Move a rental property into your own limited company and HMRC does not look at what you paid for it. Because you and the company are connected persons, Stamp Duty Land Tax (SDLT) is charged on the property's open market value at the date of transfer, and the company pays it as if buying an additional residential property on the open market. That single rule, in section 53 of the Finance Act 2003, is what makes incorporating an existing portfolio expensive, and it is the part most landlords underestimate when they model the move.</p>
 
 <p>On a typical buy-to-let that has grown in value, the connected-party charge for 2026/27 turns into a five-figure SDLT bill payable in cash up front, before you have factored in the separate Capital Gains Tax charge on the same transfer. Whether incorporation is worth it at all turns on those two entry costs against the long-run corporation tax saving, so getting the SDLT number right comes first.</p>
