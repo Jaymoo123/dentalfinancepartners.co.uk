@@ -41,14 +41,14 @@ export const serviceTiers: ServiceTier[] = [
   {
     name: "Scale and Export",
     description:
-      "Multi-platform or cross-border sellers with EU VAT exposure, FBA stock in overseas warehouses, or IOSS/OSS obligations who need advisory depth alongside full compliance.",
+      "Multi-platform or cross-border sellers with EU VAT exposure, FBA stock in overseas warehouses, or IOSS/OSS obligations who need cross-border VAT handled before HMRC or an EU tax authority raises it.",
     features: [
       "Everything in Growing Seller",
       "EU VAT registration and OSS/IOSS compliance",
       "Import and cross-border VAT advice",
       "FBA and 3PL stock-location tax review",
       "Inventory and COGS bookkeeping",
-      "Priority same-day response",
+      "Priority response in platform-suspension or HMRC-letter situations",
     ],
     cta: "Book a free scoping call",
     ctaHref: "/contact",

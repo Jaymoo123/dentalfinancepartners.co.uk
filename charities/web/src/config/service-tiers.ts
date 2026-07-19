@@ -9,7 +9,7 @@ export const serviceTiers: ServiceTier[] = [
   {
     name: "Foundations",
     description:
-      "Smaller charities and CICs below the independent examination threshold (under £25,000 gross income) that need accurate SORP accounts and basic compliance in order.",
+      "Smaller charities below the independent examination threshold (under £25,000 gross income), plus CICs of similar size, that need accurate accounts and basic compliance in order.",
     features: [
       "Annual accounts prepared under Charities SORP",
       "Receipts and payments or accruals basis as appropriate",
@@ -25,7 +25,7 @@ export const serviceTiers: ServiceTier[] = [
   {
     name: "Examination",
     description:
-      "Charities and CICs with gross income above £25,000 that require external scrutiny and want Gift Aid, fund accounting and VAT handled properly throughout the year.",
+      "Charities with gross income above £25,000 that require external scrutiny and want Gift Aid, fund accounting and VAT handled properly throughout the year.",
     features: [
       "Everything in Foundations",
       "Independent examination by a qualified examiner",

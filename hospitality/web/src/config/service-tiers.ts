@@ -5,13 +5,13 @@ import type { ServiceTier } from "@accounting-network/web-shared/components/Serv
 
 export const serviceTiers: ServiceTier[] = [
   {
-    name: "Compliance",
+    name: "Single Venue",
     description:
       "Independent operators and small venues that need the annual numbers filed correctly and their payroll and VAT obligations handled without fuss.",
     features: [
       "Annual accounts and corporation tax return",
       "Personal self assessment for owner-operators",
-      "Food and drink VAT split (standard, zero-rated, reduced-rate)",
+      "Food and drink VAT split (standard vs zero-rated, eat-in vs takeaway)",
       "Payroll for variable-hours teams with RTI submissions",
       "Employer NIC at 15% from April 2025 with Employment Allowance check",
       "Tips and gratuities review under the Employment (Allocation of Tips) Act",
@@ -21,11 +21,11 @@ export const serviceTiers: ServiceTier[] = [
     featured: false,
   },
   {
-    name: "Growth",
+    name: "Full Service",
     description:
-      "Expanding venues and small groups that want monthly management accounts, tronc scheme compliance, and proactive VAT and tax planning across the year.",
+      "Expanding venues and small groups that need numbers built around the trade: tronc compliance, wet and dry margins, and a plan for the quiet months before they arrive.",
     features: [
-      "Everything in Compliance",
+      "Everything in Single Venue",
       "Tronc scheme setup and troncmaster support (NIC-exempt allocation)",
       "Monthly P&L with wet vs dry vs food vs accommodation splits",
       "Flat Rate Scheme review (6.5% pubs, 12.5% catering, 10.5% hotels)",
@@ -37,16 +37,16 @@ export const serviceTiers: ServiceTier[] = [
     featured: true,
   },
   {
-    name: "Specialist",
+    name: "Multi-Site and Exit",
     description:
       "Multi-site operators, lease assignments and venue sales needing advisory depth: licence and duty compliance, MTD for Income Tax, and exit planning.",
     features: [
-      "Everything in Growth",
+      "Everything in Full Service",
       "MTD for Income Tax readiness (sole traders over £50,000 income from April 2026)",
       "Alcohol duty and draught relief reconciliation",
       "Tour Operators Margin Scheme (TOMS) for accommodation packages",
       "Business rates relief review (SBRR up to £12,000 rateable value)",
-      "Priority same-day response",
+      "Priority response during licensing and rating deadlines",
     ],
     cta: "Book a free scoping call",
     ctaHref: "/contact",
