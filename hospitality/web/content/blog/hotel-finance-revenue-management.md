@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Hotel Finance and Revenue Management: the Numbers Behind Occupancy"
 slug: "hotel-finance-revenue-management"
 date: "2026-07-15"
