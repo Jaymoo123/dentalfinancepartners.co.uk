@@ -11,8 +11,8 @@ hero: "Partnership or limited company is the first structural question every den
 faqs:
   - question: "Should I incorporate my dental practice in 2025/26?"
     answer: "Sometimes yes, sometimes no. Incorporation typically becomes financially attractive when practice profits exceed £80,000-£120,000 and you don't need NHS Pension accrual on all of your earnings. Below that profit level, the corporation tax + dividend tax stack often exceeds personal income tax on the same income, especially with the dividend allowance squeezed to £500 in 2025/26. NHS Pension membership is the other big factor: incorporated principals lose pension accrual on the dividend portion of their extraction because dividends aren't pensionable earnings. For a principal with 15+ years of NHS Pension service who values the future pension, the lost accrual can outweigh the tax saving."
-  - question: "What's the dividend tax position in 2025/26?"
-    answer: "Dividend allowance is £500. The basic rate dividend tax is 8.75%, higher rate is 33.75%, additional rate is 39.35%. These rates are on top of the corporation tax already paid by the company. So for a higher-rate principal extracting a dividend from a company that has paid 25% corporation tax on its profit, the effective overall rate on that profit is roughly: 25% (corp tax) + 33.75% (dividend tax on the net) on the remaining 75% = around 50% in total. Compare that to personal income tax + NI of 42% on equivalent self-employed profit, and the gap is narrower than it looks before the corporation tax is brought in."
+  - question: "What's the dividend tax position in 2026/27?"
+    answer: "Dividend allowance is £500. From 6 April 2026 the basic rate dividend tax is 10.75%, higher rate is 35.75%, additional rate is 39.35% (up from 8.75% and 33.75% in 2025/26). These rates are on top of the corporation tax already paid by the company. So for a higher-rate principal extracting a dividend from a company that has paid 25% corporation tax on its profit, the effective overall rate on that profit is roughly: 25% (corp tax) + 35.75% (dividend tax on the net) on the remaining 75% = around 52% in total. Compare that to personal income tax + NI of 42% on equivalent self-employed profit, and the gap is narrower than it looks before the corporation tax is brought in."
   - question: "Can I employ my spouse in a dental practice?"
     answer: "Yes, but the salary must reflect genuine work performed at a market rate. HMRC challenges spouse salaries where the work is illusory or the rate is materially above market. For a spouse doing genuine administrative, bookkeeping, or practice management work, a salary of £12,570 (the personal allowance) up to perhaps £30,000 (depending on hours and role) is defensible. The salary is deductible from practice profit at the higher (principal) rate, taxed in the spouse's hands at typically a much lower rate. This is one of the most reliable ways to reduce the household tax bill in either a partnership or limited company structure."
   - question: "How does incorporation affect NHS Pension?"
@@ -65,7 +65,7 @@ ctaBody: "30-minute scoping call. We will model partnership vs LLP vs limited co
 
 <ul>
 <li>Corporation tax: 19% on profits up to £50,000, marginal-relief tapered between £50,000-£250,000, 25% on profits above £250,000</li>
-<li>Dividend tax (on the dividend received after the company has paid corporation tax): basic rate 8.75%, higher rate 33.75%, additional rate 39.35%, dividend allowance £500</li>
+<li>Dividend tax (on the dividend received after the company has paid corporation tax): from 6 April 2026, basic rate 10.75%, higher rate 35.75%, additional rate 39.35%, dividend allowance £500</li>
 <li>Director's salary: PAYE income tax + employee NI + employer NI as for any employee</li>
 </ul>
 
@@ -74,12 +74,12 @@ ctaBody: "30-minute scoping call. We will model partnership vs LLP vs limited co
 <p>For a principal extracting all profit each year via small salary + dividend, the combined effective rate on each £1 of practice profit is approximately:</p>
 
 <ul>
-<li>Practice profit £40,000 (basic-rate principal): ~26% sole-trader vs ~26% Ltd (negligible difference at this level)</li>
-<li>Practice profit £80,000 (higher-rate principal): ~38% sole-trader vs ~37% Ltd (broadly equal)</li>
-<li>Practice profit £150,000 (additional-rate principal): ~43% sole-trader vs ~42% Ltd (broadly equal)</li>
+<li>Practice profit £40,000 (basic-rate principal): ~26% sole-trader vs ~27% Ltd (negligible difference at this level)</li>
+<li>Practice profit £80,000 (higher-rate principal): ~38% sole-trader vs ~38% Ltd (broadly equal)</li>
+<li>Practice profit £150,000 (additional-rate principal): ~43% sole-trader vs ~43% Ltd (broadly equal)</li>
 </ul>
 
-<p>These numbers are illustrative — actual position depends on the precise extraction strategy, personal allowance taper, and other income. The point is: <strong>the headline tax saving from incorporation alone is small in 2025/26</strong>. The reasons to incorporate are usually about other factors: NHS Pension flexibility, retained earnings for practice investment, spouse employment, future sale planning.</p>
+<p>These numbers are illustrative — actual position depends on the precise extraction strategy, personal allowance taper, and other income. With the higher dividend rates from 6 April 2026, the Ltd route has become slightly less attractive than in earlier years. The point is: <strong>the headline tax saving from incorporation alone is small in 2026/27, and in some cases negative</strong>. The reasons to incorporate are usually about other factors: NHS Pension flexibility, retained earnings for practice investment, spouse employment, future sale planning.</p>
 
 <h2>What NHS Pension membership does to the decision</h2>
 
@@ -151,7 +151,7 @@ ctaBody: "30-minute scoping call. We will model partnership vs LLP vs limited co
 
 <h3>Step 3: Dividends to use the dividend allowance + basic-rate band</h3>
 
-<p>£500 dividend allowance (0% tax) + dividend up to the top of the basic-rate band (taxed at 8.75% dividend tax) is the cheapest extraction beyond salary. Subsequent dividend in the higher-rate band is at 33.75% — still cheaper than the equivalent salary (which would attract income tax + NI + employer NI).</p>
+<p>£500 dividend allowance (0% tax) + dividend up to the top of the basic-rate band (taxed at 10.75% dividend tax from 6 April 2026) is the cheapest extraction beyond salary. Subsequent dividend in the higher-rate band is at 35.75%, still cheaper than the equivalent salary (which would attract income tax + NI + employer NI).</p>
 
 <h3>Step 4: Retained earnings for reinvestment</h3>
 
