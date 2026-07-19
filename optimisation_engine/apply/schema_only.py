@@ -44,6 +44,7 @@ VALID_SCHEMA_TYPES = {
     "BreadcrumbList", "WebPage", "Organization",
     "HowTo", "Review", "AggregateRating",
     "WebApplication", "SoftwareApplication", "Dataset",
+    "CollectionPage", "DefinedTerm", "DefinedTermSet",
 }
 
 
