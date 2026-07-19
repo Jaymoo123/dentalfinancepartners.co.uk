@@ -6,8 +6,8 @@ date: '2026-05-20'
 generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
-metaTitle: 'Integral Features Capital Allowances: 6% Special Rate Pool'
-metaDescription: Claim tax relief on a property's wiring, heating, lifts and ventilation. Integral features get 6% writing down allowances (special rate pool) on a reducing balance each year.
+metaTitle: 'Integral Features Capital Allowances: Rates, AIA, Claims'
+metaDescription: What counts as integral features, the 6% special rate pool, and when AIA gives 100% relief instead. How to claim on new builds, refits and purchases.
 altText: UK commercial property interior showing heating and lighting systems, with a tax calculator and paperwork on a desk in the foreground.
 image: https://images.pexels.com/photos/18729447/pexels-photo-18729447.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'Integral Features Capital Allowances: A Complete Guide for UK Property Owners'
@@ -22,7 +22,7 @@ faqs:
   answer: If you already own the property and have not previously claimed, you can still make a claim. You need to establish the original cost of the integral features at the time they were installed. If you do not have the invoices, a retrospective valuation by a quantity surveyor is acceptable. HMRC may challenge the valuation, so keep supporting evidence. Claims can be made up to two years after the end of the accounting period to which they relate.
 - question: Can I claim integral features allowances on a property I lease?
   answer: 'Yes, if you are the tenant and you have incurred capital expenditure on integral features as part of your leasehold improvements. The same rules apply: 6% reducing balance on qualifying items. If the landlord incurred the cost and passed it on through the rent, you cannot claim. The claim belongs to whoever paid for the installation. Check your lease to see who bears the cost of improvements.'
-dateModified: '2026-06-12'
+dateModified: '2026-07-19'
 sourcesVerifiedAt: '2026-05-20'
 sourceDomains: []
 imageCredit:
@@ -30,12 +30,12 @@ imageCredit:
   photographer_url: https://www.pexels.com/@axp-photography-500641970
   source: Pexels
   source_url: https://www.pexels.com/photo/house-buildings-by-the-street-in-london-18729447/
-metaTitle_prev: 'Integral Features Capital Allowances: A Complete Guide'
-metaDescription_prev: Integral features capital allowances explained for UK property owners. Claim 25% of qualifying costs on heating, lighting, lifts and more. Practical guide
+metaTitle_prev: 'Integral Features Capital Allowances: 6% Special Rate Pool'
+metaDescription_prev: Claim tax relief on a property's wiring, heating, lifts and ventilation. Integral features get 6% writing down allowances (special rate pool) on a reducing balance each year.
 reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
-editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+editorialNote: metaTitle and metaDescription rewritten 2026-07-19 (query-ledger C1 meta batch) after GSC+Bing CTR analysis.
 keyTakeaways:
   - "Integral features qualify for 6% writing down allowances on a reducing balance basis in the special rate pool, under Part 2, Chapter 14 of the Capital Allowances Act 2001."
   - "The legislation lists eight integral feature categories: electrical, cold water, hot water, space heating or cooling, ventilation, lifts and escalators, external solar shading, and combined hot water and heating systems."

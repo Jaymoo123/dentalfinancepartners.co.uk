@@ -6,8 +6,8 @@ date: '2026-05-17'
 generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Director Pay and Dividends
-metaTitle: 'Trivial Benefits: The £50 Director Gift Rule for 2025/26'
-metaDescription: Give tax-free gifts to staff and directors without a P11D. Each gift must stay at £50 or under and not be a reward for work. See what qualifies.
+metaTitle: 'Trivial Benefits for Directors: £50 Gifts, £300 Annual Cap'
+metaDescription: 'Trivial benefits rules for directors: tax-free gifts up to £50 each, capped at £300 a year for close company directors. What qualifies, vouchers and VAT.'
 altText: UK accountant explaining trivial benefits rules to a director in a Manchester city centre office
 image: /blog/trivial-benefits-rules-uk.jpg
 imageCredit:
@@ -27,13 +27,13 @@ faqs:
   answer: The excess over £300 is taxable as earnings. You must process it through payroll, deduct tax and NI, and report it on a P11D. The first £300 remains tax-free. Track your total during the year to avoid this.
 - question: Can a sole trader use the trivial benefits rules for themselves?
   answer: No. The rules only apply to employees and directors. A sole trader is not an employee of their own business. They can give trivial benefits to employees, but not to themselves. The same applies to partners in a partnership.
-metaTitle_prev: 'Trivial Benefits Rules UK: £50 Gifts for Directors (2025/26)'
-metaDescription_prev: The trivial benefits rules UK allow directors tax-free gifts up to £50 each. We explain the conditions, the £300 cap, and what qualifies.
-dateModified: '2026-06-12'
+metaTitle_prev: 'Trivial Benefits: The £50 Director Gift Rule for 2025/26'
+metaDescription_prev: Give tax-free gifts to staff and directors without a P11D. Each gift must stay at £50 or under and not be a reward for work. See what qualifies.
+dateModified: '2026-07-19'
 reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
-editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
+editorialNote: metaTitle and metaDescription rewritten 2026-07-19 (query-ledger C1 meta batch) after GSC+Bing CTR analysis; £300 director cap verified on-page.
 keyTakeaways:
   - "Each trivial benefit must cost £50 or less per person including VAT; if a single gift exceeds £50, the entire amount is taxable, not just the excess."
   - "Directors of close companies face a £300 annual cap on trivial benefits per tax year, and gifts to a director's family or household members count against that same cap."
