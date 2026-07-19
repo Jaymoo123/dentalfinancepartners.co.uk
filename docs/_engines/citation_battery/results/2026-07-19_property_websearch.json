@@ -1,0 +1,92 @@
+{
+  "site": "property",
+  "domain": "propertytaxpartners.co.uk",
+  "engine": "websearch-proxy",
+  "date": "2026-07-19",
+  "questions_source": "C:\\Users\\user\\Documents\\Accounting\\docs\\_engines\\citation_battery\\questions\\property.json",
+  "note": "Search-proxy baseline via WebSearch, not a true LLM-answer-engine probe.",
+  "results": [
+    {
+      "question": "What are the UK capital gains tax rates on residential property for 2026?",
+      "cited": true,
+      "our_urls_cited": [
+        "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained"
+      ],
+      "competitors_cited": [
+        "gov.uk",
+        "ukcapitalgainstaxcalculator.co.uk",
+        "realyield.co.uk",
+        "rossmartin.co.uk",
+        "ukcalculator.com"
+      ],
+      "notes": "We rank #2 behind gov.uk with a well-titled page (18% & 24%). Strong hit."
+    },
+    {
+      "question": "What are the HMRC CGT reporting deadlines for a property sale in 2026?",
+      "cited": true,
+      "our_urls_cited": [
+        "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-reporting-deadlines-property-2026"
+      ],
+      "competitors_cited": [
+        "brearleyandco.co.uk",
+        "ross-brooke.co.uk",
+        "att.org.uk",
+        "saffery.com",
+        "uklandlordtax.co.uk"
+      ],
+      "notes": "We are result #1. Strong hit."
+    },
+    {
+      "question": "What is the CGT annual exempt amount for 2026/27?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": [
+        "adviser.royallondon.com",
+        "salarytax.uk",
+        "ukcapitalgainstaxcalculator.co.uk",
+        "gov.uk",
+        "pocketwise.co.uk"
+      ],
+      "notes": "Generic allowance query dominated by calculator sites and gov.uk; no estate presence."
+    },
+    {
+      "question": "How does Section 24 mortgage interest relief work for UK landlords?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": [
+        "uklandlordtax.co.uk",
+        "simplybusiness.co.uk",
+        "axa.co.uk",
+        "landlordstudio.com",
+        "gofile.co.uk"
+      ],
+      "notes": "Core landlord topic, zero estate presence. uklandlordtax.co.uk takes two slots."
+    },
+    {
+      "question": "Should I incorporate my buy-to-let property portfolio into a limited company?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": [
+        "buyassociationgroup.com",
+        "solegal.co.uk",
+        "togethermoney.com",
+        "openrent.co.uk",
+        "thp.co.uk"
+      ],
+      "notes": "Legal firms, lenders and letting platforms dominate; no estate presence."
+    },
+    {
+      "question": "How much SDLT do I pay when transferring property to my own limited company?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": [
+        "jonathanlea.net",
+        "pkfsmithcooper.com",
+        "samconveyancing.co.uk",
+        "gov.uk",
+        "taxinsider.co.uk"
+      ],
+      "notes": "Law/conveyancing firms and gov.uk dominate; no estate presence. Note: results contain stale MDR advice (relief abolished June 2024)."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "domain": "propertytaxpartners.co.uk",
+  "source": "docs/_engines/query_ledgers/property_ledger.json (2026-07-17)",
+  "questions": [
+    "What are the UK capital gains tax rates on residential property for 2026?",
+    "What are the HMRC CGT reporting deadlines for a property sale in 2026?",
+    "What is the CGT annual exempt amount for 2026/27?",
+    "How does Section 24 mortgage interest relief work for UK landlords?",
+    "Should I incorporate my buy-to-let property portfolio into a limited company?",
+    "How much SDLT do I pay when transferring property to my own limited company?",
+    "What are the LBTT rates and the Additional Dwelling Supplement in Scotland in 2026?",
+    "What is the SDLT surcharge on a second home or buy-to-let in England?",
+    "When does Making Tax Digital become mandatory for landlords?",
+    "What is the best accounting software for UK landlords?",
+    "How is rental income taxed in the UK in 2026/27?",
+    "What tax do I pay when selling a buy-to-let property in the UK?",
+    "Can a limited company landlord deduct mortgage interest?"
+  ],
+  "site": "property",
+  "authored": "2026-07-19"
+}

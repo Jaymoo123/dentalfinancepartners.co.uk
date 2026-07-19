@@ -1,0 +1,52 @@
+{
+  "site": "generalist",
+  "domain": "hollowaydavies.co.uk",
+  "engine": "websearch-proxy",
+  "date": "2026-07-19",
+  "questions_source": "C:\\Users\\user\\Documents\\Accounting\\docs\\_engines\\citation_battery\\questions\\generalist.json",
+  "note": "Search-proxy baseline via WebSearch, not a true LLM-answer-engine probe.",
+  "results": [
+    {
+      "question": "What is the best construction accounting software for UK contractors?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["a-wise.co.uk", "pulse-accountants.co.uk", "tradesinfo.co.uk", "capterra.co.uk", "sage.com"],
+      "notes": "Accountancy-firm blogs and software directories dominate; tradetaxspecialists.co.uk absent despite CIS/trade focus."
+    },
+    {
+      "question": "What is the difference between ACCA and ICAEW?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["kaplan-learning.com", "learnsignal.com", "firstintuition.co.uk", "ikkaclasses.com", "renaix.com"],
+      "notes": "Tuition-provider and recruiter content dominates; niche unlikely winnable for an accountancy firm site."
+    },
+    {
+      "question": "What are the HMRC capital gains tax reporting requirements for 2026?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["litrg.org.uk", "bdo.co.uk", "att.org.uk", "rossmartin.co.uk", "mooresouth.co.uk"],
+      "notes": "Authority tax bodies plus mid-tier firm blogs; small-firm blogs (maynardjohns.com) do appear, so winnable niche."
+    },
+    {
+      "question": "What are the UK sole trader tax bands for 2026/27?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["theaccountancy.co.uk", "dnsassociates.co.uk", "uktaxutility.co.uk", "kitax.uk", "bytestart.co.uk"],
+      "notes": "Small accountancy sites and calculator tools rank; directly winnable with a 2026/27 rates page + calculator."
+    },
+    {
+      "question": "Xero vs QuickBooks: which is better for a UK small business?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["unbiased.co.uk", "outbooks.co.uk", "stewartaccounting.co.uk", "virtue-accountants.co.uk", "xero.com"],
+      "notes": "Small accountancy-firm comparison posts rank alongside vendors; winnable comparison-content format."
+    },
+    {
+      "question": "How much does a fixed fee accountant cost for a small limited company?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["stewartaccounting.co.uk", "morethanaccountants.co.uk", "swiftbooksaccounting.co.uk", "limitedcompanyhelp.com", "askaccountantsukltd.co.uk"],
+      "notes": "Entirely small UK firm blogs; high-intent pricing query, very winnable, but estate has no-pricing policy to consider."
+    }
+  ]
+}

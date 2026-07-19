@@ -1,0 +1,52 @@
+{
+  "site": "agency",
+  "domain": "agencyfounderfinance.co.uk",
+  "engine": "websearch-proxy",
+  "date": "2026-07-19",
+  "questions_source": "C:\\Users\\user\\Documents\\Accounting\\docs\\_engines\\citation_battery\\questions\\agency.json",
+  "note": "Search-proxy baseline via WebSearch, not a true LLM-answer-engine probe.",
+  "results": [
+    {
+      "question": "Do PR agencies need a specialist accountant?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["sidekickaccounting.co.uk", "apexaccountants.tax", "haysmac.com", "jamecogroup.com", "anchin.com"],
+      "notes": "Mix of UK specialist accountants and US firms; sidekickaccounting.co.uk holds the direct-answer UK slot. No estate presence."
+    },
+    {
+      "question": "What is the Annual Investment Allowance and how much is it?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["freeagent.com", "greenandco.com", "accaglobal.com", "propertycapitalallowance.com", "leyton.com"],
+      "notes": "Definitional query dominated by software/advisory glossaries; no gov.uk in top results surprisingly. No estate presence."
+    },
+    {
+      "question": "How do I calculate my Annual Investment Allowance claim?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["gov.uk", "taxscouts.com", "freeagent.com", "fundingoptions.com", "wellersaccountants.co.uk"],
+      "notes": "gov.uk capital-allowances page present; rest are glossary/guide pages. No estate presence."
+    },
+    {
+      "question": "What is the VAT threshold for a self-employed agency owner?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["crunch.co.uk", "gorillaaccounting.com", "lanop.co.uk", "merrantiaccounting.com", "dojo.tech"],
+      "notes": "Crunch takes two slots; UK contractor-accountant blogs dominate. No estate presence."
+    },
+    {
+      "question": "How should a creative agency handle its accounting?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["ramp.com", "sage.com", "acuity.co", "pearlaccountants.com", "sidekickaccounting.co.uk"],
+      "notes": "US-heavy software/CPA content plus UK pearlaccountants and sidekickaccounting. No estate presence."
+    },
+    {
+      "question": "Can a digital agency claim R&D tax credits?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["forrestbrown.co.uk", "irs.gov", "bdo.com", "adp.com", "kbkg.com"],
+      "notes": "Results skew heavily US (IRS/Form 6765); forrestbrown.co.uk is the lone UK-specific digital-agency R&D page. No estate presence."
+    }
+  ]
+}

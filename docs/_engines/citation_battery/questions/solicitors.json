@@ -1,0 +1,20 @@
+{
+  "domain": "accountsforlawyers.co.uk",
+  "source": "docs/_engines/query_ledgers/solicitors_ledger.json (2026-07-17)",
+  "questions": [
+    "What do specialist accountants for solicitors actually do?",
+    "What are the SRA Accounts Rules that law firms must follow?",
+    "Can a solicitor hold client money in the business account?",
+    "How do I value a law firm in the UK?",
+    "How do I value a partnership interest in a law firm?",
+    "How much should solicitors charge for conveyancing in 2026?",
+    "How is a law firm LLP taxed in the UK?",
+    "What accounting services does a small law firm need?",
+    "How should a law firm manage cash flow?",
+    "Do barristers need a specialist accountant?",
+    "What is a client account reconciliation under the SRA rules?",
+    "How is VAT applied to legal services and disbursements?"
+  ],
+  "site": "solicitors",
+  "authored": "2026-07-19"
+}

@@ -1,0 +1,58 @@
+{
+  "site": "dentists",
+  "domain": "dentalfinancepartners.co.uk",
+  "engine": "websearch-proxy",
+  "date": "2026-07-19",
+  "questions_source": "C:\\Users\\user\\Documents\\Accounting\\docs\\_engines\\citation_battery\\questions\\dentists.json",
+  "note": "Search-proxy baseline via WebSearch, not a true LLM-answer-engine probe.",
+  "results": [
+    {
+      "question": "Why do dentists need a specialist dental accountant?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["a2zaccounting.co.uk", "shawgibbs.com", "qaccounting.com", "adanews.ada.org", "schiffcpa.com"],
+      "notes": "US CPA content dominates; UK slots taken by a2z, Shaw Gibbs, QAccounting. Core commercial query, we are absent."
+    },
+    {
+      "question": "What are the current NHS UDA rates in England?",
+      "cited": true,
+      "our_urls_cited": [
+        "https://www.dentalfinancepartners.co.uk/blog/practice-finance/nhs-uda-rates-2026-27-practice-finances",
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/band-1-band-2-band-3-uda-treatment-explained",
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists"
+      ],
+      "competitors_cited": ["elev8searchgroup.co.uk", "theukcatpeople.co.uk", "bda.org", "nhsbsa.nhs.uk", "england.nhs.uk"],
+      "notes": "Strong hit: 3 of our URLs in results and our figures used in the synthesized answer."
+    },
+    {
+      "question": "How do I check the UDA value of my NHS dental contract?",
+      "cited": true,
+      "our_urls_cited": [
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists"
+      ],
+      "competitors_cited": ["bda.org", "theukcatpeople.co.uk", "dentpulse.com", "udapulse.co.uk", "nhsbsa.net"],
+      "notes": "Hit at ~position 3; BDA checker leads. Our page contributed the divide-contract-value-by-UDA-target method."
+    },
+    {
+      "question": "How much is my dental practice worth in the UK?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["ft-associates.com", "samera.co.uk", "eclipsecf.com", "dentistry.co.uk", "practicetransitionsgroup.com"],
+      "notes": "UK brokers/finance firms own this; mixed with US results. High-value query, we are absent."
+    },
+    {
+      "question": "What tax do I pay when selling a dental practice?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["merceradvisors.com", "largepracticesales.com", "ada.org", "professionaltransition.com", "ctc-associates.com"],
+      "notes": "Results entirely US (IRC 1060, US CGT rates); no UK BADR/CGT content surfaced at all. Open UK gap."
+    },
+    {
+      "question": "Should a dental associate work as a sole trader or limited company?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["dentistswhoinvest.com", "hivebusiness.co.uk", "samera.co.uk", "smallbizaccounts.co.uk", "djh.co.uk"],
+      "notes": "UK dental accountants dominate (incl. DJH). Core associate query, we are absent."
+    }
+  ]
+}

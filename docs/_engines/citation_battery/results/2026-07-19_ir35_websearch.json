@@ -1,0 +1,52 @@
+{
+  "site": "ir35",
+  "domain": "contractortaxaccountants.co.uk",
+  "engine": "websearch-proxy",
+  "date": "2026-07-19",
+  "questions_source": "C:\\Users\\user\\Documents\\Accounting\\docs\\_engines\\citation_battery\\questions\\ir35.json",
+  "note": "Search-proxy baseline via WebSearch, not a true LLM-answer-engine probe.",
+  "results": [
+    {
+      "question": "What is IR35 and how do the off-payroll working rules work?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["gov.uk", "contractoruk.com", "itcontracting.com", "kingsbridge.co.uk", "pinsentmasons.com"],
+      "notes": "GOV.UK holds 2 slots; contractor-media (ContractorUK, ITContracting) and insurers dominate. No estate presence."
+    },
+    {
+      "question": "How do I know if my contract is inside or outside IR35?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["crunch.co.uk", "goqdos.com", "contractorcalculator.co.uk", "simplybusiness.co.uk", "lanop.co.uk"],
+      "notes": "Accountancy firms and IR35 insurers own this SERP; several small accountancy sites (wisaccountancy, lanop, bluerocket) rank, so winnable for a niche accountant."
+    },
+    {
+      "question": "Limited company vs umbrella: which is better for a UK contractor?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["parasolgroup.co.uk", "itcontracting.com", "unbiased.co.uk", "contractoruk.com", "contractoradviceuk.net"],
+      "notes": "Umbrella providers and contractor-media dominate; no estate presence."
+    },
+    {
+      "question": "How much take-home pay does a contractor keep inside IR35 vs outside?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["contractorcalculator.co.uk", "employerscalculator.co.uk", "uksalarycalculator.io", "caroola.com", "goforma.com"],
+      "notes": "Calculator-tool pages dominate entirely; a take-home comparison calculator would be the entry route, not an article."
+    },
+    {
+      "question": "What is a deemed employment payment?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["gov.uk", "contractoruk.com", "accaglobal.com", "croneri.co.uk", "tolley.co.uk"],
+      "notes": "GOV.UK + professional tax libraries (Croner-i, Tolley, ACCA) dominate, but one small contractor accountant (bradleyscontractors) ranks, so a strong explainer is winnable."
+    },
+    {
+      "question": "How reliable is HMRC's CEST tool for IR35 status?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["goqdos.com", "gov.uk", "itcontracting.com", "computerweekly.com", "grantthornton.co.uk"],
+      "notes": "Qdos holds 2 slots; opinion/critique SERP with news and niche IR35 blogs (ir35update, cocomply), so winnable with a data-led critique piece."
+    }
+  ]
+}

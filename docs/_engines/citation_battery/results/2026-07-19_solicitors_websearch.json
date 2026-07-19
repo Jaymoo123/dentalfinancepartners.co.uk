@@ -1,0 +1,52 @@
+{
+  "site": "solicitors",
+  "domain": "accountsforlawyers.co.uk",
+  "engine": "websearch-proxy",
+  "date": "2026-07-19",
+  "questions_source": "C:\\Users\\user\\Documents\\Accounting\\docs\\_engines\\citation_battery\\questions\\solicitors.json",
+  "note": "Search-proxy baseline via WebSearch, not a true LLM-answer-engine probe.",
+  "results": [
+    {
+      "question": "What do specialist accountants for solicitors actually do?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["icaew.com", "wrpartners.co.uk", "hawsons.co.uk", "coveneynicholls.co.uk", "onyx.accountants"],
+      "notes": "Head service-page query for the site's core offer; results dominated by ICAEW plus mid-size accountancy firm service pages. We are absent."
+    },
+    {
+      "question": "What are the SRA Accounts Rules that law firms must follow?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["sra.org.uk", "mmba.co.uk", "lexisnexis.co.uk", "jayvaglobal.com", "lawfirmambition.co.uk"],
+      "notes": "Regulator (SRA) and LexisNexis dominate; secondary guides from accountancy/legal-tech blogs. Hard to displace regulator but guide-slot is winnable."
+    },
+    {
+      "question": "Can a solicitor hold client money in the business account?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["sra.org.uk", "lawsociety.org.uk", "gov.uk", "dunkleys.accountants", "clio.com"],
+      "notes": "Regulator/gov/Law Society own it; one accountancy firm (Dunkley's) blog ranks, showing accountant content can place on this query."
+    },
+    {
+      "question": "How do I value a law firm in the UK?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["armstrongwatson.co.uk", "jonathanfagan.co.uk", "verusuk.com", "lexisnexis.co.uk", "clio.com"],
+      "notes": "Accountancy firms and legal M&A brokers rank; no regulator lock-in. High-value winnable query for us."
+    },
+    {
+      "question": "How do I value a partnership interest in a law firm?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["leanlaw.co", "quora.com", "natlawreview.com", "wealthspire.com", "artesaniaccounting.com"],
+      "notes": "Results are almost entirely US-oriented (capital accounts, IOLTA context); no strong UK answer exists. Weak SERP, very winnable with a UK-specific page."
+    },
+    {
+      "question": "How much should solicitors charge for conveyancing in 2026?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["taylor-rose.co.uk", "hoa.org.uk", "howellslegal.co.uk", "homewardlegal.co.uk", "reallymoving.com"],
+      "notes": "Consumer-side conveyancing-cost SERP owned by conveyancers/comparison sites; firm-side pricing-strategy angle (our audience) is uncontested."
+    }
+  ]
+}

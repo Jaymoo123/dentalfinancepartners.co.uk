@@ -1,0 +1,20 @@
+{
+  "domain": "medicalaccounts.co.uk",
+  "source": "docs/_engines/query_ledgers/medical_ledger.json (2026-07-17)",
+  "questions": [
+    "Why do GPs need a specialist medical accountant?",
+    "How do GP partnership accounts and profit shares work?",
+    "How much does it cost to buy into a GP partnership?",
+    "How is GP partnership goodwill valued?",
+    "What is the NHS pension annual allowance for doctors in 2026/27?",
+    "How does the tapered annual allowance affect NHS consultants?",
+    "What is Scheme Pays and should a doctor use it?",
+    "How does the McCloud remedy affect a doctor's annual allowance?",
+    "Should a locum doctor use a limited company or an umbrella?",
+    "What expenses can a doctor claim on their UK tax return?",
+    "What does becoming a GP partner mean financially?",
+    "How does IR35 apply to locum doctors?"
+  ],
+  "site": "medical",
+  "authored": "2026-07-19"
+}

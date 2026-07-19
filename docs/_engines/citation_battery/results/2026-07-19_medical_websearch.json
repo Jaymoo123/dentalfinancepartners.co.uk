@@ -1,0 +1,52 @@
+{
+  "site": "medical",
+  "domain": "medicalaccounts.co.uk",
+  "engine": "websearch-proxy",
+  "date": "2026-07-19",
+  "questions_source": "C:\\Users\\user\\Documents\\Accounting\\docs\\_engines\\citation_battery\\questions\\medical.json",
+  "note": "Search-proxy baseline via WebSearch, not a true LLM-answer-engine probe.",
+  "results": [
+    {
+      "question": "Why do GPs need a specialist medical accountant?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["lovewell-blake.co.uk", "nicholsmedical.co.uk", "pricebailey.co.uk", "ramsaybrown.com", "yorkshiremedicalaccountants.co.uk"],
+      "notes": "Money question for the site; results dominated by established specialist medical accountancy firms. We are absent."
+    },
+    {
+      "question": "How do GP partnership accounts and profit shares work?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["larking-gowen.co.uk", "dains.com", "lawinsider.com", "carta.com"],
+      "notes": "Query ambiguous with GP=general partner in finance; half the results are US private-fund content. Only larking-gowen and dains are true medical-accountancy competitors. Winnable with a tightly-targeted page."
+    },
+    {
+      "question": "How much does it cost to buy into a GP partnership?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["medicsmoney.co.uk", "rangewell.com", "ballardsllp.com", "wesleyan.co.uk", "samera.co.uk"],
+      "notes": "Medics Money holds the exact-match title. Our buy-in/parity blog post exists (see Q4 hit) but does not surface for the cost phrasing."
+    },
+    {
+      "question": "How is GP partnership goodwill valued?",
+      "cited": true,
+      "our_urls_cited": ["https://www.medicalaccounts.co.uk/blog/buying-into-gp-partnership-capital-parity-explained"],
+      "competitors_cited": ["rangewell.com", "bennettbriegal.co.uk", "pulsetoday.co.uk", "weightmans.com"],
+      "notes": "HIT at position 2 and content actively used in the answer synthesis (nil-goodwill / net-assets framing). Strong result."
+    },
+    {
+      "question": "What is the NHS pension annual allowance for doctors in 2026/27?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["bma.org.uk", "nhsbsa.nhs.uk", "affinityadvice.co.uk", "reflexaccounting.co.uk", "professionalmedicalfinance.co.uk"],
+      "notes": "BMA/NHSBSA plus IFAs and Reflex Accounting own this. Reflex (our partner) appears; we do not."
+    },
+    {
+      "question": "How does the tapered annual allowance affect NHS consultants?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["commonslibrary.parliament.uk", "nhsbsa.nhs.uk", "bma.org.uk", "reflexaccounting.co.uk"],
+      "notes": "Authority-heavy SERP (Parliament, NHSBSA, BMA). Hard target; Reflex again present among commercial results."
+    }
+  ]
+}

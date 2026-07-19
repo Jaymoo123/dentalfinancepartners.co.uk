@@ -51,6 +51,8 @@ secrets/
 # Committed data snapshots the research-index pages import at build time
 # (all sites; small non-secret JSONs, required for CI typecheck + Vercel builds)
 !*/web/src/data/*.json
+# Citation battery questions + results (non-secret docs record)
+!docs/_engines/citation_battery/**/*.json
 
 # Logs
 *.log

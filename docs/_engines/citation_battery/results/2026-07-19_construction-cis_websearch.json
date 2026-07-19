@@ -1,0 +1,52 @@
+{
+  "site": "construction-cis",
+  "domain": "tradetaxspecialists.co.uk",
+  "engine": "websearch-proxy",
+  "date": "2026-07-19",
+  "questions_source": "C:\\Users\\user\\Documents\\Accounting\\docs\\_engines\\citation_battery\\questions\\construction-cis.json",
+  "note": "Search-proxy baseline via WebSearch, not a true LLM-answer-engine probe.",
+  "results": [
+    {
+      "question": "Do roofers need a specialist accountant?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["advantage.cpa", "busybeeadvisors.com", "hookagency.com", "jccastleaccounting.com", "bench.co"],
+      "notes": "Results dominated by US CPA firms; UK intent poorly served, arguably winnable if UK results surface, but search proxy is US-weighted."
+    },
+    {
+      "question": "How do CIS subcontractors claim a tax refund?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["gov.uk", "tax2u.co.uk", "gosimpletax.com", "bettertax.org", "livingstonesaccountants.co.uk"],
+      "notes": "Strong UK SERP: GOV.UK plus refund specialists and small accountancy firms. Core CIS money query, no estate presence."
+    },
+    {
+      "question": "How does self assessment work for CIS subcontractors?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["gov.uk", "gofile.co.uk", "litrg.org.uk", "accountingpeople.co.uk", "finistry.co.uk"],
+      "notes": "Small UK accountancy sites rank alongside GOV.UK/LITRG; several low-authority domains present, looks winnable."
+    },
+    {
+      "question": "What are the CIS deduction rates in the UK?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["gov.uk", "gofile.co.uk", "riftrefunds.co.uk", "crunch.co.uk", "accountingpeople.co.uk"],
+      "notes": "20/30/0% rates query; mix of GOV.UK and niche CIS guides incl. very small domains (build-scope.co.uk, swiftacc.org.uk). Winnable."
+    },
+    {
+      "question": "What is Gross Payment Status and how do I qualify?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["gov.uk", "expandaccounts.co.uk", "pgraccountants.com", "pandle.com", "blackandwhiteaccounting.co.uk"],
+      "notes": "Small UK accountancy blogs dominate below GOV.UK; some US noise (USPTO, ADP). Winnable query."
+    },
+    {
+      "question": "Is there free software for filing CIS returns?",
+      "cited": false,
+      "our_urls_cited": [],
+      "competitors_cited": ["gofile.co.uk", "xero.com", "planyard.com", "riftrefunds.co.uk", "theaccountancy.co.uk"],
+      "notes": "Software vendors dominate (Xero, GoFile, Planyard); commercial intent, harder for a services site without a tool page."
+    }
+  ]
+}

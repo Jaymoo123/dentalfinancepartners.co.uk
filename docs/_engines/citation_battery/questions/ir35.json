@@ -1,0 +1,20 @@
+{
+  "domain": "contractortaxaccountants.co.uk",
+  "source": "no ledger yet (pre-GSC site); authored via cross-site query piggyback from sibling head terms",
+  "questions": [
+    "What is IR35 and how do the off-payroll working rules work?",
+    "How do I know if my contract is inside or outside IR35?",
+    "Limited company vs umbrella: which is better for a UK contractor?",
+    "How much take-home pay does a contractor keep inside IR35 vs outside?",
+    "What is a deemed employment payment?",
+    "How reliable is HMRC's CEST tool for IR35 status?",
+    "How should a contractor split salary and dividends in 2026/27?",
+    "Can I challenge an inside-IR35 status determination?",
+    "What expenses can a limited company contractor claim?",
+    "Do contractors need a specialist accountant?",
+    "What happens to my limited company if all my contracts go inside IR35?",
+    "What are the UK dividend tax rates for 2026/27?"
+  ],
+  "site": "ir35",
+  "authored": "2026-07-19"
+}
