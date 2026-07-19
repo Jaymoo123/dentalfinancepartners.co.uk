@@ -113,6 +113,8 @@ the reference implementation: `scripts/meta_property_ledger.py` +
     overwrite `metaTitle_prev` (prior generation survives only in git).
 12. Re-run analysis no sooner than 32d post-ship (28d window + grace).
 
+- **2026-07-19 Property v2 first run (shipped + deployed same day)**: v2 change-aware analysis (see methodology section) on 526 recorded interventions — all causally unjudgeable (site too young at edit time, cascading waves; placebo clean). Real finding: benign Google dedup prune (23 pages "Crawled - currently not indexed", Bing unaffected, clicks 51->162/wk through the prune) — diagnosis `docs/property/COLLAPSE_DIAGNOSIS_2026-07-19.md`. Shipped: 4 meta pairs (of 6 written; 2 banked on collapsed pages) via new `META_APPLY_SKIP_STAMP=1` env flag on `meta_apply.py` (title/desc/_prev only — USE THIS FOR ALL PROPERTY APPLIES), + generic recategorisation 301 in Property middleware. Live-verified, IndexNow'd (10 URLs). Owner manual: 5-URL Request Indexing list in the diagnosis doc. Re-analyse >=2026-08-20 via `scripts/meta_property_analysis.py`.
+
 ## Per-site onboarding
 
 A site joins the program when: it has a `sites` row (active), GSC + Bing data flowing (ingestion commands above), its content dir resolves in `scripts/meta_worklist.py` (`_resolve_content_dir`), and `register_monitored_batch.py` knows its blog dir + prod domain (sites/<site>.json or the `_SITE_FALLBACK` map). Contractors-ir35: add once it has impressions.

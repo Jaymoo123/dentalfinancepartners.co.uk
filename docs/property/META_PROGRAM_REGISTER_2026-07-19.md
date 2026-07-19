@@ -2,7 +2,7 @@
 
 Change-aware v2 analysis (methodology: `docs/_engines/SERP_META_PROGRAM.md`,
 "Analysis methodology v2"). Data: GSC to 2026-07-17 (fresh), Bing 2026-07-17
-(directional only). **Nothing has been applied — proposals await owner word.**
+(directional only). **UPDATE 2026-07-19 (later same day): owner approved; the 4 ship-ready proposals + recategorisation 301 are SHIPPED, DEPLOYED and live-verified.** See COLLAPSE_DIAGNOSIS_2026-07-19.md for the ship log. The 2 banked proposals remain held.
 
 ## 1. Verdict on past meta work (the honest answer)
 
@@ -97,7 +97,7 @@ skips: `proposals_skipped.json`; QA: `qa_verdicts.json`.
   needs a stamp-skip flag before any Property apply (do NOT run as-is).
 - Serialisation: no meta batch while another Property wave is in flight.
 
-## 6. To apply the 4 ship-ready proposals (after owner word)
+## 6. Apply runbook (EXECUTED 2026-07-19; kept for the next batch)
 
 1. Add stamp-skip to `optimisation_engine/apply/meta_only.py` (title/desc/_prev only).
 2. Trim proposals.json to the 4 alive slugs.
