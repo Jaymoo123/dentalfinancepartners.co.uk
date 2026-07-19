@@ -58,6 +58,9 @@ export function LeadForm({
   // Step-1 values persist across the step switch (step 1 fields unmount).
   const [role, setRole] = useState("");
   const [message, setMessage] = useState("");
+  const [situation, setSituation] = useState("");
+  const [prompted, setPrompted] = useState("");
+  const [callGoal, setCallGoal] = useState("");
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -150,6 +153,11 @@ export function LeadForm({
     track("form_step_complete", { form_id: FORM_ID, step: 2, step_id: "your_details" });
 
     // LD-05: stitch visitor + session ids so each lead links to its analytics trail.
+    const extrasRaw: Record<string, string> = {};
+    if (situation.trim()) extrasRaw.situation = situation.trim();
+    if (prompted.trim()) extrasRaw.prompted = prompted.trim();
+    if (callGoal.trim()) extrasRaw.callGoal = callGoal.trim();
+
     const result = await submitSiteLead(
       {
         full_name: fullName.trim(),
@@ -165,6 +173,7 @@ export function LeadForm({
         consent_at: new Date().toISOString(),
         visitor_id: getVisitorId() ?? undefined,
         session_id: getSessionId() ?? undefined,
+        ...(Object.keys(extrasRaw).length > 0 ? { extras: extrasRaw } : {}),
       },
       honeypotValue,
     );
@@ -256,6 +265,62 @@ export function LeadForm({
               <p id="message-error" className={errorClass}>{fieldErrors.message}</p>
             )}
           </div>
+
+          <details className="rounded-lg border border-neutral-200 bg-[#fafaf9]">
+            <summary className="cursor-pointer select-none px-4 py-3 text-sm font-medium text-neutral-500 hover:text-neutral-900">
+              Optional: a bit more detail (helps us prepare)
+            </summary>
+            <div className="space-y-4 px-4 pb-4 pt-2">
+              <div>
+                <label htmlFor="situation" className={labelClass}>
+                  Your charity&apos;s situation
+                </label>
+                <textarea
+                  id="situation"
+                  name="situation"
+                  rows={3}
+                  maxLength={600}
+                  value={situation}
+                  onChange={(e) => setSituation(e.target.value)}
+                  className={`${fieldClass} resize-y`}
+                  onFocus={() => onFieldFocus("situation")}
+                  onBlur={(e) => onFieldBlur("situation", !!e.target.value)}
+                />
+              </div>
+              <div>
+                <label htmlFor="prompted" className={labelClass}>
+                  What has prompted this now?
+                </label>
+                <textarea
+                  id="prompted"
+                  name="prompted"
+                  rows={3}
+                  maxLength={600}
+                  value={prompted}
+                  onChange={(e) => setPrompted(e.target.value)}
+                  className={`${fieldClass} resize-y`}
+                  onFocus={() => onFieldFocus("prompted")}
+                  onBlur={(e) => onFieldBlur("prompted", !!e.target.value)}
+                />
+              </div>
+              <div>
+                <label htmlFor="callGoal" className={labelClass}>
+                  What would make a call worthwhile?
+                </label>
+                <textarea
+                  id="callGoal"
+                  name="callGoal"
+                  rows={3}
+                  maxLength={600}
+                  value={callGoal}
+                  onChange={(e) => setCallGoal(e.target.value)}
+                  className={`${fieldClass} resize-y`}
+                  onFocus={() => onFieldFocus("callGoal")}
+                  onBlur={(e) => onFieldBlur("callGoal", !!e.target.value)}
+                />
+              </div>
+            </div>
+          </details>
 
           <button type="button" onClick={goToStep2} className={btnClass}>
             Continue

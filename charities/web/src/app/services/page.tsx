@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { charityServices } from "@/data/charity-services";
+import { serviceTiers } from "@/config/service-tiers";
 
 export const metadata: Metadata = {
   title: { absolute: "Charity Accounting Services | Trustee Tax" },
@@ -38,6 +40,22 @@ export default function ServicesPage() {
       </section>
 
       <section className="border-t border-neutral-200 bg-white py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">
+              Three service tiers
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-neutral-600">
+              Sized around the scrutiny obligations that apply at each income level. Start on the tier that fits your charity now and move when your circumstances change.
+            </p>
+          </div>
+          <div className="mt-10">
+            <ServiceTiers tiers={serviceTiers} featuredBadge="Most popular" />
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-neutral-200 bg-[#fafaf9] py-16 sm:py-20">
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Not sure which service you need?</h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-600">

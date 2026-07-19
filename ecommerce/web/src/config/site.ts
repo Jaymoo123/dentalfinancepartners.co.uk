@@ -8,8 +8,8 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
 const partner = niche.partner;
 
 const leadConsentText = partner
-  ? `I agree to my details being shared by ${niche.display_name} with our specialist partner firm ${partner.name}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice.`
-  : `I agree to ${niche.display_name} using my details to respond to my enquiry and provide the advice I have requested.`;
+  ? `I agree to my details being shared by ${niche.display_name} with our specialist partner firm ${partner.name}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice, including contacting me about it by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`
+  : `I agree to ${niche.display_name} using my details to respond to my enquiry and provide the advice I have requested, including contacting me about it by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`;
 
 export const siteConfig = {
   name: niche.display_name,

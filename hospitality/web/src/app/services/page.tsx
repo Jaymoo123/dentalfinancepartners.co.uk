@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { hospitalityServices } from "@/data/hospitality-services";
+import { serviceTiers } from "@/config/service-tiers";
 
 export const metadata: Metadata = {
   title: { absolute: "Hospitality Accounting Services | Hospitality Tax" },
@@ -25,6 +27,19 @@ export default function ServicesPage() {
 
       <section className="bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">
+              Three service tiers
+            </h2>
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-600">
+              Start with annual compliance, add tronc and management accounts as you grow, move to specialist advisory when you are expanding or planning a sale.
+            </p>
+            {/* ponytail: CSS custom property sets brand colour for ServiceTiers without extra deps */}
+            <div className="mt-8" style={{ "--brand-primary": "#b0532f" } as Record<string, string>}>
+              <ServiceTiers tiers={serviceTiers} featuredBadge="Most popular" />
+            </div>
+          </div>
+
           <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
             {hospitalityServices.map((service) => (
               <Link key={service.slug} href={`/services/${service.slug}`} className="group block bg-white border border-neutral-200 p-6 sm:p-8 shadow-sm hover:shadow-md hover:border-[#b0532f] transition-all">
