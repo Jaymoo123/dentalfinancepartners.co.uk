@@ -13,6 +13,9 @@ import {
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { SignupForm } from "@/components/newsletter/SignupForm";
 import { ArrowRight } from "lucide-react";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
+import { serviceTiers, siteStats } from "@/config/service-tiers";
 
 const META_TITLE = "Small Business Accountants UK | Holloway Davies";
 const META_DESC =
@@ -350,6 +353,26 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* 2b. STATS BAR */}
+      <section className="bg-[#fafaf7] border-b border-neutral-200">
+        <div className={siteContainerLg}>
+          <StatsBar stats={siteStats} />
+        </div>
+      </section>
+
+      {/* 2c. HOW WE CAN HELP — service tiers */}
+      <section className={`${sectionY} bg-[#fafaf7] border-t border-neutral-200`}>
+        <div className={siteContainerLg}>
+          <p className="font-mono text-xs uppercase tracking-widest text-orange-500">
+            How we can help
+          </p>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl mb-10">
+            From self-serve tools to a full annual engagement.
+          </h2>
+          <ServiceTiers tiers={serviceTiers} featuredBadge="Most Popular" />
         </div>
       </section>
 

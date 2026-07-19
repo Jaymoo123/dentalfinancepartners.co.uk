@@ -103,7 +103,9 @@
     "./leads/ResultGateModal": "./leads/ResultGateModal.tsx",
     "./leads/CalcResultCta": "./leads/CalcResultCta.tsx",
     "./leads/MobileToolSlot": "./leads/MobileToolSlot.tsx",
-    "./content/blog-splits": "./content/blog-splits.ts"
+    "./content/blog-splits": "./content/blog-splits.ts",
+    "./components/ServiceTiers": "./components/ServiceTiers.tsx",
+    "./components/StatsBar": "./components/StatsBar.tsx"
   },
   "optionalPeerDependencies": {
     "@microsoft/clarity": ">=1",

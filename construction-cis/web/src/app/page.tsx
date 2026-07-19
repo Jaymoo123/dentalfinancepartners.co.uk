@@ -23,6 +23,9 @@ import { tradeTypes } from "@/data/trade-types";
 import { buildFaqJsonLd } from "@/lib/schema";
 import { UnionJack } from "@/components/brand/UnionJack";
 import { HeroOffer } from "@/components/intent/HeroOffer";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
+import { serviceTiers, siteStats } from "@/config/service-tiers";
 
 export const metadata: Metadata = {
   title: "CIS Accountants & Construction Tax Specialists | UK",
@@ -225,6 +228,13 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Stats bar */}
+      <section className="bg-[#fafaf9] py-8 sm:py-10">
+        <div className={siteContainerLg}>
+          <StatsBar stats={siteStats} />
+        </div>
+      </section>
+
       {/* Testimonials */}
       <section className="bg-neutral-50 py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
         <div className={siteContainerLg}>
@@ -317,6 +327,22 @@ export default function HomePage() {
               View all services
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Service tiers */}
+      <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+            <div className="section-label mb-4">How we work</div>
+            <h2 className="text-2xl font-bold text-neutral-900 sm:text-4xl">
+              From free tools to full CIS accounting.
+            </h2>
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-neutral-600">
+              Start with our free calculators or speak to us directly. Fixed fees, no surprises.
+            </p>
+          </div>
+          <ServiceTiers tiers={serviceTiers} featuredBadge="Most Popular" />
         </div>
       </section>
 

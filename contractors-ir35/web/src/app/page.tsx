@@ -22,6 +22,9 @@ import {
   Receipt,
 } from "lucide-react";
 import { contractorTypes } from "@/data/contractor-types";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
+import { serviceTiers, siteStats } from "@/config/service-tiers";
 
 export const metadata: Metadata = {
   title: "Specialist Contractor Accountants | IR35 Advice UK",
@@ -316,6 +319,13 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Stats bar */}
+      <section className="border-b border-neutral-200 bg-[#fafaf7] py-8 sm:py-10">
+        <div className={siteContainerLg}>
+          <StatsBar stats={siteStats} />
+        </div>
+      </section>
+
       {/* Contractor types */}
       <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
@@ -416,6 +426,16 @@ export default function HomePage() {
               IR35 rules, PSC dividends, the 24-month travel rule, off-payroll working. We see these issues every week, so we know where the risks and opportunities are.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Service tiers */}
+      <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <h2 className="mb-8 text-center text-2xl font-bold text-neutral-900 sm:text-3xl lg:text-4xl">
+            How we can help
+          </h2>
+          <ServiceTiers tiers={serviceTiers} featuredBadge="Most common" />
         </div>
       </section>
 

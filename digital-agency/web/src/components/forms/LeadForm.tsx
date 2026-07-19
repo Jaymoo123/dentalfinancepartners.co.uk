@@ -40,6 +40,9 @@ export function LeadForm({
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
   const [consent, setConsent] = useState(false);
+  const [situation, setSituation] = useState("");
+  const [prompted, setPrompted] = useState("");
+  const [callGoal, setCallGoal] = useState("");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -114,6 +117,11 @@ export function LeadForm({
     trackFormSubmit(completedCount);
 
     // LD-05: stitch visitor + session ids so each lead row links to its analytics events.
+    const extrasRaw: Record<string, string> = {};
+    if (situation.trim()) extrasRaw.situation = situation.trim();
+    if (prompted.trim()) extrasRaw.prompted = prompted.trim();
+    if (callGoal.trim()) extrasRaw.callGoal = callGoal.trim();
+
     const payload = {
       full_name: String(data.get("fullName") || "").trim(),
       email: String(data.get("email") || "").trim(),
@@ -128,6 +136,7 @@ export function LeadForm({
       consent_at: new Date().toISOString(),
       visitor_id: getVisitorId() ?? undefined,
       session_id: getSessionId() ?? undefined,
+      ...(Object.keys(extrasRaw).length > 0 ? { extras: extrasRaw } : {}),
     };
 
     const result = await submitAffLead(payload, honeypotValue);
@@ -143,6 +152,9 @@ export function LeadForm({
     onLead({ role: payload.role });
     form.reset();
     setConsent(false);
+    setSituation("");
+    setPrompted("");
+    setCallGoal("");
 
     if (redirectOnSuccess) {
       setTimeout(() => {
@@ -294,6 +306,57 @@ export function LeadForm({
           </p>
         )}
       </div>
+
+      <details className="group border border-slate-200 rounded-lg">
+        <summary className="cursor-pointer px-4 py-3 text-sm font-semibold text-slate-700 select-none list-none flex items-center justify-between">
+          Optional: a bit more detail (helps us prepare)
+          <span className="text-slate-400 group-open:rotate-180 transition-transform text-xs">▼</span>
+        </summary>
+        <div className="px-4 pb-4 space-y-4 pt-2">
+          <div>
+            <label htmlFor="situation" className="block text-sm font-semibold text-slate-900">Your situation</label>
+            <textarea
+              id="situation"
+              name="situation"
+              rows={3}
+              maxLength={600}
+              value={situation}
+              onChange={(e) => setSituation(e.target.value)}
+              className={fieldClass}
+              onFocus={() => onFieldFocus("situation")}
+              onBlur={(e) => onFieldBlur("situation", !!e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="prompted" className="block text-sm font-semibold text-slate-900">{"What's prompted this now?"}</label>
+            <textarea
+              id="prompted"
+              name="prompted"
+              rows={3}
+              maxLength={600}
+              value={prompted}
+              onChange={(e) => setPrompted(e.target.value)}
+              className={fieldClass}
+              onFocus={() => onFieldFocus("prompted")}
+              onBlur={(e) => onFieldBlur("prompted", !!e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="callGoal" className="block text-sm font-semibold text-slate-900">What would make a call worthwhile?</label>
+            <textarea
+              id="callGoal"
+              name="callGoal"
+              rows={3}
+              maxLength={600}
+              value={callGoal}
+              onChange={(e) => setCallGoal(e.target.value)}
+              className={fieldClass}
+              onFocus={() => onFieldFocus("callGoal")}
+              onBlur={(e) => onFieldBlur("callGoal", !!e.target.value)}
+            />
+          </div>
+        </div>
+      </details>
 
       <div>
         <label htmlFor="consent" className="flex items-start gap-3 text-xs leading-relaxed text-slate-600">

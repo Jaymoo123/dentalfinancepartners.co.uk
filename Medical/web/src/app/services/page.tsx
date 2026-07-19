@@ -6,6 +6,9 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 import { JsonLd, buildServicePageSchema } from "@/lib/schema";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
+import { serviceTiers, siteStats } from "@/config/service-tiers";
 
 export const metadata: Metadata = {
   title: "Medical Accounting Services | GP Tax, NHS Pension Planning & Locum Tax Returns",
@@ -93,7 +96,10 @@ export default function ServicesPage() {
         <h1 className="font-serif text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
           Medical accounting services for UK doctors
         </h1>
-        <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+        <div className="mt-8">
+          <StatsBar stats={siteStats} />
+        </div>
+        <p className="mt-8 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
           Specialist accounting and tax support for GPs, consultants, locums and practice owners across the UK. From essential compliance to strategic planning, our medical accounting services are designed specifically for the healthcare sector. Whether you're a GP partner navigating NHS pension complexities, a locum doctor managing multiple income streams, or a consultant considering private practice incorporation, our GP accountants provide sector-specific expertise that generalist firms simply cannot match.
         </p>
         <p className="mt-4 text-base leading-relaxed text-[var(--muted)]">
@@ -200,6 +206,18 @@ export default function ServicesPage() {
               </li>
             ))}
           </ul>
+        </section>
+
+        <section className="mt-12 sm:mt-16">
+          <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">
+            How we work with you
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
+            From free self-serve tools to full-service medical accounting.
+          </p>
+          <div className="mt-6">
+            <ServiceTiers tiers={serviceTiers} featuredBadge="Most popular" />
+          </div>
         </section>
 
         <div className="mt-12 space-y-8 sm:mt-16 sm:space-y-10">

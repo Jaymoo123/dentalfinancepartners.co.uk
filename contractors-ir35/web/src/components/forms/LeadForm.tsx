@@ -42,6 +42,9 @@ export function LeadForm({
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
   const [consent, setConsent] = useState(false);
+  const [situation, setSituation] = useState("");
+  const [prompted, setPrompted] = useState("");
+  const [callGoal, setCallGoal] = useState("");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -131,6 +134,15 @@ export function LeadForm({
       consent_at: new Date().toISOString(),
       visitor_id: getVisitorId() ?? undefined,
       session_id: getSessionId() ?? undefined,
+      ...(situation.trim() || prompted.trim() || callGoal.trim()
+        ? {
+            extras: {
+              ...(situation.trim() ? { situation: situation.trim() } : {}),
+              ...(prompted.trim() ? { prompted: prompted.trim() } : {}),
+              ...(callGoal.trim() ? { callGoal: callGoal.trim() } : {}),
+            },
+          }
+        : {}),
     };
 
     const result = await submitContractorLead(payload, honeypotValue);
@@ -145,6 +157,9 @@ export function LeadForm({
     onLead({ role: payload.role });
     form.reset();
     setConsent(false);
+    setSituation("");
+    setPrompted("");
+    setCallGoal("");
 
     if (redirectOnSuccess) {
       setTimeout(() => {
@@ -287,6 +302,70 @@ export function LeadForm({
           <p id="message-error" className={errorClass}>{fieldErrors.message}</p>
         )}
       </div>
+
+      <details className="group border border-neutral-200 bg-neutral-50">
+        <summary className="flex cursor-pointer items-center justify-between gap-4 px-4 py-3 text-sm font-medium text-neutral-700 hover:text-cyan-800 transition-colors list-none">
+          <span>Optional: a bit more detail (helps us prepare)</span>
+          <span className="flex-shrink-0 text-cyan-700 transition-transform group-open:rotate-45" aria-hidden>
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" />
+            </svg>
+          </span>
+        </summary>
+        <div className="space-y-4 border-t border-neutral-200 px-4 py-4">
+          <div>
+            <label htmlFor="situation" className={labelClass}>
+              Your situation <span className="font-normal text-neutral-500">(optional)</span>
+            </label>
+            <textarea
+              id="situation"
+              name="situation"
+              rows={3}
+              maxLength={600}
+              placeholder="e.g. I run a limited company, currently inside IR35 via an SDS from my end client"
+              className={fieldClass}
+              value={situation}
+              onChange={(e) => setSituation(e.target.value)}
+              onFocus={() => onFieldFocus("situation")}
+              onBlur={(e) => onFieldBlur("situation", !!e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="prompted" className={labelClass}>
+              What&apos;s prompted this now? <span className="font-normal text-neutral-500">(optional)</span>
+            </label>
+            <textarea
+              id="prompted"
+              name="prompted"
+              rows={3}
+              maxLength={600}
+              placeholder="e.g. Starting a new contract, switching accountant, got an HMRC letter"
+              className={fieldClass}
+              value={prompted}
+              onChange={(e) => setPrompted(e.target.value)}
+              onFocus={() => onFieldFocus("prompted")}
+              onBlur={(e) => onFieldBlur("prompted", !!e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="callGoal" className={labelClass}>
+              What would make a call worthwhile? <span className="font-normal text-neutral-500">(optional)</span>
+            </label>
+            <textarea
+              id="callGoal"
+              name="callGoal"
+              rows={3}
+              maxLength={600}
+              placeholder="e.g. Understand my IR35 risk, get a quote for full accountancy, compare umbrella vs limited"
+              className={fieldClass}
+              value={callGoal}
+              onChange={(e) => setCallGoal(e.target.value)}
+              onFocus={() => onFieldFocus("callGoal")}
+              onBlur={(e) => onFieldBlur("callGoal", !!e.target.value)}
+            />
+          </div>
+        </div>
+      </details>
 
       <div>
         <label htmlFor="consent" className="flex items-start gap-3 text-xs leading-relaxed text-neutral-600">

@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { btnPrimary, btnSecondary, focusRing, siteContainerLg, sectionY, sectionYLoose } from "@/components/ui/layout-utils";
+import { btnPrimary, focusRing, siteContainerLg, sectionY, sectionYLoose } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { serviceTiers, siteStats } from "@/config/service-tiers";
 import { buildService, buildBreadcrumbJsonLd, buildFaqPage, JsonLd } from "@/lib/schema/index";
 
 export const metadata: Metadata = {
@@ -130,41 +133,6 @@ const included = [
   },
 ];
 
-const tiers = [
-  {
-    name: "Essentials",
-    tag: "Single-handed practices & associates",
-    features: [
-      "Annual accounts + corporation tax",
-      "Personal self assessment",
-      "Quarterly review call",
-      "Unlimited email support",
-    ],
-  },
-  {
-    name: "Growth",
-    tag: "Multi-associate practices (most popular)",
-    featured: true,
-    features: [
-      "Everything in Essentials",
-      "Monthly management accounts",
-      "Salary, dividend + NHS Pension modelling",
-      "Capital allowances claim",
-      "Practice valuation refresh annually",
-    ],
-  },
-  {
-    name: "Specialist",
-    tag: "Multi-site groups + exit-focused principals",
-    features: [
-      "Everything in Growth",
-      "Cash flow forecasting",
-      "Pre-sale BADR + Section 162 planning",
-      "Holding company and group structure",
-      "Priority same-day response",
-    ],
-  },
-];
 
 const faqs = [
   {
@@ -246,6 +214,11 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Stats bar */}
+      <div className={`${siteContainerLg} py-8`}>
+        <StatsBar stats={siteStats} />
+      </div>
+
       {/* Service tiers */}
       <section className="bg-[var(--surface)] border-b border-[var(--border)]">
         <div className={`${siteContainerLg} ${sectionY}`}>
@@ -257,50 +230,8 @@ export default function ServicesPage() {
               Start with compliance essentials, add monthly management accounts as you grow, move to specialist advisory as you scale or plan an exit. You can move tier at any month-end.
             </p>
           </div>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {tiers.map((tier) => (
-              <div
-                key={tier.name}
-                className={`flex flex-col p-8 rounded-2xl border ${
-                  tier.featured
-                    ? "border-[var(--gold)] bg-[var(--gold-soft)] shadow-sm"
-                    : "border-[var(--border)] bg-white"
-                }`}
-              >
-                <div>
-                  <h3 className="font-serif text-xl font-semibold text-[var(--ink)]">{tier.name}</h3>
-                  <p
-                    className={`mt-1 text-xs font-semibold uppercase tracking-wider ${
-                      tier.featured ? "text-[var(--gold-strong)]" : "text-[var(--muted)]"
-                    }`}
-                  >
-                    {tier.tag}
-                  </p>
-                </div>
-                <ul className="mt-6 space-y-3">
-                  {tier.features.map((f) => (
-                    <li key={f} className="flex items-start gap-3 text-sm text-[var(--ink-soft)]">
-                      <span
-                        className={`mt-0.5 inline-flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full text-[11px] font-bold ${
-                          tier.featured ? "bg-[var(--gold)] text-[var(--navy)]" : "bg-[var(--navy)]/10 text-[var(--navy)]"
-                        }`}
-                      >
-                        ✓
-                      </span>
-                      <span>{f}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-8 pt-6 border-t border-[var(--border)]">
-                  <Link
-                    href="/contact"
-                    className={`${tier.featured ? btnPrimary : btnSecondary} w-full`}
-                  >
-                    Request a fixed-fee quote
-                  </Link>
-                </div>
-              </div>
-            ))}
+          <div className="mt-12">
+            <ServiceTiers tiers={serviceTiers} featuredBadge="Most popular" />
           </div>
         </div>
       </section>

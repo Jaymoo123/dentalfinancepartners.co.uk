@@ -38,6 +38,9 @@ export function LeadForm({
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
   const [consent, setConsent] = useState(false);
+  const [situation, setSituation] = useState("");
+  const [prompted, setPrompted] = useState("");
+  const [callGoal, setCallGoal] = useState("");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -126,7 +129,14 @@ export function LeadForm({
       consent_at: new Date().toISOString(),
       visitor_id: getVisitorId() ?? undefined,
       session_id: getSessionId() ?? undefined,
-      extras: practiceName ? { practice_name: practiceName } : undefined,
+      extras: (() => {
+        const e: Record<string, unknown> = {};
+        if (practiceName) e.practice_name = practiceName;
+        if (situation.trim()) e.situation = situation.trim();
+        if (prompted.trim()) e.prompted = prompted.trim();
+        if (callGoal.trim()) e.call_goal = callGoal.trim();
+        return Object.keys(e).length ? e : undefined;
+      })(),
     };
 
     const result = await submitMedicalLead(payload, honeypot);
@@ -145,6 +155,9 @@ export function LeadForm({
     onLead({ role: payload.role });
     form.reset();
     setConsent(false);
+    setSituation("");
+    setPrompted("");
+    setCallGoal("");
     if (redirectOnSuccess) {
       const bt = result.bookingToken;
       router.push(bt ? `/thank-you?bt=${encodeURIComponent(bt)}` : "/thank-you");
@@ -305,6 +318,62 @@ export function LeadForm({
           </p>
         ) : null}
       </div>
+
+      <details className="group rounded-lg border border-[var(--border)] bg-[var(--surface)]">
+        <summary className="cursor-pointer list-none px-4 py-3 text-sm font-medium text-[var(--ink-soft)] [&::-webkit-details-marker]:hidden">
+          Optional: a bit more detail (helps us prepare)
+        </summary>
+        <div className="space-y-4 border-t border-[var(--border)] px-4 py-4">
+          <div>
+            <label htmlFor="situation" className="block text-sm font-medium text-[var(--ink)]">
+              Your situation <span className="font-normal text-[var(--muted)]">(optional)</span>
+            </label>
+            <textarea
+              id="situation"
+              name="situation"
+              rows={3}
+              maxLength={600}
+              value={situation}
+              onChange={(e) => setSituation(e.target.value)}
+              className={`${fieldClass} min-h-[5rem] resize-y py-3`}
+              onFocus={() => onFieldFocus("situation")}
+              onBlur={(e) => onFieldBlur("situation", !!e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="prompted" className="block text-sm font-medium text-[var(--ink)]">
+              What&apos;s prompted this now? <span className="font-normal text-[var(--muted)]">(optional)</span>
+            </label>
+            <textarea
+              id="prompted"
+              name="prompted"
+              rows={3}
+              maxLength={600}
+              value={prompted}
+              onChange={(e) => setPrompted(e.target.value)}
+              className={`${fieldClass} min-h-[5rem] resize-y py-3`}
+              onFocus={() => onFieldFocus("prompted")}
+              onBlur={(e) => onFieldBlur("prompted", !!e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="callGoal" className="block text-sm font-medium text-[var(--ink)]">
+              What would make a call worthwhile? <span className="font-normal text-[var(--muted)]">(optional)</span>
+            </label>
+            <textarea
+              id="callGoal"
+              name="callGoal"
+              rows={3}
+              maxLength={600}
+              value={callGoal}
+              onChange={(e) => setCallGoal(e.target.value)}
+              className={`${fieldClass} min-h-[5rem] resize-y py-3`}
+              onFocus={() => onFieldFocus("callGoal")}
+              onBlur={(e) => onFieldBlur("callGoal", !!e.target.value)}
+            />
+          </div>
+        </div>
+      </details>
 
       <div>
         <label htmlFor="consent" className="flex items-start gap-3 text-xs leading-relaxed text-[var(--muted)]">

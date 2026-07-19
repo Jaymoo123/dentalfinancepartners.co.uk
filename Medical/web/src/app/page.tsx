@@ -8,6 +8,9 @@ import { siteConfig } from "@/config/site";
 import { getPostBySlug } from "@/lib/blog";
 import { buildFaqPage } from "@/lib/schema";
 import { TestimonialSlider } from "@/components/medical/TestimonialSlider";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
+import { serviceTiers, siteStats } from "@/config/service-tiers";
 
 // FAQPage JSON-LD for the homepage's single visible Q&A (the "Do I need a
 // specialist accountant" details block). Schema-only: this mirrors the on-page
@@ -215,6 +218,12 @@ export default function HomePage() {
           <p className="max-w-3xl text-lg leading-relaxed text-[var(--ink-soft)] sm:text-xl">
             GP accountants and medical accounting specialists serving UK doctors exclusively. Our client base includes GP partners, salaried GPs, hospital consultants, private practice owners, and locum doctors. Over 50 medical professionals rely on our GP accountant team for NHS pension planning, tax optimization, and practice financial management.
           </p>
+        </div>
+      </section>
+
+      <section className="border-b border-[var(--border)] bg-white py-10 sm:py-12">
+        <div className={siteContainerLg}>
+          <StatsBar stats={siteStats} />
         </div>
       </section>
 
@@ -434,6 +443,18 @@ export default function HomePage() {
           </h2>
           <div className="mt-10 max-w-3xl">
             <TestimonialSlider />
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-[var(--border)] bg-[var(--background)] py-12 sm:py-16">
+        <div className={siteContainerLg}>
+          <p className="section-label">How we work with you</p>
+          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+            Choose how much support you need.
+          </h2>
+          <div className="mt-10">
+            <ServiceTiers tiers={serviceTiers} featuredBadge="Most popular" />
           </div>
         </div>
       </section>

@@ -44,6 +44,9 @@ export function LeadForm({
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
   const [consent, setConsent] = useState(false);
+  const [situation, setSituation] = useState("");
+  const [prompted, setPrompted] = useState("");
+  const [callGoal, setCallGoal] = useState("");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -118,6 +121,11 @@ export function LeadForm({
     trackFormSubmit(completedCount);
 
     // LD-05: stitch visitor + session ids so each lead row links to its analytics events
+    const extrasRaw: Record<string, string> = {};
+    if (situation.trim()) extrasRaw.situation = situation.trim();
+    if (prompted.trim()) extrasRaw.prompted = prompted.trim();
+    if (callGoal.trim()) extrasRaw.callGoal = callGoal.trim();
+
     const payload = {
       full_name: String(data.get("fullName") || "").trim(),
       email: String(data.get("email") || "").trim(),
@@ -132,6 +140,7 @@ export function LeadForm({
       consent_at: new Date().toISOString(),
       visitor_id: getVisitorId() ?? undefined,
       session_id: getSessionId() ?? undefined,
+      ...(Object.keys(extrasRaw).length > 0 ? { extras: extrasRaw } : {}),
     };
 
     const result = await submitGeneralistLead(payload, honeypot);
@@ -157,6 +166,9 @@ export function LeadForm({
     onLead({ role: payload.role });
     form.reset();
     setConsent(false);
+    setSituation("");
+    setPrompted("");
+    setCallGoal("");
 
     if (redirectOnSuccess) {
       const returnPath = isSafeReturnPath(window.location.pathname + window.location.search + window.location.hash)
@@ -308,6 +320,65 @@ export function LeadForm({
           </p>
         )}
       </div>
+
+      <details className="border border-neutral-200 bg-neutral-50 p-4">
+        <summary className="cursor-pointer text-sm font-medium text-neutral-700 select-none">
+          Optional: a bit more detail (helps us prepare)
+        </summary>
+        <div className="mt-4 space-y-4">
+          <div>
+            <label htmlFor="situation" className={labelClass}>
+              Your situation <span className="font-normal text-neutral-500">(optional)</span>
+            </label>
+            <textarea
+              id="situation"
+              name="situation"
+              rows={3}
+              maxLength={600}
+              placeholder="e.g. sole trader thinking about incorporating, or a limited company with two directors"
+              className={fieldClass}
+              value={situation}
+              onChange={(e) => setSituation(e.target.value)}
+              onFocus={() => onFieldFocus("situation")}
+              onBlur={(e) => onFieldBlur("situation", !!e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="prompted" className={labelClass}>
+              What&apos;s prompted this now? <span className="font-normal text-neutral-500">(optional)</span>
+            </label>
+            <textarea
+              id="prompted"
+              name="prompted"
+              rows={3}
+              maxLength={600}
+              placeholder="e.g. year-end coming up, just received an HMRC letter, thinking about hiring"
+              className={fieldClass}
+              value={prompted}
+              onChange={(e) => setPrompted(e.target.value)}
+              onFocus={() => onFieldFocus("prompted")}
+              onBlur={(e) => onFieldBlur("prompted", !!e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="callGoal" className={labelClass}>
+              What would make a call worthwhile? <span className="font-normal text-neutral-500">(optional)</span>
+            </label>
+            <textarea
+              id="callGoal"
+              name="callGoal"
+              rows={3}
+              maxLength={600}
+              placeholder="e.g. a clear answer on whether to incorporate, or a fixed-fee quote"
+              className={fieldClass}
+              value={callGoal}
+              onChange={(e) => setCallGoal(e.target.value)}
+              onFocus={() => onFieldFocus("callGoal")}
+              onBlur={(e) => onFieldBlur("callGoal", !!e.target.value)}
+            />
+          </div>
+        </div>
+      </details>
 
       <div>
         <label htmlFor="consent" className="flex items-start gap-3 text-xs leading-relaxed text-neutral-600">

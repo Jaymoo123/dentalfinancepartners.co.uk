@@ -42,6 +42,9 @@ export function LeadForm({
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
   const [consent, setConsent] = useState(false);
+  const [situation, setSituation] = useState("");
+  const [prompted, setPrompted] = useState("");
+  const [callGoal, setCallGoal] = useState("");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -116,6 +119,11 @@ export function LeadForm({
     trackFormSubmit(completedCount);
 
     // LD-05: stitch visitor + session ids so each lead row links to its analytics events
+    const extrasRaw: Record<string, string> = {};
+    if (situation.trim()) extrasRaw.situation = situation.trim();
+    if (prompted.trim()) extrasRaw.prompted = prompted.trim();
+    if (callGoal.trim()) extrasRaw.callGoal = callGoal.trim();
+
     const payload = {
       full_name: String(data.get("fullName") || "").trim(),
       email: String(data.get("email") || "").trim(),
@@ -130,6 +138,7 @@ export function LeadForm({
       consent_at: new Date().toISOString(),
       visitor_id: getVisitorId() ?? undefined,
       session_id: getSessionId() ?? undefined,
+      ...(Object.keys(extrasRaw).length > 0 ? { extras: extrasRaw } : {}),
     };
 
     const result = await submitDentistLead(payload, honeypot);
@@ -159,6 +168,9 @@ export function LeadForm({
 
     form.reset();
     setConsent(false);
+    setSituation("");
+    setPrompted("");
+    setCallGoal("");
 
     if (redirectOnSuccess) {
       const dest = result.bookingToken
@@ -337,6 +349,62 @@ export function LeadForm({
           </p>
         ) : null}
       </div>
+
+      <details className="rounded-lg border border-[var(--border)] bg-[var(--surface)]">
+        <summary className="cursor-pointer select-none px-4 py-3 text-sm font-medium text-[var(--ink-soft)] hover:text-[var(--ink)]">
+          Optional: a bit more detail (helps us prepare)
+        </summary>
+        <div className="space-y-4 px-4 pb-4 pt-2">
+          <div>
+            <label htmlFor="situation" className="block text-sm font-medium text-[var(--ink)]">
+              Your situation
+            </label>
+            <textarea
+              id="situation"
+              name="situation"
+              rows={3}
+              maxLength={600}
+              value={situation}
+              onChange={(e) => setSituation(e.target.value)}
+              className={`${fieldClass} min-h-[5rem] resize-y py-3`}
+              onFocus={() => onFieldFocus("situation")}
+              onBlur={(e) => onFieldBlur("situation", !!e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="prompted" className="block text-sm font-medium text-[var(--ink)]">
+              What&apos;s prompted this now?
+            </label>
+            <textarea
+              id="prompted"
+              name="prompted"
+              rows={3}
+              maxLength={600}
+              value={prompted}
+              onChange={(e) => setPrompted(e.target.value)}
+              className={`${fieldClass} min-h-[5rem] resize-y py-3`}
+              onFocus={() => onFieldFocus("prompted")}
+              onBlur={(e) => onFieldBlur("prompted", !!e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="callGoal" className="block text-sm font-medium text-[var(--ink)]">
+              What would make a call worthwhile?
+            </label>
+            <textarea
+              id="callGoal"
+              name="callGoal"
+              rows={3}
+              maxLength={600}
+              value={callGoal}
+              onChange={(e) => setCallGoal(e.target.value)}
+              className={`${fieldClass} min-h-[5rem] resize-y py-3`}
+              onFocus={() => onFieldFocus("callGoal")}
+              onBlur={(e) => onFieldBlur("callGoal", !!e.target.value)}
+            />
+          </div>
+        </div>
+      </details>
 
       <div>
         <label

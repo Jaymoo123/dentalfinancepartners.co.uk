@@ -13,6 +13,9 @@ import {
   PiggyBank,
   ClipboardList,
 } from "lucide-react";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
+import { serviceTiers, siteStats } from "@/config/service-tiers";
 
 export const metadata: Metadata = {
   title: { absolute: "Contractor Accountancy Services | Contractor Tax Accountants" },
@@ -103,6 +106,13 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Stats */}
+      <section className="border-b border-neutral-200 bg-white py-8 sm:py-10">
+        <div className={siteContainerLg}>
+          <StatsBar stats={siteStats} />
+        </div>
+      </section>
+
       {/* Service cards */}
       <section className="bg-[#fafaf7] py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
@@ -137,6 +147,16 @@ export default function ServicesPage() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* Service tiers */}
+      <section className="border-t border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <h2 className="mb-8 text-center text-2xl font-bold text-neutral-900 sm:text-3xl">
+            Ways to work with us
+          </h2>
+          <ServiceTiers tiers={serviceTiers} featuredBadge="Most common" />
         </div>
       </section>
 

@@ -126,7 +126,7 @@ faqs:
 
 <p>If you do straightforward <strong>freelance or consulting work</strong> with multiple direct clients, sole-trader status is often the simplest approach, with no company overhead and a single Self Assessment return covering all your income.</p>
 
-<p>Many contractors move between these structures over time, or hold more than one simultaneously. What matters is that the structure matches the actual nature of each engagement, not the label that feels most appealing. Our <a href="/blog/limited-company-vs-umbrella-contractor">umbrella vs limited company guide</a> covers the decision framework in detail for contractors weighing those two options.</p>
+<p>Many contractors move between these structures over time, or hold more than one simultaneously. What matters is that the structure matches the actual nature of each engagement, not the label that feels most appealing. Our <a href="/blog/umbrella-vs-limited-company/limited-company-vs-umbrella-contractor">umbrella vs limited company guide</a> covers the decision framework in detail for contractors weighing those two options.</p>
 
 <h2>Getting the structure right from the start</h2>
 

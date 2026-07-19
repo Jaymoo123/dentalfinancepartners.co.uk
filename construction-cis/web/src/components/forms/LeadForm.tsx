@@ -70,6 +70,11 @@ export function LeadForm({
   const [selectedTrade, setSelectedTrade] = useState("");
   const [selectedSubbieCount, setSelectedSubbieCount] = useState("");
 
+  // Optional enrichment fields
+  const [situation, setSituation] = useState("");
+  const [prompted, setPrompted] = useState("");
+  const [callGoal, setCallGoal] = useState("");
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       setSourceUrl(window.location.href);
@@ -145,6 +150,9 @@ export function LeadForm({
     const extras: Record<string, unknown> = {};
     if (selectedTrade) extras.trade = selectedTrade;
     if (selectedSubbieCount) extras.subbie_count = selectedSubbieCount;
+    if (situation.trim()) extras.situation = situation.trim();
+    if (prompted.trim()) extras.prompted = prompted.trim();
+    if (callGoal.trim()) extras.callGoal = callGoal.trim();
 
     // LD-05: stitch visitor + session ids so each lead row links to its analytics events
     const payload = {
@@ -182,6 +190,9 @@ export function LeadForm({
     setSelectedTrade("");
     setSelectedSubbieCount("");
     setHoneypotValue("");
+    setSituation("");
+    setPrompted("");
+    setCallGoal("");
 
     if (redirectOnSuccess) {
       const returnPath =
@@ -398,6 +409,70 @@ export function LeadForm({
           <p id="message-error" className={errorClass}>{fieldErrors.message}</p>
         )}
       </div>
+
+      <details className="group border border-neutral-200 bg-neutral-50">
+        <summary className="flex cursor-pointer items-center justify-between gap-4 px-4 py-3 text-sm font-medium text-neutral-700 hover:text-neutral-900 list-none select-none">
+          <span>Optional: a bit more detail (helps us prepare)</span>
+          <span className="flex-shrink-0 text-orange-500 transition-transform group-open:rotate-45" aria-hidden>
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" />
+            </svg>
+          </span>
+        </summary>
+        <div className="space-y-4 px-4 pb-4 pt-2">
+          <div>
+            <label htmlFor="situation" className={labelClass}>
+              Your situation <span className="font-normal text-neutral-500">(optional)</span>
+            </label>
+            <textarea
+              id="situation"
+              name="situation"
+              rows={3}
+              maxLength={600}
+              placeholder="e.g. I am a self-employed roofer, been registered for CIS for 3 years, never claimed a refund."
+              className={fieldClass}
+              value={situation}
+              onChange={(e) => setSituation(e.target.value)}
+              onFocus={() => onFieldFocus("situation")}
+              onBlur={(e) => onFieldBlur("situation", !!e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="prompted" className={labelClass}>
+              What&apos;s prompted this now? <span className="font-normal text-neutral-500">(optional)</span>
+            </label>
+            <textarea
+              id="prompted"
+              name="prompted"
+              rows={3}
+              maxLength={600}
+              placeholder="e.g. Tax year just ended and I realised I have never checked my deduction slips."
+              className={fieldClass}
+              value={prompted}
+              onChange={(e) => setPrompted(e.target.value)}
+              onFocus={() => onFieldFocus("prompted")}
+              onBlur={(e) => onFieldBlur("prompted", !!e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="callGoal" className={labelClass}>
+              What would make a call worthwhile? <span className="font-normal text-neutral-500">(optional)</span>
+            </label>
+            <textarea
+              id="callGoal"
+              name="callGoal"
+              rows={3}
+              maxLength={600}
+              placeholder="e.g. A clear figure for what I am owed and what it would cost to sort out."
+              className={fieldClass}
+              value={callGoal}
+              onChange={(e) => setCallGoal(e.target.value)}
+              onFocus={() => onFieldFocus("callGoal")}
+              onBlur={(e) => onFieldBlur("callGoal", !!e.target.value)}
+            />
+          </div>
+        </div>
+      </details>
 
       <div>
         <label htmlFor="consent" className="flex items-start gap-3 text-xs leading-relaxed text-neutral-600">

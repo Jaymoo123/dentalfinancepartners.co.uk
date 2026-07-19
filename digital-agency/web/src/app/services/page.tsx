@@ -5,6 +5,9 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
+import { serviceTiers, siteStats } from "@/config/service-tiers";
 
 export const metadata: Metadata = {
   title: `Accounting Services for Agency Founders | ${siteConfig.name}`,
@@ -135,6 +138,13 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Stats bar */}
+      <section className="bg-white border-b border-slate-200 py-8 sm:py-10">
+        <div className={siteContainerLg}>
+          <StatsBar stats={siteStats} />
+        </div>
+      </section>
+
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto mb-12">
@@ -209,6 +219,21 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Service tier cards (shared component) */}
+      <section className="bg-white py-12 sm:py-16 border-t border-slate-100">
+        <div className={siteContainerLg}>
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+            <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">
+              How we work together
+            </h2>
+            <p className="mt-4 text-lg text-slate-600">
+              Start with free tools, add compliance as you grow, or get full advisory support as you scale.
+            </p>
+          </div>
+          <ServiceTiers tiers={serviceTiers} />
         </div>
       </section>
 

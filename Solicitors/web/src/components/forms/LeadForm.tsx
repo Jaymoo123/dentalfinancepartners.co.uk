@@ -41,6 +41,9 @@ export function LeadForm({
   const [sourceUrl, setSourceUrl] = useState("");
   const [consent, setConsent] = useState(false);
   const [enquiryRef, setEnquiryRef] = useState("");
+  const [situation, setSituation] = useState("");
+  const [prompted, setPrompted] = useState("");
+  const [callGoal, setCallGoal] = useState("");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -133,7 +136,14 @@ export function LeadForm({
       session_id: getSessionId() ?? undefined,
       // practice_name is not a top-level leads column -- pass through extras so
       // the data is never lost even when the column does not exist.
-      ...(practiceName ? { extras: { practice_name: practiceName } } : {}),
+      ...(() => {
+        const x: Record<string, unknown> = {};
+        if (practiceName) x.practice_name = practiceName;
+        if (situation.trim()) x.situation = situation.trim();
+        if (prompted.trim()) x.prompted = prompted.trim();
+        if (callGoal.trim()) x.call_goal = callGoal.trim();
+        return Object.keys(x).length ? { extras: x } : {};
+      })(),
     };
 
     const result = await submitSolicitorLead(payload, honeypotValue);
@@ -153,6 +163,9 @@ export function LeadForm({
     form.reset();
     setConsent(false);
     setEnquiryRef("");
+    setSituation("");
+    setPrompted("");
+    setCallGoal("");
     if (redirectOnSuccess) {
       router.push(
         buildThankYouUrl(
@@ -326,6 +339,62 @@ export function LeadForm({
           </p>
         ) : null}
       </div>
+
+      <details className="rounded-lg border border-[var(--border)] bg-[var(--surface)]">
+        <summary className="cursor-pointer px-4 py-3 text-sm font-medium text-[var(--ink-soft)] select-none">
+          Optional: a bit more detail (helps us prepare)
+        </summary>
+        <div className="space-y-4 px-4 pb-4 pt-2">
+          <div>
+            <label htmlFor="situation" className="block text-sm font-medium text-[var(--ink)]">
+              Your situation <span className="font-normal text-[var(--muted)]">(optional)</span>
+            </label>
+            <textarea
+              id="situation"
+              name="situation"
+              rows={3}
+              maxLength={600}
+              className={`${fieldClass} resize-y py-3`}
+              value={situation}
+              onChange={(e) => setSituation(e.target.value)}
+              onFocus={() => onFieldFocus("situation")}
+              onBlur={(e) => onFieldBlur("situation", !!e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="prompted" className="block text-sm font-medium text-[var(--ink)]">
+              What&apos;s prompted this now? <span className="font-normal text-[var(--muted)]">(optional)</span>
+            </label>
+            <textarea
+              id="prompted"
+              name="prompted"
+              rows={3}
+              maxLength={600}
+              className={`${fieldClass} resize-y py-3`}
+              value={prompted}
+              onChange={(e) => setPrompted(e.target.value)}
+              onFocus={() => onFieldFocus("prompted")}
+              onBlur={(e) => onFieldBlur("prompted", !!e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="callGoal" className="block text-sm font-medium text-[var(--ink)]">
+              What would make a call worthwhile? <span className="font-normal text-[var(--muted)]">(optional)</span>
+            </label>
+            <textarea
+              id="callGoal"
+              name="callGoal"
+              rows={3}
+              maxLength={600}
+              className={`${fieldClass} resize-y py-3`}
+              value={callGoal}
+              onChange={(e) => setCallGoal(e.target.value)}
+              onFocus={() => onFieldFocus("callGoal")}
+              onBlur={(e) => onFieldBlur("callGoal", !!e.target.value)}
+            />
+          </div>
+        </div>
+      </details>
 
       <div>
         <label htmlFor="consent" className="flex items-start gap-3 text-xs leading-relaxed text-[var(--muted)]">

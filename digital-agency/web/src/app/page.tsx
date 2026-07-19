@@ -10,6 +10,9 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
 import { getAllFundamentals } from "@/lib/fundamentals";
 import { ArrowRight, BookOpen, Calculator, LineChart, Building2, FileCheck, Quote, ShieldCheck } from "lucide-react";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
+import { serviceTiers, siteStats } from "@/config/service-tiers";
 // Newsletter SignupForm RETIRED (owner-locked). Mounts removed from homepage.
 
 export const metadata: Metadata = {
@@ -169,6 +172,13 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Stats bar */}
+      <section className="bg-white border-b border-slate-200 py-8 sm:py-10">
+        <div className={siteContainerLg}>
+          <StatsBar stats={siteStats} />
+        </div>
+      </section>
+
       {/* Key Stats */}
       <section className="bg-indigo-700 py-8 sm:py-10">
         <div className={siteContainerLg}>
@@ -255,6 +265,21 @@ export default function HomePage() {
               View all services
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Service tiers */}
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
+              Choose how we work together
+            </h2>
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
+              Start with free tools, add compliance as you grow, or get full advisory support as you scale.
+            </p>
+          </div>
+          <ServiceTiers tiers={serviceTiers} />
         </div>
       </section>
 

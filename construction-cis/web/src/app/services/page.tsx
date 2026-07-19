@@ -5,6 +5,9 @@ import {
   focusRing,
   siteContainerLg,
 } from "@/components/ui/layout-utils";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
+import { serviceTiers, siteStats } from "@/config/service-tiers";
 import {
   BadgePoundSterling,
   ShieldCheck,
@@ -117,6 +120,13 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Stats bar */}
+      <section className="bg-white py-8 sm:py-10 border-b border-neutral-200">
+        <div className={siteContainerLg}>
+          <StatsBar stats={siteStats} />
+        </div>
+      </section>
+
       {/* Service cards */}
       <section className="bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
@@ -151,6 +161,22 @@ export default function ServicesPage() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* Service tiers */}
+      <section className="border-t border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+            <div className="section-label mb-4">How we work</div>
+            <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">
+              From free tools to full CIS accounting.
+            </h2>
+            <p className="mt-3 text-base text-neutral-600">
+              Start with our free calculators or speak to us directly. Fixed fees, no surprises.
+            </p>
+          </div>
+          <ServiceTiers tiers={serviceTiers} featuredBadge="Most Popular" />
         </div>
       </section>
 

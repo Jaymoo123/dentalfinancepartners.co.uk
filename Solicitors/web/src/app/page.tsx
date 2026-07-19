@@ -6,6 +6,9 @@ import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from 
 import { siteConfig } from "@/config/site";
 import { TestimonialSlider } from "@/components/solicitors/TestimonialSlider";
 import { getAllPosts, getCategorySlug, calculateReadTime } from "@/lib/blog";
+import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { siteStats, serviceTiers } from "@/config/service-tiers";
 
 const btnMailOutline =
   "inline-flex min-h-12 items-center justify-center rounded-full border border-white/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-white transition-all duration-200 hover:border-white/50 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]";
@@ -168,6 +171,12 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-white">
+        <div className={siteContainerLg}>
+          <StatsBar stats={siteStats} />
         </div>
       </section>
 
@@ -421,6 +430,20 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className={sectionY} style={{ background: "var(--surface-elevated)" }}>
+        <div className={siteContainerLg}>
+          <div className="mx-auto max-w-3xl text-center mb-10">
+            <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
+              How we can help
+            </p>
+            <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
+              Choose the level of support that fits your firm
+            </h2>
+          </div>
+          <ServiceTiers tiers={serviceTiers} featuredBadge="Most chosen" />
         </div>
       </section>
 

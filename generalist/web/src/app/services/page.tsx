@@ -4,6 +4,9 @@ import { siteContainerLg, sectionY, btnPrimary, btnSecondary } from "@/component
 import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { JsonLd, buildService, buildBreadcrumb } from "@/lib/schema";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
+import { serviceTiers, siteStats } from "@/config/service-tiers";
 
 export const metadata: Metadata = {
   // Brand-less title: the layout template appends " | Holloway Davies" once.
@@ -175,6 +178,19 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Service tiers */}
+      <section className={`${sectionY} bg-[#fafaf7] border-t border-neutral-200`}>
+        <div className={siteContainerLg}>
+          <p className="font-mono text-xs uppercase tracking-widest text-orange-500 mb-2">
+            How we can help
+          </p>
+          <h2 className="text-2xl font-semibold tracking-tight text-neutral-900 mb-8">
+            From self-serve tools to a full annual engagement.
+          </h2>
+          <ServiceTiers tiers={serviceTiers} featuredBadge="Most Popular" />
+        </div>
+      </section>
+
       {/* Service lines */}
       <section className={`${sectionY} bg-[#fafaf7] border-t border-neutral-200`}>
         <div className={siteContainerLg}>
@@ -209,6 +225,13 @@ export default function ServicesPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* Stats bar */}
+      <section className="bg-[#fafaf7] border-t border-neutral-200 py-8">
+        <div className={siteContainerLg}>
+          <StatsBar stats={siteStats} />
         </div>
       </section>
 
