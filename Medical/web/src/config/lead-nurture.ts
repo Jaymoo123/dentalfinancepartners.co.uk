@@ -756,11 +756,4 @@ export function buildMedicalLeadNurtureConfigs(): LeadNurtureConfig[] {
 
 export const LEAD_SEQUENCE_NAME = SEQUENCE_NAME;
 
-// ── STAGED (COMMENTED): consent text with follow-up disclosure ─────────────────
-// Owner-gated: do NOT swap the live consent text until the owner approves.
-// Stage it here so it is ready when the decision is made.
-//
-// export const leadConsentTextWithFollowUp =
-//   "I agree to be contacted about my enquiry. I understand that Medical Accountants UK " +
-//   "may follow up by email and phone over the next 11 days to arrange a free call. " +
-//   "I can opt out at any time by replying STOP to any message.";
+// leadConsentTextWithFollowUp: swapped live into site.ts leadConsentText 2026-07-19 per owner approval.

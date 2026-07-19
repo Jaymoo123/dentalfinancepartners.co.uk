@@ -15,9 +15,10 @@ const partner = niche.partner;
 // Lead-form consent wording WITHOUT the trailing "See our Privacy Policy." link
 // (each form appends that). Driven by `partner` so the policy and the forms can
 // never drift, and so re-adding a partner later is a one-line config change.
+// Swapped live 2026-07-19 per owner approval (follow-up / nurture wording).
 const leadConsentText = partner
-  ? `I agree to my details being shared by ${niche.display_name} with our specialist partner firm ${partner.name}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice.`
-  : `I agree to ${niche.display_name} using my details to respond to my enquiry and provide the advice I have requested.`;
+  ? `I agree to my details being shared by Accounts for Lawyers with our specialist partner firm ${partner.name}, and to both Accounts for Lawyers and ${partner.name} contacting me about my enquiry by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`
+  : `I agree to Accounts for Lawyers using my details to respond to my enquiry and provide the advice I have requested, including contacting me about it by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`;
 
 export const siteConfig = {
   name: niche.display_name,
@@ -61,16 +62,7 @@ export const siteConfig = {
     : null,
   // Canonical lead-form consent text (see derivation above). Forms append the link.
   leadConsentText,
-  // ponytail: phase-2, replies inert while dormant. Stage only; not live.
-  // leadConsentTextWithFollowUp:
-  //   "I agree to Accounts for Lawyers using my details to respond to my enquiry and provide " +
-  //   "the advice I have requested, including contacting me about it by email, phone and text " +
-  //   "message. I can ask them to stop at any time by replying STOP or clicking unsubscribe." +
-  //   // Partner-firm variant (when siteConfig.partner is non-null):
-  //   // "I agree to my details being shared by Accounts for Lawyers with our specialist partner " +
-  //   // "firm [partner.name], and to both Accounts for Lawyers and [partner.name] contacting me " +
-  //   // "about my enquiry by email, phone and text message. I can ask them to stop at any time " +
-  //   // "by replying STOP or clicking unsubscribe."
+  // leadConsentTextWithFollowUp: swapped live into leadConsentText 2026-07-19 per owner approval.
   // In-house-only consent text for resource-gate downloads. Never names a partner;
   // used only when the visitor is consenting to receive a resource from this site.
   // Forms append "See our Privacy Policy." separately.

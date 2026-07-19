@@ -13,11 +13,11 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
 // null = enquiries are handled in-house and NOT shared with any third-party firm.
 const partner = niche.partner;
 // Lead-form consent wording WITHOUT the trailing "See our Privacy Policy." link
-// (each form appends that). Driven by `partner` so the policy and the forms can
-// never drift, and so re-adding a partner later is a one-line config change.
+// (each form appends that).
+// Swapped live 2026-07-19 per owner approval (follow-up / nurture wording).
 const leadConsentText = partner
   ? `I agree to my details being shared by ${niche.display_name} with our specialist partner firm ${partner.name}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice.`
-  : `I agree to ${niche.display_name} using my details to respond to my enquiry and provide the advice I have requested.`;
+  : "I agree to be contacted about my enquiry. I understand that Medical Accountants UK may follow up by email and phone over the next 11 days to arrange a free call. I can opt out at any time by replying STOP to any message.";
 
 export const siteConfig = {
   name: niche.display_name,
