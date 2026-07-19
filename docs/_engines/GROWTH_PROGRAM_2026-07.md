@@ -490,3 +490,19 @@ supabase.com/dashboard/account/tokens → replace in .env → apply both via Man
 (gated 07-22), GBP/sameAs (owner exposure decision), nurture ARMING (checklist: review ≥1wk
 would-send logs from ~2026-07-26, then set LEAD_NURTURE_ENABLED + channel flags per site —
 also requires the migrations above first).
+
+### Session 8 addendum — post-deploy E2E verification (2026-07-19)
+
+Six parallel agents walked every live site end-to-end. VERDICT: ALL HEALTHY.
+- ~180 route checks all 200 (every registry tool page, hubs, blog form+tool islands,
+  resources, /complete, /thank-you, llms.txt complete, sitemaps, robots).
+- All 6 apexes 308 (ir35 was already correct from launch config).
+- Multistep confirmed ON in prod SSR HTML on all 6 ("Step 1 of 2" markers; solicitors
+  shows it on resources pages, its tool pages render the form client-side).
+- Lead pipeline E2E on all 6: QA test lead POSTed per site -> 200 success + leadId +
+  SIGNED booking token (proves per-site LEAD_NURTURE_TOKEN_SECRET works). DB verified:
+  6 rows, correct source, is_test=true (auto-flag via @example. email + qa extras),
+  partner CC + nurture suppressed. Test leads left in DB flagged (purge optional).
+- Pre-existing content gaps found (NOT deploy regressions), add to backlog:
+  medical /resources/gp-tax + /resources/gp-practice registered but guides never
+  authored (filtered out of static params -> 404). ir35 has 2 equivalent by-design 404s.
