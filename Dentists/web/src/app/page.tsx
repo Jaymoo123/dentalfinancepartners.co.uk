@@ -6,13 +6,16 @@ import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from 
 import { siteConfig } from "@/config/site";
 import { getPostBySlug, getCategorySlug } from "@/lib/blog";
 import { TestimonialSlider } from "@/components/dentists/TestimonialSlider";
+import { JsonLd, buildService, buildFaqPage } from "@/lib/schema/index";
+import { buildBreadcrumbJsonLd } from "@/lib/schema";
+import { buildAccountingService } from "@accounting-network/web-shared/schema";
 
 const btnMailOutline =
   "inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--navy)]/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-[var(--navy)] transition-all duration-200 hover:border-[var(--navy)] hover:bg-[var(--navy)]/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]";
 
 export const metadata: Metadata = {
-  title: "Specialist Dental Accountants | Accountants for Dentists UK",
-  description: "Specialist dental accountants for UK practice owners, associates and groups. NHS contracts, tax planning, VAT and acquisitions. London and Manchester.",
+  title: "Dental Accountants | Accountants for Dentists UK",
+  description: "Specialist dental accountants for UK practice owners, associates and groups. NHS contracts, associate tax, VAT and acquisitions. Fixed fees, UK-wide.",
   alternates: {
     canonical: siteConfig.url,
     languages: {
@@ -21,7 +24,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Specialist Dental Accountants | Accountants for Dentists UK",
+    title: "Dental Accountants | Accountants for Dentists UK",
     description: "Specialist dental accountants for practice owners, associates and groups. NHS contract accounting, tax planning, VAT and acquisitions.",
     url: siteConfig.url,
     type: "website",
@@ -153,25 +156,106 @@ const specialistRows = [
   { area: "Management accounts", detail: "Structured for dental KPIs" },
 ];
 
+const homeFaqs = [
+  {
+    question: "Do I need a specialist dental accountant?",
+    answer:
+      "Not strictly, but the question is whether a generalist can give you genuinely useful advice on the financial specifics of dentistry. The gap shows most clearly around NHS income, VAT on mixed dental supplies, associate expenses, and practice acquisition. A competent generalist can handle your compliance. A dental specialist can do that and help you make better financial decisions.",
+  },
+  {
+    question: "What do dental accountants actually do?",
+    answer:
+      "We prepare annual accounts and corporation tax, handle self assessment for associates and owners, run payroll including percentage-split associate payments, advise on VAT for mixed dental and non-dental supplies, produce management accounts structured around dental KPIs, and support practice acquisitions and structuring. Everything is dental-specific, not generic small-business accounting.",
+  },
+  {
+    question: "Are you accountants for dentists across the whole UK?",
+    answer:
+      "Yes. We work with associate dentists, practice owners, and multi-site dental groups across the UK, including London, Manchester, and Wales. Contact is straightforward whether you are next door or the other end of the country. See our locations pages for city-specific detail.",
+  },
+  {
+    question: "How much does a dental accountant cost?",
+    answer:
+      "We work on fixed fees with no hidden charges and no long-term contracts, so you know exactly what you are paying for. The right fee depends on whether you are an associate, a single-site owner, or a group, and on the complexity of your NHS and private income. The first conversation is free and without obligation.",
+  },
+  {
+    question: "Do you work with associate dentists as well as practice owners?",
+    answer:
+      "Yes. Associate dentists are almost always self-employed and are running a small business whether it feels like it or not. We handle self assessment, allowable expenses, pension planning, and advise on when incorporation genuinely makes sense, so you are not overpaying tax through simple oversights.",
+  },
+  {
+    question: "Can you help with buying or selling a dental practice?",
+    answer:
+      "Yes. Practice acquisition is one of the most significant financial decisions you will make. We support with pre-purchase due diligence, advise on how to structure the acquisition, and help you understand goodwill, financing, and the tax position you are taking on. We do the same on the sale side.",
+  },
+  {
+    question: "Do you understand NHS contracts and the NHS Pension Scheme?",
+    answer:
+      "Yes. We reconcile NHS contract payments alongside private fee income and capitation plans, work with UDA targets and clawback, and understand how NHS superannuation interacts with your pension annual allowance, including the incorporation pension trap where only PAYE salary, not dividends, is pensionable.",
+  },
+  {
+    question: "Do you provide accounting for multi-practice dental groups?",
+    answer:
+      "Yes. Running multiple sites introduces complexity around inter-company transactions, group reporting, and acquisition accounting. We work with dentists building a group, whether that is two practices or ten, and support due diligence, restructuring, and ongoing financial management across the portfolio.",
+  },
+] as const;
+
 export default function HomePage() {
   const practicalPosts = PRACTICAL_SLUGS.map((slug) => getPostBySlug(slug)).filter(
     (p): p is NonNullable<typeof p> => Boolean(p),
   );
 
+  const accountingServiceSchema = buildAccountingService(
+    {
+      name: siteConfig.name,
+      description:
+        "Specialist dental accountants and accountants for dentists across the UK. NHS contracts, associate tax, VAT, and practice acquisitions.",
+      url: siteConfig.url,
+      city: "United Kingdom",
+      address: { addressCountry: "GB" },
+      areaServed: ["United Kingdom"],
+    },
+    {
+      siteUrl: siteConfig.url,
+      siteName: siteConfig.name,
+      legalName: siteConfig.legalName,
+      organizationType: "AccountingService",
+      publisherLogoUrl: siteConfig.publisherLogoUrl,
+    },
+  );
+
+  const serviceSchema = buildService({
+    name: "Dental accountancy and tax",
+    description:
+      "Accounts, tax, payroll, VAT, management reporting, and practice acquisition support for UK dentists, associates, and dental groups.",
+    path: "/",
+  });
+
+  const faqSchema = buildFaqPage(homeFaqs.map((f) => ({ question: f.question, answer: f.answer })));
+
+  const breadcrumbSchema = buildBreadcrumbJsonLd([{ label: "Home", href: "/" }]);
+
   return (
     <>
-      {/* Organization + WebSite now ship site-wide from the root layout. */}
+      {/* Organization + WebSite ship site-wide from the root layout. Homepage
+          adds AccountingService (national areaServed GB), Service, FAQPage, and
+          a Home BreadcrumbList so the page reads as a regulated national
+          dental-accounting service. */}
+      <JsonLd data={faqSchema ? [accountingServiceSchema, serviceSchema, faqSchema] : [accountingServiceSchema, serviceSchema]} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: breadcrumbSchema }}
+      />
       <section className="hero-brand border-b border-white/10">
         <div className={`hero-inner ${siteContainerLg} ${sectionYLoose}`}>
           <div className="hero-reveal">
             <BrandLogoHero />
           </div>
           <h1 className="hero-reveal-delay display-serif mt-8 max-w-4xl text-[1.75rem] font-semibold leading-[1.15] tracking-tight text-white sm:text-4xl md:text-[2.75rem] md:leading-[1.1]">
-            <span className="block">Specialist dental accountants</span>
-            <span className="block">for UK practices.</span>
+            <span className="block">Dental accountants for UK practices,</span>
+            <span className="block">associates and groups.</span>
           </h1>
           <p className="hero-reveal-delay-2 mt-6 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg">
-            We&apos;re accountants for dentists — associates, practice owners, and groups. NHS contracts, associate tax, VAT, and acquisitions. We only work with dental practices, so we understand the financial specifics that generalist accountants miss.
+            We&apos;re specialist dental accountants and accountants for dentists across the UK. NHS contracts, associate tax, VAT, and acquisitions. We only work with dental practices, so we understand the financial specifics that generalist accountants miss.
           </p>
           <p className="hero-reveal-delay-2 mt-4 text-sm font-medium text-white/80">
             Trusted by dental professionals across London, Manchester, and the UK.
@@ -498,23 +582,33 @@ export default function HomePage() {
         <div className={`${siteContainerLg} ${sectionY}`}>
           <p className="section-label">Common questions</p>
           <h2 className="display-serif mt-3 text-2xl font-semibold text-[var(--navy)] sm:text-3xl">Frequently asked.</h2>
-          <div className="mt-8 max-w-3xl">
-            <details className="group card-flat open:shadow-md">
-              <summary className="cursor-pointer list-none px-5 py-4 font-semibold text-[var(--navy)] sm:px-6 sm:py-5 sm:text-lg [&::-webkit-details-marker]:hidden">
-                <span className="flex items-center justify-between gap-4">
-                  Do I need a specialist accountant as a dentist?
-                  <span className="text-[var(--gold-strong)] transition-transform group-open:rotate-45" aria-hidden>
-                    +
+          <div className="mt-8 max-w-3xl space-y-3">
+            {homeFaqs.map((faq) => (
+              <details key={faq.question} className="group card-flat open:shadow-md">
+                <summary className="cursor-pointer list-none px-5 py-4 font-semibold text-[var(--navy)] sm:px-6 sm:py-5 sm:text-lg [&::-webkit-details-marker]:hidden">
+                  <span className="flex items-center justify-between gap-4">
+                    {faq.question}
+                    <span className="text-[var(--gold-strong)] transition-transform group-open:rotate-45" aria-hidden>
+                      +
+                    </span>
                   </span>
-                </span>
-              </summary>
-              <div className="border-t border-[var(--border)] px-5 py-4 text-sm leading-relaxed text-[var(--muted)] sm:px-6 sm:py-5 sm:text-base">
-                <p>
-                  Not strictly — but the question is whether a generalist accountant can give you genuinely useful advice on the financial specifics of dentistry. In our experience, the gap shows most clearly around NHS income, VAT on mixed dental supplies, associate expenses, and practice acquisition. A competent generalist can handle your compliance. A dental specialist can do that and help you make better financial decisions.
-                </p>
-              </div>
-            </details>
+                </summary>
+                <div className="border-t border-[var(--border)] px-5 py-4 text-sm leading-relaxed text-[var(--muted)] sm:px-6 sm:py-5 sm:text-base">
+                  <p>{faq.answer}</p>
+                </div>
+              </details>
+            ))}
           </div>
+          <p className="mt-8 max-w-3xl text-sm leading-relaxed text-[var(--muted)]">
+            We work with dentists across the UK.{" "}
+            <Link
+              href="/locations"
+              className={`font-semibold text-[var(--navy)] underline decoration-[var(--gold)] decoration-2 underline-offset-4 ${focusRing} rounded`}
+            >
+              See the areas we serve
+            </Link>
+            .
+          </p>
         </div>
       </section>
     </>

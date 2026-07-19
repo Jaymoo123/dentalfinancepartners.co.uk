@@ -47,7 +47,14 @@ export default function BlogIndexPage() {
         Insights for UK dental practices
       </h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-        Practical notes on tax, accounts, and practice economics — written for dentists and owners, not generic SMEs.
+        Practical notes on tax, accounts, and practice economics, written for dentists and owners, not generic SMEs. For the firm itself, see our{" "}
+        <Link
+          href="/"
+          className={`font-semibold text-[var(--ink)] underline decoration-[var(--gold)] decoration-2 underline-offset-4 ${focusRing} rounded`}
+        >
+          specialist dental accountants
+        </Link>{" "}
+        page.
       </p>
 
       {/* Featured Category Guides */}
