@@ -6,7 +6,12 @@ methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
 site-specific WHAT and the heartbeat. Ground-truth facts live in
 `docs/dentists/house_positions.md`, never here.
 
-Last updated: 2026-06-03.
+Last updated: 2026-07-19.
+
+## 2026-07-19 — Corepage B2 committed, NOT deployed
+- Homepage corepage rewrite committed (d3e705dd): head-token title/H1 + commercial schema. Dividend-rate fix on profit-extraction guide (88ee3a3d, 2026/27 rates 10.75/35.75). Awaiting deploy word.
+- Dental Pay & Tax Index P1 manifest committed (53eed5d8): `docs/dentists/research/P1_DATA_MANIFEST.md` — awaiting owner data-source sign-off.
+- Log: `docs/_engines/logs/SESSION_2026-07-19_GROWTH_DAY1.md`.
 
 ## Site facts
 - Brand: Dental Finance Partners · domain `www.dentalfinancepartners.co.uk`

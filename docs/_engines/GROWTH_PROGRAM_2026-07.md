@@ -506,3 +506,34 @@ Six parallel agents walked every live site end-to-end. VERDICT: ALL HEALTHY.
 - Pre-existing content gaps found (NOT deploy regressions), add to backlog:
   medical /resources/gp-tax + /resources/gp-practice registered but guides never
   authored (filtered out of static params -> 404). ir35 has 2 equivalent by-design 404s.
+
+---
+
+## SESSION 9 (2026-07-19) — GROWTH PLAN DAY-1 (CRO-first master plan approved + executed)
+
+Master plan APPROVED (CRO-first): `docs/_engines/GROWTH_PLAN_2026-07-19.md`. Full day-1 log:
+`docs/_engines/logs/SESSION_2026-07-19_GROWTH_DAY1.md`. 14+ commits pushed to main. Highlights:
+
+- **Monitoring restored:** all 3 GitHub workflows GREEN — CI Build&Lint, Content Quality
+  (changed-files-only), Weekly Optimisation Engine end-to-end with new secrets (first
+  successful run since 07-13).
+- **Nurture ARMED ×6** (email-only + autopause; retro-safe — no dormant-period state rows).
+  Property untouched.
+- **CRO detectors live: 23 findings.** Headline: solicitors 977 engaged → 15 calc → 1 lead.
+- **Corepage rewrites committed NOT deployed:** b8ae2269 solicitors /services (incl.
+  owner-approved /contact query migration), d3e705dd dentists homepage.
+- **Generalist C1 metas + construction-software expand** 43323c0a (fabricated software
+  pricing caught + fixed). Dentists dividend-rate fix 88ee3a3d.
+- **ServiceTiers/StatsBar/LeadForm-fields ported to 7 core sites** 744d372f — copy awaiting
+  owner sign-off, not deployed.
+- **GEO engine builds:** schema whitelist b356aafa, entity graph + Companies House sameAs
+  9af87738, llms.txt 098fbcf6, citation battery 1ed0ad5d, baseline 5/48 estate hits c2bf1428.
+- **Plumbing:** Bing client 15/15 + GetQueryStats weekly ab292ac2; tripwire bundle-check fix
+  fe4a286a (P0 was architecture drift, capture verified healthy); CI-green fixes 8fb7f776;
+  deploy_watch rows medical 07-20 / agency 07-22.
+- **Dental Pay & Tax Index P1 manifest** committed (53eed5d8) — awaiting owner sign-off.
+- **Assistant data-pass verdict:** 59% opens, 14/7,235 compose → hybrid v2 justified,
+  Property-first when unfrozen.
+
+**OWNER OPEN:** MED-F2 confirm (07-20); Dental Index P1 sign-off; ServiceTiers copy sign-off;
+Bing Places address/phone/brand (GBP permanently NO); deploy word for corepage + extras + metas.

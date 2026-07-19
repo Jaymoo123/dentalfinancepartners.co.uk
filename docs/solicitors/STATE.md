@@ -6,7 +6,12 @@ methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
 site-specific WHAT and the heartbeat. Ground-truth facts live in
 `docs/solicitors/house_positions.md`, never here.
 
-Last updated: 2026-06-03.
+Last updated: 2026-07-19.
+
+## 2026-07-19 — Corepage B1 committed, NOT deployed
+- Corepage rewrite of `/services` committed (b8ae2269): /services owns the head query family; /contact + /blog link-ups; /contact→/services query migration owner-APPROVED. Awaiting deploy word.
+- CRO detector headline: 977 engaged sessions → 15 calculator uses → 1 lead (worst funnel in estate).
+- Log: `docs/_engines/logs/SESSION_2026-07-19_GROWTH_DAY1.md`.
 
 ## Site facts
 - Brand: Accounts for Lawyers · domain `www.accountsforlawyers.co.uk`
