@@ -13,7 +13,7 @@ ${niche.domain}. It exists for AI retrieval, training, and citation.
 The structured index lives at https://${niche.domain}/llms.txt
 and the current tax rates JSON at /api/uk-tax-rates.json.
 
-Editorial: all tax figures use 2025/26 UK rates as of the date below. Always
+Editorial: all tax figures use 2026/27 UK rates (Finance Act 2026) as of the date below. Always
 verify against gov.uk for time-sensitive decisions. For advice specific to a
 given agency, see https://${niche.domain}/contact.
 
