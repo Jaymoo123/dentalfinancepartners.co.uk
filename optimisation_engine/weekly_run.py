@@ -209,6 +209,10 @@ def step_ingest_dataforseo(*, sites: list[str], execute: bool) -> list[dict]:
     print(f"[Step 2] DataForSEO ingestion ({'EXECUTE' if execute else 'DRY-RUN'})")
     print("=" * 80)
 
+    if not (os.environ.get("DATAFORSEO_API_LOGIN") and os.environ.get("DATAFORSEO_API_PASSWORD")):
+        print("  [SKIP] DATAFORSEO_API_LOGIN/PASSWORD not set — skipping DataForSEO step")
+        return []
+
     deep_site = deep_pull_site_this_week()
     print(f"  This week's deep-pull site: {deep_site}")
     print(f"  Pre-run DataForSEO spend today: ${CostTracker.spent_today('dataforseo'):.4f}")
