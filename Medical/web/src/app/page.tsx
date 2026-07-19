@@ -6,7 +6,6 @@ import { StickyCTA } from "@/components/ui/StickyCTA";
 import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getPostBySlug } from "@/lib/blog";
-import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 import { buildFaqPage } from "@/lib/schema";
 import { TestimonialSlider } from "@/components/medical/TestimonialSlider";
 
@@ -170,16 +169,12 @@ export default function HomePage() {
     (p): p is NonNullable<typeof p> => Boolean(p),
   );
 
-  const orgSchema = buildOrganizationJsonLd();
   const faqSchema = buildFaqPage(HOMEPAGE_FAQS);
 
   return (
     <>
       <StickyCTA />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
-      />
+      {/* Organization now ships site-wide from the root layout. */}
       {faqSchema && (
         <script
           type="application/ld+json"

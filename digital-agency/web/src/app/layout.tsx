@@ -12,6 +12,7 @@ import { ExitIntentModal } from "@/components/blog/ExitIntentModal";
 import { SpecialistWidget } from "@/components/support/SpecialistWidget";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
+import { JsonLd, buildOrganization, buildWebSite } from "@/lib/schema";
 
 // GoogleAnalytics removed: was mounted unconditionally in <head> (the latent
 // Solicitors pre-fix defect identified in the Wave-5 audit). GA4 is now gated
@@ -91,6 +92,10 @@ export default function RootLayout({
       <body
         className={`${plusJakarta.variable} ${plusJakarta.className} antialiased`}
       >
+        {/* Site-wide entity graph: canonical Organization (+ Companies House
+            sameAs) and WebSite nodes emitted once here so every page carries
+            the #organization / #website @ids AI knowledge-graph crawlers use. */}
+        <JsonLd data={[buildOrganization(), buildWebSite()].filter((x): x is NonNullable<typeof x> => x !== null)} />
         {/*
          * AN-01 (opt-out posture): track by default under legitimate interest.
          * Visitor can opt out via the ConsentToggle in SiteFooter.

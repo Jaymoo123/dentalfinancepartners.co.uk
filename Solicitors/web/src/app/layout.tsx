@@ -10,6 +10,8 @@ import { ReturningBar } from "@/components/intent/ReturningBar";
 import { DeepScrollModal } from "@/components/intent/DeepScrollModal";
 import { SpecialistWidget } from "@/components/support/SpecialistWidget";
 import { siteConfig } from "@/config/site";
+import { buildOrganizationJsonLd, buildWebSite } from "@/lib/schema/index";
+import { JsonLd } from "@/lib/schema/index";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
@@ -79,6 +81,10 @@ export default function RootLayout({
       <body
         className={`${plusJakarta.variable} ${cormorant.variable} ${plusJakarta.className} antialiased`}
       >
+        {/* Site-wide entity graph: canonical Organization (+ Companies House
+            sameAs) and WebSite nodes emitted once here so every page carries
+            the #organization / #website @ids AI knowledge-graph crawlers use. */}
+        <JsonLd data={[buildOrganizationJsonLd(), buildWebSite()]} />
         {/*
          * AN-01 (opt-out posture): track by default under legitimate interest.
          * Visitor can opt out via the "Do not track me" footer link.

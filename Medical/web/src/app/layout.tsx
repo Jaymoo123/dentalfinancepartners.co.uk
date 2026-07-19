@@ -12,6 +12,7 @@ import { DeepScrollModal } from "@/components/intent/DeepScrollModal";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
 import { JsonLd, buildWebSite } from "@/lib/schema";
+import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
@@ -81,7 +82,7 @@ export default function RootLayout({
         {/* Site-wide WebSite + SearchAction entity graph root; publisher
             references the canonical Organization @id. Emitted once here so
             every page carries the root node without per-page duplication. */}
-        <JsonLd data={buildWebSite()} />
+        <JsonLd data={[buildOrganizationJsonLd(), buildWebSite()]} />
         {/*
          * AN-01 (opt-out posture): track by default under legitimate interest.
          * Visitor can opt out via the "Do not track me" footer link (ConsentToggle

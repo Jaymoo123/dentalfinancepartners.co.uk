@@ -4,8 +4,6 @@ import { BrandLogoHero } from "@/components/brand/BrandLogoHero";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
-import { buildOrganizationJsonLd } from "@/lib/organization-schema";
-import { buildWebSite } from "@/lib/schema/index";
 import { TestimonialSlider } from "@/components/solicitors/TestimonialSlider";
 import { getAllPosts, getCategorySlug, calculateReadTime } from "@/lib/blog";
 
@@ -138,17 +136,12 @@ const specialistRows = [
 ];
 
 export default function HomePage() {
-  const orgSchema = buildOrganizationJsonLd();
-  const webSiteSchema = buildWebSite();
   const allPosts = getAllPosts();
   const recentPosts = allPosts.slice(0, 3);
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([orgSchema, webSiteSchema]) }}
-      />
+      {/* Organization + WebSite now ship site-wide from the root layout. */}
 
       <section
         className={sectionYLoose}

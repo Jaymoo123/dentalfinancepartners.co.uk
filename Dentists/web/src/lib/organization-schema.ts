@@ -12,6 +12,11 @@ export function buildOrganizationJsonLd() {
     alternateName: siteConfig.company.tradingName,
     // When Ashfield Trading Ltd becomes VAT-registered, add: vatID: siteConfig.company.vatNumber
     url: siteConfig.url,
+    // sameAs links the trading brand to its authoritative public record so AI
+    // answer engines and knowledge graphs resolve the firm to a real entity.
+    sameAs: [
+      `https://find-and-update.company-information.service.gov.uk/company/${siteConfig.company.number}`,
+    ],
     address: {
       "@type": "PostalAddress",
       streetAddress: `${office.line1}, ${office.line2}`,

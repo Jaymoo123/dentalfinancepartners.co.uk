@@ -5,7 +5,6 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getPostBySlug, getCategorySlug } from "@/lib/blog";
-import { buildOrganizationJsonLd, buildWebSite, JsonLd } from "@/lib/schema/index";
 import { TestimonialSlider } from "@/components/dentists/TestimonialSlider";
 
 const btnMailOutline =
@@ -159,12 +158,9 @@ export default function HomePage() {
     (p): p is NonNullable<typeof p> => Boolean(p),
   );
 
-  const orgSchema = buildOrganizationJsonLd();
-  const webSiteSchema = buildWebSite();
-
   return (
     <>
-      <JsonLd data={[orgSchema, webSiteSchema]} />
+      {/* Organization + WebSite now ship site-wide from the root layout. */}
       <section className="hero-brand border-b border-white/10">
         <div className={`hero-inner ${siteContainerLg} ${sectionYLoose}`}>
           <div className="hero-reveal">

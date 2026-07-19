@@ -4,7 +4,7 @@ import Image from "next/image";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
-import { JsonLd, buildOrganization, buildWebSite } from "@/lib/schema";
+import { JsonLd } from "@/lib/schema";
 import { buildFaqPage } from "@/lib/schema/faq-page";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
@@ -126,7 +126,8 @@ export default function HomePage() {
 
   return (
     <>
-      <JsonLd data={[buildOrganization(), buildWebSite(), buildFaqPage(faqs)].filter((s): s is NonNullable<typeof s> => s !== null)} />
+      {/* Organization + WebSite now ship site-wide from the root layout. */}
+      <JsonLd data={[buildFaqPage(faqs)].filter((s): s is NonNullable<typeof s> => s !== null)} />
 
       {/* Hero */}
       <section className="relative min-h-[480px] sm:h-[600px] lg:h-[700px] overflow-hidden">

@@ -36,6 +36,11 @@ export function buildOrganizationJsonLd() {
     alternateName: siteConfig.company.tradingName,
     // When Ashfield Trading Ltd becomes VAT-registered, add: vatID: siteConfig.company.vatNumber
     url: siteConfig.url,
+    // sameAs links the trading brand to its authoritative public record so AI
+    // answer engines and knowledge graphs resolve the firm to a real entity.
+    sameAs: [
+      `https://find-and-update.company-information.service.gov.uk/company/${siteConfig.company.number}`,
+    ],
     description: siteConfig.description,
     address: {
       "@type": "PostalAddress",
@@ -64,6 +69,20 @@ export function buildOrganizationJsonLd() {
       "CIS deduction rates",
     ],
     priceRange: "££",
+  });
+}
+
+/** Build WebSite JSON-LD (entity-graph node, emitted site-wide from the root layout). */
+export function buildWebsiteJsonLd() {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${siteConfig.url}#website`,
+    url: siteConfig.url,
+    name: siteConfig.name,
+    description: siteConfig.description,
+    publisher: { "@id": `${siteConfig.url}#organization` },
+    inLanguage: "en-GB",
   });
 }
 

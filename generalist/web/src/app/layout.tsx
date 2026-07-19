@@ -12,6 +12,8 @@ import { DeepScrollModal } from "@/components/intent/DeepScrollModal";
 import { SpecialistWidget } from "@/components/support/SpecialistWidget";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
+import { JsonLd, buildWebSite } from "@/lib/schema";
+import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 
 const siteUrl = siteConfig.url;
 
@@ -76,6 +78,10 @@ export default function RootLayout({
   return (
     <html lang="en-GB" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className="antialiased font-sans">
+        {/* Site-wide entity graph: canonical Organization (+ Companies House
+            sameAs) and WebSite nodes emitted once here so every page carries
+            the #organization / #website @ids AI knowledge-graph crawlers use. */}
+        <JsonLd data={[buildOrganizationJsonLd(), buildWebSite()]} />
         {/*
          * AN-01 (opt-out posture): track by default under legitimate interest.
          * Visitor can opt out via the "Do not track me" footer link.

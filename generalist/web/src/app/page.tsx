@@ -4,8 +4,6 @@ import { btnPrimary, btnSecondary, siteContainerLg, sectionY } from "@/component
 import { siteConfig } from "@/config/site";
 import {
   JsonLd,
-  buildOrganization,
-  buildWebSite,
   buildFaqPage,
   buildAccountingService,
   buildService,
@@ -290,8 +288,7 @@ export default function HomePage() {
     <>
       <JsonLd
         data={[
-          buildOrganization(),
-          buildWebSite(),
+          // Organization + WebSite now ship site-wide from the root layout.
           webPageSchema,
           localBusinessSchema,
           serviceSchema,

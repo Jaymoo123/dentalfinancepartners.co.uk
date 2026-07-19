@@ -11,7 +11,7 @@ import { ReturningBar } from "@/components/intent/ReturningBar";
 import { DeepScrollModal } from "@/components/intent/DeepScrollModal";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
-import { buildOrganizationJsonLd } from "@/lib/schema";
+import { buildOrganizationJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
 
 const siteUrl = siteConfig.url;
 
@@ -73,6 +73,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: buildOrganizationJsonLd() }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: buildWebsiteJsonLd() }}
         />
       </head>
       <body className="antialiased font-sans">
