@@ -100,7 +100,12 @@ def check_bundle():
                     return False, f"inlined Supabase URL is CORRUPTED (trailing {nxt!r}) -> client lead capture is BROKEN"
                 idx = t.find(marker, idx + 1)
         if not found:
-            return False, "could not locate the inlined Supabase URL in the live bundle (cannot verify)"
+            # ponytail: leads now submit via the server route, not an inlined client
+            # Supabase URL — probe the API instead of failing on an absent marker.
+            r = httpx.post(BASE + "/api/leads/submit", json={}, timeout=30)
+            if r.status_code == 400 and "error" in r.text:
+                return True, "no inlined Supabase URL (server-route capture); /api/leads/submit healthy (400 validation)"
+            return False, f"/api/leads/submit unhealthy: HTTP {r.status_code} {r.text[:120]!r}"
         return True, "inlined Supabase URL is clean"
     except Exception as e:
         return False, f"bundle check error: {e}"
