@@ -34,6 +34,18 @@
   --brand-primary: var(--gold);
   --brand-primary-strong: var(--gold-strong);
   --brand-on-primary: var(--navy);
+
+  /* Chart colour palette (recharts / research pages) -- navy/gold family */
+  --chart-1: #b8975d;   /* gold */
+  --chart-2: #001b3d;   /* navy */
+  --chart-3: #1a3a5c;   /* navy-muted */
+  --chart-4: #9e7f4a;   /* gold-strong */
+  --chart-5: #5c6b80;   /* muted */
+  /* shadcn-style semantic aliases used by chart.tsx tooltip */
+  --background: #f4f6f9;
+  --foreground: var(--ink);
+  --border: #e2e8f0;
+  --muted-foreground: var(--muted);
 }
 
 @theme inline {

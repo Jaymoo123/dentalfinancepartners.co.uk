@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "name": "UK Charity Scrutiny Cliff-Edge Monitor",
+    "generated_at": "2026-07-20T19:15:25Z",
+    "jurisdiction": "England and Wales",
+    "sources": [
+      {
+        "name": "Charity Commission full register extract (OGL v3.0)",
+        "publisher": "Charity Commission for England and Wales",
+        "url": "https://register-of-charities.charitycommission.gov.uk/en/register/full-register-download",
+        "licence": "Open Government Licence v3.0"
+      }
+    ],
+    "notes": "'In cliff' = active charities with latest reported income between 10% below a threshold and the threshold itself. 'Just crossed' = active charities within 10% above the threshold. Income is latest_income; charities without a reported income are excluded. Thresholds: independent examination \u00a325,000; accruals/qualified examiner \u00a3250,000; statutory audit \u00a31,000,000 (income test; asset test not available in this extract). Main charities only (linked charities excluded)."
+  },
+  "headline": {
+    "active_charities_with_income": 162587,
+    "cliff_margin_pct": 10
+  },
+  "cliff_edges": [
+    {
+      "key": "ie_gate",
+      "label": "Independent examination gate (\u00a325,000)",
+      "threshold": 25000,
+      "cliff_floor": 22500,
+      "charities_in_cliff": 3472,
+      "charities_just_crossed": 2401
+    },
+    {
+      "key": "accruals_gate",
+      "label": "Accruals / qualified examiner gate (\u00a3250,000)",
+      "threshold": 250000,
+      "cliff_floor": 225000,
+      "charities_in_cliff": 1874,
+      "charities_just_crossed": 1468
+    },
+    {
+      "key": "audit_gate",
+      "label": "Audit gate (\u00a31,000,000)",
+      "threshold": 1000000,
+      "cliff_floor": 900000,
+      "charities_in_cliff": 920,
+      "charities_just_crossed": 465
+    }
+  ]
+}

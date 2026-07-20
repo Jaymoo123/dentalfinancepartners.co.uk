@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "name": "UK Charity Cause Income and Reserves Health Index",
+    "generated_at": "2026-07-20T19:15:25Z",
+    "jurisdiction": "England and Wales",
+    "sources": [
+      {
+        "name": "Charity Commission full register extract (OGL v3.0)",
+        "publisher": "Charity Commission for England and Wales",
+        "url": "https://register-of-charities.charitycommission.gov.uk/en/register/full-register-download",
+        "licence": "Open Government Licence v3.0"
+      }
+    ],
+    "notes": "Median income is each registered charity's latest reported gross income (latest_income). Reserves health uses free_reserves from charity_annual_return_partb (most recent return), divided by latest_expenditure to produce months of reserves. A charity can appear under multiple cause classifications; the charity count per cause reflects charities with that classification code, not unique charities. Only registered, main charities included. 'Under 3 months reserves' is the share of charities in that cause group with fewer than 3 months of free reserves relative to annual expenditure."
+  },
+  "cause_income": [
+    {
+      "cause_code": 107,
+      "cause_label": "Accommodation / housing",
+      "charity_count": 7639,
+      "median_income": 53344,
+      "median_reserves_months": 8.9,
+      "under_3_months_reserves_pct": 21.6
+    },
+    {
+      "cause_code": 108,
+      "cause_label": "Religious activities",
+      "charity_count": 34716,
+      "median_income": 45077,
+      "median_reserves_months": 19.0,
+      "under_3_months_reserves_pct": 17.5
+    },
+    {
+      "cause_code": 115,
+      "cause_label": "Human rights / equality / diversity",
+      "charity_count": 6616,
+      "median_income": 42649,
+      "median_reserves_months": 5.7,
+      "under_3_months_reserves_pct": 30.5
+    },
+    {
+      "cause_code": 114,
+      "cause_label": "Armed forces / emergency services",
+      "charity_count": 986,
+      "median_income": 41610,
+      "median_reserves_months": 18.3,
+      "under_3_months_reserves_pct": 17.0
+    },
+    {
+      "cause_code": 204,
+      "cause_label": "People of a particular ethnic or racial origin",
+      "charity_count": 14887,
+      "median_income": 37074,
+      "median_reserves_months": 6.7,
+      "under_3_months_reserves_pct": 27.9
+    },
+    {
+      "cause_code": 113,
+      "cause_label": "Economic / community development",
+      "charity_count": 20380,
+      "median_income": 34523,
+      "median_reserves_months": 5.6,
+      "under_3_months_reserves_pct": 31.0
+    },
+    {
+      "cause_code": 111,
+      "cause_label": "Animal welfare",
+      "charity_count": 4328,
+      "median_income": 33569,
+      "median_reserves_months": 17.5,
+      "under_3_months_reserves_pct": 16.4
+    },
+    {
+      "cause_code": 103,
+      "cause_label": "Health / saving of lives",
+      "charity_count": 26964,
+      "median_income": 31974,
+      "median_reserves_months": 7.8,
+      "under_3_months_reserves_pct": 23.3
+    },
+    {
+      "cause_code": 104,
+      "cause_label": "Disability",
+      "charity_count": 25099,
+      "median_income": 29330,
+      "median_reserves_months": 7.0,
+      "under_3_months_reserves_pct": 24.9
+    },
+    {
+      "cause_code": 105,
+      "cause_label": "Prevention / relief of poverty",
+      "charity_count": 32613,
+      "median_income": 27569,
+      "median_reserves_months": 6.9,
+      "under_3_months_reserves_pct": 27.8
+    },
+    {
+      "cause_code": 203,
+      "cause_label": "People with disabilities",
+      "charity_count": 43815,
+      "median_income": 26452,
+      "median_reserves_months": 7.0,
+      "under_3_months_reserves_pct": 24.8
+    },
+    {
+      "cause_code": 207,
+      "cause_label": "General public / mankind",
+      "charity_count": 86593,
+      "median_income": 26216,
+      "median_reserves_months": 8.6,
+      "under_3_months_reserves_pct": 23.7
+    },
+    {
+      "cause_code": 205,
+      "cause_label": "Other charities / voluntary bodies",
+      "charity_count": 39222,
+      "median_income": 25943,
+      "median_reserves_months": 8.8,
+      "under_3_months_reserves_pct": 26.5
+    },
+    {
+      "cause_code": 206,
+      "cause_label": "Other defined groups",
+      "charity_count": 25823,
+      "median_income": 24471,
+      "median_reserves_months": 7.3,
+      "under_3_months_reserves_pct": 23.9
+    },
+    {
+      "cause_code": 102,
+      "cause_label": "Education / training",
+      "charity_count": 81021,
+      "median_income": 23810,
+      "median_reserves_months": 7.5,
+      "under_3_months_reserves_pct": 25.3
+    },
+    {
+      "cause_code": 106,
+      "cause_label": "Overseas aid / famine relief",
+      "charity_count": 9244,
+      "median_income": 23737,
+      "median_reserves_months": 9.5,
+      "under_3_months_reserves_pct": 29.5
+    },
+    {
+      "cause_code": 117,
+      "cause_label": "Other charitable purposes",
+      "charity_count": 14301,
+      "median_income": 23436,
+      "median_reserves_months": 7.0,
+      "under_3_months_reserves_pct": 25.6
+    },
+    {
+      "cause_code": 202,
+      "cause_label": "Elderly / older people",
+      "charity_count": 49393,
+      "median_income": 23090,
+      "median_reserves_months": 8.4,
+      "under_3_months_reserves_pct": 23.1
+    },
+    {
+      "cause_code": 116,
+      "cause_label": "Recreation",
+      "charity_count": 17030,
+      "median_income": 21861,
+      "median_reserves_months": 6.2,
+      "under_3_months_reserves_pct": 30.8
+    },
+    {
+      "cause_code": 201,
+      "cause_label": "Children / young people",
+      "charity_count": 91167,
+      "median_income": 20986,
+      "median_reserves_months": 7.2,
+      "under_3_months_reserves_pct": 25.7
+    },
+    {
+      "cause_code": 109,
+      "cause_label": "Arts / culture / heritage / science",
+      "charity_count": 29017,
+      "median_income": 20222,
+      "median_reserves_months": 6.9,
+      "under_3_months_reserves_pct": 27.8
+    },
+    {
+      "cause_code": 101,
+      "cause_label": "General charitable purposes",
+      "charity_count": 55903,
+      "median_income": 18386,
+      "median_reserves_months": 8.1,
+      "under_3_months_reserves_pct": 25.3
+    },
+    {
+      "cause_code": 110,
+      "cause_label": "Amateur sport",
+      "charity_count": 25259,
+      "median_income": 17542,
+      "median_reserves_months": 7.0,
+      "under_3_months_reserves_pct": 28.0
+    },
+    {
+      "cause_code": 112,
+      "cause_label": "Environment / conservation / heritage",
+      "charity_count": 18227,
+      "median_income": 15000,
+      "median_reserves_months": 9.1,
+      "under_3_months_reserves_pct": 25.7
+    }
+  ]
+}

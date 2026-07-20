@@ -56,6 +56,11 @@ All calculators are free to use at: https://www.dentalfinancepartners.co.uk/calc
 - [Selling Your Dental Practice Guide](https://www.dentalfinancepartners.co.uk/resources/selling?utm_source=chatgpt&utm_medium=llms): Goodwill valuation, CGT, BADR at 18%, and net-of-tax proceeds.
 - [NHS UDA Contract Value and Pensions Guide](https://www.dentalfinancepartners.co.uk/resources/nhs?utm_source=chatgpt&utm_medium=llms): UDA contract value, SDR remuneration, and NHS Pension mechanics for dentists.
 
+## Research and data
+
+- [NHS Dental Activity Recovery Index](https://www.dentalfinancepartners.co.uk/research/nhs-dental-activity-index?utm_source=chatgpt&utm_medium=llms): Monthly NHS dental UDA and course-of-treatment delivery in England, benchmarked against the pre-Covid 2019/20 baseline. Data sourced from NHS Business Services Authority (NHSBSA), published under the Open Government Licence v3.0.
+- [NHS Dentist Earnings and Expenses Index](https://www.dentalfinancepartners.co.uk/research/nhs-dentist-earnings-index?utm_source=chatgpt&utm_medium=llms): Gross earnings, practice expenses, and net income for self-employed primary-care NHS dentists in England, 2009/10 to 2023/24. Data sourced from NHS England Digital, published under the Open Government Licence v3.0.
+
 ## For specific dental audiences
 - [For dental associates](https://www.dentalfinancepartners.co.uk/for-associates?utm_source=chatgpt&utm_medium=llms): Tax planning, take-home optimisation, and incorporation decisions for NHS and private associates.
 - [For practice principals](https://www.dentalfinancepartners.co.uk/for-principals?utm_source=chatgpt&utm_medium=llms): Practice accounts, profit extraction, payroll, and VAT compliance for practice owners.

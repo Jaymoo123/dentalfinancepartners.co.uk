@@ -99,6 +99,10 @@ These figures are taken from the site's own rate reference page and reflect prim
 - [Practice valuation + succession planning](https://www.accountsforlawyers.co.uk/services/practice-valuation?utm_source=chatgpt&utm_medium=llms): EBITDA normalisation, BADR rate-change modelling, Section 162 incorporation relief, 18-24 month pre-sale timeline.
 - [COFA + COLP compliance support](https://www.accountsforlawyers.co.uk/services/cofa-compliance-support?utm_source=chatgpt&utm_medium=llms): New-COFA onboarding, breach decision log, reconciliation rhythm, SRA inspection readiness.
 
+## Research and data
+- [UK Legal Incorporation Index](https://www.accountsforlawyers.co.uk/research/uk-legal-incorporation-index?utm_source=chatgpt&utm_medium=llms): How law firm structures shifted from partnership to incorporated between 2011 and 2026, using SRA Regulated Community Statistics (aggregate firm-structure data) and Companies House new-incorporation flow data (OGL v3.0). Incorporated firms rose from 22% to 59% of the SRA-regulated base; 98.5% of new legal-sector companies registered in the trailing 12 months were private limited companies.
+- [Law Firm Survival Index](https://www.accountsforlawyers.co.uk/research/law-firm-survival-index?utm_source=chatgpt&utm_medium=llms): UK legal-sector business survival rates compared with the all-industry average, drawn from ONS Business Demography 2024 (OGL v3.0). Legal activities (SIC 691) showed a five-year survival rate of 59.8% for the 2019 birth cohort versus 38.4% across all industries, a gap of approximately 21 percentage points.
+
 ## Blog categories
 - [SRA Compliance and Trust Accounting](https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting?utm_source=chatgpt&utm_medium=llms)
 - [Sole Practitioner Tax](https://www.accountsforlawyers.co.uk/blog/sole-practitioner-tax?utm_source=chatgpt&utm_medium=llms)
