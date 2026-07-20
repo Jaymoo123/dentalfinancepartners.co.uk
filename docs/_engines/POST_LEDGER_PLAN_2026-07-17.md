@@ -1,6 +1,6 @@
 # Post-ledger next steps — safe subset only
 
-**Written: 2026-07-17. Status: SAVED, NOT EXECUTED (owner will return to it).**
+**Written: 2026-07-17. Status: PARTIALLY EXECUTED 2026-07-20 — item 1 (stale tax figures) DONE via the estate stale-figure sweep (commit 60a54e22) + residue re-grep (clean); item 3 (djh noise filter) DONE. Item 2 (dentists flat-URL 301s) found ALREADY IMPLEMENTED in Dentists middleware — pending live verification. Parked Property/corepage/meta/consolidation actions remain parked per watch windows.**
 
 **Staleness check before executing** — this plan is stale if any of these has changed:
 - Ledger data is from GSC through 2026-07-15. If more than ~2 weeks old at execution, re-run `python -m optimisation_engine.analysis.query_ledger --site <key>` (with a fresh `scripts/_ledger_pull.py`-style pull) before acting on any per-page call.

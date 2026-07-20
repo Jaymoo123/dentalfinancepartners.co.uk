@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>Lead Generation Proposal · $brand_name</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #1a6b52; --accent-dark: #124b3a;
+    --ink: #191b1f; --ink-soft: #33363d; --muted: #6b7280;
+    --line: #d8dbdf; --hairline: #e9ebee;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #fff; color: var(--ink);
+    font-family: "Inter", -apple-system, "Segoe UI", sans-serif;
+    font-size: 12px; line-height: 1.68; font-weight: 400;
+    font-feature-settings: "tnum";
+    -webkit-font-smoothing: antialiased;
+  }
+  .page { max-width: 800px; margin: 0 auto; padding: 60px 48px; }
+  h1, h2 { font-family: "Source Serif 4", Georgia, serif; }
+  h1 { font-size: 26px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; margin: 0 0 8px; }
+  h2 { font-size: 16.5px; font-weight: 600; margin: 48px 0 2px; }
+  h2 .no { font-family: "Inter", sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.14em; color: var(--muted); display: block; margin-bottom: 5px; }
+  h2 + .rule { border: 0; border-top: 1px solid var(--ink); margin: 8px 0 14px; }
+  h3 { font-size: 12px; font-weight: 600; margin: 20px 0 4px; }
+  p { margin: 9px 0; color: var(--ink-soft); }
+  strong { font-weight: 600; color: var(--ink); }
+
+  .masthead { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 22px; margin-bottom: 40px; border-bottom: 2px solid var(--ink); }
+  .wordmark { font-family: "Source Serif 4", Georgia, serif; font-size: 17px; font-weight: 600; letter-spacing: 0.01em; }
+  .wordmark .amp { color: var(--accent); }
+  .wordmark .sub { display: block; font-family: "Inter", sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+  .docmeta { text-align: right; font-size: 10px; line-height: 1.75; color: var(--muted); }
+  .docmeta .doctype { color: var(--ink); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+  .lede { font-size: 13px; line-height: 1.75; color: var(--ink-soft); max-width: 66ch; }
+
+  .kpis { display: grid; grid-template-columns: repeat(4, 1fr); margin: 26px 0 8px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--hairline); }
+  .kpi { padding: 14px 16px 14px 0; }
+  .kpi + .kpi { padding-left: 20px; border-left: 1px solid var(--hairline); }
+  .kpi .num { font-family: "Source Serif 4", Georgia, serif; font-size: 24px; font-weight: 500; color: var(--ink); }
+  .kpi .num small { font-size: 12px; color: var(--muted); font-family: "Inter", sans-serif; }
+  .kpi .lbl { font-size: 9px; text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); margin-top: 3px; line-height: 1.5; }
+
+  figure { margin: 18px 0 6px; }
+  figure img { width: 100%; display: block; }
+  figcaption { font-size: 10px; color: var(--muted); margin-top: 6px; }
+  figcaption .fno { font-weight: 600; color: var(--ink-soft); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 10px; margin: 12px 0; }
+  th { color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; font-size: 8.5px; text-align: left; padding: 0 10px 6px 0; border-bottom: 1px solid var(--ink); }
+  td { border-bottom: 1px solid var(--hairline); padding: 7px 10px 7px 0; vertical-align: top; color: var(--ink-soft); }
+  td.num, th.num { text-align: right; padding-right: 24px; }
+  .tier { font-weight: 600; white-space: nowrap; }
+  .tier-very_high { color: var(--accent-dark); }
+  .tier-high { color: var(--accent); }
+  .tier-medium { color: var(--ink-soft); }
+  .tier-low { color: var(--muted); }
+  tr.nurture td:first-child { color: var(--accent-dark); font-weight: 500; white-space: nowrap; }
+  td .band { display: block; color: var(--muted); font-size: 9px; margin-top: 1px; }
+
+  .options { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 22px 0; border-top: 1px solid var(--ink); }
+  .option { padding: 18px 28px 12px 0; }
+  .option + .option { padding-left: 28px; padding-right: 0; border-left: 1px solid var(--hairline); }
+  .option .name { font-weight: 600; font-size: 9px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-dark); margin-bottom: 12px; }
+  .option .price { font-family: "Source Serif 4", Georgia, serif; font-size: 30px; font-weight: 500; }
+  .option .per { font-size: 10.5px; color: var(--muted); margin: 2px 0 12px; }
+  .option ul { margin: 0; padding-left: 15px; color: var(--ink-soft); font-size: 11px; }
+  .option li { margin: 5px 0; }
+
+  .note { border-left: 2px solid var(--accent); padding: 2px 0 2px 14px; font-size: 11px; color: var(--muted); margin: 16px 0; }
+  .method { font-size: 10px; line-height: 1.7; color: var(--muted); border-top: 1px solid var(--hairline); margin-top: 20px; padding-top: 10px; }
+  .method strong { color: var(--muted); font-weight: 600; }
+  .footer { margin-top: 56px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 9.5px; line-height: 1.75; color: var(--muted); }
+  ol.setup { color: var(--ink-soft); padding-left: 18px; margin: 8px 0; }
+  ol.setup li { margin: 8px 0; padding-left: 4px; }
+  @media print {
+    .page { padding: 0; max-width: none; }
+    .masthead { padding-bottom: 14px; margin-bottom: 22px; }
+    .lede { font-size: 12.5px; line-height: 1.6; }
+    h2 { margin-top: 34px; }
+    .kpis { margin-top: 18px; }
+    .kpi { padding-top: 10px; padding-bottom: 10px; }
+    figure { margin-top: 12px; }
+    h2 { break-after: avoid; }
+    h2.fresh-page { break-before: page; margin-top: 0; }
+    .kpis, .options, .note, .kpi, .option, figure { break-inside: avoid; }
+    tr { break-inside: avoid; }
+    @page { margin: 18mm 16mm; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="masthead">
+    <div class="wordmark">
+      Property Tax Partners
+      <span class="sub">Specialist property tax leads</span>
+    </div>
+    <div class="docmeta">
+      <span class="doctype">Lead Generation Proposal</span><br>
+      Ref $proposal_ref · $proposal_date<br>
+      Prepared for $client_name
+    </div>
+  </div>
+
+  <h1>Supply of property tax leads</h1>
+  <p class="lede">$brand_name ($brand_domain) is a specialist property tax website operated by $legal_entity. The site publishes technical guidance on UK property tax and receives enquiries from landlords, investors and developers seeking an accountant. This document sets out the current lead flow with a statistical view of its trajectory and quality, a redacted sample of recent enquiries, pricing, credit terms and delivery arrangements.</p>
+
+  <h2><span class="no">SECTION 01</span>Lead flow and trajectory</h2>
+  <hr class="rule">
+  <p>All figures are drawn directly from the live lead database on $data_pulled_date. Monthly volumes to date: $monthly_series. Where a projection appears it is clearly marked, stated with its confidence interval, and derived only from the observed arrival series.</p>
+
+  <div class="kpis">
+    <div class="kpi"><div class="num">$total_leads</div><div class="lbl">Leads to date</div></div>
+    <div class="kpi"><div class="num">$run_rate</div><div class="lbl">Trailing 30-day volume<br>(90% CI $run_rate_ci)</div></div>
+    <div class="kpi"><div class="num">$growth_pct<small> /wk</small></div><div class="lbl">Fitted weekly trend, recent 8 weeks</div></div>
+    <div class="kpi"><div class="num">£$median_value</div><div class="lbl">Median est. first-year value per assessed lead</div></div>
+  </div>
+
+  <figure>
+    <img src="data:image/png;base64,$chart_flow" alt="Weekly lead flow with fitted trend and forecast interval">
+    <figcaption><span class="fno">Figure 1.</span> Weekly arrivals. The dashed outline bar is the current week to date. The trend is a Poisson regression fitted to the recent eight complete weeks, shown with a four-week extrapolation and a 90% interval on the trend mean. The launch ramp and the part-complete week are deliberately excluded from the fit.</figcaption>
+  </figure>
+
+  <p>$trend_commentary</p>
+
+  <h2><span class="no">SECTION 02</span>Quality and value of the flow</h2>
+  <hr class="rule">
+  <p>Every lead is individually assessed (tier, enquiry intent, and an estimated first-year engagement value based on typical fees for the work described). The estimates are good-faith sizing, not guarantees; the distribution and its stability over time are the point.</p>
+
+  <figure>
+    <img src="data:image/png;base64,$chart_quality" alt="Tier composition by month and ranked engagement values">
+    <figcaption><span class="fno">Figure 2.</span> Left: assessed leads by tier and month. Right: each assessed lead's estimated first-year engagement value, ranked, coloured by tier (log scale).</figcaption>
+  </figure>
+
+  <p>$quality_commentary</p>
+
+  <table>
+    <tr><th>Enquiry intent</th><th class="num">Leads</th><th class="num">Very High + High</th><th class="num">Median est. value</th></tr>
+    $intent_rows
+  </table>
+
+  <h2><span class="no">SECTION 03</span>Contactability and automated follow-up</h2>
+  <hr class="rule">
+  <p>On $nurture_golive the site went live with an automated follow-up sequence, built to make sure every lead that reaches you can actually be contacted. The flow, in order: the moment an enquiry is submitted it receives an instant acknowledgement, then a short SMS and email sequence that confirms the enquirer's contact details are live, captures anything missing from the original submission, and offers a link to book a call directly. Only leads that respond to verification are passed on: the sequence acts as a quality gate in front of delivery, so a lead that never engages is never handed over, and never charged for.</p>
+  <p>All $n_since enquiries received since go-live have entered the sequence automatically, and $n_back earlier leads were enrolled retrospectively, giving the $n_entered below. The funnel reads top to bottom: each stage is a subset of the stage above.</p>
+  <table>
+    <tr><th>Stage</th><th>What it means</th><th class="num">Leads</th><th class="num">Of entered</th></tr>
+    <tr><td>Entered the sequence</td><td>Enquiry acknowledged instantly, SMS/email follow-up began</td><td class="num">$n_entered</td><td class="num">100%</td></tr>
+    <tr><td>Replied or verified details</td><td>Responded by SMS or email, or confirmed their contact details are live</td><td class="num">$n_replied</td><td class="num">$pct_replied</td></tr>
+    <tr><td>Viewed the booking page</td><td>Clicked the booking link offered in the follow-up messages</td><td class="num">$n_bview</td><td class="num">$pct_bview</td></tr>
+    <tr><td>Booked a call</td><td>Chose a slot and booked a consultation, unprompted by any human</td><td class="num">$n_booked</td><td class="num">$pct_booked</td></tr>
+  </table>
+  <p>$nurture_commentary</p>
+
+  <h2><span class="no">SECTION 04</span>When leads arrive</h2>
+  <hr class="rule">
+  <figure>
+    <img src="data:image/png;base64,$chart_timing" alt="Arrivals by day of week and time of day">
+    <figcaption><span class="fno">Figure 3.</span> Arrival timing across the full series. Highlighted bars fall inside a standard working pattern.</figcaption>
+  </figure>
+  <p>$timing_commentary</p>
+
+  <h2><span class="no">SECTION 05</span>How we tier leads</h2>
+  <hr class="rule">
+  <p>Every lead is individually assessed on the enquirer's self-selected role, the substance of their message and the type of work implied. Four tiers:</p>
+  <table>
+    <tr><th>Tier</th><th>Definition</th><th>Typical examples</th><th class="num">Share of assessed volume</th></tr>
+    <tr><td class="tier tier-very_high">Very High</td><td>Large portfolios or £5k+ projects, usually recurring work</td><td>Multi-property incorporations, £1m+ portfolio restructures, trading businesses with property arms</td><td class="num">$pct_very_high</td></tr>
+    <tr><td class="tier tier-high">High</td><td>£1k to £3k per year recurring potential</td><td>Multi-property incorporation candidates, growth SPVs, HMO portfolios in companies</td><td class="num">$pct_high</td></tr>
+    <tr><td class="tier tier-medium">Medium</td><td>One-off advisory or small recurring work</td><td>Single-property company setups, CGT on a disposal, SDLT questions, Form 17 restructures</td><td class="num">$pct_medium</td></tr>
+    <tr><td class="tier tier-low">Low</td><td>Email-only captures or vague one-line enquiries</td><td>Newsletter-style micro-captures, questions outside accountancy work</td><td class="num">$pct_low</td></tr>
+  </table>
+
+  <h2><span class="no">SECTION 06</span>Sample of recent leads</h2>
+  <hr class="rule">
+  <p>The $sample_n most recent enquiries, exactly as they arrived, with personal data redacted. Where the enquirer gave their name it is shown as [Populated]; the contact details column shows which channels each lead carries and, where relevant, that a detail was captured through the follow-up sequence rather than the original form. Identifying details inside messages are replaced with [NAME], [EMAIL], [PHONE], [COMPANY] or [ADDRESS]. Unredacted versions are shared on execution of the data sharing agreement. Rows marked † engaged with the automated follow-up sequence described in section 3: their contact details were verified, or completed where the original submission was sparse, before handover.</p>
+  <table>
+    <tr><th>Received</th><th>Name</th><th>Contact details</th><th>Role (self-selected)</th><th>Tier</th><th>Message (redacted)</th></tr>
+    $sample_rows
+  </table>
+
+  <h2 class="fresh-page"><span class="no">SECTION 07</span>Pricing</h2>
+  <hr class="rule">
+  <p>Two structures are offered. Both are pay-per-lead, with no retainer, no minimum term and no volume commitment on either side. Option A delivers the full verified flow automatically; Option B sends you each Very High or High tier lead in anonymised form as it arrives, and you choose whether to purchase it.</p>
+
+  <div class="options">
+    <div class="option">
+      <div class="name">Option A · Full flow</div>
+      <div class="price">£$price_all</div>
+      <div class="per">per Qualifying Lead, all tiers</div>
+      <ul>
+        <li>Every Qualifying Lead the site produces, delivered as submitted</li>
+        <li>Exclusive flow while the arrangement is active and paid</li>
+        <li>Covers the full distribution shown in sections 1 and 2</li>
+        <li>Current verified volume around $verified_run_rate leads per month, from roughly $run_rate raw enquiries</li>
+      </ul>
+    </div>
+    <div class="option">
+      <div class="name">Option B · Review and select</div>
+      <div class="price">£$price_top</div>
+      <div class="per">per selected lead, Very High and High tiers only</div>
+      <ul>
+        <li>As each Very High or High tier lead arrives, you receive an anonymised summary in the format of section 6: tier with rationale, enquiry intent, role and portfolio band, verification status, and the redacted message</li>
+        <li>Confirm within $select_window working days and the full lead is delivered under the data sharing agreement and invoiced; leads you pass on are not charged</li>
+        <li>Roughly $top_volume_share of volume, carrying $top_value_share of estimated pipeline value</li>
+        <li>Leads not taken up may be offered elsewhere, so acceptance is first-come on any given lead</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>A <strong>Qualifying Lead</strong> is a genuine property tax enquiry submitted through the site, comprising the enquirer's name plus a working email address and/or telephone number, delivered to your nominated inbox with the lawful basis for sharing in place. A written message is not required for a lead to qualify. Prices exclude VAT; none is currently chargeable as the supplier is not VAT registered.</p>
+
+  <h2><span class="no">SECTION 08</span>Credits and refunds</h2>
+  <hr class="rule">
+  <p>Two credit routes apply, so leads that are not genuine or cannot be reached are not paid for.</p>
+
+  <h3>Automatic credit, objective grounds</h3>
+  <p>Within $rej_window working days of delivery you may flag a lead, with brief evidence, as (a) spam or bot-generated, (b) a duplicate of a lead delivered in the prior 30 days, (c) clearly not a property tax enquiry, or (d) having contact details that do not work (email hard-bounces and any telephone number is unobtainable or invalid). Flags are reviewed reasonably and in good faith; accepted flags are credited in full against the next invoice, or refunded within 30 days if no further invoice is due.</p>
+
+  <h3>Dead-lead credit, evidenced pursuit</h3>
+  <p>A lead whose contact details work but who never responds can also be credited, provided the lead was genuinely pursued. A dead-lead credit is valid only where you evidence <strong>$touchpoints proven contact attempts over $dead_window days</strong> from delivery, spread across telephone call, voicemail, SMS and email, supported by a contact log (call records, message copies or CRM export). Flags raised with the touchpoint log within the $dead_window-day window are reviewed in good faith and, where accepted, credited against the next invoice.</p>
+
+  <div class="note">Leads are billable on delivery rather than on conversion. The credit routes above ensure spam, unreachable contacts and properly pursued non-responders are not charged.</div>
+
+  <h2><span class="no">SECTION 09</span>Setup and how delivery works</h2>
+  <hr class="rule">
+  <ol class="setup">
+    <li><strong>Nominate an inbox.</strong> You give us a single delivery email address. Every lead that passes contact verification (section 3) is forwarded there, including name, contact details, self-selected role and message.</li>
+    <li><strong>Consent and data protection are handled at source.</strong> The lead form carries an acknowledgement that details will be shared with the receiving firm. Data is shared controller-to-controller under UK GDPR and the Data Protection Act 2018 as amended by the Data (Use and Access) Act 2025. Once a lead lands in your inbox, you hold it as an independent controller.</li>
+    <li><strong>Tiering on delivery</strong> (Option B, or on request under Option A): each lead arrives with its tier and a one-line rationale.</li>
+    <li><strong>Monthly billing in arrears.</strong> At the start of each month you receive an itemised lead statement listing the previous month's delivered leads, followed by an invoice. You have 10 working days to reconcile against your own records. Payment is due within $payment_days days; credits from section 8 are applied to the same invoice cycle.</li>
+    <li><strong>No lock-in.</strong> Rolling arrangement, terminable by either side on short written notice.</li>
+  </ol>
+
+  <h2><span class="no">SECTION 10</span>Next steps</h2>
+  <hr class="rule">
+  <p>The suggested route is a short trial phase at the chosen option, allowing lead quality to be validated against your own conversion data, followed by execution of our standard Lead Generation and Data Sharing Agreement, which sets out in full the terms summarised here together with the data protection framework. The agreement is available for review on request.</p>
+
+  <p class="method"><strong>Methodology.</strong> Arrival trend: Poisson regression (log-linear) fitted to the most recent eight complete calendar weeks, excluding the launch ramp so the trend is not overstated; the shaded band in Figure 1 is a 90% interval on the trend mean via the delta method. Trailing 30-day interval: nonparametric bootstrap of daily arrival counts, 5,000 resamples. Engagement values: per-lead good-faith estimates of first-year fees based on the work described in each enquiry; concentration measured as the estimated value share of the top quintile of assessed leads. The observed series is short ($n_weeks complete weeks), so interval estimates are reported alongside every point estimate.</p>
+
+  <div class="footer">
+    $brand_name is a trading name of $legal_entity. Enquiries via the contact form at $brand_domain. This proposal is indicative and not an offer capable of acceptance; terms are as set out in the executed Lead Generation and Data Sharing Agreement. Lead tier assessments and engagement values are good-faith estimates of engagement potential, not guarantees of conversion or value.
+  </div>
+
+</div>
+</body>
+</html>
