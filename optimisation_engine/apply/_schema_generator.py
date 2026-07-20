@@ -96,7 +96,6 @@ SITE_EEAT_PROFILES: dict[str, dict] = {
                 "Dental practice acquisitions", "NHS pension annual allowance", "VAT for dental practices",
                 "Capital allowances for dental equipment",
             ],
-            "memberOf": {"@type": "Organization", "name": "National Association of Specialist Dental Accountants and Lawyers", "url": "https://www.nasdal.org.uk"},
         },
         "author": {
             "@type": "Person",

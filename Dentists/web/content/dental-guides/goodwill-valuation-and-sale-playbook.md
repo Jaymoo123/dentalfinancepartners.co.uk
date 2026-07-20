@@ -26,8 +26,8 @@ ctaBody: 30-minute scoping call. If you're 12-36 months from a sale, the tax pla
 metaTitle_prev: 'Dental Practice Goodwill Valuation UK 2025/26: Sale & Tax'
 metaDescription_prev: How UK dental practice goodwill is actually valued in 2025/26. Methods, regional multiples, post-April-2019 amortisation, BADR, Section 162 incorporation relief.
 dateModified: '2026-06-12'
-reviewedBy: ICAEW Qualified Senior Reviewer
-reviewerCredentials: Chartered Accountant (ACA, ICAEW), NASDAL Member
+reviewedBy: Dental Finance Partners Editorial Team
+reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
