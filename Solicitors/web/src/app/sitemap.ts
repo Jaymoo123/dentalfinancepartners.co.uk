@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/research",
     "/research/uk-legal-incorporation-index",
     "/research/law-firm-survival-index",
+    "/research/uk-solicitor-profession-structure",
     "/privacy-policy",
     "/terms",
     "/cookie-policy",

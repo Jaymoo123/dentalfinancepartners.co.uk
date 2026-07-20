@@ -43,6 +43,7 @@ Datasets compiled from the Charity Commission full register extract, published u
 - [UK Small Charity Finance Index](https://www.trusteetax.co.uk/research/uk-small-charity-finance-index): Income, scrutiny-band and financial-flow aggregates for the small-charity sector, drawn from Charity Commission open data.
 - [UK Charity Survival and Longevity Index](https://www.trusteetax.co.uk/research/uk-charity-survival-index): How long registered charities last: cohort survival rates from 1980 to 2016, median age at removal, and survival by income band. Data source: Charity Commission full register extract (OGL v3.0).
 - [UK Charity Scrutiny Cliff-Edge Monitor](https://www.trusteetax.co.uk/research/uk-charity-scrutiny-cliff): Count of England and Wales charities sitting within 10% below each statutory scrutiny threshold (£25,000 independent examination gate, £250,000 accruals/qualified examiner gate, £1,000,000 audit gate). Data source: Charity Commission full register extract (OGL v3.0).
+- [UK Charity Cause Income and Reserves Health Index](https://www.trusteetax.co.uk/research/uk-charity-cause-income?utm_source=chatgpt&utm_medium=llms): Median gross income and free-reserves health for every charitable cause classification in England and Wales, including median months of reserves and the share of charities under three months of reserves per cause. Data source: Charity Commission full register extract (OGL v3.0).
 
 ## Key facts (current UK charity figures)
 

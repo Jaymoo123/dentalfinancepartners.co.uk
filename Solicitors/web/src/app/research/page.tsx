@@ -9,11 +9,15 @@ import {
   type LegalIncorporationIndexSnapshot,
 } from "@/lib/research/legal-incorporation-index";
 import { type LegalSurvivalSnapshot } from "@/lib/research/legal-survival-index";
+import { type SraProfessionStructureSnapshot } from "@/lib/research/sra-profession-structure";
+import { fmtNumber } from "@/lib/research/sra-profession-structure";
 import incSnapshot from "@/data/uk-legal-incorporation-index.json";
 import survSnapshot from "@/data/legal-survival-index.json";
+import proSnapshot from "@/data/sra-profession-structure.json";
 
 const inc = incSnapshot as unknown as LegalIncorporationIndexSnapshot;
 const surv = survSnapshot as unknown as LegalSurvivalSnapshot;
+const pro = proSnapshot as unknown as SraProfessionStructureSnapshot;
 
 export const metadata: Metadata = {
   title: "Law firm research and data | Accounts for Lawyers",
@@ -38,6 +42,14 @@ const reports = [
     stat: `${surv.headline.legal_activities_5yr_pct_2019.toFixed(0)}%`,
     statLabel: "five-year survival for legal businesses born in 2019 (SIC 691)",
     updated: surv.meta.source_release,
+  },
+  {
+    href: "/research/uk-solicitor-profession-structure",
+    title: "UK Solicitor Profession Structure",
+    blurb: `${fmtNumber(pro.roll.on_the_roll)} solicitors are on the roll in England and Wales, but only ${fmtNumber(pro.roll.with_practising_certificate)} hold a practising certificate. A sourced read on the roll, the practising population and the SRA-regulated firm mix (incorporated ${pro.firm_structure.incorporated_pct_2011}% to ${pro.firm_structure.incorporated_pct_latest}%).`,
+    stat: fmtNumber(pro.roll.with_practising_certificate),
+    statLabel: "solicitors holding a current practising certificate",
+    updated: monthLabel(pro.meta.data_through),
   },
 ];
 

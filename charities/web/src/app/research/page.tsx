@@ -5,15 +5,19 @@ import { siteConfig } from "@/config/site";
 import { fmtNumber, fmtGbp, type FinanceIndexSnapshot } from "@/lib/research/finance-index";
 import { type SurvivalIndexSnapshot } from "@/lib/research/survival-index";
 import { type ScrutinyCliffSnapshot } from "@/lib/research/scrutiny-cliff";
+import { type CauseIncomeSnapshot } from "@/lib/research/cause-income";
 import financeSnapshot from "@/data/uk-small-charity-finance-index.json";
 import survivalSnapshot from "@/data/charity-survival-index.json";
 import cliffSnapshot from "@/data/charity-scrutiny-cliff.json";
+import causeSnapshot from "@/data/charity-cause-income.json";
 
 const finance = financeSnapshot as unknown as FinanceIndexSnapshot;
 const survival = survivalSnapshot as unknown as SurvivalIndexSnapshot;
 const cliff = cliffSnapshot as unknown as ScrutinyCliffSnapshot;
+const cause = causeSnapshot as unknown as CauseIncomeSnapshot;
 
 const ie_cliff = cliff.cliff_edges.find((e) => e.key === "ie_gate")!;
+const causeTopIncome = [...cause.cause_income].sort((a, b) => b.median_income - a.median_income)[0];
 
 export const metadata: Metadata = {
   title: `Charity finance research and data | ${siteConfig.name}`,
@@ -46,6 +50,14 @@ const reports = [
     stat: fmtNumber(ie_cliff.charities_in_cliff),
     statLabel: "charities within 10% of the independent examination gate",
     updated: cliff.meta.generated_at.slice(0, 10),
+  },
+  {
+    href: "/research/uk-charity-cause-income",
+    title: "UK Charity Cause Income and Reserves Health Index",
+    blurb: `Median income and free-reserves health for every charitable cause. ${causeTopIncome.cause_label} charities report the highest median income at ${fmtGbp(causeTopIncome.median_income)}.`,
+    stat: fmtGbp(causeTopIncome.median_income),
+    statLabel: `highest median income by cause (${causeTopIncome.cause_label})`,
+    updated: cause.meta.generated_at.slice(0, 10),
   },
 ];
 

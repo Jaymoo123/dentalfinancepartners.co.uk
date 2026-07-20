@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "name": "UK Solicitor Profession Structure",
+    "jurisdiction": "England and Wales",
+    "generated_at": "2026-07-20",
+    "data_through": "2026-06",
+    "coverage": "Roll and practising-certificate figures from the latest Law Society / SRA annual statistics; SRA-regulated firm structure trend 2011 to 2026.",
+    "licence_note": "SRA statistics used with attribution; not OGL. Aggregate data only; no named-firm data. Reputational-damage clause respected: no firm rankings.",
+    "notes": "This dataset describes the STOCK and structure of the SRA-regulated profession: the solicitor roll, practising certificates, and the constitution mix of regulated firms. It does NOT describe Companies House new-incorporation FLOW. The 58.7% incorporated figure is the share of the existing SRA-regulated FIRM base, not a share of new incorporations. Do not conflate with the separate incorporation-flow series.",
+    "sources": [
+      {
+        "name": "SRA Regulated Community Statistics: Solicitor Firms and Individuals",
+        "publisher": "Solicitors Regulation Authority",
+        "url": "https://www.sra.org.uk/sra/research-publications/regulated-community-statistics/",
+        "licence": "SRA custom licence -- aggregate statistics only; no named-firm data",
+        "attribution": "Source: Solicitors Regulation Authority"
+      },
+      {
+        "name": "Annual Statistics Report: solicitors on the roll and with practising certificates",
+        "publisher": "The Law Society of England and Wales",
+        "url": "https://www.lawsociety.org.uk/topics/research/annual-statistics-report",
+        "licence": "Aggregate statistics used with attribution",
+        "attribution": "Source: The Law Society of England and Wales"
+      }
+    ]
+  },
+  "roll": {
+    "on_the_roll": 218036,
+    "with_practising_certificate": 177841,
+    "not_practising": 40195,
+    "practising_pct": 81.6,
+    "not_practising_pct": 18.4,
+    "note": "The roll is the register of admitted solicitors. Holding a practising certificate is required to practise as a solicitor. The gap is admitted solicitors who are not currently exercising a practising certificate (in-house-unregistered, retired, career break, non-legal roles, or overseas). Figures are aggregate counts from the latest published annual statistics."
+  },
+  "firm_structure": {
+    "as_of": "2026-06",
+    "baseline_year": 2011,
+    "incorporated_pct_2011": 20,
+    "incorporated_pct_latest": 58.7,
+    "llp_pct_latest": 15.9,
+    "partnership_pct_latest": 10.2,
+    "note": "Percentages are the share of the existing SRA-regulated firm base by constitution type (STOCK). Incorporated companies rose from about 20% of regulated firms in 2011 to 58.7% by 2026. LLPs stand at about 15.9% and traditional partnerships have fallen to about 10.2%. The remaining share is sole practitioners and other/licensed bodies. This is not a Companies House incorporation-flow measure."
+  },
+  "abs": {
+    "note": "Alternative Business Structures (licensed bodies) were introduced under the Legal Services Act 2007 and became operational from 2012. They permit non-solicitor ownership and external investment. ABS numbers have grown steadily and are typically operated as incorporated companies, reinforcing the incorporated share of the firm base. The SRA publishes ABS counts within its Regulated Community Statistics; an exact count is not asserted here to avoid over-stating a figure not confirmed in this dataset."
+  }
+}
