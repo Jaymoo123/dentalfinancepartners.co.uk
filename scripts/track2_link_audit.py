@@ -46,12 +46,6 @@ def _arg_site() -> str:
 
 SITE = _arg_site()
 
-# FLAT routing mode: auto-enable for known flat-routed sites (medical), or via --flat flag.
-# Flat sites serve posts at /blog/<slug> (2 segments). A 3-segment /blog/<cat>/<slug>
-# does not exist and 404s. This mirrors scripts/medical_flat_link_audit.py logic.
-_FLAT_SITES = {"medical"}
-FLAT = ("--flat" in sys.argv) or (SITE in _FLAT_SITES)
-
 
 def _load_site_cfg(site: str) -> dict:
     p = ROOT / "sites" / f"{site}.json"
@@ -68,6 +62,17 @@ _CFG = _load_site_cfg(SITE)
 BLOG = ROOT / _CFG["paths"]["blogContentDir"]
 _MW_PATH = ROOT / _CFG["paths"]["buildDir"] / "src" / "middleware.ts"
 MW = _MW_PATH.read_text(encoding="utf-8") if _MW_PATH.exists() else ""
+
+# FLAT routing mode: detected STRUCTURALLY from the route tree, not a hardcoded
+# site list. A nested site renders /blog/<category>/<slug> and so has a
+# `[category]` route segment; a flat site (Medical) renders /blog/<slug> and has
+# only `[slug]`. Reading the route dir means a FUTURE flat site is auto-detected
+# with no list to maintain. --flat forces it on. Flat sites serve 2-segment
+# URLs; a 3-segment /blog/<cat>/<slug> 404s (same model as
+# scripts/medical_flat_link_audit.py).
+_ROUTES_DIR = ROOT / _CFG["paths"].get(
+    "blogRoutesDir", f"{_CFG['paths']['buildDir']}/src/app/blog")
+FLAT = ("--flat" in sys.argv) or not (_ROUTES_DIR / "[category]").exists()
 
 
 def _valid_locations(cfg: dict) -> set:

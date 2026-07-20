@@ -144,6 +144,42 @@ SITE_EEAT_PROFILES: dict[str, dict] = {
 }
 
 
+def _default_eeat_profile(site_key: str) -> dict | None:
+    """Config-driven fallback E-E-A-T profile for any site WITHOUT a curated
+    entry in SITE_EEAT_PROFILES. Built from optimisation_engine.config
+    (display_name + domain) so a new site emits valid, faceless
+    author/reviewer/organization schema with ZERO hand-coding and NO credential
+    claims (per the estate credential-source rule). Curated sites still win.
+    Returns None if the site is unknown or missing name/domain (caller then
+    emits no schema, preserving the old behaviour for truly-unknown keys)."""
+    try:
+        s = get_site(site_key)
+    except Exception:
+        return None
+    name, domain = s.get("display_name"), s.get("domain")
+    if not name or not domain:
+        return None
+    editorial = f"{name} Editorial Team"
+    return {
+        "organization": {
+            "@type": "AccountingService",
+            "name": name,
+            "url": f"https://{domain}",
+            "areaServed": "United Kingdom",
+        },
+        "author": {
+            "@type": "Person",
+            "name": editorial,
+            "jobTitle": "Specialist accountant",
+        },
+        "reviewer": {
+            "@type": "Person",
+            "name": editorial,
+            "jobTitle": "Reviewed against legislation.gov.uk and HMRC guidance",
+        },
+    }
+
+
 def _site_url(site_key: str) -> str:
     return f"https://{get_site(site_key)['domain']}"
 
@@ -221,7 +257,7 @@ def build_eeat_schema(
     """Build the full E-E-A-T @graph JSON-LD for a page. Returns a JSON string
     suitable for the frontmatter.schema field.
     """
-    profile = SITE_EEAT_PROFILES.get(site_key)
+    profile = SITE_EEAT_PROFILES.get(site_key) or _default_eeat_profile(site_key)
     if not profile:
         return ""
 
