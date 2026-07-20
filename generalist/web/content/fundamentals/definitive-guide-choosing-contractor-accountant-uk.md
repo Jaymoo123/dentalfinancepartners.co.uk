@@ -61,7 +61,7 @@ faqs:
 
 <h3>How IR35 Works for Contractors</h3>
 
-<p>Since April 2021, medium and large clients in the private sector are responsible for determining your IR35 status and issuing a Status Determination Statement (SDS). Small clients, defined as those meeting two of three criteria: turnover under £10.2m, balance sheet under £5.1m, fewer than 50 employees, leave the determination with you.</p>
+<p>Since April 2021, medium and large clients in the private sector are responsible for determining your IR35 status and issuing a Status Determination Statement (SDS). Small clients, defined as those meeting two of three criteria: turnover not more than £15m, balance sheet not more than £7.5m, not more than 50 employees (for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m), leave the determination with you. Because size is tested over two consecutive financial years using filed accounts, the higher thresholds first affect off-payroll status determinations in the 2027/28 tax year at the earliest.</p>
 
 <p>If you are inside IR35, your limited company receives the fee, but you must deduct income tax and employee NI, plus pay employer NI and the Apprenticeship Levy (if applicable), before paying yourself. The net result is that your company's retained profit drops dramatically.</p>
 

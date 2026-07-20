@@ -40,7 +40,7 @@ faqs:
 
 <h2>Who Is the "Engaging Firm" for a Locum Solicitor?</h2>
 
-<p>The engaging firm is the law firm that contracts for the locum solicitor's services. Under the off-payroll rules, the engaging firm is responsible for determining the locum's employment status if the firm is medium or large under the Companies Act 2006 definition. A firm is medium or large if it meets two of three conditions: turnover above £10.2 million, balance sheet total above £5.1 million, or more than 50 employees.</p>
+<p>The engaging firm is the law firm that contracts for the locum solicitor's services. Under the off-payroll rules, the engaging firm is responsible for determining the locum's employment status if the firm is medium or large under the Companies Act 2006 definition. A firm is medium or large if it meets two of three conditions: turnover above £10.2 million, balance sheet total above £5.1 million, or more than 50 employees (the limits rise to £15m/£7.5m for financial years beginning on or after 6 April 2025, first affecting off-payroll determinations in 2027/28).</p>
 
 <p>Most multi-partner law firms and LLPs will meet this threshold. Sole practitioners and small high-street firms with fewer than 50 employees and turnover below £10.2 million may be small. If the engaging firm is small, the locum solicitor's PSC remains responsible for determining its own IR35 status, as was the case before April 2021.</p>
 

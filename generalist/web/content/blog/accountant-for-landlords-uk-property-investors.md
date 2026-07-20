@@ -101,7 +101,7 @@ keyTakeaways:
 <li><strong>Option to Tax:</strong> If you own commercial property, you can opt to charge VAT on the rent. This lets you recover VAT on purchase costs and refurbishment. But it makes the property less attractive to tenants who cannot recover VAT.</li>
 <li><strong>Flat Rate Scheme:</strong> Some property businesses qualify for the flat rate scheme. The rate for property-related services is 14% (limited cost trader rate 16.5% if you do not spend enough on goods).</li>
 <li><strong>SDLT surcharges:</strong> Additional 5% SDLT on second homes and buy-to-lets (increased from 3%, effective 31 October 2024). Higher rates for corporate buyers (15% on properties over £500k, with exceptions for property development and rental businesses).</li>
-<li><strong>Annual Tax on Enveloped Dwellings (ATED):</strong> If you hold a high-value residential property (over £500k) through a company, ATED may apply. The annual charge ranges from £4,150 to £280,500 depending on property value.</li>
+<li><strong>Annual Tax on Enveloped Dwellings (ATED):</strong> If you hold a high-value residential property (over £500k) through a company, ATED may apply. The annual charge for 2026/27 ranges from £4,600 to £303,450 depending on property value.</li>
 </ul>
 
 <p>These are specialist areas. A general accountant may not flag them until HMRC sends a letter. A landlord specialist will plan for them upfront.</p>

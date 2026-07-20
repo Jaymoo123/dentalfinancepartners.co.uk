@@ -78,7 +78,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Many paralegals work through their own limited company (a personal service company or PSC). In that case, the IR35 intermediaries legislation may apply. IR35 is designed to prevent workers from avoiding tax and NI by routing their income through a company.</p>
 
-<p>If IR35 applies, the firm (or an agency) must deduct PAYE and NI from the fees paid to the paralegal's company, as if the paralegal were an employee. The firm is responsible for determining the IR35 status of the engagement. Since April 2021, medium and large firms (meeting two of three criteria: turnover over £10.2m, balance sheet over £5.1m, over 50 employees) bear this responsibility for engagements where they are the client.</p>
+<p>If IR35 applies, the firm (or an agency) must deduct PAYE and NI from the fees paid to the paralegal's company, as if the paralegal were an employee. The firm is responsible for determining the IR35 status of the engagement. Since April 2021, medium and large firms (meeting two of three criteria: turnover over £15m, balance sheet over £7.5m, over 50 employees, for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m) bear this responsibility for engagements where they are the client. Because size is tested over two consecutive financial years using filed accounts, the higher thresholds first affect off-payroll status determinations in the 2027/28 tax year at the earliest.</p>
 
 <p>Most law firms fall into the medium or large category. That means the firm must assess each paralegal engagement for IR35 and issue a Status Determination Statement. If the firm gets it wrong, HMRC can collect the unpaid tax and NI from the firm.</p>
 

@@ -1,0 +1,6 @@
+# The only thing this tool needs to install is fpdf2 (it builds the PDF).
+# tomllib (for reading the config file) is built into Python 3.11 and newer.
+fpdf2>=2.8
+
+# Only needed if you are on Python 3.10 or older (most people are not).
+# tomli>=2.0

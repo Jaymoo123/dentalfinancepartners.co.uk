@@ -106,7 +106,7 @@ keyTakeaways:
 
 <h2>IR35 and Your Dubai-Based Contractors</h2>
 
-<p>If your UK agency engages contractors, IR35 still applies. Your agency's location and your personal location do not change the off-payroll working rules. If your agency is medium or large (which most agencies with a turnover above £10.2m or a balance sheet above £5.1m are), you are responsible for determining the contractor's employment status and issuing a Status Determination Statement (SDS).</p>
+<p>If your UK agency engages contractors, IR35 still applies. Your agency's location and your personal location do not change the off-payroll working rules. If your agency is medium or large (which most agencies with a turnover above £15m or a balance sheet above £7.5m are, for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m), you are responsible for determining the contractor's employment status and issuing a Status Determination Statement (SDS). Because size is tested over two consecutive financial years using filed accounts, the higher thresholds first affect off-payroll status determinations in the 2027/28 tax year at the earliest.</p>
 
 <p>Even if you manage contractors from Dubai, the work is performed for a UK agency, so the rules apply. If you get the determination wrong, HMRC can pursue the agency for unpaid tax and National Insurance.</p>
 

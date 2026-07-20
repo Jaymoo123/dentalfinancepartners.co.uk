@@ -20,17 +20,17 @@ summary: The UK's non-dom rules change fundamentally from April 2025. New arriva
 schema: ''
 faqs:
 - question: What is the 4-year foreign income exemption for non-doms from 2025?
-  answer: From 6 April 2025, non-doms who have been UK resident for fewer than 4 out of the last 10 tax years get a 100% exemption on foreign income and gains for the first 4 years of UK residence. This replaces the old remittance basis. After 4 years, worldwide income is fully taxable in the UK.
+  answer: From 6 April 2025, new arrivals who are in one of their first 4 tax years of UK residence, following at least 10 consecutive tax years of non-UK residence, can claim a 100% exemption on foreign income and gains. This replaces the old remittance basis. After 4 years, worldwide income is fully taxable in the UK.
 - question: How does the non-dom 2025 reform affect agency founders with overseas clients?
   answer: If you have been UK resident for more than 4 years, all foreign income becomes taxable in the UK from April 2025, regardless of where it is earned or where it sits. This includes profits from overseas clients earned through a foreign company or personally. Agency founders who arrived recently still get the 4-year exemption, but the clock is running.
 - question: Can I still use the remittance basis after April 2025?
   answer: No. The remittance basis is abolished from 6 April 2025 for all non-doms. The only exception is for those who arrived in the UK within the last 4 tax years, who get the new foreign income exemption instead. If you have been UK resident for 4 years or more, you lose both the remittance basis and the new exemption.
 - question: Should I relocate outside the UK to protect my foreign income?
-  answer: Relocation may be the right option if your 4-year window has expired and you have significant foreign income. Leaving the UK for 5 years resets your residence status, potentially allowing you to qualify for a new 4-year exemption if you return. But this is a major decision with personal and business implications. Speak to an accountant before making any move.
+  answer: Relocation may be the right option if your 4-year window has expired and you have significant foreign income. You would need at least 10 consecutive tax years of non-UK residence before you could qualify for the 4-year exemption again on return (5 full years only clears the temporary non-residence anti-avoidance rules). But this is a major decision with personal and business implications. Speak to an accountant before making any move.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- From April 2025, non-doms resident in the UK for under 4 of the last 10 years get a 4-year exemption on foreign income and gains.
+- From April 2025, new arrivals in one of their first 4 tax years of UK residence, after at least 10 consecutive tax years of non-UK residence, can claim a 4-year exemption on foreign income and gains.
 - Existing non-doms who have been UK resident for more than 4 years lose the remittance basis and pay UK tax on worldwide income from 6 April 2025.
 - The 4-year exemption window is fixed from your first UK residence date, not from April 2025, and cannot be extended.
 - Agency founders earning foreign income personally or through foreign companies must restructure before April 2025 to avoid UK tax on overseas profits.
@@ -46,7 +46,7 @@ keyTakeaways:
 
 <ul>
 <li><strong>Old system:</strong> Non-doms could claim the remittance basis and pay UK tax only on foreign income brought into the UK. You could leave foreign profits offshore and pay nothing.</li>
-<li><strong>New system:</strong> Non-doms who have been UK resident for fewer than 4 out of the last 10 tax years get a 100% exemption on foreign income and gains for the first 4 years of UK residence. After that, you pay UK tax on worldwide income like any other resident.</li>
+<li><strong>New system:</strong> New arrivals in one of their first 4 tax years of UK residence, following at least 10 consecutive tax years of non-UK residence, can claim a 100% exemption on foreign income and gains. After that, you pay UK tax on worldwide income like any other resident.</li>
 </ul>
 
 <p>For agency founders who have been in the UK longer than 4 years, the exemption does not apply. You will be taxed on your worldwide income from day one of the new regime. That includes profits from overseas clients routed through your UK agency or personally earned from foreign engagements.</p>
@@ -73,7 +73,7 @@ keyTakeaways:
 <p>Some founders hold their agency through a foreign company. Under the new rules, the foreign company's profits could be attributed to you personally if you control it and are UK resident. That is a complex area called the "transparent entity" rules, and it requires specific advice from an specialist agency accountant who understands both UK and international tax.</p>
 
 <h3>2. You may need to consider relocation</h3>
-<p>If your 4-year window has expired or is about to expire, and you have substantial foreign income, relocating outside the UK for a period may be the only way to protect those profits from UK tax. The new rules include a "temporary non-residence" provision: if you leave the UK for 5 years or more, you can reset your residence status and potentially qualify for a new 4-year exemption if you return.</p>
+<p>If your 4-year window has expired or is about to expire, and you have substantial foreign income, relocating outside the UK for a period may be the only way to protect those profits from UK tax. Be clear about the timescales, though: 5 full years abroad only clears the temporary non-residence anti-avoidance rules. To qualify for the 4-year exemption again on return, you need at least 10 consecutive tax years of non-UK residence.</p>
 
 <p>This is not a casual decision. Leaving the UK for 5 years has real implications for your family, your business, and your personal life. But for founders with significant foreign income, it may be the most tax-efficient option.</p>
 
@@ -81,11 +81,11 @@ keyTakeaways:
 
 <p>Let's make this concrete. Sarah runs a digital agency based in Dubai. She has clients in the UAE, Saudi Arabia, and Singapore. Her agency turnover is £850,000 per year. She takes a salary of £120,000 and dividends of £200,000 from her Dubai company.</p>
 
-<p>Sarah moves to London in April 2025. She is non-domiciled in the UK. Under the new rules, she gets a 4-year foreign income exemption. Her Dubai salary and dividends are exempt from UK tax for 4 years, provided she does not bring them into the UK. She can leave them in her Dubai bank account or reinvest them in her Dubai business.</p>
+<p>Sarah moves to London in April 2025. She is non-domiciled in the UK. Under the new rules, she gets a 4-year foreign income exemption. Her Dubai salary and dividends are exempt from UK tax for 4 years if she claims the FIG regime each year, and she can bring the money to the UK with no tax charge. She can equally leave it in her Dubai bank account or reinvest it in her Dubai business.</p>
 
-<p>After 4 years, the exemption ends. From April 2029, Sarah's worldwide income is taxable in the UK. Her Dubai salary of £120,000 would be taxed at UK rates, and her dividends at UK dividend rates. She would need to decide whether to stay and pay UK tax on her foreign income, or relocate to Dubai for 5 years to reset the clock.</p>
+<p>After 4 years, the exemption ends. From April 2029, Sarah's worldwide income is taxable in the UK. Her Dubai salary of £120,000 would be taxed at UK rates, and her dividends at UK dividend rates. She would need to decide whether to stay and pay UK tax on her foreign income, or relocate to Dubai long term (at least 10 consecutive non-resident tax years before the 4-year exemption could apply again).</p>
 
-<p>If Sarah had moved to London in 2021 instead, her 4-year window would have expired in 2025. She would be fully taxable on her Dubai income from April 2025 onwards. Her only option to protect that income would be to leave the UK before April 2025 and stay away for 5 years.</p>
+<p>If Sarah had moved to London in 2021 instead, her 4-year window would have expired in 2025. She would have been fully taxable on her Dubai income from April 2025 onwards. Her only option to protect that income would have been to become non-UK resident, remembering that 5 full years abroad only clears the temporary non-residence anti-avoidance rules and that re-qualifying for the 4-year exemption takes at least 10 consecutive non-resident tax years.</p>
 
 <h2>What Agency Founders Should Do Before 6 April 2025</h2>
 
@@ -95,7 +95,7 @@ keyTakeaways:
 <li><strong>Check your UK residence history.</strong> Work out how many tax years you have been UK resident. If it is 3 or fewer, you still have time to use the 4-year window. If it is 4 or more, you need to consider your options urgently.</li>
 <li><strong>Review your income sources.</strong> Identify which of your income streams are foreign and which are UK. If you have a UK agency, the profits are already subject to UK corporation tax. But if you have a foreign company or earn foreign income personally, those are the ones that matter.</li>
 <li><strong>Consider a holding company structure.</strong> For agency founders with multiple overseas clients, a holding company in a jurisdiction with a strong tax treaty with the UK can help manage the tax position. This is not a DIY project. You need professional advice.</li>
-<li><strong>Evaluate relocation.</strong> If your 4-year window has expired, leaving the UK before 6 April 2025 for a period of 5 years may be the only way to protect your foreign income. This is a big decision, but for some founders it is the right one.</li>
+<li><strong>Evaluate relocation.</strong> If your 4-year window has expired, becoming non-UK resident may be the only way to protect your foreign income (bear in mind 5 full years abroad only clears the temporary non-residence rules, and re-qualifying for the 4-year exemption takes at least 10 consecutive non-resident tax years). This is a big decision, but for some founders it is the right one.</li>
 </ul>
 
 <p>Working exclusively with agency founders, we work with agency founders in exactly these situations. We can help you model the tax impact of staying versus leaving, and structure your affairs to minimise your tax liability within the law.</p>
@@ -125,7 +125,7 @@ keyTakeaways:
 <ul>
 <li><strong>Stay and pay.</strong> Accept UK tax on worldwide income. This works if your foreign income is modest or if you plan to bring it into the UK anyway.</li>
 <li><strong>Restructure.</strong> Move your foreign income into a structure that minimises UK tax. This might involve a holding company, a trust, or a partnership. It requires careful planning and professional advice.</li>
-<li><strong>Leave.</strong> Relocate outside the UK for 5 years to reset your residence status. This is the nuclear option, but for founders with significant foreign income, it may be the most effective.</li>
+<li><strong>Leave.</strong> Relocate outside the UK for the long term: 5 full years clears the temporary non-residence anti-avoidance rules, but qualifying for the 4-year exemption again takes at least 10 consecutive non-resident tax years. This is the nuclear option, but for founders with significant foreign income, it may be the most effective.</li>
 </ul>
 
 <p>Each option has trade-offs. The right choice depends on your specific circumstances, including your family situation, your business plans, and your long-term goals.</p>

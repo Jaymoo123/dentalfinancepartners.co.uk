@@ -22,7 +22,7 @@ faqs:
 - question: What is the difference between inside IR35 and outside IR35?
   answer: Inside IR35 means HMRC treats the contractor as an employee for tax purposes. You must deduct PAYE and NI from their payments. Outside IR35 means the contractor is genuinely self-employed, and you pay them gross through their limited company. The determination depends on working practices, not contract wording.
 - question: Do I need to issue an SDS for every contractor?
-  answer: 'Yes, if your agency is medium or large (meeting two of: £10.2m turnover, £5.1m balance sheet, 50+ employees). You must issue a Status Determination Statement before the contractor starts work. If you are a small agency, the contractor determines their own status, but you should still document the arrangement.'
+  answer: 'Yes, if your agency is medium or large (meeting two of: turnover over £15m, balance sheet over £7.5m, more than 50 employees, for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m). You must issue a Status Determination Statement before the contractor starts work. If you are a small agency, the contractor determines their own status, but you should still document the arrangement.'
 - question: Can HMRC come after my agency for a contractor's unpaid tax?
   answer: Yes. If HMRC determines you did not take reasonable care in making your IR35 determination, they can hold your agency liable for the unpaid PAYE, employee NI, and employer NI, plus interest and penalties. This applies even if the contractor agreed with your determination.
 - question: How long should I keep IR35 records?
@@ -33,7 +33,7 @@ keyTakeaways:
 - Since April 2021, medium and large agencies must issue a Status Determination Statement (SDS) to each contractor before they start work.
 - HMRC determines IR35 status based on actual working practices, not contract terms, focusing on substitution, control, and mutuality of obligation.
 - A contractor working from your office, using your equipment, and reporting to your director is likely inside IR35, requiring PAYE and NI deductions.
-- If your agency meets two of three criteria-turnover over £10.2m, balance sheet over £5.1m, or 50+ employees-the off-payroll rules apply to all limited company contractors.
+- If your agency meets two of three criteria (turnover over £15m, balance sheet over £7.5m, or more than 50 employees, for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m), the off-payroll rules apply to all limited company contractors.
 - Getting IR35 wrong can leave your agency liable for backdated tax, interest, and penalties, so taking reasonable care in determinations is essential.
 ---
 <h2>What is IR35 and Why Should Agency Founders Care?</h2>
@@ -52,12 +52,14 @@ keyTakeaways:
 
 <p>If your agency meets two of these three criteria, you are a medium or large organisation:</p>
 <ul>
-<li>Annual turnover of £10.2 million or more</li>
-<li>Balance sheet total of £5.1 million or more</li>
-<li>50 or more employees</li>
+<li>Annual turnover over £15 million (previously £10.2 million)</li>
+<li>Balance sheet total over £7.5 million (previously £5.1 million)</li>
+<li>More than 50 employees</li>
 </ul>
 
-<p>If you are below those thresholds, the contractor still determines their own status. But most agencies grow past those numbers quickly. Once you cross them, the rules apply to every contractor you engage through their own limited company.</p>
+<p>The higher limits apply for financial years beginning on or after 6 April 2025. The small-company test is "not more than" these figures: you are small if you stay within at least two of them, and medium or large once you exceed two. Because size is tested over two consecutive financial years using filed accounts, the higher thresholds first affect off-payroll status determinations in the 2027/28 tax year at the earliest.</p>
+
+<p>If you are within those thresholds, the contractor still determines their own status. But most agencies grow past those numbers quickly. Once you cross them, the rules apply to every contractor you engage through their own limited company.</p>
 
 <p>The key change is this: you must now issue an SDS to every contractor before they start, and you must take reasonable care in making that determination. HMRC can challenge your determination and, if they find it wrong, hold you responsible for the unpaid tax and NI.</p>
 

@@ -23,7 +23,7 @@ keyTakeaways:
   - "CIS subcontractors have 20% deducted from labour payments by main contractors (30% if not CIS-registered), then reclaim those deductions via self assessment or their corporation tax return."
   - "If an electrician's relevant goods spend falls below 2% of turnover or £1,000 a year, the 16.5% limited cost trader rate applies instead of the standard sector flat rate."
   - "From April 2026, MTD for ITSA applies to sole trader electricians with self-employment income over £50,000, with the threshold falling to £30,000 from April 2027 and £20,000 from April 2028."
-  - "A standard van with private use carries a benefit in kind charge of £3,960 per year (2025/26), while a zero-emission van attracts a nil benefit."
+  - "A standard van with private use carries a benefit in kind charge of £4,020 for 2025/26 (£4,170 for 2026/27), while a zero-emission van attracts a nil benefit."
   - "Under the merged R&D scheme from April 2024, RDEC gives a 20% above-the-line credit, while R&D-intensive loss-making companies (over 30% of expenditure on R&D) qualify for the payable ERIS credit."
 ---
 
@@ -56,7 +56,7 @@ keyTakeaways:
 
 <h2>Capital Allowances and Van Tax</h2>
 <p>Electricians rely on vans and tools. The tax treatment of these assets is not always intuitive.</p>
-<p>If you buy a new van for your limited company, you can claim 100% First Year Allowance (FYA) if the van is a zero-emission vehicle. For a standard diesel or petrol van, you claim Annual Investment Allowance (AIA) at 100% up to £1 million per year. That means you can write off the full cost of the van against your profits in the year of purchase. But if you also use the van privately, there is a benefit in kind charge on the private use portion. For a standard van with private use, the benefit is £3,960 per year (2025/26). If the van is zero-emission, the benefit is nil.</p>
+<p>If you buy a new van for your limited company, you can claim 100% First Year Allowance (FYA) if the van is a zero-emission vehicle. For a standard diesel or petrol van, you claim Annual Investment Allowance (AIA) at 100% up to £1 million per year. That means you can write off the full cost of the van against your profits in the year of purchase. But if you also use the van privately, there is a benefit in kind charge on the private use portion. For a standard van with private use, the benefit is £4,020 for 2025/26, rising to £4,170 for 2026/27. If the van is zero-emission, the benefit is nil.</p>
 <p>Your tools and testing equipment qualify for AIA too. But you need to separate capital items (lasting more than one year, costing over £200) from consumables (drill bits, screws, cable ties). A specialist accountant will help you categorise correctly so you maximise your capital allowances without triggering an HMRC enquiry.</p>
 <p>If you are a sole trader, the rules are different. You claim capital allowances on the business proportion of the van cost, and you do not face a benefit in kind charge because you are self-employed. But you cannot claim the full cost in one year if the van is used for both business and private journeys. You claim a proportion based on business mileage.</p>
 

@@ -1,0 +1,87 @@
+# ============================================================
+#  INVOICE CONFIG
+#  Edit this file each month, then run the tool. You do NOT
+#  need to touch any code. Save the file after editing.
+#
+#  Anything after a "#" on a line is a note to you and is ignored.
+#  Text values go inside "double quotes". Numbers do not.
+# ============================================================
+
+
+# ------------------------------------------------------------
+#  1. INVOICE HEADER  (change every month)
+# ------------------------------------------------------------
+
+invoice_number = "DJH-001"      # Client-specific reference. Bump each month for this
+                                # client: DJH-001, DJH-002, DJH-003 ... For a different
+                                # client use their own prefix, e.g. ABC-001.
+invoice_date   = "2026-07-01"   # Format is YYYY-MM-DD (year-month-day).
+                                # The "Due" date is worked out for you: invoice date + 14 days.
+billing_period = "June 2026"    # The period the work covers (raised 1 July for June's leads).
+                                # Optional label shown on the invoice. Set to "" to hide it.
+
+
+# ------------------------------------------------------------
+#  2. WHO YOU ARE BILLING  (change every month)
+# ------------------------------------------------------------
+
+[client]
+company = "DJH Accountants and Business Advisers"
+contact = "Michael Winniczuk"
+title   = "Head of Growth"
+address = ["Festival Way", "Stoke-on-Trent", "ST1 5SQ"]   # one item per line, inside quotes
+email   = "Michael.Winniczuk@djh.co.uk"
+
+
+# ------------------------------------------------------------
+#  3. LEAD DATA IMPORT  (optional)
+#  Point this at a CSV of that month's leads. The tool counts
+#  the rows so you never have to type the number by hand.
+# ------------------------------------------------------------
+
+[leads]
+enabled          = true                    # true = read the CSV and count the leads. false = ignore it.
+path             = "leads/leads-2026-06.csv"
+date_column      = "date"                  # column that holds the lead date (only used if you set "period")
+period           = ""                      # e.g. "2026-07" to count only July rows. "" = count every row.
+reference_column = "reference"             # column that holds a lead reference (only used if itemise = true)
+itemise          = false                   # true = print a plain list of the lead references under the invoice
+
+
+# ------------------------------------------------------------
+#  4. LINE ITEMS  (the table on the invoice)
+#  Copy the whole [[line_items]] block to add another row.
+#  "amount" is worked out for you as quantity x unit_price.
+#  "quantity" can be a number (e.g. 9) OR the word "auto",
+#  which means "use the number of leads imported above".
+# ------------------------------------------------------------
+
+[[line_items]]
+description = "Property Leads"
+quantity    = "auto"
+unit_price  = 85.00
+
+# --- Example of a second line (delete the "#" at the start of each line to use it) ---
+# [[line_items]]
+# description = "Setup fee"
+# quantity    = 1
+# unit_price  = 150.00
+
+
+# ------------------------------------------------------------
+#  5. YOUR OWN BUSINESS AND BANK DETAILS
+#  These rarely change, so you can usually ignore this section.
+#  They are already baked into the tool as defaults; the lines
+#  below simply confirm them. Edit only if your details change.
+# ------------------------------------------------------------
+
+[business]
+name    = "Ashfield Trading Limited"
+address = ["20 Ashfield Avenue, Bradford, BD18 3AL"]   # one item per line
+email   = "Junayd@ashfieldtrading.com"
+
+[bank]
+bank           = "Tide"
+account_name   = "Ashfield Trading Limited"
+sort_code      = "04-06-05"
+account_number = "26759454"

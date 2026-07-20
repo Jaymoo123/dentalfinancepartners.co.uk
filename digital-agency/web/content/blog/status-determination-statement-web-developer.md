@@ -32,7 +32,7 @@ updatedDate: '2026-05-17'
 keyTakeaways:
 - You must issue a status determination statement (SDS) to any web developer engaged through an intermediary before work starts, stating whether they are inside or outside IR35.
 - Assess three core IR35 tests-substitution, control, and mutuality of obligation-honestly; for example, if you insist on personal service, state that in the SDS.
-- 'Most agencies billing over £1m are medium or large under off-payroll rules if they meet two of: turnover >£10.2m, balance sheet >£5.1m, or >50 employees.'
+- 'Most agencies billing over £1m are medium or large under off-payroll rules if they meet two of: turnover >£15m, balance sheet >£7.5m, or >50 employees (for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m).'
 - Include your agency's name, address, and company number in the SDS, along with the contractor's details and the reasoning for your IR35 determination.
 - Avoid common mistakes like pretending a substitution right exists when you would never accept a substitute, or extending contracts without a break, which HMRC sees as ongoing employment.
 ---
@@ -42,7 +42,7 @@ keyTakeaways:
 
 <p>If you run a digital agency, a creative agency, or a web design agency, you almost certainly engage web developers on this basis. Maybe you bring in a front-end developer for a six-month project build. Maybe you have a back-end specialist on retainer for ongoing maintenance. Either way, you need an SDS on file.</p>
 
-<p>The off-payroll working rules (commonly called IR35) apply to medium and large agencies. If your agency meets two of these three conditions, you are caught: annual turnover over £10.2m, balance sheet over £5.1m, or more than 50 employees. Most agencies billing over £1m will be medium or large under these tests.</p>
+<p>The off-payroll working rules (commonly called IR35) apply to medium and large agencies. If your agency meets two of these three conditions, you are caught: annual turnover over £15m, balance sheet over £7.5m, or more than 50 employees (for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m). Because size is tested over two consecutive financial years using filed accounts, the higher thresholds first affect off-payroll status determinations in the 2027/28 tax year at the earliest. Most agencies billing over £1m will be medium or large under these tests.</p>
 
 <p>This guide walks you through writing a compliant <strong>status determination statement for a web developer</strong> engagement. We will cover what to include, the tests you must apply, and the common mistakes that get agencies into trouble.</p>
 

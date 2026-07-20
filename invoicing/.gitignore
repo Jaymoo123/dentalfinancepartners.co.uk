@@ -1,0 +1,6 @@
+# Generated invoices (they contain client details, keep them off git)
+output/*.pdf
+
+# Real monthly lead files (may contain personal data). The sample stays tracked.
+leads/*.csv
+!leads/leads-2026-06.csv

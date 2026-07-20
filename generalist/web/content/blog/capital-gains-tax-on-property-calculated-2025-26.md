@@ -137,7 +137,7 @@ Step 8: Less annual exempt amount (£3,000) = £99,000 chargeable gain</p>
 
 <p>If you are a partnership, the partnership reports the disposal on the partnership return (SA800), and each partner reports their share on their individual return.</p>
 
-<p>Late filing penalties start at £100 for a late self assessment return. Late payment interest is charged at the Bank of England base rate plus 2.5%.</p>
+<p>Late filing penalties start at £100 for a late self assessment return. Late payment interest is charged at the Bank of England base rate plus 4 percentage points (the margin rose from 2.5% on 6 April 2025; currently 7.75%).</p>
 
 <h2>Reliefs That Reduce Capital Gains Tax on Property</h2>
 

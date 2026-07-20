@@ -57,7 +57,7 @@ faqs:
 
 <h2>The Off-Payroll Dental Rules: Who Decides Your Status?</h2>
 
-<p>Since 6 April 2021, the off-payroll working rules (often called IR35 reforms) apply to medium and large clients. For associate dentists working through a limited company, the practice must determine your IR35 status and issue a Status Determination Statement (SDS). If the practice is small (meeting two of: turnover under £10.2m, balance sheet under £5.1m, fewer than 50 employees), the responsibility stays with your limited company.</p>
+<p>Since 6 April 2021, the off-payroll working rules (often called IR35 reforms) apply to medium and large clients. For associate dentists working through a limited company, the practice must determine your IR35 status and issue a Status Determination Statement (SDS). If the practice is small (meeting two of: turnover under £10.2m, balance sheet under £5.1m, fewer than 50 employees), the responsibility stays with your limited company (the limits rise to £15m/£7.5m for financial years beginning on or after 6 April 2025, first affecting off-payroll determinations in 2027/28).</p>
 
 <p>Most dental practices with multiple associates and staff will be medium or large under these criteria. That means the practice, not you, decides whether you are inside or outside IR35. If they decide you are inside, they must deduct PAYE and NI from your fees before paying your company. This can significantly reduce your net income.</p>
 

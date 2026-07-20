@@ -99,15 +99,15 @@ keyTakeaways:
 <tbody>
 <tr>
 <td>Annual turnover</td>
-<td>£10.2M or less</td>
-<td>£10.2M to £36M</td>
-<td>Over £36M</td>
+<td>£15M or less</td>
+<td>£15M to £54M</td>
+<td>Over £54M</td>
 </tr>
 <tr>
 <td>Balance sheet total</td>
-<td>£5.1M or less</td>
-<td>£5.1M to £18M</td>
-<td>Over £18M</td>
+<td>£7.5M or less</td>
+<td>£7.5M to £27M</td>
+<td>Over £27M</td>
 </tr>
 <tr>
 <td>Number of employees</td>
@@ -117,6 +117,7 @@ keyTakeaways:
 </tr>
 </tbody>
 </table>
+<p>These are the Companies Act thresholds for financial years beginning on or after 6 April 2025 (previously £10.2M/£5.1M for small and £36M/£18M for medium). A company must meet two of the three conditions for two consecutive financial years, so the higher thresholds first affect off-payroll status determinations in the 2027/28 tax year at the earliest.</p>
 
 <p>If the end-client is small, the off-payroll rules do not apply. The contractor remains responsible for their own IR35 status. If the end-client is medium or large, the client must issue an SDS and the fee-payer (often your agency) must operate PAYE on payments to the contractor's PSC.</p>
 

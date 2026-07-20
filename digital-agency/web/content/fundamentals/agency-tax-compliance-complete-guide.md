@@ -301,7 +301,7 @@ keyTakeaways:
 
 <h3>How IR35 Works for Agencies</h3>
 
-<p>If you are a medium or large agency (meeting two of: turnover >£10.2m, balance sheet >£5.1m, employees >50), you are responsible for determining the contractor's IR35 status. You issue a Status Determination Statement (SDS) and, if inside IR35, deduct PAYE and NI from the contractor's fees.</p>
+<p>If you are a medium or large agency (meeting two of: turnover >£15m, balance sheet >£7.5m, employees >50, for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m), you are responsible for determining the contractor's IR35 status. You issue a Status Determination Statement (SDS) and, if inside IR35, deduct PAYE and NI from the contractor's fees. Because size is tested over two consecutive financial years using filed accounts, the higher thresholds first affect off-payroll status determinations in the 2027/28 tax year at the earliest.</p>
 
 <p>Smaller agencies are exempt from the off-payroll working rules. The contractor determines their own IR35 status.</p>
 

@@ -127,9 +127,9 @@ howToSteps:
 <li>Disclose the loan in the company's annual accounts (as a debtor)</li>
 </ul>
 
-<p>The loan also creates a benefit in kind if it is over £10,000 and interest-free. The company must report this on a P11D (benefits in kind form) and pay Class 1A NIC at 15% (from 6 Apr 2025) on the cash equivalent of the interest saved. HMRC's official rate of interest was 2.25% as at April 2025 (check HMRC's website for the current official rate). The benefit is calculated as the loan balance multiplied by the official rate, minus any interest actually paid.</p>
+<p>The loan also creates a benefit in kind if it is over £10,000 and interest-free. The company must report this on a P11D (benefits in kind form) and pay Class 1A NIC at 15% (from 6 Apr 2025) on the cash equivalent of the interest saved. HMRC's official rate of interest is 3.75% from 6 April 2025 (unchanged into 2026/27; check HMRC's website for the current official rate). The benefit is calculated as the loan balance multiplied by the official rate, minus any interest actually paid.</p>
 
-<p>For a £28,000 loan, the benefit in kind is £28,000 x 2.25% = £630. The company pays Class 1A NIC of £630 x 15% = £94.50. You pay income tax on the £630 benefit at your marginal rate.</p>
+<p>For a £28,000 loan, the benefit in kind is £28,000 x 3.75% = £1,050. The company pays Class 1A NIC of £1,050 x 15% = £157.50. You pay income tax on the £1,050 benefit at your marginal rate.</p>
 
 <p>We see directors overlook this every year. The combination of S455 tax, P11D reporting, and benefit in kind charges makes an unreconciled DLA expensive.</p>
 

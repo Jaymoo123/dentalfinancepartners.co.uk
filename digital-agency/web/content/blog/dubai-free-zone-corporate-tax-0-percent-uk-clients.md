@@ -100,7 +100,7 @@ keyTakeaways:
 <h2>What About Your UK Tax Position?</h2>
 <p>If your free zone agency is genuinely managed and controlled from the UAE, it should not be UK tax resident. That means you do not pay UK corporation tax on its profits. But you must be able to prove this to HMRC if asked.</p>
 <p>The central management and control test is the key. If your board meetings are held in Dubai, your strategic decisions are made there, and your key staff are there, you are likely UAE tax resident. If you are making decisions from the UK, you are at risk.</p>
-<p>Your personal tax position is separate. If you are a UK domiciled individual who has moved to the UAE, you may still be subject to UK tax on certain types of income, depending on your remittance basis status and the length of your non-residence. This is a complex area and you should take specific advice.</p>
+<p>Your personal tax position is separate. If you are a UK domiciled individual who has moved to the UAE, you may still be subject to UK tax on certain types of income, depending on your residence position under the statutory residence test and the temporary non-residence rules (the remittance basis was abolished from 6 April 2025). This is a complex area and you should take specific advice.</p>
 
 <h2>When the 0% Rate Is Not Worth It</h2>
 <p>For some agency founders, the Dubai free zone structure is not the right move. If your agency has mostly UK clients, you spend most of your time in the UK, and you have no intention of moving to the UAE permanently, the compliance burden of maintaining a free zone entity may outweigh the tax benefit.</p>

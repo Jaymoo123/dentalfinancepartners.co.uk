@@ -34,7 +34,7 @@ faqs:
   - question: "Should I keep my SPV dormant or strike it off?"
     answer: "Five factors decide. (a) Intent to re-use for a future purchase: keep dormant. (b) Preservation of historic CT losses, valuable only if you expect future profits within the same trade under the CTA 2010 Part 14 change-of-ownership tests: keep dormant. (c) Preservation of historic VAT registration, valuable if you opted to tax commercial property: keep dormant. (d) Running costs of keeping alive (around £34-50 per year confirmation statement, plus accountant time for AA02, plus bank account fees) vs cost of strike-off-then-re-incorporate later (around £33-44 strike-off plus a future £12 incorporation). (e) Directors' time and administrative attention. For a director uncertain about a future purchase within 24 months, strike-off is usually cleaner; for an actively-portfolio-rebalancing landlord with a 6-12 month next-purchase horizon, dormancy is the right choice."
   - question: "What is the small-company threshold uplift effective from 6 April 2025?"
-    answer: "Per The Companies (Accounts and Reports) (Amendment and Transitional Provision) Regulations 2024 (SI 2024/688) amendments to CA 2006 s.382, the small-company qualifying conditions uplifted from 6 April 2025: turnover threshold raised from £10.2m to £15m; balance-sheet total raised from £5.1m to £7.5m; employee threshold unchanged at 50. The two-of-three test continues. For dormant LtdCos this matters because the small-company audit-exemption umbrella under CA 2006 s.477 covers more companies under the new thresholds, and the AA06 parent-guarantee route under s.448B becomes available to a wider range of parent companies."
+    answer: "Per The Companies (Accounts and Reports) (Amendment and Transitional Provision) Regulations 2024 (SI 2024/1303) amendments to CA 2006 s.382, the small-company qualifying conditions uplifted from 6 April 2025: turnover threshold raised from £10.2m to £15m; balance-sheet total raised from £5.1m to £7.5m; employee threshold unchanged at 50. The two-of-three test continues. For dormant LtdCos this matters because the small-company audit-exemption umbrella under CA 2006 s.477 covers more companies under the new thresholds, and the AA06 parent-guarantee route under s.448B becomes available to a wider range of parent companies."
   - question: "What happens when I want to wake the SPV back up to acquire a new property?"
     answer: "Three steps. (a) Notify HMRC within three months of the start of the new accounting period that the company is again chargeable to CT under Schedule 18 FA 1998 paragraph 2. (b) Re-open the bank account or set up a new one. (c) The next set of accounts will be full small-company accounts (not AA02, because trading resumed during the period). Brought-forward CT losses from prior trading may be available depending on the change-of-ownership tests under CTA 2010 Part 14 ss.673-676: if the same shareholders control, losses typically survive; a major change in the nature of activity restricts them. Property-LtdCos that move from residential BTL to commercial property as the next acquisition risk the major-change restriction; advice at the wake-up moment is worth taking."
 ---
@@ -205,7 +205,7 @@ faqs:
 
 <p>The AA06 parent guarantee is a real commitment, not a formality. It covers ALL the subsidiary's outstanding liabilities, not just specific ones, and continues until the subsidiary is wound up or the parent revokes the guarantee on a prospective basis. Many parents reject the route once they understand the guarantee's scope.</p>
 
-<p>Most property SPV dormancy claims use the small-company audit-exemption umbrella under CA 2006 s.477 instead (turnover up to £15m, balance-sheet total up to £7.5m, employees up to 50, satisfying any two of three from 6 April 2025 per <a href="https://www.legislation.gov.uk/uksi/2024/688" rel="nofollow noopener" target="_blank">SI 2024/688</a>). The small-company route does not require a parent guarantee and is operationally cleaner for most property SPV structures.</p>
+<p>Most property SPV dormancy claims use the small-company audit-exemption umbrella under CA 2006 s.477 instead (turnover up to £15m, balance-sheet total up to £7.5m, employees up to 50, satisfying any two of three from 6 April 2025 per <a href="https://www.legislation.gov.uk/uksi/2024/1303" rel="nofollow noopener" target="_blank">SI 2024/1303</a>). The small-company route does not require a parent guarantee and is operationally cleaner for most property SPV structures.</p>
 
 <h2>Worked example: the post-disposal SPV dormancy transition</h2>
 
@@ -248,7 +248,7 @@ faqs:
 
 <h2>The small-company threshold uplift from 6 April 2025</h2>
 
-<p>Per SI 2024/688 amendments to CA 2006 s.382, the small-company qualifying conditions uplifted from 6 April 2025:</p>
+<p>Per SI 2024/1303 amendments to CA 2006 s.382, the small-company qualifying conditions uplifted from 6 April 2025:</p>
 
 <ul>
 <li>Turnover threshold raised from £10.2m to £15m.</li>
@@ -284,7 +284,7 @@ faqs:
 
 <p>Dormant property SPVs are a common state, not an exotic one. The filing mechanics are simple but unforgiving. The amateur failure modes (bank interest, insurance refunds, utility deposits, bank charges) are predictable and avoidable. The dormancy-vs-strike-off decision is fact-sensitive and depends on the director's next-purchase horizon plus the value of preserved historic CT losses and VAT registration.</p>
 
-<p>The operational discipline is in three places: (a) document the dormant-from date precisely as the actual zero-activity start, not the disposal date; (b) maintain the confirmation statement and HMRC dormancy notification cadence even during dormancy; (c) verify the small-company threshold position annually because the SI 2024/688 uplift expanded the umbrella materially from 6 April 2025.</p>
+<p>The operational discipline is in three places: (a) document the dormant-from date precisely as the actual zero-activity start, not the disposal date; (b) maintain the confirmation statement and HMRC dormancy notification cadence even during dormancy; (c) verify the small-company threshold position annually because the SI 2024/1303 uplift expanded the umbrella materially from 6 April 2025.</p>
 
 <aside>
 <p>Most dormant property SPVs on our books require less than 60 minutes of accountant time per year.</p>
