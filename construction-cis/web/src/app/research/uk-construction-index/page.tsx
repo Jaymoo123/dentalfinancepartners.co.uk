@@ -10,6 +10,9 @@ import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
 import {
   AnnualIncorporationsChart,
   MonthlyIncorporationsChart,
+  SeasonalityChart,
+  TradeBreakdownTable,
+  type SeasonalityPoint,
 } from "@/components/research/ConstructionIndexCharts";
 import {
   fmtNumber,
@@ -20,11 +23,37 @@ import {
 import snapshot from "@/data/uk-construction-index.json";
 
 const data = snapshot as unknown as ConstructionIndexSnapshot;
-const { meta, headline, incorporations, construction_output } = data;
+const { meta, headline, incorporations, construction_output, segments } = data;
 const { decade } = headline;
 const PRIMARY = headline.primary_sic;
 
 const PAGE_PATH = "/research/uk-construction-index";
+
+// ---------------------------------------------------------------------------
+// Seasonality: average union incorporations by calendar month (2016-2025 full years)
+// ponytail: seasonality computed in page layer from snapshot monthly series;
+//           promote into snapshot.py if other niches need it
+// ---------------------------------------------------------------------------
+const MONTH_SHORT = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+const seasonalityData: SeasonalityPoint[] = (() => {
+  const provisional = new Set(meta.provisional_months);
+  const sums: number[] = Array(12).fill(0);
+  const counts: number[] = Array(12).fill(0);
+  for (const row of incorporations.monthly) {
+    if (provisional.has(row.month)) continue;
+    const year = Number(row.month.slice(0, 4));
+    if (year < 2016 || year > 2025) continue;
+    const mi = Number(row.month.slice(5, 7)) - 1;
+    sums[mi] += Number(row["union"] ?? 0);
+    counts[mi]++;
+  }
+  return sums.map((s, i) => ({
+    month: MONTH_SHORT[i],
+    avg: counts[i] > 0 ? Math.round(s / counts[i]) : 0,
+    isMarch: i === 2, // March is the tax-year-boundary peak
+  }));
+})();
 
 const HEADLINE_SENTENCE = `New domestic-building companies in the UK rose ${fmtPercent(decade.change_pct, false)} between ${decade.from_year} and ${decade.to_year}`;
 
@@ -118,6 +147,14 @@ const datasetSchema = {
   variableMeasured: [
     "Monthly company incorporations by construction SIC code",
     "Deduplicated union across all 19 construction SIC codes",
+    "Monthly company incorporations - Electricians (SIC 43210)",
+    "Monthly company incorporations - Plumbers and heating engineers (SIC 43220)",
+    "Monthly company incorporations - Painters and decorators (SIC 43341)",
+    "Monthly company incorporations - Joiners and carpenters (SIC 43320)",
+    "Monthly company incorporations - Plasterers (SIC 43310)",
+    "Monthly company incorporations - Flooring and wall tiling (SIC 43330)",
+    "Monthly company incorporations - Groundworks and site preparation (SIC 43120)",
+    "Monthly company incorporations - Demolition (SIC 43110)",
   ],
 };
 
@@ -331,6 +368,48 @@ export default function UKConstructionIndexPage() {
               </div>
             </Section>
 
+            <Section id="trades" title="UK construction incorporations by trade">
+              <p>
+                The table ranks the eight main CIS subcontractor trades by new company formations in
+                the latest full calendar year, alongside the trailing 12-month total (settled data
+                only). Each trade is a single SIC code within the 19-code construction universe.
+                Thin segments (fewer than 120 formations in the trailing year) are not shown
+                separately.
+              </p>
+              <TradeBreakdownTable segments={segments ?? []} />
+            </Section>
+
+            <Section id="seasonality" title="Tax-year seasonality in construction incorporations">
+              <p>
+                Averaged across 2016 to 2025, new construction company formations show a consistent
+                March spike: the month before the UK tax year closes on 5 April runs roughly 15%
+                above the calendar-year monthly mean. The pattern is visible across all major
+                construction trades and in the all-construction union.
+              </p>
+              <p>
+                The most likely driver is tax-year-boundary planning. A sole trader who incorporates
+                before 6 April can open their company accounting period at the start of the new tax
+                year, avoiding the complication of overlapping tax years and capturing a full
+                year of company-level tax efficiency from day one. CIS contractors also benefit
+                immediately on incorporation: a limited company can reclaim its monthly CIS
+                deductions in-year via the Employer Payment Summary, whereas a sole trader waits
+                until the following January Self Assessment filing. Both incentives concentrate
+                activity in the final weeks of the tax year.
+              </p>
+              <p>
+                April itself falls back sharply (around 11% below March) as the pre-year-end rush
+                completes. December is the seasonal low, reflecting the general slowdown in company
+                formation over the Christmas period.
+              </p>
+              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+                <p className="mb-3 text-xs text-neutral-500">
+                  Average monthly incorporations (all-construction union, 2016-2025). March
+                  highlighted as the tax-year-boundary peak.
+                </p>
+                <SeasonalityChart data={seasonalityData} />
+              </div>
+            </Section>
+
             <Section id="methodology" title="Methodology and sources">
               <p>
                 <strong>Incorporations.</strong> For each month, we query the Companies House
@@ -342,6 +421,14 @@ export default function UKConstructionIndexPage() {
                 register, so the series carries no survivorship bias. The most recent{" "}
                 {meta.provisional_months.length} months are provisional and excluded from headline
                 figures.
+              </p>
+              <p>
+                <strong>Trade segments.</strong> Each trade row is a single SIC code cut of the
+                19-code universe. The union count is unchanged: a company registered under multiple
+                construction SIC codes is still counted once. Roofing (SIC 43910) is a reserved
+                future addition and is deliberately excluded to avoid revising the published union.
+                Trade and division figures are additive within their SIC set but do not sum to the
+                union (which deduplicates cross-SIC registrations).
               </p>
               <p>
                 <strong>Updated.</strong> Incorporations to {monthLabel(settledThrough)} (settled

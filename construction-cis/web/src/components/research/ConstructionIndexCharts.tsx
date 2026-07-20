@@ -16,6 +16,7 @@ import {
   Bar,
   BarChart,
   CartesianGrid,
+  Cell,
   XAxis,
   YAxis,
 } from "recharts";
@@ -26,13 +27,14 @@ import {
   ChartTooltipContent,
   type ChartConfig,
 } from "@/components/ui/chart";
-import { monthLabel, monthLabelShort } from "@/lib/research/construction-index";
+import { monthLabel, monthLabelShort, fmtNumber, fmtPercent } from "@/lib/research/construction-index";
+import type { ConstructionSegment } from "@/lib/research/construction-index";
 
 type MonthlyRow = Record<string, number | string> & { month: string };
 type AnnualRow = Record<string, number> & { year: number };
 
 // ---------------------------------------------------------------------------
-// Annual incorporations bar chart — domestic-building (SIC 41202) by year
+// Annual incorporations bar chart -- domestic-building (SIC 41202) by year
 // ---------------------------------------------------------------------------
 
 export function AnnualIncorporationsChart({
@@ -193,5 +195,114 @@ export function MonthlyIncorporationsChart({
         />
       </AreaChart>
     </ChartContainer>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Seasonality bar chart -- average incorporations by calendar month
+// ---------------------------------------------------------------------------
+
+export type SeasonalityPoint = { month: string; avg: number; isMarch: boolean };
+
+export function SeasonalityChart({ data }: { data: SeasonalityPoint[] }) {
+  const config = {
+    avg: { label: "Avg incorporations", color: "var(--chart-1)" },
+  } satisfies ChartConfig;
+
+  return (
+    <ChartContainer config={config} className="aspect-auto h-[240px] w-full">
+      <BarChart
+        accessibilityLayer
+        data={data}
+        margin={{ left: 8, right: 8, top: 8, bottom: 0 }}
+      >
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
+        <XAxis dataKey="month" tickLine={false} axisLine={false} tickMargin={8} fontSize={12} />
+        <YAxis
+          width={52}
+          tickLine={false}
+          axisLine={false}
+          tickMargin={4}
+          fontSize={11}
+          tickFormatter={(v: number) => v.toLocaleString("en-GB")}
+        />
+        <ChartTooltip
+          cursor={{ fill: "rgba(249,115,22,0.08)" }}
+          content={<ChartTooltipContent indicator="dot" />}
+        />
+        <Bar dataKey="avg" name="Avg incorporations" radius={[4, 4, 0, 0]}>
+          {data.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={entry.isMarch ? "var(--chart-2)" : "var(--chart-1)"} />
+          ))}
+        </Bar>
+      </BarChart>
+    </ChartContainer>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Trade breakdown table -- 8 CIS subcontractor trade segments
+// ponytail: plain HTML table; no chart lib needed for a static ranking table
+// ---------------------------------------------------------------------------
+
+// Ordered list of trade keys to display (division rollups excluded)
+const TRADE_KEYS = [
+  "electricians",
+  "plumbers",
+  "painters",
+  "joiners",
+  "plasterers",
+  "flooring",
+  "groundworks",
+  "demolition",
+] as const;
+
+export function TradeBreakdownTable({ segments }: { segments: ConstructionSegment[] }) {
+  const tradeMap = new Map(segments.map((s) => [s.key, s]));
+  const trades = TRADE_KEYS.map((k) => tradeMap.get(k)).filter(
+    (s): s is ConstructionSegment => s !== undefined && !s.thin_segment,
+  );
+
+  if (trades.length === 0) return null;
+
+  const latestYear = trades[0]?.annual.at(-1)?.year ?? null;
+
+  // Sort by latest full-year count descending
+  const sorted = [...trades].sort((a, b) => {
+    const ay = a.annual.at(-1)?.count ?? 0;
+    const by_ = b.annual.at(-1)?.count ?? 0;
+    return by_ - ay;
+  });
+
+  return (
+    <div className="not-prose mt-4 overflow-x-auto">
+      <table className="w-full border-collapse text-sm">
+        <thead>
+          <tr className="border-b-2 border-neutral-300 text-left">
+            <th className="py-2 pr-4 font-bold text-neutral-900">Trade</th>
+            <th className="py-2 pr-4 font-bold text-neutral-900 text-right">
+              {latestYear ? `${latestYear} formations` : "Annual formations"}
+            </th>
+            <th className="py-2 pr-4 font-bold text-neutral-900 text-right">TTM (settled)</th>
+            <th className="py-2 font-bold text-neutral-900 text-right">YoY</th>
+          </tr>
+        </thead>
+        <tbody>
+          {sorted.map((seg) => {
+            const annualCount = seg.annual.at(-1)?.count ?? null;
+            return (
+              <tr key={seg.key} className="border-b border-neutral-200">
+                <td className="py-2 pr-4 font-semibold text-neutral-900">{seg.label}</td>
+                <td className="py-2 pr-4 text-right text-neutral-900">{fmtNumber(annualCount)}</td>
+                <td className="py-2 pr-4 text-right text-neutral-900">{fmtNumber(seg.ttm)}</td>
+                <td className="py-2 text-right text-neutral-700">
+                  {seg.yoy_pct != null ? fmtPercent(seg.yoy_pct) : "n/a"}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
   );
 }

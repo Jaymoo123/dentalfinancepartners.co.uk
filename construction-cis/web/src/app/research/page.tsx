@@ -5,14 +5,17 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { fmtNumber, monthLabel, type ConstructionIndexSnapshot } from "@/lib/research/construction-index";
+import { monthLabel as insolvMonthLabel, type InsolvencyIndexSnapshot } from "@/lib/research/insolvency-index";
 import snapshot from "@/data/uk-construction-index.json";
+import insolvSnapshot from "@/data/construction-insolvency-index.json";
 
 const cii = snapshot as unknown as ConstructionIndexSnapshot;
+const insolv = insolvSnapshot as unknown as InsolvencyIndexSnapshot;
 
 export const metadata: Metadata = {
   title: "Construction industry research and data | Trade Tax Specialists",
   description:
-    "Original, sourced data on UK construction company formation trends, built from official Companies House open data. Free to read and cite.",
+    "Original, sourced data on UK construction company formation and insolvency trends, built from official open data. Free to read and cite.",
   alternates: { canonical: `${siteConfig.url}/research` },
 };
 
@@ -24,6 +27,14 @@ const reports = [
     stat: fmtNumber(cii.headline.all_construction_cos_ttm),
     statLabel: "construction companies incorporated in the last 12 months",
     updated: monthLabel(cii.meta.incorporations_settled_through),
+  },
+  {
+    href: "/research/uk-construction-insolvency-index",
+    title: "UK Construction Insolvency Index",
+    blurb: `Construction insolvencies rose ${insolv.headline.decade.change_pct?.toFixed(0) ?? "n/a"}% from ${insolv.headline.decade.from_year} to ${insolv.headline.decade.to_year}. The sector consistently accounts for around 17% of all company insolvencies in England and Wales.`,
+    stat: fmtNumber(insolv.headline.ttm_total),
+    statLabel: "construction company insolvencies in the trailing 12 months",
+    updated: insolvMonthLabel(insolv.meta.data_through),
   },
 ];
 

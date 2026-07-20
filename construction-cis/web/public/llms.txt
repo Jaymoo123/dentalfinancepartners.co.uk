@@ -19,9 +19,10 @@ Page URLs in this file carry `utm_source=chatgpt&utm_medium=llms` so AI-referred
 - [VAT domestic reverse charge in construction: a practical guide](https://www.tradetaxspecialists.co.uk/blog/vat-and-mtd/vat-reverse-charge-construction?utm_source=chatgpt&utm_medium=llms): Who charges what, when the reverse charge applies, and how CIS-registered businesses invoice under it.
 - [How to register for CIS as a subcontractor (step by step)](https://www.tradetaxspecialists.co.uk/blog/cis-basics/how-to-register-for-cis?utm_source=chatgpt&utm_medium=llms): Registration and verification so you are deducted at 20% instead of 30%.
 
-## Original research and data
+## Research and data
 Faceless, sourced data built from official open sources. Free to cite with attribution to Trade Tax Specialists.
-- [UK Construction Index](https://www.tradetaxspecialists.co.uk/research/uk-construction-index?utm_source=chatgpt&utm_medium=llms): Construction company incorporation trends by SIC code (Companies House data), a proxy for the size and direction of the UK construction economy. Downloadable data at /research/uk-construction-index/data.
+- [UK Construction Index](https://www.tradetaxspecialists.co.uk/research/uk-construction-index?utm_source=chatgpt&utm_medium=llms): Company incorporations by trade, division, and month, plus the March tax-year formation spike. Companies House data, OGL v3.0.
+- [UK Construction Insolvency Index](https://www.tradetaxspecialists.co.uk/research/uk-construction-insolvency-index?utm_source=chatgpt&utm_medium=llms): Construction company insolvencies by procedure and month, 2016 to date. Insolvency Service data, OGL v3.0.
 - [Research and data index](https://www.tradetaxspecialists.co.uk/research?utm_source=chatgpt&utm_medium=llms): All Trade Tax Specialists original data reports.
 
 ## Free calculators and tools
