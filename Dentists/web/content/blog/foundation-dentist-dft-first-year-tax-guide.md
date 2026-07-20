@@ -102,7 +102,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>The expenses that open up</h3>
 
-<p>As a self-employed associate the strict employee test is gone, replaced by the <strong>wholly and exclusively</strong> test for trading expenses. That brings in your indemnity, the GDC retention fee, approved professional subscriptions, CPD relevant to your current work, equipment through capital allowances, mileage between practices at 45p per mile for the first 10,000 business miles then 25p, and apportioned home and phone costs. Our guide to <a href="https://www.dentalfinancepartners.co.uk/blog/locum-tax/allowable-expenses-locum-dentists-uk-2025-26">allowable expenses for self-employed dentists</a> sets out what qualifies and what does not. Restoration fees and penalties are never allowable, only standard fees.</p>
+<p>As a self-employed associate the strict employee test is gone, replaced by the <strong>wholly and exclusively</strong> test for trading expenses. That brings in your indemnity, the GDC retention fee, approved professional subscriptions, CPD relevant to your current work, equipment through capital allowances, mileage between practices at 55p per mile for the first 10,000 business miles (from 6 April 2026, up from 45p) then 25p, and apportioned home and phone costs. Our guide to <a href="https://www.dentalfinancepartners.co.uk/blog/locum-tax/allowable-expenses-locum-dentists-uk-2025-26">allowable expenses for self-employed dentists</a> sets out what qualifies and what does not. Restoration fees and penalties are never allowable, only standard fees.</p>
 
 <h2>The cash-flow trap nobody warns you about</h2>
 

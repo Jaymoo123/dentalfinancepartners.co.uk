@@ -129,7 +129,7 @@ faqs:
 
 <p>The valuation determines the tax consequences for both seller and buyer. Solicitors should understand the key tax points before negotiating.</p>
 
-<p><strong>For the seller:</strong> The sale of goodwill is a capital gain. BADR reduces the rate to 14% in 2025/26, but only on the first £1 million of gains. Gains above that are taxed at 24%. If the seller has already used their BADR allowance on a previous disposal, the full 24% rate applies.</p>
+<p><strong>For the seller:</strong> The sale of goodwill is a capital gain. BADR reduces the rate to 18% for disposals from 6 April 2026 (14% applied in 2025/26), but only on the first £1 million of gains. Gains above that are taxed at 24%. If the seller has already used their BADR allowance on a previous disposal, the full 24% rate applies.</p>
 
 <p><strong>For the buyer:</strong> The purchase price for goodwill is not immediately deductible. Instead, the buyer can claim amortisation relief at 6.5% per year on a straight-line basis. This means the tax benefit is spread over approximately 15 years. Buyers should factor this into their cash flow projections.</p>
 

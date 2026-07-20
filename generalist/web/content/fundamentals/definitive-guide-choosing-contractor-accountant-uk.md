@@ -210,7 +210,7 @@ faqs:
 
 <h3>Mixing Personal and Business Expenses</h3>
 
-<p>It is tempting to pay for a personal meal or a family train ticket from the company bank account. HMRC watches for this. If your director's loan account becomes overdrawn by more than £10,000, you trigger the S455 charge at 33.75%. That tax is repayable only when you clear the loan, but it is a cash flow shock.</p>
+<p>It is tempting to pay for a personal meal or a family train ticket from the company bank account. HMRC watches for this. If your director's loan account becomes overdrawn by more than £10,000, you trigger the S455 charge at 35.75% (for loans made on or after 6 April 2026; 33.75% for earlier loans). That tax is repayable only when you clear the loan, but it is a cash flow shock.</p>
 
 <h3>Ignoring the Director's Loan Account</h3>
 

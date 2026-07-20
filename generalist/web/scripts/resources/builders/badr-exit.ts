@@ -211,7 +211,7 @@ export function build(): ExcelJS.Workbook {
   const noteLines = [
     "Assumptions and limitations",
     "",
-    "• BADR (Business Asset Disposal Relief): 14% on qualifying gains up to a £1m lifetime",
+    "• BADR (Business Asset Disposal Relief): 18% from 6 April 2026 (14% in 2025/26) on qualifying gains up to a £1m lifetime",
     "  limit for disposals to 5 April 2026; 18% from 6 April 2026. Gains above the limit",
     "  are taxed at 24% (standard non-residential CGT higher rate).",
     "",

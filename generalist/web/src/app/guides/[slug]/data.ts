@@ -78,12 +78,12 @@ export const GUIDES: Record<string, Guide> = {
 <tr>
 <td>Basic rate</td>
 <td>£12,571, £50,270</td>
-<td>8.75%</td>
+<td>10.75%</td>
 </tr>
 <tr>
 <td>Higher rate</td>
 <td>£50,271, £125,140</td>
-<td>33.75%</td>
+<td>35.75%</td>
 </tr>
 <tr>
 <td>Additional rate</td>
@@ -92,7 +92,7 @@ export const GUIDES: Record<string, Guide> = {
 </tr>
 </tbody>
 </table>
-<p>Remember: the first £500 of dividends is tax-free. Every pound above that is taxed at the rates above. For a higher-rate taxpayer, an extra £10,000 of dividends costs £3,375 in tax.</p>
+<p>Remember: the first £500 of dividends is tax-free. Every pound above that is taxed at the rates above. For a higher-rate taxpayer, an extra £10,000 of dividends costs £3,575 in tax.</p>
 
 <h3>2.4 Worked example: a manufacturing company director</h3>
 <p>James runs a manufacturing business with his wife Sarah. The company's profit for 2025/26 is £120,000. James takes a salary of £9,100. Sarah is a co-director and takes the same. As a two-director company they claim the Employment Allowance, which covers the £1,230 of employer NI on these salaries (15% on the amount above the £5,000 secondary threshold). They have two children and no other income. Their combined personal allowances total £25,140. After salaries, the company has distributable reserves of £101,800. They decide to pay themselves dividends of £41,170 each, bringing each of them to a total income of £50,270 (the higher rate threshold). The first £500 of each dividend is tax-free. The remaining £40,670 is taxed at 8.75%, costing £3,558.63 each. Total personal tax on dividends: £7,117.26. The company pays corporation tax at 19% on £101,800, which is £19,342. Total tax: £26,459. If they had taken the full profit as salary, the tax and NI cost would have been significantly higher.</p>
@@ -186,7 +186,7 @@ export const GUIDES: Record<string, Guide> = {
 
 <h3>6.1 The S455 charge in detail</h3>
 <ul>
-<li>If you owe your company more than £10,000 at any point in the year, the company must pay S455 tax at 33.75% on the outstanding amount if it is not repaid within nine months of the year-end.</li>
+<li>If you owe your company more than £10,000 at any point in the year, the company must pay S455 tax at 35.75% on the outstanding amount (33.75% for loans made before 6 April 2026) if it is not repaid within nine months of the year-end.</li>
 <li>For a company with a 31 March 2026 year-end, the repayment deadline is 1 January 2027.</li>
 <li>The S455 tax is repayable to the company once the loan is repaid, but it ties up cash for months or years.</li>
 </ul>
@@ -207,7 +207,7 @@ export const GUIDES: Record<string, Guide> = {
 
 <h3>7.1 BADR basics for 2025/26</h3>
 <ul>
-<li>BADR (formerly Entrepreneurs' Relief) reduces the CGT rate on qualifying gains to 10% on the first £1 million of lifetime gains.</li>
+<li>BADR (formerly Entrepreneurs' Relief) reduces the CGT rate on qualifying gains to 18% (from 6 April 2026; previously 14%, and 10% before April 2025) on the first £1 million of lifetime gains.</li>
 <li>The lifetime limit is £1 million. It was reduced from £10 million in 2020 and has not changed since.</li>
 <li>For gains above £1 million, the CGT rate is 24% for higher-rate taxpayers from 2024/25 onwards.</li>
 </ul>

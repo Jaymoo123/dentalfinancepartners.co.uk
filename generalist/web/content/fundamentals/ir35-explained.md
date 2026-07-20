@@ -54,7 +54,7 @@ faqs:
 
 <p><strong>Inside IR35:</strong> Your limited company receives the contract income, but must deduct PAYE and employee NI before paying you. Your company also pays employer NI. You cannot take dividends from that income. Your effective tax rate is significantly higher, often leaving you with around 60-70% of the contract value after all taxes, compared to 75-85% outside IR35.</p>
 
-<p><strong>Outside IR35:</strong> Your limited company receives the contract income gross. You can pay yourself a small salary (typically up to the NI threshold) and take the rest as dividends, paying corporation tax at 19% or 25% on the profit and dividend tax at 8.75%, 33.75% or 39.35% depending on your total income. You control your own tax planning.</p>
+<p><strong>Outside IR35:</strong> Your limited company receives the contract income gross. You can pay yourself a small salary (typically up to the NI threshold) and take the rest as dividends, paying corporation tax at 19% or 25% on the profit and dividend tax at 10.75%, 35.75% or 39.35% (2026/27 rates) depending on your total income. You control your own tax planning.</p>
 
 <h3>The Three Key Tests HMRC Uses</h3>
 
@@ -192,7 +192,7 @@ faqs:
 <li>Deemed employment payment: £92,800 - £12,570 - £4,640 - £8,000 = £67,590</li>
 </ul>
 
-<p>JamesTech Ltd must process the deemed payment of £67,590 through payroll. The company pays employer NI of 13.8% on the amount above the secondary threshold (£9,100 for 2025/26). James pays employee NI at 8% on the amount above the primary threshold (£12,570) and 2% above the upper earnings limit (£50,270). He also pays income tax at 20% on the basic rate band and 40% on the higher rate band.</p>
+<p>JamesTech Ltd must process the deemed payment of £67,590 through payroll. The company pays employer NI of 15% on the amount above the secondary threshold (£5,000 from 6 April 2025). James pays employee NI at 8% on the amount above the primary threshold (£12,570) and 2% above the upper earnings limit (£50,270). He also pays income tax at 20% on the basic rate band and 40% on the higher rate band.</p>
 
 <p>The total tax and NI cost is significantly higher than if James were outside IR35 and taking dividends. This is why contractors fight to stay outside IR35.</p>
 
@@ -304,7 +304,7 @@ faqs:
 
 <h3>IR35 and Business Asset Disposal Relief</h3>
 
-<p>Business Asset Disposal Relief (BADR), formerly Entrepreneurs' Relief, allows you to pay 14% CGT on the first £1 million of gains when you sell or close your company. But BADR has strict conditions. You must have been an officer or employee of the company for at least two years, and you must hold at least 5% of the shares and 5% of the voting rights.</p>
+<p>Business Asset Disposal Relief (BADR), formerly Entrepreneurs' Relief, allows you to pay 18% CGT (the rate from 6 April 2026) on the first £1 million of gains when you sell or close your company. But BADR has strict conditions. You must have been an officer or employee of the company for at least two years, and you must hold at least 5% of the shares and 5% of the voting rights.</p>
 
 <p>If you have been inside IR35 for the entire life of your company, HMRC may argue that you were not genuinely trading, and therefore BADR does not apply. This is a complex area. If you are planning to close your company and claim BADR, you need to show that your company was a genuine business, not just a vehicle for disguised employment.</p>
 

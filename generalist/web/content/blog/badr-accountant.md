@@ -1,13 +1,13 @@
 ---
-title: "Do I Need a BADR Accountant to Sell My Business at 14% CGT?"
+title: "Do I Need a BADR Accountant to Sell My Business at 18% CGT?"
 slug: "badr-accountant"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/badr-accountant"
 date: "2026-05-17"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
-metaTitle: "BADR Accountant: Save 14% CGT on Your Business Sale"
-metaDescription: "Selling your Ltd company? A BADR accountant ensures you qualify for 14% CGT instead of 24%. We explain the rules, traps, and timing before April 2026."
+metaTitle: "BADR Accountant: Cut CGT to 18% on Your Business Sale"
+metaDescription: "Selling your Ltd company? A BADR accountant ensures you qualify for 18% CGT instead of 24%. We explain the rules, traps and timing for 2026/27 disposals."
 altText: "Specialist accountant reviewing BADR paperwork with a business owner in a modern Manchester city centre office"
 image: "/blog/badr-accountant.jpg"
 imageCredit:
@@ -15,8 +15,8 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@n-voitkevich"
   sourceUrl: "https://www.pexels.com/photo/black-smartphone-on-top-of-documents-6863260/"
   source: "Pexels"
-h1: "Do I Need a BADR Accountant to Sell My Business at 14% CGT?"
-summary: "Business Asset Disposal Relief (formerly Entrepreneurs’ Relief) lets you pay just 14% CGT on the first £1 million of gains when selling your company. But the rules are strict, and HMRC rejects claims that miss the details. A BADR accountant checks your shareholding, holding period, and trading status to lock in the relief before the rate rises to 18% in April 2026."
+h1: "Do I Need a BADR Accountant to Sell My Business at 18% CGT?"
+summary: "Business Asset Disposal Relief (formerly Entrepreneurs’ Relief) lets you pay 18% CGT (the rate from 6 April 2026) instead of 24% on the first £1 million of gains when selling your company. But the rules are strict, and HMRC rejects claims that miss the details. A BADR accountant checks your shareholding, holding period, and trading status to lock in the relief."
 schema: ""
 faqs:
   - question: "Can I claim BADR if I hold 4.9% of the shares?"
@@ -28,7 +28,7 @@ faqs:
   - question: "What is the BADR rate for disposals after 5 April 2026?"
     answer: "The BADR rate rises to 18% for disposals on or after 6 April 2026. The £1 million lifetime limit stays the same. Selling before 6 April 2026 locks in 14%. Waiting until 2026/27 costs an extra 4% on the gain, which on £1 million is an extra £40,000 in tax."
 keyTakeaways:
-  - "BADR cuts CGT to 14% on the first £1 million of qualifying lifetime gains for 2025/26 disposals; the rate rises to 18% from 6 April 2026."
+  - "BADR cuts CGT to 18% on the first £1 million of qualifying lifetime gains for disposals from 6 April 2026 (the rate was 14% in 2025/26 and 10% before April 2025)."
   - "Delaying a sale from 2025/26 to 2026/27 costs an extra 4% in tax, which amounts to £40,000 additional tax on a £1 million gain."
   - "To qualify on company shares, you must hold at least 5% of ordinary share capital, voting rights, and distributable profits for the full 24 months ending on the disposal date."
   - "You must also be a director or employee of the company throughout that 2-year qualifying period; a break or resignation resets the clock."
@@ -36,7 +36,7 @@ keyTakeaways:
   - "BADR claims must be made on your self assessment return; you can amend within 12 months of the 31 January deadline, but HMRC often refuses requests made after that window."
 ---
 
-<p>If you are selling your limited company shares, the difference between 14% and 24% Capital Gains Tax is not small. On a £1 million gain, that is £100,000 in your pocket versus HMRC's. Business Asset Disposal Relief (BADR) locks in the lower rate. But HMRC does not hand it out automatically. You have to qualify, claim it correctly, and avoid the common traps that turn a 14% gain into a 24% one.</p>
+<p>If you are selling your limited company shares, the difference between 18% and 24% Capital Gains Tax is not small. On a £1 million gain, that is £60,000 in your pocket versus HMRC's. Business Asset Disposal Relief (BADR) locks in the lower rate. But HMRC does not hand it out automatically. You have to qualify, claim it correctly, and avoid the common traps that turn an 18% gain into a 24% one.</p>
 
 <p>That is where a BADR accountant comes in. Not every accountant works with business exit planning. A general bookkeeper will file your year-end accounts but may not spot that your share structure fails the 5% test, or that your company has accumulated too much non-trading cash to qualify as a trading company. Those details cost you tens of thousands.</p>
 
@@ -104,7 +104,7 @@ keyTakeaways:
 
 <h2>What Happens If You Do Not Use a BADR Accountant</h2>
 
-<p>You file your self assessment, claim BADR, and hope HMRC accepts it. If they do, you pay 14% instead of 24%. If they challenge it, you face an enquiry that can take 12 to 18 months, cost thousands in professional fees, and potentially result in the relief being denied plus interest and penalties.</p>
+<p>You file your self assessment, claim BADR, and hope HMRC accepts it. If they do, you pay 18% instead of 24%. If they challenge it, you face an enquiry that can take 12 to 18 months, cost thousands in professional fees, and potentially result in the relief being denied plus interest and penalties.</p>
 
 <p>Even if the claim is valid, the enquiry process is stressful. HMRC will ask for evidence of trading status, shareholdings, and employment. If your records are not clear, they may argue the claim fails on technical grounds even if the substance is correct.</p>
 
@@ -114,7 +114,7 @@ keyTakeaways:
 
 <h2>Cost of a BADR Accountant vs the Tax Saved</h2>
 
-<p>On a £500,000 gain, BADR saves you £50,000 compared to the 24% rate (14% vs 24% = 10% saving). Even on a £200,000 gain, the saving is £20,000. A BADR review and claim preparation typically costs a fraction of that. The return on investment is obvious.</p>
+<p>On a £500,000 gain, BADR saves you £30,000 compared to the 24% rate (18% vs 24% = 6% saving). Even on a £200,000 gain, the saving is £12,000. A BADR review and claim preparation typically costs a fraction of that. The return on investment is obvious.</p>
 
 <p>If your gain is smaller, say £50,000, the saving is £5,000. Still worth paying for specialist advice if your situation is complex. For straightforward claims with a clean trading company and clear shareholding, a good accountant can handle it without a separate BADR specialist. But if there is any doubt on the trading test, share structure, or associated companies, bring in someone who does this regularly.</p>
 
@@ -128,9 +128,9 @@ keyTakeaways:
 
 <p>The rate changes are already legislated. For disposals on or after 6 April 2025, BADR applies at 14%. From 6 April 2026, it rises to 18%. The £1 million lifetime limit remains unchanged.</p>
 
-<p>If you are planning a sale, the timing matters. Selling before 6 April 2025 locked in 10%. Selling in the current tax year (2025/26) gives 14%. Waiting until 2026/27 costs you an extra 4% on the gain. On £1 million, that is an extra £40,000 in tax.</p>
+<p>If you sold before 6 April 2025 the rate was 10%; disposals in 2025/26 locked in 14%. For disposals from 6 April 2026 onward the rate is 18%. The disposal date for CGT is normally the date of unconditional exchange of contracts, so the rate is fixed by when you exchange, not when you complete.</p>
 
-<p>That does not mean you should rush a sale if the business is not ready. But it does mean you should have a clear timeline and work backwards from it. If you can sell before April 2026, you save 4% versus waiting. If you need more time to prepare, the 18% rate from 2026 is still better than the standard 24%.</p>
+<p>That does not mean you should rush a sale if the business is not ready. The 18% rate is still meaningfully better than the standard 24%, and qualifying (or failing to qualify) matters far more to your net proceeds than fine-tuning the sale date.</p>
 
 <h2>What to Do Next</h2>
 

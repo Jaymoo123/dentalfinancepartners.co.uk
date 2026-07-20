@@ -33,7 +33,7 @@ reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 keyTakeaways:
-  - "At £80,000 profit in 2025/26, an LLP produces a total tax bill of £22,289 versus £23,071 for a limited company, a saving of approximately £782 per year."
+  - "At £80,000 profit in 2026/27, an LLP produces a total tax bill of £22,289 versus £24,111 for a limited company, a saving of approximately £1,822 per year."
   - "A limited company pays corporation tax at 19% on profits up to £50,000, rising to 25% (with marginal relief) above £250,000, while an LLP pays no corporation tax at all."
   - "LLP members are taxed on their full profit share each year regardless of whether they draw the cash, which can create cash flow pressure."
   - "The off-payroll working rules (IR35) apply to limited companies as intermediaries but not LLPs, making an LLP a safer option for consultants engaged through a single client for extended periods."
@@ -94,10 +94,10 @@ Employer NIC: £1,136<br>
 Taxable company profit: £80,000 minus £12,570 minus £1,136 = £66,294. This falls in the marginal-relief band (£50,000 to £250,000), so corporation tax = 25% x £66,294 minus (3/200) x (£250,000 minus £66,294) = £16,574 minus £2,756 = £13,818.<br>
 Profit after CT: £66,294 minus £13,818 = £52,476<br>
 Dividends: £52,476<br>
-Dividend tax: first £500 tax-free (dividend allowance). Then £52,476 minus £500 = £51,976 taxed at dividend rates. Assuming no other income, the basic rate band is £50,270 minus £12,570 salary = £37,700 available. So £37,700 at 8.75% = £3,299. The remaining £14,276 at 33.75% = £4,818.<br>
-Total dividend tax: £3,299 + £4,818 = £8,117<br>
-Total tax (CT + employer NIC + dividend tax): £13,818 + £1,136 + £8,117 = £23,071<br>
-Net retained: £80,000 minus £23,071 = £56,929</p>
+Dividend tax: first £500 tax-free (dividend allowance). Then £52,476 minus £500 = £51,976 taxed at dividend rates. Assuming no other income, the basic rate band is £50,270 minus £12,570 salary = £37,700 available. So £37,700 at 10.75% (the 2026/27 rate) = £4,053. The remaining £14,276 at 35.75% = £5,104.<br>
+Total dividend tax: £4,053 + £5,104 = £9,157<br>
+Total tax (CT + employer NIC + dividend tax): £13,818 + £1,136 + £9,157 = £24,111<br>
+Net retained: £80,000 minus £24,111 = £55,889</p>
 
 <h3>Solo Consultant Through an LLP</h3>
 
@@ -108,7 +108,7 @@ Class 4 NIC (2025/26 rate): 6% on (£50,270 minus £12,570) = 6% on £37,700 = �
 Total tax (income tax + Class 4 NIC): £19,432 + £2,857 = £22,289<br>
 Net retained: £80,000 minus £22,289 = £57,711</p>
 
-<p>In this scenario, the LLP saves you about £782 per year at £80,000 profit in 2025/26. The increase in employer NIC (to 15% above a £5,000 secondary threshold from April 2025) raises the salary cost for the limited company route at this income level. As profits grow and a larger share of LLP income falls into the 40% or 45% income tax bands versus corporation tax at up to 25%, the limited company becomes progressively more efficient.</p>
+<p>In this scenario, the LLP saves you about £1,822 per year at £80,000 profit in 2026/27. The increase in employer NIC (to 15% above a £5,000 secondary threshold from April 2025) and the 2026/27 dividend rate rises (10.75% basic / 35.75% higher under FA 2026) raise the cost of the limited company route at this income level. As profits grow and a larger share of LLP income falls into the 40% or 45% income tax bands versus corporation tax at up to 25%, the limited company becomes progressively more efficient.</p>
 
 <p>But the comparison changes if you need to extract all the profit as salary (for example, if you want to maximise pension contributions or if you have no retained earnings requirement). And it changes if you are in a partnership with other members who have different tax positions.</p>
 

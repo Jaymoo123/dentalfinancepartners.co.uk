@@ -60,7 +60,7 @@ lastReviewed: "July 2026"
 <p>After paying corporation tax, the company can distribute after-tax profits to shareholders as dividends. The individual shareholder pays dividend tax at:</p>
 
 <ul>
-  <li>8.75% on dividends within the basic rate band (after the £500 dividend allowance)</li>
+  <li>10.75% on dividends within the basic rate band for 2026/27 (after the £500 dividend allowance)</li>
   <li>35.75% on dividends in the higher rate band</li>
   <li>39.35% on dividends in the additional rate band</li>
 </ul>

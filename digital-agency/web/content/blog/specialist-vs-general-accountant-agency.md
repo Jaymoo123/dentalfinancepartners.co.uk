@@ -83,7 +83,7 @@ keyTakeaways:
 
 <h3>Exit Planning and BADR</h3>
 <p>If you plan to sell your agency, Business Asset Disposal Relief (BADR) is worth up to £100k in tax savings on a £1m exit. But the conditions are strict. You must hold at least 5% of shares, be an officer or employee, and hold them for two years minimum before disposal.</p>
-<p>A general accountant will mention BADR when you say you are selling. A specialist will structure your shareholding and director arrangements from day one so that you qualify automatically when the time comes. That is the difference between paying 10% CGT and 20% CGT on your exit.</p>
+<p>A general accountant will mention BADR when you say you are selling. A specialist will structure your shareholding and director arrangements from day one so that you qualify automatically when the time comes. That is the difference between paying 18% CGT and 24% CGT on your exit.</p>
 
 <h2>When Should You Switch to a Specialist Accountant?</h2>
 <p>There is no single answer, but there are clear trigger points. If any of these apply to you, it is worth having a conversation.</p>

@@ -19,9 +19,9 @@ const data: AudienceStage = {
   heroAlt: "Senior founder reviewing exit documents in glass-walled office",
   intro: "You're 12-36 months from a sale, MBO, or partial exit. The decisions you make in this window determine whether you keep £600k or £800k of every £1m of sale proceeds. We work with growth-stage agency founders specifically on exit preparation, BADR planning, and the structural changes that protect your tax position.",
   stats: [
-    { value: "14%", label: "BADR rate (2025/26)" },
+    { value: "18%", label: "BADR rate (2026/27)" },
     { value: "£1M", label: "BADR lifetime limit" },
-    { value: "18%", label: "BADR rate from 6 Apr 2026" },
+    { value: "14%", label: "BADR rate in 2025/26 (10% before April 2025)" },
     { value: "2 yrs", label: "Minimum BADR holding period" },
   ],
   concerns: [
@@ -43,7 +43,7 @@ const data: AudienceStage = {
     {
       icon: Handshake,
       title: "Earn-out structuring",
-      body: "Earn-out terms determine whether you pay 14% CGT (BADR) or 47% income tax + NI. The contract wording is decisive. We review every earn-out clause before signing.",
+      body: "Earn-out terms determine whether you pay 18% CGT (BADR) or 47% income tax + NI. The contract wording is decisive. We review every earn-out clause before signing.",
     },
     {
       icon: FileSearch,
@@ -60,7 +60,7 @@ const data: AudienceStage = {
     { title: "Pre-sale tax planning", body: "BADR qualification audit, share class restructuring if needed, alphabet share allocation for family members, dividend extraction timing, pension contribution maximisation in the years before sale." },
     { title: "Sale-ready financial preparation", body: "24 months of management accounts in buyer-expected format, normalised EBITDA modelling, owner add-back schedule, working capital normalisation analysis." },
     { title: "Buyer due diligence support", body: "Data room preparation, response to DD questions, defending valuation positions, supporting your solicitor on warranty and indemnity negotiations." },
-    { title: "Earn-out tax review", body: "Every earn-out clause reviewed before signing. Capital treatment (14% BADR) vs income treatment (up to 47%) hinges on contract wording. We protect your position." },
+    { title: "Earn-out tax review", body: "Every earn-out clause reviewed before signing. Capital treatment (18% BADR) vs income treatment (up to 47%) hinges on contract wording. We protect your position." },
     { title: "Post-sale wealth planning", body: "Pension contribution timing, ISA contributions, investment structure, family investment company options, IHT planning if relevant. We work with your IFA where investment management is needed." },
   ],
   faqs: [
@@ -74,7 +74,7 @@ const data: AudienceStage = {
     },
     {
       q: "What's the difference between a share sale and an asset sale for me?",
-      a: "Share sale: buyer takes the company shell + history, you pay CGT on share proceeds (14% with BADR up to £1m). Asset sale: buyer takes only what they want, the company pays corporation tax on the sale (25%), then you extract the cash (further dividend or capital distribution tax). Share sale is almost always better for sellers; asset sale is almost always better for buyers. We help you negotiate accordingly.",
+      a: "Share sale: buyer takes the company shell + history, you pay CGT on share proceeds (18% with BADR up to £1m). Asset sale: buyer takes only what they want, the company pays corporation tax on the sale (25%), then you extract the cash (further dividend or capital distribution tax). Share sale is almost always better for sellers; asset sale is almost always better for buyers. We help you negotiate accordingly.",
     },
     {
       q: "How much of the price is typically deferred or earn-out?",

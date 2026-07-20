@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 
 /**
- * UK 2025/26 tax model, salary vs dividend optimiser for a limited company
+ * UK 2026/27 tax model, salary vs dividend optimiser for a limited company
  * director with no other income.
  *
  * Approach: try every salary value from 0 to a sensible upper bound (£60k)
@@ -22,8 +22,8 @@ const INCOME_BASIC = 0.20;
 const INCOME_HIGHER = 0.40;
 const INCOME_ADDITIONAL = 0.45;
 const DIVIDEND_ALLOWANCE = 500;
-const DIVIDEND_BASIC = 0.0875;
-const DIVIDEND_HIGHER = 0.3375;
+const DIVIDEND_BASIC = 0.1075; // FA 2026 s.4, from 6 April 2026
+const DIVIDEND_HIGHER = 0.3575;
 const DIVIDEND_ADDITIONAL = 0.3935;
 const CT_SMALL_THRESHOLD = 50000;
 const CT_MAIN_THRESHOLD = 250000;

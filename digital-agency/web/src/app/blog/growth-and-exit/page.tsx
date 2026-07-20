@@ -61,9 +61,9 @@ export default function GrowthAndExitPage() {
             </p>
           </section>
           <section>
-            <h2 className="text-2xl font-bold text-slate-900 mb-3">Business Asset Disposal Relief and the 10% CGT Rate</h2>
+            <h2 className="text-2xl font-bold text-slate-900 mb-3">Business Asset Disposal Relief and the 18% CGT Rate</h2>
             <p className="text-base leading-relaxed text-slate-600">
-              Business Asset Disposal Relief (BADR, formerly Entrepreneurs' Relief) reduces capital gains tax on qualifying business disposals to 14% in 2025/26 (rising to 18% from April 2026). The lifetime limit is £1 million. To qualify, you must have owned at least 5% of the ordinary share capital, been an officer or employee, and held the shares for at least two years before disposal. Planning your exit structure well in advance, including how shares are held and whether to use an EMI scheme for key employees, can significantly affect your post-exit tax position.
+              Business Asset Disposal Relief (BADR, formerly Entrepreneurs' Relief) reduces capital gains tax on qualifying business disposals to 18% from 6 April 2026 (it was 14% in 2025/26 and 10% before April 2025). The lifetime limit is £1 million. To qualify, you must have owned at least 5% of the ordinary share capital, been an officer or employee, and held the shares for at least two years before disposal. Planning your exit structure well in advance, including how shares are held and whether to use an EMI scheme for key employees, can significantly affect your post-exit tax position.
             </p>
           </section>
           <section>

@@ -144,7 +144,7 @@ keyTakeaways:
 
 <p>In an asset sale, the buyer typically takes over the WIP. You will need to agree a value for it. The simplest approach is to calculate the pro-rata retainer fee from the last invoice date to the completion date. If a client pays £6,000 per month and completion happens on the 15th, the WIP is £3,000.</p>
 
-<p>For tax purposes, WIP is treated as trading income, not capital. You pay income tax on it, not CGT. This is important because it reduces the amount qualifying for BADR. In the example above, if £50,000 of the sale price is WIP, you pay income tax at your marginal rate (40% or 45%) on that £50,000, not CGT at 10%.</p>
+<p>For tax purposes, WIP is treated as trading income, not capital. You pay income tax on it, not CGT. This is important because it reduces the amount qualifying for BADR. In the example above, if £50,000 of the sale price is WIP, you pay income tax at your marginal rate (40% or 45%) on that £50,000, not CGT at the 18% BADR rate.</p>
 
 <p>Your accountant can structure the sale to minimise this. One approach is to invoice all retainer fees up to the completion date before the sale completes. That way, the income is in your company's bank account, not in WIP. The buyer buys the future retainer income, not the past.</p>
 

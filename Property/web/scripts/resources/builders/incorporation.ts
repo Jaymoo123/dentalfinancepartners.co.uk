@@ -421,7 +421,7 @@ export function build(): ExcelJS.Workbook {
   /* --- Dividend tax detail (mirrors dividendTax.ts cell-for-cell) --- */
   // Dividends are the top slice of income: other income fills the personal allowance
   // and the bands first, then the dividend stacks on top. PA + £500 dividend
-  // allowance are tax-free; the rest is taxed at 8.75% / 33.75% / 39.35% by band.
+  // allowance are tax-free; the rest is taxed at 10.75% / 35.75% / 39.35% by band (2026/27, FA 2026 s.4).
   headerCell(ws.getCell("A36"), "Dividend tax detail (if you extract profit)");
   ws.mergeCells("A36:B36");
 
@@ -457,14 +457,14 @@ export function build(): ExcelJS.Workbook {
 
   // Position where the taxable dividend starts stacking = other taxable income +
   // the (tax-free) allowance used. Band limits are measured above the PA.
-  ws.getCell("A43").value = "Taxed at basic dividend rate (8.75%)";
+  ws.getCell("A43").value = "Taxed at basic dividend rate (10.75%)";
   ws.getCell("B43").value = {
     formula: "MAX(0,MIN(TaxableDiv,(BasicRateTop-PersonalAllowance)-(OtherTaxable+AllowanceUsed)))",
   } as ExcelJS.CellFormulaValue;
   moneyFmt(ws.getCell("B43"));
   wb.definedNames.add(`'Your figures'!$B$43`, "DivAtBasic");
 
-  ws.getCell("A44").value = "Taxed at higher dividend rate (33.75%)";
+  ws.getCell("A44").value = "Taxed at higher dividend rate (35.75%)";
   ws.getCell("B44").value = {
     formula:
       "MAX(0,MIN(TaxableDiv-DivAtBasic,(HigherRateTop-PersonalAllowance)-MAX(OtherTaxable+AllowanceUsed,BasicRateTop-PersonalAllowance)))",
@@ -581,7 +581,7 @@ export function build(): ExcelJS.Workbook {
     "  pay tax on the rents (less non-finance costs) at your marginal rate, less a 20% (rising to 22% from",
     "  2027/28) finance-cost credit. A company deducts interest in full and pays Corporation Tax (19% to",
     "  £50,000, 25% from £250,000, marginal relief between). The company's money is not yours: unless you",
-    "  retain and reinvest it, drawing it out as dividends is taxed again (8.75% / 33.75% / 39.35%).",
+    "  retain and reinvest it, drawing it out as dividends is taxed again (10.75% / 35.75% / 39.35% for 2026/27).",
     "",
     "• Not modelled: company buy-to-let mortgage costs (usually higher), ATED on £500k+ dwellings (relieved",
     "  for genuine commercial lets but the return must still be filed), the £100,000 personal-allowance taper,",

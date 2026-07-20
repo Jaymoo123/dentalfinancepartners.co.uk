@@ -91,7 +91,7 @@ imageCredit:
 
 <h2>Structuring the Sale: Asset Sale vs Share Sale</h2>
 
-<p>If you operate as a limited company, you can sell either the company shares or the underlying assets. A share sale is usually more tax-efficient for the seller because you pay CGT on the gain (with BADR potentially reducing the rate to 14%). The buyer, however, may prefer an asset sale because they can claim capital allowances on the assets and amortise goodwill.</p>
+<p>If you operate as a limited company, you can sell either the company shares or the underlying assets. A share sale is usually more tax-efficient for the seller because you pay CGT on the gain (with BADR potentially reducing the rate to 18% for disposals from 6 April 2026). The buyer, however, may prefer an asset sale because they can claim capital allowances on the assets and amortise goodwill.</p>
 
 <p>An asset sale means the company sells its assets (goodwill, equipment, patient list) and then distributes the proceeds to you as a dividend or capital distribution. This can trigger both corporation tax and dividend tax, making it less efficient. Most dental practice sales are structured as share sales when the seller is a company.</p>
 

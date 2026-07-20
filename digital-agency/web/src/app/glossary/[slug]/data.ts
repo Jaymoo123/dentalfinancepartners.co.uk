@@ -15,7 +15,7 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     term: "BADR (Business Asset Disposal Relief)",
     category: "Tax",
     primary_kw: "what is BADR",
-    body: `<p>Business Asset Disposal Relief (BADR) is a UK tax relief that reduces the capital gains tax you pay when you sell or dispose of your business, applying a lower rate of 14% on qualifying gains up to a lifetime limit of £1 million.</p>
+    body: `<p>Business Asset Disposal Relief (BADR) is a UK tax relief that reduces the capital gains tax you pay when you sell or dispose of your business, applying a lower rate of 18% (from 6 April 2026; 14% in 2025/26) on qualifying gains up to a lifetime limit of £1 million.</p>
 
 <p>For agency founders, BADR is the most valuable tax relief available when exiting your agency. It applies when you sell shares in your personal service company (your agency) or sell the agency's assets as a sole trader. To qualify, you must have owned the agency and been an employee or officer for at least two years before the sale. The relief reduces the capital gains tax rate from the standard 20% (for higher-rate taxpayers) to just 14% in the 2025/26 tax year, saving you 6p for every £1 of profit above your annual exempt amount.</p>
 

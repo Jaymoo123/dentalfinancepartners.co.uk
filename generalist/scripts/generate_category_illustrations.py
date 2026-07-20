@@ -132,7 +132,7 @@ ILLUSTRATIONS = {
   <line x1="200" y1="150" x2="240" y2="150" stroke="{INK_SOFT}" stroke-width="1.5"/>
   <line x1="200" y1="180" x2="240" y2="180" stroke="{INK_SOFT}" stroke-width="1.5"/>
   <path d="M 310 220 L 480 220 L 460 200 L 480 220 L 460 240" stroke="{ORANGE}" stroke-width="3" fill="none"/>
-  <text x="395" y="190" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="700" fill="{INK}">BADR 14%</text>
+  <text x="395" y="190" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="700" fill="{INK}">BADR 18%</text>
   <text x="395" y="260" text-anchor="middle" font-family="monospace" font-size="11" fill="{INK_SOFT}">£1m lifetime</text>
 """),
     "bookkeeping-and-compliance": svg(body=f"""
@@ -158,7 +158,7 @@ ILLUSTRATIONS = {
   <text x="220" y="195" font-family="monospace" font-size="14" font-weight="700" fill="white">Salary</text>
   <text x="220" y="215" font-family="monospace" font-size="11" fill="white">£12,570</text>
   <text x="360" y="200" font-family="monospace" font-size="11" font-weight="700" fill="{INK}">Div</text>
-  <text x="360" y="215" font-family="monospace" font-size="10" fill="{INK}">8.75%</text>
+  <text x="360" y="215" font-family="monospace" font-size="10" fill="{INK}">10.75%</text>
 """),
 }
 

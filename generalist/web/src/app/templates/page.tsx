@@ -47,7 +47,7 @@ const TEMPLATES = [
   {
     slug: "mileage-log",
     title: "Business mileage log",
-    summary: "HMRC-compliant mileage log using AMAP rates (45p first 10,000 miles, 25p thereafter). Track 22 trips per page, auto-calculates the claim.",
+    summary: "HMRC-compliant mileage log using AMAP rates (55p first 10,000 miles from 6 April 2026, 25p thereafter). Track 22 trips per page, auto-calculates the claim.",
     audience: "Anyone driving a personal vehicle for business",
   },
   {

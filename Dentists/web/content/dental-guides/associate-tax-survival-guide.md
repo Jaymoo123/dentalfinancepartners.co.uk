@@ -12,7 +12,7 @@ faqs:
   - question: "What's the difference between Class 2 and Class 4 NI for dental associates?"
     answer: "Class 2 NI was abolished from 6 April 2024 for self-employed earnings. From the 2024/25 tax year onwards, self-employed dental associates pay only Class 4 NI at 6% on profits between £12,570 and £50,270, and 2% on profits above £50,270. NI record entitlement for state pension is preserved automatically when you file self-assessment with profits above the small profits threshold. You no longer need to pay a separate weekly Class 2 charge."
   - question: "Can a dental associate claim mileage to multiple practices?"
-    answer: "Yes, travel between practices is deductible as a business expense. The journey from your home to your first practice of the day is treated as ordinary commuting and is not deductible. Once you arrive at the first practice and then travel on to a second practice that day, the journey between them is allowable. Mileage can be claimed at HMRC's approved rates (45p per mile for the first 10,000 business miles per tax year, 25p per mile thereafter) or actual costs apportioned. Keep a mileage log."
+    answer: "Yes, travel between practices is deductible as a business expense. The journey from your home to your first practice of the day is treated as ordinary commuting and is not deductible. Once you arrive at the first practice and then travel on to a second practice that day, the journey between them is allowable. Mileage can be claimed at HMRC's approved rates (55p per mile for the first 10,000 business miles per tax year from 6 April 2026, previously 45p; 25p per mile thereafter) or actual costs apportioned. Keep a mileage log."
   - question: "Should a dental associate incorporate as a limited company?"
     answer: "Usually only worth considering above sustained associate income of around £80,000-£100,000, AND where most engagements sit outside IR35, AND where the associate has tax-planning flexibility (non-working spouse, deferred income horizon, employer pension capacity). Below those thresholds, the administrative cost of running a limited company typically outweighs the tax saving. The 2021 IR35 reforms have removed much of the historical advantage for locums whose engagements are determined inside IR35 by the engaging practice."
   - question: "What expenses do most dental associates miss?"
@@ -92,7 +92,7 @@ ctaBody: "30-minute scoping call with a dentist-only specialist. We will review 
 <p>Travel between dental practices in the course of your work is allowable; home-to-first-practice and last-practice-to-home are commuting and are not. There are two methods:</p>
 
 <ul>
-<li><strong>HMRC approved mileage rate</strong>: 45p per mile for the first 10,000 business miles in the tax year, 25p per mile thereafter. This is the simplest method and is the most-claimed.</li>
+<li><strong>HMRC approved mileage rate</strong>: 55p per mile for the first 10,000 business miles in the tax year (from 6 April 2026; 45p applied up to 2025/26), 25p per mile thereafter. This is the simplest method and is the most-claimed.</li>
 <li><strong>Actual costs apportioned</strong>: total motor costs (fuel, insurance, servicing, MOT, repairs, depreciation via capital allowances) apportioned by business-mile percentage. More work to evidence but can be more generous if you have a expensive car or high running costs.</li>
 </ul>
 

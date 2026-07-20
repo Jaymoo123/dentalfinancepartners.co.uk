@@ -181,9 +181,9 @@ editorialNote: "Policy-update overlay for the LLP cluster, anchored on BlueCrest
 <p>Continuing Example 1, Member 4's £36,000 reclassified as employment income.</p>
 
 <ul>
-<li><strong>LLP-side cost:</strong> secondary Class 1 NIC at 15% (from 6 April 2026 per FA 2026) on £36,000 above the secondary threshold (typically £9,100) = (£36,000 − £9,100) × 15% = <strong>£4,035 per year</strong>. Apprenticeship Levy at 0.5% above the £15,000 allowance applies at LLP level if total annual pay bill above £3 million (most family property LLPs are below this and the Levy does not bite).</li>
+<li><strong>LLP-side cost:</strong> secondary Class 1 NIC at 15% (the rate from 6 April 2025) on £36,000 above the secondary threshold (£5,000) = (£36,000 − £5,000) × 15% = <strong>£4,650 per year</strong>. Apprenticeship Levy at 0.5% above the £15,000 allowance applies at LLP level if total annual pay bill above £3 million (most family property LLPs are below this and the Levy does not bite).</li>
 <li><strong>Member 4 side:</strong> income tax on £36,000 at applicable marginal rate (broadly neutral versus partnership profit-share treatment at the same marginal rate); employee Class 1 primary NIC at 8% on band above the primary threshold (typically £12,570) = (£36,000 − £12,570) × 8% = <strong>£1,874 per year</strong>.</li>
-<li><strong>Cumulative-year retrospective exposure:</strong> if HMRC enquires post-BlueCrest and reclassifies retrospectively across three prior tax years: LLP-side £4,035 × 3 = £12,105 secondary NIC; Member-side £1,874 × 3 = £5,622 primary NIC; late-payment penalties under FA 2009 Sch 56; interest at HMRC official rate from each year's original due date.</li>
+<li><strong>Cumulative-year retrospective exposure:</strong> if HMRC enquires post-BlueCrest and reclassifies retrospectively across three prior tax years: LLP-side roughly £4,650 × 3 = £13,950 secondary NIC (slightly less for years before 2025/26, when the rate was 13.8% above a £9,100 threshold); Member-side £1,874 × 3 = £5,622 primary NIC; late-payment penalties under FA 2009 Sch 56; interest at HMRC official rate from each year's original due date.</li>
 </ul>
 
 <p>Cash exposure to the LLP commonly runs £15,000 to £25,000 per affected member depending on tax-year coverage plus interest accrual.</p>

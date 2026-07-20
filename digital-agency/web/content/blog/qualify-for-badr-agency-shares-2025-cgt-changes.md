@@ -20,7 +20,7 @@ summary: The 2025 CGT rate changes mean higher tax on most asset sales, but BADR
 schema: ''
 faqs:
 - question: What is the BADR lifetime limit for agency founders in 2025?
-  answer: The BADR lifetime limit is £1m of qualifying gains. That means you can realise up to £1m in gains at the 10% rate over your lifetime. If you have used some of that allowance on a previous business sale, the remaining balance is available. Your accountant can confirm your remaining allowance from your tax returns.
+  answer: The BADR lifetime limit is £1m of qualifying gains. That means you can realise up to £1m in gains at the reduced BADR rate (18% from 6 April 2026; 14% in 2025/26) over your lifetime. If you have used some of that allowance on a previous business sale, the remaining balance is available. Your accountant can confirm your remaining allowance from your tax returns.
 - question: Can I qualify for BADR if I own less than 5% of my agency?
   answer: No. You must hold at least 5% of the ordinary share capital, with at least 5% of voting rights and 5% of distributable profits. If you are below 5%, you cannot use BADR on that disposal. You may be able to restructure your shareholding, but this needs to be done well before the sale and must have genuine commercial substance.
 - question: Does the two-year holding period reset if I change my shareholding percentage?

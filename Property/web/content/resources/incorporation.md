@@ -64,7 +64,7 @@ lastReviewed: "2026-06-06"
 <ul>
 <li><strong>Personally:</strong> income tax under Section 24 on the rents, less the 20%/22% finance-cost credit, at your marginal rate.</li>
 <li><strong>In the company, layer one:</strong> Corporation Tax on the rental profit (interest deducted in full). For a typical small portfolio this is 19%.</li>
-<li><strong>In the company, layer two:</strong> the tax on getting the money out. The company's money is not your money. Drawing it as dividends is taxed again in your hands at 8.75% (basic), 33.75% (higher) or 39.35% (additional), after the £500 dividend allowance.</li>
+<li><strong>In the company, layer two:</strong> the tax on getting the money out. The company's money is not your money. Drawing it as dividends is taxed again in your hands at 10.75% (basic), 35.75% (higher) or 39.35% (additional) for 2026/27, after the £500 dividend allowance.</li>
 </ul>
 
 <p>This second layer is where many "incorporate to save tax" pitches quietly fall apart. If you need to extract all the profit each year to live on, the combined Corporation Tax plus dividend tax can be similar to, or even more than, the personal Section 24 position. The company structure shines when you <strong>retain and reinvest</strong> profit, growing the portfolio inside the company where only Corporation Tax has been paid, and defer extraction (or extract efficiently later through salary, pension contributions, or in years when you are a basic-rate taxpayer). The calculator lets you toggle between "draw it all out" and "retain and reinvest" precisely because the answer is completely different in each case.</p>

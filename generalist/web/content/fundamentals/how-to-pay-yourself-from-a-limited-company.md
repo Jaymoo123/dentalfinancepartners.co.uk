@@ -23,7 +23,7 @@ faqs:
   - question: "Can I pay myself only in dividends and no salary?"
     answer: "Technically yes, but it's not recommended. Without a salary, you won't build qualifying years for the state pension. Some mortgage lenders also prefer to see salary income. And if HMRC challenges your IR35 status, having no salary can work against you. Most directors take a salary of at least the Lower Earnings Limit (£6,500 for 2025/26) to protect their state pension entitlement, and usually £12,570 to use the full personal allowance."
   - question: "What happens if I take money from my company without declaring it as salary or dividends?"
-    answer: "That money goes into your director's loan account. If the loan exceeds £10,000, your company must pay S455 tax at 33.75% on the overdrawn balance. You may also face a benefit-in-kind charge if the loan is interest-free. HMRC can impose penalties for failing to report the loan correctly. Always record withdrawals properly."
+    answer: "That money goes into your director's loan account. If the loan exceeds £10,000, your company must pay S455 tax at 35.75% on the overdrawn balance (for loans made on or after 6 April 2026; 33.75% for earlier loans). You may also face a benefit-in-kind charge if the loan is interest-free. HMRC can impose penalties for failing to report the loan correctly. Always record withdrawals properly."
   - question: "How much dividend can I take without paying tax in 2025/26?"
     answer: "The dividend allowance for 2025/26 is £500. This means the first £500 of dividend income is tax-free, regardless of your tax band. Beyond that, dividends are taxed at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate), depending on your total income."
 ---
@@ -128,12 +128,12 @@ faqs:
 <tr>
 <td>Basic rate</td>
 <td>£12,571 - £50,270</td>
-<td>8.75%</td>
+<td>10.75%</td>
 </tr>
 <tr>
 <td>Higher rate</td>
 <td>£50,271 - £125,140</td>
-<td>33.75%</td>
+<td>35.75%</td>
 </tr>
 <tr>
 <td>Additional rate</td>
@@ -194,10 +194,10 @@ faqs:
 <li>Total dividends: £37,700</li>
 <li>Dividend allowance: £500 (tax-free)</li>
 <li>Taxable dividends: £37,200</li>
-<li>Dividend tax at 8.75%: £3,255</li>
+<li>Dividend tax at 10.75%: £3,999</li>
 </ul>
 
-<p>James takes home £50,270 in total, pays £3,255 in dividend tax, and leaves £29,477 in the company for future growth or pension contributions.</p>
+<p>James takes home £50,270 in total, pays £3,999 in dividend tax, and leaves £29,477 in the company for future growth or pension contributions.</p>
 
 <p>If James took the same £50,270 as salary instead:</p>
 <ul>
@@ -215,7 +215,7 @@ faqs:
 
 <h3>The S455 charge</h3>
 
-<p>If your director's loan exceeds £10,000 at any point in the company's accounting period, and you don't repay it within 9 months and 1 day of the year-end, the company must pay S455 tax at 33.75% on the overdrawn balance. This is a charge on the company, not you personally. But it's a real cash cost.</p>
+<p>If your director's loan exceeds £10,000 at any point in the company's accounting period, and you don't repay it within 9 months and 1 day of the year-end, the company must pay S455 tax at 35.75% on the overdrawn balance (33.75% for loans made before 6 April 2026). This is a charge on the company, not you personally. But it's a real cash cost.</p>
 
 <p>The company can reclaim the S455 charge if you later repay the loan. But that could be years later. In the meantime, the cash is with HMRC.</p>
 
@@ -266,9 +266,9 @@ faqs:
 <li>Dividend: £50,000</li>
 <li>Priya's other income: £12,570 salary</li>
 <li>Total income: £62,570</li>
-<li>Dividend tax: £500 allowance, then £37,200 at 8.75% = £3,255, then £12,300 at 33.75% = £4,151</li>
-<li>Total dividend tax: £7,406</li>
-<li>Net in Priya's pocket: £42,594</li>
+<li>Dividend tax: £500 allowance, then £37,200 at 10.75% = £3,999, then £12,300 at 35.75% = £4,397</li>
+<li>Total dividend tax: £8,396</li>
+<li>Net in Priya's pocket: £41,604</li>
 </ul>
 
 <p><strong>Option 2: Company pension contribution</strong></p>
@@ -367,7 +367,7 @@ faqs:
 <li><strong>Set up payroll</strong>. Register for PAYE if you haven't already. Use software like BrightPay, Xero, or FreeAgent. Process a salary of £12,570 for the year (£1,047.50 per month) for most directors.</li>
 <li><strong>Check retained profits</strong>. Before paying any dividend, confirm the company has enough retained earnings. Your accountant or software can tell you this.</li>
 <li><strong>Decide your total income target</strong>. How much do you need personally? Factor in your salary, dividend income from other sources, and any rental or investment income.</li>
-<li><strong>Calculate the optimal dividend</strong>. Aim to stay within the basic rate band (£50,270 total income) to pay only 8.75% dividend tax. If you need more, understand the higher rate implications.</li>
+<li><strong>Calculate the optimal dividend</strong>. Aim to stay within the basic rate band (£50,270 total income) to pay only 10.75% dividend tax. If you need more, understand the higher rate implications.</li>
 <li><strong>Document the dividend</strong>. Hold a board meeting (even if you're the only director), minute the decision, and issue a dividend voucher.</li>
 <li><strong>Consider a pension contribution</strong>. If you have surplus company cash, a pension contribution saves corporation tax and builds retirement savings.</li>
 <li><strong>Monitor your director's loan account</strong>. If you take money from the company outside of salary and dividends, record it properly. Repay any overdrawn balance before the 9-month deadline.</li>

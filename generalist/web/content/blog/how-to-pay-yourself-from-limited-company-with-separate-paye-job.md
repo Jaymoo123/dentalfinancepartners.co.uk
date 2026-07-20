@@ -81,7 +81,7 @@ keyTakeaways:
 
 <p>The dividend allowance dropped from £2,000 to £1,000 in 2023/24 and then to £500 from 2024/25 onwards. That £500 is a nil-rate band, not a separate tax-free amount. If your total dividend income exceeds £500, the excess is taxed at your marginal dividend rate.</p>
 
-<p>For a director with a separate PAYE job, the £500 allowance is still worth having. If your company profits are modest (say £5,000 a year), you can take £500 as tax-free dividends and the remaining £4,500 at 8.75% (assuming you stay in the basic rate band overall). That is £394 in tax on £5,000 extracted. Hard to beat.</p>
+<p>For a director with a separate PAYE job, the £500 allowance is still worth having. If your company profits are modest (say £5,000 a year), you can take £500 as tax-free dividends and the remaining £4,500 at 10.75% (the 2026/27 basic dividend rate, assuming you stay in the basic rate band overall). That is £484 in tax on £5,000 extracted. Hard to beat.</p>
 
 <h2>Should You Pay Any Salary at All?</h2>
 
@@ -99,7 +99,7 @@ keyTakeaways:
 
 <p>But you must still pay the dividend tax. If your Self Assessment tax liability for the year exceeds £1,000 and less than 80% of your income tax was collected at source, HMRC requires payments on account (two instalments, due 31 January and 31 July, each equal to 50% of the prior-year liability). If your liability is below £1,000 or most of your tax was deducted through PAYE, the balance is collected as a lump-sum balancing payment.</p>
 
-<p>Many directors with side businesses get caught out by payments on account. If your Ltd pays you £20,000 in dividends in your first year, you owe £6,583 in dividend tax (at 33.75% on £19,500). HMRC will also ask for £3,292 as a first payment on account for the following year. Total due on 31 January: £9,875. Plan for that.</p>
+<p>Many directors with side businesses get caught out by payments on account. If your Ltd pays you £20,000 in dividends in your first year, you owe £6,971 in dividend tax (at the 2026/27 higher rate of 35.75% on £19,500). HMRC will also ask for £3,486 as a first payment on account for the following year. Total due on 31 January: £10,457. Plan for that.</p>
 
 <h2>Timing Your Dividends Around Your PAYE Income</h2>
 

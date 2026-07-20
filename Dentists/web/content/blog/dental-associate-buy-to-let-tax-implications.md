@@ -106,7 +106,7 @@ faqs:
 
 <p>Some associates hold BTL properties through a limited company rather than personally. This avoids Section 24 because companies can still deduct mortgage interest as a trading expense. But the trade-off is that you pay corporation tax on the rental profits (19% or 25% depending on profit level) and then dividend tax when you extract the money.</p>
 
-<p>For a higher-rate associate, the effective tax rate on company rental profits extracted as dividends is roughly: 19% corporation tax + (33.75% dividend tax on the remaining 81%) = approximately 46.3%. This is higher than the personal rate of 40% on rental profits (plus the Section 24 restriction on interest). The company structure works better if you reinvest profits rather than extract them, or if you have very high mortgage interest relative to income.</p>
+<p>For a higher-rate associate, the effective tax rate on company rental profits extracted as dividends is roughly: 19% corporation tax + (35.75% dividend tax on the remaining 81%, at the 2026/27 upper rate) = approximately 48%. This is higher than the personal rate of 40% on rental profits (plus the Section 24 restriction on interest). The company structure works better if you reinvest profits rather than extract them, or if you have very high mortgage interest relative to income.</p>
 
 <p>For a detailed comparison of extraction strategies, see our <a href="/dental-guides/practice-profit-extraction-partnership-vs-ltd">guide on profit extraction for dental practices</a>. The principles for BTL companies are similar, though the tax rates differ.</p>
 

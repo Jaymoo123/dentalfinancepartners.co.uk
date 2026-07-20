@@ -6,7 +6,7 @@ date: "2026-05-17"
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "Business Asset Disposal Relief Explained | UK Accountants"
-metaDescription: "Business Asset Disposal Relief explained for UK business owners. 14% CGT rate, £1m lifetime limit, eligibility rules, and worked examples."
+metaDescription: "Business Asset Disposal Relief explained for UK business owners. 18% CGT rate from April 2026, £1m lifetime limit, eligibility rules, and worked examples."
 altText: "Business owner reviewing exit strategy documents with their accountant in Manchester city centre office"
 image: "/blog/business-asset-disposal-relief-explained.jpg"
 imageCredit:
@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-scrabble-tiles-on-a-white-surface-10044789/"
   source: "Pexels"
 h1: "Business Asset Disposal Relief Explained: The Definitive Guide for UK Business Owners"
-summary: "Business Asset Disposal Relief (BADR) lets you pay 14% Capital Gains Tax on qualifying business disposals, rather than the standard 20% or 24%. This guide covers the £1 million lifetime limit, the two-year qualifying period, the 5% shareholding test, and how to plan your exit to secure the relief. We include worked examples, an action checklist, and the rule changes taking effect from April 2026."
+summary: "Business Asset Disposal Relief (BADR) lets you pay 18% Capital Gains Tax on qualifying business disposals from 6 April 2026 (14% in 2025/26), rather than the standard 24%. This guide covers the £1 million lifetime limit, the two-year qualifying period, the 5% shareholding test, and how to plan your exit to secure the relief. We include worked examples and an action checklist."
 schema: ""
 faqs:
   - question: "Can I claim BADR if I sell part of my business?"
@@ -28,7 +28,7 @@ faqs:
     answer: "Possibly. If you own a commercial property and rent it to your trading company, the property is an asset used in the company's trade. If you dispose of the property, you can claim BADR provided you have owned it for at least 24 months and the property has been used in the company's trade throughout that period. The company must be a trading company. Residential property does not qualify for BADR in most circumstances."
 ---
 
-<p>If you own a business in the UK and plan to sell it one day, the single most valuable tax relief you need to understand is Business Asset Disposal Relief. Formerly known as Entrepreneurs' Relief, BADR reduces the Capital Gains Tax (CGT) you pay on the sale of your business from the standard 18% or 24% down to just 14% for the 2025/26 tax year. That difference can save you tens of thousands of pounds. Possibly hundreds of thousands.</p>
+<p>If you own a business in the UK and plan to sell it one day, the single most valuable tax relief you need to understand is Business Asset Disposal Relief. Formerly known as Entrepreneurs' Relief, BADR reduces the Capital Gains Tax (CGT) you pay on the sale of your business from the standard 24% higher rate down to 18% for 2026/27 (it was 14% in 2025/26). That difference can save you tens of thousands of pounds. Possibly hundreds of thousands.</p>
 
 <p>This guide is for directors of limited companies, sole traders, and partnership owners who want to understand exactly how BADR works, who qualifies, and what traps cause claims to fail. We have advised business owners across the UK, from Shoreditch tech startups to Manchester manufacturing firms and Bristol creative agencies, on structuring their exits to secure this relief. We will walk you through the rules, the numbers, and the planning steps you need to take now, not the week before you exchange contracts.</p>
 
@@ -38,7 +38,7 @@ faqs:
 
 <h3>Current and future rates</h3>
 
-<p>The rate of BADR has changed several times. For the 2025/26 tax year, the rate is 14%. From 6 April 2026, the rate rises to 18%. This is a material change. If you are planning an exit in the next 18 months, the timing of your disposal could make a significant difference to your net proceeds.</p>
+<p>The rate of BADR has changed several times. It was 10% up to 5 April 2025 and 14% for 2025/26. From 6 April 2026 the rate is 18%, and that is the rate that applies to disposals now. The rate is set by the date of disposal (normally exchange of contracts), so gains from earlier years are still taxed at the rate in force when they were made.</p>
 
 <table>
 <thead>
@@ -71,7 +71,7 @@ faqs:
 </tbody>
 </table>
 
-<p>The gap between the BADR rate and the standard higher rate narrows over time. This makes planning more important, not less. If you miss the conditions for BADR, you could pay 24% on gains that would have been taxed at 14%.</p>
+<p>The gap between the BADR rate and the standard higher rate narrows over time. This makes planning more important, not less. If you miss the conditions for BADR, you could pay 24% on gains that would have been taxed at 18%.</p>
 
 <h3>The £1 million lifetime limit</h3>
 
@@ -153,8 +153,8 @@ faqs:
 <td>£1,700,000</td>
 </tr>
 <tr>
-<td>BADR: first £1,000,000 at 14%</td>
-<td>£140,000</td>
+<td>BADR: first £1,000,000 at 18%</td>
+<td>£180,000</td>
 </tr>
 <tr>
 <td>Remaining gain: £700,000 at 24%</td>
@@ -162,18 +162,18 @@ faqs:
 </tr>
 <tr>
 <td>Total CGT due</td>
-<td>£308,000</td>
+<td>£348,000</td>
 </tr>
 <tr>
 <td>Effective tax rate</td>
-<td>18.1%</td>
+<td>20.5%</td>
 </tr>
 </tbody>
 </table>
 
-<p>Without BADR, Sarah would pay 24% on the full £1.7 million gain: £408,000. The relief saves her £100,000. If she had sold in the 2024/25 tax year when the BADR rate was 10%, her tax would have been £268,000, a saving of £140,000 compared to the standard rate.</p>
+<p>Without BADR, Sarah would pay 24% on the full £1.7 million gain: £408,000. The relief saves her £60,000. If she had sold in the 2024/25 tax year when the BADR rate was 10%, her tax would have been £268,000, so the value of the relief has narrowed considerably as the rate has risen.</p>
 
-<p>This illustrates why timing matters. If Sarah can delay her sale until after 5 April 2025, she benefits from the current 14% rate. If she delays beyond 5 April 2026, the rate rises to 18%, and her tax on the first £1 million becomes £180,000 instead of £140,000.</p>
+<p>This illustrates why the disposal date matters. A sale that exchanged unconditionally on or before 5 April 2026 locked in the 14% rate (£140,000 on the first £1 million); a sale exchanging from 6 April 2026 pays 18% (£180,000). The disposal date for CGT is normally the date of unconditional exchange, not completion.</p>
 
 <h2>Common traps that cause BADR claims to fail</h2>
 
@@ -235,7 +235,7 @@ faqs:
 
 <h3>Consider the timing of your disposal</h3>
 
-<p>The BADR rate rises to 18% from 6 April 2026. If you can complete your disposal before that date, you pay 14% on the first £1 million. If you cannot, the rate increases by 4 percentage points. For a £1 million gain, that is an extra £40,000 in tax.</p>
+<p>The BADR rate rose to 18% on 6 April 2026. Disposals that exchanged unconditionally on or before 5 April 2026 kept the 14% rate; anything later pays 18%. The relief is still worth up to £60,000 against the 24% standard rate on a £1 million gain, so qualifying remains well worth planning for.</p>
 
 <p>If you are selling a property that qualifies for BADR, for example, a building used in your trade, remember that residential property gains are reported and paid within 60 days of completion. The 60-day reporting requirement applies even if you claim BADR. You must file a <a href="/glossary">CGT property return</a> on HMRC's online system within 60 days.</p>
 

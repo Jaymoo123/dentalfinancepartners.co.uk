@@ -160,7 +160,7 @@ keyTakeaways:
 
 <ul>
 <li><strong>Electric cars only.</strong> The combination of 100% FYA and 3% BIK is extremely tax-efficient. If you need a new car and can charge at home or work, an electric company car is hard to beat.</li>
-<li><strong>Very high business mileage.</strong> If you drive 20,000+ business miles per year, the company can claim mileage allowances (45p per mile for the first 10,000 miles, 25p thereafter) which may be more tax-efficient than a company car. But the company car route can still work if the car itself is electric.</li>
+<li><strong>Very high business mileage.</strong> If you drive 20,000+ business miles per year, the company can claim mileage allowances (45p per mile for the first 10,000 miles in 2025/26, rising to 55p from 6 April 2026; 25p thereafter) which may be more tax-efficient than a company car. But the company car route can still work if the car itself is electric.</li>
 <li><strong>You want a single vehicle for business and personal use.</strong> A company car covers both, with the BIK charge being the personal cost. If you would otherwise buy a car personally and claim mileage, compare the two routes carefully.</li>
 </ul>
 
@@ -171,7 +171,7 @@ keyTakeaways:
 <p>If the numbers do not stack up for a company car, consider these alternatives:</p>
 
 <ul>
-<li><strong>Use your own car and claim mileage.</strong> Your company pays you 45p per mile for the first 10,000 business miles, 25p thereafter. This is tax-free and NIC-free. You own the car personally, so no BIK applies. This is often better for petrol/diesel cars.</li>
+<li><strong>Use your own car and claim mileage.</strong> Your company pays you up to the approved rate per mile tax-free (45p for the first 10,000 business miles in 2025/26, 55p from 6 April 2026; 25p thereafter). This is tax-free and NIC-free. You own the car personally, so no BIK applies. This is often better for petrol/diesel cars.</li>
 <li><strong>Buy the car personally and lease it to the company.</strong> You charge the company a commercial rate for using your car. This is more complex and requires a formal hire agreement. Not common for most directors.</li>
 <li><strong>Use a salary sacrifice scheme.</strong> Some companies offer salary sacrifice for electric cars, but for a director this is usually less efficient than the company car route because you lose the capital allowance benefit.</li>
 </ul>
