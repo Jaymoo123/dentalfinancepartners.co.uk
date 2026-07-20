@@ -69,9 +69,24 @@ export async function submitLead(
   }
 }
 
+/**
+ * Strip ALL whitespace from a Supabase env value. A Supabase URL and an
+ * anon-key JWT never legitimately contain whitespace, but a stray newline or
+ * space pasted into the env var gets inlined into the client bundle and
+ * silently corrupts the value (the classic "fetch Invalid value" / broken-JWT
+ * failure that took down client-side lead inserts). Sanitising at this single
+ * shared read point makes the whole estate immune. Returns undefined for
+ * empty/absent values.
+ */
+export function cleanSupabaseEnv(v: string | undefined): string | undefined {
+  if (!v) return undefined;
+  return v.replace(/\s+/g, "") || undefined;
+}
+
 export function getSupabaseConfig() {
-  const supabaseUrl = typeof process !== "undefined" ? process.env.NEXT_PUBLIC_SUPABASE_URL : undefined;
-  const supabaseKey = typeof process !== "undefined" ? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY : undefined;
-  
-  return { supabaseUrl, supabaseKey };
+  const raw = typeof process !== "undefined" ? process.env : undefined;
+  return {
+    supabaseUrl: cleanSupabaseEnv(raw?.NEXT_PUBLIC_SUPABASE_URL),
+    supabaseKey: cleanSupabaseEnv(raw?.NEXT_PUBLIC_SUPABASE_ANON_KEY),
+  };
 }
