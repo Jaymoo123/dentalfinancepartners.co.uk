@@ -354,8 +354,7 @@ describe("runNurtureGuardrails: alert throttle", () => {
     process.env = OLD_ENV;
   });
 
-  it("does not re-send alert email when the same breach key was alerted within 24 hours", async () => {
-    // Control shows this exact key was alerted 1 hour ago (well within 24h window)
+  it("does not re-send alert email when the same breach key was already alerted (recent)", async () => {
     mockGetNurtureControl.mockResolvedValueOnce({
       ...makeDefaultControl(),
       lastAlertKey: "complaints_24h",
@@ -367,17 +366,18 @@ describe("runNurtureGuardrails: alert throttle", () => {
     expect(mockRecordGuardrailAlert).not.toHaveBeenCalled();
   });
 
-  it("does re-send alert when the same breach key was alerted MORE than 24 hours ago", async () => {
-    // lastAlertAt is 25 hours ago -- outside the 24h dedup window
+  it("does not re-send alert for a persisting identical breach, regardless of age", async () => {
+    // Breach-set-change alerting (owner request 2026-07-19): same key alerted
+    // 25 hours ago still never re-emails.
     mockGetNurtureControl.mockResolvedValueOnce({
       ...makeDefaultControl(),
       lastAlertKey: "complaints_24h",
       lastAlertAt: new Date(Date.now() - 25 * 60 * 60 * 1000).toISOString(),
     });
     const result = await runNurtureGuardrails({ autopauseEnabled: false });
-    expect(result.alerted).toBe(true);
-    expect(mockEmailSend).toHaveBeenCalledTimes(1);
-    expect(mockRecordGuardrailAlert).toHaveBeenCalledTimes(1);
+    expect(result.alerted).toBe(false);
+    expect(mockEmailSend).not.toHaveBeenCalled();
+    expect(mockRecordGuardrailAlert).not.toHaveBeenCalled();
   });
 
   it("does re-send alert when lastAlertKey differs (different breach rule active)", async () => {
