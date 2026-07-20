@@ -13,16 +13,31 @@ import {
   fmtGBP,
   type DentalEarningsSnapshot,
 } from "@/lib/research/dental-earnings-index";
+import {
+  fmtDensity,
+  fmtNumber as fmtDensityNumber,
+  type DentalPracticeDensitySnapshot,
+} from "@/lib/research/dental-practice-density";
+import {
+  fmtNumber as fmtFormationNumber,
+  fmtPercent,
+  monthLabel as formationMonthLabel,
+  type DentalCompanyFormationSnapshot,
+} from "@/lib/research/dental-company-formation-index";
 import activitySnapshot from "@/data/nhs-dental-activity-index.json";
 import earningsSnapshot from "@/data/nhs-dental-earnings-index.json";
+import densitySnapshot from "@/data/dental-practice-density.json";
+import formationSnapshot from "@/data/dental-company-formation-index.json";
 
 const activity = activitySnapshot as unknown as DentalActivitySnapshot;
 const earnings = earningsSnapshot as unknown as DentalEarningsSnapshot;
+const density = densitySnapshot as unknown as DentalPracticeDensitySnapshot;
+const formation = formationSnapshot as unknown as DentalCompanyFormationSnapshot;
 
 export const metadata: Metadata = {
   title: "NHS dental data and research | Dental Finance Partners",
   description:
-    "Original, sourced data on NHS dental activity recovery and dentist earnings, built from NHSBSA and NHS Digital open data. Free to read and cite.",
+    "Original, sourced data on NHS dental activity, dentist earnings, practice density and company formation trends, built from official open data. Free to read and cite.",
   alternates: { canonical: `${siteConfig.url}/research` },
 };
 
@@ -42,6 +57,22 @@ const reports = [
     stat: fmtGBP(earnings.headline.avg_net_income_england),
     statLabel: `average net income before tax (${earnings.headline.reference_year})`,
     updated: `NHS Digital ${earnings.headline.reference_year} edition`,
+  },
+  {
+    href: "/research/dental-practice-density",
+    title: "Dental Practice Density: England Regional Map",
+    blurb: `There are ${fmtDensityNumber(density.headline.total_dental_locations)} CQC-registered dental locations in England (${fmtDensity(density.headline.england_per_100k)} per 100k). ${density.headline.highest_density_region} is highest (${fmtDensity(density.headline.highest_density_per_100k)}/100k); ${density.headline.lowest_density_region} lowest (${fmtDensity(density.headline.lowest_density_per_100k)}/100k).`,
+    stat: `${fmtDensity(density.headline.england_per_100k)}`,
+    statLabel: "dental locations per 100,000 population (England)",
+    updated: `CQC Care Directory ${density.meta.cqc_data_date}`,
+  },
+  {
+    href: "/research/dental-company-formation-index",
+    title: "Dental Company Formation Index (SIC 86230)",
+    blurb: `New dental limited company incorporations (SIC 86230) rose ${fmtPercent(formation.headline.decade.change_pct, false)} between ${formation.headline.decade.from_year} and ${formation.headline.decade.to_year}. ${fmtFormationNumber(formation.headline.dental_cos_ttm)} new dental companies in the last 12 months.`,
+    stat: fmtFormationNumber(formation.headline.dental_cos_ttm),
+    statLabel: "new dental companies incorporated (last 12 months)",
+    updated: formationMonthLabel(formation.meta.incorporations_settled_through),
   },
 ];
 
@@ -63,7 +94,7 @@ export default function ResearchIndexPage() {
 
       <section className="bg-white py-10 sm:py-14">
         <div className={siteContainerLg}>
-          <div className="grid gap-6 sm:grid-cols-2">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
             {reports.map((r) => (
               <Link
                 key={r.href}

@@ -221,13 +221,14 @@ def build_snapshot(
                 entry[extra_key] = sd[extra_key]
         sources_out.append(entry)
 
-    # CH source always first (OGL licence + attribution hardcoded; never varies)
+    # CH source always first (OGL licence). Attribution is per-site: use the niche's
+    # own attribution string so the brand matches the site, not the construction pilot.
     ch_source = {
         "name": "Companies House Advanced Search API",
         "publisher": "Companies House",
         "url": "https://developer.company-information.service.gov.uk/",
         "licence": "Open Government Licence v3.0",
-        "attribution": "Data sourced from Companies House under the Open Government Licence v3.0. Free to cite with attribution to Trade Tax Specialists.",
+        "attribution": cfg.attribution or "Data sourced from Companies House under the Open Government Licence v3.0.",
     }
     meta_sources = [ch_source] + sources_out
 

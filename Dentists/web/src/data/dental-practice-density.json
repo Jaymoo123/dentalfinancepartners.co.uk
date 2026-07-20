@@ -1,0 +1,299 @@
+{
+  "meta": {
+    "generated_at": "2026-07-20",
+    "cqc_data_date": "2026-07-15",
+    "coverage": "England (CQC-registered dental locations only)",
+    "population_reference": "ONS Mid-2024 Population Estimates (published Sep 2025)",
+    "sources": [
+      {
+        "name": "CQC Care Directory",
+        "publisher": "Care Quality Commission",
+        "url": "https://www.cqc.org.uk/sites/default/files/2026-07/15_July_2026_CQC_directory.csv",
+        "portal": "https://www.cqc.org.uk/about-us/transparency/using-cqc-data",
+        "licence": "Open Government Licence v3.0",
+        "retrieved": "2026-07-15",
+        "attribution": "Contains public sector information licensed under the Open Government Licence v3.0."
+      },
+      {
+        "name": "Mid-2024 Population Estimates",
+        "publisher": "Office for National Statistics",
+        "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/annualmidyearpopulationestimates/mid2024",
+        "portal": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland/mid2024",
+        "licence": "Open Government Licence v3.0",
+        "retrieved": "2025-09-26",
+        "attribution": "Source: Office for National Statistics licensed under the Open Government Licence v3.0."
+      }
+    ],
+    "notes": "CQC registers all dental locations (including NHS, mixed, and private practices) under Service types = 'Dentist'. This count reflects CQC-registered locations, not individual dentists or chairs. Some locations may be closed or inactive but remain on the register. England-only: Scotland, Wales and Northern Ireland are regulated separately. Population figures are ONS mid-2024 estimates."
+  },
+  "headline": {
+    "total_dental_locations": 12035,
+    "england_per_100k": 20.83,
+    "england_population": 57753000,
+    "highest_density_region": "London",
+    "highest_density_per_100k": 24.59,
+    "lowest_density_region": "East Midlands",
+    "lowest_density_per_100k": 17.24
+  },
+  "regions": [
+    {
+      "region": "London",
+      "dental_locations": 2397,
+      "population": 9748000,
+      "per_100k": 24.59,
+      "top_local_authorities": [
+        {
+          "local_authority": "Westminster",
+          "count": 268
+        },
+        {
+          "local_authority": "Barnet",
+          "count": 139
+        },
+        {
+          "local_authority": "Camden",
+          "count": 107
+        },
+        {
+          "local_authority": "Wandsworth",
+          "count": 89
+        },
+        {
+          "local_authority": "Croydon",
+          "count": 88
+        }
+      ]
+    },
+    {
+      "region": "South East",
+      "dental_locations": 2220,
+      "population": 9263000,
+      "per_100k": 23.97,
+      "top_local_authorities": [
+        {
+          "local_authority": "Kent",
+          "count": 360
+        },
+        {
+          "local_authority": "Surrey",
+          "count": 353
+        },
+        {
+          "local_authority": "Hampshire",
+          "count": 322
+        },
+        {
+          "local_authority": "West Sussex",
+          "count": 219
+        },
+        {
+          "local_authority": "Oxfordshire",
+          "count": 168
+        }
+      ]
+    },
+    {
+      "region": "North West",
+      "dental_locations": 1522,
+      "population": 7480000,
+      "per_100k": 20.35,
+      "top_local_authorities": [
+        {
+          "local_authority": "Lancashire",
+          "count": 250
+        },
+        {
+          "local_authority": "Manchester",
+          "count": 126
+        },
+        {
+          "local_authority": "Liverpool",
+          "count": 102
+        },
+        {
+          "local_authority": "Cheshire East",
+          "count": 102
+        },
+        {
+          "local_authority": "Stockport",
+          "count": 78
+        }
+      ]
+    },
+    {
+      "region": "East of England",
+      "dental_locations": 1258,
+      "population": 6370000,
+      "per_100k": 19.75,
+      "top_local_authorities": [
+        {
+          "local_authority": "Essex",
+          "count": 307
+        },
+        {
+          "local_authority": "Hertfordshire",
+          "count": 289
+        },
+        {
+          "local_authority": "Norfolk",
+          "count": 162
+        },
+        {
+          "local_authority": "Suffolk",
+          "count": 134
+        },
+        {
+          "local_authority": "Cambridgeshire",
+          "count": 122
+        }
+      ]
+    },
+    {
+      "region": "South West",
+      "dental_locations": 1139,
+      "population": 5778000,
+      "per_100k": 19.71,
+      "top_local_authorities": [
+        {
+          "local_authority": "Devon",
+          "count": 155
+        },
+        {
+          "local_authority": "Gloucestershire",
+          "count": 138
+        },
+        {
+          "local_authority": "Cornwall",
+          "count": 107
+        },
+        {
+          "local_authority": "Bristol, City of",
+          "count": 105
+        },
+        {
+          "local_authority": "Somerset",
+          "count": 102
+        }
+      ]
+    },
+    {
+      "region": "West Midlands",
+      "dental_locations": 1141,
+      "population": 5950000,
+      "per_100k": 19.18,
+      "top_local_authorities": [
+        {
+          "local_authority": "Birmingham",
+          "count": 224
+        },
+        {
+          "local_authority": "Staffordshire",
+          "count": 178
+        },
+        {
+          "local_authority": "Worcestershire",
+          "count": 123
+        },
+        {
+          "local_authority": "Warwickshire",
+          "count": 119
+        },
+        {
+          "local_authority": "Shropshire",
+          "count": 75
+        }
+      ]
+    },
+    {
+      "region": "Yorkshire & Humberside",
+      "dental_locations": 1039,
+      "population": 5547000,
+      "per_100k": 18.73,
+      "top_local_authorities": [
+        {
+          "local_authority": "Leeds",
+          "count": 170
+        },
+        {
+          "local_authority": "North Yorkshire",
+          "count": 140
+        },
+        {
+          "local_authority": "Sheffield",
+          "count": 114
+        },
+        {
+          "local_authority": "Bradford",
+          "count": 104
+        },
+        {
+          "local_authority": "Kirklees",
+          "count": 77
+        }
+      ]
+    },
+    {
+      "region": "North East",
+      "dental_locations": 461,
+      "population": 2657000,
+      "per_100k": 17.35,
+      "top_local_authorities": [
+        {
+          "local_authority": "County Durham",
+          "count": 86
+        },
+        {
+          "local_authority": "Newcastle upon Tyne",
+          "count": 69
+        },
+        {
+          "local_authority": "Northumberland",
+          "count": 55
+        },
+        {
+          "local_authority": "Stockton-on-Tees",
+          "count": 42
+        },
+        {
+          "local_authority": "Gateshead",
+          "count": 40
+        }
+      ]
+    },
+    {
+      "region": "East Midlands",
+      "dental_locations": 855,
+      "population": 4960000,
+      "per_100k": 17.24,
+      "top_local_authorities": [
+        {
+          "local_authority": "Derbyshire",
+          "count": 134
+        },
+        {
+          "local_authority": "Leicestershire",
+          "count": 133
+        },
+        {
+          "local_authority": "Nottinghamshire",
+          "count": 133
+        },
+        {
+          "local_authority": "Lincolnshire",
+          "count": 118
+        },
+        {
+          "local_authority": "Leicester",
+          "count": 78
+        }
+      ]
+    },
+    {
+      "region": "Unknown",
+      "dental_locations": 3,
+      "population": null,
+      "per_100k": null,
+      "top_local_authorities": []
+    }
+  ]
+}

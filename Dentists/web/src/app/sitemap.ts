@@ -25,6 +25,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/research",
     "/research/nhs-dental-activity-index",
     "/research/nhs-dentist-earnings-index",
+    "/research/dental-practice-density",
+    "/research/dental-company-formation-index",
     "/privacy-policy",
     "/terms",
     "/cookie-policy",
