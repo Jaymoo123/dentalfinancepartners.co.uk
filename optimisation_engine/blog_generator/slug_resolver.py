@@ -29,6 +29,7 @@ the resolver agrees with the live corpus (0 invented slugs).
 """
 from __future__ import annotations
 
+import json
 import re
 import pathlib
 
@@ -154,6 +155,41 @@ _DEFAULT_BLOG = pathlib.Path("Property/web/content/blog")
 _DEFAULT_MW = pathlib.Path("Property/web/src/middleware.ts")
 
 
+def _repo_root() -> pathlib.Path:
+    # slug_resolver.py lives at optimisation_engine/blog_generator/, so repo root
+    # is two parents up. Falls back to cwd if run from elsewhere.
+    here = pathlib.Path(__file__).resolve().parent.parent.parent
+    return here if (here / "sites").exists() else pathlib.Path(".")
+
+
+def resolve_site_paths(site: str) -> tuple[pathlib.Path, pathlib.Path, pathlib.Path]:
+    """(blog_dir, middleware_path, blog_routes_dir) for a site from sites/<site>.json.
+    Mirrors scripts/track2_link_audit.py's config convention. Property has a
+    hardcoded fallback so the default path never depends on the config file."""
+    root = _repo_root()
+    cfg_path = root / "sites" / f"{site}.json"
+    if cfg_path.exists():
+        p = json.loads(cfg_path.read_text(encoding="utf-8"))["paths"]
+        build = root / p["buildDir"]
+        return (root / p["blogContentDir"],
+                build / "src" / "middleware.ts",
+                root / p.get("blogRoutesDir", f"{p['buildDir']}/src/app/blog"))
+    if site == "property":
+        return (root / _DEFAULT_BLOG, root / _DEFAULT_MW,
+                root / "Property/web/src/app/blog")
+    raise FileNotFoundError(f"Site config missing: {cfg_path}")
+
+
+def is_flat_routed(blog_routes_dir: pathlib.Path) -> bool:
+    """A nested site renders /blog/<category>/<slug> and therefore has a
+    `[category]` segment in its route tree. A flat site (Medical) renders
+    /blog/<slug> and has only `[slug]`. Detecting the route dir needs no
+    hardcoded site list, so a FUTURE flat site is guarded automatically.
+    On this resolver's --fix path a flat site is UNSAFE: _resolve() would
+    rewrite a correct 2-segment /blog/<slug> into a 3-segment 404."""
+    return not (pathlib.Path(blog_routes_dir) / "[category]").exists()
+
+
 def selftest(blog_dir=_DEFAULT_BLOG, middleware_path=_DEFAULT_MW) -> int:
     """Agreement check against the live corpus: every internal link must resolve
     to a real destination (0 invented slugs). 'Would canonicalise' counts SOFT
@@ -230,28 +266,52 @@ def fix_files(paths, *, blog_dir=_DEFAULT_BLOG, middleware_path=_DEFAULT_MW,
     return changed, all_unresolved
 
 
+def _arg_value(argv, flag, default=None):
+    if flag in argv:
+        i = argv.index(flag)
+        if i + 1 < len(argv):
+            return argv[i + 1]
+    return default
+
+
 if __name__ == "__main__":
     import sys
     argv = sys.argv[1:]
+    # --site <key> selects the corpus + routes (default property, back-compat).
+    site = _arg_value(argv, "--site", "property")
+    blog_dir, mw_path, routes_dir = resolve_site_paths(site)
+
+    # HARD GUARD: this resolver builds nested /blog/<category>/<slug> URLs. On a
+    # FLAT-routed site (Medical) that corrupts correct 2-segment links into
+    # 3-segment 404s. Refuse rather than rely on a doc/memory prohibition.
+    if is_flat_routed(routes_dir):
+        print(f"slug_resolver: REFUSING to run on '{site}' - it uses FLAT blog "
+              f"routing (/blog/<slug>), and this tool emits nested "
+              f"/blog/<category>/<slug> URLs that would 404.\n"
+              f"  Use scripts/medical_flat_link_audit.py for flat-routed sites.")
+        sys.exit(2)
+
     if argv and argv[0] == "--fix":
-        # --fix <file.md> [...]  |  --fix --all   [--dry-run]
+        # --fix <file.md> [...]  |  --fix --all   [--dry-run]   [--site <key>]
         dry = "--dry-run" in argv
         if "--all" in argv:
-            files = [str(p) for p in sorted(_DEFAULT_BLOG.glob("*.md"))]
+            files = [str(p) for p in sorted(blog_dir.glob("*.md"))]
         else:
-            files = [a for a in argv[1:] if not a.startswith("--")]
+            files = [a for a in argv[1:]
+                     if not a.startswith("--") and a != site]
         if not files:
             print("usage: slug_resolver.py --fix <file.md> [<file.md> ...] "
-                  "| --fix --all   [--dry-run]")
+                  "| --fix --all   [--dry-run] [--site <key>]")
             sys.exit(2)
-        changed, unresolved = fix_files(files, apply=not dry)
+        changed, unresolved = fix_files(
+            files, blog_dir=blog_dir, middleware_path=mw_path, apply=not dry)
         verb = "would canonicalise" if dry else "canonicalised"
-        print(f"slug_resolver --fix: {verb} {changed}/{len(files)} file(s); "
-              f"{len(unresolved)} unresolved (invented) link(s)")
+        print(f"slug_resolver --fix ({site}): {verb} {changed}/{len(files)} "
+              f"file(s); {len(unresolved)} unresolved (invented) link(s)")
         for stem, href in unresolved:
             print(f"  UNRESOLVED (invented slug, left as-is): [{stem}] {href}")
         # Exit non-zero ONLY when an invented slug remains - i.e. the writer
         # linked to a page that does not exist (a category fix can't help). The
         # writer's Normalise stage surfaces these for repointing.
         sys.exit(1 if unresolved else 0)
-    sys.exit(selftest())
+    sys.exit(selftest(blog_dir=blog_dir, middleware_path=mw_path))
