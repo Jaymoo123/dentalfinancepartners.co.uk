@@ -1,5 +1,10 @@
 # Research-Authority Program: HANDOFF (2026-07-20)
 
+> **SUPERSEDED 2026-07-23** by `docs/_engines/RESEARCH_HANDOFF_2026-07-23.md` - READ THAT FIRST.
+> The top half of this doc is stale (predates batch-1 deploy + the batch-2 build sweep). The
+> engine, locked rules, and lessons here remain valid; the SESSION UPDATE section at the bottom
+> is accurate. Current state + next actions live in the 2026-07-23 handoff.
+
 You are taking over mid-program. Read this fully before acting. It tells you exactly
 what is done, what is in-flight, what to build next, where, and the rules.
 
