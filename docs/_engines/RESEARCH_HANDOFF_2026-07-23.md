@@ -99,17 +99,22 @@ agent must:
 After each site's posts land: run the editorial QA sweep (see 3.4), fix defects, then run a
 content-inclusive `npm run build` for that site to confirm green.
 
-### 3.2 Build contractors-ir35 + digital-agency (last 2 batch-2 sites)
-Specs: `docs/_engines/scout_batch2/contractors-ir35.md`, `.../digital-agency.md`.
-- contractors-ir35: flagship = PSC formation reform-impact index (CH formations annotated
-  against Apr-2017 + Apr-2021 off-payroll reforms). The niche config
-  `optimisation_engine/ingestion/research/niches/contractors_ir35.py` ALREADY EXISTS but
-  needs: a derived reform-overlay layer, a notes-bug fix (its "no survivorship bias" claim is
-  FALSE for the live-only CH snapshot), and 3 new source refs (Insolvency Service + 2 ONS).
-- digital-agency: flagship = agency survival/churn index (CH cluster 731/70210/74100/73200 +
-  ONS Business Demography). One supplementary (slow-payment) needs a company-number->SIC join.
-Use ONE build agent per site (intra-site sequential; cross-site parallel is fine). Same build
-pattern as section 3.3.
+### 3.2 Build contractors-ir35 + digital-agency (last 2 batch-2 sites) - BUILT 2026-07-23b
+Both DONE (3 assets each), figures grep-verified vs JSON, builds green, owner-deploy-gated.
+- contractors-ir35: reform-overlay on existing uk-contractor-index + NEW survival + insolvency.
+- digital-agency: NEW digital_agency.py niche + formation spine + flagship survival/churn + insolvency.
+GROUND-TRUTH CORRECTION (verified empirically 2026-07-23b, do NOT repeat the old mistake):
+the scout/handoff claim that "no survivorship bias" is FALSE was itself WRONG. The engine's
+`companies_house.py ch_hits()` queries the CH **Advanced Search API** with NO `company_status`
+filter, so it counts companies by incorporation date across ALL statuses (active + dissolved).
+Probe: SIC 62020 incorporated 2016 -> unfiltered 20,384 vs active-only 6,268 (dissolved 13,928
+still counted). CH retains dissolved records ~20yr, series only spans ~2016+, so ZERO in-window
+purge -> the "no survivorship bias" claim across the 7 sibling formation indexes is CORRECT and
+was left intact. The two build agents (trusting the scout) wrote a survivorship-bias overclaim
+into contractors + digital-agency; manager REVERTED it to match the accurate sibling framing.
+Do NOT "fix" the sibling notes. The scout spec's "live-only bulk product" premise conflated the
+Advanced Search API with the CH Free Company Data Product (bulk CSV, which IS live-only, but is
+NOT what the engine uses).
 
 ### 3.3 The proven build pattern (copy exactly)
 Per new research asset: real ingester (derive from source, NEVER hardcode) -> JSON snapshot in

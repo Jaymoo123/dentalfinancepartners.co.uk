@@ -60,6 +60,37 @@ export interface ContractorIndexSnapshot {
       union: number;
     }>;
   };
+  reform_overlay?: ReformOverlay;
+}
+
+export interface ReformOverlay {
+  generated_at: string;
+  methodology: string;
+  reform_dates: { date: string; label: string; description: string }[];
+  periods: {
+    key: string;
+    label: string;
+    from_month: string;
+    to_month: string;
+    ttm_union: number;
+  }[];
+  deltas: {
+    from_period: string;
+    to_period: string;
+    label: string;
+    years: number;
+    change_pct: number;
+    cagr_pct: number | null;
+  }[];
+  hmrc_context: {
+    additional_tax_gbp: number;
+    additional_tax_label: string;
+    contractors_affected: number;
+    period: string;
+    source_name: string;
+    source_url: string;
+    note: string;
+  };
 }
 
 const MONTHS_SHORT = [

@@ -64,6 +64,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/crunch-alternative",
     "/specialist-vs-generalist-accountant",
     "/uk-tax-rates",
+    "/research",
+    "/research/uk-agency-formation-index",
+    "/research/uk-agency-survival-churn-index",
+    "/research/uk-agency-insolvency-index",
     // /newsletter removed from sitemap (newsletter retired, owner-locked).
     // The /newsletter page itself stays live returning 200 for graceful landings.
     "/privacy-policy",

@@ -29,7 +29,7 @@ export function GET() {
   const csv = [
     "# UK Contractor Index: monthly company incorporations by contractor SIC code",
     "# Source: Companies House Advanced Search API (Open Government Licence v3.0).",
-    "# Gross counts (includes companies since dissolved). union = deduplicated across all 13 codes.",
+    "# Gross counts via CH Advanced Search API (all statuses, includes companies since dissolved; no survivorship bias). union = deduplicated across all 13 codes.",
     "# A proxy for personal service company (PSC) formation, not a direct count of contractors.",
     `# Generated: ${data.meta.generated_at}. provisional=1 marks indexing-lag months.`,
     "# Free to reuse with attribution to Contractor Tax Accountants (contractortaxaccountants.co.uk).",

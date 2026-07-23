@@ -1,0 +1,342 @@
+{
+  "meta": {
+    "generated_at": "2026-07-23",
+    "title": "UK Contractor Survival Index",
+    "description": "How long UK contractor-sector businesses survive, by 1, 2, 3, 4 and 5 years after formation, built from ONS Business Demography birth-cohort data for SIC groups 62 (computer programming and IT consultancy), 70 (head offices and management consultancy) and 71 (architecture and engineering), against the all-industries UK average.",
+    "source_url": "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable",
+    "release_page": "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/bulletins/businessdemography/2024",
+    "release_date": "2025-11-20",
+    "publisher": "Office for National Statistics",
+    "licence": "Open Government Licence v3.0",
+    "sources": [
+      {
+        "name": "Business Demography 2024 reference tables (Table 5.2a-5.2e)",
+        "publisher": "Office for National Statistics",
+        "url": "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable",
+        "release_page": "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/bulletins/businessdemography/2024",
+        "licence": "Open Government Licence v3.0",
+        "retrieved": "2026-07-23",
+        "release_date": "2025-11-20",
+        "attribution": "Data sourced from the Office for National Statistics under the Open Government Licence v3.0. Free to cite with attribution to Contractor Tax Accountants."
+      }
+    ],
+    "attribution": "UK Contractor Survival Index data compiled from ONS Business Demography reference tables (Open Government Licence v3.0). Free to cite with attribution to Contractor Tax Accountants.",
+    "notes": "Survival rates are ONS's own published enterprise-level birth-cohort survival figures (Table 5.2a-5.2e), read directly from the Standard Industrial Classification 2007 group breakdown, not re-derived or estimated. An 'enterprise' birth is a new business appearing on the Inter-Departmental Business Register in a given year (VAT or PAYE registration); survival is measured against that registration remaining active at each anniversary. Each birth-year cohort (2019 to 2023) can only show survival up to however many years have elapsed since that release: the 2019 cohort has the full 5-year curve, the 2023 cohort only 1-year. The combined 'contractor' curve sums raw births and survivor counts for SIC groups 62, 70 and 71 before dividing, so it is an exact weighted figure, not an average of the three percentages.",
+    "caveats": [
+      "SIC groups 62, 70 and 71 are broader than the specific SIC codes used in the UK Contractor Index (62020, 70229, 71121/71122 etc): this ONS table only breaks survival down to 2-digit (occasionally 3-digit) group level, so figures here include non-contractor firms within the same group, for example games studios and software product companies under group 62, PR and communications firms under group 70, and architecture practices under group 71.",
+      "'Enterprise', not 'company': this is a different unit to our UK Contractor Index and UK Contractor Insolvency Index, which both track Companies House limited companies specifically. The ONS enterprise measure is broader: it includes sole traders and partnerships registered for VAT or PAYE as well as limited companies. The two datasets should not be combined into a single figure.",
+      "Figures are control-rounded to the base 5 by ONS disclosure control, so small percentage movements between adjacent cohorts can reflect rounding as much as real change.",
+      "'Survival' means the enterprise remained VAT/PAYE-registered at that anniversary; it does not mean the business is profitable, growing, or trading under the same name, structure or ownership."
+    ]
+  },
+  "headline": {
+    "latest_5yr_cohort_year": 2019,
+    "latest_5yr_contractor_pct": 36.9,
+    "latest_5yr_all_industries_pct": 38.4,
+    "latest_1yr_cohort_year": 2023,
+    "latest_1yr_contractor_pct": 95.2,
+    "latest_1yr_all_industries_pct": 93.4
+  },
+  "cohorts": [
+    {
+      "birth_year": 2019,
+      "contractor": {
+        "births": 57930.0,
+        "y1_count": 55615.0,
+        "y1_pct": 96.0,
+        "y2_count": 44615.0,
+        "y2_pct": 77.0,
+        "y3_count": 32565.0,
+        "y3_pct": 56.2,
+        "y4_count": 25310.0,
+        "y4_pct": 43.7,
+        "y5_count": 21355.0,
+        "y5_pct": 36.9
+      },
+      "all_industries": {
+        "births": 363825.0,
+        "y1_count": 344135.0,
+        "y1_pct": 94.6,
+        "y2_count": 271925.0,
+        "y2_pct": 74.7,
+        "y3_count": 203465.0,
+        "y3_pct": 55.9,
+        "y4_count": 163725.0,
+        "y4_pct": 45.0,
+        "y5_count": 139845.0,
+        "y5_pct": 38.4
+      }
+    },
+    {
+      "birth_year": 2020,
+      "contractor": {
+        "births": 43060.0,
+        "y1_count": 40680.0,
+        "y1_pct": 94.5,
+        "y2_count": 32205.0,
+        "y2_pct": 74.8,
+        "y3_count": 24250.0,
+        "y3_pct": 56.3,
+        "y4_count": 20315.0,
+        "y4_pct": 47.2,
+        "y5_count": null,
+        "y5_pct": null
+      },
+      "all_industries": {
+        "births": 333015.0,
+        "y1_count": 309470.0,
+        "y1_pct": 92.9,
+        "y2_count": 237400.0,
+        "y2_pct": 71.3,
+        "y3_count": 176410.0,
+        "y3_pct": 53.0,
+        "y4_count": 146415.0,
+        "y4_pct": 44.0,
+        "y5_count": null,
+        "y5_pct": null
+      }
+    },
+    {
+      "birth_year": 2021,
+      "contractor": {
+        "births": 41845.0,
+        "y1_count": 39795.0,
+        "y1_pct": 95.1,
+        "y2_count": 31855.0,
+        "y2_pct": 76.1,
+        "y3_count": 25910.0,
+        "y3_pct": 61.9,
+        "y4_count": null,
+        "y4_pct": null,
+        "y5_count": null,
+        "y5_pct": null
+      },
+      "all_industries": {
+        "births": 363995.0,
+        "y1_count": 339920.0,
+        "y1_pct": 93.4,
+        "y2_count": 256265.0,
+        "y2_pct": 70.4,
+        "y3_count": 194685.0,
+        "y3_pct": 53.5,
+        "y4_count": null,
+        "y4_pct": null,
+        "y5_count": null,
+        "y5_pct": null
+      }
+    },
+    {
+      "birth_year": 2022,
+      "contractor": {
+        "births": 39520.0,
+        "y1_count": 37560.0,
+        "y1_pct": 95.0,
+        "y2_count": 30680.0,
+        "y2_pct": 77.6,
+        "y3_count": null,
+        "y3_pct": null,
+        "y4_count": null,
+        "y4_pct": null,
+        "y5_count": null,
+        "y5_pct": null
+      },
+      "all_industries": {
+        "births": 336925.0,
+        "y1_count": 311110.0,
+        "y1_pct": 92.3,
+        "y2_count": 232125.0,
+        "y2_pct": 68.9,
+        "y3_count": null,
+        "y3_pct": null,
+        "y4_count": null,
+        "y4_pct": null,
+        "y5_count": null,
+        "y5_pct": null
+      }
+    },
+    {
+      "birth_year": 2023,
+      "contractor": {
+        "births": 40920.0,
+        "y1_count": 38965.0,
+        "y1_pct": 95.2,
+        "y2_count": null,
+        "y2_pct": null,
+        "y3_count": null,
+        "y3_pct": null,
+        "y4_count": null,
+        "y4_pct": null,
+        "y5_count": null,
+        "y5_pct": null
+      },
+      "all_industries": {
+        "births": 316025.0,
+        "y1_count": 295140.0,
+        "y1_pct": 93.4,
+        "y2_count": null,
+        "y2_pct": null,
+        "y3_count": null,
+        "y3_pct": null,
+        "y4_count": null,
+        "y4_pct": null,
+        "y5_count": null,
+        "y5_pct": null
+      }
+    }
+  ],
+  "groups": [
+    {
+      "sic_group": "62",
+      "label": "Computer programming, consultancy and related activities",
+      "cohorts": [
+        {
+          "birth_year": 2019,
+          "births": 21730.0,
+          "y1_pct": 96.0,
+          "y2_pct": 76.6,
+          "y3_pct": 54.4,
+          "y4_pct": 41.4,
+          "y5_pct": 34.5
+        },
+        {
+          "birth_year": 2020,
+          "births": 14505.0,
+          "y1_pct": 94.2,
+          "y2_pct": 72.9,
+          "y3_pct": 53.9,
+          "y4_pct": 44.7,
+          "y5_pct": null
+        },
+        {
+          "birth_year": 2021,
+          "births": 13950.0,
+          "y1_pct": 95.0,
+          "y2_pct": 75.5,
+          "y3_pct": 60.2,
+          "y4_pct": null,
+          "y5_pct": null
+        },
+        {
+          "birth_year": 2022,
+          "births": 14125.0,
+          "y1_pct": 95.0,
+          "y2_pct": 76.8,
+          "y3_pct": null,
+          "y4_pct": null,
+          "y5_pct": null
+        },
+        {
+          "birth_year": 2023,
+          "births": 13935.0,
+          "y1_pct": 95.2,
+          "y2_pct": null,
+          "y3_pct": null,
+          "y4_pct": null,
+          "y5_pct": null
+        }
+      ]
+    },
+    {
+      "sic_group": "70",
+      "label": "Activities of head offices; management consultancy activities",
+      "cohorts": [
+        {
+          "birth_year": 2019,
+          "births": 25760.0,
+          "y1_pct": 96.1,
+          "y2_pct": 77.0,
+          "y3_pct": 57.1,
+          "y4_pct": 45.1,
+          "y5_pct": 38.2
+        },
+        {
+          "birth_year": 2020,
+          "births": 20775.0,
+          "y1_pct": 94.4,
+          "y2_pct": 76.4,
+          "y3_pct": 58.2,
+          "y4_pct": 48.6,
+          "y5_pct": null
+        },
+        {
+          "birth_year": 2021,
+          "births": 20460.0,
+          "y1_pct": 95.3,
+          "y2_pct": 76.3,
+          "y3_pct": 62.1,
+          "y4_pct": null,
+          "y5_pct": null
+        },
+        {
+          "birth_year": 2022,
+          "births": 18755.0,
+          "y1_pct": 94.9,
+          "y2_pct": 77.2,
+          "y3_pct": null,
+          "y4_pct": null,
+          "y5_pct": null
+        },
+        {
+          "birth_year": 2023,
+          "births": 19860.0,
+          "y1_pct": 95.1,
+          "y2_pct": null,
+          "y3_pct": null,
+          "y4_pct": null,
+          "y5_pct": null
+        }
+      ]
+    },
+    {
+      "sic_group": "71",
+      "label": "Architectural and engineering activities; technical testing and analysis",
+      "cohorts": [
+        {
+          "birth_year": 2019,
+          "births": 10440.0,
+          "y1_pct": 95.8,
+          "y2_pct": 77.8,
+          "y3_pct": 57.7,
+          "y4_pct": 45.0,
+          "y5_pct": 38.5
+        },
+        {
+          "birth_year": 2020,
+          "births": 7780.0,
+          "y1_pct": 95.1,
+          "y2_pct": 74.0,
+          "y3_pct": 55.8,
+          "y4_pct": 48.1,
+          "y5_pct": null
+        },
+        {
+          "birth_year": 2021,
+          "births": 7435.0,
+          "y1_pct": 94.8,
+          "y2_pct": 76.7,
+          "y3_pct": 64.8,
+          "y4_pct": null,
+          "y5_pct": null
+        },
+        {
+          "birth_year": 2022,
+          "births": 6640.0,
+          "y1_pct": 95.6,
+          "y2_pct": 80.6,
+          "y3_pct": null,
+          "y4_pct": null,
+          "y5_pct": null
+        },
+        {
+          "birth_year": 2023,
+          "births": 7125.0,
+          "y1_pct": 95.6,
+          "y2_pct": null,
+          "y3_pct": null,
+          "y4_pct": null,
+          "y5_pct": null
+        }
+      ]
+    }
+  ]
+}

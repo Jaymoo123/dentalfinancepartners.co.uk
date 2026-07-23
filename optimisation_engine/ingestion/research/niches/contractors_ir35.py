@@ -79,12 +79,15 @@ NICHE_CONFIG = NicheConfig(
     provisional_months=2,
     thin_segment_min_ttm=120,
     notes=(
-        "Incorporation counts are gross (dissolved companies remain on the register; "
-        f"no survivorship bias). Union is the deduplicated count across all {len(SIC_LABELS)} "
-        "contractor SIC codes -- a company registering multiple SIC codes from the set is "
-        "counted once. The most recent 2 months are provisional (Companies House indexing lag) "
-        "and are excluded from headline figures and decade comparisons. The index is a "
-        "proxy for personal service company (PSC) formation, not a direct count of contractors."
+        "Incorporation counts are gross: they come from the Companies House Advanced Search "
+        "API, which counts companies by incorporation date across all company statuses, so "
+        "companies that have since been dissolved are still included in the year they were "
+        "formed. The series therefore carries no survivorship bias. Union is the deduplicated count across all "
+        f"{len(SIC_LABELS)} contractor SIC codes -- a company registering multiple SIC codes "
+        "from the set is counted once. The most recent 2 months are provisional (Companies "
+        "House indexing lag) and are excluded from headline figures and decade comparisons. "
+        "The index is a proxy for personal service company (PSC) formation, not a direct "
+        "count of contractors."
     ),
     supabase_table="contractor_incorporations",
     headline_prefix="it_consultancy",
