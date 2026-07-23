@@ -31,6 +31,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/research`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/research/uk-construction-index`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
     { url: `${base}/research/uk-construction-insolvency-index`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${base}/research/uk-construction-survival-index`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${base}/research/uk-construction-payment-practices-league`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
   ];
 
   const tradeTypeRoutes: MetadataRoute.Sitemap = tradeTypes.map((t) => ({

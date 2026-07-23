@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
     { url: `${base}/calculators`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/research/pharmacy-openings-closures-index`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/research/pharmacy-density-and-workload-index`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/privacy-policy`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },

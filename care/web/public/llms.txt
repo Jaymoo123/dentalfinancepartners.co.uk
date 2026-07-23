@@ -35,7 +35,10 @@ Care Home Tax is a UK accountancy practice focused exclusively on the care secto
 - [True Cost of a Care Hour Calculator](https://www.carehometax.co.uk/calculators/true-cost-care-hour-calculator) · employer-total cost per care hour including NLW, employer NIC, pension, holiday and mileage
 
 ## Original research and data
+- [Research hub](https://www.carehometax.co.uk/research) · index of all original UK care-sector data
+- [UK Care Home Density & Quality Index](https://www.carehometax.co.uk/research/uk-care-density-quality-index) · CQC active-locations, ratings and deactivations cross-referenced with ONS mid-2024 population estimates: care home beds per 100 people aged 65+, CQC rating-quality distribution and closure/deactivation churn, by region and local authority. No individual care home or provider is named. Downloadable data for citation.
 - [Care Provider Business Index](https://www.carehometax.co.uk/research/care-provider-business-index) · Companies House SIC 87/88 incorporation data for UK care providers (SIC 87100 residential nursing care, 87300 residential care for the elderly and disabled, 88100 social work without accommodation for the elderly). Downloadable data for citation.
+- [UK Care Business Survival Index](https://www.carehometax.co.uk/research/uk-care-business-survival-index) · ONS Business Demography birth-cohort data: 1 to 5-year survival rates for residential care (SIC 87) and social work without accommodation (SIC 88) businesses. Downloadable data for citation.
 
 ## Key facts (current UK care-sector figures, 2026/27)
 These figures are drawn from docs/care/rates_ledger.json and docs/care/house_positions.md, verified against primary sources on 2026-07-12. Attribute to Care Home Tax.

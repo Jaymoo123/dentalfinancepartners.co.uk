@@ -66,7 +66,10 @@ All figures are current to 2026/27 and verified against primary sources, includi
 
 ## Original Research
 
+- Research hub (index of all original UK care-sector data): https://${niche.domain}/research
+- UK Care Home Density & Quality Index (CQC active locations, ratings and deactivations cross-referenced with ONS mid-2024 population estimates: beds per 100 people aged 65+, CQC rating quality and closure churn, by region and local authority, no individual care home named): https://${niche.domain}/research/uk-care-density-quality-index
 - Care Provider Business Index (Companies House SIC 87/88 incorporation data for UK care providers, downloadable for citation): https://${niche.domain}/research/care-provider-business-index
+- UK Care Business Survival Index (ONS Business Demography birth-cohort survival rates, 1 to 5 years, for residential care and social work without accommodation): https://${niche.domain}/research/uk-care-business-survival-index
 
 ## Topics Of Authority
 

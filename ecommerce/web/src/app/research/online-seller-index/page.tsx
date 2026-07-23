@@ -3,7 +3,42 @@ import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { buildDatasetJsonLd } from "@/lib/schema";
+import { buildFaqPage } from "@accounting-network/web-shared/schema";
+import { FormationSeasonalityChart } from "@/components/research/FormationSeasonalityChart";
+import {
+  deriveSeasonality,
+  fmtNumber as fmtFormationNumber,
+  fmtPercent as fmtFormationPercent,
+  monthLabel as formationMonthLabel,
+  type FormationSeasonalitySnapshot,
+} from "@/lib/research/formation-seasonality";
 import data from "@/data/online-seller-index.json";
+import formationSnapshot from "@/data/online-seller-formation-seasonality.json";
+
+const formationData = formationSnapshot as unknown as FormationSeasonalitySnapshot;
+
+const faqs = [
+  {
+    question: "What does the UK Online Seller Business Index measure?",
+    answer:
+      "It tracks UK-incorporated companies registered with SIC code 47910 (retail sale via mail order houses or via internet), the primary code for Amazon FBA sellers, Shopify merchants, and marketplace operators that have incorporated as a limited company. The index reports active and dissolved counts, quarterly incorporations and dissolutions, formation-year cohort survival, and an ONS demand-side overlay (internet retail's share of all UK retail sales), all derived from official Companies House and ONS data.",
+  },
+  {
+    question: "Why do online-retail company dissolutions keep rising?",
+    answer:
+      "SIC 47910 quarterly dissolutions climbed from around 6,000 to 8,000 per quarter in 2021 to 2022 to over 21,000 per quarter through 2025. Three structural drivers recur: the VAT registration threshold is measured on gross marketplace turnover (not net settlement payout), so sellers can cross it without realising; platform reporting under the UK's DAC7 rules has made incorporated sellers' transaction data visible to HMRC since January 2024; and thin margins in a fast-churning, low-barrier-to-entry sector leave little room to absorb a compliance shock.",
+  },
+  {
+    question: "Is there a seasonal pattern to online-retail company formations?",
+    answer:
+      "Yes. Averaged across every complete year in the Companies House incorporation series, SIC 47910 formations peak in January and are lowest in December, a 'new year, new business' pattern consistent with a low-barrier-to-entry sector where forming a company is often the first step taken alongside a New Year resolution to start selling online. See the seasonality chart below for the exact monthly averages.",
+  },
+  {
+    question: "How does this relate to the Online Seller Survival Index?",
+    answer:
+      "This index counts Companies House limited companies and LLPs specifically (SIC 47910), reporting incorporations, dissolutions, and a register-snapshot active rate. Our companion Online Seller Survival Index uses a different ONS dataset (enterprise survival by broad industry group, including sole traders and partnerships) to show what proportion of a birth-year retail cohort is still trading after 1 to 5 years. Read together: this index shows an accelerating incorporated-seller churn wave since 2022, and the survival index shows that retail as a whole survives at a below-average rate over five years even before that churn wave.",
+  },
+];
 
 export const metadata: Metadata = {
   title: "UK Online Seller Business Index | Companies House SIC 47910 Data",
@@ -51,6 +86,10 @@ export default function OnlineSellerIndexPage() {
             dateModified: pullDate,
           }),
         }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildFaqPage(faqs)) }}
       />
       {/* Hero */}
       <section className="border-b border-neutral-200 bg-[#1a3a5c] py-16 sm:py-20">
@@ -465,6 +504,69 @@ export default function OnlineSellerIndexPage() {
         </div>
       </section>
 
+      {/* Seasonality (engine-derived, monthly series) */}
+      <section className="bg-white py-12 sm:py-16">
+        <div className={siteContainerLg}>
+          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
+            Seasonality and the long-run formation trend
+          </h2>
+          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+            A second, independently-pulled monthly Companies House series (
+            {formationMonthLabel(formationData.incorporations.monthly[0].month)} to{" "}
+            {formationMonthLabel(formationData.meta.incorporations_settled_through)}), used here to
+            surface month-of-year seasonality and a longer-run decade view than the quarterly table
+            above. Figures on this section will not tie out exactly to the quarterly table: the two
+            series come from separate live pulls of the same underlying register using slightly
+            different date windows, not a single reconciled source.
+          </p>
+          {formationData.headline.decade && (
+            <div className="mb-8 grid gap-6 sm:grid-cols-2 max-w-2xl">
+              <div className="bg-[#1a3a5c] text-white p-6">
+                <div className="text-4xl font-bold font-mono">
+                  {fmtFormationPercent(formationData.headline.decade.change_pct, true)}
+                </div>
+                <div className="mt-2 text-sm font-semibold text-white/70 uppercase tracking-wider">
+                  SIC 47910 formations, {formationData.headline.decade.from_year} to{" "}
+                  {formationData.headline.decade.to_year}
+                </div>
+                <p className="mt-3 text-sm text-white/60">
+                  From {fmtFormationNumber(formationData.headline.decade.from_value)} to{" "}
+                  {fmtFormationNumber(formationData.headline.decade.to_value)} incorporations a year
+                  ({formationData.headline.decade.multiple}&times;).
+                </p>
+              </div>
+              <div className="bg-neutral-50 border border-neutral-200 p-6">
+                <div className="text-4xl font-bold font-mono text-[#1a3a5c]">
+                  {fmtFormationNumber(formationData.headline.online_retail_cos_ttm)}
+                </div>
+                <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">
+                  SIC 47910 incorporations, trailing 12 months
+                </div>
+                <p className="mt-3 text-sm text-neutral-600">
+                  {fmtFormationPercent(formationData.headline.online_retail_cos_yoy_pct)} year-on-year
+                  to {formationMonthLabel(formationData.headline.last_settled_month)}.
+                </p>
+              </div>
+            </div>
+          )}
+          <p className="mb-4 max-w-2xl text-neutral-600 text-sm">
+            Averaged across every complete year in the series, SIC 47910 incorporations peak in
+            January and fall to their lowest in December, a &quot;new year, new business&quot;
+            pattern typical of a low-barrier-to-entry sector.
+          </p>
+          <div className="bg-white border border-neutral-200 p-4 sm:p-6 max-w-2xl">
+            <FormationSeasonalityChart points={deriveSeasonality(formationData)} />
+          </div>
+          <p className="mt-4 text-xs text-neutral-400 max-w-2xl">
+            Source: Companies House Advanced Search API, monthly incorporated_from/to filters,
+            SIC 47910. {formationData.meta.provisional_months.length > 0 && (
+              <>Excludes provisional months ({formationData.meta.provisional_months.join(", ")}).</>
+            )}{" "}
+            Retrieved {formationData.meta.generated_at}.
+          </p>
+        </div>
+      </section>
+
       {/* What this index measures */}
       <section className="bg-neutral-50 border-t border-b border-neutral-200 py-12 sm:py-16">
         <div className={siteContainerLg}>
@@ -766,6 +868,39 @@ export default function OnlineSellerIndexPage() {
           <p className="mt-3 text-xs text-neutral-400 max-w-2xl">
             Cite as: {data.meta.citeAs}
           </p>
+          <p className="mt-4 text-sm">
+            <Link
+              href="/research/online-seller-index/data"
+              className="font-semibold text-[#1a3a5c] hover:underline"
+            >
+              Download the quarterly churn and seasonality data (CSV)
+            </Link>
+          </p>
+          <p className="mt-2 text-sm">
+            <Link
+              href="/research/online-seller-survival-index"
+              className="font-semibold text-[#1a3a5c] hover:underline"
+            >
+              See the companion Online Seller Survival Index (ONS retail enterprise survival)
+            </Link>
+          </p>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-white py-12 sm:py-16">
+        <div className={siteContainerLg}>
+          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-6">
+            Frequently asked questions
+          </h2>
+          <div className="max-w-2xl space-y-6">
+            {faqs.map((f, i) => (
+              <div key={i}>
+                <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-neutral-700">{f.answer}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

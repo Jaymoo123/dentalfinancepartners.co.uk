@@ -63,7 +63,8 @@ All figures verified against primary sources (gov.uk, HMRC, legislation.gov.uk):
 
 ## Original research
 
-- UK Community Pharmacy Openings and Closures Index: https://${niche.domain}/research/pharmacy-openings-closures-index (NHS-contracted openings and closures in England, from official NHS data)
+- UK Community Pharmacy Openings and Closures Index: https://${niche.domain}/research/pharmacy-openings-closures-index (monthly, owner-segmented NHS-contracted openings and closures in England from NHSBSA, paired with Companies House SIC 47730 formations data)
+- Pharmacy Density and Dispensing Workload Index: https://${niche.domain}/research/pharmacy-density-and-workload-index (NHS pharmacies per 100,000 population by region, and items dispensed per pharmacy over time)
 
 ## Blog categories
 

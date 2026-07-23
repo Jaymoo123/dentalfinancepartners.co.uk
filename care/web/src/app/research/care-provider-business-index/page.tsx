@@ -2,8 +2,21 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 import snapshot from "@/data/uk-care-provider-business-index.json";
+import formationSnapshot from "@/data/uk-care-company-formation-index.json";
+import type { CareFormationIndexSnapshot } from "@/lib/research/care-formation-index";
+import { monthLabel, seasonalityFromMonthly } from "@/lib/research/care-formation-index";
+import { SequentialBarChart } from "@/components/research/CareDensityQualityCharts";
 
 const { meta, quarters, sub_trades, headline, cqc } = snapshot;
+const formations = formationSnapshot as unknown as CareFormationIndexSnapshot;
+const formationsUnion = formations.incorporations.monthly.map((r) => ({
+  month: r.month,
+  count: Number(r.union ?? 0),
+}));
+const formationsSeasonality = seasonalityFromMonthly(
+  formationsUnion,
+  formations.meta.incorporations_settled_through
+);
 
 const PAGE_PATH = "/research/care-provider-business-index";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://care.example.com";
@@ -279,6 +292,52 @@ export default function CareProviderIndexPage() {
             )}
           </Section>
 
+          <Section id="formations-seasonality" title="Monthly formations and seasonality (all care SIC codes)">
+            <p>
+              A deeper, monthly-cadence read of care company formations, built from the same
+              Companies House data using the estate&apos;s shared research-ingestion engine. It adds a
+              sixth SIC code (88990, other social work activities not elsewhere classified, where
+              supported-living operators frequently register) and computes the average number of
+              incorporations by calendar month across all settled years, to show whether care
+              company formation is seasonal.
+            </p>
+            <div className="grid gap-4 sm:grid-cols-3">
+              <Stat
+                value={fmt(formations.headline.all_care_cos_ttm ?? 0)}
+                label="care company incorporations, trailing 12 months (all 6 SIC codes, deduplicated)"
+              />
+              <Stat
+                value={fmt(formations.headline.care_cos_settled ?? 0)}
+                label={`residential nursing (87100) incorporations, ${monthLabel(formations.headline.last_settled_month)}`}
+              />
+              <Stat
+                value={fmtNet(formations.headline.care_cos_yoy_pct ?? 0) + "%"}
+                label="residential nursing incorporations, year on year"
+              />
+            </div>
+            <h3 className="mt-6 text-lg font-semibold text-[var(--ink)]">
+              Seasonality: average incorporations by calendar month
+            </h3>
+            <p>
+              Each bar is the average number of new care companies (across all 6 SIC codes,
+              deduplicated) incorporated in that calendar month, averaged across every settled year
+              in the series. A flat pattern would mean no seasonality; a peak in a given month
+              suggests founders cluster new registrations around it (for example, the start of a new
+              tax year or calendar year).
+            </p>
+            <div className="not-prose mt-4 rounded-xl border border-[var(--border)] bg-white p-4 sm:p-6">
+              <SequentialBarChart
+                rows={formationsSeasonality.map((s) => ({ label: s.monthName, value: s.avgCount }))}
+              />
+            </div>
+            <p className="text-xs text-[var(--muted)]">
+              Based on {formationsSeasonality[0]?.yearsOfData ?? 0} years of settled monthly data
+              through {monthLabel(formations.meta.incorporations_settled_through)}. The most recent{" "}
+              {formations.meta.provisional_months.length} month(s) are provisional (Companies House
+              indexing lag) and excluded.
+            </p>
+          </Section>
+
           <Section id="methodology" title="Methodology and sources">
             <p>{meta.methodology}</p>
             <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">Caveats</h3>
@@ -315,6 +374,17 @@ export default function CareProviderIndexPage() {
               >
                 /research/care-provider-business-index/embed
               </a>
+            </p>
+            <p className="text-sm">
+              See also the{" "}
+              <a
+                href="/research/uk-care-density-quality-index"
+                className="font-semibold text-[var(--brand-primary)] underline"
+              >
+                UK Care Home Density &amp; Quality Index
+              </a>
+              , our region and local-authority level map of care home beds, CQC rating quality and
+              closure churn.
             </p>
           </Section>
 

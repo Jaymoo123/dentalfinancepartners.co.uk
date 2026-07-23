@@ -158,3 +158,21 @@ is OFF; cluster pushes.
 3. After all data+content expands: per-site finalize QA + build green, then present all 3 to
    owner for the DEPLOY GATE. Do not deploy before owner approval.
 Latest commits: 89d1e6fb (construction pilot, LIVE), e7374c63 (batch-1 core), 11c012c1 (dental expansion).
+
+---
+
+## SESSION UPDATE 2026-07-23 (Wave B + batch-2 build sweep)
+Owner approved: batch-1 DEPLOYED to prod (all 3 live-verified 200, owner has GSC indexing list).
+Then a parallel build sweep. Everything below is UNCOMMITTED on branch `expansion/phase-0` (37 modified + 99 untracked at session end) and OWNER-DEPLOY-GATED (nothing new deployed).
+
+DONE + fact-checked (every headline figure grep-verified vs its JSON; every build green):
+- **Wave B (construction-cis)**: 4 assets - net-formation section on /research/uk-construction-index (union net +30,361->+1,341, -95.6%; 41202 first net-negative 2025); insolvency-by-division deepened on /research/uk-construction-insolvency-index (div43 56.3%, div41 fastest +79.9%); new /research/uk-construction-survival-index (43.3% vs 38.4%); new /research/uk-construction-payment-practices-league (225 cos, names large firms from statutory PPR self-disclosure - **OWNER MUST REVIEW the company-naming page before deploy**). 3 posts written+QA-clean; the PPR post is HELD pending owner review.
+- **batch-2 builds (6 sites)**: hospitality, startups-tech, ecommerce, pharmacies, generalist, care - all built, fact-checked, build-green. Specs in `docs/_engines/scout_batch2/{site}.md`. NEW niche configs: hospitality.py, startups_tech.py, ecommerce.py, pharmacies.py, care.py. Nearly every scout "greenfield" label was WRONG (startups-tech/hospitality/ecommerce/pharmacies/care had pre-existing research pages) - deepened, not duplicated.
+- **batch-2 content DONE + QA-clean**: startups-tech (4 posts, cannibalisation vs pre-existing survival page fixed via cross-links), hospitality (2 posts).
+
+NEXT SESSION (priority order):
+1. Content posts for **ecommerce, pharmacies, generalist, care** (light parallel agents, separate .md, embed grep-verified figures from each site's JSON; pharmacy content must attribute the 3 different total counts 10,391/10,617/10,382 separately). Then editorial QA sweep per site.
+2. **contractors-ir35 + digital-agency** builds (DEFERRED this session). Specs ready. contractors_ir35.py niche config EXISTS but needs a reform-overlay layer + a notes-bug fix (its "no survivorship bias" claim is false for the live-only CH snapshot) + 3 new source refs.
+3. Content-inclusive **build-verify** per content-added site (construction/startups-tech/hospitality) before any deploy.
+4. Present Wave B + batch-2 to owner for the **DEPLOY GATE** (esp. flag the construction PPR company-naming page).
+CAP LESSON: max ~3 concurrent local `npm run build` agents (more thrashes CPU/mem). Content agents are light (no build) - parallelise freely. Manager fact-checks every figure vs JSON before content (locked).

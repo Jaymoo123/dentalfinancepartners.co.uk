@@ -666,6 +666,30 @@ export default function StartupFormationSurvivalIndexPage() {
 
             <div>
               <h3 className="font-semibold text-neutral-900 mb-2">
+                Related research
+              </h3>
+              <p>
+                For long-run cohort survival curves (what share of each birth-year cohort is
+                still trading after 1 to 5 years), see the{" "}
+                <Link
+                  href="/research/tech-startup-survival-index"
+                  className="text-[#4f46e5] underline hover:opacity-75"
+                >
+                  UK Tech Startup Survival Curves
+                </Link>
+                . For the monthly software-company formation trend and seasonality, see the{" "}
+                <Link
+                  href="/research/uk-tech-formations-index"
+                  className="text-[#4f46e5] underline hover:opacity-75"
+                >
+                  UK Tech Formations Index
+                </Link>
+                .
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-neutral-900 mb-2">
                 Formation counts
               </h3>
               <p>

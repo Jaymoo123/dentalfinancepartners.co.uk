@@ -1,0 +1,1230 @@
+{
+  "meta": {
+    "generated_at": "2026-07-23",
+    "sources": [
+      {
+        "name": "Incorporated companies in the UK (quarterly)",
+        "publisher": "Companies House",
+        "url": "https://assets.publishing.service.gov.uk/media/69f09478b0c3a4023e5d6d56/Incorporated_companies_in_the_UK_January_to_March_2026.csv",
+        "release_page": "https://www.gov.uk/government/statistics/incorporated-companies-in-the-uk-january-to-march-2026",
+        "licence": "Open Government Licence v3.0",
+        "retrieved": "2026-07-23"
+      },
+      {
+        "name": "Company Insolvency Statistics -- Industry Tables (Table A1a)",
+        "publisher": "The Insolvency Service",
+        "url": "https://assets.publishing.service.gov.uk/media/6a58e5a15ca06bf11ccb4335/Industry_Tables_in_Excel__xlsx__Format_-_Company_Insolvency_Statistics_June_2026.xlsx",
+        "release_page": "https://www.gov.uk/government/statistics/company-insolvencies-june-2026",
+        "licence": "Open Government Licence v3.0",
+        "retrieved": "2026-07-23",
+        "coverage": "England and Wales (Scotland and Northern Ireland published separately)"
+      },
+      {
+        "name": "Company Insolvency Statistics -- Data Tables (Table 1b, procedure mix)",
+        "publisher": "The Insolvency Service",
+        "url": "https://assets.publishing.service.gov.uk/media/6a57a5272cbe5d1c179a65bb/Data_Tables_in_Excel__xlsx__Format_-_Company_Insolvency_Statistics_June_2026.xlsx",
+        "release_page": "https://www.gov.uk/government/statistics/company-insolvencies-june-2026",
+        "licence": "Open Government Licence v3.0",
+        "retrieved": "2026-07-23",
+        "coverage": "England and Wales (Scotland and Northern Ireland published separately)"
+      },
+      {
+        "name": "Business Demography, UK -- Table 4.2 (survival of newly born enterprises)",
+        "publisher": "Office for National Statistics",
+        "url": "https://www.ons.gov.uk/file?uri=/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable/current/businessdemographyexceltables2024.xlsx",
+        "release_page": "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable/current",
+        "licence": "Open Government Licence v3.0",
+        "retrieved": "2026-07-23"
+      },
+      {
+        "name": "Business Population Estimates for the UK and regions",
+        "publisher": "Department for Business and Trade / ONS",
+        "url": "https://assets.publishing.service.gov.uk/media/68dbccc9c487360cc70c9f4e/BPE_2025_detailed_tables.xlsx",
+        "release_page": "https://www.gov.uk/government/statistics/business-population-estimates-2025",
+        "licence": "Open Government Licence v3.0",
+        "retrieved": "2026-07-23"
+      }
+    ],
+    "notes": "This barometer fuses four national, all-sector series and is deliberately distinct from single-SIC research indexes elsewhere in the estate. Company insolvency figures cover England and Wales only; Scotland and Northern Ireland are published separately by the Insolvency Service and are not included here. Company register and formation figures (Companies House) cover the whole UK. Business population and survival figures (ONS/DBT) cover the whole UK. Counts are not rates unless stated; an increase in insolvency numbers can partly reflect growth in the underlying business population.",
+    "attribution": "UK Small Business Barometer compiled from Companies House, The Insolvency Service and Office for National Statistics public data (Open Government Licence v3.0). Free to cite with attribution to Holloway Davies."
+  },
+  "headline": {
+    "incorporations": {
+      "fye_label": "FYE 2026-03",
+      "incorporations_fye": 815280,
+      "dissolutions_fye": 787261,
+      "incorporations_yoy_pct": 1.67,
+      "dissolutions_yoy_pct": 8.32,
+      "register_total": 5479045,
+      "register_effective": 4930634,
+      "register_yoy_pct": 0.94,
+      "as_of": "2026-03-31"
+    },
+    "insolvency": {
+      "last_settled_month": "2026-06",
+      "last_month_total": 1938,
+      "yoy_pct": -6.5,
+      "ttm_total": 23151,
+      "coverage": "England and Wales",
+      "cvl_pct_last_month": 73.1,
+      "cvl_pct_ttm": 76.0
+    },
+    "survival": {
+      "latest_5yr_cohort_year": 2019,
+      "latest_5yr_pct": 38.4,
+      "latest_1yr_cohort_year": 2023,
+      "latest_1yr_pct": 93.4
+    },
+    "population": {
+      "total_businesses": 5690265,
+      "as_of_start_year": 2025,
+      "yoy_pct": 3.48,
+      "yoy_abs": 191300,
+      "sme_pct": 99.85,
+      "no_employees_pct": 75.1,
+      "companies_count": 2103615,
+      "companies_pct": 37.0,
+      "sole_proprietorships_count": 3218725,
+      "sole_proprietorships_pct": 56.6,
+      "partnerships_count": 367925,
+      "partnerships_pct": 6.5
+    }
+  },
+  "register": {
+    "quarterly": [
+      {
+        "quarter_end": "2012-06-30",
+        "incorporations": 118503,
+        "dissolutions": 79040,
+        "net": 39463,
+        "register_total": 2897824,
+        "register_effective": 2648006
+      },
+      {
+        "quarter_end": "2012-09-30",
+        "incorporations": 116163,
+        "dissolutions": 76463,
+        "net": 39700,
+        "register_total": 2938878,
+        "register_effective": 2687621
+      },
+      {
+        "quarter_end": "2012-12-31",
+        "incorporations": 116677,
+        "dissolutions": 62023,
+        "net": 54654,
+        "register_total": 2994716,
+        "register_effective": 2726687
+      },
+      {
+        "quarter_end": "2013-03-31",
+        "incorporations": 131452,
+        "dissolutions": 82722,
+        "net": 48730,
+        "register_total": 3044710,
+        "register_effective": 2778366
+      },
+      {
+        "quarter_end": "2013-06-30",
+        "incorporations": 131388,
+        "dissolutions": 74494,
+        "net": 56894,
+        "register_total": 3102781,
+        "register_effective": 2821457
+      },
+      {
+        "quarter_end": "2013-09-30",
+        "incorporations": 126779,
+        "dissolutions": 84275,
+        "net": 42504,
+        "register_total": 3147503,
+        "register_effective": 2868362
+      },
+      {
+        "quarter_end": "2013-12-31",
+        "incorporations": 120009,
+        "dissolutions": 77316,
+        "net": 42693,
+        "register_total": 3182693,
+        "register_effective": 2914267
+      },
+      {
+        "quarter_end": "2014-03-31",
+        "incorporations": 147274,
+        "dissolutions": 87223,
+        "net": 60051,
+        "register_total": 3250325,
+        "register_effective": 2968099
+      },
+      {
+        "quarter_end": "2014-06-30",
+        "incorporations": 148393,
+        "dissolutions": 92515,
+        "net": 55878,
+        "register_total": 3307118,
+        "register_effective": 3027622
+      },
+      {
+        "quarter_end": "2014-09-30",
+        "incorporations": 141807,
+        "dissolutions": 96561,
+        "net": 45246,
+        "register_total": 3348517,
+        "register_effective": 3087331
+      },
+      {
+        "quarter_end": "2014-12-31",
+        "incorporations": 136184,
+        "dissolutions": 97138,
+        "net": 39046,
+        "register_total": 3394007,
+        "register_effective": 3139630
+      },
+      {
+        "quarter_end": "2015-03-31",
+        "incorporations": 159357,
+        "dissolutions": 83312,
+        "net": 76045,
+        "register_total": 3464155,
+        "register_effective": 3203697
+      },
+      {
+        "quarter_end": "2015-06-30",
+        "incorporations": 153422,
+        "dissolutions": 87047,
+        "net": 66375,
+        "register_total": 3533346,
+        "register_effective": 3260879
+      },
+      {
+        "quarter_end": "2015-09-30",
+        "incorporations": 147049,
+        "dissolutions": 99219,
+        "net": 47830,
+        "register_total": 3588482,
+        "register_effective": 3317516
+      },
+      {
+        "quarter_end": "2015-12-31",
+        "incorporations": 138802,
+        "dissolutions": 90437,
+        "net": 48365,
+        "register_total": 3639289,
+        "register_effective": 3359748
+      },
+      {
+        "quarter_end": "2016-03-31",
+        "incorporations": 172096,
+        "dissolutions": 134157,
+        "net": 37939,
+        "register_total": 3678860,
+        "register_effective": 3433780
+      },
+      {
+        "quarter_end": "2016-06-30",
+        "incorporations": 172935,
+        "dissolutions": 111930,
+        "net": 61005,
+        "register_total": 3741883,
+        "register_effective": 3508152
+      },
+      {
+        "quarter_end": "2016-09-30",
+        "incorporations": 154685,
+        "dissolutions": 102681,
+        "net": 52004,
+        "register_total": 3795682,
+        "register_effective": 3548514
+      },
+      {
+        "quarter_end": "2016-12-31",
+        "incorporations": 146987,
+        "dissolutions": 111133,
+        "net": 35854,
+        "register_total": 3833469,
+        "register_effective": 3593602
+      },
+      {
+        "quarter_end": "2017-03-31",
+        "incorporations": 170143,
+        "dissolutions": 108919,
+        "net": 61224,
+        "register_total": 3896755,
+        "register_effective": 3648478
+      },
+      {
+        "quarter_end": "2017-06-30",
+        "incorporations": 152411,
+        "dissolutions": 114756,
+        "net": 37655,
+        "register_total": 3936403,
+        "register_effective": 3674584
+      },
+      {
+        "quarter_end": "2017-09-30",
+        "incorporations": 153307,
+        "dissolutions": 129734,
+        "net": 23573,
+        "register_total": 3961786,
+        "register_effective": 3703135
+      },
+      {
+        "quarter_end": "2017-12-31",
+        "incorporations": 146852,
+        "dissolutions": 117545,
+        "net": 29307,
+        "register_total": 3993232,
+        "register_effective": 3725610
+      },
+      {
+        "quarter_end": "2018-03-31",
+        "incorporations": 167717,
+        "dissolutions": 129688,
+        "net": 38029,
+        "register_total": 4033355,
+        "register_effective": 3770022
+      },
+      {
+        "quarter_end": "2018-06-30",
+        "incorporations": 166886,
+        "dissolutions": 126554,
+        "net": 40332,
+        "register_total": 4075891,
+        "register_effective": 3798095
+      },
+      {
+        "quarter_end": "2018-09-30",
+        "incorporations": 164424,
+        "dissolutions": 131407,
+        "net": 33017,
+        "register_total": 4111057,
+        "register_effective": 3843514
+      },
+      {
+        "quarter_end": "2018-12-31",
+        "incorporations": 158841,
+        "dissolutions": 112121,
+        "net": 46720,
+        "register_total": 4159466,
+        "register_effective": 3879844
+      },
+      {
+        "quarter_end": "2019-03-31",
+        "incorporations": 182742,
+        "dissolutions": 142390,
+        "net": 40352,
+        "register_total": 4202044,
+        "register_effective": 3926374
+      },
+      {
+        "quarter_end": "2019-06-30",
+        "incorporations": 169976,
+        "dissolutions": 135870,
+        "net": 34106,
+        "register_total": 4237994,
+        "register_effective": 3964624
+      },
+      {
+        "quarter_end": "2019-09-30",
+        "incorporations": 169751,
+        "dissolutions": 129795,
+        "net": 39956,
+        "register_total": 4279972,
+        "register_effective": 4008335
+      },
+      {
+        "quarter_end": "2019-12-31",
+        "incorporations": 155950,
+        "dissolutions": 121625,
+        "net": 34325,
+        "register_total": 4316395,
+        "register_effective": 4024259
+      },
+      {
+        "quarter_end": "2020-03-31",
+        "incorporations": 169822,
+        "dissolutions": 136978,
+        "net": 32844,
+        "register_total": 4350913,
+        "register_effective": 4064063
+      },
+      {
+        "quarter_end": "2020-06-30",
+        "incorporations": 176115,
+        "dissolutions": 14606,
+        "net": 161509,
+        "register_total": 4513392,
+        "register_effective": 4100323
+      },
+      {
+        "quarter_end": "2020-09-30",
+        "incorporations": 221020,
+        "dissolutions": 102269,
+        "net": 118751,
+        "register_total": 4633649,
+        "register_effective": 4237955
+      },
+      {
+        "quarter_end": "2020-12-31",
+        "incorporations": 201820,
+        "dissolutions": 161837,
+        "net": 39983,
+        "register_total": 4674672,
+        "register_effective": 4320862
+      },
+      {
+        "quarter_end": "2021-03-31",
+        "incorporations": 211368,
+        "dissolutions": 171169,
+        "net": 40199,
+        "register_total": 4716126,
+        "register_effective": 4410236
+      },
+      {
+        "quarter_end": "2021-06-30",
+        "incorporations": 190639,
+        "dissolutions": 115554,
+        "net": 75085,
+        "register_total": 4792548,
+        "register_effective": 4420843
+      },
+      {
+        "quarter_end": "2021-09-30",
+        "incorporations": 178517,
+        "dissolutions": 155594,
+        "net": 22923,
+        "register_total": 4816823,
+        "register_effective": 4436195
+      },
+      {
+        "quarter_end": "2021-12-31",
+        "incorporations": 178837,
+        "dissolutions": 159596,
+        "net": 19241,
+        "register_total": 4837908,
+        "register_effective": 4452910
+      },
+      {
+        "quarter_end": "2022-03-31",
+        "incorporations": 205171,
+        "dissolutions": 150810,
+        "net": 54361,
+        "register_total": 4894356,
+        "register_effective": 4499342
+      },
+      {
+        "quarter_end": "2022-06-30",
+        "incorporations": 201073,
+        "dissolutions": 155974,
+        "net": 45099,
+        "register_total": 4942454,
+        "register_effective": 4543221
+      },
+      {
+        "quarter_end": "2022-09-30",
+        "incorporations": 193776,
+        "dissolutions": 149488,
+        "net": 44288,
+        "register_total": 4988861,
+        "register_effective": 4569288
+      },
+      {
+        "quarter_end": "2022-12-31",
+        "incorporations": 184083,
+        "dissolutions": 116692,
+        "net": 67391,
+        "register_total": 5053281,
+        "register_effective": 4575476
+      },
+      {
+        "quarter_end": "2023-03-31",
+        "incorporations": 222068,
+        "dissolutions": 163797,
+        "net": 58271,
+        "register_total": 5116743,
+        "register_effective": 4645402
+      },
+      {
+        "quarter_end": "2023-06-30",
+        "incorporations": 212272,
+        "dissolutions": 178084,
+        "net": 34188,
+        "register_total": 5154835,
+        "register_effective": 4701006
+      },
+      {
+        "quarter_end": "2023-09-30",
+        "incorporations": 219254,
+        "dissolutions": 161761,
+        "net": 57493,
+        "register_total": 5213416,
+        "register_effective": 4745447
+      },
+      {
+        "quarter_end": "2023-12-31",
+        "incorporations": 214446,
+        "dissolutions": 163452,
+        "net": 50994,
+        "register_total": 5267187,
+        "register_effective": 4796341
+      },
+      {
+        "quarter_end": "2024-03-31",
+        "incorporations": 244717,
+        "dissolutions": 160048,
+        "net": 84669,
+        "register_total": 5350759,
+        "register_effective": 4876374
+      },
+      {
+        "quarter_end": "2024-06-30",
+        "incorporations": 217815,
+        "dissolutions": 162485,
+        "net": 55330,
+        "register_total": 5409266,
+        "register_effective": 4896950
+      },
+      {
+        "quarter_end": "2024-09-30",
+        "incorporations": 191683,
+        "dissolutions": 170597,
+        "net": 21086,
+        "register_total": 5428586,
+        "register_effective": 4895458
+      },
+      {
+        "quarter_end": "2024-12-31",
+        "incorporations": 181261,
+        "dissolutions": 203584,
+        "net": -22323,
+        "register_total": 5408707,
+        "register_effective": 4835963
+      },
+      {
+        "quarter_end": "2025-03-31",
+        "incorporations": 211112,
+        "dissolutions": 190147,
+        "net": 20965,
+        "register_total": 5427787,
+        "register_effective": 4872293
+      },
+      {
+        "quarter_end": "2025-06-30",
+        "incorporations": 209798,
+        "dissolutions": 185336,
+        "net": 24462,
+        "register_total": 5443776,
+        "register_effective": 4872181
+      },
+      {
+        "quarter_end": "2025-09-30",
+        "incorporations": 215982,
+        "dissolutions": 234373,
+        "net": -18391,
+        "register_total": 5454109,
+        "register_effective": 4910896
+      },
+      {
+        "quarter_end": "2025-12-31",
+        "incorporations": 184888,
+        "dissolutions": 176716,
+        "net": 8172,
+        "register_total": 5450364,
+        "register_effective": 4876981
+      },
+      {
+        "quarter_end": "2026-03-31",
+        "incorporations": 204612,
+        "dissolutions": 190836,
+        "net": 13776,
+        "register_total": 5479045,
+        "register_effective": 4930634
+      }
+    ],
+    "seasonality": [
+      {
+        "calendar_quarter": "Q2 (Apr-Jun)",
+        "avg_incorporations": 172973
+      },
+      {
+        "calendar_quarter": "Q3 (Jul-Sep)",
+        "avg_incorporations": 171014
+      },
+      {
+        "calendar_quarter": "Q4 (Oct-Dec)",
+        "avg_incorporations": 161831
+      },
+      {
+        "calendar_quarter": "Q1 (Jan-Mar)",
+        "avg_incorporations": 185689
+      }
+    ]
+  },
+  "insolvency": {
+    "monthly": [
+      {
+        "month": "2016-01",
+        "total": 1230
+      },
+      {
+        "month": "2016-02",
+        "total": 1183
+      },
+      {
+        "month": "2016-03",
+        "total": 1301
+      },
+      {
+        "month": "2016-04",
+        "total": 1265
+      },
+      {
+        "month": "2016-05",
+        "total": 1205
+      },
+      {
+        "month": "2016-06",
+        "total": 1281
+      },
+      {
+        "month": "2016-07",
+        "total": 1117
+      },
+      {
+        "month": "2016-08",
+        "total": 1070
+      },
+      {
+        "month": "2016-09",
+        "total": 1303
+      },
+      {
+        "month": "2016-10",
+        "total": 1203
+      },
+      {
+        "month": "2016-11",
+        "total": 1340
+      },
+      {
+        "month": "2016-12",
+        "total": 1171
+      },
+      {
+        "month": "2017-01",
+        "total": 1324
+      },
+      {
+        "month": "2017-02",
+        "total": 1363
+      },
+      {
+        "month": "2017-03",
+        "total": 1471
+      },
+      {
+        "month": "2017-04",
+        "total": 1239
+      },
+      {
+        "month": "2017-05",
+        "total": 1087
+      },
+      {
+        "month": "2017-06",
+        "total": 1173
+      },
+      {
+        "month": "2017-07",
+        "total": 1168
+      },
+      {
+        "month": "2017-08",
+        "total": 1050
+      },
+      {
+        "month": "2017-09",
+        "total": 1282
+      },
+      {
+        "month": "2017-10",
+        "total": 1044
+      },
+      {
+        "month": "2017-11",
+        "total": 1208
+      },
+      {
+        "month": "2017-12",
+        "total": 1161
+      },
+      {
+        "month": "2018-01",
+        "total": 1428
+      },
+      {
+        "month": "2018-02",
+        "total": 1348
+      },
+      {
+        "month": "2018-03",
+        "total": 1297
+      },
+      {
+        "month": "2018-04",
+        "total": 1209
+      },
+      {
+        "month": "2018-05",
+        "total": 1343
+      },
+      {
+        "month": "2018-06",
+        "total": 1419
+      },
+      {
+        "month": "2018-07",
+        "total": 1388
+      },
+      {
+        "month": "2018-08",
+        "total": 1429
+      },
+      {
+        "month": "2018-09",
+        "total": 1402
+      },
+      {
+        "month": "2018-10",
+        "total": 1357
+      },
+      {
+        "month": "2018-11",
+        "total": 1378
+      },
+      {
+        "month": "2018-12",
+        "total": 1053
+      },
+      {
+        "month": "2019-01",
+        "total": 1724
+      },
+      {
+        "month": "2019-02",
+        "total": 1213
+      },
+      {
+        "month": "2019-03",
+        "total": 1580
+      },
+      {
+        "month": "2019-04",
+        "total": 1426
+      },
+      {
+        "month": "2019-05",
+        "total": 1348
+      },
+      {
+        "month": "2019-06",
+        "total": 1465
+      },
+      {
+        "month": "2019-07",
+        "total": 1439
+      },
+      {
+        "month": "2019-08",
+        "total": 1365
+      },
+      {
+        "month": "2019-09",
+        "total": 1509
+      },
+      {
+        "month": "2019-10",
+        "total": 1477
+      },
+      {
+        "month": "2019-11",
+        "total": 1505
+      },
+      {
+        "month": "2019-12",
+        "total": 1119
+      },
+      {
+        "month": "2020-01",
+        "total": 1502
+      },
+      {
+        "month": "2020-02",
+        "total": 1345
+      },
+      {
+        "month": "2020-03",
+        "total": 1231
+      },
+      {
+        "month": "2020-04",
+        "total": 1199
+      },
+      {
+        "month": "2020-05",
+        "total": 944
+      },
+      {
+        "month": "2020-06",
+        "total": 741
+      },
+      {
+        "month": "2020-07",
+        "total": 964
+      },
+      {
+        "month": "2020-08",
+        "total": 789
+      },
+      {
+        "month": "2020-09",
+        "total": 928
+      },
+      {
+        "month": "2020-10",
+        "total": 863
+      },
+      {
+        "month": "2020-11",
+        "total": 890
+      },
+      {
+        "month": "2020-12",
+        "total": 1234
+      },
+      {
+        "month": "2021-01",
+        "total": 758
+      },
+      {
+        "month": "2021-02",
+        "total": 685
+      },
+      {
+        "month": "2021-03",
+        "total": 999
+      },
+      {
+        "month": "2021-04",
+        "total": 925
+      },
+      {
+        "month": "2021-05",
+        "total": 1012
+      },
+      {
+        "month": "2021-06",
+        "total": 1206
+      },
+      {
+        "month": "2021-07",
+        "total": 1096
+      },
+      {
+        "month": "2021-08",
+        "total": 1347
+      },
+      {
+        "month": "2021-09",
+        "total": 1453
+      },
+      {
+        "month": "2021-10",
+        "total": 1410
+      },
+      {
+        "month": "2021-11",
+        "total": 1676
+      },
+      {
+        "month": "2021-12",
+        "total": 1490
+      },
+      {
+        "month": "2022-01",
+        "total": 1567
+      },
+      {
+        "month": "2022-02",
+        "total": 1518
+      },
+      {
+        "month": "2022-03",
+        "total": 2120
+      },
+      {
+        "month": "2022-04",
+        "total": 1988
+      },
+      {
+        "month": "2022-05",
+        "total": 1825
+      },
+      {
+        "month": "2022-06",
+        "total": 1699
+      },
+      {
+        "month": "2022-07",
+        "total": 1830
+      },
+      {
+        "month": "2022-08",
+        "total": 1941
+      },
+      {
+        "month": "2022-09",
+        "total": 1692
+      },
+      {
+        "month": "2022-10",
+        "total": 1956
+      },
+      {
+        "month": "2022-11",
+        "total": 2033
+      },
+      {
+        "month": "2022-12",
+        "total": 1964
+      },
+      {
+        "month": "2023-01",
+        "total": 1685
+      },
+      {
+        "month": "2023-02",
+        "total": 1802
+      },
+      {
+        "month": "2023-03",
+        "total": 2470
+      },
+      {
+        "month": "2023-04",
+        "total": 1685
+      },
+      {
+        "month": "2023-05",
+        "total": 2550
+      },
+      {
+        "month": "2023-06",
+        "total": 2168
+      },
+      {
+        "month": "2023-07",
+        "total": 1723
+      },
+      {
+        "month": "2023-08",
+        "total": 2318
+      },
+      {
+        "month": "2023-09",
+        "total": 1966
+      },
+      {
+        "month": "2023-10",
+        "total": 2317
+      },
+      {
+        "month": "2023-11",
+        "total": 2468
+      },
+      {
+        "month": "2023-12",
+        "total": 2012
+      },
+      {
+        "month": "2024-01",
+        "total": 1768
+      },
+      {
+        "month": "2024-02",
+        "total": 2110
+      },
+      {
+        "month": "2024-03",
+        "total": 1786
+      },
+      {
+        "month": "2024-04",
+        "total": 2308
+      },
+      {
+        "month": "2024-05",
+        "total": 2000
+      },
+      {
+        "month": "2024-06",
+        "total": 2349
+      },
+      {
+        "month": "2024-07",
+        "total": 2147
+      },
+      {
+        "month": "2024-08",
+        "total": 1894
+      },
+      {
+        "month": "2024-09",
+        "total": 1804
+      },
+      {
+        "month": "2024-10",
+        "total": 1828
+      },
+      {
+        "month": "2024-11",
+        "total": 2103
+      },
+      {
+        "month": "2024-12",
+        "total": 1784
+      },
+      {
+        "month": "2025-01",
+        "total": 1936
+      },
+      {
+        "month": "2025-02",
+        "total": 1878
+      },
+      {
+        "month": "2025-03",
+        "total": 2080
+      },
+      {
+        "month": "2025-04",
+        "total": 2060
+      },
+      {
+        "month": "2025-05",
+        "total": 2228
+      },
+      {
+        "month": "2025-06",
+        "total": 2073
+      },
+      {
+        "month": "2025-07",
+        "total": 2180
+      },
+      {
+        "month": "2025-08",
+        "total": 1930
+      },
+      {
+        "month": "2025-09",
+        "total": 1913
+      },
+      {
+        "month": "2025-10",
+        "total": 2166
+      },
+      {
+        "month": "2025-11",
+        "total": 1893
+      },
+      {
+        "month": "2025-12",
+        "total": 1605
+      },
+      {
+        "month": "2026-01",
+        "total": 1614
+      },
+      {
+        "month": "2026-02",
+        "total": 1786
+      },
+      {
+        "month": "2026-03",
+        "total": 2139
+      },
+      {
+        "month": "2026-04",
+        "total": 2183
+      },
+      {
+        "month": "2026-05",
+        "total": 1804
+      },
+      {
+        "month": "2026-06",
+        "total": 1938
+      }
+    ],
+    "annual": [
+      {
+        "year": 2016,
+        "total": 14669
+      },
+      {
+        "year": 2017,
+        "total": 14570
+      },
+      {
+        "year": 2018,
+        "total": 16051
+      },
+      {
+        "year": 2019,
+        "total": 17170
+      },
+      {
+        "year": 2020,
+        "total": 12630
+      },
+      {
+        "year": 2021,
+        "total": 14057
+      },
+      {
+        "year": 2022,
+        "total": 22133
+      },
+      {
+        "year": 2023,
+        "total": 25164
+      },
+      {
+        "year": 2024,
+        "total": 23881
+      },
+      {
+        "year": 2025,
+        "total": 23942
+      }
+    ]
+  },
+  "survival": {
+    "cohorts": [
+      {
+        "birth_year": 2019,
+        "births": 363825,
+        "y1_pct": 94.6,
+        "y2_pct": 74.7,
+        "y3_pct": 55.9,
+        "y4_pct": 45.0,
+        "y5_pct": 38.4
+      },
+      {
+        "birth_year": 2020,
+        "births": 333015,
+        "y1_pct": 92.9,
+        "y2_pct": 71.3,
+        "y3_pct": 53.0,
+        "y4_pct": 44.0,
+        "y5_pct": null
+      },
+      {
+        "birth_year": 2021,
+        "births": 363995,
+        "y1_pct": 93.4,
+        "y2_pct": 70.4,
+        "y3_pct": 53.5,
+        "y4_pct": null,
+        "y5_pct": null
+      },
+      {
+        "birth_year": 2022,
+        "births": 336925,
+        "y1_pct": 92.3,
+        "y2_pct": 68.9,
+        "y3_pct": null,
+        "y4_pct": null,
+        "y5_pct": null
+      },
+      {
+        "birth_year": 2023,
+        "births": 316025,
+        "y1_pct": 93.4,
+        "y2_pct": null,
+        "y3_pct": null,
+        "y4_pct": null,
+        "y5_pct": null
+      }
+    ]
+  },
+  "population": {
+    "timeseries": [
+      {
+        "year": 2010,
+        "total": 4483000
+      },
+      {
+        "year": 2011,
+        "total": 4588500
+      },
+      {
+        "year": 2012,
+        "total": 4817900
+      },
+      {
+        "year": 2013,
+        "total": 4914400
+      },
+      {
+        "year": 2014,
+        "total": 5247000
+      },
+      {
+        "year": 2015,
+        "total": 5401200
+      },
+      {
+        "year": 2016,
+        "total": 5498000
+      },
+      {
+        "year": 2017,
+        "total": 5694500
+      },
+      {
+        "year": 2018,
+        "total": 5667500
+      },
+      {
+        "year": 2019,
+        "total": 5867800
+      },
+      {
+        "year": 2020,
+        "total": 5980500
+      },
+      {
+        "year": 2021,
+        "total": 5590900
+      },
+      {
+        "year": 2022,
+        "total": 5508900
+      },
+      {
+        "year": 2023,
+        "total": 5555100
+      },
+      {
+        "year": 2024,
+        "total": 5499000
+      },
+      {
+        "year": 2025,
+        "total": 5690300
+      }
+    ]
+  }
+}

@@ -663,12 +663,19 @@ export default function HomePage() {
                 market-awareness resource for pharmacy buyers, sellers, and operators, not a
                 regulatory filing or investment advice.
               </p>
-              <div className="mt-6">
+              <div className="mt-6 space-y-3">
                 <Link
                   href="/research/pharmacy-openings-closures-index"
                   className={`group flex items-center justify-between border border-neutral-200 bg-neutral-50 px-5 py-4 text-sm font-semibold text-neutral-800 hover:border-[#0f3a4a] hover:text-[#0f3a4a] transition-all ${focusRing}`}
                 >
                   View the UK Community Pharmacy Openings and Closures Index
+                  <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-[#0f3a4a] group-hover:translate-x-1 transition-all" />
+                </Link>
+                <Link
+                  href="/research/pharmacy-density-and-workload-index"
+                  className={`group flex items-center justify-between border border-neutral-200 bg-neutral-50 px-5 py-4 text-sm font-semibold text-neutral-800 hover:border-[#0f3a4a] hover:text-[#0f3a4a] transition-all ${focusRing}`}
+                >
+                  View the Pharmacy Density and Dispensing Workload Index
                   <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-[#0f3a4a] group-hover:translate-x-1 transition-all" />
                 </Link>
               </div>

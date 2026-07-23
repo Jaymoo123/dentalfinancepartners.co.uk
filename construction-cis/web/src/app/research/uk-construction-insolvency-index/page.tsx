@@ -10,6 +10,7 @@ import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
 import {
   AnnualInsolvencyChart,
   MonthlyInsolvencyChart,
+  DivisionInsolvencyChart,
 } from "@/components/research/InsolvencyIndexCharts";
 import {
   fmtNumber,
@@ -21,7 +22,7 @@ import {
 import snapshot from "@/data/construction-insolvency-index.json";
 
 const data = snapshot as unknown as InsolvencyIndexSnapshot;
-const { meta, headline, insolvencies } = data;
+const { meta, headline, insolvencies, divisions } = data;
 const { decade } = headline;
 
 const PAGE_PATH = "/research/uk-construction-insolvency-index";
@@ -60,6 +61,11 @@ const faqs = [
     question: "Where does this data come from?",
     answer:
       "All insolvency counts come from the Insolvency Service's record-level data file, published as part of the Company Insolvency Statistics statistical release on gov.uk. The Insolvency Service is the UK government agency that handles corporate and personal insolvency. Its data is published under the Open Government Licence v3.0 and covers England, Wales and Scotland. The figures are updated monthly.",
+  },
+  {
+    question: "Which part of construction has the most insolvencies: building, civil engineering, or specialised trades?",
+    answer:
+      "Specialised construction activities (SIC Division 43, which includes electrical, plumbing, plastering, joinery, painting and similar CIS subcontractor trades) consistently account for the largest share, over half of all construction insolvencies in every year since 2016. Building construction (Division 41, housebuilders and commercial developers) is the second-largest share and has been growing steadily, up from around 32% of construction insolvencies in 2016 to around 38 to 39% most recently. Civil engineering (Division 42, roads, railways, bridges and utilities) has by far the fewest companies and the fewest insolvencies of the three, typically under 250 a year, so its year-on-year figures move around more in percentage terms simply because the base is small.",
   },
   {
     question: "Does rising insolvency affect CIS subcontractors?",
@@ -124,6 +130,9 @@ const datasetSchema = {
     "Monthly construction company insolvencies -- Company Voluntary Arrangement (CVA)",
     "Monthly construction company insolvencies -- Administrative Receivership",
     "Monthly construction company insolvencies -- Moratorium",
+    "Monthly construction company insolvencies -- Division 41 (building construction)",
+    "Monthly construction company insolvencies -- Division 42 (civil engineering)",
+    "Monthly construction company insolvencies -- Division 43 (specialised construction activities)",
   ],
 };
 
@@ -346,6 +355,62 @@ export default function UKConstructionInsolvencyIndexPage() {
               )}
             </Section>
 
+            <Section id="sub-sector" title="Insolvencies by construction sub-sector">
+              <p>
+                Every construction insolvency falls into one of three SIC divisions: Division 41
+                (building construction, mainly housebuilders and commercial developers), Division
+                42 (civil engineering, roads, railways, bridges and utilities), and Division 43
+                (specialised construction activities, the electrical, plumbing, plastering,
+                joinery, painting and other trades most CIS subcontractors work in). The chart
+                shows how the three have moved since 2016.
+              </p>
+              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+                <DivisionInsolvencyChart annual={divisions.annual} />
+              </div>
+              <div className="not-prose mt-6 overflow-x-auto">
+                <table className="w-full border-collapse text-sm">
+                  <thead>
+                    <tr className="border-b-2 border-neutral-300 text-left">
+                      <th className="py-2 pr-4 font-bold text-neutral-900">Division</th>
+                      <th className="py-2 pr-4 font-bold text-neutral-900 text-right">
+                        Trailing 12 months
+                      </th>
+                      <th className="py-2 pr-4 font-bold text-neutral-900 text-right">
+                        Share of total
+                      </th>
+                      <th className="py-2 font-bold text-neutral-900 text-right">
+                        Change since {divisions.headline.decade_from_year}
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {(["div41", "div42", "div43"] as const).map((key) => (
+                      <tr key={key} className="border-b border-neutral-200">
+                        <td className="py-2 pr-4 text-neutral-700">{meta.division_labels[key.replace("div", "")]}</td>
+                        <td className="py-2 pr-4 text-right font-semibold text-neutral-900">
+                          {fmtNumber(divisions.headline.ttm_by_division[key])}
+                        </td>
+                        <td className="py-2 pr-4 text-right text-neutral-700">
+                          {divisions.headline.ttm_share_pct[key]}%
+                        </td>
+                        <td className="py-2 text-right text-neutral-700">
+                          {fmtPercent(divisions.headline.decade_change_pct_by_division[key], false)}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-4 text-sm text-neutral-600">
+                Division 41 (building) insolvencies have risen the fastest of the three since{" "}
+                {divisions.headline.decade_from_year}, up{" "}
+                {fmtPercent(divisions.headline.decade_change_pct_by_division.div41, false)}, roughly
+                double the growth rate in civil engineering (Division 42). Division 43
+                (specialised trades) remains the largest single contributor by volume in every
+                year of the series.
+              </p>
+            </Section>
+
             <Section id="methodology" title="Methodology and sources">
               <p>
                 <strong>Data source.</strong> Counts are drawn from the Insolvency Service
@@ -362,6 +427,12 @@ export default function UKConstructionInsolvencyIndexPage() {
                 administration and subsequently converts to CVL appears twice: once for each
                 procedure. This is consistent with how the Insolvency Service reports its own
                 headline figures.
+              </p>
+              <p>
+                <strong>Sub-sector breakdown.</strong> The same record-level file tags every
+                insolvency with a 2-digit SIC division as well as the procedure type, so the
+                Division 41/42/43 breakdown above uses no additional source: it is the same
+                Insolvency Service data, split one level deeper.
               </p>
               <p>
                 <strong>Caveats.</strong> Counts are not rates: an increase in insolvency numbers

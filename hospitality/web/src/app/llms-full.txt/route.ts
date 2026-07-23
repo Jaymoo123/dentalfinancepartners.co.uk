@@ -69,6 +69,9 @@ Sector-specific pages covering the tax and accounting issues each type of operat
 
 ## Original research
 
+- Research hub: https://${niche.domain}/research
+- UK Hospitality Insolvency Index: https://${niche.domain}/research/uk-hospitality-insolvency-index (monthly SIC Section I company insolvencies by procedure type from Insolvency Service record-level data, paired with an ONS Business Demography 1-to-5-year survival curve by birth cohort; flagship research asset)
+- UK Hospitality Food Hygiene Map: https://${niche.domain}/research/uk-hospitality-food-hygiene-map (aggregate FHRS/FHIS food hygiene rating counts by local authority and business type, from the FSA ratings API; aggregate statistics only, no individual establishment is named)
 - Hospitality Openings and Closures Index: https://${niche.domain}/research/hospitality-openings-closures-index (UK hospitality company formations and dissolutions from Companies House SIC 55 and 56 data; SIC codes are self-reported and the caveat is stated on the page)
 
 ## Blog categories

@@ -113,3 +113,9 @@ _audit_digest.txt
 icaew_extract.txt
 icaew_lines.txt
 proposal_engine/out/
+
+# research pipeline raw data dumps (large, regenerable from source)
+**/pipeline/raw/
+
+# session scratch
+/tmp/

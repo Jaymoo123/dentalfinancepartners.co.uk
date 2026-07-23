@@ -30,6 +30,33 @@ export interface InsolvencyYear {
   moratorium: number;
 }
 
+export interface InsolvencyDivisionMonth {
+  month: string;
+  div41: number;
+  div42: number;
+  div43: number;
+  total: number;
+}
+
+export interface InsolvencyDivisionYear {
+  year: number;
+  div41: number;
+  div42: number;
+  div43: number;
+  total: number;
+}
+
+export interface InsolvencyDivisionHeadline {
+  last_month: string;
+  last_month_by_division: { div41: number; div42: number; div43: number };
+  ttm_by_division: { div41: number; div42: number; div43: number };
+  ttm_total: number;
+  ttm_share_pct: { div41: number | null; div42: number | null; div43: number | null };
+  decade_from_year: number;
+  decade_to_year: number;
+  decade_change_pct_by_division: { div41: number | null; div42: number | null; div43: number | null };
+}
+
 export interface InsolvencyIndexSnapshot {
   meta: {
     generated_at: string;
@@ -37,6 +64,7 @@ export interface InsolvencyIndexSnapshot {
     coverage: string;
     sic_section: string;
     sic_section_label: string;
+    division_labels: Record<string, string>;
     procedure_labels: Record<string, string>;
     sources: {
       name: string;
@@ -72,6 +100,11 @@ export interface InsolvencyIndexSnapshot {
   insolvencies: {
     monthly: InsolvencyMonth[];
     annual: InsolvencyYear[];
+  };
+  divisions: {
+    headline: InsolvencyDivisionHeadline;
+    monthly: InsolvencyDivisionMonth[];
+    annual: InsolvencyDivisionYear[];
   };
 }
 

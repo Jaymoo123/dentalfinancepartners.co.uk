@@ -22,15 +22,19 @@ export function GET() {
     "total",
   ];
 
-  const header = ["month", ...procCols].join(",");
+  const divByMonth = new Map(data.divisions.monthly.map((d) => [d.month, d]));
+  const header = ["month", ...procCols, "div41", "div42", "div43"].join(",");
   const rows = data.insolvencies.monthly.map((m) => {
     const vals = procCols.map((c) => String((m as unknown as Record<string, unknown>)[c] ?? 0));
-    return [m.month, ...vals].join(",");
+    const d = divByMonth.get(m.month);
+    const divVals = [d?.div41 ?? 0, d?.div42 ?? 0, d?.div43 ?? 0].map(String);
+    return [m.month, ...vals, ...divVals].join(",");
   });
 
   const csv = [
-    "# UK Construction Insolvency Index: monthly company insolvencies by procedure type",
-    "# SIC Section F (Construction): Divisions 41, 42 and 43. England, Wales and Scotland.",
+    "# UK Construction Insolvency Index: monthly company insolvencies by procedure type and SIC division",
+    "# SIC Section F (Construction): Division 41 (building), 42 (civil engineering), 43 (specialised trades).",
+    "# England, Wales and Scotland.",
     "# Source: Insolvency Service, Company Insolvency Statistics (Open Government Licence v3.0).",
     `# Generated: ${data.meta.generated_at}. Data through: ${data.meta.data_through}.`,
     "# Free to reuse with attribution to Trade Tax Specialists (trade-tax-specialists.co.uk).",

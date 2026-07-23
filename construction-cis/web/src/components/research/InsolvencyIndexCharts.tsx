@@ -26,7 +26,11 @@ import {
   type ChartConfig,
 } from "@/components/ui/chart";
 import { monthLabel, monthLabelShort } from "@/lib/research/insolvency-index";
-import type { InsolvencyMonth, InsolvencyYear } from "@/lib/research/insolvency-index";
+import type {
+  InsolvencyMonth,
+  InsolvencyYear,
+  InsolvencyDivisionYear,
+} from "@/lib/research/insolvency-index";
 
 // ---------------------------------------------------------------------------
 // Annual totals bar chart
@@ -182,6 +186,56 @@ export function MonthlyInsolvencyChart({ monthly }: { monthly: InsolvencyMonth[]
           stackId="a"
         />
       </AreaChart>
+    </ChartContainer>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Annual stacked bar chart: insolvencies by SIC division (41 / 42 / 43)
+// ---------------------------------------------------------------------------
+
+export function DivisionInsolvencyChart({ annual }: { annual: InsolvencyDivisionYear[] }) {
+  const data = annual
+    .filter((r) => r.year < 2026)
+    .map((r) => ({ year: String(r.year), div41: r.div41, div42: r.div42, div43: r.div43 }));
+
+  const config = {
+    div41: { label: "Division 41 (building)", color: "var(--chart-1)" },
+    div42: { label: "Division 42 (civil engineering)", color: "var(--chart-2)" },
+    div43: { label: "Division 43 (specialised trades)", color: "var(--chart-3)" },
+  } satisfies ChartConfig;
+
+  return (
+    <ChartContainer config={config} className="aspect-auto h-[280px] w-full">
+      <BarChart
+        accessibilityLayer
+        data={data}
+        margin={{ left: 8, right: 8, top: 8, bottom: 0 }}
+      >
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
+        <XAxis dataKey="year" tickLine={false} axisLine={false} tickMargin={8} fontSize={12} />
+        <YAxis
+          width={52}
+          tickLine={false}
+          axisLine={false}
+          tickMargin={4}
+          fontSize={11}
+          tickFormatter={(v: number) => v.toLocaleString("en-GB")}
+        />
+        <ChartTooltip
+          cursor={{ fill: "rgba(249,115,22,0.08)" }}
+          content={<ChartTooltipContent indicator="dot" />}
+        />
+        <Bar dataKey="div41" name="Division 41 (building)" stackId="a" fill="var(--color-div41)" />
+        <Bar dataKey="div42" name="Division 42 (civil engineering)" stackId="a" fill="var(--color-div42)" />
+        <Bar
+          dataKey="div43"
+          name="Division 43 (specialised trades)"
+          stackId="a"
+          fill="var(--color-div43)"
+          radius={[4, 4, 0, 0]}
+        />
+      </BarChart>
     </ChartContainer>
   );
 }

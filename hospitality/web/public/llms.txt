@@ -19,6 +19,9 @@ Hospitality Tax is a UK accountancy practice focused exclusively on the hospital
 - [Accountants for Caterers and Street Food](https://www.hospitalitytax.co.uk/for/caterers-and-street-food)
 
 ## Original research and data
+- [Research hub](https://www.hospitalitytax.co.uk/research): Index of all original hospitality research assets below.
+- [UK Hospitality Insolvency Index](https://www.hospitalitytax.co.uk/research/uk-hospitality-insolvency-index): Monthly UK hospitality (SIC Section I) company insolvencies by procedure type from Insolvency Service record-level data, paired with an ONS Business Demography 1-to-5-year survival curve by birth cohort. Flagship research asset.
+- [UK Hospitality Food Hygiene Map](https://www.hospitalitytax.co.uk/research/uk-hospitality-food-hygiene-map): Aggregate FHRS/FHIS food hygiene rating counts by local authority and business type (restaurants, pubs, hotels, takeaways, mobile caterers), from the FSA ratings API. Aggregate statistics only; no individual establishment is named.
 - [Hospitality Openings and Closures Index](https://www.hospitalitytax.co.uk/research/hospitality-openings-closures-index): UK hospitality company formation and dissolution data derived from Companies House SIC 55 and 56 registrations (accommodation, restaurants, cafes, takeaways, pubs and bars, licensed clubs). SIC codes are self-reported; the caveat is stated prominently on the research page.
 
 ## Key facts (current UK hospitality tax figures, 2026/27)

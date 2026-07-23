@@ -17,6 +17,8 @@ import {
   BarChart,
   CartesianGrid,
   Cell,
+  ComposedChart,
+  Line,
   XAxis,
   YAxis,
 } from "recharts";
@@ -29,6 +31,7 @@ import {
 } from "@/components/ui/chart";
 import { monthLabel, monthLabelShort, fmtNumber, fmtPercent } from "@/lib/research/construction-index";
 import type { ConstructionSegment } from "@/lib/research/construction-index";
+import type { NetFormationAnnualRow } from "@/lib/research/net-formation-index";
 
 type MonthlyRow = Record<string, number | string> & { month: string };
 type AnnualRow = Record<string, number> & { year: number };
@@ -236,6 +239,66 @@ export function SeasonalityChart({ data }: { data: SeasonalityPoint[] }) {
           ))}
         </Bar>
       </BarChart>
+    </ChartContainer>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Net formation: incorporations vs dissolutions (bars) + net formation (line)
+// ---------------------------------------------------------------------------
+
+export function NetFormationChart({
+  annual,
+  segment = "union",
+}: {
+  annual: NetFormationAnnualRow[];
+  segment?: "union" | "primary_41202";
+}) {
+  const data = annual.map((r) => ({
+    year: String(r.year),
+    inc: r[`${segment}_inc`],
+    diss: r[`${segment}_diss`],
+    net: r[`${segment}_net`],
+  }));
+
+  const config = {
+    inc: { label: "Incorporated", color: "var(--chart-1)" },
+    diss: { label: "Dissolved", color: "var(--chart-4)" },
+    net: { label: "Net formation", color: "var(--chart-2)" },
+  } satisfies ChartConfig;
+
+  return (
+    <ChartContainer config={config} className="aspect-auto h-[300px] w-full">
+      <ComposedChart
+        accessibilityLayer
+        data={data}
+        margin={{ left: 8, right: 8, top: 8, bottom: 0 }}
+      >
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
+        <XAxis dataKey="year" tickLine={false} axisLine={false} tickMargin={8} fontSize={12} />
+        <YAxis
+          width={52}
+          tickLine={false}
+          axisLine={false}
+          tickMargin={4}
+          fontSize={11}
+          tickFormatter={(v: number) => v.toLocaleString("en-GB")}
+        />
+        <ChartTooltip
+          cursor={{ fill: "rgba(249,115,22,0.08)" }}
+          content={<ChartTooltipContent indicator="dot" />}
+        />
+        <Bar dataKey="inc" name="Incorporated" fill="var(--color-inc)" radius={[4, 4, 0, 0]} />
+        <Bar dataKey="diss" name="Dissolved" fill="var(--color-diss)" radius={[4, 4, 0, 0]} />
+        <Line
+          dataKey="net"
+          name="Net formation"
+          type="monotone"
+          stroke="var(--color-net)"
+          strokeWidth={2}
+          dot={{ r: 3 }}
+        />
+      </ComposedChart>
     </ChartContainer>
   );
 }

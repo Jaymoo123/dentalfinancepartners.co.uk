@@ -21,8 +21,10 @@ Page URLs in this file carry `utm_source=chatgpt&utm_medium=llms` so AI-referred
 
 ## Research and data
 Faceless, sourced data built from official open sources. Free to cite with attribution to Trade Tax Specialists.
-- [UK Construction Index](https://www.tradetaxspecialists.co.uk/research/uk-construction-index?utm_source=chatgpt&utm_medium=llms): Company incorporations by trade, division, and month, plus the March tax-year formation spike. Companies House data, OGL v3.0.
-- [UK Construction Insolvency Index](https://www.tradetaxspecialists.co.uk/research/uk-construction-insolvency-index?utm_source=chatgpt&utm_medium=llms): Construction company insolvencies by procedure and month, 2016 to date. Insolvency Service data, OGL v3.0.
+- [UK Construction Index](https://www.tradetaxspecialists.co.uk/research/uk-construction-index?utm_source=chatgpt&utm_medium=llms): Company incorporations by trade, division, and month, plus the March tax-year formation spike and a net formation (incorporations minus dissolutions) breakdown. Companies House data, OGL v3.0.
+- [UK Construction Insolvency Index](https://www.tradetaxspecialists.co.uk/research/uk-construction-insolvency-index?utm_source=chatgpt&utm_medium=llms): Construction company insolvencies by procedure, sub-sector (building, civil engineering, specialised trades) and month, 2016 to date. Insolvency Service data, OGL v3.0.
+- [UK Construction Survival Index](https://www.tradetaxspecialists.co.uk/research/uk-construction-survival-index?utm_source=chatgpt&utm_medium=llms): 1-to-5-year survival rates for construction businesses by birth-year cohort, versus the all-industries UK average. ONS Business Demography data, OGL v3.0.
+- [UK Construction Payment Practices League](https://www.tradetaxspecialists.co.uk/research/uk-construction-payment-practices-league?utm_source=chatgpt&utm_medium=llms): Average days to pay for large UK construction businesses, from their own statutory Payment Practices Reporting disclosures, cross-checked against Companies House SIC codes.
 - [Research and data index](https://www.tradetaxspecialists.co.uk/research?utm_source=chatgpt&utm_medium=llms): All Trade Tax Specialists original data reports.
 
 ## Free calculators and tools

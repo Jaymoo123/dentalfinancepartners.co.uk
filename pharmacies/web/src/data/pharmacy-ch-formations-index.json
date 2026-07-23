@@ -1,0 +1,1354 @@
+{
+  "meta": {
+    "generated_at": "2026-07-23",
+    "incorporations_through": "2026-06",
+    "incorporations_settled_through": "2026-04",
+    "provisional_months": [
+      "2026-05",
+      "2026-06"
+    ],
+    "sic_labels": {
+      "47730": "Dispensing chemist in specialised stores"
+    },
+    "sources": [
+      {
+        "name": "Companies House Advanced Search API",
+        "publisher": "Companies House",
+        "url": "https://developer.company-information.service.gov.uk/",
+        "licence": "Open Government Licence v3.0",
+        "attribution": "Pharmacy Company Formation Index data compiled from Companies House public records (Open Government Licence v3.0). Free to cite with attribution to Pharmacy Tax."
+      }
+    ],
+    "notes": "Incorporation counts are gross (dissolved companies remain on the register; no survivorship bias). SIC 47730 covers all limited companies registered for dispensing-chemist activity, including NHS-contracted, mixed, and wholly private operators, plus holding companies for pharmacy groups. The most recent 2 months are provisional (Companies House indexing lag) and are excluded from headline figures. This corporate-formations count is a supplementary signal, not the main pharmacy-count spine: NHSBSA's Pharmacy Openings and Closures dataset (NHS dispensing contracts) is the primary measure of the shrinking pharmacy network.",
+    "attribution": "Pharmacy Company Formation Index data compiled from Companies House public records (Open Government Licence v3.0). Free to cite with attribution to Pharmacy Tax."
+  },
+  "headline": {
+    "primary_sic": "47730",
+    "primary_sic_label": "Dispensing chemist in specialised stores",
+    "last_settled_month": "2026-04",
+    "pharmacy_cos_settled": 54,
+    "pharmacy_cos_yoy_pct": -18.2,
+    "pharmacy_cos_ttm": 802,
+    "decade": {
+      "from_year": 2016,
+      "to_year": 2025,
+      "from_value": 227,
+      "to_value": 940,
+      "multiple": 4.1,
+      "change_pct": 314.1,
+      "union_from": 227,
+      "union_to": 940,
+      "union_change_pct": 314.1
+    },
+    "peak_month": "2023-08",
+    "peak_value": 186,
+    "zero_data_sics": [],
+    "thin": false
+  },
+  "incorporations": {
+    "monthly": [
+      {
+        "month": "2015-07",
+        "47730": 11,
+        "union": 11
+      },
+      {
+        "month": "2015-08",
+        "47730": 18,
+        "union": 18
+      },
+      {
+        "month": "2015-09",
+        "47730": 22,
+        "union": 22
+      },
+      {
+        "month": "2015-10",
+        "47730": 16,
+        "union": 16
+      },
+      {
+        "month": "2015-11",
+        "47730": 21,
+        "union": 21
+      },
+      {
+        "month": "2015-12",
+        "47730": 16,
+        "union": 16
+      },
+      {
+        "month": "2016-01",
+        "47730": 18,
+        "union": 18
+      },
+      {
+        "month": "2016-02",
+        "47730": 17,
+        "union": 17
+      },
+      {
+        "month": "2016-03",
+        "47730": 18,
+        "union": 18
+      },
+      {
+        "month": "2016-04",
+        "47730": 19,
+        "union": 19
+      },
+      {
+        "month": "2016-05",
+        "47730": 12,
+        "union": 12
+      },
+      {
+        "month": "2016-06",
+        "47730": 20,
+        "union": 20
+      },
+      {
+        "month": "2016-07",
+        "47730": 18,
+        "union": 18
+      },
+      {
+        "month": "2016-08",
+        "47730": 28,
+        "union": 28
+      },
+      {
+        "month": "2016-09",
+        "47730": 16,
+        "union": 16
+      },
+      {
+        "month": "2016-10",
+        "47730": 19,
+        "union": 19
+      },
+      {
+        "month": "2016-11",
+        "47730": 29,
+        "union": 29
+      },
+      {
+        "month": "2016-12",
+        "47730": 13,
+        "union": 13
+      },
+      {
+        "month": "2017-01",
+        "47730": 26,
+        "union": 26
+      },
+      {
+        "month": "2017-02",
+        "47730": 16,
+        "union": 16
+      },
+      {
+        "month": "2017-03",
+        "47730": 30,
+        "union": 30
+      },
+      {
+        "month": "2017-04",
+        "47730": 19,
+        "union": 19
+      },
+      {
+        "month": "2017-05",
+        "47730": 20,
+        "union": 20
+      },
+      {
+        "month": "2017-06",
+        "47730": 15,
+        "union": 15
+      },
+      {
+        "month": "2017-07",
+        "47730": 17,
+        "union": 17
+      },
+      {
+        "month": "2017-08",
+        "47730": 29,
+        "union": 29
+      },
+      {
+        "month": "2017-09",
+        "47730": 33,
+        "union": 33
+      },
+      {
+        "month": "2017-10",
+        "47730": 26,
+        "union": 26
+      },
+      {
+        "month": "2017-11",
+        "47730": 28,
+        "union": 28
+      },
+      {
+        "month": "2017-12",
+        "47730": 22,
+        "union": 22
+      },
+      {
+        "month": "2018-01",
+        "47730": 32,
+        "union": 32
+      },
+      {
+        "month": "2018-02",
+        "47730": 32,
+        "union": 32
+      },
+      {
+        "month": "2018-03",
+        "47730": 25,
+        "union": 25
+      },
+      {
+        "month": "2018-04",
+        "47730": 24,
+        "union": 24
+      },
+      {
+        "month": "2018-05",
+        "47730": 28,
+        "union": 28
+      },
+      {
+        "month": "2018-06",
+        "47730": 20,
+        "union": 20
+      },
+      {
+        "month": "2018-07",
+        "47730": 32,
+        "union": 32
+      },
+      {
+        "month": "2018-08",
+        "47730": 30,
+        "union": 30
+      },
+      {
+        "month": "2018-09",
+        "47730": 28,
+        "union": 28
+      },
+      {
+        "month": "2018-10",
+        "47730": 37,
+        "union": 37
+      },
+      {
+        "month": "2018-11",
+        "47730": 41,
+        "union": 41
+      },
+      {
+        "month": "2018-12",
+        "47730": 24,
+        "union": 24
+      },
+      {
+        "month": "2019-01",
+        "47730": 23,
+        "union": 23
+      },
+      {
+        "month": "2019-02",
+        "47730": 34,
+        "union": 34
+      },
+      {
+        "month": "2019-03",
+        "47730": 23,
+        "union": 23
+      },
+      {
+        "month": "2019-04",
+        "47730": 33,
+        "union": 33
+      },
+      {
+        "month": "2019-05",
+        "47730": 30,
+        "union": 30
+      },
+      {
+        "month": "2019-06",
+        "47730": 17,
+        "union": 17
+      },
+      {
+        "month": "2019-07",
+        "47730": 38,
+        "union": 38
+      },
+      {
+        "month": "2019-08",
+        "47730": 29,
+        "union": 29
+      },
+      {
+        "month": "2019-09",
+        "47730": 29,
+        "union": 29
+      },
+      {
+        "month": "2019-10",
+        "47730": 35,
+        "union": 35
+      },
+      {
+        "month": "2019-11",
+        "47730": 38,
+        "union": 38
+      },
+      {
+        "month": "2019-12",
+        "47730": 36,
+        "union": 36
+      },
+      {
+        "month": "2020-01",
+        "47730": 33,
+        "union": 33
+      },
+      {
+        "month": "2020-02",
+        "47730": 40,
+        "union": 40
+      },
+      {
+        "month": "2020-03",
+        "47730": 45,
+        "union": 45
+      },
+      {
+        "month": "2020-04",
+        "47730": 33,
+        "union": 33
+      },
+      {
+        "month": "2020-05",
+        "47730": 27,
+        "union": 27
+      },
+      {
+        "month": "2020-06",
+        "47730": 35,
+        "union": 35
+      },
+      {
+        "month": "2020-07",
+        "47730": 36,
+        "union": 36
+      },
+      {
+        "month": "2020-08",
+        "47730": 31,
+        "union": 31
+      },
+      {
+        "month": "2020-09",
+        "47730": 35,
+        "union": 35
+      },
+      {
+        "month": "2020-10",
+        "47730": 48,
+        "union": 48
+      },
+      {
+        "month": "2020-11",
+        "47730": 48,
+        "union": 48
+      },
+      {
+        "month": "2020-12",
+        "47730": 30,
+        "union": 30
+      },
+      {
+        "month": "2021-01",
+        "47730": 35,
+        "union": 35
+      },
+      {
+        "month": "2021-02",
+        "47730": 46,
+        "union": 46
+      },
+      {
+        "month": "2021-03",
+        "47730": 31,
+        "union": 31
+      },
+      {
+        "month": "2021-04",
+        "47730": 21,
+        "union": 21
+      },
+      {
+        "month": "2021-05",
+        "47730": 56,
+        "union": 56
+      },
+      {
+        "month": "2021-06",
+        "47730": 56,
+        "union": 56
+      },
+      {
+        "month": "2021-07",
+        "47730": 30,
+        "union": 30
+      },
+      {
+        "month": "2021-08",
+        "47730": 51,
+        "union": 51
+      },
+      {
+        "month": "2021-09",
+        "47730": 65,
+        "union": 65
+      },
+      {
+        "month": "2021-10",
+        "47730": 70,
+        "union": 70
+      },
+      {
+        "month": "2021-11",
+        "47730": 64,
+        "union": 64
+      },
+      {
+        "month": "2021-12",
+        "47730": 62,
+        "union": 62
+      },
+      {
+        "month": "2022-01",
+        "47730": 97,
+        "union": 97
+      },
+      {
+        "month": "2022-02",
+        "47730": 77,
+        "union": 77
+      },
+      {
+        "month": "2022-03",
+        "47730": 86,
+        "union": 86
+      },
+      {
+        "month": "2022-04",
+        "47730": 71,
+        "union": 71
+      },
+      {
+        "month": "2022-05",
+        "47730": 80,
+        "union": 80
+      },
+      {
+        "month": "2022-06",
+        "47730": 65,
+        "union": 65
+      },
+      {
+        "month": "2022-07",
+        "47730": 74,
+        "union": 74
+      },
+      {
+        "month": "2022-08",
+        "47730": 107,
+        "union": 107
+      },
+      {
+        "month": "2022-09",
+        "47730": 89,
+        "union": 89
+      },
+      {
+        "month": "2022-10",
+        "47730": 77,
+        "union": 77
+      },
+      {
+        "month": "2022-11",
+        "47730": 84,
+        "union": 84
+      },
+      {
+        "month": "2022-12",
+        "47730": 79,
+        "union": 79
+      },
+      {
+        "month": "2023-01",
+        "47730": 83,
+        "union": 83
+      },
+      {
+        "month": "2023-02",
+        "47730": 133,
+        "union": 133
+      },
+      {
+        "month": "2023-03",
+        "47730": 146,
+        "union": 146
+      },
+      {
+        "month": "2023-04",
+        "47730": 108,
+        "union": 108
+      },
+      {
+        "month": "2023-05",
+        "47730": 88,
+        "union": 88
+      },
+      {
+        "month": "2023-06",
+        "47730": 60,
+        "union": 60
+      },
+      {
+        "month": "2023-07",
+        "47730": 67,
+        "union": 67
+      },
+      {
+        "month": "2023-08",
+        "47730": 186,
+        "union": 186
+      },
+      {
+        "month": "2023-09",
+        "47730": 80,
+        "union": 80
+      },
+      {
+        "month": "2023-10",
+        "47730": 63,
+        "union": 63
+      },
+      {
+        "month": "2023-11",
+        "47730": 71,
+        "union": 71
+      },
+      {
+        "month": "2023-12",
+        "47730": 78,
+        "union": 78
+      },
+      {
+        "month": "2024-01",
+        "47730": 85,
+        "union": 85
+      },
+      {
+        "month": "2024-02",
+        "47730": 73,
+        "union": 73
+      },
+      {
+        "month": "2024-03",
+        "47730": 67,
+        "union": 67
+      },
+      {
+        "month": "2024-04",
+        "47730": 53,
+        "union": 53
+      },
+      {
+        "month": "2024-05",
+        "47730": 50,
+        "union": 50
+      },
+      {
+        "month": "2024-06",
+        "47730": 53,
+        "union": 53
+      },
+      {
+        "month": "2024-07",
+        "47730": 63,
+        "union": 63
+      },
+      {
+        "month": "2024-08",
+        "47730": 72,
+        "union": 72
+      },
+      {
+        "month": "2024-09",
+        "47730": 69,
+        "union": 69
+      },
+      {
+        "month": "2024-10",
+        "47730": 50,
+        "union": 50
+      },
+      {
+        "month": "2024-11",
+        "47730": 59,
+        "union": 59
+      },
+      {
+        "month": "2024-12",
+        "47730": 27,
+        "union": 27
+      },
+      {
+        "month": "2025-01",
+        "47730": 68,
+        "union": 68
+      },
+      {
+        "month": "2025-02",
+        "47730": 57,
+        "union": 57
+      },
+      {
+        "month": "2025-03",
+        "47730": 157,
+        "union": 157
+      },
+      {
+        "month": "2025-04",
+        "47730": 66,
+        "union": 66
+      },
+      {
+        "month": "2025-05",
+        "47730": 60,
+        "union": 60
+      },
+      {
+        "month": "2025-06",
+        "47730": 106,
+        "union": 106
+      },
+      {
+        "month": "2025-07",
+        "47730": 54,
+        "union": 54
+      },
+      {
+        "month": "2025-08",
+        "47730": 79,
+        "union": 79
+      },
+      {
+        "month": "2025-09",
+        "47730": 70,
+        "union": 70
+      },
+      {
+        "month": "2025-10",
+        "47730": 56,
+        "union": 56
+      },
+      {
+        "month": "2025-11",
+        "47730": 77,
+        "union": 77
+      },
+      {
+        "month": "2025-12",
+        "47730": 90,
+        "union": 90
+      },
+      {
+        "month": "2026-01",
+        "47730": 43,
+        "union": 43
+      },
+      {
+        "month": "2026-02",
+        "47730": 52,
+        "union": 52
+      },
+      {
+        "month": "2026-03",
+        "47730": 61,
+        "union": 61
+      },
+      {
+        "month": "2026-04",
+        "47730": 54,
+        "union": 54
+      },
+      {
+        "month": "2026-05",
+        "47730": 59,
+        "union": 59
+      },
+      {
+        "month": "2026-06",
+        "47730": 50,
+        "union": 50
+      }
+    ],
+    "annual": [
+      {
+        "year": 2016,
+        "47730": 227,
+        "union": 227
+      },
+      {
+        "year": 2017,
+        "47730": 281,
+        "union": 281
+      },
+      {
+        "year": 2018,
+        "47730": 353,
+        "union": 353
+      },
+      {
+        "year": 2019,
+        "47730": 365,
+        "union": 365
+      },
+      {
+        "year": 2020,
+        "47730": 441,
+        "union": 441
+      },
+      {
+        "year": 2021,
+        "47730": 587,
+        "union": 587
+      },
+      {
+        "year": 2022,
+        "47730": 986,
+        "union": 986
+      },
+      {
+        "year": 2023,
+        "47730": 1163,
+        "union": 1163
+      },
+      {
+        "year": 2024,
+        "47730": 721,
+        "union": 721
+      },
+      {
+        "year": 2025,
+        "47730": 940,
+        "union": 940
+      }
+    ]
+  },
+  "segments": [
+    {
+      "key": "pharmacy",
+      "label": "Dispensing chemist in specialised stores",
+      "sic_codes": [
+        "47730"
+      ],
+      "is_primary": true,
+      "monthly": [
+        {
+          "month": "2015-07",
+          "count": 11
+        },
+        {
+          "month": "2015-08",
+          "count": 18
+        },
+        {
+          "month": "2015-09",
+          "count": 22
+        },
+        {
+          "month": "2015-10",
+          "count": 16
+        },
+        {
+          "month": "2015-11",
+          "count": 21
+        },
+        {
+          "month": "2015-12",
+          "count": 16
+        },
+        {
+          "month": "2016-01",
+          "count": 18
+        },
+        {
+          "month": "2016-02",
+          "count": 17
+        },
+        {
+          "month": "2016-03",
+          "count": 18
+        },
+        {
+          "month": "2016-04",
+          "count": 19
+        },
+        {
+          "month": "2016-05",
+          "count": 12
+        },
+        {
+          "month": "2016-06",
+          "count": 20
+        },
+        {
+          "month": "2016-07",
+          "count": 18
+        },
+        {
+          "month": "2016-08",
+          "count": 28
+        },
+        {
+          "month": "2016-09",
+          "count": 16
+        },
+        {
+          "month": "2016-10",
+          "count": 19
+        },
+        {
+          "month": "2016-11",
+          "count": 29
+        },
+        {
+          "month": "2016-12",
+          "count": 13
+        },
+        {
+          "month": "2017-01",
+          "count": 26
+        },
+        {
+          "month": "2017-02",
+          "count": 16
+        },
+        {
+          "month": "2017-03",
+          "count": 30
+        },
+        {
+          "month": "2017-04",
+          "count": 19
+        },
+        {
+          "month": "2017-05",
+          "count": 20
+        },
+        {
+          "month": "2017-06",
+          "count": 15
+        },
+        {
+          "month": "2017-07",
+          "count": 17
+        },
+        {
+          "month": "2017-08",
+          "count": 29
+        },
+        {
+          "month": "2017-09",
+          "count": 33
+        },
+        {
+          "month": "2017-10",
+          "count": 26
+        },
+        {
+          "month": "2017-11",
+          "count": 28
+        },
+        {
+          "month": "2017-12",
+          "count": 22
+        },
+        {
+          "month": "2018-01",
+          "count": 32
+        },
+        {
+          "month": "2018-02",
+          "count": 32
+        },
+        {
+          "month": "2018-03",
+          "count": 25
+        },
+        {
+          "month": "2018-04",
+          "count": 24
+        },
+        {
+          "month": "2018-05",
+          "count": 28
+        },
+        {
+          "month": "2018-06",
+          "count": 20
+        },
+        {
+          "month": "2018-07",
+          "count": 32
+        },
+        {
+          "month": "2018-08",
+          "count": 30
+        },
+        {
+          "month": "2018-09",
+          "count": 28
+        },
+        {
+          "month": "2018-10",
+          "count": 37
+        },
+        {
+          "month": "2018-11",
+          "count": 41
+        },
+        {
+          "month": "2018-12",
+          "count": 24
+        },
+        {
+          "month": "2019-01",
+          "count": 23
+        },
+        {
+          "month": "2019-02",
+          "count": 34
+        },
+        {
+          "month": "2019-03",
+          "count": 23
+        },
+        {
+          "month": "2019-04",
+          "count": 33
+        },
+        {
+          "month": "2019-05",
+          "count": 30
+        },
+        {
+          "month": "2019-06",
+          "count": 17
+        },
+        {
+          "month": "2019-07",
+          "count": 38
+        },
+        {
+          "month": "2019-08",
+          "count": 29
+        },
+        {
+          "month": "2019-09",
+          "count": 29
+        },
+        {
+          "month": "2019-10",
+          "count": 35
+        },
+        {
+          "month": "2019-11",
+          "count": 38
+        },
+        {
+          "month": "2019-12",
+          "count": 36
+        },
+        {
+          "month": "2020-01",
+          "count": 33
+        },
+        {
+          "month": "2020-02",
+          "count": 40
+        },
+        {
+          "month": "2020-03",
+          "count": 45
+        },
+        {
+          "month": "2020-04",
+          "count": 33
+        },
+        {
+          "month": "2020-05",
+          "count": 27
+        },
+        {
+          "month": "2020-06",
+          "count": 35
+        },
+        {
+          "month": "2020-07",
+          "count": 36
+        },
+        {
+          "month": "2020-08",
+          "count": 31
+        },
+        {
+          "month": "2020-09",
+          "count": 35
+        },
+        {
+          "month": "2020-10",
+          "count": 48
+        },
+        {
+          "month": "2020-11",
+          "count": 48
+        },
+        {
+          "month": "2020-12",
+          "count": 30
+        },
+        {
+          "month": "2021-01",
+          "count": 35
+        },
+        {
+          "month": "2021-02",
+          "count": 46
+        },
+        {
+          "month": "2021-03",
+          "count": 31
+        },
+        {
+          "month": "2021-04",
+          "count": 21
+        },
+        {
+          "month": "2021-05",
+          "count": 56
+        },
+        {
+          "month": "2021-06",
+          "count": 56
+        },
+        {
+          "month": "2021-07",
+          "count": 30
+        },
+        {
+          "month": "2021-08",
+          "count": 51
+        },
+        {
+          "month": "2021-09",
+          "count": 65
+        },
+        {
+          "month": "2021-10",
+          "count": 70
+        },
+        {
+          "month": "2021-11",
+          "count": 64
+        },
+        {
+          "month": "2021-12",
+          "count": 62
+        },
+        {
+          "month": "2022-01",
+          "count": 97
+        },
+        {
+          "month": "2022-02",
+          "count": 77
+        },
+        {
+          "month": "2022-03",
+          "count": 86
+        },
+        {
+          "month": "2022-04",
+          "count": 71
+        },
+        {
+          "month": "2022-05",
+          "count": 80
+        },
+        {
+          "month": "2022-06",
+          "count": 65
+        },
+        {
+          "month": "2022-07",
+          "count": 74
+        },
+        {
+          "month": "2022-08",
+          "count": 107
+        },
+        {
+          "month": "2022-09",
+          "count": 89
+        },
+        {
+          "month": "2022-10",
+          "count": 77
+        },
+        {
+          "month": "2022-11",
+          "count": 84
+        },
+        {
+          "month": "2022-12",
+          "count": 79
+        },
+        {
+          "month": "2023-01",
+          "count": 83
+        },
+        {
+          "month": "2023-02",
+          "count": 133
+        },
+        {
+          "month": "2023-03",
+          "count": 146
+        },
+        {
+          "month": "2023-04",
+          "count": 108
+        },
+        {
+          "month": "2023-05",
+          "count": 88
+        },
+        {
+          "month": "2023-06",
+          "count": 60
+        },
+        {
+          "month": "2023-07",
+          "count": 67
+        },
+        {
+          "month": "2023-08",
+          "count": 186
+        },
+        {
+          "month": "2023-09",
+          "count": 80
+        },
+        {
+          "month": "2023-10",
+          "count": 63
+        },
+        {
+          "month": "2023-11",
+          "count": 71
+        },
+        {
+          "month": "2023-12",
+          "count": 78
+        },
+        {
+          "month": "2024-01",
+          "count": 85
+        },
+        {
+          "month": "2024-02",
+          "count": 73
+        },
+        {
+          "month": "2024-03",
+          "count": 67
+        },
+        {
+          "month": "2024-04",
+          "count": 53
+        },
+        {
+          "month": "2024-05",
+          "count": 50
+        },
+        {
+          "month": "2024-06",
+          "count": 53
+        },
+        {
+          "month": "2024-07",
+          "count": 63
+        },
+        {
+          "month": "2024-08",
+          "count": 72
+        },
+        {
+          "month": "2024-09",
+          "count": 69
+        },
+        {
+          "month": "2024-10",
+          "count": 50
+        },
+        {
+          "month": "2024-11",
+          "count": 59
+        },
+        {
+          "month": "2024-12",
+          "count": 27
+        },
+        {
+          "month": "2025-01",
+          "count": 68
+        },
+        {
+          "month": "2025-02",
+          "count": 57
+        },
+        {
+          "month": "2025-03",
+          "count": 157
+        },
+        {
+          "month": "2025-04",
+          "count": 66
+        },
+        {
+          "month": "2025-05",
+          "count": 60
+        },
+        {
+          "month": "2025-06",
+          "count": 106
+        },
+        {
+          "month": "2025-07",
+          "count": 54
+        },
+        {
+          "month": "2025-08",
+          "count": 79
+        },
+        {
+          "month": "2025-09",
+          "count": 70
+        },
+        {
+          "month": "2025-10",
+          "count": 56
+        },
+        {
+          "month": "2025-11",
+          "count": 77
+        },
+        {
+          "month": "2025-12",
+          "count": 90
+        },
+        {
+          "month": "2026-01",
+          "count": 43
+        },
+        {
+          "month": "2026-02",
+          "count": 52
+        },
+        {
+          "month": "2026-03",
+          "count": 61
+        },
+        {
+          "month": "2026-04",
+          "count": 54
+        },
+        {
+          "month": "2026-05",
+          "count": 59
+        },
+        {
+          "month": "2026-06",
+          "count": 50
+        }
+      ],
+      "annual": [
+        {
+          "year": 2016,
+          "count": 227
+        },
+        {
+          "year": 2017,
+          "count": 281
+        },
+        {
+          "year": 2018,
+          "count": 353
+        },
+        {
+          "year": 2019,
+          "count": 365
+        },
+        {
+          "year": 2020,
+          "count": 441
+        },
+        {
+          "year": 2021,
+          "count": 587
+        },
+        {
+          "year": 2022,
+          "count": 986
+        },
+        {
+          "year": 2023,
+          "count": 1163
+        },
+        {
+          "year": 2024,
+          "count": 721
+        },
+        {
+          "year": 2025,
+          "count": 940
+        }
+      ],
+      "last_settled_month": "2026-04",
+      "settled_value": 54,
+      "yoy_pct": -18.2,
+      "ttm": 802,
+      "peak_month": "2023-08",
+      "peak_value": 186,
+      "thin_segment": false
+    }
+  ],
+  "secondary": {}
+}

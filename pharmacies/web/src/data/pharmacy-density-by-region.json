@@ -1,0 +1,100 @@
+{
+  "source": {
+    "name": "NHSBSA Contractor Details",
+    "url": "https://opendata.nhsbsa.net/dataset/contractor-details",
+    "resource_title": "Contractor Details - Jun 2026",
+    "licence": "Open Government Licence v3.0",
+    "publisher": "NHS Business Services Authority"
+  },
+  "population_source": {
+    "name": "ONS mid-year population estimates (Nomis NM_2002_1, Census 2021/22 rebase)",
+    "url": "https://www.nomisweb.co.uk/datasets/pestsyoala",
+    "licence": "Open Government Licence v3.0",
+    "publisher": "Office for National Statistics",
+    "year": "mid-2024"
+  },
+  "regions": [
+    {
+      "region": "North East and Yorkshire",
+      "pharmacy_count": 1763,
+      "population": 8433640,
+      "population_year": "mid-2024",
+      "ons_regions": [
+        "North East",
+        "Yorkshire and The Humber"
+      ],
+      "per_100k": 20.9
+    },
+    {
+      "region": "North West",
+      "pharmacy_count": 1543,
+      "population": 7737414,
+      "population_year": "mid-2024",
+      "ons_regions": [
+        "North West"
+      ],
+      "per_100k": 19.94
+    },
+    {
+      "region": "London",
+      "pharmacy_count": 1743,
+      "population": 9089736,
+      "population_year": "mid-2024",
+      "ons_regions": [
+        "London"
+      ],
+      "per_100k": 19.18
+    },
+    {
+      "region": "Midlands",
+      "pharmacy_count": 2082,
+      "population": 11250368,
+      "population_year": "mid-2024",
+      "ons_regions": [
+        "East Midlands",
+        "West Midlands"
+      ],
+      "per_100k": 18.51
+    },
+    {
+      "region": "East Of England",
+      "pharmacy_count": 1103,
+      "population": 6576306,
+      "population_year": "mid-2024",
+      "ons_regions": [
+        "East"
+      ],
+      "per_100k": 16.77
+    },
+    {
+      "region": "South West",
+      "pharmacy_count": 938,
+      "population": 5889695,
+      "population_year": "mid-2024",
+      "ons_regions": [
+        "South West"
+      ],
+      "per_100k": 15.93
+    },
+    {
+      "region": "South East",
+      "pharmacy_count": 1445,
+      "population": 9642942,
+      "population_year": "mid-2024",
+      "ons_regions": [
+        "South East"
+      ],
+      "per_100k": 14.99
+    }
+  ],
+  "england_total_pharmacies": 10617,
+  "england_total_population": 58620101,
+  "england_per_100k": 18.11,
+  "non_england_or_channel_islands": {
+    "ALDERNEY": 1,
+    "GUERNSEY": 23,
+    "ISLE OF MAN": 26,
+    "JERSEY": 29
+  },
+  "pull_date": "2026-07-23"
+}

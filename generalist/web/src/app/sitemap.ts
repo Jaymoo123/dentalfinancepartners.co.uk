@@ -34,6 +34,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/cookie-policy",
     "/templates",
     "/accountant-near-me",
+    "/research",
+    "/research/uk-small-business-barometer",
+    "/research/uk-sector-insolvency-league",
+    "/research/uk-late-payment-index",
+    "/research/uk-business-density-map",
   ];
 
   const hreflang = (url: string) => ({

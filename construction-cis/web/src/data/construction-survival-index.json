@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "generated_at": "2026-07-23",
+    "source_url": "https://www.ons.gov.uk/file?uri=/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable/current/businessdemographyexceltables2024.xlsx",
+    "release_page": "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable/current",
+    "release_date": "2025-11-20",
+    "publisher": "Office for National Statistics",
+    "licence": "Open Government Licence v3.0",
+    "sources": [
+      {
+        "name": "Business Demography, UK -- Table 4.2 (Survival of newly born enterprises, broad industry group)",
+        "publisher": "Office for National Statistics",
+        "url": "https://www.ons.gov.uk/file?uri=/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable/current/businessdemographyexceltables2024.xlsx",
+        "release_page": "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable/current",
+        "licence": "Open Government Licence v3.0",
+        "retrieved": "2026-07-23",
+        "release_date": "2025-11-20",
+        "attribution": "Data sourced from the Office for National Statistics (ONS) under the Open Government Licence v3.0. Free to cite with attribution to Trade Tax Specialists."
+      }
+    ],
+    "notes": "Survival counts and percentages are for the 'Construction' broad industry group (ONS SIC 2007 broad grouping, aligned to SIC Section F) as published in ONS Business Demography Table 4.2. Births are new enterprises (not necessarily companies -- ONS enterprise definition includes sole traders and partnerships registered for VAT or PAYE), counted in the year they were born, then tracked for up to 5 years. Control-rounded to base 5 by ONS; later survival years for the most recent cohorts are not yet available (fewer years have elapsed) and are omitted rather than shown as zero.",
+    "attribution": "UK Construction Survival Index compiled from ONS Business Demography data (Open Government Licence v3.0). Free to cite with attribution to Trade Tax Specialists."
+  },
+  "headline": {
+    "latest_5yr_cohort_year": 2019,
+    "latest_5yr_construction_pct": 43.3,
+    "latest_5yr_all_industries_pct": 38.4,
+    "latest_1yr_cohort_year": 2023,
+    "latest_1yr_construction_pct": 93.5,
+    "latest_1yr_all_industries_pct": 93.4
+  },
+  "cohorts": [
+    {
+      "birth_year": 2019,
+      "construction": {
+        "births": 48570,
+        "y1_count": 45490,
+        "y1_pct": 93.7,
+        "y2_count": 36715,
+        "y2_pct": 75.6,
+        "y3_count": 29145,
+        "y3_pct": 60.0,
+        "y4_count": 24320,
+        "y4_pct": 50.1,
+        "y5_count": 21050,
+        "y5_pct": 43.3
+      },
+      "all_industries": {
+        "births": 363825,
+        "y1_count": 344135,
+        "y1_pct": 94.6,
+        "y2_count": 271925,
+        "y2_pct": 74.7,
+        "y3_count": 203470,
+        "y3_pct": 55.9,
+        "y4_count": 163725,
+        "y4_pct": 45.0,
+        "y5_count": 139845,
+        "y5_pct": 38.4
+      }
+    },
+    {
+      "birth_year": 2020,
+      "construction": {
+        "births": 42490,
+        "y1_count": 39815,
+        "y1_pct": 93.7,
+        "y2_count": 31520,
+        "y2_pct": 74.2,
+        "y3_count": 24720,
+        "y3_pct": 58.2,
+        "y4_count": 21035,
+        "y4_pct": 49.5,
+        "y5_count": null,
+        "y5_pct": null
+      },
+      "all_industries": {
+        "births": 333015,
+        "y1_count": 309470,
+        "y1_pct": 92.9,
+        "y2_count": 237400,
+        "y2_pct": 71.3,
+        "y3_count": 176410,
+        "y3_pct": 53.0,
+        "y4_count": 146415,
+        "y4_pct": 44.0,
+        "y5_count": null,
+        "y5_pct": null
+      }
+    },
+    {
+      "birth_year": 2021,
+      "construction": {
+        "births": 52975,
+        "y1_count": 49965,
+        "y1_pct": 94.3,
+        "y2_count": 38805,
+        "y2_pct": 73.3,
+        "y3_count": 30550,
+        "y3_pct": 57.7,
+        "y4_count": null,
+        "y4_pct": null,
+        "y5_count": null,
+        "y5_pct": null
+      },
+      "all_industries": {
+        "births": 363995,
+        "y1_count": 339920,
+        "y1_pct": 93.4,
+        "y2_count": 256265,
+        "y2_pct": 70.4,
+        "y3_count": 194685,
+        "y3_pct": 53.5,
+        "y4_count": null,
+        "y4_pct": null,
+        "y5_count": null,
+        "y5_pct": null
+      }
+    },
+    {
+      "birth_year": 2022,
+      "construction": {
+        "births": 49390,
+        "y1_count": 46195,
+        "y1_pct": 93.5,
+        "y2_count": 34095,
+        "y2_pct": 69.0,
+        "y3_count": null,
+        "y3_pct": null,
+        "y4_count": null,
+        "y4_pct": null,
+        "y5_count": null,
+        "y5_pct": null
+      },
+      "all_industries": {
+        "births": 336925,
+        "y1_count": 311110,
+        "y1_pct": 92.3,
+        "y2_count": 232125,
+        "y2_pct": 68.9,
+        "y3_count": null,
+        "y3_pct": null,
+        "y4_count": null,
+        "y4_pct": null,
+        "y5_count": null,
+        "y5_pct": null
+      }
+    },
+    {
+      "birth_year": 2023,
+      "construction": {
+        "births": 47115,
+        "y1_count": 44055,
+        "y1_pct": 93.5,
+        "y2_count": null,
+        "y2_pct": null,
+        "y3_count": null,
+        "y3_pct": null,
+        "y4_count": null,
+        "y4_pct": null,
+        "y5_count": null,
+        "y5_pct": null
+      },
+      "all_industries": {
+        "births": 316025,
+        "y1_count": 295140,
+        "y1_pct": 93.4,
+        "y2_count": null,
+        "y2_pct": null,
+        "y3_count": null,
+        "y3_pct": null,
+        "y4_count": null,
+        "y4_pct": null,
+        "y5_count": null,
+        "y5_pct": null
+      }
+    }
+  ]
+}

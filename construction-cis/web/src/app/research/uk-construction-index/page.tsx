@@ -12,6 +12,7 @@ import {
   MonthlyIncorporationsChart,
   SeasonalityChart,
   TradeBreakdownTable,
+  NetFormationChart,
   type SeasonalityPoint,
 } from "@/components/research/ConstructionIndexCharts";
 import {
@@ -20,12 +21,15 @@ import {
   monthLabel,
   type ConstructionIndexSnapshot,
 } from "@/lib/research/construction-index";
+import type { NetFormationIndexSnapshot } from "@/lib/research/net-formation-index";
 import snapshot from "@/data/uk-construction-index.json";
+import netFormationSnapshot from "@/data/construction-net-formation-index.json";
 
 const data = snapshot as unknown as ConstructionIndexSnapshot;
 const { meta, headline, incorporations, construction_output, segments } = data;
 const { decade } = headline;
 const PRIMARY = headline.primary_sic;
+const netFormation = netFormationSnapshot as unknown as NetFormationIndexSnapshot;
 
 const PAGE_PATH = "/research/uk-construction-index";
 
@@ -91,6 +95,11 @@ const faqs = [
       "Companies House indexes very recent incorporations with a short lag of four to six weeks. The two most recent months in the series are therefore provisional: they will be revised upward as late-indexed records are captured. These months are shown with a dashed line on the chart and are excluded from all headline figures and decade comparisons to avoid understating the trend.",
   },
   {
+    question: "Are more construction companies closing down than opening?",
+    answer:
+      "Not yet overall, but the gap has nearly closed. Net formation (new incorporations minus dissolutions) across all construction SIC codes fell from tens of thousands of companies a year in the mid-2010s to close to zero in 2025, because dissolutions have risen faster than incorporations. For domestic-building companies (SIC 41202) specifically, 2025 was the first year on record where dissolutions outnumbered incorporations. See the net formation section above for the full year-by-year breakdown.",
+  },
+  {
     question: "Am I better off as a CIS contractor operating through a limited company?",
     answer:
       "It depends on your income level, whether you hold gross payment status, and how you draw money from the business. Operating through a company can reduce your overall tax bill at higher income levels, but brings compliance obligations including Corporation Tax returns, payroll, and Companies House filings. Our CIS tax calculators let you model your own position, and our team can review your specific circumstances.",
@@ -143,6 +152,11 @@ const datasetSchema = {
       encodingFormat: "text/csv",
       contentUrl: `${siteConfig.url}${PAGE_PATH}/data`,
     },
+    {
+      "@type": "DataDownload",
+      encodingFormat: "text/csv",
+      contentUrl: `${siteConfig.url}${PAGE_PATH}/net-formation-data`,
+    },
   ],
   variableMeasured: [
     "Monthly company incorporations by construction SIC code",
@@ -155,6 +169,8 @@ const datasetSchema = {
     "Monthly company incorporations - Flooring and wall tiling (SIC 43330)",
     "Monthly company incorporations - Groundworks and site preparation (SIC 43120)",
     "Monthly company incorporations - Demolition (SIC 43110)",
+    "Annual net formation (incorporations minus dissolutions) - all construction SIC codes",
+    "Annual net formation (incorporations minus dissolutions) - domestic buildings (SIC 41202)",
   ],
 };
 
@@ -368,6 +384,83 @@ export default function UKConstructionIndexPage() {
               </div>
             </Section>
 
+            <Section id="net-formation" title="Net formation: incorporations minus dissolutions">
+              <p>
+                Incorporations are only half the story. Every year, thousands of construction
+                companies are also dissolved, removed from the Companies House register through
+                strike-off, liquidation or administration. Net formation, incorporations minus
+                dissolutions in the same calendar year, tells you whether the population of
+                construction companies is actually growing.
+              </p>
+              <p>
+                Net formation across all 19 construction SIC codes fell{" "}
+                {fmtPercent(netFormation.headline.union_net_change_pct, false)} between{" "}
+                {netFormation.headline.from_year} and {netFormation.headline.to_year}, from{" "}
+                {fmtNumber(netFormation.headline.union_net_from)} more companies than were lost in{" "}
+                {netFormation.headline.from_year} to just{" "}
+                {fmtNumber(netFormation.headline.union_net_to)} in {netFormation.headline.to_year}.
+                Gross incorporations rose for most of that period before easing back from their
+                2022 peak, but dissolutions climbed in almost every single year, so the net
+                addition to the construction company population has nearly disappeared.
+                {netFormation.headline.primary_first_negative_year && (
+                  <>
+                    {" "}
+                    For domestic-building companies (SIC {PRIMARY}) specifically,{" "}
+                    {netFormation.headline.primary_first_negative_year} was the first year on
+                    record where more companies were dissolved than incorporated: a net loss of{" "}
+                    {fmtNumber(Math.abs(netFormation.headline.primary_net_to))} companies.
+                  </>
+                )}
+              </p>
+              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+                <p className="mb-3 text-xs text-neutral-500">
+                  All construction companies (19 SIC codes, deduplicated): incorporated vs
+                  dissolved each year, with net formation as the line.
+                </p>
+                <NetFormationChart annual={netFormation.annual} segment="union" />
+              </div>
+              <div className="not-prose mt-4 overflow-x-auto">
+                <table className="w-full border-collapse text-sm">
+                  <thead>
+                    <tr className="border-b-2 border-neutral-300 text-left">
+                      <th className="py-2 pr-4 font-bold text-neutral-900">Year</th>
+                      <th className="py-2 pr-4 font-bold text-neutral-900 text-right">Incorporated</th>
+                      <th className="py-2 pr-4 font-bold text-neutral-900 text-right">Dissolved</th>
+                      <th className="py-2 font-bold text-neutral-900 text-right">Net formation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {netFormation.annual.map((r) => (
+                      <tr key={r.year} className="border-b border-neutral-200">
+                        <td className="py-2 pr-4 text-neutral-700">{r.year}</td>
+                        <td className="py-2 pr-4 text-right text-neutral-900">{fmtNumber(r.union_inc)}</td>
+                        <td className="py-2 pr-4 text-right text-neutral-900">{fmtNumber(r.union_diss)}</td>
+                        <td
+                          className={`py-2 text-right font-semibold ${r.union_net < 0 ? "text-red-600" : "text-neutral-900"}`}
+                        >
+                          {r.union_net < 0 ? "-" : "+"}
+                          {fmtNumber(Math.abs(r.union_net))}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-4 text-sm text-neutral-600">
+                Dissolutions are companies actually removed from the Companies House register
+                (company_status = dissolved), not insolvency events specifically: a company can be
+                dissolved through simple voluntary strike-off as well as after liquidation or
+                administration. See the{" "}
+                <Link
+                  href="/research/uk-construction-insolvency-index"
+                  className="font-semibold text-orange-700 hover:text-orange-800"
+                >
+                  UK Construction Insolvency Index
+                </Link>{" "}
+                for insolvency-specific procedures.
+              </p>
+            </Section>
+
             <Section id="trades" title="UK construction incorporations by trade">
               <p>
                 The table ranks the eight main CIS subcontractor trades by new company formations in
@@ -431,8 +524,21 @@ export default function UKConstructionIndexPage() {
                 union (which deduplicates cross-SIC registrations).
               </p>
               <p>
+                <strong>Net formation.</strong> Dissolutions are fetched from the same Companies
+                House Advanced Search API, filtering on company_status = dissolved with a
+                dissolved-date window instead of an incorporation-date window, for the same 19 SIC
+                codes and division/segment groupings used throughout this page. Net formation for
+                the in-progress current year is capped to the same settled-through month as
+                incorporations, so the partial-year figure compares like with like: dissolutions
+                data itself has no equivalent indexing lag, but capping it avoids an artificially
+                negative partial-year net formation figure caused only by counting more months of
+                dissolutions than incorporations.
+              </p>
+              <p>
                 <strong>Updated.</strong> Incorporations to {monthLabel(settledThrough)} (settled
-                data). Data generated {monthLabel(meta.generated_at.slice(0, 7))}.
+                data). Net formation (dissolutions) generated{" "}
+                {monthLabel(netFormation.meta.generated_at.slice(0, 7))}. Data generated{" "}
+                {monthLabel(meta.generated_at.slice(0, 7))}.
               </p>
               <ul className="not-prose mt-2 space-y-1 text-sm">
                 {meta.sources
@@ -456,6 +562,14 @@ export default function UKConstructionIndexPage() {
                   className="font-semibold text-orange-700 hover:text-orange-800"
                 >
                   Download the incorporation data (CSV)
+                </Link>
+              </p>
+              <p className="text-sm">
+                <Link
+                  href={`${PAGE_PATH}/net-formation-data`}
+                  className="font-semibold text-orange-700 hover:text-orange-800"
+                >
+                  Download the net formation data (CSV)
                 </Link>
               </p>
               <p className="text-sm text-neutral-500">

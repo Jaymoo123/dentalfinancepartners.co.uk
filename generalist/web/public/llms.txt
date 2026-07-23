@@ -63,6 +63,14 @@ These figures are maintained against primary sources (HMRC, legislation.gov.uk) 
 - [Selling Your Business: CGT and BADR Guide](https://www.hollowaydavies.co.uk/resources/exit-cgt?utm_source=chatgpt&utm_medium=llms)
 - [Bookkeeping, MTD ITSA and Corporation Tax Guide](https://www.hollowaydavies.co.uk/resources/compliance?utm_source=chatgpt&utm_medium=llms)
 
+## Research and data
+Original, sourced research built entirely from official UK government open data, free to cite with attribution to Holloway Davies.
+- [State of UK Small Business Barometer](https://www.hollowaydavies.co.uk/research/uk-small-business-barometer?utm_source=chatgpt&utm_medium=llms): All-sector UK barometer fusing Companies House company formations and dissolutions, Insolvency Service company insolvencies, and ONS/DBT business survival and population statistics.
+- [UK Sector Insolvency League](https://www.hollowaydavies.co.uk/research/uk-sector-insolvency-league?utm_source=chatgpt&utm_medium=llms): Every UK SIC sector ranked by trailing 12-month company insolvencies, from Insolvency Service open data.
+- [UK Late Payment Index](https://www.hollowaydavies.co.uk/research/uk-late-payment-index?utm_source=chatgpt&utm_medium=llms): Aggregate half-yearly trend in how long large UK businesses take to pay invoices, from statutory Payment Practices Reporting data. No company named.
+- [UK Business Density Map](https://www.hollowaydavies.co.uk/research/uk-business-density-map?utm_source=chatgpt&utm_medium=llms): Every UK region ranked by businesses per 10,000 resident adults, from Business Population Estimates.
+- [All research](https://www.hollowaydavies.co.uk/research?utm_source=chatgpt&utm_medium=llms): Full index of Holloway Davies research and data pages.
+
 ## Blog categories
 - [Corporation Tax](https://www.hollowaydavies.co.uk/blog/corporation-tax?utm_source=chatgpt&utm_medium=llms)
 - [Director Pay and Dividends](https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends?utm_source=chatgpt&utm_medium=llms)
@@ -87,6 +95,7 @@ These figures are maintained against primary sources (HMRC, legislation.gov.uk) 
 - [Incorporation analysis](https://www.hollowaydavies.co.uk/incorporation?utm_source=chatgpt&utm_medium=llms)
 - [R&D Tax Credits](https://www.hollowaydavies.co.uk/r-and-d-credits?utm_source=chatgpt&utm_medium=llms)
 - [Free business health check](https://www.hollowaydavies.co.uk/free-health-check?utm_source=chatgpt&utm_medium=llms)
+- [Research and data](https://www.hollowaydavies.co.uk/research?utm_source=chatgpt&utm_medium=llms)
 - [Locations](https://www.hollowaydavies.co.uk/locations?utm_source=chatgpt&utm_medium=llms)
 - [About](https://www.hollowaydavies.co.uk/about?utm_source=chatgpt&utm_medium=llms)
 - [Blog](https://www.hollowaydavies.co.uk/blog?utm_source=chatgpt&utm_medium=llms)

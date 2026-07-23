@@ -78,7 +78,9 @@ Always verify time-sensitive figures against gov.uk. For advice specific to your
 
 ## Original Research
 
-- Online Seller Index (UK ecommerce formation and compliance data): https://${niche.domain}/research/online-seller-index
+- Research hub: https://${niche.domain}/research
+- Online Seller Index (Companies House SIC 47910 formation/dissolution trends paired with the ONS internet-retail sales share, plus formation seasonality): https://${niche.domain}/research/online-seller-index
+- Online Seller Survival Index (ONS Business Demography retail enterprise survival by birth-year cohort vs all-industries average): https://${niche.domain}/research/online-seller-survival-index
 
 ## Blog Categories
 
@@ -100,7 +102,7 @@ Always verify time-sensitive figures against gov.uk. For advice specific to your
 
 ## Schema And Discovery
 
-Auto-generated per page: Organization (ProfessionalService and AccountingService) on the homepage, WebSite, FAQPage where Q and A appear (homepage, services, seller hubs, VAT guides, calculators, blog posts), Article and HowTo on blog posts, Dataset on the Online Seller Index, BreadcrumbList. Sitemap: https://${niche.domain}/sitemap.xml
+Auto-generated per page: Organization (ProfessionalService and AccountingService) on the homepage, WebSite, FAQPage where Q and A appear (homepage, services, seller hubs, VAT guides, calculators, blog posts), Article and HowTo on blog posts, Dataset and FAQPage on both research index pages, BreadcrumbList. Sitemap: https://${niche.domain}/sitemap.xml
 
 Below is a flat, machine-readable dump of every published blog post.
 

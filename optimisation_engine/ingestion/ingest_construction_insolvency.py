@@ -73,12 +73,23 @@ def fetch_zip(url: str) -> zipfile.ZipFile:
     return zipfile.ZipFile(io.BytesIO(r.content))
 
 
+DIVISION_LABELS = {
+    "41": "Building construction (Division 41)",
+    "42": "Civil engineering (Division 42)",
+    "43": "Specialised construction activities (Division 43)",
+}
+
+
 def parse_record_level(zf: zipfile.ZipFile) -> tuple[
     dict[str, dict[str, int]],  # by_month[month][procedure] = count
     dict[str, dict[str, int]],  # by_year[year][procedure] = count
+    dict[str, dict[str, int]],  # by_month_div[month][division] = count
+    dict[str, dict[str, int]],  # by_year_div[year][division] = count
 ]:
     by_month: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
     by_year: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
+    by_month_div: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
+    by_year_div: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
 
     with zf.open("record-level-data.csv") as f:
         reader = csv.DictReader(io.TextIOWrapper(f, encoding="latin-1"))
@@ -92,7 +103,44 @@ def parse_record_level(zf: zipfile.ZipFile) -> tuple[
             by_month[month][proc] += 1
             by_year[year][proc] += 1
 
-    return dict(by_month), dict(by_year)
+            division = row.get("sic07_2_digit", "").strip()
+            if division in DIVISION_LABELS:
+                by_month_div[month][division] += 1
+                by_year_div[year][division] += 1
+
+    return dict(by_month), dict(by_year), dict(by_month_div), dict(by_year_div)
+
+
+def build_division_series(
+    by_month_div: dict[str, dict[str, int]],
+    by_year_div: dict[str, dict[str, int]],
+) -> tuple[list[dict], list[dict]]:
+    """Monthly/annual insolvency counts broken down by SIC division (41/42/43)."""
+    divs = list(DIVISION_LABELS.keys())
+
+    monthly = []
+    for month in sorted(by_month_div):
+        row: dict = {"month": month}
+        t = 0
+        for d in divs:
+            v = by_month_div[month].get(d, 0)
+            row[f"div{d}"] = v
+            t += v
+        row["total"] = t
+        monthly.append(row)
+
+    annual = []
+    for year in sorted(by_year_div):
+        row = {"year": int(year)}
+        t = 0
+        for d in divs:
+            v = by_year_div[year].get(d, 0)
+            row[f"div{d}"] = v
+            t += v
+        row["total"] = t
+        annual.append(row)
+
+    return monthly, annual
 
 
 def build_series(
@@ -179,17 +227,50 @@ def build_headline(
     }
 
 
+def build_division_headline(div_monthly: list[dict], div_annual: list[dict]) -> dict:
+    divs = list(DIVISION_LABELS.keys())
+    last_month = div_monthly[-1]
+    ttm_rows = div_monthly[-12:]
+    ttm = {f"div{d}": sum(r.get(f"div{d}", 0) for r in ttm_rows) for d in divs}
+    ttm_total = sum(ttm.values())
+
+    full_annual = [r for r in div_annual if r["year"] < 2026]
+    decade_from = full_annual[0] if full_annual else div_annual[0]
+    decade_to = full_annual[-1] if full_annual else div_annual[-1]
+    decade_change = {}
+    for d in divs:
+        k = f"div{d}"
+        f0, f1 = decade_from.get(k, 0), decade_to.get(k, 0)
+        decade_change[k] = round((f1 - f0) / f0 * 100, 1) if f0 else None
+
+    return {
+        "last_month": last_month["month"],
+        "last_month_by_division": {f"div{d}": last_month.get(f"div{d}", 0) for d in divs},
+        "ttm_by_division": ttm,
+        "ttm_total": ttm_total,
+        "ttm_share_pct": {
+            k: round(v / ttm_total * 100, 1) if ttm_total else None for k, v in ttm.items()
+        },
+        "decade_from_year": decade_from["year"],
+        "decade_to_year": decade_to["year"],
+        "decade_change_pct_by_division": decade_change,
+    }
+
+
 def main() -> None:
     print("Fetching record-level ZIP from Insolvency Service...")
     zf = fetch_zip(RECORD_LEVEL_ZIP_URL)
 
     print("Parsing Construction (SIC Section F) records...")
-    by_month, by_year = parse_record_level(zf)
+    by_month, by_year, by_month_div, by_year_div = parse_record_level(zf)
 
     print(f"  Months found: {len(by_month)}, Years: {len(by_year)}")
 
     monthly, annual = build_series(by_month, by_year)
     headline = build_headline(monthly, annual)
+
+    div_monthly, div_annual = build_division_series(by_month_div, by_year_div)
+    division_headline = build_division_headline(div_monthly, div_annual)
 
     snapshot = {
         "meta": {
@@ -198,6 +279,7 @@ def main() -> None:
             "coverage": COVERAGE_PERIOD,
             "sic_section": "F",
             "sic_section_label": "Construction",
+            "division_labels": DIVISION_LABELS,
             "procedure_labels": {
                 "cvl": "Creditors Voluntary Liquidation (CVL)",
                 "compulsory": "Compulsory Liquidation",
@@ -245,6 +327,11 @@ def main() -> None:
             "monthly": monthly,
             "annual": annual,
         },
+        "divisions": {
+            "headline": division_headline,
+            "monthly": div_monthly,
+            "annual": div_annual,
+        },
     }
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -260,10 +347,21 @@ def main() -> None:
         assert r["total"] == proc_sum, (
             f"Total mismatch at {r['month']}: {r['total']} != {proc_sum}"
         )
+    # Division breakdown must reconcile against the same monthly totals
+    assert len(div_monthly) == len(monthly), "division monthly series length mismatch"
+    div_by_month = {r["month"]: r for r in div_monthly}
+    for r in monthly:
+        d = div_by_month.get(r["month"])
+        assert d is not None, f"missing division row for {r['month']}"
+        assert d["total"] == r["total"], (
+            f"division total mismatch at {r['month']}: {d['total']} != {r['total']}"
+        )
     print("Self-check passed.")
     print(f"Latest month: {headline['last_settled_month']} -- total {headline['last_month_total']}")
     print(f"TTM total: {headline['ttm_total']}")
     print(f"Peak: {headline['peak_month']} ({headline['peak_total']})")
+    print(f"Division TTM share: {division_headline['ttm_share_pct']}")
+    print(f"Division decade change: {division_headline['decade_change_pct_by_division']}")
 
 
 if __name__ == "__main__":
