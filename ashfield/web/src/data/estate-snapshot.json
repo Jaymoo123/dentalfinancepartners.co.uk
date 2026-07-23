@@ -1,0 +1,3511 @@
+{
+  "assets": [
+    {
+      "brand": "dentists",
+      "finding": "Union at 181 in 2026-06, +74.0% vs 2015-07.",
+      "id": "dentists/dental-company-formation-index",
+      "latest": 181,
+      "licence": "Open Government Licence v3.0",
+      "name": "Dental Company Formation Index",
+      "report_url": "https://www.dentalfinancepartners.co.uk/research/dental-company-formation-index",
+      "series": [
+        {
+          "period": "2015-07",
+          "value": 104
+        },
+        {
+          "period": "2016-01",
+          "value": 60
+        },
+        {
+          "period": "2016-06",
+          "value": 80
+        },
+        {
+          "period": "2016-12",
+          "value": 76
+        },
+        {
+          "period": "2017-06",
+          "value": 95
+        },
+        {
+          "period": "2017-11",
+          "value": 91
+        },
+        {
+          "period": "2018-05",
+          "value": 104
+        },
+        {
+          "period": "2018-11",
+          "value": 103
+        },
+        {
+          "period": "2019-05",
+          "value": 91
+        },
+        {
+          "period": "2019-10",
+          "value": 108
+        },
+        {
+          "period": "2020-04",
+          "value": 53
+        },
+        {
+          "period": "2020-10",
+          "value": 121
+        },
+        {
+          "period": "2021-03",
+          "value": 202
+        },
+        {
+          "period": "2021-09",
+          "value": 118
+        },
+        {
+          "period": "2022-03",
+          "value": 200
+        },
+        {
+          "period": "2022-08",
+          "value": 164
+        },
+        {
+          "period": "2023-02",
+          "value": 165
+        },
+        {
+          "period": "2023-08",
+          "value": 162
+        },
+        {
+          "period": "2024-02",
+          "value": 179
+        },
+        {
+          "period": "2024-07",
+          "value": 198
+        },
+        {
+          "period": "2025-01",
+          "value": 174
+        },
+        {
+          "period": "2025-07",
+          "value": 188
+        },
+        {
+          "period": "2025-12",
+          "value": 148
+        },
+        {
+          "period": "2026-06",
+          "value": 181
+        }
+      ],
+      "source": "Companies House Advanced Search API",
+      "source_url": "https://developer.company-information.service.gov.uk/",
+      "unit": "union"
+    },
+    {
+      "brand": "dentists",
+      "finding": null,
+      "id": "dentists/dental-practice-density",
+      "latest": null,
+      "licence": "Open Government Licence v3.0",
+      "name": "Dental Practice Density",
+      "report_url": "https://www.dentalfinancepartners.co.uk/research/dental-practice-density",
+      "series": [],
+      "source": "CQC Care Directory",
+      "source_url": "https://www.cqc.org.uk/sites/default/files/2026-07/15_July_2026_CQC_directory.csv",
+      "unit": null
+    },
+    {
+      "brand": "dentists",
+      "finding": "Recovery index at 100.3 in 2026-04, -0.8% vs 2016-04.",
+      "id": "dentists/nhs-dental-activity-index",
+      "latest": 100.3,
+      "licence": "Open Government Licence v3.0",
+      "name": "Nhs Dental Activity Index",
+      "report_url": "https://www.dentalfinancepartners.co.uk/research/nhs-dental-activity-index",
+      "series": [
+        {
+          "period": "2016-04",
+          "value": 101.1
+        },
+        {
+          "period": "2016-09",
+          "value": 105.0
+        },
+        {
+          "period": "2017-02",
+          "value": 114.4
+        },
+        {
+          "period": "2017-08",
+          "value": 103.6
+        },
+        {
+          "period": "2018-01",
+          "value": 108.5
+        },
+        {
+          "period": "2018-06",
+          "value": 99.0
+        },
+        {
+          "period": "2018-11",
+          "value": 110.8
+        },
+        {
+          "period": "2019-05",
+          "value": 100.1
+        },
+        {
+          "period": "2019-10",
+          "value": 114.9
+        },
+        {
+          "period": "2020-03",
+          "value": 80.5
+        },
+        {
+          "period": "2020-08",
+          "value": 25.3
+        },
+        {
+          "period": "2021-01",
+          "value": 55.3
+        },
+        {
+          "period": "2021-07",
+          "value": 67.2
+        },
+        {
+          "period": "2021-12",
+          "value": 57.2
+        },
+        {
+          "period": "2022-05",
+          "value": 83.3
+        },
+        {
+          "period": "2022-10",
+          "value": 87.4
+        },
+        {
+          "period": "2023-03",
+          "value": 115.6
+        },
+        {
+          "period": "2023-09",
+          "value": 86.7
+        },
+        {
+          "period": "2024-02",
+          "value": 101.7
+        },
+        {
+          "period": "2024-07",
+          "value": 95.7
+        },
+        {
+          "period": "2024-12",
+          "value": 78.2
+        },
+        {
+          "period": "2025-06",
+          "value": 90.3
+        },
+        {
+          "period": "2025-11",
+          "value": 91.2
+        },
+        {
+          "period": "2026-04",
+          "value": 100.3
+        }
+      ],
+      "source": "English Contractor Monthly General Dental Activity",
+      "source_url": null,
+      "unit": "recovery_index"
+    },
+    {
+      "brand": "dentists",
+      "finding": "Avg net income at 78200 in 2023/24, +53.0% vs 2009/10.",
+      "id": "dentists/nhs-dental-earnings-index",
+      "latest": 78200,
+      "licence": "Open Government Licence v3.0",
+      "name": "Nhs Dental Earnings Index",
+      "report_url": "https://www.dentalfinancepartners.co.uk/research/nhs-dentist-earnings-index",
+      "series": [
+        {
+          "period": "2009/10",
+          "value": 51100
+        },
+        {
+          "period": "2010/11",
+          "value": 52800
+        },
+        {
+          "period": "2011/12",
+          "value": 54500
+        },
+        {
+          "period": "2012/13",
+          "value": 56400
+        },
+        {
+          "period": "2013/14",
+          "value": 56800
+        },
+        {
+          "period": "2014/15",
+          "value": 57300
+        },
+        {
+          "period": "2015/16",
+          "value": 57700
+        },
+        {
+          "period": "2016/17",
+          "value": 57600
+        },
+        {
+          "period": "2017/18",
+          "value": 58400
+        },
+        {
+          "period": "2018/19",
+          "value": 59400
+        },
+        {
+          "period": "2019/20",
+          "value": 59300
+        },
+        {
+          "period": "2020/21",
+          "value": 61400
+        },
+        {
+          "period": "2021/22",
+          "value": 68100
+        },
+        {
+          "period": "2022/23",
+          "value": 71300
+        },
+        {
+          "period": "2023/24",
+          "value": 78200
+        }
+      ],
+      "source": "Dental Earnings and Expenses Estimates, 2023/24 (CSV)",
+      "source_url": "https://files.digital.nhs.uk/DB/6E7A10/dentearexp_202324_csv.csv",
+      "unit": "avg_net_income"
+    },
+    {
+      "brand": "medical",
+      "finding": null,
+      "id": "medical/nhs-aa-index",
+      "latest": null,
+      "licence": "OGL v3.0",
+      "name": "Nhs Aa Index",
+      "report_url": "https://www.medicalaccounts.co.uk/research/annual-allowance-pension-tax-index",
+      "series": [],
+      "source": "Private pension statistics (Table 7, annual allowance)",
+      "source_url": "https://www.gov.uk/government/statistics/personal-and-stakeholder-pensions-statistics",
+      "unit": null
+    },
+    {
+      "brand": "property",
+      "finding": "Union at 6371 in 2026-05, +205.0% vs 2015-06.",
+      "id": "property/landlord-tax-index",
+      "latest": 6371,
+      "licence": null,
+      "name": "Landlord Tax Index",
+      "report_url": "https://www.propertytaxpartners.co.uk/research/landlord-tax-index",
+      "series": [
+        {
+          "period": "2015-06",
+          "value": 2089
+        },
+        {
+          "period": "2015-12",
+          "value": 2137
+        },
+        {
+          "period": "2016-05",
+          "value": 2467
+        },
+        {
+          "period": "2016-11",
+          "value": 3335
+        },
+        {
+          "period": "2017-05",
+          "value": 3846
+        },
+        {
+          "period": "2017-10",
+          "value": 3926
+        },
+        {
+          "period": "2018-04",
+          "value": 3839
+        },
+        {
+          "period": "2018-10",
+          "value": 4321
+        },
+        {
+          "period": "2019-04",
+          "value": 4440
+        },
+        {
+          "period": "2019-09",
+          "value": 4556
+        },
+        {
+          "period": "2020-03",
+          "value": 4631
+        },
+        {
+          "period": "2020-09",
+          "value": 6410
+        },
+        {
+          "period": "2021-02",
+          "value": 6763
+        },
+        {
+          "period": "2021-08",
+          "value": 5077
+        },
+        {
+          "period": "2022-02",
+          "value": 6687
+        },
+        {
+          "period": "2022-07",
+          "value": 5920
+        },
+        {
+          "period": "2023-01",
+          "value": 5709
+        },
+        {
+          "period": "2023-07",
+          "value": 5840
+        },
+        {
+          "period": "2024-01",
+          "value": 7609
+        },
+        {
+          "period": "2024-06",
+          "value": 7017
+        },
+        {
+          "period": "2024-12",
+          "value": 5691
+        },
+        {
+          "period": "2025-06",
+          "value": 8220
+        },
+        {
+          "period": "2025-11",
+          "value": 6781
+        },
+        {
+          "period": "2026-05",
+          "value": 6371
+        }
+      ],
+      "source": "Companies House Advanced Search API",
+      "source_url": "https://developer.company-information.service.gov.uk/",
+      "unit": "union"
+    },
+    {
+      "brand": "solicitors",
+      "finding": "Sic 691 1yr pct at 96.82 in 2023, +0.6% vs 2019.",
+      "id": "solicitors/legal-survival-index",
+      "latest": 96.82,
+      "licence": "Open Government Licence v3.0",
+      "name": "Legal Survival Index",
+      "report_url": "https://www.accountsforlawyers.co.uk/research/law-firm-survival-index",
+      "series": [
+        {
+          "period": "2019",
+          "value": 96.21
+        },
+        {
+          "period": "2020",
+          "value": 95.92
+        },
+        {
+          "period": "2021",
+          "value": 96.35
+        },
+        {
+          "period": "2022",
+          "value": 96.34
+        },
+        {
+          "period": "2023",
+          "value": 96.82
+        }
+      ],
+      "source": null,
+      "source_url": "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable",
+      "unit": "sic_691_1yr_pct"
+    },
+    {
+      "brand": "solicitors",
+      "finding": null,
+      "id": "solicitors/sra-profession-structure",
+      "latest": null,
+      "licence": "SRA custom licence -- aggregate statistics only; no named-firm data",
+      "name": "UK Solicitor Profession Structure",
+      "report_url": "https://www.accountsforlawyers.co.uk/research/uk-solicitor-profession-structure",
+      "series": [],
+      "source": "SRA Regulated Community Statistics: Solicitor Firms and Individuals",
+      "source_url": "https://www.sra.org.uk/sra/research-publications/regulated-community-statistics/",
+      "unit": null
+    },
+    {
+      "brand": "solicitors",
+      "finding": "Total at 217 in 2026-06, +12.4% vs 2015-01.",
+      "id": "solicitors/uk-legal-incorporation-index",
+      "latest": 217,
+      "licence": "Open Government Licence v3.0",
+      "name": "Uk Legal Incorporation Index",
+      "report_url": "https://www.accountsforlawyers.co.uk/research/uk-legal-incorporation-index",
+      "series": [
+        {
+          "period": "2015-01",
+          "value": 193
+        },
+        {
+          "period": "2015-07",
+          "value": 200
+        },
+        {
+          "period": "2016-01",
+          "value": 166
+        },
+        {
+          "period": "2016-07",
+          "value": 198
+        },
+        {
+          "period": "2017-01",
+          "value": 240
+        },
+        {
+          "period": "2017-07",
+          "value": 190
+        },
+        {
+          "period": "2018-01",
+          "value": 206
+        },
+        {
+          "period": "2018-07",
+          "value": 218
+        },
+        {
+          "period": "2019-01",
+          "value": 214
+        },
+        {
+          "period": "2019-07",
+          "value": 227
+        },
+        {
+          "period": "2020-01",
+          "value": 218
+        },
+        {
+          "period": "2020-07",
+          "value": 253
+        },
+        {
+          "period": "2020-12",
+          "value": 218
+        },
+        {
+          "period": "2021-06",
+          "value": 219
+        },
+        {
+          "period": "2021-12",
+          "value": 172
+        },
+        {
+          "period": "2022-06",
+          "value": 181
+        },
+        {
+          "period": "2022-12",
+          "value": 145
+        },
+        {
+          "period": "2023-06",
+          "value": 181
+        },
+        {
+          "period": "2023-12",
+          "value": 166
+        },
+        {
+          "period": "2024-06",
+          "value": 174
+        },
+        {
+          "period": "2024-12",
+          "value": 163
+        },
+        {
+          "period": "2025-06",
+          "value": 201
+        },
+        {
+          "period": "2025-12",
+          "value": 137
+        },
+        {
+          "period": "2026-06",
+          "value": 217
+        }
+      ],
+      "source": "Companies House Advanced Search API",
+      "source_url": "https://api.company-information.service.gov.uk/advanced-search/companies",
+      "unit": "total"
+    },
+    {
+      "brand": "care",
+      "finding": "Survival pct at 58.8 in 5, -41.2% vs 0.",
+      "id": "care/uk-care-business-survival-index",
+      "latest": 58.8,
+      "licence": "Open Government Licence v3.0",
+      "name": "UK Care Business Survival Index",
+      "report_url": "https://www.carehometax.co.uk/research/uk-care-business-survival-index",
+      "series": [
+        {
+          "period": "0",
+          "value": 100.0
+        },
+        {
+          "period": "1",
+          "value": 96.3
+        },
+        {
+          "period": "2",
+          "value": 83.4
+        },
+        {
+          "period": "3",
+          "value": 72.5
+        },
+        {
+          "period": "4",
+          "value": 64.4
+        },
+        {
+          "period": "5",
+          "value": 58.8
+        }
+      ],
+      "source": "Business Demography 2024 reference tables",
+      "source_url": "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable",
+      "unit": "survival_pct"
+    },
+    {
+      "brand": "care",
+      "finding": "Union at 1023 in 2026-06, +96.0% vs 2015-07.",
+      "id": "care/uk-care-company-formation-index",
+      "latest": 1023,
+      "licence": "Open Government Licence v3.0",
+      "name": "Uk Care Company Formation Index",
+      "report_url": "https://www.carehometax.co.uk/research/uk-care-density-quality-index",
+      "series": [
+        {
+          "period": "2015-07",
+          "value": 522
+        },
+        {
+          "period": "2016-01",
+          "value": 442
+        },
+        {
+          "period": "2016-06",
+          "value": 515
+        },
+        {
+          "period": "2016-12",
+          "value": 497
+        },
+        {
+          "period": "2017-06",
+          "value": 446
+        },
+        {
+          "period": "2017-11",
+          "value": 652
+        },
+        {
+          "period": "2018-05",
+          "value": 733
+        },
+        {
+          "period": "2018-11",
+          "value": 804
+        },
+        {
+          "period": "2019-05",
+          "value": 847
+        },
+        {
+          "period": "2019-10",
+          "value": 943
+        },
+        {
+          "period": "2020-04",
+          "value": 737
+        },
+        {
+          "period": "2020-10",
+          "value": 1090
+        },
+        {
+          "period": "2021-03",
+          "value": 989
+        },
+        {
+          "period": "2021-09",
+          "value": 892
+        },
+        {
+          "period": "2022-03",
+          "value": 1325
+        },
+        {
+          "period": "2022-08",
+          "value": 1160
+        },
+        {
+          "period": "2023-02",
+          "value": 1318
+        },
+        {
+          "period": "2023-08",
+          "value": 1181
+        },
+        {
+          "period": "2024-02",
+          "value": 1093
+        },
+        {
+          "period": "2024-07",
+          "value": 851
+        },
+        {
+          "period": "2025-01",
+          "value": 944
+        },
+        {
+          "period": "2025-07",
+          "value": 1064
+        },
+        {
+          "period": "2025-12",
+          "value": 842
+        },
+        {
+          "period": "2026-06",
+          "value": 1023
+        }
+      ],
+      "source": "Companies House Advanced Search API",
+      "source_url": "https://developer.company-information.service.gov.uk/",
+      "unit": "union"
+    },
+    {
+      "brand": "care",
+      "finding": null,
+      "id": "care/uk-care-density-quality-index",
+      "latest": null,
+      "licence": "Open Government Licence v3.0",
+      "name": "UK Care Home Density & Quality Index",
+      "report_url": "https://www.carehometax.co.uk/research/uk-care-density-quality-index",
+      "series": [],
+      "source": "CQC HSCA Active Locations (directory with filters and ratings)",
+      "source_url": "https://www.cqc.org.uk/about-us/transparency/using-cqc-data",
+      "unit": null
+    },
+    {
+      "brand": "care",
+      "finding": null,
+      "id": "care/uk-care-provider-business-index",
+      "latest": null,
+      "licence": "Open Government Licence v3.0",
+      "name": "UK Care Provider Business Index",
+      "report_url": "https://www.carehometax.co.uk/research/care-provider-business-index",
+      "series": [],
+      "source": "Companies House Advanced Search API",
+      "source_url": "https://developer.company-information.service.gov.uk/api/docs/",
+      "unit": null
+    },
+    {
+      "brand": "charities",
+      "finding": null,
+      "id": "charities/charity-cause-income",
+      "latest": null,
+      "licence": "Open Government Licence v3.0",
+      "name": "UK Charity Cause Income and Reserves Health Index",
+      "report_url": "https://www.trusteetax.co.uk/research/uk-charity-cause-income",
+      "series": [],
+      "source": "Charity Commission full register extract (OGL v3.0)",
+      "source_url": "https://register-of-charities.charitycommission.gov.uk/en/register/full-register-download",
+      "unit": null
+    },
+    {
+      "brand": "charities",
+      "finding": null,
+      "id": "charities/charity-scrutiny-cliff",
+      "latest": null,
+      "licence": "Open Government Licence v3.0",
+      "name": "UK Charity Scrutiny Cliff-Edge Monitor",
+      "report_url": "https://www.trusteetax.co.uk/research/uk-charity-scrutiny-cliff",
+      "series": [],
+      "source": "Charity Commission full register extract (OGL v3.0)",
+      "source_url": "https://register-of-charities.charitycommission.gov.uk/en/register/full-register-download",
+      "unit": null
+    },
+    {
+      "brand": "charities",
+      "finding": "Survival rate pct at 81.9 in 2016, +134.7% vs 1980.",
+      "id": "charities/charity-survival-index",
+      "latest": 81.9,
+      "licence": "Open Government Licence v3.0",
+      "name": "UK Charity Survival and Longevity Index",
+      "report_url": "https://www.trusteetax.co.uk/research/uk-charity-survival-index",
+      "series": [
+        {
+          "period": "1980",
+          "value": 34.9
+        },
+        {
+          "period": "1982",
+          "value": 33.6
+        },
+        {
+          "period": "1983",
+          "value": 33.0
+        },
+        {
+          "period": "1985",
+          "value": 33.8
+        },
+        {
+          "period": "1986",
+          "value": 34.3
+        },
+        {
+          "period": "1988",
+          "value": 35.4
+        },
+        {
+          "period": "1989",
+          "value": 34.0
+        },
+        {
+          "period": "1991",
+          "value": 33.9
+        },
+        {
+          "period": "1993",
+          "value": 30.5
+        },
+        {
+          "period": "1994",
+          "value": 32.9
+        },
+        {
+          "period": "1996",
+          "value": 37.9
+        },
+        {
+          "period": "1997",
+          "value": 34.0
+        },
+        {
+          "period": "1999",
+          "value": 44.0
+        },
+        {
+          "period": "2000",
+          "value": 42.5
+        },
+        {
+          "period": "2002",
+          "value": 48.1
+        },
+        {
+          "period": "2003",
+          "value": 49.1
+        },
+        {
+          "period": "2005",
+          "value": 53.4
+        },
+        {
+          "period": "2007",
+          "value": 56.4
+        },
+        {
+          "period": "2008",
+          "value": 59.8
+        },
+        {
+          "period": "2010",
+          "value": 68.3
+        },
+        {
+          "period": "2011",
+          "value": 65.9
+        },
+        {
+          "period": "2013",
+          "value": 71.6
+        },
+        {
+          "period": "2014",
+          "value": 76.4
+        },
+        {
+          "period": "2016",
+          "value": 81.9
+        }
+      ],
+      "source": "Charity Commission full register extract (OGL v3.0)",
+      "source_url": "https://register-of-charities.charitycommission.gov.uk/en/register/full-register-download",
+      "unit": "survival_rate_pct"
+    },
+    {
+      "brand": "charities",
+      "finding": "Net at 495 in 2025, -74.1% vs 2016.",
+      "id": "charities/uk-small-charity-finance-index",
+      "latest": 495,
+      "licence": "Open Government Licence v3.0",
+      "name": "UK Small Charity Finance Index",
+      "report_url": "https://www.trusteetax.co.uk/research/uk-small-charity-finance-index",
+      "series": [
+        {
+          "period": "2016",
+          "value": 1910
+        },
+        {
+          "period": "2017",
+          "value": 1352
+        },
+        {
+          "period": "2018",
+          "value": -27
+        },
+        {
+          "period": "2019",
+          "value": -31
+        },
+        {
+          "period": "2020",
+          "value": 1902
+        },
+        {
+          "period": "2021",
+          "value": 711
+        },
+        {
+          "period": "2022",
+          "value": -1519
+        },
+        {
+          "period": "2023",
+          "value": 589
+        },
+        {
+          "period": "2024",
+          "value": 1067
+        },
+        {
+          "period": "2025",
+          "value": 495
+        }
+      ],
+      "source": "Charity Commission full register extract (charity table, daily)",
+      "source_url": "https://register-of-charities.charitycommission.gov.uk/en/register/full-register-download",
+      "unit": "net"
+    },
+    {
+      "brand": "construction-cis",
+      "finding": "Total at 302 in 2026-05, +30.7% vs 2016-01.",
+      "id": "construction-cis/construction-insolvency-index",
+      "latest": 302,
+      "licence": "Open Government Licence v3.0",
+      "name": "Construction Insolvency Index",
+      "report_url": "https://www.tradetaxspecialists.co.uk/research/uk-construction-insolvency-index",
+      "series": [
+        {
+          "period": "2016-01",
+          "value": 231
+        },
+        {
+          "period": "2016-06",
+          "value": 245
+        },
+        {
+          "period": "2016-12",
+          "value": 229
+        },
+        {
+          "period": "2017-05",
+          "value": 220
+        },
+        {
+          "period": "2017-11",
+          "value": 241
+        },
+        {
+          "period": "2018-04",
+          "value": 261
+        },
+        {
+          "period": "2018-09",
+          "value": 288
+        },
+        {
+          "period": "2019-03",
+          "value": 332
+        },
+        {
+          "period": "2019-08",
+          "value": 275
+        },
+        {
+          "period": "2020-02",
+          "value": 281
+        },
+        {
+          "period": "2020-07",
+          "value": 163
+        },
+        {
+          "period": "2020-12",
+          "value": 200
+        },
+        {
+          "period": "2021-06",
+          "value": 265
+        },
+        {
+          "period": "2021-11",
+          "value": 348
+        },
+        {
+          "period": "2022-04",
+          "value": 408
+        },
+        {
+          "period": "2022-10",
+          "value": 365
+        },
+        {
+          "period": "2023-03",
+          "value": 462
+        },
+        {
+          "period": "2023-09",
+          "value": 358
+        },
+        {
+          "period": "2024-02",
+          "value": 379
+        },
+        {
+          "period": "2024-07",
+          "value": 370
+        },
+        {
+          "period": "2025-01",
+          "value": 319
+        },
+        {
+          "period": "2025-06",
+          "value": 353
+        },
+        {
+          "period": "2025-12",
+          "value": 285
+        },
+        {
+          "period": "2026-05",
+          "value": 302
+        }
+      ],
+      "source": "Company Insolvency Statistics -- Record-Level Data",
+      "source_url": "https://assets.publishing.service.gov.uk/media/6a315c2245124bc4cb61e1d9/Record-level_data_for_England_Wales_and_Scotland_-_Company_Insolvency_Statistics_May_2026.zip",
+      "unit": "total"
+    },
+    {
+      "brand": "construction-cis",
+      "finding": "Union net at 1341 in 2025, -95.6% vs 2016.",
+      "id": "construction-cis/construction-net-formation-index",
+      "latest": 1341,
+      "licence": "Open Government Licence v3.0",
+      "name": "Construction Net Formation Index",
+      "report_url": "https://www.tradetaxspecialists.co.uk/research/uk-construction-index",
+      "series": [
+        {
+          "period": "2016",
+          "value": 30361
+        },
+        {
+          "period": "2017",
+          "value": 34409
+        },
+        {
+          "period": "2018",
+          "value": 25905
+        },
+        {
+          "period": "2019",
+          "value": 22955
+        },
+        {
+          "period": "2020",
+          "value": 42746
+        },
+        {
+          "period": "2021",
+          "value": 20764
+        },
+        {
+          "period": "2022",
+          "value": 26656
+        },
+        {
+          "period": "2023",
+          "value": 15466
+        },
+        {
+          "period": "2024",
+          "value": 8913
+        },
+        {
+          "period": "2025",
+          "value": 1341
+        }
+      ],
+      "source": "Companies House Advanced Search API",
+      "source_url": "https://developer.company-information.service.gov.uk/",
+      "unit": "union_net"
+    },
+    {
+      "brand": "construction-cis",
+      "finding": null,
+      "id": "construction-cis/construction-ppr-league",
+      "latest": null,
+      "licence": "Statutory public disclosure (Reporting on Payment Practices and Performance Regulations 2017)",
+      "name": "Construction Ppr League",
+      "report_url": "https://www.tradetaxspecialists.co.uk/research/uk-construction-payment-practices-league",
+      "series": [],
+      "source": "Payment Practices Reporting -- full CSV export",
+      "source_url": "https://check-payment-practices.service.gov.uk/export/csv/",
+      "unit": null
+    },
+    {
+      "brand": "construction-cis",
+      "finding": "Construction.y1 pct at 93.5 in 2023, -0.2% vs 2019.",
+      "id": "construction-cis/construction-survival-index",
+      "latest": 93.5,
+      "licence": "Open Government Licence v3.0",
+      "name": "Construction Survival Index",
+      "report_url": "https://www.tradetaxspecialists.co.uk/research/uk-construction-survival-index",
+      "series": [
+        {
+          "period": "2019",
+          "value": 93.7
+        },
+        {
+          "period": "2020",
+          "value": 93.7
+        },
+        {
+          "period": "2021",
+          "value": 94.3
+        },
+        {
+          "period": "2022",
+          "value": 93.5
+        },
+        {
+          "period": "2023",
+          "value": 93.5
+        }
+      ],
+      "source": "Business Demography, UK -- Table 4.2 (Survival of newly born enterprises, broad industry group)",
+      "source_url": "https://www.ons.gov.uk/file?uri=/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable/current/businessdemographyexceltables2024.xlsx",
+      "unit": "construction.y1_pct"
+    },
+    {
+      "brand": "construction-cis",
+      "finding": "Union at 5407 in 2026-06, +39.4% vs 2015-07.",
+      "id": "construction-cis/uk-construction-index",
+      "latest": 5407,
+      "licence": "Open Government Licence v3.0",
+      "name": "Uk Construction Index",
+      "report_url": "https://www.tradetaxspecialists.co.uk/research/uk-construction-index",
+      "series": [
+        {
+          "period": "2015-07",
+          "value": 3880
+        },
+        {
+          "period": "2016-01",
+          "value": 3465
+        },
+        {
+          "period": "2016-06",
+          "value": 3777
+        },
+        {
+          "period": "2016-12",
+          "value": 3572
+        },
+        {
+          "period": "2017-06",
+          "value": 4804
+        },
+        {
+          "period": "2017-11",
+          "value": 5112
+        },
+        {
+          "period": "2018-05",
+          "value": 5894
+        },
+        {
+          "period": "2018-11",
+          "value": 5566
+        },
+        {
+          "period": "2019-05",
+          "value": 6116
+        },
+        {
+          "period": "2019-10",
+          "value": 6242
+        },
+        {
+          "period": "2020-04",
+          "value": 3186
+        },
+        {
+          "period": "2020-10",
+          "value": 7978
+        },
+        {
+          "period": "2021-03",
+          "value": 7920
+        },
+        {
+          "period": "2021-09",
+          "value": 6160
+        },
+        {
+          "period": "2022-03",
+          "value": 7875
+        },
+        {
+          "period": "2022-08",
+          "value": 6772
+        },
+        {
+          "period": "2023-02",
+          "value": 6858
+        },
+        {
+          "period": "2023-08",
+          "value": 6131
+        },
+        {
+          "period": "2024-02",
+          "value": 7796
+        },
+        {
+          "period": "2024-07",
+          "value": 5586
+        },
+        {
+          "period": "2025-01",
+          "value": 5996
+        },
+        {
+          "period": "2025-07",
+          "value": 5750
+        },
+        {
+          "period": "2025-12",
+          "value": 3662
+        },
+        {
+          "period": "2026-06",
+          "value": 5407
+        }
+      ],
+      "source": "Companies House Advanced Search API",
+      "source_url": "https://developer.company-information.service.gov.uk/",
+      "unit": "union"
+    },
+    {
+      "brand": "contractors-ir35",
+      "finding": "Union at 12088 in 2026-06, +86.3% vs 2015-07.",
+      "id": "contractors-ir35/uk-contractor-index",
+      "latest": 12088,
+      "licence": "Open Government Licence v3.0",
+      "name": "Uk Contractor Index",
+      "report_url": "https://www.contractortaxaccountants.co.uk/research/uk-contractor-index",
+      "series": [
+        {
+          "period": "2015-07",
+          "value": 6489
+        },
+        {
+          "period": "2016-01",
+          "value": 5829
+        },
+        {
+          "period": "2016-06",
+          "value": 6240
+        },
+        {
+          "period": "2016-12",
+          "value": 5824
+        },
+        {
+          "period": "2017-06",
+          "value": 7261
+        },
+        {
+          "period": "2017-11",
+          "value": 7917
+        },
+        {
+          "period": "2018-05",
+          "value": 9248
+        },
+        {
+          "period": "2018-11",
+          "value": 8935
+        },
+        {
+          "period": "2019-05",
+          "value": 8893
+        },
+        {
+          "period": "2019-10",
+          "value": 9145
+        },
+        {
+          "period": "2020-04",
+          "value": 6659
+        },
+        {
+          "period": "2020-10",
+          "value": 10353
+        },
+        {
+          "period": "2021-03",
+          "value": 9207
+        },
+        {
+          "period": "2021-09",
+          "value": 7895
+        },
+        {
+          "period": "2022-03",
+          "value": 9372
+        },
+        {
+          "period": "2022-08",
+          "value": 8809
+        },
+        {
+          "period": "2023-02",
+          "value": 9585
+        },
+        {
+          "period": "2023-08",
+          "value": 10446
+        },
+        {
+          "period": "2024-02",
+          "value": 11130
+        },
+        {
+          "period": "2024-07",
+          "value": 9161
+        },
+        {
+          "period": "2025-01",
+          "value": 10508
+        },
+        {
+          "period": "2025-07",
+          "value": 12150
+        },
+        {
+          "period": "2025-12",
+          "value": 9318
+        },
+        {
+          "period": "2026-06",
+          "value": 12088
+        }
+      ],
+      "source": "Companies House Advanced Search API",
+      "source_url": "https://developer.company-information.service.gov.uk/",
+      "unit": "union"
+    },
+    {
+      "brand": "contractors-ir35",
+      "finding": "Total at 152 in 2026-06, +68.9% vs 2016-01.",
+      "id": "contractors-ir35/uk-contractor-insolvency-index",
+      "latest": 152,
+      "licence": "Open Government Licence v3.0",
+      "name": "Uk Contractor Insolvency Index",
+      "report_url": "https://www.contractortaxaccountants.co.uk/research/uk-contractor-insolvency-index",
+      "series": [
+        {
+          "period": "2016-01",
+          "value": 90
+        },
+        {
+          "period": "2016-06",
+          "value": 105
+        },
+        {
+          "period": "2016-12",
+          "value": 103
+        },
+        {
+          "period": "2017-05",
+          "value": 89
+        },
+        {
+          "period": "2017-11",
+          "value": 119
+        },
+        {
+          "period": "2018-04",
+          "value": 97
+        },
+        {
+          "period": "2018-10",
+          "value": 128
+        },
+        {
+          "period": "2019-03",
+          "value": 111
+        },
+        {
+          "period": "2019-08",
+          "value": 116
+        },
+        {
+          "period": "2020-02",
+          "value": 98
+        },
+        {
+          "period": "2020-07",
+          "value": 85
+        },
+        {
+          "period": "2021-01",
+          "value": 79
+        },
+        {
+          "period": "2021-06",
+          "value": 143
+        },
+        {
+          "period": "2021-12",
+          "value": 144
+        },
+        {
+          "period": "2022-05",
+          "value": 172
+        },
+        {
+          "period": "2022-11",
+          "value": 160
+        },
+        {
+          "period": "2023-04",
+          "value": 150
+        },
+        {
+          "period": "2023-09",
+          "value": 179
+        },
+        {
+          "period": "2024-03",
+          "value": 182
+        },
+        {
+          "period": "2024-08",
+          "value": 167
+        },
+        {
+          "period": "2025-02",
+          "value": 158
+        },
+        {
+          "period": "2025-07",
+          "value": 224
+        },
+        {
+          "period": "2026-01",
+          "value": 136
+        },
+        {
+          "period": "2026-06",
+          "value": 152
+        }
+      ],
+      "source": "Company Insolvency Statistics -- Record-Level Data",
+      "source_url": "https://assets.publishing.service.gov.uk/media/6a57978e31fb6daf3141374c/Record-level_data_for_England_Wales_and_Scotland_-_Company_Insolvency_Statistics_June_2026.zip",
+      "unit": "total"
+    },
+    {
+      "brand": "contractors-ir35",
+      "finding": "Contractor.y1 pct at 95.2 in 2023, -0.8% vs 2019.",
+      "id": "contractors-ir35/uk-contractor-survival-index",
+      "latest": 95.2,
+      "licence": "Open Government Licence v3.0",
+      "name": "UK Contractor Survival Index",
+      "report_url": "https://www.contractortaxaccountants.co.uk/research/uk-contractor-survival-index",
+      "series": [
+        {
+          "period": "2019",
+          "value": 96.0
+        },
+        {
+          "period": "2020",
+          "value": 94.5
+        },
+        {
+          "period": "2021",
+          "value": 95.1
+        },
+        {
+          "period": "2022",
+          "value": 95.0
+        },
+        {
+          "period": "2023",
+          "value": 95.2
+        }
+      ],
+      "source": "Business Demography 2024 reference tables (Table 5.2a-5.2e)",
+      "source_url": "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable",
+      "unit": "contractor.y1_pct"
+    },
+    {
+      "brand": "crypto",
+      "finding": null,
+      "id": "crypto/uk-crypto-tax-gap-index",
+      "latest": null,
+      "licence": null,
+      "name": "UK Crypto Tax Compliance Index",
+      "report_url": "https://www.cryptotaxpartners.co.uk/research/crypto-tax-gap-index",
+      "series": [],
+      "source": null,
+      "source_url": null,
+      "unit": null
+    },
+    {
+      "brand": "agency-founder-finance",
+      "finding": "Union at 7137 in 2026-06, +149.9% vs 2015-07.",
+      "id": "agency-founder-finance/uk-agency-formation-index",
+      "latest": 7137,
+      "licence": "Open Government Licence v3.0",
+      "name": "Uk Agency Formation Index",
+      "report_url": "https://www.agencyfounderfinance.co.uk/research/uk-agency-formation-index",
+      "series": [
+        {
+          "period": "2015-07",
+          "value": 2856
+        },
+        {
+          "period": "2016-01",
+          "value": 2643
+        },
+        {
+          "period": "2016-06",
+          "value": 2796
+        },
+        {
+          "period": "2016-12",
+          "value": 2677
+        },
+        {
+          "period": "2017-06",
+          "value": 3252
+        },
+        {
+          "period": "2017-11",
+          "value": 3561
+        },
+        {
+          "period": "2018-05",
+          "value": 4283
+        },
+        {
+          "period": "2018-11",
+          "value": 4125
+        },
+        {
+          "period": "2019-05",
+          "value": 4104
+        },
+        {
+          "period": "2019-10",
+          "value": 4204
+        },
+        {
+          "period": "2020-04",
+          "value": 3257
+        },
+        {
+          "period": "2020-10",
+          "value": 4841
+        },
+        {
+          "period": "2021-03",
+          "value": 4529
+        },
+        {
+          "period": "2021-09",
+          "value": 3783
+        },
+        {
+          "period": "2022-03",
+          "value": 4633
+        },
+        {
+          "period": "2022-08",
+          "value": 4490
+        },
+        {
+          "period": "2023-02",
+          "value": 5109
+        },
+        {
+          "period": "2023-08",
+          "value": 5846
+        },
+        {
+          "period": "2024-02",
+          "value": 6039
+        },
+        {
+          "period": "2024-07",
+          "value": 4770
+        },
+        {
+          "period": "2025-01",
+          "value": 5655
+        },
+        {
+          "period": "2025-07",
+          "value": 6934
+        },
+        {
+          "period": "2025-12",
+          "value": 5225
+        },
+        {
+          "period": "2026-06",
+          "value": 7137
+        }
+      ],
+      "source": "Companies House Advanced Search API",
+      "source_url": "https://developer.company-information.service.gov.uk/",
+      "unit": "union"
+    },
+    {
+      "brand": "agency-founder-finance",
+      "finding": "Captured total at 2079 in 2026-06, +55.3% vs 2016-01.",
+      "id": "agency-founder-finance/uk-agency-insolvency-index",
+      "latest": 2079,
+      "licence": "Open Government Licence v3.0",
+      "name": "Uk Agency Insolvency Index",
+      "report_url": "https://www.agencyfounderfinance.co.uk/research/uk-agency-insolvency-index",
+      "series": [
+        {
+          "period": "2016-01",
+          "value": 1339
+        },
+        {
+          "period": "2016-06",
+          "value": 1418
+        },
+        {
+          "period": "2016-12",
+          "value": 2984
+        },
+        {
+          "period": "2017-05",
+          "value": 1194
+        },
+        {
+          "period": "2017-11",
+          "value": 1786
+        },
+        {
+          "period": "2018-04",
+          "value": 1324
+        },
+        {
+          "period": "2018-10",
+          "value": 1463
+        },
+        {
+          "period": "2019-03",
+          "value": 1719
+        },
+        {
+          "period": "2019-08",
+          "value": 1486
+        },
+        {
+          "period": "2020-02",
+          "value": 1475
+        },
+        {
+          "period": "2020-07",
+          "value": 1059
+        },
+        {
+          "period": "2021-01",
+          "value": 835
+        },
+        {
+          "period": "2021-06",
+          "value": 1331
+        },
+        {
+          "period": "2021-12",
+          "value": 1609
+        },
+        {
+          "period": "2022-05",
+          "value": 1940
+        },
+        {
+          "period": "2022-11",
+          "value": 2170
+        },
+        {
+          "period": "2023-04",
+          "value": 1807
+        },
+        {
+          "period": "2023-09",
+          "value": 2068
+        },
+        {
+          "period": "2024-03",
+          "value": 1921
+        },
+        {
+          "period": "2024-08",
+          "value": 2028
+        },
+        {
+          "period": "2025-02",
+          "value": 2003
+        },
+        {
+          "period": "2025-07",
+          "value": 2328
+        },
+        {
+          "period": "2026-01",
+          "value": 1702
+        },
+        {
+          "period": "2026-06",
+          "value": 2079
+        }
+      ],
+      "source": "Company Insolvency Statistics -- Record-Level Data",
+      "source_url": "https://assets.publishing.service.gov.uk/media/6a57978e31fb6daf3141374c/Record-level_data_for_England_Wales_and_Scotland_-_Company_Insolvency_Statistics_June_2026.zip",
+      "unit": "captured_total"
+    },
+    {
+      "brand": "agency-founder-finance",
+      "finding": "Advertising.y1 pct at 93.7 in 2023, -2.2% vs 2019.",
+      "id": "agency-founder-finance/uk-agency-survival-churn-index",
+      "latest": 93.7,
+      "licence": "Open Government Licence v3.0",
+      "name": "UK Agency Survival & Churn Index",
+      "report_url": "https://www.agencyfounderfinance.co.uk/research/uk-agency-survival-churn-index",
+      "series": [
+        {
+          "period": "2019",
+          "value": 95.8
+        },
+        {
+          "period": "2020",
+          "value": 95.0
+        },
+        {
+          "period": "2021",
+          "value": 94.2
+        },
+        {
+          "period": "2022",
+          "value": 93.8
+        },
+        {
+          "period": "2023",
+          "value": 93.7
+        }
+      ],
+      "source": "Business Demography 2024 reference tables (Tables 5.2a-5.2e)",
+      "source_url": "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable",
+      "unit": "advertising.y1_pct"
+    },
+    {
+      "brand": "ecommerce",
+      "finding": "Union at 6478 in 2026-06, +617.4% vs 2015-07.",
+      "id": "ecommerce/online-seller-formation-seasonality",
+      "latest": 6478,
+      "licence": "Open Government Licence v3.0",
+      "name": "Online Seller Formation Seasonality",
+      "report_url": "https://www.ecommercefinance.co.uk/research/online-seller-index",
+      "series": [
+        {
+          "period": "2015-07",
+          "value": 903
+        },
+        {
+          "period": "2016-01",
+          "value": 1053
+        },
+        {
+          "period": "2016-06",
+          "value": 1071
+        },
+        {
+          "period": "2016-12",
+          "value": 1095
+        },
+        {
+          "period": "2017-06",
+          "value": 1607
+        },
+        {
+          "period": "2017-11",
+          "value": 1808
+        },
+        {
+          "period": "2018-05",
+          "value": 2261
+        },
+        {
+          "period": "2018-11",
+          "value": 2121
+        },
+        {
+          "period": "2019-05",
+          "value": 2483
+        },
+        {
+          "period": "2019-10",
+          "value": 2576
+        },
+        {
+          "period": "2020-04",
+          "value": 3333
+        },
+        {
+          "period": "2020-10",
+          "value": 5496
+        },
+        {
+          "period": "2021-03",
+          "value": 6742
+        },
+        {
+          "period": "2021-09",
+          "value": 4992
+        },
+        {
+          "period": "2022-03",
+          "value": 6486
+        },
+        {
+          "period": "2022-08",
+          "value": 6921
+        },
+        {
+          "period": "2023-02",
+          "value": 6945
+        },
+        {
+          "period": "2023-08",
+          "value": 9213
+        },
+        {
+          "period": "2024-02",
+          "value": 8434
+        },
+        {
+          "period": "2024-07",
+          "value": 6718
+        },
+        {
+          "period": "2025-01",
+          "value": 7070
+        },
+        {
+          "period": "2025-07",
+          "value": 8641
+        },
+        {
+          "period": "2025-12",
+          "value": 5519
+        },
+        {
+          "period": "2026-06",
+          "value": 6478
+        }
+      ],
+      "source": "Companies House Advanced Search API",
+      "source_url": "https://developer.company-information.service.gov.uk/",
+      "unit": "union"
+    },
+    {
+      "brand": "ecommerce",
+      "finding": "Pct at 27.4 in 2025, +705.9% vs 2007.",
+      "id": "ecommerce/online-seller-index",
+      "latest": 27.4,
+      "licence": "Open Government Licence v3.0. Derived from Companies House public register and ONS Retail Sales Index. Reuse with attribution.",
+      "name": "UK Online Seller Business Index",
+      "report_url": "https://www.ecommercefinance.co.uk/research/online-seller-index",
+      "series": [
+        {
+          "period": "2007",
+          "value": 3.4
+        },
+        {
+          "period": "2008",
+          "value": 4.9
+        },
+        {
+          "period": "2009",
+          "value": 6.2
+        },
+        {
+          "period": "2010",
+          "value": 7.3
+        },
+        {
+          "period": "2011",
+          "value": 8.3
+        },
+        {
+          "period": "2012",
+          "value": 9.3
+        },
+        {
+          "period": "2013",
+          "value": 10.4
+        },
+        {
+          "period": "2014",
+          "value": 11.3
+        },
+        {
+          "period": "2015",
+          "value": 12.5
+        },
+        {
+          "period": "2016",
+          "value": 14.7
+        },
+        {
+          "period": "2017",
+          "value": 16.3
+        },
+        {
+          "period": "2018",
+          "value": 18.0
+        },
+        {
+          "period": "2019",
+          "value": 19.2
+        },
+        {
+          "period": "2020",
+          "value": 28.1
+        },
+        {
+          "period": "2021",
+          "value": 30.7
+        },
+        {
+          "period": "2022",
+          "value": 26.6
+        },
+        {
+          "period": "2023",
+          "value": 26.7
+        },
+        {
+          "period": "2024",
+          "value": 27.1
+        },
+        {
+          "period": "2025",
+          "value": 27.4
+        }
+      ],
+      "source": "companies_house",
+      "source_url": null,
+      "unit": "pct"
+    },
+    {
+      "brand": "ecommerce",
+      "finding": "Retail.y1 pct at 92.2 in 2023, -2.2% vs 2019.",
+      "id": "ecommerce/online-seller-survival-index",
+      "latest": 92.2,
+      "licence": "Open Government Licence v3.0",
+      "name": "Online Seller Survival Index",
+      "report_url": "https://www.ecommercefinance.co.uk/research/online-seller-survival-index",
+      "series": [
+        {
+          "period": "2019",
+          "value": 94.3
+        },
+        {
+          "period": "2020",
+          "value": 86.4
+        },
+        {
+          "period": "2021",
+          "value": 92.8
+        },
+        {
+          "period": "2022",
+          "value": 89.6
+        },
+        {
+          "period": "2023",
+          "value": 92.2
+        }
+      ],
+      "source": "Business Demography, UK -- Table 4.2 (Survival of newly born enterprises, broad industry group)",
+      "source_url": "https://www.ons.gov.uk/file?uri=/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable/current/businessdemographyexceltables2024.xlsx",
+      "unit": "retail.y1_pct"
+    },
+    {
+      "brand": "generalist",
+      "finding": null,
+      "id": "generalist/uk-business-density-map",
+      "latest": null,
+      "licence": "Open Government Licence v3.0",
+      "name": "Uk Business Density Map",
+      "report_url": "https://www.hollowaydavies.co.uk/research/uk-business-density-map",
+      "series": [],
+      "source": "Business Population Estimates for the UK and regions -- Tables 8 and 9",
+      "source_url": "https://assets.publishing.service.gov.uk/media/68dbccc9c487360cc70c9f4e/BPE_2025_detailed_tables.xlsx",
+      "unit": null
+    },
+    {
+      "brand": "generalist",
+      "finding": "Mean pct not paid on time at 21.8 in 2026H2, +40.6% vs 2017H1.",
+      "id": "generalist/uk-late-payment-index",
+      "latest": 21.8,
+      "licence": "Statutory public disclosure (Reporting on Payment Practices and Performance Regulations 2017)",
+      "name": "Uk Late Payment Index",
+      "report_url": "https://www.hollowaydavies.co.uk/research/uk-late-payment-index",
+      "series": [
+        {
+          "period": "2017H1",
+          "value": 15.5
+        },
+        {
+          "period": "2017H2",
+          "value": 30.3
+        },
+        {
+          "period": "2018H1",
+          "value": 32.1
+        },
+        {
+          "period": "2018H2",
+          "value": 30.4
+        },
+        {
+          "period": "2019H1",
+          "value": 29.3
+        },
+        {
+          "period": "2019H2",
+          "value": 28.0
+        },
+        {
+          "period": "2020H1",
+          "value": 29.4
+        },
+        {
+          "period": "2020H2",
+          "value": 28.8
+        },
+        {
+          "period": "2021H1",
+          "value": 27.3
+        },
+        {
+          "period": "2021H2",
+          "value": 26.0
+        },
+        {
+          "period": "2022H1",
+          "value": 26.2
+        },
+        {
+          "period": "2022H2",
+          "value": 25.5
+        },
+        {
+          "period": "2023H1",
+          "value": 25.5
+        },
+        {
+          "period": "2023H2",
+          "value": 24.4
+        },
+        {
+          "period": "2024H1",
+          "value": 23.5
+        },
+        {
+          "period": "2024H2",
+          "value": 22.9
+        },
+        {
+          "period": "2025H1",
+          "value": 22.4
+        },
+        {
+          "period": "2025H2",
+          "value": 21.7
+        },
+        {
+          "period": "2026H1",
+          "value": 20.6
+        },
+        {
+          "period": "2026H2",
+          "value": 21.8
+        }
+      ],
+      "source": "Payment Practices Reporting -- full CSV export",
+      "source_url": "https://check-payment-practices.service.gov.uk/export/csv/",
+      "unit": "mean_pct_not_paid_on_time"
+    },
+    {
+      "brand": "generalist",
+      "finding": null,
+      "id": "generalist/uk-sector-insolvency-league",
+      "latest": null,
+      "licence": "Open Government Licence v3.0",
+      "name": "Uk Sector Insolvency League",
+      "report_url": "https://www.hollowaydavies.co.uk/research/uk-sector-insolvency-league",
+      "series": [],
+      "source": "Company Insolvency Statistics -- Industry Tables (Table A1a)",
+      "source_url": "https://assets.publishing.service.gov.uk/media/6a58e5a15ca06bf11ccb4335/Industry_Tables_in_Excel__xlsx__Format_-_Company_Insolvency_Statistics_June_2026.xlsx",
+      "unit": null
+    },
+    {
+      "brand": "generalist",
+      "finding": "Total at 1938 in 2026-06, +57.6% vs 2016-01.",
+      "id": "generalist/uk-small-business-barometer",
+      "latest": 1938,
+      "licence": "Open Government Licence v3.0",
+      "name": "Uk Small Business Barometer",
+      "report_url": "https://www.hollowaydavies.co.uk/research/uk-small-business-barometer",
+      "series": [
+        {
+          "period": "2016-01",
+          "value": 1230
+        },
+        {
+          "period": "2016-06",
+          "value": 1281
+        },
+        {
+          "period": "2016-12",
+          "value": 1171
+        },
+        {
+          "period": "2017-05",
+          "value": 1087
+        },
+        {
+          "period": "2017-11",
+          "value": 1208
+        },
+        {
+          "period": "2018-04",
+          "value": 1209
+        },
+        {
+          "period": "2018-10",
+          "value": 1357
+        },
+        {
+          "period": "2019-03",
+          "value": 1580
+        },
+        {
+          "period": "2019-08",
+          "value": 1365
+        },
+        {
+          "period": "2020-02",
+          "value": 1345
+        },
+        {
+          "period": "2020-07",
+          "value": 964
+        },
+        {
+          "period": "2021-01",
+          "value": 758
+        },
+        {
+          "period": "2021-06",
+          "value": 1206
+        },
+        {
+          "period": "2021-12",
+          "value": 1490
+        },
+        {
+          "period": "2022-05",
+          "value": 1825
+        },
+        {
+          "period": "2022-11",
+          "value": 2033
+        },
+        {
+          "period": "2023-04",
+          "value": 1685
+        },
+        {
+          "period": "2023-09",
+          "value": 1966
+        },
+        {
+          "period": "2024-03",
+          "value": 1786
+        },
+        {
+          "period": "2024-08",
+          "value": 1894
+        },
+        {
+          "period": "2025-02",
+          "value": 1878
+        },
+        {
+          "period": "2025-07",
+          "value": 2180
+        },
+        {
+          "period": "2026-01",
+          "value": 1614
+        },
+        {
+          "period": "2026-06",
+          "value": 1938
+        }
+      ],
+      "source": "Incorporated companies in the UK (quarterly)",
+      "source_url": "https://assets.publishing.service.gov.uk/media/69f09478b0c3a4023e5d6d56/Incorporated_companies_in_the_UK_January_to_March_2026.csv",
+      "unit": "total"
+    },
+    {
+      "brand": "hospitality",
+      "finding": null,
+      "id": "hospitality/hospitality-fsa-hygiene-index",
+      "latest": null,
+      "licence": "FSA open-data terms and conditions (treated as open + attribution; no bare OGL badge published for this dataset)",
+      "name": "Hospitality Fsa Hygiene Index",
+      "report_url": "https://www.hospitalitytax.co.uk/research/uk-hospitality-food-hygiene-map",
+      "series": [],
+      "source": "Food Standards Agency Ratings API (FHRS/FHIS)",
+      "source_url": "https://api.ratings.food.gov.uk/help",
+      "unit": null
+    },
+    {
+      "brand": "hospitality",
+      "finding": "Total at 252 in 2026-06, +77.5% vs 2016-01.",
+      "id": "hospitality/hospitality-insolvency-index",
+      "latest": 252,
+      "licence": "Open Government Licence v3.0",
+      "name": "Hospitality Insolvency Index",
+      "report_url": "https://www.hospitalitytax.co.uk/research/uk-hospitality-insolvency-index",
+      "series": [
+        {
+          "period": "2016-01",
+          "value": 142
+        },
+        {
+          "period": "2016-06",
+          "value": 127
+        },
+        {
+          "period": "2016-12",
+          "value": 143
+        },
+        {
+          "period": "2017-05",
+          "value": 125
+        },
+        {
+          "period": "2017-11",
+          "value": 173
+        },
+        {
+          "period": "2018-04",
+          "value": 187
+        },
+        {
+          "period": "2018-10",
+          "value": 183
+        },
+        {
+          "period": "2019-03",
+          "value": 262
+        },
+        {
+          "period": "2019-08",
+          "value": 203
+        },
+        {
+          "period": "2020-02",
+          "value": 228
+        },
+        {
+          "period": "2020-07",
+          "value": 136
+        },
+        {
+          "period": "2021-01",
+          "value": 105
+        },
+        {
+          "period": "2021-06",
+          "value": 173
+        },
+        {
+          "period": "2021-12",
+          "value": 187
+        },
+        {
+          "period": "2022-05",
+          "value": 245
+        },
+        {
+          "period": "2022-11",
+          "value": 283
+        },
+        {
+          "period": "2023-04",
+          "value": 280
+        },
+        {
+          "period": "2023-09",
+          "value": 310
+        },
+        {
+          "period": "2024-03",
+          "value": 306
+        },
+        {
+          "period": "2024-08",
+          "value": 299
+        },
+        {
+          "period": "2025-02",
+          "value": 287
+        },
+        {
+          "period": "2025-07",
+          "value": 356
+        },
+        {
+          "period": "2026-01",
+          "value": 237
+        },
+        {
+          "period": "2026-06",
+          "value": 252
+        }
+      ],
+      "source": "Company Insolvency Statistics -- Record-Level Data",
+      "source_url": "https://assets.publishing.service.gov.uk/media/6a57978e31fb6daf3141374c/Record-level_data_for_England_Wales_and_Scotland_-_Company_Insolvency_Statistics_June_2026.zip",
+      "unit": "total"
+    },
+    {
+      "brand": "hospitality",
+      "finding": null,
+      "id": "hospitality/uk-hospitality-openings-closures-index",
+      "latest": null,
+      "licence": "Open Government Licence v3.0",
+      "name": "UK Hospitality Openings & Closures Index",
+      "report_url": "https://www.hospitalitytax.co.uk/research/hospitality-openings-closures-index",
+      "series": [],
+      "source": "Companies House Advanced Search API",
+      "source_url": "https://developer.company-information.service.gov.uk/api/docs/",
+      "unit": null
+    },
+    {
+      "brand": "pharmacies",
+      "finding": "Union at 50 in 2026-06, +354.5% vs 2015-07.",
+      "id": "pharmacies/pharmacy-ch-formations-index",
+      "latest": 50,
+      "licence": "Open Government Licence v3.0",
+      "name": "Pharmacy Ch Formations Index",
+      "report_url": "https://www.pharmacytax.co.uk/research/pharmacy-openings-closures-index",
+      "series": [
+        {
+          "period": "2015-07",
+          "value": 11
+        },
+        {
+          "period": "2016-01",
+          "value": 18
+        },
+        {
+          "period": "2016-06",
+          "value": 20
+        },
+        {
+          "period": "2016-12",
+          "value": 13
+        },
+        {
+          "period": "2017-06",
+          "value": 15
+        },
+        {
+          "period": "2017-11",
+          "value": 28
+        },
+        {
+          "period": "2018-05",
+          "value": 28
+        },
+        {
+          "period": "2018-11",
+          "value": 41
+        },
+        {
+          "period": "2019-05",
+          "value": 30
+        },
+        {
+          "period": "2019-10",
+          "value": 35
+        },
+        {
+          "period": "2020-04",
+          "value": 33
+        },
+        {
+          "period": "2020-10",
+          "value": 48
+        },
+        {
+          "period": "2021-03",
+          "value": 31
+        },
+        {
+          "period": "2021-09",
+          "value": 65
+        },
+        {
+          "period": "2022-03",
+          "value": 86
+        },
+        {
+          "period": "2022-08",
+          "value": 107
+        },
+        {
+          "period": "2023-02",
+          "value": 133
+        },
+        {
+          "period": "2023-08",
+          "value": 186
+        },
+        {
+          "period": "2024-02",
+          "value": 73
+        },
+        {
+          "period": "2024-07",
+          "value": 63
+        },
+        {
+          "period": "2025-01",
+          "value": 68
+        },
+        {
+          "period": "2025-07",
+          "value": 54
+        },
+        {
+          "period": "2025-12",
+          "value": 90
+        },
+        {
+          "period": "2026-06",
+          "value": 50
+        }
+      ],
+      "source": "Companies House Advanced Search API",
+      "source_url": "https://developer.company-information.service.gov.uk/",
+      "unit": "union"
+    },
+    {
+      "brand": "pharmacies",
+      "finding": null,
+      "id": "pharmacies/pharmacy-density-by-region",
+      "latest": null,
+      "licence": "Open Government Licence v3.0",
+      "name": "Pharmacy Density By Region",
+      "report_url": "https://www.pharmacytax.co.uk/research",
+      "series": [],
+      "source": "NHSBSA Contractor Details",
+      "source_url": "https://opendata.nhsbsa.net/dataset/contractor-details",
+      "unit": null
+    },
+    {
+      "brand": "pharmacies",
+      "finding": "Total items at 102105642 in 2026-03, +20.1% vs 2019-03.",
+      "id": "pharmacies/pharmacy-dispensing-workload",
+      "latest": 102105642,
+      "licence": "Open Government Licence v3.0",
+      "name": "Pharmacy Dispensing Workload",
+      "report_url": "https://www.pharmacytax.co.uk/research/pharmacy-density-and-workload-index",
+      "series": [
+        {
+          "period": "2019-03",
+          "value": 85004185
+        },
+        {
+          "period": "2020-03",
+          "value": 92840308
+        },
+        {
+          "period": "2021-03",
+          "value": 88829000
+        },
+        {
+          "period": "2022-03",
+          "value": 92491896
+        },
+        {
+          "period": "2023-03",
+          "value": 96436579
+        },
+        {
+          "period": "2024-03",
+          "value": 93146489
+        },
+        {
+          "period": "2025-03",
+          "value": 96035361
+        },
+        {
+          "period": "2026-03",
+          "value": 102105642
+        }
+      ],
+      "source": "NHSBSA Pharmacy and Appliance Contractor Dispensing Data",
+      "source_url": "https://opendata.nhsbsa.net/dataset/pharmacy-and-appliance-contractor-dispensing-data",
+      "unit": "total_items"
+    },
+    {
+      "brand": "pharmacies",
+      "finding": "Count at 50 in 2026-06, +354.5% vs 2015-07.",
+      "id": "pharmacies/pharmacy-openings-closures-index",
+      "latest": 50,
+      "licence": "Open Government Licence v3.0 (OGL3). Derived from NHSBSA open data and Companies House public register. Reuse with attribution.",
+      "name": "UK Community Pharmacy Openings and Closures Index",
+      "report_url": "https://www.pharmacytax.co.uk/research/pharmacy-openings-closures-index",
+      "series": [
+        {
+          "period": "2015-07",
+          "value": 11
+        },
+        {
+          "period": "2016-01",
+          "value": 18
+        },
+        {
+          "period": "2016-06",
+          "value": 20
+        },
+        {
+          "period": "2016-12",
+          "value": 13
+        },
+        {
+          "period": "2017-06",
+          "value": 15
+        },
+        {
+          "period": "2017-11",
+          "value": 28
+        },
+        {
+          "period": "2018-05",
+          "value": 28
+        },
+        {
+          "period": "2018-11",
+          "value": 41
+        },
+        {
+          "period": "2019-05",
+          "value": 30
+        },
+        {
+          "period": "2019-10",
+          "value": 35
+        },
+        {
+          "period": "2020-04",
+          "value": 33
+        },
+        {
+          "period": "2020-10",
+          "value": 48
+        },
+        {
+          "period": "2021-03",
+          "value": 31
+        },
+        {
+          "period": "2021-09",
+          "value": 65
+        },
+        {
+          "period": "2022-03",
+          "value": 86
+        },
+        {
+          "period": "2022-08",
+          "value": 107
+        },
+        {
+          "period": "2023-02",
+          "value": 133
+        },
+        {
+          "period": "2023-08",
+          "value": 186
+        },
+        {
+          "period": "2024-02",
+          "value": 73
+        },
+        {
+          "period": "2024-07",
+          "value": 63
+        },
+        {
+          "period": "2025-01",
+          "value": 68
+        },
+        {
+          "period": "2025-07",
+          "value": 54
+        },
+        {
+          "period": "2025-12",
+          "value": 90
+        },
+        {
+          "period": "2026-06",
+          "value": 50
+        }
+      ],
+      "source": "companies_house",
+      "source_url": null,
+      "unit": "count"
+    },
+    {
+      "brand": "pharmacies",
+      "finding": "Total at 10391 in 2026-05, -7.3% vs 2021-01.",
+      "id": "pharmacies/pharmacy-openings-closures-monthly",
+      "latest": 10391,
+      "licence": "Open Government Licence v3.0",
+      "name": "Pharmacy Openings Closures Monthly",
+      "report_url": "https://www.pharmacytax.co.uk/research/pharmacy-openings-closures-index",
+      "series": [
+        {
+          "period": "2021-01",
+          "value": 11206
+        },
+        {
+          "period": "2021-04",
+          "value": 11194
+        },
+        {
+          "period": "2021-07",
+          "value": 11180
+        },
+        {
+          "period": "2021-09",
+          "value": 11158
+        },
+        {
+          "period": "2021-12",
+          "value": 11148
+        },
+        {
+          "period": "2022-03",
+          "value": 11121
+        },
+        {
+          "period": "2022-06",
+          "value": 11093
+        },
+        {
+          "period": "2022-08",
+          "value": 11083
+        },
+        {
+          "period": "2022-11",
+          "value": 11059
+        },
+        {
+          "period": "2023-02",
+          "value": 11041
+        },
+        {
+          "period": "2023-05",
+          "value": 10894
+        },
+        {
+          "period": "2023-08",
+          "value": 10775
+        },
+        {
+          "period": "2023-10",
+          "value": 10707
+        },
+        {
+          "period": "2024-01",
+          "value": 10613
+        },
+        {
+          "period": "2024-04",
+          "value": 10506
+        },
+        {
+          "period": "2024-07",
+          "value": 10465
+        },
+        {
+          "period": "2024-10",
+          "value": 10450
+        },
+        {
+          "period": "2024-12",
+          "value": 10451
+        },
+        {
+          "period": "2025-03",
+          "value": 10407
+        },
+        {
+          "period": "2025-06",
+          "value": 10405
+        },
+        {
+          "period": "2025-09",
+          "value": 10402
+        },
+        {
+          "period": "2025-11",
+          "value": 10397
+        },
+        {
+          "period": "2026-02",
+          "value": 10399
+        },
+        {
+          "period": "2026-05",
+          "value": 10391
+        }
+      ],
+      "source": "NHSBSA Pharmacy Openings and Closures",
+      "source_url": "https://opendata.nhsbsa.net/dataset/pharmacy-openings-and-closures",
+      "unit": "total"
+    },
+    {
+      "brand": "startups-tech",
+      "finding": "LcRdecTotal at 10065 in 2023-24, +1358.7% vs 2002-03.",
+      "id": "startups-tech/rd-tax-relief-index",
+      "latest": 10065,
+      "licence": "Open Government Licence v3.0 (OGL3). Reuse with attribution.",
+      "name": "R&D Tax Relief Usage Index (UK tech sector)",
+      "report_url": "https://www.foundertaxpartners.co.uk/research/rd-tax-relief-index",
+      "series": [
+        {
+          "period": "2002-03",
+          "value": 690
+        },
+        {
+          "period": "2003-04",
+          "value": 1050
+        },
+        {
+          "period": "2004-05",
+          "value": 1310
+        },
+        {
+          "period": "2005-06",
+          "value": 1490
+        },
+        {
+          "period": "2006-07",
+          "value": 1670
+        },
+        {
+          "period": "2007-08",
+          "value": 2030
+        },
+        {
+          "period": "2008-09",
+          "value": 2260
+        },
+        {
+          "period": "2009-10",
+          "value": 2320
+        },
+        {
+          "period": "2010-11",
+          "value": 2490
+        },
+        {
+          "period": "2011-12",
+          "value": 2660
+        },
+        {
+          "period": "2012-13",
+          "value": 2960
+        },
+        {
+          "period": "2013-14",
+          "value": 3750
+        },
+        {
+          "period": "2014-15",
+          "value": 5785
+        },
+        {
+          "period": "2015-16",
+          "value": 6560
+        },
+        {
+          "period": "2016-17",
+          "value": 7575
+        },
+        {
+          "period": "2017-18",
+          "value": 8380
+        },
+        {
+          "period": "2018-19",
+          "value": 8595
+        },
+        {
+          "period": "2019-20",
+          "value": 9815
+        },
+        {
+          "period": "2020-21",
+          "value": 11045
+        },
+        {
+          "period": "2021-22",
+          "value": 11415
+        },
+        {
+          "period": "2022-23",
+          "value": 10635
+        },
+        {
+          "period": "2023-24",
+          "value": 10065
+        }
+      ],
+      "source": "hmrc_rd_stats",
+      "source_url": null,
+      "unit": "lcRdecTotal"
+    },
+    {
+      "brand": "startups-tech",
+      "finding": "Incorporations at 21364 in 2026-Q2, +119.2% vs 2020-Q1.",
+      "id": "startups-tech/startup-formation-survival-index",
+      "latest": 21364,
+      "licence": "Open Government Licence v3.0 (OGL3). Derived from Companies House public register. Reuse with attribution.",
+      "name": "UK Startup Formation and Survival Index",
+      "report_url": "https://www.foundertaxpartners.co.uk/research/startup-formation-survival-index",
+      "series": [
+        {
+          "period": "2020-Q1",
+          "value": 9745
+        },
+        {
+          "period": "2020-Q2",
+          "value": 10957
+        },
+        {
+          "period": "2020-Q3",
+          "value": 12090
+        },
+        {
+          "period": "2020-Q4",
+          "value": 12312
+        },
+        {
+          "period": "2021-Q1",
+          "value": 11327
+        },
+        {
+          "period": "2021-Q2",
+          "value": 10169
+        },
+        {
+          "period": "2021-Q4",
+          "value": 13299
+        },
+        {
+          "period": "2022-Q1",
+          "value": 11831
+        },
+        {
+          "period": "2022-Q2",
+          "value": 12105
+        },
+        {
+          "period": "2022-Q3",
+          "value": 11925
+        },
+        {
+          "period": "2022-Q4",
+          "value": 12070
+        },
+        {
+          "period": "2023-Q1",
+          "value": 14349
+        },
+        {
+          "period": "2023-Q2",
+          "value": 14408
+        },
+        {
+          "period": "2023-Q3",
+          "value": 15248
+        },
+        {
+          "period": "2023-Q4",
+          "value": 15396
+        },
+        {
+          "period": "2024-Q1",
+          "value": 17152
+        },
+        {
+          "period": "2024-Q2",
+          "value": 14599
+        },
+        {
+          "period": "2024-Q3",
+          "value": 13350
+        },
+        {
+          "period": "2025-Q1",
+          "value": 15211
+        },
+        {
+          "period": "2025-Q2",
+          "value": 16866
+        },
+        {
+          "period": "2025-Q3",
+          "value": 18533
+        },
+        {
+          "period": "2025-Q4",
+          "value": 16919
+        },
+        {
+          "period": "2026-Q1",
+          "value": 19288
+        },
+        {
+          "period": "2026-Q2",
+          "value": 21364
+        }
+      ],
+      "source": "companies_house",
+      "source_url": null,
+      "unit": "incorporations"
+    },
+    {
+      "brand": "startups-tech",
+      "finding": "TechBirths at 22380 in 2023, -25.6% vs 2019.",
+      "id": "startups-tech/tech-startup-survival-index",
+      "latest": 22380,
+      "licence": "Open Government Licence v3.0 (OGL3). Reuse with attribution.",
+      "name": "UK Tech Startup Survival Curves",
+      "report_url": "https://www.foundertaxpartners.co.uk/research/tech-startup-survival-index",
+      "series": [
+        {
+          "period": "2019",
+          "value": 30080
+        },
+        {
+          "period": "2020",
+          "value": 22455
+        },
+        {
+          "period": "2021",
+          "value": 22350
+        },
+        {
+          "period": "2022",
+          "value": 22455
+        },
+        {
+          "period": "2023",
+          "value": 22380
+        }
+      ],
+      "source": "ons_business_demography",
+      "source_url": null,
+      "unit": "techBirths"
+    },
+    {
+      "brand": "startups-tech",
+      "finding": "Union at 6592 in 2026-06, +133.0% vs 2015-07.",
+      "id": "startups-tech/uk-tech-formations-index",
+      "latest": 6592,
+      "licence": "Open Government Licence v3.0",
+      "name": "Uk Tech Formations Index",
+      "report_url": "https://www.foundertaxpartners.co.uk/research/uk-tech-formations-index",
+      "series": [
+        {
+          "period": "2015-07",
+          "value": 2829
+        },
+        {
+          "period": "2016-01",
+          "value": 2529
+        },
+        {
+          "period": "2016-06",
+          "value": 2686
+        },
+        {
+          "period": "2016-12",
+          "value": 2449
+        },
+        {
+          "period": "2017-06",
+          "value": 3007
+        },
+        {
+          "period": "2017-11",
+          "value": 3229
+        },
+        {
+          "period": "2018-05",
+          "value": 3752
+        },
+        {
+          "period": "2018-11",
+          "value": 3590
+        },
+        {
+          "period": "2019-05",
+          "value": 3539
+        },
+        {
+          "period": "2019-10",
+          "value": 3567
+        },
+        {
+          "period": "2020-04",
+          "value": 2896
+        },
+        {
+          "period": "2020-10",
+          "value": 4125
+        },
+        {
+          "period": "2021-03",
+          "value": 3699
+        },
+        {
+          "period": "2021-09",
+          "value": 3471
+        },
+        {
+          "period": "2022-03",
+          "value": 3984
+        },
+        {
+          "period": "2022-08",
+          "value": 3865
+        },
+        {
+          "period": "2023-02",
+          "value": 4226
+        },
+        {
+          "period": "2023-08",
+          "value": 4909
+        },
+        {
+          "period": "2024-02",
+          "value": 5095
+        },
+        {
+          "period": "2024-07",
+          "value": 4066
+        },
+        {
+          "period": "2025-01",
+          "value": 4709
+        },
+        {
+          "period": "2025-07",
+          "value": 5882
+        },
+        {
+          "period": "2025-12",
+          "value": 4657
+        },
+        {
+          "period": "2026-06",
+          "value": 6592
+        }
+      ],
+      "source": "Companies House Advanced Search API",
+      "source_url": "https://developer.company-information.service.gov.uk/",
+      "unit": "union"
+    },
+    {
+      "brand": "startups-tech",
+      "finding": "AmountAllM at 1575 in 2024-25, +39275.0% vs 1993-94.",
+      "id": "startups-tech/uk-tech-funding-reliefs-index",
+      "latest": 1575,
+      "licence": "Open Government Licence v3.0 (OGL3). Reuse with attribution.",
+      "name": "UK Tech-Funding Reliefs Index (SEIS/EIS)",
+      "report_url": "https://www.foundertaxpartners.co.uk/research/uk-tech-funding-reliefs-index",
+      "series": [
+        {
+          "period": "1993-94",
+          "value": 4
+        },
+        {
+          "period": "1994-95",
+          "value": 41
+        },
+        {
+          "period": "1996-97",
+          "value": 94
+        },
+        {
+          "period": "1997-98",
+          "value": 113
+        },
+        {
+          "period": "1998-99",
+          "value": 294
+        },
+        {
+          "period": "2000-01",
+          "value": 1065
+        },
+        {
+          "period": "2001-02",
+          "value": 761
+        },
+        {
+          "period": "2002-03",
+          "value": 667
+        },
+        {
+          "period": "2004-05",
+          "value": 606
+        },
+        {
+          "period": "2005-06",
+          "value": 648
+        },
+        {
+          "period": "2006-07",
+          "value": 733
+        },
+        {
+          "period": "2008-09",
+          "value": 518
+        },
+        {
+          "period": "2009-10",
+          "value": 623
+        },
+        {
+          "period": "2011-12",
+          "value": 1034
+        },
+        {
+          "period": "2012-13",
+          "value": 1034
+        },
+        {
+          "period": "2013-14",
+          "value": 1592
+        },
+        {
+          "period": "2015-16",
+          "value": 1976
+        },
+        {
+          "period": "2016-17",
+          "value": 1908
+        },
+        {
+          "period": "2017-18",
+          "value": 2006
+        },
+        {
+          "period": "2019-20",
+          "value": 1894
+        },
+        {
+          "period": "2020-21",
+          "value": 1660
+        },
+        {
+          "period": "2021-22",
+          "value": 2300
+        },
+        {
+          "period": "2023-24",
+          "value": 1575
+        },
+        {
+          "period": "2024-25",
+          "value": 1575
+        }
+      ],
+      "source": "hmrc_eis_seis_stats",
+      "source_url": null,
+      "unit": "amountAllM"
+    }
+  ],
+  "estate": {
+    "sites": [
+      {
+        "domain": "www.dentalfinancepartners.co.uk",
+        "id": "dentists",
+        "name": "Dental Finance Partners",
+        "niche": "dentists",
+        "research_assets": [
+          "dental-company-formation-index",
+          "dental-practice-density",
+          "nhs-dental-activity-index",
+          "nhs-dentist-earnings-index"
+        ],
+        "sector": "Accounting for UK dentists, nothing else"
+      },
+      {
+        "domain": "www.medicalaccounts.co.uk",
+        "id": "medical",
+        "name": "Medical Accountants UK",
+        "niche": "medical",
+        "research_assets": [
+          "annual-allowance-pension-tax-index"
+        ],
+        "sector": "Specialist accountants for UK medical professionals"
+      },
+      {
+        "domain": "www.propertytaxpartners.co.uk",
+        "id": "property",
+        "name": "Property Tax Partners",
+        "niche": "property",
+        "research_assets": [
+          "landlord-tax-index"
+        ],
+        "sector": "Get your property tax sorted"
+      },
+      {
+        "domain": "www.accountsforlawyers.co.uk",
+        "id": "solicitors",
+        "name": "Accounts for Lawyers",
+        "niche": "solicitors",
+        "research_assets": [
+          "law-firm-survival-index",
+          "uk-legal-incorporation-index",
+          "uk-solicitor-profession-structure"
+        ],
+        "sector": "Specialist accounting for UK solicitors and law firms"
+      },
+      {
+        "domain": "www.carehometax.co.uk",
+        "id": "care",
+        "name": "Care Home Tax",
+        "niche": "care",
+        "research_assets": [
+          "care-provider-business-index",
+          "uk-care-business-survival-index",
+          "uk-care-density-quality-index"
+        ],
+        "sector": "UK care providers (care homes, domiciliary care, supported living): accounts, payroll, VAT and CQC-linked financial compliance"
+      },
+      {
+        "domain": "www.trusteetax.co.uk",
+        "id": "charities",
+        "name": "Trustee Tax",
+        "niche": "charities",
+        "research_assets": [
+          "uk-charity-cause-income",
+          "uk-charity-scrutiny-cliff",
+          "uk-charity-survival-index",
+          "uk-small-charity-finance-index"
+        ],
+        "sector": "UK charities, CICs and social enterprises: accounts, independent examination, Gift Aid, VAT and trustee compliance"
+      },
+      {
+        "domain": "www.tradetaxspecialists.co.uk",
+        "id": "construction-cis",
+        "name": "Trade Tax Specialists",
+        "niche": "construction-cis",
+        "research_assets": [
+          "uk-construction-index",
+          "uk-construction-insolvency-index",
+          "uk-construction-payment-practices-league",
+          "uk-construction-survival-index"
+        ],
+        "sector": "Specialist CIS accountants for UK construction trades"
+      },
+      {
+        "domain": "www.contractortaxaccountants.co.uk",
+        "id": "contractors-ir35",
+        "name": "Contractor Tax Accountants",
+        "niche": "contractors-ir35",
+        "research_assets": [
+          "uk-contractor-index",
+          "uk-contractor-insolvency-index",
+          "uk-contractor-survival-index"
+        ],
+        "sector": "Specialist accountants for UK contractors and IR35"
+      },
+      {
+        "domain": "www.cryptotaxpartners.co.uk",
+        "id": "crypto",
+        "name": "Crypto Tax Partners",
+        "niche": "crypto",
+        "research_assets": [
+          "crypto-tax-gap-index"
+        ],
+        "sector": "UK cryptoasset tax specialists: CGT on disposals, staking and mining income, DeFi, HMRC nudge letters and disclosure, and Self Assessment"
+      },
+      {
+        "domain": "www.agencyfounderfinance.co.uk",
+        "id": "agency-founder-finance",
+        "name": "Agency Founder Finance",
+        "niche": "agency-founder-finance",
+        "research_assets": [
+          "uk-agency-formation-index",
+          "uk-agency-insolvency-index",
+          "uk-agency-survival-churn-index"
+        ],
+        "sector": "The accountant built for agency founders"
+      },
+      {
+        "domain": "www.ecommercefinance.co.uk",
+        "id": "ecommerce",
+        "name": "Ecommerce Finance",
+        "niche": "ecommerce",
+        "research_assets": [
+          "online-seller-index",
+          "online-seller-survival-index"
+        ],
+        "sector": "UK ecommerce and marketplace sellers (Amazon, eBay, Etsy, Shopify): tax, VAT, platform reporting and seller accounts"
+      },
+      {
+        "domain": "www.hollowaydavies.co.uk",
+        "id": "generalist",
+        "name": "Holloway Davies",
+        "niche": "generalist",
+        "research_assets": [
+          "uk-business-density-map",
+          "uk-late-payment-index",
+          "uk-sector-insolvency-league",
+          "uk-small-business-barometer"
+        ],
+        "sector": "Accountants for UK businesses of every shape"
+      },
+      {
+        "domain": "www.hospitalitytax.co.uk",
+        "id": "hospitality",
+        "name": "Hospitality Tax",
+        "niche": "hospitality",
+        "research_assets": [
+          "hospitality-openings-closures-index",
+          "uk-hospitality-food-hygiene-map",
+          "uk-hospitality-insolvency-index"
+        ],
+        "sector": "UK hospitality businesses (pubs, restaurants, hotels, cafes, takeaways): accounts, tronc and tips compliance, VAT and payroll"
+      },
+      {
+        "domain": "www.pharmacytax.co.uk",
+        "id": "pharmacies",
+        "name": "Pharmacy Tax",
+        "niche": "pharmacies",
+        "research_assets": [
+          "pharmacy-density-and-workload-index",
+          "pharmacy-openings-closures-index"
+        ],
+        "sector": "Specialist accountants for UK community pharmacy owners: NHS contract economics, VAT, buying and selling a pharmacy"
+      },
+      {
+        "domain": "www.foundertaxpartners.co.uk",
+        "id": "startups-tech",
+        "name": "Founder Tax Partners",
+        "niche": "startups-tech",
+        "research_assets": [
+          "rd-tax-relief-index",
+          "startup-formation-survival-index",
+          "tech-startup-survival-index",
+          "uk-tech-formations-index",
+          "uk-tech-funding-reliefs-index"
+        ],
+        "sector": "Specialist accountants for funded and scaling UK startups: R&D relief, SEIS/EIS, EMI and share schemes, investor-ready accounts"
+      }
+    ],
+    "totals": {
+      "posts_estimate": null,
+      "research_assets": 43,
+      "sites": 15
+    }
+  },
+  "leads": {
+    "forecast": [
+      {
+        "high": 79,
+        "low": 50,
+        "mid": 64,
+        "month": "2026-08"
+      },
+      {
+        "high": 79,
+        "low": 50,
+        "mid": 64,
+        "month": "2026-09"
+      }
+    ],
+    "monthly": [
+      {
+        "count": 5,
+        "month": "2026-04"
+      },
+      {
+        "count": 12,
+        "month": "2026-05"
+      },
+      {
+        "count": 40,
+        "month": "2026-06"
+      },
+      {
+        "count": 56,
+        "month": "2026-07"
+      }
+    ],
+    "trend": {
+      "fitted_latest": 39.4,
+      "model": "poisson_log_linear",
+      "monthly_growth_pct": 199.0,
+      "months_fitted": 3
+    }
+  },
+  "meta": {
+    "generated_at": "2026-07-23T19:34:31+00:00",
+    "sources": [
+      "Business Demography 2024 reference tables",
+      "Business Demography 2024 reference tables (Table 5.2a-5.2e)",
+      "Business Demography 2024 reference tables (Tables 5.2a-5.2e)",
+      "Business Demography, UK -- Table 4.2 (Survival of newly born enterprises, broad industry group)",
+      "Business Population Estimates for the UK and regions -- Tables 8 and 9",
+      "CQC Care Directory",
+      "CQC HSCA Active Locations (directory with filters and ratings)",
+      "Charity Commission full register extract (OGL v3.0)",
+      "Charity Commission full register extract (charity table, daily)",
+      "Companies House Advanced Search API",
+      "Company Insolvency Statistics -- Industry Tables (Table A1a)",
+      "Company Insolvency Statistics -- Record-Level Data",
+      "Dental Earnings and Expenses Estimates, 2023/24 (CSV)",
+      "English Contractor Monthly General Dental Activity",
+      "Food Standards Agency Ratings API (FHRS/FHIS)",
+      "Incorporated companies in the UK (quarterly)",
+      "NHSBSA Contractor Details",
+      "NHSBSA Pharmacy Openings and Closures",
+      "NHSBSA Pharmacy and Appliance Contractor Dispensing Data",
+      "Payment Practices Reporting -- full CSV export",
+      "Private pension statistics (Table 7, annual allowance)",
+      "SRA Regulated Community Statistics: Solicitor Firms and Individuals",
+      "companies_house",
+      "hmrc_eis_seis_stats",
+      "hmrc_rd_stats",
+      "ons_business_demography",
+      "Estate lead ledger (Supabase, aggregate monthly counts only)"
+    ]
+  }
+}
