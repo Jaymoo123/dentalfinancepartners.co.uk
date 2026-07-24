@@ -51,7 +51,7 @@ export default async function TradeTypePage({
             className={`inline-flex items-center gap-1.5 text-xs font-semibold text-neutral-400 uppercase tracking-wider hover:text-orange-400 transition-colors mb-6 ${focusRing}`}
           >
             <ArrowRight className="h-3 w-3 rotate-180" />
-            All trades
+            All audiences
           </Link>
           <div className="section-label mb-6">Who we help</div>
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
@@ -93,7 +93,7 @@ export default async function TradeTypePage({
         <div className={siteContainerLg}>
           <div className="section-label mb-4">The specific challenges</div>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
-            What makes {type.title.toLowerCase()} accounting different.
+            What makes the money side of divorce different for {type.title.toLowerCase()}.
           </h2>
           <div className="mt-10 sm:mt-14 grid gap-6 md:grid-cols-2 md:gap-8">
             {type.challenges.map((item) => (
@@ -214,7 +214,7 @@ export default async function TradeTypePage({
             <div>
               <div className="section-label mb-6">Get started</div>
               <h2 className="text-2xl font-bold text-white sm:text-4xl">
-                Talk to a specialist {type.title.toLowerCase()} accountant
+                Talk to a specialist about your situation
               </h2>
               <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-neutral-200">
                 Book a free call. We will talk through your situation and whether there is anything worth changing. No hard sell, no obligation.
@@ -222,8 +222,8 @@ export default async function TradeTypePage({
               <div className="mt-8 space-y-3">
                 {[
                   "Focused on the money side of divorce and separation",
-                  "24-hour response guarantee",
-                  "Fixed fees, quoted before we start",
+                  "Vetted, regulated specialist firms only",
+                  "Shared only with your consent, no obligation to proceed",
                 ].map((point) => (
                   <div key={point} className="flex items-center gap-3 text-neutral-300">
                     <div className="h-5 w-5 flex items-center justify-center bg-orange-500 text-white text-xs font-bold flex-shrink-0">✓</div>
@@ -244,7 +244,7 @@ export default async function TradeTypePage({
       <section className="bg-[#fafaf7] py-12 sm:py-16">
         <div className={siteContainerLg}>
           <p className="text-sm font-semibold text-neutral-500 uppercase tracking-wider mb-5">
-            Other trades we work with
+            Other audiences we help
           </p>
           <div className="grid gap-3 sm:gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
             {tradeTypes
@@ -268,7 +268,7 @@ export default async function TradeTypePage({
               href="/for"
               className="inline-flex items-center gap-1.5 text-sm font-semibold text-orange-700 hover:text-orange-800 transition-colors"
             >
-              See all trades we work with
+              See who we help
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>

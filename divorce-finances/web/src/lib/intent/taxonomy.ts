@@ -46,7 +46,7 @@ export const TOPICS: Topic[] = [
     key: "financial-settlement",
     label: "Financial settlements",
     blogCategorySlugs: ["financial-settlements"],
-    primaryCalculator: null,
+    primaryCalculator: "settlement-range-estimator",
     ctaCopy: "Work out where you stand on a settlement",
     resourceId: null,
   },
@@ -54,7 +54,7 @@ export const TOPICS: Topic[] = [
     key: "pension-sharing",
     label: "Pensions and divorce",
     blogCategorySlugs: ["pensions-and-divorce"],
-    primaryCalculator: null,
+    primaryCalculator: "settlement-range-estimator",
     ctaCopy: "Understand how pensions get split",
     resourceId: null,
   },
@@ -70,7 +70,7 @@ export const TOPICS: Topic[] = [
     key: "family-home",
     label: "The family home",
     blogCategorySlugs: ["the-family-home"],
-    primaryCalculator: null,
+    primaryCalculator: "settlement-range-estimator",
     ctaCopy: "Work out the options for the family home",
     resourceId: null,
   },
@@ -86,7 +86,7 @@ export const TOPICS: Topic[] = [
     key: "process-costs",
     label: "Process and costs",
     blogCategorySlugs: ["process-and-costs"],
-    primaryCalculator: null,
+    primaryCalculator: "divorce-cost-calculator",
     ctaCopy: "Understand the process and what it costs",
     resourceId: null,
   },
@@ -97,13 +97,23 @@ export const TOPICS: Topic[] = [
  * is added (registry.ts). Unmapped calculators resolve to null and fall back
  * to the generic experience.
  */
-export const CALC_SLUG_TO_TOPIC: Record<string, TopicKey> = {};
+export const CALC_SLUG_TO_TOPIC: Record<string, TopicKey> = {
+  "settlement-range-estimator": "financial-settlement",
+  "divorce-cost-calculator": "process-costs",
+  "consent-order-cost-calculator": "process-costs",
+  "mediation-vs-solicitor-costs": "process-costs",
+  "help-with-fees-checker": "process-costs",
+};
 
 /**
  * Blog category slug -> early tool island (calculator slug).
  * Empty at scaffold: no calculators exist yet, so the fallback fires everywhere.
  */
-export const EARLY_TOOL_BY_CATEGORY: Record<string, string> = {};
+export const EARLY_TOOL_BY_CATEGORY: Record<string, string> = {
+  "financial-settlements": "settlement-range-estimator",
+  "process-and-costs": "divorce-cost-calculator",
+  "the-family-home": "settlement-range-estimator",
+};
 
 export function earlyToolForBlogSlug(slug: string): string | null {
   return EARLY_TOOL_BY_CATEGORY[slug] ?? null;

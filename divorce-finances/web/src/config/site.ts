@@ -15,9 +15,15 @@ const partner = niche.partner ?? null;
 // Lead-form consent wording WITHOUT the trailing "See our Privacy Policy." link
 // (each form appends that).
 // Swapped live 2026-07-19 per owner approval (follow-up / nurture wording).
+// Divorce-finances runs a referral lead model: enquiries are passed to a vetted
+// specialist family law firm, and a referral fee may be received. The lead-gen
+// regulatory position (LASPO PI-only ban does not apply to family; FCA CMC regime
+// excludes family) permits this, CONDITIONAL on a fee disclosure sitting beside the
+// consent checkbox. That disclosure is mandatory and brand-neutral (no firm named
+// until G1). Do not revert to the generic in-house wording for this site.
 const leadConsentText = partner
   ? `I agree to my details being shared by ${niche.display_name} with our specialist partner firm ${partner.name}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice.`
-    : `I agree to be contacted about my enquiry. I understand that ${niche.display_name} may follow up by email and SMS over the next 11 days to arrange a free call. I can opt out at any time by replying STOP to any message.`;
+    : `I agree to be contacted about my enquiry and to my details being shared with a vetted specialist family law firm so it can respond and, if I want it, provide advice. I understand ${niche.display_name} may receive a fee from the firm it introduces me to. ${niche.display_name} may follow up by email and SMS over the next 11 days to arrange a free call, and I can opt out at any time by replying STOP.`;
 
 export const siteConfig = {
   name: niche.display_name,

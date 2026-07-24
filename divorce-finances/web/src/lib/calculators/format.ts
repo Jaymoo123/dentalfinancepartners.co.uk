@@ -1,8 +1,12 @@
 /**
- * Re-exports the shared formatting helpers.
- *
- * gbp and pct are byte-identical in both the local and shared packages
- * (verified 2026-06-11 during F2 audit). All tool configs that import
- * format from "@/lib/calculators/format" continue to work unchanged.
+ * Re-exports the shared formatting helpers (same pattern as construction-cis
+ * and wills-probate).
  */
 export { gbp, pct } from "@accounting-network/web-shared/tools/format";
+
+/** "£X to £Y" band formatter used across the fleet. No dashes, house style. */
+import { gbp as gbpFn } from "@accounting-network/web-shared/tools/format";
+export function gbpRange(low: number, high: number): string {
+  if (low === high) return gbpFn(low);
+  return `${gbpFn(low)} to ${gbpFn(high)}`;
+}

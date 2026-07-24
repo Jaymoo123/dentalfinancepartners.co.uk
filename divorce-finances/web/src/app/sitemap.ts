@@ -26,6 +26,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/cookie-policy`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
     { url: `${base}/glossary`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/research`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/research/uk-divorce-financial-remedy-index`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${base}/research/uk-child-maintenance-tracker`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
   ];
 
   const tradeTypeRoutes: MetadataRoute.Sitemap = tradeTypes.map((t) => ({

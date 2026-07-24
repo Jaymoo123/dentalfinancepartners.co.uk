@@ -1,22 +1,31 @@
 import type { Tool, GenericTool } from "@accounting-network/web-shared/tools/types";
 import { makeRegistryHelpers } from "@accounting-network/web-shared/tools/registry-helpers";
+import { divorceCostCalculator } from "./tools/divorce-cost-calculator";
+import { helpWithFeesChecker } from "./tools/help-with-fees-checker";
+import { consentOrderCostCalculator } from "./tools/consent-order-cost-calculator";
+import { settlementRangeEstimator } from "./tools/settlement-range-estimator";
+import { mediationVsSolicitorCosts } from "./tools/mediation-vs-solicitor-costs";
 
 /**
- * The divorce-finances calculator fleet.
+ * The divorce-finances calculator fleet. All generic (config-driven), rendered
+ * by <Calculator> via the dynamic /calculators/[slug] route. Gallery, sitemap
+ * and navigation read this single registry.
  *
- * STUB (scaffold phase): empty. "bespoke" tools have their own hand-built
- * component + page; "generic" tools live one-per-file under ./tools and are
- * rendered by <Calculator> via the dynamic /calculators/[slug] route. The
- * gallery, sitemap and navigation read this single registry, so adding a tool
- * is one import + one array entry.
- *
- * Quality bar: every figure traces to HMRC/gov.uk guidance. No pricing/fees,
- * no thin duplicates, honest disclaimers in each `note`.
+ * Quality bar: court fees trace to the HMCTS schedule (13 July 2026 uplift),
+ * Help with Fees thresholds to gov.uk; market cost bands are labelled as
+ * estimates in every output. No legal or financial advice language anywhere
+ * except in negation. Settlement estimator is indicative-range only.
  */
 
 const BESPOKE: Tool[] = [];
 
-const GENERIC: GenericTool[] = [];
+const GENERIC: GenericTool[] = [
+  divorceCostCalculator,
+  helpWithFeesChecker,
+  consentOrderCostCalculator,
+  settlementRangeEstimator,
+  mediationVsSolicitorCosts,
+];
 
 export const TOOLS: Tool[] = [...BESPOKE, ...GENERIC];
 

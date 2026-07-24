@@ -109,9 +109,9 @@ export default function CalculatorsPage() {
               Need help interpreting your results?
             </h2>
             <p className="mt-3 sm:mt-4 text-base sm:text-lg leading-relaxed text-slate-200 max-w-3xl mx-auto">
-              These calculators provide simplified estimates. For a full review of your CIS
-              position, refund entitlement, or gross payment status application, speak to one of
-              our CIS specialists.
+              These calculators provide simplified estimates. For a full review of your
+              settlement position, entitlement, or next steps, speak to one of our
+              divorce finance specialists.
             </p>
             <div className="mt-6 sm:mt-8">
               <Link

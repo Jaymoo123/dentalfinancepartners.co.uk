@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { siteContainerLg, sectionYLoose } from "@/components/ui/layout-utils";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Contact | Book a Free Call",
+  title: { absolute: `Contact ${siteConfig.name}` },
   description:
-    "Book a free call with a specialist about the money side of your divorce or separation. We respond within one working day.",
+    "Ask a question, report an error, or ask to be introduced to a vetted family law specialist or accredited mediator. We reply within two working days.",
 };
 
 export default function ContactPage() {
@@ -15,10 +17,13 @@ export default function ContactPage() {
         <div className={siteContainerLg}>
           <p className="eyebrow text-orange-400">Get in touch</p>
           <h1 className="mt-6 max-w-3xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            Book a free call.
+            Get in touch
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
-            Talk through your settlement, pensions, tax or any question about the money side of separating. No hard sell, no obligation.
+            Whether you have a question about something on the site, want to point out an error,
+            or would like to be introduced to a specialist, we would like to hear from you. Divorce
+            runs on its own timetable, and there is no urgency on our side. Take whatever time you
+            need.
           </p>
         </div>
       </section>
@@ -27,48 +32,46 @@ export default function ContactPage() {
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <div className="grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
             <div className="min-w-0">
-              <h2 className="text-2xl font-semibold tracking-tight">How it works</h2>
-              <ol className="mt-8 space-y-8">
-                {[
-                  {
-                    n: "01",
-                    title: "Fill in the form",
-                    body: "Tell us a little about your situation and what you need help with.",
-                  },
-                  {
-                    n: "02",
-                    title: "We are in touch within 24 hours",
-                    body: "A specialist will respond to arrange a short call. Not a sales team, not a call centre.",
-                  },
-                  {
-                    n: "03",
-                    title: "Free introductory call",
-                    body: "We talk through your situation and any questions. If specialist help makes sense, we will explain the next step. No pressure.",
-                  },
-                ].map((step) => (
-                  <li key={step.n} className="flex gap-5">
-                    <span className="font-mono text-2xl font-semibold text-orange-500 tabular-nums" aria-hidden>
-                      {step.n}
-                    </span>
-                    <div className="min-w-0">
-                      <h3 className="text-lg font-semibold text-neutral-900">{step.title}</h3>
-                      <p className="mt-2 text-base leading-relaxed text-neutral-600">{step.body}</p>
-                    </div>
-                  </li>
-                ))}
-              </ol>
+              <h2 className="text-2xl font-semibold tracking-tight">What happens next</h2>
+              <ul className="mt-8 space-y-6 text-base leading-relaxed text-neutral-600">
+                <li>We read every message and aim to reply within two working days.</li>
+                <li>
+                  If you have asked to be connected with a specialist, we will match you with a
+                  vetted family law firm or accredited mediator suited to your situation, and they
+                  will contact you directly, usually within a few working days.
+                </li>
+                <li>
+                  We cannot answer questions about your personal legal or financial position. That
+                  is exactly what the specialist introduction is for.
+                </li>
+                <li>
+                  If there is any risk to your safety, or money is being hidden or controlled, tell
+                  the specialist as early as you can. It changes what they can do for you. If you
+                  are in immediate danger, call 999.
+                </li>
+              </ul>
 
               <div className="mt-12 border-t border-neutral-200 pt-8">
-                <p className="text-sm font-medium text-neutral-900">Prefer to contact us directly?</p>
+                <p className="text-sm font-medium text-neutral-900">Prefer to read up first?</p>
                 <p className="mt-2 text-sm text-neutral-600">
-                  Use the form above or visit our{" "}
-                  <a href="/contact" className="text-orange-700 underline underline-offset-2 hover:text-orange-800">
-                    contact page
-                  </a>{" "}
-                  to get in touch.
+                  Try our{" "}
+                  <Link href="/calculators" className="text-orange-700 underline underline-offset-2 hover:text-orange-800">
+                    free calculators
+                  </Link>{" "}
+                  or browse the{" "}
+                  <Link href="/blog" className="text-orange-700 underline underline-offset-2 hover:text-orange-800">
+                    guides
+                  </Link>
+                  .
                 </p>
-                <p className="mt-1 text-xs text-neutral-500">
-                  All conversations are confidential and carry no obligation.
+                <p className="mt-4 text-xs leading-relaxed text-neutral-500">
+                  By submitting the form you agree to us using your details to respond to your
+                  enquiry. If you ask to be connected with a specialist firm or mediator, you agree
+                  to us sharing your details with them so they can contact you. We may receive a
+                  fee from the firm we introduce you to if you use their services. This does not
+                  change what you pay, and the firm will confirm the arrangement to you directly.
+                  We never share your details for any other purpose. See our privacy policy for
+                  full details.
                 </p>
               </div>
             </div>
