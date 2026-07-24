@@ -1,0 +1,726 @@
+{
+  "classes": {
+    "adviser.royallondon.com": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "ageuk.org.uk": {
+      "class": "GOV_EDU",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "aprilking.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "ardenparks.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "askaccountantsukltd.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "assets.publishing.service.gov.uk": {
+      "class": "GOV_EDU",
+      "tier": 1,
+      "confidence": "high"
+    },
+    "aviva.co.uk": {
+      "class": "NATIONAL_BRAND",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "bbelaw.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "bealsfs.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "bereavementadvice.org": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "birchandco.com": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "bishopslaw.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "blackstonesolicitorsltd.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "blacktowerfm.com": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "bljsolicitors.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "bmsolicitors.ie": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "boysandmaughan.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "brentforbes.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "brownelegal.ie": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "cancerresearchuk.org": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "canstar.com.au": {
+      "class": "INFO",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "caresyncexperts.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "cavenders.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "citizensadvice.org.uk": {
+      "class": "GOV_EDU",
+      "tier": 1,
+      "confidence": "high"
+    },
+    "citizensinformation.ie": {
+      "class": "GOV_EDU",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "clarkewright.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "cleaverfultonrankin.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "co-oplegalservices.co.uk": {
+      "class": "NATIONAL_BRAND",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "coles-miller.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "courts.ie": {
+      "class": "GOV_EDU",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "cowansdorking.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "cplaw.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "crestsurveyors.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "culverlaw.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "danielwolfson.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "davidcosby.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "dmhstallard.com": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "drewberryinsurance.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "duncanlewis.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "evanshalshaw.com": {
+      "class": "NATIONAL_BRAND",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "evolvefamilylaw.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "facebook.com": {
+      "class": "UGC",
+      "tier": 1,
+      "confidence": "high"
+    },
+    "fairstone.ie": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "farewill.com": {
+      "class": "SPECIALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "fbdconsultancy.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "forums.moneysavingexpert.com": {
+      "class": "UGC",
+      "tier": 1,
+      "confidence": "high"
+    },
+    "forvismazars.com": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "franklins-sols.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "gibsonandassociates.ie": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "girlings.com": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "globalardour.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "gnlaw.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "gov.uk": {
+      "class": "GOV_EDU",
+      "tier": 1,
+      "confidence": "high"
+    },
+    "hedgeslaw.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "heringtons.com": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "hibberts.com": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "hja.net": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "hl.co.uk": {
+      "class": "NATIONAL_BRAND",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "hoa.org.uk": {
+      "class": "INFO",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "homeprotect.co.uk": {
+      "class": "NATIONAL_BRAND",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "howard-over.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "ibissandco.com": {
+      "class": "SPECIALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "joneswhyte.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "justanswer.co.uk": {
+      "class": "UGC",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "kctrust.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "kilcoyne-solicitors.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "labrums.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "lakerlegal.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "lawscot.org.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "lawsociety.org.uk": {
+      "class": "DIRECTORY",
+      "tier": 1,
+      "confidence": "high"
+    },
+    "legalandgeneral.com": {
+      "class": "NATIONAL_BRAND",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "lhkgroup.ie": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "lifetimelawyers.org.uk": {
+      "class": "GOV_EDU",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "lloydsbank.com": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "lordlaw.com.au": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "makeawillonline.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "mccarthy.ie": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "mfgsolicitors.com": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "michaelharwood.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "moneyhelper.org.uk": {
+      "class": "NATIONAL_BRAND",
+      "tier": 1,
+      "confidence": "high"
+    },
+    "moneysavingexpert.com": {
+      "class": "NATIONAL_BRAND",
+      "tier": 1,
+      "confidence": "high"
+    },
+    "mpestateplanning.uk": {
+      "class": "SPECIALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "murphysolicitors.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "mygov.scot": {
+      "class": "GOV_EDU",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "mylifelaw.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "nationalpensionhelpline.ie": {
+      "class": "INFO",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "nationalwillregister.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "nidirect.gov.uk": {
+      "class": "GOV_EDU",
+      "tier": 1,
+      "confidence": "high"
+    },
+    "nps-law.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "nsandi.com": {
+      "class": "NATIONAL_BRAND",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "obr.uk": {
+      "class": "GOV_EDU",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "olaleslie.com": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "onlineprobate.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "osborneslaw.com": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "parkhome-living.co.uk": {
+      "class": "INFO",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "parkhomeassist.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "parkhomes.lease-advice.org": {
+      "class": "GOV_EDU",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "pellys.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "phrsolicitors.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "pjf.ie": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "premiersolicitors.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "pricebailey.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "pricemann.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "probate.ie": {
+      "class": "SPECIALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "probatebureau.com": {
+      "class": "SPECIALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "probatelondon.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "probatesearch.service.gov.uk": {
+      "class": "GOV_EDU",
+      "tier": 1,
+      "confidence": "high"
+    },
+    "psg-law.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "qualitysolicitors.com": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "raisin.com": {
+      "class": "NATIONAL_BRAND",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "reddit.com": {
+      "class": "UGC",
+      "tier": 1,
+      "confidence": "high"
+    },
+    "redwoodfinancial.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "revenue.ie": {
+      "class": "GOV_EDU",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "reviewsolicitors.co.uk": {
+      "class": "DIRECTORY",
+      "tier": 1,
+      "confidence": "high"
+    },
+    "richardrussellsurveyors.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "rsmuk.com": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "rvlegal.com.au": {
+      "class": "INFO",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "saga.co.uk": {
+      "class": "NATIONAL_BRAND",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "sblawyers.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "service.vic.gov.au": {
+      "class": "GENERALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "shepherd.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "sjp.co.uk": {
+      "class": "NATIONAL_BRAND",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "slatergordon.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "solicitors.lawsociety.org.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "solicitorsforolderpeoplescotland.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "sor-solicitors.ie": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "statetrustees.com.au": {
+      "class": "INFO",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "sunlife.co.uk": {
+      "class": "NATIONAL_BRAND",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "swiftvalues.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "telegraph.co.uk": {
+      "class": "NATIONAL_BRAND",
+      "tier": 1,
+      "confidence": "high"
+    },
+    "the-probate-network.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "theburnsidepartnership.com": {
+      "class": "SPECIALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "thegazette.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "thelevelgroup.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "theprivateoffice.com": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "thorntonjones.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "townandcountrylaw.legal": {
+      "class": "SPECIALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "trustestate.co.uk": {
+      "class": "SPECIALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "tsabi.law": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "wbw.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "webuyanycar.com": {
+      "class": "NATIONAL_BRAND",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "willsonssolicitors.co.uk": {
+      "class": "GENERALIST",
+      "tier": 2,
+      "confidence": "high"
+    },
+    "wspsolicitors.com": {
+      "class": "SPECIALIST",
+      "tier": 3,
+      "confidence": "med"
+    },
+    "youtube.com": {
+      "class": "UGC",
+      "tier": 1,
+      "confidence": "high"
+    }
+  },
+  "unknown_rate": 0.0,
+  "llm_share": 0.0
+}

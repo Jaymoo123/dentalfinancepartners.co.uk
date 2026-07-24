@@ -1,0 +1,72 @@
+{
+  "components": {
+    "diy_pain_demand": {
+      "raw": 16140,
+      "normalised": 0.8416,
+      "weighted": 21.0397,
+      "is_null": false,
+      "inputs_n": 106,
+      "note": "vw=16140"
+    },
+    "longtail_winnability": {
+      "raw": {
+        "mean_thinness": 0.84,
+        "mean_weak_share": 0.0616,
+        "thinness_ci95": 0.0492
+      },
+      "normalised": 0.6065,
+      "weighted": 15.162,
+      "is_null": false,
+      "inputs_n": 45,
+      "note": "thinness 0.84 +/- 0.05 (95% CI)"
+    },
+    "rule_churn": {
+      "raw": 10,
+      "normalised": 1.0,
+      "weighted": 15.0,
+      "is_null": false,
+      "inputs_n": 142,
+      "note": "spike_count=10"
+    },
+    "calculator_demand": {
+      "raw": 5590,
+      "normalised": 0.9369,
+      "weighted": 9.3687,
+      "is_null": false,
+      "inputs_n": 119,
+      "note": "calc vol=5590"
+    },
+    "buyer_market_depth": {
+      "raw": {
+        "brokers": 37,
+        "mean_ads": 0,
+        "ch_firms": 0
+      },
+      "normalised": 1.0,
+      "weighted": 10.0,
+      "is_null": false,
+      "inputs_n": 5,
+      "note": "brokers=37, mean_ads=0.0, ch_firms=0"
+    },
+    "aio_exposure": {
+      "raw": 1.0,
+      "normalised": 1.0,
+      "weighted": -10.0,
+      "is_null": false,
+      "inputs_n": 0,
+      "note": "aio share 1.00"
+    },
+    "new_domain_viability": {
+      "raw": null,
+      "normalised": null,
+      "weighted": null,
+      "is_null": true,
+      "inputs_n": 0,
+      "note": "needs bulk_ranks/whois - not yet wired"
+    }
+  },
+  "total": 60.57,
+  "total_min": 60.57,
+  "total_max": 65.57,
+  "complete": false
+}

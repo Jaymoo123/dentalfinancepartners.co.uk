@@ -1,0 +1,2645 @@
+{
+  "queries": [
+    {
+      "q": "as an executor do i need probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "can an executor assign duties",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "contest a will",
+      "intent": "OTHER",
+      "source": "seed"
+    },
+    {
+      "q": "contest a will after probate",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "contest a will cost",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "contest a will lawyer",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "contest a will meaning",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "contest a will nsw",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "contest a will qld",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "contest a will scotland",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "contest a will uk",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "contest a will victoria",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "cost of making a will in ireland calculator",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "cost of making a will in victoria",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "current inheritance tax threshold calculator",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i always need a grant of probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a death certificate to apply for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a formal house valuation for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a grant of probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a grant of probate to transfer property",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a house valuation for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a lawyer for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a lawyer for probate court",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a lawyer to probate a will",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need a probate attorney",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a probate attorney in california",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a probate attorney in florida",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a probate bond",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a probate certificate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need a probate if i have a will",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a probate lawyer",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a probate lawyer in florida",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need a probate lawyer in texas",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need a probate referee",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a probate solicitor",
+      "intent": "DELEGATION",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need a probate valuation",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need a professional valuation for probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need a property valuation for probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need a red book valuation for probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need a rics valuation for probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need a solicitor for probate",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a solicitor for probate uk",
+      "intent": "DELEGATION",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need a solicitor to apply for probate",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a solicitor to get probate",
+      "intent": "DELEGATION",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need a trust to avoid probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need a written valuation for probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need an official house valuation for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need death certificate for probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need grant of probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need grant of probate for life insurance",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need grant of probate to sell house",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need house valuation for probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need original will for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need probate",
+      "intent": "DIY",
+      "source": "seed"
+    },
+    {
+      "q": "do i need probate after death",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate as an executor",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate attorney",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate calculator",
+      "intent": "DIY",
+      "source": "seed"
+    },
+    {
+      "q": "do i need probate checker",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate co op",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate cost",
+      "intent": "DIY",
+      "source": "seed"
+    },
+    {
+      "q": "do i need probate court",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate england",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for a small estate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for a small estate uk",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for a will",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need probate for an excepted estate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for bank accounts",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for barclays",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for both parents",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for halifax",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for joint accounts",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for life insurance",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for lloyds bank",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for my father's estate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for my husband",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for my husbands isa",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for my mother's estate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for natwest",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for premium bonds",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for savings only",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for small estate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate for tenants in common",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate gov uk",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate house clearance",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need probate hsbc",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if all assets are in joint names",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if everything is in joint names",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if everything left to spouse",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if i am executor and sole beneficiary",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if i am the sole beneficiary",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if i have a will",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if i have lasting power of attorney",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if i have power of attorney",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if i'm executor",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if my husband dies",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if my husband dies uk",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if my husband left everything to me",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if my mother dies",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if my spouse dies",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if my wife dies",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if my wife dies uk",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if no will",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if property held as tenants in common",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if property is in joint names",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if spouse dies",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need probate if the estate is small",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if there are no assets",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if there is a will",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if there is a will uk",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if there is no inheritance tax to pay",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if there is no property",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if there is no will",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate if there's a will",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need probate in queensland",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate in scotland",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate in victoria",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate lawyer",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate no will",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate nsw",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate ontario",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate or letters of administration",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate or not",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate qld",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate questionnaire",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate scotland",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate tenants in common",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to cash in premium bonds",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to change land registry",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to claim life insurance",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to close a bank account",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to close bank account",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to open an estate account",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to open an executors account",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to release premium bonds",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to sell a car",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to sell a house",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to sell a mobile home",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need probate to sell a park home",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to sell a property",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to sell deceased parents house",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to sell house",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to sell my late mother's house",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to sell my mother's house",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need probate to sell my mothers house",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need probate to sell my mums house",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to sell my parents house",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to transfer a car",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to transfer an isa",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need probate to transfer property",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate to transfer shares",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate uk",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate when my husband dies",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate when my spouse dies",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate when my wife dies",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate when someone dies",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate with a will",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need probate without a will",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to apply for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need to apply for probate in qld",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to apply for probate in uk",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need to apply for probate in victoria",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to apply for probate in western australia",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need to apply for probate nsw",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to apply for probate uk",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to attend a probate hearing",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to complete iht205 before applying for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need to complete iht400 before applying for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need to complete probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to do probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to do probate for my husband",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to do probate uk",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to get grant of probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need to get house valued for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need to get jewellery valued for probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to get probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to get probate when my father dies",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to get probate when my husband dies",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to get probate when my husband dies uk",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to get probate when my mother dies",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to get probate when someone dies",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to go to probate court",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need to obtain probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to open probate where the person passed",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to probate a will",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need to probate an estate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need to register for probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i need to send death certificate for probate online",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need to swear an oath for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do i need to use probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i really need a probate lawyer",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do i really need probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do we need probate uk",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do you always need probate uk",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do you need a solicitor for probate",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do you need a solicitor for probate uk",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do you need a solicitor for probate with a will",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do you need a solicitor to apply for probate",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "do you need probate before selling a house",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do you need probate between husband and wife",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do you need probate between spouses",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "do you need probate lawyer",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "does estate planning include wills",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "does it cost to apply for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "does probate cost",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "does probate cost a lot of money",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "does probate cost money",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "does probate cost you money",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "duties and responsibilities of an executor",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "estate planner for executors",
+      "intent": "DELEGATION",
+      "source": "seed"
+    },
+    {
+      "q": "estate planner for wills",
+      "intent": "DELEGATION",
+      "source": "seed"
+    },
+    {
+      "q": "estate planning attorney for wills",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "estate planning attorney for wills near me",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "estate planning for wills",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "estate planning for wills and trusts",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "estate planning wills and trusts near me",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "estate planning wills near me",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "estate tax rate calculator",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor duties",
+      "intent": "OTHER",
+      "source": "seed"
+    },
+    {
+      "q": "executor duties and responsibilities",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor duties bc",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor duties calculator",
+      "intent": "DIY",
+      "source": "seed"
+    },
+    {
+      "q": "executor duties checklist",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor duties cost",
+      "intent": "OTHER",
+      "source": "seed"
+    },
+    {
+      "q": "executor duties nsw",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor duties nz",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor duties ontario",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor duties scotland",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor duties to beneficiaries",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor duties uk",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor fee calculator",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor fee calculator alberta",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor fee calculator bc",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor fee calculator california",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor fee calculator nj",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor fee calculator ny",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor fee calculator ohio",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor fee calculator ontario",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor fee calculator pa",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "executor's fees calculator south africa",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "house in joint names do i need probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how do i find out if i need probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how do i know if i need probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how do i know if i need probate uk",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how do i know if need probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how do i need probate",
+      "intent": "DIY",
+      "source": "seed"
+    },
+    {
+      "q": "how does probate cost",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how executor duties",
+      "intent": "DIY",
+      "source": "seed"
+    },
+    {
+      "q": "how how long does probate take",
+      "intent": "DIY",
+      "source": "seed"
+    },
+    {
+      "q": "how inheritance tax threshold",
+      "intent": "DIY",
+      "source": "seed"
+    },
+    {
+      "q": "how inheritance tax works thresholds rules and allowances",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how long do i need to keep probate paperwork",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how long do i need to keep probate paperwork uk",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how long do i need to keep probate records",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how long does probate take",
+      "intent": "DIY",
+      "source": "seed"
+    },
+    {
+      "q": "how long does probate take and cost",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how long does probate take calculator",
+      "intent": "DIY",
+      "source": "seed"
+    },
+    {
+      "q": "how long does probate take cost",
+      "intent": "DIY",
+      "source": "seed"
+    },
+    {
+      "q": "how long does probate take in california",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how long does probate take in florida",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how long does probate take in ireland",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how long does probate take in nsw",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how long does probate take in ontario",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how long does probate take in qld",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how long does probate take in texas",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how long does probate take in victoria",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how long does probate take to complete",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how long does probate take uk",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how long does probate take with a will",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how making a will",
+      "intent": "DIY",
+      "source": "seed"
+    },
+    {
+      "q": "how many copies of grant of probate do i need",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how many copies of probate do i need",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how many death certificates do i need for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how many grants of probate do i need",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how many house valuations do i need for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how many probate certificates do i need",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how many property valuations do i need for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how many valuations do i need for probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how much does a copy grant of probate cost",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does a grant of probate cost",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does a grant of probate cost in england",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does a lawyer cost for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does a probate cost uk",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how much does a probate lawyer cost",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does a probate lawyer cost in florida",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does a probate lawyer cost in georgia",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does a probate lawyer cost in south carolina",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does a probate solicitor cost",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does a probate solicitor cost uk",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does a probate valuation cost",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does a simple probate cost",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how much does a solicitor charge for grant of probate",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does a solicitor charge for probate",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does a solicitor charge for probate in ireland",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does a solicitor charge for probate uk",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does a solicitor charge to apply for probate",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does a solicitor cost for probate",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does a solicitor cost for probate uk",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does a solicitor cost to sort probate",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does diy probate cost",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does grant of probate cost",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does grant of probate cost uk",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost for a probate attorney",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost for grant of probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost for probate lawyer",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost for probate of a will",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost to apply for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost to apply for probate online",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost to contest probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost to do probate yourself",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost to get bonded for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost to get probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost to get probate done",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how much does it cost to go through probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost to go through probate court",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost to go to probate court",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost to hire a probate attorney",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost to hire a probate lawyer",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost to open probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost to probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost to probate a simple will",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost to probate a will",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost to probate an estate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does it cost to sort out probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate application cost",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate attorney cost",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how much does probate cost for a house",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost if you do it yourself",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in arizona",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in california",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how much does probate cost in canada",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in colorado",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in cyprus",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in england",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in fiji",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in florida",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in ireland",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how much does probate cost in kentucky",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in michigan",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in missouri",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in northern ireland",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in nsw",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in ny",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in nz",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in ohio",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how much does probate cost in ontario",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in scotland",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in texas",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how much does probate cost in the uk",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in uk",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost in wales",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost on average",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost qld",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how much does probate cost through a solicitor",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost uk",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how much does probate cost with a solicitor",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost with a will",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost without a will",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate cost you",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how much does probate court cost",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate lawyer cost",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate of a will cost",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does probate solicitor cost",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does solicitor charge for probate",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does solicitor charge for probate ireland",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much does the probate process cost",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "how much making a will cost",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how much money do you need to require probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how to increase inheritance tax threshold",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "how to relinquish executor duties",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "i am executor and sole beneficiary do i need probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "i have a will do i need probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "if i have a will do i need probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "if i have a will do i still need probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "if there is a will do i need probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "inheritance tax allowance calculator",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "inheritance tax ireland threshold calculator",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "inheritance tax rate calculator",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "inheritance tax threshold",
+      "intent": "DIY",
+      "source": "seed"
+    },
+    {
+      "q": "inheritance tax threshold 2025",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "inheritance tax threshold 2025 calculator",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "inheritance tax threshold 2026",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "inheritance tax threshold calculator",
+      "intent": "DIY",
+      "source": "seed"
+    },
+    {
+      "q": "inheritance tax threshold cost",
+      "intent": "DIY",
+      "source": "seed"
+    },
+    {
+      "q": "inheritance tax threshold for children",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "inheritance tax threshold for married couples",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "inheritance tax threshold ireland",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "inheritance tax threshold nil rate band",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "inheritance tax threshold rates",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "inheritance tax threshold rates and tables",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "inheritance tax threshold scotland",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "inheritance tax threshold scotland calculator",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "inheritance tax threshold uk",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "inheritance tax threshold uk 2026",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "inheritance tax threshold uk calculator",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "inheritance tax threshold uk calculator gov",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "inheritance tax thresholds ireland 2026",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "is inheritance tax threshold per person",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "joint tenants do i need probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "making a will",
+      "intent": "OTHER",
+      "source": "seed"
+    },
+    {
+      "q": "making a will calculator",
+      "intent": "DIY",
+      "source": "seed"
+    },
+    {
+      "q": "making a will cost",
+      "intent": "OTHER",
+      "source": "seed"
+    },
+    {
+      "q": "making a will cost ireland",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "making a will cost uk",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "making a will for free",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "making a will in ontario",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "making a will in scotland cost",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "making a will ireland",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "making a will london",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "making a will near me",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "making a will nz",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "making a will nz cost",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "making a will online",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "making a will uk",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "making a will with a solicitor cost",
+      "intent": "DELEGATION",
+      "source": "autocomplete"
+    },
+    {
+      "q": "my husband died do i need probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "nationwide do i need probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "natwest do i need probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "no will do i need probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "probate do i need a solicitor",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "probate do i need it",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "probate fees estate administration tax",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "probate fees tax deductible",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "probate forms",
+      "intent": "OTHER",
+      "source": "seed"
+    },
+    {
+      "q": "probate forms bc",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "probate forms california",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "probate forms ct",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "probate forms georgia",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "probate forms ireland",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "probate forms online",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "probate forms ontario",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "probate forms sa",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "probate forms uk",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "probate how much does it cost",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "probate specialist for executors",
+      "intent": "DELEGATION",
+      "source": "seed"
+    },
+    {
+      "q": "probate specialist for wills",
+      "intent": "DELEGATION",
+      "source": "seed"
+    },
+    {
+      "q": "probate tax cost",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "probate what do i need to do",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "solicitor for executors",
+      "intent": "DELEGATION",
+      "source": "seed"
+    },
+    {
+      "q": "solicitor for wills",
+      "intent": "DELEGATION",
+      "source": "seed"
+    },
+    {
+      "q": "solicitor for wills and probate",
+      "intent": "DELEGATION",
+      "source": "autocomplete"
+    },
+    {
+      "q": "solicitor for wills near me",
+      "intent": "DELEGATION",
+      "source": "autocomplete"
+    },
+    {
+      "q": "solicitors for wills and probate near me",
+      "intent": "DELEGATION",
+      "source": "autocomplete"
+    },
+    {
+      "q": "solicitors for wills and trusts",
+      "intent": "DELEGATION",
+      "source": "autocomplete"
+    },
+    {
+      "q": "solicitors for wills birmingham",
+      "intent": "DELEGATION",
+      "source": "autocomplete"
+    },
+    {
+      "q": "solicitors for wills gold coast",
+      "intent": "DELEGATION",
+      "source": "autocomplete"
+    },
+    {
+      "q": "solicitors for wills in cheltenham",
+      "intent": "DELEGATION",
+      "source": "autocomplete"
+    },
+    {
+      "q": "solicitors for wills in derby",
+      "intent": "DELEGATION",
+      "source": "autocomplete"
+    },
+    {
+      "q": "solicitors for wills sheffield",
+      "intent": "DELEGATION",
+      "source": "autocomplete"
+    },
+    {
+      "q": "spouse died do i need probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "tenants in common do i need probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "virgin money do i need probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what do i need for probate application",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what do i need for probate court",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what do i need for probate uk",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what do i need probate for",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what do i need to apply for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "what do i need to apply for probate online",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "what do i need to know about probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what do i need to probate a will",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what do i need to probate a will in nj",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "what do i need to probate an estate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "what documents do i need for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "what documents do i need for probate in victoria",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what documents do i need to apply for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "what documents do i need to send for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "what documents do i need to send for probate uk",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "what documents do you need to get probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what does a probate lawyer cost",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "what does a solicitor do for probate",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "what does making a will cost",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what does probate cost",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "what does probate cost in uk",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "what forms do i need for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "what forms do i need to complete for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "what forms do i need to fill in for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "what happens if you don't need probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what information do i need for probate uk",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what is inheritance tax threshold for a widow",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what is inheritance tax threshold for married couple",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what is inheritance tax threshold in ireland",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what is inheritance tax threshold in scotland",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what is my inheritance tax threshold",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what is probate and do i need it",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "what is probate and how much does it cost",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "what paperwork do i need for probate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what probate forms do i need",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "what's inheritance tax allowance",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what's inheritance tax rate",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what's inheritance tax threshold",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "what's inheritance tax threshold uk",
+      "intent": "DIY",
+      "source": "autocomplete"
+    },
+    {
+      "q": "when do i need a grant of probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "when do i need a probate attorney",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "when do i need a probate lawyer",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "when do i need probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "when do i need probate after death",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "when do i need probate house clearance",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "when do i need probate uk",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "when do i need to probate a will",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "when does a solicitor apply for probate",
+      "intent": "DELEGATION",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "which inheritance tax form do i need for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "why do i need a bond for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "why do i need a grant of probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "why do i need a probate lawyer",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "why do i need a probate valuation",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "why do i need probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "why do i need probate for a will",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "why do i need probate if i have a will",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "why do i need probate if there is a will",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "why do i need probate uk",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "why do i need probate when there is a will",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "why do i need to apply for probate",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "why do i need to probate a will",
+      "intent": "DIY",
+      "source": "dfs_suggestions"
+    },
+    {
+      "q": "will executor duties",
+      "intent": "OTHER",
+      "source": "autocomplete"
+    },
+    {
+      "q": "will writer for executors",
+      "intent": "DELEGATION",
+      "source": "seed"
+    },
+    {
+      "q": "will writer for wills",
+      "intent": "DELEGATION",
+      "source": "seed"
+    }
+  ],
+  "counts": {
+    "total": 518,
+    "DIY": 409,
+    "dfs_suggestions": 186,
+    "OTHER": 64,
+    "autocomplete": 302,
+    "seed": 30,
+    "DELEGATION": 45
+  },
+  "autocomplete_failures": 0,
+  "dropped_off_niche": 420,
+  "seeds_used": [
+    "contest a will",
+    "do i need probate",
+    "do i need probate calculator",
+    "do i need probate cost",
+    "estate planner for executors",
+    "estate planner for probate",
+    "estate planner for wills",
+    "executor duties",
+    "executor duties calculator",
+    "executor duties cost",
+    "how do i need probate",
+    "how executor duties",
+    "how how long does probate take",
+    "how inheritance tax threshold",
+    "how long does probate take",
+    "how long does probate take calculator",
+    "how long does probate take cost",
+    "how making a will",
+    "how probate cost",
+    "inheritance tax threshold",
+    "inheritance tax threshold calculator",
+    "inheritance tax threshold cost",
+    "making a will",
+    "making a will calculator",
+    "making a will cost",
+    "probate cost",
+    "probate cost calculator",
+    "probate cost cost",
+    "probate forms",
+    "probate specialist for executors",
+    "probate specialist for probate",
+    "probate specialist for wills",
+    "solicitor for executors",
+    "solicitor for probate",
+    "solicitor for wills",
+    "will writer for executors",
+    "will writer for probate",
+    "will writer for wills"
+  ]
+}

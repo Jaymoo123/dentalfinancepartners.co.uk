@@ -1,0 +1,52 @@
+{
+  "candidate_id": "lasting-power-of-attorney-leadmkt-2026-07",
+  "vertical": "lasting power of attorney",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://lead-genie.co.uk/",
+      "excerpt": "All campaigns operate on a cost-per-lead basis, ensuring high-quality, measurable results. ... LPA / Lasting Power Of Attorney Leads. Enquire Now. Equity Release ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.reddit.com/r/LawFirm/comments/1i4azgy/paying_for_leads/",
+      "excerpt": "For business law I pay about $60-80/lead. From what we've seen with our clients, typical costs can range from $150-400 per lead in most markets.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.martindale-avvo.com/blog/should-your-law-firm-invest-in-attorney-pay-per-lead-generation/",
+      "excerpt": "9 Jun 2021 — Lawyer pay per lead can be a valuable option for practices with limited marketing experience or significant budgetary constraints, but it won't automatically ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.legalbrandmarketing.com/how-much-should-you-pay-for-lead-generation/",
+      "excerpt": "Personal Injury $150 – $500+ Large settlements, $300 – $1,000+ Multi-million. Buying Pre-Qualified Leads $100 – $500 per lead Varies Immediate By understanding ...",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "how much should you pay for lead generation? pricing ...",
+    "lasting power of attorney",
+    "lead genie | lead generation",
+    "paying for leads : r/lawfirm",
+    "should your law firm invest in attorney pay per lead ..."
+  ],
+  "buyer_hypothesis": {
+    "who": "UK lasting power of attorney providers already paying per lead",
+    "proof": "4 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

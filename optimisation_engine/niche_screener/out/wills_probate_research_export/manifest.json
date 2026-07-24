@@ -1,0 +1,10 @@
+{
+  "run_id": "run_20260724T133216Z_fe9fa8",
+  "niche": "ext-wills-probate",
+  "utc": "2026-07-24T14:20:32.154990+00:00",
+  "git_hash": "b6e7a03f4175de22ffde90208d82ad07cd7fac8e",
+  "rubric_version": "2.0",
+  "stages": {
+    "note": "stage2 completed post-G1-fix, wider battery, 2026-07-24"
+  }
+}
