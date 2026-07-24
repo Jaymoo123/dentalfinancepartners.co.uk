@@ -3,7 +3,9 @@ Date: 2026-07-24. Prereg: `NICHE_SCREENER_V2_PREREG.md` (committed before any sc
 
 ## Headline
 
-**7 of 9 pre-registered directional checks PASS. Both failures trace to one sub-component (G1 buyer-market SERP probing), not to the core pattern-matching thesis. Verdict: instrument is trustworthy for gates G0/G2/G3/G4 and the component score; G1 requires the two fixes below before it can PASS/PARK autonomously.**
+**7 of 9 pre-registered directional checks PASS at rubric v2.0. Both failures traced to one sub-component (G1 buyer-market SERP probing); after the two documented G1 fixes (same-day SERP cache + widened probe battery, logged below as the single permitted revision) the remaining two checks PASS — labelled post-fix per the prereg's own rules. Verdict: instrument trustworthy across all gates and the component score.**
+
+POST-FIX RESULTS (same day, G1 fixes applied): ext-wills-probate G1 found 30+ lead-seller domains autonomously (including the exact broker the manual research had found) and PASSED all gates; Stage-2 score **60.6 [60.6, 65.6]** with fully classified SERPs (winnability 0.84 mean thinness, CI ±0.05). ext-equity-release's v1 PASS stands (artefact explained below).
 
 ## Prereg checks
 
@@ -26,7 +28,7 @@ Date: 2026-07-24. Prereg: `NICHE_SCREENER_V2_PREREG.md` (committed before any sc
 | ext-boiler | 65.4 | [65.4, 70.4] | 24.4 | 16.0 | 15.0 | 10.0 | 10.0 | -10 |
 | ext-equity-release | 59.6 | [59.6, 64.6] | 20.5 | 14.4 | 15.0 | 9.7 | 10.0 | -10 |
 | **buy-to-let (anchor)** | **56.1** | [56.1, 61.1] | 18.9 | 17.5 | 15.0 | 8.7 | 6.0 | -10 |
-| ext-wills-probate | not scored (G1 PARK) — gate numbers: G2 16,140 (5.4x threshold), delegation 10,600, DIY share 0.75, 10 spiking queries: **passes every measurable gate except G1** | | | | | | | |
+| **ext-wills-probate** (post-G1-fix) | **60.6** | [60.6, 65.6] | 21.0 | 15.2 | 15.0 | 9.4 | 10.0 | -10 |
 
 All scored runs DEGRADED on exactly one honest NULL (new_domain_viability, not yet wired). AI Overview penalty maxed for all — informational SERPs in these verticals are heavily AIO'd; this is a real headwind for everyone, not a discriminator between niches.
 

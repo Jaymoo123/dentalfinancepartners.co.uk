@@ -43,12 +43,18 @@ def check_buyer_market(spec: dict, run_id: str) -> dict:
     if override:
         return {"verdict": "PASS", "evidence": {"override": override}}
 
+    # Probe battery widened after backtest defect #3: three literal phrasings
+    # missed adjacent lead-market vocabulary ("estate planning leads" vs
+    # "wills and probate leads"). Battery now spans vertical + audience terms
+    # + provider-side phrasing, capped to keep spend bounded.
     vertical = spec.get("vertical", spec["name"].replace("-", " "))
-    queries = [
-        f"buy {vertical} leads",
-        f'"{vertical} leads" price',
-        f"{vertical} pay per lead",
-    ]
+    terms = [vertical] + [t for t in (spec.get("audience_terms") or []) if t.lower() != vertical.lower()]
+    queries: list[str] = []
+    for t in terms[:3]:
+        queries += [f"buy {t} leads", f'"{t} leads" price', f"{t} pay per lead"]
+    for prov in (spec.get("provider_terms") or [])[:2]:
+        queries.append(f"leads for {prov}s uk")
+    queries = list(dict.fromkeys(queries))[:12]
     sellers: dict[str, dict] = {}
     for q in queries:
         for item in fetch_serp(q, num=10, site_key="niche_screener")["organic"]:
