@@ -1,0 +1,28 @@
+{
+  "name": "solicitors",
+  "vertical": "law firm accounting and VAT",
+  "provider_terms": [
+    "accountant",
+    "tax adviser",
+    "tax advisor",
+    "accounting firm",
+    "bookkeeper"
+  ],
+  "pain_seeds": [
+    "solicitor vat",
+    "disbursements vat",
+    "law firm accounts rules",
+    "counsel fees vat",
+    "solicitor flat rate scheme",
+    "client account rules"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": true,
+  "seed_evidence": [
+    "solicitors GSC queries per docs/PORTFOLIO_LEAD_AUDIT_2026-07-10.md (ranks well, converts poorly - conversion is site-side, niche should score mid)"
+  ],
+  "audience_terms": [
+    "solicitors",
+    "law firms"
+  ]
+}

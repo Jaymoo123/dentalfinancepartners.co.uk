@@ -1,0 +1,28 @@
+{
+  "name": "ext-equity-release",
+  "vertical": "equity release",
+  "provider_terms": [
+    "adviser",
+    "advisor",
+    "broker",
+    "specialist",
+    "solicitor"
+  ],
+  "pain_seeds": [
+    "equity release calculator",
+    "how does equity release work",
+    "equity release interest rates",
+    "lifetime mortgage",
+    "equity release pitfalls",
+    "equity release inheritance"
+  ],
+  "regulatory_gate": "IAR",
+  "accounting_adjacent": false,
+  "seed_evidence": [
+    "Out-of-family backtest control: known thriving paid-lead market (published lead prices 110-250 GBP). Prereg expectation HIGH."
+  ],
+  "audience_terms": [
+    "equity release",
+    "over 55s"
+  ]
+}

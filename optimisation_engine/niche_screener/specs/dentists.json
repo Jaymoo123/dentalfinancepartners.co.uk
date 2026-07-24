@@ -1,0 +1,30 @@
+{
+  "name": "dentists",
+  "vertical": "dental practice accounting",
+  "provider_terms": [
+    "accountant",
+    "tax adviser",
+    "tax advisor",
+    "accounting firm",
+    "bookkeeper"
+  ],
+  "pain_seeds": [
+    "dentist tax return",
+    "dental associate expenses",
+    "nhs pension dentist tax",
+    "dental practice incorporation",
+    "uda value",
+    "dentist limited company",
+    "dental practice valuation"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": true,
+  "seed_evidence": [
+    "GSC queries per docs/PORTFOLIO_LEAD_AUDIT_2026-07-10.md (expected G3 head-lock failure per prereg)"
+  ],
+  "audience_terms": [
+    "dentists",
+    "dental practices",
+    "dental associates"
+  ]
+}

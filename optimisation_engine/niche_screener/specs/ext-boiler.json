@@ -1,0 +1,27 @@
+{
+  "name": "ext-boiler",
+  "vertical": "boiler replacement",
+  "provider_terms": [
+    "engineer",
+    "installer",
+    "heating engineer",
+    "plumber"
+  ],
+  "pain_seeds": [
+    "new boiler cost",
+    "boiler replacement grants",
+    "combi boiler prices",
+    "boiler not working",
+    "best boiler brands",
+    "boiler finance"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": false,
+  "seed_evidence": [
+    "Out-of-family backtest control: proven high-volume paid-lead market (Checkatrade/quote networks). Prereg expectation HIGH on buyer market, likely LOW on winnability (saturated comparison sites) - a discrimination test."
+  ],
+  "audience_terms": [
+    "new boilers",
+    "boiler replacement"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "buy-to-let",
+  "vertical": "landlord property tax",
+  "provider_terms": [
+    "accountant",
+    "tax adviser",
+    "tax advisor",
+    "accounting firm",
+    "bookkeeper"
+  ],
+  "pain_seeds": [
+    "landlord tax return",
+    "section 24 mortgage interest relief",
+    "rental income tax",
+    "landlord limited company",
+    "capital gains tax rental property",
+    "making tax digital landlord",
+    "landlord allowable expenses",
+    "transfer property to limited company"
+  ],
+  "regulatory_gate": "none",
+  "buyer_market_override": "proven internal: DJH lead-purchase agreement executed 2026-06-22 at 85 GBP per qualifying lead (legal/Plain_English_Summary.md); Haines Watts proposal live at 100-250 GBP",
+  "accounting_adjacent": true,
+  "seed_evidence": [
+    "GSC top queries per docs/PORTFOLIO_LEAD_AUDIT_2026-07-10.md and ESTATE_QUERY_LEDGER_2026-07-17.md (calibration anchor site)"
+  ],
+  "audience_terms": [
+    "landlords",
+    "buy to let landlords",
+    "property investors"
+  ]
+}

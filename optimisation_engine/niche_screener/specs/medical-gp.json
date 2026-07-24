@@ -1,0 +1,28 @@
+{
+  "name": "medical-gp",
+  "vertical": "GP and locum doctor accounting",
+  "provider_terms": [
+    "accountant",
+    "tax adviser",
+    "tax advisor",
+    "accounting firm"
+  ],
+  "pain_seeds": [
+    "locum doctor tax",
+    "nhs pension annual allowance",
+    "gp partner accounts",
+    "doctor limited company",
+    "locum expenses",
+    "medical practice accounts"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": true,
+  "seed_evidence": [
+    "medical site queries per docs/medical/DIAGNOSIS_2026-07_SYNTHESIS.md (scored separately per prereg - technical confound)"
+  ],
+  "audience_terms": [
+    "doctors",
+    "gps",
+    "locum doctors"
+  ]
+}

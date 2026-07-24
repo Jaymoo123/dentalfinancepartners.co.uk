@@ -1,0 +1,26 @@
+{
+  "name": "ext-conveyancing",
+  "vertical": "conveyancing",
+  "provider_terms": [
+    "solicitor",
+    "conveyancer",
+    "licensed conveyancer"
+  ],
+  "pain_seeds": [
+    "conveyancing fees",
+    "how long does conveyancing take",
+    "conveyancing process",
+    "searches when buying a house",
+    "exchange of contracts",
+    "completion day"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": false,
+  "seed_evidence": [
+    "Out-of-family backtest control: known commodity graveyard (4-7 GBP leads, comparison-network walls). Prereg expectation LOW/FAIL."
+  ],
+  "audience_terms": [
+    "conveyancing",
+    "house buyers"
+  ]
+}

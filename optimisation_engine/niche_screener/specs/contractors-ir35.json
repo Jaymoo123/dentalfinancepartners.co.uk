@@ -1,0 +1,29 @@
+{
+  "name": "contractors-ir35",
+  "vertical": "contractor IR35 accounting",
+  "provider_terms": [
+    "accountant",
+    "tax adviser",
+    "tax advisor",
+    "accounting firm",
+    "umbrella company"
+  ],
+  "pain_seeds": [
+    "ir35 rules",
+    "inside ir35 take home pay",
+    "contractor limited company",
+    "umbrella vs limited company",
+    "ir35 status check",
+    "contractor expenses"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": true,
+  "seed_evidence": [
+    "phase9 shortlist docs/phase9_niche_scores.md (expected gate failure or bottom quartile per prereg)"
+  ],
+  "audience_terms": [
+    "contractors",
+    "it contractors",
+    "freelancers"
+  ]
+}
