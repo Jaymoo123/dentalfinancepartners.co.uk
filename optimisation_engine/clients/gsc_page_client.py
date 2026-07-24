@@ -39,6 +39,7 @@ _SITE_URL_MAP = {
     "dentists":          "sc-domain:dentalfinancepartners.co.uk",
     "medical":           "sc-domain:medicalaccounts.co.uk",
     "wills-probate":     "sc-domain:probate-compass-placeholder.co.uk",
+    "divorce-finances":  "sc-domain:placeholder-divorce-domain.example",
     "solicitors":        "sc-domain:accountsforlawyers.co.uk",
     "agency":            "sc-domain:agencyfounderfinance.co.uk",
     "generalist":        "sc-domain:hollowaydavies.co.uk",

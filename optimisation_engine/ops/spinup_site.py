@@ -445,11 +445,12 @@ SITE_CONFIG: dict = {{
 EXISTING_SITE_KEYS = [
     "property", "dentists", "medical", "solicitors", "agency", "generalist",
     "contractors-ir35", "construction-cis", "charities", "wills-probate",
+    "divorce-finances",
 ]
 EXISTING_LEAD_SOURCES = [
     "dentists", "property", "medical", "solicitors", "generalist", "general",
     "agency", "agency-founder-finance", "contractors-ir35", "construction-cis",
-    "test", "charities", "wills-probate",
+    "test", "charities", "wills-probate", "divorce-finances",
 ]
 
 STATE_MD = """# {niche} ({display_name}) site state

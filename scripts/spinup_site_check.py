@@ -53,6 +53,7 @@ SITE_DIR_CANDIDATES: dict[str, list[str]] = {
     "contractors-ir35": ["contractors-ir35"],
     "console": ["console"],
     "wills-probate": ["wills-probate"],
+    "divorce-finances": ["divorce-finances"],
 }
 
 # ---------------------------------------------------------------------------
