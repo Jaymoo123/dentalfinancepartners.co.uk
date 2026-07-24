@@ -101,7 +101,7 @@ faqs:
 <p>If someone dies without a will in England and Wales, the surviving spouse or civil partner receives a statutory legacy of £322,000 plus half of anything above it, with children taking the other half. <strong>Scotland does not use this system at all.</strong> Scottish intestacy instead works through three layers, in strict order:</p>
 
 <ol>
-<li><strong>Prior rights.</strong> The surviving spouse or civil partner first takes the family home up to a value of £473,000, furniture and furnishings up to £29,000, and a cash sum of £50,000 if the deceased left children or other descendants, or £89,000 if not. The housing and furnishings figures were uprated to these levels in 2023.</li>
+<li><strong>Prior rights.</strong> The surviving spouse or civil partner first takes the family home up to a value of £473,000, furniture and furnishings up to £29,000, and a cash sum of £50,000 if the deceased left children or other descendants, or £89,000 if not. These figures have applied since February 2012.</li>
 <li><strong>Legal rights.</strong> The legal rights shares described above are then settled out of what remains of the moveable estate.</li>
 <li><strong>The free estate.</strong> Anything left passes to relatives in a fixed statutory order: children first, then parents and siblings, and so on.</li>
 </ol>

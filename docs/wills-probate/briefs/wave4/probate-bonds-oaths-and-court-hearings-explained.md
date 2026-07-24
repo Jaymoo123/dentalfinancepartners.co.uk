@@ -1,0 +1,37 @@
+# Brief: Probate Bonds, Oaths and Court Hearings Explained
+
+## Topic Metadata
+- primary_keyword: `do i need to attend a probate hearing`
+- volume (recorded): 20
+- category: Probate Process
+- cluster: admin-process
+- slug: `probate-bonds-oaths-and-court-hearings-explained`
+- brief_depth: light
+
+## SERP Evidence
+Light-depth brief — single-pass check against "do i need to attend a probate hearing" plus adjacent sibling-topic research reused from this wave's shared clusters (see sibling briefs in the same cluster for fuller competitor context). Recorded search volume is low, so this brief is scoped for depth-appropriate coverage rather than a full independent SERP pull.
+
+Verdict: **soft** competition (thin/long-tail query, low differentiation risk).
+
+## Competitor Coverage Outline
+- Standard explainer structure: definition/context, key rule(s), practical steps, FAQ.
+- No single competitor stands out for this exact long-tail query; treat as a supporting page in its cluster rather than a standalone ranking bet.
+
+## Gap / Angle
+- Keep this page tight and factually accurate rather than padded — it exists primarily to close a long-tail gap and interlink into the fuller pillar/cluster content, not to compete head-on for a high-volume term.
+- Answer the literal query in the first two sentences (direct answer-box structure) before any supporting detail — thin/zero-volume long-tail pages convert best on AI-Overview and featured-snippet extraction, not on-page dwell time.
+- Link decisively into the fuller sibling pillar/cluster page rather than duplicating its depth here.
+
+## Suggested FAQ Candidates
+1. Probate Bonds, Oaths and Court Hearings Explained?
+2. What is the practical test for deciding this — who actually makes the call?
+3. Does the answer change if the estate also has other, larger assets?
+4. What should you do if you're still unsure after checking this?
+
+## Suggested Internal Links
+- Pillar: `/probate`
+- Sibling cluster: see `admin-process` grouping in _INDEX.md for cross-link partners
+- `/calculators/probate-timeline-estimator`
+
+## Assigned Calculator
+`probate-timeline-estimator`
