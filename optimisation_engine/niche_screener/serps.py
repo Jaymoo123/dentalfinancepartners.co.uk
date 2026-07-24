@@ -47,8 +47,7 @@ def _parse_response(resp: dict) -> dict:
     return out
 
 
-def fetch_serps(spec: dict, run_id: str, *, site_key: str | None = None, n_longtail: int = 45) -> dict:
-    # ponytail: site_key None until sites row exists (migration 20260724000001, owner-applied)
+def fetch_serps(spec: dict, run_id: str, *, site_key: str | None = "niche_screener", n_longtail: int = 45) -> dict:
     from optimisation_engine.niche_screener.serp_fetch import fetch_serp
 
     niche = spec["name"]

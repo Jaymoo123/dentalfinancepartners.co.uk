@@ -172,7 +172,7 @@ def mine(
     verticals: list[str] | None = None,
     *,
     limit: int | None = None,
-    site_key: str | None = None,  # ponytail: None until sites row exists (migration 20260724000001)
+    site_key: str | None = "niche_screener_gen1",  # ponytail: None until sites row exists (migration 20260724000001)
 ) -> list[dict]:
     probes = [(v, aa) for v, aa in VERTICAL_PROBES if verticals is None or v in verticals]
     if limit is not None:

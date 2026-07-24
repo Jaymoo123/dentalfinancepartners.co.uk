@@ -36,7 +36,7 @@ def niche_vocab(spec: dict) -> set[str]:
     (provider terms alone match every niche using the same professionals)."""
     provider_tokens = {t for term in spec["provider_terms"] for t in term.lower().split()}
     vocab: set[str] = set()
-    for phrase in list(spec["pain_seeds"]) + [spec.get("vertical", "")]:
+    for phrase in list(spec["pain_seeds"]) + [spec.get("vertical", "")] + list(spec.get("audience_terms") or []):
         for tok in re.findall(r"[a-z0-9]+", phrase.lower()):
             if tok not in _STOPWORDS and tok not in provider_tokens and len(tok) > 2:
                 vocab.add(tok)
@@ -49,14 +49,23 @@ def in_niche(query: str, vocab: set[str]) -> bool:
     return any(tok in vocab for tok in re.findall(r"[a-z0-9]+", query.lower()))
 
 
+def audience_terms(spec: dict) -> list[str]:
+    """Natural nouns for the audience ("dentists", "landlords"). Falls back to
+    the vertical phrase, but specs should set audience_terms explicitly:
+    "accountant for dentists" is a real query, "accountant for dental practice
+    accounting" is not, and dead probes silently zero the delegation signal."""
+    terms = spec.get("audience_terms") or [spec.get("vertical", spec["name"].replace("-", " "))]
+    return [t.strip().lower() for t in terms if t.strip()]
+
+
 def build_seed_queries(spec: dict) -> list[str]:
     """Deterministic seed list: pain seeds, delegation probes, templated frames.
-    Delegation probes are anchored to the vertical so autocomplete cannot drag
-    in the generic universe every niche shares ("accountant for small business")."""
-    vertical = spec.get("vertical", spec["name"].replace("-", " ")).lower()
+    Delegation probes pair provider terms with natural audience nouns so they
+    stay niche-anchored without becoming zero-volume phrases."""
     seeds: list[str] = list(spec["pain_seeds"])
     for term in spec["provider_terms"]:
-        seeds.append(f"{term} for {vertical}")
+        for aud in audience_terms(spec):
+            seeds.append(f"{term} for {aud}")
     for seed in spec["pain_seeds"][:6]:
         for tpl in SEED_TEMPLATES:
             seeds.append(tpl.format(seed=seed))
@@ -82,8 +91,7 @@ def _autocomplete(client: httpx.Client, query: str) -> list[str] | None:
         return None
 
 
-def build_universe(spec: dict, run_id: str, *, site_key: str | None = None) -> dict:
-    # ponytail: site_key None until sites row exists (migration 20260724000001, owner-applied)
+def build_universe(spec: dict, run_id: str, *, site_key: str | None = "niche_screener") -> dict:
     seeds = build_seed_queries(spec)
     # query -> source (first source wins; seed < autocomplete < dfs precedence not needed,
     # first-seen is deterministic given ordered passes below)
@@ -112,12 +120,12 @@ def build_universe(spec: dict, run_id: str, *, site_key: str | None = None) -> d
 
     # DataForSEO keyword_suggestions: top 2 pain seeds + first provider probe = 3 calls
     dfs = DataForSEOClient()
-    vertical = spec.get("vertical", spec["name"].replace("-", " ")).lower()
     dfs_seeds = [s.strip().lower() for s in spec["pain_seeds"][:2]]
-    dfs_seeds.append(f"{spec['provider_terms'][0]} for {vertical}".strip().lower())
+    dfs_seeds.append(f"{spec['provider_terms'][0]} for {audience_terms(spec)[0]}")
     for seed in dfs_seeds:
         try:
-            resp = dfs.keyword_suggestions(site_key=site_key, seed_keyword=seed, limit=200)
+            # limit 205 not 200: distinct idempotency key from the degraded 2026-07-24 morning runs
+            resp = dfs.keyword_suggestions(site_key=site_key, seed_keyword=seed, limit=205)
         except IdempotencyHit:
             print(f"[expand] IdempotencyHit on keyword_suggestions({seed!r}), treating as empty")
             continue

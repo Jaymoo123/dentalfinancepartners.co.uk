@@ -51,7 +51,7 @@ def check_buyer_market(spec: dict, run_id: str) -> dict:
     ]
     sellers: dict[str, dict] = {}
     for q in queries:
-        for item in fetch_serp(q, num=10, site_key=None)["organic"]:
+        for item in fetch_serp(q, num=10, site_key="niche_screener")["organic"]:
             dom = item.get("domain") or common.domain_of(item.get("link") or "")
             if not dom or dom in _DIRECTORY_DOMAINS:
                 continue
@@ -131,8 +131,7 @@ def g4_churn(volumes: dict[str, dict], spec: dict) -> dict:
     }
 
 
-def run_gates(spec: dict, run_id: str, *, site_key: str | None = None) -> dict:
-    # ponytail: site_key None until sites row exists (migration 20260724000001, owner-applied)
+def run_gates(spec: dict, run_id: str, *, site_key: str | None = "niche_screener") -> dict:
     gates: dict[str, dict] = {}
 
     reg = spec["regulatory_gate"]

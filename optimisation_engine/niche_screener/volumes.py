@@ -76,8 +76,7 @@ def parse_search_volume(response: dict) -> dict[str, dict]:
     return out
 
 
-def fetch_volumes(spec: dict, run_id: str, *, site_key: str | None = None) -> dict:
-    # ponytail: site_key None until sites row exists (migration 20260724000001, owner-applied)
+def fetch_volumes(spec: dict, run_id: str, *, site_key: str | None = "niche_screener") -> dict:
     universe = common.cache_get(run_id, spec["name"], "universe")
     if universe is None:
         raise RuntimeError(f"universe cache missing for run {run_id} / {spec['name']}; run expand first")
