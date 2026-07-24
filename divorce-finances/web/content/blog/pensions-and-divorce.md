@@ -43,7 +43,7 @@ faqs:
 
 <p>Pension rights built up during a marriage are matrimonial assets like any other, and section 25 of the <a href="https://www.legislation.gov.uk/ukpga/1973/18/section/25">Matrimonial Causes Act 1973</a> expressly requires the court to consider benefits, including pensions, that a party will lose the chance to acquire because of the divorce. A marriage where one person built a career and pension while the other ran the home is treated as a joint enterprise: the pension is a product of both contributions.</p>
 
-<p>Two practical points follow. First, disclosure of all pensions, including old workplace schemes and preserved benefits, is part of every settlement; Form E requires cash equivalent values for each arrangement. Second, and less obvious: <strong>only a court order can divide a pension</strong>. However amicable your agreement, a pension share exists only when a judge seals it, which is one of the strongest practical reasons to get a <a href="/blog/consent-orders-and-clean-break-orders">consent order</a> even in a friendly divorce.</p>
+<p>Two practical points follow. First, disclosure of all pensions, including old workplace schemes and preserved benefits, is part of every settlement; Form E requires cash equivalent values for each arrangement. Second, and less obvious: <strong>only a court order can divide a pension</strong>. However amicable your agreement, a pension share exists only when a judge seals it, which is one of the strongest practical reasons to get a <a href="/blog/process-and-costs/consent-orders-and-clean-break-orders">consent order</a> even in a friendly divorce.</p>
 
 <h2>Mechanism 1: pension sharing orders</h2>
 
@@ -122,4 +122,3 @@ faqs:
 <h2>Speak to a specialist</h2>
 
 <p>Pension mistakes in divorce are invisible for twenty years and irreversible when they surface. Our service connects people across England and Wales with experienced family law professionals who handle pension sharing and offsetting every day, and who work alongside regulated advisers where pension decisions are needed. Tell us a little about your situation for a no-obligation conversation. We are not a law firm or a financial adviser; we may receive a fee from the firm we introduce you to, which never affects what you pay or the advice you receive.</p>
----

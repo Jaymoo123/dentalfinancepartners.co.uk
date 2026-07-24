@@ -46,7 +46,7 @@ faqs:
 <ul>
 <li><strong>Property adjustment:</strong> transferring the family home into one name, ordering a sale and dividing proceeds, or deferring a sale (a Mesher arrangement) until a trigger such as the youngest child turning 18</li>
 <li><strong>Lump sum payments</strong>, immediate or staged</li>
-<li><strong>Pension sharing or attachment</strong>: the only way any pension can be divided; see <a href="/blog/pensions-and-divorce">pensions and divorce</a></li>
+<li><strong>Pension sharing or attachment</strong>: the only way any pension can be divided; see <a href="/blog/pensions-and-divorce/pensions-and-divorce">pensions and divorce</a></li>
 <li><strong>Spousal maintenance</strong>, for a fixed term or (now rarely) joint lives</li>
 <li><strong>Undertakings</strong>: enforceable promises covering things the court cannot directly order, such as paying a joint debt or maintaining life cover behind maintenance</li>
 <li><strong>Clean break clauses</strong>, dismissing future claims</li>
@@ -90,7 +90,7 @@ faqs:
 <li><strong>Advice on the deal itself</strong>, if you want it: some fixed fees include a review of whether the agreement is sensible for you; pure drafting services do not. The distinction matters, and cheap quotes often quietly exclude it.</li>
 </ul>
 
-<p>If you cannot yet agree terms, the cost question changes shape: it becomes a negotiation-route question, covered in <a href="/blog/cost-of-divorce-uk">the cost of divorce</a> and comparable in the <a href="/calculators/mediation-vs-solicitor-comparison">mediation vs solicitor comparison</a>. The <a href="/calculators/consent-order-cost-calculator">consent order cost calculator</a> covers the agreed-order routes side by side.</p>
+<p>If you cannot yet agree terms, the cost question changes shape: it becomes a negotiation-route question, covered in <a href="/blog/process-and-costs/cost-of-divorce-uk">the cost of divorce</a> and comparable in the <a href="/calculators/mediation-vs-solicitor-costs">mediation vs solicitor comparison</a>. The <a href="/calculators/consent-order-cost-calculator">consent order cost calculator</a> covers the agreed-order routes side by side.</p>
 
 <h2>The process, step by step</h2>
 
@@ -101,7 +101,7 @@ faqs:
 <li><strong>Wait for the conditional order.</strong> The court can only approve the financial order once the divorce has reached conditional order stage.</li>
 <li><strong>File and pay the £62 fee.</strong> Both parties sign the draft order and D81; the application goes to the court, in most cases digitally.</li>
 <li><strong>Judicial review on paper.</strong> A judge checks the order for fairness and workability. Possible outcomes: approval; a requisition asking questions or requiring amendments; rarely, a hearing. Straightforward orders are commonly turned around in a matter of weeks, though timescales vary by court workload.</li>
-<li><strong>Sealing and effect.</strong> The order takes effect on the final order of divorce. Pension sharing orders then move into their implementation phase with the schemes, which has its own timetable; see <a href="/blog/pensions-and-divorce">pensions and divorce</a>.</li>
+<li><strong>Sealing and effect.</strong> The order takes effect on the final order of divorce. Pension sharing orders then move into their implementation phase with the schemes, which has its own timetable; see <a href="/blog/pensions-and-divorce/pensions-and-divorce">pensions and divorce</a>.</li>
 </ol>
 
 <h2>Why judges reject consent orders</h2>
@@ -129,4 +129,3 @@ faqs:
 <h2>Speak to a specialist</h2>
 
 <p>A consent order is the cheapest step in a divorce and the one carrying the most long-term weight, which is exactly the combination that deserves professional drafting. Our service connects people across England and Wales with experienced family law professionals who prepare consent orders and clean break orders every day, from no-asset clean breaks to settlements with pension sharing. Tell us a little about your situation for a no-obligation conversation and a clear fixed-fee quote. We are not a law firm and we do not give legal advice; we may receive a fee from the firm we introduce you to, which never affects what you pay or the advice you receive.</p>
----

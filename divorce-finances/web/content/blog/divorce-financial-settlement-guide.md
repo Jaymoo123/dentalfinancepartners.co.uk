@@ -51,7 +51,7 @@ faqs:
 <li>Neither of you has certainty, however amicable things feel today.</li>
 </ul>
 
-<p>Courts have permitted claims brought long after separation where no order was ever made, which is why family lawyers treat "we sorted it between ourselves" as unfinished business. The fix is a <a href="/blog/consent-orders-and-clean-break-orders">consent order, usually with clean break terms</a>, covered later in this guide.</p>
+<p>Courts have permitted claims brought long after separation where no order was ever made, which is why family lawyers treat "we sorted it between ourselves" as unfinished business. The fix is a <a href="/blog/process-and-costs/consent-orders-and-clean-break-orders">consent order, usually with clean break terms</a>, covered later in this guide.</p>
 
 <h2>What counts: matrimonial and non-matrimonial assets</h2>
 
@@ -106,7 +106,7 @@ faqs:
 <li><strong>Long marriage, children, one main earner:</strong> the parent housing the children often receives more than half of the capital, sometimes with ongoing spousal maintenance, because their needs and lower earning capacity demand it.</li>
 <li><strong>Long marriage, no dependent children, similar earnings:</strong> equal division of matrimonial assets is the likely destination.</li>
 <li><strong>Short marriage, no children:</strong> outcomes lean towards returning each party to their pre-marriage position, with pre-marital assets carrying real weight.</li>
-<li><strong>Pensions:</strong> increasingly shared rather than ignored; see our <a href="/blog/pensions-and-divorce">complete guide to pensions and divorce</a>.</li>
+<li><strong>Pensions:</strong> increasingly shared rather than ignored; see our <a href="/blog/pensions-and-divorce/pensions-and-divorce">complete guide to pensions and divorce</a>.</li>
 </ul>
 
 <p>Our <a href="/calculators/settlement-range-estimator">settlement range estimator</a> applies these patterns to your figures and returns a range, not a single number, because no honest tool can promise a precise entitlement where the law itself is discretionary.</p>
@@ -119,7 +119,7 @@ faqs:
 
 <h2>The routes to a settlement</h2>
 
-<p>There are four broad routes, in rising order of cost and conflict. Our <a href="/calculators/mediation-vs-solicitor-comparison">mediation vs solicitor comparison tool</a> puts realistic numbers on the first three.</p>
+<p>There are four broad routes, in rising order of cost and conflict. Our <a href="/calculators/mediation-vs-solicitor-costs">mediation vs solicitor comparison tool</a> puts realistic numbers on the first three.</p>
 
 <h3>1. Direct agreement between yourselves</h3>
 
@@ -131,7 +131,7 @@ faqs:
 
 <h3>3. Solicitor negotiation</h3>
 
-<p>Each party instructs a solicitor and terms are agreed through correspondence and round-table meetings. Appropriate where there is an imbalance of power or financial knowledge, complex assets (businesses, trusts, significant pensions), or mediation has failed. Costs scale with conflict; see <a href="/blog/cost-of-divorce-uk">our full breakdown of divorce costs</a>.</p>
+<p>Each party instructs a solicitor and terms are agreed through correspondence and round-table meetings. Appropriate where there is an imbalance of power or financial knowledge, complex assets (businesses, trusts, significant pensions), or mediation has failed. Costs scale with conflict; see <a href="/blog/process-and-costs/cost-of-divorce-uk">our full breakdown of divorce costs</a>.</p>
 
 <h3>4. Court: financial remedy proceedings</h3>
 
@@ -141,7 +141,7 @@ faqs:
 
 <p>Whichever route you take, the settlement becomes legally enforceable only when a judge approves it as a <strong>financial consent order</strong>. The judge checks the order is broadly fair against the disclosed finances; approval is usually on paper, without a hearing. Where possible, the order should include <strong>clean break</strong> terms dismissing future claims in both directions, including claims against each other's estates on death. That is what actually ends the financial relationship.</p>
 
-<p>This is important enough to have its own pillar: see our <a href="/blog/consent-orders-and-clean-break-orders">complete guide to consent orders and clean break orders</a>, and the <a href="/calculators/consent-order-cost-calculator">consent order cost calculator</a> for what the paperwork costs by route.</p>
+<p>This is important enough to have its own pillar: see our <a href="/blog/process-and-costs/consent-orders-and-clean-break-orders">complete guide to consent orders and clean break orders</a>, and the <a href="/calculators/consent-order-cost-calculator">consent order cost calculator</a> for what the paperwork costs by route.</p>
 
 <h2>Timing traps to know about</h2>
 
@@ -173,4 +173,3 @@ faqs:
 <h2>Speak to a specialist</h2>
 
 <p>A financial settlement is usually the largest single financial transaction of a person's life, and the difference between a well-structured order and a rushed one compounds for decades. Our team works with experienced family law professionals across England and Wales who deal with financial settlements every day. Tell us a little about your situation and we will connect you with a specialist for a no-obligation conversation about your options. We are not a law firm and we do not give legal advice; we may receive a fee from the firm we introduce you to, which never affects what you pay or the advice you receive.</p>
----

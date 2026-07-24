@@ -74,7 +74,7 @@ faqs:
 <li><strong>Realistic total: roughly £1,100 to £1,600 between you</strong></li>
 </ul>
 
-<p>Two warnings. First, DIY-ing the <em>divorce</em> is straightforward; DIY-ing the <em>financial agreement</em> without any professional eyes on it is where people give up pension shares worth six figures without realising. An hour or two of one-off advice on the deal, even in an otherwise DIY divorce, is cheap insurance. Second, skipping the consent order entirely to save £500 leaves every financial claim open indefinitely; see our <a href="/blog/divorce-financial-settlement-guide">financial settlement guide</a> for why that matters.</p>
+<p>Two warnings. First, DIY-ing the <em>divorce</em> is straightforward; DIY-ing the <em>financial agreement</em> without any professional eyes on it is where people give up pension shares worth six figures without realising. An hour or two of one-off advice on the deal, even in an otherwise DIY divorce, is cheap insurance. Second, skipping the consent order entirely to save £500 leaves every financial claim open indefinitely; see our <a href="/blog/financial-settlements/divorce-financial-settlement-guide">financial settlement guide</a> for why that matters.</p>
 
 <h2>Route 2: mediation</h2>
 
@@ -88,7 +88,7 @@ faqs:
 <li><strong>Legal aid for mediation</strong> still exists for those who qualify financially, and can cover the MIAM and first session for both parties where one qualifies</li>
 </ul>
 
-<p>You then add the consent order drafting and the £62 fee on top, as in route 1, because the mediator's memorandum of understanding is not itself binding. Even so, a fully mediated financial settlement usually lands at a fraction of the cost of parallel solicitors. Our <a href="/calculators/mediation-vs-solicitor-comparison">mediation vs solicitor comparison</a> puts both routes side by side for your situation.</p>
+<p>You then add the consent order drafting and the £62 fee on top, as in route 1, because the mediator's memorandum of understanding is not itself binding. Even so, a fully mediated financial settlement usually lands at a fraction of the cost of parallel solicitors. Our <a href="/calculators/mediation-vs-solicitor-costs">mediation vs solicitor comparison</a> puts both routes side by side for your situation.</p>
 
 <h2>Route 3: solicitor negotiation</h2>
 
@@ -117,7 +117,7 @@ faqs:
 <h2>Costs people forget to budget for</h2>
 
 <ul>
-<li><strong>Pension sharing implementation:</strong> pension schemes charge their own fees to implement a sharing order, varying widely by scheme from nominal to four figures; see <a href="/blog/pensions-and-divorce">pensions and divorce</a>.</li>
+<li><strong>Pension sharing implementation:</strong> pension schemes charge their own fees to implement a sharing order, varying widely by scheme from nominal to four figures; see <a href="/blog/pensions-and-divorce/pensions-and-divorce">pensions and divorce</a>.</li>
 <li><strong>Property costs:</strong> transferring the home involves conveyancing, possible mortgage arrangement fees on a remortgage, and, where a buyout happens, potential stamp duty considerations (transfers between spouses under a divorce court order are generally exempt from SDLT, but buying a new home while still on the old mortgage can trigger the higher rates for additional dwellings).</li>
 <li><strong>New wills:</strong> divorce changes how your existing will operates, and remaking wills after the final order is standard housekeeping, typically £150 to £300 each for straightforward wills.</li>
 <li><strong>Two households:</strong> the largest real cost of divorce is rarely legal at all; it is running two homes on the income that used to run one. Budget for it before agreeing maintenance figures, not after.</li>
@@ -139,4 +139,3 @@ faqs:
 <h2>Speak to a specialist</h2>
 
 <p>The cheapest divorce is almost never the one with the lowest headline fees; it is the one where the settlement is right first time and never comes back. Our service connects people across England and Wales with experienced family law professionals and accredited mediators for a no-obligation conversation about the right route and realistic costs for your situation. We are not a law firm and we do not give legal advice; we may receive a fee from the firm we introduce you to, which never affects what you pay or the advice you receive.</p>
----
