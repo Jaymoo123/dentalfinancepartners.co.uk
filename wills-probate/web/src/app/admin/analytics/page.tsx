@@ -1,0 +1,794 @@
+/**
+ * Trade Tax Specialists analytics console — main dashboard.
+ *
+ * Cookie-gated (OB-01): credential travels in an HttpOnly session cookie, never
+ * the URL. Every console route checks the cookie via checkAuth(). noindex on all
+ * console routes.
+ *
+ * RSC BOUNDARY: DashboardTabs, VisitorsTable, CountrySelect are "use client"
+ * components from the shared console. They receive only serializable props
+ * (ReactNode / VisitorRow[] / string[]). No function-bearing config objects
+ * cross the server/client boundary.
+ *
+ * PF-07: siteKey sourced from niche config, never a literal.
+ */
+import { redirect } from "next/navigation";
+import Link from "next/link";
+import { niche } from "@/config/niche-loader";
+import {
+  getFunnelDaily,
+  getTopVisitors,
+  getSiteKpis,
+  getLeadsForSite,
+  getCountryOptions,
+  getFormFieldDropoff,
+  getCtaPerformance,
+  getSectionActions,
+  getUxFriction,
+  getClientErrors,
+  getEventDaily,
+  getTimeseries,
+  getChannelConversion,
+  getVisitsToConversion,
+  getExperimentResults,
+  getExperimentArms,
+  getExperimentFunnel,
+  type VisitorJourney,
+  type ClientError,
+  type CtaPerformance,
+  type SectionAction,
+  type UxFriction,
+  type ChannelConversion,
+  type VisitsBucket,
+  type FormFieldDropoff,
+  type ExperimentArms,
+  type ExperimentFunnelArms,
+} from "@accounting-network/web-shared/console/adminData";
+import { CONSOLE_NOINDEX_META } from "@accounting-network/web-shared/console/consoleAuth";
+import { SnapshotCard } from "@accounting-network/web-shared/console/components/SnapshotCard";
+import DashboardTabs from "@accounting-network/web-shared/console/components/DashboardTabs";
+import CountrySelect from "@accounting-network/web-shared/console/components/CountrySelect";
+import VisitorsTable, { type VisitorRow } from "@accounting-network/web-shared/console/components/VisitorsTable";
+import { ExperimentCard } from "@accounting-network/web-shared/console/components/ExperimentCards";
+import { getExperimentMeta } from "@accounting-network/web-shared/experiments/registries";
+import { checkAuth } from "./checkAuth";
+import type { Metadata } from "next";
+
+export const dynamic = "force-dynamic";
+export const metadata: Metadata = CONSOLE_NOINDEX_META;
+
+// ── Helpers ────────────────────────────────────────────────────────────────
+
+function pct(n: number | null | undefined): string {
+  return n == null ? "-" : `${(n * 100).toFixed(1)}%`;
+}
+function secs(ms: number): string {
+  const s = Math.round(ms / 1000);
+  if (s < 60) return `${s}s`;
+  return `${Math.floor(s / 60)}m ${s % 60}s`;
+}
+function ago(iso: string): string {
+  const d = new Date(iso).getTime();
+  const mins = Math.round((Date.now() - d) / 60000);
+  if (mins < 1) return "just now";
+  if (mins < 60) return `${mins}m ago`;
+  if (mins < 1440) return `${Math.floor(mins / 60)}h ago`;
+  return `${Math.floor(mins / 1440)}d ago`;
+}
+
+function tally(rows: VisitorJourney[], key: keyof VisitorJourney): Array<[string, number]> {
+  const m = new Map<string, number>();
+  for (const r of rows) {
+    const v = (r[key] as string) || "(none)";
+    m.set(v, (m.get(v) || 0) + 1);
+  }
+  return Array.from(m.entries()).sort((a, b) => b[1] - a[1]).slice(0, 8);
+}
+
+function densify<T>(rows: T[], days: number, valueOf: (r: T) => number, dateKey: keyof T): number[] {
+  const byDate = new Map<string, number>();
+  for (const r of rows) {
+    const raw = r[dateKey];
+    if (raw == null) continue;
+    const day = String(raw).slice(0, 10);
+    byDate.set(day, (byDate.get(day) || 0) + valueOf(r));
+  }
+  const out: number[] = [];
+  const today = Date.now();
+  for (let i = days - 1; i >= 0; i--) {
+    const day = new Date(today - i * 86400000).toISOString().slice(0, 10);
+    out.push(byDate.get(day) || 0);
+  }
+  return out;
+}
+
+function deltaVsPrior(series: number[]): number | null {
+  const n = series.length;
+  if (n < 4) return null;
+  const half = Math.floor(n / 2);
+  const prior = series.slice(0, n - half).reduce((a, b) => a + b, 0);
+  const recent = series.slice(n - half).reduce((a, b) => a + b, 0);
+  if (prior === 0) return null;
+  return (recent - prior) / prior;
+}
+
+function shortPage(p: string): string {
+  return p.replace(/^\/blog\//, "").replace(/\/$/, "");
+}
+
+// ── Panel components ───────────────────────────────────────────────────────
+
+function Kpi({ label, value, sub }: { label: string; value: string; sub?: string }) {
+  return (
+    <div className="rounded-xl border border-slate-200 bg-white p-4">
+      <div className="text-xs font-semibold uppercase tracking-wider text-slate-500">{label}</div>
+      <div className="mt-1 text-2xl font-bold text-slate-900">{value}</div>
+      {sub && <div className="mt-0.5 text-xs text-slate-500">{sub}</div>}
+    </div>
+  );
+}
+
+function Breakdown({ title, rows }: { title: string; rows: Array<[string, number]> }) {
+  const total = rows.reduce((a, [, n]) => a + n, 0) || 1;
+  return (
+    <div className="rounded-xl border border-slate-200 bg-white p-4">
+      <h3 className="text-sm font-bold text-slate-900">{title}</h3>
+      <div className="mt-3 space-y-2">
+        {rows.length === 0 ? (
+          <p className="text-xs text-slate-400">No data yet.</p>
+        ) : (
+          rows.map(([label, n]) => (
+            <div key={label}>
+              <div className="flex justify-between text-xs">
+                <span className="truncate text-slate-700">{label}</span>
+                <span className="font-mono text-slate-500">{n}</span>
+              </div>
+              <div className="mt-1 h-1.5 rounded bg-slate-100">
+                <div className="h-1.5 rounded bg-cyan-600" style={{ width: `${(n / total) * 100}%` }} />
+              </div>
+            </div>
+          ))
+        )}
+      </div>
+    </div>
+  );
+}
+
+function Detail({ summary, children }: { summary: string; children: React.ReactNode }) {
+  return (
+    <details className="mt-3 overflow-hidden rounded-xl border border-slate-200 bg-white">
+      <summary className="flex w-full cursor-pointer items-center justify-between gap-2 px-4 py-2.5 text-sm font-medium text-slate-600 hover:text-slate-900">
+        {summary}
+      </summary>
+      <div className="overflow-x-auto border-t border-slate-100">{children}</div>
+    </details>
+  );
+}
+
+function NotOperatedPanel({ feature, reason }: { feature: string; reason: string }) {
+  return (
+    <div className="rounded-xl border border-slate-100 bg-slate-50 p-5">
+      <h3 className="text-sm font-bold text-slate-700">{feature}</h3>
+      <p className="mt-1 text-sm text-slate-400">{reason}</p>
+    </div>
+  );
+}
+
+const MIN_TRAFFIC_TO_FLAG = 20;
+
+function ContentEngagementPanel({ rows }: { rows: SectionAction[] }) {
+  const top = rows.slice(0, 8);
+  const rest = rows.slice(8);
+  const renderRows = (list: SectionAction[]) =>
+    list.map((r, i) => {
+      const actRate = r.read_sessions > 0 ? r.acted_sessions / r.read_sessions : 0;
+      return (
+        <tr key={`${r.page_path}-${r.section_id}-${i}`} className="border-t border-slate-100">
+          <td className="px-3 py-2 text-slate-700">{r.section_text || r.section_id}</td>
+          <td className="hidden px-3 py-2 font-mono text-xs text-slate-500 sm:table-cell">{shortPage(r.page_path)}</td>
+          <td className="px-3 py-2 text-right font-mono">{r.read_sessions}</td>
+          <td className="px-3 py-2 text-right font-mono">{r.acted_sessions} <span className="text-xs text-slate-400">({(actRate * 100).toFixed(0)}%)</span></td>
+          <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{r.converted_sessions}</td>
+        </tr>
+      );
+    });
+  const Head = () => (
+    <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+      <tr>
+        <th className="px-3 py-2">Section</th>
+        <th className="hidden px-3 py-2 sm:table-cell">Page</th>
+        <th className="px-3 py-2 text-right">Read by</th>
+        <th className="px-3 py-2 text-right">Acted after</th>
+        <th className="hidden px-3 py-2 text-right sm:table-cell">Converted</th>
+      </tr>
+    </thead>
+  );
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">Content engagement</h2>
+      <p className="text-xs text-slate-500">Per section: how many sessions read it, took an action after, and converted.</p>
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table className="w-full text-sm">
+          <Head />
+          <tbody>
+            {top.length === 0 ? (
+              <tr><td colSpan={5} className="px-3 py-4 text-center text-slate-400">No section data yet.</td></tr>
+            ) : renderRows(top)}
+          </tbody>
+        </table>
+      </div>
+      {rest.length > 0 && (
+        <Detail summary={`Show ${rest.length} more sections`}>
+          <table className="w-full text-sm"><Head /><tbody>{renderRows(rest)}</tbody></table>
+        </Detail>
+      )}
+    </div>
+  );
+}
+
+function ErrorsPanel({ errors, errorsSeries, friction }: { errors: ClientError[]; errorsSeries: number[]; friction: UxFriction[] }) {
+  const totalErrors = errorsSeries.reduce((a, b) => a + b, 0);
+  const today = errorsSeries[errorsSeries.length - 1] ?? 0;
+  const fr = friction.reduce((a, r) => ({ rage: a.rage + r.rage_clicks, dead: a.dead + r.dead_clicks }), { rage: 0, dead: 0 });
+  const top = errors.slice(0, 8);
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">Errors and friction</h2>
+      <p className="text-xs text-slate-500">JS errors grouped by message, plus rage/dead-click counts.</p>
+      <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <SnapshotCard label="JS errors / day" value={String(today)} sub={`${totalErrors} in 14 days`} series={errorsSeries} delta={deltaVsPrior(errorsSeries)} invertDelta accent="rose" status={today > 0 ? "warn" : "ok"} />
+        <Kpi label="Rage clicks" value={String(fr.rage)} sub="rapid repeat clicks" />
+        <Kpi label="Dead clicks" value={String(fr.dead)} sub="clicks that did nothing" />
+      </div>
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table className="w-full text-sm">
+          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+            <tr>
+              <th className="px-3 py-2">Error</th>
+              <th className="hidden px-3 py-2 sm:table-cell">Kind</th>
+              <th className="px-3 py-2 text-right">Count</th>
+              <th className="hidden px-3 py-2 text-right sm:table-cell">Sessions</th>
+              <th className="px-3 py-2 text-right">Last seen</th>
+            </tr>
+          </thead>
+          <tbody>
+            {top.length === 0 ? (
+              <tr><td colSpan={5} className="px-3 py-4 text-center text-slate-400">No JS errors logged.</td></tr>
+            ) : (
+              top.map((e, i) => (
+                <tr key={`${e.message}-${i}`} className="border-t border-slate-100 align-top">
+                  <td className="px-3 py-2"><span className="break-words font-mono text-xs">{e.message}</span></td>
+                  <td className="hidden px-3 py-2 text-xs text-slate-500 sm:table-cell">{e.kind}</td>
+                  <td className="px-3 py-2 text-right font-mono">{e.count}</td>
+                  <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{e.sessions}</td>
+                  <td className="px-3 py-2 text-right text-xs text-slate-500">{e.last_seen ? ago(e.last_seen) : "-"}</td>
+                </tr>
+              ))
+            )}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+function CtaPerformancePanel({ rows }: { rows: CtaPerformance[] }) {
+  const formCtas = rows.filter((c) => c.goal === "form").sort((a, b) => b.clicks - a.clicks);
+  const others = rows.filter((c) => c.goal !== "form").sort((a, b) => b.clicks - a.clicks);
+  const renderRows = (list: CtaPerformance[]) => list.map((c) => {
+    const weak = c.goal === "form" && (c.click_to_form_rate ?? 0) < 0.1;
+    const widthPct = c.click_to_form_rate == null ? 0 : Math.min(100, c.click_to_form_rate * 100);
+    return (
+      <tr key={c.cta_id} className={`border-t border-slate-100 ${weak ? "bg-rose-50/50" : ""}`}>
+        <td className="px-3 py-2 font-medium text-slate-800">{c.cta_id}</td>
+        <td className="px-3 py-2 text-right font-mono">{c.clicks}</td>
+        <td className="px-3 py-2 text-right font-mono">{c.click_sessions}</td>
+        <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{c.form_start_sessions}</td>
+        <td className="w-28 px-3 py-2">
+          <span className={weak ? "font-semibold text-rose-600" : "text-slate-700"}>{pct(c.click_to_form_rate)}</span>
+          <div className="mt-1 h-1.5 rounded bg-slate-100">
+            <div className={`h-1.5 rounded ${weak ? "bg-rose-400" : "bg-cyan-600"}`} style={{ width: `${widthPct}%` }} />
+          </div>
+        </td>
+        <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{c.lead_sessions}</td>
+      </tr>
+    );
+  });
+  const Head = () => (
+    <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+      <tr>
+        <th className="px-3 py-2">CTA</th>
+        <th className="px-3 py-2 text-right">Clicks</th>
+        <th className="px-3 py-2 text-right">Sessions</th>
+        <th className="hidden px-3 py-2 text-right sm:table-cell">Form starts</th>
+        <th className="px-3 py-2">Click to form</th>
+        <th className="hidden px-3 py-2 text-right sm:table-cell">Leads</th>
+      </tr>
+    </thead>
+  );
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">CTA performance</h2>
+      <p className="text-xs text-slate-500">Which CTAs drive form starts vs dead-end.</p>
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <div className="border-b border-slate-100 bg-cyan-50/40 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wider text-cyan-900">Form-bound CTAs</div>
+        <table className="w-full text-sm"><Head /><tbody>
+          {formCtas.length === 0 ? <tr><td colSpan={6} className="px-3 py-4 text-center text-slate-400">None yet.</td></tr> : renderRows(formCtas)}
+        </tbody></table>
+      </div>
+      {others.length > 0 && (
+        <Detail summary={`Other CTAs (${others.length})`}>
+          <table className="w-full text-sm"><Head /><tbody>{renderRows(others)}</tbody></table>
+        </Detail>
+      )}
+    </div>
+  );
+}
+
+function FormDropoffPanel({ rows }: { rows: FormFieldDropoff[] }) {
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">Form-field drop-off</h2>
+      <p className="text-xs text-slate-500">Of people who focused each field, how many left without finishing.</p>
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table className="w-full text-sm">
+          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+            <tr>
+              <th className="px-3 py-2">Field</th>
+              <th className="px-3 py-2 text-right">Focused</th>
+              <th className="px-3 py-2 text-right">Abandoned</th>
+              <th className="px-3 py-2">Abandon rate</th>
+              <th className="hidden px-3 py-2 text-right sm:table-cell">Errors</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.length === 0 ? (
+              <tr><td colSpan={5} className="px-3 py-4 text-center text-slate-400">No form-field data yet.</td></tr>
+            ) : (
+              rows.map((r, i) => {
+                const weak = (r.abandon_rate ?? 0) >= 0.3;
+                const widthPct = r.abandon_rate == null ? 0 : Math.min(100, r.abandon_rate * 100);
+                return (
+                  <tr key={`${r.form_id}-${r.field}-${i}`} className={`border-t border-slate-100 ${weak ? "bg-rose-50/50" : ""}`}>
+                    <td className="px-3 py-2 font-medium text-slate-800">{r.field}</td>
+                    <td className="px-3 py-2 text-right font-mono">{r.focuses}</td>
+                    <td className="px-3 py-2 text-right font-mono">{r.abandons}</td>
+                    <td className="w-28 px-3 py-2">
+                      <span className={weak ? "font-semibold text-rose-600" : "text-slate-700"}>{pct(r.abandon_rate)}</span>
+                      <div className="mt-1 h-1.5 rounded bg-slate-100">
+                        <div className={`h-1.5 rounded ${weak ? "bg-rose-400" : "bg-amber-400"}`} style={{ width: `${widthPct}%` }} />
+                      </div>
+                    </td>
+                    <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{r.errors}</td>
+                  </tr>
+                );
+              })
+            )}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+const CHANNEL_LABEL: Record<string, string> = {
+  ai: "AI engines",
+  search: "Search engines",
+  social: "Social",
+  internal: "Returning / internal",
+  referral: "Other referral",
+  direct: "Direct",
+};
+
+function ChannelValuePanel({ rows }: { rows: ChannelConversion[] }) {
+  const byChannel = new Map<string, { sessions: number; leads: number }>();
+  for (const r of rows) {
+    const c = byChannel.get(r.channel) || { sessions: 0, leads: 0 };
+    c.sessions += r.sessions;
+    c.leads += r.leads;
+    byChannel.set(r.channel, c);
+  }
+  const channels = Array.from(byChannel.entries())
+    .map(([channel, v]) => ({ channel, ...v, cr: v.sessions > 0 ? v.leads / v.sessions : 0 }))
+    .sort((a, b) => b.sessions - a.sessions);
+  const maxSessions = Math.max(1, ...channels.map((c) => c.sessions));
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">Acquisition by value</h2>
+      <p className="mt-1 text-xs text-slate-500">Channels by what they convert, not just volume.</p>
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table className="w-full text-sm">
+          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+            <tr>
+              <th className="px-3 py-2">Channel</th>
+              <th className="px-3 py-2 text-right">Sessions</th>
+              <th className="px-3 py-2 text-right">Leads</th>
+              <th className="px-3 py-2">Conversion</th>
+            </tr>
+          </thead>
+          <tbody>
+            {channels.length === 0 ? (
+              <tr><td colSpan={4} className="px-3 py-4 text-center text-slate-400">No channel data yet.</td></tr>
+            ) : (
+              channels.map((c) => {
+                const widthPct = (c.sessions / maxSessions) * 100;
+                const flood = c.sessions >= MIN_TRAFFIC_TO_FLAG && c.leads === 0;
+                return (
+                  <tr key={c.channel} className={`border-t border-slate-100 ${c.channel === "ai" ? "bg-sky-50/40" : ""}`}>
+                    <td className="px-3 py-2 font-medium text-slate-800">{CHANNEL_LABEL[c.channel] ?? c.channel}</td>
+                    <td className="w-1/3 px-3 py-2 text-right">
+                      <div className="flex items-center justify-end gap-2">
+                        <div className="hidden h-1.5 w-24 rounded bg-slate-100 sm:block">
+                          <div className={`h-1.5 rounded ${flood ? "bg-amber-400" : "bg-cyan-600"}`} style={{ width: `${widthPct}%` }} />
+                        </div>
+                        <span className="font-mono">{c.sessions}</span>
+                      </div>
+                    </td>
+                    <td className="px-3 py-2 text-right font-mono">{c.leads}</td>
+                    <td className="px-3 py-2"><span className={flood ? "font-semibold text-amber-700" : "text-slate-700"}>{pct(c.cr)}</span></td>
+                  </tr>
+                );
+              })
+            )}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+function VisitsToConversionPanel({ rows }: { rows: VisitsBucket[] }) {
+  const maxV = Math.max(1, ...rows.map((r) => r.visitors));
+  return (
+    <div>
+      <h2 className="text-lg font-bold text-slate-900">Visits to conversion</h2>
+      <p className="mt-1 text-xs text-slate-500">How many visits a visitor makes before converting.</p>
+      <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table className="w-full text-sm">
+          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+            <tr>
+              <th className="px-3 py-2">Visits</th>
+              <th className="px-3 py-2 text-right">Visitors</th>
+              <th className="px-3 py-2 text-right">Converted</th>
+              <th className="px-3 py-2">Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.length === 0 ? (
+              <tr><td colSpan={4} className="px-3 py-4 text-center text-slate-400">No visitor data yet.</td></tr>
+            ) : (
+              rows.map((r) => {
+                const cr = r.visitors > 0 ? r.converted_visitors / r.visitors : 0;
+                const widthPct = (r.visitors / maxV) * 100;
+                return (
+                  <tr key={r.visits_bucket} className={`border-t border-slate-100 ${r.converted_visitors > 0 ? "bg-emerald-50/40" : ""}`}>
+                    <td className="px-3 py-2 font-medium text-slate-800">{r.visits_bucket >= 6 ? "6+" : r.visits_bucket}</td>
+                    <td className="w-1/3 px-3 py-2 text-right">
+                      <div className="flex items-center justify-end gap-2">
+                        <div className="hidden h-1.5 w-24 rounded bg-slate-100 sm:block">
+                          <div className="h-1.5 rounded bg-sky-400" style={{ width: `${widthPct}%` }} />
+                        </div>
+                        <span className="font-mono">{r.visitors}</span>
+                      </div>
+                    </td>
+                    <td className="px-3 py-2 text-right font-mono">{r.converted_visitors}</td>
+                    <td className="px-3 py-2 text-slate-700">{pct(cr)}</td>
+                  </tr>
+                );
+              })
+            )}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+// ── Page ───────────────────────────────────────────────────────────────────
+
+export default async function AdminAnalyticsPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ country?: string }>;
+}) {
+  const authed = await checkAuth();
+  if (!authed) redirect("/admin/analytics/login");
+
+  const { country: countryParam } = await searchParams;
+  const country = countryParam || "GB";
+  const countryFilter = country === "ALL" ? undefined : country;
+
+  // PF-07: site key from config, never a literal
+  const siteKey = niche.content_strategy.site_key;
+
+  const now = new Date();
+  const isoOf = (d: Date) => d.toISOString();
+  const from14 = new Date(now.getTime() - 14 * 86400000);
+  const from30 = new Date(now.getTime() - 30 * 86400000);
+
+  const [
+    funnel,
+    visitors,
+    leads,
+    countryOptions,
+    ctaPerformance,
+    formDropoff,
+    sectionActions,
+    uxFriction,
+    clientErrors,
+    errorsDaily,
+    tsDaily,
+    channelConversion,
+    visitsToConversion,
+    kpi,
+    experimentResults,
+    experimentArms,
+    experimentFunnel,
+  ] = await Promise.all([
+    getFunnelDaily(siteKey, countryFilter),
+    getTopVisitors(siteKey, 500, countryFilter),
+    getLeadsForSite(siteKey),
+    getCountryOptions(siteKey),
+    getCtaPerformance(siteKey, countryFilter),
+    getFormFieldDropoff(siteKey, countryFilter),
+    getSectionActions(siteKey, countryFilter),
+    getUxFriction(siteKey, countryFilter),
+    getClientErrors(siteKey, countryFilter),
+    getEventDaily(siteKey, "client_error", isoOf(from14), isoOf(now), countryFilter),
+    getTimeseries(siteKey, "1 day", isoOf(from30), isoOf(now), countryFilter),
+    getChannelConversion(siteKey, countryFilter),
+    getVisitsToConversion(siteKey, countryFilter),
+    getSiteKpis(siteKey, isoOf(from30), isoOf(now), country),
+    getExperimentResults(siteKey),
+    getExperimentArms(siteKey),
+    getExperimentFunnel(siteKey),
+  ]);
+
+  // Derive ordered list of experiment keys that have data rows.
+  const experimentKeys = Array.from(
+    new Set(
+      experimentResults.map((r) => {
+        const idx = r.exp.indexOf(":");
+        return idx >= 0 ? r.exp.slice(0, idx) : r.exp;
+      }),
+    ),
+  );
+
+  const leadByVisitor = new Map<string, (typeof leads)[number]>();
+  for (const l of leads) {
+    if (l.visitor_id && !leadByVisitor.has(l.visitor_id)) leadByVisitor.set(l.visitor_id, l);
+  }
+
+  let newCount = 0;
+  let returningCount = 0;
+  for (const v of visitors) {
+    if ((v.total_sessions || 0) > 1) returningCount++;
+    else newCount++;
+  }
+  const newVsReturning: Array<[string, number]> = [["Returning", returningCount], ["New", newCount]];
+
+  const totals = funnel.reduce(
+    (a, d) => ({
+      sessions: a.sessions + d.sessions,
+      engaged: a.engaged + d.engaged_sessions,
+      formCta: a.formCta + d.form_cta_sessions,
+      form: a.form + d.form_start_sessions,
+      converted: a.converted + d.converted_sessions,
+    }),
+    { sessions: 0, engaged: 0, formCta: 0, form: 0, converted: 0 },
+  );
+  const convRate = totals.sessions > 0 ? totals.converted / totals.sessions : 0;
+  const avgEngaged = visitors.length > 0
+    ? visitors.reduce((a, v) => a + (v.total_engaged_ms || 0), 0) / visitors.length
+    : 0;
+  const funnelDays = new Set(funnel.map((d) => d.date)).size;
+
+  const sessionsSeries = densify(tsDaily, 14, (r) => r.sessions, "bucket");
+  const leadsSeries = densify(tsDaily, 14, (r) => r.leads, "bucket");
+  const engagedSeries = densify(funnel, 14, (r) => r.engaged_sessions, "date");
+  const convertedSeries = densify(funnel, 14, (r) => r.converted_sessions, "date");
+  const errorsSeries = densify(errorsDaily, 14, (r) => r.count, "bucket");
+
+  type FunnelRow = { label: string; n: number; denom: number; denomLabel: string; branch?: boolean };
+  const funnelRows: FunnelRow[] = [
+    { label: "Sessions", n: totals.sessions, denom: totals.sessions, denomLabel: "" },
+    { label: "Engaged", n: totals.engaged, denom: totals.sessions, denomLabel: "of sessions" },
+    { label: "Clicked a form CTA", n: totals.formCta, denom: totals.engaged, denomLabel: "of engaged" },
+    { label: "Started form", n: totals.form, denom: totals.formCta, denomLabel: "of form-CTA" },
+    { label: "Submitted", n: totals.converted, denom: totals.form, denomLabel: "of form starts" },
+  ];
+
+  const visitorRows: VisitorRow[] = visitors.map((v) => {
+    const lead = leadByVisitor.get(v.visitor_id) || null;
+    return {
+      visitor_id: v.visitor_id,
+      last_seen: v.last_seen,
+      total_sessions: v.total_sessions,
+      page_views: v.page_views,
+      engaged_ms: v.total_engaged_ms || 0,
+      max_scroll_pct: v.max_scroll_pct || 0,
+      cta_clicks: v.cta_clicks || 0,
+      device: v.device_type,
+      country: v.country,
+      source: v.referrer_host || v.utm_source || "direct",
+      topic: null,
+      converted: !!(v.converted || lead),
+      lead_name: lead?.full_name ?? null,
+      lead_email: lead?.email ?? null,
+      lead_role: lead?.role ?? null,
+    };
+  });
+
+  // ── Tab sections ──
+
+  const overviewSection = (
+    <div>
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <SnapshotCard label="Sessions / day" value={String(totals.sessions)} sub={`last ${funnelDays} days`} series={sessionsSeries} delta={deltaVsPrior(sessionsSeries)} accent="sky" />
+        <SnapshotCard label="Leads / day" value={String(totals.converted)} sub="conversions" series={leadsSeries} delta={deltaVsPrior(leadsSeries)} accent="emerald" />
+        <SnapshotCard label="Conversion rate" value={pct(convRate)} sub={`${kpi.humans.toLocaleString("en-GB")} visitors`} series={convertedSeries} delta={deltaVsPrior(convertedSeries)} accent="emerald" />
+        <SnapshotCard label="Engaged / day" value={secs(avgEngaged)} sub="avg per visitor" series={engagedSeries} delta={deltaVsPrior(engagedSeries)} accent="slate" />
+      </div>
+
+      <h2 className="mt-8 text-lg font-bold text-slate-900">Conversion funnel</h2>
+      <p className="mt-1 text-xs text-slate-500">A true funnel: each mainline stage is a subset of the one above.</p>
+      <div className="mt-3 overflow-hidden rounded-xl border border-slate-200 bg-white">
+        <table className="w-full text-sm">
+          <tbody>
+            {funnelRows.map((r) => {
+              const rate = r.denom > 0 ? r.n / r.denom : 0;
+              const barPct = totals.sessions > 0 ? (r.n / totals.sessions) * 100 : 0;
+              return (
+                <tr key={r.label} className={`border-b border-slate-100 last:border-0 ${r.branch ? "bg-slate-50/60" : ""}`}>
+                  <td className={`px-4 py-2.5 ${r.branch ? "pl-6 font-normal text-slate-500 sm:pl-8" : "font-semibold text-slate-800"}`}>{r.label}</td>
+                  <td className="px-4 py-2.5 text-right font-mono text-slate-900">{r.n}</td>
+                  <td className="hidden w-1/3 px-4 py-2.5 sm:table-cell">
+                    <div className="h-2 rounded bg-slate-100">
+                      <div className={`h-2 rounded ${r.branch ? "bg-sky-400" : "bg-cyan-600"}`} style={{ width: `${barPct}%` }} />
+                    </div>
+                  </td>
+                  <td className="px-4 py-2.5 text-right text-xs text-slate-500">{r.denomLabel ? `${(rate * 100).toFixed(0)}% ${r.denomLabel}` : ""}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+
+      <div className="mt-8 flex flex-wrap items-baseline justify-between gap-2">
+        <h2 className="text-lg font-bold text-slate-900">How people arrive</h2>
+        <Link href="/admin/analytics/trends" className="text-xs text-cyan-800 underline">View trends</Link>
+      </div>
+      <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <Breakdown title="Traffic source" rows={tally(visitors, "referrer_host")} />
+        <Breakdown title="Device" rows={tally(visitors, "device_type")} />
+        <Breakdown title="Country" rows={tally(visitors, "country")} />
+        <Breakdown title="New vs returning" rows={newVsReturning} />
+      </div>
+
+      <div className="mt-8"><ChannelValuePanel rows={channelConversion} /></div>
+      <div className="mt-8"><VisitsToConversionPanel rows={visitsToConversion} /></div>
+    </div>
+  );
+
+  const visitorsSection = (
+    <VisitorsTable
+      rows={visitorRows}
+      country={country}
+      visitorBasePath="/admin/analytics/visitor"
+      totalVisitors={kpi.humans}
+    />
+  );
+
+  const experimentsSection = (
+    <div className="space-y-8">
+      {experimentResults.length === 0 ? (
+        <p className="text-sm text-slate-400">No experiment results yet. Data appears here once visitors are assigned to experiments.</p>
+      ) : (
+        <div>
+          <h2 className="text-lg font-bold text-slate-900">Live A/B tests</h2>
+          <p className="mt-1 text-xs text-slate-500">
+            Each running experiment, control (current) vs treatment (new), updating as data accrues. Lift and
+            significance are honest: directional until each arm has enough sessions.
+          </p>
+          <div className="mt-3 space-y-4">
+            {experimentKeys.map((key) => (
+              <ExperimentCard
+                key={key}
+                meta={getExperimentMeta(siteKey, key)}
+                arms={(experimentArms as Record<string, ExperimentArms>)[key] ?? { control: null, treatment: null }}
+                funnel={(experimentFunnel as Record<string, ExperimentFunnelArms>)[key]}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
+      <div>
+        <h2 className="text-lg font-bold text-slate-900">All results (raw ledger)</h2>
+        <p className="mt-1 text-xs text-slate-500">
+          Flat view of every experiment:variant row from vw_experiment_results.
+        </p>
+        <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+          <table className="w-full text-sm">
+            <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
+              <tr>
+                <th className="px-3 py-2">Experiment : variant</th>
+                <th className="px-3 py-2 text-right">Sessions</th>
+                <th className="hidden px-3 py-2 text-right sm:table-cell">CTA clicks</th>
+                <th className="hidden px-3 py-2 text-right sm:table-cell">Form starts</th>
+                <th className="px-3 py-2 text-right">Conversion</th>
+              </tr>
+            </thead>
+            <tbody>
+              {experimentResults.length === 0 ? (
+                <tr><td colSpan={5} className="px-3 py-4 text-center text-slate-400">No data yet.</td></tr>
+              ) : (
+                experimentResults.map((x) => (
+                  <tr key={x.exp} className="border-t border-slate-100">
+                    <td className="px-3 py-2 font-mono text-slate-700">{x.exp}</td>
+                    <td className="px-3 py-2 text-right font-mono">{x.sessions}</td>
+                    <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{x.cta_clicks}</td>
+                    <td className="hidden px-3 py-2 text-right font-mono sm:table-cell">{x.form_starts}</td>
+                    <td className="px-3 py-2 text-right">{pct(x.conversion_rate)}</td>
+                  </tr>
+                ))
+              )}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
+
+  const behaviourSection = (
+    <div className="space-y-8">
+      <NotOperatedPanel
+        feature="Calculators"
+        reason="Not operated on this site. Calculator tools are a deferred workstream (Phase 3)."
+      />
+      <ContentEngagementPanel rows={sectionActions} />
+      <ErrorsPanel errors={clientErrors} errorsSeries={errorsSeries} friction={uxFriction} />
+    </div>
+  );
+
+  const conversionSection = (
+    <div className="space-y-8">
+      <NotOperatedPanel
+        feature="Lead-intent enrichment"
+        reason="Not operated on this site. Lead-intent classification is a deferred Phase 5/8 workstream."
+      />
+      <NotOperatedPanel
+        feature="Nurture engine"
+        reason="Not operated on this site. No newsletter surface on Trade Tax Specialists."
+      />
+      <CtaPerformancePanel rows={ctaPerformance} />
+      <FormDropoffPanel rows={formDropoff} />
+      <div>
+        <Link href="/admin/analytics/leads" className="inline-block text-xs text-cyan-800 underline">View all leads</Link>
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="mx-auto max-w-6xl px-3 py-6 sm:px-4 sm:py-10">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h1 className="text-2xl font-bold text-slate-900">Analytics</h1>
+        <div className="flex flex-wrap items-center gap-3 text-xs sm:gap-4">
+          <CountrySelect value={country} options={countryOptions} basePath="/admin/analytics" />
+          <Link href="/admin/analytics/trends" className="text-cyan-800 underline">Trends</Link>
+          <Link href="/admin/analytics/leads" className="text-cyan-800 underline">All leads</Link>
+          <span className="text-slate-500">Human-only &middot; live</span>
+        </div>
+      </div>
+
+      <DashboardTabs
+        overview={overviewSection}
+        visitors={visitorsSection}
+        experiments={experimentsSection}
+        behaviour={behaviourSection}
+        conversion={conversionSection}
+      />
+    </div>
+  );
+}

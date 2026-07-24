@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "generated_at": "2026-07-24",
+    "commencement": "2027-04-06",
+    "title": "Pensions into Inheritance Tax from April 2027: Impact Model",
+    "sources": [
+      {
+        "id": "tiin",
+        "name": "Inheritance Tax on unused pension funds and death benefits (policy paper / tax information and impact note), HM Revenue & Customs, published 21 July 2025",
+        "url": "https://www.gov.uk/government/publications/reforming-inheritance-tax-unused-pension-funds-and-death-benefits/inheritance-tax-on-unused-pension-funds-and-death-benefits"
+      },
+      {
+        "id": "consultation",
+        "name": "Inheritance Tax on pensions: liability, reporting and payment (technical consultation, 30 October 2024 to 22 January 2025; outcome published 21 July 2025), HMRC",
+        "url": "https://www.gov.uk/government/consultations/inheritance-tax-on-pensions-liability-reporting-and-payment"
+      },
+      {
+        "id": "responses",
+        "name": "Inheritance Tax on pensions: liability, reporting and payment - summary of responses, HMRC, 21 July 2025",
+        "url": "https://www.gov.uk/government/consultations/inheritance-tax-on-pensions-liability-reporting-and-payment/outcome/inheritance-tax-on-pensions-liability-reporting-and-payment-summary-of-responses"
+      },
+      {
+        "id": "iht_stats",
+        "name": "Inheritance Tax liabilities statistics: commentary, HMRC accredited official statistics, updated 31 July 2025 (data to tax year 2022 to 2023)",
+        "url": "https://www.gov.uk/government/statistics/inheritance-tax-liabilities-statistics/inheritance-tax-liabilities-statistics-commentary"
+      }
+    ]
+  },
+  "policy": {
+    "what_changes": "From 6 April 2027 most unused pension funds and death benefits payable from registered pension schemes are included in the value of a person's estate for Inheritance Tax. Personal representatives, not pension scheme administrators, are liable for reporting and paying the tax (a reversal of the original consultation proposal). A new scheme will let beneficiaries direct pension scheme administrators to pay the Inheritance Tax on their behalf directly to HMRC.",
+    "in_scope": [
+      "Unused defined contribution pension funds (drawdown and uncrystallised pots) remaining at death",
+      "Most lump sum death benefits payable from registered pension schemes"
+    ],
+    "out_of_scope": [
+      "All death in service benefits payable from a registered pension scheme, whether the scheme is discretionary or non-discretionary (consultation response, 21 July 2025)",
+      "Dependants' scheme pensions from a defined benefit arrangement or a collective money purchase arrangement (policy paper, 21 July 2025)",
+      "Benefits passing to a surviving spouse or civil partner: the existing spouse/civil partner exemption applies, including survivor payments under a joint life annuity where the survivor is a spouse or civil partner",
+      "Benefits passing to registered charities: existing charity exemption maintained"
+    ],
+    "liability_mechanics": "Personal representatives are liable for reporting and payment from 6 April 2027. Exempt beneficiaries (including spouses and civil partners) can take their benefits immediately. Per the July 2025 policy paper, personal representatives can direct pension scheme administrators to withhold 50% of the taxable benefits for up to 15 months from the date of death, or pay the Inheritance Tax due to HMRC before releasing the remainder to pension beneficiaries.",
+    "stated_rationale": "HMRC states pension schemes were increasingly used and marketed as a tax planning vehicle to transfer wealth rather than for funding retirement, and the change removes inconsistencies in the Inheritance Tax treatment of different types of pensions."
+  },
+  "impact": {
+    "source": "tiin",
+    "reference_year": "2027-28",
+    "estates_with_inheritable_pension_wealth": 213000,
+    "newly_liable_pa": 10500,
+    "newly_liable_share_of_uk_deaths_pct": 1.5,
+    "paying_more_pa": 38500,
+    "average_iht_increase_gbp": 34000,
+    "exchequer_yield_by_year": [
+      { "year": "2027-28", "gbp_m": 640 },
+      { "year": "2028-29", "gbp_m": 1340 },
+      { "year": "2029-30", "gbp_m": 1460 }
+    ]
+  },
+  "context_series": {
+    "source": "iht_stats",
+    "note": "HMRC accredited official statistics; taxpaying estates and total IHT liabilities by tax year of wealth transfer. 2020-21 estates count not published in the commentary extract used; null = not verified, not zero.",
+    "years": [
+      { "tax_year": "2020-21", "taxpaying_estates": null, "liabilities_gbp_bn": 5.76 },
+      { "tax_year": "2021-22", "taxpaying_estates": 27800, "liabilities_gbp_bn": 5.99 },
+      { "tax_year": "2022-23", "taxpaying_estates": 31500, "liabilities_gbp_bn": 6.70 }
+    ],
+    "share_of_deaths_2022_23_pct": 4.62,
+    "uk_deaths_2022_23": 683000,
+    "average_liability_2022_23_gbp": 212000
+  },
+  "worked_model": {
+    "disclaimer": "Illustrations only. Computed arithmetically from the stated 2026/27 rules and assumptions below; they are not statistics and not advice. Assumes nil rate band £325,000, residence nil rate band £175,000 (home passing to direct descendants), RNRB tapered by £1 for every £2 the estate exceeds £2,000,000, IHT rate 40%, no other reliefs or exemptions, and that thresholds are unchanged at the relevant date.",
+    "assumptions": {
+      "nrb_gbp": 325000,
+      "rnrb_gbp": 175000,
+      "rnrb_taper_threshold_gbp": 2000000,
+      "iht_rate_pct": 40
+    },
+    "scenarios": [
+      {
+        "id": "modest-estate-newly-liable",
+        "label": "Estate of £500,000 plus £300,000 unused pension pot, home to children",
+        "estate_ex_pension_gbp": 500000,
+        "pension_gbp": 300000,
+        "allowances_now_gbp": 500000,
+        "iht_now_gbp": 0,
+        "allowances_2027_gbp": 500000,
+        "taxable_2027_gbp": 300000,
+        "iht_2027_gbp": 120000,
+        "note": "Newly liable: pays nothing today, £120,000 from April 2027."
+      },
+      {
+        "id": "already-liable-pays-more",
+        "label": "Estate of £900,000 plus £400,000 pension, home to children",
+        "estate_ex_pension_gbp": 900000,
+        "pension_gbp": 400000,
+        "allowances_now_gbp": 500000,
+        "iht_now_gbp": 160000,
+        "allowances_2027_gbp": 500000,
+        "taxable_2027_gbp": 800000,
+        "iht_2027_gbp": 320000,
+        "note": "Already taxpaying; extra £160,000, exactly 40% of the pension."
+      },
+      {
+        "id": "rnrb-taper-60pc",
+        "label": "Estate of £1,800,000 plus £500,000 pension: RNRB taper case",
+        "estate_ex_pension_gbp": 1800000,
+        "pension_gbp": 500000,
+        "allowances_now_gbp": 500000,
+        "iht_now_gbp": 520000,
+        "allowances_2027_gbp": 350000,
+        "taxable_2027_gbp": 1950000,
+        "iht_2027_gbp": 780000,
+        "note": "Pension pushes the estate to £2,300,000, so RNRB is tapered from £175,000 to £25,000. Extra IHT £260,000 on a £500,000 pension: £200,000 taxed at 40% and the £300,000 slice above £2,000,000 at an effective 60% marginal rate (40% plus the RNRB clawback)."
+      },
+      {
+        "id": "couple-second-death",
+        "label": "Widowed person, estate £1,000,000 plus £600,000 pension, full transferred allowances",
+        "estate_ex_pension_gbp": 1000000,
+        "pension_gbp": 600000,
+        "allowances_now_gbp": 1000000,
+        "iht_now_gbp": 0,
+        "allowances_2027_gbp": 1000000,
+        "taxable_2027_gbp": 600000,
+        "iht_2027_gbp": 240000,
+        "note": "Doubled NRB and RNRB via transferable allowances (£650,000 plus £350,000). No IHT today; £240,000 from April 2027."
+      }
+    ]
+  }
+}

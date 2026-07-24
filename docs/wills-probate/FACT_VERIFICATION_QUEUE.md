@@ -2,28 +2,35 @@
 
 All items must be verified against primary sources (gov.uk/HMRC/HMCTS/OPG) by the Opus verification pass before any page ships. Sources logged next to each on completion.
 
+Verification-and-fix pass completed 2026-07-24. Build green, vitest 78/78 green (site-local config).
+
 ## From core copy (copy-staging/core/)
-- [ ] Pensions into IHT 6 Apr 2027: confirm final-legislation status; spouse exemption + death-in-service treatment per HMRC consultation response (copy currently hedged "due to take effect")
-- [ ] Business relief from Apr 2026: £1m combined BR/APR 100% cap, 50% above (effective 20%), binding-contract-for-sale trap, commencement
-- [ ] Long-term residence test (from 6 Apr 2025): 10-of-20-years, post-departure tail mechanics
-- [ ] Probate fee £300 + £5,000 no-fee threshold still current
-- [ ] RNRB: stepchildren count as direct descendants; £2m taper
-- [ ] Marriage revokes will in E&W but NOT Scotland — jurisdiction footnote needed in wills copy
+- [x] Pensions into IHT 6 Apr 2027: CONFIRMED final (govt response + draft legislation 21 Jul 2025). PRs liable (not PSAs); death-in-service from registered schemes EXCLUDED; spouse/charity exemptions unchanged. Copy firmed up in inheritance-tax pillar, trade-types pension-holders-2027, pensions-iht-2027-estimator. Source: https://www.gov.uk/government/consultations/inheritance-tax-on-pensions-liability-reporting-and-payment/technical-consultation-inheritance-tax-on-pensions-liability-reporting-and-payment.
+- [x] Business relief from Apr 2026: **CHANGED SINCE DRAFT** — allowance for 100% BR/APR relief raised from £1m to £2.5m per estate (announced 23 Dec 2025, effective 6 Apr 2026), 50% above (effective up to 20%), now TRANSFERABLE between spouses (up to £5m per couple). trade-types.ts corrected £1m → £2.5m. Source: https://www.gov.uk/government/news/inheritance-tax-reliefs-threshold-to-rise-to-25m-for-farmers-and-businesses
+- [x] Long-term residence test (from 6 Apr 2025): 10-of-20-years triggers worldwide scope; post-departure tail 3-10 years scaling with residence length. Copy in trade-types expats section verified correct. Source: residence-based IHT regime from 6 Apr 2025 (FA 2025); see gov.uk D31B guidance https://gov.uk/government/publications/tell-hmrc-about-a-transferor-or-settlor-who-is-a-long-term-uk-resident-when-transitional-provisions-apply-d31b/how-to-fill-in-schedule-d31b
+- [x] Probate fee: **STALE — CORRECTED.** Fee rose £300 → £526 on 13 July 2026; £5,000 no-fee threshold unchanged; extra sealed copies £2 each when ordered with the application (£16 later). Fixed in probate pillar, trade-types, probate-cost-calculator, estate-tax.ts (PROBATE_FEE=526, new GRANT_COPY_FEE=2), tools.test.ts. Sources: https://www.gov.uk/applying-for-probate/fees (fetched 2026-07-24), https://www.gov.uk/government/news/court-and-tribunal-fees-updates-from-july-2026
+- [x] RNRB: stepchildren (and adopted/foster/guardianship children) count as direct descendants; £2m taper £1-per-£2. Verified correct, no change. Source: https://www.gov.uk/guidance/inheritance-tax-residence-nil-rate-band
+- [x] Marriage revokes will in E&W (Wills Act 1837 s.18) but NOT Scotland — jurisdiction footnote ADDED to /wills FAQ and remarriage bullet. Sources: https://www.legislation.gov.uk/ukpga/Will4and1Vict/7/26/section/18
 
 ## From pillar copy (copy-staging/pillars/)
-- [ ] Court of Protection deputyship application fee £421; OPG supervision fee "up to £320"/yr
-- [ ] OPG LPA registration fee £82 per LPA
-- [ ] **HMCTS "around 16 weeks" grant timeline is STALE** — FCSQ 2026-Q1 actuals (verified, OGL): mean 6.4 weeks all channels, digital 4.5 (82.6% share), paper 16.5. FIX pillar copy + probate-timeline-estimator HMCTS-wait defaults to cite these; keep "varies" hedging
-- [ ] Grant copy fee £1.50
-- [ ] Solicitor fee ranges 1-5% / £150-£350/hr / will + LPA price bands (hedged as market-typical; verify plausibility, keep hedged)
-- [ ] "1 in 3 over 65 develop dementia" stat — find citable source or remove
-- [ ] RNRB taper wipe-out points £2.35m (single) / £2.7m (couple)
-- [ ] Threshold freeze "until April 2030"
+- [x] Court of Protection deputyship application fee: **STALE — CORRECTED** £421 → £432 (July 2026 court-fee uplift); OPG supervision £320/yr general (£35 minimal) — "up to £320" phrasing kept, correct. Fixed in /lasting-power-of-attorney. Source: https://www.gov.uk/become-deputy/fees (fetched 2026-07-24)
+- [x] OPG LPA registration fee: **STALE — CORRECTED** £82 → £92 per LPA (from 17 Nov 2025; 50% remission £46). Fixed in /lasting-power-of-attorney (incl. both-types £184 / couple £368 arithmetic). Source: https://www.gov.uk/power-of-attorney/register (fetched 2026-07-24)
+- [x] HMCTS "around 16 weeks" grant timeline: **STALE — CORRECTED** to FCSQ Jan-Mar 2026 actuals: mean 6.4 weeks all channels, digital 4.5 weeks (82.6% of applications), paper 16.5 weeks, with "waits vary" hedging. Fixed in probate pillar + probate-timeline-estimator (grant-wait stage now digital 4-8 / 6-12 complex, paper 14-20 / 18-26 complex; note + explainer cite FCSQ). Consistent with site research asset /research/uk-probate-wait-times-index (built from FCSQ csv_prob tables, OGL). Source: https://www.gov.uk/government/statistics/family-court-statistics-quarterly-january-to-march-2026
+- [x] Grant copy fee: **STALE — CORRECTED** £1.50 → £2 per copy ordered with the application (from 13 Jul 2026). Same sources as probate fee.
+- [x] Solicitor fee ranges 1-5% / £150-£350/hr / will + LPA price bands: market-typical, not verifiable against a primary source; hedged phrasing kept ("typically", "roughly", "often"). No change.
+- [x] "1 in 3 over 65 develop dementia": unsupported as stated. REPLACED with the citable Alzheimer's Society statistic: "1 in 3 people born in the UK today will develop dementia in their lifetime", attributed. Source: https://www.alzheimers.org.uk/what-we-do/news-and-media/facts-media
+- [x] RNRB taper wipe-out points £2.35m (single) / £2.7m (couple): verified correct (arithmetic from £175k/£350k RNRB over £2m taper). No change.
+- [x] Threshold freeze "until April 2030": verified correct — NRB/RNRB/taper fixed through 2029-30. Source: https://www.gov.uk/government/publications/inheritance-tax-nil-rate-band-and-residence-nil-rate-bands-from-6-april-2028/inheritance-tax-nil-rate-band-residence-nil-rate-band-from-6-april-2028
 
 ## From pensions-2027 asset (research-staging/pensions-iht-2027/)
-- [ ] 50%-withholding-for-15-months mechanism: attributed to July 2025 policy paper via search summary only — confirm in TIIN full text before publish
+- [x] 50%-withholding-for-15-months mechanism: CONFIRMED in primary sources — PRs "can direct pension scheme administrators to withhold 50% of the taxable benefits for up to 15 months from the date of death, or pay the Inheritance Tax due to HMRC before releasing the rest". Site copy in pensions-iht-2027.json matches verbatim; no softening needed. Source: gov.uk policy paper / consultation outcome 21 Jul 2025 (links above).
 - [x] VERIFIED (21 Jul 2025 TIIN + consultation response, URLs in snapshot): 6 Apr 2027 commencement; 10,500 newly liable / 38,500 paying more / avg +£34,000; yield £640m/£1,340m/£1,460m; PRs liable (not PSAs); death-in-service EXCLUDED; spouse/charity exemptions unchanged
-- [ ] PROPAGATE to estimator + copy + wave-3 hallucination_zones: death-in-service exclusion, PR liability, "~49,000 affected" should be restated as 10,500 newly liable + 38,500 paying more
+- [x] PROPAGATED 2026-07-24: pensions-iht-2027-estimator explainer + FAQs now state PR liability, death-in-service exclusion, and the 10,500 + 38,500 (+£34,000 avg) split instead of "~49,000 total"; inheritance-tax pillar bullet corrected (death-in-service was wrongly stated as in scope — now "excluded") and split figures added; trade-types pension-holders-2027 intro/challenges/FAQs firmed from "expected to" to confirmed wording with figures.
 
-## From calculators (add when calculator agent reports)
-- [ ] estate-tax.ts constants sweep vs gov.uk (NRB/RNRB/taper/rates/gift exemptions/taper-relief bands/excepted-estate limits/statutory legacy £322k)
+## From calculators
+- [x] estate-tax.ts constants sweep 2026-07-24: NRB 325,000 / RNRB 175,000 / taper 2,000,000 / 40% / 36% / 10% charity floor / £3,000 annual / £250 small / wedding 5,000-2,500-1,000 / taper-relief bands 20-40-60-80-100 / statutory legacy £322,000 (SI 2023/758, from 26 Jul 2023) / excepted-estate 325,000 & 3,000,000 — all verified correct. CHANGED: PROBATE_FEE 300 → 526; ADDED GRANT_COPY_FEE = 2. tools.test.ts expectation updated (PROBATE_FEE 526); unused RNRB_TAPER_THRESHOLD import removed; en-dash regex in timeline headline test updated to " to ".
+
+## Sweeps (2026-07-24)
+- [x] Dash sweep: 71 raw hits in src at start; all user-facing occurrences replaced ("£X–£Y" → "£X to £Y", em dashes → commas/colons/full stops) across all 7 calculator tools + pillar copy. Remaining hits are code comments only (UnionJack.tsx SVG comments, test describe strings, file-header comments). content/ clean.
+- [x] Regulated-language sweep: "legal advice"/"financial advice" hits all in safe negation contexts ("we do not provide..."); "equity release" only in "No equity release" negation; zero hits for "we can write"/"our solicitors"/"regulated by"/"pension transfer". Two "probate or legal advice site" embed-partner phrases reworded to "legal information site".
+- [x] Build: `npm run build` green. Tests: `npx vitest run` (site-local config) 6 files / 78 tests green.

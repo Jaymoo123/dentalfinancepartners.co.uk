@@ -42,7 +42,7 @@ _HALLUCINATION_ZONES = [
     "IHT rates 40% standard, 36% where 10%+ of net estate left to charity",
     "Annual gift exemption £3,000; small gifts £250; wedding gifts £5,000 child / £2,500 grandchild / £1,000 other",
     "Gift taper relief 3-7 years: effective rates 32%/24%/16%/8%",
-    "Probate application fee £300 for estates over £5,000, no fee at or below",
+    "Probate application fee £526 for estates over £5,000, no fee at or below (from 13 July 2026); sealed copies £2 each with the application",
     "Statutory legacy £322,000 (England and Wales intestacy)",
     (
         "Pensions: unused pension funds and death benefits enter IHT from 6 April 2027;"
@@ -51,7 +51,7 @@ _HALLUCINATION_ZONES = [
         " average increase around £34,000"
     ),
     "HMCTS probate grant timeliness 2026 Q1: mean 6.4 weeks all channels, digital 4.5 weeks (82.6% of grants), paper 16.5 weeks",
-    "OPG LPA registration fee £82 per LPA",
+    "OPG LPA registration fee £92 per LPA (from 17 November 2025)",
 ]
 
 _BANNED_PHRASES = [
@@ -146,11 +146,11 @@ LOCKED STATUTORY FIGURES (use verbatim, always label with source/date where rele
 - IHT rates 40% standard, 36% where 10%+ of net estate left to charity
 - Annual gift exemption £3,000; small gifts £250; wedding gifts £5,000 child / £2,500 grandchild / £1,000 other
 - Gift taper relief 3-7 years: effective rates 32%/24%/16%/8%
-- Probate application fee £300 for estates over £5,000, no fee at or below
+- Probate application fee £526 for estates over £5,000, no fee at or below (from 13 July 2026); sealed copies £2 each with the application
 - Statutory legacy £322,000 (England and Wales intestacy)
 - Pensions: unused pension funds and death benefits enter IHT from 6 April 2027; personal representatives liable; death in service benefits EXCLUDED; 10,500 estates newly liable and 38,500 paying more per year (HMRC TIIN 21 July 2025), average increase around £34,000
 - HMCTS probate grant timeliness 2026 Q1: mean 6.4 weeks all channels, digital 4.5 weeks (82.6% of grants), paper 16.5 weeks
-- OPG LPA registration fee £82 per LPA
+- OPG LPA registration fee £92 per LPA (from 17 November 2025)
 
 PROHIBITED CONTENT
 - NEVER produce a "best probate solicitors" or "top wills solicitors" listicle. Faceless brand.
