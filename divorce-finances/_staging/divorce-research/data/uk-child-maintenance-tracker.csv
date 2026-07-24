@@ -1,0 +1,6 @@
+# UK Child Maintenance Tracker: Child Maintenance Service quarterly money and compliance series, Great Britain
+# Source: Department for Work and Pensions, Child Maintenance Service statistics data to March 2026 (OGL v3.0)
+# Amounts in GBP millions as published. Blank = not published; values are never estimated.
+# Free to reuse with attribution to {{BRAND}}.
+quarter,maintenance_due_total_gbp_m,maintenance_due_direct_pay_gbp_m,maintenance_due_collect_and_pay_gbp_m,collect_and_pay_paid_gbp_m,collect_and_pay_unpaid_gbp_m,collect_and_pay_paid_some_pct,applications,cumulative_arrears_since_2012_gbp_m
+2026-Q1,405.1,292.3,112.8,86.5,26.3,77,38000,791.2

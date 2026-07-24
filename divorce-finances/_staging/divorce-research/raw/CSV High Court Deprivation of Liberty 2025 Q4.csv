@@ -1,0 +1,165 @@
+year,quarter,ageband,count_type,app_type,sex,spanband,count
+2023,3,N/A,Applications,Initial,N/A,N/A,368
+2023,3,N/A,Final Order,N/A,N/A,N/A,28
+2023,3,N/A,Cases Started,N/A,N/A,N/A,368
+2023,3,0-12 years,Child_Age,All,N/A,N/A,34
+2023,3,13-15 years,Child_Age,All,N/A,N/A,203
+2023,3,16-18 years,Child_Age,All,N/A,N/A,119
+2023,3,Unknown,Child_Age,All,N/A,N/A,12
+2023,3,N/A,Child_Sex,All,Female,N/A,197
+2023,3,N/A,Child_Sex,All,Male,N/A,167
+2023,3,N/A,Child_Sex,All,Other,N/A,1
+2023,3,N/A,Child_Sex,All,Other,N/A,1
+2023,3,N/A,Child_Sex,All,Other,N/A,1
+2023,3,N/A,Child_Sex,All,Other,N/A,1
+2023,3,N/A,Final Order Made,N/A,N/A,0-3 months,57
+2023,3,N/A,Final Order Made,N/A,N/A,3-6 months,56
+2023,3,N/A,Final Order Made,N/A,N/A,6-9 months,64
+2023,3,N/A,Final Order Made,N/A,N/A,9-12 months,46
+2023,3,N/A,Final Order Made,N/A,N/A,Over 12 months,86
+2023,3,N/A,Orders,N/A,N/A,N/A,313
+2023,4,N/A,Applications,Initial,N/A,N/A,283
+2023,4,N/A,Final Order,N/A,N/A,N/A,78
+2023,4,N/A,Cases Started,N/A,N/A,N/A,283
+2023,4,0-12 years,Child_Age,All,N/A,N/A,32
+2023,4,13-15 years,Child_Age,All,N/A,N/A,148
+2023,4,16-18 years,Child_Age,All,N/A,N/A,103
+2023,4,N/A,Child_Sex,All,Female,N/A,155
+2023,4,N/A,Child_Sex,All,Male,N/A,128
+2023,4,N/A,Final Order Made,N/A,N/A,0-3 months,63
+2023,4,N/A,Final Order Made,N/A,N/A,3-6 months,53
+2023,4,N/A,Final Order Made,N/A,N/A,6-9 months,61
+2023,4,N/A,Final Order Made,N/A,N/A,9-12 months,32
+2023,4,N/A,Final Order Made,N/A,N/A,Over 12 months,66
+2023,4,N/A,Orders,N/A,N/A,N/A,280
+2024,1,N/A,Applications,Initial,N/A,N/A,290
+2024,1,N/A,Final Order,N/A,N/A,N/A,157
+2024,1,N/A,Cases Started,N/A,N/A,N/A,290
+2024,1,0-12 years,Child_Age,All,N/A,N/A,31
+2024,1,13-15 years,Child_Age,All,N/A,N/A,170
+2024,1,16-18 years,Child_Age,All,N/A,N/A,89
+2024,1,N/A,Child_Sex,All,Female,N/A,153
+2024,1,N/A,Child_Sex,All,Male,N/A,137
+2024,1,N/A,Final Order Made,N/A,N/A,0-3 months,58
+2024,1,N/A,Final Order Made,N/A,N/A,3-6 months,66
+2024,1,N/A,Final Order Made,N/A,N/A,6-9 months,46
+2024,1,N/A,Final Order Made,N/A,N/A,9-12 months,36
+2024,1,N/A,Final Order Made,N/A,N/A,Over 12 months,60
+2024,1,N/A,Orders,N/A,N/A,N/A,271
+2024,2,N/A,Applications,Initial,N/A,N/A,299
+2024,2,N/A,Final Order,N/A,N/A,N/A,204
+2024,2,N/A,Cases Started,N/A,N/A,N/A,299
+2024,2,0-12 years,Child_Age,All,N/A,N/A,28
+2024,2,13-15 years,Child_Age,All,N/A,N/A,180
+2024,2,16-18 years,Child_Age,All,N/A,N/A,91
+2024,2,N/A,Child_Sex,All,Female,N/A,59
+2024,2,N/A,Child_Sex,All,Female,N/A,105
+2024,2,N/A,Child_Sex,All,Male,N/A,58
+2024,2,N/A,Child_Sex,All,Male,N/A,75
+2024,2,N/A,Child_Sex,All,Other,N/A,2
+2024,2,N/A,Final Order Made,N/A,N/A,0-3 months,72
+2024,2,N/A,Final Order Made,N/A,N/A,3-6 months,69
+2024,2,N/A,Final Order Made,N/A,N/A,6-9 months,42
+2024,2,N/A,Final Order Made,N/A,N/A,9-12 months,42
+2024,2,N/A,Final Order Made,N/A,N/A,Over 12 months,53
+2024,2,N/A,Orders,N/A,N/A,N/A,289
+2024,3,N/A,Applications,Initial,N/A,N/A,370
+2024,3,N/A,Final Order,N/A,N/A,N/A,267
+2024,3,N/A,Cases Started,N/A,N/A,N/A,370
+2024,3,0-12 years,Child_Age,All,N/A,N/A,43
+2024,3,13-15 years,Child_Age,All,N/A,N/A,212
+2024,3,16-18 years,Child_Age,All,N/A,N/A,115
+2024,3,N/A,Child_Sex,All,Female,N/A,159
+2024,3,N/A,Child_Sex,All,Female,N/A,25
+2024,3,N/A,Child_Sex,All,Male,N/A,47
+2024,3,N/A,Child_Sex,All,Male,N/A,138
+2024,3,N/A,Child_Sex,All,Other,N/A,1
+2024,3,N/A,Final Order Made,N/A,N/A,0-3 months,71
+2024,3,N/A,Final Order Made,N/A,N/A,3-6 months,60
+2024,3,N/A,Final Order Made,N/A,N/A,6-9 months,43
+2024,3,N/A,Final Order Made,N/A,N/A,9-12 months,40
+2024,3,N/A,Final Order Made,N/A,N/A,Over 12 months,57
+2024,3,N/A,Orders,N/A,N/A,N/A,305
+2024,4,N/A,Applications,Initial,N/A,N/A,321
+2024,4,N/A,Final Order,N/A,N/A,N/A,271
+2024,4,N/A,Cases Started,N/A,N/A,N/A,321
+2024,4,0-12 years,Child_Age,All,N/A,N/A,30
+2024,4,13-15 years,Child_Age,All,N/A,N/A,171
+2024,4,16-18 years,Child_Age,All,N/A,N/A,120
+2024,4,N/A,Child_Sex,All,Female,N/A,156
+2024,4,N/A,Child_Sex,All,Male,N/A,164
+2024,4,N/A,Child_Sex,All,Other,N/A,1
+2024,4,N/A,Final Order Made,N/A,N/A,0-3 months,59
+2024,4,N/A,Final Order Made,N/A,N/A,3-6 months,71
+2024,4,N/A,Final Order Made,N/A,N/A,6-9 months,37
+2024,4,N/A,Final Order Made,N/A,N/A,9-12 months,38
+2024,4,N/A,Final Order Made,N/A,N/A,Over 12 months,39
+2024,4,N/A,Orders,N/A,N/A,N/A,302
+2025,1,N/A,Applications,Initial,N/A,N/A,321
+2025,1,N/A,Final Order,N/A,N/A,N/A,251
+2025,1,N/A,Cases Started,N/A,N/A,N/A,321
+2025,1,0-12 years,Child_Age,All,N/A,N/A,31
+2025,1,13-15 years,Child_Age,All,N/A,N/A,177
+2025,1,16-18 years,Child_Age,All,N/A,N/A,112
+2025,1,Unknown,Child_Age,All,N/A,N/A,1
+2025,1,N/A,Child_Sex,All,Female,N/A,170
+2025,1,N/A,Child_Sex,All,Male,N/A,148
+2025,1,N/A,Child_Sex,All,Other,N/A,2
+2025,1,N/A,Child_Sex,All,Other,N/A,1
+2025,1,N/A,Final Order Made,N/A,N/A,0-3 months,49
+2025,1,N/A,Final Order Made,N/A,N/A,3-6 months,29
+2025,1,N/A,Final Order Made,N/A,N/A,6-9 months,13
+2025,1,N/A,Final Order Made,N/A,N/A,9-12 months,21
+2025,1,N/A,Final Order Made,N/A,N/A,Over 12 months,20
+2025,1,N/A,Orders,N/A,N/A,N/A,293
+2025,2,N/A,Applications,Initial,N/A,N/A,358
+2025,2,N/A,Final Order,N/A,N/A,N/A,250
+2025,2,N/A,Cases Started,N/A,N/A,N/A,358
+2025,2,0-12 years,Child_Age,All,N/A,N/A,33
+2025,2,13-15 years,Child_Age,All,N/A,N/A,201
+2025,2,16-18 years,Child_Age,All,N/A,N/A,121
+2025,2,Unknown,Child_Age,All,N/A,N/A,3
+2025,2,N/A,Child_Sex,All,Female,N/A,183
+2025,2,N/A,Child_Sex,All,Male,N/A,174
+2025,2,N/A,Child_Sex,All,Other,N/A,1
+2025,2,N/A,Final Order Made,N/A,N/A,0-3 months,56
+2025,2,N/A,Final Order Made,N/A,N/A,3-6 months,8
+2025,2,N/A,Final Order Made,N/A,N/A,6-9 months,6
+2025,2,N/A,Final Order Made,N/A,N/A,9-12 months,9
+2025,2,N/A,Final Order Made,N/A,N/A,Over 12 months,5
+2025,2,N/A,Orders,N/A,N/A,N/A,307
+2025,3,N/A,Applications,Initial,N/A,N/A,381
+2025,3,N/A,Final Order,N/A,N/A,N/A,157
+2025,3,N/A,Cases Started,N/A,N/A,N/A,381
+2025,3,0-12 years,Child_Age,All,N/A,N/A,50
+2025,3,13-15 years,Child_Age,All,N/A,N/A,230
+2025,3,16-18 years,Child_Age,All,N/A,N/A,99
+2025,3,Unknown,Child_Age,All,N/A,N/A,2
+2025,3,N/A,Child_Sex,All,Female,N/A,193
+2025,3,N/A,Child_Sex,All,Male,N/A,184
+2025,3,N/A,Child_Sex,All,Other,N/A,1
+2025,3,N/A,Child_Sex,All,Other,N/A,2
+2025,3,N/A,Child_Sex,All,Other,N/A,1
+2025,3,N/A,Final Order Made,N/A,N/A,0-3 months,11
+2025,3,N/A,Final Order Made,N/A,N/A,3-6 months,6
+2025,3,N/A,Final Order Made,N/A,N/A,6-9 months,3
+2025,3,N/A,Final Order Made,N/A,N/A,9-12 months,13
+2025,3,N/A,Final Order Made,N/A,N/A,Over 12 months,8
+2025,3,N/A,Orders,N/A,N/A,N/A,317
+2025,4,N/A,Applications,Initial,N/A,N/A,379
+2025,4,N/A,Applications,Extended,N/A,N/A,1
+2025,4,N/A,Final Order,N/A,N/A,N/A,122
+2025,4,N/A,Cases Started,N/A,N/A,N/A,379
+2025,4,0-12 years,Child_Age,All,N/A,N/A,41
+2025,4,13-15 years,Child_Age,All,N/A,N/A,225
+2025,4,16-18 years,Child_Age,All,N/A,N/A,113
+2025,4,N/A,Child_Sex,All,Female,N/A,187
+2025,4,N/A,Child_Sex,All,Male,N/A,188
+2025,4,N/A,Child_Sex,All,Other,N/A,3
+2025,4,N/A,Child_Sex,All,Other,N/A,1
+2025,4,N/A,Final Order Made,N/A,N/A,0-3 months,20
+2025,4,N/A,Final Order Made,N/A,N/A,3-6 months,16
+2025,4,N/A,Final Order Made,N/A,N/A,6-9 months,8
+2025,4,N/A,Final Order Made,N/A,N/A,9-12 months,10
+2025,4,N/A,Final Order Made,N/A,N/A,Over 12 months,3
+2025,4,N/A,Orders,N/A,N/A,N/A,267

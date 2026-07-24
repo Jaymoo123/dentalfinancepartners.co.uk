@@ -1,0 +1,561 @@
+type,year,qtr,consent,count
+Applications,2006,1,Uncontested,11072
+Applications,2006,1,Contested,6826
+Cases closed,2006,1,,13306
+Cases started,2006,1,,15601
+Disposals,2006,1,Uncontested,12158
+Disposals,2006,1,Contested,3562
+Disposals,2006,1,Initially Contested,4334
+Applications,2006,2,Uncontested,10563
+Applications,2006,2,Contested,6720
+Cases closed,2006,2,,12284
+Cases started,2006,2,,15199
+Disposals,2006,2,Contested,3184
+Disposals,2006,2,Initially Contested,3984
+Disposals,2006,2,Uncontested,11320
+Applications,2006,3,Uncontested,10533
+Cases started,2007,1,,15376
+Disposals,2007,1,Contested,3118
+Disposals,2007,1,Uncontested,11668
+Disposals,2007,1,Initially Contested,3850
+Applications,2007,2,Contested,6444
+Applications,2007,2,Uncontested,10500
+Cases closed,2007,2,,12383
+Cases started,2007,2,,14861
+Disposals,2007,2,Contested,2914
+Disposals,2007,2,Initially Contested,3729
+Disposals,2007,2,Uncontested,11495
+Applications,2007,3,Contested,6370
+Applications,2007,3,Uncontested,10049
+Cases closed,2007,3,,12156
+Cases started,2007,3,,14329
+Disposals,2007,3,Contested,2743
+Disposals,2007,3,Uncontested,11155
+Disposals,2007,3,Initially Contested,3681
+Applications,2007,4,Uncontested,8822
+Applications,2007,4,Contested,5687
+Cases closed,2007,4,,10867
+Cases started,2007,4,,12632
+Disposals,2007,4,Contested,2764
+Disposals,2007,4,Initially Contested,3380
+Disposals,2007,4,Uncontested,10022
+Applications,2008,1,Uncontested,9161
+Applications,2008,1,Contested,5940
+Cases closed,2008,1,,10954
+Cases started,2008,1,,13262
+Disposals,2008,1,Contested,2853
+Disposals,2008,1,Uncontested,9954
+Disposals,2008,1,Initially Contested,3501
+Applications,2006,3,Contested,6756
+Cases closed,2006,3,,12073
+Cases started,2006,3,,15153
+Disposals,2006,3,Contested,3142
+Disposals,2006,3,Uncontested,11226
+Disposals,2006,3,Initially Contested,3626
+Applications,2006,4,Contested,6513
+Applications,2006,4,Uncontested,10271
+Cases closed,2006,4,,11993
+Cases started,2006,4,,14677
+Disposals,2006,4,Contested,2930
+Disposals,2006,4,Initially Contested,3732
+Disposals,2006,4,Uncontested,10999
+Applications,2007,1,Uncontested,10635
+Applications,2007,1,Contested,6866
+Cases closed,2007,1,,12516
+Applications,2008,2,Uncontested,9397
+Applications,2008,2,Contested,5960
+Cases closed,2008,2,,11022
+Cases started,2008,2,,13414
+Disposals,2008,2,Contested,2744
+Disposals,2008,2,Uncontested,10319
+Disposals,2008,2,Initially Contested,3322
+Applications,2008,3,Contested,5593
+Applications,2008,3,Uncontested,9067
+Cases closed,2008,3,,10732
+Cases started,2008,3,,12679
+Disposals,2008,3,Contested,2814
+Disposals,2008,3,Uncontested,9761
+Disposals,2008,3,Initially Contested,3377
+Applications,2008,4,Uncontested,8194
+Applications,2008,4,Contested,5132
+Cases closed,2008,4,,9750
+Cases started,2008,4,,11560
+Disposals,2008,4,Contested,2490
+Disposals,2008,4,Initially Contested,3064
+Disposals,2008,4,Uncontested,8851
+Applications,2009,1,Contested,5216
+Applications,2009,1,Uncontested,7572
+Cases closed,2009,1,,9627
+Cases started,2009,1,,11083
+Disposals,2009,1,Contested,2681
+Disposals,2009,1,Initially Contested,3119
+Disposals,2009,1,Uncontested,8436
+Applications,2009,2,Contested,5180
+Applications,2009,2,Uncontested,7639
+Cases closed,2009,2,,9199
+Cases started,2009,2,,11140
+Disposals,2009,2,Contested,2541
+Disposals,2009,2,Initially Contested,2978
+Disposals,2009,2,Uncontested,8175
+Applications,2009,3,Uncontested,7983
+Applications,2009,3,Contested,5153
+Cases closed,2009,3,,9658
+Cases started,2009,3,,11537
+Disposals,2009,3,Contested,2550
+Disposals,2009,3,Initially Contested,3104
+Disposals,2009,3,Uncontested,8672
+Applications,2009,4,Contested,5182
+Applications,2009,4,Uncontested,8107
+Cases closed,2009,4,,9439
+Cases started,2009,4,,11685
+Disposals,2009,4,Contested,2298
+Disposals,2009,4,Initially Contested,2889
+Disposals,2009,4,Uncontested,8635
+Applications,2010,1,Uncontested,8291
+Applications,2010,1,Contested,5161
+Cases closed,2010,1,,9623
+Cases started,2010,1,,11883
+Disposals,2010,1,Contested,2472
+Disposals,2010,1,Uncontested,8628
+Disposals,2010,1,Initially Contested,3136
+Applications,2010,2,Contested,4968
+Applications,2010,2,Uncontested,7943
+Cases closed,2010,2,,9805
+Cases started,2010,2,,11405
+Disposals,2010,2,Contested,2278
+Disposals,2010,2,Uncontested,8800
+Disposals,2010,2,Initially Contested,3110
+Applications,2010,3,Contested,4907
+Applications,2010,3,Uncontested,7936
+Cases closed,2010,3,,10010
+Cases started,2010,3,,11394
+Disposals,2010,3,Contested,2437
+Disposals,2010,3,Uncontested,8903
+Disposals,2010,3,Initially Contested,3246
+Applications,2010,4,Uncontested,7933
+Applications,2010,4,Contested,4542
+Cases closed,2010,4,,9542
+Cases started,2010,4,,11066
+Disposals,2010,4,Contested,2487
+Disposals,2010,4,Uncontested,8608
+Disposals,2010,4,Initially Contested,3000
+Applications,2011,1,Uncontested,8285
+Applications,2011,1,Contested,4908
+Cases closed,2011,1,,10188
+Cases started,2011,1,,11826
+Disposals,2011,1,Contested,2639
+Disposals,2011,1,Initially Contested,3244
+Disposals,2011,1,Uncontested,8810
+Applications,2011,2,Contested,2962
+Applications,2011,2,Uncontested,6605
+Cases closed,2011,2,,8805
+Cases started,2011,2,,8461
+Disposals,2011,2,Contested,2479
+Disposals,2011,2,Uncontested,7489
+Disposals,2011,2,Initially Contested,3022
+Applications,2011,3,Uncontested,8143
+Applications,2011,3,Contested,3690
+Cases closed,2011,3,,9547
+Cases started,2011,3,,10541
+Disposals,2011,3,Contested,2399
+Disposals,2011,3,Uncontested,8675
+Disposals,2011,3,Initially Contested,2844
+Applications,2011,4,Contested,4042
+Applications,2011,4,Uncontested,7717
+Cases closed,2011,4,,8921
+Cases started,2011,4,,10517
+Disposals,2011,4,Contested,2214
+Disposals,2011,4,Uncontested,8389
+Disposals,2011,4,Initially Contested,2614
+Applications,2012,1,Uncontested,8249
+Applications,2012,1,Contested,4352
+Cases closed,2012,1,,9091
+Cases started,2012,1,,11163
+Disposals,2012,1,Contested,2385
+Disposals,2012,1,Uncontested,8907
+Disposals,2012,1,Initially Contested,2645
+Applications,2012,2,Uncontested,7714
+Applications,2012,2,Contested,4026
+Cases closed,2012,2,,8432
+Cases started,2012,2,,10432
+Disposals,2012,2,Contested,2407
+Disposals,2012,2,Initially Contested,2442
+Disposals,2012,2,Uncontested,8174
+Applications,2012,3,Contested,4063
+Applications,2012,3,Uncontested,7796
+Cases closed,2012,3,,8927
+Cases started,2012,3,,10543
+Disposals,2012,3,Contested,2313
+Disposals,2012,3,Uncontested,8481
+Disposals,2012,3,Initially Contested,2504
+Applications,2012,4,Contested,4016
+Applications,2012,4,Uncontested,7768
+Cases closed,2012,4,,8981
+Cases started,2012,4,,10498
+Disposals,2012,4,Contested,2229
+Disposals,2012,4,Uncontested,8330
+Disposals,2012,4,Initially Contested,2614
+Applications,2013,1,Uncontested,7308
+Applications,2013,1,Contested,4103
+Cases closed,2013,1,,8575
+Cases started,2013,1,,10207
+Disposals,2013,1,Contested,2204
+Disposals,2013,1,Uncontested,7855
+Disposals,2013,1,Initially Contested,2587
+Applications,2013,2,Uncontested,7685
+Applications,2013,2,Contested,4747
+Cases closed,2013,2,,8768
+Cases started,2013,2,,11214
+Disposals,2013,2,Contested,2247
+Disposals,2013,2,Uncontested,7887
+Disposals,2013,2,Initially Contested,2551
+Applications,2013,3,Contested,4203
+Applications,2013,3,Uncontested,7886
+Cases closed,2013,3,,9321
+Cases started,2013,3,,10860
+Disposals,2013,3,Contested,2238
+Disposals,2013,3,Uncontested,8505
+Disposals,2013,3,Initially Contested,2484
+Applications,2013,4,Uncontested,7606
+Applications,2013,4,Contested,3964
+Cases closed,2013,4,,8851
+Cases started,2013,4,,10385
+Disposals,2013,4,Contested,2142
+Disposals,2013,4,Uncontested,8101
+Disposals,2013,4,Initially Contested,2464
+Applications,2014,1,Contested,4078
+Applications,2014,1,Uncontested,7427
+Cases closed,2014,1,,8603
+Cases started,2014,1,,10203
+Disposals,2014,1,Contested,2124
+Disposals,2014,1,Initially Contested,2607
+Disposals,2014,1,Uncontested,7986
+Applications,2014,2,Contested,2826
+Applications,2014,2,Uncontested,7155
+Cases closed,2014,2,,8136
+Cases started,2014,2,,8729
+Disposals,2014,2,Contested,2004
+Disposals,2014,2,Uncontested,7560
+Disposals,2014,2,Initially Contested,2414
+Applications,2014,3,Contested,3100
+Applications,2014,3,Uncontested,7315
+Cases closed,2014,3,,8506
+Cases started,2014,3,,9210
+Disposals,2014,3,Contested,1796
+Disposals,2014,3,Uncontested,7696
+Disposals,2014,3,Initially Contested,2306
+Applications,2014,4,Uncontested,7174
+Applications,2014,4,Contested,3292
+Cases closed,2014,4,,8240
+Cases started,2014,4,,9280
+Disposals,2014,4,Contested,1633
+Disposals,2014,4,Initially Contested,2110
+Disposals,2014,4,Uncontested,7618
+Applications,2015,1,Uncontested,7205
+Applications,2015,1,Contested,3473
+Cases closed,2015,1,,8255
+Applications,2024,2,Contested,2898
+Applications,2024,2,Uncontested,8307
+Cases closed,2024,2,,11260
+Cases started,2024,2,,11093
+Disposals,2024,2,Contested,2402
+Disposals,2024,2,Uncontested,7896
+Disposals,2024,2,Initially Contested,1037
+Applications,2024,3,Uncontested,8985
+Applications,2024,3,Contested,2803
+Cases closed,2024,3,,11541
+Cases started,2024,3,,11667
+Disposals,2024,3,Contested,2215
+Disposals,2024,3,Uncontested,8382
+Disposals,2024,3,Initially Contested,1017
+Applications,2024,4,Uncontested,8170
+Applications,2024,4,Contested,2852
+Cases closed,2024,4,,12665
+Cases started,2024,4,,10900
+Disposals,2024,4,Contested,2617
+Disposals,2024,4,Initially Contested,1096
+Disposals,2024,4,Uncontested,9042
+Applications,2025,1,Contested,3041
+Applications,2025,1,Uncontested,8675
+Cases closed,2025,1,,11324
+Cases started,2025,1,,11590
+Disposals,2025,1,Contested,2733
+Disposals,2025,1,Initially Contested,1132
+Disposals,2025,1,Uncontested,7504
+Applications,2025,2,Uncontested,9299
+Applications,2025,2,Contested,2977
+Cases closed,2025,2,,12548
+Cases started,2025,2,,12161
+Disposals,2025,2,Contested,2141
+Disposals,2025,2,Initially Contested,1130
+Disposals,2025,2,Uncontested,9314
+Applications,2025,3,Uncontested,9348
+Applications,2025,3,Contested,3287
+Cases closed,2025,3,,12204
+Cases started,2025,3,,12534
+Disposals,2025,3,Contested,2126
+Disposals,2025,3,Uncontested,9060
+Disposals,2025,3,Initially Contested,1075
+Applications,2025,4,Contested,3250
+Applications,2025,4,Uncontested,9190
+Cases closed,2025,4,,10406
+Cases started,2025,4,,12335
+Disposals,2025,4,Uncontested,7547
+Disposals,2025,4,Contested,1913
+Disposals,2025,4,Initially Contested,976
+Cases started,2015,1,,9511
+Disposals,2015,1,Contested,1689
+Disposals,2015,1,Initially Contested,1991
+Disposals,2015,1,Uncontested,7674
+Applications,2015,2,Uncontested,7040
+Applications,2015,2,Contested,3389
+Cases closed,2015,2,,7989
+Cases started,2015,2,,9356
+Disposals,2015,2,Contested,1613
+Disposals,2015,2,Initially Contested,2014
+Disposals,2015,2,Uncontested,7428
+Applications,2015,3,Contested,3478
+Applications,2015,3,Uncontested,7243
+Cases closed,2015,3,,8136
+Cases started,2015,3,,9576
+Disposals,2015,3,Contested,1607
+Disposals,2015,3,Uncontested,7575
+Disposals,2015,3,Initially Contested,1893
+Applications,2015,4,Contested,3536
+Applications,2015,4,Uncontested,7019
+Cases closed,2015,4,,7850
+Cases started,2015,4,,9296
+Disposals,2015,4,Contested,1595
+Disposals,2015,4,Initially Contested,1840
+Disposals,2015,4,Uncontested,6895
+Applications,2016,1,Uncontested,7648
+Applications,2016,1,Contested,3451
+Cases closed,2016,1,,8228
+Cases started,2016,1,,9758
+Disposals,2016,1,Contested,1634
+Disposals,2016,1,Uncontested,7397
+Disposals,2016,1,Initially Contested,2017
+Applications,2016,2,Contested,3620
+Applications,2016,2,Uncontested,8255
+Cases closed,2016,2,,8460
+Cases started,2016,2,,10442
+Disposals,2016,2,Contested,1628
+Disposals,2016,2,Initially Contested,1847
+Disposals,2016,2,Uncontested,7821
+Applications,2016,3,Uncontested,8195
+Applications,2016,3,Contested,3599
+Cases closed,2016,3,,9412
+Cases started,2016,3,,10558
+Disposals,2016,3,Contested,1571
+Disposals,2016,3,Uncontested,8290
+Disposals,2016,3,Initially Contested,1765
+Applications,2016,4,Uncontested,8124
+Applications,2016,4,Contested,3732
+Cases closed,2016,4,,9062
+Cases started,2016,4,,10598
+Disposals,2016,4,Contested,1513
+Disposals,2016,4,Initially Contested,1879
+Disposals,2016,4,Uncontested,8093
+Applications,2017,1,Contested,3810
+Applications,2017,1,Uncontested,8412
+Cases closed,2017,1,,9986
+Cases started,2017,1,,11027
+Disposals,2017,1,Contested,1758
+Disposals,2017,1,Uncontested,8627
+Disposals,2017,1,Initially Contested,1931
+Applications,2017,2,Contested,3687
+Applications,2017,2,Uncontested,7854
+Cases closed,2017,2,,9533
+Cases started,2017,2,,10427
+Disposals,2017,2,Contested,1683
+Disposals,2017,2,Initially Contested,1940
+Disposals,2017,2,Uncontested,8273
+Applications,2017,3,Contested,3696
+Applications,2017,3,Uncontested,7758
+Cases closed,2017,3,,9472
+Cases started,2017,3,,10514
+Disposals,2017,3,Contested,1730
+Disposals,2017,3,Initially Contested,2063
+Disposals,2017,3,Uncontested,8201
+Applications,2017,4,Contested,3451
+Applications,2017,4,Uncontested,7607
+Cases closed,2017,4,,8868
+Cases started,2017,4,,10183
+Disposals,2017,4,Contested,1783
+Disposals,2017,4,Uncontested,7653
+Disposals,2017,4,Initially Contested,2045
+Applications,2018,1,Uncontested,7661
+Applications,2018,1,Contested,3470
+Cases closed,2018,1,,9302
+Cases started,2018,1,,10257
+Disposals,2018,1,Contested,1844
+Disposals,2018,1,Uncontested,7864
+Disposals,2018,1,Initially Contested,2213
+Applications,2018,2,Uncontested,7402
+Applications,2018,2,Contested,3509
+Cases closed,2018,2,,8578
+Cases started,2018,2,,10078
+Disposals,2018,2,Contested,1849
+Disposals,2018,2,Uncontested,7054
+Disposals,2018,2,Initially Contested,2206
+Applications,2018,3,Uncontested,6804
+Applications,2018,3,Contested,3496
+Cases closed,2018,3,,9417
+Cases started,2018,3,,9554
+Disposals,2018,3,Contested,1840
+Disposals,2018,3,Uncontested,8154
+Disposals,2018,3,Initially Contested,2064
+Applications,2018,4,Contested,3623
+Applications,2018,4,Uncontested,7186
+Cases closed,2018,4,,9435
+Cases started,2018,4,,10108
+Disposals,2018,4,Contested,1784
+Disposals,2018,4,Initially Contested,2177
+Disposals,2018,4,Uncontested,8074
+Applications,2019,1,Contested,3532
+Applications,2019,1,Uncontested,7101
+Cases closed,2019,1,,9445
+Cases started,2019,1,,9936
+Disposals,2019,1,Contested,1879
+Disposals,2019,1,Initially Contested,2113
+Disposals,2019,1,Uncontested,8184
+Applications,2019,2,Uncontested,7032
+Applications,2019,2,Contested,3423
+Cases closed,2019,2,,8557
+Cases started,2019,2,,9744
+Disposals,2019,2,Contested,1745
+Disposals,2019,2,Initially Contested,1996
+Disposals,2019,2,Uncontested,7683
+Applications,2019,3,Contested,3315
+Applications,2019,3,Uncontested,6908
+Cases closed,2019,3,,9603
+Cases started,2019,3,,9576
+Disposals,2019,3,Contested,1697
+Disposals,2019,3,Initially Contested,2053
+Disposals,2019,3,Uncontested,8968
+Applications,2019,4,Contested,3639
+Applications,2019,4,Uncontested,7108
+Cases closed,2019,4,,9550
+Cases started,2019,4,,10095
+Disposals,2019,4,Contested,1718
+Disposals,2019,4,Uncontested,8524
+Disposals,2019,4,Initially Contested,1974
+Applications,2020,1,Uncontested,6965
+Applications,2020,1,Contested,3102
+Cases closed,2020,1,,8898
+Cases started,2020,1,,9465
+Disposals,2020,1,Contested,1879
+Disposals,2020,1,Uncontested,8050
+Disposals,2020,1,Initially Contested,1758
+Applications,2020,2,Contested,2104
+Applications,2020,2,Uncontested,5359
+Cases closed,2020,2,,7239
+Cases started,2020,2,,7000
+Disposals,2020,2,Contested,1482
+Disposals,2020,2,Uncontested,6945
+Disposals,2020,2,Initially Contested,1087
+Applications,2020,3,Uncontested,7149
+Applications,2020,3,Contested,3617
+Cases closed,2020,3,,9508
+Cases started,2020,3,,10180
+Disposals,2020,3,Contested,1362
+Disposals,2020,3,Uncontested,8799
+Disposals,2020,3,Initially Contested,1516
+Applications,2020,4,Contested,3255
+Applications,2020,4,Uncontested,8395
+Cases closed,2020,4,,12162
+Cases started,2020,4,,11119
+Disposals,2020,4,Contested,1649
+Disposals,2020,4,Uncontested,10349
+Disposals,2020,4,Initially Contested,1696
+Applications,2021,1,Contested,3523
+Applications,2021,1,Uncontested,9431
+Cases closed,2021,1,,10935
+Cases started,2021,1,,12452
+Disposals,2021,1,Contested,1685
+Disposals,2021,1,Initially Contested,1893
+Disposals,2021,1,Uncontested,8963
+Applications,2021,2,Uncontested,10271
+Applications,2021,2,Contested,3271
+Cases closed,2021,2,,10173
+Cases started,2021,2,,13020
+Disposals,2021,2,Contested,1679
+Disposals,2021,2,Initially Contested,1841
+Disposals,2021,2,Uncontested,7867
+Applications,2021,3,Contested,2935
+Applications,2021,3,Uncontested,8985
+Cases closed,2021,3,,11086
+Cases started,2021,3,,11474
+Disposals,2021,3,Contested,1605
+Disposals,2021,3,Initially Contested,1734
+Disposals,2021,3,Uncontested,8936
+Applications,2021,4,Uncontested,7916
+Applications,2021,4,Contested,2716
+Cases closed,2021,4,,11289
+Cases started,2021,4,,10128
+Disposals,2021,4,Contested,1659
+Disposals,2021,4,Uncontested,9017
+Disposals,2021,4,Initially Contested,1679
+Applications,2022,1,Uncontested,8191
+Applications,2022,1,Contested,2803
+Cases closed,2022,1,,10705
+Cases started,2022,1,,10505
+Disposals,2022,1,Contested,1808
+Disposals,2022,1,Initially Contested,1597
+Disposals,2022,1,Uncontested,8337
+Applications,2022,2,Contested,2800
+Applications,2022,2,Uncontested,6643
+Cases closed,2022,2,,7914
+Cases started,2022,2,,9055
+Disposals,2022,2,Contested,1276
+Disposals,2022,2,Initially Contested,983
+Disposals,2022,2,Uncontested,6152
+Applications,2022,3,Uncontested,6625
+Applications,2022,3,Contested,3024
+Cases closed,2022,3,,8395
+Cases started,2022,3,,9285
+Disposals,2022,3,Contested,1353
+Disposals,2022,3,Initially Contested,927
+Disposals,2022,3,Uncontested,6512
+Applications,2022,4,Contested,3058
+Applications,2022,4,Uncontested,6937
+Cases closed,2022,4,,7437
+Cases started,2022,4,,9699
+Disposals,2022,4,Contested,1491
+Disposals,2022,4,Initially Contested,842
+Disposals,2022,4,Uncontested,5504
+Applications,2023,1,Uncontested,8328
+Applications,2023,1,Contested,3206
+Cases closed,2023,1,,10524
+Cases started,2023,1,,11198
+Disposals,2023,1,Contested,1712
+Disposals,2023,1,Initially Contested,1026
+Disposals,2023,1,Uncontested,8131
+Applications,2023,2,Contested,3018
+Applications,2023,2,Uncontested,8132
+Cases closed,2023,2,,9452
+Cases started,2023,2,,10950
+Disposals,2023,2,Contested,1478
+Disposals,2023,2,Initially Contested,1030
+Disposals,2023,2,Uncontested,7188
+Applications,2023,3,Uncontested,7826
+Applications,2023,3,Contested,3229
+Cases closed,2023,3,,10445
+Cases started,2023,3,,10865
+Disposals,2023,3,Contested,1417
+Disposals,2023,3,Initially Contested,1003
+Disposals,2023,3,Uncontested,8161
+Applications,2023,4,Contested,3182
+Applications,2023,4,Uncontested,7365
+Cases closed,2023,4,,9772
+Cases started,2023,4,,10384
+Disposals,2023,4,Contested,1568
+Disposals,2023,4,Initially Contested,965
+Disposals,2023,4,Uncontested,7362
+Applications,2024,1,Contested,3288
+Applications,2024,1,Uncontested,8260
+Cases closed,2024,1,,11217
+Cases started,2024,1,,11412
+Disposals,2024,1,Contested,2937
+Disposals,2024,1,Initially Contested,969
+Disposals,2024,1,Uncontested,7431

@@ -1,0 +1,1685 @@
+stage,year,quarter,case_type,law,count,mean_weeks,median_weeks
+Petition,2016,,Paper,Old,114039,,
+Petition,2010,,Paper,Old,133268,,
+Petition,2013,,Paper,Old,117483,,
+Petition,2006,,Paper,Old,146765,,
+Petition,2022,,Digital,Old,26724,,
+Petition,2020,,Paper,Old,51885,,
+Petition,2025,,Paper,New,3158,,
+Petition,2019,,Paper,Old,104188,,
+Petition,2018,,Paper,Old,118346,,
+Petition,2022,,Paper,Old,3889,,
+Petition,2025,,Digital,New,106026,,
+Petition,2023,,Digital,New,107278,,
+Petition,2015,,Paper,Old,114504,,
+Petition,2003,,Paper,Old,170741,,
+Petition,2005,,Paper,Old,149821,,
+Petition,2009,,Paper,Old,131896,,
+Petition,2012,,Paper,Old,124395,,
+Petition,2020,,Digital,Old,61185,,
+Petition,2021,,Paper,Old,26657,,
+Petition,2008,,Paper,Old,128571,,
+Petition,2023,,Paper,New,5795,,
+Petition,2024,,Digital,New,106294,,
+Petition,2022,,Paper,New,3694,,
+Petition,2024,,Paper,New,4134,,
+Petition,2021,,Digital,Old,81875,,
+Petition,2011,,Paper,Old,129258,,
+Petition,2014,,Paper,Old,112559,,
+Petition,2017,,Paper,Old,109266,,
+Petition,2007,,Paper,Old,135853,,
+Petition,2004,,Paper,Old,165133,,
+Petition,2019,,Digital,Old,12440,,
+Petition,2022,,Digital,New,88177,,
+Decree Absolute,,2007 Q4,All,Old,27809,46.594,31.286
+Decree Absolute,,2021 Q2,All,Old,30566,48.915,28.429
+Decree Absolute,,2016 Q4,All,Old,24810,52.857,30.714
+Decree Absolute,,2011 Q2,All,Old,29026,49.003,32.429
+Decree Absolute,,2014 Q4,All,Old,27135,48.637,28.571
+Decree Absolute,,2019 Q2,All,Old,24221,58.167,40.857
+Decree Absolute,,2008 Q2,All,Old,30851,47.813,33.714
+Decree Absolute,,2022 Q2,All,Old,19716,55.925,31.143
+Decree Absolute,,2007 Q1,All,Old,34612,46.189,31.571
+Decree Absolute,,2007 Q2,All,Old,33129,45.835,31.571
+Decree Absolute,,2005 Q3,All,Old,35876,45.077,31.143
+Decree Absolute,,2021 Q4,All,Old,25753,52.395,27.857
+Decree Absolute,,2019 Q1,All,Old,23968,60.482,39.857
+Decree Absolute,,2010 Q2,All,Old,29764,48.449,32.357
+Decree Absolute,,2006 Q3,All,Old,32816,45.945,31.429
+Decree Absolute,,2025 Q1,All,New,20244,57.205,42.857
+Decree Absolute,,2012 Q2,All,Old,29549,48.795,31.571
+Decree Absolute,,2011 Q3,All,Old,30174,47.82,31.857
+Decree Absolute,,2010 Q3,All,Old,30520,48.095,31.429
+Decree Absolute,,2003 Q1,All,Old,38811,42.121,31.143
+Decree Absolute,,2005 Q1,All,Old,35922,44.748,31.286
+Decree Absolute,,2004 Q2,All,Old,37714,43.739,31.143
+Decree Absolute,,2017 Q1,All,Old,27963,50.163,31.714
+Decree Absolute,,2018 Q4,All,Old,24102,56.228,36.857
+Decree Absolute,,2013 Q1,All,Old,28683,49.039,31.143
+Decree Absolute,,2013 Q3,All,Old,29808,50.728,30.143
+Decree Absolute,,2023 Q1,All,Old,9263,117.098,88.286
+Decree Absolute,,2021 Q1,All,Old,30133,50.473,30.714
+Decree Absolute,,2025 Q1,All,Old,1862,261.529,208.786
+Decree Absolute,,2023 Q2,All,Old,7069,130.477,103
+Decree Absolute,,2024 Q2,All,Old,3111,199.223,158
+Decree Absolute,,2023 Q4,All,Old,4633,165.806,132.571
+Decree Absolute,,2009 Q4,All,Old,29883,47.451,31
+Decree Absolute,,2024 Q1,All,New,22135,47.527,40.429
+Decree Absolute,,2024 Q3,All,New,25064,48.321,38
+Decree Absolute,,2025 Q2,All,New,26591,55.19,41.714
+Decree Absolute,,2017 Q4,All,Old,23398,50.965,31.143
+Decree Absolute,,2014 Q1,All,Old,29141,49.378,31.714
+Decree Absolute,,2016 Q2,All,Old,29117,48.597,30
+Decree Absolute,,2009 Q3,All,Old,29144,47.862,31.714
+Decree Absolute,,2020 Q1,All,Old,30174,52.835,36
+Decree Absolute,,2019 Q4,All,Old,30298,53.757,38.143
+Decree Absolute,,2022 Q3,All,Old,19724,65.702,39.286
+Decree Absolute,,2018 Q1,All,Old,24047,52.254,32
+Decree Absolute,,2003 Q3,All,Old,37853,42.704,30.714
+Decree Absolute,,2015 Q2,All,Old,26213,48.117,28.857
+Decree Absolute,,2013 Q4,All,Old,28195,49.477,30.857
+Decree Absolute,,2006 Q4,All,Old,32341,45.768,31.286
+Decree Absolute,,2011 Q1,All,Old,30864,48.999,32.714
+Decree Absolute,,2023 Q4,All,New,18241,43.823,37.286
+Decree Absolute,,2022 Q4,All,New,7448,32.836,32.571
+Decree Absolute,,2025 Q4,All,New,26596,54.257,37.571
+Decree Absolute,,2023 Q3,All,New,20224,40.058,35
+Decree Absolute,,2015 Q3,All,Old,26303,48.216,28.286
+Decree Absolute,,2020 Q3,All,Old,23625,50.763,35.286
+Decree Absolute,,2015 Q1,All,Old,27068,48.836,28.286
+Decree Absolute,,2003 Q4,All,Old,37652,43.375,31.286
+Decree Absolute,,2011 Q4,All,Old,29424,48.681,32
+Decree Absolute,,2012 Q3,All,Old,30191,48.946,31
+Decree Absolute,,2022 Q1,All,Old,23912,55.845,32.857
+Decree Absolute,,2003 Q2,All,Old,37920,41.979,30.857
+Decree Absolute,,2008 Q1,All,Old,31977,47.622,33.714
+Decree Absolute,,2016 Q1,All,Old,26735,50.997,31.429
+Decree Absolute,,2014 Q3,All,Old,27805,49.669,29.143
+Decree Absolute,,2019 Q3,All,Old,28821,54.972,39.857
+Decree Absolute,,2005 Q2,All,Old,36349,45.257,31.571
+Decree Absolute,,2012 Q1,All,Old,31612,49.037,31.714
+Decree Absolute,,2018 Q3,All,Old,21195,57.133,37.143
+Decree Absolute,,2015 Q4,All,Old,22570,51.613,31
+Decree Absolute,,2005 Q4,All,Old,33254,45.353,31.143
+Decree Absolute,,2013 Q2,All,Old,28181,50.476,32
+Decree Absolute,,2025 Q3,All,Old,1291,303.832,243.857
+Decree Absolute,,2008 Q3,All,Old,30593,47.789,31.143
+Decree Absolute,,2010 Q1,All,Old,30280,47.246,31.714
+Decree Absolute,,2022 Q4,All,Old,9617,92.613,66.429
+Decree Absolute,,2017 Q2,All,Old,26493,49.059,30
+Decree Absolute,,2014 Q2,All,Old,27719,49.202,30.286
+Decree Absolute,,2006 Q2,All,Old,32913,45.516,31.714
+Decree Absolute,,2025 Q2,All,Old,1573,297.32,233
+Decree Absolute,,2025 Q3,All,New,26426,55.863,40.714
+Decree Absolute,,2023 Q1,All,New,18197,36,34.714
+Decree Absolute,,2024 Q4,All,New,21129,52.136,39.286
+Decree Absolute,,2024 Q2,All,New,25917,46.849,38.571
+Decree Absolute,,2004 Q1,All,Old,39091,44.208,31.857
+Decree Absolute,,2021 Q3,All,Old,27389,54.419,30.571
+Decree Absolute,,2017 Q3,All,Old,24947,49.832,29.857
+Decree Absolute,,2008 Q4,All,Old,28838,46.983,31
+Decree Absolute,,2018 Q2,All,Old,22639,55.093,34.571
+Decree Absolute,,2006 Q1,All,Old,34240,45.682,31.714
+Decree Absolute,,2007 Q3,All,Old,33129,45.944,31.286
+Decree Absolute,,2009 Q2,All,Old,27283,48.314,32.571
+Decree Absolute,,2012 Q4,All,Old,29164,49.061,31
+Decree Absolute,,2020 Q4,All,Old,25339,53.956,37
+Decree Absolute,,2020 Q2,All,Old,24837,45.451,29.571
+Decree Absolute,,2010 Q4,All,Old,30269,48.988,31
+Decree Absolute,,2004 Q3,All,Old,38899,43.747,30.143
+Decree Absolute,,2004 Q4,All,Old,36891,43.992,31
+Decree Absolute,,2016 Q3,All,Old,27593,48.14,29.143
+Decree Absolute,,2023 Q3,All,Old,5586,152.646,120.286
+Decree Absolute,,2009 Q1,All,Old,28705,48.43,32.571
+Decree Absolute,,2024 Q1,All,Old,3587,188.302,150.857
+Decree Absolute,,2024 Q3,All,Old,2209,226.39,181.571
+Decree Absolute,,2025 Q4,All,Old,1121,316.051,259.286
+Decree Absolute,,2024 Q4,All,Old,2286,239.294,192.571
+Decree Absolute,,2023 Q2,All,New,20262,37.474,34.429
+Decree Absolute,,2007 Q4,All,All,27809,46.594,31.286
+Decree Absolute,,2021 Q2,All,All,30566,48.915,28.429
+Decree Absolute,,2010 Q3,All,All,30520,48.095,31.429
+Decree Absolute,,2014 Q4,All,All,27135,48.637,28.571
+Decree Absolute,,2009 Q2,All,All,27283,48.314,32.571
+Decree Absolute,,2012 Q4,All,All,29164,49.061,31
+Decree Absolute,,2025 Q3,All,All,27717,67.413,41.857
+Decree Absolute,,2021 Q1,All,All,30133,50.473,30.714
+Decree Absolute,,2004 Q4,All,All,36891,43.992,31
+Decree Absolute,,2024 Q3,All,All,27273,62.745,40
+Decree Absolute,,2025 Q2,All,All,28164,68.713,42.857
+Decree Absolute,,2018 Q4,All,All,24102,56.228,36.857
+Decree Absolute,,2017 Q4,All,All,23398,50.965,31.143
+Decree Absolute,,2020 Q4,All,All,25339,53.956,37
+Decree Absolute,,2020 Q2,All,All,24837,45.451,29.571
+Decree Absolute,,2012 Q1,All,All,31612,49.037,31.714
+Decree Absolute,,2019 Q4,All,All,30298,53.757,38.143
+Decree Absolute,,2018 Q3,All,All,21195,57.133,37.143
+Decree Absolute,,2015 Q3,All,All,26303,48.216,28.286
+Decree Absolute,,2015 Q1,All,All,27068,48.836,28.286
+Decree Absolute,,2011 Q4,All,All,29424,48.681,32
+Decree Absolute,,2011 Q3,All,All,30174,47.82,31.857
+Decree Absolute,,2016 Q4,All,All,24810,52.857,30.714
+Decree Absolute,,2003 Q2,All,All,37920,41.979,30.857
+Decree Absolute,,2018 Q2,All,All,22639,55.093,34.571
+Decree Absolute,,2008 Q1,All,All,31977,47.622,33.714
+Decree Absolute,,2005 Q1,All,All,35922,44.748,31.286
+Decree Absolute,,2004 Q2,All,All,37714,43.739,31.143
+Decree Absolute,,2014 Q3,All,All,27805,49.669,29.143
+Decree Absolute,,2008 Q2,All,All,30851,47.813,33.714
+Decree Absolute,,2014 Q1,All,All,29141,49.378,31.714
+Decree Absolute,,2016 Q2,All,All,29117,48.597,30
+Decree Absolute,,2009 Q3,All,All,29144,47.862,31.714
+Decree Absolute,,2019 Q1,All,All,23968,60.482,39.857
+Decree Absolute,,2010 Q4,All,All,30269,48.988,31
+Decree Absolute,,2006 Q3,All,All,32816,45.945,31.429
+Decree Absolute,,2013 Q3,All,All,29808,50.728,30.143
+Decree Absolute,,2004 Q3,All,All,38899,43.747,30.143
+Decree Absolute,,2010 Q1,All,All,30280,47.246,31.714
+Decree Absolute,,2022 Q4,All,All,17065,66.523,36.857
+Decree Absolute,,2023 Q3,All,All,25810,64.425,39.857
+Decree Absolute,,2004 Q1,All,All,39091,44.208,31.857
+Decree Absolute,,2020 Q3,All,All,23625,50.763,35.286
+Decree Absolute,,2012 Q2,All,All,29549,48.795,31.571
+Decree Absolute,,2017 Q3,All,All,24947,49.832,29.857
+Decree Absolute,,2011 Q2,All,All,29026,49.003,32.429
+Decree Absolute,,2007 Q3,All,All,33129,45.944,31.286
+Decree Absolute,,2017 Q1,All,All,27963,50.163,31.714
+Decree Absolute,,2019 Q2,All,All,24221,58.167,40.857
+Decree Absolute,,2022 Q2,All,All,19716,55.925,31.143
+Decree Absolute,,2019 Q3,All,All,28821,54.972,39.857
+Decree Absolute,,2005 Q2,All,All,36349,45.257,31.571
+Decree Absolute,,2022 Q3,All,All,19724,65.702,39.286
+Decree Absolute,,2013 Q1,All,All,28683,49.039,31.143
+Decree Absolute,,2018 Q1,All,All,24047,52.254,32
+Decree Absolute,,2013 Q4,All,All,28195,49.477,30.857
+Decree Absolute,,2023 Q1,All,All,27460,63.356,38
+Decree Absolute,,2025 Q1,All,All,22106,74.429,45
+Decree Absolute,,2008 Q3,All,All,30593,47.789,31.143
+Decree Absolute,,2023 Q2,All,All,27331,61.529,37.857
+Decree Absolute,,2017 Q2,All,All,26493,49.059,30
+Decree Absolute,,2006 Q2,All,All,32913,45.516,31.714
+Decree Absolute,,2025 Q4,All,All,27717,64.845,38.286
+Decree Absolute,,2024 Q4,All,All,23415,70.41,42.429
+Decree Absolute,,2021 Q3,All,All,27389,54.419,30.571
+Decree Absolute,,2003 Q4,All,All,37652,43.375,31.286
+Decree Absolute,,2012 Q3,All,All,30191,48.946,31
+Decree Absolute,,2022 Q1,All,All,23912,55.845,32.857
+Decree Absolute,,2008 Q4,All,All,28838,46.983,31
+Decree Absolute,,2006 Q1,All,All,34240,45.682,31.714
+Decree Absolute,,2003 Q1,All,All,38811,42.121,31.143
+Decree Absolute,,2016 Q1,All,All,26735,50.997,31.429
+Decree Absolute,,2007 Q1,All,All,34612,46.189,31.571
+Decree Absolute,,2007 Q2,All,All,33129,45.835,31.571
+Decree Absolute,,2005 Q3,All,All,35876,45.077,31.143
+Decree Absolute,,2020 Q1,All,All,30174,52.835,36
+Decree Absolute,,2021 Q4,All,All,25753,52.395,27.857
+Decree Absolute,,2015 Q4,All,All,22570,51.613,31
+Decree Absolute,,2010 Q2,All,All,29764,48.449,32.357
+Decree Absolute,,2005 Q4,All,All,33254,45.353,31.143
+Decree Absolute,,2013 Q2,All,All,28181,50.476,32
+Decree Absolute,,2003 Q3,All,All,37853,42.704,30.714
+Decree Absolute,,2015 Q2,All,All,26213,48.117,28.857
+Decree Absolute,,2016 Q3,All,All,27593,48.14,29.143
+Decree Absolute,,2024 Q2,All,All,29028,63.179,40.571
+Decree Absolute,,2009 Q1,All,All,28705,48.43,32.571
+Decree Absolute,,2006 Q4,All,All,32341,45.768,31.286
+Decree Absolute,,2024 Q1,All,All,25722,67.158,43.286
+Decree Absolute,,2023 Q4,All,All,22874,68.53,41.714
+Decree Absolute,,2011 Q1,All,All,30864,48.999,32.714
+Decree Absolute,,2014 Q2,All,All,27719,49.202,30.286
+Decree Absolute,,2009 Q4,All,All,29883,47.451,31
+Decree Absolute,,2004 Q1,Paper,All,39091,44.208,31.857
+Decree Absolute,,2011 Q3,Paper,All,30174,47.82,31.857
+Decree Absolute,,2016 Q4,Paper,All,24810,52.857,30.714
+Decree Absolute,,2022 Q1,Digital,All,15467,27.988,18.714
+Decree Absolute,,2014 Q4,Paper,All,27135,48.637,28.571
+Decree Absolute,,2003 Q1,Paper,All,38811,42.121,31.143
+Decree Absolute,,2018 Q4,Paper,All,24102,56.228,36.857
+Decree Absolute,,2019 Q2,Paper,All,24221,58.167,40.857
+Decree Absolute,,2020 Q4,Paper,All,14403,80.063,60.143
+Decree Absolute,,2008 Q2,Paper,All,30851,47.813,33.714
+Decree Absolute,,2020 Q2,Paper,All,14454,66.498,47.429
+Decree Absolute,,2005 Q3,Paper,All,35876,45.077,31.143
+Decree Absolute,,2015 Q1,Paper,All,27068,48.836,28.286
+Decree Absolute,,2017 Q3,Paper,All,24947,49.832,29.857
+Decree Absolute,,2006 Q3,Paper,All,32816,45.945,31.429
+Decree Absolute,,2005 Q4,Paper,All,33254,45.353,31.143
+Decree Absolute,,2004 Q3,Paper,All,38899,43.747,30.143
+Decree Absolute,,2021 Q1,Paper,All,15095,80.124,60.571
+Decree Absolute,,2025 Q1,Digital,All,20100,61.761,43
+Decree Absolute,,2004 Q4,Paper,All,36891,43.992,31
+Decree Absolute,,2020 Q2,Digital,All,10383,16.153,14
+Decree Absolute,,2020 Q4,Digital,All,10936,19.572,16
+Decree Absolute,,2021 Q1,Digital,All,15038,20.709,17
+Decree Absolute,,2017 Q2,Paper,All,26493,49.059,30
+Decree Absolute,,2024 Q1,Paper,All,3336,166.321,139.143
+Decree Absolute,,2023 Q4,Digital,All,19431,50.997,38.429
+Decree Absolute,,2011 Q1,Paper,All,30864,48.999,32.714
+Decree Absolute,,2023 Q2,Paper,All,4367,149.098,119.571
+Decree Absolute,,2022 Q4,Paper,All,4741,127.711,98.571
+Decree Absolute,,2023 Q3,Digital,All,21620,46.286,36
+Decree Absolute,,2025 Q2,Digital,All,26103,58.169,41.571
+Decree Absolute,,2025 Q1,Paper,All,2006,201.252,172.286
+Decree Absolute,,2020 Q3,Paper,All,14256,73.404,54.714
+Decree Absolute,,2012 Q2,Paper,All,29549,48.795,31.571
+Decree Absolute,,2007 Q4,Paper,All,27809,46.594,31.286
+Decree Absolute,,2021 Q2,Digital,All,16624,21.132,15
+Decree Absolute,,2011 Q4,Paper,All,29424,48.681,32
+Decree Absolute,,2008 Q4,Paper,All,28838,46.983,31
+Decree Absolute,,2018 Q2,Paper,All,22639,55.093,34.571
+Decree Absolute,,2011 Q2,Paper,All,29026,49.003,32.429
+Decree Absolute,,2008 Q1,Paper,All,31977,47.622,33.714
+Decree Absolute,,2009 Q2,Paper,All,27283,48.314,32.571
+Decree Absolute,,2005 Q1,Paper,All,35922,44.748,31.286
+Decree Absolute,,2017 Q1,Paper,All,27963,50.163,31.714
+Decree Absolute,,2016 Q1,Paper,All,26735,50.997,31.429
+Decree Absolute,,2022 Q2,Paper,All,6215,114.667,83
+Decree Absolute,,2007 Q1,Paper,All,34612,46.189,31.571
+Decree Absolute,,2020 Q1,Paper,All,23063,63.607,45.286
+Decree Absolute,,2019 Q4,Paper,All,30143,53.949,38.286
+Decree Absolute,,2018 Q3,Paper,All,21195,57.133,37.143
+Decree Absolute,,2022 Q2,Digital,All,13501,28.883,18.857
+Decree Absolute,,2015 Q2,Paper,All,26213,48.117,28.857
+Decree Absolute,,2023 Q3,Paper,All,4190,158.022,129.286
+Decree Absolute,,2006 Q4,Paper,All,32341,45.768,31.286
+Decree Absolute,,2006 Q2,Paper,All,32913,45.516,31.714
+Decree Absolute,,2024 Q3,Digital,All,24607,51.754,38
+Decree Absolute,,2020 Q1,Digital,All,7111,17.898,17.429
+Decree Absolute,,2024 Q3,Paper,All,2666,164.179,124.571
+Decree Absolute,,2023 Q1,Digital,All,21797,42.216,35.571
+Decree Absolute,,2023 Q4,Paper,All,3443,167.48,137.857
+Decree Absolute,,2021 Q3,Digital,All,15369,22.853,16
+Decree Absolute,,2012 Q3,Paper,All,30191,48.946,31
+Decree Absolute,,2010 Q3,Paper,All,30520,48.095,31.429
+Decree Absolute,,2022 Q1,Paper,All,8445,106.866,80.857
+Decree Absolute,,2003 Q2,Paper,All,37920,41.979,30.857
+Decree Absolute,,2006 Q1,Paper,All,34240,45.682,31.714
+Decree Absolute,,2020 Q3,Digital,All,9369,16.311,13.143
+Decree Absolute,,2019 Q3,Paper,All,28821,54.972,39.857
+Decree Absolute,,2016 Q2,Paper,All,29117,48.597,30
+Decree Absolute,,2007 Q2,Paper,All,33129,45.835,31.571
+Decree Absolute,,2012 Q1,Paper,All,31612,49.037,31.714
+Decree Absolute,,2022 Q3,Digital,All,13264,36.791,27.714
+Decree Absolute,,2021 Q4,Digital,All,16464,23.083,15.429
+Decree Absolute,,2021 Q4,Paper,All,9289,104.347,80.857
+Decree Absolute,,2019 Q1,Paper,All,23968,60.482,39.857
+Decree Absolute,,2010 Q4,Paper,All,30269,48.988,31
+Decree Absolute,,2010 Q2,Paper,All,29764,48.449,32.357
+Decree Absolute,,2018 Q1,Paper,All,24047,52.254,32
+Decree Absolute,,2013 Q2,Paper,All,28181,50.476,32
+Decree Absolute,,2021 Q2,Paper,All,13942,82.042,61
+Decree Absolute,,2013 Q4,Paper,All,28195,49.477,30.857
+Decree Absolute,,2008 Q3,Paper,All,30593,47.789,31.143
+Decree Absolute,,2023 Q2,Digital,All,22964,44.876,35.286
+Decree Absolute,,2010 Q1,Paper,All,30280,47.246,31.714
+Decree Absolute,,2024 Q2,Digital,All,26044,52.208,39
+Decree Absolute,,2022 Q4,Digital,All,12324,42.984,33.286
+Decree Absolute,,2014 Q2,Paper,All,27719,49.202,30.286
+Decree Absolute,,2022 Q3,Paper,All,6460,125.065,95.357
+Decree Absolute,,2024 Q4,Paper,All,2560,175.629,136.143
+Decree Absolute,,2019 Q4,Digital,All,155,16.43,16.714
+Decree Absolute,,2015 Q3,Paper,All,26303,48.216,28.286
+Decree Absolute,,2003 Q4,Paper,All,37652,43.375,31.286
+Decree Absolute,,2007 Q3,Paper,All,33129,45.944,31.286
+Decree Absolute,,2004 Q2,Paper,All,37714,43.739,31.143
+Decree Absolute,,2012 Q4,Paper,All,29164,49.061,31
+Decree Absolute,,2017 Q4,Paper,All,23398,50.965,31.143
+Decree Absolute,,2014 Q3,Paper,All,27805,49.669,29.143
+Decree Absolute,,2014 Q1,Paper,All,29141,49.378,31.714
+Decree Absolute,,2005 Q2,Paper,All,36349,45.257,31.571
+Decree Absolute,,2009 Q3,Paper,All,29144,47.862,31.714
+Decree Absolute,,2015 Q4,Paper,All,22570,51.613,31
+Decree Absolute,,2013 Q1,Paper,All,28683,49.039,31.143
+Decree Absolute,,2003 Q3,Paper,All,37853,42.704,30.714
+Decree Absolute,,2013 Q3,Paper,All,29808,50.728,30.143
+Decree Absolute,,2025 Q3,Paper,All,1766,202.5,126.929
+Decree Absolute,,2023 Q1,Paper,All,5663,144.725,115
+Decree Absolute,,2021 Q3,Paper,All,12020,94.78,73.286
+Decree Absolute,,2016 Q3,Paper,All,27593,48.14,29.143
+Decree Absolute,,2009 Q1,Paper,All,28705,48.43,32.571
+Decree Absolute,,2009 Q4,Paper,All,29883,47.451,31
+Decree Absolute,,2025 Q4,Digital,All,26119,56.432,37.286
+Decree Absolute,,2024 Q2,Paper,All,2984,158.939,115.714
+Decree Absolute,,2024 Q1,Digital,All,22386,52.381,40.857
+Decree Absolute,,2024 Q4,Digital,All,20855,57.493,39.714
+Decree Absolute,,2025 Q2,Paper,All,2061,202.263,117.429
+Decree Absolute,,2025 Q3,Digital,All,25951,58.22,40.571
+Decree Absolute,,2025 Q4,Paper,All,1598,202.341,124.143
+Petition,2016,,Paper,All,114039,,
+Petition,2011,,Paper,All,129258,,
+Petition,2005,,Paper,All,149821,,
+Petition,2014,,Paper,All,112559,,
+Petition,2020,,Paper,All,51885,,
+Petition,2023,,Digital,All,107278,,
+Petition,2009,,Paper,All,131896,,
+Petition,2021,,Paper,All,26657,,
+Petition,2008,,Paper,All,128571,,
+Petition,2007,,Paper,All,135853,,
+Petition,2013,,Paper,All,117483,,
+Petition,2004,,Paper,All,165133,,
+Petition,2022,,Digital,All,114901,,
+Petition,2022,,Paper,All,7583,,
+Petition,2023,,Paper,All,5795,,
+Petition,2024,,Paper,All,4134,,
+Petition,2015,,Paper,All,114504,,
+Petition,2003,,Paper,All,170741,,
+Petition,2019,,Paper,All,104188,,
+Petition,2020,,Digital,All,61185,,
+Petition,2017,,Paper,All,109266,,
+Petition,2010,,Paper,All,133268,,
+Petition,2006,,Paper,All,146765,,
+Petition,2025,,Digital,All,106026,,
+Petition,2024,,Digital,All,106294,,
+Petition,2021,,Digital,All,81875,,
+Petition,2012,,Paper,All,124395,,
+Petition,2018,,Paper,All,118346,,
+Petition,2019,,Digital,All,12440,,
+Petition,2025,,Paper,All,3158,,
+Decree Absolute,2010,,All,Old,120833,48.193,31.571
+Decree Absolute,2008,,All,Old,122259,47.561,32.429
+Decree Absolute,2018,,All,Old,91983,55.118,35.143
+Decree Absolute,2014,,All,Old,111800,49.227,30
+Decree Absolute,2005,,All,Old,141401,45.104,31.286
+Decree Absolute,2013,,All,Old,114867,49.937,31
+Decree Absolute,2025,,All,Old,5847,290.951,234.143
+Decree Absolute,2023,,All,Old,26551,136.638,108.714
+Decree Absolute,2025,,All,New,99857,55.528,40.857
+Decree Absolute,2021,,All,Old,113841,51.439,29.286
+Decree Absolute,2012,,All,Old,120516,48.961,31.286
+Decree Absolute,2011,,All,Old,119488,48.624,32.143
+Decree Absolute,2017,,All,Old,102801,49.981,30.714
+Decree Absolute,2023,,All,New,76924,39.31,35.286
+Decree Absolute,2024,,All,New,94245,48.585,39.143
+Decree Absolute,2004,,All,Old,152595,43.922,31
+Decree Absolute,2020,,All,Old,103975,50.874,34.429
+Decree Absolute,2007,,All,Old,128679,46.122,31.429
+Decree Absolute,2016,,All,Old,108255,50.05,30.429
+Decree Absolute,2006,,All,Old,132310,45.727,31.571
+Decree Absolute,2015,,All,Old,102154,49.106,29
+Decree Absolute,2003,,All,Old,152236,42.541,31
+Decree Absolute,2022,,All,Old,72969,63.377,39.143
+Decree Absolute,2009,,All,Old,115015,48.004,32
+Decree Absolute,2019,,All,Old,107308,56.581,39.571
+Decree Absolute,2024,,All,Old,11193,209.269,169.143
+Decree Absolute,2022,,All,New,7448,32.836,32.571
+Decree Nisi,2020,,All,Old,106649,27.569,18.857
+Decree Nisi,2019,,All,Old,115240,31.544,24.429
+Decree Nisi,2003,,All,Old,156210,24.718,17.143
+Decree Nisi,2009,,All,Old,119347,24.927,16.714
+Decree Nisi,2006,,All,Old,134705,24.584,16.571
+Decree Nisi,2016,,All,Old,114123,25.466,17.714
+Decree Nisi,2018,,All,Old,91991,29.733,22.286
+Decree Nisi,2025,,All,Old,1866,286.944,245
+Decree Nisi,2022,,All,New,21506,27.489,27
+Decree Nisi,2023,,All,New,95178,30.903,28.143
+Decree Nisi,2008,,All,Old,120537,24.759,16.143
+Decree Nisi,2005,,All,Old,141803,24.432,16.286
+Decree Nisi,2007,,All,Old,133113,25.077,16.857
+Decree Nisi,2017,,All,Old,103120,24.834,16.571
+Decree Nisi,2012,,All,Old,122337,24.539,15.857
+Decree Nisi,2024,,All,New,103245,34.52,29.143
+Decree Nisi,2010,,All,Old,125277,25.503,16.857
+Decree Nisi,2021,,All,Old,114077,25.09,13.286
+Decree Nisi,2015,,All,Old,99082,24.641,16.143
+Decree Nisi,2025,,All,New,115821,36.845,30.286
+Decree Nisi,2014,,All,Old,109656,23.887,15.143
+Decree Nisi,2013,,All,Old,113286,24.51,15.571
+Decree Nisi,2011,,All,Old,122234,25.271,16.714
+Decree Nisi,2004,,All,Old,154305,24.631,16.857
+Decree Nisi,2022,,All,Old,58728,37.911,21.571
+Decree Nisi,2023,,All,Old,9764,124.744,100.429
+Decree Nisi,2024,,All,Old,3779,202.86,169.714
+Decree Absolute,2004,,Paper,Old,152595,43.922,31
+Decree Absolute,2020,,Paper,Old,66176,69.931,51
+Decree Absolute,2011,,Paper,Old,119488,48.624,32.143
+Decree Absolute,2017,,Paper,Old,102801,49.981,30.714
+Decree Absolute,2016,,Paper,Old,108255,50.05,30.429
+Decree Absolute,2022,,Paper,Old,25860,117.111,88.143
+Decree Absolute,2009,,Paper,Old,115015,48.004,32
+Decree Absolute,2023,,Digital,Old,11376,91.49,87.143
+Decree Absolute,2023,,Digital,New,74436,38.981,35
+Decree Absolute,2024,,Digital,New,89002,48.198,38.286
+Decree Absolute,2015,,Paper,Old,102154,49.106,29
+Decree Absolute,2021,,Digital,Old,63495,21.955,16
+Decree Absolute,2010,,Paper,Old,120833,48.193,31.571
+Decree Absolute,2019,,Paper,Old,107153,56.639,39.714
+Decree Absolute,2021,,Paper,Old,50346,88.624,66
+Decree Absolute,2025,,Digital,New,96053,55.2,40.286
+Decree Absolute,2023,,Paper,New,2488,49.176,46.857
+Decree Absolute,2019,,Digital,Old,155,16.43,16.714
+Decree Absolute,2022,,Paper,New,1,36,36
+Decree Absolute,2012,,Paper,Old,120516,48.961,31.286
+Decree Absolute,2007,,Paper,Old,128679,46.122,31.429
+Decree Absolute,2008,,Paper,Old,122259,47.561,32.429
+Decree Absolute,2022,,Digital,Old,47109,33.88,25
+Decree Absolute,2006,,Paper,Old,132310,45.727,31.571
+Decree Absolute,2005,,Paper,Old,141401,45.104,31.286
+Decree Absolute,2020,,Digital,Old,37799,17.51,15.286
+Decree Absolute,2025,,Paper,Old,3627,347.083,292.143
+Decree Absolute,2023,,Paper,Old,15175,170.484,138.571
+Decree Absolute,2024,,Digital,Old,4890,146.231,140.286
+Decree Absolute,2022,,Digital,New,7447,32.835,32.571
+Decree Absolute,2024,,Paper,New,5243,55.151,48.714
+Decree Absolute,2003,,Paper,Old,152236,42.541,31
+Decree Absolute,2018,,Paper,Old,91983,55.118,35.143
+Decree Absolute,2014,,Paper,Old,111800,49.227,30
+Decree Absolute,2013,,Paper,Old,114867,49.937,31
+Decree Absolute,2025,,Digital,Old,2220,199.244,193.714
+Decree Absolute,2024,,Paper,Old,6303,258.175,213.571
+Decree Absolute,2025,,Paper,New,3804,63.791,52.571
+Decree Absolute,,2021 Q2,Digital,Old,16624,21.132,15
+Decree Absolute,,2015 Q1,Paper,Old,27068,48.836,28.286
+Decree Absolute,,2017 Q3,Paper,Old,24947,49.832,29.857
+Decree Absolute,,2004 Q2,Paper,Old,37714,43.739,31.143
+Decree Absolute,,2017 Q1,Paper,Old,27963,50.163,31.714
+Decree Absolute,,2017 Q4,Paper,Old,23398,50.965,31.143
+Decree Absolute,,2019 Q2,Paper,Old,24221,58.167,40.857
+Decree Absolute,,2008 Q2,Paper,Old,30851,47.813,33.714
+Decree Absolute,,2014 Q1,Paper,Old,29141,49.378,31.714
+Decree Absolute,,2020 Q1,Paper,Old,23063,63.607,45.286
+Decree Absolute,,2020 Q1,Digital,Old,7111,17.898,17.429
+Decree Absolute,,2009 Q4,Paper,Old,29883,47.451,31
+Decree Absolute,,2024 Q1,Digital,Old,1457,128.491,120.571
+Decree Absolute,,2025 Q1,Paper,Old,1111,314.093,263.429
+Decree Absolute,,2024 Q1,Digital,New,20929,47.083,39.714
+Decree Absolute,,2024 Q3,Digital,New,23745,47.948,37.143
+Decree Absolute,,2022 Q4,Digital,New,7447,32.835,32.571
+Decree Absolute,,2023 Q2,Digital,New,19681,37.211,34.286
+Decree Absolute,,2025 Q4,Digital,New,25727,53.884,37.143
+Decree Absolute,,2024 Q2,Digital,New,24473,46.42,37.857
+Decree Absolute,,2025 Q3,Digital,Old,464,206.576,200
+Decree Absolute,,2024 Q3,Paper,New,1319,55.033,47.857
+Decree Absolute,,2023 Q3,Paper,New,878,49.382,47.857
+Decree Absolute,,2019 Q4,Paper,Old,30143,53.949,38.286
+Decree Absolute,,2021 Q4,Paper,Old,9289,104.347,80.857
+Decree Absolute,,2015 Q4,Paper,Old,22570,51.613,31
+Decree Absolute,,2010 Q4,Paper,Old,30269,48.988,31
+Decree Absolute,,2013 Q2,Paper,Old,28181,50.476,32
+Decree Absolute,,2023 Q1,Paper,Old,5477,148.212,117.429
+Decree Absolute,,2021 Q1,Paper,Old,15095,80.124,60.571
+Decree Absolute,,2008 Q3,Paper,Old,30593,47.789,31.143
+Decree Absolute,,2023 Q2,Digital,Old,3283,90.823,84.571
+Decree Absolute,,2016 Q3,Paper,Old,27593,48.14,29.143
+Decree Absolute,,2022 Q4,Digital,Old,4877,58.482,49.857
+Decree Absolute,,2009 Q1,Paper,Old,28705,48.43,32.571
+Decree Absolute,,2006 Q4,Paper,Old,32341,45.768,31.286
+Decree Absolute,,2024 Q1,Paper,Old,2130,229.215,188.571
+Decree Absolute,,2014 Q2,Paper,Old,27719,49.202,30.286
+Decree Absolute,,2008 Q4,Paper,Old,28838,46.983,31
+Decree Absolute,,2018 Q2,Paper,Old,22639,55.093,34.571
+Decree Absolute,,2006 Q1,Paper,Old,34240,45.682,31.714
+Decree Absolute,,2014 Q4,Paper,Old,27135,48.637,28.571
+Decree Absolute,,2019 Q4,Digital,Old,155,16.43,16.714
+Decree Absolute,,2022 Q4,Paper,New,1,36,36
+Decree Absolute,,2020 Q3,Paper,Old,14256,73.404,54.714
+Decree Absolute,,2003 Q4,Paper,Old,37652,43.375,31.286
+Decree Absolute,,2011 Q3,Paper,Old,30174,47.82,31.857
+Decree Absolute,,2022 Q1,Paper,Old,8445,106.866,80.857
+Decree Absolute,,2007 Q3,Paper,Old,33129,45.944,31.286
+Decree Absolute,,2019 Q3,Paper,Old,28821,54.972,39.857
+Decree Absolute,,2007 Q2,Paper,Old,33129,45.835,31.571
+Decree Absolute,,2005 Q3,Paper,Old,35876,45.077,31.143
+Decree Absolute,,2005 Q2,Paper,Old,36349,45.257,31.571
+Decree Absolute,,2019 Q1,Paper,Old,23968,60.482,39.857
+Decree Absolute,,2010 Q2,Paper,Old,29764,48.449,32.357
+Decree Absolute,,2006 Q3,Paper,Old,32816,45.945,31.429
+Decree Absolute,,2005 Q4,Paper,Old,33254,45.353,31.143
+Decree Absolute,,2013 Q1,Paper,Old,28683,49.039,31.143
+Decree Absolute,,2015 Q2,Paper,Old,26213,48.117,28.857
+Decree Absolute,,2021 Q3,Paper,Old,12020,94.78,73.286
+Decree Absolute,,2024 Q2,Digital,Old,1571,142.37,133.429
+Decree Absolute,,2020 Q4,Digital,Old,10936,19.572,16
+Decree Absolute,,2023 Q4,Digital,Old,2033,115.969,108.857
+Decree Absolute,,2022 Q3,Paper,Old,6460,125.065,95.357
+Decree Absolute,,2023 Q1,Digital,Old,3786,72.088,62
+Decree Absolute,,2025 Q2,Digital,Old,613,197.007,190.143
+Decree Absolute,,2024 Q4,Digital,Old,1000,169.212,160.643
+Decree Absolute,,2025 Q2,Paper,Old,960,361.373,296.214
+Decree Absolute,,2023 Q1,Digital,New,18011,35.937,34.714
+Decree Absolute,,2025 Q2,Digital,New,25490,54.83,41.143
+Decree Absolute,,2023 Q3,Digital,New,19346,39.635,34.429
+Decree Absolute,,2025 Q1,Digital,New,19349,57.021,42.429
+Decree Absolute,,2025 Q4,Paper,New,869,65.296,50.143
+Decree Absolute,,2023 Q1,Paper,New,186,42.065,41.929
+Decree Absolute,,2025 Q3,Paper,New,939,65.196,53.143
+Decree Absolute,,2015 Q3,Paper,Old,26303,48.216,28.286
+Decree Absolute,,2012 Q2,Paper,Old,29549,48.795,31.571
+Decree Absolute,,2012 Q3,Paper,Old,30191,48.946,31
+Decree Absolute,,2010 Q3,Paper,Old,30520,48.095,31.429
+Decree Absolute,,2011 Q2,Paper,Old,29026,49.003,32.429
+Decree Absolute,,2008 Q1,Paper,Old,31977,47.622,33.714
+Decree Absolute,,2003 Q1,Paper,Old,38811,42.121,31.143
+Decree Absolute,,2009 Q2,Paper,Old,27283,48.314,32.571
+Decree Absolute,,2005 Q1,Paper,Old,35922,44.748,31.286
+Decree Absolute,,2020 Q3,Digital,Old,9369,16.311,13.143
+Decree Absolute,,2022 Q2,Paper,Old,6215,114.667,83
+Decree Absolute,,2020 Q2,Paper,Old,14454,66.498,47.429
+Decree Absolute,,2016 Q2,Paper,Old,29117,48.597,30
+Decree Absolute,,2012 Q1,Paper,Old,31612,49.037,31.714
+Decree Absolute,,2022 Q3,Digital,Old,13264,36.791,27.714
+Decree Absolute,,2018 Q1,Paper,Old,24047,52.254,32
+Decree Absolute,,2003 Q3,Paper,Old,37853,42.704,30.714
+Decree Absolute,,2004 Q3,Paper,Old,38899,43.747,30.143
+Decree Absolute,,2025 Q1,Digital,Old,751,183.768,174.429
+Decree Absolute,,2020 Q2,Digital,Old,10383,16.153,14
+Decree Absolute,,2010 Q1,Paper,Old,30280,47.246,31.714
+Decree Absolute,,2021 Q1,Digital,Old,15038,20.709,17
+Decree Absolute,,2017 Q2,Paper,Old,26493,49.059,30
+Decree Absolute,,2006 Q2,Paper,Old,32913,45.516,31.714
+Decree Absolute,,2024 Q3,Digital,Old,862,156.592,148.143
+Decree Absolute,,2023 Q2,Paper,Old,3786,164.862,134.429
+Decree Absolute,,2024 Q3,Paper,Old,1347,271.057,225.571
+Decree Absolute,,2025 Q4,Digital,Old,392,223.71,217
+Decree Absolute,,2024 Q4,Paper,Old,1286,293.79,241.786
+Decree Absolute,,2025 Q4,Paper,Old,729,365.705,309.857
+Decree Absolute,,2023 Q2,Paper,New,581,46.379,46
+Decree Absolute,,2025 Q1,Paper,New,895,61.179,51.714
+Decree Absolute,,2023 Q4,Paper,New,843,52.459,49.857
+Decree Absolute,,2025 Q2,Paper,New,1101,63.53,53.857
+Decree Absolute,,2004 Q1,Paper,Old,39091,44.208,31.857
+Decree Absolute,,2021 Q3,Digital,Old,15369,22.853,16
+Decree Absolute,,2007 Q4,Paper,Old,27809,46.594,31.286
+Decree Absolute,,2011 Q4,Paper,Old,29424,48.681,32
+Decree Absolute,,2016 Q4,Paper,Old,24810,52.857,30.714
+Decree Absolute,,2003 Q2,Paper,Old,37920,41.979,30.857
+Decree Absolute,,2022 Q1,Digital,Old,15467,27.988,18.714
+Decree Absolute,,2016 Q1,Paper,Old,26735,50.997,31.429
+Decree Absolute,,2012 Q4,Paper,Old,29164,49.061,31
+Decree Absolute,,2018 Q4,Paper,Old,24102,56.228,36.857
+Decree Absolute,,2020 Q4,Paper,Old,14403,80.063,60.143
+Decree Absolute,,2014 Q3,Paper,Old,27805,49.669,29.143
+Decree Absolute,,2007 Q1,Paper,Old,34612,46.189,31.571
+Decree Absolute,,2009 Q3,Paper,Old,29144,47.862,31.714
+Decree Absolute,,2021 Q4,Digital,Old,16464,23.083,15.429
+Decree Absolute,,2018 Q3,Paper,Old,21195,57.133,37.143
+Decree Absolute,,2022 Q2,Digital,Old,13501,28.883,18.857
+Decree Absolute,,2013 Q3,Paper,Old,29808,50.728,30.143
+Decree Absolute,,2025 Q3,Paper,Old,827,358.398,307.571
+Decree Absolute,,2021 Q2,Paper,Old,13942,82.042,61
+Decree Absolute,,2013 Q4,Paper,Old,28195,49.477,30.857
+Decree Absolute,,2004 Q4,Paper,Old,36891,43.992,31
+Decree Absolute,,2023 Q3,Paper,Old,3312,186.822,152
+Decree Absolute,,2011 Q1,Paper,Old,30864,48.999,32.714
+Decree Absolute,,2022 Q4,Paper,Old,4740,127.731,98.571
+Decree Absolute,,2024 Q2,Paper,Old,1540,257.222,212
+Decree Absolute,,2023 Q3,Digital,Old,2274,102.869,96.143
+Decree Absolute,,2023 Q4,Paper,Old,2600,204.774,165.929
+Decree Absolute,,2025 Q3,Digital,New,25487,55.519,40.143
+Decree Absolute,,2023 Q4,Digital,New,17398,43.405,36.857
+Decree Absolute,,2024 Q4,Digital,New,19855,51.865,38.429
+Decree Absolute,,2024 Q1,Paper,New,1206,55.24,50.857
+Decree Absolute,,2024 Q2,Paper,New,1444,54.122,48.643
+Decree Absolute,,2024 Q4,Paper,New,1274,56.355,47
+Petition,,2021 Q2,All,All,27631,,
+Petition,,2011 Q3,All,All,34516,,
+Petition,,2005 Q2,All,All,38927,,
+Petition,,2009 Q4,All,All,32418,,
+Petition,,2008 Q3,All,All,32461,,
+Petition,,2007 Q2,All,All,35365,,
+Petition,,2005 Q1,All,All,37385,,
+Petition,,2015 Q3,All,All,28357,,
+Petition,,2018 Q4,All,All,28398,,
+Petition,,2014 Q2,All,All,27595,,
+Petition,,2003 Q2,All,All,41501,,
+Petition,,2007 Q3,All,All,35701,,
+Petition,,2013 Q1,All,All,30890,,
+Petition,,2015 Q4,All,All,29478,,
+Petition,,2006 Q4,All,All,35301,,
+Petition,,2019 Q2,All,All,28295,,
+Petition,,2019 Q1,All,All,30344,,
+Petition,,2022 Q1,All,All,30281,,
+Petition,,2007 Q1,All,All,37951,,
+Petition,,2008 Q2,All,All,33376,,
+Petition,,2024 Q4,All,All,25111,,
+Petition,,2024 Q1,All,All,29797,,
+Petition,,2024 Q2,All,All,27454,,
+Petition,,2016 Q4,All,All,27209,,
+Petition,,2015 Q1,All,All,28589,,
+Petition,,2019 Q3,All,All,30468,,
+Petition,,2017 Q1,All,All,28518,,
+Petition,,2010 Q1,All,All,34525,,
+Petition,,2021 Q4,All,All,23151,,
+Petition,,2011 Q4,All,All,30604,,
+Petition,,2004 Q2,All,All,40464,,
+Petition,,2018 Q3,All,All,30337,,
+Petition,,2011 Q2,All,All,29483,,
+Petition,,2004 Q1,All,All,44819,,
+Petition,,2014 Q1,All,All,28532,,
+Petition,,2009 Q2,All,All,32497,,
+Petition,,2012 Q1,All,All,33688,,
+Petition,,2008 Q1,All,All,32814,,
+Petition,,2013 Q2,All,All,32023,,
+Petition,,2022 Q2,All,All,35429,,
+Petition,,2023 Q2,All,All,28222,,
+Petition,,2023 Q1,All,All,31431,,
+Petition,,2021 Q1,All,All,30899,,
+Petition,,2009 Q1,All,All,32579,,
+Petition,,2012 Q2,All,All,30495,,
+Petition,,2011 Q1,All,All,34655,,
+Petition,,2009 Q3,All,All,34402,,
+Petition,,2007 Q4,All,All,26836,,
+Petition,,2013 Q4,All,All,26141,,
+Petition,,2017 Q2,All,All,27094,,
+Petition,,2019 Q4,All,All,27521,,
+Petition,,2017 Q4,All,All,25780,,
+Petition,,2021 Q3,All,All,26851,,
+Petition,,2003 Q1,All,All,45536,,
+Petition,,2008 Q4,All,All,29920,,
+Petition,,2006 Q3,All,All,37045,,
+Petition,,2020 Q1,All,All,29684,,
+Petition,,2010 Q2,All,All,33380,,
+Petition,,2010 Q4,All,All,30669,,
+Petition,,2012 Q4,All,All,29163,,
+Petition,,2025 Q3,All,All,27498,,
+Petition,,2023 Q4,All,All,24655,,
+Petition,,2024 Q3,All,All,28066,,
+Petition,,2025 Q4,All,All,23901,,
+Petition,,2025 Q1,All,All,30171,,
+Petition,,2003 Q3,All,All,42889,,
+Petition,,2014 Q3,All,All,29131,,
+Petition,,2020 Q4,All,All,30514,,
+Petition,,2016 Q2,All,All,30282,,
+Petition,,2006 Q1,All,All,38167,,
+Petition,,2004 Q4,All,All,38432,,
+Petition,,2003 Q4,All,All,40815,,
+Petition,,2018 Q1,All,All,27406,,
+Petition,,2012 Q3,All,All,31049,,
+Petition,,2005 Q4,All,All,35572,,
+Petition,,2020 Q2,All,All,24057,,
+Petition,,2013 Q3,All,All,28429,,
+Petition,,2005 Q3,All,All,37937,,
+Petition,,2018 Q2,All,All,32205,,
+Petition,,2004 Q3,All,All,41418,,
+Petition,,2017 Q3,All,All,27874,,
+Petition,,2010 Q3,All,All,34694,,
+Petition,,2014 Q4,All,All,27301,,
+Petition,,2016 Q3,All,All,27529,,
+Petition,,2006 Q2,All,All,36252,,
+Petition,,2015 Q2,All,All,28080,,
+Petition,,2016 Q1,All,All,29019,,
+Petition,,2020 Q3,All,All,28815,,
+Petition,,2025 Q2,All,All,27614,,
+Petition,,2022 Q3,All,All,31026,,
+Petition,,2023 Q3,All,All,28765,,
+Petition,,2022 Q4,All,All,25748,,
+Petition,2015,,All,All,114504,,
+Petition,2019,,All,All,116628,,
+Petition,2011,,All,All,129258,,
+Petition,2012,,All,All,124395,,
+Petition,2008,,All,All,128571,,
+Petition,2013,,All,All,117483,,
+Petition,2023,,All,All,113073,,
+Petition,2016,,All,All,114039,,
+Petition,2003,,All,All,170741,,
+Petition,2009,,All,All,131896,,
+Petition,2014,,All,All,112559,,
+Petition,2020,,All,All,113070,,
+Petition,2017,,All,All,109266,,
+Petition,2010,,All,All,133268,,
+Petition,2004,,All,All,165133,,
+Petition,2022,,All,All,122484,,
+Petition,2024,,All,All,110428,,
+Petition,2021,,All,All,108532,,
+Petition,2005,,All,All,149821,,
+Petition,2018,,All,All,118346,,
+Petition,2025,,All,All,109184,,
+Petition,2007,,All,All,135853,,
+Petition,2006,,All,All,146765,,
+Petition,,2015 Q4,Paper,All,29478,,
+Petition,,2003 Q2,Paper,All,41501,,
+Petition,,2020 Q3,Paper,All,10971,,
+Petition,,2006 Q1,Paper,All,38167,,
+Petition,,2009 Q2,Paper,All,32497,,
+Petition,,2019 Q2,Paper,All,28295,,
+Petition,,2004 Q1,Paper,All,44819,,
+Petition,,2016 Q2,Paper,All,30282,,
+Petition,,2014 Q3,Paper,All,29131,,
+Petition,,2003 Q1,Paper,All,45536,,
+Petition,,2011 Q4,Paper,All,30604,,
+Petition,,2013 Q3,Paper,All,28429,,
+Petition,,2009 Q4,Paper,All,32418,,
+Petition,,2020 Q4,Paper,All,12915,,
+Petition,,2019 Q3,Digital,All,3147,,
+Petition,,2011 Q3,Paper,All,34516,,
+Petition,,2013 Q4,Paper,All,26141,,
+Petition,,2019 Q4,Digital,All,9293,,
+Petition,,2023 Q2,Digital,All,26710,,
+Petition,,2025 Q2,Paper,All,869,,
+Petition,,2024 Q2,Digital,All,26407,,
+Petition,,2024 Q2,Paper,All,1047,,
+Petition,,2011 Q1,Paper,All,34655,,
+Petition,,2017 Q4,Paper,All,25780,,
+Petition,,2015 Q2,Paper,All,28080,,
+Petition,,2007 Q1,Paper,All,37951,,
+Petition,,2012 Q3,Paper,All,31049,,
+Petition,,2004 Q2,Paper,All,40464,,
+Petition,,2005 Q2,Paper,All,38927,,
+Petition,,2010 Q2,Paper,All,33380,,
+Petition,,2010 Q1,Paper,All,34525,,
+Petition,,2018 Q3,Paper,All,30337,,
+Petition,,2018 Q2,Paper,All,32205,,
+Petition,,2020 Q4,Digital,All,17599,,
+Petition,,2005 Q3,Paper,All,37937,,
+Petition,,2012 Q4,Paper,All,29163,,
+Petition,,2021 Q4,Digital,All,19547,,
+Petition,,2014 Q1,Paper,All,28532,,
+Petition,,2006 Q2,Paper,All,36252,,
+Petition,,2021 Q4,Paper,All,3604,,
+Petition,,2021 Q1,Digital,All,21279,,
+Petition,,2009 Q3,Paper,All,34402,,
+Petition,,2019 Q1,Paper,All,30344,,
+Petition,,2020 Q1,Digital,All,12226,,
+Petition,,2007 Q4,Paper,All,26836,,
+Petition,,2020 Q2,Digital,All,13516,,
+Petition,,2024 Q4,Digital,All,24391,,
+Petition,,2022 Q3,Digital,All,29634,,
+Petition,,2025 Q3,Digital,All,26645,,
+Petition,,2025 Q1,Digital,All,29345,,
+Petition,,2025 Q2,Digital,All,26745,,
+Petition,,2024 Q3,Digital,All,27207,,
+Petition,,2023 Q4,Paper,All,1347,,
+Petition,,2023 Q3,Paper,All,1485,,
+Petition,,2022 Q3,Paper,All,1392,,
+Petition,,2022 Q4,Paper,All,1181,,
+Petition,,2024 Q1,Paper,All,1508,,
+Petition,,2022 Q1,Digital,All,26531,,
+Petition,,2018 Q1,Paper,All,27406,,
+Petition,,2008 Q2,Paper,All,33376,,
+Petition,,2006 Q3,Paper,All,37045,,
+Petition,,2007 Q3,Paper,All,35701,,
+Petition,,2004 Q3,Paper,All,41418,,
+Petition,,2006 Q4,Paper,All,35301,,
+Petition,,2015 Q3,Paper,All,28357,,
+Petition,,2008 Q1,Paper,All,32814,,
+Petition,,2003 Q4,Paper,All,40815,,
+Petition,,2020 Q3,Digital,All,17844,,
+Petition,,2012 Q1,Paper,All,33688,,
+Petition,,2004 Q4,Paper,All,38432,,
+Petition,,2016 Q3,Paper,All,27529,,
+Petition,,2008 Q4,Paper,All,29920,,
+Petition,,2007 Q2,Paper,All,35365,,
+Petition,,2021 Q2,Digital,All,19842,,
+Petition,,2003 Q3,Paper,All,42889,,
+Petition,,2012 Q2,Paper,All,30495,,
+Petition,,2010 Q4,Paper,All,30669,,
+Petition,,2011 Q2,Paper,All,29483,,
+Petition,,2005 Q4,Paper,All,35572,,
+Petition,,2019 Q4,Paper,All,18228,,
+Petition,,2017 Q1,Paper,All,28518,,
+Petition,,2022 Q1,Paper,All,3750,,
+Petition,,2021 Q1,Paper,All,9620,,
+Petition,,2022 Q2,Paper,All,1260,,
+Petition,,2022 Q4,Digital,All,24567,,
+Petition,,2023 Q2,Paper,All,1512,,
+Petition,,2024 Q3,Paper,All,859,,
+Petition,,2023 Q4,Digital,All,23308,,
+Petition,,2024 Q4,Paper,All,720,,
+Petition,,2025 Q3,Paper,All,853,,
+Petition,,2025 Q4,Paper,All,610,,
+Petition,,2016 Q4,Paper,All,27209,,
+Petition,,2021 Q3,Digital,All,21207,,
+Petition,,2020 Q1,Paper,All,17458,,
+Petition,,2015 Q1,Paper,All,28589,,
+Petition,,2008 Q3,Paper,All,32461,,
+Petition,,2017 Q3,Paper,All,27874,,
+Petition,,2014 Q4,Paper,All,27301,,
+Petition,,2005 Q1,Paper,All,37385,,
+Petition,,2017 Q2,Paper,All,27094,,
+Petition,,2013 Q2,Paper,All,32023,,
+Petition,,2010 Q3,Paper,All,34694,,
+Petition,,2021 Q3,Paper,All,5644,,
+Petition,,2013 Q1,Paper,All,30890,,
+Petition,,2014 Q2,Paper,All,27595,,
+Petition,,2019 Q3,Paper,All,27321,,
+Petition,,2009 Q1,Paper,All,32579,,
+Petition,,2016 Q1,Paper,All,29019,,
+Petition,,2020 Q2,Paper,All,10541,,
+Petition,,2018 Q4,Paper,All,28398,,
+Petition,,2021 Q2,Paper,All,7789,,
+Petition,,2023 Q1,Digital,All,29980,,
+Petition,,2025 Q4,Digital,All,23291,,
+Petition,,2022 Q2,Digital,All,34169,,
+Petition,,2023 Q3,Digital,All,27280,,
+Petition,,2024 Q1,Digital,All,28289,,
+Petition,,2023 Q1,Paper,All,1451,,
+Petition,,2025 Q1,Paper,All,826,,
+Decree Nisi,,2009 Q2,All,Old,28073,25.405,16.714
+Decree Nisi,,2007 Q3,All,Old,33869,25.16,17
+Decree Nisi,,2014 Q1,All,Old,27110,24.924,16.286
+Decree Nisi,,2014 Q2,All,Old,27195,24.046,14.857
+Decree Nisi,,2020 Q1,All,Old,33970,27.942,20
+Decree Nisi,,2004 Q4,All,Old,35120,24.476,16.429
+Decree Nisi,,2021 Q1,All,Old,32992,26.19,16.429
+Decree Nisi,,2005 Q2,All,Old,36341,24.561,16
+Decree Nisi,,2022 Q1,All,Old,21918,25.774,12.286
+Decree Nisi,,2015 Q4,All,Old,21570,27.248,18.857
+Decree Nisi,,2019 Q1,All,Old,25649,34.122,26.143
+Decree Nisi,,2010 Q1,All,Old,30811,25.214,17.143
+Decree Nisi,,2012 Q4,All,Old,29260,23.952,15
+Decree Nisi,,2020 Q3,All,Old,24903,28.41,20.714
+Decree Nisi,,2006 Q3,All,Old,33533,24.705,16.714
+Decree Nisi,,2013 Q4,All,Old,27463,24.156,15.857
+Decree Nisi,,2021 Q3,All,Old,24166,24.756,11.857
+Decree Nisi,,2018 Q2,All,Old,21633,28.986,21
+Decree Nisi,,2023 Q4,All,Old,1264,168.616,139.143
+Decree Nisi,,2024 Q3,All,Old,684,215.976,177.857
+Decree Nisi,,2024 Q2,All,Old,1003,200.815,166.429
+Decree Nisi,,2025 Q3,All,Old,494,290.638,254.571
+Decree Nisi,,2025 Q2,All,New,30383,37.246,30.286
+Decree Nisi,,2025 Q4,All,New,29941,35.739,28
+Decree Nisi,,2024 Q2,All,New,28347,34.444,28.143
+Decree Nisi,,2025 Q3,All,New,29082,36.211,28.286
+Decree Nisi,,2022 Q3,All,New,646,24.566,24.143
+Decree Nisi,,2019 Q2,All,Old,26408,33.518,27.286
+Decree Nisi,,2007 Q4,All,Old,31867,25.211,16.857
+Decree Nisi,,2010 Q3,All,Old,33624,26.868,17
+Decree Nisi,,2011 Q2,All,Old,29161,25.106,16.143
+Decree Nisi,,2019 Q4,All,Old,30095,28.409,20.143
+Decree Nisi,,2016 Q2,All,Old,28290,24.979,17
+Decree Nisi,,2017 Q3,All,Old,24255,25.104,16.571
+Decree Nisi,,2010 Q4,All,Old,31092,24.539,16.571
+Decree Nisi,,2021 Q2,All,Old,30574,24.466,12.857
+Decree Nisi,,2003 Q1,All,Old,39082,24.865,17.714
+Decree Nisi,,2007 Q1,All,Old,34965,24.831,17
+Decree Nisi,,2008 Q2,All,Old,29643,24.382,15.143
+Decree Nisi,,2004 Q1,All,Old,39634,24.851,17.286
+Decree Nisi,,2021 Q4,All,Old,26345,24.742,11
+Decree Nisi,,2009 Q1,All,Old,28018,25.326,17.143
+Decree Nisi,,2017 Q2,All,Old,25699,24.058,15.286
+Decree Nisi,,2012 Q3,All,Old,31102,24.133,15.714
+Decree Nisi,,2006 Q1,All,Old,34915,24.495,16.714
+Decree Nisi,,2012 Q1,All,Old,31184,25.375,16.857
+Decree Nisi,,2003 Q3,All,Old,40092,24.772,17.429
+Decree Nisi,,2004 Q2,All,Old,38980,24.625,16.286
+Decree Nisi,,2005 Q3,All,Old,36145,24.208,16
+Decree Nisi,,2011 Q3,All,Old,31448,25.354,17
+Decree Nisi,,2023 Q2,All,Old,2572,121.842,98.714
+Decree Nisi,,2023 Q1,All,New,29619,29.665,28.143
+Decree Nisi,,2024 Q1,All,New,32075,35.097,30.286
+Decree Nisi,,2023 Q4,All,New,21154,34.437,30
+Decree Nisi,,2003 Q4,All,Old,37956,24.519,16.857
+Decree Nisi,,2010 Q2,All,Old,29750,25.265,16.429
+Decree Nisi,,2005 Q4,All,Old,32318,24.22,16
+Decree Nisi,,2016 Q4,All,Old,26228,27.971,18.286
+Decree Nisi,,2013 Q1,All,Old,27802,24.002,15.857
+Decree Nisi,,2016 Q1,All,Old,32025,24.717,18.714
+Decree Nisi,,2012 Q2,All,Old,30791,24.66,15.571
+Decree Nisi,,2004 Q3,All,Old,40571,24.556,16.714
+Decree Nisi,,2005 Q1,All,Old,36999,24.71,17
+Decree Nisi,,2011 Q4,All,Old,31259,25.146,16.143
+Decree Nisi,,2018 Q4,All,Old,24621,31.237,23.857
+Decree Nisi,,2008 Q1,All,Old,31114,25.687,17.571
+Decree Nisi,,2011 Q1,All,Old,30366,25.473,17.143
+Decree Nisi,,2025 Q2,All,Old,467,286.822,238.429
+Decree Nisi,,2022 Q3,All,Old,13835,44.206,27.857
+Decree Nisi,,2024 Q4,All,Old,687,239.111,199.714
+Decree Nisi,,2023 Q1,All,Old,3972,101.742,80.571
+Decree Nisi,,2023 Q3,All,New,20948,31.135,27
+Decree Nisi,,2025 Q1,All,New,26415,38.337,32.429
+Decree Nisi,,2020 Q2,All,Old,20703,23.286,14.286
+Decree Nisi,,2008 Q4,All,Old,28214,24.284,16
+Decree Nisi,,2006 Q2,All,Old,33087,24.676,16.143
+Decree Nisi,,2007 Q2,All,Old,32412,25.124,16.714
+Decree Nisi,,2017 Q4,All,Old,24364,25.507,17.429
+Decree Nisi,,2009 Q3,All,Old,32476,24.657,16.571
+Decree Nisi,,2003 Q2,All,Old,39080,24.71,16.857
+Decree Nisi,,2016 Q3,All,Old,27580,24.455,16.571
+Decree Nisi,,2020 Q4,All,Old,27073,29.604,19.571
+Decree Nisi,,2014 Q3,All,Old,28150,23.533,15.143
+Decree Nisi,,2009 Q4,All,Old,30780,24.411,16.286
+Decree Nisi,,2022 Q2,All,Old,17827,35.957,18.143
+Decree Nisi,,2013 Q2,All,Old,29063,23.935,15
+Decree Nisi,,2006 Q4,All,Old,33170,24.464,16.286
+Decree Nisi,,2018 Q3,All,Old,22532,31.347,24
+Decree Nisi,,2017 Q1,All,Old,28802,24.729,16.714
+Decree Nisi,,2013 Q3,All,Old,28958,25.909,15.714
+Decree Nisi,,2014 Q4,All,Old,27201,23.061,14.571
+Decree Nisi,,2019 Q3,All,Old,33088,30.82,23.571
+Decree Nisi,,2015 Q2,All,Old,25709,23.713,14.429
+Decree Nisi,,2015 Q1,All,Old,27449,23.479,15.429
+Decree Nisi,,2015 Q3,All,Old,24354,24.622,16.143
+Decree Nisi,,2018 Q1,All,Old,23205,27.269,19.286
+Decree Nisi,,2008 Q3,All,Old,31566,24.624,15.857
+Decree Nisi,,2022 Q4,All,Old,5148,79.436,59
+Decree Nisi,,2023 Q3,All,Old,1956,146.921,121.571
+Decree Nisi,,2024 Q1,All,Old,1405,180.21,147.857
+Decree Nisi,,2025 Q4,All,Old,445,313.889,277.714
+Decree Nisi,,2025 Q1,All,Old,460,257.033,213.286
+Decree Nisi,,2024 Q3,All,New,27830,33.018,26
+Decree Nisi,,2024 Q4,All,New,14993,36.219,30.857
+Decree Nisi,,2022 Q4,All,New,20860,27.58,27
+Decree Nisi,,2023 Q2,All,New,23457,29.07,26.143
+Decree Nisi,,2008 Q4,Paper,All,28214,24.284,16
+Decree Nisi,,2007 Q4,Paper,All,31867,25.211,16.857
+Decree Nisi,,2006 Q2,Paper,All,33087,24.676,16.143
+Decree Nisi,,2012 Q2,Paper,All,30791,24.66,15.571
+Decree Nisi,,2009 Q4,Paper,All,30780,24.411,16.286
+Decree Nisi,,2005 Q2,Paper,All,36341,24.561,16
+Decree Nisi,,2022 Q1,Paper,All,4892,65.97,44.286
+Decree Nisi,,2020 Q1,Digital,All,12220,10.63,9.857
+Decree Nisi,,2012 Q4,Paper,All,29260,23.952,15
+Decree Nisi,,2018 Q4,Paper,All,24621,31.237,23.857
+Decree Nisi,,2012 Q3,Paper,All,31102,24.133,15.714
+Decree Nisi,,2016 Q1,Paper,All,32025,24.717,18.714
+Decree Nisi,,2003 Q2,Paper,All,39080,24.71,16.857
+Decree Nisi,,2010 Q4,Paper,All,31092,24.539,16.571
+Decree Nisi,,2020 Q4,Digital,All,13312,11.958,9.857
+Decree Nisi,,2013 Q4,Paper,All,27463,24.156,15.857
+Decree Nisi,,2012 Q1,Paper,All,31184,25.375,16.857
+Decree Nisi,,2015 Q2,Paper,All,25709,23.713,14.429
+Decree Nisi,,2020 Q3,Digital,All,12217,9.58,7.714
+Decree Nisi,,2003 Q3,Paper,All,40092,24.772,17.429
+Decree Nisi,,2023 Q3,Paper,All,2483,114.61,94.143
+Decree Nisi,,2023 Q4,Paper,All,2054,110.366,70.786
+Decree Nisi,,2025 Q4,Paper,All,1324,126.324,40.714
+Decree Nisi,,2025 Q3,Digital,All,28360,36.509,28.143
+Decree Nisi,,2025 Q1,Digital,All,25431,38.603,32.429
+Decree Nisi,,2025 Q3,Paper,All,1216,132.624,52.929
+Decree Nisi,,2024 Q2,Digital,All,27032,35.16,27.714
+Decree Nisi,,2020 Q2,Digital,All,10544,8.454,7.143
+Decree Nisi,,2010 Q3,Paper,All,33624,26.868,17
+Decree Nisi,,2014 Q1,Paper,All,27110,24.924,16.286
+Decree Nisi,,2016 Q2,Paper,All,28290,24.979,17
+Decree Nisi,,2004 Q4,Paper,All,35120,24.476,16.429
+Decree Nisi,,2003 Q1,Paper,All,39082,24.865,17.714
+Decree Nisi,,2014 Q3,Paper,All,28150,23.533,15.143
+Decree Nisi,,2008 Q2,Paper,All,29643,24.382,15.143
+Decree Nisi,,2022 Q2,Digital,All,12380,17.963,13.857
+Decree Nisi,,2015 Q4,Paper,All,21570,27.248,18.857
+Decree Nisi,,2019 Q1,Paper,All,25649,34.122,26.143
+Decree Nisi,,2021 Q4,Digital,All,19731,12.534,8.143
+Decree Nisi,,2018 Q3,Paper,All,22532,31.347,24
+Decree Nisi,,2010 Q1,Paper,All,30811,25.214,17.143
+Decree Nisi,,2005 Q1,Paper,All,36999,24.71,17
+Decree Nisi,,2017 Q1,Paper,All,28802,24.729,16.714
+Decree Nisi,,2020 Q2,Paper,All,10159,38.681,27.714
+Decree Nisi,,2020 Q4,Paper,All,13761,46.675,34.857
+Decree Nisi,,2021 Q1,Digital,All,19259,11.961,9.429
+Decree Nisi,,2004 Q2,Paper,All,38980,24.625,16.286
+Decree Nisi,,2022 Q2,Paper,All,5447,76.855,55.286
+Decree Nisi,,2008 Q3,Paper,All,31566,24.624,15.857
+Decree Nisi,,2021 Q2,Digital,All,20110,11.886,8.143
+Decree Nisi,,2022 Q3,Digital,All,10357,27.439,22.857
+Decree Nisi,,2021 Q4,Paper,All,6614,61.159,42.571
+Decree Nisi,,2024 Q4,Paper,All,1375,126.607,57.857
+Decree Nisi,,2019 Q4,Digital,All,2857,11.464,11.286
+Decree Nisi,,2024 Q3,Paper,All,1811,97.123,43.857
+Decree Nisi,,2024 Q3,Digital,All,26703,33.357,25.857
+Decree Nisi,,2022 Q4,Digital,All,22479,29.359,27.143
+Decree Nisi,,2023 Q1,Digital,All,30027,31.015,28.143
+Decree Nisi,,2025 Q2,Digital,All,29422,37.389,30.286
+Decree Nisi,,2003 Q4,Paper,All,37956,24.519,16.857
+Decree Nisi,,2009 Q2,Paper,All,28073,25.405,16.714
+Decree Nisi,,2005 Q4,Paper,All,32318,24.22,16
+Decree Nisi,,2007 Q2,Paper,All,32412,25.124,16.714
+Decree Nisi,,2016 Q4,Paper,All,26228,27.971,18.286
+Decree Nisi,,2013 Q1,Paper,All,27802,24.002,15.857
+Decree Nisi,,2009 Q3,Paper,All,32476,24.657,16.571
+Decree Nisi,,2017 Q3,Paper,All,24255,25.104,16.571
+Decree Nisi,,2021 Q2,Paper,All,10464,48.643,32.286
+Decree Nisi,,2020 Q1,Paper,All,21750,37.669,26.857
+Decree Nisi,,2021 Q1,Paper,All,13733,46.145,32.857
+Decree Nisi,,2004 Q1,Paper,All,39634,24.851,17.286
+Decree Nisi,,2006 Q4,Paper,All,33170,24.464,16.286
+Decree Nisi,,2009 Q1,Paper,All,28018,25.326,17.143
+Decree Nisi,,2011 Q4,Paper,All,31259,25.146,16.143
+Decree Nisi,,2013 Q3,Paper,All,28958,25.909,15.714
+Decree Nisi,,2008 Q1,Paper,All,31114,25.687,17.571
+Decree Nisi,,2011 Q1,Paper,All,30366,25.473,17.143
+Decree Nisi,,2015 Q3,Paper,All,24354,24.622,16.143
+Decree Nisi,,2018 Q2,Paper,All,21633,28.986,21
+Decree Nisi,,2018 Q1,Paper,All,23205,27.269,19.286
+Decree Nisi,,2005 Q3,Paper,All,36145,24.208,16
+Decree Nisi,,2025 Q2,Paper,All,1428,115.903,47.786
+Decree Nisi,,2024 Q1,Digital,All,30897,35.926,30.143
+Decree Nisi,,2022 Q3,Paper,All,4124,83.236,61.714
+Decree Nisi,,2023 Q3,Digital,All,20421,32.076,27
+Decree Nisi,,2024 Q2,Paper,All,2318,98.082,45.857
+Decree Nisi,,2025 Q1,Paper,All,1444,103.33,47.143
+Decree Nisi,,2023 Q1,Paper,All,3564,98.619,78.429
+Decree Nisi,,2024 Q4,Digital,All,14305,37.275,30.857
+Decree Nisi,,2019 Q2,Paper,All,26408,33.518,27.286
+Decree Nisi,,2010 Q2,Paper,All,29750,25.265,16.429
+Decree Nisi,,2007 Q3,Paper,All,33869,25.16,17
+Decree Nisi,,2017 Q4,Paper,All,24364,25.507,17.429
+Decree Nisi,,2011 Q2,Paper,All,29161,25.106,16.143
+Decree Nisi,,2019 Q4,Paper,All,27238,30.186,21.857
+Decree Nisi,,2014 Q2,Paper,All,27195,24.046,14.857
+Decree Nisi,,2016 Q3,Paper,All,27580,24.455,16.571
+Decree Nisi,,2007 Q1,Paper,All,34965,24.831,17
+Decree Nisi,,2004 Q3,Paper,All,40571,24.556,16.714
+Decree Nisi,,2013 Q2,Paper,All,29063,23.935,15
+Decree Nisi,,2017 Q2,Paper,All,25699,24.058,15.286
+Decree Nisi,,2020 Q3,Paper,All,12686,46.543,35
+Decree Nisi,,2006 Q3,Paper,All,33533,24.705,16.714
+Decree Nisi,,2014 Q4,Paper,All,27201,23.061,14.571
+Decree Nisi,,2019 Q3,Paper,All,33088,30.82,23.571
+Decree Nisi,,2006 Q1,Paper,All,34915,24.495,16.714
+Decree Nisi,,2022 Q1,Digital,All,17026,14.224,9.714
+Decree Nisi,,2021 Q3,Digital,All,16950,12.252,8.286
+Decree Nisi,,2015 Q1,Paper,All,27449,23.479,15.429
+Decree Nisi,,2021 Q3,Paper,All,7216,54.128,37
+Decree Nisi,,2011 Q3,Paper,All,31448,25.354,17
+Decree Nisi,,2022 Q4,Paper,All,3529,91.892,70.714
+Decree Nisi,,2023 Q2,Paper,All,2624,106.102,86.714
+Decree Nisi,,2024 Q1,Paper,All,2583,104.12,53.714
+Decree Nisi,,2023 Q2,Digital,All,23405,30.629,26
+Decree Nisi,,2023 Q4,Digital,All,20364,35.107,30
+Decree Nisi,,2025 Q4,Digital,All,29062,35.872,27.857
+Decree Nisi,,2008 Q4,All,All,28214,24.284,16
+Decree Nisi,,2005 Q4,All,All,32318,24.22,16
+Decree Nisi,,2006 Q2,All,All,33087,24.676,16.143
+Decree Nisi,,2014 Q1,All,All,27110,24.924,16.286
+Decree Nisi,,2016 Q1,All,All,32025,24.717,18.714
+Decree Nisi,,2009 Q3,All,All,32476,24.657,16.571
+Decree Nisi,,2017 Q1,All,All,28802,24.729,16.714
+Decree Nisi,,2019 Q3,All,All,33088,30.82,23.571
+Decree Nisi,,2003 Q3,All,All,40092,24.772,17.429
+Decree Nisi,,2011 Q3,All,All,31448,25.354,17
+Decree Nisi,,2023 Q4,All,All,22418,42.003,30.286
+Decree Nisi,,2025 Q4,All,All,30386,39.813,28
+Decree Nisi,,2025 Q1,All,All,26875,42.08,32.571
+Decree Nisi,,2010 Q4,All,All,31092,24.539,16.571
+Decree Nisi,,2021 Q1,All,All,32992,26.19,16.429
+Decree Nisi,,2014 Q3,All,All,28150,23.533,15.143
+Decree Nisi,,2007 Q1,All,All,34965,24.831,17
+Decree Nisi,,2013 Q2,All,All,29063,23.935,15
+Decree Nisi,,2006 Q4,All,All,33170,24.464,16.286
+Decree Nisi,,2010 Q1,All,All,30811,25.214,17.143
+Decree Nisi,,2005 Q1,All,All,36999,24.71,17
+Decree Nisi,,2020 Q2,All,All,20703,23.286,14.286
+Decree Nisi,,2009 Q2,All,All,28073,25.405,16.714
+Decree Nisi,,2013 Q1,All,All,27802,24.002,15.857
+Decree Nisi,,2019 Q4,All,All,30095,28.409,20.143
+Decree Nisi,,2016 Q2,All,All,28290,24.979,17
+Decree Nisi,,2008 Q2,All,All,29643,24.382,15.143
+Decree Nisi,,2022 Q1,All,All,21918,25.774,12.286
+Decree Nisi,,2009 Q1,All,All,28018,25.326,17.143
+Decree Nisi,,2012 Q3,All,All,31102,24.133,15.714
+Decree Nisi,,2013 Q4,All,All,27463,24.156,15.857
+Decree Nisi,,2012 Q1,All,All,31184,25.375,16.857
+Decree Nisi,,2015 Q3,All,All,24354,24.622,16.143
+Decree Nisi,,2024 Q3,All,All,28514,37.407,26.143
+Decree Nisi,,2024 Q2,All,All,29350,40.129,28.429
+Decree Nisi,,2023 Q1,All,All,33591,38.188,28.571
+Decree Nisi,,2025 Q3,All,All,29576,40.461,28.286
+Decree Nisi,,2007 Q4,All,All,31867,25.211,16.857
+Decree Nisi,,2007 Q2,All,All,32412,25.124,16.714
+Decree Nisi,,2017 Q3,All,All,24255,25.104,16.571
+Decree Nisi,,2014 Q2,All,All,27195,24.046,14.857
+Decree Nisi,,2016 Q3,All,All,27580,24.455,16.571
+Decree Nisi,,2003 Q1,All,All,39082,24.865,17.714
+Decree Nisi,,2004 Q3,All,All,40571,24.556,16.714
+Decree Nisi,,2005 Q2,All,All,36341,24.561,16
+Decree Nisi,,2015 Q4,All,All,21570,27.248,18.857
+Decree Nisi,,2019 Q1,All,All,25649,34.122,26.143
+Decree Nisi,,2021 Q4,All,All,26345,24.742,11
+Decree Nisi,,2017 Q2,All,All,25699,24.058,15.286
+Decree Nisi,,2020 Q3,All,All,24903,28.41,20.714
+Decree Nisi,,2008 Q1,All,All,31114,25.687,17.571
+Decree Nisi,,2014 Q4,All,All,27201,23.061,14.571
+Decree Nisi,,2011 Q1,All,All,30366,25.473,17.143
+Decree Nisi,,2018 Q2,All,All,21633,28.986,21
+Decree Nisi,,2005 Q3,All,All,36145,24.208,16
+Decree Nisi,,2008 Q3,All,All,31566,24.624,15.857
+Decree Nisi,,2022 Q4,All,All,26008,37.844,27.571
+Decree Nisi,,2025 Q2,All,All,30850,41.024,30.429
+Decree Nisi,,2022 Q3,All,All,14481,43.329,26.857
+Decree Nisi,,2024 Q1,All,All,33480,41.187,30.429
+Decree Nisi,,2019 Q2,All,All,26408,33.518,27.286
+Decree Nisi,,2003 Q4,All,All,37956,24.519,16.857
+Decree Nisi,,2010 Q2,All,All,29750,25.265,16.429
+Decree Nisi,,2007 Q3,All,All,33869,25.16,17
+Decree Nisi,,2010 Q3,All,All,33624,26.868,17
+Decree Nisi,,2016 Q4,All,All,26228,27.971,18.286
+Decree Nisi,,2017 Q4,All,All,24364,25.507,17.429
+Decree Nisi,,2011 Q2,All,All,29161,25.106,16.143
+Decree Nisi,,2003 Q2,All,All,39080,24.71,16.857
+Decree Nisi,,2021 Q2,All,All,30574,24.466,12.857
+Decree Nisi,,2020 Q4,All,All,27073,29.604,19.571
+Decree Nisi,,2012 Q2,All,All,30791,24.66,15.571
+Decree Nisi,,2020 Q1,All,All,33970,27.942,20
+Decree Nisi,,2004 Q4,All,All,35120,24.476,16.429
+Decree Nisi,,2009 Q4,All,All,30780,24.411,16.286
+Decree Nisi,,2022 Q2,All,All,17827,35.957,18.143
+Decree Nisi,,2004 Q1,All,All,39634,24.851,17.286
+Decree Nisi,,2018 Q3,All,All,22532,31.347,24
+Decree Nisi,,2012 Q4,All,All,29260,23.952,15
+Decree Nisi,,2011 Q4,All,All,31259,25.146,16.143
+Decree Nisi,,2018 Q4,All,All,24621,31.237,23.857
+Decree Nisi,,2013 Q3,All,All,28958,25.909,15.714
+Decree Nisi,,2006 Q3,All,All,33533,24.705,16.714
+Decree Nisi,,2006 Q1,All,All,34915,24.495,16.714
+Decree Nisi,,2021 Q3,All,All,24166,24.756,11.857
+Decree Nisi,,2015 Q2,All,All,25709,23.713,14.429
+Decree Nisi,,2015 Q1,All,All,27449,23.479,15.429
+Decree Nisi,,2004 Q2,All,All,38980,24.625,16.286
+Decree Nisi,,2018 Q1,All,All,23205,27.269,19.286
+Decree Nisi,,2023 Q2,All,All,26029,38.237,26.571
+Decree Nisi,,2023 Q3,All,All,22904,41.023,27.429
+Decree Nisi,,2024 Q4,All,All,15680,45.108,31
+Decree Absolute,2003,,Paper,All,152236,42.541,31
+Decree Absolute,2011,,Paper,All,119488,48.624,32.143
+Decree Absolute,2008,,Paper,All,122259,47.561,32.429
+Decree Absolute,2014,,Paper,All,111800,49.227,30
+Decree Absolute,2019,,Paper,All,107153,56.639,39.714
+Decree Absolute,2013,,Paper,All,114867,49.937,31
+Decree Absolute,2015,,Paper,All,102154,49.106,29
+Decree Absolute,2021,,Digital,All,63495,21.955,16
+Decree Absolute,2012,,Paper,All,120516,48.961,31.286
+Decree Absolute,2007,,Paper,All,128679,46.122,31.429
+Decree Absolute,2009,,Paper,All,115015,48.004,32
+Decree Absolute,2023,,Digital,All,85812,45.942,36.143
+Decree Absolute,2019,,Digital,All,155,16.43,16.714
+Decree Absolute,2020,,Paper,All,66176,69.931,51
+Decree Absolute,2010,,Paper,All,120833,48.193,31.571
+Decree Absolute,2022,,Digital,All,54556,33.738,29
+Decree Absolute,2018,,Paper,All,91983,55.118,35.143
+Decree Absolute,2005,,Paper,All,141401,45.104,31.286
+Decree Absolute,2020,,Digital,All,37799,17.51,15.286
+Decree Absolute,2021,,Paper,All,50346,88.624,66
+Decree Absolute,2025,,Paper,All,7431,202.063,145.857
+Decree Absolute,2023,,Paper,All,17663,153.396,123.429
+Decree Absolute,2025,,Digital,All,98273,58.455,40.714
+Decree Absolute,2024,,Digital,All,93892,53.304,39.286
+Decree Absolute,2004,,Paper,All,152595,43.922,31
+Decree Absolute,2017,,Paper,All,102801,49.981,30.714
+Decree Absolute,2016,,Paper,All,108255,50.05,30.429
+Decree Absolute,2022,,Paper,All,25861,117.108,88.143
+Decree Absolute,2006,,Paper,All,132310,45.727,31.571
+Decree Absolute,2024,,Paper,All,11546,165.982,130.929
+Decree Nisi,2003,,Paper,All,156210,24.718,17.143
+Decree Nisi,2017,,Paper,All,103120,24.834,16.571
+Decree Nisi,2013,,Paper,All,113286,24.51,15.571
+Decree Nisi,2022,,Paper,All,17992,78.308,56.714
+Decree Nisi,2015,,Paper,All,99082,24.641,16.143
+Decree Nisi,2021,,Digital,All,76050,12.155,8.571
+Decree Nisi,2025,,Paper,All,5412,118.855,47.143
+Decree Nisi,2019,,Digital,All,2857,11.464,11.286
+Decree Nisi,2025,,Digital,All,112275,37.049,30.143
+Decree Nisi,2005,,Paper,All,141803,24.432,16.286
+Decree Nisi,2006,,Paper,All,134705,24.584,16.571
+Decree Nisi,2021,,Paper,All,38027,50.959,34.857
+Decree Nisi,2020,,Paper,All,58356,41.898,30.571
+Decree Nisi,2004,,Paper,All,154305,24.631,16.857
+Decree Nisi,2024,,Paper,All,8087,104.646,48.714
+Decree Nisi,2020,,Digital,All,48293,10.255,8.571
+Decree Nisi,2007,,Paper,All,133113,25.077,16.857
+Decree Nisi,2014,,Paper,All,109656,23.887,15.143
+Decree Nisi,2011,,Paper,All,122234,25.271,16.714
+Decree Nisi,2018,,Paper,All,91991,29.733,22.286
+Decree Nisi,2023,,Digital,All,94217,32.033,28.143
+Decree Nisi,2019,,Paper,All,112383,32.054,24.857
+Decree Nisi,2008,,Paper,All,120537,24.759,16.143
+Decree Nisi,2010,,Paper,All,125277,25.503,16.857
+Decree Nisi,2009,,Paper,All,119347,24.927,16.714
+Decree Nisi,2016,,Paper,All,114123,25.466,17.714
+Decree Nisi,2012,,Paper,All,122337,24.539,15.857
+Decree Nisi,2022,,Digital,All,62242,22.633,24.071
+Decree Nisi,2023,,Paper,All,10725,106.402,82.571
+Decree Nisi,2024,,Digital,All,98937,35.218,29
+Petition,,2021 Q2,All,Old,27631,,
+Petition,,2019 Q3,All,Old,30468,,
+Petition,,2021 Q1,All,Old,30899,,
+Petition,,2012 Q2,All,Old,30495,,
+Petition,,2011 Q1,All,Old,34655,,
+Petition,,2017 Q1,All,Old,28518,,
+Petition,,2016 Q2,All,Old,30282,,
+Petition,,2007 Q4,All,Old,26836,,
+Petition,,2003 Q4,All,Old,40815,,
+Petition,,2018 Q1,All,Old,27406,,
+Petition,,2017 Q2,All,Old,27094,,
+Petition,,2014 Q2,All,Old,27595,,
+Petition,,2020 Q2,All,Old,24057,,
+Petition,,2006 Q4,All,Old,35301,,
+Petition,,2004 Q1,All,Old,44819,,
+Petition,,2009 Q2,All,Old,32497,,
+Petition,,2016 Q1,All,Old,29019,,
+Petition,,2020 Q3,All,Old,28815,,
+Petition,,2012 Q1,All,Old,33688,,
+Petition,,2024 Q1,All,New,29797,,
+Petition,,2025 Q2,All,New,27614,,
+Petition,,2022 Q2,All,New,35097,,
+Petition,,2025 Q4,All,New,23901,,
+Petition,,2023 Q1,All,New,31431,,
+Petition,,2025 Q1,All,New,30171,,
+Petition,,2014 Q3,All,Old,29131,,
+Petition,,2008 Q3,All,Old,32461,,
+Petition,,2006 Q1,All,Old,38167,,
+Petition,,2011 Q4,All,Old,30604,,
+Petition,,2003 Q2,All,Old,41501,,
+Petition,,2013 Q1,All,Old,30890,,
+Petition,,2017 Q3,All,Old,27874,,
+Petition,,2021 Q3,All,Old,26851,,
+Petition,,2014 Q4,All,Old,27301,,
+Petition,,2006 Q2,All,Old,36252,,
+Petition,,2006 Q3,All,Old,37045,,
+Petition,,2020 Q1,All,Old,29684,,
+Petition,,2022 Q1,All,Old,30281,,
+Petition,,2015 Q2,All,Old,28080,,
+Petition,,2007 Q1,All,Old,37951,,
+Petition,,2012 Q4,All,Old,29163,,
+Petition,,2022 Q2,All,Old,332,,
+Petition,,2023 Q2,All,New,28222,,
+Petition,,2023 Q3,All,New,28765,,
+Petition,,2016 Q4,All,Old,27209,,
+Petition,,2015 Q1,All,Old,28589,,
+Petition,,2009 Q1,All,Old,32579,,
+Petition,,2020 Q4,All,Old,30514,,
+Petition,,2009 Q4,All,Old,32418,,
+Petition,,2009 Q3,All,Old,34402,,
+Petition,,2013 Q4,All,Old,26141,,
+Petition,,2004 Q4,All,Old,38432,,
+Petition,,2015 Q3,All,Old,28357,,
+Petition,,2018 Q4,All,Old,28398,,
+Petition,,2019 Q4,All,Old,27521,,
+Petition,,2017 Q4,All,Old,25780,,
+Petition,,2005 Q3,All,Old,37937,,
+Petition,,2018 Q2,All,Old,32205,,
+Petition,,2004 Q2,All,Old,40464,,
+Petition,,2019 Q2,All,Old,28295,,
+Petition,,2003 Q1,All,Old,45536,,
+Petition,,2019 Q1,All,Old,30344,,
+Petition,,2016 Q3,All,Old,27529,,
+Petition,,2008 Q4,All,Old,29920,,
+Petition,,2010 Q2,All,Old,33380,,
+Petition,,2008 Q2,All,Old,33376,,
+Petition,,2010 Q4,All,Old,30669,,
+Petition,,2024 Q3,All,New,28066,,
+Petition,,2022 Q3,All,New,31026,,
+Petition,,2003 Q3,All,Old,42889,,
+Petition,,2011 Q3,All,Old,34516,,
+Petition,,2005 Q2,All,Old,38927,,
+Petition,,2010 Q1,All,Old,34525,,
+Petition,,2021 Q4,All,Old,23151,,
+Petition,,2007 Q2,All,Old,35365,,
+Petition,,2005 Q1,All,Old,37385,,
+Petition,,2012 Q3,All,Old,31049,,
+Petition,,2005 Q4,All,Old,35572,,
+Petition,,2013 Q3,All,Old,28429,,
+Petition,,2007 Q3,All,Old,35701,,
+Petition,,2015 Q4,All,Old,29478,,
+Petition,,2004 Q3,All,Old,41418,,
+Petition,,2010 Q3,All,Old,34694,,
+Petition,,2018 Q3,All,Old,30337,,
+Petition,,2011 Q2,All,Old,29483,,
+Petition,,2014 Q1,All,Old,28532,,
+Petition,,2008 Q1,All,Old,32814,,
+Petition,,2013 Q2,All,Old,32023,,
+Petition,,2025 Q3,All,New,27498,,
+Petition,,2024 Q4,All,New,25111,,
+Petition,,2024 Q2,All,New,27454,,
+Petition,,2023 Q4,All,New,24655,,
+Petition,,2022 Q4,All,New,25748,,
+Decree Absolute,2003,,All,All,152236,42.541,31
+Decree Absolute,2006,,All,All,132310,45.727,31.571
+Decree Absolute,2014,,All,All,111800,49.227,30
+Decree Absolute,2023,,All,All,103475,64.284,39.143
+Decree Absolute,2017,,All,All,102801,49.981,30.714
+Decree Absolute,2016,,All,All,108255,50.05,30.429
+Decree Absolute,2010,,All,All,120833,48.193,31.571
+Decree Absolute,2008,,All,All,122259,47.561,32.429
+Decree Absolute,2009,,All,All,115015,48.004,32
+Decree Absolute,2005,,All,All,141401,45.104,31.286
+Decree Absolute,2015,,All,All,102154,49.106,29
+Decree Absolute,2021,,All,All,113841,51.439,29.286
+Decree Absolute,2020,,All,All,103975,50.874,34.429
+Decree Absolute,2012,,All,All,120516,48.961,31.286
+Decree Absolute,2025,,All,All,105704,68.552,42
+Decree Absolute,2024,,All,All,105438,65.643,41.571
+Decree Absolute,2004,,All,All,152595,43.922,31
+Decree Absolute,2007,,All,All,128679,46.122,31.429
+Decree Absolute,2011,,All,All,119488,48.624,32.143
+Decree Absolute,2022,,All,All,80417,60.548,35.429
+Decree Absolute,2018,,All,All,91983,55.118,35.143
+Decree Absolute,2019,,All,All,107308,56.581,39.571
+Decree Absolute,2013,,All,All,114867,49.937,31
+Petition,2013,,All,Old,117483,,
+Petition,2004,,All,Old,165133,,
+Petition,2018,,All,Old,118346,,
+Petition,2024,,All,New,110428,,
+Petition,2003,,All,Old,170741,,
+Petition,2019,,All,Old,116628,,
+Petition,2011,,All,Old,129258,,
+Petition,2005,,All,Old,149821,,
+Petition,2020,,All,Old,113070,,
+Petition,2025,,All,New,109184,,
+Petition,2022,,All,New,91871,,
+Petition,2015,,All,Old,114504,,
+Petition,2009,,All,Old,131896,,
+Petition,2014,,All,Old,112559,,
+Petition,2012,,All,Old,124395,,
+Petition,2017,,All,Old,109266,,
+Petition,2010,,All,Old,133268,,
+Petition,2006,,All,Old,146765,,
+Petition,2016,,All,Old,114039,,
+Petition,2021,,All,Old,108532,,
+Petition,2008,,All,Old,128571,,
+Petition,2007,,All,Old,135853,,
+Petition,2022,,All,Old,30613,,
+Petition,2023,,All,New,113073,,
+Decree Nisi,2010,,Paper,Old,125277,25.503,16.857
+Decree Nisi,2023,,Paper,Old,7146,139.79,113.714
+Decree Nisi,2019,,Digital,Old,2857,11.464,11.286
+Decree Nisi,2023,,Digital,Old,2618,83.676,76.286
+Decree Nisi,2004,,Paper,Old,154305,24.631,16.857
+Decree Nisi,2015,,Paper,Old,99082,24.641,16.143
+Decree Nisi,2021,,Digital,Old,76050,12.155,8.571
+Decree Nisi,2018,,Paper,Old,91991,29.733,22.286
+Decree Nisi,2023,,Digital,New,91599,30.557,28
+Decree Nisi,2025,,Paper,New,3969,49.009,37.857
+Decree Nisi,2019,,Paper,Old,112383,32.054,24.857
+Decree Nisi,2003,,Paper,Old,156210,24.718,17.143
+Decree Nisi,2009,,Paper,Old,119347,24.927,16.714
+Decree Nisi,2017,,Paper,Old,103120,24.834,16.571
+Decree Nisi,2022,,Paper,Old,17867,78.628,57
+Decree Nisi,2025,,Paper,Old,1443,310.967,272.429
+Decree Nisi,2025,,Digital,Old,423,204.991,199
+Decree Nisi,2008,,Paper,Old,120537,24.759,16.143
+Decree Nisi,2024,,Digital,New,97889,34.043,28.857
+Decree Nisi,2022,,Digital,New,21381,27.46,27
+Decree Nisi,2022,,Paper,New,125,32.44,32.429
+Decree Nisi,2020,,Digital,Old,48293,10.255,8.571
+Decree Nisi,2005,,Paper,Old,141803,24.432,16.286
+Decree Nisi,2007,,Paper,Old,133113,25.077,16.857
+Decree Nisi,2006,,Paper,Old,134705,24.584,16.571
+Decree Nisi,2016,,Paper,Old,114123,25.466,17.714
+Decree Nisi,2011,,Paper,Old,122234,25.271,16.714
+Decree Nisi,2021,,Paper,Old,38027,50.959,34.857
+Decree Nisi,2012,,Paper,Old,122337,24.539,15.857
+Decree Nisi,2020,,Paper,Old,58356,41.898,30.571
+Decree Nisi,2022,,Digital,Old,40861,20.107,14.857
+Decree Nisi,2024,,Digital,Old,1048,145.011,136.357
+Decree Nisi,2024,,Paper,Old,2731,225.059,188
+Decree Nisi,2024,,Paper,New,5356,43.248,36.714
+Decree Nisi,2025,,Digital,New,111852,36.414,30.143
+Decree Nisi,2023,,Paper,New,3579,39.737,36.714
+Decree Nisi,2014,,Paper,Old,109656,23.887,15.143
+Decree Nisi,2013,,Paper,Old,113286,24.51,15.571
+Petition,,2016 Q4,Paper,Old,27209,,
+Petition,,2019 Q3,Paper,Old,27321,,
+Petition,,2009 Q1,Paper,Old,32579,,
+Petition,,2011 Q1,Paper,Old,34655,,
+Petition,,2009 Q3,Paper,Old,34402,,
+Petition,,2007 Q4,Paper,Old,26836,,
+Petition,,2007 Q2,Paper,Old,35365,,
+Petition,,2006 Q1,Paper,Old,38167,,
+Petition,,2015 Q3,Paper,Old,28357,,
+Petition,,2017 Q2,Paper,Old,27094,,
+Petition,,2021 Q3,Digital,Old,21207,,
+Petition,,2010 Q3,Paper,Old,34694,,
+Petition,,2006 Q4,Paper,Old,35301,,
+Petition,,2019 Q2,Paper,Old,28295,,
+Petition,,2014 Q4,Paper,Old,27301,,
+Petition,,2003 Q1,Paper,Old,45536,,
+Petition,,2019 Q1,Paper,Old,30344,,
+Petition,,2018 Q3,Paper,Old,30337,,
+Petition,,2006 Q3,Paper,Old,37045,,
+Petition,,2020 Q3,Digital,Old,17844,,
+Petition,,2020 Q2,Paper,Old,10541,,
+Petition,,2020 Q4,Paper,Old,12915,,
+Petition,,2019 Q3,Digital,Old,3147,,
+Petition,,2022 Q1,Paper,Old,3750,,
+Petition,,2023 Q2,Paper,New,1512,,
+Petition,,2024 Q4,Digital,New,24391,,
+Petition,,2022 Q4,Digital,New,24567,,
+Petition,,2022 Q2,Paper,Old,139,,
+Petition,,2025 Q1,Digital,New,29345,,
+Petition,,2023 Q1,Paper,New,1451,,
+Petition,,2015 Q1,Paper,Old,28589,,
+Petition,,2003 Q3,Paper,Old,42889,,
+Petition,,2005 Q2,Paper,Old,38927,,
+Petition,,2014 Q3,Paper,Old,29131,,
+Petition,,2016 Q2,Paper,Old,30282,,
+Petition,,2013 Q4,Paper,Old,26141,,
+Petition,,2018 Q4,Paper,Old,28398,,
+Petition,,2003 Q2,Paper,Old,41501,,
+Petition,,2007 Q3,Paper,Old,35701,,
+Petition,,2013 Q1,Paper,Old,30890,,
+Petition,,2018 Q2,Paper,Old,32205,,
+Petition,,2016 Q3,Paper,Old,27529,,
+Petition,,2004 Q1,Paper,Old,44819,,
+Petition,,2015 Q2,Paper,Old,28080,,
+Petition,,2008 Q2,Paper,Old,33376,,
+Petition,,2016 Q1,Paper,Old,29019,,
+Petition,,2010 Q4,Paper,Old,30669,,
+Petition,,2021 Q1,Paper,Old,9620,,
+Petition,,2025 Q3,Digital,New,26645,,
+Petition,,2024 Q1,Digital,New,28289,,
+Petition,,2025 Q2,Digital,New,26745,,
+Petition,,2022 Q2,Digital,New,33976,,
+Petition,,2025 Q4,Digital,New,23291,,
+Petition,,2022 Q3,Digital,New,29634,,
+Petition,,2023 Q2,Digital,New,26710,,
+Petition,,2025 Q2,Paper,New,869,,
+Petition,,2022 Q2,Paper,New,1121,,
+Petition,,2024 Q2,Paper,New,1047,,
+Petition,,2011 Q3,Paper,Old,34516,,
+Petition,,2012 Q2,Paper,Old,30495,,
+Petition,,2020 Q4,Digital,Old,17599,,
+Petition,,2017 Q1,Paper,Old,28518,,
+Petition,,2021 Q4,Digital,Old,19547,,
+Petition,,2005 Q1,Paper,Old,37385,,
+Petition,,2003 Q4,Paper,Old,40815,,
+Petition,,2019 Q4,Paper,Old,18228,,
+Petition,,2014 Q2,Paper,Old,27595,,
+Petition,,2012 Q3,Paper,Old,31049,,
+Petition,,2013 Q3,Paper,Old,28429,,
+Petition,,2017 Q4,Paper,Old,25780,,
+Petition,,2005 Q3,Paper,Old,37937,,
+Petition,,2004 Q3,Paper,Old,41418,,
+Petition,,2008 Q4,Paper,Old,29920,,
+Petition,,2011 Q2,Paper,Old,29483,,
+Petition,,2022 Q1,Digital,Old,26531,,
+Petition,,2012 Q1,Paper,Old,33688,,
+Petition,,2021 Q3,Paper,Old,5644,,
+Petition,,2021 Q4,Paper,Old,3604,,
+Petition,,2022 Q2,Digital,Old,193,,
+Petition,,2024 Q3,Digital,New,27207,,
+Petition,,2023 Q4,Paper,New,1347,,
+Petition,,2022 Q3,Paper,New,1392,,
+Petition,,2024 Q1,Paper,New,1508,,
+Petition,,2022 Q4,Paper,New,1181,,
+Petition,,2021 Q2,Digital,Old,19842,,
+Petition,,2021 Q1,Digital,Old,21279,,
+Petition,,2009 Q4,Paper,Old,32418,,
+Petition,,2010 Q1,Paper,Old,34525,,
+Petition,,2021 Q2,Paper,Old,7789,,
+Petition,,2008 Q3,Paper,Old,32461,,
+Petition,,2004 Q4,Paper,Old,38432,,
+Petition,,2011 Q4,Paper,Old,30604,,
+Petition,,2018 Q1,Paper,Old,27406,,
+Petition,,2005 Q4,Paper,Old,35572,,
+Petition,,2020 Q2,Digital,Old,13516,,
+Petition,,2015 Q4,Paper,Old,29478,,
+Petition,,2004 Q2,Paper,Old,40464,,
+Petition,,2017 Q3,Paper,Old,27874,,
+Petition,,2006 Q2,Paper,Old,36252,,
+Petition,,2020 Q1,Digital,Old,12226,,
+Petition,,2014 Q1,Paper,Old,28532,,
+Petition,,2010 Q2,Paper,Old,33380,,
+Petition,,2007 Q1,Paper,Old,37951,,
+Petition,,2019 Q4,Digital,Old,9293,,
+Petition,,2009 Q2,Paper,Old,32497,,
+Petition,,2020 Q1,Paper,Old,17458,,
+Petition,,2008 Q1,Paper,Old,32814,,
+Petition,,2012 Q4,Paper,Old,29163,,
+Petition,,2013 Q2,Paper,Old,32023,,
+Petition,,2020 Q3,Paper,Old,10971,,
+Petition,,2024 Q2,Digital,New,26407,,
+Petition,,2025 Q3,Paper,New,853,,
+Petition,,2023 Q4,Digital,New,23308,,
+Petition,,2023 Q1,Digital,New,29980,,
+Petition,,2025 Q1,Paper,New,826,,
+Petition,,2023 Q3,Digital,New,27280,,
+Petition,,2023 Q3,Paper,New,1485,,
+Petition,,2025 Q4,Paper,New,610,,
+Petition,,2024 Q3,Paper,New,859,,
+Petition,,2024 Q4,Paper,New,720,,
+Decree Nisi,,2008 Q4,Paper,Old,28214,24.284,16
+Decree Nisi,,2010 Q2,Paper,Old,29750,25.265,16.429
+Decree Nisi,,2005 Q4,Paper,Old,32318,24.22,16
+Decree Nisi,,2020 Q4,Digital,Old,13312,11.958,9.857
+Decree Nisi,,2020 Q1,Paper,Old,21750,37.669,26.857
+Decree Nisi,,2004 Q4,Paper,Old,35120,24.476,16.429
+Decree Nisi,,2021 Q1,Paper,Old,13733,46.145,32.857
+Decree Nisi,,2014 Q3,Paper,Old,28150,23.533,15.143
+Decree Nisi,,2008 Q2,Paper,Old,29643,24.382,15.143
+Decree Nisi,,2009 Q1,Paper,Old,28018,25.326,17.143
+Decree Nisi,,2017 Q4,Paper,Old,24364,25.507,17.429
+Decree Nisi,,2019 Q4,Paper,Old,27238,30.186,21.857
+Decree Nisi,,2014 Q2,Paper,Old,27195,24.046,14.857
+Decree Nisi,,2010 Q4,Paper,Old,31092,24.539,16.571
+Decree Nisi,,2022 Q4,Digital,Old,1744,50.865,43.143
+Decree Nisi,,2023 Q1,Paper,Old,2814,115.39,91.429
+Decree Nisi,,2025 Q3,Digital,Old,112,216.404,210.143
+Decree Nisi,,2024 Q4,Digital,New,14144,35.717,30.714
+Decree Nisi,,2024 Q2,Digital,New,26741,33.977,27.571
+Decree Nisi,,2025 Q1,Digital,New,25306,37.863,32.286
+Decree Nisi,,2023 Q1,Digital,New,28869,29.508,28
+Decree Nisi,,2017 Q2,Paper,Old,25699,24.058,15.286
+Decree Nisi,,2020 Q3,Paper,Old,12686,46.543,35
+Decree Nisi,,2006 Q3,Paper,Old,33533,24.705,16.714
+Decree Nisi,,2013 Q4,Paper,Old,27463,24.156,15.857
+Decree Nisi,,2020 Q4,Paper,Old,13761,46.675,34.857
+Decree Nisi,,2012 Q1,Paper,Old,31184,25.375,16.857
+Decree Nisi,,2015 Q2,Paper,Old,25709,23.713,14.429
+Decree Nisi,,2015 Q1,Paper,Old,27449,23.479,15.429
+Decree Nisi,,2015 Q3,Paper,Old,24354,24.622,16.143
+Decree Nisi,,2004 Q2,Paper,Old,38980,24.625,16.286
+Decree Nisi,,2023 Q3,Paper,Old,1555,158.837,132.714
+Decree Nisi,,2023 Q4,Paper,Old,980,183.816,151.071
+Decree Nisi,,2024 Q1,Digital,Old,419,129.363,118.429
+Decree Nisi,,2023 Q1,Paper,New,750,35.698,35
+Decree Nisi,,2022 Q4,Paper,New,125,32.44,32.429
+Decree Nisi,,2025 Q4,Paper,New,963,48.102,34.714
+Decree Nisi,,2020 Q2,Digital,Old,10544,8.454,7.143
+Decree Nisi,,2007 Q2,Paper,Old,32412,25.124,16.714
+Decree Nisi,,2014 Q1,Paper,Old,27110,24.924,16.286
+Decree Nisi,,2009 Q3,Paper,Old,32476,24.657,16.571
+Decree Nisi,,2012 Q2,Paper,Old,30791,24.66,15.571
+Decree Nisi,,2004 Q1,Paper,Old,39634,24.851,17.286
+Decree Nisi,,2019 Q1,Paper,Old,25649,34.122,26.143
+Decree Nisi,,2018 Q3,Paper,Old,22532,31.347,24
+Decree Nisi,,2012 Q4,Paper,Old,29260,23.952,15
+Decree Nisi,,2013 Q3,Paper,Old,28958,25.909,15.714
+Decree Nisi,,2012 Q3,Paper,Old,31102,24.133,15.714
+Decree Nisi,,2014 Q4,Paper,Old,27201,23.061,14.571
+Decree Nisi,,2021 Q3,Digital,Old,16950,12.252,8.286
+Decree Nisi,,2018 Q2,Paper,Old,21633,28.986,21
+Decree Nisi,,2022 Q2,Paper,Old,5447,76.855,55.286
+Decree Nisi,,2011 Q3,Paper,Old,31448,25.354,17
+Decree Nisi,,2024 Q3,Paper,Old,507,236.399,198.571
+Decree Nisi,,2025 Q4,Paper,Old,361,334.987,307.143
+Decree Nisi,,2023 Q1,Digital,Old,1158,68.578,59.857
+Decree Nisi,,2024 Q2,Digital,Old,291,143.858,133.714
+Decree Nisi,,2025 Q4,Digital,New,28978,35.329,27.857
+Decree Nisi,,2022 Q4,Digital,New,20735,27.55,27
+Decree Nisi,,2024 Q1,Paper,New,1597,43.801,38.857
+Decree Nisi,,2023 Q4,Digital,New,20080,33.961,29.857
+Decree Nisi,,2025 Q1,Paper,New,1109,49.153,41
+Decree Nisi,,2022 Q3,Digital,New,646,24.566,24.143
+Decree Nisi,,2023 Q3,Paper,New,928,40.502,38.357
+Decree Nisi,,2023 Q4,Paper,New,1074,43.344,38.429
+Decree Nisi,,2025 Q3,Paper,New,834,50.28,37
+Decree Nisi,,2003 Q4,Paper,Old,37956,24.519,16.857
+Decree Nisi,,2007 Q4,Paper,Old,31867,25.211,16.857
+Decree Nisi,,2006 Q2,Paper,Old,33087,24.676,16.143
+Decree Nisi,,2007 Q3,Paper,Old,33869,25.16,17
+Decree Nisi,,2013 Q1,Paper,Old,27802,24.002,15.857
+Decree Nisi,,2011 Q2,Paper,Old,29161,25.106,16.143
+Decree Nisi,,2016 Q1,Paper,Old,32025,24.717,18.714
+Decree Nisi,,2021 Q2,Paper,Old,10464,48.643,32.286
+Decree Nisi,,2003 Q1,Paper,Old,39082,24.865,17.714
+Decree Nisi,,2007 Q1,Paper,Old,34965,24.831,17
+Decree Nisi,,2013 Q2,Paper,Old,29063,23.935,15
+Decree Nisi,,2021 Q4,Digital,Old,19731,12.534,8.143
+Decree Nisi,,2010 Q1,Paper,Old,30811,25.214,17.143
+Decree Nisi,,2017 Q1,Paper,Old,28802,24.729,16.714
+Decree Nisi,,2011 Q4,Paper,Old,31259,25.146,16.143
+Decree Nisi,,2008 Q1,Paper,Old,31114,25.687,17.571
+Decree Nisi,,2006 Q1,Paper,Old,34915,24.495,16.714
+Decree Nisi,,2020 Q2,Paper,Old,10159,38.681,27.714
+Decree Nisi,,2022 Q1,Digital,Old,17026,14.224,9.714
+Decree Nisi,,2003 Q3,Paper,Old,40092,24.772,17.429
+Decree Nisi,,2021 Q1,Digital,Old,19259,11.961,9.429
+Decree Nisi,,2018 Q1,Paper,Old,23205,27.269,19.286
+Decree Nisi,,2021 Q3,Paper,Old,7216,54.128,37
+Decree Nisi,,2005 Q3,Paper,Old,36145,24.208,16
+Decree Nisi,,2022 Q4,Paper,Old,3404,94.075,72.429
+Decree Nisi,,2025 Q2,Paper,Old,365,311.672,273.857
+Decree Nisi,,2024 Q2,Paper,Old,712,224.094,189.929
+Decree Nisi,,2023 Q2,Digital,Old,775,85.516,75.714
+Decree Nisi,,2023 Q4,Digital,Old,284,116.164,107.571
+Decree Nisi,,2024 Q4,Digital,Old,161,174.116,167.429
+Decree Nisi,,2025 Q1,Digital,Old,125,188.305,181.857
+Decree Nisi,,2024 Q1,Digital,New,30478,34.641,30.143
+Decree Nisi,,2025 Q4,Digital,Old,84,223.219,211.929
+Decree Nisi,,2024 Q2,Paper,New,1606,42.217,35.571
+Decree Nisi,,2023 Q2,Paper,New,827,37.859,35.714
+Decree Nisi,,2024 Q4,Paper,New,849,44.579,36.714
+Decree Nisi,,2019 Q2,Paper,Old,26408,33.518,27.286
+Decree Nisi,,2009 Q2,Paper,Old,28073,25.405,16.714
+Decree Nisi,,2010 Q3,Paper,Old,33624,26.868,17
+Decree Nisi,,2016 Q4,Paper,Old,26228,27.971,18.286
+Decree Nisi,,2016 Q2,Paper,Old,28290,24.979,17
+Decree Nisi,,2003 Q2,Paper,Old,39080,24.71,16.857
+Decree Nisi,,2017 Q3,Paper,Old,24255,25.104,16.571
+Decree Nisi,,2016 Q3,Paper,Old,27580,24.455,16.571
+Decree Nisi,,2009 Q4,Paper,Old,30780,24.411,16.286
+Decree Nisi,,2022 Q2,Digital,Old,12380,17.963,13.857
+Decree Nisi,,2004 Q3,Paper,Old,40571,24.556,16.714
+Decree Nisi,,2005 Q2,Paper,Old,36341,24.561,16
+Decree Nisi,,2022 Q1,Paper,Old,4892,65.97,44.286
+Decree Nisi,,2015 Q4,Paper,Old,21570,27.248,18.857
+Decree Nisi,,2006 Q4,Paper,Old,33170,24.464,16.286
+Decree Nisi,,2020 Q1,Digital,Old,12220,10.63,9.857
+Decree Nisi,,2005 Q1,Paper,Old,36999,24.71,17
+Decree Nisi,,2018 Q4,Paper,Old,24621,31.237,23.857
+Decree Nisi,,2019 Q3,Paper,Old,33088,30.82,23.571
+Decree Nisi,,2011 Q1,Paper,Old,30366,25.473,17.143
+Decree Nisi,,2020 Q3,Digital,Old,12217,9.58,7.714
+Decree Nisi,,2008 Q3,Paper,Old,31566,24.624,15.857
+Decree Nisi,,2021 Q2,Digital,Old,20110,11.886,8.143
+Decree Nisi,,2022 Q3,Digital,Old,9711,27.63,22
+Decree Nisi,,2021 Q4,Paper,Old,6614,61.159,42.571
+Decree Nisi,,2023 Q2,Paper,Old,1797,137.508,111.571
+Decree Nisi,,2024 Q4,Paper,Old,526,259.005,215
+Decree Nisi,,2019 Q4,Digital,Old,2857,11.464,11.286
+Decree Nisi,,2022 Q3,Paper,Old,4124,83.236,61.714
+Decree Nisi,,2023 Q3,Digital,Old,401,100.709,89.286
+Decree Nisi,,2024 Q1,Paper,Old,986,201.817,168.571
+Decree Nisi,,2024 Q3,Digital,Old,177,157.478,144.286
+Decree Nisi,,2025 Q1,Paper,Old,335,282.678,239.143
+Decree Nisi,,2025 Q3,Paper,Old,382,312.403,269.429
+Decree Nisi,,2024 Q3,Paper,New,1304,42.972,34.143
+Decree Nisi,,2025 Q2,Digital,New,29320,36.831,30.286
+Decree Nisi,,2024 Q3,Digital,New,26526,32.528,25.857
+Decree Nisi,,2023 Q3,Digital,New,20020,30.701,26.857
+Decree Nisi,,2023 Q2,Digital,New,22630,28.749,26
+Decree Nisi,,2025 Q3,Digital,New,28248,35.795,28.143
+Decree Nisi,,2025 Q2,Paper,New,1063,48.683,38.857
+Decree Nisi,,2025 Q2,Digital,Old,102,197.895,186.714
+Decree Nisi,2020,,All,All,106649,27.569,18.857
+Decree Nisi,2007,,All,All,133113,25.077,16.857
+Decree Nisi,2011,,All,All,122234,25.271,16.714
+Decree Nisi,2004,,All,All,154305,24.631,16.857
+Decree Nisi,2018,,All,All,91991,29.733,22.286
+Decree Nisi,2003,,All,All,156210,24.718,17.143
+Decree Nisi,2009,,All,All,119347,24.927,16.714
+Decree Nisi,2016,,All,All,114123,25.466,17.714
+Decree Nisi,2017,,All,All,103120,24.834,16.571
+Decree Nisi,2021,,All,All,114077,25.09,13.286
+Decree Nisi,2015,,All,All,99082,24.641,16.143
+Decree Nisi,2010,,All,All,125277,25.503,16.857
+Decree Nisi,2005,,All,All,141803,24.432,16.286
+Decree Nisi,2013,,All,All,113286,24.51,15.571
+Decree Nisi,2012,,All,All,122337,24.539,15.857
+Decree Nisi,2022,,All,All,80234,35.118,26.143
+Decree Nisi,2024,,All,All,107024,40.464,29.286
+Decree Nisi,2019,,All,All,115240,31.544,24.429
+Decree Nisi,2008,,All,All,120537,24.759,16.143
+Decree Nisi,2006,,All,All,134705,24.584,16.571
+Decree Nisi,2014,,All,All,109656,23.887,15.143
+Decree Nisi,2025,,All,All,117687,40.811,30.286
+Decree Nisi,2023,,All,All,104942,39.634,28.857

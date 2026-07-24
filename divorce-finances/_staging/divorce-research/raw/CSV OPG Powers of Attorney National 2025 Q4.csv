@@ -1,0 +1,1269 @@
+Category,Type,Year,Quarter,Count
+Application Type,EPA,2008,Q1,5364
+Application Type,EPA,2008,Q2,5830
+Application Type,EPA,2008,Q3,5751
+Application Type,EPA,2008,Q4,4847
+Application Type,EPA,2009,Q1,3829
+Application Type,EPA,2009,Q2,5775
+Application Type,EPA,2009,Q3,4988
+Application Type,EPA,2009,Q4,4692
+Application Type,EPA,2010,Q1,4519
+Application Type,EPA,2010,Q2,5122
+Application Type,EPA,2010,Q3,4873
+Application Type,EPA,2010,Q4,4344
+Application Type,EPA,2011,Q1,4524
+Application Type,EPA,2011,Q2,4364
+Application Type,EPA,2011,Q3,3979
+Application Type,EPA,2011,Q4,3520
+Application Type,EPA,2012,Q1,4581
+Application Type,EPA,2012,Q2,4421
+Application Type,EPA,2012,Q3,3954
+Application Type,EPA,2012,Q4,4390
+Application Type,EPA,2013,Q1,3936
+Application Type,EPA,2013,Q2,4230
+Application Type,EPA,2013,Q3,3787
+Application Type,EPA,2013,Q4,3530
+Application Type,EPA,2014,Q1,3756
+Application Type,EPA,2014,Q2,3521
+Application Type,EPA,2014,Q3,3464
+Application Type,EPA,2014,Q4,3865
+Application Type,EPA,2015,Q1,3477
+Application Type,EPA,2015,Q2,3741
+Application Type,EPA,2015,Q3,3273
+Application Type,EPA,2015,Q4,2927
+Application Type,EPA,2016,Q1,3177
+Application Type,EPA,2016,Q2,3035
+Application Type,EPA,2016,Q3,3078
+Application Type,EPA,2016,Q4,2900
+Application Type,EPA,2017,Q1,3131
+Application Type,EPA,2017,Q2,2953
+Application Type,EPA,2017,Q3,2822
+Application Type,EPA,2017,Q4,2381
+Application Type,EPA,2018,Q1,2647
+Application Type,EPA,2018,Q2,2712
+Application Type,EPA,2018,Q3,2446
+Application Type,EPA,2018,Q4,2233
+Application Type,EPA,2019,Q1,2233
+Application Type,EPA,2019,Q2,2223
+Application Type,EPA,2019,Q3,2183
+Application Type,EPA,2019,Q4,1983
+Application Type,EPA,2020,Q1,1920
+Application Type,EPA,2020,Q2,1637
+Application Type,EPA,2020,Q3,1613
+Application Type,EPA,2020,Q4,1851
+Application Type,EPA,2021,Q1,1981
+Application Type,EPA,2021,Q2,1809
+Application Type,EPA,2021,Q3,1822
+Application Type,EPA,2021,Q4,1185
+Application Type,EPA,2022,Q1,1458
+Application Type,EPA,2022,Q2,1840
+Application Type,EPA,2022,Q3,1501
+Application Type,EPA,2022,Q4,1689
+Application Type,EPA,2023,Q1,1480
+Application Type,EPA,2023,Q2,1839
+Application Type,EPA,2023,Q3,1508
+Application Type,EPA,2023,Q4,1234
+Application Type,EPA,2024,Q1,1585
+Application Type,EPA,2024,Q2,1394
+Application Type,EPA,2024,Q3,1299
+Application Type,EPA,2024,Q4,1198
+Application Type,EPA,2025,Q1,1199
+Application Type,EPA,2025,Q2,1111
+Application Type,EPA,2025,Q3,1035
+Application Type,EPA,2025,Q4,1064
+Application Type,LPA,2008,Q1,1084
+Application Type,LPA,2008,Q2,3876
+Application Type,LPA,2008,Q3,13709
+Application Type,LPA,2008,Q4,17536
+Application Type,LPA,2009,Q1,14317
+Application Type,LPA,2009,Q2,20502
+Application Type,LPA,2009,Q3,22206
+Application Type,LPA,2009,Q4,20494
+Application Type,LPA,2010,Q1,21802
+Application Type,LPA,2010,Q2,38755
+Application Type,LPA,2010,Q3,35595
+Application Type,LPA,2010,Q4,32595
+Application Type,LPA,2011,Q1,45378
+Application Type,LPA,2011,Q2,36543
+Application Type,LPA,2011,Q3,49635
+Application Type,LPA,2011,Q4,45481
+Application Type,LPA,2012,Q1,50836
+Application Type,LPA,2012,Q2,50671
+Application Type,LPA,2012,Q3,61410
+Application Type,LPA,2012,Q4,61506
+Application Type,LPA,2013,Q1,55272
+Application Type,LPA,2013,Q2,70957
+Application Type,LPA,2013,Q3,69202
+Application Type,LPA,2013,Q4,62534
+Application Type,LPA,2014,Q1,57627
+Application Type,LPA,2014,Q2,71340
+Application Type,LPA,2014,Q3,116798
+Application Type,LPA,2014,Q4,106390
+Application Type,LPA,2015,Q1,100751
+Application Type,LPA,2015,Q2,120974
+Application Type,LPA,2015,Q3,112875
+Application Type,LPA,2015,Q4,110145
+Application Type,LPA,2016,Q1,127276
+Application Type,LPA,2016,Q2,135062
+Application Type,LPA,2016,Q3,171446
+Application Type,LPA,2016,Q4,165516
+Application Type,LPA,2017,Q1,162414
+Application Type,LPA,2017,Q2,161452
+Application Type,LPA,2017,Q3,177912
+Application Type,LPA,2017,Q4,182840
+Application Type,LPA,2018,Q1,177575
+Application Type,LPA,2018,Q2,180983
+Application Type,LPA,2018,Q3,192858
+Application Type,LPA,2018,Q4,176043
+Application Type,LPA,2019,Q1,192732
+Application Type,LPA,2019,Q2,205195
+Application Type,LPA,2019,Q3,227789
+Application Type,LPA,2019,Q4,208443
+Application Type,LPA,2020,Q1,224830
+Application Type,LPA,2020,Q2,99861
+Application Type,LPA,2020,Q3,162922
+Application Type,LPA,2020,Q4,183126
+Application Type,LPA,2021,Q1,190590
+Application Type,LPA,2021,Q2,160199
+Application Type,LPA,2021,Q3,169329
+Application Type,LPA,2021,Q4,188189
+Application Type,LPA,2022,Q1,202406
+Application Type,LPA,2022,Q2,192446
+Application Type,LPA,2022,Q3,200683
+Application Type,LPA,2022,Q4,249687
+Application Type,LPA,2023,Q1,269178
+Application Type,LPA,2023,Q2,275164
+Application Type,LPA,2023,Q3,301943
+Application Type,LPA,2023,Q4,315185
+Application Type,LPA,2024,Q1,378333
+Application Type,LPA,2024,Q2,379239
+Application Type,LPA,2024,Q3,411632
+Application Type,LPA,2024,Q4,321011
+Application Type,LPA,2025,Q1,299689
+Application Type,LPA,2025,Q2,292320
+Application Type,LPA,2025,Q3,383848
+Application Type,LPA,2025,Q4,356705
+Case Subtype,Health and Welfare,2008,Q1,190
+Case Subtype,Health and Welfare,2008,Q2,651
+Case Subtype,Health and Welfare,2008,Q3,2351
+Case Subtype,Health and Welfare,2008,Q4,3165
+Case Subtype,Health and Welfare,2009,Q1,2469
+Case Subtype,Health and Welfare,2009,Q2,3502
+Case Subtype,Health and Welfare,2009,Q3,3753
+Case Subtype,Health and Welfare,2009,Q4,3515
+Case Subtype,Health and Welfare,2010,Q1,4048
+Case Subtype,Health and Welfare,2010,Q2,7420
+Case Subtype,Health and Welfare,2010,Q3,6810
+Case Subtype,Health and Welfare,2010,Q4,6404
+Case Subtype,Health and Welfare,2011,Q1,9371
+Case Subtype,Health and Welfare,2011,Q2,7681
+Case Subtype,Health and Welfare,2011,Q3,10633
+Case Subtype,Health and Welfare,2011,Q4,10405
+Case Subtype,Health and Welfare,2012,Q1,11744
+Case Subtype,Health and Welfare,2012,Q2,12172
+Case Subtype,Health and Welfare,2012,Q3,15001
+Case Subtype,Health and Welfare,2012,Q4,15428
+Case Subtype,Health and Welfare,2013,Q1,14315
+Case Subtype,Health and Welfare,2013,Q2,18753
+Case Subtype,Health and Welfare,2013,Q3,19048
+Case Subtype,Health and Welfare,2013,Q4,18009
+Case Subtype,Health and Welfare,2014,Q1,17030
+Case Subtype,Health and Welfare,2014,Q2,21631
+Case Subtype,Health and Welfare,2014,Q3,36498
+Case Subtype,Health and Welfare,2014,Q4,35166
+Case Subtype,Health and Welfare,2015,Q1,34251
+Case Subtype,Health and Welfare,2015,Q2,40984
+Case Subtype,Health and Welfare,2015,Q3,39644
+Case Subtype,Health and Welfare,2015,Q4,39842
+Case Subtype,Health and Welfare,2016,Q1,46938
+Case Subtype,Health and Welfare,2016,Q2,50756
+Case Subtype,Health and Welfare,2016,Q3,65358
+Case Subtype,Health and Welfare,2016,Q4,64809
+Case Subtype,Health and Welfare,2017,Q1,63984
+Case Subtype,Health and Welfare,2017,Q2,64805
+Case Subtype,Health and Welfare,2017,Q3,71857
+Case Subtype,Health and Welfare,2017,Q4,75000
+Case Subtype,Health and Welfare,2018,Q1,74114
+Case Subtype,Health and Welfare,2018,Q2,75254
+Case Subtype,Health and Welfare,2018,Q3,82401
+Case Subtype,Health and Welfare,2018,Q4,75924
+Case Subtype,Health and Welfare,2019,Q1,83363
+Case Subtype,Health and Welfare,2019,Q2,89337
+Case Subtype,Health and Welfare,2019,Q3,100161
+Case Subtype,Health and Welfare,2019,Q4,92214
+Case Subtype,Health and Welfare,2020,Q1,100409
+Case Subtype,Health and Welfare,2020,Q2,44183
+Case Subtype,Health and Welfare,2020,Q3,72113
+Case Subtype,Health and Welfare,2020,Q4,81220
+Case Subtype,Health and Welfare,2021,Q1,85312
+Case Subtype,Health and Welfare,2021,Q2,71442
+Case Subtype,Health and Welfare,2021,Q3,75824
+Case Subtype,Health and Welfare,2021,Q4,84852
+Case Subtype,Health and Welfare,2022,Q1,91802
+Case Subtype,Health and Welfare,2022,Q2,87261
+Case Subtype,Health and Welfare,2022,Q3,91085
+Case Subtype,Health and Welfare,2022,Q4,114096
+Case Subtype,Health and Welfare,2023,Q1,122878
+Case Subtype,Health and Welfare,2023,Q2,126398
+Case Subtype,Health and Welfare,2023,Q3,136446
+Case Subtype,Health and Welfare,2023,Q4,144907
+Case Subtype,Health and Welfare,2024,Q1,173704
+Case Subtype,Health and Welfare,2024,Q2,173033
+Case Subtype,Health and Welfare,2024,Q3,191356
+Case Subtype,Health and Welfare,2024,Q4,149668
+Case Subtype,Health and Welfare,2025,Q1,138235
+Case Subtype,Health and Welfare,2025,Q2,133365
+Case Subtype,Health and Welfare,2025,Q3,178575
+Case Subtype,Health and Welfare,2025,Q4,166052
+Case Subtype,Property and Finance,2008,Q1,6258
+Case Subtype,Property and Finance,2008,Q2,9055
+Case Subtype,Property and Finance,2008,Q3,17109
+Case Subtype,Property and Finance,2008,Q4,19218
+Case Subtype,Property and Finance,2009,Q1,15677
+Case Subtype,Property and Finance,2009,Q2,22775
+Case Subtype,Property and Finance,2009,Q3,23441
+Case Subtype,Property and Finance,2009,Q4,21671
+Case Subtype,Property and Finance,2010,Q1,22273
+Case Subtype,Property and Finance,2010,Q2,36457
+Case Subtype,Property and Finance,2010,Q3,33658
+Case Subtype,Property and Finance,2010,Q4,30535
+Case Subtype,Property and Finance,2011,Q1,40531
+Case Subtype,Property and Finance,2011,Q2,33226
+Case Subtype,Property and Finance,2011,Q3,42981
+Case Subtype,Property and Finance,2011,Q4,38596
+Case Subtype,Property and Finance,2012,Q1,43673
+Case Subtype,Property and Finance,2012,Q2,42920
+Case Subtype,Property and Finance,2012,Q3,50363
+Case Subtype,Property and Finance,2012,Q4,50468
+Case Subtype,Property and Finance,2013,Q1,44893
+Case Subtype,Property and Finance,2013,Q2,56434
+Case Subtype,Property and Finance,2013,Q3,53941
+Case Subtype,Property and Finance,2013,Q4,48055
+Case Subtype,Property and Finance,2014,Q1,44353
+Case Subtype,Property and Finance,2014,Q2,53230
+Case Subtype,Property and Finance,2014,Q3,83764
+Case Subtype,Property and Finance,2014,Q4,75089
+Case Subtype,Property and Finance,2015,Q1,69977
+Case Subtype,Property and Finance,2015,Q2,83731
+Case Subtype,Property and Finance,2015,Q3,76504
+Case Subtype,Property and Finance,2015,Q4,73230
+Case Subtype,Property and Finance,2016,Q1,83515
+Case Subtype,Property and Finance,2016,Q2,87341
+Case Subtype,Property and Finance,2016,Q3,109166
+Case Subtype,Property and Finance,2016,Q4,103607
+Case Subtype,Property and Finance,2017,Q1,101561
+Case Subtype,Property and Finance,2017,Q2,99600
+Case Subtype,Property and Finance,2017,Q3,108877
+Case Subtype,Property and Finance,2017,Q4,110221
+Case Subtype,Property and Finance,2018,Q1,106108
+Case Subtype,Property and Finance,2018,Q2,108441
+Case Subtype,Property and Finance,2018,Q3,112903
+Case Subtype,Property and Finance,2018,Q4,102352
+Case Subtype,Property and Finance,2019,Q1,111602
+Case Subtype,Property and Finance,2019,Q2,118081
+Case Subtype,Property and Finance,2019,Q3,129811
+Case Subtype,Property and Finance,2019,Q4,118212
+Case Subtype,Property and Finance,2020,Q1,126341
+Case Subtype,Property and Finance,2020,Q2,57315
+Case Subtype,Property and Finance,2020,Q3,92422
+Case Subtype,Property and Finance,2020,Q4,103757
+Case Subtype,Property and Finance,2021,Q1,107259
+Case Subtype,Property and Finance,2021,Q2,90566
+Case Subtype,Property and Finance,2021,Q3,95327
+Case Subtype,Property and Finance,2021,Q4,104522
+Case Subtype,Property and Finance,2022,Q1,112062
+Case Subtype,Property and Finance,2022,Q2,107025
+Case Subtype,Property and Finance,2022,Q3,111099
+Case Subtype,Property and Finance,2022,Q4,137280
+Case Subtype,Property and Finance,2023,Q1,147780
+Case Subtype,Property and Finance,2023,Q2,150605
+Case Subtype,Property and Finance,2023,Q3,167005
+Case Subtype,Property and Finance,2023,Q4,171512
+Case Subtype,Property and Finance,2024,Q1,206214
+Case Subtype,Property and Finance,2024,Q2,207600
+Case Subtype,Property and Finance,2024,Q3,221575
+Case Subtype,Property and Finance,2024,Q4,172541
+Case Subtype,Property and Finance,2025,Q1,162653
+Case Subtype,Property and Finance,2025,Q2,160066
+Case Subtype,Property and Finance,2025,Q3,206308
+Case Subtype,Property and Finance,2025,Q4,191717
+Gender of Donor,Female,2008,Q1,4428
+Gender of Donor,Female,2008,Q2,6557
+Gender of Donor,Female,2008,Q3,12807
+Gender of Donor,Female,2008,Q4,14541
+Gender of Donor,Female,2009,Q1,11896
+Gender of Donor,Female,2009,Q2,17200
+Gender of Donor,Female,2009,Q3,17578
+Gender of Donor,Female,2009,Q4,16249
+Gender of Donor,Female,2010,Q1,16706
+Gender of Donor,Female,2010,Q2,27781
+Gender of Donor,Female,2010,Q3,25461
+Gender of Donor,Female,2010,Q4,23376
+Gender of Donor,Female,2011,Q1,31236
+Gender of Donor,Female,2011,Q2,25612
+Gender of Donor,Female,2011,Q3,33587
+Gender of Donor,Female,2011,Q4,30362
+Gender of Donor,Female,2012,Q1,34465
+Gender of Donor,Female,2012,Q2,34311
+Gender of Donor,Female,2012,Q3,40344
+Gender of Donor,Female,2012,Q4,40595
+Gender of Donor,Female,2013,Q1,36067
+Gender of Donor,Female,2013,Q2,46117
+Gender of Donor,Female,2013,Q3,44791
+Gender of Donor,Female,2013,Q4,40506
+Gender of Donor,Female,2014,Q1,37321
+Gender of Donor,Female,2014,Q2,45392
+Gender of Donor,Female,2014,Q3,72214
+Gender of Donor,Female,2014,Q4,66301
+Gender of Donor,Female,2015,Q1,62300
+Gender of Donor,Female,2015,Q2,74689
+Gender of Donor,Female,2015,Q3,69521
+Gender of Donor,Female,2015,Q4,67443
+Gender of Donor,Female,2016,Q1,77098
+Gender of Donor,Female,2016,Q2,81759
+Gender of Donor,Female,2016,Q3,103321
+Gender of Donor,Female,2016,Q4,99643
+Gender of Donor,Female,2017,Q1,96562
+Gender of Donor,Female,2017,Q2,95775
+Gender of Donor,Female,2017,Q3,105040
+Gender of Donor,Female,2017,Q4,107312
+Gender of Donor,Female,2018,Q1,104049
+Gender of Donor,Female,2018,Q2,105902
+Gender of Donor,Female,2018,Q3,112708
+Gender of Donor,Female,2018,Q4,102822
+Gender of Donor,Female,2019,Q1,111830
+Gender of Donor,Female,2019,Q2,119620
+Gender of Donor,Female,2019,Q3,132169
+Gender of Donor,Female,2019,Q4,121417
+Gender of Donor,Female,2020,Q1,129725
+Gender of Donor,Female,2020,Q2,58132
+Gender of Donor,Female,2020,Q3,92969
+Gender of Donor,Female,2020,Q4,106319
+Gender of Donor,Female,2021,Q1,110470
+Gender of Donor,Female,2021,Q2,92630
+Gender of Donor,Female,2021,Q3,97810
+Gender of Donor,Female,2021,Q4,107721
+Gender of Donor,Female,2022,Q1,116143
+Gender of Donor,Female,2022,Q2,109276
+Gender of Donor,Female,2022,Q3,114677
+Gender of Donor,Female,2022,Q4,143461
+Gender of Donor,Female,2023,Q1,154557
+Gender of Donor,Female,2023,Q2,156818
+Gender of Donor,Female,2023,Q3,172143
+Gender of Donor,Female,2023,Q4,179668
+Gender of Donor,Female,2024,Q1,214313
+Gender of Donor,Female,2024,Q2,213558
+Gender of Donor,Female,2024,Q3,231859
+Gender of Donor,Female,2024,Q4,180775
+Gender of Donor,Female,2025,Q1,166999
+Gender of Donor,Female,2025,Q2,164229
+Gender of Donor,Female,2025,Q3,215719
+Gender of Donor,Female,2025,Q4,199166
+Gender of Donor,Male,2008,Q1,1972
+Gender of Donor,Male,2008,Q2,3080
+Gender of Donor,Male,2008,Q3,6481
+Gender of Donor,Male,2008,Q4,7611
+Gender of Donor,Male,2009,Q1,6066
+Gender of Donor,Male,2009,Q2,8787
+Gender of Donor,Male,2009,Q3,9318
+Gender of Donor,Male,2009,Q4,8652
+Gender of Donor,Male,2010,Q1,9307
+Gender of Donor,Male,2010,Q2,15591
+Gender of Donor,Male,2010,Q3,14476
+Gender of Donor,Male,2010,Q4,13101
+Gender of Donor,Male,2011,Q1,17996
+Gender of Donor,Male,2011,Q2,14772
+Gender of Donor,Male,2011,Q3,19372
+Gender of Donor,Male,2011,Q4,17954
+Gender of Donor,Male,2012,Q1,20211
+Gender of Donor,Male,2012,Q2,20046
+Gender of Donor,Male,2012,Q3,24118
+Gender of Donor,Male,2012,Q4,24467
+Gender of Donor,Male,2013,Q1,22293
+Gender of Donor,Male,2013,Q2,28022
+Gender of Donor,Male,2013,Q3,27223
+Gender of Donor,Male,2013,Q4,24677
+Gender of Donor,Male,2014,Q1,23146
+Gender of Donor,Male,2014,Q2,28497
+Gender of Donor,Male,2014,Q3,46371
+Gender of Donor,Male,2014,Q4,42318
+Gender of Donor,Male,2015,Q1,40487
+Gender of Donor,Male,2015,Q2,48332
+Gender of Donor,Male,2015,Q3,45149
+Gender of Donor,Male,2015,Q4,43998
+Gender of Donor,Male,2016,Q1,51351
+Gender of Donor,Male,2016,Q2,54307
+Gender of Donor,Male,2016,Q3,68813
+Gender of Donor,Male,2016,Q4,66399
+Gender of Donor,Male,2017,Q1,66524
+Gender of Donor,Male,2017,Q2,66307
+Gender of Donor,Male,2017,Q3,73099
+Gender of Donor,Male,2017,Q4,75219
+Gender of Donor,Male,2018,Q1,73505
+Gender of Donor,Male,2018,Q2,75124
+Gender of Donor,Male,2018,Q3,79738
+Gender of Donor,Male,2018,Q4,72707
+Gender of Donor,Male,2019,Q1,80189
+Gender of Donor,Male,2019,Q2,84759
+Gender of Donor,Male,2019,Q3,94413
+Gender of Donor,Male,2019,Q4,86039
+Gender of Donor,Male,2020,Q1,93466
+Gender of Donor,Male,2020,Q2,41781
+Gender of Donor,Male,2020,Q3,68311
+Gender of Donor,Male,2020,Q4,75547
+Gender of Donor,Male,2021,Q1,78952
+Gender of Donor,Male,2021,Q2,66815
+Gender of Donor,Male,2021,Q3,70689
+Gender of Donor,Male,2021,Q4,78768
+Gender of Donor,Male,2022,Q1,84724
+Gender of Donor,Male,2022,Q2,81954
+Gender of Donor,Male,2022,Q3,84565
+Gender of Donor,Male,2022,Q4,104193
+Gender of Donor,Male,2023,Q1,112098
+Gender of Donor,Male,2023,Q2,115954
+Gender of Donor,Male,2023,Q3,126762
+Gender of Donor,Male,2023,Q4,132249
+Gender of Donor,Male,2024,Q1,159958
+Gender of Donor,Male,2024,Q2,161353
+Gender of Donor,Male,2024,Q3,174516
+Gender of Donor,Male,2024,Q4,136480
+Gender of Donor,Male,2025,Q1,128747
+Gender of Donor,Male,2025,Q2,124494
+Gender of Donor,Male,2025,Q3,162271
+Gender of Donor,Male,2025,Q4,151456
+Gender of Donor,Unknown,2008,Q1,48
+Gender of Donor,Unknown,2008,Q2,69
+Gender of Donor,Unknown,2008,Q3,172
+Gender of Donor,Unknown,2008,Q4,231
+Gender of Donor,Unknown,2009,Q1,184
+Gender of Donor,Unknown,2009,Q2,290
+Gender of Donor,Unknown,2009,Q3,298
+Gender of Donor,Unknown,2009,Q4,285
+Gender of Donor,Unknown,2010,Q1,308
+Gender of Donor,Unknown,2010,Q2,505
+Gender of Donor,Unknown,2010,Q3,531
+Gender of Donor,Unknown,2010,Q4,462
+Gender of Donor,Unknown,2011,Q1,670
+Gender of Donor,Unknown,2011,Q2,523
+Gender of Donor,Unknown,2011,Q3,655
+Gender of Donor,Unknown,2011,Q4,685
+Gender of Donor,Unknown,2012,Q1,741
+Gender of Donor,Unknown,2012,Q2,735
+Gender of Donor,Unknown,2012,Q3,902
+Gender of Donor,Unknown,2012,Q4,834
+Gender of Donor,Unknown,2013,Q1,848
+Gender of Donor,Unknown,2013,Q2,1048
+Gender of Donor,Unknown,2013,Q3,975
+Gender of Donor,Unknown,2013,Q4,881
+Gender of Donor,Unknown,2014,Q1,916
+Gender of Donor,Unknown,2014,Q2,972
+Gender of Donor,Unknown,2014,Q3,1677
+Gender of Donor,Unknown,2014,Q4,1636
+Gender of Donor,Unknown,2015,Q1,1441
+Gender of Donor,Unknown,2015,Q2,1694
+Gender of Donor,Unknown,2015,Q3,1478
+Gender of Donor,Unknown,2015,Q4,1631
+Gender of Donor,Unknown,2016,Q1,2004
+Gender of Donor,Unknown,2016,Q2,2031
+Gender of Donor,Unknown,2016,Q3,2390
+Gender of Donor,Unknown,2016,Q4,2374
+Gender of Donor,Unknown,2017,Q1,2459
+Gender of Donor,Unknown,2017,Q2,2323
+Gender of Donor,Unknown,2017,Q3,2595
+Gender of Donor,Unknown,2017,Q4,2690
+Gender of Donor,Unknown,2018,Q1,2668
+Gender of Donor,Unknown,2018,Q2,2669
+Gender of Donor,Unknown,2018,Q3,2858
+Gender of Donor,Unknown,2018,Q4,2747
+Gender of Donor,Unknown,2019,Q1,2946
+Gender of Donor,Unknown,2019,Q2,3039
+Gender of Donor,Unknown,2019,Q3,3390
+Gender of Donor,Unknown,2019,Q4,2970
+Gender of Donor,Unknown,2020,Q1,3559
+Gender of Donor,Unknown,2020,Q2,1585
+Gender of Donor,Unknown,2020,Q3,3255
+Gender of Donor,Unknown,2020,Q4,3111
+Gender of Donor,Unknown,2021,Q1,3149
+Gender of Donor,Unknown,2021,Q2,2563
+Gender of Donor,Unknown,2021,Q3,2652
+Gender of Donor,Unknown,2021,Q4,2885
+Gender of Donor,Unknown,2022,Q1,2997
+Gender of Donor,Unknown,2022,Q2,3056
+Gender of Donor,Unknown,2022,Q3,2942
+Gender of Donor,Unknown,2022,Q4,3722
+Gender of Donor,Unknown,2023,Q1,4003
+Gender of Donor,Unknown,2023,Q2,4231
+Gender of Donor,Unknown,2023,Q3,4546
+Gender of Donor,Unknown,2023,Q4,4502
+Gender of Donor,Unknown,2024,Q1,5647
+Gender of Donor,Unknown,2024,Q2,5722
+Gender of Donor,Unknown,2024,Q3,6556
+Gender of Donor,Unknown,2024,Q4,4954
+Gender of Donor,Unknown,2025,Q1,5142
+Gender of Donor,Unknown,2025,Q2,4708
+Gender of Donor,Unknown,2025,Q3,6893
+Gender of Donor,Unknown,2025,Q4,7147
+Age of Donor,18-24,2008,Q1,[c]
+Age of Donor,18-24,2008,Q2,[c]
+Age of Donor,18-24,2008,Q3,13
+Age of Donor,18-24,2008,Q4,43
+Age of Donor,18-24,2009,Q1,26
+Age of Donor,18-24,2009,Q2,[c]
+Age of Donor,18-24,2009,Q3,[c]
+Age of Donor,18-24,2009,Q4,[c]
+Age of Donor,18-24,2010,Q1,26
+Age of Donor,18-24,2010,Q2,67
+Age of Donor,18-24,2010,Q3,49
+Age of Donor,18-24,2010,Q4,[c]
+Age of Donor,18-24,2011,Q1,[c]
+Age of Donor,18-24,2011,Q2,[c]
+Age of Donor,18-24,2011,Q3,[c]
+Age of Donor,18-24,2011,Q4,80
+Age of Donor,18-24,2012,Q1,[c]
+Age of Donor,18-24,2012,Q2,[c]
+Age of Donor,18-24,2012,Q3,[c]
+Age of Donor,18-24,2012,Q4,[c]
+Age of Donor,18-24,2013,Q1,[c]
+Age of Donor,18-24,2013,Q2,[c]
+Age of Donor,18-24,2013,Q3,[c]
+Age of Donor,18-24,2013,Q4,[c]
+Age of Donor,18-24,2014,Q1,[c]
+Age of Donor,18-24,2014,Q2,[c]
+Age of Donor,18-24,2014,Q3,[c]
+Age of Donor,18-24,2014,Q4,[c]
+Age of Donor,18-24,2015,Q1,169
+Age of Donor,18-24,2015,Q2,192
+Age of Donor,18-24,2015,Q3,165
+Age of Donor,18-24,2015,Q4,163
+Age of Donor,18-24,2016,Q1,233
+Age of Donor,18-24,2016,Q2,213
+Age of Donor,18-24,2016,Q3,262
+Age of Donor,18-24,2016,Q4,287
+Age of Donor,18-24,2017,Q1,246
+Age of Donor,18-24,2017,Q2,270
+Age of Donor,18-24,2017,Q3,331
+Age of Donor,18-24,2017,Q4,344
+Age of Donor,18-24,2018,Q1,321
+Age of Donor,18-24,2018,Q2,276
+Age of Donor,18-24,2018,Q3,384
+Age of Donor,18-24,2018,Q4,369
+Age of Donor,18-24,2019,Q1,356
+Age of Donor,18-24,2019,Q2,321
+Age of Donor,18-24,2019,Q3,461
+Age of Donor,18-24,2019,Q4,435
+Age of Donor,18-24,2020,Q1,464
+Age of Donor,18-24,2020,Q2,167
+Age of Donor,18-24,2020,Q3,339
+Age of Donor,18-24,2020,Q4,414
+Age of Donor,18-24,2021,Q1,463
+Age of Donor,18-24,2021,Q2,412
+Age of Donor,18-24,2021,Q3,380
+Age of Donor,18-24,2021,Q4,396
+Age of Donor,18-24,2022,Q1,464
+Age of Donor,18-24,2022,Q2,404
+Age of Donor,18-24,2022,Q3,430
+Age of Donor,18-24,2022,Q4,536
+Age of Donor,18-24,2023,Q1,594
+Age of Donor,18-24,2023,Q2,556
+Age of Donor,18-24,2023,Q3,550
+Age of Donor,18-24,2023,Q4,615
+Age of Donor,18-24,2024,Q1,828
+Age of Donor,18-24,2024,Q2,792
+Age of Donor,18-24,2024,Q3,959
+Age of Donor,18-24,2024,Q4,799
+Age of Donor,18-24,2025,Q1,700
+Age of Donor,18-24,2025,Q2,713
+Age of Donor,18-24,2025,Q3,1014
+Age of Donor,18-24,2025,Q4,1060
+Age of Donor,25-34,2008,Q1,[c]
+Age of Donor,25-34,2008,Q2,[c]
+Age of Donor,25-34,2008,Q3,68
+Age of Donor,25-34,2008,Q4,65
+Age of Donor,25-34,2009,Q1,49
+Age of Donor,25-34,2009,Q2,76
+Age of Donor,25-34,2009,Q3,76
+Age of Donor,25-34,2009,Q4,77
+Age of Donor,25-34,2010,Q1,56
+Age of Donor,25-34,2010,Q2,111
+Age of Donor,25-34,2010,Q3,118
+Age of Donor,25-34,2010,Q4,120
+Age of Donor,25-34,2011,Q1,156
+Age of Donor,25-34,2011,Q2,105
+Age of Donor,25-34,2011,Q3,159
+Age of Donor,25-34,2011,Q4,145
+Age of Donor,25-34,2012,Q1,155
+Age of Donor,25-34,2012,Q2,184
+Age of Donor,25-34,2012,Q3,190
+Age of Donor,25-34,2012,Q4,234
+Age of Donor,25-34,2013,Q1,194
+Age of Donor,25-34,2013,Q2,167
+Age of Donor,25-34,2013,Q3,236
+Age of Donor,25-34,2013,Q4,192
+Age of Donor,25-34,2014,Q1,207
+Age of Donor,25-34,2014,Q2,224
+Age of Donor,25-34,2014,Q3,370
+Age of Donor,25-34,2014,Q4,358
+Age of Donor,25-34,2015,Q1,380
+Age of Donor,25-34,2015,Q2,360
+Age of Donor,25-34,2015,Q3,392
+Age of Donor,25-34,2015,Q4,392
+Age of Donor,25-34,2016,Q1,449
+Age of Donor,25-34,2016,Q2,482
+Age of Donor,25-34,2016,Q3,615
+Age of Donor,25-34,2016,Q4,687
+Age of Donor,25-34,2017,Q1,662
+Age of Donor,25-34,2017,Q2,692
+Age of Donor,25-34,2017,Q3,759
+Age of Donor,25-34,2017,Q4,868
+Age of Donor,25-34,2018,Q1,854
+Age of Donor,25-34,2018,Q2,790
+Age of Donor,25-34,2018,Q3,908
+Age of Donor,25-34,2018,Q4,943
+Age of Donor,25-34,2019,Q1,966
+Age of Donor,25-34,2019,Q2,1046
+Age of Donor,25-34,2019,Q3,1141
+Age of Donor,25-34,2019,Q4,1130
+Age of Donor,25-34,2020,Q1,1283
+Age of Donor,25-34,2020,Q2,522
+Age of Donor,25-34,2020,Q3,1016
+Age of Donor,25-34,2020,Q4,1053
+Age of Donor,25-34,2021,Q1,1201
+Age of Donor,25-34,2021,Q2,961
+Age of Donor,25-34,2021,Q3,984
+Age of Donor,25-34,2021,Q4,1068
+Age of Donor,25-34,2022,Q1,1021
+Age of Donor,25-34,2022,Q2,1079
+Age of Donor,25-34,2022,Q3,1168
+Age of Donor,25-34,2022,Q4,1201
+Age of Donor,25-34,2023,Q1,1452
+Age of Donor,25-34,2023,Q2,1522
+Age of Donor,25-34,2023,Q3,1509
+Age of Donor,25-34,2023,Q4,1739
+Age of Donor,25-34,2024,Q1,2189
+Age of Donor,25-34,2024,Q2,2295
+Age of Donor,25-34,2024,Q3,2515
+Age of Donor,25-34,2024,Q4,2146
+Age of Donor,25-34,2025,Q1,1945
+Age of Donor,25-34,2025,Q2,2067
+Age of Donor,25-34,2025,Q3,2708
+Age of Donor,25-34,2025,Q4,2708
+Age of Donor,35-44,2008,Q1,24
+Age of Donor,35-44,2008,Q2,56
+Age of Donor,35-44,2008,Q3,137
+Age of Donor,35-44,2008,Q4,161
+Age of Donor,35-44,2009,Q1,142
+Age of Donor,35-44,2009,Q2,199
+Age of Donor,35-44,2009,Q3,215
+Age of Donor,35-44,2009,Q4,215
+Age of Donor,35-44,2010,Q1,193
+Age of Donor,35-44,2010,Q2,415
+Age of Donor,35-44,2010,Q3,387
+Age of Donor,35-44,2010,Q4,421
+Age of Donor,35-44,2011,Q1,490
+Age of Donor,35-44,2011,Q2,463
+Age of Donor,35-44,2011,Q3,510
+Age of Donor,35-44,2011,Q4,525
+Age of Donor,35-44,2012,Q1,551
+Age of Donor,35-44,2012,Q2,608
+Age of Donor,35-44,2012,Q3,646
+Age of Donor,35-44,2012,Q4,627
+Age of Donor,35-44,2013,Q1,615
+Age of Donor,35-44,2013,Q2,702
+Age of Donor,35-44,2013,Q3,739
+Age of Donor,35-44,2013,Q4,633
+Age of Donor,35-44,2014,Q1,611
+Age of Donor,35-44,2014,Q2,754
+Age of Donor,35-44,2014,Q3,1264
+Age of Donor,35-44,2014,Q4,1031
+Age of Donor,35-44,2015,Q1,1057
+Age of Donor,35-44,2015,Q2,1264
+Age of Donor,35-44,2015,Q3,1251
+Age of Donor,35-44,2015,Q4,1231
+Age of Donor,35-44,2016,Q1,1389
+Age of Donor,35-44,2016,Q2,1484
+Age of Donor,35-44,2016,Q3,2016
+Age of Donor,35-44,2016,Q4,1855
+Age of Donor,35-44,2017,Q1,1980
+Age of Donor,35-44,2017,Q2,1987
+Age of Donor,35-44,2017,Q3,2255
+Age of Donor,35-44,2017,Q4,2505
+Age of Donor,35-44,2018,Q1,2556
+Age of Donor,35-44,2018,Q2,2229
+Age of Donor,35-44,2018,Q3,2547
+Age of Donor,35-44,2018,Q4,2613
+Age of Donor,35-44,2019,Q1,2649
+Age of Donor,35-44,2019,Q2,2814
+Age of Donor,35-44,2019,Q3,3447
+Age of Donor,35-44,2019,Q4,3062
+Age of Donor,35-44,2020,Q1,3262
+Age of Donor,35-44,2020,Q2,1361
+Age of Donor,35-44,2020,Q3,2727
+Age of Donor,35-44,2020,Q4,2896
+Age of Donor,35-44,2021,Q1,3173
+Age of Donor,35-44,2021,Q2,2753
+Age of Donor,35-44,2021,Q3,3204
+Age of Donor,35-44,2021,Q4,3175
+Age of Donor,35-44,2022,Q1,2924
+Age of Donor,35-44,2022,Q2,3256
+Age of Donor,35-44,2022,Q3,3498
+Age of Donor,35-44,2022,Q4,4115
+Age of Donor,35-44,2023,Q1,3987
+Age of Donor,35-44,2023,Q2,4476
+Age of Donor,35-44,2023,Q3,4701
+Age of Donor,35-44,2023,Q4,4705
+Age of Donor,35-44,2024,Q1,6288
+Age of Donor,35-44,2024,Q2,6700
+Age of Donor,35-44,2024,Q3,7327
+Age of Donor,35-44,2024,Q4,6033
+Age of Donor,35-44,2025,Q1,5845
+Age of Donor,35-44,2025,Q2,6008
+Age of Donor,35-44,2025,Q3,7868
+Age of Donor,35-44,2025,Q4,7756
+Age of Donor,45-54,2008,Q1,47
+Age of Donor,45-54,2008,Q2,81
+Age of Donor,45-54,2008,Q3,290
+Age of Donor,45-54,2008,Q4,386
+Age of Donor,45-54,2009,Q1,353
+Age of Donor,45-54,2009,Q2,434
+Age of Donor,45-54,2009,Q3,515
+Age of Donor,45-54,2009,Q4,468
+Age of Donor,45-54,2010,Q1,473
+Age of Donor,45-54,2010,Q2,1059
+Age of Donor,45-54,2010,Q3,1040
+Age of Donor,45-54,2010,Q4,969
+Age of Donor,45-54,2011,Q1,1272
+Age of Donor,45-54,2011,Q2,1104
+Age of Donor,45-54,2011,Q3,1519
+Age of Donor,45-54,2011,Q4,1478
+Age of Donor,45-54,2012,Q1,1614
+Age of Donor,45-54,2012,Q2,1579
+Age of Donor,45-54,2012,Q3,1759
+Age of Donor,45-54,2012,Q4,1928
+Age of Donor,45-54,2013,Q1,1683
+Age of Donor,45-54,2013,Q2,2157
+Age of Donor,45-54,2013,Q3,2148
+Age of Donor,45-54,2013,Q4,1899
+Age of Donor,45-54,2014,Q1,1734
+Age of Donor,45-54,2014,Q2,2214
+Age of Donor,45-54,2014,Q3,3926
+Age of Donor,45-54,2014,Q4,3445
+Age of Donor,45-54,2015,Q1,3441
+Age of Donor,45-54,2015,Q2,4030
+Age of Donor,45-54,2015,Q3,3940
+Age of Donor,45-54,2015,Q4,3827
+Age of Donor,45-54,2016,Q1,4613
+Age of Donor,45-54,2016,Q2,5148
+Age of Donor,45-54,2016,Q3,6399
+Age of Donor,45-54,2016,Q4,6429
+Age of Donor,45-54,2017,Q1,6440
+Age of Donor,45-54,2017,Q2,6573
+Age of Donor,45-54,2017,Q3,7420
+Age of Donor,45-54,2017,Q4,7849
+Age of Donor,45-54,2018,Q1,7936
+Age of Donor,45-54,2018,Q2,7395
+Age of Donor,45-54,2018,Q3,8134
+Age of Donor,45-54,2018,Q4,7423
+Age of Donor,45-54,2019,Q1,8124
+Age of Donor,45-54,2019,Q2,8826
+Age of Donor,45-54,2019,Q3,10296
+Age of Donor,45-54,2019,Q4,8988
+Age of Donor,45-54,2020,Q1,9693
+Age of Donor,45-54,2020,Q2,4340
+Age of Donor,45-54,2020,Q3,8505
+Age of Donor,45-54,2020,Q4,8553
+Age of Donor,45-54,2021,Q1,8811
+Age of Donor,45-54,2021,Q2,8503
+Age of Donor,45-54,2021,Q3,8282
+Age of Donor,45-54,2021,Q4,8728
+Age of Donor,45-54,2022,Q1,8401
+Age of Donor,45-54,2022,Q2,8881
+Age of Donor,45-54,2022,Q3,9074
+Age of Donor,45-54,2022,Q4,10652
+Age of Donor,45-54,2023,Q1,10951
+Age of Donor,45-54,2023,Q2,11733
+Age of Donor,45-54,2023,Q3,13457
+Age of Donor,45-54,2023,Q4,13099
+Age of Donor,45-54,2024,Q1,17296
+Age of Donor,45-54,2024,Q2,17957
+Age of Donor,45-54,2024,Q3,19737
+Age of Donor,45-54,2024,Q4,15655
+Age of Donor,45-54,2025,Q1,15670
+Age of Donor,45-54,2025,Q2,15502
+Age of Donor,45-54,2025,Q3,20050
+Age of Donor,45-54,2025,Q4,19725
+Age of Donor,55-64,2008,Q1,177
+Age of Donor,55-64,2008,Q2,292
+Age of Donor,55-64,2008,Q3,961
+Age of Donor,55-64,2008,Q4,1202
+Age of Donor,55-64,2009,Q1,1112
+Age of Donor,55-64,2009,Q2,1499
+Age of Donor,55-64,2009,Q3,1714
+Age of Donor,55-64,2009,Q4,1526
+Age of Donor,55-64,2010,Q1,1796
+Age of Donor,55-64,2010,Q2,3879
+Age of Donor,55-64,2010,Q3,3639
+Age of Donor,55-64,2010,Q4,3133
+Age of Donor,55-64,2011,Q1,4467
+Age of Donor,55-64,2011,Q2,3485
+Age of Donor,55-64,2011,Q3,4892
+Age of Donor,55-64,2011,Q4,4651
+Age of Donor,55-64,2012,Q1,5013
+Age of Donor,55-64,2012,Q2,4789
+Age of Donor,55-64,2012,Q3,5748
+Age of Donor,55-64,2012,Q4,6093
+Age of Donor,55-64,2013,Q1,5469
+Age of Donor,55-64,2013,Q2,6966
+Age of Donor,55-64,2013,Q3,6662
+Age of Donor,55-64,2013,Q4,6124
+Age of Donor,55-64,2014,Q1,5808
+Age of Donor,55-64,2014,Q2,7079
+Age of Donor,55-64,2014,Q3,11848
+Age of Donor,55-64,2014,Q4,11297
+Age of Donor,55-64,2015,Q1,10956
+Age of Donor,55-64,2015,Q2,13037
+Age of Donor,55-64,2015,Q3,12491
+Age of Donor,55-64,2015,Q4,12322
+Age of Donor,55-64,2016,Q1,14885
+Age of Donor,55-64,2016,Q2,15092
+Age of Donor,55-64,2016,Q3,19287
+Age of Donor,55-64,2016,Q4,19894
+Age of Donor,55-64,2017,Q1,20415
+Age of Donor,55-64,2017,Q2,19731
+Age of Donor,55-64,2017,Q3,22661
+Age of Donor,55-64,2017,Q4,23570
+Age of Donor,55-64,2018,Q1,23182
+Age of Donor,55-64,2018,Q2,22849
+Age of Donor,55-64,2018,Q3,24371
+Age of Donor,55-64,2018,Q4,22297
+Age of Donor,55-64,2019,Q1,25000
+Age of Donor,55-64,2019,Q2,26248
+Age of Donor,55-64,2019,Q3,29546
+Age of Donor,55-64,2019,Q4,27468
+Age of Donor,55-64,2020,Q1,30438
+Age of Donor,55-64,2020,Q2,13573
+Age of Donor,55-64,2020,Q3,25032
+Age of Donor,55-64,2020,Q4,26225
+Age of Donor,55-64,2021,Q1,27469
+Age of Donor,55-64,2021,Q2,25379
+Age of Donor,55-64,2021,Q3,25201
+Age of Donor,55-64,2021,Q4,27030
+Age of Donor,55-64,2022,Q1,27908
+Age of Donor,55-64,2022,Q2,28819
+Age of Donor,55-64,2022,Q3,29067
+Age of Donor,55-64,2022,Q4,35155
+Age of Donor,55-64,2023,Q1,37795
+Age of Donor,55-64,2023,Q2,39547
+Age of Donor,55-64,2023,Q3,44510
+Age of Donor,55-64,2023,Q4,45997
+Age of Donor,55-64,2024,Q1,58767
+Age of Donor,55-64,2024,Q2,61817
+Age of Donor,55-64,2024,Q3,66301
+Age of Donor,55-64,2024,Q4,52722
+Age of Donor,55-64,2025,Q1,51352
+Age of Donor,55-64,2025,Q2,50886
+Age of Donor,55-64,2025,Q3,66060
+Age of Donor,55-64,2025,Q4,65599
+Age of Donor,65-74,2008,Q1,591
+Age of Donor,65-74,2008,Q2,976
+Age of Donor,65-74,2008,Q3,2338
+Age of Donor,65-74,2008,Q4,2985
+Age of Donor,65-74,2009,Q1,2589
+Age of Donor,65-74,2009,Q2,3585
+Age of Donor,65-74,2009,Q3,3982
+Age of Donor,65-74,2009,Q4,3710
+Age of Donor,65-74,2010,Q1,4190
+Age of Donor,65-74,2010,Q2,7812
+Age of Donor,65-74,2010,Q3,7300
+Age of Donor,65-74,2010,Q4,6477
+Age of Donor,65-74,2011,Q1,9230
+Age of Donor,65-74,2011,Q2,7527
+Age of Donor,65-74,2011,Q3,10239
+Age of Donor,65-74,2011,Q4,9578
+Age of Donor,65-74,2012,Q1,10882
+Age of Donor,65-74,2012,Q2,10973
+Age of Donor,65-74,2012,Q3,13407
+Age of Donor,65-74,2012,Q4,13480
+Age of Donor,65-74,2013,Q1,12590
+Age of Donor,65-74,2013,Q2,16128
+Age of Donor,65-74,2013,Q3,15858
+Age of Donor,65-74,2013,Q4,14371
+Age of Donor,65-74,2014,Q1,13693
+Age of Donor,65-74,2014,Q2,17139
+Age of Donor,65-74,2014,Q3,28701
+Age of Donor,65-74,2014,Q4,26472
+Age of Donor,65-74,2015,Q1,25565
+Age of Donor,65-74,2015,Q2,31933
+Age of Donor,65-74,2015,Q3,29813
+Age of Donor,65-74,2015,Q4,28505
+Age of Donor,65-74,2016,Q1,34133
+Age of Donor,65-74,2016,Q2,35690
+Age of Donor,65-74,2016,Q3,46222
+Age of Donor,65-74,2016,Q4,44282
+Age of Donor,65-74,2017,Q1,45623
+Age of Donor,65-74,2017,Q2,46517
+Age of Donor,65-74,2017,Q3,51840
+Age of Donor,65-74,2017,Q4,52269
+Age of Donor,65-74,2018,Q1,51072
+Age of Donor,65-74,2018,Q2,52177
+Age of Donor,65-74,2018,Q3,54015
+Age of Donor,65-74,2018,Q4,49322
+Age of Donor,65-74,2019,Q1,55104
+Age of Donor,65-74,2019,Q2,57970
+Age of Donor,65-74,2019,Q3,63504
+Age of Donor,65-74,2019,Q4,57120
+Age of Donor,65-74,2020,Q1,62487
+Age of Donor,65-74,2020,Q2,27990
+Age of Donor,65-74,2020,Q3,46624
+Age of Donor,65-74,2020,Q4,50258
+Age of Donor,65-74,2021,Q1,52119
+Age of Donor,65-74,2021,Q2,43611
+Age of Donor,65-74,2021,Q3,46102
+Age of Donor,65-74,2021,Q4,50276
+Age of Donor,65-74,2022,Q1,54434
+Age of Donor,65-74,2022,Q2,52017
+Age of Donor,65-74,2022,Q3,54117
+Age of Donor,65-74,2022,Q4,65212
+Age of Donor,65-74,2023,Q1,70410
+Age of Donor,65-74,2023,Q2,72853
+Age of Donor,65-74,2023,Q3,81083
+Age of Donor,65-74,2023,Q4,84279
+Age of Donor,65-74,2024,Q1,101670
+Age of Donor,65-74,2024,Q2,105723
+Age of Donor,65-74,2024,Q3,113018
+Age of Donor,65-74,2024,Q4,86993
+Age of Donor,65-74,2025,Q1,82283
+Age of Donor,65-74,2025,Q2,81380
+Age of Donor,65-74,2025,Q3,105681
+Age of Donor,65-74,2025,Q4,98773
+Age of Donor,75-84,2008,Q1,2431
+Age of Donor,75-84,2008,Q2,3702
+Age of Donor,75-84,2008,Q3,7541
+Age of Donor,75-84,2008,Q4,8852
+Age of Donor,75-84,2009,Q1,6971
+Age of Donor,75-84,2009,Q2,10281
+Age of Donor,75-84,2009,Q3,10396
+Age of Donor,75-84,2009,Q4,9724
+Age of Donor,75-84,2010,Q1,9996
+Age of Donor,75-84,2010,Q2,15925
+Age of Donor,75-84,2010,Q3,14727
+Age of Donor,75-84,2010,Q4,13815
+Age of Donor,75-84,2011,Q1,18446
+Age of Donor,75-84,2011,Q2,14744
+Age of Donor,75-84,2011,Q3,19480
+Age of Donor,75-84,2011,Q4,17588
+Age of Donor,75-84,2012,Q1,20179
+Age of Donor,75-84,2012,Q2,19899
+Age of Donor,75-84,2012,Q3,24116
+Age of Donor,75-84,2012,Q4,24008
+Age of Donor,75-84,2013,Q1,21318
+Age of Donor,75-84,2013,Q2,26906
+Age of Donor,75-84,2013,Q3,26445
+Age of Donor,75-84,2013,Q4,23885
+Age of Donor,75-84,2014,Q1,21727
+Age of Donor,75-84,2014,Q2,26488
+Age of Donor,75-84,2014,Q3,43135
+Age of Donor,75-84,2014,Q4,39368
+Age of Donor,75-84,2015,Q1,36069
+Age of Donor,75-84,2015,Q2,43978
+Age of Donor,75-84,2015,Q3,40423
+Age of Donor,75-84,2015,Q4,39245
+Age of Donor,75-84,2016,Q1,43597
+Age of Donor,75-84,2016,Q2,46381
+Age of Donor,75-84,2016,Q3,59365
+Age of Donor,75-84,2016,Q4,56249
+Age of Donor,75-84,2017,Q1,53772
+Age of Donor,75-84,2017,Q2,53398
+Age of Donor,75-84,2017,Q3,58606
+Age of Donor,75-84,2017,Q4,60295
+Age of Donor,75-84,2018,Q1,57364
+Age of Donor,75-84,2018,Q2,59833
+Age of Donor,75-84,2018,Q3,64432
+Age of Donor,75-84,2018,Q4,58494
+Age of Donor,75-84,2019,Q1,63590
+Age of Donor,75-84,2019,Q2,68445
+Age of Donor,75-84,2019,Q3,76354
+Age of Donor,75-84,2019,Q4,70081
+Age of Donor,75-84,2020,Q1,74827
+Age of Donor,75-84,2020,Q2,33354
+Age of Donor,75-84,2020,Q3,51945
+Age of Donor,75-84,2020,Q4,60257
+Age of Donor,75-84,2021,Q1,63378
+Age of Donor,75-84,2021,Q2,50555
+Age of Donor,75-84,2021,Q3,55009
+Age of Donor,75-84,2021,Q4,62957
+Age of Donor,75-84,2022,Q1,70870
+Age of Donor,75-84,2022,Q2,65108
+Age of Donor,75-84,2022,Q3,68697
+Age of Donor,75-84,2022,Q4,88362
+Age of Donor,75-84,2023,Q1,95612
+Age of Donor,75-84,2023,Q2,96765
+Age of Donor,75-84,2023,Q3,106393
+Age of Donor,75-84,2023,Q4,112543
+Age of Donor,75-84,2024,Q1,131731
+Age of Donor,75-84,2024,Q2,128550
+Age of Donor,75-84,2024,Q3,141472
+Age of Donor,75-84,2024,Q4,108994
+Age of Donor,75-84,2025,Q1,98930
+Age of Donor,75-84,2025,Q2,95116
+Age of Donor,75-84,2025,Q3,126983
+Age of Donor,75-84,2025,Q4,113764
+Age of Donor,85+,2008,Q1,3110
+Age of Donor,85+,2008,Q2,4563
+Age of Donor,85+,2008,Q3,8094
+Age of Donor,85+,2008,Q4,8657
+Age of Donor,85+,2009,Q1,6893
+Age of Donor,85+,2009,Q2,10161
+Age of Donor,85+,2009,Q3,10255
+Age of Donor,85+,2009,Q4,9426
+Age of Donor,85+,2010,Q1,9580
+Age of Donor,85+,2010,Q2,14597
+Age of Donor,85+,2010,Q3,13197
+Age of Donor,85+,2010,Q4,11948
+Age of Donor,85+,2011,Q1,15769
+Age of Donor,85+,2011,Q2,13417
+Age of Donor,85+,2011,Q3,16732
+Age of Donor,85+,2011,Q4,14945
+Age of Donor,85+,2012,Q1,16938
+Age of Donor,85+,2012,Q2,16987
+Age of Donor,85+,2012,Q3,19393
+Age of Donor,85+,2012,Q4,19427
+Age of Donor,85+,2013,Q1,17226
+Age of Donor,85+,2013,Q2,22057
+Age of Donor,85+,2013,Q3,20788
+Age of Donor,85+,2013,Q4,18854
+Age of Donor,85+,2014,Q1,17508
+Age of Donor,85+,2014,Q2,20827
+Age of Donor,85+,2014,Q3,30876
+Age of Donor,85+,2014,Q4,28120
+Age of Donor,85+,2015,Q1,26580
+Age of Donor,85+,2015,Q2,29904
+Age of Donor,85+,2015,Q3,27624
+Age of Donor,85+,2015,Q4,27189
+Age of Donor,85+,2016,Q1,30855
+Age of Donor,85+,2016,Q2,33259
+Age of Donor,85+,2016,Q3,40121
+Age of Donor,85+,2016,Q4,38396
+Age of Donor,85+,2017,Q1,36069
+Age of Donor,85+,2017,Q2,34987
+Age of Donor,85+,2017,Q3,36499
+Age of Donor,85+,2017,Q4,37093
+Age of Donor,85+,2018,Q1,36639
+Age of Donor,85+,2018,Q2,37876
+Age of Donor,85+,2018,Q3,40421
+Age of Donor,85+,2018,Q4,36701
+Age of Donor,85+,2019,Q1,38995
+Age of Donor,85+,2019,Q2,41365
+Age of Donor,85+,2019,Q3,44979
+Age of Donor,85+,2019,Q4,41982
+Age of Donor,85+,2020,Q1,44183
+Age of Donor,85+,2020,Q2,20161
+Age of Donor,85+,2020,Q3,28325
+Age of Donor,85+,2020,Q4,35294
+Age of Donor,85+,2021,Q1,35930
+Age of Donor,85+,2021,Q2,29788
+Age of Donor,85+,2021,Q3,31939
+Age of Donor,85+,2021,Q4,35695
+Age of Donor,85+,2022,Q1,37763
+Age of Donor,85+,2022,Q2,34641
+Age of Donor,85+,2022,Q3,36047
+Age of Donor,85+,2022,Q4,46043
+Age of Donor,85+,2023,Q1,49764
+Age of Donor,85+,2023,Q2,49444
+Age of Donor,85+,2023,Q3,51150
+Age of Donor,85+,2023,Q4,53338
+Age of Donor,85+,2024,Q1,61028
+Age of Donor,85+,2024,Q2,56680
+Age of Donor,85+,2024,Q3,61449
+Age of Donor,85+,2024,Q4,48778
+Age of Donor,85+,2025,Q1,44041
+Age of Donor,85+,2025,Q2,41681
+Age of Donor,85+,2025,Q3,54440
+Age of Donor,85+,2025,Q4,48348
+Age of Donor,Unknown,2008,Q1,56
+Age of Donor,Unknown,2008,Q2,20
+Age of Donor,Unknown,2008,Q3,18
+Age of Donor,Unknown,2008,Q4,32
+Age of Donor,Unknown,2009,Q1,11
+Age of Donor,Unknown,2009,Q2,[c]
+Age of Donor,Unknown,2009,Q3,[c]
+Age of Donor,Unknown,2009,Q4,[c]
+Age of Donor,Unknown,2010,Q1,11
+Age of Donor,Unknown,2010,Q2,12
+Age of Donor,Unknown,2010,Q3,11
+Age of Donor,Unknown,2010,Q4,[c]
+Age of Donor,Unknown,2011,Q1,[c]
+Age of Donor,Unknown,2011,Q2,[c]
+Age of Donor,Unknown,2011,Q3,[c]
+Age of Donor,Unknown,2011,Q4,11
+Age of Donor,Unknown,2012,Q1,[c]
+Age of Donor,Unknown,2012,Q2,[c]
+Age of Donor,Unknown,2012,Q3,[c]
+Age of Donor,Unknown,2012,Q4,[c]
+Age of Donor,Unknown,2013,Q1,[c]
+Age of Donor,Unknown,2013,Q2,[c]
+Age of Donor,Unknown,2013,Q3,[c]
+Age of Donor,Unknown,2013,Q4,[c]
+Age of Donor,Unknown,2014,Q1,[c]
+Age of Donor,Unknown,2014,Q2,[c]
+Age of Donor,Unknown,2014,Q3,[c]
+Age of Donor,Unknown,2014,Q4,[c]
+Age of Donor,Unknown,2015,Q1,11
+Age of Donor,Unknown,2015,Q2,17
+Age of Donor,Unknown,2015,Q3,49
+Age of Donor,Unknown,2015,Q4,198
+Age of Donor,Unknown,2016,Q1,299
+Age of Donor,Unknown,2016,Q2,348
+Age of Donor,Unknown,2016,Q3,237
+Age of Donor,Unknown,2016,Q4,337
+Age of Donor,Unknown,2017,Q1,338
+Age of Donor,Unknown,2017,Q2,250
+Age of Donor,Unknown,2017,Q3,363
+Age of Donor,Unknown,2017,Q4,428
+Age of Donor,Unknown,2018,Q1,298
+Age of Donor,Unknown,2018,Q2,270
+Age of Donor,Unknown,2018,Q3,92
+Age of Donor,Unknown,2018,Q4,114
+Age of Donor,Unknown,2019,Q1,181
+Age of Donor,Unknown,2019,Q2,383
+Age of Donor,Unknown,2019,Q3,244
+Age of Donor,Unknown,2019,Q4,160
+Age of Donor,Unknown,2020,Q1,113
+Age of Donor,Unknown,2020,Q2,30
+Age of Donor,Unknown,2020,Q3,22
+Age of Donor,Unknown,2020,Q4,27
+Age of Donor,Unknown,2021,Q1,27
+Age of Donor,Unknown,2021,Q2,46
+Age of Donor,Unknown,2021,Q3,50
+Age of Donor,Unknown,2021,Q4,49
+Age of Donor,Unknown,2022,Q1,79
+Age of Donor,Unknown,2022,Q2,81
+Age of Donor,Unknown,2022,Q3,86
+Age of Donor,Unknown,2022,Q4,100
+Age of Donor,Unknown,2023,Q1,93
+Age of Donor,Unknown,2023,Q2,107
+Age of Donor,Unknown,2023,Q3,98
+Age of Donor,Unknown,2023,Q4,104
+Age of Donor,Unknown,2024,Q1,121
+Age of Donor,Unknown,2024,Q2,119
+Age of Donor,Unknown,2024,Q3,153
+Age of Donor,Unknown,2024,Q4,89
+Age of Donor,Unknown,2025,Q1,122
+Age of Donor,Unknown,2025,Q2,78
+Age of Donor,Unknown,2025,Q3,79
+Age of Donor,Unknown,2025,Q4,36
+Total Registered Applications,,2008,Q1,6448
+Total Registered Applications,,2008,Q2,9706
+Total Registered Applications,,2008,Q3,19460
+Total Registered Applications,,2008,Q4,22383
+Total Registered Applications,,2009,Q1,18146
+Total Registered Applications,,2009,Q2,26277
+Total Registered Applications,,2009,Q3,27194
+Total Registered Applications,,2009,Q4,25186
+Total Registered Applications,,2010,Q1,26321
+Total Registered Applications,,2010,Q2,43877
+Total Registered Applications,,2010,Q3,40468
+Total Registered Applications,,2010,Q4,36939
+Total Registered Applications,,2011,Q1,49902
+Total Registered Applications,,2011,Q2,40907
+Total Registered Applications,,2011,Q3,53614
+Total Registered Applications,,2011,Q4,49001
+Total Registered Applications,,2012,Q1,55417
+Total Registered Applications,,2012,Q2,55092
+Total Registered Applications,,2012,Q3,65364
+Total Registered Applications,,2012,Q4,65896
+Total Registered Applications,,2013,Q1,59208
+Total Registered Applications,,2013,Q2,75187
+Total Registered Applications,,2013,Q3,72989
+Total Registered Applications,,2013,Q4,66064
+Total Registered Applications,,2014,Q1,61383
+Total Registered Applications,,2014,Q2,74861
+Total Registered Applications,,2014,Q3,120262
+Total Registered Applications,,2014,Q4,110255
+Total Registered Applications,,2015,Q1,104228
+Total Registered Applications,,2015,Q2,124715
+Total Registered Applications,,2015,Q3,116148
+Total Registered Applications,,2015,Q4,113072
+Total Registered Applications,,2016,Q1,130453
+Total Registered Applications,,2016,Q2,138097
+Total Registered Applications,,2016,Q3,174524
+Total Registered Applications,,2016,Q4,168416
+Total Registered Applications,,2017,Q1,165545
+Total Registered Applications,,2017,Q2,164405
+Total Registered Applications,,2017,Q3,180734
+Total Registered Applications,,2017,Q4,185221
+Total Registered Applications,,2018,Q1,180222
+Total Registered Applications,,2018,Q2,183695
+Total Registered Applications,,2018,Q3,195304
+Total Registered Applications,,2018,Q4,178276
+Total Registered Applications,,2019,Q1,194965
+Total Registered Applications,,2019,Q2,207418
+Total Registered Applications,,2019,Q3,229972
+Total Registered Applications,,2019,Q4,210426
+Total Registered Applications,,2020,Q1,226750
+Total Registered Applications,,2020,Q2,101498
+Total Registered Applications,,2020,Q3,164535
+Total Registered Applications,,2020,Q4,184977
+Total Registered Applications,,2021,Q1,192571
+Total Registered Applications,,2021,Q2,162008
+Total Registered Applications,,2021,Q3,171151
+Total Registered Applications,,2021,Q4,189374
+Total Registered Applications,,2022,Q1,203864
+Total Registered Applications,,2022,Q2,194286
+Total Registered Applications,,2022,Q3,202184
+Total Registered Applications,,2022,Q4,251376
+Total Registered Applications,,2023,Q1,270658
+Total Registered Applications,,2023,Q2,277003
+Total Registered Applications,,2023,Q3,303451
+Total Registered Applications,,2023,Q4,316419
+Total Registered Applications,,2024,Q1,379918
+Total Registered Applications,,2024,Q2,380633
+Total Registered Applications,,2024,Q3,412931
+Total Registered Applications,,2024,Q4,322209
+Total Registered Applications,,2025,Q1,300888
+Total Registered Applications,,2025,Q2,293431
+Total Registered Applications,,2025,Q3,384883
+Total Registered Applications,,2025,Q4,357769
+Number of Deputyships Appointed,,2015,Q1,3318
+Number of Deputyships Appointed,,2015,Q2,3275
+Number of Deputyships Appointed,,2015,Q3,3967
+Number of Deputyships Appointed,,2015,Q4,4284
+Number of Deputyships Appointed,,2016,Q1,2740
+Number of Deputyships Appointed,,2016,Q2,3021
+Number of Deputyships Appointed,,2016,Q3,3268
+Number of Deputyships Appointed,,2016,Q4,2180
+Number of Deputyships Appointed,,2017,Q1,3241
+Number of Deputyships Appointed,,2017,Q2,4288
+Number of Deputyships Appointed,,2017,Q3,3302
+Number of Deputyships Appointed,,2017,Q4,2599
+Number of Deputyships Appointed,,2018,Q1,2888
+Number of Deputyships Appointed,,2018,Q2,2495
+Number of Deputyships Appointed,,2018,Q3,2680
+Number of Deputyships Appointed,,2018,Q4,2057
+Number of Deputyships Appointed,,2019,Q1,3054
+Number of Deputyships Appointed,,2019,Q2,2510
+Number of Deputyships Appointed,,2019,Q3,2791
+Number of Deputyships Appointed,,2019,Q4,2370
+Number of Deputyships Appointed,,2020,Q1,3731
+Number of Deputyships Appointed,,2020,Q2,2224
+Number of Deputyships Appointed,,2020,Q3,2887
+Number of Deputyships Appointed,,2020,Q4,2168
+Number of Deputyships Appointed,,2021,Q1,2690
+Number of Deputyships Appointed,,2021,Q2,2186
+Number of Deputyships Appointed,,2021,Q3,2263
+Number of Deputyships Appointed,,2021,Q4,1493
+Number of Deputyships Appointed,,2022,Q1,1873
+Number of Deputyships Appointed,,2022,Q2,1454
+Number of Deputyships Appointed,,2022,Q3,2465
+Number of Deputyships Appointed,,2022,Q4,2470
+Number of Deputyships Appointed,,2023,Q1,2514
+Number of Deputyships Appointed,,2023,Q2,1875
+Number of Deputyships Appointed,,2023,Q3,2772
+Number of Deputyships Appointed,,2023,Q4,2439
+Number of Deputyships Appointed,,2024,Q1,3729
+Number of Deputyships Appointed,,2024,Q2,2444
+Number of Deputyships Appointed,,2024,Q3,1720
+Number of Deputyships Appointed,,2024,Q4,1880
+Number of Deputyships Appointed,,2025,Q1,3305
+Number of Deputyships Appointed,,2025,Q2,3848
+Number of Deputyships Appointed,,2025,Q3,2959
+Number of Deputyships Appointed,,2025,Q4,2583

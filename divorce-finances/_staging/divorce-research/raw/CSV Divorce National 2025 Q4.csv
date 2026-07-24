@@ -1,0 +1,1130 @@
+type,order_type,year,quarter,proceeding_type,law,contested,count
+Order made,Decree Absolute,2003,1,Nullity of Marriage,Old,No,47
+Order made,Decree Absolute,2003,1,Nullity of Marriage,Old,Yes,2
+Order made,Decree Absolute,2003,1,Dissolution of Marriage,Old,No,38402
+Order made,Decree Absolute,2003,1,Dissolution of Marriage,Old,Yes,409
+Order made,Decree Nisi,2003,1,Nullity of Marriage,Old,Yes,3
+Order made,Decree Nisi,2003,1,Dissolution of Marriage,Old,Yes,423
+Order made,Decree Nisi,2003,1,Nullity of Marriage,Old,No,49
+Order made,Decree Nisi,2003,1,Dissolution of Marriage,Old,No,38659
+Order made,Judicial Separations Granted,2003,1,Judicial Separation,Old,No,114
+Order made,Judicial Separations Granted,2003,1,Judicial Separation,Old,Yes,2
+Petitions,,2003,1,Dissolution of Marriage,Old,,45536
+Petitions,,2003,1,Judicial Separation,Old,,234
+Petitions,,2003,1,Nullity of Marriage,Old,,93
+Order made,Decree Absolute,2003,2,Dissolution of Marriage,Old,Yes,398
+Order made,Decree Absolute,2003,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2003,2,Dissolution of Marriage,Old,No,37522
+Order made,Decree Absolute,2003,2,Nullity of Marriage,Old,No,56
+Order made,Decree Nisi,2003,2,Dissolution of Marriage,Old,Yes,439
+Order made,Decree Nisi,2003,2,Nullity of Marriage,Old,No,54
+Order made,Decree Nisi,2003,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2003,2,Dissolution of Marriage,Old,No,38641
+Order made,Judicial Separations Granted,2003,2,Judicial Separation,Old,Yes,4
+Order made,Judicial Separations Granted,2003,2,Judicial Separation,Old,No,99
+Petitions,,2003,2,Dissolution of Marriage,Old,,41501
+Petitions,,2003,2,Nullity of Marriage,Old,,128
+Petitions,,2003,2,Judicial Separation,Old,,193
+Order made,Decree Absolute,2003,3,Dissolution of Marriage,Old,No,37436
+Order made,Decree Absolute,2003,3,Nullity of Marriage,Old,No,43
+Order made,Decree Absolute,2003,3,Dissolution of Marriage,Old,Yes,417
+Order made,Decree Nisi,2003,3,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2003,3,Dissolution of Marriage,Old,Yes,415
+Order made,Decree Absolute,2004,2,Nullity of Marriage,Old,No,70
+Order made,Decree Absolute,2004,2,Dissolution of Marriage,Old,No,37308
+Order made,Decree Nisi,2004,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2004,2,Nullity of Marriage,Old,No,75
+Order made,Decree Nisi,2004,2,Dissolution of Marriage,Old,Yes,441
+Order made,Decree Nisi,2004,2,Dissolution of Marriage,Old,No,38539
+Order made,Judicial Separations Granted,2004,2,Judicial Separation,Old,No,96
+Order made,Judicial Separations Granted,2004,2,Judicial Separation,Old,Yes,4
+Petitions,,2004,2,Judicial Separation,Old,,156
+Petitions,,2004,2,Dissolution of Marriage,Old,,40464
+Petitions,,2004,2,Nullity of Marriage,Old,,114
+Order made,Decree Absolute,2004,3,Dissolution of Marriage,Old,No,38474
+Order made,Decree Absolute,2004,3,Nullity of Marriage,Old,No,56
+Order made,Decree Absolute,2004,3,Dissolution of Marriage,Old,Yes,425
+Order made,Decree Absolute,2004,3,Nullity of Marriage,Old,Yes,2
+Order made,Decree Nisi,2004,3,Nullity of Marriage,Old,No,58
+Order made,Decree Nisi,2004,3,Dissolution of Marriage,Old,No,40093
+Order made,Decree Nisi,2004,3,Dissolution of Marriage,Old,Yes,478
+Order made,Decree Nisi,2004,3,Nullity of Marriage,Old,Yes,2
+Order made,Judicial Separations Granted,2004,3,Judicial Separation,Old,No,95
+Order made,Judicial Separations Granted,2004,3,Judicial Separation,Old,Yes,2
+Petitions,,2004,3,Dissolution of Marriage,Old,,41418
+Petitions,,2004,3,Nullity of Marriage,Old,,132
+Petitions,,2004,3,Judicial Separation,Old,,205
+Order made,Decree Absolute,2004,4,Nullity of Marriage,Old,No,60
+Order made,Decree Absolute,2004,4,Dissolution of Marriage,Old,No,36531
+Order made,Decree Absolute,2004,4,Dissolution of Marriage,Old,Yes,360
+Order made,Decree Nisi,2004,4,Nullity of Marriage,Old,Yes,2
+Order made,Decree Nisi,2004,4,Dissolution of Marriage,Old,Yes,387
+Order made,Decree Nisi,2004,4,Nullity of Marriage,Old,No,82
+Order made,Decree Nisi,2004,4,Dissolution of Marriage,Old,No,34733
+Order made,Judicial Separations Granted,2004,4,Judicial Separation,Old,No,79
+Order made,Judicial Separations Granted,2004,4,Judicial Separation,Old,Yes,1
+Petitions,,2004,4,Nullity of Marriage,Old,,114
+Petitions,,2004,4,Dissolution of Marriage,Old,,38432
+Petitions,,2004,4,Judicial Separation,Old,,170
+Order made,Decree Absolute,2005,1,Nullity of Marriage,Old,Yes,6
+Order made,Decree Absolute,2005,1,Dissolution of Marriage,Old,No,35492
+Order made,Decree Absolute,2005,1,Nullity of Marriage,Old,No,63
+Order made,Decree Absolute,2005,1,Dissolution of Marriage,Old,Yes,430
+Order made,Decree Nisi,2005,1,Dissolution of Marriage,Old,No,36604
+Order made,Decree Nisi,2005,1,Nullity of Marriage,Old,Yes,3
+Order made,Decree Nisi,2005,1,Dissolution of Marriage,Old,Yes,395
+Order made,Decree Nisi,2005,1,Nullity of Marriage,Old,No,59
+Order made,Judicial Separations Granted,2005,1,Judicial Separation,Old,Yes,1
+Order made,Judicial Separations Granted,2005,1,Judicial Separation,Old,No,84
+Petitions,,2005,1,Dissolution of Marriage,Old,,37385
+Petitions,,2005,1,Judicial Separation,Old,,167
+Petitions,,2005,1,Nullity of Marriage,Old,,104
+Order made,Decree Absolute,2005,2,Nullity of Marriage,Old,No,57
+Order made,Decree Absolute,2005,2,Dissolution of Marriage,Old,No,35958
+Order made,Decree Absolute,2005,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2005,2,Dissolution of Marriage,Old,Yes,391
+Order made,Decree Nisi,2005,2,Dissolution of Marriage,Old,No,35974
+Order made,Decree Nisi,2005,2,Dissolution of Marriage,Old,Yes,367
+Order made,Decree Nisi,2005,2,Nullity of Marriage,Old,No,54
+Order made,Decree Nisi,2005,2,Nullity of Marriage,Old,Yes,1
+Order made,Judicial Separations Granted,2005,2,Judicial Separation,Old,Yes,2
+Order made,Judicial Separations Granted,2005,2,Judicial Separation,Old,No,85
+Petitions,,2005,2,Judicial Separation,Old,,210
+Petitions,,2005,2,Dissolution of Marriage,Old,,38927
+Petitions,,2005,2,Nullity of Marriage,Old,,104
+Order made,Decree Absolute,2005,3,Nullity of Marriage,Old,No,59
+Order made,Decree Absolute,2005,3,Dissolution of Marriage,Old,No,35489
+Order made,Decree Absolute,2005,3,Dissolution of Marriage,Old,Yes,387
+Order made,Decree Nisi,2005,3,Dissolution of Marriage,Old,Yes,356
+Order made,Decree Nisi,2005,3,Nullity of Marriage,Old,No,61
+Order made,Decree Nisi,2005,3,Dissolution of Marriage,Old,No,35789
+Order made,Decree Nisi,2005,3,Nullity of Marriage,Old,Yes,1
+Order made,Judicial Separations Granted,2005,3,Judicial Separation,Old,No,107
+Order made,Judicial Separations Granted,2005,3,Judicial Separation,Old,Yes,3
+Petitions,,2005,3,Nullity of Marriage,Old,,107
+Petitions,,2005,3,Dissolution of Marriage,Old,,37937
+Petitions,,2005,3,Judicial Separation,Old,,169
+Order made,Decree Absolute,2005,4,Dissolution of Marriage,Old,No,32926
+Order made,Decree Absolute,2005,4,Dissolution of Marriage,Old,Yes,328
+Order made,Decree Absolute,2005,4,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2005,4,Nullity of Marriage,Old,No,61
+Order made,Decree Nisi,2005,4,Dissolution of Marriage,Old,Yes,315
+Order made,Decree Nisi,2005,4,Dissolution of Marriage,Old,No,32003
+Order made,Decree Nisi,2005,4,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2005,4,Nullity of Marriage,Old,No,78
+Order made,Judicial Separations Granted,2005,4,Judicial Separation,Old,No,76
+Petitions,,2005,4,Dissolution of Marriage,Old,,35572
+Petitions,,2005,4,Nullity of Marriage,Old,,108
+Petitions,,2005,4,Judicial Separation,Old,,143
+Order made,Decree Absolute,2006,1,Nullity of Marriage,Old,Yes,3
+Order made,Decree Absolute,2006,1,Dissolution of Marriage,Old,No,33928
+Order made,Decree Absolute,2006,1,Nullity of Marriage,Old,No,70
+Order made,Decree Absolute,2006,1,Dissolution of Marriage,Old,Yes,312
+Order made,Decree Nisi,2006,1,Dissolution of Marriage,Old,No,34573
+Order made,Decree Nisi,2006,1,Dissolution of Marriage,Old,Yes,342
+Order made,Decree Nisi,2006,1,Nullity of Marriage,Old,No,60
+Order made,Decree Nisi,2006,1,Nullity of Marriage,Old,Yes,2
+Order made,Judicial Separations Granted,2006,1,Judicial Separation,Old,Yes,2
+Order made,Judicial Separations Granted,2006,1,Judicial Separation,Old,No,80
+Petitions,,2006,1,Judicial Separation,Old,,179
+Petitions,,2006,1,Dissolution of Marriage,Old,,38167
+Petitions,,2006,1,Nullity of Marriage,Old,,107
+Order made,Decree Absolute,2006,2,Dissolution of Marriage,Old,Yes,322
+Order made,Decree Absolute,2006,2,Nullity of Marriage,Old,No,69
+Order made,Decree Absolute,2006,2,Dissolution of Marriage,Old,No,32591
+Order made,Decree Absolute,2006,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2006,2,Dissolution of Marriage,Old,No,32762
+Order made,Decree Nisi,2006,2,Dissolution of Marriage,Old,Yes,325
+Order made,Decree Nisi,2006,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2006,2,Nullity of Marriage,Old,No,71
+Order made,Judicial Separations Granted,2006,2,Judicial Separation,Old,No,94
+Order made,Judicial Separations Granted,2006,2,Judicial Separation,Old,Yes,2
+Petitions,,2006,2,Judicial Separation,Old,,144
+Petitions,,2006,2,Dissolution of Marriage,Old,,36252
+Petitions,,2006,2,Nullity of Marriage,Old,,99
+Order made,Decree Absolute,2006,3,Dissolution of Marriage,Old,Yes,330
+Order made,Decree Absolute,2006,3,Dissolution of Marriage,Old,No,32486
+Order made,Decree Absolute,2006,3,Nullity of Marriage,Old,No,51
+Order made,Decree Nisi,2006,3,Dissolution of Marriage,Old,No,33243
+Order made,Decree Nisi,2006,3,Nullity of Marriage,Old,No,43
+Order made,Decree Nisi,2006,3,Dissolution of Marriage,Old,Yes,290
+Order made,Judicial Separations Granted,2006,3,Judicial Separation,Old,No,73
+Order made,Judicial Separations Granted,2006,3,Judicial Separation,Old,Yes,3
+Petitions,,2006,3,Judicial Separation,Old,,136
+Petitions,,2006,3,Nullity of Marriage,Old,,93
+Petitions,,2006,3,Dissolution of Marriage,Old,,37045
+Order made,Decree Absolute,2006,4,Dissolution of Marriage,Old,No,32047
+Order made,Decree Absolute,2006,4,Nullity of Marriage,Old,No,48
+Order made,Decree Absolute,2006,4,Dissolution of Marriage,Old,Yes,294
+Order made,Decree Nisi,2006,4,Dissolution of Marriage,Old,Yes,304
+Order made,Decree Nisi,2006,4,Nullity of Marriage,Old,No,65
+Order made,Decree Nisi,2006,4,Dissolution of Marriage,Old,No,32866
+Order made,Decree Nisi,2006,4,Nullity of Marriage,Old,Yes,1
+Order made,Judicial Separations Granted,2006,4,Judicial Separation,Old,No,63
+Order made,Judicial Separations Granted,2006,4,Judicial Separation,Old,Yes,1
+Petitions,,2006,4,Dissolution of Marriage,Old,,35301
+Petitions,,2006,4,Nullity of Marriage,Old,,89
+Petitions,,2006,4,Judicial Separation,Old,,142
+Order made,Decree Absolute,2007,1,Nullity of Marriage,Old,No,61
+Order made,Decree Absolute,2007,1,Nullity of Marriage,Old,Yes,2
+Order made,Decree Absolute,2007,1,Dissolution of Marriage,Old,Yes,292
+Order made,Decree Absolute,2007,1,Dissolution of Marriage,Old,No,34320
+Order made,Decree Nisi,2007,1,Dissolution of Marriage,Old,Yes,316
+Order made,Decree Nisi,2007,1,Nullity of Marriage,Old,No,37
+Order made,Decree Nisi,2007,1,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2007,1,Dissolution of Marriage,Old,No,34649
+Order made,Judicial Separations Granted,2007,1,Judicial Separation,Old,No,82
+Order made,Judicial Separations Granted,2007,1,Judicial Separation,Old,Yes,2
+Petitions,,2007,1,Judicial Separation,Old,,143
+Petitions,,2007,1,Nullity of Marriage,Old,,71
+Petitions,,2007,1,Dissolution of Marriage,Old,,37951
+Order made,Decree Absolute,2007,2,Nullity of Marriage,Old,No,45
+Order made,Decree Absolute,2007,2,Dissolution of Marriage,Old,No,32819
+Order made,Decree Absolute,2007,2,Dissolution of Marriage,Old,Yes,310
+Order made,Decree Nisi,2007,2,Dissolution of Marriage,Old,No,32156
+Order made,Decree Nisi,2007,2,Dissolution of Marriage,Old,Yes,256
+Order made,Decree Nisi,2007,2,Nullity of Marriage,Old,No,55
+Order made,Judicial Separations Granted,2007,2,Judicial Separation,Old,Yes,3
+Order made,Judicial Separations Granted,2007,2,Judicial Separation,Old,No,71
+Petitions,,2007,2,Nullity of Marriage,Old,,93
+Petitions,,2007,2,Dissolution of Marriage,Old,,35365
+Petitions,,2007,2,Judicial Separation,Old,,137
+Order made,Decree Absolute,2007,3,Nullity of Marriage,Old,No,48
+Order made,Decree Absolute,2007,3,Nullity of Marriage,Old,Yes,2
+Order made,Decree Absolute,2007,3,Dissolution of Marriage,Old,Yes,306
+Order made,Decree Absolute,2007,3,Dissolution of Marriage,Old,No,32823
+Order made,Decree Nisi,2007,3,Dissolution of Marriage,Old,Yes,292
+Order made,Decree Nisi,2007,3,Nullity of Marriage,Old,No,38
+Order made,Decree Nisi,2007,3,Nullity of Marriage,Old,Yes,2
+Order made,Decree Nisi,2007,3,Dissolution of Marriage,Old,No,33577
+Order made,Judicial Separations Granted,2007,3,Judicial Separation,Old,Yes,2
+Order made,Judicial Separations Granted,2007,3,Judicial Separation,Old,No,73
+Petitions,,2007,3,Nullity of Marriage,Old,,94
+Petitions,,2007,3,Dissolution of Marriage,Old,,35701
+Petitions,,2007,3,Judicial Separation,Old,,136
+Order made,Decree Absolute,2007,4,Dissolution of Marriage,Old,Yes,233
+Order made,Decree Absolute,2007,4,Dissolution of Marriage,Old,No,27576
+Order made,Decree Absolute,2007,4,Nullity of Marriage,Old,No,34
+Order made,Decree Nisi,2007,4,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2007,4,Dissolution of Marriage,Old,No,31612
+Order made,Decree Nisi,2007,4,Nullity of Marriage,Old,No,49
+Order made,Decree Nisi,2007,4,Dissolution of Marriage,Old,Yes,255
+Order made,Judicial Separations Granted,2007,4,Judicial Separation,Old,No,67
+Order made,Judicial Separations Granted,2007,4,Judicial Separation,Old,Yes,2
+Petitions,,2007,4,Nullity of Marriage,Old,,78
+Petitions,,2007,4,Dissolution of Marriage,Old,,26836
+Petitions,,2007,4,Judicial Separation,Old,,80
+Order made,Decree Absolute,2008,1,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2008,1,Nullity of Marriage,Old,No,51
+Order made,Decree Absolute,2008,1,Dissolution of Marriage,Old,No,31726
+Order made,Decree Absolute,2008,1,Dissolution of Marriage,Old,Yes,251
+Order made,Decree Nisi,2008,1,Nullity of Marriage,Old,No,51
+Order made,Decree Nisi,2008,1,Dissolution of Marriage,Old,Yes,273
+Order made,Decree Nisi,2008,1,Nullity of Marriage,Old,Yes,3
+Order made,Decree Nisi,2008,1,Dissolution of Marriage,Old,No,30841
+Order made,Decree Nisi,2003,3,Dissolution of Marriage,Old,No,39677
+Order made,Decree Nisi,2003,3,Nullity of Marriage,Old,No,45
+Order made,Judicial Separations Granted,2003,3,Judicial Separation,Old,No,111
+Order made,Judicial Separations Granted,2003,3,Judicial Separation,Old,Yes,3
+Petitions,,2003,3,Dissolution of Marriage,Old,,42889
+Petitions,,2003,3,Judicial Separation,Old,,208
+Petitions,,2003,3,Nullity of Marriage,Old,,110
+Order made,Decree Absolute,2003,4,Nullity of Marriage,Old,Yes,3
+Order made,Decree Absolute,2003,4,Dissolution of Marriage,Old,Yes,410
+Order made,Decree Absolute,2003,4,Dissolution of Marriage,Old,No,37242
+Order made,Decree Absolute,2003,4,Nullity of Marriage,Old,No,42
+Order made,Decree Nisi,2003,4,Nullity of Marriage,Old,No,46
+Order made,Decree Nisi,2003,4,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2003,4,Dissolution of Marriage,Old,Yes,404
+Order made,Decree Nisi,2003,4,Dissolution of Marriage,Old,No,37552
+Order made,Judicial Separations Granted,2003,4,Judicial Separation,Old,Yes,4
+Order made,Judicial Separations Granted,2003,4,Judicial Separation,Old,No,89
+Petitions,,2003,4,Dissolution of Marriage,Old,,40815
+Petitions,,2003,4,Nullity of Marriage,Old,,120
+Petitions,,2003,4,Judicial Separation,Old,,168
+Order made,Decree Absolute,2004,1,Dissolution of Marriage,Old,No,38659
+Order made,Decree Absolute,2004,1,Dissolution of Marriage,Old,Yes,432
+Order made,Decree Absolute,2004,1,Nullity of Marriage,Old,No,55
+Order made,Decree Nisi,2004,1,Nullity of Marriage,Old,No,77
+Order made,Decree Nisi,2004,1,Dissolution of Marriage,Old,No,39215
+Order made,Decree Nisi,2004,1,Dissolution of Marriage,Old,Yes,419
+Order made,Judicial Separations Granted,2004,1,Judicial Separation,Old,No,98
+Order made,Judicial Separations Granted,2004,1,Judicial Separation,Old,Yes,1
+Petitions,,2004,1,Dissolution of Marriage,Old,,44819
+Petitions,,2004,1,Judicial Separation,Old,,203
+Petitions,,2004,1,Nullity of Marriage,Old,,116
+Order made,Decree Absolute,2004,2,Dissolution of Marriage,Old,Yes,406
+Order made,Judicial Separations Granted,2008,1,Judicial Separation,Old,No,52
+Order made,Judicial Separations Granted,2008,1,Judicial Separation,Old,Yes,1
+Petitions,,2008,1,Nullity of Marriage,Old,,69
+Petitions,,2008,1,Dissolution of Marriage,Old,,32814
+Petitions,,2008,1,Judicial Separation,Old,,111
+Order made,Decree Absolute,2008,2,Nullity of Marriage,Old,Yes,2
+Order made,Decree Absolute,2008,2,Dissolution of Marriage,Old,No,30582
+Order made,Decree Absolute,2008,2,Nullity of Marriage,Old,No,42
+Order made,Decree Absolute,2008,2,Dissolution of Marriage,Old,Yes,269
+Order made,Decree Nisi,2008,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2008,2,Nullity of Marriage,Old,No,51
+Order made,Decree Nisi,2008,2,Dissolution of Marriage,Old,No,29386
+Order made,Decree Nisi,2008,2,Dissolution of Marriage,Old,Yes,257
+Order made,Judicial Separations Granted,2008,2,Judicial Separation,Old,Yes,3
+Order made,Judicial Separations Granted,2008,2,Judicial Separation,Old,No,45
+Petitions,,2008,2,Judicial Separation,Old,,106
+Petitions,,2008,2,Nullity of Marriage,Old,,81
+Petitions,,2008,2,Dissolution of Marriage,Old,,33376
+Order made,Decree Absolute,2008,3,Nullity of Marriage,Old,No,50
+Order made,Decree Absolute,2008,3,Dissolution of Marriage,Old,Yes,237
+Order made,Decree Absolute,2008,3,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2008,3,Dissolution of Marriage,Old,No,30356
+Order made,Decree Nisi,2008,3,Nullity of Marriage,Old,Yes,3
+Order made,Decree Nisi,2008,3,Dissolution of Marriage,Old,Yes,232
+Order made,Decree Nisi,2008,3,Dissolution of Marriage,Old,No,31334
+Order made,Decree Nisi,2008,3,Nullity of Marriage,Old,No,55
+Order made,Judicial Separations Granted,2008,3,Judicial Separation,Old,Yes,1
+Order made,Judicial Separations Granted,2008,3,Judicial Separation,Old,No,55
+Petitions,,2008,3,Dissolution of Marriage,Old,,32461
+Petitions,,2008,3,Judicial Separation,Old,,106
+Petitions,,2008,3,Nullity of Marriage,Old,,101
+Order made,Decree Absolute,2008,4,Nullity of Marriage,Old,Yes,3
+Order made,Decree Absolute,2008,4,Nullity of Marriage,Old,No,50
+Order made,Decree Absolute,2008,4,Dissolution of Marriage,Old,Yes,214
+Order made,Decree Absolute,2008,4,Dissolution of Marriage,Old,No,28624
+Order made,Decree Nisi,2008,4,Nullity of Marriage,Old,No,47
+Order made,Decree Nisi,2008,4,Dissolution of Marriage,Old,No,27991
+Order made,Decree Nisi,2008,4,Nullity of Marriage,Old,Yes,4
+Order made,Decree Nisi,2008,4,Dissolution of Marriage,Old,Yes,223
+Order made,Judicial Separations Granted,2008,4,Judicial Separation,Old,No,54
+Petitions,,2008,4,Judicial Separation,Old,,95
+Petitions,,2008,4,Dissolution of Marriage,Old,,29920
+Petitions,,2008,4,Nullity of Marriage,Old,,81
+Order made,Decree Absolute,2009,1,Dissolution of Marriage,Old,No,28473
+Order made,Decree Absolute,2009,1,Nullity of Marriage,Old,Yes,5
+Order made,Decree Absolute,2009,1,Dissolution of Marriage,Old,Yes,232
+Order made,Decree Absolute,2009,1,Nullity of Marriage,Old,No,43
+Order made,Decree Nisi,2009,1,Dissolution of Marriage,Old,No,27786
+Order made,Decree Nisi,2009,1,Nullity of Marriage,Old,Yes,2
+Order made,Decree Nisi,2009,1,Dissolution of Marriage,Old,Yes,232
+Order made,Decree Nisi,2009,1,Nullity of Marriage,Old,No,47
+Order made,Judicial Separations Granted,2009,1,Judicial Separation,Old,No,55
+Petitions,,2009,1,Nullity of Marriage,Old,,81
+Petitions,,2009,1,Judicial Separation,Old,,85
+Petitions,,2009,1,Dissolution of Marriage,Old,,32579
+Order made,Decree Absolute,2009,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2009,2,Dissolution of Marriage,Old,No,27081
+Order made,Decree Absolute,2009,2,Nullity of Marriage,Old,No,53
+Order made,Decree Absolute,2009,2,Dissolution of Marriage,Old,Yes,202
+Order made,Decree Nisi,2009,2,Dissolution of Marriage,Old,No,27864
+Order made,Decree Nisi,2009,2,Nullity of Marriage,Old,No,47
+Order made,Decree Nisi,2009,2,Dissolution of Marriage,Old,Yes,209
+Order made,Judicial Separations Granted,2009,2,Judicial Separation,Old,Yes,1
+Order made,Judicial Separations Granted,2009,2,Judicial Separation,Old,No,40
+Petitions,,2009,2,Dissolution of Marriage,Old,,32497
+Petitions,,2009,2,Nullity of Marriage,Old,,73
+Petitions,,2009,2,Judicial Separation,Old,,103
+Order made,Decree Absolute,2009,3,Dissolution of Marriage,Old,Yes,206
+Order made,Decree Absolute,2009,3,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2009,3,Nullity of Marriage,Old,No,46
+Order made,Decree Absolute,2009,3,Dissolution of Marriage,Old,No,28938
+Order made,Decree Nisi,2009,3,Nullity of Marriage,Old,Yes,3
+Order made,Decree Nisi,2009,3,Dissolution of Marriage,Old,No,32264
+Order made,Decree Nisi,2009,3,Nullity of Marriage,Old,No,47
+Order made,Decree Nisi,2009,3,Dissolution of Marriage,Old,Yes,212
+Order made,Judicial Separations Granted,2009,3,Judicial Separation,Old,Yes,1
+Order made,Judicial Separations Granted,2009,3,Judicial Separation,Old,No,45
+Petitions,,2009,3,Nullity of Marriage,Old,,70
+Petitions,,2009,3,Dissolution of Marriage,Old,,34402
+Petitions,,2009,3,Judicial Separation,Old,,79
+Order made,Decree Absolute,2009,4,Nullity of Marriage,Old,Yes,2
+Order made,Decree Absolute,2009,4,Dissolution of Marriage,Old,Yes,199
+Order made,Decree Absolute,2009,4,Dissolution of Marriage,Old,No,29684
+Order made,Decree Absolute,2009,4,Nullity of Marriage,Old,No,46
+Order made,Decree Nisi,2009,4,Dissolution of Marriage,Old,Yes,195
+Order made,Decree Nisi,2009,4,Nullity of Marriage,Old,No,52
+Order made,Decree Nisi,2009,4,Dissolution of Marriage,Old,No,30585
+Order made,Decree Nisi,2009,4,Nullity of Marriage,Old,Yes,1
+Order made,Judicial Separations Granted,2009,4,Judicial Separation,Old,No,56
+Petitions,,2009,4,Judicial Separation,Old,,89
+Petitions,,2009,4,Nullity of Marriage,Old,,67
+Petitions,,2009,4,Dissolution of Marriage,Old,,32418
+Order made,Decree Absolute,2010,1,Dissolution of Marriage,Old,No,30095
+Order made,Decree Absolute,2010,1,Dissolution of Marriage,Old,Yes,185
+Order made,Decree Absolute,2010,1,Nullity of Marriage,Old,No,42
+Order made,Decree Absolute,2010,1,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2010,1,Dissolution of Marriage,Old,Yes,217
+Order made,Decree Nisi,2010,1,Dissolution of Marriage,Old,No,30594
+Order made,Decree Nisi,2010,1,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2010,1,Nullity of Marriage,Old,No,39
+Order made,Judicial Separations Granted,2010,1,Judicial Separation,Old,No,37
+Petitions,,2010,1,Dissolution of Marriage,Old,,34525
+Petitions,,2010,1,Nullity of Marriage,Old,,64
+Petitions,,2010,1,Judicial Separation,Old,,75
+Order made,Decree Absolute,2010,2,Dissolution of Marriage,Old,No,29546
+Order made,Decree Absolute,2010,2,Dissolution of Marriage,Old,Yes,218
+Order made,Decree Absolute,2010,2,Nullity of Marriage,Old,No,36
+Order made,Decree Nisi,2010,2,Nullity of Marriage,Old,No,32
+Order made,Decree Nisi,2010,2,Dissolution of Marriage,Old,No,29574
+Order made,Decree Nisi,2010,2,Dissolution of Marriage,Old,Yes,176
+Order made,Judicial Separations Granted,2010,2,Judicial Separation,Old,Yes,2
+Order made,Judicial Separations Granted,2010,2,Judicial Separation,Old,No,42
+Petitions,,2010,2,Judicial Separation,Old,,77
+Petitions,,2010,2,Nullity of Marriage,Old,,82
+Petitions,,2010,2,Dissolution of Marriage,Old,,33380
+Order made,Decree Absolute,2010,3,Dissolution of Marriage,Old,Yes,191
+Order made,Decree Absolute,2010,3,Dissolution of Marriage,Old,No,30329
+Order made,Decree Absolute,2010,3,Nullity of Marriage,Old,No,32
+Order made,Decree Nisi,2010,3,Nullity of Marriage,Old,No,47
+Order made,Decree Nisi,2010,3,Dissolution of Marriage,Old,Yes,185
+Order made,Decree Nisi,2010,3,Nullity of Marriage,Old,Yes,2
+Order made,Decree Nisi,2010,3,Dissolution of Marriage,Old,No,33439
+Order made,Judicial Separations Granted,2010,3,Judicial Separation,Old,Yes,3
+Order made,Judicial Separations Granted,2010,3,Judicial Separation,Old,No,36
+Petitions,,2010,3,Dissolution of Marriage,Old,,34694
+Petitions,,2010,3,Nullity of Marriage,Old,,87
+Petitions,,2010,3,Judicial Separation,Old,,65
+Order made,Decree Absolute,2010,4,Nullity of Marriage,Old,No,43
+Order made,Decree Absolute,2010,4,Dissolution of Marriage,Old,Yes,177
+Order made,Decree Absolute,2010,4,Nullity of Marriage,Old,Yes,2
+Order made,Decree Absolute,2010,4,Dissolution of Marriage,Old,No,30092
+Order made,Decree Nisi,2010,4,Dissolution of Marriage,Old,No,30907
+Order made,Decree Nisi,2010,4,Nullity of Marriage,Old,No,45
+Order made,Decree Nisi,2010,4,Dissolution of Marriage,Old,Yes,185
+Order made,Decree Nisi,2010,4,Nullity of Marriage,Old,Yes,1
+Order made,Judicial Separations Granted,2010,4,Judicial Separation,Old,Yes,1
+Order made,Judicial Separations Granted,2010,4,Judicial Separation,Old,No,49
+Petitions,,2010,4,Judicial Separation,Old,,85
+Petitions,,2010,4,Nullity of Marriage,Old,,65
+Petitions,,2010,4,Dissolution of Marriage,Old,,30669
+Order made,Decree Absolute,2011,1,Dissolution of Marriage,Old,No,30663
+Order made,Decree Absolute,2011,1,Nullity of Marriage,Old,No,47
+Order made,Decree Absolute,2011,1,Dissolution of Marriage,Old,Yes,201
+Order made,Decree Nisi,2011,1,Dissolution of Marriage,Old,Yes,202
+Order made,Decree Nisi,2011,1,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2011,1,Nullity of Marriage,Old,No,50
+Order made,Decree Nisi,2011,1,Dissolution of Marriage,Old,No,30164
+Order made,Judicial Separations Granted,2011,1,Judicial Separation,Old,Yes,2
+Order made,Judicial Separations Granted,2011,1,Judicial Separation,Old,No,50
+Petitions,,2011,1,Nullity of Marriage,Old,,78
+Petitions,,2011,1,Dissolution of Marriage,Old,,34655
+Petitions,,2011,1,Judicial Separation,Old,,80
+Order made,Decree Absolute,2011,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2011,2,Dissolution of Marriage,Old,Yes,185
+Order made,Decree Absolute,2011,2,Dissolution of Marriage,Old,No,28841
+Order made,Decree Absolute,2011,2,Nullity of Marriage,Old,No,42
+Order made,Decree Nisi,2011,2,Nullity of Marriage,Old,No,40
+Order made,Decree Nisi,2011,2,Dissolution of Marriage,Old,Yes,185
+Order made,Decree Nisi,2011,2,Dissolution of Marriage,Old,No,28976
+Order made,Judicial Separations Granted,2011,2,Judicial Separation,Old,No,44
+Petitions,,2011,2,Judicial Separation,Old,,62
+Petitions,,2011,2,Dissolution of Marriage,Old,,29483
+Petitions,,2011,2,Nullity of Marriage,Old,,70
+Order made,Decree Absolute,2011,3,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2011,3,Dissolution of Marriage,Old,No,29992
+Order made,Decree Absolute,2011,3,Nullity of Marriage,Old,No,65
+Order made,Decree Absolute,2011,3,Dissolution of Marriage,Old,Yes,182
+Order made,Decree Nisi,2011,3,Dissolution of Marriage,Old,No,31240
+Order made,Decree Nisi,2011,3,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2011,3,Nullity of Marriage,Old,No,69
+Order made,Decree Nisi,2011,3,Dissolution of Marriage,Old,Yes,208
+Order made,Judicial Separations Granted,2011,3,Judicial Separation,Old,No,26
+Petitions,,2011,3,Nullity of Marriage,Old,,91
+Petitions,,2011,3,Judicial Separation,Old,,40
+Petitions,,2011,3,Dissolution of Marriage,Old,,34516
+Order made,Decree Absolute,2011,4,Dissolution of Marriage,Old,Yes,185
+Order made,Decree Absolute,2011,4,Nullity of Marriage,Old,Yes,2
+Order made,Decree Absolute,2011,4,Nullity of Marriage,Old,No,46
+Order made,Decree Absolute,2011,4,Dissolution of Marriage,Old,No,29239
+Order made,Decree Nisi,2011,4,Dissolution of Marriage,Old,Yes,155
+Order made,Decree Nisi,2011,4,Dissolution of Marriage,Old,No,31104
+Order made,Decree Nisi,2011,4,Nullity of Marriage,Old,No,63
+Order made,Decree Nisi,2011,4,Nullity of Marriage,Old,Yes,2
+Order made,Judicial Separations Granted,2011,4,Judicial Separation,Old,Yes,1
+Order made,Judicial Separations Granted,2011,4,Judicial Separation,Old,No,27
+Petitions,,2011,4,Dissolution of Marriage,Old,,30604
+Petitions,,2011,4,Judicial Separation,Old,,47
+Petitions,,2011,4,Nullity of Marriage,Old,,106
+Order made,Decree Absolute,2012,1,Dissolution of Marriage,Old,No,31442
+Order made,Decree Absolute,2012,1,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2012,1,Dissolution of Marriage,Old,Yes,170
+Order made,Decree Absolute,2012,1,Nullity of Marriage,Old,No,71
+Order made,Decree Nisi,2012,1,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2012,1,Dissolution of Marriage,Old,No,31020
+Order made,Decree Nisi,2012,1,Nullity of Marriage,Old,No,75
+Order made,Decree Nisi,2012,1,Dissolution of Marriage,Old,Yes,164
+Order made,Judicial Separations Granted,2012,1,Judicial Separation,Old,No,31
+Petitions,,2012,1,Dissolution of Marriage,Old,,33688
+Petitions,,2012,1,Nullity of Marriage,Old,,96
+Petitions,,2012,1,Judicial Separation,Old,,57
+Order made,Decree Absolute,2012,2,Dissolution of Marriage,Old,No,29382
+Order made,Decree Absolute,2012,2,Nullity of Marriage,Old,No,69
+Order made,Decree Absolute,2012,2,Nullity of Marriage,Old,Yes,2
+Order made,Decree Absolute,2012,2,Dissolution of Marriage,Old,Yes,167
+Order made,Decree Nisi,2012,2,Dissolution of Marriage,Old,No,30620
+Order made,Decree Nisi,2012,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2012,2,Dissolution of Marriage,Old,Yes,171
+Order made,Decree Nisi,2012,2,Nullity of Marriage,Old,No,70
+Order made,Judicial Separations Granted,2012,2,Judicial Separation,Old,No,26
+Petitions,,2012,2,Nullity of Marriage,Old,,110
+Petitions,,2012,2,Dissolution of Marriage,Old,,30495
+Petitions,,2012,2,Judicial Separation,Old,,57
+Order made,Decree Absolute,2012,3,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2012,3,Dissolution of Marriage,Old,Yes,166
+Order made,Decree Absolute,2012,3,Dissolution of Marriage,Old,No,30025
+Order made,Decree Absolute,2012,3,Nullity of Marriage,Old,No,71
+Order made,Decree Nisi,2012,3,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2012,3,Dissolution of Marriage,Old,No,30965
+Order made,Decree Nisi,2012,3,Nullity of Marriage,Old,No,74
+Order made,Decree Nisi,2012,3,Dissolution of Marriage,Old,Yes,137
+Order made,Judicial Separations Granted,2012,3,Judicial Separation,Old,Yes,1
+Order made,Judicial Separations Granted,2012,3,Judicial Separation,Old,No,34
+Petitions,,2012,3,Nullity of Marriage,Old,,107
+Petitions,,2012,3,Judicial Separation,Old,,54
+Petitions,,2012,3,Dissolution of Marriage,Old,,31049
+Order made,Decree Absolute,2012,4,Dissolution of Marriage,Old,Yes,153
+Order made,Decree Absolute,2012,4,Nullity of Marriage,Old,No,74
+Order made,Decree Absolute,2012,4,Dissolution of Marriage,Old,No,29011
+Order made,Decree Absolute,2012,4,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2012,4,Nullity of Marriage,Old,No,77
+Order made,Decree Nisi,2012,4,Dissolution of Marriage,Old,No,29102
+Order made,Decree Nisi,2012,4,Dissolution of Marriage,Old,Yes,158
+Order made,Decree Nisi,2012,4,Nullity of Marriage,Old,Yes,3
+Order made,Judicial Separations Granted,2012,4,Judicial Separation,Old,Yes,1
+Order made,Judicial Separations Granted,2012,4,Judicial Separation,Old,No,34
+Petitions,,2012,4,Judicial Separation,Old,,60
+Petitions,,2012,4,Dissolution of Marriage,Old,,29163
+Petitions,,2012,4,Nullity of Marriage,Old,,132
+Order made,Decree Absolute,2013,1,Nullity of Marriage,Old,Yes,3
+Order made,Decree Absolute,2013,1,Dissolution of Marriage,Old,Yes,150
+Order made,Decree Absolute,2013,1,Nullity of Marriage,Old,No,75
+Order made,Decree Absolute,2013,1,Dissolution of Marriage,Old,No,28533
+Order made,Decree Nisi,2013,1,Dissolution of Marriage,Old,Yes,156
+Order made,Decree Nisi,2013,1,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2013,1,Dissolution of Marriage,Old,No,27646
+Order made,Decree Nisi,2013,1,Nullity of Marriage,Old,No,86
+Order made,Judicial Separations Granted,2013,1,Judicial Separation,Old,No,37
+Petitions,,2013,1,Nullity of Marriage,Old,,152
+Petitions,,2013,1,Dissolution of Marriage,Old,,30890
+Petitions,,2013,1,Judicial Separation,Old,,70
+Order made,Decree Absolute,2013,2,Dissolution of Marriage,Old,Yes,161
+Order made,Decree Absolute,2013,2,Dissolution of Marriage,Old,No,28020
+Order made,Decree Absolute,2013,2,Nullity of Marriage,Old,No,92
+Order made,Decree Nisi,2013,2,Dissolution of Marriage,Old,Yes,144
+Order made,Decree Nisi,2013,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2013,2,Dissolution of Marriage,Old,No,28919
+Order made,Decree Nisi,2024,1,Nullity of Marriage,Old,No,57
+Order made,Judicial Separations Granted,2024,1,Judicial Separation,Old,No,13
+Order made,Judicial Separations Granted,2024,1,Judicial Separation,Old,Yes,1
+Order made,Judicial Separations Granted,2024,1,Judicial Separation,New,,47
+Petitions,,2024,1,Nullity of Marriage,Old,,104
+Petitions,,2024,1,Dissolution of Marriage,New,,29797
+Petitions,,2024,1,Judicial Separation,New,,90
+Order made,Decree Absolute,2024,2,Nullity of Marriage,Old,No,50
+Order made,Decree Absolute,2024,2,Dissolution of Marriage,Old,No,3085
+Order made,Decree Absolute,2024,2,Dissolution of Marriage,Old,Yes,26
+Order made,Decree Absolute,2024,2,Dissolution of Marriage,New,,25917
+Order made,Decree Nisi,2024,2,Dissolution of Marriage,Old,Yes,26
+Order made,Decree Nisi,2024,2,Dissolution of Marriage,Old,No,977
+Order made,Decree Nisi,2024,2,Nullity of Marriage,Old,No,30
+Order made,Decree Nisi,2024,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2024,2,Dissolution of Marriage,New,,28347
+Order made,Judicial Separations Granted,2024,2,Judicial Separation,Old,No,13
+Order made,Judicial Separations Granted,2024,2,Judicial Separation,New,,44
+Petitions,,2024,2,Judicial Separation,New,,87
+Petitions,,2024,2,Dissolution of Marriage,New,,27454
+Petitions,,2024,2,Nullity of Marriage,Old,,127
+Order made,Decree Absolute,2024,3,Dissolution of Marriage,New,,25064
+Order made,Decree Absolute,2024,3,Nullity of Marriage,Old,No,37
+Order made,Decree Absolute,2024,3,Dissolution of Marriage,Old,Yes,33
+Order made,Decree Absolute,2024,3,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2024,3,Dissolution of Marriage,Old,No,2176
+Order made,Decree Nisi,2024,3,Dissolution of Marriage,Old,No,663
+Order made,Decree Nisi,2024,3,Dissolution of Marriage,Old,Yes,21
+Order made,Decree Nisi,2024,3,Dissolution of Marriage,New,,27830
+Order made,Decree Nisi,2024,3,Nullity of Marriage,Old,No,35
+Order made,Judicial Separations Granted,2024,3,Judicial Separation,Old,No,5
+Order made,Judicial Separations Granted,2024,3,Judicial Separation,New,,37
+Petitions,,2024,3,Nullity of Marriage,Old,,121
+Petitions,,2024,3,Dissolution of Marriage,New,,28066
+Petitions,,2024,3,Judicial Separation,New,,91
+Order made,Decree Absolute,2024,4,Dissolution of Marriage,Old,Yes,33
+Order made,Decree Absolute,2024,4,Nullity of Marriage,Old,No,46
+Order made,Decree Absolute,2024,4,Dissolution of Marriage,New,,21129
+Order made,Decree Absolute,2024,4,Dissolution of Marriage,Old,No,2253
+Order made,Decree Absolute,2024,4,Nullity of Marriage,Old,Yes,3
+Order made,Decree Nisi,2024,4,Dissolution of Marriage,Old,No,677
+Order made,Decree Nisi,2024,4,Nullity of Marriage,Old,No,82
+Order made,Decree Nisi,2024,4,Dissolution of Marriage,New,,14993
+Order made,Decree Nisi,2024,4,Nullity of Marriage,Old,Yes,3
+Order made,Decree Nisi,2024,4,Dissolution of Marriage,Old,Yes,10
+Order made,Judicial Separations Granted,2024,4,Judicial Separation,Old,No,6
+Order made,Judicial Separations Granted,2024,4,Judicial Separation,New,,44
+Petitions,,2024,4,Dissolution of Marriage,New,,25111
+Petitions,,2024,4,Judicial Separation,New,,77
+Petitions,,2024,4,Nullity of Marriage,Old,,102
+Order made,Decree Absolute,2025,1,Dissolution of Marriage,Old,Yes,26
+Order made,Decree Absolute,2025,1,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2025,1,Nullity of Marriage,Old,No,67
+Order made,Decree Absolute,2025,1,Dissolution of Marriage,Old,No,1836
+Order made,Decree Absolute,2025,1,Dissolution of Marriage,New,,20244
+Order made,Decree Nisi,2025,1,Dissolution of Marriage,New,,26415
+Order made,Decree Nisi,2025,1,Dissolution of Marriage,Old,No,449
+Order made,Decree Nisi,2025,1,Nullity of Marriage,Old,Yes,2
+Order made,Decree Nisi,2025,1,Dissolution of Marriage,Old,Yes,11
+Order made,Decree Nisi,2025,1,Nullity of Marriage,Old,No,78
+Order made,Judicial Separations Granted,2025,1,Judicial Separation,New,,53
+Order made,Judicial Separations Granted,2025,1,Judicial Separation,Old,No,8
+Petitions,,2025,1,Dissolution of Marriage,New,,30171
+Petitions,,2025,1,Nullity of Marriage,Old,,101
+Petitions,,2025,1,Judicial Separation,New,,86
+Order made,Decree Absolute,2025,2,Nullity of Marriage,Old,Yes,3
+Order made,Decree Absolute,2025,2,Dissolution of Marriage,Old,Yes,15
+Order made,Decree Absolute,2025,2,Dissolution of Marriage,Old,No,1558
+Order made,Decree Absolute,2025,2,Dissolution of Marriage,New,,26591
+Order made,Decree Absolute,2025,2,Nullity of Marriage,Old,No,94
+Order made,Decree Nisi,2025,2,Nullity of Marriage,Old,No,76
+Order made,Decree Nisi,2025,2,Dissolution of Marriage,Old,Yes,8
+Order made,Decree Nisi,2025,2,Nullity of Marriage,Old,Yes,3
+Order made,Decree Nisi,2025,2,Dissolution of Marriage,Old,No,459
+Order made,Decree Nisi,2025,2,Dissolution of Marriage,New,,30383
+Order made,Judicial Separations Granted,2025,2,Judicial Separation,New,,76
+Order made,Judicial Separations Granted,2025,2,Judicial Separation,Old,No,3
+Petitions,,2025,2,Dissolution of Marriage,New,,27614
+Petitions,,2025,2,Nullity of Marriage,Old,,99
+Petitions,,2025,2,Judicial Separation,New,,66
+Order made,Decree Absolute,2025,3,Dissolution of Marriage,New,,26426
+Order made,Decree Absolute,2025,3,Dissolution of Marriage,Old,No,1277
+Order made,Decree Absolute,2025,3,Nullity of Marriage,Old,No,65
+Order made,Decree Absolute,2025,3,Dissolution of Marriage,Old,Yes,14
+Order made,Decree Nisi,2025,3,Dissolution of Marriage,Old,No,481
+Order made,Decree Nisi,2025,3,Dissolution of Marriage,New,,29082
+Order made,Decree Nisi,2025,3,Nullity of Marriage,Old,No,73
+Order made,Decree Nisi,2025,3,Dissolution of Marriage,Old,Yes,13
+Order made,Judicial Separations Granted,2025,3,Judicial Separation,Old,No,4
+Order made,Judicial Separations Granted,2025,3,Judicial Separation,New,,51
+Petitions,,2025,3,Nullity of Marriage,Old,,66
+Petitions,,2025,3,Judicial Separation,New,,85
+Petitions,,2025,3,Dissolution of Marriage,New,,27498
+Order made,Decree Absolute,2025,4,Dissolution of Marriage,Old,No,1103
+Order made,Decree Absolute,2025,4,Dissolution of Marriage,New,,26596
+Order made,Decree Absolute,2025,4,Nullity of Marriage,Old,No,71
+Order made,Decree Absolute,2025,4,Dissolution of Marriage,Old,Yes,18
+Order made,Decree Nisi,2025,4,Nullity of Marriage,Old,No,67
+Order made,Decree Nisi,2025,4,Dissolution of Marriage,Old,Yes,2
+Order made,Decree Nisi,2025,4,Dissolution of Marriage,New,,29941
+Order made,Decree Nisi,2025,4,Dissolution of Marriage,Old,No,443
+Order made,Judicial Separations Granted,2025,4,Judicial Separation,Old,No,2
+Order made,Judicial Separations Granted,2025,4,Judicial Separation,New,,41
+Petitions,,2025,4,Judicial Separation,New,,62
+Petitions,,2025,4,Nullity of Marriage,Old,,68
+Petitions,,2025,4,Dissolution of Marriage,New,,23901
+Order made,Decree Nisi,2013,2,Nullity of Marriage,Old,No,107
+Order made,Judicial Separations Granted,2013,2,Judicial Separation,Old,No,41
+Petitions,,2013,2,Judicial Separation,Old,,56
+Petitions,,2013,2,Dissolution of Marriage,Old,,32023
+Petitions,,2013,2,Nullity of Marriage,Old,,142
+Order made,Decree Absolute,2013,3,Nullity of Marriage,Old,No,106
+Order made,Decree Absolute,2013,3,Dissolution of Marriage,Old,Yes,149
+Order made,Decree Absolute,2013,3,Nullity of Marriage,Old,Yes,3
+Order made,Decree Absolute,2013,3,Dissolution of Marriage,Old,No,29659
+Order made,Decree Nisi,2013,3,Dissolution of Marriage,Old,No,28808
+Order made,Decree Nisi,2013,3,Nullity of Marriage,Old,No,96
+Order made,Decree Nisi,2013,3,Dissolution of Marriage,Old,Yes,150
+Order made,Decree Nisi,2013,3,Nullity of Marriage,Old,Yes,3
+Order made,Judicial Separations Granted,2013,3,Judicial Separation,Old,No,34
+Petitions,,2013,3,Dissolution of Marriage,Old,,28429
+Petitions,,2013,3,Judicial Separation,Old,,35
+Petitions,,2013,3,Nullity of Marriage,Old,,144
+Order made,Decree Absolute,2013,4,Dissolution of Marriage,Old,No,28044
+Order made,Decree Absolute,2013,4,Dissolution of Marriage,Old,Yes,151
+Order made,Decree Absolute,2013,4,Nullity of Marriage,Old,Yes,2
+Order made,Decree Absolute,2013,4,Nullity of Marriage,Old,No,85
+Order made,Decree Nisi,2013,4,Dissolution of Marriage,Old,No,27337
+Order made,Decree Nisi,2013,4,Dissolution of Marriage,Old,Yes,126
+Order made,Decree Nisi,2013,4,Nullity of Marriage,Old,Yes,2
+Order made,Decree Nisi,2013,4,Nullity of Marriage,Old,No,96
+Order made,Judicial Separations Granted,2013,4,Judicial Separation,Old,No,23
+Petitions,,2013,4,Nullity of Marriage,Old,,137
+Petitions,,2013,4,Dissolution of Marriage,Old,,26141
+Petitions,,2013,4,Judicial Separation,Old,,61
+Order made,Decree Absolute,2014,1,Dissolution of Marriage,Old,Yes,114
+Order made,Decree Absolute,2014,1,Nullity of Marriage,Old,No,105
+Order made,Decree Absolute,2014,1,Dissolution of Marriage,Old,No,29027
+Order made,Decree Absolute,2014,1,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2014,1,Dissolution of Marriage,Old,No,26982
+Order made,Decree Nisi,2014,1,Nullity of Marriage,Old,Yes,4
+Order made,Decree Nisi,2014,1,Nullity of Marriage,Old,No,110
+Order made,Decree Nisi,2014,1,Dissolution of Marriage,Old,Yes,128
+Order made,Judicial Separations Granted,2014,1,Judicial Separation,Old,No,36
+Petitions,,2014,1,Judicial Separation,Old,,58
+Petitions,,2014,1,Dissolution of Marriage,Old,,28532
+Petitions,,2014,1,Nullity of Marriage,Old,,147
+Order made,Decree Absolute,2014,2,Nullity of Marriage,Old,Yes,2
+Order made,Decree Absolute,2014,2,Nullity of Marriage,Old,No,115
+Order made,Decree Absolute,2014,2,Dissolution of Marriage,Old,Yes,122
+Order made,Decree Absolute,2014,2,Dissolution of Marriage,Old,No,27597
+Order made,Decree Nisi,2014,2,Nullity of Marriage,Old,No,115
+Order made,Decree Nisi,2014,2,Dissolution of Marriage,Old,Yes,148
+Order made,Decree Nisi,2014,2,Nullity of Marriage,Old,Yes,2
+Order made,Decree Nisi,2014,2,Dissolution of Marriage,Old,No,27047
+Order made,Judicial Separations Granted,2014,2,Judicial Separation,Old,Yes,1
+Order made,Judicial Separations Granted,2014,2,Judicial Separation,Old,No,32
+Petitions,,2014,2,Dissolution of Marriage,Old,,27595
+Petitions,,2014,2,Judicial Separation,Old,,38
+Petitions,,2014,2,Nullity of Marriage,Old,,118
+Order made,Decree Absolute,2014,3,Nullity of Marriage,Old,No,102
+Order made,Decree Absolute,2014,3,Dissolution of Marriage,Old,No,27642
+Order made,Decree Absolute,2014,3,Dissolution of Marriage,Old,Yes,163
+Order made,Decree Nisi,2014,3,Dissolution of Marriage,Old,No,28000
+Order made,Decree Nisi,2014,3,Dissolution of Marriage,Old,Yes,150
+Order made,Decree Nisi,2014,3,Nullity of Marriage,Old,No,112
+Order made,Decree Nisi,2014,3,Nullity of Marriage,Old,Yes,1
+Order made,Judicial Separations Granted,2014,3,Judicial Separation,Old,No,37
+Order made,Judicial Separations Granted,2014,3,Judicial Separation,Old,Yes,2
+Petitions,,2014,3,Dissolution of Marriage,Old,,29131
+Petitions,,2014,3,Nullity of Marriage,Old,,128
+Petitions,,2014,3,Judicial Separation,Old,,68
+Order made,Decree Absolute,2014,4,Dissolution of Marriage,Old,Yes,152
+Order made,Decree Absolute,2014,4,Nullity of Marriage,Old,Yes,2
+Order made,Decree Absolute,2014,4,Dissolution of Marriage,Old,No,26983
+Order made,Decree Absolute,2014,4,Nullity of Marriage,Old,No,111
+Order made,Decree Nisi,2014,4,Nullity of Marriage,Old,No,109
+Order made,Decree Nisi,2014,4,Dissolution of Marriage,Old,Yes,135
+Order made,Decree Nisi,2014,4,Dissolution of Marriage,Old,No,27066
+Order made,Judicial Separations Granted,2014,4,Judicial Separation,Old,Yes,2
+Order made,Judicial Separations Granted,2014,4,Judicial Separation,Old,No,30
+Petitions,,2014,4,Nullity of Marriage,Old,,118
+Petitions,,2014,4,Dissolution of Marriage,Old,,27301
+Petitions,,2014,4,Judicial Separation,Old,,47
+Order made,Decree Absolute,2015,1,Dissolution of Marriage,Old,No,26936
+Order made,Decree Absolute,2015,1,Dissolution of Marriage,Old,Yes,132
+Order made,Decree Absolute,2015,1,Nullity of Marriage,Old,No,100
+Order made,Decree Nisi,2015,1,Dissolution of Marriage,Old,Yes,132
+Order made,Decree Nisi,2015,1,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2015,1,Dissolution of Marriage,Old,No,27317
+Order made,Decree Nisi,2015,1,Nullity of Marriage,Old,No,100
+Order made,Judicial Separations Granted,2015,1,Judicial Separation,Old,No,40
+Petitions,,2015,1,Nullity of Marriage,Old,,131
+Petitions,,2015,1,Dissolution of Marriage,Old,,28589
+Petitions,,2015,1,Judicial Separation,Old,,65
+Order made,Decree Absolute,2015,2,Dissolution of Marriage,Old,No,26072
+Order made,Decree Absolute,2015,2,Dissolution of Marriage,Old,Yes,141
+Order made,Decree Absolute,2015,2,Nullity of Marriage,Old,No,86
+Order made,Decree Absolute,2015,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2015,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2015,2,Nullity of Marriage,Old,No,99
+Order made,Decree Nisi,2015,2,Dissolution of Marriage,Old,No,25577
+Order made,Decree Nisi,2015,2,Dissolution of Marriage,Old,Yes,132
+Order made,Judicial Separations Granted,2015,2,Judicial Separation,Old,No,33
+Petitions,,2015,2,Nullity of Marriage,Old,,125
+Petitions,,2015,2,Judicial Separation,Old,,56
+Petitions,,2015,2,Dissolution of Marriage,Old,,28080
+Order made,Decree Absolute,2015,3,Dissolution of Marriage,Old,No,26181
+Order made,Decree Absolute,2015,3,Nullity of Marriage,Old,No,103
+Order made,Decree Absolute,2015,3,Dissolution of Marriage,Old,Yes,122
+Order made,Decree Nisi,2015,3,Dissolution of Marriage,Old,Yes,134
+Order made,Decree Nisi,2015,3,Dissolution of Marriage,Old,No,24220
+Order made,Decree Nisi,2015,3,Nullity of Marriage,Old,Yes,2
+Order made,Decree Nisi,2015,3,Nullity of Marriage,Old,No,91
+Order made,Judicial Separations Granted,2015,3,Judicial Separation,Old,No,36
+Petitions,,2015,3,Judicial Separation,Old,,38
+Petitions,,2015,3,Nullity of Marriage,Old,,100
+Petitions,,2015,3,Dissolution of Marriage,Old,,28357
+Order made,Decree Absolute,2015,4,Nullity of Marriage,Old,Yes,3
+Order made,Decree Absolute,2015,4,Nullity of Marriage,Old,No,83
+Order made,Decree Absolute,2015,4,Dissolution of Marriage,Old,No,22437
+Order made,Decree Absolute,2015,4,Dissolution of Marriage,Old,Yes,133
+Order made,Decree Nisi,2015,4,Dissolution of Marriage,Old,Yes,101
+Order made,Decree Nisi,2015,4,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2015,4,Nullity of Marriage,Old,No,73
+Order made,Decree Nisi,2015,4,Dissolution of Marriage,Old,No,21469
+Order made,Judicial Separations Granted,2015,4,Judicial Separation,Old,No,30
+Petitions,,2015,4,Nullity of Marriage,Old,,129
+Petitions,,2015,4,Dissolution of Marriage,Old,,29478
+Petitions,,2015,4,Judicial Separation,Old,,57
+Order made,Decree Absolute,2016,1,Nullity of Marriage,Old,No,80
+Order made,Decree Absolute,2016,1,Dissolution of Marriage,Old,Yes,106
+Order made,Decree Absolute,2016,1,Dissolution of Marriage,Old,No,26629
+Order made,Decree Absolute,2016,1,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2016,1,Dissolution of Marriage,Old,No,31890
+Order made,Decree Nisi,2016,1,Dissolution of Marriage,Old,Yes,135
+Order made,Decree Nisi,2016,1,Nullity of Marriage,Old,No,101
+Order made,Judicial Separations Granted,2016,1,Judicial Separation,Old,No,33
+Petitions,,2016,1,Judicial Separation,Old,,56
+Petitions,,2016,1,Nullity of Marriage,Old,,111
+Petitions,,2016,1,Dissolution of Marriage,Old,,29019
+Order made,Decree Absolute,2016,2,Dissolution of Marriage,Old,Yes,138
+Order made,Decree Absolute,2016,2,Dissolution of Marriage,Old,No,28979
+Order made,Decree Absolute,2016,2,Nullity of Marriage,Old,No,109
+Order made,Decree Nisi,2016,2,Dissolution of Marriage,Old,Yes,112
+Order made,Decree Nisi,2016,2,Nullity of Marriage,Old,No,96
+Order made,Decree Nisi,2016,2,Dissolution of Marriage,Old,No,28178
+Order made,Decree Nisi,2016,2,Nullity of Marriage,Old,Yes,1
+Order made,Judicial Separations Granted,2016,2,Judicial Separation,Old,No,37
+Petitions,,2016,2,Dissolution of Marriage,Old,,30282
+Petitions,,2016,2,Judicial Separation,Old,,70
+Petitions,,2016,2,Nullity of Marriage,Old,,119
+Order made,Decree Absolute,2016,3,Dissolution of Marriage,Old,No,27497
+Order made,Decree Absolute,2016,3,Nullity of Marriage,Old,No,97
+Order made,Decree Absolute,2016,3,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2016,3,Dissolution of Marriage,Old,Yes,96
+Order made,Decree Nisi,2016,3,Nullity of Marriage,Old,Yes,2
+Order made,Decree Nisi,2016,3,Dissolution of Marriage,Old,Yes,104
+Order made,Decree Nisi,2016,3,Dissolution of Marriage,Old,No,27476
+Order made,Decree Nisi,2016,3,Nullity of Marriage,Old,No,81
+Order made,Judicial Separations Granted,2016,3,Judicial Separation,Old,No,28
+Petitions,,2016,3,Nullity of Marriage,Old,,105
+Petitions,,2016,3,Judicial Separation,Old,,59
+Petitions,,2016,3,Dissolution of Marriage,Old,,27529
+Order made,Decree Absolute,2016,4,Nullity of Marriage,Old,No,70
+Order made,Decree Absolute,2016,4,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2016,4,Dissolution of Marriage,Old,No,24698
+Order made,Decree Absolute,2016,4,Dissolution of Marriage,Old,Yes,112
+Order made,Decree Nisi,2016,4,Dissolution of Marriage,Old,Yes,125
+Order made,Decree Nisi,2016,4,Nullity of Marriage,Old,No,90
+Order made,Decree Nisi,2016,4,Dissolution of Marriage,Old,No,26103
+Order made,Judicial Separations Granted,2016,4,Judicial Separation,Old,No,36
+Petitions,,2016,4,Judicial Separation,Old,,57
+Petitions,,2016,4,Dissolution of Marriage,Old,,27209
+Petitions,,2016,4,Nullity of Marriage,Old,,123
+Order made,Decree Absolute,2017,1,Dissolution of Marriage,Old,No,27846
+Order made,Decree Absolute,2017,1,Nullity of Marriage,Old,No,97
+Order made,Decree Absolute,2017,1,Dissolution of Marriage,Old,Yes,117
+Order made,Decree Nisi,2017,1,Dissolution of Marriage,Old,No,28676
+Order made,Decree Nisi,2017,1,Nullity of Marriage,Old,No,92
+Order made,Decree Nisi,2017,1,Dissolution of Marriage,Old,Yes,126
+Order made,Judicial Separations Granted,2017,1,Judicial Separation,Old,Yes,1
+Order made,Judicial Separations Granted,2017,1,Judicial Separation,Old,No,40
+Petitions,,2017,1,Nullity of Marriage,Old,,104
+Petitions,,2017,1,Judicial Separation,Old,,60
+Petitions,,2017,1,Dissolution of Marriage,Old,,28518
+Order made,Decree Absolute,2017,2,Dissolution of Marriage,Old,Yes,111
+Order made,Decree Absolute,2017,2,Nullity of Marriage,Old,No,76
+Order made,Decree Absolute,2017,2,Dissolution of Marriage,Old,No,26382
+Order made,Decree Nisi,2017,2,Nullity of Marriage,Old,No,80
+Order made,Decree Nisi,2017,2,Dissolution of Marriage,Old,Yes,118
+Order made,Decree Nisi,2017,2,Dissolution of Marriage,Old,No,25581
+Order made,Judicial Separations Granted,2017,2,Judicial Separation,Old,No,30
+Petitions,,2017,2,Nullity of Marriage,Old,,104
+Petitions,,2017,2,Dissolution of Marriage,Old,,27094
+Petitions,,2017,2,Judicial Separation,Old,,70
+Order made,Decree Absolute,2017,3,Dissolution of Marriage,Old,No,24847
+Order made,Decree Absolute,2017,3,Nullity of Marriage,Old,No,92
+Order made,Decree Absolute,2017,3,Dissolution of Marriage,Old,Yes,100
+Order made,Decree Nisi,2017,3,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2017,3,Dissolution of Marriage,Old,Yes,139
+Order made,Decree Nisi,2017,3,Nullity of Marriage,Old,No,80
+Order made,Decree Nisi,2017,3,Dissolution of Marriage,Old,No,24116
+Order made,Judicial Separations Granted,2017,3,Judicial Separation,Old,No,40
+Order made,Judicial Separations Granted,2017,3,Judicial Separation,Old,Yes,2
+Petitions,,2017,3,Judicial Separation,Old,,74
+Petitions,,2017,3,Nullity of Marriage,Old,,97
+Petitions,,2017,3,Dissolution of Marriage,Old,,27874
+Order made,Decree Absolute,2017,4,Nullity of Marriage,Old,No,65
+Order made,Decree Absolute,2017,4,Dissolution of Marriage,Old,Yes,127
+Order made,Decree Absolute,2017,4,Dissolution of Marriage,Old,No,23271
+Order made,Decree Absolute,2017,4,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2017,4,Nullity of Marriage,Old,No,80
+Order made,Decree Nisi,2017,4,Dissolution of Marriage,Old,Yes,107
+Order made,Decree Nisi,2017,4,Dissolution of Marriage,Old,No,24257
+Order made,Judicial Separations Granted,2017,4,Judicial Separation,Old,No,39
+Petitions,,2017,4,Nullity of Marriage,Old,,92
+Petitions,,2017,4,Dissolution of Marriage,Old,,25780
+Petitions,,2017,4,Judicial Separation,Old,,64
+Order made,Decree Absolute,2018,1,Dissolution of Marriage,Old,Yes,113
+Order made,Decree Absolute,2018,1,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2018,1,Nullity of Marriage,Old,No,69
+Order made,Decree Absolute,2018,1,Dissolution of Marriage,Old,No,23934
+Order made,Decree Nisi,2018,1,Nullity of Marriage,Old,No,60
+Order made,Decree Nisi,2018,1,Dissolution of Marriage,Old,No,23091
+Order made,Decree Nisi,2018,1,Nullity of Marriage,Old,Yes,3
+Order made,Decree Nisi,2018,1,Dissolution of Marriage,Old,Yes,114
+Order made,Judicial Separations Granted,2018,1,Judicial Separation,Old,No,37
+Petitions,,2018,1,Dissolution of Marriage,Old,,27406
+Petitions,,2018,1,Judicial Separation,Old,,73
+Petitions,,2018,1,Nullity of Marriage,Old,,98
+Order made,Decree Absolute,2018,2,Nullity of Marriage,Old,Yes,3
+Order made,Decree Absolute,2018,2,Dissolution of Marriage,Old,Yes,95
+Order made,Decree Absolute,2018,2,Nullity of Marriage,Old,No,75
+Order made,Decree Absolute,2018,2,Dissolution of Marriage,Old,No,22544
+Order made,Decree Nisi,2018,2,Dissolution of Marriage,Old,No,21523
+Order made,Decree Nisi,2018,2,Dissolution of Marriage,Old,Yes,110
+Order made,Decree Nisi,2018,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2018,2,Nullity of Marriage,Old,No,67
+Order made,Judicial Separations Granted,2018,2,Judicial Separation,Old,Yes,1
+Order made,Judicial Separations Granted,2018,2,Judicial Separation,Old,No,29
+Petitions,,2018,2,Nullity of Marriage,Old,,105
+Petitions,,2018,2,Dissolution of Marriage,Old,,32205
+Petitions,,2018,2,Judicial Separation,Old,,63
+Order made,Decree Absolute,2018,3,Dissolution of Marriage,Old,No,21067
+Order made,Decree Absolute,2018,3,Dissolution of Marriage,Old,Yes,128
+Order made,Decree Absolute,2018,3,Nullity of Marriage,Old,No,56
+Order made,Decree Absolute,2018,3,Nullity of Marriage,Old,Yes,2
+Order made,Decree Nisi,2018,3,Dissolution of Marriage,Old,Yes,100
+Order made,Decree Nisi,2018,3,Dissolution of Marriage,Old,No,22432
+Order made,Decree Nisi,2018,3,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2018,3,Nullity of Marriage,Old,No,65
+Order made,Judicial Separations Granted,2018,3,Judicial Separation,Old,No,26
+Petitions,,2018,3,Judicial Separation,Old,,100
+Petitions,,2018,3,Dissolution of Marriage,Old,,30337
+Petitions,,2018,3,Nullity of Marriage,Old,,102
+Order made,Decree Absolute,2018,4,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2018,4,Dissolution of Marriage,Old,No,24004
+Order made,Decree Absolute,2018,4,Dissolution of Marriage,Old,Yes,98
+Order made,Decree Absolute,2018,4,Nullity of Marriage,Old,No,67
+Order made,Decree Nisi,2018,4,Nullity of Marriage,Old,No,80
+Order made,Decree Nisi,2018,4,Nullity of Marriage,Old,Yes,2
+Order made,Decree Nisi,2018,4,Dissolution of Marriage,Old,Yes,99
+Order made,Decree Nisi,2018,4,Dissolution of Marriage,Old,No,24522
+Order made,Judicial Separations Granted,2018,4,Judicial Separation,Old,No,41
+Petitions,,2018,4,Nullity of Marriage,Old,,110
+Petitions,,2018,4,Dissolution of Marriage,Old,,28398
+Petitions,,2018,4,Judicial Separation,Old,,72
+Order made,Decree Absolute,2019,1,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2019,1,Dissolution of Marriage,Old,Yes,106
+Order made,Decree Absolute,2019,1,Dissolution of Marriage,Old,No,23862
+Order made,Decree Absolute,2019,1,Nullity of Marriage,Old,No,72
+Order made,Decree Nisi,2019,1,Nullity of Marriage,Old,Yes,2
+Order made,Decree Nisi,2019,1,Nullity of Marriage,Old,No,78
+Order made,Decree Nisi,2019,1,Dissolution of Marriage,Old,Yes,107
+Order made,Decree Nisi,2019,1,Dissolution of Marriage,Old,No,25542
+Order made,Judicial Separations Granted,2019,1,Judicial Separation,Old,No,35
+Petitions,,2019,1,Judicial Separation,Old,,70
+Petitions,,2019,1,Dissolution of Marriage,Old,,30344
+Petitions,,2019,1,Nullity of Marriage,Old,,112
+Order made,Decree Absolute,2019,2,Dissolution of Marriage,Old,Yes,85
+Order made,Decree Absolute,2019,2,Dissolution of Marriage,Old,No,24136
+Order made,Decree Absolute,2019,2,Nullity of Marriage,Old,No,70
+Order made,Decree Absolute,2019,2,Nullity of Marriage,Old,Yes,4
+Order made,Decree Nisi,2019,2,Dissolution of Marriage,Old,Yes,97
+Order made,Decree Nisi,2019,2,Dissolution of Marriage,Old,No,26311
+Order made,Decree Nisi,2019,2,Nullity of Marriage,Old,No,62
+Order made,Decree Nisi,2019,2,Nullity of Marriage,Old,Yes,1
+Order made,Judicial Separations Granted,2019,2,Judicial Separation,Old,No,35
+Petitions,,2019,2,Dissolution of Marriage,Old,,28295
+Petitions,,2019,2,Nullity of Marriage,Old,,121
+Petitions,,2019,2,Judicial Separation,Old,,65
+Order made,Decree Absolute,2019,3,Dissolution of Marriage,Old,No,28715
+Order made,Decree Absolute,2019,3,Nullity of Marriage,Old,No,69
+Order made,Decree Absolute,2019,3,Nullity of Marriage,Old,Yes,2
+Order made,Decree Absolute,2019,3,Dissolution of Marriage,Old,Yes,106
+Order made,Decree Nisi,2019,3,Dissolution of Marriage,Old,Yes,116
+Order made,Decree Nisi,2019,3,Nullity of Marriage,Old,No,84
+Order made,Decree Nisi,2019,3,Nullity of Marriage,Old,Yes,2
+Order made,Decree Nisi,2019,3,Dissolution of Marriage,Old,No,32972
+Order made,Judicial Separations Granted,2019,3,Judicial Separation,Old,Yes,2
+Order made,Judicial Separations Granted,2019,3,Judicial Separation,Old,No,45
+Petitions,,2019,3,Dissolution of Marriage,Old,,30468
+Petitions,,2019,3,Judicial Separation,Old,,79
+Petitions,,2019,3,Nullity of Marriage,Old,,137
+Order made,Decree Absolute,2019,4,Dissolution of Marriage,Old,Yes,111
+Order made,Decree Absolute,2019,4,Nullity of Marriage,Old,No,83
+Order made,Decree Absolute,2019,4,Dissolution of Marriage,Old,No,30187
+Order made,Decree Nisi,2019,4,Dissolution of Marriage,Old,No,30006
+Order made,Decree Nisi,2019,4,Dissolution of Marriage,Old,Yes,89
+Order made,Decree Nisi,2019,4,Nullity of Marriage,Old,No,86
+Order made,Judicial Separations Granted,2019,4,Judicial Separation,Old,No,31
+Petitions,,2019,4,Dissolution of Marriage,Old,,27521
+Petitions,,2019,4,Nullity of Marriage,Old,,100
+Petitions,,2019,4,Judicial Separation,Old,,48
+Order made,Decree Absolute,2020,1,Dissolution of Marriage,Old,No,30085
+Order made,Decree Absolute,2020,1,Nullity of Marriage,Old,No,84
+Order made,Decree Absolute,2020,1,Dissolution of Marriage,Old,Yes,89
+Order made,Decree Nisi,2020,1,Nullity of Marriage,Old,No,85
+Order made,Decree Nisi,2020,1,Nullity of Marriage,Old,Yes,2
+Order made,Decree Nisi,2020,1,Dissolution of Marriage,Old,Yes,111
+Order made,Decree Nisi,2020,1,Dissolution of Marriage,Old,No,33859
+Order made,Judicial Separations Granted,2020,1,Judicial Separation,Old,Yes,1
+Order made,Judicial Separations Granted,2020,1,Judicial Separation,Old,No,36
+Petitions,,2020,1,Judicial Separation,Old,,61
+Petitions,,2020,1,Dissolution of Marriage,Old,,29684
+Petitions,,2020,1,Nullity of Marriage,Old,,122
+Order made,Decree Absolute,2020,2,Dissolution of Marriage,Old,No,24770
+Order made,Decree Absolute,2020,2,Dissolution of Marriage,Old,Yes,67
+Order made,Decree Absolute,2020,2,Nullity of Marriage,Old,No,56
+Order made,Decree Absolute,2020,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2020,2,Dissolution of Marriage,Old,No,20655
+Order made,Decree Nisi,2020,2,Dissolution of Marriage,Old,Yes,48
+Order made,Decree Nisi,2020,2,Nullity of Marriage,Old,No,41
+Order made,Judicial Separations Granted,2020,2,Judicial Separation,Old,No,24
+Petitions,,2020,2,Nullity of Marriage,Old,,104
+Petitions,,2020,2,Dissolution of Marriage,Old,,24057
+Petitions,,2020,2,Judicial Separation,Old,,48
+Order made,Decree Absolute,2020,3,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2020,3,Nullity of Marriage,Old,No,59
+Order made,Decree Absolute,2020,3,Dissolution of Marriage,Old,Yes,82
+Order made,Decree Absolute,2020,3,Dissolution of Marriage,Old,No,23543
+Order made,Decree Nisi,2020,3,Nullity of Marriage,Old,No,61
+Order made,Decree Nisi,2020,3,Dissolution of Marriage,Old,Yes,80
+Order made,Decree Nisi,2020,3,Dissolution of Marriage,Old,No,24823
+Order made,Judicial Separations Granted,2020,3,Judicial Separation,Old,No,26
+Petitions,,2020,3,Dissolution of Marriage,Old,,28815
+Petitions,,2020,3,Judicial Separation,Old,,65
+Petitions,,2020,3,Nullity of Marriage,Old,,121
+Order made,Decree Absolute,2020,4,Dissolution of Marriage,Old,Yes,68
+Order made,Decree Absolute,2020,4,Nullity of Marriage,Old,No,59
+Order made,Decree Absolute,2020,4,Dissolution of Marriage,Old,No,25271
+Order made,Decree Nisi,2020,4,Dissolution of Marriage,Old,No,26989
+Order made,Decree Nisi,2020,4,Nullity of Marriage,Old,No,83
+Order made,Decree Nisi,2020,4,Dissolution of Marriage,Old,Yes,84
+Order made,Judicial Separations Granted,2020,4,Judicial Separation,Old,No,31
+Petitions,,2020,4,Dissolution of Marriage,Old,,30514
+Petitions,,2020,4,Judicial Separation,Old,,48
+Petitions,,2020,4,Nullity of Marriage,Old,,82
+Order made,Decree Absolute,2021,1,Nullity of Marriage,Old,No,78
+Order made,Decree Absolute,2021,1,Dissolution of Marriage,Old,Yes,78
+Order made,Decree Absolute,2021,1,Dissolution of Marriage,Old,No,30055
+Order made,Decree Nisi,2021,1,Dissolution of Marriage,Old,Yes,107
+Order made,Decree Nisi,2021,1,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2021,1,Nullity of Marriage,Old,No,58
+Order made,Decree Nisi,2021,1,Dissolution of Marriage,Old,No,32885
+Order made,Judicial Separations Granted,2021,1,Judicial Separation,Old,No,34
+Petitions,,2021,1,Nullity of Marriage,Old,,100
+Petitions,,2021,1,Judicial Separation,Old,,72
+Petitions,,2021,1,Dissolution of Marriage,Old,,30899
+Order made,Decree Absolute,2021,2,Dissolution of Marriage,Old,Yes,104
+Order made,Decree Absolute,2021,2,Dissolution of Marriage,Old,No,30462
+Order made,Decree Absolute,2021,2,Nullity of Marriage,Old,No,50
+Order made,Decree Absolute,2021,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2021,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2021,2,Dissolution of Marriage,Old,Yes,110
+Order made,Decree Nisi,2021,2,Nullity of Marriage,Old,No,75
+Order made,Decree Nisi,2021,2,Dissolution of Marriage,Old,No,30464
+Order made,Judicial Separations Granted,2021,2,Judicial Separation,Old,No,26
+Petitions,,2021,2,Judicial Separation,Old,,64
+Petitions,,2021,2,Dissolution of Marriage,Old,,27631
+Petitions,,2021,2,Nullity of Marriage,Old,,82
+Order made,Decree Absolute,2021,3,Nullity of Marriage,Old,No,74
+Order made,Decree Absolute,2021,3,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2021,3,Dissolution of Marriage,Old,No,27282
+Order made,Decree Absolute,2021,3,Dissolution of Marriage,Old,Yes,107
+Order made,Decree Nisi,2021,3,Dissolution of Marriage,Old,No,24073
+Order made,Decree Nisi,2021,3,Nullity of Marriage,Old,No,30
+Order made,Decree Nisi,2021,3,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2021,3,Dissolution of Marriage,Old,Yes,93
+Order made,Judicial Separations Granted,2021,3,Judicial Separation,Old,No,13
+Petitions,,2021,3,Dissolution of Marriage,Old,,26851
+Petitions,,2021,3,Nullity of Marriage,Old,,76
+Petitions,,2021,3,Judicial Separation,Old,,61
+Order made,Decree Absolute,2021,4,Dissolution of Marriage,Old,No,25650
+Order made,Decree Absolute,2021,4,Dissolution of Marriage,Old,Yes,103
+Order made,Decree Absolute,2021,4,Nullity of Marriage,Old,No,32
+Order made,Decree Nisi,2021,4,Dissolution of Marriage,Old,No,26238
+Order made,Decree Nisi,2021,4,Nullity of Marriage,Old,No,44
+Order made,Decree Nisi,2021,4,Dissolution of Marriage,Old,Yes,107
+Order made,Judicial Separations Granted,2021,4,Judicial Separation,Old,No,17
+Petitions,,2021,4,Nullity of Marriage,Old,,61
+Petitions,,2021,4,Judicial Separation,Old,,67
+Petitions,,2021,4,Dissolution of Marriage,Old,,23151
+Order made,Decree Absolute,2022,1,Nullity of Marriage,Old,No,37
+Order made,Decree Absolute,2022,1,Dissolution of Marriage,Old,Yes,99
+Order made,Decree Absolute,2022,1,Dissolution of Marriage,Old,No,23813
+Order made,Decree Nisi,2022,1,Dissolution of Marriage,Old,Yes,97
+Order made,Decree Nisi,2022,1,Dissolution of Marriage,Old,No,21821
+Order made,Decree Nisi,2022,1,Nullity of Marriage,Old,No,47
+Order made,Judicial Separations Granted,2022,1,Judicial Separation,Old,No,18
+Petitions,,2022,1,Nullity of Marriage,Old,,98
+Petitions,,2022,1,Dissolution of Marriage,Old,,30281
+Petitions,,2022,1,Judicial Separation,Old,,72
+Order made,Decree Absolute,2022,2,Dissolution of Marriage,Old,No,19627
+Order made,Decree Absolute,2022,2,Nullity of Marriage,Old,No,49
+Order made,Decree Absolute,2022,2,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2022,2,Dissolution of Marriage,Old,Yes,89
+Order made,Decree Nisi,2022,2,Nullity of Marriage,Old,No,54
+Order made,Decree Nisi,2022,2,Dissolution of Marriage,Old,No,17714
+Order made,Decree Nisi,2022,2,Dissolution of Marriage,Old,Yes,113
+Order made,Decree Nisi,2022,2,Nullity of Marriage,Old,Yes,1
+Order made,Judicial Separations Granted,2022,2,Judicial Separation,Old,No,36
+Petitions,,2022,2,Nullity of Marriage,Old,,79
+Petitions,,2022,2,Judicial Separation,Old,,61
+Petitions,,2022,2,Dissolution of Marriage,New,,35097
+Petitions,,2022,2,Dissolution of Marriage,Old,,332
+Order made,Decree Absolute,2022,3,Dissolution of Marriage,Old,No,19589
+Order made,Decree Absolute,2022,3,Dissolution of Marriage,Old,Yes,135
+Order made,Decree Absolute,2022,3,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2022,3,Nullity of Marriage,Old,No,46
+Order made,Decree Nisi,2022,3,Dissolution of Marriage,Old,No,13683
+Order made,Decree Nisi,2022,3,Dissolution of Marriage,Old,Yes,152
+Order made,Decree Nisi,2022,3,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2022,3,Nullity of Marriage,Old,No,41
+Order made,Decree Nisi,2022,3,Dissolution of Marriage,New,,646
+Order made,Judicial Separations Granted,2022,3,Judicial Separation,Old,Yes,2
+Order made,Judicial Separations Granted,2022,3,Judicial Separation,Old,No,15
+Petitions,,2022,3,Nullity of Marriage,Old,,89
+Petitions,,2022,3,Judicial Separation,Old,,86
+Petitions,,2022,3,Dissolution of Marriage,New,,31026
+Order made,Decree Absolute,2022,4,Nullity of Marriage,Old,No,34
+Order made,Decree Absolute,2022,4,Dissolution of Marriage,New,,7448
+Order made,Decree Absolute,2022,4,Dissolution of Marriage,Old,No,9512
+Order made,Decree Absolute,2022,4,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2022,4,Dissolution of Marriage,Old,Yes,105
+Order made,Decree Nisi,2022,4,Dissolution of Marriage,Old,No,5069
+Order made,Decree Nisi,2022,4,Dissolution of Marriage,New,,20860
+Order made,Decree Nisi,2022,4,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2022,4,Dissolution of Marriage,Old,Yes,79
+Order made,Decree Nisi,2022,4,Nullity of Marriage,Old,No,27
+Order made,Judicial Separations Granted,2022,4,Judicial Separation,Old,No,16
+Petitions,,2022,4,Judicial Separation,Old,,72
+Petitions,,2022,4,Dissolution of Marriage,New,,25748
+Petitions,,2022,4,Nullity of Marriage,Old,,95
+Order made,Decree Absolute,2023,1,Dissolution of Marriage,New,,18197
+Order made,Decree Absolute,2023,1,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2023,1,Dissolution of Marriage,Old,No,9185
+Order made,Decree Absolute,2023,1,Dissolution of Marriage,Old,Yes,78
+Order made,Decree Absolute,2023,1,Nullity of Marriage,Old,No,29
+Order made,Decree Nisi,2023,1,Dissolution of Marriage,Old,No,3899
+Order made,Decree Nisi,2023,1,Dissolution of Marriage,Old,Yes,73
+Order made,Decree Nisi,2023,1,Dissolution of Marriage,New,,29619
+Order made,Decree Nisi,2023,1,Nullity of Marriage,Old,No,42
+Order made,Judicial Separations Granted,2023,1,Judicial Separation,Old,No,20
+Order made,Judicial Separations Granted,2023,1,Judicial Separation,Old,Yes,1
+Petitions,,2023,1,Dissolution of Marriage,New,,31431
+Petitions,,2023,1,Judicial Separation,Old,,91
+Petitions,,2023,1,Nullity of Marriage,Old,,120
+Order made,Decree Absolute,2023,2,Nullity of Marriage,Old,No,59
+Order made,Decree Absolute,2023,2,Dissolution of Marriage,New,,20262
+Order made,Decree Absolute,2023,2,Dissolution of Marriage,Old,Yes,78
+Order made,Decree Absolute,2023,2,Dissolution of Marriage,Old,No,6991
+Order made,Decree Nisi,2023,2,Dissolution of Marriage,Old,Yes,59
+Order made,Decree Nisi,2023,2,Dissolution of Marriage,New,,23457
+Order made,Decree Nisi,2023,2,Dissolution of Marriage,Old,No,2513
+Order made,Decree Nisi,2023,2,Nullity of Marriage,Old,No,74
+Order made,Judicial Separations Granted,2023,2,Judicial Separation,Old,Yes,1
+Order made,Judicial Separations Granted,2023,2,Judicial Separation,Old,No,45
+Petitions,,2023,2,Nullity of Marriage,Old,,126
+Petitions,,2023,2,Judicial Separation,New,,40
+Petitions,,2023,2,Dissolution of Marriage,New,,28222
+Petitions,,2023,2,Judicial Separation,Old,,57
+Order made,Decree Absolute,2023,3,Nullity of Marriage,Old,Yes,1
+Order made,Decree Absolute,2023,3,Dissolution of Marriage,New,,20224
+Order made,Decree Absolute,2023,3,Dissolution of Marriage,Old,Yes,64
+Order made,Decree Absolute,2023,3,Dissolution of Marriage,Old,No,5522
+Order made,Decree Absolute,2023,3,Nullity of Marriage,Old,No,82
+Order made,Decree Nisi,2023,3,Dissolution of Marriage,Old,No,1911
+Order made,Decree Nisi,2023,3,Dissolution of Marriage,Old,Yes,45
+Order made,Decree Nisi,2023,3,Nullity of Marriage,Old,Yes,1
+Order made,Decree Nisi,2023,3,Nullity of Marriage,Old,No,92
+Order made,Decree Nisi,2023,3,Dissolution of Marriage,New,,20948
+Order made,Judicial Separations Granted,2023,3,Judicial Separation,Old,No,30
+Order made,Judicial Separations Granted,2023,3,Judicial Separation,New,,6
+Petitions,,2023,3,Judicial Separation,New,,103
+Petitions,,2023,3,Dissolution of Marriage,New,,28765
+Petitions,,2023,3,Nullity of Marriage,Old,,113
+Order made,Decree Absolute,2023,4,Dissolution of Marriage,Old,No,4568
+Order made,Decree Absolute,2023,4,Nullity of Marriage,Old,No,79
+Order made,Decree Absolute,2023,4,Dissolution of Marriage,New,,18241
+Order made,Decree Absolute,2023,4,Dissolution of Marriage,Old,Yes,65
+Order made,Decree Nisi,2023,4,Dissolution of Marriage,New,,21154
+Order made,Decree Nisi,2023,4,Dissolution of Marriage,Old,Yes,32
+Order made,Decree Nisi,2023,4,Dissolution of Marriage,Old,No,1232
+Order made,Decree Nisi,2023,4,Nullity of Marriage,Old,No,63
+Order made,Judicial Separations Granted,2023,4,Judicial Separation,New,,15
+Order made,Judicial Separations Granted,2023,4,Judicial Separation,Old,No,27
+Petitions,,2023,4,Dissolution of Marriage,New,,24655
+Petitions,,2023,4,Nullity of Marriage,Old,,96
+Petitions,,2023,4,Judicial Separation,New,,110
+Order made,Decree Absolute,2024,1,Nullity of Marriage,Old,No,56
+Order made,Decree Absolute,2024,1,Dissolution of Marriage,Old,Yes,50
+Order made,Decree Absolute,2024,1,Dissolution of Marriage,Old,No,3537
+Order made,Decree Absolute,2024,1,Dissolution of Marriage,New,,22135
+Order made,Decree Nisi,2024,1,Dissolution of Marriage,New,,32075
+Order made,Decree Nisi,2024,1,Dissolution of Marriage,Old,Yes,20
+Order made,Decree Nisi,2024,1,Dissolution of Marriage,Old,No,1385

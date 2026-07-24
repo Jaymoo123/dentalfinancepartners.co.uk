@@ -1,0 +1,960 @@
+YEAR,QUARTER,CASE_TYPE,Type,Order_type,Exparte_or_On_Notice,Power_of_arrest,Total
+2011,1,Domestic Violence,Cases concluded,n/a,n/a,n/a,3466
+2011,2,Domestic Violence,Cases concluded,n/a,n/a,n/a,3516
+2011,3,Domestic Violence,Cases concluded,n/a,n/a,n/a,3691
+2011,4,Domestic Violence,Cases concluded,n/a,n/a,n/a,3302
+2012,1,Domestic Violence,Cases concluded,n/a,n/a,n/a,3503
+2012,2,Domestic Violence,Cases concluded,n/a,n/a,n/a,3493
+2012,3,Domestic Violence,Cases concluded,n/a,n/a,n/a,3663
+2012,4,Domestic Violence,Cases concluded,n/a,n/a,n/a,3460
+2013,1,Domestic Violence,Cases concluded,n/a,n/a,n/a,3658
+2013,2,Domestic Violence,Cases concluded,n/a,n/a,n/a,3989
+2013,3,Domestic Violence,Cases concluded,n/a,n/a,n/a,4453
+2013,4,Domestic Violence,Cases concluded,n/a,n/a,n/a,4355
+2014,1,Domestic Violence,Cases concluded,n/a,n/a,n/a,4157
+2014,2,Domestic Violence,Cases concluded,n/a,n/a,n/a,4104
+2014,3,Domestic Violence,Cases concluded,n/a,n/a,n/a,4336
+2014,4,Domestic Violence,Cases concluded,n/a,n/a,n/a,4087
+2015,1,Domestic Violence,Cases concluded,n/a,n/a,n/a,3908
+2015,2,Domestic Violence,Cases concluded,n/a,n/a,n/a,3885
+2015,3,Domestic Violence,Cases concluded,n/a,n/a,n/a,4159
+2015,4,Domestic Violence,Cases concluded,n/a,n/a,n/a,3967
+2016,1,Domestic Violence,Cases concluded,n/a,n/a,n/a,3757
+2016,2,Domestic Violence,Cases concluded,n/a,n/a,n/a,4255
+2016,3,Domestic Violence,Cases concluded,n/a,n/a,n/a,4117
+2016,4,Domestic Violence,Cases concluded,n/a,n/a,n/a,3919
+2017,1,Domestic Violence,Cases concluded,n/a,n/a,n/a,4032
+2017,2,Domestic Violence,Cases concluded,n/a,n/a,n/a,4124
+2017,3,Domestic Violence,Cases concluded,n/a,n/a,n/a,4508
+2017,4,Domestic Violence,Cases concluded,n/a,n/a,n/a,4221
+2018,1,Domestic Violence,Cases concluded,n/a,n/a,n/a,4156
+2018,2,Domestic Violence,Cases concluded,n/a,n/a,n/a,4137
+2018,3,Domestic Violence,Cases concluded,n/a,n/a,n/a,4453
+2018,4,Domestic Violence,Cases concluded,n/a,n/a,n/a,4390
+2019,1,Domestic Violence,Cases concluded,n/a,n/a,n/a,4843
+2019,2,Domestic Violence,Cases concluded,n/a,n/a,n/a,4771
+2019,3,Domestic Violence,Cases concluded,n/a,n/a,n/a,5307
+2019,4,Domestic Violence,Cases concluded,n/a,n/a,n/a,5281
+2020,1,Domestic Violence,Cases concluded,n/a,n/a,n/a,5333
+2020,2,Domestic Violence,Cases concluded,n/a,n/a,n/a,5668
+2020,3,Domestic Violence,Cases concluded,n/a,n/a,n/a,6548
+2020,4,Domestic Violence,Cases concluded,n/a,n/a,n/a,6402
+2021,1,Domestic Violence,Cases concluded,n/a,n/a,n/a,6327
+2021,2,Domestic Violence,Cases concluded,n/a,n/a,n/a,5828
+2021,3,Domestic Violence,Cases concluded,n/a,n/a,n/a,5987
+2021,4,Domestic Violence,Cases concluded,n/a,n/a,n/a,5847
+2022,1,Domestic Violence,Cases concluded,n/a,n/a,n/a,5897
+2022,2,Domestic Violence,Cases concluded,n/a,n/a,n/a,5745
+2022,3,Domestic Violence,Cases concluded,n/a,n/a,n/a,5988
+2022,4,Domestic Violence,Cases concluded,n/a,n/a,n/a,5669
+2023,1,Domestic Violence,Cases concluded,n/a,n/a,n/a,5809
+2023,2,Domestic Violence,Cases concluded,n/a,n/a,n/a,5225
+2023,3,Domestic Violence,Cases concluded,n/a,n/a,n/a,5502
+2023,4,Domestic Violence,Cases concluded,n/a,n/a,n/a,5184
+2024,1,Domestic Violence,Cases concluded,n/a,n/a,n/a,5418
+2024,2,Domestic Violence,Cases concluded,n/a,n/a,n/a,5538
+2024,3,Domestic Violence,Cases concluded,n/a,n/a,n/a,5345
+2024,4,Domestic Violence,Cases concluded,n/a,n/a,n/a,5136
+2025,1,Domestic Violence,Cases concluded,n/a,n/a,n/a,5645
+2025,2,Domestic Violence,Cases concluded,n/a,n/a,n/a,5313
+2025,3,Domestic Violence,Cases concluded,n/a,n/a,n/a,6110
+2025,4,Domestic Violence,Cases concluded,n/a,n/a,n/a,6816
+2011,1,Domestic Violence,Cases started,n/a,n/a,n/a,4328
+2011,2,Domestic Violence,Cases started,n/a,n/a,n/a,4201
+2011,3,Domestic Violence,Cases started,n/a,n/a,n/a,4555
+2011,4,Domestic Violence,Cases started,n/a,n/a,n/a,3951
+2012,1,Domestic Violence,Cases started,n/a,n/a,n/a,4322
+2012,2,Domestic Violence,Cases started,n/a,n/a,n/a,4253
+2012,3,Domestic Violence,Cases started,n/a,n/a,n/a,4466
+2012,4,Domestic Violence,Cases started,n/a,n/a,n/a,4251
+2013,1,Domestic Violence,Cases started,n/a,n/a,n/a,4562
+2013,2,Domestic Violence,Cases started,n/a,n/a,n/a,4708
+2013,3,Domestic Violence,Cases started,n/a,n/a,n/a,5379
+2013,4,Domestic Violence,Cases started,n/a,n/a,n/a,5061
+2014,1,Domestic Violence,Cases started,n/a,n/a,n/a,5024
+2014,2,Domestic Violence,Cases started,n/a,n/a,n/a,5099
+2014,3,Domestic Violence,Cases started,n/a,n/a,n/a,5291
+2014,4,Domestic Violence,Cases started,n/a,n/a,n/a,4845
+2015,1,Domestic Violence,Cases started,n/a,n/a,n/a,4756
+2015,2,Domestic Violence,Cases started,n/a,n/a,n/a,4827
+2015,3,Domestic Violence,Cases started,n/a,n/a,n/a,5028
+2015,4,Domestic Violence,Cases started,n/a,n/a,n/a,4866
+2016,1,Domestic Violence,Cases started,n/a,n/a,n/a,4799
+2016,2,Domestic Violence,Cases started,n/a,n/a,n/a,5143
+2016,3,Domestic Violence,Cases started,n/a,n/a,n/a,5152
+2016,4,Domestic Violence,Cases started,n/a,n/a,n/a,4936
+2017,1,Domestic Violence,Cases started,n/a,n/a,n/a,5183
+2017,2,Domestic Violence,Cases started,n/a,n/a,n/a,5199
+2017,3,Domestic Violence,Cases started,n/a,n/a,n/a,5661
+2017,4,Domestic Violence,Cases started,n/a,n/a,n/a,5140
+2018,1,Domestic Violence,Cases started,n/a,n/a,n/a,5297
+2018,2,Domestic Violence,Cases started,n/a,n/a,n/a,5214
+2018,3,Domestic Violence,Cases started,n/a,n/a,n/a,5424
+2018,4,Domestic Violence,Cases started,n/a,n/a,n/a,5389
+2019,1,Domestic Violence,Cases started,n/a,n/a,n/a,6114
+2019,2,Domestic Violence,Cases started,n/a,n/a,n/a,6057
+2019,3,Domestic Violence,Cases started,n/a,n/a,n/a,6660
+2019,4,Domestic Violence,Cases started,n/a,n/a,n/a,6511
+2020,1,Domestic Violence,Cases started,n/a,n/a,n/a,6837
+2020,2,Domestic Violence,Cases started,n/a,n/a,n/a,7496
+2020,3,Domestic Violence,Cases started,n/a,n/a,n/a,8407
+2020,4,Domestic Violence,Cases started,n/a,n/a,n/a,7906
+2021,1,Domestic Violence,Cases started,n/a,n/a,n/a,7855
+2021,2,Domestic Violence,Cases started,n/a,n/a,n/a,7173
+2021,3,Domestic Violence,Cases started,n/a,n/a,n/a,7716
+2021,4,Domestic Violence,Cases started,n/a,n/a,n/a,7498
+2022,1,Domestic Violence,Cases started,n/a,n/a,n/a,8028
+2022,2,Domestic Violence,Cases started,n/a,n/a,n/a,7564
+2022,3,Domestic Violence,Cases started,n/a,n/a,n/a,7838
+2022,4,Domestic Violence,Cases started,n/a,n/a,n/a,7633
+2023,1,Domestic Violence,Cases started,n/a,n/a,n/a,7960
+2023,2,Domestic Violence,Cases started,n/a,n/a,n/a,7498
+2023,3,Domestic Violence,Cases started,n/a,n/a,n/a,7734
+2023,4,Domestic Violence,Cases started,n/a,n/a,n/a,7162
+2024,1,Domestic Violence,Cases started,n/a,n/a,n/a,7393
+2024,2,Domestic Violence,Cases started,n/a,n/a,n/a,7435
+2024,3,Domestic Violence,Cases started,n/a,n/a,n/a,7492
+2024,4,Domestic Violence,Cases started,n/a,n/a,n/a,7166
+2025,1,Domestic Violence,Cases started,n/a,n/a,n/a,7454
+2025,2,Domestic Violence,Cases started,n/a,n/a,n/a,7447
+2025,3,Domestic Violence,Cases started,n/a,n/a,n/a,8323
+2025,4,Domestic Violence,Cases started,n/a,n/a,n/a,7450
+2008,1,n/a,Orders applied for,Non-Molestation,n/a,n/a,4452
+2008,1,n/a,Orders applied for,Occupation,n/a,n/a,2038
+2008,2,n/a,Orders applied for,Non-Molestation,n/a,n/a,4821
+2008,2,n/a,Orders applied for,Occupation,n/a,n/a,2118
+2008,3,n/a,Orders applied for,Non-Molestation,n/a,n/a,5088
+2008,3,n/a,Orders applied for,Occupation,n/a,n/a,2313
+2008,4,n/a,Orders applied for,Non-Molestation,n/a,n/a,4751
+2008,4,n/a,Orders applied for,Occupation,n/a,n/a,2053
+2009,1,n/a,Orders applied for,Non-Molestation,n/a,n/a,5085
+2009,1,n/a,Orders applied for,Occupation,n/a,n/a,2126
+2009,2,n/a,Orders applied for,Non-Molestation,n/a,n/a,5118
+2009,2,n/a,Orders applied for,Occupation,n/a,n/a,2027
+2009,3,n/a,Orders applied for,Non-Molestation,n/a,n/a,5628
+2009,3,n/a,Orders applied for,Occupation,n/a,n/a,2049
+2009,4,n/a,Orders applied for,Non-Molestation,n/a,n/a,4818
+2009,4,n/a,Orders applied for,Occupation,n/a,n/a,1586
+2010,1,n/a,Orders applied for,Non-Molestation,n/a,n/a,4710
+2010,1,n/a,Orders applied for,Occupation,n/a,n/a,1588
+2010,2,n/a,Orders applied for,Non-Molestation,n/a,n/a,4694
+2010,2,n/a,Orders applied for,Occupation,n/a,n/a,1645
+2010,3,n/a,Orders applied for,Non-Molestation,n/a,n/a,4936
+2010,3,n/a,Orders applied for,Occupation,n/a,n/a,1641
+2010,4,n/a,Orders applied for,Non-Molestation,n/a,n/a,4018
+2010,4,n/a,Orders applied for,Occupation,n/a,n/a,1319
+2011,1,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,3
+2011,1,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,922
+2011,1,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,3438
+2011,1,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,461
+2011,1,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,5
+2011,1,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,635
+2011,2,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,550
+2011,2,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,4
+2011,2,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,4
+2011,2,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,895
+2011,2,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,3441
+2011,2,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,376
+2011,3,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,3691
+2011,3,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,401
+2011,3,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,621
+2011,3,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,951
+2011,3,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,4
+2011,3,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,1
+2011,4,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,1
+2011,4,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,3140
+2011,4,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,367
+2011,4,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,2
+2011,4,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,572
+2011,4,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,806
+2012,1,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,927
+2012,1,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,4
+2012,1,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,580
+2012,1,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,3442
+2012,1,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,390
+2012,1,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,1
+2012,2,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,4
+2012,2,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,535
+2012,2,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,5
+2012,2,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,852
+2012,2,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,3464
+2012,2,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,377
+2012,3,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,3694
+2012,3,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,345
+2012,3,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,1
+2012,3,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,513
+2012,3,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,1
+2012,3,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,904
+2012,4,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,818
+2012,4,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,513
+2012,4,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,2
+2012,4,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,3494
+2012,4,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,347
+2012,4,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,5
+2013,1,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,6
+2013,1,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,498
+2013,1,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,3786
+2013,1,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,379
+2013,1,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,927
+2013,1,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,3
+2013,2,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,1
+2013,2,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,2
+2013,2,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,864
+2013,2,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,408
+2013,2,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,3879
+2013,2,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,583
+2013,2,Adoption,Orders applied for,Non-Molestation,On Notice,n/a,1
+2013,3,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,5
+2013,3,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,562
+2013,3,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,389
+2013,3,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,910
+2013,3,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,3
+2013,3,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4544
+2013,4,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4357
+2013,4,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,6
+2013,4,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,328
+2013,4,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,471
+2013,4,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,1
+2013,4,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,907
+2014,1,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,7
+2014,1,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,5
+2014,1,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,561
+2014,1,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,925
+2014,1,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4258
+2014,1,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,327
+2014,2,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,333
+2014,2,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,889
+2014,2,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,548
+2014,2,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,3
+2014,2,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,6
+2014,2,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4323
+2014,3,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4540
+2014,3,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,5
+2014,3,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,543
+2014,3,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,932
+2014,3,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,369
+2014,3,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,3
+2014,4,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,2
+2014,4,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,828
+2014,4,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,545
+2014,4,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,6
+2014,4,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4061
+2014,4,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,389
+2015,1,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,786
+2015,1,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,485
+2015,1,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,3
+2015,1,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,2
+2015,1,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4058
+2015,1,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,320
+2015,2,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4113
+2015,2,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,332
+2015,2,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,515
+2015,2,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,782
+2015,2,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,7
+2015,2,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,7
+2015,3,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,2
+2015,3,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,604
+2015,3,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4202
+2015,3,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,373
+2015,3,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,8
+2015,3,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,801
+2015,4,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,770
+2015,4,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,587
+2015,4,Adoption,Orders applied for,Non-Molestation,Exparte,n/a,2
+2015,4,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,1
+2015,4,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,1
+2015,4,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4060
+2015,4,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,369
+2016,1,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,770
+2016,1,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,611
+2016,1,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,1
+2016,1,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,3926
+2016,1,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,394
+2016,2,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,405
+2016,2,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,644
+2016,2,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,804
+2016,2,Adoption,Orders applied for,Non-Molestation,Exparte,n/a,1
+2016,2,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4231
+2016,2,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,4
+2016,3,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,10
+2016,3,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,765
+2016,3,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,1
+2016,3,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,658
+2016,3,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,398
+2016,3,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4238
+2016,3,Adoption,Orders applied for,Non-Molestation,Exparte,n/a,1
+2016,4,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,603
+2016,4,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,4
+2016,4,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,5
+2016,4,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,744
+2016,4,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4089
+2016,4,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,382
+2017,1,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,3
+2017,1,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,7
+2017,1,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,746
+2017,1,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,667
+2017,1,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4236
+2017,1,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,442
+2017,2,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4280
+2017,2,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,382
+2017,2,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,1
+2017,2,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,3
+2017,2,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,689
+2017,2,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,719
+2017,3,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,815
+2017,3,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,6
+2017,3,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4579
+2017,3,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,466
+2017,3,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,785
+2017,3,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,2
+2017,4,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,5
+2017,4,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,5
+2017,4,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,681
+2017,4,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,723
+2017,4,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4200
+2017,4,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,379
+2018,1,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,723
+2018,1,Adoption,Orders applied for,Non-Molestation,Exparte,n/a,1
+2018,1,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,767
+2018,1,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4254
+2018,1,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,434
+2018,1,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,1
+2018,1,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,7
+2018,2,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,6
+2018,2,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4147
+2018,2,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,426
+2018,2,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,711
+2018,2,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,825
+2018,3,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,796
+2018,3,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,775
+2018,3,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,5
+2018,3,Adoption,Orders applied for,Non-Molestation,Exparte,n/a,1
+2018,3,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4340
+2018,3,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,451
+2018,3,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,4
+2018,4,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,4
+2018,4,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,761
+2018,4,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,843
+2018,4,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,6
+2018,4,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4328
+2018,4,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,431
+2019,1,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4927
+2019,1,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,6
+2019,1,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,930
+2019,1,Adoption,Orders applied for,Non-Molestation,Exparte,n/a,1
+2019,1,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,834
+2019,1,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,458
+2019,1,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,3
+2019,2,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,1
+2019,2,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,875
+2019,2,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,6
+2019,2,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,4899
+2019,2,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,438
+2019,2,Adoption,Orders applied for,Non-Molestation,On Notice,n/a,1
+2019,2,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,848
+2019,3,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,947
+2019,3,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,5
+2019,3,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,1012
+2019,3,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,2
+2019,3,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,5364
+2019,3,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,472
+2019,4,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,476
+2019,4,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,1043
+2019,4,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,3
+2019,4,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,926
+2019,4,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,5193
+2019,4,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,2
+2020,1,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,447
+2020,1,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,941
+2020,1,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,6
+2020,1,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,977
+2020,1,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,5
+2020,1,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,5595
+2020,2,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,6418
+2020,2,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,4
+2020,2,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,1117
+2020,2,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,390
+2020,2,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,873
+2020,3,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,975
+2020,3,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,1267
+2020,3,Adoption,Orders applied for,Non-Molestation,Exparte,n/a,1
+2020,3,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,10
+2020,3,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,7157
+2020,3,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,465
+2020,3,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,3
+2020,4,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,4
+2020,4,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,8
+2020,4,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,909
+2020,4,Adoption,Orders applied for,Non-Molestation,Exparte,n/a,1
+2020,4,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,1056
+2020,4,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,398
+2020,4,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,6744
+2021,1,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,7
+2021,1,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,972
+2021,1,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,6670
+2021,1,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,355
+2021,1,Adoption,Orders applied for,Non-Molestation,Exparte,n/a,1
+2021,1,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,906
+2021,1,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,2
+2021,2,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,4
+2021,2,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,3
+2021,2,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,881
+2021,2,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,6042
+2021,2,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,327
+2021,2,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,947
+2021,3,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,941
+2021,3,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,4
+2021,3,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,6572
+2021,3,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,354
+2021,3,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,1069
+2021,3,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,6
+2021,4,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,9
+2021,4,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,880
+2021,4,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,1147
+2021,4,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,6432
+2021,4,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,350
+2021,4,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,1
+2022,1,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,1173
+2022,1,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,939
+2022,1,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,6874
+2022,1,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,369
+2022,1,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,3
+2022,1,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,3
+2022,2,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,4
+2022,2,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,758
+2022,2,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,1064
+2022,2,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,3
+2022,2,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,6602
+2022,2,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,304
+2022,3,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,6790
+2022,3,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,325
+2022,3,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,873
+2022,3,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,1
+2022,3,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,4
+2022,3,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,1131
+2022,4,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,1077
+2022,4,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,881
+2022,4,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,6597
+2022,4,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,333
+2022,4,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,4
+2023,1,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,6730
+2023,1,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,1133
+2023,1,Adoption,Orders applied for,Non-Molestation,Exparte,n/a,2
+2023,1,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,373
+2023,1,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,1
+2023,1,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,1044
+2023,1,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,3
+2023,2,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,365
+2023,2,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,6140
+2023,2,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,1062
+2023,2,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,1186
+2023,2,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,1
+2023,3,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,6118
+2023,3,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,446
+2023,3,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,1405
+2023,3,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,1055
+2023,4,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,1008
+2023,4,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,5357
+2023,4,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,1
+2023,4,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,3
+2023,4,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,1607
+2023,4,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,489
+2024,1,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,5533
+2024,1,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,446
+2024,1,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,1706
+2024,1,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,1017
+2024,1,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,2
+2024,2,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,1
+2024,2,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,1673
+2024,2,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,5568
+2024,2,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,466
+2024,2,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,962
+2024,2,Adoption,Orders applied for,Non-Molestation,Exparte,n/a,1
+2024,2,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,2
+2024,3,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,1780
+2024,3,Adoption,Orders applied for,Non-Molestation,On Notice,n/a,1
+2024,3,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,2
+2024,3,Adoption,Orders applied for,Non-Molestation,Exparte,n/a,1
+2024,3,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,5541
+2024,3,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,461
+2024,3,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,949
+2024,4,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,956
+2024,4,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,1
+2024,4,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,1738
+2024,4,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,5279
+2024,4,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,482
+2025,1,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,2041
+2025,1,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,1
+2025,1,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,898
+2025,1,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,5360
+2025,1,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,2
+2025,1,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,521
+2025,2,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,505
+2025,2,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,1021
+2025,2,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,2012
+2025,2,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,1
+2025,2,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,2
+2025,2,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,5272
+2025,3,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,5859
+2025,3,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,2335
+2025,3,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,506
+2025,3,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,1147
+2025,3,Adoption,Orders applied for,Non-Molestation,Exparte,n/a,1
+2025,3,Childrens Act,Orders applied for,Non-Molestation,On Notice,n/a,5
+2025,4,Childrens Act,Orders applied for,Non-Molestation,Exparte,n/a,2
+2025,4,Domestic Violence,Orders applied for,Non-Molestation,On Notice,n/a,2008
+2025,4,Domestic Violence,Orders applied for,Non-Molestation,Exparte,n/a,5286
+2025,4,Domestic Violence,Orders applied for,Occupation,Exparte,n/a,1095
+2025,4,Domestic Violence,Orders applied for,Occupation,On Notice,n/a,496
+2009,1,n/a,Orders made,Non-Molestation,n/a,n/a,5437
+2009,1,n/a,Orders made,Occupation,n/a,n/a,1247
+2009,2,n/a,Orders made,Non-Molestation,n/a,n/a,5616
+2009,2,n/a,Orders made,Occupation,n/a,n/a,1227
+2009,3,n/a,Orders made,Non-Molestation,n/a,n/a,6177
+2009,3,n/a,Orders made,Occupation,n/a,n/a,1160
+2009,4,n/a,Orders made,Non-Molestation,n/a,n/a,5651
+2009,4,n/a,Orders made,Occupation,n/a,n/a,1028
+2010,1,n/a,Orders made,Non-Molestation,n/a,n/a,5301
+2010,1,n/a,Orders made,Occupation,n/a,n/a,933
+2010,2,n/a,Orders made,Non-Molestation,n/a,n/a,5339
+2010,2,n/a,Orders made,Occupation,n/a,n/a,950
+2010,3,n/a,Orders made,Non-Molestation,n/a,n/a,5706
+2010,3,n/a,Orders made,Occupation,n/a,n/a,987
+2010,4,n/a,Orders made,Non-Molestation,n/a,n/a,4848
+2010,4,n/a,Orders made,Occupation,n/a,n/a,845
+2011,1,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,1997
+2011,1,Childrens Act,Orders made,Occupation,Exparte,n/a,1
+2011,1,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,137
+2011,1,Childrens Act,Orders made,Occupation,On Notice,n/a,7
+2011,1,Domestic Violence,Orders made,Occupation,Exparte,n/a,256
+2011,1,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2752
+2011,1,Domestic Violence,Orders made,Occupation,On Notice,n/a,552
+2011,1,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,39
+2011,2,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,40
+2011,2,Childrens Act,Orders made,Occupation,On Notice,n/a,20
+2011,2,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,1820
+2011,2,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,125
+2011,2,Childrens Act,Orders made,Occupation,Exparte,n/a,2
+2011,2,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2878
+2011,2,Domestic Violence,Orders made,Occupation,On Notice,n/a,525
+2011,2,Domestic Violence,Orders made,Occupation,Exparte,n/a,277
+2011,3,Domestic Violence,Orders made,Occupation,Exparte,n/a,260
+2011,3,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,132
+2011,3,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,53
+2011,3,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,1890
+2011,3,Childrens Act,Orders made,Occupation,On Notice,n/a,19
+2011,3,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3052
+2011,3,Domestic Violence,Orders made,Occupation,On Notice,n/a,510
+2011,3,Childrens Act,Orders made,Occupation,Exparte,n/a,3
+2011,4,Childrens Act,Orders made,Occupation,Exparte,n/a,4
+2011,4,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,1797
+2011,4,Domestic Violence,Orders made,Occupation,Exparte,n/a,231
+2011,4,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,46
+2011,4,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,174
+2011,4,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2624
+2011,4,Domestic Violence,Orders made,Occupation,On Notice,n/a,492
+2011,4,Childrens Act,Orders made,Occupation,On Notice,n/a,13
+2012,1,Domestic Violence,Orders made,Occupation,Exparte,n/a,212
+2012,1,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,23
+2012,1,Childrens Act,Orders made,Occupation,On Notice,n/a,5
+2012,1,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,1900
+2012,1,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2827
+2012,1,Domestic Violence,Orders made,Occupation,On Notice,n/a,495
+2012,1,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,126
+2012,2,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,100
+2012,2,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,24
+2012,2,Childrens Act,Orders made,Occupation,On Notice,n/a,12
+2012,2,Domestic Violence,Orders made,Occupation,Exparte,n/a,216
+2012,2,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2881
+2012,2,Domestic Violence,Orders made,Occupation,On Notice,n/a,452
+2012,2,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,1732
+2012,3,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,1896
+2012,3,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,23
+2012,3,Childrens Act,Orders made,Occupation,On Notice,n/a,9
+2012,3,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,125
+2012,3,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2953
+2012,3,Domestic Violence,Orders made,Occupation,On Notice,n/a,493
+2012,3,Domestic Violence,Orders made,Occupation,Exparte,n/a,230
+2012,4,Domestic Violence,Orders made,Occupation,Exparte,n/a,189
+2012,4,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,23
+2012,4,Childrens Act,Orders made,Occupation,On Notice,n/a,12
+2012,4,Childrens Act,Orders made,Occupation,Exparte,n/a,2
+2012,4,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,1831
+2012,4,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2788
+2012,4,Domestic Violence,Orders made,Occupation,On Notice,n/a,432
+2012,4,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,151
+2013,1,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,14
+2013,1,Childrens Act,Orders made,Occupation,On Notice,n/a,11
+2013,1,Domestic Violence,Orders made,Occupation,Exparte,n/a,212
+2013,1,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,1808
+2013,1,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3069
+2013,1,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,108
+2013,1,Domestic Violence,Orders made,Occupation,On Notice,n/a,434
+2013,2,Domestic Violence,Orders made,Occupation,On Notice,n/a,506
+2013,2,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,14
+2013,2,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,144
+2013,2,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3155
+2013,2,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,2071
+2013,2,Childrens Act,Orders made,Occupation,On Notice,n/a,9
+2013,2,Domestic Violence,Orders made,Occupation,Exparte,n/a,208
+2013,3,Domestic Violence,Orders made,Occupation,Exparte,n/a,208
+2013,3,Domestic Violence,Orders made,Occupation,On Notice,n/a,463
+2013,3,Childrens Act,Orders made,Occupation,Exparte,n/a,1
+2013,3,Childrens Act,Orders made,Occupation,On Notice,n/a,16
+2013,3,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,2180
+2013,3,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3643
+2013,3,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,22
+2013,3,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,135
+2013,4,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,151
+2013,4,Domestic Violence,Orders made,Occupation,On Notice,n/a,480
+2013,4,Domestic Violence,Orders made,Occupation,Exparte,n/a,191
+2013,4,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,12
+2013,4,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3694
+2013,4,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,2063
+2013,4,Childrens Act,Orders made,Occupation,On Notice,n/a,9
+2014,1,Childrens Act,Orders made,Occupation,On Notice,n/a,5
+2014,1,Domestic Violence,Orders made,Occupation,Exparte,n/a,179
+2014,1,Domestic Violence,Orders made,Occupation,On Notice,n/a,444
+2014,1,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,23
+2014,1,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,146
+2014,1,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3492
+2014,1,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,2194
+2014,1,Childrens Act,Orders made,Occupation,Exparte,n/a,1
+2014,2,Childrens Act,Orders made,Occupation,Exparte,n/a,1
+2014,2,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3463
+2014,2,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,152
+2014,2,Domestic Violence,Orders made,Occupation,Exparte,n/a,167
+2014,2,Childrens Act,Orders made,Occupation,On Notice,n/a,4
+2014,2,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,19
+2014,2,Domestic Violence,Orders made,Occupation,On Notice,n/a,440
+2014,2,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,2153
+2014,3,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,2472
+2014,3,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,15
+2014,3,Childrens Act,Orders made,Occupation,On Notice,n/a,18
+2014,3,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3606
+2014,3,Childrens Act,Orders made,Occupation,Exparte,n/a,1
+2014,3,Domestic Violence,Orders made,Occupation,Exparte,n/a,164
+2014,3,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,136
+2014,3,Domestic Violence,Orders made,Occupation,On Notice,n/a,520
+2014,4,Domestic Violence,Orders made,Occupation,On Notice,n/a,489
+2014,4,Domestic Violence,Orders made,Occupation,Exparte,n/a,144
+2014,4,Childrens Act,Orders made,Occupation,Exparte,n/a,2
+2014,4,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,20
+2014,4,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,2711
+2014,4,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3228
+2014,4,Childrens Act,Orders made,Occupation,On Notice,n/a,12
+2014,4,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,169
+2015,1,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,140
+2015,1,Domestic Violence,Orders made,Occupation,Exparte,n/a,142
+2015,1,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,2429
+2015,1,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,15
+2015,1,Childrens Act,Orders made,Occupation,On Notice,n/a,4
+2015,1,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3102
+2015,1,Domestic Violence,Orders made,Occupation,On Notice,n/a,424
+2015,2,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3271
+2015,2,Domestic Violence,Orders made,Occupation,On Notice,n/a,427
+2015,2,Domestic Violence,Orders made,Occupation,Exparte,n/a,134
+2015,2,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,152
+2015,2,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,16
+2015,2,Childrens Act,Orders made,Occupation,On Notice,n/a,20
+2015,2,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,2407
+2015,3,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,2712
+2015,3,Domestic Violence,Orders made,Occupation,Exparte,n/a,123
+2015,3,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3239
+2015,3,Domestic Violence,Orders made,Occupation,On Notice,n/a,484
+2015,3,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,13
+2015,3,Childrens Act,Orders made,Occupation,On Notice,n/a,6
+2015,3,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,161
+2015,4,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,147
+2015,4,Domestic Violence,Orders made,Occupation,Exparte,n/a,114
+2015,4,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,2667
+2015,4,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,7
+2015,4,Childrens Act,Orders made,Occupation,On Notice,n/a,18
+2015,4,Childrens Act,Orders made,Occupation,Exparte,n/a,1
+2015,4,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3152
+2015,4,Domestic Violence,Orders made,Occupation,On Notice,n/a,451
+2016,1,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,15
+2016,1,Childrens Act,Orders made,Occupation,On Notice,n/a,14
+2016,1,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,2487
+2016,1,Domestic Violence,Orders made,Occupation,Exparte,n/a,126
+2016,1,Childrens Act,Orders made,Occupation,Exparte,n/a,1
+2016,1,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,162
+2016,1,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3021
+2016,1,Domestic Violence,Orders made,Occupation,On Notice,n/a,440
+2016,2,Domestic Violence,Orders made,Occupation,On Notice,n/a,450
+2016,2,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,2570
+2016,2,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,26
+2016,2,Childrens Act,Orders made,Occupation,On Notice,n/a,9
+2016,2,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3355
+2016,2,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,172
+2016,2,Domestic Violence,Orders made,Occupation,Exparte,n/a,116
+2016,3,Domestic Violence,Orders made,Occupation,Exparte,n/a,109
+2016,3,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,2468
+2016,3,Domestic Violence,Orders made,Occupation,On Notice,n/a,462
+2016,3,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,173
+2016,3,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3329
+2016,3,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,26
+2016,3,Childrens Act,Orders made,Occupation,On Notice,n/a,6
+2016,4,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,25
+2016,4,Childrens Act,Orders made,Occupation,On Notice,n/a,14
+2016,4,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,2569
+2016,4,Domestic Violence,Orders made,Occupation,Exparte,n/a,108
+2016,4,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3071
+2016,4,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,177
+2016,4,Domestic Violence,Orders made,Occupation,On Notice,n/a,413
+2016,4,Childrens Act,Orders made,Occupation,Exparte,n/a,1
+2017,1,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,2709
+2017,1,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,212
+2017,1,Childrens Act,Orders made,Occupation,On Notice,n/a,18
+2017,1,Domestic Violence,Orders made,Occupation,Exparte,n/a,85
+2017,1,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,20
+2017,1,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3185
+2017,1,Domestic Violence,Orders made,Occupation,On Notice,n/a,500
+2017,2,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3336
+2017,2,Domestic Violence,Orders made,Occupation,On Notice,n/a,477
+2017,2,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,177
+2017,2,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,2765
+2017,2,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,22
+2017,2,Childrens Act,Orders made,Occupation,On Notice,n/a,15
+2017,2,Domestic Violence,Orders made,Occupation,Exparte,n/a,100
+2017,3,Domestic Violence,Orders made,Occupation,Exparte,n/a,127
+2017,3,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,197
+2017,3,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3503
+2017,3,Domestic Violence,Orders made,Occupation,On Notice,n/a,530
+2017,3,Childrens Act,Orders made,Occupation,On Notice,n/a,11
+2017,3,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,3114
+2017,3,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,28
+2017,4,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,16
+2017,4,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,175
+2017,4,Domestic Violence,Orders made,Occupation,Exparte,n/a,89
+2017,4,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,3162
+2017,4,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3134
+2017,4,Domestic Violence,Orders made,Occupation,On Notice,n/a,446
+2017,4,Childrens Act,Orders made,Occupation,On Notice,n/a,7
+2018,1,Domestic Violence,Orders made,Occupation,Exparte,n/a,85
+2018,1,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,3215
+2018,1,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,187
+2018,1,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,17
+2018,1,Childrens Act,Orders made,Occupation,On Notice,n/a,12
+2018,1,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3333
+2018,1,Domestic Violence,Orders made,Occupation,On Notice,n/a,414
+2018,2,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3299
+2018,2,Domestic Violence,Orders made,Occupation,On Notice,n/a,439
+2018,2,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,199
+2018,2,Domestic Violence,Orders made,Occupation,Exparte,n/a,81
+2018,2,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,3173
+2018,2,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,14
+2018,2,Childrens Act,Orders made,Occupation,On Notice,n/a,13
+2018,3,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,35
+2018,3,Childrens Act,Orders made,Occupation,On Notice,n/a,10
+2018,3,Domestic Violence,Orders made,Occupation,Exparte,n/a,76
+2018,3,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3368
+2018,3,Domestic Violence,Orders made,Occupation,On Notice,n/a,505
+2018,3,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,196
+2018,3,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,3302
+2018,3,Childrens Act,Orders made,Occupation,Exparte,n/a,1
+2018,4,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3300
+2018,4,Domestic Violence,Orders made,Occupation,On Notice,n/a,532
+2018,4,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,12
+2018,4,Childrens Act,Orders made,Occupation,On Notice,n/a,12
+2018,4,Domestic Violence,Orders made,Occupation,Exparte,n/a,80
+2018,4,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,3321
+2018,4,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,231
+2019,1,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,261
+2019,1,Domestic Violence,Orders made,Occupation,Exparte,n/a,95
+2019,1,Domestic Violence,Orders made,Occupation,On Notice,n/a,491
+2019,1,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,3379
+2019,1,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,11
+2019,1,Childrens Act,Orders made,Occupation,On Notice,n/a,10
+2019,1,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3810
+2019,1,Childrens Act,Orders made,Occupation,Exparte,n/a,1
+2019,2,Domestic Violence,Orders made,Occupation,On Notice,n/a,479
+2019,2,Domestic Violence,Orders made,Occupation,Exparte,n/a,99
+2019,2,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,262
+2019,2,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3689
+2019,2,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,3563
+2019,2,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,22
+2019,2,Childrens Act,Orders made,Occupation,On Notice,n/a,7
+2019,3,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,22
+2019,3,Childrens Act,Orders made,Occupation,On Notice,n/a,8
+2019,3,Domestic Violence,Orders made,Occupation,Exparte,n/a,94
+2019,3,Domestic Violence,Orders made,Occupation,On Notice,n/a,547
+2019,3,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,3936
+2019,3,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,246
+2019,3,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,4069
+2019,4,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,4011
+2019,4,Domestic Violence,Orders made,Occupation,Exparte,n/a,87
+2019,4,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,26
+2019,4,Childrens Act,Orders made,Occupation,On Notice,n/a,12
+2019,4,Childrens Act,Orders made,Occupation,Exparte,n/a,1
+2019,4,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,232
+2019,4,Domestic Violence,Orders made,Occupation,On Notice,n/a,570
+2019,4,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,3750
+2020,1,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,26
+2020,1,Domestic Violence,Orders made,Occupation,Exparte,n/a,99
+2020,1,Childrens Act,Orders made,Occupation,On Notice,n/a,6
+2020,1,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,3781
+2020,1,Domestic Violence,Orders made,Occupation,On Notice,n/a,516
+2020,1,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,242
+2020,1,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,4198
+2020,2,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,4056
+2020,2,Domestic Violence,Orders made,Occupation,Exparte,n/a,76
+2020,2,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,13
+2020,2,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,213
+2020,2,Domestic Violence,Orders made,Occupation,On Notice,n/a,489
+2020,2,Childrens Act,Orders made,Occupation,On Notice,n/a,10
+2020,2,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,4726
+2020,3,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,5248
+2020,3,Domestic Violence,Orders made,Occupation,Exparte,n/a,73
+2020,3,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,4490
+2020,3,Childrens Act,Orders made,Occupation,On Notice,n/a,8
+2020,3,Domestic Violence,Orders made,Occupation,On Notice,n/a,561
+2020,3,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,24
+2020,3,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,237
+2020,4,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,252
+2020,4,Domestic Violence,Orders made,Occupation,Exparte,n/a,44
+2020,4,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,5613
+2020,4,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,12
+2020,4,Domestic Violence,Orders made,Occupation,On Notice,n/a,590
+2020,4,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3997
+2020,4,Childrens Act,Orders made,Occupation,On Notice,n/a,10
+2021,1,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,14
+2021,1,Childrens Act,Orders made,Occupation,On Notice,n/a,12
+2021,1,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3723
+2021,1,Domestic Violence,Orders made,Occupation,On Notice,n/a,491
+2021,1,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,5671
+2021,1,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,236
+2021,1,Domestic Violence,Orders made,Occupation,Exparte,n/a,35
+2021,2,Domestic Violence,Orders made,Occupation,Exparte,n/a,41
+2021,2,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3202
+2021,2,Domestic Violence,Orders made,Occupation,On Notice,n/a,494
+2021,2,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,13
+2021,2,Childrens Act,Orders made,Occupation,On Notice,n/a,7
+2021,2,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,191
+2021,2,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,5552
+2021,3,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,5539
+2021,3,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3368
+2021,3,Domestic Violence,Orders made,Occupation,On Notice,n/a,496
+2021,3,Domestic Violence,Orders made,Occupation,Exparte,n/a,49
+2021,3,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,225
+2021,3,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,14
+2021,3,Childrens Act,Orders made,Occupation,On Notice,n/a,9
+2021,4,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,14
+2021,4,Childrens Act,Orders made,Occupation,On Notice,n/a,5
+2021,4,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3219
+2021,4,Domestic Violence,Orders made,Occupation,On Notice,n/a,530
+2021,4,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,5367
+2021,4,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,214
+2021,4,Domestic Violence,Orders made,Occupation,Exparte,n/a,57
+2022,1,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,195
+2022,1,Domestic Violence,Orders made,Occupation,Exparte,n/a,42
+2022,1,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,3267
+2022,1,Domestic Violence,Orders made,Occupation,On Notice,n/a,465
+2022,1,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,10
+2022,1,Childrens Act,Orders made,Occupation,On Notice,n/a,4
+2022,1,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,5530
+2022,2,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,5826
+2022,2,Domestic Violence,Orders made,Occupation,Exparte,n/a,32
+2022,2,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,181
+2022,2,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,9
+2022,2,Childrens Act,Orders made,Occupation,On Notice,n/a,2
+2022,2,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2933
+2022,2,Domestic Violence,Orders made,Occupation,On Notice,n/a,454
+2022,3,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2903
+2022,3,Domestic Violence,Orders made,Occupation,On Notice,n/a,525
+2022,3,Domestic Violence,Orders made,Occupation,Exparte,n/a,44
+2022,3,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,6426
+2022,3,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,8
+2022,3,Childrens Act,Orders made,Occupation,On Notice,n/a,4
+2022,3,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,174
+2022,4,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,168
+2022,4,Domestic Violence,Orders made,Occupation,Exparte,n/a,53
+2022,4,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2823
+2022,4,Domestic Violence,Orders made,Occupation,On Notice,n/a,486
+2022,4,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,14
+2022,4,Childrens Act,Orders made,Occupation,On Notice,n/a,4
+2022,4,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,6090
+2023,1,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2517
+2023,1,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,6452
+2023,1,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,10
+2023,1,Childrens Act,Orders made,Occupation,On Notice,n/a,2
+2023,1,Domestic Violence,Orders made,Occupation,On Notice,n/a,500
+2023,1,Domestic Violence,Orders made,Occupation,Exparte,n/a,32
+2023,1,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,136
+2023,2,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,136
+2023,2,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,11
+2023,2,Childrens Act,Orders made,Occupation,On Notice,n/a,4
+2023,2,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,6097
+2023,2,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2035
+2023,2,Domestic Violence,Orders made,Occupation,Exparte,n/a,36
+2023,2,Domestic Violence,Orders made,Occupation,On Notice,n/a,475
+2023,3,Domestic Violence,Orders made,Occupation,On Notice,n/a,510
+2023,3,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,6380
+2023,3,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,10
+2023,3,Childrens Act,Orders made,Occupation,On Notice,n/a,3
+2023,3,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,122
+2023,3,Domestic Violence,Orders made,Occupation,Exparte,n/a,25
+2023,3,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2258
+2023,4,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2202
+2023,4,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,11
+2023,4,Childrens Act,Orders made,Occupation,On Notice,n/a,4
+2023,4,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,6019
+2023,4,Domestic Violence,Orders made,Occupation,On Notice,n/a,545
+2023,4,Domestic Violence,Orders made,Occupation,Exparte,n/a,37
+2023,4,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,149
+2024,1,Domestic Violence,Orders made,Occupation,Exparte,n/a,35
+2024,1,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,118
+2024,1,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,5
+2024,1,Childrens Act,Orders made,Occupation,On Notice,n/a,2
+2024,1,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,6362
+2024,1,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2186
+2024,1,Domestic Violence,Orders made,Occupation,On Notice,n/a,555
+2024,2,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2207
+2024,2,Domestic Violence,Orders made,Occupation,On Notice,n/a,606
+2024,2,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,6
+2024,2,Childrens Act,Orders made,Occupation,On Notice,n/a,6
+2024,2,Domestic Violence,Orders made,Occupation,Exparte,n/a,32
+2024,2,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,113
+2024,2,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,6676
+2024,3,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,6273
+2024,3,Domestic Violence,Orders made,Occupation,Exparte,n/a,38
+2024,3,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2187
+2024,3,Domestic Violence,Orders made,Occupation,On Notice,n/a,544
+2024,3,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,6
+2024,3,Childrens Act,Orders made,Occupation,On Notice,n/a,5
+2024,3,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,125
+2024,4,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,140
+2024,4,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2182
+2024,4,Domestic Violence,Orders made,Occupation,On Notice,n/a,562
+2024,4,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,6098
+2024,4,Domestic Violence,Orders made,Occupation,Exparte,n/a,32
+2024,4,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,18
+2024,4,Childrens Act,Orders made,Occupation,On Notice,n/a,4
+2025,1,Domestic Violence,Orders made,Occupation,On Notice,n/a,530
+2025,1,Childrens Act,Orders made,Occupation,On Notice,n/a,7
+2025,1,Domestic Violence,Orders made,Occupation,Exparte,n/a,34
+2025,1,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,6478
+2025,1,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2205
+2025,1,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,152
+2025,1,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,11
+2025,2,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,12
+2025,2,Domestic Violence,Orders made,Occupation,Exparte,n/a,41
+2025,2,Domestic Violence,Orders made,Occupation,On Notice,n/a,546
+2025,2,Childrens Act,Orders made,Occupation,On Notice,n/a,4
+2025,2,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,138
+2025,2,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,6092
+2025,2,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2065
+2025,3,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2184
+2025,3,Domestic Violence,Orders made,Occupation,On Notice,n/a,568
+2025,3,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,11
+2025,3,Domestic Violence,Orders made,Occupation,Exparte,n/a,50
+2025,3,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,6880
+2025,3,Childrens Act,Orders made,Occupation,On Notice,n/a,5
+2025,3,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,137
+2025,4,Childrens Act,Orders made,Non-Molestation,On Notice,n/a,145
+2025,4,Domestic Violence,Orders made,Non-Molestation,On Notice,n/a,6375
+2025,4,Domestic Violence,Orders made,Occupation,Exparte,n/a,31
+2025,4,Domestic Violence,Orders made,Occupation,On Notice,n/a,522
+2025,4,Domestic Violence,Orders made,Non-Molestation,Exparte,n/a,2170
+2025,4,Childrens Act,Orders made,Occupation,On Notice,n/a,6
+2025,4,Childrens Act,Orders made,Non-Molestation,Exparte,n/a,11

@@ -1,0 +1,129 @@
+Year,Quarter,Type,Total
+2018,1,Application,75
+2018,1,Cases concluded,20
+2018,1,Cases started,75
+2018,1,Order made,97
+2018,2,Application,78
+2018,2,Cases concluded,25
+2018,2,Cases started,78
+2018,2,Order made,157
+2018,3,Application,94
+2018,3,Cases concluded,45
+2018,3,Cases started,94
+2018,3,Order made,249
+2018,4,Application,98
+2018,4,Cases concluded,67
+2018,4,Cases started,98
+2018,4,Order made,278
+2019,1,Application,93
+2019,1,Cases concluded,72
+2019,1,Cases started,93
+2019,1,Order made,273
+2019,2,Application,114
+2019,2,Cases concluded,57
+2019,2,Cases started,114
+2019,2,Order made,266
+2019,3,Application,126
+2019,3,Cases concluded,103
+2019,3,Cases started,126
+2019,3,Order made,295
+2019,4,Application,96
+2019,4,Cases concluded,87
+2019,4,Cases started,96
+2019,4,Order made,247
+2020,1,Application,109
+2020,1,Cases concluded,87
+2020,1,Cases started,109
+2020,1,Order made,268
+2020,2,Application,57
+2020,2,Cases concluded,27
+2020,2,Cases started,57
+2020,2,Order made,100
+2020,3,Application,71
+2020,3,Cases concluded,60
+2020,3,Cases started,71
+2020,3,Order made,150
+2020,4,Application,83
+2020,4,Cases concluded,37
+2020,4,Cases started,83
+2020,4,Order made,156
+2021,1,Application,59
+2021,1,Cases concluded,45
+2021,1,Cases started,59
+2021,1,Order made,169
+2021,2,Application,62
+2021,2,Cases concluded,35
+2021,2,Cases started,62
+2021,2,Order made,140
+2021,3,Application,55
+2021,3,Cases concluded,49
+2021,3,Cases started,55
+2021,3,Order made,165
+2021,4,Application,61
+2021,4,Cases concluded,53
+2021,4,Cases started,61
+2021,4,Order made,126
+2022,1,Application,65
+2022,1,Cases concluded,57
+2022,1,Cases started,65
+2022,1,Order made,142
+2022,2,Application,92
+2022,2,Cases concluded,46
+2022,2,Cases started,92
+2022,2,Order made,186
+2022,3,Application,81
+2022,3,Cases concluded,55
+2022,3,Cases started,81
+2022,3,Order made,219
+2022,4,Application,75
+2022,4,Cases concluded,58
+2022,4,Cases started,75
+2022,4,Order made,157
+2023,1,Application,59
+2023,1,Cases concluded,41
+2023,1,Cases started,59
+2023,1,Order made,141
+2023,2,Application,89
+2023,2,Cases concluded,68
+2023,2,Cases started,89
+2023,2,Order made,221
+2023,3,Application,88
+2023,3,Cases concluded,79
+2023,3,Cases started,88
+2023,3,Order made,252
+2023,4,Application,69
+2023,4,Cases concluded,66
+2023,4,Cases started,69
+2023,4,Order made,194
+2024,1,Application,46
+2024,1,Cases concluded,55
+2024,1,Cases started,46
+2024,1,Order made,177
+2024,2,Application,100
+2024,2,Cases concluded,55
+2024,2,Cases started,100
+2024,2,Order made,196
+2024,3,Application,61
+2024,3,Cases concluded,62
+2024,3,Cases started,61
+2024,3,Order made,200
+2024,4,Application,99
+2024,4,Cases concluded,56
+2024,4,Cases started,99
+2024,4,Order made,186
+2025,1,Application,96
+2025,1,Cases concluded,72
+2025,1,Cases started,96
+2025,1,Order made,244
+2025,2,Application,74
+2025,2,Cases concluded,81
+2025,2,Cases started,74
+2025,2,Order made,163
+2025,3,Application,73
+2025,3,Cases concluded,65
+2025,3,Cases started,73
+2025,3,Order made,179
+2025,4,Application,104
+2025,4,Cases concluded,89
+2025,4,Cases started,104
+2025,4,Order made,179
