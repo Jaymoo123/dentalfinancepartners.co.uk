@@ -9,7 +9,8 @@
  *     never triggers outside production)
  *   - Probe support (LEAD_PROBE_SECRET rewrites source='test')
  *
- * onLeadInserted: enrols every brand-new lead into the CIS nurture sequence.
+ * onLeadInserted: enrols every brand-new lead into the wills-probate nurture
+ * sequence (contactability or detail-capture, routed on missing contact fields).
  * Best-effort, never blocks or loses the lead. No-ops while LEAD_NURTURE_ENABLED
  * is unset (dormant/dry-run).
  *
@@ -75,19 +76,12 @@ export async function POST(req: Request): Promise<NextResponse> {
         source: "wills-probate",
         message,
       };
-      // TODO Phase 2: wire up the wills-probate nurture sequences and re-enable.
-      // Scaffold-stage: config/lead-nurture.ts exports empty/disabled sequences,
-      // so enrolment is a no-op anyway; commented out to make that explicit.
-      // const sequenceName = routePrimarySequence(lead);
-      // await enrollLead(lead, {
-      //   sequenceName,
-      //   live: lead.source !== "test",
-      //   visitorId,
-      // });
-      void lead;
-      void visitorId;
-      void routePrimarySequence;
-      void enrollLead;
+      const sequenceName = routePrimarySequence(lead);
+      await enrollLead(lead, {
+        sequenceName,
+        live: lead.source !== "test",
+        visitorId,
+      });
     } catch (err) {
       console.error("[leads/submit/wills-probate] enrol failed (non-fatal)", err);
     }
