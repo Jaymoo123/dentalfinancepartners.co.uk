@@ -4,13 +4,13 @@ slug: unused-pension-pot-inheritance-tax-2027
 date: "2026-07-24"
 updatedDate: "2026-07-24"
 author: "Editorial Team"
-image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80"
-altText: "Tax paperwork, a calculator app on a phone and folders spread out on a white floor."
+image: "https://images.unsplash.com/photo-1762438440151-5628bf2f0623?auto=format&fit=crop&w=1200&q=80"
+altText: "An elderly retired couple sitting together on a park bench."
 imageCredit:
-  photographer: "Kelly Sikkema"
-  photographerUrl: "https://unsplash.com/@kellysikkema"
+  photographer: "Eugene Chystiakov"
+  photographerUrl: "https://unsplash.com/@eugenechystiakov"
   source: "Unsplash"
-  sourceUrl: "https://unsplash.com/@kellysikkema"
+  sourceUrl: "https://unsplash.com/photos/elderly-couple-sitting-on-a-park-bench-vDmCL9hKTRE"
 category: Pensions and IHT 2027
 metaTitle: "Unused Pension Pot Inheritance Tax 2027: New Rules"
 metaDescription: "From 6 April 2027 unused pension pots count for inheritance tax. What counts as unused, what is excluded, and how executors report and pay the bill."
