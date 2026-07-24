@@ -1,0 +1,27 @@
+{
+  "vertical": "solar panel installation",
+  "provider_terms": [
+    "installer",
+    "solar company",
+    "electrician"
+  ],
+  "pain_seeds": [
+    "solar panel cost uk",
+    "are solar panels worth it",
+    "battery storage cost",
+    "smart export guarantee rates",
+    "solar panel grants",
+    "solar panel payback time",
+    "solar panels rent roof"
+  ],
+  "audience_terms": [
+    "solar panels",
+    "homeowners"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": false,
+  "seed_evidence": [
+    "lead-market candidate solar-panel-installation-leadmkt (12 sellers, 250 GBP signal)"
+  ],
+  "name": "solar-installation"
+}

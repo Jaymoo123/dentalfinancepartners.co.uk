@@ -1,0 +1,26 @@
+{
+  "vertical": "electric car road charging",
+  "provider_terms": [
+    "accountant",
+    "adviser",
+    "advisor"
+  ],
+  "pain_seeds": [
+    "electric car road tax",
+    "pay per mile electric car",
+    "ev road pricing",
+    "electric car tax 2028",
+    "ev mileage reporting",
+    "electric car company car tax"
+  ],
+  "audience_terms": [
+    "electric car owners",
+    "ev drivers"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": false,
+  "seed_evidence": [
+    "reg-churn candidate ev-per-mile-road-charging-eved (Budget 2025, April 2028, c.3p/mile)"
+  ],
+  "name": "ev-road-charging"
+}

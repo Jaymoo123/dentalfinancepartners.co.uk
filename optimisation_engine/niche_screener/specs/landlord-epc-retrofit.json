@@ -1,0 +1,28 @@
+{
+  "vertical": "rental property energy upgrades",
+  "provider_terms": [
+    "installer",
+    "retrofit assessor",
+    "energy assessor",
+    "insulation company"
+  ],
+  "pain_seeds": [
+    "epc c deadline rental property",
+    "mees exemptions",
+    "epc improvement cost",
+    "landlord insulation cost",
+    "heat pump grant landlord",
+    "minimum energy efficiency standard",
+    "epc rating improve"
+  ],
+  "audience_terms": [
+    "landlords",
+    "rental properties"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": false,
+  "seed_evidence": [
+    "reg-churn candidate landlord-epc-upgrades-private-rented-mees (2.5m homes below EPC C, 15k GBP cap)"
+  ],
+  "name": "landlord-epc-retrofit"
+}

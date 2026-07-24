@@ -1,0 +1,28 @@
+{
+  "vertical": "divorce financial settlement",
+  "provider_terms": [
+    "solicitor",
+    "family solicitor",
+    "mediator",
+    "family lawyer"
+  ],
+  "pain_seeds": [
+    "divorce cost uk",
+    "financial settlement divorce",
+    "clean break order",
+    "form e financial statement",
+    "pension sharing divorce",
+    "consent order cost",
+    "who gets the house divorce"
+  ],
+  "audience_terms": [
+    "divorce",
+    "separating couples"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": false,
+  "seed_evidence": [
+    "lead-market candidate divorce-leadmkt (11 sellers) + family-law-leadmkt (10 sellers)"
+  ],
+  "name": "divorce-finances"
+}

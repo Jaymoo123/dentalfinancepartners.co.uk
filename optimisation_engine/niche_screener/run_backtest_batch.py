@@ -41,12 +41,15 @@ class _Args:
 
 
 def main() -> None:
-    registry_path = common.CACHE_DIR / "backtest_runs.json"
+    import sys
+    specs = sys.argv[1:] or SPECS
+    registry_name = "batch_runs.json" if sys.argv[1:] else "backtest_runs.json"
+    registry_path = common.CACHE_DIR / registry_name
     registry: dict = {}
     if registry_path.exists():
         registry = json.loads(registry_path.read_text(encoding="utf-8"))
 
-    for name in SPECS:
+    for name in specs:
         spec_path = common.SPECS_DIR / f"{name}.json"
         run_id = common.new_run_id()
         print(f"\n===== {name} ({run_id}) =====", flush=True)

@@ -1,0 +1,26 @@
+{
+  "vertical": "dental implants",
+  "provider_terms": [
+    "dentist",
+    "implant dentist",
+    "dental clinic"
+  ],
+  "pain_seeds": [
+    "dental implant cost uk",
+    "full mouth dental implants price",
+    "dental implants abroad",
+    "dental implant finance",
+    "all on 4 cost",
+    "denture vs implant",
+    "implant pain how long"
+  ],
+  "audience_terms": [
+    "dental implants"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": false,
+  "seed_evidence": [
+    "lead-market candidate dental-implants-leadmkt (13 seller domains, 68-150 GBP price signals)"
+  ],
+  "name": "dental-implants"
+}

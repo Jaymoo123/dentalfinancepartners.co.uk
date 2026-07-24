@@ -1,0 +1,26 @@
+{
+  "vertical": "employer visa sponsorship",
+  "provider_terms": [
+    "immigration solicitor",
+    "immigration adviser",
+    "immigration lawyer"
+  ],
+  "pain_seeds": [
+    "sponsor licence application",
+    "sponsor licence cost",
+    "certificate of sponsorship",
+    "skilled worker visa employer requirements",
+    "sponsor compliance audit",
+    "sponsor licence suspended"
+  ],
+  "audience_terms": [
+    "employers",
+    "sponsors"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": false,
+  "seed_evidence": [
+    "lead-market candidate immigration-solicitor-leadmkt (7 sellers); strategy scan 3.5k-7k GBP matters"
+  ],
+  "name": "sponsor-licence"
+}
