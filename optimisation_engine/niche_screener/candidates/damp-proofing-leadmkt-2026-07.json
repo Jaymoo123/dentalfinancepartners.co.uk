@@ -1,0 +1,78 @@
+{
+  "candidate_id": "damp-proofing-leadmkt-2026-07",
+  "vertical": "damp proofing",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.leadseveryday.co.uk/damp-proofing",
+      "excerpt": "Get exclusive damp proofing leads delivered daily. We build your landing page, run targeted Google Ads, and send qualified customers straight to your phone.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.fatrank.com/damp-proofing-lead-generation/",
+      "excerpt": "Our digital marketing service helps to create many leads across the United Kingdom, which can be delivered to you at an affordable monthly payment. To find out ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.zapo.com/ads/damp-proofing",
+      "excerpt": "We've delivered over £460m damp proofing leads using Google Ads • 100% positive customer reviews on Trustpilot • Sign up to the UK's #1 lead generation ...",
+      "metric": {
+        "price_gbp": 460
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.leadsnurtured.com/damp-proofing",
+      "excerpt": "Our Damp Proofing leads connect businesses with customers worldwide, helping you grow no matter where you're located. We deliver high-quality opportunities ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.leadhack.co.uk/locations/blackpool/damp-proofing",
+      "excerpt": "We specialise in lead generation for damp proofing businesses across the UK. We understand that damp proofing leads need to convert into profitable outcomes, ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leads.work/leads/damp-proofing.html",
+      "excerpt": "You can choose how to receive your job leads: either on a pay per lead basis or through a weekly subscription tailored to your capacity and working area.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://mulloysystems.com/industry/damp-proofing/solihull/lead-generation",
+      "excerpt": "Trade leads from £95/mo - Cancel anytime. itself over and over.\" at £4 per residential lead, £30 per lead for £20K+ jobs - the ROI is insane.\" You get more  ...",
+      "metric": {
+        "price_gbp": 4
+      }
+    }
+  ],
+  "seed_queries": [
+    "damp proofing",
+    "damp proofing job leads",
+    "damp proofing lead generation",
+    "lead generation for damp proofing companies",
+    "lead generation for damp proofing specialists blackpool | lead hack",
+    "leads for damp proofing specialists | zapo ads",
+    "solihull damp proofing leads - stop waiting, start growing"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK damp proofing providers already paying per lead",
+    "proof": "7 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

@@ -1,0 +1,88 @@
+{
+  "candidate_id": "structural-engineer-leadmkt-2026-07",
+  "vertical": "structural engineer",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.zapo.com/ads/structural-engineers",
+      "excerpt": "We've delivered £460m engineering leads using Google Ads • 100% positive customer reviews on Trustpilot • Sign up to the UK's #1 lead generation service.",
+      "metric": {
+        "price_gbp": 460
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://uk.indeed.com/q-lead-generation-in-construction-jobs.html",
+      "excerpt": "Explore local Lead Generation in Construction job. Pay: Competitive day rates (negotiable). Plan and manage lead generation campaigns across Google Ads, paid ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadsuitenow.com/blog/structural-engineering-lead-generation-2026",
+      "excerpt": "Track metrics like cost per lead, proposal win rate, and revenue per channel quarterly to identify your most productive marketing investments.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://roclogicmarketing.com/lead-generation-for-engineering-tips-and-insights/",
+      "excerpt": "Lead generation is fundamental to having a services business “Lead generation” essentially means creating a viable business in a capitalistic system.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://buildpartner.com/7-best-lead-generation-companies-for-uk-building-contractors/",
+      "excerpt": "29 Jun 2024 — Lead generation – pay companies per lead, such as Rated People and MyBuilder. pay-per-lead payment model. usually between £10 to £50, depending ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://openasset.com/resources/engineering-lead-generation/",
+      "excerpt": "26 Apr 2024 — Pay-per-click (PPC) advertising is a highly effective lead generation strategy for engineering firms, offering several distinct advantages that ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://barbour-abi.com/how-to-get-the-most-out-of-your-construction-leads/",
+      "excerpt": "Find out how you can optimise your construction lead generation and take those contacts from prospect to close with our expert insight.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://onebasemedia.co.uk/pay-per-lead-generation/",
+      "excerpt": "Set prices on pay per lead generation. Only pay for the leads you use, we give you a set price for the leads and you give us a monthly budget.",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "7 best lead generation companies for uk building ...",
+    "engineering lead generation: 8 strategies + 5 tips",
+    "lead generation for engineering - insights from an engineer",
+    "lead generation in construction jobs",
+    "leads for structural engineers | zapo ads",
+    "optimising your construction lead generation",
+    "pay per lead generation - one base media",
+    "structural engineer",
+    "structural engineering lead generation in 2026: get more ..."
+  ],
+  "buyer_hypothesis": {
+    "who": "UK structural engineer providers already paying per lead",
+    "proof": "8 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

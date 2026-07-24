@@ -1,0 +1,61 @@
+{
+  "candidate_id": "pension-advice-leadmkt-2026-07",
+  "vertical": "pension advice",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.leadcrowd.com/lead-types/financial-services/pension/",
+      "excerpt": "Find out how to buy the pension leads you need. From £30 SEO Leads From £80. LeadCrowd can provide financial advisors with qualified pension leads",
+      "metric": {
+        "price_gbp": 30
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.linkedin.com/pulse/why-its-time-professionalise-lead-generation-advice-philip-calvert-zlekc",
+      "excerpt": "Organic lead gen reduces reliance on paid marketing - When you know what works, you don't need to throw money at ads and hope for the best. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.rmtdirect.com/",
+      "excerpt": "Our pension appointments achieves unmatched conversion rates of 75% for financial advice firms. Conversion rate for clients that hold pensions is good at 75%.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.platinumprospects.ai/ask",
+      "excerpt": "Full service lead generation for UK financial services firms typically costs £3k £15k/month in agency fees plus £3k £40k/month in ad spend, depending on scale ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.unbiased.co.uk/pro/how-it-works/lead-generation-for-financial-advisers-ifa-leads",
+      "excerpt": "Unbiased provides one of the UK's most effective lead generation services for IFAs and whole-of-market financial advisers. enquiries cost £52+VAT each).",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "ask: uk financial adviser marketing questions answered",
+    "buy pension leads online",
+    "pension advice",
+    "quality leads for financial advisers",
+    "rmt direct leads | lead generation for the uk's financial ...",
+    "why it's time to professionalise lead generation in ..."
+  ],
+  "buyer_hypothesis": {
+    "who": "UK pension advice providers already paying per lead",
+    "proof": "5 domains selling per-lead"
+  },
+  "regulatory_gate": "IAR",
+  "accounting_adjacent": false
+}

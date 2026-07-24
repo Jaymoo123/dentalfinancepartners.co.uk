@@ -1,0 +1,115 @@
+{
+  "candidate_id": "divorce-leadmkt-2026-07",
+  "vertical": "divorce",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.theshare.group/leads/divorced-household/",
+      "excerpt": "Find highly motivated divorced homeowners looking to sell quickly. Get phone and email leads. Buy Seller Leads Online. Phone: 402-235-4556",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.egenerationmarketing.com/blog/divorce-leads",
+      "excerpt": "31 Mar 2025 — With no long-term commitments or hidden fees, your firm can try our family law and divorce leads risk-free. To learn more about our legal leads ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://legal-case-leads.co.uk/family-law-lead-generation-for-law-firms/",
+      "excerpt": "Expert strategy : Our focus lies in generating top-tier divorce leads through our refined techniques, guaranteeing effective outreach to individuals in need of ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "http://adveellc.in/divorce-ad-campaign.html",
+      "excerpt": "Precision-Generated 112 High-Intent Divorce Leads Within 30-Day Campaign Window ... Average Cost Per Lead. 14.8%. Conversion Rate. 47%. Lead-to-Consultation Rate.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.causalfunnel.com/blog/top-5-proven-strategies-for-family-law-lead-generation/",
+      "excerpt": "1 May 2025 — Pay-Per-Lead vs Pay-Per-Click. LSAs: Pay for real leads, not clicks. Great for lawyers. PPC: Pay for every click, even if it's not a real lead. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadpronto.co.uk/pay-per-lead-generation/",
+      "excerpt": "As a lead agency, we have a proven track record of generating ✓ 100,000s of high quality leads for our clients on a pay per lead basis, providing a great ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://open.spotify.com/episode/2ZW0MDBeKYzG4HIzisgteR",
+      "excerpt": "Google Local Services Ads can put your firm at the very top of search results and generate leads on a pay per lead model, and why divorce attorneys",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.reddit.com/r/RealEstateTechnology/comments/1mbophw/pay_per_lead_services_is_it_worth_it_advice/",
+      "excerpt": "Hey everyone,\n\nI’ve been in the real estate space for a while and recently came across an interesting idea: instead of dropping thousands each month ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.martindale-avvo.com/blog/what-is-a-pay-per-lead-company/",
+      "excerpt": "17 Oct 2023 — Pay-per-lead is an excellent option for busy law firms and attorneys who don't have the time or skill to focus on their lead generation. You ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.pushgroup.co.uk/blog/top-9-pay-per-lead-agencies-in-the-uk",
+      "excerpt": "15 Oct 2024 — Compare the top pay per lead agencies in the UK. Exclusive leads, no wasted budget, real results. Updated for 2026.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.linkdigital.co.uk/services/pay-per-lead/",
+      "excerpt": "We provide high quality, qualified leads on a pay per lead basis, from 25 to 100's of leads per week. Fixed price leads with no advertising costs or agency fees ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "10 proven advanced level marketing strategies for ...",
+    "112 high-intent divorce leads in 30 days | legal marketing case ...",
+    "divorce",
+    "divorce leads for lawyers | family law lead generation",
+    "divorced homeowner leads | accurate data for real estate",
+    "family law lead generation agency - legal case leads",
+    "pay per lead generation",
+    "pay per lead services",
+    "pay per lead services, is it worth it?? advice??",
+    "top 5 proven strategies for family law lead generation",
+    "top 9 pay per lead agencies in the uk (2026)",
+    "what is a pay-per-lead company?"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK divorce providers already paying per lead",
+    "proof": "11 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

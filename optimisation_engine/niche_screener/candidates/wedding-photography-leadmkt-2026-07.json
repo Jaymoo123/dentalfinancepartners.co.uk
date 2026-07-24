@@ -1,0 +1,106 @@
+{
+  "candidate_id": "wedding-photography-leadmkt-2026-07",
+  "vertical": "wedding photography",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://referr.co.uk/categories/events/photography-services",
+      "excerpt": "75.00 per lead Photographer. Earn £8.00 per lead Wedding Photographer leads Winnie is looking for Wedding Photography leads. Earn £150.00 ...",
+      "metric": {
+        "price_gbp": 8
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.youtube.com/watch?v=atm6Cx3wljQ",
+      "excerpt": "Need help with lead generation for your wedding photography business? Book a free consultation call below !",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.zapo.com/ads/photography",
+      "excerpt": "We've delivered over £460m photography leads using Google Ads • 100% positive customer reviews on Trustpilot • Sign up to the UK's #1 lead generation ...",
+      "metric": {
+        "price_gbp": 460
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.facebook.com/groups/wedissimo/posts/10161069694933107/",
+      "excerpt": "Cost per lead will cover a myriad of costs and is somewhat a dark ... wedding photography leads is not your favourite images . That's ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.convertcalculator.com/blog/wedding-photography-leads/",
+      "excerpt": "18 Jul 2025 — Always measure cost per booked wedding, not just cost per lead. 3 ... Each post becomes a long-tail magnet for wedding photography leads. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.instagram.com/reel/DPBnmuBjzmB/",
+      "excerpt": "... wedding photography leads, wedding photography lead generation ads ... per lead — far outperforming traffic-only campaigns. Strong ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://adbetter.com/blog/wedding-photography-lead-generation/",
+      "excerpt": "18 May 2026 — There are dozens of lead generation strategies for wedding photographers – but pay per click advertising is one of the most accountable and cost ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://theleadsource.co.uk/8-lead-generation-strategies-for-your-photography-business/",
+      "excerpt": "# 1 Using paid advertising for your lead generation strategy. Using Paid Advertising in one of the most effective ways to gain new leads. The premise is to ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://racheljordaneducation.com/effective-lead-generation-for-wedding-photographers/",
+      "excerpt": "Effective Lead Generation for Wedding Photographers · 1. Show what you want to book. You will not book what you're not showing. · 2. Say the quiet part out loud. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.thecorner.ai/service/lead-generation/photography",
+      "excerpt": "The cost to generate a photography lead can vary widely, typically ranging from $10 to $100 per lead, depending on factors such as the marketing strategy used, ...",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "8 lead generation strategies for your photography business",
+    "effective lead generation for wedding photographers",
+    "how to get wedding photography leads every day",
+    "how to get wedding photography leads: 5 proven ...",
+    "leads for photographers | zapo ads",
+    "photography lead generation service | the corner ai",
+    "photography services lead requests",
+    "wedding photography",
+    "wedding photography lead generation",
+    "what is the average amount spent on leads for wedding ...",
+    "🚀 meta ads for wedding photography . . . [meta ads for ..."
+  ],
+  "buyer_hypothesis": {
+    "who": "UK wedding photography providers already paying per lead",
+    "proof": "10 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

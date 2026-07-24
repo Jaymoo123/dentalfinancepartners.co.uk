@@ -1,0 +1,88 @@
+{
+  "candidate_id": "epc-assessment-leadmkt-2026-07",
+  "vertical": "epc assessment",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://leadcapture.io/blog/how-much-to-charge-per-lead/",
+      "excerpt": "29 Nov 2023 — Formula: AOV = Total Revenue from Leads / Total Number of Leads Example: If a converted lead typically brings in $3,000, then AOV = $3,000.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.pushgroup.co.uk/blog/top-9-pay-per-lead-agencies-in-the-uk",
+      "excerpt": "15 Oct 2024 — Compare the top pay per lead agencies in the UK. Exclusive leads, no wasted budget, real results. Updated for 2026.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.reddit.com/r/LeadGeneration/comments/1mzvmpn/are_performancebased_payperlead_outreach_agencies/",
+      "excerpt": "I've been talking to a few agencies and one of them offers a 'pay-per-lead' or 'pay-per-meeting' model. It sounds tempting because there's less risk for ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://pay-per-lead.co.uk/",
+      "excerpt": "",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://ttmc.co.uk/knowledge/articles/pay-per-lead-a-penny-wise-pound-foolish-approach",
+      "excerpt": "2 Dec 2016 — A pay-per-lead model favours lead quantity over a range of other positive outcomes - find our why.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.fatrank.com/pay-per-lead-generation/",
+      "excerpt": "Pay Per Lead, often known as cost per lead, is essentially an agreement between a firm and us to produce leads in exchange for a commission. A lead is often an ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://phonexa.uk/blog/insights-and-strategies-for-navigating-the-pay-per-lead-maze/",
+      "excerpt": "8 May 2025 — A Comprehensive Guide to Pay-Per-Call Lead Generation Demystifying Strategies for Call Tracking & Leadgen Management with Ping Post, Ping Tree ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://vib.tech/resources/marketing-blogs/dp-example-of-pay-per-lead/",
+      "excerpt": "13 Feb 2024 — An example of pay per lead is pay per appointment, where you can generate a set number of meetings for a predetermined price (and quality).",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "are performance-based (pay-per-lead) outreach agencies ...",
+    "epc assessment",
+    "how much to charge per lead (numbers &#038",
+    "pay per lead",
+    "pay per lead generation",
+    "pay per lead: insights & strategies for marketers",
+    "pay-per-lead: a penny wise, pound foolish approach?",
+    "top 9 pay per lead agencies in the uk (2026)",
+    "what is an example of \"pay per lead\"? [8 models to know]"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK epc assessment providers already paying per lead",
+    "proof": "8 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

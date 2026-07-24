@@ -1,0 +1,132 @@
+{
+  "candidate_id": "removals-leadmkt-2026-07",
+  "vertical": "removals",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.pinlocal.com/removals.html",
+      "excerpt": "PinLocal is the UK's leading removals lead generation company. We source thousands of domestic, commercial and international removals leads per month.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.leadseveryday.co.uk/removals",
+      "excerpt": "Get exclusive removal leads delivered daily. We build your landing page, run targeted Google Ads, and send qualified customers straight to your phone.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://pearllemonleads.com/lead-generation-for-moving-companies/",
+      "excerpt": "We generate exclusive, high-intent removals leads for UK moving companies using Local SEO, Google LSAs, PPC and outreach ... Cost per lead (CPL) and cost per ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.trusted-local.co.uk/industries/removals/",
+      "excerpt": "A removals website starts from £2,500. Local SEO from £450/month. Google Ads from £250/month plus ad spend. Pay-per-lead removals leads start from approximately ...",
+      "metric": {
+        "price_gbp": 250
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://infobest.co.uk/leadgeneration/homeremovalsadvertising.html",
+      "excerpt": "For maximum lead generation, InfoBest advise the following ranges for Home Removals Leads. Home Moving Enquiries. Area, Low End, Top End. East Midlands, £14, £ ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.peepproperty.com/removals-lead-generation/",
+      "excerpt": "Looking for more removals leads? Our lead generation service helps removal companies connect with homeowners at the perfect time — right after they've sold ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.leadhack.co.uk/industries/removals",
+      "excerpt": "Can you help with commercial removals leads? Yes, we have specific strategies for office relocations and commercial moves which involve different search ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.pinlocal.com/partner-terms.html",
+      "excerpt": "6.5 The price per lead determined for each Partner is based on the costs ... 9.5 The PinLocal system for removals leads operates using filters based on ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.pushgroup.co.uk/blog/top-9-pay-per-lead-agencies-in-the-uk",
+      "excerpt": "15 Oct 2024 — Compare the top pay per lead agencies in the UK. Exclusive leads, no wasted budget, real results. Updated for 2026.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.helloclicks.co.uk/industries/removals/",
+      "excerpt": "There are no long term commitments when you partner with us to generate leads. You can simply pay as you go which can be cancelled at any time. \"They are ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.promo-seo.uk/lead-generation/industries/removal-companies/",
+      "excerpt": "PromoSEO's removal company lead generation packages typically start from around £750 per month. Pricing depends on lead volume, target areas, and service types. Read more",
+      "metric": {
+        "price_gbp": 750
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://whatremovals.co.uk/registration/",
+      "excerpt": "Only pay £4 per lead and get 10 free leads with your first purchase. No contracts. No commissions. call us at 0800 161 5562.",
+      "metric": {
+        "price_gbp": 4
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.youtube.com/watch?v=ZUYhkPRBYCk",
+      "excerpt": "Today we are talking about the best paper lead generation companies in the UK.",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "best uk pay per lead generation companies",
+    "commercial removals leads",
+    "home moving lead generation company - infobest",
+    "lead generation for moving companies uk",
+    "lead generation for removals companies uk",
+    "marketing designs removals - peepproperty",
+    "marketing for removals companies | local seo & lead...",
+    "partner terms & conditions",
+    "register - whatremovals",
+    "removal companies lead generation",
+    "removals",
+    "removals lead generation",
+    "top 9 pay per lead agencies in the uk (2026)"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK removals providers already paying per lead",
+    "proof": "12 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

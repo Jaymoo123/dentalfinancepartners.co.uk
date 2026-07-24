@@ -1,0 +1,70 @@
+{
+  "candidate_id": "care-homes-leadmkt-2026-07",
+  "vertical": "care homes",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.wiredmedia.co.uk/digital-marketing-agency-for-care-homes/lead-generation/",
+      "excerpt": "Ensure your website's optimal performance with Wired Media's inbound lead generation services for Care homes. Our tailored strategies, precise targeting, ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadpronto.co.uk/pay-per-lead-generation/",
+      "excerpt": "Lead Pronto help businesses acquire high-quality leads through multi-channel marketing. 100,000s of high quality leads for our clients on a pay per lead basis,",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.facebook.com/groups/1100698759975324/posts/24315773274707878/",
+      "excerpt": "Hello,\nLooking for help on how to price the lead generation services (delivering both; caregivers and clients) for home care. Please PM if you can help. ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.reddit.com/r/RealEstateTechnology/comments/1mbophw/pay_per_lead_services_is_it_worth_it_advice/",
+      "excerpt": "Hey everyone,\n\nI’ve been in the real estate space for a while and recently came across an interesting idea: instead of dropping thousands each month ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://pearllemonleads.com/pay-per-lead/",
+      "excerpt": "Want leads that truly convert? Our pay per lead service delivers verified prospects aligned with your business goals and drives measurable results.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://pay-per-lead.co.uk/",
+      "excerpt": "",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "care homes",
+    "how to price lead generation services for home care",
+    "lead generation agency for care homes",
+    "pay per lead",
+    "pay per lead generation",
+    "pay per lead services, is it worth it?? advice??",
+    "premier pay per lead service to generate quality leads"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK care homes providers already paying per lead",
+    "proof": "6 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

@@ -1,0 +1,97 @@
+{
+  "candidate_id": "insolvency-leadmkt-2026-07",
+  "vertical": "insolvency",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://moneyadvicetrust.org/blog/progress-more-action-needed-tackle-harmful-iva-practices/",
+      "excerpt": "14 Jan 2022 — Lead generation firms rely on the willingness of the Insolvency Practitioner (IP) market to pay large fees for access to these people who might ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadpronto.co.uk/pay-per-lead-generation/",
+      "excerpt": "As a lead agency, we have a proven track record of generating ✓ 100,000s of high quality leads for our clients on a pay per lead basis, providing a great ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05854544/insolvency",
+      "excerpt": "MARKETING AND LEAD GENERATION LTD ; Commencement of winding up: 9 December 2013. Dissolved on: 5 January 2021 ; Practitioner: Stephen Hunt Griffins, Tavistock ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.linkdigital.co.uk/services/pay-per-lead/",
+      "excerpt": "We provide high quality, qualified leads on a pay per lead basis, from 25 to 100's of leads per week. Fixed price leads with no advertising costs or agency fees ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.youtube.com/watch?v=ZUYhkPRBYCk",
+      "excerpt": "Looking for the top pay-per-lead generation companies in the UK ? In this video, we break down everything you need to know to make the best ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.asa.org.uk/static/83b4ce65-0e97-4eda-be1ea1f1a401bbd8/Enforcement-Notice-Debt-Management-IVA-PTD-Ads-by-Insolvency-Practitioners-and-Leads-Generation-Companies.pdf",
+      "excerpt": "14 Jun 2022 — This Notice applies to ads placed by lead generation companies and licensed insolvency practitioners which ultimately advertise an IVA/PTD ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.pushgroup.co.uk/blog/top-9-pay-per-lead-agencies-in-the-uk",
+      "excerpt": "15 Oct 2024 — Compare the top pay per lead agencies in the UK. Exclusive leads, no wasted budget, real results. Updated for 2026.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.activatedigital.co.uk/service/lead-generation-agency-uk/",
+      "excerpt": "As one of the finest pay-per-lead generation companies in the UK, we use a multi-stage approach, enabling us to determine and set a fixed cost-per-lead. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://ttmc.co.uk/knowledge/articles/pay-per-lead-a-penny-wise-pound-foolish-approach",
+      "excerpt": "2 Dec 2016 — A pay-per-lead model favours lead quantity over a range of other positive outcomes - find our why.",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "best uk pay per lead generation companies",
+    "enforcement notice: debt management (iva/ptd) ads ...",
+    "insolvency",
+    "lead generation agency in the uk | pay-per-lead",
+    "marketing and lead generation ltd - companies house",
+    "pay per lead generation",
+    "pay per lead services",
+    "pay-per-lead: a penny wise, pound foolish approach?",
+    "progress, but more action needed to tackle harmful iva ...",
+    "top 9 pay per lead agencies in the uk (2026)"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK insolvency providers already paying per lead",
+    "proof": "9 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": true
+}

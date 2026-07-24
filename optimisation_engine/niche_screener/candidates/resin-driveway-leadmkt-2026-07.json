@@ -1,0 +1,88 @@
+{
+  "candidate_id": "resin-driveway-leadmkt-2026-07",
+  "vertical": "resin driveway",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://solvionx.com/services/resin-driveway-leads",
+      "excerpt": "The retainer is £995 to £1,499 per month on a rolling basis. We recommend starting at £15 to £20 per day.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadpronto.co.uk/driveway-leads/",
+      "excerpt": "We run driveway lead generation campaigns which can either produce volume at a cost per lead, or we can create branded campaigns using your own company name … ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.facebook.com/groups/111972096145990/posts/1915395309136984/",
+      "excerpt": "Have any of you tried these companies that promise leads for resin drives etc?\nI’ve seen them all over Facebook. I’m really busy right now. Have ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.resingrowth.co.uk/",
+      "excerpt": "resin bound leads for driveways, patios, £12.4k Average Job Value 350 Monthly Leads Generated high quality leads, daily.",
+      "metric": {
+        "price_gbp": 12
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.ukbusinessforums.co.uk/threads/driveway-company-help.352388/",
+      "excerpt": "13 Dec 2015 — Driveways are the easiest product in the world to generate leads for. Cost of lead generation ZERO ! there is always a lead generation cost, ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://onebasemedia.co.uk/driveway-paving-company-case-study/",
+      "excerpt": "18 Feb 2024 — With an impressive conversion rate of 9%, the cost per lead stands at an astonishingly low £23. These metrics not only showcase the efficiency ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.driveways-uk.co.uk/contractor-sign-up/",
+      "excerpt": "start from £60 + VAT for 5 leads, resin-bound driveways, Lead packs start from £60 + VAT for 5 leads. from pay per lead to a fixed weekly fee. models ranging ...",
+      "metric": {
+        "price_gbp": 60
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.leadseveryday.co.uk/driveways",
+      "excerpt": "Get exclusive driveway leads delivered daily. We build your landing page, run targeted Google Ads, and send qualified customers straight to your phone.",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "are lead generation companies for resin drives trustworthy?",
+    "case study: driveway and paving company lead generation",
+    "driveway company help",
+    "driveway lead generation",
+    "driveways lead generation",
+    "high performance resin bound lead generation | resingrowth",
+    "paving and driveways leads for uk contractors",
+    "resin driveway",
+    "resin driveway lead generation for uk companies"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK resin driveway providers already paying per lead",
+    "proof": "8 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

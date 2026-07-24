@@ -1,0 +1,132 @@
+{
+  "candidate_id": "debt-management-leadmkt-2026-07",
+  "vertical": "debt management",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://axowa.com/uk/sales-leads/debt-management-iva-leads-for-sale/",
+      "excerpt": "Looking to buy affordable UK Debt Management Leads & IVA Leads? We have fresh leads available daily & aged data too! Accurate & Easy to Order.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.fatrank.com/debt-lead-generation/",
+      "excerpt": "Buy DMP Leads. Debt management companies are always looking for a higher volume of quality leads. A DMP is an informal agreement between borrowers and creditors ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.leadfair.co.uk/debt-management-leads.php",
+      "excerpt": "Batches consist of a mix of 10 IVA & Debt Management leads at £70 per lead. There are absolutely no hidden extras, joining fees and no tie-ins, and duplicates",
+      "metric": {
+        "price_gbp": 70
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://uk.linkedin.com/in/bohaganleadgenguy",
+      "excerpt": "✓Premium Quality DEBT Management LEADS ✓Pay Per Lead Agency ✓ Real time ... Our prices start from just £50 per lead. Send me a short message saying ... Read more",
+      "metric": {
+        "price_gbp": 50
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://mcbdigitalsolutionsltd.co.uk/lead-generation/debt-iva-management/",
+      "excerpt": "Debt & IVA Management Leads - Trust MCB Digital to provide you with a steady lead pipeline for your Debt and IVA Management business ... Buy Debt Management Leads ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.youtube.com/watch?v=wHvruszW4Qk",
+      "excerpt": "Debt Lead Generation | Buy Debt Management Leads | Debt Management Lead Generation · Comments.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://pivotal-one.co.uk/financial-lead-generation/",
+      "excerpt": "Exclusive and validated financial leads delivered on a pay-per-lead model. ... Debt Management Leads. IVA | Debt Management Plans | Debt Relief Order ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadpronto.co.uk/iva-debt-management-leads/",
+      "excerpt": "We generate 1000s of debt management. Pay-Per-Lead Model Instantly fill your sales pipeline with a predictable flow of verified, high-intent opportunities. Pay ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.linkdigital.co.uk/services/pay-per-lead/",
+      "excerpt": "We provide high quality, qualified leads on a pay per lead basis, from 25 to 100's of leads per week. Fixed price leads with no advertising costs or agency fees ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://uk.indeed.com/q-debt-lead-generation-jobs.html",
+      "excerpt": "55 Debt Lead Generation jobs available on Indeed.com. Manage credit risk and reduce aged debt within strategic accounts. lead generation initiatives",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://woodpecker.co/blog/pay-per-lead-generation-companies/",
+      "excerpt": "19 May 2026 — Compare the best pay per lead generation companies. Learn how PPL works, its pros, cons, and when to build your own lead generation system.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.reddit.com/r/LeadGeneration/comments/1itpnmp/looking_to_get_connected_with_someone_who_does/",
+      "excerpt": "Depending on volumes we've done this on a pay per lead basis. We also use AI to follow up with leads and track the conversion of the web form ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://flexxable.com/blog-how-the-pay-per-lead-model-works-live/",
+      "excerpt": "A typical client who orders leads at this price on a 'Pay Per Lead' basis will pay you upfront for 100 leads per week. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "brendan o'hagan - ✔premium quality debt management ...",
+    "debt & iva management leads",
+    "debt lead generation",
+    "debt lead generation jobs (with salaries)",
+    "debt lead generation | buy debt management leads | debt ...",
+    "debt management",
+    "financial lead generation",
+    "how the highly-profitable pay per lead model works?",
+    "iva & debt management leads",
+    "looking to get connected with someone who does can ...",
+    "pay per lead services",
+    "top pay per lead generation companies in 2026",
+    "uk debt management leads & iva leads for sale"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK debt management providers already paying per lead",
+    "proof": "13 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

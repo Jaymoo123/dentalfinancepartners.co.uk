@@ -1,0 +1,88 @@
+{
+  "candidate_id": "pension-transfer-leadmkt-2026-07",
+  "vertical": "pension transfer",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.leadcrowd.com/lead-types/financial-services/pension/",
+      "excerpt": "LeadCrowd can provide financial advisors with qualified pension leads from a wide range of clients, from individuals seeking pension transfers to customers ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://lurvodigital.com/resources/how-much-do-pension-transfer-leads-cost/",
+      "excerpt": "Pension Transfer Leads pricing in the UK generally falls between £25-£50 per lead. The range depends on several factors including exclusivity, qualification ...",
+      "metric": {
+        "price_gbp": 50
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://citywire.com/new-model-adviser/news/former-ifa-targets-old-firm-with-claims-company/a1380591",
+      "excerpt": "... a lead generation business that provided it with over 1,400 pension transfer leads in 2019. NMA also revealed the firm was working with an introducer in ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://capital-leads.co.uk/lead-types/pension/",
+      "excerpt": "The #1 Pension lead generation service for Pension businesses. Pay Per Lead - No Contracts. No Setup Fees. No Monthly Fees - Guaranteed Results! multi-channel  ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.moneyhelpdesk.com/buy-leads/buy-our-pension-leads/",
+      "excerpt": "For pension leads, the average daily advertising cost per lead generated is £40* and we charge £25 for every genuine enquiry generated (lead cost). SEO leads ...",
+      "metric": {
+        "price_gbp": 25
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadpronto.co.uk/pension-leads/",
+      "excerpt": "We generate 1000s of pension leads ✅ for financial advisors seeking to grow their sales pipeline. Pay-Per-Lead Model Instantly fill your sales pipeline",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.pushgroup.co.uk/blog/top-9-pay-per-lead-agencies-in-the-uk",
+      "excerpt": "15 Oct 2024 — Compare the top pay per lead agencies in the UK. Exclusive leads, no wasted budget, real results. Updated for 2026.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://pivotal-one.com/pension-lead-generation/",
+      "excerpt": "We work on a cost per lead model where you the client only pays for the qualified leads delivered. What this means is that we are incentivised to get it right ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "buy high quality pensions leads that convert - capital leads",
+    "buy pension leads online",
+    "buy qualified pension leads online",
+    "former ifa targets old firm with claims company",
+    "how much do pension transfer leads cost?",
+    "pension lead generation - pivotal one",
+    "pension leads uk",
+    "pension transfer",
+    "top 9 pay per lead agencies in the uk (2026)"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK pension transfer providers already paying per lead",
+    "proof": "8 domains selling per-lead"
+  },
+  "regulatory_gate": "IAR",
+  "accounting_adjacent": false
+}

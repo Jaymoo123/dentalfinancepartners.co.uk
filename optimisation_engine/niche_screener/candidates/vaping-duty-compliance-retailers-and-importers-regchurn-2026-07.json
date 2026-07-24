@@ -1,0 +1,28 @@
+{
+  "candidate_id": "vaping-duty-compliance-retailers-and-importers-regchurn-2026-07",
+  "vertical": "vaping duty compliance (retailers and importers)",
+  "generator": "reg-churn",
+  "evidence": [
+    {
+      "type": "legislation",
+      "url": "http://www.legislation.gov.uk/uksi/2026/338/made",
+      "excerpt": "These Regulations make provision in relation to a new excise duty for vaping products. They are intended to be read in conjunction with the Vaping Products (Production, Duty Stamps and Commencement) Regulations 2026 (S.I. 2026/331).",
+      "metric": {}
+    }
+  ],
+  "seed_queries": [
+    "the vaping duty stamps (requirements, reviews and appeals) regulations 2026",
+    "vaping duty stamps requirements reviews and appeals"
+  ],
+  "buyer_hypothesis": {
+    "who": "tens of thousands of vape retailers and importers, largely small businesses",
+    "proof": "stated in http://www.legislation.gov.uk/uksi/2026/338/made"
+  },
+  "event_hypothesis": {
+    "what": "new excise duty on vaping products, duty stamps regime, penalties",
+    "date": "2026-10-01",
+    "source": "http://www.legislation.gov.uk/uksi/2026/338/made"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": true
+}

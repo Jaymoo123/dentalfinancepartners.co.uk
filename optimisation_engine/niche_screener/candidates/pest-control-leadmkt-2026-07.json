@@ -1,0 +1,114 @@
+{
+  "candidate_id": "pest-control-leadmkt-2026-07",
+  "vertical": "pest control",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.leadseveryday.co.uk/pest-control",
+      "excerpt": "Get exclusive pest control leads delivered daily. We build your landing page, run targeted Google Ads, and send qualified customers straight to your phone.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://godigitool.com/lead-generation-for-uk-pest-controllers/",
+      "excerpt": "We generate sales leads for UK pest controller businesses. Management fee from only £198 + ad",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.leadsnurtured.com/pest-control-services",
+      "excerpt": "Price from £1000/month - USA $1350/month - See all regional prices: UK, USA, Canada, Australia, Ireland, and NZ. View Plans · Get Your Leads Now. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.youtube.com/watch?v=FkrfjK5XCl0",
+      "excerpt": "This video will go through the best options for pest control companies to get. We'll discuss how to get free leads, options for buying leads ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://bpca.org.uk/webinars/-webinar-lead-generation-and-marketing-for-pest-companies/15933?occid=21920",
+      "excerpt": "In this webinar, Scott will cover: Where can we get leads from and what platforms are worth exploring? Should you be on social media - risks and ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.dolead.com/growth-hub/pest-control-ppc-management-and-pay-per-call-the-complete-guide-to-scalable-lead-generation",
+      "excerpt": "16 May 2025 — Maximize pest control leads with expert PPC management and pay-per-call campaigns. ... What's a good cost per lead in pest control? $20-$60 ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://bullseyeinternet.com/pest-control-pay-per-lead/",
+      "excerpt": "22 Dec 2025 — Learn more about Pest Control Leads and Pay-Per-Lead Marketing. ... You set the volume and price per lead, eliminating the risk of overspending on ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.fieldroutes.com/blog/pest-control-lead-generation-strategies",
+      "excerpt": "29 Aug 2025 — Boost pest control leads with proven strategies, tools, and tips. Learn how to attract, convert, and manage high-quality pest control leads.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://godigitool.com/pest-control-company-fills-diary-with-consistent-leads-at-just-10-77-each/",
+      "excerpt": "Cost per lead (CPA): just £10.77. This meant a steady stream of affordable, qualified leads — ensuring their diary was consistently full, while keeping ...",
+      "metric": {
+        "price_gbp": 10
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.fatrank.com/pest-control-lead-generation/",
+      "excerpt": "You can try and generate your own pest control leads, pest control quotes, and pest control prices. But you will need a large investment in marketing ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://builtrightdigital.com/top-pest-control-lead-generation-agencies/",
+      "excerpt": "30 Apr 2026 — Pricing depends entirely on your target market, company size, and aggressive growth goals. Basic local SEO retainers typically start around $1, ...",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "8 best pest control lead generation agencies in 2026",
+    "a – z guide to pest control pay per lead generation",
+    "lead generation for pest control services companies",
+    "lead generation for pest controllers",
+    "pest control",
+    "pest control lead generation",
+    "pest control lead generation: process, strategies, tools, ...",
+    "pest control leads - how to get the best leads fast",
+    "pest control leads at £10.77 with google ads management",
+    "pest control ppc management and pay per call",
+    "webinar: lead generation and marketing for pest companies"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK pest control providers already paying per lead",
+    "proof": "10 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

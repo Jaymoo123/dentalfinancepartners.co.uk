@@ -1,0 +1,28 @@
+{
+  "candidate_id": "leasehold-to-commonhold-conversion-regchurn-2026-07",
+  "vertical": "leasehold to commonhold conversion",
+  "generator": "reg-churn",
+  "evidence": [
+    {
+      "type": "consultation",
+      "url": "https://www.gov.uk/government/consultations/moving-to-commonhold-banning-leasehold-for-new-flats",
+      "excerpt": "We are seeking views on plans to introduce a ban on new leasehold flats. ​ ",
+      "metric": {}
+    }
+  ],
+  "seed_queries": [
+    "moving to commonhold: banning leasehold for new flats",
+    "moving to commonhold banning leasehold for new flats"
+  ],
+  "buyer_hypothesis": {
+    "who": "c. 5m leasehold homes in England (govt leasehold estimate cited in the reform programme)",
+    "proof": "stated in https://www.gov.uk/government/consultations/moving-to-commonhold-banning-leasehold-for-new-flats"
+  },
+  "event_hypothesis": {
+    "what": "service charges, conversion costs, ground rent and enfranchisement values in play",
+    "date": "unnamed (draft Leasehold and Commonhold Reform Bill)",
+    "source": "https://www.gov.uk/government/consultations/moving-to-commonhold-banning-leasehold-for-new-flats"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

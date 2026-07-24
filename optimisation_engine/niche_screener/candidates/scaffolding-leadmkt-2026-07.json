@@ -1,0 +1,78 @@
+{
+  "candidate_id": "scaffolding-leadmkt-2026-07",
+  "vertical": "scaffolding",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.leadseveryday.co.uk/scaffolding",
+      "excerpt": "Get exclusive scaffolding leads delivered daily. We build your landing page, run targeted Google Ads, and send qualified customers straight to your phone.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.geordieleads.co.uk/scaffolding-leads.html",
+      "excerpt": "Buy scaffolding leads for residential and commercial projects across the UK. GDPR-compliant, real-time delivery. Call 07894 282 889 to discuss volumes, pricing ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.youtube.com/watch?v=AK5M9VM4dzc",
+      "excerpt": "From harnessing the potential of SEO and Google Business Profiles to exploring the benefits of social media and innovative lead generation,",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.fatrank.com/scaffolding-lead-generation/",
+      "excerpt": "You can try and generate your own scaffolding leads, scaffolding quotes, and scaffolding prices. But you will need to buy leads and make a large investment in ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.zapo.com/ads/scaffolding",
+      "excerpt": "We've delivered over £460m scaffolding leads using Google Ads • 100% positive customer reviews on Trustpilot • Sign up to the UK's #1 lead generation ...",
+      "metric": {
+        "price_gbp": 460
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.rightbiz.co.uk/online-businesses/view/4383-scaffolding-lead-generation-site",
+      "excerpt": "27 Jan 2026 — Income, £1,500–£2,000/month net profit (semi-passive). Monetization, Pay-per-lead, directory subscriptions, premium placements. User Experience ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Lead-Generation-Specialist-for-Scaffolding_~022078064448631893177/",
+      "excerpt": "a freelancer to generate 15–20 qualified scaffolding enquiries per month. Level $15.00 - $30.00 Hourly Remote",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "how to grow a scaffolding business? | fatrank lead generation",
+    "lead generation specialist for scaffolding - freelance job ...",
+    "leads for scaffolders | zapo ads",
+    "scaffolding",
+    "scaffolding lead generation",
+    "scaffolding lead generation site",
+    "scaffolding leads"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK scaffolding providers already paying per lead",
+    "proof": "7 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

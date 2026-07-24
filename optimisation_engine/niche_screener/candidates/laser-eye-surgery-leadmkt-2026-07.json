@@ -1,0 +1,70 @@
+{
+  "candidate_id": "laser-eye-surgery-leadmkt-2026-07",
+  "vertical": "laser eye surgery",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.searchprofessionals.co.uk/lead-generation.html",
+      "excerpt": "Laser Eye Surgery Leads · Merchant Account Leads · Payroll Leads · Solar Panel ... If you are paying us on a price per lead basis all leads will be telephone ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://adfluential.com/lead-generation/laser-eye-surgery/",
+      "excerpt": "Pay Per Lead Pay for laser eye surgery leads that match agreed criteria and are delivered directly to your sales team. No retainers or hidden fees",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.searchprofessionals.co.uk/laser_eye_surgery_leads.html",
+      "excerpt": "If you are paying us on a price per lead basis all leads will be telephone qualified in our in-house call centre. We will only pass leads through to you",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://consumergenius.com/vertical/laser-eye",
+      "excerpt": "Performance-based inbound lead generation for laser eye clinics converting through consultation and surgical booking teams. High-intent inbound leads. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadsuitenow.com/blog/lasik-vision-clinic-lead-generation-usa-2026",
+      "excerpt": "What's the typical cost per lead for LASIK marketing? Google Ads CPL for LASIK typically runs $80–$200 depending on market; social media ads (Meta) $50–$120 ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://adbetter.com/sector/private-healthcare-lead-generation/",
+      "excerpt": "ONLY PAY PER QUALIFIED LEAD ... No retainers, no management fees, no hidden costs – you only pay when we deliver leads that meet your qualification criteria. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "laser eye surgery",
+    "laser eye surgery lead generation",
+    "laser eye surgery leads uk",
+    "lasik & vision correction clinic lead generation: fill your ...",
+    "lead generation",
+    "private healthcare lead generation",
+    "quality laser eye surgery leads"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK laser eye surgery providers already paying per lead",
+    "proof": "5 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

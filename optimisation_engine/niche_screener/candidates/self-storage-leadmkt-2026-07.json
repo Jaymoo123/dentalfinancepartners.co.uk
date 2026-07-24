@@ -1,0 +1,61 @@
+{
+  "candidate_id": "self-storage-leadmkt-2026-07",
+  "vertical": "self storage",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.helloclicks.co.uk/industries/self-storage/",
+      "excerpt": "Our service will deliver high-quality Self Storage leads to your business so you can quickly move ahead of your competitors. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://get-moving.co.uk/",
+      "excerpt": "We grow Self Storage facilities through expert lead generation, at under £20 each. We provide a tailored advertising, organic, and lead-nurturing solution ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://stashbee.com/self-storage/lead-generation",
+      "excerpt": "Generate high-quality self-storage leads and grow your business with Stashbee. Get free leads for 30 days. UK Storage Company cut lead costs by 75% UK Storage ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://cufinder.io/blog/lead-generation-industry/local-services/storage-facilities/",
+      "excerpt": "Where do self-storage leads actually come from? ; Paid search and LSAs, Same-day, high-intent renters, About $3.85 per click, $62 per move-in ; Aggregator ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.launchonline.co.uk/case-studies/access-self-storage-lead-generation/",
+      "excerpt": "drop in cost per lead ... 2020's lockdowns led to a rise in people creating home offices and carrying out renovations and Access Self Storage's leads rocketed – ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "access self storage - launch",
+    "get moving digital: self storage marketing agency",
+    "lead generation for storage facilities: 11 plays to fill more units",
+    "self storage",
+    "self storage lead generation",
+    "self storage lead generation | fill your vacant units with ..."
+  ],
+  "buyer_hypothesis": {
+    "who": "UK self storage providers already paying per lead",
+    "proof": "5 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

@@ -1,0 +1,97 @@
+{
+  "candidate_id": "life-insurance-leadmkt-2026-07",
+  "vertical": "life insurance",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://financialadvisoruk.com/life-insurance-leads/",
+      "excerpt": "Buy our high-quality life insurance leads today. Genuine real-time leads that convert up to 40% - trials available today. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://digitalroo.co.uk/leads/life-insurance-leads/",
+      "excerpt": "UK Life Insurance leads on a simple cost-per-lead basis. 100% Exclusive. Delivered in Real-Time. Start receiving leads within 1 week.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://trycompare.co.uk/insurance-leads/",
+      "excerpt": "Try Compare is an insurance lead generation company. It started in 2018, generating and providing leads for over 50 brokers across the UK and International. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://axowa.com/uk/sales-leads/insurance/life/",
+      "excerpt": "Buy qualified life insurance leads from a lead generation expert. UK life leads that are affordable, reliable and proven to give you returns!",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.helloclicks.co.uk/industries/life-insurance/",
+      "excerpt": "Our service will deliver high-quality Life Insurance leads to your business. We cover Paid Search, Paid Social, Native, Programmatic and SEO.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.leadcrowd.com/lead-types/personal-insurance/life-insurance/",
+      "excerpt": "For life insurance leads, the cost per lead starts at £75. Discounts are ... The older the lead, the lower the price and you can filter these enquiries ... Read more",
+      "metric": {
+        "price_gbp": 75
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://gainaltitude.ai/blog/life-insurance-leads/",
+      "excerpt": "4 Jun 2026 — How much do life insurance leads cost? Life insurance leads usually run somewhere around $15 to $50 each, though the price swings with the ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://activeprospect.com/blog/insurance-leads-cost/",
+      "excerpt": "15 May 2026 — Shared life insurance web leads: roughly $20 to $45 per lead; Exclusive life insurance leads: typically $75 to $150 per lead; Real-time ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://agedleadstore.com/aged-insurance-leads-cost/",
+      "excerpt": "9 Jun 2025 — Aged Life Insurance Leads Cost: Range from $1.25–$5.00 per lead for recent (30-60 days) data, decreasing to $0.75 or less beyond 90 days. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "2024 pricing guide: how much do aged insurance leads ...",
+    "buy high quality life insurance leads",
+    "buy high-quality life insurance leads",
+    "buy life insurance leads today - financial advisor uk",
+    "buy uk life insurance leads & lead generation",
+    "insurance lead generation - - try compare",
+    "insurance leads cost: how much does it cost to buy leads?",
+    "life insurance",
+    "life insurance lead generation experts",
+    "the advisor's guide to buying life insurance leads"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK life insurance providers already paying per lead",
+    "proof": "9 domains selling per-lead"
+  },
+  "regulatory_gate": "IAR",
+  "accounting_adjacent": false
+}

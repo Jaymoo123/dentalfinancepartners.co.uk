@@ -1,0 +1,27 @@
+{
+  "candidate_id": "high-value-council-tax-surcharge-mansion-surcharge-regchurn-2026-07",
+  "vertical": "high value council tax surcharge (mansion surcharge)",
+  "generator": "reg-churn",
+  "evidence": [
+    {
+      "type": "consultation",
+      "url": "https://www.gov.uk/government/consultations/high-value-council-tax-surcharge",
+      "excerpt": "We are seeking views on the design and delivery of the High Value Council Tax Surcharge (HVCTS), a new charge on residential properties worth £2 million and above in England.  ",
+      "metric": {}
+    }
+  ],
+  "seed_queries": [
+    "high value council tax surcharge"
+  ],
+  "buyer_hypothesis": {
+    "who": "c. 100,000+ homes valued over 2m GBP in England (govt estimate at Budget 2025)",
+    "proof": "stated in https://www.gov.uk/government/consultations/high-value-council-tax-surcharge"
+  },
+  "event_hypothesis": {
+    "what": "annual surcharge from c. 2,500 GBP rising with value; valuation challenge process",
+    "date": "2028-04",
+    "source": "https://www.gov.uk/government/consultations/high-value-council-tax-surcharge"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": true
+}

@@ -1,0 +1,79 @@
+{
+  "candidate_id": "landlord-eviction-leadmkt-2026-07",
+  "vertical": "landlord eviction",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.leadcrowd.com/lead-types/business/landlord-insurance/",
+      "excerpt": "LeadCrowd can provide you with a range of different types of landlord insurance leads, all sourced in real-time and offered to brokers on an exclusive basis. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://lurvodigital.com/leads/landlord-insurance-leads/",
+      "excerpt": "Buy exclusive landlord insurance leads from £15-£30. Portfolio and single-property landlords needing buildings, contents, rent guarantee, and liability ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://rentround.com/estate-agent-marketing/",
+      "excerpt": "agents pay from £49.99 per month - no contract, no commission on the deals you win. You could buy 1,000 leads at £1 each and convert none; or 10 leads at £200  ...",
+      "metric": {
+        "price_gbp": 1
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.youtube.com/watch?v=DK-Az4bwDBE",
+      "excerpt": "You will learn how to increase leads, get more landlords, and grow your letting agency with automated lead generation and profit optimisation.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://assistinventories.co.uk/2024/06/21/landlord-lead-generation/",
+      "excerpt": "21 Jun 2024 — Assist Inventories offer some simple tips on creating a low budget ad that actually works.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://agent-support.co.uk/estate-agent-lead-generation/",
+      "excerpt": "Group agents require their own admin packages but receive a 25% discount. For team agents, there is an additional charge of £150 per agent per month.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://bsdlegalmarketing.co.uk/lead-generation-for-law-firms/housing-disrepair-leads/",
+      "excerpt": "Generate a steady flow of high quality housing disrepair leads with structured lead generation strategies designed for law firms nationwide.",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "buy landlord insurance leads online",
+    "buy landlord insurance leads uk",
+    "estate agent lead generation support | more valuations",
+    "estate agent marketing & lead generation",
+    "generate a flow of housing disrepair leads",
+    "how to generate 100+ landlord leads a month in your ...",
+    "landlord eviction",
+    "landlord lead generation: a step by step guide to creating ..."
+  ],
+  "buyer_hypothesis": {
+    "who": "UK landlord eviction providers already paying per lead",
+    "proof": "7 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

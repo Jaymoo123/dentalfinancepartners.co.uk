@@ -1,0 +1,28 @@
+{
+  "candidate_id": "ev-per-mile-road-charging-eved-regchurn-2026-07",
+  "vertical": "EV per-mile road charging (eVED)",
+  "generator": "reg-churn",
+  "evidence": [
+    {
+      "type": "consultation",
+      "url": "https://www.gov.uk/government/consultations/consultation-on-the-introduction-of-electric-vehicle-excise-duty-eved",
+      "excerpt": "A consultation setting out further detail on how eVED will work.",
+      "metric": {}
+    }
+  ],
+  "seed_queries": [
+    "consultation on the introduction of electric vehicle excise duty (eved)",
+    "on introduction of electric vehicle excise duty eved"
+  ],
+  "buyer_hypothesis": {
+    "who": "c. 1.5m+ battery-electric car owners in the UK, growing to millions by commencement",
+    "proof": "stated in https://www.gov.uk/government/consultations/consultation-on-the-introduction-of-electric-vehicle-excise-duty-eved"
+  },
+  "event_hypothesis": {
+    "what": "per-mile charge on EVs (c. 3p per mile announced), mileage reporting obligation",
+    "date": "2028-04 (announced at Budget 2025 for April 2028)",
+    "source": "https://www.gov.uk/government/consultations/consultation-on-the-introduction-of-electric-vehicle-excise-duty-eved"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

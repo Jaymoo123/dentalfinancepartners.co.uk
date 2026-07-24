@@ -1,0 +1,104 @@
+{
+  "candidate_id": "architect-leadmkt-2026-07",
+  "vertical": "architect",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.leadseveryday.co.uk/architect",
+      "excerpt": "Get exclusive architecture leads delivered daily. We build your landing page, run targeted Google Ads, and send qualified clients straight to your phone.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://comparearchitects.co.uk/join-as-architect/",
+      "excerpt": "Join the lead generation service trusted by architects all over the UK. Receive verified leads straight to your inbox every month.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leads.work/leads/architects.html",
+      "excerpt": "Get verified architect job leads for home extensions, planning, and commercial projects. Pay-per-lead or subscription plans available.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.fatrank.com/architect-lead-generation/",
+      "excerpt": "You can buy architect leads of very high quality from us at FatFrank. We are proud to supply the best architect leads throughout the UK",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://helloleads.co.uk/guides/industry/architecture-leads",
+      "excerpt": "Generate qualified architecture leads for your design practice. AI-driven architecture lead generation platforms to connect with UK property development ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.cleverly.co/blog/lead-generation-for-architects",
+      "excerpt": "9 Dec 2025 — Generic architects compete on price. Specialized architects compete on expertise. Choose your lane, and the right architect leads will find you ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://ivyforms.com/blog/lead-generation-for-architects/",
+      "excerpt": "15 Feb 2026 — Cost per lead: Total marketing spend divided by total qualified inquiries. ... What is the best platform for architect leads? Google Ads captures ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.constructvirtual.com/architect-connect/",
+      "excerpt": "Our lead generation for builders focuses on high-value opportunities, so ... architect leads, lead generation for architects, architect project leads ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.youtube.com/watch?v=8eGVQ_2du00",
+      "excerpt": "... Architect leads can be used to build your business's presence. The Architect lead generation package allows you to scale your business at a low ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://marketing.w3rocks.com/ArchitectureLeads",
+      "excerpt": "5 Aug 2025 — Cost per Lead: The average cost incurred to acquire each lead. ... Architect leads growth strategies can no longer rely solely on face ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "architect",
+    "architect connect: lead generation for builders",
+    "architect job leads | residential and planning enquiries uk",
+    "architect lead generation | buy architect design leads ...",
+    "architects lead generation",
+    "architecture leads: ai-powered lead generation uk",
+    "lead generation for architects",
+    "lead generation for architects made simple",
+    "lead generation for architects: strategies & services (2026)"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK architect providers already paying per lead",
+    "proof": "10 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

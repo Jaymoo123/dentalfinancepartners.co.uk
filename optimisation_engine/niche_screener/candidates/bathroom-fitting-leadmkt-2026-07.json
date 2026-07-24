@@ -1,0 +1,97 @@
+{
+  "candidate_id": "bathroom-fitting-leadmkt-2026-07",
+  "vertical": "bathroom fitting",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://leads.work/leads/bathrooms.html",
+      "excerpt": "Get verified bathroom job leads for full installations, wet rooms, and refurbishments. Choose pay-per-lead or weekly subscription. Trusted by UK bathroom ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.leadseveryday.co.uk/kitchen-and-bathroom-fitters",
+      "excerpt": "Get More Kitchen & Bathroom Fitting Jobs. Every Single Day. We generate exclusive, high-quality leads for kitchen and bathroom fitters across the UK. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.zapo.com/ads/bathroom-fitting",
+      "excerpt": "We've delivered £460m bathroom fitting leads using Google Ads • 100% positive customer reviews on Trustpilot • Sign up to the UK's #1 lead generation ...",
+      "metric": {
+        "price_gbp": 460
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://godigitool.com/twist-of-silver-79-bathroom-kitchen-fitting-leads/",
+      "excerpt": "... bathroom fitting leads ... That's a total of 79 new leads (with an average cost per lead of £16.48) ... 78 leads per month at £12 for a Blind Installation business.",
+      "metric": {
+        "price_gbp": 16
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.infobest.co.uk/leadgeneration/bathroominstallationadvertising.html",
+      "excerpt": "Sign-Me Up! Bathroom Fitting Leads at Low Costs, Reaching Customers When It Matters. InfoBest are the complete solution for generating new business. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.leadhack.co.uk/locations/hull/bathroom-fitters",
+      "excerpt": "We specialise in lead generation for bathroom fitting businesses across the UK. We understand that bathroom fitting leads need to convert into profitable ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.instagram.com/p/DP3-_UIDsbq/",
+      "excerpt": "... bathroom fitting leads - we're a few months in ... The average cost per lead ($130.61) is roughly 35 ... When someone searches for a contractor, Google shows a ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://godigitool.com/lead-generation-for-bathroom-fitting/",
+      "excerpt": "We generate sales leads for UK bathroom fitting businesses. from only £198 + ad … generated 4,954* leads for our clients. 78 leads per month at £12 for a",
+      "metric": {
+        "price_gbp": 198
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://fullscaledigital.co.uk/ultimate-lead-gen-guide-bedroom-bathroom/",
+      "excerpt": "10 Jul 2024 — Know Your Audience. To truly succeed in generating leads for your bedroom and bathroom business, it's crucial to understand your target audience ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "bathroom fitting",
+    "bathroom installation lead generation company - infobest",
+    "bathroom job leads | design & installation enquiries uk",
+    "kitchen & bathroom fitters lead generation",
+    "lead generation for bathroom fitters hull | lead hack",
+    "lead generation for bathroom fitting",
+    "leads for bathroom fitters | zapo ads",
+    "the ultimate guide to lead generation for bedroom and ...",
+    "twist of silver - 79 bathroom & kitchen fitting leads",
+    "we're a few months in, and he's really happy with the results."
+  ],
+  "buyer_hypothesis": {
+    "who": "UK bathroom fitting providers already paying per lead",
+    "proof": "8 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

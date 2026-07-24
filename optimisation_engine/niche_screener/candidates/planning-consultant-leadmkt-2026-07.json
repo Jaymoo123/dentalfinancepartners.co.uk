@@ -1,0 +1,97 @@
+{
+  "candidate_id": "planning-consultant-leadmkt-2026-07",
+  "vertical": "planning consultant",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://consultport.com/consultants/lead-generation-experts/",
+      "excerpt": "Lead generation specialists formulate effective omnichannel lead generation strategies. Pay-Per-Click. we offer you the request, search, and proposal stages ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://btwc.co.uk/lead-generation-ideas-for-estate-planners/",
+      "excerpt": "10 lead generation ideas for Estate Planners who are looking to create a predictable stream of enquiries into their estate planning business.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.pushgroup.co.uk/blog/top-9-pay-per-lead-agencies-in-the-uk",
+      "excerpt": "15 Oct 2024 — Compare the top pay per lead agencies in the UK. Exclusive leads, no wasted budget, real results. Updated for 2026.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://theleadconsultants.co.uk/pay-per-lead/",
+      "excerpt": "A pay per lead agency that provides what it promises. Receive exclusive, high-quality leads that are waiting for a call from you and only you. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.youtube.com/watch?v=ixC5XoFiVRc",
+      "excerpt": "I'm going to show you a successful paper lead campaign that we've been running and how you can do exactly the same to add an additional 20 30k per month.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.fatrank.com/uk-lead-generation-company/",
+      "excerpt": "We're one of few companies that guarantee ROI with our commission-based lead generation, only pay once you convert the lead into a sale or customer. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://theleadgenerationcompany.co.uk/is-paying-someone-else-to-do-lead-generation-worth-it/",
+      "excerpt": "17 Jun 2025 — At its core, lead generation is the process of identifying, attracting, nurturing, and converting potential customers into paying clients.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.marketingquotes.co.uk/pay-per-lead-telemarketing/",
+      "excerpt": "If a telemarketing agency generates 10 leads for their client (and charge £250 per lead) this means that the client spends £2500 on 10 qualified leads. However ... Read more",
+      "metric": {
+        "price_gbp": 250
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.flowd.co.uk/lead-generation-pricing/",
+      "excerpt": "30 Jan 2026 — Flowd's lead generation retainers start at about £4,000 per month. Retainer pricing suits companies that need a predictable pipeline, want ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "10 lead generation ideas for estate planners - btwc",
+    "how i scaled a $20k p/m pay per lead agency [full step ...",
+    "is paying someone else to do lead generation worth it?",
+    "lead generation experts",
+    "lead generation pricing: b2b cost guide for 2026",
+    "pay per lead - the lead consultants",
+    "pay per lead telemarketing | compare with marketing quotes",
+    "planning consultant",
+    "top 9 pay per lead agencies in the uk (2026)",
+    "zero risk lead generation service - commission based ..."
+  ],
+  "buyer_hypothesis": {
+    "who": "UK planning consultant providers already paying per lead",
+    "proof": "9 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

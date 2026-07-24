@@ -1,0 +1,97 @@
+{
+  "candidate_id": "double-glazing-windows-leadmkt-2026-07",
+  "vertical": "double glazing windows",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://staybrite-windows.co.uk/double-glazing-leads/",
+      "excerpt": "28 Aug 2025 — Pay-per-lead (PPL): fixed price per enquiry; Calls ... leads.work — lead supply from Leads Do Work Ltd: upvc double glazing windows leads. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://staybrite-windows.co.uk/blog/",
+      "excerpt": "28 Aug 2025 — Pay-per-lead (PPL): fixed price per enquiry; Calls / warm ... work — lead supply from Leads Do Work Ltd: upvc double glazing windows leads. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadpronto.co.uk/window-door-double-glazing-leads/",
+      "excerpt": "Our window and door leads average around £6 per lead, though pricing depends on exclusivity, volume and area",
+      "metric": {
+        "price_gbp": 6
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://whovisitsmywebsite.com/lead-generation-for-window-and-door-companies-in-the-uk/",
+      "excerpt": "The cost of a double glazing lead in the UK varies depending on whether the lead is shared or exclusive, the type of job, and the platform you use.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.thewindowman.co.uk/double-glazing-leads/",
+      "excerpt": "17 Apr 2025 — How much do double glazing leads cost in the UK? The price can range from £10 to £70+ per lead depending on the quality, exclusivity, and source ... Read more",
+      "metric": {
+        "price_gbp": 70
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://wattsmarketingltd.co.uk/home-improvement-leads/double-glazing-leads/",
+      "excerpt": "Watts Marketing Specialise In Double Glazing Lead Generation. We Provide 100% Exclusive Double Glazing Sales Leads For Our Customers in all areas of the UK.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://onebasemedia.co.uk/double-glazing-job-leads/",
+      "excerpt": "Pay on results lead generation for glazing companies ・ scale your glazing businesses to an extra £50-£100k/Per month WITHOUT spending a fortune on advertising ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.fatrank.com/double-glazing-lead-generation/",
+      "excerpt": "There is never a complete fixed price, however, the average price range of double glazing installation over a house hold will cost between £3,000 to £7,000. How ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.reddit.com/r/PPC/comments/1jgu3g7/window_replacement_leads_cost/",
+      "excerpt": "Our client is looking for window replacement leads and is paying $100 per lead with an expected booked appointment rate of 30%. ... Replacing ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "100% exclusive double glazing leads",
+    "blog -",
+    "double glazing lead generation",
+    "double glazing leads for trades & companies",
+    "double glazing windows",
+    "double glazing, window & door leads for uk installers",
+    "exclusive double glazing job leads for windows & doors",
+    "how to get double glazing leads that actually convert",
+    "lead generation for window and door companies in the uk",
+    "window replacement leads cost : r/ppc"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK double glazing windows providers already paying per lead",
+    "proof": "8 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}
