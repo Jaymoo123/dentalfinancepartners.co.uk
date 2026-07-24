@@ -77,6 +77,11 @@ DATAFORSEO_COSTS: dict[str, dict[str, Any]] = {
     # Google Ads keyword data (NOT Labs): flat per task, up to 1000 keywords.
     # Verified 2026-07-11 probe: $0.075 base + $0.0015 per keyword (10 kw cost $0.09).
     "keywords_data/google_ads/search_volume/live": {"base": 0.075, "per_row": 0.0015},
+    # Labs historical volume (niche_screener rule-churn spikes + time-travel backtest)
+    "historical_search_volume/live": {"base": 0.01, "per_row": 0.0001},
+    # SERP organic live advanced (niche_screener long-tail sampling; Serper is primary,
+    # this is the fallback). Verified pricing 2026: ~$0.002/request at depth 10.
+    "serp/google/organic/live/advanced": {"base": 0.002, "per_row": 0.0},
     # Free endpoints (used for credential check + balance read)
     "appendix/user_data":       {"base": 0.0,  "per_row": 0.0},
 }

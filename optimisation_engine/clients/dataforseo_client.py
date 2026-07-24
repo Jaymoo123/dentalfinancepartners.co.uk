@@ -280,6 +280,83 @@ class DataForSEOClient:
             seed_keyword=f"site:{target_domain}",
         )
 
+    def search_volume(
+        self,
+        *,
+        site_key: str,
+        keywords: list[str],
+        location_code: int = DATAFORSEO_LOCATION_CODE_UK,
+        language_code: str = DATAFORSEO_LANGUAGE_CODE_EN,
+    ) -> dict:
+        """Google Ads search_volume (NOT Labs): volume/CPC/competition for up to 1000 keywords."""
+        if len(keywords) > 1000:
+            raise ValueError("search_volume supports max 1000 keywords per call")
+        payload = [
+            {
+                "keywords": keywords,
+                "location_code": location_code,
+                "language_code": language_code,
+            }
+        ]
+        return self._post_paid(
+            "keywords_data/google_ads/search_volume/live",
+            payload,
+            site_key=site_key,
+            expected_rows=len(keywords),
+            seed_keyword=f"sv:{len(keywords)}kw",
+        )
+
+    def historical_search_volume(
+        self,
+        *,
+        site_key: str,
+        keywords: list[str],
+        location_code: int = DATAFORSEO_LOCATION_CODE_UK,
+        language_code: str = DATAFORSEO_LANGUAGE_CODE_EN,
+    ) -> dict:
+        """Labs historical monthly volumes — spike detection + time-travel backtests."""
+        if len(keywords) > 700:
+            raise ValueError("historical_search_volume: keep batches <=700 keywords")
+        payload = [
+            {
+                "keywords": keywords,
+                "location_code": location_code,
+                "language_code": language_code,
+            }
+        ]
+        return self._post_paid(
+            "dataforseo_labs/google/historical_search_volume/live",
+            payload,
+            site_key=site_key,
+            expected_rows=len(keywords),
+            seed_keyword=f"hsv:{len(keywords)}kw",
+        )
+
+    def serp_organic(
+        self,
+        *,
+        site_key: str,
+        query: str,
+        depth: int = 10,
+        location_code: int = DATAFORSEO_LOCATION_CODE_UK,
+        language_code: str = DATAFORSEO_LANGUAGE_CODE_EN,
+    ) -> dict:
+        """SERP organic live advanced — fallback when Serper is unavailable."""
+        payload = [
+            {
+                "keyword": query,
+                "location_code": location_code,
+                "language_code": language_code,
+                "depth": depth,
+            }
+        ]
+        return self._post_paid(
+            "serp/google/organic/live/advanced",
+            payload,
+            site_key=site_key,
+            seed_keyword=query,
+        )
+
     def bulk_keyword_difficulty(
         self,
         *,
