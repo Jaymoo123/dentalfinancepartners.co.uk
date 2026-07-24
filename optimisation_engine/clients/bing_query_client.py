@@ -85,6 +85,7 @@ DEFAULT_SITE_URL = {
     "crypto":           "https://cryptotaxpartners.co.uk",
     "ecommerce":        "https://ecommercefinance.co.uk",
     "startups-tech":    "https://foundertaxpartners.co.uk",
+    "wills-probate":    "https://www.probate-compass-placeholder.co.uk",
 }
 
 

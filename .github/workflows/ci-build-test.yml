@@ -59,6 +59,7 @@ jobs:
           pharmacies|https://www.pharmacytax.co.uk
           startups-tech|https://www.foundertaxpartners.co.uk
           ecommerce|https://www.ecommercefinance.co.uk
+          wills-probate|https://www.probate-compass-placeholder.co.uk
           '
 
           FULL=false

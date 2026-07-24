@@ -444,12 +444,12 @@ SITE_CONFIG: dict = {{
 # construction-cis migration is still pending sign-off).
 EXISTING_SITE_KEYS = [
     "property", "dentists", "medical", "solicitors", "agency", "generalist",
-    "contractors-ir35", "construction-cis", "charities",
+    "contractors-ir35", "construction-cis", "charities", "wills-probate",
 ]
 EXISTING_LEAD_SOURCES = [
     "dentists", "property", "medical", "solicitors", "generalist", "general",
     "agency", "agency-founder-finance", "contractors-ir35", "construction-cis",
-    "test", "charities",
+    "test", "charities", "wills-probate",
 ]
 
 STATE_MD = """# {niche} ({display_name}) site state
