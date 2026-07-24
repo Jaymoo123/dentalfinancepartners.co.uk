@@ -18,21 +18,20 @@ Date: 2026-07-24. For a fresh agent continuing the build. Master process: `docs/
 - `DATA_PR_SOURCES_2026-07-24.md` — 2 assets: UK Divorce and Financial Remedy Index (MoJ FCSQ) + UK Child Maintenance Tracker (DWP CMS). Pension sharing order volumes NOT publishable (MoJ withdrew table), no asset there.
 - `FACT_VERIFICATION_QUEUE.md` — ~57 items queued (core copy 8, pillars 24, calculators 22, research 3). Known: calculators used CURRENT Help with Fees thresholds (£1,420/£2,145/£710, 50p taper, £4,250/£16,000 capital), not the derivation doc's stale pre-Nov-2023 figures; verify at Phase 3.
 
-### Phase 1 — scaffold IN PROGRESS (background agent, resumed after session-limit kill)
-Agent was at: build+tests green, finishing pillar route stubs, then /for stubs, glossary stubs, gotcha list (experiments registry additive entry, empty xlsx BUILDERS, delete pinned golden tests, root package.json workspaces entry), exit checks. NOT committed. If the agent is dead on pickup, inspect `divorce-finances/web` state directly and finish the Phase 1 exit criteria (playbook §Phase 1). Key facts: site_key + lead source = `divorce-finances`; storage prefix `dvf`; placeholders display_name "PLACEHOLDER-DIVORCE-BRAND", domain "placeholder-divorce-domain.example" confined to niche.config.json; company block = Ashfield Trading Ltd verbatim.
+### Phase 1 — COMPLETE, committed 71ce5bb6
+All exit criteria pass: build green, 45 site-local tests green, zero content pages, placeholders confined to niche.config.json, zero construction/cis refs. Key facts: site_key + lead source = `divorce-finances`; storage prefix `dvf`; placeholders display_name "PLACEHOLDER-DIVORCE-BRAND", domain "placeholder-divorce-domain.example"; company block = Ashfield Trading Ltd verbatim; partner null (in-house). Shared additive edits committed: root package.json workspaces (also carries the pending wills-probate line), experiments registry entry + divorce-finances.ts sibling. Deliberate deviations documented in the commit: composeLeadMessage keeps trade/subbieCount field names (estate-wide contract, user-visible prefixes neutralised); trade-types.ts filename kept empty (matches wills).
 
-### Phase 2 — COMPLETE, staged in scratchpad (session-specific dir; will be LOST on session change)
-Scratchpad root: `C:\Users\user\AppData\Local\Temp\claude\C--Users-user-Documents-Accounting\5484fa5a-aae2-44dd-8a9c-f16314209da6\scratchpad\`
+### Phase 2 — COMPLETE, committed in-repo at `divorce-finances/_staging/` (71ce5bb6; scratchpad copies are duplicates)
+Staging root: `divorce-finances/_staging/`
 - `divorce-calculators\` — divorce-finance.ts ground-truth module + format.ts + 5 tool files + registry.ts + tools.test.ts (27 tests passing via vitest.staging.config.ts; delete that staging config on port). MiniCapture comes free via shared Calculator renderer (tools carry ctaLabel).
 - `divorce-research\` — both research assets: snapshot JSONs, CSVs, page.tsx + data/route.ts each, raw FCSQ zip + 25 CSVs in raw\ (working files, not deliverables). All figures parsed from primary CSVs.
 - `divorce-pillars\` — 4 pillars (settlement guide 2,907w; cost of divorce 2,378w; pensions 2,636w info-only; consent/clean break 2,483w), wills-probate pillar format (frontmatter + HTML body), calculator cross-links by slug.
 - `divorce-core-copy\` — 9 files: homepage, about, contact (fee disclosure + consent copy), thank-you, 4 /for pages (homeowners, business owners, separated parents money-only, over-50s), service-tiers (no pricing).
 - All copy uses {{BRAND}} token only; no em/en dashes (grep-verified by each agent).
-- **IF SESSION CHANGES: copy the 4 staged dirs somewhere durable FIRST (e.g. a temp dir under the repo, gitignored, or straight into the site tree as Phase 3 integration).**
+- Delete `_staging/` (and its raw\ working files) once Phase 3 integration lands.
 
 ## Next steps in order
-1. Finish Phase 1 (scaffold exit criteria), commit scaffold.
-2. Phase 3: integrate staged calculators/copy/research into site (Sonnet-tier agent); intent taxonomy category→tool mapping; sitemap; build + site-local vitest green (run vitest from site dir). Then Opus fact-verification pass over FACT_VERIFICATION_QUEUE (WebSearch, fix in place, tick with source URL), dash sweep, regulated-language sweep. Propagate corrected figures into engine SITE_CONFIG hallucination_zones. Commit.
+1. Phase 3: integrate staged calculators/copy/research into site (Sonnet-tier agent); intent taxonomy category→tool mapping; sitemap; build + site-local vitest green (run vitest from site dir). Then Opus fact-verification pass over FACT_VERIFICATION_QUEUE (WebSearch, fix in place, tick with source URL), dash sweep, regulated-language sweep. Propagate corrected figures into engine SITE_CONFIG hallucination_zones. Commit.
 3. Phase 4: engine registration (exact edit list in playbook; all additive; wills-probate build shares these files, commit promptly and small; include wills keys where lists are re-stated).
 4. Phase 5: waves 1-4 NON-STOP (owner waived spot-check). Wave brief file + per-topic SERP briefs first; one Opus writer per topic; QA tracks A/B/C SEQUENTIAL after each wave; commit per wave.
 5. Phase 6: nurture (two sequences), enrollLead, Supabase migration (re-read live constraint defs, include wills-probate keys), Vercel project (CLI not installed: `npm i -g vercel` first; Root Directory divorce-finances/web, team sitenudge-projects), spinup_site_check, test-lead cycle.
