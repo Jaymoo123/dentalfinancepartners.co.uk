@@ -8,7 +8,7 @@ category: "Incorporation & Company Structures"
 metaTitle: "Property SPV Extraction Under Time Pressure: 12-Month Plan"
 metaDescription: "Sequencing SPV extraction inside a 12-month window for divorce, terminal illness, or emigration: DLA, dividend, pension, and the statutory gates."
 altText: "Tax documents on a black desk with a clock and a yellow sticky note reading Tax time, representing a compressed extraction timeline from a property limited company"
-image: "https://images.pexels.com/photos/6863259/pexels-photo-6863259.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/6863259/pexels-photo-6863259.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Nataliya Vaitkevich"
   photographer_url: "https://www.pexels.com/@n-voitkevich"

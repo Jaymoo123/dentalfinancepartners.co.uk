@@ -111,11 +111,10 @@ faqs:
 
 <h2>Getting Started with a Manchester Property Accountant</h2>
 <p>Whether you are buying your first buy-to-let in Stockport, running a student HMO portfolio in Fallowfield, or holding city centre apartments for capital growth, the right time to engage a specialist is before the next decision, not after the next return. Early advice on ownership structure, Section 24 exposure, MTD readiness and CGT timing consistently produces better outcomes than retrospective tidying.</p>
-<p>You can model your Section 24 position and other scenarios with our <a href="/calculators">property tax calculators</a>, read our overview of the wider <a href="/blog/landlord-tax-essentials/landlord-tax-changes-2026-complete-guide">landlord tax changes for 2026</a>, or use the form on this page to be put in touch with a specialist who handles Greater Manchester landlord work. You can also see the dedicated <a href="/locations/manchester">Property Tax Partners Manchester</a> service page or browse our full range of <a href="/services">property accounting services</a>.</p>
+<p>You can model your Section 24 position and other scenarios with our <a href="/calculators">property tax calculators</a>, read our overview of the wider <a href="/blog/landlord-tax-essentials/landlord-tax-changes-2026-complete-guide">landlord tax changes for 2026</a>, or use the form on this page to be put in touch with a specialist who handles Greater Manchester landlord work. You can also browse our full range of <a href="/services">property accounting services</a>.</p>
 
 <h2>Related Reading</h2>
 <ul>
-<li><a href="/locations/manchester">Property Tax Partners Manchester</a>, our dedicated Greater Manchester service page</li>
 <li><a href="/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords">Section 24 Mortgage Interest Restriction: Complete Guide for UK Landlords</a></li>
 <li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Buy-to-Let Limited Company: Complete Guide</a></li>
 <li><a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital Gains Tax on Property: Complete Guide</a></li>

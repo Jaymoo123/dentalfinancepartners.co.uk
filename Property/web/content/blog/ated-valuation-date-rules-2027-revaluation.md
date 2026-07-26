@@ -8,7 +8,7 @@ category: "Incorporation & Company Structures"
 metaTitle: "ATED Valuation Dates: 2027 Revaluation, PRBC, Acquisition Rule"
 metaDescription: "How ATED valuation works: the 2012/2017/2022/2027 cycle, acquisition-date interim rule, £40,000 substantial-transaction triggers, PRBC, what HMRC accepts."
 altText: "Classic Victorian central London residential terrace representing high-value dwellings within scope of the ATED revaluation cycle"
-image: "https://images.pexels.com/photos/4655752/pexels-photo-4655752.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/4655752/pexels-photo-4655752.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Yelena Odintsova"
   photographer_url: "https://www.pexels.com/@yelenaodintsova"
@@ -213,7 +213,7 @@ editorialNote: "Valuation-date deep-dive for the ATED bucket. Anchored on the fi
 
 <ul>
   <li><a href="https://www.legislation.gov.uk/ukpga/2013/29/part/3">Finance Act 2013, Part 3 (Annual Tax on Enveloped Dwellings)</a> for the statutory framework, valuation date rules and substantial-transaction triggers.</li>
-  <li><a href="https://www.gov.uk/hmrc-internal-manuals/annual-tax-on-enveloped-dwellings">HMRC ATED Manual</a> for HMRC's published view on valuation dates, the five-yearly revaluation cycle, the substantial-acquisition and substantial-disposal rules, and the PRBC service.</li>
+  <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics">HMRC ATED Manual</a> for HMRC's published view on valuation dates, the five-yearly revaluation cycle, the substantial-acquisition and substantial-disposal rules, and the PRBC service.</li>
   <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-returns">ATED return guidance (gov.uk)</a> for return mechanics, the 30 April deadline, and how to lodge a Pre-Return Banding Check.</li>
   <li><a href="https://www.gov.uk/government/publications/annual-tax-on-enveloped-dwellings-technical-guidance">ATED technical guidance (gov.uk)</a> for the practical valuation approach HMRC accepts.</li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2009/10/schedule/24">Schedule 24 FA 2007 (penalties for errors)</a> for the careless / deliberate / deliberate-and-concealed penalty bands at the enquiry stage.</li>

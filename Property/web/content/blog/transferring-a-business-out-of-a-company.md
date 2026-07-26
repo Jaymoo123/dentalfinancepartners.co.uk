@@ -211,7 +211,7 @@ editorialNote: "Honest entity-exit decision frame for property LtdCo founders, F
 
 <h2>Strike-off with the £25,000 cap: the small-LtdCo hybrid</h2>
 
-<p>For sub-£25,000-net-assets companies, the strike-off route with FA 2012 s.1030A capital treatment is the cheapest exit. The route requires the CA 2006 s.1004 conditions (no trading in the last 3 months, no name change in the last 3 months, no application to court, no creditors owed more than £15,000 in the last 3 months) and runs through a DS01 form filing at <a href="https://www.gov.uk/government/publications/companies-house-form-ds01-strike-off-application-by-a-company">Companies House</a> with a 2-month objection window for HMRC and creditors.</p>
+<p>For sub-£25,000-net-assets companies, the strike-off route with FA 2012 s.1030A capital treatment is the cheapest exit. The route requires the CA 2006 s.1004 conditions (no trading in the last 3 months, no name change in the last 3 months, no application to court, no creditors owed more than £15,000 in the last 3 months) and runs through a DS01 form filing at <a href="https://www.gov.uk/government/publications/strike-off-a-company-from-the-register-ds01">Companies House</a> with a 2-month objection window for HMRC and creditors.</p>
 
 <p>For companies sitting just above the £25,000 cap, a hybrid route extracts the excess as a dividend before the DS01 application, leaving £25,000 of distributable reserves to flow through the capital treatment on dissolution.</p>
 

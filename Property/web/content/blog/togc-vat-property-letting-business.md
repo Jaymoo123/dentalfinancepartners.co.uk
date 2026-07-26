@@ -8,7 +8,7 @@ category: "Incorporation & Company Structures"
 metaTitle: "TOGC VAT for Property Letting Businesses: Rules and Traps"
 metaDescription: "How TOGC takes a property letting sale outside VAT. Five conditions, the option-to-tax notification trap, SDLT interaction, and the failure modes."
 altText: "Modern glass office building in Chester, representing a UK commercial letting business that may transfer as a going concern"
-image: "https://images.pexels.com/photos/37005307/pexels-photo-37005307.png?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/37005307/pexels-photo-37005307.png?auto=compress&cs=tinysrgb&h=440&w=640&fm=jpg"
 imageCredit:
   photographer: Daniel Wells
   photographer_url: https://www.pexels.com/@danielwells67

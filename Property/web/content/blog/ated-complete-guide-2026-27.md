@@ -8,7 +8,7 @@ category: Incorporation & Company Structures
 metaTitle: 'ATED Rates 2026/27: Charges, Bands and Reliefs Explained'
 metaDescription: 'Check the ATED rates for 2026/27: six bands from £4,600 to £303,450, who pays, reliefs that cut the charge to nil and the 30 April return date.'
 altText: Classic London apartment building under dramatic sky, representing enveloped UK residential property held by a company
-image: https://images.pexels.com/photos/561086/pexels-photo-561086.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
+image: https://images.pexels.com/photos/561086/pexels-photo-561086.jpeg?auto=compress&cs=tinysrgb&h=440&w=640
 imageCredit:
   photographer: SevenStorm JUHASZIMRUS
   photographer_url: https://www.pexels.com/@sevenstormphotography

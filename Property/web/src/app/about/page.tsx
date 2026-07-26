@@ -6,9 +6,9 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: `About ${siteConfig.name} | 100+ Landlords Served`,
+  title: `About Us | 100+ Landlords Served`,
   description:
-    "Property-only accounting firm serving UK landlords since 2020. 100+ buy-to-let investors trust us for Section 24, MTD, incorporation, and portfolio management. No generalists.",
+    "Property-only accounting firm serving UK landlords since 2020. 100+ buy-to-let investors trust us for Section 24, MTD and incorporation advice.",
   alternates: { canonical: `${siteConfig.url}/about` },
   openGraph: {
     title: `About ${siteConfig.name}`,

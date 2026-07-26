@@ -11,7 +11,7 @@ export const firstTimeBuyerStampDutyCalculator: GenericTool = {
     "The SDLT a first-time buyer pays in England & NI, and how much the relief saves versus standard rates.",
   metaTitle: "First-Time Buyer Stamp Duty Calculator | SDLT Relief (England & NI)",
   metaDescription:
-    "Free first-time buyer stamp duty calculator for England & NI. See the SDLT you pay with first-time-buyer relief (0% to £300k, 5% to £500k) and how much it saves versus standard rates.",
+    "Free first-time buyer stamp duty calculator for England & NI: first-time-buyer relief (0% to £300k, 5% to £500k) and what it saves versus standard rates.",
   intro:
     "See the stamp duty a first-time buyer pays in England and Northern Ireland, and how much the relief saves.",
   ctaLabel: "Planning your first purchase? Ask us →",

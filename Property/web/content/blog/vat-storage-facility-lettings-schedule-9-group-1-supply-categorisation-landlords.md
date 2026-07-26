@@ -8,7 +8,7 @@ category: "Property Types & Specialist Tax"
 metaTitle: "Self-Storage VAT: Sch 9 Gr 1 Para (ka) Standard-Rated"
 metaDescription: "Self-storage standard-rated under Sch 9 Gr 1 para (ka), inserted by FA 2012 Sch 26 from 1 October 2012; Note (15C) three exceptions; mixed-use landlords."
 altText: "Black and white aerial view of industrial warehouses surrounded by greenery in Essex, UK, representative of a multi-let industrial estate with potential self-storage tenants"
-image: "https://images.pexels.com/photos/29192177/pexels-photo-29192177.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/29192177/pexels-photo-29192177.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Altaf Shah"
   photographer_url: "https://www.pexels.com/@altaf-shah-3143825"
@@ -188,11 +188,11 @@ editorialNote: "Wave 8 Bucket C C8, self-storage standard-rated carve-out at VAT
 <h2>Authorities</h2>
 
 <ul>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/9" rel="external nofollow" target="_blank">VATA 1994 Sch 9 Group 1 (exempt land + carve-outs, including paragraph (ka) self-storage)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/2012/14/schedule/26" rel="external nofollow" target="_blank">FA 2012 Sch 26 paragraphs 5(2) and 7(1) (inserting paragraph (ka) effective 1 October 2012)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/4A" rel="external nofollow" target="_blank">VATA 1994 Sch 4A (place of supply, services connected with immoveable property)</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-notice-742-1-self-storage" rel="external nofollow" target="_blank">HMRC VAT Notice 742/1: Self-storage</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-notice-742-land-and-property" rel="external nofollow" target="_blank">HMRC VAT Notice 742: Land and property</a></li>
-<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-land-and-property" rel="external nofollow" target="_blank">HMRC VAT Land and Property internal manual (VATLP)</a></li>
-<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-supply-and-consideration" rel="external nofollow" target="_blank">HMRC VAT Supply and Consideration internal manual (composite-vs-multiple-supply guidance)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/9" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 9 Group 1 (exempt land + carve-outs, including paragraph (ka) self-storage)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/2012/14/schedule/26" rel="external nofollow noopener" target="_blank">FA 2012 Sch 26 paragraphs 5(2) and 7(1) (inserting paragraph (ka) effective 1 October 2012)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/4A" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 4A (place of supply, services connected with immoveable property)</a></li>
+<li>HMRC VAT Notice 742/1: Self-storage</li>
+<li><a href="https://www.gov.uk/government/publications/vat-notice-742-land-and-property" rel="external nofollow noopener" target="_blank">HMRC VAT Notice 742: Land and property</a></li>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-land-and-property" rel="external nofollow noopener" target="_blank">HMRC VAT Land and Property internal manual (VATLP)</a></li>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-supply-and-consideration" rel="external nofollow noopener" target="_blank">HMRC VAT Supply and Consideration internal manual (composite-vs-multiple-supply guidance)</a></li>
 </ul>

@@ -16,7 +16,7 @@ import DetailsForm from "@/components/forms/DetailsForm";
  */
 
 export const metadata: Metadata = {
-  title: `Complete your details | ${siteConfig.name}`,
+  title: `Complete your details`,
   description: "Add the last detail we need to arrange your free property tax review.",
   robots: { index: false, follow: false },
 };

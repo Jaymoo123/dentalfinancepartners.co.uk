@@ -246,9 +246,9 @@ editorialNote: "Compliance-focused page for the overseas-company holding cohort.
 
 <ul>
   <li><a href="https://www.legislation.gov.uk/ukpga/2013/29/part/3">Finance Act 2013, Part 3 (ATED)</a> for the statutory framework and the section 133 relief.</li>
-  <li><a href="https://www.gov.uk/hmrc-internal-manuals/annual-tax-on-enveloped-dwellings">HMRC ATED Manual</a> for the overseas-company applicability and the relief tests.</li>
+  <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics">HMRC ATED Manual</a> for the overseas-company applicability and the relief tests.</li>
   <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-returns">ATED return guidance (gov.uk)</a> for return mechanics and the late-filing penalty cascade.</li>
-  <li><a href="https://www.gov.uk/guidance/disclose-tax-non-compliance">Digital Disclosure Service (gov.uk)</a> for the voluntary disclosure route.</li>
+  <li><a href="https://www.gov.uk/government/publications/hm-revenue-and-customs-disclosure-service">Digital Disclosure Service (gov.uk)</a> for the voluntary disclosure route.</li>
   <li><a href="https://www.gov.uk/guidance/register-an-overseas-entity">Register of Overseas Entities (gov.uk)</a> for the parallel ECCTA 2022/2023 compliance regime.</li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2022/10">Economic Crime (Transparency and Enforcement) Act 2022</a> for the RoE statutory basis.</li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2009/10/schedule/55">Schedule 55 FA 2009 (late-filing penalties)</a> for the per-return penalty cascade.</li>

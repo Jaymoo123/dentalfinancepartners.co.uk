@@ -12,7 +12,7 @@ const UPDATED = "2026/27 tax year";
 export const metadata: Metadata = {
   title: "UK Property Tax Rates 2026/27 | Landlord Tax Reference",
   description:
-    "Current UK property tax rates for 2026/27 in one place: stamp duty (SDLT, LBTT, LTT), capital gains tax, rental income tax and Section 24, corporation and dividend tax, allowances and MTD thresholds. Verified figures.",
+    "Current UK property tax rates for 2026/27: stamp duty (SDLT, LBTT, LTT), capital gains, rental income, Section 24, corporation and dividend tax, MTD.",
   alternates: { canonical: `${siteConfig.url}/property-tax-rates` },
   openGraph: {
     title: "UK Property Tax Rates 2026/27 (Landlord Reference)",

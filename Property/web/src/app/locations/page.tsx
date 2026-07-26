@@ -4,6 +4,7 @@ import Image from "next/image";
 import { CTASection } from "@/components/ui/CTASection";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { locationHref } from "@/lib/locations";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
@@ -56,7 +57,7 @@ export default function LocationsHubPage() {
             {siteConfig.locations.map((loc) => (
               <Link
                 key={loc.slug}
-                href={`/locations/${loc.slug}`}
+                href={locationHref(loc.slug)}
                 className="group bg-slate-50 border-l-4 border-slate-300 p-8 transition-all hover:border-emerald-600 hover:bg-white hover:shadow-md"
               >
                 <span className="text-2xl font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">

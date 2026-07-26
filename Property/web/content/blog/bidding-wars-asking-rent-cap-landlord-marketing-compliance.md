@@ -6,7 +6,7 @@ date: "2026-05-23"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Rental Bidding Ban + Advance Rent: Marketing Compliance"
-metaDescription: "RRA 2025 marketing rules: section 56 stated-rent ceiling, section 57 £7k penalty, advance-rent ban under sections 8 and 9, agent + landlord joint liability."
+metaDescription: "RRA 2025 marketing rules: section 56 stated-rent ceiling, section 57 £7k penalty, advance-rent ban under sections 8 and 9"
 altText: "A person looking at a property-listings website on a laptop, representing the marketing-stage compliance perimeter for the rental bidding ban under the Renters' Rights Act 2025"
 image: "https://images.pexels.com/photos/5077049/pexels-photo-5077049.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

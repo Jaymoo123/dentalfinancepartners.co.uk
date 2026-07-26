@@ -143,7 +143,7 @@ faqs:
 
 <ul>
 <li><strong>Bank account separation.</strong> A dedicated bank account for rental activity (one per property is overkill for most landlords; one consolidated rental-business account is usually sufficient) keeps the underlying transaction record clean.</li>
-<li><strong>Accounting software with bank-feed integration.</strong> <a href="https://www.gov.uk/government/publications/find-software-thats-compatible-with-making-tax-digital-for-income-tax" rel="nofollow noopener" target="_blank">HMRC-listed MTD-compatible software</a> covers most major options. Bank-feed integration captures every transaction automatically, with categorisation built in.</li>
+<li><strong>Accounting software with bank-feed integration.</strong> <a href="https://www.tax.service.gov.uk/find-making-tax-digital-income-tax-software/" rel="nofollow noopener" target="_blank">HMRC-listed MTD-compatible software</a> covers most major options. Bank-feed integration captures every transaction automatically, with categorisation built in.</li>
 <li><strong>Document store for invoices, tenancy agreements, mortgage statements.</strong> A folder-per-year-per-property structure works for small portfolios; document-management software with tagging works for larger portfolios.</li>
 <li><strong>Year-end working papers.</strong> Annual section 24 computation, allowable expenses summary, capital-vs-revenue analysis for major items. Retained alongside the underlying records.</li>
 </ul>

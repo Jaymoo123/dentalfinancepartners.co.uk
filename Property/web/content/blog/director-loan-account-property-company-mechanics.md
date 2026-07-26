@@ -109,7 +109,7 @@ editorialNote: "Mechanics-focused complement to our higher-level director loan a
 
 <h2>Reclaiming section 455 once the loan is cleared</h2>
 
-<p>The section 455 charge is refundable, but the refund mechanism has a built-in lag. The company can reclaim once the loan has been repaid, formally written off, or released. The refund is claimed on <a href="https://www.gov.uk/government/publications/corporation-tax-claim-a-refund-of-section-455-tax-paid-on-a-loan-to-a-participator-l2p">form L2P</a>, either online or as an attachment to the CT600.</p>
+<p>The section 455 charge is refundable, but the refund mechanism has a built-in lag. The company can reclaim once the loan has been repaid, formally written off, or released. The refund is claimed on <a href="https://www.gov.uk/guidance/reclaim-tax-paid-by-close-companies-on-loans-to-participators-l2p">form L2P</a>, either online or as an attachment to the CT600.</p>
 
 <p>The cash refund cannot be claimed until nine months and one day after the end of the accounting period in which the repayment happened. A director who clears the loan part-way through the company's year ending 31 March 2027 has to wait until 1 January 2028 to claim the refund. In practice the refund lands a few weeks to a few months after the claim, so a director who triggers a section 455 charge in year one and clears the loan in year two is typically waiting until year four for the cash to come back.</p>
 

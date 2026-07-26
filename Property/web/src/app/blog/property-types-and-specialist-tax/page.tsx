@@ -8,8 +8,8 @@ const categoryName = "Property Types & Specialist Tax";
 const categorySlug = "property-types-and-specialist-tax";
 
 export const metadata: Metadata = {
-  title: `${categoryName} for UK Landlords | ${siteConfig.name}`,
-  description: `Tax guidance for specialist property types: HMOs, commercial property, serviced accommodation, holiday lets, student housing, and property development. Rules, reliefs, and planning strategies.`,
+  title: `${categoryName} for UK Landlords`,
+  description: "Tax guidance for specialist property types: HMOs, commercial property, serviced accommodation, holiday lets, student housing and development.",
   alternates: {
     canonical: `${siteConfig.url}/blog/${categorySlug}`,
   },

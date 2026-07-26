@@ -10,7 +10,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Should I Incorporate My Buy-to-Let? | CGT & SDLT Cost Analysis",
   description:
-    "Incorporation feasibility for UK landlords: Calculate CGT + SDLT upfront costs vs. annual tax savings. Break-even modelling. When it makes sense, when it doesn't.",
+    "Incorporation feasibility for UK landlords: CGT + SDLT upfront costs vs annual tax savings. When it makes sense, when it does not.",
   alternates: { canonical: `${siteConfig.url}/incorporation` },
   openGraph: {
     title: "Buy-to-Let Incorporation Planning | Cost vs. Savings Analysis",

@@ -8,7 +8,7 @@ category: "Property Types & Specialist Tax"
 metaTitle: "APR and the £2.5m Cap: Mixed Estates with Farm + BTL + Trading"
 metaDescription: "APR under IHTA 1984 Part V Chapter II plus the £2.5m combined BPR/APR cap (s.124D, FA 2026 Sch 12 para 4) from April 2026, applied to mixed estates."
 altText: "Aerial view of a UK farmhouse and fields representing a mixed-estate landlord with agricultural property and a wider portfolio"
-image: "https://images.pexels.com/photos/8793460/pexels-photo-8793460.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/8793460/pexels-photo-8793460.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Ollie Craig"
   photographer_url: "https://www.pexels.com/@olliecraig1"

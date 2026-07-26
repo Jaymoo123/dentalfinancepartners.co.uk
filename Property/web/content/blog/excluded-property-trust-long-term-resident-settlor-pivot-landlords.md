@@ -53,7 +53,7 @@ editorialNote: "Wave 8 Bucket A (A8). Statute-verbatim trust-side companion to A
 
 <p>This page is the trust-side operational companion to <a href="/blog/landlord-tax-essentials/iht-long-term-resident-test-section-6a-tail-period-table-landlords">the section 6A long-term-resident test pillar</a>. The s.6A pillar covers the individual-level LTR test that A8 references for the settlor-status determination; A8 covers the offshore-trust excluded-property mechanics that depend on that LTR test. The two pages are companions; A8 does not re-walk the s.6A test and assumes the reader has either applied it or will apply it to the settlor independently.</p>
 
-<h2>The new statutory location: section 48ZA, not the old s.48(3) and not Schedule 13 paragraphs 40 to 46</h2>
+<h2>The new statutory location: section 48ZA</h2>
 
 <p>FA 2025 s.45 performs two operations on IHTA 1984 section 48:</p>
 
@@ -184,7 +184,7 @@ editorialNote: "Wave 8 Bucket A (A8). Statute-verbatim trust-side companion to A
 
 <p>For the policy-side framing of the IHT non-resident reform, see <a href="/blog/non-resident-landlord-tax/iht-non-resident-uk-property-april-2025-residence-test">Non-Resident IHT on UK Property: April 2025 LTR Regime</a>. For the descriptive IHT pillar covering reliefs and the headline charge, see <a href="/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide">Inheritance Tax on Rental Property Portfolios: UK Guide 2026</a>.</p>
 
-<p><strong>Statutory and HMRC sources cited above:</strong> <a href="https://www.legislation.gov.uk/ukpga/1984/51/section/48ZA">Inheritance Tax Act 1984 section 48ZA</a>; <a href="https://www.legislation.gov.uk/ukpga/1984/51/section/48">Inheritance Tax Act 1984 section 48</a>; <a href="https://www.legislation.gov.uk/ukpga/1984/51/section/6A">Inheritance Tax Act 1984 section 6A</a>; <a href="https://www.legislation.gov.uk/ukpga/1984/51/schedule/A1">Inheritance Tax Act 1984 Schedule A1</a>; <a href="https://www.legislation.gov.uk/ukpga/2025/8/section/45">Finance Act 2025 section 45</a>; <a href="https://www.legislation.gov.uk/ukpga/2025/8/schedule/13">Finance Act 2025 Schedule 13</a>; <a href="https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual">HMRC Inheritance Tax Manual (trust chapters in rewrite for FA 2025)</a>; <a href="https://www.gov.uk/guidance/changes-to-the-taxation-of-non-uk-domiciled-individuals">gov.uk: Changes to the taxation of non-UK domiciled individuals</a>.</p>
+<p><strong>Statutory and HMRC sources cited above:</strong> <a href="https://www.legislation.gov.uk/ukpga/1984/51/section/48ZA">Inheritance Tax Act 1984 section 48ZA</a>; <a href="https://www.legislation.gov.uk/ukpga/1984/51/section/48">Inheritance Tax Act 1984 section 48</a>; <a href="https://www.legislation.gov.uk/ukpga/1984/51/section/6A">Inheritance Tax Act 1984 section 6A</a>; <a href="https://www.legislation.gov.uk/ukpga/1984/51/schedule/A1">Inheritance Tax Act 1984 Schedule A1</a>; <a href="https://www.legislation.gov.uk/ukpga/2025/8/section/45">Finance Act 2025 section 45</a>; <a href="https://www.legislation.gov.uk/ukpga/2025/8/schedule/13">Finance Act 2025 Schedule 13</a>; <a href="https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual">HMRC Inheritance Tax Manual (trust chapters in rewrite for FA 2025)</a>; <a href="https://www.gov.uk/government/collections/changes-to-the-taxation-of-non-uk-domiciled-individuals">gov.uk: Changes to the taxation of non-UK domiciled individuals</a>.</p>
 
 <h2>Related reading</h2>
 

@@ -6,7 +6,7 @@ date: "2026-05-23"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Property SPV Cash Extraction: Multi-Year Sequencing Pillar"
-metaDescription: "Sequencing the six extraction routes (DLA, dividend, salary, employer pension, buyback, MVL) across years as the DLA credit exhausts and dividend bands cliff."
+metaDescription: "Sequencing the six extraction routes (DLA, dividend, salary, pension, buyback, MVL) across years as the DLA credit exhausts and dividend bands cliff."
 altText: "Person writing on a financial document on an organized desk with a calendar, representing multi-year extraction sequencing from a property limited company"
 image: "https://images.pexels.com/photos/6172475/pexels-photo-6172475.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

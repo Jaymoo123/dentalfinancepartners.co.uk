@@ -8,7 +8,7 @@ category: "Property Types & Specialist Tax"
 metaTitle: "VAT on New-Build Residential Property: The Three Rate Bands"
 metaDescription: "Zero-rated, 5%, and 20% VAT outcomes on residential new-builds and conversions. Sch 8 Group 5, Sch 7A Group 6/7, and a £2m greenfield worked example."
 altText: "Contemporary brick house with glass windows, representing newly-built UK residential property within the zero-rated VAT regime"
-image: "https://images.pexels.com/photos/9969055/pexels-photo-9969055.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/9969055/pexels-photo-9969055.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Mike Bird
   photographer_url: https://www.pexels.com/@mikebirdy

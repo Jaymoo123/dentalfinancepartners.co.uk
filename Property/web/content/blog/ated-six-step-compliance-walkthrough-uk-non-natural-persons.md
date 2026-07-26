@@ -166,7 +166,7 @@ editorialNote: "Process-walkthrough page for the first-time ATED filer. Distinct
 <ul>
 <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics">ATED: the basics (gov.uk)</a></li>
 <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-returns">ATED returns guidance (gov.uk)</a></li>
-<li><a href="https://www.gov.uk/hmrc-internal-manuals/annual-tax-on-enveloped-dwellings">HMRC ATED internal manual</a></li>
+<li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics">HMRC ATED internal manual</a></li>
 <li><a href="https://www.legislation.gov.uk/ukpga/2013/29/part/3">Part 3 Finance Act 2013 (legislation.gov.uk)</a></li>
 <li><a href="https://www.legislation.gov.uk/ukpga/2009/10/schedule/55">Schedule 55 Finance Act 2009 (late-filing penalties)</a></li>
 <li><a href="https://www.gov.uk/guidance/register-an-overseas-entity">Register an overseas entity (gov.uk)</a></li>

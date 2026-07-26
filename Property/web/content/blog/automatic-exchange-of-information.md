@@ -7,8 +7,8 @@ author: "Property Tax Partners Editorial Team"
 category: "Non-Resident Landlord Tax"
 metaTitle: "AEOI for Landlords: CRS, FATCA, DAC7, WDF Penalty Map"
 metaDescription: "AEOI for landlords: how CRS, FATCA, DAC7 platform reporting and HMRC Connect work, FA 2017 Sch 18 FTC penalties and the WDF correction route."
-altText: "A network of glowing data lines crossing a globe at night, representing the cross-border automatic exchange of tax information between national tax authorities"
-image: "https://images.pexels.com/photos/957061/pexels-photo-957061.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+altText: "Abstract blue data lines against a dark background, representing the cross-border automatic exchange of tax information between national tax authorities"
+image: "https://images.pexels.com/photos/14367372/pexels-photo-14367372.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Tom Fisk
   photographer_url: https://www.pexels.com/@tomfisk

@@ -6,9 +6,9 @@ date: "2026-05-28"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "ATED Valuation Date: s.102 Architecture, On-Ramp, £40k"
-metaDescription: "ATED valuation date under FA 2013 s.102: 5-yearly Crown dates, s.102(2A) FA 2015 on-ramp, £40k substantial acquisition trigger, partnership and CIS variants."
-altText: "A row of tall white-stucco London town houses representing the high-value enveloped dwellings that fall within the ATED valuation cycle"
-image: "https://images.pexels.com/photos/13855228/pexels-photo-13855228.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+metaDescription: "ATED valuation date under FA 2013 s.102: 5-yearly Crown dates, s.102(2A) FA 2015 on-ramp, £40k substantial acquisition trigger"
+altText: "A row of white-fronted terraced town houses in London representing the high-value enveloped dwellings that fall within the ATED valuation cycle"
+image: "https://images.pexels.com/photos/20703514/pexels-photo-20703514.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Hert Niks
   photographer_url: https://www.pexels.com/@hertniks

@@ -201,13 +201,13 @@ editorialNote: "MW2 Bucket B B17: definitional pillar for the bare query 'gas sa
 <ul>
 <li><a href="https://www.legislation.gov.uk/uksi/1998/2451/contents" rel="nofollow">Gas Safety (Installation and Use) Regulations 1998 (SI 1998/2451)</a></li>
 <li><a href="https://www.legislation.gov.uk/uksi/1998/2451/regulation/36" rel="nofollow">GSIUR 1998 reg.36 (Duties of landlords)</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/1998/2451/regulation/43" rel="nofollow">GSIUR 1998 reg.43 (Offences)</a></li>
+<li>GSIUR 1998 reg.43 (Offences)</li>
 <li><a href="https://www.legislation.gov.uk/ukpga/1974/37/contents" rel="nofollow">Health and Safety at Work etc Act 1974</a></li>
 <li><a href="https://www.legislation.gov.uk/ukpga/1974/37/section/33" rel="nofollow">HSWA 1974 s.33 (Offences)</a></li>
 <li><a href="https://www.legislation.gov.uk/ukpga/2007/19/contents" rel="nofollow">Corporate Manslaughter and Corporate Homicide Act 2007</a></li>
 <li><a href="https://www.hse.gov.uk/gas/landlords/" rel="nofollow">HSE landlord gas safety guidance</a></li>
 <li><a href="https://www.gassaferegister.co.uk/" rel="nofollow">Gas Safe Register</a></li>
-<li><a href="https://www.gov.uk/government/publications/landlords-a-guide-to-landlords-duties-gas-safety-installation-and-use-regulations-1998" rel="nofollow">gov.uk landlord gas safety guidance</a></li>
+<li><a href="https://www.hse.gov.uk/pubns/indg285.htm" rel="nofollow">gov.uk landlord gas safety guidance</a></li>
 <li><a href="https://www.legislation.gov.uk/ukpga/2005/5/section/272" rel="nofollow">ITTOIA 2005 s.272 (general allowable expenses)</a></li>
 <li><a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2030" rel="nofollow">HMRC PIM2030 (capital vs revenue in rental businesses)</a></li>
 </ul>

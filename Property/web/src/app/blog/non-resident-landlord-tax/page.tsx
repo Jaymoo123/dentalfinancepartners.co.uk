@@ -8,8 +8,8 @@ const categoryName = "Non-Resident Landlord Tax";
 const categorySlug = "non-resident-landlord-tax";
 
 export const metadata: Metadata = {
-  title: `${categoryName} | ${siteConfig.name}`,
-  description: `UK tax obligations for non-resident landlords and overseas property investors. NRL scheme, withholding tax, non-resident CGT, double taxation, ATED, and compliance requirements.`,
+  title: `${categoryName}`,
+  description: "UK tax for non-resident landlords and overseas property investors: NRL scheme, withholding tax, non-resident CGT, double taxation, ATED and compliance.",
   alternates: {
     canonical: `${siteConfig.url}/blog/${categorySlug}`,
   },

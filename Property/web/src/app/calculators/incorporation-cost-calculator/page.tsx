@@ -10,7 +10,7 @@ import { buildCalculatorJsonLd } from "@/lib/calculator-schema";
 export const metadata: Metadata = {
   title: "Incorporation Cost Calculator | CGT, SDLT & Break-Even (Landlords)",
   description:
-    "Free calculator for landlords weighing up a limited company. Estimate the upfront cost (Capital Gains Tax + Stamp Duty) of incorporating your property and the break-even timeline against the annual tax saving.",
+    "Free calculator for landlords weighing up a limited company: the upfront cost (CGT + Stamp Duty) of incorporating and the break-even vs annual tax saving.",
   alternates: { canonical: `${siteConfig.url}/calculators/incorporation-cost-calculator` },
   openGraph: {
     title: "Property Incorporation Cost & Break-Even Calculator",

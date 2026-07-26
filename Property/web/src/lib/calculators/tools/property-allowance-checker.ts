@@ -13,7 +13,7 @@ export const propertyAllowanceChecker: GenericTool = {
     "Whether your property income is covered by the £1,000 property allowance, or whether the allowance or actual expenses leave you with less tax.",
   metaTitle: "£1,000 Property Allowance Checker | UK Landlords (2026/27)",
   metaDescription:
-    "Free property allowance checker. See whether your rental income is covered by the £1,000 property allowance, and whether the allowance or actual expenses give you the lower tax bill.",
+    "Free property allowance checker. See whether the £1,000 property allowance covers your rental income, or whether claiming expenses gives a lower bill.",
   intro:
     "Check whether the £1,000 property allowance covers your rental income, or whether claiming it beats claiming your actual expenses.",
   ctaLabel: "Not sure what to declare? Ask us →",

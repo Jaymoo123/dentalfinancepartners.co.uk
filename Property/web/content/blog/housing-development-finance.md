@@ -191,5 +191,5 @@ imageCredit:
   <li id="ref-1"><strong>legislation.gov.uk</strong>: <a href="https://www.legislation.gov.uk/ukpga/2016/24/section/77" rel="noopener noreferrer">Finance Act 2016 s.77 (Transactions in UK land, companies, CTA 2010 Part 8ZB)</a></li>
   <li id="ref-2"><strong>legislation.gov.uk</strong>: <a href="https://www.legislation.gov.uk/ukpga/2022/3/part/2" rel="noopener noreferrer">Finance Act 2022 Part 2 (Residential Property Developer Tax)</a></li>
   <li id="ref-3"><strong>gov.uk</strong>: <a href="https://www.gov.uk/guidance/buildings-and-construction-vat-notice-708" rel="noopener noreferrer">VAT on buildings and construction (Notice 708)</a></li>
-  <li id="ref-4"><strong>gov.uk</strong>: <a href="https://www.gov.uk/guidance/check-if-you-need-to-sign-up-for-making-tax-digital-for-income-tax" rel="noopener noreferrer">Making Tax Digital for Income Tax: who needs to sign up and when</a></li>
+  <li id="ref-4"><strong>gov.uk</strong>: <a href="https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax" rel="noopener noreferrer">Making Tax Digital for Income Tax: who needs to sign up and when</a></li>
 </ol>

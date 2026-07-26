@@ -11,7 +11,7 @@ export const corporationTaxCalculator: GenericTool = {
     "Corporation Tax on a property company's profit, with the 19% / 25% rates and marginal relief between.",
   metaTitle: "Corporation Tax Calculator | Property Company (19% / 25%)",
   metaDescription:
-    "Free Corporation Tax calculator for property companies. Work out the tax on company profit with the 19% small-profits and 25% main rates and marginal relief in between. 2026/27.",
+    "Free Corporation Tax calculator for property companies. Work out the tax on profit with the 19% small-profits and 25% main rates, plus marginal relief.",
   intro:
     "Work out the Corporation Tax on your property company's profit, with the 19% and 25% rates and marginal relief between.",
   ctaLabel: "Running a property company? Talk to us →",

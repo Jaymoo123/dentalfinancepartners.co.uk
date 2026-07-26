@@ -6,7 +6,7 @@ date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Non-Resident Landlord Tax"
 metaTitle: "Non-Resident SDLT 2% Surcharge: Residence Test, Stack, Refund"
-metaDescription: "Schedule 9A FA 2003 SDLT 2% non-resident surcharge: the 183-day SDLT-specific residence test, how surcharges stack, joint purchaser trap and the refund route."
+metaDescription: "Schedule 9A FA 2003 SDLT 2% non-resident surcharge: the 183-day SDLT-specific residence test, how surcharges stack"
 altText: "Passport and travel bag, illustrating a non-UK resident buyer subject to the 2% SDLT non-resident surcharge on UK residential property purchases"
 image: "https://images.pexels.com/photos/1058959/pexels-photo-1058959.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

@@ -6,7 +6,7 @@ date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "AST to Periodic Conversion: 1 May 2026 Mechanics for Landlords"
-metaDescription: "Every existing AST converted to a periodic assured tenancy on 1 May 2026. Conversion mechanics, what changes, what stays, the landlord checklist, carve-outs."
+metaDescription: "Every existing AST converted to a periodic assured tenancy on 1 May 2026. Conversion mechanics, what changes, what stays, the landlord checklist"
 altText: "Overhead view of monthly calendar pages, representing the monthly default rent period that became the new statutory norm on 1 May 2026"
 image: "https://images.pexels.com/photos/5417675/pexels-photo-5417675.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

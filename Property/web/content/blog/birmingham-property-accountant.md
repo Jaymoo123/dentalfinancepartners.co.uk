@@ -229,7 +229,6 @@ faqs:
 <h2>Related reading</h2>
 
 <ul>
-<li><a href="/locations/birmingham">Property Tax Partners Birmingham</a>: our dedicated Birmingham service page</li>
 <li><a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">How to choose the best property accountant for UK landlords</a></li>
 <li><a href="/blog/property-accountant-services/property-accountant-near-me">Property accountant near me: finding the right UK property tax specialist</a></li>
 <li><a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">What a property accountant costs and how fees are structured</a></li>

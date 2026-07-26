@@ -6,7 +6,7 @@ date: "2026-05-24"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "CoP9 and the CDF: HMRC Fraud Investigations"
-metaDescription: "HMRC Code of Practice 9 and the Contractual Disclosure Facility: 60-day acceptance window, immunity scope, and why CoP9 is not a landlord-friendly disclosure route."
+metaDescription: "HMRC Code of Practice 9 and the Contractual Disclosure Facility: 60-day acceptance window, immunity scope"
 altText: "UK landlord reviewing HMRC Code of Practice 9 letter with specialist tax-investigations adviser"
 image: ""
 h1: "CoP9 and the Contractual Disclosure Facility: HMRC Tax Fraud Investigation for Landlords"
@@ -45,7 +45,7 @@ faqs:
 
 <h2>What CoP9 is</h2>
 
-<p><a href="https://www.gov.uk/government/publications/code-of-practice-9" rel="nofollow noopener" target="_blank">HMRC Code of Practice 9</a> is HMRC's published code under which the Contractual Disclosure Facility (CDF) operates. The current edition is CoP9 (2014), with editorial republishing since. CoP9 is issued by HMRC where it has formed a view that a taxpayer is involved in tax fraud and where HMRC is willing to resolve the matter civilly rather than by criminal prosecution.</p>
+<p><a href="https://www.gov.uk/government/publications/code-of-practice-9-where-hmrc-suspects-fraud-cop9" rel="nofollow noopener" target="_blank">HMRC Code of Practice 9</a> is HMRC's published code under which the Contractual Disclosure Facility (CDF) operates. The current edition is CoP9 (2014), with editorial republishing since. CoP9 is issued by HMRC where it has formed a view that a taxpayer is involved in tax fraud and where HMRC is willing to resolve the matter civilly rather than by criminal prosecution.</p>
 
 <p>CoP9 is not statutory. There is no specific Act or Schedule that creates the CDF. Instead, CoP9 is an undertaking by HMRC, set out in published form, that conditions HMRC's choice between civil and criminal proceedings. The legal basis for HMRC's prosecution discretion sits in the general criminal-investigation framework and (for certain offences) in specific statutory powers, but the operational gateway between civil and criminal handling is CoP9. <a href="https://www.gov.uk/hmrc-internal-manuals/enquiry-manual/em6000" rel="nofollow noopener" target="_blank">HMRC's Enquiry Manual at EM6000 onwards</a> sets out the internal handling guidance for civil-fraud investigations.</p>
 
@@ -142,9 +142,9 @@ faqs:
 
 <h2>CoP9 vs CoP8 vs CoP10: HMRC's investigation code framework</h2>
 
-<p>HMRC's investigation framework uses three published codes, and orientation between them is important. <a href="https://www.gov.uk/government/publications/code-of-practice-8" rel="nofollow noopener" target="_blank">Code of Practice 8 (CoP8)</a> is HMRC's published code for serious tax-avoidance investigations where fraud is not suspected. It is the route HMRC uses for complex avoidance arrangements, marketed schemes, and high-value but technically defensible positions. CoP8 does not carry a CDF / criminal-immunity component because there is no fraud-prosecution exposure to immunise against.</p>
+<p>HMRC's investigation framework uses three published codes, and orientation between them is important. <a href="https://assets.publishing.service.gov.uk/media/5a95aeeae5274a5b849d3b93/COP8_02_18.pdf" rel="nofollow noopener" target="_blank">Code of Practice 8 (CoP8)</a> is HMRC's published code for serious tax-avoidance investigations where fraud is not suspected. It is the route HMRC uses for complex avoidance arrangements, marketed schemes, and high-value but technically defensible positions. CoP8 does not carry a CDF / criminal-immunity component because there is no fraud-prosecution exposure to immunise against.</p>
 
-<p><a href="https://www.gov.uk/government/publications/code-of-practice-10" rel="nofollow noopener" target="_blank">Code of Practice 10 (CoP10)</a> is HMRC's published code for information requests in cases where neither fraud nor formal avoidance is suspected but HMRC needs information from a third party. CoP10 is procedural and does not engage civil-resolution mechanics in the way CoP9 does.</p>
+<p>Code of Practice 10 (CoP10) is HMRC's published code for information requests in cases where neither fraud nor formal avoidance is suspected but HMRC needs information from a third party. CoP10 is procedural and does not engage civil-resolution mechanics in the way CoP9 does.</p>
 
 <p>Practically: a CoP8 letter signals serious tax-avoidance investigation; a CoP9 letter signals suspected tax fraud and the CDF offer; a CoP10 letter signals an information request without underlying investigation. The codes can sometimes flip mid-engagement (HMRC moves from CoP8 to CoP9 if avoidance investigation surfaces fraud evidence), and the move carries meaningful procedural implications.</p>
 
@@ -154,7 +154,7 @@ faqs:
 
 <p>FIS officers typically conduct an in-person interview as part of the Disclosure Report process. The interview is generally not under caution (the CDF acceptance shifts the resolution into the civil track), but inconsistencies between the Disclosure Report and the interview can revoke the CDF immunity. Specialist counsel will normally prepare the taxpayer extensively for the FIS interview and may be present during it.</p>
 
-<p>The FIS also retains a parallel criminal-investigation function. Cases that fail CDF (rejected, late, or revoked) can be transferred from the civil to the criminal arm of FIS. Within the criminal arm, the case is conducted under the Police and Criminal Evidence Act 1984 framework and ultimately referred to the Crown Prosecution Service for charging decisions. HMRC's published prosecution policy sits at <a href="https://www.gov.uk/government/publications/hmrc-criminal-investigation-policy" rel="nofollow noopener" target="_blank">HMRC Criminal Investigation Policy</a>.</p>
+<p>The FIS also retains a parallel criminal-investigation function. Cases that fail CDF (rejected, late, or revoked) can be transferred from the civil to the criminal arm of FIS. Within the criminal arm, the case is conducted under the Police and Criminal Evidence Act 1984 framework and ultimately referred to the Crown Prosecution Service for charging decisions. HMRC's published prosecution policy sits at <a href="https://www.gov.uk/government/publications/criminal-investigation/hmrc-criminal-investigation-policy" rel="nofollow noopener" target="_blank">HMRC Criminal Investigation Policy</a>.</p>
 
 <h2>Anti-money-laundering reporting interaction</h2>
 

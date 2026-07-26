@@ -126,7 +126,7 @@ faqs:
 </tbody>
 </table>
 
-<p>Non-UK resident purchasers add a further 2% surcharge on the whole purchase price, taking the marginal rate to 19% in the top band. The official HMRC reference is the <a href="https://www.gov.uk/stamp-duty-land-tax/residential-property-rates" rel="external nofollow" target="_blank">SDLT residential rates page</a>.</p>
+<p>Non-UK resident purchasers add a further 2% surcharge on the whole purchase price, taking the marginal rate to 19% in the top band. The official HMRC reference is the <a href="https://www.gov.uk/stamp-duty-land-tax/residential-property-rates" rel="external nofollow noopener" target="_blank">SDLT residential rates page</a>.</p>
 
 <h3>Worked SDLT on a £600,000 Battersea flat</h3>
 
@@ -141,7 +141,7 @@ faqs:
 
 <h2>Making Tax Digital for ITSA: The London Threshold Reality</h2>
 
-<p>MTD for ITSA went live on 6 April 2026 for sole-trader landlords with qualifying income (gross trading plus gross property receipts, before any expenses) over £50,000. The threshold drops to £30,000 from 6 April 2027 and to £20,000 from 6 April 2028. The official sign-up checker is at <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" rel="external nofollow" target="_blank">gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax</a>.</p>
+<p>MTD for ITSA went live on 6 April 2026 for sole-trader landlords with qualifying income (gross trading plus gross property receipts, before any expenses) over £50,000. The threshold drops to £30,000 from 6 April 2027 and to £20,000 from 6 April 2028. The official sign-up checker is at <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" rel="external nofollow noopener" target="_blank">gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax</a>.</p>
 
 <p>London-specific factors that push more landlords above the threshold:</p>
 
@@ -171,13 +171,13 @@ faqs:
 </tbody>
 </table>
 
-<p>Most genuine buy-to-let companies escape the charge through ATED relief: the property must be let on commercial terms to an unconnected third party throughout the chargeable period. Relief is not automatic. You must file an <strong>ATED relief declaration return</strong> by 30 April each year, even where no tax is due. Missing that filing creates the full charge and a separate £100 late-filing penalty escalating to fixed and tax-geared penalties under Schedule 55 FA 2009. Reference: <a href="https://www.gov.uk/government/publications/annual-tax-on-enveloped-dwellings-technical-guidance" rel="external nofollow" target="_blank">HMRC ATED technical guidance</a>.</p>
+<p>Most genuine buy-to-let companies escape the charge through ATED relief: the property must be let on commercial terms to an unconnected third party throughout the chargeable period. Relief is not automatic. You must file an <strong>ATED relief declaration return</strong> by 30 April each year, even where no tax is due. Missing that filing creates the full charge and a separate £100 late-filing penalty escalating to fixed and tax-geared penalties under Schedule 55 FA 2009. Reference: <a href="https://www.gov.uk/government/publications/annual-tax-on-enveloped-dwellings-technical-guidance" rel="external nofollow noopener" target="_blank">HMRC ATED technical guidance</a>.</p>
 
 <h2>Capital Gains Tax on London Disposals</h2>
 
 <p>The residential CGT higher rate fell from 28% to 24% with effect from 6 April 2024 (Finance (No.2) Act 2024); the lower rate stayed at 18%. The annual exempt amount stayed at £3,000 for 2026/27. So if you are a higher-rate taxpayer selling a £400,000-purchase Zone 2 flat for £700,000 in 2026/27, after £15,000 of qualifying improvement costs and £8,000 of disposal costs (legal, agent), your gain is £277,000, taxable on £274,000 at 24% = £65,760.</p>
 
-<p>The most-missed mechanic is the <strong>60-day reporting and payment window</strong> introduced by Schedule 2 to the Finance Act 2019 (the original 30-day window was extended to 60 days by the Finance Act 2022 for completions on or after 27 October 2021): the disposal must be reported and the tax paid within 60 days of completion through the <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax" rel="external nofollow" target="_blank">UK Property CGT service</a>, separately from the Self Assessment return. Penalties under Schedule 55 FA 2009 start at £100, rise to £300 after six months, and continue rising. Daily penalties can apply in egregious cases. For the disposal mechanics step by step, see our <a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">CGT on UK residential property sale</a> guide.</p>
+<p>The most-missed mechanic is the <strong>60-day reporting and payment window</strong> introduced by Schedule 2 to the Finance Act 2019 (the original 30-day window was extended to 60 days by the Finance Act 2022 for completions on or after 27 October 2021): the disposal must be reported and the tax paid within 60 days of completion through the <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax" rel="external nofollow noopener" target="_blank">UK Property CGT service</a>, separately from the Self Assessment return. Penalties under Schedule 55 FA 2009 start at £100, rise to £300 after six months, and continue rising. Daily penalties can apply in egregious cases. For the disposal mechanics step by step, see our <a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">CGT on UK residential property sale</a> guide.</p>
 
 <aside>
 <p>About to exchange on a London buy-to-let sale?</p>
@@ -308,7 +308,6 @@ faqs:
 <h2>Related Reading</h2>
 
 <ul>
-<li><a href="/locations/london">Property Tax Partners London</a></li>
 <li><a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">Finding the Best Property Accountant in London</a></li>
 <li><a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 Complete Guide</a></li>
 <li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL Limited Company Complete Guide</a></li>

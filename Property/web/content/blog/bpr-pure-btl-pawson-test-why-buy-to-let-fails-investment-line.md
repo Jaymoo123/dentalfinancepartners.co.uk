@@ -8,7 +8,7 @@ category: "Landlord Tax Essentials"
 metaTitle: "Why Pure Buy-to-Let Fails BPR: The Pawson Test"
 metaDescription: "Pure buy-to-let does not qualify for Business Property Relief: s.105(3) IHTA 1984 and Pawson v HMRC put it on the investment side. What works instead."
 altText: "Traditional UK brick row houses in a Manchester suburb, the standard buy-to-let stock that does not qualify for Business Property Relief"
-image: "https://images.pexels.com/photos/13657362/pexels-photo-13657362.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/13657362/pexels-photo-13657362.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Muhammed Zahid Bulut
   photographer_url: https://www.pexels.com/@zahid

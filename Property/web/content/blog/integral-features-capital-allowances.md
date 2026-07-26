@@ -8,7 +8,7 @@ category: Property Types & Specialist Tax
 metaTitle: 'Integral Features Capital Allowances 2026 | 6% Pool'
 metaDescription: "The five section 33A categories that qualify as integral features, how the 6% special rate pool and AIA work, and why the 40% FYA does not reach them."
 altText: "A modern commercial building interior showing an escalator and air conditioning vents, representing integral features eligible for capital allowances claims."
-image: https://images.pexels.com/photos/18729447/pexels-photo-18729447.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
+image: https://images.pexels.com/photos/18729447/pexels-photo-18729447.jpeg?auto=compress&cs=tinysrgb&h=440&w=640
 h1: 'Integral Features Capital Allowances: A Complete Guide for UK Property Investors'
 summary: "Integral features capital allowances let you claim tax relief on specific building systems such as lifts, heating, ventilation, cold water and electrical installations. What qualifies under section 33A, how the 6% special rate pool sits alongside the Annual Investment Allowance, what the Finance Act 2026 reliefs do (and do not) cover, and how to claim correctly on commercial and mixed-use property."
 schema: ''

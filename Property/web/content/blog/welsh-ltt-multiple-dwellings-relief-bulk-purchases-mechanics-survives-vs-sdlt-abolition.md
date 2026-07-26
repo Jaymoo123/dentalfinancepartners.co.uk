@@ -8,7 +8,7 @@ category: "Incorporation and Company Structures"
 metaTitle: "Welsh LTT MDR: Mechanics, 2025 Carve-Out and 2026 3% Floor"
 metaDescription: "Welsh LTT multiple dwellings relief survives. Mean-consideration formula, 2025 subsidiary-dwelling carve-out, 2026 1% to 3% minimum-rate floor, examples."
 altText: "Aerial view of terraced houses in a Welsh valley, illustrating a portfolio acquisition scenario where multiple dwellings relief applies under Welsh LTT"
-image: "https://images.pexels.com/photos/34884266/pexels-photo-34884266.png?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/34884266/pexels-photo-34884266.png?auto=compress&cs=tinysrgb&h=440&w=640&fm=jpg"
 imageCredit:
   photographer: "Delyth Williams"
   photographer_url: "https://www.pexels.com/@delyth-williams-256414522"

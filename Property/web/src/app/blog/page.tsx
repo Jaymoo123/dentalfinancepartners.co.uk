@@ -12,7 +12,7 @@ import { ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Blog | Property Tax Insights for UK Landlords",
   description:
-    "Property tax guides for UK landlords: Section 24, MTD, capital gains tax, incorporation, SDLT, inheritance tax, and VAT. Written by specialist property accountants.",
+    "Property tax guides for UK landlords: Section 24, MTD, capital gains tax, incorporation, SDLT, inheritance tax and VAT. By specialist property accountants.",
   alternates: { canonical: `${siteConfig.url}/blog` },
   openGraph: {
     title: "Blog | Property Tax Insights for UK Landlords",

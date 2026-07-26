@@ -156,5 +156,5 @@ editorialNote: "Consumer-protection piece. Explains the cold-call SDLT refund sc
 <li><a href="/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025">SDLT rates for buy-to-let and limited companies, 2026/27</a> , the underlying rates that any refund claim is offsetting against.</li>
 <li><a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual">HMRC SDLT Manual</a> , including SDLTM00390 on grounds and gardens.</li>
 <li><a href="https://www.tax.org.uk">Chartered Institute of Taxation</a> , public register and the 2024 warning on SDLT refund schemes.</li>
-<li><a href="https://www.gov.uk/government/publications/spotlight-63-property-business-arrangements">HMRC Spotlight 63</a> , HMRC's published consumer guidance on property-business avoidance arrangements.</li>
+<li><a href="https://www.gov.uk/guidance/property-business-arrangements-involving-hybrid-partnerships-spotlight-63">HMRC Spotlight 63</a> , HMRC's published consumer guidance on property-business avoidance arrangements.</li>
 </ul>

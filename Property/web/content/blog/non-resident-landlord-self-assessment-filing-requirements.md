@@ -252,7 +252,7 @@ faqs:
 
 <ul>
 <li><a href="https://www.gov.uk/tax-uk-income-live-abroad">gov.uk: Tax on UK income if you live abroad</a></li>
-<li><a href="https://www.gov.uk/government/publications/non-resident-landlords-paying-tax-on-rent-and-income">HMRC: Non-Resident Landlord Scheme guidance</a></li>
+<li><a href="https://www.gov.uk/guidance/paying-tax-on-rent-to-landlords-abroad">HMRC: Non-Resident Landlord Scheme guidance</a></li>
 <li><a href="https://www.gov.uk/hmrc-internal-manuals/international-manual">HMRC International Manual</a></li>
 <li><a href="https://www.gov.uk/government/collections/tax-treaties">gov.uk: UK tax treaties</a></li>
 </ul>

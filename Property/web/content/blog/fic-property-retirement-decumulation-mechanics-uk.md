@@ -8,7 +8,7 @@ category: "Incorporation & Company Structures"
 metaTitle: "FIC Retirement Income for Property Founders (UK)"
 metaDescription: "Property FIC retirement income: DLA runway, preference coupon, redemption amortisation, sequenced with state pension and SIPP across decumulation."
 altText: "Senior couple sitting on a seaside bench enjoying retirement, representing the income-decumulation phase of a property Family Investment Company founder's life"
-image: "https://images.pexels.com/photos/18260123/pexels-photo-18260123.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/18260123/pexels-photo-18260123.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Costa Karabelas"
   photographer_url: "https://www.pexels.com/@costa"

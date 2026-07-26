@@ -10,7 +10,7 @@ import { buildCalculatorJsonLd } from "@/lib/calculator-schema";
 export const metadata: Metadata = {
   title: "Stamp Duty Calculator | SDLT incl. Buy-to-Let Surcharge (England & NI)",
   description:
-    "Free SDLT stamp duty calculator for England & Northern Ireland. Includes the 5% additional-dwelling surcharge for buy-to-lets and second homes, first-time-buyer relief, and the 2% non-resident surcharge. Instant result.",
+    "Free SDLT calculator for England & NI: the 5% buy-to-let surcharge, first-time-buyer relief and the 2% non-resident surcharge. Instant result.",
   alternates: { canonical: `${siteConfig.url}/calculators/stamp-duty-calculator` },
   openGraph: {
     title: "Stamp Duty (SDLT) Calculator for UK Property",

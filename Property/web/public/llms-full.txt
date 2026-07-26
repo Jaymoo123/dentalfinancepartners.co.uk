@@ -44,11 +44,11 @@ Coverage: UK-wide, with city presence in London, Manchester, Birmingham, Leeds, 
 
 ## City Pages (LocalBusiness schema)
 
-- London: https://www.propertytaxpartners.co.uk/locations/london
-- Manchester: https://www.propertytaxpartners.co.uk/locations/manchester
-- Birmingham: https://www.propertytaxpartners.co.uk/locations/birmingham
+- London: https://www.propertytaxpartners.co.uk/blog/property-accountant-services/london-property-accountant
+- Manchester: https://www.propertytaxpartners.co.uk/blog/property-accountant-services/manchester-property-accountant
+- Birmingham: https://www.propertytaxpartners.co.uk/blog/property-accountant-services/birmingham-property-accountant
 - Leeds: https://www.propertytaxpartners.co.uk/locations/leeds
-- Bristol: https://www.propertytaxpartners.co.uk/locations/bristol
+- Bristol: https://www.propertytaxpartners.co.uk/blog/property-accountant-services/bristol-property-accountant
 
 ## Who We Help
 

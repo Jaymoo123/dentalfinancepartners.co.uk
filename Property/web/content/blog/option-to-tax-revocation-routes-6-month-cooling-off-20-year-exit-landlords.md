@@ -6,9 +6,9 @@ date: "2026-05-25"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Revoke Option to Tax: Sch 10 Paras 23/24/25 Routes"
-metaDescription: "Option to tax exit playbook: 6-month cooling-off VAT1614C (para 23), 6-year-no-interest auto-revoke (para 24), 20-year revoke VAT1614J (para 25), CGS shadow."
+metaDescription: "Option to tax exit playbook: 6-month cooling-off VAT1614C (para 23), 6-year-no-interest auto-revoke (para 24), 20-year revoke VAT1614J (para 25)"
 altText: "A contemporary glass office building in Chester, England, representative of commercial property held under a VATA 1994 Schedule 10 option to tax"
-image: "https://images.pexels.com/photos/37005307/pexels-photo-37005307.png?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/37005307/pexels-photo-37005307.png?auto=compress&cs=tinysrgb&h=440&w=640&fm=jpg"
 imageCredit:
   photographer: "Daniel Wells"
   photographer_url: "https://www.pexels.com/@danielwells67"
@@ -162,12 +162,12 @@ editorialNote: "Wave 8 Bucket C C2, option-to-tax revocation depth, builds on C1
 <h2>Authorities</h2>
 
 <ul>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/23" rel="external nofollow" target="_blank">VATA 1994 Sch 10 para 23 (cooling-off revocation)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/24" rel="external nofollow" target="_blank">VATA 1994 Sch 10 para 24 (6-year-no-interest automatic revocation)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/25" rel="external nofollow" target="_blank">VATA 1994 Sch 10 para 25 (20-year revocation)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/6" rel="external nofollow" target="_blank">VATA 1994 Sch 10 para 6 (conversion of buildings for use as dwelling)</a></li>
-<li><a href="https://www.gov.uk/guidance/opting-to-tax-land-and-buildings-notice-742a" rel="external nofollow" target="_blank">HMRC VAT Notice 742A: Opting to tax land and buildings</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-revoking-an-option-to-tax-within-6-month-cooling-off-period-vat1614c" rel="external nofollow" target="_blank">Form VAT1614C: Revoke an option to tax within 6-month cooling off period</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-revoking-an-option-to-tax-after-20-years-vat1614j" rel="external nofollow" target="_blank">Form VAT1614J: Revoke an option to tax after 20 years</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-certificate-to-disapply-the-option-to-tax-buildings-for-conversion-into-dwellings-etc-vat1614d" rel="external nofollow" target="_blank">Form VAT1614D: Certificate to disapply the option to tax buildings</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/23" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 10 para 23 (cooling-off revocation)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/24" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 10 para 24 (6-year-no-interest automatic revocation)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/25" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 10 para 25 (20-year revocation)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/6" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 10 para 6 (conversion of buildings for use as dwelling)</a></li>
+<li><a href="https://www.gov.uk/guidance/opting-to-tax-land-and-buildings-notice-742a" rel="external nofollow noopener" target="_blank">HMRC VAT Notice 742A: Opting to tax land and buildings</a></li>
+<li><a href="https://www.gov.uk/government/publications/vat-revoking-an-option-to-tax-within-6-month-cooling-off-period-vat1614c" rel="external nofollow noopener" target="_blank">Form VAT1614C: Revoke an option to tax within 6-month cooling off period</a></li>
+<li><a href="https://www.gov.uk/government/publications/vat-revoking-an-option-to-tax-after-20-years-vat1614j" rel="external nofollow noopener" target="_blank">Form VAT1614J: Revoke an option to tax after 20 years</a></li>
+<li><a href="https://www.gov.uk/government/publications/vat-certificate-to-disapply-the-option-to-tax-buildings-for-conversion-into-dwellings-etc-vat1614d" rel="external nofollow noopener" target="_blank">Form VAT1614D: Certificate to disapply the option to tax buildings</a></li>
 </ul>

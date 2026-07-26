@@ -25,7 +25,7 @@ dateModified: '2026-05-19'
 sourcesVerifiedAt: '2026-05-19'
 sourceDomains:
 - accaglobal.com
-- aka.hmrc.gov.uk
+- gov.uk
 - gov.uk
 imageCredit:
   photographer: Mikhail Nilov
@@ -78,7 +78,7 @@ imageCredit:
 <p>Medical services provided by registered health professionals are normally exempt, but some services performed by a doctor may be taxable or exempt; for example where a medical report is produced solely to provide a third party with a necessary element for taking a decision for insurance or legal purposes, the supply is taxable at the standard rate <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
 
 <h2>VAT Payment Deadlines and Digital Records</h2>
-<p>Once you have calculated your VAT using the correct method, you need to submit your return and pay HMRC on time. The VAT payment deadline calculator is available on the HMRC website at aka.hmrc.gov.uk/tools/vatpaymentsdeadline/index.htm <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. You cannot use this calculator if you make payments on account or use the annual accounting scheme <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</p>
+<p>Once you have calculated your VAT using the correct method, you need to submit your return and pay HMRC on time. The VAT payment deadline calculator is available on the HMRC website at gov.uk/vat-payment-deadlines <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. You cannot use this calculator if you make payments on account or use the annual accounting scheme <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</p>
 
 <p>Most businesses must keep digital VAT records and use software to submit VAT Returns <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. This is part of HMRC's Making Tax Digital (MTD) for VAT programme, which is already mandatory for most VAT-registered businesses.</p>
 
@@ -120,6 +120,6 @@ imageCredit:
 <ol>
   <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/vat-retail-schemes/direct-calculation-scheme" rel="noopener noreferrer">VAT retail schemes: Direct Calculation Scheme - GOV.UK</a></li>
   <li id="ref-2"><strong>accaglobal.com</strong>: <a href="https://www.accaglobal.com/gb/en/technical-activities/technical-resources-search/2018/april/vat-partial-exemption.html" rel="noopener noreferrer">VAT partial exemption | ACCA Global</a></li>
-  <li id="ref-3"><strong>aka.hmrc.gov.uk</strong>: <a href="http://aka.hmrc.gov.uk/tools/vatpaymentsdeadline/index.htm" rel="noopener noreferrer">VAT payment deadline calculator - GOV.UK</a></li>
+  <li id="ref-3"><strong>gov.uk</strong>: <a href="https://www.gov.uk/vat-payment-deadlines" rel="noopener noreferrer">VAT payment deadline calculator - GOV.UK</a></li>
 </ol>
 

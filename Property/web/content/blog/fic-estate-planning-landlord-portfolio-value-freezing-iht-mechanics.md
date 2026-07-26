@@ -6,7 +6,7 @@ date: "2026-05-23"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "FIC Value-Freeze for IHT: A Strategic Frame for Landlords"
-metaDescription: "How the FIC value-freeze caps a portfolio landlord's IHT footprint: preference shares retained, growth shares gifted, 7-year PET clock removes future growth."
+metaDescription: "How the FIC value-freeze caps a portfolio landlord's IHT footprint: preference shares retained, growth shares gifted"
 altText: "A family discussing real estate documents at a table with an adviser, representing the multi-generational planning conversation behind a FIC value-freeze structure"
 image: "https://images.pexels.com/photos/8729980/pexels-photo-8729980.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

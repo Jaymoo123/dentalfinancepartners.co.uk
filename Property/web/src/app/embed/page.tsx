@@ -7,9 +7,9 @@ import { siteConfig } from "@/config/site";
 import { allTools } from "@/lib/calculators/registry";
 
 export const metadata: Metadata = {
-  title: "Embed Our Free Property Tax Calculators | Property Tax Partners",
+  title: "Embed Our Free Property Tax Calculators",
   description:
-    "Add our free, always-current UK property tax calculators to your own website. Stamp duty, Section 24, incorporation cost, MTD checker and portfolio profitability. One iframe, mobile-friendly, no cost.",
+    "Add our free UK property tax calculators to your website: stamp duty, Section 24, incorporation, MTD checker, portfolio yield. One iframe, no cost.",
   alternates: { canonical: `${siteConfig.url}/embed` },
   openGraph: {
     title: "Embed Our Free Property Tax Calculators",

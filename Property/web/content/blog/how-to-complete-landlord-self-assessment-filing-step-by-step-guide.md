@@ -6,7 +6,7 @@ date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Landlord Self Assessment 2025/26: SA105 Step-by-Step Guide"
-metaDescription: "File your landlord Self Assessment for 2025/26: SA105 walkthrough, deadlines, MTD for ITSA from 6 April 2026, Section 24, property allowance, and Form 17 split."
+metaDescription: "File your landlord Self Assessment for 2025/26: SA105 walkthrough, deadlines, MTD for ITSA from 6 April 2026, Section 24, property allowance"
 altText: "UK landlord completing self assessment tax return on laptop with property documents and calculator"
 image: ""
 h1: "How to File Landlord Self Assessment 2025/26 (SA105 Step-by-Step)"
@@ -75,7 +75,7 @@ faqs:
 </tbody>
 </table>
 
-<p>The 31 January deadline is the immovable one. The official HMRC reference is <a href="https://www.gov.uk/self-assessment-tax-returns/deadlines" rel="external nofollow" target="_blank">gov.uk/self-assessment-tax-returns/deadlines</a>. Late filing penalties under FA 2009 Sch 55 start at £100 fixed (even if no tax is due), escalate to £10 a day after three months for up to 90 days, then 5% or £300 after six months, then another 5% or £300 after twelve months.</p>
+<p>The 31 January deadline is the immovable one. The official HMRC reference is <a href="https://www.gov.uk/self-assessment-tax-returns/deadlines" rel="external nofollow noopener" target="_blank">gov.uk/self-assessment-tax-returns/deadlines</a>. Late filing penalties under FA 2009 Sch 55 start at £100 fixed (even if no tax is due), escalate to £10 a day after three months for up to 90 days, then 5% or £300 after six months, then another 5% or £300 after twelve months.</p>
 
 <h2>Documents to Gather Before You Start</h2>
 
@@ -164,7 +164,7 @@ faqs:
 <h2>Online Filing: The HMRC Portal Step by Step</h2>
 
 <ol>
-<li>Sign in at <a href="https://www.gov.uk/log-in-file-self-assessment-tax-return" rel="external nofollow" target="_blank">gov.uk/log-in-file-self-assessment-tax-return</a> with your Government Gateway credentials. First-time filers register for SA using their UTR.</li>
+<li>Sign in at <a href="https://www.gov.uk/log-in-file-self-assessment-tax-return" rel="external nofollow noopener" target="_blank">gov.uk/log-in-file-self-assessment-tax-return</a> with your Government Gateway credentials. First-time filers register for SA using their UTR.</li>
 <li>Select "Tax return" for the 2025-26 tax year. Confirm your personal details.</li>
 <li>Tailor the return: tick "UK property income" to add the SA105 pages. Tick "Capital Gains" if you sold a property. Tick employment, pensions, dividends as applicable.</li>
 <li>Work through the SA105 pages section by section using the documents gathered above. The system auto-saves at each step.</li>
@@ -175,7 +175,7 @@ faqs:
 
 <h2>The MTD Transition for the 2026/27 Cycle</h2>
 
-<p>MTD for ITSA went live on 6 April 2026. The threshold for sole-trader landlords is £50,000 of qualifying income (gross trading plus gross property receipts). Threshold drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028. The official sign-up checker is at <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" rel="external nofollow" target="_blank">gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax</a>.</p>
+<p>MTD for ITSA went live on 6 April 2026. The threshold for sole-trader landlords is £50,000 of qualifying income (gross trading plus gross property receipts). Threshold drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028. The official sign-up checker is at <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" rel="external nofollow noopener" target="_blank">gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax</a>.</p>
 
 <p>What changes for landlords above the threshold from 6 April 2026:</p>
 
@@ -208,7 +208,7 @@ faqs:
 
 <h2>The 60-Day CGT Reporting on Property Disposals</h2>
 
-<p>If you sold a UK residential property in 2025/26 (or sell one in 2026/27), the CGT must be reported and paid <strong>within 60 days of completion</strong> through the <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax" rel="external nofollow" target="_blank">UK Property CGT service</a>. This is separate from the Self Assessment cycle. The disposal must also be entered on the SA108 Capital Gains pages of the year-end return, with the 60-day payment shown as tax already paid. Missing the 60-day deadline triggers Schedule 55 FA 2009 penalties from £100, rising to £300 after six months.</p>
+<p>If you sold a UK residential property in 2025/26 (or sell one in 2026/27), the CGT must be reported and paid <strong>within 60 days of completion</strong> through the <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax" rel="external nofollow noopener" target="_blank">UK Property CGT service</a>. This is separate from the Self Assessment cycle. The disposal must also be entered on the SA108 Capital Gains pages of the year-end return, with the 60-day payment shown as tax already paid. Missing the 60-day deadline triggers Schedule 55 FA 2009 penalties from £100, rising to £300 after six months.</p>
 
 <p>CGT rates on residential property for 2025/26 are 18% (basic-rate band remaining) and 24% (higher-rate band), unchanged from 30 October 2024 when the Autumn 2024 Budget cut the higher rate from 28%. The annual exempt amount is £3,000.</p>
 
@@ -237,7 +237,7 @@ faqs:
 <li>HMRC enquiry or compliance check open or recently closed.</li>
 </ul>
 
-<p>The official HMRC SA105 notes are at <a href="https://www.gov.uk/government/publications/self-assessment-uk-property-sa105" rel="external nofollow" target="_blank">gov.uk/government/publications/self-assessment-uk-property-sa105</a>.</p>
+<p>The official HMRC SA105 notes are at <a href="https://www.gov.uk/government/publications/self-assessment-uk-property-sa105" rel="external nofollow noopener" target="_blank">gov.uk/government/publications/self-assessment-uk-property-sa105</a>.</p>
 
 <h2>Related Reading</h2>
 

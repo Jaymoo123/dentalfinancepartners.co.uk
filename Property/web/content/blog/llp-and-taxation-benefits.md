@@ -8,7 +8,7 @@ category: "Incorporation & Company Structures"
 metaTitle: "LLP Tax Benefits 2026/27: Section 24, Sch 15, BPR Frame"
 metaDescription: "LLP tax benefits for UK property: what holds (Sch 15 SLP, CGT AEA), what fails (Section 24, corporate-member workaround, BPR for landlord LLPs)."
 altText: "Two property co-owners reviewing an LLP agreement and tax computations at a table, illustrating the honest decision frame for limited-liability-partnership choice"
-image: "https://images.pexels.com/photos/7681104/pexels-photo-7681104.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/7681104/pexels-photo-7681104.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Mikhail Nilov"
   photographer_url: "https://www.pexels.com/@mikhail-nilov"

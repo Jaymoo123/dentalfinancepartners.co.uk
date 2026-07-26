@@ -6,7 +6,7 @@ date: '2026-05-20'
 author: Property Tax Partners Editorial Team
 category: Section 24 & Tax Relief
 metaTitle: 'Can Landlords Claim the Annual Investment Allowance?'
-metaDescription: "Most residential landlords cannot claim the annual investment allowance on dwelling plant (CAA 2001 s.35). See the three exceptions and what to claim instead."
+metaDescription: "Most residential landlords cannot claim the annual investment allowance on dwelling plant (CAA 2001 s.35)."
 altText: "A UK landlord reviewing a capital allowances claim against property records with a calculator on a desk"
 image: https://images.pexels.com/photos/30139610/pexels-photo-30139610.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'Annual Investment Allowance for UK Landlords: Who Can Actually Claim It'

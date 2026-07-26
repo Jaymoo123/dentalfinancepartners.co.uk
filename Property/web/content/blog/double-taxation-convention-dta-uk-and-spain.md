@@ -8,7 +8,7 @@ category: "Non-Resident Landlord Tax"
 metaTitle: "UK-Spain DTA: Spanish Landlord UK Property Guide"
 metaDescription: "2013 UK-Spain Convention: source-state taxing rights, NRL withholding, NRCGT, ATED, wealth-tax asymmetry, MLI PPT, s.10A trap, FIG, LTR IHT."
 altText: "Coastal architecture in Finestrat, Spain, evoking the UK-Spain Double Taxation Convention context for cross-border landlords with property in either jurisdiction"
-image: "https://images.pexels.com/photos/13114929/pexels-photo-13114929.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/13114929/pexels-photo-13114929.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Emilio Sanchez Hernandez
   photographer_url: https://www.pexels.com/@emilio-sanchez-hernandez-285921208

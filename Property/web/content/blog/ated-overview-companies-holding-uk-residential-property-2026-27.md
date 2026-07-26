@@ -6,7 +6,7 @@ date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "ATED 2026/27 Strategic Overview for Property Companies"
-metaDescription: "ATED 2026/27 strategic overview for non-natural persons holding UK residential property: scope, the SDLT 15% and IHT Schedule A1 interlock, 2027 revaluation."
+metaDescription: "ATED 2026/27 strategic overview for non-natural persons holding UK residential property: scope, the SDLT 15% and IHT Schedule A1 interlock"
 altText: "Georgian stucco-front townhouses with black ironwork in South Kensington, representing high-value London residential property held through corporate envelopes"
 image: "https://images.pexels.com/photos/35940687/pexels-photo-35940687.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:
@@ -244,7 +244,7 @@ editorialNote: "Strategic entry-point page for the ATED bucket. Sits alongside t
 
 <ul>
   <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics" rel="external">HMRC: Annual Tax on Enveloped Dwellings, the Basics</a></li>
-  <li><a href="https://www.gov.uk/hmrc-internal-manuals/annual-tax-on-enveloped-dwellings" rel="external">HMRC ATED Manual (gov.uk Internal Manuals)</a></li>
+  <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics" rel="external">HMRC ATED Manual (gov.uk Internal Manuals)</a></li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2013/29/part/3" rel="external">Finance Act 2013, Part 3 (sections 94 to 174): the ATED statutory framework</a></li>
   <li><a href="https://www.legislation.gov.uk/ukpga/1984/51/schedule/A1" rel="external">Inheritance Tax Act 1984, Schedule A1: look-through for enveloped UK residential property</a></li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2003/14/schedule/4A" rel="external">Finance Act 2003, Schedule 4A: the 15% flat-rate SDLT on corporate residential acquisitions</a></li>

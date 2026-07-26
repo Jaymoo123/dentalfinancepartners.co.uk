@@ -8,7 +8,7 @@ category: "Property Types & Specialist Tax"
 metaTitle: "SBA 3% Claim Mechanics 2026/27: CAA 2001 Part 2A Guide"
 metaDescription: "SBA at 3% over 33⅓ years under CAA 2001 Part 2A. The 29 October 2018 gate, allowance statement requirement, residential exclusion at s.270CF, TCGA s.37B."
 altText: "Corner view of a modern office building with reflective windows under a clear blue sky, illustrating the kind of post-29-October-2018 non-residential construction or acquisition that qualifies for Structures and Buildings Allowance"
-image: "https://images.pexels.com/photos/68631/pexels-photo-68631.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/68631/pexels-photo-68631.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "500photos.com"
   photographer_url: "https://www.pexels.com/@500photos-com-15338"

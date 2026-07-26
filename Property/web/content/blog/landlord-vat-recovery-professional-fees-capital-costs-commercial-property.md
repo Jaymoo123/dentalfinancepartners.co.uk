@@ -209,12 +209,12 @@ editorialNote: "Wave 8 Bucket C C10, landlord input-tax recovery framework (the 
 <h2>Authorities</h2>
 
 <ul>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/section/24" rel="external nofollow" target="_blank">VATA 1994 s.24 (input tax definition)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/section/26" rel="external nofollow" target="_blank">VATA 1994 s.26 (deduction of input tax)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/section/80" rel="external nofollow" target="_blank">VATA 1994 s.80 (4-year claim window architecture)</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/29" rel="external nofollow" target="_blank">SI 1995/2518 reg 29 (claims for input tax)</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/part/XV" rel="external nofollow" target="_blank">SI 1995/2518 Part XV (Capital Goods Scheme)</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-notice-700-the-vat-guide" rel="external nofollow" target="_blank">HMRC VAT Notice 700: The VAT Guide</a></li>
-<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-input-tax" rel="external nofollow" target="_blank">HMRC VAT Input Tax Manual (VIT)</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-notice-7062-capital-goods-scheme" rel="external nofollow" target="_blank">HMRC VAT Notice 706/2: Capital Goods Scheme</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/section/24" rel="external nofollow noopener" target="_blank">VATA 1994 s.24 (input tax definition)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/section/26" rel="external nofollow noopener" target="_blank">VATA 1994 s.26 (deduction of input tax)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/section/80" rel="external nofollow noopener" target="_blank">VATA 1994 s.80 (4-year claim window architecture)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/29" rel="external nofollow noopener" target="_blank">SI 1995/2518 reg 29 (claims for input tax)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/part/XV" rel="external nofollow noopener" target="_blank">SI 1995/2518 Part XV (Capital Goods Scheme)</a></li>
+<li><a href="https://www.gov.uk/government/publications/vat-notice-700-the-vat-guide" rel="external nofollow noopener" target="_blank">HMRC VAT Notice 700: The VAT Guide</a></li>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-input-tax" rel="external nofollow noopener" target="_blank">HMRC VAT Input Tax Manual (VIT)</a></li>
+<li><a href="https://www.gov.uk/government/publications/vat-notice-7062-capital-goods-scheme" rel="external nofollow noopener" target="_blank">HMRC VAT Notice 706/2: Capital Goods Scheme</a></li>
 </ul>

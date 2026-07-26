@@ -13,6 +13,7 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 import { MTDCountdown } from "@/components/property/MTDCountdown";
 import { ServiceTiers } from "@/components/property/ServiceTiers";
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
+import { locationHref } from "@/lib/locations";
 import { essentialGuides } from "@/lib/essential-guides";
 import { ArrowRight } from "lucide-react";
 
@@ -40,7 +41,7 @@ const PortfolioProfitabilityCalculator = dynamic(
 export const metadata: Metadata = {
   title: "Property Accountants UK | Specialist Landlord Tax Advice",
   description:
-    "Specialist property accountants for UK landlords and investors. Section 24, MTD, incorporation and CGT planning. Fixed fees, 24hr response, free calculators.",
+    "Specialist property accountants for UK landlords and investors. Section 24, MTD, incorporation and CGT planning. Fixed fees and free calculators.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
     title: `${siteConfig.name} | Property Accountants for UK Landlords`,
@@ -522,7 +523,7 @@ export default function HomePage() {
             {siteConfig.locations.map((loc) => (
               <Link
                 key={loc.slug}
-                href={`/locations/${loc.slug}`}
+                href={locationHref(loc.slug)}
                 className="bg-white border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-600 hover:text-emerald-700 transition-colors"
               >
                 {loc.title}

@@ -6,7 +6,7 @@ date: "2026-05-25"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "VAT Threshold £90k Landlords: Triggers + Group Registration"
-metaDescription: "VAT registration threshold £90k from 1 April 2024 (SI 2024/307); deregistration £88k; rolling-12-month vs 30-day forward-look triggers; ss.43-43D group VAT."
+metaDescription: "VAT registration threshold £90k from 1 April 2024 (SI 2024/307); deregistration £88k; rolling-12-month vs 30-day forward-look triggers"
 altText: "Close-up of a property accountant analysing financial documents using a calculator and pen, representative of the landlord VAT registration threshold calculation"
 image: "https://images.pexels.com/photos/33175651/pexels-photo-33175651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:
@@ -210,12 +210,12 @@ editorialNote: "Wave 8 Bucket C C9, VAT registration threshold + group registrat
 <h2>Authorities</h2>
 
 <ul>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/1" rel="external nofollow" target="_blank">VATA 1994 Sch 1 (registration framework, including para 1(1)(a) historic test and para 1(1)(b) forward-look test)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/section/43" rel="external nofollow" target="_blank">VATA 1994 ss.43 to 43D (group registration framework)</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/2024/307" rel="external nofollow" target="_blank">SI 2024/307 (Increase of Registration Limits Order 2024, substituting £90,000 / £88,000 from 1 April 2024)</a></li>
-<li><a href="https://www.gov.uk/vat-registration-thresholds" rel="external nofollow" target="_blank">gov.uk: VAT registration thresholds (current figures)</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-notice-700-1-should-i-be-registered-for-vat" rel="external nofollow" target="_blank">HMRC VAT Notice 700/1: Should I be registered for VAT?</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-notice-7002-group-and-divisional-registration" rel="external nofollow" target="_blank">HMRC VAT Notice 700/2: Group and divisional registration</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-application-for-vat-group-treatment" rel="external nofollow" target="_blank">Form VAT 50: Application for VAT group treatment</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-application-for-vat-group-treatment-company-details" rel="external nofollow" target="_blank">Form VAT 51: Application for VAT group treatment company details</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/1" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 1 (registration framework, including para 1(1)(a) historic test and para 1(1)(b) forward-look test)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/section/43" rel="external nofollow noopener" target="_blank">VATA 1994 ss.43 to 43D (group registration framework)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/2024/307" rel="external nofollow noopener" target="_blank">SI 2024/307 (Increase of Registration Limits Order 2024, substituting £90,000 / £88,000 from 1 April 2024)</a></li>
+<li><a href="https://www.gov.uk/vat-registration-thresholds" rel="external nofollow noopener" target="_blank">gov.uk: VAT registration thresholds (current figures)</a></li>
+<li><a href="https://www.gov.uk/government/publications/vat-notice-7001-should-i-be-registered-for-vat" rel="external nofollow noopener" target="_blank">HMRC VAT Notice 700/1: Should I be registered for VAT?</a></li>
+<li><a href="https://www.gov.uk/government/publications/vat-notice-7002-group-and-divisional-registration" rel="external nofollow noopener" target="_blank">HMRC VAT Notice 700/2: Group and divisional registration</a></li>
+<li><a href="https://www.gov.uk/government/publications/apply-for-vat-group-registration-or-amend-your-details" rel="external nofollow noopener" target="_blank">Form VAT 50: Application for VAT group treatment</a></li>
+<li><a href="https://www.gov.uk/government/publications/apply-for-vat-group-registration-or-amend-your-details" rel="external nofollow noopener" target="_blank">Form VAT 51: Application for VAT group treatment company details</a></li>
 </ul>

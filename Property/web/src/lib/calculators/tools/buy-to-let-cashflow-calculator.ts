@@ -9,7 +9,7 @@ export const buyToLetCashflowCalculator: GenericTool = {
   oneLiner: "Monthly and annual cashflow on a rental, from rent less mortgage and running costs.",
   metaTitle: "Buy-to-Let Cashflow Calculator | Monthly Rental Profit (UK)",
   metaDescription:
-    "Free buy-to-let cashflow calculator. Work out the monthly and annual cashflow on a rental property from rent, mortgage payment and running costs. Instant result.",
+    "Free buy-to-let cashflow calculator. Work out the monthly and annual cashflow on a rental property from rent, mortgage payment and running costs.",
   intro: "See the monthly and annual cashflow on a rental, from rent less the mortgage and running costs.",
   ctaLabel: "Make your portfolio more profitable →",
   embedHeight: 560,

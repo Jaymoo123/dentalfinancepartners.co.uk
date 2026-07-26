@@ -150,7 +150,7 @@ editorialNote: "Scenario-driven companion to the existing rental property relief
 <h2>Authority Sources</h2>
 
 <ul>
-  <li><a href="https://www.gov.uk/hmrc-internal-manuals/annual-tax-on-enveloped-dwellings" rel="external">HMRC ATED Manual (especially ATED20100 onwards on connected persons and the market-rent test)</a></li>
+  <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics" rel="external">HMRC ATED Manual (especially ATED20100 onwards on connected persons and the market-rent test)</a></li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2013/29/section/133" rel="external">Finance Act 2013, s.133 (Property Rental Business Relief)</a></li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2010/4/section/1122" rel="external">Corporation Tax Act 2010, s.1122 (connected persons)</a></li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2013/29/section/145" rel="external">Finance Act 2013, s.145 (Employee Accommodation Relief)</a></li>

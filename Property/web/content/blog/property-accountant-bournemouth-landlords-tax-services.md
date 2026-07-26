@@ -6,7 +6,7 @@ date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "Property Accountant Bournemouth 2026: BTL & Student-Let Tax"
-metaDescription: "Specialist BCP buy-to-let and HMO tax help for Bournemouth landlords: Section 24, the 5% SDLT surcharge, BCP additional licensing, MTD for ITSA at £50k, and incorporation."
+metaDescription: "Specialist BCP buy-to-let and HMO tax help for Bournemouth landlords: Section 24, the 5% SDLT surcharge, BCP additional licensing, MTD for ITSA at £50k"
 altText: "Bournemouth seafront property buildings with accountant calculator and tax documents"
 image: ""
 h1: "Property Accountant Bournemouth: BTL and Student-Let Tax for BCP Landlords 2026/27"
@@ -104,7 +104,7 @@ faqs:
 </tbody>
 </table>
 
-<p>Non-resident buyers (including UK-domiciled individuals who have been outside the UK for 183 days or more in the 12 months preceding completion) add a further 2% on the whole price. Reference: <a href="https://www.gov.uk/stamp-duty-land-tax/residential-property-rates" rel="external nofollow" target="_blank">SDLT residential property rates</a>.</p>
+<p>Non-resident buyers (including UK-domiciled individuals who have been outside the UK for 183 days or more in the 12 months preceding completion) add a further 2% on the whole price. Reference: <a href="https://www.gov.uk/stamp-duty-land-tax/residential-property-rates" rel="external nofollow noopener" target="_blank">SDLT residential property rates</a>.</p>
 
 <h2>BCP HMO Licensing and the Tax Treatment</h2>
 
@@ -124,7 +124,7 @@ faqs:
 <li>Penalties for unlicensed letting (unlimited fines under Housing Act 2004 s.72, rent repayment orders up to 2 years under Housing and Planning Act 2016, extended from 12 months by RRA 2025 s.98 in force 1 May 2026) are <strong>not deductible</strong>.</li>
 </ul>
 
-<p>The current BCP licensing map and scheme conditions are at <a href="https://www.bcpcouncil.gov.uk/Housing/Private-rented-housing/Houses-in-Multiple-Occupation-HMOs/Houses-in-Multiple-Occupation-HMOs.aspx" rel="external nofollow" target="_blank">bcpcouncil.gov.uk</a>.</p>
+<p>The current BCP licensing map and scheme conditions are at <a href="https://www.bcpcouncil.gov.uk/housing/houses-in-multiple-occupation-hmos" rel="external nofollow noopener" target="_blank">bcpcouncil.gov.uk</a>.</p>
 
 <h2>Student HMO Economics in Bournemouth</h2>
 
@@ -154,7 +154,7 @@ faqs:
 <li>Single-property landlord with one student HMO at £550/room × 4 rooms = £2,200/month is at £26,400 of gross qualifying income. Just below the £30,000 line for 2027, but above the £20,000 line for 2028.</li>
 </ul>
 
-<p>The sign-up checker is at <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" rel="external nofollow" target="_blank">gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax</a>. Limited-company structures are outside MTD for ITSA entirely.</p>
+<p>The sign-up checker is at <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" rel="external nofollow noopener" target="_blank">gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax</a>. Limited-company structures are outside MTD for ITSA entirely.</p>
 
 <h2>Capital Gains Tax on Bournemouth Disposals</h2>
 
@@ -162,7 +162,7 @@ faqs:
 
 <p>A worked example for a typical BCP disposal: a higher-rate landlord disposes of a £250k-bought, £400k-sold Winton flat in 2026/27, after £8,000 of qualifying improvements and £5,000 of disposal costs. The gain is £137,000. After the £3,000 AEA, the taxable amount is £134,000 at 24% = £32,160.</p>
 
-<p>The disposal must be reported and tax paid <strong>within 60 days of completion</strong> through the <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax" rel="external nofollow" target="_blank">UK Property CGT service</a> (TCGA 1992 Sch 2 para 6). The 60-day clock is the single most-missed BCP deadline we see. Late filing penalties start at £100, rise to £300 after six months, and continue with daily penalties in egregious cases.</p>
+<p>The disposal must be reported and tax paid <strong>within 60 days of completion</strong> through the <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax" rel="external nofollow noopener" target="_blank">UK Property CGT service</a> (TCGA 1992 Sch 2 para 6). The 60-day clock is the single most-missed BCP deadline we see. Late filing penalties start at £100, rise to £300 after six months, and continue with daily penalties in egregious cases.</p>
 
 <aside>
 <p>About to exchange on a BCP buy-to-let sale?</p>
@@ -179,7 +179,7 @@ faqs:
 <li><strong>Mixed</strong>: a partial improvement element in a repair (e.g. replacing a single-glazed timber window with double-glazed timber) may need apportionment.</li>
 </ul>
 
-<p>The HMRC reference is the <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2020" rel="external nofollow" target="_blank">Property Income Manual at PIM2020</a>.</p>
+<p>The HMRC reference is the <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2020" rel="external nofollow noopener" target="_blank">Property Income Manual at PIM2020</a>.</p>
 
 <h2>Incorporation Maths for a BCP Portfolio</h2>
 

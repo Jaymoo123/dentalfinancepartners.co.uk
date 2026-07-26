@@ -10,7 +10,7 @@ import { buildCalculatorJsonLd } from "@/lib/calculator-schema";
 export const metadata: Metadata = {
   title: "Making Tax Digital (MTD) Checker | Do Landlords Need to Comply?",
   description:
-    "Free MTD for Income Tax checker for UK landlords. Enter your rental and self-employment income to see whether you must comply with Making Tax Digital and from which April. Current thresholds.",
+    "Free MTD for Income Tax checker for UK landlords. Enter rental and self-employment income to see if you must comply with Making Tax Digital, and when.",
   alternates: { canonical: `${siteConfig.url}/calculators/mtd-checker` },
   openGraph: {
     title: "Making Tax Digital (MTD) Checker for Landlords",

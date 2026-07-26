@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
 import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
 import { allTools } from "@/lib/calculators/registry";
+import { LOCATION_TO_BLOG } from "@/lib/locations";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
@@ -40,6 +41,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   for (const loc of siteConfig.locations) {
+    // Skip slugs that 301 to a blog post (already emitted in the posts loop) so
+    // the sitemap lists only 200 canonicals.
+    if (LOCATION_TO_BLOG[loc.slug]) continue;
     const url = `${base}/locations/${loc.slug}`;
     entries.push({
       url,

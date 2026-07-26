@@ -8,7 +8,7 @@ category: "Making Tax Digital (MTD)"
 metaTitle: "MTD ITSA Foreign Property Income: Quarterly Reporting"
 metaDescription: "Foreign rental income runs through MTD ITSA quarterly cycle. SA106 mapping, FX translation, foreign tax credit at final declaration, NRL interaction."
 altText: "Mediterranean-style residential buildings and palm trees, representing UK-resident landlords' overseas rental property"
-image: "https://images.pexels.com/photos/30820136/pexels-photo-30820136.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/30820136/pexels-photo-30820136.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Marian Florinel Condruz
   photographer_url: https://www.pexels.com/@gottapics

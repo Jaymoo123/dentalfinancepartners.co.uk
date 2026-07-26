@@ -9,7 +9,7 @@ const partner = siteConfig.partner;
 
 export const metadata: Metadata = {
   title: "Privacy policy",
-  description: `How ${company.legalName} (trading as ${siteConfig.name}) collects and uses personal data on this website. UK GDPR and Data Protection Act 2018 compliant.`,
+  description: `How ${company.legalName} (trading as ${siteConfig.name}) collects and uses personal data. UK GDPR and Data Protection Act 2018 compliant.`,
   alternates: { canonical: `${siteConfig.url}/privacy-policy` },
   openGraph: {
     title: `Privacy Policy | ${siteConfig.name}`,

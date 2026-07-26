@@ -11,7 +11,7 @@ export const lttCalculator: GenericTool = {
     "Land Transaction Tax for Wales, including the higher rates for buy-to-lets and second homes.",
   metaTitle: "LTT Calculator Wales | Land Transaction Tax (2026/27)",
   metaDescription:
-    "Free LTT calculator for Wales. Work out Land Transaction Tax on a property purchase, including the higher residential rates for buy-to-lets and second homes. Current 2026/27 bands.",
+    "Free LTT calculator for Wales covering Land Transaction Tax, including the higher residential rates for buy-to-lets and second homes. 2026/27 bands.",
   intro:
     "Work out the Land Transaction Tax on a Welsh property purchase, including the higher rates for additional properties.",
   ctaLabel: "Buying in Wales? We'll handle the tax →",

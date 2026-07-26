@@ -8,7 +8,7 @@ category: "Property Types and Specialist Tax"
 metaTitle: "5% SDLT Surcharge Refund: Six Routes and Their Deadlines"
 metaDescription: "Decision tree across six refund routes for the 5% SDLT surcharge: replacement, Bewley, dwelling-count, mixed-use, s.116(7), rate-transition."
 altText: "Stack of pound coins on a UK SDLT tax form, illustrating the additional dwellings surcharge that may be recoverable through one of six statutory refund routes"
-image: "https://images.pexels.com/photos/4386371/pexels-photo-4386371.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/4386371/pexels-photo-4386371.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Cottonbro studio"
   photographer_url: "https://www.pexels.com/@cottonbro"

@@ -10,7 +10,7 @@ import { buildCalculatorJsonLd } from "@/lib/calculator-schema";
 export const metadata: Metadata = {
   title: "Section 24 Tax Calculator | Mortgage Interest Relief Impact (UK)",
   description:
-    "Free Section 24 calculator for UK landlords. See how much extra income tax the mortgage-interest relief restriction costs you, from your rent, mortgage interest and tax band. Instant result, 2026/27 rates.",
+    "Free Section 24 calculator for UK landlords. See the extra income tax the mortgage-interest relief restriction costs, from rent, interest and band.",
   alternates: { canonical: `${siteConfig.url}/calculators/section-24-calculator` },
   openGraph: {
     title: "Section 24 Tax Impact Calculator for UK Landlords",

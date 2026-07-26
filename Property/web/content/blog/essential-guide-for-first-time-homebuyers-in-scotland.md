@@ -8,7 +8,7 @@ category: "Landlord Tax Essentials"
 metaTitle: "First-Time Buyer Guide Scotland: LBTT, FTB Relief 2026/27"
 metaDescription: "Buying your first home in Scotland in 2026/27. LBTT versus SDLT, the £175,000 FTB nil band, the £600 max saving, ADS at 8%, the 30-day return."
 altText: "Edinburgh tenement street with for-sale boards, illustrating the first-time-buyer market in Scotland served by LBTT and the £175,000 FTB nil-band uplift"
-image: "https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Pixabay"
   photographer_url: "https://www.pexels.com/@pixabay"

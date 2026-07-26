@@ -11,7 +11,7 @@ export const lbttCalculator: GenericTool = {
     "Land and Buildings Transaction Tax for Scotland, including the 8% Additional Dwelling Supplement on second homes and buy-to-lets.",
   metaTitle: "LBTT Calculator Scotland | incl. 8% ADS (2026/27)",
   metaDescription:
-    "Free LBTT calculator for Scotland. Work out Land and Buildings Transaction Tax, including the 8% Additional Dwelling Supplement on buy-to-lets and second homes, and first-time-buyer relief.",
+    "Free LBTT calculator for Scotland covering Land and Buildings Transaction Tax, the 8% Additional Dwelling Supplement and first-time-buyer relief.",
   intro:
     "Work out the Land and Buildings Transaction Tax on a Scottish property purchase, including the 8% Additional Dwelling Supplement.",
   ctaLabel: "Buying in Scotland? We'll handle the tax →",

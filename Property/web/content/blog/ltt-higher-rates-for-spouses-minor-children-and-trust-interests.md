@@ -8,7 +8,7 @@ category: "Landlord Tax Essentials"
 metaTitle: "Welsh LTT Higher Rates: Spouse, Minor Child, Trust Attribution"
 metaDescription: "LTTA 2017 Sch 5 para 5 spouse aggregation, the minor-children divergence from SDLT Sch 4ZA para 12, bare-trust attribution, discretionary settlement rules."
 altText: "A Welsh family home being purchased by a buyer whose spouse separately owns a buy-to-let, illustrating the LTTA 2017 Schedule 5 paragraph 5 spousal aggregation that catches sole-name purchases for the Welsh higher-rates additional-dwellings test"
-image: "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Pixabay"
   photographer_url: "https://www.pexels.com/@pixabay"

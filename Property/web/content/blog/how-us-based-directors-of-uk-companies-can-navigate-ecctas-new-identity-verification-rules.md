@@ -259,10 +259,10 @@ editorialNote: "MW2 Bucket B B18: US-resident-director-specific operational walk
 <li><a href="https://www.legislation.gov.uk/ukpga/2006/46/contents" rel="nofollow">Companies Act 2006 (contents)</a></li>
 <li><a href="https://www.legislation.gov.uk/uksi/2017/692/contents" rel="nofollow">Money Laundering, Terrorist Financing and Transfer of Funds Regulations 2017 (SI 2017/692)</a></li>
 <li><a href="https://changestoukcompanylaw.campaign.gov.uk/" rel="nofollow">Companies House Changes to UK Company Law campaign page</a></li>
-<li><a href="https://www.gov.uk/guidance/authorised-corporate-service-providers" rel="nofollow">gov.uk Authorised Corporate Service Provider guidance</a></li>
+<li><a href="https://www.gov.uk/guidance/using-an-authorised-corporate-service-provider-acsp-to-verify-your-identity" rel="nofollow">gov.uk Authorised Corporate Service Provider guidance</a></li>
 <li><a href="https://find-and-update.company-information.service.gov.uk/" rel="nofollow">Companies House Find and update company information service</a></li>
 <li><a href="https://www.irs.gov/forms-pubs/about-form-5471" rel="nofollow">IRS Form 5471 (US-side parallel reporting)</a></li>
 <li><a href="https://www.fincen.gov/resources/filing-information" rel="nofollow">FinCEN Form 114 / FBAR (US-side)</a></li>
 <li><a href="https://www.irs.gov/forms-pubs/about-form-8938" rel="nofollow">IRS Form 8938 / FATCA (US-side)</a></li>
-<li><a href="https://www.gov.uk/government/publications/uk-us-double-taxation-convention-2001-protocol-not-in-force" rel="nofollow">UK/US Double Tax Treaty</a></li>
+<li><a href="https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force" rel="nofollow">UK/US Double Tax Treaty</a></li>
 </ul>

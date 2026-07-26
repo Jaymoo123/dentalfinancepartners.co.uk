@@ -8,7 +8,7 @@ category: "Non-Resident Landlord Tax"
 metaTitle: "CGT Rebasing FA 2025 Sch 11: Five Conditions, Narrow Scope"
 metaDescription: "FA 2025 Sch 11 CGT rebasing election: 5 April 2017 rebasing date but 5 cumulative conditions including UK-property exclusion; narrow eligibility."
 altText: "A magnifying glass over a calculator on a desk, representing the close eligibility analysis required for FA 2025 Schedule 11 CGT rebasing election where five cumulative conditions must all be met for a disposal to qualify"
-image: "https://images.pexels.com/photos/6863259/pexels-photo-6863259.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/6863259/pexels-photo-6863259.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Nataliya Vaitkevich
   photographer_url: https://www.pexels.com/@n-voitkevich

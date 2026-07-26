@@ -8,7 +8,7 @@ category: "Incorporation & Company Structures"
 metaTitle: "ATED and the 15% Flat-Rate SDLT: How They Interact"
 metaDescription: "Sch 4A FA 2003 imposes a 15% flat SDLT rate when a company buys a £500k+ dwelling. How the SDLT and ATED reliefs lock together, with worked examples."
 altText: "Traditional London mews houses with painted front doors, representing high-value residential property purchased through a corporate structure"
-image: "https://images.pexels.com/photos/18729447/pexels-photo-18729447.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/18729447/pexels-photo-18729447.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: AXP Photography
   photographer_url: https://www.pexels.com/@axp-photography-500641970

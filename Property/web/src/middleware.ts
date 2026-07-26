@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { LOCATION_TO_BLOG } from "@/lib/locations";
 
 const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
   "accountant-accounting-services": "property-accountant-services",
@@ -464,13 +465,6 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "report-property-sale-hmrc-60-days-guide": "/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026",
   // Track 2 Phase 3 REDIRECT bundle (2026-05-24) — B2-A3 single-page collapse to BTL CGT calculation canonical (Cannib Index §6 cross-source pair)
   "capital-gains-tax-selling-rental-property-uk": "/blog/capital-gains-tax/cgt-selling-buy-to-let-property-calculation-guide",
-};
-
-const LOCATION_TO_BLOG: Record<string, string> = {
-  "london": "/blog/property-accountant-services/london-property-accountant",
-  "manchester": "/blog/property-accountant-services/manchester-property-accountant",
-  "birmingham": "/blog/property-accountant-services/birmingham-property-accountant",
-  "bristol": "/blog/property-accountant-services/bristol-property-accountant",
 };
 
 export function middleware(request: NextRequest) {

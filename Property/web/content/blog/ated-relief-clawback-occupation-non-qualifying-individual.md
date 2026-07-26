@@ -186,7 +186,7 @@ editorialNote: "Clawback mechanics deep-dive. Sits alongside the claim-mechanics
 <h2>Authority Sources</h2>
 
 <ul>
-  <li><a href="https://www.gov.uk/hmrc-internal-manuals/annual-tax-on-enveloped-dwellings" rel="external">HMRC ATED Manual (especially ATED20100 onwards on non-qualifying individuals)</a></li>
+  <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics" rel="external">HMRC ATED Manual (especially ATED20100 onwards on non-qualifying individuals)</a></li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2013/29/section/133" rel="external">Finance Act 2013, s.133 (Property Rental Business Relief)</a></li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2013/29/part/3" rel="external">Finance Act 2013, Part 3 (including the look-back / look-forward provisions at ss.136 to 138)</a></li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2010/4/section/1122" rel="external">Corporation Tax Act 2010, s.1122 (connected persons)</a></li>

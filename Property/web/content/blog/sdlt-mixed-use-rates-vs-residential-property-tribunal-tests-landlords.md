@@ -8,7 +8,7 @@ category: "Property Types and Specialist Tax"
 metaTitle: "SDLT Mixed-Use Case-Law: Hyman, Suterwalla, Hortons Hall"
 metaDescription: "FA 2003 s.116(1)(b) grounds-and-gardens test for SDLT mixed-use claims: Hyman binding authority, Suterwalla effective-date refinement, HMRC enquiry."
 altText: "Aerial view of a UK country house and surrounding fields illustrating the SDLT residential-vs-mixed-use question that the Hyman, Suterwalla, and Hortons Hall tribunal decisions have shaped"
-image: "https://images.pexels.com/photos/8793460/pexels-photo-8793460.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/8793460/pexels-photo-8793460.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Ollie Craig"
   photographer_url: "https://www.pexels.com/@olliecraig1"
@@ -166,5 +166,5 @@ editorialNote: "Wave 9 net-new on the SDLT residential-vs-mixed-use rate line as
 <li><a href="/blog/incorporation-and-company-structures/sdlt-six-dwellings-non-residential-election">SDLT six-dwellings rule (FA 2003 section 116(7))</a> , the alternative statutory deeming route for portfolio acquisitions of six or more dwellings, surviving MDR abolition.</li>
 <li><a href="https://www.legislation.gov.uk/ukpga/2003/14/section/116">FA 2003 section 116</a> , the residential-property definition with the s.116(1)(a) suitable-for-use limb, the s.116(1)(b) garden-or-grounds limb, and the s.116(7) six-or-more-dwellings deeming.</li>
 <li><a href="https://www.legislation.gov.uk/ukpga/2003/14/section/55">FA 2003 section 55</a> , the SDLT rate-setting provision with Table A (residential) and Table B (non-residential).</li>
-<li><a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax/sdltm00370">HMRC SDLT Manual SDLTM00370</a> , HMRC's coverage of the residential-property definition under s.116; SDLTM00385 covers gardens and grounds specifically.</li>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm00365">HMRC SDLT Manual SDLTM00365</a> , HMRC's coverage of the residential-property definition under s.116; SDLTM00440 covers gardens and grounds specifically.</li>
 </ul>

@@ -8,7 +8,7 @@ category: "Making Tax Digital (MTD)"
 metaTitle: "MTD ITSA Exit Rule: Three-Year Below-Threshold Test"
 metaDescription: "Falling below the MTD threshold once does not remove you. The three-consecutive-tax-year test, the cessation route, notification, and re-entry mechanics."
 altText: "UK landlord at desk reviewing a small portfolio after partial property sale, considering exit from Making Tax Digital obligations"
-image: "https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Andrea Piacquadio
   photographer_url: https://www.pexels.com/@olly

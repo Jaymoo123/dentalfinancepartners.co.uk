@@ -162,7 +162,7 @@ faqs:
 <li>"Trust then loan" schemes that use trust nominal-ownership combined with a loanback structure.</li>
 </ul>
 
-<p>The donor can elect via Form <a href="https://www.gov.uk/government/publications/inheritance-tax-election-to-be-treated-as-domiciled-in-the-united-kingdom-iht500" rel="nofollow noopener" target="_blank">IHT500</a> to be treated as making a GROB instead of paying POAT. The election delivers the IHT outcome on death (asset back in estate at 40%) but removes the annual POAT charge during life. The election is useful where the donor expects to die within seven years and prefers the IHT outcome to an annual income-tax bill.</p>
+<p>The donor can elect via Form <a href="https://www.gov.uk/government/publications/inheritance-tax-election-for-inheritance-tax-to-apply-to-asset-previously-owned-iht500" rel="nofollow noopener" target="_blank">IHT500</a> to be treated as making a GROB instead of paying POAT. The election delivers the IHT outcome on death (asset back in estate at 40%) but removes the annual POAT charge during life. The election is useful where the donor expects to die within seven years and prefers the IHT outcome to an annual income-tax bill.</p>
 
 <aside>
 <p>POAT catches what GROB misses; the "workaround" landscape has been narrow since 2005.</p>

@@ -188,12 +188,12 @@ editorialNote: "Wave 8 Bucket C C3, TOGC option-matching depth on commercial pro
 <h2>Authorities</h2>
 
 <ul>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/1268/article/5" rel="external nofollow" target="_blank">SI 1995/1268 Article 5 (TOGC operative provision)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/section/49" rel="external nofollow" target="_blank">VATA 1994 s.49 (TOGC registration continuity)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10" rel="external nofollow" target="_blank">VATA 1994 Schedule 10 (option to tax framework)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/2003/14/section/51" rel="external nofollow" target="_blank">FA 2003 s.51 (SDLT chargeable consideration on VAT-inclusive supplies)</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-notice-700-9-transfer-of-business-as-a-going-concern" rel="external nofollow" target="_blank">HMRC VAT Notice 700/9: Transfer of a business as a going concern</a></li>
-<li><a href="https://www.gov.uk/guidance/opting-to-tax-land-and-buildings-notice-742a" rel="external nofollow" target="_blank">HMRC VAT Notice 742A: Opting to tax land and buildings</a></li>
-<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-transfer-of-going-concern" rel="external nofollow" target="_blank">HMRC VAT Transfer of Going Concern internal manual (VTOGC)</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-notification-of-an-option-to-tax-land-andor-buildings-vat1614a" rel="external nofollow" target="_blank">Form VAT1614A: Tell HMRC about an option to tax land and buildings</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/1268/article/5" rel="external nofollow noopener" target="_blank">SI 1995/1268 Article 5 (TOGC operative provision)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/section/49" rel="external nofollow noopener" target="_blank">VATA 1994 s.49 (TOGC registration continuity)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10" rel="external nofollow noopener" target="_blank">VATA 1994 Schedule 10 (option to tax framework)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/2003/14/section/51" rel="external nofollow noopener" target="_blank">FA 2003 s.51 (SDLT chargeable consideration on VAT-inclusive supplies)</a></li>
+<li><a href="https://www.gov.uk/guidance/transfer-a-business-as-a-going-concern-and-vat-notice-7009" rel="external nofollow noopener" target="_blank">HMRC VAT Notice 700/9: Transfer of a business as a going concern</a></li>
+<li><a href="https://www.gov.uk/guidance/opting-to-tax-land-and-buildings-notice-742a" rel="external nofollow noopener" target="_blank">HMRC VAT Notice 742A: Opting to tax land and buildings</a></li>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-transfer-of-a-going-concern" rel="external nofollow noopener" target="_blank">HMRC VAT Transfer of Going Concern internal manual (VTOGC)</a></li>
+<li><a href="https://www.gov.uk/government/publications/vat-notification-of-an-option-to-tax-land-andor-buildings-vat1614a" rel="external nofollow noopener" target="_blank">Form VAT1614A: Tell HMRC about an option to tax land and buildings</a></li>
 </ul>

@@ -8,8 +8,8 @@ const categoryName = "Property Accountant Services";
 const categorySlug = "property-accountant-services";
 
 export const metadata: Metadata = {
-  title: `${categoryName} | ${siteConfig.name}`,
-  description: `Find and compare specialist property accountants across the UK. Pricing guides, service comparisons, location-specific recommendations, and career insights.`,
+  title: `${categoryName}`,
+  description: "Find and compare specialist property accountants across the UK. Pricing guides, service comparisons, location recommendations and career insights.",
   alternates: {
     canonical: `${siteConfig.url}/blog/${categorySlug}`,
   },

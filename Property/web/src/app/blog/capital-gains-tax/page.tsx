@@ -8,7 +8,7 @@ const categoryName = "Capital Gains Tax";
 const categorySlug = "capital-gains-tax";
 
 export const metadata: Metadata = {
-  title: `${categoryName} for Property Investors | ${siteConfig.name}`,
+  title: `${categoryName} for Property Investors`,
   description: `Expert guidance on ${categoryName.toLowerCase()} for UK property investors. Practical advice, tax planning strategies, and compliance insights.`,
   alternates: {
     canonical: `${siteConfig.url}/blog/${categorySlug}`,

@@ -6,8 +6,8 @@ import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: `Contact ${siteConfig.name} | Book Free Consultation`,
-  description: `Contact ${siteConfig.name} for landlord accounting enquiries. Section 24, MTD, incorporation, portfolio management. 24-hour response via our enquiry form.`,
+  title: `Contact Us | Book Free Consultation`,
+  description: `Contact ${siteConfig.name} for landlord accounting enquiries: Section 24, MTD, incorporation, portfolio management. 24-hour response via our form.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
     title: `Contact ${siteConfig.name}`,

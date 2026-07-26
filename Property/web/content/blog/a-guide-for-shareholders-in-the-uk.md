@@ -8,7 +8,7 @@ category: "Incorporation & Company Structures"
 metaTitle: "Shareholder Guide UK 2026/27: Rights, Dividend Tax, Gifts"
 metaDescription: "Shareholder rights, dividend tax (10.75/35.75/39.35%), alphabet shares, settlements legislation, share gifts and IHT for UK property company shareholders."
 altText: "Shareholder certificate and dividend voucher on a wooden desk, representing the legal and tax framework for shareholders in UK property companies"
-image: "https://images.pexels.com/photos/6863259/pexels-photo-6863259.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/6863259/pexels-photo-6863259.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Nataliya Vaitkevich"
   photographer_url: "https://www.pexels.com/@n-voitkevich"

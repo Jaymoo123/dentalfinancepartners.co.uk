@@ -9,7 +9,7 @@ import { allTools } from "@/lib/calculators/registry";
 export const metadata: Metadata = {
   title: "Free Property Tax Calculators | SDLT, CGT, Section 24, Incorporation & MTD",
   description:
-    "Free calculators and tools for UK landlords: stamp duty (incl. buy-to-let surcharge), capital gains tax, Section 24 impact, incorporation cost & break-even, MTD checker, portfolio profitability. Current 2026/27 rates.",
+    "Free tools for UK landlords: stamp duty (incl. buy-to-let surcharge), capital gains tax, Section 24, incorporation cost, MTD checker and portfolio yield.",
   alternates: { canonical: `${siteConfig.url}/calculators` },
   openGraph: {
     title: "Free Property Tax Calculators for UK Landlords",

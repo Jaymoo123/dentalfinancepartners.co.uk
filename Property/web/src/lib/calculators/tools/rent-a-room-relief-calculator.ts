@@ -13,7 +13,7 @@ export const rentARoomReliefCalculator: GenericTool = {
     "Tax on letting a furnished room in your own home, comparing the £7,500 rent-a-room scheme with the normal basis.",
   metaTitle: "Rent-a-Room Relief Calculator | £7,500 Allowance (UK 2026/27)",
   metaDescription:
-    "Free rent-a-room relief calculator. Compare the £7,500 rent-a-room scheme with the normal expenses basis on income from letting a furnished room in your own home. Instant result.",
+    "Free rent-a-room relief calculator. Compare the £7,500 rent-a-room scheme with the expenses basis on income from letting a furnished room in your home.",
   intro:
     "See the tax on letting a furnished room in your home, comparing the £7,500 rent-a-room scheme with the normal basis.",
   ctaLabel: "Letting a room? Get it right →",

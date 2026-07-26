@@ -6,9 +6,9 @@ date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Non-Resident Landlord Tax"
 metaTitle: "UK-US Tax Treaty for Property: The Saving Clause"
-metaDescription: "How the UK-US treaty saving clause keeps US citizens taxed worldwide on UK property, plus foreign tax credit on Form 1116, NRCGT, FBAR, and state-tax traps."
+metaDescription: "How the UK-US treaty saving clause keeps US citizens taxed worldwide on UK property, plus foreign tax credit on Form 1116, NRCGT, FBAR"
 altText: "Boston skyline with American flag, representing the US tax claim that follows US citizens to the UK regardless of treaty residence"
-image: "https://images.pexels.com/photos/31127376/pexels-photo-31127376.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/31127376/pexels-photo-31127376.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Dominik Gryzbon
   photographer_url: https://www.pexels.com/@gryziu

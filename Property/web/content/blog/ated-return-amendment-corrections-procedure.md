@@ -8,7 +8,7 @@ category: "Incorporation & Company Structures"
 metaTitle: "ATED Return Amendments: Procedure, Window, and Forms"
 metaDescription: "Amend a filed ATED return: the 12-month window, online vs paper Form ATED51, evidence to attach, overpayment relief beyond the window, FA 2009 Sch 55 risk."
 altText: "Desk with paperwork and a laptop representing a corporate tax adviser preparing an amended ATED return submission to HMRC"
-image: "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Pixabay
   photographer_url: https://www.pexels.com/@pixabay
@@ -168,7 +168,7 @@ editorialNote: "Procedural deep-dive on ATED amendments. Sits alongside the pill
 
 <ul>
   <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-returns" rel="external">HMRC: ATED Returns Guidance</a></li>
-  <li><a href="https://www.gov.uk/hmrc-internal-manuals/annual-tax-on-enveloped-dwellings" rel="external">HMRC ATED Manual (especially ATED41200 onwards on amendments)</a></li>
+  <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics" rel="external">HMRC ATED Manual (especially ATED41200 onwards on amendments)</a></li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2013/29/part/3" rel="external">Finance Act 2013, Part 3 (ATED statutory framework, including amendment provisions)</a></li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2009/10/schedule/24" rel="external">Finance Act 2009, Schedule 24 (inaccuracy penalties)</a></li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2009/10/schedule/55" rel="external">Finance Act 2009, Schedule 55 (failure-to-make-returns penalties)</a></li>

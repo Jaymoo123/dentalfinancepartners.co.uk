@@ -8,7 +8,7 @@ category: "Incorporation & Company Structures"
 metaTitle: "ATED Late-Filing Penalties: Cascade and Appeals Guide"
 metaDescription: "ATED late filing penalty cascade explained: £100 fixed, 5% tax-geared at 6 and 12 months, daily penalties, reasonable excuse appeals, the £15,700 trap."
 altText: "A UK government envelope on a wooden floor, representing an HMRC ATED penalty notice"
-image: "https://images.pexels.com/photos/4237460/pexels-photo-4237460.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/4237460/pexels-photo-4237460.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Emily Wilkinson
   photographer_url: https://www.pexels.com/@ewilko

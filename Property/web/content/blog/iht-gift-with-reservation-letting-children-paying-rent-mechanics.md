@@ -8,7 +8,7 @@ category: "Landlord Tax Essentials"
 metaTitle: "GROB on Gifted Let Property: The Cash-Flow Test"
 metaDescription: "Gifting a BTL to your children can still leave it in your estate if you keep any rent, stay on the mortgage, or manage. The s.102 FA 1986 cash-flow test."
 altText: "Quaint English brick family home in Farnham, the kind of UK buy-to-let property typically gifted between generations"
-image: "https://images.pexels.com/photos/14078226/pexels-photo-14078226.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/14078226/pexels-photo-14078226.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Ryan Collis
   photographer_url: https://www.pexels.com/@ryan-collis-179324118

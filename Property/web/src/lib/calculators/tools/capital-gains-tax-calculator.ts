@@ -11,7 +11,7 @@ export const capitalGainsTaxCalculator: GenericTool = {
     "Estimate the CGT on selling a buy-to-let or second property, at 18% / 24% with the £3,000 allowance.",
   metaTitle: "Capital Gains Tax Calculator (Property) | 18% / 24% (UK 2026/27)",
   metaDescription:
-    "Free CGT calculator for UK property. Estimate Capital Gains Tax on selling a buy-to-let or second home, with the £3,000 allowance, 18% / 24% rates and the 60-day rule. Instant result.",
+    "Free CGT calculator for UK property. Estimate Capital Gains Tax on a buy-to-let or second home, with the £3,000 allowance, 18%/24% rates and 60-day rule.",
   intro:
     "Estimate the Capital Gains Tax on selling a residential investment property, based on your gain and your other income.",
   ctaLabel: "Selling a property? We'll handle the CGT →",

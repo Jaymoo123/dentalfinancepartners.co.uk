@@ -209,7 +209,7 @@ editorialNote: "MW2 Bucket B B15: definitional pillar on-ramp for the bare query
 <li><a href="https://www.legislation.gov.uk/uksi/2015/962/contents" rel="nofollow">Energy Efficiency (Private Rented Property) (England and Wales) Regulations 2015 (SI 2015/962)</a></li>
 <li><a href="https://www.gov.uk/find-energy-certificate" rel="nofollow">Energy Performance of Buildings Register (gov.uk find an EPC)</a></li>
 <li><a href="https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance" rel="nofollow">DESNZ domestic MEES landlord guidance</a></li>
-<li><a href="https://www.gov.uk/prs-exemption-register" rel="nofollow">PRS Exemptions Register</a></li>
+<li><a href="https://www.gov.uk/register-prs-energy-standard-exemption" rel="nofollow">PRS Exemptions Register</a></li>
 <li><a href="https://www.gov.uk/apply-boiler-upgrade-scheme" rel="nofollow">Boiler Upgrade Scheme (BUS)</a></li>
 <li><a href="https://www.gov.uk/energy-company-obligation" rel="nofollow">Energy Company Obligation (ECO4) and GBIS</a></li>
 <li><a href="https://www.legislation.gov.uk/ukpga/2005/5/section/272" rel="nofollow">ITTOIA 2005 s.272 (general allowable expenses)</a></li>

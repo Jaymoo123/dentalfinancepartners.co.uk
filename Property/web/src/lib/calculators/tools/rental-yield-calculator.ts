@@ -9,7 +9,7 @@ export const rentalYieldCalculator: GenericTool = {
   oneLiner: "Gross and net rental yield, and monthly net income, from a property's value, rent and costs.",
   metaTitle: "Rental Yield Calculator (Gross & Net) | UK Buy-to-Let",
   metaDescription:
-    "Free rental yield calculator for UK buy-to-let. Work out gross and net yield and monthly net income from a property's value, annual rent and running costs. Instant result.",
+    "Free rental yield calculator for UK buy-to-let. Work out gross and net yield and monthly net income from a property value, annual rent and running costs.",
   intro: "Work out the gross and net yield on a rental property from its value, annual rent and running costs.",
   ctaLabel: "Reviewing a property deal? Talk to us →",
   embedHeight: 560,

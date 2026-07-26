@@ -6,9 +6,9 @@ date: "2026-05-25"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Conversion VAT 5%: Sch 7A Group 6 Reduced Rate Mechanics"
-metaDescription: "Commercial-to-residential conversion VAT: Sch 7A Group 6 5% reduced rate, qualifying services definition, developer onward-recovery via zero-rated first sale."
+metaDescription: "Commercial-to-residential conversion VAT: Sch 7A Group 6 5% reduced rate, qualifying services definition"
 altText: "A vintage industrial interior with exposed pipes, brick walls, and metal staircases, representing a commercial building mid-conversion to residential use"
-image: "https://images.pexels.com/photos/30335246/pexels-photo-30335246.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/30335246/pexels-photo-30335246.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Sami TÜRK"
   photographer_url: "https://www.pexels.com/@trksami"
@@ -202,11 +202,11 @@ editorialNote: "Wave 8 Bucket C C6, commercial-to-residential 5% reduced-rate de
 <h2>Authorities</h2>
 
 <ul>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/section/29A" rel="external nofollow" target="_blank">VATA 1994 s.29A (reduced-rate operative provision)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/7A" rel="external nofollow" target="_blank">VATA 1994 Sch 7A (reduced-rate supply categories, including Group 6 Residential conversions and Group 7 Residential renovations and alterations)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/8" rel="external nofollow" target="_blank">VATA 1994 Sch 8 Group 5 (zero-rated construction of dwellings)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/9" rel="external nofollow" target="_blank">VATA 1994 Sch 9 Group 1 (exempt land supplies)</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/part/XV" rel="external nofollow" target="_blank">SI 1995/2518 Part XV (Capital Goods Scheme)</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-notice-708-buildings-and-construction" rel="external nofollow" target="_blank">HMRC VAT Notice 708: Buildings and construction</a></li>
-<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-construction" rel="external nofollow" target="_blank">HMRC VAT Construction internal manual (VCONST)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/section/29A" rel="external nofollow noopener" target="_blank">VATA 1994 s.29A (reduced-rate operative provision)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/7A" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 7A (reduced-rate supply categories, including Group 6 Residential conversions and Group 7 Residential renovations and alterations)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/8" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 8 Group 5 (zero-rated construction of dwellings)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/9" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 9 Group 1 (exempt land supplies)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/part/XV" rel="external nofollow noopener" target="_blank">SI 1995/2518 Part XV (Capital Goods Scheme)</a></li>
+<li><a href="https://www.gov.uk/government/publications/vat-notice-708-buildings-and-construction" rel="external nofollow noopener" target="_blank">HMRC VAT Notice 708: Buildings and construction</a></li>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-construction" rel="external nofollow noopener" target="_blank">HMRC VAT Construction internal manual (VCONST)</a></li>
 </ul>

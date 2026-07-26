@@ -213,7 +213,7 @@ editorialNote: "Rates-level reference for ATED 2026/27: worked examples by band,
 <ul>
   <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics" rel="external">HMRC: Annual Tax on Enveloped Dwellings, the Basics</a> (current-year band table, gov.uk)</li>
   <li><a href="https://www.gov.uk/government/publications/annual-tax-on-enveloped-dwellings-technical-guidance" rel="external">HMRC ATED Technical Guidance</a> (CPI indexation mechanic and November publication of next-year figures)</li>
-  <li><a href="https://www.gov.uk/hmrc-internal-manuals/annual-tax-on-enveloped-dwellings" rel="external">HMRC ATED Manual (gov.uk Internal Manuals)</a></li>
+  <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics" rel="external">HMRC ATED Manual (gov.uk Internal Manuals)</a></li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2013/29/part/3" rel="external">Finance Act 2013, Part 3 (ss.94 to 174): the ATED statutory framework</a></li>
   <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-returns" rel="external">HMRC: ATED Returns Guidance</a> (return deadlines, 30-day and 90-day rules)</li>
 </ul>

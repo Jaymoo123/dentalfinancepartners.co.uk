@@ -10,7 +10,7 @@ import snapshot from "@/data/landlord-tax-index.json";
 const lti = snapshot as unknown as LandlordIndexSnapshot;
 
 export const metadata: Metadata = {
-  title: "Property tax research and data | Property Tax Partners",
+  title: "Property tax research and data",
   description:
     "Original, sourced data on UK property tax and the buy-to-let market, built from official open data. Free to read and cite.",
   alternates: { canonical: `${siteConfig.url}/research` },

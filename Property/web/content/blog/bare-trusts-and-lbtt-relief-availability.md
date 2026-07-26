@@ -8,7 +8,7 @@ category: "Landlord Tax Essentials"
 metaTitle: "Bare Trusts and LBTT: Relief Flows to the Beneficiary"
 metaDescription: "Sch 18 Part 3 look-through: the bare trustee acquires, but LBTT (and FTB, ADS, MDR reliefs) are tested on the beneficiary. Parent-for-child, nominee."
 altText: "Scottish family home being held under bare trust by a trustee for a beneficiary, illustrating the LBTT(S)A 2013 Sch 18 Part 3 look-through that runs the chargeable-person test through to the beneficiary"
-image: "https://images.pexels.com/photos/1370704/pexels-photo-1370704.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/1370704/pexels-photo-1370704.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Pixabay"
   photographer_url: "https://www.pexels.com/@pixabay"

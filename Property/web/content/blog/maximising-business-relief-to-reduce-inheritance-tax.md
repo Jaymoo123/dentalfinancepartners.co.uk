@@ -53,7 +53,7 @@ faqs:
 <li><strong>Per-deceased, not per-couple:</strong> no doubling between spouses. The spouse exemption transfers value, not the s.124D allowance.</li>
 </ul>
 
-<p>The GOV.UK announcement-stage summary published 30 October 2024 still cites £1,000,000 as of 2026-05-27 and was never updated post-enactment. The structural rules on that page (AIM carve-out, anti-forestalling, trust anti-fragmentation) remain accurate but the quantum is stale. The authoritative source is the enacted statute: cite <a href="https://www.legislation.gov.uk/ukpga/1984/51/section/124D" rel="nofollow noopener" target="_blank">IHTA 1984 s.124D</a> direct, or <a href="https://www.legislation.gov.uk/ukpga/2026/12/schedule/12" rel="nofollow noopener" target="_blank">FA 2026 Sch 12 para 4</a>.</p>
+<p>The GOV.UK announcement-stage summary published 30 October 2024 still cites £1,000,000 as of 2026-05-27 and was never updated post-enactment. The structural rules on that page (AIM carve-out, anti-forestalling, trust anti-fragmentation) remain accurate but the quantum is stale. The authoritative source is the enacted statute: cite <a href="https://www.legislation.gov.uk/ukpga/1984/51/section/124D" rel="nofollow noopener" target="_blank">IHTA 1984 s.124D</a> direct, or FA 2026 Sch 12 para 4.</p>
 
 <h3>AIM and the separate 50% sub-tier</h3>
 

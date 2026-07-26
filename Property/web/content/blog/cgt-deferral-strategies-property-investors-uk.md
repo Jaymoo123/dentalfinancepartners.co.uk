@@ -6,7 +6,7 @@ date: "2026-05-24"
 author: "Property Tax Partners Editorial Team"
 category: "Capital Gains Tax"
 metaTitle: "Defer CGT on Property UK 2026/27: EIS, s.152, s.165, s.162"
-metaDescription: "Defer CGT on UK property gains: EIS Sch 5B deferral, s.152 rollover, s.165 / s.260 holdover, s.162 incorporation. Statute spine, decision table, post-FHL trap."
+metaDescription: "Defer CGT on UK property gains: EIS Sch 5B deferral, s.152 rollover, s.165 / s.260 holdover, s.162 incorporation."
 metaTitle_prev: "CGT Deferral Strategies Property Investors UK 2026 Guide"
 metaDescription_prev: "Learn how UK property investors can legally defer capital gains tax using EIS, SEIS, rollover relief and other CGT deferral strategies. Expert tax guidance."
 altText: "UK property investor reviewing CGT deferral strategies documentation at desk with calculator and tax forms"
@@ -235,7 +235,7 @@ faqs:
 <li><a href="https://www.legislation.gov.uk/ukpga/1992/12/section/165">TCGA 1992 s.165</a>: holdover relief on gifts of business assets</li>
 <li><a href="https://www.legislation.gov.uk/ukpga/1992/12/section/260">TCGA 1992 s.260</a>: holdover relief on gifts that are IHT chargeable transfers</li>
 <li><a href="https://www.legislation.gov.uk/ukpga/1992/12/section/58">TCGA 1992 s.58</a>: no-gain-no-loss inter-spouse transfers</li>
-<li><a href="https://www.gov.uk/guidance/venture-capital-schemes-deferred-investments-using-eis-and-seis">gov.uk EIS / SEIS deferred investments guidance</a></li>
+<li><a href="https://www.gov.uk/guidance/venture-capital-schemes-tax-relief-for-investors">gov.uk EIS / SEIS deferred investments guidance</a></li>
 <li><a href="https://www.gov.uk/business-asset-rollover-relief">gov.uk Business Asset Rollover Relief</a></li>
 <li><a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT on UK property complete guide</a></li>
 <li><a href="/blog/capital-gains-tax/reduce-cgt-property-disposal-uk">Reduce CGT on property disposal: planning levers</a></li>

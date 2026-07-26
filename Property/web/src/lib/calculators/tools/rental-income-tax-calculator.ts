@@ -12,7 +12,7 @@ export const rentalIncomeTaxCalculator: GenericTool = {
     "The income tax on your rental profit, including the Section 24 mortgage-interest credit, and your take-home.",
   metaTitle: "Rental Income Tax Calculator (UK Landlords) | 2026/27",
   metaDescription:
-    "Free rental income tax calculator for UK landlords. Work out the income tax on your rental profit, including the Section 24 mortgage-interest restriction, and your take-home after tax.",
+    "Free rental income tax calculator for UK landlords. Work out income tax on rental profit, including the Section 24 restriction, and your take-home.",
   intro:
     "Work out the income tax on your rental profit, including the Section 24 mortgage-interest credit, and what you keep.",
   ctaLabel: "Want to pay less tax on your rentals? →",

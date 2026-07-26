@@ -6,7 +6,7 @@ date: '2026-05-21'
 author: Property Tax Partners Editorial Team
 category: Property Accountant Services
 metaTitle: "Property Accountant Nottingham 2026: BTL & HMO Tax"
-metaDescription: "Specialist Nottingham buy-to-let and HMO tax help: selective licensing across 12+ wards, Section 24, the 5% SDLT surcharge, MTD for ITSA at £50k, and UoN+NTU student-let economics."
+metaDescription: "Specialist Nottingham buy-to-let and HMO tax help: selective licensing across 12+ wards, Section 24, the 5% SDLT surcharge, MTD for ITSA at £50k"
 altText: Property accountant reviewing financial documents for Nottingham landlord in modern office setting
 image: ''
 h1: "Property Accountant Nottingham: BTL and HMO Tax for Landlords 2026/27"
@@ -83,7 +83,7 @@ faqs:
 <li>Wollaton East</li>
 </ul>
 
-<p>Application fees are typically in the £730-£890 range per property for the full five-year licence. Licence conditions include written tenancy agreements, fully working smoke alarms on every floor, a current EICR, annual gas safety certificate, written complaints procedure, reference and identification checks on tenants, and a duty to report serious tenant misconduct to the council. The official scheme page is at <a href="https://www.nottinghamcity.gov.uk/selectivelicensing" rel="external nofollow" target="_blank">nottinghamcity.gov.uk/selectivelicensing</a>.</p>
+<p>Application fees are typically in the £730-£890 range per property for the full five-year licence. Licence conditions include written tenancy agreements, fully working smoke alarms on every floor, a current EICR, annual gas safety certificate, written complaints procedure, reference and identification checks on tenants, and a duty to report serious tenant misconduct to the council. The official scheme page is at <a href="https://www.nottinghamcity.gov.uk/information-for-residents/housing/private-rented-accommodation/information-for-landlords/licensing-for-landlords/" rel="external nofollow noopener" target="_blank">nottinghamcity.gov.uk/selectivelicensing</a>.</p>
 
 <h3>Tax treatment</h3>
 
@@ -149,7 +149,7 @@ faqs:
 </tbody>
 </table>
 
-<p>Non-resident buyers add a further 2%. Reference: <a href="https://www.gov.uk/stamp-duty-land-tax/residential-property-rates" rel="external nofollow" target="_blank">gov.uk SDLT residential rates</a>.</p>
+<p>Non-resident buyers add a further 2%. Reference: <a href="https://www.gov.uk/stamp-duty-land-tax/residential-property-rates" rel="external nofollow noopener" target="_blank">gov.uk SDLT residential rates</a>.</p>
 
 <h2>Student-Let Economics: UoN and NTU</h2>
 
@@ -182,7 +182,7 @@ faqs:
 <li>Five-room student HMO in Lenton at £550/room: £33,000. Above £30,000 from 2027.</li>
 </ul>
 
-<p>Compliance involves MTD-compatible software (£100-£300 a year), four quarterly digital updates (due 7 August, 7 November, 7 February, 7 May), and a Final Declaration by 31 January after the tax year end. Limited company structures sit outside MTD for ITSA entirely. The HMRC sign-up checker is at <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" rel="external nofollow" target="_blank">gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax</a>.</p>
+<p>Compliance involves MTD-compatible software (£100-£300 a year), four quarterly digital updates (due 7 August, 7 November, 7 February, 7 May), and a Final Declaration by 31 January after the tax year end. Limited company structures sit outside MTD for ITSA entirely. The HMRC sign-up checker is at <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" rel="external nofollow noopener" target="_blank">gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax</a>.</p>
 
 <h2>CGT on Nottingham Disposals</h2>
 
@@ -190,7 +190,7 @@ faqs:
 
 <p>A typical worked Nottingham disposal: a higher-rate landlord disposes of a £130k-bought, £225k-sold Carrington flat in 2026/27, after £6,000 of qualifying improvements and £4,500 of disposal costs. The gain is £84,500. After the £3,000 AEA, the taxable amount is £81,500 at 24% = £19,560.</p>
 
-<p>The disposal must be reported and the tax paid <strong>within 60 days of completion</strong> through the <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax" rel="external nofollow" target="_blank">UK Property CGT service</a> (TCGA 1992 Sch 2 para 6). Late-filing penalties under FA 2009 Sch 55 start at £100 and rise. The 60-day rule applies regardless of whether you file Self Assessment in the rest of the year.</p>
+<p>The disposal must be reported and the tax paid <strong>within 60 days of completion</strong> through the <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax" rel="external nofollow noopener" target="_blank">UK Property CGT service</a> (TCGA 1992 Sch 2 para 6). Late-filing penalties under FA 2009 Sch 55 start at £100 and rise. The 60-day rule applies regardless of whether you file Self Assessment in the rest of the year.</p>
 
 <aside>
 <p>Selling a Nottingham buy-to-let?</p>

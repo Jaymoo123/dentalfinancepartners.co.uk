@@ -30,7 +30,7 @@ const HEADLINE_SENTENCE = decade
 
 export const metadata: Metadata = {
   title: "UK Landlord Tax Index | Limited-company incorporation trends",
-  description: `${HEADLINE_SENTENCE}. A quarterly, sourced index of buy-to-let limited-company incorporations (Companies House) set against UK house prices (Land Registry). Free data, updated ${monthLabel(meta.incorporations_settled_through ?? meta.incorporations_through)}.`,
+  description: `${HEADLINE_SENTENCE}. Quarterly index of BTL incorporations vs UK house prices, from official open data.`,
   alternates: { canonical: `${siteConfig.url}${PAGE_PATH}` },
   openGraph: {
     title: "UK Landlord Tax Index",

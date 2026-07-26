@@ -9,7 +9,7 @@ import { ServiceTiers } from "@/components/property/ServiceTiers";
 export const metadata: Metadata = {
   title: "Property Accountant Services UK | Specialist Tax Advice for Landlords",
   description:
-    "Specialist property accountant for UK landlords and investors. Section 24 planning, MTD compliance, incorporation analysis, portfolio reporting. Fixed fees, free consultation.",
+    "Specialist property accountant for UK landlords: Section 24 planning, MTD compliance, incorporation analysis and portfolio reporting. Fixed fees.",
   alternates: {
     canonical: `${siteConfig.url}/services`,
     languages: {

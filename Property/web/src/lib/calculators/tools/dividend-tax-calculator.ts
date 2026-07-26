@@ -11,7 +11,7 @@ export const dividendTaxCalculator: GenericTool = {
     "The tax on dividends drawn from your property company, with the £500 allowance and 10.75% / 35.75% / 39.35% rates.",
   metaTitle: "Dividend Tax Calculator | Property Company Dividends (UK 2026/27)",
   metaDescription:
-    "Free dividend tax calculator. Work out the tax on dividends from your property company, with the £500 dividend allowance and the 10.75%, 35.75% and 39.35% rates. 2026/27.",
+    "Free dividend tax calculator. Work out the tax on dividends from your property company, with the £500 allowance and the 10.75%, 35.75% and 39.35% rates.",
   intro:
     "Work out the tax on dividends you draw from your property company, on top of your other income.",
   ctaLabel: "Extracting profit tax-efficiently? Ask us →",

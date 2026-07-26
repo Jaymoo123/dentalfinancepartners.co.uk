@@ -8,7 +8,7 @@ category: "Property Types & Specialist Tax"
 metaTitle: "AIA £1m Cap for Property Investors: Group Allocation Rules"
 metaDescription: "CAA 2001 ss.51A-51N. AIA £1m permanent from 1 April 2023. Single cap shared across related companies under s.51E + s.51G. HoldCo + SPV allocation worked."
 altText: "Modern skyscrapers against a clear blue sky illustrating the kind of HoldCo plus property SPV corporate group whose Annual Investment Allowance entitlement is shared, not multiplied, across the related companies"
-image: "https://images.pexels.com/photos/358549/pexels-photo-358549.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/358549/pexels-photo-358549.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Pixabay"
   photographer_url: "https://www.pexels.com/@pixabay"

@@ -6,9 +6,9 @@ date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "April 2026 BPR/APR £2.5m Cap: Property Investor Impact"
-metaDescription: "The 6 April 2026 BPR/APR reform: £2.5m combined cap (IHTA 1984 s.124D), 50% above (effective 20% IHT), AIM 50% sub-tier. Who's affected, who isn't, what to do."
+metaDescription: "The 6 April 2026 BPR/APR reform: £2.5m combined cap (IHTA 1984 s.124D), 50% above (effective 20% IHT), AIM 50% sub-tier."
 altText: "Aerial view of UK farmland representing the agricultural and business property relief landscape under the April 2026 reform"
-image: "https://images.pexels.com/photos/8291490/pexels-photo-8291490.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/8291490/pexels-photo-8291490.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Altaf Shah
   photographer_url: https://www.pexels.com/@altaf-shah-3143825

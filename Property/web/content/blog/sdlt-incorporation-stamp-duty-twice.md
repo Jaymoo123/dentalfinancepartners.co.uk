@@ -6,7 +6,7 @@ date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "SDLT on Incorporation 2026: Do You Pay Stamp Duty Twice?"
-metaDescription: "Yes, transferring a BTL portfolio to your limited company is normally a chargeable SDLT event at market value with the 5% surcharge. Partnership route, worked figures, and the MDR abolition explained."
+metaDescription: "Yes, transferring a BTL portfolio to your limited company is normally a chargeable SDLT event at market value with the 5% surcharge."
 altText: "UK property documents and calculator showing SDLT incorporation calculations for landlords"
 image: ""
 h1: "SDLT on Incorporation: Do I Pay Stamp Duty Twice in 2026/27?"
@@ -70,7 +70,7 @@ faqs:
 
 <p>Multiple Dwellings Relief was a hugely popular incorporation tactic from 2011 to mid-2024. It calculated SDLT on the <em>average</em> price per dwelling rather than the total consideration, dramatically lowering the effective rate on a multi-property transfer. Finance (No.2) Act 2024 abolished MDR for any land transaction with an effective date on or after 1 June 2024. Anti-forestalling rules in the same Act block attempted late MDR claims using sub-sale or option arrangements pre-dated to before the cut-off.</p>
 
-<p>Any incorporation completed on or after 1 June 2024 cannot use MDR. Several still-live online articles (including older versions of this page) reference MDR as available. They are out of date. The official confirmation is on the <a href="https://www.gov.uk/guidance/sdlt-multiple-dwellings-relief" rel="external nofollow" target="_blank">gov.uk MDR guidance page</a>.</p>
+<p>Any incorporation completed on or after 1 June 2024 cannot use MDR. Several still-live online articles (including older versions of this page) reference MDR as available. They are out of date. The official confirmation is on the <a href="https://www.gov.uk/government/publications/stamp-duty-land-tax-abolition-of-multiple-dwellings-relief-from-1-june-2024" rel="external nofollow noopener" target="_blank">gov.uk MDR guidance page</a>.</p>
 
 <aside>
 <p>About to incorporate and not sure which route you qualify for?</p>
@@ -144,7 +144,7 @@ faqs:
 
 <h3>CGT side</h3>
 
-<p>The transfer of property from an individual to a wholly-owned company is a deemed disposal at market value for CGT (TCGA 1992 s.17). Section 162 incorporation relief defers the gain by rolling it into the base cost of the shares received, provided the entire business (not selected assets) is transferred and the consideration is wholly or partly shares. The relief is automatic but must be claimed correctly and the conditions in s.162(1)-(4) must be met. The HMRC reference is <a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg65700p" rel="external nofollow" target="_blank">CG65700+ of the Capital Gains Manual</a>.</p>
+<p>The transfer of property from an individual to a wholly-owned company is a deemed disposal at market value for CGT (TCGA 1992 s.17). Section 162 incorporation relief defers the gain by rolling it into the base cost of the shares received, provided the entire business (not selected assets) is transferred and the consideration is wholly or partly shares. The relief is automatic but must be claimed correctly and the conditions in s.162(1)-(4) must be met. The HMRC reference is <a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg65700p" rel="external nofollow noopener" target="_blank">CG65700+ of the Capital Gains Manual</a>.</p>
 
 <h3>SDLT side</h3>
 

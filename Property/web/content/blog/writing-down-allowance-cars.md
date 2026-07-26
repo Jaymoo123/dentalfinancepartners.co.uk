@@ -8,7 +8,7 @@ category: Section 24 & Tax Relief
 metaTitle: 'Writing Down Allowance on Cars 2026/27 | 14% & 6% Rates'
 metaDescription: 'Writing down allowance on cars for UK landlords: main rate cut to 14% from April 2026, 6% special rate, 100% FYA for zero-emission cars, worked examples.'
 altText: "UK property investor reviewing car capital allowance figures and CO2 emissions paperwork at a desk"
-image: https://images.pexels.com/photos/7519351/pexels-photo-7519351.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
+image: https://images.pexels.com/photos/7519351/pexels-photo-7519351.jpeg?auto=compress&cs=tinysrgb&h=440&w=640
 h1: 'Writing Down Allowance on Cars: 2026/27 Rules for UK Property Investors'
 summary: 'Writing down allowance (WDA) lets you deduct the cost of a business car against your property profits over time. The main pool rate falls from 18% to 14% from April 2026 (CAA 2001 s.56, as amended by Finance Act 2026), the special rate pool stays at 6%, and only new and unused zero-emission (0g/km) cars qualify for the 100% first-year allowance under CAA 2001 s.45D. This guide explains which pool your car sits in, how the reducing-balance calculation works, the April 2026 rate change, electric-car treatment, and how WDA interacts with Section 24 and Making Tax Digital.'
 schema: ''

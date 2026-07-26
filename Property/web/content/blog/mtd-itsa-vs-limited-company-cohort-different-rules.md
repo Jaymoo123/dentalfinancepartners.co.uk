@@ -6,7 +6,7 @@ date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Making Tax Digital (MTD)"
 metaTitle: "MTD ITSA vs Limited Company: Cohort Comparison Explained"
-metaDescription: "Sole-trader landlords are in MTD ITSA from April 2026. Limited companies are out. The cohort differences, the director trap, and the incorporation question."
+metaDescription: "Sole-trader landlords are in MTD ITSA from April 2026. Limited companies are out. The cohort differences, the director trap"
 altText: "UK landlord comparing personal tax filing paperwork with limited company corporation tax return, considering incorporation"
 image: "https://images.pexels.com/photos/6863251/pexels-photo-6863251.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

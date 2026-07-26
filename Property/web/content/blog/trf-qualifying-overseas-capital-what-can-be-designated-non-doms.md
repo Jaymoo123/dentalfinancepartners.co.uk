@@ -6,8 +6,8 @@ date: "2026-05-25"
 author: "Property Tax Partners Editorial Team"
 category: "Non-Resident Landlord Tax"
 metaTitle: "TRF Qualifying Overseas Capital: the Three Scenarios"
-metaDescription: "FA 2025 Sch 10 para 2: which offshore amounts can be designated under TRF. Scenarios A (unremitted), B (in-window remittance), C (pre-2025 offshore capital)."
-altText: "An offshore investment portfolio statement on a desk alongside a UK passport, representing the source-identification analysis required to determine which slices of an offshore portfolio qualify for TRF designation under the three Schedule 10 scenarios"
+metaDescription: "FA 2025 Sch 10 para 2: which offshore amounts can be designated under TRF. Scenarios A (unremitted), B (in-window remittance)"
+altText: "An offshore investment portfolio statement on a desk beside a UK passport"
 image: "https://images.pexels.com/photos/6347545/pexels-photo-6347545.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:
   photographer: Tima Miroshnichenko

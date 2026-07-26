@@ -67,7 +67,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonical = `${siteConfig.url}/locations/${loc.slug}`;
   return {
     title: `Property Accountant ${cityName} | Tax Specialists for Landlords`,
-    description: `Looking for a property accountant in ${cityName}? Specialist tax advice for landlords and property investors. Section 24, MTD, incorporation. Fixed fees, free consultation.`,
+    description: `Specialist property accountant in ${cityName} for landlords and investors: Section 24, MTD, incorporation. Fixed fees, free consultation.`,
     alternates: {
       canonical,
       languages: {

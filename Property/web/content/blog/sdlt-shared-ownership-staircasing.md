@@ -169,7 +169,7 @@ editorialNote: "Decision-framework page for shared-ownership buyers facing the m
 
 <h2>How the SDLT return is completed</h2>
 
-<p>The first SDLT return is filed by the buyer's conveyancer within 14 days of completion of the initial shared-ownership grant. The election (if made) is recorded in the dedicated election fields on the SDLT1; the NPV rent calculation (if no election) is computed and the rent SDLT entered on the return. Subsequent chargeable staircasing transactions (above 80%) are reported on a fresh SDLT return within 14 days of each effective date. HMRC's guidance on the return is at <a href="https://www.gov.uk/government/publications/stamp-duty-land-tax-online-and-paper-returns">gov.uk's SDLT return guidance</a>, and the underlying SDLT Manual at <a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual">SDLTM</a>.</p>
+<p>The first SDLT return is filed by the buyer's conveyancer within 14 days of completion of the initial shared-ownership grant. The election (if made) is recorded in the dedicated election fields on the SDLT1; the NPV rent calculation (if no election) is computed and the rent SDLT entered on the return. Subsequent chargeable staircasing transactions (above 80%) are reported on a fresh SDLT return within 14 days of each effective date. HMRC's guidance on the return is at <a href="https://www.gov.uk/guidance/stamp-duty-land-tax-online-and-paper-returns">gov.uk's SDLT return guidance</a>, and the underlying SDLT Manual at <a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual">SDLTM</a>.</p>
 
 <h2>Decision framework</h2>
 

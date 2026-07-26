@@ -10,7 +10,7 @@ import { buildCalculatorJsonLd } from "@/lib/calculator-schema";
 export const metadata: Metadata = {
   title: "Portfolio Profitability Calculator | Rental Yield & Net Profit (UK)",
   description:
-    "Free rental portfolio calculator for UK landlords. Work out net profit, gross yield and net yield across every property in your portfolio. Add as many properties as you like.",
+    "Free rental portfolio calculator for UK landlords. Work out net profit, gross yield and net yield across every property. Add as many as you like.",
   alternates: { canonical: `${siteConfig.url}/calculators/portfolio-profitability-calculator` },
   openGraph: {
     title: "Rental Portfolio Profitability & Yield Calculator",

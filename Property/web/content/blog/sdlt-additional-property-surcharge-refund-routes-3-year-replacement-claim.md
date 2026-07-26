@@ -8,7 +8,7 @@ category: "Property Types and Specialist Tax"
 metaTitle: "SDLT Surcharge Refund: 3-Year Window, Routes, Edge Cases"
 metaDescription: "Refund routes under FA 2003 Sch 4ZA para 3 for the 5% SDLT additional-dwellings surcharge: 3-year clock, chain-break, divorce, probate, repossession."
 altText: "A 'for sale' sign outside a UK semi-detached house where the seller is awaiting completion within the SDLT additional-dwellings surcharge 3-year refund window"
-image: "https://images.pexels.com/photos/1374295/pexels-photo-1374295.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/1374295/pexels-photo-1374295.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Curtis Adams"
   photographer_url: "https://www.pexels.com/@curtis-adams-1694007"

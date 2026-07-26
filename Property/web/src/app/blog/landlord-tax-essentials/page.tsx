@@ -8,7 +8,7 @@ const categoryName = "Landlord Tax Essentials";
 const categorySlug = "landlord-tax-essentials";
 
 export const metadata: Metadata = {
-  title: `${categoryName} | ${siteConfig.name}`,
+  title: `${categoryName}`,
   description: `Essential tax guidance for UK landlords. Self-assessment, rental income tax, VAT, stamp duty, financial planning, and allowable expenses explained.`,
   alternates: {
     canonical: `${siteConfig.url}/blog/${categorySlug}`,

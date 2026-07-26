@@ -8,7 +8,7 @@ category: "Incorporation & Company Structures"
 metaTitle: "ATED Mixed-Use Apportionment: Flat-over-Shop Treatment"
 metaDescription: "How ATED applies to mixed-use buildings: residential-portion-only rule, four apportionment methods, just-and-reasonable test, serviced-accom edge cases."
 altText: "Lively London street with historic buildings showing classic flat-over-shop architecture relevant to ATED mixed-use apportionment"
-image: "https://images.pexels.com/photos/31946142/pexels-photo-31946142.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/31946142/pexels-photo-31946142.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Mingyang LIU"
   photographer_url: "https://www.pexels.com/@mingyang-liu-301813241"
@@ -225,10 +225,10 @@ editorialNote: "Mixed-use apportionment mechanics for ATED, with the four accept
 <ul>
   <li><a href="https://www.legislation.gov.uk/ukpga/2013/29/part/3">Finance Act 2013, Part 3 (Annual Tax on Enveloped Dwellings)</a> for the statutory framework: chargeable interest, single-dwelling interest, the £500,000 threshold and the band structure.</li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2013/29/section/112">Section 112 FA 2013 (dwelling definition)</a> for the test of what is used or suitable for use as a single residence.</li>
-  <li><a href="https://www.gov.uk/hmrc-internal-manuals/annual-tax-on-enveloped-dwellings">HMRC ATED Manual</a> for HMRC's published practice on the dwelling test, single-dwelling interest, and apportionment.</li>
+  <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics">HMRC ATED Manual</a> for HMRC's published practice on the dwelling test, single-dwelling interest, and apportionment.</li>
   <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-returns">ATED return guidance (gov.uk)</a> for return mechanics, the 30 April deadline and the Pre-Return Banding Check service.</li>
   <li><a href="https://www.gov.uk/government/publications/annual-tax-on-enveloped-dwellings-technical-guidance">ATED technical guidance (gov.uk)</a> for HMRC's full technical position on dwelling boundary cases.</li>
-  <li><a href="https://www.gov.uk/hmrc-internal-manuals/sdlt-manual">HMRC SDLT Manual</a> for the cognate SDLT mixed-use position under section 116 FA 2003.</li>
+  <li><a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual">HMRC SDLT Manual</a> for the cognate SDLT mixed-use position under section 116 FA 2003.</li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2009/10/schedule/24">Schedule 24 FA 2007 (penalties for errors)</a> for the careless / deliberate / deliberate-and-concealed penalty bands at the enquiry stage.</li>
 </ul>
 

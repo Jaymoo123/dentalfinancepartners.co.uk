@@ -6,7 +6,7 @@ date: "2026-05-23"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "VAT on Mixed-Use Property: Apportionment + OTT Trap"
-metaDescription: "Buying UK flat-over-shop or hotel-with-retail mixed-use property: VAT apportionment methodology, dwellings carve-out from OTT, SDLT cross-tax cross-reference."
+metaDescription: "Buying UK flat-over-shop or hotel-with-retail mixed-use property: VAT apportionment methodology, dwellings carve-out from OTT"
 altText: "Traditional British high-street parade with retail shopfronts at ground level and flats above, representing a mixed-use property subject to VAT apportionment on purchase"
 image: ""
 h1: "VAT on Mixed-Use Property Purchases: Apportionment and the Dwellings Carve-Out"
@@ -206,11 +206,11 @@ editorialNote: "Bucket A specialist topic. Mixed-use is the apportionment-at-acq
 <h2>Authorities</h2>
 
 <ul>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/8" rel="external nofollow" target="_blank">VATA 1994 Schedule 8 Group 5 (zero-rated construction of dwellings)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/9" rel="external nofollow" target="_blank">VATA 1994 Schedule 9 Group 1 (land exemption)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/5" rel="external nofollow" target="_blank">VATA 1994 Sch 10 para 5 (dwellings carve-out from option to tax)</a></li>
-<li><a href="https://www.gov.uk/guidance/vat-on-land-and-property-notice-742" rel="external nofollow" target="_blank">HMRC VAT Notice 742: Land and property</a></li>
-<li><a href="https://www.gov.uk/guidance/buildings-and-construction-vat-notice-708" rel="external nofollow" target="_blank">HMRC VAT Notice 708: Buildings and construction</a></li>
-<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-land-and-property" rel="external nofollow" target="_blank">HMRC VAT Land and Property internal manual</a></li>
-<li><a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm00385" rel="external nofollow" target="_blank">HMRC SDLT Manual SDLTM00385 (Bewley mixed-use test)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/8" rel="external nofollow noopener" target="_blank">VATA 1994 Schedule 8 Group 5 (zero-rated construction of dwellings)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/9" rel="external nofollow noopener" target="_blank">VATA 1994 Schedule 9 Group 1 (land exemption)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/5" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 10 para 5 (dwellings carve-out from option to tax)</a></li>
+<li><a href="https://www.gov.uk/guidance/vat-on-land-and-property-notice-742" rel="external nofollow noopener" target="_blank">HMRC VAT Notice 742: Land and property</a></li>
+<li><a href="https://www.gov.uk/guidance/buildings-and-construction-vat-notice-708" rel="external nofollow noopener" target="_blank">HMRC VAT Notice 708: Buildings and construction</a></li>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-land-and-property" rel="external nofollow noopener" target="_blank">HMRC VAT Land and Property internal manual</a></li>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm00385" rel="external nofollow noopener" target="_blank">HMRC SDLT Manual SDLTM00385 (Bewley mixed-use test)</a></li>
 </ul>

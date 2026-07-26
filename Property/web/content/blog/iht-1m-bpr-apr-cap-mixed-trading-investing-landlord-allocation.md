@@ -8,7 +8,7 @@ category: "Landlord Tax Essentials"
 metaTitle: "£2.5m BPR/APR Cap: Allocation Across Mixed Landlord Estates"
 metaDescription: "How the April 2026 £2.5m s.124D BPR/APR allowance allocates across mixed estates: farm + developer SPV + BTL + AIM. Worked pre/post-cap totals."
 altText: "Aerial view of UK countryside featuring farmland and dwellings representing a mixed landlord estate with agricultural and residential property"
-image: "https://images.pexels.com/photos/9491906/pexels-photo-9491906.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/9491906/pexels-photo-9491906.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Altaf Shah
   photographer_url: https://www.pexels.com/@altaf-shah-3143825

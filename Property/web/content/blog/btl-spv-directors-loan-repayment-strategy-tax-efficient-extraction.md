@@ -8,7 +8,7 @@ category: "Incorporation & Company Structures"
 metaTitle: "BTL Director's Loan Repayment Sequence and Exhaustion Trap"
 metaDescription: "Director's loan repayment after BTL incorporation: principal first, then interest, dividends, salary, pension. Five-year exhaustion worked."
 altText: "Macro shot of golden British pound coins representing the credit director's loan account a property landlord draws down across years post-incorporation"
-image: "https://images.pexels.com/photos/19673893/pexels-photo-19673893.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/19673893/pexels-photo-19673893.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "William Warby"
   photographer_url: "https://www.pexels.com/@wwarby"

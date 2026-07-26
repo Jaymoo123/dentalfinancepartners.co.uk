@@ -6,7 +6,7 @@ date: "2026-05-26"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Welsh LTT Derelict Property: s.72 Classification at Purchase"
-metaDescription: "LTTA 2017 s.72 dwelling-suitability test, post-Bewley narrowing (Hyman, Mudan, MHB, Brown), surveyor evidence pack, file non-residential or pay-and-reclaim."
+metaDescription: "LTTA 2017 s.72 dwelling-suitability test, post-Bewley narrowing (Hyman, Mudan, MHB, Brown), surveyor evidence pack"
 altText: "A derelict Welsh farmhouse with collapsed roof and asbestos contamination, illustrating the LTTA 2017 section 72 dwelling-suitability test for non-residential classification at the effective date of acquisition"
 image: "https://images.pexels.com/photos/277559/pexels-photo-277559.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

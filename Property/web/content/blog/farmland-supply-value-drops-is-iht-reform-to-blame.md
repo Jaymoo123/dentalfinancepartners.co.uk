@@ -6,7 +6,7 @@ date: "2026-05-27"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "UK Farmland Sales + IHT Reform 2026: Driver Attribution"
-metaDescription: "Honest attribution of the post-Budget-2024 farmland market: £2.5m APR/BPR cap (not the £1m headline) vs BPS taper, rates and input costs. Four-quadrant framework."
+metaDescription: "Honest attribution of the post-Budget-2024 farmland market: £2.5m APR/BPR cap (not the £1m headline) vs BPS taper, rates and input costs."
 altText: "UK Cambridgeshire 280-acre arable farm with farmhouse and let cottages, agricultural value versus hope value boundary illustrated against IHT cap framing"
 image: ""
 h1: "Farmland Supply Is Up, Value Is Down: Is the April 2026 IHT Reform Really to Blame?"
@@ -64,8 +64,8 @@ faqs:
 <p>The major industry-published farmland market indices each report quarterly. The four sources to cross-check are:</p>
 
 <ul>
-<li>The <a href="https://www.knightfrank.co.uk/research/farmland-index" rel="nofollow noopener" target="_blank">Knight Frank Rural Property Index</a> and Farmland Index, covering arable, livestock and mixed farmland by region and parcel size.</li>
-<li>The <a href="https://www.savills.co.uk/research_articles/229130/" rel="nofollow noopener" target="_blank">Savills UK Farmland Market Survey</a>, with parcel-size and region split.</li>
+<li>The <a href="https://www.knightfrank.co.uk/research/sectors/rural" rel="nofollow noopener" target="_blank">Knight Frank Rural Property Index</a> and Farmland Index, covering arable, livestock and mixed farmland by region and parcel size.</li>
+<li>The <a href="https://www.savills.co.uk/research/uk/rural-research.aspx" rel="nofollow noopener" target="_blank">Savills UK Farmland Market Survey</a>, with parcel-size and region split.</li>
 <li>The Strutt & Parker Farmland Database, covering listing volumes and transaction prices.</li>
 <li>The HMRC <a href="https://www.gov.uk/government/statistics/inheritance-tax-statistics-commentary" rel="nofollow noopener" target="_blank">Inheritance Tax Statistics</a> commentary, which gives the pre-reform IHT baseline (post-reform breakdown data will lag the cycle by 18-24 months).</li>
 </ul>

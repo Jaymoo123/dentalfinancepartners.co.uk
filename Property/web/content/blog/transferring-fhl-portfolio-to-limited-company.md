@@ -8,7 +8,7 @@ category: "Incorporation & Company Structures"
 metaTitle: "FHL Portfolio to Limited Company: Post-Abolition Decision"
 metaDescription: "Former FHL owners deciding whether to incorporate after 6 April 2025: S24, lost BADR, s.162 incorporation relief, ATED, and a 3-property worked example."
 altText: "View of Polperro harbour in Cornwall with traditional coastal cottages historically used as furnished holiday lets"
-image: "https://images.pexels.com/photos/33687424/pexels-photo-33687424.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/33687424/pexels-photo-33687424.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Cris Balincuacas"
   photographer_url: "https://www.pexels.com/@cris-balincuacas-2148462576"

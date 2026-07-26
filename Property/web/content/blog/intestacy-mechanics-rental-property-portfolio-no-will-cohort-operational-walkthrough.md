@@ -6,7 +6,7 @@ date: "2026-05-23"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation and Company Structures"
 metaTitle: "Intestacy and a Rental Portfolio: Walkthrough"
-metaDescription: "Statutory legacy £322,000, half-residue split, administrator priority under NCPR 1987 r.22, cohabitant catastrophe, post-death deed of variation rescue route."
+metaDescription: "Statutory legacy £322,000, half-residue split, administrator priority under NCPR 1987 r.22, cohabitant catastrophe"
 altText: "An administrator and solicitor working through grant of letters of administration paperwork for an intestate property estate"
 image: "https://images.pexels.com/photos/7841825/pexels-photo-7841825.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

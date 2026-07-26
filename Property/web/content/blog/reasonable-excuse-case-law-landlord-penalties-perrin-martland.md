@@ -112,7 +112,7 @@ faqs:
 
 <h2>Reliance on professional advice as a reasonable excuse</h2>
 
-<p>Reliance on competent professional advice that turns out to be wrong is a recognised category of reasonable excuse, but it is qualified in important ways. The leading authority strand includes <a href="https://www.bailii.org/uk/cases/UKUT/TCC/" rel="nofollow noopener" target="_blank">Upper Tribunal decisions</a> in cases such as Hok Ltd v HMRC, Perrin itself, and various subsequent decisions applying the four-stage test to adviser-reliance scenarios.</p>
+<p>Reliance on competent professional advice that turns out to be wrong is a recognised category of reasonable excuse, but it is qualified in important ways. The leading authority strand includes <a href="https://assets.publishing.service.gov.uk/media/5af9caf440f0b622d18b2e86/Christine_Perrin_v_HMRC.pdf" rel="nofollow noopener" target="_blank">Upper Tribunal decisions</a> in cases such as Hok Ltd v HMRC, Perrin itself, and various subsequent decisions applying the four-stage test to adviser-reliance scenarios.</p>
 
 <p>The qualifications:</p>
 

@@ -6,7 +6,7 @@ date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
 metaTitle: "Rent a Room Allowance 2026: £7,500 Tax-Free Guide"
-metaDescription: "Rent a Room allowance 2026/27 stays at £7,500. Eligibility, joint-owner £3,750 split, opt-out deadline, MTD impact, and how lodger income sits next to a BTL portfolio."
+metaDescription: "Rent a Room allowance 2026/27 stays at £7,500. Eligibility, joint-owner £3,750 split, opt-out deadline, MTD impact"
 altText: "UK landlord showing lodger around furnished bedroom with contract documents on table"
 image: ""
 h1: "Rent a Room Allowance 2026: £7,500 Tax-Free Guide for UK Landlords"
@@ -62,7 +62,7 @@ faqs:
 </tbody>
 </table>
 
-<p>The legal basis is in Part 7, Chapter 1 of the Income Tax (Trading and Other Income) Act 2005 (ITTOIA 2005), sections 784 to 802. HMRC publishes the operational detail in helpsheet <a href="https://www.gov.uk/government/publications/rent-a-room-for-traders-hs223-self-assessment-helpsheet" rel="external nofollow" target="_blank">HS223 (Rent a Room Scheme)</a>, which is the authoritative reference and is updated each tax year.</p>
+<p>The legal basis is in Part 7, Chapter 1 of the Income Tax (Trading and Other Income) Act 2005 (ITTOIA 2005), sections 784 to 802. HMRC publishes the operational detail in helpsheet <a href="https://www.gov.uk/government/publications/rent-a-room-for-traders-hs223-self-assessment-helpsheet" rel="external nofollow noopener" target="_blank">HS223 (Rent a Room Scheme)</a>, which is the authoritative reference and is updated each tax year.</p>
 
 <h2>Who qualifies (and who does not)</h2>
 
@@ -154,7 +154,7 @@ faqs:
 
 <p>Under Method A (the scheme), the calculation simply cannot produce a loss: it is gross receipts minus the allowance, capped at zero. So if your apportioned expenses on the let portion of the home are very high in a particular year (a one-off repair to the let bedroom's plumbing, for example) and they exceed gross receipts, you cannot claim that excess as a loss against other property income, against your trading income, or carry it forward.</p>
 
-<p>The only way to access loss relief is to opt out for that year (within the one-year window) and use normal property rules. Any loss can then be carried forward against future UK property profits under <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim4210" rel="external nofollow" target="_blank">PIM4210</a>.</p>
+<p>The only way to access loss relief is to opt out for that year (within the one-year window) and use normal property rules. Any loss can then be carried forward against future UK property profits under <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim4210" rel="external nofollow noopener" target="_blank">PIM4210</a>.</p>
 
 <h2>Rent a Room and a buy-to-let portfolio</h2>
 
@@ -166,7 +166,7 @@ faqs:
 
 <h3>MTD for Income Tax interaction</h3>
 
-<p>MTD for ITSA went live on 6 April 2026 for sole-trader landlords with qualifying income (gross trading plus gross property receipts) above £50,000. The threshold drops to £30,000 from 6 April 2027 and to £20,000 from 6 April 2028. The official sign-up checker is at <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" rel="external nofollow" target="_blank">gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax</a>.</p>
+<p>MTD for ITSA went live on 6 April 2026 for sole-trader landlords with qualifying income (gross trading plus gross property receipts) above £50,000. The threshold drops to £30,000 from 6 April 2027 and to £20,000 from 6 April 2028. The official sign-up checker is at <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" rel="external nofollow noopener" target="_blank">gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax</a>.</p>
 
 <p>If you stay within the Rent a Room limit and use the scheme, that £7,500 is not property income for MTD purposes and does not count towards the qualifying income threshold. If you opt out, the gross receipts <em>do</em> count. So a landlord with a buy-to-let portfolio earning £45,000 in gross rents plus £6,000 in lodger receipts has two very different MTD outcomes depending on the election:</p>
 
@@ -188,7 +188,7 @@ faqs:
 
 <h2>Capital Gains Tax: Principal Private Residence Relief</h2>
 
-<p>Using part of your main residence for lodgers can in principle affect <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">Principal Private Residence Relief (PPR)</a> when you eventually sell. In practice, HMRC accepts that a lodger sharing living areas with the homeowner does not amount to exclusive business use, so PPR continues to cover the full gain on sale. The supporting HMRC guidance is in the <a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg64702" rel="external nofollow" target="_blank">Capital Gains Manual at CG64702</a>.</p>
+<p>Using part of your main residence for lodgers can in principle affect <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">Principal Private Residence Relief (PPR)</a> when you eventually sell. In practice, HMRC accepts that a lodger sharing living areas with the homeowner does not amount to exclusive business use, so PPR continues to cover the full gain on sale. The supporting HMRC guidance is in the <a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg64702" rel="external nofollow noopener" target="_blank">Capital Gains Manual at CG64702</a>.</p>
 
 <p>The risk arises when:</p>
 
@@ -198,7 +198,7 @@ faqs:
 <li>You move out entirely and let the whole property. PPR then runs only for the period you actually lived there, with a final 9 months of deemed occupation tacked on under the standard rules.</li>
 </ul>
 
-<p>Where any of those apply, the gain is apportioned on sale, and the let portion may need to be reported and paid within 60 days of completion under the <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax" rel="external nofollow" target="_blank">UK Property CGT service</a>.</p>
+<p>Where any of those apply, the gain is apportioned on sale, and the let portion may need to be reported and paid within 60 days of completion under the <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax" rel="external nofollow noopener" target="_blank">UK Property CGT service</a>.</p>
 
 <h2>Mortgage, insurance and licensing</h2>
 
