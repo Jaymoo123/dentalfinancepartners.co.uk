@@ -108,7 +108,7 @@ faqs:
 
 <p>For a higher-rate associate, the effective tax rate on company rental profits extracted as dividends is roughly: 19% corporation tax + (35.75% dividend tax on the remaining 81%, at the 2026/27 upper rate) = approximately 48%. This is higher than the personal rate of 40% on rental profits (plus the Section 24 restriction on interest). The company structure works better if you reinvest profits rather than extract them, or if you have very high mortgage interest relative to income.</p>
 
-<p>For a detailed comparison of extraction strategies, see our <a href="/dental-guides/practice-profit-extraction-partnership-vs-ltd">guide on profit extraction for dental practices</a>. The principles for BTL companies are similar, though the tax rates differ.</p>
+<p>For a detailed comparison of extraction strategies, see our <a href="/dental-guides/practice-profit-extraction-partnership-vs-ltd">guide on profit extraction for dental practices</a>. The principles for BTL companies are similar, though the tax rates differ. The landlord-specific side of that decision, such as SDLT on incorporating a portfolio, CGT on eventual disposal, and how the holding structure affects both, is a specialist area in its own right, and landlord-focused firms such as <a href="https://www.propertytaxpartners.co.uk" target="_blank" rel="nofollow noopener noreferrer">Property Tax Partners</a> deal with it day to day.</p>
 
 <h2>NHS Pension and BTL Income</h2>
 

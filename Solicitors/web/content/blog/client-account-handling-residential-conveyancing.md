@@ -61,6 +61,8 @@ faqs:
 
 <p>Each of these transfers must be recorded in the client account ledger. The five-week reconciliation must show that the total of all client account balances matches the total of all client ledger balances. Any discrepancy is a red flag.</p>
 
+<p>SDLT is only one of the property taxes a conveyancing client meets. Buy-to-let and investor clients also face capital gains tax on disposal, the higher rates of SDLT for additional dwellings, and, where property is held through a company, the annual ATED charge, areas most conveyancing firms refer out rather than advise on in-house. A property-focused accountant such as <a href="https://www.propertytaxpartners.co.uk" target="_blank" rel="nofollow noopener noreferrer">Property Tax Partners</a> handles that client-side work.</p>
+
 <h2>Residential Conveyancing Money and the Five-Week Reconciliation</h2>
 
 <p>Rule 8.3 requires you to reconcile your client account at least every five weeks. For a conveyancing practice, this is non-negotiable. You must reconcile the client account balance on the bank statement against the total of all client ledger balances.</p>
