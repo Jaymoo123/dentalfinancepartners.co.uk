@@ -14,33 +14,26 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
   .filter(Boolean)
   .join(", "); // "20 Ashfield Avenue, Shipley, Bradford, BD18 3AL"
 
-// Specialist partner firm that enquiries are shared with. DJH's real details live in
-// niche.config.json and are never removed.
+// Recipient of shared enquiries is disclosed to enquirers as a CATEGORY only
+// ("a firm from our specialist partner network"), never as a named firm. This lets a
+// lead a firm declines be routed to another firm in the network without any site change.
+// niche.config.json holds only that category label — no individual firm is named anywhere
+// in the live tree (the former named-firm details were removed 2026-07-27 when that deal ended).
 //
-// TEMPORARY (2026-07-15): out of terms with DJH. While PARTNER_DISCLOSURE_PAUSED is
-// true we do NOT name DJH at the point of collection and the Privacy Policy shows the
-// generic "specialist partner firm" wording instead of DJH's name + external policy
-// link. Lead forwarding to DJH is paused (owner decision; forwarding is a manual
-// operator action, no code enforces it). TO RESTORE DJH: set this flag to false and
-// redeploy, everything below returns to the exact wording it had before.
-//
-// Do NOT "fix" this back to unconditionally naming DJH thinking it is the C1
-// regression (audit 2026-07-02) — the restore path already reproduces the exact
-// Annex B.1 wording byte-for-byte; softening it while DISCLOSED still needs a B.4
-// variation with DJH first.
+// PARTNER_DISCLOSURE_PAUSED is retained infrastructure. Even when false it now surfaces
+// only the category label from config, never a specific firm; the two branches differ
+// only in phrasing. Neither path can expose a named firm.
 const PARTNER_DISCLOSURE_PAUSED = true;
-const configuredPartner = niche.partner; // DJH details preserved in config
+const configuredPartner = niche.partner; // category label only, no named firm
 const disclosePartner = !PARTNER_DISCLOSURE_PAUSED && Boolean(configuredPartner);
 
-// Lead-form enquiry wording (each form appends "See our Privacy Policy."). When DJH is
-// disclosed this is the EXACT Annex B.1 point-of-collection acknowledgement required by
-// the executed Lead Generation & Data Sharing Agreement, naming DJH as the specialist
-// partner AT the point of collection (the rendered form text and stored consent_text row
-// both equal it verbatim once the trailing link is appended). When paused it is a generic
-// placeholder that names no firm and links no external policy, matching the Privacy Policy.
+// Lead-form enquiry wording (each form appends "See our Privacy Policy."). Both branches
+// disclose the recipient as the partner-network CATEGORY only; the receiving firm names
+// itself in its own Article 14 notice at first contact. Matches the Privacy Policy and the
+// Data Sharing Agreement Annex B (category-based disclosure).
 const leadConsentText = disclosePartner
-  ? `To answer your enquiry, your details will be shared with our specialist partner firm ${configuredPartner!.name}${configuredPartner!.descriptor ? ` ${configuredPartner!.descriptor}` : ""}, an independent data controller that will contact you and use your details under its own privacy policy. By submitting this enquiry you confirm you understand this.`
-  : `To answer your enquiry, your details may be shared with a specialist partner firm who will contact you. By submitting this enquiry you confirm you understand this.`;
+  ? `To answer your enquiry, your details will be shared with ${configuredPartner!.name}, an independent data controller that will contact you and use your details under its own privacy policy. By submitting this enquiry you confirm you understand this.`
+  : `To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. By submitting this enquiry you confirm you understand this.`;
 // Email-only sign-ups (resource downloads) are NOT shared with the partner firm
 // (agreement Annex B.2). They keep a tick-to-consent box with their own wording,
 // which must never mention the partner. Forms append "See our Privacy Policy."
@@ -82,12 +75,11 @@ export const siteConfig = {
       `${company.place_of_registration} (company no. ${company.number}). ` +
       `Registered office: ${registeredOfficeLine}.`,
   },
-  // Specialist partner firm enquiries are shared with. While PARTNER_DISCLOSURE_PAUSED
-  // (see above) the Privacy Policy shows a generic, unnamed placeholder; restore the
-  // flag to surface DJH's real name + external privacy-policy link again.
+  // Recipient shown in the Privacy Policy as the partner-network category only; no
+  // individual firm is named (see PARTNER_DISCLOSURE_PAUSED above).
   partner: disclosePartner
     ? { name: configuredPartner!.name, privacyPolicyUrl: configuredPartner!.privacy_policy_url ?? null }
-    : { name: "a specialist partner firm", privacyPolicyUrl: null },
+    : { name: "a firm from our specialist partner network", privacyPolicyUrl: null },
   // Canonical lead-form acknowledgement text (see derivation above). Forms append the link.
   leadConsentText,
   // Consent text for email-only resource downloads (never names the partner). Forms append the link.

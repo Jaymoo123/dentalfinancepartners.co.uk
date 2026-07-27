@@ -1,10 +1,10 @@
 /**
  * Native callback booking: the domain logic for our own "pick a time for your
  * call" flow (replaces Cal.com — nobody on our side attends a calendar; the
- * booking is a commitment signal plus a call window DJH should aim for).
+ * booking is a commitment signal plus a call window the partner firm should aim for).
  *
  * A slot is a WEEKDAY within the next 21 days plus one of three call windows.
- * No availability logic: DJH call the lead, the window just tells them when the
+ * No availability logic: the partner firm calls the lead, the window just tells them when the
  * lead said they would pick up.
  *
  * Everything here is pure and shared by the /book page (client picker), the
@@ -55,7 +55,7 @@ function isWeekday(d: Date): boolean {
 /**
  * A bookable date is a well-formed weekday from today up to MAX_DAYS_AHEAD days
  * out. "Today" is judged on the caller's clock date (client + server are both
- * fine: a same-day booking is always meaningful to DJH).
+ * fine: a same-day booking is always meaningful to the partner firm).
  */
 export function isValidBookingDate(iso: string, now: Date = new Date()): boolean {
   const d = parseIsoDate(iso);
@@ -96,7 +96,7 @@ export function upcomingWeekdays(count = 10, from: Date = new Date()): BookableD
   return days;
 }
 
-/** "Tue 14 Jul, morning (9am to 12pm)" — the human slot label stored + shown to DJH. */
+/** "Tue 14 Jul, morning (9am to 12pm)" — the human slot label stored + shown to the partner firm. */
 export function bookingLabel(iso: string, windowKey: string): string | null {
   const d = parseIsoDate(iso);
   const w = windowByKey(windowKey);

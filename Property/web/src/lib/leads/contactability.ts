@@ -1,6 +1,6 @@
 /**
  * The contactability gate: the rule that decides whether a lead is genuinely
- * reachable AND has actively responded, so it is safe to hand to DJH. This is
+ * reachable AND has actively responded, so it is safe to hand to the partner firm. This is
  * the direct fix for "only 3 of 9 were contactable".
  *
  * Rule table (strict, per owner decision):
@@ -16,7 +16,7 @@
  *
  *   An email reply proves engagement but NOT that the phone is callable. It is
  *   treated exactly like a one-tap confirm: qualifying only when the stored phone
- *   is not known-bad, so DJH can still reach the lead by phone.
+ *   is not known-bad, so the partner firm can still reach the lead by phone.
  *
  *   A lead with a known-bad phone who only confirms/books/email-replies is held
  *   for manual review rather than auto-forwarded.
@@ -88,7 +88,7 @@ export async function evaluateContactability(leadId: string): Promise<Contactabi
   const responded = repliedViaPhone || repliedViaEmail || confirmed || booked;
 
   const phoneStatus = verRes.data[0]?.phone_status ?? null;
-  // 'invalid' and 'voip' are both not-callable-by-DJH: a booking/confirm on one
+  // 'invalid' and 'voip' are both not-callable-by-partner: a booking/confirm on one
   // is held for manual review. A live SMS/WhatsApp reply still proves the number.
   const phoneKnownBad = phoneStatus === "invalid" || phoneStatus === "voip";
   const phoneGood = phoneStatus === "valid_mobile" || phoneStatus === "valid_landline";
@@ -161,9 +161,9 @@ export async function promoteIfContactable(leadId: string): Promise<PromoteResul
       // record the standard handed-off event.
       await recordLeadContactEvent(leadId, "handed_off", "system", { reason: verdict.reason });
       // The contactable -> forwarded flip is OPERATOR-driven (owner decision AN-2):
-      // it happens when the operator clicks "I have forwarded this to DJH" in the
+      // it happens when the operator clicks "I have forwarded this to the partner firm" in the
       // handoff email (POST /api/leads/forwarded/[token]), so 'forwarded' means a
-      // real DJH hand-over, not merely that our brief email was delivered.
+      // real the partner firm hand-over, not merely that our brief email was delivered.
     } else {
       // Real send failure after retries: audit it, then alert the operator.
       // leads.status remains 'contactable' so the handoff can be re-attempted later.
@@ -195,8 +195,8 @@ export async function promoteIfContactable(leadId: string): Promise<PromoteResul
             from: getFromAddress(),
             to: handoff.to,
             subject: `Handoff email failed: ${alertName}`,
-            html: `<p><strong>${safeAlertName}</strong> has passed the contactability gate and their status is now <strong>contactable</strong>, but the READY-FOR-DJH handoff email did not send after 3 attempts.</p><p>Please check the console for this lead and follow up manually. The lead has not been lost.</p><p>Failure reason: ${safeReason}</p>`,
-            text: `${alertName} has passed the contactability gate (status: contactable) but the READY-FOR-DJH handoff email failed after 3 attempts. Please check the console and follow up manually. Failure reason: ${handoff.reason ?? "unknown"}`,
+            html: `<p><strong>${safeAlertName}</strong> has passed the contactability gate and their status is now <strong>contactable</strong>, but the READY-FOR-PARTNER handoff email did not send after 3 attempts.</p><p>Please check the console for this lead and follow up manually. The lead has not been lost.</p><p>Failure reason: ${safeReason}</p>`,
+            text: `${alertName} has passed the contactability gate (status: contactable) but the READY-FOR-PARTNER handoff email failed after 3 attempts. Please check the console and follow up manually. Failure reason: ${handoff.reason ?? "unknown"}`,
           });
         }
       } catch (alertErr) {
@@ -262,7 +262,7 @@ export async function stopNurture(
     { status: "closed" },
   );
 
-  // Detect post-handoff opt-outs and alert the operator so DJH can be notified
+  // Detect post-handoff opt-outs and alert the operator so the partner firm can be notified
   // of the objection within 2 working days, as required by the data-sharing agreement.
   // Wrapped entirely in try/catch so it can never throw out of this webhook path.
   try {
@@ -323,14 +323,14 @@ export async function stopNurture(
         subject: `Post-handoff opt-out: ${leadName}`,
         html:
           `<p><strong>${safeName}</strong> has opted out of further contact via ${channel} ` +
-          `AFTER their enquiry was forwarded to DJH.</p>` +
-          `<p>Under the data-sharing agreement, DJH must be notified of this objection ` +
-          `within 2 working days. Please contact DJH directly to inform them that this ` +
+          `AFTER their enquiry was forwarded to the partner firm.</p>` +
+          `<p>Under the data-sharing agreement, the partner firm must be notified of this objection ` +
+          `within 2 working days. Please contact the partner firm directly to inform them that this ` +
           `lead has withdrawn consent and must not be contacted further.</p>`,
         text:
           `${leadName} has opted out of further contact via ${channel} AFTER their enquiry ` +
-          `was forwarded to DJH. Under the data-sharing agreement, DJH must be notified of ` +
-          `this objection within 2 working days. Please contact DJH directly to inform them ` +
+          `was forwarded to the partner firm. Under the data-sharing agreement, the partner firm must be notified of ` +
+          `this objection within 2 working days. Please contact the partner firm directly to inform them ` +
           `that this lead has withdrawn consent and must not be contacted further.`,
       });
     }

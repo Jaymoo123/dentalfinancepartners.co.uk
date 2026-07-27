@@ -7,7 +7,7 @@ import BookingPicker from "@/components/forms/BookingPicker";
 /**
  * Standalone booking page, linked from every nurture SMS/email as
  * /book?t=<signed lead token>. Nobody on our side attends a calendar: the lead
- * is telling us when DJH should call, and the act of booking is the
+ * is telling us when the partner firm should call, and the act of booking is the
  * contactability signal that promotes them for handoff.
  */
 

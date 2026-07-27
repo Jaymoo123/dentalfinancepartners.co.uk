@@ -1,5 +1,5 @@
 /**
- * AI "DJH call brief" for the Property Tax Partners handoff dossier.
+ * AI "partner call brief" for the Property Tax Partners handoff dossier.
  *
  * buildCallBrief: generates a concise four-field brief for the accountant
  * who will phone the lead. Best-effort -- returns null when Anthropic is

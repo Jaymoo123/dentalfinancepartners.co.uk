@@ -227,7 +227,7 @@ export async function POST(req: NextRequest) {
       }
     } else {
       // Ambiguous reply — unclear intent. Record for human review only: do not
-      // promote the lead, do not fire the DJH handoff, and send no ack message.
+      // promote the lead, do not fire the partner handoff, and send no ack message.
       // This prevents objections or non-committal messages (e.g. "maybe later",
       // "who is this") from being miscounted as positive engagement (INBOUND-4 /
       // DSA Sch 2 §6).
