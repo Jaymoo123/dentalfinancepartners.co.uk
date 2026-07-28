@@ -7,7 +7,7 @@ generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "MTD for VAT Law Firm Compliance: Solicitor Guide 2025/26"
-metaDescription: "Making Tax Digital for VAT is mandatory for all VAT-registered law firms. This guide explains bridging software, Xero QuickBooks integration, and COFA compliance steps."
+metaDescription: "Making Tax Digital for VAT is mandatory for VAT-registered law firms. This guide covers bridging software, Xero and QuickBooks links, and COFA compliance."
 altText: "UK solicitor reviewing MTD for VAT compliance on a laptop with accounting software open"
 image: ""
 h1: "How Does MTD for VAT Apply to a Law Firm? A Compliance Guide for Solicitors"

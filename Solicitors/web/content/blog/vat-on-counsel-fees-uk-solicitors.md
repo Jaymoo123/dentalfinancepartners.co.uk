@@ -7,7 +7,7 @@ generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "VAT on Counsel Fees for UK Solicitors: Disbursement Rules"
-metaDescription: "UK solicitors: understand VAT treatment of counsel fees, barrister disbursements, and the reverse charge mechanism. Practical examples for law firm billing."
+metaDescription: "UK solicitors: the VAT treatment of counsel fees, barrister disbursements, and the reverse charge mechanism. Practical examples for law firm billing."
 altText: "UK solicitor reviewing a counsel fee invoice and VAT treatment for barrister disbursement"
 image: ""
 h1: "How Do UK Solicitors Handle VAT on Counsel Fees and Barrister Disbursements?"
