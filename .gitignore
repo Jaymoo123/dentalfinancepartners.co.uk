@@ -116,6 +116,7 @@ proposal_engine/out/
 
 # research pipeline raw data dumps (large, regenerable from source)
 **/pipeline/raw/
+optimisation_engine/niche_screener/generators/raw_reg_churn/
 
 # session scratch
 /tmp/
