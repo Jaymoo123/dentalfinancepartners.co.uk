@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-servi
 date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
-metaTitle: "Property Accountants Liverpool | BTL Tax, Section 24 & MTD Help"
+metaTitle: "Property Accountants Liverpool | BTL Tax & Section 24 Help"
 metaDescription: "Liverpool property accountants for landlords: Section 24 modelling, MTD for ITSA compliance, incorporation maths, HMO and selective licensing."
 altText: "Liverpool property accountant reviewing rental property tax returns for local landlords"
 image: ""

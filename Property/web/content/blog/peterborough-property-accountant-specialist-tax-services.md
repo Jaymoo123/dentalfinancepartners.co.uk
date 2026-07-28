@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-servi
 date: "2026-04-10"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
-metaTitle: "BTL Accountants Peterborough | Section 24 & Incorporation Help"
+metaTitle: "BTL Accountants Peterborough | Section 24 Tax Help"
 metaDescription: "Specialist BTL accountants for Peterborough landlords. Section 24 modelling, incorporation analysis with worked example, MTD prep, HMO Article 4."
 altText: "Professional property accountant reviewing tax documents with Peterborough landlord client in modern office setting"
 image: ""

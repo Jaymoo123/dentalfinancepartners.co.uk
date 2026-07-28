@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/s
 date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "Shared Ownership SDLT: Market Value Election vs Pay-in-Stages"
+metaTitle: "Shared Ownership SDLT: Market Value Election vs Stages"
 metaDescription: "SDLT on shared ownership purchases and staircasing: market value election, pay-in-stages NPV rent, 80% trigger, surcharges, full 25/50/80 worked example."
 altText: "Modern UK new-build apartment block, illustrating a shared ownership property where SDLT applies on initial purchase and on staircasing increments"
 image: "https://images.pexels.com/photos/5674684/pexels-photo-5674684.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"

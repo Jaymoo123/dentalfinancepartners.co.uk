@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/rollove
 date: "2026-05-24"
 author: "Property Tax Partners Editorial Team"
 category: "Capital Gains Tax"
-metaTitle: "Rollover Relief on Property UK 2026/27: s.152 Trade Test + Examples"
+metaTitle: "Rollover Relief Property UK 2026/27: s.152 Trade Test"
 metaDescription: "Why standard BTL fails s.152 rollover (Salisbury House Estates), when commercial owner-occupiers qualify, partial relief under s.153"
 metaTitle_prev: "Rollover Relief Property: Can UK Landlords Claim It?"
 metaDescription_prev: "Rollover relief property rules for UK landlords. When business asset rollover applies to rental properties, eligibility and reinvestment."

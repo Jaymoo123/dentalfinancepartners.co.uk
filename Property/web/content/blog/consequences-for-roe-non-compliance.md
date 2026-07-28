@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/non-resident-landlord-tax
 date: "2026-05-27"
 author: "Property Tax Partners Editorial Team"
 category: "Non-Resident Landlord Tax"
-metaTitle: "Consequences for Register of Overseas Entities Non-Compliance"
+metaTitle: "Register of Overseas Entities: Non-Compliance Consequences"
 metaDescription: "HMLR disposition-block under LRA 2002 Sch 4A, civil penalty under operative SI, criminal offence under ECTEA 2022 s.8, plus s.34 compulsory-registration."
 altText: "A prime London commercial building owned by an overseas-incorporated company subject to the Register of Overseas Entities consequence stack"
 image: "https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"

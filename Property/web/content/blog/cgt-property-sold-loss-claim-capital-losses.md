@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-pro
 date: "2026-05-24"
 author: "Property Tax Partners Editorial Team"
 category: "Capital Gains Tax"
-metaTitle: "Capital Loss on UK Property: 4-Year Claim + Carry-Forward 2026/27"
+metaTitle: "Capital Loss on UK Property: Claim + Carry-Forward 2026/27"
 metaDescription: "Claiming a capital loss on a UK property disposal: 4-year claim deadline (TMA 1970 s.43), section 16 TCGA computation"
 metaTitle_prev: "CGT Property Sold Loss: Claiming Capital Losses UK Guide"
 metaDescription_prev: "Selling rental property at a loss? Learn how to claim capital losses against CGT, carry forward rules, and tax relief strategies for UK landlords."

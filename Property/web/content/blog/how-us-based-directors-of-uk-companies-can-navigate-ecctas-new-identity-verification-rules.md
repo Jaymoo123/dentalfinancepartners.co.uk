@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-05-27"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "How US-Based Directors of UK Companies Can Verify Under ECCTA"
+metaTitle: "US-Based Directors of UK Companies: Verify Under ECCTA"
 metaDescription: "ACSP-led route for US-resident directors and PSCs, US documents acceptable under MLR 2017, video-verification mechanics, and the FATCA / Form 5471 overlap."
 altText: "A US-based investor on a remote video-verification call with a UK Authorised Corporate Service Provider holding a US passport up to the camera for the Companies House identity verification"
 image: "https://images.pexels.com/photos/3756879/pexels-photo-3756879.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"

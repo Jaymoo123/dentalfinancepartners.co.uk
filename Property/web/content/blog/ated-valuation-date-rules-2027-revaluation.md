@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "ATED Valuation Dates: 2027 Revaluation, PRBC, Acquisition Rule"
+metaTitle: "ATED Valuation Dates: 2027 Revaluation, PRBC, Acquisition"
 metaDescription: "How ATED valuation works: the 2012/2017/2022/2027 cycle, acquisition-date interim rule, £40,000 substantial-transaction triggers, PRBC, what HMRC accepts."
 altText: "Classic Victorian central London residential terrace representing high-value dwellings within scope of the ATED revaluation cycle"
 image: "https://images.pexels.com/photos/4655752/pexels-photo-4655752.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"

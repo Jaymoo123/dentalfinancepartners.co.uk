@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/e
 date: "2026-05-24"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "EPC C 2030 Landlord Guide: Enacted Floor vs Policy Aspiration"
+metaTitle: "EPC C 2030 for Landlords: Enacted Floor vs Policy Aspiration"
 metaDescription: "The EPC E + £3,500 cap floor is enacted statute (SI 2015/962). EPC C by 2030 is policy aspiration only with no Statutory Instrument laid as at 2026-05-24."
 altText: "Landlord reviewing an EPC certificate and an MEES exemption-register printout, planning energy-efficiency upgrades to a rental property"
 image: "https://images.pexels.com/photos/5273548/pexels-photo-5273548.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"

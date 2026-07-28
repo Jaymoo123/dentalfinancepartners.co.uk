@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/letting
 date: "2026-05-24"
 author: "Property Tax Partners Editorial Team"
 category: "Capital Gains Tax"
-metaTitle: "Lettings Relief 2026/27: Post-2020 s.223B + £40k Cap + Worked Example"
+metaTitle: "Lettings Relief 2026/27: Post-2020 s.223B, £40k Cap"
 metaDescription: "Lettings Relief under TCGA 1992 s.223B (inserted FA 2020): shared-occupation gateway, £40,000 cap, lower-of-three computation"
 metaTitle_prev: "Letting Relief 2026: Worked Example for Shared Occupancy"
 metaDescription_prev: "Only landlords who shared their home with tenants qualify for letting relief. See a worked example showing how the £40,000 relief is calculated."

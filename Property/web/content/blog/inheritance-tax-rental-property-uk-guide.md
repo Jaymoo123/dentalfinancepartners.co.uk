@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/i
 date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "Inheritance Tax on Rental Property UK 2026: Reliefs & Strategies"
+metaTitle: "Inheritance Tax on Rental Property UK 2026: Reliefs"
 metaDescription: "UK IHT on rental property: 40% above £325k nil-rate band, RNRB tapering, BPR explained (BTL does not qualify), pensions in estate from 2027"
 altText: "UK property investor reviewing inheritance tax documents with calculator and rental property keys"
 image: ""

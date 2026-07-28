@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/s
 date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "SDLT Refund Scams: Red Flags, Real Routes, and What HMRC Pays"
+metaTitle: "SDLT Refund Scams: Red Flags, Real Routes, What HMRC Pays"
 metaDescription: "Cold-call SDLT refund firms claim HMRC owes you money. Most fail, leaving you with HMRC interest and penalties. Red flags, real routes, what to do."
 altText: "Businessman taking a phone call on a refund claim, illustrating the cold-call sales approach used by SDLT refund scam firms"
 image: "https://images.pexels.com/photos/3760604/pexels-photo-3760604.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"

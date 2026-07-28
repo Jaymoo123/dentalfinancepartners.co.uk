@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-servi
 date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
-metaTitle: "Property Accountant Leicester | BTL & Landlord Tax Specialists"
+metaTitle: "Property Accountant Leicester | BTL Landlord Tax Help"
 metaDescription: "Specialist property accountants for Leicester BTL landlords. Section 24, incorporation analysis, MTD prep, HMO Article 4 and selective licensing."
 altText: "Property accountant working with Leicester landlord on tax planning and compliance"
 image: ""

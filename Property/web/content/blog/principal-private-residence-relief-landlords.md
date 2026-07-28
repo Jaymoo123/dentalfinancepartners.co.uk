@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/princip
 date: "2026-05-24"
 author: "Property Tax Partners Editorial Team"
 category: "Capital Gains Tax"
-metaTitle: "PRR for Landlords UK 2026/27: Final 9 Months + Lettings Reframe"
+metaTitle: "PRR for Landlords UK 2026/27: Final 9 Months + Lettings"
 metaDescription: "PRR for accidental landlords 2026/27: s.222 framework, final 9 months, deemed occupation, half-hectare rule"
 metaTitle_prev: "PPR Relief Calculation for Landlords (UK 2025/26)"
 metaDescription_prev: "Cut CGT on a former home with PPR relief. Includes the 9-month final period, the calculation formula, and letting relief examples for the 2025/26 tax year."

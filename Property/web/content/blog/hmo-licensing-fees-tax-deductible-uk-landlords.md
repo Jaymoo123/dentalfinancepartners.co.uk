@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specia
 date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
-metaTitle: "Are HMO Licensing Fees Tax Deductible? UK Landlord Guide 2026"
+metaTitle: "Are HMO Licensing Fees Tax Deductible? UK Guide 2026"
 metaDescription: "Yes, HMO licensing fees are tax deductible for UK landlords. Cash basis vs accruals timing, capital vs revenue split on conversion costs"
 altText: "UK landlord reviewing HMO licensing documents and tax deduction paperwork on desk"
 image: ""

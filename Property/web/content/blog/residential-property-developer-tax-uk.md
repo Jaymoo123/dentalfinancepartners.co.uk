@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "Property Developer Tax UK 2026: Trading vs Investment, VAT, BADR"
+metaTitle: "Property Developer Tax UK 2026: Trading vs Investment"
 metaDescription: "UK property developer tax: trading vs investment test, income tax not CGT, VAT zero-rating on new builds, 5% conversion rate, corporation tax 19-25%"
 altText: "UK residential property developer reviewing tax documents and building plans on desk"
 image: ""

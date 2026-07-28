@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/non-resident-landlord-tax
 date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Non-Resident Landlord Tax"
-metaTitle: "Non-Resident Landlord Self Assessment Filing: UK Guide 2026/27"
+metaTitle: "Non-Resident Landlord Self Assessment: UK Guide 2026/27"
 metaDescription: "How non-UK resident landlords file Self Assessment: SA100/SA105/SA109, NRL scheme registration, 60-day CGT, double tax treaties, deadlines and penalties."
 metaTitle_prev: "Non-Resident Landlord Self Assessment: UK Filing Guide 2026"
 metaDescription_prev: "Complete guide to non resident landlord self assessment filing requirements. NRL tax return deadlines, forms, and compliance for UK property income."

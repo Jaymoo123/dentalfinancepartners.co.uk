@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/g
 date: "2026-05-27"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "Gas Safety Certificates (CP12): UK Landlord Guide and Tax Side"
+metaTitle: "Gas Safety Certificates (CP12): UK Landlord Tax Guide"
 metaDescription: "Annual reg.36 check under SI 1998/2451, Gas Safe Register, HSWA s.33 criminal offence, Trecarrell on Section 21, and the boiler capital/revenue line."
 altText: "A Gas Safe registered engineer checking a domestic combi boiler and flue during the landlord's annual gas safety inspection at a UK tenanted property"
 image: "https://images.pexels.com/photos/8005397/pexels-photo-8005397.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"

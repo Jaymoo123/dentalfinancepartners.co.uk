@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-05-27"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "Transferring Business Out of UK Limited Company: 5-Route Frame"
+metaTitle: "Transferring Business Out of UK Ltd Company: 5-Route Frame"
 metaDescription: "Property LtdCo exit routes 2026/27: asset sale, share sale, in-specie, MVL, strike-off. Disincorporation relief expired 2018. Honest tax cost comparison."
 altText: "A property founder sitting at a meeting-room table with a closed company file, dissolution form, and a property portfolio summary, representing the decision frame for transferring a property business out of a UK limited company"
 image: "https://images.pexels.com/photos/8730028/pexels-photo-8730028.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"

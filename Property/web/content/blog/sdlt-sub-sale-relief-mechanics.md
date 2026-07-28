@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "SDLT Sub-Sale Relief: Mechanics, Limits and Incorporation Myth"
+metaTitle: "SDLT Sub-Sale Relief: Mechanics, Limits, Incorporation Myth"
 metaDescription: "Section 45 FA 2003 sub-sale relief explained: pre-completion mechanics, the connected-party minimum rule"
 altText: "Two people shaking hands in front of a UK house, illustrating a pre-completion sub-sale transfer of rights under SDLT sub-sale relief"
 image: "https://images.pexels.com/photos/7578895/pexels-photo-7578895.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"

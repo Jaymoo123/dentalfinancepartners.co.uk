@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-gif
 date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Capital Gains Tax"
-metaTitle: "CGT Gifting Property to Family UK 2026: Rules, Reliefs, Examples"
+metaTitle: "CGT Gifting Property to Family UK 2026: Rules and Reliefs"
 metaDescription: "Gifting UK property triggers CGT at market value. Spouse exemption, s165 holdover relief on business assets, s260 trust route, PPR"
 altText: "UK family discussing property gift with CGT implications and tax documents"
 image: ""

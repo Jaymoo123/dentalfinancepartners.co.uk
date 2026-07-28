@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/r
 date: "2026-05-24"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "Section 21 Abolition Operational Guide: RRA 2025 for Landlords"
+metaTitle: "Section 21 Abolition: RRA 2025 Landlord Operating Guide"
 metaDescription: "Operating under reformed Section 8 grounds post-1-May-2026: notice periods, evidential pack composition, 12-month re-letting restriction"
 altText: "Landlord reviewing possession notice paperwork and a tenancy file at a desk, representing the operational mechanics of Section 8 grounds post-RRA 2025"
 image: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"

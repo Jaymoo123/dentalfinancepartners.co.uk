@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/how-
 date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Portfolio Management"
-metaTitle: "Scale Buy-to-Let 1 to 10 Properties: Finance, Tax, MTD Roadmap"
+metaTitle: "Scale Buy-to-Let 1 to 10 Properties: Tax, Finance, MTD"
 metaDescription: "Practical roadmap for scaling a UK BTL portfolio to 10 properties. Lender phases, deposit maths, Section 24 cash flow, MTD live"
 altText: "UK property investor reviewing portfolio expansion strategy documents with calculator and property listings"
 image: ""
