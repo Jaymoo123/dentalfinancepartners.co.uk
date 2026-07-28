@@ -1,13 +1,15 @@
 # wills-probate (Probate Compass) site state
 
-Last updated 2026-07-24 (SCAFFOLDED, pre-launch).
+Last updated 2026-07-28 (CONTENT BUILD COMPLETE, pre-deploy).
 
 brand_locked: true
 
 Placeholder brand "Probate Compass"; all content bodies brand-agnostic (zero
 brand-name mentions); real brand and domain decided at G1 pre-deploy. Site
-scaffolded + calculators + pillars + research assets 2026-07-24. Deploy
-gated on owner sign-off.
+scaffolded + calculators + pillars + research assets + waves 1-4 (~123 posts)
+all built and committed on `expansion/phase-0` (unpushed). One stray untracked
+post `how-much-does-it-cost-to-make-a-will.md` pending commit. Deploy still
+gated on owner G1 (brand + domain), which owner has NOT yet released.
 
 ## Identity
 
@@ -23,11 +25,12 @@ Topic pool ranked and wave-bucketed: wave1=14, wave2=13, wave3=28, wave4=64.
       blog_generator site_config, GSC/Bing client maps, IndexNow config,
       spinup_site + spinup_site_check registries, `sites/wills-probate.json`,
       CI build matrix entry
-- [ ] wills-probate/web scaffold (owned by a separate build track; not touched here)
-- [ ] Topic pool -> blog_topics seed (site_key=wills-probate)
-- [ ] Wave 1 content generation (14 topics)
-- [ ] Calculators + pillar pages + research assets build
-- [ ] Vercel project + domain (gated on real brand/domain decision at G1)
+- [x] wills-probate/web scaffold
+- [x] Topic pool -> blog_topics seed (site_key=wills-probate)
+- [x] Waves 1-4 content generation (~123 posts committed; nurture sequences done)
+- [x] Calculators + pillar pages + research assets build
+- [ ] Commit stray post `how-much-does-it-cost-to-make-a-will.md`
+- [ ] Vercel project + domain (gated on real brand/domain decision at G1 — HELD by owner 2026-07-28)
 - [ ] Request Indexing / GSC + Bing verification (post real-domain attach)
 
 ## Notes

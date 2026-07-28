@@ -1,13 +1,16 @@
 # divorce-finances (placeholder brand) site state
 
-Last updated 2026-07-24 (SCAFFOLDED, pre-launch).
+Last updated 2026-07-28 (Phases 0-5 COMPLETE; Phase 6 next, owner-GO'd).
 
 brand_locked: true
 
 Real brand and domain deferred to owner gate G1; all content bodies must stay
-brand-agnostic (zero brand-name mentions) until then. Phases 0-2 (scaffold +
-staging) complete and committed 2026-07-24; Phase 3 (integrate `_staging/` +
-fact-verify) is next.
+brand-agnostic (zero brand-name mentions) until then. Phases 0-5 complete and
+committed on `expansion/phase-0` (unpushed): scaffold, staging integrated,
+fact-verify done, engine registration, 5 calculators + 2 research assets + 4
+pillars + 3 commercial hubs, plus Phase-5 wave-1 (8 spokes). `_staging/`
+deleted. 5 wave-2 spokes sit UNTRACKED (07-24), pending commit + QA. Phase 6
+(nurture / Supabase migration / Vercel) approved by owner 2026-07-28.
 
 ## Identity
 
