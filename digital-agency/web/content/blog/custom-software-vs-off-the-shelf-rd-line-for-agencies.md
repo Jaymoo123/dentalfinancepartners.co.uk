@@ -26,7 +26,7 @@ faqs:
 - question: Does customising off-the-shelf software qualify for R&D tax credits?
   answer: No. Configuring existing software, adding plugins, or writing integration scripts does not qualify. The technological uncertainty was resolved by the original developer. Even extensive customisation of tools like Salesforce, HubSpot, or Monday.com is not R&D. Only genuinely novel technical development qualifies.
 - question: How much tax can my agency save by claiming R&D tax credits?
-  answer: For an SME agency, qualifying expenditure gets an enhanced deduction of 186%. If you spend £63,400 on qualifying R&D work, the deduction is £117,924. At 19% corporation tax, that saves £22,405. If your agency is loss-making, you can surrender the loss for a cash credit of up to 14.5% of qualifying expenditure. The actual saving depends on your specific costs and tax position.
+  answer: Under the merged R&D expenditure credit scheme (for accounting periods beginning on or after 1 April 2024), qualifying expenditure earns a 20% taxable above-the-line credit. If you spend £63,400 on qualifying R&D work, the gross credit is £12,680. Because the credit is itself taxable, the net benefit is around 15% of your spend for main-rate payers and up to 16.2% for loss-makers, so roughly £9,510 to £10,271 in this example. The actual saving depends on your specific costs and tax position.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -128,13 +128,13 @@ keyTakeaways:
 
 <h2>The Numbers: What You Could Claim</h2>
 
-<p>For an SME agency, the R&D tax credit works through an enhanced deduction on your corporation tax return. For qualifying expenditure, you can deduct 186% of the cost (for expenditure from 1 April 2023 onwards).</p>
+<p>The SME enhanced-deduction scheme (an extra 86% deduction for expenditure from 1 April 2023) has now been replaced. For accounting periods beginning on or after 1 April 2024, most companies claim under the merged R&D expenditure credit scheme. This gives a 20% taxable above-the-line credit on qualifying expenditure, rather than an enhanced deduction. (For accounting periods beginning 1 April 2023 to 31 March 2024, the old SME scheme with its 186% enhanced deduction still applied.)</p>
 
 <p>Here is a worked example. A 6-person creative agency spends £63,400 on qualifying R&D work over the year. That includes £48,000 in salary costs for two developers working 60% of their time on the project, plus £15,400 in subcontractor costs and software licences.</p>
 
-<p>The enhanced deduction is £63,400 x 186% = £117,924. That reduces the agency's taxable profit. If the agency is paying 19% corporation tax (small profits rate), the tax saving is £117,924 x 19% = £22,405.</p>
+<p>The gross credit is £63,400 x 20% = £12,680. Because the credit is itself taxable, the net benefit for a main-rate payer is around 15% of qualifying spend, which works out at roughly £9,510 in this example.</p>
 
-<p>If the agency is loss-making, you can surrender the loss for a cash credit of up to 14.5% of the qualifying expenditure. That is a direct cash payment from HMRC.</p>
+<p>If the agency is loss-making, the net benefit rises to up to 16.2% of qualifying expenditure, about £10,271 here, and it can be claimed as a direct cash payment from HMRC.</p>
 
 <h2>Common Mistakes Agencies Make</h2>
 

@@ -25,7 +25,7 @@ faqs:
 - question: Do I need to file P11D forms for my agency?
   answer: Yes, if you provide benefits in kind to employees or directors, private medical insurance, company cars, interest-free loans over £10,000, or gym memberships. P11D forms are due by 6 July after the tax year end. Class 1A NIC on the benefits is due by 19 July.
 - question: Can my agency claim R&D tax credits?
-  answer: 'Yes, if you develop new software, create proprietary tools, automate processes, or solve technical problems. The SME scheme provides a 186% enhanced deduction. You need proper documentation: project plans, technical reports, and cost breakdowns. HMRC is scrutinising claims more heavily, so work with an experienced accountant.'
+  answer: 'Yes, if you develop new software, create proprietary tools, automate processes, or solve technical problems. For accounting periods beginning on or after 1 April 2024, the merged R&D scheme gives a 20% taxable above-the-line credit, worth roughly 15p to 16.2p per £1 of qualifying spend after corporation tax. Loss-making, R&D-intensive SMEs (R&D of at least 30% of total spend) can instead claim enhanced relief worth up to about 27p per £1. You need proper documentation: project plans, technical reports, and cost breakdowns. HMRC is scrutinising claims more heavily, so work with an experienced accountant.'
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -249,9 +249,9 @@ keyTakeaways:
 
 <h3>The Numbers</h3>
 
-<p>For accounting periods starting on or after 1 April 2024, the SME R&D scheme provides a 186% enhanced deduction. If you spend £100,000 on qualifying R&D, you can deduct £186,000 from your profits. At 19% corporation tax, that saves £35,340.</p>
+<p>For accounting periods beginning on or after 1 April 2024, the merged R&D scheme provides a 20% taxable above-the-line credit. If you spend £100,000 on qualifying R&D, the credit is £20,000. Because the credit is itself taxable, it is worth about £15,000 net for main-rate payers, or up to £16,200 for companies taxed at the 19% small-profits rate.</p>
 
-<p>Loss-making agencies can claim a payable credit, though the rates have been reduced. The rules changed significantly from April 2024. HMRC is also scrutinising claims more heavily. You need proper documentation: project plans, technical reports, timesheets, cost breakdowns.</p>
+<p>Loss-making agencies claim the same 20% credit as a cash payment, worth up to about £16,200 net per £100,000 of qualifying spend. Loss-making, R&D-intensive SMEs (where R&D is at least 30% of total expenditure) can instead claim enhanced R&D-intensive support (ERIS): an extra 86% deduction plus a payable credit of 14.5% of the surrenderable loss, worth up to about 27p per £1. The rules changed significantly from April 2024. HMRC is also scrutinising claims more heavily. You need proper documentation: project plans, technical reports, timesheets, cost breakdowns.</p>
 
 <p>We have written extensively on this in our <a href="/blog/tax-and-compliance">tax and compliance blog</a>.</p>
 

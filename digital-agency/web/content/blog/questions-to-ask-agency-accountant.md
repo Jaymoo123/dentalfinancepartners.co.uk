@@ -95,7 +95,7 @@ keyTakeaways:
 
 <h2>9. "What Is Your Approach to R&D Tax Credits?"</h2>
 <p>Many agencies qualify for R&D tax credits and do not know it. If you build proprietary software, develop new algorithms, or create tools that improve your service delivery, you may have a claim.</p>
-<p>Ask your potential accountant if they have experience with R&D claims for agencies. The SME scheme offers an enhanced deduction of 186% on qualifying costs (for expenditure after April 2023). That means a £10,000 qualifying cost becomes £28,600 in deductions, reducing your corporation tax bill significantly.</p>
+<p>Ask your potential accountant if they have experience with R&D claims for agencies. For accounting periods beginning on or after 1 April 2024, the merged R&D scheme offers a taxable above-the-line credit worth 20% of your qualifying costs. That means £10,000 of qualifying spend generates a £2,000 credit, worth around £1,500 after tax, reducing your corporation tax bill. The older 86% enhanced deduction route (for accounting periods beginning 1 April 2023 to 31 March 2024) now applies only to loss-making, R&D-intensive SMEs, where qualifying R&D is at least 30% of total spend.</p>
 <p>But be careful. There are many R&D claim mills that submit aggressive claims and leave clients exposed to HMRC enquiries. A good accountant will help you understand what qualifies and what does not, and will document the claim properly so it stands up to scrutiny.</p>
 
 <h2>10. "How Do You Charge, and What Is Included?"</h2>

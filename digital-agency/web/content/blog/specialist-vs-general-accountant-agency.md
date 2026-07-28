@@ -74,7 +74,7 @@ keyTakeaways:
 <p>Take a digital agency making £180k profit. A general accountant might pay the full £180k as salary and dividends, pushing the director into higher rate tax. A specialist would structure a £12,570 salary plus dividends up to the basic rate threshold, saving the director thousands in income tax and National Insurance every year.</p>
 
 <h3>R&D Tax Credits</h3>
-<p>Many agencies qualify for R&D tax credits and do not know it. If you have built custom software, developed a proprietary analytics tool, or automated a manual process, you may have a claim. The enhanced deduction is 186% of qualifying costs under the current SME scheme.</p>
+<p>Many agencies qualify for R&D tax credits and do not know it. If you have built custom software, developed a proprietary analytics tool, or automated a manual process, you may have a claim. For accounting periods beginning on or after 1 April 2024, the merged R&D scheme gives a single 20% taxable expenditure credit on qualifying costs, worth around 15% net after corporation tax (about 16.2% for a loss-maker). The old 186% SME enhanced deduction applied only to periods beginning before 1 April 2024; loss-making R&D-intensive SMEs can instead claim under ERIS.</p>
 <p>A general accountant will not ask about your development work. A specialist will run a full R&D review and identify qualifying projects you had not considered. We have seen agencies claim £40k-£80k in cash credits that their previous accountant missed entirely.</p>
 
 <h3>VAT Efficiency</h3>

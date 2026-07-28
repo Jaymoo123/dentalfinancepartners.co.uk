@@ -17,14 +17,14 @@ imageCredit:
   source: Pexels
 h1: 'R&D Tax Credits for Marketing Agencies: What Qualifies and What Doesn''t'
 summary: Marketing agencies often miss out on R&D tax credits because they assume their work doesn't qualify. But if you're building new tools, automating processes, or solving technical problems, you might have a valid claim. Here's what HMRC looks for and what gets rejected.
-schema: ''
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Agency Founder Finance","url":"https://www.agencyfounderfinance.co.uk","areaServed":["United Kingdom","United Arab Emirates"],"knowsAbout":["Agency tax planning","Creative agency accounting","Digital agency finance","IR35 for contractors","Agency exit and acquisition","UAE corporate tax","R&D tax credits for digital agencies"]},{"@type":"Person","name":"Agency Founder Finance Editorial Team","jobTitle":"Specialist agency accountant","knowsAbout":["UK agency taxation","IR35","Agency incorporation","Marketing agency finance","UAE tax for UK founders"],"worksFor":{"@type":"Organization","name":"Agency Founder Finance","url":"https://www.agencyfounderfinance.co.uk"}},{"@type":"Article","headline":"R&D Tax Credits for Marketing Agencies: What Qualifies and What Doesn''t","description":"R&D tax credits for marketing agencies aren''t automatic. We explain what qualifies, what HMRC rejects, and how to claim without triggering an enquiry.","url":"https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-tax-credits-marketing-agencies","datePublished":"2026-05-16","dateModified":"2026-05-17","author":{"@type":"Person","name":"Agency Founder Finance Editorial Team","jobTitle":"Specialist agency accountant","knowsAbout":["UK agency taxation","IR35","Agency incorporation","Marketing agency finance","UAE tax for UK founders"],"worksFor":{"@type":"Organization","name":"Agency Founder Finance","url":"https://www.agencyfounderfinance.co.uk"}},"publisher":{"@type":"AccountingService","name":"Agency Founder Finance","url":"https://www.agencyfounderfinance.co.uk","areaServed":["United Kingdom","United Arab Emirates"],"knowsAbout":["Agency tax planning","Creative agency accounting","Digital agency finance","IR35 for contractors","Agency exit and acquisition","UAE corporate tax","R&D tax credits for digital agencies"]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-tax-credits-marketing-agencies"},"inLanguage":"en-GB","image":"https://www.agencyfounderfinance.co.uk/blog/rd-tax-credits-marketing-agencies.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.agencyfounderfinance.co.uk"},{"@type":"ListItem","position":2,"name":"Tax and Compliance","item":"https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance"},{"@type":"ListItem","position":3,"name":"R&D Tax Credits for Marketing Agencies: What Qualifies and What Doesn''t","item":"https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-tax-credits-marketing-agencies"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can a marketing agency claim R&D tax credits for developing client campaigns?","acceptedAnswer":{"@type":"Answer","text":"Almost never. Developing a marketing campaign, even a complex one, is not R&D unless it involves resolving a genuine scientific or technological uncertainty. The creative and strategic work of campaign planning doesn''t qualify. The only exception is if the campaign requires building new technology or software to deliver it, and that technology development involves technical uncertainty."}},{"@type":"Question","name":"What documentation do I need to support an R&D claim?","acceptedAnswer":{"@type":"Answer","text":"You need a technical narrative for each qualifying project, contemporaneous records showing the work happened (emails, project plans, technical specs), time allocation records for staff, and a cost breakdown with supporting invoices and payroll reports. HMRC will ask for these if they open an enquiry, so keep them organised."}},{"@type":"Question","name":"How much can a marketing agency typically claim for R&D tax credits?","acceptedAnswer":{"@type":"Answer","text":"It varies significantly. Under the merged R&D scheme you get a 20% credit on qualifying costs, so an agency spending £30k on qualifying development gets a credit of around £6,000, keeping roughly £4,500 to £4,860 after the credit is taxed. A larger agency spending £200k could see a £40,000 credit, keeping around £30,000. Only genuinely qualifying costs count."}},{"@type":"Question","name":"What happens if HMRC rejects my R&D claim?","acceptedAnswer":{"@type":"Answer","text":"HMRC will open an enquiry and ask for supporting evidence. If you have proper documentation and a strong technical narrative, most enquiries are resolved without losing the claim. If the claim was speculative or poorly documented, HMRC may deny it entirely and could apply penalties if they believe the claim was negligent. That''s why it''s better to claim correctly the first time, or not at all."}}]}]}'
 faqs:
 - question: Can a marketing agency claim R&D tax credits for developing client campaigns?
   answer: Almost never. Developing a marketing campaign, even a complex one, is not R&D unless it involves resolving a genuine scientific or technological uncertainty. The creative and strategic work of campaign planning doesn't qualify. The only exception is if the campaign requires building new technology or software to deliver it, and that technology development involves technical uncertainty.
 - question: What documentation do I need to support an R&D claim?
   answer: You need a technical narrative for each qualifying project, contemporaneous records showing the work happened (emails, project plans, technical specs), time allocation records for staff, and a cost breakdown with supporting invoices and payroll reports. HMRC will ask for these if they open an enquiry, so keep them organised.
 - question: How much can a marketing agency typically claim for R&D tax credits?
-  answer: It varies significantly. A small agency spending £30k on qualifying development might save around £10k in corporation tax or receive a cash credit of a similar amount. A larger agency spending £200k could save £70k+. The key is that only genuinely qualifying costs count, so the claim size depends on how much technical development you're actually doing.
+  answer: It varies significantly. Under the merged R&D scheme you get a 20% credit on qualifying costs, so an agency spending £30k on qualifying development gets a credit of around £6,000, keeping roughly £4,500 to £4,860 after the credit is taxed. A larger agency spending £200k could see a £40,000 credit, keeping around £30,000. The key is that only genuinely qualifying costs count, so the claim size depends on how much technical development you're actually doing.
 - question: What happens if HMRC rejects my R&D claim?
   answer: HMRC will open an enquiry and ask for supporting evidence. If you have proper documentation and a strong technical narrative, most enquiries are resolved without losing the claim. If the claim was speculative or poorly documented, HMRC may deny it entirely and could apply penalties if they believe the claim was negligent. That's why it's better to claim correctly the first time, or not at all.
 authorSlug: james-whitfield
@@ -97,35 +97,36 @@ keyTakeaways:
 
 <p>A common mistake I see: an agency spends six months building a complex multi-channel campaign that involves personalised content, dynamic creative optimisation, and real-time bidding. The project is technically challenging and produces great results. But if the underlying technology is all existing tools used in standard ways, it doesn't qualify. The challenge was operational, not technological.</p>
 
-<h2>The Two R&D Schemes: SME vs RDEC</h2>
+<h2>How the Merged R&D Scheme Works</h2>
 
-<p>There are two separate R&D tax credit schemes in the UK. Which one applies depends on your company size and circumstances.</p>
+<p>For accounting periods beginning on or after 1 April 2024, the old SME and RDEC schemes were combined into a single merged scheme. Most marketing agencies now claim under this one scheme regardless of size.</p>
 
-<h3>SME R&D Relief</h3>
+<h3>The Merged Scheme Credit</h3>
 
-<p>If your agency has fewer than 500 employees and either turnover under €100 million or a balance sheet under €86 million, you're likely an SME for R&D purposes. The SME scheme is more generous:</p>
+<p>The merged scheme gives you a 20% above-the-line expenditure credit on your qualifying R&D costs. The credit is taxable, so the benefit you actually keep depends on your corporation tax rate:</p>
 
 <ul>
-<li>You can claim an enhanced deduction of 186% of qualifying R&D expenditure against your taxable profits</li>
-<li>If you're loss-making, you can surrender those losses for a cash credit worth up to 14.5% of the enhanced expenditure</li>
-<li>For profit-making companies, the effective benefit is around 25p per £1 spent on qualifying R&D</li>
+<li>A main-rate payer (25%) nets around 15p per £1 of qualifying spend</li>
+<li>A company on the 19% small profits rate, or a loss-maker whose credit is taxed notionally at 19%, nets around 16.2p per £1</li>
 </ul>
 
-<p>Example: a 12-person digital agency billing £800k per year spends £60,000 on qualifying R&D (developer salaries, software licenses, and subcontractor costs for building a proprietary analytics platform). The enhanced deduction is £60,000 x 186% = £111,600. If the agency is profitable at the 19% small profits rate, the tax saving is £111,600 x 19% = £21,204.</p>
+<p>Example: a 12-person digital agency billing £800k per year spends £60,000 on qualifying R&D (developer salaries, software licences, and subcontractor costs for building a proprietary analytics platform). The 20% credit is £60,000 x 20% = £12,000. After the credit is taxed, a main-rate payer keeps around £9,000 and a company at the 19% rate keeps around £9,720.</p>
 
-<h3>RDEC (Research and Development Expenditure Credit)</h3>
+<p>For context, an agency whose accounting period began between 1 April 2023 and 31 March 2024 would have used the old SME scheme, which enhanced qualifying spend by 86% and produced a larger headline figure. That regime is now closed for new periods, so budget against the merged scheme numbers above.</p>
 
-<p>If your agency is large (over the SME thresholds), or if you've received a grant or subsidy that excludes you from the SME scheme, you use RDEC. The credit is 20% of qualifying expenditure, but it's taxable. The net benefit is roughly 15-16p per £1 spent.</p>
+<h3>Enhanced Support for R&D-Intensive SMEs (ERIS)</h3>
 
-<p>Most agencies will use the SME scheme. But if you've taken a grant from Innovate UK or a similar body, check with your accountant before filing. The grant may push you into RDEC.</p>
+<p>If you're a loss-making SME and your qualifying R&D is at least 30% of your total expenditure, you may instead claim under Enhanced R&D Intensive Support (ERIS). This gives an extra 86% deduction plus a payable credit worth 14.5% of the surrenderable loss, worth up to around 27p per £1 of qualifying spend. Most agencies won't hit the 30% intensity threshold, but a heavily technical, pre-profit agency might.</p>
+
+<p>If you've taken a grant from Innovate UK or a similar body, check with your accountant before filing. Grants and subsidies can affect how much you can claim and which route applies.</p>
 
 <h2>What Costs Can You Claim?</h2>
 
-<p>For an SME agency, the qualifying costs are:</p>
+<p>For a merged-scheme claim, the qualifying costs are:</p>
 
 <ul>
 <li><strong>Staff costs</strong>, salaries, employer NI, and pension contributions for employees directly involved in the R&D work. This includes the proportion of time spent on qualifying projects</li>
-<li><strong>Subcontractor costs</strong>, if you subcontract R&D work to another company, you can claim 65% of the payment. If you subcontract to an individual (sole trader or partnership), you can claim 100%</li>
+<li><strong>Subcontractor costs</strong>, if you contract out qualifying R&D, you can generally claim 65% of each payment made to an unconnected subcontractor. Under the merged scheme it's the company that decided to undertake the R&D that makes the claim, so there is no separate 100% rate for individuals. For connected subcontractors you use the lower of the payment and the subcontractor's actual qualifying cost</li>
 <li><strong>Software licenses</strong>, costs of software directly used in the R&D work</li>
 <li><strong>Consumables</strong>, materials and items consumed or transformed in the R&D work. Cloud computing costs for running models or storing data often qualify here</li>
 <li><strong>Externally provided workers</strong>, agency workers supplied by a third party, where they're under your supervision and direction</li>

@@ -24,7 +24,7 @@ faqs:
 - question: When is corporation tax due for my agency?
   answer: Corporation tax is due 9 months and 1 day after your company's accounting period ends. For a 31 March 2026 year-end, payment is due by 1 January 2027. The CT600 filing deadline is 12 months after year-end. Miss these dates and HMRC charges interest and penalties.
 - question: Can my agency claim R&D tax credits?
-  answer: Yes, if your agency is developing new software tools, AI platforms, automation processes, or novel campaign measurement systems. Many digital and creative agencies qualify. The SME scheme offers a 186% enhanced deduction on qualifying expenditure. Ask your accountant before year-end if you think you might qualify.
+  answer: Yes, if your agency is developing new software tools, AI platforms, automation processes, or novel campaign measurement systems. Many digital and creative agencies qualify. For accounting periods beginning on or after 1 April 2024, the merged R&D scheme gives a single 20% taxable expenditure credit on qualifying spend, worth roughly 15% net after corporation tax. The old 186% SME enhanced deduction applied only to periods beginning before 1 April 2024. Ask your accountant before year-end if you think you might qualify.
 - question: What expenses can I deduct from my agency's corporation tax?
   answer: Staff salaries, software subscriptions, rent, marketing costs, professional fees, travel for client meetings, equipment (subject to capital allowances), and training are all deductible. Client entertaining is not deductible. Dividends paid to shareholders are not deductible either. Keep receipts for everything.
 authorSlug: james-whitfield

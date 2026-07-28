@@ -20,9 +20,9 @@ summary: SaaS agencies that build bespoke software often miss out on R&D tax cre
 schema: ''
 faqs:
 - question: What's the minimum spend on R&D for a SaaS agency to make a claim worthwhile?
-  answer: There's no legal minimum, but practically, we'd suggest not claiming for less than £10,000 in qualifying costs. The administrative effort and the risk of HMRC scrutiny mean that smaller claims often aren't worth the hassle. For a profitable agency, £10,000 in qualifying spend saves roughly £3,500 in corporation tax. That's meaningful, but you'll spend time preparing the claim. If your qualifying spend is under £5,000, it's probably not worth it unless it's part of a larger claim across multiple projects.
+  answer: There's no legal minimum, but practically, we'd suggest not claiming for less than £10,000 in qualifying costs. The administrative effort and the risk of HMRC scrutiny mean that smaller claims often aren't worth the hassle. For a profitable agency, £10,000 in qualifying spend is worth roughly £1,500 after tax (a 20% credit of £2,000, worth about 15% net). That's meaningful, but you'll spend time preparing the claim. If your qualifying spend is under £5,000, it's probably not worth it unless it's part of a larger claim across multiple projects.
 - question: Can I claim R&D tax credits if my agency is loss-making?
-  answer: Yes, and it can be more valuable than for profitable agencies. Under the SME scheme, loss-making companies can surrender their R&D losses for a cash payment. For R&D intensive companies (where qualifying R&D spend is 30% or more of total costs), you can get up to 14.5% of the surrenderable loss as cash. For other companies, it's 10%. That means a £50,000 qualifying spend could generate £7,250 in cash. The cash is tax-free and can be a significant boost for early-stage SaaS agencies that are investing heavily in development.
+  answer: Yes, and it can be more valuable than for profitable agencies. Under the merged R&D scheme (for accounting periods beginning on or after 1 April 2024), a loss-making company can claim the 20% above-the-line credit and take the unused amount as a cash payment. After the notional tax restriction, that is worth around 16.2% of qualifying spend, so a £50,000 qualifying spend could generate roughly £8,100 in cash. If your agency is a loss-making, R&D-intensive SME (qualifying R&D of 30% or more of total costs), you can instead claim under Enhanced R&D Intensive Support (ERIS), which keeps the older 86% enhanced deduction plus a 14.5% payable credit and can be worth up to around 27p per £1, or about £13,485 on £50,000. That cash boost can be significant for early-stage SaaS agencies investing heavily in development.
 - question: How far back can I claim R&D tax credits for my SaaS agency?
   answer: You have two years from the end of the accounting period to submit a claim. For example, if your accounting year ends on 31 March 2024, you have until 31 March 2026 to file the claim. You can also amend a previous year's corporation tax return to include an R&D claim, provided the amendment is made within 12 months of the filing deadline. If you've never claimed before, you can go back up to two accounting periods. After that, the claims are time-barred. So if you've been doing qualifying work for years, act now before you lose the ability to claim.
 - question: Will claiming R&D tax credits increase my chances of an HMRC investigation?
@@ -34,7 +34,7 @@ keyTakeaways:
 - Qualifying R&D includes developing novel algorithms, custom integrations, or data processing solutions with no off-the-shelf alternative.
 - Routine web development using established methods, such as building Shopify stores or integrating Stripe, does not qualify for R&D tax credits.
 - HMRC's R&D test requires a project to seek an advance in science or technology by resolving scientific or technological uncertainty.
-- SME R&D relief and the RDEC scheme are the two main R&D tax credit routes, with eligibility depending on your agency's size and circumstances.
+- The merged R&D scheme (accounting periods beginning on or after 1 April 2024) gives a 20% above-the-line credit, worth about 15% net for profitable agencies and 16.2% for loss-makers, with enhanced ERIS relief for loss-making, R&D-intensive SMEs.
 ---
 <p>If your SaaS agency builds bespoke software for clients, you might be leaving thousands of pounds on the table. R&D tax credits aren't just for pharmaceutical companies or hardware engineers. They apply to software development too, provided the work involves technical uncertainty.</p>
 
@@ -73,26 +73,26 @@ keyTakeaways:
 
 <p>Similarly, routine software maintenance, bug fixes, and performance optimisation using standard techniques don't qualify. If you're applying known solutions to known problems, HMRC won't accept it.</p>
 
-<h2>The Two R&D Schemes and How They Apply to SaaS Agencies</h2>
+<h2>The Merged R&D Scheme and How It Applies to SaaS Agencies</h2>
 
-<p>There are two main schemes, and which one you use depends on your company's size and circumstances.</p>
+<p>For accounting periods beginning on or after 1 April 2024, the old separate SME and RDEC schemes were replaced by a single merged R&D scheme. Most SaaS agencies now claim under this one set of rules, whatever their size.</p>
 
-<h3>SME R&D Relief</h3>
+<h3>The Merged Scheme</h3>
 
-<p>If your agency has fewer than 500 employees and either turnover under €100 million or a balance sheet under €86 million, you're likely an SME for R&D purposes. The SME scheme gives you:</p>
+<p>The merged scheme works as an above-the-line credit rather than an enhanced deduction. It gives you:</p>
 
 <ul>
-<li>An enhanced deduction of 186% on qualifying R&D expenditure (for accounting periods starting on or after 1 April 2023). That means for every £100 you spend on qualifying R&D, you can deduct £186 from your taxable profits.</li>
-<li>If you're loss-making, you can surrender those losses for a cash payment, up to 14.5% of the surrenderable loss for R&D intensive companies, or 10% for others.</li>
+<li>A taxable expenditure credit of 20% of your qualifying R&D spend. For every £100 you spend on qualifying R&D, you receive a £20 credit.</li>
+<li>Because the credit is itself taxable, the net benefit is around 15% for profitable, main-rate agencies and about 16.2% for loss-makers (where a lower notional tax restriction applies).</li>
 </ul>
 
-<p>For a profitable agency spending £50,000 on qualifying R&D, the enhanced deduction reduces your taxable profit by £93,000. At 19% corporation tax, that's a tax saving of £17,670. If you're loss-making, the cash credit can be even more valuable.</p>
+<p>For a profitable agency spending £50,000 on qualifying R&D, that is a 20% credit of £10,000, worth around £7,500 after tax (roughly 15% of the spend). A loss-making agency claiming the same £50,000 would see a net benefit nearer £8,100 (about 16.2%), and can take the credit as cash.</p>
 
-<h3>RDEC (Research and Development Expenditure Credit)</h3>
+<h3>ERIS for R&D-Intensive Loss-Makers</h3>
 
-<p>If your agency is too large for the SME scheme, or if you're claiming for subsidised or contracted R&D, you'll use the RDEC scheme. RDEC gives you a taxable credit of 20% of qualifying expenditure. After tax, that works out at around 15-16% net benefit.</p>
+<p>There is one important exception. If your agency is a loss-making SME whose qualifying R&D is at least 30% of total expenditure, you can claim under Enhanced R&D Intensive Support (ERIS) instead. ERIS keeps the older-style 86% enhanced deduction plus a 14.5% payable credit, which can be worth up to around 27p per £1 of qualifying spend. On £50,000 of qualifying R&D, that is up to roughly £13,485 in tax-free cash, considerably more than the merged-scheme route.</p>
 
-<p>Most SaaS agencies will use the SME scheme. But if you've received grant funding for your R&D work, or if you're a large group, RDEC may apply.</p>
+<p>Before the merged scheme, agencies claimed under the SME scheme (an 86% enhanced deduction plus a payable credit for accounting periods beginning 1 April 2023 to 31 March 2024, and a 130% deduction before that) or under the old RDEC. Those routes no longer apply to new expenditure, but the dates still matter when you are claiming for older periods.</p>
 
 <h2>What Costs Can You Include?</h2>
 
@@ -147,7 +147,7 @@ keyTakeaways:
 
 <p>Not every SaaS agency should claim R&D tax credits. If your work is genuinely routine, building standard websites, integrating standard APIs, applying known techniques, then claiming would be a mistake. HMRC will reject it, and you'll waste time and money on the process.</p>
 
-<p>But if you're building bespoke software that pushes technical boundaries, the R&D tax credits for SaaS agency work can be substantial. A £30,000 claim for a profitable agency saves over £10,000 in corporation tax. For a loss-making agency, the cash credit can be a lifeline.</p>
+<p>But if you're building bespoke software that pushes technical boundaries, the R&D tax credits for SaaS agency work can be substantial. A £30,000 claim for a profitable agency is worth around £4,500 after tax (a 20% credit of £6,000, worth about 15% net). For a loss-making agency, the cash credit can be a lifeline, and an R&D-intensive one claiming under ERIS could see closer to £8,000.</p>
 
 <p>The threshold is lower than most founders think. You don't need to be inventing a new programming language or building a quantum computer. You just need to be working on problems that didn't have known solutions at the time.</p>
 

@@ -33,7 +33,7 @@ keyTakeaways:
 - A general accountant handles compliance but misses agency-specific tax reliefs like Creative Sector Tax Relief and R&D credits.
 - An agency specialist understands your revenue model, structuring cash flow differently for retainer vs. project income.
 - IR35 compliance is critical for agencies using contractors; a specialist helps issue SDS and avoid HMRC penalties.
-- R&D tax credits can save your agency £3,534 per £10,000 of qualifying spend under the 186% SME enhanced deduction.
+- R&D tax credits can save your agency around £1,500 per £10,000 of qualifying spend under the merged 20% R&D scheme.
 - Your dividend strategy should change when profits cross £50k; an agency accountant optimises this for tax efficiency.
 ---
 <p>If you run a marketing agency, a digital agency, or a creative agency in the UK, your accountant is not optional admin. They are a strategic partner who directly affects your tax bill, your cash flow, and your exit value.</p>
@@ -74,7 +74,7 @@ keyTakeaways:
 
 <p>Many agency founders do not realise they qualify for R&D tax credits. If your agency develops new software, builds custom platforms, creates algorithms, or solves technical challenges in a way that is not readily available, you may have a claim.</p>
 
-<p>The enhanced deduction under the SME scheme is 186% for qualifying expenditure. That means for every £10,000 you spend on qualifying R&D, you can deduct £18,600 from your taxable profits. At 19% corporation tax, that is a £3,534 saving. At 25%, it is £4,650.</p>
+<p>For accounting periods beginning on or after 1 April 2024, the merged R&D scheme applies. It gives a taxable above-the-line credit worth 20% of your qualifying expenditure. So for every £10,000 you spend on qualifying R&D, you receive a £2,000 credit, worth around £1,500 after corporation tax for a profit-making agency. The older 86% enhanced deduction plus 14.5% payable credit route (in place for accounting periods beginning 1 April 2023 to 31 March 2024) now survives only for loss-making, R&D-intensive SMEs, where qualifying R&D is at least 30% of total spend.</p>
 
 <p>Creative agencies also need to know about the Creative Sector Tax Relief, which applies to film, animation, high-end television, video games, and theatre productions. If your agency produces original content, this is worth investigating.</p>
 

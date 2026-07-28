@@ -126,7 +126,7 @@ keyTakeaways:
 
 <h2>R&D Tax Credits for Agencies</h2>
 
-<p>Many agency founders assume R&D tax credits are for scientists and engineers. They are not. If your agency develops new software, automates processes, or builds proprietary tools, you may qualify. The SME scheme gives an enhanced deduction of 186% on qualifying costs (for accounting periods starting before April 2023, it was 230%). That means a £10,000 qualifying cost gives you a £28,600 deduction. If your agency is loss-making, you can surrender the loss for a cash payment.</p>
+<p>Many agency founders assume R&D tax credits are for scientists and engineers. They are not. If your agency develops new software, automates processes, or builds proprietary tools, you may qualify. For accounting periods beginning on or after 1 April 2024, the merged R&D scheme gives a taxable above-the-line credit worth 20% of your qualifying costs. That means £10,000 of qualifying spend generates a £2,000 credit, worth roughly £1,500 to £1,620 after tax. The older 86% enhanced deduction plus payable credit route (for accounting periods beginning 1 April 2023 to 31 March 2024) now applies only to loss-making, R&D-intensive SMEs, where qualifying R&D is at least 30% of total spend. If your agency is loss-making, you can still surrender the loss for a cash payment.</p>
 
 <p>An agency accountant identifies qualifying activities. They review your project notes, your developer time records, and your subcontractor costs. They prepare the claim and file it with HMRC. A general accountant often misses this because they do not know what "R&D" looks like in an agency context.</p>
 

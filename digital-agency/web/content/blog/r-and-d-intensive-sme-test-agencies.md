@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'R&D Intensive SME Test: ERIS Relief for Agencies'
-metaDescription: 'UK agency founders: if your R&D spend is 30%+ of total costs, loss-making SMEs can claim ERIS, worth up to 26.97p per pound of qualifying spend. Here’s how it works.'
+metaDescription: 'UK agency founders: if R&D spend is 30%+ of costs, loss-making SMEs can claim ERIS, worth up to 26.97p per pound of qualifying spend. Here’s how it works.'
 altText: Agency founder reviewing R&D tax credit calculations with accountant in a modern UK office
 image: /blog/r-and-d-intensive-sme-test-agencies.jpg
 imageCredit:
@@ -20,7 +20,7 @@ summary: If your agency spends 30% or more of its total costs on qualifying R&D 
 schema: ''
 faqs:
 - question: What is the R&D intensive SME rate for agencies from 1 April 2024?
-  answer: For accounting periods beginning on or after 1 April 2024, the intensive route is Enhanced R&D Intensive Support (ERIS). The intensity threshold is 30% of total expenditure. ERIS gives an 86% enhanced deduction and a 14.5% payable credit for loss-making R&D-intensive SMEs. The 27% payable credit only applied to the transitional period (accounting periods 1 April 2023 to 31 March 2024) and does not apply to post-April 2024 periods.
+  answer: For accounting periods beginning on or after 1 April 2024, the intensive route is Enhanced R&D Intensive Support (ERIS). The intensity threshold is 30% of total expenditure. ERIS gives an 86% enhanced deduction and a 14.5% payable credit on the surrendered loss for loss-making R&D-intensive SMEs, worth up to about 27p per pound of qualifying spend. That 27p is the net benefit, not a credit rate. The transitional intensive route (accounting periods 1 April 2023 to 31 March 2024) used the same 86% enhancement and 14.5% credit, but applied a higher 40% intensity threshold.
 - question: How do I calculate if my agency is R&D intensive?
   answer: Divide your qualifying R&D expenditure by your total costs (all revenue expenditure plus capitalised R&D costs). If the result is 30% or higher, you are intensive. For example, an agency with £400k R&D spend and £1.2m total costs is at 33.3% and qualifies.
 - question: Can a profitable agency benefit from the intensive SME route?
@@ -30,17 +30,17 @@ faqs:
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- For accounting periods beginning on or after 1 April 2024, the old intensive SME 27% payable credit and 186% enhanced deduction are replaced by the merged scheme and ERIS (Enhanced R&D Intensive Support).
+- For accounting periods beginning on or after 1 April 2024, loss-making R&D-intensive SMEs claim Enhanced R&D Intensive Support (ERIS), giving an 86% enhanced deduction and a 14.5% payable credit on the surrendered loss, worth up to about 27p per pound net; profitable intensive SMEs move to the merged 20% scheme.
 - Under ERIS (from 1 April 2024), the intensity threshold is 30% of total expenditure, giving an 86% enhanced deduction and a 14.5% payable credit for loss-making R&D-intensive SMEs.
-- The 27% payable credit and 186% enhanced deduction described in this article applied only to the transitional period (accounting periods beginning 1 April 2023 to 31 March 2024); do not use these rates for post-1-April-2024 periods.
+- The 86% enhancement and 14.5% payable credit did not change between the transitional period and ERIS; what changed is the intensity threshold, which fell from 40% (accounting periods 1 April 2023 to 31 March 2024) to 30% from 1 April 2024.
 - Total costs include all revenue expenditure in the profit and loss account plus capitalised R&D costs and intangible assets.
 - To qualify for ERIS, you must be an SME (fewer than 500 employees, turnover under €100m or gross assets under €86m) and loss-making on a trading basis with R&D spend at least 30% of total costs.
 ---
 <p>If your agency is spending heavily on developing new software, tools, or processes, the standard R&D tax credit scheme already gives you a decent return. But if your R&D spend is high relative to your total costs, you may qualify for an enhanced route: the R&D intensive support mechanism.</p>
 
-<p><strong>Important: the rates described in this article apply to accounting periods starting between 1 April 2023 and 31 March 2024 (the transitional intensive SME period).</strong> For accounting periods beginning on or after 1 April 2024, the merged scheme fully replaces the old SME regime, and the intensive route is now called <strong>Enhanced R&D Intensive Support (ERIS)</strong>. ERIS gives a <strong>14.5% payable credit</strong> and an <strong>86% enhanced deduction</strong> for qualifying loss-making SMEs whose R&D spend is at least 30% of total costs. Do not use the 27% rate or the 186% deduction for post-1-April-2024 periods.</p>
+<p><strong>Important: the rates described in this article apply to accounting periods starting between 1 April 2023 and 31 March 2024 (the transitional intensive SME period).</strong> For accounting periods beginning on or after 1 April 2024, the merged scheme fully replaces the old SME regime, and the intensive route is now called <strong>Enhanced R&D Intensive Support (ERIS)</strong>. ERIS gives a <strong>14.5% payable credit</strong> on the surrendered loss and an <strong>86% enhanced deduction</strong> for qualifying loss-making SMEs whose R&D spend is at least 30% of total costs. That 14.5% credit is worth up to about 27p per pound of qualifying spend; 27p is the net benefit, not a separate credit rate.</p>
 
-<p>For the transitional period (accounting periods beginning 1 April 2023 to 31 March 2024), HMRC offered a higher payable credit rate of 27% for loss-making companies meeting the intensive SME test. The 186% enhanced deduction applied to profitable intensive SMEs. The 30% intensity threshold applies in both the transitional period and ERIS.</p>
+<p>For the transitional period (accounting periods beginning 1 April 2023 to 31 March 2024), loss-making companies meeting the intensive SME test surrendered their enhanced loss for a 14.5% payable credit, worth up to about 27p per pound of qualifying spend. The intensity threshold in that transitional period was 40%; it fell to 30% under ERIS from 1 April 2024.</p>
 
 <p>This article explains the <strong>r&d intensive sme rate agency</strong> test in plain English: what counts, how to calculate it, and whether your agency qualifies.</p>
 
@@ -95,7 +95,7 @@ keyTakeaways:
 
 <p>The calculation is straightforward in theory but requires careful categorisation in practice.</p>
 
-<p>Step one: identify all qualifying R&D expenditure for the period. This includes direct staff costs (salaries, employer NI, pension contributions) for staff directly engaged in R&D, plus qualifying indirect costs (a percentage of overheads, typically 65% of staff costs under the HMRC simplified method). It also includes externally provided workers and subcontractor costs, subject to restrictions.</p>
+<p>Step one: identify all qualifying R&D expenditure for the period. This includes direct staff costs (salaries, employer NI, pension contributions) for staff directly engaged in R&D, plus qualifying consumables, software, and data or cloud costs. It also includes externally provided workers and subcontractor costs, subject to restrictions.</p>
 
 <p>Step two: identify your total costs for the period. This is all revenue expenditure from your P&L, plus any capitalised R&D costs. Do not include capital expenditure on assets not related to R&D (like office furniture) unless they are part of the R&D project.</p>
 
@@ -109,14 +109,13 @@ keyTakeaways:
 
 <ul>
 <li>Staff costs for the five developers: £300,000 (salaries, NI, pensions)</li>
-<li>Qualifying indirect costs (65% of staff costs): £195,000</li>
 <li>Subcontractor costs for specialist AI work: £100,000</li>
-<li>Total qualifying R&D spend: £595,000</li>
+<li>Total qualifying R&D spend: £400,000</li>
 </ul>
 
-<p>Total costs are £2.5m. R&D spend is £595,000, which is 23.8% of total costs. This agency does not meet the 30% threshold and therefore does not qualify as R&D intensive. It can still claim the merged scheme 20% expenditure credit, but not ERIS.</p>
+<p>Total costs are £2.5m. R&D spend is £400,000, which is 16% of total costs. This agency does not meet the 30% threshold and therefore does not qualify as R&D intensive. It can still claim the merged scheme 20% expenditure credit, but not ERIS.</p>
 
-<p>If the agency had a smaller cost base (say £1.8m total costs) with the same R&D spend, the percentage would be 33.1%, and it would qualify as intensive. The difference is not in what they do, but in the relative size of their R&D investment.</p>
+<p>If the agency had a smaller cost base (say £1.3m total costs) with the same R&D spend, the percentage would be 30.8%, and it would qualify as intensive. The difference is not in what they do, but in the relative size of their R&D investment.</p>
 
 <h2>Common Mistakes Agencies Make</h2>
 
@@ -152,7 +151,7 @@ keyTakeaways:
 
 <h2>What Changes Are Coming?</h2>
 
-<p>From 1 April 2024 the old intensive SME regime was replaced by ERIS under the merged scheme. The intensity threshold is 30% of total expenditure, the same threshold as the transitional period, so agencies that qualified under the transitional rules should re-assess using the ERIS framework. The key difference is the relief rate: ERIS provides a 14.5% payable credit and an 86% enhanced deduction, replacing the 27% payable credit and 186% deduction of the transitional intensive SME scheme.</p>
+<p>From 1 April 2024 the old intensive SME regime was replaced by ERIS under the merged scheme. The relief rate is unchanged: ERIS still provides a 14.5% payable credit on the surrendered loss and an 86% enhanced deduction, worth up to about 27p per pound of qualifying spend. What changed is the intensity threshold, which fell from 40% in the transitional period to 30% under ERIS, so some agencies that failed the old 40% test now qualify. Agencies that assessed themselves under the transitional rules should re-check against the lower 30% threshold.</p>
 
 <p>ERIS is a permanent feature of the merged R&D system, not a temporary measure. Loss-making agencies that are genuinely R&D-intensive (30% threshold) should assess ERIS eligibility at year-end.</p>
 
