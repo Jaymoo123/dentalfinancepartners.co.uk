@@ -11,6 +11,12 @@ metaDescription: "How NHS partial retirement lets doctors draw 20 to 100 percent
 altText: "Senior doctor discussing a phased retirement plan with a colleague"
 image: ""
 h1: "NHS Pension Partial Retirement for Doctors: Drawing 20 to 100 Percent While Still Working"
+keyTakeaways:
+- "Partial retirement lets you draw between 20 and 100 percent of your accrued NHS pension while staying in the same post and continuing to accrue in the 2015 scheme."
+- "To qualify you must reduce your pensionable pay or commitment by at least 10 percent and hold that reduction for at least 12 months, or you lose eligibility for the benefits you took."
+- "From 1 October 2023 the regulations opened partial retirement to 1995 Section members, who previously could not use it (it was already available to 2008 Section and 2015 Scheme members)."
+- "You continue accruing in the 2015 scheme at 1/54th of pensionable earnings each year, so continued pension growth still counts toward your annual allowance after you start drawing benefits."
+- "Once you have taken all of your benefits you can no longer make a Scheme Pays election, so any election must come before a full 100 percent drawdown."
 summary: "Since 1 October 2023 a doctor can draw between 20 and 100 percent of their accrued NHS pension while staying in the same job and continuing to build new pension in the 2015 scheme, provided they reduce their pensionable pay or commitment by at least 10 percent. This guide explains the rules, the annual allowance and McCloud interactions, and how it compares with early retirement."
 schema: ""
 faqs:

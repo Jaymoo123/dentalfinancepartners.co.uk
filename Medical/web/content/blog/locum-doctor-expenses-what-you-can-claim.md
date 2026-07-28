@@ -11,6 +11,12 @@ metaDescription: "What locum doctors can claim in 2026/27: mileage at 55p a mile
 altText: "Professional UK locum doctor reviewing expense receipts and tax documents at desk"
 image: ""
 h1: "Locum Doctor Expenses: What You Can Claim"
+keyTakeaways:
+- "An expense is allowable only where it is incurred wholly and exclusively for your profession under ITTOIA 2005 s.34."
+- "Business mileage in your own car is claimed at 55p per mile for the first 10,000 miles in 2026/27 then 25p, the first-tier rate having risen from 45p on 6 April 2026."
+- "Since 1 April 2019 the Clinical Negligence Scheme for General Practice (CNSGP) provides state indemnity for NHS GP clinical negligence in England at no subscription, so a GP locum's own paid indemnity now mainly covers private or non-NHS work."
+- "HMRC simplified expenses give a flat home-working rate of £10 a month for 25 to 50 hours, £18 for 51 to 100 hours and £26 for 101 or more hours, excluding phone and broadband."
+- "Making Tax Digital for Income Tax applies to self-employed sole traders with qualifying income over £50,000 from 6 April 2026, with the threshold falling to £30,000 from April 2027 and £20,000 from April 2028."
 summary: "Locum doctors can claim a wide range of business expenses to reduce their tax bill, from travel between sites and medical indemnity to professional fees and home office costs. This 2026/27 guide sets out exactly what is allowable and the HMRC rules that decide it."
 schema: ""
 faqs:

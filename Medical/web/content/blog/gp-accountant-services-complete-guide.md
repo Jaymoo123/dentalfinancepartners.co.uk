@@ -10,6 +10,12 @@ metaDescription: "What a specialist GP and medical accountant actually does, fro
 altText: "GP accountant reviewing medical practice accounts and tax documents on desk"
 image: ""
 h1: "GP Accountant Services: Complete Guide for Medical Professionals"
+keyTakeaways:
+- "A GP partner is taxed on their allocated profit share for the year, not on the drawings they actually take."
+- "NHS GP goodwill cannot be sold and has not been saleable since 1 April 2004, with the current instrument being SI 2019/251."
+- "The standard NHS pension annual allowance is £60,000, tapering to a £10,000 floor once threshold income exceeds £200,000 and adjusted income exceeds £260,000."
+- "Making Tax Digital for Income Tax started for qualifying income over £50,000 from 6 April 2026, then £30,000 from April 2027 and £20,000 from April 2028."
+- "Business Asset Disposal Relief is charged at 18% for disposals on or after 6 April 2026 (14% from 6 April 2025, 10% before), within the £1m lifetime limit."
 summary: "A plain-English guide to what a specialist GP and medical accountant does across the full service range, from partnership accounts and NHS pension certificates to tax returns, payroll and incorporation, with links to the detailed guides for each area."
 schema: ""
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-services-complete-guide"

@@ -11,6 +11,12 @@ metaDescription: "How PCN clinical director and leadership pay is taxed and whet
 altText: "PCN clinical director reviewing leadership payment arrangements with a medical accountant"
 image: ""
 h1: "PCN Clinical Director and Leadership Payments: How They Are Taxed and Pensioned"
+keyTakeaways:
+- "Clinical director, leadership and management funding is now combined into core PCN funding within the Network Contract DES, so how it is paid to the individual is a decision the network and practices make."
+- "There are four common payment routes: through a member practice, invoiced from the director's own GP partnership, via a personal service company, or self-employed direct, and tax law follows the substance of each."
+- "Income routed through a personal service company is never NHS pensionable, so the NHS accrual is lost entirely on money extracted as salary and dividends."
+- "Leadership and management work is not patient medical care, so it can fall outside the VAT medical exemption and count as a taxable supply towards the registration threshold."
+- "NHS pensionability turns on whether the pay reaches the doctor as NHS-pension-eligible pay through an NHS-pension-employing body in a recognised pensionable form, not on the work itself."
 summary: "A PCN clinical director can be paid in several quite different ways, and the route chosen decides everything that follows: the income tax and National Insurance, whether the pay is NHS pensionable, and even whether VAT bites. This guide sets out the funding, then walks the common payment routes (through a member practice, invoiced from the director's own partnership, via a personal service company, or self-employed direct), and for each one explains the tax treatment and, carefully and with hedging, the pension position. The honest headline is that pensionability is not automatic and depends on the route."
 schema: ""
 faqs:

@@ -11,6 +11,12 @@ metaDescription: "NHS GP practice goodwill cannot be sold (banned since 1 April 
 altText: "GP partners reviewing a partnership agreement and practice valuation documents"
 image: ""
 h1: "Can You Sell GP Practice Goodwill? The NHS Goodwill-Sale Ban Explained"
+keyTakeaways:
+- "The sale of NHS GP practice goodwill has been prohibited since 1 April 2004, originally under SI 2004/906 and now under the Primary Medical Services (Prohibition on the Sale of Goodwill) Regulations 2019 (SI 2019/251)."
+- "Regulation 4(3) closes the incorporation loophole by blocking the sale of company shares whose value includes an element of NHS goodwill."
+- "A GP buy-in or buy-out is valued from the partnership's net assets, tangible assets and capital accounts, not from any goodwill multiple."
+- "Owned surgery premises, often held in a separate property partnership or LLP, are usually the largest figure in a GP transaction and carry the last man standing risk."
+- "Genuinely private, non-NHS work (a self-pay clinic, aesthetics arm or medico-legal book) can carry saleable goodwill that may attract CGT and Business Asset Disposal Relief, but NHS goodwill never can."
 summary: "NHS GP practice goodwill cannot be sold and has not been saleable since 1 April 2004. This guide explains the prohibition, why it exists, what actually changes hands on a partnership buy-in or buy-out, the one private exception, and why the dental goodwill playbook does not apply to GPs."
 schema: ""
 faqs:

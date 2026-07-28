@@ -11,6 +11,12 @@ metaDescription: "Liverpool GP accountant for NHS partners, locums and consultan
 altText: "Liverpool medical professionals reviewing financial documents with specialist GP accountant"
 image: ""
 h1: "GP Accountant in Liverpool: Specialist Medical Accounting Across Merseyside"
+keyTakeaways:
+- "A GP partner is taxed on their allocated profit share for the year, not on the drawings actually taken, and pays Class 4 National Insurance at 6% on profits from £12,570 to £50,270 then 2% above for 2026/27."
+- "The sale of NHS GP goodwill has been prohibited since 1 April 2004 (current instrument SI 2019/251), so a partner's entry or exit turns on tangible assets, premises and capital accounts, not NHS goodwill."
+- "For 2025/26 the NHS pension annual allowance is £60,000, tapering by £1 for every £2 of adjusted income above £260,000 down to a £10,000 floor, and is measured on the pension input amount (capitalised growth), not contributions paid."
+- "Dividend rates rose on 6 April 2026 under Finance Act 2026 to 10.75% ordinary and 35.75% upper for 2026/27, with the additional rate unchanged at 39.35% and a £500 dividend allowance."
+- "MTD for Income Tax starts from 6 April 2026 for sole traders and landlords with qualifying income over £50,000, while limited companies are excluded and general partnerships are deferred with no confirmed date."
 summary: "Looking for a specialist GP accountant in Liverpool? We act for GP partners, salaried GPs, locum doctors and consultants across Merseyside, covering NHS pension annual allowance, profit-share tax returns and private-practice planning at 2026/27 rates."
 schema: ""
 faqs:

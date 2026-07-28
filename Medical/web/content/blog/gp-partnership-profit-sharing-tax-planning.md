@@ -11,6 +11,12 @@ metaDescription: "How GP partners are taxed on profit share (not drawings), how 
 altText: "GP partners reviewing profit sharing tax planning documents with calculator and financial charts"
 image: ""
 h1: "GP Partnership Profit Sharing Tax Planning: Essential Strategies for 2026/27"
+keyTakeaways:
+- "GP partners are taxed on the profit allocated to them for the year, not on the drawings they actually take, so drawings are only a cash advance trued up at the year-end."
+- "For 2026/27 the standard NHS pension annual allowance is 60,000 pounds, tapering where threshold income exceeds 200,000 pounds and adjusted income exceeds 260,000 pounds, down to a 10,000 pounds floor."
+- "NHS practice goodwill cannot be sold, prohibited since 1 April 2004 under the Primary Medical Services (Prohibition on the Sale of Goodwill) Regulations 2019 (SI 2019/251)."
+- "Class 4 National Insurance is 6% on profits between 12,570 pounds and 50,270 pounds then 2% above, after the main rate fell from 9% to 6% on 6 April 2024."
+- "Business Asset Disposal Relief is charged at 18% for a disposal on or after 6 April 2026, up from 14% in 2025/26 and 10% before 6 April 2025."
 summary: "How a GP partnership allocates profit decides each partner's tax bill and NHS pension growth, because partners are taxed on their profit share, not their drawings. This guide explains prior shares, the partnership deed, the premises return and the 2026/27 numbers that matter."
 schema: ""
 faqs:

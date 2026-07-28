@@ -11,6 +11,12 @@ metaDescription: "Corporation tax for an incorporated GP or medical company in 2
 altText: "UK GP reviewing corporation tax rates and dividend figures for an incorporated private medical company"
 image: ""
 h1: "GP Corporation Tax: Complete Guide for UK Medical Professionals"
+keyTakeaways:
+- "A limited company cannot hold an NHS GMS or PMS contract, so any income (including dividends) routed through it is not NHS-pensionable, making GP incorporation a private-work decision only."
+- "For the financial year from 1 April 2026 corporation tax is 19% up to £50,000, 25% over £250,000, and an effective marginal rate of around 26.5% between those limits (marginal relief fraction 3/200)."
+- "From 6 April 2026 the dividend rates rise to 10.75% ordinary and 35.75% upper (additional rate unchanged at 39.35%), up from 8.75% and 33.75% in 2025/26, after the £500 dividend allowance."
+- "Corporation tax is payable 9 months and 1 day after the accounting year end and the CT600 must be filed within 12 months, with quarterly instalments only for large companies (broadly profits over £1.5 million)."
+- "An overdrawn director's loan still outstanding 9 months and 1 day after the period end triggers a refundable section 455 charge at 33.75% on loans made in 2025/26 and 35.75% on loans made on or after 6 April 2026."
 summary: "How corporation tax works for an incorporated GP or medical company in 2026/27: the 19% to 25% rates with marginal relief, the 2026/27 dividend rates, profit extraction, and why company income is never NHS-pensionable."
 schema: ""
 faqs:

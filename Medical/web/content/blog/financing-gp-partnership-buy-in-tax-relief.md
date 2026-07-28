@@ -11,6 +11,12 @@ metaDescription: "How to fund a GP partnership buy-in: capital loans, the income
 altText: "GP reviewing a partnership-capital loan and the qualifying loan interest relief on a buy-in"
 image: ""
 h1: "Financing a GP Partnership Buy-In: Loans, Tax Relief on the Interest and the Numbers"
+keyTakeaways:
+- "Interest on a loan used to buy a share in, or contribute capital to, a GP partnership qualifies for income tax relief under ITA 2007 s.398, with relief given under s.383."
+- "The relief is a personal income tax relief deducted in calculating your net income and claimed in the other tax reliefs section of your Self Assessment return (HMRC helpsheet HS340), not a partnership business expense."
+- "Qualifying loan interest relief is capped by the limit on income tax reliefs (ITA 2007 s.24A) at the greater of £50,000 and 25% of adjusted total income, though it rarely bites at typical buy-in interest levels."
+- "The relief is not available to a limited partner or to a member of an investment LLP under ITA 2007 s.399, but a trading or professional GP partnership is not caught by these exclusions."
+- "An anti-avoidance recovery-of-capital rule can reduce or withdraw the relief if you later draw your capital back out of the partnership, so take advice before extracting capital while the loan is in place."
 summary: "Most GPs do not have the buy-in capital sitting in cash, so they borrow it, and the good news is that the interest on a loan taken out to buy into or contribute capital to a partnership qualifies for income tax relief. This page explains how a GP finances a buy-in (a partnership-capital loan, building capital from undrawn profit, or a mix), the tax relief on the loan interest (how it works, the conditions, the cap on income tax reliefs and how it is claimed), and the cash flow of servicing the loan against partnership drawings. It is the funding-and-relief page that sits underneath the buy-in and the due diligence."
 schema: ""
 faqs:

@@ -11,6 +11,12 @@ metaDescription: 'Locum doctor tax for 2026/27: sole trader vs limited company, 
 altText: UK locum doctor reviewing tax documents and calculator on desk
 image: ''
 h1: 'Locum Doctor Tax Complete Guide: Everything You Need to Know'
+keyTakeaways:
+- "A sole trader locum pays Class 4 National Insurance at 6% on profits between £12,570 and £50,270 and 2% above £50,270 for 2026/27, after the old 9% main rate fell to 6% on 6 April 2024."
+- "Income routed through a limited company and taken as dividends is not NHS-pensionable, so any corporation tax saving must be weighed against lost NHS pension accrual."
+- "Business mileage in your own car is claimed at 55p per mile for the first 10,000 business miles in 2026/27 (up from 45p on 6 April 2026), then 25p per mile thereafter."
+- "You must register for self-assessment once gross self-employed income passes the £1,000 trading allowance, by 5 October following the end of your first tax year of locum work."
+- "Freelance GP locums pension eligible NHS income by completing GP Locum forms A and B and paying tiered contributions through the PCSE / Solo route."
 summary: A complete 2026/27 guide for UK locum doctors covering how you are taxed, sole trader versus limited company, self-assessment, Class 4 National Insurance, allowable expenses including mileage, and keeping your NHS pension via Locum forms A and B.
 schema: ''
 faqs:

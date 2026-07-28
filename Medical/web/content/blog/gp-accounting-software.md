@@ -11,6 +11,12 @@ metaDescription: "How to choose MTD-compatible GP accounting software and digita
 altText: "GP practice manager reviewing MTD-compatible accounting software showing NHS income and partnership reports"
 image: ""
 h1: "GP Accounting Software: Choosing MTD-Ready Bookkeeping for Your Practice"
+keyTakeaways:
+- "MTD for Income Tax mandates digital records and quarterly updates for qualifying income above £50,000 from 6 April 2026, £30,000 from 6 April 2027 and £20,000 from 6 April 2028."
+- "General partnerships are deferred with no confirmed date and limited companies are out of MTD for ITSA entirely, since it is an income-tax regime rather than corporation tax."
+- "NHS income should be split into separate codes for Global Sum (weighted by the Carr-Hill formula), QOF, enhanced services, PCN and Network Contract DES funding (including ARRS) and dispensing income."
+- "Partners are taxed on their profit share, not their drawings, with the allocation finalised in the SA800 partnership return under the partnership agreement."
+- "The 2026/27 HMRC approved mileage rate is 55p per mile for the first 10,000 business miles (up from 45p on 6 April 2026) and 25p thereafter."
 summary: "A software-agnostic guide to GP accounting and bookkeeping tools for UK medical practices. Covers what MTD-compatible digital record-keeping actually requires, how to capture NHS income streams cleanly, and how partnership records should flow from your software to the tax return."
 schema: ""
 faqs:

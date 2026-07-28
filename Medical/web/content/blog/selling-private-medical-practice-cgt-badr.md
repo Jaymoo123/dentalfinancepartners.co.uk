@@ -11,6 +11,12 @@ metaDescription: "How CGT and Business Asset Disposal Relief work on selling a p
 altText: "Consultant and adviser reviewing the sale contract for a private medical clinic"
 image: ""
 h1: "Selling a Private Medical Practice: CGT, Business Asset Disposal Relief and the 2026 Rate Rise"
+keyTakeaways:
+- "NHS GP goodwill cannot be sold, having been prohibited since 1 April 2004 under what is now SI 2019/251, so no CGT or BADR question arises on it."
+- "The Business Asset Disposal Relief rate is rising in steps: 10% to 5 April 2025, 14% from 6 April 2025, and 18% from 6 April 2026."
+- "BADR is capped at £1,000,000 of qualifying gains per individual over their lifetime, not per disposal, with gains above the limit taxed at the normal CGT rate."
+- "The qualifying conditions, including holding at least 5% of ordinary share capital and voting rights and being an officer or employee, must be met throughout the two years ending on the date of disposal."
+- "Under TCGA 1992 section 28(1) an unconditional contract is dated when entered into, so an exchange on or before 5 April 2026 keeps the gain in the 14% band even if completion is later."
 summary: "When a doctor sells a genuinely private medical business, capital gains tax applies in full and Business Asset Disposal Relief can cut the rate. This guide walks through the CGT computation, the BADR conditions and limits, and why the rate stepping from 14% to 18% on 6 April 2026 turns disposal timing into a planning decision."
 schema: ""
 faqs:

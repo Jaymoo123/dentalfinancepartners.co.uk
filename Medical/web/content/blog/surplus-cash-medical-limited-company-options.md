@@ -11,6 +11,12 @@ metaDescription: "Retained profit piling up in a consultant's company? The optio
 altText: "Consultant reviewing company accounts and investment options with an adviser at a desk"
 image: ""
 h1: "What To Do With Surplus Cash in a Medical or Consultant Limited Company"
+keyTakeaways:
+- "Employer pension contributions are deductible for corporation tax on a paid basis under FA 2004 s.196, carry no employer National Insurance, and enter the pension with no income tax charge."
+- "The 2026/27 annual allowance is £60,000, tapering by £1 for every £2 of adjusted income above £260,000 (where threshold income also exceeds £200,000), down to a minimum of £10,000."
+- "Business Asset Disposal Relief is taxed at 18% from 6 April 2026 (up from 14% in 2025/26) and needs trading-company status throughout the two-year qualifying period, subject to the £1 million lifetime limit."
+- "The 2026/27 dividend rates are 10.75% ordinary, 35.75% upper and 39.35% additional, with a £500 dividend allowance, so extracting in a lower-income year can cut the rate sharply."
+- "Company income, dividends, capital distributions and investment returns are all outside the NHS Pension Scheme, so an employer contribution builds a separate DC pot rather than restoring NHS accrual."
 summary: "Surplus cash building up in a private-practice company is not automatically efficient. This guide sets out the five main deployment routes, from employer pension contributions (usually the sharpest tool for high-earning consultants) to investing in-company and taking capital via an MVL, with a worked comparison on £100,000 of surplus, the BADR trading-status trap, and the NHS pension position that cuts across every option."
 schema: ""
 faqs:

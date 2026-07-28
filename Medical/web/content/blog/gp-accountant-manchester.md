@@ -11,6 +11,12 @@ metaDescription: "Specialist GP accountant in Manchester for partners, salaried 
 altText: "Professional accountant meeting with GP partner in Manchester office discussing tax planning and practice finances"
 image: ""
 h1: "GP Accountant Manchester: Specialist Tax & Financial Services for Medical Professionals"
+keyTakeaways:
+- "The sale of NHS GP goodwill has been prohibited since 1 April 2004, now under the Primary Medical Services (Prohibition on the Sale of Goodwill) Regulations 2019, SI 2019/251."
+- "GP partners are taxed on their allocated profit share, not the drawings they take, with the partnership filing an SA800 and each share flowing to the partner's SA104."
+- "The NHS pension annual allowance is £60,000 (2025/26), tapering where threshold income exceeds £200,000 and adjusted income exceeds £260,000, down to a £10,000 floor."
+- "Business mileage between sites is 55p per mile for the first 10,000 business miles in 2026/27 (up from 45p on 6 April 2026) and 25p thereafter, but home to your first site is non-deductible commuting."
+- "Mandatory Scheme Pays applies where the annual allowance charge exceeds £2,000 and your NHS pension input exceeds £60,000, with a 2025/26 charge to be elected by 31 July 2027."
 summary: "Specialist GP accounting in Manchester for partners, salaried GPs, and locums: NHS pension annual allowance planning, GMS practice accounts, and tax across Greater Manchester, with current 2026/27 figures."
 schema: ""
 faqs:

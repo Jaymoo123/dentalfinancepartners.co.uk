@@ -11,6 +11,12 @@ metaDescription: "The non-NHS income a GP practice earns from medicals, reports,
 altText: "GP completing a private medical report and insurance form at a practice desk"
 image: ""
 h1: "A GP Practice's Private and Non-NHS Income: The Streams, the Tax and the VAT"
+keyTakeaways:
+- "The VAT liability of GP private work turns on the d'Ambrumenil purpose test, in force since 1 May 2007: a service is exempt only where its principal purpose is the protection, maintenance or restoration of the patient's health."
+- "Insurance reports, GP factual reports for solicitors, medico-legal and expert-witness reports, and pre-employment, HGV, LGV and taxi-driver medicals are standard-rated because their purpose is a third party's decision, not treating the patient."
+- "Travel-clinic vaccinations, including the international certificate of vaccination, are exempt, and the same minor surgery is exempt when therapeutic but standard-rated when purely cosmetic."
+- "Only standard-rated turnover (plus any zero-rated dispensing) counts towards the £90,000 VAT registration threshold, with an £88,000 deregistration point, so exempt clinical income and outside-the-scope NHS income do not."
+- "All private and non-NHS income is practice trading income taxed on the partners' allocated profit share via the SA800 and SA104, it is not NHS-pensionable, and it does not flow through PCSE."
 summary: "Alongside its NHS contract a GP practice earns a long tail of private and non-NHS income from medicals, reports, travel clinics, minor surgery and certification work. This guide maps those streams, explains how each is taxed as practice trading income on the partners' profit share, and draws the VAT line clearly: genuine clinical care is exempt, but third-party-decision reports, certain medicals and purely cosmetic work are standard-rated, with the £90,000 threshold and partial exemption that follow."
 schema: ""
 faqs:

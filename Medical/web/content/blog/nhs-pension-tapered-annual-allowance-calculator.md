@@ -11,6 +11,12 @@ metaDescription: 'Work out your tapered NHS pension allowance step by step: thre
 altText: NHS pension calculator showing tapered annual allowance calculations for UK medical professionals
 image: ''
 h1: 'NHS Pension Tapered Annual Allowance Calculator: Complete Guide for UK Doctors'
+keyTakeaways:
+- "The NHS pension taper for 2026/27 bites only when threshold income exceeds £200,000 AND adjusted income exceeds £260,000, so failing either test leaves your full £60,000 allowance intact."
+- "Above the triggers your £60,000 allowance falls by £1 for every £2 of adjusted income over £260,000, down to a £10,000 floor reached once adjusted income hits £360,000."
+- "The figure that uses up your allowance is the defined benefit pension input amount (the capitalised growth on your NHS savings statement), not the contributions deducted from your pay."
+- "Adjusted income adds back the deemed NHS employer contribution, set at 23.7% of pensionable pay from 1 April 2024, which pushes many doctors over the £260,000 trigger."
+- "The old £240,000 adjusted income limit and the old £4,000 minimum floor are both superseded, and unused allowance can be carried forward from the previous three tax years at each year's own (possibly tapered) amount."
 summary: How to work out your tapered NHS pension annual allowance for 2026/27. We walk through threshold income, adjusted income, the £1-for-£2 reduction and the £10,000 floor, with a worked example for high-earning doctors.
 schema: ''
 faqs:

@@ -11,6 +11,12 @@ metaDescription: "How a family investment company works for consultants and GPs:
 altText: "A consultant and accountant reviewing a family investment company structure"
 image: ""
 h1: "Family Investment Companies for Doctors and Consultants: What They Are and When They Fit"
+keyTakeaways:
+- "A FIC pays corporation tax on retained investment income at 19% up to £50,000 of profits and 25% above £250,000, with marginal relief (standard fraction 3/200) between, against 45% personal income tax above the additional-rate threshold of £125,140."
+- "Most UK dividends received by the FIC are exempt from corporation tax under the dividend-exemption rules (CTA 2009 Part 9A), so a FIC holding UK equities broadly pays no CT on those dividends."
+- "Extracting income straight back to the additional-rate founder produces a combined effective rate of around 50.5% (CT plus 39.35% dividend tax), which is worse than the 45% personal route, so the FIC earns its keep through deferral and redirection to basic-rate family members taxed at 10.75% (2026/27)."
+- "Under the parental settlement rule (ITTOIA 2005 s.629) dividends above £100 per year paid to an unmarried minor child are taxed as the parent's income, so income splitting to under-18s gives no benefit until the child turns 18 or marries."
+- "A FIC is an investment company by design, so it qualifies for neither Business Property Relief nor Business Asset Disposal Relief (BADR at 18% from 6 April 2026 on the first £1 million of gains), leaving its IHT planning to rest entirely on PETs and the seven-year rule."
 summary: "A family investment company (FIC) is a bespoke private limited company holding investments rather than running a medical practice. For a high-earning consultant or GP with income already in the additional-rate band and surplus wealth beyond the NHS pension, it can shelter retained income at corporation-tax rates of 19-25% instead of 45% personal tax and keep future growth outside the estate. This guide explains the tax, share classes, IHT planning, and the settlements, minor-children and BADR traps that mean a FIC suits only doctors with genuine scale and a long-run family-wealth goal."
 schema: ""
 faqs:

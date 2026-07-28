@@ -11,6 +11,12 @@ metaDescription: "How a doctor's medico-legal and expert-witness income is taxed
 altText: "UK hospital consultant at a desk preparing a medico-legal expert witness report alongside a self-assessment tax form and calculator"
 image: ""
 h1: "Medico-Legal and Expert-Witness Income for Doctors: Tax, VAT and Structure"
+keyTakeaways:
+- "Medico-legal and expert-witness reports are standard-rated at 20% VAT, not exempt, because the principal-purpose test in VATA 1994 Schedule 9 Group 7 asks what the supply is for (a court, insurer or solicitor decision) rather than who produces it."
+- "Only standard-rated turnover counts towards the £90,000 VAT registration threshold, so NHS income (outside scope) and exempt private clinical fees are excluded when you measure it on a rolling 12-month basis at each month end."
+- "Medico-legal profit is stacked on top of NHS salary and taxed from the first pound at your marginal rate, reaching an effective 60% between £100,000 and £125,140 as the personal allowance tapers away at £1 for every £2 of income."
+- "Mileage against medico-legal work is claimable at 55p per mile for the first 10,000 business miles in 2026/27 (up from 45p on 6 April 2026) and 25p per mile thereafter."
+- "Where the prior year's self-assessment bill exceeds £1,000 and under 80% was collected at source, HMRC requires two payments on account of 50% each, due on 31 January and 31 July."
 summary: "Medico-legal and expert-witness report fees are self-employed trading income for doctors, taxed on top of NHS salary with one defining VAT feature: the reports are standard-rated, not exempt, because their primary purpose is to help a court, insurer or solicitor make a decision rather than to treat the patient. This guide covers the tax calculation (including the 60% personal-allowance taper trap for consultants between £100,000 and £125,140), why the purpose test makes reports standard-rated, how the £90,000 VAT registration threshold works when only non-exempt turnover counts, allowable expenses, a worked example for 2026/27 and the sole-trader versus company question."
 schema: ""
 faqs:

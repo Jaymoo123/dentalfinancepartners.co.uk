@@ -11,6 +11,12 @@ metaDescription: "How section 162 incorporation relief defers CGT when you move 
 altText: "A doctor and an accountant reviewing the incorporation of a private medical practice"
 image: ""
 h1: "Incorporation Relief (Section 162) for a Private Medical Practice: Deferring CGT"
+keyTakeaways:
+- "Section 162 of the Taxation of Chargeable Gains Act 1992 defers the CGT on transferring an unincorporated business into a company by rolling the gain into the base cost of the new shares, so it is a deferral and not an exemption."
+- "From transfers made on or after 6 April 2026, Finance Act 2026 section 39 makes the relief a claimed one rather than automatic, and it removes the old section 162A election to disapply the relief."
+- "For a transfer in the 2026/27 tax year the claim must be made by 31 January 2029 (the first anniversary of the 31 January following the tax year of transfer), and a missed claim leaves the whole gain chargeable now."
+- "If the consideration is wholly shares the entire gain can be deferred, but any value taken as cash or a director's loan account is a proportion of the gain brought into charge immediately."
+- "Company income is never NHS-pensionable and dividends are never pensionable, so private work routed through a company forgoes the NHS pension accrual you must weigh against the CGT saving."
 summary: "Moving a private medical practice into a limited company can crystallise a capital gain on the goodwill, even though no cash changes hands. Section 162 incorporation relief defers that gain by rolling it into the base cost of the new shares. This guide explains how the relief works, its conditions, the Finance Act 2026 change that makes it a claimed relief from 6 April 2026, and why the NHS pension trade-off means the tax saving is never the whole story for a doctor."
 schema: ""
 faqs:

@@ -10,6 +10,12 @@ metaDescription: "Nottingham GP accountant for NHS partners, salaried GPs, and l
 altText: "Nottingham medical professional meeting with specialist GP accountant in modern office setting"
 image: ""
 h1: "Nottingham GP Accountant: Expert Tax & Accounting for Medical Professionals"
+keyTakeaways:
+- "NHS GP goodwill cannot be sold, a prohibition in force since 1 April 2004 and now set out in SI 2019/251."
+- "The NHS Pension annual allowance is £60,000 for 2025/26, tapering by £1 for every £2 of adjusted income above £260,000 down to a £10,000 floor, and is measured on defined-benefit growth rather than contributions paid."
+- "A GP partner is taxed on their allocated profit share, not on the drawings they take, with the practice filing an SA800 and each share flowing to the partner's own return."
+- "Business mileage between sites is 55p per mile for the first 10,000 business miles in 2026/27 (raised from 45p on 6 April 2026), then 25p."
+- "Making Tax Digital for Income Tax applies from £50,000 of qualifying income from 6 April 2026, then £30,000 from April 2027 and £20,000 from April 2028, tested on the prior year."
 summary: "Specialist accounting for GPs, consultants, and locum doctors in Nottingham. NHS pension planning, partnership accounts, and medical tax advice for 2026/27."
 schema: ""
 canonical: "https://www.medicalaccounts.co.uk/blog/nottingham-gp-accountant"

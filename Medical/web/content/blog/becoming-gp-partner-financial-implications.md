@@ -10,6 +10,12 @@ metaDescription: 'What changes when you become a GP partner: self-employment, pr
 altText: UK GP partners reviewing financial documents and partnership agreements in medical practice office
 image: ''
 h1: 'Becoming a GP Partner: Financial Implications You Need to Know'
+keyTakeaways:
+- "As a GP partner you are taxed on your allocated profit share, not on the drawings you actually take, so tax timing and cash timing rarely line up."
+- "A buy-in pays for your share of tangible net assets and any owned premises through the capital accounts, never NHS goodwill, whose sale has been prohibited since 1 April 2004 under SI 2019/251."
+- "Partners pay Class 4 National Insurance at 6% on profits between £12,570 and £50,270 and 2% above that, with no separate weekly Class 2 charge required from 6 April 2024."
+- "The standard £60,000 annual allowance tapers where threshold income exceeds £200,000 and adjusted income exceeds £260,000, reducing by £1 for every £2 over, down to a £10,000 floor."
+- "Taking a share of the surgery premises or lease exposes you to last man standing risk, where a single remaining partner can be left holding the entire premises or lease commitment."
 summary: Becoming a GP partner brings significant financial changes beyond just income. Understanding the tax, pension, and capital implications is crucial before making the transition.
 schema: ''
 canonical: https://www.medicalaccounts.co.uk/blog/becoming-gp-partner-financial-implications

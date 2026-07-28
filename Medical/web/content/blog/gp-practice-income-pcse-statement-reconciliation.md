@@ -11,6 +11,12 @@ metaDescription: "How to read your PCSE Online payment statements, reconcile the
 altText: "GP practice manager reconciling a PCSE Online payment statement against expected NHS income on a spreadsheet"
 image: ""
 h1: "Are You Actually Being Paid What You Are Owed? Reading and Reconciling Your PCSE Statements"
+keyTakeaways:
+- "NHS GP income is paid centrally through the monthly PCSE Online payment statement, produced by Primary Care Support England on behalf of NHS England, not by patients."
+- "The expanded CSV statement is the working document for reconciliation, because it breaks each payment into component lines, whereas the collapsed summary hides the detail needed to spot a short or missing line."
+- "Statements are only visible to users holding the GPP - Statements role, which the practice's PCSE Online user administrator must assign before any reconciliation is possible."
+- "Global Sum follows the registered and Carr-Hill-weighted list, so a list that has grown but not been updated, or a stale weighting, quietly understates the payment."
+- "A partner is taxed on their profit share, not their drawings, so an unrecovered underpayment understates trading profit and therefore every partner's share."
 summary: "A GP practice is paid for its NHS work through a monthly PCSE statement, but the amounts are not always right: Global Sum can lag a list-size or weighting change, QOF and enhanced-services payments can be late or short, and premises figures can drift. This guide explains how to read the PCSE Online statement, how to reconcile each line against the Statement of Financial Entitlements and the practice's contract, and how to spot, query and recover an underpayment, with the discipline tied back to accurate trading profit and the partners' shares."
 schema: ""
 faqs:

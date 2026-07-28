@@ -11,6 +11,12 @@ metaDescription: "How to do GP practice bookkeeping: record Global Sum, QOF, enh
 altText: "GP practice manager working on bookkeeping records with computer and financial documents"
 image: ""
 h1: "GP Bookkeeping: Essential Guide for UK General Practice Partners"
+keyTakeaways:
+- "A GP partner is taxed on their allocated profit share under the partnership agreement, not on the drawings they take during the year, which are posted to that partner's current account."
+- "The sale of NHS GP goodwill has been prohibited since 1 April 2004 (currently under SI 2019/251), so partner buy-ins and buy-outs cover tangible assets, premises and capital accounts only."
+- "MTD for Income Tax is phased in by qualifying income at £50,000 from 6 April 2026, £30,000 from 6 April 2027 and £20,000 from 6 April 2028, while general partnerships remain deferred with no confirmed start date."
+- "A GP practice must register for VAT only when taxable (non-exempt) turnover passes £90,000 in a rolling 12 months, with a deregistration threshold of £88,000, because NHS GMS and PMS income is outside the scope of VAT."
+- "Class 4 National Insurance for 2025/26 runs at 6% on profits between £12,570 and £50,270 and 2% above, while Class 2 is no longer a required payment from 6 April 2024 where profits meet the small profits threshold."
 summary: "A practical guide to GP practice bookkeeping: recording NHS income streams (Global Sum, QOF, enhanced services and PCN funding), separating partner drawings from profit share, allocating practice expenses, and keeping digital records ready for Making Tax Digital."
 schema: ""
 faqs:

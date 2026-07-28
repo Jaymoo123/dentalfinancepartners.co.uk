@@ -11,6 +11,12 @@ metaDescription: Use the GP partnership mutual assessment period to check the ac
 altText: Incoming GP carrying out financial due diligence on partnership accounts during a mutual assessment period
 image: ''
 h1: 'The Mutual Assessment Period: What to Check Financially Before Becoming a GP Partner'
+keyTakeaways:
+- "A GP partnership files a single partnership return (the SA800), and each partner's share flows to the partnership pages (the SA104) of their own return, taxed as trading income with Class 4 National Insurance."
+- "As a partner you are taxed on your allocated profit share, not on the drawings you actually take, so check that partners' drawings are not running ahead of profit and review the current-account balances."
+- "Ask for at least the last two to three years of partnership accounts (and any separate property-partnership accounts), because two or three years shows a trend rather than a single snapshot."
+- "Practice income arrives through the Global Sum weighted by the Carr-Hill formula, QOF, enhanced services and PCN or Network Contract DES funding, with no single national per-patient value to benchmark against."
+- "Last-man-standing risk is the danger that one remaining partner is left holding the whole premises liability or lease when others leave and are not replaced, so establish whether you would take a premises share or sign the lease before you commit."
 summary: 'Most GP partnerships run a mutual assessment period, a trial stretch during which the incoming GP and the existing partners decide whether to offer and accept parity or permanency. This page explains what that period is, and, the substance of the page, the financial due diligence an incoming GP should do during it: read the accounts, understand the premises position and last-man-standing risk, check the NHS contract and list size, read the partnership deed, understand drawings versus profit, and surface any outstanding liabilities. It is the look-before-you-leap page for joining a partnership, framed around the trial period that gives you the window to do it.'
 schema: ''
 faqs:

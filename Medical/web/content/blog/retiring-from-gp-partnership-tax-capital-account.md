@@ -11,6 +11,12 @@ metaDescription: "What a retiring GP partner gets back, the capital account and 
 altText: "Retiring GP partner reviewing capital account and partnership exit documents"
 image: ""
 h1: "Retiring or Leaving a GP Partnership: Your Capital Account, Cessation and the Tax"
+keyTakeaways:
+- "There is no NHS goodwill payment when you leave, because the sale of NHS GP goodwill has been prohibited since 1 April 2004, currently under SI 2019/251."
+- "Under HMRC's Partnership Manual (PM163090) each partner runs a notional trade that ceases on their leaving date, so the closing-year cessation rules apply to you even though the practice carries on."
+- "Since basis period reform you are taxed on your allocated profit share to the leaving date, not on your drawings, so a final-year true-up can make the taxable figure differ from the cash you took."
+- "Partners leaving in 2024/25 or later usually have no overlap relief left, because every continuing partner deducted all of theirs in the 2023/24 transition year and no new overlap relief can accrue after."
+- "Business Asset Disposal Relief on a premises share is charged at 10% to 5 April 2025, 14% from 6 April 2025 to 5 April 2026, and 18% from 6 April 2026, with a £1m lifetime limit and a 2-year qualifying period."
 summary: "When a GP partner retires or leaves, two separate things happen: they receive what the partnership owes them (their capital account and any premises share), and their share of the trade ceases for tax. This guide explains what you get back, how the cessation of your notional trade works under the post-reform tax-year basis (and why there is usually no overlap relief left), whether capital gains tax arises on a premises share, and the deed mechanics that keep an exit orderly."
 schema: ""
 faqs:

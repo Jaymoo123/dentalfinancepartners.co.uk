@@ -11,6 +11,12 @@ metaDescription: "Consultant or GP with an NHS salary plus private income? How P
 altText: "UK consultant reviewing NHS salary and private practice income tax documents for self-assessment"
 image: ""
 h1: "NHS Salary Plus Private Income: How Your Tax Actually Works"
+keyTakeaways:
+- "Private profit is added on top of your NHS pay, so for most consultants and GP partners already in the higher (40%) or additional (45%) band it is taxed at that rate from the first pound."
+- "Private work is never NHS-pensionable, whether run as a sole trader, partnership or company, so profit taken as dividends earns no NHS pension accrual at all."
+- "Genuine medical care by a registered doctor is VAT-exempt under VATA 1994 Schedule 9 Group 7, and only non-exempt turnover (cosmetic-only or medico-legal work) counts towards the £90,000 registration threshold."
+- "You cannot sell NHS GP goodwill, as its sale has been prohibited since 1 April 2004 (currently under SI 2019/251), whereas genuinely private goodwill can be sold."
+- "Making Tax Digital for Income Tax applies to sole traders with qualifying income of £50,000 from 6 April 2026, and business mileage between work sites is claimable at 55p per mile for the first 10,000 miles in 2026/27."
 summary: "Most consultants and GPs run an NHS post alongside private work, and the two are taxed under different rules at the same time. This guide explains how PAYE and self-employed private income stack up, which slices are NHS-pensionable, where VAT bites on cosmetic and medico-legal work, and when private income is large enough to justify a company."
 schema: ""
 faqs:

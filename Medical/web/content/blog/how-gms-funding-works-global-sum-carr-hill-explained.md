@@ -22,6 +22,12 @@ howtoSteps:
     text: "Break the single remittance back into its component lines and reconcile the core funding month on month, allowing for the quarterly list-cleaning lag between a list change and the payment."
   - name: "Recognise it as practice income, then profit share"
     text: "The Global Sum lands in the practice as trading income; after expenses the remaining profit is shared between partners, who are taxed on their profit share, not their drawings."
+keyTakeaways:
+- "The Global Sum is calculated as a national price per weighted patient multiplied by the practice's weighted list size, and it is paid monthly by the commissioner."
+- "For 2025/26 the Global Sum was uplifted to around £123 per weighted patient, but that figure is uplifted annually in the Statement of Financial Entitlements and changes every April."
+- "The Carr-Hill formula weights the raw list across six factors: age and sex, additional needs, list turnover, a nursing and residential home factor, rurality and geography, and a staff market-forces adjustment."
+- "The weighted list is refreshed on a quarterly list-cleaning cycle, so a growing practice is briefly paid on a stale lower figure and a shrinking one on a higher figure, and neither is an error."
+- "A limited company cannot hold a GMS or PMS contract and company income is not NHS-pensionable, so dividends build no NHS pension at all."
 summary: "Most GP partners draw a profit share but have never seen how the money actually arrives. This guide opens up the engine room of NHS GP income: the Global Sum as the core per-weighted-patient payment, the Carr-Hill formula that turns a raw list into weighted patients, the Statement of Financial Entitlements that governs it, and where GMS, PMS and APMS contracts diverge. It then connects that funding to what a partner takes home, because the Global Sum is practice trading income, not a pay packet."
 schema: ""
 faqs:

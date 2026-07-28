@@ -11,6 +11,12 @@ metaDescription: "Self assessment for doctors and GPs in 2026/27: who must file,
 altText: "UK medical professional reviewing self assessment tax return documents"
 image: ""
 h1: "Self Assessment for Doctors and GPs: Who Files, Deadlines and Payments on Account"
+keyTakeaways:
+- "GP partners are taxed on their allocated profit share via the SA104 partnership pages, not on the drawings they actually take."
+- "For 2026/27, the online filing deadline and balancing payment are due by 31 January 2028, with an automatic £100 penalty for missing it even if no tax is due."
+- "Payments on account apply where your bill exceeds £1,000 and under 80% of tax was collected at source, taking two instalments of 50% of the prior year's liability on 31 January and 31 July."
+- "Self-employed doctors pay Class 4 National Insurance at 6% on profits between £12,570 and £50,270 and 2% above £50,270 for 2026/27, with Class 2 no longer a required weekly payment since 6 April 2024."
+- "MTD for Income Tax starts from 6 April 2026 for sole traders and landlords with qualifying income over £50,000, falling to £30,000 in 2027 and £20,000 in 2028, while general partnerships remain deferred."
 summary: "A plain-English guide to self assessment for UK doctors, GPs and consultants for the 2026/27 tax year: who has to file, how to register, the key deadlines, payments on account, Class 4 National Insurance, and how Making Tax Digital for Income Tax changes things from April 2026."
 schema: ""
 faqs:

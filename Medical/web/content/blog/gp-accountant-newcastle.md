@@ -11,6 +11,12 @@ metaDescription: "Specialist GP accountant in Newcastle for Tyneside doctors. NH
 altText: "Newcastle GP surgery exterior showing medical practice with accountant consultation"
 image: ""
 h1: "GP Accountant Newcastle: Specialist Medical Accounting Services"
+keyTakeaways:
+- "NHS GP goodwill cannot be sold and has not been since 1 April 2004, with the prohibition now sitting in SI 2019/251, so a partner buy-in or buy-out covers tangible assets, premises and capital accounts only."
+- "A GP partner is taxed on their allocated profit share, not on the drawings they actually take, with the partnership filing an SA800 and each share flowing to the partner's SA104."
+- "The NHS pension annual allowance is £60,000 for 2025/26, tapering to a £10,000 floor where threshold income exceeds £200,000 and adjusted income exceeds £260,000, measured against pension input amount rather than contributions."
+- "Company income and dividends are not NHS-pensionable, and with the dividend ordinary rate rising to 10.75% and the upper rate to 35.75% from 6 April 2026, incorporation only ever makes sense for private, non-NHS work."
+- "The HMRC approved mileage rate rose to 55p per mile for the first 10,000 business miles on 6 April 2026 (25p thereafter), and Making Tax Digital for Income Tax begins the same day for sole traders with qualifying income over £50,000."
 summary: "A specialist GP accountant in Newcastle for Tyneside doctors who understands NHS pension annual allowance, GP partnership accounts, premises income and locum tax for the 2026/27 tax year."
 schema: ""
 faqs:

@@ -11,6 +11,12 @@ metaDescription: 'Run GP practice payroll right: PAYE and RTI for staff, NHS pen
 altText: Medical practice team reviewing payroll documents and employee records
 image: ''
 h1: 'GP Payroll Services: Complete Guide for Medical Practices'
+keyTakeaways:
+- "GP partners are self-employed and taxed on their share of partnership profit, not on their drawings, so they never go through PAYE."
+- "Each pay run the practice must send HMRC a Full Payment Submission on or before payday under Real Time Information, with one late filing allowed per tax year before penalties apply."
+- "Employer secondary Class 1 NIC is 15% on earnings above the £5,000 secondary threshold for 2026/27, though the £10,500 Employment Allowance can reduce the bill."
+- "All active NHS Pension members accrue in the 2015 CARE section at 1/54th of each year's pensionable earnings, with contributions reported to PCSE."
+- "Staff who are ineligible for or opted out of the NHS scheme must be auto-enrolled at a minimum 8% of qualifying earnings (at least 3% from the employer) on pay between £6,240 and £50,270 for 2026/27."
 summary: 'What GP practice payroll actually involves: PAYE and RTI for practice staff, workplace pension auto-enrolment alongside the NHS Pension Scheme, employer secondary NIC at 15% above the £5,000 threshold (2026/27), and where partners and locums sit outside payroll.'
 schema: ''
 faqs:

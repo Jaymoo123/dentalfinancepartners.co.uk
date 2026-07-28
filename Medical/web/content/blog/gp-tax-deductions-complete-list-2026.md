@@ -10,6 +10,12 @@ metaDescription: 'Claim every allowable GP expense for 2026/27: GMC fee, indemni
 altText: UK GP reviewing tax deduction paperwork and receipts for 2026 tax return
 image: ''
 h1: 'GP Tax Deductions Complete List 2026: What You Can and Cannot Claim'
+keyTakeaways:
+- "For 2026/27 the approved mileage rate is 55p per mile for the first 10,000 business miles (up from 45p on 6 April 2026) and 25p thereafter."
+- "Since 1 April 2019 NHS clinical negligence in English general practice is covered free by the Clinical Negligence Scheme for General Practice, so your paid indemnity now mainly covers private, non-clinical and regulatory work."
+- "Clinical instruments, IT and consulting-room equipment are claimed as capital allowances, with the Annual Investment Allowance giving 100% relief on up to £1,000,000 a year, though cars are excluded."
+- "GP partners are taxed on their allocated profit share rather than the drawings they take, while salaried GPs face the tighter wholly, exclusively and necessarily test under PAYE."
+- "From 6 April 2024 Class 2 National Insurance is no longer a required payment, and Class 4 for 2026/27 runs at 6% between £12,570 and £50,270 and 2% above £50,270."
 summary: Comprehensive breakdown of allowable tax deductions for GPs in 2026/27, covering professional fees, indemnity, CPD, mileage, home office and equipment, with notes for partners, salaried GPs and locums.
 schema: ''
 canonical: https://www.medicalaccounts.co.uk/blog/gp-tax-deductions-complete-list-2026

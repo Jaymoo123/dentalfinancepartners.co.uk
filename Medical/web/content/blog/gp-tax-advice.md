@@ -11,6 +11,12 @@ metaDescription: "GP tax advice for 2026/27: NHS pension annual allowance, partn
 altText: "UK GP reviewing tax documents with calculator and NHS pension paperwork"
 image: ""
 h1: "GP Tax Advice: Essential Tax Planning for UK General Practitioners"
+keyTakeaways:
+- "GP partners are taxed on their allocated profit share, not on drawings, so profit left in the practice as working capital is still taxed."
+- "The NHS pension standard annual allowance is £60,000 for 2025/26, tapering by £1 for every £2 of adjusted income above £260,000 down to a £10,000 floor once threshold income exceeds £200,000."
+- "A defined-benefit scheme measures the growth in your pension over the year (the pension input amount), not the contributions you pay, so a strong profit year can quietly trigger a charge."
+- "NHS GP goodwill cannot be sold and has not been able to be since 1 April 2004 (now under SI 2019/251), so the dental-style sell-and-claim-relief approach does not apply."
+- "MTD for Income Tax starts at £50,000 qualifying income from 6 April 2026, bringing most full-time locums and unincorporated private GPs into scope, with limited companies out and partnerships deferred."
 summary: "A high-level GP tax planning hub for 2026/27. The main levers (NHS pension, partnership profit share, expenses, incorporating private work, MTD) explained at a glance, each linking to a deeper guide so you can act on the one that matters to you."
 schema: ""
 faqs:

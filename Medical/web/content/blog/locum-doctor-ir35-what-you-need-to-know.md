@@ -11,6 +11,12 @@ metaDescription: "How IR35 and off-payroll rules affect locum doctors through a 
 altText: "UK locum doctor reviewing IR35 status determination statement and off-payroll contracts on a desk"
 image: ""
 h1: "Locum Doctor IR35: What You Need to Know"
+keyTakeaways:
+- "IR35 only applies where you work through an intermediary such as a personal service company, so a plain sole-trader locum sits outside the off-payroll rules entirely."
+- "Since 6 April 2017 the NHS Trust or public body decides your status, and since 6 April 2021 medium and large private hirers must issue a Status Determination Statement with reasons."
+- "From 6 April 2024 the PAYE offset lets HMRC set the income tax and National Insurance already paid by the worker and their company against the deemed employer's PAYE liability."
+- "Dividends from outside-IR35 income are taxed in 2026/27 at 10.75% (ordinary), 35.75% (upper) and 39.35% (additional) after the £500 dividend allowance."
+- "Income routed through a limited company is never NHS-pensionable, so every pound taken as company dividends builds no NHS pension whether the engagement is inside or outside IR35."
 summary: "IR35 (the off-payroll working rules) decides whether a locum doctor working through a personal service company is taxed like an employee. This guide explains who decides your status, what a Status Determination Statement is, the April 2024 PAYE offset, and why a sole-trader locum is outside IR35 entirely."
 schema: ""
 faqs:

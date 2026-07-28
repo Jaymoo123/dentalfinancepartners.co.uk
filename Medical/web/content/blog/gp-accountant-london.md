@@ -10,6 +10,12 @@ metaDescription: "Specialist GP accountant in London for practices, partners, sa
 altText: "London GP consulting with specialist medical accountant about practice finances"
 image: ""
 h1: "GP Accountant in London: Specialist Accounting for Practices, Partners and Locums"
+keyTakeaways:
+- "GP partners are taxed on their allocated profit share, not on the drawings they take, so reconciling drawings against actual profit at year-end is central work."
+- "For 2025/26 the NHS pension annual allowance is £60,000, tapering by £1 for every £2 of adjusted income above £260,000 (where threshold income also exceeds £200,000) down to a £10,000 floor."
+- "The sale of NHS GP goodwill has been prohibited since 1 April 2004 (now under SI 2019/251), so a partner entry or exit is about tangible assets, owned premises and the capital account, never goodwill."
+- "Business mileage between sites is deductible at 55p per mile for the first 10,000 business miles in 2026/27 (up from 45p on 6 April 2026) and 25p thereafter, but home-to-first-site travel is non-deductible commuting."
+- "Making Tax Digital for Income Tax applies to sole-trader and locum GPs with qualifying income over £50,000 from 6 April 2026, while GP partnerships are deferred with no confirmed date and limited companies are outside it."
 summary: "What a specialist GP accountant in London actually does for practices, partners, salaried GPs and locums, from GMS partnership accounts and the NHS pension annual allowance to self-assessment, VAT and Making Tax Digital, with the 2026/27 figures that matter."
 schema: ""
 canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-london"

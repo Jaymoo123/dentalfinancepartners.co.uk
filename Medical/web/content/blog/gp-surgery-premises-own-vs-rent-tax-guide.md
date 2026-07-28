@@ -11,6 +11,12 @@ metaDescription: "Owning vs renting a GP surgery: the property partnership, SDLT
 altText: "GP partners comparing the cost of owning versus renting a surgery building with a property loan and tax figures"
 image: ""
 h1: "Owning vs Renting Your GP Surgery: The Property Partnership, SDLT and the Tax Trade-Offs"
+keyTakeaways:
+- "Freehold SDLT on a surgery in England or Northern Ireland is banded at 0% up to £150,000, 2% from £150,001 to £250,000, and 5% above £250,000, so a £600,000 purchase costs £19,500."
+- "When you buy a surgery containing fixtures, a CAA 2001 s.198 election must be made within a strict 2-year limit under CAA 2001 s.201, or the fixtures capital allowances can be lost entirely."
+- "The Annual Investment Allowance of £1,000,000 gives 100% relief and is best directed first at the special-rate (6%) integral features, while the main-rate writing-down allowance falls from 18% to 14% under Finance Act 2026 section 28."
+- "Business Asset Disposal Relief is 10% up to 5 April 2025, 14% from 6 April 2025 to 5 April 2026, and 18% from 6 April 2026, with a £1,000,000 lifetime limit per individual."
+- "SDLT does not apply in Scotland (Land and Buildings Transaction Tax) or Wales (Land Transaction Tax), and transfers into or out of a property partnership trigger special sum-of-lower-proportions rules rather than the ordinary purchase rates."
 summary: "A GP partnership choosing between renting its surgery and owning it is making a tax decision as much as a clinical one. Ownership unlocks notional rent, asset growth and capital allowances, but brings SDLT on purchase, illiquidity and a CGT bill on the way out. This guide walks the whole own-versus-rent tax picture, from SDLT in to CGT out, with the capital allowances and the fixtures election in between."
 schema: ""
 faqs:

@@ -11,6 +11,12 @@ metaDescription: "Basis period reform for GPs: the tax-year basis from 2024/25, 
 altText: "GP partner reviewing how practice profit is matched to tax years under the tax-year basis"
 image: ""
 h1: "Basis Period Reform and Your GP Partnership: The Tax-Year Basis, the Transition and Overlap Relief"
+keyTakeaways:
+- "From 2024/25 onwards a GP partner is taxed on the profit arising in the tax year (6 April to 5 April), not on the profit of the accounting period ending in it."
+- "2023/24 was the one-off transition year, taxing the standard part (profit to the normal accounting date) plus the transition part (profit up to 5 April 2024), so some practices were taxed on more than 12 months of profit in that single year."
+- "Overlap relief was deducted from transition profit in 2023/24 only and cannot be used after that year, so an unclaimed figure was relief lost for good."
+- "The transition profit, after overlap relief, is spread over five tax years from 2023/24 to 2027/28, with at least 20% falling in 2023/24 by default unless a partner elects to accelerate."
+- "Where the accounting date is not 31 March or 5 April, profit from two accounting periods must be apportioned by days, sometimes forcing provisional figures and a later amended return."
 summary: "Basis period reform quietly changed how every GP partnership is taxed: partnerships now pay tax on the profit arising in the tax year itself rather than on the profit of the accounting year ending in it. This is the dedicated deep-dive for a GP practice: the move to the tax-year basis from 2024/25, the one-off 2023/24 transition year, how overlap relief was used up, the option to spread the transition profit over five years, and the apportionment a practice faces if its accounting date is not 31 March or 5 April."
 schema: ""
 faqs:

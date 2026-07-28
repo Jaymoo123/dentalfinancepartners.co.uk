@@ -11,6 +11,12 @@ metaDescription: "Leeds GP accountant for partners, salaried GPs and locums. NHS
 altText: "Leeds GP surgery with medical professionals discussing financial planning"
 image: ""
 h1: "GP Accountant Leeds: Expert Medical Tax & Accounting Services"
+keyTakeaways:
+- "NHS GP goodwill cannot be sold, its sale has been prohibited since 1 April 2004, currently under SI 2019/251, so a GP transaction turns on tangible assets, premises and capital accounts rather than a goodwill multiple."
+- "GP partners are taxed on their allocated profit share, not their drawings, with Class 4 National Insurance at 6% between £12,570 and £50,270 and 2% above for 2025/26."
+- "The NHS pension annual allowance is £60,000 for 2025/26 and tapers by £1 for every £2 of adjusted income over £260,000, down to a £10,000 floor, tested on the pension input amount rather than contributions paid."
+- "The HMRC business mileage rate rose to 55p per mile for the first 10,000 business miles from 6 April 2026, then 25p thereafter."
+- "Making Tax Digital for Income Tax begins on 6 April 2026 for sole traders and landlords with qualifying income over £50,000, which catches most full-time locums and unincorporated private GPs."
 summary: "Specialist GP accountant in Leeds providing medical tax advice, NHS pension annual allowance planning and GP partnership accounting for partners, salaried GPs and locum doctors across Yorkshire."
 schema: ""
 faqs:
