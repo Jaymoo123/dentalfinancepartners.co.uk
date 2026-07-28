@@ -2,7 +2,7 @@
 title: What Is the Most Tax-Efficient Salary for an Agency Director with No Other Income in 2026/27?
 slug: tax-efficient-salary-agency-director-2025-26
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/tax-efficient-salary-agency-director-2025-26
-date: '2026-05-16'
+date: '2026-07-28'
 generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
@@ -28,7 +28,7 @@ faqs:
 - question: Can I pay myself a salary of £12,570 and also make employer pension contributions?
   answer: Yes. Employer pension contributions are separate from salary. They are deductible for corporation tax, not subject to NI, and do not count as your income. You can pay £12,570 salary plus any amount of employer pension contribution up to the annual allowance (£60,000, with carry forward from previous years). This is a highly tax-efficient way to extract profit from your agency while building retirement savings.
 authorSlug: james-whitfield
-updatedDate: '2026-05-17'
+updatedDate: '2026-07-28'
 keyTakeaways:
 - The most tax-efficient salary for an agency director with no other income in 2026/27 is £12,570, which avoids income tax and employee National Insurance.
 - Taking £12,570 salary and the rest as dividends saves over £13,200 in tax and NI compared to taking the full amount as salary.
@@ -40,7 +40,7 @@ keyTakeaways:
 
 <p>Take a salary above £12,570 and you start paying employee National Insurance at 8% on the excess, plus income tax at 20%. Take a salary below it and you leave your personal allowance unused, pushing more income into higher-taxed dividends. £12,570 is the sweet spot.</p>
 
-<p>This post walks through the full calculation, shows you the savings compared to other approaches, and covers the edge cases where a different salary might make sense. We work exclusively with agency founders and we work exclusively with agency founders. These are the numbers we run for every new client.</p>
+<p>This post walks through the full calculation, shows you the savings compared to other approaches, and covers the edge cases where a different salary might make sense. We work exclusively with agency founders. These are the numbers we run for every new client.</p>
 
 <h2>The Core Calculation: Why £12,570 Works</h2>
 
@@ -78,7 +78,7 @@ keyTakeaways:
 
 <p>If your other income already uses up your personal allowance, taking a salary from your agency just triggers tax and NI with no benefit. In that case, the most tax-efficient approach is often to take no salary at all and take everything as dividends. Dividends are not subject to NI and are taxed at lower rates than salary above the personal allowance.</p>
 
-<p>For example, if you have £20,000 in rental profits, your personal allowance is already fully used. A £12,570 salary would be taxed at 20% (£2,514) plus employee NI at 8% (£1,006) plus employer NI at 15% (£1,135.50). Total cost: £4,655.50. Taking that £12,570 as dividends instead would cost £1,298 in dividend tax (10.75% on £12,070 after the £500 allowance). You save £3,357.50.</p>
+<p>For example, if you have £20,000 in rental profits, your personal allowance is already fully used. A £12,570 salary would be taxed at 20% (£2,514) plus employee NI of £0 (the primary threshold is £12,570, so a salary at exactly that figure attracts no employee NI) plus employer NI at 15% (£1,135.50). Total cost: £3,649.50. Taking that £12,570 as dividends instead would cost £1,298 in dividend tax (10.75% on £12,070 after the £500 allowance). You save £2,351.50.</p>
 
 <h3>You Are Approaching the Higher Rate Threshold</h3>
 

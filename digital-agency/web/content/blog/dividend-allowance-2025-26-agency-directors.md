@@ -2,7 +2,7 @@
 title: What Is the Dividend Allowance for Agency Directors in 2026/27 and How to Maximise It
 slug: dividend-allowance-2025-26-agency-directors
 canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/dividend-allowance-2025-26-agency-directors
-date: '2026-05-16'
+date: '2026-07-28'
 generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Salary and Dividends
@@ -28,7 +28,7 @@ faqs:
 - question: Can I pay a dividend to myself if the company has made a loss?
   answer: No. Dividends can only be paid from distributable profits (retained earnings after corporation tax). If your agency makes a loss in a year, you cannot legally pay a dividend. Doing so is unlawful and the dividend must be repaid. If you need cash, consider a directors' loan (with the associated tax implications) or wait until the company returns to profit. Check your management accounts or speak to your accountant before declaring any dividend.
 authorSlug: james-whitfield
-updatedDate: '2026-05-17'
+updatedDate: '2026-07-28'
 keyTakeaways:
 - The dividend allowance for 2026/27 is £500, down from £1,000 in 2024/25, and applies to total dividend income from all sources.
 - Agency directors can take up to £50,270 in salary and dividends before hitting higher rate tax, using the personal allowance and basic rate band.
@@ -165,7 +165,7 @@ keyTakeaways:
 <li><strong>Basic rate dividend tax:</strong> 10.75% on dividends above £500, up to £50,270 total income</li>
 <li><strong>Higher rate dividend tax:</strong> 35.75% on dividends above £50,270 total income</li>
 <li><strong>Additional rate dividend tax:</strong> 39.35% on dividends above £125,140 total income</li>
-<li><strong>Optimal director pay:</strong> £12,570 salary + £37,700 dividends = £50,270 total, tax bill £3,255</li>
+<li><strong>Optimal director pay:</strong> £12,570 salary + £37,700 dividends = £50,270 total, tax bill £3,999</li>
 </ul>
 
 <p>If you are taking more than £50,270, you are paying 35.75% on the excess. That is still better than salary (which attracts NI), but it is a big jump from 10.75%. Plan your extraction carefully.</p>

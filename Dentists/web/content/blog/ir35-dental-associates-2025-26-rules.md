@@ -1,17 +1,17 @@
 ---
-title: "IR35 for Dental Associates: What the 2025/26 Rules Mean for Your Tax Status"
+title: "IR35 for Dental Associates: What the 2026/27 Rules Mean for Your Tax Status"
 slug: "ir35-dental-associates-2025-26-rules"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/ir35-dental-associates-2025-26-rules"
-date: "2026-05-18"
+date: "2026-07-28"
 generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Associate Tax"
-metaTitle: "IR35 Dental Associates 2025/26: Tax Status Rules & Off-Payroll Working"
-metaDescription: "IR35 rules apply to associate dentists differently than locums. Understand deemed employment, off-payroll dental tests, and NHS IR35 risks for 2025/26."
+metaTitle: "IR35 for Dental Associates 2026/27: Tax Status Rules"
+metaDescription: "IR35 rules apply to associate dentists differently than locums. Understand deemed employment, off-payroll dental tests, and NHS IR35 risks for 2026/27."
 altText: "Associate dentist reviewing IR35 contract terms with accountant in UK dental practice"
 image: ""
-h1: "IR35 for Dental Associates: What the 2025/26 Rules Mean for Your Tax Status"
-summary: "IR35 rules can affect associate dentists who work through a limited company. This guide explains how HMRC tests self-employment status, what off-payroll dental rules mean for NHS and private associates, and how to structure your working arrangements to stay on the right side of the legislation in 2025/26."
+h1: "IR35 for Dental Associates: What the 2026/27 Rules Mean for Your Tax Status"
+summary: "IR35 rules can affect associate dentists who work through a limited company. This guide explains how HMRC tests self-employment status, what off-payroll dental rules mean for NHS and private associates, and how to structure your working arrangements to stay on the right side of the legislation in 2026/27."
 schema: ""
 faqs:
   - question: "Can an NHS associate dentist be outside IR35?"
@@ -30,11 +30,11 @@ faqs:
 
 <p>The distinction matters because it changes how much tax and National Insurance you pay. A self-employed associate pays Class 4 NI at 6% on profits between £12,570 and £50,270, and 2% above that. An employee pays 8% employee NI on the same band plus 15% employer NI from the practice. If HMRC decides you are inside IR35, the practice must deduct PAYE and NI from your fees, even if you invoice through a limited company.</p>
 
-<p>In 2025/26, the rules have not changed from the off-payroll working reforms introduced in April 2021 for medium and large clients. But HMRC continues to scrutinise dental associate arrangements, particularly in NHS practices where the degree of control exercised by the practice can be high.</p>
+<p>In 2026/27, the rules have not changed from the off-payroll working reforms introduced in April 2021 for medium and large clients. But HMRC continues to scrutinise dental associate arrangements, particularly in NHS practices where the degree of control exercised by the practice can be high.</p>
 
 <h2>How Does IR35 Apply to Associate Dentists?</h2>
 
-<p>Associate dentists typically work under a contract for services, not a contract of service. The BDA model associate agreement is designed to support self-employed status. But as the system prompt notes, the paperwork alone does not determine your status. HMRC and tribunals look at the actual working practice.</p>
+<p>Associate dentists typically work under a contract for services, not a contract of service. The BDA model associate agreement is designed to support self-employed status. But the paperwork alone does not determine your status. HMRC and tribunals look at the actual working practice.</p>
 
 <p>The key tests HMRC applies are:</p>
 <ul>
@@ -110,7 +110,7 @@ faqs:
 
 <p>To reduce the risk of an investigation, keep clear records of your working arrangements. Document your substitution rights, your control over your schedule, and your financial independence. If you have a contract that accurately reflects your working practice, that is your strongest defence.</p>
 
-<h2>Key Takeaways for 2025/26</h2>
+<h2>Key Takeaways for 2026/27</h2>
 
 <ul>
 <li>IR35 status is determined by facts, not paperwork. Your actual working practice matters more than your contract.</li>

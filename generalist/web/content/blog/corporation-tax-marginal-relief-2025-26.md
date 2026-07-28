@@ -1,12 +1,12 @@
 ---
-title: "What Is Corporation Tax Marginal Relief and How Does It Work for 2025/26?"
+title: "What Is Corporation Tax Marginal Relief and How Does It Work for 2026/27?"
 slug: "corporation-tax-marginal-relief-2025-26"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/corporation-tax-marginal-relief-2025-26"
-date: "2026-05-17"
+date: "2026-07-28"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
-metaTitle: "Corporation Tax Marginal Relief 2025/26: How It Works"
+metaTitle: "Corporation Tax Marginal Relief 2026/27: How It Works"
 metaDescription: "Corporation tax marginal relief applies between £50k and £250k profits. Here is how it works, the effective rates, and what it means for your limited"
 altText: "UK accountant explaining corporation tax marginal relief to a limited company director in a Manchester office."
 image: "/blog/corporation-tax-marginal-relief-2025-26.jpg"
@@ -15,12 +15,12 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@rdne"
   sourceUrl: "https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-surface-7821565/"
   source: "Pexels"
-h1: "What Is Corporation Tax Marginal Relief and How Does It Work for 2025/26?"
+h1: "What Is Corporation Tax Marginal Relief and How Does It Work for 2026/27?"
 summary: "Corporation tax marginal relief bridges the gap between the 19% small profits rate and the 25% main rate. If your company's profits fall between £50,000 and £250,000, you do not pay a flat 25%. Marginal relief gradually increases your effective rate. Here is exactly how the calculation works and what it means for your business."
 schema: ""
 faqs:
   - question: "What is the effective corporation tax rate for a company with £100,000 profit?"
-    answer: "For 2025/26, a company with £100,000 taxable profits and no associated companies pays £22,750 in corporation tax. That is an effective rate of 22.75%. The effective rate rises smoothly from 19% at £50,000 towards 25% at £250,000. Marginal relief reduces what you would otherwise pay at the full 25% main rate."
+    answer: "For 2026/27, a company with £100,000 taxable profits and no associated companies pays £22,750 in corporation tax. That is an effective rate of 22.75%. The effective rate rises smoothly from 19% at £50,000 towards 25% at £250,000. Marginal relief reduces what you would otherwise pay at the full 25% main rate."
   - question: "Does marginal relief apply if my company has associated companies?"
     answer: "Yes, but the thresholds are divided by the total number of associated companies. If you have two associated companies, the lower limit becomes £25,000 and the upper limit becomes £125,000. Marginal relief applies between those adjusted thresholds. You must include all companies under common control, including those owned by your spouse or close family."
   - question: "How do dividends from other companies affect marginal relief?"
@@ -28,11 +28,11 @@ faqs:
   - question: "Can I plan to stay within the marginal relief band to get a lower effective rate?"
     answer: "Yes, but plan carefully. Your effective rate sits between 19% and 25% across the entire band, rising smoothly as profits increase. The marginal rate within the band is around 26.5%, so each extra pound of profit in the band costs more tax than the 19% flat rate would. Timing capital investments, R&D claims, or pension contributions to reduce profits below £50,000 (where the flat 19% rate applies) can save tax. But do not turn down profitable work just to stay in a lower tax band. The extra profit after tax is still more than no profit at all."
 keyTakeaways:
-  - "For 2025/26, corporation tax marginal relief applies to companies with taxable profits between £50,000 and £250,000, producing an effective rate that rises smoothly from 19% to 25%."
+  - "For 2026/27, corporation tax marginal relief applies to companies with taxable profits between £50,000 and £250,000, producing an effective rate that rises smoothly from 19% to 25%."
   - "The marginal rate within the band is around 26.5%, meaning each extra pound of profit above £50,000 costs more tax than the flat 19% small profits rate would."
   - "The £50,000 and £250,000 thresholds are divided by the total number of associated companies; two associated companies halve both limits to £25,000 and £125,000."
   - "Augmented profits include dividends received from non-group companies, and if augmented profits exceed £250,000 the company loses marginal relief entirely and pays 25% on all profits."
-  - "A company with £100,000 taxable profit and no associated companies pays £22,750 in corporation tax for 2025/26, an effective rate of 22.75%."
+  - "A company with £100,000 taxable profit and no associated companies pays £22,750 in corporation tax for 2026/27, an effective rate of 22.75%."
   - "Capital investments qualifying for the Annual Investment Allowance (up to £1,000,000 per year) reduce taxable profits directly and can move a company below £50,000 into the flat 19% band."
 ---
 
@@ -42,7 +42,7 @@ keyTakeaways:
 
 <p>Think of it as a sliding scale. If your company makes £60,000 profit, you do not pay 25% on the whole lot. Marginal relief reduces the tax bill so your effective rate sits somewhere between 19% and 25%, depending exactly where your profits land.</p>
 
-<p>For 2025/26 the rates are:</p>
+<p>For 2026/27 the rates are:</p>
 
 <ul>
 <li><strong>Small profits rate:</strong> 19% on profits up to £50,000</li>
@@ -56,11 +56,11 @@ keyTakeaways:
 
 <p>HMRC does not make you calculate the effective rate yourself. The marginal relief formula reduces the tax bill automatically when you file your <strong>CT600</strong> corporation tax return.</p>
 
-<p>Here is the formula for 2025/26:</p>
+<p>Here is the formula for 2026/27:</p>
 
 <p><strong>Marginal Relief = (Upper Limit minus Augmented Profits) x 3/200 x (Augmented Profits / Taxable Total Profits)</strong></p>
 
-<p>The fraction 3/200 (0.015) is set by statute and is the same for all companies in FY2025 and FY2026. It is not the difference between the two CT rates.</p>
+<p>The fraction 3/200 (0.015) is set by statute and is the same for all companies in FY2025 and FY2026 (the financial years spanned by the 2026/27 tax year). It is not the difference between the two CT rates.</p>
 
 <p>That looks complicated, so let us use real numbers.</p>
 

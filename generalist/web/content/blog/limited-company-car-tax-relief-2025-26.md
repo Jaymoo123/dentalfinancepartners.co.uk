@@ -1,13 +1,13 @@
 ---
-title: "Can My Limited Company Claim Tax Relief On A Company Car In 2025/26?"
+title: "Can My Limited Company Claim Tax Relief On A Company Car In 2026/27?"
 slug: "limited-company-car-tax-relief-2025-26"
 canonical: "https://www.hollowaydavies.co.uk/blog/limited-company-tax/limited-company-car-tax-relief-2025-26"
-date: "2026-05-17"
+date: "2026-07-28"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Limited Company Tax"
-metaTitle: "Limited Company Car Tax Relief 2025/26: What Directors Need"
-metaDescription: "Company car tax relief for directors in 2025/26. How capital allowances, benefit-in-kind and fuel benefit interact. Real numbers for a £35k electric"
+metaTitle: "Limited Company Car Tax Relief 2026/27: What Directors Need"
+metaDescription: "Company car tax relief for directors in 2026/27. How capital allowances, benefit-in-kind and fuel benefit interact. Real numbers for a £35k electric"
 altText: "A director in a UK office reviewing company car options on a tablet, with a modern electric car visible through the window."
 image: "/blog/limited-company-car-tax-relief-2025-26.jpg"
 imageCredit:
@@ -15,30 +15,30 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@leeloothefirst"
   sourceUrl: "https://www.pexels.com/photo/a-notebook-and-pen-near-the-laptop-and-documents-on-the-table-8962476/"
   source: "Pexels"
-h1: "Can My Limited Company Claim Tax Relief On A Company Car In 2025/26?"
-summary: "A practical guide to limited company car tax relief for directors in 2025/26. We cover capital allowances, benefit-in-kind charges, fuel benefit, and which cars make financial sense for your business."
+h1: "Can My Limited Company Claim Tax Relief On A Company Car In 2026/27?"
+summary: "A practical guide to limited company car tax relief for directors in 2026/27. We cover capital allowances, benefit-in-kind charges, fuel benefit, and which cars make financial sense for your business."
 schema: ""
 faqs:
   - question: "Can my limited company claim VAT on a company car?"
     answer: "Input VAT on the purchase of a car is normally 100% blocked where the car is available for any private use, regardless of how much business mileage you do. Full recovery is only possible if the car is used exclusively for business with no private use whatsoever (for example, a genuine pool car or a driving-school car). For leasing, you can reclaim 50% of the VAT on lease rentals where there is any private use (HMRC's fixed block method). Electric cars are not treated differently on these rules."
-  - question: "What is the BIK rate for a hybrid company car in 2025/26?"
-    answer: "For hybrid cars with CO2 emissions of 1-50g/km, the BIK rate ranges from 3% to 15% in 2025/26, depending on the electric range. The bands are: 130 miles or more = 3%, 70-129 miles = 6%, 40-69 miles = 9%, 30-39 miles = 13%, under 30 miles = 15%. For example, a hybrid with 70-129 miles electric range is taxed at 6%, while one with under 30 miles range is 15%. Cars over 50g/km CO2 follow the standard petrol/diesel BIK rates."
+  - question: "What is the BIK rate for a hybrid company car in 2026/27?"
+    answer: "For hybrid cars with CO2 emissions of 1-50g/km, the BIK rate ranges from 4% to 16% in 2026/27, depending on the electric range. The bands are: 130 miles or more = 4%, 70-129 miles = 7%, 40-69 miles = 10%, 30-39 miles = 14%, under 30 miles = 16%. For example, a hybrid with 70-129 miles electric range is taxed at 7%, while one with under 30 miles range is 16%. Cars over 50g/km CO2 follow the standard petrol/diesel BIK rates."
   - question: "Do I pay National Insurance on a company car benefit?"
     answer: "You do not pay employee NI on the BIK value. However, your company pays Class 1A employer NI at 15% on the BIK amount (15% applies from 6 April 2025; it was 13.8% up to 5 April 2025). This is reported on form P11D(b) and paid by 19 July after the tax year end. The employer NI is deductible against the company's profits."
   - question: "Can I avoid the BIK charge by only using the company car for business?"
     answer: "No. HMRC treats any company car as available for private use unless there is a genuine restriction (e.g., the car is liveried with your company name and cannot be used privately, or you have a separate personal car and a signed agreement preventing private use). In practice, HMRC rarely accepts that a director has no private use of a company car. The BIK charge applies unless you can demonstrate no private use whatsoever."
 keyTakeaways:
-  - "Electric company cars (0g/km CO2) qualify for 100% First Year Allowance in 2025/26, letting the company deduct the full purchase price from taxable profits in year one."
-  - "The benefit-in-kind rate for electric cars is 3% of list price in 2025/26, rising to 4% in 2026/27 and 5% in 2027/28."
+  - "Electric company cars (0g/km CO2) qualify for 100% First Year Allowance in 2026/27, letting the company deduct the full purchase price from taxable profits in year one."
+  - "The benefit-in-kind rate for electric cars is 4% of list price in 2026/27 (up from 3% in 2025/26), rising to 5% in 2027/28."
   - "Petrol and diesel cars with CO2 over 50g/km attract only a 6% reducing balance capital allowance per year, while the BIK rate can reach 37% for cars emitting over 150g/km."
-  - "Companies must pay Class 1A employer National Insurance at 15% on the BIK value of any company car from 6 April 2025, up from 13.8%."
+  - "Companies pay Class 1A employer National Insurance at 15% on the BIK value of any company car in 2026/27."
   - "For operating leases on cars with CO2 over 50g/km, 15% of the lease cost is disallowed; for electric and low-emission cars (under 50g/km), 100% of the lease cost is deductible."
-  - "If the company pays for private petrol or diesel fuel, the 2025/26 fuel benefit charge is calculated using a £28,200 multiplier applied to the car's BIK percentage."
+  - "If the company pays for private petrol or diesel fuel, the 2026/27 fuel benefit charge is calculated using a £29,200 multiplier applied to the car's BIK percentage."
 ---
 
 <p>If you are a director considering putting a car through your limited company, the tax treatment is not straightforward. You need to understand two separate tax systems that interact: capital allowances (which affect your company's corporation tax bill) and benefit-in-kind (BIK) (which affects your personal tax).</p>
 
-<p>This article explains how <strong>limited company car tax relief</strong> works in 2025/26, with real numbers for both electric and petrol cars. We will cover what your company can claim, what you pay personally, and how to decide which route makes financial sense.</p>
+<p>This article explains how <strong>limited company car tax relief</strong> works in 2026/27, with real numbers for both electric and petrol cars. We will cover what your company can claim, what you pay personally, and how to decide which route makes financial sense.</p>
 
 <h2>The Two Sides of Company Car Tax</h2>
 
@@ -53,9 +53,9 @@ keyTakeaways:
 
 <p>There is no separate "company car tax relief" claim form. The relief comes through the normal corporation tax return (CT600) via capital allowances, and the BIK charge is reported on form P11D and taxed through your self assessment (SA100).</p>
 
-<h2>Capital Allowances on Company Cars in 2025/26</h2>
+<h2>Capital Allowances on Company Cars in 2026/27</h2>
 
-<p>The capital allowance your company can claim depends entirely on the car's CO2 emissions. The rules changed significantly from April 2021, and the 2025/26 rates continue the same structure.</p>
+<p>The capital allowance your company can claim depends entirely on the car's CO2 emissions. The rules changed significantly from April 2021, and the 2026/27 rates continue the same structure, with one change: the main-rate writing down allowance fell from 18% to 14% from April 2026.</p>
 
 <h3>Zero-Emission Cars (Electric)</h3>
 
@@ -67,9 +67,9 @@ keyTakeaways:
 
 <h3>Low-Emission Cars (1-50g/km CO2)</h3>
 
-<p>These cars (mainly plug-in hybrids) qualify for a <strong>reduced FYA of 18% per year</strong> on a reducing balance basis. This is the same rate as main pool plant and machinery.</p>
+<p>These cars (mainly plug-in hybrids) go into the <strong>main rate pool at 14% per year</strong> on a reducing balance basis. This is the same rate as main pool plant and machinery (cut from 18% to 14% from April 2026).</p>
 
-<p>Example: A plug-in hybrid costing £35,000 with 40g/km CO2. Year one: 18% x £35,000 = £6,300 deduction. Year two: 18% x (£35,000 - £6,300) = £5,166 deduction. And so on.</p>
+<p>Example: A plug-in hybrid costing £35,000 with 40g/km CO2. Year one: 14% x £35,000 = £4,900 deduction. Year two: 14% x (£35,000 - £4,900) = £4,214 deduction. And so on.</p>
 
 <h3>All Other Cars (Over 50g/km CO2)</h3>
 
@@ -79,48 +79,48 @@ keyTakeaways:
 
 <p>The capital allowance rate does not change based on the car's cost. A £35,000 petrol car gets the same 6% rate as a £15,000 one.</p>
 
-<h2>Benefit-in-Kind (BIK) on Company Cars in 2025/26</h2>
+<h2>Benefit-in-Kind (BIK) on Company Cars in 2026/27</h2>
 
 <p>The BIK charge is what you pay personally for having private use of the company car. HMRC calculates it as a percentage of the car's list price (the P11D value, not what you actually paid).</p>
 
-<p>The percentage depends on CO2 emissions. For 2025/26:</p>
+<p>The percentage depends on CO2 emissions. For 2026/27:</p>
 
 <ul>
-<li><strong>0g/km (electric):</strong> 3% of list price</li>
-<li><strong>1-50g/km (hybrid):</strong> 3-15% depending on electric range</li>
-<li><strong>51-75g/km:</strong> 19%</li>
-<li><strong>76-150g/km:</strong> 20-31% depending on exact CO2</li>
+<li><strong>0g/km (electric):</strong> 4% of list price</li>
+<li><strong>1-50g/km (hybrid):</strong> 4-16% depending on electric range</li>
+<li><strong>51-75g/km:</strong> 20%</li>
+<li><strong>76-150g/km:</strong> 21-32% depending on exact CO2</li>
 <li><strong>Over 150g/km:</strong> 37% (the maximum)</li>
 </ul>
 
-<p>These percentages are set to increase for electric cars to 4% in 2026/27 and 5% in 2027/28.</p>
+<p>The electric car percentage rose to 4% in 2026/27 (from 3% in 2025/26) and is set to increase to 5% in 2027/28.</p>
 
 <h3>Real Numbers: Electric vs Petrol for a Basic Rate Director</h3>
 
 <p>Let us compare two scenarios for a director earning £50,000 salary plus dividends (basic rate taxpayer). Both cars have a list price of £35,000.</p>
 
-<p><strong>Electric car (0g/km, 3% BIK):</strong></p>
+<p><strong>Electric car (0g/km, 4% BIK):</strong></p>
 <ul>
 <li>Company capital allowance: £35,000 deduction. Corporation tax saving at 19%: £6,650.</li>
-<li>Director BIK charge: 3% x £35,000 = £1,050. Tax at 20%: £210 per year.</li>
-<li>Total net benefit in year one: £6,650 company saving minus £210 personal tax = £6,440.</li>
+<li>Director BIK charge: 4% x £35,000 = £1,400. Tax at 20%: £280 per year.</li>
+<li>Total net benefit in year one: £6,650 company saving minus £280 personal tax = £6,370.</li>
 </ul>
 
-<p><strong>Petrol car (130g/km, 30% BIK):</strong></p>
+<p><strong>Petrol car (130g/km, 31% BIK):</strong></p>
 <ul>
 <li>Company capital allowance: 6% x £35,000 = £2,100 deduction. Corporation tax saving at 19%: £399.</li>
-<li>Director BIK charge: 30% x £35,000 = £10,500. Tax at 20%: £2,100 per year.</li>
-<li>Total net benefit in year one: £399 company saving minus £2,100 personal tax = -£1,701 (a net cost).</li>
+<li>Director BIK charge: 31% x £35,000 = £10,850. Tax at 20%: £2,170 per year.</li>
+<li>Total net benefit in year one: £399 company saving minus £2,170 personal tax = -£1,771 (a net cost).</li>
 </ul>
 
 <p>The electric car saves your company significant tax while costing you very little personally. The petrol car costs you more in personal tax than the company saves.</p>
 
 <h2>Fuel Benefit and Free Charging</h2>
 
-<p>If your company pays for the fuel for private mileage, that triggers an additional BIK charge. For 2025/26:</p>
+<p>If your company pays for the fuel for private mileage, that triggers an additional BIK charge. For 2026/27:</p>
 
 <ul>
-<li><strong>Petrol/diesel:</strong> The fuel benefit is calculated as £28,200 (the car fuel benefit multiplier) multiplied by the same BIK percentage as the car. For the petrol car above: 30% x £28,200 = £8,460. Tax at 20%: £1,692 extra per year.</li>
+<li><strong>Petrol/diesel:</strong> The fuel benefit is calculated as £29,200 (the car fuel benefit multiplier) multiplied by the same BIK percentage as the car. For the petrol car above: 31% x £29,200 = £9,052. Tax at 20%: £1,810 extra per year.</li>
 <li><strong>Electric:</strong> If your company pays for electricity for private charging (including at your home), there is no separate fuel benefit charge. HMRC treats electricity as a different class of fuel. However, if the company reimburses you for home charging costs, that is a separate matter (see below).</li>
 </ul>
 
@@ -140,17 +140,17 @@ keyTakeaways:
 
 <p><strong>Operating lease:</strong> The monthly lease payments are deductible as a business expense. However, for cars with CO2 over 50g/km, 15% of the lease cost is disallowed (the "private use adjustment"). For electric and low-emission cars (under 50g/km), 100% of the lease cost is deductible.</p>
 
-<p><strong>Finance lease:</strong> Treated similarly to buying for capital allowance purposes. The capital element of each payment goes into the relevant capital allowance pool (6% or 18% pool depending on emissions).</p>
+<p><strong>Finance lease:</strong> Treated similarly to buying for capital allowance purposes. The capital element of each payment goes into the relevant capital allowance pool (6% or 14% pool depending on emissions).</p>
 
 <p>Leasing can be attractive for high-CO2 cars because you avoid the slow 6% capital allowance pool. But the BIK charge still applies to you personally regardless of whether the company leases or buys.</p>
 
 <h2>Class 1A National Insurance on Company Cars</h2>
 
-<p>Your company must pay Class 1A National Insurance on the BIK value of the car and any fuel benefit. The rate for 2025/26 is 15% (up from 13.8% which applied up to 5 April 2025).</p>
+<p>Your company must pay Class 1A National Insurance on the BIK value of the car and any fuel benefit. The rate for 2026/27 is 15%.</p>
 
-<p>Using the electric car example above: BIK value £1,050 x 15% = £157.50 employer NI per year.</p>
+<p>Using the electric car example above: BIK value £1,400 x 15% = £210 employer NI per year.</p>
 
-<p>For the petrol car: BIK value £10,500 x 15% = £1,575 employer NI per year. Plus the fuel benefit if applicable.</p>
+<p>For the petrol car: BIK value £10,850 x 15% = £1,627.50 employer NI per year. Plus the fuel benefit if applicable.</p>
 
 <p>This employer NI is deductible against the company's profits, but it is still an additional cost to factor in.</p>
 
@@ -159,8 +159,8 @@ keyTakeaways:
 <p>Based on the numbers above, a company car makes clear financial sense in these scenarios:</p>
 
 <ul>
-<li><strong>Electric cars only.</strong> The combination of 100% FYA and 3% BIK is extremely tax-efficient. If you need a new car and can charge at home or work, an electric company car is hard to beat.</li>
-<li><strong>Very high business mileage.</strong> If you drive 20,000+ business miles per year, the company can claim mileage allowances (45p per mile for the first 10,000 miles in 2025/26, rising to 55p from 6 April 2026; 25p thereafter) which may be more tax-efficient than a company car. But the company car route can still work if the car itself is electric.</li>
+<li><strong>Electric cars only.</strong> The combination of 100% FYA and 4% BIK is extremely tax-efficient. If you need a new car and can charge at home or work, an electric company car is hard to beat.</li>
+<li><strong>Very high business mileage.</strong> If you drive 20,000+ business miles per year, the company can claim mileage allowances (55p per mile for the first 10,000 miles in 2026/27, up from 45p in 2025/26; 25p thereafter) which may be more tax-efficient than a company car. But the company car route can still work if the car itself is electric.</li>
 <li><strong>You want a single vehicle for business and personal use.</strong> A company car covers both, with the BIK charge being the personal cost. If you would otherwise buy a car personally and claim mileage, compare the two routes carefully.</li>
 </ul>
 
@@ -171,7 +171,7 @@ keyTakeaways:
 <p>If the numbers do not stack up for a company car, consider these alternatives:</p>
 
 <ul>
-<li><strong>Use your own car and claim mileage.</strong> Your company pays you up to the approved rate per mile tax-free (45p for the first 10,000 business miles in 2025/26, 55p from 6 April 2026; 25p thereafter). This is tax-free and NIC-free. You own the car personally, so no BIK applies. This is often better for petrol/diesel cars.</li>
+<li><strong>Use your own car and claim mileage.</strong> Your company pays you up to the approved rate per mile tax-free (55p for the first 10,000 business miles in 2026/27, up from 45p in 2025/26; 25p thereafter). This is tax-free and NIC-free. You own the car personally, so no BIK applies. This is often better for petrol/diesel cars.</li>
 <li><strong>Buy the car personally and lease it to the company.</strong> You charge the company a commercial rate for using your car. This is more complex and requires a formal hire agreement. Not common for most directors.</li>
 <li><strong>Use a salary sacrifice scheme.</strong> Some companies offer salary sacrifice for electric cars, but for a director this is usually less efficient than the company car route because you lose the capital allowance benefit.</li>
 </ul>
@@ -184,7 +184,7 @@ keyTakeaways:
 
 <ol>
 <li><strong>Choose an electric car.</strong> The tax numbers favour electric overwhelmingly.</li>
-<li><strong>Check the list price.</strong> The BIK is based on the P11D value (list price including VAT, delivery, and optional extras). A £40,000 electric car means a BIK of 3% x £40,000 = £1,200 per year. That is still very low.</li>
+<li><strong>Check the list price.</strong> The BIK is based on the P11D value (list price including VAT, delivery, and optional extras). A £40,000 electric car means a BIK of 4% x £40,000 = £1,600 per year. That is still very low.</li>
 <li><strong>Report the car on form P11D.</strong> Your company must submit a P11D for each director with a company car by 6 July after the tax year end. The BIK is then included in your self assessment.</li>
 <li><strong>Keep a mileage log.</strong> Even with an electric car, HMRC may ask for evidence that the car is used for business. A simple log of business journeys is enough.</li>
 <li><strong>Consider the home charger.</strong> If you install a charger at home, decide whether the company pays for it (triggering a BIK) or you pay personally (no BIK, but you claim the electricity cost for business miles).</li>
@@ -192,7 +192,7 @@ keyTakeaways:
 
 <h2>Final Thoughts</h2>
 
-<p>The tax treatment of company cars in 2025/26 is heavily skewed toward electric vehicles. If you are a director considering a company car, the financial case for electric is strong, while petrol and diesel cars are generally not worth the personal tax cost.</p>
+<p>The tax treatment of company cars in 2026/27 is heavily skewed toward electric vehicles. If you are a director considering a company car, the financial case for electric is strong, while petrol and diesel cars are generally not worth the personal tax cost.</p>
 
 <p>We see many directors who assume a company car is always tax-efficient. It is not. The <strong>limited company car tax relief</strong> only works well when the capital allowance benefit outweighs the personal BIK cost. For electric cars, it does. For everything else, run the numbers carefully.</p>
 

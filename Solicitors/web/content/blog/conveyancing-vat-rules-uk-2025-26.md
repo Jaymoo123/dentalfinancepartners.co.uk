@@ -1,8 +1,8 @@
 ---
-title: How Does VAT Apply to Conveyancing Fees for UK Solicitors in 2025/26?
+title: How Does VAT Apply to Conveyancing Fees for UK Solicitors in 2026/27?
 slug: conveyancing-vat-rules-uk-2025-26
 canonical: https://www.accountsforlawyers.co.uk/blog/vat-compliance/conveyancing-vat-rules-uk-2025-26
-date: '2026-05-18'
+date: '2026-07-28'
 generator: opus-4.8/track2-rewrite
 author: Accounts for Lawyers Editorial Team
 category: VAT & Compliance
@@ -10,8 +10,8 @@ metaTitle: 'VAT on Land Registry Fees: UK Conveyancing VAT Rules'
 metaDescription: 'Adding VAT to Land Registry fees is wrong: they are clean disbursements with no VAT, while your conveyancing fee stays standard-rated at 20%.'
 altText: UK conveyancing solicitor reviewing the VAT treatment of searches, Land Registry fees and SDLT for a property matter
 image: ''
-h1: How Does VAT Apply to Conveyancing Fees for UK Solicitors in 2025/26?
-summary: 'Conveyancing legal services are standard-rated for VAT at 20%. This guide works through the VAT treatment of a conveyancing matter end to end in 2025/26: your firm''s fee, property searches (and why most are not disbursements after Brabners), HM Land Registry registration fees, the property transaction tax paid for the client, and CHAPS recharges.'
+h1: How Does VAT Apply to Conveyancing Fees for UK Solicitors in 2026/27?
+summary: 'Conveyancing legal services are standard-rated for VAT at 20%. This guide works through the VAT treatment of a conveyancing matter end to end in 2026/27: your firm''s fee, property searches (and why most are not disbursements after Brabners), HM Land Registry registration fees, the property transaction tax paid for the client, and CHAPS recharges.'
 keyTakeaways:
 - Conveyancing legal services are standard-rated for VAT at 20%, with no exemption for residential work.
 - After Brabners and Revenue and Customs Brief 6 (2020), a search you read and advise on is part of your taxable supply, not a VAT-free disbursement.
@@ -37,7 +37,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 ---
 <p>If you handle residential or commercial conveyancing, VAT touches almost every line on the completion statement. Your fee, the searches, the Land Registry, the tax paid for the client and the bank transfer are each treated differently, and the area that most often trips firms up is searches. The treatment changed after the Brabners case, and a position that looked safe for years is now wrong on most files.</p>
 
-<p>This guide walks through the VAT treatment of a conveyancing matter from end to end in the 2025/26 tax year: the firm's own fee, property searches, HM Land Registry registration, the property transaction tax paid for the client, and CHAPS recharges. For the general law on what makes a payment a disbursement, including HMRC's full set of conditions, see our companion guide on the <a href="/blog/vat-compliance/disbursements-vat-treatment-uk-law-firms">VAT treatment of disbursements for UK law firms</a>. This page focuses on how those rules play out in a conveyancing file specifically.</p>
+<p>This guide walks through the VAT treatment of a conveyancing matter from end to end in the 2026/27 tax year: the firm's own fee, property searches, HM Land Registry registration, the property transaction tax paid for the client, and CHAPS recharges. For the general law on what makes a payment a disbursement, including HMRC's full set of conditions, see our companion guide on the <a href="/blog/vat-compliance/disbursements-vat-treatment-uk-law-firms">VAT treatment of disbursements for UK law firms</a>. This page focuses on how those rules play out in a conveyancing file specifically.</p>
 
 <h2>Are Conveyancing Fees Subject to VAT?</h2>
 
@@ -112,9 +112,9 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>For the wider compliance picture, see our <a href="/services/cofa-compliance-support">COFA compliance support</a> page, which covers VAT record keeping alongside the SRA Accounts Rules.</p>
 
-<h2>What Changed for 2025/26</h2>
+<h2>What Changed for 2026/27</h2>
 
-<p>The substantive VAT rules for conveyancing are settled: the Brabners position on searches and Brief 6 (2020) continue to govern, and the search and CHAPS treatments described above are unchanged. Making Tax Digital for VAT remains mandatory for all VAT-registered firms, so returns must run through compatible software. From April 2026, Making Tax Digital for Income Tax begins to apply to sole practitioners and partners over the relevant income threshold, which is a record-keeping change rather than a change to how conveyancing VAT works. The point that still catches firms out is not new for the year: it is the search treatment, and the annual review job is to make sure the firm has actually applied it.</p>
+<p>The substantive VAT rules for conveyancing are settled: the Brabners position on searches and Brief 6 (2020) continue to govern, and the search and CHAPS treatments described above are unchanged. Making Tax Digital for VAT remains mandatory for all VAT-registered firms, so returns must run through compatible software. Making Tax Digital for Income Tax now applies from April 2026 to sole practitioners and partners over the relevant income threshold, which is a record-keeping change rather than a change to how conveyancing VAT works. The point that still catches firms out is not new for the year: it is the search treatment, and the annual review job is to make sure the firm has actually applied it.</p>
 
 <h2>Final Thoughts</h2>
 

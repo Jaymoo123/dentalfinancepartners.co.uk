@@ -1,36 +1,36 @@
 ---
-title: "UK LLP Tax Return Deadline 2025/26: Dates, Forms, Penalties"
+title: "UK LLP Tax Return Deadline 2026/27: Dates, Forms, Penalties"
 slug: "llp-tax-return-deadline-uk-2025-26"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-accounting/llp-tax-return-deadline-uk-2025-26"
-date: "2026-05-19"
+date: "2026-07-28"
 generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Accounting"
-metaTitle: "UK LLP Tax Return Deadline 2025/26: SA800 + Filing Dates"
-metaDescription: "UK LLP tax return deadlines 2025/26. SA800 partnership return due 31 January. Each member's SA filing due same date. Companies House LLP accounts 9 months."
+metaTitle: "UK LLP Tax Return Deadline 2026/27: SA800 + Filing Dates"
+metaDescription: "UK LLP tax return deadlines 2026/27. SA800 partnership return due 31 January. Each member's SA filing due same date. Companies House LLP accounts 9 months."
 altText: "UK LLP partners reviewing SA800 partnership tax return filing checklist"
-h1: "UK LLP Tax Return Deadline 2025/26: Dates, Forms, Penalties"
-summary: "UK LLP filing deadlines 2025/26: SA800 partnership return due 31 January following tax year end. LLP accounts at Companies House 9 months after year-end. Each member's personal SA due 31 January. We cover the full filing calendar plus penalties."
+h1: "UK LLP Tax Return Deadline 2026/27: Dates, Forms, Penalties"
+summary: "UK LLP filing deadlines 2026/27: SA800 partnership return due 31 January following tax year end. LLP accounts at Companies House 9 months after year-end. Each member's personal SA due 31 January. We cover the full filing calendar plus penalties."
 keyTakeaways:
-  - "The SA800 partnership return is due online by 31 January following the tax year (31 January 2027 for 2025/26)."
+  - "The SA800 partnership return is due online by 31 January following the tax year (31 January 2028 for 2026/27)."
   - "LLP accounts must reach Companies House within nine months of the accounting reference date."
   - "A late SA800 penalises both the LLP and each member, so a 4-member LLP six months late can owe roughly £10,600."
   - "Each member files their own self-assessment by 31 January and pays via two payments on account (31 January and 31 July)."
   - "The confirmation statement is due on the incorporation anniversary and costs £34 to file online."
 faqs:
   - question: "What's the SA800 partnership return deadline?"
-    answer: "31 January following the end of the tax year. For the 2025/26 tax year (ending 5 April 2026), the SA800 is due by 31 January 2027 for online filing. The paper deadline is earlier at 31 October 2026 — but virtually all LLPs file online. The SA800 shows the LLP's total profit and the allocation between members; each member then includes their share on their personal SA filed by the same 31 January deadline."
+    answer: "31 January following the end of the tax year. For the 2026/27 tax year (ending 5 April 2027), the SA800 is due by 31 January 2028 for online filing. The paper deadline is earlier at 31 October 2027, but virtually all LLPs file online. The SA800 shows the LLP's total profit and the allocation between members; each member then includes their share on their personal SA filed by the same 31 January deadline."
   - question: "Do LLPs file accounts at Companies House?"
-    answer: "Yes. LLPs file annual accounts at Companies House within 9 months of the LLP's accounting period end. For example, an LLP with year-end 31 December 2025 files accounts by 30 September 2026. Audit thresholds match private limited companies (turnover under £15m, balance sheet under £7.5m typically qualifies for audit exemption). Small LLPs can file abridged accounts disclosing limited financial information."
+    answer: "Yes. LLPs file annual accounts at Companies House within 9 months of the LLP's accounting period end. For example, an LLP with year-end 31 December 2026 files accounts by 30 September 2027. Audit thresholds match private limited companies (turnover under £15m, balance sheet under £7.5m typically qualifies for audit exemption). Small LLPs can file abridged accounts disclosing limited financial information."
   - question: "What's the penalty for missing the SA800 deadline?"
     answer: "Automatic penalty applied to the LLP and to each member individually. Initial £100 fixed penalty on the partnership; further £100 penalty on each partner if the SA800 hasn't been filed within 3 months. Daily penalties of £10 per partner after 3 months (capped at 90 days = £900). Further £300 or 5% of tax due (whichever greater) at 6 and 12 months. Filing very late routinely costs an LLP thousands of pounds in cumulative penalties."
   - question: "When are partner self-assessment payments due?"
-    answer: "Each partner files their own SA by 31 January following the tax year. Tax due is payable on the same date. Plus payments on account: 50% of the previous year's tax liability is due on 31 January (during the tax year), and another 50% on 31 July (after the tax year ends). Partners with significant tax bills should expect to pay tax three times per year — the SA balance plus two payments on account."
+    answer: "Each partner files their own SA by 31 January following the tax year. Tax due is payable on the same date. Plus payments on account: 50% of the previous year's tax liability is due on 31 January (during the tax year), and another 50% on 31 July (after the tax year ends). Partners with significant tax bills should expect to pay tax three times per year: the SA balance plus two payments on account."
   - question: "What's the deadline for Companies House LLP accounts?"
     answer: "Nine months after the LLP's accounting reference date (year-end). The accounting reference date is set at incorporation and defaults to the anniversary of the month of incorporation (e.g., an LLP incorporated 14 June has a default accounting reference date of 30 June). Many LLPs change their accounting reference date to align with the tax year (5 April or 31 March). Late filing penalties start at £150 (under 1 month late), rising to £1,500 (over 6 months late) for an LLP."
 ---
 
-<p><strong>UK LLP tax filing in 2025/26 has three parallel deadlines:</strong> the SA800 partnership return to HMRC by 31 January, each member's personal self-assessment by the same date, and the LLP's annual accounts at Companies House within 9 months of year-end. Missing any of these triggers automatic penalties — on the LLP, on each member individually, or both.</p>
+<p><strong>UK LLP tax filing in 2026/27 has three parallel deadlines:</strong> the SA800 partnership return to HMRC by 31 January, each member's personal self-assessment by the same date, and the LLP's annual accounts at Companies House within 9 months of year-end. Missing any of these triggers automatic penalties, on the LLP, on each member individually, or both.</p>
 
 <p>This guide walks through every filing deadline UK LLPs face, what each filing covers, the penalty structure, and the practical filing rhythm a well-run LLP follows.</p>
 
@@ -41,7 +41,7 @@ faqs:
 <ul>
 <li><strong>What it is</strong>: the LLP's annual partnership tax return showing total profit for the LLP and the allocation between members</li>
 <li><strong>Deadline</strong>: 31 January following the tax year (online) or 31 October following the tax year (paper)</li>
-<li><strong>Tax year basis</strong>: UK tax year runs 6 April to 5 April. For 2025/26 (ending 5 April 2026), SA800 is due by 31 January 2027</li>
+<li><strong>Tax year basis</strong>: UK tax year runs 6 April to 5 April. For 2026/27 (ending 5 April 2027), SA800 is due by 31 January 2028</li>
 <li><strong>No tax payment with SA800</strong>: the LLP itself doesn't pay corporation tax. The tax is paid by each member on their personal SA</li>
 <li><strong>Filed by</strong>: typically the firm's accountant or the designated partner via HMRC's online portal or third-party software</li>
 </ul>
@@ -75,16 +75,16 @@ faqs:
 <li><strong>Updates</strong>: any member changes during the year should be filed separately as they occur (LL AP02 to appoint, LL TM02 to terminate)</li>
 </ul>
 
-<h2>The 2025/26 filing calendar in practice</h2>
+<h2>The 2026/27 filing calendar in practice</h2>
 
 <p>A typical UK LLP with a 31 March accounting reference date and tax year-end:</p>
 
 <ul>
-<li><strong>31 March 2026</strong>: LLP year-end / UK tax year-end (close enough to 5 April for practical purposes)</li>
-<li><strong>April-September 2026</strong>: accountants prepare LLP accounts and SA800</li>
-<li><strong>By 31 July 2026</strong>: members make 2nd payment on account for 2024/25 tax year (50% of prior year's liability)</li>
-<li><strong>By 31 December 2026</strong>: LLP accounts filed at Companies House (9 months after 31 March 2026)</li>
-<li><strong>By 31 January 2027</strong>: SA800 filed with HMRC; each member's personal SA filed; members pay 2025/26 balance plus 1st payment on account for 2026/27</li>
+<li><strong>31 March 2027</strong>: LLP year-end / UK tax year-end (close enough to 5 April for practical purposes)</li>
+<li><strong>April-September 2027</strong>: accountants prepare LLP accounts and SA800</li>
+<li><strong>By 31 July 2027</strong>: members make 2nd payment on account for 2025/26 tax year (50% of prior year's liability)</li>
+<li><strong>By 31 December 2027</strong>: LLP accounts filed at Companies House (9 months after 31 March 2027)</li>
+<li><strong>By 31 January 2028</strong>: SA800 filed with HMRC; each member's personal SA filed; members pay 2026/27 balance plus 1st payment on account for 2027/28</li>
 <li><strong>Annual confirmation statement</strong>: filed on incorporation anniversary</li>
 </ul>
 
@@ -140,7 +140,7 @@ faqs:
 <li><strong>Notification of any changes</strong> in membership during the year</li>
 </ul>
 
-<p>The SA800 is filed by the partnership (typically by the designated partner or the firm's accountant) but doesn't carry the tax payment — that's handled by each member on their personal SA.</p>
+<p>The SA800 is filed by the partnership (typically by the designated partner or the firm's accountant) but doesn't carry the tax payment (that's handled by each member on their personal SA).</p>
 
 <h2>What each member reports on their personal SA</h2>
 
@@ -159,7 +159,7 @@ faqs:
 
 <h2>FA 2014 Salaried Member implications</h2>
 
-<p>If any LLP members are caught by the FA 2014 Salaried Member Rules (deemed employee for tax — Conditions A + B + C all met), their treatment changes:</p>
+<p>If any LLP members are caught by the FA 2014 Salaried Member Rules (deemed employee for tax, with Conditions A + B + C all met), their treatment changes:</p>
 
 <ul>
 <li>PAYE applies on their drawings during the year</li>
@@ -182,7 +182,7 @@ faqs:
 
 <h3>Companies House accounts filed in wrong format</h3>
 
-<p>Small LLPs can file abridged accounts; mid-sized LLPs must file full accounts. Filing the wrong format triggers Companies House rejection and the LLP has to refile — sometimes with the deadline running. Get the size category right at the start of the filing process.</p>
+<p>Small LLPs can file abridged accounts; mid-sized LLPs must file full accounts. Filing the wrong format triggers Companies House rejection and the LLP has to refile, sometimes with the deadline running. Get the size category right at the start of the filing process.</p>
 
 <h3>Capital movement reporting</h3>
 

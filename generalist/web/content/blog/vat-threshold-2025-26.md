@@ -1,13 +1,13 @@
 ---
-title: "VAT Threshold 2025/26 UK: £90,000 Registration Rule Explained"
+title: "VAT Threshold 2026/27 UK: £90,000 Registration Rule Explained"
 slug: vat-threshold-2025-26
 canonical: https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/vat-threshold-2025-26
-date: '2026-05-17'
+date: '2026-07-28'
 generator: sonnet-4.6/track2-rewrite
 author: "Holloway Davies Editorial Team"
 category: VAT and Making Tax Digital
-metaTitle: 'VAT Threshold 2025/26: The £90,000 Registration Rule'
-metaDescription: "The VAT threshold for 2025/26 is £90,000 of taxable turnover in any rolling 12-month period. Miss the 30-day deadline and HMRC backdates the bill."
+metaTitle: 'VAT Threshold 2026/27: The £90,000 Registration Rule'
+metaDescription: "The VAT threshold for 2026/27 is £90,000 of taxable turnover in any rolling 12-month period. Miss the 30-day deadline and HMRC backdates the bill."
 altText: "UK accountant reviewing VAT threshold figures on a laptop with calculator and paperwork on a desk in a modern office"
 image: /blog/vat-threshold-2025-26.jpg
 imageCredit:
@@ -15,26 +15,26 @@ imageCredit:
   photographerUrl: https://www.pexels.com/@viridianaor
   sourceUrl: https://www.pexels.com/photo/bright-january-2025-desktop-calendar-image-29997005/
   source: Pexels
-h1: "VAT Threshold 2025/26 UK: The £90,000 Rule, the Rolling Test and What Happens Next"
-summary: "The VAT registration threshold for 2025/26 is £90,000 of taxable turnover in any rolling 12-month period (raised from £85,000 on 1 April 2024 under VATA 1994 Sch 1). Exceed it and you have 30 days to notify HMRC; your effective registration date is the first day of the second month after you went over. This guide explains the rolling test in full, works through a complete numeric example, covers the flat rate scheme and the deregistration threshold, and sets out what happens if you miss the deadline."
-dateModified: '2026-06-12'
+h1: "VAT Threshold 2026/27 UK: The £90,000 Rule, the Rolling Test and What Happens Next"
+summary: "The VAT registration threshold for 2026/27 is £90,000 of taxable turnover in any rolling 12-month period (raised from £85,000 on 1 April 2024 under VATA 1994 Sch 1). Exceed it and you have 30 days to notify HMRC; your effective registration date is the first day of the second month after you went over. This guide explains the rolling test in full, works through a complete numeric example, covers the flat rate scheme and the deregistration threshold, and sets out what happens if you miss the deadline."
+dateModified: '2026-07-28'
 reviewedBy: "James Holloway"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-12'
 schema: ""
 faqs:
-- question: "What is the VAT threshold for 2025/26?"
-  answer: "The VAT registration threshold for 2025/26 is £90,000 of taxable turnover in any rolling 12-month period. This figure has been in place since 1 April 2024, when it increased from £85,000 under VATA 1994 Sch 1. If your turnover exceeds £90,000 at any point, you have 30 days from the end of that month to notify HMRC."
-- question: "What is the VAT limit in 2025?"
-  answer: "The VAT limit in 2025 is £90,000 of taxable turnover over any rolling 12-month period. This applies to sole traders, limited companies and partnerships. Zero-rated turnover counts toward this limit even though the VAT on those sales is zero; exempt turnover does not count."
-- question: "What is VAT in the UK in 2025?"
-  answer: "VAT in the UK in 2025 is charged at three rates: standard 20%, reduced 5% (fuel, children's car seats, home energy), and zero-rate 0% (most food, books, children's clothing). The registration threshold is £90,000 of taxable (standard, reduced and zero-rated) turnover in any rolling 12-month period. Exempt supplies (insurance, education, certain property) do not count toward the threshold."
-- question: "What is the VAT rate UK 2025?"
-  answer: "The VAT rates in the UK for 2025 are: standard rate 20%, reduced rate 5%, and zero rate 0%. The standard 20% rate applies to most goods and services. The 5% reduced rate applies to domestic fuel and power, children's car seats and certain other items. The 0% rate applies to most food, books, newspapers, children's clothing and footwear. The registration threshold is £90,000 of taxable turnover."
-- question: "What's the VAT threshold 2025 and has it changed from 2024?"
-  answer: "The VAT threshold for 2025/26 is £90,000, the same as for 2024/25. The threshold increased from £85,000 to £90,000 on 1 April 2024, and no further change was announced in the Autumn 2024 Budget. The deregistration threshold is £88,000."
+- question: "What is the VAT threshold for 2026/27?"
+  answer: "The VAT registration threshold for 2026/27 is £90,000 of taxable turnover in any rolling 12-month period. This figure has been in place since 1 April 2024, when it increased from £85,000 under VATA 1994 Sch 1. If your turnover exceeds £90,000 at any point, you have 30 days from the end of that month to notify HMRC."
+- question: "What is the VAT limit in 2026?"
+  answer: "The VAT limit in 2026 is £90,000 of taxable turnover over any rolling 12-month period. This applies to sole traders, limited companies and partnerships. Zero-rated turnover counts toward this limit even though the VAT on those sales is zero; exempt turnover does not count."
+- question: "What is VAT in the UK in 2026?"
+  answer: "VAT in the UK in 2026 is charged at three rates: standard 20%, reduced 5% (fuel, children's car seats, home energy), and zero-rate 0% (most food, books, children's clothing). The registration threshold is £90,000 of taxable (standard, reduced and zero-rated) turnover in any rolling 12-month period. Exempt supplies (insurance, education, certain property) do not count toward the threshold."
+- question: "What is the VAT rate UK 2026?"
+  answer: "The VAT rates in the UK for 2026 are: standard rate 20%, reduced rate 5%, and zero rate 0%. The standard 20% rate applies to most goods and services. The 5% reduced rate applies to domestic fuel and power, children's car seats and certain other items. The 0% rate applies to most food, books, newspapers, children's clothing and footwear. The registration threshold is £90,000 of taxable turnover."
+- question: "What's the VAT threshold 2026 and has it changed from 2025?"
+  answer: "The VAT threshold for 2026/27 is £90,000, the same as for 2025/26. The threshold increased from £85,000 to £90,000 on 1 April 2024, and no further change was announced since. The deregistration threshold is £88,000."
 - question: "What is the UK VAT registration threshold for 2026?"
-  answer: "The UK VAT registration threshold for 2026 (tax year 2025/26 and running into 2026/27) is £90,000 of taxable turnover in any rolling 12-month period. No change to this figure was announced in the 2024 Autumn Budget. The deregistration threshold is £88,000."
+  answer: "The UK VAT registration threshold for 2026 (tax year 2026/27) is £90,000 of taxable turnover in any rolling 12-month period. No change to this figure has been announced. The deregistration threshold is £88,000."
 - question: "How is the rolling 12-month VAT test calculated?"
   answer: "At the end of each calendar month, add up your taxable turnover for that month and the previous 11 months. If that total exceeds £90,000, you must notify HMRC within 30 days of the end of that month. Your effective date of registration is the first day of the second month after you went over the threshold. For example, if you cross £90,000 during July, you notify HMRC by 30 August and your registration becomes effective from 1 September."
 - question: "What happens if I go over the VAT threshold and do not register?"
@@ -46,20 +46,20 @@ faqs:
 - question: "What is the VAT flat rate scheme and who qualifies?"
   answer: "The flat rate scheme lets eligible businesses pay a fixed percentage of their VAT-inclusive turnover to HMRC instead of tracking input VAT on every purchase. You can join if your expected taxable turnover is £150,000 or less (excluding VAT). In your first year of VAT registration, a 1% discount applies. If your goods costs are less than 2% of turnover or less than £1,000 a year, you are a limited cost business and your flat rate is 16.5%, which is usually worse than standard VAT accounting."
 - question: "Does Making Tax Digital apply to newly VAT-registered businesses?"
-  answer: "Yes. Making Tax Digital for VAT has applied to all VAT-registered businesses since April 2022, regardless of turnover. If you register for VAT in 2025/26, you must keep digital VAT records and submit VAT returns through MTD-compatible software from day one. Xero, FreeAgent, QuickBooks and Sage all support MTD for VAT. Spreadsheets alone do not qualify unless bridging software is used."
+  answer: "Yes. Making Tax Digital for VAT has applied to all VAT-registered businesses since April 2022, regardless of turnover. If you register for VAT in 2026/27, you must keep digital VAT records and submit VAT returns through MTD-compatible software from day one. Xero, FreeAgent, QuickBooks and Sage all support MTD for VAT. Spreadsheets alone do not qualify unless bridging software is used."
 - question: "What counts as taxable turnover for the VAT threshold?"
   answer: "Taxable turnover for VAT registration purposes includes the total value of all standard-rated (20%), reduced-rated (5%) and zero-rated (0%) supplies. It does not include exempt supplies (insurance, most education, certain property transactions), capital asset disposals, dividends or investment income. Crucially, zero-rated turnover (food sales, book sales, etc.) counts toward the £90,000 threshold even though no VAT is charged on those sales."
 editorialNote: "metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis. Track-2 gold-reference rewrite 2026-06-12; factual correction applied to effective registration date (first day of second month after exceeding threshold, per GOV.UK; prior version incorrectly stated first day of the month of exceeding)."
 ---
-<p>The VAT threshold for 2025/26 is <strong>£90,000</strong> of taxable turnover in any rolling 12-month period, raised from £85,000 on 1 April 2024 under <a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/1" rel="noopener noreferrer">VATA 1994 Schedule 1</a> as amended by <a href="https://www.legislation.gov.uk/uksi/2024/307/contents/made" rel="noopener noreferrer">SI 2024/307 (The Value Added Tax (Increase of Registration Limits) Order 2024)</a>. Cross it and you must notify HMRC within 30 days of the end of the month in which you went over. Your effective date of registration is then <strong>the first day of the second month after you exceeded the threshold</strong>, meaning you must charge VAT on invoices from that date even if your certificate has not yet arrived.</p>
+<p>The VAT threshold for 2026/27 is <strong>£90,000</strong> of taxable turnover in any rolling 12-month period, raised from £85,000 on 1 April 2024 under <a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/1" rel="noopener noreferrer">VATA 1994 Schedule 1</a> as amended by <a href="https://www.legislation.gov.uk/uksi/2024/307/contents/made" rel="noopener noreferrer">SI 2024/307 (The Value Added Tax (Increase of Registration Limits) Order 2024)</a>. Cross it and you must notify HMRC within 30 days of the end of the month in which you went over. Your effective date of registration is then <strong>the first day of the second month after you exceeded the threshold</strong>, meaning you must charge VAT on invoices from that date even if your certificate has not yet arrived.</p>
 
 <p>That date distinction matters far more than most business owners realise. A contractor who crosses £90,000 on 18 July has until 30 August to notify HMRC, and their registration becomes effective from 1 September. Every invoice raised from 1 September must carry VAT at the standard rate of 20% (or the applicable reduced or zero rate). If they raise invoices in September without VAT, they will owe the 20% to HMRC out of their own margin.</p>
 
 <p>This guide covers the rolling test in full with a worked numeric example, explains exactly what taxable turnover includes and excludes, sets out the penalty regime for late registration, compares the flat rate scheme against standard accounting, and addresses the deregistration threshold and voluntary registration logic. Every figure is drawn from the locked positions in the Holloway Davies ground-truth document (§7) and verified at <a href="https://www.gov.uk/vat-registration/when-to-register" rel="noopener noreferrer">GOV.UK</a>.</p>
 
-<h2>VAT Rates in the UK 2025: Standard, Reduced and Zero</h2>
+<h2>VAT Rates in the UK 2026: Standard, Reduced and Zero</h2>
 
-<p>Before running the threshold calculation, it is worth being precise about which supplies count. VAT in the UK in 2025 operates at three rates under VATA 1994:</p>
+<p>Before running the threshold calculation, it is worth being precise about which supplies count. VAT in the UK in 2026 operates at three rates under VATA 1994:</p>
 
 <table>
   <thead>
@@ -288,7 +288,7 @@ editorialNote: "metaTitle and metaDescription rewritten via meta_apply.py (SERP 
 
 <h2>Making Tax Digital for VAT: Non-Negotiable from Day One</h2>
 
-<p>Making Tax Digital (MTD) for VAT has applied to all VAT-registered businesses since April 2022, with no minimum turnover floor. If you register for VAT in 2025/26 for the first time, you must keep digital VAT records and submit returns through MTD-compatible software from the effective date of registration. There is no paper return option.</p>
+<p>Making Tax Digital (MTD) for VAT has applied to all VAT-registered businesses since April 2022, with no minimum turnover floor. If you register for VAT in 2026/27 for the first time, you must keep digital VAT records and submit returns through MTD-compatible software from the effective date of registration. There is no paper return option.</p>
 
 <p>MTD-compatible software includes Xero, FreeAgent, QuickBooks, Sage and several others. You cannot submit via HMRC's own online portal for VAT (that was closed to new submissions when MTD became mandatory). Spreadsheets are permitted only if you use approved bridging software that connects your spreadsheet to HMRC's API.</p>
 

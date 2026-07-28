@@ -1,18 +1,18 @@
 ---
-title: How Much Do UK Trainee Solicitors Earn in 2025/26?
+title: How Much Do UK Trainee Solicitors Earn in 2026/27?
 slug: how-much-do-trainee-solicitors-earn-uk-2025-26
 canonical: https://www.accountsforlawyers.co.uk/blog/trainee-paralegal-tax/how-much-do-trainee-solicitors-earn-uk-2025-26
-date: '2026-05-19'
+date: '2026-07-28'
 generator: opus-4.8/netnew-wave
 author: Accounts for Lawyers Editorial Team
 category: Trainee & Paralegal Tax
-metaTitle: Trainee Solicitor Salary UK by Firm Type and Region
+metaTitle: Trainee Solicitor Salary UK 2026/27 by Firm Type
 metaDescription: What UK trainee solicitors earn, from £25,000 at high street firms to over £60,000 at the Magic Circle. See take-home after tax, NI and student loan.
 altText: UK trainee solicitor at a law firm desk reviewing case files
-h1: How Much Do UK Trainee Solicitors Earn in 2025/26?
-summary: UK trainee solicitor salaries in 2025/26 range from £25,000 at small high-street firms to £60,000+ at Magic Circle firms. Most are in £28,000-£40,000 range. We cover salaries by firm type, post-qualification jumps, take-home after tax and student loan.
+h1: How Much Do UK Trainee Solicitors Earn in 2026/27?
+summary: UK trainee solicitor salaries in 2026/27 range from £25,000 at small high-street firms to £60,000+ at Magic Circle firms. Most are in £28,000-£40,000 range. We cover salaries by firm type, post-qualification jumps, take-home after tax and student loan.
 keyTakeaways:
-- UK trainee solicitor salaries in 2025/26 span £25,000 at small high-street firms to £60,000 or more at the Magic Circle.
+- UK trainee solicitor salaries in 2026/27 span £25,000 at small high-street firms to £60,000 or more at the Magic Circle.
 - 'Firm type is the biggest driver: most trainees sit in the £28,000 to £40,000 range.'
 - On a £30,000 salary, take-home is roughly £23,377 a year after tax, NI, 5 percent pension and Plan 2 student loan.
 - The trainee-to-NQ jump is the largest single career salary step, up to +162 percent at US firms in London.
@@ -24,21 +24,21 @@ faqs:
   answer: 'The SQE (Solicitors Qualifying Examination) replaced the LPC route from 1 September 2021. Qualifying Work Experience (QWE) is two years of legal work experience under SRA-approved supervision. Many firms continue to offer two-year structured training contracts that meet the QWE requirement, with seat rotations across practice areas. The trainee salary structure has continued under SQE: typically a fixed salary for the two-year QWE period, with a step-up on qualification.'
 - question: Are trainee solicitors paid less while studying for the SQE?
   answer: Depends on the firm. Some firms employ trainees on a reduced salary during the SQE study period (typically 80-90 percent of the QWE salary, sometimes lower) and step the salary to full QWE level once exams are passed. Other firms pay full salary throughout and absorb the SQE study time as part of the training. Magic Circle and most City firms pay full salary; smaller firms vary.
-- question: What's a newly-qualified solicitor salary in the UK 2025/26?
-  answer: 'Newly Qualified (NQ) solicitor salaries in 2025/26: Magic Circle around £125,000-£150,000, US firms in London £150,000-£180,000+, mid-tier City firms £80,000-£110,000, Silver Circle £105,000-£135,000, mid-market regional £45,000-£70,000, high-street £35,000-£55,000. The post-qualification jump from trainee to NQ is the largest single salary step in a solicitor''s career.'
+- question: What's a newly-qualified solicitor salary in the UK 2026/27?
+  answer: 'Newly Qualified (NQ) solicitor salaries in 2026/27: Magic Circle around £125,000-£150,000, US firms in London £150,000-£180,000+, mid-tier City firms £80,000-£110,000, Silver Circle £105,000-£135,000, mid-market regional £45,000-£70,000, high-street £35,000-£55,000. The post-qualification jump from trainee to NQ is the largest single salary step in a solicitor''s career.'
 - question: What's the take-home pay on a £30,000 trainee solicitor salary?
-  answer: On a £30,000 salary in 2025/26, a UK trainee solicitor takes home approximately £24,300 after income tax (£3,486), employee NI (£1,394) and a typical 5 percent auto-enrolment pension contribution (£1,500 reducing taxable). On Plan 2 student loan (most common for solicitors post-2012), an additional £243 is deducted, taking net take-home to approximately £24,050 per year or £2,000 per month. Monthly take-home rises by roughly £25-£40 per £1,000 of salary increase at this band.
+  answer: On a £30,000 salary in 2026/27, a UK trainee solicitor takes home approximately £23,620 after income tax (£3,486), employee NI (£1,394) and a typical 5 percent auto-enrolment pension contribution (£1,500 reducing taxable). On Plan 2 student loan (most common for solicitors post-2012), an additional £243 is deducted, taking net take-home to approximately £23,377 per year or £1,948 per month. Monthly take-home rises by roughly £25-£40 per £1,000 of salary increase at this band.
 metaTitle_prev: 'Trainee Solicitor Salary UK 2025/26: By Firm Type'
 metaDescription_prev: UK trainee solicitor salaries 2025/26 by firm type and region. Magic Circle £50k-£60k. High street £25k-£35k. SQE costs, take-home, what to expect.
 dateModified: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 schema: ''
 ---
-<p><strong>UK trainee solicitor salaries in 2025/26 range from £25,000 at small high-street firms to £60,000 or more at Magic Circle firms.</strong> Most trainees sit in the £28,000-£40,000 range. The single biggest determinant is firm type — the gap between a Magic Circle trainee and a regional high-street trainee is larger than the gap between many qualified solicitors at the same firm types.</p>
+<p><strong>UK trainee solicitor salaries in 2026/27 range from £25,000 at small high-street firms to £60,000 or more at Magic Circle firms.</strong> Most trainees sit in the £28,000-£40,000 range. The single biggest determinant is firm type: the gap between a Magic Circle trainee and a regional high-street trainee is larger than the gap between many qualified solicitors at the same firm types.</p>
 
-<p>This guide gives realistic salary ranges by firm type and region for 2025/26, the structural elements (SQE pay split, qualification jump, retention bonuses), and what trainees actually take home after income tax, National Insurance, pension and student loan.</p>
+<p>This guide gives realistic salary ranges by firm type and region for 2026/27, the structural elements (SQE pay split, qualification jump, retention bonuses), and what trainees actually take home after income tax, National Insurance, pension and student loan.</p>
 
-<h2>Trainee solicitor salary ranges by firm type — 2025/26</h2>
+<h2>Trainee solicitor salary ranges by firm type (2026/27)</h2>
 
 <h3>Magic Circle (Allen & Overy / Shearman, Clifford Chance, Freshfields, Linklaters, Slaughter and May)</h3>
 
@@ -80,7 +80,7 @@ schema: ''
 
 <p>National firms with regional offices pay a London/regional differential. The Manchester or Leeds office of a firm pays meaningfully less than the London office for the same level.</p>
 
-<h3>Mid-market regional firms (top regional independents — Burness Paull, Mills & Reeve, Shoosmiths, Brabners)</h3>
+<h3>Mid-market regional firms (top regional independents such as Burness Paull, Mills & Reeve, Shoosmiths, Brabners)</h3>
 
 <ul>
 <li><strong>Trainee year 1</strong>: £28,000-£36,000</li>
@@ -116,12 +116,12 @@ schema: ''
 <li><strong>Life insurance</strong>: typically 4x base salary, standard at larger firms</li>
 <li><strong>Income protection</strong>: standard at larger firms</li>
 <li><strong>SQE study costs</strong>: paid by most large firms (£15,000-£25,000 in study fees and materials), often as a recoverable arrangement if the trainee leaves within 2 years of qualifying</li>
-<li><strong>Salary during SQE study leave</strong>: varies — some firms pay full salary throughout; some reduce to 80-90 percent during exam periods</li>
+<li><strong>Salary during SQE study leave</strong>: varies (some firms pay full salary throughout; some reduce to 80-90 percent during exam periods)</li>
 <li><strong>Annual leave</strong>: 25-28 days standard, plus bank holidays. Larger firms increasingly offer 28-30 days</li>
 <li><strong>Bonus</strong>: discretionary at most firms; structured at Magic Circle and US firms. Trainee-level bonuses typically £0-£3,000; NQ bonuses materially higher</li>
 </ul>
 
-<h2>The take-home calculation — £30,000 trainee salary 2025/26</h2>
+<h2>The take-home calculation on a £30,000 trainee salary (2026/27)</h2>
 
 <p>Working through a typical regional or mid-market trainee on £30,000:</p>
 
@@ -136,9 +136,9 @@ schema: ''
 
 <p>Net take-home: £30,000 - £3,486 - £1,394 - £1,500 - £243 = <strong>£23,377 annually, or £1,948 per month</strong>.</p>
 
-<p>If on Plan 5 student loan (post-Aug 2023 starters), repayments are 9% above the £25,000 threshold, so on £30,000 that's £450 — slightly more than Plan 2.</p>
+<p>If on Plan 5 student loan (post-Aug 2023 starters), repayments are 9% above the £25,000 threshold, so on £30,000 that's £450, slightly more than Plan 2.</p>
 
-<h2>The take-home calculation — £55,000 Magic Circle trainee 2025/26</h2>
+<h2>The take-home calculation on a £55,000 Magic Circle trainee salary (2026/27)</h2>
 
 <ul>
 <li><strong>Gross salary</strong>: £55,000</li>
@@ -155,7 +155,7 @@ schema: ''
 
 <p>The marginal rate on the band above £50,270 is the higher-rate combination: 40% income tax + 2% NI + 9% student loan = 51% effective marginal rate. Each additional £1,000 of salary above £50,270 nets about £490 after these deductions.</p>
 
-<h2>The qualification jump — why year 3 is the big year</h2>
+<h2>The qualification jump: why year 3 is the big year</h2>
 
 <p>The single biggest salary step in a solicitor's career is the move from year-2 trainee to newly-qualified. The size of the jump varies:</p>
 
@@ -167,7 +167,7 @@ schema: ''
 <li><strong>High-street</strong>: trainee year 2 £30k → NQ £40k = +£10k (+33%)</li>
 </ul>
 
-<p>For Magic Circle and US firm NQs, the post-qualification salary takes you into additional-rate territory immediately (above £125,140). Tax planning around the qualification jump becomes meaningful — pension contributions, salary sacrifice, the personal allowance taper at £100,000-£125,140 — all of which we cover in our <a href="/for-junior-solicitors">For junior solicitors</a> service page.</p>
+<p>For Magic Circle and US firm NQs, the post-qualification salary takes you into additional-rate territory immediately (above £125,140). Tax planning around the qualification jump becomes meaningful (pension contributions, salary sacrifice, the personal allowance taper at £100,000-£125,140), all of which we cover in our <a href="/for-junior-solicitors">For junior solicitors</a> service page.</p>
 
 <h2>SQE training contract specifics</h2>
 
@@ -186,7 +186,7 @@ schema: ''
 
 <h2>What we'd do if you brought us in</h2>
 
-<p>Most trainees and newly-qualified solicitors don't need an accountant — PAYE handles tax automatically. The case for tax help gets stronger when:</p>
+<p>Most trainees and newly-qualified solicitors don't need an accountant, as PAYE handles tax automatically. The case for tax help gets stronger when:</p>
 
 <ul>
 <li>You hit higher rate (40%) for the first time and want to model pension contributions vs cash</li>
