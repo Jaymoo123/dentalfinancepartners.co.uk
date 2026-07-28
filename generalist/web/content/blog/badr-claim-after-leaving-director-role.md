@@ -120,6 +120,6 @@ keyTakeaways:
 <h2>Related articles in Exit and Capital Gains</h2>
 <ul>
     <li><a href="/blog/exit-and-capital-gains/calculate-badr-multiple-tax-years">How To Calculate BADR Relief When You Sell Shares Over Multiple Tax Years</a></li>
-    <li><a href="/blog/exit-and-capital-gains/gift-shares-family-member-cgt">What Happens To Your CGT Bill If You Gift Shares To A Family Member Before Selling Your Company</a></li>
+    <li><a href="/blog/exit-and-capital-gains/gifting-shares-family-member-cgt">What Happens To Your CGT Bill If You Gift Shares To A Family Member Before Selling Your Company</a></li>
 </ul>
 

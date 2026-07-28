@@ -1,7 +1,7 @@
 ---
 title: "How Do UK Solicitors Handle VAT on Counsel Fees and Barrister Disbursements?"
 slug: "vat-on-counsel-fees-uk-solicitors"
-canonical: "https://www.accountsforlawyers.co.uk/blog/vat-and-compliance/vat-on-counsel-fees-uk-solicitors"
+canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/vat-on-counsel-fees-uk-solicitors"
 date: "2026-05-18"
 generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"

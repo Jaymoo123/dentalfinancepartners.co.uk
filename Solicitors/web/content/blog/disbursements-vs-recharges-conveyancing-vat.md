@@ -1,7 +1,7 @@
 ---
 title: How Should a Solicitor Treat Conveyancing Disbursements for VAT Purposes?
 slug: disbursements-vs-recharges-conveyancing-vat
-canonical: https://www.accountsforlawyers.co.uk/blog/vat-and-compliance/disbursements-vs-recharges-conveyancing-vat
+canonical: https://www.accountsforlawyers.co.uk/blog/vat-compliance/disbursements-vs-recharges-conveyancing-vat
 date: '2026-05-18'
 generator: deepseek-chat/legacy-bulk
 author: Accounts for Lawyers Editorial Team
