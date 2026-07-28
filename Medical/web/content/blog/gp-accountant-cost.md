@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Cost UK: What Drives the Fee (2026/27)"
-metaDescription: "What actually drives the cost of a GP accountant: practice size, partner count, payroll, NHS pension certificates and tax complexity. The value, and the right questions to ask."
+metaDescription: "What drives the cost of a GP accountant: practice size, partner count, payroll, NHS pension certificates and tax complexity, and the questions to ask."
 altText: "UK medical professional reviewing accountant fees and services on laptop"
 image: ""
 h1: "GP Accountant Cost: What Drives the Fee for UK Medical Accounting"

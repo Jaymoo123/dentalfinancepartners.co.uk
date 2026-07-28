@@ -7,7 +7,7 @@ generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "Last Man Standing: GP Partnership Premises Risk"
-metaDescription: "Why the last GP partner can be left holding the surgery lease or loan, why incoming partners resist buying in, and how the deed and structure manage the risk."
+metaDescription: "Why the last GP partner can be left holding the surgery lease or loan, why incoming partners resist buying in, and how the deed and structure manage risk."
 altText: "GP partners reviewing a surgery lease and partnership deed around a meeting table"
 image: ""
 h1: "The Last Man Standing Problem: GP Partnership Premises Liability and How to Manage It"

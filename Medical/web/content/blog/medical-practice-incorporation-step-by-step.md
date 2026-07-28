@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Medical Practice Incorporation: Step-by-Step Guide 2026/27"
-metaDescription: "How UK doctors incorporate private practice work, step by step: form the company, transfer the business, banking, VAT, payroll and the NHS pension trap to avoid."
+metaDescription: "How UK doctors incorporate private practice work, step by step: form the company, transfer the business, banking, VAT, payroll and the NHS pension trap."
 altText: "Professional medical office environment showing incorporation documents and financial planning materials for UK doctors"
 image: ""
 h1: "Medical Practice Incorporation Step by Step: Complete Guide for UK Doctors"

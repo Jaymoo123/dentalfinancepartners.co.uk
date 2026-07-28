@@ -7,7 +7,7 @@ generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Surplus Cash in a Medical Limited Company: Options"
-metaDescription: "Retained profit piling up in a consultant's company? The options for surplus cash, from employer pension contributions to investing in-company, and the BADR trading-status trap."
+metaDescription: "Surplus cash options for a consultant's company, from employer pension contributions to investing in-company, and the BADR trading-status trap."
 altText: "Consultant reviewing company accounts and investment options with an adviser at a desk"
 image: ""
 h1: "What To Do With Surplus Cash in a Medical or Consultant Limited Company"

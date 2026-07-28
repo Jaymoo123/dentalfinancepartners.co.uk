@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "Locum Tax"
 metaTitle: "Locum Doctor Limited Company: Pros and Cons (2026/27)"
-metaDescription: "Should a locum doctor use a limited company (PSC)? Outside vs inside IR35, 2026/27 dividend rates, VAT at £90k and the NHS pension loss, weighed in plain English."
+metaDescription: "Should a locum doctor use a limited company (PSC)? Outside vs inside IR35, 2026/27 dividend rates, VAT at £90k and the NHS pension loss, in plain English."
 altText: "UK locum doctor reviewing limited company structure documents with calculator and medical equipment"
 image: ""
 h1: "Locum Doctor Limited Company: Pros and Cons Explained"

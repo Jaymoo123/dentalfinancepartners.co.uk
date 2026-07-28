@@ -7,7 +7,7 @@ generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "Reading and Reconciling Your GP Practice PCSE Statements"
-metaDescription: "How to read your PCSE Online payment statements, reconcile them against the Statement of Financial Entitlements, and spot and recover practice underpayments."
+metaDescription: "How to read your PCSE Online payment statements, reconcile them against the Statement of Financial Entitlements, and spot and recover underpayments."
 altText: "GP practice manager reconciling a PCSE Online payment statement against expected NHS income on a spreadsheet"
 image: ""
 h1: "Are You Actually Being Paid What You Are Owed? Reading and Reconciling Your PCSE Statements"

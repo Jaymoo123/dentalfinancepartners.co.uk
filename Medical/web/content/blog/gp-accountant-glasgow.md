@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Glasgow | Scottish Medical Tax Specialists"
-metaDescription: "GP accountant in Glasgow for partners, salaried GPs, locums and consultants. Scottish income tax bands, NHS pension annual allowance and GP partnership accounts."
+metaDescription: "GP accountant in Glasgow for partners, salaried GPs, locums and consultants. Scottish tax bands, NHS pension annual allowance and GP partnership accounts."
 altText: "Glasgow city skyline with medical professionals discussing financial planning"
 image: ""
 h1: "GP Accountant in Glasgow: Specialist Medical Accounting for Scottish Doctors"

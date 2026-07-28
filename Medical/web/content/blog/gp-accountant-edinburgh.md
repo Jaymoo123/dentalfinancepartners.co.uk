@@ -6,7 +6,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Edinburgh | Scottish Tax for GPs 2026/27"
-metaDescription: "Edinburgh GP accountant for partners, salaried GPs and locums. Scottish income tax bands for 2026/27, NHS pension annual allowance and GP practice accounts across Lothian."
+metaDescription: "Edinburgh GP accountant for partners, salaried GPs and locums. Scottish tax bands 2026/27, NHS pension allowance and practice accounts across Lothian."
 altText: "Edinburgh GP accountant providing specialist medical tax services"
 image: ""
 h1: "GP Accountant Edinburgh: Expert Tax Services for Medical Professionals"

@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Tax & Accounts"
 metaTitle: "GP Tax Advice 2026/27 | Tax Planning Hub for UK GPs"
-metaDescription: "GP tax advice for 2026/27: NHS pension annual allowance, partnership profit share, expenses, incorporation of private work and MTD. The levers, then the deep guides."
+metaDescription: "GP tax advice for 2026/27: NHS pension allowance, partnership profit share, expenses, incorporating private work and MTD. The levers, then the deep guides."
 altText: "UK GP reviewing tax documents with calculator and NHS pension paperwork"
 image: ""
 h1: "GP Tax Advice: Essential Tax Planning for UK General Practitioners"

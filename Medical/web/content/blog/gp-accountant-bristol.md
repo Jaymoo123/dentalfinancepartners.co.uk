@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Bristol"
-metaDescription: "GP accountant in Bristol for partners, salaried GPs and locum doctors. NHS pension annual allowance, GP partnership accounts and locum tax. Free initial chat."
+metaDescription: "GP accountant in Bristol for partners, salaried GPs and locum doctors. NHS pension annual allowance, partnership accounts and locum tax. Free initial chat."
 altText: "Bristol GP practice accountant meeting with medical professionals to discuss tax planning and NHS pension annual allowance"
 image: ""
 h1: "GP Accountant in Bristol: Specialist Tax and Accounting for Doctors"

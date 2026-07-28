@@ -7,7 +7,7 @@ generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "Notional Rent vs Cost Rent: GP Surgery Premises Guide"
-metaDescription: "How NHS notional rent, cost rent and improvement grants fund a GP surgery, who sets the figure, and how each is taxed for the owners. A UK guide for partners."
+metaDescription: "How NHS notional rent, cost rent and improvement grants fund a GP surgery, who sets the figure, and how each is taxed for owners. A UK guide for partners."
 altText: "GP partners reviewing surgery premises funding statements and a property loan agreement"
 image: ""
 h1: "Notional Rent vs Cost Rent: How NHS Funds (and Taxes) Your GP Surgery Premises"

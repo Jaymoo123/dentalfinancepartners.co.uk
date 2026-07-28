@@ -6,7 +6,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Sheffield | Medical Accounting Specialists"
-metaDescription: "Sheffield GP accountant for NHS partners, salaried GPs and locum doctors. NHS pension annual allowance, GP partnership accounts and tax planning for 2026/27."
+metaDescription: "Sheffield GP accountant for NHS partners, salaried GPs and locums. NHS pension annual allowance, GP partnership accounts and tax planning for 2026/27."
 altText: "Sheffield GP practice building with medical professionals discussing financial planning"
 image: ""
 h1: "GP Accountant in Sheffield: Specialist Medical Accounting for Local Practices"

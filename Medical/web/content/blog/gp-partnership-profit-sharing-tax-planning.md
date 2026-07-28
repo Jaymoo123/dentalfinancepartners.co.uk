@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "GP Partnership Profit Sharing and Tax Planning 2026/27"
-metaDescription: "How GP partners are taxed on profit share (not drawings), how prior shares, the deed and the premises return drive each allocation, and what to plan for 2026/27."
+metaDescription: "How GP partners are taxed on profit share (not drawings), prior shares, the deed and the premises return drive allocation, and what to plan for 2026/27."
 altText: "GP partners reviewing profit sharing tax planning documents with calculator and financial charts"
 image: ""
 h1: "GP Partnership Profit Sharing Tax Planning: Essential Strategies for 2026/27"

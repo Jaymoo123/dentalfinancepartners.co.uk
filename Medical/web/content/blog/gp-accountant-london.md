@@ -6,7 +6,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant London"
-metaDescription: "Specialist GP accountant in London for practices, partners, salaried GPs and locums. Partnership accounts, NHS pension annual allowance, tax returns and MTD. No advice, lead-gen guide."
+metaDescription: "GP accountant in London for practices, partners, salaried GPs and locums. Partnership accounts, NHS pension allowance, tax returns and MTD. Lead-gen guide."
 altText: "London GP consulting with specialist medical accountant about practice finances"
 image: ""
 h1: "GP Accountant in London: Specialist Accounting for Practices, Partners and Locums"

@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "Self Assessment for Doctors 2026/27"
-metaDescription: "Self assessment for doctors and GPs in 2026/27: who must file, the 31 January deadline, payments on account, Class 4 NIC and Making Tax Digital. Plain-English guide."
+metaDescription: "Self assessment for doctors and GPs in 2026/27: who must file, the 31 January deadline, payments on account, Class 4 NIC and Making Tax Digital."
 altText: "UK medical professional reviewing self assessment tax return documents"
 image: ""
 h1: "Self Assessment for Doctors and GPs: Who Files, Deadlines and Payments on Account"

@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "Medical Accounting Services for Doctors UK | Overview"
-metaDescription: "What specialist medical accounting services cover for UK doctors, GPs and consultants: NHS pension, partnership tax, locum IR35, VAT and private work, for 2026/27."
+metaDescription: "What medical accounting services cover for UK doctors, GPs and consultants: NHS pension, partnership tax, locum IR35, VAT and private work, 2026/27."
 altText: "Specialist medical accountant reviewing NHS pension and partnership tax figures with a doctor"
 image: ""
 h1: "Medical Accounting Services for Doctors: A Complete Overview"

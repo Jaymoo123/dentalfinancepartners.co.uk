@@ -7,7 +7,7 @@ generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Section 162 Incorporation Relief: Private Practice"
-metaDescription: "How section 162 incorporation relief defers CGT when you move a private medical practice into a company, the 2026 claim change, and the NHS pension trade-off."
+metaDescription: "Section 162 incorporation relief defers CGT when you move a private medical practice into a company, the 2026 claim change, and the NHS pension trade-off."
 altText: "A doctor and an accountant reviewing the incorporation of a private medical practice"
 image: ""
 h1: "Incorporation Relief (Section 162) for a Private Medical Practice: Deferring CGT"

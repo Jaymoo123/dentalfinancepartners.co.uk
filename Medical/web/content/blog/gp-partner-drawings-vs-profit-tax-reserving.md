@@ -7,7 +7,7 @@ generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Tax & Accounts"
 metaTitle: "GP Partner Drawings vs Profit: How to Reserve for Tax"
-metaDescription: "Why a GP partner is taxed on profit share, not drawings, the cash-flow gap that creates, and how to reserve for tax, payments on account and superannuation."
+metaDescription: "Why a GP partner is taxed on profit share, not drawings, the cash-flow gap it creates, and how to reserve for tax, payments on account and superannuation."
 altText: "GP partner setting aside a tax reserve from monthly drawings against an annual profit share"
 image: ""
 h1: "Drawings Versus Profit for a GP Partner: Why They Differ and How to Reserve for Tax"

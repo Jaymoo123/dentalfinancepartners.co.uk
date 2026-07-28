@@ -6,7 +6,7 @@ date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
-metaTitle: "GP Accountant Leeds | Specialist Medical Tax Services 2026/27"
+metaTitle: "GP Accountant Leeds | Specialist Medical Tax Services 2026"
 metaDescription: "Leeds GP accountant for partners, salaried GPs and locums. NHS pension annual allowance, GP partnership accounts and medical tax advice across Yorkshire."
 altText: "Leeds GP surgery with medical professionals discussing financial planning"
 image: ""

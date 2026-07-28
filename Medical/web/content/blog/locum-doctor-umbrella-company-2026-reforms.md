@@ -6,7 +6,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "Locum Tax"
 metaTitle: "Locum Doctor Umbrella Company 2026 Reforms | What's Changing"
-metaDescription: "The April 2026 umbrella reform puts agencies and end clients on the hook for PAYE through joint and several liability. What it means for locum doctors, and how umbrella, PSC and agency PAYE compare."
+metaDescription: "The April 2026 umbrella reform makes agencies and end clients liable for unpaid PAYE via joint and several liability. What it means for locum doctors."
 altText: "Professional medical documents and calculator showing locum doctor umbrella company tax calculations and compliance requirements"
 image: ""
 h1: "Locum Doctor Umbrella Company 2026 Reforms: What Is Actually Changing"

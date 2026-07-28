@@ -7,7 +7,7 @@ generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "PCN Funding & the Network Contract DES Explained"
-metaDescription: "How money flows through a primary care network: the Network Contract DES, core PCN funding, ARRS reimbursement, the nominated payee and the practice accounts."
+metaDescription: "How money flows through a primary care network: the Network Contract DES, core PCN funding, ARRS reimbursement, the nominated payee and practice accounts."
 altText: "GP partners and a practice manager reviewing primary care network funding statements"
 image: ""
 h1: "PCN Funding Explained: The Network Contract DES and How the Money Flows"

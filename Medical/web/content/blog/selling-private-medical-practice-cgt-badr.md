@@ -7,7 +7,7 @@ generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "Private Practice"
 metaTitle: "Selling a Private Medical Practice: CGT and BADR"
-metaDescription: "How CGT and Business Asset Disposal Relief work on selling a private medical practice, plus why the 6 April 2026 BADR rise from 14% to 18% is a timing point."
+metaDescription: "How CGT and Business Asset Disposal Relief work on selling a private medical practice, plus why the 6 April 2026 BADR rise from 14% to 18% matters."
 altText: "Consultant and adviser reviewing the sale contract for a private medical clinic"
 image: ""
 h1: "Selling a Private Medical Practice: CGT, Business Asset Disposal Relief and the 2026 Rate Rise"

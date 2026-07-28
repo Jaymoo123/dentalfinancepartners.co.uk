@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "Locum Tax"
 metaTitle: "Locum Doctor Allowable Expenses 2026/27 | What You Can Claim"
-metaDescription: "What locum doctors can claim in 2026/27: mileage at 55p a mile, indemnity, GMC fee, travel between sites, home office. Full list of allowable expenses and the HMRC rules."
+metaDescription: "What locum doctors can claim in 2026/27: mileage at 55p a mile, indemnity, GMC fee, travel, home office. Full list of allowable expenses and HMRC rules."
 altText: "Professional UK locum doctor reviewing expense receipts and tax documents at desk"
 image: ""
 h1: "Locum Doctor Expenses: What You Can Claim"

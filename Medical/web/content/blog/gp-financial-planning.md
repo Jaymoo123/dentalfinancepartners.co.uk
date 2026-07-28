@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "GP Financial Planning 2026/27: Pension, Tax & Protection"
-metaDescription: "GP financial planning for 2026/27: NHS pension annual allowance and taper, profit extraction, protection and retirement. High-level guide for partners, salaried GPs and locums."
+metaDescription: "GP financial planning for 2026/27: NHS pension allowance and taper, profit extraction, protection and retirement for partners, salaried GPs and locums."
 altText: "UK GP reviewing financial planning documents and NHS pension statements"
 image: ""
 h1: "GP Financial Planning: A Complete Guide for UK General Practitioners"

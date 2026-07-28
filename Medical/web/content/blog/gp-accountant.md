@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant | What a Specialist Medical Accountant Does"
-metaDescription: "What a specialist GP accountant does and why it matters: partnership accounts, NHS pension annual allowance, GMS income and self-assessment, explained for 2026/27."
+metaDescription: "What a specialist GP accountant does: partnership accounts, NHS pension annual allowance, GMS income and self-assessment, explained for 2026/27."
 altText: "GP meeting with specialist medical accountant to discuss partnership finances and tax planning"
 image: ""
 h1: "Why Every GP Needs a Specialist GP Accountant"

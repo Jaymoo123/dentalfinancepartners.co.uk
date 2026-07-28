@@ -7,7 +7,7 @@ generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Tax & Accounts"
 metaTitle: "Retiring From a GP Partnership: Capital Account & Tax"
-metaDescription: "What a retiring GP partner gets back, the capital account and any premises share, the cessation of their notional trade for tax, CGT on premises and the deed."
+metaDescription: "What a retiring GP partner gets back, the capital account and premises share, the cessation of their notional trade for tax, CGT on premises and the deed."
 altText: "Retiring GP partner reviewing capital account and partnership exit documents"
 image: ""
 h1: "Retiring or Leaving a GP Partnership: Your Capital Account, Cessation and the Tax"

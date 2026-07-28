@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Manchester | Medical Tax Specialists 2026/27"
-metaDescription: "Specialist GP accountant in Manchester for partners, salaried GPs, and locums. NHS pension annual allowance, GMS practice accounts, and tax across Greater Manchester."
+metaDescription: "GP accountant in Manchester for partners, salaried GPs, and locums. NHS pension annual allowance, GMS practice accounts, and tax across Greater Manchester."
 altText: "Professional accountant meeting with GP partner in Manchester office discussing tax planning and practice finances"
 image: ""
 h1: "GP Accountant Manchester: Specialist Tax & Financial Services for Medical Professionals"
