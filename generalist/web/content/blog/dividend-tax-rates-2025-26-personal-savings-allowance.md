@@ -1,13 +1,13 @@
 ---
-title: "Dividend Tax Rates 2025/26: How Dividends Interact With Your Personal Savings Allowance"
+title: "Dividend Tax Rates 2026/27: How Dividends Interact With Your Personal Savings Allowance"
 slug: "dividend-tax-rates-2025-26-personal-savings-allowance"
 canonical: "https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/dividend-tax-rates-2025-26-personal-savings-allowance"
-date: "2026-05-17"
+date: "2026-07-28"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
-metaTitle: "Dividend Tax Rates 2025/26: Personal Savings Allowance"
-metaDescription: "Dividend tax rates 2025/26 are 8.75%, 33.75%, and 39.35%. Here is how dividend income can push you into a higher savings tax band and what to do about it."
+metaTitle: "Dividend Tax Rates 2026/27: Personal Savings Allowance"
+metaDescription: "Dividend tax rates 2026/27 are 10.75%, 35.75%, and 39.35%. Here is how dividend income can push you into a higher savings tax band and what to do about it."
 altText: "UK accountant reviewing dividend tax calculations on a laptop in a Manchester office, with a calculator and printed tax tables visible"
 image: "/blog/dividend-tax-rates-2025-26-personal-savings-allowance.jpg"
 imageCredit:
@@ -15,47 +15,47 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@tara-winstead"
   sourceUrl: "https://www.pexels.com/photo/folder-and-calculator-on-white-table-7111512/"
   source: "Pexels"
-h1: "Dividend Tax Rates 2025/26 and Your Personal Savings Allowance"
-summary: "Dividend tax rates 2025/26 remain at 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate). The dividend allowance drops to £500. This article models the specific scenario where dividends push a director into a higher tax band for savings income, costing more than expected."
+h1: "Dividend Tax Rates 2026/27 and Your Personal Savings Allowance"
+summary: "Dividend tax rates 2026/27 rose to 10.75% (basic rate), 35.75% (higher rate), and 39.35% (additional rate). The dividend allowance stays at £500. This article models the specific scenario where dividends push a director into a higher tax band for savings income, costing more than expected."
 schema: ""
 faqs:
-  - question: "What is the dividend allowance for 2025/26?"
-    answer: "The dividend allowance for 2025/26 is £500. This means the first £500 of dividend income you receive in the tax year is tax-free. The allowance has reduced from £1,000 in 2023/24 and £2,000 up to 2022/23. Any dividends above £500 are taxed at your marginal dividend rate."
+  - question: "What is the dividend allowance for 2026/27?"
+    answer: "The dividend allowance for 2026/27 is £500, unchanged from 2025/26. This means the first £500 of dividend income you receive in the tax year is tax-free. The allowance has reduced from £1,000 in 2023/24 and £2,000 up to 2022/23. Any dividends above £500 are taxed at your marginal dividend rate."
   - question: "How does dividend income affect my Personal Savings Allowance?"
     answer: "Dividend income counts towards your total income, which determines your tax band for PSA purposes. If your total income (salary, dividends, savings interest, and other income) exceeds £50,270, you become a higher rate taxpayer. Your PSA drops from £1,000 to £500. If total income exceeds £125,140, your PSA drops to zero. This means you pay more tax on your savings interest than you might expect."
   - question: "Can I avoid the dividend-PSA interaction by taking fewer dividends?"
-    answer: "Yes. If your total income is close to £50,270, reducing your dividends by a small amount can keep you in the basic rate band. This preserves your full £1,000 PSA and keeps all dividends taxed at 8.75% rather than 33.75%. Use a tax projection to find the optimal dividend amount for your specific situation."
+    answer: "Yes. If your total income is close to £50,270, reducing your dividends by a small amount can keep you in the basic rate band. This preserves your full £1,000 PSA and keeps all dividends taxed at 10.75% rather than 35.75%. Use a tax projection to find the optimal dividend amount for your specific situation."
   - question: "Does using an ISA protect my savings from this tax interaction?"
     answer: "Yes. Interest earned inside a Cash ISA or Stocks and Shares ISA is tax-free and does not count towards your total income for PSA purposes. This means ISA interest does not push you into a higher tax band or reduce your PSA. Using your full £20,000 ISA allowance each year is one of the most effective ways to protect savings income from tax, especially if you are a higher rate taxpayer."
 keyTakeaways:
-  - "For 2025/26, dividend tax rates are 8.75% for basic rate taxpayers, 33.75% for higher rate, and 39.35% for additional rate taxpayers."
-  - "The dividend allowance for 2025/26 is £500, meaning the first £500 of dividend income in the tax year is tax-free, down from £1,000 in 2023/24."
+  - "For 2026/27, dividend tax rates are 10.75% for basic rate taxpayers, 35.75% for higher rate, and 39.35% for additional rate taxpayers; the ordinary and upper rates rose on 6 April 2026."
+  - "The dividend allowance for 2026/27 is £500, unchanged, meaning the first £500 of dividend income in the tax year is tax-free, down from £1,000 in 2023/24."
   - "The Personal Savings Allowance is £1,000 for basic rate taxpayers, drops to £500 once total income exceeds £50,270, and falls to zero above £125,140."
   - "Because dividends count towards total income for tax-band purposes, dividends that push total income above £50,270 halve the Personal Savings Allowance from £1,000 to £500."
   - "Interest inside a Cash ISA or Stocks and Shares ISA is tax-free and does not count towards total income for Personal Savings Allowance purposes; the annual ISA limit is £20,000."
   - "A personal pension contribution reduces adjusted net income and can restore a basic rate position, returning the full £1,000 Personal Savings Allowance if total income is close to £50,270."
 ---
 
-<p>The dividend tax rates for 2025/26 are 8.75% for basic rate taxpayers, 33.75% for higher rate taxpayers, and 39.35% for additional rate taxpayers. The dividend allowance has dropped to £500, down from £1,000 in 2023/24 and £2,000 up to 2022/23.</p>
+<p>The dividend tax rates for 2026/27 are 10.75% for basic rate taxpayers, 35.75% for higher rate taxpayers, and 39.35% for additional rate taxpayers. The ordinary and upper rates rose on 6 April 2026 under Finance Act 2026 (they were 8.75% and 33.75% in 2025/26); the additional rate is unchanged. The dividend allowance stays at £500, down from £1,000 in 2023/24 and £2,000 up to 2022/23.</p>
 
 <p>Most articles simply list these rates and stop. But there is a specific scenario that catches many directors out: when dividend income pushes your total income across a tax band boundary, it does not just increase the tax on those dividends. It also reduces or eliminates your Personal Savings Allowance (PSA). That means you pay more tax on your savings interest too.</p>
 
-<p>This article models exactly how that works, with real numbers for 2025/26. We are specialist accountants at Holloway Davies, and we see this every tax season. If you take dividends from your limited company and also earn bank or building society interest, read this carefully.</p>
+<p>This article models exactly how that works, with real numbers for 2026/27. We are specialist accountants at Holloway Davies, and we see this every tax season. If you take dividends from your limited company and also earn bank or building society interest, read this carefully.</p>
 
-<h2>Dividend Tax Rates 2025/26: The Core Numbers</h2>
+<h2>Dividend Tax Rates 2026/27: The Core Numbers</h2>
 
-<p>Here are the rates that apply for the 2025/26 tax year. These are the same rates that applied in 2024/25.</p>
+<p>Here are the rates that apply for the 2026/27 tax year. The ordinary and upper rates rose on 6 April 2026 under Finance Act 2026. For comparison, in 2025/26 the basic rate was 8.75% and the higher rate 33.75%. The additional rate is unchanged.</p>
 
 <ul>
 <li><strong>Dividend allowance:</strong> £500. The first £500 of dividend income is tax-free.</li>
-<li><strong>Basic rate (income up to £50,270):</strong> 8.75% on dividends above the allowance.</li>
-<li><strong>Higher rate (income from £50,271 to £125,140):</strong> 33.75% on dividends above the allowance.</li>
+<li><strong>Basic rate (income up to £50,270):</strong> 10.75% on dividends above the allowance.</li>
+<li><strong>Higher rate (income from £50,271 to £125,140):</strong> 35.75% on dividends above the allowance.</li>
 <li><strong>Additional rate (income above £125,140):</strong> 39.35% on dividends above the allowance.</li>
 </ul>
 
 <p>Remember that your dividend income is added to your other income (salary, self-employment profits, rental income, pension) to determine which tax band applies. The dividend allowance sits on top of your other allowances, so it is the last slice of income to be taxed.</p>
 
-<h2>The Personal Savings Allowance in 2025/26</h2>
+<h2>The Personal Savings Allowance in 2026/27</h2>
 
 <p>The Personal Savings Allowance lets you earn a certain amount of savings interest tax-free. The amount depends on your tax band.</p>
 
@@ -71,7 +71,7 @@ keyTakeaways:
 
 <p>Consider a director of a limited company in Birmingham. She pays herself a salary of £12,570 (the personal allowance threshold) and takes dividends from the company. She also has £1,200 of bank interest from savings accounts.</p>
 
-<p>She plans to take £40,000 in dividends for the year. She thinks: "£40,000 in dividends, minus the £500 allowance, leaves £39,500 taxed at 8.75%. That is £3,456.25 in tax. Fine."</p>
+<p>She plans to take £40,000 in dividends for the year. She thinks: "£40,000 in dividends, minus the £500 allowance, leaves £39,500 taxed at 10.75%. That is £4,246.25 in tax. Fine."</p>
 
 <p>But here is what actually happens.</p>
 
@@ -95,11 +95,11 @@ keyTakeaways:
 
 <p>But which dividend rate applies? Her total income is £53,770. The basic rate band is £50,270. So £50,270 minus £12,570 (salary) equals £37,700 of the basic rate band is used by dividends. The remaining £39,500 minus £37,700 equals £1,800 of dividends that fall into the higher rate band.</p>
 
-<p>Dividend tax calculation: £37,700 at 8.75% = £3,298.75. £1,800 at 33.75% = £607.50. Total dividend tax: £3,906.25.</p>
+<p>Dividend tax calculation: £37,700 at 10.75% = £4,052.75. £1,800 at 35.75% = £643.50. Total dividend tax: £4,696.25.</p>
 
-<p>Add the £0 savings interest tax. Total tax bill: £3,906.25.</p>
+<p>Add the £0 savings interest tax. Total tax bill: £4,696.25.</p>
 
-<p>She expected £3,456.25. She actually owes £3,906.25. The difference is £450. That is the effect of having some dividends pushed into the higher rate band once her total income exceeds £50,270.</p>
+<p>She expected £4,246.25. She actually owes £4,696.25. The difference is £450. That is the effect of having some dividends pushed into the higher rate band once her total income exceeds £50,270.</p>
 
 <h2>What If She Took £37,000 in Dividends Instead?</h2>
 
@@ -109,13 +109,13 @@ keyTakeaways:
 
 <p>She is still a higher rate taxpayer because £50,770 exceeds £50,270. But only just. Her PSA is still £500.</p>
 
-<p>Dividend tax: £37,000 minus £500 allowance = £36,500. Basic rate band available for dividends: £50,270 minus £12,570 = £37,700. All £36,500 falls within basic rate. Tax at 8.75% = £3,193.75.</p>
+<p>Dividend tax: £37,000 minus £500 allowance = £36,500. Basic rate band available for dividends: £50,270 minus £12,570 = £37,700. All £36,500 falls within basic rate. Tax at 10.75% = £3,923.75.</p>
 
 <p>Savings interest tax: Her non-savings income is still £12,570 (salary only), which equals her personal allowance. No non-savings income remains after the allowance, so the full £5,000 starting-rate-for-savings band is available. Her £1,200 of interest is taxed at 0%. Savings tax: £0.</p>
 
-<p>Total tax: £3,193.75 + £0 = £3,193.75.</p>
+<p>Total tax: £3,923.75 + £0 = £3,923.75.</p>
 
-<p>By taking £3,000 less in dividends, she saves £712.50 in tax. Her net dividend income drops by £2,287.50 after tax, but she also avoids pushing more dividends into the higher rate band. The effective marginal rate on that last £3,000 of dividends is 23.75% (£712.50 divided by £3,000), driven entirely by those dividends crossing into the higher rate band.</p>
+<p>By taking £3,000 less in dividends, she saves £772.50 in tax. Her net dividend income drops by £2,227.50 after tax, but she also avoids pushing more dividends into the higher rate band. The effective marginal rate on that last £3,000 of dividends is 25.75% (£772.50 divided by £3,000), driven entirely by those dividends crossing into the higher rate band.</p>
 
 <h2>The Additional Rate Trap</h2>
 
@@ -137,7 +137,7 @@ keyTakeaways:
 
 <p>You can save up to £20,000 per year in a Stocks and Shares ISA or Cash ISA. Interest and gains within an ISA are tax-free and do not count towards your total income for PSA purposes. This is the simplest way to protect savings income from tax.</p>
 
-<p>If you have not used your 2025/26 ISA allowance, do it before 5 April 2026.</p>
+<p>If you have not used your 2026/27 ISA allowance, do it before 5 April 2027.</p>
 
 <h3>3. Consider Premium Bonds</h3>
 
@@ -163,7 +163,7 @@ keyTakeaways:
 
 <h2>Using Pension Contributions to Protect Your PSA</h2>
 
-<p>If your total income is £53,770 (as in our first example) and you make a personal pension contribution of £3,500, your adjusted net income drops to £50,270. You become a basic rate taxpayer again. Your PSA returns to £1,000. Your dividend tax drops entirely to 8.75%.</p>
+<p>If your total income is £53,770 (as in our first example) and you make a personal pension contribution of £3,500, your adjusted net income drops to £50,270. You become a basic rate taxpayer again. Your PSA returns to £1,000. Your dividend tax drops entirely to 10.75%.</p>
 
 <p>The pension contribution itself attracts basic rate tax relief at source (20%), so you only pay £2,800 to get £3,500 into the pension. And if you are a higher rate taxpayer, you can claim additional relief through your self assessment.</p>
 
@@ -177,11 +177,11 @@ keyTakeaways:
 
 <p>For more on dividend planning generally, see our guide on <a href="/blog/director-pay-and-dividends">director pay and dividends</a>. If you are considering changing your company structure, read about <a href="/incorporation">incorporation</a> first.</p>
 
-<h2>Summary of Key Numbers for 2025/26</h2>
+<h2>Summary of Key Numbers for 2026/27</h2>
 
 <ul>
 <li>Dividend allowance: £500.</li>
-<li>Dividend tax rates: 8.75% basic, 33.75% higher, 39.35% additional.</li>
+<li>Dividend tax rates: 10.75% basic, 35.75% higher, 39.35% additional.</li>
 <li>Personal Savings Allowance: £1,000 basic rate, £500 higher rate, £0 additional rate.</li>
 <li>Basic rate band: £0 to £50,270.</li>
 <li>Higher rate band: £50,271 to £125,140.</li>
@@ -190,4 +190,4 @@ keyTakeaways:
 <li>Pension annual allowance: £60,000 (tapered for high earners).</li>
 </ul>
 
-<p>The dividend tax rates 2025/26 are not new, but the interaction with the PSA is poorly understood. If you take dividends and earn savings interest, model your total income before you decide how much to draw. A few hundred pounds of dividends can cost you thousands in unexpected tax.</p>
+<p>The dividend tax rates for 2026/27 rose on 6 April 2026, and the interaction with the PSA is poorly understood. If you take dividends and earn savings interest, model your total income before you decide how much to draw. A few hundred pounds of dividends can cost you thousands in unexpected tax.</p>

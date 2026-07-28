@@ -305,6 +305,6 @@ faqs:
   <li><strong>If you cannot pay, contact HMRC before the due date.</strong> HMRC operates a Time to Pay arrangement for companies that genuinely cannot meet a payment obligation. This does not eliminate interest, but it avoids the debt-enforcement consequences of simply missing a date. Speak to HMRC or your accountant before the instalment falls due, not after.</li>
 </ul>
 
-<p>The <a href="/blog/corporation-tax/associated-companies-corporation-tax-rate-2025-26">associated company rules</a> are the single most frequent surprise for owner-managers who run more than one company. A review of your group structure before the accounting period in which the threshold might be crossed gives you the information you need to plan.</p>
+<p>The <a href="/blog/corporation-tax/associated-companies-corporation-tax">associated company rules</a> are the single most frequent surprise for owner-managers who run more than one company. A review of your group structure before the accounting period in which the threshold might be crossed gives you the information you need to plan.</p>
 
 <p>For advice tailored to your company's position, including help with CT estimates and instalment calculations, a <a href="/blog/corporation-tax/what-does-a-corporation-tax-accountant-do">corporation tax accountant</a> can review your structure and prepare instalment schedules before they fall due.</p>

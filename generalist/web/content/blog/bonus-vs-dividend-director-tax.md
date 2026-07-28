@@ -159,7 +159,7 @@ keyTakeaways:
 
 <h2>Related articles in Director Pay and Dividends</h2>
 <ul>
-    <li><a href="/blog/director-pay-and-dividends/dividend-tax-rates-2025-26-quarterly-director">Dividend Tax Rates 2025 26 For A Director Who Takes Dividends Quarterly</a></li>
+    <li><a href="/blog/director-pay-and-dividends/dividend-tax-rates-2025-26-quarterly-director-payments">Dividend Tax Rates 2025 26 For A Director Who Takes Dividends Quarterly</a></li>
     <li><a href="/blog/director-pay-and-dividends/dividend-tax-rates-2025-26-personal-savings-allowance">Dividend Tax Rates 2025 26 And The Interaction With The Personal Savings Allowance</a></li>
 </ul>
 

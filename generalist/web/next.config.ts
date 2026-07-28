@@ -55,6 +55,25 @@ const nextConfig: NextConfig = {
         destination: "/blog/director-pay-and-dividends/director-takes-dividend-before-board-minutes-signed",
         permanent: true,
       },
+      // 2026-07-28: R3 year-transition clear batch. Each loser had ~0 equity on
+      // BOTH Google and Bing (fresh GSC to 2026-07-26 + Bing to 07-27); winners
+      // are the retained/refreshed pages. CGT-property cluster deferred (split
+      // Google/Bing leaders, owner decision).
+      {
+        source: "/blog/bookkeeping-and-compliance/accounting-service-charges-2025-26-breakdown",
+        destination: "/blog/bookkeeping-and-compliance/accounting-for-service-charges-uk-guide-2025-26",
+        permanent: true,
+      },
+      {
+        source: "/blog/corporation-tax/associated-companies-corporation-tax-rate-2025-26",
+        destination: "/blog/corporation-tax/associated-companies-corporation-tax",
+        permanent: true,
+      },
+      {
+        source: "/blog/director-pay-and-dividends/dividend-tax-rates-2025-26-quarterly-director",
+        destination: "/blog/director-pay-and-dividends/dividend-tax-rates-2025-26-quarterly-director-payments",
+        permanent: true,
+      },
     ];
   },
   async headers() {
