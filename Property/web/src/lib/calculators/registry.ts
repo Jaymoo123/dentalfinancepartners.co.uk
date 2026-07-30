@@ -11,6 +11,8 @@ import { corporationTaxCalculator } from "./tools/corporation-tax-calculator";
 import { dividendTaxCalculator } from "./tools/dividend-tax-calculator";
 import { rentARoomReliefCalculator } from "./tools/rent-a-room-relief-calculator";
 import { propertyAllowanceChecker } from "./tools/property-allowance-checker";
+import { rdTaxCreditCalculator } from "./tools/rd-tax-credit-calculator";
+import { capitalAllowancesCalculator } from "./tools/capital-allowances-calculator";
 
 /**
  * The calculator fleet. "bespoke" tools have their own hand-built component +
@@ -86,6 +88,8 @@ const GENERIC: GenericTool[] = [
   dividendTaxCalculator,
   rentARoomReliefCalculator,
   propertyAllowanceChecker,
+  rdTaxCreditCalculator,
+  capitalAllowancesCalculator,
 ];
 
 export const TOOLS: Tool[] = [...BESPOKE, ...GENERIC];
