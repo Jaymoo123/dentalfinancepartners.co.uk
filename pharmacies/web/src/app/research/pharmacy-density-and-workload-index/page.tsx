@@ -51,7 +51,7 @@ const faqLd = buildFaqJsonLd([
   },
   {
     question: "Are pharmacists dispensing more prescriptions per pharmacy than a few years ago?",
-    answer: `Yes. Items dispensed per pharmacy rose from ${fmtNumber(wFirst.items_per_pharmacy)} in ${wFirst.year} to ${fmtNumber(wLast.items_per_pharmacy)} in ${wLast.year}, an increase of ${fmtPercent(itemsPerPharmacyChangePct)}, while the number of dispensing pharmacies fell ${fmtPercent(Math.abs(pharmacyCountChangePct), false)}. The same national prescription volume is being dispensed by fewer pharmacies.`,
+    answer: `Yes. Items dispensed per pharmacy in March alone rose from ${fmtNumber(wFirst.items_per_pharmacy)} in March ${wFirst.year} to ${fmtNumber(wLast.items_per_pharmacy)} in March ${wLast.year}, an increase of ${fmtPercent(itemsPerPharmacyChangePct)}, while the number of dispensing pharmacies fell ${fmtPercent(Math.abs(pharmacyCountChangePct), false)}. The same national prescription volume is being dispensed by fewer pharmacies.`,
   },
   {
     question: "How is pharmacy density calculated in this index?",
@@ -117,8 +117,8 @@ export default function PharmacyDensityWorkloadIndexPage() {
             </div>
             <div className="bg-neutral-50 border border-neutral-200 p-6">
               <div className="text-4xl font-bold font-mono text-[#0f3a4a]">{fmtPercent(itemsPerPharmacyChangePct)}</div>
-              <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">items dispensed per pharmacy, {wFirst.year}&rarr;{wLast.year}</div>
-              <p className="mt-3 text-sm text-neutral-600">From {fmtNumber(wFirst.items_per_pharmacy)} to {fmtNumber(wLast.items_per_pharmacy)} items a year, per pharmacy.</p>
+              <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">items dispensed per pharmacy each March, {wFirst.year}&rarr;{wLast.year}</div>
+              <p className="mt-3 text-sm text-neutral-600">From {fmtNumber(wFirst.items_per_pharmacy)} to {fmtNumber(wLast.items_per_pharmacy)} items dispensed in the month of March, per pharmacy.</p>
             </div>
           </div>
         </div>
@@ -177,7 +177,7 @@ export default function PharmacyDensityWorkloadIndexPage() {
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">Dispensing workload: fewer pharmacies, more items dispensed each</h2>
           <p className="mb-8 max-w-2xl text-neutral-600">
-            National prescription items dispensed and dispensing-pharmacy counts, each March ({wFirst.year} to {wLast.year}), from NHSBSA&apos;s Pharmacy and Appliance Contractor Dispensing Data. Total items dispensed nationally rose from {fmtNumber(wFirst.total_items)} to {fmtNumber(wLast.total_items)} a year, spread across a shrinking pharmacy count.
+            National prescription items dispensed and dispensing-pharmacy counts, each March ({wFirst.year} to {wLast.year}), from NHSBSA&apos;s Pharmacy and Appliance Contractor Dispensing Data. Total items dispensed nationally in the month of March rose from {fmtNumber(wFirst.total_items)} ({wFirst.year}) to {fmtNumber(wLast.total_items)} ({wLast.year}), a single month&apos;s volume spread across a shrinking pharmacy count.
           </p>
 
           <h3 className="text-lg font-bold text-neutral-900 mb-4">Pharmacy count vs items-per-pharmacy, indexed to {wFirst.year}</h3>
@@ -187,13 +187,13 @@ export default function PharmacyDensityWorkloadIndexPage() {
               seriesA={workload.annual_march_snapshot.map((r) => r.pharmacy_count)}
               seriesB={workload.annual_march_snapshot.map((r) => r.items_per_pharmacy)}
               labelA="Dispensing pharmacies"
-              labelB="Items dispensed per pharmacy"
+              labelB="Items dispensed per pharmacy (March)"
             />
           </div>
 
-          <h3 className="text-lg font-bold text-neutral-900 mb-4">Items dispensed per pharmacy per year</h3>
+          <h3 className="text-lg font-bold text-neutral-900 mb-4">Items dispensed per pharmacy each March</h3>
           <div className="bg-neutral-50 border border-neutral-200 p-6 mb-4">
-            <AnnualBarChart data={workloadAnnualData} label="Items dispensed per pharmacy, annual" formatValue={(n) => fmtNumber(n)} />
+            <AnnualBarChart data={workloadAnnualData} label="Items dispensed per pharmacy, March each year" formatValue={(n) => fmtNumber(n)} />
           </div>
 
           <div className="overflow-x-auto">
@@ -201,9 +201,9 @@ export default function PharmacyDensityWorkloadIndexPage() {
               <thead>
                 <tr className="border-b-2 border-neutral-900">
                   <th className="text-left py-3 pr-6 font-semibold text-neutral-900">March</th>
-                  <th className="text-right py-3 pr-6 font-semibold text-neutral-900">Total items dispensed</th>
+                  <th className="text-right py-3 pr-6 font-semibold text-neutral-900">Total items dispensed (March)</th>
                   <th className="text-right py-3 pr-6 font-semibold text-neutral-900">Dispensing pharmacies</th>
-                  <th className="text-right py-3 font-semibold text-neutral-900">Items per pharmacy</th>
+                  <th className="text-right py-3 font-semibold text-neutral-900">Items per pharmacy (March)</th>
                 </tr>
               </thead>
               <tbody>
@@ -282,7 +282,7 @@ export default function PharmacyDensityWorkloadIndexPage() {
           <ul className="text-sm text-neutral-500 max-w-2xl space-y-1 list-disc list-inside">
             <li>Density figures use a single latest month&apos;s NHSBSA Contractor Details snapshot; NHSBSA describes the contractor list as &quot;a guide only&quot; due to reporting lags from Integrated Care Boards.</li>
             <li>Regional totals may differ slightly from the openings/closures index headline because the two datasets use different extraction methods (a point-in-time contractor list vs a monthly reporting cycle); both are official NHSBSA sources.</li>
-            <li>Dispensing workload figures use March each year as the annual benchmark, to avoid seasonal variation and to align with the openings/closures index&apos;s own annual convention.</li>
+            <li>Dispensing workload figures are single-month volumes for March each year, not annual totals: the same benchmark month is compared year on year to avoid seasonal variation and to align with the openings/closures index&apos;s own annual convention. Annual dispensing volume runs at roughly 12 times the March figure.</li>
             <li>Small counts in NHSBSA source data may be subject to standard disclosure-control rounding; this index reports published totals as-is.</li>
             <li>England-only. Scotland, Wales, and the Crown Dependencies are excluded from the density map; NHSBSA holds only limited data for Wales and the Islands and none for Scotland or Northern Ireland.</li>
           </ul>

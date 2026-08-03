@@ -65,5 +65,5 @@
     }
   ],
   "pull_date": "2026-07-23",
-  "methodology": "For each year, the March DISPENSING_DATA_<year>03 CSV is downloaded in full. Total items = sum of VALUE where CONTENT_GROUP='Prescription Count' and CONTENT='Items', across rows where PHARMACY_ACCOUNT_TYPE='Pharmacy' (appliance and LPS-only accounts excluded). Pharmacy count = distinct CONTRACTOR_CODE values in the same filtered set, for cross-check against the openings/closures index (the two counts agree to within rounding in every year tested)."
+  "methodology": "For each year, the March DISPENSING_DATA_<year>03 CSV is downloaded in full. Total items = sum of VALUE where CONTENT_GROUP='Prescription Count' and CONTENT='Items', across rows where PHARMACY_ACCOUNT_TYPE='Pharmacy' (appliance and LPS-only accounts excluded). Pharmacy count = distinct CONTRACTOR_CODE values in the same filtered set, for cross-check against the openings/closures index (the two counts agree to within rounding in every year tested). All total_items and items_per_pharmacy values are single-month (March) volumes, not annual totals."
 }

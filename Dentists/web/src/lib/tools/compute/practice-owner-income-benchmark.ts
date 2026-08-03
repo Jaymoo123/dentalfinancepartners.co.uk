@@ -5,11 +5,11 @@
  *
  * Figures sourced:
  *   - NHS Digital / NHS England "Dental Earnings and Expenses Estimates"
- *     series (self-employed Providing-Performer dentists). The 2023/24 release
+ *     series (self-employed Providing-Performer dentists). The 2024/25 release
  *     puts average taxable income for all self-employed dentists (Providing-
- *     Performer and Associate combined) in England at £78,200, on average gross
- *     earnings of ~£158,700 and average expenses of ~£81,600 (an expenses-to-
- *     earnings ratio around 51%). Providing-Performers (practice owners) sit
+ *     Performer and Associate combined) in England at £83,000, on average gross
+ *     earnings of ~£167,500 and average expenses of ~£84,500 (an expenses-to-
+ *     earnings ratio around 50%). Providing-Performers (practice owners) sit
  *     above the combined average, historically in the roughly £110k-£130k
  *     taxable-income range, with expense ratios around 55-70% depending on
  *     NHS/private mix (private-weighted practices run higher).
@@ -28,14 +28,14 @@
 export type PracticeMix = "mainly-nhs" | "mixed" | "mainly-private";
 export type OwnerRegion = "england" | "wales" | "scotland" | "ni";
 
-/** Per-owner taxable income benchmark bands, £/year. Dated: 2023/24-series basis. */
+/** Per-owner taxable income benchmark bands, £/year. Dated: 2024/25-series basis. */
 const MIX_INCOME_BAND: Record<PracticeMix, [number, number]> = {
   "mainly-nhs": [95000, 120000],
   mixed: [110000, 140000],
   "mainly-private": [110000, 155000],
 };
 
-/** Benchmark expenses-to-earnings ratio by mix. Dated: 2023/24-series basis. */
+/** Benchmark expenses-to-earnings ratio by mix. Dated: 2024/25-series basis. */
 const MIX_EXPENSE_RATIO: Record<PracticeMix, number> = {
   "mainly-nhs": 0.55,
   mixed: 0.62,

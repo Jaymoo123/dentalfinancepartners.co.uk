@@ -356,10 +356,11 @@ export default function UkAgencyInsolvencyIndexPage() {
             index is an exact match to the same SIC codes used in the UK Agency Formation Index, not an approximation.
           </p>
           <p>
-            <strong>What is counted.</strong> Each figure is the number of insolvency events registered in that period,
+            <strong>What is counted.</strong> Each figure is the number of procedure entries registered in that period,
             not the number of unique companies. A company that enters administration and subsequently converts to CVL
-            appears twice: once for each procedure, consistent with how the Insolvency Service reports its own
-            headline figures.
+            appears twice: once for each procedure. This differs from the Insolvency Service&apos;s own headline
+            convention, which counts a company entering multiple procedure types only once, so totals here can run
+            slightly higher than the official headline series.
           </p>
           <p>
             <strong>Caveats.</strong> Counts are not rates: an increase may partly reflect growth in the number of
