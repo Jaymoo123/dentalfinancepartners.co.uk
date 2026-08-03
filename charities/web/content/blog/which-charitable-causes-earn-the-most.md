@@ -94,7 +94,7 @@ sourcesVerifiedAt: "2026-07-20"
 <ul>
   <li>Register for <a href="/services/gift-aid">Gift Aid</a> as early as you are eligible, so you reclaim the full value of eligible donations from the start.</li>
   <li>Keep clean, functional financial records through our <a href="/services/charity-bookkeeping">charity bookkeeping service</a>, so your income figure on the register reflects reality.</li>
-  <li>Understand which scrutiny band your income places you in. Crossing £25,000 triggers a requirement for <a href="/services/independent-examination">independent examination</a> before you file.</li>
+  <li>Understand which scrutiny band your income places you in. Crossing £25,000 (£40,000 for financial years ending on or after 30 September 2026) triggers a requirement for <a href="/services/independent-examination">independent examination</a> before you file.</li>
 </ul>
 
 <h2>A note on jurisdiction</h2>

@@ -37,7 +37,7 @@ const datasetSchema = {
   "@type": "Dataset",
   name: "UK Small Charity Finance Index: charity income by scrutiny band",
   description:
-    "Registered England and Wales charities by income band relative to the Charities Act scrutiny thresholds (registration £5k, independent examination £25k, accruals £250k, audit £1m), with registration/removal flows and a Community Interest Company layer from Companies House data.",
+    "Registered England and Wales charities by income band relative to the Charities Act scrutiny thresholds (registration £5k, independent examination £25k, accruals £250k, audit £1m; the scrutiny gates rise to £40k, £500k and £1.5m for financial years ending on or after 30 September 2026), with registration/removal flows and a Community Interest Company layer from Companies House data.",
   inLanguage: "en-GB",
   license: "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
   creator: { "@type": "Organization", "@id": `${site.url}#organization`, name: site.name },
@@ -111,10 +111,12 @@ export default function FinanceIndexPage() {
 
           <Section id="scrutiny-bands" title="Charities by scrutiny band">
             <p>
-              The Charities Act sets the external scrutiny a charity needs by gross income:
-              registration at £5,000, independent examination above £25,000, accruals accounts and a
-              qualified examiner above £250,000, and a statutory audit above £1m. This is where the
-              register actually sits against those gates
+              The Charities Act sets the external scrutiny a charity needs by gross income. For
+              financial years ending before 30 September 2026: registration at £5,000, independent
+              examination above £25,000, accruals accounts and a qualified examiner above £250,000,
+              and a statutory audit above £1m. For financial years ending on or after 30 September
+              2026 the scrutiny gates rise to £40,000, £500,000 and £1.5m. This is where the
+              register actually sits against the pre-change gates
               {" "}
               (of {fmtNumber(charities.with_reported_income)} charities with a reported income).
             </p>
@@ -140,7 +142,8 @@ export default function FinanceIndexPage() {
             </div>
             <p className="text-sm text-[var(--muted)]">
               The audit band is income-only: charities above £250,000 income also need an audit if
-              gross assets exceed £3.26m, so the true audit share is slightly higher. Not sure where
+              gross assets exceed £3.26m (£500,000 and £5m for financial years ending on or after
+              30 September 2026), so the true audit share is slightly higher. Not sure where
               your charity falls? Use our{" "}
               <Link
                 href="/calculators/independent-examination-vs-audit-checker"
@@ -253,7 +256,7 @@ export default function FinanceIndexPage() {
               formId="research_index"
               messagePrefix="[Research: small charity finance index]"
               heading="Is your charity at one of these thresholds?"
-              blurb="Crossing £25,000 or £250,000 changes what your trustees must file and who can examine your accounts. Tell us where you are and we will confirm exactly what applies."
+              blurb="Crossing a scrutiny threshold (£25,000 or £250,000 now; £40,000 or £500,000 for financial years ending on or after 30 September 2026) changes what your trustees must file and who can examine your accounts. Tell us where you are and we will confirm exactly what applies."
               submitLabel="Ask about our charity accounts service"
             />
           </div>

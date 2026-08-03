@@ -23,7 +23,13 @@
       "accruals_qualified_examiner": 250000,
       "audit": 1000000
     },
-    "notes": "Income figures are each charity's latest reported gross income (latest_income). Main charities only (linked charities excluded). The 'audit' band is income-only: charities over \u00a3250,000 income with gross assets over \u00a33.26m also require an audit, but asset data is not in the headline extract, so the audit share shown is a floor. Registrations/removals use date_of_registration and date_of_removal across the full extract including removed charities; the Commission notes removed-charity history is complete only for recent decades. Current partial year excluded."
+    "thresholds_from_30_sep_2026": {
+      "registration": 5000,
+      "independent_examination": 40000,
+      "accruals_qualified_examiner": 500000,
+      "audit": 1500000
+    },
+    "notes": "Income figures are each charity's latest reported gross income (latest_income). Main charities only (linked charities excluded). Scrutiny bands use the thresholds for financial years ending before 30 September 2026; for financial years ending on or after 30 September 2026 the gates rise to \u00a340,000 (independent examination), \u00a3500,000 (accruals/qualified examiner) and \u00a31.5m (audit), per https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting. The 'audit' band is income-only: charities over \u00a3250,000 income with gross assets over \u00a33.26m (\u00a3500,000 and \u00a35m for years ending on or after 30 September 2026) also require an audit, but asset data is not in the headline extract, so the audit share shown is a floor. Registrations/removals use date_of_registration and date_of_removal across the full extract including removed charities; the Commission notes removed-charity history is complete only for recent decades. Current partial year excluded."
   },
   "charities": {
     "registered_charities": 171602,

@@ -125,15 +125,15 @@ faqs:
 
 <h2>The receipts and payments versus accruals question</h2>
 
-<p>Charities in England and Wales with gross income below £250,000 may prepare receipts and payments accounts rather than accruals accounts. Receipts and payments is simpler: it records cash received and cash paid in the year, without adjusting for debtors, creditors or prepayments. Some dedicated charity tools produce both formats; most general tools produce accruals-basis figures by default and require manual conversion for a receipts and payments presentation.</p>
+<p>Charities in England and Wales with gross income below £250,000 (£500,000 for financial years ending on or after 30 September 2026) may prepare receipts and payments accounts rather than accruals accounts. Receipts and payments is simpler: it records cash received and cash paid in the year, without adjusting for debtors, creditors or prepayments. Some dedicated charity tools produce both formats; most general tools produce accruals-basis figures by default and require manual conversion for a receipts and payments presentation.</p>
 
-<p>Charities above £250,000 gross income must prepare accruals accounts under SORP. If your organisation is approaching that threshold, it is worth checking that your current software can produce accruals-basis SOFA reports before you reach it, rather than changing systems under time pressure at year end.</p>
+<p>Charities above £250,000 gross income (£500,000 for financial years ending on or after 30 September 2026) must prepare accruals accounts under SORP. If your organisation is approaching that threshold, it is worth checking that your current software can produce accruals-basis SOFA reports before you reach it, rather than changing systems under time pressure at year end.</p>
 
 <h2>Independent examination and audit access</h2>
 
 <p>Whether your accounts are independently examined or audited, the examiner or auditor needs read access to the accounting records. Most cloud platforms (Xero, QuickBooks, Access Financials) allow an accountant or examiner seat at no extra cost. Confirm this before committing to a platform, and check that the access level is sufficient for the examiner to verify individual transactions, not just summary reports.</p>
 
-<p>For charities with gross income above £1 million, or above £250,000 with gross assets above £3.26 million, a full statutory audit is required rather than an independent examination. Auditors typically have standard workflow integrations with Xero, QuickBooks and Sage; some dedicated charity platforms are less familiar to audit firms and may require manual data export.</p>
+<p>For charities with gross income above £1 million, or above £250,000 with gross assets above £3.26 million (above £1.5 million, or £500,000 with gross assets above £5 million, for financial years ending on or after 30 September 2026), a full statutory audit is required rather than an independent examination. Auditors typically have standard workflow integrations with Xero, QuickBooks and Sage; some dedicated charity platforms are less familiar to audit firms and may require manual data export.</p>
 
 <h2>What to check before committing to a platform</h2>
 

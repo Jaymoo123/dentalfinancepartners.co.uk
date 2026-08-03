@@ -11,7 +11,7 @@
         "licence": "Open Government Licence v3.0"
       }
     ],
-    "notes": "'In cliff' = active charities with latest reported income between 10% below a threshold and the threshold itself. 'Just crossed' = active charities within 10% above the threshold. Income is latest_income; charities without a reported income are excluded. Thresholds: independent examination \u00a325,000; accruals/qualified examiner \u00a3250,000; statutory audit \u00a31,000,000 (income test; asset test not available in this extract). Main charities only (linked charities excluded)."
+    "notes": "'In cliff' = active charities with latest reported income between 10% below a threshold and the threshold itself. 'Just crossed' = active charities within 10% above the threshold. Income is latest_income; charities without a reported income are excluded. Thresholds: independent examination \u00a325,000; accruals/qualified examiner \u00a3250,000; statutory audit \u00a31,000,000 (income test; asset test not available in this extract). Main charities only (linked charities excluded). These thresholds apply to financial years ending before 30 September 2026. For financial years ending on or after 30 September 2026 the gates rise to \u00a340,000 (independent examination), \u00a3500,000 (accruals/qualified examiner) and \u00a31,500,000 (audit income test; asset trigger \u00a35,000,000), per https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting."
   },
   "headline": {
     "active_charities_with_income": 162587,

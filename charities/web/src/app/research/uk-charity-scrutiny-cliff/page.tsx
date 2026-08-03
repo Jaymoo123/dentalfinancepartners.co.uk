@@ -24,7 +24,7 @@ const audit_edge = cliff_edges.find((e) => e.key === "audit_gate")!;
 
 export const metadata: Metadata = {
   title: `UK Charity Scrutiny Cliff-Edge Monitor | ${site.name}`,
-  description: `${fmtNumber(ie_edge.charities_in_cliff)} charities sit within 10% below the £25,000 independent examination threshold; ${fmtNumber(accruals_edge.charities_in_cliff)} are within 10% of the £250,000 accruals gate. A live count of England and Wales charities approaching each statutory scrutiny threshold.`,
+  description: `${fmtNumber(ie_edge.charities_in_cliff)} charities sit within 10% below the £25,000 independent examination threshold; ${fmtNumber(accruals_edge.charities_in_cliff)} are within 10% of the £250,000 accruals gate. Live counts, plus the higher gates that apply to financial years ending on or after 30 September 2026.`,
   alternates: { canonical: `${site.url}${PAGE_PATH}` },
   openGraph: {
     title: "UK Charity Scrutiny Cliff-Edge Monitor",
@@ -39,7 +39,7 @@ const datasetSchema = {
   "@type": "Dataset",
   name: "UK Charity Scrutiny Cliff-Edge Monitor: charities within 10% of each statutory threshold",
   description:
-    "Count of active England and Wales charities with latest reported income within 10% below and within 10% above each of the three main Charities Act scrutiny thresholds: independent examination (£25,000), accruals/qualified examiner (£250,000), and audit (£1,000,000). Compiled from the Charity Commission full-register extract under OGL v3.0.",
+    "Count of active England and Wales charities with latest reported income within 10% below and within 10% above each of the three main Charities Act scrutiny thresholds: independent examination (£25,000), accruals/qualified examiner (£250,000), and audit (£1,000,000). These thresholds apply to financial years ending before 30 September 2026; for years ending on or after that date they rise to £40,000, £500,000 and £1,500,000. Compiled from the Charity Commission full-register extract under OGL v3.0.",
   inLanguage: "en-GB",
   license: "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
   creator: { "@type": "Organization", "@id": `${site.url}#organization`, name: site.name },
@@ -64,7 +64,7 @@ const faqs = [
   {
     question: "What is the scrutiny cliff edge?",
     answer:
-      "The Charities Act 2011 sets income thresholds at which a charity's external scrutiny obligation changes. Below £25,000 gross income, a charity needs no external scrutiny. Above £25,000 it needs an independent examination. Above £250,000 it needs an independent examination by a qualified examiner and must prepare accruals accounts rather than receipts and payments accounts. Above £1,000,000 (or if gross assets exceed £3.26m alongside income over £250,000) it needs a statutory audit. Each of these thresholds is a cliff edge: crossing one triggers a materially more demanding (and more expensive) compliance regime. Many charities sit just below these gates without realising how close they are.",
+      "The Charities Act 2011 sets income thresholds at which a charity's external scrutiny obligation changes. For financial years ending before 30 September 2026: below £25,000 gross income, a charity needs no external scrutiny. Above £25,000 it needs an independent examination. Above £250,000 it needs an independent examination by a qualified examiner and must prepare accruals accounts rather than receipts and payments accounts. Above £1,000,000 (or if gross assets exceed £3.26m alongside income over £250,000) it needs a statutory audit. For financial years ending on or after 30 September 2026 these gates rise to £40,000, £500,000 and £1.5m (asset trigger £5m). Each of these thresholds is a cliff edge: crossing one triggers a materially more demanding (and more expensive) compliance regime. Many charities sit just below these gates without realising how close they are.",
   },
   {
     question: "How is the cliff-edge count calculated?",
@@ -73,17 +73,22 @@ const faqs = [
   {
     question: "What happens when a charity crosses £25,000?",
     answer:
-      "Once a charity's gross income exceeds £25,000 in any financial year, it must have its accounts independently examined before they are filed with the Charity Commission. An independent examiner does not need to be a qualified accountant (unless the charity also exceeds £250,000), but must be independent of the charity and its trustees, and must have the skills to carry out the examination. The examiner checks whether the accounts are consistent with the charity's records; this is not an audit. Charities often underestimate how much preparation this requires the first time, particularly if they have been operating on receipts and payments accounts.",
+      "Once a charity's gross income exceeds £25,000 in a financial year ending before 30 September 2026 (£40,000 for years ending on or after that date), it must have its accounts independently examined before they are filed with the Charity Commission. An independent examiner does not need to be a qualified accountant (unless the charity also exceeds the qualified-examiner threshold), but must be independent of the charity and its trustees, and must have the skills to carry out the examination. The examiner checks whether the accounts are consistent with the charity's records; this is not an audit. Charities often underestimate how much preparation this requires the first time, particularly if they have been operating on receipts and payments accounts.",
   },
   {
     question: "What changes at £250,000?",
     answer:
-      "At £250,000 gross income, two obligations change at once. First, the charity must prepare accruals accounts (a full income and expenditure account and balance sheet), rather than the simpler receipts and payments account. This typically requires more sophisticated bookkeeping and usually professional help. Second, the independent examiner must be a qualified accountant, defined by the Charity Commission as a member of one of the recognised accountancy bodies. Together these changes often represent a significant cost step for growing charities.",
+      "At £250,000 gross income (£500,000 for financial years ending on or after 30 September 2026), two obligations change at once. First, the charity must prepare accruals accounts (a full income and expenditure account and balance sheet), rather than the simpler receipts and payments account. This typically requires more sophisticated bookkeeping and usually professional help. Second, the independent examiner must be a qualified accountant, defined by the Charity Commission as a member of one of the recognised accountancy bodies. Together these changes often represent a significant cost step for growing charities.",
   },
   {
     question: "When is a full audit required?",
     answer:
-      "A statutory audit is required when a charity's gross income exceeds £1,000,000, or when gross income exceeds £250,000 and gross assets exceed £3,260,000. This page counts charities approaching the income threshold only; the asset test requires data not available in the public register extract, so the true number approaching audit is somewhat higher than shown. An audit must be carried out by a registered auditor (a firm or individual registered with a recognised supervisory body under the Companies Act 2006).",
+      "For financial years ending before 30 September 2026, a statutory audit is required when a charity's gross income exceeds £1,000,000, or when gross income exceeds £250,000 and gross assets exceed £3,260,000. For financial years ending on or after 30 September 2026 the audit gates rise to £1,500,000 income, or £500,000 income with gross assets over £5,000,000. This page counts charities approaching the income threshold only; the asset test requires data not available in the public register extract, so the true number approaching audit is somewhat higher than shown. An audit must be carried out by a registered auditor (a firm or individual registered with a recognised supervisory body under the Companies Act 2006).",
+  },
+  {
+    question: "How are the scrutiny thresholds changing on 30 September 2026?",
+    answer:
+      "Following a DCMS consultation, the thresholds rise for financial years ending on or after 30 September 2026: independent examination is required above £40,000 gross income (previously £25,000), accruals accounts and a qualified examiner above £500,000 (previously £250,000), and a statutory audit above £1.5m income or £500,000 income with gross assets over £5m (previously £1m and £3.26m). Financial years ending before 30 September 2026 keep the old thresholds. The counts on this page track the pre-change gates, which remain the ones charities filing 2025/26 accounts must meet.",
   },
 ];
 
@@ -144,7 +149,9 @@ export default function ScrutinyCliffPage() {
             <p className="mt-4 max-w-2xl text-lg text-white/85">
               How many charities are close to crossing a threshold that changes what they must file?
               A live count of England and Wales charities within 10% of each statutory scrutiny
-              gate, compiled from Charity Commission open data. Updated {generatedDate}.
+              gate, compiled from Charity Commission open data. Updated {generatedDate}. The gates
+              tracked here apply to financial years ending before 30 September 2026; they rise to
+              £40,000, £500,000 and £1.5m for years ending on or after that date.
             </p>
             <nav className="mt-6 flex flex-wrap gap-x-6 gap-y-1 text-sm text-white/70">
               <a href="#cliff-edges" className="hover:text-white">Cliff-edge counts</a>
@@ -234,7 +241,8 @@ export default function ScrutinyCliffPage() {
                   to be a qualified accountant at this level, but must be independent. Currently{" "}
                   <strong className="text-[var(--ink)]">{fmtNumber(ie_edge.charities_in_cliff)}</strong>{" "}
                   charities sit in the {fmtGbp(ie_edge.cliff_floor)} to {fmtGbp(ie_edge.threshold)}{" "}
-                  zone.
+                  zone. For financial years ending on or after 30 September 2026 this gate rises to
+                  £40,000.
                 </p>
               </div>
 
@@ -254,7 +262,8 @@ export default function ScrutinyCliffPage() {
                   threshold for growing charities. Currently{" "}
                   <strong className="text-[var(--ink)]">{fmtNumber(accruals_edge.charities_in_cliff)}</strong>{" "}
                   charities sit in the {fmtGbp(accruals_edge.cliff_floor)} to{" "}
-                  {fmtGbp(accruals_edge.threshold)} zone.
+                  {fmtGbp(accruals_edge.threshold)} zone. For financial years ending on or after 30
+                  September 2026 this gate rises to £500,000.
                 </p>
               </div>
 
@@ -273,7 +282,9 @@ export default function ScrutinyCliffPage() {
                   <strong className="text-[var(--ink)]">{fmtNumber(audit_edge.charities_in_cliff)}</strong>{" "}
                   charities sit in the {fmtGbp(audit_edge.cliff_floor)} to{" "}
                   {fmtGbp(audit_edge.threshold)} zone. The true number approaching audit is higher
-                  because the asset test cannot be applied from the public register extract.
+                  because the asset test cannot be applied from the public register extract. For
+                  financial years ending on or after 30 September 2026 the audit gate rises to
+                  £1.5m income (asset trigger £5m alongside income over £500,000).
                 </p>
               </div>
             </div>
@@ -339,7 +350,7 @@ export default function ScrutinyCliffPage() {
               formId="scrutiny_cliff"
               messagePrefix="[Research: scrutiny cliff-edge]"
               heading="Is your charity approaching a threshold?"
-              blurb={`${fmtNumber(totalInCliff)} charities are within 10% of a compliance gate that changes what they must file. If your income is approaching £25,000, £250,000, or £1m, we can tell you what to prepare and when.`}
+              blurb={`${fmtNumber(totalInCliff)} charities are within 10% of a compliance gate that changes what they must file. If your income is approaching £25,000, £250,000, or £1m (£40,000, £500,000, or £1.5m for financial years ending on or after 30 September 2026), we can tell you what to prepare and when.`}
               submitLabel="Ask about your charity's obligations"
             />
           </div>

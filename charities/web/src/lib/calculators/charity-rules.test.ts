@@ -128,13 +128,15 @@ describe("gasdsClaim", () => {
   });
 });
 
-describe("scrutinyLevel", () => {
+describe("scrutinyLevel (financial years ending before 30 Sep 2026)", () => {
   // Thresholds (England & Wales, Charities Act 2011):
   //  - IE required when gross income > £25,000
   //    https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31
   //  - Audit when income > £1m, or income > £250,000 AND gross assets > £3.26m
   //    https://www.gov.uk/government/publications/charity-reporting-and-accounting-the-essentials-november-2016-cc15d
   //  - Income > £250,000: accruals accounts + examiner from a listed body (CC32)
+  // These figures apply to financial years ENDING before 30 September 2026
+  // (https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting).
 
   const base = { assets: 50_000, isCompany: false, governingDocRequiresAudit: false };
 
@@ -193,5 +195,83 @@ describe("scrutinyLevel", () => {
     const r = scrutinyLevel({ ...base, income: 60_000, isCompany: true });
     expect(r.accrualsRequired).toBe(true);
     expect(r.level).toBe("independent-examination");
+  });
+});
+
+describe("scrutinyLevel (financial years ending on or after 30 Sep 2026)", () => {
+  // Raised thresholds, applying to financial years ENDING on or after
+  // 30 September 2026 ("apply to accounting years that end on or after
+  // 30 September 2026"):
+  //  - IE required when gross income > £40,000 (was £25,000)
+  //  - Qualified examiner + accruals when income > £500,000 (was £250,000)
+  //  - Audit when income > £1.5m, or income > £500,000 AND assets > £5m
+  //    (was £1m / £250,000 / £3.26m)
+  // Source: https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting
+
+  const base = {
+    assets: 50_000,
+    isCompany: false,
+    governingDocRequiresAudit: false,
+    fyEndsOnOrAfter30Sep2026: true,
+  };
+
+  it("£30,000 income: no external scrutiny under the new £40,000 gate", () => {
+    // Old regime would require IE (30,000 > 25,000); new gate is 40,000.
+    const r = scrutinyLevel({ ...base, income: 30_000 });
+    expect(r.level).toBe("none");
+    // Same figures under the old regime still need an examination:
+    expect(scrutinyLevel({ ...base, income: 30_000, fyEndsOnOrAfter30Sep2026: false }).level).toBe(
+      "independent-examination",
+    );
+  });
+
+  it("£40,000 exactly: still below the gate (gate is 'exceeds £40,000')", () => {
+    const r = scrutinyLevel({ ...base, income: 40_000 });
+    expect(r.level).toBe("none");
+  });
+
+  it("£400,000 income: IE with unqualified examiner allowed (new £500,000 gate)", () => {
+    // Old regime: qualified examiner + accruals (400,000 > 250,000). New: not yet.
+    const r = scrutinyLevel({ ...base, income: 400_000 });
+    expect(r.level).toBe("independent-examination");
+    expect(r.qualifiedExaminerRequired).toBe(false);
+    expect(r.accrualsRequired).toBe(false);
+  });
+
+  it("£600,000 income, modest assets: IE, qualified examiner + accruals", () => {
+    // 500,000 < 600,000 <= 1.5m and assets 800,000 <= 5m
+    const r = scrutinyLevel({ ...base, income: 600_000, assets: 800_000 });
+    expect(r.level).toBe("independent-examination");
+    expect(r.qualifiedExaminerRequired).toBe(true);
+    expect(r.accrualsRequired).toBe(true);
+  });
+
+  it("£600,000 income with £6m assets: audit (new assets test: > £500k AND > £5m)", () => {
+    const r = scrutinyLevel({ ...base, income: 600_000, assets: 6_000_000 });
+    expect(r.level).toBe("audit");
+  });
+
+  it("£600,000 income with £4m assets: IE only (assets 4m <= 5m gate)", () => {
+    // Old regime this was an audit (4m > 3.26m); the raised gate spares it.
+    const r = scrutinyLevel({ ...base, income: 600_000, assets: 4_000_000 });
+    expect(r.level).toBe("independent-examination");
+  });
+
+  it("£1.2m income: IE, not audit (new £1.5m gate)", () => {
+    // Old regime: audit (1.2m > 1m). New: 1.2m <= 1.5m so IE with qualified examiner.
+    const r = scrutinyLevel({ ...base, income: 1_200_000 });
+    expect(r.level).toBe("independent-examination");
+    expect(r.qualifiedExaminerRequired).toBe(true);
+  });
+
+  it("£1.6m income: audit regardless of assets", () => {
+    // 1,600,000 > 1,500,000
+    const r = scrutinyLevel({ ...base, income: 1_600_000 });
+    expect(r.level).toBe("audit");
+  });
+
+  it("governing document override still forces audit at any size", () => {
+    const r = scrutinyLevel({ ...base, income: 30_000, governingDocRequiresAudit: true });
+    expect(r.level).toBe("audit");
   });
 });

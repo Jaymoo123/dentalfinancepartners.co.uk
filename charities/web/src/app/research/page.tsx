@@ -46,7 +46,7 @@ const reports = [
   {
     href: "/research/uk-charity-scrutiny-cliff",
     title: "Charity Scrutiny Cliff-Edge Monitor",
-    blurb: `${fmtNumber(ie_cliff.charities_in_cliff)} charities sit within 10% below the £25,000 independent examination gate. A live count of charities approaching each statutory compliance threshold.`,
+    blurb: `${fmtNumber(ie_cliff.charities_in_cliff)} charities sit within 10% below the £25,000 independent examination gate, which rises to £40,000 for financial years ending on or after 30 September 2026. A live count of charities approaching each statutory compliance threshold.`,
     stat: fmtNumber(ie_cliff.charities_in_cliff),
     statLabel: "charities within 10% of the independent examination gate",
     updated: cliff.meta.generated_at.slice(0, 10),

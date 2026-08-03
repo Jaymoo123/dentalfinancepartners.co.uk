@@ -20,21 +20,25 @@ A charity based in England or Wales must register with the Charity Commission on
 All registered charities must submit an annual return, with tiered content: under £10,000 income they report income and spending only; £10,000 to £25,000 they answer the annual return questions; over £25,000 they must also attach the trustee annual report and accounts. Deadline: within 10 months of financial year end. (The outline's shorthand "required over £10,000" undersold this: everyone files something; the £10,000 gate changes what is filed.)
 — https://www.gov.uk/guidance/prepare-a-charity-annual-return (verified 2026-07-11: tiering + "within 10 months of the end of your financial year")
 
-**3. Independent examination gate — gross income over £25,000.**
-Once gross income exceeds £25,000, trustees must arrange external scrutiny: an independent examination or an audit. At or below £25,000 the Charities Act requires no external scrutiny (governing document can still impose one).
+**3. Independent examination gate — gross income over £25,000 (£40,000 for financial years ending on/after 30 Sep 2026).**
+Once gross income exceeds £25,000, trustees must arrange external scrutiny: an independent examination or an audit. At or below £25,000 the Charities Act requires no external scrutiny (governing document can still impose one). DCMS threshold uplift: for accounting years ENDING on or after 30 September 2026 the gate is £40,000.
 — https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31 and the full guidance at .../independent-examination-of-charity-accounts-trustees (verified 2026-07-11: "Where a charity's annual income is over £25,000...")
+— https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting (verified 2026-08-03: new thresholds "apply to accounting years that end on or after 30 September 2026"; IE £40,000)
 
-**4. Audit thresholds — income over £1m, OR income over £250,000 AND gross assets over £3.26m.**
-A statutory audit is mandatory above these gates; independent examination is not permitted (save exceptional Commission-approved cases). Governing-document or funder audit clauses can force an audit below the statutory thresholds.
+**4. Audit thresholds — income over £1m, OR income over £250,000 AND gross assets over £3.26m (from FYs ending on/after 30 Sep 2026: £1.5m, OR £500,000 AND £5m).**
+A statutory audit is mandatory above these gates; independent examination is not permitted (save exceptional Commission-approved cases). Governing-document or funder audit clauses can force an audit below the statutory thresholds. DCMS threshold uplift: for accounting years ENDING on or after 30 September 2026 the gates are £1.5m income, or £500,000 income with gross assets over £5m; the group-accounts audit threshold also rises £1m -> £1.5m.
 — CC31 full guidance (verified 2026-07-11: "Over £1 million OR over £250,000 with gross assets exceeding £3.26 million: audit is mandatory") and https://www.gov.uk/government/publications/charity-reporting-and-accounting-the-essentials-november-2016-cc15d (landing page live 2026-07-11; the CC15d HTML body itself was not reachable this pass — figures anchored via CC31, which states them in full)
+— https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting (verified 2026-08-03: audit income £1.5m, assets £5m, group accounts £1.5m, for accounting years ending on or after 30 September 2026)
 
-**5. Qualified examiner rule — income over £250,000.**
-Where gross income exceeds £250,000, the independent examiner must be a member of a body listed in the Charities Act: ICAEW, ICAS, ICAI, ACCA, AAPA, AAT, AIA, CIMA, the Chartered Governance Institute, CIPFA, ACIE, IFA, CPAA. At or below £250,000, any independent person with the requisite ability and practical experience may examine.
+**5. Qualified examiner rule — income over £250,000 (£500,000 for financial years ending on/after 30 Sep 2026).**
+Where gross income exceeds £250,000, the independent examiner must be a member of a body listed in the Charities Act: ICAEW, ICAS, ICAI, ACCA, AAPA, AAT, AIA, CIMA, the Chartered Governance Institute, CIPFA, ACIE, IFA, CPAA. At or below £250,000, any independent person with the requisite ability and practical experience may examine. DCMS threshold uplift: £500,000 for accounting years ENDING on or after 30 September 2026.
 — CC31 full guidance (verified 2026-07-11; full list of 13 bodies confirmed). CC32 (examiners' guidance) is PDF-only and was not re-parsed this pass: https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-examiners-cc32 (page live 2026-07-11)
+— https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting (verified 2026-08-03: qualified examiner £500,000)
 
-**6. Receipts & payments vs accruals — £250,000; companies always accruals.**
-Non-company charities with gross income of £250,000 or less may prepare receipts and payments accounts. Charitable companies, and all charities over £250,000, must prepare accruals accounts.
+**6. Receipts & payments vs accruals — £250,000 (£500,000 for financial years ending on/after 30 Sep 2026); companies always accruals.**
+Non-company charities with gross income of £250,000 or less may prepare receipts and payments accounts. Charitable companies, and all charities over £250,000, must prepare accruals accounts. DCMS threshold uplift: the R&P boundary rises to £500,000 for accounting years ENDING on or after 30 September 2026.
 — CC15d (landing live 2026-07-11) and CC31 full guidance (verified 2026-07-11 in the qualified-examiner/accruals context). Standard framing confirmed; treat the company-accruals rule as settled law (Companies Act 2006 requirement).
+— https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting (verified 2026-08-03: receipts & payments available up to £500,000)
 
 **7. SORP — new SORP applies to periods beginning on or after 1 January 2026.**
 Accruals accounts must follow the Charities SORP (FRS 102). SORP 2026 applies to accounting periods starting on or after 1 January 2026, so the site launches INTO the transition: date every SORP statement to the accounting period, never "the new rules".

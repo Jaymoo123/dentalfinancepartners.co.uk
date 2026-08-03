@@ -20,8 +20,8 @@ lastReviewed: "2026-07-14"
 <p>The rule under <a href="https://www.gov.uk/government/publications/charity-reporting-and-accounting-the-essentials-november-2016-cc15d">CC15d</a> and <a href="https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31">CC31</a> is as follows:</p>
 
 <ul>
-  <li><strong>Receipts and payments accounts</strong> are available to non-company charities whose gross income is <strong>£250,000 or less</strong>. If your charity is an unincorporated association or a trust and your income does not exceed £250,000, you may choose receipts and payments rather than accruals. Receipts and payments accounts do not need to follow the SORP, so the SORP 2026 transition does not apply to you.</li>
-  <li><strong>Accruals accounts</strong> are compulsory for <strong>all charitable companies</strong> (regardless of income) and for any non-company charity whose gross income <strong>exceeds £250,000</strong>. If you prepare accruals accounts, SORP 2026 applies to periods starting on or after 1 January 2026.</li>
+  <li><strong>Receipts and payments accounts</strong> are available to non-company charities whose gross income is <strong>£250,000 or less</strong> (£500,000 or less for financial years ending on or after 30 September 2026). If your charity is an unincorporated association or a trust and your income does not exceed that threshold, you may choose receipts and payments rather than accruals. Receipts and payments accounts do not need to follow the SORP, so the SORP 2026 transition does not apply to you.</li>
+  <li><strong>Accruals accounts</strong> are compulsory for <strong>all charitable companies</strong> (regardless of income) and for any non-company charity whose gross income <strong>exceeds £250,000</strong> (£500,000 for financial years ending on or after 30 September 2026). If you prepare accruals accounts, SORP 2026 applies to periods starting on or after 1 January 2026.</li>
 </ul>
 
 <p>If you are unsure whether your charity qualifies for receipts and payments, check CC15d. If your income is close to the £250,000 threshold, note that the test is applied to <em>gross income</em> in the year, so a one-off uplift (for example, a capital grant) can push you into the accruals requirement even if it does not recur.</p>
@@ -164,7 +164,7 @@ lastReviewed: "2026-07-14"
 
 <h3>Assuming receipts and payments accounts are affected</h3>
 
-<p>The SORP applies only to accruals accounts. If your charity prepares receipts and payments accounts (and is eligible to do so under the £250,000 income rule for non-company charities), SORP 2026 does not change what you are required to do. Receipts and payments accounts follow the simpler CC16 format.</p>
+<p>The SORP applies only to accruals accounts. If your charity prepares receipts and payments accounts (and is eligible to do so under the income rule for non-company charities: £250,000, rising to £500,000 for financial years ending on or after 30 September 2026), SORP 2026 does not change what you are required to do. Receipts and payments accounts follow the simpler CC16 format.</p>
 
 <h2>Getting your first SORP 2026 accounts prepared</h2>
 
@@ -190,7 +190,7 @@ lastReviewed: "2026-07-14"
 
 <h3>Does SORP 2026 apply to receipts and payments accounts?</h3>
 
-<p>No. The Charities SORP applies only to accruals accounts. Non-company charities with gross income of £250,000 or less may prepare receipts and payments accounts and are not required to follow the SORP. If your charity prepares receipts and payments accounts, SORP 2026 does not change your obligations.</p>
+<p>No. The Charities SORP applies only to accruals accounts. Non-company charities with gross income of £250,000 or less (£500,000 or less for financial years ending on or after 30 September 2026) may prepare receipts and payments accounts and are not required to follow the SORP. If your charity prepares receipts and payments accounts, SORP 2026 does not change your obligations.</p>
 
 <h3>Does my December 2025 year-end use the old or new SORP?</h3>
 
@@ -206,7 +206,7 @@ lastReviewed: "2026-07-14"
 
 <h3>Do small charities have to follow the SORP?</h3>
 
-<p>Whether the SORP applies depends on your accounts format, not your income alone. If your charity prepares accruals accounts (because you are a charitable company, or because your income exceeds £250,000), the SORP applies regardless of how small the charity is. If you are a non-company charity with income of £250,000 or less and you choose to prepare receipts and payments accounts, the SORP does not apply.</p>
+<p>Whether the SORP applies depends on your accounts format, not your income alone. If your charity prepares accruals accounts (because you are a charitable company, or because your income exceeds the accruals threshold: £250,000, or £500,000 for financial years ending on or after 30 September 2026), the SORP applies regardless of how small the charity is. If you are a non-company charity below that threshold and you choose to prepare receipts and payments accounts, the SORP does not apply.</p>
 
 <h3>What happens if we file accounts under the wrong SORP?</h3>
 
@@ -214,7 +214,7 @@ lastReviewed: "2026-07-14"
 
 <h3>Does the SORP change the independent examination thresholds?</h3>
 
-<p>No. The income thresholds that determine when an independent examination or a statutory audit is required are set by the Charities Act and Commission regulations, not by the SORP. Those thresholds (independent examination required above <a href="https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31">£25,000 gross income</a>; audit mandatory above £1 million, or above £250,000 with gross assets over £3.26 million) are unchanged by SORP 2026. For more detail see our guide to <a href="/guides/audit-vs-independent-examination">audit versus independent examination</a>.</p>
+<p>No. The income thresholds that determine when an independent examination or a statutory audit is required are set by the Charities Act and Commission regulations, not by the SORP. Those thresholds (independent examination required above <a href="https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31">£25,000 gross income</a>; audit mandatory above £1 million, or above £250,000 with gross assets over £3.26 million) are unchanged by SORP 2026. They do change separately on 30 September 2026: for financial years ending on or after that date the gates rise to £40,000 (examination), £500,000 (qualified examiner and accruals) and £1.5 million (audit, with a £5 million asset trigger). For more detail see our guide to <a href="/guides/audit-vs-independent-examination">audit versus independent examination</a>.</p>
 
 <h3>Where can I see example SORP 2026 accounts?</h3>
 

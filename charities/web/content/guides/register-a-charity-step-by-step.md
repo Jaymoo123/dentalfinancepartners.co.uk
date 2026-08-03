@@ -100,7 +100,7 @@ howToSteps:
 
 <p><strong>All registered charities must submit an annual return to the Charity Commission within 10 months of the financial year end.</strong> This applies from the first year of registration. What the return contains depends on income: under £10,000, you report income and spending only; between £10,000 and £25,000 you answer the annual return questions; over £25,000 you must also attach the trustee annual report and accounts. The tiering changes what you file, not whether you file. See the <a href="/blog/trustee-compliance/charity-commission-annual-return-guide">Charity Commission annual return guide</a> for the full process.</p>
 
-<p>Above £25,000 gross income you must also arrange external scrutiny of your accounts: an independent examination or, at higher thresholds, a statutory audit. The <a href="/services/charity-accounts">charity accounts service</a> covers both.</p>
+<p>Above £25,000 gross income (£40,000 for financial years ending on or after 30 September 2026) you must also arrange external scrutiny of your accounts: an independent examination or, at higher thresholds, a statutory audit. The <a href="/services/charity-accounts">charity accounts service</a> covers both.</p>
 
 <table>
   <thead>
@@ -119,7 +119,7 @@ howToSteps:
       <td>Filed with the annual return, same deadline</td>
     </tr>
     <tr>
-      <td>Independent examination or audit (income over £25,000)</td>
+      <td>Independent examination or audit (income over £25,000; £40,000 for financial years ending on or after 30 Sep 2026)</td>
       <td>Completed before the accounts are filed</td>
     </tr>
   </tbody>

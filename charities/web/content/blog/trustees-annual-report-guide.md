@@ -11,7 +11,7 @@ summary: "A plain-English walkthrough of who must produce a trustees' annual rep
 keyTakeaways:
   - "All registered charities must submit an annual return; only those with income over £25,000 must attach the trustees' annual report and accounts."
   - "The annual return is due within 10 months of your financial year end."
-  - "Non-company charities with income of £250,000 or less may use receipts and payments accounts; all others must use accruals accounts and follow the SORP."
+  - "Non-company charities with income of £250,000 or less (£500,000 for financial years ending on or after 30 September 2026) may use receipts and payments accounts; all others must use accruals accounts and follow the SORP."
   - "The report must cover your charity's purposes, activities, achievements, finances and governance arrangements."
   - "Public benefit reporting is a legal requirement, not optional narrative."
 faqs:
@@ -72,7 +72,7 @@ faqs:
 
 <h2>How the report links to your accounts</h2>
 <p>The trustees' annual report is filed alongside the accounts, and the two documents need to be consistent: figures in the report must match the accounts, and the narrative in the report should explain what the numbers show.</p>
-<p>The type of accounts your charity prepares affects how much the SORP shapes your report. <a href="https://www.gov.uk/government/publications/charity-reporting-and-accounting-the-essentials-november-2016-cc15d">Under Commission guidance</a>, non-company charities with gross income of £250,000 or less may prepare receipts and payments (R&amp;P) accounts. Charitable companies, and all charities with gross income over £250,000, must prepare accruals accounts.</p>
+<p>The type of accounts your charity prepares affects how much the SORP shapes your report. <a href="https://www.gov.uk/government/publications/charity-reporting-and-accounting-the-essentials-november-2016-cc15d">Under Commission guidance</a>, non-company charities with gross income of £250,000 or less (£500,000 or less for financial years ending on or after 30 September 2026) may prepare receipts and payments (R&amp;P) accounts. Charitable companies, and all charities with gross income over that threshold, must prepare accruals accounts.</p>
 
 <table>
   <thead>
@@ -85,19 +85,19 @@ faqs:
   <tbody>
     <tr>
       <td>Receipts and payments</td>
-      <td>Non-company charities, gross income £250,000 or less</td>
+      <td>Non-company charities, gross income £250,000 or less (£500,000 for years ending on or after 30 Sep 2026)</td>
       <td>Not required to follow SORP; simpler report format applies</td>
     </tr>
     <tr>
       <td>Accruals</td>
-      <td>All charitable companies; all charities with gross income over £250,000</td>
+      <td>All charitable companies; all charities with gross income over £250,000 (£500,000 for years ending on or after 30 Sep 2026)</td>
       <td>Must follow the <a href="https://www.charitysorp.org/">Charities SORP (FRS 102)</a></td>
     </tr>
   </tbody>
 </table>
 
 <p>For charities preparing accruals accounts, the <a href="https://www.charitysorp.org/">Charities SORP (FRS 102)</a> sets out additional disclosure requirements for the annual report that go beyond the statutory minimum. The current SORP 2026 applies to accounting periods starting on or after 1 January 2026. Because the site launches during the transition, date every SORP-related statement in your report to the accounting period it covers rather than describing it as "new" or "old" rules.</p>
-<p>Once your charity's gross income exceeds £25,000, an independent examination or audit of the accounts is required. The level of external scrutiny accompanies the report when you file. Our <a href="/calculators/independent-examination-vs-audit-checker">IE vs audit threshold checker</a> will tell you which level applies to your charity.</p>
+<p>Once your charity's gross income exceeds £25,000 (£40,000 for financial years ending on or after 30 September 2026), an independent examination or audit of the accounts is required. The level of external scrutiny accompanies the report when you file. Our <a href="/calculators/independent-examination-vs-audit-checker">IE vs audit threshold checker</a> will tell you which level applies to your charity.</p>
 
 <h2>Small charity vs larger charity reporting expectations</h2>
 <p>The Charity Commission applies a proportionality principle: the level of detail expected in the report scales with the charity's size, complexity and resources. A very small charity operating from volunteers is not expected to produce a report structured like a large national charity's document. The statutory requirements are the same regardless of size, but the depth of treatment differs.</p>

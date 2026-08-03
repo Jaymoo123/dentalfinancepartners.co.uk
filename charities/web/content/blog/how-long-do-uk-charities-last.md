@@ -261,7 +261,7 @@ sourcesVerifiedAt: "2026-07-20"
 
 <p>The full dataset behind this article, including the complete cohort survival series from 1980 to 2016 and the income band analysis, is available in our <a href="/research/uk-charity-survival-index">UK Charity Survival and Longevity Index</a>. The index is built from the Charity Commission full register extract and is updated as new register data is released.</p>
 
-<p>For practical governance support, our <a href="/services/charity-accounts">charity accounts service</a> covers annual accounts, reserves policy and the trustees' annual report. Our <a href="/services/independent-examination">independent examination service</a> provides the Charity Commission-compliant external scrutiny required for charities with gross income between £25,000 and £1 million. Use the contact form to discuss your charity's position.</p>
+<p>For practical governance support, our <a href="/services/charity-accounts">charity accounts service</a> covers annual accounts, reserves policy and the trustees' annual report. Our <a href="/services/independent-examination">independent examination service</a> provides the Charity Commission-compliant external scrutiny required for charities with gross income between £25,000 and £1 million (£40,000 and £1.5 million for financial years ending on or after 30 September 2026). Use the contact form to discuss your charity's position.</p>
 
 <h2>Sources</h2>
 

@@ -128,8 +128,14 @@ export function gasdsClaim(smallDonations: number, giftAidDonations: number): Ga
 // External scrutiny: independent examination vs audit (house positions 3-6)
 // Charities Act 2011 ss.144-145 thresholds, England & Wales.
 // https://www.gov.uk/government/publications/charity-reporting-and-accounting-the-essentials-november-2016-cc15d
+// Thresholds rise on 30 September 2026. The new figures apply to financial
+// years ENDING on or after 30 September 2026; years ending before that date
+// keep the old figures.
+// https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting
+// ("apply to accounting years that end on or after 30 September 2026")
 // ---------------------------------------------------------------------------
 
+/** Thresholds for financial years ending BEFORE 30 September 2026 */
 export const SCRUTINY = {
   /** Gross income above which independent examination is required */
   ieIncomeGate: 25_000,
@@ -140,6 +146,18 @@ export const SCRUTINY = {
   /** Audit also required if income > accrualsGate AND gross assets exceed this */
   auditAssetsGate: 3_260_000,
 } as const;
+
+/** Thresholds for financial years ending ON OR AFTER 30 September 2026 */
+export const SCRUTINY_FROM_30_SEP_2026 = {
+  ieIncomeGate: 40_000,
+  accrualsGate: 500_000,
+  auditIncomeGate: 1_500_000,
+  auditAssetsGate: 5_000_000,
+} as const;
+
+/** £25,000 -> "£25,000"; £1,500,000 -> "£1.5m" */
+const gbp = (n: number): string =>
+  n >= 1_000_000 ? `£${n / 1_000_000}m` : `£${n.toLocaleString("en-GB")}`;
 
 export type ScrutinyLevel = "none" | "independent-examination" | "audit";
 
@@ -152,6 +170,11 @@ export interface ScrutinyInput {
   isCompany: boolean;
   /** Governing document or funder requires an audit regardless of size? */
   governingDocRequiresAudit: boolean;
+  /**
+   * Financial year ends on or after 30 September 2026? If true the raised
+   * thresholds (SCRUTINY_FROM_30_SEP_2026) apply. Defaults to false.
+   */
+  fyEndsOnOrAfter30Sep2026?: boolean;
 }
 
 export interface ScrutinyResult {
@@ -166,7 +189,8 @@ export interface ScrutinyResult {
 
 export function scrutinyLevel(input: ScrutinyInput): ScrutinyResult {
   const { income, assets, isCompany, governingDocRequiresAudit } = input;
-  const accrualsRequired = isCompany || income > SCRUTINY.accrualsGate;
+  const gates = input.fyEndsOnOrAfter30Sep2026 ? SCRUTINY_FROM_30_SEP_2026 : SCRUTINY;
+  const accrualsRequired = isCompany || income > gates.accrualsGate;
 
   if (governingDocRequiresAudit) {
     return {
@@ -177,38 +201,36 @@ export function scrutinyLevel(input: ScrutinyInput): ScrutinyResult {
       qualifiedExaminerRequired: false,
     };
   }
-  if (income > SCRUTINY.auditIncomeGate) {
+  if (income > gates.auditIncomeGate) {
     return {
       level: "audit",
-      reason: "Gross income exceeds £1m, so a statutory audit is required.",
+      reason: `Gross income exceeds ${gbp(gates.auditIncomeGate)}, so a statutory audit is required.`,
       accrualsRequired,
       qualifiedExaminerRequired: false,
     };
   }
-  if (income > SCRUTINY.accrualsGate && assets > SCRUTINY.auditAssetsGate) {
+  if (income > gates.accrualsGate && assets > gates.auditAssetsGate) {
     return {
       level: "audit",
-      reason:
-        "Gross income exceeds £250,000 and gross assets exceed £3.26m, so a statutory audit is required.",
+      reason: `Gross income exceeds ${gbp(gates.accrualsGate)} and gross assets exceed ${gbp(gates.auditAssetsGate)}, so a statutory audit is required.`,
       accrualsRequired,
       qualifiedExaminerRequired: false,
     };
   }
-  if (income > SCRUTINY.ieIncomeGate) {
+  if (income > gates.ieIncomeGate) {
     return {
       level: "independent-examination",
       reason:
-        income > SCRUTINY.accrualsGate
-          ? "Gross income exceeds £25,000, so independent examination is required. Because income exceeds £250,000 the examiner must belong to a body listed in the Charities Act (ICAEW, ACCA, AAT and others)."
-          : "Gross income exceeds £25,000, so independent examination is required. Below £250,000 any suitably experienced independent person can examine.",
+        income > gates.accrualsGate
+          ? `Gross income exceeds ${gbp(gates.ieIncomeGate)}, so independent examination is required. Because income exceeds ${gbp(gates.accrualsGate)} the examiner must belong to a body listed in the Charities Act (ICAEW, ACCA, AAT and others).`
+          : `Gross income exceeds ${gbp(gates.ieIncomeGate)}, so independent examination is required. Below ${gbp(gates.accrualsGate)} any suitably experienced independent person can examine.`,
       accrualsRequired,
-      qualifiedExaminerRequired: income > SCRUTINY.accrualsGate,
+      qualifiedExaminerRequired: income > gates.accrualsGate,
     };
   }
   return {
     level: "none",
-    reason:
-      "Gross income is £25,000 or below, so no external scrutiny is required by the Charities Act (check your governing document for stricter rules).",
+    reason: `Gross income is ${gbp(gates.ieIncomeGate)} or below, so no external scrutiny is required by the Charities Act (check your governing document for stricter rules).`,
     accrualsRequired,
     qualifiedExaminerRequired: false,
   };
