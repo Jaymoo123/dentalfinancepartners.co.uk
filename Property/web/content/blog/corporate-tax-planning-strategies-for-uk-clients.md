@@ -42,7 +42,7 @@ faqs:
     answer: "The rates page presents the 19% / 25% / 26.5% rate stack with comparative tables and worked examples; it answers 'what rate do I pay'. This page is the orchestration pillar; it answers 'which levers should I consider and in what order'. The seven levers are organised here with cross-links to specialist child pages for the depth treatment of each. Read this page first to identify which levers apply to your structure, then read the relevant child page for the specific mechanic, then the rates page for the specific rate numbers. The three pages sit at orchestration, mechanic, and rates levels of the same content cluster."
   - question: "How does this page differ from the property-companies marginal relief page?"
     answer: "That page is the property-specific application of marginal relief, with property-LtdCo worked examples and the CIHC-via-connected-tenant trap in depth. This page is one layer up: marginal relief is lever 2 in the seven-lever map (associated-companies divisor management), and this page funnels readers down to the marginal-relief child page for the depth treatment. Reading sequence: this page first (which levers apply to me?), then the marginal-relief child (what is the maths?), then the rates page (what are the numbers?)."
-dateModified: "2026-05-27"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"
@@ -81,7 +81,7 @@ editorialNote: "Pillar / orchestration page for CT planning across UK property c
 
 <p>Where it applies: every multi-SPV operator. Under CTA 2010 s.18E, a company is associated with another when one controls the other or both are under common control. The £50,000 and £250,000 marginal-relief limits divide by 1 plus the number of associated companies.</p>
 
-<p>Cost of fragmentation: typically £1,500 to £3,000 in lost marginal relief per associated company added at mid-band profit levels. A five-SPV operator with each SPV at £75,000 profit pays 25% main rate on all £375,000 of group profit (because each SPV exceeds its divided upper limit of £62,500); the same £375,000 in one SPV with no associated companies would have paid £91,250 CT (mid-band marginal relief), a saving of about £2,500 over the five-company main-rate position.</p>
+<p>Cost of fragmentation: typically £1,500 to £3,000 in lost marginal relief per associated company added at mid-band profit levels. An SPV with £75,000 profit and four associated companies pays 25% main rate on the whole £75,000 (its divided upper limit is £250,000 / 5 = £50,000): £18,750. Standing alone, the same SPV would have paid £18,750 − (£250,000 − £75,000) × (3/200) = £16,125. The associated-companies divisor costs it £2,625 a year.</p>
 
 <p>The trade-off: fragmentation has SDLT, liability isolation, and lender benefits that may outweigh the CT cost. Each step needs explicit cost-benefit analysis. The specialist depth lives on our <a href="/blog/incorporation-and-company-structures/corporation-tax-marginal-relief-property-companies">marginal-relief property-companies page</a>.</p>
 
@@ -121,11 +121,11 @@ editorialNote: "Pillar / orchestration page for CT planning across UK property c
 <ul>
 <li><strong>Structures and Buildings Allowance (SBA)</strong>: 3% straight-line annual allowance on qualifying capital expenditure on non-residential structures and buildings (CAA 2001 Part 2A).</li>
 <li><strong>Annual Investment Allowance (AIA)</strong>: £1 million annual allowance on qualifying plant and machinery expenditure (CAA 2001 s.38A).</li>
-<li><strong>First-Year Allowances (FYA)</strong>: where applicable to specific qualifying expenditure (electric-vehicle charging points, energy-efficient plant).</li>
-<li><strong>Main-pool and special-rate-pool writing-down allowances</strong>: 18% and 6% reducing-balance respectively on plant and machinery within the relevant pools.</li>
+<li><strong>First-Year Allowances (FYA)</strong>: 100% full expensing for companies on new and unused main-rate plant (CAA 2001 s.45S); the new 40% first-year allowance on new and unused main-rate plant for expenditure on or after 1 January 2026 (CAA 2001 s.45U, inserted by Finance Act 2026 s.29; cars and second-hand plant excluded, plant for leasing within scope); plus targeted 100% FYAs (electric-vehicle charging points, zero-emission cars).</li>
+<li><strong>Main-pool and special-rate-pool writing-down allowances</strong>: 14% and 6% reducing-balance respectively on plant and machinery within the relevant pools (the main-pool rate cut from 18% by Finance Act 2026 s.28, from April 2026).</li>
 </ul>
 
-<p>For a commercial SPV undertaking a refurbishment, sequencing the AIA, SBA, and pool allowances correctly can defer CT cash flow significantly. The depth on commercial-property capital allowances lives on our specialist capital-allowance pages.</p>
+<p>For a commercial SPV undertaking a refurbishment, sequencing the AIA, full expensing, the 40% first-year allowance, SBA, and pool allowances correctly can defer CT cash flow significantly. The depth on commercial-property capital allowances lives on our specialist capital-allowance pages.</p>
 
 <h3>Lever 7: Corporate Interest Restriction (CIR)</h3>
 

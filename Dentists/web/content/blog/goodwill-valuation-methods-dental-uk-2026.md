@@ -108,7 +108,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>Tax Implications of Goodwill Valuation</h2>
 
-<p>The goodwill valuation method you use has direct tax consequences. For the seller, goodwill is a capital asset. The gain on sale is subject to Capital Gains Tax, not income tax. If you qualify for Business Asset Disposal Relief (BADR), the rate is 14% for 2025/26, rising to 18% from 6 April 2026. The lifetime limit is £1 million of gains.</p>
+<p>The goodwill valuation method you use has direct tax consequences. For the seller, goodwill is a capital asset. The gain on sale is subject to Capital Gains Tax, not income tax. If you qualify for Business Asset Disposal Relief (BADR), the rate is 18% for 2026/27 (it was 14% for disposals in 2025/26 and 10% before 6 April 2025). The lifetime limit is £1 million of gains.</p>
 
 <p>For the buyer, if you purchase the practice through a limited company, you may get tax relief on the goodwill. Under Finance Act 2019, goodwill acquired after 1 April 2019 on the purchase of a trade with eligible intellectual property qualifies for relief at 6.5% per year. Goodwill purchased between 8 July 2015 and 31 March 2019 generally gets no relief. This is a complex area, and the allocation between goodwill and other assets in the sale contract matters.</p>
 
@@ -140,7 +140,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>Final Thoughts</h2>
 
-<p>Dental goodwill valuation is not an exact science, but it is not guesswork either. The three methods described here earnings multiple, fee income percentage, and market comparison provide a structured framework. Used together, they give a reliable range that reflects the practice's true economic value.</p>
+<p>Dental goodwill valuation is not an exact science, but it is not guesswork either. The three methods described here (earnings multiple, fee income percentage, and market comparison) provide a structured framework. Used together, they give a reliable range that reflects the practice's true economic value.</p>
 
 <p>Whether you are buying your first practice, selling after decades of work, or valuing a partnership share, the method matters. So does the person applying it. A dental-specialist accountant or valuer who understands the UK market and HMRC's position is worth the fee.</p>
 

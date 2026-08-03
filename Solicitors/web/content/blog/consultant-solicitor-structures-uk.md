@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Locum Solicitor Tax"
 metaTitle: "Consultant Solicitor Structures UK | Tax, IR35 & SRA Guide"
-metaDescription: "The four ways a consultant solicitor can operate in the UK: self-employed, PSC limited company, umbrella and fee share. Tax, dividend rates, NIC, IR35 and SRA compliance for 2025/26 and from 6 April 2026."
+metaDescription: "How consultant solicitors can operate in the UK: sole trader, PSC, umbrella or fee share. Tax, dividend rates, NIC, IR35 and SRA rules for 2026/27."
 altText: "Consultant solicitor reviewing a fee share agreement with law firm partners in a modern UK office."
 image: ""
 h1: "Consultant Solicitor Structures: How They Work and How Each Is Taxed"
@@ -54,7 +54,7 @@ faqs:
 
 <p>Some firms use an umbrella consultant arrangement. Here, the consultant works through an umbrella company that handles payroll, tax, and NI. The umbrella company invoices the law firm for the consultant's time, deducts employment costs, and pays the consultant a salary. This model is more common for locum solicitor placements where the engagement is short-term or project-based.</p>
 
-<p>The umbrella route simplifies compliance for the firm but can be less tax-efficient for the consultant. The umbrella company must operate PAYE, meaning the consultant pays employee and employer NI on the full amount. There is limited scope for dividend extraction or expense claims.</p>
+<p>The umbrella route simplifies compliance for the firm but can be less tax-efficient for the consultant. The umbrella company must operate PAYE, meaning the consultant pays employee and employer NI on the full amount. There is limited scope for dividend extraction or expense claims. Note that from 6 April 2026 (Finance Act 2026, section 24) the engaging law firm or agency is jointly and severally liable for any PAYE and NIC the umbrella company fails to pay, so firms using this route should carry out due diligence on the umbrella's payroll compliance.</p>
 
 <h3>Limited Company Consultant (Personal Service Company)</h3>
 

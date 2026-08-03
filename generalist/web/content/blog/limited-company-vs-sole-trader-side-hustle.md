@@ -1,5 +1,5 @@
 ---
-title: "Should I Set Up a Limited Company or Stay a Sole Trader for My Side Hustle?"
+title: "Should I Set Up a Limited Company or Stay a Sole Trader for My Side Hustle in 2026/27?"
 slug: "limited-company-vs-sole-trader-side-hustle"
 canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/limited-company-vs-sole-trader-side-hustle"
 date: "2026-05-17"
@@ -15,7 +15,7 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@rdne"
   sourceUrl: "https://www.pexels.com/photo/marker-note-on-craft-paper-near-laptop-7310136/"
   source: "Pexels"
-h1: "Limited Company vs Sole Trader For A Side Hustle: The Real Tax and Filing Differences"
+h1: "Limited Company vs Sole Trader For A Side Hustle: The Real Tax and Filing Differences in 2026/27"
 summary: "If you are running a side hustle alongside a main job, the choice between staying a sole trader and setting up a limited company affects how much tax you pay, what you file, and what you can claim. This guide walks through the real numbers, the filing triggers, and the practical traps that only apply when your business income sits on top of another income."
 schema: ""
 faqs:
@@ -26,15 +26,15 @@ faqs:
   - question: "What is the cheapest way to set up a limited company for a side hustle?"
     answer: "Register directly with Companies House online for £50. You need a registered UK office address, at least one director, and at least one shareholder. The process typically completes within 24 hours."
 keyTakeaways:
-  - "A higher-rate taxpayer extracting all side hustle profit as dividends faces a 45.1% effective tax rate in 2025/26, versus 27.2% as a sole trader on £14,000 profit."
+  - "Extracting all side hustle profit as dividends in the year you earn it gives a 43.5% effective tax rate in 2026/27, versus 37.4% as a sole trader, on £14,000 of profit on top of a £48,000 salary."
   - "Deferring dividend extraction to a later year when you are a basic-rate taxpayer saves £2,835 on £11,340 of retained company profit."
   - "A limited company requires five separate filing obligations compared with one self assessment return for a sole trader, and late annual accounts penalties start at £150."
   - "If total income stays below £50,270, or the side hustle profit is below £10,000, a sole trader structure is almost always the better choice."
   - "The VAT registration threshold of £90,000 of rolling 12-month turnover applies equally to sole traders and limited companies; the business structure does not change the trigger."
-  - "Corporation tax for a side hustle company with profits below £50,000 is 19% in 2025/26, and the dividend allowance is £500 before higher-rate dividend tax applies."
+  - "Corporation tax for a side hustle company with profits below £50,000 is 19% in 2026/27, and the dividend allowance is £500 before higher-rate dividend tax applies."
 ---
 
-<p>If you are running a side hustle alongside a full-time job, the decision between operating as a sole trader or setting up a limited company is not about prestige. It is about net income after tax, filing obligations, and how much of your weekend you want to spend on paperwork.</p>
+<p>If you are running a side hustle alongside a full-time job, the decision between operating as a sole trader or setting up a limited company is not about prestige. It is about net income after tax under the 2026/27 rules, filing obligations, and how much of your weekend you want to spend on paperwork.</p>
 
 <p>The <strong>limited company vs sole trader</strong> question changes when your business income sits on top of another income. The tax bands fill differently. The allowances behave differently. And the filing deadlines stack on top of each other in ways that catch people out.</p>
 
@@ -44,25 +44,25 @@ keyTakeaways:
 
 <p>When you are a sole trader, your side hustle profit is added to your main employment income. HMRC treats both as the same pot of money for income tax purposes.</p>
 
-<p>Let us use a real example. You earn £48,000 from your day job in 2025/26. Your side hustle makes £14,000 profit after expenses. Your total income is £62,000.</p>
+<p>Let us use a real example. You earn £48,000 from your day job in 2026/27. Your side hustle makes £14,000 profit after expenses. Your total income is £62,000.</p>
 
 <p>The personal allowance of £12,570 comes off first. That leaves £49,430 of taxable income. The basic rate band runs from £12,571 to £50,270. You pay 20% on the first £37,700 of that. Then the remaining £11,730 sits in the higher rate band at 40%.</p>
 
-<p>Your income tax bill on the side hustle profit alone is roughly £3,720. Plus Class 4 National Insurance at 6% on profits between £12,570 and £50,270 (2025/26 rate), and 2% above that. On £14,000 profit, the Class 4 charge is approximately £86 (6% of the £1,430 above the £12,570 lower profits limit).</p>
+<p>Your income tax bill on the side hustle profit alone is £5,146 (£2,270 fills the rest of your basic rate band at 20%, then £11,730 is taxed at 40%). Plus Class 4 National Insurance at 6% on profits between £12,570 and £50,270 (unchanged for 2026/27), and 2% above that. On £14,000 profit, the Class 4 charge is approximately £86 (6% of the £1,430 above the £12,570 lower profits limit).</p>
 
-<p>Total tax and NI on the side hustle: approximately £3,806. That is a 27.2% effective rate on that £14,000.</p>
+<p>Total tax and NI on the side hustle: approximately £5,232. That is a 37.4% effective rate on that £14,000.</p>
 
 <h2>How Side Hustle Income Is Taxed Through A Limited Company</h2>
 
-<p>If you incorporate, the company pays corporation tax on its profits. For a side hustle turning over less than £50,000 profit, that is 19% in 2025/26.</p>
+<p>If you incorporate, the company pays corporation tax on its profits. For a side hustle turning over less than £50,000 profit, that is 19% in 2026/27.</p>
 
 <p>Same £14,000 profit. Corporation tax at 19% is £2,660. The remaining £11,340 sits in the company as retained earnings.</p>
 
 <p>To get that money into your personal bank account, you need to extract it. The most common method for a side hustle director is dividends.</p>
 
-<p>You already have £48,000 of employment income. Your personal allowance and basic rate band are already used up by your salary. The dividend allowance is £500. After that, dividends are taxed at 33.75% (higher rate) because you are already a higher rate taxpayer from your day job.</p>
+<p>You already have £48,000 of employment income. That uses your personal allowance and most of your basic rate band, leaving £2,270 of basic rate headroom. The dividend allowance is £500. Beyond that, dividends in the basic rate band are taxed at 10.75%, and dividends above it at 35.75% (2026/27 rates, up from 8.75% and 33.75% in 2025/26).</p>
 
-<p>If you take the full £11,340 as dividends, the tax is roughly £3,660. Combined with the corporation tax of £2,660, the total tax on that £14,000 is £6,320. That is a 45.1% effective rate.</p>
+<p>If you take the full £11,340 as dividends, the first £500 is covered by the allowance, £1,770 falls in the basic rate band at 10.75% (£190), and the remaining £9,070 is taxed at 35.75% (£3,243). That is £3,433 of dividend tax. Combined with the corporation tax of £2,660, the total tax on that £14,000 is £6,093. That is a 43.5% effective rate.</p>
 
 <p>Worse than sole trading on these numbers.</p>
 
@@ -160,11 +160,11 @@ keyTakeaways:
 
 <p>Our <a href="/incorporation">incorporation guide</a> walks through the process step by step, including the tax implications of transferring a sole trade into a limited company.</p>
 
-<h2>Real Numbers: Three Side Hustle Scenarios (2025/26 Rates)</h2>
+<h2>Real Numbers: Three Side Hustle Scenarios (2026/27 Rates)</h2>
 
-<p><strong>Scenario 1: Low profit, stable day job.</strong> You earn £35,000 from employment. Your side hustle makes £8,000 profit. As a sole trader, the tax is roughly £1,200. As a limited company, the corporation tax is £1,520, and extracting the remaining £6,480 as dividends costs another £540 (basic rate). Total limited company cost: £2,060. Sole trader wins by £860.</p>
+<p><strong>Scenario 1: Low profit, stable day job.</strong> You earn £35,000 from employment. Your side hustle makes £8,000 profit. As a sole trader, the tax is £1,600 (all at 20%; profits are below the £12,570 Class 4 lower profits limit, so no NI). As a limited company, the corporation tax is £1,520, and extracting the remaining £6,480 as dividends costs another £643 (£500 allowance, then 10.75%). Total limited company cost: £2,163. Sole trader wins by £563.</p>
 
-<p><strong>Scenario 2: High profit, higher rate day job.</strong> You earn £55,000 from employment. Your side hustle makes £25,000 profit. As a sole trader, the effective rate is around 42% including NI. Total tax: £10,500. As a limited company, corporation tax is £4,750. If you leave the £20,250 in the company and extract none, your personal tax is zero. If you extract later at basic rate, the dividend tax is £1,770. Total: £6,520. Limited company wins by £3,980, but only if you defer extraction.</p>
+<p><strong>Scenario 2: High profit, higher rate day job.</strong> You earn £55,000 from employment. Your side hustle makes £25,000 profit. As a sole trader, the whole £25,000 is taxed at 40%, plus £746 of Class 4 NI. Total tax: £10,746, an effective rate of about 43%. As a limited company, corporation tax is £4,750. If you leave the £20,250 in the company and extract none, your personal tax is zero. If you extract later at basic rate, the dividend tax is £2,123. Total: £6,873. Limited company wins by £3,873, but only if you defer extraction.</p>
 
 <p><strong>Scenario 3: Growing side hustle, likely to replace day job.</strong> You earn £40,000 from employment. Your side hustle made £15,000 this year but is growing at 30% a year. Incorporating now means you pay 19% corporation tax on growth, not 40% income tax. By year three, when the side hustle replaces your job, you have retained profits in the company that you can extract at basic rate. The cumulative saving over three years is roughly £8,000 to £12,000 depending on exact figures.</p>
 

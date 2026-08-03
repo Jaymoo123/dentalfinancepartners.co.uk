@@ -7,11 +7,11 @@ generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Practice accounting"
 metaTitle: "Overdrawn Director's Loan Account in a Dental Company"
-metaDescription: "An overdrawn director's loan in a dental company triggers a 33.75% s455 charge, a benefit-in-kind over £10,000 and bed-and-breakfast traps. How to avoid them."
+metaDescription: "An overdrawn director's loan in a dental company triggers a 35.75% s455 charge, a benefit-in-kind over £10,000 and bed-and-breakfast traps. How to fix it."
 altText: "Dental practice owner reviewing company accounts at a desk"
 image: ""
 h1: "Overdrawn Director's Loan Accounts for Dental Practice Owners: s455, BIK and the 9-Month Rule"
-summary: "Drawings that run ahead of declared profit push a dental company's director's loan account overdrawn, triggering a 33.75% section 455 charge, a possible benefit-in-kind over £10,000, and bed-and-breakfast anti-avoidance traps. We work through each, with the dates that matter and how dentists clear or avoid the problem."
+summary: "Drawings that run ahead of declared profit push a dental company's director's loan account overdrawn, triggering a 35.75% section 455 charge on loans made from 6 April 2026 (33.75% for 2025/26 loans), a possible benefit-in-kind over £10,000, and bed-and-breakfast anti-avoidance traps. We work through each, with the dates that matter and how dentists clear or avoid the problem."
 schema: ""
 faqs:
   - question: "What is a director's loan account in a dental company?"
@@ -120,7 +120,7 @@ faqs:
 
 <h2>Worked example A: s455 on an overdrawn balance</h2>
 
-<p>A dental company owner's drawings run <strong>£40,000</strong> ahead of declared salary and dividends. The DLA is overdrawn by £40,000 at the <strong>31 March 2026</strong> year-end and is not cleared by the deadline. The s455 charge is <strong>33.75% of £40,000 = £13,500</strong> (2025/26 loan rate), payable as if it were corporation tax on <strong>1 January 2027</strong>, which is 9 months and 1 day after 31 March 2026. For comparison, a loan made in an accounting period beginning on or after 6 April 2026 would carry s455 at <strong>35.75%</strong>, which on the same £40,000 would be £14,300. The date the loan is made decides the rate.</p>
+<p>A dental company owner's drawings run <strong>£40,000</strong> ahead of declared salary and dividends. The DLA is overdrawn by £40,000 at the <strong>31 March 2026</strong> year-end and is not cleared by the deadline. The s455 charge is <strong>33.75% of £40,000 = £13,500</strong> (2025/26 loan rate), payable as if it were corporation tax on <strong>1 January 2027</strong>, which is 9 months and 1 day after 31 March 2026. For comparison, a loan made on or after 6 April 2026 would carry s455 at <strong>35.75%</strong>, which on the same £40,000 would be £14,300. The date the loan is made decides the rate.</p>
 
 <h2>Worked example B: s458 reclaim timing and cash-flow drag</h2>
 
@@ -174,4 +174,4 @@ faqs:
 
 <h2>The bottom line</h2>
 
-<p>An overdrawn director's loan account is one of the most common, and most avoidable, tax problems for incorporated dental practices. The s455 charge of 33.75% (35.75% on loans made from 6 April 2026) bites on the balance outstanding 9 months and 1 day after the year-end, and although it is reclaimable under s458, the relief is deferred for up to a couple of years. On top of it, a balance over £10,000 with no interest is a benefit-in-kind that is never recoverable. Bed-and-breakfasting will not save you. What saves you is monthly visibility of the account, a sensible drawings policy, and clearing any overdrawn balance properly and in time, with a lawfully declared dividend or genuine repayment, before the deadline.</p>
+<p>An overdrawn director's loan account is one of the most common, and most avoidable, tax problems for incorporated dental practices. The s455 charge of 35.75% on loans made from 6 April 2026 (33.75% for loans made in 2025/26) bites on the balance outstanding 9 months and 1 day after the year-end, and although it is reclaimable under s458, the relief is deferred for up to a couple of years. On top of it, a balance over £10,000 with no interest is a benefit-in-kind that is never recoverable. Bed-and-breakfasting will not save you. What saves you is monthly visibility of the account, a sensible drawings policy, and clearing any overdrawn balance properly and in time, with a lawfully declared dividend or genuine repayment, before the deadline.</p>

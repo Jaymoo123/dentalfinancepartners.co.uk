@@ -1,13 +1,13 @@
 ---
-title: "Sole Trader vs Limited Company Tax Calculator: Which Structure Saves You More in 2025/26?"
+title: "Sole Trader vs Limited Company Tax Calculator: Which Structure Saves You More in 2026/27?"
 slug: "sole-trader-vs-limited-company-tax-calculator"
 canonical: "https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/sole-trader-vs-limited-company-tax-calculator"
 date: "2026-05-17"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Incorporation and Structure"
-metaTitle: "Sole Trader vs Limited Company Tax Calculator 2025/26"
-metaDescription: "Compare take-home pay as a sole trader vs limited company director. Use our real-number worked example for 2025/26 rates. Specialist accountants explain"
+metaTitle: "Sole Trader vs Limited Company Tax Calculator 2026/27"
+metaDescription: "Compare take-home pay as a sole trader vs limited company director. Use our real-number worked example for 2026/27 rates. Specialist accountants explain"
 altText: "Accountant comparing sole trader and limited company tax calculations on a laptop in a modern UK office"
 image: "/blog/sole-trader-vs-limited-company-tax-calculator.jpg"
 imageCredit:
@@ -15,12 +15,12 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@tima-miroshnichenko"
   sourceUrl: "https://www.pexels.com/photo/a-man-in-black-suit-sitting-near-the-wooden-table-while-typing-on-laptop-7567312/"
   source: "Pexels"
-h1: "Sole Trader vs Limited Company Tax Calculator: Which Structure Saves You More in 2025/26?"
-summary: "A head-to-head comparison of sole trader and limited company tax treatment for 2025/26. We walk through a real worked example using current rates, thresholds, and allowances so you can see which structure keeps more of your money."
+h1: "Sole Trader vs Limited Company Tax Calculator: Which Structure Saves You More in 2026/27?"
+summary: "A head-to-head comparison of sole trader and limited company tax treatment for 2026/27. We walk through a real worked example using current rates, thresholds, and allowances so you can see which structure keeps more of your money."
 schema: ""
 faqs:
-  - question: "Is a sole trader or limited company better for tax in 2025/26?"
-    answer: "At profits below roughly £80,000, a sole trader often pays less total tax because the compliance cost of a limited company eats into the corporation tax saving. Above £80,000, the limited company structure typically becomes more efficient, especially if you can retain profits in the business rather than extracting them all each year. Run a calculator with your specific profit figure to see where you sit."
+  - question: "Is a sole trader or limited company better for tax in 2026/27?"
+    answer: "Under 2026/27 rates, a sole trader usually pays less total tax than a director who extracts all profit each year, because the April 2026 dividend rate rise (to 10.75% basic and 35.75% higher) increased the cost of extraction. The limited company becomes more efficient when you can retain profits in the business, split dividends with a spouse, or time extraction into a lower-income year. Run a calculator with your specific profit figure to see where you sit."
   - question: "How much does it cost to run a limited company compared to being a sole trader?"
     answer: "A limited company typically costs between £800 and £1,500 per year in extra accountancy fees, plus Companies House filing fees and potentially payroll software. A sole trader pays nothing beyond their self assessment return preparation, which is usually included in a standard accountancy package. The extra cost must be deducted from any tax saving before you compare take-home pay."
   - question: "Do I need a sole trader vs limited company tax calculator if my profits are under £30,000?"
@@ -28,17 +28,17 @@ faqs:
   - question: "Can I switch from sole trader to limited company mid-year?"
     answer: "Yes, you can switch at any point, but it is cleaner to align the change with the end of a tax month or quarter. You must notify HMRC that you have ceased self employment and register the new company for corporation tax. You will need to file a final self assessment return for the sole trader period and a corporation tax return for the company. The timing affects your tax liability, so take advice before making the switch."
 keyTakeaways:
-  - "At £63,400 profit in 2025/26, a sole trader takes home £48,083 and a limited company director takes home £48,062, a difference of around £21."
-  - "Above roughly £80,000 profit, the limited company typically outperforms, as sole traders face a 42% combined marginal rate above £50,270 versus corporation tax at 19%."
+  - "At £63,400 profit in 2026/27, a sole trader takes home £48,083 and a limited company director takes home £47,286, a gap of around £797 after the April 2026 dividend rate rise."
+  - "On full extraction sole traders now stay ahead at most profit levels; the limited company wins where profit is retained at 19% to 25% corporation tax rather than extracted each year."
   - "A limited company adds £800 to £1,500 per year in accountancy and compliance costs, which must be subtracted from any tax saving before comparing take-home pay."
-  - "Dividend tax rates for 2025/26 are 8.75% at basic rate, 33.75% at higher rate, and 39.35% at additional rate, with a £500 annual dividend allowance."
+  - "Dividend tax rates for 2026/27 are 10.75% at basic rate, 35.75% at higher rate, and 39.35% at additional rate (up from 8.75% and 33.75% in 2025/26), with a £500 annual dividend allowance."
   - "Class 2 National Insurance was abolished from 6 April 2024; sole traders now pay Class 4 NI at 6% between £12,570 and £50,270 and 2% above."
   - "Employment Allowance is unavailable when the sole employee is also the only director, so a single-director company pays 15% employer NIC above the £5,000 threshold from 6 April 2025."
 ---
 
 <p>If you are comparing sole trader vs limited company tax calculator results online, you are probably trying to decide which trading structure leaves you with more money in your pocket. The answer depends on your profit level, how you take money out of the business, and whether you need to reinvest profits year on year.</p>
 
-<p>This article walks through a real worked example using 2025/26 tax rates. We compare a sole trader paying income tax and Class 4 National Insurance against a limited company director paying corporation tax, salary, and dividends. The numbers are specific. You can adapt them to your own situation.</p>
+<p>This article walks through a real worked example using 2026/27 tax rates. We compare a sole trader paying income tax and Class 4 National Insurance against a limited company director paying corporation tax, salary, and dividends. The numbers are specific. You can adapt them to your own situation.</p>
 
 <h2>Why the Comparison Matters</h2>
 
@@ -48,9 +48,9 @@ keyTakeaways:
 
 <p>We see clients in both structures every week. The right choice is not always the limited company. For some profit levels, the sole trader route is simpler and leaves you with more money after all costs.</p>
 
-<h2>The 2025/26 Tax Rates at a Glance</h2>
+<h2>The 2026/27 Tax Rates at a Glance</h2>
 
-<p>Before running the numbers, here are the rates that apply for the 2025/26 tax year:</p>
+<p>Before running the numbers, here are the rates that apply for the 2026/27 tax year. Income tax and National Insurance are unchanged from 2025/26; the dividend rates rose on 6 April 2026:</p>
 
 <h3>Sole Trader Rates</h3>
 <ul>
@@ -66,7 +66,7 @@ keyTakeaways:
 <ul>
 <li>Corporation tax: 19% on profits up to £50,000, 25% above £250,000, with marginal relief between £50,000 and £250,000</li>
 <li>Salary: subject to PAYE income tax and employee NI (15% employer NI above the £5,000 secondary threshold from 6 April 2025; Employment Allowance is not available to a company where the sole employee is also the only director)</li>
-<li>Dividend tax: 8.75% basic rate, 33.75% higher rate, 39.35% additional rate</li>
+<li>Dividend tax: 10.75% basic rate, 35.75% higher rate, 39.35% additional rate (the ordinary and upper rates rose from 8.75% and 33.75% on 6 April 2026)</li>
 <li>Dividend allowance: £500 tax-free per year</li>
 </ul>
 
@@ -110,24 +110,24 @@ keyTakeaways:
 <li>Dividends: £39,280.50</li>
 <li>Total income: £51,850.50 (exceeds the £50,270 basic rate limit by £1,580.50)</li>
 <li>Dividend allowance: first £500 at nil rate within the basic rate band</li>
-<li>Dividend tax at 8.75% (basic rate, on £37,200 after allowance): £3,255</li>
-<li>Dividend tax at 33.75% (higher rate, on £1,580.50): £533.42</li>
-<li>Total dividend tax: £3,788.42</li>
-<li>Take-home pay: £12,570 (salary) + £39,280.50 (dividends) minus £3,788.42 (dividend tax) = £48,062.08</li>
+<li>Dividend tax at 10.75% (basic rate, on £37,200 after allowance): £3,999</li>
+<li>Dividend tax at 35.75% (higher rate, on £1,580.50): £565.03</li>
+<li>Total dividend tax: £4,564.03</li>
+<li>Take-home pay: £12,570 (salary) + £39,280.50 (dividends) minus £4,564.03 (dividend tax) = £47,286.47</li>
 </ul>
 
-<p>The limited company director keeps approximately £48,062 after all taxes, National Insurance, and compliance costs.</p>
+<p>The limited company director keeps approximately £47,286 after all taxes, National Insurance, and compliance costs.</p>
 
 <h3>The Comparison</h3>
-<p>Sole trader: £48,083 take-home. Limited company: £48,062 take-home. The two structures produce almost identical results at this profit level (within £22 of each other), so compliance burden, liability protection, and personal circumstances carry as much weight as the raw tax figures.</p>
+<p>Sole trader: £48,083 take-home. Limited company: £47,286 take-home. The sole trader comes out roughly £797 ahead at this profit level in 2026/27. In 2025/26, when dividends were taxed at 8.75% and 33.75%, the same example was a near dead heat (£48,083 against £48,062). The April 2026 rise in dividend rates to 10.75% and 35.75% tipped the raw-tax comparison towards the sole trader.</p>
 
-<p>The gap widens in favour of the limited company as profits rise. At higher profit levels, the limited company structure becomes more efficient because corporation tax at 19% is lower than the combined income tax and NI on sole trader profits above £50,270.</p>
+<p>That does not settle the question by itself. Liability protection, client requirements and the ability to retain profit in the company still carry real weight, and the company regains ground quickly if you do not need to extract every pound each year.</p>
 
 <h2>When the Limited Company Pulls Ahead</h2>
 
-<p>At profits above roughly £80,000, the limited company structure typically starts to outperform. The reason is marginal rates. A sole trader pays 40% income tax plus 2% Class 4 NI on profits between £50,271 and £125,140, a combined marginal rate of 42%. A limited company pays 19% corporation tax, then dividend tax at 33.75% on the extraction. The combined effective rate is around 46% on extracted profits, but the company can retain profits within the business and defer extraction to a future year.</p>
+<p>On full extraction, the 2026/27 rates leave the sole trader ahead at most profit levels. A sole trader pays 40% income tax plus 2% Class 4 NI on profits between £50,271 and £125,140, a combined marginal rate of 42%. A limited company pays 19% corporation tax, then dividend tax at 35.75% on the extraction, a combined effective rate of around 48% on extracted profits (higher still in the marginal relief band). Extracting everything through a company now costs more at the margin than staying a sole trader.</p>
 
-<p>If you do not need all the profit for personal spending, the limited company lets you leave money in the business, taxed at 19% only, and extract it later when your personal tax rate may be lower. That flexibility is valuable for business owners who reinvest or save for retirement.</p>
+<p>The company pulls ahead when you do not need all the profit for personal spending. Profit left in the business is taxed at 19% to 25% only, and you can extract it later when your personal tax rate may be lower. That flexibility is valuable for business owners who reinvest or save for retirement, and it is the main tax case for incorporation under current rates.</p>
 
 <p>For a more detailed comparison at your specific profit level, use our <a href="/calculators">online calculators</a> or speak to an accountant who can model your personal circumstances.</p>
 
@@ -150,19 +150,19 @@ keyTakeaways:
 
 <p>Look for a calculator that uses current tax years and updates automatically when rates change. Many free online calculators use outdated rates or ignore National Insurance entirely. A calculator that omits Class 4 NI on sole trader profits is not giving you a fair comparison.</p>
 
-<p>Our <a href="/calculators">calculator page</a> uses 2025/26 rates and includes all relevant taxes. It also factors in the cost of compliance so you see the net position, not just the headline tax saving.</p>
+<p>Our <a href="/calculators">calculator page</a> uses the current tax year's rates and includes all relevant taxes. It also factors in the cost of compliance so you see the net position, not just the headline tax saving.</p>
 
 <h2>Making the Switch from Sole Trader to Limited Company</h2>
 
 <p>If the numbers favour incorporation, the process is straightforward. You register a limited company with Companies House, open a business bank account, and notify HMRC of the change. You also need to close your sole trader registration with HMRC and file a final self assessment return for the period up to incorporation.</p>
 
-<p>There may be capital gains implications if you transfer assets from the sole trade to the company. Incorporation relief under TCGA 1992 s.162 can defer the gain if the transfer is for shares in the new company. This is a specialist area. If you hold significant goodwill, equipment, or property in the sole trade, speak to an accountant before transferring.</p>
+<p>There may be capital gains implications if you transfer assets from the sole trade to the company. Incorporation relief under TCGA 1992 s.162 can defer the gain if the transfer is for shares in the new company. For transfers from 6 April 2026 the relief must be claimed; it is no longer applied automatically. This is a specialist area. If you hold significant goodwill, equipment, or property in the sole trade, speak to an accountant before transferring.</p>
 
 <p>Our <a href="/incorporation">incorporation page</a> covers the process in more detail, including the forms you need and the deadlines to watch.</p>
 
 <h2>The Bottom Line</h2>
 
-<p>At £63,400 profit, the sole trader and limited company produce almost identical take-home pay in 2025/26, separated by around £21. At higher profits, the limited company becomes more efficient. At lower profits, the sole trader is almost always the better choice once you account for compliance costs.</p>
+<p>At £63,400 profit in 2026/27, the sole trader keeps around £797 more than the limited company director once the higher dividend rates are applied. In 2025/26 the two structures were within £21 of each other; the April 2026 rate rise moved the line. At lower profits, the sole trader is almost always the better choice once you account for compliance costs. The tax case for the company now rests on retained profit, income splitting and timing rather than the headline extraction numbers.</p>
 
 <p>But tax is only one factor. Liability protection, client requirements, and IR35 status can override the tax calculation entirely. Run the numbers for your specific profit level, factor in your personal spending needs, and decide based on the full picture.</p>
 

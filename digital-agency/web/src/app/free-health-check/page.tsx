@@ -10,7 +10,7 @@ import { JsonLd, buildService, buildFaqPage } from "@/lib/schema";
 export const metadata: Metadata = {
   title: `Free Agency Finance Health Check | ${siteConfig.name}`,
   description:
-    "Free, instant agency finance health check for UK founders. Answer 12 questions, get a personalised PDF report flagging tax, structure, VAT, R&D and exit opportunities. Agency specialist framework.",
+    "Free, instant agency finance health check for UK founders. Answer 12 questions, get a personalised PDF flagging tax, VAT, R&D and exit opportunities.",
   alternates: { canonical: `${siteConfig.url}/free-health-check` },
   openGraph: {
     title: "Free Agency Finance Health Check, instant personalised PDF",

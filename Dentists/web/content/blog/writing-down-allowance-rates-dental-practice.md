@@ -64,7 +64,7 @@ imageCredit:
 
 <ul>
 <li><strong>Main pool (general plant and machinery):</strong> 14% from April 2026 (was 18% before) <sup><a href="#ref-1" id="cite-1">[1]</a></sup></li>
-<li><strong>Special rate pool (integral features, long-life assets):</strong> 6% from April 2026, reducing to 4% from 1 April 2026 for corporation tax <sup><a href="#ref-2" id="cite-2">[2]</a></sup></li>
+<li><strong>Special rate pool (integral features, long-life assets):</strong> 6%, unchanged by Finance Act 2026 <sup><a href="#ref-2" id="cite-2">[2]</a></sup></li>
 <li><strong>Structures and Buildings Allowance (SBA):</strong> 3% per year on qualifying construction or renovation costs of non-residential buildings <sup><a href="#ref-1" id="cite-1">[1]</a></sup></li>
 <li><strong>Annual Investment Allowance:</strong> £1 million for 2026/27 <sup><a href="#ref-2" id="cite-2">[2]</a></sup></li>
 <li><strong>First-year allowance for zero-emission cars and goods vehicles:</strong> 100% for 2026/27 <sup><a href="#ref-2" id="cite-2">[2]</a></sup></li>
@@ -176,7 +176,7 @@ imageCredit:
 <p>The sale proceeds (up to the original cost) are deducted from the main pool. If the pool balance becomes negative, a balancing charge arises and is added to your taxable profits. If the pool balance remains positive, you continue claiming writing down allowances on the reduced balance.</p>
 
 <p><strong>Do writing down allowance rates apply to cars used in my dental practice?</strong></p>
-<p>Yes, but cars have their own rules. Cars with CO2 emissions above 50g/km go into the main pool (14% rate) or special rate pool (6% rate) depending on emissions. Zero-emission cars qualify for a 100% first-year allowance. Cars are not eligible for the AIA.</p>
+<p>Yes, but cars have their own rules. Cars with CO2 emissions of 50g/km or less go into the main pool (14% rate); cars above 50g/km go into the special rate pool (6% rate). New and unused zero-emission cars qualify for a 100% first-year allowance. Cars are not eligible for the AIA.</p>
 
 <p><strong>Can I claim writing down allowances on practice software?</strong></p>
 <p>Software that you buy outright (not subscription-based) and capitalise as a fixed asset qualifies for writing down allowances. It goes into the main pool at 14%. Subscription-based software is typically expensed as a revenue cost and does not enter the capital allowances pool.</p>

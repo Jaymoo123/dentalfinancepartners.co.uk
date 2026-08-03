@@ -62,20 +62,20 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>The figures that feed the comparison</h3>
 
-<p>For 2025/26 the building blocks are: personal allowance £12,570 (tapered away above £100,000), basic rate 20% to £50,270, higher rate 40% to £125,140. <strong>Class 4 NIC is 6%</strong> between £12,570 and £50,270, then 2% above. There is <strong>no Class 2 charge</strong>: the weekly Class 2 liability was removed from 6 April 2024, and the self-employed above the small-profits threshold are simply treated as having paid.</p>
+<p>For 2026/27 the building blocks are unchanged from 2025/26: personal allowance £12,570 (tapered away above £100,000), basic rate 20% to £50,270, higher rate 40% to £125,140. <strong>Class 4 NIC is 6%</strong> between £12,570 and £50,270, then 2% above. There is <strong>no Class 2 charge</strong>: the weekly Class 2 liability was removed from 6 April 2024, and the self-employed above the small-profits threshold are simply treated as having paid.</p>
 
 <p>On the company side, corporation tax is <strong>19%</strong> on profits up to £50,000, <strong>25%</strong> above £250,000, with <strong>marginal relief</strong> tapering between those limits (so the slice from £50,000 to £250,000 carries an effective rate of around 26.5%). On extraction, the dividend allowance is £500, and you should always tag the dividend rate to its year: ordinary 8.75% / upper 33.75% for 2025/26, and ordinary <strong>10.75%</strong> / upper <strong>35.75%</strong> from 6 April 2026.</p>
 
 <h3>Worked example: Dr Patel, £100,000 profit</h3>
 
-<p>Take Dr Patel, a dentist whose practice or associate work produces roughly £100,000 of profit after expenses. As a sole trader she pays income tax and Class 4 NIC on the lot. As a company she could pay corporation tax, then extract through a small salary plus dividends. We set the salary at the £5,000 secondary threshold, because a company whose only employee is a single director cannot claim the £10,500 Employment Allowance, so paying above £5,000 simply triggers employer NIC at 15% with no offset. The figures below are 2025/26, with the 2026/27 dividend effect noted underneath.</p>
+<p>Take Dr Patel, a dentist whose practice or associate work produces roughly £100,000 of profit after expenses. As a sole trader she pays income tax and Class 4 NIC on the lot. As a company she could pay corporation tax, then extract through a small salary plus dividends. We set the salary at the £5,000 secondary threshold, because a company whose only employee is a single director cannot claim the £10,500 Employment Allowance, so paying above £5,000 simply triggers employer NIC at 15% with no offset. The figures below are 2026/27, with the 2025/26 position noted underneath as a comparison.</p>
 
 <table>
 <thead>
 <tr>
 <th>Item</th>
-<th>Sole trader (2025/26)</th>
-<th>Limited company (2025/26)</th>
+<th>Sole trader (2026/27)</th>
+<th>Limited company (2026/27)</th>
 </tr>
 </thead>
 <tbody>
@@ -97,7 +97,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <tr>
 <td>Corporation tax</td>
 <td>n/a</td>
-<td>approx £21,800 (on £95,000, marginal relief)</td>
+<td>approx £21,425 (on £95,000, marginal relief)</td>
 </tr>
 <tr>
 <td>Income tax (personal)</td>
@@ -110,21 +110,21 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <td>n/a</td>
 </tr>
 <tr>
-<td>Dividend tax (8.75% / 33.75%)</td>
+<td>Dividend tax (10.75% / 35.75%)</td>
 <td>n/a</td>
-<td>approx £12,700</td>
+<td>approx £14,100</td>
 </tr>
 <tr>
 <td>Total tax and NIC</td>
 <td>approx £30,689</td>
-<td>approx £34,500</td>
+<td>approx £35,500</td>
 </tr>
 </tbody>
 </table>
 
-<p>A few notes on the working, because the precise figures move with the exact salary and dividend split chosen. The corporation tax on the full £100,000 (before any salary) would be £25,000 at the 25% main rate, less marginal relief of £2,250 (calculated as the £150,000 gap up to £250,000 multiplied by the 3/200 standard fraction), giving <strong>£22,750</strong>. Taking a £5,000 deductible salary reduces taxable profit to £95,000 and the corporation tax to roughly £21,800. That is the correct way to handle it: corporation tax is not a flat 25% on a £100,000-profit dental company, and there is no separate Class 2 charge on the sole trader side.</p>
+<p>A few notes on the working, because the precise figures move with the exact salary and dividend split chosen. The corporation tax on the full £100,000 (before any salary) would be £25,000 at the 25% main rate, less marginal relief of £2,250 (calculated as the £150,000 gap up to £250,000 multiplied by the 3/200 standard fraction), giving <strong>£22,750</strong>. Taking a £5,000 deductible salary reduces taxable profit to £95,000 and the corporation tax to £21,425 (marginal relief rises to £2,325 on the £155,000 gap up to £250,000). That is the correct way to handle it: corporation tax is not a flat 25% on a £100,000-profit dental company, and there is no separate Class 2 charge on the sole trader side.</p>
 
-<p>The headline is that, on a full-extraction basis at 2025/26 rates, the company route is no better than staying a sole trader and on these figures is slightly worse, once you account for the second layer of tax a company suffers (corporation tax and then dividend tax on the same profit). The exact gap moves with the salary and dividend split, but the days of a clear five-figure saving are gone. From <strong>6 April 2026</strong> the dividend rates rise to 10.75% ordinary and 35.75% upper, which adds roughly two percentage points to the tax on the dividend slice and pushes the full-extraction company route further into <strong>neutral-to-negative</strong> territory. In other words, for a dentist who draws everything out each year, incorporation is no longer the tax win it once was.</p>
+<p>The headline is that, on a full-extraction basis at 2026/27 rates, the company route is clearly worse than staying a sole trader on these figures: roughly £35,500 of combined tax against £30,689, once you account for the second layer of tax a company suffers (corporation tax and then dividend tax on the same profit). The exact gap moves with the salary and dividend split, but the days of a clear five-figure saving are gone. For comparison, at 2025/26 dividend rates (ordinary 8.75%, upper 33.75%) the same split produced roughly £34,200, so the <strong>6 April 2026</strong> rise to 10.75% and 35.75% added around £1,300 to the dividend slice and pushed the full-extraction company route firmly into <strong>negative</strong> territory. In other words, for a dentist who draws everything out each year, incorporation is no longer the tax win it once was.</p>
 
 <p>For the detailed post-2026 breakeven, including where retained profits change the answer, see <a href="/blog/practice-finance/dental-incorporation-still-worth-it-2026-dividend-rise">is dental incorporation still worth it after the 2026 dividend rise</a>. For the most efficient salary and dividend mix once you have decided to incorporate, see <a href="/blog/practice-finance/dental-company-salary-dividend-split-2026-27">the optimal salary and dividend split for 2026/27</a>, and for the mechanics of getting money out of the company, <a href="/blog/practice-finance/how-to-pay-yourself-dental-practice-owner-uk">how to pay yourself as a dental practice owner</a> and our guide to <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">dental practice profit extraction</a>.</p>
 

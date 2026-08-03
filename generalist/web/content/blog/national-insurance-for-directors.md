@@ -1,12 +1,12 @@
 ---
-title: "National Insurance for Directors: How It Works in 2025/26"
+title: "National Insurance for Directors: How It Works in 2026/27"
 slug: "national-insurance-for-directors"
 canonical: "https://www.hollowaydavies.co.uk/blog/payroll-and-paye/national-insurance-for-directors"
 date: "2026-05-17"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Payroll and PAYE"
-metaTitle: "National Insurance for Directors 2025/26: Rules, Rates"
+metaTitle: "National Insurance for Directors 2026/27: Rules, Rates"
 metaDescription: "Directors pay NI differently to employees. We explain the annual earnings basis, thresholds, and how to structure your pay to minimise tax."
 altText: "Two company directors reviewing payroll documents at a desk in a modern UK office with laptops and calculators"
 image: "/blog/national-insurance-for-directors.jpg"
@@ -15,13 +15,13 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@mikhail-nilov"
   sourceUrl: "https://www.pexels.com/photo/person-writing-on-white-paper-beside-clear-glass-mug-and-silver-macbook-7735632/"
   source: "Pexels"
-h1: "National Insurance for Directors: How It Works in 2025/26"
+h1: "National Insurance for Directors: How It Works in 2026/27"
 summary: "Directors pay National Insurance differently to regular employees, using an annual earnings basis rather than the usual weekly or monthly calculation. This means your first payrun of the tax year sets your NI position for the whole year, which creates planning opportunities. We explain the rules, thresholds, and how to structure your director salary efficiently."
 schema: ""
 faqs:
   - question: "Do directors pay Class 2 National Insurance?"
     answer: "No. Directors of limited companies pay Class 1 National Insurance on their salary, not Class 2 or Class 4. Class 2 and Class 4 are only for self employed people (sole traders and partners in a partnership). Class 2 NIC was abolished from 6 April 2024, so self-employed people now pay only Class 4. If you are a director and also self employed on the side, you pay Class 1 on your director salary and Class 4 on your self employed profits separately."
-  - question: "What is the most tax efficient salary for a director in 2025/26?"
+  - question: "What is the most tax efficient salary for a director in 2026/27?"
     answer: "It depends on whether you can claim the Employment Allowance. If you have at least one other employee earning above the secondary threshold, the most efficient salary is £12,570 (the personal allowance and primary threshold). The Employment Allowance covers the employer NI cost. If you are a single director with no other employees, the salary that avoids employer NI entirely is £5,000 (the secondary threshold from 6 April 2025). Above that, employer NI at 15% applies on the excess. Take the rest as dividends."
   - question: "How does the annual earnings basis affect director NI?"
     answer: "Under the annual earnings basis, HMRC treats your entire director salary for the tax year as one lump sum. The NI thresholds are applied annually rather than per pay period. This means your first payroll run of the tax year sets your NI position for the whole year. If you take a large bonus in month one, you pay the full year's NI on that single payment. The total NI due is the same regardless of timing, but it is collected up front."
@@ -29,9 +29,9 @@ faqs:
     answer: "Not entirely, but you can minimise it. Keep your salary at or below the secondary threshold (£5,000 from 6 April 2025) and no employer NI is due. If you pay above that, employer NI at 15% applies on the excess. The Employment Allowance (up to £10,500) can offset your employer NI bill if you have at least one other employee. Dividends attract no employer NI, which is why the salary plus dividends structure is standard for directors."
 keyTakeaways:
   - "Directors pay Class 1 National Insurance on an annual earnings basis, meaning HMRC applies full annual thresholds to total salary for the year rather than resetting each pay period."
-  - "For 2025/26, employee NI on a director's salary is 8% on earnings between £12,571 and £50,270, dropping to 2% on earnings above £50,270."
+  - "For 2026/27, employee NI on a director's salary is 8% on earnings between £12,571 and £50,270, dropping to 2% on earnings above £50,270."
   - "Employer NI is charged at 15% on director salary above the secondary threshold of £5,000, effective from 6 April 2025."
-  - "The Employment Allowance (up to £10,500 in 2025/26) can offset a director's employer NI bill, but sole directors with no other employees cannot claim it."
+  - "The Employment Allowance (up to £10,500 in 2026/27) can offset a director's employer NI bill, but sole directors with no other employees cannot claim it."
   - "Dividends attract no National Insurance, making a low director salary topped up with dividends the standard tax-efficient structure for limited company directors."
   - "Class 2 NIC was abolished from 6 April 2024; directors of limited companies pay Class 1 on salary, not Class 2 or Class 4, which apply only to the self-employed."
 ---
@@ -50,7 +50,7 @@ keyTakeaways:
 
 <p>Under the annual earnings basis, HMRC treats your entire director's salary for the tax year as one lump sum. The NI thresholds are scaled up to annual figures rather than applied per pay period.</p>
 
-<p>For 2025/26, the key thresholds for employee NI (Class 1 primary) are:</p>
+<p>For 2026/27, the key thresholds for employee NI (Class 1 primary) are:</p>
 
 <ul>
 <li><strong>Primary threshold (annual):</strong> £12,570 (matches the personal allowance)</li>
@@ -71,7 +71,7 @@ keyTakeaways:
 
 <p>If the same director took £50,000 spread evenly across 12 months, the total NI would be identical because the annual basis still applies. The timing of payments does not change the total NI due for a director. It only changes when it is collected.</p>
 
-<h2>Director NI Rates for 2025/26</h2>
+<h2>Director NI Rates for 2026/27</h2>
 
 <p>The rates themselves are the same as for employees. What changes is the calculation method.</p>
 
@@ -86,6 +86,8 @@ keyTakeaways:
 <li>15% on earnings above £5,000 (from 6 April 2025)</li>
 </ul>
 
+<p>None of these NI rates or thresholds changed for 2026/27; they carry over from 2025/26 unchanged. What did change from 6 April 2026 sits around the edges: the basic and higher dividend tax rates rose two points to 10.75% and 35.75%, the S455 charge on new director loans rose to 35.75%, and the electric car benefit in kind rate rose from 3% to 4%. Those changes feed into the planning figures below.</p>
+
 <p>Directors also pay Class 1 NI on most benefits in kind, though the rules on beneficial loans and company cars can get specific. If you have a director's loan account balance over £10,000, the beneficial loan interest is treated as earnings and subject to NI.</p>
 
 <h2>How to Structure Your Director Salary Efficiently</h2>
@@ -94,15 +96,15 @@ keyTakeaways:
 
 <p>Here is why. Dividends are not subject to NI. Salary is. So you want to keep salary low enough to avoid unnecessary NI, but high enough to preserve your state pension entitlement and use your personal allowance.</p>
 
-<p>The typical target salary for 2025/26 is £12,570. That matches the personal allowance and the primary threshold, so you pay no income tax and no employee NI on it. Employer NI is due on earnings above £5,000 (the secondary threshold from 6 April 2025), but many directors claim the Employment Allowance to offset that.</p>
+<p>The typical target salary for 2026/27 is £12,570. That matches the personal allowance and the primary threshold, so you pay no income tax and no employee NI on it. Employer NI is due on earnings above £5,000 (the secondary threshold from 6 April 2025), but many directors claim the Employment Allowance to offset that.</p>
 
-<p>The Employment Allowance is worth up to £10,500 in 2025/26. It covers your employer NI bill for the whole year. If you are the only director and your salary is £12,570, your employer NI is £1,135.50 (15% on £7,570 above the £5,000 threshold). The Employment Allowance wipes that out.</p>
+<p>The Employment Allowance is worth up to £10,500 in 2026/27. It covers your employer NI bill for the whole year. If you are the only director and your salary is £12,570, your employer NI is £1,135.50 (15% on £7,570 above the £5,000 threshold). The Employment Allowance wipes that out.</p>
 
 <p>If you have multiple directors or employees, the allowance still applies as long as your total employer NI bill stays below £10,500. Above that, you pay the excess.</p>
 
 <p><strong>Catch:</strong> The Employment Allowance is not available if you are a sole director of a company where you are also the only employee. That restriction has applied since April 2016. If you have at least one other employee (even a spouse earning above the secondary threshold), you qualify. If you are genuinely a single-person company with no other staff, you cannot claim the allowance.</p>
 
-<p>For that single director scenario, the secondary threshold from 6 April 2025 is £5,000. Any salary above that attracts employer NI at 15% on the excess. A salary of £9,100, for example, generates £615 in employer NI (15% on £4,100). You lose some personal allowance usage by taking a lower salary, but you reduce the 15% employer NI cost. You can take the remainder as dividends instead, paying dividend tax at 8.75% if you are a basic rate taxpayer.</p>
+<p>For that single director scenario, the secondary threshold from 6 April 2025 is £5,000. Any salary above that attracts employer NI at 15% on the excess. A salary of £9,100, for example, generates £615 in employer NI (15% on £4,100). You lose some personal allowance usage by taking a lower salary, but you reduce the 15% employer NI cost. You can take the remainder as dividends instead, paying dividend tax at 10.75% if you are a basic rate taxpayer (up from 8.75% in 2025/26).</p>
 
 <h3>Salary vs Dividend: The Numbers</h3>
 
@@ -112,19 +114,19 @@ keyTakeaways:
 <ul>
 <li>Employee NI: £0 (at primary threshold)</li>
 <li>Employer NI: £1,135.50 (15% on £7,570 above £5,000). Cannot claim Employment Allowance. Paid by the company.</li>
-<li>Dividend tax: £37,430 at 8.75% = £3,275 (assuming no other income, using basic rate band)</li>
-<li>Total tax and NI: £4,410.50</li>
+<li>Dividend tax: £37,430 less the £500 dividend allowance = £36,930 at 10.75% = £3,970 (assuming no other income, all within the basic rate band)</li>
+<li>Total tax and NI: £5,105.50</li>
 </ul>
 
 <p><strong>Option B: Salary £9,100, dividends £40,900</strong></p>
 <ul>
 <li>Employee NI: £0 (below primary threshold)</li>
 <li>Employer NI: £615 (15% on £4,100 above £5,000). Cannot claim Employment Allowance. Paid by the company.</li>
-<li>Dividend tax: £40,900 at 8.75% = £3,579 (using basic rate band, slightly less personal allowance used)</li>
-<li>Total tax and NI: £4,194</li>
+<li>Dividend tax: the unused £3,470 of personal allowance plus the £500 dividend allowance cover the first slice, leaving £36,930 at 10.75% = £3,970</li>
+<li>Total tax and NI: £4,585</li>
 </ul>
 
-<p>Option B saves £216.50 in total (£4,410.50 versus £4,194). Neither option avoids employer NI at the 15% rate from 6 April 2025, but Option B generates significantly less of it (£615 versus £1,135.50). If you have other employees and can claim the Employment Allowance, Option A becomes more attractive because the employer NI is effectively offset.</p>
+<p>Option B saves £520.50 in total (£5,105.50 versus £4,585). The dividend tax is the same £3,970 either way, because Option B's unused personal allowance absorbs the extra dividends, so the whole saving is employer NI. Neither option avoids employer NI at the 15% rate from 6 April 2025, but Option B generates significantly less of it (£615 versus £1,135.50). If you have other employees and can claim the Employment Allowance, Option A becomes more attractive because the employer NI is effectively offset.</p>
 
 <p>These are simplified figures. Your actual position depends on other income, dividend allowance, and whether you have a spouse shareholder. Always model your specific numbers.</p>
 
@@ -144,7 +146,7 @@ keyTakeaways:
 
 <p><strong>Tip 2: Use RTI payroll software.</strong> Real Time Information (RTI) submissions are mandatory. Most payroll software (BrightPay, Xero Payroll, FreeAgent, Sage Payroll) handles the annual earnings basis automatically. Do not try to calculate it manually. The software will apply the correct thresholds.</p>
 
-<p><strong>Tip 3: Watch for director's loan account issues.</strong> If you take a director's loan from the company and do not repay it within 9 months and 1 day of the year end, the company pays S455 tax at 33.75%. That is separate from NI, but it interacts with your overall tax planning. Keep your loan account in credit or repay within the window.</p>
+<p><strong>Tip 3: Watch for director's loan account issues.</strong> If you take a director's loan from the company and do not repay it within 9 months and 1 day of the year end, the company pays S455 tax at 35.75% for loans made on or after 6 April 2026 (33.75% for loans made before that date). That is separate from NI, but it interacts with your overall tax planning. Keep your loan account in credit or repay within the window.</p>
 
 <p><strong>Tip 4: Consider a spouse salary.</strong> If your spouse is a director or employee of the company, paying them a salary up to the secondary threshold (£5,000 from 6 April 2025) avoids employer NI on that salary compared to paying yourself more. The salary is deductible for corporation tax, and your spouse pays no NI or income tax on it if kept below the thresholds. This is a common structure for husband and wife companies running cafes, shops, or consultancies in Birmingham, Bristol, or anywhere across the UK.</p>
 
@@ -154,7 +156,7 @@ keyTakeaways:
 
 <p>If your company provides you with a car, the benefit in kind is subject to Class 1A NI (employer only, at 15% from 6 April 2025). The employee does not pay NI on the car benefit. Class 1A is paid annually on form P11D(b) by 6 July following the tax year.</p>
 
-<p>Electric cars attract a low benefit in kind rate (2% for 2025/26), so the Class 1A cost is minimal. Petrol and diesel cars can be expensive, especially if the list price is high and CO2 emissions are above 50g/km.</p>
+<p>Electric cars attract a low benefit in kind rate (4% for 2026/27, up from 3% in 2025/26), so the Class 1A cost is minimal. Petrol and diesel cars can be expensive, especially if the list price is high and CO2 emissions are above 50g/km.</p>
 
 <p>If you have a company car, factor the Class 1A cost into your overall NI planning. It is an additional cost to the company that does not affect your personal NI but does reduce your retained profits.</p>
 
@@ -168,7 +170,7 @@ keyTakeaways:
 
 <h2>Directors and the New Upper Earnings Limit (UEL)</h2>
 
-<p>The upper earnings limit for 2025/26 is £50,270. Earnings above that attract employee NI at 2% instead of 8%. For directors on high salaries, this matters because the annual earnings basis means the 2% rate applies to all earnings above £50,270 in the year, regardless of when they are paid.</p>
+<p>The upper earnings limit for 2026/27 is £50,270. Earnings above that attract employee NI at 2% instead of 8%. For directors on high salaries, this matters because the annual earnings basis means the 2% rate applies to all earnings above £50,270 in the year, regardless of when they are paid.</p>
 
 <p>If your total director salary exceeds £50,270, the NI saving on the excess is significant. But remember that dividends are still more tax efficient than salary above this level because dividends attract no NI at all.</p>
 

@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "Incorporating an HMO Portfolio: Capital Allowances + Licences"
+metaTitle: "Incorporating an HMO Portfolio: Capital Allowances, Licences"
 metaDescription: "HMO incorporation: common-parts capital allowances, ltd-co HMO mortgages, licence transfers, Ramsay s.162 case, and a 3-house worked example."
 altText: "Young housemates relaxing together in a shared kitchen, representative of an HMO let by room"
 image: "https://images.pexels.com/photos/4778421/pexels-photo-4778421.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
@@ -41,8 +41,8 @@ faqs:
   - question: "What is the sequencing for moving a 3-house HMO portfolio into a company?"
     answer: "The clean sequence: (1) form the company and (if portfolio justifies) the HoldCo structure 12-plus months before any sale to capture SSE on a future exit; (2) commission a fixtures and fittings valuation for each property by a specialist CA surveyor to establish the capital allowances pool at acquisition; (3) apply for the HMO licence transfers to the new company, allowing 8 weeks of lead time and ideally not crystallising on a tenancy turnover date; (4) refinance with a ltd-co HMO mortgage; (5) execute the property transfer (legal transfer of title, simultaneous SDLT submission and payment); (6) update council tax, deposit-protection registrations, utility accounts and tenancy agreements. Items 3, 4 and 5 need to sequence carefully because lender drawdown is usually conditional on the licence being in place; some lenders accept evidence of application as sufficient, others require the issued licence."
   - question: "Where does the incorporation decision typically land for a small HMO operator?"
-    answer: "For a higher-rate-tax HMO operator with three or more properties, leverage above 60% LTV, and a 5+ year holding intention, incorporation is generally worth the upfront cost. The combination of S24 mitigation, capital allowances on common parts, generally strong s.162 case reducing CGT to near zero on a clean share-only transfer, and the 2027 property income surcharge avoided gives a typical 3- to 5-year payback. For basic-rate-tax operators or single-HMO landlords, the answer is closer to marginal and depends on holding horizon. For very small operators (one HMO, low leverage), personal ownership often remains the cleaner answer."
-dateModified: "2026-05-22"
+    answer: "For a higher-rate-tax HMO operator with three or more properties, leverage above 60% LTV, and a 5+ year holding intention, incorporation is generally worth the upfront cost. The combination of S24 mitigation, capital allowances on common parts, generally strong s.162 case reducing CGT to near zero on a clean share-only transfer, and the 2027 property income surcharge avoided gives a typical 3- to 8-year payback. For basic-rate-tax operators or single-HMO landlords, the answer is closer to marginal and depends on holding horizon. For very small operators (one HMO, low leverage), personal ownership often remains the cleaner answer."
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
@@ -76,7 +76,7 @@ editorialNote: "HMO-specific incorporation guide written from operational experi
 <li>Bathrooms shared by more than one tenant: integrated showers, extraction, plumbing.</li>
 </ul>
 
-<p>The split between common-parts plant (allowance-eligible) and inside-room plant (not eligible) is the technical crux of any HMO capital allowance claim. A specialist CA surveyor produces a defensible apportionment based on a property inspection and a reasonable allocation of integrated systems. On a £400,000 four-bedroom HMO, the common-parts pool typically lands between £15,000 and £25,000. The 18% main pool writing-down allowance applies; integral features in the 6% special rate pool sit alongside. Annual allowances of £2,000 to £4,000 are achievable across a small portfolio.</p>
+<p>The split between common-parts plant (allowance-eligible) and inside-room plant (not eligible) is the technical crux of any HMO capital allowance claim. A specialist CA surveyor produces a defensible apportionment based on a property inspection and a reasonable allocation of integrated systems. On a £400,000 four-bedroom HMO, the common-parts pool typically lands between £15,000 and £25,000. The 14% main pool writing-down allowance applies (the rate was cut from 18% by Finance Act 2026 s.28, from April 2026); integral features in the 6% special rate pool sit alongside. Year-one writing-down allowances of £2,100 to £3,500 per property are achievable on that pool range, tapering on the reducing balance thereafter.</p>
 
 <aside><p>Considering a CA survey?</p><p>The numbers above are typical; the spread is wide. On older or more architecturally-complex HMOs the pool can be larger; on simpler 4-bedroom 1980s-built HMOs it can be smaller. A specialist fixtures-and-fittings survey costs £1,500 to £3,000 per property and usually pays for itself in the first year's allowances. Use the form at the bottom of this page if you want a referral.</p></aside>
 
@@ -130,11 +130,11 @@ editorialNote: "HMO-specific incorporation guide written from operational experi
 <p>Personal-side 2026/27:</p>
 
 <ul>
-<li>Net rental profit (after S24 disallowance of mortgage interest): £20,000 per property × 3 = £60,000.</li>
-<li>Income tax at 40% on £60,000: £24,000.</li>
+<li>Net rental profit (after S24 disallowance of mortgage interest): £22,000 per property × 3 = £66,000.</li>
+<li>Income tax at 40% on £66,000: £26,400.</li>
 <li>S24 credit at 20% on £30,000 of total mortgage interest: £6,000.</li>
-<li>Net income tax: £18,000.</li>
-<li>After-tax cash from £36,000 of total true net rent (after actual interest): £18,000.</li>
+<li>Net income tax: £20,400.</li>
+<li>After-tax cash from £36,000 of total true net rent (after actual interest): £15,600.</li>
 </ul>
 
 <p>Company-side 2026/27 (HoldCo + three SPVs, four associated companies, s.162 relief assumed to cover the share-only consideration):</p>
@@ -144,12 +144,12 @@ editorialNote: "HMO-specific incorporation guide written from operational experi
 <li>Per-SPV CT thresholds: £12,500 lower (£50,000 / 4) and £62,500 upper.</li>
 <li>£12,000 sits below the lower threshold; small profits rate at 19% applies.</li>
 <li>CT per SPV: £2,280.</li>
-<li>Capital allowances pool from common-parts survey: £20,000 per property × 18% WDA = £3,600 per property; effective CT saving £684 per property at 19% (or higher in subsequent years if profits rise into the marginal band).</li>
-<li>Net cash retained in each SPV after CT and allowances: roughly £10,400.</li>
-<li>Across three SPVs: £31,200 retained for reinvestment or extraction.</li>
+<li>Capital allowances pool from common-parts survey: £20,000 per property × 14% WDA = £2,800 per property; effective CT saving £532 per property at 19% (or higher in subsequent years if profits rise into the marginal band). The main-pool WDA rate is 14% from April 2026, cut from 18% by Finance Act 2026 s.28.</li>
+<li>Net cash retained in each SPV after CT and allowances: roughly £10,250 (taxable profit £12,000 − £2,800 = £9,200; CT at 19% = £1,748).</li>
+<li>Across three SPVs: £30,750 retained for reinvestment or extraction.</li>
 </ul>
 
-<p>The company route leaves around £13,200 a year more cash than personal ownership. Upfront one-off costs: SDLT £90,000 (three properties at £400,000 each), CGT minimal if 100% share consideration captures full s.162 relief, licence transfer fees roughly £2,000, legal and lender fees roughly £8,000 to £12,000 per property. Total upfront roughly £125,000 to £140,000. Payback period around 10 years on the pre-2027 picture; closer to 7 to 8 years once the 2027 surcharge kicks in.</p>
+<p>The company route leaves around £15,150 a year more cash than personal ownership. Upfront one-off costs: SDLT £90,000 (three properties at £400,000 each), CGT minimal if 100% share consideration captures full s.162 relief, licence transfer fees roughly £2,000, legal and lender fees roughly £8,000 to £12,000 per property. Total upfront roughly £125,000 to £140,000. Payback period around 9 years on the pre-2027 picture; closer to 8 years once the 2027 surcharge kicks in.</p>
 
 <h2>Failure modes we see most often</h2>
 

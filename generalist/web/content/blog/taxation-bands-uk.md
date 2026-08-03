@@ -1,28 +1,28 @@
 ---
-title: 'UK Taxation Bands 2025/26: Income Tax, NI, and More'
+title: 'UK Taxation Bands 2026/27: Income Tax, NI, and More'
 slug: taxation-bands-uk
 canonical: https://www.hollowaydavies.co.uk/blog/payroll-and-paye/taxation-bands-uk
 date: '2026-05-20'
 generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Payroll and PAYE
-metaTitle: UK Tax Bands for Sole Traders and Directors 2025/26
-metaDescription: How income tax, NI and dividend bands work for sole traders and directors in 2025/26. The personal allowance stays at £12,570. Plan your drawings.
-altText: UK tax bands 2025/26 chart showing income tax rates and NI thresholds
+metaTitle: UK Tax Bands for Sole Traders and Directors 2026/27
+metaDescription: How income tax, NI and dividend bands work for sole traders and directors in 2026/27. The personal allowance stays at £12,570. Plan your drawings.
+altText: UK tax bands 2026/27 chart showing income tax rates and NI thresholds
 image: https://images.pexels.com/photos/7111560/pexels-photo-7111560.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
-h1: 'UK Taxation Bands 2025/26: Income Tax, NI, and More'
-summary: A clear breakdown of the UK taxation bands for 2025/26, covering income tax, National Insurance, dividend tax, and corporation tax. Includes practical examples for limited company directors, sole traders, and contractors.
+h1: 'UK Taxation Bands 2026/27: Income Tax, NI, and More'
+summary: A clear breakdown of the UK taxation bands for 2026/27, covering income tax, National Insurance, dividend tax, and corporation tax. Includes practical examples for limited company directors, sole traders, and contractors.
 schema: ""
 faqs:
-- question: What is the personal allowance for 2025/26?
-  answer: The personal allowance for 2025/26 is £12,570. This is the amount you can earn before paying income tax. It starts to reduce if your adjusted net income exceeds £100,000, and it is zero once your income reaches £125,140. These thresholds have been frozen since April 2021 and are expected to remain until April 2028, according to gov.uk guidance.
-- question: What are the dividend tax rates for 2025/26?
-  answer: The dividend allowance for 2025/26 is £500. Above that, basic rate taxpayers pay 8.75%, higher rate taxpayers pay 33.75%, and additional rate taxpayers pay 39.35%. These rates apply to dividend income that falls within each tax band. Dividends are taxed after salary and other income, so your total income determines which band applies.
-- question: What is the corporation tax rate for 2025/26?
+- question: What is the personal allowance for 2026/27?
+  answer: The personal allowance for 2026/27 is £12,570. This is the amount you can earn before paying income tax. It starts to reduce if your adjusted net income exceeds £100,000, and it is zero once your income reaches £125,140. These thresholds have been frozen since April 2021 and are expected to remain until April 2028, according to gov.uk guidance.
+- question: What are the dividend tax rates for 2026/27?
+  answer: The dividend allowance for 2026/27 is £500. Above that, basic rate taxpayers pay 10.75%, higher rate taxpayers pay 35.75%, and additional rate taxpayers pay 39.35%. The ordinary and upper rates rose from 8.75% and 33.75% on 6 April 2026. These rates apply to dividend income that falls within each tax band. Dividends are taxed after salary and other income, so your total income determines which band applies.
+- question: What is the corporation tax rate for 2026/27?
   answer: The small profits rate is 19% on profits up to £50,000. The main rate is 25% on profits above £250,000. Marginal relief applies between £50,000 and £250,000, giving an effective rate that rises gradually. If your company has associated companies, the thresholds are divided by the number of associated companies plus one.
-- question: What is the VAT registration threshold for 2025/26?
+- question: What is the VAT registration threshold for 2026/27?
   answer: The VAT registration threshold is £90,000 of taxable turnover in a rolling 12-month period. Once you exceed that, you must register within 30 days. You can also register voluntarily below the threshold, which can be useful if you have significant VAT on your costs or want to appear more established. Making Tax Digital for VAT is already mandatory for all VAT-registered businesses.
-dateModified: '2026-06-12'
+dateModified: '2026-08-03'
 sourcesVerifiedAt: '2026-05-20'
 sourceDomains:
 - acas.org.uk
@@ -39,18 +39,22 @@ reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 keyTakeaways:
-  - "For 2025/26, the personal allowance is £12,570, frozen since April 2021 and scheduled to remain at this level until April 2028."
-  - "Income tax rates for 2025/26 (England, Wales and Northern Ireland) are 20% on earnings from £12,571 to £50,270, 40% up to £125,140, and 45% above that."
-  - "The dividend allowance for 2025/26 is £500; above that, rates are 8.75% for basic rate taxpayers, 33.75% for higher rate, and 39.35% for additional rate."
-  - "Corporation tax in 2025/26 is 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief applying between those thresholds."
+  - "For 2026/27, the personal allowance is £12,570, frozen since April 2021 and scheduled to remain at this level until April 2028."
+  - "Income tax rates for 2026/27 (England, Wales and Northern Ireland) are 20% on earnings from £12,571 to £50,270, 40% up to £125,140, and 45% above that."
+  - "The dividend allowance for 2026/27 is £500; above that, rates are 10.75% for basic rate taxpayers, 35.75% for higher rate, and 39.35% for additional rate (raised from 8.75% and 33.75% in April 2026)."
+  - "Corporation tax in 2026/27 is 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief applying between those thresholds."
   - "The VAT registration threshold is £90,000 of taxable turnover in a rolling 12-month period, with mandatory registration within 30 days of exceeding it."
-  - "Capital gains tax on most assets in 2025/26 is 18% for basic rate taxpayers and 24% for higher rate taxpayers, with a £3,000 annual exempt amount."
+  - "Capital gains tax on most assets in 2026/27 is 18% for basic rate taxpayers and 24% for higher rate taxpayers, with a £3,000 annual exempt amount."
 ---
-<p>If you run a business in the UK, the tax bands for 2025/26 are the numbers that determine how much of your profit you keep and how much goes to HMRC. Getting them wrong means overpaying tax or missing reliefs. Getting them right means better cash flow and fewer surprises at year end.</p>
+<p>If you run a business in the UK, the tax bands for 2026/27 are the numbers that determine how much of your profit you keep and how much goes to HMRC. Getting them wrong means overpaying tax or missing reliefs. Getting them right means better cash flow and fewer surprises at year end.</p>
 
-<p>This article covers the key UK taxation bands for the current tax year (6 April 2025 to 5 April 2026). We'll cover income tax, National Insurance, dividend tax, corporation tax, and the main allowances you need to know. All figures are for England, Wales, and Northern Ireland unless stated. Scottish rates differ and are not covered here.</p>
+<p>This article covers the key UK taxation bands for the current tax year (6 April 2026 to 5 April 2027). We'll cover income tax, National Insurance, dividend tax, corporation tax, and the main allowances you need to know. All figures are for England, Wales, and Northern Ireland unless stated. Scottish rates differ and are not covered here.</p>
 
-<h2>Income Tax Bands 2025/26</h2>
+<h2>What Changed in April 2026</h2>
+
+<p>Most bands carried straight over from 2025/26. The two moves that matter: dividend tax rose from 8.75% to 10.75% at basic rate and from 33.75% to 35.75% at higher rate (the 39.35% additional rate is unchanged), and Business Asset Disposal Relief rose from 14% to 18%. Income tax bands, NI thresholds, corporation tax and the VAT threshold are all unchanged.</p>
+
+<h2>Income Tax Bands 2026/27</h2>
 
 <p>The personal allowance remains frozen at £12,570 <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This is the amount you can earn before paying any income tax. It applies to most people, but it starts to reduce once your adjusted net income exceeds £100,000. For every £2 of income above that threshold, your personal allowance drops by £1 <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. At £125,140 of income, your personal allowance is zero <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
 
@@ -60,9 +64,9 @@ keyTakeaways:
 
 <h3>Example: Sole Trader with £63,400 Profit</h3>
 
-<p>Take a freelance consultant in Manchester with a sole trader profit of £63,400 in 2025/26. Their personal allowance covers the first £12,570. The next £37,700 (up to £50,270) is taxed at 20%, costing £7,540. The remaining £13,130 falls into the higher rate band and is taxed at 40%, costing £5,252. Total income tax: £12,792. That is before Class 4 National Insurance, which we cover below.</p>
+<p>Take a freelance consultant in Manchester with a sole trader profit of £63,400 in 2026/27. Their personal allowance covers the first £12,570. The next £37,700 (up to £50,270) is taxed at 20%, costing £7,540. The remaining £13,130 falls into the higher rate band and is taxed at 40%, costing £5,252. Total income tax: £12,792. That is before Class 4 National Insurance, which we cover below.</p>
 
-<h2>National Insurance Thresholds 2025/26</h2>
+<h2>National Insurance Thresholds 2026/27</h2>
 
 <p>National Insurance is a separate tax on earnings. For employees and directors, the key thresholds are:</p>
 
@@ -78,25 +82,25 @@ keyTakeaways:
 
 <p>Many limited company directors pay themselves a salary of £12,570. This matches the personal allowance and the primary NI threshold, so no income tax or employee NI is due. But employer NI at 15% kicks in above £5,000. If the company claims Employment Allowance (up to £10,500 off the employer NI bill), that cost is covered at a £12,570 salary. If not, the director might take a lower salary of £5,000 to avoid employer NI entirely, then take the rest as dividends.</p>
 
-<h2>Dividend Tax Rates 2025/26</h2>
+<h2>Dividend Tax Rates 2026/27</h2>
 
-<p>Dividends are taxed at lower rates than salary, which is why they are popular with limited company directors. The dividend allowance for 2025/26 is £500. That means the first £500 of dividend income is tax-free. Above that, the rates are:</p>
+<p>Dividends are taxed at lower rates than salary, which is why they are popular with limited company directors. The dividend allowance for 2026/27 is £500. That means the first £500 of dividend income is tax-free. Above that, the rates are:</p>
 
 <ul>
-<li><strong>Basic rate taxpayers:</strong> 8.75%</li>
-<li><strong>Higher rate taxpayers:</strong> 33.75%</li>
-<li><strong>Additional rate taxpayers:</strong> 39.35%</li>
+<li><strong>Basic rate taxpayers:</strong> 10.75% (was 8.75% in 2025/26)</li>
+<li><strong>Higher rate taxpayers:</strong> 35.75% (was 33.75% in 2025/26)</li>
+<li><strong>Additional rate taxpayers:</strong> 39.35% (unchanged)</li>
 </ul>
 
-<p>These rates apply to dividend income that falls within each tax band. So if your total income (salary plus dividends) is £50,270, the dividends above the £500 allowance are taxed at 8.75% up to that threshold, then at 33.75% above it.</p>
+<p>These rates apply to dividend income that falls within each tax band. So if your total income (salary plus dividends) is £50,270, the dividends above the £500 allowance are taxed at 10.75% up to that threshold, then at 35.75% above it.</p>
 
 <h3>Example: Director Taking Salary and Dividends</h3>
 
-<p>A director of a Birmingham-based consultancy takes a salary of £12,570 and dividends of £37,700. Total income: £50,270. The salary uses the personal allowance. The first £500 of dividends is tax-free. The remaining £37,200 of dividends is taxed at 8.75%, costing £3,255. Total tax: £3,255 plus employer NI on the salary (if any). Compare that to taking the same amount as salary, which would trigger income tax at 20% and employee NI at 8% on most of it.</p>
+<p>A director of a Birmingham-based consultancy takes a salary of £12,570 and dividends of £37,700. Total income: £50,270. The salary uses the personal allowance. The first £500 of dividends is tax-free. The remaining £37,200 of dividends is taxed at 10.75%, costing £3,999. Total tax: £3,999 plus employer NI on the salary (if any). In 2025/26, at the old 8.75% rate, the same dividends cost £3,255. Compare that to taking the same amount as salary, which would trigger income tax at 20% and employee NI at 8% on most of it.</p>
 
-<h2>Corporation Tax Rates 2025/26</h2>
+<h2>Corporation Tax Rates 2026/27</h2>
 
-<p>Limited companies pay corporation tax on their profits. The rates for 2025/26 are:</p>
+<p>Limited companies pay corporation tax on their profits. The rates for 2026/27 are:</p>
 
 <ul>
 <li><strong>Small profits rate:</strong> 19% on profits up to £50,000.</li>
@@ -106,26 +110,26 @@ keyTakeaways:
 
 <p>If your company has associated companies (other companies under common control), the thresholds are divided by the number of associated companies plus one. So two associated companies means the small profits rate applies up to £25,000 each.</p>
 
-<h2>Capital Gains Tax 2025/26</h2>
+<h2>Capital Gains Tax 2026/27</h2>
 
-<p>Capital gains tax (CGT) rates changed significantly in the 2024 Autumn Budget. For 2025/26:</p>
+<p>Capital gains tax (CGT) rates changed significantly in the 2024 Autumn Budget. For 2026/27:</p>
 
 <ul>
 <li><strong>Basic rate taxpayers:</strong> 18% on most assets.</li>
 <li><strong>Higher rate taxpayers:</strong> 24% on most assets.</li>
 <li><strong>Residential property:</strong> 18% basic rate, 24% higher rate.</li>
-<li><strong>Business Asset Disposal Relief (BADR):</strong> 14% flat rate for all qualifying disposals in 2025/26, regardless of income band (rising to 18% from 6 April 2026).</li>
+<li><strong>Business Asset Disposal Relief (BADR):</strong> 18% flat rate for all qualifying disposals from 6 April 2026, regardless of income band (up from 14% in 2025/26).</li>
 </ul>
 
-<p>The annual exempt amount for 2025/26 is £3,000. BADR has a lifetime limit of £1 million and requires shares to be held for at least two years.</p>
+<p>The annual exempt amount for 2026/27 is £3,000. BADR has a lifetime limit of £1 million and requires shares to be held for at least two years.</p>
 
-<h2>VAT Registration Threshold 2025/26</h2>
+<h2>VAT Registration Threshold 2026/27</h2>
 
 <p>The VAT registration threshold is £90,000 of taxable turnover in a rolling 12-month period. Once you exceed that, you must register for VAT within 30 days. You can also register voluntarily below the threshold, which can be beneficial if you have significant VAT on your costs or want to appear more established.</p>
 
-<p>Making Tax Digital (MTD) for VAT is already mandatory for all VAT-registered businesses. From April 2026, MTD for Income Tax becomes mandatory for self-employed and landlord income over £50,000, then from April 2027 for income over £30,000.</p>
+<p>Making Tax Digital (MTD) for VAT is already mandatory for all VAT-registered businesses. MTD for Income Tax became mandatory in April 2026 for self-employed and landlord income over £50,000, and extends from April 2027 to income over £30,000.</p>
 
-<h2>National Minimum Wage 2025/26</h2>
+<h2>National Minimum Wage 2026/27</h2>
 
 <p>From 1 April 2026, the rates are <sup><a href="#ref-2" id="cite-2">[2]</a></sup>:</p>
 
@@ -138,7 +142,7 @@ keyTakeaways:
 
 <p>If you employ staff, these rates are mandatory. Paying below them risks HMRC penalties and reputational damage.</p>
 
-<h2>Pension Annual Allowance 2025/26</h2>
+<h2>Pension Annual Allowance 2026/27</h2>
 
 <p>The standard annual allowance for pension contributions is £60,000. This includes both your contributions and your employer's contributions. If your adjusted income exceeds £260,000, the allowance tapers down by £1 for every £2 of income above that, to a minimum of £10,000.</p>
 
@@ -146,7 +150,7 @@ keyTakeaways:
 
 <h2>Putting It All Together</h2>
 
-<p>Understanding the UK taxation bands for 2025/26 is the foundation of good tax planning. Whether you are a sole trader, a limited company director, or a partnership owner, knowing where your income falls within these bands helps you decide how to structure your pay, when to take dividends, and whether to invest in your pension or your business.</p>
+<p>Understanding the UK taxation bands for 2026/27 is the foundation of good tax planning. Whether you are a sole trader, a limited company director, or a partnership owner, knowing where your income falls within these bands helps you decide how to structure your pay, when to take dividends, and whether to invest in your pension or your business.</p>
 
 <p>If your turnover crossed the VAT threshold in the last 30 days, register inside the 30-day window. If your company profits are between £50,000 and £250,000, check whether marginal relief applies and whether you have associated companies. If your personal income is approaching £100,000, plan for the personal allowance taper.</p>
 
