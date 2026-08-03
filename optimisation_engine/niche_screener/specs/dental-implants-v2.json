@@ -1,0 +1,34 @@
+{
+  "vertical": "dental implants",
+  "provider_terms": [
+    "dentist",
+    "implant dentist",
+    "dental clinic"
+  ],
+  "pain_seeds": [
+    "dental implant cost uk",
+    "full mouth dental implants price",
+    "dental implants abroad",
+    "dental implant finance",
+    "all on 4 cost",
+    "denture vs implant",
+    "implant pain how long",
+    "single tooth implant cost",
+    "tooth implant cost uk",
+    "dental implants on nhs",
+    "bone graft dental implant cost",
+    "dental implant vs bridge",
+    "same day dental implants",
+    "how long do dental implants last"
+  ],
+  "audience_terms": [
+    "dental implants"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": false,
+  "seed_evidence": [
+    "lead-market candidate dental-implants-leadmkt (13 seller domains, 68-150 GBP price signals)",
+    "RE-SCREEN 2026-08-03: original spec was a G2 NEAR MISS at 2,240 vs 3,000 threshold (75%). CROSS_DOMAIN_LEAGUE_2026-07-24 queued it for re-screen with broader pain seeds; 7 added covering cost-per-unit, NHS availability, alternatives and longevity."
+  ],
+  "name": "dental-implants-v2"
+}

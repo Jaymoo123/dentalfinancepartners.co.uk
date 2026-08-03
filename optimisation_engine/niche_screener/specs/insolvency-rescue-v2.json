@@ -1,0 +1,34 @@
+{
+  "vertical": "company insolvency and rescue",
+  "provider_terms": [
+    "insolvency practitioner",
+    "liquidator",
+    "insolvency adviser",
+    "business rescue adviser"
+  ],
+  "pain_seeds": [
+    "company liquidation cost",
+    "winding up petition hmrc",
+    "creditors voluntary liquidation",
+    "director personal liability company debt",
+    "overdrawn directors loan account liquidation",
+    "close company with debts",
+    "hmrc time to pay arrangement company",
+    "cant pay corporation tax",
+    "company strike off with debts",
+    "director disqualification",
+    "company voluntary arrangement",
+    "pre pack administration"
+  ],
+  "audience_terms": [
+    "company directors",
+    "limited companies"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": true,
+  "seed_evidence": [
+    "lead-market candidate insolvency-leadmkt (9 seller domains); strategy scan case values 3k-20k GBP",
+    "RE-SCREEN 2026-08-03: original spec failed G2+G3+G4 on suspect seeds. Dropped the bounce-back-loan-era seed (2021-22 artefact, flagged in CROSS_DOMAIN_LEAGUE_2026-07-24 as the reason for the failure), added current-era distress seeds (HMRC TTP, strike-off with debts, disqualification, CVA, pre-pack)."
+  ],
+  "name": "insolvency-rescue-v2"
+}
