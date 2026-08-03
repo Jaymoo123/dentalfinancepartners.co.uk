@@ -4,9 +4,16 @@ slug: consent-orders-and-clean-break-orders
 date: "2026-07-24"
 updatedDate: "2026-07-24"
 author: "Editorial Team"
+image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&q=80"
+altText: "A fountain pen resting on dark lined paper, ready to sign a formal court order."
+imageCredit:
+  photographer: "Aaron Burden"
+  photographerUrl: "https://unsplash.com/@aaronburden"
+  source: "Unsplash"
+  sourceUrl: "https://unsplash.com/photos/y02jEX_B0O0"
 category: "Process and Costs"
-metaTitle: "Consent Orders & Clean Break Orders UK: Cost & Process (2026)"
-metaDescription: "What consent orders and clean break orders are, why you need one even in an amicable divorce, the £62 court fee, drafting costs, the D81 process, and what judges check."
+metaTitle: "Consent Orders & Clean Break Orders: Cost & Process (2026)"
+metaDescription: "What consent and clean break orders are, why you need one even in an amicable divorce, the £62 court fee, drafting costs and what judges check."
 h1: "Consent orders and clean break orders explained"
 summary: "A consent order turns your agreed financial settlement into a legally binding court order; a clean break order goes further and permanently ends financial claims between you. Without one, your ex-spouse can claim against your future earnings, inheritances and assets indefinitely, even decades after an amicable divorce. This guide explains what each order does, the £62 court fee and realistic drafting costs, the D81 process, why judges reject orders, and whether you need one when there is nothing to split."
 keyTakeaways:
@@ -91,6 +98,40 @@ faqs:
 </ul>
 
 <p>If you cannot yet agree terms, the cost question changes shape: it becomes a negotiation-route question, covered in <a href="/blog/process-and-costs/cost-of-divorce-uk">the cost of divorce</a> and comparable in the <a href="/calculators/mediation-vs-solicitor-costs">mediation vs solicitor comparison</a>. The <a href="/calculators/consent-order-cost-calculator">consent order cost calculator</a> covers the agreed-order routes side by side.</p>
+
+<p>The agreed and contested routes compare like this:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Agreed consent order</th>
+      <th>Contested application (Form A)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Court fee</td>
+      <td>£62</td>
+      <td>£321</td>
+    </tr>
+    <tr>
+      <td>Typical time</td>
+      <td>Judge reviews on paper; straightforward orders commonly approved within weeks of filing</td>
+      <td>Court-timetabled proceedings through directions and hearing stages, typically many months</td>
+    </tr>
+    <tr>
+      <td>How it is decided</td>
+      <td>You agree the terms; a judge checks them against the D81 for fairness</td>
+      <td>A judge decides the terms after disclosure and hearings</td>
+    </tr>
+    <tr>
+      <td>When to use</td>
+      <td>You have agreed the full financial picture, directly, through mediation or via solicitors</td>
+      <td>You cannot reach agreement after negotiation or mediation, or need the court's protection</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>The process, step by step</h2>
 

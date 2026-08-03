@@ -1,16 +1,14 @@
 # divorce-finances (placeholder brand) site state
 
-Last updated 2026-07-28 (Phases 0-5 COMPLETE; Phase 6 next, owner-GO'd).
+Last updated 2026-08-03 (waves 1-3 written; Phase 6 = deploy plumbing remaining).
 
 brand_locked: true
 
 Real brand and domain deferred to owner gate G1; all content bodies must stay
-brand-agnostic (zero brand-name mentions) until then. Phases 0-5 complete and
-committed on `expansion/phase-0` (unpushed): scaffold, staging integrated,
-fact-verify done, engine registration, 5 calculators + 2 research assets + 4
-pillars + 3 commercial hubs, plus Phase-5 wave-1 (8 spokes). `_staging/`
-deleted. 5 wave-2 spokes sit UNTRACKED (07-24), pending commit + QA. Phase 6
-(nurture / Supabase migration / Vercel) approved by owner 2026-07-28.
+brand-agnostic (zero brand-name mentions) until then. Phases 0-5 complete on
+`expansion/phase-0`: scaffold, staging integrated, fact-verify done, engine
+registration, 5 calculators + 2 research assets + 4 pillars + 3 commercial
+hubs. Phase 6 approved by owner 2026-07-28.
 
 ## Identity
 
@@ -18,23 +16,24 @@ deleted. 5 wave-2 spokes sit UNTRACKED (07-24), pending commit + QA. Phase 6
 - IndexNow key registered in `optimisation_engine/indexing/config.py` (`4d2abeb261e1ca7875c6f16ee1257ac4`); public `<key>.txt` file NOT yet created (created at G1 rename, per the real domain)
 - Real brand + domain: TBD at owner gate G1
 
-## Status
+## Content state (2026-08-03)
 
-- [x] Content/ops engine registration (this pass, 2026-07-24): routing_safety,
-      GSC/Bing client maps, IndexNow config, spinup_site + spinup_site_check
-      registries, `sites/divorce-finances.json`, CI build matrix entry
-- [ ] blog_generator site_config (`divorce_finances.py`) — authored on a
-      separate concurrent track, not touched here
-- [ ] divorce-finances/web scaffold (owned by a separate build track; not touched here)
-- [ ] Phase 3: integrate `_staging/` content + fact-verify
-- [ ] Topic pool -> blog_topics seed (site_key=divorce-finances)
-- [ ] Wave content generation
-- [ ] Calculators + pillar pages + research assets build
-- [ ] Vercel project + domain (gated on real brand/domain decision at G1)
-- [ ] Request Indexing / GSC + Bing verification (post real-domain attach)
+- Wave 1: 8 spokes, committed (Phase 5)
+- Wave 2: 4 spokes, committed `3c0b8f99` (earlier "5 wave-2 spokes UNTRACKED" note is stale; resolved as 4 committed)
+- Wave 3: 16 spokes written 2026-08-03, in QA/commit
+- Table backfill on the 12 legacy (wave 1 + 2) posts: DONE
+- Live blog corpus: 32 posts in `divorce-finances/web/content/blog/` (4 pillars + 28 spokes)
+- `optimisation_engine/blog_generator/site_configs/divorce_finances.py` `_INTERNAL_LINK_SLUGS` populated 2026-08-03 (32 posts + 3 hubs); refresh when the next wave ships
+
+## Phase 6 remaining
+
+- [ ] Supabase migration APPLY (owner / SQL editor)
+- [ ] Vercel project
+- [ ] Test-lead cycle end to end
+- [ ] G1: real brand + domain decision, metadata swap, deploy
 
 ## Notes
 
 - Jurisdiction default: England and Wales; state explicitly where Scotland differs.
-- Follow the same prohibited-topics / hallucination-zone discipline as the
-  wills-probate build once `divorce_finances.py` site_config lands.
+- Prohibited-topics / hallucination-zone discipline enforced via
+  `divorce_finances.py` site_config (mirrors the wills-probate build).

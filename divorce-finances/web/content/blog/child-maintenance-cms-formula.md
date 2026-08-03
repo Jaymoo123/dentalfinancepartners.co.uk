@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/@4dgraphic"
 category: "Maintenance and Support"
 metaTitle: "How CMS Child Maintenance Is Calculated (2026 Formula)"
-metaDescription: "How the Child Maintenance Service works out payments: the five rates, the 12/16/19% bands, shared-care reductions, Collect and Pay fees, and worked examples for 2026."
+metaDescription: "How the Child Maintenance Service works out payments: the five rates, 12/16/19% bands, shared-care reductions, Collect and Pay fees and examples."
 h1: "How the Child Maintenance Service calculates child maintenance"
 summary: "The Child Maintenance Service (CMS) works out payments from the paying parent's gross weekly income using five rates. On the basic rate, the paying parent pays 12% of gross weekly income for one child, 16% for two, and 19% for three or more, on income up to £800 a week, with lower percentages added on income between £800 and £3,000. That figure is then reduced for shared care and for other children living in the paying parent's household. This guide explains each step, with worked examples, and links to the official gov.uk calculator so you can run your own figures."
 keyTakeaways:
@@ -85,6 +85,41 @@ faqs:
 </ul>
 
 <p>The two are stacked, not swapped. A higher earner pays the basic percentage on the first £800 and the lower basic plus percentage on everything from £800.01 to £3,000. This structure is set out in the <a href="https://www.legislation.gov.uk/uksi/2012/2677">Child Support Maintenance Calculation Regulations 2012</a>.</p>
+
+<p>Here are the two bands, and the Collect and Pay charges covered later, in one place:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rate element</th>
+      <th>One child</th>
+      <th>Two children</th>
+      <th>Three or more</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Basic rate (gross weekly income £200 to £800)</td>
+      <td>12%</td>
+      <td>16%</td>
+      <td>19%</td>
+    </tr>
+    <tr>
+      <td>Basic plus rate (slice from £800.01 to £3,000)</td>
+      <td>9%</td>
+      <td>12%</td>
+      <td>15%</td>
+    </tr>
+    <tr>
+      <td>Collect and Pay: paying parent</td>
+      <td colspan="3">Pays an extra 20% on top of the calculated amount</td>
+    </tr>
+    <tr>
+      <td>Collect and Pay: receiving parent</td>
+      <td colspan="3">Receives 4% less than the calculated amount</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>Reduction for other children in the household</h2>
 

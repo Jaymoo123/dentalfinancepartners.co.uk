@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/@homajob"
 category: "Maintenance and Support"
 metaTitle: "Spousal Maintenance UK: How It Works & The Tax (2026)"
-metaDescription: "How spousal maintenance is decided in England and Wales: the section 25 factors, term vs joint-lives orders, capitalisation, and why it is not taxed on the recipient."
+metaDescription: "How spousal maintenance is decided in England and Wales: section 25 factors, term vs joint-lives orders, capitalisation, and why it is not taxed."
 h1: "Spousal maintenance: how it works, how much, and the tax"
 summary: "Spousal maintenance is a regular income payment from one ex-spouse to the other after divorce, separate from child maintenance and from any capital settlement. There is no fixed formula: courts decide it case by case under section 25 of the Matrimonial Causes Act 1973, weighing needs against earning capacity, and modern practice steers strongly toward a fixed term that lets the receiving spouse transition to independence rather than an indefinite joint-lives order. It is paid out of the payer's taxed income and is not taxable income for the person who receives it. This guide explains how awards are decided, how long they last, how they end, and how they can be capitalised into a lump sum."
 keyTakeaways:
@@ -88,6 +88,45 @@ faqs:
 <p>Within term orders there is a further, crucial distinction. An <strong>extendable</strong> term lets the receiving spouse apply, before it runs out, to have it lengthened if they genuinely still cannot manage. A <strong>non-extendable</strong> term does not. The court achieves the non-extendable version by attaching a direction under <a href="https://www.legislation.gov.uk/ukpga/1973/18/section/28">section 28(1A) of the Matrimonial Causes Act 1973</a>, under which it "may direct that that party shall not be entitled to apply" to extend the term. A section 28(1A) bar gives both people a hard, certain end date, which is valuable for a clean transition, but it also removes the safety net if things do not improve as hoped, so whether to include it is one of the sharpest decisions in the whole order.</p>
 
 <p>The push toward defined endings comes from the Act itself. <a href="https://www.legislation.gov.uk/ukpga/1973/18/section/25A">Section 25A</a> imposes a duty on the court to consider whether financial obligations between the parties can be ended "as soon after the making of the order as the court considers just and reasonable", and, where it does order maintenance, to consider limiting it to a term "sufficient to enable the party in whose favour the order is made to adjust without undue hardship" to independence.</p>
+
+<p>The main shapes a maintenance order can take compare like this:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type of order</th>
+      <th>Duration</th>
+      <th>Variation and extension</th>
+      <th>Clean-break interaction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Joint lives</td>
+      <td>Runs until the recipient remarries or either party dies</td>
+      <td>Either party can apply to vary the amount up or down, or to end it, on a change of circumstances</td>
+      <td>No clean break while it runs; now the exception, mainly for long marriages and later-life divorces</td>
+    </tr>
+    <tr>
+      <td>Extendable term</td>
+      <td>Fixed period chosen to cover the transition to independence</td>
+      <td>Amount can be varied, and the recipient can apply before the term ends to have it lengthened</td>
+      <td>Clean break follows once the term expires without extension</td>
+    </tr>
+    <tr>
+      <td>Non-extendable term (section 28(1A) bar)</td>
+      <td>Fixed period with a hard end date</td>
+      <td>Amount can still be varied during the term, but no application to extend the term is allowed</td>
+      <td>Guarantees a clean break on income at the end date, with no safety net if circumstances do not improve</td>
+    </tr>
+    <tr>
+      <td>Nominal</td>
+      <td>A token amount that runs until varied or dismissed</td>
+      <td>Can be varied upward to a real figure if the recipient's circumstances change</td>
+      <td>Defers the clean break: it exists to keep an income claim open as a safety net</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>How maintenance ends</h2>
 

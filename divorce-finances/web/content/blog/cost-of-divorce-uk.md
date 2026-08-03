@@ -4,9 +4,16 @@ slug: cost-of-divorce-uk
 date: "2026-07-24"
 updatedDate: "2026-07-24"
 author: "Editorial Team"
+image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1200&q=80"
+altText: "A person writing a list in a notebook at a wooden desk, adding up the costs of a divorce."
+imageCredit:
+  photographer: "Glenn Carstens-Peters"
+  photographerUrl: "https://unsplash.com/@glenncarstenspeters"
+  source: "Unsplash"
+  sourceUrl: "https://unsplash.com/photos/RLw-UC03Gwc"
 category: "Process and Costs"
 metaTitle: "How Much Does a Divorce Cost in the UK? (2026 Fees)"
-metaDescription: "The real cost of divorce in England and Wales: the £628 court fee, consent order fees, solicitor and mediation costs by route, Help with Fees remission, and who pays."
+metaDescription: "The real cost of divorce in England and Wales: the £628 court fee, consent order fees, solicitor and mediation costs, fee remission, and who pays."
 h1: "How much does a divorce cost in the UK?"
 summary: "The court fee to apply for a divorce in England and Wales is £628 following the fee increase on 13 July 2026. That is the floor, not the total: a financial consent order adds a £62 court fee plus drafting costs, mediation typically runs to hundreds per person, and solicitor-led or contested cases run into thousands. This guide itemises every cost by route, explains Help with Fees remission, and shows where the money actually goes."
 keyTakeaways:
@@ -133,6 +140,55 @@ faqs:
 <li><strong>Solicitor negotiation + consent order:</strong> £5,000 to £20,000+</li>
 <li><strong>Contested proceedings to final hearing:</strong> £50,000+ combined, frequently far more</li>
 </ul>
+
+<p>And the individual fees and professional costs behind those totals:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Amount</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Divorce application fee</td>
+      <td>£628</td>
+      <td>From 13 July 2026; paid once, Help with Fees can reduce it to nil</td>
+    </tr>
+    <tr>
+      <td>Financial consent order fee</td>
+      <td>£62</td>
+      <td>Court approval of an agreed financial order</td>
+    </tr>
+    <tr>
+      <td>Contested financial order (Form A)</td>
+      <td>£321</td>
+      <td>Starts financial remedy proceedings when you cannot agree</td>
+    </tr>
+    <tr>
+      <td>Family Mediation Voucher Scheme</td>
+      <td>Up to £500 contribution</td>
+      <td>Government funding towards mediation where a child arrangement is involved</td>
+    </tr>
+    <tr>
+      <td>Solicitor: divorce paperwork only</td>
+      <td>£450 to £1,000 plus VAT</td>
+      <td>Fixed fees widely advertised</td>
+    </tr>
+    <tr>
+      <td>Solicitor: negotiated financial settlement</td>
+      <td>£2,000 to £10,000 plus VAT per person</td>
+      <td>Driven by disclosure complexity and how many negotiation rounds it takes</td>
+    </tr>
+    <tr>
+      <td>Solicitor: contested proceedings to final hearing</td>
+      <td>£25,000 plus VAT and upwards each</td>
+      <td>Most cases settle at or before FDR</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>Run your own numbers in the <a href="/calculators/divorce-cost-calculator">divorce cost calculator</a>, and check the <a href="/calculators/help-with-fees-checker">Help with Fees checker</a> before paying any court fee.</p>
 

@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/@kmuza"
 category: "Process and Costs"
 metaTitle: "UK Divorce Statistics 2026: The Latest Numbers"
-metaDescription: "The latest UK divorce statistics: 109,184 divorce applications and 49,067 financial remedy applications in 2025, no-fault trends, court timings and mediation uptake, all sourced."
+metaDescription: "The latest UK divorce statistics: 109,184 divorce applications and 49,067 financial remedy applications in 2025, no-fault trends and court timings."
 h1: "UK divorce statistics 2026: what the latest data shows"
 summary: "There were 109,184 divorce applications in England and Wales in 2025 and 49,067 financial remedy applications, according to Ministry of Justice data. Divorce volumes have settled since the 2022 no-fault reforms, but the money side is climbing: financial remedy applications rose 8% in a year. The typical case now takes a median of 38 weeks from application to final order, well beyond the 26-week legal minimum. This page pulls together the primary-source numbers on volumes, timings, no-fault uptake and mediation, and explains what each trend means if you are separating."
 keyTakeaways:
@@ -56,6 +56,57 @@ faqs:
 </ul>
 
 <p>Applications are counted when a divorce starts; completed divorces are counted when the final order is granted, months later. That timing gap, plus the fact that some applications do not proceed, is why the numbers do not match and should not be added together. When a news headline quotes a single UK-wide divorce figure, it usually rolls in Scotland and Northern Ireland, which run separate systems, so it will sit higher than the England and Wales totals here.</p>
+
+<p>The headline figures for the most recent complete year of each measure sit as follows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th>Latest year</th>
+      <th>Figure</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Divorce applications</td>
+      <td>2025</td>
+      <td>109,184 (down 1% on 2024)</td>
+      <td>Ministry of Justice</td>
+    </tr>
+    <tr>
+      <td>Financial remedy applications</td>
+      <td>2025</td>
+      <td>49,067 (up 8% on 2024)</td>
+      <td>Ministry of Justice</td>
+    </tr>
+    <tr>
+      <td>Financial remedy cases concluded</td>
+      <td>2025</td>
+      <td>Around 46,651</td>
+      <td>Ministry of Justice</td>
+    </tr>
+    <tr>
+      <td>Completed divorces</td>
+      <td>2023</td>
+      <td>102,678</td>
+      <td>Office for National Statistics</td>
+    </tr>
+    <tr>
+      <td>Divorce rate</td>
+      <td>2023</td>
+      <td>8.6 per 1,000 married men, 8.5 per 1,000 married women</td>
+      <td>Office for National Statistics</td>
+    </tr>
+    <tr>
+      <td>Median marriage duration at divorce (opposite-sex)</td>
+      <td>2023</td>
+      <td>12.7 years</td>
+      <td>Office for National Statistics</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>Did no-fault divorce change the numbers?</h2>
 

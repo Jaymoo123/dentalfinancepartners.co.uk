@@ -4,9 +4,16 @@ slug: divorce-financial-settlement-guide
 date: "2026-07-24"
 updatedDate: "2026-07-24"
 author: "Editorial Team"
+image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1200&q=80"
+altText: "A historic law library with tall shelves of leather-bound volumes, reflecting the legal framework behind financial settlements."
+imageCredit:
+  photographer: "Giammarco Boscaro"
+  photographerUrl: "https://unsplash.com/@giamboscaro"
+  source: "Unsplash"
+  sourceUrl: "https://unsplash.com/@giamboscaro"
 category: "Financial Settlements"
 metaTitle: "Divorce Financial Settlement UK: Complete Guide (2026)"
-metaDescription: "How divorce financial settlements work in England and Wales: what counts, how courts decide, the section 25 factors, disclosure, consent orders and what a fair split looks like."
+metaDescription: "How divorce financial settlements work in England and Wales: the section 25 factors, disclosure, consent orders and what a fair split looks like."
 h1: "Divorce financial settlement: the complete UK guide"
 summary: "A financial settlement is the agreement that divides money, property, pensions and debts when a marriage ends. It is separate from the divorce itself, and it is not legally binding until a court approves it in a consent order. This guide explains what counts as a matrimonial asset, how courts in England and Wales decide what is fair, the routes to reaching agreement, and why finishing the divorce without a financial order leaves claims open indefinitely."
 keyTakeaways:
@@ -136,6 +143,39 @@ faqs:
 <h3>4. Court: financial remedy proceedings</h3>
 
 <p>The route of last resort, started by filing Form A. The process runs through a First Appointment, a Financial Dispute Resolution (FDR) hearing where a judge gives an indication of a likely outcome, and, for the minority of cases that do not settle at or before FDR, a final hearing where a judge imposes an order. It is the slowest and most expensive route by a wide margin, and even here most cases settle before the end.</p>
+
+<p>Side by side, the three professional routes compare like this:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Route</th>
+      <th>Typical cost</th>
+      <th>Typical time</th>
+      <th>How it becomes binding</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mediation</td>
+      <td>Mediator's fees over a handful of sessions, less the £500 voucher scheme contribution where children are involved, plus the £62 consent order court fee</td>
+      <td>A few sessions to agree terms, then a few weeks to a few months for the court to approve the consent order</td>
+      <td>Memorandum of understanding converted into a consent order, approved by a judge on paper</td>
+    </tr>
+    <tr>
+      <td>Solicitor negotiation</td>
+      <td>Each party's own solicitor fees, scaling with conflict and asset complexity, plus the £62 consent order court fee</td>
+      <td>Commonly fits inside the divorce timetable where both sides engage</td>
+      <td>Agreed terms drawn into a consent order, approved by a judge on paper</td>
+    </tr>
+    <tr>
+      <td>Court (financial remedy proceedings)</td>
+      <td>£321 Form A fee plus each side's own legal costs, the most expensive route by a wide margin</td>
+      <td>Many months, and over a year is common where hearings are needed</td>
+      <td>Judge imposes a financial remedy order, though most cases settle at or before FDR</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>Making it binding: consent orders and the clean break</h2>
 

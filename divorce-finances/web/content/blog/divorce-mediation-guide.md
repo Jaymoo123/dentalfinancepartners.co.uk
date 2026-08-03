@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/@amyhirschi"
 category: "Process and Costs"
 metaTitle: "Divorce Mediation UK: How It Works, Costs & MIAM (2026)"
-metaDescription: "How family mediation works in England and Wales: the MIAM before court, what happens in sessions, costs per session, the £500 voucher, and making an agreement binding."
+metaDescription: "How family mediation works in England and Wales: the MIAM, what happens in sessions, costs, the £500 voucher, and making an agreement binding."
 h1: "Divorce mediation: how it works, what it costs and what happens next"
 summary: "Family mediation is a structured, confidential process where a neutral mediator helps you and your ex-partner reach your own agreement on money and children, without a judge deciding for you. Before most court applications you must attend a Mediation Information and Assessment Meeting (a MIAM). Mediation sessions typically cost around £100 to £180 per person per hour, and families with children can claim a £500 government voucher towards the cost, under a scheme extended to March 2027. A mediator does not give legal advice or impose a decision; a mediated agreement is made binding by turning it into a memorandum of understanding and then a court consent order."
 keyTakeaways:
@@ -117,6 +117,50 @@ faqs:
 <p>Set that against solicitor-led negotiation or a contested court case, which routinely runs into five figures per person once disclosure disputes and hearings are involved. Mediation is not free, but on a per-session, shared-cost basis it is one of the least expensive routes to a settlement.</p>
 
 <p>On top of that, the <a href="https://www.familymediationcouncil.org.uk/mediation-vouchers/">Family Mediation Voucher Scheme</a> provides a one-off contribution of up to <strong>£500 per family</strong> towards mediation in cases involving children. The scheme has been extended to March 2027. You do not claim it yourself: your mediator checks eligibility and applies through the Family Mediation Council. Note that the voucher covers the mediation sessions, not the MIAM. To see how the totals compare against a solicitor-led route for your own situation, run the numbers through the <a href="/calculators/mediation-vs-solicitor-costs">mediation vs solicitor costs calculator</a>.</p>
+
+<p>The costs across both routes, side by side:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cost</th>
+      <th>Typical amount</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MIAM</td>
+      <td>Around £90 to £120 per person</td>
+      <td>Charged separately; not covered by the voucher</td>
+    </tr>
+    <tr>
+      <td>Mediation sessions</td>
+      <td>Around £100 to £180 per person per hour</td>
+      <td>Most families need three to six sessions</td>
+    </tr>
+    <tr>
+      <td>Family Mediation Voucher</td>
+      <td>Up to £500 per family</td>
+      <td>Cases involving children; claimed by your mediator; scheme runs to March 2027</td>
+    </tr>
+    <tr>
+      <td>Mediated settlement overall</td>
+      <td>Low hundreds to a couple of thousand pounds per person</td>
+      <td>Depends on complexity and number of sessions</td>
+    </tr>
+    <tr>
+      <td>Consent order court fee</td>
+      <td>£62</td>
+      <td>Plus drafting; the step that makes the agreement binding</td>
+    </tr>
+    <tr>
+      <td>Solicitor-led negotiation or contested court case</td>
+      <td>Routinely five figures per person</td>
+      <td>Rises further with disclosure disputes and hearings</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>Making a mediated agreement legally binding</h2>
 

@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/@erothermel"
 category: "Process and Costs"
 metaTitle: "How Long Does a Divorce Take in England & Wales? (2026)"
-metaDescription: "A no-fault divorce takes a legal minimum of 26 weeks, but the real median is 38 weeks to final order. Here is why finances, not paperwork, drive the timeline."
+metaDescription: "A no-fault divorce takes a legal minimum of 26 weeks, but the real median is 38 weeks to final order. Why finances, not paperwork, drive the timeline."
 h1: "How long does a divorce take in England and Wales?"
 summary: "The legal minimum for a no-fault divorce in England and Wales is 26 weeks: a 20-week reflection period from application to conditional order, then a further 6 weeks and 1 day before you can apply for the final order. Most divorces take longer. The latest Ministry of Justice data shows a median of 38 weeks from application to final order, and the reason is almost never the divorce paperwork. It is the finances. Because you are usually advised to delay the final order until the financial consent order is sealed, the settlement, not the decree, sets your true timeline."
 keyTakeaways:

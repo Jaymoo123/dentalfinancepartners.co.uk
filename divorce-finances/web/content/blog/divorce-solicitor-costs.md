@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/@craftedbygc"
 category: "Process and Costs"
 metaTitle: "Divorce Solicitor Costs & Hourly Rates (2026 Guide)"
-metaDescription: "What divorce solicitors actually charge in England and Wales: fixed fees, hourly rates by region and seniority, unbundled help, what drives cost up, and how to control it."
+metaDescription: "What divorce solicitors charge in England and Wales: fixed fees, hourly rates by region and seniority, what drives cost up, and how to control it."
 h1: "What do divorce solicitors cost, and how do you choose one?"
 summary: "A family solicitor's fees for the divorce paperwork alone are commonly fixed at roughly £450 to £1,000 plus VAT, but the financial settlement is charged by the hour and is where the real money sits: often £2,000 to £10,000 plus VAT each for a negotiated deal. Hourly rates run from around £150 plus VAT for a junior outside the big cities to £400 plus VAT and beyond for London partners. This guide explains the fee models, what pushes the bill up, how limited legal aid now is, and how to keep the spend under control."
 keyTakeaways:
@@ -56,6 +56,39 @@ faqs:
 </ul>
 
 <p>Some firms bridge the two with <strong>fixed-fee stages</strong> or capped fees for defined pieces of work: a set price to draft a consent order, or a fixed fee to advise on a proposed settlement. These give you cost certainty on discrete tasks. When comparing quotes, always establish what is genuinely fixed, what is only an estimate, and what assumptions that estimate rests on.</p>
+
+<p>Here is how the two fee models, the typical cost ranges and the court fees map onto the stages of a case:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Case stage</th>
+      <th>Usual fee model</th>
+      <th>Typical legal cost</th>
+      <th>Court fee on top</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Divorce application to final order</td>
+      <td>Fixed fee</td>
+      <td>£450 to £1,000 plus VAT</td>
+      <td>£628 (from 13 July 2026)</td>
+    </tr>
+    <tr>
+      <td>Financial settlement, negotiated</td>
+      <td>Hourly</td>
+      <td>£2,000 to £10,000 plus VAT per person</td>
+      <td>£62 to lodge the consent order</td>
+    </tr>
+    <tr>
+      <td>Contested financial order</td>
+      <td>Hourly</td>
+      <td>A few thousand pounds to five figures each, more at a final hearing</td>
+      <td>£321 to start (Form A)</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>Hourly rates by region and seniority</h2>
 

@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/@towfiqu999999"
 category: "Pensions and Divorce"
 metaTitle: "Pension Sharing vs Offsetting in Divorce (2026)"
-metaDescription: "Pension sharing splits a pension by court order and gives a clean break; offsetting keeps the pension whole and trades value against other assets. How each compares."
+metaDescription: "Pension sharing splits a pension by court order and gives a clean break; offsetting keeps the pension whole and trades value against other assets."
 h1: "Pension sharing vs offsetting: how the two options compare"
 summary: "The two main ways of dealing with a pension in a divorce are sharing and offsetting, and they solve different problems. A pension sharing order splits the pension itself, giving the other person a percentage of it as a pension in their own name and a clean break on that asset. Offsetting leaves the pension untouched and gives the other person a larger share of something else, usually the home, in exchange. Neither is universally better, and the offsetting comparison is genuinely hard to do fairly because a pound of pension is not a pound of cash. This is information, not advice: which route fits a given case is a decision for a family solicitor, an actuary or PODE, and a regulated financial adviser."
 keyTakeaways:
@@ -95,6 +95,40 @@ faqs:
 <li><strong>Fairness risk.</strong> Sharing by percentage tracks the pension's real value; offsetting risks a mispriced trade if pension value is compared naively with cash.</li>
 <li><strong>Retirement outcome.</strong> Offsetting can leave one person asset-rich now but retirement-poor later; sharing spreads retirement provision across both.</li>
 </ul>
+
+<p>The same trade-offs, set side by side:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Pension sharing</th>
+      <th>Offsetting</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mechanism</td>
+      <td>Court order under the Welfare Reform and Pensions Act 1999 moves a stated percentage of the pension into a pension in the other person's name</td>
+      <td>The pension stays untouched; the other person takes a larger share of a different asset, usually the family home</td>
+    </tr>
+    <tr>
+      <td>Costs and timing</td>
+      <td>Scheme implementation fee, ranging from nothing to four figures, plus a four-month implementation period once the scheme has everything it needs</td>
+      <td>No scheme fee and no implementation wait on that asset, but a PODE report is often commissioned to price the trade fairly</td>
+    </tr>
+    <tr>
+      <td>Main risk</td>
+      <td>Cash equivalent values can understate defined benefit and public sector pensions, so the percentage may be set on a flattering figure without actuarial input</td>
+      <td>A pound of pension is not a pound of cash, so a naive pound-for-pound comparison tends to underpay the person taking the offset</td>
+    </tr>
+    <tr>
+      <td>Clean-break compatibility</td>
+      <td>Delivers a clean break on the pension itself: the recipient's retirement no longer depends on the ex-spouse</td>
+      <td>Compatible with a clean break if recorded in a consent order, but leaves one person with no pension provision from the marriage</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>Many settlements do not pick one exclusively. It is common to blend the two, for example sharing part of a pension while offsetting a smaller balance against other assets, so the labels describe tools rather than rival camps.</p>
 

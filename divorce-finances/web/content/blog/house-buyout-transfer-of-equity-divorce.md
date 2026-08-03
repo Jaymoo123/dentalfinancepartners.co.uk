@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/@tierramallorca"
 category: "The Family Home"
 metaTitle: "House Buyout & Transfer of Equity on Divorce UK (2026)"
-metaDescription: "How one spouse buys the other out of the family home on divorce: working out equity, funding the buyout, the mortgage release, transfer of equity, and the SDLT and CGT rules."
+metaDescription: "How one spouse buys the other out of the family home on divorce: working out equity, funding, transfer of equity, and the SDLT and CGT rules."
 h1: "House buyout and transfer of equity on divorce"
 summary: "A house buyout is where one spouse keeps the family home and pays the other for their share of the equity, while the leaving spouse is released from the joint mortgage through a transfer of equity. Equity is the property's value minus the outstanding mortgage, but the split of that equity is decided as part of the whole settlement and is not automatically 50/50. The two big hurdles are money and the mortgage: the staying spouse usually has to remortgage in their sole name and qualify for the borrowing alone. Transfers between divorcing spouses under an agreement or court order are generally exempt from Stamp Duty Land Tax, and an extended no gain, no loss window keeps most transfers free of Capital Gains Tax."
 keyTakeaways:
@@ -48,7 +48,21 @@ faqs:
 
 <h2>Working out each person's share</h2>
 
-<p>The maths starts simply. Take the current market value of the property, subtract the outstanding mortgage balance, and subtract any early repayment charge and the likely costs of the transfer. What is left is the equity. For the value, most couples use a single joint valuation or an average of two or three estate agent valuations rather than arguing over guesses.</p>
+<p>The maths starts simply. Take the current market value of the property, subtract the outstanding mortgage balance, and subtract any early repayment charge and the likely costs of the transfer. What is left is the equity. For the value, most couples use a single joint valuation or an average of two or three estate agent valuations rather than arguing over guesses. Using the £400,000 home from the introduction, the numbers stack up like this.</p>
+
+<table>
+<thead>
+<tr><th>Step</th><th>Figure</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr><td>Market value of the home</td><td>£400,000</td><td>Single joint valuation, or an average of two or three agent valuations</td></tr>
+<tr><td>Outstanding mortgage</td><td>£150,000</td><td>Deduct any early repayment charge on top, if your deal carries one</td></tr>
+<tr><td>Equity to divide</td><td>£250,000</td><td>Value minus mortgage; this is what the buyout is a share of</td></tr>
+<tr><td>Buyout sum on an equal split</td><td>£125,000</td><td>Half the equity; the actual share is set by the whole settlement, not automatically 50/50</td></tr>
+<tr><td>Stamp Duty Land Tax on the transfer</td><td>£0</td><td>Exempt when the transfer is made under a divorce agreement or court order</td></tr>
+<tr><td>Capital Gains Tax on the transfer</td><td>£0</td><td>No gain, no loss for up to 3 tax years after the year of separation, unlimited under a formal agreement or court order</td></tr>
+</tbody>
+</table>
 
 <p>What that equity gets divided by is the harder question, and there is no automatic 50/50 rule in England and Wales. The court, and any negotiated settlement, works from the needs and sharing principles set out in the law: the housing and income needs of both parties, and above all the needs of any children, come first, and equal sharing of what the marriage built is the starting point where needs are already met. A parent who will house the children may keep a larger share; a shorter marriage with no children may point closer to each person's original contribution. The home is almost never looked at on its own, because it is weighed against pensions, savings and earning capacity in the round. Our <a href="/blog/financial-settlements/divorce-financial-settlement-guide">complete guide to divorce financial settlements</a> explains how that whole picture is assessed, and the <a href="/financial-settlements">financial settlements hub</a> pulls the related topics together.</p>
 

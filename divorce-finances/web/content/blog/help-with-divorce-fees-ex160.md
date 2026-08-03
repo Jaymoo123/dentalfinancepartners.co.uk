@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/@uns__nstudio"
 category: "Process and Costs"
 metaTitle: "Help with Divorce Fees: EX160 Scheme Explained (2026)"
-metaDescription: "How the Help with Fees scheme (form EX160) can cut the £628 divorce fee to nil: income thresholds, the disposable-capital limit, the taper, and how to apply."
+metaDescription: "How the Help with Fees scheme (form EX160) can cut the £628 divorce fee to nil: income thresholds, the capital limit, the taper, and how to apply."
 h1: "Help with divorce fees: how the EX160 scheme works"
 summary: "The Help with Fees scheme can reduce or wipe out the £628 divorce application fee, the £62 consent order fee and the £321 contested financial order fee if your income and savings are low enough. You must pass two tests: a disposable-capital test (savings under £4,250, or £16,000 if you or your partner are 66 or over) and an income test (monthly income at or below £1,420 single or £2,130 as a couple, plus £425 or £710 per child). Above the income threshold you pay £5 for every £10 over, capped at the fee. You apply online or on form EX160, and you can even claim a refund of a fee paid in the last 3 months."
 keyTakeaways:

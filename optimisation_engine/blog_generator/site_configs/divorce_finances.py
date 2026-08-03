@@ -25,8 +25,49 @@ _POST_CATEGORIES = [
     "Process and Costs",
 ]
 
-# No content batch yet; populated once the first wave ships.
-_INTERNAL_LINK_SLUGS: list[str] = []
+# All live posts (waves 1-3, 32 posts) + the 3 commercial hubs. Paths are used
+# verbatim as hrefs by append_related_posts_if_needed; blog posts follow
+# canonical_format /blog/{category_slug}/{slug}. Refresh when a wave ships.
+_INTERNAL_LINK_SLUGS: list[str] = [
+    # Hubs
+    "/financial-settlements",
+    "/pension-sharing",
+    "/capital-gains-tax-divorce",
+    # Waves 1-2
+    "/blog/financial-settlements/divorce-financial-settlement-guide",
+    "/blog/financial-settlements/prenuptial-postnuptial-agreements",
+    "/blog/pensions-and-divorce/pensions-and-divorce",
+    "/blog/pensions-and-divorce/pension-sharing-vs-offsetting",
+    "/blog/the-family-home/house-buyout-transfer-of-equity-divorce",
+    "/blog/maintenance-and-support/child-maintenance-cms-formula",
+    "/blog/maintenance-and-support/spousal-maintenance-guide",
+    "/blog/process-and-costs/consent-orders-and-clean-break-orders",
+    "/blog/process-and-costs/cost-of-divorce-uk",
+    "/blog/process-and-costs/divorce-mediation-guide",
+    "/blog/process-and-costs/divorce-solicitor-costs",
+    "/blog/process-and-costs/divorce-statistics-uk-2026",
+    "/blog/process-and-costs/diy-divorce-without-solicitor",
+    "/blog/process-and-costs/form-e-financial-disclosure-guide",
+    "/blog/process-and-costs/help-with-divorce-fees-ex160",
+    "/blog/process-and-costs/how-long-does-divorce-take",
+    # Wave 3 (2026-08-03)
+    "/blog/financial-settlements/business-assets-limited-companies-divorce",
+    "/blog/financial-settlements/crypto-digital-assets-divorce",
+    "/blog/financial-settlements/gifts-loans-bank-of-mum-and-dad-divorce",
+    "/blog/financial-settlements/hidden-assets-divorce",
+    "/blog/financial-settlements/high-net-worth-divorce-duxbury",
+    "/blog/financial-settlements/remarriage-trap-and-time-limits",
+    "/blog/financial-settlements/separation-cohabitation-agreements-unmarried",
+    "/blog/financial-settlements/what-am-i-entitled-to-divorce",
+    "/blog/pensions-and-divorce/later-life-divorce-silver-splitters",
+    "/blog/tax-on-divorce/is-spousal-maintenance-taxable",
+    "/blog/tax-on-divorce/stamp-duty-divorce-transfers",
+    "/blog/tax-on-divorce/cgt-divorce-no-gain-no-loss-window",
+    "/blog/the-family-home/mesher-orders-deferred-house-sale",
+    "/blog/the-family-home/who-gets-the-house-divorce",
+    "/blog/the-family-home/joint-mortgage-after-divorce",
+    "/blog/maintenance-and-support/school-fees-schedule-1-divorce",
+]
 
 _ANCHOR_TERMS = [
     "divorce",
@@ -156,7 +197,7 @@ FORMATTING
 - H2 subheadings for each major section (3 to 6 per post)
 - Short paragraphs (2 to 4 sentences), never walls of text
 - Bullet lists for 3 or more parallel items
-- One simple table permitted where it genuinely aids comparison (e.g., court fee bands, CMS percentage rates, CGT rate bands)
+- At least one simple HTML table per post (mandatory, see structural rule 6), placed where it genuinely aids comparison (e.g., court fee bands, CMS percentage rates, CGT rate bands)
 - Bold key figures and rules: rates, thresholds, dates, deadlines
 - Cluster post word count: 1,200 to 1,600 words (minimum 1,200). Pillar post word count: 2,000 to 2,800 words (minimum 2,000).
 

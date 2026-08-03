@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/@kellysikkema"
 category: "Process and Costs"
 metaTitle: "Form E Financial Disclosure: Step-by-Step Guide (2026)"
-metaDescription: "How to complete Form E in a UK divorce: each section explained, the documents you must attach, the duty of full and frank disclosure, and what happens if you hide assets."
+metaDescription: "How to complete Form E in a UK divorce: each section explained, the documents to attach, full and frank disclosure, and the cost of hiding assets."
 h1: "Form E financial disclosure: a step-by-step guide"
 summary: "Form E is the sworn financial statement both spouses complete in financial remedy proceedings, setting out every asset, debt, pension and income source, backed by 12 months of bank statements, your latest P60 and pension valuations. You sign a statement of truth, so getting it wrong is not a technicality. This guide walks through each section of Form E, the exact documents to attach, and why the duty of full and frank disclosure is the one rule you cannot afford to break: hidden assets let a final order be reopened years later, as the Supreme Court confirmed in 2015."
 keyTakeaways:
@@ -63,7 +63,20 @@ faqs:
 
 <h2>A walk through each section of Form E</h2>
 
-<p>Form E is organised into parts. Working through them in order, and knowing what each is really asking, takes most of the stress out of it.</p>
+<p>Form E is organised into parts. Working through them in order, and knowing what each is really asking, takes most of the stress out of it. The map below shows what each part covers and the documents that back it up.</p>
+
+<table>
+<thead>
+<tr><th>Section</th><th>What goes in it</th><th>Documents needed</th></tr>
+</thead>
+<tbody>
+<tr><td>1. Personal and general information</td><td>Your details and your spouse's, marriage and separation dates, children, health, living arrangements and cohabitation</td><td>None specific to this part</td></tr>
+<tr><td>2. Financial details: capital</td><td>Property, bank and savings accounts, investments, life policies, belongings worth more than £500, business interests, pensions and all liabilities</td><td>Last 12 months of statements for every account, market appraisal plus latest mortgage statement, last two years of accounts if self-employed, a CETV for each pension dated within 12 months, latest investment and policy statements</td></tr>
+<tr><td>3. Income</td><td>Employment, self-employment, dividends, rental income, pension income, benefits and investment income, current and expected</td><td>Most recent P60 and last three payslips; last two years of accounts for the self-employed</td></tr>
+<tr><td>4. Financial requirements and needs</td><td>A realistic monthly budget for you and any children, plus the capital you need, for example to rehouse</td><td>None specific; base the budget on genuine living costs</td></tr>
+<tr><td>5. Other information</td><td>Expected changes to assets, contributions each of you made, serious conduct and other section 25 circumstances</td><td>None specific to this part</td></tr>
+</tbody>
+</table>
 
 <h3>1. Personal and general information</h3>
 

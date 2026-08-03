@@ -4,9 +4,16 @@ slug: pensions-and-divorce
 date: "2026-07-24"
 updatedDate: "2026-07-24"
 author: "Editorial Team"
+image: "https://images.unsplash.com/photo-1518281361980-b26bfd556770?w=1200&q=80"
+altText: "A clear hourglass with sand running through it, reflecting the years of pension saving at stake in a divorce."
+imageCredit:
+  photographer: "Nathan Dumlao"
+  photographerUrl: "https://unsplash.com/@nate_dumlao"
+  source: "Unsplash"
+  sourceUrl: "https://unsplash.com/photos/5Hl5reICevY"
 category: "Pensions and Divorce"
-metaTitle: "Pensions and Divorce UK: Sharing, Offsetting, Attachment (2026)"
-metaDescription: "How pensions are divided in divorce in England and Wales: pension sharing orders, offsetting, attachment orders, CE values, the state pension and implementation timings. Information only."
+metaTitle: "Pensions and Divorce UK: Sharing & Offsetting (2026)"
+metaDescription: "How pensions are divided in divorce in England and Wales: sharing orders, offsetting, attachment, CE values, the state pension and timings."
 h1: "Pensions and divorce: how pension sharing, offsetting and attachment work"
 summary: "Pensions are often the second largest asset in a divorce, and the most commonly ignored. In England and Wales there are three legal mechanisms for dealing with them: pension sharing orders, offsetting and attachment orders. This guide explains how each works, what a cash equivalent value is and why it can mislead, what happens to the state pension, and how sharing orders are implemented after the final order. It is information only: nothing here recommends any pension decision or product, and pension choices should be checked with a regulated financial adviser."
 keyTakeaways:
@@ -70,6 +77,57 @@ faqs:
 <p>An attachment order (historically called earmarking) directs the pension scheme to pay part of the member's pension, lump sum or death benefits to the ex-spouse <strong>when it comes into payment</strong>. The pension stays in the member's name.</p>
 
 <p>Attachment is now rarely used, because its weaknesses are structural: the ex-spouse waits for the member to retire, payments typically stop if the member dies, income attachment payments generally cease if the recipient remarries, and the member controls the timing. It survives mainly in niche situations, for example directing death-in-service lump sums as security. If a settlement proposed to you relies on attachment rather than sharing, understand exactly why before agreeing; it is a question worth putting to a solicitor directly.</p>
+
+<p>Side by side, the three mechanisms compare like this:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Pension sharing</th>
+      <th>Offsetting</th>
+      <th>Attachment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>What happens</td>
+      <td>A stated percentage of the pension is transferred into a pension in the other spouse's own name</td>
+      <td>One spouse keeps the pension intact, the other keeps a larger share of other assets, typically the home</td>
+      <td>The scheme pays part of the member's pension or lump sum to the ex-spouse when it comes into payment</td>
+    </tr>
+    <tr>
+      <td>Clean break on the pension</td>
+      <td>Yes; the recipient's pension no longer depends on the ex-spouse</td>
+      <td>Yes; the pension itself is never divided</td>
+      <td>No; both parties stay tied to the member's choices, retirement date and death</td>
+    </tr>
+    <tr>
+      <td>How it is created</td>
+      <td>Pension sharing order under the Welfare Reform and Pensions Act 1999, sealed by the court</td>
+      <td>Recorded in the overall financial order dividing the other assets</td>
+      <td>Attachment order sealed by the court</td>
+    </tr>
+    <tr>
+      <td>Effect of the member dying first</td>
+      <td>None once implemented; the credit is the recipient's own pension</td>
+      <td>None; the trade has already happened</td>
+      <td>Payments typically stop</td>
+    </tr>
+    <tr>
+      <td>Scheme involvement and fees</td>
+      <td>Four-month implementation period plus the scheme's own implementation fee</td>
+      <td>No scheme involvement and no implementation fees</td>
+      <td>Scheme pays out only when the pension comes into payment</td>
+    </tr>
+    <tr>
+      <td>Typical use today</td>
+      <td>The standard tool where pensions themselves need dividing</td>
+      <td>Common where one parent keeps the house and the other keeps the pension</td>
+      <td>Rare; niche uses such as directing death-in-service lump sums as security</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>Valuation: cash equivalents and their limits</h2>
 
